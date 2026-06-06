@@ -287,6 +287,18 @@ CERT_TARGETS = [
         "05_CERTS/vp_si_calibration_boundary.py",
         "PASS_SI_CALIBRATION_BOUNDARY",
     ),
+    CertTarget(
+        "05_CERTS/vp_finite_hodge_complex_core.py",
+        "PASS_FINITE_HODGE_COMPLEX_CORE",
+    ),
+    CertTarget(
+        "05_CERTS/vp_no_axion_finite_cochain.py",
+        "PASS_FINITE_NO_AXION_TOPOLOGICAL_BLOCK",
+    ),
+    CertTarget(
+        "05_CERTS/vp_hodge_matter_gravity_archive_links.py",
+        "PASS_HODGE_MATTER_C1_LINK",
+    ),
 ]
 
 

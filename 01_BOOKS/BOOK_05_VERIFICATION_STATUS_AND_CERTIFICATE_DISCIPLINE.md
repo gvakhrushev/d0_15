@@ -740,3 +740,6 @@ Post-hoc refitting of roots, window centers, window widths, H0, Omega_m or r_d
 is forbidden as a core repair.
 Certificate: `05_CERTS/vp_desi_bao_sde_failure_diagnostics.py`.
 
+D0-TOPO-CONTINUUM-NOGO-001 — continuum master equations are bridge objects, not core primitives.
+D0-TOPO-NOAXION-001 — continuum theta-vacuum rejected as D0-core primitive.
+

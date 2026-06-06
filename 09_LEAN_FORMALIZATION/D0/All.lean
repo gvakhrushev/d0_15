@@ -56,6 +56,9 @@ import D0.Gauge.GradedBianchiIdentity
 import D0.Gauge.SMGaugeDecomposition
 import D0.Topology.TripartiteComplex
 import D0.Topology.GradedIncidenceComplex
+import D0.Topology.FiniteHodgeComplex
+import D0.Topology.FiniteCochainNoAxion
+import D0.Bridge.HodgeMatterGravityArchiveIndex
 import D0.RG.PhiDifference
 import D0.RG.OneLoopStructure
 import D0.Spectrum.GenerationRays

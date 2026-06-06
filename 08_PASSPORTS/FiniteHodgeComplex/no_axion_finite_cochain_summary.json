@@ -1,0 +1,13 @@
+{
+  "summary": "Finite cochain complex (d o d = 0) rejects continuum theta-vacuum / instanton language as D0 core primitive. Any exact topological density annihilates core theta term. Continuum winding must be marked EFT bridge (D0-TOPO-NOAXION-001 + negative control).",
+  "status": "CLOSED (no-axion finite cochain block)",
+  "tokens": [
+    "PASS_FINITE_NO_AXION_TOPOLOGICAL_BLOCK",
+    "PASS_CONTINUUM_THETA_REQUIRES_BRIDGE_NOT_CORE",
+    "PASS_NO_AXIOMATIC_AXION_CORE_PROMOTION"
+  ],
+  "no_gos": [
+    "D0-TOPO-NOAXION-001",
+    "D0-TOPO-CONTINUUM-NOGO-001"
+  ]
+}

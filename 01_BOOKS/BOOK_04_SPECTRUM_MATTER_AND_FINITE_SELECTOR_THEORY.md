@@ -20,6 +20,9 @@ The central rule is:
 \boxed{\text{finite support is not a physical mass by itself.}}
 ```
 
+Matter defect/domain-wall operators are finite projected operators on the
+1-cochain sector of the graded incidence complex.
+
 A support number becomes a physical comparison only after a typed operator/readout and a declared transfer map have been supplied before seeing the target table.
 
 ## 04.2 The theorem owners used by this book

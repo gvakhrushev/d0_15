@@ -313,6 +313,8 @@ Failure diagnostics:
 
 The frozen S_DE roots (λ_c ≈ 1.420943, λ_r ≈ 1.579057) and transfer were evaluated against pinned DESI DR2 BAO measurements. No refit of roots, windows, H0, Ωm or rd was performed. This constrains the allowed cosmological transfer operator.
 
+The internal cosmological response is grounded in finite heat-trace objects. External BAO/S_DE comparisons remain survey-transfer protocols and do not mutate the finite Hodge core.
+
 The transfer is
 
 ```math

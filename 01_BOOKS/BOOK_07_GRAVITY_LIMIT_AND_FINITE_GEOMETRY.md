@@ -28,6 +28,10 @@ The book separates three things that were interleaved in earlier gravity drafts:
 2. the SI/metrological Newton shadow;
 3. the traced-out complement/cosmology boundary cross-reference.
 
+The finite TT gravity carrier is a symmetric projected sector built from finite
+edge/line probes and is compatible with the finite Hodge complex.
+
+
 Only the first two are normative Book 07 material. Survey-level archive pressure and BAO/S_DE remain Book 08 material.
 
 ## 07.3 Gravity as downstream geometry, not a primitive continuum

@@ -52,6 +52,13 @@ finite detector support
 -> falsification hook
 ```
 
+## Finite cochain complex and Hodge Laplacian
+
+The finite graded incidence complex is the common algebraic carrier for
+cochain-level defect, response and heat-trace constructions. The D0 core uses
+finite boundary maps and finite Hodge Laplacians, not continuum curvature
+tensors, as its master topological object.
+
 No sector may skip from a named operator to a physical observable. The owner chain must show whether the claim is core, certificate-closed, a no-go, a calibration bridge, or an empirical passport.
 
 ## 02.K K-theory / Gap Labeling proof spine

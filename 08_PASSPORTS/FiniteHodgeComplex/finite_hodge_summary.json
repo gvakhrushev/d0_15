@@ -1,0 +1,10 @@
+{
+  "summary": "Finite graded incidence complex supplies the master layer: boundary maps, finite Hodge Laplacian Delta_p = partial^dagger partial + partial partial^dagger, finite heat trace Theta_p(u) spectral sum. Replaces invalid continuum master equations.",
+  "status": "CLOSED (finite Hodge complex core)",
+  "tokens": [
+    "PASS_FINITE_HODGE_COMPLEX_CORE",
+    "PASS_BOUNDARY_SQUARED_ZERO",
+    "PASS_FINITE_HODGE_LAPLACIAN_DEFINED",
+    "PASS_FINITE_HEAT_TRACE_SPECTRAL_SUM"
+  ]
+}

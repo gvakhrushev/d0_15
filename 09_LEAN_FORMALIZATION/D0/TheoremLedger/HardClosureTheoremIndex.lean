@@ -170,6 +170,9 @@ import D0.Spectrum.Pi0BranchDefectControls
 import D0.Spectrum.Pi0BranchDefectGeneration
 import D0.Topology.ArchiveShiftTopology
 import D0.Topology.GradedIncidenceComplex
+import D0.Topology.FiniteHodgeComplex
+import D0.Topology.FiniteCochainNoAxion
+import D0.Bridge.HodgeMatterGravityArchiveIndex
 import D0.Topology.TripartiteComplex
 import D0.Traceability.StatusTaxonomy
 import D0.Matter.ChargedLeptonMassTransfer
@@ -821,3 +824,11 @@ end D0
 #check D0.Matter.ckm_cp_phase_is_oriented_noncommutative_area
 #check D0.Cosmology.sde_relaxation_modes_have_gap_labels
 #check D0.Cosmology.archive_pressure_spectrum_is_gap_labeled
+#check D0.Topology.finite_boundary_squared_zero
+#check D0.Topology.finite_hodge_laplacian_self_adjoint_positive
+#check D0.Topology.finite_heat_trace_depends_only_on_laplacian_spectrum
+#check D0.Topology.finite_cochain_exact_topological_density_annihilates_theta_core
+#check D0.Topology.continuum_theta_winding_requires_bridge_not_core
+#check D0.Bridge.matter_domain_wall_operator_lives_on_C1
+#check D0.Bridge.tt_gravity_projector_lives_on_symmetric_C1_support
+#check D0.Bridge.archive_boundary_response_factors_through_finite_heat_trace
