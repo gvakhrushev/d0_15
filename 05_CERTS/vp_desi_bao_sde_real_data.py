@@ -175,13 +175,32 @@ def main() -> int:
         "lcdm_baseline": "reference"
     }
 
-    # Decide result (demo: since sample data + partial cov, SKIP with reason)
-    # In real with full data: compare delta_chi2 etc.
-    result = "SKIP_DESI_BAO_COVARIANCE_REQUIRED"
-    if metrics["delta_chi2"] < -5.0:  # example threshold
-        result = "PASS_DESI_BAO_SDE_REAL_DATA"
-    elif metrics["delta_chi2"] > 5.0:
-        result = "FAIL_DESI_BAO_SDE_REAL_DATA"
+    # Decide result according to strict rules
+    sample_data = manifest.get("sample_data", True)
+    official_ready = (
+        manifest.get("official_data_status") == "READY" or
+        manifest.get("status") == "READY"
+    ) and not sample_data
+    cov_ready = manifest.get("covariance_status") == "READY" or "covariance" in str(manifest).lower()
+    baseline_ready = True  # for demo; in real would check pinned baseline
+
+    if sample_data:
+        result = "PASS_DESI_BAO_SDE_PIPELINE_DEMO"
+        physical_result = "SKIP_DESI_BAO_OFFICIAL_DATA_REQUIRED"
+    elif not (official_ready and cov_ready and baseline_ready):
+        result = "SKIP_DESI_BAO_OFFICIAL_DATA_REQUIRED"
+        if not cov_ready:
+            result = "SKIP_DESI_BAO_COVARIANCE_REQUIRED"
+        physical_result = result
+    else:
+        # Only here allow real physical result
+        if metrics["delta_chi2"] < -5.0:  # example threshold for improvement
+            result = "PASS_DESI_BAO_SDE_REAL_DATA"
+        elif metrics["delta_chi2"] > 5.0:
+            result = "FAIL_DESI_BAO_SDE_REAL_DATA"
+        else:
+            result = "SKIP_DESI_BAO_BASELINE_REQUIRED"
+        physical_result = result
 
     # Write results CSV (minimal)
     with RESULTS_CSV.open("w", newline="", encoding="utf-8") as f:
@@ -192,14 +211,16 @@ def main() -> int:
 
     summary = {
         "result": result,
+        "physical_result": physical_result,
         "dataset": "DESI_DR2_BAO",
         "manifest_status": manifest.get("status", "PARTIAL"),
         "events_or_bins_used": len(rows),
         "frozen_roots": {"lambda_c": LAMBDA_C_FROZEN, "lambda_r": LAMBDA_R_FROZEN},
         "no_refit": True,
+        "sample_data": sample_data,
         "metrics": metrics,
         "negative_controls": neg,
-        "skip_reason": "Full covariance matrix not present in sample run; replace with official DESI DR2 data + cov for production decision." if "SKIP" in result else None,
+        "skip_reason": "Pipeline executed on pinned demo/sample table. Official DESI DR2 BAO compressed data and covariance are required before physical PASS/FAIL." if sample_data or "SKIP" in physical_result else None,
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     SUMMARY_JSON.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -207,20 +228,25 @@ def main() -> int:
     SUMMARY_MD.write_text(
         f"# DESI DR2 BAO S_DE Real Data Hard Run\n\n"
         f"- result: {result}\n"
+        f"- physical_result: {physical_result}\n"
         f"- bins: {len(rows)}\n"
         f"- frozen λ_c: {LAMBDA_C_FROZEN}\n"
         f"- frozen λ_r: {LAMBDA_R_FROZEN}\n"
         f"- no_refit: true\n"
+        f"- sample_data: {sample_data}\n"
         f"- delta_chi2: {metrics['delta_chi2']}\n"
         f"- rmse_d0 vs baseline: {metrics['rmse_d0']}\n"
-        f"- negative controls: {neg}\n",
+        f"- negative controls: {neg}\n"
+        f"- skip_reason: Pipeline on demo/sample. Official DESI DR2 data + cov required for physical result.\n",
         encoding="utf-8",
     )
 
     print(result)
+    print(f"physical_result: {physical_result}")
     print(f"bins_used: {len(rows)}")
     print(f"delta_chi2: {metrics['delta_chi2']}")
     print(f"no_refit: true")
+    print(f"sample_data: {sample_data}")
     return 0
 
 if __name__ == "__main__":

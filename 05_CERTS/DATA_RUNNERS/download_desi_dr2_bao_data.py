@@ -22,7 +22,7 @@ def main() -> int:
         "dataset_id": "DESI_DR2_BAO",
         "source_name": "DESI DR2 BAO public data release (official)",
         "source_url": "https://data.desi.lbl.gov/public/dr2/",
-        "download_url": "Replace with exact official DESI DR2 BAO table + full covariance release",
+        "download_url": "https://data.desi.lbl.gov/public/dr2/ (official DR2 cosmology chains and BAO products; see also CobayaSampler/bao_data for DESI DR2 release)",
         "local_path": str(CACHE / "desi_dr2_bao_sample.csv"),
         "sha256": "",
         "downloaded_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -31,10 +31,16 @@ def main() -> int:
         "license_or_policy_note": "Use DESI public-data policy and cite the release.",
         "citation_note": "Pin exact DESI DR2 BAO table/covariance release.",
         "status": "PARTIAL",
-        "note": "Sample data created for hard-run demo. Replace with official pinned files for production."
+        "official_data_status": "PARTIAL",
+        "compressed_bao_vector_status": "MISSING",
+        "covariance_status": "MISSING",
+        "source_priority": "SAMPLE_ONLY",
+        "sample_data": True,
+        "note": "Sample data created for pipeline demo. Priority: 1. DESI official DR2 cosmology products, 2. DESI papers support, 3. CobayaSampler/bao_data DESI DR2. Replace with official pinned files and set sample_data=False, statuses=READY for production physical result."
     }
     MANIFEST.write_text(json.dumps(m, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print("Manifest updated. For real run: download official DESI DR2 BAO data to the local_path and set status=READY with full cov.")
+    print("Manifest updated with production fields (sample_data=True, source_priority=SAMPLE_ONLY, official/compressed/covariance statuses).")
+    print("For real production: download official DESI DR2 BAO data, update local_path/sha256, set sample_data=False and statuses=READY.")
     return 0
 
 if __name__ == "__main__":

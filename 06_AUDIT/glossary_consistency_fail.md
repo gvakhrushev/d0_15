@@ -1,5 +1,5 @@
 # Glossary Consistency Failures
-Generated 2026-06-06T16:36:52.065469+00:00
+Generated 2026-06-06T16:43:31.370408+00:00
 
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:16 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
@@ -144,13 +144,13 @@ Generated 2026-06-06T16:36:52.065469+00:00
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:149 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:149 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:274 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.12 BAO archive-transfer comparison protocol
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:339 [UNDEFINED_D0_TERM_IN_HEADING] ### 08.12.2 Archive-window eigenvalue equation for `λ_c,λ_r`
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:412 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.14 QCD archive scale and cosmological guardrail
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:500 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.31.1 Smooth macro-geometry and archive covariance
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:578 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.37 Final bridge index and spectral-cosmology status
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:588 [METAPHOR_IN_PROSE] -> heat-trace A0/A2 ladder
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:606 [METAPHOR_IN_PROSE] | spectral action A0/A2 ladder and higher-power bounds | `CORE-CLOSED` | `D0.Geometry.SpectralActionLadder.a0_is_volume_
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:707 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.42 Trace-heat archive branch
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:729 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:729 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:831 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing external comparison protocol
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:344 [UNDEFINED_D0_TERM_IN_HEADING] ### 08.12.2 Archive-window eigenvalue equation for `λ_c,λ_r`
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:417 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.14 QCD archive scale and cosmological guardrail
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:505 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.31.1 Smooth macro-geometry and archive covariance
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:583 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.37 Final bridge index and spectral-cosmology status
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:593 [METAPHOR_IN_PROSE] -> heat-trace A0/A2 ladder
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:611 [METAPHOR_IN_PROSE] | spectral action A0/A2 ladder and higher-power bounds | `CORE-CLOSED` | `D0.Geometry.SpectralActionLadder.a0_is_volume_
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:712 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.42 Trace-heat archive branch
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:734 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:734 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:836 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing external comparison protocol
