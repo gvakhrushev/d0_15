@@ -1202,7 +1202,7 @@ give the finite spin-2 carrier.
 At the macro level: any compatible gravity interface must be symmetric,
 divergence-free, second-order under finite readout, and compatible with TT
 stress coupling.
-Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface,
+Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface (finite A2 variation + Bianchi selects the class; previous loose "EH bridge calibration" language is replaced by closed finite-response status).
 
 ## 07.50 Finite horizon capacity and A/4 witness
 

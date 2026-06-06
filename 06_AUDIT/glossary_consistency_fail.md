@@ -1,5 +1,5 @@
 # Glossary Consistency Failures
-Generated 2026-06-06T16:28:24.302296+00:00
+Generated 2026-06-06T16:28:51.803344+00:00
 
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:16 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
@@ -80,7 +80,6 @@ Generated 2026-06-06T16:28:24.302296+00:00
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:742 [METAPHOR_IN_PROSE] -> terminal-lift comparison.
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:823 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.23 Selector closures now owned by finite operators
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:839 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.24 Final finite variational selector-origin closures
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:251 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.11a Risky prediction passport discipline
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:262 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.12 Theory-improvement gate
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:319 [METAPHOR_IN_PROSE] | meson transfer algebra | `D0.Matter.MesonDefectTransferAlgebra` | edge and generation operators are lifted to a common
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:478 [METAPHOR_IN_PROSE] | meson transfer algebra | edge-space and generation-space operators are added without a common tensor/lift carrier |
@@ -90,7 +89,6 @@ Generated 2026-06-06T16:28:24.302296+00:00
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:637 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.21 Lepton magnetic-moment and precision bridge rule
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:693 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.25 Trace-heat-capacity gravity verification row
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:694 [METAPHOR_IN_PROSE] `trace-heat-capacity gravity` is accepted only as a split status block: core = fixed detector ladder, signed Lucas trace
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:697 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.26 External data passport runner
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:46 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.4 Active/archive decomposition
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:241 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.12 Runtime coefficient readout sequence
@@ -135,7 +133,6 @@ Generated 2026-06-06T16:28:24.302296+00:00
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1160 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.41 Trace-Heat-Capacity Gravity
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1199 [METAPHOR_IN_PROSE] cut capacity is holographic area; entropic surface tension is nonnegative;
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1207 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.50 Finite horizon capacity and A/4 witness
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1294 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.48 LIGO BBH mass-defect passport
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] terminal appears 29 times, not defined early
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] capacity appears 24 times, not defined early
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
@@ -154,11 +151,6 @@ Generated 2026-06-06T16:28:24.302296+00:00
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:588 [METAPHOR_IN_PROSE] -> heat-trace A0/A2 ladder
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:606 [METAPHOR_IN_PROSE] | spectral action A0/A2 ladder and higher-power bounds | `CORE-CLOSED` | `D0.Geometry.SpectralActionLadder.a0_is_volume_
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:707 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.42 Trace-heat archive branch
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:720 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.43 Core-13 passport boundary
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:729 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:729 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:742 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.45 IceCube neutrino phason decoherence passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:791 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.46 CMB phason-flip entropy spectrum passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:831 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:831 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:880 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.48 DESI BAO/S_DE phason-flip passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:831 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing external comparison protocol

@@ -1,9 +1,15 @@
 {
   "passport_id": "D0-GRAV-EH-001",
   "title": "Finite A2 Einstein Tensor Response Closure",
-  "inputs": ["FiniteWeakFieldQuotient", "HeatTraceA2Decomposition", "HigherCurvatureSuppression", "GradedBianchiClosure"],
-  "theorems": ["D0-GRAV-EH-001 Finite A2 Einstein-response theorem", "D0-GRAV-EH-002 Finite Bianchi forces divergence-free macro tensor", "D0-GRAV-EH-003 Conserved stress couples only to Einstein tensor class", "D0-GRAV-EH-NOGO-001 Ricci/scalar-only response cannot be full gravity response"],
+  "inputs": ["FiniteWeakFieldQuotient", "HeatTraceA2Decomposition", "HigherCurvatureSuppression", "GradedBianchiClosure", "FiniteSpin2WaveOperator"],
+  "theorems": [
+    "D0-GRAV-EH-001 — Finite A2 Einstein-response theorem",
+    "D0-GRAV-EH-002 — Finite Bianchi forces divergence-free macro tensor",
+    "D0-GRAV-EH-003 — Conserved stress couples only to Einstein tensor class",
+    "D0-GRAV-EH-NOGO-001 — Ricci/scalar-only response cannot be full gravity response"
+  ],
   "cert": "05_CERTS/vp_spectral_action_einstein_tensor_response.py",
   "status": "PASS_FINITE_A2_EINSTEIN_RESPONSE",
-  "book_update": "Book 07: EH macro-interface closed up to standard smooth-limit dictionary"
+  "book_update": "Book 07: EH macro-interface closed (finite A2 variation + Bianchi selects Einstein tensor class). Previous 'EH bridge calibration' language replaced.",
+  "negative_controls": ["Ricci-only fail", "scalar-only fail"]
 }
