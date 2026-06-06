@@ -439,7 +439,7 @@ This theorem is a domain split, not an added quantum-gravity coupling.  It preve
 
 ### 07.19.1 `D0-GRAV-001`: dimensionless spectral scale-separation invariant theorem and Planck/Newton shadow
 
-D0 derives a dimensionless dimensionless spectral scale-separation invariant map before any Newton coefficient is named:
+D0 derives a dimensionless spectral scale-separation invariant map before any Newton coefficient is named:
 
 ```math
 D_L=\Omega_8\varphi^{V_9V_{11}}\left(1+{\delta_0\over V_{13}}\right).
@@ -470,8 +470,7 @@ D_L = 3.951771012845559e21,
 G_N^{D0} = 6.670031309826955e-11.
 ```
 
-**Closure.**  The gravity bridge now has its active proof-cell: dimensionless
-dimensionless spectral scale-separation invariant first, typed SI calibration second.  `G_N` and `ell_P` are
+**Closure.**  The gravity bridge now has its active proof-cell: dimensionless spectral scale-separation invariant first, typed SI calibration second.  `G_N` and `ell_P` are
 single-section shadows, not independent anchors or core trace outputs.
 
 Primary certs: `vp_final_terminal_scale_depth_theorem.py`, `vp_gravity_metric_heat_kernel_two_part.py`.
@@ -644,8 +643,8 @@ primitive positive-response theorem gives `p+pВІ=1`, hence the return branch i
 \alpha_{D0}=p^2=\varphi^{-2}.
 ```
 
-The physical phase increment is therefore `2ПЂ/П†ВІ`.  By the Hurwitz/continued-
-fraction extremality of the `П†` class, this rotation is maximally resistant to
+The physical phase increment is therefore `2ПЂ/φВІ`.  By the Hurwitz/continued-
+fraction extremality of the `φ` class, this rotation is maximally resistant to
 low-denominator rational locking.  In D0 terminology, it is the admissible phase
 increment that suppresses uncontrolled metric arms in the unresolved complement.
 
@@ -653,7 +652,7 @@ This does not eliminate finite branches.  Branches appear only after a finite
 readout quotient chooses a return modulus.  Thus the same chain has two layers:
 
 ```text
-П†вЃ»ВІ irrational rotation  → non-resonant archive smoothing;
+φвЃ»ВІ irrational rotation  → non-resonant archive smoothing;
 finite return modulus q  → residue branch geometry.
 ```
 
@@ -835,12 +834,12 @@ Lean has closed the structural part of this finite equation:
 
 ```text
 poisson_requires_neutral_source:
-  ArchivePoissonEquation П† ПЃ → NeutralSource ПЃ
+  ArchivePoissonEquation φ ПЃ → NeutralSource ПЃ
 
 poisson_solution_unique_mod_constant:
-  ArchivePoissonEquation П†в‚Ѓ ПЃ →
-  ArchivePoissonEquation П†в‚‚ ПЃ →
-  П†в‚Ѓ - П†в‚‚ is constant
+  ArchivePoissonEquation φв‚Ѓ ПЃ →
+  ArchivePoissonEquation φв‚‚ ПЃ →
+  φв‚Ѓ - φв‚‚ is constant
 ```
 
 The reason is the constant zero mode of the canonical Laplacian.  Thus solvability forces
@@ -857,7 +856,7 @@ The non-vacuous scalar reduction is successfully closed under claim ID `D0-ARCHI
 
 ```text
 scalar_stationarity_implies_archive_poisson:
-  ScalarSectorStationary n П† ПЃ → ArchivePoissonEquation П† ПЃ
+  ScalarSectorStationary n φ ПЃ → ArchivePoissonEquation φ ПЃ
 ```
 
 The predicate `ScalarSectorStationary` is a non-vacuous point-test stationarity condition, completing the weak-field reduction proof.
@@ -1117,7 +1116,7 @@ and, equivalently for the finite component bookkeeping,
 10 symmetric rank-2 components - 8 gauge/constraint removals = 2 TT polarizations.
 ```
 
-This removes the previous ambiguity between "TT carrier exists" and вЂњthe
+This removes the previous ambiguity between "TT carrier exists" and "the
 Lorentz-facing spin-2 readout has the correct two physical polarizationsвЂќ.  The
 smooth Einstein equation remains a bridge after TT dynamics, tick-gauge closure,
 and spectral A2/EH proxy are all frozen.
@@ -1204,30 +1203,6 @@ divergence-free, second-order under finite readout, and compatible with TT
 stress coupling.
 Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface (finite A2 variation + Bianchi selects the class; previous loose "EH bridge calibration" language is replaced by closed finite-response status).
 
-## 07.50 Finite horizon capacity and A/4 witness
-
-Finite boundary shell ∂R reaches capacity saturation σ(R) = 1.  
-Cost of external active extension → ∞.  
-Terminal archive quotient Y : H_R → H_N makes active information inaccessible, **not deleted**.  
-ABCD terminal alphabet supplies the factor of 4:
-
-N_∂ = A / a_0 ,   S_∂^{D0} = N_∂ / 4 .
-
-This is derived from four terminal readout roles per saturated boundary cell (not imported Bekenstein-Hawking normalization).  
-Negative controls (A/2, A/8, volume entropy, singularity-as-deletion) are rejected.
-
-New typed owners:
-- D0.Gravity.FiniteHorizonCapacity
-- D0.Gravity.BlackHoleA4EntropyWitness
-
-Certificates: 05_CERTS/vp_black_hole_capacity_a4_witness.py  
-Passports: 08_PASSPORTS/BlackHoleCapacity/
-
-Cross-book:
-- Book 06: saturation as runtime halt / active-archive quotient.
-- Book 05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
-- Book 08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
-
 ## 07.49 Critical-collapse discrete self-similar log-time lattice and spacetime-crystal horizon
 
 PRL 2026 (arXiv:2601.14358) constructs closed analytic large-D discretely self-similar solutions of the Einstein–massless-Klein–Gordon critical-collapse system.
@@ -1263,9 +1238,31 @@ Passport manifest: `08_PASSPORTS/CriticalCollapseDSS/dss_prl2026_manifest.json`
 
 The external analytic certificate owns the GR construction (closed DSS family + NLO filtering). D0 owns the finite log-time readout / capacity / admissibility interpretation.
 
-Black-hole formation is a critical finite-readout phase transition through a spacetime-crystal echo horizon, not a purely smooth density-threshold singularity.
-while higher-curvature corrections are finite-cut suppressed.
-```
+Black-hole formation is a critical finite-readout phase transition through a spacetime-crystal echo horizon, not a purely smooth density-threshold singularity (while higher-curvature corrections are finite-cut suppressed).
+
+## 07.50 Finite horizon capacity and A/4 witness
+
+Finite boundary shell ∂R reaches capacity saturation σ(R) = 1.  
+Cost of external active extension → ∞.  
+Terminal archive quotient Y : H_R → H_N makes active information inaccessible, **not deleted**.  
+ABCD terminal alphabet supplies the factor of 4:
+
+N_∂ = A / a_0 ,   S_∂^{D0} = N_∂ / 4 .
+
+This is derived from four terminal readout roles per saturated boundary cell (not imported Bekenstein-Hawking normalization).  
+Negative controls (A/2, A/8, volume entropy, singularity-as-deletion) are rejected.
+
+New typed owners:
+- D0.Gravity.FiniteHorizonCapacity
+- D0.Gravity.BlackHoleA4EntropyWitness
+
+Certificates: 05_CERTS/vp_black_hole_capacity_a4_witness.py  
+Passports: 08_PASSPORTS/BlackHoleCapacity/
+
+Cross-book:
+- Book 06: saturation as runtime halt / active-archive quotient.
+- Book 05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
+- Book 08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
 
 ## 07.42 Phason/phonon split and dark metric response
 

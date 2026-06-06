@@ -336,7 +336,7 @@ closed static tuple -> finite spectrum/window -> S_DE transfer -> external BAO c
 
 The reverse order is forbidden.
 
-### 08.12.2 Archive-window eigenvalue equation for `О»_c,О»_r`
+### 08.12.2 Archive-window eigenvalue equation for `λ_c,λ_r`
 
 The window centers are not free BAO fit parameters.  They are the two eigenvalues of the normalized finite archive-window polynomial
 
@@ -382,7 +382,7 @@ This cell is the analytic source of the pair used in the BAO/S_DE comparison pro
 
 ### 08.12.3 S_DE as gap-labeled phason-flip spectrum
 
-The polynomial $160\lambda^2 - 480\lambda + 359$ (or 160О»ВІ в€’ 480О» + 359) is the finite transfer polynomial of archive phason flips. Its roots are relaxation modes. The corresponding spectral gaps must carry D0 hull/K0 labels.
+The polynomial $160\lambda^2 - 480\lambda + 359$ (or 160λВІ в€’ 480λ + 359) is the finite transfer polynomial of archive phason flips. Its roots are relaxation modes. The corresponding spectral gaps must carry D0 hull/K0 labels.
 
 The formal Lean owner is `D0.Cosmology.PhasonFlipEntropy` (`sde_relaxation_modes_have_gap_labels`, `archive_pressure_spectrum_is_gap_labeled`), and the verification certificate is `05_CERTS/vp_phason_flip_entropy_sde.py` (`PASS_PHASON_FLIP_ENTROPY_SDE_GAP_LABELS`).
 

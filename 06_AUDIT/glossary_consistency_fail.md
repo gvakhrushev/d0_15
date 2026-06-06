@@ -1,5 +1,5 @@
 # Glossary Consistency Failures
-Generated 2026-06-06T16:28:51.803344+00:00
+Generated 2026-06-06T16:31:29.467199+00:00
 
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:16 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
