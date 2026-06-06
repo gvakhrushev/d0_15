@@ -1,0 +1,18 @@
+{
+  "source": "08_PASSPORTS/DESI/desi_bao_sde_failure_summary.json",
+  "result": "FAIL_DESI_BAO_SDE_REAL_DATA",
+  "dominant_failure_modes": ["LOW_Z_FAILURE", "MID_Z_FAILURE", "AMPLITUDE_TOO_LOW"],
+  "frozen_roots": {
+    "lambda_c": 1.4209430584957905,
+    "lambda_r": 1.5790569415042095
+  },
+  "no_refit": true,
+  "forbidden_repairs": [
+    "root refit (lambda_c, lambda_r)",
+    "window shift or width refit",
+    "H0 / Omega_m / rd tuning",
+    "per-bin amplitude adjustment after seeing data"
+  ],
+  "allowed_next_class": "transfer geometry refinement only if derived from finite Hodge heat-trace / boundary response operator before data comparison. External survey transfer protocol only; no mutation of frozen D0 core.",
+  "note": "Real-data FAIL kept. Next operator must come from internal finite objects (e.g. heat trace boundary), not from fitting to DESI/BAO."
+}

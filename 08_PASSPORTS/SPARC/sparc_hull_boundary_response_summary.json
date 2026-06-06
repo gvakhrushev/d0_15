@@ -1,0 +1,18 @@
+{
+  "status": "FAIL_SPARC_HULL_BOUNDARY_RESPONSE_KERNEL",
+  "n_galaxies": 175,
+  "gamma_global": 0.0,
+  "aggregate_rmse": {
+    "baryon_only": 38.77876123764992,
+    "shape_only": 61.704905928478006,
+    "one_global": 37.35781478571393,
+    "hull_boundary": 38.77876123764992
+  },
+  "hull_better_than_global": false,
+  "boundary_proxy": "outer_accel + gas/disk fraction from diagnostics+results (no per-galaxy halo)",
+  "forbidden": [
+    "per-galaxy halo mass/radius",
+    "per-galaxy tuning"
+  ],
+  "timestamp": "2026-06-06T23:17:49.366323+00:00"
+}

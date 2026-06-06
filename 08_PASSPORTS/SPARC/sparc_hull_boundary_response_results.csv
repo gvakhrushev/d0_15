@@ -1,0 +1,5 @@
+kernel,aggregate_rmse,gamma_global,n_galaxies
+baryon_only,38.77876123764992,,175
+shape_only,61.704905928478006,,175
+one_global,37.35781478571393,,175
+hull_boundary,38.77876123764992,0.0,175

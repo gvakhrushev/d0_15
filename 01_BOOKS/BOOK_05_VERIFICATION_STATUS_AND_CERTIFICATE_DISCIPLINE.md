@@ -741,7 +741,7 @@ is forbidden as a core repair.
 Certificate: `05_CERTS/vp_desi_bao_sde_failure_diagnostics.py`.
 
 D0-TOPO-CONTINUUM-NOGO-001 — continuum master equations are bridge objects, not core primitives.
-D0-TOPO-NOAXION-001 — continuum theta-vacuum rejected as D0-core primitive.
+D0-TOPO-NOAXION-001 — continuum theta-vacuum rejected as D0-core primitive (CONDITIONAL-CLOSED: exact annihilation theorem conditional on finite exact-density annihilation predicate).
 
 D0-GRAV-FINITE-MINCUT-NOGO-001 — continuum RT surface / minimal surface is a bridge object; finite min-cut is the D0 core object.
 D0-GAUGE-SEAM-NOGO-001 — continuum Yang-Mills mass-gap claim is not D0-core; finite seam obstruction gap is the admitted finite theorem.

@@ -800,12 +800,19 @@ The owner is `D0.Passport.IceCubePhasonDecoherence`; the default certificate is 
 Current external-data runner result:
 
 ```text
-SKIP_NEUTRINO_PHASON_DECOHERENCE_BASELINE_REQUIRED
+FAIL_ICECUBE_HESE_D0_BASELINE_COMPARISON
 ```
 
-Reason: the HESE 12-year event table is now downloaded and the D0 damping curve
-is generated from event energy and direction. The external comparison protocol still skips physical
-PASS/FAIL because the exposure/flux baseline comparison is not implemented.
+Dataset:
+  HESE 12-year parsed event table
+  events_used = 164
+
+Baseline:
+  empirical no-decoherence energy-shape null (low+mid log bins extrapolated to high)
+  topology-ratio secondary (track/cascade)
+
+Meaning:
+  Frozen D0 damping (avg ~0.9993 in high) does not improve high-energy bin over no-deco null (delta_loglik ~0.003, delta_chi2 ~-0.004). FAIL.
 
 ## 08.46 CMB phason-flip entropy spectrum external comparison protocol
 
@@ -887,14 +894,22 @@ Current external-data runner result:
 PASS_SPARC_DATA_INGEST
 FAIL_ARCHIVE_PHASON_HALO_SPARC_SHAPE_ONLY
 FAIL_ARCHIVE_PHASON_HALO_SPARC_ONE_GLOBAL_SCALE
+FAIL_SPARC_HULL_BOUNDARY_RESPONSE_KERNEL
 ```
 
 SPARC rejects the first simple archive-response kernels:
 shape-only and one-global-scale.
+Hull-boundary (global gamma on outer/gas-disk boundary proxy, no per-galaxy halo): FAIL (gamma~0, not better).
 
 This constrains the next allowed dark-sector response operator.
 It is not a confirmation of the dark-sector model and not a failure of the
 full D0 cosmological framework.
+
+DESI BAO/S_DE constraints (no refit):
+  08_PASSPORTS/DESI/desi_sde_next_operator_constraints.json
+  dominant: LOW_Z, MID_Z, AMPLITUDE_TOO_LOW
+  forbidden: root/window/H0 etc refit
+  allowed next: transfer geometry from finite Hodge/boundary before comparison.
 
 ## 08.48 DESI BAO/S_DE phason-flip external comparison protocol
 
