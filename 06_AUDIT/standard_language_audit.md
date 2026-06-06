@@ -1,11 +1,11 @@
 # D0 Standard Language Audit Report
-Generated: 2026-06-06T16:31:28.956081+00:00
+Generated: 2026-06-06T16:36:51.492059+00:00
 
 Total occurrences scanned: 1266
 
 ## Summary by Classification
-- NEEDS_STANDARD_REWRITE: 575
-- OK_CODE_OR_FORMULA: 199
+- NEEDS_STANDARD_REWRITE: 573
+- OK_CODE_OR_FORMULA: 201
 - OK_FIRST_USE: 128
 - OK_OWNER: 364
 

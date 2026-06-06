@@ -1,20 +1,25 @@
 {
-  "dataset_id": "desi_bao_sde_phason_flip",
-  "source_name": "DESI BAO public data release",
-  "source_url": "https://data.desi.lbl.gov/",
-  "download_url": "",
-  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/desi_bao",
-  "sha256": "",
-  "downloaded_at_utc": "",
+  "dataset_id": "DESI_DR2_BAO",
+  "source_name": "DESI DR2 BAO public data release (official)",
+  "source_url": "https://data.desi.lbl.gov/public/dr2/",
+  "download_url": "Replace with exact official DESI DR2 BAO table + full covariance release",
+  "local_path": "C:\\Users\\kmeze\\OneDrive\\Документы\\d0_30_files\\D0_v13\\D0_v14\\D0_v14\\08_PASSPORTS\\_EXTERNAL_DATA_CACHE\\desi_bao\\desi_dr2_bao_sample.csv",
+  "sha256": "284113bbeb5f6c9c0b60a09738ecbbd5099e30e47fb88477c3ab9fb9ad637bf0",
+  "downloaded_at_utc": "2026-06-06T16:43:18.937960+00:00",
   "data_fields_required": [
     "z_eff",
     "dm_rd",
     "dh_rd",
-    "covariance",
-    "sha256"
+    "covariance"
   ],
-  "data_fields_found": [],
+  "data_fields_found": [
+    "z_eff",
+    "dm_rd",
+    "dh_rd",
+    "cov_diag"
+  ],
   "license_or_policy_note": "Use DESI public-data policy and cite the release.",
-  "citation_note": "Pin exact DESI BAO table/covariance release.",
-  "status": "MISSING"
+  "citation_note": "Pin exact DESI DR2 BAO table/covariance release.",
+  "status": "PARTIAL",
+  "note": "SAMPLE data for hard-run demo. Replace with official DESI DR2 BAO table + full covariance for production."
 }

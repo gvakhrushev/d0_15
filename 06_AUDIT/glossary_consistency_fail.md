@@ -1,5 +1,5 @@
 # Glossary Consistency Failures
-Generated 2026-06-06T16:31:29.467199+00:00
+Generated 2026-06-06T16:36:52.065469+00:00
 
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:16 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
@@ -114,25 +114,25 @@ Generated 2026-06-06T16:31:29.467199+00:00
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:192 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.9 Boundary, horizon and archive interpretation
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:302 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.14 Cosmology and archive pressure cross-reference
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:302 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.14 Cosmology and archive pressure cross-reference
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:540 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.21 Terminal boundary of traced-out complement and the A/4 law
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:616 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.24 Phase-unfolding capacity source for shell depth
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:697 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.27 Canonical archive Laplacian and curvature obstruction
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:701 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.28 Renormalized archive Laplacian / RG geometry
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:713 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.29 Seam curvature and archive action
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:735 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.30 Seam-action variation and archive field equation
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:757 [METAPHOR_IN_PROSE] The row-sum identity for the canonical Laplacian and the lift gives the
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:876 [METAPHOR_IN_PROSE] -> finite spectral-action ladder
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:896 [METAPHOR_IN_PROSE] | continuum Einstein-Hilbert reading | `BRIDGE-CALIBRATION` | finite spectral ladder plus declared smooth/continuum brid
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:912 [METAPHOR_IN_PROSE] -> finite spectral ladder
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:921 [METAPHOR_IN_PROSE] | finite heat-trace A0/A2 ladder | `CORE-CLOSED` |
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:995 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:995 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1125 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.40 Entropic archive to macro Einstein interface
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1138 [METAPHOR_IN_PROSE] 07.4 Entropic surface tension
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1153 [METAPHOR_IN_PROSE] surface tension.  The macro owner is `D0.Gravity.MacroEinsteinInterface`: a
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1160 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.41 Trace-Heat-Capacity Gravity
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1199 [METAPHOR_IN_PROSE] cut capacity is holographic area; entropic surface tension is nonnegative;
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1207 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.50 Finite horizon capacity and A/4 witness
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:539 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.21 Terminal boundary of traced-out complement and the A/4 law
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:615 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.24 Phase-unfolding capacity source for shell depth
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:696 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.27 Canonical archive Laplacian and curvature obstruction
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:700 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.28 Renormalized archive Laplacian / RG geometry
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:712 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.29 Seam curvature and archive action
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:734 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.30 Seam-action variation and archive field equation
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:756 [METAPHOR_IN_PROSE] The row-sum identity for the canonical Laplacian and the lift gives the
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:875 [METAPHOR_IN_PROSE] -> finite spectral-action ladder
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:895 [METAPHOR_IN_PROSE] | continuum Einstein-Hilbert reading | `BRIDGE-CALIBRATION` | finite spectral ladder plus declared smooth/continuum brid
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:911 [METAPHOR_IN_PROSE] -> finite spectral ladder
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:920 [METAPHOR_IN_PROSE] | finite heat-trace A0/A2 ladder | `CORE-CLOSED` |
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:994 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:994 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1124 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.40 Entropic archive to macro Einstein interface
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1137 [METAPHOR_IN_PROSE] 07.4 Entropic surface tension
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1152 [METAPHOR_IN_PROSE] surface tension.  The macro owner is `D0.Gravity.MacroEinsteinInterface`: a
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1159 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.41 Trace-Heat-Capacity Gravity
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1198 [METAPHOR_IN_PROSE] cut capacity is holographic area; entropic surface tension is nonnegative;
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1243 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.50 Finite horizon capacity and A/4 witness
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] terminal appears 29 times, not defined early
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] capacity appears 24 times, not defined early
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
@@ -144,7 +144,7 @@ Generated 2026-06-06T16:31:29.467199+00:00
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:149 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:149 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:274 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.12 BAO archive-transfer comparison protocol
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:339 [UNDEFINED_D0_TERM_IN_HEADING] ### 08.12.2 Archive-window eigenvalue equation for `О»_c,О»_r`
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:339 [UNDEFINED_D0_TERM_IN_HEADING] ### 08.12.2 Archive-window eigenvalue equation for `λ_c,λ_r`
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:412 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.14 QCD archive scale and cosmological guardrail
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:500 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.31.1 Smooth macro-geometry and archive covariance
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:578 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.37 Final bridge index and spectral-cosmology status

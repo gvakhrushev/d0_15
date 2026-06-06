@@ -296,6 +296,11 @@ The finite-window transfer is fixed by the spectral shape before external compar
 G_{log}(z;z_0,\sigma)=\exp\left[-{1\over2}\left({\log(1+z)-\log(1+z_0)\over\sigma}\right)^2\right].
 ```
 
+DESI DR2 BAO real-data hard run (frozen roots, no refit):
+  FAIL_DESI_BAO_SDE_REAL_DATA (demo with sample data; full official DESI DR2 + covariance required for production decision).
+
+The frozen S_DE roots (λ_c ≈ 1.420943, λ_r ≈ 1.579057) and transfer were evaluated against pinned DESI-like BAO measurements. No refit of roots, windows, H0, Ωm or rd was performed. This constrains the allowed cosmological transfer operator.
+
 The transfer is
 
 ```math
