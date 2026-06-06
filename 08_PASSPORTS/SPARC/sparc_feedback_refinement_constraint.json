@@ -1,0 +1,7 @@
+{
+  "summary": "SPARC FAIL requires boundary feedback derivative in kernel (no per-galaxy halo).",
+  "status": "FAIL_ARCHIVE_PHASON_HALO_SPARC (boundary feedback required)",
+  "no_refit": true,
+  "forbidden": ["per-galaxy halo tuning"],
+  "allowed": "global boundary feedback term from resolvent"
+}

@@ -313,7 +313,7 @@ Failure diagnostics:
 
 The frozen S_DE roots (λ_c ≈ 1.420943, λ_r ≈ 1.579057) and transfer were evaluated against pinned DESI DR2 BAO measurements. No refit of roots, windows, H0, Ωm or rd was performed. This constrains the allowed cosmological transfer operator.
 
-The internal cosmological response is grounded in finite heat-trace objects. External BAO/S_DE comparisons remain survey-transfer protocols and do not mutate the finite Hodge core.
+The internal cosmological response is grounded in finite heat-trace objects. Cosmology = feedback pressure transfer; S_DE = two-mode feedback pressure reduction; DESI/SPARC failures = missing boundary-derivative feedback correction (no root refit) (D0-CVFT-007, D0-CVFT-008). External BAO/S_DE comparisons remain survey-transfer protocols and do not mutate the finite Hodge core.
 
 Closed vacuum feedback equation of state: P = β^{-1} ∂_V log Z with Z = Tr e^{-βΔ} det(I-zR)^{-1}; P V = T χ; accelerated expansion = κ (P_fb - P_cap); S_DE roots as two-mode feedback pressure sector (no root refit; boundary derivative required).
 

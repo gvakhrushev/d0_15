@@ -746,6 +746,11 @@ D0-TOPO-NOAXION-001 — continuum theta-vacuum rejected as D0-core primitive (CO
 D0-VACUUM-FEEDBACK-NOGO-001 — external mirror / photon acceleration / ideal-gas postulate as core are rejected; DESI root/window refit repair is forbidden (boundary feedback correction from internal resolvent only).
 D0-VACUUM-FEEDBACK-NOGO-002 — closed vacuum feedback equation of state (Z, P_fb, PVT, matter as terminally stabilized modes) is the admitted core object.
 
+D0-CVFT-NOGO-001 — external mirror vacuum model forbidden.
+D0-CVFT-NOGO-002 — photon-acceleration interpretation forbidden.
+D0-CVFT-NOGO-003 — ideal-gas PV=NT postulate forbidden as core.
+D0-CVFT-NOGO-004 — DESI/SPARC root/window refit forbidden; only boundary feedback correction from internal resolvent allowed.
+
 D0-GRAV-FINITE-MINCUT-NOGO-001 — continuum RT surface / minimal surface is a bridge object; finite min-cut is the D0 core object.
 D0-GAUGE-SEAM-NOGO-001 — continuum Yang-Mills mass-gap claim is not D0-core; finite seam obstruction gap is the admitted finite theorem.
 D0-MATTER-BARYON-SCAFFOLD-001 — tick/S3 baryon asymmetry is a conditional scaffold only; full cosmological baryogenesis requires external model (not closed).

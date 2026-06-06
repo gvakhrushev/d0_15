@@ -17,7 +17,7 @@ finite carrier/support
 The central rule is:
 
 ```math
-\boxed{\text{finite support is not a physical mass by itself.}}
+\boxed{\text{finite support is not a physical mass by itself. Matter = terminally stabilized feedback eigenmodes (Rψ = rψ, |zr|≈1, P_term ψ=ψ); Higgs rank-2 feedback subspace; meson domain wall feedback stretch on C1; baryon S3-stabilized feedback in V⊗V⊗V (D0-CVFT-005).}}
 ```
 
 Matter defect/domain-wall operators are finite projected operators on the

@@ -209,6 +209,11 @@ import D0.Cosmology.FloorMassProjection
 import D0.Cosmology.ResearchPassCorollaries
 import D0.Cosmology.VacuumFeedbackEquationOfState
 import D0.Dynamics.InternalFeedbackResolvent
+import D0.Cosmology.FeedbackPartitionFunction
+import D0.Cosmology.FiniteFeedbackEquationOfState
+import D0.Matter.TerminalFeedbackModes
+import D0.Gravity.PressureCapacityBalance
+import D0.Cosmology.SDEFeedbackReduction
 import D0.Geometry.ArchiveTickGaugeFixing
 import D0.Probability.EntropyFlowJacobian
 import D0.Probability.ArchiveFloorWaterFilling

@@ -1,0 +1,7 @@
+{
+  "summary": "DESI FAIL requires boundary-derivative feedback correction from internal resolvent (∂_V R term), not root/window refit.",
+  "status": "FAIL_DESI_BAO_SDE_REAL_DATA (feedback boundary correction needed)",
+  "no_refit": true,
+  "forbidden": ["root refit", "window refit"],
+  "allowed": "boundary feedback correction"
+}
