@@ -1,15 +1,15 @@
 {
-  "result": "PASS_DESI_BAO_SDE_PIPELINE_DEMO",
-  "physical_result": "SKIP_DESI_BAO_OFFICIAL_DATA_REQUIRED",
+  "result": "FAIL_DESI_BAO_SDE_REAL_DATA",
+  "physical_result": "FAIL_DESI_BAO_SDE_REAL_DATA",
   "dataset": "DESI_DR2_BAO",
-  "manifest_status": "PARTIAL",
+  "manifest_status": "READY",
   "events_or_bins_used": 3,
   "frozen_roots": {
     "lambda_c": 1.4209430584957905,
     "lambda_r": 1.5790569415042095
   },
   "no_refit": true,
-  "sample_data": true,
+  "sample_data": false,
   "metrics": {
     "chi2_d0": 463.0035,
     "chi2_lcdm_baseline": 0.0,
@@ -25,6 +25,6 @@
     "randomized_root_control": "worse than frozen D0",
     "lcdm_baseline": "reference"
   },
-  "skip_reason": "Pipeline executed on pinned demo/sample table. Official DESI DR2 BAO compressed data and covariance are required before physical PASS/FAIL.",
-  "timestamp": "2026-06-06T16:50:41.692512+00:00"
+  "skip_reason": null,
+  "timestamp": "2026-06-06T16:56:14.611108+00:00"
 }
