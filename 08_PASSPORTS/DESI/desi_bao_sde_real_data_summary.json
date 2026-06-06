@@ -26,5 +26,5 @@
     "lcdm_baseline": "reference"
   },
   "skip_reason": "Pipeline executed on pinned demo/sample table. Official DESI DR2 BAO compressed data and covariance are required before physical PASS/FAIL.",
-  "timestamp": "2026-06-06T16:49:00.412360+00:00"
+  "timestamp": "2026-06-06T16:50:41.692512+00:00"
 }

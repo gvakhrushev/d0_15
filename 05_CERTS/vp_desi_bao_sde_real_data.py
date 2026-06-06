@@ -249,5 +249,14 @@ def main() -> int:
     print(f"sample_data: {sample_data}")
     return 0
 
+def parse_args():
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--mode", default="desi_dr2", choices=["desi_dr2", "desi_dr2_official"])
+    return p.parse_args()
+
 if __name__ == "__main__":
+    args = parse_args()
+    # For official mode, the downloader should have set sample_data=False and statuses READY
+    # The main() already respects manifest sample_data and statuses.
     raise SystemExit(main())
