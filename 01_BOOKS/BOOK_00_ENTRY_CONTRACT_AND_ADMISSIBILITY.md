@@ -1,4 +1,4 @@
-﻿# BOOK 00 вЂ” Entry Contract and Admissibility Discipline
+﻿# BOOK 00 — Entry Contract and Admissibility Discipline
 
 **Status:** `SCIENTIFIC-FRONT-MATTER / PROCESS-ARCHITECTURE`.
 
@@ -46,13 +46,13 @@ The D0 name is never the proof. The proof is the support object, the operator, t
 
 ## 00.2 Primitive thesis
 
-D0 is the finite verification theory of a condensed П†-quasicrystalline vacuum.
+D0 is a finite-observability framework over a condensed/profinite φ-quasicrystalline tiling hull.
 
 Its primitive object is not a smooth continuum, not a particle field and not a string vacuum.  
-Its primitive object is finite detector readout over a condensed/profinite support.
+Its primitive object is finite detector readout over a condensed/profinite support (the physical model is the condensed φ-quasicrystalline tiling hull).
 
 The integer time automorphism T generates the П†/Galois split, Lucas trace layers, Lefschetz scene counts and trace-heat gravity.  
-Observable matter, gauge mixing, dark sector, mesons, baryons, neutrinos and black-hole horizons are finite readouts, defects, holonomies, domain walls, gap labels and capacity saturations of this support.
+Observable sectors are represented by standard finite objects over this support: positive measurement outcomes, defect classes, holonomies, domain-wall operators, K0 gap labels and boundary-capacity saturation.
 
 ## 00.3 Admissible measurement skeleton
 

@@ -1,0 +1,4 @@
+{
+  "summary": "Finite boundary saturation + ABCD cell count gives S = A/4. Archive quotient makes information inaccessible, not deleted. Negative controls reject singularity-deletion models.",
+  "status": "CLOSED (finite A/4 capacity witness)"
+}

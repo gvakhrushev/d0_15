@@ -716,3 +716,14 @@ run rejects both simple shape-only and one-global-scale kernels. Future
 dark-sector halo operators must pass the same SPARC runner without per-galaxy
 halo tuning.
 
+D0-GRAV-DSS-NOGO-001 -- Smooth Monotone Collapse Failure.
+Purely smooth monotone collapse cannot represent the full critical black-hole
+threshold, because the threshold admits a DSS echo lattice (PRL 2026,
+arXiv:2601.14358). The certificate is `05_CERTS/vp_critical_collapse_dss_echo_lattice.py`.
+The typed no-go lives in `D0.Gravity.CriticalCollapseDSS`.
+
+D0-BH-CAP-NOGO-001 -- Singularity-as-information-deletion rejected.
+Black-hole horizon cannot be read as deletion of information. The terminal archive
+quotient makes active readout inaccessible while preserving total finite dimension/trace.
+Certificate: `05_CERTS/vp_black_hole_capacity_a4_witness.py`. Lean: `D0.Gravity.BlackHoleA4EntropyWitness`.
+

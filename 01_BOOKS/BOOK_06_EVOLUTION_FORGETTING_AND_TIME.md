@@ -797,6 +797,11 @@ Gravity runtime exports remain internal until a bridge is declared:
 ```text
 c_D0 = 1 tick gauge
 eta4 terminal signature
+```
+
+DSS echoing (critical gravitational collapse) is the log-time recurrence counterpart of finite runtime recurrence at a capacity boundary. It is not ordinary smooth evolution; it is discrete self-similar log-periodic readout at the horizon threshold (see Book 07 §07.49 and D0-GRAV-DSS-00x).
+
+Finite horizon capacity saturation is a runtime halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref D0-BH-CAP-00x and Book 07 §07.50).
 delta0 finite readout cut
 heat trace scale is internal, not SI time
 ```

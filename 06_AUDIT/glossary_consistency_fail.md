@@ -1,0 +1,176 @@
+# Glossary Consistency Failures
+Generated 2026-06-06T16:17:13.217829+00:00
+
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:16 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:131 [UNDEFINED_D0_TERM_IN_HEADING] ## 00.4a D0 vacuum as condensed П†-quasicrystalline tiling hull
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:140 [UNDEFINED_D0_TERM_IN_HEADING] ## 00.5 Terminal alphabet and scene orientation
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:140 [UNDEFINED_D0_TERM_IN_HEADING] ## 00.5 Terminal alphabet and scene orientation
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:163 [METAPHOR_IN_PROSE] and the finite scene is oriented by the odd addressed runtime ladder
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:300 [UNDEFINED_D0_TERM_IN_HEADING] ## 00.12 Bridge austerity
+- **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:352 [METAPHOR_IN_PROSE] | archive pressure | boundary/complement response entering a finite window or survey transfer | not a primitive dark flu
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:146 [METAPHOR_IN_PROSE] 2. **operator lift:** the finite factor carries a channel `\mathcal D_N` on `\mathcal H_N=\mathbb C^{S_N}`;
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:333 [METAPHOR_IN_PROSE] ### 01.6.2 Recursive distinguishability and the detector ladder
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:450 [METAPHOR_IN_PROSE] This is the active `\varphi`-ladder relation used downstream.
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:452 [UNDEFINED_D0_TERM_IN_HEADING] ### 01.7.1 Terminal two-port realization of ABCD
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:481 [METAPHOR_IN_PROSE] The detector closure is therefore not `8` as a graph vertex count.  It is a closed signed terminal role cycle.  The grap
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:575 [UNDEFINED_D0_TERM_IN_HEADING] ## 01.9 Internal causality and the single line/tick section
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:727 [METAPHOR_IN_PROSE] The factor of two is structural: \(\delta_0\) is half of the two-branch asymmetry, while \(Q(1)=2\delta_0\) is the full 
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:758 [METAPHOR_IN_PROSE] 2. lift to a finite operator family `D_N` compatible with projections;
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1075 [UNDEFINED_D0_TERM_IN_HEADING] ## 01.20 Capacity closure of ABCD, О©8 and V9
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1226 [UNDEFINED_D0_TERM_IN_HEADING] ### Lorentz carrier from terminal role capacity
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1226 [UNDEFINED_D0_TERM_IN_HEADING] ### Lorentz carrier from terminal role capacity
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1237 [UNDEFINED_D0_TERM_IN_HEADING] ### Topological tick-gauge and archive floor projection
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1237 [UNDEFINED_D0_TERM_IN_HEADING] ### Topological tick-gauge and archive floor projection
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1253 [UNDEFINED_D0_TERM_IN_HEADING] ### Torus shell overlap response (Torus Shell Overlap And Born Readout)
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1258 [METAPHOR_IN_PROSE] ### Fixed detector time ladder
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1259 [METAPHOR_IN_PROSE] The detector is fixed; the division ladder evolves by $T^n$:
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1261 [METAPHOR_IN_PROSE] The detector is fixed; the division ladder evolves by T^n.
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:1263 [METAPHOR_IN_PROSE] - **Lean Owner**: `D0.Core.FixedDetectorTimeLadder`.
+- **BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] terminal appears 36 times, not defined early
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:15 [METAPHOR_IN_PROSE] Book 02 is the mathematical reference for the corpus. Book 01 constructs the finite detector object and graph-birth lift
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:92 [METAPHOR_IN_PROSE] The exponent and two correction terms must be selected from the gate-action grammar: terminal scalar anchoring, PNO-axis
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:154 [METAPHOR_IN_PROSE] The role of these identities in Book 02 is operational. They define the finite stop ideal and admissible runtime calculu
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:277 [METAPHOR_IN_PROSE] ### 02.5.2 Centered half-gap and dimension ladder
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:309 [METAPHOR_IN_PROSE] The dimension-graded ladder is therefore
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:345 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.7 Action, gate and scene calculus
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:345 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.7 Action, gate and scene calculus
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:353 [METAPHOR_IN_PROSE] The scene functional is a constraint certificate. It selects finite scene structure under addressability, non-monopoly v
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:357 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.8 Universal quadratic readout
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:416 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.10 Runtime, entropy and finite S-matrix
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:440 [METAPHOR_IN_PROSE] **Support.**  The support is the finite admissible detector ladder after the φ halt quotient.
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:822 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.15 Archive pressure and spectral transfer
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:822 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.15 Archive pressure and spectral transfer
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:832 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.16 Archive/cosmology proof cells
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1047 [METAPHOR_IN_PROSE] The correction is therefore tied to the terminal role square, signed lift and light gauge carrier dimension.  No empiric
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1161 [METAPHOR_IN_PROSE] proves that an alternative finite probability assignment is impossible under the same detector response.  The finite eff
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1316 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.31 Φ as primitive positive-response capacity
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] runtime appears 38 times, not defined early
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:1 [UNDEFINED_D0_TERM_IN_HEADING] # BOOK 03 — Finite action operators and scene dynamics
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:3 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.1 Standard reading of action and scene terminology
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:47 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.4 Scene/gate backbone
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:47 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.4 Scene/gate backbone
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:216 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.9 Runtime, forgetting and witness transport
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:252 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.12 Proton, neutron and beta/archive blocks as action mechanisms
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:398 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.18 Terminal-cycle derivation of the `38` action section
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:552 [METAPHOR_IN_PROSE] ## 03.21 Finite spectral-action ladder
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:556 [METAPHOR_IN_PROSE] For a density floor `rho` and finite Laplacian `L`, the active ladder is:
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:578 [METAPHOR_IN_PROSE] D0.Geometry.SpectralActionLadder.a0_is_volume_proxy
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:579 [METAPHOR_IN_PROSE] D0.Geometry.SpectralActionLadder.a2_is_eh_proxy
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:580 [METAPHOR_IN_PROSE] D0.Geometry.SpectralActionLadder.higher_powers_floor_bounded
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:588 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.22 Action-to-selector closure rule
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:631 [UNDEFINED_D0_TERM_IN_HEADING] ## 03.24 Lefschetz scene counts from the time ladder
+- **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:631 [METAPHOR_IN_PROSE] ## 03.24 Lefschetz scene counts from the time ladder
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:141 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.5 Terminal matter triad
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:208 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.7 Electroweak radial depth as a concrete selector
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:243 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.8 Charged leptons as a concrete selector family
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:451 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.12 QCD runtime and confinement grammar
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:470 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.13 Baryon support and nucleon readout
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:545 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.12.1 Full-support replacement of local selector windows
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:625 [METAPHOR_IN_PROSE] D0.Matter.liftEdge
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:626 [METAPHOR_IN_PROSE] D0.Matter.liftGen
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:657 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(L_M)
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:658 [METAPHOR_IN_PROSE] +\operatorname{liftEdge}(\Gamma_\chi^\dagger\Gamma_\chi)
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:659 [METAPHOR_IN_PROSE] +\operatorname{liftGen}(F_{fl}^\dagger F_{fl})
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:660 [METAPHOR_IN_PROSE] +\operatorname{liftEdge}(V_{sp}^\dagger V_{sp})
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:664 [METAPHOR_IN_PROSE] The flavour defect is therefore in the total operator through `liftGen`; it is
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:666 [METAPHOR_IN_PROSE] lower-Hodge seed lifted as `liftEdge L_M` remains internally generation-blind,
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:742 [METAPHOR_IN_PROSE] -> terminal-lift comparison.
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:823 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.23 Selector closures now owned by finite operators
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:839 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.24 Final selector-origin closures
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:251 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.11a Risky prediction passport discipline
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:262 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.12 Theory-improvement gate
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:319 [METAPHOR_IN_PROSE] | meson transfer algebra | `D0.Matter.MesonDefectTransferAlgebra` | edge and generation operators are lifted to a common
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:478 [METAPHOR_IN_PROSE] | meson transfer algebra | edge-space and generation-space operators are added without a common tensor/lift carrier |
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:496 [UNDEFINED_D0_TERM_IN_HEADING] ### 05.15.1 PDG Strict Passport Protocol
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:537 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.17 ABCD and capacity proof-cell rule
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:561 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.18 Bridge proof-cell rule
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:637 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.21 Lepton magnetic-moment and precision bridge rule
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:687 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.25 Trace-heat-capacity gravity verification row
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:688 [METAPHOR_IN_PROSE] `trace-heat-capacity gravity` is accepted only as a split status block: core = fixed detector ladder, signed Lucas trace
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:691 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.26 External data passport runner
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:46 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.4 Active/archive decomposition
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:96 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.6 Finite phi-runtime and depth contraction
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:142 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.8 Normalized tick operator
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:197 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.9a Tiling-hull runtime
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:241 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.12 Runtime coefficient readout sequence
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:241 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.12 Runtime coefficient readout sequence
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:267 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.13 Tick-to-scattering comparison protocol
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:284 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.14 Archive-pressure runtime kernel
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:284 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.14 Archive-pressure runtime kernel
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:446 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.21 Claim-level RG bridge guardrail
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:524 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.25 RG/forgetting as an executed finite entropy bridge
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:558 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.27 Lepton magnetic moment as RG/forgetting bridge
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:568 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.28 Tick-to-space unfolding
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:583 [METAPHOR_IN_PROSE] automorphism `T=[[0,1],[1,-1]]` orders the active/archive ladder through
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:665 [METAPHOR_IN_PROSE] The renormalization bridge is a typed forgetting map over the D0 scale ladder. At level `k`, the comparison scale is
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:677 [METAPHOR_IN_PROSE] The continuous RG equation is the interpolation shadow of this ladder. The bridge is valid only relative to an explicitl
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:681 [METAPHOR_IN_PROSE] The П†-discrete RG ladder may be read as a sequence of frozen operator bands. Spectral gaps in these bands are admissibl
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:709 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.33 Renormalized archive Laplacian as finite forgetting
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:722 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.34 Refinement seam as archive forgetting boundary
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:724 [METAPHOR_IN_PROSE] The current seam layer makes the forgetting boundary explicit. Energy descends exactly across the archive phase projecti
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:747 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.36 Finite tick-gauge closure
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:809 [UNDEFINED_D0_TERM_IN_HEADING] ## 06.37 П†вЃµ torus invariant and runtime quasicrystal geometry (Phi^5 Torus Invariant)
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:828 [METAPHOR_IN_PROSE] ### 06.37.1 Trace-heat time ladder
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:838 [METAPHOR_IN_PROSE] Thus heat moments of T^2 are even Lucas traces. A fixed detector reads T^n layers while the detector itself is unchanged
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] tick appears 37 times, not defined early
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] bridge appears 41 times, not defined early
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:164 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.8 Runtime gravity coefficient and area normalization
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:192 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.9 Boundary, horizon and archive interpretation
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:302 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.14 Cosmology and archive pressure cross-reference
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:302 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.14 Cosmology and archive pressure cross-reference
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:540 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.21 Terminal archive boundary and the A/4 law
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:540 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.21 Terminal archive boundary and the A/4 law
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:616 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.24 Phase-unfolding capacity source for shell depth
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:697 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.27 Canonical archive Laplacian and curvature obstruction
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:701 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.28 Renormalized archive Laplacian / RG geometry
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:713 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.29 Seam curvature and archive action
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:735 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.30 Seam-action variation and archive field equation
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:757 [METAPHOR_IN_PROSE] The row-sum identity for the canonical Laplacian and the lift gives the
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:876 [METAPHOR_IN_PROSE] -> finite spectral-action ladder
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:896 [METAPHOR_IN_PROSE] | continuum Einstein-Hilbert reading | `BRIDGE-CALIBRATION` | finite spectral ladder plus declared smooth/continuum brid
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:912 [METAPHOR_IN_PROSE] -> finite spectral ladder
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:921 [METAPHOR_IN_PROSE] | finite heat-trace A0/A2 ladder | `CORE-CLOSED` |
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:995 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:995 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1125 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.40 Entropic archive to macro Einstein interface
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1138 [METAPHOR_IN_PROSE] 07.4 Entropic surface tension
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1153 [METAPHOR_IN_PROSE] surface tension.  The macro owner is `D0.Gravity.MacroEinsteinInterface`: a
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1160 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.41 Trace-Heat-Capacity Gravity
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1199 [METAPHOR_IN_PROSE] cut capacity is holographic area; entropic surface tension is nonnegative;
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1207 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.50 Finite horizon capacity and A/4 witness
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1294 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.48 LIGO BBH mass-defect passport
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] terminal appears 28 times, not defined early
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] capacity appears 24 times, not defined early
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:34 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.3 Cosmology is finite survey readout, not bare continuum ontology
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:53 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.3.1 Frozen archive cosmology before survey likelihood
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:104 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.4 Archive sector as boundary complement
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:115 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.5 Cosmological readout discipline
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:133 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.6 Archive-pressure operator
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:149 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:149 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:192 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7a Dark matter as archive phason glass
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:192 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7a Dark matter as archive phason glass
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:274 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.12 BAO archive-transfer comparison protocol
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:339 [UNDEFINED_D0_TERM_IN_HEADING] ### 08.12.2 Archive-window eigenvalue equation for `О»_c,О»_r`
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:412 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.14 QCD archive scale and cosmological guardrail
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:500 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.31.1 Smooth macro-geometry and archive covariance
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:578 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.37 Final bridge index and spectral-cosmology status
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:588 [METAPHOR_IN_PROSE] -> heat-trace A0/A2 ladder
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:606 [METAPHOR_IN_PROSE] | spectral action A0/A2 ladder and higher-power bounds | `CORE-CLOSED` | `D0.Geometry.SpectralActionLadder.a0_is_volume_
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:707 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.42 Trace-heat archive branch
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:720 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.43 Core-13 passport boundary
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:729 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:729 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive branch dark readout regimes
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:742 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.45 IceCube neutrino phason decoherence passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:791 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.46 CMB phason-flip entropy spectrum passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:831 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:831 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:878 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.48 DESI BAO/S_DE phason-flip passport

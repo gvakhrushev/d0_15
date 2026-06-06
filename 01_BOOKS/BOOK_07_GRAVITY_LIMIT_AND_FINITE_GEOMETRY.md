@@ -1,4 +1,4 @@
-﻿# BOOK 07 вЂ” Gravity limit and finite geometry
+﻿# BOOK 07 — Gravity limit and finite geometry
 
 ## 07.1 Standard reading of finite gravity language
 
@@ -112,7 +112,7 @@ S_{EH}=\frac{1}{16\pi G_D}\int d^4x\sqrt{-g}\,R.
 
 The status of this statement is a carrier/bridge theorem: D0 fixes the finite support, heat-trace grammar and coefficient bridge; the continuum Einstein action is the stable large-scale language.
 
-## 07.6a TraceвЂ“Heat geometry over the D0 tiling hull
+## 07.6a Trace–Heat geometry over the D0 tiling hull
 
 The heat trace is not a continuum primitive. It is the macro spectral shadow of finite operators over the D0 tiling hull. Curvature is the detector-visible response of this spectral shadow after finite coarse-graining.
 
@@ -402,6 +402,12 @@ The finite D0 geometry may be projected to a continuum heat-trace expansion only
 
 The Einstein-Hilbert term is the retained large-scale readout.  Higher-curvature terms are governed by the dimensionless suppression
 
+**EH macro-interface status update (D0-GRAV-EH closure):**  
+Finite A2 variation + finite Bianchi + conserved stress pairing selects the unique Einstein tensor class as the macro response.  
+The previous “EH bridge calibration” language is replaced by:  
+“EH macro-interface closed up to standard smooth-limit dictionary: finite A2 variation + Bianchi selects Einstein tensor class.”  
+SI G_N remains single-section metrological shadow (no change).
+
 ```math
 \eta_{HC}(L)=\left(\frac{\ell_P^{D0}}{L}\right)^2.
 ```
@@ -453,15 +459,15 @@ length section:
 ```math
 \ell_P=\ell_0/D_L,
 \qquad
-G_N={c^3\ell_P^2\over\hbar}.
+G_N = \frac{c^3 \ell_P^2}{\hbar}.
 ```
 
 The certificate records the SI representative values:
 
 ```text
 D_L = 3.951771012845559e21,
-в„“_P^D0 = 1.6157380866594502e-35 m,
-G_N^D0 = 6.670031309826955e-11.
+ℓ_P^{D0} = 1.6157380866594502e-35 m,
+G_N^{D0} = 6.670031309826955e-11.
 ```
 
 **Closure.**  The gravity bridge now has its active proof-cell: dimensionless
@@ -1197,6 +1203,67 @@ At the macro level: any compatible gravity interface must be symmetric,
 divergence-free, second-order under finite readout, and compatible with TT
 stress coupling.
 Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface,
+
+## 07.50 Finite horizon capacity and A/4 witness
+
+Finite boundary shell ∂R reaches capacity saturation σ(R) = 1.  
+Cost of external active extension → ∞.  
+Terminal archive quotient Y : H_R → H_N makes active information inaccessible, **not deleted**.  
+ABCD terminal alphabet supplies the factor of 4:
+
+N_∂ = A / a_0 ,   S_∂^{D0} = N_∂ / 4 .
+
+This is derived from four terminal readout roles per saturated boundary cell (not imported Bekenstein-Hawking normalization).  
+Negative controls (A/2, A/8, volume entropy, singularity-as-deletion) are rejected.
+
+New typed owners:
+- D0.Gravity.FiniteHorizonCapacity
+- D0.Gravity.BlackHoleA4EntropyWitness
+
+Certificates: 05_CERTS/vp_black_hole_capacity_a4_witness.py  
+Passports: 08_PASSPORTS/BlackHoleCapacity/
+
+Cross-book:
+- Book 06: saturation as runtime halt / active-archive quotient.
+- Book 05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
+- Book 08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
+
+## 07.49 Critical-collapse echo lattice and spacetime-crystal horizon
+
+PRL 2026 (arXiv:2601.14358) constructs closed analytic large-D discretely self-similar solutions of the Einstein–massless-Klein–Gordon critical-collapse system.
+
+D0 reads this as a gravity-side closure of the finite horizon transition: black-hole birth passes through a discrete log-scale echo lattice.
+
+The self-similar horizon (SSH) is the null boundary where the echo-lattice vector becomes lightlike. In D0 this is the capacity-null boundary of the terminal horizon readout.
+
+New D0 chain (dynamic birth, not static saturation):
+
+```text
+trace-heat gravity
+→ capacity density growth
+→ critical echo-lattice phase
+→ self-similar null horizon
+→ terminal archive boundary
+→ black-hole saturation
+```
+
+New typed owners:
+- `D0.Gravity.CriticalCollapseDSS`
+- `D0.Gravity.EchoCapacityHorizon`
+
+New theorem block:
+- D0-GRAV-DSS-001 Critical Collapse Echo-Lattice Closure
+- D0-GRAV-DSS-002 Self-similar horizon is capacity-null boundary
+- D0-GRAV-DSS-003 Echo admissibility constraint (NLO/convexity/SSH filtering)
+- D0-GRAV-DSS-004 Spacetime Crystal Bridge
+- D0-GRAV-DSS-NOGO-001 Smooth Monotone Collapse Failure
+
+Certificate: `05_CERTS/vp_critical_collapse_dss_echo_lattice.py`
+Passport manifest: `08_PASSPORTS/CriticalCollapseDSS/dss_prl2026_manifest.json`
+
+The external analytic certificate owns the GR construction (closed DSS family + NLO filtering). D0 owns the finite log-time readout / capacity / admissibility interpretation.
+
+Black-hole formation is a critical finite-readout phase transition through a spacetime-crystal echo horizon, not a purely smooth density-threshold singularity.
 while higher-curvature corrections are finite-cut suppressed.
 ```
 

@@ -411,6 +411,16 @@ unless a claim explicitly declares its operator, window, external data and falsi
 
 ## 08.14 QCD archive scale and cosmological guardrail
 
+Primordial black-hole formation (if modeled inside D0) must pass through a
+critical echo-lattice / capacity-threshold operator rather than a purely smooth
+density-threshold scalar. See Book 07 §07.49 (D0-GRAV-DSS-00x) for the horizon
+birth dynamics bridge and §07.50 for the finite A/4 capacity witness.
+
+PBH must combine:
+- DSS echo-lattice critical birth (D0-GRAV-DSS-001)
+- Finite A2 Einstein-response class (D0-GRAV-EH-00x)
+- Finite A/4 horizon capacity witness (D0-BH-CAP-001).
+
 The QCD archive/confinement scale is a matter/runtime object inherited from Books 04 and 06. It may provide an analogy and a guardrail for archive thinking, but it is not a hidden cosmological dark scale.
 
 The forbidden shortcut is
