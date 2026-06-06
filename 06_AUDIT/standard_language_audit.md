@@ -1,5 +1,5 @@
 # D0 Standard Language Audit Report
-Generated: 2026-06-06T16:23:36.126890+00:00
+Generated: 2026-06-06T16:28:23.732214+00:00
 
 Total occurrences scanned: 1297
 

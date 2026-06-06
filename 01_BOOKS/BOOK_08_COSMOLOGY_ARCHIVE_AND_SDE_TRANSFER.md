@@ -68,7 +68,7 @@ statements are:
 
 ```text
 internal_archive_shape_independent_of_empirical_parameters
-survey_passport_preserves_internal_archive_shape
+survey_external comparison protocol_preserves_internal_archive_shape
 survey_comparison_requires_nonempty_manifest
 survey_likelihood_cannot_promote_to_core_cosmology
 frozen_archive_cosmology_core_shape_closed
@@ -83,7 +83,7 @@ The positive order is therefore:
 ```text
 finite archive theorem
 → frozen entropy/S_DE transfer shape
-→ typed survey passport
+→ typed survey external comparison protocol
 → external data manifest and likelihood
 → falsification or comparison result.
 ```
@@ -394,7 +394,7 @@ archive phason flip
 -> characteristic polynomial
 -> two relaxation roots
 -> K0/gap-labeled spectrum
--> BAO/S_DE observable-transfer passport
+-> BAO/S_DE observable-transfer external comparison protocol
 ```
 
 External survey data may test the transfer shape; they cannot choose the roots or relabel the phason-flip spectrum.
@@ -482,7 +482,7 @@ Falsification rules for cosmology claims:
 2. `S_DE` parameters may not be derived after seeing BAO data.
 3. `H0`, `Omega_m`, redshift centers, covariance choices and likelihood cuts are external comparison coordinates.
 4. A missing manifest is a reproducibility dependency, not an internal theorem failure.
-5. Archive pressure is not a dark-particle insertion unless a separate particle operator and passport are declared.
+5. Archive pressure is not a dark-particle insertion unless a separate particle operator and external comparison protocol are declared.
 
 The cross-book boundary is:
 
@@ -490,7 +490,7 @@ The cross-book boundary is:
 |---|---|
 | finite support and response | Books 01--02 |
 | single action section | Book 03 |
-| matter-sector passports | Book 04 |
+| matter-sector external comparison protocols | Book 04 |
 | certificate and negative-control discipline | Book 05 |
 | time, forgetting and finite runtime | Book 06 |
 | heat-capacity gravity and boundary saturation | Book 07 |
@@ -623,7 +623,7 @@ No cosmology likelihood script is allowed to promote `H0`, `Omega_m`, redshift c
 | `05_CERTS/vp_cosmology_entropy_flow_likelihood.py` | `EMPIRICAL-PASSPORT` | verifies locked core-shape guardrails while external bridge parameters cannot mutate core parameters |
 | `05_CERTS/vp_spectral_action_eh_coefficient.py` | `CERT-CLOSED` | checks heat-trace A0/A2 proxy and higher-curvature report artifacts |
 | `05_CERTS/vp_spectral_action_expansion_stability.py` | `CERT-CLOSED` | checks finite spectral-action stability and negative controls |
-| `05_CERTS/vp_v1133_bao_sde_reproducible_passport.py` | `EMPIRICAL-PASSPORT` | BAO/SDE reproducibility comparison protocol, not core parameter derivation |
+| `05_CERTS/vp_v1133_bao_sde_reproducible_external comparison protocol.py` | `EMPIRICAL-PASSPORT` | BAO/SDE reproducibility comparison protocol, not core parameter derivation |
 | `05_CERTS/ported_legacy_primary/D0-COSMO-004/run_cosmological_full_likelihood.py` | `EMPIRICAL-PASSPORT` / `EXTERNAL-DATA-REQUIRED` | ported full-likelihood comparison with external survey data |
 | `05_CERTS/ported_legacy_primary/D0-COSMO-005/run_bao_sde_shape_parameter_derivation.py` | `CERT-CLOSED` | internal SDE window-shape derivation |
 | `05_CERTS/ported_legacy_primary/D0-COSMO-005/run_bao_sde_kernel_archive_transfer.py` | `CERT-CLOSED` | finite bridge kernel construction before survey comparison |
@@ -694,14 +694,14 @@ proves that an unpackaged external survey comparison cannot be advertised as
 reproducible.  `survey_likelihood_cannot_promote_to_core_cosmology` blocks the
 strongest overclaim: a likelihood agreement is not a new D0 core theorem.
 
-Thus Book 08 is no longer a list of cosmological passports.  It is a split
+Thus Book 08 is no longer a list of cosmological external comparison protocols.  It is a split
 between frozen finite cosmology and external reproducibility protocol.
 
 Sync token: 08.41 P7 reproducibility split closure.
 
 Cosmological acceleration/entropy flow uses archive entropy layer.  It must
 cite `D0.Gravity.EntropicArchiveInterface`, not import continuum GR as primitive.
-Survey likelihoods remain passports after the finite archive macro-interface
+Survey likelihoods remain external comparison protocols after the finite archive macro-interface
 has been frozen.
 
 ## 08.42 Trace-heat archive branch
@@ -715,16 +715,16 @@ black-hole-like regions = finite boundary-capacity saturation events
 black-hole-like regions are finite boundary-capacity saturation events
 ```
 
-Any survey comparison of this mechanism is an external passport after the fixed finite trace-heat object is declared.
+Any survey comparison of this mechanism is an external external comparison protocol after the fixed finite trace-heat object is declared.
 
-## 08.43 Core-13 passport boundary
+## 08.43 Core-13 external comparison protocol boundary
 
-Core-13 particle-shell diagnostics and cosmological survey passports are separate validation layers. PDG/Core-13 may validate frozen matter/geometry embeddings through `08_PASSPORTS/PDG`; BAO/SDE/HST survey passports validate frozen cosmology transfer shapes. Neither passport layer can create a D0 primitive.
+Core-13 particle-shell diagnostics and cosmological survey external comparison protocols are separate validation layers. PDG/Core-13 may validate frozen matter/geometry embeddings through `08_PASSPORTS/PDG`; BAO/SDE/HST survey external comparison protocols validate frozen cosmology transfer shapes. Neither external comparison protocol layer can create a D0 primitive.
 
-Nuclear shell-contact SRC passport boundary: `08_PASSPORTS/NuclearSRC` is a matter-sector external-data boundary, not a cosmology input. The frozen D0 object is `D0.Matter.NuclearShellContactSRC`; Nature source-data workbooks may test the shell-contact ranking only after manifest/hash pinning. Without pinned source data the required result is `SKIP_NATURE2026_SOURCE_DATA_REQUIRED`.
+Nuclear shell-contact SRC external comparison protocol boundary: `08_PASSPORTS/NuclearSRC` is a matter-sector external-data boundary, not a cosmology input. The frozen D0 object is `D0.Matter.NuclearShellContactSRC`; Nature source-data workbooks may test the shell-contact ranking only after manifest/hash pinning. Without pinned source data the required result is `SKIP_NATURE2026_SOURCE_DATA_REQUIRED`.
 
-Core-13 Passport Boundary: `vp_core13_shell_geometry_passport.py` is the
-external geometry passport pointer for the finite shell geometry row.
+Core-13 Passport Boundary: `vp_core13_shell_geometry_external comparison protocol.py` is the
+external geometry external comparison protocol pointer for the finite shell geometry row.
 
 ## 08.44 Archive branch dark readout regimes
 
@@ -739,7 +739,7 @@ The dark-matter side is owned by `D0.Physics.ArchivePhasonDarkMatter` and certif
 
 The archive dark-strain module and the baryon S3 phason module reuse the same finite phason coordinate vocabulary, but they do not identify the same transfer. The owner for the baryon side is `D0.Matter.PhasonStrainGenerations`; the owner for the traced-out complement dark side remains `D0.Physics.ArchivePhasonDarkMatter`.
 
-## 08.45 IceCube neutrino phason decoherence passport
+## 08.45 IceCube neutrino phason decoherence external comparison protocol
 
 Frozen D0 object:
 
@@ -776,7 +776,7 @@ Result semantics:
 PASS / FAIL / SKIP_NEUTRINO_PHASON_DECOHERENCE_EXTERNAL_DATA_REQUIRED
 ```
 
-The owner is `D0.Passport.IceCubePhasonDecoherence`; the default certificate is `vp_neutrino_phason_decoherence_passport.py`.
+The owner is `D0.Passport.IceCubePhasonDecoherence`; the default certificate is `vp_neutrino_phason_decoherence_external comparison protocol.py`.
 
 Current external-data runner result:
 
@@ -785,10 +785,10 @@ SKIP_NEUTRINO_PHASON_DECOHERENCE_BASELINE_REQUIRED
 ```
 
 Reason: the HESE 12-year event table is now downloaded and the D0 damping curve
-is generated from event energy and direction. The passport still skips physical
+is generated from event energy and direction. The external comparison protocol still skips physical
 PASS/FAIL because the exposure/flux baseline comparison is not implemented.
 
-## 08.46 CMB phason-flip entropy spectrum passport
+## 08.46 CMB phason-flip entropy spectrum external comparison protocol
 
 Frozen D0 object:
 
@@ -828,7 +828,7 @@ Current external-data runner result:
 SKIP_CMB_PHASON_FLIP_EXTERNAL_DATA_REQUIRED
 ```
 
-## 08.47 Archive phason halo / lensing passport
+## 08.47 Archive phason halo / lensing external comparison protocol
 
 Frozen D0 object:
 
@@ -877,7 +877,7 @@ This constrains the next allowed dark-sector response operator.
 It is not a confirmation of the dark-sector model and not a failure of the
 full D0 cosmological framework.
 
-## 08.48 DESI BAO/S_DE phason-flip passport
+## 08.48 DESI BAO/S_DE phason-flip external comparison protocol
 
 Frozen D0 object:
 

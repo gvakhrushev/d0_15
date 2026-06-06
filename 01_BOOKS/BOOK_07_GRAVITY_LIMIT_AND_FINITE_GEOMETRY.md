@@ -1291,7 +1291,7 @@ The finite TT operator W_TT is the two-polarization sector of the D0 solenoid sp
 
 The Lean owners are `D0.Geometry.NonCommutativeSolenoid` (`d0_hull_admits_noncommutative_solenoid_model`) and `D0.Geometry.NonCommutativeSolenoidGravity` (`finite_spin2_operator_is_tt_sector_of_solenoid_spectral_geometry`, `wtt4_is_compatible_with_noncommutative_solenoid_geometry`), and the verification certificate is `05_CERTS/vp_noncommutative_solenoid_gravity.py` (`PASS_NONCOMMUTATIVE_SOLENOID_GRAVITY`).
 
-## 07.48 LIGO BBH mass-defect passport
+## 07.48 LIGO BBH mass-defect external comparison protocol
 
 $$\eta = \frac{M_1 M_2}{(M_1 + M_2)^2}$$
 

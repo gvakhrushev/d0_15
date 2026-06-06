@@ -6,7 +6,7 @@ Book 05 is the verification calculus of the D0 corpus.  It does not introduce th
 condensed site, the detector algebra, the action stack, matter spectra, gravity
 operators or cosmology transfer laws.  Those objects belong to Books 01--04 and
 06--08.  Book 05 defines when a statement from those books is admissible as a
-D0 theorem, a finite certificate, a no-go, a bridge claim, an empirical passport
+D0 theorem, a finite certificate, a no-go, a bridge claim, an empirical external comparison protocol
 or a non-active conjecture.
 
 The governing order is:
@@ -31,7 +31,7 @@ claim
 -> probe/gate/operator
 -> positive response or invariant quotient
 -> finite certificate / Lean theorem / no-go
--> bridge or passport only after the internal object is frozen
+-> bridge or external comparison protocol only after the internal object is frozen
 -> classification row
 ```
 
@@ -51,7 +51,7 @@ positive response;
 invariant quotient;
 strict selector;
 finite no-go counterexample;
-explicit external passport with frozen internal input.
+explicit external external comparison protocol with frozen internal input.
 ```
 
 This rule is the verification form of the foundational condition:
@@ -75,7 +75,7 @@ translations are mandatory in proof cells:
 | forgetting | conditional expectation, partial trace, quotient, RG map or projection |
 | readout | positive operator-valued instrument, response functional or finite selector |
 | bridge | typed coupling, functor, EFT matching map, scheme dictionary or comparison kernel |
-| passport | external comparison protocol with manifest and fixed internal input |
+| external comparison protocol | external comparison protocol with manifest and fixed internal input |
 | stiffness | structural uniqueness plus negative controls |
 | transfer | explicit map from frozen D0 object to comparison object |
 | support | finite/profinite carrier, graph shell, operator support or sector family |
@@ -93,7 +93,7 @@ D0 uses five evidence levels.  They must not be merged.
 | certificate | executable finite witness for a stated theorem, formula, uniqueness or no-go | no, unless the finite object is already specified in the theorem |
 | no-go | proof that a promotion is impossible under the current operator set | yes, negatively |
 | bridge | typed dictionary from frozen D0 object to external convention | no |
-| passport | reproducible comparison with external data or scheme | no |
+| external comparison protocol | reproducible comparison with external data or scheme | no |
 
 The anti-numerology firewall is:
 
@@ -119,7 +119,7 @@ Every mature claim must be represented by a complete proof cell:
 | support | finite/profinite carrier, graph shell, operator support or sector support |
 | probe/gate | finite test object, action gate, selector, response or transition operator |
 | response/quotient | positive response, trace, quotient, window, selector or no-go residual |
-| owner | Lean theorem, executable certificate, no-go, bridge or passport |
+| owner | Lean theorem, executable certificate, no-go, bridge or external comparison protocol |
 | negative controls | forbidden shortcuts, neighboring failures or no-hidden-anchor checks |
 | falsification hook | what would make the claim fail |
 | active status | status after the above fields, not before |
@@ -128,7 +128,7 @@ A row without support, owner and falsification hook is not an active claim.
 
 ## 05.6 Status vocabulary
 
-Status is not evidence. Status is the final ledger projection of theorem/cert/passport ownership.
+Status is not evidence. Status is the final ledger projection of theorem/cert/external comparison protocol ownership.
 
 - `CORE-*`: Foundational detector, spectral, and action theorems.
 - `CERT-CLOSED`: Executable finite certificates verifying frozen core invariants.
@@ -140,7 +140,7 @@ Status is not evidence. Status is the final ledger projection of theorem/cert/pa
 ## 05.7 One promotion process
 
 The active promotion process follows a strict sequence:
-support в†’ operator в†’ theorem/cert в†’ book integration в†’ optional passport в†’ ledger status.
+support в†’ operator в†’ theorem/cert в†’ book integration в†’ optional external comparison protocol в†’ ledger status.
 
 Demotion is mandatory the moment any link in this sequence is broken. Under no circumstances can a status be promoted without the underlying theorem/cert being finalized and integrated first.
 
@@ -201,7 +201,7 @@ surface.
 | Tier | Role | Public meaning |
 |---|---|---|
 | Tier 1 | canonical core certificate | safe finite theorem witness |
-| Tier 2 | bridge/passport certificate | external data or convention required |
+| Tier 2 | bridge/external comparison protocol certificate | external data or convention required |
 | Tier 3 | workbench/helper certificate | development aid, not release evidence |
 | Tier 4 | retired/generator/mutating script | scaffold, not public evidence |
 
@@ -222,7 +222,7 @@ The formal verification owner is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py`, w
 
 ## 05.11 External-data and scheme discipline
 
-External data are allowed only in declared passports.  A legal comparison has
+External data are allowed only in declared external comparison protocols.  A legal comparison has
 the form:
 
 ```text
@@ -248,9 +248,9 @@ negative controls.
 No row, phase convention, renormalization convention, likelihood cut, survey
 subset or external baseline may be chosen after seeing the comparison residual.
 
-## 05.11a Risky prediction passport discipline
+## 05.11a Risky prediction external comparison protocol discipline
 
-IceCube, LIGO, CMB, BAO and galaxy-lensing passports require:
+IceCube, LIGO, CMB, BAO and galaxy-lensing external comparison protocols require:
 1. data manifest;
 2. hash;
 3. frozen D0 prediction;
@@ -382,7 +382,7 @@ Generation-overlap origin:
   D0.Matter.GenerationOverlapResponseOrigin
   d0_generation_selectors_force_nonpermutation_overlap
   vp_generation_selector_origin.py
-  algebraic D0-origin closure, not a physical CKM passport
+  algebraic D0-origin closure, not a physical CKM external comparison protocol
 
 Spin-2 finite quotient:
   D0.Geometry.FiniteWeakFieldQuotient
@@ -430,7 +430,7 @@ transport must remain finite.
 
 ### Matter and selectors
 
-Matter claims are typed as support, selector, transfer, no-go or passport.  Hodge
+Matter claims are typed as support, selector, transfer, no-go or external comparison protocol.  Hodge
 spectra, Schur complements and support seeds are not masses unless a sector
 transfer is supplied.  Charged-lepton, CKM, proton/neutron and hadron claims must
 state whether they are primitive derivations, finite certificates or bridge
@@ -459,7 +459,7 @@ columns; independent row choices are not a CKM closure proof.
 Gravity and cosmology claims must distinguish archive geometry, weak-field
 Poisson response, TT quotient, finite spin-2 dynamics, spectral/EH bridge,
 archive entropy flow, survey transfer and external likelihoods.  BAO, DESI,
-Hubble or S_DE comparisons are passports only after the internal archive object is
+Hubble or S_DE comparisons are external comparison protocols only after the internal archive object is
 frozen.
 
 ## 05.15 Falsification matrix
@@ -479,7 +479,7 @@ frozen.
 | Higgs/scalar | scalar terms are promoted without constructive rank-2 scalar-projector closure |
 | spin-2 | scalar/vector/longitudinal modes couple as physical spin-2 under conserved stress |
 | SM action | action term appears without finite ledger owner |
-| cosmology passport | data manifest, hashes, baseline or parameter-count ledger are missing |
+| cosmology external comparison protocol | data manifest, hashes, baseline or parameter-count ledger are missing |
 | external bridge | scheme dictionary is incomplete or contains hidden repair parameters |
 
 Spin-2 closure is accepted only with an explicit TT projector, a basis-wide
@@ -488,7 +488,7 @@ the stress-coupling theorem, and no GR constants.  The public certificate name
 is `vp_finite_spin2_wave_operator.py`; it checks the same concrete projector as
 the Lean owner `D0.Geometry.FiniteSpin2WaveOperator`.
 
-The operator/passport rule is strict: operator first, passport second, no PDG tuning,
+The operator/external comparison protocol rule is strict: operator first, external comparison protocol second, no PDG tuning,
 and no geometry diagnostic as core source.
 
 Failure is not hidden.  It is the operational meaning of the claim.
@@ -502,15 +502,15 @@ core:
   D0.Geometry.TorusCore13GeometryOrigin
   vp_torus_core13_geometry_origin.py
 
-passport:
-  vp_core13_shell_geometry_passport.py
-  vp_pdg_strict_passport.py
+external comparison protocol:
+  vp_core13_shell_geometry_external comparison protocol.py
+  vp_pdg_strict_external comparison protocol.py
 ```
 
 PDG data can falsify or validate frozen D0 outputs.  PDG data cannot create D0
 operators, tune torus radii, choose CKM conventions after comparison, or turn a
 Core-13 shell fit into a core theorem.  Core-13 shell fit is an embedding
-diagnostic.  Torus geometry is core; PDG shell alignment is passport.  Holdout,
+diagnostic.  Torus geometry is core; PDG shell alignment is external comparison protocol.  Holdout,
 dataset pinning and multiple-testing rules are mandatory.  A geometry diagnostic
 may not tune a core operator.
 
@@ -524,7 +524,7 @@ Each public archive must include:
 2. theorem/status database;
 3. claim-to-owner map;
 4. primary certificate per active certificate-owned claim where available;
-5. external data manifest for each empirical passport;
+5. external data manifest for each empirical external comparison protocol;
 6. reproducibility ledger with PASS, FAIL, MISSING_DATA, MISSING_MODULE,
    MANUAL_ONLY, STALE or EXTERNAL-DATA-REQUIRED;
 7. retired-scaffold manifest outside active books;
@@ -694,15 +694,15 @@ D0 mnemonic prevents ambiguity.
 `trace-heat-capacity gravity` is accepted only as a split status block: core = fixed detector ladder, signed Lucas traces, even Lucas heat moments, Lefschetz scene counts and A/4 boundary capacity; bridge = macro gravity interface through the finite gravity witness; excluded = continuum singularity primitive, fitted dark component or fitted smooth-GR constant. The certificate `05_CERTS/vp_trace_heat_capacity_gravity.py` checks black-hole capacity saturation as boundary encoding.
 QUASI-002 phason/baryon verification gate: `05_CERTS/vp_quasi002_phason_strain_generations_baryon.py` must check the rational S3 projector, rank `10`, invariance and the negative control that nucleon-line extrapolation remains forbidden. IceCube comparison is EMPIRICAL-PASSPORT and cannot select or tune the D0 neutrino kernel.
 
-## 05.26 External data passport runner
-External empirical passports are executed through `05_CERTS/DATA_RUNNERS/run_external_passports.py`, which writes `08_PASSPORTS/_RESULTS/external_passport_summary.json` and `.md` with the fixed columns `Passport; Dataset; Manifest; Hash; Frozen D0 object; Baseline; Metric; Result; Notes`.
+## 05.26 External data external comparison protocol runner
+External empirical external comparison protocols are executed through `05_CERTS/DATA_RUNNERS/run_external_external comparison protocols.py`, which writes `08_PASSPORTS/_RESULTS/external_external comparison protocol_summary.json` and `.md` with the fixed columns `Passport; Dataset; Manifest; Hash; Frozen D0 object; Baseline; Metric; Result; Notes`.
 The runner covers Nuclear SRC, IceCube, SPARC halo, CMB, BAO/S_DE, LIGO/GWOSC, CKM and Meson PDG. A missing or partial external manifest must produce `SKIP`, not empirical `PASS`; `PASS` requires pinned dataset/hash/fields/citation/policy plus comparison of the frozen D0 object against the declared baseline without retuning.
 Current machine summary: Nature 2026 SRC and GWOSC/LIGO mass-defect are `PASS`;
 IceCube HESE has event energy/direction data and a generated D0 curve but still
 requires an exposure/flux baseline; SPARC is downloaded and parsed, while the
 minimal shape/global-scale archive kernel currently fails diagnostics and is not
 promoted. The remaining external rows remain `SKIP_*_DATA_REQUIRED`. The machine
-source is `08_PASSPORTS/_RESULTS/external_passport_summary.json`.
+source is `08_PASSPORTS/_RESULTS/external_external comparison protocol_summary.json`.
 
 SRC destructive rule: A-only / N-Z-only SRC scalar fails. Any nuclear SRC model
 that promotes mass number, neutron excess or density alone to a core SRC
