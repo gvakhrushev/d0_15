@@ -1,0 +1,8 @@
+{
+  "sequence_len": 100,
+  "is_aperiodic": true,
+  "patch_length": 5,
+  "distinct_patches": 6,
+  "finite_local_complexity": true,
+  "long_range_order": true
+}

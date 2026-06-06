@@ -1,0 +1,22 @@
+{
+  "status": "EMPIRICAL-PASSPORT",
+  "core_rule": "Core first; passport second; external data never chooses the D0 operator.",
+  "model": "Gamma(E,z) = delta0^2 * log(1+z) * H_phi(E/E0)",
+  "forbidden_fits": [
+    "delta0",
+    "Hurwitz phase",
+    "posthoc energy exponent"
+  ],
+  "required_manifest_fields": [
+    "dataset_name",
+    "source_url_or_local_path",
+    "sha256",
+    "event_count",
+    "energy_field",
+    "direction_fields",
+    "flavor_proxy",
+    "effective_area_available",
+    "response_matrix_available",
+    "license_or_release_note"
+  ]
+}

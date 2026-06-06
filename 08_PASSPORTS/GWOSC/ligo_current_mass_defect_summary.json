@@ -1,0 +1,42 @@
+{
+  "all_catalog_run": {
+    "result": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT_ALL",
+    "events_used": 276,
+    "rmse_d0": 0.009667506801075617,
+    "rmse_mean_baseline": 0.01181225230557658,
+    "rmse_spin_only_negative_control": 0.011562028865365953,
+    "correlation": 0.5852542613515062,
+    "r2_proxy": 0.34252255043009705,
+    "anomalies": 5
+  },
+  "clean_BBH_run": {
+    "result": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT_CLEAN_BBH",
+    "events_used": 271,
+    "rmse_d0": 0.006874162450086475,
+    "rmse_mean_baseline": 0.00898948662707956,
+    "rmse_spin_only_negative_control": 0.00868604873190939,
+    "correlation": 0.6519411634957416,
+    "r2_proxy": 0.4250272806601813,
+    "anomalies": 5
+  },
+  "latest": {
+    "mode": "clean_BBH_run",
+    "status": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT_CLEAN_BBH",
+    "run": "clean_BBH_run",
+    "events_used": 271,
+    "events_complete_all": 276,
+    "anomalies": 5,
+    "rmse_d0": 0.006874162450086475,
+    "rmse_mean_baseline": 0.00898948662707956,
+    "rmse_spin_only_negative_control": 0.00868604873190939,
+    "correlation": 0.6519411634957416,
+    "r2_proxy": 0.4250272806601813,
+    "mean_observed_loss_fraction": 0.042628945779227524,
+    "catalogs": [
+      "GWTC-2.1-confident",
+      "GWTC-3-confident",
+      "GWTC-4.1",
+      "GWTC-5.0"
+    ]
+  }
+}

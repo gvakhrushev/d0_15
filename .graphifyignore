@@ -1,0 +1,47 @@
+# Runtime/build artifacts.
+**/.lake/
+**/.venv/
+**/__pycache__/
+**/*.egg-info/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Graphify output and local assistant metadata.
+graphify-out/
+.codex/
+
+# Vendored Graphify source: useful as a tool, not part of the D0 knowledge corpus.
+tools/graphify/
+
+# Generated cert outputs and transient proof-closure diagnostics.
+*_results.json
+*_stdout.json
+*_RESULTS.json
+*_RESULTS.md
+*_NUMBERS.json
+run_all_*_results.json
+05_CERTS/*.md
+05_CERTS/*.json
+NO_GO_*.md
+05_CERTS/ported_legacy_primary/**/*RESULTS*.*
+05_CERTS/ported_legacy_primary/**/*_NUMBERS.json
+03_THEORY_MAP/v*_patch.*
+09_LEAN_FORMALIZATION/docs/D0_v12_*_ARCHIVE_INDEX.csv
+09_LEAN_FORMALIZATION/docs/LEAN_CORRESPONDENCE_AUDIT.csv
+
+# Release/reviewer bundles are generated artifacts, not source.
+01_BOOKS/03_COMBINED/
+D0_v12_2_EXTERNAL_REVIEWER_PACKAGE/
+D0_v12_46_ZERO_OPEN_FOUNDATION_RELEASE/
+D0_v12_*_MANIFEST.md
+D0_v12_*_AUDIT_*.md
+02_THEOREM_LEDGER/
+04_FOUNDATION_CLOSURES/
+07_GLOBAL_AUDIT/
+10_PAPERS/
+README_RELEASE_*.md
+RELEASE_MANIFEST_*.txt
+*.zip
+*.zip.sha256

@@ -1,0 +1,12 @@
+{
+  "mode": "nature2026_source_data",
+  "status": "PASS_NUCLEAR_SHELL_CONTACT_SRC_NATURE2026",
+  "observed_order_fe_gt_ca": true,
+  "d0_order_fe_gt_ca": true,
+  "a_only_negative_control_rejected": true,
+  "nz_only_negative_control_rejected": true,
+  "ca48_ca40_integral": 1.097,
+  "fe54_ca48_integral": 1.493,
+  "ca48_ca40_weighted_mean": 1.0927013557203404,
+  "fe54_ca48_weighted_mean": 1.4740987737804088
+}

@@ -1,0 +1,20 @@
+{
+  "dataset_id": "meson_domain_wall_pdg",
+  "source_name": "PDG meson mass/width table",
+  "source_url": "https://pdg.lbl.gov/",
+  "download_url": "",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/pdg_mesons",
+  "sha256": "",
+  "downloaded_at_utc": "",
+  "data_fields_required": [
+    "particle_id",
+    "mass",
+    "width",
+    "quantum_numbers",
+    "sha256"
+  ],
+  "data_fields_found": [],
+  "license_or_policy_note": "Use PDG citation/policy and pinned table year.",
+  "citation_note": "Pin exact PDG mass-width table year.",
+  "status": "MISSING"
+}

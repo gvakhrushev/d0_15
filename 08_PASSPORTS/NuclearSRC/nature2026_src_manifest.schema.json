@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "D0 Nature 2026 Nuclear SRC source-data manifest",
+  "type": "object",
+  "required": [
+    "article",
+    "source_data_fig2",
+    "source_data_fig3",
+    "sha256",
+    "comparison_status"
+  ],
+  "properties": {
+    "article": {
+      "type": "string",
+      "description": "Nature article URL or DOI for the nuclear shell/SRC study."
+    },
+    "source_data_fig2": {
+      "type": "string",
+      "description": "Path or URL for pinned Source Data Fig. 2 workbook."
+    },
+    "source_data_fig3": {
+      "type": "string",
+      "description": "Path or URL for pinned Source Data Fig. 3 workbook."
+    },
+    "sha256": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{64}$"
+      }
+    },
+    "comparison_status": {
+      "type": "string",
+      "enum": [
+        "SKIP_NATURE2026_SOURCE_DATA_REQUIRED",
+        "PASS_NUCLEAR_SHELL_CONTACT_SRC_NATURE2026",
+        "FAIL_NUCLEAR_SHELL_CONTACT_SRC_NATURE2026"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

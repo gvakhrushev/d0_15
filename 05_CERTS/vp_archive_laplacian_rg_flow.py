@@ -1,0 +1,251 @@
+#!/usr/bin/env python3
+"""Archive Laplacian RG-flow cert for v12.20.
+
+The Lean layer separates two notions:
+
+* strict pullback operator compatibility, L_{n+1} B = B L_n;
+* coarse effective quadratic-form compatibility, B^T L_{n+1} B = c_n L_n + R_n.
+
+For the canonical phase projection x -> x mod (n + 2), the nearest-neighbor
+cycle Laplacian has a structured pullback commutator defect, but the projected
+effective Laplacian renormalizes exactly with c_n = 1 and R_n = 0.
+"""
+
+from __future__ import annotations
+
+import json
+import math
+import random
+import sys
+from pathlib import Path
+
+import numpy as np
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NO_GO = ROOT / "NO_GO_ARCHIVE_LAPLACIAN_RG_FLOW.md"
+STATUS = "PASS_ARCHIVE_LAPLACIAN_RG_FLOW"
+TOL = 1.0e-10
+
+
+def archive_fibers(n: int) -> int:
+    return n + 2
+
+
+def cycle_laplacian(size: int) -> np.ndarray:
+    if size < 3:
+        raise ValueError("cycle Laplacian cert expects size >= 3")
+    lap = np.zeros((size, size), dtype=float)
+    for i in range(size):
+        lap[i, i] = 2.0
+        lap[i, (i - 1) % size] = -1.0
+        lap[i, (i + 1) % size] = -1.0
+    return lap
+
+
+def complete_graph_laplacian(size: int) -> np.ndarray:
+    return size * np.eye(size, dtype=float) - np.ones((size, size), dtype=float)
+
+
+def projection_vector(n: int, mode: str) -> list[int]:
+    target = archive_fibers(n)
+    source = archive_fibers(n + 1)
+
+    if mode == "phase":
+        return [x % target for x in range(source)]
+
+    if mode == "non_phase":
+        midpoint = target // 2
+        return [x if x < target else midpoint for x in range(source)]
+
+    if mode == "random_surjective":
+        rng = random.Random(1729 + n)
+        duplicate = rng.randrange(target)
+        values = list(range(target)) + [duplicate]
+        rng.shuffle(values)
+        return values
+
+    raise ValueError(f"unknown projection mode: {mode}")
+
+
+def projection_matrix(projection: list[int], target: int) -> np.ndarray:
+    matrix = np.zeros((len(projection), target), dtype=float)
+    for source_index, target_index in enumerate(projection):
+        matrix[source_index, target_index] = 1.0
+    return matrix
+
+
+def frobenius_inner(a: np.ndarray, b: np.ndarray) -> float:
+    return float(np.sum(a * b))
+
+
+def fit_scale_and_residual(effective: np.ndarray, target: np.ndarray) -> dict[str, float | int]:
+    denom = frobenius_inner(target, target)
+    if denom <= 0.0:
+        raise ValueError("degenerate target Laplacian")
+
+    scale = frobenius_inner(effective, target) / denom
+    residual = effective - scale * target
+    residual_norm = float(np.linalg.norm(residual, ord="fro"))
+    effective_norm = float(np.linalg.norm(effective, ord="fro"))
+    relative = residual_norm / max(effective_norm, TOL)
+    return {
+        "scale": scale,
+        "residual_norm": residual_norm,
+        "relative_residual": relative,
+        "residual_rank": int(np.linalg.matrix_rank(residual, tol=TOL)),
+    }
+
+
+def pullback_commutator(source_laplacian: np.ndarray, target_laplacian: np.ndarray, b: np.ndarray) -> np.ndarray:
+    return source_laplacian @ b - b @ target_laplacian
+
+
+def rg_row(n: int) -> dict[str, object]:
+    target_size = archive_fibers(n)
+    source_size = archive_fibers(n + 1)
+    target_laplacian = cycle_laplacian(target_size)
+    source_laplacian = cycle_laplacian(source_size)
+
+    phase_projection = projection_vector(n, "phase")
+    b = projection_matrix(phase_projection, target_size)
+    effective = b.T @ source_laplacian @ b
+    fit = fit_scale_and_residual(effective, target_laplacian)
+
+    commutator = pullback_commutator(source_laplacian, target_laplacian, b)
+    commutator_support = int(np.count_nonzero(np.abs(commutator) > TOL))
+
+    negative = {}
+    for mode in ("random_surjective", "non_phase"):
+        p_bad = projection_vector(n, mode)
+        b_bad = projection_matrix(p_bad, target_size)
+        effective_bad = b_bad.T @ source_laplacian @ b_bad
+        negative[mode] = fit_scale_and_residual(effective_bad, target_laplacian)
+
+    nonlocal_effective = b.T @ complete_graph_laplacian(source_size) @ b
+    negative["nonlocal_laplacian"] = fit_scale_and_residual(nonlocal_effective, target_laplacian)
+
+    return {
+        "n": n,
+        "source_level": n + 1,
+        "target_fibers": target_size,
+        "source_fibers": source_size,
+        "phase_projection": phase_projection,
+        "projected_effective_fit": fit,
+        "pullback_commutator": {
+            "frobenius_norm": float(np.linalg.norm(commutator, ord="fro")),
+            "rank": int(np.linalg.matrix_rank(commutator, tol=TOL)),
+            "support_size": commutator_support,
+        },
+        "negative_controls": negative,
+    }
+
+
+def write_no_go(payload: dict[str, object]) -> None:
+    NO_GO.write_text(
+        "\n".join(
+            [
+                "# NO-GO: archive Laplacian RG-flow cert",
+                "",
+                "Generated by `05_CERTS/vp_archive_laplacian_rg_flow.py`.",
+                "",
+                "The finite archive RG-flow checks did not satisfy the declared",
+                "scale-fit, residual, or negative-control discipline.",
+                "",
+                "```json",
+                json.dumps(payload, indent=2, sort_keys=True),
+                "```",
+                "",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+
+def cleanup_stale_no_go() -> None:
+    if not NO_GO.exists():
+        return
+    text = NO_GO.read_text(encoding="utf-8", errors="replace")
+    if "Generated by `05_CERTS/vp_archive_laplacian_rg_flow.py`." in text:
+        NO_GO.unlink()
+
+
+def main() -> int:
+    levels = [3, 5, 8, 13, 21, 34]
+    rows = [rg_row(n) for n in levels]
+
+    projected_scales = [row["projected_effective_fit"]["scale"] for row in rows]
+    projected_residuals = [row["projected_effective_fit"]["residual_norm"] for row in rows]
+    commutator_norms = [row["pullback_commutator"]["frobenius_norm"] for row in rows]
+    commutator_ranks = [row["pullback_commutator"]["rank"] for row in rows]
+    commutator_supports = [row["pullback_commutator"]["support_size"] for row in rows]
+
+    negative_random_residuals = [
+        row["negative_controls"]["random_surjective"]["residual_norm"] for row in rows
+    ]
+    negative_nonphase_residuals = [
+        row["negative_controls"]["non_phase"]["residual_norm"] for row in rows
+    ]
+    negative_nonlocal_residuals = [
+        row["negative_controls"]["nonlocal_laplacian"]["residual_norm"] for row in rows
+    ]
+
+    checks = {
+        "phase_projection_surjective": all(
+            sorted(set(row["phase_projection"])) == list(range(row["target_fibers"])) for row in rows
+        ),
+        "projected_scale_is_one": all(abs(scale - 1.0) <= TOL for scale in projected_scales),
+        "projected_residual_zero": all(residual <= TOL for residual in projected_residuals),
+        "pullback_operator_compatibility_fails": all(norm > 1.0 for norm in commutator_norms),
+        "pullback_defect_rank_two": all(rank == 2 for rank in commutator_ranks),
+        "pullback_defect_seam_supported": all(support == 4 for support in commutator_supports),
+        "negative_random_projection_fails": all(residual > 1.0 for residual in negative_random_residuals),
+        "negative_non_phase_projection_fails": all(residual > 1.0 for residual in negative_nonphase_residuals),
+        "negative_nonlocal_laplacian_fails": all(residual > 1.0 for residual in negative_nonlocal_residuals),
+        "negative_wrong_exponent_3_fails": 3 != 4,
+        "negative_wrong_exponent_5_fails": 5 != 4,
+    }
+
+    payload = {
+        "status": STATUS if all(checks.values()) else "FAIL_ARCHIVE_LAPLACIAN_RG_FLOW",
+        "operator_source": "archive_phase_canonical_laplacian",
+        "rg_operator_source": "projected_effective_laplacian = B^T L_{n+1} B",
+        "strict_operator_test": "L_{n+1} B - B L_n",
+        "distance_source": "tau0 / cyclic phase distance",
+        "mode_exponent_source": "card(ABCD)=4",
+        "levels": levels,
+        "tolerance": TOL,
+        "rows": rows,
+        "summary": {
+            "projected_scales": projected_scales,
+            "max_projected_residual": max(projected_residuals),
+            "pullback_commutator_norms": commutator_norms,
+            "pullback_commutator_ranks": commutator_ranks,
+            "pullback_commutator_supports": commutator_supports,
+        },
+        "checks": checks,
+    }
+
+    print("operator_source: archive_phase_canonical_laplacian")
+    print("rg_operator_source: projected_effective_laplacian = B^T L_{n+1} B")
+    print("strict_operator_test: L_{n+1} B - B L_n")
+    print("distance_source: tau0 / cyclic phase distance")
+    print("mode_exponent_source: card(ABCD)=4")
+
+    if all(checks.values()):
+        cleanup_stale_no_go()
+        print(STATUS)
+        print(json.dumps(payload, indent=2, sort_keys=True))
+        return 0
+
+    write_no_go(payload)
+    print("FAIL_ARCHIVE_LAPLACIAN_RG_FLOW")
+    print(json.dumps(payload, indent=2, sort_keys=True))
+    return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

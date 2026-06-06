@@ -1,0 +1,21 @@
+{
+  "dataset_id": "gwosc_ligo_merger_mass_defect",
+  "source_name": "GWOSC compact-binary event catalog",
+  "source_url": "https://www.gw-openscience.org/",
+  "download_url": "",
+  "local_path": "",
+  "sha256": "",
+  "downloaded_at_utc": "",
+  "data_fields_required": [
+    "event_id",
+    "m1_source",
+    "m2_source",
+    "final_mass",
+    "radiated_energy",
+    "sha256"
+  ],
+  "data_fields_found": [],
+  "license_or_policy_note": "Use GWOSC public-data policy and cite catalog/release.",
+  "citation_note": "Pin exact GWTC catalog table and version.",
+  "status": "MISSING"
+}

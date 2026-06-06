@@ -1,0 +1,9 @@
+{
+  "protocol_id": "PHI_PDG_STRICT_V1",
+  "params": {
+    "core_only_default": false,
+    "holdout": { "enabled": true, "seed": 20250101, "fraction": 0.2 },
+    "multiple_testing": { "method": "bonferroni", "families": ["delta8_hypotheses"] },
+    "outputs": { "json": "phi_pdg_strict_report.json" }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "PDG Strict Passport",
+  "protocol_id": "PDG_STRICT_PASSPORT",
+  "legacy_protocol_id": "PHI_PDG_STRICT_V1",
+  "dataset_pinning_required": true,
+  "holdout": {
+    "enabled": true,
+    "seed": 20250101,
+    "fraction": 0.2
+  },
+  "holdout_seed_required": true,
+  "holdout_fraction_required": true,
+  "multiple_testing": {
+    "method": "bonferroni",
+    "families": [
+      "delta8_hypotheses"
+    ]
+  },
+  "multiple_testing_correction_required": true,
+  "rank_minimax_distinction_required": true,
+  "families": [
+    "delta8_hypotheses"
+  ],
+  "baselines_required": true,
+  "forbidden": [
+    "tune core operators after seeing PDG data",
+    "promote a PDG fit to a core theorem",
+    "change torus radii in the passport layer",
+    "select formulas after seeing data"
+  ]
+}

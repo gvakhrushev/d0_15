@@ -1,0 +1,20 @@
+{
+  "dataset_id": "desi_bao_sde_phason_flip",
+  "source_name": "DESI BAO public data release",
+  "source_url": "https://data.desi.lbl.gov/",
+  "download_url": "",
+  "local_path": "",
+  "sha256": "",
+  "downloaded_at_utc": "",
+  "data_fields_required": [
+    "z_eff",
+    "dm_rd",
+    "dh_rd",
+    "covariance",
+    "sha256"
+  ],
+  "data_fields_found": [],
+  "license_or_policy_note": "Use DESI release policy and citation.",
+  "citation_note": "Pin exact DESI BAO table/covariance release.",
+  "status": "MISSING"
+}

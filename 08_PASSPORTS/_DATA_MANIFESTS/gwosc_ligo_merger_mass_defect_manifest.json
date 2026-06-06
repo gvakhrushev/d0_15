@@ -1,0 +1,32 @@
+{
+  "dataset_id": "gwosc_ligo_merger_mass_defect",
+  "source_name": "GWOSC compact-binary event catalog",
+  "source_url": "https://www.gw-openscience.org/",
+  "download_url": "https://gwosc.org/eventapi/jsonfull/GWTC/",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/gwosc/gwtc_full.json",
+  "sha256": "0a38575285bdf3c299fdcfd92ebf7f021cf6e133d492c9a04f50953545015a29",
+  "downloaded_at_utc": "2026-06-05T20:48:11Z",
+  "data_fields_required": [
+    "event_id",
+    "mass_1_source",
+    "mass_2_source",
+    "chi_eff",
+    "final_mass_source",
+    "p_astro_or_far",
+    "catalog_version",
+    "sha256"
+  ],
+  "data_fields_found": [
+    "event_id",
+    "mass_1_source",
+    "mass_2_source",
+    "chi_eff",
+    "final_mass_source",
+    "p_astro_or_far",
+    "catalog_version",
+    "sha256"
+  ],
+  "license_or_policy_note": "Use GWOSC public-data policy and cite catalog/release.",
+  "citation_note": "Pin exact GWTC catalog table and version.",
+  "status": "READY"
+}

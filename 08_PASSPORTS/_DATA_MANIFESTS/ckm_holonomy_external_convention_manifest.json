@@ -1,0 +1,25 @@
+{
+  "dataset_id": "ckm_holonomy_external_convention",
+  "source_name": "PDG CKM convention values",
+  "source_url": "https://pdg.lbl.gov/",
+  "download_url": "",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/pdg_ckm",
+  "sha256": "",
+  "downloaded_at_utc": "",
+  "data_fields_required": [
+    "Vud",
+    "Vus",
+    "Vub",
+    "Vcd",
+    "Vcs",
+    "Vcb",
+    "Vtd",
+    "Vts",
+    "Vtb",
+    "sha256"
+  ],
+  "data_fields_found": [],
+  "license_or_policy_note": "Use PDG citation/policy and pinned table year.",
+  "citation_note": "Pin exact PDG CKM review/table year.",
+  "status": "MISSING"
+}

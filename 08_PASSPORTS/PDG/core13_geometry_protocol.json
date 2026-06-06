@@ -1,0 +1,63 @@
+{
+  "name": "Core-13 Shell Geometry Passport",
+  "protocol_id": "CORE13_SHELL_GEOMETRY_PASSPORT_V14",
+  "status": "PASSPORT_DIAGNOSTIC",
+  "core_owner": "D0.Geometry.TorusCore13GeometryOrigin",
+  "diagnostic": "Embed pinned PDG masses into a frozen Core-13 shell geometry diagnostic.",
+  "fundamental_pdgids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    15,
+    23,
+    24,
+    25
+  ],
+  "legacy_core_pdgids": [
+    12,
+    5,
+    1,
+    15,
+    24,
+    13,
+    3,
+    4,
+    23,
+    11,
+    2,
+    6,
+    25
+  ],
+  "shell_defs": {
+    "A": [
+      1,
+      2,
+      3,
+      10,
+      11
+    ],
+    "B": [
+      4,
+      5,
+      8,
+      9
+    ],
+    "C": [
+      2,
+      3,
+      12,
+      13
+    ]
+  },
+  "lattice_formula": "log10(m) ~= n log10(2) + k log10(phi) + log10(kappa)",
+  "not_core_claims": [
+    "PDG particles prove the torus",
+    "Core-13 derives particle masses",
+    "torus radii are tuned by PDG data"
+  ]
+}

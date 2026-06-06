@@ -1,0 +1,5 @@
+# Lake regenerates this directory from lakefile.lean/lake-manifest.json.
+.lake/
+
+# Local generated diagnostics.
+docs/LEAN_RELEASE_REPORT.md

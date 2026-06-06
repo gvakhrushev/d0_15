@@ -1,0 +1,11 @@
+{
+  "protocol_id": "CERT_24_5_3_PHI_SAT_V1",
+  "params": {
+    "mode": "phi_core",
+    "seed": 42,
+    "n_primary_list": [20, 50, 100],
+    "random_cases": [],
+    "bruteforce_max_vars": 22,
+    "outputs": { "json": "book5_phi_sat_report.json" }
+  }
+}

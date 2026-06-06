@@ -1,0 +1,49 @@
+{
+  "dataset_id": "icecube_hese12",
+  "source_name": "IceCube HESE public event release",
+  "source_url": "https://doi.org/10.7910/DVN/PZNO2T",
+  "download_url": "",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/hese12/data.tab",
+  "sha256": "hese12_events=7feb92cf7f380cdc990b94c488096813e4499bcce6e136e2fe59c5bd115e422f;hese12_license=e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+  "downloaded_at_utc": "2026-06-05T20:48:19Z",
+  "data_fields_required": [
+    "event_count",
+    "energy_field",
+    "direction_fields",
+    "topology",
+    "sha256"
+  ],
+  "data_fields_found": [
+    "event_count",
+    "energy_field",
+    "direction_fields",
+    "topology",
+    "sha256"
+  ],
+  "license_or_policy_note": "Use IceCube public-data policy and cite release metadata.",
+  "citation_note": "Pin the exact IceCube HESE release URL/date in a completed manifest.",
+  "status": "READY",
+  "files": [
+    {
+      "label": "hese12_events",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7314001",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/hese12/data.tab",
+      "sha256": "7feb92cf7f380cdc990b94c488096813e4499bcce6e136e2fe59c5bd115e422f"
+    },
+    {
+      "label": "hese12_license",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7127654",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/hese12/LICENSE",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    }
+  ],
+  "dataset_name": "IceCube HESE 12-year event catalog",
+  "source_url_or_local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/hese12/data.tab",
+  "event_count": "event table parsed by vp_neutrino_phason_decoherence_passport.py",
+  "energy_field": "energy",
+  "direction_fields": [
+    "ra",
+    "dec"
+  ],
+  "topology_field": "reconstruction"
+}

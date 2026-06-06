@@ -1,0 +1,9 @@
+{
+  "name": "PDG strict passport dataset manifest",
+  "status": "PINNED_EXTERNAL_PDG_DATASET",
+  "expected_data_path": "08_PASSPORTS/PDG/data/mass_width_2025.mcd",
+  "sha256": "7073c02222f08c19f5c40e422c5a54e9f9a75622b9e10b1b64096144e262d4b5",
+  "source_archive": "PDG external data passport",
+  "legacy_protocol_id": "PHI_PDG_STRICT_V1",
+  "rule": "PDG data may validate or falsify frozen D0 outputs; it may not create or tune core operators."
+}

@@ -1,0 +1,12 @@
+{
+  "mode": "pdg",
+  "status": "SKIP_PDG_MESON_EXTERNAL_DATA_REQUIRED",
+  "missing": [
+    "particle_id",
+    "mass",
+    "width",
+    "quantum_numbers",
+    "sha256",
+    "status_READY"
+  ]
+}

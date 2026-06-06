@@ -1,0 +1,17 @@
+{
+  "mode": "pdg",
+  "status": "SKIP_CKM_HOLONOMY_EXTERNAL_CONVENTION_DATA_REQUIRED",
+  "missing": [
+    "Vud",
+    "Vus",
+    "Vub",
+    "Vcd",
+    "Vcs",
+    "Vcb",
+    "Vtd",
+    "Vts",
+    "Vtb",
+    "sha256",
+    "status_READY"
+  ]
+}

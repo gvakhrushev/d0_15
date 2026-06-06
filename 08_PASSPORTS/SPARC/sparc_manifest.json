@@ -1,0 +1,30 @@
+{
+  "dataset_id": "sparc_archive_phason_halo",
+  "source_name": "SPARC galaxy rotation-curve database",
+  "source_url": "https://astroweb.cwru.edu/SPARC/",
+  "download_url": "https://astroweb.cwru.edu/SPARC/MassModels_Lelli2016c.mrt",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/sparc/MassModels_Lelli2016c.mrt",
+  "sha256": "9108994b12cc401b94a1768beca61c53ec354779385c9c9cc571049f3043244c",
+  "downloaded_at_utc": "2026-06-05T20:48:39Z",
+  "data_fields_required": [
+    "galaxy_id",
+    "radius",
+    "v_obs",
+    "v_gas",
+    "v_disk",
+    "v_bulge",
+    "sha256"
+  ],
+  "data_fields_found": [
+    "galaxy_id",
+    "radius",
+    "v_obs",
+    "v_gas",
+    "v_disk",
+    "v_bulge",
+    "sha256"
+  ],
+  "license_or_policy_note": "Use SPARC citation/policy from the release site.",
+  "citation_note": "Pin SPARC table/version and citation in a completed manifest.",
+  "status": "READY"
+}

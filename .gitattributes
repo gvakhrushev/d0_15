@@ -1,0 +1,30 @@
+# Normalize line endings for cross-platform work (Windows + Linux/Mac + Lean)
+* text=auto
+
+# Source code and docs — prefer LF
+*.py text eol=lf
+*.lean text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.csv text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+
+# Binary / data that should not be touched
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.xlsx binary
+*.tab binary
+*.mcd binary
+
+# Lean / Lake specific
+lean-toolchain text eol=lf
+lakefile.lean text eol=lf
+lake-manifest.json text eol=lf

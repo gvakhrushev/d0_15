@@ -1,0 +1,30 @@
+name: D0 Certificates
+on: [push, pull_request]
+
+jobs:
+  certs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy pandas matplotlib
+      - name: Run certs
+        run: |
+          mkdir -p artifacts
+          python cert/book6_certpack.py --protocol protocols/book6_certpack.json --core-only
+          python cert/metrological_audit.py --protocol protocols/metrological_audit.json
+          python cert/phi_pdg_strict.py --protocol protocols/phi_pdg_strict.json
+      - name: Make + verify manifest
+        run: |
+          python tools/make_manifest.py
+          python tools/verify_manifest.py
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: d0-artifacts
+          path: artifacts/

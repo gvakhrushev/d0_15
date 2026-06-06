@@ -1,0 +1,37 @@
+{
+  "status": "SKIP_NEUTRINO_PHASON_DECOHERENCE_BASELINE_REQUIRED",
+  "allowed_pass_token": "PASS_ICECUBE_PHASON_DECOHERENCE_HESE12",
+  "allowed_fail_token": "FAIL_ICECUBE_PHASON_DECOHERENCE_HESE12",
+  "dataset": "IceCube HESE 12-year event table",
+  "manifest": "08_PASSPORTS/IceCube/icecube_manifest.json",
+  "protocol": "08_PASSPORTS/IceCube/icecube_baseline_protocol.md",
+  "events_used": 164,
+  "fields_found": [
+    "id",
+    "mjd",
+    "ra",
+    "dec",
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "reconstruction",
+    "energy",
+    "drlogl"
+  ],
+  "curve_rows": 164,
+  "observable": "energy-binned event survival / suppression shape",
+  "secondary_observable": "track/cascade reconstruction ratio versus energy when topology is present",
+  "baseline_ready": false,
+  "reason": "HESE event layer and D0 damping curve exist, but no published HESE exposure/flux or no-decoherence null baseline is pinned here.",
+  "forbidden": [
+    "free damping exponent as core",
+    "free threshold tuned after HESE",
+    "post-hoc topology selection",
+    "discarding events after seeing result"
+  ]
+}

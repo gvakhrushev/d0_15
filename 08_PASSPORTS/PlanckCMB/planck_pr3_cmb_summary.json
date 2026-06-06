@@ -1,0 +1,11 @@
+{
+  "mode": "planck_pr3",
+  "status": "SKIP_CMB_PHASON_FLIP_ENTROPY_EXTERNAL_DATA_REQUIRED",
+  "missing": [
+    "cl_spectrum",
+    "mask_or_likelihood",
+    "multipole_range",
+    "sha256",
+    "status_READY"
+  ]
+}
