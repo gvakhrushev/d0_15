@@ -684,6 +684,12 @@ other books has a visible route to proof, no-go, certificate, bridge or demotion
 Book 05 must stay a coherent contract. Historical material may be preserved outside active books, but it must not be appended into Book 05 as a raw dump. A lost rule from an older draft must be integrated into the relevant section above or left outside the active corpus.
 The active book is therefore neither a release diary nor a storage box. It is a single audit instrument.
 
+## 05.25 Standard-language compression rule
+A D0-local term is allowed in a heading, Lean owner or certificate name.
+In explanatory prose, the first occurrence must be paired with its standard
+object, and subsequent occurrences should use the standard object unless the
+D0 mnemonic prevents ambiguity.
+
 ## 05.25 Trace-heat-capacity gravity verification row
 `trace-heat-capacity gravity` is accepted only as a split status block: core = fixed detector ladder, signed Lucas traces, even Lucas heat moments, Lefschetz scene counts and A/4 boundary capacity; bridge = macro gravity interface through the finite gravity witness; excluded = continuum singularity primitive, fitted dark component or fitted smooth-GR constant. The certificate `05_CERTS/vp_trace_heat_capacity_gravity.py` checks black-hole capacity saturation as boundary encoding.
 QUASI-002 phason/baryon verification gate: `05_CERTS/vp_quasi002_phason_strain_generations_baryon.py` must check the rational S3 projector, rank `10`, invariance and the negative control that nucleon-line extrapolation remains forbidden. IceCube comparison is EMPIRICAL-PASSPORT and cannot select or tune the D0 neutrino kernel.

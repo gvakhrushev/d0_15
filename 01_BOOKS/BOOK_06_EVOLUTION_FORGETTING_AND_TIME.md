@@ -6,7 +6,7 @@ D0 `forgetting` is not a metaphor. In this book it means one of the following st
 
 ## 06.2 Role of this book
 
-Book 06 is the runtime book of D0.  Books 01--02 define the condensed/profinite detector support and the finite proof calculus.  Book 03 defines the action gate and scene dynamics.  Book 04 defines matter and particle-sector finite readouts.  Book 05 defines the verification grammar.  Book 06 explains how a sequence of completed finite registrations becomes time, evolution, phase transport, entropy, classicality and runtime transfer.
+Book 06 is the ordered finite evolution book of D0.  Books 01--02 define the condensed/profinite detector support and the finite proof calculus.  Book 03 defines the action gate and scene dynamics.  Book 04 defines matter and particle-sector finite readouts.  Book 05 defines the verification grammar.  Book 06 explains how a sequence of completed finite registrations becomes time, evolution, phase transport, entropy, classicality and ordered finite evolution transfer.
 
 The central rule is:
 
@@ -41,11 +41,11 @@ r_i\prec r_j
 r_i\text{is registered before}\ r_j\text{inside the finite detector history}.
 ```
 
-The continuum parameter of ordinary dynamics is integrated only after many such ordered records are coarse-grained through stable tick conventions.
+The continuum parameter of ordinary dynamics is integrated only after many such ordered records are coarse-grained through stable discrete evolution step conventions.
 
 ## 06.4 Active/archive decomposition
 
-The runtime state decomposes into an active component and an archive component:
+The ordered finite evolution state decomposes into an active component and an archive component:
 
 ```math
 \mathcal H_{total}=\mathcal H_{active}\oplus\mathcal H_{archive}.
@@ -53,13 +53,13 @@ The runtime state decomposes into an active component and an archive component:
 
 The active part contains the finite record capable of further transport.  The archive part contains information that has been resolved away by the detector quotient: phase metadata, unresolved address tails, null directions, inaccessible comparison data and dephased correlations.
 
-A runtime state may be written schematically as
+A ordered finite evolution state may be written schematically as
 
 ```math
 \psi_{active}(P,u)=P\,H(u)\psi_{support},
 ```
 
-where `P` is the active projector and `u` is the runtime/window parameter inherited from the finite detector depth.
+where `P` is the active projector and `u` is the ordered finite evolution/window parameter inherited from the finite detector depth.
 
 Archive is not metaphysical non-existence.  It is the complement of active readout under a specified finite quotient:
 
@@ -93,15 +93,15 @@ The classical limit is therefore not a primitive assumption.  It is the regime i
 \text{classical readout algebra}.
 ```
 
-## 06.6 Finite phi-runtime and depth contraction
+## 06.6 Finite phi-ordered finite evolution and depth contraction
 
-The foundational split `p+p^2=1` is proved in Books 01--02.  Book 06 uses it as a runtime contraction.  If a route or comparison chain has depth `N`, the finite continuation weight takes the form
+The foundational split `p+p^2=1` is proved in Books 01--02.  Book 06 uses it as a ordered finite evolution contraction.  If a route or comparison chain has depth `N`, the finite continuation weight takes the form
 
 ```math
 Q_N=Q_0\varphi^{-N}.
 ```
 
-The runtime contraction is governed by the detector asymmetry quantum
+The ordered finite evolution contraction is governed by the detector asymmetry quantum
 
 ```math
 \delta_0=\frac{1}{2\varphi^3}.
@@ -119,7 +119,7 @@ or, for an error/tail amplitude,
 \delta^{(k+1)}=\delta_0\,\delta^{(k)}.
 ```
 
-This does not introduce a new physical parameter.  It is the runtime use of the same finite-verification split that defines the detector foundation.
+This does not introduce a new physical parameter.  It is the ordered finite evolution use of the same finite-verification split that defines the detector foundation.
 
 ## 06.7 Time as invariant registration and the causal section
 
@@ -129,9 +129,9 @@ The D0 internal units may be represented by the normalized section
 \ell_0^{D0}=1,\qquad \tau_0^{D0}=1,\qquad c_{D0}=\frac{\ell_0^{D0}}{\tau_0^{D0}}=1.
 ```
 
-This is not a claim that laboratory SI units are trivial.  It is the internal statement that one line-step and one tick-step form a single causal section before external metrology is attached.  The Lean owner is `D0.Bridge.internal_cone_speed_eq_one`: the internal cone speed is a dimensionless invariant of the normalized kinematic gauge.  SI light speed is therefore a metrological export, not a fitted D0 core parameter.
+This is not a claim that laboratory SI units are trivial.  It is the internal statement that one line-step and one discrete evolution step-step form a single causal section before external metrology is attached.  The Lean owner is `D0.Bridge.internal_cone_speed_eq_one`: the internal cone speed is a dimensionless invariant of the normalized kinematic gauge.  SI light speed is therefore a metrological export, not a fitted D0 core parameter.
 
-The physical export of the tick convention is handled by the matter/metrology books.  The old evolution material contains the terminal relation
+The physical export of the discrete evolution step convention is handled by the matter/metrology books.  The old evolution material contains the terminal relation
 
 ```math
 \tau_0=\frac{h}{38m_ec^2},
@@ -139,7 +139,7 @@ The physical export of the tick convention is handled by the matter/metrology bo
 
 but Book 06 uses it only as a cross-reference: the coefficient `38` belongs to the terminal matter/readout analysis and the SI-length/Newton shadow belongs to Book 07.
 
-## 06.8 Normalized tick operator
+## 06.8 Normalized discrete evolution step operator
 
 The finite time-transition operator has a separate integer toral-automorphism layer:
 
@@ -153,13 +153,13 @@ Tr(T^n)=(-1)^n L_n
 
 The determinant-square theorem `toral_volume_conservation_square` records the finite volume-balance invariant, and `trace_T_pow_eq_signed_lucas` records the integer signed-Lucas trace law without importing analytic roots as Lean primitives.
 
-For finite graph dynamics, background time is replaced by a normalized tick operator.  If `A` is the finite adjacency/action operator and `D` its degree/normalization operator, the canonical tick form is
+For finite graph dynamics, background time is replaced by a normalized discrete evolution step operator.  If `A` is the finite adjacency/action operator and `D` its degree/normalization operator, the canonical discrete evolution step form is
 
 ```math
-T_{tick}^{D0}=D^{-1/2}AD^{-1/2},\qquad \rho(T_{tick}^{D0})=1.
+T_{discrete evolution step}^{D0}=D^{-1/2}AD^{-1/2},\qquad \rho(T_{discrete evolution step}^{D0})=1.
 ```
 
-The condition `rho(T_tick)=1` is the finite stability condition for runtime propagation.  It prevents the tick from being either a hidden expansion parameter or an unbounded background evolution.
+The condition `rho(T_discrete evolution step)=1` is the finite stability condition for ordered finite evolution propagation.  It prevents the discrete evolution step from being either a hidden expansion parameter or an unbounded background evolution.
 
 A witness transport along a finite route `gamma` is represented as
 
@@ -194,16 +194,16 @@ The bridge to quantum mechanics is therefore
 
 where the target quantum formalism is the continuum completion of finite detector transport.  The bridge is valid only when the D0 finite-window protocol has been declared.
 
-## 06.9a Tiling-hull runtime
+## 06.9a Tiling-hull ordered finite evolution
 
-Time evolution over the D0 vacuum is represented as translation dynamics on the φ-quasicrystalline tiling hull. The ordered tick chain supplies the runtime order; the irrational φ phase supplies non-periodic transport; finite quotient windows produce stable detector-visible averages.
+Time evolution over the D0 vacuum is represented as translation dynamics on the φ-quasicrystalline tiling hull. The ordered discrete evolution step chain supplies the ordered finite evolution order; the irrational φ phase supplies non-periodic transport; finite quotient windows produce stable detector-visible averages.
 
 ```text
 fixed detector support
--> ordered tick transport
+-> ordered discrete evolution step transport
 -> φ-quasicrystal hull translation
 -> finite quotient window
--> smooth macro-runtime shadow
+-> smooth macro-ordered finite evolution shadow
 ```
 
 The Lean owner is `D0.Topology.TilingHull` (`d0_hull_has_phi_cut_project_origin`, `d0_hull_is_nonperiodic`, `d0_hull_supports_gap_labeling`). The certificate owner is `05_CERTS/vp_d0_tiling_hull.py` (`PASS_D0_TILING_HULL`).
@@ -233,25 +233,25 @@ and sector consequences are downstream projections:
 ```math
 \Lambda_{act}
 \longrightarrow
-\text{matter dressing},\text{runtime coefficients},\text{scattering windows},\text{archive pressure}.
+\text{matter dressing},\text{ordered finite evolution coefficients},\text{scattering windows},\text{boundary response of the traced-out sector}.
 ```
 
 This rule is essential.  Without it, evolution would become a place to hide fitted constants.
 
 ## 06.12 Runtime coefficient readout sequence
 
-The source evolution book collects several runtime coefficient shadows.  In the new order they are not treated as independent derivations inside Book 06; they are read as a sequence of typed readouts from already-defined books:
+The source evolution book collects several ordered finite evolution coefficient shadows.  In the new order they are not treated as independent derivations inside Book 06; they are read as a sequence of typed readouts from already-defined books:
 
 ```math
 \pi_0\text{-holonomy}\to G_N,
 ```
 
 ```math
-q_{res}\text{ electromagnetic runtime dressing}\to\alpha,
+q_{res}\text{ electromagnetic ordered finite evolution dressing}\to\alpha,
 ```
 
 ```math
-T_W/T_Z\text{ runtime ratio}\to\theta_W,
+T_W/T_Z\text{ ordered finite evolution ratio}\to\theta_W,
 ```
 
 ```math
@@ -262,17 +262,17 @@ V_9\text{ two-way color holonomy}\to\alpha_s,
 \Lambda_{act}\varphi^5q_{mass}^{-(d_9+2Rank)}\to\Lambda_{QCD}.
 ```
 
-The proof locations are Books 02--04 and the metrological export is Book 07.  Book 06 keeps the ordering principle: coefficients become observed through runtime quotients and transfer windows, not through free empirical anchoring.
+The proof locations are Books 02--04 and the metrological export is Book 07.  Book 06 keeps the ordering principle: coefficients become observed through ordered finite evolution quotients and transfer windows, not through free empirical anchoring.
 
 ## 06.13 Tick-to-scattering comparison protocol
 
-Scattering is the experimental form of finite runtime.  The Book 06 contract is
+Scattering is the experimental form of finite ordered finite evolution.  The Book 06 contract is
 
 ```math
-\text{finite support}\to T_{tick}^{D0}\to\mathcal U_\gamma^{D0}\to P(b|a,\gamma)\to\sigma_{exp}.
+\text{finite support}\to T_{discrete evolution step}^{D0}\to\mathcal U_\gamma^{D0}\to P(b|a,\gamma)\to\sigma_{exp}.
 ```
 
-The source tick-to-scattering expression is preserved as
+The source discrete evolution step-to-scattering expression is preserved as
 
 ```math
 \sigma_{D0\to exp}=\ell_0^2\,\mathcal J_{exp}\,P_{D0},\qquad
@@ -281,12 +281,12 @@ The source tick-to-scattering expression is preserved as
 
 The important discipline is that the finite transition probability `P_D0` must be fixed before the experimental Jacobian `J_exp` is attached.
 
-## 06.14 Archive-pressure runtime kernel
+## 06.14 Archive-pressure ordered finite evolution kernel
 
-Archive pressure is a runtime effect of the active/archive split.  The finite runtime space has the form
+Archive pressure is a ordered finite evolution effect of the active/archive split.  The finite ordered finite evolution space has the form
 
 ```math
-\mathcal H_{runtime}=\mathcal H_A\oplus\mathcal H_N,
+\mathcal H_{ordered finite evolution}=\mathcal H_A\oplus\mathcal H_N,
 ```
 
 and the detector cut may be written schematically as
@@ -295,12 +295,12 @@ and the detector cut may be written schematically as
 \mathcal C_{det}=\delta_0^8I.
 ```
 
-The archive-pressure operator belongs to Book 06 as a runtime kernel, but its cosmological empirical use belongs to Book 08.  This prevents a common error: using survey likelihoods to define the archive operator.
+The archive-pressure operator belongs to Book 06 as a ordered finite evolution kernel, but its cosmological empirical use belongs to Book 08.  This prevents a common error: using survey likelihoods to define the traced-out complement operator.
 
 The allowed direction is
 
 ```math
-\text{detector archive/runtime split}
+\text{detector archive/ordered finite evolution split}
 \longrightarrow
 \text{archive-pressure operator}
 \longrightarrow
@@ -312,12 +312,12 @@ The forbidden direction is
 ```math
 \text{survey residual}
 \longrightarrow
-\text{invent archive pressure}.
+\text{invent boundary response of the traced-out sector}.
 ```
 
 ## 06.15 Saturation, horizons and the gravity cross-reference
 
-Finite runtime can saturate.  In the source book this appears in horizon language and Einstein-side heat-trace language.  Book 06 records the runtime principle:
+Finite ordered finite evolution can saturate.  In the source book this appears in horizon language and Einstein-side heat-trace language.  Book 06 records the ordered finite evolution principle:
 
 ```math
 \sigma(R)\to1
@@ -325,7 +325,7 @@ Finite runtime can saturate.  In the source book this appears in horizon languag
 \text{saturated finite readout}.
 ```
 
-Detailed gravity statements, including the length-depth theorem, Newton/Planck shadows, Einstein heat trace and horizon archive interpretation, are assigned to Book 07.  Book 06 only fixes the runtime boundary: saturation is a finite detector condition before it is a spacetime interpretation.
+Detailed gravity statements, including the length-depth theorem, Newton/Planck shadows, Einstein heat trace and horizon archive interpretation, are assigned to Book 07.  Book 06 only fixes the ordered finite evolution boundary: saturation is a finite detector condition before it is a spacetime interpretation.
 
 ## 06.16 Falsification rules for evolution claims
 
@@ -333,7 +333,7 @@ An evolution claim fails if any of the following occurs:
 
 1. it uses a background continuum time before finite registration;
 2. it introduces a new scale outside the single-section discipline;
-3. it hides a fitted coefficient in a runtime window;
+3. it hides a fitted coefficient in a ordered finite evolution window;
 4. it uses cosmological, scattering or matter data to define the operator that is later claimed to predict them;
 5. it erases the distinction between active state and archive quotient;
 6. it moves a gravity or cosmology result into Book 06 to avoid its sector comparison protocol.
@@ -341,7 +341,7 @@ An evolution claim fails if any of the following occurs:
 The positive test is:
 
 ```math
-\text{finite record}\to\text{typed forgetting}\to\text{normalized tick}\to
+\text{finite record}\to\text{typed forgetting}\to\text{normalized discrete evolution step}\to
 \text{sector transfer}\to\text{falsifiable comparison protocol}.
 ```
 
@@ -353,33 +353,33 @@ The positive test is:
 | `D0-FOUND-003` | Continuum Measurement | `CORE-FOUNDATION` | Minimal continuum-measurement skeleton | foundation/metrology reference |
 | `D0-SCENE-002` | Detector Scene | `CORE-ACTION` | J_scene selects K(9,11,13) | action-ordering reference |
 | `D0-ACTION-001` | Action Spine | `CORE-ACTION` | S_gate/J_scene backbone | action-ordering reference |
-| `D0-METRO-001` | Metrology | `CORE-FOUNDATION` | Single causal line/tick invariant | foundation/metrology reference |
+| `D0-METRO-001` | Metrology | `CORE-FOUNDATION` | Single causal line/discrete evolution step invariant | foundation/metrology reference |
 | `D0-METRO-002` | Metrology | `SINGLE-SECTION-OUTPUT` | Lambda_act single action section | foundation/metrology reference |
-| `D0-QM-001` | Quantum Readout | `CORE-MEASUREMENT` | Born/Hilbert finite trace ratio | runtime/theorem use |
-| `D0-THERMO-001` | Entropy | `CORE-MEASUREMENT` | Finite-window entropy from archive forgetting | runtime/theorem use |
-| `D0-DYN-001` | Dynamics | `CORE-RUNTIME` | Normalized tick and witness transport | runtime/theorem use |
-| `D0-VERTEX-001` | Vertex/Scattering | `CORE-RUNTIME` | Finite S-matrix registry | runtime/theorem use |
+| `D0-QM-001` | Quantum Readout | `CORE-MEASUREMENT` | Born/Hilbert finite trace ratio | ordered finite evolution/theorem use |
+| `D0-THERMO-001` | Entropy | `CORE-MEASUREMENT` | Finite-window entropy from archive forgetting | ordered finite evolution/theorem use |
+| `D0-DYN-001` | Dynamics | `CORE-RUNTIME` | Normalized discrete evolution step and witness transport | ordered finite evolution/theorem use |
+| `D0-VERTEX-001` | Vertex/Scattering | `CORE-RUNTIME` | Finite S-matrix registry | ordered finite evolution/theorem use |
 | `D0-LEPTON-002` | Charged Leptons | `ACTIVE-PASSPORT` | Charged-lepton generation action | matter evolution consequence |
 | `D0-PHOTON-001` | Photon/Neutrino | `CORE-MEASUREMENT` | Photon massless carrier | matter evolution consequence |
 | `D0-NEUTRINO-001` | Photon/Neutrino | `CORE-MEASUREMENT` | Neutrino neutral leakage mass-square pattern | matter evolution consequence |
-| `D0-COEFF-003` | QCD | `CORE-RUNTIME` | QCD runtime and archive/confinement scale | matter evolution consequence |
+| `D0-COEFF-003` | QCD | `CORE-RUNTIME` | QCD ordered finite evolution and archive/confinement scale | matter evolution consequence |
 | `D0-GRAV-001` | Gravity | `SINGLE-SECTION-OUTPUT` | Length-depth theorem and Planck/Newton shadow | gravity cross-reference |
-| `D0-COSMO-001` | Cosmology/Archive | `CORE-MEASUREMENT` | Archive-pressure operator | archive-runtime cross-reference to cosmology |
-| `D0-COSMO-003` | Dark/Archive | `ACTIVE-PASSPORT` | Boundary dark survey-driver kernel | archive-runtime cross-reference to cosmology |
-| `D0-COLLIDER-001` | Collider | `EXTERNAL-BRIDGE` | Collider runtime typed bridge | runtime/theorem use |
+| `D0-COSMO-001` | Cosmology/Archive | `CORE-MEASUREMENT` | Archive-pressure operator | archive-ordered finite evolution cross-reference to cosmology |
+| `D0-COSMO-003` | Dark/Archive | `ACTIVE-PASSPORT` | Boundary dark survey-driver kernel | archive-ordered finite evolution cross-reference to cosmology |
+| `D0-COLLIDER-001` | Collider | `EXTERNAL-BRIDGE` | Collider ordered finite evolution typed bridge | ordered finite evolution/theorem use |
 | `D0-PI0-001` | Cycle/Holonomy | `CORE-FOUNDATION` | pi0 finite-cycle versus pi continuum generator | foundation/metrology reference |
 
 ## 06.18 Cross-book boundary summary
 
 | Topic | Book 06 treatment | Final proof/comparison protocol location |
 |---|---|---|
-| `p+p^2=1`, `delta0`, `ABCD` | runtime use only | Books 01--02 |
+| `p+p^2=1`, `delta0`, `ABCD` | ordered finite evolution use only | Books 01--02 |
 | `S_gate`, `J_scene`, `Lambda_act` | ordering and scale discipline | Book 03 |
 | photon/electron/neutrino/QCD coefficients | evolution consequences | Book 04 |
 | verification and promotion statuses | referenced | Book 05 |
-| tick, forgetting, entropy, phase transport | normative | Book 06 |
+| discrete evolution step, forgetting, entropy, phase transport | normative | Book 06 |
 | `pi0`, SI length, Newton/Planck, Einstein heat trace | boundary cross-reference | Book 07 |
-| archive pressure in BAO and survey likelihood | runtime kernel only | Book 08 |
+| boundary response of the traced-out sector in BAO and survey likelihood | ordered finite evolution kernel only | Book 08 |
 
 ## 06.19 Integrated causal-information invariants
 
@@ -407,7 +407,7 @@ Forgetting is a quotient on this history, not destruction of the finite event:
 \Delta(\rho_N)=\sum_a \Pi_a\rho_N\Pi_a,
 ```
 
-with the discarded off-diagonal data entering the archive sector.  This integrated block is the evolution-side counterpart of Book 01's condensed detector halt.
+with the discarded off-diagonal data entering the traced-out complement sector.  This integrated block is the evolution-side counterpart of Book 01's condensed detector halt.
 
 ## 06.20 Wilsonian RG as a typed forgetting map
 
@@ -419,7 +419,7 @@ At the D0 level, forgetting is a typed quotient:
 \Delta_N:\rho_N \longmapsto \Delta_N(\rho_N),
 ```
 
-where finite address, phase or high-depth metadata are moved from the active record to the archive complement.  At the QFT/EFT bridge level, Wilsonian coarse-graining integrates or quotients modes above a declared comparison scale.  The bridge dictionary is therefore:
+where finite address, phase or high-depth metadata are moved from the active record to the traced-out complement complement.  At the QFT/EFT bridge level, Wilsonian coarse-graining integrates or quotients modes above a declared comparison scale.  The bridge dictionary is therefore:
 
 ```math
 \Delta_N
@@ -452,7 +452,7 @@ O_{SM}^{\mathcal S}(\mu)
 =\mathfrak D_{SM}^{D0}(\mathcal S,\mu,\Lambda_{act})[O_{D0}^{bare}].
 ```
 
-The bridge must keep the field content, beta-functions, threshold conventions and scheme explicit.  A hidden new particle, new threshold, or scheme change is an external hypothesis and cannot repair a D0 residual.  This is the operational form of the archive/forgetting interpretation of RG flow.
+The bridge must keep the field content, beta-functions, threshold conventions and scheme explicit.  A hidden new particle, new threshold, or scheme change is an external hypothesis and cannot repair a D0 residual.  This is the operational form of the traced-out complement/forgetting interpretation of RG flow.
 
 ## 06.22 RG/coarse-graining as typed forgetting
 
@@ -567,7 +567,7 @@ The term \(K_{g-2}^{D0}\) is finite and single-section locked. The residual trac
 
 ## 06.28 Tick-to-space unfolding
 
-The runtime tick does not merely order events. When paired with a cyclic phase quotient it generates a branch foliation. A near-return modulus `q` turns the one-dimensional tick line into residue branches; admissibility filters select which branches survive as observable geometry. This is the finite mechanism by which ordered registration can unfold into spatial structure before any smooth manifold is invoked.
+The ordered finite evolution discrete evolution step does not merely order events. When paired with a cyclic phase quotient it generates a branch foliation. A near-return modulus `q` turns the one-dimensional discrete evolution step line into residue branches; admissibility filters select which branches survive as observable geometry. This is the finite mechanism by which ordered registration can unfold into spatial structure before any smooth manifold is invoked.
 
 ## 06.29 Phase-unfolding master chain
 
@@ -577,13 +577,13 @@ D0 no longer treats spatial branching as a primitive geometric background.  An o
 U_\tau(n)=(n,n\bmod \tau)
 \]
 
-turns the one-dimensional tick sequence into a branch foliation whenever an integer pair \((q,m)\) satisfies \(|q-m\tau|\ll 1\).  The residue classes modulo \(q\) are the coherent branches.  An admissibility filter selects the branches visible to the detector.
+turns the one-dimensional discrete evolution step sequence into a branch foliation whenever an integer pair \((q,m)\) satisfies \(|q-m\tau|\ll 1\).  The residue classes modulo \(q\) are the coherent branches.  An admissibility filter selects the branches visible to the detector.
 
-The time operator supplies the non-periodic ordered runtime.  The integer toral
+The time operator supplies the non-periodic ordered ordered finite evolution.  The integer toral
 automorphism `T=[[0,1],[1,-1]]` orders the active/archive ladder through
 `Tr(T^n)=(-1)^n L_n`, while the phase owner fixes the return increment
 `alpha_D0=phi^-2`.  Tick order is therefore not a periodic clock embedded in a
-background lattice; it is an ordered runtime whose detector-visible branches are
+background lattice; it is an ordered ordered finite evolution whose detector-visible branches are
 created only by finite return quotients.
 
 The D0 structural return
@@ -622,7 +622,7 @@ the electroweak radial depth is the per-\(\Omega_8\)-sector branch depth:
 D_{EW}=35.
 \]
 
-This section upgrades phase unfolding from an illustration to a structural theorem: later scale depths are repeated applications of the same finite tick \(\to\) phase quotient \(\to\) return modulus \(\to\) residue branch \(\to\) quotient mechanism.
+This section upgrades phase unfolding from an illustration to a structural theorem: later scale depths are repeated applications of the same finite discrete evolution step \(\to\) phase quotient \(\to\) return modulus \(\to\) residue branch \(\to\) quotient mechanism.
 
 ## 06.30 Hurwitz-rigid phase generator and non-resonant spatial unfolding
 
@@ -652,7 +652,7 @@ unfolding.
 The combined owner is now `D0.Geometry.PhaseUnfoldingQuasicrystal`:
 
 ```text
-toral_runtime_supplies_quasicrystal_order;
+toral_ordered finite evolution_supplies_quasicrystal_order;
 quasicrystal_order_not_periodic_lattice.
 ```
 
@@ -712,31 +712,31 @@ The phase-canonical archive Laplacian is local on each cyclic fiber, but strict 
 
 ```text
 L_{n+1}
-  -> coarse-grain by the archive phase projection B
+  -> coarse-grain by the traced-out complement phase projection B
   -> B^T L_{n+1} B
   -> compare with L_n by scale plus residual.
 ```
 
-Lean records the strict operator no-go, while the RG certificate `vp_archive_laplacian_rg_flow.py` checks the effective quadratic-form flow. For the canonical phase projection the projected residual is zero with scale `1`; the strict pullback commutator remains a rank-2 seam defect. This is now the runtime meaning of archive curvature in the forgetting layer: not deletion, but the measured failure of strict flat pullback transport.
+Lean records the strict operator no-go, while the RG certificate `vp_archive_laplacian_rg_flow.py` checks the effective quadratic-form flow. For the canonical phase projection the projected residual is zero with scale `1`; the strict pullback commutator remains a rank-2 seam defect. This is now the ordered finite evolution meaning of archive curvature in the forgetting layer: not deletion, but the measured failure of strict flat pullback transport.
 
 ## 06.34 Refinement seam as archive forgetting boundary
 
-The current seam layer makes the forgetting boundary explicit. Energy descends exactly across the archive phase projection, but the lifted operator transport has a localized commutator:
+The current seam layer makes the forgetting boundary explicit. Energy descends exactly across the traced-out complement phase projection, but the lifted operator transport has a localized commutator:
 
 ```text
 C_n = L_{n+1} B_n - B_n L_n.
 ```
 
-The seam is the finite boundary where one additional refined phase point is folded back into the coarser archive cycle. The certificate `vp_archive_seam_curvature_action.py` verifies that this defect is rank `2`, supported on four seam entries, and has HS density `4`. Thus the archive forgetting boundary is not an uncontrolled loss term; it is the finite seam where curvature is measured.
+The seam is the finite boundary where one additional refined phase point is folded back into the coarser archive cycle. The certificate `vp_archive_seam_curvature_action.py` verifies that this defect is rank `2`, supported on four seam entries, and has HS density `4`. Thus the traced-out complement forgetting boundary is not an uncontrolled loss term; it is the finite seam where curvature is measured.
 
 
 ## 06.35 Internal cone speed and the role of time
 
-c_D0 = 1 is the invariant causal propagation bound of finite hull dynamics. It means one admissible tick cannot cross more than one finite adjacency layer. The SI value of light speed is unit printing, not the invariant.
+c_D0 = 1 is the invariant causal propagation bound of finite hull dynamics. It means one admissible discrete evolution step cannot cross more than one finite adjacency layer. The SI value of light speed is unit printing, not the invariant.
 
 The current edition separates three statements that were previously too easy to conflate:
 
-1. D0 internal length tick: the primitive finite propagation section has one line unit and one tick unit.
+1. D0 internal length discrete evolution step: the primitive finite propagation section has one line unit and one discrete evolution step unit.
 2. Internal cone invariant: `internal_cone_speed_eq_one` states `c_D0 = 1` as a dimensionless cone-speed normalization.
 3. SI metrology: `299792458 m/s` is the external unit conversion fixed by the SI definition of metre and second.
 
@@ -744,25 +744,25 @@ Therefore D0 does not fit the speed of light.  It fixes the internal causal cone
 
 This also sharpens the time claim: time is not an extra continuum substance added to the graph.  It is the invariant registration order of finite propagation, and the smooth time coordinate is a large-scale language for that order.
 
-## 06.36 Finite tick-gauge closure
-Sync token: 06.36 v14 tick-gauge closure.
+## 06.36 Finite discrete evolution step-gauge closure
+Sync token: 06.36 v14 discrete evolution step-gauge closure.
 
-The active formulation replaces the shorthand `length tick = time tick` with a finite causal section. The owner is
+The active formulation replaces the shorthand `length discrete evolution step = time discrete evolution step` with a finite causal section. The owner is
 
 ```text
 D0.Bridge.FiniteCausalTickSection
 ```
 
-A finite record is admissible as an internal kinematic gauge only when the line tick and the time tick are two readouts of one common section tick.  Lean owners:
+A finite record is admissible as an internal kinematic gauge only when the line discrete evolution step and the time discrete evolution step are two readouts of one common section discrete evolution step.  Lean owners:
 
 ```text
-D0.Bridge.finite_causal_tick_section_forces_same_tick
-D0.Bridge.finite_causal_tick_section_cone_speed_eq_one
-D0.Bridge.common_tick_rescaling_preserves_internal_cone_speed
-D0.Bridge.asymmetric_ticks_not_internal_gauge
+D0.Bridge.finite_causal_discrete evolution step_section_forces_same_discrete evolution step
+D0.Bridge.finite_causal_discrete evolution step_section_cone_speed_eq_one
+D0.Bridge.common_discrete evolution step_rescaling_preserves_internal_cone_speed
+D0.Bridge.asymmetric_discrete evolution steps_not_internal_gauge
 ```
 
-Thus `c_D0=1` is a theorem-level finite section invariant.  It is not the SI number `299792458 m/s`; that number belongs to external metrology and fixes the human unit convention.  Common rescaling of line and tick units preserves the invariant; asymmetric rescaling is an SI/export operation and cannot become a D0 core gauge.
+Thus `c_D0=1` is a theorem-level finite section invariant.  It is not the SI number `299792458 m/s`; that number belongs to external metrology and fixes the human unit convention.  Common rescaling of line and discrete evolution step units preserves the invariant; asymmetric rescaling is an SI/export operation and cannot become a D0 core gauge.
 
 The Lorentz-facing owner
 
@@ -773,14 +773,14 @@ D0.Bridge.FiniteLorentzTickGaugeClosure
 adds the terminal role signature `(1,3)` through
 
 ```text
-D0.Bridge.finite_lorentz_tick_gauge_signature_closed
-D0.Bridge.finite_lorentz_tick_gauge_no_euclidean_export
-D0.Bridge.finite_lorentz_tick_gauge_no_split_export
+D0.Bridge.finite_lorentz_discrete evolution step_gauge_signature_closed
+D0.Bridge.finite_lorentz_discrete evolution step_gauge_no_euclidean_export
+D0.Bridge.finite_lorentz_discrete evolution step_gauge_no_split_export
 ```
 
 The macroscopic Lorentz bridge may integrate this finite carrier into smooth spacetime kinematics, but it may not change the core cone speed, add a second elementary speed, or export Euclidean/split signature as the D0 internal geometry.
 
-The spin-2 wave operator uses the same terminal tick/Lorentz carrier in concrete
+The spin-2 wave operator uses the same terminal discrete evolution step/Lorentz carrier in concrete
 finite form:
 
 ```text
@@ -792,21 +792,21 @@ u4   = (1,0,0,0)
 This is a dimensionless `c_D0=1` carrier.  No SI calibration of `G_N` is
 introduced here.
 
-Gravity runtime exports remain internal until a bridge is declared:
+Gravity ordered finite evolution exports remain internal until a bridge is declared:
 
 ```text
-c_D0 = 1 tick gauge
+c_D0 = 1 discrete evolution step gauge
 eta4 terminal signature
 ```
 
-DSS echoing (critical gravitational collapse) is the log-time recurrence counterpart of finite runtime recurrence at a capacity boundary. It is not ordinary smooth evolution; it is discrete self-similar log-periodic readout at the horizon threshold (see Book 07 §07.49 and D0-GRAV-DSS-00x).
+DSS echoing (critical gravitational collapse) is the log-time recurrence counterpart of finite ordered finite evolution recurrence at a capacity boundary. It is not ordinary smooth evolution; it is discrete self-similar log-periodic readout at the horizon threshold (see Book 07 §07.49 and D0-GRAV-DSS-00x).
 
-Finite horizon capacity saturation is a runtime halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref D0-BH-CAP-00x and Book 07 §07.50).
+Finite horizon capacity saturation is a ordered finite evolution halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref D0-BH-CAP-00x and Book 07 §07.50).
 delta0 finite readout cut
 heat trace scale is internal, not SI time
 ```
 
-## 06.37 П†вЃµ torus invariant and runtime quasicrystal geometry (Phi^5 Torus Invariant)
+## 06.37 П†вЃµ torus invariant and ordered finite evolution quasicrystal geometry (Phi^5 Torus Invariant)
 
 The D0 memory torus uses a dimensionless internal geometry invariant:
 
@@ -823,11 +823,11 @@ R-r = 1
 R+r = a
 ```
 
-so the three shell boundaries are `R-r`, `R`, and `R+r`. This runtime quasicrystal geometry is connected with the cut-and-project vacuum support and noncommuting torus shells. This introduces no SI length scale and no external mass unit; SI calibration remains a bridge layer.
+so the three shell boundaries are `R-r`, `R`, and `R+r`. This ordered finite evolution quasicrystal geometry is connected with the cut-and-project vacuum support and noncommuting torus shells. This introduces no SI length scale and no external mass unit; SI calibration remains a bridge layer.
 
 ### 06.37.1 Trace-heat time ladder
 
-The same fixed time matrix controls the trace-heat runtime:
+The same fixed time matrix controls the trace-heat ordered finite evolution:
 
 ```text
 Tr(T^n)=(-1)^n L_n
@@ -839,7 +839,7 @@ Thus heat moments of T^2 are even Lucas traces. A fixed detector reads T^n layer
 
 ## 06.39 Phason flips and finite rewrite inertia
 
-The runtime transport layer now has an operator-origin reading inside the
+The ordered finite evolution transport layer now has an operator-origin reading inside the
 phi-quasicrystalline support.  Runtime transport through aperiodic support
 requires phason flips under acceleration; inertia is the finite rewrite cost of
 maintaining admissible support.

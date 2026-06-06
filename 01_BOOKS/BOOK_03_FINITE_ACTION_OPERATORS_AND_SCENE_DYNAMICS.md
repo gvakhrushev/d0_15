@@ -1,8 +1,8 @@
-# BOOK 03 — Finite action operators and scene dynamics
+# BOOK 03 — Finite action operators and finite incidence/clique complex dynamics
 
-## 03.1 Standard reading of action and scene terminology
+## 03.1 Standard reading of action and finite incidence/clique complex terminology
 
-The D0 `scene` is a finite incidence/clique complex with cochains and boundary/coboundary operators. The D0 `action stack` is a finite variational functional on this complex. A `tick` is a discrete evolution endomorphism, and a `single-section` is a single scale-section fixing dimensionalization without introducing a second mass anchor.
+The D0 `finite incidence/clique complex` is a finite incidence/clique complex with cochains and boundary/coboundary operators. The D0 `finite variational operator stack` is a finite variational functional on this complex. A `tick` is a discrete evolution endomorphism, and a `single dimensional calibration section` is a single scale-section fixing dimensionalization without introducing a second mass anchor.
 
 ## 03.2 Role and boundary of this book
 
@@ -13,7 +13,7 @@ The boundary rule is:
 ```math
 S_{D0}^\varphi\ \text{and the response theorem} \in Books 01--02,
 \qquad
-S_{gate},J_{scene},\Lambda_{act},S_\partial\in\text{Book 03},
+S_{finite variational test functional},J_{finite incidence/clique complex},\Lambda_{act},S_\partial\in\text{Book 03},
 ```
 
 ```math
@@ -26,13 +26,13 @@ Thus this book is a bridge from invariant finite registration to finite dynamics
 
 ## 03.3 Action as a finite admissible operator stack
 
-Once a finite scene has been constructed, D0 does not introduce a continuum Lagrangian and then regulate it. The action is a finite admissible stack of operators, projectors, spectra, boundary terms and quadratic responses:
+Once a finite finite incidence/clique complex has been constructed, D0 does not introduce a continuum Lagrangian and then regulate it. The action is a finite admissible stack of operators, projectors, spectra, boundary terms and quadratic responses:
 
 ```math
-\mathcal S_{stack}=J_{scene}+S_{coeff}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}.
+\mathcal S_{stack}=J_{finite incidence/clique complex}+S_{coeff}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}.
 ```
 
-The order is not cosmetic. Scene selection comes first; gate coefficients follow; the full-cycle action section fixes the single dimensional dictionary; the boundary block fixes the non-diagonal curvature residual; heat depth controls the length map; terminal terms record the final charged or leaking shell.
+The order is not cosmetic. Scene selection comes first; finite variational test functional coefficients follow; the full-cycle action section fixes the single dimensional dictionary; the boundary block fixes the non-diagonal curvature residual; heat depth controls the length map; terminal terms record the final charged or leaking shell.
 
 The admissibility condition is:
 
@@ -44,14 +44,14 @@ The admissibility condition is:
 
 A sector formula that requires a new GeV, metre, second, Planck, nucleon, collider, or dark-sector anchor is not an action theorem.
 
-## 03.4 Scene/gate backbone
+## 03.4 Scene/finite variational test functional backbone
 
-The finite scene is not background spacetime. It is the finite register on which action can be evaluated. The active action spine is:
+The finite finite incidence/clique complex is not background spacetime. It is the finite register on which action can be evaluated. The active action spine is:
 
 ```math
 K(9,11,13)
 \to
-S_{gate},J_{scene}
+S_{finite variational test functional},J_{finite incidence/clique complex}
 \to
 \mathcal G_{spec}
 \to
@@ -60,13 +60,13 @@ S_{gate},J_{scene}
 \text{quadratic readout}.
 ```
 
-The scene action is the finite selector of persistent records, unlocks, decays, bridges and readouts. It is therefore closer to a variational detector functional than to a continuum field postulate.
+The finite incidence/clique complex action is the finite selector of persistent records, unlocks, decays, bridges and readouts. It is therefore closer to a variational detector functional than to a continuum field postulate.
 
-The gate stack is allowed to use finite matrices, graph degrees, projectors, Hessians, spectra, finite differences and positive quadratic penalties. It is not allowed to use a sector target table as an input.
+The finite variational test functional stack is allowed to use finite matrices, graph degrees, projectors, Hessians, spectra, finite differences and positive quadratic penalties. It is not allowed to use a sector target table as an input.
 
 ## 03.5 Internal action gauge
 
-Let the length-depth map selected by scene, heat and terminal terms be
+Let the length-depth map selected by finite incidence/clique complex, heat and terminal terms be
 
 ```math
 D_L=\Omega_8\varphi^{V_9V_{11}}\left(1+\frac{\delta_0}{V_{13}}\right).
@@ -124,7 +124,7 @@ The mass map is therefore
 M_a^2=(\Lambda_{act}^{SI})^2\lambda_a.
 ```
 
-The single-section rank rule is:
+The single dimensional calibration section rank rule is:
 
 ```text
 mass, Q_beta, rate        : Lambda_act^(+1)
@@ -193,10 +193,10 @@ Book 04 may use this cell in hadron or coefficient comparison protocols, but Boo
 
 ## 03.8 Finite equations of motion
 
-The D0 equation of motion is not a continuum Euler-Lagrange equation at fundamental level. It is a finite stationarity condition on the scene variables:
+The D0 equation of motion is not a continuum Euler-Lagrange equation at fundamental level. It is a finite stationarity condition on the finite incidence/clique complex variables:
 
 ```math
-\nabla_{x\in\mathcal X_N}\left(J_{scene}+S_{gate}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}\right)=0.
+\nabla_{x\in\mathcal X_N}\left(J_{finite incidence/clique complex}+S_{finite variational test functional}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}\right)=0.
 ```
 
 After the halt quotient and forgetting map, continuum equations may appear as limits or bridge dictionaries. They are not the primitive input.
@@ -211,7 +211,7 @@ Q^\dagger Q
 {\operatorname{Tr}(\Pi_aQ^\dagger Q)}\over{\operatorname{Tr}(Q^\dagger Q)}.
 ```
 
-The proof of the trace law is in Book 02; Book 03 uses it as the admissible dynamics-to-readout gate.
+The proof of the trace law is in Book 02; Book 03 uses it as the admissible dynamics-to-readout finite variational test functional.
 
 ## 03.9 Runtime, forgetting and witness transport
 
@@ -242,7 +242,7 @@ provided the states are finite detector states and the bridge to external kinema
 The electroweak material is retained as an action-layer owner block. Book 03 owns the action layer:
 
 ```math
-\text{EW channel}=\text{single-section action layer}+\text{finite radial depth}+\text{typed weak unlock}.
+\text{EW channel}=\text{single dimensional calibration section action layer}+\text{finite radial depth}+\text{typed weak unlock}.
 ```
 
 Particle masses, charged-lepton generation, CKM orientation and gauge coefficient normalization are Book 04 matters. Book 03 only states the admissibility rule: the electroweak formulas must use the single action section and may not import an independent `M_Z`, `M_W`, proton or collider anchor.
@@ -273,7 +273,7 @@ The exact proton/neutron numerical comparison protocols remain in the matter boo
 
 ## 03.13 Gravity and cosmology cross-reference
 
-The action stack supplies one-section metrology and length-depth action. Gravity receives this in Book 07. Cosmology receives the finite-window archive-transfer mechanism in Book 08.
+The finite variational operator stack supplies one-section metrology and length-depth action. Gravity receives this in Book 07. Cosmology receives the finite-window archive-transfer mechanism in Book 08.
 
 The S_DE insertion is therefore not a cosmology derivation inside Book 03. It is the action-side rule:
 
@@ -297,9 +297,9 @@ Book 03 rejects the following moves:
 
 | Claim | Status | Canonical placement | Name | Forbidden shortcut | Falsification hook |
 |---|---|---|---|---|---|
-| `D0-SCENE-002` | CORE-ACTION | BOOK_03 | J_scene selects K(9,11,13) | Do not read J_scene as fitted polynomial for later constants. | Different admissible zero of the same typed obligations or wrong graph invariants. |
+| `D0-SCENE-002` | CORE-ACTION | BOOK_03 | J_finite incidence/clique complex selects K(9,11,13) | Do not read J_finite incidence/clique complex as fitted polynomial for later constants. | Different admissible zero of the same typed obligations or wrong graph invariants. |
 | `D0-MATH-001` | D0-RESOLUTION-EXACT | BOOK_03 | Finite phi-runtime and stop ideal | Do not add infinite correction layers below I12. | A physical scalar claim requires distinguishing below I12 inside D0 grammar. |
-| `D0-ACTION-001` | CORE-ACTION | BOOK_03 | S_gate/J_scene backbone | Do not close Born, entropy, leptons, or dynamics by unrelated formulas. | Mismatch between books or failure of q_mass/I_B/action spine consistency. |
+| `D0-ACTION-001` | CORE-ACTION | BOOK_03 | S_finite variational test functional/J_finite incidence/clique complex backbone | Do not close Born, entropy, leptons, or dynamics by unrelated formulas. | Mismatch between books or failure of q_mass/I_B/action spine consistency. |
 | `D0-METRO-002` | SINGLE-SECTION-OUTPUT | BOOK_03 | Lambda_act single action section | No proton, W/Z, Planck, G_N, H0, or dark anchor as second scale. | Any closed prediction requiring an independent sector scale. |
 | `D0-BOUND-001` | D0-RESOLUTION-EXACT | BOOK_03 | q_mass and boundary curvature residual | Do not fit q_res with arbitrary scalar factor or reopen an infinite residual spiral. | Boundary residual cannot be produced below I12 by admissible cell. |
 | `D0-QM-001` | CORE-MEASUREMENT | BOOK_02/BOOK_03 | Born/Hilbert finite trace ratio | Do not postulate continuum Hilbert space before finite trace. | Negative or unnormalized probabilities from finite Hessian readout. |
@@ -309,7 +309,7 @@ Book 03 rejects the following moves:
 
 ## 03.16 Integrated calibration DAG and single action-section power matrix
 
-The single-section rule is stated as an active action theorem, not as an index note.
+The single dimensional calibration section rule is stated as an active action theorem, not as an index note.
 
 D0 does not fail to derive kilograms or joules. Kilogram, joule, metre and second are external unit sections, not invariants. D0 derives the invariant finite action-section structure. The electron terminal record prints this structure into the SI convention. Once the external SI realization of the terminal charged cycle is chosen, all dimensional readouts must use the same section:
 
@@ -330,13 +330,13 @@ The integrated calibration DAG is
 ```text
 finite verification algebra
   -> delta0, Omega8, K(9,11,13), rank/nullity data
-  -> S_gate / J_scene
+  -> S_finite variational test functional / J_finite incidence/clique complex
   -> spectral and boundary invariants
   -> single action section Lambda_act
   -> matter, weak-rate, gravity, entropy, dynamics and survey readouts.
 ```
 
-The power matrix is the operational content of the single-section theorem:
+The power matrix is the operational content of the single dimensional calibration section theorem:
 
 | object | D0 form | \(\Lambda_{act}\) power |
 |---|---|---:|
@@ -352,7 +352,7 @@ The power matrix is the operational content of the single-section theorem:
 
 Equivalently, the metrological DAG has one nonzero scale column.  Adding a proton, neutron, electroweak, Planck, dark-sector, collider or survey mass anchor raises the rank of the section matrix and is forbidden.
 
-The section constraint may be represented in the action stack by
+The section constraint may be represented in the finite variational operator stack by
 
 ```math
 S_\Lambda(\tau,\Lambda)
@@ -370,7 +370,7 @@ whose Euler point is
 \Lambda_{act}=\frac h{\tau_0}=38m_ec^2.
 ```
 
-This integrated block makes explicit that the single-section rule is a typed
+This integrated block makes explicit that the single dimensional calibration section rule is a typed
 metrology theorem, not a stylistic guardrail.  The Lean bridge types are
 `DimensionlessCoreTraces` for the core trace shapes, `ExternalSICalibration`
 for the SI dictionary, `SIMacroscopicPhysics` for SI outputs, and
@@ -387,10 +387,10 @@ A scattering comparison must declare
 P(a\to b)=\frac{|S_{ba}|^2}{\sum_c |S_{ca}|^2},
 ```
 
-with the finite transition operator typed by the detector/action stack and the external detector cuts placed only in the comparison protocol layer.  The allowed chain is
+with the finite transition operator typed by the detector/finite variational operator stack and the external detector cuts placed only in the comparison protocol layer.  The allowed chain is
 
 ```text
-finite action stack -> finite transition operator -> quadratic transition weights -> detector comparison protocol.
+finite finite variational operator stack -> finite transition operator -> quadratic transition weights -> detector comparison protocol.
 ```
 
 Forbidden shortcuts are: collider normalization as a second action scale, post-hoc channel relabelling, and treating a finite D0 transition registry as a full detector simulator.
@@ -433,7 +433,7 @@ Only after this dimensionless finite-cycle number is fixed is the SI electron re
 
 Thus the electron mass is not predicted from itself.  The finite theorem predicts the dimensionless full-cycle action coefficient `38`; the external electron rest energy supplies the SI unit section used to express the D0 action scale in joules or MeV.
 
-## 03.19 Integrated single-section and boundary-residual closure cells
+## 03.19 Integrated single dimensional calibration section and boundary-residual closure cells
 
 This section closes the action/metrology rows that cannot remain as ledger-only claims.  The active theorem text now carries the proof-cell content required for release status.
 
@@ -484,7 +484,7 @@ Primary certs: `vp_calibration_dag_and_lambda_section_rigidity_20260522.py`, `vp
 
 ### 03.19.2 `D0-BOUND-001`: q-mass and boundary curvature residual
 
-The boundary residual is not a fitted scalar.  It is the stationary solution of the boundary block of the finite gate action:
+The boundary residual is not a fitted scalar.  It is the stationary solution of the boundary block of the finite finite variational test functional action:
 
 ```math
 S_\partial(r,I)=\left(r-r_0(1+I/d_9)\right)^2+
@@ -523,7 +523,7 @@ Primary certs: `vp_action_gauge_and_boundary_curvature_closure.py`, `vp_derivati
 
 ## 03.20 Single-section hostile uniqueness: the integer 38
 
-The action section uses the finite graph action stack before particle-sector finite readouts.  Let
+The action section uses the finite graph finite variational operator stack before particle-sector finite readouts.  Let
 
 ```math
 |V|=33,
@@ -587,7 +587,7 @@ The topological gap labels assigned to spectral gaps do not introduce new action
 
 ## 03.22 Action-to-selector closure rule
 
-An action operator becomes a particle-sector statement only after it induces a finite selector or a finite response readout.  The action stack alone is not enough.  The required chain is:
+An action operator becomes a particle-sector statement only after it induces a finite selector or a finite response readout.  The finite variational operator stack alone is not enough.  The required chain is:
 
 ```text
 finite action support
@@ -628,9 +628,9 @@ with the algebraic core owner `D0.Geometry.TorusCore13GeometryOrigin`.  Book 03
 does not use PDG data to create this geometry; PDG Core-13 is an external
 embedding passport.
 
-## 03.24 Lefschetz scene counts from the time ladder
+## 03.24 Lefschetz finite incidence/clique complex counts from the time ladder
 
-The anti-periodic finite scene count is read as
+The anti-periodic finite finite incidence/clique complex count is read as
 `NFermion(n)=|det(T^n+I)|`.  The first active closure checks are:
 
 ```text

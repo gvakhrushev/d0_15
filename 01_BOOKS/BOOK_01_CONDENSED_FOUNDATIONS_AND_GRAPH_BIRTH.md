@@ -1,4 +1,4 @@
-﻿# BOOK 01 вЂ” Condensed foundations, finite registration and graph birth
+﻿# BOOK 01 вЂ” Condensed foundations, finite registration and construction of the finite incidence graph
 
 ## 01.1 Standard-language reading of the foundation
 
@@ -15,7 +15,7 @@ A physical observable is not an arbitrary morphism out of this object. It is an 
 \operatorname{Obs}^{D0}(S_{D0})\subset \operatorname{Obs}(S_{D0}),
 ```
 
-with finite-stage factorization, projection compatibility, a positive response operator, and a halt quotient. Thus D0 words `registration`, `readout`, `ABCD`, and `Omega8` are local names for finite instruments and quotient data on this profinite/condensed support.
+with finite-stage factorization, projection compatibility, a positive response operator, and a halt quotient. Thus D0 words `registration`, `readout`, `four terminal roles A,B,C,D`, and `eight oriented terminal-role states Ω8` are local names for finite instruments and quotient data on this profinite/condensed support.
 
 ## 01.2 Role of this book
 
@@ -32,13 +32,13 @@ S_{D0}^{\varphi}\Rightarrow
 \mathcal H_N,\mathcal D_N,R_N\Rightarrow
 x^2=x+1\Rightarrow
 \delta_0\Rightarrow
-ABCD\times\{\pm\}\Rightarrow
+four terminal roles A,B,C,D\times\{\pm\}\Rightarrow
 \Omega_8\Rightarrow
 V_9\Rightarrow
 K(9,11,13).
 \]
 
-The book therefore proves graph birth from finite registration, not by choosing a convenient graph, but by imposing the obligations of address, comparison, halt, response and invariant readout.
+The book therefore proves construction of the finite incidence graph from finite registration, not by choosing a convenient graph, but by imposing the obligations of address, comparison, halt, response and invariant readout.
 
 ## 01.3 No-monopoly verification and the measurement dyad
 
@@ -177,9 +177,9 @@ ordered tick chain
 ```
 
 Thus D0 geometry is finite, ordered, aperiodic and readout-generated. Smooth macro-geometry is the coarse-grained shadow of this non-resonant finite branch order.
-### 01.4.2 ABCD as a natural operator cycle over the condensed support
+### 01.4.2 four terminal roles A,B,C,D as a natural operator cycle over the condensed support
 
-The four ABCD roles live inside this admissible subfunctor.  Let `T_\varphi` and `T_\psi` be the two branch endomorphisms of the finite comparison module.  Their finite-stage representatives must form a compatible family
+The four four terminal roles A,B,C,D roles live inside this admissible subfunctor.  Let `T_\varphi` and `T_\psi` be the two branch endomorphisms of the finite comparison module.  Their finite-stage representatives must form a compatible family
 
 \[
 P_{N+1,N}T_{\bullet,N+1}=T_{\bullet,N}P_{N+1,N},
@@ -372,11 +372,11 @@ The factor `2` is structural: `\delta_0` is half of the branch asymmetry, while 
 
 The split is not numerology. It is the unique minimal normalized finite two-branch audit with a quadratic positive-return response.
 
-## 01.7 The four ABCD operator roles
+## 01.7 The four four terminal roles A,B,C,D operator roles
 
-The pair `\varphi,\psi` gives a scalar presentation of the quadratic relation, but D0 does not use the four ABCD entries merely as four algebraic equations.  At the scalar level some relations imply others.  At the detector level, however, the four entries are four typed operator roles in one completed readout cycle.
+The pair `\varphi,\psi` gives a scalar presentation of the quadratic relation, but D0 does not use the four four terminal roles A,B,C,D entries merely as four algebraic equations.  At the scalar level some relations imply others.  At the detector level, however, the four entries are four typed operator roles in one completed readout cycle.
 
-Let `T_\varphi` and `T_\psi` denote the two conjugate branch operators acting on the finite two-branch comparison module.  The four ABCD roles are:
+Let `T_\varphi` and `T_\psi` denote the two conjugate branch operators acting on the finite two-branch comparison module.  The four four terminal roles A,B,C,D roles are:
 
 \[
 A_\Sigma:\quad T_\varphi+T_\psi=I,
@@ -415,7 +415,7 @@ The point is not algebraic independence.  The point is operator completeness:
 | `C_+` | forward branch self-return recursion | no positive branch runtime calculus |
 | `D_-` | return branch self-return recursion | no conjugate return / no closed cycle |
 
-Thus ABCD is the minimal four-role operator cycle of the `\varphi` detector relation.  It is not a claim that four scalar equations are independent axioms.  It is a claim that a completed finite detector cycle requires four typed roles: normalization, conjugate coupling, forward recurrence and return recurrence.
+Thus four terminal roles A,B,C,D is the minimal four-role operator cycle of the `\varphi` detector relation.  It is not a claim that four scalar equations are independent axioms.  It is a claim that a completed finite detector cycle requires four typed roles: normalization, conjugate coupling, forward recurrence and return recurrence.
 
 The centered distinguishability quantum is then the half-gap of the two normalized branches:
 
@@ -449,7 +449,7 @@ Q(D)=2\delta_0\varphi^{D-1}=\varphi^{D-4}.
 
 This is the active `\varphi`-ladder relation used downstream.
 
-### 01.7.1 Terminal two-port realization of ABCD
+### 01.7.1 Terminal two-port realization of four terminal roles A,B,C,D
 
 The physical two-port detector gives a terminal representation of the same four-role cycle.  For two inputs and two outputs there are four terminal registration roles:
 
@@ -463,7 +463,7 @@ D=(4,3).
 This representation is not a new axiom and not a proof by analogy.  It says that the abstract four-role operator cycle has a minimal terminal readout realization: two coalescent roles and two separated/exchange roles.  The sign/phase branch then gives
 
 \[
-\Omega_8=ABCD\times\{+,-\}.
+\Omega_8=four terminal roles A,B,C,D\times\{+,-\}.
 \]
 
 The associated role representatives are recorded as
@@ -480,7 +480,7 @@ U_D=K.
 
 The detector closure is therefore not `8` as a graph vertex count.  It is a closed signed terminal role cycle.  The graph begins only after this cycle is lifted.
 
-### 01.7.2 Proof cell: `D0-SCENE-001` Omega8 detector cycle
+### 01.7.2 Proof cell: `D0-SCENE-001` eight oriented terminal-role states Ω8 detector cycle
 
 **Claim.**  The first closed detector cycle is the signed four-role cycle
 
@@ -500,11 +500,11 @@ A=(3,3),\qquad B=(4,4),\qquad C=(3,4),\qquad D=(4,3).
 
 **Quadratic readout.**  Observable readout is not the role label itself but the positive response of the corresponding finite channel.  Bosonic and fermionic two-particle quotients select different surviving subspaces of this same eight-state cycle.
 
-**Quotient.**  The quotient is the halt from unresolved continuum metadata to the finite signed terminal role algebra.  The graph birth marker `V_9` comes only after this quotient.
+**Quotient.**  The quotient is the halt from unresolved continuum metadata to the finite signed terminal role algebra.  The construction of the finite incidence graph marker `V_9` comes only after this quotient.
 
 **Falsification hook.**  If the minimal terminal detector role algebra can be completed without one of the four typed roles `A_\Sigma,B_N,C_+,D_-`, or if the two-port terminal representation requires fewer or more than four pre-sign roles, then `D0-SCENE-001` fails.  A downstream graph or carrier theorem may not repair this failure.
 
-## 01.8 From Omega8 to V9 and graph birth
+## 01.8 From eight oriented terminal-role states Ω8 to V9 and construction of the finite incidence graph
 
 The signed detector cycle must acquire a graph-birth marker:
 
@@ -521,7 +521,7 @@ Thus
 while
 
 \[
-9\quad\text{belongs to graph birth}.
+9\quad\text{belongs to construction of the finite incidence graph}.
 \]
 
 The scene is selected by a finite variational obligation, not by a fitted polynomial. The scene functional is
@@ -570,7 +570,7 @@ and the shell degrees
 d_9=24,\qquad d_{11}=22,\qquad d_{13}=20.
 \]
 
-Book 01 stops at graph birth. The action, boundary, matter, gravity and cosmology books may use this scene, but they may not refit it.
+Book 01 stops at construction of the finite incidence graph. The action, boundary, matter, gravity and cosmology books may use this scene, but they may not refit it.
 
 ## 01.9 Internal causality and the single line/tick section
 
@@ -621,7 +621,7 @@ Book 01 does not use downstream bridge formulas to define the foundation. It kee
 | non-reduced Compton section and `Λ_act` | single-section metrology bridge | Book 03 |
 | finite circle audit `π_0` | phase-closure audit, not continuum replacement | Books 02, 05 |
 
-The foundation rule is simple: Book 01 constructs support, response and graph birth. It does not import mass, baryon, electroweak or cosmological bridges back into the primitive layer.
+The foundation rule is simple: Book 01 constructs support, response and construction of the finite incidence graph. It does not import mass, baryon, electroweak or cosmological bridges back into the primitive layer.
 ## 01.11 Contradiction theorems
 
 Book 01 closes by rejecting three common false starts.
@@ -642,7 +642,7 @@ Particles are stable re-detection classes over finite detector records. They are
 
 1. Do not derive `\varphi` from aesthetic decorative П† numerology. Derive it from minimal non-monopoly self-return closure.
 2. Do not use `\delta_0=\varphi^{-3}`. The active convention is `\delta_0=1/(2\varphi^3)`.
-3. Do not read `\Omega_8` as a graph. It is detector closure; `V_9` is graph birth.
+3. Do not read `\Omega_8` as a graph. It is detector closure; `V_9` is construction of the finite incidence graph.
 4. Do not use `K(9,11,13)` as a chosen model space. It is selected by scene obligations.
 5. Do not introduce a second scale anchor. `c_{D0}=1`, `\ell_0=1`, `\tau_0=1` are internal; SI values are section maps.
 6. Do not treat bridge formulas like `q_{mass}`, `I_B`, `38`, or `\pi_0` as foundation primitives. They are preserved here as cross-references.
@@ -653,7 +653,7 @@ Particles are stable re-detection classes over finite detector records. They are
 |---|---:|---|---|---|
 | `D0-FOUND-001` | CORE-FOUNDATION | No-monopoly verification algebra | Do not derive phi from generic unitary contact, Helstrom scans, or entropy linearity alone. | vp_information_line_exchange.py; minimal Popper/dyad certs |
 | `D0-FOUND-002` | CORE-FOUNDATION | Minimal addressable record split | Do not use delta0=phi^-3; active convention is 1/(2 phi^3). | vp_information_line_exchange.py |
-| `D0-SCENE-001` | CORE-SUPPORT | Omega8 detector cycle | Do not treat phi alone as physical geometry before Omega8 closure. | d0_core_certificates.py; vp_information_line_exchange.py |
+| `D0-SCENE-001` | CORE-SUPPORT | eight oriented terminal-role states Ω8 detector cycle | Do not treat phi alone as physical geometry before eight oriented terminal-role states Ω8 closure. | d0_core_certificates.py; vp_information_line_exchange.py |
 | `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | Do not read J_scene as fitted polynomial for later constants. | d0_graph.py; d0_core_certificates.py; vp_sgate_jscene_backbone_20260522.py |
 | `D0-METRO-001` | CORE-FOUNDATION | Single causal line/tick invariant | Do not count c as a second sector anchor. | vp_c_time_length_single_section_closure.py |
 | `D0-METRO-002` | SINGLE-SECTION-OUTPUT | Lambda_act single action section | No proton, W/Z, Planck, G_N, H0, or dark anchor as second scale. | vp_calibration_dag_lambda_section_20260522.py; vp_c_time_length_single_section_closure.py |
@@ -767,7 +767,7 @@ P_{N+1,N}D_{N+1}=D_NP_{N+1,N},
 P_{N+1,N}R_{N+1}=R_NP_{N+1,N}.
 \]
 
-The `ABCD` cycle is therefore a natural finite-stage operator cycle, not a detached alphabet.  Its four duties are normalization, conjugate coupling, forward recurrence and return recurrence.  Their scalar equations may be algebraically related, but their operator roles are distinct in the admissible detector cycle.
+The `four terminal roles A,B,C,D` cycle is therefore a natural finite-stage operator cycle, not a detached alphabet.  Its four duties are normalization, conjugate coupling, forward recurrence and return recurrence.  Their scalar equations may be algebraically related, but their operator roles are distinct in the admissible detector cycle.
 
 ## 01.16 Condensed finite stages and response-order comparison
 
@@ -1015,9 +1015,9 @@ after the readout modulus is fixed.
 The D0 structural return
 
 \[
-q_T=|ABCD|\,|V_{11}|=4\cdot11=44,
+q_T=|four terminal roles A,B,C,D|\,|V_{11}|=4\cdot11=44,
 \qquad
-m_T=|ABCD|+\operatorname{rank}(A_K)=4+3=7
+m_T=|four terminal roles A,B,C,D|+\operatorname{rank}(A_K)=4+3=7
 \]
 
 is the first terminal phase-return window.  Its admissible coprime branch count is
@@ -1031,9 +1031,9 @@ Thus the terminal shell degree is the branch count of the first stable phase unf
 The second return is
 
 \[
-q_{EW}=2(|ABCD|+1)(2|V|+|ABCD|+1)=710,
+q_{EW}=2(|four terminal roles A,B,C,D|+1)(2|V|+|four terminal roles A,B,C,D|+1)=710,
 \qquad
-m_{EW}=(|ABCD|+1)d_{13}+|V_{13}|=113.
+m_{EW}=(|four terminal roles A,B,C,D|+1)d_{13}+|V_{13}|=113.
 \]
 
 Since \(710/113\) is a near-return for the Euclidean phase circumference, and
@@ -1072,19 +1072,19 @@ higher-dimensional archive support
 ```
 
 The active slice is irrational, so it is not a translational lattice. The quotient window is finite, so the detector still sees coherent branch order. This is the D0 sense in which smooth macro-geometry is the coarse-grained shadow of ordered aperiodic finite support.
-## 01.20 Capacity closure of ABCD, О©8 and V9
+## 01.20 Capacity closure of four terminal roles A,B,C,D, О©8 and V9
 
-The terminal readout alphabet is fixed by finite information capacity. A primitive two-port detector has a binary terminal dyad `D2`. The complete terminal role set is therefore `D2 Г— D2`, with four roles. This is the ABCD alphabet:
+The terminal readout alphabet is fixed by finite information capacity. A primitive two-port detector has a binary terminal dyad `D2`. The complete terminal role set is therefore `D2 Г— D2`, with four roles. This is the four terminal roles A,B,C,D alphabet:
 
 \[
-ABCD=D_2\times D_2,
-\qquad |ABCD|=4.
+four terminal roles A,B,C,D=D_2\times D_2,
+\qquad |four terminal roles A,B,C,D|=4.
 \]
 
 The orientation/phase extension adds the unique sign bit:
 
 \[
-\Omega_8=ABCD\times\{+,-\},
+\Omega_8=four terminal roles A,B,C,D\times\{+,-\},
 \qquad |\Omega_8|=8.
 \]
 
@@ -1100,7 +1100,7 @@ The next two shell extensions are the only primitive unresolved capacities over 
 \[
 V_{11}=V_9\sqcup D_2,
 \qquad
-V_{13}=V_9\sqcup ABCD.
+V_{13}=V_9\sqcup four terminal roles A,B,C,D.
 \]
 
 This gives the first complete scene sizes `(9,11,13)`. The construction rules out alternatives: `V8` has no basepoint, `V10` has an extra hidden marker, `V11` cannot be replaced by `V10` without losing direct/return capacity, and `V13` cannot be replaced by `V12` without losing one terminal role.
@@ -1143,13 +1143,13 @@ The phase-unfolding windows used by D0 are not chosen by searching for rational 
 Let the direct/return dyad have cardinality `D2=2`.  Then the terminal role square has cardinality
 
 ```math
-|ABCD|=D_2^2=4,
+|four terminal roles A,B,C,D|=D_2^2=4,
 ```
 
 the oriented terminal set is
 
 ```math
-|\Omega_8|=2|ABCD|=8,
+|\Omega_8|=2|four terminal roles A,B,C,D|=8,
 ```
 
 and the pointed witness shell is
@@ -1163,19 +1163,19 @@ The first dyadic extension and terminal-role extension are
 ```math
 V_{11}=V_9+D_2=11,
 \qquad
-V_{13}=V_9+|ABCD|=13.
+V_{13}=V_9+|four terminal roles A,B,C,D|=13.
 ```
 
 The first terminal phase-return modulus must saturate all unsiged terminal roles over the first moving dyadic shell.  Therefore
 
 ```math
-q_T=\operatorname{lcm}(|ABCD|,V_{11})=4\cdot 11=44.
+q_T=\operatorname{lcm}(|four terminal roles A,B,C,D|,V_{11})=4\cdot 11=44.
 ```
 
 The turn count is fixed by terminal role closure plus the three incidence directions of the scene:
 
 ```math
-m_T=|ABCD|+\operatorname{rank}(A_K)=4+3=7.
+m_T=|four terminal roles A,B,C,D|+\operatorname{rank}(A_K)=4+3=7.
 ```
 
 Thus `44/7` is checked as a phase near-return only after `44` and `7` have been capacity-derived.  Its admissible branch count is
@@ -1187,7 +1187,7 @@ Thus `44/7` is checked as a phase near-return only after `44` and `7` have been 
 The second return window is similarly forced after the terminal shell exists.  Define the pointed terminal alphabet
 
 ```math
-B=|ABCD|+1=5
+B=|four terminal roles A,B,C,D|+1=5
 ```
 
 and the bilateral scene line
@@ -1224,7 +1224,7 @@ This gives the electroweak radial depth as the per-oriented-role branch depth of
 The following finite-support structures and operators close the foundation of the D0 vacuum:
 
 ### Lorentz carrier from terminal role capacity
-The terminal role capacity `ABCD = Dв‚‚ Г— Dв‚‚` fixes the minimal external quadratic carrier:
+The terminal role capacity `four terminal roles A,B,C,D = Dв‚‚ Г— Dв‚‚` fixes the minimal external quadratic carrier:
 $$\eta = \operatorname{diag}(+1,-1,-1,-1).$$
 - **Role in the chain**: It is the finite carrier forced by the terminal role obligations of the detector.
 - **Guardrail**: A Lorentz-facing bridge is admissible only after a finite Clifford realization satisfies $\{\gamma^\mu,\gamma^\nu\} = 2\eta^{\mu\nu}I$. It does not postulate a background spacetime.

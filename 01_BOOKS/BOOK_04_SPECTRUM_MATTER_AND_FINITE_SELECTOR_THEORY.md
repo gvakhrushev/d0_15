@@ -10,7 +10,7 @@ The canonical matter chain is:
 finite carrier/support
 -> finite sector operator
 -> positive or quadratic response
--> strict selector / basis mismatch / transfer window
+-> strict finite variational selector / basis mismatch / transfer window
 -> external comparison only after the D0 object is frozen.
 ```
 
@@ -30,23 +30,23 @@ The active matter claims use the following proof owners.
 |---|---|
 | normalized finite readout | `D0.Core.BornFinite.finite_born_readout_unique_on_finite_outcomes` |
 | no alternative response readout | `D0.Core.BornFinite.finite_born_no_alternative_readout` |
-| strict finite selector uniqueness | `D0.Matter.StrictSelectorCertificate`; `D0.Matter.strict_selected_unique` |
-| selector cannot change without score deformation | `D0.Matter.different_selection_requires_score_change` |
-| Book 04 sector selector contract | `D0.Matter.Book04SelectorClaim`; `D0.Matter.book04_selector_claim_no_free_alternative` |
-| concrete charged terminal selector | `D0.Matter.chargedLeptonElectronTerminalClaim`; `D0.Matter.charged_lepton_terminal_no_free_alternative` |
-| full-support electroweak depth selector | `D0.Matter.electroweakDepth35FullSupportClaim`; `D0.Matter.electroweak_depth35_full_support_no_free_alternative` |
-| full-support proton readout selector | `D0.Matter.protonReadout306FullSupportClaim`; `D0.Matter.proton_readout306_full_support_no_free_alternative` |
-| concrete neutron/archive selector | `D0.Matter.neutronArchiveSiblingClaim`; `D0.Matter.neutron_archive_sibling_no_free_alternative` |
-| full-support beta unlock selector | `D0.Matter.betaUnlockDepth19FullSupportClaim`; `D0.Matter.beta_unlock_depth19_full_support_no_free_alternative` |
+| strict finite finite variational selector uniqueness | `D0.Matter.StrictSelectorCertificate`; `D0.Matter.strict_selected_unique` |
+| finite variational selector cannot change without score deformation | `D0.Matter.different_selection_requires_score_change` |
+| Book 04 sector finite variational selector contract | `D0.Matter.Book04SelectorClaim`; `D0.Matter.book04_finite variational selector_claim_no_free_alternative` |
+| concrete charged terminal finite variational selector | `D0.Matter.chargedLeptonElectronTerminalClaim`; `D0.Matter.charged_lepton_terminal_no_free_alternative` |
+| full-support electroweak depth finite variational selector | `D0.Matter.electroweakDepth35FullSupportClaim`; `D0.Matter.electroweak_depth35_full_support_no_free_alternative` |
+| full-support proton readout finite variational selector | `D0.Matter.protonReadout306FullSupportClaim`; `D0.Matter.proton_readout306_full_support_no_free_alternative` |
+| concrete neutron/archive finite variational selector | `D0.Matter.neutronArchiveSiblingClaim`; `D0.Matter.neutron_archive_sibling_no_free_alternative` |
+| full-support beta unlock finite variational selector | `D0.Matter.betaUnlockDepth19FullSupportClaim`; `D0.Matter.beta_unlock_depth19_full_support_no_free_alternative` |
 | Book 04 operator boundary no-go | `D0.Matter.Book04OperatorBoundaryClosed`; `D0.Matter.book04_operator_boundaries_closed` |
 | CKM matrix unique after bases fixed | `D0.Matter.ckm_no_free_matrix_at_fixed_bases` |
-| CKM basis-origin selector theorem | `D0.Matter.ckm_origin_candidate_matrix_unique`; `D0.Matter.ckm_no_free_matrix_at_fixed_basis_origin`; `D0.Matter.concreteCKMBasisOrigin` |
-| generation overlap response origin | `D0.Geometry.TorusCore13GeometryOrigin`; `D0.Matter.GenerationSelectorOrigin`; `D0.Matter.GenerationOverlapResponseOrigin`; `D0.Matter.torus_geometry_forces_generation_selector_noncommute`; `D0.Matter.torus_shell_noncommutativity_forces_nonpermutation_overlap_source` |
+| CKM basis-origin finite variational selector theorem | `D0.Matter.ckm_origin_candidate_matrix_unique`; `D0.Matter.ckm_no_free_matrix_at_fixed_basis_origin`; `D0.Matter.concreteCKMBasisOrigin` |
+| generation overlap response origin | `D0.Geometry.TorusCore13GeometryOrigin`; `D0.Matter.GenerationSelectorOrigin`; `D0.Matter.GenerationOverlapResponseOrigin`; `D0.Matter.torus_geometry_forces_generation_finite variational selector_noncommute`; `D0.Matter.torus_shell_noncommutativity_forces_nonpermutation_overlap_source` |
 | П†-quasicrystal tiling hull | `D0.Topology.TilingHull`; `D0.Topology.d0_hull_has_phi_cut_project_origin`; `D0.Topology.d0_hull_is_nonperiodic`; `D0.Topology.d0_hull_supports_gap_labeling` |
 | K-theory / K0 Gap Labeling | `D0.Matter.KTheoryGapLabeling`; `gap_labeling_requires_frozen_operator`; `d0_gap_labels_are_countable` |
 | phason-strain generations | `D0.Matter.PhasonStrainGenerations`; `phason_strain_forces_three_generations` |
-| meson phason domain walls | `D0.Matter.MesonPhasonDomainWalls`; `meson_domain_wall_is_gap_labeled_phason_defect` |
-| CKM phason holonomy | `D0.Matter.CKMPhasonHolonomy`; `ckm_matrix_is_phason_holonomy_on_torus_core13` |
+| gap-labeled phason domain-wall operator on 1-simplicess | `D0.Matter.MesonPhasonDomainWalls`; `meson_domain_wall_is_gap_labeled_phason_defect` |
+| non-abelian holonomy of finite generation-basis transport | `D0.Matter.CKMPhasonHolonomy`; `ckm_matrix_is_phason_holonomy_on_torus_core13` |
 | window-sector fractional charge | `D0.Matter.WindowFractionalCharge`; `window_fractional_charge_is_boundary_readout` |
 | window-offset chirality | `D0.Matter.WindowOffsetChirality`; `window_offset_forces_chiral_orientation` |
 | neutrino phason waves | `D0.Matter.NeutrinoPhasonWaves`; `neutrino_is_neutral_bulk_phason_wave` |
@@ -56,7 +56,7 @@ The active matter claims use the following proof owners.
 
 The text below is written theorem-first: each strong claim either has one of these owners, a self-contained certificate, or an explicit comparison boundary.
 
-## 04.3 Matter objects are selectors, not passports
+## 04.3 Matter objects are finite variational selectors, not passports
 
 The previous reading of Book 04 mixed three different things: internal finite objects, dressed Standard-Model comparison values and external data checks. The active reading removes that ambiguity.
 
@@ -64,14 +64,14 @@ A matter object is admitted only through one of the following forms:
 
 1. **Finite support theorem.**  The carrier/support object is proved inside the finite D0 formalism.
 2. **Finite response theorem.**  A positive or quadratic response is normalized by the finite Born/readout theorem.
-3. **Strict selector certificate.**  A finite candidate family and score function select a unique internal object.
-4. **Basis-origin theorem.**  The up/down operator bases must themselves be outputs of finite basis selectors.  After those selectors are fixed, the mismatch matrix is unique up to declared quotient symmetries.
+3. **Strict finite variational selector certificate.**  A finite candidate family and score function select a unique internal object.
+4. **Basis-origin theorem.**  The up/down operator bases must themselves be outputs of finite basis finite variational selectors.  After those finite variational selectors are fixed, the mismatch matrix is unique up to declared quotient symmetries.
 5. **Observable-transfer protocol.**  A frozen D0 object is compared to an external convention through a declared bridge.
 6. **No-go.**  The frozen operator family is insufficient to promote a claim.
 
-The word `selector` is therefore not a stylistic label.  It means a finite candidate set, a score functional and a strict minimizer/maximizer whose uniqueness is protected by the selector theorems.  Changing the selected object means changing the score functional, not changing a status table.
+The word `finite variational selector` is therefore not a stylistic label.  It means a finite candidate set, a score functional and a strict minimizer/maximizer whose uniqueness is protected by the finite variational selector theorems.  Changing the selected object means changing the score functional, not changing a status table.
 
-The quasicrystal matter ontology used later in this book is summarized in 04.4: matter is read as defects, domain walls, holonomies, window weights and K0 gap-labeled spectra over the П†-quasicrystalline tiling hull. This ontology organizes the sector owners; it does not bypass the selector/readout/passport rules above.
+The quasicrystal matter ontology used later in this book is summarized in 04.4: matter is read as defects, domain walls, holonomies, window weights and K0 gap-labeled spectra over the П†-quasicrystalline tiling hull. This ontology organizes the sector owners; it does not bypass the finite variational selector/readout/passport rules above.
 
 ## 04.4 Matter as defects and gap-labeled spectra over the φ-quasicrystalline hull
 
@@ -205,18 +205,18 @@ P_q(i)=\frac{r_i^q}{\sum_jr_j^q}
 
 is not a second D0 law.  At fixed response, it must collapse to the Born weight or fail the response-recovery equation.  Therefore Book 04 can no longer hide weak particle claims behind alternative weighting conventions.
 
-## 04.7 Electroweak radial depth as a concrete selector
+## 04.7 Electroweak radial depth as a concrete finite variational selector
 
 The matter sector inherits the single action section from Book 03.  Electroweak quantities are therefore read as finite radial depths and comparison outputs, not as independent primitive constants.
 
-The active integration replaces the earlier phrase "depth 35" by an actual Book 04 selector owner:
+The active integration replaces the earlier phrase "depth 35" by an actual Book 04 finite variational selector owner:
 
 ```text
 D0.Matter.electroweakDepth35FullSupportClaim
 D0.Matter.electroweak_depth35_full_support_no_free_alternative
 ```
 
-The finite selector window is:
+The finite finite variational selector window is:
 
 ```text
 {depth34, depth35, depth36}
@@ -240,7 +240,7 @@ The bare radial expression is
 
 The external GeV value of `M_Z` is a comparison anchor, not a second D0 scale.  The Higgs-sector readout additionally requires a scalar projector and the runtime electroweak bridge.  Without that projector, a numerical Higgs or Yukawa comparison is not a core theorem.
 
-## 04.8 Charged leptons as a concrete selector family
+## 04.8 Charged leptons as a concrete finite variational selector family
 
 The charged-lepton branch is controlled by a finite operator family rather than three free Yukawa constants. The active integration makes the finite terminal support explicit in Lean:
 
@@ -265,7 +265,7 @@ The active candidate family is the three terminal charged branches
 \mathcal G_\ell=\{e,\mu,\tau\}.
 ```
 
-The selector/action data are no longer an unowned coefficient table. The active charged-lepton coefficient owner is
+The finite variational selector/action data are no longer an unowned coefficient table. The active charged-lepton coefficient owner is
 
 ```text
 D0.Matter.ChargedLeptonCoefficientOrigin
@@ -360,7 +360,7 @@ and the address orientation is
 U_{addr}=\operatorname{polar}(O_{cyc}G_R^+D_{PNO}).
 ```
 
-The owner `D0.Matter.CKMBasisOrigin` moves the proof one level upstream. The up and down bases are not silent inputs: each is a strict finite selector output. The theorem `ckm_origin_candidate_matrix_unique` says that any admissible origin candidate using the same finite basis selectors returns the same matrix. The theorem `ckm_no_free_matrix_at_fixed_basis_origin` forbids a second matrix at fixed basis origin.
+The owner `D0.Matter.CKMBasisOrigin` moves the proof one level upstream. The up and down bases are not silent inputs: each is a strict finite finite variational selector output. The theorem `ckm_origin_candidate_matrix_unique` says that any admissible origin candidate using the same finite basis finite variational selectors returns the same matrix. The theorem `ckm_no_free_matrix_at_fixed_basis_origin` forbids a second matrix at fixed basis origin.
 
 The generation-overlap layer now has a smaller D0-origin owner.  The active source is no longer an unexplained path `0-1-2`: `D0.Geometry.TorusCore13GeometryOrigin` supplies the three torus shell boundaries and proves that radial shell hopping does not commute with shell phase/radius drift.  Lean checks
 
@@ -375,7 +375,7 @@ O_ij = |(U_up^H U_down)_ij|^2
 IsPermutationWitness O := exists sigma : Equiv.Perm GenCarrier, ...
 ```
 
-Thus the algebraic source of non-permutation overlap is torus shell noncommutativity, not a fixture matrix.  The certificate `vp_generation_selector_origin.py` checks the resulting shell-induced unistochastic response, rejects all full permutation witnesses, finds a multi-support row and verifies `F_fl^T F_fl` positivity.  This is an algebraic origin closure, not a derivation of physical CKM entries, angles, CP phase or RG-dressed passport values.
+Thus the algebraic source of non-permutation overlap is torus shell noncommutativity, not a fixture matrix.  The certificate `vp_generation_finite variational selector_origin.py` checks the resulting shell-induced unistochastic response, rejects all full permutation witnesses, finds a multi-support row and verifies `F_fl^T F_fl` positivity.  This is an algebraic origin closure, not a derivation of physical CKM entries, angles, CP phase or RG-dressed passport values.
 
 Therefore a different CKM matrix means one of the following has changed:
 
@@ -481,7 +481,7 @@ The active nucleon core is
 \lambda_{N-core}=2640.7985901288725.
 ```
 
-The active real-closure pass makes the proton and neutron readout selectors full-support finite objects, not local windows. The proton terminal destructive readout is owned by
+The active real-closure pass makes the proton and neutron readout finite variational selectors full-support finite objects, not local windows. The proton terminal destructive readout is owned by
 
 ```text
 D0.Matter.protonReadout306FullSupportClaim
@@ -494,7 +494,7 @@ The admissible terminal readout support is the complete finite support `0..612`,
 \Delta_{readout}^{306}=18\cdot17=306
 ```
 
-is no longer only a mnemonic in the prose; under the fixed selector, no alternative readout is admissible without changing the score.
+is no longer only a mnemonic in the prose; under the fixed finite variational selector, no alternative readout is admissible without changing the score.
 
 The proton row is the terminal-destructive readout
 
@@ -521,7 +521,7 @@ The finite sibling window distinguishes the proton line, the beta/archive siblin
 \lambda_n^{D0}=\lambda_p^{D0}+2\sqrt{10}+\delta_0.
 ```
 
-The beta unlock depth is also now a full-support selector owner:
+The beta unlock depth is also now a full-support finite variational selector owner:
 
 ```text
 D0.Matter.betaUnlockDepth19FullSupportClaim
@@ -540,9 +540,9 @@ The lifetime law used by the certificate is
 \Gamma_n^{D0}\tau_0=(\epsilon_\beta^{D0})^5\delta_0^{19}q_{mass}^{14}.
 ```
 
-The proton and neutron rows are therefore single-section terminal readouts with full-support finite selector owners.  Measured masses and lifetimes are benchmarks, not inputs.
+The proton and neutron rows are therefore single-section terminal readouts with full-support finite finite variational selector owners.  Measured masses and lifetimes are benchmarks, not inputs.
 
-### 04.12.1 Full-support replacement of local selector windows
+### 04.12.1 Full-support replacement of local finite variational selector windows
 
 Earlier drafts used nearest-neighbour windows such as `{305,306,307}` and `{18,19,20}` as a quick anti-retuning check. Those windows are no longer the active theory. The active owners are:
 
@@ -553,7 +553,7 @@ D0.Matter.protonReadout306FullSupportClaim
 D0.Matter.betaUnlockDepth19FullSupportClaim
 ```
 
-The electroweak radial depth is selected over `Fin 71`, the proton destructive readout over `Fin 613`, and the beta weak-unlock depth over `Fin 39`.  Therefore a critic cannot move the selected value by leaving the local В±1 window while keeping the same finite residual selector.  Any different value requires a different admissible support or a different score functional, hence a different theory object.
+The electroweak radial depth is selected over `Fin 71`, the proton destructive readout over `Fin 613`, and the beta weak-unlock depth over `Fin 39`.  Therefore a critic cannot move the selected value by leaving the local В±1 window while keeping the same finite residual finite variational selector.  Any different value requires a different admissible support or a different score functional, hence a different theory object.
 
 ## 04.14 Baryon multiplet boundary as a closed no-go
 
@@ -671,7 +671,7 @@ changing a table, status vocabulary or unit convention.
 
 ## 04.16 Higgs/scalar projector boundary
 
-The electroweak radial selector closes depth 35 and the vector-boson ratio line. It does not automatically close the Higgs scalar projector or all Yukawa rows. The active book makes this boundary theorem-owned rather than implicit:
+The electroweak radial finite variational selector closes depth 35 and the vector-boson ratio line. It does not automatically close the Higgs scalar projector or all Yukawa rows. The active book makes this boundary theorem-owned rather than implicit:
 
 ```text
 D0.Matter.HiggsYukawaProjectorBridge
@@ -783,9 +783,9 @@ The active matter book uses the following classification.
 | Sector | Active reading |
 |---|---|
 | photon | massless line carrier; core readout |
-| charged leptons | finite selector/action family; external mass comparison after electron section |
+| charged leptons | finite finite variational selector/action family; external mass comparison after electron section |
 | neutrinos | neutral leakage support; one-anchor oscillation bridge only |
-| CKM | finite up/down basis-origin selectors; D0 ordinal/adjacency generation selectors force noncommuting overlap origin; no free matrix at fixed origin; numerical passport remains downstream |
+| CKM | finite up/down basis-origin finite variational selectors; D0 ordinal/adjacency generation finite variational selectors force noncommuting overlap origin; no free matrix at fixed origin; numerical passport remains downstream |
 | generation multiplicity | finite three-generation theorem |
 | anomaly behavior | finite anomaly-preservation theorem |
 | electroweak ratio | finite radial/runtime comparison; Higgs/Yukawa core promotion blocked until scalar projector bridge is supplied |
@@ -800,8 +800,8 @@ The active matter book uses the following classification.
 A Book 04 claim fails if any of the following occurs:
 
 1. a mass/mixing number is obtained by direct support reading without a transfer operator;
-2. a selector output changes without a declared score deformation;
-3. a CKM matrix is altered while the basis-origin selectors and readout are held fixed, or a row-only permutation witness is used instead of an `Equiv.Perm` column permutation;
+2. a finite variational selector output changes without a declared score deformation;
+3. a CKM matrix is altered while the basis-origin finite variational selectors and readout are held fixed, or a row-only permutation witness is used instead of an `Equiv.Perm` column permutation;
 4. a Standard-Model comparison uses hidden fields, hidden thresholds or post-hoc scheme choices;
 5. a hadron row uses PDG data to select the D0 operator;
 6. a meson row promotes `400` directly to a physical mass;
@@ -830,15 +830,15 @@ The charged-lepton block is no longer allowed to stop at "the coefficient row is
 
 ### 04.22.2 CKM has a frozen finite transfer before external comparison
 
-The CKM block is no longer only "basis selectors determine a matrix". The finite matrix now has a downstream frozen transfer owner: `D0.Matter.FrozenCKMMatrixTransfer`. A passport may compare the matrix; it cannot choose or retune it.
+The CKM block is no longer only "basis finite variational selectors determine a matrix". The finite matrix now has a downstream frozen transfer owner: `D0.Matter.FrozenCKMMatrixTransfer`. A passport may compare the matrix; it cannot choose or retune it.
 
 ### 04.22.3 Higgs/Yukawa is decided, not left ambiguous
 
 Positive Higgs/Yukawa promotion has only one admissible form: `D0.Matter.HiggsYukawaCorePromotion`, carrying `D0.Matter.HiggsScalarProjectorCertificate`. A constructive scalar projector closure is mathematically required.
 
-## 04.24 Final selector-origin closures
+## 04.24 Final finite variational selector-origin closures
 
-The selector-origin layer is locked. The active closures and certificates are:
+The finite variational selector-origin layer is locked. The active closures and certificates are:
 
 - **Charged-Lepton Coefficient**:
   - `D0.Matter.ChargedLeptonCoefficientOrigin`
@@ -854,7 +854,7 @@ The selector-origin layer is locked. The active closures and certificates are:
   - `frozen_ckm_exact_matrix_closed`
   - `ckm_no_free_matrix_at_fixed_bases`
   - `D0.Matter.StrictSelectorCertificate`
-  - `D0.Matter.book04_selector_claim_no_free_alternative`
+  - `D0.Matter.book04_finite variational selector_claim_no_free_alternative`
 
 - **Constructive Scalar Projector & SM Action**:
   - `D0.Matter.HiggsScalarProjectorConstructive`
@@ -876,8 +876,8 @@ The three-generation carrier is now sourced by the D0 memory-torus shell geometr
 For mesons, the lower-Hodge `400` seed remains only a support seed. The new flavour-defect route is:
 
 ```text
-torus noncommuting shell selectors
--> torus_geometry_forces_generation_selector_noncommute
+torus noncommuting shell finite variational selectors
+-> torus_geometry_forces_generation_finite variational selector_noncommute
 -> torus_shell_noncommutativity_forces_nonpermutation_overlap_source
 -> F_fl
 -> F_fl^T F_fl positive defect transfer
@@ -914,7 +914,7 @@ P_n^{shell}\,
 \right).
 ```
 
-Here `P_p^shell` and `P_n^shell` are occupied proton and neutron shell projectors, and `W_J^D0` is the angular-momentum contact selector.
+Here `P_p^shell` and `P_n^shell` are occupied proton and neutron shell projectors, and `W_J^D0` is the angular-momentum contact finite variational selector.
 
 In the diagonal shell-occupation approximation the readout is the Shell Contact Index:
 

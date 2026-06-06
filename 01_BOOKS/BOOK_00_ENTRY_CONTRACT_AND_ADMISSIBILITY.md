@@ -42,7 +42,7 @@ D0 uses a compact internal vocabulary, but the active scientific corpus must be 
 \end{aligned}
 ```
 
-The D0 name is never the proof. The proof is the support object, the operator, the response functional, the quotient or coupling, and the falsification condition. A reader may ignore the D0 mnemonic and follow the standard object alone.
+The D0 name is the framework identifier. The proof is the support object, the operator, the response functional, the quotient or coupling, and the falsification condition. A reader may ignore the D0 mnemonic and follow the standard object alone.
 
 ## 00.2 Primitive thesis
 

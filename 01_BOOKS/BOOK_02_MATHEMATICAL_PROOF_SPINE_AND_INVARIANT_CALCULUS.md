@@ -8,7 +8,7 @@ Every proof cell in this book is written in the sequence:
 support object -> finite operator/instrument -> positive response -> quotient/coupling -> invariant -> certificate.
 ```
 
-Internal D0 names such as `archive`, `terminal`, `carrier`, `stiffness`, and `comparison protocol` are not primitives here. They abbreviate traced-out complements, absorbing channels, representation carriers, structural-rigidity/negative-control tests, and external comparison protocols.
+Internal D0 names such as `archive`, `terminal`, `carrier`, `structural uniqueness / negative-control rigidity`, and `comparison protocol` are not primitives here. They abbreviate traced-out complements, absorbing channels, representation carriers, structural-rigidity/negative-control tests, and external comparison protocols.
 
 ## 02.2 Role of this book
 
@@ -79,7 +79,7 @@ The proof cells are:
 | negative control | retuning the operator after comparison is forbidden |
 | bridge boundary | external masses, CKM entries or survey values require a separate passport |
 
-## 02.4 Uniqueness obligations for high-gain formulas
+## 02.4 Uniqueness obligations for high-sensitivity formulas
 
 The source proof spine identifies formulas that are too high-gain to be justified by numerical success alone. They remain active only with explicit uniqueness obligations.
 
@@ -151,7 +151,7 @@ p+p^2=1,
 \delta_0={\sqrt5-2\over2}={1\over2\varphi^3}.
 ```
 
-The role of these identities in Book 02 is operational. They define the finite stop ideal and admissible runtime calculus. A sector formula may use a φ lift, echo, boundary correction or archive leakage only if the use is typed by the finite operator grammar.
+The role of these identities in Book 02 is operational. They define the finite terminal quotient ideal and admissible runtime calculus. A sector formula may use a φ lift, echo, boundary correction or archive leakage only if the use is typed by the finite operator grammar.
 
 ### 02.5.1 The `φ`-ABCD operator-cycle theorem
 
@@ -433,7 +433,7 @@ P_{i\to f}={|S_{fi}|^2\over\sum_j |S_{ji}|^2}.
 
 A scattering formula is admissible only when it names its finite support, vertex class, response and bridge to an external cross-section or detector record.
 
-### 02.10.1 Proof cell: `D0-MATH-001` finite phi-runtime and stop ideal
+### 02.10.1 Proof cell: `D0-MATH-001` finite phi-runtime and terminal quotient ideal
 
 **Claim.**  Runtime is finite in the core D0 calculus; continuum evolution is an external bridge.
 
@@ -457,7 +457,7 @@ with response functional
 
 **Quadratic readout.**  The observable part of the runtime is the positive trace response above; the formal infinite tail is not an observable D0 object.
 
-**Falsification hook.**  If a claimed core scalar requires active discrimination below the stop ideal, or if the finite four-step window cannot reproduce the declared readout type, the claim is demoted before any external comparison.
+**Falsification hook.**  If a claimed core scalar requires active discrimination below the terminal quotient ideal, or if the finite four-step window cannot reproduce the declared readout type, the claim is demoted before any external comparison.
 
 ## 02.11 Matter, baryon, meson and hadron proof blocks
 
@@ -536,7 +536,7 @@ The bulk gate shift is
 
 The proton row is not allowed to contain a naked subtraction.  The number `306` is a finite operator trace in the destructive terminal readout channel.
 
-Let the baryon support operator have the active 2-simplex stiffness gap
+Let the baryon support operator have the active 2-simplex structural uniqueness / negative-control rigidity gap
 
 ```math
 \lambda_{B2}=3960.
@@ -896,7 +896,7 @@ This is the proof cell that prevents the BAO shape from being a hidden ansatz: c
 | `D0-FOUND-003` | CORE-FOUNDATION | Minimal continuum-measurement skeleton | Foundation | Do not claim all mathematical cuts are φ; claim is minimal measured connected division. | A non-φ finite, path-independent, internally normalized detector split. |
 | `D0-SCENE-001` | CORE-SUPPORT | Omega8 detector cycle | Detector Cycle | Do not treat phi alone as physical geometry before Omega8 closure. | Failure of detector-cycle construction or cycle count. |
 | `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | Gate/Action | Do not read J_scene as fitted polynomial for later constants. | Different admissible zero of the same typed obligations or wrong graph invariants. |
-| `D0-MATH-001` | D0-RESOLUTION-EXACT | Finite phi-runtime and stop ideal | Quotient/Resolution | Do not add infinite correction layers below I12. | A physical scalar claim requires distinguishing below I12 inside D0 grammar. |
+| `D0-MATH-001` | D0-RESOLUTION-EXACT | Finite phi-runtime and terminal quotient ideal | Quotient/Resolution | Do not add infinite correction layers below I12. | A physical scalar claim requires distinguishing below I12 inside D0 grammar. |
 | `D0-ACTION-001` | CORE-ACTION | S_gate/J_scene backbone | Gate/Action | Do not close Born, entropy, leptons, or dynamics by unrelated formulas. | Mismatch between books or failure of q_mass/I_B/action spine consistency. |
 | `D0-METRO-001` | CORE-FOUNDATION | Single causal line/tick invariant | Bridge/Dictionary | Do not count c as a second sector anchor. | Reproducible line/tick records require multiple elementary speeds. |
 | `D0-METRO-002` | SINGLE-SECTION-OUTPUT | Lambda_act single action section | Single Section | No proton, W/Z, Planck, G_N, H0, or dark anchor as second scale. | Any closed prediction requiring an independent sector scale. |
@@ -938,25 +938,25 @@ This is the proof cell that prevents the BAO shape from being a hidden ansatz: c
 | `D0-PI0-001` | CORE-FOUNDATION | pi0 finite-cycle versus pi continuum generator | Quotient/Resolution | Do not replace pi by pi0 inside hbar or Planck definitions. | Typed finite-cycle/continuum distinction inconsistent with bridges. |
 | `D0-MESON-001` | CORE-SUPPORT | Meson lower-Hodge support seed | Finite Support | 400 => pion mass or sqrt(3960/400) => hadron ratio is forbidden. | Lower-Hodge calculation fails. |
 
-## 02.18 Integrated rigidity calculus: local stiffness is a proof obligation, not a fit
+## 02.18 Integrated rigidity calculus: local structural uniqueness / negative-control rigidity is a proof obligation, not a fit
 
-The stiffness calculus belongs in the mathematical proof spine because it turns high-gain numerical formulae into uniqueness obligations.
+The structural uniqueness / negative-control rigidity calculus belongs in the mathematical proof spine because it turns high-gain numerical formulae into uniqueness obligations.
 
-For any downstream dimensionless readout \(Y(\varphi)\), define the local stiffness exponent
+For any downstream dimensionless readout \(Y(\varphi)\), define the local structural uniqueness / negative-control rigidity exponent
 
 ```math
 \kappa_Y=\left.\frac{d\log Y}{d\log \varphi}\right|_{\varphi=\varphi_0}.
 ```
 
-A closed D0 formula must declare whether a large \(|\kappa_Y|\) is forced by the detector construction or imported as a fragile numerical coincidence.  The old rigidity audit recorded the following representative stiffnesses under the fixed stress convention:
+A closed D0 formula must declare whether a large \(|\kappa_Y|\) is forced by the detector construction or imported as a fragile numerical coincidence.  The old rigidity audit recorded the following representative structural uniqueness / negative-control rigidityes under the fixed stress convention:
 
-| readout | representative stiffness role |
+| readout | representative structural uniqueness / negative-control rigidity role |
 |---|---:|
 | gravity depth / \(G_N\) | large negative exponent from \(D_L\sim\varphi^{99}\), hence \(G_N\sim\varphi^{-198}\) |
 | electroweak radial readout | high positive radial exponent |
-| charged-lepton ratios | finite generation selector stiffness |
-| survey scalar amplitude | archive/window stiffness |
-| neutron lifetime | terminal weak factor stiffness, including powers of \(\delta_0\) |
+| charged-lepton ratios | finite generation selector structural uniqueness / negative-control rigidity |
+| survey scalar amplitude | archive/window structural uniqueness / negative-control rigidity |
+| neutron lifetime | terminal weak factor structural uniqueness / negative-control rigidity, including powers of \(\delta_0\) |
 
 This is not a phenomenological sensitivity table in the active proof path.  It is a no-deformation certificate: a nearby value of \(\varphi\) destroys the agreement between detector split, algebraic closure and downstream typed sections.
 
@@ -968,7 +968,7 @@ This is not a phenomenological sensitivity table in the active proof path.  It i
 
 This integrated rule strengthens the anti-numerology firewall: sensitivity is admissible only when it is the consequence of a closed invariant section.
 
-## 02.19 High-gain uniqueness and stiffness closure
+## 02.19 High-gain uniqueness and structural uniqueness / negative-control rigidity closure
 
 Any formula containing a large exponent or small residual is release-admissible only if the exponent is selected by an operator support rule and neighbouring alternatives are excluded.
 

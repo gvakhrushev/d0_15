@@ -26,7 +26,7 @@ The book separates three things that were interleaved in earlier gravity drafts:
 
 1. the internal finite-geometric construction;
 2. the SI/metrological Newton shadow;
-3. the archive/cosmology boundary cross-reference.
+3. the traced-out complement/cosmology boundary cross-reference.
 
 Only the first two are normative Book 07 material. Survey-level archive pressure and BAO/S_DE remain Book 08 material.
 
@@ -67,9 +67,9 @@ Book 07 uses this only as metrology. It is forbidden to use the electron termina
 \Lambda_{act}=\frac{h}{\tau_0}=38m_ec^2,
 ```
 
-with action-scale closure assigned to Book 03/04 and length-depth export assigned here.
+with action-scale closure assigned to Book 03/04 and dimensionless spectral scale-separation invariant export assigned here.
 
-Type safety: `D_L` is the dimensionless finite length-depth invariant.  The
+Type safety: `D_L` is the dimensionless finite dimensionless spectral scale-separation invariant invariant.  The
 Planck length `ell_P` and Newton coefficient `G_N` are SI-calibrated
 single-section shadows obtained only after an `ExternalSICalibration` bridge is
 declared through `derive_physical_observables`; they are not
@@ -120,7 +120,7 @@ The formal Lean owner is `D0.Geometry.NonCommutativeSolenoidGravity` (`d0_heat_t
 
 ## 07.7 Length-depth theorem before Newton
 
-The main gravity invariant is the length-depth factor:
+The main gravity invariant is the dimensionless spectral scale-separation invariant factor:
 
 ```math
 D_L=\Omega_8\varphi^{V_9V_{11}}\left(1+\frac{\delta_0}{V_{13}}\right).
@@ -153,10 +153,10 @@ G_N^{D0}=\frac{c^3(\ell_P^{D0})^2}{\hbar}.
 
 `D_L` remains the dimensionless core/certificate invariant in this chain.
 `ell_P` and `G_N` are downstream SI representatives and cannot be used to
-repair the core length-depth value.  This ordering is non-negotiable:
+repair the core dimensionless spectral scale-separation invariant value.  This ordering is non-negotiable:
 
 ```text
-length-depth first; Newton coefficient second.
+dimensionless spectral scale-separation invariant first; Newton coefficient second.
 ```
 
 A script or derivation that starts from measured `G_N` to repair `D_L` violates the book.
@@ -175,7 +175,7 @@ The runtime gravity coefficient is written as
 G_{runtime}=\frac{1}{16\pi\kappa_B\beta_{area}}.
 ```
 
-This is not automatically the SI Newton constant. It is a finite runtime coefficient inside the geometric probe grammar. The SI bridge requires the length-depth and terminal metrology steps above.
+This is not automatically the SI Newton constant. It is a finite runtime coefficient inside the geometric probe grammar. The SI bridge requires the dimensionless spectral scale-separation invariant and terminal metrology steps above.
 
 The corresponding finite boundary entropy form is
 
@@ -203,7 +203,7 @@ The horizon statement is therefore a finite-readout statement before it becomes 
 Y:\mathcal H_R(R)\to\mathcal H_N(R)
 ```
 
-sends inaccessible active boundary information into the archive/null sector. Book 07 uses Book 06 forgetting theory here: loss of active readout is not deletion of total mathematical information. The correct statement is
+sends inaccessible active boundary information into the traced-out complement/null sector. Book 07 uses Book 06 forgetting theory here: loss of active readout is not deletion of total mathematical information. The correct statement is
 
 ```math
 \text{loss of active readout}\neq\text{loss of total information}.
@@ -255,7 +255,7 @@ The forbidden use is
 choose a power of pi0/pi after seeing the target value of G_N.
 ```
 
-This guardrail is essential because several corrected gravity bridges are audit trails. The normative path is length-depth before Newton.
+This guardrail is essential because several corrected gravity bridges are audit trails. The normative path is dimensionless spectral scale-separation invariant before Newton.
 
 ## 07.12 q-mass, residual curvature and matter cross-reference
 
@@ -274,7 +274,7 @@ The interpretation belongs to the matter/EW boundary layer in Book 04 and to the
 The canonical gravity equation must remain typed:
 
 ```math
-\text{closed length-depth}\rightarrow \ell_P^{D0}\rightarrow G_N^{D0},
+\text{closed dimensionless spectral scale-separation invariant}\rightarrow \ell_P^{D0}\rightarrow G_N^{D0},
 ```
 
 not
@@ -339,9 +339,9 @@ A gravity claim fails if it does any of the following:
 2. uses measured `G_N` to choose `D_L`;
 3. uses `pi0` as a Newton repair parameter;
 4. uses `q_res`, `q_mass` or boundary information as hidden scalar fitting;
-5. collapses runtime `G_runtime` into SI `G_N` without length-depth and metrology;
+5. collapses runtime `G_runtime` into SI `G_N` without dimensionless spectral scale-separation invariant and metrology;
 6. imports cosmological survey residuals into the definition of the gravity operator;
-7. treats horizon archive loss as literal deletion rather than loss of active readout.
+7. treats terminal boundary quotient into the traced-out sector loss as literal deletion rather than loss of active readout.
 
 The positive gravity chain is
 
@@ -437,9 +437,9 @@ is the Einstein-Hilbert readout domain, while for \(L\le L_{cut}\) the continuum
 This theorem is a domain split, not an added quantum-gravity coupling.  It prevents a residual ``higher-curvature'' phrase from becoming an open-ended parameter reservoir.
 ## 07.19 Integrated gravity and finite-cut closure cells
 
-### 07.19.1 `D0-GRAV-001`: length-depth theorem and Planck/Newton shadow
+### 07.19.1 `D0-GRAV-001`: dimensionless spectral scale-separation invariant theorem and Planck/Newton shadow
 
-D0 derives a dimensionless length-depth map before any Newton coefficient is named:
+D0 derives a dimensionless dimensionless spectral scale-separation invariant map before any Newton coefficient is named:
 
 ```math
 D_L=\Omega_8\varphi^{V_9V_{11}}\left(1+{\delta_0\over V_{13}}\right).
@@ -471,7 +471,7 @@ G_N^{D0} = 6.670031309826955e-11.
 ```
 
 **Closure.**  The gravity bridge now has its active proof-cell: dimensionless
-length-depth first, typed SI calibration second.  `G_N` and `ell_P` are
+dimensionless spectral scale-separation invariant first, typed SI calibration second.  `G_N` and `ell_P` are
 single-section shadows, not independent anchors or core trace outputs.
 
 Primary certs: `vp_final_terminal_scale_depth_theorem.py`, `vp_gravity_metric_heat_kernel_two_part.py`.
@@ -485,7 +485,7 @@ after the external SI section is declared, and stress-tests nearby denominators
 to show the chosen terminal leakage is not arbitrary.
 
 **Closure.**  The Newton coefficient row is closed as an SI-calibrated
-finite-cycle holonomy shadow of the length-depth theorem.  Comparison to CODATA
+finite-cycle holonomy shadow of the dimensionless spectral scale-separation invariant theorem.  Comparison to CODATA
 is a benchmark, not an input.
 
 Primary certs: `vp_single_section_gravity_completion.py`, `vp_gravity_gn_bridge_demo.py`.
@@ -526,7 +526,7 @@ The gravitational line-depth exponent is not selected by numerical fit.  It is s
 
 \[
 \text{observed line sector}\times\text{comparison line sector}
-\longrightarrow\text{length-depth covariance}.
+\longrightarrow\text{dimensionless spectral scale-separation invariant covariance}.
 \]
 
 The only admissible bidegree using the finite carrier endpoints is
@@ -537,9 +537,9 @@ D_L=V_9V_{11}=99.
 
 A sum `V9+V11`, a full carrier count `33`, or a rank/nullity expression changes the type of the map and therefore fails before numerical comparison.  This is the gravity version of stiffness closure: the large exponent is a finite map-degree, not a tuneable coefficient.
 
-## 07.21 Terminal archive boundary and the A/4 law
+## 07.21 Terminal boundary of traced-out complement and the A/4 law
 
-A D0 horizon is typed as a terminal archive boundary. At finite stage the boundary is tiled by oriented readout quanta. The terminal four-role quotient `ABCD` groups four oriented boundary roles into one independent archive capacity unit. Therefore, for boundary area `A_{D0}` measured in D0/Planck area quanta,
+A D0 horizon is typed as a terminal boundary of traced-out complement. At finite stage the boundary is tiled by oriented readout quanta. The terminal four-role quotient `ABCD` groups four oriented boundary roles into one independent archive capacity unit. Therefore, for boundary area `A_{D0}` measured in D0/Planck area quanta,
 
 ```math
 S_{D0}^{BH}=A_{D0}/4.
@@ -653,8 +653,8 @@ This does not eliminate finite branches.  Branches appear only after a finite
 readout quotient chooses a return modulus.  Thus the same chain has two layers:
 
 ```text
-П†вЃ»ВІ irrational rotation  в†’ non-resonant archive smoothing;
-finite return modulus q  в†’ residue branch geometry.
+П†вЃ»ВІ irrational rotation  → non-resonant archive smoothing;
+finite return modulus q  → residue branch geometry.
 ```
 
 This closes the compatibility between macroscopic smoothness and finite branch
@@ -751,7 +751,7 @@ d rho_n = 2 <C_n, dC_n> = <-2 B_n^T C_n, dL_n>.
 Lean records this as an algebraic trace-square identity rather than relying on
 an analytic derivative API.  The vacuum equation is stationarity of the seam
 action against all admissible finite Laplacian variations; the sourced equation
-is equality of the curvature-gradient pairing with the archive stress-source
+is equality of the curvature-gradient pairing with the traced-out complement stress-source
 pairing.
 
 The row-sum identity for the canonical Laplacian and the lift gives the
@@ -761,7 +761,7 @@ discrete conservation statement
 archiveDivergence(archiveCurvatureGradient_n) = 0.
 ```
 
-Consequently any source satisfying the archive field equation is conserved.
+Consequently any source satisfying the traced-out complement field equation is conserved.
 The certificate `vp_archive_variational_field_equation.py` checks the finite
 quadratic expansion, the gradient/source pairing, the conserved stress
 representative, and negative controls for invalid variations, nonconserved
@@ -775,7 +775,7 @@ The current Lean layer closes the variational-dual algebra for the finite archiv
 G_n = -2 B_n^T C_n
 ```
 
-is already row-conserved by the archive Bianchi identity, but it is not required to be symmetric.  The admissible Laplacian variation object carries the obligations used by the field equation:
+is already row-conserved by the traced-out complement Bianchi identity, but it is not required to be symmetric.  The admissible Laplacian variation object carries the obligations used by the field equation:
 
 ```text
 ОґL = ОґL^T,
@@ -835,11 +835,11 @@ Lean has closed the structural part of this finite equation:
 
 ```text
 poisson_requires_neutral_source:
-  ArchivePoissonEquation П† ПЃ в†’ NeutralSource ПЃ
+  ArchivePoissonEquation П† ПЃ → NeutralSource ПЃ
 
 poisson_solution_unique_mod_constant:
-  ArchivePoissonEquation П†в‚Ѓ ПЃ в†’
-  ArchivePoissonEquation П†в‚‚ ПЃ в†’
+  ArchivePoissonEquation П†в‚Ѓ ПЃ →
+  ArchivePoissonEquation П†в‚‚ ПЃ →
   П†в‚Ѓ - П†в‚‚ is constant
 ```
 
@@ -857,7 +857,7 @@ The non-vacuous scalar reduction is successfully closed under claim ID `D0-ARCHI
 
 ```text
 scalar_stationarity_implies_archive_poisson:
-  ScalarSectorStationary n П† ПЃ в†’ ArchivePoissonEquation П† ПЃ
+  ScalarSectorStationary n П† ПЃ → ArchivePoissonEquation П† ПЃ
 ```
 
 The predicate `ScalarSectorStationary` is a non-vacuous point-test stationarity condition, completing the weak-field reduction proof.
@@ -946,7 +946,7 @@ finite symmetric weak-field mode h
 ```
 
 The Lean owner is `D0.Geometry.FiniteWeakFieldQuotient`.  It replaces the weak
-reading вЂњthere exists a TT-shaped modeвЂќ with an explicit finite reduction object.
+reading "there exists a TT-shaped mode" with an explicit finite reduction object.
 The derived owners are:
 
 ```text
@@ -1117,7 +1117,7 @@ and, equivalently for the finite component bookkeeping,
 10 symmetric rank-2 components - 8 gauge/constraint removals = 2 TT polarizations.
 ```
 
-This removes the previous ambiguity between вЂњTT carrier existsвЂќ and вЂњthe
+This removes the previous ambiguity between "TT carrier exists" and вЂњthe
 Lorentz-facing spin-2 readout has the correct two physical polarizationsвЂќ.  The
 smooth Einstein equation remains a bridge after TT dynamics, tick-gauge closure,
 and spectral A2/EH proxy are all frozen.
@@ -1151,7 +1151,7 @@ The final gravity chain is:
 The finite owner is `D0.Gravity.EntropicArchiveInterface`: graph Laplacian,
 boundary cut capacity, archive flux conservation and nonnegative entropic
 surface tension.  The macro owner is `D0.Gravity.MacroEinsteinInterface`: a
-finite witness packages the archive conservation theorem, the explicit
+finite witness packages the traced-out complement conservation theorem, the explicit
 `PiTT4/WTT4` carrier, `higher_curvature_terms_below_finite_readout_cut` and
 the spectral `a2_is_eh_proxy` theorem.
 
@@ -1228,11 +1228,11 @@ Cross-book:
 - Book 05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
 - Book 08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
 
-## 07.49 Critical-collapse echo lattice and spacetime-crystal horizon
+## 07.49 Critical-collapse discrete self-similar log-time lattice and spacetime-crystal horizon
 
 PRL 2026 (arXiv:2601.14358) constructs closed analytic large-D discretely self-similar solutions of the Einstein–massless-Klein–Gordon critical-collapse system.
 
-D0 reads this as a gravity-side closure of the finite horizon transition: black-hole birth passes through a discrete log-scale echo lattice.
+D0 reads this as a gravity-side closure of the finite horizon transition: black-hole birth passes through a discrete log-scale discrete self-similar log-time lattice.
 
 The self-similar horizon (SSH) is the null boundary where the echo-lattice vector becomes lightlike. In D0 this is the capacity-null boundary of the terminal horizon readout.
 
@@ -1243,7 +1243,7 @@ trace-heat gravity
 → capacity density growth
 → critical echo-lattice phase
 → self-similar null horizon
-→ terminal archive boundary
+→ terminal boundary of traced-out complement
 → black-hole saturation
 ```
 
