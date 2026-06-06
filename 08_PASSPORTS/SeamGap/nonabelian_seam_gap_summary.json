@@ -1,0 +1,5 @@
+{
+  "summary": "Non-abelian gauge transport across finite forgetting seam has positive obstruction energy outside the commuting (abelian) kernel. Finite seam obstruction gap (mu_B > 0) is the admitted theorem. Continuum YM mass-gap is not a D0-core claim.",
+  "status": "FINITE THEOREM (seam obstruction gap)",
+  "tokens": ["PASS_NONABELIAN_SEAM_OBSTRUCTION_GAP", "PASS_ABELIAN_SEAM_KERNEL_CONTROL", "PASS_SEAM_GAP_NEGATIVE_CONTROLS"]
+}

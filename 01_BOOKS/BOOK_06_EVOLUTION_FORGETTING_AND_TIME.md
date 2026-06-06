@@ -16,6 +16,8 @@ The central rule is:
 }
 ```
 
+Tick quotient and subsystem splits (A|A^c) induce retained asymmetry bias between S3 sectors (scaffold).
+
 Equivalently,
 
 ```math

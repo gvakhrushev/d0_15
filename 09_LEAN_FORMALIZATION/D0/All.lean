@@ -227,6 +227,10 @@ import D0.Matter.BaryonS3Symmetrizer
 import D0.Matter.BaryonMultipletBoundary
 import D0.Matter.PhasonStrainGenerations
 import D0.Matter.MesonDefectTransferAlgebra
+import D0.Matter.TickS3BaryonAsymmetry
+import D0.Topology.FiniteMinCutEntropy
+import D0.Gravity.FiniteHolographicEntropy
+import D0.Gauge.NonAbelianSeamObstructionGap
 import D0.Matter.MesonDefectTransferOrigin
 import D0.Matter.MesonPhasonDomainWalls
 import D0.Matter.NuclearShellContactSRC

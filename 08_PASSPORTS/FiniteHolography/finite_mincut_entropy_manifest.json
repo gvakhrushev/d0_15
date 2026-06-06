@@ -1,0 +1,16 @@
+{
+  "passport_id": "D0-GRAV-FINITE-MINCUT-001",
+  "title": "Finite Min-Cut Holographic Entanglement Entropy (A/4 normalized boundary capacity)",
+  "inputs": ["FiniteNetwork", "cutCapacity", "minCutValue", "FiniteHorizonCapacity", "TerminalAlphabetABCD"],
+  "theorems": [
+    "D0-TOPO-FINITE-MINCUT-001 — finite cut capacity nonnegative",
+    "D0-TOPO-FINITE-MINCUT-002 — finite min-cut exists",
+    "D0-GRAV-FINITE-HOLOGRAPHIC-001 — finite entanglement entropy is terminal-normalized min-cut / 4",
+    "D0-GRAV-FINITE-HOLOGRAPHIC-002 — A/4 denominator is terminal ABCD capacity",
+    "D0-GRAV-FINITE-HOLOGRAPHIC-NOGO-001 — volume entropy not equal to boundary cut capacity"
+  ],
+  "cert": "05_CERTS/vp_finite_mincut_holographic_entropy.py",
+  "status": "PASS_FINITE_MINCUT_ENTANGLEMENT_A4",
+  "book_update": "Book 07: finite min-cut entropy added as boundary-capacity witness extension of holographic area.",
+  "negative_controls": ["A/2 fails", "A/8 fails", "volume entropy != boundary min-cut"]
+}

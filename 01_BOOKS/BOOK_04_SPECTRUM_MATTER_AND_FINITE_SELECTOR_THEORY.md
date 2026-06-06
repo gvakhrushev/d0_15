@@ -50,6 +50,8 @@ The active matter claims use the following proof owners.
 | phason-strain generations | `D0.Matter.PhasonStrainGenerations`; `phason_strain_forces_three_generations` |
 | gap-labeled phason domain-wall operator on 1-simplicess | `D0.Matter.MesonPhasonDomainWalls`; `meson_domain_wall_is_gap_labeled_phason_defect` |
 | non-abelian holonomy of finite generation-basis transport | `D0.Matter.CKMPhasonHolonomy`; `ckm_matrix_is_phason_holonomy_on_torus_core13` |
+| non-abelian seam obstruction gap (finite) | `D0.Gauge.NonAbelianSeamObstructionGap` |
+| tick/S3 baryon asymmetry scaffold | `D0.Matter.TickS3BaryonAsymmetry` |
 | window-sector fractional charge | `D0.Matter.WindowFractionalCharge`; `window_fractional_charge_is_boundary_readout` |
 | window-offset chirality | `D0.Matter.WindowOffsetChirality`; `window_offset_forces_chiral_orientation` |
 | neutrino phason waves | `D0.Matter.NeutrinoPhasonWaves`; `neutrino_is_neutral_bulk_phason_wave` |

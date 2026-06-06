@@ -1138,6 +1138,8 @@ The final gravity chain is:
 07.1 Archive variation and finite stress
 07.2 Graph Laplacian and heat trace
 07.3 Boundary capacity as finite holographic area
+
+Finite min-cut entropy (terminal-normalized cut capacity / 4) extends the boundary-capacity witness for holographic entanglement.
 07.4 Entropic surface tension
 07.5 Conservation of archive flux
 07.6 Symmetric stress representative

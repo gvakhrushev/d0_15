@@ -1,0 +1,5 @@
+{
+  "summary": "Finite entanglement capacity equals terminal-normalized min-cut capacity (S_EE = min_C / 4). A/4 from ABCD terminal boundary cell. Volume entropy distinct from boundary cut (negative control). Finite min-cut is the D0 core object.",
+  "status": "CLOSED (finite min-cut / A/4 boundary capacity)",
+  "tokens": ["PASS_FINITE_MINCUT_ENTANGLEMENT_A4", "PASS_MAXFLOW_MINCUT_WITNESS", "PASS_A4_NEGATIVE_CONTROLS"]
+}
