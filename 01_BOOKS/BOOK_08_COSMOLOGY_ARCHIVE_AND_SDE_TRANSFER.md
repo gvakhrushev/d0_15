@@ -296,17 +296,22 @@ The finite-window transfer is fixed by the spectral shape before external compar
 G_{log}(z;z_0,\sigma)=\exp\left[-{1\over2}\left({\log(1+z)-\log(1+z_0)\over\sigma}\right)^2\right].
 ```
 
-DESI/BAO S_DE runner status:
-  PASS_DESI_BAO_SDE_PIPELINE_DEMO
+DESI/BAO S_DE real-data run:
+  FAIL_DESI_BAO_SDE_REAL_DATA
 
-Physical external-data status:
-  SKIP_DESI_BAO_OFFICIAL_DATA_REQUIRED
+Data:
+  DESI DR2 BAO compressed data from pinned source
+  source_priority = COBAYA_BAO_DATA
+  sample_data = false
 
-The runner validates the frozen-root, no-refit, baseline/metric pipeline on a
-pinned sample table. A physical PASS/FAIL requires official DESI DR2 compressed
-BAO data and covariance.
+Failure diagnostics:
+  PASS_DESI_BAO_SDE_FAILURE_DIAGNOSTICS
+  dominant failure modes:
+    HIGH_Z_FAILURE
+    AMPLITUDE_TOO_LOW
+    MID_Z_FAILURE
 
-The frozen S_DE roots (λ_c ≈ 1.420943, λ_r ≈ 1.579057) and transfer were evaluated against pinned DESI-like BAO measurements (demo). No refit of roots, windows, H0, Ωm or rd was performed. This constrains the allowed cosmological transfer operator.
+The frozen S_DE roots (λ_c ≈ 1.420943, λ_r ≈ 1.579057) and transfer were evaluated against pinned DESI DR2 BAO measurements. No refit of roots, windows, H0, Ωm or rd was performed. This constrains the allowed cosmological transfer operator.
 
 The transfer is
 
@@ -376,7 +381,7 @@ Here `359` is the finite line/carrier numerator already used in the topological 
 160=2\,\Omega_8\,\gamma=2\cdot8\cdot10
 ```
 
-is the two-sided signed-octet window count with `Оі=10` the reduced terminal echo depth.  Hence
+is the two-sided signed-octet window count with `γ=10` the reduced terminal echo depth.  Hence
 
 ```math
 \lambda_{c,r}={3\over2}\mp {\sqrt{10}\over40},
@@ -394,7 +399,7 @@ This cell is the analytic source of the pair used in the BAO/S_DE comparison pro
 
 ### 08.12.3 S_DE as gap-labeled phason-flip spectrum
 
-The polynomial $160\lambda^2 - 480\lambda + 359$ (or 160λВІ в€’ 480λ + 359) is the finite transfer polynomial of archive phason flips. Its roots are relaxation modes. The corresponding spectral gaps must carry D0 hull/K0 labels.
+The polynomial $160\lambda^2 - 480\lambda + 359$ (or 160λ² − 480λ + 359) is the finite transfer polynomial of archive phason flips. Its roots are relaxation modes. The corresponding spectral gaps must carry D0 hull/K0 labels.
 
 The formal Lean owner is `D0.Cosmology.PhasonFlipEntropy` (`sde_relaxation_modes_have_gap_labels`, `archive_pressure_spectrum_is_gap_labeled`), and the verification certificate is `05_CERTS/vp_phason_flip_entropy_sde.py` (`PASS_PHASON_FLIP_ENTROPY_SDE_GAP_LABELS`).
 

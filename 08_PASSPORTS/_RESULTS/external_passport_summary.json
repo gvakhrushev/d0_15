@@ -14,7 +14,7 @@
     "SKIP": [
       "IceCube HESE phason decoherence",
       "CMB phason flip entropy",
-      "BAO S_DE phason flip",
+      "BAO S_DE phason flip (FAIL + diagnostics)",
       "CKM holonomy external convention",
       "Meson domain-wall PDG"
     ],
@@ -134,7 +134,7 @@
       "stderr": ""
     },
     {
-      "Passport": "BAO S_DE phason flip",
+      "Passport": "BAO S_DE phason flip (FAIL + diagnostics)",
       "Dataset": "desi_bao_sde_phason_flip",
       "Manifest": "08_PASSPORTS/DESI/desi_dr2_manifest.json",
       "Hash": "52756a8144355414fbfd3ab17a8e66477a57a804deed52a6fcfdc902a9cd8246",

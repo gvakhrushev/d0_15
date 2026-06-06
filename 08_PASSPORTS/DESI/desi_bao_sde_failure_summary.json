@@ -1,0 +1,64 @@
+{
+  "result": "FAIL_DESI_BAO_SDE_REAL_DATA",
+  "diagnostic_result": "PASS_DESI_BAO_SDE_FAILURE_DIAGNOSTICS",
+  "source_priority": "COBAYA_BAO_DATA",
+  "sample_data": false,
+  "no_refit": true,
+  "frozen_roots": {
+    "lambda_c": 1.4209430584957905,
+    "lambda_r": 1.5790569415042095
+  },
+  "dominant_failure_modes": [
+    "LOW_Z_FAILURE",
+    "MID_Z_FAILURE",
+    "AMPLITUDE_TOO_LOW"
+  ],
+  "largest_pull_rows": [
+    {
+      "tracer": "ELG",
+      "z_eff": 1.1,
+      "pull_d0": -26.23,
+      "failure_direction": "AMPLITUDE_TOO_LOW"
+    },
+    {
+      "tracer": "LRG",
+      "z_eff": 0.7,
+      "pull_d0": -17.97,
+      "failure_direction": "MID_Z_FAILURE"
+    },
+    {
+      "tracer": "BGS",
+      "z_eff": 0.3,
+      "pull_d0": -7.72,
+      "failure_direction": "LOW_Z_FAILURE"
+    }
+  ],
+  "by_observable": {
+    "dm_rd": {
+      "chi2_d0": 1070.53,
+      "chi2_baseline": 10032524.12,
+      "delta_chi2": -10031453.59,
+      "rmse_d0": 0.188889,
+      "rmse_baseline": 18.287085
+    }
+  },
+  "by_redshift": {
+    "low_z": {
+      "chi2_d0": 59.6,
+      "chi2_baseline": 603962.12,
+      "delta_chi2": -603902.52,
+      "rmse_d0": 0.077228,
+      "rmse_baseline": 7.7715
+    },
+    "mid_z": {
+      "chi2_d0": 1010.93,
+      "chi2_baseline": 9428562.0,
+      "delta_chi2": -9427551.07,
+      "rmse_d0": 0.224803,
+      "rmse_baseline": 21.712395
+    },
+    "high_z": {}
+  },
+  "shape_diagnostic": "AMPLITUDE_ONLY",
+  "recommendation": "Frozen finite-window S_DE transfer fails BAO shape; next admissible operator must diagnose transfer geometry without refitting roots or window centers."
+}

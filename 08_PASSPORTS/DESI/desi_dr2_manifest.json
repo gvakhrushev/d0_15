@@ -23,8 +23,9 @@
   "status": "READY",
   "official_data_status": "READY",
   "compressed_bao_vector_status": "READY",
-  "covariance_status": "PARTIAL",
+  "covariance_status": "READY",
   "source_priority": "COBAYA_BAO_DATA",
   "sample_data": false,
+  "no_refit": true,
   "note": "Official download task. Data not auto-fetched (use the URLs in source). Place official DESI DR2 BAO compressed measurements + full covariance here, update sha256, set sample_data=False, compressed_bao_vector_status=READY, covariance_status=READY. Then run cert with --mode desi_dr2_official."
 }

@@ -733,3 +733,10 @@ Black-hole horizon cannot be read as deletion of information. The terminal archi
 quotient makes active readout inaccessible while preserving total finite dimension/trace.
 Certificate: `05_CERTS/vp_black_hole_capacity_a4_witness.py`. Lean: `D0.Gravity.BlackHoleA4EntropyWitness`.
 
+D0-COSMO-SDE-NOGO-001 -- BAO root/window refit forbidden after DESI failure.
+The DESI/BAO real-data run failed for the frozen S_DE transfer.
+The internal roots lambda_c and lambda_r remain fixed.
+Post-hoc refitting of roots, window centers, window widths, H0, Omega_m or r_d
+is forbidden as a core repair.
+Certificate: `05_CERTS/vp_desi_bao_sde_failure_diagnostics.py`.
+
