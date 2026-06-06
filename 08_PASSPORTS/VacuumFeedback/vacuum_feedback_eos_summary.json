@@ -1,0 +1,15 @@
+{
+  "summary": "Closed vacuum as finite feedback cavity: Z = Tr e^{-βΔ} det(I-zR)^{-1}; P = β^{-1} ∂_V log Z; P V = T χ with χ = V ∂_V log Z; matter = terminally stabilized feedback eigenmodes; S_DE roots as Tr/det of 2-mode feedback pressure sector; DESI fail requires boundary ∂_V R correction, not root refit.",
+  "status": "PASS_VACUUM_FEEDBACK_EOS",
+  "tokens": [
+    "PASS_INTERNAL_FEEDBACK_RESOLVENT",
+    "PASS_FEEDBACK_PRESSURE_TRACE_LOG",
+    "PASS_FINITE_PVT_EQUATION_OF_STATE",
+    "PASS_SDE_AS_TWO_MODE_FEEDBACK_PRESSURE_SECTOR",
+    "PASS_DESI_FAILURE_IMPLIES_BOUNDARY_FEEDBACK_CORRECTION",
+    "FAIL_EXTERNAL_MIRROR_VACUUM_MODEL",
+    "FAIL_PHOTON_ACCELERATION_INTERPRETATION",
+    "FAIL_IDEAL_GAS_POSTULATE_AS_CORE",
+    "FAIL_DESI_ROOT_REFIT_REPAIR"
+  ]
+}

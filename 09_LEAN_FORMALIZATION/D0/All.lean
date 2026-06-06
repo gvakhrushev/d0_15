@@ -207,6 +207,8 @@ import D0.Cosmology.ConcreteEntropyArchiveFlow
 import D0.Cosmology.EntropyJacobianSign
 import D0.Cosmology.FloorMassProjection
 import D0.Cosmology.ResearchPassCorollaries
+import D0.Cosmology.VacuumFeedbackEquationOfState
+import D0.Dynamics.InternalFeedbackResolvent
 import D0.Geometry.ArchiveTickGaugeFixing
 import D0.Probability.EntropyFlowJacobian
 import D0.Probability.ArchiveFloorWaterFilling

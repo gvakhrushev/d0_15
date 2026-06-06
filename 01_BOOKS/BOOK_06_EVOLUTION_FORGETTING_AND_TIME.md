@@ -16,6 +16,8 @@ The central rule is:
 }
 ```
 
+Time arrow = entropy growth from repeated unresolved internal feedback return through traced-out complement (closed vacuum feedback recurrence).
+
 Tick quotient and subsystem splits (A|A^c) induce retained asymmetry bias between S3 sectors (scaffold).
 
 Equivalently,

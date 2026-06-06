@@ -31,6 +31,8 @@ The book separates three things that were interleaved in earlier gravity drafts:
 The finite TT gravity carrier is a symmetric projected sector built from finite
 edge/line probes and is compatible with the finite Hodge complex.
 
+Horizon capacity saturation and black-hole A/4 are pressure-capacity balance regimes of the same closed vacuum feedback equation of state (P_fb vs P_cap).
+
 
 Only the first two are normative Book 07 material. Survey-level archive pressure and BAO/S_DE remain Book 08 material.
 
