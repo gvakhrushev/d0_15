@@ -45,6 +45,8 @@ RELEASE_MANIFEST_*.txt
 
 # Generated graphify outputs.
 graphify-out/
+tools/graphify/worked/
+tools/graphify/**/__pycache__/
 
 # External empirical passport cache. Manifests/results stay in source; downloaded
 # open-data payloads can be large and are reproduced from pinned manifests.

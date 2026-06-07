@@ -1,5 +1,28 @@
 # BOOK 03 — Finite action operators and finite incidence/clique complex dynamics
 
+## 03.v15 Active action/variation layer
+
+Book 03 supplies the finite action and variation language for the feedback operator. It does not make empirical claims.
+
+```text
+S_fb = -log det(I - z F_N)
+```
+
+For an admissible finite variation `delta F_N`:
+
+```text
+delta S_fb
+= Tr[(I - z F_N)^(-1) z delta F_N]
+```
+
+The universal feedback source is:
+
+```text
+Pi_fb = z(I - z F_N)^(-1)
+```
+
+Book 03 supplies the response source used by matter, gravity and cosmology sector reductions. Physical meaning is assigned only after sector projection and bridge/passport boundary.
+
 ## 03.1 Standard reading of action and finite incidence/clique complex terminology
 
 The D0 `finite incidence/clique complex` is a finite incidence/clique complex with cochains and boundary/coboundary operators. The D0 `finite variational operator stack` is a finite variational functional on this complex. A `tick` is a discrete evolution endomorphism, and a `single dimensional calibration section` is a single scale-section fixing dimensionalization without introducing a second mass anchor.
@@ -43,6 +66,14 @@ The admissibility condition is:
 ```
 
 A sector formula that requires a new GeV, metre, second, Planck, nucleon, collider, or dark-sector anchor is not an action theorem.
+
+The closed feedback action component is `S_fb = -log det(I - z F_N)`, where `F_N=P_N U_N^dagger Q_N U_N P_N` is feedback-return, not positive response. The source is
+
+```math
+\Pi_{fb}=z(I-zF_N)^{-1},\qquad dS_{fb}=\operatorname{Tr}(\Pi_{fb}\,dF_N).
+```
+
+The log/Neumann expansion is allowed only under `|z|\rho(F_N)<1`; the resolvent itself only requires `z^{-1}` outside the spectrum. Its variation is represented by the finite feedback source owner `D0.Cosmology.FeedbackPartitionFunction`; pressure and finite PVT are owned by `D0.Cosmology.FiniteFeedbackEquationOfState`. The ideal-gas postulate is a no-go core shortcut, not the D0 pressure law.
 
 ## 03.4 Scene/finite variational test functional backbone
 

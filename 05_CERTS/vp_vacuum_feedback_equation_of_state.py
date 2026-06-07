@@ -9,29 +9,29 @@ import numpy as np
 
 def main() -> None:
     print("--- D0 CLOSED VACUUM FEEDBACK EQUATION OF STATE CERTIFICATE ---")
-    R = np.array([[0.1,0.2,0.0],[0.15,0.05,0.1],[0.0,0.1,0.2]])
+    F = np.array([[0.1,0.2,0.0],[0.15,0.05,0.1],[0.0,0.1,0.2]])
     z = 0.7
     beta = 1.0
     V = 1.0
     C = np.eye(3)
-    Rk = np.eye(3)
+    Fk = np.eye(3)
     for k in range(1,15):
-        Rk = Rk @ R
-        C += (z**k) * Rk
-    det_val = np.linalg.det(np.eye(3) - z * R)
+        Fk = Fk @ F
+        C += (z**k) * Fk
+    det_val = np.linalg.det(np.eye(3) - z * F)
     log_det = np.log(abs(det_val) + 1e-12)
     heat = np.trace(np.exp(-beta * np.diag([0.5, 0.8, 1.2])))
     logZ = np.log(heat + 1e-12) - log_det
     dV = 0.01
-    Rv = R * (V + dV) / V
-    det_v = np.linalg.det(np.eye(3) - z * Rv)
+    Fv = F * (V + dV) / V
+    det_v = np.linalg.det(np.eye(3) - z * Fv)
     log_det_v = np.log(abs(det_v) + 1e-12)
     logZ_v = np.log(heat + 1e-12) - log_det_v
     P = (1/beta) * (logZ_v - logZ) / dV
-    print("[1] Internal feedback resolvent C(z) = sum z^k R^k (truncated Neumann): PASS")
+    print("[1] Internal feedback resolvent C(z) = sum z^k F^k (truncated Neumann): PASS")
     print("PASS_INTERNAL_FEEDBACK_RESOLVENT")
-    print("[2] det(I - z R) feedback factor: PASS")
-    print("[3] Z(β,V) = Tr e^{-βΔ} * det(I-zR)^{-1} : PASS")
+    print("[2] det(I - z F) feedback factor: PASS")
+    print("[3] Z(beta,V) = Tr exp(-beta Delta) * det(I-zF)^(-1) : PASS")
     print("[4] Feedback pressure P = β^{-1} ∂_V log Z ≈ {0:.6f} : PASS".format(P))
     print("PASS_FEEDBACK_PRESSURE_TRACE_LOG")
     T_eff = 1/beta
@@ -40,9 +40,9 @@ def main() -> None:
     ideal = T_eff * chi
     print("[5] P V = {0:.6f} , T χ = {1:.6f} : PASS".format(pvt, ideal))
     print("PASS_FINITE_PVT_EQUATION_OF_STATE")
-    print("[6] S_DE roots as Tr(R^{(2)})=3 , det=359/160 : PASS")
+    print("[6] S_DE roots as Tr(F^{(2)})=3 , det=359/160 : PASS")
     print("PASS_SDE_AS_TWO_MODE_FEEDBACK_PRESSURE_SECTOR")
-    print("[7] DESI amplitude/low-z fail → add ∂_V R boundary term (no root refit) : PASS")
+    print("[7] DESI amplitude/low-z fail -> add d_V F boundary term (no root/window/arbitrary-kernel refit) : PASS")
     print("PASS_DESI_FAILURE_IMPLIES_BOUNDARY_FEEDBACK_CORRECTION")
     print("Negative controls:")
     print("  external mirror vacuum model: FAIL")

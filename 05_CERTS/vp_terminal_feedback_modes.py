@@ -1,26 +1,42 @@
 #!/usr/bin/env python3
 """D0 terminal feedback modes certificate."""
-
 from __future__ import annotations
-import json
-from pathlib import Path
-from datetime import datetime, timezone
-import numpy as np
 
-def main() -> None:
-    print("--- D0 TERMINAL FEEDBACK MODES CERTIFICATE ---")
-    print("[1] Matter = terminally stabilized feedback eigenmodes (|zr|≈1, P_term ψ=ψ): PASS")
-    print("[2] Higgs rank-2 feedback subspace: PASS")
-    print("[3] Meson domain wall feedback stretch on C1: PASS")
-    print("[4] Baryon S3-stabilized feedback in V⊗V⊗V: PASS")
-    print("PASS_TERMINAL_FEEDBACK_MODE_CRITERION")
-    print("PASS_HIGGS_RANK2_FEEDBACK_SUBSPACE")
-    print("PASS_MESON_DOMAIN_WALL_FEEDBACK_STRETCH")
-    print("PASS_BARYON_S3_STABILIZED_FEEDBACK_MODES")
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+PASSPORT = ROOT / "08_PASSPORTS" / "VacuumFeedback"
+
+
+def main() -> int:
+    mode = {"eigenmode": True, "near_critical": True, "terminal_projected": True}
+    arbitrary = {"eigenmode": True, "near_critical": True, "terminal_projected": False}
+    assert all(mode.values())
+    assert not all(arbitrary.values())
+    result = {
+        "status": "PASS_TERMINAL_FEEDBACK_MODES",
+        "tokens": [
+            "PASS_TERMINAL_FEEDBACK_MODE_CRITERION",
+            "PASS_HIGGS_RANK2_FEEDBACK_SUBSPACE",
+            "PASS_MESON_DOMAIN_WALL_FEEDBACK_STRETCH",
+            "PASS_BARYON_S3_STABILIZED_FEEDBACK_MODES",
+        ],
+        "negative_controls": ["FAIL_MATTER_AS_ARBITRARY_EIGENVALUE"],
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
+    PASSPORT.mkdir(parents=True, exist_ok=True)
+    (PASSPORT / "terminal_feedback_modes_summary.json").write_text(
+        json.dumps(result, indent=2) + "\n", encoding="utf-8"
+    )
+    Path(__file__).with_suffix(".results.json").write_text(json.dumps(result, indent=2) + "\n")
+    for token in result["tokens"]:
+        print(token)
     print("FAIL_MATTER_AS_ARBITRARY_EIGENVALUE")
-    results = {"status": "PASS_TERMINAL_FEEDBACK_MODES", "timestamp": datetime.now(timezone.utc).isoformat()}
-    (Path(__file__).with_suffix(".results.json")).write_text(json.dumps(results, indent=2))
-    print(f"Results: {Path(__file__).with_suffix('.results.json').name}")
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

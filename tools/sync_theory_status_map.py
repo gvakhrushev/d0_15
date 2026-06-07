@@ -13,6 +13,18 @@ ASSUMPTION_LEDGER = ROOT / "09_LEAN_FORMALIZATION" / "docs" / "LEAN_ASSUMPTION_L
 THEORY_DIR = ROOT / "03_THEORY_MAP"
 LEAN_INDEX = ROOT / "09_LEAN_FORMALIZATION" / "docs" / "LEAN_CORE_THEOREM_INDEX.md"
 SEMANTIC_INDEX = THEORY_DIR / "theory_semantic_index.md"
+FRONTIER_RELEASE_STATUSES = {
+    "FRONTIER",
+    "PROOF-TARGET",
+    "CERT-CANDIDATE",
+    "OPERATOR-SCAFFOLD-COMPLETE",
+    "OPERATOR-SCAFFOLD-CERTIFIED",
+    "SPIN-FLAVOUR-TRANSFER-CERTIFIED",
+    "EMPIRICAL-PASSPORT-CANDIDATE",
+    "LOWER-BOUND-TARGET",
+    "THEOREM-TARGET-SHARPENED",
+    "PROOF-OBLIGATION-EXPOSED",
+}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -48,7 +60,10 @@ def text_tokens(text: str) -> set[str]:
 def claim_domain(row: dict[str, str]) -> str:
     text = claim_text(row)
     tokens = text_tokens(text)
+    release = row["release_status"]
 
+    if release in FRONTIER_RELEASE_STATUSES:
+        return "frontier"
     if row["release_status"] == "EXTERNAL-BACKGROUND" or "external background" in text:
         return "external_background"
     if "interpretation spine" in text or "interpretation package" in text:
@@ -81,6 +96,8 @@ def claim_domain(row: dict[str, str]) -> str:
 def claim_type(row: dict[str, str]) -> str:
     release = row["release_status"]
     lean = row["lean_status"]
+    if release in FRONTIER_RELEASE_STATUSES:
+        return "frontier"
     if release == "DEPRECATED" or lean == "DEPRECATED":
         return "deprecated"
     if release.startswith("NO-GO") or release == "NO_GO_PROVED":
@@ -115,6 +132,8 @@ def scope_guard(row: dict[str, str]) -> str:
         return "Certificate-bounded row; valid only for declared finite inputs and negative controls."
     if ctype == "bridge":
         return "Conditional bridge row; not a D0-core closure without listed assumptions."
+    if ctype == "frontier":
+        return "Frontier/proof-target row; not a core closure, certificate pass or empirical passport."
     if domain == "rg":
         return "Formal/finite RG proxy only; smooth or physical RG meaning requires explicit bridge assumptions."
     if domain == "si_calibration":
@@ -311,6 +330,7 @@ def write_dot(claims: list[dict[str, str]]) -> None:
         "no-go": "#9f3f3f",
         "external": "#6f6f6f",
         "deprecated": "#9f7a2f",
+        "frontier": "#8a6d1f",
     }
     lines = ["digraph D0Theory {", "  rankdir=LR;", "  node [shape=box, style=filled, fontname=Arial];"]
     for row in claims:

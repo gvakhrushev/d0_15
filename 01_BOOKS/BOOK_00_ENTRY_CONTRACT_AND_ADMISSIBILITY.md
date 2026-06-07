@@ -1,5 +1,41 @@
 ﻿# BOOK 00 — Entry Contract and Admissibility Discipline
 
+## 00.v15 Active entry contract
+
+D0 v15 is a finite-observability framework over condensed/profinite quasicrystalline support. The primitive object is the finite/profinite support with admissible projections and finite tick maps. The closed-vacuum feedback operator
+
+```text
+F_N = P_N U_N^dagger Q_N U_N P_N
+```
+
+is not the primitive support. It is the central derived dynamical operator of v15.
+
+The reader may ignore D0 mnemonics and follow:
+
+```text
+support -> projection -> finite operator -> response law -> sector reduction -> bridge/passport.
+```
+
+Every major physical phrase in the corpus must follow:
+
+```text
+standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary
+```
+
+Forbidden:
+
+```text
+D0 slogan -> metaphor -> status row
+```
+
+Book 00 fixes the public contract: finite support is prior to dynamics; the retained/traced split produces `P_N` and `Q_N`; `R_N = D_N^dagger D_N` is positive readout/Born response; `F_N = P_N U_N^dagger Q_N U_N P_N` is feedback return / unitarity defect; `U_eff = P_N U_N P_N` is compressed nonunitary pole dynamics; `mathsf P_fb = beta^(-1) partial_V log Z_N` is feedback pressure; external comparison is a bridge/passport layer.
+
+The v15 master synthesis is `03_THEORY_MAP/D0_v15_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_v15_PUBLICATION_OUTLINE.md`.
+
+## 00.4a D0 vacuum as condensed φ-quasicrystalline tiling hull
+
+v15 keeps the condensed phi-vacuum support as a finite/profinite quasicrystalline hull; the active dynamics are derived later through `F_N`, not inserted as primitive smooth space.
+
 **Status:** `SCIENTIFIC-FRONT-MATTER / PROCESS-ARCHITECTURE`.
 
 **Current constructive closure entry guide.**  The active archive now has a
@@ -52,7 +88,17 @@ Its primitive object is not a smooth continuum, not a particle field and not a s
 Its primitive object is finite detector readout over a condensed/profinite support (the physical model is the condensed φ-quasicrystalline tiling hull).
 
 The integer time automorphism T generates the П†/Galois split, Lucas trace layers, Lefschetz scene counts and trace-heat gravity.  
-Observable sectors are represented by standard finite objects over this support: positive measurement outcomes, defect classes, holonomies, domain-wall operators, K0 gap labels and boundary-capacity saturation.
+Observable sectors are represented by standard finite objects over this support: positive measurement outcomes, defect classes, holonomies, domain-wall operators, K0 gap labels and boundary-capacity saturation.  When a finite sector is split into retained and traced-out parts, the downstream closed-vacuum feedback layer may form the derived return-defect operator
+
+```math
+F_N=P_NU_N^\dagger Q_NU_NP_N,\qquad Q_N=I-P_N.
+```
+
+This feedback object is not primitive support and is not the Born/readout response.
+
+Closed-vacuum feedback owner: `D0.Dynamics.InternalFeedbackResolvent`. The no-external-boundary rule is `external_mirror_model_forbidden`: because the support has no outside, every attempted escape from the retained sector can only reappear as internal boundary response.
+
+RG, spectral-action, cosmology and gauge-facing physical language is assembled only in `D0.Bridge.InterpretationSpine.InterpretationPackage`; it may not be inserted directly into a core theorem row.
 
 ## 00.3 Admissible measurement skeleton
 

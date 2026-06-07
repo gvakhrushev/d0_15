@@ -1,5 +1,42 @@
 ﻿# BOOK 07 — Gravity limit and finite geometry
 
+## 07.v15 Active gravity/QG sector law
+
+Book 07 synthesizes finite spectral geometry, heat trace, feedback pressure, boundary capacity, rank localization and UV tail cut.
+
+```text
+mathsf P_fb = beta^(-1) partial_V log Z_N
+mathsf P_cap = partial_V E_boundary
+```
+
+Regimes:
+
+```text
+P_fb > P_cap -> expansion/acceleration
+P_fb = P_cap -> stationary horizon/boundary
+P_fb < P_cap -> contraction/capacity saturation
+```
+
+UV/QG regime:
+
+```text
+|T_M(z(L),F_N(L))| >= delta0^12
+```
+
+means smooth gravity language stops and finite D0 algebra is used. This is the D0 quantum-gravity regime.
+
+The active sync skeleton is: 07.1 Archive variation and finite stress; 07.2 Graph Laplacian and heat trace; 07.3 Boundary capacity as finite holographic area; 07.4 Entropic surface tension; 07.5 Conservation of archive flux; 07.6 Symmetric stress representative; 07.7 Terminal 4-role Lorentz/tick carrier; 07.8 Explicit TT projector Pi_TT; 07.9 Finite wave operator W_TT; 07.10 Gauge/trace ghost annihilation; 07.11 TT stress coupling; 07.12 Higher-curvature finite cut; 07.13 Spectral A2 / Einstein-Hilbert bridge; 07.14 Macro Einstein interface theorem.
+
+Finite spin-2 owner:
+
+```text
+D0.Geometry.finite_spin2_tt_carrier_closed
+```
+
+### v15 sync anchor: 07.48 LIGO BBH mass-defect passport
+
+This passport remains an observable-transfer boundary. Gravity sync anchors: finite information-quasicrystal; `phi_phase_is_nonperiodic`; `finite_return_modulus_unfolds_branches`; `D0.Geometry.FiniteSpin2WaveOperator`; `PiTT4(h)`; `WTT4`; `07.36 Tick-gauge compatibility of the gravity bridge`; finite weak-field quotient -> TT spin-2 representative; finite tick/Lorentz closure -> one cone invariant and signature (1,3). The D0 memory torus is a separate internal shell geometry and does not replace the terminal four-role TT projector. Active contraction and archive expansion are eigen-branches of one toral automorphism; determinant invariant gives exact phase-volume balance.
+
 ## 07.1 Standard reading of finite gravity language
 
 D0 gravitational language is read as finite spectral geometry. `Line covariance` means covariance of a finite line/edge transport structure. `Length-depth` is a spectral-depth/scale-separation invariant. `Archive boundary` means a boundary of the traced-out complement in the finite geometric response system.
@@ -31,8 +68,27 @@ The book separates three things that were interleaved in earlier gravity drafts:
 The finite TT gravity carrier is a symmetric projected sector built from finite
 edge/line probes and is compatible with the finite Hodge complex.
 
-Horizon capacity saturation and black-hole A/4 are pressure-capacity balance regimes of the same closed vacuum feedback equation of state (P_fb vs P_cap).
+Horizon capacity saturation and black-hole A/4 are pressure-capacity balance regimes of the same closed vacuum feedback equation of state (`P_fb` vs `P_cap`). The heat-trace carrier still owns finite gravity; feedback pressure supplies the source/regime selector and boundary capacity supplies the horizon condition:
 
+```math
+P_{fb}>P_{cap}\ \text{expansion/acceleration},\qquad
+P_{fb}=P_{cap}\ \text{horizon balance},\qquad
+P_{fb}<P_{cap}\ \text{contraction/capacity saturation}.
+```
+
+The boundary-local holographic rank lemma and greybody leakage formulas are
+supporting proof targets, not replacements for the heat-trace gravity carrier.
+
+Refined CVFT rank localization uses `rank(F)=rank(QUP)` and, when `QUP` factors
+through a declared boundary-channel space, `rank(F)<=dim B_boundary(P,Q)`. This
+supports boundary localization of feedback entropy; it does not replace the
+terminal A/4 capacity witness.
+
+The UV feedback-tail cut uses `a=|z|rho(F)<1` and
+`|T_M(z,F)| <= rank(F)/(M+1) * a^(M+1)/(1-a)`. The condition
+`|T_M(z(L),F_N(L))|<delta0^12` means continuum-safe heat-trace use; the opposite
+inequality means finite D0 support/readout algebra must be used. `delta0^12` is
+a readout tolerance threshold, not the analytic radius of convergence.
 
 Only the first two are normative Book 07 material. Survey-level archive pressure and BAO/S_DE remain Book 08 material.
 
@@ -1210,6 +1266,7 @@ At the macro level: any compatible gravity interface must be symmetric,
 divergence-free, second-order under finite readout, and compatible with TT
 stress coupling.
 Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface (finite A2 variation + Bianchi selects the class; previous loose "EH bridge calibration" language is replaced by closed finite-response status).
+```
 
 ## 07.49 Critical-collapse discrete self-similar log-time lattice and spacetime-crystal horizon
 
@@ -1296,7 +1353,7 @@ The finite TT operator W_TT is the two-polarization sector of the D0 solenoid sp
 
 The Lean owners are `D0.Geometry.NonCommutativeSolenoid` (`d0_hull_admits_noncommutative_solenoid_model`) and `D0.Geometry.NonCommutativeSolenoidGravity` (`finite_spin2_operator_is_tt_sector_of_solenoid_spectral_geometry`, `wtt4_is_compatible_with_noncommutative_solenoid_geometry`), and the verification certificate is `05_CERTS/vp_noncommutative_solenoid_gravity.py` (`PASS_NONCOMMUTATIVE_SOLENOID_GRAVITY`).
 
-## 07.48 LIGO BBH mass-defect external comparison protocol
+## 07.48 LIGO BBH mass-defect passport
 
 $$\eta = \frac{M_1 M_2}{(M_1 + M_2)^2}$$
 

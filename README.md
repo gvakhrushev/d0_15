@@ -37,11 +37,11 @@ See `D0_CLAIM_CLOSURE_CONTRACT.md` and `01_BOOKS/BOOK_00_*.md` for the exact rul
 
 ```bash
 # Lean (from repo root)
-cd 09_LEAN_FORMALIZATION
-lake update
-lake exe cache get   # optional accelerator
-lake build
-lake build D0.All
+./tools/lean_dev.ps1 update
+./tools/lean_dev.ps1 exe cache get   # optional accelerator
+./tools/lean_dev.ps1 build
+./tools/lean_dev.ps1 build D0.All
+./tools/check_lean_storage_hygiene.ps1
 python tools/check_no_sorry_in_core.py
 python tools/check_claim_map_coverage.py
 
@@ -51,7 +51,12 @@ python run_all_core_certs.py
 python run_all_empirical_passports.py
 ```
 
-The project is intentionally large and self-contained. Many heavy caches and one-off outputs are excluded from the repository.
+The project is intentionally self-contained at the source level. Heavy Lean
+dependencies/build artifacts are kept outside the repo by `tools/lean_dev.ps1`,
+which creates `09_LEAN_FORMALIZATION/.lake` as a junction to
+`$HOME/.d0_lean_cache/...` unless `D0_LEAN_CACHE_ROOT` is set.
+For normal editing, Lean runs are deferred; see
+`09_LEAN_FORMALIZATION/docs/LEAN_DEFERRED_RUN_POLICY.md`.
 
 ## Knowledge graph
 

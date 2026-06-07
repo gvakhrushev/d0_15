@@ -22,6 +22,18 @@ ALLOWED_STATUSES = {
     "DEPRECATED",
 }
 CORE_STATUSES = {"CORE-FORMALIZED", "CORE_FORMALIZED"}
+OPEN_RELEASE_STATUSES = {
+    "FRONTIER",
+    "PROOF-TARGET",
+    "CERT-CANDIDATE",
+    "OPERATOR-SCAFFOLD-COMPLETE",
+    "OPERATOR-SCAFFOLD-CERTIFIED",
+    "SPIN-FLAVOUR-TRANSFER-CERTIFIED",
+    "EMPIRICAL-PASSPORT-CANDIDATE",
+    "LOWER-BOUND-TARGET",
+    "THEOREM-TARGET-SHARPENED",
+    "PROOF-OBLIGATION-EXPOSED",
+}
 
 
 def read_csv(path: Path):
@@ -54,7 +66,10 @@ def main() -> int:
         status = row.get("lean_status", "")
         if status not in ALLOWED_STATUSES:
             failures.append(f"{claim}: bad lean_status {status!r}")
-        if not row.get("lean_module") or not row.get("lean_theorem"):
+        release_status = row.get("release_status", "")
+        if release_status not in OPEN_RELEASE_STATUSES and (
+            not row.get("lean_module") or not row.get("lean_theorem")
+        ):
             failures.append(f"{claim}: missing Lean module/theorem")
 
         uses_bridge = row.get("uses_bridge_assumptions", "").lower() == "true"
@@ -67,7 +82,6 @@ def main() -> int:
             if aid not in assumptions:
                 failures.append(f"{claim}: missing assumption ledger row {aid}")
 
-        release_status = row.get("release_status", "")
         if release_status in CORE_STATUSES and status != "LEAN_PROVED":
             failures.append(f"{claim}: core release status must be LEAN_PROVED")
         if uses_bridge and status not in {"LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS", "PYTHON_CERTIFIED"}:

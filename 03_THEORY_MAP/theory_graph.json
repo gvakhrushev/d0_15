@@ -4,32 +4,42 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 127,
+    "claims": 139,
     "release_status": {
-      "CORE-FORMALIZED": 88,
+      "CORE-FORMALIZED": 89,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 6,
       "CORE_BRIDGE_SPLIT": 4,
-      "NO_GO_PROVED": 7,
+      "NO_GO_PROVED": 8,
       "CERT-CLOSED": 9,
       "NO-GO": 7,
       "BRIDGE-ASSUMPTION": 1,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
       "BRIDGE-CALIBRATION": 2,
-      "EMPIRICAL-PASSPORT": 1
+      "EMPIRICAL-PASSPORT": 1,
+      "PROOF-TARGET": 1,
+      "PROOF-OBLIGATION-EXPOSED": 1,
+      "THEOREM-TARGET-SHARPENED": 1,
+      "OPERATOR-SCAFFOLD-CERTIFIED": 1,
+      "SPIN-FLAVOUR-TRANSFER-CERTIFIED": 1,
+      "CERT-CANDIDATE": 3,
+      "EMPIRICAL-PASSPORT-CANDIDATE": 1,
+      "LOWER-BOUND-TARGET": 1
     },
     "lean_status": {
-      "LEAN_PROVED": 106,
+      "LEAN_PROVED": 108,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
       "PYTHON_CERTIFIED": 11,
-      "DEPRECATED": 2
+      "DEPRECATED": 2,
+      "OPEN": 10
     },
     "claim_type": {
-      "core": 89,
+      "core": 90,
       "bridge": 13,
-      "no-go": 14,
+      "no-go": 15,
       "certificate": 9,
-      "deprecated": 2
+      "deprecated": 2,
+      "frontier": 10
     },
     "domain": {
       "formal_core": 75,
@@ -38,10 +48,11 @@
       "smooth_geometry": 3,
       "spectral_action": 5,
       "empirical_passport": 5,
-      "cosmology": 16,
+      "cosmology": 18,
       "external_background": 1,
       "si_calibration": 2,
-      "interpretation_spine": 1
+      "interpretation_spine": 1,
+      "frontier": 10
     }
   },
   "nodes": [
@@ -4156,6 +4167,325 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Matter/NuclearShellContactSRC.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-CVFT-001A",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-001A",
+      "type": "core",
+      "domain": "cosmology",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
+      "book": "BOOK_00/01/02/03",
+      "section": "finite feedback operator core",
+      "lean_module": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "lean_theorem": "Dynamics.internal_feedback_forced_by_split;Dynamics.internal_feedback_resolvent_series;Cosmology.feedback_determinant_return_cycles;Cosmology.feedback_variation_universal_source;Cosmology.feedback_pressure_trace_log",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_closed_vacuum_feedback_full_wave.py",
+      "python_cert": [
+        "vp_closed_vacuum_feedback_full_wave.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "Closed finite feedback operator core F_N=P_N U_N^dagger Q_N U_N P_N with resolvent determinant trace variation and feedback pressure law.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent;D0/Cosmology/FeedbackPartitionFunction.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "kind": "lean_module",
+      "label": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "path": "09_LEAN_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent;D0/Cosmology/FeedbackPartitionFunction.lean",
+      "exists": false
+    },
+    {
+      "id": "cert:vp_closed_vacuum_feedback_full_wave.py",
+      "kind": "python_cert",
+      "label": "vp_closed_vacuum_feedback_full_wave.py",
+      "path": "05_CERTS/vp_closed_vacuum_feedback_full_wave.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CVFT-001B",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-001B",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04/06/07/08",
+      "section": "sector projection package",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-TARGET",
+      "notes": "Sector projection package points to CVFT-F1 through CVFT-F8 and may not close matter gravity cosmology horizon gauge or empirical passport rows automatically.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "domain:frontier",
+      "kind": "semantic_domain",
+      "label": "frontier"
+    },
+    {
+      "id": "module:",
+      "kind": "lean_module",
+      "label": "",
+      "path": "09_LEAN_FORMALIZATION/.lean",
+      "exists": false
+    },
+    {
+      "id": "D0-CVFT-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-NOGO-001",
+      "type": "no-go",
+      "domain": "cosmology",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_05/08",
+      "section": "closed vacuum feedback no-go firewall",
+      "lean_module": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FiniteFeedbackEquationOfState;D0.Matter.TerminalFeedbackModes;D0.Cosmology.SDEFeedbackReduction",
+      "lean_theorem": "Dynamics.external_mirror_model_forbidden;Cosmology.ideal_gas_core_postulate_forbidden;Matter.matter_as_arbitrary_eigenvalue_forbidden;Cosmology.desi_root_refit_repair_forbidden;Cosmology.desi_window_refit_repair_forbidden;Cosmology.arbitrary_kernel_repair_not_theorem_grade",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_closed_vacuum_feedback_full_wave.py",
+      "python_cert": [
+        "vp_closed_vacuum_feedback_full_wave.py"
+      ],
+      "status": "NO_GO_PROVED",
+      "notes": "External mirror vacuum photon-acceleration interpretation ideal-gas postulate arbitrary-eigenvalue matter and DESI/SPARC root window or arbitrary-kernel repairs are forbidden.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent;D0/Cosmology/FiniteFeedbackEquationOfState;D0/Matter/TerminalFeedbackModes;D0/Cosmology/SDEFeedbackReduction.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FiniteFeedbackEquationOfState;D0.Matter.TerminalFeedbackModes;D0.Cosmology.SDEFeedbackReduction",
+      "kind": "lean_module",
+      "label": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FiniteFeedbackEquationOfState;D0.Matter.TerminalFeedbackModes;D0.Cosmology.SDEFeedbackReduction",
+      "path": "09_LEAN_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent;D0/Cosmology/FiniteFeedbackEquationOfState;D0/Matter/TerminalFeedbackModes;D0/Cosmology/SDEFeedbackReduction.lean",
+      "exists": false
+    },
+    {
+      "id": "D0-CVFT-F1",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F1",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02/04/08",
+      "section": "CVFT coefficient-origin trace residue program",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-OBLIGATION-EXPOSED",
+      "notes": "Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CVFT-F2",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F2",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_07/08",
+      "section": "CVFT horizon greybody leakage program",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "THEOREM-TARGET-SHARPENED",
+      "notes": "Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CVFT-F3",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F3",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "CVFT hadron resonance pole transfer program",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cvft_baryon_s3_scaffold.py",
+      "python_cert": [
+        "vp_cvft_baryon_s3_scaffold.py"
+      ],
+      "status": "OPERATOR-SCAFFOLD-CERTIFIED",
+      "notes": "Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_cvft_baryon_s3_scaffold.py",
+      "kind": "python_cert",
+      "label": "vp_cvft_baryon_s3_scaffold.py",
+      "path": "05_CERTS/vp_cvft_baryon_s3_scaffold.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CVFT-F3B",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F3B",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "CVFT baryon spin-flavour 40/56 transfer",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cvft_baryon_spin_flavour_40_56.py",
+      "python_cert": [
+        "vp_cvft_baryon_spin_flavour_40_56.py"
+      ],
+      "status": "SPIN-FLAVOUR-TRANSFER-CERTIFIED",
+      "notes": "Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_cvft_baryon_spin_flavour_40_56.py",
+      "kind": "python_cert",
+      "label": "vp_cvft_baryon_spin_flavour_40_56.py",
+      "path": "05_CERTS/vp_cvft_baryon_spin_flavour_40_56.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CVFT-F4",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F4",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02/05",
+      "section": "CVFT UV feedback-tail cut program",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CERT-CANDIDATE",
+      "notes": "UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CVFT-F5",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F5",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04/08",
+      "section": "CVFT dynamic neutrino decoherence program",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "EMPIRICAL-PASSPORT-CANDIDATE",
+      "notes": "IceCube dynamic feedback is an external passport candidate until data manifest response and frozen operator are pinned.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CVFT-F6",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F6",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04/07",
+      "section": "CVFT gauge-boundary leakage obstruction program",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "LOWER-BOUND-TARGET",
+      "notes": "Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CVFT-F7",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F7",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_07",
+      "section": "CVFT boundary-local holographic rank lemma",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CERT-CANDIDATE",
+      "notes": "Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CVFT-F8",
+      "kind": "claim",
+      "claim_id": "D0-CVFT-F8",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_08",
+      "section": "CVFT S_DE exceptional-point effective transfer",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CERT-CANDIDATE",
+      "notes": "S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -5783,6 +6113,146 @@
       "source": "D0-SRC-NOGO-001",
       "target": "cert:vp_nuclear_shell_contact_src.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-CVFT-001A",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-001A",
+      "target": "module:D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-001A",
+      "target": "cert:vp_closed_vacuum_feedback_full_wave.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CVFT-001B",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-001B",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-NOGO-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-NOGO-001",
+      "target": "module:D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FiniteFeedbackEquationOfState;D0.Matter.TerminalFeedbackModes;D0.Cosmology.SDEFeedbackReduction",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-NOGO-001",
+      "target": "cert:vp_closed_vacuum_feedback_full_wave.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CVFT-F1",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F1",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F2",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F2",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F3",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F3",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F3",
+      "target": "cert:vp_cvft_baryon_s3_scaffold.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CVFT-F3B",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F3B",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F3B",
+      "target": "cert:vp_cvft_baryon_spin_flavour_40_56.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CVFT-F4",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F4",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F5",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F5",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F6",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F6",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F7",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F7",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F8",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CVFT-F8",
+      "target": "module:",
+      "kind": "implemented_in"
     }
   ]
 }

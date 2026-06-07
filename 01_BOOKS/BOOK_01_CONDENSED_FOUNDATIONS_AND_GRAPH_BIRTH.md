@@ -1,5 +1,40 @@
 ﻿# BOOK 01 вЂ” Condensed foundations, finite registration and construction of the finite incidence graph
 
+## 01.v15 Active support/foundation layer
+
+Book 01 is support and foundation only. It does not prove matter, gravity or cosmology claims. It supplies the finite/profinite carrier on which later books build operators.
+
+```text
+finite/profinite support -> graph birth -> retained/traced split -> P_N,Q_N -> finite tick U_N -> Book 02 feedback operator
+```
+
+At finite stage `N`:
+
+```text
+H_N = H_N^ret direct_sum H_N^tr,
+P_N + Q_N = I,
+P_N Q_N = 0.
+```
+
+`P_N` is the retained/readout projection. `Q_N` is the traced/archive projection. `U_N` is the finite tick. The handoff to Book 02 is:
+
+```text
+F_N = P_N U_N^dagger Q_N U_N P_N.
+```
+
+The support may be read as condensed/profinite quasicrystalline support: finite local pieces are visible, while projective/profinite organization prevents replacing the theory by a primitive smooth background lattice.
+
+Finite Born support owners:
+
+```text
+D0.finite_effect_born_readout_unique
+D0.finite_effect_born_no_hidden_response
+```
+
+## 01.19a Cut-and-project reading of phase unfolding
+
+The phase-unfolding master chain is tick order -> irrational phi^-2 phase -> finite return modulus -> residue branches, with owner `D0.Geometry.PhaseUnfoldingQuasicrystal`.
+
 ## 01.1 Standard-language reading of the foundation
 
 The foundational object is a profinite support represented as a condensed set on profinite test objects:
@@ -37,6 +72,15 @@ four terminal roles A,B,C,D\times\{\pm\}\Rightarrow
 V_9\Rightarrow
 K(9,11,13).
 \]
+
+The feedback-return object is derived, not primitive, and it is kept distinct
+from the positive response operator `R_N = D_N^dagger D_N`:
+
+```text
+F_N = P_N U_N^dagger Q_N U_N P_N
+```
+
+ABCD determines what can be terminally registered; `F_N` determines what returns from the non-registered complement. The Lean owner is `D0.Dynamics.InternalFeedbackResolvent`, with `internal_feedback_forced_by_split`. Book 01 only hands this retained/traced split to downstream operator books; it does not import matter masses, electroweak constants, baryon data, cosmological surveys or neutrino passports.
 
 The book therefore proves construction of the finite incidence graph from finite registration, not by choosing a convenient graph, but by imposing the obligations of address, comparison, halt, response and invariant readout.
 

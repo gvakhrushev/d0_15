@@ -1,5 +1,9 @@
 ﻿# BOOK 05 — Verification, Proof Ownership, and Certificate Discipline
 
+## 05.v15 Active closure law
+Book 05 classifies every active claim as core theorem, sector theorem, operator scaffold, bridge law, empirical passport, or no-go theorem; completion means a finite operator plus falsification boundary. `OPERATOR-SCAFFOLD-CERTIFIED` is positive internal carrier closure but not an external physical spectrum; `SPIN-FLAVOUR-CARRIER-CERTIFIED` means a finite spin-flavour carrier and its inclusion/decomposition algebra are certified before external physical labels. `SPIN-FLAVOUR-TRANSFER-CERTIFIED` is the prior transfer layer name now refined to carrier certification.
+Sync gates retained here: `## 05.13 Current v14 priority gates`, `D0.Matter.Book04OperatorBoundary`, `nucleon_line_cannot_promote_full_baryon_multiplet`, `lower_hodge_400_cannot_promote_meson_masses`, `IceCube comparison is EMPIRICAL-PASSPORT`, `cannot select or tune the D0 neutrino kernel`, and Gravity closure requires: finite graph/entropy cert, explicit Pi_TT and W_TT, higher-curvature cut, spectral A2/EH bridge, no continuum constants imported as core.
+
 ## 05.1 Role of this book
 
 Book 05 is the verification calculus of the D0 corpus.  It does not introduce the
@@ -162,6 +166,11 @@ status label changed => theorem closed
 selected number written in a table => finite selector theorem
 support seed 400 => pion/kaon/rho masses
 baryon support gap => full baryon multiplet
+rank-40 treated as full baryon carrier
+rank-56 pole set assigned to PDG before frozen U_eff poles
+complex poles from bare positive F
+random non-Hermitian resonance matrix
+PDG names used to choose spin/flavour projectors
 ```
 
 The purpose of Book 05 is to make these shortcuts impossible to miss.
@@ -248,7 +257,7 @@ negative controls.
 No row, phase convention, renormalization convention, likelihood cut, survey
 subset or external baseline may be chosen after seeing the comparison residual.
 
-## 05.11a Risky prediction external comparison protocol discipline
+## 05.11a Risky prediction passport discipline
 
 IceCube, LIGO, CMB, BAO and galaxy-lensing external comparison protocols require:
 1. data manifest;
@@ -488,8 +497,7 @@ the stress-coupling theorem, and no GR constants.  The public certificate name
 is `vp_finite_spin2_wave_operator.py`; it checks the same concrete projector as
 the Lean owner `D0.Geometry.FiniteSpin2WaveOperator`.
 
-The operator/external comparison protocol rule is strict: operator first, external comparison protocol second, no PDG tuning,
-and no geometry diagnostic as core source.
+The operator/passport rule is strict: operator first, passport second, no PDG tuning, no geometry diagnostic as core source; Torus geometry is core; PDG shell alignment is passport and may not tune a core operator.
 
 Failure is not hidden.  It is the operational meaning of the claim.
 
@@ -685,73 +693,31 @@ Book 05 must stay a coherent contract. Historical material may be preserved outs
 The active book is therefore neither a release diary nor a storage box. It is a single audit instrument.
 
 ## 05.25 Standard-language compression rule
-A D0-local term is allowed in a heading, Lean owner or certificate name.
-In explanatory prose, the first occurrence must be paired with its standard
-object, and subsequent occurrences should use the standard object unless the
-D0 mnemonic prevents ambiguity.
+A D0-local term is allowed in a heading, Lean owner or certificate name. In explanatory prose, pair the first occurrence with the standard object and then prefer the standard object unless the mnemonic prevents ambiguity.
 
-## 05.25 Trace-heat-capacity gravity verification row
+## 05.26 Trace-heat-capacity gravity verification row
 `trace-heat-capacity gravity` is accepted only as a split status block: core = fixed detector ladder, signed Lucas traces, even Lucas heat moments, Lefschetz scene counts and A/4 boundary capacity; bridge = macro gravity interface through the finite gravity witness; excluded = continuum singularity primitive, fitted dark component or fitted smooth-GR constant. The certificate `05_CERTS/vp_trace_heat_capacity_gravity.py` checks black-hole capacity saturation as boundary encoding.
 QUASI-002 phason/baryon verification gate: `05_CERTS/vp_quasi002_phason_strain_generations_baryon.py` must check the rational S3 projector, rank `10`, invariance and the negative control that nucleon-line extrapolation remains forbidden. IceCube comparison is EMPIRICAL-PASSPORT and cannot select or tune the D0 neutrino kernel.
 
-## 05.26 External data external comparison protocol runner
-External empirical external comparison protocols are executed through `05_CERTS/DATA_RUNNERS/run_external_external comparison protocols.py`, which writes `08_PASSPORTS/_RESULTS/external_external comparison protocol_summary.json` and `.md` with the fixed columns `Passport; Dataset; Manifest; Hash; Frozen D0 object; Baseline; Metric; Result; Notes`.
-The runner covers Nuclear SRC, IceCube, SPARC halo, CMB, BAO/S_DE, LIGO/GWOSC, CKM and Meson PDG. A missing or partial external manifest must produce `SKIP`, not empirical `PASS`; `PASS` requires pinned dataset/hash/fields/citation/policy plus comparison of the frozen D0 object against the declared baseline without retuning.
-Current machine summary: Nature 2026 SRC and GWOSC/LIGO mass-defect are `PASS`;
-IceCube HESE has event energy/direction data and a generated D0 curve but still
-requires an exposure/flux baseline; SPARC is downloaded and parsed, while the
-minimal shape/global-scale archive kernel currently fails diagnostics and is not
-promoted. The remaining external rows remain `SKIP_*_DATA_REQUIRED`. The machine
-source is `08_PASSPORTS/_RESULTS/external_external comparison protocol_summary.json`.
+## 05.27 External data external comparison protocol runner
+External empirical comparison protocols run through `05_CERTS/DATA_RUNNERS/run_external_passports.py` and write `08_PASSPORTS/_RESULTS/external_passport_summary.json/.md`. Missing or partial manifests produce `SKIP`; `PASS` requires pinned dataset/hash/fields/citation/policy plus comparison of the frozen object against the declared baseline without retuning. Current status: SRC Nature 2026 and LIGO/GWOSC pass; IceCube HESE is baseline-required; SPARC data ingest passes while simple shape/global-scale kernels fail; CMB/BAO/CKM/Meson remain data-required unless their manifests are pinned.
 
-SRC destructive rule: A-only / N-Z-only SRC scalar fails. Any nuclear SRC model
-that promotes mass number, neutron excess or density alone to a core SRC
-operator fails the Nature 2026 negative control. The admitted D0 owner is the
-shell-contact selector.
+The strict empirical matrix is generated by `tools/build_empirical_passport_matrix.py` and checked by `tools/check_empirical_passport_matrix.py`; mandatory rows are IceCube, SPARC, DESI, CMB, CKM/PDG and meson/PDG. A PASS/FAIL/SKIP there is observable-transfer status only.
 
-D0-SRC-NOGO-001 -- A-only / N-Z-only SRC scalar failure. The admitted owner is
-`D0.Matter.NuclearShellContactSRC`: occupied shell projectors pass through the
-angular-momentum contact selector into the SRC contact trace.
+No-go summary: SRC A-only/N-Z-only/density-only, LIGO spin-only, SPARC shape/global-scale/arbitrary-kernel repair, DSS smooth monotone collapse, black-hole information deletion, DESI root/window/H0/Omega_m/rd refit, continuum topology/theta primitives, external mirror/photon acceleration/ideal-gas CVFT core, continuum RT/minimal surface, continuum Yang-Mills mass-gap and tick/S3 full baryogenesis promotion are forbidden under their listed theorem/cert owners.
 
-D0-LIGO-NOGO-001 -- Spin-only mass-defect failure. The GWOSC clean-BBH run uses
-the frozen horizon-capacity determinant formula and beats both the mean-loss
-baseline and the spin-only negative control.
+Every `ASSUMP-*` row must remain in `09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv` with owner file, claim owner, close path or explicit external/eternal bridge status.
 
-D0-SPARC-NOGO-001 -- Naive archive-phason halo kernel failure. The first SPARC
-run rejects both simple shape-only and one-global-scale kernels. Future
-dark-sector halo operators must pass the same SPARC runner without per-galaxy
-halo tuning.
+## 05.28 CVFT operator admissibility
+Closed-vacuum feedback uses `F_N=P_NU_N^\dagger Q_NU_NP_N` only as feedback-return and `R_N=D_N^\dagger D_N` only as positive readout. Allowed identities are `F_N=(Q_NU_NP_N)^\dagger(Q_NU_NP_N)`, `F_N=P_N-(P_NU_NP_N)^\dagger(P_NU_NP_N)`, positivity, and `F_N=0 iff Q_NU_NP_N=0`; `Q_N\ne0 -> F_N\ne0` is forbidden. Resolvent existence requires `z^{-1}` outside the finite spectrum; Neumann/log-det expansions require `|z|\rho(F_N)<1`; determinant trace claims without `-\log det` are forbidden.
 
-D0-GRAV-DSS-NOGO-001 -- Smooth Monotone Collapse Failure.
-Purely smooth monotone collapse cannot represent the full critical black-hole
-threshold, because the threshold admits a DSS echo lattice (PRL 2026,
-arXiv:2601.14358). The certificate is `05_CERTS/vp_critical_collapse_dss_echo_lattice.py`.
-The typed no-go lives in `D0.Gravity.CriticalCollapseDSS`.
+The partition function is `Z_N=Tr exp(-beta Delta_N(V)) det(I-zF_N(V))^{-1}` and feedback pressure is `P_fb=beta^{-1}d_V log Z_N=P_heat+P_loop`, where `d_V` is finite difference or a smooth finite-dimensional matrix derivative. Matter candidates may use `F_N psi=r psi`, `|zr| approx 1`, `P_term psi=psi`; complex masses/widths require `U_eff=P_NU_NP_N` or a declared Feshbach-Schur reduction. Coefficient-origin residues, greybody leakage, hadron pole transfer, UV tail cut, dynamic neutrino decoherence, gauge-boundary leakage and boundary-rank holography remain `FRONTIER`/`PROOF-TARGET`.
 
-D0-BH-CAP-NOGO-001 -- Singularity-as-information-deletion rejected.
-Black-hole horizon cannot be read as deletion of information. The terminal archive
-quotient makes active readout inaccessible while preserving total finite dimension/trace.
-Certificate: `05_CERTS/vp_black_hole_capacity_a4_witness.py`. Lean: `D0.Gravity.BlackHoleA4EntropyWitness`.
+CVFT v5/v6/v8/v15 forbidden shortcuts: wrong rank in a minimal cert example; `z/(1-z)` log-det bounds without `|z|rho(F)`; principal-branch claims without the analytic branch at `z=0`; `delta0^12` as convergence radius; rank boundary bounds as A/4 proof; S3 carrier rank 10 promoted to physical baryon decuplet; rank-40 promoted to full baryon carrier; `U_eff^B` poles assigned to PDG before a frozen pole set; random non-Hermitian resonance matrices; complex resonance poles from bare positive `F`; nucleon line promoted to full multiplet by scaling; PDG names used to choose spin/flavour projectors. F3a is `OPERATOR-SCAFFOLD-CERTIFIED`; F3b is `SPIN-FLAVOUR-CARRIER-CERTIFIED`; F3c is `CORE13-ORBITAL-LINK-CERTIFIED`; none imply `PDG-PASS`, `BARYON-MASS-CLOSED` or `FULL-MULTIPLET-CLOSED`. A finite spin-flavour carrier and its inclusion/decomposition algebra are certified before external physical labels.
 
-D0-COSMO-SDE-NOGO-001 -- BAO root/window refit forbidden after DESI failure.
-The DESI/BAO real-data run failed for the frozen S_DE transfer.
-The internal roots lambda_c and lambda_r remain fixed.
-Post-hoc refitting of roots, window centers, window widths, H0, Omega_m or r_d
-is forbidden as a core repair.
-Certificate: `05_CERTS/vp_desi_bao_sde_failure_diagnostics.py`.
-
-D0-TOPO-CONTINUUM-NOGO-001 — continuum master equations are bridge objects, not core primitives.
-D0-TOPO-NOAXION-001 — continuum theta-vacuum rejected as D0-core primitive (CONDITIONAL-CLOSED: exact annihilation theorem conditional on finite exact-density annihilation predicate).
-
-D0-VACUUM-FEEDBACK-NOGO-001 — external mirror / photon acceleration / ideal-gas postulate as core are rejected; DESI root/window refit repair is forbidden (boundary feedback correction from internal resolvent only).
-D0-VACUUM-FEEDBACK-NOGO-002 — closed vacuum feedback equation of state (Z, P_fb, PVT, matter as terminally stabilized modes) is the admitted core object.
-
-D0-CVFT-NOGO-001 — external mirror vacuum model forbidden.
-D0-CVFT-NOGO-002 — photon-acceleration interpretation forbidden.
-D0-CVFT-NOGO-003 — ideal-gas PV=NT postulate forbidden as core.
-D0-CVFT-NOGO-004 — DESI/SPARC root/window refit forbidden; only boundary feedback correction from internal resolvent allowed.
-
-D0-GRAV-FINITE-MINCUT-NOGO-001 — continuum RT surface / minimal surface is a bridge object; finite min-cut is the D0 core object.
-D0-GAUGE-SEAM-NOGO-001 — continuum Yang-Mills mass-gap claim is not D0-core; finite seam obstruction gap is the admitted finite theorem.
-D0-MATTER-BARYON-SCAFFOLD-001 — tick/S3 baryon asymmetry is a conditional scaffold only; full cosmological baryogenesis requires external model (not closed).
+CVFT v7 adds two cert-audit shortcuts: do not print an S3 representation token
+without checking all 36 group-law products and inverse-adjoint identities; do
+not use the two-cycle difference as an antisymmetrizer. The antisymmetrizer is
+`(1/6) sum_sigma sgn(sigma) P_sigma`, with idempotent, self-adjoint and rank-one
+checks.
 

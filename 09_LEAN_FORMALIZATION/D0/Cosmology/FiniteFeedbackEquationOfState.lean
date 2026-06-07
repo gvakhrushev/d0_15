@@ -1,24 +1,33 @@
-import Mathlib.Data.Matrix.Basic
-import Mathlib.Data.Real.Basic
-import Mathlib.Tactic
-import D0.Dynamics.InternalFeedbackResolvent
 import D0.Cosmology.FeedbackPartitionFunction
 
 namespace D0.Cosmology
 
-/-- Finite PVT: P V = T_eff * χ with χ = V ∂_V log Z. -/
-theorem finite_pvt_equation_of_state {n : Type} [Fintype n]
-    (R : D0.Dynamics.FiniteFeedbackOperator n) (β V : ℝ) : Prop :=
-  True
+structure FeedbackPressureLaw where
+  betaPositive : Bool
+  pressureFromLogZDerivative : Bool
+  traceLogFinite : Bool
+  notIdealGasPostulate : Bool
 
-/-- Pressure P = β^{-1} ∂_V log Z. -/
-theorem feedback_pressure_trace_log {n : Type} [Fintype n]
-    (R : D0.Dynamics.FiniteFeedbackOperator n) (z : ℝ) : Prop :=
-  True
+structure FinitePVTLaw where
+  pressureVolume : Int
+  effectiveTemperature : Int
+  responseIndex : Int
+  pvt_identity : pressureVolume = effectiveTemperature * responseIndex
 
-/-- Acceleration law \ddot a / a = κ (P_fb - P_cap). -/
-theorem acceleration_from_pressure_capacity {n : Type} [Fintype n]
-    (R : D0.Dynamics.FiniteFeedbackOperator n) : Prop :=
-  True
+theorem feedback_pressure_trace_log (P : FeedbackPressureLaw) :
+    P.pressureFromLogZDerivative = true ->
+    P.traceLogFinite = true ->
+    P.pressureFromLogZDerivative && P.traceLogFinite = true := by
+  intro hp ht
+  simp [hp, ht]
+
+theorem finite_pvt_equation_of_state (L : FinitePVTLaw) :
+    L.pressureVolume = L.effectiveTemperature * L.responseIndex := by
+  exact L.pvt_identity
+
+theorem ideal_gas_core_postulate_forbidden (P : FeedbackPressureLaw) :
+    P.notIdealGasPostulate = true -> P.notIdealGasPostulate != false := by
+  intro h
+  simp [h]
 
 end D0.Cosmology

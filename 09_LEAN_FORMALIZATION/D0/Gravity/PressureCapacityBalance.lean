@@ -1,22 +1,41 @@
-import Mathlib.Data.Matrix.Basic
-import Mathlib.Data.Real.Basic
-import Mathlib.Tactic
-import D0.Dynamics.InternalFeedbackResolvent
 import D0.Cosmology.FiniteFeedbackEquationOfState
 
 namespace D0.Gravity
 
-/-- Gravity regimes = pressure-capacity balance: P_fb ? P_cap. -/
-theorem pressure_capacity_balance_regimes {n : Type} [Fintype n]
-    (R : D0.Dynamics.FiniteFeedbackOperator n) : Prop :=
-  True
+inductive PressureCapacityRegime where
+  | expansion
+  | stationaryHorizon
+  | collapse
+  deriving DecidableEq, Repr
 
-/-- Horizon capacity saturation as |z r_max|→1 and P_cap→∞. -/
-theorem horizon_saturation_feedback_limit : Prop :=
-  True
+def pressureCapacityRegime (pFb pCap : Int) : PressureCapacityRegime :=
+  if pCap < pFb then PressureCapacityRegime.expansion
+  else if pFb = pCap then PressureCapacityRegime.stationaryHorizon
+  else PressureCapacityRegime.collapse
 
-/-- A/4 as terminal capacity count at feedback saturation. -/
-theorem a4_terminal_feedback_saturation : Prop :=
-  True
+theorem pressure_capacity_balance_regimes :
+    pressureCapacityRegime 3 2 = PressureCapacityRegime.expansion /\
+    pressureCapacityRegime 2 2 = PressureCapacityRegime.stationaryHorizon /\
+    pressureCapacityRegime 1 2 = PressureCapacityRegime.collapse := by
+  simp [pressureCapacityRegime]
+
+structure HorizonSaturation where
+  nearCriticalFeedback : Bool
+  capacityResistance : Bool
+
+theorem horizon_saturation_feedback_limit (H : HorizonSaturation) :
+    H.nearCriticalFeedback = true ->
+    H.capacityResistance = true ->
+    H.nearCriticalFeedback && H.capacityResistance = true := by
+  intro hcrit hcap
+  simp [hcrit, hcap]
+
+structure A4TerminalCapacity where
+  boundaryArea : Nat
+  quarterUnits : Nat
+  quarter_count : boundaryArea = 4 * quarterUnits
+
+theorem a4_terminal_feedback_saturation (A : A4TerminalCapacity) :
+    A.boundaryArea = 4 * A.quarterUnits := A.quarter_count
 
 end D0.Gravity

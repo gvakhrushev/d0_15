@@ -83,6 +83,34 @@ CERT_TARGETS = [
         "PASS_TRACE_HEAT_CAPACITY_GRAVITY",
     ),
     CertTarget(
+        "05_CERTS/vp_closed_vacuum_feedback_full_wave.py",
+        "PASS_CLOSED_VACUUM_FEEDBACK_FULL_WAVE",
+    ),
+    CertTarget(
+        "05_CERTS/vp_internal_feedback_resolvent.py",
+        "PASS_INTERNAL_FEEDBACK_RESOLVENT",
+    ),
+    CertTarget(
+        "05_CERTS/vp_feedback_partition_function.py",
+        "PASS_FINITE_FEEDBACK_PARTITION_FUNCTION",
+    ),
+    CertTarget(
+        "05_CERTS/vp_finite_feedback_equation_of_state.py",
+        "PASS_FINITE_PVT_EQUATION_OF_STATE",
+    ),
+    CertTarget(
+        "05_CERTS/vp_terminal_feedback_modes.py",
+        "PASS_TERMINAL_FEEDBACK_MODE_CRITERION",
+    ),
+    CertTarget(
+        "05_CERTS/vp_pressure_capacity_balance.py",
+        "PASS_PRESSURE_CAPACITY_BALANCE_REGIMES",
+    ),
+    CertTarget(
+        "05_CERTS/vp_sde_feedback_reduction.py",
+        "PASS_SDE_TWO_MODE_FEEDBACK_REDUCTION",
+    ),
+    CertTarget(
         "05_CERTS/vp_master_evolution_theorem.py",
         "PASS_MASTER_EVOLUTION_THEOREM",
     ),
@@ -303,6 +331,29 @@ CERT_TARGETS = [
 
 
 SLICE_PRESETS: dict[str, SlicePreset] = {
+    "closed-vacuum-feedback": SlicePreset(
+        modules=(
+            "D0.TheoremLedger.ClosedVacuumFeedbackIndex",
+        ),
+        certs=(
+            "05_CERTS/vp_closed_vacuum_feedback_full_wave.py",
+            "05_CERTS/vp_internal_feedback_resolvent.py",
+            "05_CERTS/vp_feedback_partition_function.py",
+            "05_CERTS/vp_finite_feedback_equation_of_state.py",
+            "05_CERTS/vp_terminal_feedback_modes.py",
+            "05_CERTS/vp_pressure_capacity_balance.py",
+            "05_CERTS/vp_sde_feedback_reduction.py",
+        ),
+        guards=(
+            "tools/build_empirical_passport_matrix.py",
+            "tools/check_empirical_passport_matrix.py",
+            "tools/check_assumption_ledger_ownership.py",
+            "tools/check_standard_language_audit_budget.py",
+            "tools/check_v14_clean_corpus.py",
+            "tools/check_physical_bridge_discipline.py",
+            "09_LEAN_FORMALIZATION/tools/check_claim_map_coverage.py",
+        ),
+    ),
     "information-quasicrystal": SlicePreset(
         modules=(
             "D0.Geometry.HurwitzRigidPhaseGenerator",

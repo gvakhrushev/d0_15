@@ -1,3 +1,4 @@
-comparison,observed_integral_ratio,observed_bin_weighted_mean,observed_bin_weighted_error,d0_shell_contact_increment,a_only_delta,neutron_excess_delta
-Ca48/Ca40,1.097,1.0927013557203404,0.017566205599117576,0.0,8,8
-Fe54/Ca48,1.493,1.4740987737804088,0.026305039195257975,6.0,6,-6
+label,A,Z,N,neutron_excess,p_f7_2,n_f7_2,same_shell_contact
+Ca-40,40,20,20,0,0,0,0.0
+Ca-48,48,20,28,8,0,8,0.0
+Fe-54,54,26,28,2,6,8,6.0

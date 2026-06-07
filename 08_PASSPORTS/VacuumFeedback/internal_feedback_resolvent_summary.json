@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INTERNAL_FEEDBACK_RESOLVENT",
+  "operator": "R_N = P U^dagger Q U P",
+  "retained_dim": 3,
+  "truncated_neumann_depth": 15,
+  "negative_controls": [
+    "FAIL_EXTERNAL_MIRROR_MODEL"
+  ],
+  "timestamp": "2026-06-07T01:51:10.866641+00:00"
+}

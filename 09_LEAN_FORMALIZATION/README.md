@@ -8,9 +8,9 @@ core theorems.
 Required checks:
 
 ```bash
-lake build
-lake build D0
-lake build D0.All
+../tools/lean_dev.ps1 build
+../tools/lean_dev.ps1 build D0
+../tools/lean_dev.ps1 build D0.All
 python tools/check_no_sorry_in_core.py
 python tools/check_claim_map_coverage.py
 ```
@@ -18,7 +18,7 @@ python tools/check_claim_map_coverage.py
 Optional acceleration:
 
 ```bash
-lake exe cache get
+../tools/lean_dev.ps1 exe cache get
 ```
 
 Known Windows cache issue: `lake exe cache get` may fail when the global
@@ -41,14 +41,17 @@ Rebuild from a clean checkout:
 
 ```bash
 cd 09_LEAN_FORMALIZATION
-lake update
-lake exe cache get   # optional, speeds up mathlib
-lake build
-lake build D0
-lake build D0.All
+../tools/lean_dev.ps1 update
+../tools/lean_dev.ps1 exe cache get   # optional, speeds up mathlib
+../tools/lean_dev.ps1 build
+../tools/lean_dev.ps1 build D0
+../tools/lean_dev.ps1 build D0.All
 ```
 
-Do not commit `.lake/` or generated cert result files.
+Do not commit `.lake/` or generated cert result files. On Windows, the repo
+runner keeps `.lake` as a junction to an external cache root:
+`$HOME/.d0_lean_cache/D0_v14/09_LEAN_FORMALIZATION/.lake`. Set
+`D0_LEAN_CACHE_ROOT` to override that location.
 
 If you previously used a custom absolute path in `lakefile.lean`, remove it
 before sharing or cloning on another machine. The portable default is strongly

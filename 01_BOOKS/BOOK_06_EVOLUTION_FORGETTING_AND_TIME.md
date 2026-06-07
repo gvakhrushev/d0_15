@@ -1,5 +1,33 @@
 ﻿# BOOK 06 вЂ” Evolution, forgetting and time
 
+## 06.v15 Active time/evolution sector law
+
+Time arrow in D0 is not a slogan. It is the ordering induced by normalized coarse-grained feedback channels.
+
+```text
+hat Phi_N(rho) = Phi_N(rho) / Tr Phi_N(rho)
+```
+
+Entropy monotonicity is a theorem only when the channel is normalized, coarse-grained and entropy-monotone.
+
+Exact sync token:
+
+```text
+c_D0 = 1 tick gauge
+```
+
+This is a dimensionless tick gauge, not an SI prediction. Formal owner:
+
+```text
+D0.Bridge.finite_causal_tick_section_cone_speed_eq_one
+```
+
+Gravity runtime boundary tokens: eta4 terminal signature, delta0 finite readout cut, heat trace scale is internal, not SI time.
+
+## 06.30a Time evolution over the φ-quasicrystalline hull
+
+The time operator supplies the non-periodic ordered runtime; `toral_runtime_supplies_quasicrystal_order`. Tick/Lorentz sync: `06.36 v14 tick-gauge closure`; `D0.Bridge.FiniteCausalTickSection`; `D0.Bridge.finite_causal_tick_section_cone_speed_eq_one`; `D0.Bridge.asymmetric_ticks_not_internal_gauge`; `D0.Bridge.FiniteLorentzTickGaugeClosure`. Toral sync: `chi_T(lambda)=lambda^2+lambda-1`; `spec(T)={phi^-1,-phi}`; `Tr(T^n)=(-1)^n L_n`; `xi5 = phi^-5`; `c_D0=1`; `eta4 = diag(1,-1,-1,-1)`.
+
 ## 06.1 Standard reading of evolution and forgetting
 
 D0 `forgetting` is not a metaphor. In this book it means one of the following standard operations, depending on context: conditional expectation onto a retained algebra, partial trace over an environment, Wilsonian coarse-graining, or entropy-selected coupling. The D0 `archive` is the traced-out complement produced by that operation.
@@ -16,9 +44,23 @@ The central rule is:
 }
 ```
 
-Time arrow = entropy growth from repeated unresolved internal feedback return through traced-out complement (closed vacuum feedback recurrence).
+Time arrow = ordered index induced by normalized or coarse-grained feedback updates whose dephased finite-window entropy is nondecreasing.
 
 Tick quotient and subsystem splits (A|A^c) induce retained asymmetry bias between S3 sectors (scaffold).
+
+The feedback-time statement requires a declared channel discipline: normalize
+after readout, embed the update into an admissible channel, or assign entropy
+only after the specified dephasing/coarse-graining map. Time is not entropy
+itself.
+
+For feedback updates the normalized channel form is written
+
+```math
+\widehat\Phi_N(\rho)={\Phi_N(\rho)\over\operatorname{Tr}\Phi_N(\rho)}
+```
+
+when the denominator is positive. Entropy monotonicity is not claimed for an
+unnormalized raw feedback operator.
 
 Equivalently,
 
@@ -808,7 +850,6 @@ DSS echoing (critical gravitational collapse) is the log-time recurrence counter
 Finite horizon capacity saturation is a ordered finite evolution halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref D0-BH-CAP-00x and Book 07 §07.50).
 delta0 finite readout cut
 heat trace scale is internal, not SI time
-```
 
 ## 06.37 П†вЃµ torus invariant and ordered finite evolution quasicrystal geometry (Phi^5 Torus Invariant)
 

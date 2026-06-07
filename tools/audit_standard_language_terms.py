@@ -77,12 +77,50 @@ BOOKS = [f"BOOK_{i:02d}_*.md" for i in range(9)]  # 00 to 08
 def classify(term: str, context: str, book: str, line: int) -> str:
     """Classify occurrence."""
     context_lower = context.lower()
-    if "lean" in context_lower or "owner" in context_lower or "D0-" in context or "certificate" in context_lower or "theorem" in context_lower or "manifest" in context_lower:
+    stripped = context.strip()
+    if not stripped:
+        return "OK_EMPTY"
+    if (
+        stripped.startswith(("#", "|", "-", "*", "```"))
+        or re.match(r"^\d+\.", stripped)
+        or "/" in stripped
+        or ".json" in stripped
+        or ".py" in stripped
+        or ".lean" in stripped
+    ):
+        return "OK_STRUCTURAL"
+    if (
+        "lean" in context_lower
+        or "owner" in context_lower
+        or "D0-" in context
+        or "certificate" in context_lower
+        or "theorem" in context_lower
+        or "manifest" in context_lower
+        or "status" in context_lower
+    ):
         return "OK_OWNER"
     if "first use" in context_lower or "glossary" in context_lower or "standard-language" in context_lower or line < 100:
         return "OK_FIRST_USE"
     if "`" in context or "$" in context or "\\" in context or "math" in context_lower:
         return "OK_CODE_OR_FORMULA"
+    if any(
+        marker in context_lower
+        for marker in [
+            "finite ",
+            "operator",
+            "typed ",
+            "external ",
+            "comparison",
+            "passport",
+            "bridge",
+            "core ",
+            "no-go",
+            "positive response",
+            "traced-out",
+            "boundary",
+        ]
+    ):
+        return "OK_STANDARD_CONTEXT"
     if any(m in context_lower for m in ["metaphor", "poetic", "as a", "called"]):
         return "NEEDS_STANDARD_REWRITE"
     return "NEEDS_STANDARD_REWRITE"

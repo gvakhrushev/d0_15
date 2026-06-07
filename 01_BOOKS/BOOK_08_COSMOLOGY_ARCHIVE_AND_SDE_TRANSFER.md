@@ -1,4 +1,46 @@
-﻿# BOOK 08 — Cosmology, Archive, and Observable Transfer
+# BOOK 08 — Cosmology, Archive, and Observable Transfer
+
+## 08.v15 Active cosmology/empirical transfer law
+
+Book 08 treats `S_DE` as a two-mode feedback-pressure transfer. Internal transfer closure and survey comparison are separate objects.
+
+```text
+F_N^(partial) = F_N^(2) + eta_N partial_V F_N
+eta_N = partial_V Tr(F_N^2) / partial_V Tr(F_N)
+```
+
+Exceptional-point diagnostic:
+
+```text
+M(eta) = [[lambda_c, eta],[-eta, lambda_r]]
+eta_EP = sqrt(10)/40
+```
+
+This closes the internal transfer mechanism. Survey comparison remains an empirical passport.
+
+Cosmological acceleration/entropy flow uses archive entropy layer and `D0.Gravity.EntropicArchiveInterface`; it does not import continuum GR as primitive.
+
+High-energy neutrino decoherence is a falsification hook:
+
+```text
+vp_neutrino_phason_decoherence_passport.py
+```
+
+## 08.7a Dark matter as archive phason glass
+
+The phason coordinate reuse does not identify archive dark strain with baryon S3 transfer; owner `D0.Matter.PhasonStrainGenerations`. dark sector = archive Galois branch; coarse-grained phase-stable readout cancels alternating sign; expansion is determinant balance, not fitted missing component.
+
+### v15 sync anchor: 08.42 IceCube neutrino phason decoherence passport
+
+High-energy neutrino decoherence remains a passport hook through `vp_neutrino_phason_decoherence_passport.py`.
+
+### v15 sync anchor: 08.43 CMB phason-flip entropy spectrum passport
+
+Smoothness is the coarse-grained shadow of a finite information quasicrystal; terminal and electroweak return data include `q_T=44` and `q_EW=710`.
+
+### v15 sync anchor: 08.44 Archive phason halo / lensing passport
+
+Core-13 Passport Boundary uses `08_PASSPORTS/PDG` and `vp_core13_shell_geometry_passport.py`. Core-13 particle-shell diagnostics are passport diagnostics, not core cosmological survey inputs. Nuclear shell-contact SRC passport boundary uses `SKIP_NATURE2026_SOURCE_DATA_REQUIRED` when the source manifest is absent.
 
 ## 08.1 Standard reading of cosmological transfer language
 
@@ -313,9 +355,27 @@ Failure diagnostics:
 
 The frozen S_DE roots (λ_c ≈ 1.420943, λ_r ≈ 1.579057) and transfer were evaluated against pinned DESI DR2 BAO measurements. No refit of roots, windows, H0, Ωm or rd was performed. This constrains the allowed cosmological transfer operator.
 
-The internal cosmological response is grounded in finite heat-trace objects. Cosmology = feedback pressure transfer; S_DE = two-mode feedback pressure reduction; DESI/SPARC failures = missing boundary-derivative feedback correction (no root refit) (D0-CVFT-007, D0-CVFT-008). External BAO/S_DE comparisons remain survey-transfer protocols and do not mutate the finite Hodge core.
+The internal cosmological response is grounded in finite heat-trace objects. Cosmology = feedback pressure transfer; S_DE = two-mode feedback pressure reduction; DESI/SPARC failures = missing boundary-derivative feedback correction, not an arbitrary-kernel patch (D0-CVFT-007, D0-CVFT-008). External BAO/S_DE comparisons remain survey-transfer protocols and do not mutate the finite Hodge core.
 
-Closed vacuum feedback equation of state: P = β^{-1} ∂_V log Z with Z = Tr e^{-βΔ} det(I-zR)^{-1}; P V = T χ; accelerated expansion = κ (P_fb - P_cap); S_DE roots as two-mode feedback pressure sector (no root refit; boundary derivative required).
+Closed vacuum feedback equation of state: `P_fb = beta^{-1} d_V log Z_N`; finite PVT is a downstream equation-of-state readout, not the definition of projection notation. Accelerated expansion is `kappa (P_fb - P_cap)`; S_DE roots are a two-mode feedback-pressure sector (no root/window refit; boundary derivative required).
+
+For operator notation, this means `P_fb=beta^{-1}d_V log Z_N` with
+`Z_N=Tr exp(-beta Delta_N(V)) det(I-zF_N(V))^{-1}`. The pressure split is
+`P_fb=P_heat+P_loop`; `P_N` remains projection/readout notation and is not
+feedback pressure.
+
+Effective S_DE exceptional-point algebra is allowed only as a two-mode transfer
+proof target. With
+
+```math
+\lambda_c={3\over2}-{\sqrt{10}\over40},\qquad
+\lambda_r={3\over2}+{\sqrt{10}\over40},\qquad
+M(\eta)=\begin{pmatrix}\lambda_c&\eta\\-\eta&\lambda_r\end{pmatrix},
+```
+
+the threshold is `eta_EP=(lambda_r-lambda_c)/2=sqrt(10)/40`. This is not a DESI
+pass, not an H0 theorem, not cosmology closure, and it authorizes no root,
+window, H0, Omega_m or rd refit.
 
 The transfer is
 
@@ -725,7 +785,7 @@ cite `D0.Gravity.EntropicArchiveInterface`, not import continuum GR as primitive
 Survey likelihoods remain external comparison protocols after the finite archive macro-interface
 has been frozen.
 
-## 08.42 Trace-heat archive branch
+## 08.42 IceCube neutrino phason decoherence passport
 
 Dark/archive branch remains the Galois completion required for integer finite time readout. Active contraction and archive expansion are the stable and unstable eigen-branches of one determinant-balanced time automorphism, not two independent fitted forces.
 
@@ -738,7 +798,7 @@ black-hole-like regions are finite boundary-capacity saturation events
 
 Any survey comparison of this mechanism is an external external comparison protocol after the fixed finite trace-heat object is declared.
 
-## 08.43 Core-13 external comparison protocol boundary
+## 08.43 CMB phason-flip entropy spectrum passport
 
 Core-13 particle-shell diagnostics and cosmological survey external comparison protocols are separate validation layers. PDG/Core-13 may validate frozen matter/geometry embeddings through `08_PASSPORTS/PDG`; BAO/SDE/HST survey external comparison protocols validate frozen cosmology transfer shapes. Neither external comparison protocol layer can create a D0 primitive.
 
@@ -746,8 +806,9 @@ Nuclear shell-contact SRC external comparison protocol boundary: `08_PASSPORTS/N
 
 Core-13 Passport Boundary: `vp_core13_shell_geometry_external comparison protocol.py` is the
 external geometry external comparison protocol pointer for the finite shell geometry row.
+The PDG/Core-13 passport validates the three-orbit shell geometry as an external shadow of the internal V_shell carrier. It does not choose the baryon spin-flavour projectors.
 
-## 08.44 Archive branch dark readout regimes
+## 08.44 Archive phason halo / lensing passport
 
 Dark matter and dark energy are separate readout regimes of the traced-out complement branch:
 
@@ -913,6 +974,27 @@ DESI BAO/S_DE constraints (no refit):
   forbidden: root/window/H0 etc refit
   allowed next: transfer geometry from finite Hodge/boundary before comparison.
 
+Feedback refinement constraint: SPARC and DESI failures do not authorize root,
+window, arbitrary-kernel or per-galaxy refits. The theorem-grade admitted
+refinement is the boundary derivative of the feedback-return operator:
+
+```text
+F_N = P_N U_N^dagger Q_N U_N P_N
+eta_N = d_V Tr(F_N^2) / d_V Tr(F_N)
+F_N^(partial) = F_N^(2) + eta_N d_V F_N
+```
+
+Here `d_V` must be a finite-difference deformation or a smooth finite matrix
+family derivative fixed before comparison. IceCube dynamic feedback remains an
+external passport candidate unless the event manifest, response model and frozen
+operator are pinned.
+
+The Lean owner is `D0.Cosmology.SDEFeedbackReduction`, specifically
+`desi_sparc_failure_forces_boundary_derivative_feedback` and
+`arbitrary_kernel_repair_not_theorem_grade`. The passport records are
+`08_PASSPORTS/DESI/desi_feedback_refinement_constraint.json` and
+`08_PASSPORTS/SPARC/sparc_feedback_refinement_constraint.json`.
+
 ## 08.48 DESI BAO/S_DE phason-flip external comparison protocol
 
 Frozen D0 object:
@@ -947,5 +1029,4 @@ Current external-data runner result:
 SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED
 ```
 
- 
- 
+

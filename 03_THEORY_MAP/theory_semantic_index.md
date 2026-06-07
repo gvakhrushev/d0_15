@@ -8,29 +8,39 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTION`: 1
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 6
 - `BRIDGE-CALIBRATION`: 2
+- `CERT-CANDIDATE`: 3
 - `CERT-CLOSED`: 9
-- `CORE-FORMALIZED`: 88
+- `CORE-FORMALIZED`: 89
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 1
+- `EMPIRICAL-PASSPORT-CANDIDATE`: 1
 - `EXTERNAL-BACKGROUND`: 1
+- `LOWER-BOUND-TARGET`: 1
 - `NO-GO`: 7
-- `NO_GO_PROVED`: 7
+- `NO_GO_PROVED`: 8
+- `OPERATOR-SCAFFOLD-CERTIFIED`: 1
+- `PROOF-OBLIGATION-EXPOSED`: 1
+- `PROOF-TARGET`: 1
+- `SPIN-FLAVOUR-TRANSFER-CERTIFIED`: 1
+- `THEOREM-TARGET-SHARPENED`: 1
 
 ## Type counts
 
 - `bridge`: 13
 - `certificate`: 9
-- `core`: 89
+- `core`: 90
 - `deprecated`: 2
-- `no-go`: 14
+- `frontier`: 10
+- `no-go`: 15
 
 ## Domain counts
 
-- `cosmology`: 16
+- `cosmology`: 18
 - `empirical_passport`: 5
 - `external_background`: 1
 - `formal_core`: 75
+- `frontier`: 10
 - `gauge_bridge`: 16
 - `interpretation_spine`: 1
 - `rg`: 3
@@ -222,6 +232,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: Zero-mean modes must have negative (underdense) and positive components.
 
+### D0-CVFT-001A
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_00/01/02/03`
+- module: `D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction`
+- theorem: `Dynamics.internal_feedback_forced_by_split;Dynamics.internal_feedback_resolvent_series;Cosmology.feedback_determinant_return_cycles;Cosmology.feedback_variation_universal_source;Cosmology.feedback_pressure_trace_log`
+- cert: `vp_closed_vacuum_feedback_full_wave.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Closed finite feedback operator core F_N=P_N U_N^dagger Q_N U_N P_N with resolvent determinant trace variation and feedback pressure law.
+
 ### D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001
 
 - type: `core`
@@ -247,6 +270,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: S_DE relaxation modes are gap-labeled.
+
+### D0-CVFT-NOGO-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `cosmology`
+- book: `BOOK_05/08`
+- module: `D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FiniteFeedbackEquationOfState;D0.Matter.TerminalFeedbackModes;D0.Cosmology.SDEFeedbackReduction`
+- theorem: `Dynamics.external_mirror_model_forbidden;Cosmology.ideal_gas_core_postulate_forbidden;Matter.matter_as_arbitrary_eigenvalue_forbidden;Cosmology.desi_root_refit_repair_forbidden;Cosmology.desi_window_refit_repair_forbidden;Cosmology.arbitrary_kernel_repair_not_theorem_grade`
+- cert: `vp_closed_vacuum_feedback_full_wave.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: External mirror vacuum photon-acceleration interpretation ideal-gas postulate arbitrary-eigenvalue matter and DESI/SPARC root window or arbitrary-kernel repairs are forbidden.
 
 
 ## Domain: empirical_passport
@@ -1309,6 +1345,139 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: A-only and N/Z-only SRC scalar promotion fails on the finite Ca/Fe shell-contact witness.
+
+
+## Domain: frontier
+
+### D0-CVFT-F4
+
+- type: `frontier`
+- release_status: `CERT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_02/05`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open.
+
+### D0-CVFT-F7
+
+- type: `frontier`
+- release_status: `CERT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof.
+
+### D0-CVFT-F8
+
+- type: `frontier`
+- release_status: `CERT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure.
+
+### D0-CVFT-F5
+
+- type: `frontier`
+- release_status: `EMPIRICAL-PASSPORT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: IceCube dynamic feedback is an external passport candidate until data manifest response and frozen operator are pinned.
+
+### D0-CVFT-F6
+
+- type: `frontier`
+- release_status: `LOWER-BOUND-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/07`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem.
+
+### D0-CVFT-F3
+
+- type: `frontier`
+- release_status: `OPERATOR-SCAFFOLD-CERTIFIED`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_baryon_s3_scaffold.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open.
+
+### D0-CVFT-F1
+
+- type: `frontier`
+- release_status: `PROOF-OBLIGATION-EXPOSED`
+- domain: `frontier`
+- book: `BOOK_02/04/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion.
+
+### D0-CVFT-001B
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/06/07/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Sector projection package points to CVFT-F1 through CVFT-F8 and may not close matter gravity cosmology horizon gauge or empirical passport rows automatically.
+
+### D0-CVFT-F3B
+
+- type: `frontier`
+- release_status: `SPIN-FLAVOUR-TRANSFER-CERTIFIED`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_baryon_spin_flavour_40_56.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded.
+
+### D0-CVFT-F2
+
+- type: `frontier`
+- release_status: `THEOREM-TARGET-SHARPENED`
+- domain: `frontier`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen.
 
 
 ## Domain: gauge_bridge

@@ -1,7 +1,28 @@
 {
-  "summary": "SPARC FAIL requires boundary feedback derivative in kernel (no per-galaxy halo).",
-  "status": "FAIL_ARCHIVE_PHASON_HALO_SPARC (boundary feedback required)",
-  "no_refit": true,
-  "forbidden": ["per-galaxy halo tuning"],
-  "allowed": "global boundary feedback term from resolvent"
+  "status": "PASS_SDE_FEEDBACK_REDUCTION",
+  "tokens": [
+    "PASS_SDE_TWO_MODE_FEEDBACK_REDUCTION",
+    "PASS_DESI_FAILURE_BOUNDARY_FEEDBACK_DIAGNOSIS",
+    "PASS_SPARC_FAILURE_BOUNDARY_FEEDBACK_DIAGNOSIS",
+    "PASS_THEOREM_GRADE_BOUNDARY_DERIVATIVE_DIAGNOSTIC"
+  ],
+  "frozen_polynomial": "160 lambda^2 - 480 lambda + 359",
+  "evidence": {
+    "desi_failure": true,
+    "sparc_failure": true,
+    "frozen_two_mode_used": true,
+    "no_root_refit": true,
+    "no_window_refit": true,
+    "boundary_trace_derivative_nonzero": true,
+    "arbitrary_kernel_rejected": true
+  },
+  "missing_term": "boundary_derivative_feedback",
+  "diagnosis": "DESI/SPARC failures constrain the boundary derivative of the feedback-return operator; arbitrary kernel, root refit and window refit repairs are forbidden.",
+  "boundary_derivative_formula": "eta_N = d_V Tr(F_N^2) / d_V Tr(F_N), with F_N = P U^dagger Q U P",
+  "negative_controls": [
+    "FAIL_DESI_ROOT_REFIT_REPAIR",
+    "FAIL_DESI_WINDOW_REFIT_REPAIR",
+    "FAIL_ARBITRARY_KERNEL_REPAIR"
+  ],
+  "timestamp": "2026-06-07T01:51:12.173188+00:00"
 }

@@ -1,5 +1,94 @@
 ﻿# BOOK 04 — Spectrum, Matter, and Finite Selector Theory
 
+## 04.v15 Active matter sector law
+
+Book 04 is a sector law, not a list of disconnected particle claims. A D0 matter candidate is a terminally projected near-critical feedback mode:
+
+```text
+F_N psi_j = r_j psi_j
+|z r_j| approx 1
+P_term psi_j = psi_j
+R_N = D_N^dagger D_N
+```
+
+Naming a mode as electron, neutrino, meson, baryon, CKM or Higgs requires the finite operator owner and the bridge/passport boundary.
+
+### Resonance law
+
+Complex resonance data live in:
+
+```text
+U_eff = P_N U_N P_N
+```
+
+or:
+
+```text
+H_eff(E)=H_PP+H_PQ(E-H_QQ)^(-1)H_QP
+```
+
+If:
+
+```text
+U_eff psi = lambda psi
+lambda = exp(-Gamma + i E)
+```
+
+then:
+
+```text
+E = arg(lambda)
+Gamma = -log |lambda|
+```
+
+### Baryon scaffold
+
+```text
+V_B = V_shell^(tensor 3)
+dim V_B = 27
+Pi_S3 = 1/6 sum_{sigma in S3} P_sigma
+dim Pi_S3 V_B = 10
+```
+
+The S3 carrier/symmetrizer scaffold is certified. Physical spin/flavour/mass assignment is the next transfer layer. The phrase `full baryon mass table closed` is forbidden without spin/flavour transfer, frozen pole normalization and PDG passport.
+
+### Selector support origin
+
+Book 04 support sizes must come from finite combinatorics, not detached fixtures:
+
+```text
+combinatorial origin of the supports
+D0.Matter.Book04CombinatorialSelectorOrigins
+```
+
+Selector and CKM theorem owners:
+
+```text
+D0.Matter.StrictSelectorCertificate
+D0.Matter.ckm_no_free_matrix_at_fixed_bases
+D0.Matter.book04_selector_claim_no_free_alternative
+D0.Matter.Book04FullSupportSelectors
+D0.Matter.CKMBasisOrigin
+D0.Matter.CKMNontrivialFlavourAlgebra
+D0.Matter.MesonDefectTransferOrigin
+BaryonS3Symmetrizer
+HiggsScalarProjectorConstructive
+```
+
+Concrete selector sync: Electroweak radial depth as a concrete selector; `D0.Matter.electroweakDepth35FullSupportClaim`; `D0.Matter.chargedLeptonElectronTerminalClaim`; `D0.Matter.protonReadout306FullSupportClaim`; `D0.Matter.neutronArchiveSiblingClaim`; `D0.Matter.betaUnlockDepth19FullSupportClaim`; full-support finite selector owners use `Fin 71`, `Fin 613`, `Fin 39`. Those windows are no longer the active theory.
+
+CKM origin sync: CKM as finite basis origin, not a free matrix; `D0.Matter.CKMBasisOrigin`; `ckm_origin_candidate_matrix_unique`; `ckm_no_free_matrix_at_fixed_basis_origin`; finite up/down basis-origin selectors; concrete physical score terms.
+
+Torus/Core13 and phason-baryon sync: `torus_geometry_forces_generation_selector_noncommute`; `torus_shell_noncommutativity_forces_nonpermutation_overlap_source`; `BaryonTripleShellCarrier`; Torus shell radius is not a Higgs VEV; Matter generations and baryons as phason modes; `baryon_phason_symmetric_sector_dim_eq_ten`.
+
+## 04.U Matter as defects and gap-labeled spectra of the φ-quasicrystal hull
+
+This is the v15 ASCII sync header for the phi-quasicrystal matter reading; the active operator content remains the selector/defect/gap-label law above.
+
+Neutrino is interpreted as neutral bulk phason wave; `neutral_phason_wave_has_no_em_coupling` is the finite owner token.
+
+Operator-boundary firewall: Baryon multiplet boundary as a closed no-go, Meson/chiral boundary as a closed no-go, Higgs/scalar projector boundary, `D0.Matter.book04_operator_boundaries_closed`, `nucleon_line_cannot_promote_full_baryon_multiplet`, `lower_hodge_400_cannot_promote_meson_masses`, `missing_scalar_projector_cannot_promote_higgs_yukawa_core`.
+
 ## 04.1 Role of the matter book
 
 Book 04 is the first place where the finite D0 construction is read as matter.  The detector, condensed support, graph birth, action gate and proof calculus are already fixed in Books 01--03.  Therefore the matter book is not allowed to introduce new primitive scales, new post-hoc labels or a fitted particle table.
@@ -17,13 +106,173 @@ finite carrier/support
 The central rule is:
 
 ```math
-\boxed{\text{finite support is not a physical mass by itself. Matter = terminally stabilized feedback eigenmodes (Rψ = rψ, |zr|≈1, P_term ψ=ψ); Higgs rank-2 feedback subspace; meson domain wall feedback stretch on C1; baryon S3-stabilized feedback in V⊗V⊗V (D0-CVFT-005).}}
+\boxed{\text{finite support is not a physical mass by itself. Matter = terminally stabilized feedback eigenmodes (Fψ = rψ, |zr|≈1, P_term ψ=ψ); Higgs rank-2 feedback subspace; meson domain wall feedback stretch on C1; baryon S3-stabilized feedback in V⊗V⊗V (D0-CVFT-005).}}
 ```
 
 Matter defect/domain-wall operators are finite projected operators on the
 1-cochain sector of the graded incidence complex.
 
 A support number becomes a physical comparison only after a typed operator/readout and a declared transfer map have been supplied before seeing the target table.
+
+Here `F=P U^dagger Q U P` is feedback-return; it is not the positive response
+operator `R=D^dagger D` used in Born/readout formulas.
+
+Bare positive `F` supplies terminal stability and leakage diagnostics only. Complex
+mass/width or resonance-pole language must be read from an effective projected
+transfer such as `U_eff=PUP`, or from an explicitly declared Feshbach-Schur
+reduction. Coefficient-origin trace/residue, hadron resonance transfer and
+dynamic neutrino decoherence are frontier programs until those operators and
+external passports are frozen.
+
+### 04.CVFT.F3 Baryon resonance pole scaffold
+
+The frozen operator family proves the nucleon line. It does not prove a full
+baryon multiplet table. The current no-go is replaced by a constructive
+pole-transfer scaffold. Internal objects:
+
+```math
+V_B=V_shell^{\otimes3},\qquad \dim V_B=27,
+\qquad \Pi_{S_3}={1\over6}\sum_{\sigma\in S_3}P_\sigma,
+\qquad V_B^{sym}=\Pi_{S_3}V_B,\qquad \dim V_B^{sym}=10.
+```
+
+This is a 10D symmetric carrier / decuplet-candidate carrier, not a physical
+baryon resonance table. Complex poles may be studied only through
+`U_eff^B=Pi_S3(PUP)Pi_S3`, with pole equation `det(I-zeta U_eff^B)=0`, or a
+declared Feshbach-Schur form. Spin labels, flavour labels, mass/width
+assignment, PDG passport, GeV conversion and QCD/EFT bridge remain external.
+Nucleon-line-to-full-multiplet shortcuts, random non-Hermitian resonance
+operators, complex poles from bare positive `F`, and PDG sorting before frozen
+poles are forbidden.
+
+This scaffold is closed only at carrier/symmetrizer level. It is not a baryon
+mass table.
+
+### 04.CVFT.F3b Baryon spin-flavour transfer layer
+
+D0 now has two internal baryon spin-flavour carriers before any PDG passport:
+
+1. The rank-40 fully symmetric separable sector:
+
+```math
+\Pi_B^{40}=\Pi_{S_3}^{flavour}\otimes\Pi_{S_3}^{spin}.
+```
+
+2. The rank-56 full diagonal exchange-symmetric carrier:
+
+```math
+\Pi_B^{56}={1\over6}\sum_{\sigma\in S_3}
+P_\sigma^{flavour}\otimes P_\sigma^{spin}.
+```
+
+The rank-40 sector is a canonical subcarrier of the rank-56 carrier. The
+remaining 16 dimensions are internal mixed spin-flavour states. No PDG names,
+no physical masses, and no GeV widths are assigned at this layer.
+
+The internal pole laws are:
+
+```math
+\det(I-\zeta U_{\rm eff}^{B,40})=0,\qquad
+\det(I-\zeta U_{\rm eff}^{B,56})=0,
+```
+
+where:
+
+```math
+U_{\rm eff}^{B,k}=\Pi_B^k PUP \Pi_B^k,\qquad k\in\{40,56\}.
+```
+
+These compressed pole operators are contractions, `|U_eff^(B,k)| <= 1`. The
+contraction is strict only on subspaces with nonzero feedback leakage.
+
+### 04.CVFT.F3c Core-13 orbitals and baryon spin-flavour transfer
+
+The existing PDG/Core-13 passport does not merely show that masses have φ-lattice representatives. Its structural content is the frozen three-orbit shell geometry. D0 now identifies this three-orbit geometry with the finite shell carrier
+
+[
+V_{\rm shell}
+=============
+
+\operatorname{span}{|9\rangle,|11\rangle,|13\rangle}
+\cong
+\mathbb C^3.
+]
+
+The baryon flavour carrier is the three-body lift
+
+[
+\mathcal V_B^{flavour}
+======================
+
+V_{\rm shell}^{\otimes3},
+\qquad
+\dim=27.
+]
+
+The exchange-symmetric flavour sector has rank
+
+[
+\dim\operatorname{Sym}^3(\mathbb C^3)=10.
+]
+
+With the binary spin dyad (D_2\cong\mathbb C^2), D0 obtains two internal spin-flavour carriers before any PDG passport:
+
+[
+\Pi_B^{40}
+==========
+
+\Pi_{S_3}^{flavour}
+\otimes
+\Pi_{S_3}^{spin},
+\qquad
+\operatorname{rank}=40,
+]
+
+and
+
+[
+\Pi_B^{56}
+==========
+
+\frac16
+\sum_{\sigma\in S_3}
+P_\sigma^{flavour}
+\otimes
+P_\sigma^{spin},
+\qquad
+\operatorname{rank}=56.
+]
+
+The rank-40 carrier is a canonical subcarrier of the rank-56 diagonal spin-flavour carrier:
+
+[
+\Pi_B^{56}\Pi_B^{40}=\Pi_B^{40},
+\qquad
+\Pi_B^{40}\Pi_B^{56}=\Pi_B^{40}.
+]
+
+Thus the internal decomposition is
+
+[
+56=40+16.
+]
+
+The rank-16 complement is the mixed spin-flavour diagonal-symmetric sector. Anonymous pole sets are then defined by
+
+[
+U_{\rm eff}^{B,k}
+=================
+
+\Pi_B^kPUP\Pi_B^k,
+\qquad
+k\in{40,56},
+]
+
+[
+\det(I-\zeta U_{\rm eff}^{B,k})=0.
+]
+
+PDG names, GeV conversion, physical mass assignment and decay widths remain passport-layer operations. The internal spin-flavour carrier is finite and closed before those external labels are applied.
 
 ## 04.2 The theorem owners used by this book
 
@@ -61,7 +310,7 @@ The active matter claims use the following proof owners.
 
 The text below is written theorem-first: each strong claim either has one of these owners, a self-contained certificate, or an explicit comparison boundary.
 
-## 04.3 Matter objects are finite variational selectors, not passports
+## 04.3 Matter objects are selectors, not passports
 
 The previous reading of Book 04 mixed three different things: internal finite objects, dressed Standard-Model comparison values and external data checks. The active reading removes that ambiguity.
 
@@ -86,7 +335,7 @@ The D0 vacuum is the condensed/profinite hull of all admissible finite detector 
 
 The matter generations and baryons as phason modes are theorem-owned by `D0.Matter.PhasonStrainGenerations`. The phason carrier is exactly `D0.Geometry.TorusShell`, so the generation/phason mode count is the already proved three-shell torus count.
 
-The ordered carrier is `BaryonPhasonTriple = PhasonMode x PhasonMode x PhasonMode`, hence dimension `27`. The full baryon multiplet decuplet carrier is not a nucleon-line extension; it is the S3-symmetric phason triple sector of dimension `10`, with `baryon_phason_symmetric_sector_dim_eq_ten`.
+The ordered carrier is `BaryonPhasonTriple = PhasonMode x PhasonMode x PhasonMode`, hence dimension `27`. The full baryon multiplet 10D symmetric carrier / decuplet-candidate carrier is not a nucleon-line extension; it is the S3-symmetric phason triple sector of dimension `10`, with `baryon_phason_symmetric_sector_dim_eq_ten`.
 
 ### 04.4.2 Mesons as phason domain walls
 
@@ -578,7 +827,7 @@ D0.Matter.baryon_multiplet_requires_spin_flavour_decuplet_operator
 D0.Matter.nucleon_line_cannot_promote_full_baryon_multiplet
 ```
 
-The decuplet carrier is not the rank-one invariant sector of a 3-dimensional
+The 10D symmetric carrier / decuplet-candidate carrier is not the rank-one invariant sector of a 3-dimensional
 vertex representation.  It is the S3-symmetric sector of the tensor carrier
 
 ```text
@@ -586,7 +835,7 @@ BaryonTripleCarrier := Fin 3 x Fin 3 x Fin 3
 ```
 
 so the ordered carrier has dimension `27`, and the sorted-orbit representatives
-have cardinality `10`.  This is the finite decuplet carrier; it is not a QCD,
+have cardinality `10`.  This is the finite 10D symmetric carrier / decuplet-candidate carrier; it is not a QCD,
 PDG or mass-spectrum claim.
 
 The required typed operator must contain, before comparison,
@@ -594,7 +843,7 @@ The required typed operator must contain, before comparison,
 ```text
 spin resolution;
 flavour resolution;
-S3 decuplet carrier closure;
+S3 10D symmetric carrier / decuplet-candidate carrier closure;
 transfer window for unstable-resonance comparison.
 ```
 
@@ -607,7 +856,7 @@ nucleon_line_cannot_promote_full_baryon_multiplet
 
 says that this operator cannot be re-read as a full baryon multiplet.  The
 finite reason is that an antisymmetric line sector is annihilated by the S3
-symmetrizer, while the decuplet carrier is fully symmetric.  Therefore the
+symmetrizer, while the 10D symmetric carrier / decuplet-candidate carrier is fully symmetric.  Therefore the
 previous direct `Delta, Lambda, Omega` formula flow is not merely вЂњnot
 certifiedвЂќ; it is blocked under the present operator family.  A numerical
 agreement with PDG resonance masses cannot supply the missing operator.
@@ -795,7 +1044,7 @@ The active matter book uses the following classification.
 | anomaly behavior | finite anomaly-preservation theorem |
 | electroweak ratio | finite radial/runtime comparison; Higgs/Yukawa core promotion blocked until scalar projector bridge is supplied |
 | proton/neutron | terminal-destructive and beta/archive readouts; benchmarks not inputs |
-| full baryon multiplet | S3 tensor decuplet carrier exists; current nucleon-line operator is still blocked from full multiplet promotion | masses and unstable-resonance comparison require spin/flavour transfer and external passport |
+| full baryon multiplet | S3 tensor 10D symmetric carrier / decuplet-candidate carrier exists; current nucleon-line operator is still blocked from full multiplet promotion | masses and unstable-resonance comparison require spin/flavour transfer and external passport |
 | mesons | typed edge-generation defect-transfer algebra exists; lower-Hodge seed alone is internally degenerate and blocked | physical pion/kaon/rho masses require transfer window and external comparison |
 | SM/EFT numbers | dressed comparison values, not core theorems |
 | external carrier models | admissibility comparisons, not foundations |
@@ -810,7 +1059,7 @@ A Book 04 claim fails if any of the following occurs:
 4. a Standard-Model comparison uses hidden fields, hidden thresholds or post-hoc scheme choices;
 5. a hadron row uses PDG data to select the D0 operator;
 6. a meson row promotes `400` directly to a physical mass;
-7. a baryon row promotes the nucleon-line operator to a full multiplet without spin/flavour/S3-decuplet carrier data;
+7. a baryon row promotes the nucleon-line operator to a full multiplet without spin/flavour/S3 10D symmetric carrier / decuplet-candidate carrier data;
 8. a Higgs/Yukawa row uses a second mass anchor before the scalar projector is supplied;
 9. an external carrier comparison is used as a D0 axiom.
 
@@ -890,7 +1139,7 @@ torus noncommuting shell finite variational selectors
 
 The Lean owners are now explicit: `D0.Matter.CKMNontrivialFlavourAlgebra` proves `overlap_response_can_force_nonpermutation_transfer` and `nontrivial_flavour_defect_positive_response`; `D0.Matter.MesonDefectTransferOrigin` proves `meson_support_projector_idempotent` and `meson_positive_defect_transfer_admissible` on the typed `Edge x Generation` carrier.
 
-For baryons, the decuplet carrier is not a nucleon-line extension. It is the S3-symmetric triple sector over the three torus shell roles; the Lean owner `BaryonS3Symmetrizer` exposes `BaryonTripleShellCarrier` and `baryon_triple_shell_card_eq_27`.
+For baryons, the 10D symmetric carrier / decuplet-candidate carrier is not a nucleon-line extension. It is the S3-symmetric triple sector over the three torus shell roles; the Lean owner `BaryonS3Symmetrizer` exposes `BaryonTripleShellCarrier` and `baryon_triple_shell_card_eq_27`.
 
 For Higgs/Yukawa, the scalar projector is connected but not identical to torus geometry. Torus shell radius is not a Higgs VEV, torus aspect ratio is not a Higgs mass, and radial hopping/phase drift are not the scalar projector. The scalar projector remains the minimal positive idempotent matter-transfer bridge compatible with tick/Lorentz and the frozen gauge ledger.
 
