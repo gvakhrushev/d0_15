@@ -14,10 +14,11 @@ noncomputable def feedbackPartition {n : Type} [Fintype n]
   heat / detR
 
 theorem feedback_determinant_return_cycles {n : Type} [Fintype n]
-    (R : D0.Dynamics.FiniteFeedbackOperator n) (z : ℝ) : Prop := True
-  -- -log det(I-zR) = sum (z^m / m) Tr(R^m) : unresolved return cycles
+    (R : D0.Dynamics.FiniteFeedbackOperator n) (z : ℝ) : Prop :=
+  True  -- -log det(I-zR) = sum (z^m / m) Tr(R^m) : unresolved return cycles
 
 theorem feedback_variation_universal_source {n : Type} [Fintype n]
-    (R : D0.Dynamics.FiniteFeedbackOperator n) (z : ℝ) : Prop := True
+    (R : D0.Dynamics.FiniteFeedbackOperator n) (z : ℝ) : Prop :=
+  True
 
 end D0.Cosmology
