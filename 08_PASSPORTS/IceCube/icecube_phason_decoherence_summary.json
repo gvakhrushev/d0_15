@@ -1,8 +1,11 @@
 {
   "mode": "manifest_only",
   "manifest_path": "08_PASSPORTS/IceCube/icecube_manifest.json",
-  "manifest_complete": true,
-  "missing": [],
+  "manifest_complete": false,
+  "missing": [
+    "missing_file:hese12_events",
+    "missing_file:hese12_license"
+  ],
   "status": "SKIP_NEUTRINO_PHASON_DECOHERENCE_EXTERNAL_DATA_REQUIRED",
   "reason": "Default cert mode is manifest-only and never promotes an empirical IceCube pass."
 }

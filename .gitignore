@@ -76,3 +76,15 @@ node_modules/
 
 # BR0 coverage-audit scratch (chunk manifest + per-batch source slices); final ledger lives at 03_THEORY_MAP/GOLDEN_COVERAGE_LEDGER.*
 03_THEORY_MAP/coverage_audit/
+
+# Force-added REAL source the broad NO_GO_*.md / 05_CERTS/*.{md,json} rules would otherwise
+# hide (committed no-go theorems + locked cert params/schemas — not scratch). Un-ignoring
+# them resolves the "tracked-but-ignored" anomaly the hygiene KPI flags.
+!05_CERTS/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md
+!05_CERTS/NO_GO_QNM_DELTA0_OVERTONE_LADDER.md
+!09_LEAN_FORMALIZATION/D0/Spectrum/NO_GO_GENERATION_RAYS_UNDEFINED.md
+!09_LEAN_FORMALIZATION/D0/Spectrum/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md
+!05_CERTS/book04_centered_full_support_selectors.json
+!05_CERTS/bridge_params_schema.json
+!05_CERTS/bridge_schema.json
+!05_CERTS/locked_core_params.json

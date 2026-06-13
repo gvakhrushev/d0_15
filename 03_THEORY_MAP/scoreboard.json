@@ -4482,40 +4482,26 @@
     }
   ],
   "hygiene": {
-    "score": 33.0,
+    "score": 57.2,
     "budget": 100,
-    "penalty_total": 75.0,
+    "penalty_total": 50.8,
     "bonus_total": 8.0,
     "signals": [
       {
         "signal": "tracked_meta_trash",
-        "count": 54,
-        "points": -16.2,
+        "count": 0,
+        "points": -0.0,
         "cap": -20.0,
         "label": "tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release)",
-        "evidence": [
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md"
-        ]
+        "evidence": []
       },
       {
         "signal": "tracked_but_ignored",
-        "count": 8,
-        "points": -8.0,
+        "count": 0,
+        "points": -0.0,
         "cap": -8.0,
         "label": "tracked-but-gitignored files (scratch that should not ship)",
-        "evidence": [
-          "05_CERTS/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md",
-          "05_CERTS/NO_GO_QNM_DELTA0_OVERTONE_LADDER.md",
-          "05_CERTS/book04_centered_full_support_selectors.json",
-          "05_CERTS/bridge_params_schema.json",
-          "05_CERTS/bridge_schema.json",
-          "05_CERTS/locked_core_params.json"
-        ]
+        "evidence": []
       },
       {
         "signal": "tautology_proofs",
@@ -4614,21 +4600,6 @@
         ]
       },
       {
-        "signal": "tracked_meta_trash",
-        "count": 54,
-        "points": -16.2,
-        "cap": -20.0,
-        "label": "tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release)",
-        "evidence": [
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
-          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md"
-        ]
-      },
-      {
         "signal": "path_leaks",
         "count": 501,
         "points": -12.0,
@@ -4643,21 +4614,6 @@
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
-      },
-      {
-        "signal": "tracked_but_ignored",
-        "count": 8,
-        "points": -8.0,
-        "cap": -8.0,
-        "label": "tracked-but-gitignored files (scratch that should not ship)",
-        "evidence": [
-          "05_CERTS/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md",
-          "05_CERTS/NO_GO_QNM_DELTA0_OVERTONE_LADDER.md",
-          "05_CERTS/book04_centered_full_support_selectors.json",
-          "05_CERTS/bridge_params_schema.json",
-          "05_CERTS/bridge_schema.json",
-          "05_CERTS/locked_core_params.json"
-        ]
       },
       {
         "signal": "dev_comments",

@@ -10,12 +10,12 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 33.0 / 100 (penalties **-75.0**, bonuses **+8.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 57.2 / 100 (penalties **-50.8**, bonuses **+8.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
-| `tracked_meta_trash` | 54 | -16.2 | tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release)  ·  e.g. _QUARANTINE/v17_overshoots/01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md, _QUARANTINE/v17_overshoots/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md, _QUARANTINE/v17_overshoots/01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md |
-| `tracked_but_ignored` | 8 | -8 | tracked-but-gitignored files (scratch that should not ship)  ·  e.g. 05_CERTS/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md, 05_CERTS/NO_GO_QNM_DELTA0_OVERTONE_LADDER.md, 05_CERTS/book04_centered_full_support_selectors.json |
+| `tracked_meta_trash` | 0 | -0 | tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release) |
+| `tracked_but_ignored` | 0 | -0 | tracked-but-gitignored files (scratch that should not ship) |
 | `tautology_proofs` | 20 | -18 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)  ·  e.g. Bridge/PhiDiscreteRG.lean:1, Cosmology/PhasonFlipEntropy.lean:2, Detector/WeakCouplingClassicalization.lean:2 |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
@@ -26,7 +26,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 80 | +8 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `tautology_proofs` (-18); `tracked_meta_trash` (-16.2); `path_leaks` (-12); `orphan_proof_targets` (-9.8); `tracked_but_ignored` (-8)
+**Top cleanup actions (most points to regain):** `tautology_proofs` (-18); `path_leaks` (-12); `orphan_proof_targets` (-9.8); `dev_comments` (-8); `corpus_errors` (-3)
 
 ## Where to gain points next (cheapest promotions)
 
