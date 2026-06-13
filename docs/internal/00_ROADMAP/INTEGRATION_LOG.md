@@ -376,3 +376,43 @@ The other six (signature-3+1 — proves `Adj31.rank = 3` directly via `Matrix.ra
 real finite content. All promoted LEAN_PROVED / CORE-FORMALIZED. Aggregates regenerated (**104** leanCoreProved
 entries in ClaimMap), idempotent; full guard suite green (validate/firewall/no_sorry/coverage/aggregates/
 book-guards). **`d0_score` 2660 → 2777 (70.6% → 73.7%)**: Xi5 +13, the 8 +104.
+
+---
+
+# ITERATION 2 — Hygiene-KPI · Cleanup · Publication · Lean honesty (DONE)
+
+Audit (3 read-only agents) found: books carried publication-blockers + a flood of trace metadata in the
+body; Lean had 17 tautology "proofs"; the repo carried a vendored 2nd repo + quarantine + process logs; and
+the KPI only rewarded strength, never cleanup. Result of Iteration 2: a **second KPI axis (hygiene 33 → 100)**,
+a clean publish tree, publication-grade books with an apparatus layer, and an honest Lean ledger.
+
+- **Phase H — hygiene/refactor KPI.** `HYGIENE_*` in `d0_status_model.py` + `hygiene_report()` in `d0_score.py`:
+  a 100-pt second axis from deterministic git+guard signals (tracked meta-trash, tautology proofs, sorry/axiom,
+  phantom certs, orphan PROOF-TARGET, dev comments, prose repo-paths, real in-project .lake; bonus for net
+  deletions). New `## Repository hygiene / refactor score` SCOREBOARD section + `scoreboard.json.hygiene`.
+  Strength model untouched. Baseline **33/100** (dirty).
+- **Phase C — cleanup.** `git rm add/` (44 tracked + 14 artifacts — a whole vendored 2nd repo) + `_QUARANTINE/
+  v17_overshoots/` (v17 core reach already in BR3; supporting in git history). Moved `00_ROADMAP/` +
+  `LEAN_TRANSLATION_TZ/` → `docs/internal/`. `.gitignore` un-ignores 8 force-added real files (no-go theorems
+  + locked cert params). hygiene **33 → 59**.
+- **Phase L — Lean honesty.** Removed **17** `(stmt:Prop)(h:stmt):stmt:=h` identity tautologies (6 K-theory/
+  spectral-triple modules, Mathlib-blocked) + their 17 `#check` in HardClosureTheoremIndex; reclassified the
+  9 owning rows LEAN_PROVED/CORE-FORMALIZED → PYTHON_CERTIFIED/CERT-CLOSED (cert stays real, EXTERNAL-GAP
+  noted). New `check_no_tautology_proofs.py` guard (CI). **strength 2777 → 2660** — the −117 fakes exactly
+  offset Iteration-1's +117 real R4, so the number is unchanged but now **all-honest**. hygiene **59 → 73**.
+- **Phase L+ — quarantine FiniteHodgeComplex.** A broken orphan (struct errors, no CSV claim) that red-flagged
+  the release-gate build; typed its psd statement + dropped its placeholder heat-trace theorem, then moved it
+  to `_OPEN_WITNESSES/` and dropped its 3 (unused) imports. Per-PR guards all green.
+- **Phase P — books publication pass.** `extract_apparatus.py` moved **418** regular forcing/Status tags out of
+  prose into per-book `## Apparatus — sources & open obligations` endnotes (rendered by `assemble_books.py`
+  from `_apparatus.json`; `--check` in CI). A 10-agent cleanup wave then tidied the bodies: 75 version-narration
+  strips, 144 prose repo-refs cleaned, 55 heading fixes (duplicate `*.v15` register-stubs renumbered/folded,
+  claim-ids out of headers), 20 dangling `§` filled, 9 dev-TODO removed; 2 redundant duplicate stubs deleted.
+  New `check_book_publication.py` guard (fence/table/inline-code-aware) → **PASS**, wired into CI.
+- **Hygiene precision sync.** `dev_comments`/`path_leaks`/`corpus_errors`/`tautology_proofs` now read from the
+  precise guards (`check_book_publication`, `check_no_tautology_proofs`) instead of loose regexes / the stale
+  `check_v14_clean_corpus` length expectations — so the KPI reflects real cleanliness, not false positives.
+
+**End state:** **hygiene 100/100** (only 4 orphan PROOF-TARGET, −0.4); **strength 2660/3767 (70.6%, all honest)**;
+books are publication-clean monographs + apparatus; Lean has 0 tautologies / 0 sorry-in-build; the publish tree
+is theory + verification only. Full guard suite green (now incl. tautology, apparatus, publication guards).

@@ -4635,9 +4635,9 @@
     }
   ],
   "hygiene": {
-    "score": 89.1,
+    "score": 100.0,
     "budget": 100,
-    "penalty_total": 20.9,
+    "penalty_total": 0.4,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -4658,14 +4658,11 @@
       },
       {
         "signal": "tautology_proofs",
-        "count": 3,
-        "points": -4.5,
+        "count": 0,
+        "points": -0.0,
         "cap": -18.0,
         "label": "Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)",
-        "evidence": [
-          "Bridge/PhiDiscreteRG.lean:1",
-          "Detector/WeakCouplingClassicalization.lean:2"
-        ]
+        "evidence": []
       },
       {
         "signal": "proof_debt",
@@ -4701,16 +4698,16 @@
       },
       {
         "signal": "path_leaks",
-        "count": 296,
-        "points": -12.0,
+        "count": 0,
+        "points": -0.0,
         "cap": -12.0,
         "label": "internal repo paths / vp_*.py / D0.* module names dumped in book prose",
         "evidence": []
       },
       {
         "signal": "corpus_errors",
-        "count": 4,
-        "points": -4.0,
+        "count": 0,
+        "points": -0.0,
         "cap": -10.0,
         "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
         "evidence": []
@@ -4733,33 +4730,6 @@
       }
     ],
     "top_actions": [
-      {
-        "signal": "path_leaks",
-        "count": 296,
-        "points": -12.0,
-        "cap": -12.0,
-        "label": "internal repo paths / vp_*.py / D0.* module names dumped in book prose",
-        "evidence": []
-      },
-      {
-        "signal": "tautology_proofs",
-        "count": 3,
-        "points": -4.5,
-        "cap": -18.0,
-        "label": "Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)",
-        "evidence": [
-          "Bridge/PhiDiscreteRG.lean:1",
-          "Detector/WeakCouplingClassicalization.lean:2"
-        ]
-      },
-      {
-        "signal": "corpus_errors",
-        "count": 4,
-        "points": -4.0,
-        "cap": -10.0,
-        "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
-        "evidence": []
-      },
       {
         "signal": "orphan_proof_targets",
         "count": 4,

@@ -133,13 +133,11 @@ def hygiene_report(rows: list[dict]) -> dict:
     ti = _git(["ls-files", "-i", "-c", "--exclude-standard"])
     counts["tracked_but_ignored"] = len(ti); evidence["tracked_but_ignored"] = ti[:6]
 
-    taut = []
-    for p in D0DIR.rglob("*.lean"):
-        n = len(_TAUT_RE.findall(p.read_text(encoding="utf-8", errors="replace")))
-        if n:
-            taut.append(f"{p.relative_to(D0DIR).as_posix()}:{n}")
-    counts["tautology_proofs"] = sum(int(x.rsplit(':', 1)[1]) for x in taut)
-    evidence["tautology_proofs"] = taut[:6]
+    # tautology count from the precise guard (DECL-anchored), not the loose regex
+    tt = _run([sys.executable, "tools/check_no_tautology_proofs.py"])
+    mt = re.search(r"(\d+)\s+identity-tautology", tt)
+    counts["tautology_proofs"] = int(mt.group(1)) if mt else 0
+    evidence["tautology_proofs"] = [ln.strip()[2:] for ln in tt.splitlines() if ln.strip().startswith("- ")][:6]
 
     pd = []
     for p in D0DIR.rglob("*.lean"):
@@ -159,13 +157,15 @@ def hygiene_report(rows: list[dict]) -> dict:
     reg_pt = sum(1 for r in rows if m.canonical_release(r.get("release_status", "")) == "PROOF-TARGET")
     counts["orphan_proof_targets"] = max(0, prose_pt - reg_pt)
 
-    dc = [count_dev_comments(p.read_text(encoding="utf-8", errors="replace")) for p in books]
-    counts["dev_comments"] = sum(n for n, _ in dc)
-    evidence["dev_comments"] = [h for _, hs in dc for h in hs][:6]
-    counts["path_leaks"] = sum(len(rx.findall(book_text)) for rx in _PATH_LEAK_RES)
-
-    cc = _run([sys.executable, "tools/check_v14_clean_corpus.py"])
-    counts["corpus_errors"] = cc.count("\n  - ")
+    # publication issues from the precise, fence/table/inline-code-aware guard: it
+    # counts only real BODY-prose leaks + structural defects, not legitimate
+    # provenance registers / apparatus / code. (Supersedes the loose book_text regex
+    # and the stale check_v14_clean_corpus hardcoded length/heading expectations.)
+    cb = _run([sys.executable, "tools/check_book_publication.py"])
+    counts["dev_comments"] = cb.count("dev-comment")
+    counts["path_leaks"] = cb.count("inline repo-ref")
+    counts["corpus_errors"] = cb.count("duplicate heading") + cb.count("dangling §") + cb.count("claim-id in heading")
+    evidence["path_leaks"] = [ln.strip()[2:] for ln in cb.splitlines() if "inline repo-ref" in ln][:6]
 
     # a real in-project .lake is bad; a junction/symlink to the external cache is fine.
     # On Windows a junction is a reparse point, which Path.is_symlink() does NOT detect.
