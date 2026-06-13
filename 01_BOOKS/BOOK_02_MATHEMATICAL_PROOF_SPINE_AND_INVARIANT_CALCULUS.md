@@ -1354,7 +1354,7 @@ A_{YYY}=0,
 A_{grav^2Y}=0.
 ```
 
-The primary cert is `vp_v1134_lattice_ward_anomaly_closure.py`.
+The primary cert is `vp_v1132_gauge_matter_ward_anomaly.py`.
 
 ## 02.28 Born/EPR assumption split
 

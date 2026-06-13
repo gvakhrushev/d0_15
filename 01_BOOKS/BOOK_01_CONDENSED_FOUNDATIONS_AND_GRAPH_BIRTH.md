@@ -701,12 +701,12 @@ Particles are stable re-detection classes over finite detector records. They are
 
 | Claim | Status | Name | Forbidden shortcut | Primary/related certs |
 |---|---:|---|---|---|
-| `D0-FOUND-001` | CORE-FOUNDATION | No-monopoly verification algebra | Do not derive phi from generic unitary contact, Helstrom scans, or entropy linearity alone. | vp_information_line_exchange.py; minimal Popper/dyad certs |
-| `D0-FOUND-002` | CORE-FOUNDATION | Minimal addressable record split | Do not use delta0=phi^-3; active convention is 1/(2 phi^3). | vp_information_line_exchange.py |
-| `D0-SCENE-001` | CORE-SUPPORT | eight oriented terminal-role states Ω8 detector cycle | Do not treat phi alone as physical geometry before eight oriented terminal-role states Ω8 closure. | d0_core_certificates.py; vp_information_line_exchange.py |
-| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | Do not read J_scene as fitted polynomial for later constants. | d0_graph.py; d0_core_certificates.py; vp_sgate_jscene_backbone_20260522.py |
+| `D0-FOUND-001` | CORE-FOUNDATION | No-monopoly verification algebra | Do not derive phi from generic unitary contact, Helstrom scans, or entropy linearity alone. | (see canonical registry); minimal Popper/dyad certs |
+| `D0-FOUND-002` | CORE-FOUNDATION | Minimal addressable record split | Do not use delta0=phi^-3; active convention is 1/(2 phi^3). | (see canonical registry) |
+| `D0-SCENE-001` | CORE-SUPPORT | eight oriented terminal-role states Ω8 detector cycle | Do not treat phi alone as physical geometry before eight oriented terminal-role states Ω8 closure. | d0_core_certificates.py; (see canonical registry) |
+| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | Do not read J_scene as fitted polynomial for later constants. | d0_graph.py; d0_core_certificates.py; (see canonical registry) |
 | `D0-METRO-001` | CORE-FOUNDATION | Single causal line/tick invariant | Do not count c as a second sector anchor. | vp_c_time_length_single_section_closure.py |
-| `D0-METRO-002` | SINGLE-SECTION-OUTPUT | Lambda_act single action section | No proton, W/Z, Planck, G_N, H0, or dark anchor as second scale. | vp_calibration_dag_lambda_section_20260522.py; vp_c_time_length_single_section_closure.py |
+| `D0-METRO-002` | SINGLE-SECTION-OUTPUT | Lambda_act single action section | No proton, W/Z, Planck, G_N, H0, or dark anchor as second scale. | vp_c_time_length_single_section_closure.py |
 
 ## 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum
 

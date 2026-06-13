@@ -78,3 +78,16 @@ canonical (164) — regenerated in Phase 4.
   `LEAN_CORE_THEOREM_INDEX.md` from the canonical CSV.
 - Drift resolved: graph claims = generated csv rows = canonical rows = **164**
   (was 139 / 156 / 164). `validate_csv.py` PASS with zero staleness warnings.
+- `regen_graph.ps1 --check-only` PASS (idempotent, 164=164).
+
+## Phase 5 — prose<->registry phantom-cert sync
+
+- New guard `tools/check_book_cert_references.py`: flags `vp_*.py` cited in books
+  that are absent on disk and not a declared OPEN/PROOF-TARGET row.
+- Remediated 6 phantom citations (the backed claims are Lean-owned or unregistered,
+  so no demotion needed): in BOOK_00 §00.8 and BOOK_01 §01.13 coverage tables,
+  replaced phantom cert filenames with `(see canonical registry)`; dropped the
+  phantom `vp_calibration_dag_lambda_section_*` (kept the real
+  `vp_c_time_length_single_section_closure.py`); BOOK_02 §02.27 corrected the
+  mis-numbered ward cert `vp_v1134_...` -> the real `vp_v1132_gauge_matter_ward_anomaly.py`.
+- `check_book_cert_references.py` PASS.

@@ -278,11 +278,11 @@ Mapped Book 00 claims are:
 
 | Claim ID | Status | Claim | Certificates / ledgers |
 |---|---|---|---|
-| `D0-FOUND-001` | CORE-FOUNDATION | No-monopoly verification algebra | vp_information_line_exchange.py; minimal Popper/dyad certs |
-| `D0-FOUND-002` | CORE-FOUNDATION | Minimal addressable record split | vp_information_line_exchange.py |
-| `D0-FOUND-003` | CORE-FOUNDATION | Minimal continuum-measurement skeleton | vp_continuum_measurement_thesis_20260522.py; vp_continuum_division_scale_connectivity_20260523.py |
-| `D0-SCENE-001` | CORE-SUPPORT | Omega8 detector cycle | d0_core_certificates.py; vp_information_line_exchange.py |
-| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | d0_graph.py; d0_core_certificates.py; vp_sgate_jscene_backbone_20260522.py |
+| `D0-FOUND-001` | CORE-FOUNDATION | No-monopoly verification algebra | (see canonical registry); minimal Popper/dyad certs |
+| `D0-FOUND-002` | CORE-FOUNDATION | Minimal addressable record split | (see canonical registry) |
+| `D0-FOUND-003` | CORE-FOUNDATION | Minimal continuum-measurement skeleton | (see canonical registry) |
+| `D0-SCENE-001` | CORE-SUPPORT | Omega8 detector cycle | d0_core_certificates.py; (see canonical registry) |
+| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | d0_graph.py; d0_core_certificates.py; (see canonical registry) |
 | `D0-META-001` | DIAGNOSTIC-ONLY | Active corpus integrity and reader-orientation checks | vp_book*; vp_*refactor*; vp_full_book_audit* |
 
 ## 00.9 Anti-numerology firewall
