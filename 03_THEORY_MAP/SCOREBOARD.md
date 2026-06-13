@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 2673 / 3767 (**71.0%** of track-fair max)
-- **Core spine:** 2281 / 3360 (headroom **1079** points to take every core claim to L5)
+- **Realized strength:** 2777 / 3767 (**73.7%** of track-fair max)
+- **Core spine:** 2385 / 3360 (headroom **975** points to take every core claim to L5)
 - Claims: 208 active (209 total); integrity demotions: 0; duplicates: 0
 
 ## Where to gain points next (cheapest promotions)
@@ -72,10 +72,10 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 121 | 1665 | 2320 | 650 |
+| formal_core | 121 | 1756 | 2320 | 559 |
 | frontier | 12 | 29 | 240 | 211 |
 | cosmology | 24 | 394 | 459 | 65 |
-| smooth_geometry | 7 | 70 | 122 | 52 |
+| smooth_geometry | 7 | 83 | 122 | 39 |
 | spectral_action | 6 | 81 | 120 | 39 |
 | empirical_passport | 15 | 126 | 167 | 36 |
 | rg | 3 | 29 | 42 | 13 |
@@ -89,17 +89,18 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_08 | 42 | 642 | 755 | 109 |
-| BOOK_04 | 38 | 419 | 713 | 293 |
+| BOOK_04 | 38 | 432 | 713 | 280 |
 | BOOK_07 | 33 | 383 | 588 | 195 |
-| BOOK_01/02 | 11 | 199 | 212 | 13 |
+| BOOK_01/02 | 11 | 212 | 212 | 0 |
 | BOOK_04/08 | 7 | 109 | 127 | 18 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_07/08 | 8 | 90 | 147 | 57 |
+| BOOK_06 | 5 | 61 | 100 | 39 |
+| BOOK_01 | 3 | 60 | 60 | 0 |
+| BOOK_06/07 | 3 | 60 | 60 | 0 |
 | BOOK_02 | 4 | 49 | 62 | 13 |
 | BOOK_06/08 | 5 | 48 | 100 | 52 |
-| BOOK_01 | 3 | 47 | 60 | 13 |
-| BOOK_06/07 | 3 | 47 | 60 | 13 |
-| BOOK_06 | 5 | 35 | 100 | 65 |
+| BOOK_01/04 | 2 | 40 | 40 | 0 |
 | D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE | 3 | 33 | 33 | 0 |
 | Lean formalization | 2 | 31 | 31 | 0 |
 | BOOK_02/04 | 2 | 31 | 31 | 0 |
@@ -119,7 +120,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_03/06 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
 | BOOK_05/08 | 2 | 19 | 32 | 13 |
-| BOOK_01/04 | 2 | 14 | 40 | 26 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
 | BOOK_01/03/06/07/08 | 1 | 11 | 11 | 0 |

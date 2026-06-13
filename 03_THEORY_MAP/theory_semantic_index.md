@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 66
-- `CORE-FORMALIZED`: 90
+- `CERT-CLOSED`: 58
+- `CORE-FORMALIZED`: 98
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 10
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 75
-- `core`: 91
+- `certificate`: 67
+- `core`: 99
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
@@ -792,19 +792,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE] [8C: linked passing cert]
 
-### D0-DIM-LADDER-COMPACT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_06`
-- module: ``
-- theorem: `none`
-- cert: `vp_dim_ladder_compact.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Q(D)=phi^(D-4); quantum=1 at D=4=|ABCD|; Q(1)=phi^-3=2delta0; exact Q(phi). Lean L4 queued.
-
 ### D0-DM-CLASSICALITY-001
 
 - type: `certificate`
@@ -1039,19 +1026,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Möbius witness halting cert.
 
-### D0-KERNEL-ZONE-SPLIT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_01/04`
-- module: ``
-- theorem: `none`
-- cert: `vp_kernel_zone_split.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: ker(adj K(9,11,13))=30=8+10+12; rank 3 = space; exact integer LA. Lean L4 queued.
-
 ### D0-LEPTON-002
 
 - type: `certificate`
@@ -1117,19 +1091,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] Ford-Fulkerson max-flow/min-cut = A/4-normalized boundary capacity.
 
-### D0-MIXING-HIERARCHY-INVERSION-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_mixing_hierarchy_inversion.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued.
-
 ### D0-NEUTRON-002
 
 - type: `certificate`
@@ -1182,19 +1143,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] readout-306 terminal formula; 938 MeV is benchmark not input.
 
-### D0-Q8-DEDEKIND-MINIMALITY-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_01`
-- module: ``
-- theorem: `none`
-- cert: `vp_q8_dedekind_minimality.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8D Tier-1 forced] unique minimal Hamiltonian non-abelian group <=8 (Dedekind 1897); [Q8,Q8]=Z=Phi={+-1}. Lean L4 queued.
-
 ### D0-QUANT-MET-001
 
 - type: `certificate`
@@ -1221,19 +1169,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
 
-### D0-SIGNATURE-31-SPLIT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_06/07`
-- module: ``
-- theorem: `none`
-- cert: `vp_signature_31_split.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8D Tier-1 forced] 3=rank(adj) space + 1 Pisot modular flow time; distinct objects. Lean L4 queued.
-
 ### D0-SPIN2-001
 
 - type: `certificate`
@@ -1246,32 +1181,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] TT projector on full 10-dim Sym(4) basis; 2 polarizations.
-
-### D0-VIETA-GALOIS-ABCD-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_01/02`
-- module: ``
-- theorem: `none`
-- cert: `vp_vieta_galois_abcd.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: ABCD = Vieta=Galois data of x^2-x-1; delta0=1/(2phi^3) forced; exact Q(phi). Lean L4 queued.
-
-### D0-WINDOW44-GROUP-SPECTRUM-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_01/04`
-- module: ``
-- theorem: `none`
-- cert: `vp_window44_group_spectrum.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8D Tier-1 forced] (Z/44)*=Z2xZ2xZ5, |.|=20=d13, char subgroups {1,4,5,20}, 20=4x5. Lean L4 queued.
 
 ### D0-ABCD-001
 
@@ -1546,6 +1455,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Condensed/profinite phi-vacuum support exposes terminal qT=44 branch count 20 electroweak qEW=710 branch count 280 and depth 35 and the physics cut-project readout is tied to this support.
 
+### D0-DIM-LADDER-COMPACT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Claims.DimLadderCompact`
+- theorem: `dim_ladder_compact_cert`
+- cert: `vp_dim_ladder_compact.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Q(D)=phi^(D-4); quantum=1 at D=4=|ABCD|; Q(1)=phi^-3=2delta0; exact Q(phi). Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.DimLadderCompact (dim_ladder_compact_cert); native_decide/decide on the real finite content.
+
 ### D0-FINAL-BRIDGE-INDEX-001
 
 - type: `core`
@@ -1676,6 +1598,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Finite tick order plus irrational phi^-2 phase plus return quotients yields ordered aperiodic readout-generated branch geometry without a primitive lattice.
 
+### D0-KERNEL-ZONE-SPLIT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Claims.KernelZoneSplit`
+- theorem: `kernel_zone_split`
+- cert: `vp_kernel_zone_split.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: ker(adj K(9,11,13))=30=8+10+12; rank 3 = space; exact integer LA. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.KernelZoneSplit (kernel_zone_split); native_decide/decide on the real finite content.
+
 ### D0-KTHEORY-001
 
 - type: `core`
@@ -1793,6 +1728,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Meson transfer uses the typed Edge by Generation carrier and lifted flavour defect rather than a direct sum of unrelated spaces.
 
+### D0-MIXING-HIERARCHY-INVERSION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Claims.MixingHierarchyInversion`
+- theorem: `mixing_hierarchy_inversion`
+- cert: `vp_mixing_hierarchy_inversion.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.MixingHierarchyInversion (mixing_hierarchy_inversion); native_decide/decide on the real finite content.
+
 ### D0-NCG-INDEX-001
 
 - type: `core`
@@ -1884,6 +1832,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background. [8C: linked passing cert]
 
+### D0-Q8-DEDEKIND-MINIMALITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Claims.Q8DedekindMinimality`
+- theorem: `q8_dedekind_minimality`
+- cert: `vp_q8_dedekind_minimality.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8D Tier-1 forced] unique minimal Hamiltonian non-abelian group <=8 (Dedekind 1897); [Q8,Q8]=Z=Phi={+-1}. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Q8DedekindMinimality (q8_dedekind_minimality); native_decide/decide on the real finite content.
+
 ### D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001
 
 - type: `core`
@@ -1948,6 +1909,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Tripartite counts 33/359/1287.
+
+### D0-SIGNATURE-31-SPLIT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06/07`
+- module: `D0.Claims.Signature31Split`
+- theorem: `signature_31_split`
+- cert: `vp_signature_31_split.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8D Tier-1 forced] 3=rank(adj) space + 1 Pisot modular flow time; distinct objects. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Signature31Split (signature_31_split); native_decide/decide on the real finite content.
 
 ### D0-SOLENOID-001
 
@@ -2026,6 +2000,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Generation selector noncommutativity is sourced from finite torus shell geometry rather than a detached fixture selector.
+
+### D0-VIETA-GALOIS-ABCD-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Claims.VietaGaloisAbcd`
+- theorem: `vieta_galois_abcd`
+- cert: `vp_vieta_galois_abcd.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: ABCD = Vieta=Galois data of x^2-x-1; delta0=1/(2phi^3) forced; exact Q(phi). Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.VietaGaloisAbcd (vieta_galois_abcd); native_decide/decide on the real finite content.
+
+### D0-WINDOW44-GROUP-SPECTRUM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Claims.Window44GroupSpectrum`
+- theorem: `window44_group_spectrum`
+- cert: `vp_window44_group_spectrum.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8D Tier-1 forced] (Z/44)*=Z2xZ2xZ5, |.|=20=d13, char subgroups {1,4,5,20}, 20=4x5. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Window44GroupSpectrum (window44_group_spectrum); native_decide/decide on the real finite content.
 
 ### D0-XI5-TORUS-DEFECT-001
 
@@ -2682,19 +2682,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Absolute/relative sign corrected. [was:FRACTAL-CONTINUUM-PREDICTION-CERT-CLOSED]
 
-### D0-TIME-2D-PISOT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `smooth_geometry`
-- book: `BOOK_06`
-- module: ``
-- theorem: `none`
-- cert: `vp_time_2d_pisot.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8D Tier-1 forced] phi Pisot => deg Q(phi)=2 => time layer T^2; Adler-Weiss smooth partition. Lean L4 queued.
-
 ### D0-GEOM-SPECTRAL-ACTION-LADDER-001
 
 - type: `core`
@@ -2707,6 +2694,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: Finite spectral-action ladder and bounds; no continuum EH promotion.
+
+### D0-TIME-2D-PISOT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_06`
+- module: `D0.Claims.Time2DPisot`
+- theorem: `time_2d_pisot`
+- cert: `vp_time_2d_pisot.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [8D Tier-1 forced] phi Pisot => deg Q(phi)=2 => time layer T^2; Adler-Weiss smooth partition. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Time2DPisot (time_2d_pisot); native_decide/decide on the real finite content.
 
 
 ## Domain: spectral_action

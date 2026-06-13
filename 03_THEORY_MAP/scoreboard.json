@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 2673,
+    "realized": 2777,
     "track_fair_max": 3767,
-    "pct_strength": 71.0,
-    "core_realized": 2281,
+    "pct_strength": 73.7,
+    "core_realized": 2385,
     "core_potential": 3360,
-    "core_headroom": 1079,
+    "core_headroom": 975,
     "n_claims": 209,
     "n_active": 208,
     "duplicates": [],
@@ -33,9 +33,9 @@
   "by_domain": {
     "formal_core": {
       "n": 121,
-      "realized": 1665,
+      "realized": 1756,
       "max": 2320,
-      "core_headroom": 650
+      "core_headroom": 559
     },
     "rg": {
       "n": 3,
@@ -51,9 +51,9 @@
     },
     "smooth_geometry": {
       "n": 7,
-      "realized": 70,
+      "realized": 83,
       "max": 122,
-      "core_headroom": 52
+      "core_headroom": 39
     },
     "spectral_action": {
       "n": 6,
@@ -107,15 +107,15 @@
     },
     "BOOK_01/02": {
       "n": 11,
-      "realized": 199,
+      "realized": 212,
       "max": 212,
-      "core_headroom": 13
+      "core_headroom": 0
     },
     "BOOK_01": {
       "n": 3,
-      "realized": 47,
+      "realized": 60,
       "max": 60,
-      "core_headroom": 13
+      "core_headroom": 0
     },
     "BOOK_02": {
       "n": 4,
@@ -137,9 +137,9 @@
     },
     "BOOK_06/07": {
       "n": 3,
-      "realized": 47,
+      "realized": 60,
       "max": 60,
-      "core_headroom": 13
+      "core_headroom": 0
     },
     "BOOK_07/08": {
       "n": 8,
@@ -161,9 +161,9 @@
     },
     "BOOK_04": {
       "n": 38,
-      "realized": 419,
+      "realized": 432,
       "max": 713,
-      "core_headroom": 293
+      "core_headroom": 280
     },
     "BOOK_04/08": {
       "n": 7,
@@ -317,9 +317,9 @@
     },
     "BOOK_06": {
       "n": 5,
-      "realized": 35,
+      "realized": 61,
       "max": 100,
-      "core_headroom": 65
+      "core_headroom": 39
     },
     "BOOK_01/06": {
       "n": 1,
@@ -353,9 +353,9 @@
     },
     "BOOK_01/04": {
       "n": 2,
-      "realized": 14,
+      "realized": 40,
       "max": 40,
-      "core_headroom": 26
+      "core_headroom": 0
     }
   },
   "cheapest_promotions": [
@@ -670,36 +670,6 @@
       "effort": "write Lean proof"
     },
     {
-      "claim_id": "D0-VIETA-GALOIS-ABCD-001",
-      "domain": "formal_core",
-      "book": "BOOK_01/02",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-KERNEL-ZONE-SPLIT-001",
-      "domain": "formal_core",
-      "book": "BOOK_01/04",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-DIM-LADDER-COMPACT-001",
-      "domain": "formal_core",
-      "book": "BOOK_06",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
       "claim_id": "D0-BH-CAPACITY-A4-001",
       "domain": "formal_core",
       "book": "BOOK_07",
@@ -953,56 +923,6 @@
       "claim_id": "D0-COSMO-003",
       "domain": "cosmology",
       "book": "BOOK_08",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-Q8-DEDEKIND-MINIMALITY-001",
-      "domain": "formal_core",
-      "book": "BOOK_01",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-WINDOW44-GROUP-SPECTRUM-001",
-      "domain": "formal_core",
-      "book": "BOOK_01/04",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-TIME-2D-PISOT-001",
-      "domain": "smooth_geometry",
-      "book": "BOOK_06",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-MIXING-HIERARCHY-INVERSION-001",
-      "domain": "formal_core",
-      "book": "BOOK_04",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-SIGNATURE-31-SPLIT-001",
-      "domain": "formal_core",
-      "book": "BOOK_06/07",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1450,27 +1370,6 @@
       "score": 7
     },
     {
-      "claim_id": "D0-VIETA-GALOIS-ABCD-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-KERNEL-ZONE-SPLIT-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-DIM-LADDER-COMPACT-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
       "claim_id": "D0-BH-CAPACITY-A4-001",
       "domain": "formal_core",
       "leverage": 0,
@@ -1648,41 +1547,6 @@
     {
       "claim_id": "D0-COSMO-003",
       "domain": "cosmology",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-Q8-DEDEKIND-MINIMALITY-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-WINDOW44-GROUP-SPECTRUM-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-TIME-2D-PISOT-001",
-      "domain": "smooth_geometry",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-MIXING-HIERARCHY-INVERSION-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-SIGNATURE-31-SPLIT-001",
-      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -4003,12 +3867,12 @@
     {
       "claim_id": "D0-VIETA-GALOIS-ABCD-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01/02",
       "leverage": 0,
@@ -4017,12 +3881,12 @@
     {
       "claim_id": "D0-KERNEL-ZONE-SPLIT-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01/04",
       "leverage": 0,
@@ -4031,12 +3895,12 @@
     {
       "claim_id": "D0-DIM-LADDER-COMPACT-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_06",
       "leverage": 0,
@@ -4549,12 +4413,12 @@
     {
       "claim_id": "D0-Q8-DEDEKIND-MINIMALITY-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01",
       "leverage": 0,
@@ -4563,12 +4427,12 @@
     {
       "claim_id": "D0-WINDOW44-GROUP-SPECTRUM-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01/04",
       "leverage": 0,
@@ -4577,12 +4441,12 @@
     {
       "claim_id": "D0-TIME-2D-PISOT-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "smooth_geometry",
       "book": "BOOK_06",
       "leverage": 0,
@@ -4591,12 +4455,12 @@
     {
       "claim_id": "D0-MIXING-HIERARCHY-INVERSION-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_04",
       "leverage": 0,
@@ -4605,12 +4469,12 @@
     {
       "claim_id": "D0-SIGNATURE-31-SPLIT-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_06/07",
       "leverage": 0,

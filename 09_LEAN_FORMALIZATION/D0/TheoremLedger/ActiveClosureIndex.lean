@@ -2,6 +2,14 @@
 -- Do not edit by hand; run `python tools/generate_lean_aggregates.py`.
 
 
+import D0.Claims.DimLadderCompact
+import D0.Claims.KernelZoneSplit
+import D0.Claims.MixingHierarchyInversion
+import D0.Claims.Q8DedekindMinimality
+import D0.Claims.Signature31Split
+import D0.Claims.Time2DPisot
+import D0.Claims.VietaGaloisAbcd
+import D0.Claims.Window44GroupSpectrum
 import D0.Claims.Xi5TorusDefect
 import D0.Bridge.FinalBridgeIndex
 

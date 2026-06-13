@@ -332,7 +332,23 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-QUANT-MET-004", moduleName := "D0.Metrology.PhasonBragg",
       theoremName := "phason_bragg_line_spectrum_target", status := ClaimStatus.openObligation },
     { claimId := "D0-XI5-TORUS-DEFECT-001", moduleName := "D0.Claims.Xi5TorusDefect",
-      theoremName := "xi5_torus_defect", status := ClaimStatus.leanCoreProved }
+      theoremName := "xi5_torus_defect", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-VIETA-GALOIS-ABCD-001", moduleName := "D0.Claims.VietaGaloisAbcd",
+      theoremName := "vieta_galois_abcd", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-KERNEL-ZONE-SPLIT-001", moduleName := "D0.Claims.KernelZoneSplit",
+      theoremName := "kernel_zone_split", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DIM-LADDER-COMPACT-001", moduleName := "D0.Claims.DimLadderCompact",
+      theoremName := "dim_ladder_compact_cert", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-Q8-DEDEKIND-MINIMALITY-001", moduleName := "D0.Claims.Q8DedekindMinimality",
+      theoremName := "q8_dedekind_minimality", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-WINDOW44-GROUP-SPECTRUM-001", moduleName := "D0.Claims.Window44GroupSpectrum",
+      theoremName := "window44_group_spectrum", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TIME-2D-PISOT-001", moduleName := "D0.Claims.Time2DPisot",
+      theoremName := "time_2d_pisot", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-MIXING-HIERARCHY-INVERSION-001", moduleName := "D0.Claims.MixingHierarchyInversion",
+      theoremName := "mixing_hierarchy_inversion", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SIGNATURE-31-SPLIT-001", moduleName := "D0.Claims.Signature31Split",
+      theoremName := "signature_31_split", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
