@@ -1,7 +1,6 @@
 <!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 00 — Entry Contract and Admissibility Discipline
 
-> **Publication status — v16 publication-proofread draft.**
 > Scope: Entry contract, admissibility rules, claim language, and publication guardrails.
 > Claim discipline: This book owns reading rules, not physical-sector closure.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.

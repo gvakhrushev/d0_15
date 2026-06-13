@@ -1,7 +1,6 @@
 <!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 07 — Gravity Limit and Finite Geometry
 
-> **Publication status — v16 publication-proofread draft.**
 > Scope: Finite spectral geometry, horizon/seam law, spin-2 carrier, finite gravity limits, and laboratory channel-clearing bridges.
 > Claim discipline: Gravity closure is internal; astrophysical and laboratory analogues remain bridges/passports unless separately certified.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
@@ -57,7 +56,7 @@ Finite spin-2 owner:
 D0.Geometry.finite_spin2_tt_carrier_closed
 ```
 
-This passport remains an observable-transfer boundary. All internal sync notes have been moved to `06_AUDIT/internal_sync_anchors.md`. The D0 memory torus is a separate internal shell geometry and does not replace the terminal four-role TT projector. Active contraction and archive expansion are eigen-branches of one toral automorphism; determinant invariant gives exact phase-volume balance.
+This passport remains an observable-transfer boundary. The D0 memory torus is a separate internal shell geometry and does not replace the terminal four-role TT projector. Active contraction and archive expansion are eigen-branches of one toral automorphism; determinant invariant gives exact phase-volume balance.
 
 ## 07.1 Standard reading of finite gravity language
 
@@ -370,7 +369,7 @@ The status of this statement is a carrier/bridge theorem: D0 fixes the finite su
 
 Definition. The heat trace is the macro spectral shadow of finite operators over the D0 tiling hull. Curvature is the detector-visible response of this spectral shadow after finite coarse-graining.
 
-The formal Lean owner is `D0.Geometry.NonCommutativeSolenoidGravity` (`d0_heat_trace_admits_solenoid_spectral_triple_approx`), and the verification certificate is `05_CERTS/vp_noncommutative_solenoid_gravity.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)`).
+The formal Lean owner is `D0.Geometry.NonCommutativeSolenoidGravity` (`d0_heat_trace_admits_solenoid_spectral_triple_approx`), and the verification certificate is `05_CERTS/vp_noncommutative_solenoid_gravity.py` (`PASS_NONCOMMUTATIVE_SOLENOID_GRAVITY`).
 
 ## 07.7 Length-depth theorem before Newton
 

@@ -1,7 +1,6 @@
 <!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 05 — Verification, Proof Ownership, and Certificate Discipline
 
-> **Publication status — v16 publication-proofread draft.**
 > Scope: Claim classification, proof ownership, certificate discipline, no-go ledger, and promotion rules.
 > Claim discipline: This book decides status; it does not add physical content.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
@@ -426,7 +425,7 @@ Rules for gap labels:
 4. External data may compare, never choose labels.
 5. Post-hoc relabeling after PDG/BAO/CKM comparison is a FAIL.
 
-The formal verification owner is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py`, which must print `(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)0_GAP_LABELING_TILING_HULL`. The underlying Lean formalization of gap stability is checked by `D0.Matter.KTheoryGapLabeling`.
+The formal verification owner is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py`, which must print `PASS_D0_GAP_LABELING_TILING_HULL`. The underlying Lean formalization of gap stability is checked by `D0.Matter.KTheoryGapLabeling`.
 
 ## 05.11 External-data and scheme discipline
 
@@ -465,7 +464,7 @@ IceCube, LIGO, CMB, BAO and galaxy-lensing external comparison protocols require
 4. parameter-count ledger;
 5. no hidden retuning.
 
-The certificate owners are `05_CERTS/vp_phason_domain_wall_mesons.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)0_LABELS`), `05_CERTS/vp_ckm_phason_holonomy_k0.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)0`), and `05_CERTS/vp_phason_flip_entropy_sde.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)`). They must run under this frozen regime.
+The certificate owners are `05_CERTS/vp_phason_domain_wall_mesons.py` (`PASS_PHASON_DOMAIN_WALL_MESONS_K0_LABELS`), `05_CERTS/vp_ckm_phason_holonomy_k0.py` (`PASS_CKM_PHASON_HOLONOMY_K0`), and `05_CERTS/vp_phason_flip_entropy_sde.py` (`PASS_PHASON_FLIP_ENTROPY_SDE_GAP_LABELS`). They must run under this frozen regime.
 
 ## 05.12 Theory-improvement gate
 
@@ -509,8 +508,6 @@ Admissible destructive test cases include:
 The nuclear SRC destructive tests are owned by `D0.Matter.NuclearShellContactSRC`. The CaFe finite witness blocks promotion of a mass-only, neutron-excess-only or density-only scalar because the dominant readout is the matched proton/neutron shell-contact projector overlap.
 
 ## 05.13 Current inherited priority gates
-
-(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md): ## 05.13 Active priority gates.
 
 The active high-value gates are the following.  They are listed here not as
 status trophies but as audit obligations.

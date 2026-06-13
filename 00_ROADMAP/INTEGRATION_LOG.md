@@ -304,3 +304,43 @@ chain via Mordell even-unimodular uniqueness, the α gluing-anomaly seam, homolo
 flagged them; demoted to honest `PROOF-TARGET (cert obligation open)` per the closure contract.
 Full guard suite green (firewall 0 forbidden, assembly idempotent, cert-refs clean, validate_csv,
 firewall-vs-base). `d0_score` unchanged (prose-only; new claims not yet registered).
+
+### BR3 complete — all 8 priority books integrated
+
+Ran the per-book wave (`tools/group_coverage_by_section.py` → `br3-book-wave` Workflow → assemble + guards
++ commit) for every book carrying core-forcing rows, in the chosen order. **198/198 core-forcing arguments
+integrated** (one commit per book):
+
+| book | sections | forcing args | net lines |
+|---|---|---|---|
+| BOOK_02 proof-spine | 14 | 39 | +984 |
+| BOOK_04 spectrum/matter | 10 | 37 | +1328/−134 |
+| BOOK_06 evolution/time | 11 | 29 | +1070 |
+| BOOK_01 foundations (owner) | 10 | 27 | +1134 |
+| BOOK_00 entry/admissibility | 6 | 20 | +428 |
+| BOOK_03 finite-action | 4 | 18 | +736 |
+| BOOK_07 gravity | 9 | 16 | +1036 |
+| BOOK_05 verification | 5 | 9 | +734 |
+| BOOK_08 cosmology | 3 | 3 | +140 |
+
+The dropped GOLDEN forcing engine is back: M1 as the single named law + DEF-0.2.2 forcing schema (BOOK_00/01),
+the two independent φ-forcings (`p+p²=1` and S1 self-similarity `r²−r−1=0`), the topological chain
+(distinguishable-return → torus → defect → shell+φ → step+2), heat-trace time + arrow, mass=closure-density,
+Q8<2T<2I→E8 via Mordell, Born=Gleason, DarkRatio=nullity/rank, percolation-as-t=0. **Cert discipline held:**
+the no-fabricate-cert rule + `check_book_cert_references` caught every invented `vp_*.py` (2 in BOOK_02,
+demoted to PROOF-TARGET); workers across later books correctly refused v17-named certs absent on disk and
+tagged them `PROOF-TARGET (cert obligation open)`. The token firewall kept all 3 v17 overshoots out.
+
+Scope note: this wave took the **core-forcing** rows (198). The ledger's `supporting`/`peripheral` integrate
+rows (~364 more) remain a tracked follow-up.
+
+### BR2 stale-token cleanup — corpus is clean, guard now strict
+
+`br2-stale-cleanup` Workflow (9 per-book agents + verify): removed **9** `v16 publication-proofread` version
+stamps and repaired **20** `(marker moved to 06_AUDIT/…)` corruptions (06_AUDIT was deleted in Phase 2). The
+corruption had *substituted* real cert PASS-tokens; **12 were recovered** by reading the `vp_*.py` source
+(e.g. `PASS_BORN_QUADRATIC_ORIGIN`, `PASS_QUASICRYSTAL_PHENOMENOLOGY_OPERATOR_ORIGIN`,
+`PASS_NUCLEAR_SHELL_CONTACT_SRC_NATURE2026`), the rest dropped as dangling notes. `tools/check_book_tokens.py`
+is now **strict-by-default** (stale fails CI, not just forbidden); `--allow-stale` opts out. Corpus: 0
+forbidden, **0 stale**. ("atlas" kept — real artifact, not cruft.) Books are −44 net lines (boilerplate out,
+tokens restored); `d0_score` steady at **2660/3767 (70.6%)**.

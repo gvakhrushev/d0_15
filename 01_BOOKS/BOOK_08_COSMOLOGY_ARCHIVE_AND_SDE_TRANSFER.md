@@ -1,7 +1,6 @@
 <!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 08 — Cosmology, Archive, and Observable Transfer
 
-> **Publication status — v16 publication-proofread draft.**
 > Scope: Archive pressure, S_DE transfer, empirical survey discipline, and external-passport guardrails.
 > Claim discipline: Cosmology transfer closure and survey comparison are separate status layers.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
@@ -39,7 +38,7 @@ The phason coordinate reuse does not identify archive dark strain with baryon S3
 
 High-energy neutrino decoherence, CMB phason-flip spectrum, and archive phason halo/lensing remain passport hooks (see `08_PASSPORTS/_RESULTS/` and the corresponding certs).
 
-By the Phase-Unfolding Theorem (D0.Geometry.PhaseUnfoldingQuasicrystal), smoothness is the coarse-grained shadow of a finite information quasicrystal (terminal/electroweak return quotients q_T=44, q_EW=710). Core-13 particle-shell diagnostics and Nuclear shell-contact SRC are passport diagnostics (see `06_AUDIT/internal_sync_anchors.md` for working notes).
+By the Phase-Unfolding Theorem (D0.Geometry.PhaseUnfoldingQuasicrystal), smoothness is the coarse-grained shadow of a finite information quasicrystal (terminal/electroweak return quotients q_T=44, q_EW=710). Core-13 particle-shell diagnostics and Nuclear shell-contact SRC are passport diagnostics.
 
 ## 08.1 Standard reading of cosmological transfer language
 
@@ -139,8 +138,6 @@ survey residual
 
 A missing data manifest is not a theoretical failure of the internal archive
 object.  It is a reproducibility failure of the external comparison row.
-
-(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md): 08.3.1 inherited active split.
 
 ## 08.4 Archive sector as boundary complement
 
@@ -296,7 +293,7 @@ These are boundary-return spectral-shape readouts.  They become survey hypothese
 
 Dark matter phenomenology is modeled as localized phason-strain disorder in the internal/Galois branch. It has zero terminal EM coupling because it lives in the unresolved branch. It gravitates because heat/metric response sees total strain energy.
 
-The formal Lean owners are `D0.Topology.TilingHull` (`d0_hull_supports_gap_labeling`) and `D0.Matter.KTheoryGapLabeling` (`archive_pressure_spectrum_admits_k0_labels`), and the verification certificate is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)0_GAP_LABELING_TILING_HULL`).
+The formal Lean owners are `D0.Topology.TilingHull` (`d0_hull_supports_gap_labeling`) and `D0.Matter.KTheoryGapLabeling` (`archive_pressure_spectrum_admits_k0_labels`), and the verification certificate is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py` (`PASS_D0_GAP_LABELING_TILING_HULL`).
 
 Boundary against dark atoms: phason-strain disorder is not a second particle periodic table. A dark-atom claim would require a separate finite bound-state operator, terminal coupling rule and external comparison protocol. Strain by itself supplies gravitational/heat response, not hidden electromagnetic chemistry.
 
@@ -511,7 +508,7 @@ This cell is the analytic source of the pair used in the BAO/S_DE comparison pro
 
 The polynomial $160\lambda^2 - 480\lambda + 359$ (or 160λ² − 480λ + 359) is the finite transfer polynomial of archive phason flips. Its roots are relaxation modes. The corresponding spectral gaps must carry D0 hull/K0 labels.
 
-The formal Lean owner is `D0.Cosmology.PhasonFlipEntropy` (`sde_relaxation_modes_have_gap_labels`, `archive_pressure_spectrum_is_gap_labeled`), and the verification certificate is `05_CERTS/vp_phason_flip_entropy_sde.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)`).
+The formal Lean owner is `D0.Cosmology.PhasonFlipEntropy` (`sde_relaxation_modes_have_gap_labels`, `archive_pressure_spectrum_is_gap_labeled`), and the verification certificate is `05_CERTS/vp_phason_flip_entropy_sde.py` (`PASS_PHASON_FLIP_ENTROPY_SDE_GAP_LABELS`).
 
 The S_DE chain is:
 
@@ -823,8 +820,6 @@ strongest overclaim: a likelihood agreement is not a new D0 core theorem.
 
 Thus Book 08 is no longer a list of cosmological external comparison protocols.  It is a split
 between frozen finite cosmology and external reproducibility protocol.
-
-(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md): 08.41 P7 reproducibility split closure.
 
 Cosmological acceleration/entropy flow uses archive entropy layer.  It must
 cite `D0.Gravity.EntropicArchiveInterface`, not import continuum GR as primitive.

@@ -58,9 +58,11 @@ def scan(patterns: dict) -> dict[str, list[tuple[str, int]]]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--strict-stale", action="store_true",
-                    help="also fail on STALE tokens (use once the rewrite wave is done)")
+    ap.add_argument("--allow-stale", action="store_true",
+                    help="do NOT fail on STALE tokens (report only). Default is strict: stale fails, "
+                         "since the BR2 cleanup drove the corpus to 0 stale and it must stay there.")
     args = ap.parse_args()
+    strict_stale = not args.allow_stale
 
     forb = scan(FORBIDDEN)
     stale = scan(STALE)
@@ -76,11 +78,12 @@ def main() -> int:
         if occ:
             print(f"  · {name}: {len(occ)}  e.g. {occ[0][0]}:{occ[0][1]}")
 
-    fail = n_forb > 0 or (args.strict_stale and n_stale > 0)
+    fail = n_forb > 0 or (strict_stale and n_stale > 0)
     if fail:
         print("RESULT: FAIL")
         return 1
-    print("RESULT: PASS" + (f" (forbidden clean; {n_stale} stale still to retire)" if n_stale else ""))
+    suffix = f" (forbidden + stale clean)" if not n_stale else f" (forbidden clean; {n_stale} stale reported, not gating)"
+    print("RESULT: PASS" + suffix)
     return 0
 
 

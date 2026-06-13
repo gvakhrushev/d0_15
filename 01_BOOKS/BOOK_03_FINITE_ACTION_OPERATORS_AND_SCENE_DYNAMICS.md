@@ -1,7 +1,6 @@
 <!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 03 — Finite Action Operators and Scene Dynamics
 
-> **Publication status — v16 publication-proofread draft.**
 > Scope: Finite action/variation language, scene dynamics, and admissible finite equations of motion.
 > Claim discipline: This book supplies operator dynamics, not standalone empirical claims.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.

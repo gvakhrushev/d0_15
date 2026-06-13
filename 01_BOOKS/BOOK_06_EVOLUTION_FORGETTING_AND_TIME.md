@@ -1,7 +1,6 @@
 <!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 06 — Evolution, Forgetting, and Time
 
-> **Publication status — v16 publication-proofread draft.**
 > Scope: Time as ordered finite registration, forgetting/coarse-graining, RG transfer, and active-medium bridge discipline.
 > Claim discipline: Evolution claims require normalized channels or explicit bridge status.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
@@ -16,8 +15,6 @@ hat Phi_N(rho) = Phi_N(rho) / Tr Phi_N(rho)
 ```
 
 Entropy monotonicity is a theorem only when the channel is normalized, coarse-grained and entropy-monotone.
-
-(Exact (marker moved to 06_AUDIT/internal_sync_and_passport_markers.md) and working markers moved to 06_AUDIT/internal_sync_and_passport_markers.md)
 
 ```text
 c_D0 = 1 tick gauge
@@ -490,7 +487,7 @@ fixed detector support
 -> smooth macro-ordered finite evolution shadow
 ```
 
-The Lean owner is `D0.Topology.TilingHull` (`d0_hull_has_phi_cut_project_origin`, `d0_hull_is_nonperiodic`, `d0_hull_supports_gap_labeling`). The certificate owner is `05_CERTS/vp_d0_tiling_hull.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)0_TILING_HULL`).
+The Lean owner is `D0.Topology.TilingHull` (`d0_hull_has_phi_cut_project_origin`, `d0_hull_is_nonperiodic`, `d0_hull_supports_gap_labeling`). The certificate owner is `05_CERTS/vp_d0_tiling_hull.py` (`PASS_D0_TILING_HULL`).
 
 ## 06.10 Uncertainty as a finite-window protocol
 
@@ -1071,7 +1068,7 @@ The continuous RG equation is the interpolation shadow of this ladder. The bridg
 
 The φ-discrete RG ladder may be read as a sequence of frozen operator bands. Spectral gaps in these bands are admissible only when they carry hull/K0 labels.
 
-The formal Lean owner is `D0.Matter.KTheoryGapLabeling` (`gap_labeling_requires_frozen_operator` and `d0_gap_labels_are_countable`), and the verification certificate is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py` (`(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)0_GAP_LABELING_TILING_HULL`).
+The formal Lean owner is `D0.Matter.KTheoryGapLabeling` (`gap_labeling_requires_frozen_operator` and `d0_gap_labels_are_countable`), and the verification certificate is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py` (`PASS_D0_GAP_LABELING_TILING_HULL`).
 
 ## 06.32 Canonical cyclic phase distance and forgetting geometry
 
@@ -1095,7 +1092,7 @@ D0.Gauge.YangMillsKillingPositivity
 D0.Gauge.MatrixRepGaugeTransform
 ```
 
-The exact Bianchi statement is now closed on the graded incidence complex by `D0.Gauge.GradedBianchiIdentity`; the flat ungraded matrix residual remains a `NO-GO`. Finite gauge covariance is closed on the Wilson-link model by `D0.Gauge.WilsonLinkGaugeCovariance`. This closure is group-level and requires an associative `[Group G]` link carrier. Oct(term moved to 06_AUDIT/d0_v15_release_monograph_structure.md for historical commentary only)s are non-associative and cannot serve directly as the connection group; D0 uses the GaugeGroupDerivable boundary, meaning a derived associative automorphism group or matrix representation group.
+The exact Bianchi statement is now closed on the graded incidence complex by `D0.Gauge.GradedBianchiIdentity`; the flat ungraded matrix residual remains a `NO-GO`. Finite gauge covariance is closed on the Wilson-link model by `D0.Gauge.WilsonLinkGaugeCovariance`. This closure is group-level and requires an associative `[Group G]` link carrier. Octonions are non-associative and cannot serve directly as the connection group; D0 uses the GaugeGroupDerivable boundary, meaning a derived associative automorphism group or matrix representation group.
 
 ## 06.33 Renormalized archive Laplacian as finite forgetting
 

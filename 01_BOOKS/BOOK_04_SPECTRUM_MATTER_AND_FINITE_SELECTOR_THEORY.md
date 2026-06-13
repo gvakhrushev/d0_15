@@ -1,7 +1,6 @@
 <!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 04 — Spectrum, Matter, and Finite Selector Theory
 
-> **Publication status — v16 publication-proofread draft.**
 > Scope: Matter-sector selector laws, compressed poles, baryon/meson/Higgs/gauge-sector bridge discipline.
 > Claim discipline: Particle names require finite operator owners and typed bridge/passport boundaries.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
@@ -171,8 +170,6 @@ CKM origin sync: CKM as finite basis origin, not a free matrix; `D0.Matter.CKMBa
 Torus/Core13 and phason-baryon sync: `torus_geometry_forces_generation_selector_noncommute`; `torus_shell_noncommutativity_forces_nonpermutation_overlap_source`; `BaryonTripleShellCarrier`; Torus shell radius is independent of any Higgs VEV; matter generations and baryons are phason modes with `baryon_phason_symmetric_sector_dim_eq_ten`.
 
 ## 04.U Matter as defects and gap-labeled spectra of the φ-quasicrystal hull
-
-(All working sync headers and markers moved to 06_AUDIT/internal_sync_and_passport_markers.md. Books contain only theorem/operator/passport reference text.)
 
 Neutrino is interpreted as neutral bulk phason wave; `neutral_phason_wave_has_no_em_coupling` is the finite owner token.
 
@@ -1266,8 +1263,6 @@ It is not an internal free parameter and it is no longer merely a matrix theorem
 
 ## 04.11 SM-facing finite gauge decomposition
 
-(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md): 04.10 SM-facing finite gauge decomposition.
-
 The matter/gauge row is no longer allowed to say merely that D0 has an anomaly-compatible representation. The active object is a finite gauge-decomposition ledger:
 
 ```text
@@ -1815,8 +1810,7 @@ Certificate owner: `05_CERTS/vp_nuclear_shell_contact_src.py`. The synthetic cer
 Current external-data runner result:
 
 ```text
-(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)
-(marker moved to 06_AUDIT/internal_sync_and_passport_markers.md)2026
+PASS_NUCLEAR_SHELL_CONTACT_SRC_NATURE2026
 ```
 
 The Nature 2026 source-data XLSX files are pinned in the manifest. The external
