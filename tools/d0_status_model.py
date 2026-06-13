@@ -118,3 +118,28 @@ TRACK_CEILING = {
     "EXTERNAL": 2,
     "DEPRECATED": 0,
 }
+
+# --- Repository hygiene / refactor KPI (Iteration 2; second, independent axis) ---
+# A 100-point budget scored from deterministic git+guard facts. Penalties subtract
+# (each capped so one signal can't dominate), bonuses add back, result clamped to
+# [0, budget]. Adding tracked junk / fake proofs / book-trash LOWERS the score;
+# deleting them RAISES it — so cleanup is itself a tracked KPI next to theory
+# strength. Every signal names the offending files, so the output is a worklist.
+HYGIENE_BUDGET = 100
+# name: (unit_penalty, max_penalty, human_label)
+HYGIENE_PENALTIES: dict[str, tuple[float, float, str]] = {
+    "tracked_meta_trash":   (0.3, 20.0, "tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release)"),
+    "tracked_but_ignored":  (1.0, 8.0,  "tracked-but-gitignored files (scratch that should not ship)"),
+    "tautology_proofs":     (1.5, 18.0, "Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)"),
+    "proof_debt":           (2.0, 10.0, "sorry/axiom inside the built D0/ tree"),
+    "phantom_certs":        (3.0, 12.0, "vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET"),
+    "orphan_proof_targets": (0.1, 10.0, "PROOF-TARGET markers in book prose with no registry row"),
+    "dev_comments":         (1.0, 8.0,  "developer '# ...' TODO/notes left in book prose"),
+    "path_leaks":           (0.05, 12.0, "internal repo paths / vp_*.py / D0.* module names dumped in book prose"),
+    "corpus_errors":        (1.0, 10.0, "check_v14_clean_corpus violations (duplicate headings, version logs)"),
+    "real_in_project_lake": (5.0, 10.0, "a real .lake build tree inside the repo (must be an external junction)"),
+}
+# name: (unit_bonus, max_bonus, human_label)
+HYGIENE_BONUSES: dict[str, tuple[float, float, str]] = {
+    "files_deleted_vs_base": (0.1, 10.0, "net files removed vs base-v14 (rewards shrinking the publish tree)"),
+}

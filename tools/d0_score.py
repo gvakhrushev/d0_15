@@ -19,6 +19,10 @@ from __future__ import annotations
 import argparse
 import io
 import json
+import os
+import re
+import stat as _stat
+import subprocess
 import sys
 from pathlib import Path
 
@@ -64,10 +68,128 @@ def level_and_flag(release: str, lean_status: str, mods_ok: bool, certs_ok: bool
     return 1, None  # OPEN / proof-target
 
 
+# --------------------------------------------------------------------------- #
+# Repository hygiene / refactor KPI (second axis; deterministic git+file facts) #
+# --------------------------------------------------------------------------- #
+
+def _git(args: list[str]) -> list[str]:
+    """git porcelain lines; [] on any failure (pattern from check_firewall.py)."""
+    try:
+        out = subprocess.run(["git", "-C", str(s.ROOT), *args],
+                             capture_output=True, text=True, timeout=30)
+        return out.stdout.splitlines() if out.returncode == 0 else []
+    except Exception:  # noqa: BLE001
+        return []
+
+
+def _run(args: list[str]) -> str:
+    try:
+        return subprocess.run(args, capture_output=True, text=True, timeout=180,
+                              cwd=str(s.ROOT)).stdout
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+_TAUT_RE = re.compile(r"\(\s*h\s*:\s*[^)]+\)\s*:\s*[^:=\n]+:=\s*h\b")
+_DEV_COMMENT_RE = re.compile(r"(?m)\S[ \t]+#[ \t]+\S")  # trailing dev note (not a `## ` heading)
+_PATH_LEAK_RES = [re.compile(p) for p in (
+    r"vp_\w+\.py", r"\bD0\.[A-Z]\w+(?:\.\w+)+", r"05_CERTS/", r"03_THEORY_MAP/",
+    r"06_AUDIT", r"_QUARANTINE/", r"(?<![\w.])add/", r"C:\\Users", r"/Users/", r"\.lake/")]
+
+
+def hygiene_report(rows: list[dict]) -> dict:
+    """Score repo cleanliness 0..budget from deterministic git+file signals.
+    Every signal names offending files so the section doubles as a cleanup worklist."""
+    D0DIR = s.ROOT / "09_LEAN_FORMALIZATION" / "D0"
+    books = sorted((s.ROOT / "01_BOOKS").glob("BOOK_0*.md"))
+    book_text = "\n".join(p.read_text(encoding="utf-8", errors="replace") for p in books)
+
+    counts: dict[str, int] = {}
+    evidence: dict[str, list[str]] = {}
+
+    tt = _git(["ls-files", "add/", "_QUARANTINE/v17_overshoots/"])
+    counts["tracked_meta_trash"] = len(tt); evidence["tracked_meta_trash"] = tt[:6]
+    ti = _git(["ls-files", "-i", "-c", "--exclude-standard"])
+    counts["tracked_but_ignored"] = len(ti); evidence["tracked_but_ignored"] = ti[:6]
+
+    taut = []
+    for p in D0DIR.rglob("*.lean"):
+        n = len(_TAUT_RE.findall(p.read_text(encoding="utf-8", errors="replace")))
+        if n:
+            taut.append(f"{p.relative_to(D0DIR).as_posix()}:{n}")
+    counts["tautology_proofs"] = sum(int(x.rsplit(':', 1)[1]) for x in taut)
+    evidence["tautology_proofs"] = taut[:6]
+
+    pd = []
+    for p in D0DIR.rglob("*.lean"):
+        for i, ln in enumerate(p.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
+            st = ln.lstrip()
+            if st.startswith("--") or st.startswith("/-") or st.startswith("*"):
+                continue
+            if re.search(r"\b(sorry|admit)\b|(^|\s)axiom\s", ln):
+                pd.append(f"{p.name}:{i}")
+    counts["proof_debt"] = len(pd); evidence["proof_debt"] = pd[:6]
+
+    pc = _run([sys.executable, "tools/check_book_cert_references.py"])
+    mph = re.search(r"(\d+)\s+PHANTOM", pc)
+    counts["phantom_certs"] = int(mph.group(1)) if mph else 0
+
+    prose_pt = len(re.findall(r"PROOF-TARGET", book_text))
+    reg_pt = sum(1 for r in rows if m.canonical_release(r.get("release_status", "")) == "PROOF-TARGET")
+    counts["orphan_proof_targets"] = max(0, prose_pt - reg_pt)
+
+    counts["dev_comments"] = len(_DEV_COMMENT_RE.findall(book_text))
+    counts["path_leaks"] = sum(len(rx.findall(book_text)) for rx in _PATH_LEAK_RES)
+
+    cc = _run([sys.executable, "tools/check_v14_clean_corpus.py"])
+    counts["corpus_errors"] = cc.count("\n  - ")
+
+    # a real in-project .lake is bad; a junction/symlink to the external cache is fine.
+    # On Windows a junction is a reparse point, which Path.is_symlink() does NOT detect.
+    def _is_reparse(p: Path) -> bool:
+        try:
+            return bool(os.lstat(p).st_file_attributes & _stat.FILE_ATTRIBUTE_REPARSE_POINT)
+        except AttributeError:
+            return p.is_symlink()
+        except OSError:
+            return False
+    lake = D0DIR.parent / ".lake"
+    counts["real_in_project_lake"] = 1 if (lake.exists() and not _is_reparse(lake)
+                                           and not lake.is_symlink() and (lake / "build").exists()) else 0
+
+    counts["files_deleted_vs_base"] = len(_git(["diff", "--diff-filter=D", "--name-only", "base-v14", "HEAD"]))
+
+    signals = []
+    pen_total = 0.0
+    for name, (unit, cap, label) in m.HYGIENE_PENALTIES.items():
+        c = counts.get(name, 0)
+        pts = min(c * unit, cap)
+        pen_total += pts
+        signals.append({"signal": name, "count": c, "points": -round(pts, 1),
+                        "cap": -cap, "label": label, "evidence": evidence.get(name, [])})
+    bon_total = 0.0
+    for name, (unit, cap, label) in m.HYGIENE_BONUSES.items():
+        c = counts.get(name, 0)
+        pts = min(c * unit, cap)
+        bon_total += pts
+        signals.append({"signal": name, "count": c, "points": round(pts, 1),
+                        "cap": cap, "label": label, "evidence": []})
+
+    score = max(0.0, min(float(m.HYGIENE_BUDGET), m.HYGIENE_BUDGET - pen_total + bon_total))
+    top_actions = sorted([x for x in signals if x["points"] < 0], key=lambda x: x["points"])
+    return {
+        "score": round(score, 1), "budget": m.HYGIENE_BUDGET,
+        "penalty_total": round(pen_total, 1), "bonus_total": round(bon_total, 1),
+        "signals": signals, "top_actions": top_actions,
+    }
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--strict", action="store_true", help="exit 1 on any integrity demotion")
     ap.add_argument("--top", type=int, default=25, help="rows per ranked list")
+    ap.add_argument("--strict-hygiene", action="store_true",
+                    help="exit 1 if the repository-hygiene score is below budget (opt-in; default off)")
     args = ap.parse_args()
 
     rows = s.read_csv(s.CLAIM_MAP)
@@ -175,21 +297,28 @@ def main() -> int:
         "integrity": [{k: x[k] for k in ("claim_id", "level_name", "score", "integrity_flag")} for x in integrity],
         "per_claim": scored,
     }
+    hygiene = hygiene_report(rows)
+    payload["hygiene"] = hygiene
     (s.THEORY_DIR / "scoreboard.json").write_text(
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    write_markdown(totals, by_domain, by_book, promotions, leverage_gaps, integrity, args.top)
+    write_markdown(totals, by_domain, by_book, promotions, leverage_gaps, integrity, hygiene, args.top)
 
     print(f"d0_score: strength {realized}/{track_fair_max} ({totals['pct_strength']}%), "
           f"core headroom {totals['core_headroom']}, integrity demotions {len(integrity)}")
+    print(f"d0_score: repo hygiene {hygiene['score']}/{hygiene['budget']} "
+          f"(penalties -{hygiene['penalty_total']}, bonuses +{hygiene['bonus_total']})")
     if args.strict and integrity:
         print("RESULT: FAIL (integrity demotions under --strict)")
+        return 1
+    if args.strict_hygiene and hygiene["score"] < hygiene["budget"]:
+        print(f"RESULT: FAIL (hygiene {hygiene['score']} < {hygiene['budget']} under --strict-hygiene)")
         return 1
     print("RESULT: PASS")
     return 0
 
 
-def write_markdown(totals, by_domain, by_book, promotions, leverage_gaps, integrity, top):
+def write_markdown(totals, by_domain, by_book, promotions, leverage_gaps, integrity, hygiene, top):
     L = []
     L.append("# D0 Theory Strength Scoreboard\n")
     L.append("_Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.py`. "
@@ -201,6 +330,23 @@ def write_markdown(totals, by_domain, by_book, promotions, leverage_gaps, integr
              f"(headroom **{totals['core_headroom']}** points to take every core claim to L5)")
     L.append(f"- Claims: {totals['n_active']} active ({totals['n_claims']} total); "
              f"integrity demotions: {totals['integrity_demotions']}; duplicates: {len(totals['duplicates'])}\n")
+
+    # second axis: repository hygiene / refactor (cleanup is itself a tracked KPI)
+    L.append("## Repository hygiene / refactor score\n")
+    L.append(f"- **Hygiene:** {hygiene['score']} / {hygiene['budget']} "
+             f"(penalties **-{hygiene['penalty_total']}**, bonuses **+{hygiene['bonus_total']}**) — "
+             "cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.")
+    L.append("")
+    L.append("| signal | count | points | what to clean |")
+    L.append("|---|--:|--:|---|")
+    for x in hygiene["signals"]:
+        ev = ("  ·  e.g. " + ", ".join(x["evidence"][:3])) if x.get("evidence") else ""
+        L.append(f"| `{x['signal']}` | {x['count']} | {x['points']:+g} | {x['label']}{ev} |")
+    L.append("")
+    if hygiene["top_actions"]:
+        L.append("**Top cleanup actions (most points to regain):** "
+                 + "; ".join(f"`{a['signal']}` ({a['points']:+g})" for a in hygiene["top_actions"][:5]))
+        L.append("")
 
     L.append("## Where to gain points next (cheapest promotions)\n")
     L.append("| claim | domain | at | -> | +pts | effort |")

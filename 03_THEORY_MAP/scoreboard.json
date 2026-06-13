@@ -4480,5 +4480,201 @@
       "leverage": 0,
       "integrity_flag": null
     }
-  ]
+  ],
+  "hygiene": {
+    "score": 33.0,
+    "budget": 100,
+    "penalty_total": 75.0,
+    "bonus_total": 8.0,
+    "signals": [
+      {
+        "signal": "tracked_meta_trash",
+        "count": 54,
+        "points": -16.2,
+        "cap": -20.0,
+        "label": "tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release)",
+        "evidence": [
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md"
+        ]
+      },
+      {
+        "signal": "tracked_but_ignored",
+        "count": 8,
+        "points": -8.0,
+        "cap": -8.0,
+        "label": "tracked-but-gitignored files (scratch that should not ship)",
+        "evidence": [
+          "05_CERTS/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md",
+          "05_CERTS/NO_GO_QNM_DELTA0_OVERTONE_LADDER.md",
+          "05_CERTS/book04_centered_full_support_selectors.json",
+          "05_CERTS/bridge_params_schema.json",
+          "05_CERTS/bridge_schema.json",
+          "05_CERTS/locked_core_params.json"
+        ]
+      },
+      {
+        "signal": "tautology_proofs",
+        "count": 20,
+        "points": -18.0,
+        "cap": -18.0,
+        "label": "Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)",
+        "evidence": [
+          "Bridge/PhiDiscreteRG.lean:1",
+          "Cosmology/PhasonFlipEntropy.lean:2",
+          "Detector/WeakCouplingClassicalization.lean:2",
+          "Geometry/NonCommutativeSolenoid.lean:1",
+          "Geometry/NonCommutativeSolenoidGravity.lean:3",
+          "Matter/CKMPhasonHolonomy.lean:3"
+        ]
+      },
+      {
+        "signal": "proof_debt",
+        "count": 0,
+        "points": -0.0,
+        "cap": -10.0,
+        "label": "sorry/axiom inside the built D0/ tree",
+        "evidence": []
+      },
+      {
+        "signal": "phantom_certs",
+        "count": 0,
+        "points": -0.0,
+        "cap": -12.0,
+        "label": "vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET",
+        "evidence": []
+      },
+      {
+        "signal": "orphan_proof_targets",
+        "count": 98,
+        "points": -9.8,
+        "cap": -10.0,
+        "label": "PROOF-TARGET markers in book prose with no registry row",
+        "evidence": []
+      },
+      {
+        "signal": "dev_comments",
+        "count": 15,
+        "points": -8.0,
+        "cap": -8.0,
+        "label": "developer '# ...' TODO/notes left in book prose",
+        "evidence": []
+      },
+      {
+        "signal": "path_leaks",
+        "count": 501,
+        "points": -12.0,
+        "cap": -12.0,
+        "label": "internal repo paths / vp_*.py / D0.* module names dumped in book prose",
+        "evidence": []
+      },
+      {
+        "signal": "corpus_errors",
+        "count": 3,
+        "points": -3.0,
+        "cap": -10.0,
+        "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
+        "evidence": []
+      },
+      {
+        "signal": "real_in_project_lake",
+        "count": 0,
+        "points": -0.0,
+        "cap": -10.0,
+        "label": "a real .lake build tree inside the repo (must be an external junction)",
+        "evidence": []
+      },
+      {
+        "signal": "files_deleted_vs_base",
+        "count": 80,
+        "points": 8.0,
+        "cap": 10.0,
+        "label": "net files removed vs base-v14 (rewards shrinking the publish tree)",
+        "evidence": []
+      }
+    ],
+    "top_actions": [
+      {
+        "signal": "tautology_proofs",
+        "count": 20,
+        "points": -18.0,
+        "cap": -18.0,
+        "label": "Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)",
+        "evidence": [
+          "Bridge/PhiDiscreteRG.lean:1",
+          "Cosmology/PhasonFlipEntropy.lean:2",
+          "Detector/WeakCouplingClassicalization.lean:2",
+          "Geometry/NonCommutativeSolenoid.lean:1",
+          "Geometry/NonCommutativeSolenoidGravity.lean:3",
+          "Matter/CKMPhasonHolonomy.lean:3"
+        ]
+      },
+      {
+        "signal": "tracked_meta_trash",
+        "count": 54,
+        "points": -16.2,
+        "cap": -20.0,
+        "label": "tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release)",
+        "evidence": [
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+          "_QUARANTINE/v17_overshoots/01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md"
+        ]
+      },
+      {
+        "signal": "path_leaks",
+        "count": 501,
+        "points": -12.0,
+        "cap": -12.0,
+        "label": "internal repo paths / vp_*.py / D0.* module names dumped in book prose",
+        "evidence": []
+      },
+      {
+        "signal": "orphan_proof_targets",
+        "count": 98,
+        "points": -9.8,
+        "cap": -10.0,
+        "label": "PROOF-TARGET markers in book prose with no registry row",
+        "evidence": []
+      },
+      {
+        "signal": "tracked_but_ignored",
+        "count": 8,
+        "points": -8.0,
+        "cap": -8.0,
+        "label": "tracked-but-gitignored files (scratch that should not ship)",
+        "evidence": [
+          "05_CERTS/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md",
+          "05_CERTS/NO_GO_QNM_DELTA0_OVERTONE_LADDER.md",
+          "05_CERTS/book04_centered_full_support_selectors.json",
+          "05_CERTS/bridge_params_schema.json",
+          "05_CERTS/bridge_schema.json",
+          "05_CERTS/locked_core_params.json"
+        ]
+      },
+      {
+        "signal": "dev_comments",
+        "count": 15,
+        "points": -8.0,
+        "cap": -8.0,
+        "label": "developer '# ...' TODO/notes left in book prose",
+        "evidence": []
+      },
+      {
+        "signal": "corpus_errors",
+        "count": 3,
+        "points": -3.0,
+        "cap": -10.0,
+        "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
+        "evidence": []
+      }
+    ]
+  }
 }
