@@ -1,0 +1,33 @@
+{
+  "passport_id": "D0-GRAV-DSS-001",
+  "title": "Critical Collapse Echo-Lattice Closure",
+  "arxiv": "2601.14358",
+  "doi": "10.1103/qgl5-5l3t",
+  "year": 2026,
+  "authors": "PRL authors (large-D analytic DSS)",
+  "source_type": "external_analytic_certificate",
+  "pinned_artifacts": [
+    "arXiv:2601.14358 HTML + source",
+    "ancillary NNNLOLargeD.nb"
+  ],
+  "d0_objects": [
+    "D0-GRAV-DSS-001 Critical Collapse Echo-Lattice Closure",
+    "D0-GRAV-DSS-002 Self-similar horizon is capacity-null boundary",
+    "D0-GRAV-DSS-003 Echo admissibility constraint",
+    "D0-GRAV-DSS-004 Spacetime Crystal Bridge",
+    "D0-GRAV-DSS-NOGO-001 Smooth Monotone Collapse Failure"
+  ],
+  "cert_script": "05_CERTS/vp_critical_collapse_dss_echo_lattice.py",
+  "lean_owners": [
+    "D0.Gravity.CriticalCollapseDSS",
+    "D0.Gravity.EchoCapacityHorizon"
+  ],
+  "book_integration": [
+    "Book 07 §07.49",
+    "Book 06 (runtime recurrence cross-ref)",
+    "Book 05 (no-go row)",
+    "Book 08 (PBH bridge note)"
+  ],
+  "status": "PASS_CRITICAL_COLLAPSE_DSS_ECHO_LATTICE_BRIDGE",
+  "notes": "External GR source (analytic DSS family + NLO filtering) supplies the lattice; D0 supplies the finite readout / capacity / admissibility interpretation."
+}

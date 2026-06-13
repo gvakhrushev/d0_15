@@ -1,0 +1,26 @@
+priority,milestone,task_id,task_title,lean_modules,claim_ids,acceptance,notes
+P0,M1,M1.1,Create Lean4/mathlib Lake project,lakefile.lean; lean-toolchain; D0/All.lean,ALL,lake build passes on clean machine,No D0 theory yet; infrastructure only
+P0,M1,M1.2,Exact primitive equation proof,D0/Core/Phi.lean,D0-FOUND-001,"Prove unique p in (0,1) with p+p^2=1; no Float",Use Real and sqrt 5
+P0,M1,M1.3,Delta half-gap and Q(D),D0/Core/Delta.lean,D0-PHI-HURWITZ-001,δ0=(p-p^2)/2=1/(2φ^3); Q(D)=φ^(D-4),May need integer powers helper lemmas
+P0,M1,M1.4,ABCD/Omega/V shell cardinalities,D0/Core/DyadABCD.lean; D0/Core/CapacityChain.lean,D0-ABCD-001;D0-OMEGA8-001,"cards 4,8,9,11,13,33 proved","Role = Dyad × Dyad,  not enum only"
+P1,M2,M2.1,Complete tripartite graph counts,D0/Combinatorics/CompleteTripartite.lean,D0-SCENE-001,|V|=33 |E|=359 |T|=1287,Use finite dependent sums
+P1,M2,M2.2,No 3-simplices theorem,D0/Topology/NoThreeSimplices.lean,D0-NCG-INDEX-001,No 4-clique/no tetrahedron proved,Do not infer anomaly cancellation solely from this
+P1,M2,M2.3,Forced return windows,D0/Combinatorics/ForcedReturnWindows.lean,D0-PHASE-UNFOLD-002,"lcm(4,11)=44; totient44=20; qEW=710; totient710=280; 280/8=35",No π approximation in derivation
+P1,M2,M2.4,Hurwitz/golden rigidity finite core,D0/Combinatorics/PhaseUnfolding.lean; D0/Bridge/HurwitzAssumption.lean,D0-PHI-HURWITZ-001,Finite convergent lemmas proved; full Hurwitz isolated if assumed,Do not axiom in Core
+P1,M3,M3.1,Finite positive trace/Born response,D0/Core/MatrixResponse.lean; D0/Core/BornFinite.lean,D0-QM-BORN-001;D0-QM-BORN-002,nonnegative response; sum=1; unitary covariance,"Finite POVM theorem,  not full Gleason"
+P1,M3,M3.2,Clifford gamma matrices,D0/Algebra/GammaMatrices.lean; D0/Algebra/Clifford13.lean,D0-CARRIER-003,"anticommutation for Cl(1,3) proved",Explicit 4x4 complex matrices
+P1,M3,M3.3,Boundary-of-boundary identity,D0/Topology/BoundaryBoundary.lean,D0-GAUGE-MATTER-001,∂1∂2=0 for finite incidence matrices,General finite simplicial identity if possible
+P1,M3,M3.4,SM anomaly exact rational sums,D0/Gauge/SMCharges.lean; D0/Gauge/AnomalySums.lean,D0-GAUGE-MATTER-001;D0-GAUGE-MATTER-002,"U1^3, grav-U1, SU2^2U1, SU3^2U1 sums =0 over Q",One generation left-handed Weyl ledger
+P2,M4,M4.1,High-gain arithmetic locks,D0/Combinatorics/HighGainCounts.lean,D0-UNIQUE-ATLAS-306;D0-UNIQUE-ATLAS-038;D0-UNIQUE-ATLAS-099;D0-UNIQUE-ATLAS-035,"306,38,99,35,19 arithmetic proved",Complex uniqueness stays theorem predicates/Python certs
+P2,M5,M5.1,Profinite inverse limit skeleton,D0/Condensed/ProjectiveSystem.lean; D0/Condensed/ProfiniteSupport.lean,D0-CONDENSED-FORMAL-002,Projective system and inverse-limit compatibility theorem,Avoid full condensed overclaim if not needed
+P2,M5,M5.2,Operator naturality on inverse limit,D0/Condensed/OperatorNaturality.lean,D0-CONDENSED-FORMAL-002,Compatible finite operator family induces limit operator,Bridge to condensed language
+P2,M5,M5.3,Phi discrete RG bridge,D0/Bridge/PhiDiscreteRG.lean,D0-RG-001,Scale sequence/fd beta algebra proved; smooth/RG assumptions explicit,No full SM beta claim yet
+P2,M5,M5.4,Smooth metric bridge assumptions,D0/Bridge/SmoothMetricBridge.lean,D0-SMOOTH-001,CovarianceSystem and HeatTraceAssumptions formalized,Theorem conditional until cert verifies G_N
+P3,M6,M6.1,Claim map generator,D0/TheoremLedger/ClaimMap.lean; tools/build_claim_map.py,ALL,All active claims mapped to Lean/cert/passport,Must sync with xlsx/status database
+P3,M6,M6.2,No-sorry/no-axiom CI guard,tools/check_no_sorry_in_core.py,ALL,CI fails on sorry/axiom/Float in core,Allow assumptions only in Bridge/Assumptions
+P3,M6,M6.3,Release ledger integration,tools/build_release_ledger.py,ALL,Lean + Python cert + data hashes combined,One source of truth for release
+P0,M7,M7.1,Fast Lean iteration refactor,D0/Frozen/*; D0/Interface/*; D0/Active/*; D0/TheoremLedger/ActiveClosureIndex.lean,ALL,Active target build avoids D0.All and full hard ledger; mode=active runner works,Use existing theorems as interface contracts
+P0,M7,M7.2,Constrained conserved stress projection,D0/Active/ConservedStressProjection.lean; D0/Geometry/ArchiveStressRepresentative.lean,D0-ARCHIVE-STRESS-REP-001;D0-ARCHIVE-STRESS-CONSERVATION-001,"Construct T symmetric,row-sum-zero,variation-equivalent to raw gradient or register minimal no-go",Test candidate T=S-(1/N)(v1^T+1v^T)
+P0,M7,M7.3,Non-vacuous scalar stationarity to Poisson,D0/Active/ScalarPoissonReduction.lean; D0/Geometry/ArchiveWeakFieldReduction.lean,D0-ARCHIVE-WEAK-FIELD-001;D0-ARCHIVE-SCALAR-REDUCTION-001,Replace ScalarSectorStationary := False with real stationarity and prove stationarity implies ArchivePoissonEquation,Do not use False.elim
+P0,M7,M7.4,Nonzero matter source neutrality,D0/Active/NonzeroMatterSourceNeutrality.lean; D0/Matter/GeneratedMatterSource.lean,D0-MATTER-SOURCE-NEUTRALITY-001;D0-MATTER-LOCALIZATION-001,Define nonzero source density from generated matter localization and prove neutrality from anomaly/charge condition,Zero-source theorem remains only interface
+P1,M7,M7.5,Primitive text sync check,tools/check_primitive_text_sync.py; 01_BOOKS/*; 03_THEORY_MAP/*,ALL,"If Lean claim status changes, touched book/status row is required",Lightweight grep/manifest acceptable first iteration

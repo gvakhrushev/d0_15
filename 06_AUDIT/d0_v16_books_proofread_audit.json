@@ -1,0 +1,899 @@
+{
+  "changes": [
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 1,
+      "before": "# BOOK 00 � Entry Contract and Admissibility Discipline",
+      "after": "# BOOK 00 — Entry Contract and Admissibility Discipline"
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 35,
+      "before": "## 00.4a D0 vacuum as condensed ?-quasicrystalline tiling hull",
+      "after": "## 00.4a D0 vacuum as condensed φ-quasicrystalline tiling hull"
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 85,
+      "before": "D0 is a finite-observability framework over a condensed/profinite ?-quasicrystalline tiling hull.",
+      "after": "D0 is a finite-observability framework over a condensed/profinite φ-quasicrystalline tiling hull."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 87,
+      "before": "Its primitive object is not a smooth continuum, not a particle field and not a string vacuum.  ",
+      "after": "Its primitive object is not a smooth continuum, not a particle field and not a string vacuum."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 88,
+      "before": "Its primitive object is finite detector readout over a condensed/profinite support (the physical model is the condensed ?-quasicrystalline tiling hull).",
+      "after": "Its primitive object is finite detector readout over a condensed/profinite support (the physical model is the condensed φ-quasicrystalline tiling hull)."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 90,
+      "before": "The integer time automorphism T generates the ?/Galois split, Lucas trace layers, Lefschetz scene counts and trace-heat gravity.  ",
+      "after": "The integer time automorphism T generates the φ/Galois split, Lucas trace layers, Lefschetz scene counts and trace-heat gravity."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 173,
+      "before": "with finite factorization, ? self-return, quadratic response, single-section discipline, gate stationarity, archive/active separation, and explicit falsification hooks.",
+      "after": "with finite factorization, φ self-return, quadratic response, single-section discipline, gate stationarity, archive/active separation, and explicit falsification hooks."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 177,
+      "before": "## 00.4a D0 vacuum as condensed ?-quasicrystalline tiling hull",
+      "after": "## 00.4a D0 vacuum as condensed φ-quasicrystalline tiling hull"
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 181,
+      "before": "The smooth spacetime manifold is a macro readout shadow.  ",
+      "after": "The smooth spacetime manifold is a macro readout shadow."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 182,
+      "before": "The active visible geometry is obtained by ? cut-and-project projection from the archive/profinite support.",
+      "after": "The active visible geometry is obtained by φ cut-and-project projection from the archive/profinite support."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 307,
+      "before": "K-theory and Gap Labeling cannot tune an operator after comparison.  ",
+      "after": "K-theory and Gap Labeling cannot tune an operator after comparison."
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 321,
+      "before": "| scalar amplitude | survey comparison protocol | `2.0553825512209827?10^-9` | CLASS/CAMB likelihood | no |",
+      "after": "| scalar amplitude | survey comparison protocol | `2.0553825512209827×10^-9` | CLASS/CAMB likelihood | no |"
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "line": 433,
+      "before": "**Born quadratic-response closure.** D0 no longer treats the raw Born response as a supplied positive list. A finite phase-quadrature atom admits the general quadratic response `a x^2+bxy+c y^2`; internal quarter-turn phase blindness forces `a=c` and `b=0`, hence the response is a scalar multiple of `x^2+y^2`, and unit calibration gives the finite `D�D` response. Only after this step does finite normalization produce probabilities.",
+      "after": "**Born quadratic-response closure.** D0 no longer treats the raw Born response as a supplied positive list. A finite phase-quadrature atom admits the general quadratic response `a x^2+bxy+c y^2`; internal quarter-turn phase blindness forces `a=c` and `b=0`, hence the response is a scalar multiple of `x^2+y^2`, and unit calibration gives the finite `D†D` response. Only after this step does finite normalization produce probabilities."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1,
+      "before": "# BOOK 01 � Condensed foundations, finite registration and construction of the finite incidence graph",
+      "after": "# BOOK 01 — Condensed foundations, finite registration and construction of the finite incidence graph"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 53,
+      "before": "with finite-stage factorization, projection compatibility, a positive response operator, and a halt quotient. Thus D0 words `registration`, `readout`, `four terminal roles A,B,C,D`, and `eight oriented terminal-role states ?8` are local names for finite instruments and quotient data on this profinite/condensed support.",
+      "after": "with finite-stage factorization, projection compatibility, a positive response operator, and a halt quotient. Thus D0 words `registration`, `readout`, `four terminal roles A,B,C,D`, and `eight oriented terminal-role states Ω8` are local names for finite instruments and quotient data on this profinite/condensed support."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 198,
+      "before": "## 01.4a Condensed ?-quasicrystalline support",
+      "after": "## 01.4a Condensed φ-quasicrystalline support"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 202,
+      "before": "The primitive return phase is ?-rigid:",
+      "after": "The primitive return phase is φ-rigid:"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 216,
+      "before": "-> irrational ? phase",
+      "after": "-> irrational φ phase"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 527,
+      "before": "### 01.7.2 Proof cell: `D0-SCENE-001` eight oriented terminal-role states ?8 detector cycle",
+      "after": "### 01.7.2 Proof cell: `D0-SCENE-001` eight oriented terminal-role states Ω8 detector cycle"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 551,
+      "before": "## 01.8 From eight oriented terminal-role states ?8 to V9 and construction of the finite incidence graph",
+      "after": "## 01.8 From eight oriented terminal-role states Ω8 to V9 and construction of the finite incidence graph"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 661,
+      "before": "| boundary/mass forgetting factor (retired q_mass) | now Boundary Residual Eigenvalue r_? | Books 03, 04, 07 (migration note in audit) |",
+      "after": "| boundary/mass forgetting factor (retired q_mass) | now Boundary Residual Eigenvalue r_∂ | Books 03, 04, 07 (migration note in audit) |"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 665,
+      "before": "| non-reduced Compton section and `?_act` | single-section metrology bridge | Book 03 |",
+      "after": "| non-reduced Compton section and `Λ_act` | single-section metrology bridge | Book 03 |"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 666,
+      "before": "| finite circle audit `?_0` | phase-closure audit, not continuum replacement | Books 02, 05 |",
+      "after": "| finite circle audit `π_0` | phase-closure audit, not continuum replacement | Books 02, 05 |"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 687,
+      "before": "1. Do not derive `\\varphi` from aesthetic decorative ? numerology. Derive it from minimal non-monopoly self-return closure.",
+      "after": "1. Do not derive `\\varphi` from aesthetic decorative φ numerology. Derive it from minimal non-monopoly self-return closure."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 700,
+      "before": "| `D0-SCENE-001` | CORE-SUPPORT | eight oriented terminal-role states ?8 detector cycle | Do not treat phi alone as physical geometry before eight oriented terminal-role states ?8 closure. | d0_core_certificates.py; vp_information_line_exchange.py |",
+      "after": "| `D0-SCENE-001` | CORE-SUPPORT | eight oriented terminal-role states Ω8 detector cycle | Do not treat phi alone as physical geometry before eight oriented terminal-role states Ω8 closure. | d0_core_certificates.py; vp_information_line_exchange.py |"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 705,
+      "before": "## 01.14 Integrated theorem: ?-rigidity and dimension-graded detector quantum",
+      "after": "## 01.14 Integrated theorem: φ-rigidity and dimension-graded detector quantum"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 707,
+      "before": "This rigidity theorem belongs in the foundation book because it answers the first external objection to the ? split: whether the value can be perturbed and compensated later by a convention. Its content belongs in the foundation book because it answers the first external objection to the ? split: whether the value can be perturbed and compensated later by a convention.",
+      "after": "This rigidity theorem belongs in the foundation book because it answers the first external objection to the φ split: whether the value can be perturbed and compensated later by a convention."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 715,
+      "before": "and compare the three detector definitions which coincide at the ? point:",
+      "after": "and compare the three detector definitions which coincide at the φ point:"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 773,
+      "before": "**Theorem 12.1 � ?-rigidity.**  The ? root is structurally isolated as the unique point where finite detector normalization, quadratic recursion and detector asymmetry coincide.  Perturbing the root separates these three definitions before any particle or cosmological formula is used.",
+      "after": "**Theorem 12.1 — φ-rigidity.**  The φ root is structurally isolated as the unique point where finite detector normalization, quadratic recursion and detector asymmetry coincide.  Perturbing the root separates these three definitions before any particle or cosmological formula is used."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 885,
+      "before": "Coarse-graining is also not a new probability postulate.  If a map `? : I -> K` merges fine outcomes into a coarse outcome `k`, the coarse response is the aggregate",
+      "after": "Coarse-graining is also not a new probability postulate.  If a map `π : I -> K` merges fine outcomes into a coarse outcome `k`, the coarse response is the aggregate"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 905,
+      "before": "A nonlinear or power readout, for example a rule of the form `p_i ? r_i^q`, is admissible only if it still satisfies the response-recovery equation",
+      "after": "A nonlinear or power readout, for example a rule of the form `p_i ∝ r_i^q`, is admissible only if it still satisfies the response-recovery equation"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 967,
+      "before": "This is the finite D0 content of the usual `D�D` response.  The probability rule is then not postulated: a finite family of amplitude channels first produces raw responses",
+      "after": "This is the finite D0 content of the usual `D†D` response.  The probability rule is then not postulated: a finite family of amplitude channels first produces raw responses"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 994,
+      "before": "=> squared-norm response D�D",
+      "after": "=> squared-norm response D†D"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1024,
+      "before": "Entangled readouts are shared-support effects before metric projection.  ",
+      "after": "Entangled readouts are shared-support effects before metric projection."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1025,
+      "before": "Two visible regions may be distant after metric projection while still sharing the same archive/cut-and-project source.  ",
+      "after": "Two visible regions may be distant after metric projection while still sharing the same archive/cut-and-project source."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1030,
+      "before": "D0 does not treat spatial arms, rays, or coordinate branches as primitive continuum objects. A finite ordered registration chain can acquire visible spatial structure when it is read through a cyclic phase quotient. If the tick index is `n` and the phase is `n mod ?`, a near-return `q?m?` decomposes the tick line into residue branches `n=a+tq`. The phase drift along each branch is controlled by `q-m?`.",
+      "after": "D0 does not treat spatial arms, rays, or coordinate branches as primitive continuum objects. A finite ordered registration chain can acquire visible spatial structure when it is read through a cyclic phase quotient. If the tick index is `n` and the phase is `n mod τ`, a near-return `qв‰€mτ` decomposes the tick line into residue branches `n=a+tq`. The phase drift along each branch is controlled by `q-mτ`."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1032,
+      "before": "For the D0 circumference surrogate `?_0=2?_0`, the first nontrivial stable return `44?7?_0` yields `?_Euler(44)=20` admissible branches. This gives the terminal shell count `d_13=20` a dynamical phase-unfolding interpretation: it is the admissible branch count of the first stable finite return, not a free shell label.",
+      "after": "For the D0 circumference surrogate `τ_0=2π_0`, the first nontrivial stable return `44≈7τ_0` yields `φ_Euler(44)=20` admissible branches. This gives the terminal shell count `d_13=20` a dynamical phase-unfolding interpretation: it is the admissible branch count of the first stable finite return, not a free shell label."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1107,
+      "before": "Phase unfolding is a cut-and-project mechanism, not a visual metaphor. The ordered tick chain supplies a non-periodic ? phase; a finite readout quotient chooses a return modulus; the quotient residues become detector-visible branches.",
+      "after": "Phase unfolding is a cut-and-project mechanism, not a visual metaphor. The ordered tick chain supplies a non-periodic φ phase; a finite readout quotient chooses a return modulus; the quotient residues become detector-visible branches."
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1111,
+      "before": "-> irrational ? active slice",
+      "after": "-> irrational φ active slice"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1121,
+      "before": "The terminal readout alphabet is fixed by finite information capacity. A primitive two-port detector has a binary terminal dyad `D2`. The complete terminal role set is therefore `D2 ? D2`, with four roles. This is the four terminal roles A,B,C,D alphabet:",
+      "after": "The terminal readout alphabet is fixed by finite information capacity. A primitive two-port detector has a binary terminal dyad `D2`. The complete terminal role set is therefore `D2 × D2`, with four roles. This is the four terminal roles A,B,C,D alphabet:"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1135,
+      "before": "A reusable shell also requires a stationary marked witness section `?0`. Hence",
+      "after": "A reusable shell also requires a stationary marked witness section `ω0`. Hence"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1161,
+      "before": "The physical phase increment is therefore `2?/?²`.  By the Hurwitz/continued-",
+      "after": "The physical phase increment is therefore `2π/φ²`.  By the Hurwitz/continued-"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1162,
+      "before": "fraction extremality of the `?` class, this rotation is maximally resistant to",
+      "after": "fraction extremality of the `φ` class, this rotation is maximally resistant to"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1176,
+      "before": "?^{-2} irrational rotation  > non-resonant archive smoothing;",
+      "after": "φ^{-2} irrational rotation  > non-resonant archive smoothing;"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "line": 1271,
+      "before": "The terminal role capacity `four terminal roles A,B,C,D = D? ? D?` fixes the minimal external quadratic carrier:",
+      "after": "The terminal role capacity `four terminal roles A,B,C,D = D₂ × D₂` fixes the minimal external quadratic carrier:"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1,
+      "before": "# BOOK 02 � Mathematical proof spine and invariant calculus",
+      "after": "# BOOK 02 — Mathematical proof spine and invariant calculus"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 113,
+      "before": "-> ?-rigid phase return",
+      "after": "-> φ-rigid phase return"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 177,
+      "before": "## 02.K � K-theory / Gap Labeling proof spine",
+      "after": "## 02.K K-theory / Gap Labeling proof spine"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 196,
+      "before": "| hull owner | the support is the ?-quasicrystalline tiling hull or a declared finite approximant |",
+      "after": "| hull owner | the support is the φ-quasicrystalline tiling hull or a declared finite approximant |"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 238,
+      "before": "Any formula containing a high-gain factor `?^N`, `?_0^N`, or a small rational correction exponent is proof-complete only after the exponent has a finite operator source.  A sensitivity calculation is not enough.  The book must specify:",
+      "after": "Any formula containing a high-gain factor `φ^N`, `δ_0^N`, or a small rational correction exponent is proof-complete only after the exponent has a finite operator source.  A sensitivity calculation is not enough.  The book must specify:"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 251,
+      "before": "| weak-unlock depth | `19=2?-1`, `?=(|V|-Rank)/Rank=10` | one forward/return terminal cycle with the halt section removed |",
+      "after": "| weak-unlock depth | `19=2γ-1`, `γ=(|V|-Rank)/Rank=10` | one forward/return terminal cycle with the halt section removed |"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 252,
+      "before": "| action section | `38=2(2?-1)` | full terminal response uses both orientation sides of the weak-unlock cycle |",
+      "after": "| action section | `38=2(2γ-1)` | full terminal response uses both orientation sides of the weak-unlock cycle |"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 254,
+      "before": "| EM residual exponent | `5/8+?_0/384` | `5/8=(ABCD+1)/?_8`; `384=?_8�ABCD�dim(g_light)` |",
+      "after": "| EM residual exponent | `5/8+δ_0/384` | `5/8=(ABCD+1)/Ω_8`; `384=Ω_8·ABCD·dim(g_light)` |"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 274,
+      "before": "The role of these identities in Book 02 is operational. They define the finite terminal quotient ideal and admissible runtime calculus. A sector formula may use a ? lift, echo, boundary correction or archive leakage only if the use is typed by the finite operator grammar.",
+      "after": "The role of these identities in Book 02 is operational. They define the finite terminal quotient ideal and admissible runtime calculus. A sector formula may use a φ lift, echo, boundary correction or archive leakage only if the use is typed by the finite operator grammar."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 276,
+      "before": "### 02.5.1 The `?`-ABCD operator-cycle theorem",
+      "after": "### 02.5.1 The `φ`-ABCD operator-cycle theorem"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 278,
+      "before": "The four ABCD entries must be treated as typed operators, not as four independent scalar axioms.  Let `T_?,T_?` be the two conjugate branch operators of the finite comparison module.  Define",
+      "after": "The four ABCD entries must be treated as typed operators, not as four independent scalar axioms.  Let `T_φ,T_ψ` be the two conjugate branch operators of the finite comparison module.  Define"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 285,
+      "before": "C_+(T)=T_?^2-T_?,",
+      "after": "C_+(T)=T_φ^2-T_φ,"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 287,
+      "before": "D_-(T)=T_?^2-T_?.",
+      "after": "D_-(T)=T_ψ^2-T_ψ."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 290,
+      "before": "The `?` detector cycle imposes the operator identities",
+      "after": "The `φ` detector cycle imposes the operator identities"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 317,
+      "before": "A_? : additive normalization / unit-section operator",
+      "after": "A_Σ : additive normalization / unit-section operator"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 323,
+      "before": "Therefore the proof obligation is not scalar independence.  The obligation is cycle completeness: remove any one typed operator and the finite detector cycle loses a required boundary condition.  `A_?` removes the unit, `B_N` decouples the branches, `C_+` destroys forward runtime recursion, and `D_-` destroys return closure.  This is the operator sense in which ABCD is minimal.",
+      "after": "Therefore the proof obligation is not scalar independence.  The obligation is cycle completeness: remove any one typed operator and the finite detector cycle loses a required boundary condition.  `A_Σ` removes the unit, `B_N` decouples the branches, `C_+` destroys forward runtime recursion, and `D_-` destroys return closure.  This is the operator sense in which ABCD is minimal."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 473,
+      "before": "The scene functional is a constraint certificate. It selects finite scene structure under addressability, non-monopoly verification and finite response. The graph scene `K(9,11,13)` is therefore not an arbitrary postulate; it is the selected carrier for the finite detector grammar after the `ABCD ? {�} -> Omega8 -> V9` lift.",
+      "after": "The scene functional is a constraint certificate. It selects finite scene structure under addressability, non-monopoly verification and finite response. The graph scene `K(9,11,13)` is therefore not an arbitrary postulate; it is the selected carrier for the finite detector grammar after the `ABCD × {±} -> Omega8 -> V9` lift."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 560,
+      "before": "**Support.**  The support is the finite admissible detector ladder after the ? halt quotient.",
+      "after": "**Support.**  The support is the finite admissible detector ladder after the φ halt quotient."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 905,
+      "before": "The numerator `ABCD+1` is the four terminal readout roles plus the unit section.  The denominator `?_8` is the signed terminal octet.",
+      "after": "The numerator `ABCD+1` is the four terminal readout roles plus the unit section.  The denominator `Ω_8` is the signed terminal octet."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 926,
+      "before": "This analytic cell is the proof obligation for `D0-COEFF-002`.  A script may verify the arithmetic, but the script is not the source of the exponent.  If the carrier is changed, `?_8`, `ABCD`, or `dim g_light` changes and this exponent is invalidated.",
+      "after": "This analytic cell is the proof obligation for `D0-COEFF-002`.  A script may verify the arithmetic, but the script is not the source of the exponent.  If the carrier is changed, `Ω_8`, `ABCD`, or `dim g_light` changes and this exponent is invalidated."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1016,
+      "before": "| `D0-FOUND-003` | CORE-FOUNDATION | Minimal continuum-measurement skeleton | Foundation | Do not claim all mathematical cuts are ?; claim is minimal measured connected division. | A non-? finite, path-independent, internally normalized detector split. |",
+      "after": "| `D0-FOUND-003` | CORE-FOUNDATION | Minimal continuum-measurement skeleton | Foundation | Do not claim all mathematical cuts are φ; claim is minimal measured connected division. | A non-φ finite, path-independent, internally normalized detector split. |"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1020,
+      "before": "| `D0-ACTION-001` | CORE-ACTION | S_gate/J_scene backbone | Gate/Action | Do not close Born, entropy, leptons, or dynamics by unrelated formulas. | Mismatch between books or failure of Boundary Residual Eigenvalue r_? / I_B / action-spine consistency. |",
+      "after": "| `D0-ACTION-001` | CORE-ACTION | S_gate/J_scene backbone | Gate/Action | Do not close Born, entropy, leptons, or dynamics by unrelated formulas. | Mismatch between books or failure of Boundary Residual Eigenvalue r_∂ / I_B / action-spine consistency. |"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1023,
+      "before": "| `D0-BOUND-001` | D0-RESOLUTION-EXACT | Boundary Residual Eigenvalue r_? and boundary curvature residual | Quotient/Resolution | Do not fit q_res with arbitrary scalar factor or reopen an infinite residual spiral. | Boundary residual cannot be produced below I12 by admissible cell. |",
+      "after": "| `D0-BOUND-001` | D0-RESOLUTION-EXACT | Boundary Residual Eigenvalue r_∂ and boundary curvature residual | Quotient/Resolution | Do not fit q_res with arbitrary scalar factor or reopen an infinite residual spiral. | Boundary residual cannot be produced below I12 by admissible cell. |"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1161,
+      "before": "Here `|ABCD|=4`, `|?8|=8`, and",
+      "after": "Here `|ABCD|=4`, `|Ω8|=8`, and"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1167,
+      "before": "The correction is therefore tied to the terminal role square, signed lift and light gauge carrier dimension.  No empirical value of `?` is used in selecting the exponent.",
+      "after": "The correction is therefore tied to the terminal role square, signed lift and light gauge carrier dimension.  No empirical value of `α` is used in selecting the exponent."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1237,
+      "before": "where `?(r)` is uniquely fixed by the mean constraint.  The uniqueness follows because the derivative of the mean map is the variance on the finite grid and is strictly positive for a non-degenerate grid.  Thus the bridge has no free fitting parameter after the response grid and retained response are declared.",
+      "after": "where `θ(r)` is uniquely fixed by the mean constraint.  The uniqueness follows because the derivative of the mean map is the variance on the finite grid and is strictly positive for a non-degenerate grid.  Thus the bridge has no free fitting parameter after the response grid and retained response are declared."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1263,
+      "before": "The current Lean proof cell separates the finite normalization theorem from the Hilbert-space spelling.  In `D0.Core.BornFinite`, a `FinitePositiveResponse` is a finite family `r_i ? 0` with positive total response.  A `FiniteBornReadout` is admissible only when it recovers the raw detector response by",
+      "after": "The current Lean proof cell separates the finite normalization theorem from the Hilbert-space spelling.  In `D0.Core.BornFinite`, a `FinitePositiveResponse` is a finite family `r_i ≥ 0` with positive total response.  A `FiniteBornReadout` is admissible only when it recovers the raw detector response by"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1275,
+      "before": "proves `p_i=r_i/(?_jr_j)` for every finite outcome, and",
+      "after": "proves `p_i=r_i/(Σ_jr_j)` for every finite outcome, and"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1331,
+      "before": "## 02.27 D0-GAUGE-MATTER-002 � finite cochain Ward/anomaly closure",
+      "after": "## 02.27 D0-GAUGE-MATTER-002 — finite cochain Ward/anomaly closure"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1360,
+      "before": "response-recovery rule `p_i(?_jr_j)=r_i`;",
+      "after": "response-recovery rule `p_i(Σ_jr_j)=r_i`;"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1361,
+      "before": "trace-state form only when the sector chooses the Hilbert/projector spelling `r_a=Tr(?_aR)`;",
+      "after": "trace-state form only when the sector chooses the Hilbert/projector spelling `r_a=Tr(Π_aR)`;"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1370,
+      "before": "Let `T:n?n+1` be the finite registration tick and let phase be read modulo a circumference `?`. If `q?m?`, then each residue class `a mod q` defines a branch `a+tq` with phase drift `t(q-m?)`. Therefore visible arms/rays are residue classes of a finite return modulus.",
+      "after": "Let `T:n↦n+1` be the finite registration tick and let phase be read modulo a circumference `τ`. If `q≈mτ`, then each residue class `a mod q` defines a branch `a+tq` with phase drift `t(q-mτ)`. Therefore visible arms/rays are residue classes of a finite return modulus."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1372,
+      "before": "The admissible branch filter is part of the response structure. In the arithmetic model it is `gcd(a,q)=1`, so the visible branch count is `?_Euler(q)`. D0 uses the same grammar with a finite detector admissibility filter.",
+      "after": "The admissible branch filter is part of the response structure. In the arithmetic model it is `gcd(a,q)=1`, so the visible branch count is `φ_Euler(q)`. D0 uses the same grammar with a finite detector admissibility filter."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1377,
+      "before": "d_{13}=?_{Euler}(44)=20,",
+      "after": "d_{13}=φ_{Euler}(44)=20,"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1380,
+      "before": "and, for the classical large-scale return `710?113�2?`,",
+      "after": "and, for the classical large-scale return `710≈113·2π`,"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1383,
+      "before": "?_{Euler}(710)=280=|?_8|\\cdot35.",
+      "after": "φ_{Euler}(710)=280=|Ω_8|\\cdot35."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1386,
+      "before": "Thus the electroweak depth `35` has a phase-unfolding interpretation as the per-sign branch count after the terminal `?_8` quotient.",
+      "after": "Thus the electroweak depth `35` has a phase-unfolding interpretation as the per-sign branch count after the terminal `Ω_8` quotient."
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1436,
+      "before": "## 02.31 ? as primitive positive-response capacity",
+      "after": "## 02.31 Φ as primitive positive-response capacity"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1438,
+      "before": "The number `?` is not a primitive axiom. The primitive object is the normalized finite positive-response detector skeleton. It has one direct branch of weight `p` and one first self-return branch. Since the first positive response is quadratic, the return branch has weight `p?`. The unit terminal closure is therefore",
+      "after": "The number `φ` is not a primitive axiom. The primitive object is the normalized finite positive-response detector skeleton. It has one direct branch of weight `p` and one first self-return branch. Since the first positive response is quadratic, the return branch has weight `p²`. The unit terminal closure is therefore"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1444,
+      "before": "The polynomial `p?+p?1` is strictly increasing on `(0,1)`, so the positive branch is unique:",
+      "after": "The polynomial `p²+p−1` is strictly increasing on `(0,1)`, so the positive branch is unique:"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1463,
+      "before": "primitive positive-response theorem gives `p+p?=1`, hence the return branch is",
+      "after": "primitive positive-response theorem gives `p+p²=1`, hence the return branch is"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1469,
+      "before": "The physical phase increment is therefore `2?/??`.  By the Hurwitz/continued-",
+      "after": "The physical phase increment is therefore `2π/φ²`.  By the Hurwitz/continued-"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1470,
+      "before": "fraction extremality of the `?` class, this rotation is maximally resistant to",
+      "after": "fraction extremality of the `φ` class, this rotation is maximally resistant to"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1478,
+      "before": "??? irrational rotation  > non-resonant archive smoothing;",
+      "after": "φ⁻² irrational rotation  → non-resonant archive smoothing;"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "line": 1568,
+      "before": "## 02.34 Master Evolution and ?-quasicrystal proof spine",
+      "after": "## 02.34 Master Evolution and φ-quasicrystal proof spine"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 1,
+      "before": "# BOOK 04 � Spectrum, Matter, and Finite Selector Theory",
+      "after": "# BOOK 04 — Spectrum, Matter, and Finite Selector Theory"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 84,
+      "before": "## 04.U Matter as defects and gap-labeled spectra of the ?-quasicrystal hull",
+      "after": "## 04.U Matter as defects and gap-labeled spectra of the φ-quasicrystal hull"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 113,
+      "before": "\\boxed{\\text{finite support is not a physical mass by itself. Matter = terminally stabilized feedback eigenmodes (F? = r?, |zr|?1, P_term ?=?); Higgs rank-2 feedback subspace; meson domain wall feedback stretch on C1; baryon S3-stabilized feedback in V?V?V (D0-CVFT-005).}}",
+      "after": "\\boxed{\\text{finite support is not a physical mass by itself. Matter = terminally stabilized feedback eigenmodes (Rψ = rψ, |zr|≈1, P_term ψ=ψ); Higgs rank-2 feedback subspace; meson domain wall feedback stretch on C1; baryon S3-stabilized feedback in V⊗V⊗V (D0-CVFT-005).}}"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 314,
+      "before": "| ?-quasicrystal tiling hull | `D0.Topology.TilingHull`; `D0.Topology.d0_hull_has_phi_cut_project_origin`; `D0.Topology.d0_hull_is_nonperiodic`; `D0.Topology.d0_hull_supports_gap_labeling` |",
+      "after": "| φ-quasicrystal tiling hull | `D0.Topology.TilingHull`; `D0.Topology.d0_hull_has_phi_cut_project_origin`; `D0.Topology.d0_hull_is_nonperiodic`; `D0.Topology.d0_hull_supports_gap_labeling` |"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 345,
+      "before": "The quasicrystal matter ontology used later in this book is summarized in 04.4: matter is read as defects, domain walls, holonomies, window weights and K0 gap-labeled spectra over the ?-quasicrystalline tiling hull. This ontology organizes the sector owners; it does not bypass the finite variational selector/readout/passport rules above.",
+      "after": "The quasicrystal matter ontology used later in this book is summarized in 04.4: matter is read as defects, domain walls, holonomies, window weights and K0 gap-labeled spectra over the φ-quasicrystalline tiling hull. This ontology organizes the sector owners; it does not bypass the finite variational selector/readout/passport rules above."
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 347,
+      "before": "## 04.4 Matter as defects and gap-labeled spectra over the ?-quasicrystalline hull",
+      "after": "## 04.4 Matter as defects and gap-labeled spectra over the φ-quasicrystalline hull"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 349,
+      "before": "The D0 vacuum is the condensed/profinite hull of all admissible finite detector registrations, and matter is read as defects, domain walls, holonomies, window weights, and gap-labeled spectra over this ?-quasicrystalline support.",
+      "after": "The D0 vacuum is the condensed/profinite hull of all admissible finite detector registrations, and matter is read as defects, domain walls, holonomies, window weights, and gap-labeled spectra over this φ-quasicrystalline support."
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 374,
+      "before": "?-quasicrystal hull",
+      "after": "φ-quasicrystal hull"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 396,
+      "before": "The D0 support is a cut-and-project quasicrystal. Matter as phason/window defects of the ?-quasicrystal vacuum maps the fractional quark charge as a window-sector intersection weight:",
+      "after": "The D0 support is a cut-and-project quasicrystal. Matter as phason/window defects of the φ-quasicrystal vacuum maps the fractional quark charge as a window-sector intersection weight:"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 441,
+      "before": "finite amplitude channel -> D�D squared norm -> finite response -> Born normalization",
+      "after": "finite amplitude channel -> D†D squared norm -> finite response -> Born normalization"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 718,
+      "before": "A different gauge factor list or a different one-generation ledger is not a second core solution under the same owner.  It is a new carrier attempt and must be routed to a separate theorem/no-go/bridge target.  This closes the weaker old reading where `SU(3)?SU(2)?U(1)` could look like a name attached after the fact.",
+      "after": "A different gauge factor list or a different one-generation ledger is not a second core solution under the same owner.  It is a new carrier attempt and must be routed to a separate theorem/no-go/bridge target.  This closes the weaker old reading where `SU(3)×SU(2)×U(1)` could look like a name attached after the fact."
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 874,
+      "before": "previous direct `Delta, Lambda, Omega` formula flow is not merely �not",
+      "after": "previous direct `Delta, Lambda, Omega` formula flow is not merely “not"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 875,
+      "before": "certified�; it is blocked under the present operator family.  A numerical",
+      "after": "certified”; it is blocked under the present operator family.  A numerical"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "line": 900,
+      "before": "The flavour defect enters exclusively through the typed \\(\\operatorname{liftGen}\\) term. Mismatched Gen?Gen blocks added to an Edge?Edge operator are forbidden. Spectral gaps of the resulting frozen operator must carry \\(K_0\\) gap labels before any external comparison protocol is invoked. Direct promotion of the bare \\(400\\) seed to pion, kaon, or rho masses is prohibited. Symbolic guard: 400\\not\\Rightarrow m_\\pi.",
+      "after": "The flavour defect enters exclusively through the typed \\(\\operatorname{liftGen}\\) term. Mismatched Gen×Gen blocks added to an Edge×Edge operator are forbidden. Spectral gaps of the resulting frozen operator must carry \\(K_0\\) gap labels before any external comparison protocol is invoked. Direct promotion of the bare \\(400\\) seed to pion, kaon, or rho masses is prohibited. Symbolic guard: 400\\not\\Rightarrow m_\\pi."
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "line": 1,
+      "before": "# BOOK 05 � Verification, Proof Ownership, and Certificate Discipline",
+      "after": "# BOOK 05 — Verification, Proof Ownership, and Certificate Discipline"
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "line": 7,
+      "before": "All repeated forbidden shortcuts and no-gos from Books 00�08 are collected here. Physical books contain only the pointer: \"Forbidden shortcuts are centralized in Book 05, D0_NOGO_LEDGER.\"",
+      "after": "All repeated forbidden shortcuts and no-gos from Books 00–08 are collected here. Physical books contain only the pointer: \"Forbidden shortcuts are centralized in Book 05, D0_NOGO_LEDGER.\""
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "line": 217,
+      "before": "mismatched Gen?Gen block added directly to edge operator",
+      "after": "mismatched Gen×Gen block added directly to edge operator"
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "line": 622,
+      "before": "Claims involving `ABCD`, `Ω8`, `V9`, `K(9,11,13)` or the `?` split must expose the",
+      "after": "Claims involving `ABCD`, `Ω8`, `V9`, `K(9,11,13)` or the `φ` split must expose the"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 27,
+      "before": "## 06.30a Time evolution over the ?-quasicrystalline hull",
+      "after": "## 06.30a Time evolution over the φ-quasicrystalline hull"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 144,
+      "before": "The foundational split `p+p^2=1` is proved in Books 01--02.  Book 06 uses it as a ordered finite evolution contraction.  If a route or comparison chain has depth `N`, the finite continuation weight takes the form",
+      "after": "The foundational split `p+p^2=1` is proved in Books 01--02.  Book 06 uses it as an ordered finite evolution contraction.  If a route or comparison chain has depth `N`, the finite continuation weight takes the form"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 245,
+      "before": "Time evolution over the D0 vacuum is represented as translation dynamics on the ?-quasicrystalline tiling hull. The ordered discrete evolution step chain supplies the ordered finite evolution order; the irrational ? phase supplies non-periodic transport; finite quotient windows produce stable detector-visible averages.",
+      "after": "Time evolution over the D0 vacuum is represented as translation dynamics on the φ-quasicrystalline tiling hull. The ordered discrete evolution step chain supplies the ordered finite evolution order; the irrational φ phase supplies non-periodic transport; finite quotient windows produce stable detector-visible averages."
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 250,
+      "before": "-> ?-quasicrystal hull translation",
+      "after": "-> φ-quasicrystal hull translation"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 332,
+      "before": "Archive pressure is a ordered finite evolution effect of the active/archive split.  The finite ordered finite evolution space has the form",
+      "after": "Archive pressure is an ordered finite evolution effect of the active/archive split.  The finite ordered finite evolution space has the form"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 344,
+      "before": "The archive-pressure operator belongs to Book 06 as a ordered finite evolution kernel, but its cosmological empirical use belongs to Book 08.  This prevents a common error: using survey likelihoods to define the traced-out complement operator.",
+      "after": "The archive-pressure operator belongs to Book 06 as an ordered finite evolution kernel, but its cosmological empirical use belongs to Book 08.  This prevents a common error: using survey likelihoods to define the traced-out complement operator."
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 382,
+      "before": "3. it hides a fitted coefficient in a ordered finite evolution window;",
+      "after": "3. it hides a fitted coefficient in an ordered finite evolution window;"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 612,
+      "before": "The term \\(K_{g-2}^{D0}\\) is finite and single-section locked. The residual trace \\(\\mathcal R_{residual}^{D0,S}\\) is not allowed to introduce new fields or modified beta functions. This turns `g?2` into a scheme comparison protocol rather than a free new-physics knob.",
+      "after": "The term \\(K_{g-2}^{D0}\\) is finite and single-section locked. The residual trace \\(\\mathcal R_{residual}^{D0,S}\\) is not allowed to introduce new fields or modified beta functions. This turns `g−2` into a scheme comparison protocol rather than a free new-physics knob."
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 682,
+      "before": "The physical phase increment is therefore `2?/?²`.  By the Hurwitz/continued-",
+      "after": "The physical phase increment is therefore `2π/φ²`.  By the Hurwitz/continued-"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 683,
+      "before": "fraction extremality of the `?` class, this rotation is maximally resistant to",
+      "after": "fraction extremality of the `φ` class, this rotation is maximally resistant to"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 691,
+      "before": "?^{-2} irrational rotation  > non-resonant archive smoothing;",
+      "after": "φ^{-2} irrational rotation  > non-resonant archive smoothing;"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 705,
+      "before": "## 06.30a Time evolution over the ?-quasicrystalline hull",
+      "after": "## 06.30a Time evolution over the φ-quasicrystalline hull"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 709,
+      "before": "## 06.31 ?-discrete RG as a typed forgetting step",
+      "after": "## 06.31 φ-discrete RG as a typed forgetting step"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 714,
+      "before": "μ_k = Λ_act ?^{-k}.",
+      "after": "μ_k = Λ_act φ^{-k}."
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 720,
+      "before": "β_?(g_k) = (g_{k+1}-g_k)/(-log ?).",
+      "after": "β_φ(g_k) = (g_{k+1}-g_k)/(-log φ)."
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 727,
+      "before": "The ?-discrete RG ladder may be read as a sequence of frozen operator bands. Spectral gaps in these bands are admissible only when they carry hull/K0 labels.",
+      "after": "The φ-discrete RG ladder may be read as a sequence of frozen operator bands. Spectral gaps in these bands are admissible only when they carry hull/K0 labels."
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 850,
+      "before": "Finite horizon capacity saturation is a ordered finite evolution halt: Cost_R(?) > ? for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref D0-BH-CAP-00x and Book 07 07.50).",
+      "after": "Finite horizon capacity saturation is an ordered finite evolution halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref D0-BH-CAP-00x and Book 07 07.50)."
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "line": 854,
+      "before": "## 06.37 ?^5 torus invariant and ordered finite evolution quasicrystal geometry (Phi^5 Torus Invariant)",
+      "after": "## 06.37 φ⁵ torus invariant and ordered finite evolution quasicrystal geometry (Phi^5 Torus Invariant)"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 1,
+      "before": "# BOOK 07 � Gravity limit and finite geometry",
+      "after": "# BOOK 07 — Gravity limit and finite geometry"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 102,
+      "before": "The UV feedback-tail cut uses a = |z| ?(F) < 1 and the Neumann bound. ?_0^{12} is the finite readout noise-floor (Shannon readout noise-floor / finite readout tolerance) for macroscopic extraction, not the analytic convergence radius of the feedback-resolvent series.",
+      "after": "The UV feedback-tail cut uses a = |z| rho(F) < 1 and the Neumann bound. δ_0^{12} is the finite readout noise-floor (Shannon readout noise-floor / finite readout tolerance) for macroscopic extraction, not the analytic convergence radius of the feedback-resolvent series."
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 104,
+      "before": "|T_M(z(L), F_N(L))| < ?_0^{12} means smooth heat-trace / macroscopic interface valid.",
+      "after": "|T_M(z(L), F_N(L))| < δ_0^{12} means smooth heat-trace / macroscopic interface valid."
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 105,
+      "before": "|T_M(z(L), F_N(L))| ? ?_0^{12} means finite feedback algebra regime (readout tolerance forces the finite description).",
+      "after": "|T_M(z(L), F_N(L))| >= δ_0^{12} means finite feedback algebra regime (readout tolerance forces the finite description)."
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 191,
+      "before": "## 07.6a Trace�Heat geometry over the D0 tiling hull",
+      "after": "## 07.6a Trace–Heat geometry over the D0 tiling hull"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 442,
+      "before": "| `D0-BOUND-001` | `D0-RESOLUTION-EXACT` | Quotient/Resolution | Boundary Residual Eigenvalue r_? and boundary curvature residual | reference to Books 01-04; used in gravity bridge |",
+      "after": "| `D0-BOUND-001` | `D0-RESOLUTION-EXACT` | Quotient/Resolution | Boundary Residual Eigenvalue r_∂ and boundary curvature residual | reference to Books 01-04; used in gravity bridge |"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 483,
+      "before": "The previous �EH bridge calibration� language is replaced by:",
+      "after": "The previous “EH bridge calibration” language is replaced by:"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 484,
+      "before": "�EH macro-interface closed up to standard smooth-limit dictionary: finite A2 variation + Bianchi selects Einstein tensor class.�",
+      "after": "“EH macro-interface closed up to standard smooth-limit dictionary: finite A2 variation + Bianchi selects Einstein tensor class.”"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 545,
+      "before": "?_P^{D0} = 1.6157380866594502e-35 m,",
+      "after": "ℓ_P^{D0} = 1.6157380866594502e-35 m,"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 641,
+      "before": "The terminal shell `V13` is excluded from the exponent because it is the boundary/readout shell, not part of active line-covariant propagation.  Negative controls are structural: `98` removes one covariance channel; `100` adds an ambient line state; `117=9?13` incorrectly promotes the terminal shell to propagation duty.  Thus the exponent `99` is locked by active line covariance, not by a posteriori fitting of `G_N`.",
+      "after": "The terminal shell `V13` is excluded from the exponent because it is the boundary/readout shell, not part of active line-covariant propagation.  Negative controls are structural: `98` removes one covariance channel; `100` adds an ambient line state; `117=9×13` incorrectly promotes the terminal shell to propagation duty.  Thus the exponent `99` is locked by active line covariance, not by a posteriori fitting of `G_N`."
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 722,
+      "before": "The physical phase increment is therefore `2?/?²`.  By the Hurwitz/continued-",
+      "after": "The physical phase increment is therefore `2π/φ²`.  By the Hurwitz/continued-"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 723,
+      "before": "fraction extremality of the `?` class, this rotation is maximally resistant to",
+      "after": "fraction extremality of the `φ` class, this rotation is maximally resistant to"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 731,
+      "before": "?^{-2} irrational rotation  > non-resonant archive smoothing;",
+      "after": "φ^{-2} irrational rotation  > non-resonant archive smoothing;"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 913,
+      "before": "  ArchivePoissonEquation ? ? > NeutralSource ?",
+      "after": "  ArchivePoissonEquation φ ρ → NeutralSource ρ"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 916,
+      "before": "  ArchivePoissonEquation ?? ? >",
+      "after": "  ArchivePoissonEquation φ₁ ρ →"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 917,
+      "before": "  ArchivePoissonEquation ?? ? >",
+      "after": "  ArchivePoissonEquation φ₁ ρ →"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 918,
+      "before": "  ?? - ?? is constant",
+      "after": "  φ₁ - φ₂ is constant"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 935,
+      "before": "  ScalarSectorStationary n ? ? > ArchivePoissonEquation ? ?",
+      "after": "  ScalarSectorStationary n φ ρ → ArchivePoissonEquation φ ρ"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 1196,
+      "before": "Lorentz-facing spin-2 readout has the correct two physical polarizations�.  The",
+      "after": "Lorentz-facing spin-2 readout has the correct two physical polarizations”.  The"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 1287,
+      "before": "PRL 2026 (arXiv:2601.14358) constructs closed analytic large-D discretely self-similar solutions of the Einstein�massless-Klein�Gordon critical-collapse system.",
+      "after": "PRL 2026 (arXiv:2601.14358) constructs closed analytic large-D discretely self-similar solutions of the Einstein–massless-Klein–Gordon critical-collapse system."
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 1324,
+      "before": "Finite boundary shell ?R reaches capacity saturation ?(R) = 1.",
+      "after": "Finite boundary shell ∂R reaches capacity saturation σ(R) = 1."
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 1325,
+      "before": "Cost of external active extension > ?.",
+      "after": "Cost of external active extension → ∞."
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "line": 1329,
+      "before": "N_? = A / a_0 ,   S_?^{D0} = N_? / 4 .",
+      "after": "N_∂ = A / a_0 ,   S_∂^{D0} = N_∂ / 4 ."
+    }
+  ],
+  "change_count": 149
+}

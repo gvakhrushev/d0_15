@@ -1,0 +1,7 @@
+{
+  "summary": "DESI FAIL (LOW_Z, MID_Z, AMPLITUDE_TOO_LOW) on frozen S_DE implies the two-mode feedback pressure transfer is insufficient; next admissible operator must include boundary derivative ∂_V R from finite feedback resolvent, without refitting roots or windows.",
+  "status": "FAIL_DESI_BAO_SDE_REAL_DATA (feedback pressure sector incomplete)",
+  "no_refit": true,
+  "forbidden": ["root refit", "window refit", "H0/Omega tuning"],
+  "allowed": "boundary feedback correction derived from internal resolvent before data comparison"
+}

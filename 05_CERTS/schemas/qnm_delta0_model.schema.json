@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QNMDelta0Model",
+  "type": "object",
+  "properties": {
+    "model_version": { "type": "string" },
+    "delta0_source": { "type": "string", "enum": ["D0.NumberTheory"] },
+    "pre_registered_before_data": { "type": "boolean", "const": true },
+    "mode_formula": { "type": "string" },
+    "free_parameters": { "type": "array", "items": { "type": "string" } },
+    "allowed_fit_parameters": { "type": "array", "items": { "type": "string", "enum": ["mass", "spin", "phase", "amplitude"] } },
+    "forbidden_fit_parameters": { "type": "array", "items": { "type": "string", "enum": ["delta0", "ladder_spacing"] } }
+  },
+  "required": [
+    "model_version",
+    "delta0_source",
+    "pre_registered_before_data",
+    "mode_formula",
+    "free_parameters",
+    "allowed_fit_parameters",
+    "forbidden_fit_parameters"
+  ]
+}

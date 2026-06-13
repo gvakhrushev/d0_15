@@ -1,0 +1,17 @@
+{
+  "summary_id": "D0-GRAV-DSS-ECHO-LATTICE-2026",
+  "paper": "Analytic discrete self-similar solutions of Einstein-Klein-Gordon at large D (PRL 2026)",
+  "key_d0_reading": "At black-hole threshold, GR itself produces a discrete log-scale echo lattice. D0 reads it as finite log-time recurrence of a capacity-saturating horizon readout.",
+  "new_d0_structures": [
+    "EchoCapacityOperator (τ ↦ τ + Δ)",
+    "EchoLattice (discrete self-similarity + finite carrier)",
+    "SelfSimilarHorizon (null capacity boundary)",
+    "CriticalCollapseDSSBridge"
+  ],
+  "no_go": "D0-GRAV-DSS-NOGO-001: purely smooth monotone collapse is not the full critical gravitational readout.",
+  "book_chains_updated": [
+    "trace-heat gravity → capacity growth → critical echo lattice → self-similar null horizon → terminal archive boundary → black-hole saturation"
+  ],
+  "cert_status": "PASS_CRITICAL_COLLAPSE_DSS_ECHO_LATTICE_BRIDGE (notebook repro SKIP without external tool)",
+  "timestamp": "2026-06-06"
+}

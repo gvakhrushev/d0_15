@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QNMExtractedModes",
+  "type": "object",
+  "properties": {
+    "event_id": { "type": "string" },
+    "mode_label": { "type": "string" },
+    "omega_real": { "type": "number" },
+    "omega_imag": { "type": "number" },
+    "sigma_real": { "type": "number" },
+    "sigma_imag": { "type": "number" },
+    "source": { "type": "string" },
+    "extraction_method": { "type": "string" }
+  },
+  "required": [
+    "event_id",
+    "mode_label",
+    "omega_real",
+    "omega_imag",
+    "sigma_real",
+    "sigma_imag",
+    "source",
+    "extraction_method"
+  ]
+}

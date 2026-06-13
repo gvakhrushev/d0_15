@@ -1,0 +1,12 @@
+{
+  "mode": "desi_dr2",
+  "status": "SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED",
+  "missing": [
+    "z_eff",
+    "dm_rd",
+    "dh_rd",
+    "covariance",
+    "sha256",
+    "status_READY"
+  ]
+}

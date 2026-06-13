@@ -1,0 +1,24 @@
+[
+  {
+    "gap_idx": 0,
+    "lower_bound": -0.9424,
+    "upper_bound": -0.1018,
+    "ids": 0.0333,
+    "k0_label": {
+      "n": 0,
+      "m": 0
+    },
+    "trace_val": 0.0
+  },
+  {
+    "gap_idx": 1,
+    "lower_bound": 0.0919,
+    "upper_bound": 0.9383,
+    "ids": 0.0667,
+    "k0_label": {
+      "n": -3,
+      "m": 5
+    },
+    "trace_val": 0.0902
+  }
+]

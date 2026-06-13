@@ -1,0 +1,81 @@
+D0Lean/
+  lakefile.lean
+  lean-toolchain
+  D0/
+    All.lean
+    Core/
+      FiniteTypes.lean
+      DyadABCD.lean
+      Phi.lean
+      Delta.lean
+      CapacityChain.lean
+      PositiveResponse.lean
+      MatrixResponse.lean
+      BornFinite.lean
+    Combinatorics/
+      EulerPhi.lean
+      CompleteTripartite.lean
+      CliqueComplex.lean
+      PhaseUnfolding.lean
+      ForcedReturnWindows.lean
+      HighGainCounts.lean
+    Topology/
+      SimplicialIncidence.lean
+      BoundaryBoundary.lean
+      NoThreeSimplices.lean
+    Algebra/
+      GammaMatrices.lean
+      Clifford13.lean
+      LieCarrierFinite.lean
+    Gauge/
+      SMCharges.lean
+      AnomalySums.lean
+      WardFinite.lean
+    Condensed/
+      ProjectiveSystem.lean
+      ProfiniteSupport.lean
+      AdmissibleSubfunctor.lean
+      OperatorNaturality.lean
+    Bridge/
+      Assumptions/
+        Hurwitz.lean
+        SmoothInterpolation.lean
+        HeatTraceWeyl.lean
+        ExternalHST.lean
+      LorentzBridge.lean
+      PhiDiscreteRG.lean
+      SmoothMetricBridge.lean
+      ConvexResponseBridge.lean
+    TheoremLedger/
+      ClaimMap.lean
+      ReleaseStatus.lean
+
+Fast-iteration refactor target:
+
+D0Lean/
+  D0/
+    Frozen/
+      -- stable proved modules; rarely edited
+      CoreInterface.lean
+      GeometryInterface.lean
+      MatterInterface.lean
+      SpectralInterface.lean
+    Interface/
+      ArchiveLaplacian.lean
+      VariationDual.lean
+      Bianchi.lean
+      Poisson.lean
+      MatterAnomaly.lean
+    Active/
+      ConservedStressProjection.lean
+      ScalarPoissonReduction.lean
+      NonzeroMatterSourceNeutrality.lean
+    Bridges/
+      WeakFieldBridge.lean
+      GravitySpectralBridge.lean
+      GaugeMatterBridge.lean
+    TheoremLedger/
+      ActiveClosureIndex.lean
+      HardClosureTheoremIndex.lean
+
+Rule: Active modules import Interface modules, not D0.All and not the full theorem ledger.

@@ -1,0 +1,13 @@
+{
+  "mode": "gwosc_current",
+  "status": "SKIP_LIGO_MERGER_MASS_DEFECT_EXTERNAL_DATA_REQUIRED",
+  "missing": [
+    "event_id",
+    "m1_source",
+    "m2_source",
+    "final_mass",
+    "radiated_energy",
+    "sha256",
+    "status_READY"
+  ]
+}

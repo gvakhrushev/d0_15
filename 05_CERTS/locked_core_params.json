@@ -1,0 +1,63 @@
+{
+  "L": [
+    [
+      2.0,
+      -1.0,
+      -1.0
+    ],
+    [
+      -1.0,
+      2.0,
+      -1.0
+    ],
+    [
+      -1.0,
+      -1.0,
+      2.0
+    ]
+  ],
+  "L_pinv": [
+    [
+      0.2222222222222223,
+      -0.11111111111111113,
+      -0.11111111111111112
+    ],
+    [
+      -0.11111111111111124,
+      0.22222222222222218,
+      -0.11111111111111106
+    ],
+    [
+      -0.11111111111111115,
+      -0.11111111111111104,
+      0.22222222222222224
+    ]
+  ],
+  "core_shape": [
+    1.4000000000000004,
+    0.6,
+    1.0
+  ],
+  "delta0": 0.5,
+  "eta": 1.0,
+  "guardrails": {
+    "L_locked": true,
+    "L_pinv_locked": true,
+    "core_internals_unchanged_after_optimizer_attempts": true,
+    "core_shape_locked": true,
+    "delta0_locked": true,
+    "eta_locked": true,
+    "floor_locked": true,
+    "random_psd_L_pinv_negative_control_rejected": true,
+    "status_is_empirical_passport": true
+  },
+  "locked_core_param_names": [
+    "eta",
+    "rho_floor",
+    "L_pinv",
+    "delta0",
+    "core_shape"
+  ],
+  "rho_floor": 0.00013020833333333333,
+  "status": "EMPIRICAL_PASSPORT"
+}

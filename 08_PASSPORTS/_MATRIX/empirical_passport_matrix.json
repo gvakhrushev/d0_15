@@ -1,0 +1,82 @@
+{
+  "rows": [
+    {
+      "passport_id": "ICECUBE-PHAS1",
+      "sector": "IceCube neutrino decoherence",
+      "core_owner": "D0.Matter.NeutrinoPhasonWaves;D0.Passport.IceCubePhasonDecoherence",
+      "external_manifest": "08_PASSPORTS/IceCube/icecube_manifest.json",
+      "cert_or_runner": "05_CERTS/vp_neutrino_phason_decoherence_passport.py",
+      "allowed_status": "EMPIRICAL_PASSPORT_OR_EXTERNAL_DATA_REQUIRED",
+      "current_result_artifact": "08_PASSPORTS/IceCube/icecube_phason_decoherence_summary.json",
+      "negative_controls": "empty manifest cannot run; detector-response tuning cannot retune kernel",
+      "promotion_boundary": "IceCube data constrain the frozen phason-decoherence passport only.",
+      "manifest_status": "READY",
+      "artifact_status": "READY"
+    },
+    {
+      "passport_id": "SPARC-HALO1",
+      "sector": "SPARC halo response",
+      "core_owner": "D0.Cosmology.SDEFeedbackReduction;D0.Physics.ArchivePhasonDarkMatter",
+      "external_manifest": "08_PASSPORTS/SPARC/sparc_manifest.json",
+      "cert_or_runner": "05_CERTS/vp_archive_phason_halo_passport.py;05_CERTS/vp_sde_feedback_reduction.py",
+      "allowed_status": "FAIL_DIAGNOSTIC_ALLOWED",
+      "current_result_artifact": "08_PASSPORTS/SPARC/sparc_feedback_refinement_constraint.json",
+      "negative_controls": "FAIL_ARCHIVE_PHASON_HALO_SPARC_SHAPE_ONLY;FAIL_ARCHIVE_PHASON_HALO_SPARC_ONE_GLOBAL_SCALE;FAIL_ARBITRARY_KERNEL_REPAIR",
+      "promotion_boundary": "SPARC failure may only select derived boundary-derivative feedback, not a fitted halo kernel.",
+      "manifest_status": "READY",
+      "artifact_status": "READY"
+    },
+    {
+      "passport_id": "DESI-SDE1",
+      "sector": "DESI BAO S_DE transfer",
+      "core_owner": "D0.Cosmology.PhasonFlipEntropy;D0.Cosmology.SDEFeedbackReduction",
+      "external_manifest": "08_PASSPORTS/DESI/desi_dr2_manifest.json",
+      "cert_or_runner": "05_CERTS/vp_bao_sde_phason_flip_passport.py;05_CERTS/vp_sde_feedback_reduction.py",
+      "allowed_status": "FAIL_DIAGNOSTIC_ALLOWED",
+      "current_result_artifact": "08_PASSPORTS/DESI/desi_feedback_refinement_constraint.json",
+      "negative_controls": "FAIL_DESI_ROOT_REFIT_REPAIR;FAIL_DESI_WINDOW_REFIT_REPAIR;FAIL_ARBITRARY_KERNEL_REPAIR",
+      "promotion_boundary": "DESI failure constrains boundary derivative of F_N; roots/windows/H0/Omega_m/rd are not refit.",
+      "manifest_status": "READY",
+      "artifact_status": "READY"
+    },
+    {
+      "passport_id": "CMB-PHASON1",
+      "sector": "Planck CMB phason-flip entropy",
+      "core_owner": "D0.Cosmology.PhasonFlipEntropy",
+      "external_manifest": "08_PASSPORTS/PlanckCMB/planck_manifest.json",
+      "cert_or_runner": "05_CERTS/vp_cmb_phason_flip_entropy_passport.py",
+      "allowed_status": "EMPIRICAL_PASSPORT_OR_EXTERNAL_DATA_REQUIRED",
+      "current_result_artifact": "08_PASSPORTS/PlanckCMB/planck_phason_flip_summary.json",
+      "negative_controls": "LambdaCDM residual cannot choose the internal entropy operator",
+      "promotion_boundary": "CMB comparison tests a frozen entropy-transfer observable only.",
+      "manifest_status": "READY",
+      "artifact_status": "READY"
+    },
+    {
+      "passport_id": "CKM-PDG1",
+      "sector": "CKM external convention",
+      "core_owner": "D0.Matter.CKMPhasonHolonomy;D0.Matter.CKMExactTransfer",
+      "external_manifest": "08_PASSPORTS/CKM/ckm_manifest.json",
+      "cert_or_runner": "05_CERTS/vp_ckm_holonomy_external_convention_passport.py",
+      "allowed_status": "EMPIRICAL_PASSPORT_OR_CONVENTION_CHECK",
+      "current_result_artifact": "08_PASSPORTS/CKM/ckm_holonomy_external_summary.json",
+      "negative_controls": "PDG/RG comparison cannot mutate the frozen finite CKM matrix",
+      "promotion_boundary": "PDG CKM values are convention/readout comparison, not source of the finite holonomy.",
+      "manifest_status": "READY",
+      "artifact_status": "READY"
+    },
+    {
+      "passport_id": "MESON-PDG1",
+      "sector": "Meson PDG domain-wall comparison",
+      "core_owner": "D0.Matter.MesonPhasonDomainWalls",
+      "external_manifest": "08_PASSPORTS/PDG_Meson/pdg_meson_manifest.json",
+      "cert_or_runner": "05_CERTS/vp_meson_domain_wall_pdg_passport.py",
+      "allowed_status": "EMPIRICAL_PASSPORT_OR_EXTERNAL_DATA_REQUIRED",
+      "current_result_artifact": "08_PASSPORTS/PDG_Meson/pdg_meson_domain_wall_summary.json",
+      "negative_controls": "PDG mass-width table cannot promote mass formula without transfer map",
+      "promotion_boundary": "PDG comparison tests domain-wall class residuals only.",
+      "manifest_status": "READY",
+      "artifact_status": "READY"
+    }
+  ]
+}

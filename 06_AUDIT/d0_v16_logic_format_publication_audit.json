@@ -1,0 +1,243 @@
+{
+  "mode": "D0_v16_LOGIC_FORMAT_PUBLICATION_PROOFREAD",
+  "book_count": 9,
+  "changes": [
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "change": "top title normalized: # BOOK 01 — Condensed foundations, finite registration and construction of the finite incidence graph -> # BOOK 01 — Condensed Foundations, Finite Registration, and Construction of the Finite Incidence Graph"
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "change": "top title normalized: # BOOK 02 — Mathematical proof spine and invariant calculus -> # BOOK 02 — Mathematical Proof Spine and Invariant Calculus"
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "change": "top title normalized: # BOOK 03 — Finite action operators and finite incidence/clique complex dynamics -> # BOOK 03 — Finite Action Operators and Scene Dynamics"
+    },
+    {
+      "file": "BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "change": "top title normalized: # BOOK 06  Evolution, forgetting and time -> # BOOK 06 — Evolution, Forgetting, and Time"
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "change": "top title normalized: # BOOK 07 — Gravity limit and finite geometry -> # BOOK 07 — Gravity Limit and Finite Geometry"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
+      "change": "inserted publication-status block"
+    },
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "change": "renamed duplicated early 00.4a heading to 00.0 publication entry status"
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "change": "formatted D0_NOGO_LEDGER (centralized):"
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "change": "formatted D0_PHASE_UNFOLDING_REFERENCE:"
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "change": "added publication note to dusty-plasma bridge section"
+    },
+    {
+      "file": "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
+      "change": "added publication note to Book08 tabletop bridge guardrail"
+    },
+    {
+      "file": "00_PUBLICATION/D0_v16_PUBLICATION_STYLE_GUIDE.md",
+      "change": "created publication style guide"
+    }
+  ],
+  "books": [
+    {
+      "file": "BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "chars": 24212,
+      "lines": 462,
+      "headings": 22,
+      "duplicate_heading_count": 0,
+      "duplicate_headings": [],
+      "code_fence_count": 58,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "chars": 50370,
+      "lines": 1345,
+      "headings": 49,
+      "duplicate_heading_count": 0,
+      "duplicate_headings": [],
+      "code_fence_count": 150,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "chars": 70477,
+      "lines": 1814,
+      "headings": 78,
+      "duplicate_heading_count": 0,
+      "duplicate_headings": [],
+      "code_fence_count": 272,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "chars": 27674,
+      "lines": 716,
+      "headings": 32,
+      "duplicate_heading_count": 0,
+      "duplicate_headings": [],
+      "code_fence_count": 124,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "chars": 57130,
+      "lines": 1272,
+      "headings": 51,
+      "duplicate_heading_count": 1,
+      "duplicate_headings": [
+        {
+          "line": 1016,
+          "heading": "## 04.20 Claim classification for the active matter book"
+        }
+      ],
+      "code_fence_count": 168,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "chars": 38575,
+      "lines": 756,
+      "headings": 45,
+      "duplicate_heading_count": 0,
+      "duplicate_headings": [],
+      "code_fence_count": 42,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "chars": 43795,
+      "lines": 939,
+      "headings": 48,
+      "duplicate_heading_count": 1,
+      "duplicate_headings": [
+        {
+          "line": 711,
+          "heading": "## 06.30a Time evolution over the φ-quasicrystalline hull"
+        }
+      ],
+      "code_fence_count": 150,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "chars": 61099,
+      "lines": 1490,
+      "headings": 58,
+      "duplicate_heading_count": 0,
+      "duplicate_headings": [],
+      "code_fence_count": 224,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    },
+    {
+      "file": "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
+      "chars": 44219,
+      "lines": 1054,
+      "headings": 46,
+      "duplicate_heading_count": 0,
+      "duplicate_headings": [],
+      "code_fence_count": 170,
+      "code_fences_even": true,
+      "nul_bytes": false,
+      "replacement_char_present": false,
+      "hard_overclaim_terms": [],
+      "publication_status_block": true
+    }
+  ],
+  "cert_results": [
+    {
+      "cmd": "python3 05_CERTS/run_all_bridge_certs.py",
+      "returncode": 0,
+      "stdout_tail": "PASS_RUN_ALL_BRIDGE_CERTS",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "python3 05_CERTS/run_all_v16_integrated_certs.py",
+      "returncode": 0,
+      "stdout_tail": "PASS_RUN_ALL_V16_INTEGRATED_CERTS",
+      "stderr_tail": ""
+    }
+  ],
+  "residual_publication_notes": [
+    "Historical section numbers are preserved where cross-references likely depend on them; the audit flags duplicates/out-of-order sequences but does not renumber theorem-bearing sections.",
+    "This pass improves publication framing, status discipline, and reader-facing formatting. It does not re-prove mathematical claims or regenerate graph assets.",
+    "Dusty-plasma and LIGO materials remain bridge/negative-control layers, not core closure."
+  ]
+}

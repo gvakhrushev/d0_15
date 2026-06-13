@@ -1,0 +1,7 @@
+{
+  "protocol_id": "METRO_AUDIT_V1",
+  "params": {
+    "core_only_default": true,
+    "outputs": { "json": "d0_metrological_audit_report.json" }
+  }
+}

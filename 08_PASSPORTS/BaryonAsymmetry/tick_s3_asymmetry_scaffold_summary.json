@@ -1,0 +1,5 @@
+{
+  "summary": "Discrete tick quotient can bias retained baryon readout between S3-symmetric (dim 10) and alternating (dim 1) sectors. Scaffold only under quotient suppression assumption. No cosmological baryogenesis closure claimed.",
+  "status": "SCAFFOLD (conditional; external model required)",
+  "tokens": ["PASS_S3_SYMMETRIC_DECUPLET_DIMENSION", "PASS_TICK_DETERMINANT_NEGATIVE_ONE", "PASS_BARYON_ASYMMETRY_SCAFFOLD_CONDITIONAL", "SKIP_FULL_COSMOLOGICAL_BARYOGENESIS_EXTERNAL_MODEL_REQUIRED"]
+}

@@ -1,0 +1,1888 @@
+# D0 theory semantic index
+
+Generated from `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` and `09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv`.
+Purpose: make bridge boundaries, risky physical domains, Lean anchors, certificates, and legacy rows visible to both humans and Graphify.
+
+## Status counts
+
+- `BRIDGE-ASSUMPTION`: 1
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 6
+- `BRIDGE-CALIBRATION`: 2
+- `CERT-CANDIDATE`: 3
+- `CERT-CLOSED`: 9
+- `CORE-FORMALIZED`: 89
+- `CORE_BRIDGE_SPLIT`: 4
+- `DEPRECATED`: 1
+- `EMPIRICAL-PASSPORT`: 1
+- `EMPIRICAL-PASSPORT-CANDIDATE`: 1
+- `EXTERNAL-BACKGROUND`: 1
+- `LOWER-BOUND-TARGET`: 1
+- `NO-GO`: 7
+- `NO_GO_PROVED`: 8
+- `OPERATOR-SCAFFOLD-CERTIFIED`: 1
+- `PROOF-OBLIGATION-EXPOSED`: 1
+- `PROOF-TARGET`: 1
+- `SPIN-FLAVOUR-TRANSFER-CERTIFIED`: 1
+- `THEOREM-TARGET-SHARPENED`: 1
+
+## Type counts
+
+- `bridge`: 13
+- `certificate`: 9
+- `core`: 90
+- `deprecated`: 2
+- `frontier`: 10
+- `no-go`: 15
+
+## Domain counts
+
+- `cosmology`: 18
+- `empirical_passport`: 5
+- `external_background`: 1
+- `formal_core`: 75
+- `frontier`: 10
+- `gauge_bridge`: 16
+- `interpretation_spine`: 1
+- `rg`: 3
+- `si_calibration`: 2
+- `smooth_geometry`: 3
+- `spectral_action`: 5
+
+## Domain: cosmology
+
+### D0-COSMO-CONCRETE-FLOW-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ConcreteEntropyArchiveFlow`
+- theorem: `softmax_flow_mass_preserving;homogeneous_state_maps_to_itself;positivity_if_initial_positive;centered_source_zero_mean`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Concrete entropy-coupled softmax flow properties.
+
+### D0-COSMO-CONFORMAL-TRACE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Geometry.ConformalLaplacianTrace`
+- theorem: `trace_weighted_laplacian;regular_trace_volume_proxy;archiveVolume_heat_trace_proxy`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Weighted trace volume proxy proportional to archiveVolume on regular graphs.
+
+### D0-COSMO-CORE-SHAPE-PASSPORT-BOUNDARY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.CoreShapePassportBoundary`
+- theorem: `core_shape_independent_of_empirical_parameters;empirical_passport_not_core_closed`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: D0 core shape independent of empirical params and external data not core closed.
+
+### D0-COSMO-ENTROPY-FLOW-FIXED-POINT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.EntropyArchiveFlow`
+- theorem: `homogeneous_fixed_point`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Mass-preserving homogeneous entropy-coupled flow fixed point.
+
+### D0-COSMO-FLOOR-PROJECTION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.FloorMassProjection`
+- theorem: `projection_preserves_mass;projection_preserves_floor;projection_exists_of_feasible`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Feasible projection preserves mass and floor.
+
+### D0-COSMO-HOMOGENEOUS-FIXED-POINT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ArchiveHomogeneousState`
+- theorem: `homogeneous_total_eq_value;homogeneous_mass_conserving_fixed_point`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Homogeneous state mass conservation fixed point.
+
+### D0-COSMO-INSTABILITY-SATURATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.InstabilitySaturation`
+- theorem: `positive_lower_bound_blocks_eternal_linear_underdensity`
+- cert: `vp_archive_friedmann_instability.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Lower bound blocks eternal linear underdensity growth.
+
+### D0-COSMO-JACOBIAN-INSTABILITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.LinearizedEntropyFlow`
+- theorem: `jacobian_eigenvalue_formula;jacobian_eigenvalue_unstable_if_mu_positive`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Linearized flow eigenvalue formula and instability.
+
+### D0-COSMO-JACOBIAN-SIGN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.EntropyJacobianSign`
+- theorem: `jacobian_eigenvalue_formula_convention;jacobian_eigenvalue_unstable_convention`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Instability audit locks sign and eigenvalue formula.
+
+### D0-COSMO-TICK-GAUGE-EQUIV-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Geometry.ArchiveTickGaugeFixing`
+- theorem: `eta_absorbs_into_response`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Tick gauge equivalence holds by parameter absorption.
+
+### D0-COSMO-TRANSIENT-ACCELERATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.TransientAcceleration`
+- theorem: `inverse_density_convex_three_point;underdense_geometric_mode_generates_positive_acceleration`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Geometric underdensity pattern yields transient acceleration in 1/rho.
+
+### D0-COSMO-VOLUME-FLOOR-BOUND-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ArchiveVolumeBounds`
+- theorem: `density_floor_bounds_inverse;density_floor_bounds_archiveVolume;bounded_volume_no_eternal_uniform_acceleration`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Density floor bounds archive volume and prevents eternal acceleration.
+
+### D0-COSMO-WATER-FILLING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Probability.ArchiveFloorWaterFilling`
+- theorem: `waterFill_preserves_floor;waterFill_mass_if_root;feasibility`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Water-filling preserves floor and is feasible when mass is large enough.
+
+### D0-COSMO-ZERO-MEAN-UNDERDENSE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ZeroMeanModes`
+- theorem: `zero_mean_nonzero_has_negative_component;zero_mean_nonzero_has_positive_component;zero_mean_mode_has_underdense_region`
+- cert: `none`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Zero-mean modes must have negative (underdense) and positive components.
+
+### D0-CVFT-001A
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_00/01/02/03`
+- module: `D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction`
+- theorem: `Dynamics.internal_feedback_forced_by_split;Dynamics.internal_feedback_resolvent_series;Cosmology.feedback_determinant_return_cycles;Cosmology.feedback_variation_universal_source;Cosmology.feedback_pressure_trace_log`
+- cert: `vp_closed_vacuum_feedback_full_wave.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Closed finite feedback operator core F_N=P_N U_N^dagger Q_N U_N P_N with resolvent determinant trace variation and feedback pressure law.
+
+### D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_07/08`
+- module: `D0.Cosmology.PhasonFlipEntropy`
+- theorem: `Cosmology.phason_flip_entropy_nonnegative;Cosmology.archive_pressure_is_phason_flip_entropy_osmosis;Cosmology.phason_flip_transfer_matrix_has_sde_polynomial;Cosmology.sde_roots_are_phason_flip_relaxation_modes`
+- cert: `vp_phason_flip_entropy_sde.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: Finite formal S_DE owner: archive pressure is phason-flip entropy osmosis and the finite transfer characteristic is 160 lambda^2 - 480 lambda + 359; external BAO/DESI survey comparison is a passport/certificate and not core.
+
+### D0-SDE-K0-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.PhasonFlipEntropy`
+- theorem: `Cosmology.sde_relaxation_modes_have_gap_labels;Cosmology.archive_pressure_spectrum_is_gap_labeled`
+- cert: `vp_phason_flip_entropy_sde.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: S_DE relaxation modes are gap-labeled.
+
+### D0-CVFT-NOGO-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `cosmology`
+- book: `BOOK_05/08`
+- module: `D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FiniteFeedbackEquationOfState;D0.Matter.TerminalFeedbackModes;D0.Cosmology.SDEFeedbackReduction`
+- theorem: `Dynamics.external_mirror_model_forbidden;Cosmology.ideal_gas_core_postulate_forbidden;Matter.matter_as_arbitrary_eigenvalue_forbidden;Cosmology.desi_root_refit_repair_forbidden;Cosmology.desi_window_refit_repair_forbidden;Cosmology.arbitrary_kernel_repair_not_theorem_grade`
+- cert: `vp_closed_vacuum_feedback_full_wave.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: External mirror vacuum photon-acceleration interpretation ideal-gas postulate arbitrary-eigenvalue matter and DESI/SPARC root window or arbitrary-kernel repairs are forbidden.
+
+
+## Domain: empirical_passport
+
+### D0-QUASI009-CKM-PHASON-HOLONOMY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_04/08`
+- module: `D0.Matter.CKMPhasonHolonomy`
+- theorem: `Matter.torus_shell_noncommutator_is_phason_connection_curvature;Matter.phason_parallel_transport_around_shells_is_unitary;Matter.phason_holonomy_response_has_multisupport_row;Matter.phason_holonomy_response_not_permutation;Matter.ckm_cp_phase_is_chiral_phason_bundle_twist;Matter.ckm_matrix_is_phason_holonomy_on_torus_core13`
+- cert: `vp_ckm_phason_holonomy_k0.py`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: Finite formal origin: non-permutation phason holonomy on the Torus Core-13 shell loop with rational unitary transport and chiral orientation twist; external CKM comparison passport/certificate is not core and no PDG entries are used.
+
+### D0-TRACEABILITY-STATUS-TAXONOMY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_08`
+- module: `D0.Traceability.StatusTaxonomy`
+- theorem: `Traceability.external_likelihood_cannot_promote_to_core_closed`
+- cert: `none`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: Traceability status taxonomy with promotion guardrails.
+
+### D0-ICECUBE-001
+
+- type: `core`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_04/05/08`
+- module: `D0.Matter.NeutrinoPhasonWaves;D0.Passport.IceCubePhasonDecoherence`
+- theorem: `Matter.neutrino_neutral_leakage_is_bulk_phason_wave;Matter.neutral_phason_wave_has_no_em_coupling;Matter.delta0_over_four_is_phason_birefringence_seed;Matter.phason_wave_decoherence_kernel_positive;Passport.icecube_decoherence_passport_requires_external_manifest;Passport.empty_icecube_manifest_cannot_run`
+- cert: `vp_neutrino_phason_decoherence_passport.py`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: Neutrino is a neutral bulk phason leakage mode internally; IceCube decoherence comparison is skipped until a complete external event energy direction response and hash manifest is supplied.
+
+### D0-GEN-MASS-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: `D0.Spectrum.BranchDefectProjectiveControls`
+- theorem: `branch_defect_projective_proof_closed`
+- cert: `vp_pi0_branch_defect_generation.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Core index is proved; physical masses/Yukawa hierarchy/PDG clustering require additional physical input and are not core theorems.
+
+### D0-GRAV-QNM-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `empirical_passport`
+- book: `BOOK_07`
+- module: `D0.Gravity.BoundaryRelaxationSpectrum`
+- theorem: `qnm_passport_requires_preregistered_inputs`
+- cert: `vp_qnm_delta0_overtone_ladder.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: QNM ladder passport is blocked without preregistered model and extracted modes table.
+
+
+## Domain: external_background
+
+### D0-EXTERNAL-BACKGROUND-HURWITZ-GLOBAL-CLASSIFICATION-001
+
+- type: `deprecated`
+- release_status: `EXTERNAL-BACKGROUND`
+- domain: `external_background`
+- book: `BOOK_04`
+- module: `D0.Algebra.D0InternalDimensionSelector`
+- theorem: `Algebra.global_hurwitz_classification_not_core_dependency`
+- cert: `none`
+- assumptions: `none`
+- scope: Deprecated or historical row; not a live promotion path.
+- notes: Global normed-division exhaustion is no longer an active D0 core dependency; D0 core uses the finite internal selector.
+
+
+## Domain: formal_core
+
+### D0-QM-BORN-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Born`
+- theorem: `finite_born_sum_one`
+- cert: `none`
+- assumptions: `ASSUMP-HST-EXTERNAL`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Finite skeleton under explicit finite response assumptions; no full Gleason claim.
+
+### D0-QM-BORN-002
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Born`
+- theorem: `finite_born_nonnegative`
+- cert: `none`
+- assumptions: `ASSUMP-HST-EXTERNAL`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Finite skeleton under explicit finite response assumptions.
+
+### D0-CARRIER-003
+
+- type: `bridge`
+- release_status: `CORE_BRIDGE_SPLIT`
+- domain: `formal_core`
+- book: `D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE`
+- module: `D0.Algebra.Clifford`
+- theorem: `clifford_relation`
+- cert: `vp_v1145_operator_bridge_triple.py`
+- assumptions: `ASSUMP-LORENTZ-MACRO`
+- scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
+- notes: Finite Clifford relation is core; Lorentz macro integration is bridge.
+
+### D0-TRACE-HEAT-CAPACITY-GRAVITY-001
+
+- type: `bridge`
+- release_status: `CORE_BRIDGE_SPLIT`
+- domain: `formal_core`
+- book: `BOOK_01/03/06/07/08`
+- module: `D0.Core.FixedDetectorTimeLadder;D0.Dynamics.TraceHeatCapacityGravity`
+- theorem: `Core.detector_fixed_under_time_ladder;Core.readout_depends_on_time_power;Core.active_archive_trace_readout_integer;Dynamics.heat_moment_T2_eq_even_lucas_trace;Dynamics.heat_moment_eq_even_lucas;Dynamics.lefschetz_spectrum_unfolds_scene;Dynamics.boundary_capacity_is_quarter_cut_weight;Dynamics.saturated_region_forces_boundary_encoding;Dynamics.black_hole_capacity_saturation_rule;Dynamics.heat_trace_entropy_gradient_admits_gravity_interface`
+- cert: `vp_trace_heat_capacity_gravity.py`
+- assumptions: `none`
+- scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
+- notes: Fixed finite boundary trace-heat capacity block proves T^2 heat moments as even Lucas traces and saturation as boundary encoding while macro gravity stays bridge-scoped through the finite witness.
+
+### D0-ARCHIVE-ACTION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveActionFunctional`
+- theorem: `archiveCurvatureAction_nonnegative;archiveCurvatureAction_zero_iff_all_flat`
+- cert: `vp_archive_seam_curvature_action.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Archive action is accumulated seam curvature and vanishes exactly when all included levels are transport-flat.
+
+### D0-ARCHIVE-ENTROPY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06/08`
+- module: `D0.Probability.EntropyCouplingKernel`
+- theorem: `archive_entropy_kernel_exists_if_HST;archive_forgetting_channel_unique`
+- cert: `vp_archive_entropy_softmax_coupling.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Entropy-selected archive coupling interface plus finite-stage softmax coupling cert.
+
+### D0-ARCHIVE-FIELD-EQ-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveFieldEquation`
+- theorem: `matrix_hs_square_expansion;first_variation_trace_square;seam_action_variation_quadratic_expansion;stationary_iff_first_variation_zero;vacuum_equation_iff_stationary;sourced_equation_variational_form`
+- cert: `vp_archive_variational_field_equation.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Finite seam-action variation gives the field-gradient pairing and sourced variational equation.
+
+### D0-ARCHIVE-SEAM-CURVATURE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveCurvatureDensity`
+- theorem: `seamCommutator_zero_iff_operator_transport_flat;seamCurvatureDensity_nonnegative;seamCurvatureDensity_zero_iff_flat`
+- cert: `vp_archive_seam_curvature_action.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Curvature is the seam commutator density; cert checks exact rank two and seam support.
+
+### D0-DM-CLASSICALITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06/08`
+- module: `D0.Detector.WeakCouplingClassicalization`
+- theorem: `weak_coupling_readout_classical_guardrail`
+- cert: `vp_dm_classicality_guardrail.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Weak-coupling/mode-averaging nonclassical signature suppression guardrail.
+
+### D0-HST-ARCHIVE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06/08`
+- module: `D0.Probability.HSTExternalInterface`
+- theorem: `hst_admissible_from_certificates;entropy_kernel_exists_if_HST`
+- cert: `vp_archive_subgaussian_hst_admissibility.py;vp_archive_convex_order_domination.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: HST is external theorem object; D0-side archive hypotheses are cert-backed.
+
+### D0-ABCD-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Core.DyadABCD`
+- theorem: `ABCD_cardinality`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: ABCD represented as Dyad x Dyad.
+
+### D0-ARCHIVE-BIANCHI-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveBianchiIdentity`
+- theorem: `archiveCanonicalLaplacian_row_sum_zero;archiveLiftOperator_row_sum_one;seamCommutator_row_sum_zero;curvature_gradient_conserved;source_must_be_conserved`
+- cert: `vp_archive_variational_field_equation.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Row-sum conservation of the seam curvature gradient forces conserved archive sources.
+
+### D0-ARCHIVE-GAUSSIAN-CHANNEL-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06/08`
+- module: `D0.Probability.ArchiveClassicalGaussianChannel`
+- theorem: `archive_macro_channel_classical_gaussian`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Combines HST interface and detector classicalization as typed macro-channel statement.
+
+### D0-ARCHIVE-LAPLACIAN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveLaplacianProperties`
+- theorem: `archive_laplacian_symmetric;archive_laplacian_nonnegative;archive_laplacian_zero_mode_control`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite archive Laplacian is symmetric/nonnegative with zero-mode control.
+
+### D0-ARCHIVE-MODE-EXPONENT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07/08`
+- module: `D0.Geometry.ArchiveModeExponent`
+- theorem: `archive_mode_exponent_eq_abcd;archive_mode_exponent_eq_lorentz_dimension;archive_modes_forced`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Archive exponent 4 forced by ABCD/Lorentz carrier dimension.
+
+### D0-ARCHIVE-PHASE-CURVATURE
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchivePhaseCurvatureObstruction`
+- theorem: `phase_flat_iff_zero_curvature_obstruction;NO_GO_PHASE_LAPLACIAN_PROJECTIVE_COMPATIBILITY;NO_GO_PHASE_CURVATURE_OBSTRUCTION`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Nonvanishing curvature obstruction on refined phase fibers.
+
+### D0-ARCHIVE-PHASE-DISTANCE
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06/07`
+- module: `D0.Geometry.ArchivePhaseDistance`
+- theorem: `archivePhaseDistance_nonnegative;archivePhaseDistance_symmetric;archivePhaseDistance_zero_iff`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Metric on finite fibers.
+
+### D0-ARCHIVE-RESOLVENT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveResolventCompactness`
+- theorem: `finite_stage_resolvent_compact;archive_spectral_tightness_from_mode_growth;d0_archive_profinite_resolvent_compactness`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite-stage compactness/projection/tightness structure for archive tower.
+
+### D0-ARCHIVE-SCALAR-REDUCTION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Active.ScalarPoissonReduction`
+- theorem: `scalar_stationarity_implies_archive_poisson`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Stationarity under scalar perturbations reduces to discrete Poisson.
+
+### D0-ARCHIVE-STRESS-CONSERVATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Frozen.ConservedStressProjection`
+- theorem: `constrained_projection_applies_to_archive_gradient`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Constrained representative is symmetric and conserved.
+
+### D0-ARCHIVE-STRESS-REP-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveStressRepresentative`
+- theorem: `raw_gradient_equivalent_to_canonical_stress;canonical_stress_symmetric;canonical_stress_conservation_no_go`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Symmetric representative defined and raw gradient equivalent.
+
+### D0-ARCHIVE-TOWER-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06/07`
+- module: `D0.Geometry.ArchiveRefinementTower`
+- theorem: `terminal_readout_stable;archive_depth_strictly_increases;spectral_modes_strictly_increase;archive_projection_surjective`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Terminal readout stable while archive/spectral refinement grows.
+
+### D0-ARCHIVE-VARIATION-DUAL-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveVariationDual`
+- theorem: `pairing_depends_only_on_symmetric_part;skew_part_annihilates_admissible_variations`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Admissible variation dual properties.
+
+### D0-ARCHIVE-WEAK-FIELD-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07/08`
+- module: `D0.Geometry.ArchivePoissonEquation`
+- theorem: `poisson_requires_neutral_source;poisson_solution_unique_mod_constant`
+- cert: `vp_archive_weak_field_poisson.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Poisson equation has unique solution up to constant.
+
+### D0-BORN-QUADRATIC-ORIGIN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Core.BornQuadraticOrigin`
+- theorem: `parallelogram_response_is_quadratic_form;quarter_turn_quadratic_forces_norm_square;born_quadratic_origin_closed`
+- cert: `vp_born_quadratic_origin.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite phase quadrature gives quadratic response and unit phase-blind calibration gives norm-square before Born normalization.
+
+### D0-CAPACITY-V11-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Core.FiniteTypes`
+- theorem: `card_v11`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: V11 exact cardinality.
+
+### D0-CAPACITY-V13-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Core.FiniteTypes`
+- theorem: `card_v13`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: V13 exact cardinality.
+
+### D0-CAPACITY-V9-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Core.FiniteTypes`
+- theorem: `card_v9`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: V9 exact cardinality.
+
+### D0-CKM-K0-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04/08`
+- module: `D0.Matter.CKMPhasonHolonomy`
+- theorem: `Matter.torus_shell_noncommutator_defines_phason_connection_curvature;Matter.ckm_holonomy_has_k_theory_class;Matter.ckm_cp_phase_is_oriented_noncommutative_area`
+- cert: `vp_ckm_phason_holonomy_k0.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area.
+
+### D0-CKM-NONTRIVIAL-FLAVOUR-ALGEBRA-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.CKMNontrivialFlavourAlgebra`
+- theorem: `Matter.permutation_witness_has_no_nontrivial_flavour_transfer;Matter.overlap_response_can_force_nonpermutation_transfer;Matter.torus_overlap_generates_nonpermutation_flavour_transfer;Matter.nontrivial_flavour_defect_positive_response;Matter.nontrivial_flavour_defect_admissible_for_meson_transfer`
+- cert: `vp_generation_overlap_response_origin.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite flavour defect is sourced by non-permutation overlap and has positive response without physical CKM entries.
+
+### D0-CONDENSED-PHI-VACUUM-CUT-PROJECT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01/02/06/08`
+- module: `D0.Condensed.CondensedPhiVacuum;D0.Physics.QuasicrystalPhenomenology`
+- theorem: `phi_vacuum_stage_card_eq_two;condensed_phi_vacuum_support_closed;cut_project_quasicrystal_matches_phase_unfolding;Physics.d0_phi_cut_project_matches_condensed_phi_vacuum`
+- cert: `vp_condensed_phi_vacuum_cut_project.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Condensed/profinite phi-vacuum support exposes terminal qT=44 branch count 20 electroweak qEW=710 branch count 280 and depth 35 and the physics cut-project readout is tied to this support.
+
+### D0-FINAL-BRIDGE-INDEX-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Bridge.FinalBridgeIndex`
+- theorem: `Bridge.D0_FINAL_FOUNDATION_INDEX`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Machine-checkable final bridge index over closed D0 foundation groups.
+
+### D0-FOUND-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Core.Phi`
+- theorem: `primitive_quadratic_unique_pos_root`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Exact p+p^2=1 positive root uniqueness.
+
+### D0-GEN-INDEX-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Spectrum.BranchDefectProjectiveGeneration`
+- theorem: `exactly_three_projective_branch_defect_generations;defectAction_order_three;defect_generation_card`
+- cert: `vp_pi0_branch_defect_generation.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Generation index is the projective closure P1(F2) of the minimal two-branch defect plane; masses/Yukawa hierarchy are not included.
+
+### D0-GEOM-HEAT-TRACE-EH-PROXY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Geometry.HeatTraceEHProxy`
+- theorem: `weighted_laplacian_entry;trace_square_weighted_laplacian_decomposition;offdiag_proxy_nonnegative;regular_graph_diagonal_square_term`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Weighted trace square decomposition and proxy nonnegativity.
+
+### D0-GEOM-OBSTRUCT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveCurvatureObstruction`
+- theorem: `flat_archive_iff_zero_curvature_obstruction`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Flat archive iff zero curvature obstruction.
+
+### D0-GRAVITY-ENTROPIC-ARCHIVE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.EntropicArchiveInterface`
+- theorem: `Gravity.boundary_capacity_nonnegative;Gravity.graph_laplacian_symmetric;Gravity.conserved_flux_no_creation;Gravity.entropic_tension_energy_nonnegative;Gravity.entropic_archive_interface_closure`
+- cert: `vp_entropic_archive_gravity.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite graph cut capacity heat-trace observable archive flux conservation and nonnegative entropic tension are formal D0 objects.
+
+### D0-HULL-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01`
+- module: `D0.Topology.TilingHull`
+- theorem: `Topology.d0_hull_has_finite_local_complexity;Topology.d0_hull_has_phi_cut_project_origin;Topology.d0_hull_is_nonperiodic;Topology.d0_hull_has_long_range_order;Topology.d0_hull_supports_gap_labeling`
+- cert: `vp_d0_tiling_hull.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: D0 tiling hull is aperiodic and repetitive with finite local complexity.
+
+### D0-HURWITZ-INTERNAL-DIMENSION-SELECTOR-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Algebra.D0InternalDimensionSelector`
+- theorem: `Algebra.d0_internal_dimension_value;Algebra.d0_internal_dimension_value_mem;Algebra.d0_admissible_dimension_iff;Algebra.d0_admissible_internal_dimension_iff;Algebra.octonion_witness_not_associative_matrix_algebra;Algebra.d0_selector_closes_core_internal_dimension`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: D0 core dimension selection is finite and internal; octonion witness is finite composition data not an associative Matrix 8 8 algebra.
+
+### D0-HURWITZ-LOCAL-BOUNDARY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Algebra.HurwitzLocalBoundary`
+- theorem: `Algebra.dim_one_admissible;Algebra.dim_two_admissible;Algebra.dim_four_admissible;Algebra.dim_eight_admissible;Algebra.dim_one_has_local_finite_witness;Algebra.dim_two_has_local_finite_witness;Algebra.dim_four_has_local_finite_witness;Algebra.dim_eight_has_local_finite_witness;Algebra.hurwitz_local_boundary_split`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Local finite admissibility and table witnesses are internal D0 theorems for dimensions 1/2/4/8.
+
+### D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01/06/07/08`
+- module: `D0.Geometry.HurwitzRigidPhaseGenerator;D0.Geometry.PhaseReturnBranchCount;D0.Geometry.PhaseUnfoldingQuasicrystal`
+- theorem: `Geometry.phi_phase_is_nonperiodic;Geometry.phi_continued_fraction_all_ones;Geometry.hurwitz_rigid_low_denominator_bound;Geometry.finite_return_modulus_unfolds_branches;Geometry.toral_runtime_supplies_quasicrystal_order;Geometry.quasicrystal_order_not_periodic_lattice`
+- cert: `vp_information_quasicrystal_phase_unfolding.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite tick order plus irrational phi^-2 phase plus return quotients yields ordered aperiodic readout-generated branch geometry without a primitive lattice.
+
+### D0-KTHEORY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01/02/04/05/06`
+- module: `D0.Matter.KTheoryGapLabeling`
+- theorem: `Matter.gap_label_is_topological_not_fitted;Matter.d0_gap_labels_are_countable;Matter.gap_labeling_requires_frozen_operator;Matter.meson_domain_wall_spectrum_admits_k0_labels;Matter.ckm_holonomy_spectrum_admits_k0_labels;Matter.archive_pressure_spectrum_admits_k0_labels`
+- cert: `vp_gap_labeling_d0_tiling_hull.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Stable K-theory gap labels are countable and topological.
+
+### D0-LEAN-CORE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `Lean formalization`
+- module: `D0.TheoremLedger.ReleaseStatus`
+- theorem: `lean_core_release_candidate`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Release-candidate core status backed by build and CI.
+
+### D0-MASTER-EVOLUTION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01/03/06/07/08`
+- module: `D0.Dynamics.MasterEvolutionTheorem`
+- theorem: `Dynamics.T_squared_plus_T_minus_identity_eq_zero;Dynamics.det_T_pow_square_eq_one;Dynamics.lucas_heat_moment_bridge;Dynamics.detector_is_fixed_under_ladder;Dynamics.d0_phi_quasicrystal_vacuum_support;Dynamics.master_evolution_theorem`
+- cert: `vp_master_evolution_theorem.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Single finite evolution package closes T quadratic identity signed Lucas traces Lefschetz scene counts determinant-square balance dark even-window cancellation heat-Lucas moments fixed detector ladder and phi-quasicrystal support without external data.
+
+### D0-MATTER-ANOMALY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.GenerationAnomalyPreservation`
+- theorem: `Matter.anomaly_sum_triples;Matter.anomaly_zero_preserved`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Generational anomaly sum structure.
+
+### D0-MATTER-LOCALIZATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Active.NonzeroMatterSourceNeutrality`
+- theorem: `Matter.localized_matter_source_neutral_if_anomaly_free`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Conditional matter source neutrality under localization assumption.
+
+### D0-MATTER-SOURCE-NEUTRALITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04/08`
+- module: `D0.Matter.GeneratedMatterSource`
+- theorem: `Matter.generated_matter_source_neutral_if_anomaly_free;Matter.NO_GO_MATTER_SOURCE_NEUTRALITY`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Generated-source neutrality closes the minimal base interface; nonzero localized sources are handled by D0-MATTER-LOCALIZATION-001.
+
+### D0-MATTER-STRESS-COUPLING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.ArchiveStressCoupling`
+- theorem: `Matter.matterStressMatrix_symmetric;Matter.matterStressMatrix_conserved;Matter.generated_matter_source_conserved_if_anomaly_free;Matter.generated_matter_source_zero_if_anomaly_free`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Generation/anomaly layer defines a symmetric conserved archive stress source; anomaly-free reps give zero source in this minimal coupling.
+
+### D0-MESON-K0-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04/08`
+- module: `D0.Matter.MesonPhasonDomainWalls`
+- theorem: `Matter.lower_hodge_400_is_domain_wall_tension_seed;Matter.meson_domain_wall_fluctuation_operator_has_spectral_gaps;Matter.meson_domain_wall_gaps_have_k0_labels;Matter.k0_labels_permit_meson_spectral_passport`
+- cert: `vp_phason_domain_wall_mesons.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Meson domain wall tension and spectrum admit stable K0 gap labels.
+
+### D0-MESON-POSITIVE-DEFECT-TRANSFER-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.MesonDefectTransferOrigin`
+- theorem: `Matter.meson_support_projector_idempotent;Matter.flavour_defect_positive_response;Matter.meson_positive_defect_transfer_admissible`
+- cert: `vp_meson_positive_defect_transfer.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Meson transfer uses the typed Edge by Generation carrier and lifted flavour defect rather than a direct sum of unrelated spaces.
+
+### D0-NCG-INDEX-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Combinatorics.Tripartite`
+- theorem: `no_3_simplices_clique_complex`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: No four-partite clique guardrail.
+
+### D0-OMEGA8-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Core.DyadABCD`
+- theorem: `omega8_cardinality`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Omega8 represented as Role x Bool.
+
+### D0-OPERATOR-EDGE-STIFFNESS-ORIGIN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Geometry.EdgeStiffnessOrigin`
+- theorem: `Geometry.capacityCore_symmetric;Geometry.capacityCore_psd;Geometry.symmOffDiag_projection_trace_transparent;Geometry.edge_stiffness_preserves_symmOffDiag;Geometry.edge_stiffness_energy_nonnegative;Bridge.edge_stiffness_origin_closed`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Edge stiffness origin with symm-offdiag projection.
+
+### D0-OPERATOR-VECTOR-LAPLACIAN-ORIGIN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Matter.VectorOperatorOrigin`
+- theorem: `Matter.vector_laplacian_preserves_skew;Matter.vector_laplacian_energy_nonnegative;Matter.vector_operator_origin_applies_to_field_equation;Bridge.vector_operator_origin_closed`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Vector operator origin via negative double commutator.
+
+### D0-PHASE-TOWER-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Combinatorics.PhaseTowerMinimality`
+- theorem: `terminalWindow_minimal;fullOrientedWindow_minimal;fullOrientedWindow_C0_minimal`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Forced windows are minimal synchronization moduli, not post-hoc choices.
+
+### D0-PHASE-UNFOLD-002
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Phase`
+- theorem: `forced_terminal_window;terminal_window_totient;forced_ew_window;ew_window_totient;ew_depth`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Exact 44 and 710 forced-window arithmetic.
+
+### D0-PHI-HURWITZ-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.NumberTheory.HurwitzMinimaxPhi`
+- theorem: `HURWITZ_MINIMAX_D0_CLASS_PROVED`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background.
+
+### D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02/04/05/08`
+- module: `D0.Matter.PhasonStrainGenerations`
+- theorem: `Matter.phason_mode_card_eq_three;Matter.generation_phason_mode_card_eq_three;Matter.baryon_phason_triple_card_eq_27;Matter.baryon_phason_symmetric_sector_dim_eq_ten;Matter.phason_s3_symmetrizer_admits_baryon_decuplet_transfer;Matter.full_baryon_multiplet_requires_phason_s3_symmetrizer;Matter.phason_strain_generations_baryon_closure`
+- cert: `vp_quasi002_phason_strain_generations_baryon.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Phason modes are the three torus-shell roles ordered baryon triples have dimension 27 the S3 symmetric sector has decuplet dimension 10 and nucleon-line extrapolation remains forbidden without the phason S3 symmetrizer.
+
+### D0-QUASI006-GALOIS-LORENTZ-SIGNATURE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06/07/08`
+- module: `D0.Physics.GaloisLorentzSignature`
+- theorem: `Physics.galois_lorentz_signature_closed`
+- cert: `vp_galois_lorentz_signature.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Active/archive Galois trace layers and determinant-square balance are integrated with the terminal role signature (1
+
+### D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04/08`
+- module: `D0.Matter.MesonPhasonDomainWalls`
+- theorem: `Matter.meson_phason_domain_wall_boundary_nonzero;Matter.meson_phason_domain_wall_card_eq_six;Matter.meson_domain_wall_generation_carrier_card_eq_eighteen;Matter.meson_domain_wall_transfer_uses_lifted_defect;Matter.meson_phason_domain_wall_closure`
+- cert: `vp_phason_domain_wall_mesons.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Meson domain walls are six oriented nonzero phason boundaries lifted by generation readout to an 18-state finite carrier while meson transfer still uses the existing Edge by Generation lifted flavour-defect origin.
+
+### D0-QUASICRYSTAL-PHENOMENOLOGY-OPERATOR-ORIGIN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01/02/04/06/07/08`
+- module: `D0.Physics.QuasiGenerationsInflation;D0.Physics.ArchivePhasonDarkMatter;D0.Physics.WindowOffsetChirality;D0.Physics.PhasonFlipInertia;D0.Physics.WindowFractionalCharge;D0.Physics.QuasicrystalPhenomenology`
+- theorem: `Physics.quasi_generation_inflation_orbit;Physics.archive_phason_strain_em_dark_metric_visible;Physics.window_offset_forces_chiral_readout;Physics.phason_flip_drag_positive_cost;Physics.fractional_charge_window_weights;Physics.quasicrystal_phenomenology_operator_origin`
+- cert: `vp_quasicrystal_phenomenology_operator_origin.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: One D0PhiCutProject finite cut-and-project owner yields generation inflation classes archive phason dark metric response window-offset chirality phason-flip rewrite inertia and fractional window-sector charge weights.
+
+### D0-SCENE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Combinatorics.Tripartite`
+- theorem: `vertex_count_K_9_11_13;edge_count_K_9_11_13;triangle_count_K_9_11_13`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Tripartite counts 33/359/1287.
+
+### D0-SOLENOID-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/07`
+- module: `D0.Geometry.NonCommutativeSolenoid`
+- theorem: `Geometry.d0_hull_admits_noncommutative_solenoid_model`
+- cert: `vp_noncommutative_solenoid_gravity.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Noncommutative solenoid model is admitted over the tiling hull.
+
+### D0-SRC-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.NuclearShellContactSRC`
+- theorem: `Matter.same_shell_contact_index_zero_for_unmatched_valence_protons;Matter.same_shell_contact_turns_on_for_matched_valence_pn;Matter.src_contact_requires_shell_projector_overlap;Matter.nuclear_shell_contact_src_closure`
+- cert: `vp_nuclear_shell_contact_src.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: SRC contact is a finite shell-projector overlap readout through an angular-momentum shell-contact selector.
+
+### D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_03/06/07/08`
+- module: `D0.Dynamics.ToralAutomorphism;D0.Dynamics.GaloisConjugateBalance;D0.Dynamics.DarkSectorCoarseGrain`
+- theorem: `Dynamics.trace_evolution_unfolds_d0_geometry;Dynamics.det_T;Dynamics.det_T_pow;Dynamics.toral_volume_conservation_square;Dynamics.trace_T_pow_eq_signed_lucas;Dynamics.generationTrace_eq_three;Dynamics.abcdTrace_eq_four;Dynamics.memoryTorusTrace_eq_eleven;Dynamics.dark_sector_even_window_readout_zero`
+- cert: `vp_toral_automorphism_galois_balance.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Fixed finite integer time matrix T yields signed Lucas trace layers 3/4/11 determinant-square volume balance and exact even-window archive sign cancellation without external-data input.
+
+### D0-TORUS-CORE13-GEOMETRY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02/03`
+- module: `D0.Geometry.TorusCore13GeometryOrigin`
+- theorem: `Geometry.torus_shell_card_eq_three;Geometry.TorusParameter.outer_inner_ratio;Geometry.TorusParameter.major_minor_ratio;Geometry.TorusParameter.equator_ratio;Geometry.radial_hopping_phase_drift_commutator_01;Geometry.radial_hopping_phase_drift_noncommute`
+- cert: `vp_torus_core13_geometry_origin.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite torus shell owner proves three-shell carrier and noncommuting radial hopping versus phase drift without data input.
+
+### D0-TORUS-GENERATION-OVERLAP-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.GenerationOverlapResponseOrigin`
+- theorem: `Matter.torus_shell_noncommutativity_forces_nonpermutation_overlap_source`
+- cert: `vp_generation_selector_origin.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Overlap origin is tied to torus shell noncommutativity while physical CKM entries remain downstream passport data.
+
+### D0-TORUS-GENERATION-SELECTOR-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.GenerationSelectorOrigin`
+- theorem: `Matter.torus_geometry_forces_generation_selector_noncommute`
+- cert: `vp_generation_selector_origin.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Generation selector noncommutativity is sourced from finite torus shell geometry rather than a detached fixture selector.
+
+### D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Bridge.OperatorOriginIndex`
+- theorem: `Bridge.nonabelian_completion_boundary`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Nonabelian completion remains outside bare archive operator.
+
+### D0-NO-GO-EDGE-STIFFNESS-SCALAR-LEAKAGE-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Geometry.EdgeStiffnessOrigin`
+- theorem: `Geometry.edge_projection_prevents_scalar_leakage`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Bare HP+PH can leak scalar diagonal without symmOffDiag projection.
+
+### D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveLaplacianPhaseNaturality`
+- theorem: `NO_GO_ARCHIVE_PHASE_LOCAL_UNIQUENESS`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Naturality alone does not uniquely fix the operator without further phase structure.
+
+### D0-GENERATION-RAYS-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Spectrum.GenerationSpectralRays`
+- theorem: `NO_GO_GENERATION_RAYS_UNDEFINED`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Bare K(9,11,13) spectral cluster generation route is no-go. Core generation index is instead D0-GEN-INDEX-001 via projective branch-defect rays.
+
+### D0-NO-GO-STRESS-SUITE-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `formal_core`
+- book: `BOOK_02/04/05/06/07`
+- module: `D0.NoGo.StressTestSuite`
+- theorem: `NoGo.no_go_rank_one_higgs_scalar_projector;NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed`
+- cert: `vp_no_go_stress_test_suite.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Negative-control suite blocks rank-one Higgs scalar projectors isolated one-phason generation or baryon closure and Euclidean signature export.
+
+### D0-PHASE-TOWER-002
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Combinatorics.InfinitePhaseTower`
+- theorem: `capacity_recursion_total;forced_terminal_window_all;current_recursion_stabilizes_at_shell_two`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Formal tower exists but current terminal recursion stabilizes; direct Einstein tower is not derived here.
+
+### D0-SRC-NOGO-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `formal_core`
+- book: `BOOK_04/05`
+- module: `D0.Matter.NuclearShellContactSRC`
+- theorem: `Matter.mass_number_alone_cannot_determine_src_contact;Matter.neutron_excess_alone_cannot_determine_src_contact`
+- cert: `vp_nuclear_shell_contact_src.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: A-only and N/Z-only SRC scalar promotion fails on the finite Ca/Fe shell-contact witness.
+
+
+## Domain: frontier
+
+### D0-CVFT-F4
+
+- type: `frontier`
+- release_status: `CERT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_02/05`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open.
+
+### D0-CVFT-F7
+
+- type: `frontier`
+- release_status: `CERT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof.
+
+### D0-CVFT-F8
+
+- type: `frontier`
+- release_status: `CERT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure.
+
+### D0-CVFT-F5
+
+- type: `frontier`
+- release_status: `EMPIRICAL-PASSPORT-CANDIDATE`
+- domain: `frontier`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: IceCube dynamic feedback is an external passport candidate until data manifest response and frozen operator are pinned.
+
+### D0-CVFT-F6
+
+- type: `frontier`
+- release_status: `LOWER-BOUND-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/07`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem.
+
+### D0-CVFT-F3
+
+- type: `frontier`
+- release_status: `OPERATOR-SCAFFOLD-CERTIFIED`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_baryon_s3_scaffold.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open.
+
+### D0-CVFT-F1
+
+- type: `frontier`
+- release_status: `PROOF-OBLIGATION-EXPOSED`
+- domain: `frontier`
+- book: `BOOK_02/04/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion.
+
+### D0-CVFT-001B
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/06/07/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Sector projection package points to CVFT-F1 through CVFT-F8 and may not close matter gravity cosmology horizon gauge or empirical passport rows automatically.
+
+### D0-CVFT-F3B
+
+- type: `frontier`
+- release_status: `SPIN-FLAVOUR-TRANSFER-CERTIFIED`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_baryon_spin_flavour_40_56.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded.
+
+### D0-CVFT-F2
+
+- type: `frontier`
+- release_status: `THEOREM-TARGET-SHARPENED`
+- domain: `frontier`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen.
+
+
+## Domain: gauge_bridge
+
+### D0-GAUGE-YANG-MILLS-KILLING-POSITIVITY-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTION`
+- domain: `gauge_bridge`
+- book: `BOOK_08`
+- module: `D0.Gauge.YangMillsKillingPositivity`
+- theorem: `Gauge.discreteYangMillsAction_nonnegative_of_killing_nonpos`
+- cert: `none`
+- assumptions: `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Yang-Mills positivity follows from assumed negative semidefinite Killing form.
+
+### D0-GAUGE-MATTER-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `gauge_bridge`
+- book: `BOOK_02/04`
+- module: `D0.Topology.BoundaryBoundary`
+- theorem: `boundary_boundary_zero`
+- cert: `vp_v1132_gauge_matter_ward_anomaly.py`
+- assumptions: `ASSUMP-HST-EXTERNAL`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Boundary skeleton conditional on declared incidence pair.
+
+### D0-GAUGE-MATRIX-REP-TRANSFORM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_05/06`
+- module: `D0.Gauge.MatrixRepGaugeTransform`
+- theorem: `Gauge.gaugeTransformFinite_well_typed;Gauge.discreteMaurerCartan_well_typed;Gauge.matrixRepCurvature_well_typed;Gauge.gaugeTransformFinite_preserves_skew_of_orthogonal;Gauge.matrixRepCurvature_preserves_skew;Gauge.matrix_rep_yang_mills_action_nonnegative_of_skew`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Finite matrix-representation Yang-Mills layer is closed without asserting abstract graded Bianchi.
+
+### D0-GAUGE-MATTER-002
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_02/04`
+- module: `D0.Gauge.AnomalySums`
+- theorem: `grav_U1_anomaly_sum;U1_cubic_anomaly_sum;SU2_SU2_U1_anomaly_sum;SU3_SU3_U1_anomaly_sum`
+- cert: `vp_v1132_gauge_matter_ward_anomaly.py`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Exact rational one-generation anomaly sums.
+
+### D0-GAUGE-NONABELIAN-DISCRETE-CURVATURE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_08`
+- module: `D0.Gauge.NonAbelianDiscreteCurvature`
+- theorem: `Gauge.spatialCommutator_preserves_skew;Gauge.spatialWedge_preserves_skew;Gauge.nonabelian_curvature_preserves_skew;Gauge.nonabelian_discrete_curvature_boundary`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Nonabelian curvature package preserves the skew sector after adding the wedge layer.
+
+### D0-GAUGE-WILSON-LINK-COVARIANCE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_05/06`
+- module: `D0.Gauge.WilsonLinkGaugeCovariance`
+- theorem: `Gauge.wilson_loop_covariance`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Finite gauge covariance is closed on group-valued Wilson links by path rewriting and inverse cancellation.
+
+### D0-GRADED-BIANCHI-EXACT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_05/06`
+- module: `D0.Gauge.GradedBianchiIdentity`
+- theorem: `Topology.graded_nilpotency;Topology.discrete_exact_bianchi;Topology.graded_bianchi_exact;Gauge.abelian_bianchi_exact;Gauge.graded_bianchi_exact`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Bianchi is exact on a graded incidence complex by boundary nilpotency.
+
+### D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_04`
+- module: `D0.Matter.HiggsScalarProjectorConstructive`
+- theorem: `Matter.commutes_XZ_forces_scalar_matrix;Matter.nonzero_gauge_idempotent_eq_identity;Matter.rank1_scalar_projector_breaks_su2_gauge_compatibility;Matter.rank2_scalar_projector_exists;Matter.minimal_positive_scalar_projector_rank_two;Matter.minimal_positive_scalar_projector_unique;Matter.higgs_yukawa_core_promotion_valid`
+- cert: `vp_higgs_scalar_projector_constructive.py`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Frozen rational SU2 doublet compatibility forces the unique nonzero idempotent scalar projector to be identity trace-rank two without external scalar constants.
+
+### D0-MATTER-REP-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_04`
+- module: `D0.Matter.GenerationMultiplicity`
+- theorem: `Matter.rep_with_generations_card;Matter.generation_index_does_not_change_gauge_charge;Matter.matter_rep_generation_multiplicity_three`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Matter generation multiplicity is exactly three.
+
+### D0-OPERATOR-GAUGE-CURVATURE-ORIGIN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_08`
+- module: `D0.Matter.GaugeCurvatureOrigin`
+- theorem: `Algebra.commutator_self_zero;Algebra.commutator_skew_of_skew;Algebra.minus_trace_square_nonnegative;Matter.gauge_curvature_skew;Matter.abelian_curvature_annihilates_self_interaction;Matter.gauge_action_positive_from_origin;Bridge.gauge_curvature_origin_closed`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: Linear/abelian gauge curvature origin closed from archive commutators.
+
+### D0-GAUGE-BIANCHI-GRADED-DEPRECATED-001
+
+- type: `deprecated`
+- release_status: `DEPRECATED`
+- domain: `gauge_bridge`
+- book: `BOOK_05/06`
+- module: `D0.Gauge.MatrixRepGaugeTransform`
+- theorem: `Gauge.exact_bianchi_identity_replaced_by_graded_incidence_closure`
+- cert: `none`
+- assumptions: `none`
+- scope: Deprecated or historical row; not a live promotion path.
+- notes: Replaced by D0-GRADED-BIANCHI-EXACT-001; exact Bianchi is closed on the graded incidence complex.
+
+### D0-GAUGE-BIANCHI-RESIDUAL-BOUNDARY-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `gauge_bridge`
+- book: `BOOK_08`
+- module: `D0.Gauge.BianchiResidual`
+- theorem: `Gauge.residual_expands_by_definitions;Gauge.exact_residual_graph_anomaly_boundary`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Residual expansion is exact by definition; flat ungraded residual is NO-GO while graded incidence Bianchi is closed.
+
+### D0-NO-GO-ABSTRACT-LIERING-FINITE-TRANSFORM-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `gauge_bridge`
+- book: `BOOK_05/06`
+- module: `D0.Gauge.MatrixRepGaugeTransform`
+- theorem: `Gauge.abstract_lieRing_finite_transform_requires_associative_representation`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Finite transform cannot be stated in bare abstract LieRing form without an associative matrix representation.
+
+### D0-NO-GO-FLAT-TENSOR-NONABELIAN-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `gauge_bridge`
+- book: `BOOK_08`
+- module: `D0.Gauge.FlatTensorNoGo`
+- theorem: `Gauge.flat_tensor_of_two_skew_is_symmetric;Gauge.naive_flat_tensor_nonabelian_boundary`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Naive flat tensor of two skew sectors is symmetric and leaves the skew/vector sector.
+
+### D0-NO-GO-NAIVE-LOCAL-GAUGE-COVARIANCE-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `gauge_bridge`
+- book: `BOOK_05/06`
+- module: `D0.Gauge.WilsonLinkGaugeCovariance`
+- theorem: `Gauge.naive_local_gauge_covariance_counterexample_fin3`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Old naive flat matrix local transform has a concrete Fin 3 counterexample.
+
+### D0-NO-GO-UNGRADED-BIANCHI-RESIDUAL-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `gauge_bridge`
+- book: `BOOK_05/06`
+- module: `D0.Gauge.GradedBianchiIdentity`
+- theorem: `Gauge.ungraded_bianchi_residual_counterexample_fin2`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Flat ungraded commutator graph has a concrete Fin 2 residual counterexample.
+
+
+## Domain: interpretation_spine
+
+### D0-INTERPRETATION-SPINE-001
+
+- type: `bridge`
+- release_status: `CORE_BRIDGE_SPLIT`
+- domain: `interpretation_spine`
+- book: `BOOK_00/08`
+- module: `D0.Bridge.InterpretationSpine`
+- theorem: `Bridge.interpretation_package_keeps_core_dimensionless;Bridge.interpretation_package_does_not_mutate_core_shape;Bridge.si_readout_uses_single_external_calibration;Bridge.interpretation_spine_has_single_si_readout;Bridge.empirical_comparison_is_after_si_readout;Bridge.interpretation_package_rg_readout_coherent;Bridge.interpretation_package_spectral_action_readout_coherent;Bridge.interpretation_package_cosmology_shape_readout_coherent;Bridge.interpretation_package_gauge_readout_coherent;Bridge.interpretation_package_passports_external;Bridge.interpretation_spine_coherence_contract;Bridge.interpretation_package_from_existing_anchors_coherent`
+- cert: `none`
+- assumptions: `none`
+- scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
+- notes: Unified dimensionless interpretation spine: RG/spectral/cosmology/gauge coherence is a typed readout package assembled from existing anchors and SI readout uses one ExternalSICalibration without mutating core shape.
+
+
+## Domain: rg
+
+### D0-LEAN-BRIDGE-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `rg`
+- book: `Lean formalization`
+- module: `D0.TheoremLedger.ReleaseStatus`
+- theorem: `lean_bridge_assumptions_explicit`
+- cert: `none`
+- assumptions: `ASSUMP-HURWITZ-GOLDEN;ASSUMP-RG-SMOOTH-INTERP;ASSUMP-LORENTZ-MACRO;ASSUMP-SMOOTH-COVARIANCE;ASSUMP-SMOOTH-HEATTRACE;ASSUMP-HST-EXTERNAL`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Bridge assumptions isolated from core.
+
+### D0-RG-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `rg`
+- book: `D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE`
+- module: `D0.Bridge.PhiDiscreteRG`
+- theorem: `phi_rg_bridge_conditional`
+- cert: `vp_v1145_operator_bridge_triple.py`
+- assumptions: `ASSUMP-RG-SMOOTH-INTERP`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Scale algebra plus explicit smooth interpolation assumption.
+
+### D0-ARCHIVE-LAPLACIAN-RG
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `rg`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveLaplacianRG`
+- theorem: `archiveRGPhaseProjection_surjective;rg_curvature_zero_iff_exact_compatibility;rg_operator_curvature_zero_iff_renormalized_compatibility;rg_flat_curvature_zero_iff_exact_flat_compatibility;exact_projective_compatibility_fails`
+- cert: `vp_archive_laplacian_rg_flow.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Nearest-neighbor phase Laplacian is not strictly projective; RG residual/curvature obstruction is tracked by scale-fit cert.
+
+
+## Domain: si_calibration
+
+### D0-BRIDGE-SI-CALIBRATION-BOUNDARY-001
+
+- type: `bridge`
+- release_status: `BRIDGE-CALIBRATION`
+- domain: `si_calibration`
+- book: `BOOK_08`
+- module: `D0.Bridge.SICalibrationBoundary`
+- theorem: `Bridge.c0_c2_scale_action_values_only;Bridge.c0_c2_cannot_alter_a0_a2_trace_shapes;Bridge.si_calibration_belongs_to_bridge_calibration_status;Bridge.si_calibration_cannot_promote_to_core_closed`
+- cert: `vp_si_calibration_boundary.py`
+- assumptions: `none`
+- scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
+- notes: c0/c2/G_N/H0 are bridge calibration symbols and cannot mutate core a0/a2 trace shapes.
+
+### D0-BRIDGE-SI-CALIBRATION-CLOSURE-001
+
+- type: `bridge`
+- release_status: `BRIDGE-CALIBRATION`
+- domain: `si_calibration`
+- book: `BOOK_08`
+- module: `D0.Bridge.SICalibrationClosure`
+- theorem: `Bridge.core_traces_are_dimensionless;Bridge.calibration_changes_only_action_scaling;Bridge.calibration_changes_units_not_core_shape;Bridge.no_si_observable_without_external_calibration;Bridge.h0_gn_lambda_are_not_core_observables;Bridge.si_observables_require_external_calibration`
+- cert: `none`
+- assumptions: `none`
+- scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
+- notes: D0 core computes dimensionless traces; H0/GN/Lambda require an explicit ExternalSICalibration object.
+
+
+## Domain: smooth_geometry
+
+### D0-SMOOTH-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `smooth_geometry`
+- book: `D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE`
+- module: `D0.Bridge.SmoothMetricBridge`
+- theorem: `smooth_metric_bridge_conditional`
+- cert: `vp_v1145_operator_bridge_triple.py`
+- assumptions: `ASSUMP-SMOOTH-COVARIANCE;ASSUMP-SMOOTH-HEATTRACE`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Smooth geometry remains conditional.
+
+### D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001
+
+- type: `bridge`
+- release_status: `CORE_BRIDGE_SPLIT`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: `D0.Gravity.MacroEinsteinInterface`
+- theorem: `Gravity.spectral_a2_eh_bridge_closed;Gravity.finite_gravity_macro_constraints_closed;Gravity.macro_tension_einstein_hilbert_interface_closed;Gravity.finite_gravity_witness_yields_einstein_hilbert_interface`
+- cert: `vp_macro_einstein_interface.py`
+- assumptions: `none`
+- scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
+- notes: Finite witness yields symmetric divergence-free second-order TT-compatible macro interface; no continuum Einstein-Hilbert primitive is imported into core.
+
+### D0-GEOM-SPECTRAL-ACTION-LADDER-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_08`
+- module: `D0.Geometry.SpectralActionLadder`
+- theorem: `spectral_action_a0_is_volume_proxy;spectral_action_a2_is_eh_proxy;higher_curvature_floor_bound_basic;trace_power_bound;a0_is_volume_proxy;a2_is_eh_proxy;higher_powers_floor_bounded`
+- cert: `vp_spectral_action_eh_coefficient.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: Finite spectral-action ladder and bounds; no continuum EH promotion.
+
+
+## Domain: spectral_action
+
+### D0-ARCHIVE-HEATTRACE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `spectral_action`
+- book: `BOOK_07/08`
+- module: `D0.Geometry.ArchiveHeatTrace`
+- theorem: `heat_trace_positive;heat_trace_projection_compatible`
+- cert: `vp_archive_heat_trace_weyl_dimension.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Lean structural heat trace skeleton plus Weyl dimension cert.
+
+### D0-SPECTRAL-ACTION-ADMISS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `spectral_action`
+- book: `BOOK_07`
+- module: `D0.Geometry.SpectralActionAdmissibility`
+- theorem: `d0_archive_satisfies_structural_admissibility`
+- cert: `vp_spectral_action_eh_coefficient.py;vp_spectral_action_expansion_stability.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: D0-side admissibility and coefficient/cutoff certs; external analytic theorem not internalized.
+
+### D0-GEOM-HEAT-TRACE-A2-DECOMP-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `spectral_action`
+- book: `BOOK_08`
+- module: `D0.Geometry.HeatTraceA2Decomposition`
+- theorem: `heat_trace_sq_exact_decomposition;discrete_eh_proxy_nonnegative;offdiag_double_count_guard;double_count_factor_guard`
+- cert: `vp_spectral_action_eh_coefficient.py`
+- assumptions: `none`
+- scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
+- notes: Heat trace exact decomposition with factor 1/2 and double-count guard.
+
+### D0-GEOM-HIGHER-CURVATURE-FLOOR-BOUND-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `spectral_action`
+- book: `BOOK_08`
+- module: `D0.Geometry.HigherCurvatureSuppression`
+- theorem: `Geometry.HigherCurvatureSuppression.matrix_power_combinatorial_bound;Geometry.HigherCurvatureSuppression.conformal_laplacian_entry_bound;Geometry.HigherCurvatureSuppression.higher_curvature_suppression_by_floor`
+- cert: `vp_spectral_action_eh_coefficient.py`
+- assumptions: `none`
+- scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
+- notes: Higher curvature trace powers are bounded by the conformal density floor estimate.
+
+### D0-SOLENOID-GRAVITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `spectral_action`
+- book: `BOOK_07`
+- module: `D0.Geometry.NonCommutativeSolenoidGravity`
+- theorem: `Geometry.d0_heat_trace_admits_solenoid_spectral_triple_approx;Geometry.finite_spin2_operator_is_tt_sector_of_solenoid_spectral_geometry;Geometry.wtt4_is_compatible_with_noncommutative_solenoid_geometry`
+- cert: `vp_noncommutative_solenoid_gravity.py`
+- assumptions: `none`
+- scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
+- notes: Spectral triple heat trace and TT sector are compatible with noncommutative solenoid geometry.

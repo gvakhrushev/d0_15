@@ -1,0 +1,4 @@
+case,R,support_min,support_max,support_size,selected,minima,score_selected,score_alternative,full_support_checked,pass
+electroweak_depth,35,0,70,71,35,[35],0,1,71,True
+proton_readout,306,0,612,613,306,[306],0,1,613,True
+beta_unlock_depth,19,0,38,39,19,[19],0,1,39,True

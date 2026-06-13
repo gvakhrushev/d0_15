@@ -1,0 +1,50 @@
+{
+  "dataset_id": "icecube_tracks_dr2",
+  "source_name": "IceCube tracks DR2 public release",
+  "source_url": "https://icecube.wisc.edu/data-releases/",
+  "download_url": "",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/tracks_dr2",
+  "sha256": "DR2_readme=b9fb11dc8136cec79541208efebf1a0684628c70fed76b6d40c8e6d3d691f802;IC86_XI_exp=e439104352f5a1bbd8191f6d4cd076779d2e5de8aef5725db002b4b466fe03aa;IC86_X_effectiveArea=7f4f44a5aefec5a94e9726be6c9fae7c85a35bea04abaa264691669f8744e64a",
+  "downloaded_at_utc": "",
+  "data_fields_required": [
+    "event_count",
+    "energy_field",
+    "direction_fields",
+    "effective_area_or_response",
+    "sha256"
+  ],
+  "data_fields_found": [
+    "event_count",
+    "effective_area_or_response",
+    "sha256"
+  ],
+  "license_or_policy_note": "Use IceCube public-data policy and cite release metadata.",
+  "citation_note": "Pin the exact IceCube track-release URL/date in a completed manifest.",
+  "status": "PARTIAL",
+  "files": [
+    {
+      "label": "DR2_readme",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13635267",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/tracks_dr2/DR2_readme.txt",
+      "sha256": "b9fb11dc8136cec79541208efebf1a0684628c70fed76b6d40c8e6d3d691f802"
+    },
+    {
+      "label": "IC86_XI_exp",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13597941",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/tracks_dr2/IC86_XI_exp.tab",
+      "sha256": "e439104352f5a1bbd8191f6d4cd076779d2e5de8aef5725db002b4b466fe03aa"
+    },
+    {
+      "label": "IC86_X_effectiveArea",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13597927",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/tracks_dr2/IC86_effectiveArea.tab",
+      "sha256": "7f4f44a5aefec5a94e9726be6c9fae7c85a35bea04abaa264691669f8744e64a"
+    }
+  ],
+  "note": "Downloaded public IceTracks-DR2 response/exposure files; event energy-direction parsing remains partial.",
+  "dataset_name": "IceTracks-DR2 2008-2022 track-like events",
+  "source_url_or_local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/tracks_dr2",
+  "event_count": "response/exposure tables downloaded; event-list parsing partial",
+  "energy_field": "",
+  "direction_fields": []
+}

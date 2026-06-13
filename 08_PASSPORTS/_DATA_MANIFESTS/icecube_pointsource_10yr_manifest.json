@@ -1,0 +1,20 @@
+{
+  "dataset_id": "icecube_pointsource_10yr",
+  "source_name": "IceCube 10-year point-source public release",
+  "source_url": "https://icecube.wisc.edu/data-releases/",
+  "download_url": "",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/pointsource_10yr",
+  "sha256": "",
+  "downloaded_at_utc": "",
+  "data_fields_required": [
+    "event_count",
+    "energy_field",
+    "direction_fields",
+    "effective_area_or_response",
+    "sha256"
+  ],
+  "data_fields_found": [],
+  "license_or_policy_note": "Use IceCube public-data policy and cite release metadata.",
+  "citation_note": "Pin the exact IceCube point-source release URL/date in a completed manifest.",
+  "status": "MISSING"
+}

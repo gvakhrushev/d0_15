@@ -1,0 +1,47 @@
+[
+  {
+    "case": "electroweak_depth",
+    "R": 35,
+    "support_min": 0,
+    "support_max": 70,
+    "support_size": 71,
+    "selected": 35,
+    "minima": [
+      35
+    ],
+    "score_selected": 0,
+    "score_alternative": 1,
+    "full_support_checked": 71,
+    "pass": true
+  },
+  {
+    "case": "proton_readout",
+    "R": 306,
+    "support_min": 0,
+    "support_max": 612,
+    "support_size": 613,
+    "selected": 306,
+    "minima": [
+      306
+    ],
+    "score_selected": 0,
+    "score_alternative": 1,
+    "full_support_checked": 613,
+    "pass": true
+  },
+  {
+    "case": "beta_unlock_depth",
+    "R": 19,
+    "support_min": 0,
+    "support_max": 38,
+    "support_size": 39,
+    "selected": 19,
+    "minima": [
+      19
+    ],
+    "score_selected": 0,
+    "score_alternative": 1,
+    "full_support_checked": 39,
+    "pass": true
+  }
+]

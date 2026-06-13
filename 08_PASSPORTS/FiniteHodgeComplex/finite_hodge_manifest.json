@@ -1,0 +1,25 @@
+{
+  "passport_id": "D0-TOPO-FINITE-HODGE-001",
+  "title": "Finite Graded Incidence Complex, Hodge Laplacian and Heat Trace Core",
+  "inputs": ["GradedIncidenceComplex", "FiniteCochainComplex", "boundary maps", "FiniteHodgeLaplacian", "FiniteHeatTrace"],
+  "theorems": [
+    "D0-TOPO-FINITE-HODGE-001 — finite cochain complex with boundary_squared_zero",
+    "D0-TOPO-FINITE-HODGE-002 — finite Hodge Laplacian (Delta_p) defined and self-adjoint positive on finite carrier",
+    "D0-TOPO-FINITE-HODGE-003 — finite heat trace Theta_p(u) depends only on Laplacian spectrum"
+  ],
+  "cert": "05_CERTS/vp_finite_hodge_complex_core.py",
+  "status": "PASS_FINITE_HODGE_COMPLEX_CORE",
+  "book_update": "Book 02: Finite cochain complex and Hodge Laplacian added as common algebraic carrier (no continuum curvature tensors).",
+  "negative_controls": [
+    "continuum R_ijkl master equation rejected as core",
+    "cross-sector lambda_c/lambda_r formulas firewalled"
+  ],
+  "rejections": [
+    "FAIL_CONTINUUM_MASTER_EQUATION_CORE_AUDIT",
+    "FAIL_HIGGS_VEV_BAO_CROSS_SECTOR_FORMULA",
+    "FAIL_NEUTRINO_MASS_BAO_CROSS_SECTOR_FORMULA",
+    "FAIL_JARLSKOG_PI0_POSTHOC_FORMULA",
+    "SKIP_TSIRELSON_REQUIRES_CSTAR_CLIFFORD_CERT",
+    "SKIP_BOOK09_SYNTHESIS_NOT_ALLOWED"
+  ]
+}

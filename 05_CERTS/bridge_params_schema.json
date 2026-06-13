@@ -1,0 +1,43 @@
+{
+  "allowed_empirical_bridge_params": {
+    "A_amp": {
+      "core_mutation_allowed": false,
+      "type": "number"
+    },
+    "H0": {
+      "core_mutation_allowed": false,
+      "type": "number"
+    },
+    "Omega_m": {
+      "core_mutation_allowed": false,
+      "type": "number"
+    },
+    "gamma": {
+      "core_mutation_allowed": false,
+      "type": "number"
+    },
+    "z_pivot": {
+      "core_mutation_allowed": false,
+      "type": "number"
+    }
+  },
+  "description": "External empirical bridge parameters may calibrate the locked D0 core shape but cannot mutate core parameters.",
+  "locked_core_params": {
+    "L_pinv": {
+      "optimizer_mutation_allowed": false
+    },
+    "core_shape": {
+      "optimizer_mutation_allowed": false
+    },
+    "delta0": {
+      "optimizer_mutation_allowed": false
+    },
+    "eta": {
+      "optimizer_mutation_allowed": false
+    },
+    "rho_floor": {
+      "optimizer_mutation_allowed": false
+    }
+  },
+  "status": "EMPIRICAL_PASSPORT"
+}

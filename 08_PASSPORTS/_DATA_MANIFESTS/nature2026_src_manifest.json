@@ -1,0 +1,38 @@
+{
+  "dataset_id": "nature2026_src",
+  "source_name": "Nature 2026 SRC source-data release",
+  "source_url": "https://www.nature.com/articles/s41586-026-10616-2",
+  "download_url": "",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/nature2026_src/source_data",
+  "sha256": "source_data_fig2=1cfb9b46c73e479b6e228734cfaffb606fd8c5d706f5bedd7652994a284928ee;source_data_fig3=97dbb7206f445f38849fdc46a18e2a0d6d6b504b75dd782a364c959456ca734f",
+  "downloaded_at_utc": "2026-06-05T20:48:37Z",
+  "data_fields_required": [
+    "article",
+    "source_data_fig2",
+    "source_data_fig3",
+    "sha256"
+  ],
+  "data_fields_found": [
+    "article",
+    "source_data_fig2",
+    "source_data_fig3",
+    "sha256"
+  ],
+  "license_or_policy_note": "Use only public source-data release or locally pinned copy.",
+  "citation_note": "Cite the Nature article/source-data record used in the manifest.",
+  "status": "READY",
+  "files": [
+    {
+      "label": "source_data_fig2",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-10616-2/MediaObjects/41586_2026_10616_MOESM2_ESM.xlsx",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/nature2026_src/source_data_fig2.xlsx",
+      "sha256": "1cfb9b46c73e479b6e228734cfaffb606fd8c5d706f5bedd7652994a284928ee"
+    },
+    {
+      "label": "source_data_fig3",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-10616-2/MediaObjects/41586_2026_10616_MOESM3_ESM.xlsx",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/nature2026_src/source_data_fig3.xlsx",
+      "sha256": "97dbb7206f445f38849fdc46a18e2a0d6d6b504b75dd782a364c959456ca734f"
+    }
+  ]
+}

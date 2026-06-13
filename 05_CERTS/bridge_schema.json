@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "allowed_to_mutate": {
+      "items": {
+        "enum": [
+          "unit_scale",
+          "action_amplitude"
+        ]
+      },
+      "type": "array"
+    },
+    "bridge_only_symbols": {
+      "items": {
+        "enum": [
+          "G_N",
+          "H0",
+          "c0",
+          "c2"
+        ]
+      },
+      "type": "array"
+    },
+    "coefficients": {
+      "additionalProperties": false,
+      "properties": {
+        "c0": {
+          "type": "number"
+        },
+        "c2": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "c0",
+        "c2"
+      ],
+      "type": "object"
+    },
+    "core_shape_mutation_allowed": {
+      "const": false
+    },
+    "status": {
+      "const": "BRIDGE_CALIBRATION"
+    }
+  },
+  "required": [
+    "status",
+    "coefficients",
+    "bridge_only_symbols",
+    "allowed_to_mutate",
+    "core_shape_mutation_allowed"
+  ],
+  "title": "D0 SI bridge calibration boundary",
+  "type": "object"
+}

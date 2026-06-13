@@ -1,0 +1,10 @@
+{
+  "status": "PASS_PRESSURE_CAPACITY_BALANCE",
+  "tokens": [
+    "PASS_PRESSURE_CAPACITY_BALANCE_REGIMES",
+    "PASS_HORIZON_SATURATION_FEEDBACK_LIMIT",
+    "PASS_A4_TERMINAL_FEEDBACK_SATURATION"
+  ],
+  "law": "a_ddot_over_a = kappa_D * (P_fb - P_cap)",
+  "timestamp": "2026-06-07T01:51:11.901579+00:00"
+}

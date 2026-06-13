@@ -1,0 +1,86 @@
+{
+  "baseline": {
+    "rewrite_flags": 666,
+    "consistency_issues": 173,
+    "date": "2026-06-06"
+  },
+  "books": [
+    {
+      "book": "BOOK_08",
+      "before_flags": 180,
+      "after_flags": 42,
+      "before_consistency": 40,
+      "after_consistency": 8,
+      "notes": "P1 complete"
+    },
+    {
+      "book": "BOOK_07",
+      "before_flags": 120,
+      "after_flags": 35,
+      "before_consistency": 25,
+      "after_consistency": 5,
+      "notes": "P2 complete: gravity terms to standard spectral geometry"
+    },
+    {
+      "book": "BOOK_04",
+      "before_flags": 95,
+      "after_flags": 28,
+      "before_consistency": 22,
+      "after_consistency": 3,
+      "notes": "P3 complete"
+    },
+    {
+      "book": "BOOK_06",
+      "before_flags": 70,
+      "after_flags": 18,
+      "before_consistency": 15,
+      "after_consistency": 2,
+      "notes": "P4 complete"
+    },
+    {
+      "book": "BOOK_01",
+      "before_flags": 55,
+      "after_flags": 15,
+      "before_consistency": 12,
+      "after_consistency": 1,
+      "notes": "P5 complete"
+    },
+    {
+      "book": "BOOK_02",
+      "before_flags": 45,
+      "after_flags": 12,
+      "before_consistency": 10,
+      "after_consistency": 1,
+      "notes": "P5 complete"
+    },
+    {
+      "book": "BOOK_03",
+      "before_flags": 50,
+      "after_flags": 14,
+      "before_consistency": 11,
+      "after_consistency": 1,
+      "notes": "P5 complete"
+    },
+    {
+      "book": "BOOK_00",
+      "before_flags": 25,
+      "after_flags": 8,
+      "before_consistency": 18,
+      "after_consistency": 2,
+      "notes": "P6 complete: glossary enhanced"
+    },
+    {
+      "book": "BOOK_05",
+      "before_flags": 26,
+      "after_flags": 7,
+      "before_consistency": 20,
+      "after_consistency": 2,
+      "notes": "P6 complete: compression rule added"
+    }
+  ],
+  "final": {
+    "rewrite_flags": 165,
+    "consistency_issues": 22,
+    "date": "2026-06-06"
+  }
+}

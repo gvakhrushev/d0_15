@@ -1,0 +1,15 @@
+{
+  "passport_id": "D0-BH-CAP-001",
+  "title": "Finite Horizon Capacity A/4 Witness",
+  "theorems": [
+    "D0-BH-CAP-001 — Finite horizon capacity saturation theorem",
+    "D0-BH-CAP-002 — Terminal archive quotient theorem",
+    "D0-BH-CAP-003 — A/4 entropy from ABCD boundary cell capacity",
+    "D0-BH-CAP-NOGO-001 — Singularity-as-information-deletion rejected"
+  ],
+  "cert": "05_CERTS/vp_black_hole_capacity_a4_witness.py",
+  "inputs": ["ABCD terminal alphabet", "DSS echo-lattice closure (D0-GRAV-DSS)", "Book 06 active/archive quotient", "Finite boundary shell capacity"],
+  "status": "PASS_BLACK_HOLE_FINITE_CAPACITY_A4_WITNESS",
+  "a4_source": "ABCD four roles per saturated boundary cell (N_∂ = A / a0), S = N_∂ / 4 — not imported normalization",
+  "no_deletion": "Active information inaccessible via terminal quotient; total finite dimension/trace preserved in archive"
+}

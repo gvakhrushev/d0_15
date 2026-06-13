@@ -1,0 +1,7 @@
+{
+  "mode": "synthetic",
+  "status": "PASS_NUCLEAR_SHELL_CONTACT_SRC_SYNTHETIC",
+  "manifest": "08_PASSPORTS/NuclearSRC/nature2026_src_manifest.json",
+  "results_csv": "08_PASSPORTS/NuclearSRC/nature2026_src_results.csv",
+  "missing": []
+}

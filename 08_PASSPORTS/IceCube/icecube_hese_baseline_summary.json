@@ -1,0 +1,29 @@
+{
+  "status": "FAIL_ICECUBE_HESE_D0_BASELINE_COMPARISON",
+  "events_used": 164,
+  "bins_log10_energy_edges": [
+    19719.760000000002,
+    123149.84799020318,
+    769070.4684037813,
+    4802843.000000001
+  ],
+  "high_bin_obs": 4,
+  "mu_null_high": 8.642857157412777,
+  "mu_d0_high": 8.637121199291567,
+  "avg_damping_high": 0.9993363354251099,
+  "poisson_loglik_null": -3.1939781170983,
+  "poisson_loglik_d0": -3.19089769856793,
+  "delta_loglik": 0.0030804185303701104,
+  "chi2_null_high": 2.4940968237165495,
+  "chi2_d0_high": 2.489590283702742,
+  "delta_chi2": -0.0045065400138075695,
+  "topology_ratio_metric": 0.07524613220815751,
+  "baseline_used": "empirical_no_deco_energy_shape_from_low_mid_extrap",
+  "d0_curve": "frozen from vp_neutrino_phason_decoherence_passport --mode hese12",
+  "forbidden": [
+    "free damping",
+    "posthoc cuts",
+    "event deletion after result"
+  ],
+  "timestamp": "2026-06-06T23:37:41.541407+00:00"
+}

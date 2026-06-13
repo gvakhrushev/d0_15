@@ -1,0 +1,17 @@
+{
+  "mode": "one_global_scale",
+  "status": "FAIL_ARCHIVE_PHASON_HALO_SPARC_ONE_GLOBAL_SCALE",
+  "rows_used": 3375,
+  "galaxies_used": 175,
+  "median_shape_correlation": -0.3104248127670707,
+  "positive_shape_correlations": 65,
+  "shape_correlations_count": 163,
+  "global_gamma": 0.01250849213199194,
+  "rmse_d0_global_scale": 10697.27913198271,
+  "rmse_baryon_only_residual": 10726.536447618044,
+  "forbidden": [
+    "per-galaxy halo tuning",
+    "per-galaxy scale radius",
+    "post-hoc MOND-like acceleration fitting"
+  ]
+}

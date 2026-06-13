@@ -1,0 +1,30 @@
+{
+  "result": "FAIL_DESI_BAO_SDE_REAL_DATA",
+  "physical_result": "FAIL_DESI_BAO_SDE_REAL_DATA",
+  "dataset": "DESI_DR2_BAO",
+  "manifest_status": "READY",
+  "events_or_bins_used": 3,
+  "frozen_roots": {
+    "lambda_c": 1.4209430584957905,
+    "lambda_r": 1.5790569415042095
+  },
+  "no_refit": true,
+  "sample_data": false,
+  "metrics": {
+    "chi2_d0": 463.0035,
+    "chi2_lcdm_baseline": 0.0,
+    "delta_chi2": 463.0035,
+    "rmse_d0": 0.188889,
+    "rmse_lcdm_baseline": 0.0,
+    "n_bins": 3
+  },
+  "negative_controls": {
+    "root_refit_attempt": "FORBIDDEN",
+    "shifted_window_control": "FORBIDDEN",
+    "constant_offset_control": "worse than frozen D0",
+    "randomized_root_control": "worse than frozen D0",
+    "lcdm_baseline": "reference"
+  },
+  "skip_reason": null,
+  "timestamp": "2026-06-06T16:56:14.611108+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "mode": "sparc",
+  "status": "SKIP_SPARC_ARCHIVE_PHASON_HALO_EXTERNAL_DATA_REQUIRED",
+  "manifest": "08_PASSPORTS/SPARC/sparc_archive_phason_halo_manifest.json",
+  "missing": [
+    "galaxy_id",
+    "radius",
+    "v_obs",
+    "v_gas",
+    "v_disk",
+    "v_bulge",
+    "sha256",
+    "status_READY"
+  ]
+}

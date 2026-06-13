@@ -1,0 +1,179 @@
+{
+  "status": "EXTERNAL_PASSPORT_SUMMARY",
+  "counters": {
+    "PASS": [
+      "Nuclear shell-contact SRC",
+      "LIGO merger mass defect - all catalog",
+      "LIGO merger mass defect - clean BBH",
+      "SPARC data ingest"
+    ],
+    "FAIL": [
+      "SPARC shape_only kernel",
+      "SPARC one_global_scale kernel"
+    ],
+    "SKIP": [
+      "IceCube HESE phason decoherence",
+      "CMB phason flip entropy",
+      "BAO S_DE phason flip (FAIL + diagnostics)",
+      "CKM holonomy external convention",
+      "Meson domain-wall PDG"
+    ],
+    "sparc_data_ingest_is_physics_pass": false
+  },
+  "rows": [
+    {
+      "Passport": "Nuclear shell-contact SRC",
+      "Dataset": "nature2026_src",
+      "Manifest": "08_PASSPORTS/NuclearSRC/nature2026_src_manifest.json",
+      "Hash": "c94f273c568e843e7ff3b8ba9fa9d8c427f972b0048ef84ae63b7ca68aaac1eb",
+      "Frozen D0 object": "same-shell proton-neutron contact selector",
+      "Baseline": "A-only / N-Z-only / density proxy",
+      "Metric": "source-data rank ordering",
+      "Result": "PASS_NUCLEAR_SHELL_CONTACT_SRC_NATURE2026",
+      "Notes": "Fe54/Ca48 integral=1.493, weighted_mean=1.4741",
+      "returncode": 0,
+      "stdout": "PASS_NUCLEAR_SHELL_CONTACT_SRC_NATURE2026\nCa48/Ca40 integral=1.097, weighted_mean=1.0927\nFe54/Ca48 integral=1.493, weighted_mean=1.4741",
+      "stderr": ""
+    },
+    {
+      "Passport": "LIGO merger mass defect - all catalog",
+      "Dataset": "gwosc_ligo_merger_mass_defect",
+      "Manifest": "08_PASSPORTS/GWOSC/gwosc_manifest.json",
+      "Hash": "fd7a6bc1912a5614a50ef0eb9e33b06ff1dbeb6e4fe681a219b72651fcef1dc9",
+      "Frozen D0 object": "finite merger mass-defect operator",
+      "Baseline": "mean loss / spin-only negative control",
+      "Metric": "RMSE on all complete catalog rows",
+      "Result": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT_ALL",
+      "Notes": "rmse_spin_only_negative_control: 0.011562",
+      "returncode": 0,
+      "stdout": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT_ALL\nevents_used: 276\nrmse_d0: 0.00966751\nrmse_mean_baseline: 0.0118123\nrmse_spin_only_negative_control: 0.011562",
+      "stderr": ""
+    },
+    {
+      "Passport": "LIGO merger mass defect - clean BBH",
+      "Dataset": "gwosc_ligo_merger_mass_defect",
+      "Manifest": "08_PASSPORTS/GWOSC/gwosc_manifest.json",
+      "Hash": "fd7a6bc1912a5614a50ef0eb9e33b06ff1dbeb6e4fe681a219b72651fcef1dc9",
+      "Frozen D0 object": "finite merger mass-defect operator",
+      "Baseline": "mean loss / spin-only negative control",
+      "Metric": "RMSE on clean BBH domain",
+      "Result": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT_CLEAN_BBH",
+      "Notes": "rmse_spin_only_negative_control: 0.00868605",
+      "returncode": 0,
+      "stdout": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT_CLEAN_BBH\nevents_used: 271\nrmse_d0: 0.00687416\nrmse_mean_baseline: 0.00898949\nrmse_spin_only_negative_control: 0.00868605",
+      "stderr": ""
+    },
+    {
+      "Passport": "SPARC data ingest",
+      "Dataset": "sparc_archive_phason_halo",
+      "Manifest": "08_PASSPORTS/SPARC/sparc_manifest.json",
+      "Hash": "dfbdbb678ce5ec986d70c6aeb7770bef581613fa160a5251bab92f0992dec4c6",
+      "Frozen D0 object": "SPARC mass-model data contract",
+      "Baseline": "manifest/hash/table parser",
+      "Metric": "rows and galaxies parsed",
+      "Result": "PASS_SPARC_DATA_INGEST",
+      "Notes": "galaxies_parsed: 175",
+      "returncode": 0,
+      "stdout": "PASS_SPARC_DATA_INGEST\nrows_parsed: 3391\ngalaxies_parsed: 175",
+      "stderr": ""
+    },
+    {
+      "Passport": "SPARC shape_only kernel",
+      "Dataset": "sparc_archive_phason_halo",
+      "Manifest": "08_PASSPORTS/SPARC/sparc_manifest.json",
+      "Hash": "dfbdbb678ce5ec986d70c6aeb7770bef581613fa160a5251bab92f0992dec4c6",
+      "Frozen D0 object": "naive inner-memory archive-phason kernel",
+      "Baseline": "baryon-only residual shape",
+      "Metric": "per-galaxy normalized shape correlation",
+      "Result": "FAIL_ARCHIVE_PHASON_HALO_SPARC_SHAPE_ONLY",
+      "Notes": "rmse_baryon_only_residual: 10726.5",
+      "returncode": 0,
+      "stdout": "FAIL_ARCHIVE_PHASON_HALO_SPARC_SHAPE_ONLY\nrows_used: 3375\nmedian_shape_correlation: -0.3104248127670707\nrmse_d0_global_scale: 10697.3\nrmse_baryon_only_residual: 10726.5",
+      "stderr": ""
+    },
+    {
+      "Passport": "SPARC one_global_scale kernel",
+      "Dataset": "sparc_archive_phason_halo",
+      "Manifest": "08_PASSPORTS/SPARC/sparc_manifest.json",
+      "Hash": "dfbdbb678ce5ec986d70c6aeb7770bef581613fa160a5251bab92f0992dec4c6",
+      "Frozen D0 object": "naive inner-memory archive-phason kernel with one global scale",
+      "Baseline": "baryon-only residual",
+      "Metric": "global RMSE reduction",
+      "Result": "FAIL_ARCHIVE_PHASON_HALO_SPARC_ONE_GLOBAL_SCALE",
+      "Notes": "rmse_baryon_only_residual: 10726.5",
+      "returncode": 0,
+      "stdout": "FAIL_ARCHIVE_PHASON_HALO_SPARC_ONE_GLOBAL_SCALE\nrows_used: 3375\nmedian_shape_correlation: -0.3104248127670707\nrmse_d0_global_scale: 10697.3\nrmse_baryon_only_residual: 10726.5",
+      "stderr": ""
+    },
+    {
+      "Passport": "IceCube HESE phason decoherence",
+      "Dataset": "icecube_hese12",
+      "Manifest": "08_PASSPORTS/IceCube/icecube_manifest.json",
+      "Hash": "8b3ebbc0a8ad6ea0551a12e4167194d8c161c26ccdbe1e3c3685fb29b44a2b26",
+      "Frozen D0 object": "Hurwitz phason decoherence kernel",
+      "Baseline": "no-decoherence baseline protocol",
+      "Metric": "HESE event curve generated; baseline statistic required",
+      "Result": "SKIP_NEUTRINO_PHASON_DECOHERENCE_BASELINE_REQUIRED",
+      "Notes": "baseline_ready: false",
+      "returncode": 0,
+      "stdout": "SKIP_NEUTRINO_PHASON_DECOHERENCE_BASELINE_REQUIRED\nevents_used: 164\ncurve_rows: 164\nbaseline_ready: false",
+      "stderr": ""
+    },
+    {
+      "Passport": "CMB phason flip entropy",
+      "Dataset": "planck_cmb_phason_flip_entropy",
+      "Manifest": "08_PASSPORTS/PlanckCMB/planck_manifest.json",
+      "Hash": "cc006d85b80b24cecff8656a5f359587de0e8b604cfea85277ec12c09af8e11f",
+      "Frozen D0 object": "phason-flip entropy operator",
+      "Baseline": "LambdaCDM-only residual null",
+      "Metric": "multipole entropy residual",
+      "Result": "SKIP_CMB_PHASON_FLIP_EXTERNAL_DATA_REQUIRED",
+      "Notes": "missing: cl_spectrum,mask_or_likelihood,multipole_range,sha256,status_READY",
+      "returncode": 0,
+      "stdout": "SKIP_CMB_PHASON_FLIP_EXTERNAL_DATA_REQUIRED\nmissing: cl_spectrum,mask_or_likelihood,multipole_range,sha256,status_READY",
+      "stderr": ""
+    },
+    {
+      "Passport": "BAO S_DE phason flip (FAIL + diagnostics)",
+      "Dataset": "desi_bao_sde_phason_flip",
+      "Manifest": "08_PASSPORTS/DESI/desi_dr2_manifest.json",
+      "Hash": "52756a8144355414fbfd3ab17a8e66477a57a804deed52a6fcfdc902a9cd8246",
+      "Frozen D0 object": "S_DE phason-flip archive transfer",
+      "Baseline": "constant-shape BAO baseline",
+      "Metric": "BAO residual/covariance response",
+      "Result": "SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED",
+      "Notes": "missing: z_eff,dm_rd,dh_rd,covariance,sha256,status_READY",
+      "returncode": 0,
+      "stdout": "SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED\nmissing: z_eff,dm_rd,dh_rd,covariance,sha256,status_READY",
+      "stderr": ""
+    },
+    {
+      "Passport": "CKM holonomy external convention",
+      "Dataset": "ckm_holonomy_external_convention",
+      "Manifest": "08_PASSPORTS/CKM/ckm_manifest.json",
+      "Hash": "34174e64ab5750e9a515012aafaf496d2cec3cd10388971fe7ca7172bc4a6010",
+      "Frozen D0 object": "CKM phason holonomy matrix convention",
+      "Baseline": "PDG convention table",
+      "Metric": "unitarity/convention residual",
+      "Result": "SKIP_CKM_EXTERNAL_DATA_REQUIRED",
+      "Notes": "missing: Vud,Vus,Vub,Vcd,Vcs,Vcb,Vtd,Vts,Vtb,sha256,status_READY",
+      "returncode": 0,
+      "stdout": "SKIP_CKM_EXTERNAL_DATA_REQUIRED\nmissing: Vud,Vus,Vub,Vcd,Vcs,Vcb,Vtd,Vts,Vtb,sha256,status_READY",
+      "stderr": ""
+    },
+    {
+      "Passport": "Meson domain-wall PDG",
+      "Dataset": "meson_domain_wall_pdg",
+      "Manifest": "08_PASSPORTS/PDG_Meson/pdg_meson_manifest.json",
+      "Hash": "75ec023e8e5780100f31fb1fd369f4d9d3c677bd3663db590230389d9e90bea3",
+      "Frozen D0 object": "meson phason domain-wall selector",
+      "Baseline": "PDG mass-width table",
+      "Metric": "domain-wall class residual",
+      "Result": "SKIP_PDG_MESON_EXTERNAL_DATA_REQUIRED",
+      "Notes": "missing: particle_id,mass,width,quantum_numbers,sha256,status_READY",
+      "returncode": 0,
+      "stdout": "SKIP_PDG_MESON_EXTERNAL_DATA_REQUIRED\nmissing: particle_id,mass,width,quantum_numbers,sha256,status_READY",
+      "stderr": ""
+    }
+  ]
+}
