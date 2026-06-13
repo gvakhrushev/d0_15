@@ -29,7 +29,21 @@ ROOT = Path(__file__).resolve().parent.parent
 BOOKS = ROOT / "01_BOOKS"
 AUD = ROOT / "03_THEORY_MAP" / "coverage_audit"
 LEDGER = ROOT / "03_THEORY_MAP" / "GOLDEN_COVERAGE_LEDGER.csv"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import chunk_sources as cs  # noqa: E402  (reuse the exact slug() the chunker used)
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
+
+def source_path_map() -> dict[str, str]:
+    """book-slug -> repo-relative source file path (reverse of the chunker's slug)."""
+    m = {}
+    for d in (cs.GOLDEN_DIR, cs.V17_DIR, cs.TRANSFER_DIR):
+        if not d.exists():
+            continue
+        for p in d.glob("*"):
+            if p.is_file() and p.suffix in (".txt", ".md"):
+                m[cs.slug(p.name)] = p.relative_to(ROOT).as_posix()
+    return m
 
 
 def book_number(stem: str) -> str:
@@ -96,6 +110,7 @@ def main() -> int:
 
     manifest = {c["chunk_id"]: c for c in
                 json.loads((AUD / "chunk_manifest.json").read_text(encoding="utf-8"))["chunks"]}
+    pathmap = source_path_map()
     SRC = {"golden": "add/d0-main/books", "v17": "_QUARANTINE/v17_overshoots/01_BOOKS",
            "transfer": "add/files"}
 
@@ -115,6 +130,7 @@ def main() -> int:
             "v14_locations": r["v14_locations"], "note": r["note"],
             "target_section": r["target_section"],
             "source_layer": layer,
+            "source_path": pathmap.get(m.get("book", ""), ""),
             "source_lines": f"{m.get('line_start','?')}-{m.get('line_end','?')}",
             "source_book": m.get("book", ""),
         }
