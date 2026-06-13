@@ -156,7 +156,17 @@ def module_path(module: str) -> Path:
     return ROOT / "09_LEAN_FORMALIZATION" / (module.replace(".", "/") + ".lean")
 
 
+def modules_exist(lean_module: str) -> bool:
+    # A row may list several semicolon/comma-separated modules; all must resolve.
+    mods = split_values(lean_module)
+    return bool(mods) and all(module_path(m).exists() for m in mods)
+
+
 def cert_path(cert: str) -> Path:
+    # Some rows already prefix the cert with "05_CERTS/"; strip it to avoid 05_CERTS/05_CERTS/.
+    cert = cert.strip().replace("\\", "/")
+    if cert.startswith("05_CERTS/"):
+        cert = cert[len("05_CERTS/"):]
     return ROOT / "05_CERTS" / cert
 
 
@@ -173,7 +183,9 @@ def write_json(claims: list[dict[str, str]], assumptions: list[dict[str, str]]) 
         claim_id = row["claim_id"]
         assumption_ids = split_values(row["assumption_ids"])
         certs = split_values(row["python_cert"])
-        mpath = module_path(row["lean_module"])
+        mods = split_values(row["lean_module"])
+        mpath = module_path(mods[0]) if mods else module_path(row["lean_module"])
+        mexists = modules_exist(row["lean_module"])
         ctype = claim_type(row)
         domain = claim_domain(row)
 
@@ -197,7 +209,7 @@ def write_json(claims: list[dict[str, str]], assumptions: list[dict[str, str]]) 
                 "status": row["release_status"],
                 "notes": row["notes"],
                 "module_path": str(mpath.relative_to(ROOT)).replace("\\", "/"),
-                "module_exists": mpath.exists(),
+                "module_exists": mexists,
                 "certs_exist": all(cert_path(cert).exists() for cert in certs),
             }
         )
@@ -219,7 +231,7 @@ def write_json(claims: list[dict[str, str]], assumptions: list[dict[str, str]]) 
                 "kind": "lean_module",
                 "label": row["lean_module"],
                 "path": str(mpath.relative_to(ROOT)).replace("\\", "/"),
-                "exists": mpath.exists(),
+                "exists": mexists,
             }
         )
         edges.append({"source": claim_id, "target": module_id, "kind": "implemented_in"})
@@ -316,7 +328,7 @@ def write_status_csv(claims: list[dict[str, str]]) -> None:
                     "uses_bridge_assumptions": row["uses_bridge_assumptions"],
                     "assumption_ids": row["assumption_ids"],
                     "python_cert": row["python_cert"],
-                    "module_exists": module_path(row["lean_module"]).exists(),
+                    "module_exists": modules_exist(row["lean_module"]),
                     "certs_exist": all(cert_path(cert).exists() for cert in certs),
                     "notes": row["notes"],
                 }
