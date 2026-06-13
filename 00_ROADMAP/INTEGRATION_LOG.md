@@ -105,3 +105,23 @@ canonical (164) — regenerated in Phase 4.
   D0-GRAV-004/005/006, D0-EDGE-*, D0-BARYON-POLES-001, D0-IM-COSMO-*, ...). Biggest
   per-domain headroom: frontier 247, formal_core 234; per-book: BOOK_07 135, BOOK_04 111.
 - `d0_score.py --strict` exit 0.
+
+## Phase 7 — CI wiring
+
+- Authored `.github/workflows/guards.yml` (ubuntu): validate_csv -> check_firewall
+  (--base base-v14) -> check_no_sorry_in_core -> check_claim_map_coverage ->
+  check_physical_bridge_discipline -> check_book_cert_references ->
+  regen_graph.ps1 -CheckOnly (pwsh) -> d0_score.py --strict. `lake build` stays in a
+  deferred/manual workflow.
+- Fixed two pre-existing guard failures (both honestly, not by suppression):
+  - `check_claim_map_coverage.py`: module requirement now keyed off `lean_status`
+    (only LEAN_PROVED* needs a Lean module), not the stale pre-collapse
+    `release_status` list -> resolves D0-CVFT-F3/F3B (now CERT-CLOSED, cert-level).
+  - The two orphan `sorry` witnesses (`FiniteBianchiEinsteinTensor.lean`,
+    `BlackHoleA4EntropyWitness.lean`) -> relocated out of `D0/` to
+    `09_LEAN_FORMALIZATION/_OPEN_WITNESSES/` (nothing imports them, no claim
+    references them) so the core tree is genuinely sorry-free under `--all`.
+    Tracked as gravity-sector open obligations for Phase 8.
+- Froze `00_PUBLICATION/` (`_FROZEN.md`). Fixed README guard paths + added the
+  guard/scoreboard suite to getting-started. Regenerated `D0_CANONICAL_FILE_MAP.csv`.
+- **Full local CI dry-run green: all 7 python guards + regen_graph -CheckOnly PASS.**

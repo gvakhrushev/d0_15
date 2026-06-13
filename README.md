@@ -42,8 +42,14 @@ See `D0_CLAIM_CLOSURE_CONTRACT.md` and `01_BOOKS/BOOK_00_*.md` for the exact rul
 ./tools/lean_dev.ps1 build
 ./tools/lean_dev.ps1 build D0.All
 ./tools/check_lean_storage_hygiene.ps1
-python tools/check_no_sorry_in_core.py
-python tools/check_claim_map_coverage.py
+python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
+python 09_LEAN_FORMALIZATION/tools/check_claim_map_coverage.py
+
+# Repo guards + strength scoreboard (the CI suite; see .github/workflows/guards.yml)
+python tools/validate_csv.py                 # canonical registry integrity
+python tools/check_firewall.py --base base-v14   # anti-promotion firewall
+python tools/check_book_cert_references.py   # no phantom certs cited in books
+python tools/d0_score.py                     # writes 03_THEORY_MAP/SCOREBOARD.md
 
 # Example cert / passport runs (from repo root)
 cd 05_CERTS

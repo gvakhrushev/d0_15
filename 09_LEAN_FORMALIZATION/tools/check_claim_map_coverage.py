@@ -67,10 +67,11 @@ def main() -> int:
         if status not in ALLOWED_STATUSES:
             failures.append(f"{claim}: bad lean_status {status!r}")
         release_status = row.get("release_status", "")
-        if release_status not in OPEN_RELEASE_STATUSES and (
-            not row.get("lean_module") or not row.get("lean_theorem")
-        ):
-            failures.append(f"{claim}: missing Lean module/theorem")
+        # A Lean module+theorem is required iff the claim is Lean-proved. Cert-level,
+        # open, passport, and deprecated rows legitimately carry no Lean module.
+        needs_module = status in {"LEAN_PROVED", "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS"}
+        if needs_module and (not row.get("lean_module") or not row.get("lean_theorem")):
+            failures.append(f"{claim}: LEAN_PROVED claim missing Lean module/theorem")
 
         uses_bridge = row.get("uses_bridge_assumptions", "").lower() == "true"
         assumption_ids = split_ids(row.get("assumption_ids", ""))
