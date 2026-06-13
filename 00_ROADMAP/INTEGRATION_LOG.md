@@ -91,3 +91,17 @@ canonical (164) — regenerated in Phase 4.
   `vp_c_time_length_single_section_closure.py`); BOOK_02 §02.27 corrected the
   mis-numbered ward cert `vp_v1134_...` -> the real `vp_v1132_gauge_matter_ward_anomaly.py`.
 - `check_book_cert_references.py` PASS.
+
+## Phase 6 — scoring tree (`tools/d0_score.py`)
+
+- Track-fair scorer reading the canonical CSV + on-disk artifacts; outputs
+  `03_THEORY_MAP/SCOREBOARD.md` + `scoreboard.json`. Anti-gaming: verified level =
+  min(declared, disk-supported); bridge/passport/external capped by the firewall;
+  deprecated excluded.
+- **Baseline strength: 2335 / 2992 = 78.0%**; core spine 2013 / 2660 (headroom
+  **647** to take every core claim to L5); 163 active claims; 0 integrity demotions.
+- "Where to gain points next" surfaces the Lean-closure worklist: **25
+  PYTHON_CERTIFIED claims** each +5 to write the Lean proof (D0-IM-*, D0-ARCHIVE-*,
+  D0-GRAV-004/005/006, D0-EDGE-*, D0-BARYON-POLES-001, D0-IM-COSMO-*, ...). Biggest
+  per-domain headroom: frontier 247, formal_core 234; per-book: BOOK_07 135, BOOK_04 111.
+- `d0_score.py --strict` exit 0.
