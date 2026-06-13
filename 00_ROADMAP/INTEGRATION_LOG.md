@@ -273,3 +273,34 @@ as per-claim Lean modules), and the book never drifts from its sections.
 Full Python guard suite stays green; `d0_score` strength unchanged at **2660/3767 (70.6%)**
 (pure restructure, no claim-status change). The 341 section files are the BR4 parallel-rewrite
 unit; BR2 (dedup/ordering/stale) and BR3 (integrate the BR0 forcing rows) operate on them next.
+
+---
+
+## BR2 — book token firewall (preventive)
+
+`tools/check_book_tokens.py` (CI): **fails** on the v17 overshoots + deprecated δ0 form
+(Immutable / Grand-Singularity-Lock, Golod-Shafarevich, OpenAI-2026, δ0=φ⁻³ — all 0 now,
+so the firewall stays green while BR3 pulls content from v17 where those live); **reports**
+51 stale tokens (dangling `(marker moved to 06_AUDIT/…)` refs to the deleted dir + `v16
+publication-proofread` boilerplate) as the rewrite-wave cleanup worklist. ("atlas" was checked
+and KEPT — it is the real `D0_HIGH_GAIN_HOSTILE_UNIQUENESS_ATLAS.md`, not cruft.)
+
+## BR3 — forcing integration, per-book waves (BOOK_02 done)
+
+Infra: `tools/group_coverage_by_section.py` turns the BR0 ledger's `integrate` rows into a
+per-book worklist — each row routed to an existing section file and enriched with its GOLDEN/v17
+**source path + line range** so a rewrite agent reads the *actual* forcing argument. Worklists
+pre-generated for all 10 books (core-forcing counts: 02→39, 04→37, 06→29, 01→27, 00→20, 03→18,
+07→16, 05→9, 08→3 ≈ 198).
+
+**BOOK_02 wave** (`br3-book-wave`, 15 agents): planner routed all 39 core-forcing rows to 14
+existing sections (the 8 "complexity" conceptual rows grouped into 02.10); 14 section workers
+integrated **39/39** forcing arguments in place (+984/−6 lines). Highlights: the **second
+independent φ-forcing** (S1 self-similarity `r²−r−1=0`, derivationally distinct from Route-1
+`p+p²=1`), M1 test-extensionality + no-math-without-M1 ⊥-proof, the exact ℤ[√5] **Q8<2T<2I→E8**
+chain via Mordell even-unimodular uniqueness, the α gluing-anomaly seam, homological unification
+(Tr₀→gravity / Tr₁→EM / Tr₂→QM). Guard catch: 2 workers fabricated cert filenames
+(`vp_holographic_commutator_jy`, `vp_homological_unification_012`) — `check_book_cert_references`
+flagged them; demoted to honest `PROOF-TARGET (cert obligation open)` per the closure contract.
+Full guard suite green (firewall 0 forbidden, assembly idempotent, cert-refs clean, validate_csv,
+firewall-vs-base). `d0_score` unchanged (prose-only; new claims not yet registered).
