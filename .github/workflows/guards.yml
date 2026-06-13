@@ -42,6 +42,9 @@ jobs:
       - name: books assembled from per-section sources (idempotent)
         run: python tools/check_book_assembly.py
 
+      - name: book token firewall (no v17 overshoots / deprecated delta0 in prose)
+        run: python tools/check_book_tokens.py
+
       - name: lean aggregates idempotent (generated, not hand-edited)
         run: |
           python tools/generate_lean_aggregates.py --check --only claimmap
