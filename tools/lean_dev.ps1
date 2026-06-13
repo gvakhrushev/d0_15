@@ -43,12 +43,28 @@ if (-not $LakeArgs -or $LakeArgs.Count -eq 0) {
 
 Write-Host "Lean package: $LeanDir"
 Write-Host "External Lake storage: $ExternalLake"
-Write-Host "lake $($LakeArgs -join ' ')"
 
+# Native command stderr (lake/elan 'info:' progress) must NOT abort the script:
+# PowerShell's Stop preference wraps native stderr as a terminating error. Switch to
+# Continue for the native calls and rely on $LASTEXITCODE for success/failure.
+$ErrorActionPreference = "Continue"
+
+# One-time: fetch precompiled mathlib oleans so mathlib is never recompiled from
+# source (~minutes vs ~1 hour). Idempotent: only runs when the cache is absent.
+$MathlibLib = Join-Path $ExternalLake "packages\mathlib\.lake\build\lib"
+$IsCacheCmd = ($LakeArgs -contains "cache")
+if (-not $IsCacheCmd -and -not (Test-Path -LiteralPath $MathlibLib)) {
+  Write-Host "Mathlib build cache missing -> 'lake exe cache get' (one-time, minutes)..."
+  Push-Location $LeanDir
+  try { & lake exe cache get } finally { Pop-Location }
+}
+
+Write-Host "lake $($LakeArgs -join ' ')"
 Push-Location $LeanDir
 try {
   & lake @LakeArgs
-  exit $LASTEXITCODE
+  $code = $LASTEXITCODE
 } finally {
   Pop-Location
 }
+exit $code

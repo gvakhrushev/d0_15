@@ -39,6 +39,11 @@ jobs:
       - name: prose<->registry cert references
         run: python tools/check_book_cert_references.py
 
+      - name: lean aggregates idempotent (generated, not hand-edited)
+        run: |
+          python tools/generate_lean_aggregates.py --check --only claimmap
+          python tools/generate_lean_aggregates.py --check --only active
+
       - name: graph idempotence (generated artifacts up to date)
         shell: pwsh
         run: ./tools/regen_graph.ps1 -CheckOnly

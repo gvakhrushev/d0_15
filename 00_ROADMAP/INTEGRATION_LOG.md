@@ -178,6 +178,29 @@ Five new deterministic certs (exact, no floats, each able to FAIL), registered C
 
 Registry 204 -> 209; all guards green. Strength **2625 -> 2660**; core headroom **1027 -> 1092**.
 
+## R — Lean architecture refactor (parallel per-claim formalization)
+
+Goal: stop one Lean edit forcing a ~20-min rebuild; let agents close proofs in parallel.
+
+- **R1 (lean_dev.ps1):** fixed the PowerShell native-stderr trap (`$ErrorActionPreference=Stop`
+  was aborting builds on lake's `info:` progress lines — now `Continue`, rely on `$LASTEXITCODE`);
+  added one-time auto `lake exe cache get` so mathlib is downloaded oleans, not recompiled.
+- **R2 (generated aggregators):** `tools/generate_lean_aggregates.py` regenerates `All.lean`,
+  `ClaimMap.lean`, `ActiveClosureIndex.lean` deterministically from the canonical CSV — killing
+  the two hand-edited merge points. **Idempotence proven** (regenerate twice = byte-identical),
+  which is the property that lets N agents append a CSV row / add a `D0/Claims/<id>.lean` without
+  index merge conflicts. Committed the regenerated `ClaimMap.lean` (the *critical* merge point;
+  it had drifted — 81 hand-edited entries vs 154 CSV claims-with-a-module — generation makes it
+  complete + consistent) and `ActiveClosureIndex.lean`. CI wired with `--check`.
+  `claim_map_coverage` + `primitive_text_sync` + full guard suite PASS on the regenerated ledger.
+
+**Environment block (honest):** the Lean **build** could not be warmed this session — github
+access was flaky (lake timed out fetching `aesop`), then mathlib built **from source** (no olean
+cache) which is the ~1-hr path. So **All.lean regeneration is held** (reverted to the known-good
+hand-edited file) until a warm build validates the glob-all import set, and the **R4 parallel
+proof wave is deferred** (it needs the warm `.lake`). To warm it: run `tools/lean_dev.ps1 build
+D0.Core.Phi` on a networked machine (one-time), then per-claim builds are seconds.
+
 ### Phase 8 backlog (tracked, scoreboard-visible)
 
 Remaining forced-claim certs to write (then Lean L4): Q8-Dedekind minimality,
