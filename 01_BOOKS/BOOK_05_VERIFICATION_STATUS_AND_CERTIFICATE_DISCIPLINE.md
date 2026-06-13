@@ -101,6 +101,93 @@ claim
 
 The classification row is the last artifact, not the proof.
 
+### What "admissible" means before a claim enters this chain
+
+The verification chain above checks a claim that is *already* posed in D0 terms.
+There is a prior gate: a statement must first be **well-posed** in the D0 sense
+before it is even eligible to be verified.  Book 05 inherits that gate from the
+problem-reformulation discipline of the GOLDEN mathematics volume, and it is the
+reason §05 refuses to certify a "result" that merely closes a cosmetic restatement.
+
+**Well-posedness gate.** A problem is admissible only if its condition and its
+solution criterion reduce to a *finite distinguishability test* (`\(\Delta\in\{0,1\}\)`)
+on a constructive type / inverse system, with no external catalog (precision,
+basis choice, oracle) (forcing: GOLDEN DEF 23.0.1).  A classical formulation that
+silently depends on such a catalog is, in an autonomous finite reality, **not
+admissible as stated** — it is ill-posed until reformulated.  Status: FORCED.
+
+**Uniqueness of the correct reformulation.** If a classical formulation requires
+an external catalog it is ill-posed; the corrected D0 reformulation, *if it exists,
+is unique* — because two distinct admissible reformulations would themselves
+require a catalog to choose between them, which is exactly the external selection
+M1 forbids.  Status: FORCED (forcing: GOLDEN THE 23.0.2; forcing engine owned at
+§00.8 DEF-0.2.2 — this is that engine applied one level up, to the *posing* of the
+problem rather than the proving of a statement).
+
+**The five-step reformulation template (PROTOCOL 23.1).** Every claim routed into
+the chain above is first passed through a fixed, reusable skeleton.  This is the
+method face of the verification calculus and is distinct from the
+prove-a-statement schema owned at §00.8 (DEF-0.2.2): that schema forces `X`; this
+one forces a problem into D0-admissible shape so that `X` can be stated at all.
+Status: FORCED (forcing: GOLDEN PROTOCOL 23.1).
+
+```text
+1. EMBED (CORE):      rewrite the object as a level-k constructive type / inverse system.
+2. M1 criterion:      locate exactly where the classical statement uses exogenous
+                      parameters (actual infinity, arbitrary precision, choice).
+3. Canonical regularize: replace each with Can / kappa-equivalence / eps^2 tolerance
+                      / flat reference U^flat.
+4. SOLVE:             build an executable PASS/FAIL package, OR prove the original
+                      posing ill-posed and exhibit the unique correct reformulation.
+5. BRIDGE passport:   describe the translation back as packaging only — never as a
+                      source of structure.
+```
+
+A "solution" that stops at step 4's PASS/FAIL but never declares its BRIDGE
+passport, or that skips step 2, is not yet a D0 result; it is a candidate awaiting
+the missing step.  This is what the classification row at the end of the chain
+records.
+
+### CORE vs BRIDGE for hard-problem claims (the Clay discipline)
+
+The same gate decides what it means to *solve* a named hard problem inside D0, and
+it is the sharpest place the CORE/BRIDGE split bites.  Classical Clay-style
+formulations are written in ZFC/analysis and use actual infinities, limit
+processes and/or arbitrary precision as *implicit exogenous parameters*; as stated
+they are BRIDGE objects, not CORE objects (forcing: GOLDEN CHK V.4.0).  A
+formulation is admissible in CORE only if it carries (1) a Can-code of the object,
+(2) a finite PASS/FAIL test at a fixed tolerance `\(\varepsilon^2\)`, and (3) no
+hidden knobs (precision / basis / normalization / oracle).  Status: FORCED.
+
+Consequence, stated as a verification rule: **"solving the problem" in the sense of
+this corpus means closing the CORE posing, not cosmetically closing the BRIDGE
+packaging.**  A BRIDGE-level "closure" of a Clay problem is, by the well-posedness
+gate, not a D0 theorem — it is an external-comparison protocol that may only be run
+*after* the internal CORE object is frozen, exactly as the last two arrows of the
+normative chain require.
+
+**Per-problem template (PROTOCOL 24.K).** Each hard-problem claim that §05 is asked
+to certify must present the five-part structure below; a row missing any part is
+classified as PROOF-TARGET, never as THE (forcing: GOLDEN PROTOCOL 24.K; the
+"THE via ⊥" step instantiates the forcing engine of §00.8 DEF-0.2.2).
+
+```text
+1. CORE statement:        object = constructive type / inverse system;
+                          invariant = a kappa-stable checkable quantity.
+2. M1 criterion:          show where the classical version uses exogenous parameters
+                          (actual infinity, precision hypercomputation, basis choice,
+                          AC, hidden normalization).
+3. Canonical regularize:  replace with Can / kappa-equivalence / heat-trace passport.
+4. THE via ⊥:             "if not so, exogenous parameters are required" (BOOK_00 §00.8,
+                          DEF-0.2.2 / GOLDEN DEF 0.2.2).
+5. VER:                   an executable PASS/FAIL on representative families.
+```
+
+When this book later classifies a hard-problem entry, the row asserts only that
+steps 1--4 are present and that step 5's executable PASS/FAIL exists or is an open
+cert obligation.  No cert filename is asserted here; a hard-problem claim whose
+VER package is not yet built carries Status: PROOF-TARGET (cert obligation open)
+until a real, committed cert in `05_CERTS/` discharges it.
 ## 05.2 Verification as finite measurement
 
 Verification in D0 is itself a finite detector operation.  A statement is not
@@ -200,7 +287,31 @@ Status is not evidence. Status is the final ledger projection of theorem/cert/ex
 - `BRIDGE-CLOSED`: External dictionary mapping frozen core objects.
 - `EMPIRICAL-PASSPORT`: External-data comparison with manifest and scheme.
 - `CONJECTURE` / `RETIRED`: Unverified statements or obsolete scaffolding.
+- `PROOF-TARGET (cert obligation open)`: A forcing claim whose *selection* obligation is named and finite but whose *calculation* cert is not yet registered. This is the only honest label for a still-open joint — it is never silently upgraded, and it is never backed by a fabricated cert token (forcing: transfer D0-PHILOSOPHY-AND-METHOD §10; cert discipline owned in §05.7).
 
+### 05.6.1 Open-joints register (the named, finite front)
+
+The status vocabulary above would be dishonest without a place to carry what is *honestly undone*. D0's claim is not "complete" but "near-complete with a finite, named list of open joints" — and that finiteness is itself the load-bearing claim about distance to closure (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10). These are coordinates of the front, not a soft 20% of fog: each entry is a single concrete obligation under the DEF-0.2.2 forcing schema that is *declared but not yet discharged*. Listing them here, with status tags, is what keeps `PROOF-TARGET` from drifting into `CORE`.
+
+The register has two tiers: three **soft joints** (the DEF-0.2.2 schema is declared but the forcing is not driven all the way to contradiction) and three **owner/closure obligations**. Each carries its own status; none may be cited as evidence until its cert is registered. None of these is fabricated-cert territory — where a real cert touches the joint it is named and confirmed to exist; the *open* part is stated as exactly the missing analytic step.
+
+**Soft joints (DEF-0.2.2 declared, not yet closed):**
+
+1. **Role-lists 4 and 5 — orbit argument missing.** The two role alphabets must be forced as equivalence classes of distinguishing procedures (role = orbit), not asserted as a by-hand enumeration. Support echo: the factorization `(ℤ/44)* = 4 × 5` is already owned downstream (BOOK_01 THE-A: terminal window `q_T = ABCD · V11 = 44`, `|G| = φ_E(44) = 20 = d13`, splitting as `4 × 5`). What is open is the *orbital-uniqueness* theorem identifying the role lists with that orbit decomposition. Status: PROOF-TARGET (cert obligation open) — the count ladder is certified; the role↔orbit identification is not yet discharged by a `vp_*` cert (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10.1).
+
+2. **Parity step `+2` — conjugacy to `Z(Q₈)` missing.** The `+2` carrier expansion has *three independent witnesses* — Lucas parity, the `Q₈` sheet, and the square `T²` of toral time — each owned upstream (Lucas/orientation face: GOLDEN THE 3.11.B, `trace_T_pow_eq_signed_lucas` in BOOK_02/BOOK_03; `det T = −1` orientation class). What is open is the *formal conjugacy* of these foliation sheets to the center `Z(Q₈)`, collapsing the three witnesses into one forced step. This is the soft joint closest to closure. Status: PROOF-TARGET (cert obligation open) — promotion needs the conjugacy written out, not a new numeric check (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10.2).
+
+3. **Class-5 aliasing exclusion (Cabibbo chain) — formulated, not formalized.** The exclusion of the class-5 aliasing branch in the Cabibbo chain is stated as a forcing target but the contradiction is not yet driven to a finite witness. Status: PROOF-TARGET (cert obligation open) — formulated, not formalized; no `vp_*` cert is registered for the exclusion step (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10.3).
+
+**Owner/closure obligations:**
+
+4. **`Δ_α` analytic owner — open.** The seam anomaly `Δ_α = |α⁻¹_top − α⁻¹_alg| ~ 4.15e-4` is the irreducible residue between two independent canonizations of `α⁻¹`; `Δ_α ≠ 0` is itself forced by M1 (a hidden identity rule `Δ_α = 0` would be an external dictionary, which M1 forbids — forcing: GOLDEN REM 16.3.SE). The seam-`α` invariant is checked by the EXISTING cert `vp_pdg_strict_passport.py`, and the residual is held at CHK in the EXISTING cert `vp_xi5_torus_defect.py` ("NOT promoted to THE until `Δ_α` receives an analytic owner"). What is open is the *analytic owner* — the theorem that derives `Δ_α` rather than measuring it; the dynamical/closure-defect reading is owned downstream (BOOK_04, BOOK_06). Status: PROOF-TARGET (cert obligation open) for the analytic owner; the seam numbers and neutrino readout carry their own certs and are not duplicated here (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10).
+
+5. **Tower-stop theorem (why the tower stops, not `V₁₅`).** Why the structural tower terminates where it does rather than continuing to a `V₁₅` floor is sketched via rational capture but not closed as a theorem. Status: PROOF-TARGET (cert obligation open) — sketch exists (rational-capture route); no standalone stop-theorem cert is registered (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10).
+
+6. **`φ⁻²` rotation ↔ `T` foliation conjugacy (quasicrystal = time).** The `φ⁻²` circle rotation must be shown *formally conjugate* to the return map of the golden foliation of toral time `T` — one page of standard ergodic mechanics (Sturm / Morse–Hedlund). The letter-by-letter coincidence is verified empirically (40 symbols) and the slope is force-derived; the conjugacy itself is owned as an obligation in BOOK_01. Status: PROOF-TARGET (cert obligation open) — promotion needs the conjugacy written out, not a new numeric check (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10; quasicrystal↔time conjugacy owned in BOOK_01).
+
+**Register discipline.** This list is *exhaustive by intent*: a forcing obligation that is not on it, and not closed elsewhere, is a discipline failure, not a silent `CORE`. The register's value is that it is finite — its length, not its emptiness, is the honest measure of nearness to formal closure of the core (forcing: GOLDEN THE / D0-PHILOSOPHY-AND-METHOD §10). When any entry's cert is registered, its line moves from `PROOF-TARGET` to `CERT-CLOSED` and leaves this register; the register never grows by fiat and never shrinks by relabelling.
 ## 05.7 One promotion process
 
 The active promotion process follows a strict sequence:
@@ -240,8 +351,29 @@ random non-Hermitian resonance matrix
 PDG names used to choose spin/flavour projectors
 ```
 
-The purpose of Book 05 is to make these shortcuts impossible to miss.
+The purpose of Book 05 is to make these shortcuts impossible to miss. Each entry above is one *local* shortcut — a single object promoted past its license. The table is necessary but not sufficient: a reviewer can clear every row and still smuggle the deepest shortcut of all, which is to pick a structure because it *fits* rather than because it is *forced*. The verification principle below closes that gap.
 
+### 05.8a Classification principle (derived-not-fitted)
+
+This is the methodological law that stands behind the whole table above. State it as a verification rule, not as a slogan.
+
+> **Verification principle (FORCED).** Every fundamental object in D0 is admitted only as a *classification* or *existence/uniqueness* theorem. Optimisation, curve-fitting, best-of-N selection, and post-hoc choice are categorically disallowed as closure mechanisms for a CORE object. A number that *fits* is not a number that is *forced*.
+
+**Why this is forced, not stylistic (forcing: GOLDEN LEM 0.4.4; GOLDEN THE 0.4.5; engine GOLDEN DEF 0.2.2).** The family of M1-equivalent extensions of any construction is infinite (GOLDEN EX 0.4.3), so an argument of the form "variant 1 fails, variant 2 fails, ... therefore mine is right" never terminates and never closes a theorem. The only finite route is to forbid every add-on that needs an external specification and **take the only admissible object, not the best-scoring one** (forcing: GOLDEN LEM 0.4.4). Minimality and uniqueness in this corpus are therefore instances of one reusable template (forcing: GOLDEN THE 0.4.5), never standalone assertions. This is the field form of the hostile-reading question: a "yes, a different admissible expression would also pass" means selection survived and the object is *not* closed; a "no" means it was forced. The §05.6 hostile-uniqueness controls (alternate projector, alternate irrational, zero-padded/random carrier, label permutation) are exactly the executable test of this principle — they are how a reviewer checks that the "no" is real rather than asserted.
+
+**The canonical objects, and where each is forced (cite owners; do not re-derive here).**
+
+| Fundamental object | Status | Forced as | Owner |
+|---|---|---|---|
+| Readout carrier `K(9,11,13)` (rank 3 / nullity 30) | FORCED | minimal-object classification (instance of GOLDEN THE 0.4.5), not a chosen carrier | BOOK_01 (`J_scene`, forced return windows; §01.22) |
+| Branching law `p + p² = 1` ⇒ `φ` | FORCED | existence/uniqueness of the self-consistent feedback fixed point, not a fitted ratio | BOOK_01 (`φ`-from-`(p+p²=1)`, `F_N`; §01) |
+| Action cycle count `Λ_act = N_act = 38` | FORCED | finite-action accounting closure, not a tuned cycle count | BOOK_03 (`Λ_act` accounting) |
+
+Each row is owned and proven in its book; Book 05 records only the *verification status* — that the object reached CORE by classification/uniqueness and not by selection. The deprecated reflex — "a selected number written in a table ⇒ finite selector theorem" — is already row 18 of the forbidden-shortcuts table above; this principle is the positive statement of the same firewall and the two must be read together.
+
+**Verification obligation.** The general principle is closed (it reduces to GOLDEN LEM 0.4.4 / THE 0.4.5). The *per-object* executable witness — a certificate that mechanically rules out the nearby fitted alternatives for `K(9,11,13)` and for the memoryless-detector branching law — is **Status: PROOF-TARGET (cert obligation open)**: the v17 draft named cert tokens for these (a "minimal readout carrier" classification cert and a "memoryless detector automaton" cert) but no such cert exists under `05_CERTS/`, so none is cited here. Until those certs land, the per-object closure rests on the BOOK_01/BOOK_03 derivations plus the §05.6 hostile-uniqueness controls, which is sufficient for CORE status but not yet a standalone executable classification witness.
+
+A shortcut that survives every row of the table but fails this principle — an object that merely *fits* — is still a forbidden shortcut. It is the one the table cannot catch, and the one this section exists to name.
 ## 05.9 Negative controls and hostile uniqueness
 
 Negative controls are active evidence.  They protect D0 from overfitting and
@@ -573,6 +705,157 @@ The operator/passport rule is strict: operator first, passport second, no PDG tu
 
 Failure is not hidden.  It is the operational meaning of the claim.
 
+### 05.15.0 Why a falsification matrix exists at all (the parameter-free principle)
+
+The matrix above lists *qualitative* failure modes per claim type.  That is
+necessary but not sufficient: it does not yet say *why one bad number kills the
+whole corpus*.  The forcing is this.
+
+**Parameter-free exclusion (forcing: GOLDEN 19.K, BRIDGE-PROTOCOL).**  D0 has no
+tunable parameters — every CORE invariant is forced by M1, not fitted.  A theory
+with a knob can absorb a discrepancy by turning the knob; D0 cannot.  Therefore a
+single key invariant failing its check at the `epsilon^2` tolerance
+(`epsilon^2 = varphi^-16 ~ 4.531e-4`, BOOK_02-owned) falsifies D0 *as a whole*,
+not merely the one prediction.  There is no local repair, because there is no
+local degree of freedom to repair it with.  This is the load-bearing reason the
+matrix is a kill-list and not a scorecard.
+
+**Reader-panel exclusion table (forcing: GOLDEN 19.K).**  The qualitative matrix
+is paired with a concrete reader panel that binds named invariants to a frozen
+tolerance and a PASS/FAIL verdict.  Numbers and statuses are frozen *at
+publication* together with the dataset encoding/version (pinned), and are
+produced only by the numerical verification suite — the prose panel may not
+recompute them.
+
+| Quantity | Prediction owner | Check / dataset | Tolerance | Status |
+|---|---|---|---|---|
+| `alpha^-1` | BOOK_04 (D0 §16.3) | CODATA-equiv. (pin) | `epsilon^2` | PASS/FAIL |
+| `m_mu/m_e` | BOOK_04 (D0 §11–§16) | PDG-equiv. (pin) | `epsilon^2` | PASS/FAIL |
+| `m_p/m_e` | BOOK_04 (D0 §11–§16) | PDG-equiv. (pin) | `epsilon^2` | PASS/FAIL |
+| `sum m_nu` (upper bound) | BOOK_04 (topological anomaly, D0 §16.3) | cosmo/oscillation (pin) | upper limit | PASS/WAIT/FAIL |
+| `Omega_Lambda` (optional) | BOOK_08 (entropic limit, D0 §5) | cosmo-fit (pin) | `±1e-2` | PASS/WAIT/FAIL |
+
+Statistical discipline is mandatory and is not negotiable per-row: each BRIDGE
+predictor fixes (i) the null `H_0`, (ii) the test statistic (e.g. chi^2 /
+likelihood ratio), (iii) the significance level and exclusion rule, (iv)
+systematics and look-elsewhere accounting, (v) pre-registration of the protocol
+before the main data are seen (forcing: GOLDEN §19 statistical-exclusion
+standard).
+
+### 05.15.0.1 Instant-death conditions (physical kill-switches)
+
+Three observations would refute D0 outright, under measurement conditions that
+satisfy the BRIDGE protocols.  Each is wired directly to the forced spine, so
+none is a free-floating prediction — falsifying it falsifies the structure that
+forces it.
+
+1. **A 4th fermion generation** (forcing: GOLDEN 19.K.1).  The scene `K(9,11,13)`
+   carries exactly three zones; three generations are forced by the toral trace
+   `|Tr(T^2)| = 3` and the rank-3 / nullity-30 split (BOOK_01-owned, see F-spec
+   below).  A confirmed 4th generation breaks the three-zone scene topology, so
+   the spine — not a parameter — is wrong.
+2. **Proton decay** at lifetimes contradicting structural node stability
+   (forcing: GOLDEN 19.K.1, ref. BOOK III §13).  Node stability is a structural
+   property of the scene, not a fitted rate; a reliable decay outside the
+   structural window refutes it.
+3. **A reliable time-variation of `alpha`** (forcing: GOLDEN 19.K.1, ref. D0
+   §16).  `alpha` is a fixed D0 invariant forced by discrete-topology rigidity; a
+   genuine drift in `alpha` breaks that rigidity.
+
+Status: PROOF-TARGET (cert obligation open)  # the three instant-death switches restate forced facts (3-zone scene, node stability, alpha-rigidity) as falsification conditions; no dedicated kill-switch vp_*.py yet
+
+### 05.15.0.2 The verification lattice `S_L` and the choice `L = 129`
+
+The reader panel and the machine registry both evaluate the heat-trace on a
+finite spatial lattice.  The size of that lattice is itself forced, not picked.
+
+**`S_L` (forcing: GOLDEN DEF 19.1.A.1).**  `S_L` is a finite cubic
+`L x L x L` verification lattice with periodic boundary conditions (3-torus),
+used *only* to check spatial convergence of the heat-trace on `u ∈ [0, u_now]`.
+It is a computational budget, not a theory parameter.
+
+**`L = 129` by the `epsilon^2` plateau (forcing: GOLDEN LEM 19.1.A.0).**  Let
+`d_ref(L)` be the median `d_space(t)` on the best plateau window
+(score = −MAD − |med − 3| + 0.02·log-length, `t ∈ [1,3000]`).  Take `L_ref` as
+the largest size actually swept in the publication run and call `L` sufficient
+when `|d_ref(L) − d_ref(L_ref)| < epsilon^2`.  The first `L` that passes is
+`L_min = 129`:
+
+- `L = 101`: `|d_ref(101) − d_ref(321)| ≈ 3.92e-3 > epsilon^2` (fails);
+- `L = 129`: `|d_ref(129) − d_ref(321)| ≲ 1e-12 < epsilon^2`, and values
+  stabilize beyond it.
+
+So `L = 129` is the *minimal* verification lattice at which the spatial part
+contributes no auxiliary results to the checked invariants at the D0 §16
+tolerance — not an arbitrary length (CHK 19.1.A: `L_ref` is a budget ceiling,
+not a parameter; `L_min` must reproduce when the sweep is widened).  This is the
+same `S_L` / `L = 129` lattice over `K(9,11,13)` used downstream for D0-time
+epochs (BOOK_06-owned, `u = epsilon^2 t`); here it is the *why* of the size, not
+just its use.
+
+Status: PROOF-TARGET (cert obligation open)  # the L=129 plateau-convergence derivation (101 fails ~3.92e-3, 129 passes <1e-12) has no vp_*.py owner yet
+
+### 05.15.0.3 Machine exclusion registry (single source of truth)
+
+The reader panel (05.15.0) is the human-facing view; the table below is the
+machine registry.  GOLDEN REM 19.1.T forces them to be *synchronous* — PASS /
+FAIL / WAIT statuses are read only from the numerical verification suite, and the
+two tables may not diverge.
+
+| ID | [PRED] claim | What to measure | Exclusion criterion |
+|---|---|---|---|
+| F-alpha | gluing-anomaly inequality | `Delta_alpha` from §16.3 forms | `Delta_alpha ≥ epsilon^2` → D0 excluded at level alpha (parameter-free) |
+| F-mu | mu-check | `m_mu/m_e` | relerr `> epsilon^2` → D0 excluded at level alpha (parameter-free) |
+| F-p | p-check | `m_p/m_e` | relerr `> epsilon^2` → D0 excluded at level alpha (parameter-free) |
+| F-spec | 30-dim kernel | spectrum of `A` for `K(9,11,13)` | `dim ker(A) ≠ 30` → scene is wrong (cert: `vp_kernel_zone_split.py`) |
+| F-nu | neutrino scale | `sum m_nu`, `m_beta` | `sum m_nu` stably outside the window from `m_nu/m_e ~ Delta_alpha^2` (BOOK_04 / GOLDEN 16.3.7–16.3.9) → re-calibrate BRIDGE mapping |
+| B-z | acceleration onset | reconstruct `q(z)=0` | `z_acc` stably outside the BRIDGE window → re-calibrate BRIDGE mapping |
+| B-tau_n | neutron lifetime | `tau_n` bottle/beam | `tau_n` stably matches beam and excludes bottle → re-calibrate BRIDGE mapping |
+
+**Fatal vs Correction (forcing: GOLDEN REM IV.Fatal).**  This is the
+falsification taxonomy that the core-vs-passport split (05.15.1) only partly
+mirrors:
+
+- **Fatal** = a CORE invariant breached outside `epsilon^2`
+  (`phi`, `pi0`, `delta0`, `Delta_alpha`, the structural scene spectral ratios).
+  This means the M1/Sigma axiomatic base is violated and the D0 corpus is wrong.
+  CORE rows are hard (`epsilon^2`).
+- **Correction** = a BRIDGE-parametrization mismatch (SI reference levels,
+  normalization-protocol choice, recompute model) *with CORE invariants intact*.
+  This means the packaging/calibration is wrong, not the kernel.  BRIDGE rows
+  (F-nu, B-z, B-tau_n) are given as *windows* derived from the translation
+  protocol, not as hard `epsilon^2` bounds; a changed neutrino-window mapping is
+  filed as a new BRIDGE variant and does not rewrite the old fixation
+  (GOLDEN REM 19.Fnu).
+
+F-spec is the one fully Fatal row already discharged at cert level: the existing
+`vp_kernel_zone_split.py` checks, in exact integer linear algebra, that the
+adjacency operator of `K(9,11,13)` on `N=33` vertices has rank 3 (space) and
+nullity 30 (archive), with the zone split `30 = 8 + 10 + 12`.  Any recomputation
+giving `dim ker(A) ≠ 30` falsifies the scene.
+
+Status: PROOF-TARGET (cert obligation open)  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n exclusion IDs are not yet individually owned by vp_*.py; only F-spec (dim ker = 30) is discharged by vp_kernel_zone_split.py
+
+### 05.15.0.4 The M1 root of the matrix: no external catalog at any layer
+
+The deepest reason every row above is a *kill-switch* and not a knob traces back
+to M1 itself, even at the level of the set theory the verification suite runs on.
+
+**ZF constructors are finite predicates; full AC is forbidden (forcing: GOLDEN
+THE 10.2.1 + REM/CHK 10.2.AC).**  In a finite history the ZF constructors are
+realizable as decidable predicates — empty set is `return 0`, pair `{a,b}` is
+`x==a or x==b`, union is logical `OR` over predicates.  Local, `kappa`-bounded
+choice is admissible for constructive types that have a canonical finite
+enumeration or a guaranteed minimum in a fixed well-founded code order:
+`f(A) = min_{≼}{x : chi_A(x) = 1}`.  But **full AC is forbidden** — choosing from
+a non-enumerable / minimum-less type requires an oracle, i.e. an *external
+catalog*, which is exactly what M1 outlaws.  This is the same prohibition that
+makes the matrix binding: a theory permitted to consult an external catalog could
+always quietly repair a failed invariant; D0 cannot, so a failed invariant is
+final.
+
+Status: PROOF-TARGET (cert obligation open)  # the ZF-realizability + full-AC-needs-oracle forcing (M1 applied to set theory) has no vp_*.py owner in v14 yet
+
 ### 05.15.1 PDG Strict Passport Protocol
 
 The Torus/Core13 split is now explicit:
@@ -584,7 +867,7 @@ core:
 
 external comparison protocol:
   vp_core13_shell_geometry_passport.py
-  vp_pdg_strict_external comparison protocol.py
+  vp_pdg_strict_passport.py
 ```
 
 PDG data can falsify or validate frozen D0 outputs.  PDG data cannot create D0
@@ -714,6 +997,88 @@ failure thresholds.
 A survey likelihood may evaluate a frozen D0 cosmology object, but it may not
 create a new primitive, choose a hidden parameter or mutate the archive object.
 
+### 05.20.1 The anomalous-claims consistency protocol (forcing: GOLDEN BOOK-IV-VERIFICATION DEF 44.0.1 + THE 44.1–44.4)
+
+The rule above states *what a cosmology comparison must carry* but not *which
+concrete thresholds make an "anomalous-effect" claim pass or fail*.  v14 carried
+the general falsification-hook / BRIDGE-proof-cell discipline (05.15, 05.8) but
+dropped the packaged protocol with spine-forced numbers.  That protocol is
+restored here.  It is not a new freedom: every threshold below is forced off
+already-owned spine objects, so the protocol adds *teeth*, not parameters.
+
+A consistency check is a BRIDGE protocol on data `D = (raw, Π, ε²)`: `raw` is the
+input measurement, `Π` is the frozen translation protocol (normalizations,
+windows, tolerances, holdout/split rules, dataset ids), and `ε²` is the fixed
+corpus tolerance.  **`Π` may not change after the result is seen** (the same
+freeze-before-data discipline as 05.20 and CHK 19.4.1).  An effect that is
+measured without a pre-registered `Π` is a BRIDGE *observation*, never a CORE
+check (forcing: GOLDEN APPX IV.B.1, IV.C.1).
+
+The numerical verification suite must return FAIL unless all four checks hold at
+tolerance `ε²`.
+
+**[THE 05.20.CONSIST-RATIO] Effect-fraction exclusion: `ρ := E_anom/E_tot > 1/11` ⇒ FAIL (forcing: GOLDEN THE 44.1; Rank/Nullity 3/30). Status: PROOF-TARGET (cert obligation open).**
+The `1/11` ceiling is *not* a fitted significance cut.  The scene `K(9,11,13)`
+has rank `3` and nullity `30` over `33` vertices (owned by BOOK_01; cited in
+BOOK_03 03.0 and the trace ladder there), so the core fraction of the structure
+is exactly
+
+```text
+Rank / (Rank + nullity) = 3 / 33 = 1/11.
+```
+
+Any effect claiming more than `1/11` of the total budget therefore cannot be
+read as the *core* of the D0 scene — it exceeds the only fraction the scene's
+core can occupy — and the suite must return FAIL.  Below `1/11`, the check
+continues to GEOM / SPECTRA / ANOMALY.
+
+**[THE 05.20.CONSIST-GEOM] Geometric scale ratio: `|L₊/L₋ − φ⁵| ≤ ε²` (forcing: GOLDEN THE 44.2; memory-torus address). Status: PROOF-TARGET (cert obligation open).**
+For two characteristic active-zone scales `L₊, L₋` extracted under `Π`, D0
+consistency demands their ratio sit at `φ⁵` (equivalently `(L₊+L₋)/(L₊−L₋)` in
+the same tolerance).  This is the **memory-torus address** `(R+r)/(R−r) = φ⁵`
+owned by BOOK_06 (06.37), where `φ⁵ = 11 + φ⁻⁵` splits exactly into its integer
+address `11 = |V₁₁|` and the integerization defect `ξ₅ = φ⁻⁵`.  The geometric
+test is thus a demand that the observed scale ratio land on the frozen torus
+address, not on a tuned exponent.  Miss ⇒ FAIL.
+
+**[THE 05.20.CONSIST-SPECTRA] Peak-comb test: `|f_i/f₀ − φ^{k_i}| ≤ ε²` for integer `k_i` (forcing: GOLDEN THE 44.3). Status: PROOF-TARGET (cert obligation open).**
+The dominant PSD peaks `{f_i}` selected under `Π` must admit one base frequency
+`f₀` and integers `k_i` placing every ratio at a power `φ^{k_i}` — the same
+golden comb the torus-return spectrum forces.  When `Π` searches over multiple
+hypotheses the check **must** run on a holdout split with a declared
+multiple-testing correction (FWER / FDR / explicit look-elsewhere), fixed before
+the main set is touched (forcing: GOLDEN APPX IV.B.1).  Otherwise ⇒ FAIL.
+
+**[THE 05.20.CONSIST-ANOMALY] Modulation test: `|f_mod/f_c − Δα| ≤ ε²` (forcing: GOLDEN THE 44.4; gluing anomaly). Status: PROOF-TARGET (cert obligation open).**
+If a modulation `f_mod` is seen around a carrier `f_c`, D0 consistency requires
+the sideband ratio to equal the **gluing anomaly**
+
+```math
+\Delta_\alpha := \bigl|\alpha_{top}^{-1} - \alpha_{alg}^{-1}\bigr|,
+```
+
+the irreducible residue between the topological and algebraic writings of the
+whitening constant, owned and derived in BOOK_02 §02.13 (forcing: GOLDEN §16.3,
+COR 16.3.5).  A modulation that does not sit at `Δα` is *not* consistent with a
+topological anomaly — it is ordinary instrumental or astrophysical modulation —
+and the suite returns FAIL.  This is the same `Δα` that drives the neutrino
+seam beat (BOOK_04 04.9), reused, not re-derived.
+
+No `vp_*.py` cert yet executes THE 05.20.CONSIST-RATIO / GEOM / SPECTRA /
+ANOMALY as a single PASS/FAIL package; the obligation is open.  Until a cert
+exists, a claim that "passes the D0 consistency protocol" has status
+`PROOF-TARGET`, not `CERT-CLOSED`, and may not be promoted to an
+`EMPIRICAL-PASSPORT` on protocol grounds alone.
+
+### 05.20.2 Status boundary
+
+A consistency check is CORE only when its thresholds are the spine-forced values
+above and `Π` was frozen before data.  Any check that introduces a new
+dimensionless parameter or "correction coefficient" after fixing the list, or
+that re-reads `α^{-1}` calibration into a free window, drops to BRIDGE status and
+may falsify or validate a frozen D0 cosmology object but never create one
+(forcing: GOLDEN CHK 19.P, APPX IV.C.1).  Failure here is not hidden — it is the
+operational meaning of the consistency claim.
 ## 05.21 Lepton magnetic-moment and precision bridge rule
 A precision bridge claim must expose finite support, finite transport/trace readout, declared external scheme, uncertainty and negative-control protocol. Matching a central residual is not release evidence by itself.
 
