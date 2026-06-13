@@ -33,8 +33,6 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "03_THEORY_MAP" / "coverage_audit"
 BATCHES = OUT / "batches"
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-
 # --- source layers -----------------------------------------------------------
 GOLDEN_DIR = ROOT / "add" / "d0-main" / "books"
 V17_DIR = ROOT / "_QUARANTINE" / "v17_overshoots" / "01_BOOKS"
@@ -235,4 +233,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     raise SystemExit(main())
