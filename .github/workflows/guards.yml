@@ -21,6 +21,9 @@ jobs:
       - name: validate canonical registry
         run: python tools/validate_csv.py
 
+      - name: registered certs pass (existence != passes)
+        run: python tools/run_registered_certs.py
+
       - name: anti-promotion firewall (vs base-v14)
         run: python tools/check_firewall.py --base base-v14
 
