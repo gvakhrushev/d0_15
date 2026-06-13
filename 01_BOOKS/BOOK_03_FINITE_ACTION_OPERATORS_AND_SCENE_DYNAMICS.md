@@ -34,6 +34,53 @@ Book 03 supplies the response source used by matter, gravity and cosmology secto
 
 The D0 `finite incidence/clique complex` is a finite incidence/clique complex with cochains and boundary/coboundary operators. The D0 `finite variational operator stack` is a finite variational functional on this complex. A `tick` is a discrete evolution endomorphism, and a `single dimensional calibration section` is a single scale-section fixing dimensionalization without introducing a second mass anchor.
 
+The standard-language names above are the downstream reading. What they package is a finite spectral triple over the scene; the *why* that v14 kept the facts of but dropped is restored in the three forced readings below. The scene `K(9,11,13)` itself (rank 3 / nullity 30, the ABCD→Ω8 role alphabet) is owned by BOOK_01 and is cited here, not re-derived.
+
+### 03.1.1 The finite spectral triple `X_D0 = (A, H, D)` (DEF 15.2.1)
+
+The action operators of this book are not free instruments laid over an a-priori metric space; they are the data of a **finite spectral triple** `X_D0 = (A, H, D)` carried by the scene (forcing: GOLDEN DEF 15.2.1, BOOK-II-MECHANISM):
+
+1. **Algebra `A`** — the finite **path \*-algebra** of the scene `K(9,11,13)` over `Q(φ)`, with the involution `(·)*` induced by **path reversal**. `A` is *non*commutative, and that noncommutativity is not optional decoration: it is what records order memory (holonomy) along a path. Interaction in D0 is therefore an effect of scene topology — the failure of two path-words to commute — not an exogenous force catalog laid on top of it.
+2. **Hilbert space `H`** — finite-dimensional, `H = ℓ²(V)` (equivalently any faithful representation of `A` on a finite module), forced finite because `|V| < ∞`. No completion-to-infinity step is admitted in CORE.
+3. **Operator `D`** — the discrete **distinguishability operator** (Dirac-type) on the scene. Its *spectrum*, not a postulated ruler, fixes the geometry.
+
+The metric is then *derived from the spectrum of `D`*, not assumed. Distance on the scene is the **Connes distance** (forcing: GOLDEN FORMALISM 15.2.2, BOOK-II-MECHANISM):
+
+```math
+d(x,y) = \sup\{\, |a(x) - a(y)| : a \in \mathcal{A},\ \lVert [\mathcal{D}, a] \rVert \le 1 \,\}.
+```
+
+This is the load-bearing inversion v14 dropped: in v14 the only spectral-triple object is the noncommutative-solenoid *gravity* approximation (BOOK_07 line 201), which is downstream and approximate. The **finite scene triple** — `A` = path \*-algebra over `Q(φ)` with reversal involution, metric forced out of `spec(D)` by the Connes formula — is the primitive. Status: CORE-FORCING (forcing: GOLDEN DEF 15.2.1 + FORMALISM 15.2.2, BOOK-II-MECHANISM). The Clifford/Dirac operator bridge that lets this finite triple be read against the relativistic operator stack is carried by the existing cert `vp_v1145_operator_bridge_triple.py` (`PASS_V11_45_OPERATOR_BRIDGE_TRIPLE`).
+
+### 03.1.2 Spectral-action reading of mass and `α`; the zeta-residue route (THE 15.4.2)
+
+Once `D` is the carrier, the Laplacian is `Δ_G = D²` (default the normalized `L_sym` of the scene; a combinatorial Laplacian is flagged explicitly when used — either choice is fixed by the graph and adds no exogenous dimensionless parameter). Its spectrum sets the mass levels. The associated **spectral zeta-function** is (forcing: GOLDEN DEF 15.4.1, BOOK-II-MECHANISM):
+
+```math
+\zeta_\mathcal{D}(s) = \operatorname{Tr}\!\big(|\mathcal{D}|^{-s}\big) = \sum_n \lambda_n^{-s/2}.
+```
+
+The forcing that v14 retained only partially: the interaction coupling is **not** an input, it is read off the spectral action. The route is **THE 15.4.2** — `α⁻¹` is fixed by the **residue of `ζ_D` at the dimension pole**, i.e. `ζ_D(0)` at that pole (forcing: GOLDEN THE 15.4.2, BOOK-II-MECHANISM). This residue route is what connects the coupling to the **topological capacity 359** (BOOK_03 III.1 / D0 §9) and to the `Δ_α` **seam** that canonicalizes the numerical value of `α` (BOOK_03 III.2 / D0 §16.3). v14 carries the *outputs* of this — the A0 (volume) / A2 (EH-proxy) spectral-action ladder (BOOK_08 §08.32–08.34) and the `α_top⁻¹ = 359/φ² − φ⁻⁵` number (BOOK_02 §834) — but had dropped the *mechanism* that derives the coupling from `Res ζ_D`. That mechanism is the missing "why this `α`," restored here.
+
+The A0/A2 ladder stability that the residue route rides on is already certified: `vp_spectral_action_expansion_stability.py`. The zeta-residue derivation of `α⁻¹` itself is a declared **theorem target**, not a closed proof — the existing scaffold cert `vp_edge_alpha_trace.py` declares exactly this (`PASS_EDGE_ALPHA_TRACE_TARGET_DECLARED`, `PASS_EDGE_SECTOR_359_CHANNELS_DECLARED`, `PASS_PHI_MINUS_FIVE_SEAM_CORRECTION_DECLARED`) and makes no closure claim. Status: PROOF-TARGET (cert obligation open) for the `ζ_D`-residue → `α⁻¹` step (forcing: GOLDEN THE 15.4.2, BOOK-II-MECHANISM); the spectral-action ladder it sits on is CORE.
+
+### 03.1.3 Why the wavefunction is an algebraic sum of path memory-classes (THE 4.1.2)
+
+The triple also fixes *why* the state is what it is. A path `γ` on the scene contributes **not a number but a memory-class** — its **holonomy** in the path algebra (forcing: GOLDEN DEF II.3.1, BOOK-II-MECHANISM):
+
+```math
+\mathrm{Hol}(\gamma) := q(\gamma) \in \mathcal{Q} \subset \mathcal{A}.
+```
+
+The state at `x` is then the **algebraic sum of these memory-classes**, an element of the path algebra, not a pre-supposed complex amplitude (forcing: GOLDEN THE 4.1.2, BOOK-II-MECHANISM):
+
+```math
+\Psi(x) := \sum_{\gamma:\,0 \to x} \mathrm{Hol}(\gamma) \in \mathbb{Q}(\varphi)[\mathcal{Q}] \subset \mathcal{A}.
+```
+
+**The forcing — amplitudes add, not probabilities.** Suppose one summed `P(γ)` (probabilities) instead of `Hol(γ)` (memory-classes). Then the information distinguishing the paths — their relative order/phase — is destroyed: distinct histories that the scene *can* tell apart collapse to one number. That is loss of part of the history, which the completeness axiom forbids (no distinction the scene supports may be discarded). Therefore the sum must be over the algebraic memory-classes, and the classes interfere wherever the scene has cycles (`D ≥ 6`); constructive interference is the classical/geodesic trajectory. Status: CORE-FORCING (forcing: GOLDEN THE 4.1.2, BOOK-II-MECHANISM; completeness ⊥-argument).
+
+**Complex phase is packaging, not a primitive.** In CORE `Ψ(x)` is an algebraic sum in `A` and assumes no prior complex structure. To match quantum dynamics one needs a unitary representation of order memory; the *minimal* choice introducing no new parameter is the one-dimensional unitary representation `ρ : Q → U(1)`, `ρ(q(γ)) = e^{iθ(γ)}`. Complex numbers (modulus + phase) thus enter only as the minimal **U(1) BRIDGE-packaging** that secures unitarity and interference — not as a new CORE entity (forcing: GOLDEN REM II.3.A.1, BOOK-II-MECHANISM). This is the "why QM" forcing that v14 had dropped; v14's only holonomy object is the CKM phason holonomy (BOOK_04 §04.4.4, certs `vp_ckm_phason_holonomy.py` / `vp_ckm_holonomy_external_convention_passport.py`), a distinct downstream construct, not this path-algebra memory sum. The Born step that turns `|Ψ|` into a probability is the separate quadratic-origin result (cert `vp_born_quadratic_origin.py`), kept off this CORE line.
 ## 03.2 Role and boundary of this book
 
 Book 03 contains the finite action mechanism. It does not re-prove the condensed/profinite detector object, and it does not complete the particle, gravity or cosmology comparison protocols. Those are adjacent books.
@@ -74,14 +121,98 @@ The admissibility condition is:
 
 A sector formula that requires a new GeV, metre, second, Planck, nucleon, collider, or dark-sector anchor is not an action theorem.
 
+### 03.3.0 Why an action exists at all: the statistical sum over histories
+
+D0 does not postulate a Lagrangian `\mathcal L` and integrate `e^{i\int\mathcal L}`. It asks the prior question — *how do you score the statistics of all admissible histories at finite resolution without an external choice rule?* — and the action falls out as the answer. The carrier is the CORE statistical sum over histories (forcing: GOLDEN DEF II.3.APPX8.2.1, BOOK-II-MECHANISM):
+
+```math
+Z_D(k):=\sum_{\gamma\in\Gamma_D(k)} w(\gamma)\,[q(\gamma)],
+```
+
+with `\Gamma_D(k)` the admissible histories at refinement level `k`, `w(\gamma)` the history weight, and `[q(\gamma)]` the memory class (topological charge/phase) in the role algebra `\mathcal A`.
+
+**The weight is forced to be `w=\varphi^{-S}` — exponential, base `\varphi`** (forcing: GOLDEN THE II.3.APPX8.2.1a, BOOK-II-MECHANISM). The form is not a postulate; three constraints close it with no freedom:
+
+1. **Multiplicativity.** The probability of a composite history `A\to B\to C` of independent steps must factor: `w(A\to C)=w(A\to B)\,w(B\to C)`.
+2. **Additivity of cost.** Code length of a composite history adds: `S_{total}=S_1+S_2`.
+3. **Unique sum-to-product map.** The only function carrying a sum to a product is the exponential, `w(S)=b^{-S}`. A non-exponential weight would need an external table reconciling addition with multiplication — an exogenous catalog, ⊥M1 (DEF-0.2.2).
+4. **Unique base.** The only scale number available in CORE is `\varphi` (the `p+p^2=1` fixed point, owned BOOK_01), so `b=\varphi`.
+
+Hence `w(\gamma)=\varphi^{-S(\gamma)}`. The BRIDGE packaging `\varphi^{-S}=e^{-S\ln\varphi}` recovers the Boltzmann/Gibbs form, and the analytic continuation `S\to iS` recovers the quantum amplitude. Status: CORE-FORCING (forcing: GOLDEN THE II.3.APPX8.2.1a, BOOK-II-MECHANISM; ⊥-proof, three-constraint closure).
+
+**Locality is a theorem, not an assumption** (forcing: GOLDEN LEM II.3.APPX8.2.2, BOOK-II-MECHANISM). If a scene splits into two parts with no path between them, then `Z_{total}=Z_1\cdot Z_2`. This cluster decomposition is guaranteed by the structure of the algebra `\mathcal A` and is exactly the statement that "physics here" does not depend on "physics in another galaxy". Status: CORE-FORCING (forcing: GOLDEN LEM II.3.APPX8.2.2, BOOK-II-MECHANISM).
+
+### 03.3.0a Action is assembly cost, not an imported functional
+
+With the weight fixed, the action `S(\gamma)` of a history is forced to be its net assembly cost — resolution friction minus distinguishability gain (forcing: GOLDEN DEF, BOOK-II-MECHANISM §II.3.APPX8.3.A):
+
+```math
+S(\gamma):=\sum_{e\in\gamma}\operatorname{Cost}(e)\;-\;\sum_{v\in\gamma}\operatorname{Info}(v).
+```
+
+The edge sum `\sum_e\operatorname{Cost}(e)` is the resolution (UV-cutoff `\kappa`) price of traversing edges — the "friction" of the medium. The vertex sum `\sum_v\operatorname{Info}(v)` is the distinguishability gain: at each branch the history commits a choice (a bit), lowering uncertainty entropy. There is no place to insert an imported continuum Lagrangian density: the action is read off the graph history.
+
+**No coupling constant may be multiplied in front** (forcing: GOLDEN THE, BOOK-II-MECHANISM §II.3.APPX8.3.2). Standard QFT writes `\tfrac{1}{g^2}\int\dots`. In CORE this prefactor is forbidden: any `\lambda\notin\{1,\varphi^n\}` is an external Catalog of interaction strength, ⊥M1. Interaction strength must be *derived* from graph topology — as `\alpha^{-1}` is derived from the 359-channel scene count downstream — never inserted as a multiplier into the action. Status: CORE-FORCING (forcing: GOLDEN THE II.3.APPX8.3.2, BOOK-II-MECHANISM; ⊥M1 on the coupling prefactor).
+
+**Least action `\delta S=0` is the Minimum Description Length tautology** (forcing: GOLDEN COR II.3.APPX8.3.A.2, BOOK-II-MECHANISM). Because the most probable history is the cheapest to encode in `\Sigma`, stationarity of `S` is not an additional physical postulate layered on the weight `\varphi^{-S}`; it is the same statement read at the classical limit. "Most probable" = "shortest code" = `\delta S=0` (MDL). Status: CORE-FORCING (forcing: GOLDEN COR II.3.APPX8.3.A.2, BOOK-II-MECHANISM; tautology, not postulate).
+
+**A Feynman diagram is an equivalence class of histories, not a drawn line** (forcing: GOLDEN DEF, BOOK-II-MECHANISM §II.3.APPX8.4.1). A diagram is `[\gamma]_\sim` — the class of all histories sharing one topology (loop count, branch vertices, external legs). A loop is literally a closed memory cycle `P` (the light-cycle of the spectrum book); loops therefore *create* mass and charge here rather than merely correcting them, and the standard QFT divergences are the artifact of treating finite-size cycles as points (structural limit `\kappa_k`). Status: CORE-FORCING (forcing: GOLDEN DEF II.3.APPX8.4.1, BOOK-II-MECHANISM).
+
+### 03.3.0b The smooth limit: how the variational/Lagrangian language is recovered
+
+The `t,v,\nabla` language and the variational calculus are a BRIDGE packaging of the smooth limit — the CORE content is: *classical motion is the dominance of the minimal-code history under coarse-graining* (forcing: GOLDEN BRIDGE 11.C, BOOK-III-SPECTRUM). Newton's laws are then a theorem of the Information Economy Principle, not an input.
+
+**Information Economy Principle** (forcing: GOLDEN DEF 11.C.1, BOOK-III-SPECTRUM). Tracking a macro-object is continuous prediction of its position. The description cost `J` of a trajectory splits into:
+
+- **Potential `V` (cost of position).** The price of sitting at an "expensive" graph location — where cycle density `\varrho` is high. High cycle density is exactly what gravity is in D0; so `\operatorname{Cost}_{pos}=V(x)`.
+- **Kinetic `T` (prediction savings of inertia).** If the object coasts on its velocity vector, the predictor "it is where the vector says" guesses with zero error; the faster the coast, the more strongly the predictor compresses the data. In the smooth limit this packages as `T(v,m)`, written `T=\tfrac12 mv^2` after a unit/normalization choice (BRIDGE).
+
+**Lagrangian as balance, least action from path probability** (forcing: GOLDEN THE 11.C.2, BOOK-III-SPECTRUM). The code length of a history is the balance
+
+```math
+L_{code}=\operatorname{Cost}_{pos}-\operatorname{Benefit}_{pred}=V-T,
+```
+
+equal up to sign convention to the physicists' `L=T-V`. Inheriting the weight of §03.3.0, the path realization probability is `P\sim\varphi^{-L_{code}}`. In the classical limit only the minimal-code path survives, so
+
+```math
+\delta\!\int (T-V)\,dt=0,
+```
+
+which is the Principle of Least Action — derived, not assumed. The packaged stationarity gives `\tfrac{d}{dt}(mv)=-\nabla V`, i.e. `F=ma`: force is the gradient of informational complexity, and a body "rolls" to where computing its existence is cheapest. Status: CORE-FORCING (forcing: GOLDEN THE 11.C.2, BOOK-III-SPECTRUM; least action from `P\sim\varphi^{-L_{code}}` survival). This is the smooth-limit twin of the finite stationarity condition stated in §03.8; the finite stationarity `\nabla_{x\in\mathcal X_N}\mathcal S_{stack}=0` is the primitive, and `\delta\int(T-V)dt=0` is its coarse-grained image.
+
+### 03.3.0c Renormalization is forbidden except for the `\kappa`-residual
+
+D0 keeps the counterterm ban absolutely: in CORE, renormalization is *not* a free choice of scheme plus added counterterms. Any hand-chosen counterterm is an exogenous correction parameter, ⊥M1 (forcing: GOLDEN REM II.D.RG.NOCT, BOOK-II-MECHANISM). The *only* admissible "renormalization" is the `\kappa`-residual `r_k` that arises from finite level resolution and is controlled by the `\kappa`-bound: it is not selected by hand and it vanishes on refinement (`r_k\to 0` as `k\to\infty`; see BOOK_05 `\kappa`-stabilization). Running couplings are then an artifact of information compression under the forgetting projection `\pi_{k+1\to k}`, and the RG equation is the conservation-of-information law across scale — adding no new fields or thresholds. Status: CORE-FORCING (forcing: GOLDEN REM II.D.RG.NOCT + THE II.3.APPX8.5.2, BOOK-II-MECHANISM; counterterm ban + `\kappa`-residual as the unique admissible residual).
+
+### 03.3.1 Operator non-commutativity is the structural time arrow
+
+The assembly operators of §03.3 do not freely permute, and that is forced. With `J` the puncture/localize operator (distributed core/memory mode `\odot 9` → local observed-event mode `5`) and `Y` the closure/shell-glue operator (compactify the outer scene zone `13` into effective `4D+64` boundary conditions), their commutator is non-zero:
+
+```math
+[J,Y]=J\circ Y-Y\circ J\neq 0.
+```
+
+**This is a necessary consequence of M1** (forcing: GOLDEN THE 51.4, BOOK-VI-EXTENSIONS). If assembly order were irrelevant — if `J` and `Y` commuted — then "what to fix, and when" would have to be supplied by an external ordering catalog (rules of assembly priority), which is ⊥M1 (DEF-0.2.2). Order-independence demands the very catalog M1 forbids, so order must matter; `[J,Y]\neq 0` is the structural arrow of time, not a metaphysical add-on. Status: CORE-FORCING (forcing: GOLDEN THE 51.4, BOOK-VI-EXTENSIONS; ⊥M1 on an external ordering catalog).
+
+This is a distinct forcing from BOOK_01's torus-shell non-commutativity (torus radius vs phase drift) and BOOK_04's generation-selector non-commutativity: those concern a different operator pair. The `[J,Y]\neq 0` arrow is owned here, at the assembly-operator level.
+
+**Constructive witness (no metaphysics).** The non-commutativity has an explicit, finite witness on the history space `H` of pairs `(\Gamma,\approx)`, where `\Gamma` is the set of paths/events and `\approx` is the indistinguishability (equivalence) relation after canonization `Can` (forcing: GOLDEN LEM 51.4.A, BOOK-VI-EXTENSIONS):
+
+- `Y` acts as the **shell**: first it changes the equivalence relation (`\approx\to\approx_Y`), gluing events that were distinguishable only by the outer scene part (zone `13`), then it applies `Can` on the new relation.
+- `J` acts as the **puncture**: first it generates a localization (inserts/marks a defect, zone `9`) in `\Gamma`, then it applies `Can` under the *old* relation.
+
+Because `Can` depends on the equivalence-class structure, changing `\approx` before `Can` changes the localization result in `\Gamma` after `Can`. So `Y\circ J` ("event then packaging" → reproducible memory) is distinguishable from `J\circ Y` ("packaging/description then attempted localization" → noise with no access to history) without introducing any external priority rule. This is `[J,Y]\neq 0` realized as a concrete order-dependence of `Can`, not an assertion. Status: PROOF-TARGET (cert obligation open) — the finite witness `(\Gamma,\approx,\mathrm{Can})` order-dependence is stated combinatorially but carries no `vp_*.py` witness of its own yet; do not cite a cert here.
+
+### 03.3.2 The closed feedback action component
+
 The closed feedback action component is `S_fb = -log det(I - z F_N)`, where `F_N=P_N U_N^dagger Q_N U_N P_N` is feedback-return, not positive response. The source is
 
 ```math
 \Pi_{fb}=z(I-zF_N)^{-1},\qquad dS_{fb}=\operatorname{Tr}(\Pi_{fb}\,dF_N).
 ```
 
-The log/Neumann expansion is allowed only under `|z|\rho(F_N)<1`; the resolvent itself only requires `z^{-1}` outside the spectrum. Its variation is represented by the finite feedback source owner `D0.Cosmology.FeedbackPartitionFunction`; pressure and finite PVT are owned by `D0.Cosmology.FiniteFeedbackEquationOfState`. The ideal-gas postulate is a no-go core shortcut, not the D0 pressure law.
-
+The log/Neumann expansion is allowed only under `|z|\rho(F_N)<1`; the resolvent itself only requires `z^{-1}` outside the spectrum. Its variation is represented by the finite feedback source owner `D0.Cosmology.FeedbackPartitionFunction` (cert `vp_feedback_partition_function.py`); pressure and finite PVT are owned by `D0.Cosmology.FiniteFeedbackEquationOfState` (cert `vp_finite_feedback_equation_of_state.py`). The ideal-gas postulate is a no-go core shortcut, not the D0 pressure law. This feedback action is the finite, resolvent-form instance of the same `-\log`-of-an-operator-determinant structure that the statistical sum `Z_D` of §03.3.0 produces under `w=\varphi^{-S}`: the partition function over histories and the feedback determinant are the same admissible object read at two scene scales.
 ## 03.4 Scene/finite variational test functional backbone
 
 The finite incidence/clique complex is not background spacetime. It is the finite register on which action can be evaluated. The active action spine is:
@@ -275,6 +406,52 @@ P(i\to f)=|\langle f|\mathcal S_{finite}|i\rangle|^2
 
 provided the states are finite detector states and the bridge to external kinematics is typed. Collider and scattering comparison protocols are handed to Book 04.
 
+### Why the registry is finite, and why amplitudes (not probabilities) populate it
+
+The discipline above is not a stylistic choice — every clause is forced. A vertex registry is *admissible at all* only because the deep-QM forcing chain (forcing: GOLDEN Appendix II.C / APPX-4, THE II.3.APPX4.*) closes each escape route to an external catalog. We integrate that chain here in place, because §03.10 is where the transition operator and its vertices live; the downstream FACTS (positive Born response `R = D^\dagger D`, the feedback partition object, readout → ordered update) are stated elsewhere but their *why* was dropped in v14. We restore it.
+
+**(a) Finite alphabet ⇒ finite vertex set — the Fundamental Finiteness Theorem.** Fix a level `k` with resolution cutoff `\(\kappa_k := \varphi^k\)` (forcing: GOLDEN DEF II.3.APPX4.1.1; the single scale `\(\varphi\)` is owned by BOOK_01, no external scale is admitted). A test `T` is a distinguishing procedure with a finite code; only tests of cost `\(\mathrm{Cost}(T)=|D_{\min}(T)|\le\lfloor\kappa_k\rfloor\)` are admissible at level `k`. Then the set `\(V_k\)` of distinguishable states is finite:
+
+```math
+\kappa_k<\infty,\;\;|C|<\infty\;\Longrightarrow\;\#\{\text{codes of length}\le\kappa_k\}<\infty\;\Longrightarrow\;\#\{\text{outcome profiles}\}<\infty\;\Longrightarrow\;|V_k|<\infty.
+```
+
+Status: FORCED (forcing: GOLDEN THE II.3.APPX4.2.2a). Consequence for this section: the vertex registry `\(\mathcal S_{finite}\)` is a *finite* table at every level. There are no continuum vertices in CORE. QFT-style divergences are not physical — they are the artifact of an unphysical limit `\(k\to\infty\)` taken without carrying the level structure of `\(V_k\)`. This is exactly the "finite detector states" hypothesis above, now derived rather than assumed.
+
+**(b) Minimal refinement arity = 2 — vertices are binary with `\(\varphi^{-1}/\varphi^{-2}\)` weights.** A vertex is the elementary act by which a node `\(v\in V_k\)` splits into `\(m\)` children in `\(V_{k+1}\)`. The arity is forced to `m = 2` by M1:
+- `m = 1`: no new distinction — the refinement is vacuous, not a vertex at all.
+- `m > 2`: the split needs branch weights `\(p_1,\dots,p_m\)`. From the scalar `\(\varphi\)` alone no symmetry group fixing `m>2` equiprobable branches is derivable; any hand-chosen weights are an *external catalog of branch weights* — banned.
+- `m = 2`: the only survivor. The two weights are fixed by the canonical partition of unity `\(\varphi^{-1}+\varphi^{-2}=1\)` (owned by BOOK_01), giving the asymmetric vertex weights `\(S_\pm=(\varphi^{-1},\varphi^{-2})\)`.
+
+Status: FORCED (forcing: GOLDEN THE II.3.APPX4.0A.7). So every admissible transition operator factors through binary, `\(\varphi\)`-weighted vertices: the registry alphabet is fixed, not free.
+
+**(c) Why amplitudes, not probabilities — order-memory forbids scalar summation.** Distinct paths `\(\gamma_1,\gamma_2\)` between the same endpoints carry distinct holonomies `\(\mathrm{Hol}(\gamma_1)\neq\mathrm{Hol}(\gamma_2)\)` (order memory, owned by BOOK_01's `\(F_N\)`/`\(\Sigma\)` history structure). If the registry summed scalar probabilities, `\(P(u\to v)=\sum_i P(\gamma_i)\)`, it would erase `\(\mathrm{Hol}\)` — and an erased order-memory leaves `\(\Sigma\)` incomplete, contradicting its definition. The only summation that preserves order is over (weight, holonomy) pairs, i.e. over **vectors**:
+
+```math
+D_k(u\to v):=\sum_{\gamma\in\mathrm{Path}_k(u\to v)} W(\gamma)\,[\mathrm{Hol}(\gamma)],\qquad W(\gamma)=\prod_i\varphi^{-a_i}.
+```
+
+The sum is finite (path length bounded by `\(\kappa_k\)`, by (a)). Status: FORCED (forcing: GOLDEN THE II.3.APPX4.10A.6, DEF II.3.APPX4.13.1). This is why the registry stores transition *amplitudes* `\(\langle f|\mathcal S_{finite}|i\rangle\)` and squares only at the readout step — the "wave function" is a registry of alternative histories tagged by their topological holonomy class, nothing more.
+
+**(d) Readout = parameter-free Bayesian conditioning — the only catalog-free collapse.** When outcome `i` lands the state in `\(A_i\subset V_k\)`, the operational measure `\(\sigma_k\)` updates by the unique parameter-free operation:
+
+```math
+\sigma_{new}(v)=\frac{\sigma_{old}(v)\,\mathbf 1[v\in A_i]}{\sum_{u\in A_i}\sigma_{old}(u)}.
+```
+
+Any *dynamical* collapse (GRW-style wave-packet contraction) imports a free "compression rate"/"compression shape" constant — an external catalog — and is therefore banned. Status: FORCED (forcing: GOLDEN THE II.3.APPX4.9.3). For the registry this fixes the post-scattering update: the readout `→` ordered-update step (the FACT recorded downstream) is *forced* to be conditioning, not a tunable channel.
+
+**(e) Born = Gleason — the unique phase-invariant additive translation vectors → probabilities.** To read a probability off the amplitude vector `\(\Psi\)`, map holonomies to the `\(U(1)\)` representation `\([\mathrm{Hol}]\mapsto e^{i\theta}\)`. Physics may not depend on the global phase offset, so the translation `\(f:\Psi\mapsto\mathbb R_{\ge0}\)` must be (i) additive on orthogonal events and (ii) phase-blind `\(f(e^{i\alpha}\Psi)=f(\Psi)\)`. The unique such form is the quadratic `\(\langle\Psi|\Psi\rangle\)` — Gleason, adapted. Status: FORCED. Certificate (05_CERTS): `vp_born_quadratic_origin.py` — quarter-turn probes force the quadratic form `(a,b,c)=(1,0,1)`, with phase-blindness and the parallelogram law verified on a rational grid (forcing: GOLDEN THE II.3.APPX4.B.2). This is the derivation of the `\(|\cdot|^2\)` in `\(P(i\to f)=|\langle f|\mathcal S_{finite}|i\rangle|^2\)` above: the square is not postulated, it is the only honest vectors→probabilities translation. (The positive Born response `\(R=D^\dagger D\)` and the entropy/`\(\Lambda_{act}^0\)` probability weighting are stated in §03.6 — owner — and not re-derived here.)
+
+**(f) Geometry sum is background-independent — vertices live on a dynamical graph, not a fixed lattice.** The graph `\(G_k\)` carrying the registry cannot be fixed in advance: a fixed adjacency table is a huge arbitrary *external catalog of edges* (banned by M1), so the graph must itself be a refinement variable. The catalog-free statistics over geometries is the QG partition object
+
+```math
+\mathcal Z_k:=\sum_{(G,J)}\varphi^{-A(G,J)},
+```
+
+with `\(A(G,J)\)` the assembly cost (minimal code length of the geometry). Status: FORCED (forcing: GOLDEN LEM II.3.APPX4.15.2, DEF II.3.APPX4.16.3). Caveat for cross-references: this `\(\mathcal Z_k\)` is the *diagram/geometry* sum — it is **not** the same object as the feedback partition `\(Z_N=\mathrm{Tr}\,e^{-\beta\Delta}\det(I-zF)^{-1}\)` used elsewhere in the action machinery; do not conflate them.
+
+**Net.** Clauses (a)–(f) discharge, one by one, every external-catalog escape a scattering registry could smuggle in: finiteness of the vertex table (a), fixed binary `\(\varphi\)`-weighted vertex alphabet (b), amplitude-valued (not probability-valued) entries (c), forced conditioning readout (d), the forced `\(|\cdot|^2\)` translation (e), and a dynamical-graph carrier (f). The "finite S-matrix registry" stated at the top is therefore the *only* M1-admissible transition object; the collider/kinematic comparison that consumes it is handed to Book 04.
 ## 03.11 Electroweak and photon channels as action layers
 
 The electroweak material is retained as an action-layer owner block. Book 03 owns the action layer:
@@ -664,8 +841,196 @@ The dimensionless torus aspect is frozen as
 
 with the algebraic core owner `D0.Geometry.TorusCore13GeometryOrigin`.  Book 03
 does not use PDG data to create this geometry; PDG Core-13 is an external
-embedding passport.
+embedding passport (`vp_core13_shell_geometry_passport.py` is a PDG diagnostic,
+not the forcing cert).
 
+The trace ladder above states the FACTS (`3`, `4`, `11`, the K(9,11,13) home).
+What follows restores the *forcing* the v14 books dropped: each of the four shell
+quantities is not read off the `T`-traces by analogy — it is the unique M1
+survivor of a distinguish-itself-without-a-catalog requirement.  The chain runs
+outside-in: anchor 4 -> two loops -> torus -> defect -> closing shell + phi ->
+address step +2 -> nested 9-11-13.
+
+### 03.23.1 D_anchor = 4 is irreducible (the ABCD capacity)
+
+Status: FORCED (forcing: GOLDEN THE 3.4.B).
+
+`|Tr(T^3)| = 4` is the ABCD capacity; the forcing says *why a closed scene needs
+exactly 4*.  A minimal closed scene must realize exactly the four ABCD roles of
+the role alphabet (alphabet owned at BOOK_01 01.7 / BOOK_02 02.4; cite, do not
+re-derive):
+
+```text
+A = Scale    (closure phi/psi)
+B = Memory   (the torus, below)
+C = Defect   (novelty / order)
+D = Closure  (the boundary shell)
+```
+
+The "4" is the minimal count of realizable roles, not a count of space
+dimensions. The fork is M1:
+
+- `D_anchor < 4`: some role is unrealized -> the scene is not closed -> an
+  external prop is needed to stand in for the missing role. Banned.
+- `D_anchor > 4`: empty address slots appear; to tell an empty slot from a
+  significant one you must import an exogenous significance catalog. Banned.
+
+Both deviations re-introduce the external catalog M1 forbids, so `D_anchor = 4`
+is the unique survivor. This anchor 4 is the start summand of the address
+ladder (03.23.6).
+
+### 03.23.2 One loop cannot carry memory -> a second independent loop is forced
+
+Status: FORCED (forcing: GOLDEN THE 3.5.A).
+
+`|Tr(T^5)| = 11` is named the "memory torus"; the forcing says *why memory needs
+two cycles, not one*. Reduction to a mode catalog:
+
+1. Suppose a single loop `gamma`, topology `Z`. Its state is one integer `k`
+   (the class `gamma^k`); every operation just changes `k`.
+2. `k` alone cannot say which mode produced it: Write (change `k`) vs Read
+   (sample `k` without changing it) are indistinguishable from the value.
+3. Separating the modes needs an exogenous flag `M in {R,W}`.
+4. `M` is not derivable from the topology `Z` -> it is an external catalog. Banned
+   by M1.
+
+The only M1-admissible fix is a *second independent loop*: one cycle carries the
+Value, the other carries the Operation/Access. A lone `Z` is structurally blind
+to write-vs-read; two independent cycles is the minimum that is not.
+
+### 03.23.3 The torus T^2 is the minimal two-cycle carrier
+
+Status: FORCED (forcing: GOLDEN THE 3.6.A).
+
+Given two independent closed loops (write/read) that are not powers of one
+another, the minimal orientable compact carrier is the genus-`g=1` surface, i.e.
+the torus `T^2`:
+
+- For an orientable surface of genus `g`, the first homology `H_1` has rank `2g`.
+- Two independent cycles therefore force `g >= 1`.
+- `g = 1` (the torus) is the minimal case and realizes exactly two independent
+  cycles.
+- `g >= 2` over-supplies cycles: choosing *which* pair is write/read is a
+  non-canonical basis choice = an external catalog. Banned by M1.
+
+So `T^2` is the unique minimal home of the two forced loops — this is the
+homology-rank derivation behind the `D=11` "memory torus core shell", which the
+v14 trace ladder asserted but did not prove.
+
+### 03.23.4 A defect is necessary: pure T^2 loses order
+
+Status: FORCED (forcing: GOLDEN THE 3.7.B).
+
+The `D=9` shell is named a "puncture/interface" shell; the forcing says *why a
+puncture/defect is mandatory*, not decorative. By contradiction:
+
+1. On a pure torus the fundamental group `pi_1(T^2) = Z^2` is abelian — any two
+   base loops commute.
+2. Then "Write then Read" and "Read then Write" lie in the same path class: the
+   *order* of the two operations is not encoded.
+3. But history-memory (03.2) requires order to leave a distinguishable effect,
+   else history collapses to a mere counter.
+4. The minimal way to break commutativity without adding extra cycles (which
+   would demand a choice catalog) is a single defect `(.)`, injecting a
+   non-commutative holonomy on the same loop basis.
+
+The contradiction is removed only with one defect. The `D=9` puncture is thus the
+minimal noncommutativity injection that recovers order memory — forced, not a
+labelling convenience.
+
+### 03.23.5 The outer shell + phi-scaling are necessary for closure
+
+Status: FORCED (forcing: GOLDEN THE 3.9.A).
+
+The v14 line fixes the aspect `(R+r)/(R-r) = phi^5` and owns
+`TorusCore13GeometryOrigin`, but states the geometry as a result. The forcing
+supplies the necessity of `D=13`:
+
+- An interior defect (03.23.4) plus a memory-circulation zone (03.23.3) leaves
+  the global topology open; closing it requires an outer shell (the Closure role
+  `D` of 03.23.1).
+- The shell's scaling cannot carry a free parameter (M1). The only
+  self-consistent parameter-free scale is the positive root of
+
+```text
+r^2 - r - 1 = 0   =>   r = phi
+```
+
+equivalently the coarse-graining fixed point `r = 1 + 1/r` (shell contribution
+`1` plus inversion/memory contribution `1/r`, normalized by one constant fixed to
+`c := 1` in CORE). So the outer shell *must* exist and *must* scale by `phi`;
+nothing else closes the topology without an exogenous scale catalog. The `phi^5`
+aspect (03.23.6) is then the orientation-preserving address gap between the
+defect shell and the outer shell, not an independent input.
+
+### 03.23.6 Address step +2 forces the spectrum {9, 11, 13}
+
+Status: FORCED (forcing: GOLDEN THE 3.11.B; Lucas/orientation machinery owned at
+BOOK_05 §05 and BOOK_06 06.36, `Tr(T^n) = (-1)^n L_n`).
+
+The v14 corpus has the signed-Lucas machinery but attaches it to the toral time
+operator, not to the *address ladder*. Forcing of the step and the exact triple:
+
+1. In CORE the scale powers `phi^n` are approximated by integer Lucas numbers
+   `L_n = phi^n + psi^n`, `psi = -phi^-1`.
+2. The approximation error fixes a `Z_2` orientation class:
+
+```text
+eps_n := phi^n - L_n = -psi^n = (-1)^{n+1} phi^-n
+```
+
+   so `n=5` carries holonomy parity `+`, `n=6` carries parity `-`.
+3. A step `+1` (`5 -> 6`) flips the orientation/holonomy class; gluing the layers
+   then needs an exogenous `Z_2` orientation bit not stored in the address. That
+   is an external catalog. Banned by M1. (Equivalently: `+1` makes time-gluing a
+   twist rather than a cylinder, requiring an external choice of global heat-trace
+   direction.)
+4. A step `+2` (`5 -> 7`) preserves the orientation class; the gluing closes with
+   no external parameter. So the address step is forced to `+2`.
+
+Starting from `D_anchor = 4` (03.23.1) plus the operational start `D_Sigma = 5`
+(5 distinguished address classes, below which roles collide), the ladder is:
+
+```text
+Defect : 4 + 5 = 9
+Memory : 9 + 2 = 11
+Shell  : 11 + 2 = 13
+```
+
+Any step other than `+2` re-imports an external gluing parameter, so `{9,11,13}`
+is the unique M1-admissible spectrum. The address gap defect->shell is `13 - 9`
+in integer addresses; in the continuous `phi`-scale it is the `phi^5` aspect of
+03.23.5 (Lucas `L_5 = 11`, the integer image of the same return — cf. BOOK_06
+06.37 for the `phi^5 = 11 + xi5` split).
+
+### 03.23.7 Nested three-zone: Shell(13) ⊃ Torus(11) ⊃ Defect(9)
+
+Status: FORCED (forcing: GOLDEN THE 3.12.B).
+
+The three shells are not three independent radii; they nest, and the nesting has
+a direction. The minimal configuration is
+
+```text
+Shell (13)  ⊃  Memory-torus (11)  ⊃  Defect (9)
+R+r            R                     R-r
+```
+
+forced by closing the scale *from outside inward*: there is no external scale
+catalog to anchor an absolute radius, so the only self-consistent assignment is
+the relative nesting where the outer Closure shell (13) contains the memory zone
+(11) which contains the defect core (9). The v14 section gave this nesting as a
+structural reading of the aspect ratio; the forcing is that the outside-in
+closure is the *only* parameter-free way to order the three zones.
+
+### 03.23.8 Embedding boundary
+
+The geometry above is forced internally (03.23.1–03.23.7) with no SI length and
+no external mass unit. The PDG Core-13 passport
+(`vp_core13_shell_geometry_passport.py`) is an external-data *diagnostic* that
+reproduces the frozen Core-13 embedding discipline against pinned PDG masses; it
+does not create, tune, or promote any of the operators forced here. The downstream
+flavour/generation use of this geometry lives at BOOK_04 04.T (Torus/Core13 matter
+integration boundary).
 ## 03.24 Lefschetz finite incidence/clique complex counts from the time ladder
 
 The anti-periodic finite incidence/clique complex count is read as
