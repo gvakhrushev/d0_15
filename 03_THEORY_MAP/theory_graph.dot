@@ -210,6 +210,7 @@ digraph D0Theory {
   "D0-TIME-2D-PISOT-001" [label="D0-TIME-2D-PISOT-001\\nCORE-FORMALIZED\\nsmooth_geometry", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-MIXING-HIERARCHY-INVERSION-001" [label="D0-MIXING-HIERARCHY-INVERSION-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-SIGNATURE-31-SPLIT-001" [label="D0-SIGNATURE-31-SPLIT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-ALPHA-ZETA-RESIDUE-001" [label="D0-ALPHA-ZETA-RESIDUE-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1342,4 +1343,10 @@ digraph D0Theory {
   "D0-SIGNATURE-31-SPLIT-001" -> "cert:vp_signature_31_split.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-SIGNATURE-31-SPLIT-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Spectral.ZetaResidueAlpha" [label="D0.Spectral.ZetaResidueAlpha", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-ALPHA-ZETA-RESIDUE-001" -> "module:D0.Spectral.ZetaResidueAlpha" [label="module"];
+  "cert:vp_zeta_residue_alpha.py" [label="vp_zeta_residue_alpha.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-ALPHA-ZETA-RESIDUE-001" -> "cert:vp_zeta_residue_alpha.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-ALPHA-ZETA-RESIDUE-001" -> "domain:formal_core" [label="domain"];
 }

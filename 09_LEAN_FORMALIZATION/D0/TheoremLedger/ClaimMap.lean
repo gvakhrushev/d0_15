@@ -330,7 +330,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-MIXING-HIERARCHY-INVERSION-001", moduleName := "D0.Claims.MixingHierarchyInversion",
       theoremName := "mixing_hierarchy_inversion", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SIGNATURE-31-SPLIT-001", moduleName := "D0.Claims.Signature31Split",
-      theoremName := "signature_31_split", status := ClaimStatus.leanCoreProved }
+      theoremName := "signature_31_split", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALPHA-ZETA-RESIDUE-001", moduleName := "D0.Spectral.ZetaResidueAlpha",
+      theoremName := "zeta_residue_alpha_finite", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

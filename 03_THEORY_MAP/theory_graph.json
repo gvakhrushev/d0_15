@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 209,
+    "claims": 210,
     "release_status": {
       "CORE-FORMALIZED": 89,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 67,
+      "CERT-CLOSED": 68,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -19,7 +19,7 @@
       "PROOF-TARGET": 12
     },
     "lean_status": {
-      "LEAN_PROVED": 108,
+      "LEAN_PROVED": 109,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
       "PYTHON_CERTIFIED": 78,
       "DEPRECATED": 2,
@@ -29,12 +29,12 @@
       "core": 90,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 76,
+      "certificate": 77,
       "deprecated": 2,
       "frontier": 12
     },
     "domain": {
-      "formal_core": 122,
+      "formal_core": 123,
       "rg": 3,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -6827,6 +6827,44 @@
       "label": "vp_signature_31_split.py",
       "path": "05_CERTS/vp_signature_31_split.py",
       "exists": true
+    },
+    {
+      "id": "D0-ALPHA-ZETA-RESIDUE-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-ZETA-RESIDUE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_03",
+      "section": "spectral zeta residue route (THE 15.4.2)",
+      "lean_module": "D0.Spectral.ZetaResidueAlpha",
+      "lean_theorem": "zeta_residue_alpha_finite",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_zeta_residue_alpha.py",
+      "python_cert": [
+        "vp_zeta_residue_alpha.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|, zeta_adj(0)=3=rank; one zeta carries alpha+capacity. phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/ZetaResidueAlpha.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.ZetaResidueAlpha",
+      "kind": "lean_module",
+      "label": "D0.Spectral.ZetaResidueAlpha",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/ZetaResidueAlpha.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_zeta_residue_alpha.py",
+      "kind": "python_cert",
+      "label": "vp_zeta_residue_alpha.py",
+      "path": "05_CERTS/vp_zeta_residue_alpha.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -9658,6 +9696,21 @@
     {
       "source": "D0-SIGNATURE-31-SPLIT-001",
       "target": "cert:vp_signature_31_split.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-ZETA-RESIDUE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-ZETA-RESIDUE-001",
+      "target": "module:D0.Spectral.ZetaResidueAlpha",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-ZETA-RESIDUE-001",
+      "target": "cert:vp_zeta_residue_alpha.py",
       "kind": "certified_by"
     }
   ]

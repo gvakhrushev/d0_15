@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 2660 / 3767 (**70.6%** of track-fair max)
-- **Core spine:** 2268 / 3360 (headroom **1092** points to take every core claim to L5)
-- Claims: 208 active (209 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 2672 / 3787 (**70.6%** of track-fair max)
+- **Core spine:** 2280 / 3380 (headroom **1100** points to take every core claim to L5)
+- Claims: 209 active (210 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
@@ -32,6 +32,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | claim | domain | at | -> | +pts | effort |
 |---|---|---|---|--:|---|
+| `D0-ALPHA-ZETA-RESIDUE-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-EDGE-ALPHA-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-GRAV-006` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-HORIZON-JET-001` | frontier | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
@@ -56,7 +57,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-CVFT-F4` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F7` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -92,7 +92,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 122 | 1698 | 2340 | 637 |
+| formal_core | 123 | 1710 | 2360 | 645 |
 | frontier | 12 | 29 | 240 | 211 |
 | cosmology | 22 | 354 | 419 | 65 |
 | empirical_passport | 16 | 120 | 187 | 62 |
@@ -139,6 +139,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
 | BOOK_05/08 | 2 | 19 | 32 | 13 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
+| BOOK_03 | 1 | 12 | 20 | 8 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
 | BOOK_01/03/06/07/08 | 1 | 11 | 11 | 0 |
 | BOOK_04/07 | 2 | 9 | 40 | 31 |
