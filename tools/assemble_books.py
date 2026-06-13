@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import io
+import json
 import sys
 from pathlib import Path
 
@@ -34,11 +35,29 @@ def section_dirs() -> list[Path]:
     return sorted(d for d in BOOKS.glob("BOOK_0*") if d.is_dir())
 
 
+def apparatus_block(stem_dir: Path) -> str:
+    """Render the per-book apparatus (footnote definitions) collected by
+    tools/extract_apparatus.py into `_apparatus.json`, as a trailing endnotes section."""
+    apx = stem_dir / "_apparatus.json"
+    if not apx.exists():
+        return ""
+    notes = json.loads(apx.read_text(encoding="utf-8"))
+    if not notes:
+        return ""
+    out = ["\n\n## Apparatus — sources & open obligations\n",
+           "_Traceability for the integrated forcing arguments and the open proof obligations. "
+           "The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance "
+           "and cert/Lean status so nothing is lost._\n"]
+    for rid, txt in notes.items():
+        out.append(f"[^{rid}]: {txt}")
+    return "\n".join(out) + "\n"
+
+
 def assemble(stem_dir: Path) -> str:
     parts = []
     for f in sorted(stem_dir.glob("*.md")):
         parts.append(f.read_text(encoding="utf-8"))
-    return banner(stem_dir.name) + "".join(parts)
+    return banner(stem_dir.name) + "".join(parts) + apparatus_block(stem_dir)
 
 
 def main() -> int:

@@ -92,7 +92,7 @@ This is what replaces the real line: the \(\varphi^{-k}\) Cauchy bound is the
 operational tolerance, and a "true point between nodes" that is indistinguishable
 at every level \(k\) would require an external label not derivable from any test
 — an external catalog, M1-forbidden. So the continuum is the limit of refinements,
-not a bag of points (forcing: GOLDEN DEF II.4.APPX5.14.0; THE II.4.APPX5.14.3).
+not a bag of points [^b07-3].
 
 **(F2) The interval is a discrete variational object.** On level \(k\) the scene
 is a weighted graph \(G_k\) with edge costs \(J_k(e)\); the squared interval is
@@ -102,7 +102,7 @@ the minimum path-cost, not a postulated bilinear:
 \mathrm{s}^2_k(u,v) := \min_{\gamma:\,u\to v}\Big(\sum_{e\in\gamma} J_k(e)\Big)^2 .
 ```
 
-This is the bridge from graph to \(ds^2\) (forcing: GOLDEN DEF II.4.APPX5.15).
+This is the bridge from graph to \(ds^2\) [^b07-4].
 
 **(F3) The quadratic form is unique — Finsler/non-symmetric/cubic are
 M1-forbidden.** Why \(g_{\mu\nu}dx^\mu dx^\nu\) and not a Finsler norm \(F(x,dx)\),
@@ -113,7 +113,7 @@ tensor \(C_{\mu\nu\lambda}\) with new dimensionless coupling constants not
 derivable from the scalar cost \(J\) — a *catalog of tensors*. Both are
 M1-forbidden. The only admissible isotropic large-number limit is the symmetric
 bilinear (Riemannian) form, fixed by a tangent-space inner product alone
-(forcing: GOLDEN THE II.4.APPX5.15.0b). Status: PROOF-TARGET (cert obligation open).
+[^b07-5]. [^b07-1].
 
 **(F4) Curvature without derivatives, against a canonical flat reference.**
 "Flat" = "simplest" = minimal canonical description length. Fixing level \(k\) and
@@ -127,12 +127,12 @@ U^{flat}_{k,m} := \arg\min_{U\in\mathcal{U}_{k,m}} Inv(U).
 The reference is admissible only if the choice is **κ-stable across refinement**
 \(k\to k+1\): the representatives \(U^{flat}_{k,m}\) must form a Cauchy sequence in
 \(\equiv_\kappa\); otherwise "flattest" depends on level/procedure and becomes an
-external catalog — M1-forbidden (forcing: GOLDEN DEF II.4.APPX5.16.3). Existence
+external catalog — M1-forbidden [^b07-6]. Existence
 and uniqueness follow because \(\mathcal{U}_{k,m}\) is finite and \(D_{\min}\) is
 canonical (GOLDEN LEM II.4.APPX5.16.3a′). Crucially the flat reference **adds no
 new parameters**: it uses nothing beyond \((V_k,E_k,J_k,Enc,D_{\min})\); replacing
 the selection rule by "any admissible reference" would itself require an external
-catalog of choice ⇒ M1-violation (forcing: GOLDEN LEM II.4.APPX5.16.3b). Curvature
+catalog of choice ⇒ M1-violation [^b07-7]. Curvature
 is then the **edge-density defect** against this reference,
 
 ```math
@@ -141,8 +141,7 @@ K_k(x) := \rho_k(U_k(x)) - \rho^{flat}_{k,m},
 
 with \(\rho\) the edge-per-node density: \(K>0\) is contracted (sphere), \(K<0\) is
 sparse (saddle). Curvature in D0 is a neighbor count, not an abstraction — which is
-exactly what makes finite gravity computable (forcing: GOLDEN DEF II.4.APPX5.16A;
-THE II.4.APPX5.16A.4). Status: PROOF-TARGET (cert obligation open).
+exactly what makes finite gravity computable [^b07-8]. [^b07-2].
 
 This neighbor-counting \(K_k\) is the seam/trace-heat curvature of the later
 sections viewed at its origin: the heat-trace carrier still *owns* finite gravity
@@ -154,8 +153,7 @@ The effective dimension \(D\) is a κ-stable characteristic *extracted* from the
 corpus's admitted spectral/heat-trace tests, not a dial. Any reading in which
 \(D\) is "chosen so it comes out right" is M1-forbidden: a tuned \(D\) is an
 external catalog of dimension. Throughout this book "\(D\ge 6\)" denotes a
-*computed structural fact* about the scene, never a postulate (forcing: GOLDEN
-CHK 21.K.2; DEF 21.K.1). This is the dimension-specific instance of the corpus-wide
+*computed structural fact* about the scene, never a postulate [^b07-9]. This is the dimension-specific instance of the corpus-wide
 no-retuning discipline.
 
 The book separates three things that were interleaved in earlier gravity drafts:
@@ -217,7 +215,7 @@ The internal causal section is already fixed in the foundation:
 The normalization `c_{D0}=1` is not a unit convention bolted on after the fact: `C := lim C_k`
 is the in-system limit speed of distinguishability propagation, so the CORE scale is *forced* to
 the choice that makes it unit; any "c in m/s" lives in the BRIDGE export and is not a corpus
-parameter (forcing: GOLDEN COR II.4.APPX5.21.C). This is why the causal section is a section and
+parameter [^b07-10]. This is why the causal section is a section and
 not a tuning knob.
 
 ### What the causal section is a section *of*: the closed light-cycle
@@ -226,7 +224,7 @@ The lightlike scale `c_{D0}=1` is the maximal-speed transition budget, and that 
 what a *closed light-cycle* runs on. A closed light-cycle `P` is a path `γ` that is (1) closed
 (`v_end = v_start`), (2) built from maximally-fast (lightlike) transitions, and (3) stable under
 small graph variations — i.e. **topologically protected**. Its period `τ(P)` is the length of the
-cycle in time, counted in `ν* = 1/9` steps (forcing: GOLDEN DEF II.4.APPX5.21). The causal section
+cycle in time, counted in `ν* = 1/9` steps [^b07-11]. The causal section
 `ℓ_0^{D0}=τ_0^{D0}=1` is therefore the unit-period section against which every `τ(P)` is read off:
 metrology here is the act of expressing `τ(P)` against this fixed lightlike section.
 
@@ -240,7 +238,7 @@ section only uses it as the `τ(P)→∞` boundary of the light-cycle picture.
 Mass enters this book only through the causal section's metrology, and the reason it is legitimate
 to treat it as metrology (not as a hidden gravity parameter) is structural: in CORE there is no
 "mass" other than the density of stable closures. We do **not** introduce mass as a charge; we find
-it as a topological effect (forcing: GOLDEN THE II.4.APPX5.22.3).
+it as a topological effect [^b07-12].
 
 ```math
 \varrho_k(x) := \frac{\sum_{P\in\mathrm{Cycles}(x)} \tau(P)^{-1}}{\mathrm{Vol}(U_k)}.
@@ -254,9 +252,9 @@ matter from geometry: the unique stable localized structure in a dynamical graph
 self-sustaining cycle (a soliton), its energy `E = hν` is proportional to its closure frequency
 `ν ∼ 1/τ`, and its inertia is the topology's resistance to retrajectorying the cycle. "Mass" is the
 self-linking of the causal net; a "particle" is a vortex in the history graph. Smaller cycle ⇒
-higher frequency ⇒ heavier (forcing: GOLDEN THE II.4.APPX5.22.3, micro-example II.4.APPX5.21.EX1).
+higher frequency ⇒ heavier [^b07-13].
 
-Status: CORE-FORCING (forcing: GOLDEN DEF II.4.APPX5.21, THE II.4.APPX5.22.3, COR II.4.APPX5.21.C).
+Status: CORE-FORCING [^b07-14].
 
 This is what makes the electron terminal scale below an *honest* metrological bridge and not an
 adjustable gravity dial: the scale it imports is the SI shadow of a closure period `τ(P)`, a counted
@@ -269,11 +267,11 @@ passport by §07.48; this section cites them rather than re-deriving the defect.
 The same discipline applies to curvature. Curvature in D0 is not an abstraction added on top of the
 section; it is the result of counting neighbors against the flat reference `U^flat` — the
 density-defect `K_k(x) := ρ_k(U_k(x)) − ρ^flat_{k,m}`. Because that defect is a finite count, gravity
-is **computable** (forcing: GOLDEN THE II.4.APPX5.16A.4). Coupled with `K ∼ ϱ` (curvature
+is **computable** [^b07-15]. Coupled with `K ∼ ϱ` (curvature
 proportional to closure density, with `f(0)=0` forced by the vacuum/flat boundary condition), this is
 the CORE statement whose covariant smooth shadow is the Einstein tensor; the numeric coefficient
 `a_unit` is a unit choice fixed only at the BRIDGE step, never a new dimensionless physical constant
-(forcing: GOLDEN THE II.4.APPX5.23.1). Book 07 keeps this as the *reason* the dimensionless
+[^b07-16]. Book 07 keeps this as the *reason* the dimensionless
 scale-separation invariant exported below is well-defined, not as a re-derivation of the field
 equation (that smooth-limit bridge is owned downstream).
 
@@ -317,7 +315,7 @@ The spin-2 structure is therefore not postulated as a primitive graviton field i
 
 The reason spin-2 enters as a *readout* of finite covariance rather than as a primitive field propagating on a fixed stage is forced one level up, in the field dynamics of the mechanism. M1 forbids an external catalog, and a fixed Minkowski background *is* such a catalog: it is geometry handed to the theory from outside the refinement that distinguishes itself. So the path integral over fields on a fixed stage cannot be the core object.
 
-**CORE QFT partition sum (no path integral).** The continuum path integral is replaced by a finite diagram sum weighted by the spine constant `phi` (forcing: GOLDEN DEF II.3.10):
+**CORE QFT partition sum (no path integral).** The continuum path integral is replaced by a finite diagram sum weighted by the spine constant `phi` [^b07-18]:
 
 ```math
 \mathcal{Z}_k:=\sum_{\Gamma}\varphi^{-A(\Gamma)},
@@ -325,9 +323,9 @@ The reason spin-2 enters as a *readout* of finite covariance rather than as a pr
 
 where `A(Gamma)` is the area/action of diagram `Gamma` in the graph. This is a distinct object from the feedback partition function `Z_N=Tr exp(-b Delta) det(I-zF)^-1` (the spectral/feedback partition owned by BOOK_05 via the `F_N` operator owned by BOOK_01); `Z_k` is the diagram-sum over memory paths, not the spectral trace, and the two must not be collapsed.
 
-**Loops are memory cycles.** Feynman loops in D0 are real physical cycles on the graph; "virtual particles" are circulation of information in the finite memory of the system (the internal count `N_int`), not excitations of an external vacuum (forcing: GOLDEN LEM II.3.12). This is what makes the line-covariance readout above an internal quadratic statistic rather than a propagator on a stage.
+**Loops are memory cycles.** Feynman loops in D0 are real physical cycles on the graph; "virtual particles" are circulation of information in the finite memory of the system (the internal count `N_int`), not excitations of an external vacuum [^b07-19]. This is what makes the line-covariance readout above an internal quadratic statistic rather than a propagator on a stage.
 
-**Background independence (the forced step).** Because a fixed Minkowski background is forbidden by M1, the quantum-gravity partition sum ranges over the geometries themselves — the graphs `G` are summed, not assumed (forcing: GOLDEN DEF II.3.15):
+**Background independence (the forced step).** Because a fixed Minkowski background is forbidden by M1, the quantum-gravity partition sum ranges over the geometries themselves — the graphs `G` are summed, not assumed [^b07-20]:
 
 ```math
 \mathcal{Z}^{\mathrm{QG}}_k:=\sum_{(G,J)\in\mathfrak{G}_k}\varphi^{-A(G,J)},
@@ -335,7 +333,7 @@ where `A(Gamma)` is the area/action of diagram `Gamma` in the graph. This is a d
 
 where `G_k` is the set of level-`k` geometries **generated by the refinement procedure `Sigma`** — a computable set, not an external measure "over all graphs". The theory is therefore background-independent by construction: no stage is supplied, only the refinement that builds the stages. The spin-2 carrier is the coarse-grained quadratic covariance read off *across* this sum over geometries, which is precisely why it cannot be a primitive field living on any one of them.
 
-Status: PROOF-TARGET (cert obligation open) — the identification of the finite TT carrier with the coarse limit of `Z^QG_k`'s quadratic covariance is a forcing claim awaiting its verification obligation; the finite carrier closure below is its existing partial anchor.
+[^b07-17] — the identification of the finite TT carrier with the coarse limit of `Z^QG_k`'s quadratic covariance is a forcing claim awaiting its verification obligation; the finite carrier closure below is its existing partial anchor.
 
 ### Finite TT carrier closure
 
@@ -494,7 +492,7 @@ The cut rule is not an arbitrary EFT cutoff. It is a finite-detector resolution 
 
 The cut above bounds the *magnitude* of the higher-curvature row. A prior question is forced first: why is the residual spatial cone isotropic at all, so that a single scalar `η_HC(L)` (not a direction-dependent tensor) is the right carrier? The answer is not assumed — it is forced by the representation theory of the D0 hull symmetry.
 
-Three roles must not be conflated (forcing: v17 IR-Lorentz Hull-Pushforward Lock, `SCHUR-LOCKED`):
+Three roles must not be conflated [^b07-23]:
 
 ```text
 Ω8 = ABCD × {+,−}  enforces central symmetry of the acceptance window
@@ -523,11 +521,11 @@ The normalization `Tr Σ = 1` (the pushforward of the unique ergodic hull measur
 
 So isotropy of the residual cone is a *theorem*, not a symmetry ansatz: any anisotropic `Σ` would split the carrier into a proper invariant subspace, contradicting irreducibility. This is exactly what licenses the scalar finite cut `η_HC(L)` above — there is no preferred direction left for a tensor correction to live in.
 
-**Status: PROOF-TARGET (cert obligation open)** — the irreducibility of the physical momentum carrier under the hull symmetry, and the uniqueness/ergodicity of the hull measure whose pushforward gives `Tr Σ = 1`, are not yet discharged by a registered `vp_*` cert. (The hull objects `vp_d0_tiling_hull.py`, `vp_gap_labeling_d0_tiling_hull.py`, and the Lorentz-signature cert `vp_galois_lorentz_signature.py` are adjacent but do not yet close *this* Schur-isotropy obligation.)
+**[^b07-21]** — the irreducibility of the physical momentum carrier under the hull symmetry, and the uniqueness/ergodicity of the hull measure whose pushforward gives `Tr Σ = 1`, are not yet discharged by a registered `vp_*` cert. (The hull objects `vp_d0_tiling_hull.py`, `vp_gap_labeling_d0_tiling_hull.py`, and the Lorentz-signature cert `vp_galois_lorentz_signature.py` are adjacent but do not yet close *this* Schur-isotropy obligation.)
 
 ### 07.10.2 The higher-curvature coefficient is derived, not fitted
 
-With isotropy forced, the dimensionless higher-curvature finite-cut coefficient is bounded with no external input (forcing: v17 IR-Lorentz Hull-Pushforward Lock):
+With isotropy forced, the dimensionless higher-curvature finite-cut coefficient is bounded with no external input [^b07-24]:
 
 ```math
 |c_4| \le \frac{5744}{33}\,\delta_0^{12}.
@@ -545,11 +543,11 @@ Every factor is structural:
 
 The `16 = ABCD²` factor rests on the owned reading `ABCD = D2×D2 = 4` (BOOK_01 owns the ABCD/Ω8 capacity alphabet; cert `vp_v1141_abcd_omega8_v9_phi_capacity.py`, where `|V| = 33` is also fixed). The bound is therefore read off the symplectic structure and edge cardinality of the minimal carrier — `c_4` is a *derived* ceiling, not a tunable EFT Wilson coefficient. This is the higher-curvature analogue of the no-knob discipline the whole book runs on: the cut sets *where* the row dies, this coefficient sets *how large* it may be before it dies, and both are functions of the same finite carrier.
 
-**Status: PROOF-TARGET (cert obligation open)** — the edge tally `359` of the holographic carrier and the assembly `5744/33` into the `c_4` ceiling are not yet discharged by a registered `vp_*` cert. (`05_CERTS/higher_curvature_bound_report.json` records a *separate* trace-power floor check at curvature orders 3/4/5 and does not certify this `δ0^12` coefficient; do not conflate the two.)
+**[^b07-22]** — the edge tally `359` of the holographic carrier and the assembly `5744/33` into the `c_4` ceiling are not yet discharged by a registered `vp_*` cert. (`05_CERTS/higher_curvature_bound_report.json` records a *separate* trace-power floor check at curvature orders 3/4/5 and does not certify this `δ0^12` coefficient; do not conflate the two.)
 
 ### 07.10.3 The 12D→4D compactification fold and the 2⁶ = 64 degree-of-freedom difference
 
-The finite cut is also a *dimensional* statement: it is the resolution at which the outer scene has already folded down to the observed 4D projection. That fold is carried by the compactification operator `Y` (forcing: GOLDEN DEF 75.1, BOOK VI Extensions §75):
+The finite cut is also a *dimensional* statement: it is the resolution at which the outer scene has already folded down to the observed 4D projection. That fold is carried by the compactification operator `Y` [^b07-25]:
 
 ```math
 Y : 12D \to 4D \;(+\,6\ \text{bit}).
@@ -563,7 +561,7 @@ The `+6 bit` is **not new physics**. It is the bookkeeping label for the binary 
 
 read as the *difference of degrees of freedom* between the outer shell and the observable 4D projection — the information the fold `Y` traces out.
 
-The status of `64` is the load-bearing point (forcing: GOLDEN LEM 75.2, BOOK VI Extensions §75). The number `64 = 2⁶` must appear as a **derived difference / convolution** — either as the `2⁶` information cascade, or as "outer shell capacity minus inner address capacity" in the concrete corpus formulas — and **never as a hand-tuned multiplier**. A postulated `64` would be exactly the kind of free knob the anti-numerology firewall (BOOK_00) rejects; the forcing is that it falls out of the fold `Y`, not that it is inserted to make a number work. This is why the `64` lands here, beside the derived `c_4` coefficient: both are quantities the dimension/finite-cut locus is allowed to *carry* only because the carrier *forces* their value.
+The status of `64` is the load-bearing point [^b07-26]. The number `64 = 2⁶` must appear as a **derived difference / convolution** — either as the `2⁶` information cascade, or as "outer shell capacity minus inner address capacity" in the concrete corpus formulas — and **never as a hand-tuned multiplier**. A postulated `64` would be exactly the kind of free knob the anti-numerology firewall (BOOK_00) rejects; the forcing is that it falls out of the fold `Y`, not that it is inserted to make a number work. This is why the `64` lands here, beside the derived `c_4` coefficient: both are quantities the dimension/finite-cut locus is allowed to *carry* only because the carrier *forces* their value.
 
 **Status: forced definition (GOLDEN-owned)** — `Y` and the `2⁶ = 64` dof-difference reading are imported as the GOLDEN forcing for the 12D→4D fold; no D0 cert obligation is created by restating them, but any downstream claim that *uses* a numeric `64` must trace it back to this difference/convolution, not assume it.
 
@@ -595,7 +593,7 @@ This guardrail is essential because several corrected gravity bridges are audit 
 
 Before the retired `q_mass`/`q_res` bookkeeping makes sense, the geometry side has to say what mass *is*. The forced answer is structural, not material: in CORE there is no mass-stuff, only the density of light-like cycles that close.
 
-**[COR 07.12.M] Mass = cycle-closure density (forcing: GOLDEN COR II.4.7, BOOK-II-MECHANISM). Status: PROOF-TARGET (cert obligation open).** A light-like cycle `P` is a stable closure of the fastest transitions on a refinement level `k` (forcing: GOLDEN DEF II.4.4). Its period `τ(P)` is the cycle length in refinement ticks (DEF II.4.5). The closure density at `x` is the forced observable
+**[COR 07.12.M] Mass = cycle-closure density [^b07-28]. [^b07-27].** A light-like cycle `P` is a stable closure of the fastest transitions on a refinement level `k` [^b07-29]. Its period `τ(P)` is the cycle length in refinement ticks (DEF II.4.5). The closure density at `x` is the forced observable
 
 ```math
 \varrho_k(x):=\frac{\sum_{P\in\mathrm{Cycles}(x)}\tau(P)^{-1}}{\mathrm{Vol}(U_k)}
@@ -903,15 +901,15 @@ This is the D0 finite-channel version of the Bekenstein-Hawking area law. It doe
 
 The factor `4` is asserted here from the ABCD readout alphabet but v14 dropped the two forcing arguments that make it *exactly* four and not a tuned normalization. Both are restored below; the ABCD role alphabet itself is owned by BOOK_01 01.7 and is cited, not re-derived.
 
-**[THE 07.21.RT] Discrete Ryu-Takayanagi: horizon area = edge-cut rank, four edge units per resolvable bit (forcing: GOLDEN THE 7.6, v17 BOOK_07 §07.8).** On the minimal holographic carrier `K(9,11,13)` (rank 3 / nullity 30, BOOK_01) the horizon "area" is not a length — it is the *edge-cut rank* of the boundary seam: the min-cut separating the retained region `R` from its traced-out complement `R^c`. The discrete Ryu-Takayanagi reading is that boundary entanglement is carried by this cut. The forcing for the denominator: resolving one bit of boundary entanglement requires fixing the full symplectic phase, and symplectic phase resolution on `Omega8` consumes the entire four-dimensional terminal quotient `(A,B,C,D)`. So a single resolvable boundary bit costs exactly four geometric edge units, and
+**[THE 07.21.RT] Discrete Ryu-Takayanagi: horizon area = edge-cut rank, four edge units per resolvable bit [^b07-32].** On the minimal holographic carrier `K(9,11,13)` (rank 3 / nullity 30, BOOK_01) the horizon "area" is not a length — it is the *edge-cut rank* of the boundary seam: the min-cut separating the retained region `R` from its traced-out complement `R^c`. The discrete Ryu-Takayanagi reading is that boundary entanglement is carried by this cut. The forcing for the denominator: resolving one bit of boundary entanglement requires fixing the full symplectic phase, and symplectic phase resolution on `Omega8` consumes the entire four-dimensional terminal quotient `(A,B,C,D)`. So a single resolvable boundary bit costs exactly four geometric edge units, and
 
 ```math
 C_{\partial}=A_{D0}/4
 ```
 
-falls out as a finite topological count, not a thermodynamic fit. Cert status: the min-cut = 4 edge-cut structure is checked as a finite deterministic max-flow/min-cut object (cert: `vp_finite_mincut_holographic_entropy.py`, owned by §07.40 — cited, not duplicated here); the *identification* of that four-edge cut with the full `(A,B,C,D)` symplectic phase quotient is Status: PROOF-TARGET (cert obligation open).
+falls out as a finite topological count, not a thermodynamic fit. Cert status: the min-cut = 4 edge-cut structure is checked as a finite deterministic max-flow/min-cut object (cert: `vp_finite_mincut_holographic_entropy.py`, owned by §07.40 — cited, not duplicated here); the *identification* of that four-edge cut with the full `(A,B,C,D)` symplectic phase quotient is [^b07-30].
 
-**[THE 07.21.4C] Four-Color boundary limit: exactly four identifiers so no adjacent boundary cell aliases (forcing: GOLDEN THE 07.8B, v17 BOOK_07 §07.8B).** A second, independent forcing fixes the same `4`. To distinguish itself without an external catalog (M1), the boundary automaton must assign each cell a phase identifier such that no two adjacent cells share a state — otherwise adjacent quantum domains alias and the boundary cannot tell them apart, ⊥M1. The boundary resolves its information on a planar-equivalent surface, so by the Four-Color Theorem any contiguous planar map needs *exactly four* distinct identifiers to guarantee no adjacent regions collide. The four terminal detector roles `ABCD` are precisely that minimal four-coloring. Hence the maximal resolvable capacity is one logical bit per four geometric cells, and the `A/4` law is the macroscopic shadow of the Four-Color Theorem applied to the holographic boundary graph. This is a forcing for *why exactly four* that is independent of the symplectic-quotient count above; the two agreeing on `4` is the cross-check. Status: PROOF-TARGET (cert obligation open) — no Four-Color-boundary cert exists in `05_CERTS/`; do NOT cite a `vp_*` token for this claim.
+**[THE 07.21.4C] Four-Color boundary limit: exactly four identifiers so no adjacent boundary cell aliases [^b07-33].** A second, independent forcing fixes the same `4`. To distinguish itself without an external catalog (M1), the boundary automaton must assign each cell a phase identifier such that no two adjacent cells share a state — otherwise adjacent quantum domains alias and the boundary cannot tell them apart, ⊥M1. The boundary resolves its information on a planar-equivalent surface, so by the Four-Color Theorem any contiguous planar map needs *exactly four* distinct identifiers to guarantee no adjacent regions collide. The four terminal detector roles `ABCD` are precisely that minimal four-coloring. Hence the maximal resolvable capacity is one logical bit per four geometric cells, and the `A/4` law is the macroscopic shadow of the Four-Color Theorem applied to the holographic boundary graph. This is a forcing for *why exactly four* that is independent of the symplectic-quotient count above; the two agreeing on `4` is the cross-check. [^b07-31] — no Four-Color-boundary cert exists in `05_CERTS/`; do NOT cite a `vp_*` token for this claim.
 
 The downstream `S_{D0}^{BH}=A_{D0}/4` witness (boundary cells × ABCD denominator, with negative controls A/2, A/8, volume entropy, singularity-as-deletion all rejected) is owned by §07.50 and cert-backed there (`vp_black_hole_capacity_a4_witness.py`); this section owns only the two forcing roots for the denominator `4` and defers the saturation witness to §07.50.
 ## 07.22 Gravity-depth hostile uniqueness: the exponent 99
@@ -1143,14 +1141,14 @@ forced shape is owned upstream by §07.4: linearity from additivity of distant
 masses, the vacuum boundary `f(0)=0 ⟹ b=0` because the flat reference `U^flat`
 is the cycle-free minimum, and the coefficient `a_unit` fixed only as a unit
 convention because M1 forbids introducing a *new* dimensionless physical
-constant (forcing: GOLDEN THE II.4.APPX5.23.1). This section does not re-derive
+constant [^b07-34]. This section does not re-derive
 that uniqueness; it carries its consequence: the seam-action vacuum equation is
 exactly the discrete `K=0 ⟺ ϱ=0` statement (`b=0`, no closures ⇒ flat), and the
 sourced equation is the discrete `K ~ ϱ` pairing written so that energy flux is
 respected. The smooth, tensorial completion — the unique local-energy-conserving
 tensor is `G_{μν}`, giving `G_{μν}+Λ g_{μν}=κ_GR T_{μν}` with `κ_GR=8πG/c⁴` a
 pure BRIDGE unit factor — is the macro-shadow of this same finite equation
-(forcing: GOLDEN THE II.4.APPX5.23.B1). Status: CORE-FORCING for the discrete
+[^b07-35]. Status: CORE-FORCING for the discrete
 law; the smooth-limit covariance is owned by the Einstein-interface sections
 (§07.40, §07.13), which this section cites rather than re-deriving.
 
@@ -1170,8 +1168,7 @@ abstract density; it is the closure-frequency density
 \varrho_k(x) := \frac{\sum_{P\in\mathrm{Cycles}(x)} \tau(P)^{-1}}{\mathrm{Vol}(U_k)}
 ```
 
-(definition and its M1 reduction-to-substance forcing owned by §07.4; forcing:
-GOLDEN THE II.4.APPX5.22.3). What §07.4 leaves to the dynamical layer — and what
+[^b07-36]. What §07.4 leaves to the dynamical layer — and what
 this field equation needs in order to be Lorentz-honest — is *why* the weight in
 `ϱ` is precisely the inverse period `τ(P)⁻¹` and how it transforms. That is the
 forced special-relativity layer, dropped in v14 and restored here.
@@ -1182,15 +1179,14 @@ GOLDEN COR II.4.APPX5.21.C) splits into two orthogonal components: an external
 transport `Δx` (change of address in the active scene) and an internal run `Δs`
 (advance along `P`). External transport moves only the address; the internal run
 moves only the cycle phase; cross terms vanish by definition of the observables
-(forcing: GOLDEN DEF II.4.SR.2). The unit budget is therefore partitioned as
+[^b07-37]. The unit budget is therefore partitioned as
 
 ```math
 \|\Delta x\|^2 + \|\Delta s\|^2 = 1,
 ```
 
 with `v := ‖Δx‖ ∈ [0,1]` the external velocity in units of `C`, and proper time
-counted by internal runs `Δτ := ‖Δs‖`, `τ := Σ Δτ` (forcing: GOLDEN DEF
-II.4.SR.3, DEF II.4.SR.4). Solving the budget gives `‖Δs‖ = √(1−v²)`, hence
+counted by internal runs `Δτ := ‖Δs‖`, `τ := Σ Δτ` [^b07-38]. Solving the budget gives `‖Δs‖ = √(1−v²)`, hence
 
 ```math
 \frac{d\tau}{dt}=\sqrt{1-v^2},\qquad
@@ -1199,7 +1195,7 @@ II.4.SR.3, DEF II.4.SR.4). Solving the budget gives `‖Δs‖ = √(1−v²)`, 
 
 Time dilation is thus *not* a postulated symmetry but the direct accounting of a
 single causal tick's unit budget split between transport and internal run
-(forcing: GOLDEN THE II.4.SR.5). The emergent Lorentz factor is a budget
+[^b07-39]. The emergent Lorentz factor is a budget
 identity, not an imposed group.
 
 The rest frequency is the closure rate of the internal cycle,
@@ -1212,15 +1208,14 @@ E^2 - p^2 = \omega_0^2,
 ```
 
 the `C=1` analogue of relativistic energy–momentum, with the SI conversion
-deferred to BRIDGE (forcing: GOLDEN COR II.4.SR.6). This closes the loop on the
+deferred to BRIDGE [^b07-40]. This closes the loop on the
 field equation: the source `ϱ` is a Lorentz-covariant frequency density whose
 rest weight `ω_0 = τ(P)⁻¹` is the same period the causal section of §07.4 reads
 off, and `E²−p²=ω_0²` is the dispersion the traced-out complement stress-source
-must respect frame-to-frame. Status: CORE-FORCING (forcing: GOLDEN DEF
-II.4.SR.2–4, THE II.4.SR.5, COR II.4.SR.6). The pro-format caveat applies: each
+must respect frame-to-frame. Status: CORE-FORCING [^b07-41]. The pro-format caveat applies: each
 `(v_k,τ_k,γ_k)` is defined at finite level `k` and the family is
 projectively compatible, so no external limit term `c_n` is introduced
-(forcing: GOLDEN REM II.4.SR.1.PROSYS).
+[^b07-42].
 ## 07.31 Admissible variation space and variational stress dual
 
 The current Lean layer closes the variational-dual algebra for the finite archive field equation.  The raw curvature gradient
@@ -1383,7 +1378,7 @@ the bonding maps the limit object is homeomorphic to the sphere.
 Status: **PROOF-TARGET (cert obligation open)** — scoped to the class of
 constructively regularized 3-manifolds, not the full ZFC Poincaré statement.
 
-Forcing (minimality + ⟂, strictly by M1) — (forcing: GOLDEN THE 25.1.1):
+Forcing (minimality + ⟂, strictly by M1) — [^b07-43]:
 
 1. Fix level `k` and cell count `m`. The class `C_{k,m}` of connected closed
    3-complexes with `m` cells is **finite**.
@@ -1400,7 +1395,7 @@ Forcing (minimality + ⟂, strictly by M1) — (forcing: GOLDEN THE 25.1.1):
    forbidden by M1.
 6. Both horns contradict. Hence no defect; `M ≡_κ S^3`. □
 
-Bridge (forcing: GOLDEN BRIDGE 25.B): the classical Poincaré conjecture is the
+Bridge [^b07-44]: the classical Poincaré conjecture is the
 packaging of an inverse-system limit. In D0 "smoothness" is replaced by
 κ-stability, and the statement becomes a strict distinguishability test rather
 than a smooth-topology claim. This terminus is the global companion of the
@@ -1447,7 +1442,7 @@ Status: **PROOF-TARGET (cert obligation open)** — statement about the
 regularized lattice theory at fixed UV cutoff, not the ZFC-form Clay statement;
 consistent with the existing F_N `GAUGE-BOUNDARY-LAW` lower-bound fact.
 
-Forcing (M1 + minimal loop) — (forcing: GOLDEN THE 26.1.1):
+Forcing (M1 + minimal loop) — [^b07-45]:
 
 1. An excitation with no loop is indistinguishable from vacuum: with no stable
    closure `q(ℓ) ≠ 1` anywhere in the history there is no object memory, hence no
@@ -1463,7 +1458,7 @@ Forcing (M1 + minimal loop) — (forcing: GOLDEN THE 26.1.1):
 5. Hence a minimal nonzero excitation frequency/mass exists:
    `m_gap ∼ ΔS_min > 0`. □
 
-Bridge (forcing: GOLDEN BRIDGE 26.B): the classical "mass gap exists in 4D
+Bridge [^b07-46]: the classical "mass gap exists in 4D
 Yang–Mills" is the packaging of a transfer-operator/Hamiltonian spectral gap. In
 D0 the gap is unavoidable because "excitation" = "stable memory cycle" and a
 cycle has a minimal cost with no external tuning. This is the same M1 "no
@@ -1868,9 +1863,9 @@ The finite TT operator W_TT is the two-polarization sector of the D0 solenoid sp
 
 ### Why the solenoid geometry is noncommutative: the address-order forcing [J,Y]
 
-The noncommutativity is not decorative — it is forced at the level of how a finite observer assembles a scene at all. Two operators act on the solenoid address book (forcing: GOLDEN THE 77.1, owner of the [J,Y] order argument):
+The noncommutativity is not decorative — it is forced at the level of how a finite observer assembles a scene at all. Two operators act on the solenoid address book [^b07-47]:
 
-- **Y (fold / compactify)** — the shell-convolution operator that folds the outer scene into the effective 4D representation, `Y: 12D -> 4D (+6 bit)`; the `+6 bit` is the binary cascade `2^6 = 64` read as the degree-of-freedom difference between shell and observed projection, not new physics (forcing: GOLDEN DEF 75.1 / LEM 75.2). Y is what fixes the boundary structure.
+- **Y (fold / compactify)** — the shell-convolution operator that folds the outer scene into the effective 4D representation, `Y: 12D -> 4D (+6 bit)`; the `+6 bit` is the binary cascade `2^6 = 64` read as the degree-of-freedom difference between shell and observed projection, not new physics [^b07-48]. Y is what fixes the boundary structure.
 - **J (localize)** — pins a defect to an address.
 
 The forcing claim: these do not commute, `[J,Y] != 0`, and the order is a physical selection rather than a bookkeeping convention.
@@ -1878,9 +1873,9 @@ The forcing claim: these do not commute, `[J,Y] != 0`, and the order is a physic
 - **Fold-then-localize (Y first, then J):** the defect is pinned *inside an already-given boundary structure*. The observer recovers reproducible "objects" — the localization inherits a context to be reproducible against.
 - **Localize-then-fold (J first, then Y):** the defect is pinned *out of context* of any boundary, and the subsequent fold smears that context-free localization into a noise result.
 
-So one operator order produces records that survive re-distinguishing and the reverse order produces noise. Under M1 (no external catalog to stabilize a context-free localization), only the reproducible order is admissible. Status: FORCED (forcing: GOLDEN THE 77.1). This is the book's natural home for the argument: it is the noncommutative-geometry locus where non-commuting structure on the solenoid spectral geometry already lives, and it is distinct from the torus-shell / CKM noncommutativity carried elsewhere (BOOK_01 §1305; BOOK_04 §04.4.4 own those) — here the non-commutation is the compactify-vs-localize order itself.
+So one operator order produces records that survive re-distinguishing and the reverse order produces noise. Under M1 (no external catalog to stabilize a context-free localization), only the reproducible order is admissible. Status: FORCED [^b07-49]. This is the book's natural home for the argument: it is the noncommutative-geometry locus where non-commuting structure on the solenoid spectral geometry already lives, and it is distinct from the torus-shell / CKM noncommutativity carried elsewhere (BOOK_01 §1305; BOOK_04 §04.4.4 own those) — here the non-commutation is the compactify-vs-localize order itself.
 
-**Arrow of time as a corollary, not a postulate.** D0 does not insert a time arrow phenomenologically. The only reproducible scene-assembly procedure is the fold-then-localize order; the reverse collapses to noise. The directionality of "assemble an observable scene" is therefore a consequence of M1 acting through `[J,Y] != 0`, not an extra ingredient. Status: FORCED-COROLLARY (forcing: GOLDEN COR 77.2; arrow-of-time-from-M1).
+**Arrow of time as a corollary, not a postulate.** D0 does not insert a time arrow phenomenologically. The only reproducible scene-assembly procedure is the fold-then-localize order; the reverse collapses to noise. The directionality of "assemble an observable scene" is therefore a consequence of M1 acting through `[J,Y] != 0`, not an extra ingredient. Status: FORCED-COROLLARY [^b07-50].
 
 The macro Einstein interface inherits this: W_TT, the two-polarization spin-2 sector, is read off the *folded* boundary structure, so the spin-2 carrier already presupposes the reproducible Y-then-J order. The noncommutative solenoid is the carrier of that order, not a free choice of presentation.
 
@@ -2000,3 +1995,64 @@ Electron-beam dusty-plasma experiments provide a macroscopic laboratory bridge f
 The useful horizon lesson is the sign switch: the periphery of a beam-plasma cloud can attract ordered dust structures, while the core can repel or clear grains. In D0 language this is a seam analogue: peripheral capture and core clearing are distinct finite regimes of the same active/archive interaction.
 
 This paragraph is not a claim that electron-beam dust fly-out is literally an astrophysical black-hole jet. It is a typed bridge: the laboratory system supplies an experimentally accessible force-balance analogue for channel clearing and archive ejection. The core D0 horizon operators remain finite-algebraic objects; external dusty-plasma behavior is used only as a tabletop passport seed.
+
+
+## Apparatus — sources & open obligations
+
+_Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._
+
+[^b07-1]: open obligation — cert obligation open
+[^b07-2]: open obligation — cert obligation open
+[^b07-3]: forcing: GOLDEN DEF II.4.APPX5.14.0; THE II.4.APPX5.14.3
+[^b07-4]: forcing: GOLDEN DEF II.4.APPX5.15
+[^b07-5]: forcing: GOLDEN THE II.4.APPX5.15.0b
+[^b07-6]: forcing: GOLDEN DEF II.4.APPX5.16.3
+[^b07-7]: forcing: GOLDEN LEM II.4.APPX5.16.3b
+[^b07-8]: forcing: GOLDEN DEF II.4.APPX5.16A;
+THE II.4.APPX5.16A.4
+[^b07-9]: forcing: GOLDEN
+CHK 21.K.2; DEF 21.K.1
+[^b07-10]: forcing: GOLDEN COR II.4.APPX5.21.C
+[^b07-11]: forcing: GOLDEN DEF II.4.APPX5.21
+[^b07-12]: forcing: GOLDEN THE II.4.APPX5.22.3
+[^b07-13]: forcing: GOLDEN THE II.4.APPX5.22.3, micro-example II.4.APPX5.21.EX1
+[^b07-14]: forcing: GOLDEN DEF II.4.APPX5.21, THE II.4.APPX5.22.3, COR II.4.APPX5.21.C
+[^b07-15]: forcing: GOLDEN THE II.4.APPX5.16A.4
+[^b07-16]: forcing: GOLDEN THE II.4.APPX5.23.1
+[^b07-17]: open obligation — cert obligation open
+[^b07-18]: forcing: GOLDEN DEF II.3.10
+[^b07-19]: forcing: GOLDEN LEM II.3.12
+[^b07-20]: forcing: GOLDEN DEF II.3.15
+[^b07-21]: open obligation — cert obligation open
+[^b07-22]: open obligation — cert obligation open
+[^b07-23]: forcing: v17 IR-Lorentz Hull-Pushforward Lock, `SCHUR-LOCKED`
+[^b07-24]: forcing: v17 IR-Lorentz Hull-Pushforward Lock
+[^b07-25]: forcing: GOLDEN DEF 75.1, BOOK VI Extensions §75
+[^b07-26]: forcing: GOLDEN LEM 75.2, BOOK VI Extensions §75
+[^b07-27]: open obligation — cert obligation open
+[^b07-28]: forcing: GOLDEN COR II.4.7, BOOK-II-MECHANISM
+[^b07-29]: forcing: GOLDEN DEF II.4.4
+[^b07-30]: open obligation — cert obligation open
+[^b07-31]: open obligation — cert obligation open
+[^b07-32]: forcing: GOLDEN THE 7.6, v17 BOOK_07 §07.8
+[^b07-33]: forcing: GOLDEN THE 07.8B, v17 BOOK_07 §07.8B
+[^b07-34]: forcing: GOLDEN THE II.4.APPX5.23.1
+[^b07-35]: forcing: GOLDEN THE II.4.APPX5.23.B1
+[^b07-36]: definition and its M1 reduction-to-substance forcing owned by §07.4; forcing:
+GOLDEN THE II.4.APPX5.22.3
+[^b07-37]: forcing: GOLDEN DEF II.4.SR.2
+[^b07-38]: forcing: GOLDEN DEF
+II.4.SR.3, DEF II.4.SR.4
+[^b07-39]: forcing: GOLDEN THE II.4.SR.5
+[^b07-40]: forcing: GOLDEN COR II.4.SR.6
+[^b07-41]: forcing: GOLDEN DEF
+II.4.SR.2–4, THE II.4.SR.5, COR II.4.SR.6
+[^b07-42]: forcing: GOLDEN REM II.4.SR.1.PROSYS
+[^b07-43]: forcing: GOLDEN THE 25.1.1
+[^b07-44]: forcing: GOLDEN BRIDGE 25.B
+[^b07-45]: forcing: GOLDEN THE 26.1.1
+[^b07-46]: forcing: GOLDEN BRIDGE 26.B
+[^b07-47]: forcing: GOLDEN THE 77.1, owner of the [J,Y] order argument
+[^b07-48]: forcing: GOLDEN DEF 75.1 / LEM 75.2
+[^b07-49]: forcing: GOLDEN THE 77.1
+[^b07-50]: forcing: GOLDEN COR 77.2; arrow-of-time-from-M1

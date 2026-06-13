@@ -86,9 +86,9 @@ Internal D0 names such as `archive`, `terminal`, `carrier`, `structural uniquene
 
 The convention is not stylistic. It is forced by M1 (physics = what survives the requirement to distinguish itself without an external catalog; forcing-by-contradiction = DEF-0.2.2, owned by BOOK_01). The two results below justify *why* every cell must run support -> operator -> ... -> certificate with no exogenous parameter slipped in at any arrow, and they answer the standing objection that M1 is "merely philosophy."
 
-**[THE] M1 is not philosophy but a theorem about Bayesian inference (forcing: GOLDEN DEF 15.1.1 / REM 15.1.2, BOOK-II-MECHANISM).** Over the space of computable theories the universal prior assigns `P(T) ≈ 2^{-K(T)}`, with `K(T)` the Kolmogorov complexity (shortest binary code describing the theory together with its constants). Compare two competitors: a Standard-Model-style theory `T_SM` = equations + an *exogenous catalog* of constants `C` (m_e, alpha, ...), so `K(T_SM) ≈ K_eq + K(C) >> K_eq`; versus a distinguishability theory `T_D0` = equations + an O(1) graph-generation algorithm, so `K(T_D0) ≈ K_eq + O(1)`. Solomonoff induction / MDL therefore penalizes the catalog by its description length. The absence of free parameters demanded by M1 is exactly the MDL-/universal-induction-optimal choice — not an aesthetic preference. [Status: FORMALISM. This is the standard external interpretation of M1, not the source of its truth, which is the forcing proof THE 20.1.1 below.]
+**[THE] M1 is not philosophy but a theorem about Bayesian inference [^b02-1].** Over the space of computable theories the universal prior assigns `P(T) ≈ 2^{-K(T)}`, with `K(T)` the Kolmogorov complexity (shortest binary code describing the theory together with its constants). Compare two competitors: a Standard-Model-style theory `T_SM` = equations + an *exogenous catalog* of constants `C` (m_e, alpha, ...), so `K(T_SM) ≈ K_eq + K(C) >> K_eq`; versus a distinguishability theory `T_D0` = equations + an O(1) graph-generation algorithm, so `K(T_D0) ≈ K_eq + O(1)`. Solomonoff induction / MDL therefore penalizes the catalog by its description length. The absence of free parameters demanded by M1 is exactly the MDL-/universal-induction-optimal choice — not an aesthetic preference. [Status: FORMALISM. This is the standard external interpretation of M1, not the source of its truth, which is the forcing proof THE 20.1.1 below.]
 
-**[THE 20.1.1] No mathematics without M1 (forcing: GOLDEN THE 20.1.1, BOOK-V-MATHEMATICS; ⊥-proof).** If exogenous parameters are permitted (M1 violated), then "axiom / theorem / definition / inference-rule" cannot be rigorously distinguished, and the object "theory" itself dissolves. Proof (⊥; cf. BOOK_01 THE 0.4.1).
+**[THE 20.1.1] No mathematics without M1 [^b02-2].** If exogenous parameters are permitted (M1 violated), then "axiom / theorem / definition / inference-rule" cannot be rigorously distinguished, and the object "theory" itself dissolves. Proof (⊥; cf. BOOK_01 THE 0.4.1).
 1. Any written record presupposes a procedure for distinguishing symbols and the boundaries of proof blocks.
 2. If exogenous parameters are admitted, the criterion for "what counts as an admissible rule / a stopping point / a precision / a completeness" becomes external and non-fundamental.
 3. Then one and the same string of text admits infinitely many incompatible readings of "what here is axiom, what is derivation," with no internal test selecting the correct one.
@@ -96,7 +96,7 @@ The convention is not stylistic. It is forced by M1 (physics = what survives the
 
 Hence the proof-language convention may invoke no external catalog: every cell must be internally checkable end to end, which is why it terminates in a `certificate` rather than in an appeal to an outside authority.
 
-**[COR 20.1.2] Actual infinity is undefinable without M1 (forcing: GOLDEN COR 20.1.2, BOOK-V-MATHEMATICS).** Defining an *actual* infinity requires an external criterion of identity/boundary — which elements are included, what counts as "all" — i.e. an external catalog, forbidden by M1. Therefore CORE admits only *potential* infinity, realized as a pro-system of refinements (the inverse-system / varprojlim construction operated by BOOK_01 §01.4/§01.15). The convention's `support object -> ... -> invariant` chain is thus always a finite cell over a pro-system, never a completed infinite totality.
+**[COR 20.1.2] Actual infinity is undefinable without M1 [^b02-3].** Defining an *actual* infinity requires an external criterion of identity/boundary — which elements are included, what counts as "all" — i.e. an external catalog, forbidden by M1. Therefore CORE admits only *potential* infinity, realized as a pro-system of refinements (the inverse-system / varprojlim construction operated by BOOK_01 §01.4/§01.15). The convention's `support object -> ... -> invariant` chain is thus always a finite cell over a pro-system, never a completed infinite totality.
 ## 02.2 Role of this book
 
 Book 02 is the mathematical reference for the corpus. Book 01 constructs the finite detector object and graph-birth lift; Book 02 records the proof calculus that later sector books use when they state action, matter, gravity, or cosmological transfer claims. Sector books may state physical comparison protocols and sector-specific lemmas, but proof-level reductions point back here unless the proof is intrinsically sector-specific.
@@ -131,7 +131,7 @@ The "operator" slot of that tuple is not free: it is fixed by the **Finite Holog
 F_N = (Q_N U_N P_N)^\dagger (Q_N U_N P_N) \in B(P_N\mathcal H).
 ```
 
-This is the exact embodiment of holographic area preservation under self-reading: `F_N` measures how much of a retained state, after one tick and the cut, returns through the archive complement, and the area form admits no other quadratic that closes on the retained block (forcing: GOLDEN DEF 2.1, Finite Holographic Self-Reading Principle).
+This is the exact embodiment of holographic area preservation under self-reading: `F_N` measures how much of a retained state, after one tick and the cut, returns through the archive complement, and the area form admits no other quadratic that closes on the retained block [^b02-4].
 
 **[THE] What the area form forces.** Because `F_N = (Q_N U_N P_N)^\dagger (Q_N U_N P_N)` is a Gram operator, the self-reading requirement forces, with no further input:
 
@@ -139,7 +139,7 @@ This is the exact embodiment of holographic area preservation under self-reading
 - **compression** of the dynamics onto `P_N\mathcal H`, so the quadratic response lives on a finite retained block rather than the full stage;
 - the **log-det functional** `-\log\det(I - z F_N)` as the natural area-derived generating functional, with its spectral admissibility bound `|z|\rho(F_N) < 1`.
 
-So positivity, the compression bound and the log-det calculus are not three separate postulates; they are one consequence of symplectic-area preservation across the retained/archive cut (forcing: GOLDEN DEF 2.1). This is why a typed comparison formula is not yet a theorem until its operator slot is shown to be this area-derived `F_N`: only then is the quadratic response forced rather than fitted.
+So positivity, the compression bound and the log-det calculus are not three separate postulates; they are one consequence of symplectic-area preservation across the retained/archive cut [^b02-5]. This is why a typed comparison formula is not yet a theorem until its operator slot is shown to be this area-derived `F_N`: only then is the quadratic response forced rather than fitted.
 ## 02.3a Active v15 proof spine
 
 The active proof spine is:
@@ -317,7 +317,7 @@ Book 01 owns the φ derivation; Book 02 inherits it but records *that the same c
 
 **Route 2 — self-similarity of refinement (no step-catalog).** This is a *second, structurally independent* forcing and it is the one Book 02's descent calculus actually instantiates.
 
-[LEM 2.5.0.S1] (self-similarity of refinement; forcing: GOLDEN LEM 2.3.2.S1). Run the two-step mediator scheme `S,T\mapsto P=S\oplus T`, then `T,P\mapsto Q=T\oplus P`. Let
+[LEM 2.5.0.S1] [^b02-6]. Run the two-step mediator scheme `S,T\mapsto P=S\oplus T`, then `T,P\mapsto Q=T\oplus P`. Let
 
 ```math
 r:=\frac{F(T)}{F(S)},
@@ -333,7 +333,7 @@ r=\Phi(r).
 
 This is a forcing of φ that never mentions a detector, a probability split, or `p+p^2=1`; it follows purely from refusing a step-indexed external catalog. [LEM]
 
-[SECTION 2.5.0.alg] (algebraic closure of S1; forcing: GOLDEN §2.3.2). Additivity `F(P)=F(S)+F(T)` makes the two branches of the two-step scheme
+[SECTION 2.5.0.alg] [^b02-7]. Additivity `F(P)=F(S)+F(T)` makes the two branches of the two-step scheme
 
 ```math
 \frac{F(P)}{F(S)}=1+\frac{F(T)}{F(S)}=1+r,
@@ -359,7 +359,7 @@ whose unique positive root (a scale is `>0`) is
 
 Note this is the *self-similarity* quadratic `r^2-r-1=0`, obtained by equating the two refinement ratios; it is algebraically conjugate to, but derivationally distinct from, the return-branch quadratic `p+p^2=1` of Route 1. The proof calculus needs both because the descent functor (§02.5.1.1) is the operator form of exactly this equate-two-stages step.
 
-[THE 2.5.0.3] (φ from additivity + homogeneity; forcing: GOLDEN THE 2.3.3). In any system in which (1) the coupling is additive, `F(P)=F(S)+F(T)`, and (2) the scale space is homogeneous (the S1 no-step-catalog condition), the scaling parameter is necessarily `φ`. φ is therefore not a primitive axiom and not numerology: it is the forced consequence of refusing external parameters. This sharpens the BOOK_02 §02.31 statement "φ is not a primitive axiom" by naming the exact premise pair — additivity plus homogeneous scale — that yields φ as the homogeneous-scale fixed point. [THE]
+[THE 2.5.0.3] [^b02-8]. In any system in which (1) the coupling is additive, `F(P)=F(S)+F(T)`, and (2) the scale space is homogeneous (the S1 no-step-catalog condition), the scaling parameter is necessarily `φ`. φ is therefore not a primitive axiom and not numerology: it is the forced consequence of refusing external parameters. This sharpens the BOOK_02 §02.31 statement "φ is not a primitive axiom" by naming the exact premise pair — additivity plus homogeneous scale — that yields φ as the homogeneous-scale fixed point. [THE]
 
 ### 02.5.1 The `φ`-ABCD operator-cycle theorem
 
@@ -426,7 +426,7 @@ ABCD\times\{+,-\}=\Omega_8.
 
 The theorem is intentionally stronger than an equation table and weaker than a false claim of scalar independence: it states that the completed detector cycle has four typed operator obligations and that the two-port terminal readout realizes exactly four pre-sign roles.
 
-The sign/phase extension lands on `\Omega_8` and not on some other order-8 carrier because the carrier is forced to be the quaternion group `Q_8`. [THE 2.5.1.Q8] (Q8 hamiltonian minimality; forcing: D0-Q8-DEDEKIND-MINIMALITY-001, Dedekind 1897). The detector cycle requires a non-abelian group every one of whose subgroups is normal (a *hamiltonian* group), so that each role-class subgroup is a legitimate invariant boundary condition; by Dedekind's 1897 classification the smallest non-abelian hamiltonian group is `Q_8`, with `[Q_8,Q_8]=Z(Q_8)=\Phi=\{\pm1\}` — its commutator equals its center equals the sign group `\{+,-\}` of the extension above. Hence `\Omega_8\cong Q_8` is not an analogy but the minimal carrier (finite check: enumerate groups of order `\le8`; `Q_8` is the unique smallest non-abelian hamiltonian one). This is the forcing behind the bare `\Omega_8\sim Q_8` fact: the `\{+,-\}` extension and the role-class normality jointly select `Q_8`. [THE]
+The sign/phase extension lands on `\Omega_8` and not on some other order-8 carrier because the carrier is forced to be the quaternion group `Q_8`. [THE 2.5.1.Q8] [^b02-9]. The detector cycle requires a non-abelian group every one of whose subgroups is normal (a *hamiltonian* group), so that each role-class subgroup is a legitimate invariant boundary condition; by Dedekind's 1897 classification the smallest non-abelian hamiltonian group is `Q_8`, with `[Q_8,Q_8]=Z(Q_8)=\Phi=\{\pm1\}` — its commutator equals its center equals the sign group `\{+,-\}` of the extension above. Hence `\Omega_8\cong Q_8` is not an analogy but the minimal carrier (finite check: enumerate groups of order `\le8`; `Q_8` is the unique smallest non-abelian hamiltonian one). This is the forcing behind the bare `\Omega_8\sim Q_8` fact: the `\{+,-\}` extension and the role-class normality jointly select `Q_8`. [THE]
 
 #### 02.5.1.1 Condensed descent form of the ABCD cycle
 
@@ -488,7 +488,7 @@ A claim that skips the first layer is only an analogy.  A claim that skips the s
 
 ### 02.5.2 Centered half-gap and dimension ladder
 
-The centered half-gap is forced by a *canonical decomposition of unity*, not assumed.  [THE 2.5.2.unit] (canonical unit split; forcing: GOLDEN THE 3.3.A).  Ask how to split the whole `1=x+y` into parts with no arbitrariness.  Then: (i) `x+y=1`; (ii) the asymmetry ratio `x/y` must be expressible with no new parameter; (iii) the *only* dimensionless scale parameter available in the mechanism is `φ`; (iv) hence the sole M1-admissible ratio is `x/y=\varphi`; (v) solving with `1+\varphi=\varphi^2` gives `x=\varphi^{-1},\;y=\varphi^{-2}`.  The split is unique *because* φ is the only admissible scale — any other ratio would smuggle in an external catalog of cuts, violating M1.  This is the forcing reason behind the result `p_+=\varphi^{-1},\,p_-=\varphi^{-2}` (which BOOK_02 §02.5.2 and §02.31 previously stated only as the output of the `p+p^2=1` detector skeleton).
+The centered half-gap is forced by a *canonical decomposition of unity*, not assumed.  [THE 2.5.2.unit] [^b02-10].  Ask how to split the whole `1=x+y` into parts with no arbitrariness.  Then: (i) `x+y=1`; (ii) the asymmetry ratio `x/y` must be expressible with no new parameter; (iii) the *only* dimensionless scale parameter available in the mechanism is `φ`; (iv) hence the sole M1-admissible ratio is `x/y=\varphi`; (v) solving with `1+\varphi=\varphi^2` gives `x=\varphi^{-1},\;y=\varphi^{-2}`.  The split is unique *because* φ is the only admissible scale — any other ratio would smuggle in an external catalog of cuts, violating M1.  This is the forcing reason behind the result `p_+=\varphi^{-1},\,p_-=\varphi^{-2}` (which BOOK_02 §02.5.2 and §02.31 previously stated only as the output of the `p+p^2=1` detector skeleton).
 
 From the normalized branches
 
@@ -520,7 +520,7 @@ and the factor `2` in the one-dimensional quantum is forced by the full gap:
 Q(1)=p_+-p_-=2\delta_0.
 ```
 
-The factor `2` is not a normalization convenience; it is forced by contradiction.  [THE 2.5.2.factor2] (necessity of the factor 2; forcing: GOLDEN THE 80.1).  Suppose distinguishability could be quantized one-sidedly, with no factor 2.  Then three independent contradictions follow: (1) "distinguishing" would not require a *pair* of objects, which contradicts the very meaning of distinguishability; (2) the φ-quadratic would have a single root, which is impossible (the conjugate pair `\varphi,\psi` is exactly the two-sidedness of `C_+/D_-`); (3) path holonomy could be one-sided, which forbids the *closed* memory cycles that a history requires (cf. the noncommutative order-memory carrier).  A contradiction in each of the three points means the factor 2 is built into the definition of D0 and cannot be dropped — it is the same two-sidedness appearing as pair-requirement, two-root quadratic, and two-sided holonomy. [THE]
+The factor `2` is not a normalization convenience; it is forced by contradiction.  [THE 2.5.2.factor2] [^b02-11].  Suppose distinguishability could be quantized one-sidedly, with no factor 2.  Then three independent contradictions follow: (1) "distinguishing" would not require a *pair* of objects, which contradicts the very meaning of distinguishability; (2) the φ-quadratic would have a single root, which is impossible (the conjugate pair `\varphi,\psi` is exactly the two-sidedness of `C_+/D_-`); (3) path holonomy could be one-sided, which forbids the *closed* memory cycles that a history requires (cf. the noncommutative order-memory carrier).  A contradiction in each of the three points means the factor 2 is built into the definition of D0 and cannot be dropped — it is the same two-sidedness appearing as pair-requirement, two-root quadratic, and two-sided holonomy. [THE]
 
 The dimension-graded ladder is therefore
 
@@ -528,7 +528,7 @@ The dimension-graded ladder is therefore
 Q(D)=2\delta_0\varphi^{D-1}=\varphi^{D-4}.
 ```
 
-Equivalently, in compact form `Q(D)=\varphi^{D-4}`, the quantum equals `1` exactly at the anchor dimension `D=4`, and the half-gap cascade closes as `\delta_{-n}=\delta_0^{\,n+1}` (forcing: D0-DIM-LADDER-COMPACT-001).  This derivation is part of the finite operator grammar.  It is not a numerological use of `\varphi`, and it is not an independent scaling convention.
+Equivalently, in compact form `Q(D)=\varphi^{D-4}`, the quantum equals `1` exactly at the anchor dimension `D=4`, and the half-gap cascade closes as `\delta_{-n}=\delta_0^{\,n+1}` [^b02-12].  This derivation is part of the finite operator grammar.  It is not a numerological use of `\varphi`, and it is not an independent scaling convention.
 
 The downstream forcings that consume this spine — `Q_8`-Dedekind minimality (above), the icosian-ring `\to E_8` carrier, the `\xi_5=\varphi^{-5}` torus address defect, the kernel-30 zone split `30=8\oplus10\oplus12` with its mixing-hierarchy inversion (rank-3 non-degenerate = small quark mixing vs. degenerate kernel-30 = large lepton mixing), the PMNS `\delta_0`-family, the CKM Wolfenstein quad, the `(\mathbb Z/44)^*` window group, the vacuum cubic, and the seven-incarnation `\mathbb Z_2` registry — are carried in BOOK_02 §02.2.5 and the relevant downstream books; this section supplies only the φ / `δ_0` / dimension-ladder / `Ω_8`-carrier forcings they all inherit.
 ## 02.6 Condensed admissibility and finite response
@@ -573,9 +573,9 @@ Book 03 will own the action/operator dynamics as a sector of construction. Book 
 
 ### 02.7A The Holographic Self-Reading Principle as single root
 
-The invariants of the mathematical spine are not an unordered list of lucky formulas. They are deductive consequences of one root: a finite carrier must *read itself* with no external catalog (M1; forcing-by-contradiction, DEF-0.2.2). Reading-without-a-catalog means the carrier's own boundary record is the only admissible generator of its dynamics — a holographic self-reading constraint. The four spine invariants below are the forced shadows of that single requirement (forcing: GOLDEN §02.7A, "Holographic Self-Reading Principle").
+The invariants of the mathematical spine are not an unordered list of lucky formulas. They are deductive consequences of one root: a finite carrier must *read itself* with no external catalog (M1; forcing-by-contradiction, DEF-0.2.2). Reading-without-a-catalog means the carrier's own boundary record is the only admissible generator of its dynamics — a holographic self-reading constraint. The four spine invariants below are the forced shadows of that single requirement [^b02-13].
 
-**[THE] 02.7A.1 (Quadratic response is forced — Gleason loophole closure).** The self-reading map lives on a 2D retained/archive phase pair and must preserve the boundary area it reads, since area is the only catalog-free measure available to it. An area-preserving readout on a 2D phase cell admits no admissible *linear* scalar response: a linear functional on the retained amplitude bypasses the archive coordinate and so fails to be a function of the area the carrier actually records. The unique scalar response compatible with finite positivity, phase symmetry, and 2D area preservation is **quadratic**. This is exactly where Gleason's theorem leaves a loophole at low dimension; the D0 area-preservation constraint closes that loophole by construction rather than by dimension count (forcing: GOLDEN §02.7A, item 1). The quadratic readout is then *used* in proof form in §02.8 ([THE] 2.12, Quadratic Readout Form); §02.7A supplies the *why*.
+**[THE] 02.7A.1 (Quadratic response is forced — Gleason loophole closure).** The self-reading map lives on a 2D retained/archive phase pair and must preserve the boundary area it reads, since area is the only catalog-free measure available to it. An area-preserving readout on a 2D phase cell admits no admissible *linear* scalar response: a linear functional on the retained amplitude bypasses the archive coordinate and so fails to be a function of the area the carrier actually records. The unique scalar response compatible with finite positivity, phase symmetry, and 2D area preservation is **quadratic**. This is exactly where Gleason's theorem leaves a loophole at low dimension; the D0 area-preservation constraint closes that loophole by construction rather than by dimension count [^b02-14]. The quadratic readout is then *used* in proof form in §02.8 ([THE] 2.12, Quadratic Readout Form); §02.7A supplies the *why*.
 
 **[THE] 02.7A.2 (phi is forced — Fibonacci fusion and Jones subfactor index).** The self-reading carrier has exactly one nontrivial fusion channel: reading a state alongside its own archive reproduces the Fibonacci fusion rule `1 × 1 = 1 ⊕ 1`. The minimal index of a subfactor realizing this single-channel fusion is the Jones index `[M:N] = φ²`, whose unique generator above the integer floor is
 
@@ -583,9 +583,9 @@ The invariants of the mathematical spine are not an unordered list of lucky form
 \varphi=\frac{1+\sqrt5}{2},\qquad p+p^{2}=1\ \Rightarrow\ p=\varphi^{-1}.
 ```
 
-So φ is not posted; it is the smallest subfactor index that a catalog-free binary self-reading can carry. The full derivation of φ from `p+p²=1` and of `δ₀=(√5−2)/2=1/(2φ³)` is owned by BOOK_01 (see BOOK_01, D0-PHI-001); §02.9 ([LEM] 2.14) re-uses the positive root in detector-asymmetry form (forcing: GOLDEN §02.7A, item 2).
+So φ is not posted; it is the smallest subfactor index that a catalog-free binary self-reading can carry. The full derivation of φ from `p+p²=1` and of `δ₀=(√5−2)/2=1/(2φ³)` is owned by BOOK_01 (see BOOK_01, D0-PHI-001); §02.9 ([LEM] 2.14) re-uses the positive root in detector-asymmetry form [^b02-15].
 
-**[THE] 02.7A.3 (log-det is the forced generating functional).** Area-preserving self-reading dynamics are symplectic on the retained/archive pair, and the catalog-free generating function of an area-preserving flow is the logarithm of a determinant: `log det` is the unique additive potential whose gradient reproduces the area-preserving update. Hence the feedback operator `F_N` enters the spine through `log det F_N` rather than through any fitted polynomial — the no-continuous-fit guardrail of §02.7 is a corollary of holographic self-reading, not an independent stipulation (forcing: GOLDEN §02.7A, item 3). The `F_N` operator itself is owned by BOOK_01.
+**[THE] 02.7A.3 (log-det is the forced generating functional).** Area-preserving self-reading dynamics are symplectic on the retained/archive pair, and the catalog-free generating function of an area-preserving flow is the logarithm of a determinant: `log det` is the unique additive potential whose gradient reproduces the area-preserving update. Hence the feedback operator `F_N` enters the spine through `log det F_N` rather than through any fitted polynomial — the no-continuous-fit guardrail of §02.7 is a corollary of holographic self-reading, not an independent stipulation [^b02-16]. The `F_N` operator itself is owned by BOOK_01.
 
 **[LEM] 02.7A.4 (N_act = 38 as the holographic rank/nullity index).** Read holographically, the active action coefficient is a homological index of the minimal self-reading carrier: it counts the catalog-free boundary degrees of freedom (nullity) against the bulk frame they are read against (rank). For the selected scene `K(9,11,13)` with `|V|=33`, `Rank=3`, the nullity shell is `|V|−Rank=30` and the carrier's catalog-free index closes the forward/return self-reading cycle at
 
@@ -593,7 +593,7 @@ So φ is not posted; it is the smallest subfactor index that a catalog-free bina
 N_{act}=2\,N_{unlock}=2(2\gamma-1)=38,\qquad \gamma=\frac{|V|-\operatorname{Rank}}{\operatorname{Rank}}=10.
 ```
 
-The holographic reading and the v14 weak-unlock derivation are the *same* index from two directions: §02.19.2 derives `38` as the closed forward/return weak-unlock cycle, and §02.7A names *why* that closed cycle is the homological rank/nullity index of the minimal holographic carrier. This book keeps its own §02.19.2 derivation as the operative one (BOOK_03 owns `Λ_act=38` as the single action section); §02.7A supplies the unifying root, not a competing count (forcing: GOLDEN §02.7A, item 4).
+The holographic reading and the v14 weak-unlock derivation are the *same* index from two directions: §02.19.2 derives `38` as the closed forward/return weak-unlock cycle, and §02.7A names *why* that closed cycle is the homological rank/nullity index of the minimal holographic carrier. This book keeps its own §02.19.2 derivation as the operative one (BOOK_03 owns `Λ_act=38` as the single action section); §02.7A supplies the unifying root, not a competing count [^b02-17].
 
 These four are one statement. Drop holographic self-reading and the spine loses its forcing: the response could be linear, the index could be any subfactor value, the generating functional could be any fitted potential, and `38` would be a calibration rather than a homological index. Keeping the root keeps all four forced together.
 
@@ -662,7 +662,7 @@ The same finite-detector discipline that forces the base equation also forces th
 
 **[DEF] Bulk/Boundary instruments.** Let `J` (Puncture / Localization) be the operator that instantiates a topological defect inside the retained Archive Bulk, and let `Y` (Closure / Compactification) be the trace-out operator projecting the Bulk onto the Active Boundary. `J` localizes a state in the bulk; `Y` reads its boundary projection. Both are admissible finite instruments in the role alphabet, not exogenous postulates.
 
-**[THE 2.9A] Discrete origin of quantum uncertainty — ħ is derived, not postulated (forcing: GOLDEN THE 2.9A, BOOK-02-MATHEMATICAL-PROOF-SPINE-AND-INVARIANT-CALCULUS; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** The holographic commutator is forced nonzero,
+**[THE 2.9A] Discrete origin of quantum uncertainty — ħ is derived, not postulated [^b02-19]. [^b02-18].** The holographic commutator is forced nonzero,
 
 ```math
 [J,Y]\neq 0,
@@ -711,7 +711,7 @@ Runtime objects are typed constructively (codes plus a finite decidable membersh
 
 **[THE] Extensionality-by-test.**  If $\forall x\,\bigl(\chi_A(x)=\chi_B(x)\bigr)$ then $A\equiv B$.
 
-*Forcing.*  Suppose $A\not\equiv B$ yet no admissible test separates them.  Then the residual distinction is not fixable by the checking procedure, so pinning it would require an external catalog — an exogenous label that decides identity from outside the corpus.  M1 forbids exactly such a catalog, so the distinction collapses: $A\equiv B$ (forcing: GOLDEN THE 10.1.8 / BOOK-IV; restated immutably as GOLDEN LEM 21.1.2 / BOOK-V).  This is the M1 identity criterion that grounds the distinguishability program: identity *is* test-indistinguishability, and every runtime readout, registry entry and S-matrix amplitude below is an equivalence class under it.
+*Forcing.*  Suppose $A\not\equiv B$ yet no admissible test separates them.  Then the residual distinction is not fixable by the checking procedure, so pinning it would require an external catalog — an exogenous label that decides identity from outside the corpus.  M1 forbids exactly such a catalog, so the distinction collapses: $A\equiv B$ [^b02-20].  This is the M1 identity criterion that grounds the distinguishability program: identity *is* test-indistinguishability, and every runtime readout, registry entry and S-matrix amplitude below is an equivalence class under it.
 
 ### 02.10.1 Proof cell: `D0-MATH-001` finite phi-runtime and terminal quotient ideal
 
@@ -745,19 +745,19 @@ The continuum that a finite runtime approaches is not an actual-infinity object 
 
 **[REM] φ-ultrametric Baire convergence.**  Set $d(\mathbf A,\mathbf B):=\varphi^{-k_0}$, where $k_0$ is the first level at which $A_k\equiv_{\kappa_k}B_k$ fails.  Then $d$ is a Baire-type ultrametric on the space of refinements, and κ-stability of a refinement sequence is exactly the Cauchy condition in $(\cdot,d)$.
 
-*Forcing (uniqueness of the limit).*  The κ-stable limit exists in the completion and is unique.  Were two distinct κ-stable interpretations to converge for the same classical entity, selecting between them would demand exogenous parameters — an external choice not derivable from the corpus — which M1 forbids.  Hence the correct κ-stable posing, if it exists, is unique (forcing: GOLDEN REM 21.3.3.Baire / BOOK-V; uniqueness theorem GOLDEN THE 21.3.4).  The φ-grading $\varphi^{-k_0}$ ties the resolution depth to the spine constant $\delta_0=(\sqrt5-2)/2=1/(2\varphi^3)$ owned by BOOK_01: each refinement level costs one φ-power of metric resolution.
+*Forcing (uniqueness of the limit).*  The κ-stable limit exists in the completion and is unique.  Were two distinct κ-stable interpretations to converge for the same classical entity, selecting between them would demand exogenous parameters — an external choice not derivable from the corpus — which M1 forbids.  Hence the correct κ-stable posing, if it exists, is unique [^b02-21].  The φ-grading $\varphi^{-k_0}$ ties the resolution depth to the spine constant $\delta_0=(\sqrt5-2)/2=1/(2\varphi^3)$ owned by BOOK_01: each refinement level costs one φ-power of metric resolution.
 
-**[THE] ZFC only as the internal language of constructive types.**  ZFC is admissible in D0 *only* as the internal language of constructive types, where every statement carries a test / distinguishability procedure.  Any part of classical ZFC that requires actual infinity or oracles — including "absolute" limits with no κ-protocol — is, in D0, an ill-posed statement (forcing: GOLDEN THE 22.2.1 / BOOK-V).  Power-set and replacement survive only in their testable restrictions: $\mathcal P(A)$ as the constructive type of definable subsets cut out by computable predicates $\chi$ on $A$, replacement as computable maps whose values are buildable/checkable in finite resource.  The oracle and actual-infinity fragments are not "false" — they are *not statements* of the corpus, because they name no test.
+**[THE] ZFC only as the internal language of constructive types.**  ZFC is admissible in D0 *only* as the internal language of constructive types, where every statement carries a test / distinguishability procedure.  Any part of classical ZFC that requires actual infinity or oracles — including "absolute" limits with no κ-protocol — is, in D0, an ill-posed statement [^b02-22].  Power-set and replacement survive only in their testable restrictions: $\mathcal P(A)$ as the constructive type of definable subsets cut out by computable predicates $\chi$ on $A$, replacement as computable maps whose values are buildable/checkable in finite resource.  The oracle and actual-infinity fragments are not "false" — they are *not statements* of the corpus, because they name no test.
 
 ### 02.10.3 Runtime as navigation, not search: the global potential `D0-MATH-001` complexity cell
 
 **Claim.**  A finite-resource search "find $s$ with $Acc(s)=1$" is solved by directed descent along a global potential, never by brute enumeration; the worst-case exponential branch is M1-forbidden whenever the holonomy channel is open.
 
-**[DEF] Global navigation potential $V$.**  For a search task, the numerical-verification package is a computable global potential $V:\mathrm{Vtx}(\mathcal G)\to\mathbb Q(\varphi)$ on the state graph that drives gradient/relaxation navigation and descends monotonically to a solution, with no brute search (forcing: GOLDEN DEF 24.1.1 / BOOK-V).  $V$ is the central object that *replaces* search by directed descent.
+**[DEF] Global navigation potential $V$.**  For a search task, the numerical-verification package is a computable global potential $V:\mathrm{Vtx}(\mathcal G)\to\mathbb Q(\varphi)$ on the state graph that drives gradient/relaxation navigation and descends monotonically to a solution, with no brute search [^b02-23].  $V$ is the central object that *replaces* search by directed descent.
 
 **[LEM] No navigation without $V$.**  If no global $V$ exists, any algorithm claiming a search speedup must mark which branches are promising — i.e. store an external branch index.  Such an index is not derivable from local checkability, so it is an external catalog and is M1-forbidden.
 
-*Forcing.*  Direct application of the reduction-to-⊥ scheme via exogenous parameters (DEF-0.2.2; the branch index is precisely the catalog the contradiction excludes) (forcing: GOLDEN LEM 24.1.2 / BOOK-V).
+*Forcing.*  Direct application of the reduction-to-⊥ scheme via exogenous parameters (DEF-0.2.2; the branch index is precisely the catalog the contradiction excludes) [^b02-24].
 
 **[LEM] $V$ as heat-trace relaxation.**  Let the boundary $B:=Acc\cup Rej$ carry the accept/reject label $b$ with $b|_{Acc}=1$, $b|_{Rej}=0$.  Then the canonical potential is the harmonic relaxation of that label,
 
@@ -765,19 +765,19 @@ The continuum that a finite runtime approaches is not an actual-infinity object 
 V:=\lim_{u\to\infty}e^{-uL}\,b,
 ```
 
-with $L$ the CORE-fixed symmetric graph Laplacian and $u=\varepsilon^2 t$ the canonical (heat-trace) time scale.  $V$ is the "reachability of a solution" read off the same heat-trace channel that BOOK_01 uses for spectral geometry — here repurposed as a search-navigation potential (forcing: GOLDEN LEM 24.1.3 / BOOK-V).
+with $L$ the CORE-fixed symmetric graph Laplacian and $u=\varepsilon^2 t$ the canonical (heat-trace) time scale.  $V$ is the "reachability of a solution" read off the same heat-trace channel that BOOK_01 uses for spectral geometry — here repurposed as a search-navigation potential [^b02-25].
 
 **[THE] $V$ is a CORE-object when the holonomy channel is open ($D\ge6$).**  If the system admits the $D\ge6$ regime (cycles/holonomy present, the memory/relaxation channel open), then $V$ exists as a CORE-object — no external tables — and is fixed canonically by the corpus.
 
-*Forcing (minimality + ⊥).*  (i) In $D\ge6$ the history contribution is fixed by the holonomy class $\mathrm{Hol}(\gamma)$, so cycle information is not lost and needs no external index.  (ii) Heat-trace supplies a canonical relaxation with no external scale, so $e^{-uL}$ and the $u\to\infty$ limit are defined without tuning.  (iii) Were $V$ to depend on an external setting (precision, step, basis), a parameter catalog would be required — M1-forbidden (THE 0.4.1).  Hence $V$ exists and is canonical (forcing: GOLDEN THE 24.2.1 / BOOK-V).  The $D\le5$ vs $D\ge6$ topological fork is the load-bearing case split: only the no-holonomy phase can lack a canonical $V$.
+*Forcing (minimality + ⊥).*  (i) In $D\ge6$ the history contribution is fixed by the holonomy class $\mathrm{Hol}(\gamma)$, so cycle information is not lost and needs no external index.  (ii) Heat-trace supplies a canonical relaxation with no external scale, so $e^{-uL}$ and the $u\to\infty$ limit are defined without tuning.  (iii) Were $V$ to depend on an external setting (precision, step, basis), a parameter catalog would be required — M1-forbidden (THE 0.4.1).  Hence $V$ exists and is canonical [^b02-26].  The $D\le5$ vs $D\ge6$ topological fork is the load-bearing case split: only the no-holonomy phase can lack a canonical $V$.
 
-**[THE] $V$ is computable without infinite precision.**  In D0 an observable is fixed to finite order by the $\varepsilon^2$ protocol, so $V$ need only be computed to the canonical tolerance $\varepsilon^2$.  The $\varepsilon^2$ tolerance therefore caps the number of relaxation steps in $u$: arbitrary precision ("how many digits do we need") is itself an external catalog and is M1-forbidden, so only the corpus-fixed tolerance is admitted.  The relaxation iterations are bounded by the protocol, carry no exponential branching, and the cost is $\mathrm{poly}(n)$ $\delta_0$-ticks in the D0 resource metric (forcing: GOLDEN THE 24.2.2 / BOOK-V).  This is the "why poly" step: the tolerance, not a convergence assumption, bounds the work.
+**[THE] $V$ is computable without infinite precision.**  In D0 an observable is fixed to finite order by the $\varepsilon^2$ protocol, so $V$ need only be computed to the canonical tolerance $\varepsilon^2$.  The $\varepsilon^2$ tolerance therefore caps the number of relaxation steps in $u$: arbitrary precision ("how many digits do we need") is itself an external catalog and is M1-forbidden, so only the corpus-fixed tolerance is admitted.  The relaxation iterations are bounded by the protocol, carry no exponential branching, and the cost is $\mathrm{poly}(n)$ $\delta_0$-ticks in the D0 resource metric [^b02-27].  This is the "why poly" step: the tolerance, not a convergence assumption, bounds the work.
 
-**[THE] Polynomial relaxation via the Lyapunov functional $V_k$.**  For the class $\mathbf{NP}_{D0}$ — tasks given by a finite predicate $\chi(x)$ on a constructive type and realized on the finite levels $V_k$ of the inverse system — if each level $k$ carries a global heat-trace functional $V_k$ (a Lyapunov function) under which coarse-graining is a monotone descent $V_k\downarrow$ that separates admissible solutions by a spectral gap $\Delta_k>0$, then search reduces to spectral relaxation, executable in $\mathrm{poly}(|\mathrm{Rep}(x)|)$ per fixed level (forcing: GOLDEN THE 24.3.1 / BOOK-V).
+**[THE] Polynomial relaxation via the Lyapunov functional $V_k$.**  For the class $\mathbf{NP}_{D0}$ — tasks given by a finite predicate $\chi(x)$ on a constructive type and realized on the finite levels $V_k$ of the inverse system — if each level $k$ carries a global heat-trace functional $V_k$ (a Lyapunov function) under which coarse-graining is a monotone descent $V_k\downarrow$ that separates admissible solutions by a spectral gap $\Delta_k>0$, then search reduces to spectral relaxation, executable in $\mathrm{poly}(|\mathrm{Rep}(x)|)$ per fixed level [^b02-28].
 
-**[COR] Constructive-phase collapse $\mathbf{NP}_{D0}\subseteq\mathbf{P}_{D0}$.**  If $\Delta_k\ge\Delta>0$ holds across the whole level family (a spectral phase without criticality), then $\mathbf{NP}_{D0}$ admits a polynomial solver on the physical D0-geometry carrier, i.e. $\mathbf{NP}_{D0}\subseteq\mathbf{P}_{D0}$.  *This is not, and does not claim to be, the ZFC $\mathbf P\overset?=\mathbf{NP}$ question*: it is a statement about the regularized computational model with a fixed UV cutoff and holonomic memory topology, where every task names a test (forcing: GOLDEN COR 24.3.2 / BOOK-V).  The disclaimer is part of the claim — without the fixed cutoff and the test requirement, the statement would not be a corpus statement at all.
+**[COR] Constructive-phase collapse $\mathbf{NP}_{D0}\subseteq\mathbf{P}_{D0}$.**  If $\Delta_k\ge\Delta>0$ holds across the whole level family (a spectral phase without criticality), then $\mathbf{NP}_{D0}$ admits a polynomial solver on the physical D0-geometry carrier, i.e. $\mathbf{NP}_{D0}\subseteq\mathbf{P}_{D0}$.  *This is not, and does not claim to be, the ZFC $\mathbf P\overset?=\mathbf{NP}$ question*: it is a statement about the regularized computational model with a fixed UV cutoff and holonomic memory topology, where every task names a test [^b02-29].  The disclaimer is part of the claim — without the fixed cutoff and the test requirement, the statement would not be a corpus statement at all.
 
-**[LEM] Worst-case collapse is the no-holonomy $D\le5$ phase.**  Instances demanding exponential enumeration are exactly the states with no global navigation potential, topologically the $D\le5$ tree / near-tree phase.  In $D\ge6$ the holonomy channel makes the global potential canonical (heat-trace relaxation), so adversarial hardness can only enter as exogenous parameters of instance/encoding/precision choice — M1-forbidden (forcing: GOLDEN LEM 24.3.2 / BOOK-V).  Worst-case hardness is thus not a property of the problem but a smuggled external catalog, and the reduction-to-⊥ removes it.
+**[LEM] Worst-case collapse is the no-holonomy $D\le5$ phase.**  Instances demanding exponential enumeration are exactly the states with no global navigation potential, topologically the $D\le5$ tree / near-tree phase.  In $D\ge6$ the holonomy channel makes the global potential canonical (heat-trace relaxation), so adversarial hardness can only enter as exogenous parameters of instance/encoding/precision choice — M1-forbidden [^b02-30].  Worst-case hardness is thus not a property of the problem but a smuggled external catalog, and the reduction-to-⊥ removes it.
 
 **Falsification hook.**  If a search admissible in the corpus exhibits genuine exponential branching with the holonomy channel open ($D\ge6$, $\Delta_k\ge\Delta>0$), or if some $V_k$ fails monotone descent without an exogenous parameter being introduced, the $\mathbf{NP}_{D0}\subseteq\mathbf{P}_{D0}$ cell is demoted before any external comparison.
 ## 02.11 Matter, baryon, meson and hadron proof blocks
@@ -1051,7 +1051,7 @@ Thus
 
 The exponent is a theorem obligation: active plus anchor over `Omega8` with the finite detector-cell correction.  It is not a fitted real number.
 
-#### Consistency seam: the gluing anomaly `Δα` (forcing: GOLDEN §16.3, COR 16.3.5)
+#### Consistency seam: the gluing anomaly `Δα` [^b02-31]
 
 `α_top` is only the topological writing of the whitening value, read off the discrete scene/channel count.  The same constant `α^-1` admits a SECOND, independent algebraic writing read off the continuous packing/algebra:
 
@@ -1073,7 +1073,7 @@ The exponent is a theorem obligation: active plus anchor over `Omega8` with the 
 \varepsilon^2=\varphi^{-16}\approx 4.53104\cdot10^{-4}.
 ```
 
-[COR] (forcing: GOLDEN COR 16.3.5.)  `Δα≠0` is NOT a numerical error and NOT a defect of either writing.  Two independent reconstructions of the SAME constant — topological capacity (channel count) versus geometric phase `π_0` — cannot be glued to zero residue inside `Q(φ)`: the field `Q(φ)` is the smallest catalog-free arena that holds both, and it does not flatten the seam.  Hence `Δα` is the IRREDUCIBLE residue of gluing topological capacity to geometric phase.  This non-zero seam is forced, not fitted, and it is the seed of the sterile-sector mechanism (a measurable CORE residue; any probabilistic weight `P_sterile=f(Δα²)` built on it is a typed BRIDGE/HYP layer, since the linear sign of `Δα` is not observable).  The runtime `q_res` dressing above does NOT erase this seam; it dresses `α_top` toward the measured `137.035999`, while `Δα` records that the two algebraic origins were never identical to begin with.
+[COR] [^b02-32]  `Δα≠0` is NOT a numerical error and NOT a defect of either writing.  Two independent reconstructions of the SAME constant — topological capacity (channel count) versus geometric phase `π_0` — cannot be glued to zero residue inside `Q(φ)`: the field `Q(φ)` is the smallest catalog-free arena that holds both, and it does not flatten the seam.  Hence `Δα` is the IRREDUCIBLE residue of gluing topological capacity to geometric phase.  This non-zero seam is forced, not fitted, and it is the seed of the sterile-sector mechanism (a measurable CORE residue; any probabilistic weight `P_sterile=f(Δα²)` built on it is a typed BRIDGE/HYP layer, since the linear sign of `Δα` is not observable).  The runtime `q_res` dressing above does NOT erase this seam; it dresses `α_top` toward the measured `137.035999`, while `Δα` records that the two algebraic origins were never identical to begin with.
 
 ### 02.13.5 `D0-COEFF-003` QCD runtime and archive scale
 
@@ -1117,11 +1117,11 @@ The active colour selection rule is triality zero:
 (n_q-n_{\bar q})\bmod3=0.
 ```
 
-#### Why `π_0` and not `π` in the runtime: the counter-term ban (forcing: GOLDEN LEM 21.4.2, THE 21.4.5)
+#### Why `π_0` and not `π` in the runtime: the counter-term ban [^b02-33]
 
 The factor `(π_0/π)` carries a forced asymmetry: `π_0=(6/5)φ²∈Q(φ)` is a CORE structural constant (no external catalog), whereas classical `π` is a LIMIT of discretization refinements and is only ever available at BRIDGE status.  D0 may not silently substitute `π` for `π_0` inside a CORE formula, because the substitution would import an external precision catalog.
 
-[LEM] Counter-term ban (forcing: GOLDEN LEM 21.4.2).  Suppose one tries to "correct" a finite observable `F_k` toward an ideal value by appending refinement counter-terms,
+[LEM] Counter-term ban [^b02-34].  Suppose one tries to "correct" a finite observable `F_k` toward an ideal value by appending refinement counter-terms,
 
 ```math
 F_k^{new}=F_k+\sum_{n=1}^{N(k)}c_n\,G_{n,k},
@@ -1129,7 +1129,7 @@ F_k^{new}=F_k+\sum_{n=1}^{N(k)}c_n\,G_{n,k},
 
 with `G_{n,k}` corrections NOT fixed by pro-compatibility and `c_n` chosen "as the refinement proceeds".  Then the set `{c_n}` is a MANDATORY external catalog, hence an M1-violation, because (a) without it the observable `F` cannot be reproduced by a second executor; (b) it cannot be derived from any finite distinguishability protocol; (c) it admits infinite recursion of "one more term".  Therefore CORE admits only observables fixed by the whole pro-family rule `F_{k-1}∘π_{k→k-1}=F_k`; anything carrying free `c_n` is BRIDGE/APPX and may not be declared part of the continuum.  ∎
 
-[THE] Central decomposition `A=B+C_k+r_k` (forcing: GOLDEN THE 21.4.5).  Every pro-observable value splits as
+[THE] Central decomposition `A=B+C_k+r_k` [^b02-35].  Every pro-observable value splits as
 
 ```math
 A_k=B+C_k+r_k,
@@ -1137,7 +1137,7 @@ A_k=B+C_k+r_k,
 
 with `B` the stabilized continuum part (k-invariant CORE object), `C_k` the level-`k` structural part fixed by canonization (NOT a free parameter), and `r_k` the κ-residue obeying `|r_k|≤Kκ_k` with `r_k→0`.  Thus the continuum value `A_∞:=B` exists WITHOUT any appeal to actual infinity, and `r_k` is a bounded κ-residue, never a tunable counter-term.  This is the licence that lets the `(π_0/π)` factor sit in a CORE runtime: `π_0` is the `B`-part, the discretization gap toward `π` is absorbed in the controlled `C_k+r_k`, and no infinite catalog is invoked.
 
-[THE] M1+ uniqueness of the limit (forcing: GOLDEN THE 21.3.4).  If one classical entity admitted two distinct κ-stable interpretations, choosing between them would require exogenous parameters, which M1 forbids; hence the correct κ-stable reading, where it exists, is UNIQUE.  This is what makes `π_0` and the runtime formula above well-posed rather than one convention among many: the continuum `R_{D0}` is itself defined point-free, as the locale/sheaf of locally constant pro-observables over `\varprojlim V` (forcing: GOLDEN THE 21.4.3), so a CORE constant is the unique κ-limit of its refinement family, not a chosen decimal.
+[THE] M1+ uniqueness of the limit [^b02-36].  If one classical entity admitted two distinct κ-stable interpretations, choosing between them would require exogenous parameters, which M1 forbids; hence the correct κ-stable reading, where it exists, is UNIQUE.  This is what makes `π_0` and the runtime formula above well-posed rather than one convention among many: the continuum `R_{D0}` is itself defined point-free, as the locale/sheaf of locally constant pro-observables over `\varprojlim V` [^b02-37], so a CORE constant is the unique κ-limit of its refinement family, not a chosen decimal.
 
 ### 02.13.6 Analytic proof cell for the electromagnetic residual exponent
 
@@ -1180,7 +1180,7 @@ The clock-sector golden floor is a SECTOR assumption, not a global law.
 
 Book 02 also owns the general finite-projector inequality used by the metrology and bridge layers.
 
-[LEM] Laboratory Projector Bound 2.19 (forcing: v17 BOOK_02 §02.13).  Let `Π_lab≤P_N` be the laboratory projector and split the environment as
+[LEM] Laboratory Projector Bound 2.19 [^b02-38].  Let `Π_lab≤P_N` be the laboratory projector and split the environment as
 
 ```math
 Q_{env}=I-\Pi_{lab}=Q_N+(P_N-\Pi_{lab}).
@@ -1374,7 +1374,7 @@ This integrated rule strengthens the anti-numerology firewall: sensitivity is ad
 
 The deepest no-deformation certificate is not numerical at all — it is the rigidity of the *role group itself*.  The rigidity calculus above only has a fixed point \(\varphi_0\) to differentiate at because the algebra carrying the readouts is locked; that lock is `Q_8`, and it is forced, not chosen.  BOOK_01 §01.20 owns the role alphabet (the FACT \(\Omega_8=\mathrm{ABCD}\times\{\pm\}\), \(|\Omega_8|=8\)); this proof-spine book carries the *forcing* of why that octet must be the quaternion group, since the rigidity floor depends on it.
 
-**[THE]** \(\Omega_8\cong Q_8\) (claim_id: `D0-Q8-DEDEKIND-MINIMALITY-001`; forcing: GOLDEN THE I.3 / D0-THEORY-DOSSIER §I.3).  The derivation is by contradiction from M1, in four forced steps:
+**[THE]** \(\Omega_8\cong Q_8\) [^b02-39].  The derivation is by contradiction from M1, in four forced steps:
 
 1. *All subgroups normal.*  A non-normal subgroup has distinct conjugate copies, so the act would have to record *which copy* — an external catalog entry M1 forbids.  Hence every subgroup of the role group is normal.
 2. *Non-commutative.*  Order memory (the trace `C` must remember the orientation in which `A`,`B` were composed) forbids a fully abelian group; the role group must be non-abelian.
@@ -1391,7 +1391,7 @@ i.e. commutator (order memory), centre (the \(\{+,-\}\) orientation = irreversib
 
 The rigidity of `Q_8` does not stop at order 8; it propagates upward along an exact unit chain to the rank-8 even-unimodular lattice, and this is the load-bearing replacement for the dimensionally-empty v17 01.7A "\(\Omega_8\otimes\mathbb{R}^{30}\hookrightarrow\Lambda_{24}\)" bridge.  The replacement runs through the two pillars this spine already owns — the role group `Q_8` and the field \(\varphi\) — and is checked in exact \(\mathbb{Z}[\sqrt5]\) arithmetic (no floating point).
 
-**[THE]** Golden quaternions generate \(E_8\) (claim_id: `D0-ICOSIAN-E8-CARRIER-001`; forcing: GOLDEN THE II.1 / D0-THEORY-DOSSIER §II.1, cross-checked D0-CKM-INTERFACE-ITERATION-REPORT §28):
+**[THE]** Golden quaternions generate \(E_8\) [^b02-40]:
 
 1. *Icosian closure.*  The binary icosahedral group \(2I\) = 120 unit icosians (quaternions over \(\mathbb{Z}[\varphi]\), the vertices of the 600-cell); the full \(120\times120\) multiplication table closes **exactly**, every norm \(=1\).
 2. *Subgroup chain.*  \(Q_8\subset 2T\subset 2I\) — roles \(\subset\) Hurwitz units \(\subset\) icosians — so the forced role group sits at the base of an exact tower of unit quaternion groups.  The quotient \(2I/\{\pm 1\}\cong A_5\) is the icosahedral rotation group = Shechtman quasicrystal point group (= the flavor group entering CKM/PMNS).
@@ -1402,7 +1402,7 @@ This is a genuine no-deformation certificate of the rigidity kind demanded by §
 
 **[DEF] cert spec.**  Build the \(8+16+96\) units as \((a,b)\)-pairs in the \(/4\)-lattice; quaternion multiply `qmul` through \(\mathbb{Z}[\sqrt5]\); assert exact closure; form the Gram matrix from the block form \(\begin{psmallmatrix}1&2\\2&5\end{psmallmatrix}\); assert \(\det/4=1\) and diagonal parity.  (Target status LEAN_PROVED; working code in D0-CKM-INTERFACE-ITERATION-REPORT, iteration 7.)
 
-**[BRIDGE]** \(E_8\to\Lambda_{24}\) (claim_id: `D0-ICOSIAN-LEECH-BRIDGE-001`; forcing: GOLDEN II.2).  The Leech lattice \(\Lambda_{24}\) is built from the icosians by the established external construction (R. Wilson, *J. Algebra* 322 (2009) 2186; Conway–Sloan, *SPLAG* ch. 8).  Status is BRIDGE: this leans on a sixty-year-old external theorem and is cited, not re-proved here.  It is the honest, dimensionally-correct continuation
+**[BRIDGE]** \(E_8\to\Lambda_{24}\) [^b02-41].  The Leech lattice \(\Lambda_{24}\) is built from the icosians by the established external construction (R. Wilson, *J. Algebra* 322 (2009) 2186; Conway–Sloan, *SPLAG* ch. 8).  Status is BRIDGE: this leans on a sixty-year-old external theorem and is cited, not re-proved here.  It is the honest, dimensionally-correct continuation
 ```math
 Q_8\;\to\;\mathbb{Z}[\varphi]\text{-hull}\;\to\;\text{icosian ring}=E_8\;\to\;\Lambda_{24},
 ```
@@ -1487,9 +1487,9 @@ The correction is therefore tied to the terminal role square, signed lift and li
 
 ### 02.19B Topological stratification of forces (the 0-1-2 skeleton)
 
-The depth/exponent uniqueness above fixes *magnitudes*; it does not yet say *why* there are distinct forces.  The forces are not postulated as separate gauge sectors and they are not unified by enlarging the gauge group.  They are the three homological traces of one feedback operator over the strict skeleton stratification of the rigid carrier `K(9,11,13)` (forcing: GOLDEN THE 02.19B, `D0-CORE-HOMOLOGICAL-FORCES-001`).
+The depth/exponent uniqueness above fixes *magnitudes*; it does not yet say *why* there are distinct forces.  The forces are not postulated as separate gauge sectors and they are not unified by enlarging the gauge group.  They are the three homological traces of one feedback operator over the strict skeleton stratification of the rigid carrier `K(9,11,13)` [^b02-43].
 
-**[THE 02.19B] Homological unification 0-1-2 — gravity, EM and QM are the three skeleton traces, not three postulates (forcing: GOLDEN THE 02.19B, D0.Core; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** Let `R` be the feedback-return operator `F_N` of this book restricted to the carrier `K(9,11,13)`.  The carrier carries exactly three orthogonal homological strata — points, lines, areas — and `R` evaluated on each yields one phenomenological force:
+**[THE 02.19B] Homological unification 0-1-2 — gravity, EM and QM are the three skeleton traces, not three postulates [^b02-44]. [^b02-42].** Let `R` be the feedback-return operator `F_N` of this book restricted to the carrier `K(9,11,13)`.  The carrier carries exactly three orthogonal homological strata — points, lines, areas — and `R` evaluated on each yields one phenomenological force:
 
 1. **0-skeleton (vertices, `|V|=33`).** `Tr_0(R)` is the global node-closure density.  This is macroscopic gravity `G_N`: a vertex-trace counts only end-point closure, with no transport and no area, so it carries length-depth covariance but no gauge phase — the same length-depth object that supplies `D_L=9·11=99` in §02.19.3 and the Book 07 limit.
 2. **1-skeleton (edges, `|E|=359`).** `Tr_1(R)` is the inter-nodal transport capacity.  This is electromagnetism: the edge-trace accumulates one complex phase per edge, and the fine-structure constant is the reciprocal edge count `α^{-1}\propto 359` already forced in §02.13 (`α_{top}^{-1}=359/\varphi^2-\varphi^{-5}`).
@@ -1501,9 +1501,9 @@ Owner: Book 02 / D0.Core.  This theorem ties the magnitude cells of §02.19 to t
 
 ### 02.19C Electroweak from quaternions and gravity from Hurwitz archive pressure
 
-§02.19B segregates *which* trace carries *which* force.  This cell forces the *internal gauge structure* of the 1-skeleton/EM sector and the *mechanism* of the 0-skeleton/gravity sector directly from the terminal graph algebra — no Lie group is imported.  This is the M1 failure mode: the Standard-Model electroweak group is forced as the only algebra of finite terminal readouts that survives self-distinguishing without a catalog (forcing: GOLDEN THE 02.19C, `D0-CORE-ELECTROWEAK-QUATERNION-001`).
+§02.19B segregates *which* trace carries *which* force.  This cell forces the *internal gauge structure* of the 1-skeleton/EM sector and the *mechanism* of the 0-skeleton/gravity sector directly from the terminal graph algebra — no Lie group is imported.  This is the M1 failure mode: the Standard-Model electroweak group is forced as the only algebra of finite terminal readouts that survives self-distinguishing without a catalog [^b02-45].
 
-**[THE 02.19C] Algebraic electroweak emergence — `SU(2)×U(1)` is forced from the graph algebra (forcing: GOLDEN THE 02.19C, D0.Core; ⊥-proof). Cert: `vp_omega8...`, `vp_hurwitz...` in 05.10.** The electroweak gauge group is an exact Lie-group isomorphism of two independent terminal operators of the carrier:
+**[THE 02.19C] Algebraic electroweak emergence — `SU(2)×U(1)` is forced from the graph algebra [^b02-46]. Cert: `vp_omega8...`, `vp_hurwitz...` in 05.10.** The electroweak gauge group is an exact Lie-group isomorphism of two independent terminal operators of the carrier:
 
 - **`Sp(1) ≅ SU(2)` from the imaginary quaternionic terminal readout.**  The terminal readout of the `Q8 ~ Omega8` carrier (Dedekind-1897 minimality, owned by BOOK_01) is quaternionic; the imaginary-quaternion part `\{i,j,k\}` is the non-commutative remainder that survives boundary readout.  The group of unit imaginary quaternions is the symplectic group `Sp(1)`, and `Sp(1)\cong SU(2)` is an exact isomorphism — so the weak isospin sector is the terminal readout itself, not an added field.
 - **`U(1)` from complex phase accumulation over the `359` edges.**  Each edge of the 1-skeleton contributes one complex phase increment; the closed accumulation over all `|E|=359` edges is a circle `U(1)`.  This is the same edge phase whose reciprocal count fixes `α^{-1}` in §02.13 and whose trace is `Tr_1(R)=` EM in §02.19B.
@@ -1512,7 +1512,7 @@ Their algebraic tensor product `Sp(1) × U(1)` therefore yields exactly the `SU(
 
 Forcing (⊥): suppose the electroweak group were any group other than `Sp(1)×U(1)`.  By the Hurwitz/Frobenius classification the only normed division algebras are `R,C,H,O` of dimensions `1,2,4,8`; a finite terminal readout that distinguishes itself without an external catalog must be one of these, and the carrier's non-commutative-but-associative readout is exactly `H` (commutative `C` cannot carry isospin non-commutativity, non-associative `O` cannot close a finite readout).  Unit-imaginary-`H` is `Sp(1)`; the residual abelian edge phase is `U(1)`; any third factor would require a stratum beyond the 0/1/2 skeleton of §02.19B and hence an exogenous catalog.  ⊥.  Hence `SU(2)×U(1)` is rigidity-forced, not chosen — this is the algebraic content the depth-`35` and dimension-`8+3+1` facts only summarized.
 
-**Gravity as Hurwitz archive pressure (forcing: GOLDEN THE 02.19C, gravity branch).**  Gravity (the 0-skeleton trace of §02.19B) is *not* a gauge force.  It is the macroscopic consequence of Archive pressure stabilizing the 24-cell Hurwitz boundary lattice: the 24 unit Hurwitz quaternions are the rigid boundary packing, and Archive back-pressure (BOOK_08) forces the closed `24 -> 38` cycle transition.  The endpoint `38` is the same action-section coefficient `N_{act}=2(2\gamma-1)=38` derived in §02.19.2; under the Hurwitz reading it decomposes as `38=24+14`, the 24 Hurwitz-lattice units plus the 14-dimensional automorphism closure that rigidifies them, consistent with the Hurwitz-rigid phase generator `2\pi/\varphi^2` of §02.32.  The two decompositions `2(2\gamma-1)` and `24+14` agree because the action section and the boundary packing close the same forward/return cycle; neither replaces the other, and the electron mass still only sets the MeV scale of the single section.
+**Gravity as Hurwitz archive pressure [^b02-47].**  Gravity (the 0-skeleton trace of §02.19B) is *not* a gauge force.  It is the macroscopic consequence of Archive pressure stabilizing the 24-cell Hurwitz boundary lattice: the 24 unit Hurwitz quaternions are the rigid boundary packing, and Archive back-pressure (BOOK_08) forces the closed `24 -> 38` cycle transition.  The endpoint `38` is the same action-section coefficient `N_{act}=2(2\gamma-1)=38` derived in §02.19.2; under the Hurwitz reading it decomposes as `38=24+14`, the 24 Hurwitz-lattice units plus the 14-dimensional automorphism closure that rigidifies them, consistent with the Hurwitz-rigid phase generator `2\pi/\varphi^2` of §02.32.  The two decompositions `2(2\gamma-1)` and `24+14` agree because the action section and the boundary packing close the same forward/return cycle; neither replaces the other, and the electron mass still only sets the MeV scale of the single section.
 
 Owner: Book 02 / D0.Core.  Downstream books cite [THE 02.19C] for the algebraic origin of `SU(2)×U(1)` and the Hurwitz-pressure origin of gravity; they may not reintroduce the electroweak group as a free input.
 ## 02.20 Convex-response coupling theorem
@@ -1703,7 +1703,7 @@ The primary cert is `vp_v1132_gauge_matter_ward_anomaly.py`.
 
 The cochain bookkeeping above is the *fact*; the four clauses below are the *why*.  Each is forced by M1 (physics = what survives the requirement to distinguish itself without an external catalog).
 
-**[DEF] Coupling is a measured graph functional, not a free knob (forcing: GOLDEN CHK II.3.APPX8.5.2A).**  The effective charge `g(k)` at refinement level `k` is *not* a constant inserted by hand; it is a function of the statistics of the level-`k` graph `G_k`, fixed by the forgetting projection and only by it:
+**[DEF] Coupling is a measured graph functional, not a free knob [^b02-48].**  The effective charge `g(k)` at refinement level `k` is *not* a constant inserted by hand; it is a function of the statistics of the level-`k` graph `G_k`, fixed by the forgetting projection and only by it:
 
 ```math
 g(k):=\pi_{k+1\to k}\big(g(k+1)\big)+r_k,
@@ -1711,11 +1711,11 @@ g(k):=\pi_{k+1\to k}\big(g(k+1)\big)+r_k,
 
 where `r_k` is the bounded kappa-residue of the level (the coarse-graining error fixed by the refinement protocol).  No additional free "counter-terms" live in CORE: a counter-term would have to be stored as an exogenous list, i.e. an external catalog, which M1 forbids.  Running couplings are therefore an information-compression artifact of the projection `pi_{k+1->k}`, not transferred-in data — the RG equation is conservation of information under change of scale.
 
-**[DEF] Gauge symmetry = combinatorial indistinguishability of outgoing-edge permutations, not a Lie group glued to a point (forcing: GOLDEN DEF II.3.APPX8.6.A).**  Local symmetry in D0 is *not* an `SU(N)` attached to a spacetime point.  Let `N` edges leave a node `x`.  Permute them: if the D0 Test verdict `Z` is unchanged, the system carries the local symmetry `S_N` (the symmetric group).  The continuous gauge group is the BRIDGE packaging of this finite permutation indistinguishability; the CORE object is `S_N`.
+**[DEF] Gauge symmetry = combinatorial indistinguishability of outgoing-edge permutations, not a Lie group glued to a point [^b02-49].**  Local symmetry in D0 is *not* an `SU(N)` attached to a spacetime point.  Let `N` edges leave a node `x`.  Permute them: if the D0 Test verdict `Z` is unchanged, the system carries the local symmetry `S_N` (the symmetric group).  The continuous gauge group is the BRIDGE packaging of this finite permutation indistinguishability; the CORE object is `S_N`.
 
-**[THE] The Ward identity is forced because an anomaly would demand an external catalog (forcing: GOLDEN THE II.3.APPX8.7.2).**  Suppose `Z` is invariant under the edge operation `Phi`, so `sum W(gamma) = sum W(Phi gamma)`.  If the associated current were *not* conserved (an "anomaly"), this equality would break.  To restore it under a broken current one must introduce an external compensating counter-term — an External Catalog, forbidden by M1.  Hence symmetry forces the conservation law (Noether/Ward) with no free counter-term; the vanishing anomaly ledger `A_{33Y}=A_{22Y}=A_{YYY}=A_{grav^2Y}=0` is the cochain-level statement of this M1 obstruction, not an independent input.
+**[THE] The Ward identity is forced because an anomaly would demand an external catalog [^b02-50].**  Suppose `Z` is invariant under the edge operation `Phi`, so `sum W(gamma) = sum W(Phi gamma)`.  If the associated current were *not* conserved (an "anomaly"), this equality would break.  To restore it under a broken current one must introduce an external compensating counter-term — an External Catalog, forbidden by M1.  Hence symmetry forces the conservation law (Noether/Ward) with no free counter-term; the vanishing anomaly ledger `A_{33Y}=A_{22Y}=A_{YYY}=A_{grav^2Y}=0` is the cochain-level statement of this M1 obstruction, not an independent input.
 
-**[THE] Why `C` and why Born: `|psi|^2` is the CORE invariant `AA^dagger` written in `C`, not an axiom (forcing: GOLDEN THE II.3.APPX8.C3 + CHK II.CPLX).**  CORE has no primitive `i=sqrt(-1)`; it has the path-`*`-algebra `A = Q(phi)[Q]` of finite formal sums of path/memory classes, with the involution `dagger` given by path reversal,
+**[THE] Why `C` and why Born: `|psi|^2` is the CORE invariant `AA^dagger` written in `C`, not an axiom [^b02-51].**  CORE has no primitive `i=sqrt(-1)`; it has the path-`*`-algebra `A = Q(phi)[Q]` of finite formal sums of path/memory classes, with the involution `dagger` given by path reversal,
 
 ```math
 \Big(\textstyle\sum a_\gamma\,\gamma\Big)^{\dagger}:=\sum a_\gamma^{*}\,\gamma^{-1},
@@ -1729,7 +1729,7 @@ where `r_k` is the bounded kappa-residue of the level (the coarse-graining error
 
 so Born's rule is *not* an axiom: it is the CORE invariant `AA^dagger` ("there x back") rendered in `C`.  `C` is the unique minimal carrier of (linearity + `*`-conjugation + unitarity) — the `R^2` operator `J` with `J^2=-I` under `(x,y) <-> x+iy` — so `i` is a feature of the BRIDGE language, not a primitive entity of CORE.
 
-### [THE 27.1.1] No blow-up / global regularity (forcing: GOLDEN THE 27.1.1)
+### [THE 27.1.1] No blow-up / global regularity [^b02-52]
 
 The same M1 mechanism that kills the gauge anomaly also kills hydrodynamic blow-up, and for the identical reason — a blow-up would be an injected infinite-refinement catalog.
 
@@ -1759,7 +1759,7 @@ This does not weaken D0.  It prevents a reviewer from claiming that the Born rul
 
 The same assumption-split discipline is what makes a "cohomology/algebraicity" claim admissible at all, and it forces a sharp result: the no-exogenous-index law M1 turns the algebraicity question into a theorem rather than a conjecture.
 
-[DEF] D0-Hodge-class.  An observable class is a κ-stable rational co-class whose BRIDGE-packing lands in the (p,p)-component of the classical complex spelling — equivalently, self-adjointness/symmetry of the class under the canonical conjugation of the packing.  An algebraic cycle is a κ-stable constructive type (a predicate/code) that at every level k selects a finite rational-coefficient combination of subcomplexes, compatible with the refinement maps π_{k→k-1}.  (forcing: GOLDEN THE 28.1.1, DEF 28.0.1–28.0.3, BOOK V Mathematics.)
+[DEF] D0-Hodge-class.  An observable class is a κ-stable rational co-class whose BRIDGE-packing lands in the (p,p)-component of the classical complex spelling — equivalently, self-adjointness/symmetry of the class under the canonical conjugation of the packing.  An algebraic cycle is a κ-stable constructive type (a predicate/code) that at every level k selects a finite rational-coefficient combination of subcomplexes, compatible with the refinement maps π_{k→k-1}.  [^b02-53]
 
 [THE] Algebraicity of κ-stable rational Hodge classes (Hodge in D0-form).  If a D0-Hodge-class [ω] is κ-stable under refinement of the inverse system and rational, then [ω] is realized by a rational linear combination of algebraic cycles.
 
@@ -1770,7 +1770,7 @@ Forcing (M1 forbids a "non-algebraic index"):
 3. Such an index is an exogenous parameter ⇒ forbidden by M1 (physics = what survives the requirement to distinguish itself without an external catalog).
 4. Hence every κ-stable rational Hodge class must admit an algebraic realization. □
 
-(forcing: GOLDEN THE 28.1.1, BOOK V Mathematics.)  The classical statement uses infinite-dimensional spaces of forms and limit arguments; D0 replaces these with κ-stable constructive types and distinguishability tests, so the result lives entirely inside the finite-verification frame — the same frame that the Born/EPR split above keeps honest.
+[^b02-54]  The classical statement uses infinite-dimensional spaces of forms and limit arguments; D0 replaces these with κ-stable constructive types and distinguishability tests, so the result lives entirely inside the finite-verification frame — the same frame that the Born/EPR split above keeps honest.
 ## 02.29 Phase-unfolding and residue-branch theorem
 
 Let `T:n↦n+1` be the finite registration tick and let phase be read modulo a circumference `τ`. If `q≈mτ`, then each residue class `a mod q` defines a branch `a+tq` with phase drift `t(q-mτ)`. Therefore visible arms/rays are residue classes of a finite return modulus.
@@ -1797,7 +1797,7 @@ The phase modulus `τ` and its residue branches fix *where* arms appear; the nex
 
 Work with the canonical D0 spectral packing `ζ_D(s)=Tr(|D|^{-s})=Σ_n λ_n^{-s/2}`, built from the self-adjoint spectrum of a finite operator (cite BOOK_01 for the heat-trace/spectral-zeta packing of a finite self-adjoint `D`; the `s`-record is a BRIDGE re-encoding, not a CORE object). In D0, "RH" is not an independent hypothesis but the statement that this packing has a *canonical* functional symmetry under an admissible protocol — no external parameter (axis shift, arbitrary normalization) is permitted.
 
-[THE] (unique admissible symmetry axis — D0 critical line; forcing: GOLDEN THE 29.1.1)
+[THE] [^b02-55]
 For the canonical D0 packing `ζ_D(s)` of a finite self-adjoint spectrum `{λ_n}`, consistent with the canonical conjugation of the packing, the only admissible axis of symmetry of the zeros in the BRIDGE record is `Re(s)=1/2`.
 
 Proof (M1: the axis cannot be a knob).
@@ -1860,7 +1860,7 @@ This section upgrades phase unfolding from an illustration to a structural theor
 
 The phase-unfolding chain above is one face of a more general D0 phenomenon: a single \(\kappa\)-stable invariant can be read off through two distinct constructive "passports," and M1 forces the two readings to agree.  The sharpest instance is the BSD identity in D0 form, which anchors the entire master chain.
 
-[DEF] In D0 an elliptic curve \(E\) is a finite constructive type of coefficient rules together with an inverse system of refinements of computable invariants; any "infinite sum" is admitted only as a \(\kappa\)-stable limit packing.  Its rank \(\operatorname{rank}_{D0}(E)\) is the \(\kappa\)-stable nullity of the canonical distinguishability/conjugate-Laplacian operator on that type — the same rank/nullity principle as the K(9,11,13) scene (observed nullity = memory), and it must be testable and \(\kappa\)-stable, else it would require an external refinement catalog.  The L-function \(L(E,s)\) is not an object of actual infinite analysis but a BRIDGE packing of finite spectral data (heat-trace / zeta-trace) of the operator attached to \(E\) (forcing: GOLDEN DEF 30.0.2, DEF 30.0.3).
+[DEF] In D0 an elliptic curve \(E\) is a finite constructive type of coefficient rules together with an inverse system of refinements of computable invariants; any "infinite sum" is admitted only as a \(\kappa\)-stable limit packing.  Its rank \(\operatorname{rank}_{D0}(E)\) is the \(\kappa\)-stable nullity of the canonical distinguishability/conjugate-Laplacian operator on that type — the same rank/nullity principle as the K(9,11,13) scene (observed nullity = memory), and it must be testable and \(\kappa\)-stable, else it would require an external refinement catalog.  The L-function \(L(E,s)\) is not an object of actual infinite analysis but a BRIDGE packing of finite spectral data (heat-trace / zeta-trace) of the operator attached to \(E\) [^b02-56].
 
 [THE] (BSD in D0 form: analytic = topological as one \(\kappa\)-invariant.)  The order of zero of the spectral packing \(L(E,s)\) at the canonical BRIDGE point equals the \(\kappa\)-stable nullity (rank) of the constructive type:
 
@@ -1868,14 +1868,14 @@ The phase-unfolding chain above is one face of a more general D0 phenomenon: a s
 \operatorname{ord} L(E,s) = \operatorname{rank}_{D0}(E).
 \]
 
-*Forcing — the "one invariant \(\to\) two passports" principle (forcing: GOLDEN THE 30.1.1).*
+*Forcing — the "one invariant \(\to\) two passports" principle [^b02-57].*
 
 1. In D0 the only admissible "analytic" objects are packings of finite spectral data; the order of zero is therefore a readout of the same finite spectrum, not of an external analytic continuation.
 2. The rank in CORE is the observed nullity of the operator; it is computable and \(\kappa\)-stable, otherwise it would be untestable metaphysics.
 3. Suppose the order of zero of the packing and the rank diverged.  A divergence is, by definition, information present in one passport and absent from the other — i.e. data not contained in the CORE spectrum.  To pin that data down one would have to declare exogenous parameters fixing which "hidden" contribution the analytic side counts.  Exogenous catalog data of exactly this kind is forbidden by M1 (DEF-0.2.2: physics is what survives the demand to distinguish itself without an external catalog).
 4. Hence no such divergence can be registered: both passports describe one and the same \(\kappa\)-invariant and must coincide. \(\square\)
 
-[BRIDGE 30.B] Classical BSD carries a Tamagawa/Ш multiplier and similar factors.  In D0 these are a BRIDGE-decomposition of the single \(\kappa\)-invariant into "tabular factors"; they cannot be independent handles, since independent handles would reintroduce exactly the exogenous degrees of freedom M1 rejects (forcing: GOLDEN BRIDGE 30.B).
+[BRIDGE 30.B] Classical BSD carries a Tamagawa/Ш multiplier and similar factors.  In D0 these are a BRIDGE-decomposition of the single \(\kappa\)-invariant into "tabular factors"; they cannot be independent handles, since independent handles would reintroduce exactly the exogenous degrees of freedom M1 rejects [^b02-58].
 
 This anchor is why the master chain closes: each scale depth in the phase-unfolding cascade (terminal shell \(d_{13}=20\), electroweak depth \(D_{EW}=35\)) is a topological branch count read through the return modulus, while the corresponding analytic readout — the order of the matching spectral packing — is forced equal to it by the same two-passports argument.  Phase unfolding and spectral order are not two mechanisms but two passports of one finite \(\kappa\)-invariant.
 ## 02.31 Φ as primitive positive-response capacity
@@ -2057,15 +2057,14 @@ numerically. They are seven faces of the *same* ℤ₂. This synthesis is the lo
 join of the whole spine; it is stated here as the concentrator node, with each face
 cited back to its owner rather than re-derived.
 
-**[THE] One ℤ₂, seven incarnations (forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,
-concentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B).**
+**[THE] One ℤ₂, seven incarnations [^b02-59].**
 One and the same order-two group surfaces as:
 
 1. The Galois conjugation `Gal(ℚ(√5)/ℚ)`: the swap φ↔ψ (owned by BOOK_01 §01;
    ABCD = the Galois data — A,B are the conjugation-invariant elementary symmetric
    functions, C,D the conjugate pair).
 2. Lucas parity / orientation class of the leaf: `ε_n = (−1)^{n+1} = −ψⁿ`
-   (forcing: GOLDEN THE 3.11.B), owned here as `trace_T_pow_eq_signed_lucas`.
+   [^b02-60], owned here as `trace_T_pow_eq_signed_lucas`.
 3. The center = commutator = Frattini subgroup of Q₈, all equal to `{±1}`
    (Q₈≅Ω₈ minimality owned by BOOK_01).
 4. The leaf of the spinor double cover — the 4π-periodicity sheet.
@@ -2301,3 +2300,70 @@ Phase-blind finite readout is quadratic because archive trace is a norm-square b
 \[
 F_N=(Q_NU_NP_N)^\dagger(Q_NU_NP_N).
 \]
+
+
+## Apparatus — sources & open obligations
+
+_Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._
+
+[^b02-1]: forcing: GOLDEN DEF 15.1.1 / REM 15.1.2, BOOK-II-MECHANISM
+[^b02-2]: forcing: GOLDEN THE 20.1.1, BOOK-V-MATHEMATICS; ⊥-proof
+[^b02-3]: forcing: GOLDEN COR 20.1.2, BOOK-V-MATHEMATICS
+[^b02-4]: forcing: GOLDEN DEF 2.1, Finite Holographic Self-Reading Principle
+[^b02-5]: forcing: GOLDEN DEF 2.1
+[^b02-6]: self-similarity of refinement; forcing: GOLDEN LEM 2.3.2.S1
+[^b02-7]: algebraic closure of S1; forcing: GOLDEN §2.3.2
+[^b02-8]: φ from additivity + homogeneity; forcing: GOLDEN THE 2.3.3
+[^b02-9]: Q8 hamiltonian minimality; forcing: D0-Q8-DEDEKIND-MINIMALITY-001, Dedekind 1897
+[^b02-10]: canonical unit split; forcing: GOLDEN THE 3.3.A
+[^b02-11]: necessity of the factor 2; forcing: GOLDEN THE 80.1
+[^b02-12]: forcing: D0-DIM-LADDER-COMPACT-001
+[^b02-13]: forcing: GOLDEN §02.7A, "Holographic Self-Reading Principle"
+[^b02-14]: forcing: GOLDEN §02.7A, item 1
+[^b02-15]: forcing: GOLDEN §02.7A, item 2
+[^b02-16]: forcing: GOLDEN §02.7A, item 3
+[^b02-17]: forcing: GOLDEN §02.7A, item 4
+[^b02-18]: open obligation — cert obligation open
+[^b02-19]: forcing: GOLDEN THE 2.9A, BOOK-02-MATHEMATICAL-PROOF-SPINE-AND-INVARIANT-CALCULUS; ⊥-proof
+[^b02-20]: forcing: GOLDEN THE 10.1.8 / BOOK-IV; restated immutably as GOLDEN LEM 21.1.2 / BOOK-V
+[^b02-21]: forcing: GOLDEN REM 21.3.3.Baire / BOOK-V; uniqueness theorem GOLDEN THE 21.3.4
+[^b02-22]: forcing: GOLDEN THE 22.2.1 / BOOK-V
+[^b02-23]: forcing: GOLDEN DEF 24.1.1 / BOOK-V
+[^b02-24]: forcing: GOLDEN LEM 24.1.2 / BOOK-V
+[^b02-25]: forcing: GOLDEN LEM 24.1.3 / BOOK-V
+[^b02-26]: forcing: GOLDEN THE 24.2.1 / BOOK-V
+[^b02-27]: forcing: GOLDEN THE 24.2.2 / BOOK-V
+[^b02-28]: forcing: GOLDEN THE 24.3.1 / BOOK-V
+[^b02-29]: forcing: GOLDEN COR 24.3.2 / BOOK-V
+[^b02-30]: forcing: GOLDEN LEM 24.3.2 / BOOK-V
+[^b02-31]: forcing: GOLDEN §16.3, COR 16.3.5
+[^b02-32]: forcing: GOLDEN COR 16.3.5.
+[^b02-33]: forcing: GOLDEN LEM 21.4.2, THE 21.4.5
+[^b02-34]: forcing: GOLDEN LEM 21.4.2
+[^b02-35]: forcing: GOLDEN THE 21.4.5
+[^b02-36]: forcing: GOLDEN THE 21.3.4
+[^b02-37]: forcing: GOLDEN THE 21.4.3
+[^b02-38]: forcing: v17 BOOK_02 §02.13
+[^b02-39]: claim_id: `D0-Q8-DEDEKIND-MINIMALITY-001`; forcing: GOLDEN THE I.3 / D0-THEORY-DOSSIER §I.3
+[^b02-40]: claim_id: `D0-ICOSIAN-E8-CARRIER-001`; forcing: GOLDEN THE II.1 / D0-THEORY-DOSSIER §II.1, cross-checked D0-CKM-INTERFACE-ITERATION-REPORT §28
+[^b02-41]: claim_id: `D0-ICOSIAN-LEECH-BRIDGE-001`; forcing: GOLDEN II.2
+[^b02-42]: open obligation — cert obligation open
+[^b02-43]: forcing: GOLDEN THE 02.19B, `D0-CORE-HOMOLOGICAL-FORCES-001`
+[^b02-44]: forcing: GOLDEN THE 02.19B, D0.Core; ⊥-proof
+[^b02-45]: forcing: GOLDEN THE 02.19C, `D0-CORE-ELECTROWEAK-QUATERNION-001`
+[^b02-46]: forcing: GOLDEN THE 02.19C, D0.Core; ⊥-proof
+[^b02-47]: forcing: GOLDEN THE 02.19C, gravity branch
+[^b02-48]: forcing: GOLDEN CHK II.3.APPX8.5.2A
+[^b02-49]: forcing: GOLDEN DEF II.3.APPX8.6.A
+[^b02-50]: forcing: GOLDEN THE II.3.APPX8.7.2
+[^b02-51]: forcing: GOLDEN THE II.3.APPX8.C3 + CHK II.CPLX
+[^b02-52]: forcing: GOLDEN THE 27.1.1
+[^b02-53]: forcing: GOLDEN THE 28.1.1, DEF 28.0.1–28.0.3, BOOK V Mathematics.
+[^b02-54]: forcing: GOLDEN THE 28.1.1, BOOK V Mathematics.
+[^b02-55]: unique admissible symmetry axis — D0 critical line; forcing: GOLDEN THE 29.1.1
+[^b02-56]: forcing: GOLDEN DEF 30.0.2, DEF 30.0.3
+[^b02-57]: forcing: GOLDEN THE 30.1.1
+[^b02-58]: forcing: GOLDEN BRIDGE 30.B
+[^b02-59]: forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,
+concentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B
+[^b02-60]: forcing: GOLDEN THE 3.11.B

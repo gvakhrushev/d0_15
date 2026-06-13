@@ -4635,9 +4635,9 @@
     }
   ],
   "hygiene": {
-    "score": 72.7,
+    "score": 80.9,
     "budget": 100,
-    "penalty_total": 37.3,
+    "penalty_total": 29.1,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -4685,8 +4685,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 98,
-        "points": -9.8,
+        "count": 6,
+        "points": -0.6,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -4700,10 +4700,10 @@
         "evidence": [
           "— the expected number of chance hits no worse than the one found. In isolation `",
           "M1 thus acts as an automatic numerology filter, and the operational rule is abso",
-          "Status: PROOF-TARGET (cert obligation open)  # the three instant-death switches ",
-          "Status: PROOF-TARGET (cert obligation open)  # the L=129 plateau-convergence der",
-          "Status: PROOF-TARGET (cert obligation open)  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n",
-          "Status: PROOF-TARGET (cert obligation open)  # the ZF-realizability + full-AC-ne"
+          "[^b05-26]  # the three instant-death switches restate forced facts (3-zone scene",
+          "[^b05-27]  # the L=129 plateau-convergence derivation (101 fails ~3.92e-3, 129 p",
+          "[^b05-28]  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n exclusion IDs are not yet individ",
+          "[^b05-29]  # the ZF-realizability + full-AC-needs-oracle forcing (M1 applied to "
         ]
       },
       {
@@ -4716,8 +4716,8 @@
       },
       {
         "signal": "corpus_errors",
-        "count": 3,
-        "points": -3.0,
+        "count": 4,
+        "points": -4.0,
         "cap": -10.0,
         "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
         "evidence": []
@@ -4749,14 +4749,6 @@
         "evidence": []
       },
       {
-        "signal": "orphan_proof_targets",
-        "count": 98,
-        "points": -9.8,
-        "cap": -10.0,
-        "label": "PROOF-TARGET markers in book prose with no registry row",
-        "evidence": []
-      },
-      {
         "signal": "dev_comments",
         "count": 8,
         "points": -8.0,
@@ -4765,10 +4757,10 @@
         "evidence": [
           "— the expected number of chance hits no worse than the one found. In isolation `",
           "M1 thus acts as an automatic numerology filter, and the operational rule is abso",
-          "Status: PROOF-TARGET (cert obligation open)  # the three instant-death switches ",
-          "Status: PROOF-TARGET (cert obligation open)  # the L=129 plateau-convergence der",
-          "Status: PROOF-TARGET (cert obligation open)  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n",
-          "Status: PROOF-TARGET (cert obligation open)  # the ZF-realizability + full-AC-ne"
+          "[^b05-26]  # the three instant-death switches restate forced facts (3-zone scene",
+          "[^b05-27]  # the L=129 plateau-convergence derivation (101 fails ~3.92e-3, 129 p",
+          "[^b05-28]  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n exclusion IDs are not yet individ",
+          "[^b05-29]  # the ZF-realizability + full-AC-needs-oracle forcing (M1 applied to "
         ]
       },
       {
@@ -4784,10 +4776,18 @@
       },
       {
         "signal": "corpus_errors",
-        "count": 3,
-        "points": -3.0,
+        "count": 4,
+        "points": -4.0,
         "cap": -10.0,
         "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
+        "evidence": []
+      },
+      {
+        "signal": "orphan_proof_targets",
+        "count": 6,
+        "points": -0.6,
+        "cap": -10.0,
+        "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
       }
     ]

@@ -186,7 +186,7 @@ This operator is fixed before comparison with survey data. Its function is to co
 
 ### 08.6.1 The forced sign: information pressure cannot be negative
 
-Status: CORE-FORCING (forcing: GOLDEN THE 61.3, criterion CHK 61.5).
+Status: CORE-FORCING [^b08-2].
 
 The downstream FACT above states the operator and its trace. What v14 had only as "historical support" (the weak pressure bridge, demoted under §08.42's log-det theorem) is the *why the sign is forced* — the M1 root of the non-negative information pressure. Restored here:
 
@@ -198,7 +198,7 @@ Forcing chain (the part v14 weakened to a bridge). M1 forbids the deletion of in
 
 This is exactly what the operator sign encodes. The minus sign in `\operatorname{Tr}_N\mathsf P_{archive}^{D0}=-\delta_0^8` is not a tuning choice: it records that the traced-out archive exerts a **non-negative** information pressure on the retained sector (sign convention: pressure read on the retained projector `Π_N` is the negative of the archive's monotone push). The magnitude `δ0^8` is fixed by the spine (`δ0`, nullity 30); the *sign* is fixed by M1. The term is therefore falsifiable, not adjustable: any survey-layer fit that drove the average pressure negative would falsify the M1 → no-deletion → monotone-`M_arch` chain, not merely retune a constant.
 
-Falsification criterion. CHK 61.5 is the GOLDEN obligation: a finite check that the monotone-archive law forces `Δ⟨Λ⟩ ≥ 0`. Status: PROOF-TARGET (cert obligation open) for the M1 → `Λ ≥ 0` average-non-negativity statement at this generality.
+Falsification criterion. CHK 61.5 is the GOLDEN obligation: a finite check that the monotone-archive law forces `Δ⟨Λ⟩ ≥ 0`. [^b08-1] for the M1 → `Λ ≥ 0` average-non-negativity statement at this generality.
 
 ### 08.6.2 What is already discharged vs. what remains open
 
@@ -242,7 +242,7 @@ CORE (cited, not re-derived — owned by BOOK_01 §01.8 / §01.20, replayed in B
 
 The rank-3 image is the transport (between-part) channel; the 30-dimensional kernel is the archive/dark memory. This integer is *already in v14*, but only as the echo-depth `γ` that feeds the action coefficient `38 = 2(2γ−1)` (BOOK_03 §03.20). Its cosmological reading was dropped.
 
-BRIDGE-lift (forcing: GOLDEN THE 61.1, DarkRatio, CORE→BRIDGE). The lift is conditional and typed: *if* the "dark" sector is read by a functional that sees **all** graph modes (a heat-trace observable, which weights kernel + image alike) while the "visible" sector is read only through the **transport** modes (the rank), then the two abundances inherit the rank/nullity split:
+BRIDGE-lift [^b08-5]. The lift is conditional and typed: *if* the "dark" sector is read by a functional that sees **all** graph modes (a heat-trace observable, which weights kernel + image alike) while the "visible" sector is read only through the **transport** modes (the rank), then the two abundances inherit the rank/nullity split:
 
 ```math
 \frac{\Omega_{dark}}{\Omega_{vis}}\ \longrightarrow\ \frac{\operatorname{nullity}(A)}{\operatorname{rank}(A)}=10
@@ -250,13 +250,13 @@ BRIDGE-lift (forcing: GOLDEN THE 61.1, DarkRatio, CORE→BRIDGE). The lift is co
 
 inside the tolerance of a declared transfer protocol Π. The arrow is forced by *which functional reads which sector* (heat-trace = all modes vs. Rank = transport), not by fitting a missing-mass component. This is the quantitative form of "archive complement": the dark sector is the kernel seen by a mode-blind readout, the visible sector is the image seen by a transport readout, and `10` is their ratio by construction.
 
-Status: PROOF-TARGET (cert obligation open) — the CORE rank/nullity arithmetic is cert-backed at its BOOK_01 owner; the BRIDGE identification `Ω_dark/Ω_vis → γ` under (heat-trace, Rank) readout carries a transfer-protocol Π obligation and is not yet discharged by a registered `vp_*` cert in this book.
+[^b08-3] — the CORE rank/nullity arithmetic is cert-backed at its BOOK_01 owner; the BRIDGE identification `Ω_dark/Ω_vis → γ` under (heat-trace, Rank) readout carries a transfer-protocol Π obligation and is not yet discharged by a registered `vp_*` cert in this book.
 
 ### 08.7.0.1 Consistency-ratio ceiling
 
 The same split forces a ceiling on the observable transport fraction, independent of the ratio statement.
 
-BRIDGE-LEM (forcing: GOLDEN BRIDGE-LEM 61.1.B). Under true engagement of the nullity (kernel) régime, the fraction of activity visible through transport modes cannot exceed the transport share of the total mode budget:
+BRIDGE-LEM [^b08-6]. Under true engagement of the nullity (kernel) régime, the fraction of activity visible through transport modes cannot exceed the transport share of the total mode budget:
 
 ```math
 \eta_{obs}\ \le\ \frac{\operatorname{rank}(A)}{\operatorname{rank}(A)+\operatorname{nullity}(A)}
@@ -265,7 +265,7 @@ BRIDGE-LEM (forcing: GOLDEN BRIDGE-LEM 61.1.B). Under true engagement of the nul
 
 Equivalently: at most `1/11` of the scene's modes are transport (visible), the complementary `10/11` are archive (dark). This is the same `γ=10` content read as a ceiling (`1/(γ+1)`) rather than as a ratio (`γ`), and it is consistent with the `Ω_dark/Ω_vis → 10` statement above by `10 = (1-\eta)/\eta` at `η = 1/11`.
 
-Status: PROOF-TARGET (cert obligation open) — ceiling inherits the same Π transfer obligation as the DarkRatio lift; no separate `vp_*` cert is registered here.
+[^b08-4] — ceiling inherits the same Π transfer obligation as the DarkRatio lift; no separate `vp_*` cert is registered here.
 
 ### 08.7.1 Proof cell: `D0-COSMO-003` boundary dark survey-driver kernel
 
@@ -1082,7 +1082,7 @@ Acceleration is the sign and spectral response of \(\mathsf P_{fb}-\mathsf P_{ca
 
 The retained-rank picture forces a discrete replacement for the initial singularity. The expansion variable is depth \(u\) on the scene graph; the retained sector \(P_N\) is only well-posed once the graph distinguishes points, i.e. once it is **connected**. Below a connectivity (percolation) threshold the graph is disconnected: distinct components carry no mutual transport, so \(\operatorname{rank}(P_N)\) cannot register a single coherent volume and the rank-evolution law \(\partial_VF_N\) has no connected sector to evolve.
 
-Forcing argument: if at depth \(u<\varepsilon^2\) the scene graph is disconnected, then the "beginning of time" is the **onset of graph connectivity (the percolation threshold \(u^\*\))**, not a singular point. There is no \(t=0\) singularity to reach — only the depth at which the largest component first spans the scene and a retained rank becomes definable. A pointwise singularity would require an external label pinning a "true first instant" off-graph, an external catalog that M1 forbids; the connectivity threshold, by contrast, is internally readable from the graph alone (forcing: GOLDEN THE 61.4 — Percolation as \(t=0\)). This reframes cosmic onset as a phase transition of the retained sector rather than a divergence of curvature. Status: PROOF-TARGET (cert obligation open); GOLDEN flags a toy check CHK 61.6 (PercolationToy: threshold \(u^\*\)), which is a demonstration, not yet a cert obligation discharged in 05_CERTS.
+Forcing argument: if at depth \(u<\varepsilon^2\) the scene graph is disconnected, then the "beginning of time" is the **onset of graph connectivity (the percolation threshold \(u^\*\))**, not a singular point. There is no \(t=0\) singularity to reach — only the depth at which the largest component first spans the scene and a retained rank becomes definable. A pointwise singularity would require an external label pinning a "true first instant" off-graph, an external catalog that M1 forbids; the connectivity threshold, by contrast, is internally readable from the graph alone (forcing: GOLDEN THE 61.4 — Percolation as \(t=0\)). This reframes cosmic onset as a phase transition of the retained sector rather than a divergence of curvature. [^b08-7]; GOLDEN flags a toy check CHK 61.6 (PercolationToy: threshold \(u^\*\)), which is a demonstration, not yet a cert obligation discharged in 05_CERTS.
 
 Consequence for the transfer law: \(\partial_VF_N\) and the feedback pressure \(\mathsf P_{fb}\) are defined only on the connected (post-threshold) regime. The "expansion history" is the rank evolution of the retained sector **after** percolation; the pre-threshold regime is not an earlier expanding universe but a disconnected scene where the volume derivative is simply undefined. Survey reconstructions of an early-time singularity are therefore external passports of the post-threshold law, not evidence of an off-graph \(t=0\) point.
 ## 08.v15 Orbit-averaged trace expansion
@@ -1117,3 +1117,16 @@ Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.
 The dusty-plasma bridge is useful for Book 08 because it demonstrates how an active medium can deform the observed channel. This supports a conservative interpretation of negative fixed-ratio detector-frame searches: a raw external observable may fail even when the underlying active/archive mechanism remains meaningful, because the detector medium participates in the transfer.
 
 No cosmological conclusion is promoted from this laboratory analogy. The bridge forbids the claims `TABLETOP-QG-PROVED`, `ISOMORPHISM-CLOSED`, and `CORE-CLOSED`. A tabletop experiment may become an empirical passport only after a frozen protocol, off-source/negative controls, and non-retuned prediction targets.
+
+
+## Apparatus — sources & open obligations
+
+_Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._
+
+[^b08-1]: open obligation — cert obligation open
+[^b08-2]: forcing: GOLDEN THE 61.3, criterion CHK 61.5
+[^b08-3]: open obligation — cert obligation open
+[^b08-4]: open obligation — cert obligation open
+[^b08-5]: forcing: GOLDEN THE 61.1, DarkRatio, CORE→BRIDGE
+[^b08-6]: forcing: GOLDEN BRIDGE-LEM 61.1.B
+[^b08-7]: open obligation — cert obligation open

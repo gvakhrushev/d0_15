@@ -10,7 +10,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 72.7 / 100 (penalties **-37.3**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 80.9 / 100 (penalties **-29.1**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -19,14 +19,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tautology_proofs` | 3 | -4.5 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)  ·  e.g. Bridge/PhiDiscreteRG.lean:1, Detector/WeakCouplingClassicalization.lean:2 |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
-| `orphan_proof_targets` | 98 | -9.8 | PROOF-TARGET markers in book prose with no registry row |
-| `dev_comments` | 8 | -8 | developer '# ...' TODO/notes left in book prose  ·  e.g. — the expected number of chance hits no worse than the one found. In isolation `, M1 thus acts as an automatic numerology filter, and the operational rule is abso, Status: PROOF-TARGET (cert obligation open)  # the three instant-death switches  |
+| `orphan_proof_targets` | 6 | -0.6 | PROOF-TARGET markers in book prose with no registry row |
+| `dev_comments` | 8 | -8 | developer '# ...' TODO/notes left in book prose  ·  e.g. — the expected number of chance hits no worse than the one found. In isolation `, M1 thus acts as an automatic numerology filter, and the operational rule is abso, [^b05-26]  # the three instant-death switches restate forced facts (3-zone scene |
 | `path_leaks` | 501 | -12 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
-| `corpus_errors` | 3 | -3 | check_v14_clean_corpus violations (duplicate headings, version logs) |
+| `corpus_errors` | 4 | -4 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 133 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `path_leaks` (-12); `orphan_proof_targets` (-9.8); `dev_comments` (-8); `tautology_proofs` (-4.5); `corpus_errors` (-3)
+**Top cleanup actions (most points to regain):** `path_leaks` (-12); `dev_comments` (-8); `tautology_proofs` (-4.5); `corpus_errors` (-4); `orphan_proof_targets` (-0.6)
 
 ## Where to gain points next (cheapest promotions)
 

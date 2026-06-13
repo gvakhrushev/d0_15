@@ -45,6 +45,9 @@ jobs:
       - name: books assembled from per-section sources (idempotent)
         run: python tools/check_book_assembly.py
 
+      - name: trace metadata extracted to apparatus (no raw forcing/Status tags in prose)
+        run: python tools/extract_apparatus.py --check
+
       - name: book token firewall (no v17 overshoots / deprecated delta0 in prose)
         run: python tools/check_book_tokens.py
 

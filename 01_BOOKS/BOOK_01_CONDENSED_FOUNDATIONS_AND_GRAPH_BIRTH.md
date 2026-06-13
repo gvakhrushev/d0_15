@@ -60,7 +60,7 @@ with finite-stage factorization, projection compatibility, a positive response o
 
 ### 01.1.0 Σ as the realizability gate, not invented physics
 
-The condensed support above is downstream. Upstream of every D0 object is a single criterion the v14 books retained the consequences of but dropped the *why* for: the **distinguishability structure Σ**. Σ is not an attempt to "invent physics." It is the realizability gate that any theory claiming to describe distinguishable objects is obliged to implement. A theory that asserts it has objects, measurements, or memory but fails to realize the components of Σ is either a tautology or a non-reproducible fantasy with no operational content (forcing: GOLDEN §1.1.0, THE 1.1.0b, BOOK-I-ARCHITECTURE). The gate is applied with the prologue tool kit: the M1 ban on exogenous parameters (DEF-0.2.2 forcing-by-contradiction) and the ⊥-reduction proof protocol. Σ is where M1 is first turned on every component.
+The condensed support above is downstream. Upstream of every D0 object is a single criterion the v14 books retained the consequences of but dropped the *why* for: the **distinguishability structure Σ**. Σ is not an attempt to "invent physics." It is the realizability gate that any theory claiming to describe distinguishable objects is obliged to implement. A theory that asserts it has objects, measurements, or memory but fails to realize the components of Σ is either a tautology or a non-reproducible fantasy with no operational content [^b01-1]. The gate is applied with the prologue tool kit: the M1 ban on exogenous parameters (DEF-0.2.2 forcing-by-contradiction) and the ⊥-reduction proof protocol. Σ is where M1 is first turned on every component.
 
 **Object-type → C\* code table (what breaks under M1).** Before Σ is even stated formally, M1 already forces every theory to not merely *exist* but to register and type its own assertions. Each object type must be fixed as a code in `C*`, or the theory collapses:
 
@@ -72,7 +72,7 @@ The condensed support above is downstream. Upstream of every D0 object is a sing
 | experiment | OBS | result code `c_OBS` in frame `L_n` | not reproducible; "repeated" ≡ "learned nothing", no record to compare |
 | whole theory | SYS | code of the assertion set | two theories differing only in what is accepted cannot be told apart |
 
-Each "breaks" entry is an exogenous-catalog demand, hence ⊥M1; fixing the code is forced. Status: CORE-FORCING (forcing: GOLDEN §1.1.0a, BOOK-I-ARCHITECTURE; ⊥-proof). The canonization rule `Can(s) := min_⪯ [s]_≡` is forced by the same fork: without it, equivalent records `R(n)=s`, `R(m)=t` (`s ≡ t`) read as distinct events with no "same object" criterion, so identity would need an exogenous synonym catalog — ⊥M1 (forcing: GOLDEN LEM 1.1.0a.1, BOOK-I-ARCHITECTURE).
+Each "breaks" entry is an exogenous-catalog demand, hence ⊥M1; fixing the code is forced. Status: CORE-FORCING [^b01-2]. The canonization rule `Can(s) := min_⪯ [s]_≡` is forced by the same fork: without it, equivalent records `R(n)=s`, `R(m)=t` (`s ≡ t`) read as distinct events with no "same object" criterion, so identity would need an exogenous synonym catalog — ⊥M1 [^b01-3].
 
 ### 01.1.1 Σ is not a tautology (per-component bottom-reduction)
 
@@ -82,7 +82,7 @@ Each "breaks" entry is an exogenous-catalog demand, hence ⊥M1; fixing the code
 - **Drop Code (¬C\*):** no single record format. Two observers' results land in incompatible formats; comparing them needs a translation dictionary which, if not part of the theory, is an exogenous parameter. Crash: ⊥M1.
 - **Drop Test (¬Δ):** no comparison procedure. "Prediction matched fact" is unsayable. Crash: theory not falsifiable.
 
-Each dropped component independently collapses reproducibility, code-consistency, or falsifiability. Therefore Σ is the unavoidable skeleton of any operational system — load-bearing, not decorative. Status: CORE-FORCING (forcing: GOLDEN THE 1.1.0b, BOOK-I-ARCHITECTURE; ⊥-proof, per-component).
+Each dropped component independently collapses reproducibility, code-consistency, or falsifiability. Therefore Σ is the unavoidable skeleton of any operational system — load-bearing, not decorative. Status: CORE-FORCING [^b01-4].
 
 ### 01.1.2 The distinguishability tuple Σ (DEF 1.1.1)
 
@@ -92,20 +92,20 @@ The distinguishability structure is the tuple
 \Sigma = (C,\; C^*,\; D_{\min},\; \Delta,\; R,\; O),
 ```
 
-with each slot a forced component, not a modeling choice (forcing: GOLDEN DEF 1.1.1, BOOK-I-ARCHITECTURE):
+with each slot a forced component, not a modeling choice [^b01-5]:
 
 1. `C` — fixed **finite** alphabet of elementary symbols.
 2. `C*` — space of all finite strings over `C` (the code universe).
 3. `D_min(X) := Can(Enc(X))` — minimal-description map; the unique way to refer to an object, sending `X` to its canonical code.
 4. `Δ : C* × C* → {0,1}` — binary distinguishability predicate, `Δ(s,t)=0` indistinguishable, `=1` distinguishable, with reflexivity `Δ(s,s)=0`.
 5. `R : ℕ → 𝒫(C*)` — history (order memory); maps time step `n` to a frame `L_n`, the set of codes of objects fixed so far.
-6. `O := (Gr(R), Query_O)` — observer (access interface); extracts data from `R` and applies `Δ`. `Query_O` is a computable realization of the projection `π_O`: it fixes which predicates are admissible, hence which distinctions an observer can reach. `Query_O` is **not** an external catalog — it adds no data, it only reads `R` (forcing: GOLDEN LEM 1.1.1a, BOOK-I-ARCHITECTURE).
+6. `O := (Gr(R), Query_O)` — observer (access interface); extracts data from `R` and applies `Δ`. `Query_O` is a computable realization of the projection `π_O`: it fixes which predicates are admissible, hence which distinctions an observer can reach. `Query_O` is **not** an external catalog — it adds no data, it only reads `R` [^b01-6].
 
 This tuple is the architectural spine of the foundation. The condensed/profinite support `S_{D0}` and the `A,B,C,D` / `Ω8` instrument names at the top of this section are the downstream reading of `(C, C*, D_min, Δ, R, O)` once the finite stages `S_N` are assembled. The five functional maturity levels are `L1` Code (`C`), `L2` Canon (`D_min`), `L3` Test (`Δ`), `L4` History (`R`), `L5` Access (`O`) — organization levels, not space dimensions.
 
 ### 01.1.3 The binary-fork proof method (the reusable forcing template)
 
-Necessity of every Σ component is proved by one schema, the **binary fork** — the standard three-branch M1 contradiction template that generates the individual results below (forcing: GOLDEN §1.1.3, BOOK-I-ARCHITECTURE):
+Necessity of every Σ component is proved by one schema, the **binary fork** — the standard three-branch M1 contradiction template that generates the individual results below [^b01-7]:
 
 - **Branch A — component absent:** show the set of distinguishable objects cannot be specified or fixed (realizability violated).
 - **Branch B — component present:** show it suffices to build the model.
@@ -120,13 +120,13 @@ A realizable universe must have a single code ontology. ⊥-fork: suppose there 
 - If `T` is an algorithm inside the theory, then `C_total = C₁ ∪ C₂ ∪ T` *is* the sought single space — back to the thesis.
 - If `T` is not an algorithm, it is an exogenous parameter set of correspondence rules — a manual gluing of worlds — ⊥M1.
 
-Either way `C*` is single. Status: CORE-FORCING (forcing: GOLDEN LEM 1.1.5.2, BOOK-I-ARCHITECTURE; ⊥-fork). Existence of `Can` is not observer arbitrariness: in a finite alphabet under a fixed order ⪯ (length + lexicographic) the minimum of any non-empty equivalence class exists as a mathematical fact (forcing: GOLDEN LEM 1.1.6.4, BOOK-I-ARCHITECTURE).
+Either way `C*` is single. Status: CORE-FORCING [^b01-8]. Existence of `Can` is not observer arbitrariness: in a finite alphabet under a fixed order ⪯ (length + lexicographic) the minimum of any non-empty equivalence class exists as a mathematical fact [^b01-9].
 
 ### 01.1.5 CORE Δ is a bit, not a probability (LEM 1.1.7.2)
 
-Fundamental distinguishability is a bit (0/1), not a probability. ⊥-proof: suppose in CORE, `Δ` returns a probability `p ∈ [0,1]`. The system must still decide — write the event into `R` or not, did the detector fire? Given `Δ(s,t)=0.7`, is that yes or no? A decision needs a threshold `T_thresh` (`p > T_thresh ⇒ 1`); the value of `T_thresh` (0.5? 0.95?) is a free parameter with no internal source — an exogenous threshold catalog, ⊥M1. Hence in the minimal model only absolute (binary) distinguishability is admissible; probabilities are statistics layered over History (BRIDGE), not foundation. Status: CORE-FORCING (forcing: GOLDEN LEM 1.1.7.2, BOOK-I-ARCHITECTURE; ⊥-proof).
+Fundamental distinguishability is a bit (0/1), not a probability. ⊥-proof: suppose in CORE, `Δ` returns a probability `p ∈ [0,1]`. The system must still decide — write the event into `R` or not, did the detector fire? Given `Δ(s,t)=0.7`, is that yes or no? A decision needs a threshold `T_thresh` (`p > T_thresh ⇒ 1`); the value of `T_thresh` (0.5? 0.95?) is a free parameter with no internal source — an exogenous threshold catalog, ⊥M1. Hence in the minimal model only absolute (binary) distinguishability is admissible; probabilities are statistics layered over History (BRIDGE), not foundation. Status: CORE-FORCING [^b01-10].
 
-**CORE vs FORMALISM scoping (do not over-read binarity).** Binarity of *verification* does not force all mathematics to be 2-valued. Multi-valued and continuous FORMALISM layers — probabilities, amplitudes, measures, geometries, categories — stay admissible. The corpus requirement is the projection condition: any admissible non-binary mathematics must (1) carry an explicit projection onto the PASS/FAIL distinguishability criterion, (2) hide no knobs in encoding / precision / stopping rule / calibration, and (3) supply these as internal corpus elements (CORE/FORMALISM/BRIDGE), not exogenous parameters. So a D0 dispute is never about "is the world binary" but about correctness of the stated projection and absence of hidden parameters (forcing: GOLDEN COR 1.1.7.2.B + DEF 1.1.7.E, BOOK-I-ARCHITECTURE). An **event** is an element of `{0,1}` in CORE (a finite distinguishability test outcome); a **state** is a FORMALISM object (distribution, amplitudes) parameterizing event statistics — INV_3 binds events, not state representations. History is itself forced (no `R` ⇒ no time index `n` ⇒ no algorithm, no before/after, no causality — forcing: GOLDEN LEM 1.1.8.3), and the observer is forced (History with no access leaves past measurements unusable; distinguishability loses connectivity — forcing: GOLDEN LEM 1.1.9.2/1.1.9.3, BOOK-I-ARCHITECTURE).
+**CORE vs FORMALISM scoping (do not over-read binarity).** Binarity of *verification* does not force all mathematics to be 2-valued. Multi-valued and continuous FORMALISM layers — probabilities, amplitudes, measures, geometries, categories — stay admissible. The corpus requirement is the projection condition: any admissible non-binary mathematics must (1) carry an explicit projection onto the PASS/FAIL distinguishability criterion, (2) hide no knobs in encoding / precision / stopping rule / calibration, and (3) supply these as internal corpus elements (CORE/FORMALISM/BRIDGE), not exogenous parameters. So a D0 dispute is never about "is the world binary" but about correctness of the stated projection and absence of hidden parameters [^b01-11]. An **event** is an element of `{0,1}` in CORE (a finite distinguishability test outcome); a **state** is a FORMALISM object (distribution, amplitudes) parameterizing event statistics — INV_3 binds events, not state representations. History is itself forced (no `R` ⇒ no time index `n` ⇒ no algorithm, no before/after, no causality — forcing: GOLDEN LEM 1.1.8.3), and the observer is forced (History with no access leaves past measurements unusable; distinguishability loses connectivity — forcing: GOLDEN LEM 1.1.9.2/1.1.9.3, BOOK-I-ARCHITECTURE).
 
 ### 01.1.6 No hidden parameters (THE 1.1.11.B)
 
@@ -135,7 +135,7 @@ A new parameter `Y` ("hidden variable") that does not change `Δ` but "enriches 
 1. **`Y` does not change `Δ`-outcomes.** Then `(s, Y₁)` and `(s, Y₂)` are indistinguishable for the Σ protocol, so `D_min` (canonization) is obliged to discard `Y` as description noise (synonyms). `Y` is eliminated automatically.
 2. **`Y` changes `Δ`-outcomes.** Then a change of `Y` is itself a distinguishability event, so it must be written into History `R`, so `Y` has a code in `C*`.
 
-Either the parameter does not exist (canonized away by `D_min`) or it is part of the code (written into History `R`). There are no invisible parameters steering the world past History. Status: CORE-FORCING (forcing: GOLDEN THE 1.1.11.B, BOOK-I-ARCHITECTURE; ⊥-dichotomy). This is the general foundational no-hidden-variable theorem; the narrow "no hidden mass scale / no post-hoc permutation" CKM guardrail (D0-MATTER-001, BOOK_02) is one downstream instance of it, not the source. Worked instance: introducing "data types" (int vs real) either changes `Δ` (`1` vs `1.0` not comparable) — then the type is written into the code — or it does not — then types are fictitious and erased by canonization (forcing: GOLDEN §1.1.11B', BOOK-I-ARCHITECTURE).
+Either the parameter does not exist (canonized away by `D_min`) or it is part of the code (written into History `R`). There are no invisible parameters steering the world past History. Status: CORE-FORCING [^b01-12]. This is the general foundational no-hidden-variable theorem; the narrow "no hidden mass scale / no post-hoc permutation" CKM guardrail (D0-MATTER-001, BOOK_02) is one downstream instance of it, not the source. Worked instance: introducing "data types" (int vs real) either changes `Δ` (`1` vs `1.0` not comparable) — then the type is written into the code — or it does not — then types are fictitious and erased by canonization [^b01-13].
 
 ### 01.1.7 Summary of the forced foundation
 
@@ -187,7 +187,7 @@ Definition (F_0, owned here). For a state X with minimal code `D_min(X)`,
 F_0(X) := |D_{\min}(X)|.
 \]
 
-This is the only objective measure of "mass" or "energy" available in a code world (forcing: GOLDEN THE 2.1.3). Any other proposed magnitude either coincides with a length-of-code up to format conventions, or it ranks states by a yardstick that is not derivable from the records themselves — which is an external catalog and is M1-forbidden (DEF-0.2.2). Status: FORCED (it is the unique catalog-free magnitude).
+This is the only objective measure of "mass" or "energy" available in a code world [^b01-14]. Any other proposed magnitude either coincides with a length-of-code up to format conventions, or it ranks states by a yardstick that is not derivable from the records themselves — which is an external catalog and is M1-forbidden (DEF-0.2.2). Status: FORCED (it is the unique catalog-free magnitude).
 
 `F_0` is sub-additive, not additive, and the gap is exactly the binding-energy reading. Composition `X ⊕ Y` glues the two minimal codes via the canonical self-delimiting pairing `Pair`, so
 
@@ -195,17 +195,17 @@ This is the only objective measure of "mass" or "energy" available in a code wor
 F_0(X\oplus Y)\le F_0(X)+F_0(Y)+|\mathrm{EncLen}(F_0(X))|,
 \]
 
-where `EncLen` is the prefix-free length code already fixed by the record format (no new parameter; forcing: GOLDEN LEM 2.1.3c). The extra term `|EncLen(F_0(X))|` — the self-delimiting prefix that lets the glued code be reparsed unambiguously — is the pre-image of physical binding energy (the mass defect of the join). Because `|EncLen(n)| = O(log n)`, this binding term is strictly logarithmic and vanishes under BRIDGE scale-calibration (forcing: GOLDEN COR 2.1.3d). That is the honest origin of why a macroscopic `F` may be treated as additive: the defect is real but log-suppressed, not zero. Status: FORCED.
+where `EncLen` is the prefix-free length code already fixed by the record format [^b01-15]. The extra term `|EncLen(F_0(X))|` — the self-delimiting prefix that lets the glued code be reparsed unambiguously — is the pre-image of physical binding energy (the mass defect of the join). Because `|EncLen(n)| = O(log n)`, this binding term is strictly logarithmic and vanishes under BRIDGE scale-calibration [^b01-16]. That is the honest origin of why a macroscopic `F` may be treated as additive: the defect is real but log-suppressed, not zero. Status: FORCED.
 
 This is the conceptual ground floor for every later energy/mass reading in the corpus; it must live here and is not cited away.
 
 ### Why the construction is linear: superposition is forced, not assumed
 
-Interaction in D0 is not a term you add to an equation. It is forced to be absent at the level of the connection law, and to re-appear only as a topological/structural effect downstream (the graph, ABCD, the K-scene). The argument is a contradiction proof against any catalog-dependent coupling (forcing: GOLDEN §2.2).
+Interaction in D0 is not a term you add to an equation. It is forced to be absent at the level of the connection law, and to re-appear only as a topological/structural effect downstream (the graph, ABCD, the K-scene). The argument is a contradiction proof against any catalog-dependent coupling [^b01-17].
 
 A connection law is realized by a mediator `P(S,T)`: the minimal state describing the link between two given states `S` and `T` (DEF 2.2.1, owned here).
 
-Arity is forced to 2 (forcing: GOLDEN THE 2.2.1). Three cases exhaust the alternatives, and two of them are eliminated by contradiction:
+Arity is forced to 2 [^b01-18]. Three cases exhaust the alternatives, and two of them are eliminated by contradiction:
 
 1. If `P` does not depend on its input, it cannot distinguish the pair `(S,T)` and so is not a connection law at all.
 2. If `P` depends on only one argument, it describes internal evolution, not a binary "between" relation.
@@ -213,7 +213,7 @@ Arity is forced to 2 (forcing: GOLDEN THE 2.2.1). Three cases exhaust the altern
 
 Hence the minimal arity of a connection law is exactly 2. Status: FORCED.
 
-Linearity then follows from the same no-catalog pressure (forcing: GOLDEN LEM 2.2.2b). Suppose one tries to introduce an interaction term `G(S,T)`:
+Linearity then follows from the same no-catalog pressure [^b01-19]. Suppose one tries to introduce an interaction term `G(S,T)`:
 
 \[
 P(S,T)=S\oplus T\oplus G(S,T).
@@ -225,7 +225,7 @@ To specify `G` the theory must answer: which functional form (product, power, lo
 P(S,T)=aS\oplus bT.
 \]
 
-Linear superposition is not a simplification — it is the unique mediator form with no hidden parameters. Status: FORCED. Symmetry of the link (`S→T` and `T→S` are one process) forces `a=b`, and M1 normalization removes the residual scale constant `a` by choice of units, giving the CORE form `P(S,T)=S⊕T` (forcing: GOLDEN LEM 2.2.3). Nonlinearity, equivalently any genuine coupling constant at the connection law, is an M1 violation; real interaction is forced to enter as a topological effect, which is precisely what the incidence graph and the ABCD roles below deliver.
+Linear superposition is not a simplification — it is the unique mediator form with no hidden parameters. Status: FORCED. Symmetry of the link (`S→T` and `T→S` are one process) forces `a=b`, and M1 normalization removes the residual scale constant `a` by choice of units, giving the CORE form `P(S,T)=S⊕T` [^b01-20]. Nonlinearity, equivalently any genuine coupling constant at the connection law, is an M1 violation; real interaction is forced to enter as a topological effect, which is precisely what the incidence graph and the ABCD roles below deliver.
 
 Downstream of this, the quadratic two-branch relation `p + p^2 = 1` (giving `φ` and `δ_0`) is read off the BRIDGE iteration of this same linear mediator (kept in §01.6); it is the scale-self-similarity of `P`, not a re-introduced nonlinear term.
 
@@ -312,7 +312,7 @@ The demotion above is not a stylistic choice — it is forced. The owner stateme
 
 **[THE 01.4.0] No hidden points / consistency of the support.** Let `x,y\in S_{D0}` and write `\pi_k(x)` for the image of `x` under the canonical projection `S_{D0}\to S_k`. If `\pi_k(x)=\pi_k(y)` for every finite stage `k`, then `x=y`. Equivalently: two states equal under every `\pi_k` are the same state, and the support is exactly `\varprojlim_n S_n` with no residual fibre of "true continuum points" sitting underneath it.
 
-*Status: CORE-FORCING (forcing: GOLDEN THE II.4.APPX5.14.3, BOOK-II-MECHANISM; M1 / DEF-0.2.2 forcing-by-contradiction).*
+*Status: CORE-FORCING [^b01-22].*
 
 *Forcing (M1, by contradiction).* Suppose toward contradiction that `x\neq y` yet `\pi_k(x)=\pi_k(y)` for all `k` — i.e. the two are counted as *different points of the "true continuum"* while remaining indistinguishable at every finite stage. To register that difference at all, some test must separate them. But every admissible test factors through a finite stage `S_k` (descent obligation 1 of §01.4.1), and there all results coincide by hypothesis. So no D0-admissible procedure outputs the distinction. To keep `x\neq y` one must therefore *adjoin an external label* — an index `\ell(x)\neq\ell(y)` not produced by any finite-stage readout. That label is an **External Catalog of differences**: a distinction the theory must carry but no internal test can generate. This is exactly the object M1 forbids (physics = what survives the requirement to distinguish itself *without an external catalog*). Contradiction. Hence `x=y`. ∎
 
@@ -321,7 +321,7 @@ Two consequences, both load-bearing downstream:
 1. **The continuum is a tower of refinements, not a bag of points.** `S_{D0}` is the limit of distinguishing stages, and its points *are* the coherent threads through `\{\pi_{n+1,n}\}` — nothing finer is real. Actual infinity never enters as a completed set; it enters only as the inverse system `\{S_n,\pi_{n+1,n}\}` itself. This is the support-level statement of which the §01.4 "test object, not ontology" reading, and the later no-hidden-response Born form (§01.17.1), are downstream specializations.
 2. **κ-equivalence replaces `\mathbb R`.** Because separation is finite-stage, numerical equality is read at finite resolution: sequences over `\mathbb Q(\varphi)` that agree to `\varphi^{-k}` at every depth define the same κ-number. A residual gap below every `\varphi^{-k}` is, by THE 01.4.0, not a real distinction — it would be an external catalog of differences. The role of `\mathbb R` is thus taken by κ-classes of pro-observables, not by a postulated point-set.
 
-*Status note: THE 01.4.0 is a continuum-level structural forcing with no finite numerical witness of its own (it asserts the* absence *of a separating test). It is carried as Status: PROOF-TARGET (cert obligation open) — the existing fractal-tick continuum certs `vp_continuum_from_fractal_tick.py` / `vp_fractal_continuum_predictions.py` test the refinement dynamics, not the no-hidden-points identification, and are NOT cited as a witness here.*
+*Status note: THE 01.4.0 is a continuum-level structural forcing with no finite numerical witness of its own (it asserts the* absence *of a separating test). It is carried as [^b01-21] — the existing fractal-tick continuum certs `vp_continuum_from_fractal_tick.py` / `vp_fractal_continuum_predictions.py` test the refinement dynamics, not the no-hidden-points identification, and are NOT cited as a witness here.*
 
 ### 01.4.1 The D0 condensed site and admissible subfunctor
 
@@ -526,13 +526,13 @@ The detector asymmetry quantum is the centered half-gap
 
 This is the active convention. The formula `\delta_0=\varphi^{-3}` is not the active D0 convention. Any script, book section or external bridge using that older convention must be rejected or migrated. The closure `p+p^2=1` together with `\delta_0=1/(2\varphi^3)` is cert-checked: `vp_v1141_abcd_omega8_v9_phi_capacity.py` asserts `abs(p+p^2-1)<1e-12` and `abs(\delta_0-1/(2\varphi^3))<1e-12`.
 
-### 01.6.0 The mediator forces linear superposition before any branch weight exists (forcing: GOLDEN LEM 2.2.2b)
+### 01.6.0 The mediator forces linear superposition before any branch weight exists [^b01-23]
 
 Before the branch equation can even be posed one must fix the *form* of the law that connects two registered states. M1 forces that form, and it forces it to be **linear**.
 
-**Arity is exactly 2** (forcing: GOLDEN THE 2.2.1). A connection law `P` between given states `S,T` cannot ignore its input (then it does not distinguish the pair, so it is not a connection law), cannot depend on one argument only (that is internal evolution, not a binary "between" relation), and cannot demand a third argument `U`: with `S,T` fixed, a `U` not derived from the data is an exogenous parameter, which is forbidden by M1. Hence the primitive mediator is binary, `P(S,T)`.
+**Arity is exactly 2** [^b01-24]. A connection law `P` between given states `S,T` cannot ignore its input (then it does not distinguish the pair, so it is not a connection law), cannot depend on one argument only (that is internal evolution, not a binary "between" relation), and cannot demand a third argument `U`: with `S,T` fixed, a `U` not derived from the data is an exogenous parameter, which is forbidden by M1. Hence the primitive mediator is binary, `P(S,T)`.
 
-**No interaction term — linear superposition is forced** (forcing: GOLDEN LEM 2.2.2b). Suppose one tries to introduce interaction by adding a coupling term,
+**No interaction term — linear superposition is forced** [^b01-25]. Suppose one tries to introduce interaction by adding a coupling term,
 
 ```math
 P(S,T)=S\oplus T\oplus G(S,T).
@@ -546,7 +546,7 @@ P(S,T)=aS\oplus bT.
 
 Linear superposition is therefore not a simplification but the only construction free of hidden parameters. Interaction must re-enter not as a term in the equation but as a **topological effect** (see CHAPTER I.4 / the defect and holonomy layers), never as an algebraic coupling.
 
-**Coefficients `a=b=1`** (forcing: GOLDEN LEM 2.2.3). Symmetry `S\leftrightarrow T` of the connection (no external field) gives `(a-b)(F(S)-F(T))=0`; since `S\ne T`, `a=b`. A common scale `a\ne1` is a free scale constant requiring a catalog, removed by the `F`-calibration of units, so `a=1`. Hence `P(S,T)=S\oplus T`.
+**Coefficients `a=b=1`** [^b01-26]. Symmetry `S\leftrightarrow T` of the connection (no external field) gives `(a-b)(F(S)-F(T))=0`; since `S\ne T`, `a=b`. A common scale `a\ne1` is a free scale constant requiring a catalog, removed by the `F`-calibration of units, so `a=1`. Hence `P(S,T)=S\oplus T`.
 
 This is the precondition for everything below: only because the mediator is linear is a *branch weight* `p` a well-defined scalar at all. The quadratic `p+p^2=1` is the self-return audit of this linear mediator, not of some unspecified nonlinear coupling.
 
@@ -563,7 +563,7 @@ The equation is not selected because it is pretty. It is selected because all co
 
 Thus the primitive assumptions of D0 are the finite detector obligations. The scalar branch equation is the first theorem of those obligations.
 
-### 01.6.1a Two independent forcings of `\varphi` (forcing: GOLDEN/DOSSIER I.1, two THE derivations)
+### 01.6.1a Two independent forcings of `\varphi` [^b01-27]
 
 The golden ratio is forced from M1 by **two independent routes**, and they agree. Either alone fixes `\varphi`; the agreement is what removes the last suspicion of numerology.
 
@@ -579,7 +579,7 @@ the largest such constant — and this resistance holds at *every* finite trunca
 
 The two THE derivations meet: the MDL-optimal irrational (Route B) is exactly the fixed point of the depth-1 self-return audit (Route A). The same `\varphi` underwrites the phase generator used later (Hurwitz extremality reappears in §01.21), but here it is forced *from M1 directly*, not assumed for the phase.
 
-### 01.6.1b Gleason-2D loophole and the Fibonacci fusion route (forcing: GOLDEN/v17 §01.5)
+### 01.6.1b Gleason-2D loophole and the Fibonacci fusion route [^b01-28]
 
 There is a third, categorical, forcing of the same equation, and it closes a known loophole.
 
@@ -601,7 +601,7 @@ Taking quantum dimensions gives `d^2=1+d`, hence `d=\varphi`; normalized to unit
 
 **Uniqueness (Ostrik 2003) and Ising-exclusion.** The minimal non-trivial fusion rule with exactly two simple objects and non-trivial self-fusion is uniquely the Fibonacci category (Ostrik 2003, classification of small fusion categories). The Ising category (three simple objects) is excluded: it admits an additional non-trivial fermion `\psi`, which is an extra hidden state, violating the no-bare-information-line axiom. Thus Fibonacci is the unique solution, and `\varphi` is forced a third time.
 
-### 01.6.1c The cascade: each floor forced by the insufficiency of the previous (forcing: GOLDEN/PHILOSOPHY §3)
+### 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]
 
 The branch equation is not a detail of one layer; it is the seed of the whole spine. The architecture is not *assembled* from parts — it is the *unfolding* of a single requirement, each floor born from the insufficiency of the one below. In one line:
 
@@ -775,7 +775,7 @@ The labels `Id,I,J,K` are not a decoration.  The signed terminal role space `\Om
 A\mapsto 1,\qquad B\mapsto i,\qquad C\mapsto j,\qquad D\mapsto k,
 \]
 
-and this isomorphism is **forced by M1**, not picked from a menu.  Status: **THEOREM** (forcing: GOLDEN THE 17; cert `vp_q8_dedekind_minimality.py`).
+and this isomorphism is **forced by M1**, not picked from a menu.  Status: **THEOREM** [^b01-30].
 
 The forcing has two M1 reads and one classical theorem that globalizes them.
 
@@ -799,7 +799,7 @@ Inside `Q_8` the three canonical structural subgroups collapse to a single copy 
 [Q_8,Q_8]\;=\;Z(Q_8)\;=\;\Phi(Q_8)\;=\;\{\pm1\}.
 \]
 
-Status: **THEOREM** (exact, cert `vp_q8_dedekind_minimality.py`; forcing: GOLDEN THE 18).  The three objects are:
+Status: **THEOREM** [^b01-31].  The three objects are:
 
 | object | what it records |
 |---|---|
@@ -817,7 +817,7 @@ The quaternion relations `i^2=j^2=k^2=-1` are not inert.  A squared half-turn la
 i^2=-1\ \Rightarrow\ 2\pi\neq\mathrm{id},\quad 4\pi=\mathrm{id}.
 \]
 
-This is **fermionic statistics read straight off the orientation bit of the scene**: the `4\pi` periodicity is the central `\mathbb Z_2` of §01.7.1B, the spinor double-cover leaf index.  Status: **COROLLARY** (forcing: GOLDEN COR 19; algebra carried by cert `vp_q8_dedekind_minimality.py`).  The three pure-imaginary axes `i,j,k` are the **three transport directions** of the readout; this is the same `3` as `rank(A)=3` of the scene incidence matrix (cf. §01.8, `rank(A)=3,\ nullity(A)=30`).  Macroscopic `3`-space is the pushforward of the pure-imaginary subspace of `Q_8`.  The explicit map (`\Omega_8`-orientation groupoid `\to Z(Q_8)`) closing the spinor leaf to the holonomy parity is not yet written.  Status of that last step: **PROOF-TARGET (cert obligation open)**.
+This is **fermionic statistics read straight off the orientation bit of the scene**: the `4\pi` periodicity is the central `\mathbb Z_2` of §01.7.1B, the spinor double-cover leaf index.  Status: **COROLLARY** [^b01-32].  The three pure-imaginary axes `i,j,k` are the **three transport directions** of the readout; this is the same `3` as `rank(A)=3` of the scene incidence matrix (cf. §01.8, `rank(A)=3,\ nullity(A)=30`).  Macroscopic `3`-space is the pushforward of the pure-imaginary subspace of `Q_8`.  The explicit map (`\Omega_8`-orientation groupoid `\to Z(Q_8)`) closing the spinor leaf to the holonomy parity is not yet written.  Status of that last step: **PROOF-TARGET (cert obligation open)**.
 
 We do **not** import the Leech/`\Lambda_{24}`-projection or "Ramanujan-expander" framing for the `30`-nullity here: those are overshoot-adjacent and not forced.  The forced content is `\Omega_8\cong Q_8`, the triple `\mathbb Z_2` identity, and the spinor/rank-`3` corollary above.
 
@@ -1047,20 +1047,20 @@ these definitions collapse to the same detector quantum
 
 Away from \(\varphi\), normalization, algebraic closure and detector asymmetry no longer agree.  Therefore a shifted value of \(\varphi\) is not another member of a smooth D0 family; it requires a new external catalogue choosing which definition to preserve.  Such a catalogue violates the no-monopoly verification rule.
 
-### φ is cement, not an ingredient (forcing: GOLDEN D0-PHILOSOPHY-AND-METHOD §5)
+### φ is cement, not an ingredient [^b01-35]
 
 φ is not one constant among the constants of D0; it is the cement — the thing the construction stands on at every point. The reason a perturbed φ is not a "nearby theory" is that φ is **one object showing four independent mathematical faces**, and each face is forced from a different branch of mathematics yet returns the same root. None is decorative; each one carries a structural floor of the spine.
 
 - **Algebra / Galois face.** \(\varphi^2=\varphi+1\): Vieta pair on \(C(x)=x^2-x-1\), roots \(\varphi,\psi=1-\varphi\), invariant under \(\mathrm{Gal}(\mathbb Q(\sqrt5)/\mathbb Q)=\mathbb Z_2\). Floor it carries: flavor, the ABCD role alphabet. Status: CERT-BACKED (forcing cert: `vp_vieta_galois_abcd.py`).
 - **Arithmetic face.** \(\varphi=[1;1,1,\dots]\): minimal continued fraction (MDL), Hurwitz-maximal irrationality, Lucas/Fibonacci convergents. Floor it carries: \(\alpha\), the \(+2\) step. Status: CERT-BACKED (forcing cert: `vp_v1142_hurwitz_phi_phase_rigidity.py`).
-- **Dynamics face.** \(\varphi\) is the fixed point of \(r=1+1/r\), the last KAM torus to break. Floor it carries: time. Status: PROOF-TARGET (fixed-point + KAM legs proved; cert obligation open for the joint statement).
+- **Dynamics face.** \(\varphi\) is the fixed point of \(r=1+1/r\), the last KAM torus to break. Floor it carries: time. [^b01-33].
 - **Topology face.** \(Q_8\), the spinor sheet, the icosians → \(E_8\). Floor it carries: spin, the carrier. Status: CERT-BACKED downstream (Q8→E8 spine; this face is cited, not re-derived, here).
 
 The four faces are why rigidity is not a coincidence: to move φ you must simultaneously break the Galois pairing, spoil Hurwitz-optimality, unhinge the KAM fixed point and detune the \(E_8\) lattice — four unrelated failures at once, each killing one floor of the spine. There is no single convention that absorbs all four; that is exactly the catalogue the no-monopoly rule forbids.
 
-**φ/M1 duality lemma** (forcing: GOLDEN D0-PHILOSOPHY-AND-METHOD §5; THE-target). On the class of rotation numbers, M1 has a unique fixed point, and it is \(\varphi\); conversely, φ-rotation is the unique dynamics under which M1 is satisfiable at every finite depth. The two directions pin φ from both sides — value and dynamics — so neither can be slid without breaking the law M1 itself, not merely a downstream formula. Status: PROOF-TARGET (three of four legs proved — Hurwitz in Lean, the fixed point, KAM; cert obligation open for the remaining leg).
+**φ/M1 duality lemma** [^b01-36]. On the class of rotation numbers, M1 has a unique fixed point, and it is \(\varphi\); conversely, φ-rotation is the unique dynamics under which M1 is satisfiable at every finite depth. The two directions pin φ from both sides — value and dynamics — so neither can be slid without breaking the law M1 itself, not merely a downstream formula. [^b01-34].
 
-### δ₀ is the price of the rotation-minus-rest duality (forcing: GOLDEN D0-PHILOSOPHY-AND-METHOD §5)
+### δ₀ is the price of the rotation-minus-rest duality [^b01-37]
 
 The detector quantum δ₀ above is not just an algebraic offset; it is a measured distance. Unity has two canonical cuts:
 
@@ -1455,9 +1455,9 @@ The active slice is irrational, so it is not a translational lattice. The quotie
 
 ### 01.19a.1 The cut-project slope is forced to φ⁻², not chosen
 
-The slice angle is not a free dial. The primitive positive-response theorem gives `p+p²=1`, so the only admissible return branch is `α_{D0}=p²=φ⁻²` (forcing: GOLDEN/v17 §01.21; cf. 01.21). The cut-and-project window therefore inherits the φ⁻² slope by force, not by fit: the active slice is the φ⁻²-irrational line, and Hurwitz/continued-fraction extremality of the φ class makes it the *maximally* non-resonant slope — the one slice that refuses low-denominator rational locking before a finite quotient is imposed. Status: **FORCED** (the slope is the response-equation root, not an aperiodic-tiling input).
+The slice angle is not a free dial. The primitive positive-response theorem gives `p+p²=1`, so the only admissible return branch is `α_{D0}=p²=φ⁻²` [^b01-38]. The cut-and-project window therefore inherits the φ⁻² slope by force, not by fit: the active slice is the φ⁻²-irrational line, and Hurwitz/continued-fraction extremality of the φ class makes it the *maximally* non-resonant slope — the one slice that refuses low-denominator rational locking before a finite quotient is imposed. Status: **FORCED** (the slope is the response-equation root, not an aperiodic-tiling input).
 
-### 01.19a.2 The carrier and time are one object (forcing: GOLDEN THE 37, D0-CKM-INTERFACE-ITERATION-REPORT §37)
+### 01.19a.2 The carrier and time are one object [^b01-39]
 
 The cut-and-project carrier of this section is **not a second structure layered beside** the time torus `T=[[0,1],[1,-1]]`. They are the same object seen two ways — spatially as a quasicrystal, dynamically as a toral automorphism.
 
@@ -1474,9 +1474,9 @@ quasicrystal carrier (space, seen statically)
 golden foliation of the time torus T (time, seen dynamically)
 ```
 
-Carrier (the quasicrystal) and time (the toral automorphism) are **one object, seen spatially versus dynamically**. The branch foliation that the detector reads as visible spatial arms is the same foliation whose return map the time operator iterates. Status: **CORE-FORCING / THE** (forcing: GOLDEN THE 37; M1 / DEF-0.2.2 forcing-by-contradiction — a separate space-vs-time catalog would be an external label, M1-forbidden).
+Carrier (the quasicrystal) and time (the toral automorphism) are **one object, seen spatially versus dynamically**. The branch foliation that the detector reads as visible spatial arms is the same foliation whose return map the time operator iterates. Status: **CORE-FORCING / THE** [^b01-40].
 
-The same `φ⁻²` rotation is also the address-defect of the memory torus on its own return: for odd `n`, `φⁿ=Lₙ+φ⁻ⁿ`, and at `n=5` this reads `φ⁵=11+φ⁻⁵`, i.e. the torus address `|V_{11}|=11` plus its integrality defect `ξ₅=φ⁻⁵`, with `Tr(T⁵)=−L₅=−11` landing the fifth time-return exactly on the torus address (forcing: GOLDEN THE 36, ITERATION-REPORT §36; cert `vp_xi5_torus_defect.py` — exact ℤ[φ] arithmetic, zero float). This is why the slice that unfolds space and the operator that advances time share the golden slope: they are the spatial and temporal faces of the same return.
+The same `φ⁻²` rotation is also the address-defect of the memory torus on its own return: for odd `n`, `φⁿ=Lₙ+φ⁻ⁿ`, and at `n=5` this reads `φ⁵=11+φ⁻⁵`, i.e. the torus address `|V_{11}|=11` plus its integrality defect `ξ₅=φ⁻⁵`, with `Tr(T⁵)=−L₅=−11` landing the fifth time-return exactly on the torus address [^b01-41]. This is why the slice that unfolds space and the operator that advances time share the golden slope: they are the spatial and temporal faces of the same return.
 
 ### 01.19a.3 Declared gap
 
@@ -1492,7 +1492,7 @@ four terminal roles A,B,C,D=D_2\times D_2,
 \qquad |four terminal roles A,B,C,D|=4.
 \]
 
-The four roles are not a list to be chosen — they are forced as the minimal self-sufficient act of record: reading (A), read (B), trace (C), reference (D). Fewer than four leaves the act without a distinguishable record, or requires an external memory to hold the missing role. That is the catalog M1 forbids (forcing: GOLDEN THE I.3 / claim `D0-Q8-DEDEKIND-MINIMALITY-001`).
+The four roles are not a list to be chosen — they are forced as the minimal self-sufficient act of record: reading (A), read (B), trace (C), reference (D). Fewer than four leaves the act without a distinguishable record, or requires an external memory to hold the missing role. That is the catalog M1 forbids [^b01-45].
 
 The orientation/phase extension adds the unique sign bit:
 
@@ -1501,7 +1501,7 @@ The orientation/phase extension adds the unique sign bit:
 \qquad |\Omega_8|=8.
 \]
 
-The sign bit `{+,−}` is the irreversibility of write/erase; it is the one bit that distinguishes the act from its undo, and no further bit can be added without an exogenous orientation catalog. Hence `Ω8 = ABCD × {±}`, `|Ω8|=8` (forcing: GOLDEN THE I.3; claim `D0-SCENE-001`).
+The sign bit `{+,−}` is the irreversibility of write/erase; it is the one bit that distinguishes the act from its undo, and no further bit can be added without an exogenous orientation catalog. Hence `Ω8 = ABCD × {±}`, `|Ω8|=8` [^b01-46].
 
 A reusable shell also requires a stationary marked witness section `ω0`. Hence
 
@@ -1530,7 +1530,7 @@ The scene is the complete tripartite graph
 G:=K(9,11,13),\qquad V=V_9\sqcup V_{11}\sqcup V_{13}.
 \]
 
-The scene sizes above fix only the *partition*; they do not yet fix which edges exist. The graph is forced — not selected — by a single orbital argument over the VACUUM contract (forcing: GOLDEN THE 17.0.1.A "Uniqueness of vacuum connectivity without a catalog"). Fix the partition `V = V9 ⊔ V11 ⊔ V13` and consider simple loopless graphs on `V`. Three obligations:
+The scene sizes above fix only the *partition*; they do not yet fix which edges exist. The graph is forced — not selected — by a single orbital argument over the VACUUM contract [^b01-47]. Fix the partition `V = V9 ⊔ V11 ⊔ V13` and consider simple loopless graphs on `V`. Three obligations:
 
 - **(C1) Exchangeability.** No permutation inside a part may change the physics, i.e. the adjacency matrix `A` is invariant under `S9 × S11 × S13`. A part-internal exception would name a privileged vertex — an exogenous parameter — violating M1.
 - **(C2) Role-closure.** The three roles must be mutually reachable; a missing between-part block would require an external protocol "how/when to carry distinguishability across roles."
@@ -1542,9 +1542,9 @@ The argument is orbital, not enumerative:
 2. From **(C3)**, any within-part edge creates the distinguishable binary property "neighbour-inside-part / neighbour-outside-part," which is not codable in the original addressing without an extra marker (an external distinguishability catalog). So `A|_{Vi×Vi}=0` for `i∈{9,11,13}`.
 3. From **(C2)**, any all-zeros between-part block `A|_{Vi×Vj}=0` (`i≠j`) would leave roles `Vi`, `Vj` non-interacting; closing the scene would then need an external coupling protocol. So all between-part blocks are all-ones.
 
-Therefore `A` is exactly `K(9,11,13)` — empty within parts, complete between parts. This is "the shape of emptiness" at the given addressing. **Status: PROOF-TARGET (cert obligation open)** — the orbital-uniqueness theorem is not yet discharged by a `vp_*` cert; only the count ladder above is certified.
+Therefore `A` is exactly `K(9,11,13)` — empty within parts, complete between parts. This is "the shape of emptiness" at the given addressing. **[^b01-42]** — the orbital-uniqueness theorem is not yet discharged by a `vp_*` cert; only the count ladder above is certified.
 
-**Equivalent information reading (REM 17.0.1.A.1).** Any incomplete between-part block is a *Catalog of Prohibitions* (a list of missing edges); any within-part edge is a *Catalog of Privileges* (a list of allowed exceptions). `K(9,11,13)` is the unique configuration carrying neither catalog (forcing: GOLDEN REM 17.0.1.A.1).
+**Equivalent information reading (REM 17.0.1.A.1).** Any incomplete between-part block is a *Catalog of Prohibitions* (a list of missing edges); any within-part edge is a *Catalog of Privileges* (a list of allowed exceptions). `K(9,11,13)` is the unique configuration carrying neither catalog [^b01-48].
 
 **Adjacency matrix (DEF 17.0.2).** The block-constant form forced above is
 
@@ -1560,7 +1560,7 @@ with `0_{a×b}` the zero block and `1_{a×b}` the all-ones (full between-part) b
 
 ### Carrier invariants and honest spectrum
 
-The forced graph has fixed finite invariants (forcing: transfer D0-THEORY-DOSSIER I.2):
+The forced graph has fixed finite invariants [^b01-49]:
 
 - Vertices `|V|=33`; edges `9·11 + 9·13 + 11·13 = 359` (prime); triangles `9·11·13 = 1287`.
 - **Adjacency rank = 3, nullity = 30.** The three nonzero blocks collapse `A` onto a rank-3 image; the remaining 30 directions lie in the kernel.
@@ -1571,18 +1571,18 @@ The forced graph has fixed finite invariants (forcing: transfer D0-THEORY-DOSSIE
 - The scene is **NOT** a Ramanujan graph: `|λ2| = 12.079 > 2√(d−1) = 9.59`. The correct spectral property is *rank 3 + spectral gap*, not the Ramanujan bound.
 - The "homological index 38" is **NOT** a graph invariant: the cycle (cyclomatic) rank of `K(9,11,13)` is `359 − 33 + 1 = 327`. The number `38 = 2(2γ−1)` at `γ=10` is a *derived count*, an output of the scene arithmetic, not a property read off the graph.
 
-**Status: PROOF-TARGET (cert obligation open)** for the spectral/invariant package — the eigenvalues and rank/nullity are linear-algebra facts of the forced `A`, but no standalone `vp_*` scene-spectrum cert is registered here; the detailed Rank–Nullity and quenched-spectrum derivations are owned downstream (BOOK_03, Spectral Core of the Scene).
+**[^b01-43]** for the spectral/invariant package — the eigenvalues and rank/nullity are linear-algebra facts of the forced `A`, but no standalone `vp_*` scene-spectrum cert is registered here; the detailed Rank–Nullity and quenched-spectrum derivations are owned downstream (BOOK_03, Spectral Core of the Scene).
 
 ### Terminal-window weld: d₁₃ = 20 = φ_E(44) and m_s/m_d
 
-The degree of every 13-shell vertex is `d13 = |V9| + |V11| = 9 + 11 = 20`. This count coincides with a group-units count, and the coincidence is the seam that forces the strange/down mass ratio (forcing: transfer D0-CKM-INTERFACE THE-A…COR-E; owner BOOK_01).
+The degree of every 13-shell vertex is `d13 = |V9| + |V11| = 9 + 11 = 20`. This count coincides with a group-units count, and the coincidence is the seam that forces the strange/down mass ratio [^b01-50].
 
 - **THE-A (owner, here).** Terminal window `q_T = ABCD · V11 = 4·11 = 44`; admissible branches form the unit group `G = (ℤ/44)*` with `|G| = φ_E(44) = 20 = d13`.
 - **THE-B (computed).** `G ≅ ℤ2 × ℤ2 × ℤ5`. The catalog-free (characteristic) subgroups are exactly `{1}`, the 2-torsion `T` (order **4**), the squares `F` (order **5**), and `G` (**20**); every other subgroup (three ℤ2, three ℤ10) requires choosing an instance = a catalog. The M1-admissible symmetry-class spectrum is `{1, 4, 5, 20}`, and the window factorizes `20 = 4 × 5 = |ABCD| × D_Σ` — the same 4 and 5 that built the defect address `9 = 4 + 5` return as torsion and odd part (a non-trivial internal echo). The product of all units mod 44 is `+1`: the window is globally phase-neutral, with no free residual bit.
 - **LEM-D (the one declared gap).** Orientation-blindness (THE 3.11.B: flavour structure must be blind to an external ℤ2 orientation bit) excludes the T-charged class (cost 4). The cost-5 class is excluded by address-aliasing: winding 5 collides with the operational address `D_Σ = 5`, so using a role-address as a flavour winding is a scene pointer collision = hidden memory (grammar 01.11C). What remains: the trivial class (`W ∝ 1`, generation 1) and the full catalog-free class (`W ∝ 20`, generation 2). **The aliasing step is stated but not formalized — this is a soft joint of the corpus, alongside the role lists and the +2 parity.**
 - **COR-E.** Hence `m_s/m_d = 20`, exact.
 
-**Status: PROOF-TARGET (cert obligation open)** — the weld chain (group structure, symmetry-class spectrum, LEM-D, m_s/m_d=20) is not yet discharged by a registered `vp_*` cert; the LEM-D aliasing gap is explicitly open. The `φ_E(44)=20=d13` count itself is certified by `05_CERTS/vp_v1141_abcd_omega8_v9_phi_capacity.py`. The empirical cross-check (lattice `m_s/m_d = 20.01 ± 0.55`, 0.03σ) and the Gatto–Sartori–Tonina Cabibbo bridge `sinθ_C = 1/√20` are downstream comparisons, not part of the forcing.
+**[^b01-44]** — the weld chain (group structure, symmetry-class spectrum, LEM-D, m_s/m_d=20) is not yet discharged by a registered `vp_*` cert; the LEM-D aliasing gap is explicitly open. The `φ_E(44)=20=d13` count itself is certified by `05_CERTS/vp_v1141_abcd_omega8_v9_phi_capacity.py`. The empirical cross-check (lattice `m_s/m_d = 20.01 ± 0.55`, 0.03σ) and the Gatto–Sartori–Tonina Cabibbo bridge `sinθ_C = 1/√20` are downstream comparisons, not part of the forcing.
 
 ## 01.21 Hurwitz-rigid phase generator and non-resonant spatial unfolding
 
@@ -1622,7 +1622,7 @@ The Hurwitz extremality of the increment `\alpha_{D0}=\varphi^{-2}` is cert-chec
 rational capture. The non-resonance is not a softening assumption; it is the
 extremal value attained.
 
-### 01.21.1 Duality lemma `φ/M1`: the operational and the algebraic minimizer coincide (forcing: GOLDEN/DOSSIER VII.2)
+### 01.21.1 Duality lemma `φ/M1`: the operational and the algebraic minimizer coincide [^b01-52]
 
 The phase generator is fixed twice over, from two unrelated directions, and the
 two answers are the *same* `\varphi`. This is the forcing the bare statement
@@ -1672,7 +1672,7 @@ So `\delta_0` is not an extra input: it is the *norm of the discrepancy* between
 be `1/2` if naming alone sufficed; it is `\varphi^{-1}` because the cut must survive
 its own return; the irreducible difference is `\delta_0`.
 
-Status: PROOF-TARGET (cert obligation open). Three of the four pieces are
+[^b01-51]. Three of the four pieces are
 established: Hurwitz/MDL minimality (`D0-PHI-HURWITZ-001`, PROVED; cert
 `vp_v1142_hurwitz_phi_phase_rigidity.py`), the `M1` fixed point on rotation numbers
 (§01.6.1a), and the KAM last-torus closure (Greene/MacKay, external). The open
@@ -1681,7 +1681,7 @@ the renormalization return-map of the golden foliation (Morse–Hedlund / Greene
 standard, to be stated as one theorem). The metaphor is exact: the coin neither
 falls (`M1`) and turns as `\varphi`.
 
-### 01.21.2 The phase unfolding is the symbolic dynamics of the time torus (forcing: GOLDEN/DOSSIER VI.3)
+### 01.21.2 The phase unfolding is the symbolic dynamics of the time torus [^b01-53]
 
 The non-resonant unfolding above is not a separate construction laid over the time
 layer — it *is* the time layer read symbolically. The eigen-directions of the toral
@@ -1798,7 +1798,7 @@ So the sign of the defect alternates with `n`: at `n=5` the holonomy parity is `
 \underbrace{4+5=9}_{\text{defect}}\ \xrightarrow{+2}\ \underbrace{11}_{\text{torus-memory}}\ \xrightarrow{+2}\ \underbrace{13}_{\text{shell}} .
 ```
 
-Any other step requires an external splice-control parameter, hence `⊥M1`.  This is the same `9, 11, 13` the capacity route produces, so the two derivations are mutually reinforcing: capacity sets the cardinalities, orientation-parity sets the increment, and neither leans on the other.  In topological language the `+2` step is precisely the condition that the heat-trace time-splice be *orientable* — a cylinder, not a twist — so no global `Z₂`-direction convention is needed to run the evolution (forcing: GOLDEN REM 3.11.B.T, BOOK-I-ARCHITECTURE).  Status: CORE-FORCING (forcing: GOLDEN THE 3.11.B and COR 3.13.B(1)–(2), BOOK-I-ARCHITECTURE; ⊥-proof via `(-1)^n` orientation parity, no sign catalog).
+Any other step requires an external splice-control parameter, hence `⊥M1`.  This is the same `9, 11, 13` the capacity route produces, so the two derivations are mutually reinforcing: capacity sets the cardinalities, orientation-parity sets the increment, and neither leans on the other.  In topological language the `+2` step is precisely the condition that the heat-trace time-splice be *orientable* — a cylinder, not a twist — so no global `Z₂`-direction convention is needed to run the evolution [^b01-54].  Status: CORE-FORCING (forcing: GOLDEN THE 3.11.B and COR 3.13.B(1)–(2), BOOK-I-ARCHITECTURE; ⊥-proof via `(-1)^n` orientation parity, no sign catalog).
 
 ### Cycle normalization `ν* = 1/9` and the `40°` phase step (forcing: GOLDEN THE 3.13.A / COR 3.13.B(3), BOOK-I-ARCHITECTURE)
 
@@ -1896,3 +1896,63 @@ E_\Omega = \frac{1}{|G_8|} \sum_{g \in G_8} P_g F_N P_g^\dagger.
 \]
 
 This average is invariant, but it is **not** a scalar multiple of the identity unless irreducibility of the representation on the trace space is separately proved. See also `03_THEORY_MAP/D0_v15_FRACTAL_CONTINUUM_AND_WITNESS_HALTING_PROOF.md`.
+
+
+## Apparatus — sources & open obligations
+
+_Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._
+
+[^b01-1]: forcing: GOLDEN §1.1.0, THE 1.1.0b, BOOK-I-ARCHITECTURE
+[^b01-2]: forcing: GOLDEN §1.1.0a, BOOK-I-ARCHITECTURE; ⊥-proof
+[^b01-3]: forcing: GOLDEN LEM 1.1.0a.1, BOOK-I-ARCHITECTURE
+[^b01-4]: forcing: GOLDEN THE 1.1.0b, BOOK-I-ARCHITECTURE; ⊥-proof, per-component
+[^b01-5]: forcing: GOLDEN DEF 1.1.1, BOOK-I-ARCHITECTURE
+[^b01-6]: forcing: GOLDEN LEM 1.1.1a, BOOK-I-ARCHITECTURE
+[^b01-7]: forcing: GOLDEN §1.1.3, BOOK-I-ARCHITECTURE
+[^b01-8]: forcing: GOLDEN LEM 1.1.5.2, BOOK-I-ARCHITECTURE; ⊥-fork
+[^b01-9]: forcing: GOLDEN LEM 1.1.6.4, BOOK-I-ARCHITECTURE
+[^b01-10]: forcing: GOLDEN LEM 1.1.7.2, BOOK-I-ARCHITECTURE; ⊥-proof
+[^b01-11]: forcing: GOLDEN COR 1.1.7.2.B + DEF 1.1.7.E, BOOK-I-ARCHITECTURE
+[^b01-12]: forcing: GOLDEN THE 1.1.11.B, BOOK-I-ARCHITECTURE; ⊥-dichotomy
+[^b01-13]: forcing: GOLDEN §1.1.11B', BOOK-I-ARCHITECTURE
+[^b01-14]: forcing: GOLDEN THE 2.1.3
+[^b01-15]: no new parameter; forcing: GOLDEN LEM 2.1.3c
+[^b01-16]: forcing: GOLDEN COR 2.1.3d
+[^b01-17]: forcing: GOLDEN §2.2
+[^b01-18]: forcing: GOLDEN THE 2.2.1
+[^b01-19]: forcing: GOLDEN LEM 2.2.2b
+[^b01-20]: forcing: GOLDEN LEM 2.2.3
+[^b01-21]: open obligation — cert obligation open
+[^b01-22]: forcing: GOLDEN THE II.4.APPX5.14.3, BOOK-II-MECHANISM; M1 / DEF-0.2.2 forcing-by-contradiction
+[^b01-23]: forcing: GOLDEN LEM 2.2.2b
+[^b01-24]: forcing: GOLDEN THE 2.2.1
+[^b01-25]: forcing: GOLDEN LEM 2.2.2b
+[^b01-26]: forcing: GOLDEN LEM 2.2.3
+[^b01-27]: forcing: GOLDEN/DOSSIER I.1, two THE derivations
+[^b01-28]: forcing: GOLDEN/v17 §01.5
+[^b01-29]: forcing: GOLDEN/PHILOSOPHY §3
+[^b01-30]: forcing: GOLDEN THE 17; cert `vp_q8_dedekind_minimality.py`
+[^b01-31]: exact, cert `vp_q8_dedekind_minimality.py`; forcing: GOLDEN THE 18
+[^b01-32]: forcing: GOLDEN COR 19; algebra carried by cert `vp_q8_dedekind_minimality.py`
+[^b01-33]: open obligation — fixed-point + KAM legs proved; cert obligation open for the joint statement
+[^b01-34]: open obligation — three of four legs proved — Hurwitz in Lean, the fixed point, KAM; cert obligation open for the remaining leg
+[^b01-35]: forcing: GOLDEN D0-PHILOSOPHY-AND-METHOD §5
+[^b01-36]: forcing: GOLDEN D0-PHILOSOPHY-AND-METHOD §5; THE-target
+[^b01-37]: forcing: GOLDEN D0-PHILOSOPHY-AND-METHOD §5
+[^b01-38]: forcing: GOLDEN/v17 §01.21; cf. 01.21
+[^b01-39]: forcing: GOLDEN THE 37, D0-CKM-INTERFACE-ITERATION-REPORT §37
+[^b01-40]: forcing: GOLDEN THE 37; M1 / DEF-0.2.2 forcing-by-contradiction — a separate space-vs-time catalog would be an external label, M1-forbidden
+[^b01-41]: forcing: GOLDEN THE 36, ITERATION-REPORT §36; cert `vp_xi5_torus_defect.py` — exact ℤ[φ] arithmetic, zero float
+[^b01-42]: open obligation — cert obligation open
+[^b01-43]: open obligation — cert obligation open
+[^b01-44]: open obligation — cert obligation open
+[^b01-45]: forcing: GOLDEN THE I.3 / claim `D0-Q8-DEDEKIND-MINIMALITY-001`
+[^b01-46]: forcing: GOLDEN THE I.3; claim `D0-SCENE-001`
+[^b01-47]: forcing: GOLDEN THE 17.0.1.A "Uniqueness of vacuum connectivity without a catalog"
+[^b01-48]: forcing: GOLDEN REM 17.0.1.A.1
+[^b01-49]: forcing: transfer D0-THEORY-DOSSIER I.2
+[^b01-50]: forcing: transfer D0-CKM-INTERFACE THE-A…COR-E; owner BOOK_01
+[^b01-51]: open obligation — cert obligation open
+[^b01-52]: forcing: GOLDEN/DOSSIER VII.2
+[^b01-53]: forcing: GOLDEN/DOSSIER VI.3
+[^b01-54]: forcing: GOLDEN REM 3.11.B.T, BOOK-I-ARCHITECTURE
