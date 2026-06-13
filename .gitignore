@@ -20,6 +20,7 @@ run_all_*_results.json
 NO_GO_*.md
 05_CERTS/ported_legacy_primary/**/*RESULTS*.*
 05_CERTS/ported_legacy_primary/**/*_NUMBERS.json
+05_CERTS/outputs/
 03_THEORY_MAP/v*_patch.*
 09_LEAN_FORMALIZATION/docs/D0_v12_*_ARCHIVE_INDEX.csv
 09_LEAN_FORMALIZATION/docs/LEAN_CORRESPONDENCE_AUDIT.csv
