@@ -7,40 +7,53 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 34
+- `CERT-CLOSED`: 62
 - `CORE-FORMALIZED`: 89
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
-- `EMPIRICAL-PASSPORT`: 1
+- `EMPIRICAL-PASSPORT`: 10
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 7
+- `NO-GO`: 8
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 14
+- `PROOF-TARGET`: 12
 
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 34
+- `certificate`: 71
 - `core`: 90
 - `deprecated`: 2
-- `frontier`: 14
-- `no-go`: 15
+- `frontier`: 12
+- `no-go`: 16
 
 ## Domain counts
 
-- `cosmology`: 22
-- `empirical_passport`: 7
+- `cosmology`: 24
+- `empirical_passport`: 15
 - `external_background`: 1
-- `formal_core`: 91
-- `frontier`: 14
-- `gauge_bridge`: 16
+- `formal_core`: 117
+- `frontier`: 12
+- `gauge_bridge`: 17
 - `interpretation_spine`: 1
 - `rg`: 3
 - `si_calibration`: 2
 - `smooth_geometry`: 6
-- `spectral_action`: 5
+- `spectral_action`: 6
 
 ## Domain: cosmology
+
+### D0-COSMO-003
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_boundary_dark_survey_driver_kernel.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] parameter-free internal dark object as additive optical-depth kernel; catalogue is external readout.
 
 ### D0-IM-COSMO-001
 
@@ -93,6 +106,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]
+
+### D0-COSMO-002
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] external-survey A_s + baryon form-factor comparison.
 
 ### D0-COSMO-CONCRETE-FLOW-001
 
@@ -357,6 +383,110 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded. [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
 
+### D0-CRITICAL-COLLAPSE-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_critical_collapse_dss_echo_lattice.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] pins external arXiv:2601.14358 DSS solutions via hash manifest.
+
+### D0-DUSTY-PLASMA-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_dusty_plasma_d0_mapping.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] self-declared TABLETOP-PASSPORT-SEED; forbids core promotion.
+
+### D0-PASSPORT-CORE13-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_core13_shell_geometry_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] pinned PDG mass-width diagnostic; no core promotion.
+
+### D0-PASSPORT-DESI-BAO-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_desi_bao_sde_failure_diagnostics.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] honest negative survey diagnostic (FAIL on real data, no refit).
+
+### D0-PASSPORT-ICECUBE-HESE-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_icecube_hese_baseline_comparison.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] external neutrino-survey baseline comparison.
+
+### D0-PASSPORT-LIGO-CATALOG-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_ligo_merger_mass_defect_current_catalog.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] external GWOSC catalog passport.
+
+### D0-PASSPORT-PDG-STRICT-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_04/05`
+- module: ``
+- theorem: `none`
+- cert: `vp_pdg_strict_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] PDG comparison engine with pinning/holdout/multiple-testing; no operator tuning.
+
+### D0-PASSPORT-SPARC-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_sparc_hull_boundary_response_kernel.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] SPARC rotation-curve external-data passport.
+
 ### D0-QUASI009-CKM-PHASON-HOLONOMY-001
 
 - type: `core`
@@ -558,6 +688,110 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]
 
+### D0-BARYON-S3-SYM-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_baryon_s3_tensor_symmetrizer.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] S3 symmetrizer on 27 ordered triples -> decuplet-10 symmetric carrier.
+
+### D0-BH-CAPACITY-A4-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_black_hole_capacity_a4_witness.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] ABCD four-role denominator boundary-cell count -> A/4 entropy witness.
+
+### D0-BOOK04-SELECTORS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_book04_centered_full_support_selectors.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] selectors over full support 0..2R; zero iff support-symmetry; no inserted indicator.
+
+### D0-BOOK04-SELECTORS-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_book04_combinatorial_selector_origins.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] support radii from upstream D0 formulas (35, 306, 19); no fitted targets.
+
+### D0-CANONICAL-OP-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_canonical_operator_search.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] tripartite-Laplacian canonical generation operator selection.
+
+### D0-CKM-EXACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_ckm_exact_matrix_certificate.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness.
+
+### D0-CVFT-F4
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02/05`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_uv_feedback_tail_bound_refined.py;vp_cvft_ueff_pole_discipline.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open. [was:CERT-CANDIDATE] [8C: linked passing cert]
+
+### D0-CVFT-F7
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_boundary_channel_rank.py;vp_cvft_refined_logdet_rank_bound.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE] [8C: linked passing cert]
+
 ### D0-DIM-LADDER-COMPACT-001
 
 - type: `certificate`
@@ -610,6 +844,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Companion cover cert; physical-edge embedding remains scoped. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]
 
+### D0-EW-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_higgs_anchor_projector.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] Pi_H identity on scalar anchor image; rank.V13=39; delta0-normalized defect.
+
 ### D0-FOUND-004
 
 - type: `certificate`
@@ -622,6 +869,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Quadratic peel cert.
+
+### D0-FTHEORY-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_ftheory_lw2016_chiral_recombination_layer.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] published chi_R ledger recombines to absolute 3-generation SM multiplets.
+
+### D0-GRAV-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_single_section_gravity_completion.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] ell_P, G_N from delta0, Omega8, phi^(V9.V11); CODATA G is benchmark.
 
 ### D0-GRAV-004
 
@@ -661,6 +934,58 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Horizon closed; jet + baryon image-basis certs present. [was:CERT-SCAFFOLD-CLOSED]
+
+### D0-HEAT-TRACE-FIT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_archive_heat_trace_expansion_fit.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] Theta(u) ~ u^-2(a0+a1 u+a2 u^2) on the archive Laplacian; finite-object fit.
+
+### D0-HIGGS-YUKAWA-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_higgs_yukawa_section_transfer.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] Y compatible with rank-2 scalar projector; Hermitian; single action section.
+
+### D0-HODGE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_finite_hodge_complex_core.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] finite cochain complex d.d=0 + finite Hodge Laplacian.
+
+### D0-HODGE-LINKS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04/07`
+- module: ``
+- theorem: `none`
+- cert: `vp_hodge_matter_gravity_archive_links.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier.
 
 ### D0-HST-ARCHIVE-001
 
@@ -727,6 +1052,123 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: ker(adj K(9,11,13))=30=8+10+12; rank 3 = space; exact integer LA. Lean L4 queued.
 
+### D0-LEPTON-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_charged_lepton_transfer_certificate.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] frozen e/mu/tau ratios, exponents 0,1/4,1/3.
+
+### D0-MASTER-BOOTSTRAP-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_master_bootstrap_and_volume_derivative.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] V_N=rank(P_N); Z_N=Tr e^{-bD} det(I-zF)^-1; finite pressure split.
+
+### D0-MESON-DEFECT-ALGEBRA-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_meson_defect_transfer_algebra.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] Fin E x Fin Gen carrier; self-adjoint PSD flavour defect.
+
+### D0-METRO-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `METROLOGY`
+- module: ``
+- theorem: `none`
+- cert: `vp_calibration_dag_and_lambda_section_rigidity_20260522.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] parameter-free Lambda_act/tau0/ell0 rigidity certificate.
+
+### D0-MINCUT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_finite_mincut_holographic_entropy.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] Ford-Fulkerson max-flow/min-cut = A/4-normalized boundary capacity.
+
+### D0-NEUTRON-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_neutron_lifetime_rate_closure.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] downstream of closed lambda_p, lambda_n, Lambda_act, tau0, delta0; no measured lifetime input.
+
+### D0-NOAXION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_no_axion_finite_cochain.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] finite topological density + exact/coexact cancellation; no axion zero-mode.
+
+### D0-NONABELIAN-SEAM-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_nonabelian_seam_gap.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] finite positive gap outside the commuting kernel.
+
+### D0-PROTON-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_proton_terminal_destructive_readout.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] readout-306 terminal formula; 938 MeV is benchmark not input.
+
 ### D0-QUANT-MET-001
 
 - type: `certificate`
@@ -752,6 +1194,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
+
+### D0-SPIN2-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_finite_spin2_wave_operator_concrete.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] TT projector on full 10-dim Sym(4) basis; 2 polarizations.
 
 ### D0-VIETA-GALOIS-ABCD-001
 
@@ -1372,10 +1827,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - book: `BOOK_01/02`
 - module: `D0.Phase`
 - theorem: `forced_terminal_window;terminal_window_totient;forced_ew_window;ew_window_totient;ew_depth`
-- cert: `none`
+- cert: `vp_v1143_forced_return_windows_capacity.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: Exact 44 and 710 forced-window arithmetic.
+- notes: Exact 44 and 710 forced-window arithmetic. [8C: linked passing cert]
 
 ### D0-PHI-HURWITZ-001
 
@@ -1385,10 +1840,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - book: `BOOK_01/02`
 - module: `D0.NumberTheory.HurwitzMinimaxPhi`
 - theorem: `HURWITZ_MINIMAX_D0_CLASS_PROVED`
-- cert: `none`
+- cert: `vp_v1142_hurwitz_phi_phase_rigidity.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background.
+- notes: D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background. [8C: linked passing cert]
 
 ### D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001
 
@@ -1559,6 +2014,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: Bare HP+PH can leak scalar diagonal without symmOffDiag projection.
 
+### D0-NOGO-LIGO-DISCOVERY-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_ligo_discovery_negative_control.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [8C orphan-harvest] freezes V3-V12 negative discovery scans; blocks proxy promotion.
+
 ### D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY
 
 - type: `no-go`
@@ -1661,23 +2129,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - book: `BOOK_07/08`
 - module: ``
 - theorem: `none`
-- cert: `none`
+- cert: `vp_horizon_emission_conjugate_feedback.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen. [was:THEOREM-TARGET-SHARPENED]
-
-### D0-CVFT-F4
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_02/05`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open. [was:CERT-CANDIDATE]
+- notes: Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen. [was:THEOREM-TARGET-SHARPENED] [8C: linked passing cert]
 
 ### D0-CVFT-F5
 
@@ -1700,23 +2155,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - book: `BOOK_04/07`
 - module: ``
 - theorem: `none`
-- cert: `none`
+- cert: `vp_gauge_boundary_commutator_obstruction.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET]
-
-### D0-CVFT-F7
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE]
+- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET] [8C: linked passing cert]
 
 ### D0-CVFT-F8
 
@@ -1837,6 +2279,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: Yang-Mills positivity follows from assumed negative semidefinite Killing form. [was:BRIDGE-ASSUMPTION]
+
+### D0-FTHEORY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `gauge_bridge`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_ftheory_lw2016_d0_filter.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] structural filter: dim, gauge rank, 3-generation chiral count, light exotics, terminal shell.
 
 ### D0-GAUGE-MATRIX-REP-TRANSFORM-001
 
@@ -2216,6 +2671,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: D0-side admissibility and coefficient/cutoff certs; external analytic theorem not internalized.
+
+### D0-SPECTRAL-EINSTEIN-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `spectral_action`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_spectral_action_einstein_tensor_response.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] finite spectral-action A2 response.
 
 ### D0-GEOM-HEAT-TRACE-A2-DECOMP-001
 

@@ -144,6 +144,26 @@ Registry 164 -> **168 rows**; all guards PASS. Strength **2335 -> 2363** (realiz
 +28); core headroom **647 -> 699** (the new claims add 13 points of Lean-proof
 potential each). The four appear in SCOREBOARD "cheapest promotions" as +5 write-Lean-proof targets.
 
+## Phase 8B — cert-execution guard
+
+- `tools/run_registered_certs.py`: runs every registered cert, requires exit 0 + PASS
+  (SKIP-aware for data-gated passports; forces UTF-8 in children). Wired into CI.
+- First run found + fixed a cp1251 crash (`vp_phason_flip_entropy_sde.py`, via UTF-8
+  env) and a data-gated passport (`vp_qnm_*` -> SKIP). 66 certs -> 64 PASS, 2 SKIP, 0 FAIL.
+  **PYTHON_CERTIFIED now means the cert actually passes**, not just exists.
+
+## Phase 8C — curated orphan harvest
+
+- 143 orphan certs (on disk, unregistered); ran all -> 97 PASS. A classification agent
+  curated 44 registrations (9 LINK + 35 NEW) and 53 SKIP (aliases, wrappers,
+  sub-components, versioned execution cells). Applied 6 LINK + 36 NEW (D0-METRO-002 was
+  NEW not LINK; CVFT-F2/F6 kept PROOF-TARGET as supporting-evidence, F4/F7 -> CERT-CLOSED).
+- Fixed `cert_path` to fall back to a recursive basename lookup (cached) so ported
+  `05_CERTS/ported_legacy_primary/<ID>/` certs resolve in validate/score, not just the runner.
+- Registry **168 -> 204 rows**; `run_registered_certs` 110 certs -> 108 PASS / 2 SKIP / 0 FAIL;
+  all guards green. Strength **2363 -> 2625** (+262 realized); core headroom **699 -> 1027**.
+  Passports + the LIGO negative-control registered as EMPIRICAL-PASSPORT/NO-GO (firewall-blocked).
+
 ### Phase 8 backlog (tracked, scoreboard-visible)
 
 Remaining forced-claim certs to write (then Lean L4): Q8-Dedekind minimality,

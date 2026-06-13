@@ -162,12 +162,29 @@ def modules_exist(lean_module: str) -> bool:
     return bool(mods) and all(module_path(m).exists() for m in mods)
 
 
+_CERT_INDEX: dict[str, Path] | None = None
+
+
+def _cert_index() -> dict[str, Path]:
+    # basename -> path for every cert under 05_CERTS (incl. ported_legacy_primary/).
+    global _CERT_INDEX
+    if _CERT_INDEX is None:
+        _CERT_INDEX = {}
+        for p in (ROOT / "05_CERTS").rglob("*.py"):
+            _CERT_INDEX.setdefault(p.name, p)
+    return _CERT_INDEX
+
+
 def cert_path(cert: str) -> Path:
     # Some rows already prefix the cert with "05_CERTS/"; strip it to avoid 05_CERTS/05_CERTS/.
     cert = cert.strip().replace("\\", "/")
     if cert.startswith("05_CERTS/"):
         cert = cert[len("05_CERTS/"):]
-    return ROOT / "05_CERTS" / cert
+    direct = ROOT / "05_CERTS" / cert
+    if direct.exists():
+        return direct
+    # Fallback: locate by basename anywhere under 05_CERTS (e.g. ported_legacy_primary/<ID>/).
+    return _cert_index().get(Path(cert).name, direct)
 
 
 def dot_quote(value: str) -> str:

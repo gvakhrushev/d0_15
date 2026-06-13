@@ -4,47 +4,47 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 168,
+    "claims": 204,
     "release_status": {
       "CORE-FORMALIZED": 89,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 34,
-      "NO-GO": 7,
+      "CERT-CLOSED": 62,
+      "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
       "BRIDGE-CALIBRATION": 2,
-      "EMPIRICAL-PASSPORT": 1,
-      "PROOF-TARGET": 14
+      "EMPIRICAL-PASSPORT": 10,
+      "PROOF-TARGET": 12
     },
     "lean_status": {
       "LEAN_PROVED": 108,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 35,
+      "PYTHON_CERTIFIED": 73,
       "DEPRECATED": 2,
-      "OPEN": 15
+      "OPEN": 13
     },
     "claim_type": {
       "core": 90,
       "bridge": 13,
-      "no-go": 15,
-      "certificate": 34,
+      "no-go": 16,
+      "certificate": 71,
       "deprecated": 2,
-      "frontier": 14
+      "frontier": 12
     },
     "domain": {
-      "formal_core": 91,
+      "formal_core": 117,
       "rg": 3,
-      "gauge_bridge": 16,
+      "gauge_bridge": 17,
       "smooth_geometry": 6,
-      "spectral_action": 5,
-      "empirical_passport": 7,
-      "cosmology": 22,
+      "spectral_action": 6,
+      "empirical_passport": 15,
+      "cosmology": 24,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 14
+      "frontier": 12
     }
   },
   "nodes": [
@@ -213,10 +213,12 @@
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
+      "cert": "vp_v1142_hurwitz_phi_phase_rigidity.py",
+      "python_cert": [
+        "vp_v1142_hurwitz_phi_phase_rigidity.py"
+      ],
       "status": "CORE-FORMALIZED",
-      "notes": "D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background.",
+      "notes": "D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background. [8C: linked passing cert]",
       "module_path": "09_LEAN_FORMALIZATION/D0/NumberTheory/HurwitzMinimaxPhi.lean",
       "module_exists": true,
       "certs_exist": true
@@ -226,6 +228,13 @@
       "kind": "lean_module",
       "label": "D0.NumberTheory.HurwitzMinimaxPhi",
       "path": "09_LEAN_FORMALIZATION/D0/NumberTheory/HurwitzMinimaxPhi.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_v1142_hurwitz_phi_phase_rigidity.py",
+      "kind": "python_cert",
+      "label": "vp_v1142_hurwitz_phi_phase_rigidity.py",
+      "path": "05_CERTS/vp_v1142_hurwitz_phi_phase_rigidity.py",
       "exists": true
     },
     {
@@ -417,10 +426,12 @@
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
+      "cert": "vp_v1143_forced_return_windows_capacity.py",
+      "python_cert": [
+        "vp_v1143_forced_return_windows_capacity.py"
+      ],
       "status": "CORE-FORMALIZED",
-      "notes": "Exact 44 and 710 forced-window arithmetic.",
+      "notes": "Exact 44 and 710 forced-window arithmetic. [8C: linked passing cert]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Phase.lean",
       "module_exists": true,
       "certs_exist": true
@@ -430,6 +441,13 @@
       "kind": "lean_module",
       "label": "D0.Phase",
       "path": "09_LEAN_FORMALIZATION/D0/Phase.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_v1143_forced_return_windows_capacity.py",
+      "kind": "python_cert",
+      "label": "vp_v1143_forced_return_windows_capacity.py",
+      "path": "05_CERTS/vp_v1143_forced_return_windows_capacity.py",
       "exists": true
     },
     {
@@ -4299,13 +4317,22 @@
       "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
+      "cert": "vp_horizon_emission_conjugate_feedback.py",
+      "python_cert": [
+        "vp_horizon_emission_conjugate_feedback.py"
+      ],
       "status": "PROOF-TARGET",
-      "notes": "Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen. [was:THEOREM-TARGET-SHARPENED]",
+      "notes": "Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen. [was:THEOREM-TARGET-SHARPENED] [8C: linked passing cert]",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
+    },
+    {
+      "id": "cert:vp_horizon_emission_conjugate_feedback.py",
+      "kind": "python_cert",
+      "label": "vp_horizon_emission_conjugate_feedback.py",
+      "path": "05_CERTS/vp_horizon_emission_conjugate_feedback.py",
+      "exists": true
     },
     {
       "id": "D0-CVFT-F3",
@@ -4373,23 +4400,40 @@
       "id": "D0-CVFT-F4",
       "kind": "claim",
       "claim_id": "D0-CVFT-F4",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_02/05",
       "section": "CVFT UV feedback-tail cut program",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
-      "status": "PROOF-TARGET",
-      "notes": "UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open. [was:CERT-CANDIDATE]",
+      "cert": "vp_cvft_uv_feedback_tail_bound_refined.py;vp_cvft_ueff_pole_discipline.py",
+      "python_cert": [
+        "vp_cvft_uv_feedback_tail_bound_refined.py",
+        "vp_cvft_ueff_pole_discipline.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open. [was:CERT-CANDIDATE] [8C: linked passing cert]",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
+    },
+    {
+      "id": "cert:vp_cvft_uv_feedback_tail_bound_refined.py",
+      "kind": "python_cert",
+      "label": "vp_cvft_uv_feedback_tail_bound_refined.py",
+      "path": "05_CERTS/vp_cvft_uv_feedback_tail_bound_refined.py",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_cvft_ueff_pole_discipline.py",
+      "kind": "python_cert",
+      "label": "vp_cvft_ueff_pole_discipline.py",
+      "path": "05_CERTS/vp_cvft_ueff_pole_discipline.py",
+      "exists": true
     },
     {
       "id": "D0-CVFT-F5",
@@ -4427,35 +4471,61 @@
       "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
+      "cert": "vp_gauge_boundary_commutator_obstruction.py",
+      "python_cert": [
+        "vp_gauge_boundary_commutator_obstruction.py"
+      ],
       "status": "PROOF-TARGET",
-      "notes": "Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET]",
+      "notes": "Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET] [8C: linked passing cert]",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
     },
     {
+      "id": "cert:vp_gauge_boundary_commutator_obstruction.py",
+      "kind": "python_cert",
+      "label": "vp_gauge_boundary_commutator_obstruction.py",
+      "path": "05_CERTS/vp_gauge_boundary_commutator_obstruction.py",
+      "exists": true
+    },
+    {
       "id": "D0-CVFT-F7",
       "kind": "claim",
       "claim_id": "D0-CVFT-F7",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_07",
       "section": "CVFT boundary-local holographic rank lemma",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
-      "status": "PROOF-TARGET",
-      "notes": "Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE]",
+      "cert": "vp_cvft_boundary_channel_rank.py;vp_cvft_refined_logdet_rank_bound.py",
+      "python_cert": [
+        "vp_cvft_boundary_channel_rank.py",
+        "vp_cvft_refined_logdet_rank_bound.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE] [8C: linked passing cert]",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
+    },
+    {
+      "id": "cert:vp_cvft_boundary_channel_rank.py",
+      "kind": "python_cert",
+      "label": "vp_cvft_boundary_channel_rank.py",
+      "path": "05_CERTS/vp_cvft_boundary_channel_rank.py",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_cvft_refined_logdet_rank_bound.py",
+      "kind": "python_cert",
+      "label": "vp_cvft_refined_logdet_rank_bound.py",
+      "path": "05_CERTS/vp_cvft_refined_logdet_rank_bound.py",
+      "exists": true
     },
     {
       "id": "D0-CVFT-F8",
@@ -5465,6 +5535,1122 @@
       "label": "vp_dim_ladder_compact.py",
       "path": "05_CERTS/vp_dim_ladder_compact.py",
       "exists": true
+    },
+    {
+      "id": "D0-BH-CAPACITY-A4-001",
+      "kind": "claim",
+      "claim_id": "D0-BH-CAPACITY-A4-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "finite black-hole A/4 capacity witness",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_black_hole_capacity_a4_witness.py",
+      "python_cert": [
+        "vp_black_hole_capacity_a4_witness.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] ABCD four-role denominator boundary-cell count -> A/4 entropy witness.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_black_hole_capacity_a4_witness.py",
+      "kind": "python_cert",
+      "label": "vp_black_hole_capacity_a4_witness.py",
+      "path": "05_CERTS/vp_black_hole_capacity_a4_witness.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HODGE-001",
+      "kind": "claim",
+      "claim_id": "D0-HODGE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "finite Hodge complex core",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_finite_hodge_complex_core.py",
+      "python_cert": [
+        "vp_finite_hodge_complex_core.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] finite cochain complex d.d=0 + finite Hodge Laplacian.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_finite_hodge_complex_core.py",
+      "kind": "python_cert",
+      "label": "vp_finite_hodge_complex_core.py",
+      "path": "05_CERTS/vp_finite_hodge_complex_core.py",
+      "exists": true
+    },
+    {
+      "id": "D0-MINCUT-001",
+      "kind": "claim",
+      "claim_id": "D0-MINCUT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "finite min-cut holographic entropy",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_finite_mincut_holographic_entropy.py",
+      "python_cert": [
+        "vp_finite_mincut_holographic_entropy.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] Ford-Fulkerson max-flow/min-cut = A/4-normalized boundary capacity.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_finite_mincut_holographic_entropy.py",
+      "kind": "python_cert",
+      "label": "vp_finite_mincut_holographic_entropy.py",
+      "path": "05_CERTS/vp_finite_mincut_holographic_entropy.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SPIN2-001",
+      "kind": "claim",
+      "claim_id": "D0-SPIN2-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "concrete finite spin-2 TT wave operator",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_finite_spin2_wave_operator_concrete.py",
+      "python_cert": [
+        "vp_finite_spin2_wave_operator_concrete.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] TT projector on full 10-dim Sym(4) basis; 2 polarizations.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_finite_spin2_wave_operator_concrete.py",
+      "kind": "python_cert",
+      "label": "vp_finite_spin2_wave_operator_concrete.py",
+      "path": "05_CERTS/vp_finite_spin2_wave_operator_concrete.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SPECTRAL-EINSTEIN-001",
+      "kind": "claim",
+      "claim_id": "D0-SPECTRAL-EINSTEIN-001",
+      "type": "certificate",
+      "domain": "spectral_action",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07/08",
+      "section": "finite A2 Einstein-tensor response",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_spectral_action_einstein_tensor_response.py",
+      "python_cert": [
+        "vp_spectral_action_einstein_tensor_response.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] finite spectral-action A2 response.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_spectral_action_einstein_tensor_response.py",
+      "kind": "python_cert",
+      "label": "vp_spectral_action_einstein_tensor_response.py",
+      "path": "05_CERTS/vp_spectral_action_einstein_tensor_response.py",
+      "exists": true
+    },
+    {
+      "id": "D0-NOAXION-001",
+      "kind": "claim",
+      "claim_id": "D0-NOAXION-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05/08",
+      "section": "finite cochain no-axion block",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_no_axion_finite_cochain.py",
+      "python_cert": [
+        "vp_no_axion_finite_cochain.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] finite topological density + exact/coexact cancellation; no axion zero-mode.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_no_axion_finite_cochain.py",
+      "kind": "python_cert",
+      "label": "vp_no_axion_finite_cochain.py",
+      "path": "05_CERTS/vp_no_axion_finite_cochain.py",
+      "exists": true
+    },
+    {
+      "id": "D0-NONABELIAN-SEAM-001",
+      "kind": "claim",
+      "claim_id": "D0-NONABELIAN-SEAM-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "non-abelian seam obstruction gap",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_nonabelian_seam_gap.py",
+      "python_cert": [
+        "vp_nonabelian_seam_gap.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] finite positive gap outside the commuting kernel.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_nonabelian_seam_gap.py",
+      "kind": "python_cert",
+      "label": "vp_nonabelian_seam_gap.py",
+      "path": "05_CERTS/vp_nonabelian_seam_gap.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HODGE-LINKS-001",
+      "kind": "claim",
+      "claim_id": "D0-HODGE-LINKS-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04/07",
+      "section": "Hodge matter-gravity archive links",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_hodge_matter_gravity_archive_links.py",
+      "python_cert": [
+        "vp_hodge_matter_gravity_archive_links.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_hodge_matter_gravity_archive_links.py",
+      "kind": "python_cert",
+      "label": "vp_hodge_matter_gravity_archive_links.py",
+      "path": "05_CERTS/vp_hodge_matter_gravity_archive_links.py",
+      "exists": true
+    },
+    {
+      "id": "D0-MASTER-BOOTSTRAP-001",
+      "kind": "claim",
+      "claim_id": "D0-MASTER-BOOTSTRAP-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "master bootstrap + discrete volume derivative",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_master_bootstrap_and_volume_derivative.py",
+      "python_cert": [
+        "vp_master_bootstrap_and_volume_derivative.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] V_N=rank(P_N); Z_N=Tr e^{-bD} det(I-zF)^-1; finite pressure split.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_master_bootstrap_and_volume_derivative.py",
+      "kind": "python_cert",
+      "label": "vp_master_bootstrap_and_volume_derivative.py",
+      "path": "05_CERTS/vp_master_bootstrap_and_volume_derivative.py",
+      "exists": true
+    },
+    {
+      "id": "D0-MESON-DEFECT-ALGEBRA-001",
+      "kind": "claim",
+      "claim_id": "D0-MESON-DEFECT-ALGEBRA-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "meson typed edge-generation defect transfer algebra",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_meson_defect_transfer_algebra.py",
+      "python_cert": [
+        "vp_meson_defect_transfer_algebra.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] Fin E x Fin Gen carrier; self-adjoint PSD flavour defect.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_meson_defect_transfer_algebra.py",
+      "kind": "python_cert",
+      "label": "vp_meson_defect_transfer_algebra.py",
+      "path": "05_CERTS/vp_meson_defect_transfer_algebra.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HIGGS-YUKAWA-001",
+      "kind": "claim",
+      "claim_id": "D0-HIGGS-YUKAWA-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "Higgs/Yukawa finite block section transfer",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_higgs_yukawa_section_transfer.py",
+      "python_cert": [
+        "vp_higgs_yukawa_section_transfer.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] Y compatible with rank-2 scalar projector; Hermitian; single action section.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_higgs_yukawa_section_transfer.py",
+      "kind": "python_cert",
+      "label": "vp_higgs_yukawa_section_transfer.py",
+      "path": "05_CERTS/vp_higgs_yukawa_section_transfer.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CANONICAL-OP-001",
+      "kind": "claim",
+      "claim_id": "D0-CANONICAL-OP-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "canonical generation operator search",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_canonical_operator_search.py",
+      "python_cert": [
+        "vp_canonical_operator_search.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] tripartite-Laplacian canonical generation operator selection.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_canonical_operator_search.py",
+      "kind": "python_cert",
+      "label": "vp_canonical_operator_search.py",
+      "path": "05_CERTS/vp_canonical_operator_search.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CKM-EXACT-001",
+      "kind": "claim",
+      "claim_id": "D0-CKM-EXACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "exact CKM-origin orientation matrix",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ckm_exact_matrix_certificate.py",
+      "python_cert": [
+        "vp_ckm_exact_matrix_certificate.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ckm_exact_matrix_certificate.py",
+      "kind": "python_cert",
+      "label": "vp_ckm_exact_matrix_certificate.py",
+      "path": "05_CERTS/vp_ckm_exact_matrix_certificate.py",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-002",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "frozen charged-lepton transfer table",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_charged_lepton_transfer_certificate.py",
+      "python_cert": [
+        "vp_charged_lepton_transfer_certificate.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] frozen e/mu/tau ratios, exponents 0,1/4,1/3.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_charged_lepton_transfer_certificate.py",
+      "kind": "python_cert",
+      "label": "vp_charged_lepton_transfer_certificate.py",
+      "path": "05_CERTS/vp_charged_lepton_transfer_certificate.py",
+      "exists": true
+    },
+    {
+      "id": "D0-NEUTRON-002",
+      "kind": "claim",
+      "claim_id": "D0-NEUTRON-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "neutron lifetime beta/archive unlock-rate closure",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_neutron_lifetime_rate_closure.py",
+      "python_cert": [
+        "vp_neutron_lifetime_rate_closure.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] downstream of closed lambda_p, lambda_n, Lambda_act, tau0, delta0; no measured lifetime input.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_neutron_lifetime_rate_closure.py",
+      "kind": "python_cert",
+      "label": "vp_neutron_lifetime_rate_closure.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-NEUTRON-002/vp_neutron_lifetime_rate_closure.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PROTON-001",
+      "kind": "claim",
+      "claim_id": "D0-PROTON-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "proton terminal-destructive readout",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_proton_terminal_destructive_readout.py",
+      "python_cert": [
+        "vp_proton_terminal_destructive_readout.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] readout-306 terminal formula; 938 MeV is benchmark not input.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_proton_terminal_destructive_readout.py",
+      "kind": "python_cert",
+      "label": "vp_proton_terminal_destructive_readout.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-PROTON-001/vp_proton_terminal_destructive_readout.py",
+      "exists": true
+    },
+    {
+      "id": "D0-GRAV-002",
+      "kind": "claim",
+      "claim_id": "D0-GRAV-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "single-section gravity completion (G_N)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_single_section_gravity_completion.py",
+      "python_cert": [
+        "vp_single_section_gravity_completion.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] ell_P, G_N from delta0, Omega8, phi^(V9.V11); CODATA G is benchmark.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_single_section_gravity_completion.py",
+      "kind": "python_cert",
+      "label": "vp_single_section_gravity_completion.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-GRAV-002/vp_single_section_gravity_completion.py",
+      "exists": true
+    },
+    {
+      "id": "D0-EW-002",
+      "kind": "claim",
+      "claim_id": "D0-EW-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "Higgs anchor projector (39-dim)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_higgs_anchor_projector.py",
+      "python_cert": [
+        "vp_higgs_anchor_projector.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] Pi_H identity on scalar anchor image; rank.V13=39; delta0-normalized defect.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_higgs_anchor_projector.py",
+      "kind": "python_cert",
+      "label": "vp_higgs_anchor_projector.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-EW-002/vp_higgs_anchor_projector.py",
+      "exists": true
+    },
+    {
+      "id": "D0-FTHEORY-001",
+      "kind": "claim",
+      "claim_id": "D0-FTHEORY-001",
+      "type": "certificate",
+      "domain": "gauge_bridge",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "Lin-Weigand 2016 F-theory D0 vacuum filter",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ftheory_lw2016_d0_filter.py",
+      "python_cert": [
+        "vp_ftheory_lw2016_d0_filter.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] structural filter: dim, gauge rank, 3-generation chiral count, light exotics, terminal shell.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ftheory_lw2016_d0_filter.py",
+      "kind": "python_cert",
+      "label": "vp_ftheory_lw2016_d0_filter.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-FTHEORY-001/vp_ftheory_lw2016_d0_filter.py",
+      "exists": true
+    },
+    {
+      "id": "D0-FTHEORY-002",
+      "kind": "claim",
+      "claim_id": "D0-FTHEORY-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "LW2016 chiral-index recombination layer",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ftheory_lw2016_chiral_recombination_layer.py",
+      "python_cert": [
+        "vp_ftheory_lw2016_chiral_recombination_layer.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] published chi_R ledger recombines to absolute 3-generation SM multiplets.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ftheory_lw2016_chiral_recombination_layer.py",
+      "kind": "python_cert",
+      "label": "vp_ftheory_lw2016_chiral_recombination_layer.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-FTHEORY-001/vp_ftheory_lw2016_chiral_recombination_layer.py",
+      "exists": true
+    },
+    {
+      "id": "D0-BARYON-S3-SYM-001",
+      "kind": "claim",
+      "claim_id": "D0-BARYON-S3-SYM-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "finite S3 tensor symmetrizer (decuplet)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_baryon_s3_tensor_symmetrizer.py",
+      "python_cert": [
+        "vp_baryon_s3_tensor_symmetrizer.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] S3 symmetrizer on 27 ordered triples -> decuplet-10 symmetric carrier.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_baryon_s3_tensor_symmetrizer.py",
+      "kind": "python_cert",
+      "label": "vp_baryon_s3_tensor_symmetrizer.py",
+      "path": "05_CERTS/vp_baryon_s3_tensor_symmetrizer.py",
+      "exists": true
+    },
+    {
+      "id": "D0-BOOK04-SELECTORS-001",
+      "kind": "claim",
+      "claim_id": "D0-BOOK04-SELECTORS-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "centered full-support selector closures",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_book04_centered_full_support_selectors.py",
+      "python_cert": [
+        "vp_book04_centered_full_support_selectors.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] selectors over full support 0..2R; zero iff support-symmetry; no inserted indicator.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_book04_centered_full_support_selectors.py",
+      "kind": "python_cert",
+      "label": "vp_book04_centered_full_support_selectors.py",
+      "path": "05_CERTS/vp_book04_centered_full_support_selectors.py",
+      "exists": true
+    },
+    {
+      "id": "D0-BOOK04-SELECTORS-002",
+      "kind": "claim",
+      "claim_id": "D0-BOOK04-SELECTORS-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "combinatorial selector origins",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_book04_combinatorial_selector_origins.py",
+      "python_cert": [
+        "vp_book04_combinatorial_selector_origins.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] support radii from upstream D0 formulas (35, 306, 19); no fitted targets.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_book04_combinatorial_selector_origins.py",
+      "kind": "python_cert",
+      "label": "vp_book04_combinatorial_selector_origins.py",
+      "path": "05_CERTS/vp_book04_combinatorial_selector_origins.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HEAT-TRACE-FIT-001",
+      "kind": "claim",
+      "claim_id": "D0-HEAT-TRACE-FIT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07/08",
+      "section": "archive heat-trace expansion fit",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_archive_heat_trace_expansion_fit.py",
+      "python_cert": [
+        "vp_archive_heat_trace_expansion_fit.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] Theta(u) ~ u^-2(a0+a1 u+a2 u^2) on the archive Laplacian; finite-object fit.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_archive_heat_trace_expansion_fit.py",
+      "kind": "python_cert",
+      "label": "vp_archive_heat_trace_expansion_fit.py",
+      "path": "05_CERTS/vp_archive_heat_trace_expansion_fit.py",
+      "exists": true
+    },
+    {
+      "id": "D0-METRO-002",
+      "kind": "claim",
+      "claim_id": "D0-METRO-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "METROLOGY",
+      "section": "calibration DAG and Lambda action-section rigidity",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_calibration_dag_and_lambda_section_rigidity_20260522.py",
+      "python_cert": [
+        "vp_calibration_dag_and_lambda_section_rigidity_20260522.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] parameter-free Lambda_act/tau0/ell0 rigidity certificate.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_calibration_dag_and_lambda_section_rigidity_20260522.py",
+      "kind": "python_cert",
+      "label": "vp_calibration_dag_and_lambda_section_rigidity_20260522.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-METRO-002/vp_calibration_dag_and_lambda_section_rigidity_20260522.py",
+      "exists": true
+    },
+    {
+      "id": "D0-COSMO-003",
+      "kind": "claim",
+      "claim_id": "D0-COSMO-003",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "boundary-dark survey-driver kernel",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_boundary_dark_survey_driver_kernel.py",
+      "python_cert": [
+        "vp_boundary_dark_survey_driver_kernel.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] parameter-free internal dark object as additive optical-depth kernel; catalogue is external readout.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_boundary_dark_survey_driver_kernel.py",
+      "kind": "python_cert",
+      "label": "vp_boundary_dark_survey_driver_kernel.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-COSMO-003/vp_boundary_dark_survey_driver_kernel.py",
+      "exists": true
+    },
+    {
+      "id": "D0-COSMO-002",
+      "kind": "claim",
+      "claim_id": "D0-COSMO-002",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "survey likelihood + baryon form-factor closure",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py",
+      "python_cert": [
+        "vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] external-survey A_s + baryon form-factor comparison.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py",
+      "kind": "python_cert",
+      "label": "vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py",
+      "path": "05_CERTS/ported_legacy_primary/D0-COSMO-002/vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DUSTY-PLASMA-001",
+      "kind": "claim",
+      "claim_id": "D0-DUSTY-PLASMA-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "dusty-plasma tabletop bridge",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dusty_plasma_d0_mapping.py",
+      "python_cert": [
+        "vp_dusty_plasma_d0_mapping.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] self-declared TABLETOP-PASSPORT-SEED; forbids core promotion.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_dusty_plasma_d0_mapping.py",
+      "kind": "python_cert",
+      "label": "vp_dusty_plasma_d0_mapping.py",
+      "path": "05_CERTS/vp_dusty_plasma_d0_mapping.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CRITICAL-COLLAPSE-001",
+      "kind": "claim",
+      "claim_id": "D0-CRITICAL-COLLAPSE-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "critical-collapse DSS echo-lattice bridge",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_critical_collapse_dss_echo_lattice.py",
+      "python_cert": [
+        "vp_critical_collapse_dss_echo_lattice.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] pins external arXiv:2601.14358 DSS solutions via hash manifest.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_critical_collapse_dss_echo_lattice.py",
+      "kind": "python_cert",
+      "label": "vp_critical_collapse_dss_echo_lattice.py",
+      "path": "05_CERTS/vp_critical_collapse_dss_echo_lattice.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PASSPORT-CORE13-001",
+      "kind": "claim",
+      "claim_id": "D0-PASSPORT-CORE13-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "Core-13 shell geometry passport",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_core13_shell_geometry_passport.py",
+      "python_cert": [
+        "vp_core13_shell_geometry_passport.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] pinned PDG mass-width diagnostic; no core promotion.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_core13_shell_geometry_passport.py",
+      "kind": "python_cert",
+      "label": "vp_core13_shell_geometry_passport.py",
+      "path": "05_CERTS/vp_core13_shell_geometry_passport.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PASSPORT-DESI-BAO-001",
+      "kind": "claim",
+      "claim_id": "D0-PASSPORT-DESI-BAO-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "DESI BAO S_DE failure diagnostics",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_desi_bao_sde_failure_diagnostics.py",
+      "python_cert": [
+        "vp_desi_bao_sde_failure_diagnostics.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] honest negative survey diagnostic (FAIL on real data, no refit).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_desi_bao_sde_failure_diagnostics.py",
+      "kind": "python_cert",
+      "label": "vp_desi_bao_sde_failure_diagnostics.py",
+      "path": "05_CERTS/vp_desi_bao_sde_failure_diagnostics.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PASSPORT-ICECUBE-HESE-001",
+      "kind": "claim",
+      "claim_id": "D0-PASSPORT-ICECUBE-HESE-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04/08",
+      "section": "IceCube HESE baseline comparison",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_icecube_hese_baseline_comparison.py",
+      "python_cert": [
+        "vp_icecube_hese_baseline_comparison.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] external neutrino-survey baseline comparison.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_icecube_hese_baseline_comparison.py",
+      "kind": "python_cert",
+      "label": "vp_icecube_hese_baseline_comparison.py",
+      "path": "05_CERTS/vp_icecube_hese_baseline_comparison.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PASSPORT-LIGO-CATALOG-001",
+      "kind": "claim",
+      "claim_id": "D0-PASSPORT-LIGO-CATALOG-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "GWOSC/LIGO merger mass-defect catalog",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ligo_merger_mass_defect_current_catalog.py",
+      "python_cert": [
+        "vp_ligo_merger_mass_defect_current_catalog.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] external GWOSC catalog passport.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ligo_merger_mass_defect_current_catalog.py",
+      "kind": "python_cert",
+      "label": "vp_ligo_merger_mass_defect_current_catalog.py",
+      "path": "05_CERTS/vp_ligo_merger_mass_defect_current_catalog.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PASSPORT-PDG-STRICT-001",
+      "kind": "claim",
+      "claim_id": "D0-PASSPORT-PDG-STRICT-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04/05",
+      "section": "PDG strict passport",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_pdg_strict_passport.py",
+      "python_cert": [
+        "vp_pdg_strict_passport.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] PDG comparison engine with pinning/holdout/multiple-testing; no operator tuning.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_pdg_strict_passport.py",
+      "kind": "python_cert",
+      "label": "vp_pdg_strict_passport.py",
+      "path": "05_CERTS/vp_pdg_strict_passport.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PASSPORT-SPARC-001",
+      "kind": "claim",
+      "claim_id": "D0-PASSPORT-SPARC-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07/08",
+      "section": "SPARC hull-boundary response kernel",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_sparc_hull_boundary_response_kernel.py",
+      "python_cert": [
+        "vp_sparc_hull_boundary_response_kernel.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[8C orphan-harvest] SPARC rotation-curve external-data passport.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_sparc_hull_boundary_response_kernel.py",
+      "kind": "python_cert",
+      "label": "vp_sparc_hull_boundary_response_kernel.py",
+      "path": "05_CERTS/vp_sparc_hull_boundary_response_kernel.py",
+      "exists": true
+    },
+    {
+      "id": "D0-NOGO-LIGO-DISCOVERY-001",
+      "kind": "claim",
+      "claim_id": "D0-NOGO-LIGO-DISCOVERY-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_07",
+      "section": "LIGO discovery negative-control",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ligo_discovery_negative_control.py",
+      "python_cert": [
+        "vp_ligo_discovery_negative_control.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[8C orphan-harvest] freezes V3-V12 negative discovery scans; blocks proxy promotion.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ligo_discovery_negative_control.py",
+      "kind": "python_cert",
+      "label": "vp_ligo_discovery_negative_control.py",
+      "path": "05_CERTS/vp_ligo_discovery_negative_control.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -5537,6 +6723,11 @@
       "source": "D0-PHI-HURWITZ-001",
       "target": "module:D0.NumberTheory.HurwitzMinimaxPhi",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-HURWITZ-001",
+      "target": "cert:vp_v1142_hurwitz_phi_phase_rigidity.py",
+      "kind": "certified_by"
     },
     {
       "source": "D0-ABCD-001",
@@ -5617,6 +6808,11 @@
       "source": "D0-PHASE-UNFOLD-002",
       "target": "module:D0.Phase",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASE-UNFOLD-002",
+      "target": "cert:vp_v1143_forced_return_windows_capacity.py",
+      "kind": "certified_by"
     },
     {
       "source": "D0-QM-BORN-001",
@@ -7154,6 +8350,11 @@
       "kind": "implemented_in"
     },
     {
+      "source": "D0-CVFT-F2",
+      "target": "cert:vp_horizon_emission_conjugate_feedback.py",
+      "kind": "certified_by"
+    },
+    {
       "source": "D0-CVFT-F3",
       "target": "domain:empirical_passport",
       "kind": "semantic_domain"
@@ -7185,7 +8386,7 @@
     },
     {
       "source": "D0-CVFT-F4",
-      "target": "domain:frontier",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
@@ -7194,6 +8395,16 @@
       "kind": "implemented_in"
     },
     {
+      "source": "D0-CVFT-F4",
+      "target": "cert:vp_cvft_uv_feedback_tail_bound_refined.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CVFT-F4",
+      "target": "cert:vp_cvft_ueff_pole_discipline.py",
+      "kind": "certified_by"
+    },
+    {
       "source": "D0-CVFT-F5",
       "target": "domain:frontier",
       "kind": "semantic_domain"
@@ -7214,14 +8425,29 @@
       "kind": "implemented_in"
     },
     {
+      "source": "D0-CVFT-F6",
+      "target": "cert:vp_gauge_boundary_commutator_obstruction.py",
+      "kind": "certified_by"
+    },
+    {
       "source": "D0-CVFT-F7",
-      "target": "domain:frontier",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-CVFT-F7",
       "target": "module:",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CVFT-F7",
+      "target": "cert:vp_cvft_boundary_channel_rank.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CVFT-F7",
+      "target": "cert:vp_cvft_refined_logdet_rank_bound.py",
+      "kind": "certified_by"
     },
     {
       "source": "D0-CVFT-F8",
@@ -7641,6 +8867,546 @@
     {
       "source": "D0-DIM-LADDER-COMPACT-001",
       "target": "cert:vp_dim_ladder_compact.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BH-CAPACITY-A4-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BH-CAPACITY-A4-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BH-CAPACITY-A4-001",
+      "target": "cert:vp_black_hole_capacity_a4_witness.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HODGE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HODGE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HODGE-001",
+      "target": "cert:vp_finite_hodge_complex_core.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-MINCUT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-MINCUT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-MINCUT-001",
+      "target": "cert:vp_finite_mincut_holographic_entropy.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SPIN2-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SPIN2-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SPIN2-001",
+      "target": "cert:vp_finite_spin2_wave_operator_concrete.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SPECTRAL-EINSTEIN-001",
+      "target": "domain:spectral_action",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SPECTRAL-EINSTEIN-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SPECTRAL-EINSTEIN-001",
+      "target": "cert:vp_spectral_action_einstein_tensor_response.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-NOAXION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-NOAXION-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-NOAXION-001",
+      "target": "cert:vp_no_axion_finite_cochain.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-NONABELIAN-SEAM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-NONABELIAN-SEAM-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-NONABELIAN-SEAM-001",
+      "target": "cert:vp_nonabelian_seam_gap.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HODGE-LINKS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HODGE-LINKS-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HODGE-LINKS-001",
+      "target": "cert:vp_hodge_matter_gravity_archive_links.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-MASTER-BOOTSTRAP-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-MASTER-BOOTSTRAP-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-MASTER-BOOTSTRAP-001",
+      "target": "cert:vp_master_bootstrap_and_volume_derivative.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-MESON-DEFECT-ALGEBRA-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-MESON-DEFECT-ALGEBRA-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-MESON-DEFECT-ALGEBRA-001",
+      "target": "cert:vp_meson_defect_transfer_algebra.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HIGGS-YUKAWA-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HIGGS-YUKAWA-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HIGGS-YUKAWA-001",
+      "target": "cert:vp_higgs_yukawa_section_transfer.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CANONICAL-OP-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CANONICAL-OP-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CANONICAL-OP-001",
+      "target": "cert:vp_canonical_operator_search.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CKM-EXACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CKM-EXACT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CKM-EXACT-001",
+      "target": "cert:vp_ckm_exact_matrix_certificate.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LEPTON-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-002",
+      "target": "cert:vp_charged_lepton_transfer_certificate.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-NEUTRON-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-NEUTRON-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-NEUTRON-002",
+      "target": "cert:vp_neutron_lifetime_rate_closure.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PROTON-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PROTON-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PROTON-001",
+      "target": "cert:vp_proton_terminal_destructive_readout.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-GRAV-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-GRAV-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-GRAV-002",
+      "target": "cert:vp_single_section_gravity_completion.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-EW-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-EW-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-EW-002",
+      "target": "cert:vp_higgs_anchor_projector.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FTHEORY-001",
+      "target": "domain:gauge_bridge",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FTHEORY-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FTHEORY-001",
+      "target": "cert:vp_ftheory_lw2016_d0_filter.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FTHEORY-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FTHEORY-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FTHEORY-002",
+      "target": "cert:vp_ftheory_lw2016_chiral_recombination_layer.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BARYON-S3-SYM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BARYON-S3-SYM-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BARYON-S3-SYM-001",
+      "target": "cert:vp_baryon_s3_tensor_symmetrizer.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BOOK04-SELECTORS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BOOK04-SELECTORS-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BOOK04-SELECTORS-001",
+      "target": "cert:vp_book04_centered_full_support_selectors.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BOOK04-SELECTORS-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BOOK04-SELECTORS-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BOOK04-SELECTORS-002",
+      "target": "cert:vp_book04_combinatorial_selector_origins.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HEAT-TRACE-FIT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HEAT-TRACE-FIT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HEAT-TRACE-FIT-001",
+      "target": "cert:vp_archive_heat_trace_expansion_fit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-METRO-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-METRO-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-METRO-002",
+      "target": "cert:vp_calibration_dag_and_lambda_section_rigidity_20260522.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-COSMO-003",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COSMO-003",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COSMO-003",
+      "target": "cert:vp_boundary_dark_survey_driver_kernel.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-COSMO-002",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COSMO-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COSMO-002",
+      "target": "cert:vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DUSTY-PLASMA-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DUSTY-PLASMA-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DUSTY-PLASMA-001",
+      "target": "cert:vp_dusty_plasma_d0_mapping.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CRITICAL-COLLAPSE-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CRITICAL-COLLAPSE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CRITICAL-COLLAPSE-001",
+      "target": "cert:vp_critical_collapse_dss_echo_lattice.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PASSPORT-CORE13-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PASSPORT-CORE13-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PASSPORT-CORE13-001",
+      "target": "cert:vp_core13_shell_geometry_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PASSPORT-DESI-BAO-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PASSPORT-DESI-BAO-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PASSPORT-DESI-BAO-001",
+      "target": "cert:vp_desi_bao_sde_failure_diagnostics.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PASSPORT-ICECUBE-HESE-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PASSPORT-ICECUBE-HESE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PASSPORT-ICECUBE-HESE-001",
+      "target": "cert:vp_icecube_hese_baseline_comparison.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PASSPORT-LIGO-CATALOG-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PASSPORT-LIGO-CATALOG-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PASSPORT-LIGO-CATALOG-001",
+      "target": "cert:vp_ligo_merger_mass_defect_current_catalog.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PASSPORT-PDG-STRICT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PASSPORT-PDG-STRICT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PASSPORT-PDG-STRICT-001",
+      "target": "cert:vp_pdg_strict_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PASSPORT-SPARC-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PASSPORT-SPARC-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PASSPORT-SPARC-001",
+      "target": "cert:vp_sparc_hull_boundary_response_kernel.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-NOGO-LIGO-DISCOVERY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-NOGO-LIGO-DISCOVERY-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-NOGO-LIGO-DISCOVERY-001",
+      "target": "cert:vp_ligo_discovery_negative_control.py",
       "kind": "certified_by"
     }
   ]
