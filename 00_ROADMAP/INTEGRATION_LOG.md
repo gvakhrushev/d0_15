@@ -58,3 +58,15 @@ canonical (164) — regenerated in Phase 4.
   no canonical module/cert path resolved into a deleted/moved dir.
 - Deferred: prose references to deleted/moved paths in books/README/roadmap
   (stale links, non-breaking) -> swept in Phase 5.
+
+## Phase 3 — reconcile canonical registry
+
+- Collapsed 26 drifted `release_status` values -> canonical 12 via
+  `d0_status_model.RELEASE_STATUS_COLLAPSE` (provenance preserved as `[was:X]` in
+  notes). Fixed `D0-PUB-001` (was PYTHON_CERTIFIED + empty cert) -> OPEN / PROOF-TARGET.
+- 27 rows changed (clean 1-line-per-row diff). All 164 rows now canonical.
+- `validate_csv.py` PASS (exit 0; only non-fatal staleness warnings remain);
+  `check_firewall.py` PASS. Distribution: CORE-FORMALIZED 89, CERT-CLOSED 30,
+  PROOF-TARGET 14, NO_GO_PROVED 8, NO-GO 7, BRIDGE-ASSUMPTIONS-EXPLICIT 7,
+  CORE_BRIDGE_SPLIT 4, BRIDGE-CALIBRATION 2, EMPIRICAL-PASSPORT 1,
+  EXTERNAL-BACKGROUND 1, DEPRECATED 1.
