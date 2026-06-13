@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 204,
+    "claims": 209,
     "release_status": {
       "CORE-FORMALIZED": 89,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 62,
+      "CERT-CLOSED": 67,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 108,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 73,
+      "PYTHON_CERTIFIED": 78,
       "DEPRECATED": 2,
       "OPEN": 13
     },
@@ -29,15 +29,15 @@
       "core": 90,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 71,
+      "certificate": 76,
       "deprecated": 2,
       "frontier": 12
     },
     "domain": {
-      "formal_core": 117,
+      "formal_core": 121,
       "rg": 3,
       "gauge_bridge": 17,
-      "smooth_geometry": 6,
+      "smooth_geometry": 7,
       "spectral_action": 6,
       "empirical_passport": 15,
       "cosmology": 24,
@@ -6651,6 +6651,161 @@
       "label": "vp_ligo_discovery_negative_control.py",
       "path": "05_CERTS/vp_ligo_discovery_negative_control.py",
       "exists": true
+    },
+    {
+      "id": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "kind": "claim",
+      "claim_id": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "Omega8 = Q8 forced",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_q8_dedekind_minimality.py",
+      "python_cert": [
+        "vp_q8_dedekind_minimality.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8D Tier-1 forced] unique minimal Hamiltonian non-abelian group <=8 (Dedekind 1897); [Q8,Q8]=Z=Phi={+-1}. Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_q8_dedekind_minimality.py",
+      "kind": "python_cert",
+      "label": "vp_q8_dedekind_minimality.py",
+      "path": "05_CERTS/vp_q8_dedekind_minimality.py",
+      "exists": true
+    },
+    {
+      "id": "D0-WINDOW44-GROUP-SPECTRUM-001",
+      "kind": "claim",
+      "claim_id": "D0-WINDOW44-GROUP-SPECTRUM-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01/04",
+      "section": "(Z/44)* window spectrum",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_window44_group_spectrum.py",
+      "python_cert": [
+        "vp_window44_group_spectrum.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8D Tier-1 forced] (Z/44)*=Z2xZ2xZ5, |.|=20=d13, char subgroups {1,4,5,20}, 20=4x5. Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_window44_group_spectrum.py",
+      "kind": "python_cert",
+      "label": "vp_window44_group_spectrum.py",
+      "path": "05_CERTS/vp_window44_group_spectrum.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TIME-2D-PISOT-001",
+      "kind": "claim",
+      "claim_id": "D0-TIME-2D-PISOT-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "time = T^2 (Pisot)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_time_2d_pisot.py",
+      "python_cert": [
+        "vp_time_2d_pisot.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8D Tier-1 forced] phi Pisot => deg Q(phi)=2 => time layer T^2; Adler-Weiss smooth partition. Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_time_2d_pisot.py",
+      "kind": "python_cert",
+      "label": "vp_time_2d_pisot.py",
+      "path": "05_CERTS/vp_time_2d_pisot.py",
+      "exists": true
+    },
+    {
+      "id": "D0-MIXING-HIERARCHY-INVERSION-001",
+      "kind": "claim",
+      "claim_id": "D0-MIXING-HIERARCHY-INVERSION-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "CKM<->PMNS hierarchy inversion",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_mixing_hierarchy_inversion.py",
+      "python_cert": [
+        "vp_mixing_hierarchy_inversion.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_mixing_hierarchy_inversion.py",
+      "kind": "python_cert",
+      "label": "vp_mixing_hierarchy_inversion.py",
+      "path": "05_CERTS/vp_mixing_hierarchy_inversion.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SIGNATURE-31-SPLIT-001",
+      "kind": "claim",
+      "claim_id": "D0-SIGNATURE-31-SPLIT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06/07",
+      "section": "Lorentz signature (3,1)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_signature_31_split.py",
+      "python_cert": [
+        "vp_signature_31_split.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[8D Tier-1 forced] 3=rank(adj) space + 1 Pisot modular flow time; distinct objects. Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_signature_31_split.py",
+      "kind": "python_cert",
+      "label": "vp_signature_31_split.py",
+      "path": "05_CERTS/vp_signature_31_split.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -9407,6 +9562,81 @@
     {
       "source": "D0-NOGO-LIGO-DISCOVERY-001",
       "target": "cert:vp_ligo_discovery_negative_control.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "target": "cert:vp_q8_dedekind_minimality.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-WINDOW44-GROUP-SPECTRUM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-WINDOW44-GROUP-SPECTRUM-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-WINDOW44-GROUP-SPECTRUM-001",
+      "target": "cert:vp_window44_group_spectrum.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TIME-2D-PISOT-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TIME-2D-PISOT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TIME-2D-PISOT-001",
+      "target": "cert:vp_time_2d_pisot.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-MIXING-HIERARCHY-INVERSION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-MIXING-HIERARCHY-INVERSION-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-MIXING-HIERARCHY-INVERSION-001",
+      "target": "cert:vp_mixing_hierarchy_inversion.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SIGNATURE-31-SPLIT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SIGNATURE-31-SPLIT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SIGNATURE-31-SPLIT-001",
+      "target": "cert:vp_signature_31_split.py",
       "kind": "certified_by"
     }
   ]

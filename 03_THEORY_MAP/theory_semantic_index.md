@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 62
+- `CERT-CLOSED`: 67
 - `CORE-FORMALIZED`: 89
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 71
+- `certificate`: 76
 - `core`: 90
 - `deprecated`: 2
 - `frontier`: 12
@@ -31,13 +31,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 24
 - `empirical_passport`: 15
 - `external_background`: 1
-- `formal_core`: 117
+- `formal_core`: 121
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
 - `rg`: 3
 - `si_calibration`: 2
-- `smooth_geometry`: 6
+- `smooth_geometry`: 7
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -1117,6 +1117,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] Ford-Fulkerson max-flow/min-cut = A/4-normalized boundary capacity.
 
+### D0-MIXING-HIERARCHY-INVERSION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_mixing_hierarchy_inversion.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued.
+
 ### D0-NEUTRON-002
 
 - type: `certificate`
@@ -1169,6 +1182,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] readout-306 terminal formula; 938 MeV is benchmark not input.
 
+### D0-Q8-DEDEKIND-MINIMALITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: ``
+- theorem: `none`
+- cert: `vp_q8_dedekind_minimality.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8D Tier-1 forced] unique minimal Hamiltonian non-abelian group <=8 (Dedekind 1897); [Q8,Q8]=Z=Phi={+-1}. Lean L4 queued.
+
 ### D0-QUANT-MET-001
 
 - type: `certificate`
@@ -1195,6 +1221,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
 
+### D0-SIGNATURE-31-SPLIT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06/07`
+- module: ``
+- theorem: `none`
+- cert: `vp_signature_31_split.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8D Tier-1 forced] 3=rank(adj) space + 1 Pisot modular flow time; distinct objects. Lean L4 queued.
+
 ### D0-SPIN2-001
 
 - type: `certificate`
@@ -1220,6 +1259,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: ABCD = Vieta=Galois data of x^2-x-1; delta0=1/(2phi^3) forced; exact Q(phi). Lean L4 queued.
+
+### D0-WINDOW44-GROUP-SPECTRUM-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: ``
+- theorem: `none`
+- cert: `vp_window44_group_spectrum.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8D Tier-1 forced] (Z/44)*=Z2xZ2xZ5, |.|=20=d13, char subgroups {1,4,5,20}, 20=4x5. Lean L4 queued.
 
 ### D0-XI5-TORUS-DEFECT-001
 
@@ -2629,6 +2681,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Absolute/relative sign corrected. [was:FRACTAL-CONTINUUM-PREDICTION-CERT-CLOSED]
+
+### D0-TIME-2D-PISOT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_06`
+- module: ``
+- theorem: `none`
+- cert: `vp_time_2d_pisot.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8D Tier-1 forced] phi Pisot => deg Q(phi)=2 => time layer T^2; Adler-Weiss smooth partition. Lean L4 queued.
 
 ### D0-GEOM-SPECTRAL-ACTION-LADDER-001
 

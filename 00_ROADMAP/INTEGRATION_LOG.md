@@ -164,6 +164,20 @@ potential each). The four appear in SCOREBOARD "cheapest promotions" as +5 write
   all guards green. Strength **2363 -> 2625** (+262 realized); core headroom **699 -> 1027**.
   Passports + the LIGO negative-control registered as EMPIRICAL-PASSPORT/NO-GO (firewall-blocked).
 
+## Phase 8D — Tier-1 forced-claim certs
+
+Five new deterministic certs (exact, no floats, each able to FAIL), registered CERT-CLOSED:
+- `D0-Q8-DEDEKIND-MINIMALITY-001` (`vp_q8_dedekind_minimality.py`) — Omega8=Q8 forced:
+  group enumeration shows Q8 has 0 non-normal subgroups vs S3=3, D4=4; triple identity
+  [Q8,Q8]=Z=Phi={+-1}. (Cert caught my wrong D4=2 expectation -> correct 4.)
+- `D0-WINDOW44-GROUP-SPECTRUM-001` ((Z/44)*=Z2xZ2xZ5, |.|=20=d13, char subgroups {1,4,5,20}, 20=4x5).
+- `D0-TIME-2D-PISOT-001` (phi Pisot => deg Q(phi)=2 => time = T^2).
+- `D0-MIXING-HIERARCHY-INVERSION-001` (rank-3 nondegenerate vs nullity-30 degenerate; the
+  nonzero-spectrum cubic is exactly lambda^3-359 lambda-2574 = the vacuum cubic, 359=|E|, 2574=2*1287).
+- `D0-SIGNATURE-31-SPLIT-001` (3=rank(adj) space + 1 Pisot modular-flow time; distinct objects).
+
+Registry 204 -> 209; all guards green. Strength **2625 -> 2660**; core headroom **1027 -> 1092**.
+
 ### Phase 8 backlog (tracked, scoreboard-visible)
 
 Remaining forced-claim certs to write (then Lean L4): Q8-Dedekind minimality,
