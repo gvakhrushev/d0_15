@@ -48,6 +48,88 @@ E = arg(lambda)
 Gamma = -log |lambda|
 ```
 
+### Neutrino leakage sector and the mass scale from the gluing anomaly
+
+The neutrino is the neutral-leakage (Ker-channel) mode. Its mass *scale* is not anchored externally; it is forced by the seam anomaly `Delta_alpha`, the irreducible residue between two independent canonizations of `alpha^{-1}` (topological capacity of channels vs. algebraic/geometric phase inside `Q(phi)`).
+
+```text
+Delta_alpha = |alpha^{-1}_top - alpha^{-1}_alg| ~ 4.15e-4
+P_sterile := Theta(Delta_alpha^2)            # leading sterile-tunneling weight
+m_nu / m_e ~ P_sterile ~ Delta_alpha^2
+m_nu ~ m_e * Delta_alpha^2 ~ 0.088 eV        # one-mode / characteristic scale
+```
+
+Forcing — why the *square* (forcing: GOLDEN DEF 16.5.1): the linear term in `Delta_alpha` is unobservable, because the sign of the seam error does not survive into probabilistic weights. So the leading observable scale is `Theta(Delta_alpha^2)`, not `Theta(Delta_alpha)`.
+
+Mass-scale bridge (forcing: GOLDEN THE 16.3.7): reading mass as cycle density, the natural neutrino mass scale is `m_nu/m_e ~ Delta_alpha^2`. This is a BRIDGE scale-matching; CORE fixes only the dimensionless map `Delta_alpha -> P_sterile`. The `0.088 eV` figure is the single-mode characteristic scale (forcing: GOLDEN CHK 16.3.8/16.3.9); the protocol mapping it to observed combinations (`m_beta`, `sum m_nu`) belongs in the falsification matrix, not here.
+
+M1 failure mode (forcing: GOLDEN REM 16.3.SE): `Delta_alpha` is the *mismatch* of two independently admissible canonizations. If `Delta_alpha = 0` it would mean a hidden identity rule between the two canonizations — an external "dictionary of correspondence" — which M1 forbids. So `Delta_alpha != 0` is forced: it is the inevitable trace of the irreducibility of the two descriptions, and it is precisely this nonzero residue that seeds the leakage (and hence a nonzero neutrino mass scale).
+
+Status: `Delta_alpha` is CORE-measurable; the seam-alpha invariant `delta_alpha < eps2` is checked by the EXISTING cert `vp_pdg_strict_passport.py`, and the residual itself is held at CHK in `vp_xi5_torus_defect.py` ("NOT promoted to THE until Delta_alpha receives an analytic owner"). The `m_nu ~ 0.088 eV` mass-scale step is a BRIDGE assignment, not a closed CORE theorem.
+
+```text
+Status: PROOF-TARGET (cert obligation open)  # m_nu/m_e ~ Delta_alpha^2 mass-scale bridge has no vp_*.py owner; Delta_alpha analytic owner still open
+D0.Matter.NeutrinoMassScaleFromGluingAnomaly
+```
+
+### Charge quantization is forced (not postulated)
+
+In standard physics, charge quantization is either empirical or follows from compactness of U(1). In D0 it is a theorem of the scene graph, forced by M1.
+
+```text
+G = finite connected scene graph (edges, nodes)
+U(1) phase = 1-cochain on edges
+gauge transform = add an exact 1-form (gradient) to the 1-cochain
+distinguishable classes = quotient by exact cochains = H^1(G, Z)
+measurable charges = integer cohomology classes
+=> topological charge is discrete (integer)
+```
+
+Forcing (forcing: GOLDEN THE 9.1.2): gauge-equivalent phase configurations are parametrized by `H^1(G, Z)`; the measurable invariants are exactly the integer cohomology classes, so charge is integer-valued. Charge is a counter of symmetry winding (group Z), not a tunable real.
+
+M1 failure mode (forcing: GOLDEN REM 9.1.2.R): charge discreteness is a consequence of the discreteness of the scene's fundamental cycles (memory/holonomy). A *continuous* charge would require an external resolution parameter to fix its scale — an external catalog — which M1 forbids. So continuous charge is not a different admissible physics; it is structurally excluded.
+
+```text
+Status: PROOF-TARGET (cert obligation open)  # H^1(G,Z) charge-quantization forcing has no vp_*.py yet
+D0.Matter.ChargeQuantizationH1Forcing
+```
+
+### Integer projection forces the Lucas trace selector
+
+Book 04 scales live in `Q(phi)`; every scale is a power `phi^k`, which is irrational. Interaction ("exchange of portions") requires a *whole* number of portions. The integer-projection problem (forcing: GOLDEN DEF 9.2.1): how to extract an integer `N` from `phi^k` without an arbitrary `Round()` threshold — a `Round()` would import an external rounding catalog, forbidden by M1.
+
+The unique catalog-free answer is the algebraic trace (forcing: GOLDEN THE 9.2.2):
+
+```text
+psi = -1/phi                         # algebraic conjugate of phi
+L_k = phi^k + psi^k = Tr_{Q(phi)/Q}(phi^k)   # always an integer
+```
+
+Forcing argument: the trace is the integer projection *built into the algebra itself* — it needs no manual threshold, no external normalization. Any `Round()`-style projection imports a catalog and dies under M1. Hence the Lucas trace is the ONLY canonical integer projection of `phi^k` (forcing: GOLDEN LEM 9.2.2.T). This uniqueness is the WHY the trace identity carries the physics, not just the identity itself.
+
+Resonance spectrum after the base anchor:
+
+```text
+L_1 = 1   (trivial)
+L_2 = 3   (first prime resonance)
+L_3 = 4   (addressing anchor, occupied by the Base; not a resonance slot)
+L_4 = 7
+L_5 = 11
+L_6 = 18  (composite 2x9, not prime)
+=> first prime resonances after excluding the L_3=4 anchor: 3, 7, 11
+```
+
+This is the structural reason the denominators 3, 7, 11 appear in mixing angles and corrections while 5 and 13 do not. Larger primes (29, 47, ...) arise at larger `k` from the same trace operation — not ad hoc.
+
+The signed Lucas *trace identity* `Tr(T^n) = (-1)^n L_n` is certified by EXISTING certs (`vp_master_evolution_theorem.py`, `vp_toral_automorphism_galois_balance.py`, `vp_trace_heat_capacity_gravity.py`; the `L_2=3, L_3=-4, L_5=-11` layer diagnostic also appears in `vp_pdg_strict_passport.py`). What those certify is the identity; the *uniqueness-of-projection* forcing above is the argument BOOK_04 restores.
+
+```text
+Status: PROOF-TARGET (cert obligation open)  # uniqueness "trace is the ONLY catalog-free integer projection" has no vp_*.py yet
+D0.Matter.LucasTraceCanonicalIntegerProjection
+```
+
+(Owner note: BOOK_01 owns phi-from-(p+p^2=1) and the role alphabet; the trace identity tooling is in the toral/evolution certs above. BOOK_04 keeps only the matter-sector *use* of the selector and its M1 forcing.)
+
 ### Baryon scaffold
 
 ```text
@@ -135,6 +217,97 @@ reduction. Coefficient-origin trace/residue, hadron resonance transfer and
 dynamic neutrino decoherence are frontier programs until those operators and
 external passports are frozen.
 
+### 04.1.SPINE Why the matter carrier has rank 3 and a 30-dim hidden sector (forced, not fitted)
+
+The matter book inherits the scene `K(9,11,13)` and its split as a FROZEN
+invariant; it does not get to refit it. But the *reason* the carrier splits the
+way it does is the structural fact that makes "finite support is not mass by
+itself" inevitable, so it is restated here in forcing form (the FACT
+`rank(A)=3`, `nullity(A)=30` is owned by BOOK_01 / BOOK_03; this subsection adds
+only the *why*).
+
+**Forced split (forcing: GOLDEN THE 17.1.1).** Let `A` be the adjacency operator
+of `G = K(9,11,13)` in the vertex basis `V = V9 ⊔ V11 ⊔ V13`, `|V| = 33`. Then
+
+```math
+\mathbb{R}^V = \mathcal{R}\oplus\mathcal{S},\qquad
+\mathcal{R}=\operatorname{span}\{\mathbf 1_{V9},\mathbf 1_{V11},\mathbf 1_{V13}\}\ (\dim 3),\qquad
+\mathcal{S}=\operatorname{Ker}(A)\ (\dim 30).
+```
+
+The forcing is by `S9×S11×S13`-invariance, NOT by computing eigenvalues: `A`
+acts identically on all vertices inside a part, so its image is closed in the
+part-constant subspace `\mathcal{R}`, giving `dim Im(A) ≤ 3`; non-empty
+inter-part blocks make the action on each `\mathbf 1_{Vi}` nonzero, so
+`Rank(A) = 3` exactly; Rank–Nullity then forces
+`Nullity(A) = |V| − Rank(A) = 33 − 3 = 30`. There is no free parameter at any
+step — the three numbers are fixed the moment the scene is fixed. Status:
+CERT-CLOSED (exact integer linear algebra, `vp_kernel_zone_split.py`, which
+additionally certifies the zone split `30 = 8 + 10 + 12` of within-zone
+difference modes).
+
+**Why this is the matter-book's load-bearing wall.** `\mathcal{R}` is the
+radiation sector (the three part-constant transport modes = the only directions
+that carry an inter-zone channel); `\mathcal{S} = Ker(A)` is the sterile sector.
+Matter is read off `\mathcal{R}` and the feedback eigenmodes built over it; the
+30-dimensional kernel is the structural ceiling on how much hidden capacity the
+same finite scene can carry. (Interpretation only; the split itself is the
+theorem.)
+
+**Dark = memory without a light channel (forcing: GOLDEN THE 17.1.5 + COR
+17.1.5.A).** Fix transport/light as the inter-zone action `J(x) := A x` (DEF
+17.1.4 — the *same* `A`, no new object). Then for every `x ∈ Ker(A)`,
+
+```math
+J(x) = A x = 0 ,
+```
+
+so the 30 kernel modes carry exactly zero inter-zone transport: they cannot be
+radiated. Yet they are genuine internal degrees of freedom of the scene and they
+DO enter the spectral traces (heat-trace / entropy of §17.2 onward). Hence the
+sterile sector is "memory without a light channel": a 30-dim hidden capacity
+that contributes to the trace-time bookkeeping while emitting nothing. This is
+the forced origin of the dark sector — a transport-null kernel, not a fitted
+anchor and not a Galois-archive add-on. Status: CERT-CLOSED for the
+transport-null structure (`vp_kernel_zone_split.py`: `A` acts equally across a
+zone, so every within-zone difference vector lies in `Ker(A)`); the BRIDGE-layer
+"dark sector" reading remains interpretation.
+
+### 04.1.START Why the shell ladder starts at 9 (forced operationality level)
+
+The matter book reads `V_shell = span{|9⟩,|11⟩,|13⟩}` as its three-orbit
+flavour geometry (see 04.CVFT.F3c). The start value `9` is itself forced and is
+not a tuned offset (the address ladder and the `+2` step are owned by BOOK_01
+§01.4; restated here only as the *why* the carrier is what it is).
+
+**Start = anchor + operationality level (forcing: GOLDEN LEM 3.10.B).** The
+operationality level is `D_Σ = 5`, because a self-distinguishing language needs
+five separable roles — `Code`, `Canon`, `Test`, `History`, `Access` — and so at
+least five distinguishable address classes. With fewer than five, two roles
+collide onto one address and resolving the collision needs an external catalog,
+which M1 forbids. Hence
+
+```math
+\mathfrak{D}_1 = \mathfrak{D}_{\rm anchor} + D_\Sigma = 4 + 5 = 9 .
+```
+
+The anchor `4` and the level `5` are both forced (not fitted), so the first
+shell is `9`; the `+2` step (orientation/holonomy parity, GOLDEN THE 3.11.B)
+then forces `9 → 11 → 13`.
+
+**Phase-volume exponent is the same 5 (forcing: GOLDEN COR 3.10.C).** Because the
+number of independent address choices at level `D_Σ` equals `D_Σ`, the count of
+admissible configurations grows with leading order
+
+```math
+\#\Omega(R)\asymp R^{D_\Sigma},\qquad D_\Sigma = 5\ \Rightarrow\ R^5 .
+```
+
+This `R^5` leading phase volume is the structural seed of the decay law (its
+hitting-time/phase-volume formalization lives in BOOK V §24.DECAY; cited here,
+not re-derived). Status: PROOF-TARGET (cert obligation open) for the
+`R^5`-to-decay-law link at the matter-book layer.
+
 ### 04.CVFT.F3 Baryon resonance pole scaffold
 
 The frozen operator family proves the nucleon line. It does not prove a full
@@ -213,88 +386,55 @@ contraction is strict only on subspaces with nonzero feedback leakage.
 
 The existing PDG/Core-13 passport does not merely show that masses have φ-lattice representatives. Its structural content is the frozen three-orbit shell geometry. D0 now identifies this three-orbit geometry with the finite shell carrier
 
-[
-V_{\rm shell}
-=============
-
-\operatorname{span}{|9\rangle,|11\rangle,|13\rangle}
-\cong
-\mathbb C^3.
-]
+```math
+V_{\rm shell}=\operatorname{span}\{|9\rangle,|11\rangle,|13\rangle\}\cong\mathbb C^3.
+```
 
 The baryon flavour carrier is the three-body lift
 
-[
-\mathcal V_B^{flavour}
-======================
-
-V_{\rm shell}^{\otimes3},
-\qquad
-\dim=27.
-]
+```math
+\mathcal V_B^{flavour}=V_{\rm shell}^{\otimes3},\qquad\dim=27.
+```
 
 The exchange-symmetric flavour sector has rank
 
-[
+```math
 \dim\operatorname{Sym}^3(\mathbb C^3)=10.
-]
+```
 
 With the binary spin dyad (D_2\cong\mathbb C^2), D0 obtains two internal spin-flavour carriers before any PDG passport:
 
-[
-\Pi_B^{40}
-==========
-
-\Pi_{S_3}^{flavour}
-\otimes
-\Pi_{S_3}^{spin},
-\qquad
-\operatorname{rank}=40,
-]
+```math
+\Pi_B^{40}=\Pi_{S_3}^{flavour}\otimes\Pi_{S_3}^{spin},\qquad\operatorname{rank}=40,
+```
 
 and
 
-[
-\Pi_B^{56}
-==========
-
-\frac16
-\sum_{\sigma\in S_3}
-P_\sigma^{flavour}
-\otimes
-P_\sigma^{spin},
-\qquad
-\operatorname{rank}=56.
-]
+```math
+\Pi_B^{56}=\frac16\sum_{\sigma\in S_3}P_\sigma^{flavour}\otimes P_\sigma^{spin},\qquad\operatorname{rank}=56.
+```
 
 The rank-40 carrier is a canonical subcarrier of the rank-56 diagonal spin-flavour carrier:
 
-[
-\Pi_B^{56}\Pi_B^{40}=\Pi_B^{40},
-\qquad
-\Pi_B^{40}\Pi_B^{56}=\Pi_B^{40}.
-]
+```math
+\Pi_B^{56}\Pi_B^{40}=\Pi_B^{40},\qquad\Pi_B^{40}\Pi_B^{56}=\Pi_B^{40}.
+```
 
 Thus the internal decomposition is
 
-[
+```math
 56=40+16.
-]
+```
 
 The rank-16 complement is the mixed spin-flavour diagonal-symmetric sector. Anonymous pole sets are then defined by
 
-[
-U_{\rm eff}^{B,k}
-=================
+```math
+U_{\rm eff}^{B,k}=\Pi_B^k PUP\Pi_B^k,\qquad k\in\{40,56\},
+```
 
-\Pi_B^kPUP\Pi_B^k,
-\qquad
-k\in{40,56},
-]
-
-[
+```math
 \det(I-\zeta U_{\rm eff}^{B,k})=0.
-]
+```
 
 PDG names, GeV conversion, physical mass assignment and decay widths remain passport-layer operations. The internal spin-flavour carrier is finite and closed before those external labels are applied.
 
@@ -334,6 +474,30 @@ The active matter claims use the following proof owners.
 
 The text below is written theorem-first: each strong claim either has one of these owners, a self-contained certificate, or an explicit comparison boundary.
 
+### The spectral operator the matter book reads from
+
+The matter sector does not invent its own scene. It reads spectra off the **same** complete tripartite scene `K(9,11,13)` on `N=33` vertices that BOOK_01 owns (the scene, the rank‑3/nullity‑30 retained/traced split). What this book adds is the *operator whose spectrum the sector reads* and *why that operator is forced rather than chosen*. The forcing chain below is the spectral spine that downstream §§04.4–04.10 lean on; it is restated here once so every later "active mode" / "30‑fold archive" reference has an owner.
+
+**[DEF] Normalized scene Laplacian (forcing: GOLDEN DEF 17.2.1, BOOK-III-SPECTRUM).** Let `D` be the diagonal degree matrix of `K(9,11,13)` and `A` its adjacency. The scene Laplacian is the *symmetric* normalization
+`L_sym := I − D^(−1/2) A D^(−1/2)`.
+
+**[THE] The symmetric normalization is forced, not a convention (forcing: GOLDEN REM 17.2.1.A).** The scene is degree‑irregular: the three zones have degrees `{20, 22, 24}` (a vertex in the size‑`n_i` zone has degree `N − n_i`). For an irregular graph the random‑walk Laplacian `L_rw := I − D^(−1) A` is **not symmetric**, so applying a symmetric eigensolver (`eigvalsh`) to it manufactures phantom modes — up to spurious *negative* eigenvalues that have no scene meaning. Requiring the readout to distinguish real scene modes from solver artifacts (M1: no externally injected structure) forces the symmetric carrier `L_sym`. The random‑walk operator is therefore boundary, not core. Status: forced choice; rests on the irregular‑degree fact `{20,22,24}`, which is exact integer data off the owned scene.
+
+**[LEM] Reduction to a 3×3 problem on the part‑constant subspace (forcing: GOLDEN LEM 17.2.1.B).** Let `n = (9,11,13)`, `N = 33`, and `d_i = N − n_i = (24,22,20)`. On the subspace of vectors constant on each zone, `S := D^(−1/2) A D^(−1/2)` acts by `(Sx)_i = Σ_{j≠i} n_j / √(d_i d_j) · x_j`. Hence the **active** spectrum of `L_sym = I − S` on that subspace is exactly the spectrum of the 3×3 matrix
+`L_part = I − [[0, n_2/√(d_1 d_2), n_3/√(d_1 d_3)], [n_1/√(d_2 d_1), 0, n_3/√(d_2 d_3)], [n_1/√(d_3 d_1), n_2/√(d_3 d_2), 0]]`.
+The whole spectral question collapses to this 3×3 because everything off the part‑constant subspace is degenerate (next theorem).
+
+**[THE] The scene spectrum splits 1 ⊕ 30 ⊕ (1+1) (forcing: GOLDEN THE 17.2.2 + COR 17.2.1.C).** For the complete `k`‑partite graph, `N − k` eigenvectors carry `λ = 1` and the remaining `k` live on the part‑constant subspace. So `L_sym` for `K(9,11,13)` has:
+- `λ = 0`, multiplicity 1 — the vacuum / global mode;
+- `λ = 1`, multiplicity `30` — the degenerate **bulk/archive** band (this is the *same* 30 the adjacency rank/nullity split owns; cert `vp_kernel_zone_split.py` certifies `rank(A)=3`, `nullity=30`, zone split `30 = 8+10+12` by exact integer linear algebra);
+- two **active** modes, multiplicity 1 each, given by `spec(L_part) = {0, 1.420838683198…, 1.579158554151…}` (one scalar, one vector mode).
+
+The `30`‑fold degeneracy is *why* the archive sector reads as a single undistinguished band rather than thirty separate channels: the matter book's "archive pressure spread over 30 modes" (e.g. `vp_readout306_action_cost_and_archive_pressure_20260522.py`) is exactly this multiplicity, not an assumption.
+
+**[DEF] Canonical φ‑rescaling of scene eigenvalues (forcing: GOLDEN DEF 17.2.3).** The only dimensionless scale already forced (BOOK_01/BOOK_02, from `p + p² = 1`) is `φ`. Canonically reduce any scene eigenvalue by `tilde‑λ := λ / φ`, equivalently read the rescaled operator `G := φ^(−1) L_sym`. No new normalization parameter is introduced — `φ` is the sole admissible scale inside `ℚ(φ)`. Under this rescaling the bulk band sits at `tilde‑λ = 1/φ ≈ 0.6180339887` (×30), and the two active modes at `1.420838…/φ ≈ 0.878191106229…` (scalar) and `1.579158…/φ ≈ 0.975910860021…` (vector). Status of the numeric active‑mode values: **PROOF-TARGET (cert obligation open)** — the rank/nullity backbone is certified by `vp_kernel_zone_split.py`, but no cert yet pins the two `L_part` eigenvalues `1.420838…` / `1.579158…` to closed form; until one lands these are numerical readouts off the forced 3×3, not theorems. Do not cite them as proven.
+
+This spectral split is the object the rest of Book 04 reads matter off of: the active pair drives the visible (transport) sector, the 30‑fold band is the archive the selector charges against, and the φ‑rescaling is what lets later sections compare a scene eigenvalue to a forced constant without smuggling in an external unit.
+
 ## 04.3 Matter objects are selectors, not passports
 
 The previous reading of Book 04 mixed three different things: internal finite objects, dressed Standard-Model comparison values and external data checks. The active reading removes that ambiguity.
@@ -360,6 +524,24 @@ The D0 vacuum is the condensed/profinite hull of all admissible finite detector 
 The matter generations and baryons as phason modes are theorem-owned by `D0.Matter.PhasonStrainGenerations`. The phason carrier is exactly `D0.Geometry.TorusShell`, so the generation/phason mode count is the already proved three-shell torus count.
 
 The ordered carrier is `BaryonPhasonTriple = PhasonMode x PhasonMode x PhasonMode`, hence dimension `27`. The full baryon multiplet 10D symmetric carrier / decuplet-candidate carrier is not a nucleon-line extension; it is the S3-symmetric phason triple sector of dimension `10`, with `baryon_phason_symmetric_sector_dim_eq_ten`.
+
+**Why exactly three, two forced routes (forcing: GOLDEN BOOK-VI-EXTENSIONS THE 61.5).** v14 already forces three generations from the toral trace `|Tr(T^2)|=3` plus the torus-shell non-commuting selector (`phason_strain_forces_three_generations`). GOLDEN supplies an independent, convergent cutoff: define the control impedance over the Lucas zone capacities `L_n` (BOOK_03-owned),
+
+```math
+I_n := \frac{L_n}{9n}.
+```
+
+The impedance climbs smoothly through the controlled regime and then breaks:
+
+```text
+n=13: L_13=521   -> I_13 ≈ 4.453
+n=14: L_14=843   -> I_14 ≈ 6.691
+n=15: L_15=1364  -> I_15 ≈ 10.104   <- structural discontinuity (loss of control)
+n=16: L_16=2207  -> I_16 ≈ 15.326
+n=17: L_17=3571  -> I_17 ≈ 23.340
+```
+
+The jump at `n=15` marks where control over the carrier is lost: capacity outruns the `9n` budget, so no further zone can be registered as a coherent generation without an external catalog to label it (⊥M1). The two routes agree — the trace count fixes the realized generation number, the Lucas impedance fixes *why the ladder terminates* — and neither is fitted. **Status: PROOF-TARGET (cert obligation open).** Cross-check obligation: GOLDEN CHK 61.2 (control-loss check at `n=15`).
 
 ### 04.4.2 Mesons as phason domain walls
 
@@ -394,11 +576,31 @@ Definition. CKM is the finite holonomy of phason transport on the Core-13 torus 
 
 The core theorem closes the finite holonomy object and the non-permutation overlap response. The passport layer is separate: physical CKM entries, PDG conventions and uncertainty tables are external comparison protocols and cannot feed back into the phason carrier.
 
+**Mixing arity 3+1 is forced by the interface triangle (forcing: GOLDEN D0-THEORY-DOSSIER THE IV.1, claim `D0-MIXING-HIERARCHY-INVERSION-001`).** Generations are the interzone interfaces of the K(9,11,13) scene (BOOK_01-owned): `I12(9,11)`, `I23(11,13)`, `I13(9,13)`. The interface graph is the complete graph `K3`:
+
+- 3 vertices ⇒ **3 mixing angles**;
+- cycle rank `E - V + 1 = 3 - 3 + 1 = 1` ⇒ **exactly 1 irreducible CP phase**.
+
+This is the `3 angles + 1 phase` structure of CKM read off the scene topology, with zero fitted entries.
+
+**NO-GO on a 4th generation via M1 (forcing: GOLDEN D0-THEORY-DOSSIER THE IV.1; ⊥-proof).** Suppose a 4th generation. A 4th generation is a 4th interface, which requires a 4th zone, which is a 4th structural necessity, hence a new distinguishing role, hence an entry in an external catalog to label that role — forbidden by M1. ⊥. The generation count is therefore closed at three not by tuning but by the catalog-freeness of the scene. **Status: PROOF-TARGET (cert obligation open).**
+
+The static reading is separately ruled out: the bare interface-connectivity operator `M_ij = shared/√(cap_i·cap_j)` gives near-flat angle ratios `~1 : 1.09 : 0.90`, against the observed `1 : 0.19 : 0.017`. Hierarchy is therefore not static — M1 forces dynamical mass-dressing of the holonomy (GOLDEN D0-THEORY-DOSSIER THE IV.2). **Status: PROOF-TARGET (cert obligation open).**
+
 ### 04.4.5 CKM K-class and oriented CP area
 
-The CP phase is the oriented noncommutative area of this holonomy, classifying the CKM K-class.
+The CP phase is the oriented noncommutative area of this holonomy, classifying the CKM K-class. By 04.4.4 the cycle rank of the interface triangle is `1`, so this oriented area carries exactly one irreducible phase — the single CKM CP phase, not a free parameter.
 
-### 04.4.6 Window-sector fractional charges
+### 04.4.6 CKM↔PMNS hierarchy inversion from rank-nullity
+
+**The quark/lepton mixing asymmetry is forced, parameter-free, by the scene spectrum (forcing: GOLDEN D0-THEORY-DOSSIER THE IV.3, claim `D0-MIXING-HIERARCHY-INVERSION-001`).** The K(9,11,13) scene splits into a rank-3 distinguishing sector and a 30-dimensional nullity (rank 3 / nullity 30, BOOK_02-owned spine fact).
+
+- **Quarks** live on the 3 nondegenerate active modes (eigenvalues `21.84, -9.76, -12.08`). Nondegeneracy is a steep spectral hierarchy, and a steep hierarchy *suppresses* rotation between modes ⇒ **CKM mixing is small**.
+- **Neutrinos** live in the 30-fold degenerate kernel (the Sterile Archive). Degeneracy means no preferred basis, so rotation is unobstructed ⇒ **PMNS mixing is large**.
+
+So the long-standing Standard-Model puzzle — why quark mixing is tiny while lepton mixing is order-one — is read off `rank 3` vs `nullity 30` of one fixed scene, with **zero free parameters**. The kernel further inherits the three-zone split `30 = 8 ⊕ 10 ⊕ 12` (intra-zone difference vectors), so the zeroth-order PMNS pattern is zone democracy — the tri-bimaximal/trimaximal pattern is pulled into place rather than fitted (GOLDEN D0-THEORY-DOSSIER THE IV.4, claim `D0-KERNEL-ZONE-SPLIT-001`). **Status: PROOF-TARGET (cert obligation open).**
+
+### 04.4.7 Window-sector fractional charges
 
 The D0 support is a cut-and-project quasicrystal. Matter as phason/window defects of the φ-quasicrystal vacuum maps the fractional quark charge as a window-sector intersection weight:
 
@@ -408,13 +610,21 @@ The D0 support is a cut-and-project quasicrystal. Matter as phason/window defect
 
 Hence, quark color/charge = window-sector weights and generations = inflation classes.
 
-### 04.4.7 Window-offset chirality
+### 04.4.8 Window-offset chirality
 
 Weak chirality is represented as a window-offset effect: chirality = acceptance-window offset.
 
-### 04.4.8 Neutrino as neutral bulk phason wave
+### 04.4.9 Neutrino as neutral bulk phason wave
 
 The neutrino is represented as a neutral bulk phason wave with zero active EM coupling.
+
+**Why the neutrino has mass (forcing: GOLDEN BOOK-04 Thm 04.9B, the `[J,Y]` bulk carrier).** v14 previously kept only the *fact* (neutral bulk phason, zero EM coupling) and dropped the mass-generation argument. The forcing: the holographic commutator `[J,Y]≠0` is rigidity-forced on the K(9,11,13) carrier (this nonvanishing is BOOK_02-owned — forcing: GOLDEN THE 2.9A — and is what produces the quantum of action `ℏ` in the Active Transport boundary). Evaluate the *same* commutator inside the 30-dimensional Sterile Archive `𝒮^30` (the nullity of 04.4.6): it does not vanish there either, because `ℏ` mathematically cannot vanish even in the unobservable Archive. Its residue is an irreducible, non-spatial phase oscillation, and the neutral bulk phason is its physical carrier. The neutrino mass scale is therefore the algebraic gluing anomaly
+
+```math
+m_\nu \propto \Delta_\alpha^2,
+```
+
+the **minimal nonzero eigenvalue** of the `[J,Y]` obstruction projected into the null space. Nonzero because `ℏ ≠ 0`; minimal because it is the smallest such eigenvalue in the 30-dim kernel. The neutrino is light, not massless, by the same uncertainty that makes it exist. **Status: PROOF-TARGET (cert obligation open).** Beat cross-link: the oscillation small parameter is `Δα` (BOOK_03-owned), the seam beat between topological and algebraic evolution (GOLDEN BOOK-VI-EXTENSIONS THE 61.7).
 
 ## 04.5 Terminal matter triad
 
@@ -440,6 +650,94 @@ The first boundary defect has the paired terminal projections
 
 This does not assert that all interactions are electromagnetic.  It says that stable macroscopic records use a charged terminal register, a neutral leakage branch and a massless line carrier.
 
+### 04.5.1 Why the triad is rigid: the prime edge count forces it
+
+The triad above is not three independently chosen roles; it sits on a carrier whose discreteness is forced. The total edge count of the scene `K(9,11,13)` is
+
+```math
+|E|=9\cdot11+9\cdot13+11\cdot13=359,
+```
+
+which BOOK_01 owns as the scene 1-skeleton edge count (cite, not re-derived here). The forcing step v14 kept the fact but dropped is: **`359` is prime, and primality forces topological rigidity** — the edge carrier admits no nontrivial continuous internal gauge orbit, so every matter observable can exist only as a discrete topological defect (anyonic excitation) on the rigid 1-skeleton, never as a continuous internal symmetry coordinate. The charged register, the neutral leakage branch and the massless line carrier are then forced as *defect classes*, not as a menu choice. (forcing: GOLDEN BOOK-04 §04.5 prime-edge anyon scaffold.)
+
+Status: PROOF-TARGET (cert obligation open) — the primality→rigidity→discrete-defect chain is stated as a forcing argument; the executable certificate that checks "359 prime ⇒ no continuous internal gauge orbit on the edge carrier" is not yet present in `05_CERTS/` and must not be cited until it exists.
+
+### 04.5.2 The 359 ceiling is a distinguishability limit, not a normalization
+
+`359` enters v14 elsewhere only as the count feeding `alpha_top` normalization. The dropped forcing reading is sharper and is what makes `359` a *limit* rather than a tally:
+
+> The coherent-channel address space has cardinality exactly `359`. Injectively encoding more than `359` independent phase trajectories in one coherent cluster is impossible: addresses collide, and address collision is decoherence.
+
+This is a hard distinguishability ceiling in the sense of M1 — beyond `359` the cluster can no longer distinguish its own channels without an external catalog, which M1 forbids, so the encoding collapses. The edge count is therefore simultaneously the geometric 1-skeleton size and the coherent-address capacity; the two coincide because both are the same finite distinguishability budget. (forcing: GOLDEN THE 61.8 "359 Limit", CORE→BRIDGE.)
+
+### 04.5.3 Companion embedding: the leakage/branching exponents are intrinsic
+
+The fractional branching exponents that label the leptonic leakage branch (`1/4` and `1/3`) are not fitted to measured masses; they are Puiseux holonomy indices of finite companion restrictions embedded in the `359`-edge carrier. v14 named the `C_4/R_3` companion cover and the `1/4,1/3` indices but explicitly left the embedding "a named theorem target". The forcing v17 supplies is the determinant-factorization that closes it.
+
+Let `lambda` be the edge holonomy parameter. The terminal-capacity block is the companion operator `C_4(lambda)` with characteristic equation `z^4 - lambda = 0`; the internal scene-rank block is `R_3(lambda)` with `z^3 - lambda = 0`. They embed into the edge carrier as
+
+```math
+U_E^{\text{cover}}\cong U_{\text{bulk}}^{352}\oplus C_4(\lambda)\oplus R_3(\lambda),
+\qquad 352+4+3=359.
+```
+
+The local resolvent of the edge-cover operator then factors as
+
+```math
+D_E(z,\lambda)=D_{\text{bulk}}(z)\,(z^4-\lambda)(z^3-\lambda),
+```
+
+so the roots are Puiseux branches `z=lambda^{1/4} xi_4^j` and `z=lambda^{1/3} xi_3^j`, and the two non-bulk ramification exponents are exactly
+
+```math
+p_\mu={1\over4},\qquad p_\tau={1\over3}.
+```
+
+The direct-sum embedding preserves determinant factorization, so the branch indices are intrinsic to the finite edge-cover block — not obtained by fitting lepton masses. The `4` is the orientation/terminal-capacity budget and the `3` is the internal scene rank; tri-generation is then a closed consequence of the prime-edge carrier, not an input. (forcing: GOLDEN BOOK-04 §04.5A companion embedding, Def 4.4A / Thm 4.4B.)
+
+Status: PROOF-TARGET (cert obligation open) — the companion-characteristic-polynomial check and the `352+4+3=359` embedding count are a forcing target; no executable certificate for this embedding currently exists in `05_CERTS/`, so none is cited.
+
+### 04.5.4 Fibonacci-fusion / Jones-index bridge to phi
+
+The prime-edge anyon scaffold ties back to the golden ratio through the fusion algebra of the defects. The defect category carries Fibonacci fusion `tau (x) tau = 1 (+) tau`, whose subfactor Jones index is
+
+```math
+[M:N]=\varphi^2={3+\sqrt5\over2}.
+```
+
+The leakage/branching exponents `1/3` and `1/4` are then read as braiding holonomy indices around the rigid defects, and the Higgs role appears as a rank-2 projector on the `C_4/R_3` ramification block. This closes the loop: the same `phi` that forces the spine (BOOK_01, `p+p^2=1`) reappears as the index of the matter-defect category, so the matter sector is not an independent algebra glued on top of the spine — it is the spine's own braiding statistics. (forcing: GOLDEN BOOK-04 §04.5D Fibonacci fusion / Jones index.)
+
+Status: PROOF-TARGET (cert obligation open) — the `tau (x) tau = 1 (+) tau ⇒ [M:N]=phi^2` bridge and the braiding-index reading of `1/3,1/4` are a structural forcing target; no executable certificate exists for it in `05_CERTS/`, so none is cited.
+
+### 04.5.5 Window branch group (Z/44)* and the Cabibbo soft joint
+
+The charged-register / leakage split also fixes a window branch group whose unit count lands the Cabibbo angle with zero free parameters. With return quotient `q_T=44`, the branch group is
+
+```math
+(\mathbb Z/44)^\ast\cong\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_5,
+\qquad |(\mathbb Z/44)^\ast|=\varphi_E(44)=20=d_{13}.
+```
+
+Its characteristic (catalog-free) subgroups are exactly `{1, 4, 5, 20}`: the `2`-torsion `T` (order 4), the squares `F(5)`, and the full group `G(20)`. Here
+
+```math
+20=4\times5=|ABCD|\times D_\Sigma
+```
+
+— the orientation budget `|ABCD|` times the operational budget `D_Sigma` — and the product of all units mod 44 is `+1`, so the window is phase-neutral. Mass is memory winding and generations are classes of branch defects, so M1 admits only the classes `{1,4,5,20}`: class 4 is killed by orientation blindness (THE 3.11.B), leaving generation 1 (class 1) and generation 2 (class 20).
+
+This forces the first Cabibbo readout structurally:
+
+```math
+{m_s\over m_d}=20\ \text{(exact)},\qquad
+\sin\theta_C={1\over\sqrt{20}}={1\over2\sqrt5}=0.22361,
+```
+
+against the lattice/FLAG cross-check `m_s/m_d=20.01\pm0.55` (0.03 sigma) and `sin theta_C` experimental `0.22501(68)` (0.62%, inside the GST `O(lambda^2)~5%` bridge tolerance). The Cabibbo chain is thus 2 THE + 1 LEM-gap + 1 BRIDGE(GST). (claim ids: `D0-WINDOW44-GROUP-SPECTRUM-001` (THE), `D0-MSD20-CABIBBO-001` (core/LEM+BRIDGE); forcing: GOLDEN D0-THEORY-DOSSIER §IV.5.)
+
+The one honest gap: **class 5** is killed by aliasing (winding 5 = address `D_Sigma=5` ⇒ pointer collision = hidden memory, grammar 01.11C), but this is stated and not yet formalized — it is the **third soft joint** of the matter sector. It is recorded here as a soft joint, not promoted to a closed theorem.
+
+Status: PROOF-TARGET (cert obligation open) — the class-5 aliasing kill is the open soft-joint obligation; `m_s/m_d=20` and `sin theta_C=1/sqrt20` are carried as the dossier claim ids above, and no new `vp_*` cert is invented here.
 ## 04.6 Finite Born 2.0 in matter language
 
 The finite matter probability chain now starts one step before effects.  A finite channel amplitude `(x,y)` is first reduced to the forced phase-blind quadratic response `x^2+y^2`; matter effects then aggregate these squared norms over the finite support; only then is the response normalized.  Thus a matter-sector probability cannot introduce either a new response functional or a new probability functional.
@@ -483,6 +781,119 @@ P_q(i)=\frac{r_i^q}{\sum_jr_j^q}
 
 is not a second D0 law.  At fixed response, it must collapse to the Born weight or fail the response-recovery equation.  Therefore Book 04 can no longer hide weak particle claims behind alternative weighting conventions.
 
+### 04.6.π The structural angle `π_0` is forced, not measured
+
+The Born readout above lives on phases, and a phase is an *angle*.  But the matter scene is a graph: there is no circle, so the closure constant of a memory cycle cannot be the classical transcendental `π`.  This subsection restores the dropped GOLDEN derivation of the structural constant `π_0=(6/5)φ²` that the runtime in BOOK_02 §02 (`α_alg⁻¹=2¹¹π_0/φ⁸+2δ₀/3`; `π_0=(6/5)φ²=3.1416407865…`) and BOOK_07 §07.11 already *consume* without showing the forcing.  Path memory is encoded as a phase; the question is the minimal step of that phase.
+
+**[DEF 04.6.π.1] Angular microquantum `δθ` (forcing: GOLDEN DEF 6.2.1, BOOK-III-SPECTRUM).** Encode the memory of a path as an angle and write its minimal step through the still-unknown cycle-closure constant `π_0`:
+
+```math
+\delta\theta := \frac{3}{5\,\pi_0\,\varphi}.
+```
+
+`π_0` is the cycle-closure constant to be solved for below with no external parameter.
+
+**[THE 04.6.π.A] Projective-density `ρ=3/5` (forcing: GOLDEN THE 6.2.A, BOOK-III-SPECTRUM; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** The minimal scene carries `Z=3` topologically independent zones and `D_Σ=5` realizability layers (both owned by BOOK_01: the `K(9,11,13)` scene and the `D_Σ=5` role alphabet).  The canonical projection factor of a signal through the scene is then
+
+```math
+\rho := Z/D_\Sigma = 3/5.
+```
+
+⊥-proof.  Suppose `ρ≠3/5`.  Then there exists a pair of weight sets `w_Z, w_D` (equivalently a correction multiplier) fixing the relative importance of zones vs layers.  Those weights are not derivable from `φ` or `Σ`; they must be added as independent dimensionless constants — an exogenous weight catalog — forbidden by M1 (DEF-0.2.2).  Hence `ρ=3/5`. □
+
+**[LEM 04.6.π.2] The microquantum is `δ₀` (forcing: GOLDEN LEM 6.2.2, BOOK-III-SPECTRUM; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** With `ρ=3/5`,
+
+```math
+\delta\theta = \frac{\rho}{\pi_0\,\varphi} = \frac{3}{5\,\pi_0\,\varphi}\equiv \delta_0,
+```
+
+where `δ₀=(√5−2)/2=1/(2φ³)` is the foundational quantum of distinguishability owned by BOOK_01 (cite, do not re-derive).  ⊥-proof.  If `δθ≠δ₀` then `k:=δθ/δ₀` is a new dimensionless constant, not derivable from `φ` and the already-fixed scene objects; it would require a constant catalog — forbidden by M1.  Hence `δθ=δ₀`.  This is the dropped link: the angular microquantum is *pinned* to the existing `δ₀`, so no new constant enters when the angle is introduced. □
+
+**[THE 04.6.π.B] `π_0` is algebraic, in `Q(φ)` (forcing: GOLDEN THE 6.2.B, BOOK-III-SPECTRUM).** In CORE only quantities expressible in the fixed field `Q(φ)` and previously defined scene/`Σ` constructions are admissible.  Classical transcendental `π` is a continuum-limit object and is not in `Q(φ)`; in the discrete scene the cycle-closure constant must be the algebraic invariant `π_0∈Q(φ)`.  The gap `π_0−π` is then a discreteness/curvature effect at the Planck scale in the BRIDGE limit, not a defect.  This is exactly why the runtime ban in BOOK_02 §02 (the `(π_0/π)` counter-term ban) is forced rather than stylistic.
+
+**[THE 04.6.π.C] Unit-precision cycle closure (forcing: GOLDEN THE 6.2.C, BOOK-III-SPECTRUM).** Require that over one full turn the accumulated angular error be compensated by the scene structure to exactly one unit of distinguishability — tooth-for-tooth, no remainder in the `Σ` metric:
+
+```math
+\text{angular quantum}=\frac{\text{projective factor}}{\text{cycle constant}\times\text{scale}}
+\quad\Longrightarrow\quad
+\delta_0 = \frac{3/5}{\pi_0\,\varphi}.
+```
+
+**[THE 04.6.π.4] Solve `π_0=(6/5)φ²` (forcing: GOLDEN THE 6.2.4, BOOK-III-SPECTRUM).** Substitute the owned value `δ₀=1/(2φ³)` into the closure balance THE 04.6.π.C:
+
+```math
+\frac{1}{2\varphi^3}=\frac{3}{5\,\pi_0\,\varphi}
+\quad\Longrightarrow\quad
+\pi_0=\frac{6}{5}\varphi^2.
+```
+
+Numerically `φ²≈2.6180339887 ⇒ π_0≈3.1416407865`, departing from classical `π` already at the 4th decimal (3.1415… vs 3.1416…).  This is the derivation v14 had dropped while keeping only the bare result; the result is the same constant BOOK_02 §02 and BOOK_07 §07.11 already cite.
+
+**[THE 04.6.π.D] Relativistic energy as accelerated cycle frequency (forcing: GOLDEN THE 6.2.D, BOOK-III-SPECTRUM). Status: PROOF-TARGET (cert obligation open).** Let a mass state be a stable light cycle `P` of rest frequency `ω₀:=τ(P)⁻¹`.  In CORE normalization (`C=1`) a moving state is the tilt of the light tick between external transport and internal run.  Observed energy is then the amplification of the internal cycle frequency:
+
+```math
+E=\gamma\,\omega_0,\qquad p=\gamma\,\omega_0 v,\qquad E^2-p^2=\omega_0^2.
+```
+
+Relativistic dynamics introduces no new entity: it is the same looped light re-marked at nonzero drift.  This `E²−p²=ω₀²` rest-frequency content was wholly absent from v14 and is what licenses the matter-sector mass spectrum (04.7–04.8) to read off `ω₀` rather than post a free mass.
+
+### 04.6B Fermionic statistics are forced by quaternionic holonomy
+
+The Born readout fixes *how* matter probabilities are written; this block fixes *why* the carriers of those probabilities are fermions (spin-1/2) and *why* the weak channel is chiral.  v14 carried only window-offset chirality (04.4.7); the structural forcing below was dropped.
+
+**[THE 04.6B] Discrete spinor generation (forcing: v17 Thm 04.6B / D0.Core; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** The core feedback-return operator `F_N = P_N U_N† Q_N U_N P_N` (owned by BOOK_01 / BOOK_02; cite, do not re-derive) acts structurally as left quaternion multiplication on the `Ω_8` terminal states.  Under left quaternion multiplication any spatial cycle traversing the imaginary axes `i,j,k` squares to `−1`, algebraically forcing a sign flip into the sterile archive; only a `4π` double-cycle returns the terminal register to identity (`i⁴=1`).  This discrete holonomy forces every topological matter defect to be fermionic (spin-1/2): a `2π` return is the nontrivial class, a `4π` return the identity.  Weak chiral asymmetry is then forced by the non-commutativity of the spatial operators (`ij=k`, `ji=−k`): the two exchange orders are not the same group element, so the channel cannot be parity-symmetric without an exogenous catalog of sign conventions — forbidden by M1.
+
+### 04.6.PAULI Pauli exclusion, spin sign and the decay exponent as canonical-algebra identities
+
+The fermion-forcing block above identifies the carriers as spin-1/2; the following three results are the canonical-algebra consequences that v14 had no derivation for.  They sit here next to 04.6B because they are the same fermion sector.
+
+**[DEF 04.6.PAULI.1] CAR algebra (forcing: GOLDEN DEF 24.P.2, BOOK-V-MATHEMATICS).** A mode `i` is the canonical class of a one-particle state at a fixed distinguishability level (local neighborhood + cycle/phase class), defined with no external weight choice.  Introduce creation/annihilation operators with anticommutation relations
+
+```math
+\{a_i,a_j^\dagger\}=\delta_{ij},\qquad \{a_i,a_j\}=0,\qquad \{a_i^\dagger,a_j^\dagger\}=0.
+```
+
+**[THE 04.6.PAULI.3] Pauli exclusion as an identity (forcing: GOLDEN THE 24.P.3, BOOK-V-MATHEMATICS).** From `{a_i†,a_i†}=0` it follows that `(a_i†)²=0`.  Double occupation of one mode is therefore structurally impossible and needs no separate postulate — exclusion is the CAR antisymmetry, not an added rule.
+
+**[THE 04.6.SPIN.2] Exchange sign from `π₁=Z₂` (forcing: GOLDEN DEF 24.S.1 / THE 24.S.2, BOOK-V-MATHEMATICS).** The configuration space of two indistinguishable excitations has fundamental group `π₁≅Z₂` (exchange is the nontrivial loop class).  The Fermi sector realizes the nontrivial one-dimensional representation `Z₂→{±1}`, so exchanging two identical excitations multiplies the amplitude by `−1`.  Equivalently `2π` is the nontrivial element and `4π` the identity — the same holonomy ledger as THE 04.6B, reached independently from the configuration-space topology.
+
+**[THE 04.6.DECAY.2] Leading decay exponent `Γ∝R⁵` (forcing: GOLDEN DEF 24.D.1 / THE 24.D.2, BOOK-V-MATHEMATICS). Status: PROOF-TARGET (cert obligation open).** Let the finite transition configurations be parametrized by `D_Σ=5` independent addressing coordinates (BOOK_01 role alphabet) and let the transition resource scale as `R` (proportional to mass/frequency).  The number of accessible configurations grows as `#Ω(R)≍R^{D_Σ}`, so at `D_Σ=5` the phase volume grows as `R⁵` and the characteristic transition rate at fixed protocol has leading power
+
+```math
+\Gamma \propto R^5.
+```
+
+The exponent is the layer count `D_Σ=5`, not a fitted phase-space power; any other leading exponent would require an exogenous layer-weight catalog (cf. THE 04.6.π.A), forbidden by M1.
+
+### 04.6.M1 Matter-sector inevitability register (selected entries)
+
+The matter facts of this book (fractional charge, three generations, the spin-1/2 carrier) are FORCED by the same catalog-free arguments, not fitted.  The entries below restore the GOLDEN ⊥-derivations that v14 kept only as bare facts; numerical-in-GeV/cosmological-fraction items are BRIDGE-predictors and carry that status.
+
+**[THE 04.6.M1.Δn] Orientable history ⇒ address step `Δn=2` (forcing: GOLDEN THE IV.1.1, BOOK-IV-VERIFICATION; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** The scale of layer `n` is approximated by a Lucas integer `L_n≈φⁿ`; the approximation error `ε_n=L_n−φⁿ=(−φ)⁻ⁿ` has sign oscillating as `(−1)ⁿ` (`Tr(Tⁿ)=(−1)ⁿL_n` is owned by BOOK_06 §06.1).  Joining layer `n` to `n+1` stitches metrics of opposite error-curvature sign, which needs a local orientation bit not contained in the address — an external stitching catalog, forbidden by M1.  The only step preserving the error sign and the topology is even, so addressing advances `5→7→9→11→13` and the `K(9,11,13)` scene is inevitable.
+
+**[THE 04.6.M1.dim] Stable defects ⇒ effective `3+1` (forcing: GOLDEN THE IV.1.2, BOOK-IV-VERIFICATION; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** Matter is a stable topological defect (knot/link), else a "particle" is indistinguishable from noise and needs an external identity catalog.  Codimension-2 links are stable objects only at three spatial dimensions: at `D<3` there is no room to braid identity trajectories without a bridge/jump catalog; at `D>3` generic links untie and lose topological protection without a choice of "which classes are fundamental."  Hence `D=3` is the minimal integer dimension carrying stable matter with no exclusion catalog; the `+1` axis is the canonization (time) axis.  (Rigorous knot-vs-dimension content lives in BOOK_05; here only the no-catalog logic is used.)
+
+**[THE 04.6.M1.gauge] Braid valence ⇒ `U(1)/SU(2)/SU(3)` (forcing: GOLDEN THE IV.1.3, BOOK-IV-VERIFICATION; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** Local indistinguishability of permuted/braided incident edges generates braid-group representations `B_k` for valence `k`.  In the `K(9,11,13)` gluing regime fundamental local events have effective valence `≤3` (branch/splice/pass).  In the BRIDGE/coarse limit these realize as unitary representations: additive phase ⇒ `U(1)`, double-braid ⇒ `SU(2)`, triple-braid ⇒ `SU(3)`.  A fundamental `SU(5)` would require irreducible valence-5 vertices at valence `≤3`, i.e. an external list of "what counts as fundamental" — forbidden by M1.  The claim is the *inevitability of these effective continuous languages*, not a discrete-to-`SU(N)` isomorphism.
+
+**[THE 04.6.M1.charge] Fractional charge `{−1/3,+2/3}` from `A₂` projection (forcing: GOLDEN THE IV.1.4, BOOK-IV-VERIFICATION; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** Charge `Q` is the linear functional projection on the weight lattice of the fundamental `SU(3)` representation (root system `A₂`).  A baryon is a closed 3-knot simplex carrying one unit phase winding; indistinguishable nodes split it as `1/3`, and projecting the equilateral-triangle vertices on the scene's center↔shell symmetry axis yields exactly `+2/3,−1/3,−1/3`.  Any other value (e.g. `0.5`) distorts the triangle and needs a deformation catalog — forbidden by M1.  This is the GOLDEN `A₂` weight-lattice forcing; it is *distinct from* and complementary to the cut-and-project quasicrystal window weights of 04.4.6/04.4.7, which reach the same `±2/3,−1/3` numbers by a different route.
+
+**[THE 04.6.M1.gen] Three boundary types ⇒ three generations (forcing: GOLDEN THE IV.1.9, BOOK-IV-VERIFICATION; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** The generation index is the zone label `9/11/13` of the minimal scene.  A fermion is a boundary resonance, and the 3D projection of the scene has exactly three boundary types: center/point `→ e`, torus/cycle `→ μ`, shell/sphere `→ τ`.  No fourth boundary type exists in 3D, so a fourth generation needs a fourth dimension or a hand-inserted boundary-type index — a catalog forbidden by M1.  This is the GOLDEN 3-boundary-type completeness argument; it is the structural complement to the `F₂` branch-defect generation index of BOOK_01 §01.23, which v14 had used as the sole origin.
+
+**[THE 04.6.M1.grav] Gravity weakness as area-vs-volume holonomy (forcing: GOLDEN THE IV.1.5, BOOK-IV-VERIFICATION; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** Interaction strength scales as `1/N` with the number of interaction partners.  Local gauge forces act on the lightcone surface ("now"), `N∼R²`; gravity is a holonomic/memory force acting over the whole 4D history volume, `N∼R⁴`.  Hence the CORE ratio
+
+```math
+\frac{F_{grav}}{F_{local}}\sim\frac{1}{R^2},
+```
+
+with `R` the dimensionless history scale (nodes/layers in the observer window).  Making gravity strong would require it to "not see" history — a screening catalog forbidden by M1.  (The holographic area form `S=βR²/4` of BOOK_07 §07.3 is the retained-block statement; the `R²` vs `R⁴` argument here is the dropped forcing of *why* it is area, not volume.  Order-of-magnitude numbers like `10⁴⁰` are BRIDGE-predictors and require the IV.3 translation protocol.)
+
+**[REM 04.6.M1.Λ] `Ω_Λ→1/(1+φ⁻¹)≈0.72` (forcing: GOLDEN THE IV.1.7, BOOK-IV-VERIFICATION). Status: BRIDGE-PREDICTOR (cosmological fraction; requires IV.3 translation protocol + uncertainty interval).** Matter (zones 9+11) and vacuum (shell 13) split the energy budget by information capacity (entropy); in the 4D holographic graph the shell entropy dominates, giving the structural limit `Ω_Λ→1/(1+φ⁻¹)≈0.72` (≈0.69 with the `π_0` curvature correction).  `Vol_{13},Vol_{11},Vol_9` are heat-trace state-counting measures, not `R³` volumes.  v14 had treated `Ω_Λ` only as an external comparison coordinate; this is the dropped entropic-balance derivation.
+
+**[REM 04.6.M1.anti] Antimatter scarcity from Landauer cost (forcing: GOLDEN THE IV.1.8, BOOK-IV-VERIFICATION). Status: BRIDGE-PREDICTOR (requires IV.3 protocol; statistical model with explicit T-range).** Matter is a direct write; antimatter is `NOT·write`, and the `NOT` bit-flip carries an irreversible Landauer cost `k_BT ln2`, so `Cost(NOT)>Cost(COPY)`.  Under early-universe resource scarcity the production probability is `P∼e^{−Cost}`, making antimatter algorithmically unfavorable.  A `1:1` symmetry would require `Cost(NOT)=0`, i.e. a Maxwell-demon catalog forbidden by thermodynamics and M1.  v14 carried only the stub scaffold `D0.Matter.TickS3BaryonAsymmetry`; this restores the thermodynamic-selection forcing.
+
+**[REM 04.6.M1.mH] `m_H≈√2·m_Z` cube-diagonal (forcing: GOLDEN THE IV.1.6, BOOK-IV-VERIFICATION). Status: BRIDGE-PREDICTOR (GeV value; requires translation protocol, `δ_th`, and the QED/QCD/electroweak correction list — none of which are fit parameters).** Vector bosons `W,Z` set the edges of the vacuum cell; the Higgs scalar `H` sets its diagonal (breathing mode).  At the potential minimum the cell is orthogonal (cubic isospin symmetry), and the face-diagonal-to-edge ratio of a cube is `√2`, giving `m_H≈m_Z·√2·(1−δ_loop)`.  An arbitrary `m_H` (a free `λ`) means a skewed vacuum cell, which needs a deformation tensor catalog — forbidden by M1.  Wholly absent from v14; restored here at BRIDGE status.
+
+**[THE 04.6.M1.time] Heat-trace monotonicity ⇒ time arrow (forcing: GOLDEN THE IV.1.10, BOOK-IV-VERIFICATION; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** A merge `A+B→C` is information-irreversible; reversing it requires knowing which `A,B` produced `C`, which must be stored in an external backup of the past.  The universe is autonomous (no external disk), so by M1 the past information is erased into heat/gravity and the chosen functional (heat-trace / diffusion entropy) is monotone under admissible dynamics.  Any model where this functional is non-monotone without external pumping is excluded as non-reproducible.  (`Tr(Tⁿ)=(−1)ⁿL_n` and the heat-trace channel are owned by BOOK_06; here it is the no-external-backup forcing that is restored.)
 ## 04.7 Electroweak radial depth as a concrete finite variational selector
 
 The matter sector inherits the single action section from Book 03.  Electroweak quantities are therefore read as finite radial depths and comparison outputs, not as independent primitive constants.
@@ -518,6 +929,27 @@ The bare radial expression is
 
 The external GeV value of `M_Z` is a comparison anchor, not a second D0 scale.  The Higgs-sector readout additionally requires a scalar projector and the runtime electroweak bridge.  Without that projector, a numerical Higgs or Yukawa comparison is not a core theorem.
 
+### 04.7.1 The electron is the terminal calibration register because it is canonically selected, not assumed
+
+The radial-depth readout above is dimensionless: every `λ` and every depth is a ratio against a zero of the EW score, never an eV value. That only closes if the matter book owns a *forced* base register against which those ratios are taken. v14 kept the electron as the "unique terminal calibration register" — the **fact** — but dropped the **why**: that the electron is not chosen by convenience, it is the object canonization itself selects.
+
+**The electron is the minimal stable charged mode selected by canonization M1+ in the class `charge ≠ 0` (forcing: GOLDEN BOOK-III-SPECTRUM CHK 11.E.3).** Mass in CORE is the period of Π-canonization, `m(X) = τ(X)^{-1}` with `τ(X) = min{ n>0 : Π^n(X) ∼ X }` — the impedance of the shortest self-confirming cycle, not a substance (GOLDEN BOOK-III-SPECTRUM DEF 11.M.2–3, BOOK_01-owned period operator). Run that selector over the charged class. The charged class is nonempty (charge is a window-sector weight of the φ-quasicrystal hull, 04.4.7), so it has a canonization-minimal element: the mode with the shortest stable self-confirming cycle that still carries `charge ≠ 0`. That minimal charged mode is, by definition, the electron. There is no shorter charged cycle to calibrate against — anything shorter is uncharged — so the base register is forced, not nominated. The muon and tau are then *not* alternative bases; they are longer charged cycles built over this same base (Lucas-zone resonances `L_11+L_4`, GOLDEN BOOK-III-SPECTRUM THE 11.L.1, BOOK_03-owned), which is exactly why the charged-lepton transfer table freezes the electron at ratio `1/1`, exponent `0`. Certificate owner: `05_CERTS/vp_charged_lepton_transfer_certificate.py`.
+
+**The electron mass index is the internal `α^{-1}` consistency index, not an eV input (forcing: GOLDEN BOOK-III-SPECTRUM CHK 11.E.3).** The dimensionless index of this minimal charged mode is fixed by the consistency condition for `α^{-1}`:
+
+```math
+m(e) \equiv \alpha^{-1}\quad\text{(internal index: mass as canonization frequency/period in CORE).}
+```
+
+This is canonically pinned by two independent expressions — a topological one and an algebraic one — agreeing to within the gluing anomaly
+
+```math
+\Delta_\alpha < \varepsilon^2,
+```
+
+so `α^{-1}` is over-determined, not fitted (GOLDEN BOOK-III-SPECTRUM REM 11.EM.2; the top/alg gluing lives in BOOK III CH III.2). The topological input is the three-zone scene capacity `N_paths = 9·11 + 11·13 + 13·9 = 359` (GOLDEN BOOK-III-SPECTRUM DEF 11.EM.1, the K(9,11,13) scene, BOOK_01-owned). The MeV/eV translation of `m(e)` is **not** a CORE theorem — it is a BRIDGE step (this book's runtime EW bridge), the same projector caveat that gates the Higgs/Yukawa readout above. **Status: PROOF-TARGET (cert obligation open)** for the two-expression `α^{-1}` gluing as consumed here; the electron-as-base freeze is cert-backed (`vp_charged_lepton_transfer_certificate.py`).
+
+Consequence for this section: the EW radial depths `λ_Z^{D0}`, `λ_W^{D0}` and the depth-35 selection are ratios against a base register that M1+ forces, so "an alternative EW depth requires a changed EW radial score" tightens to — an alternative EW depth would have to move the *canonically selected* base, which is fixed by the same canonization that fixes the existence of charge. There is no free knob between the depth window and the electron register.
 ## 04.8 Charged leptons as a concrete finite variational selector family
 
 The charged-lepton branch is controlled by a finite operator family rather than three free Yukawa constants. The active integration makes the finite terminal support explicit in Lean:
@@ -530,6 +962,90 @@ D0.Matter.charged_lepton_terminal_no_free_alternative
 ```
 
 The electron is now formally the unique terminal calibration register in the charged branch support.  Changing the terminal unit to `muon` or `tau` would require changing the terminal score functional; it cannot be done by a table rewrite.
+
+### Why mass is not a free constant: the M1 mass contract
+
+Before any coefficient row is read, M1 fixes what a "mass" is allowed to be (forcing: GOLDEN BOOK-III-SPECTRUM §III.3 mass-spectrum contract).  The contract has three load-bearing clauses, and the operator-origin table below is downstream of all three:
+
+1. **No hidden parameters (M1).** No physical constant is inserted by hand. Every mass number is read as an eigenvalue/integer of the `K(9,11,13)` scene (BOOK_01-owned), never as a tuned input.
+2. **Constructivity.** Mass and motion are *not* properties of a substance. They are parameters of the algorithm that compresses the object's history into a reproducible identity. A lepton "mass" is a property of a canonization process, not of stuff.
+3. **Inevitability target.** The contract is only discharged if the gross ratios — `m_μ/m_e≈206`, `m_p/m_e≈1836` — come out *forced*, not fitted.
+
+This is the forcing the v14 row had dropped: the operator-origin decimals encode the *result* of the contract, but the contract itself (mass = compression-algorithm parameter, under M1) is the reason the row is not a free knob.
+
+### Mass as a canonization period (the load-bearing definitions)
+
+The contract is made operational by a short definition chain that the v14 row omitted entirely.  These are the foundational objects the whole lepton mass derivation rests on; they are restored here as PROOF-TARGETs because they carry verification obligations the operator-origin table does not.
+
+**[DEF 04.8.M.1] History-compression operator `Π` (forcing: GOLDEN DEF 11.M.1, BOOK-III-SPECTRUM).** Let `Π` be the operator that canonizes (compresses) an object's history to its minimal reproducible form.  `Π` is forced, not chosen: an object that survives M1 is exactly one that re-derives its own identity with no external catalog, so a canonization map must exist.
+
+**[DEF 04.8.M.2] Internal period `τ` — the existence clock (forcing: GOLDEN DEF 11.M.2, BOOK-III-SPECTRUM).** The self-confirmation cycle length is
+
+```math
+\tau(X) := \min\{\,n\in\mathbb N_{>0} : \Pi^n(X)\sim X\,\}.
+```
+
+`τ(X)` is the number of canonization ticks before the object returns to itself — its "existence clock". A state with no such finite `n` is not reproducible without an external rule and is killed by M1.
+
+**[DEF 04.8.M.3] Mass index `m(X)=τ(X)⁻¹` (forcing: GOLDEN DEF 11.M.3, BOOK-III-SPECTRUM).** Mass is the inverse canonization period:
+
+```math
+m(X) := \tau(X)^{-1}.
+```
+
+A short cycle (frequently re-confirmed identity) is heavy; a long cycle is light. This is the bridge from pure structure to a mass *number*, and it is what makes `m(e)≡α⁻¹` an internal index rather than an external eV input (the MeV/eV translation is BRIDGE, BOOK_04 runtime, not CORE).  The rest-frequency reading `ω₀:=τ(P)⁻¹` already used in 04.6 (THE 04.6.π.D) is this same identity.
+
+**[LEM 04.8.M.5] Mass = cycle density (forcing: GOLDEN LEM 11.M.5, BOOK-III-SPECTRUM).** `m(X)` is structurally identical to the density of stable closures `ϱ(X)` of the scene. Mass counts stable closures; nothing is added by hand.
+
+**[THE 04.8.M.rest] Rest mass = internal winding (forcing: GOLDEN THE 6.5.4, BOOK-III-SPECTRUM). Status: PROOF-TARGET (cert obligation open).** At rest (`N_ext=0`) there is no external address increment, so the entire activity budget goes into the internal ID-cycle. Rest mass is therefore pure internal complexity — the winding count of the identity holonomy:
+
+```math
+m_{rest} = m_0\cdot W,
+```
+
+with `W` the memory winding number. There is no "substance" term: a leptonic rest mass is the number of times the canonization cycle wraps, and nothing else.  This is the structural definition of rest mass that the `τ`, `m=1/τ` chain above presumes.
+
+### Why three copies: integer Lucas quantization
+
+**[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized (forcing: GOLDEN §III.3 structural derivation + THE 11.L.1, BOOK-III-SPECTRUM). Status: PROOF-TARGET (cert obligation open).** The reason the electron has copies `μ, τ` (and the baryon sector has heavy modes) is that in a discrete `φ`-graph the layer capacities cannot take arbitrary real values — they quantize *integrally* as Lucas numbers `L_n`. A non-integer layer capacity would need an external ruler to define the fractional part, ⊥M1. So the only admissible excitation capacities are `{L_n}`.  The signed Lucas *trace identity* `Tr(T^n)=(-1)^n L_n` and its uniqueness-of-projection forcing are owned by 04.v15 (`D0.Matter.LucasTraceCanonicalIntegerProjection`; certified by EXISTING certs `vp_master_evolution_theorem.py`, `vp_toral_automorphism_galois_balance.py`); the generation-count cutoff at `n=15` (the `9n` budget break) is owned by 04.4. What this section adds is the *mass-ratio* consequence of that same integer ladder.
+
+### The muon ratio is forced additive, not fitted
+
+**[THE 04.8.L.1] `m_μ/m_e = L_11 + L_4 + 2φ⁻²` (forcing: GOLDEN THE 11.L.1, BOOK-III-SPECTRUM). Status: PROOF-TARGET (cert obligation open).** The muon is an excitation localized in the memory zone (the torus, address 11). Its capacity is the Lucas number of layer 11, exactly and without rounding:
+
+```math
+L_{11} = \varphi^{11}+\psi^{11} = 199.
+```
+
+Any stable excitation must additionally be anchored to the reference addressing level (the base, address 4), whose capacity is
+
+```math
+L_4 = 7.
+```
+
+The minimal `Q(φ)` correction that introduces *no new parameter* is twice the internal step weight `b_0=φ⁻²` (the two internal rewrites enter/exit; no spin constant is imported). Hence the canonical integer predictor and its forced correction:
+
+```math
+\frac{m_\mu}{m_e} = L_{11} + L_4 + 2\,\varphi^{-2} = 206 + 2\varphi^{-2}.
+```
+
+The numerical readout `m_μ/m_e=206.77` kept in the BOOK_00 readout table is the *value* of this expression; this section restores the *why* — both why it is `199+7` and why the combination is additive.
+
+**[THE 04.8.L.1.B] Impedance additivity forces additive mass-indices, not quadratic (forcing: GOLDEN THE 11.L.1.B, BOOK-III-SPECTRUM; ⊥-proof). Status: PROOF-TARGET (cert obligation open).** In CORE, "mass" is the impedance of a process: the minimal length (in `δ₀`-ticks) of the closed resonant cycle that must be realized for the state to be reproducible without external rules. Write `Z(γ):=Len(γ)` for the length of a closed path `γ` in the scene. If a process is a concatenation of two sub-cycles, `γ=γ_1∘γ_2`, then by the definition of length in a discrete graph
+
+```math
+Z(\gamma) = Z(\gamma_1) + Z(\gamma_2).
+```
+
+Therefore any composite excitation that must traverse two independent topological loops (here: "torus zone 11" `∘` "reference index 4") has impedance equal to the *sum* of the component impedances. This is exactly why
+
+```math
+m(P)/m(e) = Z(P)/Z(e) = (L_{11}+L_4+\dots)
+```
+
+is structurally inevitable: a *quadratic* combination would require an external metric — a rule of "channel orthogonality" — i.e. an external catalog, forbidden by M1. ⊥. The additivity is not an aesthetic choice; quadratic addition is killed by catalog-freeness.
+
+### The operator-origin coefficient row (downstream of the above)
 
 The generation action is still the origin of the internal ratios:
 
@@ -563,7 +1079,7 @@ r_e:r_\mu:r_\tau=1:3.8814328681047283:10.3183483253993735,
 p_e=0,\qquad p_\mu={1\over4},\qquad p_\tau={1\over3},
 ```
 
-and the bridge-factor row `B_g` as a finite row function.  These entries are read from the selected coefficient origin; they are not free Yukawa constants and they are not inverted from external lepton masses.
+and the bridge-factor row `B_g` as a finite row function.  These entries are read from the selected coefficient origin; they are not free Yukawa constants and they are not inverted from external lepton masses.  By DEF 04.8.M.3, each `R_g` is a canonization-period index, not an eV input; the operator-origin decimals are the concrete realization of the Lucas-impedance ladder above (THE 04.8.L.1, THE 04.8.L.1.B). The signed `L_n` layer diagnostic is cross-checked by the EXISTING cert `vp_pdg_strict_passport.py`.
 
 The generation action is still written as
 
@@ -578,8 +1094,7 @@ Stationarity gives
 R_g^{D0}=r_gA_{EW}^{p_g}B_g.
 ```
 
-The theorem-level replacement is the no-retuning statement: at fixed `ChargedLeptonCoefficientOrigin`, changing any of `r_g`, `p_g` or `B_g` is an origin deformation, not a notation change and not a status update. A deeper spectral derivation of the decimal ratio values from a raw graph operator can still refine the origin, but the active Book 04 lepton row no longer has an independent coefficient knob.
-
+The theorem-level replacement is the no-retuning statement: at fixed `ChargedLeptonCoefficientOrigin`, changing any of `r_g`, `p_g` or `B_g` is an origin deformation, not a notation change and not a status update. A deeper spectral derivation of the decimal ratio values from a raw graph operator can still refine the origin, but the active Book 04 lepton row no longer has an independent coefficient knob — and, by the mass contract above, it never could: a free knob would be a hidden parameter (⊥M1).
 ## 04.9 Neutrino leakage sector
 
 The neutrino sector is a neutral leakage representation.  Its internal support pattern is
@@ -601,9 +1116,91 @@ This is not a three-neutrino mass fit.  If one external oscillation scale is sup
 Neutrino is interpreted as neutral bulk phason wave / neutral leakage mode in
 the theorem owner `D0.Matter.NeutrinoPhasonWaves`.  The active EM readout is
 killed by `neutral_phason_wave_has_no_em_coupling`, while any IceCube
-decoherence comparison belongs to the downstream passport layer.
+decoherence comparison belongs to the downstream passport layer
+(cert `vp_neutrino_phason_decoherence_passport.py`, manifest-only scaffold;
+it does not verify the beat law below).
 
+### 04.9.1 Why oscillation exists at all: the seam beat (forcing: GOLDEN BOOK-VI-EXTENSIONS THE 61.7)
+
+The support pattern above states a splitting *ratio* but not *why the support oscillates*.  v14 had only the generic two-mode beat structure (BOOK_09, `A_1 e^{iω_1 t}+A_2 e^{iω_2 t}`) and never named the small parameter that sets the beat — it left oscillation as an external-scale assertion.  The forcing closes that gap.
+
+**[THE 04.9.beat] Oscillation IS the beat of the two seam-evolution modes (forcing: GOLDEN BOOK-VI-EXTENSIONS THE 61.7; ⊥-proof). Status: PROOF-TARGET (cert obligation open).**
+The whitening constant `α^-1` has two forced, independent writings — the topological reading `α_top` (off the discrete scene/channel count) and the algebraic reading `α_alg` (off the continuous packing/`π_0` phase).  These are not two numbers but two *evolution modes on the same seam*: a leakage mode that does not carry an active EM readout cannot pick one writing over the other, so it propagates as both at once.  A state propagated under two co-present mode frequencies does not relax to one — it beats.  Neutrino oscillation is that beat, not an added oscillator.
+
+**[LEM 04.9.beat.Δα] The beat small parameter is the gluing anomaly `Δα` (forcing: GOLDEN BOOK-VI-EXTENSIONS THE 61.7 with THE 61.10; ⊥-proof). Status: PROOF-TARGET (cert obligation open).**
+The detuning between the two seam modes is exactly the irreducible residue between their two writings,
+
+```math
+\Delta_\alpha:=\bigl|\alpha_{top}^{-1}-\alpha_{alg}^{-1}\bigr|,
+```
+
+owned and derived in BOOK_02 §02.13 (forcing: GOLDEN §16.3, COR 16.3.5) — cited here, not re-derived.  `Δα≠0` is forced: by THE 61.10 (Gluing-Anomaly Engine) full relaxation of a closed system to a single mode would require an external catalog, which M1 forbids; the smallest catalog-free arena `Q(φ)` that holds both writings does not flatten the seam.  A nonzero seam that cannot relax is precisely a residual two-mode dynamic — the seed of the leakage sector's evolution.
+
+**[COR 04.9.beat.f] Beat / modulation frequency `∝ Δα` (forcing: GOLDEN BOOK-VI-EXTENSIONS BRIDGE-LEM 61.10.B; BRIDGE). Status: PROOF-TARGET (cert obligation open).**
+For a carrier `f_c` driven at the two modes `f_c` and `f_c(1+Δ)`, the beat law gives `f_beat=Δ·f_c`.  Setting the detuning to the forced residue `Δ=Δα`,
+
+```math
+f_{mod}=\Delta_\alpha\,f_c,
+```
+
+so the neutrino modulation/oscillation frequency is `∝ Δα` — a CORE consequence with no fitted oscillator.  This is the *dynamics* (the rate of the beat); the *amplitude/mass scale* of the same seam is the separate, mass-side reading `m_ν ∝ Δα²` owned by 04.4.9 (forcing: GOLDEN BOOK-04 Thm 04.9B).  Both are the one seam `Δα` read once as a frequency (this section) and once as a squared mass (04.4.9); they are not two assumptions.
+
+Sign note: only `|Δα|` enters the beat rate.  The linear sign of `Δα` is not observable, so any probabilistic/ordering weight built on it (e.g. a sterile-leakage weight) is a typed BRIDGE/HYP layer, consistent with BOOK_02 §02.13 COR 16.3.5.
+
+### 04.9.2 What this fixes vs. what stays external
+
+The support ratio `Δm²_{21}/Δm²_{31}=δ_0/4` and the bridge "one external oscillation scale fixes the rest" are unchanged.  What 04.9.1 adds is the *mechanism* under that bridge: the leakage mode oscillates because the seam carries two co-present whitening modes whose forced detuning `Δα` cannot relax to zero, and the beat frequency is `∝ Δα`.  Until the beat cert is written, [THE 04.9.beat] / [LEM 04.9.beat.Δα] / [COR 04.9.beat.f] carry an open cert obligation; the IceCube comparison remains downstream in `vp_neutrino_phason_decoherence_passport.py`.
 ## 04.10 CKM as finite basis origin, not a free matrix
+
+### Arity first: the CKM parameter count is forced, not assumed
+
+Before the matrix is anything, its *shape* is fixed by the scene K(9,11,13) (scene owned by BOOK_01). The forcing runs through the interface graph of the scene, not through any fit.
+
+Generations are not a free triplet — they ARE the inter-zone interfaces of the three-shell scene:
+
+```text
+I_12 = (9,11),  I_23 = (11,13),  I_13 = (9,13).
+```
+
+Take the interface graph: vertices = interfaces, an edge joins two interfaces that share a zone. That graph is K_3 (each interface shares one of {9,11,13} with each other). Two structural numbers fall out with no parameter:
+
+```text
+#interfaces = 3                       -> exactly 3 mixing angles
+cyclomatic rank K_3 = E - V + 1
+                    = 3 - 3 + 1 = 1   -> exactly 1 irreducible holonomic (CP) phase
+```
+
+Status: THE (structural). This recovers the observed CKM arity (3 Cabibbo-Kobayashi-Maskawa angles + one delta_CP) and moves the *count* of mixing parameters from "free" to forced (forcing: GOLDEN THE 1).
+
+A fourth generation is then not merely "not observed" — it is forbidden by contradiction. Under the forcing-by-contradiction schema (DEF 0.2.2):
+
+```text
+4th generation  => 4th interface
+                => 4th zone
+                => 4th structural necessity beyond {defect, memory, shell}
+                => operationally distinguishable => new role
+                => external catalog => bottom M1.
+```
+
+Status: NO-GO (by contradiction, DEF 0.2.2). Four generations are forbidden: the fourth interface would demand a structural role outside the closed alphabet {defect, memory, shell} (alphabet owned by BOOK_01), which is only nameable from an external catalog, which contradicts M1 (forcing: GOLDEN THE 1). The arity (3 angles, 1 phase, 3 generations) is therefore a scene fact, not a phenomenological choice.
+
+This is an *arity* closure only: it fixes how many angles and phases exist and forbids a fourth generation. It does NOT pin the numerical angles, the CP phase value, or RG-dressed passport entries — those remain downstream of the external convention/RG/readout layer (see the closing scope note).
+
+### CKM <-> PMNS hierarchy inversion is rank-nullity, zero parameters
+
+The same scene that fixes the arity also explains, with zero free parameters, one of the standing unexplained facts of the Standard Model: why quarks mix *weakly* and leptons mix *strongly*. The split is rank-nullity of the scene adjacency operator A (rank(A)=3, nullity=30; the bare rank/nullity bookkeeping is owned by BOOK_01 and BOOK_03 — here it is the load-bearing flavor statement, not gauge bookkeeping):
+
+```text
+quark currents  -> active sector: 3 non-degenerate modes (21.84, -9.76, -12.08)
+                -> hierarchy SUPPRESSES mixing  => CKM small.
+
+neutrinos       -> sterile archive: kernel 30-fold degenerate
+                -> degeneracy PERMITS any rotation => PMNS large.
+```
+
+Status: THE (zero-parameter). Strong lepton mixing vs. weak quark mixing is a consequence of the rank-3 / nullity-30 split of the scene, with no fitted parameter: a non-degenerate spectrum forces a hierarchical (Fadeev-N / FN-style) basis whose overlaps are small, while a 30-fold degenerate kernel is rotation-invariant, so its diagonalizing basis is unconstrained and the overlap is generically large (forcing: GOLDEN THE 12). The CKM-side reading: CKM is small *because* the up/down bases below sit in the non-degenerate active sector — smallness is inherited from the spectrum, not imposed.
+
+### The two-step finite object
 
 CKM is not introduced as a phenomenological matrix.  It is a two-step finite object:
 
@@ -638,7 +1235,7 @@ and the address orientation is
 U_{addr}=\operatorname{polar}(O_{cyc}G_R^+D_{PNO}).
 ```
 
-The owner `D0.Matter.CKMBasisOrigin` moves the proof one level upstream. The up and down bases are not silent inputs: each is a strict finite variational selector output. The theorem `ckm_origin_candidate_matrix_unique` says that any admissible origin candidate using the same finite basis finite variational selectors returns the same matrix. The theorem `ckm_no_free_matrix_at_fixed_basis_origin` forbids a second matrix at fixed basis origin.
+The owner `D0.Matter.CKMBasisOrigin` moves the proof one level upstream. The up and down bases are not silent inputs: each is a strict finite variational selector output. The theorem `ckm_origin_candidate_matrix_unique` says that any admissible origin candidate using the same finite-basis variational selectors returns the same matrix. The theorem `ckm_no_free_matrix_at_fixed_basis_origin` forbids a second matrix at fixed basis origin.
 
 The generation-overlap layer now has a smaller D0-origin owner.  The active source is no longer an unexplained path `0-1-2`: `D0.Geometry.TorusCore13GeometryOrigin` supplies the three torus shell boundaries and proves that radial shell hopping does not commute with shell phase/radius drift.  Lean checks
 
@@ -653,7 +1250,7 @@ O_ij = |(U_up^H U_down)_ij|^2
 IsPermutationWitness O := exists sigma : Equiv.Perm GenCarrier, ...
 ```
 
-Thus the algebraic source of non-permutation overlap is torus shell noncommutativity, not a fixture matrix.  The certificate `vp_generation_finite variational selector_origin.py` checks the resulting shell-induced unistochastic response, rejects all full permutation witnesses, finds a multi-support row and verifies `F_fl^T F_fl` positivity.  This is an algebraic origin closure, not a derivation of physical CKM entries, angles, CP phase or RG-dressed passport values.
+Thus the algebraic source of non-permutation overlap is torus shell noncommutativity, not a fixture matrix.  The certificate `vp_generation_selector_origin.py` checks the resulting shell-induced unistochastic response, rejects all full permutation witnesses, finds a multi-support row and verifies `F_fl^T F_fl` positivity.  This is an algebraic origin closure, not a derivation of physical CKM entries, angles, CP phase or RG-dressed passport values.
 
 Therefore a different CKM matrix means one of the following has changed:
 
