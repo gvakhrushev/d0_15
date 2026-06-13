@@ -6,7 +6,7 @@
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
 
-## 08.v15 Active cosmology/empirical transfer law
+## 08.0 Active cosmology/empirical transfer law
 
 Book 08 treats `S_DE` as a two-mode feedback-pressure transfer. Internal transfer closure and survey comparison are separate objects.
 
@@ -24,21 +24,17 @@ eta_EP = sqrt(10)/40
 
 This closes the internal transfer mechanism. Survey comparison remains an empirical passport.
 
-Cosmological acceleration/entropy flow uses archive entropy layer and `D0.Gravity.EntropicArchiveInterface`; it does not import continuum GR as primitive.
+Cosmological acceleration/entropy flow uses the archive entropy layer through its entropic archive interface; it does not import continuum GR as primitive.
 
-High-energy neutrino decoherence is a falsification hook:
-
-```text
-vp_neutrino_phason_decoherence_passport.py
-```
+High-energy neutrino decoherence is a falsification hook carried by the neutrino phason-decoherence passport.
 
 ## 08.7a Dark matter as archive phason glass
 
-The phason coordinate reuse does not identify archive dark strain with baryon S3 transfer; owner `D0.Matter.PhasonStrainGenerations`. dark sector = archive Galois branch; coarse-grained phase-stable readout cancels alternating sign; expansion is determinant balance, not fitted missing component.
+The phason coordinate reuse does not identify archive dark strain with baryon S3 transfer; that identification is barred by the baryon phason-strain owner. The dark sector is the archive Galois branch; coarse-grained phase-stable readout cancels the alternating sign; expansion is determinant balance, not a fitted missing component.
 
-High-energy neutrino decoherence, CMB phason-flip spectrum, and archive phason halo/lensing remain passport hooks (see `08_PASSPORTS/_RESULTS/` and the corresponding certs).
+High-energy neutrino decoherence, CMB phason-flip spectrum, and archive phason halo/lensing remain passport hooks (see the passport results and the corresponding certificates).
 
-By the Phase-Unfolding Theorem (D0.Geometry.PhaseUnfoldingQuasicrystal), smoothness is the coarse-grained shadow of a finite information quasicrystal (terminal/electroweak return quotients q_T=44, q_EW=710). Core-13 particle-shell diagnostics and Nuclear shell-contact SRC are passport diagnostics.
+By the Phase-Unfolding Theorem, smoothness is the coarse-grained shadow of a finite information quasicrystal (terminal/electroweak return quotients q_T=44, q_EW=710). Core-13 particle-shell diagnostics and Nuclear shell-contact SRC are passport diagnostics.
 
 ## 08.1 Standard reading of cosmological transfer language
 
@@ -103,7 +99,7 @@ SurveyLikelihoodPassport
   = frozen internal object + empirical parameters + external survey data + likelihood value
 ```
 
-The Lean owner is `D0.Cosmology.SurveyReproducibilitySplit`.  Its central
+The Lean owner is the survey-reproducibility-split module.  Its central
 statements are:
 
 ```text
@@ -188,9 +184,9 @@ This operator is fixed before comparison with survey data. Its function is to co
 
 Status: CORE-FORCING [^b08-2].
 
-The downstream FACT above states the operator and its trace. What v14 had only as "historical support" (the weak pressure bridge, demoted under §08.42's log-det theorem) is the *why the sign is forced* — the M1 root of the non-negative information pressure. Restored here:
+The downstream FACT above states the operator and its trace. The *why the sign is forced* — the M1 root of the non-negative information pressure — is stated here, alongside the weak pressure bridge that sits under §08.42's log-det theorem:
 
-Forcing chain (the part v14 weakened to a bridge). M1 forbids the deletion of information: distinguishability cannot be retracted without an external catalog, so no operation of the scene can shrink what has already been distinguished. The archive `M_arch` is the traced-out complement produced by D0 forgetting (conditional expectation / partial trace / Wilsonian coarse-graining — that Definition and the monotone arrow `H'(u) ≤ 0` are OWNED by BOOK_06 §06.1, cited not re-derived). Three forced links:
+Forcing chain. M1 forbids the deletion of information: distinguishability cannot be retracted without an external catalog, so no operation of the scene can shrink what has already been distinguished. The archive `M_arch` is the traced-out complement produced by D0 forgetting (conditional expectation / partial trace / Wilsonian coarse-graining — that Definition and the monotone arrow `H'(u) ≤ 0` are OWNED by BOOK_06 §06.1, cited not re-derived). Three forced links:
 
 1. **M1 ⇒ no deletion.** A deletion would erase an already-distinguished mode, i.e. retract distinguishability — forbidden by M1 (forcing-by-contradiction, DEF-0.2.2).
 2. **no deletion ⇒ `M_arch` monotone.** Every refinement step appends to the traced-out complement and removes nothing; `M_arch` is non-decreasing along phase time. (This is the archive-side reading of BOOK_06's heat-trace monotonicity `H'(u) ≤ 0`, `I(u)` non-decreasing — same arrow, traced-out side.)
@@ -204,8 +200,8 @@ Falsification criterion. CHK 61.5 is the GOLDEN obligation: a finite check that 
 
 The non-negativity already carries finite certs in their *concrete* forms, owned downstream and cited here (not duplicated):
 
-- Strong form (primary, §08.42): the global trace/log-det loop contribution `∂_V[-log det(I - z F_N(V))]` is positive on the resolvent domain — an internal dimensionless pressure-response theorem (cert: vp_strong_logdet_pressure_coupling.py). `F_N` is BOOK_01's feedback operator.
-- Weak form (relative): `R_n = B_n/A_n` accelerates with positive discrete second difference `Δ²R_n > 0`, giving `ΔP_rel > 0` for fixed internal `c_R > 0` (cert: vp_archive_pressure_coupling_from_relative_acceleration.py).
+- Strong form (primary, §08.42): the global trace/log-det loop contribution `∂_V[-log det(I - z F_N(V))]` is positive on the resolvent domain — an internal dimensionless pressure-response theorem, carried by the finite log-det pressure-coupling certificate. `F_N` is BOOK_01's feedback operator.
+- Weak form (relative): `R_n = B_n/A_n` accelerates with positive discrete second difference `Δ²R_n > 0`, giving `ΔP_rel > 0` for fixed internal `c_R > 0`, carried by the relative-acceleration pressure-coupling certificate.
 
 These discharge the pressure-response *sign* in the relative-acceleration and log-det channels. What stays open as PROOF-TARGET is the upstream identity: that the *operator-level* average `⟨Λ⟩ ≥ 0` is the same non-negativity forced by M1 (link 3 above), i.e. the bridge from the abstract monotone-`M_arch` law to these two computable witnesses. No survey data and no `H_0` claim enters at this layer; comparison with surveys remains passport-layer.
 ## 08.7 Dark sector as archive complement
@@ -240,7 +236,7 @@ CORE (cited, not re-derived — owned by BOOK_01 §01.8 / §01.20, replayed in B
 \gamma=\frac{\operatorname{nullity}(A)}{\operatorname{rank}(A)}=\frac{30}{3}=10.
 ```
 
-The rank-3 image is the transport (between-part) channel; the 30-dimensional kernel is the archive/dark memory. This integer is *already in v14*, but only as the echo-depth `γ` that feeds the action coefficient `38 = 2(2γ−1)` (BOOK_03 §03.20). Its cosmological reading was dropped.
+The rank-3 image is the transport (between-part) channel; the 30-dimensional kernel is the archive/dark memory. This same integer is the echo-depth `γ` that feeds the action coefficient `38 = 2(2γ−1)` (BOOK_03 §03.20); here it carries its cosmological reading.
 
 BRIDGE-lift [^b08-5]. The lift is conditional and typed: *if* the "dark" sector is read by a functional that sees **all** graph modes (a heat-trace observable, which weights kernel + image alike) while the "visible" sector is read only through the **transport** modes (the rank), then the two abundances inherit the rank/nullity split:
 
@@ -267,7 +263,7 @@ Equivalently: at most `1/11` of the scene's modes are transport (visible), the c
 
 [^b08-4] — ceiling inherits the same Π transfer obligation as the DarkRatio lift; no separate `vp_*` cert is registered here.
 
-### 08.7.1 Proof cell: `D0-COSMO-003` boundary dark survey-driver kernel
+### 08.7.1 Boundary dark survey-driver kernel
 
 The boundary dark row is not a particle claim.  Its typed kernel is an inverse-return boundary family
 
@@ -289,11 +285,11 @@ A(\varphi)=0.9320107332894405.
 
 These are boundary-return spectral-shape readouts.  They become survey hypotheses only through a declared survey transfer and external-data comparison protocol.  They may not be reinterpreted as a dark-particle mass, abundance or cross-section without a separate particle operator.
 
-## 08.7a Dark matter as phason-strain disorder
+## 08.7b Dark matter as phason-strain disorder
 
 Dark matter phenomenology is modeled as localized phason-strain disorder in the internal/Galois branch. It has zero terminal EM coupling because it lives in the unresolved branch. It gravitates because heat/metric response sees total strain energy.
 
-The formal Lean owners are `D0.Topology.TilingHull` (`d0_hull_supports_gap_labeling`) and `D0.Matter.KTheoryGapLabeling` (`archive_pressure_spectrum_admits_k0_labels`), and the verification certificate is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py` (`PASS_D0_GAP_LABELING_TILING_HULL`).
+The Lean owners are the tiling-hull and K-theory gap-labeling modules, and the result is carried by the tiling-hull gap-labeling certificate.
 
 Boundary against dark atoms: phason-strain disorder is not a second particle periodic table. A dark-atom claim would require a separate finite bound-state operator, terminal coupling rule and external comparison protocol. Strain by itself supplies gravitational/heat response, not hidden electromagnetic chemistry.
 
@@ -388,7 +384,7 @@ The shape parameters are not free cosmological fit knobs. They must be obtained 
 
 External survey files are allowed at the comparison protocol stage, but not inside the operator definition.
 
-### 08.12.1 Proof cell: `D0-COSMO-005` BAO/S_DE finite-window transfer
+### 08.12.1 BAO/S_DE finite-window transfer
 
 The finite-window transfer is fixed by the spectral shape before external comparison.  The logarithmic kernel is
 
@@ -396,7 +392,7 @@ The finite-window transfer is fixed by the spectral shape before external compar
 G_{log}(z;z_0,\sigma)=\exp\left[-{1\over2}\left({\log(1+z)-\log(1+z_0)\over\sigma}\right)^2\right].
 ```
 
-The frozen S_DE roots and transfer are evaluated against pinned DESI DR2 BAO measurements. No refit of roots, windows, H0, Ωm or rd is performed (see `08_PASSPORTS/_RESULTS/` and the corresponding cert for exact failure diagnostics: LOW_Z, MID_Z, AMPLITUDE_TOO_LOW).
+The frozen S_DE roots and transfer are evaluated against pinned DESI DR2 BAO measurements. No refit of roots, windows, H0, Ωm or rd is performed (see the passport results and the corresponding certificate for exact failure diagnostics: LOW_Z, MID_Z, AMPLITUDE_TOO_LOW).
 
 The internal cosmological response is grounded in finite heat-trace objects. Cosmology = feedback pressure transfer; S_DE = two-mode feedback pressure reduction. External BAO/S_DE comparisons remain survey-transfer protocols and do not mutate the finite Hodge core.
 
@@ -508,7 +504,7 @@ This cell is the analytic source of the pair used in the BAO/S_DE comparison pro
 
 The polynomial $160\lambda^2 - 480\lambda + 359$ (or 160λ² − 480λ + 359) is the finite transfer polynomial of archive phason flips. Its roots are relaxation modes. The corresponding spectral gaps must carry D0 hull/K0 labels.
 
-The formal Lean owner is `D0.Cosmology.PhasonFlipEntropy` (`sde_relaxation_modes_have_gap_labels`, `archive_pressure_spectrum_is_gap_labeled`), and the verification certificate is `05_CERTS/vp_phason_flip_entropy_sde.py` (`PASS_PHASON_FLIP_ENTROPY_SDE_GAP_LABELS`).
+The Lean owner is the phason-flip-entropy module, and the result is carried by the phason-flip-entropy S_DE certificate.
 
 The S_DE chain is:
 
@@ -537,13 +533,13 @@ unless a claim explicitly declares its operator, window, external data and falsi
 
 Primordial black-hole formation (if modeled inside D0) must pass through a
 critical echo-lattice / capacity-threshold operator rather than a purely smooth
-density-threshold scalar. See Book 07 §07.49 (D0-GRAV-DSS-00x) for the horizon
+density-threshold scalar. See Book 07 §07.49 for the horizon
 birth dynamics bridge and §07.50 for the finite A/4 capacity witness.
 
 PBH must combine:
-- DSS echo-lattice critical birth (D0-GRAV-DSS-001)
-- Finite A2 Einstein-response class (D0-GRAV-EH-00x)
-- Finite A/4 horizon capacity witness (D0-BH-CAP-001).
+- DSS echo-lattice critical birth
+- Finite A2 Einstein-response class
+- Finite A/4 horizon capacity witness.
 
 The QCD archive/confinement scale is a matter/runtime object inherited from Books 04 and 06. It may provide an analogy and a guardrail for archive thinking, but it is not a hidden cosmological dark scale.
 
@@ -697,7 +693,7 @@ field_equation_source: seam_action_variation
 stress_source: canonical_variation_dual_representative
 weak_field_source: archive_poisson_equation
 ```
-The certificate `vp_archive_weak_field_poisson.py` validates the cycle Laplacian, neutral point-pair source, and zero-mean gauge fixing. The spectral-action certificates `vp_spectral_action_eh_coefficient.py` and `vp_spectral_action_expansion_stability.py` are updated to assert this complete source chain. Their negative controls verify that removing the stress representative, using a non-neutral source, omitting zero-mode gauge fixing, or using a wrong Laplacian fails the certificate discipline.
+The archive weak-field Poisson certificate validates the cycle Laplacian, neutral point-pair source, and zero-mean gauge fixing. The spectral-action certificates for the EH coefficient and for expansion stability assert this complete source chain. Their negative controls verify that removing the stress representative, using a non-neutral source, omitting zero-mode gauge fixing, or using a wrong Laplacian fails the certificate discipline.
 
 ## 08.37 Final bridge index and spectral-cosmology status
 
@@ -757,17 +753,15 @@ Thus redshift variables `z`, `z_c` and `z_r` are transfer coordinates, and `H0` 
 
 ## 08.39 Typed SI calibration closure
 
-The SI bridge is now a typed object boundary.  `D0.Bridge.SICalibrationClosure`
+The SI bridge is a typed object boundary.  The SI-calibration-closure module
 defines `DimensionlessCoreTraces` for core `a0`, `a2` and `Delta^2 V` shapes,
 and `ExternalSICalibration` for macroscopic SI declarations such as `H0`, `GN`
 and `Lambda`.
 
-Lean theorem `core_traces_are_dimensionless` keeps the D0 output in
-`DimensionlessCore` status.  Theorems
-`calibration_changes_only_action_scaling`,
-`calibration_changes_units_not_core_shape`,
-`no_si_observable_without_external_calibration`, and
-`h0_gn_lambda_are_not_core_observables` enforce the guardrail: D0 core computes
+The Lean owner keeps the D0 output in `DimensionlessCore` status and enforces
+the guardrail: calibration changes only action scaling, it changes units but
+not the core shape, no SI observable exists without external calibration, and
+`H0`, `GN` and `Lambda` are not core observables.  D0 core computes
 dimensionless shapes and ratios only.  SI observables require an explicit
 `ExternalSICalibration` object.
 
@@ -812,17 +806,17 @@ SurveyLikelihoodPassport
 → negative controls / falsification.
 ```
 
-`D0.Cosmology.internal_archive_shape_independent_of_empirical_parameters` proves
-that empirical parameters do not mutate the internal shape.  `survey_comparison_requires_nonempty_manifest`
-proves that an unpackaged external survey comparison cannot be advertised as
-reproducible.  `survey_likelihood_cannot_promote_to_core_cosmology` blocks the
-strongest overclaim: a likelihood agreement is not a new D0 core theorem.
+The Lean owner proves that empirical parameters do not mutate the internal
+archive shape; that an unpackaged external survey comparison cannot be
+advertised as reproducible without a nonempty manifest; and that a survey
+likelihood cannot promote to core cosmology — blocking the strongest overclaim,
+that a likelihood agreement is a new D0 core theorem.
 
 Thus Book 08 is no longer a list of cosmological external comparison protocols.  It is a split
 between frozen finite cosmology and external reproducibility protocol.
 
-Cosmological acceleration/entropy flow uses archive entropy layer.  It must
-cite `D0.Gravity.EntropicArchiveInterface`, not import continuum GR as primitive.
+Cosmological acceleration/entropy flow uses the archive entropy layer.  It must
+go through the entropic archive interface, not import continuum GR as primitive.
 Survey likelihoods remain external comparison protocols after the finite archive macro-interface
 has been frozen.
 
@@ -865,11 +859,11 @@ Any survey comparison of this mechanism is an external comparison protocol after
 
 ## 08.43 CMB phason-flip entropy spectrum passport
 
-Core-13 particle-shell diagnostics and cosmological survey external comparison protocols are separate validation layers. PDG/Core-13 may validate frozen matter/geometry embeddings through `08_PASSPORTS/PDG`; BAO/SDE/HST survey external comparison protocols validate frozen cosmology transfer shapes. Neither external comparison protocol layer can create a D0 primitive.
+Core-13 particle-shell diagnostics and cosmological survey external comparison protocols are separate validation layers. PDG/Core-13 may validate frozen matter/geometry embeddings through the PDG passport; BAO/SDE/HST survey external comparison protocols validate frozen cosmology transfer shapes. Neither external comparison protocol layer can create a D0 primitive.
 
-Nuclear shell-contact SRC passport boundary: `08_PASSPORTS/NuclearSRC` is a matter-sector external-data boundary, not a cosmology input. The frozen D0 object is `D0.Matter.NuclearShellContactSRC`; Nature source-data workbooks may test the shell-contact ranking only after manifest/hash pinning. Without pinned source data the required result is `SKIP_NATURE2026_SOURCE_DATA_REQUIRED`.
+Nuclear shell-contact SRC passport boundary: the Nuclear SRC passport is a matter-sector external-data boundary, not a cosmology input. The frozen D0 object is the nuclear shell-contact SRC owner; Nature source-data workbooks may test the shell-contact ranking only after manifest/hash pinning. Without pinned source data the required result is `SKIP_NATURE2026_SOURCE_DATA_REQUIRED`.
 
-Core-13 Passport Boundary: `vp_core13_shell_geometry_passport.py` is the
+Core-13 Passport Boundary: the Core-13 shell-geometry passport is the
 external geometry comparison protocol pointer for the finite shell geometry row.
 The PDG/Core-13 passport validates the three-orbit shell geometry as an external shadow of the internal V_shell carrier. It does not choose the baryon spin-flavour projectors.
 
@@ -882,9 +876,9 @@ dark matter = localized archive phason strain
 dark energy = determinant-balance/archive expansion
 ```
 
-The dark-matter side is owned by `D0.Physics.ArchivePhasonDarkMatter` and certified by `vp_archive_phason_dark_matter.py`: the traced-out complement coordinate is killed by the active EM projection, while finite heat/metric readout sees the positive phason strain energy. The dark-energy side remains the determinant-balance/archive expansion branch supplied by the toral active/archive split.
+The dark-matter side is owned by the archive phason dark-matter module and carried by its finite certificate: the traced-out complement coordinate is killed by the active EM projection, while finite heat/metric readout sees the positive phason strain energy. The dark-energy side remains the determinant-balance/archive expansion branch supplied by the toral active/archive split.
 
-The archive dark-strain module and the baryon S3 phason module reuse the same finite phason coordinate vocabulary, but they do not identify the same transfer. The owner for the baryon side is `D0.Matter.PhasonStrainGenerations`; the owner for the traced-out complement dark side remains `D0.Physics.ArchivePhasonDarkMatter`.
+The archive dark-strain module and the baryon S3 phason module reuse the same finite phason coordinate vocabulary, but they do not identify the same transfer. The owner for the baryon side is the baryon phason-strain-generations module; the owner for the traced-out complement dark side remains the archive phason dark-matter module.
 
 ## 08.45 IceCube neutrino phason decoherence external comparison protocol
 
@@ -923,9 +917,9 @@ Result semantics:
 PASS / FAIL / SKIP_NEUTRINO_PHASON_DECOHERENCE_EXTERNAL_DATA_REQUIRED
 ```
 
-The owner is `D0.Passport.IceCubePhasonDecoherence`; the default certificate is `vp_neutrino_phason_decoherence_external comparison protocol.py`.
+The owner is the IceCube phason-decoherence passport; the default certificate is the neutrino phason-decoherence external-comparison certificate.
 
-See the IceCube HESE cert and `08_PASSPORTS/_RESULTS/` for the baseline comparison protocol (events used, damping values, delta_loglik / delta_chi2 diagnostics). The internal phason-decoherence law is the primary statement; external comparison is a separate passport protocol.
+See the IceCube HESE certificate and the passport results for the baseline comparison protocol (events used, damping values, delta_loglik / delta_chi2 diagnostics). The internal phason-decoherence law is the primary statement; external comparison is a separate passport protocol.
 
 ## 08.46 CMB phason-flip entropy spectrum external comparison protocol
 
@@ -1003,7 +997,7 @@ PASS / FAIL / SKIP_ARCHIVE_PHASON_HALO_EXTERNAL_DATA_REQUIRED
 
 Current external-data runner result:
 
-See the SPARC cert and `08_PASSPORTS/_RESULTS/` for the data-ingest and kernel diagnostics. The internal archive phason strain law is independent of any particular survey catalog.
+See the SPARC certificate and the passport results for the data-ingest and kernel diagnostics. The internal archive phason strain law is independent of any particular survey catalog.
 
 SPARC rejects the first simple archive-response kernels (shape-only and one-global-scale). Hull-boundary response (global gamma on outer/gas-disk boundary proxy) is also insufficient.
 
@@ -1020,11 +1014,10 @@ family derivative fixed before comparison. IceCube dynamic feedback remains an
 external passport candidate unless the event manifest, response model and frozen
 operator are pinned.
 
-The Lean owner is `D0.Cosmology.SDEFeedbackReduction`, specifically
-`desi_sparc_failure_forces_boundary_derivative_feedback` and
-`arbitrary_kernel_repair_not_theorem_grade`. The passport records are
-`08_PASSPORTS/DESI/desi_feedback_refinement_constraint.json` and
-`08_PASSPORTS/SPARC/sparc_feedback_refinement_constraint.json`.
+The Lean owner is the S_DE feedback-reduction module: the DESI/SPARC failure
+forces a boundary-derivative feedback, and an arbitrary-kernel repair is not
+theorem-grade. The passport records are the DESI and SPARC feedback-refinement
+constraint files.
 
 ## 08.48 DESI BAO/S_DE phason-flip external comparison protocol
 
@@ -1062,7 +1055,7 @@ SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED
 
 
 
-## 08.v15 Expansion as retained-rank evolution
+## 08.49 Expansion as retained-rank evolution
 
 D0 represents cosmological expansion internally as the rank evolution of the retained sector:
 \[
@@ -1082,10 +1075,10 @@ Acceleration is the sign and spectral response of \(\mathsf P_{fb}-\mathsf P_{ca
 
 The retained-rank picture forces a discrete replacement for the initial singularity. The expansion variable is depth \(u\) on the scene graph; the retained sector \(P_N\) is only well-posed once the graph distinguishes points, i.e. once it is **connected**. Below a connectivity (percolation) threshold the graph is disconnected: distinct components carry no mutual transport, so \(\operatorname{rank}(P_N)\) cannot register a single coherent volume and the rank-evolution law \(\partial_VF_N\) has no connected sector to evolve.
 
-Forcing argument: if at depth \(u<\varepsilon^2\) the scene graph is disconnected, then the "beginning of time" is the **onset of graph connectivity (the percolation threshold \(u^\*\))**, not a singular point. There is no \(t=0\) singularity to reach — only the depth at which the largest component first spans the scene and a retained rank becomes definable. A pointwise singularity would require an external label pinning a "true first instant" off-graph, an external catalog that M1 forbids; the connectivity threshold, by contrast, is internally readable from the graph alone (forcing: GOLDEN THE 61.4 — Percolation as \(t=0\)). This reframes cosmic onset as a phase transition of the retained sector rather than a divergence of curvature. [^b08-7]; GOLDEN flags a toy check CHK 61.6 (PercolationToy: threshold \(u^\*\)), which is a demonstration, not yet a cert obligation discharged in 05_CERTS.
+Forcing argument: if at depth \(u<\varepsilon^2\) the scene graph is disconnected, then the "beginning of time" is the **onset of graph connectivity (the percolation threshold \(u^\*\))**, not a singular point. There is no \(t=0\) singularity to reach — only the depth at which the largest component first spans the scene and a retained rank becomes definable. A pointwise singularity would require an external label pinning a "true first instant" off-graph, an external catalog that M1 forbids; the connectivity threshold, by contrast, is internally readable from the graph alone (forcing: GOLDEN THE 61.4 — Percolation as \(t=0\)). This reframes cosmic onset as a phase transition of the retained sector rather than a divergence of curvature. [^b08-7]; GOLDEN flags a toy check CHK 61.6 (PercolationToy: threshold \(u^\*\)), which is a demonstration, not yet a discharged certificate obligation.
 
 Consequence for the transfer law: \(\partial_VF_N\) and the feedback pressure \(\mathsf P_{fb}\) are defined only on the connected (post-threshold) regime. The "expansion history" is the rank evolution of the retained sector **after** percolation; the pre-threshold regime is not an earlier expanding universe but a disconnected scene where the volume derivative is simply undefined. Survey reconstructions of an early-time singularity are therefore external passports of the post-threshold law, not evidence of an off-graph \(t=0\) point.
-## 08.v15 Orbit-averaged trace expansion
+## 08.50 Orbit-averaged trace expansion
 
 Cosmological expansion is the macroscopic orbit-average of completed terminal trace emissions. With
 
@@ -1107,7 +1100,7 @@ B(s)=B_0+A_0(1-e^{-s\log\varphi}).
 
 ----
 
-## D0_v16 Tabletop bridge guardrail
+## Tabletop bridge guardrail
 
 **Publication note on external bridge limits.** Tabletop plasma behaviour is admitted here only as an external active-medium bridge. It is not a cosmological proof and does not bypass survey/passport discipline.
 

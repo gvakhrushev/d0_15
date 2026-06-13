@@ -48,6 +48,9 @@ jobs:
       - name: trace metadata extracted to apparatus (no raw forcing/Status tags in prose)
         run: python tools/extract_apparatus.py --check
 
+      - name: book bodies are publication-clean (no dangling refs / dup headings / dev-TODO / prose repo-refs)
+        run: python tools/check_book_publication.py
+
       - name: book token firewall (no v17 overshoots / deprecated delta0 in prose)
         run: python tools/check_book_tokens.py
 

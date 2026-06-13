@@ -6,7 +6,7 @@
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
 
-## 01.v15 Active support/foundation layer
+## 01.0 Active support/foundation layer
 
 Book 01 is support and foundation only. It does not prove matter, gravity or cosmology claims. It supplies the finite/profinite carrier on which later books build operators.
 
@@ -37,10 +37,6 @@ D0.finite_effect_born_readout_unique
 D0.finite_effect_born_no_hidden_response
 ```
 
-## 01.19a Cut-and-project reading of phase unfolding
-
-The phase-unfolding master chain is tick order -> irrational phi^-2 phase -> finite return modulus -> residue branches, with owner `D0.Geometry.PhaseUnfoldingQuasicrystal`.
-
 ## 01.1 Standard-language reading of the foundation
 
 The foundational object is a profinite support represented as a condensed set on profinite test objects:
@@ -60,7 +56,7 @@ with finite-stage factorization, projection compatibility, a positive response o
 
 ### 01.1.0 Σ as the realizability gate, not invented physics
 
-The condensed support above is downstream. Upstream of every D0 object is a single criterion the v14 books retained the consequences of but dropped the *why* for: the **distinguishability structure Σ**. Σ is not an attempt to "invent physics." It is the realizability gate that any theory claiming to describe distinguishable objects is obliged to implement. A theory that asserts it has objects, measurements, or memory but fails to realize the components of Σ is either a tautology or a non-reproducible fantasy with no operational content [^b01-1]. The gate is applied with the prologue tool kit: the M1 ban on exogenous parameters (DEF-0.2.2 forcing-by-contradiction) and the ⊥-reduction proof protocol. Σ is where M1 is first turned on every component.
+The condensed support above is downstream. Upstream of every D0 object is a single criterion: the **distinguishability structure Σ**. Σ is not an attempt to "invent physics." It is the realizability gate that any theory claiming to describe distinguishable objects is obliged to implement. A theory that asserts it has objects, measurements, or memory but fails to realize the components of Σ is either a tautology or a non-reproducible fantasy with no operational content [^b01-1]. The gate is applied with the prologue tool kit: the M1 ban on exogenous parameters (DEF-0.2.2 forcing-by-contradiction) and the ⊥-reduction proof protocol. Σ is where M1 is first turned on every component.
 
 **Object-type → C\* code table (what breaks under M1).** Before Σ is even stated formally, M1 already forces every theory to not merely *exist* but to register and type its own assertions. Each object type must be fixed as a code in `C*`, or the theory collapses:
 
@@ -135,7 +131,7 @@ A new parameter `Y` ("hidden variable") that does not change `Δ` but "enriches 
 1. **`Y` does not change `Δ`-outcomes.** Then `(s, Y₁)` and `(s, Y₂)` are indistinguishable for the Σ protocol, so `D_min` (canonization) is obliged to discard `Y` as description noise (synonyms). `Y` is eliminated automatically.
 2. **`Y` changes `Δ`-outcomes.** Then a change of `Y` is itself a distinguishability event, so it must be written into History `R`, so `Y` has a code in `C*`.
 
-Either the parameter does not exist (canonized away by `D_min`) or it is part of the code (written into History `R`). There are no invisible parameters steering the world past History. Status: CORE-FORCING [^b01-12]. This is the general foundational no-hidden-variable theorem; the narrow "no hidden mass scale / no post-hoc permutation" CKM guardrail (D0-MATTER-001, BOOK_02) is one downstream instance of it, not the source. Worked instance: introducing "data types" (int vs real) either changes `Δ` (`1` vs `1.0` not comparable) — then the type is written into the code — or it does not — then types are fictitious and erased by canonization [^b01-13].
+Either the parameter does not exist (canonized away by `D_min`) or it is part of the code (written into History `R`). There are no invisible parameters steering the world past History. Status: CORE-FORCING [^b01-12]. This is the general foundational no-hidden-variable theorem; the narrow "no hidden mass scale / no post-hoc permutation" CKM guardrail owned by BOOK_02 is one downstream instance of it, not the source. Worked instance: introducing "data types" (int vs real) either changes `Δ` (`1` vs `1.0` not comparable) — then the type is written into the code — or it does not — then types are fictitious and erased by canonization [^b01-13].
 
 ### 01.1.7 Summary of the forced foundation
 
@@ -175,7 +171,7 @@ from the positive response operator `R_N = D_N^dagger D_N`:
 F_N = P_N U_N^dagger Q_N U_N P_N
 ```
 
-ABCD determines what can be terminally registered; `F_N` determines what returns from the non-registered complement. The Lean owner is `D0.Dynamics.InternalFeedbackResolvent`, with `internal_feedback_forced_by_split`. Book 01 only hands this retained/traced split to downstream operator books; it does not import matter masses, electroweak constants, baryon data, cosmological surveys or neutrino passports.
+ABCD determines what can be terminally registered; `F_N` determines what returns from the non-registered complement, with the internal feedback resolvent forced by the retained/traced split. Book 01 only hands this retained/traced split to downstream operator books; it does not import matter masses, electroweak constants, baryon data, cosmological surveys or neutrino passports.
 
 ### What "mass/energy" is allowed to mean before calibration
 
@@ -321,7 +317,7 @@ Two consequences, both load-bearing downstream:
 1. **The continuum is a tower of refinements, not a bag of points.** `S_{D0}` is the limit of distinguishing stages, and its points *are* the coherent threads through `\{\pi_{n+1,n}\}` — nothing finer is real. Actual infinity never enters as a completed set; it enters only as the inverse system `\{S_n,\pi_{n+1,n}\}` itself. This is the support-level statement of which the §01.4 "test object, not ontology" reading, and the later no-hidden-response Born form (§01.17.1), are downstream specializations.
 2. **κ-equivalence replaces `\mathbb R`.** Because separation is finite-stage, numerical equality is read at finite resolution: sequences over `\mathbb Q(\varphi)` that agree to `\varphi^{-k}` at every depth define the same κ-number. A residual gap below every `\varphi^{-k}` is, by THE 01.4.0, not a real distinction — it would be an external catalog of differences. The role of `\mathbb R` is thus taken by κ-classes of pro-observables, not by a postulated point-set.
 
-*Status note: THE 01.4.0 is a continuum-level structural forcing with no finite numerical witness of its own (it asserts the* absence *of a separating test). It is carried as [^b01-21] — the existing fractal-tick continuum certs `vp_continuum_from_fractal_tick.py` / `vp_fractal_continuum_predictions.py` test the refinement dynamics, not the no-hidden-points identification, and are NOT cited as a witness here.*
+*Status note: THE 01.4.0 is a continuum-level structural forcing with no finite numerical witness of its own (it asserts the* absence *of a separating test). It is carried as [^b01-21] — the existing fractal-tick continuum certificates test the refinement dynamics, not the no-hidden-points identification, and are NOT cited as a witness here.*
 
 ### 01.4.1 The D0 condensed site and admissible subfunctor
 
@@ -524,7 +520,7 @@ The detector asymmetry quantum is the centered half-gap
 \delta_0=\frac{p_+-p_-}{2}=\frac{\sqrt5-2}{2}=\frac1{2\varphi^3}.
 ```
 
-This is the active convention. The formula `\delta_0=\varphi^{-3}` is not the active D0 convention. Any script, book section or external bridge using that older convention must be rejected or migrated. The closure `p+p^2=1` together with `\delta_0=1/(2\varphi^3)` is cert-checked: `vp_v1141_abcd_omega8_v9_phi_capacity.py` asserts `abs(p+p^2-1)<1e-12` and `abs(\delta_0-1/(2\varphi^3))<1e-12`.
+This is the active convention. The formula `\delta_0=\varphi^{-3}` is not the active D0 convention and is not admissible. The closure `p+p^2=1` together with `\delta_0=1/(2\varphi^3)` is verified by the finite certificate, which asserts `abs(p+p^2-1)<1e-12` and `abs(\delta_0-1/(2\varphi^3))<1e-12`.
 
 ### 01.6.0 The mediator forces linear superposition before any branch weight exists [^b01-23]
 
@@ -783,7 +779,7 @@ The forcing has two M1 reads and one classical theorem that globalizes them.
 
 2. **Order memory forbids commutativity.**  A completed readout records the *order* of its operations (which branch resolved first); that order-memory obligation, already carried by the forward/return split `C_+/D_-`, forces the role group to be **non-abelian**.
 
-These two constraints — Hamiltonian *and* non-abelian — leave essentially no room.  An exact finite enumeration of the non-abelian groups of order `\le 8` (cert `vp_q8_dedekind_minimality.py`, explicit multiplication tables, no floats) gives the count of non-normal proper subgroups:
+These two constraints — Hamiltonian *and* non-abelian — leave essentially no room.  An exact finite enumeration of the non-abelian groups of order `\le 8` (explicit multiplication tables, no floats, discharged by the finite certificate) gives the count of non-normal proper subgroups:
 
 \[
 S_3:\ 3,\qquad D_4:\ 4,\qquad Q_8:\ 0.
@@ -821,7 +817,7 @@ This is **fermionic statistics read straight off the orientation bit of the scen
 
 We do **not** import the Leech/`\Lambda_{24}`-projection or "Ramanujan-expander" framing for the `30`-nullity here: those are overshoot-adjacent and not forced.  The forced content is `\Omega_8\cong Q_8`, the triple `\mathbb Z_2` identity, and the spinor/rank-`3` corollary above.
 
-### 01.7.2 Proof cell: `D0-SCENE-001` eight oriented terminal-role states Ω8 detector cycle
+### 01.7.2 Proof cell: eight oriented terminal-role states Ω8 detector cycle
 
 **Claim.**  The first closed detector cycle is the signed four-role cycle
 
@@ -829,7 +825,7 @@ We do **not** import the Leech/`\Lambda_{24}`-projection or "Ramanujan-expander"
 \Omega_8=\{A,B,C,D\}\times\{+,-\}\ \cong\ Q_8,
 ```
 
-with `A\mapsto1,\ B\mapsto i,\ C\mapsto j,\ D\mapsto k` and the `+/-` orientation bit equal to the central `\{\pm1\}`.  The group identification is forced, not declared (see §01.7.1A; cert `vp_q8_dedekind_minimality.py`).
+with `A\mapsto1,\ B\mapsto i,\ C\mapsto j,\ D\mapsto k` and the `+/-` orientation bit equal to the central `\{\pm1\}`.  The group identification is forced, not declared (see §01.7.1A; discharged by the finite certificate).
 
 **Support.**  The support is the terminal four-role readout algebra obtained after the `\varphi` halt quotient.  Its two-port representation is
 
@@ -845,7 +841,7 @@ A=(3,3),\qquad B=(4,4),\qquad C=(3,4),\qquad D=(4,3).
 
 **Quotient.**  The quotient is the halt from unresolved continuum metadata to the finite signed terminal role algebra.  The construction of the finite incidence graph marker `V_9` comes only after this quotient.
 
-**Falsification hook.**  If the minimal terminal detector role algebra can be completed without one of the four typed roles `A_\Sigma,B_N,C_+,D_-`, or if the two-port terminal representation requires fewer or more than four pre-sign roles, then `D0-SCENE-001` fails.  Equally, if a non-abelian Hamiltonian group *smaller* than `Q_8` exists, or if any non-abelian group of order `\le8` other than `Q_8` has zero non-normal subgroups, the `\Omega_8\cong Q_8` forcing of §01.7.1A fails (cert `vp_q8_dedekind_minimality.py` enumerates the counter and would catch it).  A downstream graph or carrier theorem may not repair either failure.
+**Falsification hook.**  If the minimal terminal detector role algebra can be completed without one of the four typed roles `A_\Sigma,B_N,C_+,D_-`, or if the two-port terminal representation requires fewer or more than four pre-sign roles, then the scene-cycle claim fails.  Equally, if a non-abelian Hamiltonian group *smaller* than `Q_8` exists, or if any non-abelian group of order `\le8` other than `Q_8` has zero non-normal subgroups, the `\Omega_8\cong Q_8` forcing of §01.7.1A fails (the finite certificate enumerates the counter and would catch it).  A downstream graph or carrier theorem may not repair either failure.
 
 ## 01.8 From eight oriented terminal-role states Ω8 to V9 and construction of the finite incidence graph
 
@@ -1430,13 +1426,7 @@ D_{EW}=35.
 
 This section upgrades phase unfolding from an illustration to a structural theorem: later scale depths are repeated applications of the same finite tick \(\to\) phase quotient \(\to\) return modulus \(\to\) residue branch \(\to\) quotient mechanism.
 
-Lean owner: `D0.Geometry.PhaseUnfoldingQuasicrystal`.
-
-```text
-phi_phase_is_nonperiodic;
-finite_return_modulus_unfolds_branches;
-quasicrystal_order_not_periodic_lattice.
-```
+The Lean owner establishes that the φ phase is non-periodic, that the finite return modulus unfolds branches, and that the quasicrystal order is not a periodic lattice.
 
 ## 01.19a Cut-and-project origin of visible branches
 
@@ -1482,7 +1472,7 @@ The same `φ⁻²` rotation is also the address-defect of the memory torus on it
 
 The letter-by-letter coincidence is verified empirically (40 symbols) and the slope is force-derived, but the full conjugacy is left as an obligation: that the `φ⁻²` circle rotation is formally conjugate to the return map of the golden foliation of `T` is one page of standard ergodic mechanics (Sturm / Morse–Hedlund). Status: **PROOF-TARGET (cert obligation open)** — promotion needs the conjugacy written out, not a new numeric check.
 
-The active certs for the carrier side are `vp_information_quasicrystal_phase_unfolding.py` (φ-phase non-periodicity + finite return branches) and `vp_quasicrystal_phenomenology_operator_origin.py` (operator origin of the quasicrystal phenomenology); the time-side address identity is closed by `vp_xi5_torus_defect.py`. Lean owner of the carrier packaging: `D0.Geometry.PhaseUnfoldingQuasicrystal`.
+The carrier side is verified by finite certificates covering φ-phase non-periodicity with finite return branches and the operator origin of the quasicrystal phenomenology; the time-side address identity is closed by its own finite certificate. The Lean owner packages the carrier.
 ## 01.20 Capacity closure of four terminal roles A,B,C,D, Ω8 and V9
 
 The terminal readout alphabet is fixed by finite information capacity. A primitive two-port detector has a binary terminal dyad `D2`. The complete terminal role set is therefore `D2 × D2`, with four roles. This is the four terminal roles A,B,C,D alphabet:
@@ -1598,11 +1588,10 @@ fraction extremality of the `φ` class, this rotation is maximally resistant to
 low-denominator rational locking.  In D0 terminology, it is the admissible phase
 increment that suppresses uncontrolled metric arms in the unresolved complement.
 
-In the active formalization this is the information-quasicrystal phase:
-`D0.Geometry.HurwitzRigidPhaseGenerator` proves `phi_phase_is_nonperiodic`, and
-`D0.Geometry.PhaseUnfoldingQuasicrystal` packages the non-periodic phase with
-the finite return branch counts.  D0 geometry is therefore ordered but
-aperiodic before it is smoothed.
+In the active formalization this is the information-quasicrystal phase: the Lean
+owner proves that the φ phase is non-periodic and packages it with the finite
+return branch counts.  D0 geometry is therefore ordered but aperiodic before it
+is smoothed.
 
 This does not eliminate finite branches.  Branches appear only after a finite
 readout quotient chooses a return modulus.  Thus the same chain has two layers:
@@ -1615,8 +1604,8 @@ finite return modulus q  > residue branch geometry.
 This closes the compatibility between macroscopic smoothness and finite branch
 unfolding.
 
-The Hurwitz extremality of the increment `\alpha_{D0}=\varphi^{-2}` is cert-checked:
-`vp_v1142_hurwitz_phi_phase_rigidity.py` computes the continued fraction of
+The Hurwitz extremality of the increment `\alpha_{D0}=\varphi^{-2}` is verified by
+the finite certificate, which computes the continued fraction of
 `\varphi^{-2}`, its convergents `p/q`, and confirms the Hurwitz ratio
 `q^2|\varphi^{-2}-p/q|\to1/\sqrt5` — the maximal liminf, i.e. the slowest possible
 rational capture. The non-resonance is not a softening assumption; it is the
@@ -1632,7 +1621,7 @@ two answers are the *same* `\varphi`. This is the forcing the bare statement
   minimizer, the irrational whose continued fraction `[1;1,1,1,\dots]` stores no
   content and whose rational capture is slowest (`\liminf q^2|\varphi-p/q|=1/\sqrt5`,
   the largest possible). This is the route established as a theorem in §01.6.1a and
-  cert-backed for the phase by `vp_v1142_hurwitz_phi_phase_rigidity.py`.
+  cert-backed for the phase by the finite certificate.
 - **Operational side.** `M1` selects `\varphi` dynamically: the requirement that a
   registration distinguish itself without an external catalog has, on the class of
   rotation numbers, the single fixed point `\varphi` (the depth-1 self-return audit
@@ -1673,8 +1662,8 @@ be `1/2` if naming alone sufficed; it is `\varphi^{-1}` because the cut must sur
 its own return; the irreducible difference is `\delta_0`.
 
 [^b01-51]. Three of the four pieces are
-established: Hurwitz/MDL minimality (`D0-PHI-HURWITZ-001`, PROVED; cert
-`vp_v1142_hurwitz_phi_phase_rigidity.py`), the `M1` fixed point on rotation numbers
+established: Hurwitz/MDL minimality (PROVED, discharged by the finite
+certificate), the `M1` fixed point on rotation numbers
 (§01.6.1a), and the KAM last-torus closure (Greene/MacKay, external). The open
 obligation is the single conjugacy statement binding the `M1` self-return audit to
 the renormalization return-map of the golden foliation (Morse–Hedlund / Greene
@@ -1782,7 +1771,7 @@ This gives the electroweak radial depth as the per-oriented-role branch depth of
 
 ### The address step is forced to `+2` — the orientation-class no-sign-catalog argument (forcing: GOLDEN THE 3.11.B / COR 3.13.B(1), BOOK-I-ARCHITECTURE)
 
-The capacity construction above lands the scene on the spectrum `9, 11, 13` through the `Ω₈`-plus-basepoint / dyad `D₂` / terminal-role-square route.  That route fixes the *cardinalities*.  A second, independent forcing fixes the *step* between successive addresses, and it is the one v14 had dropped: the address ladder is forced to advance by `+2`, never `+1`, because a `+1` step would demand an external orientation bit — a sign catalog — which is `⊥M1`.
+The capacity construction above lands the scene on the spectrum `9, 11, 13` through the `Ω₈`-plus-basepoint / dyad `D₂` / terminal-role-square route.  That route fixes the *cardinalities*.  A second, independent forcing fixes the *step* between successive addresses: the address ladder is forced to advance by `+2`, never `+1`, because a `+1` step would demand an external orientation bit — a sign catalog — which is `⊥M1`.
 
 The argument is a reduction to holonomy parity.  In the discrete CORE world the powers `φ^n` are approximated by the integer Lucas numbers `L_n`, and the approximation defect carries an exact `Z₂`-orientation class:
 
@@ -1872,7 +1861,7 @@ Aperiodic geometry generated by $\varphi^{-2}$ irrational phase return:
 - **Certificate**: `05_CERTS/vp_quasicrystal_phenomenology_operator_origin.py` (`PASS_QUASICRYSTAL_PHENOMENOLOGY_OPERATOR_ORIGIN`).
 - **Guardrail**: Generational inflation, archive phason strain, chiral window offset, phason-flip drag, and fractional charge weights are read from a common cut-and-project vacuum support.
 
-## 01.v15 Mobius-Witness topological halting
+## 01.24 Mobius-Witness topological halting
 
 The signed terminal role cycle is
 
@@ -1895,7 +1884,7 @@ Because the trace gradient has traversed the full signed role cycle before halt,
 E_\Omega = \frac{1}{|G_8|} \sum_{g \in G_8} P_g F_N P_g^\dagger.
 \]
 
-This average is invariant, but it is **not** a scalar multiple of the identity unless irreducibility of the representation on the trace space is separately proved. See also `03_THEORY_MAP/D0_v15_FRACTAL_CONTINUUM_AND_WITNESS_HALTING_PROOF.md`.
+This average is invariant, but it is **not** a scalar multiple of the identity unless irreducibility of the representation on the trace space is separately proved.
 
 
 ## Apparatus — sources & open obligations

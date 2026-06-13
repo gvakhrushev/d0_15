@@ -6,7 +6,7 @@
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
 
-## 06.v15 Active time/evolution sector law
+## 06.0 Active time/evolution sector law
 
 Definition. The time arrow in D0 is the ordering induced by normalized coarse-grained feedback channels.
 
@@ -26,17 +26,13 @@ This is a dimensionless tick gauge, not an SI prediction. Formal owner:
 D0.Bridge.finite_causal_tick_section_cone_speed_eq_one
 ```
 
-Gravity runtime boundary tokens: eta4 terminal signature, delta0 finite readout cut, heat trace scale is internal, not SI time.
-
-## 06.30a Time evolution over the φ-quasicrystalline hull
-
-The time operator supplies the non-periodic ordered runtime; `toral_runtime_supplies_quasicrystal_order`. Tick/Lorentz sync: `06.36 inherited tick-gauge closure`; `D0.Bridge.FiniteCausalTickSection`; `D0.Bridge.finite_causal_tick_section_cone_speed_eq_one`; `D0.Bridge.asymmetric_ticks_not_internal_gauge`; `D0.Bridge.FiniteLorentzTickGaugeClosure`. Toral sync: `chi_T(lambda)=lambda^2+lambda-1`; `spec(T)={phi^-1,-phi}`; `Tr(T^n)=(-1)^n L_n`; `xi5 = phi^-5`; `c_D0=1`; `eta4 = diag(1,-1,-1,-1)`.
+Gravity runtime boundary tokens: eta4 terminal signature, δ₀ finite readout cut, heat trace scale is internal, not SI time.
 
 ## 06.1 Standard reading of evolution and forgetting
 
 Definition. D0 forgetting is one of the following standard operations, depending on context: conditional expectation onto a retained algebra, partial trace over an environment, Wilsonian coarse-graining, or entropy-selected coupling. The D0 archive is the traced-out complement produced by that operation.
 
-The "standard reading" above is the downstream FACT. What it dropped is the *why*: time, the arrow, and the seam that drives forgetting are not external inputs — they are forced by the heat-trace of the scene Laplacian. This section restores that forcing spine.
+The "standard reading" above is the downstream FACT. The *why* is this: time, the arrow, and the seam that drives forgetting are not external inputs — they are forced by the heat-trace of the scene Laplacian. This section sets out that forcing spine.
 
 ### 06.1.1 Heat-trace operator and the forced u↔t bridge
 
@@ -50,7 +46,7 @@ H(u) := Tr e^{-uL},   {lambda_i} = spec(L),
 
 with `L` the normalized scene Laplacian (or the full system when stated). Time in D0 is not posited; it is read off the diffusion ∂_u p = -L p — how fast the system loses local information under refinement.
 
-Forcing of the bridge (the part v14 had dropped). The exponents `e^{-u lambda}` are only well-typed if `u·lambda` is dimensionless. Since `lambda` carries the spectral dimension of `L`, ANY phenomenological calibration `t ↦ u` is forced to the affine form
+Forcing of the bridge. The exponents `e^{-u lambda}` are only well-typed if `u·lambda` is dimensionless. Since `lambda` carries the spectral dimension of `L`, ANY phenomenological calibration `t ↦ u` is forced to the affine form
 
 ```text
 u = tau0 · t,
@@ -65,7 +61,7 @@ so   u = epsilon^2 t = phi^-16 t.
 
 This introduces NO new constant: it fixes the unit of time through the single internal precision scale `epsilon`. (Note: this `tau0 = phi^-16` is the *internal* heat-trace bridge and is a distinct object from the SI bridge `tau0 = h/(38 m_e c^2)` owned by BOOK_03/BOOK_07 — they must not be conflated.)
 
-Cert status: the four-dimensional periodic archive Laplacian and its factorizing heat trace `Theta_L(u) = (sum_k e^{-u lambda_1d(k)})^4` are checked as a finite object (cert: vp_archive_heat_trace_weyl_dimension.py); the affine-uniqueness of `u = tau0·t` from dimensional typing is [^b06-1].
+Cert status: the four-dimensional periodic archive Laplacian and its factorizing heat trace `Theta_L(u) = (sum_k e^{-u lambda_1d(k)})^4` are checked as a finite object by the heat-trace certificate; the affine-uniqueness of `u = tau0·t` from dimensional typing is [^b06-1].
 
 ### 06.1.2 Information time and the arrow as heat-trace monotonicity
 
@@ -78,9 +74,9 @@ P_return(u) := H(u) / |V|,
 I(u)        := -ln P_return(u).
 ```
 
-`I(u)` measures the loss of local information accumulated by phase time `u`. This is the heat-trace channel for the arrow — complementary to, and not replaced by, the normalized-feedback / T-ladder entropy channel of §06.v15.
+`I(u)` measures the loss of local information accumulated by phase time `u`. This is the heat-trace channel for the arrow — complementary to, and not replaced by, the normalized-feedback / T-ladder entropy channel of §06.0.
 
-Arrow theorem (the part v14 stated only via entropy channels). Because `L ⪰ 0`, every eigenvalue `lambda_i ≥ 0`, so
+Arrow theorem. Because `L ⪰ 0`, every eigenvalue `lambda_i ≥ 0`, so
 
 ```text
 H'(u) = -sum_i lambda_i e^{-u lambda_i} ≤ 0.
@@ -96,13 +92,13 @@ P_return(u) ≍ u^{-d_s/2},   so   I(u) ~ (d_s/2) ln(1/u),
 
 with `d_s` the spectral dimension; this is exactly the natural RG-coarsening parameter, tying the forgetting flow of this book to Wilsonian coarse-graining named in the Definition above.
 
-Cert status: heat-trace ↔ spectral (Weyl) dimension on the archive Laplacian (cert: vp_archive_heat_trace_weyl_dimension.py); the RG/coarse-graining renormalization under phase projection π (`c_n = 1`, `R_n = 0`) (cert: vp_archive_laplacian_rg_flow.py); forced return-window capacity (cert: vp_v1143_forced_return_windows_capacity.py). The monotonicity inequality `H'(u) ≤ 0` itself is elementary from `lambda_i ≥ 0` and needs no separate cert.
+Cert status: heat-trace ↔ spectral (Weyl) dimension on the archive Laplacian, the RG/coarse-graining renormalization under phase projection π (`c_n = 1`, `R_n = 0`), and forced return-window capacity are each discharged by their finite certificates. The monotonicity inequality `H'(u) ≤ 0` itself is elementary from `lambda_i ≥ 0` and needs no separate cert.
 
 ### 06.1.3 Spectral asymmetry of gluing — the closure defect that drives forgetting
 
 Status: CORE-FORCING [^b06-5].
 
-The corpus carries an irreducible gluing anomaly `Delta_alpha`: the mismatch between the topological and algebraic expressions for `alpha^-1` (numbers owned by BOOK_02; seam value `alpha_top^-1 = 359/phi^2 - phi^-5`). The forcing argument v14 dropped is its *dynamical* reading.
+The corpus carries an irreducible gluing anomaly `Delta_alpha`: the mismatch between the topological and algebraic expressions for `alpha^-1` (numbers owned by BOOK_02; seam value `alpha_top^-1 = 359/phi^2 - phi^-5`). The forcing here is its *dynamical* reading.
 
 Closure defect. `Delta_alpha ≠ 0` manifests as a structural spectral asymmetry in cycle statistics: a fixed fraction of cycles fails to close after the projection `pi` (the Top↔Alg mismatch). Operationally, on the computable graph dynamics,
 
@@ -120,7 +116,7 @@ P_asym = Theta(Delta_alpha^2).
 
 The linear term is FORBIDDEN by sign symmetry of the gluing error: `+Delta_alpha` and `-Delta_alpha` are probability-equivalent, so only even powers survive. This is what makes the closure defect a clean second-order observable rather than a tunable first-order one.
 
-Where the mass scale lives. The passage from `P_asym` to a neutrino mass scale (via `m_e` and `Delta_alpha`) is a BRIDGE interpretation and is OWNED downstream by BOOK_03 / BOOK_04 (the D0-NEUTRINO-001 quadratic readout). This section asserts only the forced *structural* result — closure defect, projection-π statistics, and the `Theta(Delta_alpha^2)` law — and cites those books for the quantitative readout; it does not re-derive the mass number here.
+Where the mass scale lives. The passage from `P_asym` to a neutrino mass scale (via `m_e` and `Delta_alpha`) is a BRIDGE interpretation and is OWNED downstream by BOOK_03 / BOOK_04 (the neutrino quadratic readout). This section asserts only the forced *structural* result — closure defect, projection-π statistics, and the `Theta(Delta_alpha^2)` law — and cites those books for the quantitative readout; it does not re-derive the mass number here.
 
 Cert status: the closure-defect statistics `P_asym = 1 - Z_closed/Z_all` under projection π and the `Theta(Delta_alpha^2)` symmetry-forcing are [^b06-2]; the seam numbers `alpha_top^-1` and the neutrino readout carry their own certs under BOOK_02/BOOK_03/BOOK_04 ownership and are not duplicated here.
 ## 06.2 Role of this book
@@ -177,7 +173,7 @@ with `h=1` reading "returned with a tellable-apart trace".
 
 **[COR 06.2.A.1] Order memory forces noncommutativity [^b06-7].** If two loops satisfy `Hol_{gamma_1} Hol_{gamma_2} ≢_O Hol_{gamma_2} Hol_{gamma_1}`, the observer can distinguish the *order* in which the operations ran. This is the minimal noncommutative carrier of history: order is itself a distinguishable trace, so by THE 06.2.A storing order forces holonomies that do not commute. This is the forced seed under the "noncommuting torus shells" and the defect/puncture (class-change) arguments the later sections develop — those shells noncommute *because* order memory demands it, not by stipulation.
 
-Both claims are M1-failure repairs imported from GOLDEN BOOK-I: v14 had asserted the torus and its noncommuting shells from `T`-matrix traces but never derived why memory needs a distinguishable return at all. The derivation of the `T`-matrix, the toral support and the defect remain owned by their canonical sections; this section owns only the forcing root above.
+Both claims are M1-failure repairs. The torus and its noncommuting shells follow from `T`-matrix traces, but only once memory is shown to require a distinguishable return. The derivation of the `T`-matrix, the toral support and the defect remain owned by their canonical sections; this section owns only the forcing root above.
 
 ## 06.3 Evolution cannot precede registration
 
@@ -326,7 +322,7 @@ Define `κ` as the minimal inward depth at which the ladder crosses the floor:
 
 This is the operational replacement of "actual infinity" by a finite distinguishability protocol: every check is obliged to run in the `κ`-truncation defined by `ε²`, and `κ` is a *physical* UV cutoff read off the observer floor, not a free setting [^b06-12].
 
-This `ε²=φ⁻¹⁶` floor is a distinct, GOLDEN-sourced constant; it is **not** the `δ₀¹²` noise-floor used elsewhere in v14, and it must not be silently identified with it.  Where this section needs the stop-rule, the governing constant is `φ⁻¹⁶`.  The two share the φ-spine but sit at different powers and serve different roles: `δ₀¹²` is a tail/noise threshold, `ε²=φ⁻¹⁶` is the observer's distinguishability floor that *terminates the inward ladder* and so bounds the depth `N` in `Q_N = Q_0 φ⁻ᴺ`.
+This `ε²=φ⁻¹⁶` floor is a distinct constant; it is **not** the `δ₀¹²` noise-floor used elsewhere in the corpus, and it must not be silently identified with it.  Where this section needs the stop-rule, the governing constant is `φ⁻¹⁶`.  The two share the φ-spine but sit at different powers and serve different roles: `δ₀¹²` is a tail/noise threshold, `ε²=φ⁻¹⁶` is the observer's distinguishability floor that *terminates the inward ladder* and so bounds the depth `N` in `Q_N = Q_0 φ⁻ᴺ`.
 ## 06.7 Time as invariant registration and the causal section
 
 The D0 internal units may be represented by the normalized section
@@ -335,7 +331,7 @@ The D0 internal units may be represented by the normalized section
 \ell_0^{D0}=1,\qquad \tau_0^{D0}=1,\qquad c_{D0}=\frac{\ell_0^{D0}}{\tau_0^{D0}}=1.
 ```
 
-This is not a claim that laboratory SI units are trivial.  It is the internal statement that one line-step and one discrete evolution step-step form a single causal section before external metrology is attached.  The Lean owner is `D0.Bridge.internal_cone_speed_eq_one`: the internal cone speed is a dimensionless invariant of the normalized kinematic gauge.  SI light speed is therefore a metrological export, not a fitted D0 core parameter.
+This is not a claim that laboratory SI units are trivial.  It is the internal statement that one line-step and one discrete evolution step-step form a single causal section before external metrology is attached.  The Lean owner records the internal cone speed as a dimensionless invariant of the normalized kinematic gauge.  SI light speed is therefore a metrological export, not a fitted D0 core parameter.
 
 The physical export of the discrete evolution step convention is handled by the matter/metrology books.  The old evolution material contains the terminal relation
 
@@ -351,13 +347,13 @@ The causal section above orders registrations but does not yet say *why* the ord
 
 **Route 1 — unique reproducible assembly order [^b06-15].** The observable scene is assembled from two non-commuting role operators: `Y` (compactification / shell-fold of the outer scene into the effective 4D projection) and `J` (defect localization). The composites differ. Applying `Y` then `J` localizes the defect *inside* an already-fixed boundary structure, so the observer gets reproducible "objects": `Y∘J` is a repeatable assembly procedure. Applying `J` then `Y` localizes "out of boundary context" and the subsequent fold turns the result into noise: `J∘Y` is not reproducible.
 
-The arrow is the M1 consequence of this asymmetry [^b06-16]. M1 admits only what can distinguish itself without an external catalog; a *reproducible* assembly procedure is exactly a registration that re-derives the same scene without importing an external order-key. Only `Y∘J` qualifies. Therefore the forward direction of time is identified with the unique catalog-free assembly order `Y∘J`, and its reverse `J∘Y` is structurally excluded — not improbable, but inadmissible. The `[J,Y]≠0` non-commutativity is thus not a convention; it is the algebraic seat of the arrow. [^b06-13]  # "Y∘J is the unique reproducible (catalog-free) assembly order" has no vp_*.py owner yet; the [J,Y] operator pair is GOLDEN BOOK-VI material being lifted into v14.
+The arrow is the M1 consequence of this asymmetry [^b06-16]. M1 admits only what can distinguish itself without an external catalog; a *reproducible* assembly procedure is exactly a registration that re-derives the same scene without importing an external order-key. Only `Y∘J` qualifies. Therefore the forward direction of time is identified with the unique catalog-free assembly order `Y∘J`, and its reverse `J∘Y` is structurally excluded — not improbable, but inadmissible. The `[J,Y]≠0` non-commutativity is thus not a convention; it is the algebraic seat of the arrow. [^b06-13]
 
 **Route 2 — non-invertibility of the Fibonacci fusion [^b06-17].** The Finite Holographic Self-Reading Principle forbids hidden states / external memory, which forces the readout to obey the minimal non-trivial topological fusion rule `τ⊗τ = 1⊕τ` (this isolates `phi` as the minimal Jones-subfactor quantum dimension; the fusion/`phi` ownership is BOOK_01). The fundamental symmetry of the D0 scene is therefore a **non-invertible categorical symmetry**: the readout role `τ` has *no algebraic inverse*.
 
-Standard continuous (Lie) symmetries admit inverses and hence unitary, time-reversible dynamics with Noether currents. D0 has none of that at the structural level: with no inverse for `τ`, time-reversibility is broken algebraically, not statistically. The arrow of time and the Second Law are then exact algebraic inevitabilities of the non-invertible fusion that governs holographic readout, *not* artifacts of large numbers. Unitarity is recovered only as an approximate, emergent low-energy shadow. M1 failure mode: a *reversible* fundamental readout would require an inverse role `τ^{-1}` reconstructing the pre-readout state — i.e. an external memory background storing what was traced away — which the no-hidden-state principle forbids. ⊥. So irreversibility is forced. [^b06-14]  # "non-invertible τ-fusion forces broken time-reversal / Second Law" has no vp_*.py owner yet.
+Standard continuous (Lie) symmetries admit inverses and hence unitary, time-reversible dynamics with Noether currents. D0 has none of that at the structural level: with no inverse for `τ`, time-reversibility is broken algebraically, not statistically. The arrow of time and the Second Law are then exact algebraic inevitabilities of the non-invertible fusion that governs holographic readout, *not* artifacts of large numbers. Unitarity is recovered only as an approximate, emergent low-energy shadow. M1 failure mode: a *reversible* fundamental readout would require an inverse role `τ^{-1}` reconstructing the pre-readout state — i.e. an external memory background storing what was traced away — which the no-hidden-state principle forbids. ⊥. So irreversibility is forced. [^b06-14]
 
-**Route 3 — toral modular flow eigenvalue split (cert: `vp_signature_31_split.py`).** This route is already certified. The single modular flow is the toral time operator `T=[[0,1],[1,-1]]`, with `det = -1` and characteristic polynomial `lambda^2 + lambda - 1`. Its two real eigenvalues split: one root in `(0,1)` (contracting) and one in `(-2,-1)` (expanding, `|.|>1`). A single hyperbolic (Pisot) flow with one expanding and one contracting direction *is* an arrow: forward = the expanding/coarse-graining direction. The cert checks the split in exact integer arithmetic. The `(3,1)` signature pairs this single time flow against the rank-3 reversible spatial transport of `K(9,11,13)`, so "3 space, 1 time-with-arrow" never conflict.
+**Route 3 — toral modular flow eigenvalue split.** This route is already certified by the finite signature-split certificate. The single modular flow is the toral time operator `T=[[0,1],[1,-1]]`, with `det = -1` and characteristic polynomial `lambda^2 + lambda - 1`. Its two real eigenvalues split: one root in `(0,1)` (contracting) and one in `(-2,-1)` (expanding, `|.|>1`). A single hyperbolic (Pisot) flow with one expanding and one contracting direction *is* an arrow: forward = the expanding/coarse-graining direction. The cert checks the split in exact integer arithmetic. The `(3,1)` signature pairs this single time flow against the rank-3 reversible spatial transport of `K(9,11,13)`, so "3 space, 1 time-with-arrow" never conflict.
 
 The three routes agree on a single direction. Route 1 fixes the arrow as the unique reproducible registration order, Route 2 fixes *why no reverse exists* (non-invertible readout, no external memory), and Route 3 supplies the certified eigenvalue mechanism on the toral flow. The feedback-time / nondecreasing dephased-window-entropy statement of §06.2 is the entropic reading of the same arrow: entropy monotonicity is the coarse-grained shadow of the expanding eigendirection and of the irreversible trace-out, not an independent assumption.
 
@@ -373,7 +369,7 @@ det(T)=-1
 Tr(T^n)=(-1)^n L_n
 ```
 
-The determinant-square theorem `toral_volume_conservation_square` records the finite volume-balance invariant, and `trace_T_pow_eq_signed_lucas` records the integer signed-Lucas trace law without importing analytic roots as Lean primitives. Both facts are certified by EXISTING certs (`vp_toral_automorphism_galois_balance.py`, `vp_master_evolution_theorem.py`): the cert checks `|det(T^n)|=1` (volume conservation) and `Tr(T^n)=(-1)^n L_n` for tested `n`. What those certify is the *identity*; the forcing welds below say *why* this particular `T` is THE time generator.
+The determinant-square theorem `toral_volume_conservation_square` records the finite volume-balance invariant, and `trace_T_pow_eq_signed_lucas` records the integer signed-Lucas trace law without importing analytic roots as Lean primitives. Both facts are certified by the finite certificates: they check `|det(T^n)|=1` (volume conservation) and `Tr(T^n)=(-1)^n L_n` for tested `n`. What those certify is the *identity*; the forcing welds below say *why* this particular `T` is THE time generator.
 
 ### 06.8.W det(T) IS the Vieta invariant B — the cause of orientation reversal per tick
 
@@ -384,20 +380,20 @@ The bare fact `det(T)=-1` and the trace law `Tr(T^n)=(-1)^n L_n` are present, bu
 - `det(T) = -1 = B` ⇒ a single tick `T` reverses orientation. The sign of `det(T)` is the *seventh incarnation* of the canonical Z2 (the orientation register), not an incidental minus.
 - `T^2` then has `det(T^2) = +1` and `spec(T^2) = {phi^-2, phi^2}` — the orientation-PRESERVING square. This `+2` step is literally THE 3.11.B: the even step of the spine is the passage to the orientation-preserving square of the time operator. The "why an even step" derivation is therefore not a separate postulate but a direct reading of `det T = B`.
 
-The `|det(T^n)|=1` half is cert-backed (`vp_toral_automorphism_galois_balance.py`); the *identification* `det(T) = Vieta-B = orientation cause* is a structural weld onto the owned invariant `B`, carried verbatim from the iteration report. [^b06-18].
+The `|det(T^n)|=1` half is cert-backed by the finite certificate; the *identification* `det(T) = Vieta-B = orientation cause* is a structural weld onto the owned invariant `B`. [^b06-18].
 
 ### 06.8.M The toral automorphism T IS the modular-time generator (Tomita-Takesaki)
 
-v14 carries the FACTS — `T=[[0,1],[1,-1]]`, `chi_T=lambda^2+lambda-1`, `spec={phi^-1,-phi}`, the signed-Lucas trace, and "active contraction / archive expansion as eigen-branches of one toral automorphism." What was dropped is the *algebraic WHY* time emerges at all from the active/archive restriction.
+The FACTS are fixed — `T=[[0,1],[1,-1]]`, `chi_T=lambda^2+lambda-1`, `spec={phi^-1,-phi}`, the signed-Lucas trace, and active contraction / archive expansion as eigen-branches of one toral automorphism. What remains to state is the *algebraic WHY* time emerges at all from the active/archive restriction.
 
 **[THE 06.8.M] Time is the Tomita-Takesaki modular flow; `T^n` is its discrete realization [^b06-23].** D0 admits no background temporal parameter `t` — there is no external clock to distinguish, ⊥M1. Time is forced as follows:
 
 - Whenever the holographic carrier is split into the retained/active sector `P_N` and the traced/archive sector `Q_N` (the split owned by BOOK_01), the restriction of the pure topological state to the active boundary is a highly entangled thermal density matrix `rho_active`. By Tomita-Takesaki, this state uniquely defines a modular operator `Delta` and a one-parameter automorphism group `sigma_s(O) = Delta^{is} O Delta^{-is}`. Time IS this modular flow; ordered finite registration is merely the discrete spectrum of `Delta`.
 - The integer toral automorphism `T` generates that flow explicitly: `T^n` is the modular flow, and the active-sector decay and archive-trace accumulation are the two eigen-branches of the SAME discrete automorphism. Time is thus the invariant trace sequence `Tr(T^n)=(-1)^n L_n` of a deterministic, non-invertible Fibonacci fusion process.
-- The fractal tick `A_{n+1} = phi^{-1} A_n` (owned by 06.v15) is then not a fitted decay rule but the rigorous algebraic consequence of `Delta` transporting symplectic area into the archive. Time does not "pass"; time is the thermodynamic effort to hold the holographic boundary against the growing entanglement entropy of the bulk.
-- GOLDEN REM 51.6 gives the same origin algebraically: the modular group `sigma_t^omega` is induced by the pair `(A, omega)`, and the non-commutativity `[J, Y] != 0` (local insertion `J` vs trace-out `Y`) is the incompatibility that *makes* temporal ordering algebraic — a structure of the observable algebra and the choice of `omega`, never an external metric. v14's intrinsic-time conclusion (time from the toral automorphism `T`, not from a metric) is the SAME conclusion; this weld supplies the modular-operator mechanism behind it.
+- The fractal tick `A_{n+1} = phi^{-1} A_n` (owned by 06.40) is then not a fitted decay rule but the rigorous algebraic consequence of `Delta` transporting symplectic area into the archive. Time does not "pass"; time is the thermodynamic effort to hold the holographic boundary against the growing entanglement entropy of the bulk.
+- GOLDEN REM 51.6 gives the same origin algebraically: the modular group `sigma_t^omega` is induced by the pair `(A, omega)`, and the non-commutativity `[J, Y] != 0` (local insertion `J` vs trace-out `Y`) is the incompatibility that *makes* temporal ordering algebraic — a structure of the observable algebra and the choice of `omega`, never an external metric. The intrinsic-time conclusion (time from the toral automorphism `T`, not from a metric) is the same conclusion; this weld supplies the modular-operator mechanism behind it.
 
-[^b06-19]. No modular/Tomita-Takesaki cert exists in `05_CERTS/`; do NOT cite a `vp_*` token for this claim. The trace-sequence backbone `Tr(T^n)=(-1)^n L_n` is the cert-backed handle.
+[^b06-19]. No modular/Tomita-Takesaki certificate exists yet, so this claim carries no finite-cert backing of its own. The trace-sequence backbone `Tr(T^n)=(-1)^n L_n` is the cert-backed handle.
 
 ### 06.8.K I_f = log phi is the KS entropy of the memory-torus automorphism
 
@@ -405,7 +401,7 @@ v14 carries the FACTS — `T=[[0,1],[1,-1]]`, `chi_T=lambda^2+lambda-1`, `spec={
 
 ### 06.8.F Phenomenological time as the Feshbach-Schur archive-circulation delay
 
-This is ABSENT from v14 as a *time* mechanism — v14 has Feshbach-Schur only as a matter-pole / effective-transfer tool elsewhere. The derivation below ties the archive nullity-30 directly to temporal flow and is load-bearing.
+Feshbach-Schur enters here as a *time* mechanism, not merely as the matter-pole / effective-transfer tool it serves elsewhere. The derivation below ties the archive nullity-30 directly to temporal flow and is load-bearing.
 
 **[THE 06.8.F] Time is the Neumann-series index `k` of phase circulating in the 30-dim archive before return [^b06-25].** The global state of the finite holographic carrier is static under the unitary `U_N`. Time emerges *only* for an observer restricted to the active transport boundary `P_N`. Evaluating the effective active-sector evolution requires tracing over the 30-dimensional sterile archive `Q_N` (the rank-3 / nullity-30 scene `K(9,11,13)` owned by BOOK_01); the solution is strictly the Feshbach-Schur complement
 
@@ -423,7 +419,7 @@ Expanding the archive resolvent as a Neumann series exposes the discrete structu
 + \sum_{k=0}^{\infty} (P_N U_N Q_N)\,(Q_N U_N Q_N)^{k}\,(Q_N U_N P_N).
 ```
 
-The phenomenological "passage of time" is algebraically identical to the discrete index `k`: time is the algorithmic delay caused by phase information circulating inside the sterile archive `(Q U Q)^k` before its eventual observable return to the active boundary. This welds the archive nullity-30 to the temporal index. [^b06-21]. Do NOT cite a `vp_*` token — no Feshbach-Schur-time cert exists.
+The phenomenological "passage of time" is algebraically identical to the discrete index `k`: time is the algorithmic delay caused by phase information circulating inside the sterile archive `(Q U Q)^k` before its eventual observable return to the active boundary. This welds the archive nullity-30 to the temporal index. [^b06-21]. No Feshbach-Schur-time certificate exists yet.
 
 The archive increment of a finite state `rho_N` is measured schematically by
 
@@ -487,7 +483,7 @@ fixed detector support
 -> smooth macro-ordered finite evolution shadow
 ```
 
-The Lean owner is `D0.Topology.TilingHull` (`d0_hull_has_phi_cut_project_origin`, `d0_hull_is_nonperiodic`, `d0_hull_supports_gap_labeling`). The certificate owner is `05_CERTS/vp_d0_tiling_hull.py` (`PASS_D0_TILING_HULL`).
+The hull, its φ cut-and-project origin, its non-periodicity and its support for gap labeling are carried by the Lean tiling-hull owner and discharged by the finite tiling-hull certificate.
 
 ## 06.10 Uncertainty as a finite-window protocol
 
@@ -724,9 +720,9 @@ with the first arrow being the declared dressing dictionary and the second arrow
 
 The guardrail is strict.  RG evolution is not allowed to repair a failed D0 invariant by adding new degrees of freedom.  It may only transport a fixed finite boundary object through an explicitly declared external evolution law.
 
-### Why the bridge is a forgetting map (the forcing v14 had dropped)
+### Why the bridge is a forgetting map (the forcing)
 
-The bridge above is correct as a discipline object, but v14 stated it as a guardrail without the forcing that makes the guardrail necessary. The forcing is that RG running is *itself* the same typed quotient `Delta_N`, viewed at the QFT level — not a separate dynamical law that happens to look like forgetting. Three M1-failure repairs, imported from GOLDEN BOOK-II, establish this.
+The bridge above is correct as a discipline object, but a guardrail alone does not show the forcing that makes the guardrail necessary. The forcing is that RG running is *itself* the same typed quotient `Delta_N`, viewed at the QFT level — not a separate dynamical law that happens to look like forgetting. Three M1-failure repairs establish this.
 
 **[LEM 06.20.A] A Feynman loop IS a closed light-cycle, and D0 loops create mass and charge [^b06-26].** A "quantum loop" in a Feynman diagram is not a drawing on paper. A diagram in D0 is an equivalence class `[gamma]_~` of histories sharing one topology (loop count, branch vertices, exits), so a loop in that class is literally a closed light-cycle `P` of the kind BOOK_04 owns from the cycle/holonomy structure. The consequence is a sign flip against standard QFT: in QFT loops give *corrections* to mass and charge; in D0 loops *create* mass and charge (the mass/charge themselves are cycle/holonomy facts, owned downstream by BOOK_04). The two readings are not interchangeable, and the difference is exactly what the next lemma localizes.
 
@@ -749,7 +745,7 @@ g(k) := \pi_{k+1\to k}\bigl(g(k+1)\bigr) + r_k,
 
 with `r_k` the bounded `kappa`-residue of the level (the coarse-graining error, capped by the refinement protocol). There are no additional free counter-terms in CORE. By reduction under M1: a free counter-term not fixed by `pi_{k+1 -> k}` would be an entry the theory must store as an exogenous parameter — an external catalog of interaction strength, which M1 forbids exactly as it forbids a coupling constant `lambda` not equal to `1` or a power of `phi`. Hence the effective charge `g(k)` is a function of the graph statistics `G_k`, measured on the graph, not inserted by hand. This is the CORE-side reason the guardrail above is strict: RG may transport the boundary object through `pi`, but it may not smuggle in a new degree of freedom, because there is no slot to store one.
 
-These four repairs do not re-derive the bridge dictionary, the `Lambda_act` boundary or the retained/traced split — those stay owned by their canonical sections (BOOK_03 owns `Lambda_act`; BOOK_01 owns the `F_N` feedback operator and the retained/traced split; BOOK_04 owns mass/charge from cycle/holonomy). They restore the *why* v14 had dropped: that Wilsonian RG is a typed forgetting map because running, divergence and loop-generated mass are all readings of one scale-indexed projection `pi`, and any deviation from it would require an external catalog M1 rules out. The graph-Laplacian RG-flow direction is checked at cert level by `vp_archive_laplacian_rg_flow.py`. The forcing-by-contradiction discipline itself is DEF-0.2.2.
+These four repairs do not re-derive the bridge dictionary, the `Lambda_act` boundary or the retained/traced split — those stay owned by their canonical sections (BOOK_03 owns `Lambda_act`; BOOK_01 owns the `F_N` feedback operator and the retained/traced split; BOOK_04 owns mass/charge from cycle/holonomy). They supply the *why*: that Wilsonian RG is a typed forgetting map because running, divergence and loop-generated mass are all readings of one scale-indexed projection `pi`, and any deviation from it would require an external catalog M1 rules out. The graph-Laplacian RG-flow direction is checked at cert level by the finite Laplacian RG-flow certificate. The forcing-by-contradiction discipline itself is DEF-0.2.2.
 ## 06.21 Claim-level RG bridge guardrail
 
 The RG/forgetting identification is a typed bridge, not a licence to import arbitrary continuum structure.  A Wilsonian step is admissible only when it is presented as a forgetting morphism from a declared finite D0 source object:
@@ -965,7 +961,7 @@ quasicrystal_order_not_periodic_lattice.
 
 ## 06.30a Time evolution over the φ-quasicrystalline hull
 
-Time evolution over the D0 vacuum is represented as translation dynamics on the $\varphi$-quasicrystalline tiling hull. The continuous flow on this hull projects the discrete phase steps into smooth invariant averages under the cut-and-project setup. The formal Lean owner is `D0.Topology.TilingHull` (`d0_hull_has_phi_cut_project_origin`, `d0_hull_is_nonperiodic`, `d0_hull_supports_gap_labeling`). Verification is performed by `05_CERTS/vp_d0_tiling_hull.py` (`PASS_D0_TILING_HULL`) and `05_CERTS/vp_gap_labeling_d0_tiling_hull.py`.
+Time evolution over the D0 vacuum is represented as translation dynamics on the $\varphi$-quasicrystalline tiling hull. The continuous flow on this hull projects the discrete phase steps into smooth invariant averages under the cut-and-project setup. The hull, its φ cut-and-project origin, its non-periodicity and its support for gap labeling are carried by the Lean tiling-hull owner; verification is performed by the finite tiling-hull and gap-labeling certificates.
 
 ### Why the hull-flow has a canonical phase↔time scale (no external coefficient)
 
@@ -975,7 +971,7 @@ $$
 u = \varepsilon^2\, t = \varphi^{-16}\, t .
 $$
 
-Forcing argument: any alternative $k\varepsilon$ or $m\varepsilon^2$ with $k,m\neq 1$ smuggles an external coefficient $k$ or $m$ into the phase↔time map. M1 (physics = what survives self-distinguishability without an external catalog) forbids importing an external number, so $k=m=1$ is the only admissible normalization, and $u=\varepsilon^2 t=\varphi^{-16}t$ is unique. **Status: FORCED** [^b06-30]. This is the canonical-scale closure of the earlier remark that the heat-trace scale is internal (and of $\xi_5=\varphi^{-5}$, the torus-address integerization defect, `05_CERTS/vp_xi5_torus_defect.py`, `PASS_XI5_TORUS_DEFECT`): both are scene-internal because both refuse external coefficients.
+Forcing argument: any alternative $k\varepsilon$ or $m\varepsilon^2$ with $k,m\neq 1$ smuggles an external coefficient $k$ or $m$ into the phase↔time map. M1 (physics = what survives self-distinguishability without an external catalog) forbids importing an external number, so $k=m=1$ is the only admissible normalization, and $u=\varepsilon^2 t=\varphi^{-16}t$ is unique. **Status: FORCED** [^b06-30]. This is the canonical-scale closure of the earlier remark that the heat-trace scale is internal (and of $\xi_5=\varphi^{-5}$, the torus-address integerization defect, discharged by the finite ξ5 torus-defect certificate): both are scene-internal because both refuse external coefficients.
 
 ### Connectivity defect and the fiber factorization (heat-trace building blocks)
 
@@ -1002,7 +998,7 @@ P_{\mathrm{fib}}(t)=P_{\mathrm{space}}(t)\cdot P_{\mathrm{scene}}(\varepsilon^2 
 d_{\mathrm{fib}}(t)=d_{\mathrm{space}}(t)+d_{\mathrm{scene}}(\varepsilon^2 t).
 $$
 
-These are the load-bearing pieces of heat-trace time, not Weyl asymptotics added by hand. **Status: FORCED** [^b06-31]. Spectral-dimension / Weyl scaling of the factorized heat trace is checked by `05_CERTS/vp_archive_heat_trace_weyl_dimension.py` (`PASS_ARCHIVE_HEAT_TRACE_WEYL_DIMENSION`) and `05_CERTS/vp_trace_heat_capacity_gravity.py`.
+These are the load-bearing pieces of heat-trace time, not Weyl asymptotics added by hand. **Status: FORCED** [^b06-31]. Spectral-dimension / Weyl scaling of the factorized heat trace is checked by the finite heat-trace Weyl-dimension and heat-capacity certificates.
 
 ### Heat-Trace Time: the arrow is a corollary, not a postulate
 
@@ -1068,7 +1064,7 @@ The continuous RG equation is the interpolation shadow of this ladder. The bridg
 
 The φ-discrete RG ladder may be read as a sequence of frozen operator bands. Spectral gaps in these bands are admissible only when they carry hull/K0 labels.
 
-The formal Lean owner is `D0.Matter.KTheoryGapLabeling` (`gap_labeling_requires_frozen_operator` and `d0_gap_labels_are_countable`), and the verification certificate is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py` (`PASS_D0_GAP_LABELING_TILING_HULL`).
+The requirement that gap labels live on a frozen operator and form a countable set is carried by the Lean K-theory gap-labeling owner, and discharged by the finite gap-labeling certificate.
 
 ## 06.32 Canonical cyclic phase distance and forgetting geometry
 
@@ -1105,7 +1101,7 @@ L_{n+1}
   -> compare with L_n by scale plus residual.
 ```
 
-Lean records the strict operator no-go, while the RG certificate `vp_archive_laplacian_rg_flow.py` checks the effective quadratic-form flow. For the canonical phase projection the projected residual is zero with scale `1`; the strict pullback commutator remains a rank-2 seam defect. This is now the ordered finite evolution meaning of archive curvature in the forgetting layer: not deletion, but the measured failure of strict flat pullback transport.
+Lean records the strict operator no-go, while the finite RG certificate checks the effective quadratic-form flow. For the canonical phase projection the projected residual is zero with scale `1`; the strict pullback commutator remains a rank-2 seam defect. This is now the ordered finite evolution meaning of archive curvature in the forgetting layer: not deletion, but the measured failure of strict flat pullback transport.
 
 ## 06.34 Refinement seam as archive forgetting boundary
 
@@ -1115,18 +1111,18 @@ The current seam layer makes the forgetting boundary explicit. Energy descends e
 C_n = L_{n+1} B_n - B_n L_n.
 ```
 
-The seam is the finite boundary where one additional refined phase point is folded back into the coarser archive cycle. The certificate `vp_archive_seam_curvature_action.py` verifies that this defect is rank `2`, supported on four seam entries, and has HS density `4`. Thus the traced-out complement forgetting boundary is not an uncontrolled loss term; it is the finite seam where curvature is measured.
+The seam is the finite boundary where one additional refined phase point is folded back into the coarser archive cycle. The finite seam-curvature certificate verifies that this defect is rank `2`, supported on four seam entries, and has HS density `4`. Thus the traced-out complement forgetting boundary is not an uncontrolled loss term; it is the finite seam where curvature is measured.
 
 ### Why the seam cannot close: the gluing anomaly forces residual dynamics
 
-The non-vanishing commutator `C_n` is not an artifact of one particular lift; it is the v14 carrier of a CORE obstruction. The seam glues a finer refinement layer onto the coarser archive cycle, and that gluing carries a non-zero anomaly: the seam defect cannot be transported away by any choice of `B_n`. Write `Δα` for this gluing anomaly — the algebraic-minus-topological mismatch measured at the seam [^b06-40]. The forcing runs by contradiction against M1 (DEF-0.2.2):
+The non-vanishing commutator `C_n` is not an artifact of one particular lift; it is the carrier of a CORE obstruction. The seam glues a finer refinement layer onto the coarser archive cycle, and that gluing carries a non-zero anomaly: the seam defect cannot be transported away by any choice of `B_n`. Write `Δα` for this gluing anomaly — the algebraic-minus-topological mismatch measured at the seam [^b06-40]. The forcing runs by contradiction against M1 (DEF-0.2.2):
 
-- CORE: `Δα ≠ 0`. The seam commutator `C_n` is the v14 witness — rank `2`, HS density `4`, certified by `vp_archive_seam_curvature_action.py`. A vanishing anomaly would require `C_n ≡ 0`, i.e. `L_{n+1} B_n = B_n L_n`, which the certificate falsifies.
+- CORE: `Δα ≠ 0`. The seam commutator `C_n` is the witness — rank `2`, HS density `4`, certified by the finite seam-curvature certificate. A vanishing anomaly would require `C_n ≡ 0`, i.e. `L_{n+1} B_n = B_n L_n`, which the certificate falsifies.
 - Suppose, for contradiction, the system could relax fully — drive the residual seam curvature to zero. Full relaxation means the refined layer folds back into the archive cycle with no leftover defect, i.e. the seam is closed exactly. But closing a seam with `Δα ≠ 0` requires an external object that supplies the missing gluing data — an external catalog against which the refinement could be re-indexed without paying the anomaly.
 - M1 forbids exactly such an external catalog: physics is what survives the requirement to distinguish itself *without* an external catalog. So no catalog is available; the seam cannot be closed; full relaxation is impossible.
 - Therefore an inevitable residual remains at every seam. This residual is not noise to be eliminated — it is the **origin of dynamics**: because the seam never closes, the lifted transport must keep moving, and that forced motion is what time and evolution are in D0 [^b06-41].
 
-[^b06-39] — the v14 certificate `vp_archive_seam_curvature_action.py` discharges the CORE leg (`Δα ≠ 0` via `C_n` rank `2`, HS density `4`); the M1 no-catalog step and the "origin of dynamics" lift remain a cert obligation open at the BRIDGE level. `Δα` as a named CORE invariant is owned downstream (BOOK_03); this section cites it as the seam-local anomaly and does not re-derive it.
+[^b06-39] — the finite seam-curvature certificate discharges the CORE leg (`Δα ≠ 0` via `C_n` rank `2`, HS density `4`); the M1 no-catalog step and the "origin of dynamics" lift remain a cert obligation open at the BRIDGE level. `Δα` as a named CORE invariant is owned downstream (BOOK_03); this section cites it as the seam-local anomaly and does not re-derive it.
 
 This reframes the forgetting boundary one level deeper. §06.34's first half showed the seam is where curvature is *measured* (finite, rank-2, not an uncontrolled loss). The gluing-anomaly forcing shows *why there is a seam to measure at all*: a closable seam would need an M1-forbidden external catalog, so the finite defect `C_n` — and with it the descent of energy across the traced-out complement — is structurally inevitable rather than incidental.
 ## 06.35 Internal cone speed and the role of time
@@ -1180,14 +1176,14 @@ D0.Bridge.finite_lorentz_tick_gauge_no_split_export
 
 The macroscopic Lorentz bridge may integrate this finite carrier into smooth spacetime kinematics, but it may not change the core cone speed, add a second elementary speed, or export Euclidean/split signature as the D0 internal geometry.
 
-### 06.36 — Why signature (1,3) and not (4,0), (2,2): the 3+1 split is forced (not posted)
+### 06.36.1 — Why signature (1,3) and not (4,0), (2,2): the 3+1 split is forced (not posted)
 
 The carrier above states the signature (1,3) as a closed FACT; the forcing of *why* (1,3) is the only admissible split is recorded here. The "3" and the "1" are two DIFFERENT objects, which is exactly why there is no 3-vs-2 conflict [^b06-43]:
 
 - **"3" = rank of the K(9,11,13) scene adjacency** — the 3 non-zero transport modes (space = graph spectrum). Scene ownership is BOOK_01 (K(9,11,13), rank 3 / nullity 30); cite, do not re-derive. These 3 directions are non-Pisot and reversible: reversible space.
 - **"1" = a single toral time flow** — one modular automorphism of the time torus T = [[0,1],[1,-1]] on T^2. This is one object, not a fourth spatial mode, so the "3" (rank) and the "2" (degree of the minimal M1-admissible field Q(phi)) do not collide.
 
-The Lorentzian asymmetry (3,1) is therefore: **3 non-Pisot reversible space directions vs 1 Pisot time flow**. This is a strictly stronger forcing than the v14 default, which derives the time arrow only as feedback-channel ordering (a non-Pisot, weaker statement). The upgrade:
+The Lorentzian asymmetry (3,1) is therefore: **3 non-Pisot reversible space directions vs 1 Pisot time flow**. This is a strictly stronger forcing than deriving the time arrow only as feedback-channel ordering (a non-Pisot, weaker statement). The upgrade:
 
 ```text
 arrow of time = Pisot contraction of the Galois conjugate (|psi| < 1)
@@ -1195,7 +1191,7 @@ arrow of time = Pisot contraction of the Galois conjugate (|psi| < 1)
 
 Because phi is Pisot in degree 2 (|psi| = (sqrt5 - 1)/2 = 0.618 < 1), the Galois conjugate psi of the toral spectrum contracts under forward iteration of T. That contraction is the time arrow: it is intrinsic to the Pisot spectrum of T, not added by hand, and it does not touch the 3 non-Pisot space directions (which stay reversible). The feedback-channel ordering of the earlier formulation survives as a *consequence* of this contraction, not as its source.
 
-Status: FORCED. Cert: `vp_galois_lorentz_signature.py` (Galois trace layers ActiveArchiveTrace(2,3,5) = 3, -4, -11; det(T^n)^2 = 1; roleSignature = (1,3), no Euclidean/split export). [^b06-44]
+Status: FORCED, discharged by the finite Galois–Lorentz signature certificate (Galois trace layers ActiveArchiveTrace(2,3,5) = 3, -4, -11; det(T^n)^2 = 1; roleSignature = (1,3), no Euclidean/split export). [^b06-44]
 
 The spin-2 wave operator uses the same terminal discrete evolution step/Lorentz carrier in concrete
 finite form:
@@ -1232,7 +1228,7 @@ dtau := |ds| = sqrt(1 - v^2),     gamma = dt/dtau = 1/sqrt(1 - v^2).
 
 The Lorentz factor `gamma = 1/sqrt(1 - v^2)` is then automatic. Time dilation is the strict thermodynamic rationing of a finite readout cycle: a cycle that spends more of its unit budget on external transport has less left to advance its own phase, so it ages less. Negative control: any update rule that violates symplectic-area preservation immediately loses relativistic invariance — the `|dx|^2 + |ds|^2 = 1` partition is what *is* the invariance.
 
-[^b06-42]. This is a core M1-style derivation (budget-rationing, not geometry); the symplectic-area-budget cert is not yet in 05_CERTS/ and must not be cited until it lands. [^b06-45]
+[^b06-42]. This is a core M1-style derivation (budget-rationing, not geometry); the symplectic-area-budget certificate has not yet landed. [^b06-45]
 
 Gravity ordered finite evolution exports remain internal until a bridge is declared:
 
@@ -1241,11 +1237,11 @@ c_D0 = 1 discrete evolution step gauge
 eta4 terminal signature
 ```
 
-DSS echoing (critical gravitational collapse) is the log-time recurrence counterpart of finite ordered finite evolution recurrence at a capacity boundary. It is not ordinary smooth evolution; it is discrete self-similar log-periodic readout at the horizon threshold (see Book 07 07.49 and D0-GRAV-DSS-00x).
+DSS echoing (critical gravitational collapse) is the log-time recurrence counterpart of finite ordered finite evolution recurrence at a capacity boundary. It is not ordinary smooth evolution; it is discrete self-similar log-periodic readout at the horizon threshold (see Book 07 07.49).
 
-Finite horizon capacity saturation is an ordered finite evolution halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref D0-BH-CAP-00x and Book 07 07.50).
+Finite horizon capacity saturation is an ordered finite evolution halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref Book 07 07.50).
 
-delta0 finite readout cut: heat trace scale is internal, not SI time.
+δ₀ finite readout cut: heat trace scale is internal, not SI time.
 ## 06.37 φ⁵ torus invariant and ordered finite evolution quasicrystal geometry (Phi^5 Torus Invariant)
 
 The D0 memory torus uses a dimensionless internal geometry invariant:
@@ -1278,7 +1274,7 @@ phi^5 = 11 + phi^-5         (L_5 = 11)
 xi5  := phi^-5 = phi^5 - 11 = phi^5 - L_5
 ```
 
-So the torus address `phi^5` splits *exactly* into its integer address `11` and the defect `xi5`. `xi5` is therefore the integerization defect of the memory-torus address — owned, not fitted. This welds three facts the v14 books otherwise carried apart: the `xi5 = phi^-5` invariant (this section), the `|Tr(T^5)| = 11` time-return (06.37.1 below; BOOK_06 03.23 echo), and the GOLDEN "11 + xi5" address language.
+So the torus address `phi^5` splits *exactly* into its integer address `11` and the defect `xi5`. `xi5` is therefore the integerization defect of the memory-torus address — owned, not fitted. This welds three facts that otherwise sit apart: the `xi5 = phi^-5` invariant (this section), the `|Tr(T^5)| = 11` time-return (06.37.1 below; BOOK_06 03.23 echo), and the "11 + xi5" address language.
 
 The same `xi5` then drives the α-form as a derived term, not an inserted one:
 
@@ -1294,7 +1290,7 @@ Status boundary (per GOLDEN §16.3, unchanged): the numeric line `alpha^-1 = 359
 
 Status: THE / CERT-CLOSED.
 
-The promotion of `xi5` from tuned correction to owned defect is machine-closed by cert `vp_xi5_torus_defect.py` — exact arithmetic in `Z[phi]` (elements `a + b*phi` with `phi^2 = phi + 1`), zero floats:
+The promotion of `xi5` from tuned correction to owned defect is machine-closed by the finite ξ5 torus-defect certificate — exact arithmetic in `Z[phi]` (elements `a + b*phi` with `phi^2 = phi + 1`), zero floats:
 
 ```text
 (i)   phi^5 = 11 + phi^-5  exactly:   3 + 5*phi = 11 + (-8 + 5*phi)
@@ -1324,7 +1320,7 @@ The odd-`n` traces are the time-side image of the address split above: `Tr(T^5) 
 ## 06.39 Phason flips and finite rewrite inertia
 
 The ordered finite evolution transport layer now has an operator-origin reading inside the
-phi-quasicrystalline support.  Runtime transport through aperiodic support
+φ-quasicrystalline support.  Runtime transport through aperiodic support
 requires phason flips under acceleration; inertia is the finite rewrite cost of
 maintaining admissible support.
 
@@ -1336,12 +1332,12 @@ InertialCost
 phason_flip_drag_positive_cost
 ```
 
-The certificate `vp_phason_flip_inertia.py` checks that uniform admissible
+The finite phason-flip-inertia certificate checks that uniform admissible
 phase transport has the minimal flip count, acceleration increases
 window-crossing events, and the excess flip count is a scale-free rewrite cost
 before any SI calibration.
 
-## 06.v15 Time as completed trace production
+## 06.40 Time as completed trace production
 
 Time is the ordered index of stable trace production. A clock tick is the completed \(\Omega_8\to V_9\) detector closure. For \(p=\varphi^{-1}\), the retained/archive recursion is
 
@@ -1381,7 +1377,7 @@ In a continuum envelope parameter \(s\) (the logarithmic tick coordinate) this i
 R''(s)=(\log\varphi)^2\,e^{s\log\varphi}>0 .
 \]
 
-The active component decays exponentially in finite tick depth; the *relative* archive ratio **accelerates**, because its denominator is the shrinking retained component, not because anything is added externally. This strictly positive second derivative is the time-layer origin of the internal cosmological mechanism that Book 08 carries to the continuum — Book 08 inherits this convexity, it does not re-postulate an acceleration. Status: FORCED (convexity is algebraic in \(\varphi\)); the archive-measure convex-order domination underpinning the Book 08 transfer is certified (cert `vp_archive_convex_order_domination.py`). (forcing: GOLDEN v17 BOOK_06 §06.6, \(R_t=\varphi^t-1\), \(R''>0\).)
+The active component decays exponentially in finite tick depth; the *relative* archive ratio **accelerates**, because its denominator is the shrinking retained component, not because anything is added externally. This strictly positive second derivative is the time-layer origin of the internal cosmological mechanism that Book 08 carries to the continuum — Book 08 inherits this convexity, it does not re-postulate an acceleration. Status: FORCED (convexity is algebraic in \(\varphi\)); the archive-measure convex-order domination underpinning the Book 08 transfer is discharged by the finite convex-order-domination certificate.
 
 ### Why the time layer is two-dimensional (toral, forced)
 
@@ -1403,7 +1399,7 @@ This is forced, not chosen. The minimal M1-admissible field is \(\mathbb{Q}(\var
 \dim(\text{time layer})=\deg\big(\text{minimal M1-field}\big)=\deg\mathbb{Q}(\varphi)=2,
 \]
 
-so the time layer is \(T\) acting on the 2-torus and the first orientation-preserving return is the squared operator \(T^2\). Status: FORCED (degree of the minimal M1-field; cert `vp_time_2d_pisot.py`). [^b06-50]
+so the time layer is \(T\) acting on the 2-torus and the first orientation-preserving return is the squared operator \(T^2\). Status: FORCED (degree of the minimal M1-field), discharged by the finite 2D-Pisot time certificate. [^b06-50]
 
 **Feature, not bug — smooth symbolic dynamics.** In degree 2, \(\varphi\) is Pisot: its Galois conjugate \(\psi\) satisfies \(|\psi|=\varphi^{-1}=0.618<1\). Pisot spectrum is exactly the condition for a **smooth Adler–Weiss Markov partition** of the toral automorphism, so the symbolic dynamics of the clock is perfect (no boundary pathology). *cite:* Adler–Weiss, PNAS 57 (1967) 1573. Status: FORCED (Pisot \(\Rightarrow\) Adler–Weiss). [^b06-51]
 
@@ -1424,7 +1420,7 @@ the Galois-balanced trace with sign. One time step reverses orientation, \(\det 
 h_{\mathrm{KS}}=\log|\lambda_{\max}|=\log\varphi .
 \]
 
-Status: FORCED / certified (cert `vp_toral_automorphism_galois_balance.py`; the address defect \(\xi_5=\varphi^{-5}\) of this torus is separately certified, cert `vp_xi5_torus_defect.py`). [^b06-52] The entropy comb \(I_f=\log\varphi=h_{\mathrm{KS}}(T)\) is the owner of the Book 09 GW passport target; that ownership is recorded there, not re-derived here.
+Status: FORCED / certified by the finite toral-automorphism Galois-balance certificate; the address defect \(\xi_5=\varphi^{-5}\) of this torus is separately discharged by the finite ξ5 torus-defect certificate. [^b06-52] The entropy comb \(I_f=\log\varphi=h_{\mathrm{KS}}(T)\) is the owner of the Book 09 GW passport target; that ownership is recorded there, not re-derived here.
 
 ### Apparent running of constants is a finite-resolution projection artefact
 
@@ -1441,7 +1437,7 @@ Hence the apparent flow is
 g(k)=g_0\,\big(1+O(\varphi^{-k})\big),
 \]
 
-where the \(O(\varphi^{-k})\) coefficients are computed from the projection/spectral statistics at level \(k\) — **with no new constants introduced**. The \(\varphi^{-k}\) suppression is the same self-similar tick ladder that drives \(A_t=\varphi^{-t}A_0\): running and forgetting are one mechanism viewed at one resolution. Status: FORCED (running \(=\) projection statistics, not external \(\beta\)-functions); the projected effective Laplacian renormalizes exactly under the canonical phase projection \(x\mapsto x\bmod(n{+}2)\) (cert `vp_archive_laplacian_rg_flow.py`). The QFT \(\beta\)-function scheme passports for SM-comparison remain strict passport work (cert `vp_v1133_qft_rg_scheme_passports.py`). [^b06-53]
+where the \(O(\varphi^{-k})\) coefficients are computed from the projection/spectral statistics at level \(k\) — **with no new constants introduced**. The \(\varphi^{-k}\) suppression is the same self-similar tick ladder that drives \(A_t=\varphi^{-t}A_0\): running and forgetting are one mechanism viewed at one resolution. Status: FORCED (running \(=\) projection statistics, not external \(\beta\)-functions); the projected effective Laplacian renormalizes exactly under the canonical phase projection \(x\mapsto x\bmod(n{+}2)\), discharged by the finite Laplacian RG-flow certificate. The QFT \(\beta\)-function scheme passports for SM-comparison remain strict passport work under their own certificate. [^b06-53]
 
 ----
 
@@ -1451,7 +1447,7 @@ Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.
 
 Electron-beam dusty-plasma experiments are admitted as an external bridge for the Book 06 claim that a finite readout medium is active rather than passive. In the bridge dictionary, the electron beam is a directed readout, dust grains are archive-capacity sinks, and the measured plasma channel is co-produced by beam propagation and archive loading. The laboratory fact that dust loading changes beam deposition, density profiles, and plasma-cloud geometry supports the finite-readout principle at the level of an external analogue.
 
-This bridge does not close a core theorem. In particular, the golden mass-loss and acoustic log-phi proposals remain external experimental targets, not Book 06 proofs.
+This bridge does not close a core theorem. In particular, the golden mass-loss and acoustic log-φ proposals remain external experimental targets, not Book 06 proofs.
 
 
 ## Apparatus — sources & open obligations

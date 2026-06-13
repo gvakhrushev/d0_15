@@ -6,7 +6,7 @@
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
 
-## 05.v15 Active closure law
+## 05.0 Active closure law and centralized no-go ledger
 Book 05 classifies every active claim as core theorem, sector theorem, operator scaffold, bridge law, empirical passport, or no-go theorem; completion means a finite operator plus falsification boundary. `OPERATOR-SCAFFOLD-CERTIFIED` is positive internal carrier closure but not an external physical spectrum; `SPIN-FLAVOUR-CARRIER-CERTIFIED` means a finite spin-flavour carrier and its inclusion/decomposition algebra are certified before external physical labels. `SPIN-FLAVOUR-TRANSFER-CERTIFIED` is the prior transfer layer name now refined to carrier certification. `SCALAR-PROJECTOR-CERT-CLOSED`, `YUKAWA-SECTION-CERT-CLOSED` and `MESON-TYPED-TRANSFER-CERT-CLOSED` close the corresponding Book 04 operator boundaries at the finite projector/typed-operator level (no second mass anchor, flavour defect only via liftGen, K0 gap labels after freeze).
 
 ### Centralized no-go ledger
@@ -16,7 +16,7 @@ All repeated forbidden shortcuts and no-gos from Books 00–08 are collected her
 ### Phase-unfolding reference
 
 owner: D0.Geometry.PhaseUnfoldingQuasicrystal
-Full theorem (tick order -> irrational phi^-2 phase -> finite return modulus -> residue branches, q_T=44, q_EW=710) lives only in Book 01 (and proof spine Book 02). All other occurrences replaced by the cross-reference "By the Phase-Unfolding Theorem (D0.Geometry.PhaseUnfoldingQuasicrystal), ...".
+Full theorem (tick order -> irrational φ⁻² phase -> finite return modulus -> residue branches, q_T=44, q_EW=710) lives only in Book 01 (and proof spine Book 02). All other occurrences replaced by the cross-reference "By the Phase-Unfolding Theorem (D0.Geometry.PhaseUnfoldingQuasicrystal), ...".
 
 SCALAR-PROJECTOR-CERT-CLOSED: finite rank-2 scalar projector exists, is unique on the frozen doublet, commutes with FrozenSU2_X/Z, and preserves single-section discipline.
 
@@ -24,7 +24,7 @@ YUKAWA-SECTION-CERT-CLOSED: finite Yukawa block map is compatible with the certi
 
 MESON-TYPED-TRANSFER-CERT-CLOSED: finite typed edge-generation meson transfer operator exists, is self-adjoint/positive, places flavour defect only via liftGen, and preserves K0 gap-label discipline.
 
-MASTER-BOOTSTRAP-CORE: the stationary condition on the combined heat-trace + feedback-determinant functional is the v15 final bootstrap principle (finite object + variation + no second scale).
+MASTER-BOOTSTRAP-CORE: the stationary condition on the combined heat-trace + feedback-determinant functional is the final bootstrap principle (finite object + variation + no second scale).
 
 GAUGE-BOUNDARY-LAW: color confinement is the commutator obstruction preventing terminal stable poles for non-singlet states (finite lower-bound target on F_N).
 
@@ -183,7 +183,7 @@ When this book later classifies a hard-problem entry, the row asserts only that
 steps 1--4 are present and that step 5's executable PASS/FAIL exists or is an open
 cert obligation.  No cert filename is asserted here; a hard-problem claim whose
 VER package is not yet built carries [^b05-1]
-until a real, committed cert in `05_CERTS/` discharges it.
+until a real, committed finite certificate discharges it.
 ## 05.2 Verification as finite measurement
 
 Verification in D0 is itself a finite detector operation.  A statement is not
@@ -293,15 +293,15 @@ The register has two tiers: three **soft joints** (the DEF-0.2.2 schema is decla
 
 **Soft joints (DEF-0.2.2 declared, not yet closed):**
 
-1. **Role-lists 4 and 5 — orbit argument missing.** The two role alphabets must be forced as equivalence classes of distinguishing procedures (role = orbit), not asserted as a by-hand enumeration. Support echo: the factorization `(ℤ/44)* = 4 × 5` is already owned downstream (BOOK_01 THE-A: terminal window `q_T = ABCD · V11 = 44`, `|G| = φ_E(44) = 20 = d13`, splitting as `4 × 5`). What is open is the *orbital-uniqueness* theorem identifying the role lists with that orbit decomposition. [^b05-7] — the count ladder is certified; the role↔orbit identification is not yet discharged by a `vp_*` cert [^b05-15].
+1. **Role-lists 4 and 5 — orbit argument missing.** The two role alphabets must be forced as equivalence classes of distinguishing procedures (role = orbit), not asserted as a by-hand enumeration. Support echo: the factorization `(ℤ/44)* = 4 × 5` is already owned downstream (BOOK_01 THE-A: terminal window `q_T = ABCD · V11 = 44`, `|G| = φ_E(44) = 20 = d13`, splitting as `4 × 5`). What is open is the *orbital-uniqueness* theorem identifying the role lists with that orbit decomposition. [^b05-7] — the count ladder is certified; the role↔orbit identification is not yet discharged by a finite certificate [^b05-15].
 
 2. **Parity step `+2` — conjugacy to `Z(Q₈)` missing.** The `+2` carrier expansion has *three independent witnesses* — Lucas parity, the `Q₈` sheet, and the square `T²` of toral time — each owned upstream (Lucas/orientation face: GOLDEN THE 3.11.B, `trace_T_pow_eq_signed_lucas` in BOOK_02/BOOK_03; `det T = −1` orientation class). What is open is the *formal conjugacy* of these foliation sheets to the center `Z(Q₈)`, collapsing the three witnesses into one forced step. This is the soft joint closest to closure. [^b05-8] — promotion needs the conjugacy written out, not a new numeric check [^b05-16].
 
-3. **Class-5 aliasing exclusion (Cabibbo chain) — formulated, not formalized.** The exclusion of the class-5 aliasing branch in the Cabibbo chain is stated as a forcing target but the contradiction is not yet driven to a finite witness. [^b05-9] — formulated, not formalized; no `vp_*` cert is registered for the exclusion step [^b05-17].
+3. **Class-5 aliasing exclusion (Cabibbo chain) — formulated, not formalized.** The exclusion of the class-5 aliasing branch in the Cabibbo chain is stated as a forcing target but the contradiction is not yet driven to a finite witness. [^b05-9] — formulated, not formalized; no finite certificate is registered for the exclusion step [^b05-17].
 
 **Owner/closure obligations:**
 
-4. **`Δ_α` analytic owner — open.** The seam anomaly `Δ_α = |α⁻¹_top − α⁻¹_alg| ~ 4.15e-4` is the irreducible residue between two independent canonizations of `α⁻¹`; `Δ_α ≠ 0` is itself forced by M1 (a hidden identity rule `Δ_α = 0` would be an external dictionary, which M1 forbids — forcing: GOLDEN REM 16.3.SE). The seam-`α` invariant is checked by the EXISTING cert `vp_pdg_strict_passport.py`, and the residual is held at CHK in the EXISTING cert `vp_xi5_torus_defect.py` ("NOT promoted to THE until `Δ_α` receives an analytic owner"). What is open is the *analytic owner* — the theorem that derives `Δ_α` rather than measuring it; the dynamical/closure-defect reading is owned downstream (BOOK_04, BOOK_06). [^b05-10] for the analytic owner; the seam numbers and neutrino readout carry their own certs and are not duplicated here [^b05-18].
+4. **`Δ_α` analytic owner — open.** The seam anomaly `Δ_α = |α⁻¹_top − α⁻¹_alg| ~ 4.15e-4` is the irreducible residue between two independent canonizations of `α⁻¹`; `Δ_α ≠ 0` is itself forced by M1 (a hidden identity rule `Δ_α = 0` would be an external dictionary, which M1 forbids — forcing: GOLDEN REM 16.3.SE). The seam-`α` invariant is checked by an existing finite certificate, and the residual is held at CHK in an existing finite certificate ("NOT promoted to THE until `Δ_α` receives an analytic owner"). What is open is the *analytic owner* — the theorem that derives `Δ_α` rather than measuring it; the dynamical/closure-defect reading is owned downstream (BOOK_04, BOOK_06). [^b05-10] for the analytic owner; the seam numbers and neutrino readout carry their own certs and are not duplicated here [^b05-18].
 
 5. **Tower-stop theorem (why the tower stops, not `V₁₅`).** Why the structural tower terminates where it does rather than continuing to a `V₁₅` floor is sketched via rational capture but not closed as a theorem. [^b05-11] — sketch exists (rational-capture route); no standalone stop-theorem cert is registered [^b05-19].
 
@@ -367,7 +367,7 @@ This is the methodological law that stands behind the whole table above. State i
 
 Each row is owned and proven in its book; Book 05 records only the *verification status* — that the object reached CORE by classification/uniqueness and not by selection. The deprecated reflex — "a selected number written in a table ⇒ finite selector theorem" — is already row 18 of the forbidden-shortcuts table above; this principle is the positive statement of the same firewall and the two must be read together.
 
-**Verification obligation.** The general principle is closed (it reduces to GOLDEN LEM 0.4.4 / THE 0.4.5). The *per-object* executable witness — a certificate that mechanically rules out the nearby fitted alternatives for `K(9,11,13)` and for the memoryless-detector branching law — is **[^b05-22]**: the v17 draft named cert tokens for these (a "minimal readout carrier" classification cert and a "memoryless detector automaton" cert) but no such cert exists under `05_CERTS/`, so none is cited here. Until those certs land, the per-object closure rests on the BOOK_01/BOOK_03 derivations plus the §05.6 hostile-uniqueness controls, which is sufficient for CORE status but not yet a standalone executable classification witness.
+**Verification obligation.** The general principle is closed (it reduces to GOLDEN LEM 0.4.4 / THE 0.4.5). The *per-object* executable witness — a certificate that mechanically rules out the nearby fitted alternatives for `K(9,11,13)` and for the memoryless-detector branching law — is **[^b05-22]**: a "minimal readout carrier" classification certificate and a "memoryless detector automaton" certificate are named as obligations, but no such certificate yet exists, so none is cited here. Until those certificates land, the per-object closure rests on the BOOK_01/BOOK_03 derivations plus the §05.6 hostile-uniqueness controls, which is sufficient for CORE status but not yet a standalone executable classification witness.
 
 A shortcut that survives every row of the table but fails this principle — an object that merely *fits* — is still a forbidden shortcut. It is the one the table cannot catch, and the one this section exists to name.
 ## 05.9 Negative controls and hostile uniqueness
@@ -422,7 +422,7 @@ Rules for gap labels:
 4. External data may compare, never choose labels.
 5. Post-hoc relabeling after PDG/BAO/CKM comparison is a FAIL.
 
-The formal verification owner is `05_CERTS/vp_gap_labeling_d0_tiling_hull.py`, which must print `PASS_D0_GAP_LABELING_TILING_HULL`. The underlying Lean formalization of gap stability is checked by `D0.Matter.KTheoryGapLabeling`.
+The formal verification owner is a finite gap-labeling certificate over the D0 tiling hull, which must return PASS. The underlying Lean formalization of gap stability is checked by its named Lean owner.
 
 ## 05.11 External-data and scheme discipline
 
@@ -461,7 +461,7 @@ IceCube, LIGO, CMB, BAO and galaxy-lensing external comparison protocols require
 4. parameter-count ledger;
 5. no hidden retuning.
 
-The certificate owners are `05_CERTS/vp_phason_domain_wall_mesons.py` (`PASS_PHASON_DOMAIN_WALL_MESONS_K0_LABELS`), `05_CERTS/vp_ckm_phason_holonomy_k0.py` (`PASS_CKM_PHASON_HOLONOMY_K0`), and `05_CERTS/vp_phason_flip_entropy_sde.py` (`PASS_PHASON_FLIP_ENTROPY_SDE_GAP_LABELS`). They must run under this frozen regime.
+The owners are the finite certificates for phason domain-wall mesons (K0 labels), CKM phason holonomy (K0), and phason-flip entropy SDE (gap labels). They must run under this frozen regime.
 
 ## 05.12 Theory-improvement gate
 
@@ -502,7 +502,7 @@ Admissible destructive test cases include:
 - N/Z-only SRC scalar failure;
 - density-only SRC scalar failure.
 
-The nuclear SRC destructive tests are owned by `D0.Matter.NuclearShellContactSRC`. The CaFe finite witness blocks promotion of a mass-only, neutron-excess-only or density-only scalar because the dominant readout is the matched proton/neutron shell-contact projector overlap.
+The nuclear SRC destructive tests are owned by their named Lean owner. The CaFe finite witness blocks promotion of a mass-only, neutron-excess-only or density-only scalar because the dominant readout is the matched proton/neutron shell-contact projector overlap.
 
 ## 05.13 Current inherited priority gates
 
@@ -691,9 +691,8 @@ frozen.
 
 Spin-2 closure is accepted only with an explicit TT projector, a basis-wide
 certificate on all ten elements of `Sym(4)`, trace and gauge annihilation,
-the stress-coupling theorem, and no GR constants.  The public certificate name
-is `vp_finite_spin2_wave_operator.py`; it checks the same concrete projector as
-the Lean owner `D0.Geometry.FiniteSpin2WaveOperator`.
+the stress-coupling theorem, and no GR constants.  The public finite spin-2
+wave-operator certificate checks the same concrete projector as the Lean owner.
 
 The operator/passport rule is strict: operator first, passport second, no PDG tuning, no geometry diagnostic as core source; Torus geometry is core; PDG shell alignment is passport and may not tune a core operator.
 
@@ -754,7 +753,7 @@ forces it.
 3. **A reliable time-variation of `alpha`** [^b05-35].  `alpha` is a fixed D0 invariant forced by discrete-topology rigidity; a
    genuine drift in `alpha` breaks that rigidity.
 
-[^b05-26]  # the three instant-death switches restate forced facts (3-zone scene, node stability, alpha-rigidity) as falsification conditions; no dedicated kill-switch vp_*.py yet
+[^b05-26]
 
 ### 05.15.0.2 The verification lattice `S_L` and the choice `L = 129`
 
@@ -785,7 +784,7 @@ same `S_L` / `L = 129` lattice over `K(9,11,13)` used downstream for D0-time
 epochs (BOOK_06-owned, `u = epsilon^2 t`); here it is the *why* of the size, not
 just its use.
 
-[^b05-27]  # the L=129 plateau-convergence derivation (101 fails ~3.92e-3, 129 passes <1e-12) has no vp_*.py owner yet
+[^b05-27]
 
 ### 05.15.0.3 Machine exclusion registry (single source of truth)
 
@@ -799,7 +798,7 @@ two tables may not diverge.
 | F-alpha | gluing-anomaly inequality | `Delta_alpha` from §16.3 forms | `Delta_alpha ≥ epsilon^2` → D0 excluded at level alpha (parameter-free) |
 | F-mu | mu-check | `m_mu/m_e` | relerr `> epsilon^2` → D0 excluded at level alpha (parameter-free) |
 | F-p | p-check | `m_p/m_e` | relerr `> epsilon^2` → D0 excluded at level alpha (parameter-free) |
-| F-spec | 30-dim kernel | spectrum of `A` for `K(9,11,13)` | `dim ker(A) ≠ 30` → scene is wrong (cert: `vp_kernel_zone_split.py`) |
+| F-spec | 30-dim kernel | spectrum of `A` for `K(9,11,13)` | `dim ker(A) ≠ 30` → scene is wrong (kernel zone-split certificate) |
 | F-nu | neutrino scale | `sum m_nu`, `m_beta` | `sum m_nu` stably outside the window from `m_nu/m_e ~ Delta_alpha^2` (BOOK_04 / GOLDEN 16.3.7–16.3.9) → re-calibrate BRIDGE mapping |
 | B-z | acceleration onset | reconstruct `q(z)=0` | `z_acc` stably outside the BRIDGE window → re-calibrate BRIDGE mapping |
 | B-tau_n | neutron lifetime | `tau_n` bottle/beam | `tau_n` stably matches beam and excludes bottle → re-calibrate BRIDGE mapping |
@@ -821,12 +820,12 @@ mirrors:
   (GOLDEN REM 19.Fnu).
 
 F-spec is the one fully Fatal row already discharged at cert level: the existing
-`vp_kernel_zone_split.py` checks, in exact integer linear algebra, that the
+kernel zone-split certificate checks, in exact integer linear algebra, that the
 adjacency operator of `K(9,11,13)` on `N=33` vertices has rank 3 (space) and
 nullity 30 (archive), with the zone split `30 = 8 + 10 + 12`.  Any recomputation
 giving `dim ker(A) ≠ 30` falsifies the scene.
 
-[^b05-28]  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n exclusion IDs are not yet individually owned by vp_*.py; only F-spec (dim ker = 30) is discharged by vp_kernel_zone_split.py
+[^b05-28]
 
 ### 05.15.0.4 The M1 root of the matrix: no external catalog at any layer
 
@@ -845,7 +844,7 @@ makes the matrix binding: a theory permitted to consult an external catalog coul
 always quietly repair a failed invariant; D0 cannot, so a failed invariant is
 final.
 
-[^b05-29]  # the ZF-realizability + full-AC-needs-oracle forcing (M1 applied to set theory) has no vp_*.py owner in v14 yet
+[^b05-29]
 
 ### 05.15.1 PDG Strict Passport Protocol
 
@@ -991,11 +990,11 @@ create a new primitive, choose a hidden parameter or mutate the archive object.
 ### 05.20.1 The anomalous-claims consistency protocol [^b05-44]
 
 The rule above states *what a cosmology comparison must carry* but not *which
-concrete thresholds make an "anomalous-effect" claim pass or fail*.  v14 carried
-the general falsification-hook / BRIDGE-proof-cell discipline (05.15, 05.8) but
-dropped the packaged protocol with spine-forced numbers.  That protocol is
-restored here.  It is not a new freedom: every threshold below is forced off
-already-owned spine objects, so the protocol adds *teeth*, not parameters.
+concrete thresholds make an "anomalous-effect" claim pass or fail*.  The general
+falsification-hook / BRIDGE-proof-cell discipline (05.15, 05.8) is sharpened here
+into a packaged protocol with spine-forced numbers.  It is not a new freedom:
+every threshold below is forced off already-owned spine objects, so the protocol
+adds *teeth*, not parameters.
 
 A consistency check is a BRIDGE protocol on data `D = (raw, Π, ε²)`: `raw` is the
 input measurement, `Π` is the frozen translation protocol (normalizations,
@@ -1054,9 +1053,9 @@ topological anomaly — it is ordinary instrumental or astrophysical modulation 
 and the suite returns FAIL.  This is the same `Δα` that drives the neutrino
 seam beat (BOOK_04 04.9), reused, not re-derived.
 
-No `vp_*.py` cert yet executes THE 05.20.CONSIST-RATIO / GEOM / SPECTRA /
-ANOMALY as a single PASS/FAIL package; the obligation is open.  Until a cert
-exists, a claim that "passes the D0 consistency protocol" has status
+No finite certificate yet executes THE 05.20.CONSIST-RATIO / GEOM / SPECTRA /
+ANOMALY as a single PASS/FAIL package; the obligation is open.  Until such a
+certificate exists, a claim that "passes the D0 consistency protocol" has status
 `PROOF-TARGET`, not `CERT-CLOSED`, and may not be promoted to an
 `EMPIRICAL-PASSPORT` on protocol grounds alone.
 
@@ -1082,7 +1081,7 @@ Book 05 proves the verification grammar of the corpus: D0 claim status is typed 
 Book 05 is a coherent contract, not a release diary or storage box. Historical material belongs outside active books unless integrated into the relevant rule.
 
 ## 05.25 Standard-language and external-runner compression
-D0-local terms are allowed in headings, Lean owners and cert names; prose must pair them with standard finite objects. External protocols run through `05_CERTS/DATA_RUNNERS/run_external_passports.py` and write `08_PASSPORTS/_RESULTS/`; PASS requires pinned data/hash/fields/baseline and no retuning.
+D0-local terms are allowed in headings, Lean owners and cert names; prose must pair them with standard finite objects. External protocols run through the external-passport runner and write to the passport results store; PASS requires pinned data/hash/fields/baseline and no retuning.
 
 ## 05.26 Trace-heat-capacity and empirical no-go summary
 Trace-heat-capacity gravity is split: core = detector ladder, Lucas traces, heat moments, scene counts and A/4 capacity; bridge = macro gravity witness. No-go controls include SRC scalar-only controls, LIGO spin-only, SPARC arbitrary-kernel repair, DESI root/window/H0/Omega_m/rd refit, continuum topology/theta primitives and continuum Yang-Mills mass-gap import.
@@ -1092,10 +1091,10 @@ Closed-vacuum feedback uses `F_N=P_NU_N^\dagger Q_NU_NP_N` as feedback-return an
 
 The partition function is `Z_N=Tr exp(-beta Delta_N(V)) det(I-zF_N(V))^{-1}` and feedback pressure uses finite `d_V`. Matter candidates may use `F_N psi=r psi`; complex masses/widths require `U_eff=P_NU_NP_N` or Feshbach-Schur. Baryon F3a/F3b/F3c are scaffold/spin-flavour/Core13-link certified before PDG labels.
 
-## 05.28 v15 closure classes
+## 05.28 Closure classes
 Closure classes: `MASTER-BOOTSTRAP-CORE`, `GAUGE-BOUNDARY-LAW`, `HORIZON-EMISSION-LAW`, `EDGE-TRACE-COEFFICIENT-TARGET`, `SCALAR-PROJECTOR-CERT-CLOSED`, `YUKAWA-SECTION-CERT-CLOSED`, `MESON-TYPED-TRANSFER-CERT-CLOSED`, `SPIN-FLAVOUR-CARRIER-CERTIFIED`. Forbidden shortcuts: continuum volume derivative before finite halt, second mass anchor, rank-40 as full baryon carrier, rank boundary as A/4 proof, complex poles from bare positive `F`, PDG names before frozen poles, thermality as primitive horizon emission and alpha by post-hoc RG fit.
 
-## 05.v15 Informational mechanics and seam closure classes
+## 05.29 Informational mechanics and seam closure classes
 
 ### Closure classes
 

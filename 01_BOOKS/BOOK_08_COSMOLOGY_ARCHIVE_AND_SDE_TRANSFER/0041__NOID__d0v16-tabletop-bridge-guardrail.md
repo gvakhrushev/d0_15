@@ -1,4 +1,4 @@
-## D0_v16 Tabletop bridge guardrail
+## Tabletop bridge guardrail
 
 **Publication note on external bridge limits.** Tabletop plasma behaviour is admitted here only as an external active-medium bridge. It is not a cosmological proof and does not bypass survey/passport discipline.
 

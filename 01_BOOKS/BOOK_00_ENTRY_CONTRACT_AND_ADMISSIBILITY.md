@@ -6,7 +6,7 @@
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
 
-## 00.v15 Active entry contract
+## 00.16 Active entry contract
 
 D0 v15 is a finite-observability framework over condensed/profinite quasicrystalline support. The primitive object is the finite/profinite support with admissible projections and finite tick maps. The closed-vacuum feedback operator
 
@@ -127,7 +127,7 @@ M1 is not one axiom among several; it is **the single law**, and everything else
 - **Algebraically** — minimality (MDL/Kolmogorov): the shortest record, empty catalog.
 - **Operationally** — no hidden degrees of freedom: it is forbidden to keep a side-register "which one of."
 
-φ and M1 are *one object read statically and dynamically* (duality lemma; φ forcing owned in BOOK_01 §, from `p+p^2=1`). The self-description equation `p^2+p=1` is not a branch-balance: it **defines the object through its own dynamics** — whole = one act + the act applied to itself. Not "an object that has a dynamics," but "an object that **is** its own recursion." Falling = looping = rational capture = keeping a repetition catalog = ⊥M1.
+φ and M1 are *one object read statically and dynamically* (duality lemma; φ forcing owned in BOOK_01 §01.6, from `p+p^2=1`). The self-description equation `p^2+p=1` is not a branch-balance: it **defines the object through its own dynamics** — whole = one act + the act applied to itself. Not "an object that has a dynamics," but "an object that **is** its own recursion." Falling = looping = rational capture = keeping a repetition catalog = ⊥M1.
 
 ### Method: forcing-by-contradiction, not enumeration
 
@@ -154,9 +154,9 @@ The two-level M1 reading concentrates into one rigid operator rule [^b00-15]:
 From this principle the structural spine emerges by exact algebraic obstruction, not by choice. Two of these routes give independent (non-algebraic) derivations of facts BOOK_01 forces algebraically:
 
 1. **2D Gleason closure.** A non-degenerate symplectic form requires a minimal 2D phase space; enforcing area-preservation there topologically forces the quadratic Born response (the Born/quadratic-response closure is owned in §00.13; this route corroborates it from the symplectic side). [^b00-5] for the symplectic-route statement.
-2. **Fibonacci fusion bottleneck.** The strict absence of hidden memory forces the readout to obey the minimal non-trivial topological fusion rule `τ ⊗ τ = 1 ⊕ τ`, isolating φ as the exact minimal quantum dimension permitted by the Jones subfactor index. This is a *second* route to φ, independent of the algebraic forcing `p+p^2=1` owned in BOOK_01 §. [^b00-6] for the fusion/Jones route.
-3. **Discrete Darboux extensions.** The structural carrier expands strictly via conjugate symplectic pairs (`+2`), generating the unique `K(9,11,13)` tripartite tensor network — a topological route to the scene that BOOK_01 reaches combinatorially (three necessities ⇒ three zones; scene owned in BOOK_01 §). [^b00-7] for the Darboux-route statement.
-4. **Topological index.** The dimensionless action cycle emerges as the homological rank-nullity index of this holographic carrier (rank 3 = space, nullity 30 = traced archive); the action section `Λ_act = 38` is owned in BOOK_03 §, not re-derived here.
+2. **Fibonacci fusion bottleneck.** The strict absence of hidden memory forces the readout to obey the minimal non-trivial topological fusion rule `τ ⊗ τ = 1 ⊕ τ`, isolating φ as the exact minimal quantum dimension permitted by the Jones subfactor index. This is a *second* route to φ, independent of the algebraic forcing `p+p^2=1` owned in BOOK_01 §01.6. [^b00-6] for the fusion/Jones route.
+3. **Discrete Darboux extensions.** The structural carrier expands strictly via conjugate symplectic pairs (`+2`), generating the unique `K(9,11,13)` tripartite tensor network — a topological route to the scene that BOOK_01 reaches combinatorially (three necessities ⇒ three zones; scene owned in BOOK_01 §01.8). [^b00-7] for the Darboux-route statement.
+4. **Topological index.** The dimensionless action cycle emerges as the homological rank-nullity index of this holographic carrier (rank 3 = space, nullity 30 = traced archive); the action section `Λ_act = 38` is owned in BOOK_03 §03.18, not re-derived here.
 
 Because the principle forces the Fibonacci rule `τ ⊗ τ = 1 ⊕ τ`, the readout operation `τ` has no algebraic inverse: the fundamental symmetry is a **non-invertible categorical symmetry**, so structural time-irreversibility is an algebraic inevitability rather than a statistical artifact, and unitarity is recovered only as an emergent low-energy shadow. [^b00-8].
 
@@ -169,7 +169,7 @@ Observable sectors are represented by standard finite objects over this support:
 F_N=P_NU_N^\dagger Q_NU_NP_N,\qquad Q_N=I-P_N.
 ```
 
-This feedback object is not primitive support and is not the Born/readout response.  The same retained/archive split also distinguishes the positive readout/Born response `R_N=D_N^\dagger D_N` and the compressed effective dynamics `U_{eff}=P_NU_NP_N` from this feedback resolvent (F_N feedback operator owned in BOOK_01 §).
+This feedback object is not primitive support and is not the Born/readout response.  The same retained/archive split also distinguishes the positive readout/Born response `R_N=D_N^\dagger D_N` and the compressed effective dynamics `U_{eff}=P_NU_NP_N` from this feedback resolvent (F_N feedback operator owned in BOOK_01 §01.2).
 
 Closed-vacuum feedback owner: `D0.Dynamics.InternalFeedbackResolvent`. The no-external-boundary rule is `external_mirror_model_forbidden`: because the support has no outside, every attempted escape from the retained sector can only reappear as internal boundary response. This is M1 read operationally — there is no outside to escape to, hence no external catalog to escape into.
 
@@ -426,7 +426,7 @@ If the answer is yes, the result remains a stress test.  If the answer is no, th
 
 ### The law the firewall enforces: M1
 
-The firewall is not a heuristic — it is the operational face of the single law the whole D0 spine is forced from. BOOK_00 owns the statement of that law; everything below restores the *why* the v14 facts (no-monopoly, no fitted catalog) were dropped from.
+The firewall is not a heuristic — it is the operational face of the single law the whole D0 spine is forced from. BOOK_00 owns the statement of that law; everything below states *why* the firewall facts (no-monopoly, no fitted catalog) hold.
 
 **Exogenous parameter — the thing M1 forbids [^b00-24].** An *exogenous parameter* (background dependence) is required-but-underivable structure — a constant table, an exception list, an external label, an index-scheme, a choice rule — satisfying all three clauses at once:
 
@@ -474,14 +474,14 @@ Proof (by contradiction): suppose an exogenous parameter is mandatory yet distin
 E[\text{accidental}] = (\text{local density})\times 2\,|\text{miss}|
 ```
 
-— the expected number of chance hits no worse than the one found. In isolation `E ~ 1` is noise. Strength comes *only* from family-coherence plus out-of-sample (numbers that were never targets, measured by independent processes). This is how the CKM quadruple became strong: `gamma, beta, alpha, J` are independent consequences of four constants — a coherent family, not four separate fits. The CKM-quadruple coherence is held by EXISTING certs (`vp_ckm_exact_matrix_certificate.py`, with the external-convention firewall in `vp_ckm_holonomy_external_convention_passport.py`). The general E-accounting *procedure* itself has no cert owner. [^b00-22]  # grammar-frozen-before-data + E[accidental] look-elsewhere protocol has no vp_*.py owner
+— the expected number of chance hits no worse than the one found. In isolation `E ~ 1` is noise. Strength comes *only* from family-coherence plus out-of-sample (numbers that were never targets, measured by independent processes). This is how the CKM quadruple became strong: `gamma, beta, alpha, J` are independent consequences of four constants — a coherent family, not four separate fits. The CKM-quadruple coherence is held by an existing finite certificate carrying its own external-convention firewall passport. The general E-accounting *procedure* itself has no cert owner. [^b00-22]
 
 **Self-guillotine — the machine must kill its own finds [^b00-42].** Two worked rejections from this corpus, kept as the firewall's calibration:
 
 - `sin^2 theta_12 = 9/40` — **rejected**: `40` lives only on the degree scale, i.e. a Babylonian catalogue; failing clause 3 of DEF 0.3.1 it is an exogenous label, banned by M1.
 - `|lambda_3|/|lambda_2| ~ 2/phi` — **discarded**: `0.15%` miss with large `E`; E-accounting kills it as noise.
 
-M1 thus acts as an automatic numerology filter, and the operational rule is absolute: **a cert that cannot return `FAIL` is not a cert** [^b00-43]. [^b00-23]  # the two self-guillotine rejections (9/40, 2/phi) have no FAIL-returning vp_*.py witness in this section yet
+M1 thus acts as an automatic numerology filter, and the operational rule is absolute: **a cert that cannot return `FAIL` is not a cert** [^b00-43]. [^b00-23]
 
 (Owner note: BOOK_01 owns `phi`-from-`(p+p^2=1)`, `delta0`, the `F_N` feedback operator and the role alphabet; BOOK_03 owns `Lambda_act`. BOOK_00 keeps M1/M1+ and the admissibility contract — the law and its firewall — and cites the downstream `phi`-facts rather than re-deriving them.)
 ## 00.9a Gap-label firewall
@@ -563,7 +563,7 @@ A proof object owns the theorem.  A certificate evaluates a finite invariant or 
 
 The constructive hierarchy is enforced by a two-layer typing of every promoted claim.  This split is not editorial taste; it is the only way M1 (no exogenous catalog) survives contact with SI/PDG observables, and D0 fixes its two layers by definition [^b00-44].
 
-**CORE.**  A CORE statement is derivable *only* from the axioms and constructions of the corpus inside the internal algebra — typically `\mathbb Q(\varphi)` (the field BOOK_01 forces from `p+p^2=1`; see BOOK_01 §) and the finite combinatorial objects of the scene `K(9,11,13)` — with no appeal to external numerical constants and no hand-chosen SI scale.  A CORE statement must be:
+**CORE.**  A CORE statement is derivable *only* from the axioms and constructions of the corpus inside the internal algebra — typically `\mathbb Q(\varphi)` (the field BOOK_01 forces from `p+p^2=1`; see BOOK_01 §01.6) and the finite combinatorial objects of the scene `K(9,11,13)` — with no appeal to external numerical constants and no hand-chosen SI scale.  A CORE statement must be:
 
 1. **finite/constructive** — it is an explicit construction, not an existence claim resting on choice or a continuum limit;
 2. **representation-invariant** — invariant under any computable bijective re-encoding `f` of codes that preserves meaning-equivalence and the distinguishability bit `\Delta` [^b00-45]; changing alphabet/encoding moves only the carrier, never the `{0,1}` content;
@@ -618,19 +618,18 @@ A pure change of status vocabulary is not theory improvement.  A claim improves
 only when a proof owner, no-go, executable certificate or external passport
 removes a concrete ambiguity.
 
-Concrete Book 04 selectors: `chargedLeptonElectronTerminalClaim`,
-`electroweakDepth35Claim`, `protonReadout306Claim`,
-`neutronArchiveSiblingClaim`, `betaUnlockDepth19Claim`.  Book 04 selectors as
-abstract labels are not enough.
+Book 04 carries named finite selectors for the charged-lepton electron terminal,
+the electroweak depth, the proton readout, the neutron archive sibling and the
+beta-unlock depth.  Such selectors named as abstract labels are not enough: each
+must discharge a concrete ambiguity through its proof owner or certificate.
 
-CKM basis origin: `ckm_origin_candidate_matrix_unique` and
-`ckm_no_free_matrix_at_fixed_basis_origin` state that up/down bases are selected
-by finite basis-origin selectors.
+CKM basis origin: the finite basis-origin selectors establish that the candidate
+origin matrix is unique and that no free matrix survives at a fixed basis origin,
+so the up/down bases are selected rather than fitted.
 
-finite spin-2 derivation: `FiniteWeakFieldQuotient`,
-`finite_weak_field_quotient_yields_tt_representative` and
-`finite_conserved_stress_spin2_coupling_closed` replace the forbidden shortcut
-`Poisson-like response therefore GR`.
+Finite spin-2 derivation: the finite weak-field quotient yields a transverse-traceless
+representative and a closed conserved-stress spin-2 coupling, which replace the
+forbidden shortcut "Poisson-like response therefore GR".
 
 ## 00.15 Assertion discipline
 
@@ -644,7 +643,7 @@ support -> admissible operator -> positive response or finite trace -> quotient/
 
 **Born quadratic-response closure.** D0 no longer treats the raw Born response as a supplied positive list. A finite phase-quadrature atom admits the general quadratic response `a x^2+bxy+c y^2`; internal quarter-turn phase blindness forces `a=c` and `b=0`, hence the response is a scalar multiple of `x^2+y^2`, and unit calibration gives the finite `D†D` response. Only after this step does finite normalization produce probabilities.
 
-## 00.v15 Self-substrate trace and informational mechanics
+## 00.17 Self-substrate trace and informational mechanics
 
 D0 assumes no external vacuum, no external observer and no background arena. Motion is the production of an internal trace by the same finite substrate that continues to evolve. A detector is an internal terminal readout node; an observer is not a primitive.
 
