@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 06 — Evolution, Forgetting, and Time
 
 > **Publication status — v16 publication-proofread draft.**

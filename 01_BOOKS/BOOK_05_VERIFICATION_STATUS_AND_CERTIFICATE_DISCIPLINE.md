@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 05 — Verification, Proof Ownership, and Certificate Discipline
 
 > **Publication status — v16 publication-proofread draft.**

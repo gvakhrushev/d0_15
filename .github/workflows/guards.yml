@@ -39,6 +39,9 @@ jobs:
       - name: prose<->registry cert references
         run: python tools/check_book_cert_references.py
 
+      - name: books assembled from per-section sources (idempotent)
+        run: python tools/check_book_assembly.py
+
       - name: lean aggregates idempotent (generated, not hand-edited)
         run: |
           python tools/generate_lean_aggregates.py --check --only claimmap

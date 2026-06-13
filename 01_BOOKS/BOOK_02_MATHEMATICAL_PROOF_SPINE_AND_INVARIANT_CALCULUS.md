@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 02 — Mathematical Proof Spine and Invariant Calculus
 
 > **Publication status — v16 publication-proofread draft.**

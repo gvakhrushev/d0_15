@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 00 — Entry Contract and Admissibility Discipline
 
 > **Publication status — v16 publication-proofread draft.**

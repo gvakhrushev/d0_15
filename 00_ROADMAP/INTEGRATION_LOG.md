@@ -248,3 +248,28 @@ real concepts over-skipped). Headline drops confirmed: M1 (THE 0.4.1) + DEF-0.2.
 M1+ canonization machinery absent/partial; the topological forcing chain (distinguishable-return
 memory → two loops → torus → defect-necessity → shell+φ → step+2) kept as *results* in v14, not as
 *forcing arguments*. This ledger's `integrate` rows are the exact BR3 worklist.
+
+---
+
+## BR1 — per-section book infrastructure (split + assemble + guard)
+
+Mirror the Lean refactor for the books: per-section files = source, the monolithic book
+= a generated view. So agents rewrite one section with zero merge conflict (same property
+as per-claim Lean modules), and the book never drifts from its sections.
+
+- **`tools/split_books.py`** (idempotent): byte-lossless split of each `01_BOOKS/BOOK_0X_*.md`
+  on `## ` (level-2) boundaries into `01_BOOKS/<book>/<seq>__<sectionid>__<slug>.md` —
+  **10 books → 341 section files**. Self-checks losslessness (concat == original) and refuses
+  to write a lossy split.
+- **`tools/assemble_books.py`** (`--check`): regenerates `BOOK_0X.md` = deterministic banner +
+  section files in document order. Verified lossless: every book diffs **exactly `+1 -0`** vs
+  pre-split (only the `<!-- AUTO-ASSEMBLED … -->` banner; all prose byte-identical). Status-table
+  injection deliberately deferred until a normalized `book_section` column exists (keeps the
+  round-trip verifiable through BR2/BR3).
+- **`tools/check_book_assembly.py`** (CI guard, wired into `guards.yml`): fails if any book is
+  stale vs its sections (idempotence), on orphan book/dir, or on malformed/non-contiguous section
+  filenames. PASS: 10 books, 341 sections, all idempotent.
+
+Full Python guard suite stays green; `d0_score` strength unchanged at **2660/3767 (70.6%)**
+(pure restructure, no claim-status change). The 341 section files are the BR4 parallel-rewrite
+unit; BR2 (dedup/ordering/stale) and BR3 (integrate the BR0 forcing rows) operate on them next.

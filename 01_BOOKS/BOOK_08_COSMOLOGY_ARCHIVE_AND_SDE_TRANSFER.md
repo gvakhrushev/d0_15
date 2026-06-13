@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 08 — Cosmology, Archive, and Observable Transfer
 
 > **Publication status — v16 publication-proofread draft.**

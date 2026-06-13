@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 03 — Finite Action Operators and Scene Dynamics
 
 > **Publication status — v16 publication-proofread draft.**

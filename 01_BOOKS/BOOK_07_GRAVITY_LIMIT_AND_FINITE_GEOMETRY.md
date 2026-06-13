@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 07 — Gravity Limit and Finite Geometry
 
 > **Publication status — v16 publication-proofread draft.**

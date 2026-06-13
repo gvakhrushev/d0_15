@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 04 — Spectrum, Matter, and Finite Selector Theory
 
 > **Publication status — v16 publication-proofread draft.**

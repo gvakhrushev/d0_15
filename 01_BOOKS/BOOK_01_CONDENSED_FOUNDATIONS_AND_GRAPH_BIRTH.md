@@ -1,3 +1,4 @@
+<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 01 — Condensed Foundations, Finite Registration, and Construction of the Finite Incidence Graph
 
 > **Publication status — v16 publication-proofread draft.**
