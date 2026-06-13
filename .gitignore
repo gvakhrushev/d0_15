@@ -73,3 +73,6 @@ Thumbs.db
 .env
 env/
 node_modules/
+
+# BR0 coverage-audit scratch (chunk manifest + per-batch source slices); final ledger lives at 03_THEORY_MAP/GOLDEN_COVERAGE_LEDGER.*
+03_THEORY_MAP/coverage_audit/

@@ -213,3 +213,38 @@ E8_QUANTUM_CRITICAL / NUFIT_PMNS / H0_EVOLVING_W; D0-ARCHIVE-NOT-STERILE-NU-001 
 Lean L3->L4 for all 25 existing PYTHON_CERTIFIED claims (the +5 worklist). Harvest v17
 legitimate reach then delete `_QUARANTINE/v17_overshoots/` (8E). The two `_OPEN_WITNESSES`
 sorry files are gravity-sector L4 obligations.
+
+---
+
+## BR0 — GOLDEN→v14 coverage audit (chunk-by-chunk; the "nothing-missed" gate)
+
+Root cause the books refactor must fix: much of GOLDEN's *forcing engine* was silently dropped
+from v14 (M1 itself among it) — v14 keeps downstream *facts* but not the *why*. A structure-first
+refactor would re-lose it, so coverage comes FIRST, by code, with an explicit verdict per chunk.
+
+- **`tools/chunk_sources.py`** (deterministic): splits the three co-primary source layers —
+  GOLDEN `add/d0-main/books/BOOK_I..VI`, v17 `_QUARANTINE/v17_overshoots/01_BOOKS/` (more
+  idea-rich), transfer docs `add/files/` — into **1029 chunks / 47 uniform ~18 KB batches**,
+  one chunk per `[DEF/THE/LEM/COR/BRIDGE]` formal statement (~335) + heading span. Idempotent;
+  scratch under `03_THEORY_MAP/coverage_audit/` (gitignored).
+- **Audit Workflow** (`br0-coverage-audit`, 68 agents): 47 audit agents (one per batch, each
+  greps the v14 books to judge present/partial/absent) → barrier → 21 per-source-book
+  **completeness critics** that re-check `already-present` (weaker restatement? the M1 failure
+  mode) and `skip` (dropped value?). 4.6M subagent tokens, ~51 min.
+- **`tools/build_coverage_ledger.py`** (deterministic): aggregates the agent row files against
+  the chunk manifest and **FAILS if any chunk lacks a verdict** (the nothing-missed guarantee is
+  a checkable property, not a hope). Output: canonical `03_THEORY_MAP/GOLDEN_COVERAGE_LEDGER.csv`
+  (1 row/chunk) + `.md` view (integrate worklist, core-forcing first; partial/weaker table).
+
+**Result (every chunk has a verdict; exit 0):** 1029 rows = **562 integrate** (198 core-forcing),
+338 skip, 129 already-present. present_in_v14: **289 absent · 285 partial/weaker (M1 failure
+mode) · 132 fully present**. Integrate by source: golden 410, transfer 78, v17 74 (v17+transfer
+surfaced 152 real items beyond GOLDEN — co-primary call paid off). Core-forcing integrate by
+target book: BOOK_02 39, BOOK_04 37, BOOK_06 29, BOOK_01 27, BOOK_00 20, BOOK_03 18, BOOK_07 16,
+BOOK_05 9, BOOK_08 3 (the BR3/BR4 distribution). All **3 v17 overshoots quarantined** (22 skips
+naming Immutable/Grand-Singularity-Lock, Golod–Shafarevich 1/160, fabricated OpenAI-2026). Critic
+applied **12 revisions** (caught both failure modes: weaker-restatement mislabeled already-present;
+real concepts over-skipped). Headline drops confirmed: M1 (THE 0.4.1) + DEF-0.2.2 forcing schema +
+M1+ canonization machinery absent/partial; the topological forcing chain (distinguishable-return
+memory → two loops → torus → defect-necessity → shell+φ → step+2) kept as *results* in v14, not as
+*forcing arguments*. This ledger's `integrate` rows are the exact BR3 worklist.
