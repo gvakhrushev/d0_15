@@ -38,12 +38,5 @@ theorem d0_gap_labels_are_countable (sys : GapLabelingSystem) (h_canon : sys = c
   rw [h_canon]
   rfl
 
-theorem gap_labeling_requires_frozen_operator (stmt : Prop) (h : stmt) : stmt := h
-
-theorem meson_domain_wall_spectrum_admits_k0_labels (stmt : Prop) (h : stmt) : stmt := h
-
-theorem ckm_holonomy_spectrum_admits_k0_labels (stmt : Prop) (h : stmt) : stmt := h
-
-theorem archive_pressure_spectrum_admits_k0_labels (stmt : Prop) (h : stmt) : stmt := h
 
 end D0.Matter

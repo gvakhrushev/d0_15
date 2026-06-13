@@ -8,6 +8,5 @@ structure NonCommutativeSolenoid where
   noncommutative_product : Prop
   profinite_internal_space : Prop
 
-theorem d0_hull_admits_noncommutative_solenoid_model (stmt : Prop) (h : stmt) : stmt := h
 
 end D0.Geometry

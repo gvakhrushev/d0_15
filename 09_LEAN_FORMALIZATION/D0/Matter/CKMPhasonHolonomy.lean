@@ -159,8 +159,5 @@ theorem ckm_matrix_is_phason_holonomy_on_torus_core13 :
       ckmPhasonHolonomyClosure.curvature,
       ckmPhasonHolonomyClosure.cp_twist⟩
 
-theorem torus_shell_noncommutator_defines_phason_connection_curvature (stmt : Prop) (h : stmt) : stmt := h
-theorem ckm_holonomy_has_k_theory_class (stmt : Prop) (h : stmt) : stmt := h
-theorem ckm_cp_phase_is_oriented_noncommutative_area (stmt : Prop) (h : stmt) : stmt := h
 
 end D0.Matter

@@ -30,6 +30,9 @@ jobs:
       - name: no sorry/axiom in core+bridge+all
         run: python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
 
+      - name: no identity-tautology theorems (Lean must be valuable, not for-show)
+        run: python tools/check_no_tautology_proofs.py
+
       - name: claim<->lean coverage
         run: python 09_LEAN_FORMALIZATION/tools/check_claim_map_coverage.py
 

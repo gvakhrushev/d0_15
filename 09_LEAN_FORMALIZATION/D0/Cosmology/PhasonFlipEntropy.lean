@@ -94,7 +94,5 @@ def phasonFlipEntropySDEClosure :
   characteristic_eq_sde := phason_flip_transfer_matrix_has_sde_polynomial
   roots_are_modes := sde_roots_are_phason_flip_relaxation_modes
 
-theorem sde_relaxation_modes_have_gap_labels (stmt : Prop) (h : stmt) : stmt := h
-theorem archive_pressure_spectrum_is_gap_labeled (stmt : Prop) (h : stmt) : stmt := h
 
 end D0.Cosmology

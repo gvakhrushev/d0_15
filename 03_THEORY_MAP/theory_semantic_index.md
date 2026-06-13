@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 58
-- `CORE-FORMALIZED`: 98
+- `CERT-CLOSED`: 67
+- `CORE-FORMALIZED`: 89
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 10
@@ -20,18 +20,18 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 67
-- `core`: 99
+- `certificate`: 76
+- `core`: 90
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
 
 ## Domain counts
 
-- `cosmology`: 24
-- `empirical_passport`: 15
+- `cosmology`: 22
+- `empirical_passport`: 16
 - `external_background`: 1
-- `formal_core`: 121
+- `formal_core`: 122
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -315,32 +315,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: Closed finite feedback operator core F_N=P_N U_N^dagger Q_N U_N P_N with resolvent determinant trace variation and feedback pressure law.
 
-### D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `cosmology`
-- book: `BOOK_07/08`
-- module: `D0.Cosmology.PhasonFlipEntropy`
-- theorem: `Cosmology.phason_flip_entropy_nonnegative;Cosmology.archive_pressure_is_phason_flip_entropy_osmosis;Cosmology.phason_flip_transfer_matrix_has_sde_polynomial;Cosmology.sde_roots_are_phason_flip_relaxation_modes`
-- cert: `vp_phason_flip_entropy_sde.py`
-- assumptions: `none`
-- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
-- notes: Finite formal S_DE owner: archive pressure is phason-flip entropy osmosis and the finite transfer characteristic is 160 lambda^2 - 480 lambda + 359; external BAO/DESI survey comparison is a passport/certificate and not core.
-
-### D0-SDE-K0-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `cosmology`
-- book: `BOOK_08`
-- module: `D0.Cosmology.PhasonFlipEntropy`
-- theorem: `Cosmology.sde_relaxation_modes_have_gap_labels;Cosmology.archive_pressure_spectrum_is_gap_labeled`
-- cert: `vp_phason_flip_entropy_sde.py`
-- assumptions: `none`
-- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
-- notes: S_DE relaxation modes are gap-labeled.
-
 ### D0-CVFT-NOGO-001
 
 - type: `no-go`
@@ -382,6 +356,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded. [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
+
+### D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_flip_entropy_sde.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Finite formal S_DE owner: archive pressure is phason-flip entropy osmosis and the finite transfer characteristic is 160 lambda^2 - 480 lambda + 359; external BAO/DESI survey comparison is a passport/certificate and not core. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-QUASI009-CKM-PHASON-HOLONOMY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_ckm_phason_holonomy_k0.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Finite formal origin: non-permutation phason holonomy on the Torus Core-13 shell loop with rational unitary transport and chiral orientation twist; external CKM comparison passport/certificate is not core and no PDG entries are used. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
 ### D0-CRITICAL-COLLAPSE-001
 
@@ -486,19 +486,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] SPARC rotation-curve external-data passport.
-
-### D0-QUASI009-CKM-PHASON-HOLONOMY-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `empirical_passport`
-- book: `BOOK_04/08`
-- module: `D0.Matter.CKMPhasonHolonomy`
-- theorem: `Matter.torus_shell_noncommutator_is_phason_connection_curvature;Matter.phason_parallel_transport_around_shells_is_unitary;Matter.phason_holonomy_response_has_multisupport_row;Matter.phason_holonomy_response_not_permutation;Matter.ckm_cp_phase_is_chiral_phason_bundle_twist;Matter.ckm_matrix_is_phason_holonomy_on_torus_core13`
-- cert: `vp_ckm_phason_holonomy_k0.py`
-- assumptions: `none`
-- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
-- notes: Finite formal origin: non-permutation phason holonomy on the Torus Core-13 shell loop with rational unitary transport and chiral orientation twist; external CKM comparison passport/certificate is not core and no PDG entries are used.
 
 ### D0-TRACEABILITY-STATUS-TAXONOMY-001
 
@@ -766,6 +753,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness.
 
+### D0-CKM-K0-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_ckm_phason_holonomy_k0.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
 ### D0-CVFT-F4
 
 - type: `certificate`
@@ -1026,6 +1026,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Möbius witness halting cert.
 
+### D0-KTHEORY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00/01/02/04/05/06`
+- module: ``
+- theorem: `none`
+- cert: `vp_gap_labeling_d0_tiling_hull.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
 ### D0-LEPTON-002
 
 - type: `certificate`
@@ -1064,6 +1077,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] Fin E x Fin Gen carrier; self-adjoint PSD flavour defect.
+
+### D0-MESON-K0-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_domain_wall_mesons.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Meson domain wall tension and spectrum admit stable K0 gap labels. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
 ### D0-METRO-002
 
@@ -1168,6 +1194,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
+
+### D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_domain_wall_mesons.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Meson domain walls are six oriented nonzero phason boundaries lifted by generation readout to an 18-state finite carrier while meson transfer still uses the existing Edge by Generation lifted flavour-defect origin. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-SDE-K0-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_flip_entropy_sde.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: S_DE relaxation modes are gap-labeled. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-SOLENOID-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01/07`
+- module: ``
+- theorem: `none`
+- cert: `vp_noncommutative_solenoid_gravity.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Noncommutative solenoid model is admitted over the tiling hull. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
 ### D0-SPIN2-001
 
@@ -1416,19 +1481,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: V9 exact cardinality.
 
-### D0-CKM-K0-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `formal_core`
-- book: `BOOK_04/08`
-- module: `D0.Matter.CKMPhasonHolonomy`
-- theorem: `Matter.torus_shell_noncommutator_defines_phason_connection_curvature;Matter.ckm_holonomy_has_k_theory_class;Matter.ckm_cp_phase_is_oriented_noncommutative_area`
-- cert: `vp_ckm_phason_holonomy_k0.py`
-- assumptions: `none`
-- scope: Lean-owned finite/formal D0 core statement.
-- notes: CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area.
-
 ### D0-CKM-NONTRIVIAL-FLAVOUR-ALGEBRA-001
 
 - type: `core`
@@ -1611,19 +1663,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: ker(adj K(9,11,13))=30=8+10+12; rank 3 = space; exact integer LA. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.KernelZoneSplit (kernel_zone_split); native_decide/decide on the real finite content.
 
-### D0-KTHEORY-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `formal_core`
-- book: `BOOK_00/01/02/04/05/06`
-- module: `D0.Matter.KTheoryGapLabeling`
-- theorem: `Matter.gap_label_is_topological_not_fitted;Matter.d0_gap_labels_are_countable;Matter.gap_labeling_requires_frozen_operator;Matter.meson_domain_wall_spectrum_admits_k0_labels;Matter.ckm_holonomy_spectrum_admits_k0_labels;Matter.archive_pressure_spectrum_admits_k0_labels`
-- cert: `vp_gap_labeling_d0_tiling_hull.py`
-- assumptions: `none`
-- scope: Lean-owned finite/formal D0 core statement.
-- notes: Stable K-theory gap labels are countable and topological.
-
 ### D0-LEAN-CORE-001
 
 - type: `core`
@@ -1701,19 +1740,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Generation/anomaly layer defines a symmetric conserved archive stress source; anomaly-free reps give zero source in this minimal coupling.
-
-### D0-MESON-K0-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `formal_core`
-- book: `BOOK_04/08`
-- module: `D0.Matter.MesonPhasonDomainWalls`
-- theorem: `Matter.lower_hodge_400_is_domain_wall_tension_seed;Matter.meson_domain_wall_fluctuation_operator_has_spectral_gaps;Matter.meson_domain_wall_gaps_have_k0_labels;Matter.k0_labels_permit_meson_spectral_passport`
-- cert: `vp_phason_domain_wall_mesons.py`
-- assumptions: `none`
-- scope: Lean-owned finite/formal D0 core statement.
-- notes: Meson domain wall tension and spectrum admit stable K0 gap labels.
 
 ### D0-MESON-POSITIVE-DEFECT-TRANSFER-001
 
@@ -1871,19 +1897,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Active/archive Galois trace layers and determinant-square balance are integrated with the terminal role signature (1,3) while Euclidean and split exports remain blocked.
 
-### D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `formal_core`
-- book: `BOOK_04/08`
-- module: `D0.Matter.MesonPhasonDomainWalls`
-- theorem: `Matter.meson_phason_domain_wall_boundary_nonzero;Matter.meson_phason_domain_wall_card_eq_six;Matter.meson_domain_wall_generation_carrier_card_eq_eighteen;Matter.meson_domain_wall_transfer_uses_lifted_defect;Matter.meson_phason_domain_wall_closure`
-- cert: `vp_phason_domain_wall_mesons.py`
-- assumptions: `none`
-- scope: Lean-owned finite/formal D0 core statement.
-- notes: Meson domain walls are six oriented nonzero phason boundaries lifted by generation readout to an 18-state finite carrier while meson transfer still uses the existing Edge by Generation lifted flavour-defect origin.
-
 ### D0-QUASICRYSTAL-PHENOMENOLOGY-OPERATOR-ORIGIN-001
 
 - type: `core`
@@ -1922,19 +1935,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [8D Tier-1 forced] 3=rank(adj) space + 1 Pisot modular flow time; distinct objects. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Signature31Split (signature_31_split); native_decide/decide on the real finite content.
-
-### D0-SOLENOID-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `formal_core`
-- book: `BOOK_01/07`
-- module: `D0.Geometry.NonCommutativeSolenoid`
-- theorem: `Geometry.d0_hull_admits_noncommutative_solenoid_model`
-- cert: `vp_noncommutative_solenoid_gravity.py`
-- assumptions: `none`
-- scope: Lean-owned finite/formal D0 core statement.
-- notes: Noncommutative solenoid model is admitted over the tiling hull.
 
 ### D0-SRC-001
 
@@ -2724,6 +2724,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Lean structural heat trace skeleton plus Weyl dimension cert.
 
+### D0-SOLENOID-GRAVITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `spectral_action`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_noncommutative_solenoid_gravity.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Spectral triple heat trace and TT sector are compatible with noncommutative solenoid geometry. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
 ### D0-SPECTRAL-ACTION-ADMISS-001
 
 - type: `certificate`
@@ -2775,17 +2788,4 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
 - notes: Higher curvature trace powers are bounded by the conformal density floor estimate.
-
-### D0-SOLENOID-GRAVITY-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `spectral_action`
-- book: `BOOK_07`
-- module: `D0.Geometry.NonCommutativeSolenoidGravity`
-- theorem: `Geometry.d0_heat_trace_admits_solenoid_spectral_triple_approx;Geometry.finite_spin2_operator_is_tt_sector_of_solenoid_spectral_geometry;Geometry.wtt4_is_compatible_with_noncommutative_solenoid_geometry`
-- cert: `vp_noncommutative_solenoid_gravity.py`
-- assumptions: `none`
-- scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
-- notes: Spectral triple heat trace and TT sector are compatible with noncommutative solenoid geometry.
 

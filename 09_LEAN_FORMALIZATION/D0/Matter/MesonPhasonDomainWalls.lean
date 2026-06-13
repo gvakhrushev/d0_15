@@ -96,9 +96,5 @@ theorem meson_phason_domain_wall_closure :
       mesonPhasonDomainWallClosure.wall_generation_carrier,
       mesonPhasonDomainWallClosure.meson_transfer_origin⟩
 
-theorem lower_hodge_400_is_domain_wall_tension_seed (stmt : Prop) (h : stmt) : stmt := h
-theorem meson_domain_wall_fluctuation_operator_has_spectral_gaps (stmt : Prop) (h : stmt) : stmt := h
-theorem meson_domain_wall_gaps_have_k0_labels (stmt : Prop) (h : stmt) : stmt := h
-theorem k0_labels_permit_meson_spectral_passport (stmt : Prop) (h : stmt) : stmt := h
 
 end D0.Matter

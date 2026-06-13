@@ -4,19 +4,19 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 2777 / 3767 (**73.7%** of track-fair max)
-- **Core spine:** 2385 / 3360 (headroom **975** points to take every core claim to L5)
+- **Realized strength:** 2660 / 3767 (**70.6%** of track-fair max)
+- **Core spine:** 2268 / 3360 (headroom **1092** points to take every core claim to L5)
 - Claims: 208 active (209 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 57.2 / 100 (penalties **-50.8**, bonuses **+8.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 72.7 / 100 (penalties **-37.3**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
 | `tracked_meta_trash` | 0 | -0 | tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release) |
 | `tracked_but_ignored` | 0 | -0 | tracked-but-gitignored files (scratch that should not ship) |
-| `tautology_proofs` | 20 | -18 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)  ·  e.g. Bridge/PhiDiscreteRG.lean:1, Cosmology/PhasonFlipEntropy.lean:2, Detector/WeakCouplingClassicalization.lean:2 |
+| `tautology_proofs` | 3 | -4.5 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)  ·  e.g. Bridge/PhiDiscreteRG.lean:1, Detector/WeakCouplingClassicalization.lean:2 |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
 | `orphan_proof_targets` | 98 | -9.8 | PROOF-TARGET markers in book prose with no registry row |
@@ -24,9 +24,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `path_leaks` | 501 | -12 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 3 | -3 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
-| `files_deleted_vs_base` | 80 | +8 | net files removed vs base-v14 (rewards shrinking the publish tree) |
+| `files_deleted_vs_base` | 133 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `tautology_proofs` (-18); `path_leaks` (-12); `orphan_proof_targets` (-9.8); `dev_comments` (-8); `corpus_errors` (-3)
+**Top cleanup actions (most points to regain):** `path_leaks` (-12); `orphan_proof_targets` (-9.8); `dev_comments` (-8); `tautology_proofs` (-4.5); `corpus_errors` (-3)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -44,19 +44,19 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-ARCHIVE-SEAM-CURVATURE-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-ARCHIVE-ACTION-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-ARCHIVE-FIELD-EQ-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-KTHEORY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-SOLENOID-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-SOLENOID-GRAVITY-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-MESON-K0-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-CKM-K0-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-SDE-K0-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F4` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F7` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-003` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-FOUND-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-GRAV-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-GRAV-005` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-005` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-EDGE-RAMIFICATION-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-BARYON-POLES-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-PRED-001` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -92,12 +92,12 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 121 | 1756 | 2320 | 559 |
+| formal_core | 122 | 1698 | 2340 | 637 |
 | frontier | 12 | 29 | 240 | 211 |
-| cosmology | 24 | 394 | 459 | 65 |
+| cosmology | 22 | 354 | 419 | 65 |
+| empirical_passport | 16 | 120 | 187 | 62 |
+| spectral_action | 6 | 68 | 120 | 52 |
 | smooth_geometry | 7 | 83 | 122 | 39 |
-| spectral_action | 6 | 81 | 120 | 39 |
-| empirical_passport | 15 | 126 | 167 | 36 |
 | rg | 3 | 29 | 42 | 13 |
 | gauge_bridge | 16 | 249 | 262 | 13 |
 | external_background | 1 | 1 | 2 | 0 |
@@ -108,16 +108,16 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| BOOK_08 | 42 | 642 | 755 | 109 |
+| BOOK_08 | 42 | 629 | 755 | 122 |
 | BOOK_04 | 38 | 432 | 713 | 280 |
-| BOOK_07 | 33 | 383 | 588 | 195 |
+| BOOK_07 | 33 | 370 | 588 | 208 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
-| BOOK_04/08 | 7 | 109 | 127 | 18 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
-| BOOK_07/08 | 8 | 90 | 147 | 57 |
+| BOOK_07/08 | 8 | 77 | 147 | 70 |
 | BOOK_06 | 5 | 61 | 100 | 39 |
 | BOOK_01 | 3 | 60 | 60 | 0 |
 | BOOK_06/07 | 3 | 60 | 60 | 0 |
+| BOOK_04/08 | 7 | 57 | 127 | 70 |
 | BOOK_02 | 4 | 49 | 62 | 13 |
 | BOOK_06/08 | 5 | 48 | 100 | 52 |
 | BOOK_01/04 | 2 | 40 | 40 | 0 |
@@ -134,8 +134,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_06/07/08 | 1 | 20 | 20 | 0 |
 | BOOK_02/04/05/08 | 1 | 20 | 20 | 0 |
 | BOOK_00/01 | 1 | 20 | 20 | 0 |
-| BOOK_00/01/02/04/05/06 | 1 | 20 | 20 | 0 |
-| BOOK_01/07 | 1 | 20 | 20 | 0 |
 | BOOK_00/01/02/03 | 1 | 20 | 20 | 0 |
 | BOOK_03/06 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
@@ -145,6 +143,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_01/03/06/07/08 | 1 | 11 | 11 | 0 |
 | BOOK_04/07 | 2 | 9 | 40 | 31 |
 | BOOK_04/05/08 | 1 | 7 | 7 | 0 |
+| BOOK_00/01/02/04/05/06 | 1 | 7 | 20 | 13 |
+| BOOK_01/07 | 1 | 7 | 20 | 13 |
 | BOOK_02/05 | 1 | 7 | 20 | 13 |
 | BOOK_01/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/02/06 | 1 | 7 | 20 | 13 |

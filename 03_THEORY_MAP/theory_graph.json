@@ -6,11 +6,11 @@
   "summary": {
     "claims": 209,
     "release_status": {
-      "CORE-FORMALIZED": 98,
+      "CORE-FORMALIZED": 89,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 58,
+      "CERT-CLOSED": 67,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -19,28 +19,28 @@
       "PROOF-TARGET": 12
     },
     "lean_status": {
-      "LEAN_PROVED": 117,
+      "LEAN_PROVED": 108,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 69,
+      "PYTHON_CERTIFIED": 78,
       "DEPRECATED": 2,
       "OPEN": 13
     },
     "claim_type": {
-      "core": 99,
+      "core": 90,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 67,
+      "certificate": 76,
       "deprecated": 2,
       "frontier": 12
     },
     "domain": {
-      "formal_core": 121,
+      "formal_core": 122,
       "rg": 3,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
       "spectral_action": 6,
-      "empirical_passport": 15,
-      "cosmology": 24,
+      "empirical_passport": 16,
+      "cosmology": 22,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
@@ -3257,32 +3257,32 @@
       "id": "D0-QUASI009-CKM-PHASON-HOLONOMY-001",
       "kind": "claim",
       "claim_id": "D0-QUASI009-CKM-PHASON-HOLONOMY-001",
-      "type": "core",
+      "type": "certificate",
       "domain": "empirical_passport",
-      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_04/08",
       "section": "CKM as finite phason holonomy origin",
-      "lean_module": "D0.Matter.CKMPhasonHolonomy",
-      "lean_theorem": "Matter.torus_shell_noncommutator_is_phason_connection_curvature;Matter.phason_parallel_transport_around_shells_is_unitary;Matter.phason_holonomy_response_has_multisupport_row;Matter.phason_holonomy_response_not_permutation;Matter.ckm_cp_phase_is_chiral_phason_bundle_twist;Matter.ckm_matrix_is_phason_holonomy_on_torus_core13",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_ckm_phason_holonomy_k0.py",
       "python_cert": [
         "vp_ckm_phason_holonomy_k0.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "Finite formal origin: non-permutation phason holonomy on the Torus Core-13 shell loop with rational unitary transport and chiral orientation twist; external CKM comparison passport/certificate is not core and no PDG entries are used.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/CKMPhasonHolonomy.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "Finite formal origin: non-permutation phason holonomy on the Torus Core-13 shell loop with rational unitary transport and chiral orientation twist; external CKM comparison passport/certificate is not core and no PDG entries are used. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
     },
     {
-      "id": "module:D0.Matter.CKMPhasonHolonomy",
+      "id": "module:",
       "kind": "lean_module",
-      "label": "D0.Matter.CKMPhasonHolonomy",
-      "path": "09_LEAN_FORMALIZATION/D0/Matter/CKMPhasonHolonomy.lean",
-      "exists": true
+      "label": "",
+      "path": "09_LEAN_FORMALIZATION/.lean",
+      "exists": false
     },
     {
       "id": "cert:vp_ckm_phason_holonomy_k0.py",
@@ -3637,32 +3637,25 @@
       "id": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
       "kind": "claim",
       "claim_id": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
-      "type": "core",
-      "domain": "cosmology",
-      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_07/08",
       "section": "phason flip entropy S_DE finite algebra",
-      "lean_module": "D0.Cosmology.PhasonFlipEntropy",
-      "lean_theorem": "Cosmology.phason_flip_entropy_nonnegative;Cosmology.archive_pressure_is_phason_flip_entropy_osmosis;Cosmology.phason_flip_transfer_matrix_has_sde_polynomial;Cosmology.sde_roots_are_phason_flip_relaxation_modes",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_flip_entropy_sde.py",
       "python_cert": [
         "vp_phason_flip_entropy_sde.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "Finite formal S_DE owner: archive pressure is phason-flip entropy osmosis and the finite transfer characteristic is 160 lambda^2 - 480 lambda + 359; external BAO/DESI survey comparison is a passport/certificate and not core.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonFlipEntropy.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "Finite formal S_DE owner: archive pressure is phason-flip entropy osmosis and the finite transfer characteristic is 160 lambda^2 - 480 lambda + 359; external BAO/DESI survey comparison is a passport/certificate and not core. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "module:D0.Cosmology.PhasonFlipEntropy",
-      "kind": "lean_module",
-      "label": "D0.Cosmology.PhasonFlipEntropy",
-      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonFlipEntropy.lean",
-      "exists": true
     },
     {
       "id": "cert:vp_phason_flip_entropy_sde.py",
@@ -3789,32 +3782,25 @@
       "id": "D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001",
       "kind": "claim",
       "claim_id": "D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001",
-      "type": "core",
+      "type": "certificate",
       "domain": "formal_core",
-      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_04/08",
       "section": "meson phason domain-wall carrier",
-      "lean_module": "D0.Matter.MesonPhasonDomainWalls",
-      "lean_theorem": "Matter.meson_phason_domain_wall_boundary_nonzero;Matter.meson_phason_domain_wall_card_eq_six;Matter.meson_domain_wall_generation_carrier_card_eq_eighteen;Matter.meson_domain_wall_transfer_uses_lifted_defect;Matter.meson_phason_domain_wall_closure",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_domain_wall_mesons.py",
       "python_cert": [
         "vp_phason_domain_wall_mesons.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "Meson domain walls are six oriented nonzero phason boundaries lifted by generation readout to an 18-state finite carrier while meson transfer still uses the existing Edge by Generation lifted flavour-defect origin.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/MesonPhasonDomainWalls.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "Meson domain walls are six oriented nonzero phason boundaries lifted by generation readout to an 18-state finite carrier while meson transfer still uses the existing Edge by Generation lifted flavour-defect origin. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "module:D0.Matter.MesonPhasonDomainWalls",
-      "kind": "lean_module",
-      "label": "D0.Matter.MesonPhasonDomainWalls",
-      "path": "09_LEAN_FORMALIZATION/D0/Matter/MesonPhasonDomainWalls.lean",
-      "exists": true
     },
     {
       "id": "cert:vp_phason_domain_wall_mesons.py",
@@ -3941,32 +3927,25 @@
       "id": "D0-KTHEORY-001",
       "kind": "claim",
       "claim_id": "D0-KTHEORY-001",
-      "type": "core",
+      "type": "certificate",
       "domain": "formal_core",
-      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_00/01/02/04/05/06",
       "section": "K-theory and gap labeling",
-      "lean_module": "D0.Matter.KTheoryGapLabeling",
-      "lean_theorem": "Matter.gap_label_is_topological_not_fitted;Matter.d0_gap_labels_are_countable;Matter.gap_labeling_requires_frozen_operator;Matter.meson_domain_wall_spectrum_admits_k0_labels;Matter.ckm_holonomy_spectrum_admits_k0_labels;Matter.archive_pressure_spectrum_admits_k0_labels",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_gap_labeling_d0_tiling_hull.py",
       "python_cert": [
         "vp_gap_labeling_d0_tiling_hull.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "Stable K-theory gap labels are countable and topological.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/KTheoryGapLabeling.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "module:D0.Matter.KTheoryGapLabeling",
-      "kind": "lean_module",
-      "label": "D0.Matter.KTheoryGapLabeling",
-      "path": "09_LEAN_FORMALIZATION/D0/Matter/KTheoryGapLabeling.lean",
-      "exists": true
     },
     {
       "id": "cert:vp_gap_labeling_d0_tiling_hull.py",
@@ -3979,32 +3958,25 @@
       "id": "D0-SOLENOID-001",
       "kind": "claim",
       "claim_id": "D0-SOLENOID-001",
-      "type": "core",
+      "type": "certificate",
       "domain": "formal_core",
-      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_01/07",
       "section": "noncommutative solenoid",
-      "lean_module": "D0.Geometry.NonCommutativeSolenoid",
-      "lean_theorem": "Geometry.d0_hull_admits_noncommutative_solenoid_model",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_noncommutative_solenoid_gravity.py",
       "python_cert": [
         "vp_noncommutative_solenoid_gravity.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "Noncommutative solenoid model is admitted over the tiling hull.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/NonCommutativeSolenoid.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "Noncommutative solenoid model is admitted over the tiling hull. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "module:D0.Geometry.NonCommutativeSolenoid",
-      "kind": "lean_module",
-      "label": "D0.Geometry.NonCommutativeSolenoid",
-      "path": "09_LEAN_FORMALIZATION/D0/Geometry/NonCommutativeSolenoid.lean",
-      "exists": true
     },
     {
       "id": "cert:vp_noncommutative_solenoid_gravity.py",
@@ -4017,103 +3989,96 @@
       "id": "D0-SOLENOID-GRAVITY-001",
       "kind": "claim",
       "claim_id": "D0-SOLENOID-GRAVITY-001",
-      "type": "core",
+      "type": "certificate",
       "domain": "spectral_action",
-      "scope_guard": "Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_07",
       "section": "noncommutative solenoid gravity",
-      "lean_module": "D0.Geometry.NonCommutativeSolenoidGravity",
-      "lean_theorem": "Geometry.d0_heat_trace_admits_solenoid_spectral_triple_approx;Geometry.finite_spin2_operator_is_tt_sector_of_solenoid_spectral_geometry;Geometry.wtt4_is_compatible_with_noncommutative_solenoid_geometry",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_noncommutative_solenoid_gravity.py",
       "python_cert": [
         "vp_noncommutative_solenoid_gravity.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "Spectral triple heat trace and TT sector are compatible with noncommutative solenoid geometry.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/NonCommutativeSolenoidGravity.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "Spectral triple heat trace and TT sector are compatible with noncommutative solenoid geometry. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "module:D0.Geometry.NonCommutativeSolenoidGravity",
-      "kind": "lean_module",
-      "label": "D0.Geometry.NonCommutativeSolenoidGravity",
-      "path": "09_LEAN_FORMALIZATION/D0/Geometry/NonCommutativeSolenoidGravity.lean",
-      "exists": true
     },
     {
       "id": "D0-MESON-K0-001",
       "kind": "claim",
       "claim_id": "D0-MESON-K0-001",
-      "type": "core",
+      "type": "certificate",
       "domain": "formal_core",
-      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_04/08",
       "section": "meson domain wall spectrum gap labels",
-      "lean_module": "D0.Matter.MesonPhasonDomainWalls",
-      "lean_theorem": "Matter.lower_hodge_400_is_domain_wall_tension_seed;Matter.meson_domain_wall_fluctuation_operator_has_spectral_gaps;Matter.meson_domain_wall_gaps_have_k0_labels;Matter.k0_labels_permit_meson_spectral_passport",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_domain_wall_mesons.py",
       "python_cert": [
         "vp_phason_domain_wall_mesons.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "Meson domain wall tension and spectrum admit stable K0 gap labels.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/MesonPhasonDomainWalls.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "Meson domain wall tension and spectrum admit stable K0 gap labels. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
     },
     {
       "id": "D0-CKM-K0-001",
       "kind": "claim",
       "claim_id": "D0-CKM-K0-001",
-      "type": "core",
+      "type": "certificate",
       "domain": "formal_core",
-      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_04/08",
       "section": "CKM phason holonomy K-class",
-      "lean_module": "D0.Matter.CKMPhasonHolonomy",
-      "lean_theorem": "Matter.torus_shell_noncommutator_defines_phason_connection_curvature;Matter.ckm_holonomy_has_k_theory_class;Matter.ckm_cp_phase_is_oriented_noncommutative_area",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_ckm_phason_holonomy_k0.py",
       "python_cert": [
         "vp_ckm_phason_holonomy_k0.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/CKMPhasonHolonomy.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
     },
     {
       "id": "D0-SDE-K0-001",
       "kind": "claim",
       "claim_id": "D0-SDE-K0-001",
-      "type": "core",
-      "domain": "cosmology",
-      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_08",
       "section": "S_DE gap labels",
-      "lean_module": "D0.Cosmology.PhasonFlipEntropy",
-      "lean_theorem": "Cosmology.sde_relaxation_modes_have_gap_labels;Cosmology.archive_pressure_spectrum_is_gap_labeled",
-      "lean_status": "LEAN_PROVED",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_flip_entropy_sde.py",
       "python_cert": [
         "vp_phason_flip_entropy_sde.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "S_DE relaxation modes are gap-labeled.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonFlipEntropy.lean",
-      "module_exists": true,
+      "status": "CERT-CLOSED",
+      "notes": "S_DE relaxation modes are gap-labeled. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
       "certs_exist": true
     },
     {
@@ -4242,13 +4207,6 @@
       "id": "domain:frontier",
       "kind": "semantic_domain",
       "label": "frontier"
-    },
-    {
-      "id": "module:",
-      "kind": "lean_module",
-      "label": "",
-      "path": "09_LEAN_FORMALIZATION/.lean",
-      "exists": false
     },
     {
       "id": "D0-CVFT-NOGO-001",
@@ -8124,7 +8082,7 @@
     },
     {
       "source": "D0-QUASI009-CKM-PHASON-HOLONOMY-001",
-      "target": "module:D0.Matter.CKMPhasonHolonomy",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8269,12 +8227,12 @@
     },
     {
       "source": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
-      "target": "domain:cosmology",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
-      "target": "module:D0.Cosmology.PhasonFlipEntropy",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8334,7 +8292,7 @@
     },
     {
       "source": "D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001",
-      "target": "module:D0.Matter.MesonPhasonDomainWalls",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8394,7 +8352,7 @@
     },
     {
       "source": "D0-KTHEORY-001",
-      "target": "module:D0.Matter.KTheoryGapLabeling",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8409,7 +8367,7 @@
     },
     {
       "source": "D0-SOLENOID-001",
-      "target": "module:D0.Geometry.NonCommutativeSolenoid",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8424,7 +8382,7 @@
     },
     {
       "source": "D0-SOLENOID-GRAVITY-001",
-      "target": "module:D0.Geometry.NonCommutativeSolenoidGravity",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8439,7 +8397,7 @@
     },
     {
       "source": "D0-MESON-K0-001",
-      "target": "module:D0.Matter.MesonPhasonDomainWalls",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8454,7 +8412,7 @@
     },
     {
       "source": "D0-CKM-K0-001",
-      "target": "module:D0.Matter.CKMPhasonHolonomy",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
@@ -8464,12 +8422,12 @@
     },
     {
       "source": "D0-SDE-K0-001",
-      "target": "domain:cosmology",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-SDE-K0-001",
-      "target": "module:D0.Cosmology.PhasonFlipEntropy",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {
