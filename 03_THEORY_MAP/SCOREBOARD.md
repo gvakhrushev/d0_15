@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 2335 / 2992 (**78.0%** of track-fair max)
-- **Core spine:** 2013 / 2660 (headroom **647** points to take every core claim to L5)
-- Claims: 163 active (164 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 2363 / 3072 (**76.9%** of track-fair max)
+- **Core spine:** 2041 / 2740 (headroom **699** points to take every core claim to L5)
+- Claims: 167 active (168 total); integrity demotions: 0; duplicates: 0
 
 ## Where to gain points next (cheapest promotions)
 
@@ -72,8 +72,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
+| formal_core | 91 | 1442 | 1728 | 286 |
 | frontier | 14 | 33 | 280 | 247 |
-| formal_core | 87 | 1414 | 1648 | 234 |
 | cosmology | 22 | 380 | 432 | 52 |
 | smooth_geometry | 6 | 63 | 102 | 39 |
 | empirical_passport | 7 | 70 | 111 | 36 |
@@ -91,7 +91,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_08 | 37 | 607 | 681 | 70 |
 | BOOK_07 | 24 | 315 | 455 | 135 |
 | BOOK_04 | 23 | 314 | 426 | 111 |
-| BOOK_01/02 | 10 | 192 | 192 | 0 |
+| BOOK_01/02 | 11 | 199 | 212 | 13 |
 | BOOK_04/08 | 6 | 102 | 120 | 18 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_07/08 | 5 | 69 | 100 | 31 |
@@ -102,7 +102,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE | 3 | 33 | 33 | 0 |
 | Lean formalization | 2 | 31 | 31 | 0 |
 | BOOK_02/04 | 2 | 31 | 31 | 0 |
-| BOOK_06 | 3 | 21 | 60 | 39 |
+| BOOK_06 | 4 | 28 | 80 | 52 |
 | BOOK_02/03 | 1 | 20 | 20 | 0 |
 | BOOK_03/06/07/08 | 1 | 20 | 20 | 0 |
 | BOOK_00/01/03/06/07/08 | 1 | 20 | 20 | 0 |
@@ -124,6 +124,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_04/05/08 | 1 | 7 | 7 | 0 |
 | BOOK_01/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/02/06 | 1 | 7 | 20 | 13 |
+| BOOK_03/06 | 1 | 7 | 20 | 13 |
+| BOOK_01/04 | 1 | 7 | 20 | 13 |
 | BOOK_04/06/07/08 | 1 | 2 | 20 | 18 |
 | BOOK_02/04/08 | 1 | 2 | 20 | 18 |
 | BOOK_02/05 | 1 | 2 | 20 | 18 |

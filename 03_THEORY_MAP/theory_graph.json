@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 164,
+    "claims": 168,
     "release_status": {
       "CORE-FORMALIZED": 89,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 30,
+      "CERT-CLOSED": 34,
       "NO-GO": 7,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 108,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 31,
+      "PYTHON_CERTIFIED": 35,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 90,
       "bridge": 13,
       "no-go": 15,
-      "certificate": 30,
+      "certificate": 34,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 87,
+      "formal_core": 91,
       "rg": 3,
       "gauge_bridge": 16,
       "smooth_geometry": 6,
@@ -5341,6 +5341,130 @@
       "label": "D0.Metrology.PhasonBragg",
       "path": "09_LEAN_FORMALIZATION/D0/Metrology/PhasonBragg.lean",
       "exists": false
+    },
+    {
+      "id": "D0-XI5-TORUS-DEFECT-001",
+      "kind": "claim",
+      "claim_id": "D0-XI5-TORUS-DEFECT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_03/06",
+      "section": "torus address integerization defect",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_xi5_torus_defect.py",
+      "python_cert": [
+        "vp_xi5_torus_defect.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L4 queued. alpha-row stays CHK.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_xi5_torus_defect.py",
+      "kind": "python_cert",
+      "label": "vp_xi5_torus_defect.py",
+      "path": "05_CERTS/vp_xi5_torus_defect.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VIETA-GALOIS-ABCD-001",
+      "kind": "claim",
+      "claim_id": "D0-VIETA-GALOIS-ABCD-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01/02",
+      "section": "ABCD as Vieta/Galois data",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vieta_galois_abcd.py",
+      "python_cert": [
+        "vp_vieta_galois_abcd.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "ABCD = Vieta=Galois data of x^2-x-1; delta0=1/(2phi^3) forced; exact Q(phi). Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vieta_galois_abcd.py",
+      "kind": "python_cert",
+      "label": "vp_vieta_galois_abcd.py",
+      "path": "05_CERTS/vp_vieta_galois_abcd.py",
+      "exists": true
+    },
+    {
+      "id": "D0-KERNEL-ZONE-SPLIT-001",
+      "kind": "claim",
+      "claim_id": "D0-KERNEL-ZONE-SPLIT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01/04",
+      "section": "archive kernel zone split",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_kernel_zone_split.py",
+      "python_cert": [
+        "vp_kernel_zone_split.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "ker(adj K(9,11,13))=30=8+10+12; rank 3 = space; exact integer LA. Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_kernel_zone_split.py",
+      "kind": "python_cert",
+      "label": "vp_kernel_zone_split.py",
+      "path": "05_CERTS/vp_kernel_zone_split.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DIM-LADDER-COMPACT-001",
+      "kind": "claim",
+      "claim_id": "D0-DIM-LADDER-COMPACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "dimension ladder compactification",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dim_ladder_compact.py",
+      "python_cert": [
+        "vp_dim_ladder_compact.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Q(D)=phi^(D-4); quantum=1 at D=4=|ABCD|; Q(1)=phi^-3=2delta0; exact Q(phi). Lean L4 queued.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_dim_ladder_compact.py",
+      "kind": "python_cert",
+      "label": "vp_dim_ladder_compact.py",
+      "path": "05_CERTS/vp_dim_ladder_compact.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -7458,6 +7582,66 @@
       "source": "D0-QUANT-MET-004",
       "target": "module:D0.Metrology.PhasonBragg",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-XI5-TORUS-DEFECT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-XI5-TORUS-DEFECT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-XI5-TORUS-DEFECT-001",
+      "target": "cert:vp_xi5_torus_defect.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VIETA-GALOIS-ABCD-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VIETA-GALOIS-ABCD-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VIETA-GALOIS-ABCD-001",
+      "target": "cert:vp_vieta_galois_abcd.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-KERNEL-ZONE-SPLIT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-KERNEL-ZONE-SPLIT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-KERNEL-ZONE-SPLIT-001",
+      "target": "cert:vp_kernel_zone_split.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DIM-LADDER-COMPACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DIM-LADDER-COMPACT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DIM-LADDER-COMPACT-001",
+      "target": "cert:vp_dim_ladder_compact.py",
+      "kind": "certified_by"
     }
   ]
 }

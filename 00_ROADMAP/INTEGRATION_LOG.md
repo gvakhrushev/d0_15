@@ -125,3 +125,34 @@ canonical (164) — regenerated in Phase 4.
 - Froze `00_PUBLICATION/` (`_FROZEN.md`). Fixed README guard paths + added the
   guard/scoreboard suite to getting-started. Regenerated `D0_CANONICAL_FILE_MAP.csv`.
 - **Full local CI dry-run green: all 7 python guards + regen_graph -CheckOnly PASS.**
+
+## Phase 8A — integrate first forced claims (cert level)
+
+Note on scope: per `LEAN_DEFERRED_RUN_POLICY.md` the Lean toolchain is deferred
+(`.lake` not materialized), so this session integrates **certs** (verifiable here)
+-> claims reach PYTHON_CERTIFIED (L3). The Lean proofs (L3->L4) are the deferred
+queue the scoreboard now tracks under "where to gain points next".
+
+Integrated 4 forced claims end-to-end (registry row -> cert PASS -> validate ->
+regen -> score), each exact (no floats), each able to FAIL:
+- `D0-XI5-TORUS-DEFECT-001` -> `vp_xi5_torus_defect.py` (phi^5=11+phi^-5; Tr(T^5)=-11; Z[phi]).
+- `D0-VIETA-GALOIS-ABCD-001` -> `vp_vieta_galois_abcd.py` (ABCD=Vieta=Galois of x^2-x-1; delta0 forced).
+- `D0-KERNEL-ZONE-SPLIT-001` -> `vp_kernel_zone_split.py` (ker K(9,11,13)=30=8+10+12; rank 3).
+- `D0-DIM-LADDER-COMPACT-001` -> `vp_dim_ladder_compact.py` (Q(D)=phi^(D-4); quantum=1 at D=4).
+
+Registry 164 -> **168 rows**; all guards PASS. Strength **2335 -> 2363** (realized
++28); core headroom **647 -> 699** (the new claims add 13 points of Lean-proof
+potential each). The four appear in SCOREBOARD "cheapest promotions" as +5 write-Lean-proof targets.
+
+### Phase 8 backlog (tracked, scoreboard-visible)
+
+Remaining forced-claim certs to write (then Lean L4): Q8-Dedekind minimality,
+window-44 group spectrum, icosian->E8 carrier (exact Z[sqrt5] Gram/Mordell; +Leech
+BRIDGE), toral time operator + h_KS=log phi, mixing-hierarchy-inversion, time-2D-Pisot,
+signature-3+1-split, Z2-registry (seven incarnations). Typed bridges/passports
+(firewall-blocked from core): CKM Wolfenstein quad (out-of-sample gamma falsifier),
+PMNS delta0-family (JUNO), m_s/m_d=20 Cabibbo, vacuum-cubic-window; passport manifests
+E8_QUANTUM_CRITICAL / NUFIT_PMNS / H0_EVOLVING_W; D0-ARCHIVE-NOT-STERILE-NU-001 (no-go).
+Lean L3->L4 for all 25 existing PYTHON_CERTIFIED claims (the +5 worklist). Harvest v17
+legitimate reach then delete `_QUARANTINE/v17_overshoots/` (8E). The two `_OPEN_WITNESSES`
+sorry files are gravity-sector L4 obligations.

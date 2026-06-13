@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 2335,
-    "track_fair_max": 2992,
-    "pct_strength": 78.0,
-    "core_realized": 2013,
-    "core_potential": 2660,
-    "core_headroom": 647,
-    "n_claims": 164,
-    "n_active": 163,
+    "realized": 2363,
+    "track_fair_max": 3072,
+    "pct_strength": 76.9,
+    "core_realized": 2041,
+    "core_potential": 2740,
+    "core_headroom": 699,
+    "n_claims": 168,
+    "n_active": 167,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 87,
-      "realized": 1414,
-      "max": 1648,
-      "core_headroom": 234
+      "n": 91,
+      "realized": 1442,
+      "max": 1728,
+      "core_headroom": 286
     },
     "rg": {
       "n": 3,
@@ -106,10 +106,10 @@
       "core_headroom": 0
     },
     "BOOK_01/02": {
-      "n": 10,
-      "realized": 192,
-      "max": 192,
-      "core_headroom": 0
+      "n": 11,
+      "realized": 199,
+      "max": 212,
+      "core_headroom": 13
     },
     "BOOK_01": {
       "n": 2,
@@ -316,10 +316,10 @@
       "core_headroom": 18
     },
     "BOOK_06": {
-      "n": 3,
-      "realized": 21,
-      "max": 60,
-      "core_headroom": 39
+      "n": 4,
+      "realized": 28,
+      "max": 80,
+      "core_headroom": 52
     },
     "BOOK_01/06": {
       "n": 1,
@@ -344,6 +344,18 @@
       "realized": 18,
       "max": 80,
       "core_headroom": 62
+    },
+    "BOOK_03/06": {
+      "n": 1,
+      "realized": 7,
+      "max": 20,
+      "core_headroom": 13
+    },
+    "BOOK_01/04": {
+      "n": 1,
+      "realized": 7,
+      "max": 20,
+      "core_headroom": 13
     }
   },
   "cheapest_promotions": [
@@ -631,6 +643,46 @@
       "claim_id": "D0-QUANT-MET-002",
       "domain": "formal_core",
       "book": "METROLOGY",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-XI5-TORUS-DEFECT-001",
+      "domain": "formal_core",
+      "book": "BOOK_03/06",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-VIETA-GALOIS-ABCD-001",
+      "domain": "formal_core",
+      "book": "BOOK_01/02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-KERNEL-ZONE-SPLIT-001",
+      "domain": "formal_core",
+      "book": "BOOK_01/04",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-DIM-LADDER-COMPACT-001",
+      "domain": "formal_core",
+      "book": "BOOK_06",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1092,6 +1144,34 @@
     },
     {
       "claim_id": "D0-QUANT-MET-002",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-XI5-TORUS-DEFECT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-VIETA-GALOIS-ABCD-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-KERNEL-ZONE-SPLIT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-DIM-LADDER-COMPACT-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -3393,6 +3473,62 @@
       "lean_status": "OPEN",
       "domain": "frontier",
       "book": "METROLOGY",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-XI5-TORUS-DEFECT-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_03/06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VIETA-GALOIS-ABCD-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_01/02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-KERNEL-ZONE-SPLIT-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_01/04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-DIM-LADDER-COMPACT-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
       "leverage": 0,
       "integrity_flag": null
     }

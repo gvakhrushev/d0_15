@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 30
+- `CERT-CLOSED`: 34
 - `CORE-FORMALIZED`: 89
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 30
+- `certificate`: 34
 - `core`: 90
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 7
 - `external_background`: 1
-- `formal_core`: 87
+- `formal_core`: 91
 - `frontier`: 14
 - `gauge_bridge`: 16
 - `interpretation_spine`: 1
@@ -558,6 +558,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]
 
+### D0-DIM-LADDER-COMPACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: ``
+- theorem: `none`
+- cert: `vp_dim_ladder_compact.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Q(D)=phi^(D-4); quantum=1 at D=4=|ABCD|; Q(1)=phi^-3=2delta0; exact Q(phi). Lean L4 queued.
+
 ### D0-DM-CLASSICALITY-001
 
 - type: `certificate`
@@ -701,6 +714,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Möbius witness halting cert.
 
+### D0-KERNEL-ZONE-SPLIT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: ``
+- theorem: `none`
+- cert: `vp_kernel_zone_split.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: ker(adj K(9,11,13))=30=8+10+12; rank 3 = space; exact integer LA. Lean L4 queued.
+
 ### D0-QUANT-MET-001
 
 - type: `certificate`
@@ -726,6 +752,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
+
+### D0-VIETA-GALOIS-ABCD-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: ``
+- theorem: `none`
+- cert: `vp_vieta_galois_abcd.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: ABCD = Vieta=Galois data of x^2-x-1; delta0=1/(2phi^3) forced; exact Q(phi). Lean L4 queued.
+
+### D0-XI5-TORUS-DEFECT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_03/06`
+- module: ``
+- theorem: `none`
+- cert: `vp_xi5_torus_defect.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L4 queued. alpha-row stays CHK.
 
 ### D0-ABCD-001
 
