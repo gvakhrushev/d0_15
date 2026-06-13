@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 67
-- `CORE-FORMALIZED`: 89
+- `CERT-CLOSED`: 66
+- `CORE-FORMALIZED`: 90
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 10
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 76
-- `core`: 90
+- `certificate`: 75
+- `core`: 91
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
@@ -1273,19 +1273,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8D Tier-1 forced] (Z/44)*=Z2xZ2xZ5, |.|=20=d13, char subgroups {1,4,5,20}, 20=4x5. Lean L4 queued.
 
-### D0-XI5-TORUS-DEFECT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_03/06`
-- module: ``
-- theorem: `none`
-- cert: `vp_xi5_torus_defect.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L4 queued. alpha-row stays CHK.
-
 ### D0-ABCD-001
 
 - type: `core`
@@ -2039,6 +2026,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Generation selector noncommutativity is sourced from finite torus shell geometry rather than a detached fixture selector.
+
+### D0-XI5-TORUS-DEFECT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_03/06`
+- module: `D0.Claims.Xi5TorusDefect`
+- theorem: `xi5_torus_defect`
+- cert: `vp_xi5_torus_defect.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L5 CORE-FORMALIZED via D0.Claims.Xi5TorusDefect (xi5_torus_defect, native_decide; reuses D0.Dynamics.ToralAutomorphism trace_T_pow_eq_signed_lucas). alpha-row stays CHK.
 
 ### D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001
 

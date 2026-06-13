@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 2660 / 3767 (**70.6%** of track-fair max)
-- **Core spine:** 2268 / 3360 (headroom **1092** points to take every core claim to L5)
+- **Realized strength:** 2673 / 3767 (**71.0%** of track-fair max)
+- **Core spine:** 2281 / 3360 (headroom **1079** points to take every core claim to L5)
 - Claims: 208 active (209 total); integrity demotions: 0; duplicates: 0
 
 ## Where to gain points next (cheapest promotions)
@@ -72,7 +72,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 121 | 1652 | 2320 | 663 |
+| formal_core | 121 | 1665 | 2320 | 650 |
 | frontier | 12 | 29 | 240 | 211 |
 | cosmology | 24 | 394 | 459 | 65 |
 | smooth_geometry | 7 | 70 | 122 | 52 |
@@ -116,6 +116,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_00/01/02/04/05/06 | 1 | 20 | 20 | 0 |
 | BOOK_01/07 | 1 | 20 | 20 | 0 |
 | BOOK_00/01/02/03 | 1 | 20 | 20 | 0 |
+| BOOK_03/06 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
 | BOOK_05/08 | 2 | 19 | 32 | 13 |
 | BOOK_01/04 | 2 | 14 | 40 | 26 |
@@ -127,7 +128,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_02/05 | 1 | 7 | 20 | 13 |
 | BOOK_01/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/02/06 | 1 | 7 | 20 | 13 |
-| BOOK_03/06 | 1 | 7 | 20 | 13 |
 | BOOK_04/06/07/08 | 1 | 2 | 20 | 18 |
 | BOOK_02/04/08 | 1 | 2 | 20 | 18 |
 | PUBLICATION | 1 | 2 | 20 | 18 |

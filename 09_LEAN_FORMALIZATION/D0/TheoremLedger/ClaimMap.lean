@@ -330,7 +330,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-QUANT-MET-003", moduleName := "D0.Metrology.Phi2Flux",
       theoremName := "phi2_purification_flux_target", status := ClaimStatus.openObligation },
     { claimId := "D0-QUANT-MET-004", moduleName := "D0.Metrology.PhasonBragg",
-      theoremName := "phason_bragg_line_spectrum_target", status := ClaimStatus.openObligation }
+      theoremName := "phason_bragg_line_spectrum_target", status := ClaimStatus.openObligation },
+    { claimId := "D0-XI5-TORUS-DEFECT-001", moduleName := "D0.Claims.Xi5TorusDefect",
+      theoremName := "xi5_torus_defect", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

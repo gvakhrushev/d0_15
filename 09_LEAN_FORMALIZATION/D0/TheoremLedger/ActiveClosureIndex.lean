@@ -2,6 +2,7 @@
 -- Do not edit by hand; run `python tools/generate_lean_aggregates.py`.
 
 
+import D0.Claims.Xi5TorusDefect
 import D0.Bridge.FinalBridgeIndex
 
 namespace D0

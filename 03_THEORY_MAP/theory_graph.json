@@ -6,11 +6,11 @@
   "summary": {
     "claims": 209,
     "release_status": {
-      "CORE-FORMALIZED": 89,
+      "CORE-FORMALIZED": 90,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 67,
+      "CERT-CLOSED": 66,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -19,17 +19,17 @@
       "PROOF-TARGET": 12
     },
     "lean_status": {
-      "LEAN_PROVED": 108,
+      "LEAN_PROVED": 109,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 78,
+      "PYTHON_CERTIFIED": 77,
       "DEPRECATED": 2,
       "OPEN": 13
     },
     "claim_type": {
-      "core": 90,
+      "core": 91,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 76,
+      "certificate": 75,
       "deprecated": 2,
       "frontier": 12
     },
@@ -5416,25 +5416,32 @@
       "id": "D0-XI5-TORUS-DEFECT-001",
       "kind": "claim",
       "claim_id": "D0-XI5-TORUS-DEFECT-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_03/06",
       "section": "torus address integerization defect",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Claims.Xi5TorusDefect",
+      "lean_theorem": "xi5_torus_defect",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_xi5_torus_defect.py",
       "python_cert": [
         "vp_xi5_torus_defect.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L4 queued. alpha-row stays CHK.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L5 CORE-FORMALIZED via D0.Claims.Xi5TorusDefect (xi5_torus_defect, native_decide; reuses D0.Dynamics.ToralAutomorphism trace_T_pow_eq_signed_lucas). alpha-row stays CHK.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/Xi5TorusDefect.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.Xi5TorusDefect",
+      "kind": "lean_module",
+      "label": "D0.Claims.Xi5TorusDefect",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/Xi5TorusDefect.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_xi5_torus_defect.py",
@@ -8971,7 +8978,7 @@
     },
     {
       "source": "D0-XI5-TORUS-DEFECT-001",
-      "target": "module:",
+      "target": "module:D0.Claims.Xi5TorusDefect",
       "kind": "implemented_in"
     },
     {

@@ -165,7 +165,7 @@ digraph D0Theory {
   "D0-QUANT-MET-002" [label="D0-QUANT-MET-002\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-QUANT-MET-003" [label="D0-QUANT-MET-003\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-QUANT-MET-004" [label="D0-QUANT-MET-004\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
-  "D0-XI5-TORUS-DEFECT-001" [label="D0-XI5-TORUS-DEFECT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-XI5-TORUS-DEFECT-001" [label="D0-XI5-TORUS-DEFECT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-VIETA-GALOIS-ABCD-001" [label="D0-VIETA-GALOIS-ABCD-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-KERNEL-ZONE-SPLIT-001" [label="D0-KERNEL-ZONE-SPLIT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-DIM-LADDER-COMPACT-001" [label="D0-DIM-LADDER-COMPACT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -1072,8 +1072,8 @@ digraph D0Theory {
   "D0-QUANT-MET-004" -> "module:D0.Metrology.PhasonBragg" [label="module"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-QUANT-MET-004" -> "domain:frontier" [label="domain"];
-  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-XI5-TORUS-DEFECT-001" -> "module:" [label="module"];
+  "module:D0.Claims.Xi5TorusDefect" [label="D0.Claims.Xi5TorusDefect", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-XI5-TORUS-DEFECT-001" -> "module:D0.Claims.Xi5TorusDefect" [label="module"];
   "cert:vp_xi5_torus_defect.py" [label="vp_xi5_torus_defect.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-XI5-TORUS-DEFECT-001" -> "cert:vp_xi5_torus_defect.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
