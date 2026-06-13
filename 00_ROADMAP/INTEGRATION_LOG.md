@@ -344,3 +344,35 @@ corruption had *substituted* real cert PASS-tokens; **12 were recovered** by rea
 is now **strict-by-default** (stale fails CI, not just forbidden); `--allow-stale` opts out. Corpus: 0
 forbidden, **0 stale**. ("atlas" kept — real artifact, not cruft.) Books are −44 net lines (boilerplate out,
 tokens restored); `d0_score` steady at **2660/3767 (70.6%)**.
+
+---
+
+## R4 — Lean per-claim wave (warm cache + 9 modules promoted to CORE-FORMALIZED)
+
+**Cache fix first.** The Xi5 build had been recompiling mathlib *from source* (~2600-module cone, hours)
+because the session-start dep-checkout (aesop/Qq/batteries/Cli) invalidated the local olean cache. Fixed by
+`lake exe cache get` (downloaded 8472 valid mathlib oleans); the rebuild then compiled only the D0 modules —
+Xi5 + ToralAutomorphism in ~8 min — and all of mathlib is now warm.
+
+**Xi5 (the rails gate).** `D0/Claims/Xi5TorusDefect.lean` builds sorry-free (`xi5_torus_defect` via
+`native_decide`, reusing `D0.Dynamics.ToralAutomorphism.trace_T_pow_eq_signed_lucas`): `lucas 5 = 11 ∧
+Matrix.trace (T^5) = −11`. Promoted L3→L5 (LEAN_PROVED / CORE-FORMALIZED), +13.
+
+**R4 first wave (`r4-lean-wave` Workflow, 8 agents).** lake is on PATH in the agents' Bash, so each agent
+wrote its `D0/Claims/<id>.lean`, **built it itself** (`lake build`, warm cache), and iterated to a genuine
+sorry-free green — with the hard rule *delete the file and report `built=false` rather than fake it with
+sorry/axiom/`admit`/native_decide-on-a-weakened-goal*. All 8 closed. **Adversarially verified before
+promotion:** grep found 0 real sorry/axiom (only comment text, scrubbed); an independent rebuild of all 8
+returned exit 0 / `Build completed successfully (2963 jobs)`; the two hardest were read by hand —
+- **Q8-Dedekind:** explicit Q8/S3/D4 multiplication tables on `Fin n` (verbatim from the cert), decidable
+  subgroup/normality machinery, `native_decide` proving `nonNormalCount` = 0/3/4 and the triple identity
+  `[Q8,Q8]=Z(Q8)=Φ(Q8)={±1}` — a real finite-group proof, not a restatement.
+- **kernel-zone:** the real 33×33 integer adjacency of K(9,11,13); rank ≤ 3 (every row is one of 3 zone
+  patterns) + 30 zone-difference kernel vectors (`native_decide` on `A.mulVec v = 0`) + split 30=8+10+12,
+  reusing `D0.Combinatorics.CompleteTripartite`.
+
+The other six (signature-3+1 — proves `Adj31.rank = 3` directly via `Matrix.rank`; vieta-galois φ/ψ; dim-ladder
+φ-cascade; time-2D-Pisot `x²−x−1`; window-44; mixing-hierarchy-inversion) are likewise decide/native_decide on
+real finite content. All promoted LEAN_PROVED / CORE-FORMALIZED. Aggregates regenerated (**104** leanCoreProved
+entries in ClaimMap), idempotent; full guard suite green (validate/firewall/no_sorry/coverage/aggregates/
+book-guards). **`d0_score` 2660 → 2777 (70.6% → 73.7%)**: Xi5 +13, the 8 +104.
