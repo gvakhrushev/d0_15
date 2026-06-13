@@ -3,7 +3,6 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Tactic
 
 import D0.Topology.GradedIncidenceComplex
-import D0.Topology.FiniteHodgeComplex
 import D0.Matter.MesonPhasonDomainWalls
 import D0.Geometry.FiniteSpin2WaveOperator
 import D0.Geometry.ArchiveHeatTrace

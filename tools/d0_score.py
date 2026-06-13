@@ -91,7 +91,28 @@ def _run(args: list[str]) -> str:
 
 
 _TAUT_RE = re.compile(r"\(\s*h\s*:\s*[^)]+\)\s*:\s*[^:=\n]+:=\s*h\b")
-_DEV_COMMENT_RE = re.compile(r"(?m)\S[ \t]+#[ \t]+\S")  # trailing dev note (not a `## ` heading)
+# trailing dev note `... # note` — but NOT a `## ` heading, NOT a LaTeX `\#`, and NOT
+# inside a ``` code fence (`# x` is a legitimate comment in pseudocode blocks).
+_DEV_COMMENT_RE = re.compile(r"(?<![\\#])\S[ \t]+#[ \t]+\S")
+
+
+def count_dev_comments(text: str) -> tuple[int, list[str]]:
+    """Real trailing dev-`# ...` notes, skipping fenced code blocks and LaTeX `\\#`."""
+    n = 0
+    hits: list[str] = []
+    in_fence = False
+    for i, ln in enumerate(text.splitlines(), 1):
+        st = ln.lstrip()
+        if st.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence or st.startswith("#"):  # skip code + markdown headings
+            continue
+        if _DEV_COMMENT_RE.search(ln):
+            n += 1
+            if len(hits) < 6:
+                hits.append(ln.strip()[:80])
+    return n, hits
 _PATH_LEAK_RES = [re.compile(p) for p in (
     r"vp_\w+\.py", r"\bD0\.[A-Z]\w+(?:\.\w+)+", r"05_CERTS/", r"03_THEORY_MAP/",
     r"06_AUDIT", r"_QUARANTINE/", r"(?<![\w.])add/", r"C:\\Users", r"/Users/", r"\.lake/")]
@@ -138,7 +159,9 @@ def hygiene_report(rows: list[dict]) -> dict:
     reg_pt = sum(1 for r in rows if m.canonical_release(r.get("release_status", "")) == "PROOF-TARGET")
     counts["orphan_proof_targets"] = max(0, prose_pt - reg_pt)
 
-    counts["dev_comments"] = len(_DEV_COMMENT_RE.findall(book_text))
+    dc = [count_dev_comments(p.read_text(encoding="utf-8", errors="replace")) for p in books]
+    counts["dev_comments"] = sum(n for n, _ in dc)
+    evidence["dev_comments"] = [h for _, hs in dc for h in hs][:6]
     counts["path_leaks"] = sum(len(rx.findall(book_text)) for rx in _PATH_LEAK_RES)
 
     cc = _run([sys.executable, "tools/check_v14_clean_corpus.py"])

@@ -2,7 +2,6 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Tactic
 
 import D0.Topology.GradedIncidenceComplex
-import D0.Topology.FiniteHodgeComplex
 
 open scoped BigOperators
 

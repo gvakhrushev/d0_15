@@ -4693,11 +4693,18 @@
       },
       {
         "signal": "dev_comments",
-        "count": 15,
+        "count": 8,
         "points": -8.0,
         "cap": -8.0,
         "label": "developer '# ...' TODO/notes left in book prose",
-        "evidence": []
+        "evidence": [
+          "— the expected number of chance hits no worse than the one found. In isolation `",
+          "M1 thus acts as an automatic numerology filter, and the operational rule is abso",
+          "Status: PROOF-TARGET (cert obligation open)  # the three instant-death switches ",
+          "Status: PROOF-TARGET (cert obligation open)  # the L=129 plateau-convergence der",
+          "Status: PROOF-TARGET (cert obligation open)  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n",
+          "Status: PROOF-TARGET (cert obligation open)  # the ZF-realizability + full-AC-ne"
+        ]
       },
       {
         "signal": "path_leaks",
@@ -4751,11 +4758,18 @@
       },
       {
         "signal": "dev_comments",
-        "count": 15,
+        "count": 8,
         "points": -8.0,
         "cap": -8.0,
         "label": "developer '# ...' TODO/notes left in book prose",
-        "evidence": []
+        "evidence": [
+          "— the expected number of chance hits no worse than the one found. In isolation `",
+          "M1 thus acts as an automatic numerology filter, and the operational rule is abso",
+          "Status: PROOF-TARGET (cert obligation open)  # the three instant-death switches ",
+          "Status: PROOF-TARGET (cert obligation open)  # the L=129 plateau-convergence der",
+          "Status: PROOF-TARGET (cert obligation open)  # F-alpha/F-mu/F-p/F-nu/B-z/B-tau_n",
+          "Status: PROOF-TARGET (cert obligation open)  # the ZF-realizability + full-AC-ne"
+        ]
       },
       {
         "signal": "tautology_proofs",

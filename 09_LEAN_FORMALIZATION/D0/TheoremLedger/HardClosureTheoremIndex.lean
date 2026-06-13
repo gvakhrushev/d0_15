@@ -176,7 +176,6 @@ import D0.Spectrum.Pi0BranchDefectControls
 import D0.Spectrum.Pi0BranchDefectGeneration
 import D0.Topology.ArchiveShiftTopology
 import D0.Topology.GradedIncidenceComplex
-import D0.Topology.FiniteHodgeComplex
 import D0.Topology.FiniteCochainNoAxion
 import D0.Bridge.HodgeMatterGravityArchiveIndex
 import D0.Topology.TripartiteComplex

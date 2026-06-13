@@ -20,7 +20,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
 | `orphan_proof_targets` | 98 | -9.8 | PROOF-TARGET markers in book prose with no registry row |
-| `dev_comments` | 15 | -8 | developer '# ...' TODO/notes left in book prose |
+| `dev_comments` | 8 | -8 | developer '# ...' TODO/notes left in book prose  ·  e.g. — the expected number of chance hits no worse than the one found. In isolation `, M1 thus acts as an automatic numerology filter, and the operational rule is abso, Status: PROOF-TARGET (cert obligation open)  # the three instant-death switches  |
 | `path_leaks` | 501 | -12 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 3 | -3 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |

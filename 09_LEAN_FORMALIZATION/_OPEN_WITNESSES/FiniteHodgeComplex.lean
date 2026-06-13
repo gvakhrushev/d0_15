@@ -100,26 +100,14 @@ theorem finite_hodge_laplacian0_psd (C : GradedCellComplex) (a : C.V → Real) :
 /-- Typed owner for full finite Hodge Laplacian (self-adjoint + psd on available carriers). -/
 theorem finite_hodge_laplacian_self_adjoint_positive (C : GradedCellComplex) :
     (∀ v w, laplacian0Matrix C v w = laplacian0Matrix C w v) ∧
-    (∀ a, (Finset.univ.sum fun v => (Finset.univ.sum fun w => laplacian0Matrix C v w * a w) * a v) ≥ 0) := by
+    (∀ a : C.V → Real, (Finset.univ.sum fun v => (Finset.univ.sum fun w => laplacian0Matrix C v w * a w) * a v) ≥ 0) := by
   constructor
   · intro v w; exact finite_hodge_laplacian0_symmetric C v w
   · intro a; exact finite_hodge_laplacian0_psd C a
 
-/-- Finite heat trace as spectral sum abstraction (no full matrix exp required). -/
-structure FiniteHeatTrace where
-  laplacian : Type → Prop   -- carrier for the laplacian spectrum
-  theta : Real → Real
-  finite_spectral_sum : Prop
-
-/-- Heat trace depends only on the spectrum of the Laplacian (owner). -/
-theorem finite_heat_trace_depends_only_on_laplacian_spectrum
-    (T1 T2 : FiniteHeatTrace)
-    (h_spec : T1.laplacian = T2.laplacian) :
-    (∀ u, T1.theta u = T2.theta u) := by
-  intro u
-  -- by definition of finite_spectral_sum the theta is a function of the spectrum only
-  simp [FiniteHeatTrace] at h_spec
-  -- placeholder equality; concrete spectral proxies (a0/a2 decompositions) already satisfy
-  rfl
+-- NOTE (Iteration 2, Phase L+): the former `finite_heat_trace_depends_only_on_laplacian_spectrum`
+-- was a placeholder (`simp` made no progress, then `rfl`) that did not actually follow from its
+-- hypothesis — removed for honesty (Lean must be valuable, not for-show). The real, proved content
+-- of this module is the finite Hodge Laplacian Δ₀ being symmetric and positive-semidefinite above.
 
 end D0.Topology
