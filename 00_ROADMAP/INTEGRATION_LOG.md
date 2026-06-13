@@ -70,3 +70,11 @@ canonical (164) — regenerated in Phase 4.
   PROOF-TARGET 14, NO_GO_PROVED 8, NO-GO 7, BRIDGE-ASSUMPTIONS-EXPLICIT 7,
   CORE_BRIDGE_SPLIT 4, BRIDGE-CALIBRATION 2, EMPIRICAL-PASSPORT 1,
   EXTERNAL-BACKGROUND 1, DEPRECATED 1.
+
+## Phase 4 — regenerate view + graph
+
+- Ran `sync_theory_status_map.py`: regenerated `theory_status_map.csv`,
+  `theory_graph.{json,dot,html}`, `theory_semantic_index.md`,
+  `LEAN_CORE_THEOREM_INDEX.md` from the canonical CSV.
+- Drift resolved: graph claims = generated csv rows = canonical rows = **164**
+  (was 139 / 156 / 164). `validate_csv.py` PASS with zero staleness warnings.

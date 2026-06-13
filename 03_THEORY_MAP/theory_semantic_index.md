@@ -5,50 +5,94 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTION`: 1
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 6
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CANDIDATE`: 3
-- `CERT-CLOSED`: 9
+- `CERT-CLOSED`: 30
 - `CORE-FORMALIZED`: 89
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 1
-- `EMPIRICAL-PASSPORT-CANDIDATE`: 1
 - `EXTERNAL-BACKGROUND`: 1
-- `LOWER-BOUND-TARGET`: 1
 - `NO-GO`: 7
 - `NO_GO_PROVED`: 8
-- `OPERATOR-SCAFFOLD-CERTIFIED`: 1
-- `PROOF-OBLIGATION-EXPOSED`: 1
-- `PROOF-TARGET`: 1
-- `SPIN-FLAVOUR-TRANSFER-CERTIFIED`: 1
-- `THEOREM-TARGET-SHARPENED`: 1
+- `PROOF-TARGET`: 14
 
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 9
+- `certificate`: 30
 - `core`: 90
 - `deprecated`: 2
-- `frontier`: 10
+- `frontier`: 14
 - `no-go`: 15
 
 ## Domain counts
 
-- `cosmology`: 18
-- `empirical_passport`: 5
+- `cosmology`: 22
+- `empirical_passport`: 7
 - `external_background`: 1
-- `formal_core`: 75
-- `frontier`: 10
+- `formal_core`: 87
+- `frontier`: 14
 - `gauge_bridge`: 16
 - `interpretation_spine`: 1
 - `rg`: 3
 - `si_calibration`: 2
-- `smooth_geometry`: 3
+- `smooth_geometry`: 6
 - `spectral_action`: 5
 
 ## Domain: cosmology
+
+### D0-IM-COSMO-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.IM.RelativeArchiveAcceleration`
+- theorem: `relative_archive_acceleration_positive_second_difference`
+- cert: `vp_relative_archive_acceleration_cosmology_bridge.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Internal relative acceleration; no survey fit. [was:RELATIVE-ARCHIVE-ACCELERATION-CERT-CLOSED]
+
+### D0-IM-COSMO-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.IM.ArchivePressureCoupling`
+- theorem: `relative_pressure_bridge_law`
+- cert: `vp_archive_pressure_coupling_from_relative_acceleration.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Weak bridge; strong log-det is primary. [was:RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED]
+
+### D0-IM-COSMO-003
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.IM.StrongLogdetPressure`
+- theorem: `strong_logdet_pressure_coupling`
+- cert: `vp_strong_logdet_pressure_coupling.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Correct r(V) derivative. [was:LOGDET-PRESSURE-COUPLING-CERT-CLOSED]
+
+### D0-IM-COSMO-004
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.IM.LogdetSecondResponse`
+- theorem: `logdet_second_response_stability_sign_corrected`
+- cert: `vp_logdet_second_response_and_stability.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]
 
 ### D0-COSMO-CONCRETE-FLOW-001
 
@@ -287,6 +331,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain: empirical_passport
 
+### D0-CVFT-F3
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_baryon_s3_scaffold.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open. [was:OPERATOR-SCAFFOLD-CERTIFIED]
+
+### D0-CVFT-F3B
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_cvft_baryon_spin_flavour_40_56.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded. [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
+
 ### D0-QUASI009-CKM-PHASON-HOLONOMY-001
 
 - type: `core`
@@ -475,6 +545,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Curvature is the seam commutator density; cert checks exact rank two and seam support.
 
+### D0-BARYON-POLES-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.BaryonAnonymousPoleSet`
+- theorem: `baryon_anonymous_image_poles_cert`
+- cert: `vp_baryon_40_56_anonymous_poles.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]
+
 ### D0-DM-CLASSICALITY-001
 
 - type: `certificate`
@@ -488,6 +571,84 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Weak-coupling/mode-averaging nonclassical signature suppression guardrail.
 
+### D0-EDGE-ALPHA-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Edge.AlphaRamificationConstructive`
+- theorem: `edge_alpha_trace_seam_cert`
+- cert: `vp_edge_alpha_trace_constructive.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Unitary dilation edge alpha trace cert. [was:EDGE-ALPHA-TRACE-CERT-CLOSED]
+
+### D0-EDGE-RAMIFICATION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Edge.RamificationFromUeEffCompanion`
+- theorem: `ramification_companion_cover_cert`
+- cert: `vp_ramification_edge_ueff_companion.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Companion cover cert; physical-edge embedding remains scoped. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]
+
+### D0-FOUND-004
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Foundation.QuadraticPeel`
+- theorem: `quadratic_peel_born_holography_cert`
+- cert: `vp_quadratic_peel_born_holography.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Quadratic peel cert.
+
+### D0-GRAV-004
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.MeasurementHorizonEquivalence`
+- theorem: `measurement_horizon_equivalence_cert`
+- cert: `vp_measurement_horizon_equivalence.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Measurement seam / horizon law cert. [was:OPERATOR-LAW-CLOSED]
+
+### D0-GRAV-005
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.OpticalJetBackreaction`
+- theorem: `optical_jet_backreaction_cert`
+- cert: `vp_optical_jet_backreaction.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Optical jet backreaction law cert. [was:OPERATOR-LAW-CLOSED]
+
+### D0-GRAV-006
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.HorizonJetAndBaryonPole`
+- theorem: `horizon_jet_baryon_pole_layer_cert`
+- cert: `vp_horizon_jet_axis_observable.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Horizon closed; jet + baryon image-basis certs present. [was:CERT-SCAFFOLD-CLOSED]
+
 ### D0-HST-ARCHIVE-001
 
 - type: `certificate`
@@ -500,6 +661,71 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: HST is external theorem object; D0-side archive hypotheses are cert-backed.
+
+### D0-IM-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.IM.SelfSubstrateTrace`
+- theorem: `self_substrate_trace_principle_cert`
+- cert: `vp_self_substrate_trace_principle.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: IM substrate trace cert.
+
+### D0-IM-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.IM.FractalTick`
+- theorem: `fractal_tick_cert`
+- cert: `vp_fractal_tick_informational_mechanics.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Fractal tick cert.
+
+### D0-IM-004
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01/06`
+- module: `D0.Topology.WitnessHalting`
+- theorem: `witness_halting_cert`
+- cert: `vp_mobius_witness_topological_halting.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Möbius witness halting cert.
+
+### D0-QUANT-MET-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `METROLOGY`
+- module: `D0.Metrology.QuantumLimits`
+- theorem: `quantum_metrology_limits`
+- cert: `vp_quantum_metrology_limits.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: PSD purification inequality (lemma) + conditional φ^{-2} flux + Bragg spectrum targets. [was:OPERATOR-LEMMA-CERT]
+
+### D0-QUANT-MET-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `METROLOGY`
+- module: `D0.Metrology.PSDPurification`
+- theorem: `psd_purification_inequality`
+- cert: `vp_quantum_metrology_limits.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
 
 ### D0-ABCD-001
 
@@ -1136,7 +1362,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_galois_lorentz_signature.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: Active/archive Galois trace layers and determinant-square balance are integrated with the terminal role signature (1
+- notes: Active/archive Galois trace layers and determinant-square balance are integrated with the terminal role signature (1,3) while Euclidean and split exports remain blocked.
 
 ### D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001
 
@@ -1349,97 +1575,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain: frontier
 
-### D0-CVFT-F4
-
-- type: `frontier`
-- release_status: `CERT-CANDIDATE`
-- domain: `frontier`
-- book: `BOOK_02/05`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open.
-
-### D0-CVFT-F7
-
-- type: `frontier`
-- release_status: `CERT-CANDIDATE`
-- domain: `frontier`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof.
-
-### D0-CVFT-F8
-
-- type: `frontier`
-- release_status: `CERT-CANDIDATE`
-- domain: `frontier`
-- book: `BOOK_08`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure.
-
-### D0-CVFT-F5
-
-- type: `frontier`
-- release_status: `EMPIRICAL-PASSPORT-CANDIDATE`
-- domain: `frontier`
-- book: `BOOK_04/08`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: IceCube dynamic feedback is an external passport candidate until data manifest response and frozen operator are pinned.
-
-### D0-CVFT-F6
-
-- type: `frontier`
-- release_status: `LOWER-BOUND-TARGET`
-- domain: `frontier`
-- book: `BOOK_04/07`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem.
-
-### D0-CVFT-F3
-
-- type: `frontier`
-- release_status: `OPERATOR-SCAFFOLD-CERTIFIED`
-- domain: `frontier`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_cvft_baryon_s3_scaffold.py`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open.
-
-### D0-CVFT-F1
-
-- type: `frontier`
-- release_status: `PROOF-OBLIGATION-EXPOSED`
-- domain: `frontier`
-- book: `BOOK_02/04/08`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion.
-
 ### D0-CVFT-001B
 
 - type: `frontier`
@@ -1453,23 +1588,23 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: Sector projection package points to CVFT-F1 through CVFT-F8 and may not close matter gravity cosmology horizon gauge or empirical passport rows automatically.
 
-### D0-CVFT-F3B
+### D0-CVFT-F1
 
 - type: `frontier`
-- release_status: `SPIN-FLAVOUR-TRANSFER-CERTIFIED`
+- release_status: `PROOF-TARGET`
 - domain: `frontier`
-- book: `BOOK_04`
+- book: `BOOK_02/04/08`
 - module: ``
 - theorem: `none`
-- cert: `vp_cvft_baryon_spin_flavour_40_56.py`
+- cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded.
+- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED]
 
 ### D0-CVFT-F2
 
 - type: `frontier`
-- release_status: `THEOREM-TARGET-SHARPENED`
+- release_status: `PROOF-TARGET`
 - domain: `frontier`
 - book: `BOOK_07/08`
 - module: ``
@@ -1477,23 +1612,153 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen.
+- notes: Horizon emission and greybody leakage remain frontier until the boundary operator and observable passport are frozen. [was:THEOREM-TARGET-SHARPENED]
+
+### D0-CVFT-F4
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02/05`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: UV cutoff claims have deterministic finite cert candidates for the refined tail bound under |z|rho(F_N)<1; Lean proof remains open. [was:CERT-CANDIDATE]
+
+### D0-CVFT-F5
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: IceCube dynamic feedback is an external passport candidate until data manifest response and frozen operator are pinned. [was:EMPIRICAL-PASSPORT-CANDIDATE]
+
+### D0-CVFT-F6
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/07`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET]
+
+### D0-CVFT-F7
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE]
+
+### D0-CVFT-F8
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure. [was:CERT-CANDIDATE]
+
+### D0-EDGE-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: `D0.Edge.AlphaRamificationConstructive`
+- theorem: `edge_alpha_trace_target`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Guardrail target retained.
+
+### D0-EDGE-002
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: `D0.Edge.AlphaRamificationConstructive`
+- theorem: `torus_ramification_puiseux_target`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Guardrail target retained.
+
+### D0-HORIZON-JET-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_07`
+- module: `D0.Gravity.HorizonJetAndBaryonPole`
+- theorem: `horizon_jet_observable_cert`
+- cert: `vp_horizon_jet_axis_observable.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Finite observable cert; empirical jets passport. [was:HORIZON-JET-OBSERVABLE-CERT-SCAFFOLD]
+
+### D0-PUB-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `PUBLICATION`
+- module: `D0.Publication.MonographStructure`
+- theorem: `release_monograph_structure_audit`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Audit-only publication structure. [publication-structure meta; deferred; was:PUBLICATION-MONOGRAPH-STRUCTURE]
+
+### D0-QUANT-MET-003
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `METROLOGY`
+- module: `D0.Metrology.Phi2Flux`
+- theorem: `phi2_purification_flux_target`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: φ^{-2} flux is sector hypothesis / prediction target. [was:CONDITIONAL-THEOREM-TARGET]
+
+### D0-QUANT-MET-004
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `METROLOGY`
+- module: `D0.Metrology.PhasonBragg`
+- theorem: `phason_bragg_line_spectrum_target`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]
 
 
 ## Domain: gauge_bridge
-
-### D0-GAUGE-YANG-MILLS-KILLING-POSITIVITY-001
-
-- type: `bridge`
-- release_status: `BRIDGE-ASSUMPTION`
-- domain: `gauge_bridge`
-- book: `BOOK_08`
-- module: `D0.Gauge.YangMillsKillingPositivity`
-- theorem: `Gauge.discreteYangMillsAction_nonnegative_of_killing_nonpos`
-- cert: `none`
-- assumptions: `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE`
-- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
-- notes: Yang-Mills positivity follows from assumed negative semidefinite Killing form.
 
 ### D0-GAUGE-MATTER-001
 
@@ -1507,6 +1772,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-HST-EXTERNAL`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: Boundary skeleton conditional on declared incidence pair.
+
+### D0-GAUGE-YANG-MILLS-KILLING-POSITIVITY-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `gauge_bridge`
+- book: `BOOK_08`
+- module: `D0.Gauge.YangMillsKillingPositivity`
+- theorem: `Gauge.discreteYangMillsAction_nonnegative_of_killing_nonpos`
+- cert: `none`
+- assumptions: `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: Yang-Mills positivity follows from assumed negative semidefinite Killing form. [was:BRIDGE-ASSUMPTION]
 
 ### D0-GAUGE-MATRIX-REP-TRANSFORM-001
 
@@ -1806,6 +2084,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Finite witness yields symmetric divergence-free second-order TT-compatible macro interface; no continuum Einstein-Hilbert primitive is imported into core.
 
+### D0-IM-003
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_06`
+- module: `D0.IM.ContinuumFromFractalTick`
+- theorem: `continuum_from_fractal_tick_cert`
+- cert: `vp_continuum_from_fractal_tick.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Continuum envelope cert.
+
+### D0-IM-005
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_01/02/06`
+- module: `D0.IM.FractalContinuumAndWitnessHalting`
+- theorem: `fractal_continuum_witness_halting_corrected`
+- cert: `vp_continuum_from_fractal_tick.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Corrected continuum/witness halting layer.
+
+### D0-IM-PRED-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_06/08`
+- module: `D0.IM.FractalContinuumPredictions`
+- theorem: `fractal_continuum_predictions_cert`
+- cert: `vp_fractal_continuum_predictions.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Absolute/relative sign corrected. [was:FRACTAL-CONTINUUM-PREDICTION-CERT-CLOSED]
+
 ### D0-GEOM-SPECTRAL-ACTION-LADDER-001
 
 - type: `core`
@@ -1886,3 +2203,4 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
 - notes: Spectral triple heat trace and TT sector are compatible with noncommutative solenoid geometry.
+
