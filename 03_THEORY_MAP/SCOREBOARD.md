@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3260 / 4488 (**72.6%** of track-fair max)
-- **Core spine:** 2771 / 3980 (headroom **1209** points to take every core claim to L5)
-- Claims: 250 active (251 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 3280 / 4508 (**72.8%** of track-fair max)
+- **Core spine:** 2791 / 4000 (headroom **1209** points to take every core claim to L5)
+- Claims: 251 active (252 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 100.0 / 100 (penalties **-2.2**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 100.0 / 100 (penalties **-0.2**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -22,11 +22,11 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `orphan_proof_targets` | 2 | -0.2 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
-| `corpus_errors` | 2 | -2 | check_v14_clean_corpus violations (duplicate headings, version logs) |
+| `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 135 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `corpus_errors` (-2); `orphan_proof_targets` (-0.2)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-0.2)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -92,11 +92,11 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 153 | 2200 | 2915 | 710 |
+| formal_core | 151 | 2173 | 2875 | 697 |
 | frontier | 14 | 33 | 280 | 247 |
 | empirical_passport | 22 | 175 | 255 | 75 |
+| smooth_geometry | 11 | 137 | 202 | 65 |
 | cosmology | 22 | 354 | 419 | 65 |
-| smooth_geometry | 8 | 90 | 142 | 52 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 16 | 249 | 262 | 13 |
 | rg | 5 | 61 | 73 | 8 |
@@ -109,7 +109,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_08 | 46 | 670 | 809 | 135 |
-| BOOK_07 | 45 | 553 | 810 | 247 |
+| BOOK_07 | 46 | 573 | 830 | 247 |
 | BOOK_04 | 42 | 525 | 771 | 241 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
 | BOOK_01 | 10 | 140 | 187 | 47 |

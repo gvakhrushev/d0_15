@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 74
-- `CORE-FORMALIZED`: 111
+- `CORE-FORMALIZED`: 112
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 19
 - `certificate`: 88
-- `core`: 112
+- `core`: 113
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,13 +31,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 153
+- `formal_core`: 151
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
-- `smooth_geometry`: 8
+- `smooth_geometry`: 11
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -856,19 +856,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Audit->FORCING] C=M/R_initial is FORCED (not a choice): C at the horizon is M/(2M)=1/2 for every mass (constant, zero formation info, CIRCULAR - presupposes the horizon), so only the INITIAL compactness gives a well-posed non-degenerate causal threshold; R=8M/3 (C=3/8) is then unambiguous. cert vp_compactness_def_forcing.py. HONEST: forces the DEFINITION of C (closes the 3/8-depends-on-C nitpick); the separate rank-3=causal-cone gap of D0-COMPACTNESS-LIMIT-001 stays (sharpened by D0-RANK3-CAUSAL-CONE-001). M1: forcing-uniqueness of the posing, not no-other-def-tried.
-
-### D0-COMPACTNESS-LIMIT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_gravastar_compactness.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter4 Phase1 T1.2] LEM with one NAMED GAP. Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (named gap: rank-3=causal-cone): rank-3=causal-cone postulated, not M1-forced => LEM, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.) [Iter4 note] Held at CERT-CLOSED (LEM): the 3/8 algebra is cert-exact; the rank-3=causal-cone NAMED GAP keeps it below THE and is recorded in the cert + BOOK_07 07.51.3, not as a formal ledger assumption. [Iter5] Named gap SHARPENED: the (3,1)->causal-cone half is now Lean-proved (D0.Synthesis.RankCausalCone, rank3_causal_cone); residual gap narrowed to the scene-rank-3 <-> cone-space identification. Still LEM, not THE.
 
 ### D0-CVFT-F4
 
@@ -2326,19 +2313,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: One D0PhiCutProject finite cut-and-project owner yields generation inflation classes archive phason dark metric response window-offset chirality phason-flip rewrite inertia and fractional window-sector charge weights.
 
-### D0-RANK3-CAUSAL-CONE-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: `D0.Synthesis.RankCausalCone`
-- theorem: `rank3_causal_cone`
-- cert: `none`
-- assumptions: `none`
-- scope: Lean-owned finite/formal D0 core statement.
-- notes: [Iter5 Track2] SHARPENS (does not close) the gravastar compactness named gap. Lean D0.Synthesis.RankCausalCone (rank3_causal_cone) proves the (3,1)->Minkowski-cone structure: Q=a^2-b^2-c^2-d^2 indefinite (timelike+spacelike) with a nontrivial null direction, plus the Pisot time arrow |psi|<1 (reused). NAMED GAP remaining: the scene-rank-3 <-> cone-space identification is still postulated (this proves the cone EXISTS for (3,1); not that the scene rank-3 IS that spatial sector). Supporting synthesis, modest scope; D0-COMPACTNESS-LIMIT-001 stays LEM.
-
 ### D0-SCENE-001
 
 - type: `core`
@@ -3189,6 +3163,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Finite witness yields symmetric divergence-free second-order TT-compatible macro interface; no continuum Einstein-Hilbert primitive is imported into core.
 
+### D0-COMPACTNESS-LIMIT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_gravastar_compactness.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter11 NAMED GAP CLOSED] The rank-3=causal-cone identification that kept this LEM is now FORCED (D0-RANK3-CAUSAL-CONE-FORCING-001, Lean D0.Synthesis.RankCausalConeForcing): the causal partition is forced by the arrow-count (1 Pisot arrow=1 timelike, 3 reversible real-spectrum rank-modes=3 spacelike; Euclidean (4,0) excluded by indefiniteness; arrow=time FORCED §06.30a). So rank-3 IS the 3 spatial/causal directions, and C_max=rank/|Omega8|=3/8 is structurally grounded (THE for the dimensionless ratio). ONLY residual: the cone-speed/smooth metric g_munu, a unit owned by ASSUMP-CONNES-RECONSTRUCTION (a separate edge, not an assumption on the dimensionless 3/8). [Iter4 Phase1 T1.2] LEM with one NAMED GAP (history). Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (named gap: rank-3=causal-cone): rank-3=causal-cone postulated, not M1-forced => LEM, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.) [Iter4 note] Held at CERT-CLOSED (LEM): the 3/8 algebra is cert-exact; the rank-3=causal-cone NAMED GAP keeps it below THE and is recorded in the cert + BOOK_07 07.51.3, not as a formal ledger assumption. [Iter5] Named gap SHARPENED: the (3,1)->causal-cone half is now Lean-proved (D0.Synthesis.RankCausalCone, rank3_causal_cone); residual gap narrowed to the scene-rank-3 <-> cone-space identification. Still LEM, not THE.
+
 ### D0-IM-003
 
 - type: `certificate`
@@ -3253,6 +3240,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: Finite spectral-action ladder and bounds; no continuum EH promotion.
+
+### D0-RANK3-CAUSAL-CONE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: `D0.Synthesis.RankCausalCone`
+- theorem: `rank3_causal_cone`
+- cert: `none`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter5 Track2] SHARPENS (does not close) the gravastar compactness named gap. Lean D0.Synthesis.RankCausalCone (rank3_causal_cone) proves the (3,1)->Minkowski-cone structure: Q=a^2-b^2-c^2-d^2 indefinite (timelike+spacelike) with a nontrivial null direction, plus the Pisot time arrow |psi|<1 (reused). NAMED GAP remaining: the scene-rank-3 <-> cone-space identification is still postulated (this proves the cone EXISTS for (3,1); not that the scene rank-3 IS that spatial sector). Supporting synthesis, modest scope; D0-COMPACTNESS-LIMIT-001 stays LEM. [Iter11 CLOSED] The remaining scene-rank-3<->cone-space identification is now FORCED (D0-RANK3-CAUSAL-CONE-FORCING-001): the partition is forced by the arrow-count (1 Pisot arrow<->1 timelike, 3 reversible real-spectrum modes<->3 spacelike; (4,0) excluded). This is no longer a named gap; the only residual is the cone-speed/smooth metric (Connes unit).
+
+### D0-RANK3-CAUSAL-CONE-FORCING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: `D0.Synthesis.RankCausalConeForcing`
+- theorem: `rank3_causal_cone_forcing`
+- cert: `vp_rank3_causal_cone_forcing.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter11 closure of the §07.51.3 named gap -- forced, not re-named] The open half (WHICH modes are spacelike vs timelike) is closed by counting. (a) The 3 rank transport modes are REVERSIBLE: the depressed cubic lambda^3-359 lambda-2574 has discriminant 6185264>0 => 3 distinct REAL eigenvalues, no arrow. (b) The 1 Pisot flow is IRREVERSIBLE: exactly one |psi|<1 (the arrow; arrow=time is FORCED, §06.30a). (c) A Lorentzian (3,1) form has exactly 1 timelike + 3 spacelike; the counts match (1 arrow<->1 timelike, 3 reversible<->3 spacelike), and Euclidean (4,0) is excluded (the 4 directions are not alike). So the timelike axis IS the Pisot/arrow and the 3 spacelike axes ARE the reversible rank-3 modes: rank-3 = the 3 spatial/causal directions, FORCED. Lean D0.Synthesis.RankCausalConeForcing (rank3_causal_cone_forcing): mink4 puts e0 timelike, e1/e2/e3 spacelike; |psi|<1; disc=6185264>0; null cone nontrivial. cert vp_rank3_causal_cone_forcing.py. Closes D0-COMPACTNESS-LIMIT-001's named gap and grounds C_max=3/8=rank/|Omega8|. HONEST: the CAUSAL STRUCTURE (signature+partition+null cone) is THE; the residual cone-speed/smooth metric g_munu is the Connes-owned unit (ASSUMP-CONNES-RECONSTRUCTION), NOT claimed here.
 
 ### D0-TIME-2D-PISOT-001
 

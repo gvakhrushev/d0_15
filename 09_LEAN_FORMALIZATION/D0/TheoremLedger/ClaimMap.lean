@@ -376,7 +376,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-GENERATIVE-DYNAMICS-001", moduleName := "D0.Claims.GluingAnomalyTime",
       theoremName := "gluing_anomaly_time", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-TOWER-STOP-NOEXT-001", moduleName := "D0.Tower.NoExtension",
-      theoremName := "no_extension_theorem", status := ClaimStatus.leanCoreProved }
+      theoremName := "no_extension_theorem", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RANK3-CAUSAL-CONE-FORCING-001", moduleName := "D0.Synthesis.RankCausalConeForcing",
+      theoremName := "rank3_causal_cone_forcing", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
