@@ -787,3 +787,39 @@ named gap (§07.51.3) — the count is forced, the geometric identification is *
 3 new certs (zone_repeat, member_zone_iso, degree2_three_types) PASS + can-FAIL; 1 new Lean
 module (`D0.Tower.NoExtension`) builds. The root of the rank-3 cascade is closed; the geometric
 leaf-gaps are kept honest, not flipped.
+
+### Iteration 10 — quasicrystal carrier: a BRIDGE upgraded to a FORCING (don't escape with a label)
+
+A standing lattice "bridge" (D0 supports the finite-first ontology) is **upgraded to a forcing**
+and entered as such — the model of "don't run from a label; close it." `φ` is forced as the
+carrier, not postulated (`D0-QUASICRYSTAL-CARRIER-FORCING-001`, CERT-CLOSED/FORCING): (1)
+non-perturbative gauge theory is rigorous *only* on a finite lattice (Wilson 1974; the continuum
+YM mass gap is an open Clay problem); (2) a quasicrystal removes the arbitrary lattice step —
+self-similar by `φ` (inflation Perron eigenvalue `φ`), no `a→0`; (3) M1 forbids the hand-chosen
+step; (4) aperiodic + 5-fold ⇒ `φ` (Penrose/de Bruijn; Shechtman). A **new external channel to
+`φ`** (now ≥5: Hurwitz, Jones, KAM, quadratic Pisot, quasicrystal-carrier).
+
+The open screw landed as a precise named-gap, **not a fit** (`D0-QUASICRYSTAL-PROJECTION-001`,
+honest outcome b): the icosahedral `6D→3D` projection has rank 3 (matches the physical slice —
+exact minor `−2φ²`), but it is `6D→3D` (internal dim 3), so the `nullity 30` of `K(9,11,13)` is
+**not** reproduced — `30 = ` icosahedron edges is a number-coincidence; the missing object is a
+`33D→3D` cut-and-project with an icosahedral `3D` slice. Recorded, not faked. T3: the icosahedral
+QC slices `E₈` (Elser–Sloane) — the *same* `E₈` as the icosian role lattice (consistency). T4:
+the `3D` physical slice (`A₅⊂SO(3)`) is a **third independent channel to `rank=3`** (with Frobenius
+`ℍ` and the LA tripartite-rank theorem), converging with the tower-stop's three zones — four
+manifestations of one `3`, independent forcings, not summed as a proof.
+
+### Iteration 10 metrics
+| metric | Iter9 end | Iter10 now | delta |
+|---|---|---|---|
+| CERT-CLOSED | 73 | 75 | +2 (carrier FORCING, projection named-gap) |
+| strength | 3246 | 3260 | +14 |
+| external φ-channels | 4 | 5 | +1 (quasicrystal carrier) |
+| rank-3 channels | 2 | 3 | +1 (icosahedral 3D slice) |
+| integrity demotions | 0 | 0 | — |
+
+4 new certs (quasicrystal_carrier_forcing, icosahedral_cutproject, e8_quasicrystal_slice + the
+forcing backbone) PASS + can-FAIL. Dossier sync: N/A (`D0_THEORY_DOSSIER.md` removed in
+Iteration 2; content lives in books). The lattice→quasicrystal upgrade is the iteration's model:
+a label ("bridge") was not an excuse — it was closed to a forcing, with the one residual named
+precisely.

@@ -311,3 +311,35 @@ integrity demotions **0**; all guards green; `D0.Tower.NoExtension` builds.
 `rank=3` is now forced as the number of zones / graph parts. The remaining work to fully force
 the four leaves is each leaf's own geometric/physical identification — the `rank-3=causal-cone`
 gap — which is the natural next root, tracked at §07.51.3.
+
+---
+
+# D0 — Iteration 10 report: quasicrystal carrier (a bridge closed to a forcing)
+
+**Headline.** A lattice **bridge** is upgraded to a **forcing**: `φ` is forced as the carrier
+from non-perturbative rigour (Wilson) + M1 + Penrose/de Bruijn, not postulated
+(`D0-QUASICRYSTAL-CARRIER-FORCING-001`, FORCING). strength **3246 → 3260 (+14)**; external
+`φ`-channels **4 → 5**; rank-3 channels **2 → 3**; integrity demotions **0**; all guards green.
+
+## What closed and what stayed an honest gap
+- **Closed (forcing).** Finite-is-rigorous-only (Wilson, YM Clay) + no-preferred-step
+  (self-similar by `φ`, no `a→0`) + M1 (no exogenous step) + aperiodic-5-fold⇒`φ` (Penrose).
+- **Honest named-gap (outcome b), not a fit.** The icosahedral `6D→3D` projection has rank 3
+  (matches the physical slice) but cannot give `K(9,11,13)`'s `nullity 30` (it is `6D→3D`,
+  internal dim 3; `30 = ` icosahedron edges is a coincidence). The missing object is a precise
+  `33D→3D` cut-and-project — recorded, **not** manufactured by fitting.
+- **Consistency, not over-claim.** The icosahedral QC slices `E₈` (Elser–Sloane), the same `E₈`
+  the icosian roles generate — one object, two faces; this is consistency, not a new derivation
+  of the zones.
+
+## The triple, now three-channel
+`rank = 3` is reached by three **independent** forcings — Frobenius (`ℍ`'s three imaginary
+axes), the LA tripartite-rank theorem, and the icosahedral `3D` slice (`A₅⊂SO(3)`) — converging
+with the tower-stop no-go's three zones. Independent forcings: their convergence strengthens, it
+is **not** summed as one proof (per the honesty boundary).
+
+## Carried-forward / not done
+- **F.1 dossier sync: N/A** (`D0_THEORY_DOSSIER.md` removed in Iteration 2; content lives in books).
+- The `33D→3D` icosahedral cut-and-project (the explicit `K(9,11,13)` identification) is the
+  named open screw; the `rank-3=causal-cone` geometric gap (§07.51.3) remains the next root.
+- The pre-existing 17-module `lake build D0.All` breakage stays its own spun-off task.
