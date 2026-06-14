@@ -465,7 +465,7 @@ Proof (by contradiction): suppose an exogenous parameter is mandatory yet distin
 
 `phi` as a *forced* constant is numerology by no measure: extreme irrationality by Hurwitz (a theorem), the quantum dimension of Fibonacci anyons, the last KAM torus, Shechtman quasicrystals (Nobel), the `E8`-spectrum mass ratio measured in CoNb2O6 (Coldea 2010, an experiment). That is not a "pretty number" — it is measurable physical fact plus proved mathematics. Numerology does not begin with `phi`; it begins with the *manner of use* [^b00-41].
 
-- **Numerology:** a `phi`-combination back-fitted from a rich stock of small integers with no look-elsewhere accounting. (Failure example: `710 = 2·355`, `113` — a fit to a known approximation of `pi`.)
+- **Numerology:** a `phi`-combination back-fitted from a rich stock of small integers with no look-elsewhere accounting. (Calibration case: `710 = 2·355`, `113` read as *free integers* fit to `2·(355/113)`, a known approximation of `pi`, is numerology. The discriminant is **grammar-priority** (§05.8.R): the claim `D0-EW-WINDOW-FORCING-001` (§07.23) instead reads both numbers as *closed named-invariant expressions* — `710 = 2·D_Σ·(2|V|+D_Σ)`, `113 = (|ABCD|+1)·d₁₃+|V₁₃|`, zero free numbers — plus continued-fraction minimality of the `2π` near-return. That is forcing *iff* the invariant grammar was fixed independently of the `2π` target; a reader who rejects grammar-priority reads it as this failure example. The two readings are distinguished only by whether the grammar is prior, never by the closeness of the fit.)
 - **Science:** a forced constant with a frozen protocol, OR a number that entered the data *after* the grammar was frozen, with honest E-accounting.
 
 **E-accounting (mandatory for every `HYP`, forcing: transfer D0_PHILOSOPHY §4).** Declare the grammar of admissible expressions *before* looking at the data; then compute
@@ -482,6 +482,40 @@ E[\text{accidental}] = (\text{local density})\times 2\,|\text{miss}|
 - `|lambda_3|/|lambda_2| ~ 2/phi` — **discarded**: `0.15%` miss with large `E`; E-accounting kills it as noise.
 
 M1 thus acts as an automatic numerology filter, and the operational rule is absolute: **a cert that cannot return `FAIL` is not a cert** [^b00-43]. [^b00-23]
+
+### Rejected forcing-links — the external-theorem audit (kept as calibration)
+
+A systematic search for classical *forcing-owner* theorems (uniqueness/classification) that
+could own D0 links (the "Frobenius-class" audit) produced genuine owners — Jones index for
+`phi` (§01.21.3), Mordell for `E_8` (§02.18), Connes/Tomita–Takesaki for geometry/time — but
+also a list of links the audit **refused**, because a number-coincidence or a structural
+resemblance is not forcing. They are recorded here so the same coincidences are not re-proposed:
+
+- **Leech lattice `Λ₂₄` ↔ readout kernel `K=30`** — *rejected as forcing.* `Λ₂₄` has rank 24;
+  the scene kernel `K(9,11,13)` has nullity 30. `24 ≠ 30`, and D0 carries no 24-dimensional
+  object, so the link is a *theme* (both are even-unimodular-lattice topics), not a forcing.
+  (Distinct from the legitimate `E_8 → Λ₂₄` lattice tower of BOOK_02 §02.18, which is a *cited
+  external construction* (Wilson 2009; Conway–Sloane), not a `K=30` identification.)
+- **`Spin(8)` triality ⇒ exactly 3 fermion generations** — *rejected (HYP).* The "3" of triality
+  is the number of 8-dimensional representations of `D₄` (`V, Δ_+, Δ_−`) permuted by
+  `Out(Spin(8)) ≅ S₃` — **not** the number of fermion families. It is a content-coincidence of
+  the integer 3; triality is a valid member of the *dimension-8* network (§02.18a) for the
+  number **8**, never for the number 3.
+- **`C_max = 3/8` from Weinberg / Weinberg–Witten** — *rejected as the owner of the value.* The
+  soft-graviton and Weinberg–Witten theorems force spin-2 and general covariance, not the causal-
+  compactness threshold. `3/8 = rank/|Ω₈|` is forced by the D0 posing (`D0-COMPACTNESS-DEF-FORCING-001`),
+  not by the spin-2 theorems; the value `3/8` must not be attributed to Weinberg.
+- **Pisot substitution conjecture for `≥3` letters** — *open, not usable as a forcing.* Pure-
+  discrete-spectrum (the time-layer forcing) is a theorem only for the 2-letter / degree-2 case
+  (Hollander–Solomyak 2003), which covers `phi`. A `≥3`-letter Pisot forcing is an OPEN
+  conjecture; the time-layer forcing stays scoped to degree-2.
+- **Frobenius integrability theorem** — *structural scaffold, not an owner.* Involutivity ⇔
+  integrability (unique maximal leaf) supports the golden-foliation picture, but forces no
+  specific D0 object; it is a prop, not a forcing-owner, and is cited as such only.
+
+The review-side rule that licenses this list is BOOK_05 §05.8.R: a critique may lower or refuse
+a link only by **failing forcing-uniqueness (a named second object)** or by **naming an open
+gap** — never by enumerating coincidences. Each refusal above names exactly why forcing fails.
 
 (Owner note: BOOK_01 owns `phi`-from-`(p+p^2=1)`, `delta0`, the `F_N` feedback operator and the role alphabet; BOOK_03 owns `Lambda_act`. BOOK_00 keeps M1/M1+ and the admissibility contract — the law and its firewall — and cites the downstream `phi`-facts rather than re-deriving them.)
 ## 00.9a Gap-label firewall
