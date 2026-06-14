@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 2973,
+    "realized": 2963,
     "track_fair_max": 4015,
-    "pct_strength": 74.0,
-    "core_realized": 2553,
+    "pct_strength": 73.8,
+    "core_realized": 2543,
     "core_potential": 3580,
-    "core_headroom": 1027,
+    "core_headroom": 1037,
     "n_claims": 224,
     "n_active": 223,
     "duplicates": [],
@@ -32,10 +32,10 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 131,
-      "realized": 1943,
-      "max": 2520,
-      "core_headroom": 572
+      "n": 130,
+      "realized": 1936,
+      "max": 2500,
+      "core_headroom": 559
     },
     "rg": {
       "n": 3,
@@ -56,10 +56,10 @@
       "core_headroom": 39
     },
     "spectral_action": {
-      "n": 6,
-      "realized": 68,
-      "max": 120,
-      "core_headroom": 52
+      "n": 5,
+      "realized": 61,
+      "max": 100,
+      "core_headroom": 39
     },
     "empirical_passport": {
       "n": 21,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 12,
-      "realized": 29,
-      "max": 240,
-      "core_headroom": 211
+      "n": 14,
+      "realized": 33,
+      "max": 280,
+      "core_headroom": 247
     }
   },
   "by_book": {
@@ -143,9 +143,9 @@
     },
     "BOOK_07/08": {
       "n": 8,
-      "realized": 77,
+      "realized": 72,
       "max": 147,
-      "core_headroom": 70
+      "core_headroom": 75
     },
     "BOOK_07": {
       "n": 36,
@@ -311,9 +311,9 @@
     },
     "BOOK_04/07": {
       "n": 2,
-      "realized": 9,
+      "realized": 4,
       "max": 40,
-      "core_headroom": 31
+      "core_headroom": 36
     },
     "BOOK_06": {
       "n": 5,
@@ -768,29 +768,9 @@
       "effort": "write Lean proof"
     },
     {
-      "claim_id": "D0-SPECTRAL-EINSTEIN-001",
-      "domain": "spectral_action",
-      "book": "BOOK_07/08",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
       "claim_id": "D0-NOAXION-001",
       "domain": "formal_core",
       "book": "BOOK_05/08",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-HODGE-LINKS-001",
-      "domain": "formal_core",
-      "book": "BOOK_04/07",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1116,6 +1096,26 @@
       "next": "CERT_SCAFFOLD",
       "points_gained": 2,
       "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-SPECTRAL-EINSTEIN-001",
+      "domain": "frontier",
+      "book": "BOOK_07/08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-HODGE-LINKS-001",
+      "domain": "frontier",
+      "book": "BOOK_04/07",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
     }
   ],
   "leverage_gaps": [
@@ -1219,6 +1219,20 @@
     },
     {
       "claim_id": "D0-QUANT-MET-004",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-SPECTRAL-EINSTEIN-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-HODGE-LINKS-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -1484,21 +1498,7 @@
       "score": 7
     },
     {
-      "claim_id": "D0-SPECTRAL-EINSTEIN-001",
-      "domain": "spectral_action",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
       "claim_id": "D0-NOAXION-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-HODGE-LINKS-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -4051,13 +4051,13 @@
     {
       "claim_id": "D0-SPECTRAL-EINSTEIN-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "spectral_action",
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_07/08",
       "leverage": 0,
       "integrity_flag": null
@@ -4093,13 +4093,13 @@
     {
       "claim_id": "D0-HODGE-LINKS-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "formal_core",
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_04/07",
       "leverage": 0,
       "integrity_flag": null
@@ -4780,7 +4780,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.4,
+    "penalty_total": 0.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -4825,8 +4825,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 4,
-        "points": -0.4,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -4875,8 +4875,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 4,
-        "points": -0.4,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

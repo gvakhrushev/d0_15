@@ -173,10 +173,10 @@ digraph D0Theory {
   "D0-HODGE-001" [label="D0-HODGE-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-MINCUT-001" [label="D0-MINCUT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-SPIN2-001" [label="D0-SPIN2-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
-  "D0-SPECTRAL-EINSTEIN-001" [label="D0-SPECTRAL-EINSTEIN-001\\nCERT-CLOSED\\nspectral_action", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-SPECTRAL-EINSTEIN-001" [label="D0-SPECTRAL-EINSTEIN-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-NOAXION-001" [label="D0-NOAXION-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-NONABELIAN-SEAM-001" [label="D0-NONABELIAN-SEAM-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
-  "D0-HODGE-LINKS-001" [label="D0-HODGE-LINKS-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-HODGE-LINKS-001" [label="D0-HODGE-LINKS-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-MASTER-BOOTSTRAP-001" [label="D0-MASTER-BOOTSTRAP-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-MESON-DEFECT-ALGEBRA-001" [label="D0-MESON-DEFECT-ALGEBRA-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-HIGGS-YUKAWA-001" [label="D0-HIGGS-YUKAWA-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -1137,10 +1137,8 @@ digraph D0Theory {
   "D0-SPIN2-001" -> "domain:formal_core" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-SPECTRAL-EINSTEIN-001" -> "module:" [label="module"];
-  "cert:vp_spectral_action_einstein_tensor_response.py" [label="vp_spectral_action_einstein_tensor_response.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
-  "D0-SPECTRAL-EINSTEIN-001" -> "cert:vp_spectral_action_einstein_tensor_response.py" [label="cert"];
-  "domain:spectral_action" [label="spectral_action", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-SPECTRAL-EINSTEIN-001" -> "domain:spectral_action" [label="domain"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-SPECTRAL-EINSTEIN-001" -> "domain:frontier" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-NOAXION-001" -> "module:" [label="module"];
   "cert:vp_no_axion_finite_cochain.py" [label="vp_no_axion_finite_cochain.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
@@ -1155,10 +1153,8 @@ digraph D0Theory {
   "D0-NONABELIAN-SEAM-001" -> "domain:formal_core" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-HODGE-LINKS-001" -> "module:" [label="module"];
-  "cert:vp_hodge_matter_gravity_archive_links.py" [label="vp_hodge_matter_gravity_archive_links.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
-  "D0-HODGE-LINKS-001" -> "cert:vp_hodge_matter_gravity_archive_links.py" [label="cert"];
-  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-HODGE-LINKS-001" -> "domain:formal_core" [label="domain"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-HODGE-LINKS-001" -> "domain:frontier" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-MASTER-BOOTSTRAP-001" -> "module:" [label="module"];
   "cert:vp_master_bootstrap_and_volume_derivative.py" [label="vp_master_bootstrap_and_volume_derivative.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];

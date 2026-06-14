@@ -24,13 +24,9 @@ multiple testing: bonferroni over delta8_hypotheses
 
 ## Preserved source
 
-The legacy branch is preserved outside the active theory text:
-
-```text
-99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/
-```
-
-This preserved source is not a core theorem owner. It is retained for reproducibility, audit, and future passport refactoring.
+The legacy branch (`99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/`) was removed in the
+Iteration-1 cleanup and is retained only in git history for reproducibility/audit; it was
+never a core theorem owner.
 
 ## Active discipline
 

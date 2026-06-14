@@ -10,41 +10,41 @@
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 62,
+      "CERT-CLOSED": 60,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
       "BRIDGE-CALIBRATION": 2,
       "EMPIRICAL-PASSPORT": 14,
-      "PROOF-TARGET": 12
+      "PROOF-TARGET": 14
     },
     "lean_status": {
       "LEAN_PROVED": 124,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 77,
+      "PYTHON_CERTIFIED": 75,
       "DEPRECATED": 2,
-      "OPEN": 13
+      "OPEN": 15
     },
     "claim_type": {
       "core": 106,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 75,
+      "certificate": 73,
       "deprecated": 2,
-      "frontier": 12
+      "frontier": 14
     },
     "domain": {
-      "formal_core": 131,
+      "formal_core": 130,
       "rg": 3,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
-      "spectral_action": 6,
+      "spectral_action": 5,
       "empirical_passport": 21,
       "cosmology": 22,
       "external_background": 1,
       "si_calibration": 3,
       "interpretation_spine": 1,
-      "frontier": 12
+      "frontier": 14
     }
   },
   "nodes": [
@@ -5657,32 +5657,23 @@
       "id": "D0-SPECTRAL-EINSTEIN-001",
       "kind": "claim",
       "claim_id": "D0-SPECTRAL-EINSTEIN-001",
-      "type": "certificate",
-      "domain": "spectral_action",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
       "book": "BOOK_07/08",
       "section": "finite A2 Einstein-tensor response",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_spectral_action_einstein_tensor_response.py",
-      "python_cert": [
-        "vp_spectral_action_einstein_tensor_response.py"
-      ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] finite spectral-action A2 response.",
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-TARGET",
+      "notes": "[8C orphan-harvest] finite spectral-action A2 response. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "cert:vp_spectral_action_einstein_tensor_response.py",
-      "kind": "python_cert",
-      "label": "vp_spectral_action_einstein_tensor_response.py",
-      "path": "05_CERTS/vp_spectral_action_einstein_tensor_response.py",
-      "exists": true
     },
     {
       "id": "D0-NOAXION-001",
@@ -5757,32 +5748,23 @@
       "id": "D0-HODGE-LINKS-001",
       "kind": "claim",
       "claim_id": "D0-HODGE-LINKS-001",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
       "book": "BOOK_04/07",
       "section": "Hodge matter-gravity archive links",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_hodge_matter_gravity_archive_links.py",
-      "python_cert": [
-        "vp_hodge_matter_gravity_archive_links.py"
-      ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier.",
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-TARGET",
+      "notes": "[8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "cert:vp_hodge_matter_gravity_archive_links.py",
-      "kind": "python_cert",
-      "label": "vp_hodge_matter_gravity_archive_links.py",
-      "path": "05_CERTS/vp_hodge_matter_gravity_archive_links.py",
-      "exists": true
     },
     {
       "id": "D0-MASTER-BOOTSTRAP-001",
@@ -9633,18 +9615,13 @@
     },
     {
       "source": "D0-SPECTRAL-EINSTEIN-001",
-      "target": "domain:spectral_action",
+      "target": "domain:frontier",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-SPECTRAL-EINSTEIN-001",
       "target": "module:",
       "kind": "implemented_in"
-    },
-    {
-      "source": "D0-SPECTRAL-EINSTEIN-001",
-      "target": "cert:vp_spectral_action_einstein_tensor_response.py",
-      "kind": "certified_by"
     },
     {
       "source": "D0-NOAXION-001",
@@ -9678,18 +9655,13 @@
     },
     {
       "source": "D0-HODGE-LINKS-001",
-      "target": "domain:formal_core",
+      "target": "domain:frontier",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-HODGE-LINKS-001",
       "target": "module:",
       "kind": "implemented_in"
-    },
-    {
-      "source": "D0-HODGE-LINKS-001",
-      "target": "cert:vp_hodge_matter_gravity_archive_links.py",
-      "kind": "certified_by"
     },
     {
       "source": "D0-MASTER-BOOTSTRAP-001",

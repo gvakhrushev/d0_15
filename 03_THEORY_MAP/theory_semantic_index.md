@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 62
+- `CERT-CLOSED`: 60
 - `CORE-FORMALIZED`: 105
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -15,15 +15,15 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 8
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 12
+- `PROOF-TARGET`: 14
 
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 75
+- `certificate`: 73
 - `core`: 106
 - `deprecated`: 2
-- `frontier`: 12
+- `frontier`: 14
 - `no-go`: 16
 
 ## Domain counts
@@ -31,14 +31,14 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 131
-- `frontier`: 12
+- `formal_core`: 130
+- `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
 - `rg`: 3
 - `si_calibration`: 3
 - `smooth_geometry`: 7
-- `spectral_action`: 6
+- `spectral_action`: 5
 
 ## Domain: cosmology
 
@@ -960,19 +960,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] finite cochain complex d.d=0 + finite Hodge Laplacian.
-
-### D0-HODGE-LINKS-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04/07`
-- module: ``
-- theorem: `none`
-- cert: `vp_hodge_matter_gravity_archive_links.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier.
 
 ### D0-HST-ARCHIVE-001
 
@@ -2433,6 +2420,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: Guardrail target retained. [Iter5 repoint] Cleared phantom module path D0.Edge.AlphaRamificationConstructive (no file on disk). The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is already proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one; the unitary-dilation leg (and EDGE-002 Puiseux) remain the open obligation. OWNER-DECISION: split EDGE-001 trace-leg (closeable) from the dilation leg.
 
+### D0-HODGE-LINKS-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/07`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared.
+
 ### D0-HORIZON-JET-001
 
 - type: `frontier`
@@ -2484,6 +2484,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]
+
+### D0-SPECTRAL-EINSTEIN-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [8C orphan-harvest] finite spectral-action A2 response. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared.
 
 
 ## Domain: gauge_bridge
@@ -2944,19 +2957,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: D0-side admissibility and coefficient/cutoff certs; external analytic theorem not internalized.
-
-### D0-SPECTRAL-EINSTEIN-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `spectral_action`
-- book: `BOOK_07/08`
-- module: ``
-- theorem: `none`
-- cert: `vp_spectral_action_einstein_tensor_response.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] finite spectral-action A2 response.
 
 ### D0-GEOM-HEAT-TRACE-A2-DECOMP-001
 

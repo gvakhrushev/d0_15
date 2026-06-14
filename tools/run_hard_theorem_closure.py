@@ -323,10 +323,6 @@ CERT_TARGETS = [
         "05_CERTS/vp_no_axion_finite_cochain.py",
         "PASS_FINITE_NO_AXION_TOPOLOGICAL_BLOCK",
     ),
-    CertTarget(
-        "05_CERTS/vp_hodge_matter_gravity_archive_links.py",
-        "PASS_HODGE_MATTER_C1_LINK",
-    ),
 ]
 
 

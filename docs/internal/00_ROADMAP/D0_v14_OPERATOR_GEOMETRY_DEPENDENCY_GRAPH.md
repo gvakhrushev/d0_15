@@ -45,8 +45,6 @@ no geometry diagnostic as core source
 
 ## Preserved legacy source
 
-```text
-99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/
-```
-
-The preserved source is for audit and reproducibility. It is not an active theorem layer.
+The legacy `99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/` tree was removed in the Iteration-1
+cleanup (it duplicated `add/d0-main/`, itself later removed); git history retains both for
+audit/reproducibility. It was never an active theorem layer.
