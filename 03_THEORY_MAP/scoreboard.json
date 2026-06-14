@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3246,
-    "track_fair_max": 4448,
-    "pct_strength": 73.0,
-    "core_realized": 2757,
-    "core_potential": 3940,
-    "core_headroom": 1183,
-    "n_claims": 249,
-    "n_active": 248,
+    "realized": 3260,
+    "track_fair_max": 4488,
+    "pct_strength": 72.6,
+    "core_realized": 2771,
+    "core_potential": 3980,
+    "core_headroom": 1209,
+    "n_claims": 251,
+    "n_active": 250,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 152,
-      "realized": 2193,
-      "max": 2895,
-      "core_headroom": 697
+      "n": 153,
+      "realized": 2200,
+      "max": 2915,
+      "core_headroom": 710
     },
     "rg": {
       "n": 5,
@@ -50,10 +50,10 @@
       "core_headroom": 13
     },
     "smooth_geometry": {
-      "n": 7,
-      "realized": 83,
-      "max": 122,
-      "core_headroom": 39
+      "n": 8,
+      "realized": 90,
+      "max": 142,
+      "core_headroom": 52
     },
     "spectral_action": {
       "n": 5,
@@ -112,10 +112,10 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 8,
-      "realized": 126,
-      "max": 147,
-      "core_headroom": 21
+      "n": 10,
+      "realized": 140,
+      "max": 187,
+      "core_headroom": 47
     },
     "BOOK_02": {
       "n": 8,
@@ -1100,6 +1100,26 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+      "domain": "smooth_geometry",
+      "book": "BOOK_01",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-QUASICRYSTAL-PROJECTION-001",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1834,6 +1854,20 @@
     },
     {
       "claim_id": "D0-WINDOW44-TOTIENT-M1-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+      "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-QUASICRYSTAL-PROJECTION-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5341,12 +5375,40 @@
       "book": "BOOK_05",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-QUASICRYSTAL-PROJECTION-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.2,
+    "penalty_total": 2.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5415,8 +5477,8 @@
       },
       {
         "signal": "corpus_errors",
-        "count": 0,
-        "points": -0.0,
+        "count": 2,
+        "points": -2.0,
         "cap": -10.0,
         "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
         "evidence": []
@@ -5439,6 +5501,14 @@
       }
     ],
     "top_actions": [
+      {
+        "signal": "corpus_errors",
+        "count": 2,
+        "points": -2.0,
+        "cap": -10.0,
+        "label": "check_v14_clean_corpus violations (duplicate headings, version logs)",
+        "evidence": []
+      },
       {
         "signal": "orphan_proof_targets",
         "count": 2,

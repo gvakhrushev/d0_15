@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 72
+- `CERT-CLOSED`: 74
 - `CORE-FORMALIZED`: 111
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 19
-- `certificate`: 86
+- `certificate`: 88
 - `core`: 112
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,13 +31,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 152
+- `formal_core`: 153
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
-- `smooth_geometry`: 7
+- `smooth_geometry`: 8
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -1402,6 +1402,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Meson domain walls are six oriented nonzero phason boundaries lifted by generation readout to an 18-state finite carrier while meson transfer still uses the existing Edge by Generation lifted flavour-defect origin. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-QUASICRYSTAL-PROJECTION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: ``
+- theorem: `none`
+- cert: `vp_icosahedral_cutproject.py;vp_e8_quasicrystal_slice.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter10 honest dual outcome b -- coincidence is not derivation] T1: standard icosahedral 6D->3D cut-and-project built (6 five-fold axes; rank 3 via exact minor det=-2phi^2; [physical;internal] 6x6 full rank; phi-tilt internal phi->-1/phi). T2 VERDICT: rank-3 MATCHES the physical slice dim (real channel) BUT the 6D->3D internal space is 3-dim NOT 30 -- K(9,11,13) is 33-dim (rank3+nullity30), so reproducing nullity 30 needs a 33D->3D cut-and-project; the 30 that matches K's nullity is the icosahedron EDGE count (V12,E30,F20), a number-coincidence. NAMED GAP: the missing object is a 33D->3D cut-and-project with icosahedral 3D slice + 30D internal = K's kernel. Did NOT fit the projection. T3 (vp_e8_quasicrystal_slice.py): the icosahedral QC slices E8 (Elser-Sloane); same E8 as D0 roles (D0-ICOSIAN-E8-GRAM-001); A5=2I/{+-1}=PSL(2,5)|60|⊂SO(3); E8(8)⊃6D⊃3D consistent. T4: 3D physical slice = THIRD independent channel to rank=3 (with Frobenius H 3 axes + LA tripartite rank=#parts), converging with the tower-stop 3 zones (D0-TOWER-STOP-NOEXT-001). HONEST: channels independent, not summed as a proof; identification of K(9,11,13) with a concrete projection stays the named gap.
 
 ### D0-SDE-K0-001
 
@@ -3214,6 +3227,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Absolute/relative sign corrected. [was:FRACTAL-CONTINUUM-PREDICTION-CERT-CLOSED]
+
+### D0-QUASICRYSTAL-CARRIER-FORCING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_01`
+- module: ``
+- theorem: `none`
+- cert: `vp_quasicrystal_carrier_forcing.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter10 FORCING, closed in chat -- the lattice BRIDGE became a FORCING] phi-carrier is forced, not postulated: (1) non-perturbative gauge theory is rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay problem) => finite carrier is the only rigorous one; (2) a periodic lattice has an arbitrary step a (needs a->0); a quasicrystal is self-similar by phi (inflation [[1,1],[1,0]] Perron eigenvalue phi, A/B->phi) with NO preferred step, NO a->0 limit; (3) M1 forbids the hand-chosen a (exogenous) => carrier must be aperiodic-self-similar; (4) aperiodic + 5-fold => phi (Penrose/de Bruijn cut-and-project; 2cos(pi/5)=phi; Shechtman Nobel 2011). cert vp_quasicrystal_carrier_forcing.py (decidable inflation/5-fold backbone + 4 named external pillars). Reuses the already-proved quasicrystalline carrier (Sturmian phi^-2, §01.21.2). NEW external channel to phi (with Hurwitz, Jones-index, KAM, quadratic Pisot). Do not reopen; the open remainder is D0-QUASICRYSTAL-PROJECTION-001.
 
 ### D0-GEOM-SPECTRAL-ACTION-LADDER-001
 

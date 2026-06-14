@@ -250,6 +250,8 @@ digraph D0Theory {
   "D0-CKM-PMNS-COMPLEMENTARITY-001" [label="D0-CKM-PMNS-COMPLEMENTARITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-WINDOW44-TOTIENT-M1-001" [label="D0-WINDOW44-TOTIENT-M1-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-TOWER-STOP-NOEXT-001" [label="D0-TOWER-STOP-NOEXT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-QUASICRYSTAL-CARRIER-FORCING-001" [label="D0-QUASICRYSTAL-CARRIER-FORCING-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-QUASICRYSTAL-PROJECTION-001" [label="D0-QUASICRYSTAL-PROJECTION-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1626,4 +1628,18 @@ digraph D0Theory {
   "D0-TOWER-STOP-NOEXT-001" -> "cert:vp_degree2_three_types.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-TOWER-STOP-NOEXT-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-QUASICRYSTAL-CARRIER-FORCING-001" -> "module:" [label="module"];
+  "cert:vp_quasicrystal_carrier_forcing.py" [label="vp_quasicrystal_carrier_forcing.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-QUASICRYSTAL-CARRIER-FORCING-001" -> "cert:vp_quasicrystal_carrier_forcing.py" [label="cert"];
+  "domain:smooth_geometry" [label="smooth_geometry", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-QUASICRYSTAL-CARRIER-FORCING-001" -> "domain:smooth_geometry" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-QUASICRYSTAL-PROJECTION-001" -> "module:" [label="module"];
+  "cert:vp_icosahedral_cutproject.py" [label="vp_icosahedral_cutproject.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-QUASICRYSTAL-PROJECTION-001" -> "cert:vp_icosahedral_cutproject.py" [label="cert"];
+  "cert:vp_e8_quasicrystal_slice.py" [label="vp_e8_quasicrystal_slice.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-QUASICRYSTAL-PROJECTION-001" -> "cert:vp_e8_quasicrystal_slice.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-QUASICRYSTAL-PROJECTION-001" -> "domain:formal_core" [label="domain"];
 }
