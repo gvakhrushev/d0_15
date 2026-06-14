@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 60
+- `CERT-CLOSED`: 61
 - `CORE-FORMALIZED`: 105
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 73
+- `certificate`: 74
 - `core`: 106
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 130
+- `formal_core`: 131
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -791,6 +791,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE] [8C: linked passing cert]
+
+### D0-DELTA-ALPHA-EXACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_delta_alpha_exact.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter5 finite-core, Option-1] Reduces the gluing anomaly from numeric-CHK/hypothesis to an EXACT Q(phi) element. Both alpha writings are closed forms with NO data input: alpha_top^-1=359 phi^-2-phi^-5=726-364phi; alpha_alg^-1=2^11 pi0/phi^8 + (2/3)delta0 (pi0=(6/5)phi^2, delta0=1/(2phi^3))=159739/5-(294902/15)phi. Cert vp_delta_alpha_exact.py proves (exact Z[phi]): Delta_alpha=alpha_top^-1-alpha_alg^-1=-156109/5+(289442/15)phi ~ -4.1522e-4; Delta_alpha != 0 (phi-coeff != 0 => irrational => !=0, M1-forced); |Delta_alpha| < phi^-16=1597-987phi (exact surd-sign analysis). Distinct from the DATA residual |alpha_measured-alpha_top^-1|~3.7e-4. HONEST: exact VALUE+nonzero+bound closed; the analytic OWNER (deriving alpha_alg form from the CVFT-F1 feedback-resolvent 2nd-order/pi0-phase moment) stays frontier; m_nu prop Delta_alpha^2 stays BRIDGE (x m_e, passport, not promoted). CORE would need a Lean phi^-n closed-form chain (clean next step).
 
 ### D0-DM-CLASSICALITY-001
 
@@ -1583,7 +1596,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_class5_aliasing_cabibbo.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: [Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Class5Aliasing (class5_aliasing): |Z5|=5=D_Sigma alias + survivors {1,20} + 20=4*5, reusing window44_odd_part_card. Cabibbo readout stays BRIDGE (not promoted).
+- notes: [Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Class5Aliasing (class5_aliasing): |Z5|=5=D_Sigma alias + survivors {1,20} + 20=4*5, reusing window44_odd_part_card. Cabibbo readout stays BRIDGE (not promoted). [Iter5 finite-core] Hidden-memory named gap REDUCED to its decidable shadow: the joint (winding,address) readout collapses 25->5 (class5_readout_collapse), so class-5 needs a hidden register (M1-forbidden) — proved by decide in D0.Claims.Class5Aliasing. The full M1 contradiction (golden 01.11C holographic-pointer, absent/v17) stays the residual frontier.
 
 ### D0-CONDENSED-PHI-VACUUM-CUT-PROJECT-001
 

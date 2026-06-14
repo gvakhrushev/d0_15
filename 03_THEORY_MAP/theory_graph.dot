@@ -225,6 +225,7 @@ digraph D0Theory {
   "D0-H0-EVOLVING-W-001" [label="D0-H0-EVOLVING-W-001\\nEMPIRICAL-PASSPORT\\nsi_calibration", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-E8-COLDEA-ANCHOR-001" [label="D0-E8-COLDEA-ANCHOR-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-RANK3-CAUSAL-CONE-001" [label="D0-RANK3-CAUSAL-CONE-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-DELTA-ALPHA-EXACT-001" [label="D0-DELTA-ALPHA-EXACT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1441,4 +1442,10 @@ digraph D0Theory {
   "D0-RANK3-CAUSAL-CONE-001" -> "module:D0.Synthesis.RankCausalCone" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-RANK3-CAUSAL-CONE-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-DELTA-ALPHA-EXACT-001" -> "module:" [label="module"];
+  "cert:vp_delta_alpha_exact.py" [label="vp_delta_alpha_exact.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-DELTA-ALPHA-EXACT-001" -> "cert:vp_delta_alpha_exact.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-DELTA-ALPHA-EXACT-001" -> "domain:formal_core" [label="domain"];
 }

@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 2963,
-    "track_fair_max": 4015,
-    "pct_strength": 73.8,
-    "core_realized": 2543,
-    "core_potential": 3580,
-    "core_headroom": 1037,
-    "n_claims": 224,
-    "n_active": 223,
+    "realized": 2970,
+    "track_fair_max": 4035,
+    "pct_strength": 73.6,
+    "core_realized": 2550,
+    "core_potential": 3600,
+    "core_headroom": 1050,
+    "n_claims": 225,
+    "n_active": 224,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 130,
-      "realized": 1936,
-      "max": 2500,
-      "core_headroom": 559
+      "n": 131,
+      "realized": 1943,
+      "max": 2520,
+      "core_headroom": 572
     },
     "rg": {
       "n": 3,
@@ -118,10 +118,10 @@
       "core_headroom": 13
     },
     "BOOK_02": {
-      "n": 4,
-      "realized": 49,
-      "max": 62,
-      "core_headroom": 13
+      "n": 5,
+      "realized": 56,
+      "max": 82,
+      "core_headroom": 26
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -968,6 +968,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-DELTA-ALPHA-EXACT-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1632,6 +1642,13 @@
     },
     {
       "claim_id": "D0-PHASON-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-EXACT-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -4773,6 +4790,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-EXACT-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
       "leverage": 0,
       "integrity_flag": null
     }

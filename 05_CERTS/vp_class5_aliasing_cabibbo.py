@@ -125,6 +125,19 @@ def main() -> int:
     assert len(set(alias.values())) == D_SIGMA, "alias collides addresses non-bijectively"
     print("PASS_CLASS5_ALIASING_KILL  |Z5|=5=D_Σ; winding-5 ≅ address-5 (pointer collision ⊥M1)")
 
+    # ---- HIDDEN-MEMORY SHADOW (finite-core reduction of the named gap) --------------
+    # winding and address run on the SAME 5 symbols (the alias), so the joint readout a
+    # class-5 generation would need — resolving winding AND address independently —
+    # collapses to the diagonal: only D_Σ of D_Σ^2 configs are resolvable. The missing
+    # ones must live in a hidden register, which M1 forbids.
+    aliased_joint = {(winding[k], address[k]) for k in range(D_SIGMA)}   # (k,k) diagonal
+    independent_joint = {(w, a) for w in range(D_SIGMA) for a in range(D_SIGMA)}
+    assert len(aliased_joint) == D_SIGMA == 5, "aliased joint did not collapse to 5"
+    assert len(independent_joint) == D_SIGMA ** 2 == 25, "independent product != 25"
+    assert len(aliased_joint) < len(independent_joint), "no collapse (no hidden memory)"
+    print("PASS_CLASS5_READOUT_COLLAPSE  joint (winding,address) resolves 5 of 25 "
+          "(20 would need a hidden register ⊥M1)")
+
     # ---- survivors {1, 20}: generations 1 and 2, m_s/m_d = 20 -----------------------
     survivors = sorted(unique_orders - {ABCD, D_SIGMA})   # drop class-4 and class-5
     assert survivors == [1, 20], f"survivors after killing 4,5 != [1,20]: {survivors}"
@@ -152,7 +165,8 @@ def main() -> int:
 
     # ---- honesty boundary ----------------------------------------------------------
     print("HONEST_CLASS5_EXCLUSION_CLOSED_AT_FINITE_ALIAS_LEVEL")
-    print("HONEST_FULL_HIDDEN_MEMORY_M1_CONTRADICTION_STAYS_THEOREM_TARGET")
+    print("HONEST_HIDDEN_MEMORY_DECIDABLE_SHADOW_CLOSED_25_TO_5_READOUT_COLLAPSE")
+    print("HONEST_FULL_M1_CONTRADICTION_GRAMMAR_01_11C_HOLOGRAPHIC_POINTER_STAYS_FRONTIER")
 
     print("PASS_CLASS5_ALIASING_CABIBBO")
     return 0

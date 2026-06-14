@@ -229,3 +229,4 @@ This is the current status index for D0 theory branches, Lean anchors, certifica
 | D0-H0-EVOLVING-W-001 | certificate | si_calibration | EMPIRICAL-PASSPORT | PYTHON_CERTIFIED | `` | `` | `vp_h0_evolving_w.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |
 | D0-E8-COLDEA-ANCHOR-001 | certificate | empirical_passport | EMPIRICAL-PASSPORT | PYTHON_CERTIFIED | `` | `` | `vp_e8_coldea_anchor.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |
 | D0-RANK3-CAUSAL-CONE-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Synthesis.RankCausalCone` | `rank3_causal_cone` | `` | Lean-owned finite/formal D0 core statement. |
+| D0-DELTA-ALPHA-EXACT-001 | certificate | formal_core | CERT-CLOSED | PYTHON_CERTIFIED | `` | `` | `vp_delta_alpha_exact.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |

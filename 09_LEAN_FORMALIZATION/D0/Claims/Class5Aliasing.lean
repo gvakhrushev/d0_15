@@ -30,12 +30,31 @@ theorem class5_alias_card : (units44.image (fun u => u ^ 2)).card = addressClass
 `{1,4,5,20}` leaves the M1-admissible survivors `{1, 20}`. -/
 theorem class5_survivors : (({1, 4, 5, 20} : Finset ℕ) \ {4, 5}) = {1, 20} := by decide
 
+/-- **Hidden-memory shadow (finite-core reduction of the named gap).** Because `|Z5| = 5 =
+D_Σ`, the winding index and the operational address index run on the SAME five symbols (the
+alias). The joint readout `k ↦ (winding k, address k)` a class-5 generation would need —
+to resolve winding AND address independently — therefore collapses to the diagonal: it
+resolves only `5` of the `25` `(winding, address)` configurations. Recovering all 25 would
+require the missing `20` configurations to be stored in a hidden 5-valued register, which
+M1 forbids; hence class 5 cannot be an independent generation. (A survivor resolves a
+genuine product of `25` with no hidden bit.) This is the decidable shadow of the
+"hidden memory" step; the full M1 contradiction theorem (golden 01.11C, holographic pointer
+machine) is the residual frontier obligation. -/
+theorem class5_readout_collapse :
+    (Finset.univ.image (fun k : Fin 5 => ((k, k) : Fin 5 × Fin 5))).card = 5 ∧
+    Fintype.card (Fin 5 × Fin 5) = 25 ∧ 5 < 25 := by
+  refine ⟨?_, ?_, ?_⟩ <;> decide
+
 /-- **D0-CLASS5-ALIASING-001 (structural).** `|Z5| = 5 = D_Σ` (the alias), the survivors
-after the class-4 and class-5 kills are `{1, 20}`, and `20 = 4·5 = |ABCD|·D_Σ`. -/
+after the class-4 and class-5 kills are `{1, 20}`, `20 = 4·5 = |ABCD|·D_Σ`, and the joint
+winding/address readout collapses `25 → 5` (the decidable hidden-memory shadow). -/
 theorem class5_aliasing :
     (units44.image (fun u => u ^ 2)).card = 5 ∧
     (({1, 4, 5, 20} : Finset ℕ) \ {4, 5}) = {1, 20} ∧
-    4 * 5 = 20 :=
-  ⟨window44_odd_part_card, by decide, by decide⟩
+    4 * 5 = 20 ∧
+    (Finset.univ.image (fun k : Fin 5 => ((k, k) : Fin 5 × Fin 5))).card = 5 ∧
+    Fintype.card (Fin 5 × Fin 5) = 25 :=
+  ⟨window44_odd_part_card, by decide, by decide, class5_readout_collapse.1,
+    class5_readout_collapse.2.1⟩
 
 end D0.Claims

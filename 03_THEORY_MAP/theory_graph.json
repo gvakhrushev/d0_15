@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 224,
+    "claims": 225,
     "release_status": {
       "CORE-FORMALIZED": 105,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 60,
+      "CERT-CLOSED": 61,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 124,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 75,
+      "PYTHON_CERTIFIED": 76,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 106,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 73,
+      "certificate": 74,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 130,
+      "formal_core": 131,
       "rg": 3,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7040,7 +7040,7 @@
         "vp_class5_aliasing_cabibbo.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Class5Aliasing (class5_aliasing): |Z5|=5=D_Sigma alias + survivors {1,20} + 20=4*5, reusing window44_odd_part_card. Cabibbo readout stays BRIDGE (not promoted).",
+      "notes": "[Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Class5Aliasing (class5_aliasing): |Z5|=5=D_Sigma alias + survivors {1,20} + 20=4*5, reusing window44_odd_part_card. Cabibbo readout stays BRIDGE (not promoted). [Iter5 finite-core] Hidden-memory named gap REDUCED to its decidable shadow: the joint (winding,address) readout collapses 25->5 (class5_readout_collapse), so class-5 needs a hidden register (M1-forbidden) — proved by decide in D0.Claims.Class5Aliasing. The full M1 contradiction (golden 01.11C holographic-pointer, absent/v17) stays the residual frontier.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Claims/Class5Aliasing.lean",
       "module_exists": true,
       "certs_exist": true
@@ -7334,6 +7334,37 @@
       "kind": "lean_module",
       "label": "D0.Synthesis.RankCausalCone",
       "path": "09_LEAN_FORMALIZATION/D0/Synthesis/RankCausalCone.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-DELTA-ALPHA-EXACT-001",
+      "kind": "claim",
+      "claim_id": "D0-DELTA-ALPHA-EXACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "gluing anomaly Delta_alpha exact Q(phi) value (02.13.4)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_delta_alpha_exact.py",
+      "python_cert": [
+        "vp_delta_alpha_exact.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter5 finite-core, Option-1] Reduces the gluing anomaly from numeric-CHK/hypothesis to an EXACT Q(phi) element. Both alpha writings are closed forms with NO data input: alpha_top^-1=359 phi^-2-phi^-5=726-364phi; alpha_alg^-1=2^11 pi0/phi^8 + (2/3)delta0 (pi0=(6/5)phi^2, delta0=1/(2phi^3))=159739/5-(294902/15)phi. Cert vp_delta_alpha_exact.py proves (exact Z[phi]): Delta_alpha=alpha_top^-1-alpha_alg^-1=-156109/5+(289442/15)phi ~ -4.1522e-4; Delta_alpha != 0 (phi-coeff != 0 => irrational => !=0, M1-forced); |Delta_alpha| < phi^-16=1597-987phi (exact surd-sign analysis). Distinct from the DATA residual |alpha_measured-alpha_top^-1|~3.7e-4. HONEST: exact VALUE+nonzero+bound closed; the analytic OWNER (deriving alpha_alg form from the CVFT-F1 feedback-resolvent 2nd-order/pi0-phase moment) stays frontier; m_nu prop Delta_alpha^2 stays BRIDGE (x m_e, passport, not promoted). CORE would need a Lean phi^-n closed-form chain (clean next step).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_delta_alpha_exact.py",
+      "kind": "python_cert",
+      "label": "vp_delta_alpha_exact.py",
+      "path": "05_CERTS/vp_delta_alpha_exact.py",
       "exists": true
     }
   ],
@@ -10377,6 +10408,21 @@
       "source": "D0-RANK3-CAUSAL-CONE-001",
       "target": "module:D0.Synthesis.RankCausalCone",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DELTA-ALPHA-EXACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DELTA-ALPHA-EXACT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DELTA-ALPHA-EXACT-001",
+      "target": "cert:vp_delta_alpha_exact.py",
+      "kind": "certified_by"
     }
   ]
 }
