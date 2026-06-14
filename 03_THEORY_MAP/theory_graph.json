@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 215,
+    "claims": 216,
     "release_status": {
       "CORE-FORMALIZED": 92,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 70,
+      "CERT-CLOSED": 71,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 112,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 80,
+      "PYTHON_CERTIFIED": 81,
       "DEPRECATED": 2,
       "OPEN": 13
     },
@@ -29,7 +29,7 @@
       "core": 93,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 79,
+      "certificate": 80,
       "deprecated": 2,
       "frontier": 12
     },
@@ -39,7 +39,7 @@
       "gauge_bridge": 17,
       "smooth_geometry": 7,
       "spectral_action": 6,
-      "empirical_passport": 16,
+      "empirical_passport": 17,
       "cosmology": 22,
       "external_background": 1,
       "si_calibration": 2,
@@ -7034,6 +7034,37 @@
       "label": "vp_class5_aliasing_cabibbo.py",
       "path": "05_CERTS/vp_class5_aliasing_cabibbo.py",
       "exists": true
+    },
+    {
+      "id": "D0-VACUUM-CUBIC-WINDOW-001",
+      "kind": "claim",
+      "claim_id": "D0-VACUUM-CUBIC-WINDOW-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "S_DE cubic-vs-quadratic window fork (08.12)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vacuum_cubic_window.py",
+      "python_cert": [
+        "vp_vacuum_cubic_window.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter3 §4] HONEST FORK of two catalog-free ownerships of the dark-energy/S_DE archive window. Cert vp_vacuum_cubic_window.py computes the window-center discriminator that the GOLDEN dossier (0940) recorded as never computed: QUADRATIC branch 160l^2-480l+359 (160=2*Omega8*gamma=2*8*10, det=359/160, eigs 3/2-+sqrt10/40) -> ratio (60-sqrt10)/(60+sqrt10)=0.900; CUBIC branch l^3-359l-2574 (e1=0,e2=-359=-|E|,e3=2574=2*1287=2*|triangles|, = the adjacency characteristic poly owned by D0-MIXING-HIERARCHY-INVERSION-001) -> ratio of the two negative roots |9.758|/|12.079|=0.808. Discriminator: cubic 0.808 vs quadratic 0.900 (separable). HONEST: this is a FORK, NOT a decision — DESI DR3 is the empirical decider and is NOT run here; promoting either branch to the sole core form needs that external survey comparison (BRIDGE), kept out of core by the firewall.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vacuum_cubic_window.py",
+      "kind": "python_cert",
+      "label": "vp_vacuum_cubic_window.py",
+      "path": "05_CERTS/vp_vacuum_cubic_window.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -9955,6 +9986,21 @@
     {
       "source": "D0-CLASS5-ALIASING-001",
       "target": "cert:vp_class5_aliasing_cabibbo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VACUUM-CUBIC-WINDOW-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VACUUM-CUBIC-WINDOW-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VACUUM-CUBIC-WINDOW-001",
+      "target": "cert:vp_vacuum_cubic_window.py",
       "kind": "certified_by"
     }
   ]

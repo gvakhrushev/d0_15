@@ -220,3 +220,4 @@ This is the current status index for D0 theory branches, Lean anchors, certifica
 | D0-CARRIER-FULL-FORCING-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Synthesis.CarrierForcing` | `carrier_full_forcing` | `vp_carrier_full_forcing.py` | Lean-owned finite/formal D0 core statement. |
 | D0-SYMPLECTIC-GLEASON-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Synthesis.CarrierForcing` | `symplectic_form_unique` | `vp_symplectic_gleason_uniqueness.py` | Lean-owned finite/formal D0 core statement. |
 | D0-CLASS5-ALIASING-001 | certificate | formal_core | CERT-CLOSED | PYTHON_CERTIFIED | `` | `` | `vp_class5_aliasing_cabibbo.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |
+| D0-VACUUM-CUBIC-WINDOW-001 | certificate | empirical_passport | CERT-CLOSED | PYTHON_CERTIFIED | `` | `` | `vp_vacuum_cubic_window.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |

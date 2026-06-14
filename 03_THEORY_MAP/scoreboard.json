@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 2746,
-    "track_fair_max": 3887,
-    "pct_strength": 70.6,
-    "core_realized": 2354,
-    "core_potential": 3480,
-    "core_headroom": 1126,
-    "n_claims": 215,
-    "n_active": 214,
+    "realized": 2753,
+    "track_fair_max": 3907,
+    "pct_strength": 70.5,
+    "core_realized": 2361,
+    "core_potential": 3500,
+    "core_headroom": 1139,
+    "n_claims": 216,
+    "n_active": 215,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -62,10 +62,10 @@
       "core_headroom": 52
     },
     "empirical_passport": {
-      "n": 16,
-      "realized": 120,
-      "max": 187,
-      "core_headroom": 62
+      "n": 17,
+      "realized": 127,
+      "max": 207,
+      "core_headroom": 75
     },
     "cosmology": {
       "n": 22,
@@ -172,10 +172,10 @@
       "core_headroom": 70
     },
     "BOOK_08": {
-      "n": 42,
-      "realized": 629,
-      "max": 755,
-      "core_headroom": 122
+      "n": 43,
+      "realized": 636,
+      "max": 775,
+      "core_headroom": 135
     },
     "BOOK_05/06": {
       "n": 6,
@@ -1062,6 +1062,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-VACUUM-CUBIC-WINDOW-001",
+      "domain": "empirical_passport",
+      "book": "BOOK_08",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-EDGE-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1756,6 +1766,13 @@
     {
       "claim_id": "D0-CLASS5-ALIASING-001",
       "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-VACUUM-CUBIC-WINDOW-001",
+      "domain": "empirical_passport",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -4777,6 +4794,20 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VACUUM-CUBIC-WINDOW-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_08",
       "leverage": 0,
       "integrity_flag": null
     }

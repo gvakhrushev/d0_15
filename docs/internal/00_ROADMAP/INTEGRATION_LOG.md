@@ -416,3 +416,58 @@ a clean publish tree, publication-grade books with an apparatus layer, and an ho
 **End state:** **hygiene 100/100** (only 4 orphan PROOF-TARGET, −0.4); **strength 2660/3767 (70.6%, all honest)**;
 books are publication-clean monographs + apparatus; Lean has 0 tautologies / 0 sorry-in-build; the publish tree
 is theory + verification only. Full guard suite green (now incl. tautology, apparatus, publication guards).
+
+---
+
+## ITERATION 3 — Synthesis & closure via three roots + §4 (honesty over fitting)
+
+Owner ТЗ: close three *root* nodes (not leaves) at the maximum honest level, then a §4
+synthesis harvest. Pattern per root: Explore audit → honest cert with explicit boundaries
+→ Lean depth where Mathlib-reachable → registry → book integration → guards → commit.
+
+**Premise correction surfaced (Root A).** The ТЗ premise "Δ_α = φ⁻⁵" contradicts the
+ledger: φ⁻⁵ = ξ₅ (proved seam term) is DISTINCT from Δ_α (~4.15e-4 top-vs-alg residual,
+owner still open). α is closed as a finite s=−1 spectral *moment*, not a residue.
+
+**Root A — α via ζ_D (commit cb09e4a).** `ζ_D(s)=Tr|D|⁻ˢ` now DEFINED on K(9,11,13)
+(was ABSENT). Finite moments closed (cert + Lean `D0.Spectral.ZetaResidueAlpha`):
+`ζ_E(0)=359=|E|`, `ζ_E(−1)=359φ⁻²−φ⁻⁵=α_top⁻¹`, `ζ_adj(0)=3=rank`. HONEST: finite scene
+has no dimension pole ⇒ residue-at-pole route (THE 15.4.2) stays theorem-target; Δ_α
+distinct from φ⁻⁵, analytic owner open. strength 2660→2672.
+
+**Root B — one ℤ₂=Z(Q8) spinor cover (commit 7b0436d).** Seven incarnations unified
+machine-checked: cert `vp_z2_spinor_cover.py` + Lean `D0.Synthesis.Z2SpinorCover`
+(≥4/7 projections). Joint A: Lucas-trace sign = toral det = Galois norm φ·ψ=−1. Joint B:
++2 fixes the cover sheet (`det(T^{n+2})=det(T^n)`), +1 flips (M1-banned). T-B.2
+quasicrystal=time: exact executable Sturmian coincidence to 4000 symbols (was prose-only
+40); arrow=Pisot reuses Time2DPisot. FIX: BOOK_02 §02.34 sign typo (ε_n=L_n−φⁿ →
+φⁿ−L_n=−ψⁿ). HONEST: M1-uniqueness of orientation=Gal stays prose; topological conjugacy
+theorem-target. strength 2672→2699.
+
+**Root C — full carrier forcing (commit at task #25).** Closes the finite content of the
+three BOOK_05 §05.6 soft-joints + the symplectic-Gleason uniqueness leg. Certs:
+`vp_carrier_full_forcing.py` (roles=orbits; orbital block-constancy by exhaustion on the
+(2,2,2) faithful model; unique loopless+complete pattern → K(9,11,13) |E|=359; tower-stop
+3-zones + impedance), `vp_class5_aliasing_cabibbo.py` ((Z/44)* char orders {1,4,5,20};
+class-5 killed by aliasing |Z5|=5=D_Σ; survivors {1,20}; Cabibbo kept BRIDGE),
+`vp_symplectic_gleason_uniqueness.py` (J-invariant quadratic forces a=c,b=0 → unique
+x²+y²). Lean `D0.Synthesis.CarrierForcing` (carrier_full_forcing + symplectic_form_unique).
+BOOK_05 §05.6 register honestly SHRUNK (5/6 joints' finite content now certified; only the
+named meta-steps remain; Δ_α stays the one fully-open obligation). HONEST: M1 no-extension,
+full hidden-memory contradiction, and categorical Ostrik/Ising uniqueness stay
+theorem-targets. strength 2699→2746.
+
+**§4 — synthesis harvest (this commit).** Verdict per item (Explore-audited):
+- *S_DE cubic-vs-quadratic fork (the one real open fork)* — CLOSED as a fork:
+  `vp_vacuum_cubic_window.py` (`D0-VACUUM-CUBIC-WINDOW-001`, CERT-CLOSED) COMPUTES the
+  discriminator the dossier recorded as never computed — quadratic ratio
+  (60−√10)/(60+√10)=0.900 vs cubic (l³−359l−2574, e=(0,−359,2·1287)) ratio
+  9.758/12.079=0.808. HONEST: a fork, NOT a decision — DESI DR3 decides and is not run;
+  booked at BOOK_08 §08.12.4. strength 2746→(see scoreboard).
+- *Signature 3+1* — already LEAN_PROVED/CORE-FORMALIZED (two owners), booked §06.36. Nothing to do.
+- *Phason* — terminal-honest: finite content CERT-CLOSED, Lean EXTERNAL-GAP (Mathlib-blocked
+  K-theory/spectral-triple). Not closeable without external machinery; left as-is.
+- *H0-evolving-w passport* and *external anchors (Coldea/JUNO/NuFIT)* — EMPIRICAL-PASSPORT
+  scaffolding the firewall deliberately keeps out of core, and depend on still-absent flavor
+  claims (PMNS-δ₀-family, icosian→E8). DEFERRED to backlog (#18) rather than fabricate
+  passports for absent claims. Honesty over coverage-theatre.

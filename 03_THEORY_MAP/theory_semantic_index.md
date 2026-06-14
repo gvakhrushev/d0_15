@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 70
+- `CERT-CLOSED`: 71
 - `CORE-FORMALIZED`: 92
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 79
+- `certificate`: 80
 - `core`: 93
 - `deprecated`: 2
 - `frontier`: 12
@@ -29,7 +29,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 22
-- `empirical_passport`: 16
+- `empirical_passport`: 17
 - `external_background`: 1
 - `formal_core`: 128
 - `frontier`: 12
@@ -382,6 +382,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Finite formal origin: non-permutation phason holonomy on the Torus Core-13 shell loop with rational unitary transport and chiral orientation twist; external CKM comparison passport/certificate is not core and no PDG entries are used. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-VACUUM-CUBIC-WINDOW-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_vacuum_cubic_window.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter3 §4] HONEST FORK of two catalog-free ownerships of the dark-energy/S_DE archive window. Cert vp_vacuum_cubic_window.py computes the window-center discriminator that the GOLDEN dossier (0940) recorded as never computed: QUADRATIC branch 160l^2-480l+359 (160=2*Omega8*gamma=2*8*10, det=359/160, eigs 3/2-+sqrt10/40) -> ratio (60-sqrt10)/(60+sqrt10)=0.900; CUBIC branch l^3-359l-2574 (e1=0,e2=-359=-|E|,e3=2574=2*1287=2*|triangles|, = the adjacency characteristic poly owned by D0-MIXING-HIERARCHY-INVERSION-001) -> ratio of the two negative roots |9.758|/|12.079|=0.808. Discriminator: cubic 0.808 vs quadratic 0.900 (separable). HONEST: this is a FORK, NOT a decision — DESI DR3 is the empirical decider and is NOT run here; promoting either branch to the sole core form needs that external survey comparison (BRIDGE), kept out of core by the firewall.
 
 ### D0-CRITICAL-COLLAPSE-001
 
