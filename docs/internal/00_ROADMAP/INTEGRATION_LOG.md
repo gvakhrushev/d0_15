@@ -653,3 +653,54 @@ Disposition: this is a dedicated **Lean build-hygiene** follow-up (fix/quarantin
 correct or demote `D0-NO-GO-STRESS-SUITE-001`, and add a `lake build D0.All` CI guard so it cannot
 silently regress), spun off as its own task — NOT folded into the forcing-owner iteration. The
 Iteration-6 deliverables stand: each new module and its dependency closure compiles cleanly.
+
+### Iteration 7 — cross-domain bridges, AFTER the deep-research self-check filter
+
+A second deep-research front (8 areas) arrived **pre-calibrated**: the owner had already run the
+self-check and downgraded the inflated statuses. The discipline this iteration was to integrate
+at the honest (downgraded) status and NOT re-inflate from the report text. The filter (now law,
+BOOK_05 §05.8.S): deep-research = candidate generator; mandatory mechanism + limits gates;
+coincidence at one point ≠ identity.
+
+**The downgrade delta (recorded as the calibration sample):**
+| research label | honest status | why downgraded |
+|---|---|---|
+| Fibonacci `d_τ=φ` ⇒ `I_f=logφ` FORCING | **LEM** | both give `logφ` but the categorical↔toral isomorphism is unwritten (mechanism gate) |
+| `γ_Choptuik ↔ C=3/8` BRIDGE-owner | **HYP** | `γ(D)` crosses `3/8` between `D=4,5` and leaves it — a `D=4` coincidence, limits diverge (limits gate) |
+| Bekenstein `S≤A/4` FORCING | **BRIDGE** | supports "capacity finite", does not force the D0 structure/`φ` |
+
+**What landed (all at honest status, zero re-inflation):**
+- **Phase A** `D0-FIBONACCI-IF-FORCING-001` (CERT-CLOSED+LEAN_PROVED, **LEM**): `I_f=logφ` two
+  ways — Fibonacci fusion `d_τ=φ` and toral spectral radius `|-φ|=φ`; Lean `FibonacciIfBridge`
+  proves the same `φ` two ways; the iso is the named gap. BOOK_01 §01.21.4.
+- **Phase B** `D0-PACKING-LIMIT-001` (CERT-CLOSED, **HYP** verdict): probe shows `3/8` is a
+  `D=4` crossing of `γ(D)`, not a shared limit; unified packing-limit NOT derived. BOOK_07 §07.51.4.
+- **Phase C** external axiom forcings (BRIDGE): `D0-COMPLEX-QM-FORCING-001` (Renou/Chen/Li:
+  real-QM excluded), `D0-M1-INFO-RECONSTRUCTION-001` (Hardy/Masanes-Müller/CDP: finite capacity
+  ⇒ complex QM — external owner of M1 itself), + Jacobson cite strengthening the Connes edge
+  (`δQ=TdS`, `S=A/4`). BOOK_00 §00.9.
+- **Phase D** `D0-MODULAR-TIME-FLAVOR-001` (CERT-CLOSED, **LEM**): time and flavor share the
+  **SL(2,ℤ) modular group** — flavor `A5 = PSL(2,5) = PSL(2,ℤ)/Γ(5)`, time `T ∈ GL(2,ℤ)` golden;
+  PMNS `sin²θ₁₂=1/3−2δ₀²=0.3055` beats GRA/GRB vs NuFIT 6.0. Explicitly kept distinct from the
+  Tomita–Takesaki *modular automorphism* (the conflation trap). BOOK_06 §06.30a.
+- **Phase E** `D0-DSI-EXPERIMENTAL-001` (EMPIRICAL-PASSPORT): log-periodic ladder seen in
+  ZrTe5/HfTe5 — FORM confirmed, `λ`=Coulomb≠`φ` (critical gap). `D0-ENTROPIC-DARK-GRAVITY-001`
+  (BRIDGE, Verlinde). Phason §08.51: Goldstone owner cite added (closing the Iteration-6
+  deferred loose end) + DESI DR2 evolving-`w` marked **HYP** (no phason `w(z)` yet, awaits DR3).
+
+### Iteration 7 metrics (vs Iteration-6 end)
+| metric | Iter6 end | Iter7 now | delta |
+|---|---|---|---|
+| CORE-FORMALIZED | 110 | 110 | 0 (this front is bridges/LEM/HYP by design) |
+| CERT-CLOSED (incl. LEM/HYP) | 63 | 66 | +3 (Fibonacci, packing, modular-time-flavor) |
+| BRIDGE-ASSUMPTIONS-EXPLICIT | 9 | 12 | +3 (complex-QM, M1-info, Verlinde) |
+| EMPIRICAL-PASSPORT | 14 | 15 | +1 (DSI) |
+| ledger ASSUMP | 11 | 14 | +3 |
+| strength | 3113 | 3179 | +66 |
+| integrity demotions | 0 | 0 | ZERO re-inflations |
+
+3 new Lean modules (`FibonacciIfBridge`, `ComplexQMBridge`, `M1InfoReconstructionBridge`,
+`VerlindeEntropicBridge` — 4) build sorry-free individually. 4 new certs (fibonacci_if_bridge,
+packing_limit_probe, modular_time_flavor, dsi_experimental) PASS + can-FAIL. The deep-research
+filter is now law (§05.8.S). Every status is the honest minimum that survived the two gates;
+no research label was promoted verbatim.

@@ -186,3 +186,47 @@ own (710,113) numerology-failure example with the EW-window forcing via grammar-
 - rank-3=causal-cone identification stays a named gap (now with a named external owner).
 - φ-network ↔ 8-network meet at the icosians; the deeper "φ and 8 are one object" remains a
   synthesis statement, not a single Lean theorem.
+
+---
+
+# D0 — Iteration 7 report: cross-domain bridges after the deep-research self-check filter
+
+A second deep-research front (8 areas) arrived **pre-calibrated** — the owner had already run
+the self-check and downgraded the inflated statuses. This iteration's whole discipline was to
+integrate at the honest (downgraded) status and **never re-inflate from the report text**.
+
+**Headline.** strength **3113 → 3179 (+66)**; integrity demotions **0** (zero re-inflations);
+hygiene **100/100**; firewall violations **0**; all registry/cert guards green; 4 new Lean
+modules build sorry-free individually; 4 new certs PASS + can-FAIL. 6 commits
+(`976e829`, `c8fdcf9`, `d52af3b`, `67b8248`, `3810cf5`, + this wrap). The deep-research filter
+is now law (BOOK_05 §05.8.S).
+
+## The delta the ТЗ asked for: downgrades held, statuses earned by mechanism check
+
+| research label | honest status landed | named gap |
+|---|---|---|
+| Fibonacci `d_τ=φ` ⇒ `I_f=logφ` (FORCING) | **LEM** `D0-FIBONACCI-IF-FORCING-001` | categorical↔toral isomorphism unwritten |
+| `γ_Choptuik ↔ 3/8` (BRIDGE-owner) | **HYP** `D0-PACKING-LIMIT-001` | derive a common `F(D)` or accept the `D=4` coincidence |
+| Bekenstein `S≤A/4` (FORCING) | **BRIDGE** (Jacobson cite on Connes edge) | thermodynamic owner, not a D0 derivation |
+| complex QM necessary | **BRIDGE** `D0-COMPLEX-QM-FORCING-001` | experiments assume standard QM postulates |
+| M1 ⇒ QM structure | **BRIDGE** `D0-M1-INFO-RECONSTRUCTION-001` | reconstruction assumes continuity + tomographic locality |
+| time ↔ flavor "one modular" | **LEM** `D0-MODULAR-TIME-FLAVOR-001` (SL(2,ℤ) group, NOT Tomita–Takesaki) | full golden-element ↔ A5-quotient map |
+| DSI log-periodicity in matter | **EMPIRICAL-PASSPORT** `D0-DSI-EXPERIMENTAL-001` | `λ`=Coulomb≠`φ` (form, not value) |
+| Verlinde dark↔gravity | **BRIDGE** `D0-ENTROPIC-DARK-GRAVITY-001` | criticizable program, never core |
+
+## Discipline held (the point of this iteration)
+- **Zero re-inflations.** Every status is the minimum that survived the mechanism + limits gates.
+- **The strongest temptation was refused twice:** Fibonacci stayed LEM (no isomorphism), packing
+  stayed HYP (limits diverge); neither was promoted on a coincident number.
+- **A conflation was caught:** "modular flavor" (SL(2,ℤ) group) vs "thermal time" (Tomita–Takesaki
+  automorphism) are different senses of *modular* — kept apart, not fused.
+- **The filter itself is now corpus law** (§05.8.S): deep-research is a candidate generator;
+  coincidence at one point ≠ identity.
+
+## Carried-forward / not done
+- **F.1 dossier sync: N/A** — `D0_THEORY_DOSSIER.md` was removed in Iteration 2; its content lives
+  in the books. No dossier to update.
+- The two LEM gaps (Fibonacci iso; golden-element↔A5-quotient) and the packing-law common
+  mechanism are the open obligations this front names.
+- The pre-existing 17-module `lake build D0.All` breakage (Iteration-6 finding) remains its own
+  spun-off task — untouched here.
