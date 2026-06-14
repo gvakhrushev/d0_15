@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 67
+- `CERT-CLOSED`: 68
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 19
-- `certificate`: 81
+- `certificate`: 82
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 146
+- `formal_core`: 147
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1142,6 +1142,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof. [Iter5 finite-core] The gap-label MODULE shadow is now proved exactly (new claim D0-KTHEORY-GAP-MODULE-001): labels lie in the rank-2 module Z+Zphi^-1, principal labels phi^-1/phi^-2 sum to 1. The Bellissard THEOREM (IDS=K0-trace image) stays EXTERNAL-GAP (no Mathlib K-theory). FLAG: this row's cert vp_gap_labeling_d0_tiling_hull.py fabricates the IDS as (idx+1)/30 with a float (n,m) fit — a placeholder to RETIRE in favor of the exact shadow (referenced in ~10 places; retirement is a follow-up).
+
+### D0-LAPLACIAN-SPECTRUM-FIX-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_laplacian_3x3_correct.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter8 reforge of researcher doc 2 §02.21 ERROR] The proposal 'char.poly of zone matrix M -> phi^-1' is wrong: M=[[0,11/24,13/24],[9/22,0,13/22],[9/20,11/20,0]] is ROW-STOCHASTIC (rho=1), so phi^-1 is not in its spectrum. Error reforged into the correct separation (cert vp_laplacian_3x3_correct.py, exact): M is stochastic; char poly = (lambda-1)(lambda^2+lambda+39/160), eigenvalues {1, -1/2+/-sqrt(10)/40} = {1,-0.421,-0.579}, all |lambda|<1. The researcher's quadratic 160 lambda^2-480 lambda+359 (roots 1.42/1.58) is the char poly of (I-M) under lambda->1-lambda: 1.42/1.58 = 1-eig(M) = eig(I-M) = the S_DE relaxation window (Book 08), NOT M's spectrum. phi^-1=(sqrt5-1)/2~0.618 (fractal tick A_{n+1}=phi^-1 A_n) is a DIFFERENT operator (Book 06 §06.2 envelope), not in spec(M) nor in {1.42,1.58}. THREE numbers separated: spec(M) {1,-0.42,-0.58}, S_DE window {1.42,1.58}, envelope tick phi^-1. Clarifies Book02<->Book08. Idea kept, error fixed.
 
 ### D0-LEPTON-002
 

@@ -1460,6 +1460,27 @@ this network; (iii) `\Lambda_{24}\leftrightarrow` the readout kernel `K=30` is r
 *lattice tower* of the [BRIDGE] above. The `\varphi`-network (Jones `=` Fibonacci `=` Hurwitz `=`
 Pisot `=` icosian, §01.21.3) and this 8-network meet at the icosians: `\varphi` and `8` are one
 object, not two coincidences.
+
+### 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]
+
+A reading sometimes proposed for the zone matrix `M=\begin{psmallmatrix}0&11/24&13/24\\9/22&0&13/22\\9/20&11/20&0\end{psmallmatrix}`
+(the row-normalised equitable quotient of `K(9,11,13)`) is that its characteristic polynomial
+yields `\varphi^{-1}`. It does not, and the correction separates three numbers that are easy to
+conflate (claim `D0-LAPLACIAN-SPECTRUM-FIX-001`, cert `vp_laplacian_3x3_correct.py`):
+
+- **`M` is row-stochastic**, so `\rho(M)=1` exactly; its characteristic polynomial factors as
+  `(\lambda-1)(\lambda^2+\lambda+39/160)`, giving eigenvalues `\{1,\,-\tfrac12\pm\tfrac{\sqrt{10}}{40}\}\approx\{1,-0.421,-0.579\}` — all inside the unit disk. `\varphi^{-1}\approx0.618` is **not** among them.
+- The quadratic `160\lambda^2-480\lambda+359` (roots `\approx1.421,1.579`) that the reading
+  hit is the characteristic polynomial of `(I-M)` under `\lambda\mapsto1-\lambda`: its roots are
+  `1-\mathrm{eig}(M)`, i.e. the **`S_{DE}` relaxation window** of BOOK_08, not `M`'s own
+  spectrum.
+- The fractal tick `\varphi^{-1}` (the envelope recursion `A_{n+1}=\varphi^{-1}A_n`, BOOK_06
+  §06.2) is a **different operator** entirely.
+
+So there are two matrices, two spectra, two roles: `M`'s mixing spectrum `\{1,-0.42,-0.58\}`, the
+`(I-M)` relaxation window `\{1.42,1.58\}` feeding `S_{DE}` (the Book02↔Book08 link), and the
+envelope tick `\varphi^{-1}`. The earlier reading conflated them; the structure is intact once
+they are separated.
 ## 02.19 High-gain uniqueness and structural uniqueness / negative-control rigidity closure
 
 Any formula containing a large exponent or small residual is release-admissible only if the exponent is selected by an operator support rule and neighbouring alternatives are excluded.

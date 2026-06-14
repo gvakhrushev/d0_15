@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3191,
-    "track_fair_max": 4328,
-    "pct_strength": 73.7,
-    "core_realized": 2702,
-    "core_potential": 3820,
-    "core_headroom": 1118,
-    "n_claims": 243,
-    "n_active": 242,
+    "realized": 3198,
+    "track_fair_max": 4348,
+    "pct_strength": 73.6,
+    "core_realized": 2709,
+    "core_potential": 3840,
+    "core_headroom": 1131,
+    "n_claims": 244,
+    "n_active": 243,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 146,
-      "realized": 2138,
-      "max": 2775,
-      "core_headroom": 632
+      "n": 147,
+      "realized": 2145,
+      "max": 2795,
+      "core_headroom": 645
     },
     "rg": {
       "n": 5,
@@ -118,10 +118,10 @@
       "core_headroom": 21
     },
     "BOOK_02": {
-      "n": 7,
-      "realized": 109,
-      "max": 122,
-      "core_headroom": 13
+      "n": 8,
+      "realized": 116,
+      "max": 142,
+      "core_headroom": 26
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -1044,6 +1044,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1743,6 +1753,13 @@
     },
     {
       "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5164,6 +5181,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "rg",
       "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
       "leverage": 0,
       "integrity_flag": null
     }

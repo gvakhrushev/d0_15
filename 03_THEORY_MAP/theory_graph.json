@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 243,
+    "claims": 244,
     "release_status": {
       "CORE-FORMALIZED": 110,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 12,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 67,
+      "CERT-CLOSED": 68,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 131,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 13,
-      "PYTHON_CERTIFIED": 82,
+      "PYTHON_CERTIFIED": 83,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 111,
       "bridge": 19,
       "no-go": 16,
-      "certificate": 81,
+      "certificate": 82,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 146,
+      "formal_core": 147,
       "rg": 5,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -8042,6 +8042,37 @@
       "label": "vp_rg_forgetting.py",
       "path": "05_CERTS/vp_rg_forgetting.py",
       "exists": true
+    },
+    {
+      "id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "kind": "claim",
+      "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "zone matrix M stochastic spectrum, not phi^-1 (02.18.4)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_laplacian_3x3_correct.py",
+      "python_cert": [
+        "vp_laplacian_3x3_correct.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter8 reforge of researcher doc 2 §02.21 ERROR] The proposal 'char.poly of zone matrix M -> phi^-1' is wrong: M=[[0,11/24,13/24],[9/22,0,13/22],[9/20,11/20,0]] is ROW-STOCHASTIC (rho=1), so phi^-1 is not in its spectrum. Error reforged into the correct separation (cert vp_laplacian_3x3_correct.py, exact): M is stochastic; char poly = (lambda-1)(lambda^2+lambda+39/160), eigenvalues {1, -1/2+/-sqrt(10)/40} = {1,-0.421,-0.579}, all |lambda|<1. The researcher's quadratic 160 lambda^2-480 lambda+359 (roots 1.42/1.58) is the char poly of (I-M) under lambda->1-lambda: 1.42/1.58 = 1-eig(M) = eig(I-M) = the S_DE relaxation window (Book 08), NOT M's spectrum. phi^-1=(sqrt5-1)/2~0.618 (fractal tick A_{n+1}=phi^-1 A_n) is a DIFFERENT operator (Book 06 §06.2 envelope), not in spec(M) nor in {1.42,1.58}. THREE numbers separated: spec(M) {1,-0.42,-0.58}, S_DE window {1.42,1.58}, envelope tick phi^-1. Clarifies Book02<->Book08. Idea kept, error fixed.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_laplacian_3x3_correct.py",
+      "kind": "python_cert",
+      "label": "vp_laplacian_3x3_correct.py",
+      "path": "05_CERTS/vp_laplacian_3x3_correct.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -11383,6 +11414,21 @@
     {
       "source": "D0-GENERATIVE-DYNAMICS-001",
       "target": "cert:vp_rg_forgetting.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "target": "cert:vp_laplacian_3x3_correct.py",
       "kind": "certified_by"
     }
   ]
