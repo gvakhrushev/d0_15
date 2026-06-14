@@ -237,6 +237,7 @@ digraph D0Theory {
   "D0-TIME-MODULAR-FLOW-OWNER-001" [label="D0-TIME-MODULAR-FLOW-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-DIM8-NETWORK-001" [label="D0-DIM8-NETWORK-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-FIBONACCI-IF-FORCING-001" [label="D0-FIBONACCI-IF-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-PACKING-LIMIT-001" [label="D0-PACKING-LIMIT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1525,4 +1526,10 @@ digraph D0Theory {
   "D0-FIBONACCI-IF-FORCING-001" -> "cert:vp_fibonacci_if_bridge.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-FIBONACCI-IF-FORCING-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PACKING-LIMIT-001" -> "module:" [label="module"];
+  "cert:vp_packing_limit_probe.py" [label="vp_packing_limit_probe.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PACKING-LIMIT-001" -> "cert:vp_packing_limit_probe.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PACKING-LIMIT-001" -> "domain:formal_core" [label="domain"];
 }

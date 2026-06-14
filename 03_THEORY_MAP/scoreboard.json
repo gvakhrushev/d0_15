@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3125,
-    "track_fair_max": 4228,
-    "pct_strength": 73.9,
-    "core_realized": 2676,
-    "core_potential": 3760,
-    "core_headroom": 1084,
-    "n_claims": 236,
-    "n_active": 235,
+    "realized": 3132,
+    "track_fair_max": 4248,
+    "pct_strength": 73.7,
+    "core_realized": 2683,
+    "core_potential": 3780,
+    "core_headroom": 1097,
+    "n_claims": 237,
+    "n_active": 236,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 141,
-      "realized": 2091,
-      "max": 2702,
-      "core_headroom": 606
+      "n": 142,
+      "realized": 2098,
+      "max": 2722,
+      "core_headroom": 619
     },
     "rg": {
       "n": 4,
@@ -148,10 +148,10 @@
       "core_headroom": 75
     },
     "BOOK_07": {
-      "n": 41,
-      "realized": 521,
-      "max": 739,
-      "core_headroom": 208
+      "n": 42,
+      "realized": 528,
+      "max": 759,
+      "core_headroom": 221
     },
     "BOOK_06/08": {
       "n": 5,
@@ -1008,6 +1008,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-PACKING-LIMIT-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1693,6 +1703,13 @@
     },
     {
       "claim_id": "D0-PHI99-DEPTH-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-PACKING-LIMIT-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5009,6 +5026,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PACKING-LIMIT-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
     }

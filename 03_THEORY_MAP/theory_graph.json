@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 236,
+    "claims": 237,
     "release_status": {
       "CORE-FORMALIZED": 110,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 64,
+      "CERT-CLOSED": 65,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 130,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 10,
-      "PYTHON_CERTIFIED": 79,
+      "PYTHON_CERTIFIED": 80,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 111,
       "bridge": 16,
       "no-go": 16,
-      "certificate": 77,
+      "certificate": 78,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 141,
+      "formal_core": 142,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7767,6 +7767,37 @@
       "label": "vp_fibonacci_if_bridge.py",
       "path": "05_CERTS/vp_fibonacci_if_bridge.py",
       "exists": true
+    },
+    {
+      "id": "D0-PACKING-LIMIT-001",
+      "kind": "claim",
+      "claim_id": "D0-PACKING-LIMIT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "packing-limit probe: gamma_Choptuik vs 3/8 (HYP, D=4 coincidence) 07.51.4",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_packing_limit_probe.py",
+      "python_cert": [
+        "vp_packing_limit_probe.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter7 cross-bridge, self-calibrated HYP NOT bridge] Probe of the deep-research claim 'gamma_Choptuik <-> C=3/8 one packing limit', downgraded by the LIMITS filter. VERDICT (cert vp_packing_limit_probe.py, able to FAIL): gamma_Choptuik(D=4)=0.373961 matches 3/8=0.375 to 0.28% (genuine near-hit), BUT gamma is monotone-increasing in D and CROSSES 3/8 between D=4 and D=5 (gamma(4)<3/8<gamma(5)=0.41322, 10.2% off) -- so 3/8 is a crossing near D=4, NOT lim gamma. The unified packing limit is NOT derived: gamma (a critical exponent) and C_max=3/8=rank/|Omega8| (a geometric ceiling) are distinct quantities coincident only at D=4. Bekenstein S=A/4 supports 'capacity finite', a separate weaker statement. HONEST: coincidence at one point != identity (same discipline as 710/113); status HYP. NAMED GAP: derive a common F(D) projecting to both gamma(D=4) and C_max, or accept the D=4 coincidence and reject the unified-limit reading. cite Ecker-Ecker-Grumiller PRL 136 191401 + arXiv:2602.10185; Jampolski-Rezzolla PRD 113 L121502; Bekenstein 1981. Links D0-COMPACTNESS-LIMIT-001 + echo-falsifier (Book 09).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_packing_limit_probe.py",
+      "kind": "python_cert",
+      "label": "vp_packing_limit_probe.py",
+      "path": "05_CERTS/vp_packing_limit_probe.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10988,6 +11019,21 @@
     {
       "source": "D0-FIBONACCI-IF-FORCING-001",
       "target": "cert:vp_fibonacci_if_bridge.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PACKING-LIMIT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PACKING-LIMIT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PACKING-LIMIT-001",
+      "target": "cert:vp_packing_limit_probe.py",
       "kind": "certified_by"
     }
   ]

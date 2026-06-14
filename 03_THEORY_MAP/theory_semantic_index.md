@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 64
+- `CERT-CLOSED`: 65
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 16
-- `certificate`: 77
+- `certificate`: 78
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 141
+- `formal_core`: 142
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1194,6 +1194,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] finite topological density + exact/coexact cancellation; no axion zero-mode.
+
+### D0-PACKING-LIMIT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_packing_limit_probe.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter7 cross-bridge, self-calibrated HYP NOT bridge] Probe of the deep-research claim 'gamma_Choptuik <-> C=3/8 one packing limit', downgraded by the LIMITS filter. VERDICT (cert vp_packing_limit_probe.py, able to FAIL): gamma_Choptuik(D=4)=0.373961 matches 3/8=0.375 to 0.28% (genuine near-hit), BUT gamma is monotone-increasing in D and CROSSES 3/8 between D=4 and D=5 (gamma(4)<3/8<gamma(5)=0.41322, 10.2% off) -- so 3/8 is a crossing near D=4, NOT lim gamma. The unified packing limit is NOT derived: gamma (a critical exponent) and C_max=3/8=rank/|Omega8| (a geometric ceiling) are distinct quantities coincident only at D=4. Bekenstein S=A/4 supports 'capacity finite', a separate weaker statement. HONEST: coincidence at one point != identity (same discipline as 710/113); status HYP. NAMED GAP: derive a common F(D) projecting to both gamma(D=4) and C_max, or accept the D=4 coincidence and reject the unified-limit reading. cite Ecker-Ecker-Grumiller PRL 136 191401 + arXiv:2602.10185; Jampolski-Rezzolla PRD 113 L121502; Bekenstein 1981. Links D0-COMPACTNESS-LIMIT-001 + echo-falsifier (Book 09).
 
 ### D0-PHASON-FORCING-001
 

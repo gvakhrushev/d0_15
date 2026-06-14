@@ -2029,6 +2029,24 @@ The natural route to close the gap is the finite spectral triple of §03.1: the 
 
 **Named external owner of the gap.** The classical theorem that *would* close "metric = spectrum" once the causal reading is supplied is the **Connes reconstruction theorem** (A. Connes, *On the spectral characterization of manifolds*, arXiv:0810.2088, 2008): a commutative real spectral triple satisfying the axioms is canonically the spectral triple of a compact oriented Riemannian spin manifold, with the metric recovered by the Connes distance. This is recorded as the forcing-owner edge `D0-CONNES-RECONSTRUCTION-OWNER-001` (assumption `ASSUMP-CONNES-RECONSTRUCTION`, Lean `D0.Bridge.ConnesReconstructionBridge`): naming the owner raises the gap from "asserted" to "owned by a cited classical theorem", without claiming D0 derives metric = spectrum and without closing the rank-3 = cone identification (BOOK_05 §05.8.R).
 
+### 07.51.4 Is `3/8` a packing limit? (probe — no: a `D=4` coincidence) [HYP]
+
+A tempting cross-bridge reads `C_max = 3/8` as the same "packing limit" as the Choptuik
+critical-collapse exponent `\gamma`. It is recorded here as a **probe**, not a bridge, because
+the limits filter (BOOK_00 §00.9; the same discipline applied to `710/113`) refuses it. The
+numbers: `\gamma_{\text{Choptuik}}(D{=}4)=0.373961` (Ecker–Ecker–Grumiller, *Phys. Rev. Lett.*
+**136**, 191401, 2026; arXiv:2602.10185) matches `3/8=0.375` to **0.28%** — a genuine near-hit.
+But `\gamma(D)` is monotone-increasing and **crosses** `3/8` between `D=4` and `D=5`
+(`\gamma(4)<3/8<\gamma(5)=0.41322`, `10.2\%` off): `3/8` is a *crossing point near* `D=4`, not
+`\lim_{D\to\infty}\gamma`. The critical exponent `\gamma` and the geometric ceiling
+`C_max=3/8=\operatorname{rank}/|\Omega_8|` are distinct quantities, coincident only at `D=4`;
+Bekenstein `S=A/4` supports the weaker "capacity is finite", not this identity. **Honest status
+HYP** (claim `D0-PACKING-LIMIT-001`, cert `vp_packing_limit_probe.py`). **Named gap:** derive a
+common mechanism `F(D)` projecting to both `\gamma(D{=}4)` and `C_max` (e.g. two slices of one
+archive-capacity function), or accept the `D=4` coincidence and reject the unified-limit
+reading. A coincidence at one point is not an identity — the probe records the near-hit without
+promoting it.
+
 
 ## Apparatus — sources & open obligations
 
