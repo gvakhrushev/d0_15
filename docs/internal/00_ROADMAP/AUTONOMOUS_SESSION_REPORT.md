@@ -275,3 +275,39 @@ standing hole and discharges the §06.34 open obligation at the finite level.
 - The generative-dynamics THE step (an explicit D0 S-matrix simulation) and the A/4-coefficient
   owner (Bekenstein/Jacobson route) are the open obligations this front names.
 - The pre-existing 17-module `lake build D0.All` breakage stays its own spun-off task.
+
+---
+
+# D0 — Iteration 9 report: obligation 5 closed (the tower stops at 3 zones)
+
+**Headline.** The last open meta-step of the carrier forcing — BOOK_05 §05.6 **obligation 5**,
+the M1 no-extension no-go — is **closed** (`D0-TOWER-STOP-NOEXT-001`, CORE-FORMALIZED +
+LEAN_PROVED). This is the **root of the rank-3 cascade**. strength **3226 → 3246 (+20)**;
+open §05.6 obligations **2 → 1** (only `Δα`/obligation 4 remains open all the way down);
+integrity demotions **0**; all guards green; `D0.Tower.NoExtension` builds.
+
+## The no-go (two cases, both ⊥M1)
+- **CASE 2 (repeat)** — a fourth zone repeating an existing type has `≥2` indistinguishable
+  copies with a nontrivial copy-symmetry (`|S₂|=2>1`); the copy-choice is an external catalogue
+  ⇒ `⊥M1`. Same forcing as `Ω₈≅Q₈` via Dedekind (§01.7.1A). **No gap.**
+- **CASE 1 (new type)** — the necessity types are the three slots of the forced quadratic
+  `p²+p=1` (`p=φ⁻¹`): distinguish/preserve/close = `2` terms `+ 1` closure (degree-2, **not a
+  list**). No fourth independent slot: `p³=2p−1` reduces into `span{1,p}` (Lean-proved), so a
+  `p³`-type is iterated runtime = a repeat ⇒ CASE 2.
+
+## Honesty held (per the ТЗ boundary)
+- **"Three" from degree-2, never a list.** The count is derived from the quadraticity of
+  `p²+p=1` (`2` terms `+ 1` closure), not enumerated.
+- **Bijection written, not asserted.** The 3 slots ↔ 3 necessity-types map is exhibited, the
+  COUNT and no-4th are Lean-proved; the role-*names* cite forced primitives (registration /
+  self-application / M1+) — an assembly of forced pieces.
+- **Cascade not over-promoted.** Closing obligation 5 forces the 3-*count* (`rank=3`). The
+  leaves (`3/8` ceiling, Choptuik `γ`, `3+1` signature, spacetime-from-unit) also depend on the
+  **geometric** reading `rank-3 = causal cone`, which stays a **separate** named gap (§07.51.3,
+  the Connes owner-edge). The count is forced; the geometric identification is **not** flipped on
+  the strength of this closure. Nothing certified was reopened.
+
+## What this unblocks (count-level only)
+`rank=3` is now forced as the number of zones / graph parts. The remaining work to fully force
+the four leaves is each leaf's own geometric/physical identification — the `rank-3=causal-cone`
+gap — which is the natural next root, tracked at §07.51.3.

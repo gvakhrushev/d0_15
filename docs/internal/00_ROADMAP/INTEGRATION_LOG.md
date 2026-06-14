@@ -752,3 +752,38 @@ if_kolmogorov_sinai, fourcolor_horizon, ckm_pmns, window44 — 9 actually) all P
 1 new Lean module (`GluingAnomalyTime`, `native_decide`) builds. §05.8.T (external-contribution
 rule) is now law. ZERO ideas discarded: every error became a clarification or a named gap, every
 over-statement kept its core at the honest status.
+
+### Iteration 9 — obligation 5 closed (M1 no-extension): the tower stops at 3 zones
+
+The last open meta-step of the carrier forcing (BOOK_05 §05.6 obligation 5) and the root of the
+rank-3 cascade is **closed** as a no-go: no admissible structure registers a fourth zone
+(`D0-TOWER-STOP-NOEXT-001`, CORE-FORMALIZED + LEAN_PROVED, Lean `D0.Tower.NoExtension`). By
+DEF-0.2.2 on a hypothetical `Z4`:
+- **CASE 2 (repeat)** — `≥2` copies carry a nontrivial copy-permutation symmetry (`|S₂|=2>1`,
+  `native_decide`) ⇒ copy-index = external catalogue ⇒ `⊥M1` (Dedekind/`Q₈` §01.7.1A transferred).
+  No gap. (`vp_zone_repeat_catalog.py`.)
+- **CASE 1 (new type)** — the necessity types are the slots of the forced quadratic `p²+p=1`
+  (`p=φ⁻¹`): `p`=distinguish, `p²`=preserve, `=1`=close — `3 = 2` terms `+ 1` closure (degree-2,
+  *not* a list). No fourth independent slot: `ℤ[p]/(p²+p−1)` rank 2, `p³=2p−1` reduces into
+  `span{1,p}` (Lean `p_cubed_reduces` via `linear_combination` on `phi_inv_satisfies_primitive`);
+  a `p³`-type is iterated runtime (BOOK_01:556) = a repeat ⇒ CASE 2. (`vp_member_zone_isomorphism.py`,
+  `vp_degree2_three_types.py`.)
+
+§05.6 register updated (theorem-target → closed no-go; the only entry open all the way down is
+now `Δα`, obligation 4). **Honest scope:** the COUNT (3 slots, no 4th) is Lean-proved; the three
+role-names cite forced primitives, assembled not re-derived. **Cascade (not over-promoted):** the
+closure forces the 3-*count* (`rank=3`); the leaves that also need the *geometric* reading
+`rank-3 = causal cone` (the `3/8` ceiling, the Choptuik exponent) keep that as a **separate**
+named gap (§07.51.3) — the count is forced, the geometric identification is **not** promoted here.
+
+### Iteration 9 metrics
+| metric | Iter8 end | Iter9 now | delta |
+|---|---|---|---|
+| CORE-FORMALIZED | 110 | 111 | +1 (`D0-TOWER-STOP-NOEXT-001`) |
+| strength | 3226 | 3246 | +20 |
+| open §05.6 obligations | 2 (4,5) | 1 (4 = Δα) | −1 (obligation 5 closed) |
+| integrity demotions | 0 | 0 | — |
+
+3 new certs (zone_repeat, member_zone_iso, degree2_three_types) PASS + can-FAIL; 1 new Lean
+module (`D0.Tower.NoExtension`) builds. The root of the rank-3 cascade is closed; the geometric
+leaf-gaps are kept honest, not flipped.
