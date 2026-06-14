@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 2867 / 3995 (**71.8%** of track-fair max)
-- **Core spine:** 2447 / 3560 (headroom **1113** points to take every core claim to L5)
+- **Realized strength:** 2953 / 3995 (**73.9%** of track-fair max)
+- **Core spine:** 2533 / 3560 (headroom **1027** points to take every core claim to L5)
 - Claims: 222 active (223 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -32,7 +32,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | claim | domain | at | -> | +pts | effort |
 |---|---|---|---|--:|---|
-| `D0-ALPHA-ZETA-RESIDUE-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-EDGE-ALPHA-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-GRAV-006` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-HORIZON-JET-001` | frontier | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
@@ -41,10 +40,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-HST-ARCHIVE-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-ARCHIVE-ENTROPY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-DM-CLASSICALITY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-ARCHIVE-LAPLACIAN-RG` | rg | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-ARCHIVE-SEAM-CURVATURE-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-ARCHIVE-ACTION-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-ARCHIVE-FIELD-EQ-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
@@ -57,6 +52,11 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-CVFT-F4` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F7` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-IM-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-IM-003` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-IM-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-FOUND-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-GRAV-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -83,23 +83,23 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-HST-ARCHIVE-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-ARCHIVE-ENTROPY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-DM-CLASSICALITY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-ARCHIVE-LAPLACIAN-RG` | rg | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-ARCHIVE-SEAM-CURVATURE-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-ARCHIVE-ACTION-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-ARCHIVE-FIELD-EQ-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
+| `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | 0 | PYTHON_CERTIFIED | 7 |
+| `D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` | empirical_passport | 0 | PYTHON_CERTIFIED | 7 |
+| `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
+| `D0-KTHEORY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 130 | 1850 | 2500 | 645 |
+| formal_core | 130 | 1923 | 2500 | 572 |
 | frontier | 12 | 29 | 240 | 211 |
 | empirical_passport | 21 | 168 | 248 | 75 |
 | cosmology | 22 | 354 | 419 | 65 |
 | spectral_action | 6 | 68 | 120 | 52 |
 | smooth_geometry | 7 | 83 | 122 | 39 |
-| rg | 3 | 29 | 42 | 13 |
 | gauge_bridge | 16 | 249 | 262 | 13 |
+| rg | 3 | 42 | 42 | 0 |
 | external_background | 1 | 1 | 2 | 0 |
 | si_calibration | 3 | 25 | 29 | 0 |
 | interpretation_spine | 1 | 11 | 11 | 0 |
@@ -109,8 +109,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_08 | 45 | 663 | 802 | 135 |
-| BOOK_04 | 40 | 498 | 740 | 241 |
-| BOOK_07 | 35 | 384 | 628 | 234 |
+| BOOK_04 | 40 | 511 | 740 | 228 |
+| BOOK_07 | 35 | 449 | 628 | 169 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_01 | 6 | 94 | 107 | 13 |
@@ -136,11 +136,11 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_00/01 | 1 | 20 | 20 | 0 |
 | BOOK_00/01/02/03 | 1 | 20 | 20 | 0 |
 | BOOK_03/06 | 1 | 20 | 20 | 0 |
+| BOOK_03 | 1 | 20 | 20 | 0 |
 | BOOK_01/03 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
 | BOOK_05/08 | 2 | 19 | 32 | 13 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
-| BOOK_03 | 1 | 12 | 20 | 8 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
 | BOOK_01/03/06/07/08 | 1 | 11 | 11 | 0 |
 | BOOK_04/07 | 2 | 9 | 40 | 31 |

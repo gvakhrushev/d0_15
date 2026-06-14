@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 69
-- `CORE-FORMALIZED`: 97
+- `CERT-CLOSED`: 62
+- `CORE-FORMALIZED`: 104
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 14
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 82
-- `core`: 98
+- `certificate`: 75
+- `core`: 105
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
@@ -675,32 +675,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Fixed finite boundary trace-heat capacity block proves T^2 heat moments as even Lucas traces and saturation as boundary encoding while macro gravity stays bridge-scoped through the finite witness.
 
-### D0-ALPHA-ZETA-RESIDUE-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_03`
-- module: `D0.Spectral.ZetaResidueAlpha`
-- theorem: `zeta_residue_alpha_finite`
-- cert: `vp_zeta_residue_alpha.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|, zeta_adj(0)=3=rank; one zeta carries alpha+capacity. phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target.
-
-### D0-ARCHIVE-ACTION-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: `D0.Geometry.ArchiveActionFunctional`
-- theorem: `archiveCurvatureAction_nonnegative;archiveCurvatureAction_zero_iff_all_flat`
-- cert: `vp_archive_seam_curvature_action.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Archive action is accumulated seam curvature and vanishes exactly when all included levels are transport-flat.
-
 ### D0-ARCHIVE-ENTROPY-001
 
 - type: `certificate`
@@ -713,32 +687,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Entropy-selected archive coupling interface plus finite-stage softmax coupling cert.
-
-### D0-ARCHIVE-FIELD-EQ-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: `D0.Geometry.ArchiveFieldEquation`
-- theorem: `matrix_hs_square_expansion;first_variation_trace_square;seam_action_variation_quadratic_expansion;stationary_iff_first_variation_zero;vacuum_equation_iff_stationary;sourced_equation_variational_form`
-- cert: `vp_archive_variational_field_equation.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Finite seam-action variation gives the field-gradient pairing and sourced variational equation.
-
-### D0-ARCHIVE-SEAM-CURVATURE-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: `D0.Geometry.ArchiveCurvatureDensity`
-- theorem: `seamCommutator_zero_iff_operator_transport_flat;seamCurvatureDensity_nonnegative;seamCurvatureDensity_zero_iff_flat`
-- cert: `vp_archive_seam_curvature_action.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Curvature is the seam commutator density; cert checks exact rank two and seam support.
 
 ### D0-BARYON-POLES-001
 
@@ -999,19 +947,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] Theta(u) ~ u^-2(a0+a1 u+a2 u^2) on the archive Laplacian; finite-object fit.
-
-### D0-HIGGS-YUKAWA-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_higgs_yukawa_section_transfer.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] Y compatible with rank-2 scalar projector; Hermitian; single action section.
 
 ### D0-HODGE-001
 
@@ -1299,19 +1234,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Noncommutative solenoid model is admitted over the tiling hull. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
-### D0-SPIN2-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_finite_spin2_wave_operator_concrete.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] TT projector on full 10-dim Sym(4) basis; 2 polarizations.
-
 ### D0-TIME-MODULAR-FLOW-001
 
 - type: `certificate`
@@ -1338,6 +1260,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: ABCD represented as Dyad x Dyad.
 
+### D0-ALPHA-ZETA-RESIDUE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_03`
+- module: `D0.Spectral.ZetaResidueAlpha`
+- theorem: `zeta_residue_alpha_finite`
+- cert: `vp_zeta_residue_alpha.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|, zeta_adj(0)=3=rank; one zeta carries alpha+capacity. phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction.
+
+### D0-ARCHIVE-ACTION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveActionFunctional`
+- theorem: `archiveCurvatureAction_zero_iff_all_flat`
+- cert: `vp_archive_seam_curvature_action.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Archive action is accumulated seam curvature and vanishes exactly when all included levels are transport-flat. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Geometry.ArchiveActionFunctional (archiveCurvatureAction_zero_iff_all_flat): archive curvature action zero iff all-flat (existing proved module).
+
 ### D0-ARCHIVE-BIANCHI-001
 
 - type: `core`
@@ -1350,6 +1298,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Row-sum conservation of the seam curvature gradient forces conserved archive sources.
+
+### D0-ARCHIVE-FIELD-EQ-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveFieldEquation`
+- theorem: `vacuum_equation_iff_stationary`
+- cert: `vp_archive_variational_field_equation.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Finite seam-action variation gives the field-gradient pairing and sourced variational equation. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Geometry.ArchiveFieldEquation (vacuum_equation_iff_stationary): vacuum archive field equation = stationarity (existing proved module).
 
 ### D0-ARCHIVE-GAUSSIAN-CHANNEL-001
 
@@ -1441,6 +1402,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Stationarity under scalar perturbations reduces to discrete Poisson.
+
+### D0-ARCHIVE-SEAM-CURVATURE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.ArchiveCurvatureDensity`
+- theorem: `seamCurvatureDensity_zero_iff_flat`
+- cert: `vp_archive_seam_curvature_action.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Curvature is the seam commutator density; cert checks exact rank two and seam support. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Geometry.ArchiveCurvatureDensity (seamCurvatureDensity_zero_iff_flat): seam curvature density zero iff flat (existing proved module).
 
 ### D0-ARCHIVE-STRESS-CONSERVATION-001
 
@@ -1727,6 +1701,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Finite graph cut capacity heat-trace observable archive flux conservation and nonnegative entropic tension are formal D0 objects.
+
+### D0-HIGGS-YUKAWA-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Claims.HiggsYukawaBlock`
+- theorem: `higgs_yukawa_block`
+- cert: `vp_higgs_yukawa_section_transfer.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8C orphan-harvest] Y compatible with rank-2 scalar projector; Hermitian; single action section. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Claims.HiggsYukawaBlock (higgs_yukawa_block): 3x3 Hermitian Yukawa block + rank-2 projector compatibility (exact Q); rank-1 rejected.
 
 ### D0-HULL-001
 
@@ -2078,6 +2065,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [8D Tier-1 forced] 3=rank(adj) space + 1 Pisot modular flow time; distinct objects. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Signature31Split (signature_31_split); native_decide/decide on the real finite content.
+
+### D0-SPIN2-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Claims.Spin2TT`
+- theorem: `finite_spin2_dof`
+- cert: `vp_finite_spin2_wave_operator_concrete.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8C orphan-harvest] TT projector on full 10-dim Sym(4) basis; 2 polarizations. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Claims.Spin2TT (finite_spin2_dof): two TT polarizations (traceless/transverse/time-orthogonal/independent over Q) + dof 10-8=2.
 
 ### D0-SRC-001
 
@@ -2743,16 +2743,16 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ### D0-ARCHIVE-LAPLACIAN-RG
 
-- type: `certificate`
-- release_status: `CERT-CLOSED`
+- type: `core`
+- release_status: `CORE-FORMALIZED`
 - domain: `rg`
 - book: `BOOK_07`
 - module: `D0.Geometry.ArchiveLaplacianRG`
-- theorem: `archiveRGPhaseProjection_surjective;rg_curvature_zero_iff_exact_compatibility;rg_operator_curvature_zero_iff_renormalized_compatibility;rg_flat_curvature_zero_iff_exact_flat_compatibility;exact_projective_compatibility_fails`
+- theorem: `rg_curvature_zero_iff_exact_compatibility`
 - cert: `vp_archive_laplacian_rg_flow.py`
 - assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Nearest-neighbor phase Laplacian is not strictly projective; RG residual/curvature obstruction is tracked by scale-fit cert.
+- scope: Formal/finite RG proxy only; smooth or physical RG meaning requires explicit bridge assumptions.
+- notes: Nearest-neighbor phase Laplacian is not strictly projective; RG residual/curvature obstruction is tracked by scale-fit cert. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Geometry.ArchiveLaplacianRG (rg_curvature_zero_iff_exact_compatibility): RG curvature zero iff exact projective compatibility (existing proved module).
 
 
 ## Domain: si_calibration
