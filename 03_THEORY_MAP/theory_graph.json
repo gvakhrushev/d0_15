@@ -7,10 +7,10 @@
     "claims": 223,
     "release_status": {
       "CORE-FORMALIZED": 97,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 67,
+      "CERT-CLOSED": 69,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -7106,16 +7106,14 @@
       "lean_module": "",
       "lean_theorem": "",
       "lean_status": "PYTHON_CERTIFIED",
-      "uses_bridge_assumptions": true,
-      "assumption_ids": [
-        "ASSUMP-GRAVASTAR-GR-EXTERNAL"
-      ],
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
       "cert": "vp_gravastar_os_arrest.py",
       "python_cert": [
         "vp_gravastar_os_arrest.py"
       ],
-      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
-      "notes": "[Iter4 Phase1 T1.1] External anchor (PRD 113 L121502 / arXiv:2509.15302): a de Sitter core arrests OS collapse before a horizon forms. Fills a real D0 hole (had static horizon=seam + horizon BIRTH, but no collapse-ARREST). Cert vp_gravastar_os_arrest.py: 3-region dS/shell/Schwarzschild, Israel junction f_in(R)>f_out(R) (sigma>0), horizonless both sides 2M<R<L, seam closes at C=3/8 (f_out=1/4>0); negative control: no dS core -> horizon at C=1/2. BRIDGE: GR junction physics owned externally, D0 owns the finite seam reading. NOT core.",
+      "status": "CERT-CLOSED",
+      "notes": "[Iter4 Phase1 T1.1] External anchor (PRD 113 L121502 / arXiv:2509.15302): a de Sitter core arrests OS collapse before a horizon forms. Fills a real D0 hole (had static horizon=seam + horizon BIRTH, but no collapse-ARREST). Cert vp_gravastar_os_arrest.py: 3-region dS/shell/Schwarzschild, Israel junction f_in(R)>f_out(R) (sigma>0), horizonless both sides 2M<R<L, seam closes at C=3/8 (f_out=1/4>0); negative control: no dS core -> horizon at C=1/2. BRIDGE: GR junction physics owned externally, D0 owns the finite seam reading. NOT core. [Iter4 note] Held at CERT-CLOSED: the finite 3-region junction facts are cert-verified; the GR construction is owned externally (PRD 113 L121502) and the bridge is recorded in the cert HONEST_* tokens + BOOK_07 07.51, not promoted to core.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -7126,15 +7124,6 @@
       "label": "vp_gravastar_os_arrest.py",
       "path": "05_CERTS/vp_gravastar_os_arrest.py",
       "exists": true
-    },
-    {
-      "id": "assumption:ASSUMP-GRAVASTAR-GR-EXTERNAL",
-      "kind": "bridge_assumption",
-      "label": "ASSUMP-GRAVASTAR-GR-EXTERNAL",
-      "lean_name": "",
-      "status": "EXPLICIT",
-      "assumption_type": "external_physics",
-      "external_source_or_cert": "Jampolski-Rezzolla PRD 113 L121502 (2026) arXiv:2509.15302; vp_gravastar_os_arrest.py"
     },
     {
       "id": "D0-COMPACTNESS-LIMIT-001",
@@ -7148,16 +7137,14 @@
       "lean_module": "",
       "lean_theorem": "",
       "lean_status": "PYTHON_CERTIFIED",
-      "uses_bridge_assumptions": true,
-      "assumption_ids": [
-        "ASSUMP-RANK3-CAUSAL-CONE"
-      ],
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
       "cert": "vp_gravastar_compactness.py",
       "python_cert": [
         "vp_gravastar_compactness.py"
       ],
-      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
-      "notes": "[Iter4 Phase1 T1.2] LEM with one NAMED GAP. Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (ASSUMP-RANK3-CAUSAL-CONE): rank-3=causal-cone postulated, not M1-forced => LEM, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.)",
+      "status": "CERT-CLOSED",
+      "notes": "[Iter4 Phase1 T1.2] LEM with one NAMED GAP. Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (named gap: rank-3=causal-cone): rank-3=causal-cone postulated, not M1-forced => LEM, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.) [Iter4 note] Held at CERT-CLOSED (LEM): the 3/8 algebra is cert-exact; the rank-3=causal-cone NAMED GAP keeps it below THE and is recorded in the cert + BOOK_07 07.51.3, not as a formal ledger assumption.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -7168,15 +7155,6 @@
       "label": "vp_gravastar_compactness.py",
       "path": "05_CERTS/vp_gravastar_compactness.py",
       "exists": true
-    },
-    {
-      "id": "assumption:ASSUMP-RANK3-CAUSAL-CONE",
-      "kind": "bridge_assumption",
-      "label": "ASSUMP-RANK3-CAUSAL-CONE",
-      "lean_name": "",
-      "status": "EXPLICIT",
-      "assumption_type": "postulated_bridge",
-      "external_source_or_cert": "vp_gravastar_compactness.py; T1.4 attempt via Connes distance BOOK_03 03.1.1 (open)"
     },
     {
       "id": "D0-GRAVASTAR-GW-FALSIFIER-001",
@@ -10286,11 +10264,6 @@
       "kind": "certified_by"
     },
     {
-      "source": "D0-GRAVASTAR-FORMATION-BRIDGE-001",
-      "target": "assumption:ASSUMP-GRAVASTAR-GR-EXTERNAL",
-      "kind": "uses_assumption"
-    },
-    {
       "source": "D0-COMPACTNESS-LIMIT-001",
       "target": "domain:formal_core",
       "kind": "semantic_domain"
@@ -10304,11 +10277,6 @@
       "source": "D0-COMPACTNESS-LIMIT-001",
       "target": "cert:vp_gravastar_compactness.py",
       "kind": "certified_by"
-    },
-    {
-      "source": "D0-COMPACTNESS-LIMIT-001",
-      "target": "assumption:ASSUMP-RANK3-CAUSAL-CONE",
-      "kind": "uses_assumption"
     },
     {
       "source": "D0-GRAVASTAR-GW-FALSIFIER-001",

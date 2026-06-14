@@ -35,7 +35,7 @@ theorem seam_gap_zero_on_identity : frobSq (comm 1) = 0 := by native_decide
 theorem seam_gap_positive_offkernel : frobSq (comm rotJ) = 2 := by native_decide
 
 /-- **D0-NONABELIAN-SEAM-001.** The seam obstruction is `0` on the commuting kernel and a
-strictly positive constant off it — a genuine non-abelian gap. -/
+strictly positive value off it — a genuine non-abelian gap. -/
 theorem nonabelian_seam_gap :
     frobSq (comm 1) = 0 ∧ frobSq (comm rotJ) = 2 ∧ (0 : ℤ) < frobSq (comm rotJ) :=
   ⟨seam_gap_zero_on_identity, seam_gap_positive_offkernel, by native_decide⟩

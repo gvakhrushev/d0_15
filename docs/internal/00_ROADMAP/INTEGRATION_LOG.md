@@ -485,3 +485,19 @@ IRON RULES in force (firewall; α honesty boundary; no v17 overshoots; CSV+artif
 per change; OWNER-DECISION-NEEDED for owner-level calls; guillotine; positive closure delta).
 ТЗ Phases 2/3/4 + T5.2/T5.3 were ALREADY closed earlier this session (Roots A/B/C, S_DE fork,
 signature-3+1 CORE) — autonomous front executes the genuinely-remaining work.
+
+### Iteration 4 — end-of-session metrics (delta vs base-pre-autonomous)
+
+| metric | baseline | final | delta |
+|---|---|---|---|
+| total claims | 216 | 223 | +7 |
+| CORE-FORMALIZED | 92 | 97 | +5 |
+| CERT-CLOSED | 71 | 69 | −2 (5 promoted to CORE; +3 new cert-level) |
+| PROOF-TARGET | 12 | 12 | 0 (no new open targets) |
+| EMPIRICAL-PASSPORT | 10 | 14 | +4 |
+| strength | 2753 | 2867 | +114 |
+| hygiene | 100 | 100 | 0 |
+| firewall violations | 0 | 0 | 0 |
+
+Closure delta POSITIVE: +5 core promotions, phason undeclared-gap closed by forcing,
+gravastar hole filled, 3 external anchors wired in — and zero new PROOF-TARGETs created.

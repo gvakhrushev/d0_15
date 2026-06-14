@@ -20,11 +20,11 @@
   },
   "totals": {
     "realized": 2867,
-    "track_fair_max": 3977,
-    "pct_strength": 72.1,
-    "core_realized": 2433,
-    "core_potential": 3520,
-    "core_headroom": 1087,
+    "track_fair_max": 3995,
+    "pct_strength": 71.8,
+    "core_realized": 2447,
+    "core_potential": 3560,
+    "core_headroom": 1113,
     "n_claims": 223,
     "n_active": 222,
     "duplicates": [],
@@ -34,8 +34,8 @@
     "formal_core": {
       "n": 130,
       "realized": 1850,
-      "max": 2482,
-      "core_headroom": 619
+      "max": 2500,
+      "core_headroom": 645
     },
     "rg": {
       "n": 3,
@@ -150,8 +150,8 @@
     "BOOK_07": {
       "n": 35,
       "realized": 384,
-      "max": 610,
-      "core_headroom": 208
+      "max": 628,
+      "core_headroom": 234
     },
     "BOOK_06/08": {
       "n": 5,
@@ -1028,6 +1028,26 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-GRAVASTAR-FORMATION-BRIDGE-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-COMPACTNESS-LIMIT-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-PHASON-FORCING-001",
       "domain": "formal_core",
       "book": "BOOK_08",
@@ -1704,6 +1724,20 @@
     {
       "claim_id": "D0-VACUUM-CUBIC-WINDOW-001",
       "domain": "empirical_passport",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-GRAVASTAR-FORMATION-BRIDGE-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-COMPACTNESS-LIMIT-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -4751,12 +4785,12 @@
     },
     {
       "claim_id": "D0-GRAVASTAR-FORMATION-BRIDGE-001",
-      "track": "BRIDGE",
+      "track": "CORE",
       "level": 3,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7,
-      "ceiling": 11,
-      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_07",
@@ -4765,12 +4799,12 @@
     },
     {
       "claim_id": "D0-COMPACTNESS-LIMIT-001",
-      "track": "BRIDGE",
+      "track": "CORE",
       "level": 3,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7,
-      "ceiling": 11,
-      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_07",
