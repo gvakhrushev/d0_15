@@ -1726,6 +1726,8 @@ the spectral A2-is-EH-proxy theorem.
 
 The active/archive split is not an extra matter component: active contraction and archive expansion are eigen-branches of one toral automorphism, and the determinant invariant gives exact phase-volume balance before the macro gravity interface is read.
 
+**The `A/4` coefficient: a Four-Color forcing attempt, with the honest gap named.** A proposed route reads the horizon capacity `C_∂ = A/4` off the Four-Color theorem (4 horizon colors = 4 roles). The forcing attempt has a real half and an open half (claim `D0-FOURCOLOR-HORIZON-CAPACITY-001`, cert `vp_fourcolor_horizon_capacity.py`): the **"4" is forced** — four mutually-adjacent horizon cells form `K_4` with `\chi(K_4)=4`, and the Four-Color theorem caps any sphere map at 4, so the address-coloring uses exactly 4 colors `=` the 4 `ABCD` roles. But the **"1/4" is not derived**: the chromatic number `4` and the Bekenstein coefficient `1/4` are different objects (4 colors carry `\log_2 4 = 2` bits, neither `1/4` nor the `A/4` coefficient). So `C_∂ = A/4` is **not** declared from chromatics; the coefficient `1/4` stays a named gap whose owner is the Bekenstein/Jacobson thermodynamic route (§07.51.3), not the colouring. The Four-Color step fixes the role count, nothing more.
+
 ## 07.41 Trace-Heat-Capacity Gravity
 
 Trace-Heat-Capacity Gravity refines the finite gravity entry point:

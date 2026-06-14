@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3198 / 4348 (**73.6%** of track-fair max)
-- **Core spine:** 2709 / 3840 (headroom **1131** points to take every core claim to L5)
-- Claims: 243 active (244 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 3219 / 4408 (**73.0%** of track-fair max)
+- **Core spine:** 2730 / 3900 (headroom **1170** points to take every core claim to L5)
+- Claims: 246 active (247 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
@@ -92,7 +92,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 147 | 2145 | 2795 | 645 |
+| formal_core | 150 | 2166 | 2855 | 684 |
 | frontier | 14 | 33 | 280 | 247 |
 | empirical_passport | 22 | 175 | 255 | 75 |
 | cosmology | 22 | 354 | 419 | 65 |
@@ -109,8 +109,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_08 | 46 | 670 | 809 | 135 |
-| BOOK_07 | 43 | 539 | 770 | 221 |
-| BOOK_04 | 41 | 518 | 751 | 228 |
+| BOOK_07 | 44 | 546 | 790 | 234 |
+| BOOK_04 | 42 | 525 | 771 | 241 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
 | BOOK_01 | 8 | 126 | 147 | 21 |
 | BOOK_02 | 8 | 116 | 142 | 26 |
@@ -141,6 +141,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_01/03 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
 | BOOK_05/08 | 2 | 19 | 32 | 13 |
+| BOOK_09 | 2 | 14 | 27 | 13 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
 | BOOK_01/03/06/07/08 | 1 | 11 | 11 | 0 |
@@ -150,7 +151,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_02/05 | 1 | 7 | 20 | 13 |
 | BOOK_01/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/02/06 | 1 | 7 | 20 | 13 |
-| BOOK_09 | 1 | 7 | 7 | 0 |
 | BOOK_04/07 | 2 | 4 | 40 | 36 |
 | BOOK_04/06/07/08 | 1 | 2 | 20 | 18 |
 | BOOK_02/04/08 | 1 | 2 | 20 | 18 |

@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3198,
-    "track_fair_max": 4348,
-    "pct_strength": 73.6,
-    "core_realized": 2709,
-    "core_potential": 3840,
-    "core_headroom": 1131,
-    "n_claims": 244,
-    "n_active": 243,
+    "realized": 3219,
+    "track_fair_max": 4408,
+    "pct_strength": 73.0,
+    "core_realized": 2730,
+    "core_potential": 3900,
+    "core_headroom": 1170,
+    "n_claims": 247,
+    "n_active": 246,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 147,
-      "realized": 2145,
-      "max": 2795,
-      "core_headroom": 645
+      "n": 150,
+      "realized": 2166,
+      "max": 2855,
+      "core_headroom": 684
     },
     "rg": {
       "n": 5,
@@ -148,10 +148,10 @@
       "core_headroom": 75
     },
     "BOOK_07": {
-      "n": 43,
-      "realized": 539,
-      "max": 770,
-      "core_headroom": 221
+      "n": 44,
+      "realized": 546,
+      "max": 790,
+      "core_headroom": 234
     },
     "BOOK_06/08": {
       "n": 5,
@@ -160,10 +160,10 @@
       "core_headroom": 52
     },
     "BOOK_04": {
-      "n": 41,
-      "realized": 518,
-      "max": 751,
-      "core_headroom": 228
+      "n": 42,
+      "realized": 525,
+      "max": 771,
+      "core_headroom": 241
     },
     "BOOK_04/08": {
       "n": 7,
@@ -370,10 +370,10 @@
       "core_headroom": 0
     },
     "BOOK_09": {
-      "n": 1,
-      "realized": 7,
-      "max": 7,
-      "core_headroom": 0
+      "n": 2,
+      "realized": 14,
+      "max": 27,
+      "core_headroom": 13
     },
     "BOOK_00": {
       "n": 2,
@@ -1047,6 +1047,36 @@
       "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-IF-KS-FORMULA-FIX-001",
+      "domain": "formal_core",
+      "book": "BOOK_09",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1760,6 +1790,27 @@
     },
     {
       "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-IF-KS-FORMULA-FIX-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-CKM-PMNS-COMPLEMENTARITY-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5195,6 +5246,48 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-IF-KS-FORMULA-FIX-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_09",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
     }

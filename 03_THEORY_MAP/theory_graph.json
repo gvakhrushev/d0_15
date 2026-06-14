@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 244,
+    "claims": 247,
     "release_status": {
       "CORE-FORMALIZED": 110,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 12,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 68,
+      "CERT-CLOSED": 71,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 131,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 13,
-      "PYTHON_CERTIFIED": 83,
+      "PYTHON_CERTIFIED": 86,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 111,
       "bridge": 19,
       "no-go": 16,
-      "certificate": 82,
+      "certificate": 85,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 147,
+      "formal_core": 150,
       "rg": 5,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -8073,6 +8073,99 @@
       "label": "vp_laplacian_3x3_correct.py",
       "path": "05_CERTS/vp_laplacian_3x3_correct.py",
       "exists": true
+    },
+    {
+      "id": "D0-IF-KS-FORMULA-FIX-001",
+      "kind": "claim",
+      "claim_id": "D0-IF-KS-FORMULA-FIX-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_09",
+      "section": "I_f = h_KS = log|lambda_max| = log phi (formula fix, 09.08)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_if_kolmogorov_sinai.py",
+      "python_cert": [
+        "vp_if_kolmogorov_sinai.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter8 reforge of researcher doc 2 §09.8] The number log phi is right but the formula I_f=Tr(log T)/rank is WRONG: T=[[0,1],[1,-1]] has eig {phi^-1,-phi}, det T=-1<0, so Tr(log T)=log(det T)=log(-1)=i*pi is COMPLEX (an entropy cannot be complex). Correct: h_KS=log|lambda_max(T)|=log|-phi|=log phi~0.4812 (Kolmogorov-Sinai entropy, real). cert vp_if_kolmogorov_sinai.py. Same number as I_f from the Fibonacci route (D0.Claims.FibonacciIfBridge proves |-phi|=phi). Number kept, formula record corrected.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_if_kolmogorov_sinai.py",
+      "kind": "python_cert",
+      "label": "vp_if_kolmogorov_sinai.py",
+      "path": "05_CERTS/vp_if_kolmogorov_sinai.py",
+      "exists": true
+    },
+    {
+      "id": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "kind": "claim",
+      "claim_id": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "A/4 via Four-Color: forcing attempt, 4 forced 1/4 a named gap (07.22)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_fourcolor_horizon_capacity.py",
+      "python_cert": [
+        "vp_fourcolor_horizon_capacity.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter8 forcing attempt, researcher doc 2 §07.22, honest dual outcome b] The '4' IS forced: chi(K_4)=4 (tetrahedral horizon seam, 4 mutually-adjacent cells), Four-Color caps the sphere map at 4 => the horizon address-coloring uses exactly 4 colors = the 4 ABCD roles. The '1/4' is NOT derived: the chromatic number 4 and the Bekenstein coefficient 1/4 are different objects (4 colors give log2(4)=2 bits, neither 1/4 nor the A/4 coefficient). cert vp_fourcolor_horizon_capacity.py. OUTCOME (b): role count 4 forced by chromatics; coefficient 1/4 stays a NAMED GAP whose owner is the Bekenstein/Jacobson thermodynamic route, not Four-Color. C_d=A/4 NOT declared from chromatics.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_fourcolor_horizon_capacity.py",
+      "kind": "python_cert",
+      "label": "vp_fourcolor_horizon_capacity.py",
+      "path": "05_CERTS/vp_fourcolor_horizon_capacity.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "kind": "claim",
+      "claim_id": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "V_CKM U_PMNS^T=I is FALSE; reforged to quark-lepton complementarity (04.12)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ckm_pmns_orthogonality.py",
+      "python_cert": [
+        "vp_ckm_pmns_orthogonality.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter8 reforge of researcher doc 2 §04.12] The claim V_CKM U_PMNS^T=I_3 is FALSE: it would force V_CKM=U_PMNS (CKM=PMNS), but CKM angles are SMALL and PMNS LARGE. cert vp_ckm_pmns_orthogonality.py: with theta_C~13.04 deg and theta_12~33.6 deg, R(theta_C)R(theta_12)^T=R(theta_C-theta_12)~R(-20.6 deg) != I. Reforged to the real weaker relation: quark-lepton COMPLEMENTARITY theta_C+theta_12~46.6 deg ~ 45 deg (miss ~1.6 deg). HONEST: strong orthogonality REJECTED; salvaged content = approximate complementarity, status HYP (not an exact identity). Overstatement not kept; idea reforged.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ckm_pmns_orthogonality.py",
+      "kind": "python_cert",
+      "label": "vp_ckm_pmns_orthogonality.py",
+      "path": "05_CERTS/vp_ckm_pmns_orthogonality.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -11429,6 +11522,51 @@
     {
       "source": "D0-LAPLACIAN-SPECTRUM-FIX-001",
       "target": "cert:vp_laplacian_3x3_correct.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-IF-KS-FORMULA-FIX-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-IF-KS-FORMULA-FIX-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-IF-KS-FORMULA-FIX-001",
+      "target": "cert:vp_if_kolmogorov_sinai.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
+      "target": "cert:vp_fourcolor_horizon_capacity.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "target": "cert:vp_ckm_pmns_orthogonality.py",
       "kind": "certified_by"
     }
   ]

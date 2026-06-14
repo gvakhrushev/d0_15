@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 68
+- `CERT-CLOSED`: 71
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 19
-- `certificate`: 82
+- `certificate`: 85
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 147
+- `formal_core`: 150
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -831,6 +831,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
+### D0-CKM-PMNS-COMPLEMENTARITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_ckm_pmns_orthogonality.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter8 reforge of researcher doc 2 §04.12] The claim V_CKM U_PMNS^T=I_3 is FALSE: it would force V_CKM=U_PMNS (CKM=PMNS), but CKM angles are SMALL and PMNS LARGE. cert vp_ckm_pmns_orthogonality.py: with theta_C~13.04 deg and theta_12~33.6 deg, R(theta_C)R(theta_12)^T=R(theta_C-theta_12)~R(-20.6 deg) != I. Reforged to the real weaker relation: quark-lepton COMPLEMENTARITY theta_C+theta_12~46.6 deg ~ 45 deg (miss ~1.6 deg). HONEST: strong orthogonality REJECTED; salvaged content = approximate complementarity, status HYP (not an exact identity). Overstatement not kept; idea reforged.
+
 ### D0-COMPACTNESS-DEF-FORCING-001
 
 - type: `certificate`
@@ -974,6 +987,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Quadratic peel cert.
 
+### D0-FOURCOLOR-HORIZON-CAPACITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_fourcolor_horizon_capacity.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter8 forcing attempt, researcher doc 2 §07.22, honest dual outcome b] The '4' IS forced: chi(K_4)=4 (tetrahedral horizon seam, 4 mutually-adjacent cells), Four-Color caps the sphere map at 4 => the horizon address-coloring uses exactly 4 colors = the 4 ABCD roles. The '1/4' is NOT derived: the chromatic number 4 and the Bekenstein coefficient 1/4 are different objects (4 colors give log2(4)=2 bits, neither 1/4 nor the A/4 coefficient). cert vp_fourcolor_horizon_capacity.py. OUTCOME (b): role count 4 forced by chromatics; coefficient 1/4 stays a NAMED GAP whose owner is the Bekenstein/Jacobson thermodynamic route, not Four-Color. C_d=A/4 NOT declared from chromatics.
+
 ### D0-FTHEORY-002
 
 - type: `certificate`
@@ -1090,6 +1116,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: HST is external theorem object; D0-side archive hypotheses are cert-backed.
+
+### D0-IF-KS-FORMULA-FIX-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_09`
+- module: ``
+- theorem: `none`
+- cert: `vp_if_kolmogorov_sinai.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter8 reforge of researcher doc 2 §09.8] The number log phi is right but the formula I_f=Tr(log T)/rank is WRONG: T=[[0,1],[1,-1]] has eig {phi^-1,-phi}, det T=-1<0, so Tr(log T)=log(det T)=log(-1)=i*pi is COMPLEX (an entropy cannot be complex). Correct: h_KS=log|lambda_max(T)|=log|-phi|=log phi~0.4812 (Kolmogorov-Sinai entropy, real). cert vp_if_kolmogorov_sinai.py. Same number as I_f from the Fibonacci route (D0.Claims.FibonacciIfBridge proves |-phi|=phi). Number kept, formula record corrected.
 
 ### D0-IM-001
 

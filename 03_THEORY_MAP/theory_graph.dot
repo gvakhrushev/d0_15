@@ -245,6 +245,9 @@ digraph D0Theory {
   "D0-ENTROPIC-DARK-GRAVITY-001" [label="D0-ENTROPIC-DARK-GRAVITY-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-GENERATIVE-DYNAMICS-001" [label="D0-GENERATIVE-DYNAMICS-001\\nCERT-CLOSED\\nrg", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-LAPLACIAN-SPECTRUM-FIX-001" [label="D0-LAPLACIAN-SPECTRUM-FIX-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-IF-KS-FORMULA-FIX-001" [label="D0-IF-KS-FORMULA-FIX-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-FOURCOLOR-HORIZON-CAPACITY-001" [label="D0-FOURCOLOR-HORIZON-CAPACITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-CKM-PMNS-COMPLEMENTARITY-001" [label="D0-CKM-PMNS-COMPLEMENTARITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1587,4 +1590,22 @@ digraph D0Theory {
   "D0-LAPLACIAN-SPECTRUM-FIX-001" -> "cert:vp_laplacian_3x3_correct.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-LAPLACIAN-SPECTRUM-FIX-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-IF-KS-FORMULA-FIX-001" -> "module:" [label="module"];
+  "cert:vp_if_kolmogorov_sinai.py" [label="vp_if_kolmogorov_sinai.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-IF-KS-FORMULA-FIX-001" -> "cert:vp_if_kolmogorov_sinai.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-IF-KS-FORMULA-FIX-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-FOURCOLOR-HORIZON-CAPACITY-001" -> "module:" [label="module"];
+  "cert:vp_fourcolor_horizon_capacity.py" [label="vp_fourcolor_horizon_capacity.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-FOURCOLOR-HORIZON-CAPACITY-001" -> "cert:vp_fourcolor_horizon_capacity.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-FOURCOLOR-HORIZON-CAPACITY-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CKM-PMNS-COMPLEMENTARITY-001" -> "module:" [label="module"];
+  "cert:vp_ckm_pmns_orthogonality.py" [label="vp_ckm_pmns_orthogonality.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CKM-PMNS-COMPLEMENTARITY-001" -> "cert:vp_ckm_pmns_orthogonality.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CKM-PMNS-COMPLEMENTARITY-001" -> "domain:formal_core" [label="domain"];
 }
