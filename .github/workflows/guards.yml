@@ -24,6 +24,9 @@ jobs:
       - name: registered certs pass (existence != passes)
         run: python tools/run_registered_certs.py
 
+      - name: every registered cert can FAIL (guillotine; blocks new print-stubs)
+        run: python tools/check_cert_can_fail.py
+
       - name: anti-promotion firewall (vs base-v14)
         run: python tools/check_firewall.py --base base-v14
 
