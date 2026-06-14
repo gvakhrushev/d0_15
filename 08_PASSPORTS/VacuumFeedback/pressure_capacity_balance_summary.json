@@ -5,6 +5,5 @@
     "PASS_HORIZON_SATURATION_FEEDBACK_LIMIT",
     "PASS_A4_TERMINAL_FEEDBACK_SATURATION"
   ],
-  "law": "a_ddot_over_a = kappa_D * (P_fb - P_cap)",
-  "timestamp": "2026-06-13T21:33:56.611840+00:00"
+  "law": "a_ddot_over_a = kappa_D * (P_fb - P_cap)"
 }

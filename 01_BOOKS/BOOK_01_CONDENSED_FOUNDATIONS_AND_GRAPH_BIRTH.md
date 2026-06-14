@@ -585,7 +585,7 @@ There is a third, categorical, forcing of the same equation, and it closes a kno
 Q(z)=x^2+y^2.
 ```
 
-Phase-blindness `\Rightarrow` quadratic response is the same conclusion reached structurally in §01.17.1a; here it is reached by closing Gleason's dimensional gap.
+Phase-blindness `\Rightarrow` quadratic response is the same conclusion reached structurally in §01.17.1a; here it is reached by closing Gleason's dimensional gap. The *uniqueness* leg is now machine-checked: the quarter-turn `J(x,y)=(-y,x)` is the area-preserving `SL(2,ℤ)` generator, and any quadratic `a x^2 + b xy + c y^2` invariant under `J` is forced to `a=c`, `b=0` — so `x^2+y^2` is the *unique* `J`-invariant form up to scale (existence of the phase-blind response is owned upstream). What remains a theorem-target is the *categorical* uniqueness below (Ostrik/Ising), whose fusion-category machinery is not yet in the formal kernel.
 
 **Fibonacci fusion forces `d=\varphi`.** Because the automaton is strictly self-reading, registration acts on itself. To forbid hidden external memory the readout channel must satisfy the minimal algebraic closure known in TQFT as the Fibonacci fusion rule,
 
@@ -1532,7 +1532,7 @@ The argument is orbital, not enumerative:
 2. From **(C3)**, any within-part edge creates the distinguishable binary property "neighbour-inside-part / neighbour-outside-part," which is not codable in the original addressing without an extra marker (an external distinguishability catalog). So `A|_{Vi×Vi}=0` for `i∈{9,11,13}`.
 3. From **(C2)**, any all-zeros between-part block `A|_{Vi×Vj}=0` (`i≠j`) would leave roles `Vi`, `Vj` non-interacting; closing the scene would then need an external coupling protocol. So all between-part blocks are all-ones.
 
-Therefore `A` is exactly `K(9,11,13)` — empty within parts, complete between parts. This is "the shape of emptiness" at the given addressing. **[^b01-42]** — the orbital-uniqueness theorem is not yet discharged by a `vp_*` cert; only the count ladder above is certified.
+Therefore `A` is exactly `K(9,11,13)` — empty within parts, complete between parts. This is "the shape of emptiness" at the given addressing. **[^b01-42]** — the orbital-uniqueness theorem is now discharged by a finite certificate and Lean module: step 1 (block-constancy under `S9×S11×S13`) is verified by exhaustion on a faithful model, and steps 2–3 collapse to the *unique* loopless-and-complete block pattern, the complete tripartite graph with `|E| = 359` (Lean-proved). Role = orbit ⇒ unique scene is closed; only the M1 no-extension meta-step (why the tower stops, BOOK_05 §05.6 obl. 5) remains a theorem-target.
 
 **Equivalent information reading (REM 17.0.1.A.1).** Any incomplete between-part block is a *Catalog of Prohibitions* (a list of missing edges); any within-part edge is a *Catalog of Privileges* (a list of allowed exceptions). `K(9,11,13)` is the unique configuration carrying neither catalog [^b01-48].
 

@@ -10,6 +10,5 @@
   "response_index": 3.0,
   "negative_controls": [
     "FAIL_IDEAL_GAS_CORE_POSTULATE"
-  ],
-  "timestamp": "2026-06-13T21:33:56.402266+00:00"
+  ]
 }

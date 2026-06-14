@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -55,7 +54,6 @@ def main() -> int:
             "FAIL_DESI_WINDOW_REFIT_REPAIR",
             "FAIL_ARBITRARY_KERNEL_REPAIR",
         ],
-        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     for d in (VAC, DESI, SPARC):
         d.mkdir(parents=True, exist_ok=True)

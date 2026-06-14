@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 2699,
-    "track_fair_max": 3827,
-    "pct_strength": 70.5,
-    "core_realized": 2307,
-    "core_potential": 3420,
-    "core_headroom": 1113,
-    "n_claims": 212,
-    "n_active": 211,
+    "realized": 2746,
+    "track_fair_max": 3887,
+    "pct_strength": 70.6,
+    "core_realized": 2354,
+    "core_potential": 3480,
+    "core_headroom": 1126,
+    "n_claims": 215,
+    "n_active": 214,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 125,
-      "realized": 1737,
-      "max": 2400,
-      "core_headroom": 658
+      "n": 128,
+      "realized": 1784,
+      "max": 2460,
+      "core_headroom": 671
     },
     "rg": {
       "n": 3,
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 4,
-      "realized": 67,
-      "max": 80,
+      "n": 5,
+      "realized": 87,
+      "max": 100,
       "core_headroom": 13
     },
     "BOOK_02": {
@@ -160,10 +160,10 @@
       "core_headroom": 52
     },
     "BOOK_04": {
-      "n": 38,
-      "realized": 432,
-      "max": 713,
-      "core_headroom": 280
+      "n": 39,
+      "realized": 439,
+      "max": 733,
+      "core_headroom": 293
     },
     "BOOK_04/08": {
       "n": 7,
@@ -362,6 +362,12 @@
       "realized": 12,
       "max": 20,
       "core_headroom": 8
+    },
+    "BOOK_01/03": {
+      "n": 1,
+      "realized": 20,
+      "max": 20,
+      "core_headroom": 0
     }
   },
   "cheapest_promotions": [
@@ -1039,6 +1045,16 @@
       "claim_id": "D0-TIME-MODULAR-FLOW-001",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-CLASS5-ALIASING-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1732,6 +1748,13 @@
     },
     {
       "claim_id": "D0-TIME-MODULAR-FLOW-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-CLASS5-ALIASING-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -4712,6 +4735,48 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CARRIER-FULL-FORCING-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01/03",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SYMPLECTIC-GLEASON-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CLASS5-ALIASING-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
     }

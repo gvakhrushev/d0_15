@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import math
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -42,7 +41,6 @@ def main() -> int:
         "logZ": log_z,
         "return_cycle_series_error": abs(cycle_sum - det_log),
         "negative_controls": ["FAIL_PHOTON_ACCELERATION_MODEL"],
-        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     (PASSPORT / "feedback_partition_function_summary.json").write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8"

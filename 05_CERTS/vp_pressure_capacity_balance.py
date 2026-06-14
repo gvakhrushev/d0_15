@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -31,7 +30,6 @@ def main() -> int:
             "PASS_A4_TERMINAL_FEEDBACK_SATURATION",
         ],
         "law": "a_ddot_over_a = kappa_D * (P_fb - P_cap)",
-        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     PASSPORT.mkdir(parents=True, exist_ok=True)
     (PASSPORT / "pressure_capacity_balance_summary.json").write_text(

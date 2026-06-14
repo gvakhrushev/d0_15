@@ -213,6 +213,9 @@ digraph D0Theory {
   "D0-ALPHA-ZETA-RESIDUE-001" [label="D0-ALPHA-ZETA-RESIDUE-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-Z2-SPINOR-COVER-001" [label="D0-Z2-SPINOR-COVER-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-TIME-MODULAR-FLOW-001" [label="D0-TIME-MODULAR-FLOW-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-CARRIER-FULL-FORCING-001" [label="D0-CARRIER-FULL-FORCING-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-SYMPLECTIC-GLEASON-001" [label="D0-SYMPLECTIC-GLEASON-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-CLASS5-ALIASING-001" [label="D0-CLASS5-ALIASING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1363,4 +1366,22 @@ digraph D0Theory {
   "D0-TIME-MODULAR-FLOW-001" -> "cert:vp_quasicrystal_time_sturmian.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-TIME-MODULAR-FLOW-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Synthesis.CarrierForcing" [label="D0.Synthesis.CarrierForcing", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CARRIER-FULL-FORCING-001" -> "module:D0.Synthesis.CarrierForcing" [label="module"];
+  "cert:vp_carrier_full_forcing.py" [label="vp_carrier_full_forcing.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CARRIER-FULL-FORCING-001" -> "cert:vp_carrier_full_forcing.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CARRIER-FULL-FORCING-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Synthesis.CarrierForcing" [label="D0.Synthesis.CarrierForcing", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-SYMPLECTIC-GLEASON-001" -> "module:D0.Synthesis.CarrierForcing" [label="module"];
+  "cert:vp_symplectic_gleason_uniqueness.py" [label="vp_symplectic_gleason_uniqueness.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-SYMPLECTIC-GLEASON-001" -> "cert:vp_symplectic_gleason_uniqueness.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-SYMPLECTIC-GLEASON-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CLASS5-ALIASING-001" -> "module:" [label="module"];
+  "cert:vp_class5_aliasing_cabibbo.py" [label="vp_class5_aliasing_cabibbo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CLASS5-ALIASING-001" -> "cert:vp_class5_aliasing_cabibbo.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CLASS5-ALIASING-001" -> "domain:formal_core" [label="domain"];
 }

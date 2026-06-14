@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 69
-- `CORE-FORMALIZED`: 90
+- `CERT-CLOSED`: 70
+- `CORE-FORMALIZED`: 92
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 10
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 78
-- `core`: 91
+- `certificate`: 79
+- `core`: 93
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 16
 - `external_background`: 1
-- `formal_core`: 125
+- `formal_core`: 128
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -779,6 +779,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
+### D0-CLASS5-ALIASING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_class5_aliasing_cabibbo.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill.
+
 ### D0-CVFT-F4
 
 - type: `certificate`
@@ -1507,6 +1520,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: V9 exact cardinality.
 
+### D0-CARRIER-FULL-FORCING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/03`
+- module: `D0.Synthesis.CarrierForcing`
+- theorem: `carrier_full_forcing`
+- cert: `vp_carrier_full_forcing.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Root C synthesis] Finite forcing of the carrier. Cert vp_carrier_full_forcing.py: roles ABCD=Dyad×Dyad=Klein four (|.|=4); ORBITAL BLOCK-CONSTANCY proved by exhaustion on the (2,2,2) faithful model (all 64 S_a×S_b×S_c-invariant symmetric loopless relations are block-constant); UNIQUE M1-admissible block pattern (loopless+complete) -> complete tripartite K(9,11,13), |V|=33 |E|=359; tower-stop finite: 3 forced zones->3 rungs [9,11,13], |Tr(T^2)|=3, Lucas impedance I_n=L_n/9n cross-check. Lean L5 CORE-FORMALIZED via D0.Synthesis.CarrierForcing (carrier_full_forcing): roles_card=4, admissible_unique (native_decide over 512 patterns), edge_count_359, address_ladder, Tr(T^2)=3. HONEST: block-constancy by exhaustion on faithful model (general sizes inherit by same transitivity); full M1 NO-EXTENSION theorem stays theorem-target; impedance is convergent cross-check (GOLDEN CHK 61.2), not a closed no-go. Closes BOOK_05 05.6 soft-joint-1 (role=orbit).
+
 ### D0-CKM-NONTRIVIAL-FLAVOUR-ALGEBRA-001
 
 - type: `core`
@@ -1974,6 +2000,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: SRC contact is a finite shell-projector overlap readout through an angular-momentum shell-contact selector.
+
+### D0-SYMPLECTIC-GLEASON-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Synthesis.CarrierForcing`
+- theorem: `symplectic_form_unique`
+- cert: `vp_symplectic_gleason_uniqueness.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Root C T-C.4] Closes the UNIQUENESS leg of the Gleason-2D loophole. Cert vp_symplectic_gleason_uniqueness.py: quarter-turn J(x,y)=(-y,x) in SL(2,Z) (det=1, J^2=-I); x^2+y^2 is J-invariant; ANY J-invariant quadratic a x^2+b xy+c y^2 forces a=c, b=0 => unique up to scale. Lean L5 CORE-FORMALIZED via symplectic_form_unique (a=c and b=0 from h 1 0/h 1 1). EXISTENCE (x^2+y^2 is the phase-blind response) owned by D0-BORN-QUADRATIC-ORIGIN-001 (proved). HONEST: categorical Ostrik/Ising uniqueness (tau⊗tau=1⊕tau unique 2-object fusion) needs fusion-category machinery not in kernel -> theorem-target.
 
 ### D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001
 

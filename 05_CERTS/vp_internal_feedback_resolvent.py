@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -36,7 +35,6 @@ def main() -> int:
         "retained_dim": 3,
         "truncated_neumann_depth": 15,
         "negative_controls": ["FAIL_EXTERNAL_MIRROR_MODEL"],
-        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     (PASSPORT / "internal_feedback_resolvent_summary.json").write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8"

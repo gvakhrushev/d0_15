@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -25,7 +24,6 @@ def main() -> int:
             "PASS_BARYON_S3_STABILIZED_FEEDBACK_MODES",
         ],
         "negative_controls": ["FAIL_MATTER_AS_ARBITRARY_EIGENVALUE"],
-        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     PASSPORT.mkdir(parents=True, exist_ok=True)
     (PASSPORT / "terminal_feedback_modes_summary.json").write_text(

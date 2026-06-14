@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -61,7 +60,6 @@ def main() -> int:
         "required_tokens": REQUIRED,
         "missing": missing,
         "scripts": outputs,
-        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     (PASSPORT / "full_wave_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(status)

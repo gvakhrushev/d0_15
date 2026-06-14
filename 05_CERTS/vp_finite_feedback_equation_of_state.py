@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -31,7 +30,6 @@ def main() -> int:
         "effective_temperature": t_eff,
         "response_index": response_index,
         "negative_controls": ["FAIL_IDEAL_GAS_CORE_POSTULATE"],
-        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
     (PASSPORT / "finite_feedback_equation_of_state_summary.json").write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8"

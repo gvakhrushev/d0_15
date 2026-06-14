@@ -8,6 +8,5 @@
   ],
   "negative_controls": [
     "FAIL_MATTER_AS_ARBITRARY_EIGENVALUE"
-  ],
-  "timestamp": "2026-06-13T21:33:56.504064+00:00"
+  ]
 }
