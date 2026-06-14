@@ -124,3 +124,65 @@ fixed.
 - S_DE cubic-vs-quadratic fork → DESI DR3 decides (discriminator computed).
 - PMNS angle-formula forcing (passport; formulas not yet M1-derived).
 - Topological conjugacy (Mathlib-blocked); rank-3↔cone-space identification (named gap).
+
+---
+
+# D0 — Iteration 6 report: forcing-owner integration (Frobenius-class theorems)
+
+Owner supplied a catalog of 9 classical **uniqueness/classification** theorems as candidate
+forcing-owners for D0 links. The discipline: *raise by forcing OR name the gap's owner;
+enumeration as an argument is banned* (§05.8.R). Reconnaissance (3 Explore agents) found most
+links already owned, so the work split three honest ways with **zero enumeration-demotions**.
+
+**Headline.** strength **3031 → 3113 (+82)**; CORE-FORMALIZED **107 → 110 (+3)**; external
+owners machine-tracked (ledger ASSUMP) **7 → 11 (+4)**; integrity demotions **0**; hygiene
+**100/100**; firewall violations **0**; all registry/cert guards green. Each of the 5 new Lean
+modules compiles **sorry-free** (individual `lake build` + dependency closures). 5 commits
+(`bffa7b8`, `4a4aaf5`, `0bdb1eb`, `86cdb76`, `62dc73a`).
+
+**Build-hygiene finding (pre-existing, NOT from this work).** The first full `lake build D0.All`
+of the session is RED: **17 modules fail to compile** — a stale `Mathlib.Data.Rat.Basic` import
+cascade, several malformed `theorem _ : Prop := <prop>` (should be `def`), and missing
+identifiers. CI never runs `lake build` (it scores off declared `lean_status` + module
+existence), so this was masked. **16/17 are orphan modules** (no claim → registry/firewall/score
+unaffected); the one exception is `D0.NoGo.StressTestSuite` (`D0-NO-GO-STRESS-SUITE-001`,
+declared `LEAN_PROVED`) which references non-existent `D0.Matter.*` symbols — a real
+`LEAN_PROVED`-but-uncompilable discrepancy. Spun off as a dedicated Lean build-hygiene task; the
+forcing-owner deliverables are unaffected (every new module + its closure compiles).
+
+## The delta the ТЗ asked for: closed-by-forcing vs named-owner vs honestly-rejected
+
+**Closed by FORCING — decidable shadows (CERT + Lean, CORE):**
+| claim | what is now forced (exact) | external owner (named) |
+|---|---|---|
+| `D0-ICOSIAN-E8-GRAM-001` | E8 Gram even (diag 2) + unimodular (det=1), rank 8=2·4 | Mordell 1938 (`ASSUMP-MORDELL-E8`) |
+| `D0-JONES-INDEX-PHI-001` | φ²=4cos²(π/5)=(3+√5)/2 = Fibonacci quantum dim (n=5 slot) | Jones 1983 (`ASSUMP-JONES-INDEX`) |
+| `D0-DIM8-NETWORK-001` | 8-network skeleton: 8=2·4, tower 8\|24\|120, E8, D4 triality | 6 owners (Hurwitz…triality) |
+
+**Named the OWNER — BRIDGE owner-edges (≤11 pts, honesty not points):**
+- `D0-CONNES-RECONSTRUCTION-OWNER-001` — "metric = spectrum of the Dirac operator" (Connes
+  reconstruction); routes the rank-3=causal-cone / Connes-distance NAMED GAP (§07.51.3).
+- `D0-TIME-MODULAR-FLOW-OWNER-001` — "time = modular flow" (Tomita–Takesaki + Connes); deepens
+  the Pisot time layer (§06.30a), M1-aligned (time fixed by the (algebra,state) pair).
+- Second channels (cited prose): Busch 2003 (Born on dim-2 where Gleason fails) + Masanes–Müller
+  2019 (d=3); Baer 1933 (Q8×B×D structure).
+
+**Honestly REJECTED — anti-numerology calibration (§00.9 + §05.8.R):** Leech Λ₂₄↔K=30 (24≠30);
+triality⇒3 generations (3 = #D4 reps, not families); C_max=3/8 not owned by Weinberg; Pisot
+≥3-letter conjecture OPEN; Frobenius integrability is a scaffold. Also reconciled the firewall's
+own (710,113) numerology-failure example with the EW-window forcing via grammar-priority.
+
+## Honesty boundaries held
+- Every external theorem is a NAMED bridge owner with a Lean assumption object + ledger entry —
+  never a hidden assumption, never promoted to CORE.
+- Each shadow proves only its decidable part; the genuinely-frontier remainder (Mordell genus
+  uniqueness, Jones quantization obstruction, Connes reconstruction, Tomita modular uniqueness)
+  is named EXTERNAL, not faked.
+- The "8 forces 3 generations" and "C_max=3/8 from Weinberg" temptations were refused in writing.
+
+## Carried-forward / not done
+- Optional solenoid-Dirac integer-trace shadow for the Connes edge (deferred; the owner-edge
+  stands without it).
+- rank-3=causal-cone identification stays a named gap (now with a named external owner).
+- φ-network ↔ 8-network meet at the icosians; the deeper "φ and 8 are one object" remains a
+  synthesis statement, not a single Lean theorem.

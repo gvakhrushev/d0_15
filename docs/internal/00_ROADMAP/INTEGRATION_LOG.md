@@ -564,3 +564,92 @@ finite shadow that promotes honestly, with the genuinely-frontier remainder name
   Bellissard IDS=K0-trace stays EXTERNAL-GAP. (Flagged: old D0-KTHEORY-001 float cert fabricates IDS.)
 strength 2963 -> 3003 (74.1%); CORE 105 -> ~108; all guards green. Pattern captured in the
 verified-closure-protocol skill.
+
+### Audit-as-forcing (predecessor batch, commit 8e0183f)
+
+Reframed four audit critiques from "lower-by-enumeration" to forcing (M1: absence of
+alternatives is NOT an argument). D0-EW-WINDOW-FORCING-001 (710/113 grammar + 2pi CF-minimality),
+D0-HIGGS-CUBE-DIAGONAL-001 (sqrt2 forced by orthogonal cell + named delta_loop), D0-COMPACTNESS-
+DEF-FORCING-001 (C=M/R_initial forced by causal posing), D0-PHI99-DEPTH-FORCING-001 (99=V9*V11).
+Installed the review-side firewall BOOK_05 §05.8.R ("absence of alternatives is not an argument;
+argument = forcing-uniqueness OR named-gap"). strength ~3003 -> ~3031, zero enumeration-demotions.
+
+### Iteration 6 — forcing-owner integration (Frobenius-class external theorems)
+
+Owner supplied a catalog of 9 classical uniqueness/classification theorems as candidate
+forcing-owners. Reconnaissance (3 Explore agents) found most D0 links ALREADY owned
+(Q8/Dedekind, phason/Goldstone, spin-2/Weinberg, phi/Hurwitz, icosian->E8/Mordell in prose,
+time/Pisot), so the integration split three honest ways, with ZERO enumeration-demotions:
+
+**(a) Closed by forcing — decidable shadows (CERT + Lean, CORE-FORMALIZED):**
+- `D0-ICOSIAN-E8-GRAM-001` — the E8 Gram is even (diag 2) + unimodular (det=1, `native_decide`),
+  rank 8=2*4; realizes the §02.18.2 point-4 "Target LEAN_PROVED" spec. Lean
+  `D0.Claims.IcosianE8GramFinite`; control A8 det=9.
+- `D0-JONES-INDEX-PHI-001` — `4cos^2(pi/5)=(3+sqrt5)/2=phi^2` at the n=5 Jones-index slot =
+  Fibonacci quantum dimension; closes the bare "why phi as a quantum dimension". 3rd phi-channel
+  (§01.21.3). Lean `D0.Claims.JonesIndexPhi` (algebraic core; trig series in cert).
+- `D0-DIM8-NETWORK-001` — the dimension-8 forcing-network skeleton (8=2*4; tower 8|24|120 idx
+  3,5,15; E8 even-unimodular; D4 triality 3 legs, |S3|=6); the research's headline. §02.18.3.
+  Lean `D0.Synthesis.DimensionEightNetwork`.
+
+**(b) Named the owner — BRIDGE-ASSUMPTIONS-EXPLICIT owner-edges (<=11, honesty not points) +
+4 ledger ASSUMP-* + 4 Bridge Lean files:**
+- `ASSUMP-JONES-INDEX`, `ASSUMP-MORDELL-E8` — own the obstruction/uniqueness backing the two
+  CORE shadows (Hurwitz precedent: ledger names the full external theorem, claim stays CORE).
+- `D0-CONNES-RECONSTRUCTION-OWNER-001` (`ASSUMP-CONNES-RECONSTRUCTION`) — "metric = spectrum of
+  the Dirac operator"; routes the rank-3=causal-cone / Connes-distance NAMED GAP (§07.51.3).
+- `D0-TIME-MODULAR-FLOW-OWNER-001` (`ASSUMP-TOMITA-TAKESAKI`) — "time = modular flow" (thermal
+  time); deepens the Pisot time layer (§06.30a). Both M1-aligned; Lean conditional theorems.
+- Second channels (cited prose): Busch 2003 (Born quadraticity on dim-2 where Gleason fails) +
+  Masanes-Mueller 2019 (d=3) in §02.28; Baer 1933 (Q8 x B x D structure) in §02.18.
+
+**(c) Honestly rejected — anti-numerology calibration (BOOK_00 §00.9 + §05.8.R), zero
+enumeration-demotions:** Leech Lambda24<->K=30 (24!=30, no 24-dim object); triality => 3
+generations (3 = #D4 reps); C_max=3/8 not owned by Weinberg; Pisot >=3-letter conjecture OPEN;
+Frobenius integrability is a scaffold. Reconciled the firewall's own (710,113) numerology-failure
+example with D0-EW-WINDOW-FORCING-001 via the grammar-priority discriminant.
+
+### Iteration 6 metrics (vs audit-as-forcing end)
+| metric | audit end | Iter6 now | delta |
+|---|---|---|---|
+| CORE-FORMALIZED | 107 | 110 | +3 (E8, Jones, dim8-network) |
+| BRIDGE-ASSUMPTIONS-EXPLICIT | 7 | 9 | +2 (Connes, Tomita-Takesaki) |
+| external owners (ledger ASSUMP) | 7 | 11 | +4 |
+| strength | 3031 | 3113 | +82 |
+| integrity demotions | 0 | 0 | ZERO enumeration-demotions |
+| hygiene | 100 | 100 | — |
+
+5 new Lean modules (`IcosianE8GramFinite`, `JonesIndexPhi`, `ConnesReconstructionBridge`,
+`TomitaTakesakiBridge`, `DimensionEightNetwork`) each build **sorry-free** (verified by
+individual `lake build` + their full dependency closures). 3 new certs (icosian_e8_gram,
+jones_index_phi, dim8_network) PASS + can-FAIL. All registry/cert guards green (validate_csv,
+check_firewall 235 rows, run_registered_certs, check_cert_can_fail, books publication-clean).
+Closure delta strictly positive; every promotion backed by a gap-free Lean theorem; every
+external theorem a NAMED bridge owner, not a hidden assumption; refusals recorded.
+
+### Iteration 6 — BUILD-HYGIENE FINDING (pre-existing, surfaced by the first full `lake build D0.All`)
+
+This session's full aggregate build (`lake build D0.All`) is **RED**, and the cause is entirely
+pre-existing — NONE of it is introduced by the Iteration-6 work (all 5 new modules compile). The
+CI never runs `lake build` (scoring keys off declared `lean_status` + on-disk module existence),
+so this was masked. **17 modules fail to compile** (root causes):
+- *Stale Mathlib import:* `D0.Gravity.CriticalCollapseDSS` imports `Mathlib.Data.Rat.Basic`
+  (renamed in the current pin); cascades to `EchoCapacityHorizon`, `FiniteHorizonCapacity`,
+  `FiniteHolographicEntropy`.
+- *Malformed `theorem _ : Prop := <prop-term>`* (should be `def`): `FiniteCochainNoAxion`,
+  `NonAbelianSeamObstructionGap`, `VacuumFeedbackEquationOfState`, `TickS3BaryonAsymmetry`,
+  `HodgeMatterGravityArchiveIndex`.
+- *Unknown identifiers / missing defs:* `FiniteMinCutEntropy` (`minCutValue`),
+  `Book04OperatorBoundary` / `HiggsScalarProjectorDecision` (`ConstructiveScalarProjectorClosure`),
+  `FiniteA2EinsteinResponse` (missing `FiniteWeakFieldQuotient` / `GradedBianchiClosure`),
+  `TerminalAlphabetABCD`.
+- *Registered-claim impact:* **16 of 17 are orphan modules** (no claim references them, so
+  registry/firewall/score are unaffected). The **one exception is `D0.NoGo.StressTestSuite`**,
+  the module of claim `D0-NO-GO-STRESS-SUITE-001` (declared `LEAN_PROVED` / `NO_GO_PROVED`):
+  it references non-existent `D0.Matter.*` identifiers and does NOT compile — a genuine
+  `LEAN_PROVED`-but-uncompilable discrepancy the missing CI build hid.
+
+Disposition: this is a dedicated **Lean build-hygiene** follow-up (fix/quarantine the 17 modules,
+correct or demote `D0-NO-GO-STRESS-SUITE-001`, and add a `lake build D0.All` CI guard so it cannot
+silently regress), spun off as its own task — NOT folded into the forcing-owner iteration. The
+Iteration-6 deliverables stand: each new module and its dependency closure compiles cleanly.
