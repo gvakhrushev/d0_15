@@ -271,6 +271,7 @@ import D0.Probability.SubgaussianArchive
 import D0.RG.OneLoopStructure
 import D0.RG.PhiDifference
 import D0.Response
+import D0.Spectral.ZetaResidueAlpha
 import D0.Spectrum.BranchDefectProjectiveControls
 import D0.Spectrum.BranchDefectProjectiveGeneration
 import D0.Spectrum.GenerationRays
@@ -278,6 +279,7 @@ import D0.Spectrum.GenerationSpectralRays
 import D0.Spectrum.GenerationTensorExactness
 import D0.Spectrum.Pi0BranchDefectControls
 import D0.Spectrum.Pi0BranchDefectGeneration
+import D0.Synthesis.Z2SpinorCover
 import D0.TheoremLedger.ActiveClosureIndex
 import D0.TheoremLedger.ClaimMap
 import D0.TheoremLedger.ClosedVacuumFeedbackIndex

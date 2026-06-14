@@ -2063,8 +2063,9 @@ One and the same order-two group surfaces as:
 1. The Galois conjugation `Gal(ℚ(√5)/ℚ)`: the swap φ↔ψ (owned by BOOK_01 §01.20;
    ABCD = the Galois data — A,B are the conjugation-invariant elementary symmetric
    functions, C,D the conjugate pair).
-2. Lucas parity / orientation class of the leaf: `ε_n = (−1)^{n+1} = −ψⁿ`
-   [^b02-60], owned here as `trace_T_pow_eq_signed_lucas`.
+2. Lucas parity / orientation class of the leaf: the address defect
+   `ε_n = φⁿ − L_n = −ψⁿ` (sign `(−1)^{n+1}`) [^b02-60], owned here as
+   `trace_T_pow_eq_signed_lucas`.
 3. The center = commutator = Frattini subgroup of Q₈, all equal to `{±1}`
    (Q₈≅Ω₈ minimality owned by BOOK_01).
 4. The leaf of the spinor double cover — the 4π-periodicity sheet.
@@ -2075,9 +2076,9 @@ One and the same order-two group surfaces as:
 
 **Concentrator identity (the *why*).** The seven are forced to be one group, not seven,
 by the selector arithmetic. The Lucas approximation error is *literally* the Galois
-conjugate:
+conjugate (from the closed form `L_n = φⁿ + ψⁿ`):
 
-  ε_n = L_n − φⁿ = −ψⁿ,
+  ε_n = φⁿ − L_n = −ψⁿ,
 
 so its sign is exactly the orientation class of the leaf. Stepping by +2 (even powers)
 fixes the sign of the conjugate, i.e. selects one Galois sector; the Lucas selector of
@@ -2094,8 +2095,13 @@ moments, and the φ cut-and-project support are governed by *one* ℤ₂, so the
 symmetric under φ↔ψ) gets a strict name: `Gal(ℚ(√5)/ℚ) ≅ ℤ₂`. Spontaneous breaking is
 re-read accordingly — nothing breaks; the canonical cut was never the half-cut, and the
 δ₀ offset is forced, not tuned by a potential. [Status: SYNTHESIS — each face is owned
-and proved by the cited owner; this node only certifies they are the same group, an
-identification carried by the finite certificate.]
+and proved by the cited owner; the identification is now machine-checked. A finite
+certificate and a synthesis module prove four of the seven faces (Galois conjugation,
+the Q₈ center, the Lucas parity, and the toral determinant) are the *same* order-two
+element, together with the two joints: the Lucas-trace sign equals the orientation
+determinant, which equals the Galois norm `φ·ψ = −1`; and the address step `+2` is the
+identity of the cover (it stays on one sheet), while `+1` flips the sheet and is therefore
+banned. [^b02-59]]
 ## 02.35 Preserved theorem-spine history (formerly 02.101.*)
 
 The 02.101.* rows are preserved theorem-spine history.
@@ -2365,5 +2371,5 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b02-57]: forcing: GOLDEN THE 30.1.1
 [^b02-58]: forcing: GOLDEN BRIDGE 30.B
 [^b02-59]: forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,
-concentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B
+concentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B — now closed: certificate vp_z2_spinor_cover.py and Lean D0.Synthesis.Z2SpinorCover (z2_spinor_cover) prove four of the seven incarnations are one Z2, with the +2 joint (det(T^{n+2})=det(T^n)) and the +1 control; claim D0-Z2-SPINOR-COVER-001.
 [^b02-60]: forcing: GOLDEN THE 3.11.B

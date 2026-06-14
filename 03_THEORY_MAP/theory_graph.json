@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 210,
+    "claims": 212,
     "release_status": {
-      "CORE-FORMALIZED": 89,
+      "CORE-FORMALIZED": 90,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 68,
+      "CERT-CLOSED": 69,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -19,22 +19,22 @@
       "PROOF-TARGET": 12
     },
     "lean_status": {
-      "LEAN_PROVED": 109,
+      "LEAN_PROVED": 110,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 78,
+      "PYTHON_CERTIFIED": 79,
       "DEPRECATED": 2,
       "OPEN": 13
     },
     "claim_type": {
-      "core": 90,
+      "core": 91,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 77,
+      "certificate": 78,
       "deprecated": 2,
       "frontier": 12
     },
     "domain": {
-      "formal_core": 123,
+      "formal_core": 125,
       "rg": 3,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -6865,6 +6865,75 @@
       "label": "vp_zeta_residue_alpha.py",
       "path": "05_CERTS/vp_zeta_residue_alpha.py",
       "exists": true
+    },
+    {
+      "id": "D0-Z2-SPINOR-COVER-001",
+      "kind": "claim",
+      "claim_id": "D0-Z2-SPINOR-COVER-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02/03",
+      "section": "one Z2 seven incarnations (02.34) + address +2 (03.23.6)",
+      "lean_module": "D0.Synthesis.Z2SpinorCover",
+      "lean_theorem": "z2_spinor_cover",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_z2_spinor_cover.py",
+      "python_cert": [
+        "vp_z2_spinor_cover.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Root B synthesis] One Z2=Z(Q8), seven incarnations unified machine-checked. Cert vp_z2_spinor_cover.py (exact Z[sqrt5]+Q8 table): [Q8,Q8]=Z(Q8)=Phi(Q8)={+-1} |Z|=2 (#3); Galois phi+psi=1 phi*psi=-1 g(x)=1-x involution (#1); Lucas L_n=phi^n+psi^n eps_n=phi^n-L_n=-psi^n chi(n)=(-1)^n (#2); det(T^n)=(-1)^n=chi(n) (#5,#6); 2-sheet+rank-doubling (#4,#7). JOINT A: signedLucasTrace n=det(T^n)*L_n and det T=-1=phi*psi (parity=det=Galois-norm). JOINT B: det(T^{n+2})=det(T^n) (+2 fixes sheet), det(T^{n+1})=-det(T^n) (+1 flips, banned by M1). Lean L5 CORE-FORMALIZED via D0.Synthesis.Z2SpinorCover (z2_spinor_cover), >=4/7 projections sorry-free. HONEST: cert verifies cover ALGEBRA; the M1-uniqueness of orientation=Gal(Q(sqrt5)/Q) stays GOLDEN forcing prose. Note: BOOK_02 02.34 prose sign typo eps_n=L_n-phi^n corrected to phi^n-L_n=-psi^n (matches 03.23.6).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Synthesis/Z2SpinorCover.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Synthesis.Z2SpinorCover",
+      "kind": "lean_module",
+      "label": "D0.Synthesis.Z2SpinorCover",
+      "path": "09_LEAN_FORMALIZATION/D0/Synthesis/Z2SpinorCover.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_z2_spinor_cover.py",
+      "kind": "python_cert",
+      "label": "vp_z2_spinor_cover.py",
+      "path": "05_CERTS/vp_z2_spinor_cover.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TIME-MODULAR-FLOW-001",
+      "kind": "claim",
+      "claim_id": "D0-TIME-MODULAR-FLOW-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "quasicrystal = symbolic time (01.19a)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_quasicrystal_time_sturmian.py",
+      "python_cert": [
+        "vp_quasicrystal_time_sturmian.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Root B synthesis bonus] Quasicrystal carrier = symbolic dynamics of the golden foliation of the time torus. Cert vp_quasicrystal_time_sturmian.py UPGRADES the prose-only 40-symbol check to EXACT executable: cut-and-project word slope phi^-2 = Fibonacci substitution word a->ab,b->a to N=4000 (exact isqrt floors floor(k phi)=(k+isqrt(5k^2))//2), rare-letter freq=phi^-2, aperiodic, rational-slope negative control. Arrow=Pisot |psi|=phi^-1<1 reuses D0-TIME-2D-PISOT-001 (proved). HONEST: proves EXACT SYMBOLIC coincidence only; full topological conjugacy (phi^-2 rotation = foliation return map; Morse-Hedlund/Vershik) needs ergodic machinery not in Mathlib -> theorem-target; arrow interpretation rests on Adler-Weiss external citation.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_quasicrystal_time_sturmian.py",
+      "kind": "python_cert",
+      "label": "vp_quasicrystal_time_sturmian.py",
+      "path": "05_CERTS/vp_quasicrystal_time_sturmian.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -9711,6 +9780,36 @@
     {
       "source": "D0-ALPHA-ZETA-RESIDUE-001",
       "target": "cert:vp_zeta_residue_alpha.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-Z2-SPINOR-COVER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-Z2-SPINOR-COVER-001",
+      "target": "module:D0.Synthesis.Z2SpinorCover",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-Z2-SPINOR-COVER-001",
+      "target": "cert:vp_z2_spinor_cover.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TIME-MODULAR-FLOW-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TIME-MODULAR-FLOW-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TIME-MODULAR-FLOW-001",
+      "target": "cert:vp_quasicrystal_time_sturmian.py",
       "kind": "certified_by"
     }
   ]

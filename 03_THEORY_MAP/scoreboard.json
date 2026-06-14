@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 2672,
-    "track_fair_max": 3787,
-    "pct_strength": 70.6,
-    "core_realized": 2280,
-    "core_potential": 3380,
-    "core_headroom": 1100,
-    "n_claims": 210,
-    "n_active": 209,
+    "realized": 2699,
+    "track_fair_max": 3827,
+    "pct_strength": 70.5,
+    "core_realized": 2307,
+    "core_potential": 3420,
+    "core_headroom": 1113,
+    "n_claims": 212,
+    "n_active": 211,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 123,
-      "realized": 1710,
-      "max": 2360,
-      "core_headroom": 645
+      "n": 125,
+      "realized": 1737,
+      "max": 2400,
+      "core_headroom": 658
     },
     "rg": {
       "n": 3,
@@ -112,10 +112,10 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 3,
-      "realized": 60,
-      "max": 60,
-      "core_headroom": 0
+      "n": 4,
+      "realized": 67,
+      "max": 80,
+      "core_headroom": 13
     },
     "BOOK_02": {
       "n": 4,
@@ -190,9 +190,9 @@
       "core_headroom": 0
     },
     "BOOK_02/03": {
-      "n": 1,
-      "realized": 20,
-      "max": 20,
+      "n": 2,
+      "realized": 40,
+      "max": 40,
       "core_headroom": 0
     },
     "BOOK_03/06/07/08": {
@@ -1036,6 +1036,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-TIME-MODULAR-FLOW-001",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-EDGE-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1716,6 +1726,13 @@
     {
       "claim_id": "D0-COSMO-003",
       "domain": "cosmology",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-TIME-MODULAR-FLOW-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -4667,6 +4684,34 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_03",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-Z2-SPINOR-COVER-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02/03",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TIME-MODULAR-FLOW-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
     }

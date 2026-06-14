@@ -57,6 +57,6 @@
   "b02-56": "forcing: GOLDEN DEF 30.0.2, DEF 30.0.3",
   "b02-57": "forcing: GOLDEN THE 30.1.1",
   "b02-58": "forcing: GOLDEN BRIDGE 30.B",
-  "b02-59": "forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,\nconcentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B",
+  "b02-59": "forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,\nconcentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B — now closed: certificate vp_z2_spinor_cover.py and Lean D0.Synthesis.Z2SpinorCover (z2_spinor_cover) prove four of the seven incarnations are one Z2, with the +2 joint (det(T^{n+2})=det(T^n)) and the +1 control; claim D0-Z2-SPINOR-COVER-001.",
   "b02-60": "forcing: GOLDEN THE 3.11.B"
 }

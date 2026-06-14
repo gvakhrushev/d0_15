@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 68
-- `CORE-FORMALIZED`: 89
+- `CERT-CLOSED`: 69
+- `CORE-FORMALIZED`: 90
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 10
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 77
-- `core`: 90
+- `certificate`: 78
+- `core`: 91
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 16
 - `external_background`: 1
-- `formal_core`: 123
+- `formal_core`: 125
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1260,6 +1260,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] TT projector on full 10-dim Sym(4) basis; 2 polarizations.
 
+### D0-TIME-MODULAR-FLOW-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: ``
+- theorem: `none`
+- cert: `vp_quasicrystal_time_sturmian.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Root B synthesis bonus] Quasicrystal carrier = symbolic dynamics of the golden foliation of the time torus. Cert vp_quasicrystal_time_sturmian.py UPGRADES the prose-only 40-symbol check to EXACT executable: cut-and-project word slope phi^-2 = Fibonacci substitution word a->ab,b->a to N=4000 (exact isqrt floors floor(k phi)=(k+isqrt(5k^2))//2), rare-letter freq=phi^-2, aperiodic, rational-slope negative control. Arrow=Pisot |psi|=phi^-1<1 reuses D0-TIME-2D-PISOT-001 (proved). HONEST: proves EXACT SYMBOLIC coincidence only; full topological conjugacy (phi^-2 rotation = foliation return map; Morse-Hedlund/Vershik) needs ergodic machinery not in Mathlib -> theorem-target; arrow interpretation rests on Adler-Weiss external citation.
+
 ### D0-ABCD-001
 
 - type: `core`
@@ -2052,6 +2065,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L5 CORE-FORMALIZED via D0.Claims.Xi5TorusDefect (xi5_torus_defect, native_decide; reuses D0.Dynamics.ToralAutomorphism trace_T_pow_eq_signed_lucas). alpha-row stays CHK.
+
+### D0-Z2-SPINOR-COVER-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02/03`
+- module: `D0.Synthesis.Z2SpinorCover`
+- theorem: `z2_spinor_cover`
+- cert: `vp_z2_spinor_cover.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Root B synthesis] One Z2=Z(Q8), seven incarnations unified machine-checked. Cert vp_z2_spinor_cover.py (exact Z[sqrt5]+Q8 table): [Q8,Q8]=Z(Q8)=Phi(Q8)={+-1} |Z|=2 (#3); Galois phi+psi=1 phi*psi=-1 g(x)=1-x involution (#1); Lucas L_n=phi^n+psi^n eps_n=phi^n-L_n=-psi^n chi(n)=(-1)^n (#2); det(T^n)=(-1)^n=chi(n) (#5,#6); 2-sheet+rank-doubling (#4,#7). JOINT A: signedLucasTrace n=det(T^n)*L_n and det T=-1=phi*psi (parity=det=Galois-norm). JOINT B: det(T^{n+2})=det(T^n) (+2 fixes sheet), det(T^{n+1})=-det(T^n) (+1 flips, banned by M1). Lean L5 CORE-FORMALIZED via D0.Synthesis.Z2SpinorCover (z2_spinor_cover), >=4/7 projections sorry-free. HONEST: cert verifies cover ALGEBRA; the M1-uniqueness of orientation=Gal(Q(sqrt5)/Q) stays GOLDEN forcing prose. Note: BOOK_02 02.34 prose sign typo eps_n=L_n-phi^n corrected to phi^n-L_n=-psi^n (matches 03.23.6).
 
 ### D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001
 
