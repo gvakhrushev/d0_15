@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 66
+- `CERT-CLOSED`: 67
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 19
-- `certificate`: 80
+- `certificate`: 81
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -35,7 +35,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
-- `rg`: 4
+- `rg`: 5
 - `si_calibration`: 3
 - `smooth_geometry`: 7
 - `spectral_action`: 5
@@ -3000,6 +3000,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
 - notes: [Audit->FORCING] sqrt2 is a GEOMETRY THEOREM (forced): orthogonal/cubic-isospin cell, Z=edge, H=in-plane diagonal => diagonal/edge=sqrt(1+1)=sqrt2 exactly (body-diagonal sqrt3 is the negative control). The measured ~2.9% deficit (m_H/m_Z=1.3736 vs sqrt2=1.41421) is delta_loop, a NAMED running list (QED/QCD/EW from m_Z to m_H), a BRIDGE needing external RG to evaluate exactly. HONEST: sqrt2 forced & kept regardless; delta_loop is a NAMED-GAP (consistent at 3% pending RG), NOT a free bag and NOT a precise prediction. cert vp_higgs_cube_forcing.py.
+
+### D0-GENERATIVE-DYNAMICS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `rg`
+- book: `BOOK_06`
+- module: `D0.Claims.GluingAnomalyTime`
+- theorem: `gluing_anomaly_time`
+- cert: `vp_feshbach_schur_dynamics.py;vp_gluing_anomaly_time.py;vp_loop_floor_epsilon.py;vp_rg_forgetting.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter8 closure, researcher doc 1] Closes the hole 'is D0 a static classifier or a generator of dynamics?' -> generator, via Feshbach-Schur. (A.1) vp_feshbach_schur_dynamics.py: effective dynamics W_eff(z)=A-B(D-zI)^-1 C on the active rank-3 block (integrate out the 30-kernel archive); exact Schur determinant identity det(M-zI)=det(D-zI)det(W_eff-zI) => resonances=poles of W_eff; Feshbach series index k = archive excursions = algorithmic time. (A.2) vp_gluing_anomaly_time.py + Lean D0.Claims.GluingAnomalyTime (gluing_anomaly_time, native_decide): Galerkin BᵀL_{n+1}B=L_n holds (Laplacian preserved under restriction) yet C_n=L_{n+1}B-BL_n != 0 (seam does NOT intertwine) -- forced by M1 (no external eigenbasis catalogue), so the seam cannot close => time; scalar gluing anomaly = Delta_alpha (D0-DELTA-ALPHA-EXACT-001). (A.3) vp_loop_floor_epsilon.py: loop floor eps^2=phi^-16=(2207-987 sqrt5)/2~4.531e-4, branch weight phi^-2k truncates at exponent 16 => finite memory cycle, no UV divergence; NAMED GAP eps^2 != Delta_alpha (4.53e-4 vs 3.71e-4) do NOT identify. (A.4) vp_rg_forgetting.py: RG = typed forgetting (develops 06.20); pi conserves weight p+p^2=1, residual bounded by delta_0, beta=c/log(phi) Callan-Symanzik form. HONEST STATUS LEM: mechanism written; 'continuum QFT = thermodynamic envelope of the D0 automaton' needs an explicit S-matrix simulation (D0.Bridge.ColliderRuntimeTypedBridge) for THE -- not promoted past LEM.
 
 ### D0-ARCHIVE-LAPLACIAN-RG
 

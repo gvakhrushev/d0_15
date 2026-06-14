@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 3179,
-    "track_fair_max": 4308,
-    "pct_strength": 73.8,
-    "core_realized": 2690,
-    "core_potential": 3800,
-    "core_headroom": 1110,
-    "n_claims": 242,
-    "n_active": 241,
+    "realized": 3191,
+    "track_fair_max": 4328,
+    "pct_strength": 73.7,
+    "core_realized": 2702,
+    "core_potential": 3820,
+    "core_headroom": 1118,
+    "n_claims": 243,
+    "n_active": 242,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -38,10 +38,10 @@
       "core_headroom": 632
     },
     "rg": {
-      "n": 4,
-      "realized": 49,
-      "max": 53,
-      "core_headroom": 0
+      "n": 5,
+      "realized": 61,
+      "max": 73,
+      "core_headroom": 8
     },
     "gauge_bridge": {
       "n": 16,
@@ -316,10 +316,10 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 7,
-      "realized": 79,
-      "max": 131,
-      "core_headroom": 52
+      "n": 8,
+      "realized": 91,
+      "max": 151,
+      "core_headroom": 60
     },
     "BOOK_01/06": {
       "n": 1,
@@ -387,6 +387,16 @@
       "claim_id": "D0-FIBONACCI-IF-FORCING-001",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-GENERATIVE-DYNAMICS-001",
+      "domain": "rg",
+      "book": "BOOK_06",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -1741,6 +1751,13 @@
     {
       "claim_id": "D0-FIBONACCI-IF-FORCING-001",
       "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-GENERATIVE-DYNAMICS-001",
+      "domain": "rg",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -5133,6 +5150,20 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GENERATIVE-DYNAMICS-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "rg",
+      "book": "BOOK_06",
       "leverage": 0,
       "integrity_flag": null
     }

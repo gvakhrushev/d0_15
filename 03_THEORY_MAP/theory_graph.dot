@@ -243,6 +243,7 @@ digraph D0Theory {
   "D0-MODULAR-TIME-FLAVOR-001" [label="D0-MODULAR-TIME-FLAVOR-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-DSI-EXPERIMENTAL-001" [label="D0-DSI-EXPERIMENTAL-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-ENTROPIC-DARK-GRAVITY-001" [label="D0-ENTROPIC-DARK-GRAVITY-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
+  "D0-GENERATIVE-DYNAMICS-001" [label="D0-GENERATIVE-DYNAMICS-001\\nCERT-CLOSED\\nrg", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1567,4 +1568,16 @@ digraph D0Theory {
   "D0-ENTROPIC-DARK-GRAVITY-001" -> "assumption:ASSUMP-VERLINDE-ENTROPIC" [label="assumption"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-ENTROPIC-DARK-GRAVITY-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Claims.GluingAnomalyTime" [label="D0.Claims.GluingAnomalyTime", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-GENERATIVE-DYNAMICS-001" -> "module:D0.Claims.GluingAnomalyTime" [label="module"];
+  "cert:vp_feshbach_schur_dynamics.py" [label="vp_feshbach_schur_dynamics.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-GENERATIVE-DYNAMICS-001" -> "cert:vp_feshbach_schur_dynamics.py" [label="cert"];
+  "cert:vp_gluing_anomaly_time.py" [label="vp_gluing_anomaly_time.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-GENERATIVE-DYNAMICS-001" -> "cert:vp_gluing_anomaly_time.py" [label="cert"];
+  "cert:vp_loop_floor_epsilon.py" [label="vp_loop_floor_epsilon.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-GENERATIVE-DYNAMICS-001" -> "cert:vp_loop_floor_epsilon.py" [label="cert"];
+  "cert:vp_rg_forgetting.py" [label="vp_rg_forgetting.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-GENERATIVE-DYNAMICS-001" -> "cert:vp_rg_forgetting.py" [label="cert"];
+  "domain:rg" [label="rg", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-GENERATIVE-DYNAMICS-001" -> "domain:rg" [label="domain"];
 }
