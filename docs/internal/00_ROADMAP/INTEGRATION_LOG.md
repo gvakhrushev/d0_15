@@ -704,3 +704,51 @@ coincidence at one point ≠ identity.
 packing_limit_probe, modular_time_flavor, dsi_experimental) PASS + can-FAIL. The deep-research
 filter is now law (§05.8.S). Every status is the honest minimum that survived the two gates;
 no research label was promoted verbatim.
+
+### Iteration 8 — researcher contributions developed into closures (reforge, don't discard)
+
+Two researcher documents arrived: (1) generative dynamics (Feshbach–Schur, RG-as-forgetting,
+ε²=φ⁻¹⁶); (2) a v3.0 pack of six book insertions (one correct, one error, two over-statements,
+two to check). The owner's directive: *develop into closures, reforge errors into tasks, bring
+over-statements to honest level keeping the core*. The constructive dual of the deep-research
+filter is now law (§05.8.T).
+
+**The main closure (doc 1).** `D0-GENERATIVE-DYNAMICS-001` (CERT-CLOSED + LEAN_PROVED, LEM):
+D0 is a **generator of dynamics**, not a static classifier, via Feshbach–Schur on the
+rank-3(active)/kernel-30(archive) split. Exact Schur determinant identity ⇒ resonances = poles
+of the effective operator `W_eff`; series index k = archive excursions = algorithmic time; the
+seam anomaly `C_n≠0` (Lean `GluingAnomalyTime`, `native_decide`) forces time; loop floor
+`ε²=φ⁻¹⁶` ⇒ finite cycles, no UV divergence (named gap `ε²≠Δα`); RG = typed forgetting
+(`p+p²=1`, residual `≤δ₀`, `β=c/\log φ`). Discharges the §06.34 open obligation at the finite
+level. LEM (continuum QFT-as-shadow needs an S-matrix simulation for THE).
+
+**Reforges and honest-level fixes (doc 2), each keeping the valuable core:**
+- §02.21 zone-matrix **error** → `D0-LAPLACIAN-SPECTRUM-FIX-001` (CERT): M is row-stochastic
+  (ρ=1, eig {1,−0.42,−0.58}); the `1.42/1.58` it hit is `eig(I−M)` = the S_DE window (Book 08);
+  `φ⁻¹` is the §06.2 envelope tick — three numbers separated, two matrices. §02.18.4.
+- §06.42 α **over-statement** → confirmed the corpus is already honest: `ξ₅=φ⁵−11=φ⁻⁵` kept THE,
+  α-line CHK with `Δα` open; the data residual (3.71e-4) and the algebraic residual (4.15e-4)
+  separated. §02.13.
+- §09.8 I_f **wrong formula** → `D0-IF-KS-FORMULA-FIX-001` (CERT): `Tr(\log T)/\mathrm{rank}` is
+  complex (`det T=−1`); correct `h_{KS}=\log|\lambda_{\max}|=\log φ`. Number kept, formula fixed.
+  §09.03.
+- §07.22 A/4 **forcing attempt** → `D0-FOURCOLOR-HORIZON-CAPACITY-001` (CERT, outcome b): the "4"
+  forced (`χ(K_4)=4`=ABCD), the "1/4" a named gap (chromatic 4 ≠ Bekenstein coefficient). §07.40.
+- §04.12 CKM/PMNS **error** → `D0-CKM-PMNS-COMPLEMENTARITY-001` (CERT, HYP): `V_CKM U_PMNS^T=I`
+  false; reforged to quark-lepton complementarity `θ_C+θ_12≈45°` (~1.6° miss). §06.30a.
+- §01.25 φ_E(44)=20 **correct** → `D0-WINDOW44-TOTIENT-M1-001` (CERT), entered as-is with the M1
+  totient argument (`|Aut(Z/44)|=20`). §07.23.
+
+### Iteration 8 metrics (vs Iteration-7 end)
+| metric | Iter7 end | Iter8 now | delta |
+|---|---|---|---|
+| CERT-CLOSED (incl. LEM/HYP/reforge) | 66 | 73 | +7 |
+| strength | 3179 | 3226 | +47 |
+| integrity demotions | 0 | 0 | zero discards; errors reforged |
+| hygiene | 100 | 100 | — |
+
+New: 7 certs (feshbach_schur, gluing_anomaly, loop_floor, rg_forgetting, laplacian_3x3,
+if_kolmogorov_sinai, fourcolor_horizon, ckm_pmns, window44 — 9 actually) all PASS + can-FAIL;
+1 new Lean module (`GluingAnomalyTime`, `native_decide`) builds. §05.8.T (external-contribution
+rule) is now law. ZERO ideas discarded: every error became a clarification or a named gap, every
+over-statement kept its core at the honest status.

@@ -230,3 +230,48 @@ is now law (BOOK_05 §05.8.S).
   mechanism are the open obligations this front names.
 - The pre-existing 17-module `lake build D0.All` breakage (Iteration-6 finding) remains its own
   spun-off task — untouched here.
+
+---
+
+# D0 — Iteration 8 report: researcher contributions developed into closures
+
+Two researcher documents were developed under the owner's directive *develop into closures,
+reforge errors into tasks, bring over-statements to honest level keeping the core* (now law,
+BOOK_05 §05.8.T). Errors were never discarded; over-statements never inserted as-is.
+
+**Headline.** strength **3179 → 3226 (+47)**; integrity demotions **0** (zero discards, zero
+re-inflations); hygiene **100/100**; firewall violations **0**; all registry/cert guards green.
+9 new certs (all PASS + can-FAIL); 1 new Lean module (`GluingAnomalyTime`, `native_decide`)
+builds. 6 commits (`bbb24ce`, `9034e59`, `d8e6228`, `3c7f0bd`, `197ee0b`, + this wrap).
+
+## The main closure
+**`D0-GENERATIVE-DYNAMICS-001` (LEM): D0 is a generator of dynamics, not a static classifier.**
+Feshbach–Schur on the rank-3(active)/kernel-30(archive) split gives an effective dynamics
+`W_eff` whose poles are the resonances (exact Schur determinant identity), with the excursion
+index = algorithmic time; the seam anomaly `C_n≠0` (Lean-checked) forces time; the loop floor
+`ε²=φ⁻¹⁶` makes loops finite (no UV divergence); RG is typed forgetting. This closes a real
+standing hole and discharges the §06.34 open obligation at the finite level.
+
+## The reforge table (errors → tasks, over-statements → honest level + kept core)
+| contribution | check verdict | landing |
+|---|---|---|
+| §02.21 zone-matrix → φ⁻¹ | **error** (M is stochastic, ρ=1) | reforged: 3 numbers separated (spec M / S_DE window / envelope tick); §02.18.4 |
+| §06.42 α⁻¹ closed identity | **over-statement** | core `ξ₅=φ⁻⁵` kept THE; α-line CHK, `Δα` open; §02.13 |
+| §09.8 `I_f=Tr(log T)/rank` | **wrong formula** | number `log φ` kept; fixed to `h_KS=log\|λ_max\|`; §09.03 |
+| §07.22 A/4 via Four-Color | **forcing attempt** | "4" forced, "1/4" named gap; §07.40 |
+| §04.12 `V_CKM U_PMNS^T=I` | **error** | reforged to complementarity `θ_C+θ_12≈45°` (HYP); §06.30a |
+| §01.25 φ_E(44)=20 | **correct** | entered as-is with the M1 totient argument; §07.23 |
+
+## Discipline held
+- **Zero ideas discarded.** Every arithmetic/attribution error became a clarification or a
+  named gap; the error marked where the work was unfinished, not where the idea was wrong.
+- **Zero over-statements inserted.** Each was split into a kept core (true status) and a named
+  gap (lower status) — `ξ₅` THE while α stays CHK is the template.
+- **The constructive rule is now corpus law** (§05.8.T), the dual of the deep-research filter
+  (§05.8.S) and the audit rule (§05.8.R).
+
+## Carried-forward / not done
+- **F.1 dossier sync: N/A** (`D0_THEORY_DOSSIER.md` removed in Iteration 2; content lives in books).
+- The generative-dynamics THE step (an explicit D0 S-matrix simulation) and the A/4-coefficient
+  owner (Bekenstein/Jacobson route) are the open obligations this front names.
+- The pre-existing 17-module `lake build D0.All` breakage stays its own spun-off task.
