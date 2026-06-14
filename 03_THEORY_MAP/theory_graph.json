@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 234,
+    "claims": 235,
     "release_status": {
-      "CORE-FORMALIZED": 109,
+      "CORE-FORMALIZED": 110,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 128,
+      "LEAN_PROVED": 129,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 10,
       "PYTHON_CERTIFIED": 79,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 110,
+      "core": 111,
       "bridge": 16,
       "no-go": 16,
       "certificate": 76,
@@ -34,7 +34,7 @@
       "frontier": 14
     },
     "domain": {
-      "formal_core": 139,
+      "formal_core": 140,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7691,6 +7691,44 @@
       "status": "EXPLICIT",
       "assumption_type": "VON_NEUMANN_MODULAR_THEOREM",
       "external_source_or_cert": "Tomita 1967; Takesaki LNM 128 (1970); Connes cocycle"
+    },
+    {
+      "id": "D0-DIM8-NETWORK-001",
+      "kind": "claim",
+      "claim_id": "D0-DIM8-NETWORK-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02",
+      "section": "dimension-8 forcing network synthesis (02.18.3)",
+      "lean_module": "D0.Synthesis.DimensionEightNetwork",
+      "lean_theorem": "dim8_network",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dim8_network.py",
+      "python_cert": [
+        "vp_dim8_network.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter6 synthesis] Ties the corpus order-8/rank-8 objects into ONE forcing of the number 8, sewn by classical uniqueness/classification owners: {±}->Z2 (Bott period 2) -> ABCD x {±}=8=|Omega8| (Hurwitz 1,2,4,8 / Clifford & Bott-KO period 8) -> Q8 c 2T c 2I (Dedekind+Baer + icosians) -> E8 (Mordell) -> Spin(8) triality (3 eight-dim reps). Lean D0.Synthesis.DimensionEightNetwork (dim8_network) machine-checks the arithmetic skeleton: 8=2*4; tower 8|24|120 with indices 3,5,15; Z(Q8)=Z2 base; E8 Gram even unimodular (reuses D0-ICOSIAN-E8-GRAM-001); D4 star has 3 legs and |Out(Spin8)|=|S3|=6. Cert vp_dim8_network.py + names the 6 external owners. HONEST (anti-numerology, 00.9): forces the NUMBER 8 + rank-8 target ONLY; '3 generations' (the 3 = #D4 reps), C_max=3/8, and Leech Λ24<->K=30 are REJECTED forcing-links; the periodicity/triality/uniqueness theorems are EXTERNAL owners. Meets the phi-network (01.21.3) at the icosians.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Synthesis/DimensionEightNetwork.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Synthesis.DimensionEightNetwork",
+      "kind": "lean_module",
+      "label": "D0.Synthesis.DimensionEightNetwork",
+      "path": "09_LEAN_FORMALIZATION/D0/Synthesis/DimensionEightNetwork.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_dim8_network.py",
+      "kind": "python_cert",
+      "label": "vp_dim8_network.py",
+      "path": "05_CERTS/vp_dim8_network.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10883,6 +10921,21 @@
       "source": "D0-TIME-MODULAR-FLOW-OWNER-001",
       "target": "assumption:ASSUMP-TOMITA-TAKESAKI",
       "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-DIM8-NETWORK-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DIM8-NETWORK-001",
+      "target": "module:D0.Synthesis.DimensionEightNetwork",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DIM8-NETWORK-001",
+      "target": "cert:vp_dim8_network.py",
+      "kind": "certified_by"
     }
   ]
 }

@@ -362,7 +362,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CONNES-RECONSTRUCTION-OWNER-001", moduleName := "D0.Bridge.ConnesReconstructionBridge",
       theoremName := "connes_reconstruction_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-TIME-MODULAR-FLOW-OWNER-001", moduleName := "D0.Bridge.TomitaTakesakiBridge",
-      theoremName := "tomita_modular_flow_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "tomita_modular_flow_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-DIM8-NETWORK-001", moduleName := "D0.Synthesis.DimensionEightNetwork",
+      theoremName := "dim8_network", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -1389,7 +1389,7 @@ The deepest no-deformation certificate is not numerical at all — it is the rig
 1. *All subgroups normal.*  A non-normal subgroup has distinct conjugate copies, so the act would have to record *which copy* — an external catalog entry M1 forbids.  Hence every subgroup of the role group is normal.
 2. *Non-commutative.*  Order memory (the trace `C` must remember the orientation in which `A`,`B` were composed) forbids a fully abelian group; the role group must be non-abelian.
 3. *Hamiltonian.*  Non-abelian with all subgroups normal is exactly the definition of a *Hamiltonian* group.
-4. *Minimality scan.*  Decidable scan of the non-abelian groups of order \(\le 8\) by count of non-normal subgroups: \(S_3\) has 3, \(D_4\) has 4, **`Q_8` has 0**.  `Q_8` is the unique order-8 Hamiltonian group, and Dedekind's 1897 theorem (every Hamiltonian group contains `Q_8` as a factor) makes this minimality *global*, not merely order-bounded.  Therefore \(\Omega_8\cong Q_8\) is a theorem, not a model choice.
+4. *Minimality scan.*  Decidable scan of the non-abelian groups of order \(\le 8\) by count of non-normal subgroups: \(S_3\) has 3, \(D_4\) has 4, **`Q_8` has 0**.  `Q_8` is the unique order-8 Hamiltonian group, and Dedekind's 1897 theorem makes this minimality *global*, not merely order-bounded; the explicit structure — **every Hamiltonian group is `Q_8 × B × D`** with `B` elementary-abelian-2 and `D` abelian of odd order (R. Baer, 1933) — shows `Q_8` is a *forced factor* of every such group, so the second structural channel (Baer) and the rigidity floor (the triple identity `[Q_8,Q_8]=Z(Q_8)=Φ(Q_8)=\{\pm1\}`) name the same minimal object.  Therefore \(\Omega_8\cong Q_8\) is a theorem, not a model choice.
 
 **[LEM] Triple identity (M1-cleanest group).**  `Q_8` is verified to satisfy
 ```math
@@ -1419,6 +1419,47 @@ This is a genuine no-deformation certificate of the rigidity kind demanded by §
 Q_8\;\to\;\mathbb{Z}[\varphi]\text{-hull}\;\to\;\text{icosian ring}=E_8\;\to\;\Lambda_{24},
 ```
 so the bridge from the roles to the Leech lattice passes exactly through the two pillars `Q_8` and the field \(\varphi\).
+
+### 02.18.3 The dimension-8 forcing network [synthesis]
+
+The order-8 / rank-8 objects above are not independent coincidences. A systematic search for
+classical *forcing-owner* theorems (uniqueness/classification only) shows that the number **8**
+is forced through a single network whose edges are each a cited classical theorem:
+
+```math
+\{\pm\}\to\mathbb{Z}_2\ (\text{Bott period }2)\ \to\ \text{ABCD}\times\{\pm\}=8=|\Omega_8|\ \to\ Q_8\subset 2T\subset 2I\ \to\ E_8\ \to\ \text{triality }Spin(8).
+```
+
+- **`8` as a boundary (Hurwitz, 1898).** The normed division algebras over `\mathbb{R}` are
+  exactly `\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O}` of dimensions `1,2,4,8`; `8` is the last
+  (associativity is lost at `\mathbb{O}`). This is the algebraic channel to `|\Omega_8|=8`.
+- **Period 8 (Clifford / Bott).** Clifford algebras `Cl_{p,q}(\mathbb{R})` are 8-periodic in
+  `(p-q)\bmod 8`, and real `KO`-theory is Bott-periodic with period 8 (complex `K`-theory with
+  period 2, the `\mathbb{Z}_2` of `\{\pm\}`). A topological channel to the same `8`.
+- **The unit-quaternion tower (Dedekind + icosians).** `Q_8\subset 2T\subset 2I` with orders
+  `8\mid 24\mid 120` (§02.18.2); `Z(Q_8)=\mathbb{Z}_2` sits at the base.
+- **`E_8` (Mordell).** The icosian ring is the unique even unimodular lattice of rank 8
+  (§02.18, point 4; owner `ASSUMP-MORDELL-E8`).
+- **Triality (`Spin(8)`, Cartan/Adams).** `D_4` is the unique Dynkin diagram with an `S_3`
+  outer automorphism; it permutes the three 8-dimensional representations `V,\Delta_+,\Delta_-`.
+
+The arithmetic skeleton of this network is machine-checked: claim `D0-DIM8-NETWORK-001`
+(cert `vp_dim8_network.py`, Lean `D0.Synthesis.DimensionEightNetwork`) proves `8=2\cdot4`, the
+tower divisibilities `8\mid24\mid120` with their indices `3,5,15`, the even-unimodularity of the
+`E_8` Gram (reused from `D0-ICOSIAN-E8-GRAM-001`), and the three legs of `D_4` with
+`|Out(Spin(8))|=|S_3|=6`. The periodicity/uniqueness *theorems* themselves are external owners,
+cited not re-proved.
+
+**Anti-numerology fences (BOOK_00 §00.9).** The network forces the *number* `8` and the rank-8
+even-unimodular target — nothing more. Three resemblances are explicitly **outside** it: (i)
+"`Spin(8)` triality `\Rightarrow` 3 fermion generations" is rejected — the `3` is the number of
+8-dimensional `D_4` representations, not the number of families; (ii) the causal threshold
+`C_max=3/8` is owned by the rank/`|\Omega_8|` posing (`D0-COMPACTNESS-DEF-FORCING-001`), not by
+this network; (iii) `\Lambda_{24}\leftrightarrow` the readout kernel `K=30` is rejected
+(`24\neq30`, no 24-dimensional D0 object) — distinct from the legitimate cited `E_8\to\Lambda_{24}`
+*lattice tower* of the [BRIDGE] above. The `\varphi`-network (Jones `=` Fibonacci `=` Hurwitz `=`
+Pisot `=` icosian, §01.21.3) and this 8-network meet at the icosians: `\varphi` and `8` are one
+object, not two coincidences.
 ## 02.19 High-gain uniqueness and structural uniqueness / negative-control rigidity closure
 
 Any formula containing a large exponent or small residual is release-admissible only if the exponent is selected by an operator support rule and neighbouring alternatives are excluded.
@@ -1768,6 +1809,8 @@ Tsirelson/CHSH operator norm if the claim faces EPR/Bell tests.
 ```
 
 This does not weaken D0.  It prevents a reviewer from claiming that the Born rule was smuggled in through unspoken Hilbert-space assumptions.
+
+**Second channels (external corroboration, cited not re-derived).** The `dimension-2` caveat is exactly where the classical literature supplies independent owners. (i) **Busch** (P. Busch, *Phys. Rev. Lett.* **91**, 120403, 2003) extends Gleason's uniqueness to POVM effects and *removes* the `dim≥3` restriction, so the quadratic Born rule is owned even on the qubit — the regime D0's two-dimensional time layer lives in; for `dim 2` the correct owner is Busch, never the original Gleason. (ii) **Masanes–Müller–Galley** (*Nat. Commun.* **10**, 1361, 2019; Müller–Masanes, *New J. Phys.* **15**, 053040, 2013) derive the Born rule *and* the three-dimensionality of the Bloch ball from operational postulates, giving a second independent route to both `d=3` and quadraticity alongside the Frobenius (`ℍ`) and Gleason/Busch channels. These are external owners of the same facts D0 forces finitely; they corroborate, they do not replace the finite-verification proof.
 
 The same assumption-split discipline is what makes a "cohomology/algebraicity" claim admissible at all, and it forces a sharp result: the no-exogenous-index law M1 turns the algebraicity question into a theorem rather than a conjecture.
 

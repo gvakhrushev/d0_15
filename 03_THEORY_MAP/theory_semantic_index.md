@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 63
-- `CORE-FORMALIZED`: 109
+- `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 14
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 16
 - `certificate`: 76
-- `core`: 110
+- `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 139
+- `formal_core`: 140
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1688,6 +1688,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Q(D)=phi^(D-4); quantum=1 at D=4=|ABCD|; Q(1)=phi^-3=2delta0; exact Q(phi). Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.DimLadderCompact (dim_ladder_compact_cert); native_decide/decide on the real finite content.
+
+### D0-DIM8-NETWORK-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.DimensionEightNetwork`
+- theorem: `dim8_network`
+- cert: `vp_dim8_network.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter6 synthesis] Ties the corpus order-8/rank-8 objects into ONE forcing of the number 8, sewn by classical uniqueness/classification owners: {±}->Z2 (Bott period 2) -> ABCD x {±}=8=|Omega8| (Hurwitz 1,2,4,8 / Clifford & Bott-KO period 8) -> Q8 c 2T c 2I (Dedekind+Baer + icosians) -> E8 (Mordell) -> Spin(8) triality (3 eight-dim reps). Lean D0.Synthesis.DimensionEightNetwork (dim8_network) machine-checks the arithmetic skeleton: 8=2*4; tower 8|24|120 with indices 3,5,15; Z(Q8)=Z2 base; E8 Gram even unimodular (reuses D0-ICOSIAN-E8-GRAM-001); D4 star has 3 legs and |Out(Spin8)|=|S3|=6. Cert vp_dim8_network.py + names the 6 external owners. HONEST (anti-numerology, 00.9): forces the NUMBER 8 + rank-8 target ONLY; '3 generations' (the 3 = #D4 reps), C_max=3/8, and Leech Λ24<->K=30 are REJECTED forcing-links; the periodicity/triality/uniqueness theorems are EXTERNAL owners. Meets the phi-network (01.21.3) at the icosians.
 
 ### D0-FINAL-BRIDGE-INDEX-001
 
