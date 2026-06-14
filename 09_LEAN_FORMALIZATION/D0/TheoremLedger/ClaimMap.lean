@@ -364,7 +364,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-TIME-MODULAR-FLOW-OWNER-001", moduleName := "D0.Bridge.TomitaTakesakiBridge",
       theoremName := "tomita_modular_flow_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-DIM8-NETWORK-001", moduleName := "D0.Synthesis.DimensionEightNetwork",
-      theoremName := "dim8_network", status := ClaimStatus.leanCoreProved }
+      theoremName := "dim8_network", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIBONACCI-IF-FORCING-001", moduleName := "D0.Claims.FibonacciIfBridge",
+      theoremName := "fibonacci_if_bridge", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

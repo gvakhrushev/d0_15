@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3113,
-    "track_fair_max": 4208,
-    "pct_strength": 74.0,
-    "core_realized": 2664,
-    "core_potential": 3740,
-    "core_headroom": 1076,
-    "n_claims": 235,
-    "n_active": 234,
+    "realized": 3125,
+    "track_fair_max": 4228,
+    "pct_strength": 73.9,
+    "core_realized": 2676,
+    "core_potential": 3760,
+    "core_headroom": 1084,
+    "n_claims": 236,
+    "n_active": 235,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 140,
-      "realized": 2079,
-      "max": 2682,
-      "core_headroom": 598
+      "n": 141,
+      "realized": 2091,
+      "max": 2702,
+      "core_headroom": 606
     },
     "rg": {
       "n": 4,
@@ -112,10 +112,10 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 7,
-      "realized": 114,
-      "max": 127,
-      "core_headroom": 13
+      "n": 8,
+      "realized": 126,
+      "max": 147,
+      "core_headroom": 21
     },
     "BOOK_02": {
       "n": 7,
@@ -377,6 +377,16 @@
     }
   },
   "cheapest_promotions": [
+    {
+      "claim_id": "D0-FIBONACCI-IF-FORCING-001",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
     {
       "claim_id": "D0-GRAV-006",
       "domain": "formal_core",
@@ -1687,6 +1697,13 @@
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
+    },
+    {
+      "claim_id": "D0-FIBONACCI-IF-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
     }
   ],
   "integrity": [],
@@ -4978,6 +4995,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FIBONACCI-IF-FORCING-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
     }

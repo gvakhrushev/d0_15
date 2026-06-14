@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 63
+- `CERT-CLOSED`: 64
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 16
-- `certificate`: 76
+- `certificate`: 77
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 140
+- `formal_core`: 141
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -895,6 +895,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Audit->FORCING, HYP->THE] (710,113) FORCED not fitted. 710=2*D_Sigma*(2|V|+D_Sigma)=2*5*71, 113=(|ABCD|+1)*d13+|V13|=5*20+13 (every atom a named invariant, ZERO free numbers; 71=2*33+5 derived). Window=ratio q/m~tau=2pi (phase-circle period). MINIMALITY: 710/113 is the FIRST 2pi-convergent with |q/m-2pi|<1e-6 (prior 333/53 = 1.7e-4); by continued-fraction best-approximation no denom<113 beats it, and 113 is the minimal invariant-grammar denominator. Forcing = grammar-expressibility + CF-minimality, NOT look-elsewhere (M1: absence of alternatives is not the argument). HONEST: near-return is the RATIO measure (~5.3e-7); absolute |q-m*2pi|~6e-5 is denominator-scaled, NOT the criterion. Supporting Lean D0.Claims.EWWindowForcing (ew_window_grammar) proves the decomposition; the CF-minimality is cert-level (pi-dependent).
+
+### D0-FIBONACCI-IF-FORCING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Claims.FibonacciIfBridge`
+- theorem: `fibonacci_if_bridge`
+- cert: `vp_fibonacci_if_bridge.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter7 cross-bridge, self-calibrated LEM NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Cert vp_fibonacci_if_bridge.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. HONEST: STATUS LEM not THE -- both give log phi but the categorical<->toral ISOMORPHISM (Fib state-growth ~= symbolic dynamics of T) is NOT constructed; that is the named gap (deep-research downgraded FORCING->LEM by the mechanism filter). Links the I_f=log phi GW horizontal-hum (Book 09).
 
 ### D0-FOUND-004
 

@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 235,
+    "claims": 236,
     "release_status": {
       "CORE-FORMALIZED": 110,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 63,
+      "CERT-CLOSED": 64,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -19,7 +19,7 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 129,
+      "LEAN_PROVED": 130,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 10,
       "PYTHON_CERTIFIED": 79,
       "DEPRECATED": 2,
@@ -29,12 +29,12 @@
       "core": 111,
       "bridge": 16,
       "no-go": 16,
-      "certificate": 76,
+      "certificate": 77,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 140,
+      "formal_core": 141,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7729,6 +7729,44 @@
       "label": "vp_dim8_network.py",
       "path": "05_CERTS/vp_dim8_network.py",
       "exists": true
+    },
+    {
+      "id": "D0-FIBONACCI-IF-FORCING-001",
+      "kind": "claim",
+      "claim_id": "D0-FIBONACCI-IF-FORCING-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "I_f=log phi via Fibonacci anyons + toral h_KS (01.21.4)",
+      "lean_module": "D0.Claims.FibonacciIfBridge",
+      "lean_theorem": "fibonacci_if_bridge",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_fibonacci_if_bridge.py",
+      "python_cert": [
+        "vp_fibonacci_if_bridge.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter7 cross-bridge, self-calibrated LEM NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Cert vp_fibonacci_if_bridge.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. HONEST: STATUS LEM not THE -- both give log phi but the categorical<->toral ISOMORPHISM (Fib state-growth ~= symbolic dynamics of T) is NOT constructed; that is the named gap (deep-research downgraded FORCING->LEM by the mechanism filter). Links the I_f=log phi GW horizontal-hum (Book 09).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/FibonacciIfBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.FibonacciIfBridge",
+      "kind": "lean_module",
+      "label": "D0.Claims.FibonacciIfBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/FibonacciIfBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_fibonacci_if_bridge.py",
+      "kind": "python_cert",
+      "label": "vp_fibonacci_if_bridge.py",
+      "path": "05_CERTS/vp_fibonacci_if_bridge.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10935,6 +10973,21 @@
     {
       "source": "D0-DIM8-NETWORK-001",
       "target": "cert:vp_dim8_network.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FIBONACCI-IF-FORCING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FIBONACCI-IF-FORCING-001",
+      "target": "module:D0.Claims.FibonacciIfBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FIBONACCI-IF-FORCING-001",
+      "target": "cert:vp_fibonacci_if_bridge.py",
       "kind": "certified_by"
     }
   ]
