@@ -29,7 +29,6 @@ import D0.Bridge.ComplexQMBridge
 import D0.Bridge.ConnesReconstructionBridge
 import D0.Bridge.ConvexResponseBridge
 import D0.Bridge.FinalBridgeIndex
-import D0.Bridge.HodgeMatterGravityArchiveIndex
 import D0.Bridge.InternalConeSpeed
 import D0.Bridge.InterpretationSpine
 import D0.Bridge.LorentzBridge
@@ -44,6 +43,7 @@ import D0.Bridge.TomitaTakesakiBridge
 import D0.Bridge.VerlindeEntropicBridge
 import D0.Capacity
 import D0.Claims.Book04Selectors
+import D0.Claims.CarrierNotIcosahedral
 import D0.Claims.CkmExactMatrix
 import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
@@ -109,7 +109,6 @@ import D0.Cosmology.ResearchPassCorollaries
 import D0.Cosmology.SDEFeedbackReduction
 import D0.Cosmology.SurveyReproducibilitySplit
 import D0.Cosmology.TransientAcceleration
-import D0.Cosmology.VacuumFeedbackEquationOfState
 import D0.Cosmology.ZeroMeanModes
 import D0.Defect.Basic
 import D0.Defect.Pi0BranchDefect
@@ -134,10 +133,8 @@ import D0.Gauge.GradedBianchiIdentity
 import D0.Gauge.MatrixRepGaugeTransform
 import D0.Gauge.NonAbelianDiscreteCurvature
 import D0.Gauge.NonAbelianSeamObstructionGap
-import D0.Gauge.SMActionTermEmergence
 import D0.Gauge.SMCharges
 import D0.Gauge.SMGaugeDecomposition
-import D0.Gauge.SMScalarActionCompletion
 import D0.Gauge.WardFinite
 import D0.Gauge.WilsonLinkGaugeCovariance
 import D0.Gauge.YangMillsKillingPositivity
@@ -181,7 +178,6 @@ import D0.Geometry.EdgeMetricEquation
 import D0.Geometry.EdgeStiffnessOrigin
 import D0.Geometry.EinsteinReduction
 import D0.Geometry.ExternalAnalyticTheoremInterface
-import D0.Geometry.FiniteA2EinsteinResponse
 import D0.Geometry.FiniteSpin2
 import D0.Geometry.FiniteSpin2DOF
 import D0.Geometry.FiniteSpin2Dynamics
@@ -208,8 +204,6 @@ import D0.Gravity.CompactnessLimit
 import D0.Gravity.CriticalCollapseDSS
 import D0.Gravity.EchoCapacityHorizon
 import D0.Gravity.EntropicArchiveInterface
-import D0.Gravity.FiniteHolographicEntropy
-import D0.Gravity.FiniteHorizonCapacity
 import D0.Gravity.MacroEinsteinInterface
 import D0.Gravity.PressureCapacityBalance
 import D0.Interface.ArchiveLaplacian
@@ -228,7 +222,6 @@ import D0.Matter.Book04CoefficientOrigin
 import D0.Matter.Book04CombinatorialSelectorOrigins
 import D0.Matter.Book04ConcreteSelectors
 import D0.Matter.Book04FullSupportSelectors
-import D0.Matter.Book04OperatorBoundary
 import D0.Matter.Book04Selectors
 import D0.Matter.CKMBasisMismatch
 import D0.Matter.CKMBasisOrigin
@@ -248,8 +241,6 @@ import D0.Matter.GenerationMultiplicity
 import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
 import D0.Matter.HiggsScalarProjectorConstructive
-import D0.Matter.HiggsScalarProjectorDecision
-import D0.Matter.HiggsScalarProjectorPositive
 import D0.Matter.KTheoryGapLabeling
 import D0.Matter.LocalTraceSource
 import D0.Matter.MesonDefectTransferAlgebra
@@ -260,7 +251,6 @@ import D0.Matter.NuclearShellContactSRC
 import D0.Matter.PhasonStrainGenerations
 import D0.Matter.RepresentationCarrier
 import D0.Matter.TerminalFeedbackModes
-import D0.Matter.TickS3BaryonAsymmetry
 import D0.Matter.TraceDecompositionSigns
 import D0.Matter.VectorCurrentCoupling
 import D0.Matter.VectorFieldEquation
@@ -313,7 +303,6 @@ import D0.TheoremLedger.ReleaseStatus
 import D0.Topology.ArchiveShiftTopology
 import D0.Topology.BoundaryBoundary
 import D0.Topology.FiniteCochainNoAxion
-import D0.Topology.FiniteMinCutEntropy
 import D0.Topology.GradedIncidenceComplex
 import D0.Topology.NoThreeSimplices
 import D0.Topology.SimplicialIncidence

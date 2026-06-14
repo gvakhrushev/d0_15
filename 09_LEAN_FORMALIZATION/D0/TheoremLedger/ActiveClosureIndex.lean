@@ -3,6 +3,7 @@
 
 
 import D0.Claims.Book04Selectors
+import D0.Claims.CarrierNotIcosahedral
 import D0.Claims.CkmExactMatrix
 import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact

@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3280,
-    "track_fair_max": 4508,
-    "pct_strength": 72.8,
-    "core_realized": 2791,
-    "core_potential": 4000,
+    "realized": 3300,
+    "track_fair_max": 4528,
+    "pct_strength": 72.9,
+    "core_realized": 2811,
+    "core_potential": 4020,
     "core_headroom": 1209,
-    "n_claims": 252,
-    "n_active": 251,
+    "n_claims": 253,
+    "n_active": 252,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 151,
-      "realized": 2173,
-      "max": 2875,
+      "n": 152,
+      "realized": 2193,
+      "max": 2895,
       "core_headroom": 697
     },
     "rg": {
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 10,
-      "realized": 140,
-      "max": 187,
+      "n": 11,
+      "realized": 160,
+      "max": 207,
       "core_headroom": 47
     },
     "BOOK_02": {
@@ -5417,12 +5417,26 @@
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CARRIER-NOT-ICOSAHEDRAL-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.2,
+    "penalty_total": 2.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5451,11 +5465,13 @@
       },
       {
         "signal": "proof_debt",
-        "count": 0,
-        "points": -0.0,
+        "count": 1,
+        "points": -2.0,
         "cap": -10.0,
         "label": "sorry/axiom inside the built D0/ tree",
-        "evidence": []
+        "evidence": [
+          "CarrierNotIcosahedral.lean:21"
+        ]
       },
       {
         "signal": "phantom_certs",
@@ -5515,6 +5531,16 @@
       }
     ],
     "top_actions": [
+      {
+        "signal": "proof_debt",
+        "count": 1,
+        "points": -2.0,
+        "cap": -10.0,
+        "label": "sorry/axiom inside the built D0/ tree",
+        "evidence": [
+          "CarrierNotIcosahedral.lean:21"
+        ]
+      },
       {
         "signal": "orphan_proof_targets",
         "count": 2,

@@ -378,7 +378,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-TOWER-STOP-NOEXT-001", moduleName := "D0.Tower.NoExtension",
       theoremName := "no_extension_theorem", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-RANK3-CAUSAL-CONE-FORCING-001", moduleName := "D0.Synthesis.RankCausalConeForcing",
-      theoremName := "rank3_causal_cone_forcing", status := ClaimStatus.leanCoreProved }
+      theoremName := "rank3_causal_cone_forcing", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CARRIER-NOT-ICOSAHEDRAL-001", moduleName := "D0.Claims.CarrierNotIcosahedral",
+      theoremName := "carrier_not_icosahedral", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -4,20 +4,20 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3280 / 4508 (**72.8%** of track-fair max)
-- **Core spine:** 2791 / 4000 (headroom **1209** points to take every core claim to L5)
-- Claims: 251 active (252 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 3300 / 4528 (**72.9%** of track-fair max)
+- **Core spine:** 2811 / 4020 (headroom **1209** points to take every core claim to L5)
+- Claims: 252 active (253 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 100.0 / 100 (penalties **-0.2**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 100.0 / 100 (penalties **-2.2**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
 | `tracked_meta_trash` | 0 | -0 | tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release) |
 | `tracked_but_ignored` | 0 | -0 | tracked-but-gitignored files (scratch that should not ship) |
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
-| `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
+| `proof_debt` | 1 | -2 | sorry/axiom inside the built D0/ tree  ·  e.g. CarrierNotIcosahedral.lean:21 |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
 | `orphan_proof_targets` | 2 | -0.2 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
@@ -26,7 +26,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 135 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-0.2)
+**Top cleanup actions (most points to regain):** `proof_debt` (-2); `orphan_proof_targets` (-0.2)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -92,7 +92,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 151 | 2173 | 2875 | 697 |
+| formal_core | 152 | 2193 | 2895 | 697 |
 | frontier | 14 | 33 | 280 | 247 |
 | empirical_passport | 22 | 175 | 255 | 75 |
 | smooth_geometry | 11 | 137 | 202 | 65 |
@@ -112,7 +112,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_07 | 46 | 573 | 830 | 247 |
 | BOOK_04 | 42 | 525 | 771 | 241 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
-| BOOK_01 | 10 | 140 | 187 | 47 |
+| BOOK_01 | 11 | 160 | 207 | 47 |
 | BOOK_02 | 8 | 116 | 142 | 26 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_06 | 8 | 91 | 151 | 60 |

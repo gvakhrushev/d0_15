@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 74
-- `CORE-FORMALIZED`: 112
+- `CORE-FORMALIZED`: 113
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 19
 - `certificate`: 88
-- `core`: 113
+- `core`: 114
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 151
+- `formal_core`: 152
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1398,10 +1398,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - book: `BOOK_01`
 - module: ``
 - theorem: `none`
-- cert: `vp_icosahedral_cutproject.py;vp_e8_quasicrystal_slice.py`
+- cert: `vp_icosahedral_cutproject.py;vp_e8_quasicrystal_slice.py;vp_carrier_not_icosahedral.py`
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter10 honest dual outcome b -- coincidence is not derivation] T1: standard icosahedral 6D->3D cut-and-project built (6 five-fold axes; rank 3 via exact minor det=-2phi^2; [physical;internal] 6x6 full rank; phi-tilt internal phi->-1/phi). T2 VERDICT: rank-3 MATCHES the physical slice dim (real channel) BUT the 6D->3D internal space is 3-dim NOT 30 -- K(9,11,13) is 33-dim (rank3+nullity30), so reproducing nullity 30 needs a 33D->3D cut-and-project; the 30 that matches K's nullity is the icosahedron EDGE count (V12,E30,F20), a number-coincidence. NAMED GAP: the missing object is a 33D->3D cut-and-project with icosahedral 3D slice + 30D internal = K's kernel. Did NOT fit the projection. T3 (vp_e8_quasicrystal_slice.py): the icosahedral QC slices E8 (Elser-Sloane); same E8 as D0 roles (D0-ICOSIAN-E8-GRAM-001); A5=2I/{+-1}=PSL(2,5)|60|⊂SO(3); E8(8)⊃6D⊃3D consistent. T4: 3D physical slice = THIRD independent channel to rank=3 (with Frobenius H 3 axes + LA tripartite rank=#parts), converging with the tower-stop 3 zones (D0-TOWER-STOP-NOEXT-001). HONEST: channels independent, not summed as a proof; identification of K(9,11,13) with a concrete projection stays the named gap.
+- notes: [Iter11 RESOLVED BY SEPARATION -- the named gap is now closed as a decidable negative] The identification 'K(9,11,13) = a 33D->3D icosahedral cut-and-project' is DISPROVED (D0-CARRIER-NOT-ICOSAHEDRAL-001, Lean D0.Claims.CarrierNotIcosahedral): Aut(K)=S9xS11xS13, and 9!=11!=13 makes the induced symmetry on the 3 zone-classes TRIVIAL (order 1), while A5 has order 60>1 -- so no faithful icosahedral A5-action on the rank-3 image. A5=2I/{+-1} lives on the flavor/E8 side (level-5 modular, D0-MODULAR-TIME-FLAVOR-001), not the carrier. The rank=3 convergence is KEPT (real third channel); nullity-30=icosahedron edges is a CONFIRMED coincidence. Control: K(n,n,n) would admit S3 -- the obstruction is exactly the size-asymmetry. [Iter10 honest dual outcome b -- coincidence is not derivation] T1: standard icosahedral 6D->3D cut-and-project built (6 five-fold axes; rank 3 via exact minor det=-2phi^2; [physical;internal] 6x6 full rank; phi-tilt internal phi->-1/phi). T2 VERDICT: rank-3 MATCHES the physical slice dim (real channel) BUT the 6D->3D internal space is 3-dim NOT 30 -- K(9,11,13) is 33-dim (rank3+nullity30), so reproducing nullity 30 needs a 33D->3D cut-and-project; the 30 that matches K's nullity is the icosahedron EDGE count (V12,E30,F20), a number-coincidence. NAMED GAP: the missing object is a 33D->3D cut-and-project with icosahedral 3D slice + 30D internal = K's kernel. Did NOT fit the projection. T3 (vp_e8_quasicrystal_slice.py): the icosahedral QC slices E8 (Elser-Sloane); same E8 as D0 roles (D0-ICOSIAN-E8-GRAM-001); A5=2I/{+-1}=PSL(2,5)|60|⊂SO(3); E8(8)⊃6D⊃3D consistent. T4: 3D physical slice = THIRD independent channel to rank=3 (with Frobenius H 3 axes + LA tripartite rank=#parts), converging with the tower-stop 3 zones (D0-TOWER-STOP-NOEXT-001). HONEST: channels independent, not summed as a proof; identification of K(9,11,13) with a concrete projection stays the named gap.
 
 ### D0-SDE-K0-001
 
@@ -1779,6 +1779,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Root C synthesis] Finite forcing of the carrier. Cert vp_carrier_full_forcing.py: roles ABCD=Dyad×Dyad=Klein four (|.|=4); ORBITAL BLOCK-CONSTANCY proved by exhaustion on the (2,2,2) faithful model (all 64 S_a×S_b×S_c-invariant symmetric loopless relations are block-constant); UNIQUE M1-admissible block pattern (loopless+complete) -> complete tripartite K(9,11,13), |V|=33 |E|=359; tower-stop finite: 3 forced zones->3 rungs [9,11,13], |Tr(T^2)|=3, Lucas impedance I_n=L_n/9n cross-check. Lean L5 CORE-FORMALIZED via D0.Synthesis.CarrierForcing (carrier_full_forcing): roles_card=4, admissible_unique (native_decide over 512 patterns), edge_count_359, address_ladder, Tr(T^2)=3. HONEST: block-constancy by exhaustion on faithful model (general sizes inherit by same transitivity); full M1 NO-EXTENSION theorem stays theorem-target; impedance is convergent cross-check (GOLDEN CHK 61.2), not a closed no-go. Closes BOOK_05 05.6 soft-joint-1 (role=orbit).
+
+### D0-CARRIER-NOT-ICOSAHEDRAL-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Claims.CarrierNotIcosahedral`
+- theorem: `carrier_not_icosahedral`
+- cert: `vp_carrier_not_icosahedral.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter11 decidable negative -- resolves the D0-QUASICRYSTAL-PROJECTION-001 named gap by SEPARATION] Aut(K(9,11,13))=S9xS11xS13; the zone sizes are pairwise distinct (9!=11!=13), so the size-preserving permutations of the 3 zone-classes (the induced symmetry of the rank-3 physical image) form the TRIVIAL group (order 1, native_decide). The icosahedral group A5 has order 5!/2=60>1, with elements of order 5 -- it cannot embed into the trivial induced symmetry. So K(9,11,13) carries no icosahedral A5 symmetry on its rank-3 image and is NOT the icosahedral cut-and-project. Lean D0.Claims.CarrierNotIcosahedral (carrier_not_icosahedral) + cert vp_carrier_not_icosahedral.py. Control: equal zones K(n,n,n) WOULD admit S3 (order 6) -- the obstruction is exactly the size-asymmetry. HONEST: the rank=3 convergence is KEPT (real third channel to '3'); nullity-30=icosahedron edges is a CONFIRMED coincidence; A5=2I/{+-1} is the flavor/E8 group (level-5 modular), not the carrier. Identification disproved, not left open.
 
 ### D0-CKM-NONTRIVIAL-FLAVOUR-ALGEBRA-001
 
