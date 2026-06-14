@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 248,
+    "claims": 249,
     "release_status": {
-      "CORE-FORMALIZED": 110,
+      "CORE-FORMALIZED": 111,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 12,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 131,
+      "LEAN_PROVED": 132,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 13,
       "PYTHON_CERTIFIED": 87,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 111,
+      "core": 112,
       "bridge": 19,
       "no-go": 16,
       "certificate": 86,
@@ -34,7 +34,7 @@
       "frontier": 14
     },
     "domain": {
-      "formal_core": 151,
+      "formal_core": 152,
       "rg": 5,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -8197,6 +8197,60 @@
       "label": "vp_window44_totient_m1.py",
       "path": "05_CERTS/vp_window44_totient_m1.py",
       "exists": true
+    },
+    {
+      "id": "D0-TOWER-STOP-NOEXT-001",
+      "kind": "claim",
+      "claim_id": "D0-TOWER-STOP-NOEXT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_05",
+      "section": "M1 no-extension: tower stops at 3 zones, no 4th (05.6 obligation 5)",
+      "lean_module": "D0.Tower.NoExtension",
+      "lean_theorem": "no_extension_theorem",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_zone_repeat_catalog.py;vp_member_zone_isomorphism.py;vp_degree2_three_types.py",
+      "python_cert": [
+        "vp_zone_repeat_catalog.py",
+        "vp_member_zone_isomorphism.py",
+        "vp_degree2_three_types.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter9 obligation-5 closure, BOOK_05 §05.6] The M1 no-extension no-go (the last open meta-step of the carrier forcing): no admissible structure registers a 4th zone. Two cases (DEF-0.2.2). CASE 2 (Z4 repeats a type): >=2 copies carry a nontrivial copy-permutation symmetry (|S_2|=2>1, native_decide), no canonical copy => copy-index = external catalogue => bot M1 (the Dedekind/Q8 §01.7.1A logic transferred; cert vp_zone_repeat_catalog.py). CASE 1 (Z4 a new type): the necessity-types are the SLOTS of the forced quadratic p^2+p=1 (p=phi^-1): p=DISTINGUISH, p^2=PRESERVE, =1=CLOSE -- 3 = 2 terms + 1 closure (degree-2, NOT a list). No 4th INDEPENDENT slot: Z[p]/(p^2+p-1) rank 2, p^3=2p-1 reduces into span{1,p} (Lean p_cubed_reduces via linear_combination on D0.Core.Phi phi_inv_satisfies_primitive); a p^3 'type' is iterated runtime (BOOK_01:556) = a repeat => CASE 2. certs vp_member_zone_isomorphism.py + vp_degree2_three_types.py. Lean D0.Tower.NoExtension (no_extension_theorem): degree2_closure ^ p_cubed_reduces ^ repeat-symmetry => no 4th zone => tower stops at [9,11,13]. HONEST: the COUNT (3 slots) + NO-4th are Lean-proved exactly; the role-NAMES cite forced primitives (registration BOOK_01 / self-application / M1+ BOOK_00), assembled not re-derived. CASCADE: this forces the 3-COUNT (rank=3); the leaves' SEPARATE geometric gap (rank-3=causal-cone, D0-COMPACTNESS-LIMIT-001) is unchanged -- the count is forced, the geometric identification is NOT promoted here.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Tower/NoExtension.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Tower.NoExtension",
+      "kind": "lean_module",
+      "label": "D0.Tower.NoExtension",
+      "path": "09_LEAN_FORMALIZATION/D0/Tower/NoExtension.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_zone_repeat_catalog.py",
+      "kind": "python_cert",
+      "label": "vp_zone_repeat_catalog.py",
+      "path": "05_CERTS/vp_zone_repeat_catalog.py",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_member_zone_isomorphism.py",
+      "kind": "python_cert",
+      "label": "vp_member_zone_isomorphism.py",
+      "path": "05_CERTS/vp_member_zone_isomorphism.py",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_degree2_three_types.py",
+      "kind": "python_cert",
+      "label": "vp_degree2_three_types.py",
+      "path": "05_CERTS/vp_degree2_three_types.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -11613,6 +11667,31 @@
     {
       "source": "D0-WINDOW44-TOTIENT-M1-001",
       "target": "cert:vp_window44_totient_m1.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TOWER-STOP-NOEXT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TOWER-STOP-NOEXT-001",
+      "target": "module:D0.Tower.NoExtension",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TOWER-STOP-NOEXT-001",
+      "target": "cert:vp_zone_repeat_catalog.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TOWER-STOP-NOEXT-001",
+      "target": "cert:vp_member_zone_isomorphism.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TOWER-STOP-NOEXT-001",
+      "target": "cert:vp_degree2_three_types.py",
       "kind": "certified_by"
     }
   ]

@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3226,
-    "track_fair_max": 4428,
-    "pct_strength": 72.9,
-    "core_realized": 2737,
-    "core_potential": 3920,
+    "realized": 3246,
+    "track_fair_max": 4448,
+    "pct_strength": 73.0,
+    "core_realized": 2757,
+    "core_potential": 3940,
     "core_headroom": 1183,
-    "n_claims": 248,
-    "n_active": 247,
+    "n_claims": 249,
+    "n_active": 248,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 151,
-      "realized": 2173,
-      "max": 2875,
+      "n": 152,
+      "realized": 2193,
+      "max": 2895,
       "core_headroom": 697
     },
     "rg": {
@@ -379,6 +379,12 @@
       "n": 2,
       "realized": 22,
       "max": 22,
+      "core_headroom": 0
+    },
+    "BOOK_05": {
+      "n": 1,
+      "realized": 20,
+      "max": 20,
       "core_headroom": 0
     }
   },
@@ -5319,6 +5325,20 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TOWER-STOP-NOEXT-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
       "leverage": 0,
       "integrity_flag": null
     }

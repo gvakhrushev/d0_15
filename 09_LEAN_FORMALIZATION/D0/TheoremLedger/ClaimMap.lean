@@ -374,7 +374,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ENTROPIC-DARK-GRAVITY-001", moduleName := "D0.Bridge.VerlindeEntropicBridge",
       theoremName := "verlinde_entropic_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-GENERATIVE-DYNAMICS-001", moduleName := "D0.Claims.GluingAnomalyTime",
-      theoremName := "gluing_anomaly_time", status := ClaimStatus.leanCoreProved }
+      theoremName := "gluing_anomaly_time", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TOWER-STOP-NOEXT-001", moduleName := "D0.Tower.NoExtension",
+      theoremName := "no_extension_theorem", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

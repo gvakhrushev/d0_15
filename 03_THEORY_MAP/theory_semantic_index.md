@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 72
-- `CORE-FORMALIZED`: 110
+- `CORE-FORMALIZED`: 111
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 19
 - `certificate`: 86
-- `core`: 111
+- `core`: 112
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 151
+- `formal_core`: 152
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -2442,6 +2442,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Generation selector noncommutativity is sourced from finite torus shell geometry rather than a detached fixture selector.
+
+### D0-TOWER-STOP-NOEXT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Tower.NoExtension`
+- theorem: `no_extension_theorem`
+- cert: `vp_zone_repeat_catalog.py;vp_member_zone_isomorphism.py;vp_degree2_three_types.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter9 obligation-5 closure, BOOK_05 §05.6] The M1 no-extension no-go (the last open meta-step of the carrier forcing): no admissible structure registers a 4th zone. Two cases (DEF-0.2.2). CASE 2 (Z4 repeats a type): >=2 copies carry a nontrivial copy-permutation symmetry (|S_2|=2>1, native_decide), no canonical copy => copy-index = external catalogue => bot M1 (the Dedekind/Q8 §01.7.1A logic transferred; cert vp_zone_repeat_catalog.py). CASE 1 (Z4 a new type): the necessity-types are the SLOTS of the forced quadratic p^2+p=1 (p=phi^-1): p=DISTINGUISH, p^2=PRESERVE, =1=CLOSE -- 3 = 2 terms + 1 closure (degree-2, NOT a list). No 4th INDEPENDENT slot: Z[p]/(p^2+p-1) rank 2, p^3=2p-1 reduces into span{1,p} (Lean p_cubed_reduces via linear_combination on D0.Core.Phi phi_inv_satisfies_primitive); a p^3 'type' is iterated runtime (BOOK_01:556) = a repeat => CASE 2. certs vp_member_zone_isomorphism.py + vp_degree2_three_types.py. Lean D0.Tower.NoExtension (no_extension_theorem): degree2_closure ^ p_cubed_reduces ^ repeat-symmetry => no 4th zone => tower stops at [9,11,13]. HONEST: the COUNT (3 slots) + NO-4th are Lean-proved exactly; the role-NAMES cite forced primitives (registration BOOK_01 / self-application / M1+ BOOK_00), assembled not re-derived. CASCADE: this forces the 3-COUNT (rank=3); the leaves' SEPARATE geometric gap (rank-3=causal-cone, D0-COMPACTNESS-LIMIT-001) is unchanged -- the count is forced, the geometric identification is NOT promoted here.
 
 ### D0-VIETA-GALOIS-ABCD-001
 

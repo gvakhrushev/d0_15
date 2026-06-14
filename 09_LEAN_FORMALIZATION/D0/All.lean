@@ -318,4 +318,5 @@ import D0.Topology.NoThreeSimplices
 import D0.Topology.SimplicialIncidence
 import D0.Topology.TilingHull
 import D0.Topology.TripartiteComplex
+import D0.Tower.NoExtension
 import D0.Traceability.StatusTaxonomy

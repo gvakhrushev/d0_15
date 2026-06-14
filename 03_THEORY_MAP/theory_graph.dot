@@ -249,6 +249,7 @@ digraph D0Theory {
   "D0-FOURCOLOR-HORIZON-CAPACITY-001" [label="D0-FOURCOLOR-HORIZON-CAPACITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CKM-PMNS-COMPLEMENTARITY-001" [label="D0-CKM-PMNS-COMPLEMENTARITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-WINDOW44-TOTIENT-M1-001" [label="D0-WINDOW44-TOTIENT-M1-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-TOWER-STOP-NOEXT-001" [label="D0-TOWER-STOP-NOEXT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1615,4 +1616,14 @@ digraph D0Theory {
   "D0-WINDOW44-TOTIENT-M1-001" -> "cert:vp_window44_totient_m1.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-WINDOW44-TOTIENT-M1-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Tower.NoExtension" [label="D0.Tower.NoExtension", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-TOWER-STOP-NOEXT-001" -> "module:D0.Tower.NoExtension" [label="module"];
+  "cert:vp_zone_repeat_catalog.py" [label="vp_zone_repeat_catalog.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-TOWER-STOP-NOEXT-001" -> "cert:vp_zone_repeat_catalog.py" [label="cert"];
+  "cert:vp_member_zone_isomorphism.py" [label="vp_member_zone_isomorphism.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-TOWER-STOP-NOEXT-001" -> "cert:vp_member_zone_isomorphism.py" [label="cert"];
+  "cert:vp_degree2_three_types.py" [label="vp_degree2_three_types.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-TOWER-STOP-NOEXT-001" -> "cert:vp_degree2_three_types.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-TOWER-STOP-NOEXT-001" -> "domain:formal_core" [label="domain"];
 }
