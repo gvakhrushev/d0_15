@@ -281,10 +281,6 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "fractal_continuum_witness_halting_corrected", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-GRAV-006", moduleName := "D0.Gravity.HorizonJetAndBaryonPole",
       theoremName := "horizon_jet_baryon_pole_layer_cert", status := ClaimStatus.pythonCertClosed },
-    { claimId := "D0-EDGE-001", moduleName := "D0.Edge.AlphaRamificationConstructive",
-      theoremName := "edge_alpha_trace_target", status := ClaimStatus.openObligation },
-    { claimId := "D0-EDGE-002", moduleName := "D0.Edge.AlphaRamificationConstructive",
-      theoremName := "torus_ramification_puiseux_target", status := ClaimStatus.openObligation },
     { claimId := "D0-EDGE-ALPHA-001", moduleName := "D0.Edge.AlphaRamificationConstructive",
       theoremName := "edge_alpha_trace_seam_cert", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-EDGE-RAMIFICATION-001", moduleName := "D0.Edge.RamificationFromUeEffCompanion",
@@ -352,7 +348,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-SYMPLECTIC-GLEASON-001", moduleName := "D0.Synthesis.CarrierForcing",
       theoremName := "symplectic_form_unique", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CLASS5-ALIASING-001", moduleName := "D0.Claims.Class5Aliasing",
-      theoremName := "class5_aliasing", status := ClaimStatus.leanCoreProved }
+      theoremName := "class5_aliasing", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RANK3-CAUSAL-CONE-001", moduleName := "D0.Synthesis.RankCausalCone",
+      theoremName := "rank3_causal_cone", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

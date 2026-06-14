@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 2953,
-    "track_fair_max": 3995,
-    "pct_strength": 73.9,
-    "core_realized": 2533,
-    "core_potential": 3560,
+    "realized": 2973,
+    "track_fair_max": 4015,
+    "pct_strength": 74.0,
+    "core_realized": 2553,
+    "core_potential": 3580,
     "core_headroom": 1027,
-    "n_claims": 223,
-    "n_active": 222,
+    "n_claims": 224,
+    "n_active": 223,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 130,
-      "realized": 1923,
-      "max": 2500,
+      "n": 131,
+      "realized": 1943,
+      "max": 2520,
       "core_headroom": 572
     },
     "rg": {
@@ -148,9 +148,9 @@
       "core_headroom": 70
     },
     "BOOK_07": {
-      "n": 35,
-      "realized": 449,
-      "max": 628,
+      "n": 36,
+      "realized": 469,
+      "max": 648,
       "core_headroom": 169
     },
     "BOOK_06/08": {
@@ -377,16 +377,6 @@
     }
   },
   "cheapest_promotions": [
-    {
-      "claim_id": "D0-EDGE-ALPHA-001",
-      "domain": "formal_core",
-      "book": "BOOK_04",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 2,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
     {
       "claim_id": "D0-GRAV-006",
       "domain": "formal_core",
@@ -641,6 +631,16 @@
       "claim_id": "D0-IM-005",
       "domain": "smooth_geometry",
       "book": "BOOK_01/02/06",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-EDGE-ALPHA-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -988,26 +988,6 @@
       "effort": "write Lean proof"
     },
     {
-      "claim_id": "D0-EDGE-001",
-      "domain": "frontier",
-      "book": "BOOK_04",
-      "level_name": "HYP",
-      "leverage": 2,
-      "next": "CERT_SCAFFOLD",
-      "points_gained": 2,
-      "effort": "write cert scaffold"
-    },
-    {
-      "claim_id": "D0-EDGE-002",
-      "domain": "frontier",
-      "book": "BOOK_04",
-      "level_name": "HYP",
-      "leverage": 2,
-      "next": "CERT_SCAFFOLD",
-      "points_gained": 2,
-      "effort": "write cert scaffold"
-    },
-    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1088,6 +1068,26 @@
       "effort": "write cert scaffold"
     },
     {
+      "claim_id": "D0-EDGE-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-EDGE-002",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
       "claim_id": "D0-PUB-001",
       "domain": "frontier",
       "book": "PUBLICATION",
@@ -1119,27 +1119,6 @@
     }
   ],
   "leverage_gaps": [
-    {
-      "claim_id": "D0-EDGE-001",
-      "domain": "frontier",
-      "leverage": 2,
-      "level_name": "HYP",
-      "score": 2
-    },
-    {
-      "claim_id": "D0-EDGE-002",
-      "domain": "frontier",
-      "leverage": 2,
-      "level_name": "HYP",
-      "score": 2
-    },
-    {
-      "claim_id": "D0-EDGE-ALPHA-001",
-      "domain": "formal_core",
-      "leverage": 2,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
     {
       "claim_id": "D0-GRAV-006",
       "domain": "formal_core",
@@ -1205,6 +1184,20 @@
     },
     {
       "claim_id": "D0-CVFT-F8",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-EDGE-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-EDGE-002",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -1395,6 +1388,13 @@
     {
       "claim_id": "D0-IM-005",
       "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-EDGE-ALPHA-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -3723,7 +3723,7 @@
       "lean_status": "OPEN",
       "domain": "frontier",
       "book": "BOOK_04",
-      "leverage": 2,
+      "leverage": 0,
       "integrity_flag": null
     },
     {
@@ -3737,7 +3737,7 @@
       "lean_status": "OPEN",
       "domain": "frontier",
       "book": "BOOK_04",
-      "leverage": 2,
+      "leverage": 0,
       "integrity_flag": null
     },
     {
@@ -3751,7 +3751,7 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_04",
-      "leverage": 2,
+      "leverage": 0,
       "integrity_flag": null
     },
     {
@@ -4759,6 +4759,20 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "empirical_passport",
       "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RANK3-CAUSAL-CONE-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
     }

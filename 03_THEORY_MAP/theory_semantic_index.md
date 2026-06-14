@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
 - `CERT-CLOSED`: 62
-- `CORE-FORMALIZED`: 104
+- `CORE-FORMALIZED`: 105
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 14
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 13
 - `certificate`: 75
-- `core`: 105
+- `core`: 106
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 130
+- `formal_core`: 131
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -764,7 +764,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_gravastar_compactness.py`
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter4 Phase1 T1.2] LEM with one NAMED GAP. Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (named gap: rank-3=causal-cone): rank-3=causal-cone postulated, not M1-forced => LEM, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.) [Iter4 note] Held at CERT-CLOSED (LEM): the 3/8 algebra is cert-exact; the rank-3=causal-cone NAMED GAP keeps it below THE and is recorded in the cert + BOOK_07 07.51.3, not as a formal ledger assumption.
+- notes: [Iter4 Phase1 T1.2] LEM with one NAMED GAP. Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (named gap: rank-3=causal-cone): rank-3=causal-cone postulated, not M1-forced => LEM, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.) [Iter4 note] Held at CERT-CLOSED (LEM): the 3/8 algebra is cert-exact; the rank-3=causal-cone NAMED GAP keeps it below THE and is recorded in the cert + BOOK_07 07.51.3, not as a formal ledger assumption. [Iter5] Named gap SHARPENED: the (3,1)->causal-cone half is now Lean-proved (D0.Synthesis.RankCausalCone, rank3_causal_cone); residual gap narrowed to the scene-rank-3 <-> cone-space identification. Still LEM, not THE.
 
 ### D0-CVFT-F4
 
@@ -1271,7 +1271,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_zeta_residue_alpha.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|, zeta_adj(0)=3=rank; one zeta carries alpha+capacity. phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction.
+- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|, zeta_adj(0)=3=rank; one zeta carries alpha+capacity. phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier).
 
 ### D0-ARCHIVE-ACTION-001
 
@@ -2040,6 +2040,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: One D0PhiCutProject finite cut-and-project owner yields generation inflation classes archive phason dark metric response window-offset chirality phason-flip rewrite inertia and fractional window-sector charge weights.
 
+### D0-RANK3-CAUSAL-CONE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Synthesis.RankCausalCone`
+- theorem: `rank3_causal_cone`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter5 Track2] SHARPENS (does not close) the gravastar compactness named gap. Lean D0.Synthesis.RankCausalCone (rank3_causal_cone) proves the (3,1)->Minkowski-cone structure: Q=a^2-b^2-c^2-d^2 indefinite (timelike+spacelike) with a nontrivial null direction, plus the Pisot time arrow |psi|<1 (reused). NAMED GAP remaining: the scene-rank-3 <-> cone-space identification is still postulated (this proves the cone EXISTS for (3,1); not that the scene rank-3 IS that spatial sector). Supporting synthesis, modest scope; D0-COMPACTNESS-LIMIT-001 stays LEM.
+
 ### D0-SCENE-001
 
 - type: `core`
@@ -2340,7 +2353,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED]
+- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001.
 
 ### D0-CVFT-F2
 
@@ -2400,12 +2413,12 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - release_status: `PROOF-TARGET`
 - domain: `frontier`
 - book: `BOOK_04`
-- module: `D0.Edge.AlphaRamificationConstructive`
+- module: ``
 - theorem: `edge_alpha_trace_target`
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Guardrail target retained.
+- notes: Guardrail target retained. [Iter5 repoint] Cleared phantom module path D0.Edge.AlphaRamificationConstructive (no file on disk). The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is already proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one; the unitary-dilation leg (and EDGE-002 Puiseux) remain the open obligation. OWNER-DECISION: split EDGE-001 trace-leg (closeable) from the dilation leg.
 
 ### D0-EDGE-002
 
@@ -2413,12 +2426,12 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - release_status: `PROOF-TARGET`
 - domain: `frontier`
 - book: `BOOK_04`
-- module: `D0.Edge.AlphaRamificationConstructive`
+- module: ``
 - theorem: `torus_ramification_puiseux_target`
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Guardrail target retained.
+- notes: Guardrail target retained. [Iter5 repoint] Cleared phantom module path D0.Edge.AlphaRamificationConstructive (no file on disk). The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is already proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one; the unitary-dilation leg (and EDGE-002 Puiseux) remain the open obligation. OWNER-DECISION: split EDGE-001 trace-leg (closeable) from the dilation leg.
 
 ### D0-HORIZON-JET-001
 

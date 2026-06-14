@@ -287,6 +287,7 @@ import D0.Spectrum.GenerationTensorExactness
 import D0.Spectrum.Pi0BranchDefectControls
 import D0.Spectrum.Pi0BranchDefectGeneration
 import D0.Synthesis.CarrierForcing
+import D0.Synthesis.RankCausalCone
 import D0.Synthesis.Z2SpinorCover
 import D0.TheoremLedger.ActiveClosureIndex
 import D0.TheoremLedger.ClaimMap

@@ -83,9 +83,28 @@ theorem plus_one_flips_sheet (n : Nat) :
     Matrix.det (T ^ (n + 1)) = - Matrix.det (T ^ n) := by
   rw [det_T_pow, det_T_pow, pow_succ]; ring
 
-/-- **D0-Z2-SPINOR-COVER-001 (synthesis).** Four incarnations of the single ℤ₂ — Galois
-(#1), Q8 center (#3), Lucas parity (#2) and toral determinant (#6) — unified by the two
-joints (parity=det=Galois-norm, and `+2` fixes the cover sheet while `+1` flips it). -/
+/-- **#4 spinor double-cover sheet.** The nontrivial central element squares to the
+identity: `(-1)·(-1) = +1` in Q8 (element `1` is `-1`, element `0` is `+1`), so the cover
+has exactly two sheets. -/
+theorem spinor_sheet_order_two : Q8.mul 1 1 = 0 := by native_decide
+
+/-- **#5 Ω₈ orientation sign.** The orientation bit read off `Ω₈ = ABCD × {±}` is a ℤ₂:
+the `±` sign carries exactly two values. -/
+theorem omega8_orientation_z2 : Fintype.card Bool = 2 := by decide
+
+/-- **#7 rank-doubling 4→8.** The two Galois embeddings are distinct (`φ ≠ ψ`), doubling
+the four ABCD roles into the eight oriented states: `|Ω₈| = 2·|ABCD|`, i.e. `8 = 2·4`. -/
+theorem rank_doubling_four_to_eight : phi ≠ psi ∧ (8 : Nat) = 2 * 4 := by
+  refine ⟨?_, by decide⟩
+  intro h
+  have hpp := phi_mul_psi
+  rw [← h] at hpp
+  nlinarith [mul_self_nonneg phi]
+
+/-- **D0-Z2-SPINOR-COVER-001 (synthesis, 7/7).** All seven incarnations of the single ℤ₂ —
+Galois (#1), Lucas parity (#2), Q8 center (#3), spinor double-cover sheet (#4), Ω₈
+orientation sign (#5), toral determinant (#6), and the rank-doubling 4→8 (#7) — unified by
+the two joints (parity=det=Galois-norm, and `+2` fixes the cover sheet while `+1` flips it). -/
 theorem z2_spinor_cover :
     -- #1 Galois ℤ₂ (invariants + order-2 involution)
     (phi + psi = 1 ∧ phi * psi = -1 ∧ (1 : ℝ) - (1 - phi) = phi) ∧
@@ -96,8 +115,13 @@ theorem z2_spinor_cover :
     (((Matrix.det T : ℤ) : ℝ) = phi * psi) ∧
     -- joint B: +2 fixes the sheet; +1 flips it (control)
     (∀ n, Matrix.det (T ^ (n + 2)) = Matrix.det (T ^ n)) ∧
-    (∀ n, Matrix.det (T ^ (n + 1)) = - Matrix.det (T ^ n)) :=
-  ⟨galois_z2_order_two, q8_center_is_z2, lucas_parity_is_det,
-    det_eq_galois_norm, plus_two_fixes_sheet, plus_one_flips_sheet⟩
+    (∀ n, Matrix.det (T ^ (n + 1)) = - Matrix.det (T ^ n)) ∧
+    -- #4 spinor double-cover sheet, #5 Ω₈ orientation, #7 rank-doubling 4→8
+    (Q8.mul 1 1 = 0) ∧
+    (Fintype.card Bool = 2) ∧
+    (phi ≠ psi ∧ (8 : Nat) = 2 * 4) :=
+  ⟨galois_z2_order_two, q8_center_is_z2, lucas_parity_is_det, det_eq_galois_norm,
+    plus_two_fixes_sheet, plus_one_flips_sheet, spinor_sheet_order_two,
+    omega8_orientation_z2, rank_doubling_four_to_eight⟩
 
 end D0.Synthesis

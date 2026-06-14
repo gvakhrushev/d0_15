@@ -224,6 +224,7 @@ digraph D0Theory {
   "D0-PMNS-DELTA0-NUFIT-001" [label="D0-PMNS-DELTA0-NUFIT-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-H0-EVOLVING-W-001" [label="D0-H0-EVOLVING-W-001\\nEMPIRICAL-PASSPORT\\nsi_calibration", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-E8-COLDEA-ANCHOR-001" [label="D0-E8-COLDEA-ANCHOR-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-RANK3-CAUSAL-CONE-001" [label="D0-RANK3-CAUSAL-CONE-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1000,12 +1001,12 @@ digraph D0Theory {
   "D0-GRAV-006" -> "cert:vp_horizon_jet_axis_observable.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-GRAV-006" -> "domain:formal_core" [label="domain"];
-  "module:D0.Edge.AlphaRamificationConstructive" [label="D0.Edge.AlphaRamificationConstructive", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-EDGE-001" -> "module:D0.Edge.AlphaRamificationConstructive" [label="module"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-EDGE-001" -> "module:" [label="module"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-EDGE-001" -> "domain:frontier" [label="domain"];
-  "module:D0.Edge.AlphaRamificationConstructive" [label="D0.Edge.AlphaRamificationConstructive", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-EDGE-002" -> "module:D0.Edge.AlphaRamificationConstructive" [label="module"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-EDGE-002" -> "module:" [label="module"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-EDGE-002" -> "domain:frontier" [label="domain"];
   "module:D0.Edge.AlphaRamificationConstructive" [label="D0.Edge.AlphaRamificationConstructive", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
@@ -1440,4 +1441,8 @@ digraph D0Theory {
   "D0-E8-COLDEA-ANCHOR-001" -> "cert:vp_e8_coldea_anchor.py" [label="cert"];
   "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-E8-COLDEA-ANCHOR-001" -> "domain:empirical_passport" [label="domain"];
+  "module:D0.Synthesis.RankCausalCone" [label="D0.Synthesis.RankCausalCone", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-RANK3-CAUSAL-CONE-001" -> "module:D0.Synthesis.RankCausalCone" [label="module"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-RANK3-CAUSAL-CONE-001" -> "domain:formal_core" [label="domain"];
 }
