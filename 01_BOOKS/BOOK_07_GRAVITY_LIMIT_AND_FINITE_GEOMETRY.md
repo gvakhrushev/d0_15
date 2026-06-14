@@ -1831,6 +1831,42 @@ Cross-book:
 - Book 05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
 - Book 08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
 
+### 07.50.1 Horizon formation as an arrested seam — the gravastar anchor
+
+Capacity saturation `σ(R) → 1` is the *static* horizon. Its companion is the *dynamical*
+question: does collapse actually reach saturation, or is the seam arrested before it closes?
+The external anchor is the horizonless gravastar (Jampolski–Rezzolla, PRD 113 L121502, 2026):
+an Oppenheimer–Snyder collapse whose de Sitter core supplies outward pressure and arrests
+the implosion before a horizon forms, leaving a thin-shell seam between a de Sitter interior
+`f_in = 1 − (r/L)²` and a Schwarzschild exterior `f_out = 1 − 2M/r`. In the D0 reading this
+is a seam that *fails to saturate* — `σ(R) < 1`, the cost stays finite, no information is
+made inaccessible. This fills a real gap: D0 had the static horizon-as-seam but no
+formation dynamics. Status: BRIDGE (external GR result + D0 seam reading; finite certificate
+reproduces the arrest with positive-energy Israel junction `f_in(R) > f_out(R)` and
+horizonless `2M < R < L`).
+
+### 07.50.2 The causal-threshold compactness `C_max = 3/8`
+
+The seam closes at a maximal compactness fixed by three closure conditions — the photon
+capture threshold `χ₂ = θ⋆`, the OS junction `2C = sin²χ₂`, and the cycle/holonomy return
+`cos θ⋆ = 4C − 1`. Eliminating the angles gives the master equation
+
+```math
+2C = 1 - (4C-1)^2 = 8C - 16C^2 \;\Longrightarrow\; 2C(8C - 3) = 0,
+```
+
+whose only nontrivial root is `C_max = M/R = 3/8`. This sits strictly between the photon
+sphere `1/3` and the Buchdahl bound `4/9`, and strictly below the black-hole value `1/2` —
+a specific, falsifiable, horizonless compactness with a finite margin `f_out = 1 − 2C = 1/4`.
+Structurally `3/8 = rank/|Ω₈|`, with `rank = 3` the spatial-transport rank of the scene and
+`|Ω₈| = 2³ = 8` the orientation×ABCD octet. Status: **LEM with a named gap** — the algebra
+of `3/8` is exact and machine-checked, but the bridge "rank-3 transport = the causal cone on
+the 3-sphere seam" is postulated, not yet derived from M1 (attempted via the Connes distance
+of Book 03 §03.1.1; open). It is **not** promoted to THE until that bridge is closed.
+
+New typed owner:
+- D0.Gravity.CompactnessLimit (the `3/8` master-root algebra, machine-checked over `ℚ`).
+
 ## 07.42 Phason/phonon split and dark metric response
 
 The finite quasicrystal operator layer separates active visible strain from
@@ -1987,6 +2023,43 @@ Electron-beam dusty-plasma experiments provide a macroscopic laboratory bridge f
 The useful horizon lesson is the sign switch: the periphery of a beam-plasma cloud can attract ordered dust structures, while the core can repel or clear grains. In D0 language this is a seam analogue: peripheral capture and core clearing are distinct finite regimes of the same active/archive interaction.
 
 This paragraph is not a claim that electron-beam dust fly-out is literally an astrophysical black-hole jet. It is a typed bridge: the laboratory system supplies an experimentally accessible force-balance analogue for channel clearing and archive ejection. The core D0 horizon operators remain finite-algebraic objects; external dusty-plasma behavior is used only as a tabletop passport seed.
+## 07.51 Horizonless arrest and the causal compactness ceiling
+
+The horizon-as-seam picture of §07.43–§07.50 is a *static* statement: a black-hole horizon is a capacity-saturated aggregate, `σ(R) → 1`, `Cost → ∞`. §07.49 gave the *birth* of such a horizon by discrete self-similar collapse. What was missing is the **complementary dynamics** — the case where collapse is *arrested* and the seam stays open, never reaching saturation. An external result now supplies exactly this counterpart, and reading it through the finite triple yields a sharp, falsifiable compactness ceiling.
+
+### 07.51.1 Arrested collapse forms a horizonless seam (bridge)
+
+The external anchor is the horizonless gravastar of Jampolski–Rezzolla (Phys. Rev. D **113**, L121502, 2026): a de Sitter core halts Oppenheimer–Snyder collapse *before* a horizon forms, leaving a compact object with no event horizon [^b07-51]. In the D0 reading the configuration is three regions — an interior de Sitter core `f_in(r) = 1 − (r/L)²`, a thin matching shell, and an exterior Schwarzschild region `f_out(r) = 1 − 2M/r` — joined by an Israel junction. A positive-energy shell requires `f_in(R) > f_out(R)`, and the object is horizonless on *both* sides precisely when
+
+```math
+2M < R < L,
+```
+
+so the exterior has no Schwarzschild horizon and the interior no de Sitter horizon. The collapse turns around; the measurement seam closes **without** the runaway saturation `σ(R) → 1` that a true horizon demands. This is the formation dynamics the seam picture lacked.
+
+This step is a **bridge**: the general-relativistic arrest and junction construction are owned by the external result; D0 contributes only the finite-seam reading and the compactness at which the seam closes. It is not derived from M1 and is not a core claim.
+
+### 07.51.2 The causal compactness ceiling `C_max = 3/8` (a named-gap lemma)
+
+The compactness at which the seam closes is not free. Treat the photon orbit that just grazes the seam (`χ₂ = θ⋆`), the junction closure relating compactness to the interior opening angle (`2C = sin²χ₂`), and the holonomy/return condition of the seam cycle (`cos θ⋆ = 4C − 1`). Eliminating the two angles gives a single master equation [^b07-52]:
+
+```math
+2C = 1 - (4C-1)^2 \;\Longleftrightarrow\; -2C\,(8C-3) = 0 \;\Longrightarrow\; C \in \{0,\ 3/8\}.
+```
+
+Discarding the trivial root, the maximal causal compactness is `C_max = 3/8 = 0.375`. It sits strictly between the photon sphere `1/3` and the Buchdahl bound `4/9`, and strictly below the black-hole value `1/2` — a specific horizonless prediction, not a tuned number. Structurally it reads as
+
+```math
+C_{\max} = \frac{\mathrm{rank}}{|\Omega_8|} = \frac{3}{8},
+```
+
+with `rank = 3` the spatial-transport rank of the scene adjacency (owned by the signature split) and `|Ω₈| = 2³ = 8` the role-orientation octet.
+
+The algebra of `3/8` is exact. Its *identification* with `rank/|Ω₈|` rests on one postulated bridge — that rank-3 transport is the causal light-cone on the 3-sphere seam — which is **not** forced from M1. Accordingly the result is a **lemma with a single named gap**, not a theorem: the master equation is closed, the structural reading is the open obligation.
+
+### 07.51.3 Attempt to close the gap (rank-3 = causal cone)
+
+The natural route to close the gap is the finite spectral triple of §03.1: the Connes distance is already defined from `spec(D)`, and a causal/Lorentzian reading would identify the three transport modes of the rank-3 adjacency with the spatial directions of a light-cone, the single Pisot modular flow supplying the time direction. Carrying this out would promote the lemma to a theorem. As of this writing the identification is **attempted but open** — rank is a static graph invariant, the causal cone is the separate cone-speed/signature content, and no derivation yet bridges the two. The gap is named here so it cannot drift silently into the core.
 
 
 ## Apparatus — sources & open obligations
@@ -2048,3 +2121,5 @@ II.4.SR.2–4, THE II.4.SR.5, COR II.4.SR.6
 [^b07-48]: forcing: GOLDEN DEF 75.1 / LEM 75.2
 [^b07-49]: forcing: GOLDEN THE 77.1
 [^b07-50]: forcing: GOLDEN COR 77.2; arrow-of-time-from-M1
+[^b07-51]: external anchor / bridge: Jampolski-Rezzolla PRD 113 L121502 (2026) arXiv:2509.15302 (horizonless gravastar, dS-core arrested OS collapse). cert vp_gravastar_os_arrest.py; claim D0-GRAVASTAR-FORMATION-BRIDGE-001 (BRIDGE, ASSUMP-GRAVASTAR-GR-EXTERNAL). GR junction physics owned externally; D0 owns the finite seam reading.
+[^b07-52]: LEM with named gap: cert vp_gravastar_compactness.py derives C_max=3/8 from -2C(8C-3)=0 (exact). Named gap ASSUMP-RANK3-CAUSAL-CONE (rank-3=causal-cone postulated, not M1-forced); claim D0-COMPACTNESS-LIMIT-001. T1.4 attempt via Connes distance (03.1) open.

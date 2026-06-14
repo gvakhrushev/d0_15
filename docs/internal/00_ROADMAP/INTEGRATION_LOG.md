@@ -471,3 +471,17 @@ theorem-targets. strength 2699→2746.
   scaffolding the firewall deliberately keeps out of core, and depend on still-absent flavor
   claims (PMNS-δ₀-family, icosian→E8). DEFERRED to backlog (#18) rather than fabricate
   passports for absent claims. Honesty over coverage-theatre.
+
+---
+
+## ITERATION 4 — Autonomous session (owner away ~2h; merged ТЗ + session groundwork)
+
+**Baseline (tag `base-pre-autonomous`, 216 canonical rows):** CORE-FORMALIZED 92,
+CERT-CLOSED 71, PROOF-TARGET 12, EMPIRICAL-PASSPORT 10, NO_GO_PROVED 8, NO-GO 8,
+BRIDGE-ASSUMPTIONS-EXPLICIT 7, CORE_BRIDGE_SPLIT 4, BRIDGE-CALIBRATION 2,
+EXTERNAL-BACKGROUND 1, DEPRECATED 1. strength 2753, hygiene 100, firewall violations 0.
+
+IRON RULES in force (firewall; α honesty boundary; no v17 overshoots; CSV+artifact+graph+log
+per change; OWNER-DECISION-NEEDED for owner-level calls; guillotine; positive closure delta).
+ТЗ Phases 2/3/4 + T5.2/T5.3 were ALREADY closed earlier this session (Roots A/B/C, S_DE fork,
+signature-3+1 CORE) — autonomous front executes the genuinely-remaining work.

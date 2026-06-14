@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 2753,
-    "track_fair_max": 3907,
+    "realized": 2774,
+    "track_fair_max": 3936,
     "pct_strength": 70.5,
     "core_realized": 2361,
     "core_potential": 3500,
     "core_headroom": 1139,
-    "n_claims": 216,
-    "n_active": 215,
+    "n_claims": 219,
+    "n_active": 218,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 128,
-      "realized": 1784,
-      "max": 2460,
+      "n": 130,
+      "realized": 1798,
+      "max": 2482,
       "core_headroom": 671
     },
     "rg": {
@@ -62,9 +62,9 @@
       "core_headroom": 52
     },
     "empirical_passport": {
-      "n": 17,
-      "realized": 127,
-      "max": 207,
+      "n": 18,
+      "realized": 134,
+      "max": 214,
       "core_headroom": 75
     },
     "cosmology": {
@@ -148,9 +148,9 @@
       "core_headroom": 70
     },
     "BOOK_07": {
-      "n": 33,
-      "realized": 370,
-      "max": 588,
+      "n": 35,
+      "realized": 384,
+      "max": 610,
       "core_headroom": 208
     },
     "BOOK_06/08": {
@@ -367,6 +367,12 @@
       "n": 1,
       "realized": 20,
       "max": 20,
+      "core_headroom": 0
+    },
+    "BOOK_09": {
+      "n": 1,
+      "realized": 7,
+      "max": 7,
       "core_headroom": 0
     }
   },
@@ -4808,6 +4814,48 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "empirical_passport",
       "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GRAVASTAR-FORMATION-BRIDGE-001",
+      "track": "BRIDGE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COMPACTNESS-LIMIT-001",
+      "track": "BRIDGE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GRAVASTAR-GW-FALSIFIER-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "EMPIRICAL-PASSPORT",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_09",
       "leverage": 0,
       "integrity_flag": null
     }

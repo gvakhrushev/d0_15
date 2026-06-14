@@ -185,6 +185,7 @@ import D0.Geometry.SpectralTower
 import D0.Geometry.TorusCore13GeometryOrigin
 import D0.Gravity
 import D0.Gravity.BoundaryRelaxationSpectrum
+import D0.Gravity.CompactnessLimit
 import D0.Gravity.CriticalCollapseDSS
 import D0.Gravity.EchoCapacityHorizon
 import D0.Gravity.EntropicArchiveInterface

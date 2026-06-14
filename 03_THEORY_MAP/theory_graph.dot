@@ -217,6 +217,9 @@ digraph D0Theory {
   "D0-SYMPLECTIC-GLEASON-001" [label="D0-SYMPLECTIC-GLEASON-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CLASS5-ALIASING-001" [label="D0-CLASS5-ALIASING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-VACUUM-CUBIC-WINDOW-001" [label="D0-VACUUM-CUBIC-WINDOW-001\\nCERT-CLOSED\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-GRAVASTAR-FORMATION-BRIDGE-001" [label="D0-GRAVASTAR-FORMATION-BRIDGE-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-COMPACTNESS-LIMIT-001" [label="D0-COMPACTNESS-LIMIT-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-GRAVASTAR-GW-FALSIFIER-001" [label="D0-GRAVASTAR-GW-FALSIFIER-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1391,4 +1394,26 @@ digraph D0Theory {
   "D0-VACUUM-CUBIC-WINDOW-001" -> "cert:vp_vacuum_cubic_window.py" [label="cert"];
   "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-VACUUM-CUBIC-WINDOW-001" -> "domain:empirical_passport" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-GRAVASTAR-FORMATION-BRIDGE-001" -> "module:" [label="module"];
+  "cert:vp_gravastar_os_arrest.py" [label="vp_gravastar_os_arrest.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-GRAVASTAR-FORMATION-BRIDGE-001" -> "cert:vp_gravastar_os_arrest.py" [label="cert"];
+  "assumption:ASSUMP-GRAVASTAR-GR-EXTERNAL" [label="ASSUMP-GRAVASTAR-GR-EXTERNAL", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-GRAVASTAR-FORMATION-BRIDGE-001" -> "assumption:ASSUMP-GRAVASTAR-GR-EXTERNAL" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-GRAVASTAR-FORMATION-BRIDGE-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-COMPACTNESS-LIMIT-001" -> "module:" [label="module"];
+  "cert:vp_gravastar_compactness.py" [label="vp_gravastar_compactness.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-COMPACTNESS-LIMIT-001" -> "cert:vp_gravastar_compactness.py" [label="cert"];
+  "assumption:ASSUMP-RANK3-CAUSAL-CONE" [label="ASSUMP-RANK3-CAUSAL-CONE", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-COMPACTNESS-LIMIT-001" -> "assumption:ASSUMP-RANK3-CAUSAL-CONE" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-COMPACTNESS-LIMIT-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-GRAVASTAR-GW-FALSIFIER-001" -> "module:" [label="module"];
+  "cert:vp_gravastar_gw_falsifier.py" [label="vp_gravastar_gw_falsifier.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-GRAVASTAR-GW-FALSIFIER-001" -> "cert:vp_gravastar_gw_falsifier.py" [label="cert"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-GRAVASTAR-GW-FALSIFIER-001" -> "domain:empirical_passport" [label="domain"];
 }

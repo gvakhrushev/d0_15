@@ -5,13 +5,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
 - `BRIDGE-CALIBRATION`: 2
 - `CERT-CLOSED`: 71
 - `CORE-FORMALIZED`: 92
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
-- `EMPIRICAL-PASSPORT`: 10
+- `EMPIRICAL-PASSPORT`: 11
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 8
 - `NO_GO_PROVED`: 8
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 80
+- `certificate`: 83
 - `core`: 93
 - `deprecated`: 2
 - `frontier`: 12
@@ -29,9 +29,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 22
-- `empirical_passport`: 17
+- `empirical_passport`: 18
 - `external_background`: 1
-- `formal_core`: 128
+- `formal_core`: 130
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -422,6 +422,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] self-declared TABLETOP-PASSPORT-SEED; forbids core promotion.
 
+### D0-GRAVASTAR-GW-FALSIFIER-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_09`
+- module: ``
+- theorem: `none`
+- cert: `vp_gravastar_gw_falsifier.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter4 Phase1 T1.3] Second GW falsifier beyond I_f=log phi. At C=3/8 the surface R=8M/3 is INSIDE the photon sphere 3M (and outside horizon 2M) -> light-ring cavity -> GW echoes (a BH has no surface/cavity, no echoes). Cert vp_gravastar_gw_falsifier.py: 2M<R_surf<3M, echo delay tau=2[r*(3M)-r*(8M/3)]~2.29M (short-delay), dimensionless in M; BH control has no cavity. PASSPORT TARGET, never core; NOT claimed from current LIGO (Book 09 discipline: predicts-as-target). Echo mechanism standard (Cardoso-Pani).
+
 ### D0-PASSPORT-CORE13-001
 
 - type: `certificate`
@@ -622,6 +635,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Fixed finite boundary trace-heat capacity block proves T^2 heat moments as even Lucas traces and saturation as boundary encoding while macro gravity stays bridge-scoped through the finite witness.
+
+### D0-COMPACTNESS-LIMIT-001
+
+- type: `certificate`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_gravastar_compactness.py`
+- assumptions: `ASSUMP-RANK3-CAUSAL-CONE`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter4 Phase1 T1.2] LEM with one NAMED GAP. Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (ASSUMP-RANK3-CAUSAL-CONE): rank-3=causal-cone postulated, not M1-forced => LEM, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.)
+
+### D0-GRAVASTAR-FORMATION-BRIDGE-001
+
+- type: `certificate`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_gravastar_os_arrest.py`
+- assumptions: `ASSUMP-GRAVASTAR-GR-EXTERNAL`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter4 Phase1 T1.1] External anchor (PRD 113 L121502 / arXiv:2509.15302): a de Sitter core arrests OS collapse before a horizon forms. Fills a real D0 hole (had static horizon=seam + horizon BIRTH, but no collapse-ARREST). Cert vp_gravastar_os_arrest.py: 3-region dS/shell/Schwarzschild, Israel junction f_in(R)>f_out(R) (sigma>0), horizonless both sides 2M<R<L, seam closes at C=3/8 (f_out=1/4>0); negative control: no dS core -> horizon at C=1/2. BRIDGE: GR junction physics owned externally, D0 owns the finite seam reading. NOT core.
 
 ### D0-ALPHA-ZETA-RESIDUE-001
 
