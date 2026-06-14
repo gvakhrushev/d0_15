@@ -955,6 +955,8 @@ is the first terminal phase-return window.  Its admissible coprime branch count 
 
 Thus the terminal shell degree is the branch count of the first stable phase unfolding.
 
+**Why `20` is M1-forced (totient formulation).** The branch count `\varphi_E(44)=20` is not a tuned integer: it is the Euler totient `|(\mathbb{Z}/44)^\times| = 44(1-\tfrac12)(1-\tfrac1{11}) = 20`, which is also `|\mathrm{Aut}(\mathbb{Z}/44)|`. Any other count `k\neq20` would change the automorphism class of the window, producing a new admissibility class that can only be selected by an *external catalogue* — forbidden by M1. So `20` is forced, not chosen (claim `D0-WINDOW44-TOTIENT-M1-001`, cert `vp_window44_totient_m1.py`; neighbours `\varphi_E(43)=42`, `\varphi_E(45)=24` differ, confirming the window is sharp). This sharpens `D0-WINDOW44-GROUP-SPECTRUM-001`.
+
 The second return is
 
 \[

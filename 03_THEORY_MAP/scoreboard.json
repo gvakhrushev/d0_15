@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3219,
-    "track_fair_max": 4408,
-    "pct_strength": 73.0,
-    "core_realized": 2730,
-    "core_potential": 3900,
-    "core_headroom": 1170,
-    "n_claims": 247,
-    "n_active": 246,
+    "realized": 3226,
+    "track_fair_max": 4428,
+    "pct_strength": 72.9,
+    "core_realized": 2737,
+    "core_potential": 3920,
+    "core_headroom": 1183,
+    "n_claims": 248,
+    "n_active": 247,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 150,
-      "realized": 2166,
-      "max": 2855,
-      "core_headroom": 684
+      "n": 151,
+      "realized": 2173,
+      "max": 2875,
+      "core_headroom": 697
     },
     "rg": {
       "n": 5,
@@ -148,10 +148,10 @@
       "core_headroom": 75
     },
     "BOOK_07": {
-      "n": 44,
-      "realized": 546,
-      "max": 790,
-      "core_headroom": 234
+      "n": 45,
+      "realized": 553,
+      "max": 810,
+      "core_headroom": 247
     },
     "BOOK_06/08": {
       "n": 5,
@@ -1084,6 +1084,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-WINDOW44-TOTIENT-M1-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1811,6 +1821,13 @@
     },
     {
       "claim_id": "D0-CKM-PMNS-COMPLEMENTARITY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-WINDOW44-TOTIENT-M1-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5288,6 +5305,20 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-WINDOW44-TOTIENT-M1-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
     }

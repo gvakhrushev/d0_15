@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 247,
+    "claims": 248,
     "release_status": {
       "CORE-FORMALIZED": 110,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 12,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 71,
+      "CERT-CLOSED": 72,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 131,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 13,
-      "PYTHON_CERTIFIED": 86,
+      "PYTHON_CERTIFIED": 87,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 111,
       "bridge": 19,
       "no-go": 16,
-      "certificate": 85,
+      "certificate": 86,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 150,
+      "formal_core": 151,
       "rg": 5,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -8166,6 +8166,37 @@
       "label": "vp_ckm_pmns_orthogonality.py",
       "path": "05_CERTS/vp_ckm_pmns_orthogonality.py",
       "exists": true
+    },
+    {
+      "id": "D0-WINDOW44-TOTIENT-M1-001",
+      "kind": "claim",
+      "claim_id": "D0-WINDOW44-TOTIENT-M1-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "phi_E(44)=20=d_13 M1-forced (researcher §01.25, verified) 07.23",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_window44_totient_m1.py",
+      "python_cert": [
+        "vp_window44_totient_m1.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter8 researcher doc 2 §01.25, verified CORRECT, entered as-is] The first terminal phase-return window q_T=|ABCD|*|V_11|=4*11=44 has admissible coprime branch count = Euler totient phi_E(44)=|(Z/44)*|=20=d_13 (terminal shell degree). cert vp_window44_totient_m1.py: phi_E(44)=44*(1-1/2)*(1-1/11)=20 exact, |(Z/44)*|=20 by direct count, neighbours phi_E(43)=42, phi_E(45)=24 differ. M1 formulation: |Aut(Z/44)|=phi_E(44)=20; any branch count k!=20 changes the automorphism class, needing an external catalogue to index it -> bot M1, so 20 is forced not chosen. Sharpens/confirms D0-WINDOW44-GROUP-SPECTRUM-001 and the §07.23 phase chain; no new free number.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_window44_totient_m1.py",
+      "kind": "python_cert",
+      "label": "vp_window44_totient_m1.py",
+      "path": "05_CERTS/vp_window44_totient_m1.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -11567,6 +11598,21 @@
     {
       "source": "D0-CKM-PMNS-COMPLEMENTARITY-001",
       "target": "cert:vp_ckm_pmns_orthogonality.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-WINDOW44-TOTIENT-M1-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-WINDOW44-TOTIENT-M1-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-WINDOW44-TOTIENT-M1-001",
+      "target": "cert:vp_window44_totient_m1.py",
       "kind": "certified_by"
     }
   ]

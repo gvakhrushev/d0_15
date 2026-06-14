@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 71
+- `CERT-CLOSED`: 72
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 19
-- `certificate`: 85
+- `certificate`: 86
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 150
+- `formal_core`: 151
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1441,6 +1441,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Root B synthesis bonus] Quasicrystal carrier = symbolic dynamics of the golden foliation of the time torus. Cert vp_quasicrystal_time_sturmian.py UPGRADES the prose-only 40-symbol check to EXACT executable: cut-and-project word slope phi^-2 = Fibonacci substitution word a->ab,b->a to N=4000 (exact isqrt floors floor(k phi)=(k+isqrt(5k^2))//2), rare-letter freq=phi^-2, aperiodic, rational-slope negative control. Arrow=Pisot |psi|=phi^-1<1 reuses D0-TIME-2D-PISOT-001 (proved). HONEST: proves EXACT SYMBOLIC coincidence only; full topological conjugacy (phi^-2 rotation = foliation return map; Morse-Hedlund/Vershik) needs ergodic machinery not in Mathlib -> theorem-target; arrow interpretation rests on Adler-Weiss external citation.
+
+### D0-WINDOW44-TOTIENT-M1-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_window44_totient_m1.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter8 researcher doc 2 §01.25, verified CORRECT, entered as-is] The first terminal phase-return window q_T=|ABCD|*|V_11|=4*11=44 has admissible coprime branch count = Euler totient phi_E(44)=|(Z/44)*|=20=d_13 (terminal shell degree). cert vp_window44_totient_m1.py: phi_E(44)=44*(1-1/2)*(1-1/11)=20 exact, |(Z/44)*|=20 by direct count, neighbours phi_E(43)=42, phi_E(45)=24 differ. M1 formulation: |Aut(Z/44)|=phi_E(44)=20; any branch count k!=20 changes the automorphism class, needing an external catalogue to index it -> bot M1, so 20 is forced not chosen. Sharpens/confirms D0-WINDOW44-GROUP-SPECTRUM-001 and the §07.23 phase chain; no new free number.
 
 ### D0-ABCD-001
 
