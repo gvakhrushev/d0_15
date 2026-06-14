@@ -597,6 +597,8 @@ Taking quantum dimensions gives `d^2=1+d`, hence `d=\varphi`; normalized to unit
 
 **Uniqueness (Ostrik 2003) and Ising-exclusion.** The minimal non-trivial fusion rule with exactly two simple objects and non-trivial self-fusion is uniquely the Fibonacci category (Ostrik 2003, classification of small fusion categories). The Ising category (three simple objects) is excluded: it admits an additional non-trivial fermion `\psi`, which is an extra hidden state, violating the no-bare-information-line axiom. Thus Fibonacci is the unique solution, and `\varphi` is forced a third time.
 
+**External anchor (corroboration, not derivation).** The one laboratory system where `E8` and `φ` appear together corroborates this structure: the transverse-field Ising chain `CoNb₂O₆` at quantum criticality realises Zamolodchikov's emergent `E8` mass spectrum, whose leading ratio is `m₂/m₁ = 2cos(π/5) = φ` (Coldea et al., Science **327** (2010) 177). The same golden ratio D0 forces by `p + p² = 1` governs an experimentally observed `E8` critical spectrum. This is an empirical passport, not a derivation — the D0 icosian→`E8` step itself remains an external-gap bridge (the relevant genus-uniqueness is not yet in the formal kernel).
+
 ### 01.6.1c The cascade: each floor forced by the insufficiency of the previous [^b01-29]
 
 The branch equation is not a detail of one layer; it is the seed of the whole spine. The architecture is not *assembled* from parts — it is the *unfolding* of a single requirement, each floor born from the insufficiency of the one below. In one line:

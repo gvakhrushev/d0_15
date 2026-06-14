@@ -733,6 +733,16 @@ against the lattice/FLAG cross-check `m_s/m_d=20.01\pm0.55` (0.03 sigma) and `si
 
 **Class 5** is killed by aliasing (winding 5 = address `D_Sigma=5` ⇒ pointer collision = hidden memory, grammar 01.11C). This exclusion — formerly the matter sector's **third soft joint** — is now closed at the finite level by a certificate: the order-5 subgroup of `(ℤ/44)*` has `|·| = 5 = D_Σ`, so the period-5 winding orbit bijects onto the 5 operational address classes (the pointer collision is exact), leaving survivors `{1, 20}`. What remains a theorem-target is only the full hidden-memory M1 contradiction, at the same standing as the (owned) class-4 kill.
 
+**External anchor — lepton mixing (passport target, not core).** The lepton sector carries the `δ₀`-family of mixing predictions, `δ₀ = (√5−2)/2 = 1/(2φ³)`:
+
+```math
+\sin^2\theta_{12} = \tfrac13 - 2\delta_0^2 = 0.3055,\quad
+\sin^2\theta_{13} = \tfrac{\varphi^{-5}}{4} = 0.02254,\quad
+\sin^2\theta_{23} = \tfrac12 + \tfrac{\delta_0}{2} = 0.559 .
+```
+
+All three land inside the NuFIT 6.0 normal-ordering bands (`0.307 / 0.0220 / 0.561`), and on `θ₁₂` the value `0.3055` is closer to data than golden-ratio-A (`0.276`), tri-bimaximal (`1/3`), and golden-ratio-B (`0.345`). JUNO will pin `sin²θ₁₂` to the sub-percent level — a central value outside `[0.300, 0.311]` rejects the family. This is an empirical-passport comparison (cite NuFIT 6.0; JUNO): `δ₀` is forced, but the angle *formulas* are not yet derived from M1, so the family is a falsifiable target, never core.
+
 [^b04-36] — the class-5 aliasing kill is the open soft-joint obligation; `m_s/m_d=20` and `sin theta_C=1/sqrt20` are carried as dossier claims above, and no new certificate is invented here.
 ## 04.6 Finite Born 2.0 in matter language
 

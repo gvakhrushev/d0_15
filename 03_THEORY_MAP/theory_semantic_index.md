@@ -11,7 +11,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `CORE-FORMALIZED`: 97
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
-- `EMPIRICAL-PASSPORT`: 11
+- `EMPIRICAL-PASSPORT`: 14
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 8
 - `NO_GO_PROVED`: 8
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 79
+- `certificate`: 82
 - `core`: 98
 - `deprecated`: 2
 - `frontier`: 12
@@ -29,14 +29,14 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 22
-- `empirical_passport`: 19
+- `empirical_passport`: 21
 - `external_background`: 1
 - `formal_core`: 130
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
 - `rg`: 3
-- `si_calibration`: 2
+- `si_calibration`: 3
 - `smooth_geometry`: 7
 - `spectral_action`: 6
 
@@ -422,6 +422,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] self-declared TABLETOP-PASSPORT-SEED; forbids core promotion.
 
+### D0-E8-COLDEA-ANCHOR-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_01`
+- module: ``
+- theorem: `none`
+- cert: `vp_e8_coldea_anchor.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter4 T5.4] EMPIRICAL-PASSPORT. E8 critical spectrum m2/m1=2cos(pi/5)=phi (the D0-forced golden ratio) measured in CoNb2O6. cite Coldea et al. Science 327(2010)177; Zamolodchikov E8. HONEST: external corroboration of phi/E8, not a derivation; icosian->E8 stays EXTERNAL-GAP (Mordell); never core.
+
 ### D0-GRAVASTAR-GW-FALSIFIER-001
 
 - type: `certificate`
@@ -512,6 +525,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] SPARC rotation-curve external-data passport.
+
+### D0-PMNS-DELTA0-NUFIT-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_pmns_delta0_nufit.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter4 T5.4] EMPIRICAL-PASSPORT. delta0-family sin^2 th12=1/3-2 delta0^2=0.3055, th13=phi^-5/4=0.02254, th23=1/2+delta0/2=0.559 vs NuFIT 6.0 (0.307/0.0220/0.561); beats GRA(0.276)/TBM(1/3)/GRB(0.345) on th12; JUNO falsifier window [0.300,0.311]. cite NuFIT 6.0 JHEP 12(2024)216 arXiv:2410.05380; JUNO. HONEST: delta0 forced, angle FORMULAS forcing is backlog/OWNER-DECISION; never core.
 
 ### D0-CKM-EXACT-001
 
@@ -2756,6 +2782,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
 - notes: D0 core computes dimensionless traces; H0/GN/Lambda require an explicit ExternalSICalibration object.
+
+### D0-H0-EVOLVING-W-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `si_calibration`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_h0_evolving_w.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter4 T5.5] EMPIRICAL-PASSPORT. R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.
 
 
 ## Domain: smooth_geometry

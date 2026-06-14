@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 2846,
-    "track_fair_max": 3956,
-    "pct_strength": 71.9,
+    "realized": 2867,
+    "track_fair_max": 3977,
+    "pct_strength": 72.1,
     "core_realized": 2433,
     "core_potential": 3520,
     "core_headroom": 1087,
-    "n_claims": 220,
-    "n_active": 219,
+    "n_claims": 223,
+    "n_active": 222,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -62,9 +62,9 @@
       "core_headroom": 52
     },
     "empirical_passport": {
-      "n": 19,
-      "realized": 154,
-      "max": 234,
+      "n": 21,
+      "realized": 168,
+      "max": 248,
       "core_headroom": 75
     },
     "cosmology": {
@@ -80,9 +80,9 @@
       "core_headroom": 0
     },
     "si_calibration": {
-      "n": 2,
-      "realized": 18,
-      "max": 22,
+      "n": 3,
+      "realized": 25,
+      "max": 29,
       "core_headroom": 0
     },
     "interpretation_spine": {
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 5,
-      "realized": 87,
-      "max": 100,
+      "n": 6,
+      "realized": 94,
+      "max": 107,
       "core_headroom": 13
     },
     "BOOK_02": {
@@ -160,9 +160,9 @@
       "core_headroom": 52
     },
     "BOOK_04": {
-      "n": 39,
-      "realized": 491,
-      "max": 733,
+      "n": 40,
+      "realized": 498,
+      "max": 740,
       "core_headroom": 241
     },
     "BOOK_04/08": {
@@ -172,9 +172,9 @@
       "core_headroom": 70
     },
     "BOOK_08": {
-      "n": 44,
-      "realized": 656,
-      "max": 795,
+      "n": 45,
+      "realized": 663,
+      "max": 802,
       "core_headroom": 135
     },
     "BOOK_05/06": {
@@ -4802,6 +4802,48 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PMNS-DELTA0-NUFIT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "EMPIRICAL-PASSPORT",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-H0-EVOLVING-W-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "EMPIRICAL-PASSPORT",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "si_calibration",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-E8-COLDEA-ANCHOR-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "EMPIRICAL-PASSPORT",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
     }

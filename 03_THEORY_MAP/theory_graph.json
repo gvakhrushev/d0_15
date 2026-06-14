@@ -4,7 +4,7 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 220,
+    "claims": 223,
     "release_status": {
       "CORE-FORMALIZED": 97,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
@@ -15,13 +15,13 @@
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
       "BRIDGE-CALIBRATION": 2,
-      "EMPIRICAL-PASSPORT": 11,
+      "EMPIRICAL-PASSPORT": 14,
       "PROOF-TARGET": 12
     },
     "lean_status": {
       "LEAN_PROVED": 117,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 80,
+      "PYTHON_CERTIFIED": 83,
       "DEPRECATED": 2,
       "OPEN": 13
     },
@@ -29,7 +29,7 @@
       "core": 98,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 79,
+      "certificate": 82,
       "deprecated": 2,
       "frontier": 12
     },
@@ -39,10 +39,10 @@
       "gauge_bridge": 17,
       "smooth_geometry": 7,
       "spectral_action": 6,
-      "empirical_passport": 19,
+      "empirical_passport": 21,
       "cosmology": 22,
       "external_background": 1,
-      "si_calibration": 2,
+      "si_calibration": 3,
       "interpretation_spine": 1,
       "frontier": 12
     }
@@ -7239,6 +7239,99 @@
       "label": "vp_phason_forcing.py",
       "path": "05_CERTS/vp_phason_forcing.py",
       "exists": true
+    },
+    {
+      "id": "D0-PMNS-DELTA0-NUFIT-001",
+      "kind": "claim",
+      "claim_id": "D0-PMNS-DELTA0-NUFIT-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "PMNS delta0-family vs NuFIT 6.0 + JUNO",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_pmns_delta0_nufit.py",
+      "python_cert": [
+        "vp_pmns_delta0_nufit.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[Iter4 T5.4] EMPIRICAL-PASSPORT. delta0-family sin^2 th12=1/3-2 delta0^2=0.3055, th13=phi^-5/4=0.02254, th23=1/2+delta0/2=0.559 vs NuFIT 6.0 (0.307/0.0220/0.561); beats GRA(0.276)/TBM(1/3)/GRB(0.345) on th12; JUNO falsifier window [0.300,0.311]. cite NuFIT 6.0 JHEP 12(2024)216 arXiv:2410.05380; JUNO. HONEST: delta0 forced, angle FORMULAS forcing is backlog/OWNER-DECISION; never core.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_pmns_delta0_nufit.py",
+      "kind": "python_cert",
+      "label": "vp_pmns_delta0_nufit.py",
+      "path": "05_CERTS/vp_pmns_delta0_nufit.py",
+      "exists": true
+    },
+    {
+      "id": "D0-H0-EVOLVING-W-001",
+      "kind": "claim",
+      "claim_id": "D0-H0-EVOLVING-W-001",
+      "type": "certificate",
+      "domain": "si_calibration",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "H0(z) downtrend = evolving w from R_n=phi^n-1",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_h0_evolving_w.py",
+      "python_cert": [
+        "vp_h0_evolving_w.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[Iter4 T5.5] EMPIRICAL-PASSPORT. R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_h0_evolving_w.py",
+      "kind": "python_cert",
+      "label": "vp_h0_evolving_w.py",
+      "path": "05_CERTS/vp_h0_evolving_w.py",
+      "exists": true
+    },
+    {
+      "id": "D0-E8-COLDEA-ANCHOR-001",
+      "kind": "claim",
+      "claim_id": "D0-E8-COLDEA-ANCHOR-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "CoNb2O6 E8 quantum criticality m2/m1=phi",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_e8_coldea_anchor.py",
+      "python_cert": [
+        "vp_e8_coldea_anchor.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[Iter4 T5.4] EMPIRICAL-PASSPORT. E8 critical spectrum m2/m1=2cos(pi/5)=phi (the D0-forced golden ratio) measured in CoNb2O6. cite Coldea et al. Science 327(2010)177; Zamolodchikov E8. HONEST: external corroboration of phi/E8, not a derivation; icosian->E8 stays EXTERNAL-GAP (Mordell); never core.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_e8_coldea_anchor.py",
+      "kind": "python_cert",
+      "label": "vp_e8_coldea_anchor.py",
+      "path": "05_CERTS/vp_e8_coldea_anchor.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10245,6 +10338,51 @@
     {
       "source": "D0-PHASON-FORCING-001",
       "target": "cert:vp_phason_forcing.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PMNS-DELTA0-NUFIT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PMNS-DELTA0-NUFIT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PMNS-DELTA0-NUFIT-001",
+      "target": "cert:vp_pmns_delta0_nufit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-H0-EVOLVING-W-001",
+      "target": "domain:si_calibration",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-H0-EVOLVING-W-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-H0-EVOLVING-W-001",
+      "target": "cert:vp_h0_evolving_w.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-E8-COLDEA-ANCHOR-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-E8-COLDEA-ANCHOR-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-E8-COLDEA-ANCHOR-001",
+      "target": "cert:vp_e8_coldea_anchor.py",
       "kind": "certified_by"
     }
   ]

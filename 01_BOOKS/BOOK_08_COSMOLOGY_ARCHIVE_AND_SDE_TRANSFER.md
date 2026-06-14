@@ -550,6 +550,8 @@ diagnostic / downstream row
 
 unless a claim explicitly declares its operator, window, external data and falsification hook.
 
+**External anchor (passport target, not core).** The relative-archive acceleration `R_n = φⁿ − 1` has a strictly convex second difference `Δ²R_n = φⁿ(φ−1)² > 0`, which reads as a *thawing*, evolving dark-energy equation of state — the same corner (`w₀ > −1`, `wₐ < 0`) that DESI DR2 favours, with the Hubble tension and the `w₀wₐ` anomaly as **one** phenomenon: an effective `H₀` that declines with redshift. This is registered as an empirical-passport target against DESI DR2/DR3, with an internal falsifier — a measured `H₀` that *rises* with `z` while `S₈` stays at the Planck value would reject it. It is a diagnostic, never a core observable; only the convexity `Δ²R_n > 0` is forced.
+
 ## 08.14 QCD archive scale and cosmological guardrail
 
 Primordial black-hole formation (if modeled inside D0) must pass through a
