@@ -233,6 +233,8 @@ digraph D0Theory {
   "D0-PHI99-DEPTH-FORCING-001" [label="D0-PHI99-DEPTH-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-ICOSIAN-E8-GRAM-001" [label="D0-ICOSIAN-E8-GRAM-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-JONES-INDEX-PHI-001" [label="D0-JONES-INDEX-PHI-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-CONNES-RECONSTRUCTION-OWNER-001" [label="D0-CONNES-RECONSTRUCTION-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
+  "D0-TIME-MODULAR-FLOW-OWNER-001" [label="D0-TIME-MODULAR-FLOW-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1497,4 +1499,16 @@ digraph D0Theory {
   "D0-JONES-INDEX-PHI-001" -> "cert:vp_jones_index_phi_finite.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-JONES-INDEX-PHI-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Bridge.ConnesReconstructionBridge" [label="D0.Bridge.ConnesReconstructionBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CONNES-RECONSTRUCTION-OWNER-001" -> "module:D0.Bridge.ConnesReconstructionBridge" [label="module"];
+  "assumption:ASSUMP-CONNES-RECONSTRUCTION" [label="ASSUMP-CONNES-RECONSTRUCTION", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-CONNES-RECONSTRUCTION-OWNER-001" -> "assumption:ASSUMP-CONNES-RECONSTRUCTION" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CONNES-RECONSTRUCTION-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Bridge.TomitaTakesakiBridge" [label="D0.Bridge.TomitaTakesakiBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-TIME-MODULAR-FLOW-OWNER-001" -> "module:D0.Bridge.TomitaTakesakiBridge" [label="module"];
+  "assumption:ASSUMP-TOMITA-TAKESAKI" [label="ASSUMP-TOMITA-TAKESAKI", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-TIME-MODULAR-FLOW-OWNER-001" -> "assumption:ASSUMP-TOMITA-TAKESAKI" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-TIME-MODULAR-FLOW-OWNER-001" -> "domain:formal_core" [label="domain"];
 }

@@ -5,7 +5,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 63
 - `CORE-FORMALIZED`: 109
@@ -19,7 +19,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 14
+- `bridge`: 16
 - `certificate`: 76
 - `core`: 110
 - `deprecated`: 2
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 137
+- `formal_core`: 139
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -623,6 +623,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain: formal_core
 
+### D0-CONNES-RECONSTRUCTION-OWNER-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Bridge.ConnesReconstructionBridge`
+- theorem: `connes_reconstruction_conditional`
+- cert: `none`
+- assumptions: `ASSUMP-CONNES-RECONSTRUCTION`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter6 owner-edge] Names the external owner of 'metric = spectrum of the Dirac operator': Connes reconstruction theorem (commutative spectral triple <-> compact oriented spin manifold; metric = Connes distance d(x,y)=sup{|f(x)-f(y)|: ||[D,f]||<=1}). arXiv:0810.2088 (2008). Routes the existing NAMED GAP of D0-COMPACTNESS-LIMIT-001 (rank-3=causal-cone / Connes-distance OPEN, 07.51.3) to a cited classical owner. Lean D0.Bridge.ConnesReconstructionBridge (connes_reconstruction_conditional) proves the bridge CONDITIONAL on ASSUMP-CONNES-RECONSTRUCTION. HONEST: this NAMES the owner (raises 'asserted' to 'owned by a classical theorem'); it does not derive metric=spectrum inside D0, and does not close the rank-3=cone gap. BRIDGE track (<=11), honesty not points.
+
 ### D0-QM-BORN-001
 
 - type: `bridge`
@@ -648,6 +661,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-HST-EXTERNAL`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: Finite skeleton under explicit finite response assumptions.
+
+### D0-TIME-MODULAR-FLOW-OWNER-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Bridge.TomitaTakesakiBridge`
+- theorem: `tomita_modular_flow_conditional`
+- cert: `none`
+- assumptions: `ASSUMP-TOMITA-TAKESAKI`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter6 owner-edge] Names the external owner of 'time = modular flow' (thermal time): Tomita-Takesaki modular theory (canonical sigma_t=Delta^it . Delta^-it from a cyclic-separating vector; KMS) + Connes uniqueness up to inner automorphism (Radon-Nikodym cocycle). Tomita 1967; Takesaki LNM 128 (1970). Deepens D0-TIME-2D-PISOT-001 / D0-TIME-MODULAR-FLOW-001: time is forced by the (algebra,state) pair, not an external catalogue parameter -- aligns with M1. Lean D0.Bridge.TomitaTakesakiBridge (tomita_modular_flow_conditional) proves the bridge CONDITIONAL on ASSUMP-TOMITA-TAKESAKI. HONEST: NAMES the owner; D0 proves only the Pisot/symbolic structure of the time layer, not the modular-flow identification. BRIDGE track (<=11), honesty not points.
 
 ### D0-CARRIER-003
 

@@ -4,10 +4,10 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 232,
+    "claims": 234,
     "release_status": {
       "CORE-FORMALIZED": 109,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 63,
@@ -20,21 +20,21 @@
     },
     "lean_status": {
       "LEAN_PROVED": 128,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 10,
       "PYTHON_CERTIFIED": 79,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
       "core": 110,
-      "bridge": 14,
+      "bridge": 16,
       "no-go": 16,
       "certificate": 76,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 137,
+      "formal_core": 139,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7611,6 +7611,86 @@
       "label": "vp_jones_index_phi_finite.py",
       "path": "05_CERTS/vp_jones_index_phi_finite.py",
       "exists": true
+    },
+    {
+      "id": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_07",
+      "section": "metric=spectrum owner (Connes reconstruction) for the gravity-geometry gap (07.33/07.51)",
+      "lean_module": "D0.Bridge.ConnesReconstructionBridge",
+      "lean_theorem": "connes_reconstruction_conditional",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-CONNES-RECONSTRUCTION"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter6 owner-edge] Names the external owner of 'metric = spectrum of the Dirac operator': Connes reconstruction theorem (commutative spectral triple <-> compact oriented spin manifold; metric = Connes distance d(x,y)=sup{|f(x)-f(y)|: ||[D,f]||<=1}). arXiv:0810.2088 (2008). Routes the existing NAMED GAP of D0-COMPACTNESS-LIMIT-001 (rank-3=causal-cone / Connes-distance OPEN, 07.51.3) to a cited classical owner. Lean D0.Bridge.ConnesReconstructionBridge (connes_reconstruction_conditional) proves the bridge CONDITIONAL on ASSUMP-CONNES-RECONSTRUCTION. HONEST: this NAMES the owner (raises 'asserted' to 'owned by a classical theorem'); it does not derive metric=spectrum inside D0, and does not close the rank-3=cone gap. BRIDGE track (<=11), honesty not points.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/ConnesReconstructionBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.ConnesReconstructionBridge",
+      "kind": "lean_module",
+      "label": "D0.Bridge.ConnesReconstructionBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/ConnesReconstructionBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-CONNES-RECONSTRUCTION",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-CONNES-RECONSTRUCTION",
+      "lean_name": "D0.Bridge.BridgeAssumption.ConnesReconstruction",
+      "status": "EXPLICIT",
+      "assumption_type": "NONCOMMUTATIVE_GEOMETRY_THEOREM",
+      "external_source_or_cert": "Connes, arXiv:0810.2088 (2008)"
+    },
+    {
+      "id": "D0-TIME-MODULAR-FLOW-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-TIME-MODULAR-FLOW-OWNER-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_06",
+      "section": "time=modular flow owner (Tomita-Takesaki/Connes) for the time layer (06.7/06.30a)",
+      "lean_module": "D0.Bridge.TomitaTakesakiBridge",
+      "lean_theorem": "tomita_modular_flow_conditional",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-TOMITA-TAKESAKI"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter6 owner-edge] Names the external owner of 'time = modular flow' (thermal time): Tomita-Takesaki modular theory (canonical sigma_t=Delta^it . Delta^-it from a cyclic-separating vector; KMS) + Connes uniqueness up to inner automorphism (Radon-Nikodym cocycle). Tomita 1967; Takesaki LNM 128 (1970). Deepens D0-TIME-2D-PISOT-001 / D0-TIME-MODULAR-FLOW-001: time is forced by the (algebra,state) pair, not an external catalogue parameter -- aligns with M1. Lean D0.Bridge.TomitaTakesakiBridge (tomita_modular_flow_conditional) proves the bridge CONDITIONAL on ASSUMP-TOMITA-TAKESAKI. HONEST: NAMES the owner; D0 proves only the Pisot/symbolic structure of the time layer, not the modular-flow identification. BRIDGE track (<=11), honesty not points.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/TomitaTakesakiBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.TomitaTakesakiBridge",
+      "kind": "lean_module",
+      "label": "D0.Bridge.TomitaTakesakiBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/TomitaTakesakiBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-TOMITA-TAKESAKI",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-TOMITA-TAKESAKI",
+      "lean_name": "D0.Bridge.BridgeAssumption.TomitaModularFlow",
+      "status": "EXPLICIT",
+      "assumption_type": "VON_NEUMANN_MODULAR_THEOREM",
+      "external_source_or_cert": "Tomita 1967; Takesaki LNM 128 (1970); Connes cocycle"
     }
   ],
   "edges": [
@@ -10773,6 +10853,36 @@
       "source": "D0-JONES-INDEX-PHI-001",
       "target": "cert:vp_jones_index_phi_finite.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+      "target": "module:D0.Bridge.ConnesReconstructionBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+      "target": "assumption:ASSUMP-CONNES-RECONSTRUCTION",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-TIME-MODULAR-FLOW-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TIME-MODULAR-FLOW-OWNER-001",
+      "target": "module:D0.Bridge.TomitaTakesakiBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TIME-MODULAR-FLOW-OWNER-001",
+      "target": "assumption:ASSUMP-TOMITA-TAKESAKI",
+      "kind": "uses_assumption"
     }
   ]
 }

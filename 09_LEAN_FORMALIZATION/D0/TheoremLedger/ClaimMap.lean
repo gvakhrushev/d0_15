@@ -358,7 +358,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ICOSIAN-E8-GRAM-001", moduleName := "D0.Claims.IcosianE8GramFinite",
       theoremName := "icosian_e8_gram_finite", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-JONES-INDEX-PHI-001", moduleName := "D0.Claims.JonesIndexPhi",
-      theoremName := "jones_index_phi", status := ClaimStatus.leanCoreProved }
+      theoremName := "jones_index_phi", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONNES-RECONSTRUCTION-OWNER-001", moduleName := "D0.Bridge.ConnesReconstructionBridge",
+      theoremName := "connes_reconstruction_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-TIME-MODULAR-FLOW-OWNER-001", moduleName := "D0.Bridge.TomitaTakesakiBridge",
+      theoremName := "tomita_modular_flow_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

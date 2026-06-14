@@ -2027,6 +2027,8 @@ The algebra of `3/8` is exact. Its *identification* with `rank/|Ω₈|` rests on
 
 The natural route to close the gap is the finite spectral triple of §03.1: the Connes distance is already defined from `spec(D)`, and a causal/Lorentzian reading would identify the three transport modes of the rank-3 adjacency with the spatial directions of a light-cone, the single Pisot modular flow supplying the time direction. Carrying this out would promote the lemma to a theorem. As of this writing the identification is **attempted but open** — rank is a static graph invariant, the causal cone is the separate cone-speed/signature content, and no derivation yet bridges the two. The gap is named here so it cannot drift silently into the core.
 
+**Named external owner of the gap.** The classical theorem that *would* close "metric = spectrum" once the causal reading is supplied is the **Connes reconstruction theorem** (A. Connes, *On the spectral characterization of manifolds*, arXiv:0810.2088, 2008): a commutative real spectral triple satisfying the axioms is canonically the spectral triple of a compact oriented Riemannian spin manifold, with the metric recovered by the Connes distance. This is recorded as the forcing-owner edge `D0-CONNES-RECONSTRUCTION-OWNER-001` (assumption `ASSUMP-CONNES-RECONSTRUCTION`, Lean `D0.Bridge.ConnesReconstructionBridge`): naming the owner raises the gap from "asserted" to "owned by a cited classical theorem", without claiming D0 derives metric = spectrum and without closing the rank-3 = cone identification (BOOK_05 §05.8.R).
+
 
 ## Apparatus — sources & open obligations
 
