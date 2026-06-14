@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 72
-- `CORE-FORMALIZED`: 92
+- `CERT-CLOSED`: 67
+- `CORE-FORMALIZED`: 97
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 11
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 84
-- `core`: 93
+- `certificate`: 79
+- `core`: 98
 - `deprecated`: 2
 - `frontier`: 12
 - `no-go`: 16
@@ -29,9 +29,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 22
-- `empirical_passport`: 18
+- `empirical_passport`: 19
 - `external_background`: 1
-- `formal_core`: 131
+- `formal_core`: 130
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -513,6 +513,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] SPARC rotation-curve external-data passport.
 
+### D0-CKM-EXACT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: `D0.Claims.CkmExactMatrix`
+- theorem: `ckm_exact_matrix`
+- cert: `vp_ckm_exact_matrix_certificate.py`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: [8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.CkmExactMatrix (ckm_exact_matrix): generation-overlap = cyclic permutation matrix (doubly-stochastic 0/1, det=1); structural, empirical CKM angles untouched.
+
 ### D0-TRACEABILITY-STATUS-TAXONOMY-001
 
 - type: `core`
@@ -740,19 +753,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]
 
-### D0-BARYON-S3-SYM-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_baryon_s3_tensor_symmetrizer.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] S3 symmetrizer on 27 ordered triples -> decuplet-10 symmetric carrier.
-
 ### D0-BH-CAPACITY-A4-001
 
 - type: `certificate`
@@ -765,19 +765,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] ABCD four-role denominator boundary-cell count -> A/4 entropy witness.
-
-### D0-BOOK04-SELECTORS-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_book04_centered_full_support_selectors.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] selectors over full support 0..2R; zero iff support-symmetry; no inserted indicator.
 
 ### D0-BOOK04-SELECTORS-002
 
@@ -805,19 +792,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] tripartite-Laplacian canonical generation operator selection.
 
-### D0-CKM-EXACT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_ckm_exact_matrix_certificate.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness.
-
 ### D0-CKM-K0-001
 
 - type: `certificate`
@@ -830,19 +804,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
-
-### D0-CLASS5-ALIASING-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_class5_aliasing_cabibbo.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill.
 
 ### D0-CVFT-F4
 
@@ -1221,19 +1182,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] finite topological density + exact/coexact cancellation; no axion zero-mode.
 
-### D0-NONABELIAN-SEAM-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_08`
-- module: ``
-- theorem: `none`
-- cert: `vp_nonabelian_seam_gap.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] finite positive gap outside the commuting kernel.
-
 ### D0-PHASON-FORCING-001
 
 - type: `certificate`
@@ -1533,6 +1481,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Poisson equation has unique solution up to constant.
 
+### D0-BARYON-S3-SYM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.PhasonStrainGenerations`
+- theorem: `baryon_phason_symmetric_sector_dim_eq_ten`
+- cert: `vp_baryon_s3_tensor_symmetrizer.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8C orphan-harvest] S3 symmetrizer on 27 ordered triples -> decuplet-10 symmetric carrier. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Matter.PhasonStrainGenerations (baryon_phason_symmetric_sector_dim_eq_ten): S3-symmetric triple sector = decuplet dim 10 (aliased to the existing frozen theorem; no new module).
+
+### D0-BOOK04-SELECTORS-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Claims.Book04Selectors`
+- theorem: `book04_selectors`
+- cert: `vp_book04_centered_full_support_selectors.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8C orphan-harvest] selectors over full support 0..2R; zero iff support-symmetry; no inserted indicator. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Book04Selectors (book04_selectors): centered full-support selectors: unique midpoint root 2x=2R<=>x=R for radii 35, 306=18*17, 19=2*10-1 (omega).
+
 ### D0-BORN-QUADRATIC-ORIGIN-001
 
 - type: `core`
@@ -1610,6 +1584,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Finite flavour defect is sourced by non-permutation overlap and has positive response without physical CKM entries.
+
+### D0-CLASS5-ALIASING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Claims.Class5Aliasing`
+- theorem: `class5_aliasing`
+- cert: `vp_class5_aliasing_cabibbo.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Class5Aliasing (class5_aliasing): |Z5|=5=D_Sigma alias + survivors {1,20} + 20=4*5, reusing window44_odd_part_card. Cabibbo readout stays BRIDGE (not promoted).
 
 ### D0-CONDENSED-PHI-VACUUM-CUT-PROJECT-001
 
@@ -1896,6 +1883,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: No four-partite clique guardrail.
+
+### D0-NONABELIAN-SEAM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Claims.NonabelianSeamGap`
+- theorem: `nonabelian_seam_gap`
+- cert: `vp_nonabelian_seam_gap.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [8C orphan-harvest] finite positive gap outside the commuting kernel. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.NonabelianSeamGap (nonabelian_seam_gap): seam obstruction frobSq([B,X])=0 on commuting kernel, =2 off it (native_decide on Z 2x2).
 
 ### D0-OMEGA8-001
 

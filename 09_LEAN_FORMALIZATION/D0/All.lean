@@ -36,9 +36,13 @@ import D0.Bridge.SICalibrationClosure
 import D0.Bridge.SmoothMetricBridge
 import D0.Bridge.TickGaugeLorentz
 import D0.Capacity
+import D0.Claims.Book04Selectors
+import D0.Claims.CkmExactMatrix
+import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
 import D0.Claims.KernelZoneSplit
 import D0.Claims.MixingHierarchyInversion
+import D0.Claims.NonabelianSeamGap
 import D0.Claims.Q8DedekindMinimality
 import D0.Claims.Signature31Split
 import D0.Claims.Time2DPisot

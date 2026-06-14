@@ -6,11 +6,11 @@
   "summary": {
     "claims": 220,
     "release_status": {
-      "CORE-FORMALIZED": 92,
+      "CORE-FORMALIZED": 97,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 72,
+      "CERT-CLOSED": 67,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -19,27 +19,27 @@
       "PROOF-TARGET": 12
     },
     "lean_status": {
-      "LEAN_PROVED": 112,
+      "LEAN_PROVED": 117,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 85,
+      "PYTHON_CERTIFIED": 80,
       "DEPRECATED": 2,
       "OPEN": 13
     },
     "claim_type": {
-      "core": 93,
+      "core": 98,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 84,
+      "certificate": 79,
       "deprecated": 2,
       "frontier": 12
     },
     "domain": {
-      "formal_core": 131,
+      "formal_core": 130,
       "rg": 3,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
       "spectral_action": 6,
-      "empirical_passport": 18,
+      "empirical_passport": 19,
       "cosmology": 22,
       "external_background": 1,
       "si_calibration": 2,
@@ -5712,25 +5712,32 @@
       "id": "D0-NONABELIAN-SEAM-001",
       "kind": "claim",
       "claim_id": "D0-NONABELIAN-SEAM-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_08",
       "section": "non-abelian seam obstruction gap",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Claims.NonabelianSeamGap",
+      "lean_theorem": "nonabelian_seam_gap",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_nonabelian_seam_gap.py",
       "python_cert": [
         "vp_nonabelian_seam_gap.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] finite positive gap outside the commuting kernel.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[8C orphan-harvest] finite positive gap outside the commuting kernel. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.NonabelianSeamGap (nonabelian_seam_gap): seam obstruction frobSq([B,X])=0 on commuting kernel, =2 off it (native_decide on Z 2x2).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/NonabelianSeamGap.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.NonabelianSeamGap",
+      "kind": "lean_module",
+      "label": "D0.Claims.NonabelianSeamGap",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/NonabelianSeamGap.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_nonabelian_seam_gap.py",
@@ -5898,25 +5905,32 @@
       "id": "D0-CKM-EXACT-001",
       "kind": "claim",
       "claim_id": "D0-CKM-EXACT-001",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "core",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
       "book": "BOOK_04",
       "section": "exact CKM-origin orientation matrix",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Claims.CkmExactMatrix",
+      "lean_theorem": "ckm_exact_matrix",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_ckm_exact_matrix_certificate.py",
       "python_cert": [
         "vp_ckm_exact_matrix_certificate.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.CkmExactMatrix (ckm_exact_matrix): generation-overlap = cyclic permutation matrix (doubly-stochastic 0/1, det=1); structural, empirical CKM angles untouched.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/CkmExactMatrix.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.CkmExactMatrix",
+      "kind": "lean_module",
+      "label": "D0.Claims.CkmExactMatrix",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/CkmExactMatrix.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_ckm_exact_matrix_certificate.py",
@@ -6146,24 +6160,24 @@
       "id": "D0-BARYON-S3-SYM-001",
       "kind": "claim",
       "claim_id": "D0-BARYON-S3-SYM-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_04",
       "section": "finite S3 tensor symmetrizer (decuplet)",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Matter.PhasonStrainGenerations",
+      "lean_theorem": "baryon_phason_symmetric_sector_dim_eq_ten",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_baryon_s3_tensor_symmetrizer.py",
       "python_cert": [
         "vp_baryon_s3_tensor_symmetrizer.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] S3 symmetrizer on 27 ordered triples -> decuplet-10 symmetric carrier.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[8C orphan-harvest] S3 symmetrizer on 27 ordered triples -> decuplet-10 symmetric carrier. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Matter.PhasonStrainGenerations (baryon_phason_symmetric_sector_dim_eq_ten): S3-symmetric triple sector = decuplet dim 10 (aliased to the existing frozen theorem; no new module).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/PhasonStrainGenerations.lean",
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -6177,25 +6191,32 @@
       "id": "D0-BOOK04-SELECTORS-001",
       "kind": "claim",
       "claim_id": "D0-BOOK04-SELECTORS-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_04",
       "section": "centered full-support selector closures",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Claims.Book04Selectors",
+      "lean_theorem": "book04_selectors",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_book04_centered_full_support_selectors.py",
       "python_cert": [
         "vp_book04_centered_full_support_selectors.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] selectors over full support 0..2R; zero iff support-symmetry; no inserted indicator.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[8C orphan-harvest] selectors over full support 0..2R; zero iff support-symmetry; no inserted indicator. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Book04Selectors (book04_selectors): centered full-support selectors: unique midpoint root 2x=2R<=>x=R for radii 35, 306=18*17, 19=2*10-1 (omega).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/Book04Selectors.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.Book04Selectors",
+      "kind": "lean_module",
+      "label": "D0.Claims.Book04Selectors",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/Book04Selectors.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_book04_centered_full_support_selectors.py",
@@ -7008,25 +7029,32 @@
       "id": "D0-CLASS5-ALIASING-001",
       "kind": "claim",
       "claim_id": "D0-CLASS5-ALIASING-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_04",
       "section": "class-5 aliasing exclusion (Cabibbo soft joint)",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Claims.Class5Aliasing",
+      "lean_theorem": "class5_aliasing",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_class5_aliasing_cabibbo.py",
       "python_cert": [
         "vp_class5_aliasing_cabibbo.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Class5Aliasing (class5_aliasing): |Z5|=5=D_Sigma alias + survivors {1,20} + 20=4*5, reusing window44_odd_part_card. Cabibbo readout stays BRIDGE (not promoted).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/Class5Aliasing.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.Class5Aliasing",
+      "kind": "lean_module",
+      "label": "D0.Claims.Class5Aliasing",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/Class5Aliasing.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_class5_aliasing_cabibbo.py",
@@ -9526,7 +9554,7 @@
     },
     {
       "source": "D0-NONABELIAN-SEAM-001",
-      "target": "module:",
+      "target": "module:D0.Claims.NonabelianSeamGap",
       "kind": "implemented_in"
     },
     {
@@ -9611,12 +9639,12 @@
     },
     {
       "source": "D0-CKM-EXACT-001",
-      "target": "domain:formal_core",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-CKM-EXACT-001",
-      "target": "module:",
+      "target": "module:D0.Claims.CkmExactMatrix",
       "kind": "implemented_in"
     },
     {
@@ -9736,7 +9764,7 @@
     },
     {
       "source": "D0-BARYON-S3-SYM-001",
-      "target": "module:",
+      "target": "module:D0.Matter.PhasonStrainGenerations",
       "kind": "implemented_in"
     },
     {
@@ -9751,7 +9779,7 @@
     },
     {
       "source": "D0-BOOK04-SELECTORS-001",
-      "target": "module:",
+      "target": "module:D0.Claims.Book04Selectors",
       "kind": "implemented_in"
     },
     {
@@ -10126,7 +10154,7 @@
     },
     {
       "source": "D0-CLASS5-ALIASING-001",
-      "target": "module:",
+      "target": "module:D0.Claims.Class5Aliasing",
       "kind": "implemented_in"
     },
     {

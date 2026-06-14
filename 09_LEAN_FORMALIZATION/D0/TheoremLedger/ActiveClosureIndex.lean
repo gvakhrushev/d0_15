@@ -2,9 +2,13 @@
 -- Do not edit by hand; run `python tools/generate_lean_aggregates.py`.
 
 
+import D0.Claims.Book04Selectors
+import D0.Claims.CkmExactMatrix
+import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
 import D0.Claims.KernelZoneSplit
 import D0.Claims.MixingHierarchyInversion
+import D0.Claims.NonabelianSeamGap
 import D0.Claims.Q8DedekindMinimality
 import D0.Claims.Signature31Split
 import D0.Claims.Time2DPisot

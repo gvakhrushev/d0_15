@@ -321,6 +321,14 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "kernel_zone_split", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-DIM-LADDER-COMPACT-001", moduleName := "D0.Claims.DimLadderCompact",
       theoremName := "dim_ladder_compact_cert", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-NONABELIAN-SEAM-001", moduleName := "D0.Claims.NonabelianSeamGap",
+      theoremName := "nonabelian_seam_gap", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CKM-EXACT-001", moduleName := "D0.Claims.CkmExactMatrix",
+      theoremName := "ckm_exact_matrix", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BARYON-S3-SYM-001", moduleName := "D0.Matter.PhasonStrainGenerations",
+      theoremName := "baryon_phason_symmetric_sector_dim_eq_ten", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BOOK04-SELECTORS-001", moduleName := "D0.Claims.Book04Selectors",
+      theoremName := "book04_selectors", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-Q8-DEDEKIND-MINIMALITY-001", moduleName := "D0.Claims.Q8DedekindMinimality",
       theoremName := "q8_dedekind_minimality", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-WINDOW44-GROUP-SPECTRUM-001", moduleName := "D0.Claims.Window44GroupSpectrum",
@@ -338,7 +346,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CARRIER-FULL-FORCING-001", moduleName := "D0.Synthesis.CarrierForcing",
       theoremName := "carrier_full_forcing", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SYMPLECTIC-GLEASON-001", moduleName := "D0.Synthesis.CarrierForcing",
-      theoremName := "symplectic_form_unique", status := ClaimStatus.leanCoreProved }
+      theoremName := "symplectic_form_unique", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CLASS5-ALIASING-001", moduleName := "D0.Claims.Class5Aliasing",
+      theoremName := "class5_aliasing", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
