@@ -378,3 +378,59 @@ coincidence. Resolved by the honest-negative discipline (cf. `γ`-packing, `V_CK
 - The cone-speed / smooth Lorentzian metric (`g_{μν}`, light-speed) is the named Connes-owned unit
   — the honest residual of Root 1, owned by `ASSUMP-CONNES-RECONSTRUCTION`, not a D0 derivation.
 - The 17-module `lake build D0.All` build-hygiene cleanup continues in its own session.
+
+# D0 — Iteration 12 report: repository audit + integrity hygiene + obligation-4 narrowed
+
+**Headline.** An audit, then disciplined hygiene — *not* status inflation. The corpus is in strong,
+honest shape (254 claims, strength **3300 → 3320 (+20)**, CORE **113 → 114**, integrity demotions
+**0**, hygiene ~100). The audit's key honest read: the score's ~1209 "CORE headroom" is **mostly not
+realizable** — it is named gaps, BRIDGE owner-edges, Mathlib-blocked frontier, and external owners,
+i.e. the honest distance to closure, not a backlog of cheap wins. Work followed that read: close the
+real integrity debt, sharpen **one** frontier item honestly, and **promote nothing** that isn't
+gap-free.
+
+## Track A — integrity hygiene (the real near-term debt)
+- **A3 (scanner).** `tools/d0_score.py` proof-debt counted the English word "admit"/"sorry" in
+  docstrings as the Lean tactic (the `CarrierNotIcosahedral.lean` "would admit the S₃" flag). Now it
+  tracks `/- … -/` block-comment state and matches only code positions: `proof_debt 1→0`. (`ebc609f`)
+- **A1 (missing certs).** The audit's "9 registered-but-missing certs" were a **path-resolver false
+  alarm** — the certs live in `ported_legacy_primary/<ID>/` subdirs; only `check_cert_can_fail.py`
+  lacked the rglob fallback the runner already had. Fixing it surfaced **3 hidden print-stubs**
+  (`GRAV-002`, `PROTON-001`, `NEUTRON-002`), now rewritten as real can-FAIL certs with genuine
+  benchmark agreement and negative controls (`G_N` −0.064%, `M_p` 1.1e‑6, `τ_n` −6.0e‑4). (`5deb85f`)
+- **A2 (CI `lake build`).** Already delivered by the parallel build-hygiene session
+  (`check_lean_builds.py` + `lean-build.yml`); not duplicated.
+
+## Track B — obligation 4 (`Δ_α` analytic owner) NARROWED, not closed (`a8d9bb3`)
+With `δ₀=½φ⁻³` the algebraic writing collapses to a **depth-≤2 archive moment polynomial in the
+rank-3 unit `u=φ⁻³`**: `α_alg⁻¹ = (12288/5)φ⁻⁶ + (1/3)φ⁻³`, `μ₂=2¹¹π₀φ⁻²`, `μ₁=1/3`, **`μ₀=0`** —
+exactly the shape of the closed Feshbach–Schur resolvent `W_eff` (exponents `−2·rank,−1·rank`; the
+second moment carries the `π₀` phase; the vanishing constant forced by "zero archive depth ⇒ zero
+anomaly"). Cert `vp_delta_alpha_pi0_moment.py` (can-FAIL) + gap-free Lean
+`D0.Spectral.DeltaAlphaMoment` (`D0-DELTA-ALPHA-MOMENT-001`, CORE). **Sharpens, does not close:** the
+two residue amplitudes (`2¹¹`, `1/3`) are the `s→pole` continuation (profinite); CVFT-F1 stays a
+PROOF-TARGET and obligation 4 **stays in the §05.6 register**, its meta-step narrowed from "no
+analytic owner" to "only the two residue amplitudes stay profinite." `2¹¹=2^{V11}` flagged, not forced.
+
+## Track C — decidable-Lean promotions: 0 (audit, no promotions)
+The 3 nominal "gap-free Lean already exists" candidates are **scaffolds, not closures** —
+`EntropyCouplingKernel` is conditional on an external HST theorem + record-packs its hypotheses;
+`WeakCouplingClassicalization` builds its conclusion in as a struct field; `ArchiveHeatTrace`'s Lean
+is the trace *skeleton* (positivity/compatibility) while the Weyl-dimension content is cert-only.
+Promoting any would claim Lean coverage they don't provide. **Zero promotions** — the disciplined
+result, and a concrete confirmation of the "headroom ≠ cheap wins" read.
+
+## Discipline held
+- **No point-chasing.** +20 strength came from one honest finite shadow, not status inflation; the
+  1209 headroom was explicitly read as the honest distance to closure and left alone.
+- **No over-promotion.** The one new CORE claim is a gap-free finite shadow that explicitly does not
+  close its frontier owner; Track C promoted nothing.
+- **Coordination.** Track A2 was recognized as already delivered by the parallel session and not
+  duplicated; `lake build D0.All` re-verified GREEN (3263 jobs) on the settled tree.
+
+## Carried-forward
+- Obligation 4's two residue amplitudes (the `W_eff` pole residues) remain the `s→pole` continuation
+  — profinite/Mathlib-blocked, owned by the CVFT-F1 resolvent-trace program.
+- The frontier named in the audit (topological/measure conjugacy, cone-speed metric, Pisot ≥3-letter)
+  stays named and external — no D0 action.
+- The 19 grandfathered print-stub certs remain an owner-decision (rewrite-where-finite or leave).

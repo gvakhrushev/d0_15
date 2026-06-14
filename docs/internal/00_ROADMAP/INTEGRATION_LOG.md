@@ -921,3 +921,85 @@ symbols, and several malformed modules were unfixed. This session completes it:
   at HEAD independently of this change (confirmed by stash test) — assumption-ledger `assumption_type`
   values outside the allowed set, and an `admit` token flagged in the new Iteration-11 module
   `D0/Claims/CarrierNotIcosahedral.lean`. None are in this session's changeset.
+
+### Iteration 12 — repository audit + integrity hygiene + obligation-4 narrowed (no point-chasing)
+
+The owner asked for a **repository audit and planning** while the build-hygiene session above ran
+in parallel; that session then finished, and this iteration **executed** the resulting plan. The
+audit's honest headline: the corpus is in strong shape (253→254 claims, strength 3300, 0 integrity
+demotions, hygiene ~100), but the score's ~1209 points of "CORE headroom" are **mostly not
+honestly realizable** — they are named gaps, BRIDGE owner-edges, Mathlib-blocked frontier, and
+external owners, i.e. the honest *distance to closure*, not a backlog of cheap wins. The work was
+therefore integrity hygiene + one honest frontier-sharpening, **not** status inflation.
+
+- **Track A3 — proof-debt scanner false-positive fixed** (`tools/d0_score.py`, commit `ebc609f`).
+  The `proof_debt` counter matched the English word **"admit"/"sorry"** in docstring prose (the
+  exact `D0/Claims/CarrierNotIcosahedral.lean` "would **admit** the S₃" flagged at the end of the
+  build-hygiene note above) as if it were the Lean `admit` tactic. The scanner now tracks
+  `/- … -/` block-comment state and only matches `sorry`/`admit`/`axiom` in code position.
+  Regression-checked (docstring "admit" not flagged; real `by sorry`/`by admit` still flagged):
+  `proof_debt 1→0`, hygiene penalties `−2.2→−0.2`. The module was always grep-clean and built green.
+
+- **Track A1 — the "9 registered-but-missing certs" were a path-resolver false alarm** (commit
+  `5deb85f`). The 9 claims (`D0-COSMO-002/003`, `D0-EW-002`, `D0-FTHEORY-001/002`, `D0-GRAV-002`,
+  `D0-METRO-002`, `D0-NEUTRON-002`, `D0-PROTON-001`) were never missing — their certs live in
+  `05_CERTS/ported_legacy_primary/<CLAIM-ID>/` subdirs. `run_registered_certs.py` already resolved
+  them (rglob fallback, `MISSING 0`); only `check_cert_can_fail.py` used a flat-path lookup. Fixed
+  it with the same rglob fallback (guard parity), which **surfaced 3 certs that resolve but were
+  pure print-stubs** (could not FAIL): `D0-GRAV-002`, `D0-PROTON-001`, `D0-NEUTRON-002`. Each was
+  rewritten as a real can-FAIL cert gated on genuine benchmark agreement (benchmark NOT an input —
+  downstream of the closed primitives): `G_N` from `Ω8·φ^(V9·V11=99)·(1+δ0/V13)` (rel −0.064% vs
+  CODATA); proton terminal readout `=306` exact ⇒ `M_p=938.271` (rel 1.1e‑6 vs 938.272); neutron
+  `τ_n = τ0/(ε_β⁵ δ0¹⁹ q_mass¹⁴) = 877.87 s` (rel −6.0e‑4 vs 878.4 s); each with a negative control.
+  After: `check_cert_can_fail` 0 unallowed / 0 missing-on-disk, `run_registered_certs` 158→PASS 156.
+
+- **Track A2 — the CI `lake build` guard was already delivered by the parallel build-hygiene
+  session** (`tools/check_lean_builds.py` + `.github/workflows/lean-build.yml`, see the note above).
+  Not duplicated. This is the permanent fix for the silent-rot that let 17 modules break undetected.
+
+- **Track B — obligation 4 (the `Δ_α` analytic owner) NARROWED** (`D0-DELTA-ALPHA-MOMENT-001`,
+  commit `a8d9bb3`, CORE-FORMALIZED). §05.6 obligation 4 named "deriving `α_alg⁻¹` as a
+  second-order/`π₀`-phase moment of the feedback resolvent" as the open theorem-target. Substituting
+  `δ₀=½φ⁻³` collapses the algebraic writing into a **depth-≤2 archive moment polynomial in the
+  rank-3 unit `u=φ⁻³`**: `α_alg⁻¹ = μ₂u² + μ₁u = (12288/5)φ⁻⁶ + (1/3)φ⁻³` exactly in ℚ(φ), with
+  `μ₂=2¹¹π₀φ⁻²`, `μ₁=1/3`, **`μ₀=0`** (no constant). This is exactly the shape of the closed
+  Feshbach–Schur resolvent `W_eff(z)=A+Σ_k z⁻⁽ᵏ⁺¹⁾B Dᵏ C` (`D0-GENERATIVE-DYNAMICS-001`): exponents
+  `−6,−3 = −2·rank,−1·rank` (archive depth 2,1), the **second** moment carrying the `π₀` phase, the
+  vanishing constant forced (zero archive depth ⇒ zero anomaly). Cert `vp_delta_alpha_pi0_moment.py`
+  (can-FAIL; controls reject a wrong unit `φ⁻⁵/⁻⁷`, a spurious constant, and `μ₂`-without-`π₀`); Lean
+  `D0.Spectral.DeltaAlphaMoment.delta_alpha_moment` (gap-free ℚ(φ): decomposition + value + `P 0=0`);
+  `lake build D0.All` GREEN (3263 jobs). **Honesty held:** this **SHARPENS, does NOT close** —
+  the two residue amplitudes (`2¹¹`, `1/3`) are the residues of `W_eff` at the pole, set by the
+  `s→pole` continuation (profinite); CVFT-F1 stays a PROOF-TARGET, `Δ_α` keeps its status, and the
+  obligation-4 entry **stays in the §05.6 register**. The open meta-step narrows from "no analytic
+  owner" to "only the two residue amplitudes ↔ `s→pole` residues stay profinite." `2¹¹=2^{V11}` is
+  flagged for the continuation, **not** claimed forced (anti-numerology).
+
+- **Track C — decidable-Lean promotions: 0 clean candidates (audit, no promotions).** An audit of
+  the cert-only (CERT-CLOSED / PYTHON_CERTIFIED) claims separated them into a clean-decidable bucket
+  vs a named-gap bucket. The 3 nominal "gap-free Lean already exists" candidates
+  (`D0-ARCHIVE-HEATTRACE-001`, `D0-ARCHIVE-ENTROPY-001`, `D0-DM-CLASSICALITY-001`) were each read at
+  the theorem level and found to be **scaffolds, not closures**: `EntropyCouplingKernel`'s theorem
+  is conditional on `ExternalHSTTheorem` and its "unique"-theorem record-packs its own hypotheses;
+  `WeakCouplingClassicalization` builds its conclusion in as a structure field and unpacks it (with a
+  `Prop` placeholder); `ArchiveHeatTrace`'s Lean proves the trace *skeleton* (positivity,
+  projection-compatibility) while the actual claim content (Weyl dimension = 4) lives only in the
+  cert. **Zero promotions** — promoting any would claim Lean coverage the modules don't provide. This
+  is the disciplined outcome and concretely confirms the audit's "headroom = honest distance to
+  closure, not cheap wins" read.
+
+### Iteration 12 metrics
+| metric | Iter11 end | Iter12 now | delta |
+|---|---|---|---|
+| claims | 253 | 254 | +1 (`D0-DELTA-ALPHA-MOMENT-001`) |
+| CORE-FORMALIZED | 113 | 114 | +1 (the obligation-4 moment shadow) |
+| strength | 3300 | 3320 | +20 |
+| integrity demotions | 0 | 0 | — |
+| proof_debt (hygiene) | 1 (false-pos) | 0 | −1 (scanner fixed) |
+| print-stub certs that cannot FAIL | 3 hidden + 19 grandfathered | 19 grandfathered | −3 (rewritten) |
+| §05.6 obligations open all the way down | 1 (obl.4) | 1 (obl.4, **narrowed**) | meta-step narrowed |
+
+`lake build D0.All` GREEN (3263 jobs). Guards: `validate_csv`, `check_firewall`, `check_cert_can_fail`,
+`run_registered_certs` (158 certs, 0 MISSING/FAIL), `d0_score` (3320, 0 demotions) — all PASS.
+No claim promoted past its honest level; the one new CORE claim is a gap-free finite shadow that
+explicitly does not close its frontier owner.
