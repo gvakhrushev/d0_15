@@ -1831,42 +1831,6 @@ Cross-book:
 - Book 05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
 - Book 08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
 
-### 07.50.1 Horizon formation as an arrested seam — the gravastar anchor
-
-Capacity saturation `σ(R) → 1` is the *static* horizon. Its companion is the *dynamical*
-question: does collapse actually reach saturation, or is the seam arrested before it closes?
-The external anchor is the horizonless gravastar (Jampolski–Rezzolla, PRD 113 L121502, 2026):
-an Oppenheimer–Snyder collapse whose de Sitter core supplies outward pressure and arrests
-the implosion before a horizon forms, leaving a thin-shell seam between a de Sitter interior
-`f_in = 1 − (r/L)²` and a Schwarzschild exterior `f_out = 1 − 2M/r`. In the D0 reading this
-is a seam that *fails to saturate* — `σ(R) < 1`, the cost stays finite, no information is
-made inaccessible. This fills a real gap: D0 had the static horizon-as-seam but no
-formation dynamics. Status: BRIDGE (external GR result + D0 seam reading; finite certificate
-reproduces the arrest with positive-energy Israel junction `f_in(R) > f_out(R)` and
-horizonless `2M < R < L`).
-
-### 07.50.2 The causal-threshold compactness `C_max = 3/8`
-
-The seam closes at a maximal compactness fixed by three closure conditions — the photon
-capture threshold `χ₂ = θ⋆`, the OS junction `2C = sin²χ₂`, and the cycle/holonomy return
-`cos θ⋆ = 4C − 1`. Eliminating the angles gives the master equation
-
-```math
-2C = 1 - (4C-1)^2 = 8C - 16C^2 \;\Longrightarrow\; 2C(8C - 3) = 0,
-```
-
-whose only nontrivial root is `C_max = M/R = 3/8`. This sits strictly between the photon
-sphere `1/3` and the Buchdahl bound `4/9`, and strictly below the black-hole value `1/2` —
-a specific, falsifiable, horizonless compactness with a finite margin `f_out = 1 − 2C = 1/4`.
-Structurally `3/8 = rank/|Ω₈|`, with `rank = 3` the spatial-transport rank of the scene and
-`|Ω₈| = 2³ = 8` the orientation×ABCD octet. Status: **LEM with a named gap** — the algebra
-of `3/8` is exact and machine-checked, but the bridge "rank-3 transport = the causal cone on
-the 3-sphere seam" is postulated, not yet derived from M1 (attempted via the Connes distance
-of Book 03 §03.1.1; open). It is **not** promoted to THE until that bridge is closed.
-
-New typed owner:
-- D0.Gravity.CompactnessLimit (the `3/8` master-root algebra, machine-checked over `ℚ`).
-
 ## 07.42 Phason/phonon split and dark metric response
 
 The finite quasicrystal operator layer separates active visible strain from

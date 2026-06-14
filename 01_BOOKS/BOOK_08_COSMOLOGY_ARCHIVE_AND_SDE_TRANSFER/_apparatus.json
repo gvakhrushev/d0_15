@@ -5,5 +5,6 @@
   "b08-4": "open obligation — cert obligation open",
   "b08-5": "forcing: GOLDEN THE 61.1, DarkRatio, CORE→BRIDGE",
   "b08-6": "forcing: GOLDEN BRIDGE-LEM 61.1.B",
-  "b08-7": "open obligation — cert obligation open"
+  "b08-7": "open obligation — cert obligation open",
+  "b08-8": "forcing: the phason is the forced perpendicular-space (cut-and-project) mode of the carrier; cert vp_phason_forcing.py (perp DOF=D-d_par=1; intercept-invariant Sturmian factor set => gapless Goldstone; density-preserving relabel => dark, radiation-free); claim D0-PHASON-FORCING-001. Downstream K-theory/spectral-triple phason-holonomy (D0-QUASI007/008/009) stay cert-closed EXTERNAL-GAP."
 }

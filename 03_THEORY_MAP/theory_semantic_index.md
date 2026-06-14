@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 71
+- `CERT-CLOSED`: 72
 - `CORE-FORMALIZED`: 92
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 83
+- `certificate`: 84
 - `core`: 93
 - `deprecated`: 2
 - `frontier`: 12
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 18
 - `external_background`: 1
-- `formal_core`: 130
+- `formal_core`: 131
 - `frontier`: 12
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1233,6 +1233,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] finite positive gap outside the commuting kernel.
+
+### D0-PHASON-FORCING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_forcing.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter4 T5.1] Closes the phason LANGUAGE DEBT by FORCING (not mass-BRIDGE). Owner of the phason concept across ~99 uses. Cert vp_phason_forcing.py: cut-and-project carrier (forced, BOOK_01 01.19a) has perp DOF d_perp=D-d_par=2-1=1 (the phason); phason shift=intercept change preserves the Sturmian factor set (k=1..8) => local isomorphism => zero patch cost => GAPLESS Goldstone; density-preserving relabel => no EM charge => DARK radiation-free mode. Negative control: rational slope differs. Owning section BOOK_08 08.49. HONEST: forces the CONCEPT; downstream K-theory/spectral-triple phason-holonomy (QUASI007/008/009) stay cert-closed with EXTERNAL-GAP, not promoted.
 
 ### D0-PROTON-001
 

@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 2774,
-    "track_fair_max": 3936,
-    "pct_strength": 70.5,
-    "core_realized": 2361,
-    "core_potential": 3500,
-    "core_headroom": 1139,
-    "n_claims": 219,
-    "n_active": 218,
+    "realized": 2781,
+    "track_fair_max": 3956,
+    "pct_strength": 70.3,
+    "core_realized": 2368,
+    "core_potential": 3520,
+    "core_headroom": 1152,
+    "n_claims": 220,
+    "n_active": 219,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 130,
-      "realized": 1798,
-      "max": 2482,
-      "core_headroom": 671
+      "n": 131,
+      "realized": 1805,
+      "max": 2502,
+      "core_headroom": 684
     },
     "rg": {
       "n": 3,
@@ -172,10 +172,10 @@
       "core_headroom": 70
     },
     "BOOK_08": {
-      "n": 43,
-      "realized": 636,
-      "max": 775,
-      "core_headroom": 135
+      "n": 44,
+      "realized": 643,
+      "max": 795,
+      "core_headroom": 148
     },
     "BOOK_05/06": {
       "n": 6,
@@ -1078,6 +1078,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-PHASON-FORCING-001",
+      "domain": "formal_core",
+      "book": "BOOK_08",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-EDGE-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1779,6 +1789,13 @@
     {
       "claim_id": "D0-VACUUM-CUBIC-WINDOW-001",
       "domain": "empirical_passport",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-PHASON-FORCING-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -4856,6 +4873,20 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "empirical_passport",
       "book": "BOOK_09",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-FORCING-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_08",
       "leverage": 0,
       "integrity_flag": null
     }

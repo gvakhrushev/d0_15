@@ -220,6 +220,7 @@ digraph D0Theory {
   "D0-GRAVASTAR-FORMATION-BRIDGE-001" [label="D0-GRAVASTAR-FORMATION-BRIDGE-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-COMPACTNESS-LIMIT-001" [label="D0-COMPACTNESS-LIMIT-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-GRAVASTAR-GW-FALSIFIER-001" [label="D0-GRAVASTAR-GW-FALSIFIER-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-PHASON-FORCING-001" [label="D0-PHASON-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1416,4 +1417,10 @@ digraph D0Theory {
   "D0-GRAVASTAR-GW-FALSIFIER-001" -> "cert:vp_gravastar_gw_falsifier.py" [label="cert"];
   "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-GRAVASTAR-GW-FALSIFIER-001" -> "domain:empirical_passport" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PHASON-FORCING-001" -> "module:" [label="module"];
+  "cert:vp_phason_forcing.py" [label="vp_phason_forcing.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PHASON-FORCING-001" -> "cert:vp_phason_forcing.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PHASON-FORCING-001" -> "domain:formal_core" [label="domain"];
 }

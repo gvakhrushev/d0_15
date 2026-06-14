@@ -1131,6 +1131,23 @@ Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.
 The dusty-plasma bridge is useful for Book 08 because it demonstrates how an active medium can deform the observed channel. This supports a conservative interpretation of negative fixed-ratio detector-frame searches: a raw external observable may fail even when the underlying active/archive mechanism remains meaningful, because the detector medium participates in the transfer.
 
 No cosmological conclusion is promoted from this laboratory analogy. The bridge forbids the claims `TABLETOP-QG-PROVED`, `ISOMORPHISM-CLOSED`, and `CORE-CLOSED`. A tabletop experiment may become an empirical passport only after a frozen protocol, off-source/negative controls, and non-retuned prediction targets.
+## 08.51 The archive phason: a forced gapless dark mode
+
+The word *phason* runs throughout the matter and cosmology sectors — phason strain, phason flips, phason domain walls, phason holonomy. This section is its **owner**: it derives the phason from the forced carrier, so the term is a consequence, not borrowed vocabulary. Every downstream use cites here.
+
+**Forcing (DEF-0.2.2).** The carrier is a cut-and-project quasicrystal — this is already forced, with slope `φ⁻²`, in BOOK_01 §01.19a [^b08-8]. A cut-and-project structure embeds a higher-dimensional periodic lattice and keeps only the slice that falls in an acceptance window. Projecting from the embedding dimension `D` onto the physical line `d_∥ = 1` therefore leaves
+
+```math
+d_\perp = D - d_\parallel
+```
+
+**perpendicular** coordinates. For the golden carrier the embedding is the `ℤ²` of the time operator `T = [[0,1],[1,-1]]`, so `D = 2` and there is exactly **one** perpendicular degree of freedom. That degree of freedom is the **phason**: a uniform shift of the acceptance-window intercept in perpendicular space.
+
+**Why it is gapless.** A phason shift does not deform the physical metric; it relabels which embedding points fall inside the window. For an aperiodic slope the shifted tiling is *locally isomorphic* to the original — it contains exactly the same finite patches. Concretely, the slope-`φ⁻²` cut words for different intercepts share an identical set of finite subwords (the Sturmian factor set is intercept-independent). No patch changes type, so the energy-density cost of a phason shift vanishes in the ideal tiling: the phason is a **gapless Goldstone mode** of the broken `D`-dimensional translation symmetry. (A phonon, by contrast, is an in-plane acoustic displacement and is the separate gapped/elastic channel.)
+
+**Why it is dark.** Because a phason flip is a *geometric relabelling* of archive support rather than a charge oscillation, it carries no electromagnetic coupling and does not radiate. A gapless, non-radiating hydrodynamic mode of the carrier is exactly a dark, collisionless channel — the "archive phason glass" that the cosmology comparisons (§08.44–§08.48: halo lensing, CMB flip entropy, BAO/S_DE) read against survey data. Those remain external-comparison passports; what is forced *here* is only that such a gapless dark mode must exist once the carrier is cut-and-project.
+
+**Status.** This is the forcing owner of the phason concept (a finite certificate verifies the perpendicular-DOF count, the intercept-invariance of the factor set, and the density-preserving relabelling, with a rational-slope negative control). It does **not** promote the downstream spectral-triple / K-theory phason-holonomy constructions, which retain their explicit external gap (the relevant K-theory is not yet in the formal kernel). The language debt is closed: the phason is a forced gapless dark mode of the carrier, and every later use inherits that derivation. [^b08-8]
 
 
 ## Apparatus — sources & open obligations
@@ -1144,3 +1161,4 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b08-5]: forcing: GOLDEN THE 61.1, DarkRatio, CORE→BRIDGE
 [^b08-6]: forcing: GOLDEN BRIDGE-LEM 61.1.B
 [^b08-7]: open obligation — cert obligation open
+[^b08-8]: forcing: the phason is the forced perpendicular-space (cut-and-project) mode of the carrier; cert vp_phason_forcing.py (perp DOF=D-d_par=1; intercept-invariant Sturmian factor set => gapless Goldstone; density-preserving relabel => dark, radiation-free); claim D0-PHASON-FORCING-001. Downstream K-theory/spectral-triple phason-holonomy (D0-QUASI007/008/009) stay cert-closed EXTERNAL-GAP.

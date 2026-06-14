@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 219,
+    "claims": 220,
     "release_status": {
       "CORE-FORMALIZED": 92,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 71,
+      "CERT-CLOSED": 72,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 112,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 84,
+      "PYTHON_CERTIFIED": 85,
       "DEPRECATED": 2,
       "OPEN": 13
     },
@@ -29,12 +29,12 @@
       "core": 93,
       "bridge": 13,
       "no-go": 16,
-      "certificate": 83,
+      "certificate": 84,
       "deprecated": 2,
       "frontier": 12
     },
     "domain": {
-      "formal_core": 130,
+      "formal_core": 131,
       "rg": 3,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7180,6 +7180,37 @@
       "label": "vp_gravastar_gw_falsifier.py",
       "path": "05_CERTS/vp_gravastar_gw_falsifier.py",
       "exists": true
+    },
+    {
+      "id": "D0-PHASON-FORCING-001",
+      "kind": "claim",
+      "claim_id": "D0-PHASON-FORCING-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "archive phason: forced gapless dark mode (08.51)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phason_forcing.py",
+      "python_cert": [
+        "vp_phason_forcing.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter4 T5.1] Closes the phason LANGUAGE DEBT by FORCING (not mass-BRIDGE). Owner of the phason concept across ~99 uses. Cert vp_phason_forcing.py: cut-and-project carrier (forced, BOOK_01 01.19a) has perp DOF d_perp=D-d_par=2-1=1 (the phason); phason shift=intercept change preserves the Sturmian factor set (k=1..8) => local isomorphism => zero patch cost => GAPLESS Goldstone; density-preserving relabel => no EM charge => DARK radiation-free mode. Negative control: rational slope differs. Owning section BOOK_08 08.49. HONEST: forces the CONCEPT; downstream K-theory/spectral-triple phason-holonomy (QUASI007/008/009) stay cert-closed with EXTERNAL-GAP, not promoted.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phason_forcing.py",
+      "kind": "python_cert",
+      "label": "vp_phason_forcing.py",
+      "path": "05_CERTS/vp_phason_forcing.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10171,6 +10202,21 @@
     {
       "source": "D0-GRAVASTAR-GW-FALSIFIER-001",
       "target": "cert:vp_gravastar_gw_falsifier.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHASON-FORCING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHASON-FORCING-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASON-FORCING-001",
+      "target": "cert:vp_phason_forcing.py",
       "kind": "certified_by"
     }
   ]
