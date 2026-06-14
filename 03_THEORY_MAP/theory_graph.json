@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 239,
+    "claims": 240,
     "release_status": {
       "CORE-FORMALIZED": 110,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 11,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 65,
+      "CERT-CLOSED": 66,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 130,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 12,
-      "PYTHON_CERTIFIED": 80,
+      "PYTHON_CERTIFIED": 81,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 111,
       "bridge": 18,
       "no-go": 16,
-      "certificate": 78,
+      "certificate": 79,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 144,
+      "formal_core": 145,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7878,6 +7878,37 @@
       "status": "EXPLICIT",
       "assumption_type": "QM_RECONSTRUCTION_THEOREM",
       "external_source_or_cert": "Hardy quant-ph/0101012; Masanes-Mueller NJP 13 053040 (2011); Chiribella-DAriano-Perinotti PRA 84 012311 (2011)"
+    },
+    {
+      "id": "D0-MODULAR-TIME-FLAVOR-001",
+      "kind": "claim",
+      "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "time & flavor share the SL(2,Z) modular group (06.30a, LEM)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_modular_time_flavor.py",
+      "python_cert": [
+        "vp_modular_time_flavor.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter7 cross-bridge synthesis, self-calibrated LEM, MECHANISM filter applied] The deep-research framing 'thermal time and modular flavor use ONE modular structure' is filtered: 'modular' has TWO senses -- (a) the SL(2,Z) modular GROUP (modular forms, finite quotients Gamma_N) and (b) the Tomita-Takesaki modular AUTOMORPHISM (thermal time). The REAL shared structure is (a): D0 flavor A5=2I/{+-1} is exactly the level-5 finite modular group PSL(2,Z)/Gamma(5)=PSL(2,5)~=A5 (Feruglio; Ding-Everett-Stuart Nucl.Phys.B 857 219, arXiv:1110.1688), and the D0 toral time T=[[0,1],[1,-1]] is a golden/hyperbolic element of GL(2,Z) (det -1, h_KS=log phi). So time (GL(2,Z) element) and flavor (level-5 quotient A5) both live in the SL(2,Z) modular-group structure. Cert vp_modular_time_flavor.py proves |A5|=120/2=60=|PSL(2,5)|, det T=-1, and PMNS sin^2 th12=1/3-2 d0^2=0.3055 closest to NuFIT 6.0 (0.307), BEATING GRA(0.2764)/GRB(0.3455). cite NuFIT 6.0 JHEP 12 (2024) 216. HONEST: the SL(2,Z) modular-GROUP link is real; the Tomita-Takesaki thermal-time sense (D0-TIME-MODULAR-FLOW-OWNER-001) is a DIFFERENT modular notion, NOT conflated. STATUS LEM -- the full 'golden time element <-> A5 level-5 quotient as one modular object' identification is the named gap.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_modular_time_flavor.py",
+      "kind": "python_cert",
+      "label": "vp_modular_time_flavor.py",
+      "path": "05_CERTS/vp_modular_time_flavor.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -11145,6 +11176,21 @@
       "source": "D0-M1-INFO-RECONSTRUCTION-001",
       "target": "assumption:ASSUMP-M1-INFO-RECONSTRUCTION",
       "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-MODULAR-TIME-FLAVOR-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-MODULAR-TIME-FLAVOR-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-MODULAR-TIME-FLAVOR-001",
+      "target": "cert:vp_modular_time_flavor.py",
+      "kind": "certified_by"
     }
   ]
 }

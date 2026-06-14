@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3154,
-    "track_fair_max": 4270,
-    "pct_strength": 73.9,
-    "core_realized": 2683,
-    "core_potential": 3780,
-    "core_headroom": 1097,
-    "n_claims": 239,
-    "n_active": 238,
+    "realized": 3161,
+    "track_fair_max": 4290,
+    "pct_strength": 73.7,
+    "core_realized": 2690,
+    "core_potential": 3800,
+    "core_headroom": 1110,
+    "n_claims": 240,
+    "n_active": 239,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 144,
-      "realized": 2120,
-      "max": 2744,
-      "core_headroom": 619
+      "n": 145,
+      "realized": 2127,
+      "max": 2764,
+      "core_headroom": 632
     },
     "rg": {
       "n": 4,
@@ -316,10 +316,10 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 6,
-      "realized": 72,
-      "max": 111,
-      "core_headroom": 39
+      "n": 7,
+      "realized": 79,
+      "max": 131,
+      "core_headroom": 52
     },
     "BOOK_01/06": {
       "n": 1,
@@ -1024,6 +1024,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1716,6 +1726,13 @@
     },
     {
       "claim_id": "D0-PACKING-LIMIT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5074,6 +5091,20 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
       "leverage": 0,
       "integrity_flag": null
     }

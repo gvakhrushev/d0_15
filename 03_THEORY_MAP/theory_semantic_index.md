@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 11
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 65
+- `CERT-CLOSED`: 66
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 18
-- `certificate`: 78
+- `certificate`: 79
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 144
+- `formal_core`: 145
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1194,6 +1194,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] Ford-Fulkerson max-flow/min-cut = A/4-normalized boundary capacity.
+
+### D0-MODULAR-TIME-FLAVOR-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: ``
+- theorem: `none`
+- cert: `vp_modular_time_flavor.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter7 cross-bridge synthesis, self-calibrated LEM, MECHANISM filter applied] The deep-research framing 'thermal time and modular flavor use ONE modular structure' is filtered: 'modular' has TWO senses -- (a) the SL(2,Z) modular GROUP (modular forms, finite quotients Gamma_N) and (b) the Tomita-Takesaki modular AUTOMORPHISM (thermal time). The REAL shared structure is (a): D0 flavor A5=2I/{+-1} is exactly the level-5 finite modular group PSL(2,Z)/Gamma(5)=PSL(2,5)~=A5 (Feruglio; Ding-Everett-Stuart Nucl.Phys.B 857 219, arXiv:1110.1688), and the D0 toral time T=[[0,1],[1,-1]] is a golden/hyperbolic element of GL(2,Z) (det -1, h_KS=log phi). So time (GL(2,Z) element) and flavor (level-5 quotient A5) both live in the SL(2,Z) modular-group structure. Cert vp_modular_time_flavor.py proves |A5|=120/2=60=|PSL(2,5)|, det T=-1, and PMNS sin^2 th12=1/3-2 d0^2=0.3055 closest to NuFIT 6.0 (0.307), BEATING GRA(0.2764)/GRB(0.3455). cite NuFIT 6.0 JHEP 12 (2024) 216. HONEST: the SL(2,Z) modular-GROUP link is real; the Tomita-Takesaki thermal-time sense (D0-TIME-MODULAR-FLOW-OWNER-001) is a DIFFERENT modular notion, NOT conflated. STATUS LEM -- the full 'golden time element <-> A5 level-5 quotient as one modular object' identification is the named gap.
 
 ### D0-NEUTRON-002
 
