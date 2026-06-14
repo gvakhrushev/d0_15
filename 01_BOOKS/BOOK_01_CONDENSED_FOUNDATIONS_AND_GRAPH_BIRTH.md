@@ -1689,6 +1689,37 @@ form: the rotation by `\varphi^{-2}` is the first-return map of the golden folia
 (Morse–Hedlund, standard; golden-mean shift, Vershik). The open obligation is the
 formal conjugacy `\varphi^{-2}`-rotation `\cong` foliation return map, which is the
 dynamical half of the duality lemma.
+
+### 01.21.3 `φ` as a quantized index value (Jones subfactor index) [forcing-owner]
+
+The two characterizations of §01.21.1 — `\varphi` as the Hurwitz/MDL minimizer and as
+the `M1` fixed point — are joined by a third, independent both of approximation theory
+and of `M1`: `\varphi` is a *quantized* value. Jones' subfactor index theorem (V. F. R.
+Jones, *Index for subfactors*, Invent. Math. **72**(1), 1–25, 1983) forces the index
+`[M:N]` of a type-II₁ subfactor to lie, in the interval `[1,4)`, in the discrete series
+`\{4\cos^2(\pi/n) : n=3,4,5,\dots\}`. The `n=5` slot is
+
+```math
+4\cos^2(\pi/5)=\tfrac{3+\sqrt5}{2}=\varphi^2,
+```
+
+the **first** irrational ("golden") member — `n=3,4` give the integers `1,2`; `n=6`
+gives `3`. It is the squared quantum dimension `d_\tau=\varphi` of the Fibonacci
+category, the unique unitary modular tensor category with a single non-trivial simple
+object of dimension `>1`, where `d_\tau` is forced as the positive root of the fusion
+relation `x^2=x+1` (`\tau\otimes\tau=\mathbf1\oplus\tau`).
+
+This is a forcing-**owner** edge, not a derivation inside D0: the D0-forced `\varphi`
+sits exactly at the forced `n=5` slot of an external quantization, so "`\varphi` is
+golden" is corroborated by a third, categorically-quantized channel. The `n=5` value is
+closed exactly — `(3+\sqrt5)/2=\varphi^2=\varphi+1` (claim `D0-JONES-INDEX-PHI-001`, cert
+`vp_jones_index_phi_finite.py` + Lean `D0.Claims.JonesIndexPhi`). **Honest scope:** the
+quantization *obstruction* itself — that no index in the open `(1,4)` exists other than
+the `4\cos^2(\pi/n)` series — is the external classical theorem (owner
+`ASSUMP-JONES-INDEX`, Jones 1983), cited not re-proved (BOOK_05 §05.8.R). Together with
+Hurwitz extremality (§01.21.1), the Pisot/Sturmian symbolic dynamics (§01.21.2), and the
+icosian→`E_8` embedding (BOOK_02 §02.18), `\varphi` is forced through four independent
+channels — the "`\varphi`-network".
 ## 01.22 Forced return windows and non-post-hoc phase unfolding
 
 The phase-unfolding windows used by D0 are not chosen by searching for rational approximants to a circle.  They are forced by terminal capacity.

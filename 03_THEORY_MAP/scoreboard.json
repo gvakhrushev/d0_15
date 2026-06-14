@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3051,
-    "track_fair_max": 4146,
-    "pct_strength": 73.6,
-    "core_realized": 2624,
-    "core_potential": 3700,
+    "realized": 3071,
+    "track_fair_max": 4166,
+    "pct_strength": 73.7,
+    "core_realized": 2644,
+    "core_potential": 3720,
     "core_headroom": 1076,
-    "n_claims": 231,
-    "n_active": 230,
+    "n_claims": 232,
+    "n_active": 231,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 136,
-      "realized": 2017,
-      "max": 2620,
+      "n": 137,
+      "realized": 2037,
+      "max": 2640,
       "core_headroom": 598
     },
     "rg": {
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 6,
-      "realized": 94,
-      "max": 107,
+      "n": 7,
+      "realized": 114,
+      "max": 127,
       "core_headroom": 13
     },
     "BOOK_02": {
@@ -4922,6 +4922,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-JONES-INDEX-PHI-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
     }

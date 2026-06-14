@@ -236,3 +236,4 @@ This is the current status index for D0 theory branches, Lean anchors, certifica
 | D0-COMPACTNESS-DEF-FORCING-001 | certificate | formal_core | CERT-CLOSED | PYTHON_CERTIFIED | `` | `` | `vp_compactness_def_forcing.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |
 | D0-PHI99-DEPTH-FORCING-001 | certificate | formal_core | CERT-CLOSED | PYTHON_CERTIFIED | `` | `` | `vp_phi99_depth_forcing.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |
 | D0-ICOSIAN-E8-GRAM-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Claims.IcosianE8GramFinite` | `icosian_e8_gram_finite` | `vp_icosian_e8_gram_finite.py` | Lean-owned finite/formal D0 core statement. |
+| D0-JONES-INDEX-PHI-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Claims.JonesIndexPhi` | `jones_index_phi` | `vp_jones_index_phi_finite.py` | Lean-owned finite/formal D0 core statement. |

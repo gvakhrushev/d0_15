@@ -356,7 +356,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-KTHEORY-GAP-MODULE-001", moduleName := "D0.Claims.KTheoryGapModule",
       theoremName := "ktheory_gap_module", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ICOSIAN-E8-GRAM-001", moduleName := "D0.Claims.IcosianE8GramFinite",
-      theoremName := "icosian_e8_gram_finite", status := ClaimStatus.leanCoreProved }
+      theoremName := "icosian_e8_gram_finite", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-JONES-INDEX-PHI-001", moduleName := "D0.Claims.JonesIndexPhi",
+      theoremName := "jones_index_phi", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

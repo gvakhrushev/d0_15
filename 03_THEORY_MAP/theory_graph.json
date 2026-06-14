@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 231,
+    "claims": 232,
     "release_status": {
-      "CORE-FORMALIZED": 108,
+      "CORE-FORMALIZED": 109,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 127,
+      "LEAN_PROVED": 128,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
       "PYTHON_CERTIFIED": 79,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 109,
+      "core": 110,
       "bridge": 14,
       "no-go": 16,
       "certificate": 76,
@@ -34,7 +34,7 @@
       "frontier": 14
     },
     "domain": {
-      "formal_core": 136,
+      "formal_core": 137,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7573,6 +7573,44 @@
       "label": "vp_icosian_e8_gram_finite.py",
       "path": "05_CERTS/vp_icosian_e8_gram_finite.py",
       "exists": true
+    },
+    {
+      "id": "D0-JONES-INDEX-PHI-001",
+      "kind": "claim",
+      "claim_id": "D0-JONES-INDEX-PHI-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "phi forced as n=5 Jones index value (01.21.3)",
+      "lean_module": "D0.Claims.JonesIndexPhi",
+      "lean_theorem": "jones_index_phi",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_jones_index_phi_finite.py",
+      "python_cert": [
+        "vp_jones_index_phi_finite.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter6 finite-core, Option-1] Owns the previously BARE assertion 'why phi as a quantum dimension'. Jones subfactor-index theorem (Invent. Math. 72, 1983) quantizes [M:N] in [1,4) to {4cos^2(pi/n)}; the n=5 slot is 4cos^2(pi/5)=(3+sqrt5)/2=phi^2 (FIRST irrational member; n=3,4->1,2; n=6->3) = squared Fibonacci quantum dimension d_tau=phi (positive root of x^2=x+1, tau(x)tau=1+tau). Proves EXACTLY: n=5 VALUE=(3+sqrt5)/2=phi^2=phi+1 (Lean D0.Claims.JonesIndexPhi via D0.Core.Phi phi_sq+sqrt_five_sq; cert vp_jones_index_phi_finite.py exact Z[sqrt5] + trig series n=3..6). 3rd independent phi-channel (Hurwitz 01.21.1, Pisot 01.21.2, icosian->E8 02.18 = the phi-network). HONEST: the trig identity 4cos^2(pi/5)=(3+sqrt5)/2 is numeric in cert (no Mathlib cos_pi_div_five in this pin); algebraic value=phi^2 is Lean-closed. The Jones quantization OBSTRUCTION (no index in (1,4) other than the series) stays EXTERNAL owner ASSUMP-JONES-INDEX.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/JonesIndexPhi.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.JonesIndexPhi",
+      "kind": "lean_module",
+      "label": "D0.Claims.JonesIndexPhi",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/JonesIndexPhi.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_jones_index_phi_finite.py",
+      "kind": "python_cert",
+      "label": "vp_jones_index_phi_finite.py",
+      "path": "05_CERTS/vp_jones_index_phi_finite.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10719,6 +10757,21 @@
     {
       "source": "D0-ICOSIAN-E8-GRAM-001",
       "target": "cert:vp_icosian_e8_gram_finite.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-JONES-INDEX-PHI-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-JONES-INDEX-PHI-001",
+      "target": "module:D0.Claims.JonesIndexPhi",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-JONES-INDEX-PHI-001",
+      "target": "cert:vp_jones_index_phi_finite.py",
       "kind": "certified_by"
     }
   ]

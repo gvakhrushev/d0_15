@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 63
-- `CORE-FORMALIZED`: 108
+- `CORE-FORMALIZED`: 109
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 14
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 14
 - `certificate`: 76
-- `core`: 109
+- `core`: 110
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 136
+- `formal_core`: 137
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1818,6 +1818,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Finite tick order plus irrational phi^-2 phase plus return quotients yields ordered aperiodic readout-generated branch geometry without a primitive lattice.
+
+### D0-JONES-INDEX-PHI-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Claims.JonesIndexPhi`
+- theorem: `jones_index_phi`
+- cert: `vp_jones_index_phi_finite.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter6 finite-core, Option-1] Owns the previously BARE assertion 'why phi as a quantum dimension'. Jones subfactor-index theorem (Invent. Math. 72, 1983) quantizes [M:N] in [1,4) to {4cos^2(pi/n)}; the n=5 slot is 4cos^2(pi/5)=(3+sqrt5)/2=phi^2 (FIRST irrational member; n=3,4->1,2; n=6->3) = squared Fibonacci quantum dimension d_tau=phi (positive root of x^2=x+1, tau(x)tau=1+tau). Proves EXACTLY: n=5 VALUE=(3+sqrt5)/2=phi^2=phi+1 (Lean D0.Claims.JonesIndexPhi via D0.Core.Phi phi_sq+sqrt_five_sq; cert vp_jones_index_phi_finite.py exact Z[sqrt5] + trig series n=3..6). 3rd independent phi-channel (Hurwitz 01.21.1, Pisot 01.21.2, icosian->E8 02.18 = the phi-network). HONEST: the trig identity 4cos^2(pi/5)=(3+sqrt5)/2 is numeric in cert (no Mathlib cos_pi_div_five in this pin); algebraic value=phi^2 is Lean-closed. The Jones quantization OBSTRUCTION (no index in (1,4) other than the series) stays EXTERNAL owner ASSUMP-JONES-INDEX.
 
 ### D0-KERNEL-ZONE-SPLIT-001
 
