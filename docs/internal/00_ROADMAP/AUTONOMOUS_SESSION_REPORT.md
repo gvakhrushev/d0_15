@@ -343,3 +343,38 @@ is **not** summed as one proof (per the honesty boundary).
 - The `33D→3D` icosahedral cut-and-project (the explicit `K(9,11,13)` identification) is the
   named open screw; the `rank-3=causal-cone` geometric gap (§07.51.3) remains the next root.
 - The pre-existing 17-module `lake build D0.All` breakage stays its own spun-off task.
+
+---
+
+# D0 — Iteration 11 report: the two named roots resolved (one forced, one separated)
+
+**Headline.** Naming a gap is not closing it. The two roots left by Iterations 9–10 are now
+**resolved**, each by a machine-checked verdict. strength **3260 → 3300 (+40)**; CORE-FORMALIZED
+**111 → 113**; the two open gaps (§07.51.3 + the projection) **→ 0**; integrity demotions **0**;
+all registry/cert guards green; both new Lean modules build.
+
+## Root 1 — `rank-3 = causal cone`: FORCED (LEM → THE, up to cone-speed)
+The open half — which modes are spacelike vs timelike — is forced by **counting**: 3 reversible
+rank modes (real spectrum, discriminant `6185264>0`) ↔ 3 spacelike; 1 Pisot arrow (`|ψ|<1`,
+arrow=time forced) ↔ 1 timelike; Euclidean `(4,0)` excluded. So `rank-3` **is** the three
+spatial/causal directions; `C_max = 3/8 = rank/|Ω₈|` is grounded (`D0-RANK3-CAUSAL-CONE-FORCING-001`).
+The only residual is the cone-speed / smooth metric — the existing Connes-owned unit, not a new gap.
+
+## Root 2 — `K(9,11,13) = icosahedral`: SEPARATION (decidable negative)
+`9≠11≠13` makes the carrier's induced rank-3 symmetry trivial; `A₅` (order 60) cannot act — so
+`K(9,11,13)` is **not** the icosahedral cut-and-project (`D0-CARRIER-NOT-ICOSAHEDRAL-001`). `A₅`
+is the flavor/`E₈` group; the `rank=3` convergence is kept; `nullity 30 = ` edges is a confirmed
+coincidence. Resolved by the honest-negative discipline (cf. `γ`-packing, `V_CKM=I`), not left open.
+
+## Discipline held
+- **No re-naming.** Each root got a definite resolution, not a sharper label.
+- **No over-promotion.** Root 1 grounds the *dimensionless* `3/8`; the smooth metric stays the
+  Connes unit. Root 2 keeps the honest `rank=3` convergence while disproving the false identification.
+- **Concurrent cleanup noted.** A parallel build-hygiene session (the spun-off 17-module fix) was
+  active; some of its orphan-quarantine moves bundled into the Root-2 commit (`4d061e8`) —
+  legitimate, unrelated to the two new claims.
+
+## Carried-forward
+- The cone-speed / smooth Lorentzian metric (`g_{μν}`, light-speed) is the named Connes-owned unit
+  — the honest residual of Root 1, owned by `ASSUMP-CONNES-RECONSTRUCTION`, not a D0 derivation.
+- The 17-module `lake build D0.All` build-hygiene cleanup continues in its own session.

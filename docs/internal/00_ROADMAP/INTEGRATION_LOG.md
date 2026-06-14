@@ -823,3 +823,48 @@ forcing backbone) PASS + can-FAIL. Dossier sync: N/A (`D0_THEORY_DOSSIER.md` rem
 Iteration 2; content lives in books). The lattice→quasicrystal upgrade is the iteration's model:
 a label ("bridge") was not an excuse — it was closed to a forcing, with the one residual named
 precisely.
+
+### Iteration 11 — the two named roots RESOLVED (not re-named): one forced, one separated
+
+Owner pushback: *naming a gap is not closing it — plan the closure*. Both roots left by
+Iterations 9–10 are now **resolved**, each by a definite machine-checked verdict.
+
+**Root 1 — `rank-3 = causal cone`: FORCED.** `D0-RANK3-CAUSAL-CONE-FORCING-001` (CORE-FORMALIZED
++ LEAN_PROVED, `D0.Synthesis.RankCausalConeForcing`). The open half (which modes are spacelike vs
+timelike) is forced by **counting**: the 3 rank modes are reversible (real spectrum,
+discriminant `6185264>0`), the 1 Pisot flow is the unique arrow (`|ψ|<1`, "arrow = time" already
+FORCED §06.30a); a Lorentzian `(3,1)` form has exactly 1 timelike + 3 spacelike, the counts
+match, and Euclidean `(4,0)` is excluded — so the timelike axis **is** the Pisot/arrow and the 3
+spacelike axes **are** the reversible rank-3 modes. `rank-3 = the 3 spatial/causal directions` is
+forced; `C_max=3/8=rank/|Ω₈|` is structurally grounded (THE for the dimensionless ratio). §07.51.3
+rewritten (attempted→forced); §06.30a stamped. **Honest residual:** only the cone-speed / smooth
+metric `g_{μν}` — a unit owned by the existing `ASSUMP-CONNES-RECONSTRUCTION` edge, not a new gap.
+
+**Root 2 — `K(9,11,13) = icosahedral cut-and-project`: SEPARATION (decidable negative).**
+`D0-CARRIER-NOT-ICOSAHEDRAL-001` (CORE-FORMALIZED + LEAN_PROVED, `D0.Claims.CarrierNotIcosahedral`).
+`Aut(K)=S₉×S₁₁×S₁₃`; the distinct zone sizes (`9≠11≠13`) make the induced symmetry on the 3
+zone-classes **trivial** (order 1, `native_decide`), while `A₅` has order `60>1` — so no faithful
+icosahedral action on the rank-3 image. `K(9,11,13)` is **not** the icosahedral cut-and-project;
+`A₅` lives on the flavor/`E₈` side. The `rank=3` convergence is kept (real third channel),
+`nullity 30 = ` edges is a confirmed coincidence. Control: equal zones `K(n,n,n)` would admit
+`S₃` — the obstruction is exactly the size-asymmetry. §01.19a.4 rewritten (named gap→resolved).
+
+### Iteration 11 metrics
+| metric | Iter10 end | Iter11 now | delta |
+|---|---|---|---|
+| CORE-FORMALIZED | 111 | 113 | +2 (causal-partition forcing, carrier-separation) |
+| strength | 3260 | 3300 | +40 |
+| open §07.51.3 / projection gaps | 2 | 0 | both resolved (1 forced, 1 separated) |
+| integrity demotions | 0 | 0 | — |
+
+2 new certs (rank3_causal_cone_forcing, carrier_not_icosahedral) PASS + can-FAIL; 2 new Lean
+modules build. The two named roots are closed — one positively (forcing), one negatively
+(separation) — with the single honest residual (cone-speed = Connes unit) named precisely.
+
+**Note (concurrent build-hygiene session).** A parallel session executing the spun-off 17-module
+`lake build D0.All` cleanup (quarantining broken orphan modules to `_OPEN_WITNESSES/`, fixing the
+malformed `theorem … : Prop` declarations and the stale `Mathlib.Data.Rat.Basic` import) was
+active during this iteration; some of its staged moves were bundled into the Root-2 commit
+(`4d061e8`). Those moves are legitimate (the orphan quarantine); they are unrelated to the
+forcing/separation work and do not affect the two new claims, which build and pass guards on
+their own dependency closures.
