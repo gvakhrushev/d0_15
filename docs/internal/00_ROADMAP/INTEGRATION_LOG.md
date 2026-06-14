@@ -549,3 +549,18 @@ book_assembly, no_sorry). Net PROOF-TARGET +2 is the honest cost of the integrit
 all promotions backed by gap-free Lean theorems; no passport promoted to core; no fakes.
 Deferred: 41 process-tag (v15/NOID/CVFT) section renames (cosmetic, P2); the 19 remaining
 compute-theater certs (owner-decision, ratchet in place); the 9 registered-but-missing certs.
+
+### Iteration 5 — finite-core reductions (the program: shadow the Mathlib-blocked, name the remainder)
+
+Demonstrated that even "Mathlib-blocked / held-at-hypothesis" obligations carry a decidable
+finite shadow that promotes honestly, with the genuinely-frontier remainder named:
+- **Delta_alpha** (gluing anomaly): CERT-CLOSED -> CORE. Both alpha writings are closed Q(phi)
+  forms (no data) => Delta_alpha = -156109/5 + 289442/15 phi is an EXACT Q(phi) element,
+  != 0, < phi^-16. Lean D0.Spectral.DeltaAlphaExact. Owner (CVFT-F1 resolvent) frontier; m_nu BRIDGE.
+- **Class-5 hidden memory**: named gap -> decidable shadow. Joint (winding,address) readout
+  collapses 25->5 (class5_readout_collapse, decide). Full M1 grammar 01.11C (v17, absent) frontier.
+- **K-theory gap-labeling** (hardest Mathlib-blocked): NEW D0-KTHEORY-GAP-MODULE-001 (CORE).
+  Labels in rank-2 module Z+Zphi^-1 (closed by phi^-1+phi^-2=1) = exact Sturmian frequencies.
+  Bellissard IDS=K0-trace stays EXTERNAL-GAP. (Flagged: old D0-KTHEORY-001 float cert fabricates IDS.)
+strength 2963 -> 3003 (74.1%); CORE 105 -> ~108; all guards green. Pattern captured in the
+verified-closure-protocol skill.
