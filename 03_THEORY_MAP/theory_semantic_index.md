@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 61
-- `CORE-FORMALIZED`: 105
+- `CERT-CLOSED`: 60
+- `CORE-FORMALIZED`: 107
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 14
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 13
-- `certificate`: 74
-- `core`: 106
+- `certificate`: 73
+- `core`: 108
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 131
+- `formal_core`: 132
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -792,19 +792,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE] [8C: linked passing cert]
 
-### D0-DELTA-ALPHA-EXACT-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_02`
-- module: ``
-- theorem: `none`
-- cert: `vp_delta_alpha_exact.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter5 finite-core, Option-1] Reduces the gluing anomaly from numeric-CHK/hypothesis to an EXACT Q(phi) element. Both alpha writings are closed forms with NO data input: alpha_top^-1=359 phi^-2-phi^-5=726-364phi; alpha_alg^-1=2^11 pi0/phi^8 + (2/3)delta0 (pi0=(6/5)phi^2, delta0=1/(2phi^3))=159739/5-(294902/15)phi. Cert vp_delta_alpha_exact.py proves (exact Z[phi]): Delta_alpha=alpha_top^-1-alpha_alg^-1=-156109/5+(289442/15)phi ~ -4.1522e-4; Delta_alpha != 0 (phi-coeff != 0 => irrational => !=0, M1-forced); |Delta_alpha| < phi^-16=1597-987phi (exact surd-sign analysis). Distinct from the DATA residual |alpha_measured-alpha_top^-1|~3.7e-4. HONEST: exact VALUE+nonzero+bound closed; the analytic OWNER (deriving alpha_alg form from the CVFT-F1 feedback-resolvent 2nd-order/pi0-phase moment) stays frontier; m_nu prop Delta_alpha^2 stays BRIDGE (x m_e, passport, not promoted). CORE would need a Lean phi^-n closed-form chain (clean next step).
-
 ### D0-DM-CLASSICALITY-001
 
 - type: `certificate`
@@ -1037,7 +1024,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_gap_labeling_d0_tiling_hull.py`
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+- notes: Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof. [Iter5 finite-core] The gap-label MODULE shadow is now proved exactly (new claim D0-KTHEORY-GAP-MODULE-001): labels lie in the rank-2 module Z+Zphi^-1, principal labels phi^-1/phi^-2 sum to 1. The Bellissard THEOREM (IDS=K0-trace image) stays EXTERNAL-GAP (no Mathlib K-theory). FLAG: this row's cert vp_gap_labeling_d0_tiling_hull.py fabricates the IDS as (idx+1)/30 with a float (n,m) fit — a placeholder to RETIRE in favor of the exact shadow (referenced in ~10 places; retirement is a follow-up).
 
 ### D0-LEPTON-002
 
@@ -1611,6 +1598,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Condensed/profinite phi-vacuum support exposes terminal qT=44 branch count 20 electroweak qEW=710 branch count 280 and depth 35 and the physics cut-project readout is tied to this support.
 
+### D0-DELTA-ALPHA-EXACT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.DeltaAlphaExact`
+- theorem: `delta_alpha_exact`
+- cert: `vp_delta_alpha_exact.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter5 finite-core, Option-1] Reduces the gluing anomaly from numeric-CHK/hypothesis to an EXACT Q(phi) element. Both alpha writings are closed forms with NO data input: alpha_top^-1=359 phi^-2-phi^-5=726-364phi; alpha_alg^-1=2^11 pi0/phi^8 + (2/3)delta0 (pi0=(6/5)phi^2, delta0=1/(2phi^3))=159739/5-(294902/15)phi. Cert vp_delta_alpha_exact.py proves (exact Z[phi]): Delta_alpha=alpha_top^-1-alpha_alg^-1=-156109/5+(289442/15)phi ~ -4.1522e-4; Delta_alpha != 0 (phi-coeff != 0 => irrational => !=0, M1-forced); |Delta_alpha| < phi^-16=1597-987phi (exact surd-sign analysis). Distinct from the DATA residual |alpha_measured-alpha_top^-1|~3.7e-4. HONEST: exact VALUE+nonzero+bound closed; the analytic OWNER (deriving alpha_alg form from the CVFT-F1 feedback-resolvent 2nd-order/pi0-phase moment) stays frontier; m_nu prop Delta_alpha^2 stays BRIDGE (x m_e, passport, not promoted). CORE would need a Lean phi^-n closed-form chain (clean next step). [Iter5 -> CORE] Lean D0.Spectral.DeltaAlphaExact (delta_alpha_exact): the exact Q(phi) identities (phi^-1=phi-1 .. phi^-8=34-21phi via linear_combination on phi^2=phi+1) prove alpha_top^-1=726-364phi, alpha_alg^-1=159739/5-294902/15 phi, Delta_alpha=-156109/5+289442/15 phi (gap-free). Analytic owner (CVFT-F1 resolvent) frontier; m_nu prop Delta_alpha^2 BRIDGE.
+
 ### D0-DIM-LADDER-COMPACT-001
 
 - type: `core`
@@ -1779,6 +1779,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: ker(adj K(9,11,13))=30=8+10+12; rank 3 = space; exact integer LA. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.KernelZoneSplit (kernel_zone_split); native_decide/decide on the real finite content.
+
+### D0-KTHEORY-GAP-MODULE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Claims.KTheoryGapModule`
+- theorem: `ktheory_gap_module`
+- cert: `vp_ktheory_gap_labels_finite.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter5 finite-core, Option-1, hardest Mathlib-blocked family] Decidable shadow of Bellissard gap-labeling: the gap-labeling group is the rank-2 module Z+Zphi^-1=Z[phi], closed by phi^-1+phi^-2=1; labels = Sturmian frequencies {m phi^-1 mod 1} = exact module elements n_m+m phi^-1 in [0,1) (isqrt floors); principal labels phi^-1 (common) phi^-2 (rare) = (0,1)/(1,-1), sum=1 (total IDS) — same exact frequencies as D0-PHASON-FORCING-001. Lean D0.Claims.KTheoryGapModule (ktheory_gap_module) + cert vp_ktheory_gap_labels_finite.py. HONEST: proves labels LIE IN the module + match frequencies, NOT the Bellissard identity IDS=K0-trace (operator K-theory absent from Mathlib -> stays EXTERNAL-GAP on D0-KTHEORY-001).
 
 ### D0-LEAN-CORE-001
 

@@ -41,6 +41,7 @@ import D0.Claims.CkmExactMatrix
 import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
 import D0.Claims.HiggsYukawaBlock
+import D0.Claims.KTheoryGapModule
 import D0.Claims.KernelZoneSplit
 import D0.Claims.MixingHierarchyInversion
 import D0.Claims.NonabelianSeamGap
@@ -278,6 +279,7 @@ import D0.Probability.SubgaussianArchive
 import D0.RG.OneLoopStructure
 import D0.RG.PhiDifference
 import D0.Response
+import D0.Spectral.DeltaAlphaExact
 import D0.Spectral.ZetaResidueAlpha
 import D0.Spectrum.BranchDefectProjectiveControls
 import D0.Spectrum.BranchDefectProjectiveGeneration

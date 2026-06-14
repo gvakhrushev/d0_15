@@ -7,6 +7,7 @@ import D0.Claims.CkmExactMatrix
 import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
 import D0.Claims.HiggsYukawaBlock
+import D0.Claims.KTheoryGapModule
 import D0.Claims.KernelZoneSplit
 import D0.Claims.MixingHierarchyInversion
 import D0.Claims.NonabelianSeamGap

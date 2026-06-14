@@ -350,7 +350,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CLASS5-ALIASING-001", moduleName := "D0.Claims.Class5Aliasing",
       theoremName := "class5_aliasing", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-RANK3-CAUSAL-CONE-001", moduleName := "D0.Synthesis.RankCausalCone",
-      theoremName := "rank3_causal_cone", status := ClaimStatus.leanCoreProved }
+      theoremName := "rank3_causal_cone", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DELTA-ALPHA-EXACT-001", moduleName := "D0.Spectral.DeltaAlphaExact",
+      theoremName := "delta_alpha_exact", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-KTHEORY-GAP-MODULE-001", moduleName := "D0.Claims.KTheoryGapModule",
+      theoremName := "ktheory_gap_module", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
