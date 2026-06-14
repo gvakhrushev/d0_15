@@ -977,6 +977,8 @@ D_{EW}=35.
 
 This section upgrades phase unfolding from an illustration to a structural theorem: later scale depths are repeated applications of the same finite tick \(\to\) phase quotient \(\to\) return modulus \(\to\) residue branch \(\to\) quotient mechanism.
 
+**The electroweak window `(q_EW, m_EW) = (710, 113)` is forced, not fitted.** Both numbers are closed expressions in the named scene invariants with zero free parameters — `710 = 2·D_Σ·(2|V|+D_Σ) = 2·5·71` (with `71 = 2·33+5`) and `113 = (|ABCD|+1)·d₁₃ + |V₁₃| = 5·20+13`. The window is the *ratio* `q/m ≈ τ = 2π` (the phase-circle period), and `710/113` is the **first** continued-fraction convergent of `2π` reaching ratio precision `|q/m − 2π| < 10⁻⁶` (the previous convergent `333/53` is `1.7·10⁻⁴`). By the best-approximation theorem no denominator below `113` can do better, and `113` is the minimal denominator the invariant grammar can write — so the window is the minimal coherent near-return the scene admits. This is forcing-minimality in a structural grammar, not a look-elsewhere count over arbitrary integers (the audit rule, BOOK_05 §05.8.R). Honest scope: the near-return is the ratio measure (`~5.3·10⁻⁷`); the absolute `|q − m·2π| ≈ 6·10⁻⁵` is denominator-scaled and is not the criterion.
+
 ## 07.24 Phase-unfolding capacity source for shell depth
 
 The phase-unfolding theorem uses the capacity closure of `ABCD`, `Ω8`, and `V9`. The first stable terminal return modulus is

@@ -6,8 +6,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Status counts
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
-- `BRIDGE-CALIBRATION`: 2
-- `CERT-CLOSED`: 60
+- `BRIDGE-CALIBRATION`: 3
+- `CERT-CLOSED`: 63
 - `CORE-FORMALIZED`: 107
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
@@ -19,8 +19,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 13
-- `certificate`: 73
+- `bridge`: 14
+- `certificate`: 76
 - `core`: 108
 - `deprecated`: 2
 - `frontier`: 14
@@ -31,11 +31,11 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 132
+- `formal_core`: 135
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
-- `rg`: 3
+- `rg`: 4
 - `si_calibration`: 3
 - `smooth_geometry`: 7
 - `spectral_action`: 5
@@ -753,6 +753,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: CKM holonomy has a stable K-theory class and CP phase is oriented noncommutative area. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
+### D0-COMPACTNESS-DEF-FORCING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_compactness_def_forcing.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Audit->FORCING] C=M/R_initial is FORCED (not a choice): C at the horizon is M/(2M)=1/2 for every mass (constant, zero formation info, CIRCULAR - presupposes the horizon), so only the INITIAL compactness gives a well-posed non-degenerate causal threshold; R=8M/3 (C=3/8) is then unambiguous. cert vp_compactness_def_forcing.py. HONEST: forces the DEFINITION of C (closes the 3/8-depends-on-C nitpick); the separate rank-3=causal-cone gap of D0-COMPACTNESS-LIMIT-001 stays (sharpened by D0-RANK3-CAUSAL-CONE-001). M1: forcing-uniqueness of the posing, not no-other-def-tried.
+
 ### D0-COMPACTNESS-LIMIT-001
 
 - type: `certificate`
@@ -843,6 +856,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] Pi_H identity on scalar anchor image; rank.V13=39; delta0-normalized defect.
+
+### D0-EW-WINDOW-FORCING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_ew_window_forcing.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Audit->FORCING, HYP->THE] (710,113) FORCED not fitted. 710=2*D_Sigma*(2|V|+D_Sigma)=2*5*71, 113=(|ABCD|+1)*d13+|V13|=5*20+13 (every atom a named invariant, ZERO free numbers; 71=2*33+5 derived). Window=ratio q/m~tau=2pi (phase-circle period). MINIMALITY: 710/113 is the FIRST 2pi-convergent with |q/m-2pi|<1e-6 (prior 333/53 = 1.7e-4); by continued-fraction best-approximation no denom<113 beats it, and 113 is the minimal invariant-grammar denominator. Forcing = grammar-expressibility + CF-minimality, NOT look-elsewhere (M1: absence of alternatives is not the argument). HONEST: near-return is the RATIO measure (~5.3e-7); absolute |q-m*2pi|~6e-5 is denominator-scaled, NOT the criterion. Supporting Lean D0.Claims.EWWindowForcing (ew_window_grammar) proves the decomposition; the CF-minimality is cert-level (pi-dependent).
 
 ### D0-FOUND-004
 
@@ -1142,6 +1168,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter4 T5.1] Closes the phason LANGUAGE DEBT by FORCING (not mass-BRIDGE). Owner of the phason concept across ~99 uses. Cert vp_phason_forcing.py: cut-and-project carrier (forced, BOOK_01 01.19a) has perp DOF d_perp=D-d_par=2-1=1 (the phason); phason shift=intercept change preserves the Sturmian factor set (k=1..8) => local isomorphism => zero patch cost => GAPLESS Goldstone; density-preserving relabel => no EM charge => DARK radiation-free mode. Negative control: rational slope differs. Owning section BOOK_08 08.49. HONEST: forces the CONCEPT; downstream K-theory/spectral-triple phason-holonomy (QUASI007/008/009) stay cert-closed with EXTERNAL-GAP, not promoted.
+
+### D0-PHI99-DEPTH-FORCING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi99_depth_forcing.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Audit->FORCING, D.3] phi^99 depth exponent forced: 99=V9*V11=9*11 (defect x memory shells), exact named product, 0 free. Controls: 98,100 not shell products; 117=V9*V13 a different pair. HONEST: exponent forced as named product; the G_N ORDER is the separate length-depth metrology BRIDGE.
 
 ### D0-PROTON-001
 
@@ -2792,6 +2831,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-RG-SMOOTH-INTERP`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: Scale algebra plus explicit smooth interpolation assumption.
+
+### D0-HIGGS-CUBE-DIAGONAL-001
+
+- type: `bridge`
+- release_status: `BRIDGE-CALIBRATION`
+- domain: `rg`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_higgs_cube_forcing.py`
+- assumptions: `none`
+- scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
+- notes: [Audit->FORCING] sqrt2 is a GEOMETRY THEOREM (forced): orthogonal/cubic-isospin cell, Z=edge, H=in-plane diagonal => diagonal/edge=sqrt(1+1)=sqrt2 exactly (body-diagonal sqrt3 is the negative control). The measured ~2.9% deficit (m_H/m_Z=1.3736 vs sqrt2=1.41421) is delta_loop, a NAMED running list (QED/QCD/EW from m_Z to m_H), a BRIDGE needing external RG to evaluate exactly. HONEST: sqrt2 forced & kept regardless; delta_loop is a NAMED-GAP (consistent at 3% pending RG), NOT a free bag and NOT a precise prediction. cert vp_higgs_cube_forcing.py.
 
 ### D0-ARCHIVE-LAPLACIAN-RG
 

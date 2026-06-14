@@ -4,38 +4,38 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 226,
+    "claims": 230,
     "release_status": {
       "CORE-FORMALIZED": 107,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 60,
+      "CERT-CLOSED": 63,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
-      "BRIDGE-CALIBRATION": 2,
+      "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 14,
       "PROOF-TARGET": 14
     },
     "lean_status": {
       "LEAN_PROVED": 126,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
-      "PYTHON_CERTIFIED": 75,
+      "PYTHON_CERTIFIED": 79,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
       "core": 108,
-      "bridge": 13,
+      "bridge": 14,
       "no-go": 16,
-      "certificate": 73,
+      "certificate": 76,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 132,
-      "rg": 3,
+      "formal_core": 135,
+      "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
       "spectral_action": 5,
@@ -7411,6 +7411,130 @@
       "label": "vp_ktheory_gap_labels_finite.py",
       "path": "05_CERTS/vp_ktheory_gap_labels_finite.py",
       "exists": true
+    },
+    {
+      "id": "D0-EW-WINDOW-FORCING-001",
+      "kind": "claim",
+      "claim_id": "D0-EW-WINDOW-FORCING-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "EW window (710,113) forcing-uniqueness (07.22-24)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ew_window_forcing.py",
+      "python_cert": [
+        "vp_ew_window_forcing.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Audit->FORCING, HYP->THE] (710,113) FORCED not fitted. 710=2*D_Sigma*(2|V|+D_Sigma)=2*5*71, 113=(|ABCD|+1)*d13+|V13|=5*20+13 (every atom a named invariant, ZERO free numbers; 71=2*33+5 derived). Window=ratio q/m~tau=2pi (phase-circle period). MINIMALITY: 710/113 is the FIRST 2pi-convergent with |q/m-2pi|<1e-6 (prior 333/53 = 1.7e-4); by continued-fraction best-approximation no denom<113 beats it, and 113 is the minimal invariant-grammar denominator. Forcing = grammar-expressibility + CF-minimality, NOT look-elsewhere (M1: absence of alternatives is not the argument). HONEST: near-return is the RATIO measure (~5.3e-7); absolute |q-m*2pi|~6e-5 is denominator-scaled, NOT the criterion. Supporting Lean D0.Claims.EWWindowForcing (ew_window_grammar) proves the decomposition; the CF-minimality is cert-level (pi-dependent).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ew_window_forcing.py",
+      "kind": "python_cert",
+      "label": "vp_ew_window_forcing.py",
+      "path": "05_CERTS/vp_ew_window_forcing.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HIGGS-CUBE-DIAGONAL-001",
+      "kind": "claim",
+      "claim_id": "D0-HIGGS-CUBE-DIAGONAL-001",
+      "type": "bridge",
+      "domain": "rg",
+      "scope_guard": "Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.",
+      "book": "BOOK_04",
+      "section": "m_H=sqrt2 m_Z orthogonal-cell forcing (04.6)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_higgs_cube_forcing.py",
+      "python_cert": [
+        "vp_higgs_cube_forcing.py"
+      ],
+      "status": "BRIDGE-CALIBRATION",
+      "notes": "[Audit->FORCING] sqrt2 is a GEOMETRY THEOREM (forced): orthogonal/cubic-isospin cell, Z=edge, H=in-plane diagonal => diagonal/edge=sqrt(1+1)=sqrt2 exactly (body-diagonal sqrt3 is the negative control). The measured ~2.9% deficit (m_H/m_Z=1.3736 vs sqrt2=1.41421) is delta_loop, a NAMED running list (QED/QCD/EW from m_Z to m_H), a BRIDGE needing external RG to evaluate exactly. HONEST: sqrt2 forced & kept regardless; delta_loop is a NAMED-GAP (consistent at 3% pending RG), NOT a free bag and NOT a precise prediction. cert vp_higgs_cube_forcing.py.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_higgs_cube_forcing.py",
+      "kind": "python_cert",
+      "label": "vp_higgs_cube_forcing.py",
+      "path": "05_CERTS/vp_higgs_cube_forcing.py",
+      "exists": true
+    },
+    {
+      "id": "D0-COMPACTNESS-DEF-FORCING-001",
+      "kind": "claim",
+      "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "C = M/R_initial forced by causal posing (07.5x)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_compactness_def_forcing.py",
+      "python_cert": [
+        "vp_compactness_def_forcing.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Audit->FORCING] C=M/R_initial is FORCED (not a choice): C at the horizon is M/(2M)=1/2 for every mass (constant, zero formation info, CIRCULAR - presupposes the horizon), so only the INITIAL compactness gives a well-posed non-degenerate causal threshold; R=8M/3 (C=3/8) is then unambiguous. cert vp_compactness_def_forcing.py. HONEST: forces the DEFINITION of C (closes the 3/8-depends-on-C nitpick); the separate rank-3=causal-cone gap of D0-COMPACTNESS-LIMIT-001 stays (sharpened by D0-RANK3-CAUSAL-CONE-001). M1: forcing-uniqueness of the posing, not no-other-def-tried.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_compactness_def_forcing.py",
+      "kind": "python_cert",
+      "label": "vp_compactness_def_forcing.py",
+      "path": "05_CERTS/vp_compactness_def_forcing.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHI99-DEPTH-FORCING-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI99-DEPTH-FORCING-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "phi^99 gravitational depth exponent forced 99=V9*V11 (07.7/07.22)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi99_depth_forcing.py",
+      "python_cert": [
+        "vp_phi99_depth_forcing.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Audit->FORCING, D.3] phi^99 depth exponent forced: 99=V9*V11=9*11 (defect x memory shells), exact named product, 0 free. Controls: 98,100 not shell products; 117=V9*V13 a different pair. HONEST: exponent forced as named product; the G_N ORDER is the separate length-depth metrology BRIDGE.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi99_depth_forcing.py",
+      "kind": "python_cert",
+      "label": "vp_phi99_depth_forcing.py",
+      "path": "05_CERTS/vp_phi99_depth_forcing.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10482,6 +10606,66 @@
     {
       "source": "D0-KTHEORY-GAP-MODULE-001",
       "target": "cert:vp_ktheory_gap_labels_finite.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-EW-WINDOW-FORCING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-EW-WINDOW-FORCING-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-EW-WINDOW-FORCING-001",
+      "target": "cert:vp_ew_window_forcing.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HIGGS-CUBE-DIAGONAL-001",
+      "target": "domain:rg",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HIGGS-CUBE-DIAGONAL-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HIGGS-CUBE-DIAGONAL-001",
+      "target": "cert:vp_higgs_cube_forcing.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-COMPACTNESS-DEF-FORCING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COMPACTNESS-DEF-FORCING-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COMPACTNESS-DEF-FORCING-001",
+      "target": "cert:vp_compactness_def_forcing.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI99-DEPTH-FORCING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI99-DEPTH-FORCING-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI99-DEPTH-FORCING-001",
+      "target": "cert:vp_phi99_depth_forcing.py",
       "kind": "certified_by"
     }
   ]

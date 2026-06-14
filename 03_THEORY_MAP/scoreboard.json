@@ -19,28 +19,28 @@
     }
   },
   "totals": {
-    "realized": 3003,
-    "track_fair_max": 4055,
-    "pct_strength": 74.1,
-    "core_realized": 2583,
-    "core_potential": 3620,
-    "core_headroom": 1037,
-    "n_claims": 226,
-    "n_active": 225,
+    "realized": 3031,
+    "track_fair_max": 4126,
+    "pct_strength": 73.5,
+    "core_realized": 2604,
+    "core_potential": 3680,
+    "core_headroom": 1076,
+    "n_claims": 230,
+    "n_active": 229,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 132,
-      "realized": 1976,
-      "max": 2540,
-      "core_headroom": 559
+      "n": 135,
+      "realized": 1997,
+      "max": 2600,
+      "core_headroom": 598
     },
     "rg": {
-      "n": 3,
-      "realized": 42,
-      "max": 42,
+      "n": 4,
+      "realized": 49,
+      "max": 53,
       "core_headroom": 0
     },
     "gauge_bridge": {
@@ -148,10 +148,10 @@
       "core_headroom": 75
     },
     "BOOK_07": {
-      "n": 37,
-      "realized": 489,
-      "max": 668,
-      "core_headroom": 169
+      "n": 40,
+      "realized": 510,
+      "max": 728,
+      "core_headroom": 208
     },
     "BOOK_06/08": {
       "n": 5,
@@ -160,9 +160,9 @@
       "core_headroom": 52
     },
     "BOOK_04": {
-      "n": 40,
-      "realized": 511,
-      "max": 740,
+      "n": 41,
+      "realized": 518,
+      "max": 751,
       "core_headroom": 228
     },
     "BOOK_04/08": {
@@ -968,6 +968,36 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-EW-WINDOW-FORCING-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-PHI99-DEPTH-FORCING-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1632,6 +1662,27 @@
     },
     {
       "claim_id": "D0-PHASON-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-EW-WINDOW-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-PHI99-DEPTH-FORCING-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -4799,6 +4850,62 @@
       "ceiling": 20,
       "release_status": "CORE-FORMALIZED",
       "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-EW-WINDOW-FORCING-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HIGGS-CUBE-DIAGONAL-001",
+      "track": "BRIDGE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 11,
+      "release_status": "BRIDGE-CALIBRATION",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "rg",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHI99-DEPTH-FORCING-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_07",
       "leverage": 0,

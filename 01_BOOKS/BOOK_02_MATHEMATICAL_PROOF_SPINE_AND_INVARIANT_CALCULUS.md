@@ -1073,6 +1073,16 @@ The exponent is a theorem obligation: active plus anchor over `Omega8` with the 
 \varepsilon^2=\varphi^{-16}\approx 4.53104\cdot10^{-4}.
 ```
 
+This is no longer a numeric check: since both writings are closed forms over `Q(φ)` (no data input), `Δα` is itself an **exact element of `Q(φ)`**, now certified exactly —
+
+```math
+\alpha_{top}^{-1}=726-364\varphi,\qquad
+\alpha_{alg}^{-1}=\tfrac{159739}{5}-\tfrac{294902}{15}\varphi,\qquad
+\Delta_\alpha=-\tfrac{156109}{5}+\tfrac{289442}{15}\varphi ,
+```
+
+with `Δα ≠ 0` (its `φ`-coefficient is nonzero, so `Δα ∉ Q`, in particular `≠ 0`) and `|Δα| < φ⁻¹⁶ = 1597 − 987φ` proved by exact `Z[φ]` surd-sign analysis. What remains a theorem-target is only the *analytic owner* — deriving the algebraic writing `α_alg⁻¹` as a second-order/`π₀`-phase moment of the feedback resolvent — and the neutrino link `m_ν ∝ Δα²` stays a typed BRIDGE (the dimensionful step multiplies by `m_e`).
+
 [COR] [^b02-32]  `Δα≠0` is NOT a numerical error and NOT a defect of either writing.  Two independent reconstructions of the SAME constant — topological capacity (channel count) versus geometric phase `π_0` — cannot be glued to zero residue inside `Q(φ)`: the field `Q(φ)` is the smallest catalog-free arena that holds both, and it does not flatten the seam.  Hence `Δα` is the IRREDUCIBLE residue of gluing topological capacity to geometric phase.  This non-zero seam is forced, not fitted, and it is the seed of the sterile-sector mechanism (a measurable CORE residue; any probabilistic weight `P_sterile=f(Δα²)` built on it is a typed BRIDGE/HYP layer, since the linear sign of `Δα` is not observable).  The runtime `q_res` dressing above does NOT erase this seam; it dresses `α_top` toward the measured `137.035999`, while `Δα` records that the two algebraic origins were never identical to begin with.
 
 ### 02.13.5 QCD runtime and archive scale

@@ -6,6 +6,7 @@ import D0.Claims.Book04Selectors
 import D0.Claims.CkmExactMatrix
 import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
+import D0.Claims.EWWindowForcing
 import D0.Claims.HiggsYukawaBlock
 import D0.Claims.KTheoryGapModule
 import D0.Claims.KernelZoneSplit
