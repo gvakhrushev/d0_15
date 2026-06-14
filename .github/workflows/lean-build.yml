@@ -1,0 +1,53 @@
+name: D0 Lean build
+
+# The full Lean library must actually COMPILE on every change.
+#
+# History: CI used to score Lean off declared `lean_status` + on-disk module
+# existence and never ran `lake build`, so 17 modules silently rotted (stale
+# Mathlib imports, malformed `theorem _ : Prop := ...`, references to
+# never-defined APIs). This workflow closes that hole: it builds `D0.All`
+# (the release "build all" aggregate, regenerated from CLAIM_TO_LEAN_MAP.csv)
+# and fails if anything does not elaborate.
+#
+# Kept in its own workflow (not the fast Python `guards.yml`) because a Lean
+# build needs the toolchain + Mathlib cache. The fast guards still gate every
+# change; this gate additionally proves the library compiles.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+# Don't pile up redundant Lean builds on rapid pushes to the same ref.
+concurrency:
+  group: lean-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lean-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Installs the toolchain pinned by 09_LEAN_FORMALIZATION/lean-toolchain,
+      # fetches the prebuilt Mathlib cache (`lake exe cache get`), and runs
+      # `lake build D0.All`. This IS the "lake build D0.All" CI gate.
+      - name: lake build D0.All
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: "09_LEAN_FORMALIZATION"
+          build-args: "D0.All"
+          use-mathlib-cache: "true"
+          test: "false"
+          lint: "false"
+
+      # Re-run through the portable guard so the same entrypoint devs use locally
+      # (`python tools/check_lean_builds.py`) is exercised in CI. Incremental:
+      # lean-action already built D0.All, so this is a fast no-op unless the
+      # script and the workflow target ever disagree.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: verify via tools/check_lean_builds.py
+        run: python tools/check_lean_builds.py

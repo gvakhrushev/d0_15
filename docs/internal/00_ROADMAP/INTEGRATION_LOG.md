@@ -868,3 +868,56 @@ active during this iteration; some of its staged moves were bundled into the Roo
 (`4d061e8`). Those moves are legitimate (the orphan quarantine); they are unrelated to the
 forcing/separation work and do not affect the two new claims, which build and pass guards on
 their own dependency closures.
+
+### Build-hygiene session — COMPLETED: `lake build D0.All` is GREEN
+
+The spun-off 17-module cleanup is finished. `lake build D0.All` now compiles cleanly
+(**3262 jobs, 0 errors**). Iteration-11's commit `4d061e8` had bundled the 13 orphan
+quarantine *moves* to `_OPEN_WITNESSES/` (and the StressTestSuite **CSV** re-scope) but left the
+tree **red** — the importers and the registered index modules still referenced the moved/phantom
+symbols, and several malformed modules were unfixed. This session completes it:
+
+- **Importers / registered index modules fixed (not quarantined):**
+  - `D0.Bridge.FinalBridgeIndex` (registered `D0-FINAL-BRIDGE-INDEX-001`, and hardcoded in the
+    fast active gate) — dropped the 5 imports of quarantined Higgs/Book04/SM modules, removed the
+    3 `FinalFoundationIndex` fields typed by quarantined Book04 symbols (`book04Meson400Boundary`,
+    `book04HiggsScalarProjectorBoundary`, `book04OperatorBoundariesClosed`) + their witnesses, and
+    removed the `#check`s of phantom `finite_scalar_projector_*` / quarantined symbols. Added a
+    direct `import D0.Matter.HiggsScalarProjectorConstructive` (the real stub the `#check`s need,
+    previously only transitively imported). The registered `D0_FINAL_FOUNDATION_INDEX` still builds.
+  - `D0.TheoremLedger.HardClosureTheoremIndex` (orphan index) — dropped the remaining quarantined
+    imports + `#check`s, plus 3 stale `#check`s left from the earlier `FiniteHodgeComplex`
+    quarantine (`finite_boundary_squared_zero` et al.).
+- **`D0.NoGo.StressTestSuite` re-scoped (registered `D0-NO-GO-STRESS-SUITE-001`).** The module now
+  proves the **3 Lean-backed** no-gos (isolated-phason generation, isolated-phason baryon-S3,
+  Euclidean signature). The rank-one Higgs scalar-projector control was removed: its
+  `FiniteScalarProjector` / `GaugeCompatible` / `finite_scalar_projector_rank_one_no_go` API was
+  **never defined** (reference-only since `base-v14`; `git log -S` finds no defining commit). That
+  control stays covered by the passing, can-fail Python cert `vp_no_go_stress_test_suite.py` and is
+  an open Lean theorem-target. Per owner decision the claim **keeps `LEAN_PROVED` / `NO_GO_PROVED`**
+  at the narrowed (honest) scope; the CSV `lean_theorem` list (already updated in `4d061e8`) drops
+  `no_go_rank_one_higgs_scalar_projector` and this session brings the `.lean` into agreement.
+  `check_firewall` PASS, `d0_score --strict` 0 integrity demotions.
+- **Repairs (kept, real content recovered):** `D0.Gravity.CriticalCollapseDSS`
+  (`Mathlib.Data.Rat.Basic` → `Mathlib.Tactic`; dead `: Prop := True` placeholder removed);
+  `D0.Topology.FiniteCochainNoAxion` (`theorem … : Prop :=` negative-control → honest `def`, two
+  real theorems kept); `D0.Gauge.NonAbelianSeamObstructionGap` (3 `: Prop := True` owner-placeholders
+  removed; `seamEnergy` + non-negativity kept).
+- **13th quarantine (missed by the bundle):** `D0.Gravity.EchoCapacityHorizon` → `_OPEN_WITNESSES/`
+  (orphan; its one non-placeholder theorem used `Prop`-typed struct fields as their own proofs —
+  unprovable for a generic bridge). Its dependency `CriticalCollapseDSS` was repaired and **stays**
+  in the build. `_OPEN_WITNESSES/README.md` ledger updated (13 build-hygiene quarantines, per-module
+  reasons).
+- **CI guard added (the real fix for the masking).** `tools/check_lean_builds.py` (portable
+  `lake build D0.All` runner that can FAIL) + `.github/workflows/lean-build.yml` (sets up the pinned
+  toolchain + Mathlib cache via `leanprover/lean-action`, runs `lake build D0.All` on every push/PR,
+  then re-runs through the script). The full library is now verified to compile in CI — the missing
+  `lake build` is what let 17 modules rot undetected. `guards.yml`'s deferred-Lean note is superseded.
+- **Guards:** `validate_csv`, `check_firewall --base base-v14`, `d0_score --strict` (0 demotions),
+  `generate_lean_aggregates --check` (idempotent), `regen_graph -CheckOnly` (post-commit),
+  `check_claim_map_coverage`, `check_no_tautology_proofs`, `run_registered_certs`,
+  `check_cert_can_fail`, `check_physical_bridge_discipline`, `check_book_cert_references` — all PASS.
+- **Pre-existing, out-of-scope (flagged, not fixed here):** `check_no_sorry_in_core.py --all` exits 1
+  at HEAD independently of this change (confirmed by stash test) — assumption-ledger `assumption_type`
+  values outside the allowed set, and an `admit` token flagged in the new Iteration-11 module
+  `D0/Claims/CarrierNotIcosahedral.lean`. None are in this session's changeset.
