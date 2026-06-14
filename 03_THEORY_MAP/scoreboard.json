@@ -4865,7 +4865,7 @@
       },
       {
         "signal": "files_deleted_vs_base",
-        "count": 133,
+        "count": 135,
         "points": 10.0,
         "cap": 10.0,
         "label": "net files removed vs base-v14 (rewards shrinking the publish tree)",

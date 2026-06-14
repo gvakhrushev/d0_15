@@ -86,3 +86,41 @@ has a passing artifact. Passport-summary timestamp noise was reverted before eac
 (a background task was filed to make those summaries deterministic). All 7 guards green:
 validate_csv, check_firewall, no_tautology, apparatus --check, check_book_publication,
 assemble_books --check, no_sorry_in_core.
+
+---
+
+# Iteration 5 — audit-driven 3-track strategy (executed)
+
+Audit → updated scoring → balanced execution of three tracks (closure / synthesis /
+cleanup). strength **2867 → 2963** (CORE-FORMALIZED 97 → 105); all 8 guards green; hygiene
+100/100 (penalty −0.4 → −0.2). Five commits (ab351f6, 3814908, 2a65aa9, 51ed635, + this wrap).
+
+**What closed.** Track 1: bless ZETA→CORE + 6 CORE promotions (SPIN2, HIGGS-YUKAWA, 4×
+ARCHIVE — the latter were under-credited already-proved modules). Track 2: Z2SpinorCover
+7/7, RankCausalCone (sharpened the gravastar gap, not faked to THE), registry repoints,
+Δ_α→CVFT-F1 owner edge. Track 3: new `check_cert_can_fail` guillotine guard; 3 print-stubs
+rewritten with real finite witnesses, 2 demoted; float→exact on 2 certs; stale doc pointers
+fixed.
+
+## OWNER-DECISION-NEEDED (Iteration 5)
+
+1. **Cert can't-fail debt is 24, not 5.** The new guard found 19 *compute-theater* certs
+   (compute values but print PASS without gating) beyond the 5 approved print-stubs. They are
+   grandfathered in an explicit, printed ratchet (`tools/check_cert_can_fail.py` GRANDFATHER,
+   now 19) that blocks new stubs and must only shrink. Decide appetite for rewriting/demoting
+   the remaining 19 in a future iteration.
+2. **ZETA bless to CORE** — done on the judgment that `zeta_residue_alpha_finite` is gap-free;
+   please confirm `D0.Traceability.StatusTaxonomy` treats a gap-free LEAN_PROVED theorem as
+   CORE-eligible (the firewall already passed).
+3. **EDGE-001 trace-leg split.** The phantom `D0.Edge.AlphaRamificationConstructive` path was
+   cleared; the trace identity is already proved as `ZetaResidueAlpha.zetaEdge_neg_one`. Decide
+   whether to formally split EDGE-001 into a closeable trace leg + an open unitary-dilation leg.
+4. **Δ_α / residue-at-pole** remain the one fully-open frontier obligation, now routed to the
+   CVFT-F1 feedback-resolvent-trace engine (not a finite cert — owner decision to invest).
+5. **Deferred (noted, not done):** 41 process-tag (`v15`/`NOID`/`CVFT`) section-id renames
+   (cosmetic); the 9 registered-but-missing cert paths (audit which rows name absent certs).
+
+## Carried-forward open items (unchanged)
+- S_DE cubic-vs-quadratic fork → DESI DR3 decides (discriminator computed).
+- PMNS angle-formula forcing (passport; formulas not yet M1-derived).
+- Topological conjugacy (Mathlib-blocked); rank-3↔cone-space identification (named gap).

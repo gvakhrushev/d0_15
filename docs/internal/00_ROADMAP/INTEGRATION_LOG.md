@@ -501,3 +501,51 @@ signature-3+1 CORE) — autonomous front executes the genuinely-remaining work.
 
 Closure delta POSITIVE: +5 core promotions, phason undeclared-gap closed by forcing,
 gravastar hole filled, 3 external anchors wired in — and zero new PROOF-TARGETs created.
+
+---
+
+## ITERATION 5 — audit-driven 3-track strategy (balanced)
+
+From a score-based audit (strength 2867/3995 at Iteration-4 end). The naive scoreboard
+"+120 cheap promotions" was mostly Mathlib-blocked; honest realizable closure was the goal.
+Balanced across three tracks. DoD per claim = the verified-closure-protocol skill.
+
+**Track 1 — closure (Step B, commit ab351f6).** Bless D0-ALPHA-ZETA-RESIDUE-001 CERT-CLOSED
+-> CORE (gap-free finite-moment theorem) + 6 CORE promotions: SPIN2, HIGGS-YUKAWA (new
+exact Lean modules), and the 4 ARCHIVE-* claims (registry was under-crediting already-proved
+D0.Geometry.Archive* modules). +86 strength.
+
+**Track 2 — synthesis (Step C, commit 3814908).** Z2SpinorCover extended 4/7 -> 7/7 (all
+seven ℤ₂ incarnations); D0-RANK3-CAUSAL-CONE-001 (D0.Synthesis.RankCausalCone) proves the
+(3,1)->Minkowski-cone structure — a SHARPENED BRIDGE that narrows but does not close the
+gravastar compactness gap (scene-rank↔cone-space identification remains; COMPACTNESS stays
+LEM, not faked to THE). Registry repoints: cleared the phantom D0.Edge.AlphaRamification-
+Constructive path; declared Δ_α analytic owner = CVFT-F1 (shared engine with the residue
+route). +20 strength.
+
+**Track 3 — honesty cleanup (Steps A+D, commits 2a65aa9, 51ed635).** New guillotine guard
+`check_cert_can_fail.py` (wired into guards.yml) — FINDING: 24 registered certs could not
+FAIL (5 pure print-stubs + 19 compute-theater), far beyond the 5 expected; grandfathered as
+an explicit, printed DEBT RATCHET that blocks new stubs. Of the 5 approved print-stubs:
+HODGE / NOAXION / BH-A4 rewritten with real exact finite witnesses + negative controls
+(removed from the ratchet); SPECTRAL-EINSTEIN / HODGE-LINKS demoted to PROOF-TARGET (no
+quick genuine witness), stub certs deleted, HODGE-LINKS CertTarget removed from
+run_hard_theorem_closure. Float->exact: higgs-yukawa + spin2 certs rationalized (unblocked
+the Track-1 promotions). Fixed 2 stale docs/internal pointers to the removed
+99_PRESERVED_SOURCE/ tree. Ratchet 24 -> 19; orphan PROOF-TARGETs 4 -> 2.
+
+### Iteration 5 metrics (vs Iteration-4 end)
+| metric | Iter4 end | Iter5 now | delta |
+|---|---|---|---|
+| CORE-FORMALIZED | 97 | 105 | +8 |
+| CERT-CLOSED | 69 | 60 | −9 (6 promoted to CORE, 2 demoted, + churn) |
+| PROOF-TARGET | 12 | 14 | +2 (honest demotions) |
+| strength | 2867 | 2963 | +96 |
+| hygiene penalty | −0.4 | −0.2 | orphan-PT 4→2 |
+| cert can't-fail debt | (24 found) | 19 | −5 |
+
+All 8 guards green (validate, firewall, no_tautology, cert_can_fail, apparatus, publication,
+book_assembly, no_sorry). Net PROOF-TARGET +2 is the honest cost of the integrity demotions;
+all promotions backed by gap-free Lean theorems; no passport promoted to core; no fakes.
+Deferred: 41 process-tag (v15/NOID/CVFT) section renames (cosmetic, P2); the 19 remaining
+compute-theater certs (owner-decision, ratchet in place); the 9 registered-but-missing certs.
