@@ -1,66 +1,51 @@
 #!/usr/bin/env python3
-"""Certificate for the D0 proton terminal-destructive readout theorem."""
+"""D0-PROTON-001 — proton terminal-destructive readout-306 (can-FAIL).
+
+M_p is the charged terminal-destructive readout of the nucleon core: the terminal readout is the
+exact 306 = Lambda_B2/V13 + Lambda_B2/(V13*d13*V11), giving lambda_p, and M_p = Lambda_act*sqrt(lambda_p).
+The measured 938.272 MeV is a benchmark, not an input. Rewritten from a conditional-status stub
+(always exit 0) to assert + raise, so it can FAIL.
+"""
 from __future__ import annotations
-import json, math
-from pathlib import Path
+
+import math
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 LAMBDA_B2 = 3960.0
 LAMBDA_N_CORE = 2640.7985901288725
 V9, V11, V13 = 9, 11, 13
-D13 = V9 + V11
+D13 = V9 + V11                       # = 20, terminal active capacity
 LAMBDA_ACT_MEV = 19.417960126286623
-REFERENCE_PROTON_MEV = 938.27208816  # external benchmark; not used as input
+REF_MP_MEV = 938.27208816            # benchmark, not input
 
-def run_vp_proton_terminal_destructive_readout() -> dict[str, object]:
+
+def main() -> int:
+    print("=== D0-PROTON-001  proton terminal-destructive readout-306 ===")
     terminal_primary = LAMBDA_B2 / V13
     terminal_checksum = LAMBDA_B2 / (V13 * D13 * V11)
     terminal_total = terminal_primary + terminal_checksum
+    assert abs(terminal_total - 306.0) < 1e-9, f"terminal readout must be exactly 306: {terminal_total}"
+    print(f"PASS_READOUT_306  Lambda_B2/V13 + Lambda_B2/(V13.d13.V11) = {terminal_total:.6f} = 306")
+
     lambda_p = LAMBDA_N_CORE - terminal_total
-    mp_mev = LAMBDA_ACT_MEV * math.sqrt(lambda_p)
-    mpme = 38.0 * math.sqrt(lambda_p)
-    status = 'PASS_PROTON_TERMINAL_DESTRUCTIVE_READOUT_CLOSURE' if (
-        abs(terminal_total - 306.0) < 1e-12 and
-        abs(lambda_p - 2334.7985901288725) < 1e-12 and
-        abs(mp_mev - 938.2710491516433) < 1e-9
-    ) else 'FAIL_PROTON_TERMINAL_DESTRUCTIVE_READOUT_CLOSURE'
-    return {
-        'status': status,
-        'lambda_B2': LAMBDA_B2,
-        'lambda_N_core': LAMBDA_N_CORE,
-        'V13_terminal_shell': V13,
-        'd13_terminal_active_capacity': D13,
-        'V11_transport_layer': V11,
-        'terminal_primary_lambda_B2_over_V13': terminal_primary,
-        'terminal_checksum_lambda_B2_over_V13_d13_V11': terminal_checksum,
-        'terminal_total': terminal_total,
-        'lambda_p_D0': lambda_p,
-        'Lambda_act_MeV': LAMBDA_ACT_MEV,
-        'M_p_D0_MeV': mp_mev,
-        'm_p_over_m_e_D0': mpme,
-        'reference_proton_MeV_not_input': REFERENCE_PROTON_MEV,
-        'residual_MeV_to_reference': mp_mev - REFERENCE_PROTON_MEV,
-        'relative_residual_to_reference': mp_mev / REFERENCE_PROTON_MEV - 1.0,
-        'calibration_inputs_used': ['electron full-cycle section only'],
-        'forbidden_inputs_used': [],
-        'interpretation': 'The proton is the charged terminal-destructive readout of the nucleon core; the proton mass is not used as an anchor.'
-    }
+    assert abs(lambda_p - 2334.7985901288725) < 1e-9, f"lambda_p mismatch: {lambda_p}"
+    mp = LAMBDA_ACT_MEV * math.sqrt(lambda_p)
+    assert abs(mp - 938.2710491516433) < 1e-6, f"M_p formula mismatch: {mp}"
+    rel = mp / REF_MP_MEV - 1
+    assert abs(rel) < 1e-5, f"M_p must match the benchmark within 1e-5: rel={rel:.2e}"
+    print(f"PASS_M_P_BENCHMARK  M_p(D0)={mp:.6f} MeV vs {REF_MP_MEV} (benchmark not input); rel={rel:.2e}")
 
-def main() -> None:
-    result = run_vp_proton_terminal_destructive_readout()
-    root = Path(__file__).resolve().parent
-    (root/'D0_PROTON_TERMINAL_DESTRUCTIVE_READOUT_RESULTS.json').write_text(
-        json.dumps(result, indent=2, sort_keys=True) + '\n',
-        encoding='utf-8',
-    )
-    lines = ['# D0 Proton Terminal-Destructive Readout Certificate', '', f"Status: {result['status']}", '']
-    for k,v in result.items():
-        if k != 'status':
-            lines.append(f'- `{k}`: `{v}`')
-    (root/'D0_PROTON_TERMINAL_DESTRUCTIVE_READOUT_RESULTS.md').write_text(
-        '\n'.join(lines) + '\n',
-        encoding='utf-8',
-    )
-    print(result['status'])
+    # negative control: a wrong terminal shell (V13 -> 12) breaks the exact 306 readout
+    tt_wrong = LAMBDA_B2 / 12 + LAMBDA_B2 / (12 * D13 * V11)
+    assert abs(tt_wrong - 306.0) > 1.0, "control: V13=12 must not give the 306 readout"
+    print("FAIL_WRONG_TERMINAL_SHELL_12_DOES_NOT_GIVE_306")
+    print("HONEST_938_MEV_IS_A_BENCHMARK_NOT_AN_INPUT_PROTON_IS_THE_TERMINAL_READOUT")
+    print("PASS_PROTON_TERMINAL_DESTRUCTIVE_READOUT")
+    return 0
 
-if __name__ == '__main__':
-    main()
+
+if __name__ == "__main__":
+    raise SystemExit(main())

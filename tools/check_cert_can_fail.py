@@ -100,8 +100,14 @@ def main() -> int:
     for c in sorted(certs):
         p = CERTS / c
         if not p.exists():
-            missing.append(c)
-            continue
+            # fall back to a recursive search under 05_CERTS — certs may live in
+            # ported_legacy_primary/<CLAIM-ID>/ subdirs (same resolution as run_registered_certs).
+            hits = list(CERTS.rglob(c))
+            if hits:
+                p = hits[0]
+            else:
+                missing.append(c)
+                continue
         if not cert_can_fail(p):
             offenders.append(c)
 

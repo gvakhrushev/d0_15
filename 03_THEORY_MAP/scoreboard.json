@@ -5436,7 +5436,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 2.2,
+    "penalty_total": 0.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5465,13 +5465,11 @@
       },
       {
         "signal": "proof_debt",
-        "count": 1,
-        "points": -2.0,
+        "count": 0,
+        "points": -0.0,
         "cap": -10.0,
         "label": "sorry/axiom inside the built D0/ tree",
-        "evidence": [
-          "CarrierNotIcosahedral.lean:21"
-        ]
+        "evidence": []
       },
       {
         "signal": "phantom_certs",
@@ -5531,16 +5529,6 @@
       }
     ],
     "top_actions": [
-      {
-        "signal": "proof_debt",
-        "count": 1,
-        "points": -2.0,
-        "cap": -10.0,
-        "label": "sorry/axiom inside the built D0/ tree",
-        "evidence": [
-          "CarrierNotIcosahedral.lean:21"
-        ]
-      },
       {
         "signal": "orphan_proof_targets",
         "count": 2,

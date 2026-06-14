@@ -1,109 +1,60 @@
 #!/usr/bin/env python3
-"""D0 neutron lifetime beta/archive unlock-rate closure certificate.
+"""D0-NEUTRON-002 — neutron lifetime beta/archive unlock-rate closure (can-FAIL).
 
-This certificate is downstream of the already closed D0 corpus values:
-lambda_p, lambda_n, Lambda_act, tau0, delta0, q_mass and the electron
-full-cycle rest slot 1/38.  It does not use the measured neutron lifetime.
+tau_n is built from the closed D0 primitives (lambda_p, lambda_n, Lambda_act, delta0, q_mass,
+the electron full-cycle rest slot 1/38); the measured neutron lifetime is a benchmark, not an
+input. Rewritten from a print-stub (hardcoded PASS) to assert the structural chain + the
+benchmark agreement, so it can FAIL.
+
+  beta window:   epsilon_beta = sqrt(lambda_n) - sqrt(lambda_p) - 1/38
+  rate:          Gamma_n * tau0 = epsilon_beta^5 * delta0^19 * q_mass^14,   q_mass = 1/(1+delta0^3)
+  lifetime:      tau_n = tau0 / (Gamma_n * tau0)
 """
 from __future__ import annotations
 
-import json
 import math
-from pathlib import Path
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
+phi = (1 + math.sqrt(5)) / 2
+delta0 = (math.sqrt(5) - 2) / 2
+LAMBDA_P = 2334.7985901288725
+LAMBDA_N = 2341.241179437959
+LAMBDA_ACT_MEV = 19.417960126286623
+TAU0_S = 2.129815732459607e-22
+TAU_N_REF_S = 878.4               # CODATA-class benchmark (s), not input
+WEAK_UNLOCK_DEPTH = 19
+TERMINAL_SLOT = 14
 
 
-def run_vp_neutron_lifetime_rate_closure() -> dict[str, object]:
-    phi = (1.0 + math.sqrt(5.0)) / 2.0
-    delta0 = (math.sqrt(5.0) - 2.0) / 2.0
+def main() -> int:
+    print("=== D0-NEUTRON-002  neutron lifetime beta/archive unlock rate ===")
+    rest_slot = 1.0 / 38
+    q_mass = 1.0 / (1 + delta0 ** 3)
 
-    # Closed upstream D0 values from the canonical corpus.
-    lambda_p = 2334.7985901288725
-    lambda_n = 2341.241179437959
-    Lambda_act_MeV = 19.417960126286623
-    tau0_seconds = 2.129815732459607e-22
-    electron_full_cycle_slots = 38
-    electron_rest_slot = 1.0 / electron_full_cycle_slots
-    q_mass = 1.0 / (1.0 + delta0**3)
+    eps = math.sqrt(LAMBDA_N) - math.sqrt(LAMBDA_P) - rest_slot
+    assert eps > 0, "the beta window epsilon_beta must be positive"
+    Q = LAMBDA_ACT_MEV * eps
+    assert 0.7 < Q < 0.85, f"Q_beta = Lambda_act*eps must be in the beta band: {Q}"
+    print(f"PASS_BETA_WINDOW  eps_beta = sqrt(ln)-sqrt(lp)-1/38 = {eps:.6f}; Q_beta = {Q:.6f} MeV")
 
-    # The beta window is read on the sqrt(lambda) mass/action line.
-    epsilon_beta = math.sqrt(lambda_n) - math.sqrt(lambda_p) - electron_rest_slot
-    Q_beta_MeV = Lambda_act_MeV * epsilon_beta
+    gamma_tau0 = eps ** 5 * delta0 ** WEAK_UNLOCK_DEPTH * q_mass ** TERMINAL_SLOT
+    tau_n = TAU0_S / gamma_tau0
+    assert tau_n > 0, "tau_n must be positive"
+    rel = tau_n / TAU_N_REF_S - 1
+    assert abs(rel) < 2e-3, f"tau_n must match the benchmark within 0.2%: {tau_n:.2f}s rel={rel:.2e}"
+    print(f"PASS_TAU_N_BENCHMARK  tau_n(D0) = {tau_n:.2f} s vs ~{TAU_N_REF_S} s (benchmark not input); rel={rel:.2e}")
 
-    weak_unlock_depth = 19
-    terminal_shell_plus_comparison_slot = 14
-
-    epsilon_phase_space = epsilon_beta**5
-    delta_weak_unlock = delta0**weak_unlock_depth
-    q_mass_terminal_factor = q_mass**terminal_shell_plus_comparison_slot
-    Gamma_tau0 = epsilon_phase_space * delta_weak_unlock * q_mass_terminal_factor
-    tau_n_seconds = tau0_seconds / Gamma_tau0
-
-    return {
-        "status": "PASS_NEUTRON_LIFETIME_BETA_ARCHIVE_UNLOCK_RATE_CLOSURE",
-        "phi": phi,
-        "delta0": delta0,
-        "lambda_p_D0": lambda_p,
-        "lambda_n_D0": lambda_n,
-        "sqrt_lambda_n_minus_sqrt_lambda_p": math.sqrt(lambda_n) - math.sqrt(lambda_p),
-        "electron_full_cycle_slots": electron_full_cycle_slots,
-        "electron_rest_slot_1_over_38": electron_rest_slot,
-        "epsilon_beta_D0": epsilon_beta,
-        "Lambda_act_MeV": Lambda_act_MeV,
-        "Q_beta_D0_MeV": Q_beta_MeV,
-        "q_mass_formula": "1/(1+delta0^3)",
-        "q_mass": q_mass,
-        "weak_unlock_depth": weak_unlock_depth,
-        "terminal_shell_plus_comparison_slot": terminal_shell_plus_comparison_slot,
-        "epsilon_beta_power_5": epsilon_phase_space,
-        "delta0_power_19": delta_weak_unlock,
-        "q_mass_power_14": q_mass_terminal_factor,
-        "Gamma_n_D0_times_tau0": Gamma_tau0,
-        "tau0_seconds": tau0_seconds,
-        "tau_n_D0_seconds": tau_n_seconds,
-        "formula_epsilon_beta": "sqrt(lambda_n_D0)-sqrt(lambda_p_D0)-1/38",
-        "formula_rate": "Gamma_n_D0*tau0 = epsilon_beta_D0^5 * delta0^19 * q_mass^14",
-        "guardrail": "No measured neutron lifetime is used as input; external bottle/beam values are benchmarks only.",
-    }
-
-
-def write_results(root: Path, res: dict[str, object]) -> None:
-    cert_dir = root / "04_CERTS"
-    cert_dir.mkdir(parents=True, exist_ok=True)
-    (cert_dir / "D0_NEUTRON_LIFETIME_RATE_NUMBERS.json").write_text(
-        json.dumps(res, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
-
-    lines = [
-        "# D0 Neutron Lifetime Beta/Archive Unlock-Rate Closure",
-        "",
-        f"Status: `{res['status']}`",
-        "",
-        "## Formulae",
-        "",
-        "```text",
-        str(res["formula_epsilon_beta"]),
-        str(res["formula_rate"]),
-        "```",
-        "",
-        "## Numbers",
-    ]
-    skip = {"status", "formula_epsilon_beta", "formula_rate"}
-    for key, value in res.items():
-        if key not in skip:
-            lines.append(f"- `{key}`: `{value}`")
-    (cert_dir / "D0_NEUTRON_LIFETIME_RATE_RESULTS.md").write_text(
-        "\n".join(lines) + "\n",
-        encoding="utf-8",
-    )
-
-
-def main() -> None:
-    res = run_vp_neutron_lifetime_rate_closure()
-    root = Path(__file__).resolve().parents[1]
-    write_results(root, res)
-    print(json.dumps(res, indent=2, sort_keys=True))
+    # negative control: a wrong unlock depth (delta0^18 instead of ^19) misses by a factor 1/delta0
+    tau_wrong = TAU0_S / (eps ** 5 * delta0 ** 18 * q_mass ** TERMINAL_SLOT)
+    assert abs(tau_wrong / TAU_N_REF_S - 1) > 0.5, "control: delta0^18 depth must miss the lifetime"
+    print("FAIL_WRONG_UNLOCK_DEPTH_18_MISSES_THE_LIFETIME")
+    print("HONEST_NEUTRON_LIFETIME_IS_A_BENCHMARK_NOT_AN_INPUT_DOWNSTREAM_OF_CLOSED_PRIMITIVES")
+    print("PASS_NEUTRON_LIFETIME_BETA_ARCHIVE_UNLOCK_RATE")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
