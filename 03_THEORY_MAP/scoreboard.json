@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3132,
-    "track_fair_max": 4248,
-    "pct_strength": 73.7,
+    "realized": 3154,
+    "track_fair_max": 4270,
+    "pct_strength": 73.9,
     "core_realized": 2683,
     "core_potential": 3780,
     "core_headroom": 1097,
-    "n_claims": 237,
-    "n_active": 236,
+    "n_claims": 239,
+    "n_active": 238,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 142,
-      "realized": 2098,
-      "max": 2722,
+      "n": 144,
+      "realized": 2120,
+      "max": 2744,
       "core_headroom": 619
     },
     "rg": {
@@ -373,6 +373,12 @@
       "n": 1,
       "realized": 7,
       "max": 7,
+      "core_headroom": 0
+    },
+    "BOOK_00": {
+      "n": 2,
+      "realized": 22,
+      "max": 22,
       "core_headroom": 0
     }
   },
@@ -5040,6 +5046,34 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COMPLEX-QM-FORCING-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-M1-INFO-RECONSTRUCTION-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_00",
       "leverage": 0,
       "integrity_flag": null
     }

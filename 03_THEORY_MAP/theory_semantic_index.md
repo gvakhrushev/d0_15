@@ -5,7 +5,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 9
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 11
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 65
 - `CORE-FORMALIZED`: 110
@@ -19,7 +19,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 16
+- `bridge`: 18
 - `certificate`: 78
 - `core`: 111
 - `deprecated`: 2
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 142
+- `formal_core`: 144
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -623,6 +623,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain: formal_core
 
+### D0-COMPLEX-QM-FORCING-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.Bridge.ComplexQMBridge`
+- theorem: `complex_qm_conditional`
+- cert: `none`
+- assumptions: `ASSUMP-COMPLEX-QM`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter7 axiom-forcing C.1, survived the mechanism filter] External owner: complex (not real-vector-space) QM is experimentally necessary -- Renou et al. Nature 600 625 (2021), Chen et al. PRL 128 040403 (43 sigma), Li et al. (5.30 sigma, strict locality). D0 lens: the genuine complex/imaginary structure D0 carries (toral det=-1, the i in the phase quotient) is forced, not chosen. Lean D0.Bridge.ComplexQMBridge (complex_qm_conditional) conditional on ASSUMP-COMPLEX-QM. HONEST named-gap: the experiments assume the standard QM postulates (2025 critique), so the forcing is conditional on that framework -- BRIDGE not core.
+
 ### D0-CONNES-RECONSTRUCTION-OWNER-001
 
 - type: `bridge`
@@ -635,6 +648,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-CONNES-RECONSTRUCTION`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter6 owner-edge] Names the external owner of 'metric = spectrum of the Dirac operator': Connes reconstruction theorem (commutative spectral triple <-> compact oriented spin manifold; metric = Connes distance d(x,y)=sup{|f(x)-f(y)|: ||[D,f]||<=1}). arXiv:0810.2088 (2008). Routes the existing NAMED GAP of D0-COMPACTNESS-LIMIT-001 (rank-3=causal-cone / Connes-distance OPEN, 07.51.3) to a cited classical owner. Lean D0.Bridge.ConnesReconstructionBridge (connes_reconstruction_conditional) proves the bridge CONDITIONAL on ASSUMP-CONNES-RECONSTRUCTION. HONEST: this NAMES the owner (raises 'asserted' to 'owned by a classical theorem'); it does not derive metric=spectrum inside D0, and does not close the rank-3=cone gap. BRIDGE track (<=11), honesty not points.
+
+### D0-M1-INFO-RECONSTRUCTION-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.Bridge.M1InfoReconstructionBridge`
+- theorem: `m1_info_reconstruction_conditional`
+- cert: `none`
+- assumptions: `ASSUMP-M1-INFO-RECONSTRUCTION`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter7 axiom-forcing C.2, strongest axiomatic support] External owner of M1 itself: finite information capacity of an elementary system + continuity + tomographic locality UNIQUELY yield complex Hilbert-space QM (Hardy quant-ph/0101012; Dakic-Brukner 2011; Masanes-Mueller NJP 13 053040 (2011); Chiribella-DAriano-Perinotti PRA 84 012311 (2011)). D0 lens: M1's finite-distinguishability premise IS the finite-capacity hypothesis these reconstructions start from -- an external forcing of the D0 axiomatic base. Lean D0.Bridge.M1InfoReconstructionBridge (m1_info_reconstruction_conditional) conditional on ASSUMP-M1-INFO-RECONSTRUCTION. HONEST: NAMES the reconstruction-theorem family as the owner; not a D0-internal derivation -- BRIDGE not core.
 
 ### D0-QM-BORN-001
 

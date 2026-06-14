@@ -238,6 +238,8 @@ digraph D0Theory {
   "D0-DIM8-NETWORK-001" [label="D0-DIM8-NETWORK-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-FIBONACCI-IF-FORCING-001" [label="D0-FIBONACCI-IF-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PACKING-LIMIT-001" [label="D0-PACKING-LIMIT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-COMPLEX-QM-FORCING-001" [label="D0-COMPLEX-QM-FORCING-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
+  "D0-M1-INFO-RECONSTRUCTION-001" [label="D0-M1-INFO-RECONSTRUCTION-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1532,4 +1534,16 @@ digraph D0Theory {
   "D0-PACKING-LIMIT-001" -> "cert:vp_packing_limit_probe.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-PACKING-LIMIT-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Bridge.ComplexQMBridge" [label="D0.Bridge.ComplexQMBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-COMPLEX-QM-FORCING-001" -> "module:D0.Bridge.ComplexQMBridge" [label="module"];
+  "assumption:ASSUMP-COMPLEX-QM" [label="ASSUMP-COMPLEX-QM", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-COMPLEX-QM-FORCING-001" -> "assumption:ASSUMP-COMPLEX-QM" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-COMPLEX-QM-FORCING-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Bridge.M1InfoReconstructionBridge" [label="D0.Bridge.M1InfoReconstructionBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-M1-INFO-RECONSTRUCTION-001" -> "module:D0.Bridge.M1InfoReconstructionBridge" [label="module"];
+  "assumption:ASSUMP-M1-INFO-RECONSTRUCTION" [label="ASSUMP-M1-INFO-RECONSTRUCTION", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-M1-INFO-RECONSTRUCTION-001" -> "assumption:ASSUMP-M1-INFO-RECONSTRUCTION" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-M1-INFO-RECONSTRUCTION-001" -> "domain:formal_core" [label="domain"];
 }

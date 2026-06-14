@@ -4,10 +4,10 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 237,
+    "claims": 239,
     "release_status": {
       "CORE-FORMALIZED": 110,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 9,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 11,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 65,
@@ -20,21 +20,21 @@
     },
     "lean_status": {
       "LEAN_PROVED": 130,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 10,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 12,
       "PYTHON_CERTIFIED": 80,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
       "core": 111,
-      "bridge": 16,
+      "bridge": 18,
       "no-go": 16,
       "certificate": 78,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 142,
+      "formal_core": 144,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7798,6 +7798,86 @@
       "label": "vp_packing_limit_probe.py",
       "path": "05_CERTS/vp_packing_limit_probe.py",
       "exists": true
+    },
+    {
+      "id": "D0-COMPLEX-QM-FORCING-001",
+      "kind": "claim",
+      "claim_id": "D0-COMPLEX-QM-FORCING-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_00",
+      "section": "complex QM necessity owner (real-QM ruled out)",
+      "lean_module": "D0.Bridge.ComplexQMBridge",
+      "lean_theorem": "complex_qm_conditional",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-COMPLEX-QM"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter7 axiom-forcing C.1, survived the mechanism filter] External owner: complex (not real-vector-space) QM is experimentally necessary -- Renou et al. Nature 600 625 (2021), Chen et al. PRL 128 040403 (43 sigma), Li et al. (5.30 sigma, strict locality). D0 lens: the genuine complex/imaginary structure D0 carries (toral det=-1, the i in the phase quotient) is forced, not chosen. Lean D0.Bridge.ComplexQMBridge (complex_qm_conditional) conditional on ASSUMP-COMPLEX-QM. HONEST named-gap: the experiments assume the standard QM postulates (2025 critique), so the forcing is conditional on that framework -- BRIDGE not core.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/ComplexQMBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.ComplexQMBridge",
+      "kind": "lean_module",
+      "label": "D0.Bridge.ComplexQMBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/ComplexQMBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-COMPLEX-QM",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-COMPLEX-QM",
+      "lean_name": "D0.Bridge.BridgeAssumption.ComplexQMNecessity",
+      "status": "EXPLICIT",
+      "assumption_type": "QM_FOUNDATIONS_THEOREM",
+      "external_source_or_cert": "Renou et al. Nature 600 625 (2021); Chen et al. PRL 128 040403 (43 sigma); Li et al. (5.30 sigma)"
+    },
+    {
+      "id": "D0-M1-INFO-RECONSTRUCTION-001",
+      "kind": "claim",
+      "claim_id": "D0-M1-INFO-RECONSTRUCTION-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_00",
+      "section": "M1 finite-capacity => complex QM (reconstruction owner)",
+      "lean_module": "D0.Bridge.M1InfoReconstructionBridge",
+      "lean_theorem": "m1_info_reconstruction_conditional",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-M1-INFO-RECONSTRUCTION"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter7 axiom-forcing C.2, strongest axiomatic support] External owner of M1 itself: finite information capacity of an elementary system + continuity + tomographic locality UNIQUELY yield complex Hilbert-space QM (Hardy quant-ph/0101012; Dakic-Brukner 2011; Masanes-Mueller NJP 13 053040 (2011); Chiribella-DAriano-Perinotti PRA 84 012311 (2011)). D0 lens: M1's finite-distinguishability premise IS the finite-capacity hypothesis these reconstructions start from -- an external forcing of the D0 axiomatic base. Lean D0.Bridge.M1InfoReconstructionBridge (m1_info_reconstruction_conditional) conditional on ASSUMP-M1-INFO-RECONSTRUCTION. HONEST: NAMES the reconstruction-theorem family as the owner; not a D0-internal derivation -- BRIDGE not core.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/M1InfoReconstructionBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.M1InfoReconstructionBridge",
+      "kind": "lean_module",
+      "label": "D0.Bridge.M1InfoReconstructionBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/M1InfoReconstructionBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-M1-INFO-RECONSTRUCTION",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-M1-INFO-RECONSTRUCTION",
+      "lean_name": "D0.Bridge.BridgeAssumption.M1InfoReconstruction",
+      "status": "EXPLICIT",
+      "assumption_type": "QM_RECONSTRUCTION_THEOREM",
+      "external_source_or_cert": "Hardy quant-ph/0101012; Masanes-Mueller NJP 13 053040 (2011); Chiribella-DAriano-Perinotti PRA 84 012311 (2011)"
     }
   ],
   "edges": [
@@ -11035,6 +11115,36 @@
       "source": "D0-PACKING-LIMIT-001",
       "target": "cert:vp_packing_limit_probe.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-COMPLEX-QM-FORCING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COMPLEX-QM-FORCING-001",
+      "target": "module:D0.Bridge.ComplexQMBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COMPLEX-QM-FORCING-001",
+      "target": "assumption:ASSUMP-COMPLEX-QM",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-M1-INFO-RECONSTRUCTION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-M1-INFO-RECONSTRUCTION-001",
+      "target": "module:D0.Bridge.M1InfoReconstructionBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-M1-INFO-RECONSTRUCTION-001",
+      "target": "assumption:ASSUMP-M1-INFO-RECONSTRUCTION",
+      "kind": "uses_assumption"
     }
   ]
 }
