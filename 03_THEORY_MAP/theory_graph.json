@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 230,
+    "claims": 231,
     "release_status": {
-      "CORE-FORMALIZED": 107,
+      "CORE-FORMALIZED": 108,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 7,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 126,
+      "LEAN_PROVED": 127,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 8,
       "PYTHON_CERTIFIED": 79,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 108,
+      "core": 109,
       "bridge": 14,
       "no-go": 16,
       "certificate": 76,
@@ -34,7 +34,7 @@
       "frontier": 14
     },
     "domain": {
-      "formal_core": 135,
+      "formal_core": 136,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
@@ -7535,6 +7535,44 @@
       "label": "vp_phi99_depth_forcing.py",
       "path": "05_CERTS/vp_phi99_depth_forcing.py",
       "exists": true
+    },
+    {
+      "id": "D0-ICOSIAN-E8-GRAM-001",
+      "kind": "claim",
+      "claim_id": "D0-ICOSIAN-E8-GRAM-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02",
+      "section": "E8 Gram even unimodular (icosian->E8 finite shadow, 02.18)",
+      "lean_module": "D0.Claims.IcosianE8GramFinite",
+      "lean_theorem": "icosian_e8_gram_finite",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_icosian_e8_gram_finite.py",
+      "python_cert": [
+        "vp_icosian_e8_gram_finite.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter6 finite-core, Option-1] Decidable shadow of BOOK_02 02.18 [THE] golden quaternions generate E8. Proves EXACTLY (Lean native_decide + cert Bareiss): the E8 Cartan/Gram (simply-laced => Gram=Cartan) 8x8 over Z is symmetric, diagonal all 2 (EVEN lattice), det=1 (UNIMODULAR/self-dual), rank 8=2*4 (Z[sqrt5]->Z Galois doubling of the rank-4 icosian ring). Negative control: A8 chain has det=9!=1, so unimodularity is forced by the E8 tree, not the 2-diagonal alone. Lean D0.Claims.IcosianE8GramFinite (icosian_e8_gram_finite) gap-free. HONEST: certifies the SPECIFIC Gram's even-unimodular invariants exactly; the Mordell genus-uniqueness (E8 is THE even unimodular rank-8 lattice) stays the EXTERNAL owner ASSUMP-MORDELL-E8 (02.18 already cites Mordell 1938). Lineage D0-ICOSIAN-E8-CARRIER-001.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/IcosianE8GramFinite.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.IcosianE8GramFinite",
+      "kind": "lean_module",
+      "label": "D0.Claims.IcosianE8GramFinite",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/IcosianE8GramFinite.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_icosian_e8_gram_finite.py",
+      "kind": "python_cert",
+      "label": "vp_icosian_e8_gram_finite.py",
+      "path": "05_CERTS/vp_icosian_e8_gram_finite.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -10666,6 +10704,21 @@
     {
       "source": "D0-PHI99-DEPTH-FORCING-001",
       "target": "cert:vp_phi99_depth_forcing.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ICOSIAN-E8-GRAM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ICOSIAN-E8-GRAM-001",
+      "target": "module:D0.Claims.IcosianE8GramFinite",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ICOSIAN-E8-GRAM-001",
+      "target": "cert:vp_icosian_e8_gram_finite.py",
       "kind": "certified_by"
     }
   ]

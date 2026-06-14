@@ -231,6 +231,7 @@ digraph D0Theory {
   "D0-HIGGS-CUBE-DIAGONAL-001" [label="D0-HIGGS-CUBE-DIAGONAL-001\\nBRIDGE-CALIBRATION\\nrg", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-COMPACTNESS-DEF-FORCING-001" [label="D0-COMPACTNESS-DEF-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PHI99-DEPTH-FORCING-001" [label="D0-PHI99-DEPTH-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-ICOSIAN-E8-GRAM-001" [label="D0-ICOSIAN-E8-GRAM-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1483,4 +1484,10 @@ digraph D0Theory {
   "D0-PHI99-DEPTH-FORCING-001" -> "cert:vp_phi99_depth_forcing.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-PHI99-DEPTH-FORCING-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Claims.IcosianE8GramFinite" [label="D0.Claims.IcosianE8GramFinite", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-ICOSIAN-E8-GRAM-001" -> "module:D0.Claims.IcosianE8GramFinite" [label="module"];
+  "cert:vp_icosian_e8_gram_finite.py" [label="vp_icosian_e8_gram_finite.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-ICOSIAN-E8-GRAM-001" -> "cert:vp_icosian_e8_gram_finite.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-ICOSIAN-E8-GRAM-001" -> "domain:formal_core" [label="domain"];
 }

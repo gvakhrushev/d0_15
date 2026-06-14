@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 7
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 63
-- `CORE-FORMALIZED`: 107
+- `CORE-FORMALIZED`: 108
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 14
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 14
 - `certificate`: 76
-- `core`: 108
+- `core`: 109
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 21
 - `external_background`: 1
-- `formal_core`: 135
+- `formal_core`: 136
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1792,6 +1792,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Local finite admissibility and table witnesses are internal D0 theorems for dimensions 1/2/4/8.
+
+### D0-ICOSIAN-E8-GRAM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Claims.IcosianE8GramFinite`
+- theorem: `icosian_e8_gram_finite`
+- cert: `vp_icosian_e8_gram_finite.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter6 finite-core, Option-1] Decidable shadow of BOOK_02 02.18 [THE] golden quaternions generate E8. Proves EXACTLY (Lean native_decide + cert Bareiss): the E8 Cartan/Gram (simply-laced => Gram=Cartan) 8x8 over Z is symmetric, diagonal all 2 (EVEN lattice), det=1 (UNIMODULAR/self-dual), rank 8=2*4 (Z[sqrt5]->Z Galois doubling of the rank-4 icosian ring). Negative control: A8 chain has det=9!=1, so unimodularity is forced by the E8 tree, not the 2-diagonal alone. Lean D0.Claims.IcosianE8GramFinite (icosian_e8_gram_finite) gap-free. HONEST: certifies the SPECIFIC Gram's even-unimodular invariants exactly; the Mordell genus-uniqueness (E8 is THE even unimodular rank-8 lattice) stays the EXTERNAL owner ASSUMP-MORDELL-E8 (02.18 already cites Mordell 1938). Lineage D0-ICOSIAN-E8-CARRIER-001.
 
 ### D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001
 
