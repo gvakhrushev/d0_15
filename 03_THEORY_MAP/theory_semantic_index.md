@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 74
-- `CORE-FORMALIZED`: 113
+- `CORE-FORMALIZED`: 114
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 19
 - `certificate`: 88
-- `core`: 114
+- `core`: 115
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 152
+- `formal_core`: 153
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -1845,6 +1845,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter5 finite-core, Option-1] Reduces the gluing anomaly from numeric-CHK/hypothesis to an EXACT Q(phi) element. Both alpha writings are closed forms with NO data input: alpha_top^-1=359 phi^-2-phi^-5=726-364phi; alpha_alg^-1=2^11 pi0/phi^8 + (2/3)delta0 (pi0=(6/5)phi^2, delta0=1/(2phi^3))=159739/5-(294902/15)phi. Cert vp_delta_alpha_exact.py proves (exact Z[phi]): Delta_alpha=alpha_top^-1-alpha_alg^-1=-156109/5+(289442/15)phi ~ -4.1522e-4; Delta_alpha != 0 (phi-coeff != 0 => irrational => !=0, M1-forced); |Delta_alpha| < phi^-16=1597-987phi (exact surd-sign analysis). Distinct from the DATA residual |alpha_measured-alpha_top^-1|~3.7e-4. HONEST: exact VALUE+nonzero+bound closed; the analytic OWNER (deriving alpha_alg form from the CVFT-F1 feedback-resolvent 2nd-order/pi0-phase moment) stays frontier; m_nu prop Delta_alpha^2 stays BRIDGE (x m_e, passport, not promoted). CORE would need a Lean phi^-n closed-form chain (clean next step). [Iter5 -> CORE] Lean D0.Spectral.DeltaAlphaExact (delta_alpha_exact): the exact Q(phi) identities (phi^-1=phi-1 .. phi^-8=34-21phi via linear_combination on phi^2=phi+1) prove alpha_top^-1=726-364phi, alpha_alg^-1=159739/5-294902/15 phi, Delta_alpha=-156109/5+289442/15 phi (gap-free). Analytic owner (CVFT-F1 resolvent) frontier; m_nu prop Delta_alpha^2 BRIDGE.
 
+### D0-DELTA-ALPHA-MOMENT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02/05`
+- module: `D0.Spectral.DeltaAlphaMoment`
+- theorem: `delta_alpha_moment`
+- cert: `vp_delta_alpha_pi0_moment.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter12 Track-B, sharpens obl.4] Finite shadow of the Delta_alpha analytic owner (CVFT-F1). With delta0=1/2 phi^-3 the algebraic writing collapses to a depth-<=2 archive moment polynomial in the rank-3 unit u=phi^-3: alpha_alg^-1 = mu2*u^2 + mu1*u = (12288/5)phi^-6 + (1/3)phi^-3 exactly in Q(phi), mu2=2^11 pi0 phi^-2, mu1=1/3, mu0=0. This is the shape of the Feshbach-Schur resolvent moment expansion W_eff(z)=A+sum_k z^-(k+1) B D^k C (D0-GENERATIVE-DYNAMICS-001): exponents -6,-3 = -2*rank,-1*rank (archive depth 2,1); the 2nd moment mu2 carries the pi0 feedback phase; no constant term mu0=0 (zero archive depth => zero anomaly, forced). Lean D0.Spectral.DeltaAlphaMoment (delta_alpha_moment): exact Q(phi) decomposition + value + P(0)=0, gap-free. Cert vp_delta_alpha_pi0_moment.py (can-FAIL: wrong unit/constant/no-pi0 controls). HONEST: this SHARPENS, does NOT close, obl.4 -- the two residue amplitudes mu2,mu1 (W_eff residues at the pole) stay the s->pole continuation (profinite spectral measure); CVFT-F1 stays PROOF-TARGET, Delta_alpha status unchanged. 2^11=2^V11 flagged for the continuation, NOT claimed forced (anti-numerology).
+
 ### D0-DIM-LADDER-COMPACT-001
 
 - type: `core`
@@ -2580,11 +2593,11 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `formal_core`
 - book: `BOOK_02/04/05/06/07`
 - module: `D0.NoGo.StressTestSuite`
-- theorem: `NoGo.no_go_rank_one_higgs_scalar_projector;NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed`
+- theorem: `NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed`
 - cert: `vp_no_go_stress_test_suite.py`
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
-- notes: Negative-control suite blocks rank-one Higgs scalar projectors isolated one-phason generation or baryon closure and Euclidean signature export.
+- notes: Lean suite proves three Lean-backed no-gos: isolated one-phason generation; isolated-phason baryon-S3 sector; Euclidean signature export. Rank-one Higgs scalar-projector no-go is cert-only (vp_no_go_stress_test_suite.py); its finite FiniteScalarProjector/GaugeCompatible Lean API was never formalized (reference-only since base-v14) so it was dropped from the Lean suite on 2026-06-15 and is an open Lean theorem-target.
 
 ### D0-PHASE-TOWER-002
 
@@ -2639,7 +2652,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001.
+- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed.
 
 ### D0-CVFT-F2
 

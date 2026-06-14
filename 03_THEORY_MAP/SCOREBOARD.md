@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3300 / 4528 (**72.9%** of track-fair max)
-- **Core spine:** 2811 / 4020 (headroom **1209** points to take every core claim to L5)
-- Claims: 252 active (253 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 3320 / 4548 (**73.0%** of track-fair max)
+- **Core spine:** 2831 / 4040 (headroom **1209** points to take every core claim to L5)
+- Claims: 253 active (254 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
@@ -92,7 +92,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 152 | 2193 | 2895 | 697 |
+| formal_core | 153 | 2213 | 2915 | 697 |
 | frontier | 14 | 33 | 280 | 247 |
 | empirical_passport | 22 | 175 | 255 | 75 |
 | smooth_geometry | 11 | 137 | 202 | 65 |
@@ -125,6 +125,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE | 3 | 33 | 33 | 0 |
 | Lean formalization | 2 | 31 | 31 | 0 |
 | BOOK_02/04 | 2 | 31 | 31 | 0 |
+| BOOK_02/05 | 2 | 27 | 40 | 13 |
 | METROLOGY | 5 | 25 | 100 | 75 |
 | BOOK_00 | 2 | 22 | 22 | 0 |
 | BOOK_03/06/07/08 | 1 | 20 | 20 | 0 |
@@ -149,7 +150,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_04/05/08 | 1 | 7 | 7 | 0 |
 | BOOK_00/01/02/04/05/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/07 | 1 | 7 | 20 | 13 |
-| BOOK_02/05 | 1 | 7 | 20 | 13 |
 | BOOK_01/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/02/06 | 1 | 7 | 20 | 13 |
 | BOOK_04/07 | 2 | 4 | 40 | 36 |

@@ -281,6 +281,7 @@ import D0.RG.OneLoopStructure
 import D0.RG.PhiDifference
 import D0.Response
 import D0.Spectral.DeltaAlphaExact
+import D0.Spectral.DeltaAlphaMoment
 import D0.Spectral.ZetaResidueAlpha
 import D0.Spectrum.BranchDefectProjectiveControls
 import D0.Spectrum.BranchDefectProjectiveGeneration

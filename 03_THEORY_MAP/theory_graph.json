@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 253,
+    "claims": 254,
     "release_status": {
-      "CORE-FORMALIZED": 113,
+      "CORE-FORMALIZED": 114,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 12,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 134,
+      "LEAN_PROVED": 135,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 13,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 114,
+      "core": 115,
       "bridge": 19,
       "no-go": 16,
       "certificate": 88,
@@ -34,7 +34,7 @@
       "frontier": 14
     },
     "domain": {
-      "formal_core": 152,
+      "formal_core": 153,
       "rg": 5,
       "gauge_bridge": 17,
       "smooth_geometry": 11,
@@ -3857,7 +3857,7 @@
       "book": "BOOK_02/04/05/06/07",
       "section": "integrated no-go stress-test suite",
       "lean_module": "D0.NoGo.StressTestSuite",
-      "lean_theorem": "NoGo.no_go_rank_one_higgs_scalar_projector;NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed",
+      "lean_theorem": "NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed",
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
@@ -3866,7 +3866,7 @@
         "vp_no_go_stress_test_suite.py"
       ],
       "status": "NO_GO_PROVED",
-      "notes": "Negative-control suite blocks rank-one Higgs scalar projectors isolated one-phason generation or baryon closure and Euclidean signature export.",
+      "notes": "Lean suite proves three Lean-backed no-gos: isolated one-phason generation; isolated-phason baryon-S3 sector; Euclidean signature export. Rank-one Higgs scalar-projector no-go is cert-only (vp_no_go_stress_test_suite.py); its finite FiniteScalarProjector/GaugeCompatible Lean API was never formalized (reference-only since base-v14) so it was dropped from the Lean suite on 2026-06-15 and is an open Lean theorem-target.",
       "module_path": "09_LEAN_FORMALIZATION/D0/NoGo/StressTestSuite.lean",
       "module_exists": true,
       "certs_exist": true
@@ -4256,7 +4256,7 @@
       "cert": "",
       "python_cert": [],
       "status": "PROOF-TARGET",
-      "notes": "Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001.",
+      "notes": "Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -7372,6 +7372,44 @@
       "kind": "python_cert",
       "label": "vp_delta_alpha_exact.py",
       "path": "05_CERTS/vp_delta_alpha_exact.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DELTA-ALPHA-MOMENT-001",
+      "kind": "claim",
+      "claim_id": "D0-DELTA-ALPHA-MOMENT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02/05",
+      "section": "02.13.4",
+      "lean_module": "D0.Spectral.DeltaAlphaMoment",
+      "lean_theorem": "delta_alpha_moment",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_delta_alpha_pi0_moment.py",
+      "python_cert": [
+        "vp_delta_alpha_pi0_moment.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter12 Track-B, sharpens obl.4] Finite shadow of the Delta_alpha analytic owner (CVFT-F1). With delta0=1/2 phi^-3 the algebraic writing collapses to a depth-<=2 archive moment polynomial in the rank-3 unit u=phi^-3: alpha_alg^-1 = mu2*u^2 + mu1*u = (12288/5)phi^-6 + (1/3)phi^-3 exactly in Q(phi), mu2=2^11 pi0 phi^-2, mu1=1/3, mu0=0. This is the shape of the Feshbach-Schur resolvent moment expansion W_eff(z)=A+sum_k z^-(k+1) B D^k C (D0-GENERATIVE-DYNAMICS-001): exponents -6,-3 = -2*rank,-1*rank (archive depth 2,1); the 2nd moment mu2 carries the pi0 feedback phase; no constant term mu0=0 (zero archive depth => zero anomaly, forced). Lean D0.Spectral.DeltaAlphaMoment (delta_alpha_moment): exact Q(phi) decomposition + value + P(0)=0, gap-free. Cert vp_delta_alpha_pi0_moment.py (can-FAIL: wrong unit/constant/no-pi0 controls). HONEST: this SHARPENS, does NOT close, obl.4 -- the two residue amplitudes mu2,mu1 (W_eff residues at the pole) stay the s->pole continuation (profinite spectral measure); CVFT-F1 stays PROOF-TARGET, Delta_alpha status unchanged. 2^11=2^V11 flagged for the continuation, NOT claimed forced (anti-numerology).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/DeltaAlphaMoment.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.DeltaAlphaMoment",
+      "kind": "lean_module",
+      "label": "D0.Spectral.DeltaAlphaMoment",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/DeltaAlphaMoment.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_delta_alpha_pi0_moment.py",
+      "kind": "python_cert",
+      "label": "vp_delta_alpha_pi0_moment.py",
+      "path": "05_CERTS/vp_delta_alpha_pi0_moment.py",
       "exists": true
     },
     {
@@ -11454,6 +11492,21 @@
     {
       "source": "D0-DELTA-ALPHA-EXACT-001",
       "target": "cert:vp_delta_alpha_exact.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DELTA-ALPHA-MOMENT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DELTA-ALPHA-MOMENT-001",
+      "target": "module:D0.Spectral.DeltaAlphaMoment",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DELTA-ALPHA-MOMENT-001",
+      "target": "cert:vp_delta_alpha_pi0_moment.py",
       "kind": "certified_by"
     },
     {

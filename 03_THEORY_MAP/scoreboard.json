@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3300,
-    "track_fair_max": 4528,
-    "pct_strength": 72.9,
-    "core_realized": 2811,
-    "core_potential": 4020,
+    "realized": 3320,
+    "track_fair_max": 4548,
+    "pct_strength": 73.0,
+    "core_realized": 2831,
+    "core_potential": 4040,
     "core_headroom": 1209,
-    "n_claims": 253,
-    "n_active": 252,
+    "n_claims": 254,
+    "n_active": 253,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 152,
-      "realized": 2193,
-      "max": 2895,
+      "n": 153,
+      "realized": 2213,
+      "max": 2915,
       "core_headroom": 697
     },
     "rg": {
@@ -304,9 +304,9 @@
       "core_headroom": 18
     },
     "BOOK_02/05": {
-      "n": 1,
-      "realized": 7,
-      "max": 20,
+      "n": 2,
+      "realized": 27,
+      "max": 40,
       "core_headroom": 13
     },
     "BOOK_04/07": {
@@ -5037,6 +5037,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-MOMENT-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02/05",
       "leverage": 0,
       "integrity_flag": null
     },

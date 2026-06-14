@@ -226,6 +226,7 @@ digraph D0Theory {
   "D0-E8-COLDEA-ANCHOR-001" [label="D0-E8-COLDEA-ANCHOR-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-RANK3-CAUSAL-CONE-001" [label="D0-RANK3-CAUSAL-CONE-001\\nCORE-FORMALIZED\\nsmooth_geometry", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-DELTA-ALPHA-EXACT-001" [label="D0-DELTA-ALPHA-EXACT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-DELTA-ALPHA-MOMENT-001" [label="D0-DELTA-ALPHA-MOMENT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-KTHEORY-GAP-MODULE-001" [label="D0-KTHEORY-GAP-MODULE-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-EW-WINDOW-FORCING-001" [label="D0-EW-WINDOW-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-HIGGS-CUBE-DIAGONAL-001" [label="D0-HIGGS-CUBE-DIAGONAL-001\\nBRIDGE-CALIBRATION\\nrg", fillcolor="#6f5fb5", fontcolor="white"];
@@ -1476,6 +1477,12 @@ digraph D0Theory {
   "D0-DELTA-ALPHA-EXACT-001" -> "cert:vp_delta_alpha_exact.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-DELTA-ALPHA-EXACT-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Spectral.DeltaAlphaMoment" [label="D0.Spectral.DeltaAlphaMoment", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-DELTA-ALPHA-MOMENT-001" -> "module:D0.Spectral.DeltaAlphaMoment" [label="module"];
+  "cert:vp_delta_alpha_pi0_moment.py" [label="vp_delta_alpha_pi0_moment.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-DELTA-ALPHA-MOMENT-001" -> "cert:vp_delta_alpha_pi0_moment.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-DELTA-ALPHA-MOMENT-001" -> "domain:formal_core" [label="domain"];
   "module:D0.Claims.KTheoryGapModule" [label="D0.Claims.KTheoryGapModule", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-KTHEORY-GAP-MODULE-001" -> "module:D0.Claims.KTheoryGapModule" [label="module"];
   "cert:vp_ktheory_gap_labels_finite.py" [label="vp_ktheory_gap_labels_finite.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
