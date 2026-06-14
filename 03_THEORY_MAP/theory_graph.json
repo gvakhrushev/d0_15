@@ -4,10 +4,10 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 240,
+    "claims": 242,
     "release_status": {
       "CORE-FORMALIZED": 110,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 11,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 12,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 66,
@@ -15,31 +15,31 @@
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 14,
+      "EMPIRICAL-PASSPORT": 15,
       "PROOF-TARGET": 14
     },
     "lean_status": {
       "LEAN_PROVED": 130,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 12,
-      "PYTHON_CERTIFIED": 81,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 13,
+      "PYTHON_CERTIFIED": 82,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
       "core": 111,
-      "bridge": 18,
+      "bridge": 19,
       "no-go": 16,
-      "certificate": 79,
+      "certificate": 80,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 145,
+      "formal_core": 146,
       "rg": 4,
       "gauge_bridge": 17,
       "smooth_geometry": 7,
       "spectral_action": 5,
-      "empirical_passport": 21,
+      "empirical_passport": 22,
       "cosmology": 22,
       "external_background": 1,
       "si_calibration": 3,
@@ -7909,6 +7909,77 @@
       "label": "vp_modular_time_flavor.py",
       "path": "05_CERTS/vp_modular_time_flavor.py",
       "exists": true
+    },
+    {
+      "id": "D0-DSI-EXPERIMENTAL-001",
+      "kind": "claim",
+      "claim_id": "D0-DSI-EXPERIMENTAL-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "DSI log-periodic ladder observed (ZrTe5/HfTe5), FORM not value (08.51)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dsi_experimental.py",
+      "python_cert": [
+        "vp_dsi_experimental.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[Iter7 cross-bridge E.1, EMPIRICAL anchor with CRITICAL gap] Discrete scale invariance (DSI) gives log-periodic observables cos(2 pi ln x / ln lambda); D0 predicts phi-ladders (lambda=phi, log-period ln(phi)=0.4812=I_f=h_KS). Log-periodic magneto-oscillations ARE observed in ZrTe5/HfTe5 (Wang et al. Natl.Sci.Rev. 6, 914, 2019; Sci.Adv. 4 eaau5096) -- direct evidence a log-periodic ladder occurs in a real material. Cert vp_dsi_experimental.py proves the log-periodic FORM (phi^k land on integer rungs) and that an experimental Coulomb-set lambda != phi gives a different log-period. HONEST CRITICAL GAP: confirms the log-periodic FORM (DSI is physically real), NOT the VALUE lambda=phi (experimental scale is Coulomb-determined, not golden). Must NOT be read as measuring phi. EMPIRICAL-PASSPORT, never core.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_dsi_experimental.py",
+      "kind": "python_cert",
+      "label": "vp_dsi_experimental.py",
+      "path": "05_CERTS/vp_dsi_experimental.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ENTROPIC-DARK-GRAVITY-001",
+      "kind": "claim",
+      "claim_id": "D0-ENTROPIC-DARK-GRAVITY-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_07",
+      "section": "Verlinde entropic dark<->gravity bridge (07<->08)",
+      "lean_module": "D0.Bridge.VerlindeEntropicBridge",
+      "lean_theorem": "verlinde_entropic_conditional",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-VERLINDE-ENTROPIC"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter7 cross-bridge E.3, BRIDGE not core] Verlinde emergent gravity (SciPost Phys. 2 016, 2017): gravity AND the dark sector emerge from one entropic structure. D0 lens: the archive/kernel (rank/|Omega8|, the A/4 capacity) is the single structure that yields both the gravitational interface (Book 07) and dark-energy pressure (Book 08) -- a cross-domain bridge. Lean D0.Bridge.VerlindeEntropicBridge (verlinde_entropic_conditional) conditional on ASSUMP-VERLINDE-ENTROPIC. HONEST: Verlinde's program is criticizable -- held BRIDGE, never core; cited not re-derived.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/VerlindeEntropicBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.VerlindeEntropicBridge",
+      "kind": "lean_module",
+      "label": "D0.Bridge.VerlindeEntropicBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/VerlindeEntropicBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-VERLINDE-ENTROPIC",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-VERLINDE-ENTROPIC",
+      "lean_name": "D0.Bridge.BridgeAssumption.VerlindeEntropicGravity",
+      "status": "EXPLICIT",
+      "assumption_type": "EMERGENT_GRAVITY_PROGRAM",
+      "external_source_or_cert": "Verlinde SciPost Phys. 2 016 (2017)"
     }
   ],
   "edges": [
@@ -11191,6 +11262,36 @@
       "source": "D0-MODULAR-TIME-FLAVOR-001",
       "target": "cert:vp_modular_time_flavor.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-DSI-EXPERIMENTAL-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DSI-EXPERIMENTAL-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DSI-EXPERIMENTAL-001",
+      "target": "cert:vp_dsi_experimental.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ENTROPIC-DARK-GRAVITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ENTROPIC-DARK-GRAVITY-001",
+      "target": "module:D0.Bridge.VerlindeEntropicBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ENTROPIC-DARK-GRAVITY-001",
+      "target": "assumption:ASSUMP-VERLINDE-ENTROPIC",
+      "kind": "uses_assumption"
     }
   ]
 }

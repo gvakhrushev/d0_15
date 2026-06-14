@@ -370,7 +370,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-COMPLEX-QM-FORCING-001", moduleName := "D0.Bridge.ComplexQMBridge",
       theoremName := "complex_qm_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-M1-INFO-RECONSTRUCTION-001", moduleName := "D0.Bridge.M1InfoReconstructionBridge",
-      theoremName := "m1_info_reconstruction_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "m1_info_reconstruction_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-ENTROPIC-DARK-GRAVITY-001", moduleName := "D0.Bridge.VerlindeEntropicBridge",
+      theoremName := "verlinde_entropic_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

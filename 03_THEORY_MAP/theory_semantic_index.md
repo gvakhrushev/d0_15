@@ -5,13 +5,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 11
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 66
 - `CORE-FORMALIZED`: 110
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
-- `EMPIRICAL-PASSPORT`: 14
+- `EMPIRICAL-PASSPORT`: 15
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 8
 - `NO_GO_PROVED`: 8
@@ -19,8 +19,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 18
-- `certificate`: 79
+- `bridge`: 19
+- `certificate`: 80
 - `core`: 111
 - `deprecated`: 2
 - `frontier`: 14
@@ -29,9 +29,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 22
-- `empirical_passport`: 21
+- `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 145
+- `formal_core`: 146
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -409,6 +409,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] pins external arXiv:2601.14358 DSS solutions via hash manifest.
 
+### D0-DSI-EXPERIMENTAL-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_dsi_experimental.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter7 cross-bridge E.1, EMPIRICAL anchor with CRITICAL gap] Discrete scale invariance (DSI) gives log-periodic observables cos(2 pi ln x / ln lambda); D0 predicts phi-ladders (lambda=phi, log-period ln(phi)=0.4812=I_f=h_KS). Log-periodic magneto-oscillations ARE observed in ZrTe5/HfTe5 (Wang et al. Natl.Sci.Rev. 6, 914, 2019; Sci.Adv. 4 eaau5096) -- direct evidence a log-periodic ladder occurs in a real material. Cert vp_dsi_experimental.py proves the log-periodic FORM (phi^k land on integer rungs) and that an experimental Coulomb-set lambda != phi gives a different log-period. HONEST CRITICAL GAP: confirms the log-periodic FORM (DSI is physically real), NOT the VALUE lambda=phi (experimental scale is Coulomb-determined, not golden). Must NOT be read as measuring phi. EMPIRICAL-PASSPORT, never core.
+
 ### D0-DUSTY-PLASMA-001
 
 - type: `certificate`
@@ -648,6 +661,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-CONNES-RECONSTRUCTION`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter6 owner-edge] Names the external owner of 'metric = spectrum of the Dirac operator': Connes reconstruction theorem (commutative spectral triple <-> compact oriented spin manifold; metric = Connes distance d(x,y)=sup{|f(x)-f(y)|: ||[D,f]||<=1}). arXiv:0810.2088 (2008). Routes the existing NAMED GAP of D0-COMPACTNESS-LIMIT-001 (rank-3=causal-cone / Connes-distance OPEN, 07.51.3) to a cited classical owner. Lean D0.Bridge.ConnesReconstructionBridge (connes_reconstruction_conditional) proves the bridge CONDITIONAL on ASSUMP-CONNES-RECONSTRUCTION. HONEST: this NAMES the owner (raises 'asserted' to 'owned by a classical theorem'); it does not derive metric=spectrum inside D0, and does not close the rank-3=cone gap. BRIDGE track (<=11), honesty not points.
+
+### D0-ENTROPIC-DARK-GRAVITY-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Bridge.VerlindeEntropicBridge`
+- theorem: `verlinde_entropic_conditional`
+- cert: `none`
+- assumptions: `ASSUMP-VERLINDE-ENTROPIC`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter7 cross-bridge E.3, BRIDGE not core] Verlinde emergent gravity (SciPost Phys. 2 016, 2017): gravity AND the dark sector emerge from one entropic structure. D0 lens: the archive/kernel (rank/|Omega8|, the A/4 capacity) is the single structure that yields both the gravitational interface (Book 07) and dark-energy pressure (Book 08) -- a cross-domain bridge. Lean D0.Bridge.VerlindeEntropicBridge (verlinde_entropic_conditional) conditional on ASSUMP-VERLINDE-ENTROPIC. HONEST: Verlinde's program is criticizable -- held BRIDGE, never core; cited not re-derived.
 
 ### D0-M1-INFO-RECONSTRUCTION-001
 

@@ -241,6 +241,8 @@ digraph D0Theory {
   "D0-COMPLEX-QM-FORCING-001" [label="D0-COMPLEX-QM-FORCING-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-M1-INFO-RECONSTRUCTION-001" [label="D0-M1-INFO-RECONSTRUCTION-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-MODULAR-TIME-FLAVOR-001" [label="D0-MODULAR-TIME-FLAVOR-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-DSI-EXPERIMENTAL-001" [label="D0-DSI-EXPERIMENTAL-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-ENTROPIC-DARK-GRAVITY-001" [label="D0-ENTROPIC-DARK-GRAVITY-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1553,4 +1555,16 @@ digraph D0Theory {
   "D0-MODULAR-TIME-FLAVOR-001" -> "cert:vp_modular_time_flavor.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-MODULAR-TIME-FLAVOR-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-DSI-EXPERIMENTAL-001" -> "module:" [label="module"];
+  "cert:vp_dsi_experimental.py" [label="vp_dsi_experimental.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-DSI-EXPERIMENTAL-001" -> "cert:vp_dsi_experimental.py" [label="cert"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-DSI-EXPERIMENTAL-001" -> "domain:empirical_passport" [label="domain"];
+  "module:D0.Bridge.VerlindeEntropicBridge" [label="D0.Bridge.VerlindeEntropicBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-ENTROPIC-DARK-GRAVITY-001" -> "module:D0.Bridge.VerlindeEntropicBridge" [label="module"];
+  "assumption:ASSUMP-VERLINDE-ENTROPIC" [label="ASSUMP-VERLINDE-ENTROPIC", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-ENTROPIC-DARK-GRAVITY-001" -> "assumption:ASSUMP-VERLINDE-ENTROPIC" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-ENTROPIC-DARK-GRAVITY-001" -> "domain:formal_core" [label="domain"];
 }

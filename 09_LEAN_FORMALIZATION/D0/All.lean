@@ -41,6 +41,7 @@ import D0.Bridge.SICalibrationClosure
 import D0.Bridge.SmoothMetricBridge
 import D0.Bridge.TickGaugeLorentz
 import D0.Bridge.TomitaTakesakiBridge
+import D0.Bridge.VerlindeEntropicBridge
 import D0.Capacity
 import D0.Claims.Book04Selectors
 import D0.Claims.CkmExactMatrix
