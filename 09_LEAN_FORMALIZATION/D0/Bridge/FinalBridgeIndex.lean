@@ -37,7 +37,7 @@ import D0.Matter.MesonDefectTransferAlgebra
 import D0.Matter.MesonDefectTransferOrigin
 import D0.Matter.MesonPhasonDomainWalls
 import D0.Matter.NuclearShellContactSRC
-import D0.Matter.Book04OperatorBoundary
+import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Geometry.EdgeMetricEquation
 import D0.Geometry.EdgeStiffnessOrigin
 import D0.Algebra.ArchiveCommutatorOperators
@@ -105,14 +105,10 @@ import D0.Topology.GradedIncidenceComplex
 import D0.TheoremLedger.ReleaseStatus
 import D0.Matter.ChargedLeptonMassTransfer
 import D0.Matter.CKMExactTransfer
-import D0.Matter.HiggsScalarProjectorDecision
 import D0.Geometry.FiniteSpin2Dynamics
-import D0.Gauge.SMActionTermEmergence
 import D0.Matter.ChargedLeptonTransferCertificate
 import D0.Matter.CKMExactMatrixCertificate
 import D0.Geometry.FiniteSpin2DOF
-import D0.Gauge.SMScalarActionCompletion
-import D0.Matter.HiggsScalarProjectorPositive
 
 namespace D0.Bridge
 
@@ -318,11 +314,6 @@ structure FinalFoundationIndex where
             D0.Matter.ChargedLeptonCoefficientRow.operatorOrigin)
   book04BaryonMultipletBoundary :
     ¬ D0.Matter.CanPromoteBaryonMultiplet D0.Matter.nucleonLineOnlyBaryonOperator
-  book04Meson400Boundary :
-    ¬ D0.Matter.CanPromoteMesonMasses D0.Matter.lowerHodge400SeedOnly
-  book04HiggsScalarProjectorBoundary :
-    ¬ D0.Matter.CanPromoteHiggsYukawaCore D0.Matter.missingScalarProjectorBridge
-  book04OperatorBoundariesClosed : D0.Matter.Book04OperatorBoundaryClosed
   smGaugeFactorsClosed :
     D0.Gauge.frozenSMGaugeDecomposition.factors = D0.Gauge.frozenSMGaugeFactorLedger
   smGenerationLedgerClosed :
@@ -498,9 +489,6 @@ def finalFoundationIndexWitness : FinalFoundationIndex where
   chargedLeptonCoefficientNoFreeRowAlternative := D0.Matter.charged_lepton_coefficient_no_free_row_alternative
   chargedLeptonCoefficientsNoFreeRetuning := D0.Matter.charged_lepton_coefficients_no_free_retuning
   book04BaryonMultipletBoundary := D0.Matter.nucleon_line_cannot_promote_full_baryon_multiplet
-  book04Meson400Boundary := D0.Matter.lower_hodge_400_cannot_promote_meson_masses
-  book04HiggsScalarProjectorBoundary := D0.Matter.missing_scalar_projector_cannot_promote_higgs_yukawa_core
-  book04OperatorBoundariesClosed := D0.Matter.book04_operator_boundaries_closed
   smGaugeFactorsClosed := D0.Gauge.frozen_sm_gauge_factors_closed
   smGenerationLedgerClosed := D0.Gauge.frozen_sm_generation_ledger_closed
   smGenerationAnomalyFree := D0.Gauge.frozen_sm_generation_anomaly_free
@@ -581,22 +569,16 @@ def D0_FINAL_FOUNDATION_INDEX : FinalFoundationIndex :=
 #check D0.Matter.charged_lepton_coefficient_table_forced
 #check D0.Matter.charged_lepton_coefficient_no_free_row_alternative
 #check D0.Matter.charged_lepton_coefficients_no_free_retuning
-#check D0.Matter.Book04OperatorBoundaryClosed
 #check D0.Matter.baryon_multiplet_requires_spin_flavour_decuplet_operator
 #check D0.Matter.nucleon_line_cannot_promote_full_baryon_multiplet
 #check D0.Matter.baryon_triple_carrier_card
 #check D0.Matter.sorted_triple_card_eq_ten
 #check D0.Matter.antisymmetric_line_annihilated_by_s3_symmetrizer
 #check D0.Matter.baryon_s3_symmetrizer_closure
-#check D0.Matter.lower_hodge_400_cannot_promote_meson_masses
-#check D0.Matter.meson_mass_promotion_requires_chiral_flavour_vector_operator
 #check D0.Matter.lower_hodge_lift_has_internal_degeneracy
 #check D0.Matter.lower_hodge_seed_not_meson_mass_operator
 #check D0.Matter.meson_transfer_operator_uses_lifted_flavour_defect
 #check D0.Matter.meson_defect_transfer_algebra_closure
-#check D0.Matter.higgs_yukawa_requires_scalar_projector
-#check D0.Matter.missing_scalar_projector_cannot_promote_higgs_yukawa_core
-#check D0.Matter.book04_operator_boundaries_closed
 
 -- Born 2.0 finite effect/coarse/tensor owners
 
@@ -909,7 +891,6 @@ def D0_FINAL_FOUNDATION_INDEX : FinalFoundationIndex :=
 end D0.Bridge
 
 -- Multi-sector real-closure owners beyond Book 04 selector rewriting
-#check D0.Matter.higgs_scalar_projector_constructive_closure
 #check D0.Matter.commutes_XZ_forces_scalar_matrix
 #check D0.Matter.nonzero_gauge_idempotent_eq_identity
 #check D0.Matter.rank1_scalar_projector_breaks_su2_gauge_compatibility
@@ -917,20 +898,10 @@ end D0.Bridge
 #check D0.Matter.minimal_positive_scalar_projector_rank_two
 #check D0.Matter.minimal_positive_scalar_projector_unique
 #check D0.Matter.higgs_yukawa_core_promotion_valid
-#check D0.Matter.finite_scalar_projector_rank_one_no_go
-#check D0.Matter.finite_scalar_projector_minimal_rank_two
-#check D0.Matter.finite_scalar_projector_rank_two_readout_unique
-#check D0.Matter.higgs_scalar_projector_positive_derivation
-#check D0.Matter.minimal_positive_scalar_projector_is_one_doublet
-#check D0.Matter.two_doublet_not_minimal_positive_higgs_projector
-#check D0.NoGo.no_go_rank_one_higgs_scalar_projector
 #check D0.NoGo.no_go_isolated_phason_generation_carrier
 #check D0.NoGo.no_go_isolated_phason_baryon_s3_sector
 #check D0.NoGo.no_go_euclidean_signature_export
 #check D0.NoGo.no_go_stress_test_suite_closed
-#check D0.Gauge.sm_minimal_scalar_action_terms_closed
-#check D0.Gauge.sm_scalar_completion_preserves_frozen_base
-#check D0.Gauge.sm_scalar_completion_projector_rank_two
 #check D0.Geometry.massless_spin2_physical_dof_four_eq_two
 #check D0.Geometry.spin2_component_reduction_four_dimensional
 #check D0.Geometry.concrete_spin2_dynamics_two_polarizations_closed

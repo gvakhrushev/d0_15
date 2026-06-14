@@ -37,20 +37,10 @@ theorem seam_energy_nonnegative {n : Type} [Fintype n]
   intro j _
   nlinarith
 
-theorem seam_energy_zero_iff_commutes {n : Type} [Fintype n]
-    (B : FiniteSeamMap n) (X : Matrix n n ℝ) :
-    Prop := True
-  -- Owner (norm-zero iff commutator zero); concrete commuting vs non-commuting fixtures + norms in the Python cert.
-
-/-- Finite nonzero seam obstruction has positive gap outside the commuting kernel (abelian sector has zero). -/
-theorem finite_nonzero_seam_obstruction_has_positive_gap {n : Type} [Fintype n]
-    (B : FiniteSeamMap n) :
-    Prop := True
-  -- Owner. Python cert supplies explicit non-commuting generator with E>0 and min positive singular value >0.
-
-theorem abelian_commuting_sector_has_zero_seam_energy {n : Type} [Fintype n]
-    (B : FiniteSeamMap n) (X : Matrix n n ℝ) :
-    Prop := True
-  -- Owner witnessed by U(1)-like diagonal or commuting fixture in cert.
+-- The seam norm-zero <-> commutes equivalence, the finite positive-gap statement,
+-- and the abelian zero-energy statement are owned at cert level and remain open as
+-- Lean theorem-targets. The prior `theorem _ : Prop := True` placeholders were
+-- removed: they declared a type `Prop` (rejected as "type of theorem is not a
+-- proposition") and proved nothing. `seamEnergy` and its non-negativity stay real.
 
 end D0.Gauge

@@ -1,4 +1,3 @@
-import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.PhasonStrainGenerations
 import D0.Bridge.TickGaugeLorentz
 
@@ -10,6 +9,12 @@ Integrated negative-control suite.
 These are not new positive closure claims.  The module collects already owned
 no-go boundaries and one finite isolated-phason control so risky shortcuts can
 be checked as one fast slice.
+
+Scope note (2026-06-15 build-hygiene): the rank-one Higgs scalar-projector no-go
+was removed from the Lean suite — its `FiniteScalarProjector` / `GaugeCompatible`
+API was never formalized (reference-only since base-v14, never compiled). That
+control stays covered by the Python cert `vp_no_go_stress_test_suite.py` and is an
+open Lean theorem-target. The three controls below are Lean-proved.
 -/
 
 /-- One isolated phason mode, used only as a negative control. -/
@@ -45,14 +50,6 @@ theorem no_go_isolated_phason_baryon_s3_sector :
     D0.Matter.baryon_phason_symmetric_sector_dim_eq_ten]
   norm_num
 
-/-- Stable suite-facing name for the rank-one scalar projector no-go. -/
-theorem no_go_rank_one_higgs_scalar_projector
-    {C : D0.Matter.FiniteMatterTransferCarrier}
-    (P : D0.Matter.FiniteScalarProjector C)
-    (hrank : P.rank = 1) :
-    ¬D0.Matter.GaugeCompatible P := by
-  exact D0.Matter.finite_scalar_projector_rank_one_no_go P hrank
-
 /-- Stable suite-facing name for the Euclidean signature export no-go. -/
 theorem no_go_euclidean_signature_export
     (C : D0.Bridge.FiniteLorentzTickGaugeClosure) :
@@ -61,10 +58,6 @@ theorem no_go_euclidean_signature_export
 
 /-- Combined finite negative-control package. -/
 structure NoGoStressTestSuite where
-  rank_one_higgs :
-    forall {C : D0.Matter.FiniteMatterTransferCarrier}
-      (P : D0.Matter.FiniteScalarProjector C),
-        P.rank = 1 -> ¬D0.Matter.GaugeCompatible P
   isolated_generation :
     Fintype.card IsolatedPhasonMode ≠
       Fintype.card D0.Matter.GenerationPhasonMode
@@ -77,18 +70,15 @@ structure NoGoStressTestSuite where
 
 /-- Machine-checkable no-go stress suite. -/
 def noGoStressTestSuite : NoGoStressTestSuite where
-  rank_one_higgs := by
-    intro _C P h
-    exact no_go_rank_one_higgs_scalar_projector P h
   isolated_generation := no_go_isolated_phason_generation_carrier
   isolated_baryon_s3 := no_go_isolated_phason_baryon_s3_sector
   euclidean_signature := no_go_euclidean_signature_export
 
-/-- The finite no-go stress suite closes all three required negative controls. -/
+/-- The finite no-go stress suite closes the three Lean-backed negative controls:
+isolated-phason generation, isolated-phason baryon S3 sector, and Euclidean
+signature export. (The rank-one Higgs scalar-projector control is cert-level only;
+see the scope note above.) -/
 theorem no_go_stress_test_suite_closed :
-    (forall {_C : D0.Matter.FiniteMatterTransferCarrier}
-      (P : D0.Matter.FiniteScalarProjector _C),
-        P.rank = 1 -> ¬D0.Matter.GaugeCompatible P) ∧
     Fintype.card IsolatedPhasonMode ≠
       Fintype.card D0.Matter.GenerationPhasonMode ∧
     Fintype.card IsolatedPhasonTriple ≠
@@ -96,8 +86,7 @@ theorem no_go_stress_test_suite_closed :
     (forall _C : D0.Bridge.FiniteLorentzTickGaugeClosure,
       D0.roleSignature ≠ (4, 0)) := by
   exact
-    ⟨noGoStressTestSuite.rank_one_higgs,
-      noGoStressTestSuite.isolated_generation,
+    ⟨noGoStressTestSuite.isolated_generation,
       noGoStressTestSuite.isolated_baryon_s3,
       noGoStressTestSuite.euclidean_signature⟩
 

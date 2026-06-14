@@ -1,5 +1,5 @@
 import Mathlib.Data.Real.Basic
-import Mathlib.Data.Rat.Basic
+import Mathlib.Tactic
 
 namespace D0.Gravity
 
@@ -58,10 +58,9 @@ theorem dss_critical_collapse_supplies_echo_lattice_bridge :
     And.intro trivial trivial
   ⟩
 
-/-- No-go: purely smooth monotone collapse does not capture the full critical
-black-hole threshold once DSS echo structure is admitted. -/
-theorem smooth_monotone_collapse_not_full_critical_readout
-    (B : CriticalCollapseDSSBridge) : Prop :=
-  True  -- placeholder; external certificate + D0 no-go discipline own the claim
+-- The smooth-monotone-collapse no-go ("purely smooth monotone collapse does not
+-- capture the full critical threshold once DSS echo structure is admitted") is owned
+-- at cert level and remains an open Lean theorem-target. The prior
+-- `theorem _ : Prop := True` placeholder was removed (type `Prop`, proved nothing).
 
 end D0.Gravity

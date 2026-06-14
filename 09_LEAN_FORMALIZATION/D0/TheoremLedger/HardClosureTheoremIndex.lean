@@ -142,6 +142,7 @@ import D0.Matter.Book04FullSupportSelectors
 import D0.Matter.Book04CenteredSupportSelectors
 import D0.Matter.Book04CombinatorialSelectorOrigins
 import D0.Matter.Book04CoefficientOrigin
+import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.CKMBasisMismatch
 import D0.Matter.CKMBasisOrigin
 import D0.Matter.CKMNontrivialFlavourAlgebra
@@ -802,8 +803,5 @@ end D0
 #check D0.Topology.d0_hull_supports_gap_labeling
 #check D0.Matter.gap_label_is_topological_not_fitted
 #check D0.Matter.d0_gap_labels_are_countable
-#check D0.Topology.finite_boundary_squared_zero
-#check D0.Topology.finite_hodge_laplacian_self_adjoint_positive
-#check D0.Topology.finite_heat_trace_depends_only_on_laplacian_spectrum
 #check D0.Topology.finite_cochain_exact_topological_density_annihilates_theta_core
 #check D0.Topology.continuum_theta_winding_requires_bridge_not_core

@@ -15,11 +15,9 @@ theorem self_similar_horizon_is_capacity_null_boundary
     B.horizon.null_boundary ∧ B.horizon.terminal_capacity_boundary := by
   exact ⟨B.horizon.null_boundary, B.horizon.terminal_capacity_boundary⟩
 
-/-- Echo admissibility: not every formally periodic mode survives NLO/convexity/SSH
-constraints. This is the D0 reading of the paper's NLO filtering. -/
-theorem echo_admissibility_constraint
-    (B : CriticalCollapseDSSBridge) :
-    B.admissibility_filter → Prop :=
-  fun _ => True
+-- Echo admissibility ("not every formally periodic mode survives NLO/convexity/SSH
+-- constraints") is owned at cert level and remains an open Lean theorem-target. The
+-- prior `theorem _ : _ -> Prop := fun _ => True` placeholder was removed (its type was
+-- a function into `Prop`, not a proposition; it proved nothing).
 
 end D0.Gravity

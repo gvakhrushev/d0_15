@@ -37,8 +37,10 @@ theorem finite_cochain_exact_topological_density_annihilates_theta_core
   rw [hB]
   exact theta_core_annihilates_exact B
 
-/-- Negative control: if one introduces continuum winding it must be marked explicitly as EFT bridge, not D0 core. -/
-theorem continuum_theta_winding_requires_bridge_not_core : Prop :=
+/-- Negative control (named proposition, not a proof): if one introduces continuum
+winding it must be marked explicitly as EFT bridge, not D0 core. Defined as a `def`
+because it DECLARES a proposition rather than proving one. -/
+def continuum_theta_winding_requires_bridge_not_core : Prop :=
   ∀ (attempt : Type) , (is_continuum_winding attempt) → IsEFTBridge attempt
 where
   is_continuum_winding (_ : Type) : Prop := True

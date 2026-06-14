@@ -252,7 +252,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ICECUBE-001", moduleName := "D0.Matter.NeutrinoPhasonWaves;D0.Passport.IceCubePhasonDecoherence",
       theoremName := "Matter.neutrino_neutral_leakage_is_bulk_phason_wave;Matter.neutral_phason_wave_has_no_em_coupling;Matter.delta0_over_four_is_phason_birefringence_seed;Matter.phason_wave_decoherence_kernel_positive;Passport.icecube_decoherence_passport_requires_external_manifest;Passport.empty_icecube_manifest_cannot_run", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-NO-GO-STRESS-SUITE-001", moduleName := "D0.NoGo.StressTestSuite",
-      theoremName := "NoGo.no_go_rank_one_higgs_scalar_projector;NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed", status := ClaimStatus.leanNoGoProved },
+      theoremName := "NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-HULL-001", moduleName := "D0.Topology.TilingHull",
       theoremName := "Topology.d0_hull_has_finite_local_complexity;Topology.d0_hull_has_phi_cut_project_origin;Topology.d0_hull_is_nonperiodic;Topology.d0_hull_has_long_range_order;Topology.d0_hull_supports_gap_labeling", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SRC-001", moduleName := "D0.Matter.NuclearShellContactSRC",
