@@ -141,11 +141,23 @@ def hygiene_report(rows: list[dict]) -> dict:
 
     pd = []
     for p in D0DIR.rglob("*.lean"):
+        in_block = False  # inside a /- ... -/ block comment / docstring
         for i, ln in enumerate(p.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
             st = ln.lstrip()
-            if st.startswith("--") or st.startswith("/-") or st.startswith("*"):
+            # skip the BODY of multi-line /- ... -/ comments/docstrings (not just the opening
+            # line) so prose words like "admit"/"sorry" in documentation are not miscounted.
+            if in_block:
+                if "-/" in ln:
+                    in_block = False
                 continue
-            if re.search(r"\b(sorry|admit)\b|(^|\s)axiom\s", ln):
+            if st.startswith("/-"):
+                if "-/" not in ln:
+                    in_block = True
+                continue
+            if st.startswith("--") or st.startswith("*"):
+                continue
+            code = ln.split("--", 1)[0]  # drop trailing line comments before matching code
+            if re.search(r"\b(sorry|admit)\b|(^|\s)axiom\s", code):
                 pd.append(f"{p.name}:{i}")
     counts["proof_debt"] = len(pd); evidence["proof_debt"] = pd[:6]
 
