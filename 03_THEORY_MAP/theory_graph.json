@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 268,
+    "claims": 269,
     "release_status": {
-      "CORE-FORMALIZED": 118,
+      "CORE-FORMALIZED": 119,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 17,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 140,
+      "LEAN_PROVED": 141,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 17,
       "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 119,
+      "core": 120,
       "bridge": 23,
       "no-go": 16,
       "certificate": 94,
@@ -34,7 +34,7 @@
       "frontier": 13
     },
     "domain": {
-      "formal_core": 163,
+      "formal_core": 164,
       "rg": 5,
       "gauge_bridge": 18,
       "smooth_geometry": 14,
@@ -8989,6 +8989,35 @@
       "label": "vp_scene_active_eigenvalues_exact.py",
       "path": "05_CERTS/vp_scene_active_eigenvalues_exact.py",
       "exists": true
+    },
+    {
+      "id": "D0-PISOT-CONTRACTION-TIME-ARROW-001",
+      "kind": "claim",
+      "claim_id": "D0-PISOT-CONTRACTION-TIME-ARROW-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_06",
+      "section": "arrow of time = Pisot contraction of the Galois conjugate (phi>1 expands; |psi|<1 contracts) (06.36)",
+      "lean_module": "D0.Dynamics.PisotContraction",
+      "lean_theorem": "pisot_contraction;phi_gt_one;abs_psi_lt_one;psi_neg;sqrt_five_gt_two;sqrt_five_lt_three",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter19 Wave6] phi (dominant root of monic x^2-x-1) expands >1; its Galois conjugate psi=(1-sqrt5)/2 contracts |psi|<1 — the irreversible time direction. Both are algebraic integers (phi^2=phi+1; psi^2=psi+1); phi is a Pisot number. Proved internally from D0.Core.Phi via sqrt5 bounds (2<sqrt5<3) + nlinarith. Full Mathlib Polynomial/IsIntegral Pisot-number class is the named continuation. Backs BOOK_06 06.36; complements D0-TIME-2D-PISOT-001 (the toral T spectral-radius side).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Dynamics/PisotContraction.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Dynamics.PisotContraction",
+      "kind": "lean_module",
+      "label": "D0.Dynamics.PisotContraction",
+      "path": "09_LEAN_FORMALIZATION/D0/Dynamics/PisotContraction.lean",
+      "exists": true
     }
   ],
   "edges": [
@@ -12756,6 +12785,16 @@
       "source": "D0-SCENE-ACTIVE-EIGENVALUES-001",
       "target": "cert:vp_scene_active_eigenvalues_exact.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-PISOT-CONTRACTION-TIME-ARROW-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PISOT-CONTRACTION-TIME-ARROW-001",
+      "target": "module:D0.Dynamics.PisotContraction",
+      "kind": "implemented_in"
     }
   ]
 }

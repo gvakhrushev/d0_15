@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 17
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 79
-- `CORE-FORMALIZED`: 118
+- `CORE-FORMALIZED`: 119
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 23
 - `certificate`: 94
-- `core`: 119
+- `core`: 120
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 23
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 163
+- `formal_core`: 164
 - `frontier`: 13
 - `gauge_bridge`: 18
 - `interpretation_spine`: 1
@@ -2416,6 +2416,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background. [8C: linked passing cert]
+
+### D0-PISOT-CONTRACTION-TIME-ARROW-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Dynamics.PisotContraction`
+- theorem: `pisot_contraction;phi_gt_one;abs_psi_lt_one;psi_neg;sqrt_five_gt_two;sqrt_five_lt_three`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter19 Wave6] phi (dominant root of monic x^2-x-1) expands >1; its Galois conjugate psi=(1-sqrt5)/2 contracts |psi|<1 — the irreversible time direction. Both are algebraic integers (phi^2=phi+1; psi^2=psi+1); phi is a Pisot number. Proved internally from D0.Core.Phi via sqrt5 bounds (2<sqrt5<3) + nlinarith. Full Mathlib Polynomial/IsIntegral Pisot-number class is the named continuation. Backs BOOK_06 06.36; complements D0-TIME-2D-PISOT-001 (the toral T spectral-radius side).
 
 ### D0-Q8-DEDEKIND-MINIMALITY-001
 

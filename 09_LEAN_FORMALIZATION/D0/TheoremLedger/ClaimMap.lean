@@ -400,7 +400,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-GALOIS-PHI-IRRATIONAL-001", moduleName := "D0.Algebra.GaloisPhiNontrivial",
       theoremName := "galois_z2_genuinely_nontrivial;irrational_phi;irrational_psi;phi_ne_psi;irrational_sqrt_five", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SCENE-ACTIVE-EIGENVALUES-001", moduleName := "D0.Geometry.SceneActiveEigenvalues",
-      theoremName := "scene_active_eigenvalue_plus;scene_active_eigenvalue_minus;scene_active_eigenvalues_sum;scene_active_eigenvalues_prod", status := ClaimStatus.leanCoreProved }
+      theoremName := "scene_active_eigenvalue_plus;scene_active_eigenvalue_minus;scene_active_eigenvalues_sum;scene_active_eigenvalues_prod", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PISOT-CONTRACTION-TIME-ARROW-001", moduleName := "D0.Dynamics.PisotContraction",
+      theoremName := "pisot_contraction;phi_gt_one;abs_psi_lt_one;psi_neg;sqrt_five_gt_two;sqrt_five_lt_three", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
