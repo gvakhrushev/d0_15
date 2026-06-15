@@ -591,6 +591,40 @@ for the SI dictionary, `SIMacroscopicPhysics` for SI outputs, and
 `derive_physical_observables` for the typed bridge map.  The core trace object
 does not produce SI constants by itself.
 
+### 03.16.B Metrological gauge axiom: the single anchor is forced by dimensional analysis [THE]
+
+The single-action-section rule is not a deficiency ("D0 cannot derive the kilogram"); it is the
+Buckingham-Π theorem applied to a finite theory, and it is a strength. The Buckingham-Π theorem
+states that any physical law relating quantities of `n` independent dimensions reduces to a relation
+among dimensionless Π-groups *together with a choice of `n` dimensional standards*: the dimensionless
+content is fixed by the theory, but mapping it onto numerical SI values requires fixing the
+standards, and that choice is external to the dimensionless content by construction. A theory that
+claimed to "derive the kilogram" from pure structure would be violating Buckingham-Π, not obeying it.
+
+For D0 the count is exact. The power matrix above has **one** nonzero scale column, so the entire
+dimensional content is carried by a **single** anchor `Λ_act = 38 m_e c²` (one mass/energy gauge;
+length and time follow by `c` and `h`, which are themselves unit-defining conventions). Adding a
+proton, neutron, electroweak, Planck, dark-sector, collider, or survey anchor raises the rank of the
+section matrix and is forbidden (it would over-determine the gauge). So D0 carries:
+
+- **zero** dimensionless free parameters — every dimensionless observable is a fixed finite invariant
+  of the verification algebra (`δ₀, Ω₈, K(9,11,13)`, the rank/nullity data), with nothing to tune;
+- **exactly one** dimensional anchor, the metrological gauge `Λ_act`.
+
+This is the minimum a dimensional theory can carry and still speak SI numbers — one standard, no
+tunable dimensionless freedom. The Standard Model, by contrast, carries on the order of two dozen
+free dimensionless parameters (the gauge couplings, the Yukawas/masses, the CKM and PMNS mixing
+angles and phases, the Higgs self-coupling, `θ_QCD`) *plus* its own dimensional anchors. The
+contrast is structural: D0's dimensionless sector is rigid (a classification, §05.8a), and only the
+metrological gauge is chosen.
+
+The anchor is a **gauge choice in the metrological sense**, exactly like the former platinum–iridium
+kilogram prototype or the modern convention `c ≡ 299\,792\,458\ \mathrm{m/s}`: declaring `Λ_act` fixes
+the standard against which every dimensionless D0 invariant is read, and the choice has no physical
+content of its own — it is the unit, not a prediction. Calling this a "failure to derive the
+kilogram" mistakes the gauge for an observable. The forced statement is the rank-1 metrological
+section with zero dimensionless freedom; the one anchor is the gauge that section analysis requires.
+
 ## 03.17 Integrated beta/scattering comparison protocol as finite transition discipline
 
 The old beta-operator and scattering-comparison protocol notes clarify that collider or scattering formulas are downstream finite-transition comparison protocols, not raw event-count or continuum-field oracles.
