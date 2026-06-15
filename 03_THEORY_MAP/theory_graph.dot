@@ -150,7 +150,7 @@ digraph D0Theory {
   "D0-GRAV-005" [label="D0-GRAV-005\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-IM-005" [label="D0-IM-005\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-GRAV-006" [label="D0-GRAV-006\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
-  "D0-EDGE-001" [label="D0-EDGE-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-EDGE-001" [label="D0-EDGE-001\\nDEPRECATED\\nformal_core", fillcolor="#9f7a2f", fontcolor="white"];
   "D0-EDGE-002" [label="D0-EDGE-002\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-EDGE-ALPHA-001" [label="D0-EDGE-ALPHA-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-EDGE-RAMIFICATION-001" [label="D0-EDGE-RAMIFICATION-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -1044,8 +1044,8 @@ digraph D0Theory {
   "D0-GRAV-006" -> "domain:formal_core" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-EDGE-001" -> "module:" [label="module"];
-  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-EDGE-001" -> "domain:frontier" [label="domain"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-EDGE-001" -> "domain:formal_core" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-EDGE-002" -> "module:" [label="module"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];

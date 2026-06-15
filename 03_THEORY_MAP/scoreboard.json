@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 3390,
-    "track_fair_max": 4630,
-    "pct_strength": 73.2,
-    "core_realized": 2883,
-    "core_potential": 4100,
-    "core_headroom": 1217,
+    "realized": 3388,
+    "track_fair_max": 4610,
+    "pct_strength": 73.5,
+    "core_realized": 2881,
+    "core_potential": 4080,
+    "core_headroom": 1199,
     "n_claims": 259,
-    "n_active": 258,
+    "n_active": 257,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 14,
-      "realized": 33,
-      "max": 280,
-      "core_headroom": 247
+      "n": 13,
+      "realized": 31,
+      "max": 260,
+      "core_headroom": 229
     }
   },
   "by_book": {
@@ -160,10 +160,10 @@
       "core_headroom": 52
     },
     "BOOK_04": {
-      "n": 42,
-      "realized": 525,
-      "max": 771,
-      "core_headroom": 241
+      "n": 41,
+      "realized": 523,
+      "max": 751,
+      "core_headroom": 223
     },
     "BOOK_04/08": {
       "n": 7,
@@ -1210,16 +1210,6 @@
       "effort": "write cert scaffold"
     },
     {
-      "claim_id": "D0-EDGE-001",
-      "domain": "frontier",
-      "book": "BOOK_04",
-      "level_name": "HYP",
-      "leverage": 0,
-      "next": "CERT_SCAFFOLD",
-      "points_gained": 2,
-      "effort": "write cert scaffold"
-    },
-    {
       "claim_id": "D0-EDGE-002",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1346,13 +1336,6 @@
     },
     {
       "claim_id": "D0-CVFT-F8",
-      "domain": "frontier",
-      "leverage": 0,
-      "level_name": "HYP",
-      "score": 2
-    },
-    {
-      "claim_id": "D0-EDGE-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -3995,14 +3978,14 @@
     },
     {
       "claim_id": "D0-EDGE-001",
-      "track": "CORE",
+      "track": "DEPRECATED",
       "level": 1,
       "level_name": "HYP",
-      "score": 2,
-      "ceiling": 20,
-      "release_status": "PROOF-TARGET",
+      "score": 0,
+      "ceiling": 0,
+      "release_status": "DEPRECATED",
       "lean_status": "OPEN",
-      "domain": "frontier",
+      "domain": "formal_core",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -5537,7 +5520,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.1,
+    "penalty_total": 0.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5582,8 +5565,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 1,
-        "points": -0.1,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -5632,8 +5615,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 1,
-        "points": -0.1,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

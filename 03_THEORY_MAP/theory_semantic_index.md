@@ -10,20 +10,20 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `CERT-CLOSED`: 75
 - `CORE-FORMALIZED`: 116
 - `CORE_BRIDGE_SPLIT`: 4
-- `DEPRECATED`: 1
+- `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 8
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 14
+- `PROOF-TARGET`: 13
 
 ## Type counts
 
 - `bridge`: 20
 - `certificate`: 90
 - `core`: 117
-- `deprecated`: 2
-- `frontier`: 14
+- `deprecated`: 3
+- `frontier`: 13
 - `no-go`: 16
 
 ## Domain counts
@@ -31,8 +31,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 156
-- `frontier`: 14
+- `formal_core`: 157
+- `frontier`: 13
 - `gauge_bridge`: 18
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -2573,6 +2573,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Root B synthesis] One Z2=Z(Q8), seven incarnations unified machine-checked. Cert vp_z2_spinor_cover.py (exact Z[sqrt5]+Q8 table): [Q8,Q8]=Z(Q8)=Phi(Q8)={+-1} |Z|=2 (#3); Galois phi+psi=1 phi*psi=-1 g(x)=1-x involution (#1); Lucas L_n=phi^n+psi^n eps_n=phi^n-L_n=-psi^n chi(n)=(-1)^n (#2); det(T^n)=(-1)^n=chi(n) (#5,#6); 2-sheet+rank-doubling (#4,#7). JOINT A: signedLucasTrace n=det(T^n)*L_n and det T=-1=phi*psi (parity=det=Galois-norm). JOINT B: det(T^{n+2})=det(T^n) (+2 fixes sheet), det(T^{n+1})=-det(T^n) (+1 flips, banned by M1). Lean L5 CORE-FORMALIZED via D0.Synthesis.Z2SpinorCover (z2_spinor_cover), >=4/7 projections sorry-free. HONEST: cert verifies cover ALGEBRA; the M1-uniqueness of orientation=Gal(Q(sqrt5)/Q) stays GOLDEN forcing prose. Note: BOOK_02 02.34 prose sign typo eps_n=L_n-phi^n corrected to phi^n-L_n=-psi^n (matches 03.23.6).
 
+### D0-EDGE-001
+
+- type: `deprecated`
+- release_status: `DEPRECATED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `edge_alpha_trace_target`
+- cert: `none`
+- assumptions: `none`
+- scope: Deprecated or historical row; not a live promotion path.
+- notes: [Iter15 trace-leg split — CLOSED] The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is proved (CORE) as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, with the phi^-5 seam = xi5 (D0-XI5). This separate trace-target row is therefore redundant and is DEPRECATED (superseded, not abandoned): the trace leg is closed at D0-ALPHA-ZETA-RESIDUE-001. The remaining open EDGE leg is the unitary-dilation / torus-ramification Puiseux target D0-EDGE-002.
+
 ### D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001
 
 - type: `no-go`
@@ -2745,19 +2758,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure. [was:CERT-CANDIDATE]
 
-### D0-EDGE-001
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_04`
-- module: ``
-- theorem: `edge_alpha_trace_target`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Guardrail target retained. [Iter5 repoint] Cleared phantom module path D0.Edge.AlphaRamificationConstructive (no file on disk). The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is already proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one; the unitary-dilation leg (and EDGE-002 Puiseux) remain the open obligation. OWNER-DECISION: split EDGE-001 trace-leg (closeable) from the dilation leg.
-
 ### D0-EDGE-002
 
 - type: `frontier`
@@ -2769,7 +2769,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Guardrail target retained. [Iter5 repoint] Cleared phantom module path D0.Edge.AlphaRamificationConstructive (no file on disk). The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is already proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one; the unitary-dilation leg (and EDGE-002 Puiseux) remain the open obligation. OWNER-DECISION: split EDGE-001 trace-leg (closeable) from the dilation leg.
+- notes: [Iter15 trace-leg split] The edge-alpha TRACE leg is CLOSED (Tr(F_E)=359 phi^-2-phi^-5 = alpha_top^-1 proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, CORE; seam xi5 = D0-XI5). What remains genuinely OPEN here is ONLY the unitary-dilation / torus-ramification Puiseux leg: the analytic continuation of the edge trace through the ramified cover (Puiseux series of the edge sector), which is not a finite identity. Status PROOF-TARGET. Companion finite content at D0-EDGE-ALPHA-001 / D0-EDGE-RAMIFICATION-001 (cert-closed).
 
 ### D0-HODGE-LINKS-001
 
