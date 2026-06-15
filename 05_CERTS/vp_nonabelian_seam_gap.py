@@ -41,11 +41,30 @@ def run_certificate() -> None:
 
     print(f"[1] Finite seam B + commuting (abelian) generator: E_seam = {E_abel}")
     print(f"[2] Non-commuting generator: E_seam = {E_non} > 0")
+    # ASSERT: commuting generator yields exactly zero seam energy (kernel),
+    # while the non-commuting generator opens a strictly positive gap.
+    assert E_abel == 0.0, f"abelian (commuting) seam energy must be 0, got {E_abel}"
+    assert E_non > 0.0, f"non-abelian seam energy must be > 0, got {E_non}"
+    assert E_non > E_abel, f"non-abelian gap must exceed abelian kernel, got {E_non} <= {E_abel}"
+    assert gap_proxy > 1e-12, f"gap proxy must be strictly positive, got {gap_proxy}"
     print("PASS_NONABELIAN_SEAM_OBSTRUCTION_GAP")
     print("PASS_ABELIAN_SEAM_KERNEL_CONTROL")
 
-    print("[3] Negative controls: abelian energy == 0, non-abelian >0, gap_proxy >0")
+    # NEGATIVE CONTROL: a commutative (diagonal) algebra must give a zero gap.
+    # Two diagonal generators commute with each other and with the diagonal seam,
+    # so [B_diag, X_diag] = 0 and E_seam = 0. A non-zero claim here would fail.
+    B_diag = [[2.0, 0.0], [0.0, 3.0]]
+    X_diag = [[5.0, 0.0], [0.0, 7.0]]
+    O_diag = commutator(B_diag, X_diag)
+    E_diag = frobenius_sq(O_diag)
+    assert E_diag == 0.0, f"diagonal (commutative) algebra must produce zero gap, got {E_diag}"
+    assert not (E_diag > 0.0), "commutative algebra must NOT open a gap (negative control)"
+    print(f"[3] Negative controls: abelian energy == 0, non-abelian >0, gap_proxy >0; "
+          f"diagonal commutative gap = {E_diag} (must be 0)")
     print("PASS_SEAM_GAP_NEGATIVE_CONTROLS")
+    print(f"[honest boundary] The positive gap E_seam={E_non} is a property of the chosen "
+          f"non-commuting SU(2)-like fixture only; on the commutative (diagonal) subalgebra the "
+          f"obstruction is identically zero (E_diag={E_diag}), so the claim is bounded to non-abelian seams.")
 
     results = {
         "status": "PASS_NONABELIAN_SEAM_OBSTRUCTION_GAP",

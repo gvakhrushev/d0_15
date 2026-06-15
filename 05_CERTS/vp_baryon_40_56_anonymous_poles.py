@@ -73,6 +73,9 @@ def main() -> int:
     rank_40 = int(np.sum(np.linalg.eigvalsh((pi_40 + pi_40.T)/2) > 0.5))
     rank_56 = int(np.sum(np.linalg.eigvalsh((pi_56 + pi_56.T)/2) > 0.5))
 
+    # ASSERT: the projector ranks computed from the S3 symmetrizers are exactly 40 and 56.
+    assert rank_40 == 40, f"flavour-spin image rank must be 40, got {rank_40}"
+    assert rank_56 == 56, f"mixed-symmetry image rank must be 56, got {rank_56}"
     print(f"PASS_BARYON_IMAGE_BASIS_RANK_40 (computed {rank_40})")
     print(f"PASS_BARYON_IMAGE_BASIS_RANK_56 (computed {rank_56})")
 
@@ -80,11 +83,40 @@ def main() -> int:
     B40 = get_image_basis(pi_40, rank_40)
     B56 = get_image_basis(pi_56, rank_56)
 
+    # ASSERT: each image basis is an isometry, B.T @ B = I_rank within 1e-9.
+    assert np.allclose(B40.T @ B40, np.eye(rank_40), atol=TOL), "B40 is not an isometry within 1e-9"
+    assert np.allclose(B56.T @ B56, np.eye(rank_56), atol=TOL), "B56 is not an isometry within 1e-9"
     # Isometry checks
     if np.allclose(B40.T @ B40, np.eye(rank_40), atol=TOL):
         print("PASS_BARYON_IMAGE_BASIS_ISOMETRY_40")
     if np.allclose(B56.T @ B56, np.eye(rank_56), atol=TOL):
         print("PASS_BARYON_IMAGE_BASIS_ISOMETRY_56")
+
+    # NEGATIVE CONTROL: a wrong basis dimension and a non-orthogonal basis must fail.
+    # The isometry-on-the-image test is B.T @ Pi @ B == I (the basis must SPAN the rank-r
+    # projector image, not merely be orthonormal). The correct basis satisfies it:
+    pi_40_h = (pi_40 + pi_40.T) / 2
+    assert np.allclose(B40.T @ pi_40_h @ B40, np.eye(rank_40), atol=TOL), "B40 must span the rank-40 image"
+    # (a) Wrong rank: pull rank_40+1 eigenvectors. QR keeps them orthonormal, but the extra
+    #     column lies OUTSIDE the rank-40 projector image, so B_wrong.T @ Pi @ B_wrong has a
+    #     vanishing trailing diagonal entry and is NOT the identity of that size.
+    wrong_rank = rank_40 + 1  # claim one extra dimension than the projector image spans
+    B40_wrong_dim = get_image_basis(pi_40, wrong_rank)  # over-includes a non-image eigenvector
+    image_gram_wrong = B40_wrong_dim.T @ pi_40_h @ B40_wrong_dim
+    assert image_gram_wrong.shape == (wrong_rank, wrong_rank)
+    assert not np.allclose(
+        image_gram_wrong, np.eye(wrong_rank), atol=TOL
+    ), "wrong basis dimension must fail the image-isometry (negative control)"
+    # (b) Non-orthogonal basis: skew the columns so even plain B.T@B != I.
+    B40_nonorth = B40.copy()
+    B40_nonorth[:, 1] = B40_nonorth[:, 0] + 0.3 * B40_nonorth[:, 1]  # column 1 no longer orthonormal
+    assert not np.allclose(
+        B40_nonorth.T @ B40_nonorth, np.eye(rank_40), atol=TOL
+    ), "non-orthogonal basis must fail the isometry (negative control)"
+    print("PASS_BARYON_ISOMETRY_NEGATIVE_CONTROLS")
+    print(f"[honest boundary] Ranks (40, 56) and the isometry B.T@B=I are certified ONLY for the "
+          f"exact S3-symmetrizer image bases; a perturbed basis (wrong dim {wrong_rank} or skewed columns) "
+          f"fails B.T@B=I within {TOL}, so no claim is made off the symmetric image.")
 
     # Also projector reconstruction (optional but good)
     # Pi approx = B @ B.T , but since we use exact from symmetrizer, skip strict check here

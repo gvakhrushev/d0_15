@@ -30,26 +30,21 @@ CERTS = ROOT / "05_CERTS"
 # only SHRINK. Iteration 5 Track-3 rewrites/demotes the 5 pure print-stubs first
 # (HODGE, NOAXION, BH-CAPACITY-A4, SPECTRAL-EINSTEIN, HODGE-LINKS); the rest is an owner
 # decision (see AUTONOMOUS_SESSION_REPORT). Remove a name the moment its cert really gates.
+# Iteration 16 rewrote 11 of the 19 to real can-FAIL certs (asserts + negative controls): the
+# finite-content ones (mincut, fractal/IM-cosmo, logdet, nonabelian-seam, baryon-poles,
+# ramification, v1132 gauge-matter, v1143 return-windows, v1145 operator-triple). The 8 left
+# below are the genuine non-gatable residue: 2 pure proxies (delegate to another cert), 1 search
+# declaration, and 5 empirical-passport templates whose only content is external-data comparison
+# (no data loaded ⇒ nothing finite to gate). These are owner-decision; the set must only SHRINK.
 GRANDFATHER = {
-    "vp_archive_pressure_coupling_from_relative_acceleration.py",
-    "vp_baryon_40_56_anonymous_poles.py",
     "vp_canonical_operator_search.py",
     "vp_critical_collapse_dss_echo_lattice.py",
     "vp_desi_bao_sde_failure_diagnostics.py",
-    "vp_finite_mincut_holographic_entropy.py",
-    "vp_fractal_continuum_predictions.py",
     "vp_generation_overlap_response_origin.py",
     "vp_icecube_hese_baseline_comparison.py",
     "vp_meson_positive_defect_transfer.py",
-    "vp_nonabelian_seam_gap.py",
     "vp_qnm_delta0_overtone_ladder.py",
-    "vp_ramification_edge_ueff_companion.py",
-    "vp_relative_archive_acceleration_cosmology_bridge.py",
     "vp_sparc_hull_boundary_response_kernel.py",
-    "vp_strong_logdet_pressure_coupling.py",
-    "vp_v1132_gauge_matter_ward_anomaly.py",
-    "vp_v1143_forced_return_windows_capacity.py",
-    "vp_v1145_operator_bridge_triple.py",
 }
 
 # evidence that a cert can fail: a real failing branch — an assertion, a non-entry raise,

@@ -48,15 +48,37 @@ def main() -> int:
 
     dL_num = dL_dV_simp.subs({kappa: kappa_val, d_tau: d_tau_val, z: z_val, V: V_val})
     dL_num = sp.simplify(dL_num)
+    # ASSERT: the computed derivative dL/dV is strictly positive on the resolvent
+    # domain (z in (0,1)). This gates the already-computed quantity dL_num.
+    assert dL_num > 0, f"dL/dV must be positive on resolvent domain, got {dL_num}"
     if dL_num > 0:
         print("PASS_LOGDET_PRESSURE_DERIVATIVE_POSITIVE")
 
     # Domain enforcement
     rho = 1  # representative spectral radius bound for domain check
+    # ASSERT: z lies strictly inside the resolvent domain (0, 1/rho).
+    assert 0 < z_val < 1 / rho, f"z={z_val} must lie in resolvent domain (0,{1/rho})"
     if 0 < z_val < 1 / rho:
         print("PASS_RESOLVENT_DOMAIN_ENFORCED")
 
+    # NEGATIVE CONTROL: z outside (0,1) breaks positivity / definition of L(V).
+    # (a) z = 0 collapses the loop term: L(V) = -d_tau*log(1) = 0 for all V,
+    #     so dL/dV = 0 (NOT strictly positive) -> the positivity assert would fail.
+    z_zero = sp.Integer(0)
+    dL_zzero = sp.simplify(dL_dV_simp.subs({kappa: kappa_val, d_tau: d_tau_val, z: z_zero, V: V_val}))
+    assert dL_zzero == 0, f"z=0 must kill the pressure derivative, got {dL_zzero}"
+    assert not (dL_zzero > 0), "z=0 must NOT yield strict positivity (negative control)"
+    # (b) z = 3 sits outside (0,1): here z*r(V) > 1 so 1 - z*r(V) < 0, hence log(1 - z*r)
+    #     is undefined / non-real -> the resolvent expansion is invalid there.
+    z_out = sp.Integer(3)
+    arg_out = sp.simplify((1 - z_out * r_simp).subs({kappa: kappa_val, V: V_val}))
+    assert arg_out < 0, f"z=3 must push 1-z*r out of the log domain, got {arg_out}={float(arg_out):.4f}"
+    assert not (0 < z_out < 1 / rho), "z=3 must be rejected by the resolvent-domain gate (negative control)"
+
     print("PASS_NO_SURVEY_FIT_CLAIM")
+    print(f"[honest boundary] Positivity is certified ONLY on the open resolvent domain z in (0,{1/rho}); "
+          f"at z=0 the response vanishes (dL/dV={dL_zzero}) and for z large enough (e.g. z=3) the loop term "
+          f"1-z*r={float(arg_out):.4f}<0 leaves the log domain.")
 
     # Negative controls (expected rejections)
     print("FAIL_CONSTANT_FN_NO_PRESSURE_DERIVATIVE")

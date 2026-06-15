@@ -43,8 +43,17 @@ def main() -> int:
     dP_rel = np.diff(P_rel)
     print("PASS_LOOP_PRESSURE_SPLIT_DERIVED")
     print("PASS_RELATIVE_PRESSURE_TERM_DEFINED")
+    # --- can-FAIL gate: pressure increment strictly positive for fixed positive coupling ---
+    assert C_R > 0.0, f"internal coupling c_R must be positive, got {C_R}"
+    assert np.all(dP_rel > 0), f"Delta P_rel must be > 0 with positive c_R, min={dP_rel.min()}"
     if np.all(dP_rel > 0):
         print("PASS_RELATIVE_PRESSURE_INCREMENT_POSITIVE")
+
+    # Negative controls: a wrong-sign or zero coupling breaks the positive pressure increment.
+    dP_neg = np.diff((-C_R) * dR)   # wrong sign c_R
+    dP_zero = np.diff(0.0 * dR)     # zero coupling
+    assert not np.all(dP_neg > 0), "negative c_R must NOT yield Delta P_rel > 0"
+    assert not np.all(dP_zero > 0), "zero coupling must NOT yield Delta P_rel > 0"
 
     print("PASS_NO_SURVEY_FIT_CLAIM")
 
@@ -55,6 +64,7 @@ def main() -> int:
     print("FAIL_C_R_RETUNED_FROM_SURVEY_DATA")
 
     print("Weak relative-pressure bridge (P_rel = c_R Delta R_n) verified with fixed internal c_R. Strong log-det is primary. Survey data excluded.")
+    print("Honest boundary: positivity of Delta P_rel holds only for fixed positive internal c_R; no survey-tuned coupling, scale factor, or H0 value is claimed.")
     return 0
 
 if __name__ == "__main__":

@@ -31,6 +31,24 @@ def main() -> int:
     dB = np.diff(B)
     d2B = np.diff(dB)
 
+    # --- can-FAIL gates on the real computed sequence ---
+    # Increments strictly positive; second differences strictly negative (deceleration).
+    assert np.all(dB > 0), f"Delta B_n must be > 0 (archive grows), min={dB.min()}"
+    assert np.all(d2B < 0), f"Delta^2 B_n must be < 0 (deceleration), max={d2B.max()}"
+
+    # Negative control: a wrong decay rate (growth, q>1) breaks the increment sign pattern
+    # (the increments (1-q)A_{n-1} go negative), so the joint claim Delta B_n>0 AND Delta^2 B_n<0 fails.
+    q_bad = 1.0 / 0.5  # = 2 > 1, divergent instead of contracting
+    A_bad = [1.0]
+    B_bad = [0.0]
+    for _n in range(1, N+1):
+        A_bad.append(q_bad * A_bad[-1])
+        B_bad.append(B_bad[-1] + (1 - q_bad) * A_bad[-2])
+    dB_bad = np.diff(np.array(B_bad))
+    d2B_bad = np.diff(dB_bad)
+    assert not (np.all(dB_bad > 0) and np.all(d2B_bad < 0)), \
+        "wrong decay rate (q>1) must NOT satisfy Delta B_n>0 AND Delta^2 B_n<0"
+
     print("PASS_CONSTANT_LOG_GRADIENT_PREDICTION")
     print("PASS_ACTIVE_NONTERMINATION_PREDICTION")
     if np.all(dB > 0):
@@ -58,6 +76,7 @@ def main() -> int:
         print("PASS_CONTINUUM_ENVELOPE_MATCHES_DISCRETE_TICKS")
 
     print("Note: absolute archive increments decelerate (Delta^2 B_n <0). Relative archive ratio accelerates (Delta^2 R_n >0). Survey data excluded.")
+    print("Honest boundary: sign pattern is proven only for the contracting phi^{-1} recurrence (q<1); it is an internal recurrence claim, not a continuum theorem.")
 
     return 0
 

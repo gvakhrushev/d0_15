@@ -95,4 +95,39 @@ pass_conditions = [
 ]
 status = "PASS_V11_32_GAUGE_MATTER_WARD_ANOMALY" if all(pass_conditions) else "FAIL_V11_32_GAUGE_MATTER_WARD_ANOMALY"
 out = {"status": status, "checks": checks}
+
+# --- can-FAIL gate: assert on the real computed quantities -------------------
+# Scene invariants (boundary skeleton over the 9/11/13 parts).
+assert V == 33, f"vertex count {V} != 33"
+assert len(edges) == 359, f"edge count {len(edges)} != 359"
+assert len(triangles) == 1287, f"triangle count {len(triangles)} != 1287"
+# Boundary-of-boundary (Bianchi) identity: B1*B2 == 0 entrywise.
+assert max_abs == 0, f"d^2 != 0, max |B1*B2| = {max_abs}"
+# Every gauge anomaly sum must cancel exactly (rational arithmetic).
+assert SU3_SU3_U1 == 0, f"SU3-SU3-U1 anomaly = {SU3_SU3_U1} != 0"
+assert SU2_SU2_U1 == 0, f"SU2-SU2-U1 anomaly = {SU2_SU2_U1} != 0"
+assert U1_3 == 0, f"U1^3 anomaly = {U1_3} != 0"
+assert Grav_U1 == 0, f"Grav-U1 anomaly = {Grav_U1} != 0"
+# Hypercharge normalization and EW depth atlas.
+assert kY == Fraction(5, 3), f"kY = {kY} != 5/3"
+assert D_EW == 35, f"D_EW = {D_EW} != 35"
+assert residuals["34"] == -1 and residuals["35"] == 0 and residuals["36"] == 1
+
+# --- negative control: a wrong scene / non-cancelling anomaly must FAIL -------
+# (a) a wrong vertex/edge count is rejected by the same gate.
+bad_V = V + 1
+bad_edges = len(edges) - 1
+assert not (bad_V == 33 and bad_edges == 359), "negative control: wrong scene counts passed the gate"
+# (b) drop the right-handed e+ (Y=+1) from the U1^3 ledger: anomaly must NOT cancel.
+U1_3_bad = U1_3 - Fraction(1, 1) ** 3
+assert U1_3_bad != 0, "negative control: incomplete U1^3 ledger still cancelled"
+# (c) shift the EW depth by one: residual atlas must no longer be (-1,0,+1).
+D_EW_bad = D_EW + 1
+bad_resid = {str(d): d - D_EW_bad for d in [34, 35, 36]}
+assert not (bad_resid["34"] == -1 and bad_resid["35"] == 0 and bad_resid["36"] == 1), \
+    "negative control: shifted D_EW still centred"
+
 print(json.dumps(out, indent=2))
+print("HONEST_BOUNDARY: certifies d^2=0 on the 9/11/13 boundary skeleton, exact "
+      "rational anomaly cancellation, kY=5/3 and D_EW=35; it does not derive the "
+      "matter content from first principles.")

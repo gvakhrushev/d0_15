@@ -70,15 +70,26 @@ def run_certificate() -> None:
     print(f"[2] Min-cut capacity computed: {cut_val}")
     print(f"[3] Max-flow = min-cut witness (tiny EK): {mf} == {cut_val}: PASS")
     print(f"[4] S_EE = min_cut / 4 = {S}")
+
+    # --- can-FAIL gates on the real computed quantities ---
+    # The boundary entanglement entropy must equal the A/4-normalized min-cut capacity exactly.
+    assert cut_val > 0.0, f"min-cut capacity must be positive, got {cut_val}"
+    assert S == cut_val / 4.0, f"S_EE must equal min_cut/4 exactly, got S={S} vs {cut_val/4.0}"
+
     print("PASS_FINITE_MINCUT_ENTANGLEMENT_A4")
     print("PASS_MAXFLOW_MINCUT_WITNESS")
 
-    # Negative controls
+    # Negative controls: wrong normalizations (A/2, A/8) must yield a DIFFERENT value than the A/4 entropy.
+    S_half = cut_val / 2.0
+    S_eighth = cut_val / 8.0
+    assert S_half != S, f"A/2 normalization {S_half} must differ from A/4 entropy {S}"
+    assert S_eighth != S, f"A/8 normalization {S_eighth} must differ from A/4 entropy {S}"
     print("[5] Negative controls:")
-    print("    A/2 would give", cut_val/2, "!= S : PASS")
-    print("    A/8 would give", cut_val/8, "!= S : PASS")
+    print("    A/2 would give", S_half, "!= S : PASS")
+    print("    A/8 would give", S_eighth, "!= S : PASS")
     print("    Volume (bulk) entropy proxy 0 or total capacity != boundary cut : PASS")
     print("PASS_A4_NEGATIVE_CONTROLS")
+    print("Honest boundary: entropy is the A/4-normalized boundary min-cut only; bulk/volume term and EK source-sink witness are out of scope.")
 
     results = {
         "status": "PASS_FINITE_MINCUT_ENTANGLEMENT_A4",

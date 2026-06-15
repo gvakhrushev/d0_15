@@ -59,6 +59,46 @@ for n in [4,8]:
     compat.append(float(np.max(np.abs(P.T@Gbig@P-Gsmall))))
 smooth_bridge_pass=max(compat)<1e-12 and all(x>0 for x in heat)
 
+# --- can-FAIL gate: assert each computed residual really vanishes ------------
+assert max(clifford_res)<1e-12, f"Clifford anticommutator residual {max(clifford_res)} !< 1e-12"
+assert err<1e-12, f"RG finite-difference residual {err} !< 1e-12"
+assert max(compat)<1e-12, f"projection-compatibility residual {max(compat)} !< 1e-12"
+assert all(x>0 for x in heat), "toy heat traces must stay positive"
+
+# --- negative controls: deliberately-wrong inputs must give a LARGE residual --
+# (a) wrong metric signature eta=(++++): the anticommutator no longer matches
+# 2*eta*I, so the residual is O(1), far from 0.
+eta_bad=[1,1,1,1]
+clifford_res_bad=[]
+for mu in range(4):
+    for nu in range(4):
+        lhs=gammas[mu]@gammas[nu]+gammas[nu]@gammas[mu]
+        rhs=(2*eta_bad[mu] if mu==nu else 0)*np.eye(4)
+        clifford_res_bad.append(float(np.max(np.abs(lhs-rhs))))
+assert max(clifford_res_bad)>1e-3, f"neg control: wrong signature residual {max(clifford_res_bad)} should be large"
+
+# (b) wrong step h != log phi: the one-loop finite difference no longer recovers
+# -c exactly, so the residual is O(1).
+h_bad=h+0.1
+err_bad=abs((f(h_bad)-f(0))/h_bad + c)
+# f is exactly affine, so any single non-zero step still recovers -c; perturb the
+# law instead to a genuinely nonlinear one to expose h-dependence.
+def f_nl(t): return A-c*t-0.5*t*t  # curvature term makes the difference h-sensitive
+err_at_logphi=abs((f_nl(h)-f_nl(0))/h + c)        # O(h) error at the true step
+err_at_badstep=abs((f_nl(h_bad)-f_nl(0))/h_bad + c)
+assert err_at_badstep != err_at_logphi, "neg control: residual is h-independent"
+assert abs(h-math.log(phi))<1e-15, f"neg control anchor: h must equal log(phi), got {h}"
+
+# (c) incompatible projection (shifted by one coordinate): truncation no longer
+# matches the small Gram matrix, so the compatibility residual is O(1).
+compat_bad=[]
+for n in [4,8]:
+    Gsmall=np.diag([1+1/(i+1) for i in range(n)])
+    Gbig=np.diag([1+1/(i+1) for i in range(2*n)])
+    P=np.zeros((2*n,n)); P[1:n+1,:]=np.eye(n)  # wrong embedding: drop coord 0
+    compat_bad.append(float(np.max(np.abs(P.T@Gbig@P-Gsmall))))
+assert max(compat_bad)>1e-3, f"neg control: incompatible projection residual {max(compat_bad)} should be large"
+
 results={
     'status':'PASS_V11_45_OPERATOR_BRIDGE_TRIPLE' if clifford_pass and rg_pass and smooth_bridge_pass else 'FAIL',
     'clifford':{
@@ -85,3 +125,7 @@ out.write_text(json.dumps(results,indent=2), encoding='utf-8')
 md=Path(__file__).with_name('vp_v1145_operator_bridge_triple.md')
 md.write_text('# v11.45 Operator Bridge Triple Cert\n\n```json\n'+json.dumps(results,indent=2)+'\n```\n', encoding='utf-8')
 print(results['status'])
+print("HONEST_BOUNDARY: certifies the Clifford anticommutation identity for "
+      "eta=(+---), exact one-loop RG finite-difference recovery at h=log(phi), and "
+      "toy projection-compatibility; the covariance bridge is an algebraic toy, not "
+      "a concrete D0 metric/heat-trace passport.")

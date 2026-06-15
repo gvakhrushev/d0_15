@@ -34,6 +34,8 @@ def main() -> int:
     # 3-5. Discrete acceleration
     dR = np.diff(R)
     d2R = np.diff(dR)
+    # --- can-FAIL gate: discrete relative ratio accelerates (Delta^2 R_n > 0) ---
+    assert np.all(d2R > 0), f"Delta^2 R_n must be > 0 (relative acceleration), min={d2R.min()}"
     print("PASS_RELATIVE_ARCHIVE_DISCRETE_ACCELERATION_POSITIVE")
     # Verify symbolically positive form (for n>=2, phi^{n-2} >0 always)
     # Sample check
@@ -46,8 +48,22 @@ def main() -> int:
     s = np.linspace(0, 5, 100)
     Rs = np.exp(s * np.log(PHI)) - 1
     Rpp = (np.log(PHI)**2) * np.exp(s * np.log(PHI))
+    # --- can-FAIL gate: continuum envelope is convex (R''(s) > 0) ---
+    assert np.all(Rpp > 0), f"R''(s) must be > 0 (continuum acceleration), min={Rpp.min()}"
     if np.all(Rpp > 0):
         print("PASS_RELATIVE_ARCHIVE_CONTINUUM_ACCELERATION_POSITIVE")
+
+    # Negative controls: a perturbed phi-exponent flips the sign / breaks agreement.
+    # (a) Discrete: a growth recurrence (A_{n+1}=phi*A_n instead of A_n/phi) flips Delta^2 R_n negative.
+    A_bad = [A0]; B_bad = [0.0]
+    for _n in range(1, N+1):
+        A_bad.append(A_bad[-1] * PHI)  # WRONG sign of phi-exponent
+        B_bad.append(B_bad[-1] + (1.0 / (PHI * PHI)) * A_bad[-2])
+    d2R_bad = np.diff(np.diff(np.array(B_bad) / np.array(A_bad)))
+    assert not np.all(d2R_bad > 0), "perturbed phi-exponent must NOT keep Delta^2 R_n > 0"
+    # (b) Continuum: a saturating envelope R(s)=1-exp(-s log phi) has R''(s) < 0.
+    Rpp_bad = -(np.log(PHI) ** 2) * np.exp(-s * np.log(PHI))
+    assert not np.all(Rpp_bad > 0), "saturating (sign-flipped) envelope must NOT keep R''(s) > 0"
 
     # 9. Link declared (internal only)
     print("PASS_ARCHIVE_PRESSURE_LINK_DECLARED")
@@ -61,6 +77,7 @@ def main() -> int:
     print("FAIL_ABSOLUTE_ARCHIVE_INCREMENT_ACCELERATION_CONFUSION")
 
     print("Internal relative acceleration (R_n and R(s)) proven finite and positive. Survey data excluded.")
+    print("Honest boundary: positivity holds only for the contracting phi^{-1} recurrence and its convex envelope; no cosmological survey fit or H0 value is claimed.")
     return 0
 
 if __name__ == "__main__":
