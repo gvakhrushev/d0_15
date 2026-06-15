@@ -11,6 +11,7 @@ This is the current status index for D0 theory branches, Lean anchors, certifica
 | D0-PHI-HURWITZ-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.NumberTheory.HurwitzMinimaxPhi` | `HURWITZ_MINIMAX_D0_CLASS_PROVED` | `vp_v1142_hurwitz_phi_phase_rigidity.py` | Lean-owned finite/formal D0 core statement. |
 | D0-ABCD-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Core.DyadABCD` | `ABCD_cardinality` | `` | Lean-owned finite/formal D0 core statement. |
 | D0-OMEGA8-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Core.DyadABCD` | `omega8_cardinality` | `` | Lean-owned finite/formal D0 core statement. |
+| D0-OMEGA8-CENTER-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Foundation.Omega8Center` | `omega8_center_collapse` | `vp_omega8_center_collapse.py` | Lean-owned finite/formal D0 core statement. |
 | D0-CAPACITY-V9-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Core.FiniteTypes` | `card_v9` | `` | Lean-owned finite/formal D0 core statement. |
 | D0-CAPACITY-V11-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Core.FiniteTypes` | `card_v11` | `` | Lean-owned finite/formal D0 core statement. |
 | D0-CAPACITY-V13-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Core.FiniteTypes` | `card_v13` | `` | Lean-owned finite/formal D0 core statement. |

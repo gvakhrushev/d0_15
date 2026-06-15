@@ -126,6 +126,7 @@ import D0.Dynamics.ToralAutomorphism
 import D0.Dynamics.TraceHeatCapacityGravity
 import D0.Dynamics.TraceHeatLucasCore
 import D0.Foundation.FrobeniusDivision3D
+import D0.Foundation.Omega8Center
 import D0.Frozen.ConservedStressProjection
 import D0.Frozen.SeamCurvaturePoisson
 import D0.Gauge.AnomalySums

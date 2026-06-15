@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3370,
-    "track_fair_max": 4610,
-    "pct_strength": 73.1,
-    "core_realized": 2863,
-    "core_potential": 4080,
+    "realized": 3390,
+    "track_fair_max": 4630,
+    "pct_strength": 73.2,
+    "core_realized": 2883,
+    "core_potential": 4100,
     "core_headroom": 1217,
-    "n_claims": 258,
-    "n_active": 257,
+    "n_claims": 259,
+    "n_active": 258,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 156,
-      "realized": 2256,
-      "max": 2966,
+      "n": 157,
+      "realized": 2276,
+      "max": 2986,
       "core_headroom": 705
     },
     "rg": {
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 13,
-      "realized": 183,
-      "max": 238,
+      "n": 14,
+      "realized": 203,
+      "max": 258,
       "core_headroom": 55
     },
     "BOOK_02": {
@@ -1989,6 +1989,20 @@
       "domain": "formal_core",
       "book": "BOOK_01",
       "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-OMEGA8-CENTER-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
       "integrity_flag": null
     },
     {
@@ -5523,7 +5537,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.2,
+    "penalty_total": 0.1,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5568,8 +5582,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 2,
-        "points": -0.2,
+        "count": 1,
+        "points": -0.1,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -5618,8 +5632,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 2,
-        "points": -0.2,
+        "count": 1,
+        "points": -0.1,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

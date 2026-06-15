@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 258,
+    "claims": 259,
     "release_status": {
-      "CORE-FORMALIZED": 115,
+      "CORE-FORMALIZED": 116,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 14,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 137,
+      "LEAN_PROVED": 138,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 14,
       "PYTHON_CERTIFIED": 90,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 116,
+      "core": 117,
       "bridge": 20,
       "no-go": 16,
       "certificate": 90,
@@ -34,7 +34,7 @@
       "frontier": 14
     },
     "domain": {
-      "formal_core": 156,
+      "formal_core": 157,
       "rg": 5,
       "gauge_bridge": 17,
       "smooth_geometry": 12,
@@ -287,6 +287,44 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Core/DyadABCD.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-OMEGA8-CENTER-001",
+      "kind": "claim",
+      "claim_id": "D0-OMEGA8-CENTER-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "01.7.1C",
+      "lean_module": "D0.Foundation.Omega8Center",
+      "lean_theorem": "omega8_center_collapse",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_omega8_center_collapse.py",
+      "python_cert": [
+        "vp_omega8_center_collapse.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter15] Closes the SS01.7.1C proof-target (the explicit Omega8-orientation -> Z(Q8) map). Decidable in exact Z-quaternions over Q8={+-1,+-i,+-j,+-k}: Z(Q8)={+-1} (center=the +- orientation bit), every commutator [a,b] in {+-1} with [i,j]=-1 realizing it, i non-central; the abelianization Q8/[Q8,Q8] is Klein-four (g^2 in {+-1}) so Phi(Q8)=[Q8,Q8] too => [Q8,Q8]=Z(Q8)=Phi(Q8)={+-1} (one Z2). Lean D0.Foundation.Omega8Center (omega8_center_collapse, native_decide), cert vp_omega8_center_collapse.py (can-FAIL; control i*j=k!=-k=j*i). HONEST: Omega8~Q8 itself owned by Dedekind-minimality SS01.7.1A; this discharges only the orientation-bit<->center/holonomy-parity map.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/Omega8Center.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.Omega8Center",
+      "kind": "lean_module",
+      "label": "D0.Foundation.Omega8Center",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/Omega8Center.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_omega8_center_collapse.py",
+      "kind": "python_cert",
+      "label": "vp_omega8_center_collapse.py",
+      "path": "05_CERTS/vp_omega8_center_collapse.py",
+      "exists": true
     },
     {
       "id": "D0-CAPACITY-V9-001",
@@ -8700,6 +8738,21 @@
       "source": "D0-OMEGA8-001",
       "target": "module:D0.Core.DyadABCD",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-OMEGA8-CENTER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-OMEGA8-CENTER-001",
+      "target": "module:D0.Foundation.Omega8Center",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-OMEGA8-CENTER-001",
+      "target": "cert:vp_omega8_center_collapse.py",
+      "kind": "certified_by"
     },
     {
       "source": "D0-CAPACITY-V9-001",

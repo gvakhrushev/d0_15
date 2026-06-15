@@ -7,6 +7,7 @@ digraph D0Theory {
   "D0-PHI-HURWITZ-001" [label="D0-PHI-HURWITZ-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-ABCD-001" [label="D0-ABCD-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-OMEGA8-001" [label="D0-OMEGA8-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-OMEGA8-CENTER-001" [label="D0-OMEGA8-CENTER-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CAPACITY-V9-001" [label="D0-CAPACITY-V9-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CAPACITY-V11-001" [label="D0-CAPACITY-V11-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CAPACITY-V13-001" [label="D0-CAPACITY-V13-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -297,6 +298,12 @@ digraph D0Theory {
   "D0-OMEGA8-001" -> "module:D0.Core.DyadABCD" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-OMEGA8-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Foundation.Omega8Center" [label="D0.Foundation.Omega8Center", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-OMEGA8-CENTER-001" -> "module:D0.Foundation.Omega8Center" [label="module"];
+  "cert:vp_omega8_center_collapse.py" [label="vp_omega8_center_collapse.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-OMEGA8-CENTER-001" -> "cert:vp_omega8_center_collapse.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-OMEGA8-CENTER-001" -> "domain:formal_core" [label="domain"];
   "module:D0.Core.FiniteTypes" [label="D0.Core.FiniteTypes", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-CAPACITY-V9-001" -> "module:D0.Core.FiniteTypes" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];

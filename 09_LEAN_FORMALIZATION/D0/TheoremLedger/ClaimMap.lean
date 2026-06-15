@@ -35,6 +35,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "ABCD_cardinality", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-OMEGA8-001", moduleName := "D0.Core.DyadABCD",
       theoremName := "omega8_cardinality", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-OMEGA8-CENTER-001", moduleName := "D0.Foundation.Omega8Center",
+      theoremName := "omega8_center_collapse", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CAPACITY-V9-001", moduleName := "D0.Core.FiniteTypes",
       theoremName := "card_v9", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CAPACITY-V11-001", moduleName := "D0.Core.FiniteTypes",

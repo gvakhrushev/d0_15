@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 14
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 75
-- `CORE-FORMALIZED`: 115
+- `CORE-FORMALIZED`: 116
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 20
 - `certificate`: 90
-- `core`: 116
+- `core`: 117
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 156
+- `formal_core`: 157
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
@@ -2260,6 +2260,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Omega8 represented as Role x Bool.
+
+### D0-OMEGA8-CENTER-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.Omega8Center`
+- theorem: `omega8_center_collapse`
+- cert: `vp_omega8_center_collapse.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter15] Closes the SS01.7.1C proof-target (the explicit Omega8-orientation -> Z(Q8) map). Decidable in exact Z-quaternions over Q8={+-1,+-i,+-j,+-k}: Z(Q8)={+-1} (center=the +- orientation bit), every commutator [a,b] in {+-1} with [i,j]=-1 realizing it, i non-central; the abelianization Q8/[Q8,Q8] is Klein-four (g^2 in {+-1}) so Phi(Q8)=[Q8,Q8] too => [Q8,Q8]=Z(Q8)=Phi(Q8)={+-1} (one Z2). Lean D0.Foundation.Omega8Center (omega8_center_collapse, native_decide), cert vp_omega8_center_collapse.py (can-FAIL; control i*j=k!=-k=j*i). HONEST: Omega8~Q8 itself owned by Dedekind-minimality SS01.7.1A; this discharges only the orientation-bit<->center/holonomy-parity map.
 
 ### D0-OPERATOR-EDGE-STIFFNESS-ORIGIN-001
 
