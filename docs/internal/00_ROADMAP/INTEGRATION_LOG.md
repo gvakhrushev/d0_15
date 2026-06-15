@@ -1115,3 +1115,51 @@ Guards: `check_book_assembly` / `check_book_publication` / `check_book_cert_refe
 demotions 0, hygiene 100. The standard-language reframe + Rosetta is the durable fix for the
 "looks harder than it is" gap; the [LEM] collision is removed; the books carry less repeated
 derivation with no lost content.
+
+### Iteration 15 — close the open-frontier Tier-1 (Q₈ center, no-go leg, EDGE split, PMNS dual)
+
+Worked the `OPEN_FRONTIER_ROADMAP.md` Tier-1 list (the genuinely D0-closeable open items), each as a
+verified-closure unit at its honest status. Three real closures + one honest sharpen.
+
+- **T1 — Q₈ orientation→center map CLOSED** (`D0-OMEGA8-CENTER-001`, CORE, commit `15f1399`). The
+  §01.7.1C PROOF-TARGET ("the explicit map Ω₈-orientation groupoid → Z(Q₈) … is not yet written")
+  is now machine-checked: Lean `D0.Foundation.Omega8Center` proves over `Q₈={±1,±i,±j,±k}` (exact
+  ℤ-quaternions, native_decide) that `Z(Q₈)={±1}`, the commutator set `={±1}` (with `[i,j]=−1`), and
+  via the Klein-four abelianization `Φ(Q₈)=[Q₈,Q₈]` too — so `[Q₈,Q₈]=Z(Q₈)=Φ(Q₈)={±1}`: orientation
+  bit = order-memory remainder = non-generating remainder, one `ℤ₂`. cert
+  `vp_omega8_center_collapse.py` (control: `i·j=k≠−k=j·i`). §01.7.1C status PROOF-TARGET→CORE.
+  (`Ω₈≅Q₈` itself stays owned by Dedekind §01.7.1A.) strength 3370→3390.
+- **T2 — rank-one scalar-projector no-go FORMALIZED** (`D0-NO-GO-STRESS-SUITE-001`, commit `2bb292d`).
+  The 4th suite control, cert-only since base-v14, is now Lean-proved: `FiniteScalarProjector`/
+  `GaugeCompatible` API + `no_go_rank_one_higgs_scalar_projector` (a rank-1 doublet-projector mask
+  cannot commute with the weak swap; `by decide`) added to `D0.NoGo.StressTestSuite`, wired into the
+  suite + closure theorem. The open Lean theorem-target is closed. strength steady (NO_GO already counted).
+- **T3 — EDGE trace-leg split** (commit `f5c8517`). The trace identity `Tr(F_E)=359φ⁻²−φ⁻⁵=α_top⁻¹`
+  is already CORE as `D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one`; the redundant trace target
+  `D0-EDGE-001` is DEPRECATED (superseded, no theorem double-count); only the unitary-dilation/
+  torus-ramification Puiseux leg `D0-EDGE-002` stays PROOF-TARGET, note sharpened to that leg only.
+  Honest accounting: strength 3390→3388 (−2), headroom −18 — the duplicate target's slack removed.
+- **T4 — PMNS angle-forcing: honest dual / SHARPEN** (`D0-PMNS-DELTA0-NUFIT-001` stays
+  EMPIRICAL-PASSPORT, commit `b914b07`). Each lepton mixing angle = an M1-symmetric baseline
+  (1/2 bimaximal, 1/3 trimaximal-democratic, 0) + a correction from forced quantities (δ₀, ξ₅=φ⁻⁵,
+  |ABCD|=4). cert `vp_pmns_baseline_correction.py` proves the baselines are M1-symmetric and the
+  corrections reuse only forced δ₀/ξ₅, but — the named gap made explicit — a 1st-order δ₀ for θ₁₂
+  misses NuFIT badly, so the **correction orders/coefficients are data-fixed, not M1-derived**. No
+  Lean (the formula = its own definition would be tautological); passport not promoted.
+
+### Iteration 15 metrics
+| metric | Iter14 end | Iter15 now | delta |
+|---|---|---|---|
+| claims | 259 | 259 | +1 new (OMEGA8-CENTER), −1 deprecated (EDGE-001) net 0 |
+| strength | 3370 | 3388 | +18 (T1 +20 CORE; T3 −2 deprecation) |
+| integrity demotions | 0 | 0 | — |
+| §01.7.1C proof-target | open | CLOSED (CORE) | −1 open target |
+| NO-GO-STRESS Lean controls | 3 | 4 | +1 (rank-one scalar-projector) |
+| EDGE open targets | 2 | 1 | −1 (trace leg closed; dilation remains) |
+| Tier-1 roadmap items | 5 open | 3 closed + 1 sharpened + 1 open | −3/−4 |
+
+`lake build D0.All` GREEN (3269 jobs); validate_csv (259), check_firewall, check_cert_can_fail
+(0 unallowed), run_registered_certs (164 certs, 0 MISSING/FAIL), no-tautology, book guards,
+graph/aggregates idempotent — all PASS. Honest split: three genuine closures, one honest dual that
+sharpens without over-promoting; the remaining Tier-1 item (detection-quadratic categorical
+machine-theorem) and all Tier 2–5 frontier stay named in the roadmap.
