@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 14
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 75
+- `CERT-CLOSED`: 76
 - `CORE-FORMALIZED`: 116
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 20
-- `certificate`: 90
+- `certificate`: 91
 - `core`: 117
 - `deprecated`: 3
 - `frontier`: 13
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 157
+- `formal_core`: 158
 - `frontier`: 13
 - `gauge_bridge`: 18
 - `interpretation_spine`: 1
@@ -1207,6 +1207,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] frozen e/mu/tau ratios, exponents 0,1/4,1/3.
+
+### D0-MASS-CHAIN-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04/06`
+- module: ``
+- theorem: `none`
+- cert: `vp_mass_chain_alpha.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter17 GOLDEN return + alpha-mass stitch] Restores the dropped holonomy chain delta0->pi0->m0->t0 and records a cross-book identity. pi0=(6/5)phi^2 is DERIVED (BOOK_04 THE 04.6.pi.4, from the delta0 closure balance, no external parameter); m0=2pi0=(12/5)phi^2 and t0=1/m0=(5/12)phi^-2 (m0.t0=1) were GOLDEN-derived (mass quantum = one full holonomy cycle) and fell out in v14 (staged only in coverage_audit/batches/B010,B011) -- restored here. Moment amplitudes: mu1=1/3=1/rank (F_N=p^2 P_N floor over 3 active modes), mu2=2^11 pi0 phi^-2=12288/5. ALPHA<->MASS STITCH (exact Q(phi)): mu2=2^11 pi0 phi^-2 = 2^10 m0 phi^-2 (since m0=2pi0) -- alpha's 2nd-moment amplitude IS 2^10 mass-quanta over phi^2; one holonomy, two roles. Cert vp_mass_chain_alpha.py (can-FAIL: balance, m0=2pi0, t0, stitch, alpha^-1=137.0360; controls reject wrong factor/rank/delta0). HONEST/NAMED GAPS: 2^11 capacity flagged (=2^V11) NOT forced; unified Tr-formula mu_k (active<->archive pairing) open (D0-CVFT-F1); m_rest=m0.W (GOLDEN THE 6.5.4) ABSENT, needs winding W per particle (OWNER-DECISION, grep GOLDEN first). Not CORE: returned chain + identity are cert-exact; the series/spectrum stay open.
 
 ### D0-MASTER-BOOTSTRAP-001
 

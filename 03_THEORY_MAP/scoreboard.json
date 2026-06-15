@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 3388,
-    "track_fair_max": 4610,
-    "pct_strength": 73.5,
-    "core_realized": 2881,
-    "core_potential": 4080,
-    "core_headroom": 1199,
-    "n_claims": 259,
-    "n_active": 257,
+    "realized": 3395,
+    "track_fair_max": 4630,
+    "pct_strength": 73.3,
+    "core_realized": 2888,
+    "core_potential": 4100,
+    "core_headroom": 1212,
+    "n_claims": 260,
+    "n_active": 258,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 156,
-      "realized": 2264,
-      "max": 2974,
-      "core_headroom": 705
+      "n": 157,
+      "realized": 2271,
+      "max": 2994,
+      "core_headroom": 718
     },
     "rg": {
       "n": 5,
@@ -373,6 +373,12 @@
       "n": 2,
       "realized": 14,
       "max": 27,
+      "core_headroom": 13
+    },
+    "BOOK_04/06": {
+      "n": 1,
+      "realized": 7,
+      "max": 20,
       "core_headroom": 13
     },
     "BOOK_00": {
@@ -1003,6 +1009,16 @@
       "claim_id": "D0-PHASON-FORCING-001",
       "domain": "formal_core",
       "book": "BOOK_08",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-MASS-CHAIN-001",
+      "domain": "formal_core",
+      "book": "BOOK_04/06",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1777,6 +1793,13 @@
     },
     {
       "claim_id": "D0-PHASON-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-MASS-CHAIN-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5065,6 +5088,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02/05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-MASS-CHAIN-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_04/06",
       "leverage": 0,
       "integrity_flag": null
     },
