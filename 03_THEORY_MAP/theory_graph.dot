@@ -940,6 +940,8 @@ digraph D0Theory {
   "D0-CVFT-NOGO-001" -> "domain:cosmology" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-CVFT-F1" -> "module:" [label="module"];
+  "cert:vp_feshbach_residue_amplitudes.py" [label="vp_feshbach_residue_amplitudes.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CVFT-F1" -> "cert:vp_feshbach_residue_amplitudes.py" [label="cert"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-CVFT-F1" -> "domain:frontier" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
