@@ -1063,3 +1063,55 @@ row or §05.6 obligation, with a "closed since the docs" section so the forced i
 `check_book_cert_references`, `check_book_publication`, `check_book_assembly`, `run_registered_certs`
 (162 certs, 0 MISSING/FAIL), `check_cert_can_fail` (0 unallowed), aggregates + graph idempotent,
 `d0_score` (3370, 0 demotions, hygiene 100) — all PASS. No claim promoted past its honest level.
+
+### Iteration 14 — standard-language read-through + Rosetta update + de-duplication
+
+The owner relayed a correct external critique: the internal vocabulary makes the theory *look
+harder than it is* and collides with established terms — flagship example, our "M1 reduction /
+forcing" is just standard **reductio ad absurdum** against the admissibility axiom **M1**, dressed
+as a novel technique. Three-agent audit confirmed: the proof *technique* is standard; only the axiom
+M1 is D0-specific; the corpus already imports established theorems via BRIDGE owner-edges. The fix
+was to complete the existing standard-language infrastructure (not rebuild it), fix the genuinely
+harmful collision, and de-duplicate. **No claim status changed; `d0_score` strength held at 3370
+throughout** (a language + de-dup pass must not move the score).
+
+- **WS1+WS2 — Rosetta completion + core reframe** (commit `b42dcec`). The §00.1 protocol and the
+  Rosetta already existed but were missing the *proof/status* vocabulary the critique targets. Added
+  to `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md/.csv` a top **Collision-warnings**
+  block + 14 proof/status rows; mirrored the key entries into BOOK_00 §00.14 and pointed §00.1 at
+  them. In BOOK_00 §00.8 added a "Standard-language note": DEF-0.2.2 is **textbook reductio ad
+  absurdum**; the only D0-specific ingredient is **M1**; "forcing" = "reductio against M1", **not**
+  Cohen forcing. Genuinely-D0 terms (M1, δ₀, F_N, the scene) kept and defined against their nearest
+  standard concept — not renamed away. Per owner decision: define-once, **no** mass token-rename of
+  the ~560 "forcing"/676 "THE" occurrences.
+- **WS3 — rename the status word `LEM` → `MECH-LIMIT`** (commit `994ad83`). The status qualifier
+  "LEM" ("still LEM, not THE" = mechanism established but a limit/external step remains) collided
+  with the Law of Excluded Middle. A **discriminating** rename split it from the standard
+  `DEF/LEM/THE`=Lemma usage and the `[LEM]` statement-label / `LEM N.N` references (those KEPT). A
+  conservative regex renamed exactly **36 status-sense tokens** across 8 book subsections + CSV
+  notes (0 status-sense `LEM` remaining; all Lemma-sense preserved); `MECH-LIMIT` defined in §05.6
+  (a prose qualifier, **not** a `release_status` enum value).
+- **WS4 — de-duplicate by citation** (commit `32432c4`, net −370 lines). Consolidated verbatim-
+  repeated derivations to their canonical owner + a cross-ref, keeping every sector delta and
+  unique forcing: Hurwitz-rigid phase generator (§02.32/§06.30/§07.25 → §01.21); phase-unfolding
+  master chain (§06.29/§07.23 → §01.19, preserving §07.23's unique totient-M1 and 2π-convergent
+  forcings); forced return windows (§02.33, a verbatim subset → pure cross-ref to §01.22). The two
+  inherited-claims tables (§06.17/§07.16) got a banner naming the registry as the single source of
+  truth (sector views, not a third hand-maintained copy). Deferred as low-value: the diffuse
+  M1-restatement cross-refs (the audit rated them pedagogically acceptable, not duplication).
+
+### Iteration 14 metrics
+| metric | Iter13 end | Iter14 now | delta |
+|---|---|---|---|
+| claims | 258 | 258 | — (language/de-dup pass) |
+| strength | 3370 | 3370 | — (no status drift, by design) |
+| integrity demotions | 0 | 0 | — |
+| collision terms documented | 0 | 3 (forcing↔Cohen, LEM↔excluded-middle, THE↔article) | +3 |
+| status-sense `LEM` in corpus | 36 | 0 | −36 (→ `MECH-LIMIT`) |
+| duplicated derivations (Hurwitz/phase-unfolding/return-windows) | 4+2+1 copies | canonical + cross-refs | −370 lines |
+
+Guards: `check_book_assembly` / `check_book_publication` / `check_book_cert_references` /
+`validate_csv` / `check_firewall` all PASS; `d0_score` strength **unchanged at 3370**, integrity
+demotions 0, hygiene 100. The standard-language reframe + Rosetta is the durable fix for the
+"looks harder than it is" gap; the [LEM] collision is removed; the books carry less repeated
+derivation with no lost content.
