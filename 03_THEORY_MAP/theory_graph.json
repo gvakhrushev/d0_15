@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 260,
+    "claims": 261,
     "release_status": {
       "CORE-FORMALIZED": 116,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 14,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 76,
+      "CERT-CLOSED": 77,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 138,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 14,
-      "PYTHON_CERTIFIED": 91,
+      "PYTHON_CERTIFIED": 92,
       "DEPRECATED": 2,
       "OPEN": 15
     },
@@ -29,12 +29,12 @@
       "core": 117,
       "bridge": 20,
       "no-go": 16,
-      "certificate": 91,
+      "certificate": 92,
       "deprecated": 3,
       "frontier": 13
     },
     "domain": {
-      "formal_core": 158,
+      "formal_core": 159,
       "rg": 5,
       "gauge_bridge": 18,
       "smooth_geometry": 12,
@@ -8484,6 +8484,37 @@
       "exists": true
     },
     {
+      "id": "D0-RANK3-METRIC-TRANSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-RANK3-METRIC-TRANSPORT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.51.3",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_rank3_metric_transport.py",
+      "python_cert": [
+        "vp_rank3_metric_transport.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter17 ТЗ Phase C, verify-then-promote] The rank-3 SPATIAL metric is the equitable-quotient transport quadratic form of K(9,11,13), B=[[0,11,13],[9,0,13],[9,11,0]], charpoly lambda^3-359 lambda-2574 (359=|E| coupling); eigenvalues ~ {-12.08,-9.76,+21.84} = non-degenerate (1+,2-) form => light cone = null set. FALSIFIABLE ANISOTROPY: zones 9!=11!=13 split the two negative eigenvalues (-12.08!=-9.76) => spatial metric anisotropic at carrier level; isotropic only in equal-zone limit (n,n,n) spectrum {2n,-n,-n}. Cert vp_rank3_metric_transport.py (can-FAIL; controls: equal-zones isotropic, wrong zones change the form). HONEST: realizes the spatial quadratic FORM + null cone + anisotropy falsifier; does NOT fix the cone-speed/dimensionful unit (that is the c=1/Connes question, separate); distinct object from the (3,1) Pisot-counting signature (D0-RANK3-CAUSAL-CONE-FORCING-001) -- NOT conflated. Anisotropy is a Planck-level PASSPORT-TARGET falsifier.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_rank3_metric_transport.py",
+      "kind": "python_cert",
+      "label": "vp_rank3_metric_transport.py",
+      "path": "05_CERTS/vp_rank3_metric_transport.py",
+      "exists": true
+    },
+    {
       "id": "D0-CARRIER-NOT-ICOSAHEDRAL-001",
       "kind": "claim",
       "claim_id": "D0-CARRIER-NOT-ICOSAHEDRAL-001",
@@ -12226,6 +12257,21 @@
     {
       "source": "D0-RANK3-CAUSAL-CONE-FORCING-001",
       "target": "cert:vp_rank3_causal_cone_forcing.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RANK3-METRIC-TRANSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RANK3-METRIC-TRANSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RANK3-METRIC-TRANSPORT-001",
+      "target": "cert:vp_rank3_metric_transport.py",
       "kind": "certified_by"
     },
     {

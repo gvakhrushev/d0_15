@@ -256,6 +256,7 @@ digraph D0Theory {
   "D0-QUASICRYSTAL-CARRIER-FORCING-001" [label="D0-QUASICRYSTAL-CARRIER-FORCING-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-QUASICRYSTAL-PROJECTION-001" [label="D0-QUASICRYSTAL-PROJECTION-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-RANK3-CAUSAL-CONE-FORCING-001" [label="D0-RANK3-CAUSAL-CONE-FORCING-001\\nCORE-FORMALIZED\\nsmooth_geometry", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-RANK3-METRIC-TRANSPORT-001" [label="D0-RANK3-METRIC-TRANSPORT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CARRIER-NOT-ICOSAHEDRAL-001" [label="D0-CARRIER-NOT-ICOSAHEDRAL-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-DETECTION-QUADRATIC-001" [label="D0-DETECTION-QUADRATIC-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-UNITY-SPLIT-SPACETIME-001" [label="D0-UNITY-SPLIT-SPACETIME-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -1679,6 +1680,12 @@ digraph D0Theory {
   "D0-RANK3-CAUSAL-CONE-FORCING-001" -> "cert:vp_rank3_causal_cone_forcing.py" [label="cert"];
   "domain:smooth_geometry" [label="smooth_geometry", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-RANK3-CAUSAL-CONE-FORCING-001" -> "domain:smooth_geometry" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-RANK3-METRIC-TRANSPORT-001" -> "module:" [label="module"];
+  "cert:vp_rank3_metric_transport.py" [label="vp_rank3_metric_transport.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-RANK3-METRIC-TRANSPORT-001" -> "cert:vp_rank3_metric_transport.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-RANK3-METRIC-TRANSPORT-001" -> "domain:formal_core" [label="domain"];
   "module:D0.Claims.CarrierNotIcosahedral" [label="D0.Claims.CarrierNotIcosahedral", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-CARRIER-NOT-ICOSAHEDRAL-001" -> "module:D0.Claims.CarrierNotIcosahedral" [label="module"];
   "cert:vp_carrier_not_icosahedral.py" [label="vp_carrier_not_icosahedral.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
