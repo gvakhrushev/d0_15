@@ -1246,3 +1246,74 @@ honest gates, no fabricated closures.
 
 All guards PASS (169 certs, 0 MISSING/FAIL); no claim promoted past its honest level (CVFT-F1 stays
 PROOF-TARGET; mass spectrum stays out of core; W = physinput).
+
+
+---
+
+## Iteration 18 — ТЗ points 1–4 (mainstream language + 4 closures + framing) + Lean integrity sweep
+
+Owner ТЗ: (1) mainstream definitions/dictionary; (2) deformation-no-go framing; (3) metrological
+gauge axiom; (4) four constructive closures of open joints — plus an authorized full Lean
+integrity sweep (hybrid: real proof where feasible, honest repoint/downgrade otherwise). Decisions:
+terminology = at-definitions + per-book callout (no proliferated tables); closures = verify-then-
+promote (honest level only); order = by whole book.
+
+Point 4 — four closures (verify-then-promote):
+- 4.2+4.3 `36c68d9` — I_f categorical↔toral isomorphism CONSTRUCTED: the Fibonacci fusion matrix
+  N_τ=[[0,1],[1,1]] is the golden-mean SFT (Perron φ, h_top=log φ); toral T Anosov, same entropy;
+  one mechanism (log Perron of a golden-growth integer matrix) + Adler finite-equivalence. New cert
+  vp_fibonacci_if_bratteli.py. D0-FIBONACCI-IF-FORCING-001 MECH-LIMIT → THE for value+mechanism;
+  full topological conjugacy (Williams) = named external owner D0-ADLER-WEISS-PARTITION-OWNER-001
+  (ASSUMP-ADLER-WEISS, Lean D0.Bridge.AdlerWeissBridge). §01.21.4 rewritten; §05.6/§05.8.S synced.
+- 4.4 `f089830` — finite→smooth continuum-limit owner-edge D0-RIEFFEL-GHP-CONTINUUM-OWNER-001
+  (ASSUMP-RIEFFEL-GHP, Lean D0.Bridge.RieffelGHPBridge): Rieffel compact quantum metric spaces +
+  GHP convergence own the convergence (Connes reconstruction owns the limit object — complementary).
+  Honest residual: GHP-Cauchy of the refinement sequence is not finite. BOOK_07 §07.51.3 woven;
+  its two [SHADOW] meta-tags converted to strict statements.
+- 4.1 `0373148` — Δ_α 2¹¹ SHARPENED, not closed (the corpus already rejected the bare 2¹¹=2^V₁₁
+  list-match). New cert vp_cvft_clifford_fock_capacity.py names the exterior/Clifford-Fock candidate
+  (2¹¹=dim Cl(ℝ¹¹)=dim Λ*ℝ¹¹=2^|V₁₁|, distinct from the irreducible Spin(11) spinor 2⁵=32 and from
+  the naive 2-edge pairing) + Dixmier-trace residue owner D0-DIXMIER-RESIDUE-OWNER-001
+  (ASSUMP-DIXMIER-TRACE, Lean D0.Bridge.DixmierTraceBridge). CVFT-F1 STAYS PROOF-TARGET.
+
+Points 2–3 — framing as strength:
+- Point 3 `b327292` — BOOK_03 §03.16.B Metrological Gauge Axiom: Buckingham-Π ⇒ a dimensional law
+  needs ≥1 dimensional standard; D0 carries ZERO dimensionless free params + ONE anchor Λ_act=38m_ec²
+  (vs SM ~26); the anchor is a metrological gauge (platinum-iridium analogue), not a failed derivation.
+- Point 2 `02c2cb4` — BOOK_04 §04.5.5 deformation no-go on m_s/m_d=20: 20=φ_E(44)=|(ℤ/44)*| is a
+  group cardinality (integer by construction); a shift leaves the group ⇒ ⊥M1. Scoped to the THE
+  integer, not the GST-bridge experimental match. (m_μ/m_e already had §04.8.L.1.B.)
+
+Point 1 — mainstream language:
+- WS-L `c4d8b3a` — [Standard Physics Isomorphism] callout in all 10 book openers, mapping each
+  book's coined terms to mainstream (archive→integrated-out environment; forgetting→Wilsonian
+  coarse-graining/CPTP; archive pressure→trace anomaly; terminal readout→projective/POVM; phason→
+  Goldstone; tick/toral→Floquet/modular flow; carrier→representation space; readout→POVM outcome).
+  Genuinely-D0 terms (scene/K(9,11,13), M1, δ₀, φ, forcing) explicitly KEPT; single Rosetta pointer
+  (no duplicated tables).
+
+Lean integrity sweep (audit by 3 read-only workflows):
+- Found 19 vacuous `:= by trivial` theorems; 3 claims registered LEAN_PROVED/CORE-FORMALIZED on
+  `: True` stubs; d0_score blind to the pattern (only sorry|admit|axiom).
+- `6824162` — Higgs scalar projector (the biggest over-claim) cured by REAL Lean: 12 `: True` stubs
+  → 7 load-bearing theorems over concrete 2×2 rational matrices (commutant=scalar, idempotent=I₂,
+  rank-1 breaks gauge, rank-2 exists/minimal/unique). lake build D0.All GREEN.
+- `27d3cec` — 8 claims repointed off redundant vacuous summary tokens (proof-of-record now cites
+  real sibling theorems only; ABSTRACT-LIERING repointed to the real matrix-rep theorems). New
+  guard: check_no_tautology_proofs.py detects `: True := by trivial` (and True-Prop trivial proofs)
+  with a 12-stub GRANDFATHER ratchet (set may only shrink; new vacuous-True stubs now FAIL CI).
+
+| metric | Iter17 | Iter18 | delta |
+|---|---|---|---|
+| claims | 263 | 266 | +3 owner-edges (Adler-Weiss, Rieffel-GHP, Dixmier) |
+| strength | 3409 | 3449 | +40 |
+| integrity demotions | 0 | 0 | held |
+| vacuous-True over-claims | 3 (undetected) | 0 | Higgs proved real; rest repointed; guarded |
+
+All guards PASS (validate_csv / firewall / check_cert_can_fail / check_no_tautology / book
+publication+assembly+cert-refs / aggregates idempotent / d0_score). lake build D0.All GREEN
+(3272 jobs). No claim promoted past its honest level (CVFT-F1 stays PROOF-TARGET; full topological
+conjugacy and GHP-Cauchy are named external residuals; 2¹¹ stays a named candidate, not forced).
+Recurring pattern (×3 this iteration: Adler-Weiss, Rieffel-GHP, Dixmier) — EXTERNAL-THEOREM-OWNER
+edge (Lean bridge structure + conditional theorem → ASSUMP-* ledger row → owner claim → regen) —
+flagged as a skill candidate (owner-edge).
