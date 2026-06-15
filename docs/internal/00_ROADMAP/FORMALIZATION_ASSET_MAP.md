@@ -43,8 +43,12 @@ are in fact **formalizable from the pin today**.
   pin — bundle a trace-preserving CPTP channel type to back "forgetting = CPTP decoherence".
 - **Quantum measurement / Born / Gleason** → `VonNeumannAlgebra/Basic`, `CStarAlgebra/Projection` in
   pin — write a Gleason-on-PVM module for `D0-GLEASON-LOOPHOLE-CLOSURE`.
-- **Gauge theory / Lie reps / Killing** → `Algebra/Lie/*` (65 modules incl. `Killing.lean`) in pin —
-  **directly closes `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE`** (the audit's "should-be-internal" flag).
+- **Gauge theory / Lie reps / Killing** → `Algebra/Lie/*` in pin has the Killing form + non-degeneracy
+  /`IsKilling`, but **NOT Cartan's compactness criterion** (compact ⟺ Killing neg-semidef) — verified
+  Iter-18 by grep. So `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE` is **NOT** a Mathlib import (the agent
+  over-claimed); it is a **legitimate external owner** (Cartan). D0's *operative* finite Yang-Mills
+  positivity is already internal (`skew_square_trace_nonpositive`), so the assumption is a generality
+  bridge, not a load-bearing gap. Lie/Killing IS still in-pin for representation/structure facts.
 - **Einstein–Hilbert / GR** → `Geometry/Manifold/Riemannian.*` in pin — conditional bridge module for
   the EH interface (`D0-GEOM-HEAT-TRACE-A2-DECOMP-001`).
 - **Algebraic topology (genus, homology, π₁(T²)=ℤ²)** → `AlgebraicTopology/*` in pin — §03.23.
@@ -79,8 +83,10 @@ limit. D0 already records all five as `BRIDGE-ASSUMPTIONS-EXPLICIT` owner-edges 
 ---
 
 ## Prioritized reuse plan (highest value × READY_IN_PIN first)
-1. **Lie/Killing → close `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE` internally** (`Algebra/Lie/Killing`).
-   Removes a questionable ledger assumption with a real Mathlib proof. Clean, high-value.
+1. ~~Lie/Killing → close `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE` internally~~ **DONE (Iter-18, honest
+   reclassification, not a Mathlib import):** verify-then-promote found Cartan's compactness criterion
+   is NOT in the pin, so the assumption is a *legitimate external owner* (Cartan), and D0's operative
+   Yang-Mills positivity is already internal via `skew_square_trace_nonpositive`. Ledger row corrected.
 2. **Quadratic Galois → upgrade `D0-Z2-SPINOR-COVER-001` `galois_z2_order_two`** from `decide`-stub to
    real `Gal(ℚ(√5)/ℚ)≅ℤ₂` on `x²−x−1`. Foundational φ↔ψ pair.
 3. **Spectral graph Laplacian → promote the §04.2 active eigenvalues** from "numerical, do not cite" to

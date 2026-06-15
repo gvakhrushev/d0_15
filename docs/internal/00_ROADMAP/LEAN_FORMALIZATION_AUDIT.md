@@ -97,7 +97,7 @@ RIEFFEL-GHP, ADLER-WEISS`.
 assumption:
 | ASSUMP | issue | action |
 |---|---|---|
-| `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE` | Killing-form negative-semidefiniteness of a compact Lie algebra is a standard provable fact | **formalize internally** (Mathlib has Killing-form machinery) or cite a precise source |
+| `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE` | **[Iter-18 corrected]** Mathlib has the Killing form + non-degeneracy but **NOT** Cartan's compactness criterion (compact ⟺ Killing neg-semidef) — so it is a *legitimate external owner* (Cartan), not internally-dischargeable. D0's operative Yang-Mills positivity is already internal (`skew_square_trace_nonpositive`). | reclassified LEGITIMATE; ledger cites Cartan + the internal operative proof |
 | `ASSUMP-HST-EXTERNAL` | the external theorem itself is **unclear** ("HST" — hyperbolic systems? Holley–Stroock–Tibrewala?) | **identify or rename** the owner precisely, else it is a hidden assumption, not an owner-edge |
 | `ASSUMP-RG-SMOOTH-INTERP` | continuous-RG smooth interpolation | likely genuinely external (continuum limit) — keep, but state the residual sharply |
 | `ASSUMP-LORENTZ-MACRO` | finite-Clifford → macro Lorentz integration | continuum/macro limit — keep as external, align with the Rieffel/GHP + Connes continuum owners |
