@@ -2242,7 +2242,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `formal_core`
 - book: `BOOK_04/08`
 - module: `D0.Matter.GeneratedMatterSource`
-- theorem: `Matter.generated_matter_source_neutral_if_anomaly_free;Matter.NO_GO_MATTER_SOURCE_NEUTRALITY`
+- theorem: `Matter.generated_matter_source_neutral_if_anomaly_free`
 - cert: `none`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
@@ -2346,7 +2346,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `formal_core`
 - book: `BOOK_08`
 - module: `D0.Geometry.EdgeStiffnessOrigin`
-- theorem: `Geometry.capacityCore_symmetric;Geometry.capacityCore_psd;Geometry.symmOffDiag_projection_trace_transparent;Geometry.edge_stiffness_preserves_symmOffDiag;Geometry.edge_stiffness_energy_nonnegative;Bridge.edge_stiffness_origin_closed`
+- theorem: `Geometry.capacityCore_symmetric;Geometry.capacityCore_psd;Geometry.symmOffDiag_projection_trace_transparent;Geometry.edge_stiffness_preserves_symmOffDiag;Geometry.edge_stiffness_energy_nonnegative`
 - cert: `none`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
@@ -2359,7 +2359,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `formal_core`
 - book: `BOOK_08`
 - module: `D0.Matter.VectorOperatorOrigin`
-- theorem: `Matter.vector_laplacian_preserves_skew;Matter.vector_laplacian_energy_nonnegative;Matter.vector_operator_origin_applies_to_field_equation;Bridge.vector_operator_origin_closed`
+- theorem: `Matter.vector_laplacian_preserves_skew;Matter.vector_laplacian_energy_nonnegative;Matter.vector_operator_origin_applies_to_field_equation`
 - cert: `none`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
@@ -2989,7 +2989,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `gauge_bridge`
 - book: `BOOK_08`
 - module: `D0.Gauge.NonAbelianDiscreteCurvature`
-- theorem: `Gauge.spatialCommutator_preserves_skew;Gauge.spatialWedge_preserves_skew;Gauge.nonabelian_curvature_preserves_skew;Gauge.nonabelian_discrete_curvature_boundary`
+- theorem: `Gauge.spatialCommutator_preserves_skew;Gauge.spatialWedge_preserves_skew;Gauge.nonabelian_curvature_preserves_skew`
 - cert: `none`
 - assumptions: `none`
 - scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
@@ -3054,7 +3054,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `gauge_bridge`
 - book: `BOOK_08`
 - module: `D0.Matter.GaugeCurvatureOrigin`
-- theorem: `Algebra.commutator_self_zero;Algebra.commutator_skew_of_skew;Algebra.minus_trace_square_nonnegative;Matter.gauge_curvature_skew;Matter.abelian_curvature_annihilates_self_interaction;Matter.gauge_action_positive_from_origin;Bridge.gauge_curvature_origin_closed`
+- theorem: `Algebra.commutator_self_zero;Algebra.commutator_skew_of_skew;Algebra.minus_trace_square_nonnegative;Matter.gauge_curvature_skew;Matter.abelian_curvature_annihilates_self_interaction;Matter.gauge_action_positive_from_origin`
 - cert: `none`
 - assumptions: `none`
 - scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
@@ -3080,7 +3080,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `gauge_bridge`
 - book: `BOOK_08`
 - module: `D0.Gauge.BianchiResidual`
-- theorem: `Gauge.residual_expands_by_definitions;Gauge.exact_residual_graph_anomaly_boundary`
+- theorem: `Gauge.residual_expands_by_definitions`
 - cert: `none`
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
@@ -3093,7 +3093,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `gauge_bridge`
 - book: `BOOK_05/06`
 - module: `D0.Gauge.MatrixRepGaugeTransform`
-- theorem: `Gauge.abstract_lieRing_finite_transform_requires_associative_representation`
+- theorem: `Gauge.gaugeTransformFinite_preserves_skew_of_orthogonal;Gauge.matrixRepCurvature_preserves_skew;Gauge.matrix_rep_yang_mills_action_nonnegative_of_skew`
 - cert: `none`
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
@@ -3106,7 +3106,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `gauge_bridge`
 - book: `BOOK_08`
 - module: `D0.Gauge.FlatTensorNoGo`
-- theorem: `Gauge.flat_tensor_of_two_skew_is_symmetric;Gauge.naive_flat_tensor_nonabelian_boundary`
+- theorem: `Gauge.flat_tensor_of_two_skew_is_symmetric`
 - cert: `none`
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
