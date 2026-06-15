@@ -3759,7 +3759,7 @@
         "vp_higgs_scalar_projector_constructive.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "Frozen rational SU2 doublet compatibility forces the unique nonzero idempotent scalar projector to be identity trace-rank two without external scalar constants.",
+      "notes": "Frozen rational SU2 doublet compatibility forces the unique nonzero idempotent scalar projector to be identity trace-rank two without external scalar constants. [Iter18 integrity fix] The 7 Lean theorems were `: True := by trivial` token stubs (registered LEAN_PROVED but vacuous); they are now LOAD-BEARING proofs over concrete 2x2 rational matrices: commutant-of-frozen-SU(2)=scalar",
       "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HiggsScalarProjectorConstructive.lean",
       "module_exists": true,
       "certs_exist": true
