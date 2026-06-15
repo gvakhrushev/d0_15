@@ -365,6 +365,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "jones_index_phi", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CONNES-RECONSTRUCTION-OWNER-001", moduleName := "D0.Bridge.ConnesReconstructionBridge",
       theoremName := "connes_reconstruction_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-DIXMIER-RESIDUE-OWNER-001", moduleName := "D0.Bridge.DixmierTraceBridge",
+      theoremName := "dixmier_residue_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001", moduleName := "D0.Bridge.RieffelGHPBridge",
       theoremName := "rieffel_ghp_continuum_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-TIME-MODULAR-FLOW-OWNER-001", moduleName := "D0.Bridge.TomitaTakesakiBridge",

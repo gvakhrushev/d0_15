@@ -238,6 +238,7 @@ digraph D0Theory {
   "D0-ICOSIAN-E8-GRAM-001" [label="D0-ICOSIAN-E8-GRAM-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-JONES-INDEX-PHI-001" [label="D0-JONES-INDEX-PHI-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CONNES-RECONSTRUCTION-OWNER-001" [label="D0-CONNES-RECONSTRUCTION-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
+  "D0-DIXMIER-RESIDUE-OWNER-001" [label="D0-DIXMIER-RESIDUE-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001" [label="D0-RIEFFEL-GHP-CONTINUUM-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nsmooth_geometry", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-TIME-MODULAR-FLOW-OWNER-001" [label="D0-TIME-MODULAR-FLOW-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-DIM8-NETWORK-001" [label="D0-DIM8-NETWORK-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -1564,6 +1565,14 @@ digraph D0Theory {
   "D0-CONNES-RECONSTRUCTION-OWNER-001" -> "assumption:ASSUMP-CONNES-RECONSTRUCTION" [label="assumption"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-CONNES-RECONSTRUCTION-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Bridge.DixmierTraceBridge" [label="D0.Bridge.DixmierTraceBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-DIXMIER-RESIDUE-OWNER-001" -> "module:D0.Bridge.DixmierTraceBridge" [label="module"];
+  "cert:vp_cvft_clifford_fock_capacity.py" [label="vp_cvft_clifford_fock_capacity.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-DIXMIER-RESIDUE-OWNER-001" -> "cert:vp_cvft_clifford_fock_capacity.py" [label="cert"];
+  "assumption:ASSUMP-DIXMIER-TRACE" [label="ASSUMP-DIXMIER-TRACE", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-DIXMIER-RESIDUE-OWNER-001" -> "assumption:ASSUMP-DIXMIER-TRACE" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-DIXMIER-RESIDUE-OWNER-001" -> "domain:formal_core" [label="domain"];
   "module:D0.Bridge.RieffelGHPBridge" [label="D0.Bridge.RieffelGHPBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001" -> "module:D0.Bridge.RieffelGHPBridge" [label="module"];
   "cert:vp_connes_distance_geodesic.py" [label="vp_connes_distance_geodesic.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];

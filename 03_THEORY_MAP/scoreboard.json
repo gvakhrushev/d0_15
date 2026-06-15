@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3438,
-    "track_fair_max": 4712,
+    "realized": 3449,
+    "track_fair_max": 4723,
     "pct_strength": 73.0,
     "core_realized": 2909,
     "core_potential": 4160,
     "core_headroom": 1251,
-    "n_claims": 265,
-    "n_active": 263,
+    "n_claims": 266,
+    "n_active": 264,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 159,
-      "realized": 2289,
-      "max": 3025,
+      "n": 160,
+      "realized": 2300,
+      "max": 3036,
       "core_headroom": 731
     },
     "rg": {
@@ -118,9 +118,9 @@
       "core_headroom": 55
     },
     "BOOK_02": {
-      "n": 8,
-      "realized": 116,
-      "max": 142,
+      "n": 9,
+      "realized": 127,
+      "max": 153,
       "core_headroom": 26
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
@@ -5283,6 +5283,20 @@
       "integrity_flag": null
     },
     {
+      "claim_id": "D0-DIXMIER-RESIDUE-OWNER-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
       "claim_id": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
       "track": "BRIDGE",
       "level": 4,
@@ -5678,7 +5692,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.2,
+    "penalty_total": 0.3,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5723,8 +5737,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 2,
-        "points": -0.2,
+        "count": 3,
+        "points": -0.3,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -5773,8 +5787,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 2,
-        "points": -0.2,
+        "count": 3,
+        "points": -0.3,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
