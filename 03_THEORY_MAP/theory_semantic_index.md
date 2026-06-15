@@ -5,7 +5,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 14
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 15
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 79
 - `CORE-FORMALIZED`: 116
@@ -19,7 +19,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 20
+- `bridge`: 21
 - `certificate`: 94
 - `core`: 117
 - `deprecated`: 3
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 23
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 159
+- `formal_core`: 160
 - `frontier`: 13
 - `gauge_bridge`: 18
 - `interpretation_spine`: 1
@@ -649,6 +649,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain: formal_core
 
+### D0-ADLER-WEISS-PARTITION-OWNER-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Bridge.AdlerWeissBridge`
+- theorem: `adler_weiss_partition_conditional`
+- cert: `vp_fibonacci_if_bratteli.py`
+- assumptions: `ASSUMP-ADLER-WEISS`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter18 owner-edge] Closes the D0-FIBONACCI-IF-FORCING-001 named gap at the entropy/finite-equivalence level. D0 proves internally (cert vp_fibonacci_if_bratteli.py, exact): the Fibonacci fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi), so the categorical Bratteli path-space has topological entropy log(Perron)=log phi; the toral T=[[0,1],[1,-1]] is Anosov (det -1, |lambda_max|=phi), entropy log phi. So I_f=log phi is forced for the value and its mechanism (topological entropy = log Perron of a golden-growth integer matrix); the two systems have equal entropy. EXTERNAL OWNER (named, not re-proved): Adler-Weiss (1967) Markov partition => T conjugate to an SFT with Perron phi; Adler/Williams SFT classification => equal-entropy irreducible SFTs are FINITELY EQUIVALENT, full TOPOLOGICAL CONJUGACY (Williams shift-equivalence) is the residual not implied by equal entropy. Lean D0.Bridge.AdlerWeissBridge (adler_weiss_partition_conditional) conditional on ASSUMP-ADLER-WEISS. HONEST: isomorphism exhibited at entropy/finite-equivalence level; full conjugacy stays the cited external owner. cite Adler-Weiss PNAS 57 (1967) 1573; Williams Ann. Math. 98 (1973) 120. BRIDGE track, honesty not points.
+
 ### D0-COMPLEX-QM-FORCING-001
 
 - type: `bridge`
@@ -985,7 +998,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_fibonacci_if_bridge.py`
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter7 cross-bridge, self-calibrated MECH-LIMIT NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Cert vp_fibonacci_if_bridge.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. HONEST: STATUS MECH-LIMIT not THE -- both give log phi but the categorical<->toral ISOMORPHISM (Fib state-growth ~= symbolic dynamics of T) is NOT constructed; that is the named gap (deep-research downgraded FORCING->MECH-LIMIT by the mechanism filter). Links the I_f=log phi GW horizontal-hum (Book 09).
+- notes: [Iter7 cross-bridge, self-calibrated MECH-LIMIT NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Certs vp_fibonacci_if_bridge.py;vp_fibonacci_if_bratteli.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. [Iter18] NAMED GAP CLOSED at the entropy/finite-equivalence level: the categorical<->toral ISOMORPHISM is now CONSTRUCTED -- the fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi, topological entropy log(Perron)=log phi by Parry) and the toral T has the SAME entropy log phi via the SAME mechanism (log Perron of a golden-growth integer matrix); equal-entropy irreducible SFTs are finitely equivalent (cert vp_fibonacci_if_bratteli.py, exact Z + Q(phi)). So I_f=log phi is THE for the VALUE and its MECHANISM (the prior MECH-LIMIT is lifted). The strongest equivalence -- a full topological CONJUGACY (Williams shift-equivalence) -- is NOT implied by equal entropy and stays the cited EXTERNAL OWNER (D0-ADLER-WEISS-PARTITION-OWNER-001 / ASSUMP-ADLER-WEISS; Adler-Weiss 1967). Links the I_f=log phi GW horizontal-hum (Book 09).
 
 ### D0-FOUND-004
 

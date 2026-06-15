@@ -371,6 +371,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "dim8_network", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FIBONACCI-IF-FORCING-001", moduleName := "D0.Claims.FibonacciIfBridge",
       theoremName := "fibonacci_if_bridge", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ADLER-WEISS-PARTITION-OWNER-001", moduleName := "D0.Bridge.AdlerWeissBridge",
+      theoremName := "adler_weiss_partition_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-COMPLEX-QM-FORCING-001", moduleName := "D0.Bridge.ComplexQMBridge",
       theoremName := "complex_qm_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-M1-INFO-RECONSTRUCTION-001", moduleName := "D0.Bridge.M1InfoReconstructionBridge",

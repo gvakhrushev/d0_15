@@ -241,6 +241,7 @@ digraph D0Theory {
   "D0-TIME-MODULAR-FLOW-OWNER-001" [label="D0-TIME-MODULAR-FLOW-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-DIM8-NETWORK-001" [label="D0-DIM8-NETWORK-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-FIBONACCI-IF-FORCING-001" [label="D0-FIBONACCI-IF-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-ADLER-WEISS-PARTITION-OWNER-001" [label="D0-ADLER-WEISS-PARTITION-OWNER-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-PACKING-LIMIT-001" [label="D0-PACKING-LIMIT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-COMPLEX-QM-FORCING-001" [label="D0-COMPLEX-QM-FORCING-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-M1-INFO-RECONSTRUCTION-001" [label="D0-M1-INFO-RECONSTRUCTION-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
@@ -1580,6 +1581,14 @@ digraph D0Theory {
   "D0-FIBONACCI-IF-FORCING-001" -> "cert:vp_fibonacci_if_bridge.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-FIBONACCI-IF-FORCING-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Bridge.AdlerWeissBridge" [label="D0.Bridge.AdlerWeissBridge", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-ADLER-WEISS-PARTITION-OWNER-001" -> "module:D0.Bridge.AdlerWeissBridge" [label="module"];
+  "cert:vp_fibonacci_if_bratteli.py" [label="vp_fibonacci_if_bratteli.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-ADLER-WEISS-PARTITION-OWNER-001" -> "cert:vp_fibonacci_if_bratteli.py" [label="cert"];
+  "assumption:ASSUMP-ADLER-WEISS" [label="ASSUMP-ADLER-WEISS", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-ADLER-WEISS-PARTITION-OWNER-001" -> "assumption:ASSUMP-ADLER-WEISS" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-ADLER-WEISS-PARTITION-OWNER-001" -> "domain:formal_core" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-PACKING-LIMIT-001" -> "module:" [label="module"];
   "cert:vp_packing_limit_probe.py" [label="vp_packing_limit_probe.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];

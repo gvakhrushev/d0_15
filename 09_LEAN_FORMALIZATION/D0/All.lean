@@ -18,6 +18,7 @@ import D0.Algebra.LieCarrierFinite
 import D0.Algebra.LorentzNoGo
 import D0.Algebra.RoleSignature
 import D0.Born
+import D0.Bridge.AdlerWeissBridge
 import D0.Bridge.Assumptions.ExternalHST
 import D0.Bridge.Assumptions.Frobenius
 import D0.Bridge.Assumptions.HeatTraceWeyl

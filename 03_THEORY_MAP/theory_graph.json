@@ -4,10 +4,10 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 263,
+    "claims": 264,
     "release_status": {
       "CORE-FORMALIZED": 116,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 14,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 15,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 79,
@@ -20,21 +20,21 @@
     },
     "lean_status": {
       "LEAN_PROVED": 138,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 14,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 15,
       "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
       "core": 117,
-      "bridge": 20,
+      "bridge": 21,
       "no-go": 16,
       "certificate": 94,
       "deprecated": 3,
       "frontier": 13
     },
     "domain": {
-      "formal_core": 159,
+      "formal_core": 160,
       "rg": 5,
       "gauge_bridge": 18,
       "smooth_geometry": 13,
@@ -7904,7 +7904,7 @@
         "vp_fibonacci_if_bridge.py"
       ],
       "status": "CERT-CLOSED",
-      "notes": "[Iter7 cross-bridge, self-calibrated MECH-LIMIT NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Cert vp_fibonacci_if_bridge.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. HONEST: STATUS MECH-LIMIT not THE -- both give log phi but the categorical<->toral ISOMORPHISM (Fib state-growth ~= symbolic dynamics of T) is NOT constructed; that is the named gap (deep-research downgraded FORCING->MECH-LIMIT by the mechanism filter). Links the I_f=log phi GW horizontal-hum (Book 09).",
+      "notes": "[Iter7 cross-bridge, self-calibrated MECH-LIMIT NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Certs vp_fibonacci_if_bridge.py;vp_fibonacci_if_bratteli.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. [Iter18] NAMED GAP CLOSED at the entropy/finite-equivalence level: the categorical<->toral ISOMORPHISM is now CONSTRUCTED -- the fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi, topological entropy log(Perron)=log phi by Parry) and the toral T has the SAME entropy log phi via the SAME mechanism (log Perron of a golden-growth integer matrix); equal-entropy irreducible SFTs are finitely equivalent (cert vp_fibonacci_if_bratteli.py, exact Z + Q(phi)). So I_f=log phi is THE for the VALUE and its MECHANISM (the prior MECH-LIMIT is lifted). The strongest equivalence -- a full topological CONJUGACY (Williams shift-equivalence) -- is NOT implied by equal entropy and stays the cited EXTERNAL OWNER (D0-ADLER-WEISS-PARTITION-OWNER-001 / ASSUMP-ADLER-WEISS; Adler-Weiss 1967). Links the I_f=log phi GW horizontal-hum (Book 09).",
       "module_path": "09_LEAN_FORMALIZATION/D0/Claims/FibonacciIfBridge.lean",
       "module_exists": true,
       "certs_exist": true
@@ -7922,6 +7922,55 @@
       "label": "vp_fibonacci_if_bridge.py",
       "path": "05_CERTS/vp_fibonacci_if_bridge.py",
       "exists": true
+    },
+    {
+      "id": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_06",
+      "section": "symbolic-conjugacy owner (Adler-Weiss Markov partition + SFT finite-equivalence) for the I_f categorical<->toral map (01.21.4/06)",
+      "lean_module": "D0.Bridge.AdlerWeissBridge",
+      "lean_theorem": "adler_weiss_partition_conditional",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-ADLER-WEISS"
+      ],
+      "cert": "vp_fibonacci_if_bratteli.py",
+      "python_cert": [
+        "vp_fibonacci_if_bratteli.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter18 owner-edge] Closes the D0-FIBONACCI-IF-FORCING-001 named gap at the entropy/finite-equivalence level. D0 proves internally (cert vp_fibonacci_if_bratteli.py, exact): the Fibonacci fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi), so the categorical Bratteli path-space has topological entropy log(Perron)=log phi; the toral T=[[0,1],[1,-1]] is Anosov (det -1, |lambda_max|=phi), entropy log phi. So I_f=log phi is forced for the value and its mechanism (topological entropy = log Perron of a golden-growth integer matrix); the two systems have equal entropy. EXTERNAL OWNER (named, not re-proved): Adler-Weiss (1967) Markov partition => T conjugate to an SFT with Perron phi; Adler/Williams SFT classification => equal-entropy irreducible SFTs are FINITELY EQUIVALENT, full TOPOLOGICAL CONJUGACY (Williams shift-equivalence) is the residual not implied by equal entropy. Lean D0.Bridge.AdlerWeissBridge (adler_weiss_partition_conditional) conditional on ASSUMP-ADLER-WEISS. HONEST: isomorphism exhibited at entropy/finite-equivalence level; full conjugacy stays the cited external owner. cite Adler-Weiss PNAS 57 (1967) 1573; Williams Ann. Math. 98 (1973) 120. BRIDGE track, honesty not points.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/AdlerWeissBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.AdlerWeissBridge",
+      "kind": "lean_module",
+      "label": "D0.Bridge.AdlerWeissBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/AdlerWeissBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_fibonacci_if_bratteli.py",
+      "kind": "python_cert",
+      "label": "vp_fibonacci_if_bratteli.py",
+      "path": "05_CERTS/vp_fibonacci_if_bratteli.py",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-ADLER-WEISS",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-ADLER-WEISS",
+      "lean_name": "D0.Bridge.BridgeAssumption.AdlerWeissPartition",
+      "status": "EXPLICIT",
+      "assumption_type": "SYMBOLIC_DYNAMICS_CLASSIFICATION",
+      "external_source_or_cert": "Adler-Weiss PNAS 57 (1967) 1573; Williams Ann. Math. 98 (1973) 120; vp_fibonacci_if_bratteli.py"
     },
     {
       "id": "D0-PACKING-LIMIT-001",
@@ -12074,6 +12123,26 @@
       "source": "D0-FIBONACCI-IF-FORCING-001",
       "target": "cert:vp_fibonacci_if_bridge.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "target": "module:D0.Bridge.AdlerWeissBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "target": "cert:vp_fibonacci_if_bratteli.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "target": "assumption:ASSUMP-ADLER-WEISS",
+      "kind": "uses_assumption"
     },
     {
       "source": "D0-PACKING-LIMIT-001",

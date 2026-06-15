@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3416,
-    "track_fair_max": 4690,
-    "pct_strength": 72.8,
+    "realized": 3427,
+    "track_fair_max": 4701,
+    "pct_strength": 72.9,
     "core_realized": 2909,
     "core_potential": 4160,
     "core_headroom": 1251,
-    "n_claims": 263,
-    "n_active": 261,
+    "n_claims": 264,
+    "n_active": 262,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 158,
-      "realized": 2278,
-      "max": 3014,
+      "n": 159,
+      "realized": 2289,
+      "max": 3025,
       "core_headroom": 731
     },
     "rg": {
@@ -316,9 +316,9 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 8,
-      "realized": 91,
-      "max": 151,
+      "n": 9,
+      "realized": 102,
+      "max": 162,
       "core_headroom": 60
     },
     "BOOK_01/06": {
@@ -5321,6 +5321,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_06",
       "leverage": 0,
       "integrity_flag": null
     },
