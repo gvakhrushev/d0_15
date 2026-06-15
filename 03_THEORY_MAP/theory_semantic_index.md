@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 14
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 77
+- `CERT-CLOSED`: 78
 - `CORE-FORMALIZED`: 116
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 20
-- `certificate`: 92
+- `certificate`: 93
 - `core`: 117
 - `deprecated`: 3
 - `frontier`: 13
@@ -37,7 +37,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
-- `smooth_geometry`: 12
+- `smooth_geometry`: 13
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -3291,7 +3291,20 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_gravastar_compactness.py`
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter11 NAMED GAP CLOSED] The rank-3=causal-cone identification that kept this MECH-LIMIT is now FORCED (D0-RANK3-CAUSAL-CONE-FORCING-001, Lean D0.Synthesis.RankCausalConeForcing): the causal partition is forced by the arrow-count (1 Pisot arrow=1 timelike, 3 reversible real-spectrum rank-modes=3 spacelike; Euclidean (4,0) excluded by indefiniteness; arrow=time FORCED §06.30a). So rank-3 IS the 3 spatial/causal directions, and C_max=rank/|Omega8|=3/8 is structurally grounded (THE for the dimensionless ratio). ONLY residual: the cone-speed/smooth metric g_munu, a unit owned by ASSUMP-CONNES-RECONSTRUCTION (a separate edge, not an assumption on the dimensionless 3/8). [Iter4 Phase1 T1.2] MECH-LIMIT with one NAMED GAP (history). Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (named gap: rank-3=causal-cone): rank-3=causal-cone postulated, not M1-forced => MECH-LIMIT, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.) [Iter4 note] Held at CERT-CLOSED (MECH-LIMIT): the 3/8 algebra is cert-exact; the rank-3=causal-cone NAMED GAP keeps it below THE and is recorded in the cert + BOOK_07 07.51.3, not as a formal ledger assumption. [Iter5] Named gap SHARPENED: the (3,1)->causal-cone half is now Lean-proved (D0.Synthesis.RankCausalCone, rank3_causal_cone); residual gap narrowed to the scene-rank-3 <-> cone-space identification. Still MECH-LIMIT, not THE.
+- notes: [Iter11 NAMED GAP CLOSED] The rank-3=causal-cone identification that kept this MECH-LIMIT is now FORCED (D0-RANK3-CAUSAL-CONE-FORCING-001, Lean D0.Synthesis.RankCausalConeForcing): the causal partition is forced by the arrow-count (1 Pisot arrow=1 timelike, 3 reversible real-spectrum rank-modes=3 spacelike; Euclidean (4,0) excluded by indefiniteness; arrow=time FORCED §06.30a). So rank-3 IS the 3 spatial/causal directions, and C_max=rank/|Omega8|=3/8 is structurally grounded (THE for the dimensionless ratio). ONLY residual: the cone-speed/smooth metric g_munu, a unit owned by ASSUMP-CONNES-RECONSTRUCTION (a separate edge, not an assumption on the dimensionless 3/8). [Iter4 Phase1 T1.2] MECH-LIMIT with one NAMED GAP (history). Cert vp_gravastar_compactness.py: from OS junction 2C=sin^2 chi2, photon threshold chi2=theta*, cycle cos theta*=4C-1 -> -2C(8C-3)=0 -> C_max=3/8 (exact rational, no fit); placement 1/3<3/8<4/9<1/2 (horizonless, falsifiable); structural reading 3/8=rank/|Omega8|=3/8. NAMED GAP (named gap: rank-3=causal-cone): rank-3=causal-cone postulated, not M1-forced => MECH-LIMIT, NOT THE. T1.4 attempt to close via Connes distance (BOOK_03 03.1.1): attempted, OPEN. (Supporting algebra module D0.Gravity.CompactnessLimit proves the 3/8 master-equation roots over Q and compiles, but the CLAIM stays bridge-level: the named gap means it is not fully Lean-proved.) [Iter4 note] Held at CERT-CLOSED (MECH-LIMIT): the 3/8 algebra is cert-exact; the rank-3=causal-cone NAMED GAP keeps it below THE and is recorded in the cert + BOOK_07 07.51.3, not as a formal ledger assumption. [Iter5] Named gap SHARPENED: the (3,1)->causal-cone half is now Lean-proved (D0.Synthesis.RankCausalCone, rank3_causal_cone); residual gap narrowed to the scene-rank-3 <-> cone-space identification. Still MECH-LIMIT, not THE. [Iter17 Phase D c=1 confirmed] cone-speed residual is now c=1=edge/tick STRUCTURAL (D0-CONNES-DISTANCE-GEODESIC-001): metric=geodesic internal, Connes=continuum-limit confirmation not owner. The dimensionless 3/8 was already THE; the unit is now internal too.
+
+### D0-CONNES-DISTANCE-GEODESIC-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_connes_distance_geodesic.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter17 ТЗ-2 Phase D, verify-then-promote — c=1 CONFIRMED] On the finite scene the Connes spectral distance d_C(p,q)=sup{|f(p)-f(q)| : ||[D,f]||<=1} EQUALS the geodesic (shortest-path) distance: ||[D,f]||<=1 <=> f 1-Lipschitz per edge, sup attained by f=d_geo(.,p), bounded above by telescoping. So the metric is INTERNAL (geodesic), not an external input. And c=1 is STRUCTURAL: <=1 edge/tick => signal speed 1, dimensionless, no external light-speed constant. Cert vp_connes_distance_geodesic.py (path/cycle/K(2,2,3); can-FAIL; control: edge-jump>1 inadmissible). CONSEQUENCE: the §07.51.3 cone-speed residual is c=1=edge/tick (internal), NOT an external Connes unit; ASSUMP-CONNES-RECONSTRUCTION is reclassified owner->continuum-limit CONFIRMATION. HONEST: the finite->smooth Riemannian limit itself is still the external Connes theorem, now as confirmation of the internal geodesic metric's limit, not the owner of a D0 gap.
 
 ### D0-IM-003
 
