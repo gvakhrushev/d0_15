@@ -19,3 +19,17 @@ stiffness,structural rigidity / log-sensitivity / hostile uniqueness,"d log O / 
 ambient-Hom leakage,uncontrolled enlargement of morphism class,Hom outside Obs^{D0}; non-admissible continuum map,Use as formal violation of admissibility.
 ABCD,four-role finite instrument / terminal role algebra,"A_Sigma, B_N, C_+, D_- or two-port outcomes",Do not present as merely symbolic alphabet.
 Omega8,signed four-role instrument extension,"ABCD x {+,-}",Use after ABCD instrument is defined.
+forcing / forcing-by-contradiction / (forced),proof by contradiction (reductio ad absurdum) against the admissibility axiom M1,DEF-0.2.2 schema: assume not-X => exogenous theta => perp-M1 => X,Say 'forced (reductio against M1)' on first use. NOT Cohen forcing.
+M1,admissibility axiom: no obligatory external catalogue / no hidden exogenous parameter,"M1 (BOOK_00 00.2, 00.8); kin to MDL/Kolmogorov but stronger",Genuinely D0-specific; cite 00.2 as definition; keep the name.
+perp-M1 / violates M1,contradicts the admissibility axiom (the closing contradiction of the reductio),theta exogenous => perp-M1,Use as the contradiction step of a reductio.
+exogenous parameter (DEF 0.3.1),external/hidden parameter,3-clause: (1) not derived (2) affects distinguishable outcomes (3) not protocol-inevitable,Use the 3-clause form.
+DEF / LEM / THE (taxonomy),Definition / Lemma / Theorem,standard proof-object labels,LEM here = Lemma (standard). Distinct from the status word.
+MECH-LIMIT (was status LEM),mechanism established; a limit/external-mechanism step remains (conditional result),claim below THE with a named limit/external gap,Replaces the status word 'LEM'. NOT the Law of Excluded Middle.
+THE (status / [THE n.n]),Theorem (proved by reductio against M1),proved claim,Keep; gloss on first use. Reads like the article 'the'.
+CHK (status),finite/computational check (verified; selection-owner may be open),executable certificate result,Use for cert-verified-but-not-yet-THE.
+HYP (status),hypothesis / conjecture (open),unproved statement,Honest open label.
+FORCING (status),forced-by-M1 (proved by reductio against M1),release-status note,Display as 'forced-by-M1'. NOT Cohen forcing.
+scene incidence,"incidence matrix of K(9,11,13)","A, rank A=3, nullity A=30",Use the matrix; 'scene' = complete tripartite graph.
+delta0 (detector quantum),forced D0 constant (sqrt5-2)/2 = 1/(2 phi^3),delta0 = phi^-1 - 1/2,Genuinely D0-specific; norm-distance of the two cuts of unity.
+F_N (feedback return),residual non-unitarity of the retained sector after tracing the complement,F_N = P_N U_N^dagger Q_N U_N P_N,Genuinely D0-specific operator; state the operator.
+phason,gapless quasicrystal mode / K0 gap-label degree of freedom,gap-labelling group / K0 class,Standard condensed-matter / operator-K-theory term.

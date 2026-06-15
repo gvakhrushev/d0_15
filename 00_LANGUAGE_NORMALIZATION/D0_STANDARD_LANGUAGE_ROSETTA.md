@@ -2,6 +2,18 @@
 
 This file normalizes D0 internal terminology into language already used by mathematicians and physicists. The rule is: standard object first; D0 mnemonic second.
 
+## ⚠ Collision warnings (read first)
+
+Three D0 tokens look like established terms that mean something else. They are **not** those things:
+
+| D0 token | What it means here | NOT to be confused with |
+|---|---|---|
+| **forcing** / "(forced)" | proof by contradiction (reductio ad absurdum) against the admissibility axiom **M1** | **Cohen forcing** (set theory / generic extensions) — unrelated |
+| **LEM** (as a *status* word, "still LEM, not THE") | a result whose mechanism is established but a *limit / external-mechanism* step remains (a conditional result); written **`MECH-LIMIT`** going forward | the **Law of Excluded Middle** (logic) — unrelated. NOTE: `LEM` in the `DEF/LEM/THE` taxonomy *does* mean **Lemma** (standard, correct). |
+| **THE** (as a *status* word / `[THE n.n]`) | **Theorem** (proved by reductio against M1) | the English article "the" |
+
+The proof technique behind "forcing" is **standard proof by contradiction** — see BOOK_00 §00.8. The only D0-specific ingredient is the axiom **M1** (no obligatory external catalogue). The theory is not made harder by this vocabulary; the content is in M1 and in the finite objects, not in the proof method.
+
 | D0 term | Preferred external term | Formal object / notation | Rule |
 |---|---|---|---|
 | `finite distinguishable registration` | finite measurement record / finite observable event | `finite quotient S_N, event projector Pi_a` | May be used after identifying the finite event algebra. |
@@ -24,6 +36,25 @@ This file normalizes D0 internal terminology into language already used by mathe
 | `ambient-Hom leakage` | uncontrolled enlargement of morphism class | `Hom outside Obs^{D0}; non-admissible continuum map` | Use as formal violation of admissibility. |
 | `ABCD` | four-role finite instrument / terminal role algebra | `A_Sigma, B_N, C_+, D_- or two-port outcomes` | Do not present as merely symbolic alphabet. |
 | `Omega8` | signed four-role instrument extension | `ABCD x {+,-}` | Use after ABCD instrument is defined. |
+
+### Proof and status vocabulary
+
+| D0 term | Preferred external term | Formal object / notation | Rule |
+|---|---|---|---|
+| `forcing` / `forcing-by-contradiction` / "(forced)" | proof by contradiction (reductio ad absurdum) against the admissibility axiom M1 | DEF-0.2.2 5-step schema; `assume ¬X ⇒ exogenous θ ⇒ ⊥M1 ⇒ X` | Say "forced (reductio against M1)" on first use. ⚠ NOT Cohen forcing. |
+| `M1` | admissibility axiom: no obligatory external catalogue / no hidden exogenous parameter | `M1` (BOOK_00 §00.2, §00.8); kin to MDL / Kolmogorov but stronger (distinguishability-affecting) | Genuinely D0-specific. Keep the name; cite §00.2 as definition. |
+| `⊥M1` / "violates M1" | contradicts the admissibility axiom (the contradiction that closes the reductio) | `θ exogenous ⇒ ⊥M1` | Use as the contradiction step of a reductio. |
+| `exogenous parameter` (DEF 0.3.1) | external/hidden parameter | 3-clause: (1) not derived, (2) affects distinguishable outcomes, (3) not protocol-inevitable | Use the 3-clause form; looser than but related to hidden-variable / fine-tuning. |
+| `DEF / LEM / THE` (taxonomy) | Definition / **Lemma** / Theorem | standard proof-object labels | `LEM` here = **Lemma** (standard). Keep. Distinct from the status word below. |
+| `MECH-LIMIT` (was status `LEM`) | mechanism established; a limit / external-mechanism step remains (conditional result) | a claim below THE with a named limit/external gap | Replaces the status word "LEM". ⚠ the status word is NOT the Law of Excluded Middle. |
+| `THE` (status / `[THE n.n]`) | Theorem (proved by reductio against M1) | proved claim | Keep; gloss on first use. ⚠ reads like the article "the". |
+| `CHK` (status) | finite / computational check (verified, selection-owner may be open) | executable certificate result | Use for cert-verified-but-not-yet-THE. |
+| `HYP` (status) | hypothesis / conjecture (open) | unproved statement | Honest open label. |
+| `FORCING` (status) | forced-by-M1 (proved by reductio against M1) | release-status note | Display as "forced-by-M1". ⚠ NOT Cohen forcing. |
+| `scene incidence` | incidence matrix of `K(9,11,13)` | `A`, `rank A=3`, `nullity A=30` | Use the matrix; "scene" = the complete tripartite graph. |
+| `δ₀` (detector quantum) | the forced D0 constant `(√5−2)/2 = 1/(2φ³)` | `δ₀ = φ⁻¹ − ½` | Genuinely D0-specific. Keep; define as the norm-distance of the two cuts of unity. |
+| `F_N` (feedback return) | residual non-unitarity of the retained sector after tracing the complement | `F_N = P_N U_N† Q_N U_N P_N` | Genuinely D0-specific operator. Keep; state operator. |
+| `phason` | gapless quasicrystal mode / K₀ gap-label degree of freedom | gap-labelling group / `K₀` class | Standard condensed-matter / operator-K-theory term. |
 
 
 ## Publication rule

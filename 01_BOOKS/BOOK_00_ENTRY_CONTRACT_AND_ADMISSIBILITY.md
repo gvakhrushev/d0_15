@@ -86,6 +86,8 @@ D0 uses a compact internal vocabulary, but the active scientific corpus must be 
 
 The D0 name is the framework identifier. The proof is the support object, the operator, the response functional, the quotient or coupling, and the falsification condition. A reader may ignore the D0 mnemonic and follow the standard object alone.
 
+This dictionary extends to the **proof and status vocabulary**, which is the part most likely to mislead an external reader. The complete term map — including three explicit *collision warnings* — is `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`. In particular: "**forcing**" is **proof by contradiction (reductio ad absurdum) against the admissibility axiom M1** (BOOK_00 §00.8), **not** Cohen forcing; the proof *technique* is standard, only the axiom M1 is D0-specific. The status word "**`LEM`**" (in "still LEM, not THE") is **not** the Law of Excluded Middle — it means "mechanism established, a limit/external step remains"; it is written **`MECH-LIMIT`** going forward (and is distinct from `LEM`=Lemma in the standard `DEF/LEM/THE` taxonomy). The status word "**`THE`**" abbreviates Theorem, not the article. Nothing in the theory is made harder by this vocabulary: the content lives in M1 and in the finite objects, never in the proof method.
+
 ### The three status layers: CORE / FORMALISM / BRIDGE
 
 The dictionary above is not free: each standard object is admitted at exactly one of three status layers, and the layer fixes what a claim is allowed to depend on. This is the status calculus that disciplines the whole active corpus [^b00-1].
@@ -371,6 +373,8 @@ The load-bearing recipe of the whole corpus is the named 5-step schema [^b00-20]
 
 Status: CORE-FORCING-SCHEMA.  This is "forcing = contradiction via exogenous parameterization" stated as an explicit, reusable recipe rather than as ad hoc per-result contradiction arguments.  Every forced claim in the corpus — phi from p+p^2=1, delta0, Q8~Omega8 minimality, the K(9,11,13) scene, the toral time generator — instantiates this schema with a different θ.  When a section says "(forced)" it means: the negation demands an undefined, outcome-affecting structure, and that structure is an exogenous catalog M1 forbids.
 
+**Standard-language note (the technique is not new — only the axiom is).**  The *logical form* of DEF-0.2.2 is **ordinary proof by contradiction (reductio ad absurdum)**: steps (i)–(v) are the textbook pattern *assume `¬X`, derive a contradiction, conclude `X`*.  There is no novel inference rule here.  The **only** D0-specific ingredient is the admissibility axiom **M1** (no obligatory external catalog), which supplies *which* contradiction counts: a reductio closes iff `¬X` forces an exogenous parameter that M1 forbids.  So "**forcing**" in this corpus is shorthand for "**reductio against M1**" — it is **not** Cohen/set-theoretic forcing, and it does not make a proof harder or more exotic than a standard contradiction argument; the content lives entirely in the axiom M1 and in the finite objects, not in the proof method.  (Full term map: `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`; the publication rule §00.1 lets a reader drop every D0 mnemonic and read the standard object.)
+
 The exogenous-parameter test (DEF 0.3.1, owner GOLDEN §0.3) is the hinge of step (iii)–(iv): θ counts as exogenous iff it (1) is not derived inside the corpus, (2) affects a distinguishable result or a law's formulation, and (3) is not an unavoidable part of the distinguishability protocol.  A required-but-not-distinguishing addition is, by LEM 0.4.1a (the dichotomy of an added structure K), exactly a hidden external catalog and falls to M1.
 
 ### THE-0.4.5 — the minimality / canonicity template
@@ -645,8 +649,12 @@ D0 uses finite-registration terminology because its primitive object is a finite
 | archive pressure | boundary/complement response entering a finite window or survey transfer | not a primitive dark fluid unless a separate operator is declared |
 | dressing functor | EFT/RG/scheme-dependent comparison map from a bare D0 object to an external observable | cannot introduce new fields, scales or fitted exponents |
 | comparison protocol | typed comparison with an external table, covariance, experiment or survey | not identical to a core theorem |
+| forcing / "(forced)" | proof by contradiction (reductio ad absurdum) against the admissibility axiom M1 (BOOK_00 §00.8) | **not** Cohen/set-theoretic forcing; the technique is standard reductio, only M1 is D0-specific |
+| M1 | admissibility axiom: no obligatory external catalogue / no hidden exogenous parameter | kin to MDL/Kolmogorov but stronger (distinguishability-affecting); genuinely D0-specific, keep the name |
+| status word `MECH-LIMIT` (was `LEM`) | a result whose mechanism is established but a limit/external-mechanism step remains (conditional result) | **not** the Law of Excluded Middle; and **not** `LEM`=Lemma in the `DEF/LEM/THE` taxonomy (which is standard) |
+| status word `THE` / `[THE n.n]` | Theorem (proved by reductio against M1) | reads like the article "the"; gloss on first use |
 
-This table is not an analogy layer.  It is a bridge discipline.  A manuscript or book section may use D0 terms internally, but every external-facing claim must include its standard-language translation, bridge status and falsification hook.
+This table is not an analogy layer.  It is a bridge discipline.  A manuscript or book section may use D0 terms internally, but every external-facing claim must include its standard-language translation, bridge status and falsification hook.  The full term map (including the proof/status vocabulary and the collision warnings) is `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`.
 
 ## 00.23 Theory-improvement rule: no decorative layer
 
