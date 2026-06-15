@@ -1464,6 +1464,8 @@ digraph D0Theory {
   "D0-PMNS-DELTA0-NUFIT-001" -> "module:" [label="module"];
   "cert:vp_pmns_delta0_nufit.py" [label="vp_pmns_delta0_nufit.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-PMNS-DELTA0-NUFIT-001" -> "cert:vp_pmns_delta0_nufit.py" [label="cert"];
+  "cert:vp_pmns_baseline_correction.py" [label="vp_pmns_baseline_correction.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PMNS-DELTA0-NUFIT-001" -> "cert:vp_pmns_baseline_correction.py" [label="cert"];
   "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-PMNS-DELTA0-NUFIT-001" -> "domain:empirical_passport" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
