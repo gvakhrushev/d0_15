@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3320 / 4548 (**73.0%** of track-fair max)
-- **Core spine:** 2831 / 4040 (headroom **1209** points to take every core claim to L5)
-- Claims: 253 active (254 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 3370 / 4610 (**73.1%** of track-fair max)
+- **Core spine:** 2863 / 4080 (headroom **1217** points to take every core claim to L5)
+- Claims: 257 active (258 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
@@ -34,6 +34,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 |---|---|---|---|--:|---|
 | `D0-FIBONACCI-IF-FORCING-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-GENERATIVE-DYNAMICS-001` | rg | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-UNITY-SPLIT-SPACETIME-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-GRAV-006` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-HORIZON-JET-001` | frontier | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-ARCHIVE-HEATTRACE-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
@@ -56,7 +57,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-IM-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-003` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-FOUND-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -92,10 +92,10 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 153 | 2213 | 2915 | 697 |
+| formal_core | 156 | 2256 | 2966 | 705 |
 | frontier | 14 | 33 | 280 | 247 |
 | empirical_passport | 22 | 175 | 255 | 75 |
-| smooth_geometry | 11 | 137 | 202 | 65 |
+| smooth_geometry | 12 | 144 | 213 | 65 |
 | cosmology | 22 | 354 | 419 | 65 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 16 | 249 | 262 | 13 |
@@ -112,7 +112,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_07 | 46 | 573 | 830 | 247 |
 | BOOK_04 | 42 | 525 | 771 | 241 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
-| BOOK_01 | 11 | 160 | 207 | 47 |
+| BOOK_01 | 13 | 183 | 238 | 55 |
 | BOOK_02 | 8 | 116 | 142 | 26 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_06 | 8 | 91 | 151 | 60 |
@@ -121,6 +121,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_04/08 | 7 | 57 | 127 | 70 |
 | BOOK_06/08 | 5 | 48 | 100 | 52 |
 | BOOK_02/03 | 2 | 40 | 40 | 0 |
+| BOOK_00/01 | 2 | 40 | 40 | 0 |
 | BOOK_01/04 | 2 | 40 | 40 | 0 |
 | D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE | 3 | 33 | 33 | 0 |
 | Lean formalization | 2 | 31 | 31 | 0 |
@@ -135,7 +136,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_00/01/02/04/06/07/08 | 1 | 20 | 20 | 0 |
 | BOOK_06/07/08 | 1 | 20 | 20 | 0 |
 | BOOK_02/04/05/08 | 1 | 20 | 20 | 0 |
-| BOOK_00/01 | 1 | 20 | 20 | 0 |
 | BOOK_00/01/02/03 | 1 | 20 | 20 | 0 |
 | BOOK_03/06 | 1 | 20 | 20 | 0 |
 | BOOK_03 | 1 | 20 | 20 | 0 |
@@ -143,6 +143,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_05 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
 | BOOK_05/08 | 2 | 19 | 32 | 13 |
+| BOOK_01/06 | 2 | 14 | 31 | 13 |
 | BOOK_09 | 2 | 14 | 27 | 13 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
@@ -150,7 +151,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_04/05/08 | 1 | 7 | 7 | 0 |
 | BOOK_00/01/02/04/05/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/07 | 1 | 7 | 20 | 13 |
-| BOOK_01/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/02/06 | 1 | 7 | 20 | 13 |
 | BOOK_04/07 | 2 | 4 | 40 | 36 |
 | BOOK_04/06/07/08 | 1 | 2 | 20 | 18 |

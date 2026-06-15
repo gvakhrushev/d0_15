@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 254,
+    "claims": 258,
     "release_status": {
-      "CORE-FORMALIZED": 114,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 12,
+      "CORE-FORMALIZED": 115,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 14,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 74,
+      "CERT-CLOSED": 75,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 1,
@@ -19,25 +19,25 @@
       "PROOF-TARGET": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 135,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 13,
-      "PYTHON_CERTIFIED": 89,
+      "LEAN_PROVED": 137,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 14,
+      "PYTHON_CERTIFIED": 90,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 115,
-      "bridge": 19,
+      "core": 116,
+      "bridge": 20,
       "no-go": 16,
-      "certificate": 88,
+      "certificate": 90,
       "deprecated": 2,
       "frontier": 14
     },
     "domain": {
-      "formal_core": 153,
+      "formal_core": 156,
       "rg": 5,
       "gauge_bridge": 17,
-      "smooth_geometry": 11,
+      "smooth_geometry": 12,
       "spectral_action": 5,
       "empirical_passport": 22,
       "cosmology": 22,
@@ -8436,6 +8436,173 @@
       "label": "D0.Claims.CarrierNotIcosahedral",
       "path": "09_LEAN_FORMALIZATION/D0/Claims/CarrierNotIcosahedral.lean",
       "exists": true
+    },
+    {
+      "id": "D0-DETECTION-QUADRATIC-001",
+      "kind": "claim",
+      "claim_id": "D0-DETECTION-QUADRATIC-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/01",
+      "section": "01.14",
+      "lean_module": "D0.Tower.DetectionQuadratic",
+      "lean_theorem": "detection_quadratic",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_detection_quadratic_types.py",
+      "python_cert": [
+        "vp_detection_quadratic_types.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter13] 5th independent channel to p2+p=1 via the detection act: exactly two comparison types -- membership (in, levels 1<->2 different categories => linear, degree 1) and value (levels 2<->3 one category => bilinear=area, degree 2); a would-be third reduces (p3=2p-1 in span{1,p}). Lean D0.Tower.DetectionQuadratic (detection_quadratic) reuses the CORE tower-stop algebra (degree2_closure, p_cubed_reduces) + |{membership,value}|=2. Cert vp_detection_quadratic_types.py (can-FAIL: closure, two-types, no-third, neighbour-exclusion). HONEST: the decidable ALGEBRA is the CORE tower-stop content (D0-TOWER-STOP-NOEXT-001); the categorical 'two kinds exhaust degree-2' is the forcing READING (DEF-0.2.2), an independent channel that STRENGTHENS obligation 5, NOT a separate machine-checked categorical theorem and NOT a replacement of the no-go.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Tower/DetectionQuadratic.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Tower.DetectionQuadratic",
+      "kind": "lean_module",
+      "label": "D0.Tower.DetectionQuadratic",
+      "path": "09_LEAN_FORMALIZATION/D0/Tower/DetectionQuadratic.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_detection_quadratic_types.py",
+      "kind": "python_cert",
+      "label": "vp_detection_quadratic_types.py",
+      "path": "05_CERTS/vp_detection_quadratic_types.py",
+      "exists": true
+    },
+    {
+      "id": "D0-UNITY-SPLIT-SPACETIME-001",
+      "kind": "claim",
+      "claim_id": "D0-UNITY-SPLIT-SPACETIME-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "01.14",
+      "lean_module": "D0.Synthesis.UnitySplitSpacetime",
+      "lean_theorem": "unity_split_spacetime",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_unity_split_spacetime.py",
+      "python_cert": [
+        "vp_unity_split_spacetime.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter13 LEM] root: dividing unity around 1/2 => space (symmetric) + time (antisymmetric delta0). Cuts: honest 1=1/2+1/2 (exchange-symmetric => space) and self-consistent 1=phi^-1+phi^-2 (forced p2+p=1); separation delta0=phi^-1-1/2=(sqrt5-2)/2. T=[[0,1],[1,-1]], det=-1=psi*phi, spectrum {phi^-1,-phi}: one negative eigenvalue => exactly one time arrow; delta0=its magnitude. Lean D0.Synthesis.UnitySplitSpacetime (unity_split_spacetime, gap-free): delta0 exact, det=-1=psi*phi, both eigenvalues+signs. Cert vp_unity_split_spacetime.py (can-FAIL; s=0 control reversible). HONEST LEM: the step 'symmetric S2-invariant = rank-3 adjacency' routes to the ALREADY-FORCED rank-3=causal-cone (D0-RANK3-CAUSAL-CONE-FORCING-001, Iter-11); residual = that identification + the cone-speed Connes unit, NOT a fresh gap. BTC transition-asymmetry is a confirmation, not a derivation. Not promoted past LEM.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Synthesis/UnitySplitSpacetime.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Synthesis.UnitySplitSpacetime",
+      "kind": "lean_module",
+      "label": "D0.Synthesis.UnitySplitSpacetime",
+      "path": "09_LEAN_FORMALIZATION/D0/Synthesis/UnitySplitSpacetime.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_unity_split_spacetime.py",
+      "kind": "python_cert",
+      "label": "vp_unity_split_spacetime.py",
+      "path": "05_CERTS/vp_unity_split_spacetime.py",
+      "exists": true
+    },
+    {
+      "id": "D0-FROBENIUS-DIVISION-3D-001",
+      "kind": "claim",
+      "claim_id": "D0-FROBENIUS-DIVISION-3D-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_01",
+      "section": "01.7.1C",
+      "lean_module": "D0.Foundation.FrobeniusDivision3D",
+      "lean_theorem": "frobenius_division_3d",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-FROBENIUS-1877"
+      ],
+      "cert": "vp_frobenius_division_3d.py",
+      "python_cert": [
+        "vp_frobenius_division_3d.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter13 BRIDGE owner-edge] independent forcing-owner for 3 space dims beside Q8/Dedekind and graph-rank: Frobenius (1877) => only R(1),C(2),H(4) finite-dim assoc. division algebras over R; H maximal, Im(H)=span{i,j,k}=3=rank-3 transport=space, Re=1=time. Lean D0.Foundation.FrobeniusDivision3D (frobenius_division_3d): exact Z-quaternion Hamilton relations i2=j2=k2=ijk=-1, ij=k, Im-dim=3 (gap-free finite content). Cert vp_frobenius_division_3d.py (can-FAIL; controls: C 1 axis, R 0, no 3-dim division algebra). External owner ASSUMP-FROBENIUS-1877 (classification not re-proved). HONEST: H->O octet HYP (dim O=8 vs |Q8|=8 are two different eights), NOT a forcing.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/FrobeniusDivision3D.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.FrobeniusDivision3D",
+      "kind": "lean_module",
+      "label": "D0.Foundation.FrobeniusDivision3D",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/FrobeniusDivision3D.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_frobenius_division_3d.py",
+      "kind": "python_cert",
+      "label": "vp_frobenius_division_3d.py",
+      "path": "05_CERTS/vp_frobenius_division_3d.py",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-FROBENIUS-1877",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-FROBENIUS-1877",
+      "lean_name": "D0.Bridge.BridgeAssumption.FrobeniusDivision3D",
+      "status": "EXPLICIT",
+      "assumption_type": "DIVISION_ALGEBRA_CLASSIFICATION",
+      "external_source_or_cert": "Frobenius, J. Reine Angew. Math. 84 (1878) 1-63; vp_frobenius_division_3d.py"
+    },
+    {
+      "id": "D0-LATTICE-FINITENESS-BRIDGE-001",
+      "kind": "claim",
+      "claim_id": "D0-LATTICE-FINITENESS-BRIDGE-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01/06",
+      "section": "01.19a",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-WILSON-LATTICE-1974"
+      ],
+      "cert": "vp_lattice_finiteness_bridge.py",
+      "python_cert": [
+        "vp_lattice_finiteness_bridge.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter13 BRIDGE owner-edge, 'why-finite' leg] companion to D0-QUASICRYSTAL-CARRIER-FORCING-001 ('why-phi'): non-perturbative gauge theory rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay); M1 forbids an exogenous spacing a => the carrier is the unique self-similar phi-quasicrystal (no a->0 limit). Cert vp_lattice_finiteness_bridge.py (can-FAIL: Fibonacci-inflation length ratio->phi, no fixed spacing; control: periodic lattice has distinguished a => perp-M1). External owner ASSUMP-WILSON-LATTICE-1974. Composes with the carrier-forcing claim; cert-only (no reachable Lean).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_lattice_finiteness_bridge.py",
+      "kind": "python_cert",
+      "label": "vp_lattice_finiteness_bridge.py",
+      "path": "05_CERTS/vp_lattice_finiteness_bridge.py",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-WILSON-LATTICE-1974",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-WILSON-LATTICE-1974",
+      "lean_name": "D0.Bridge.BridgeAssumption.WilsonLatticeRigor",
+      "status": "EXPLICIT",
+      "assumption_type": "LATTICE_GAUGE_RIGOR",
+      "external_source_or_cert": "Wilson, Phys. Rev. D 10 (1974) 2445; vp_lattice_finiteness_bridge.py"
     }
   ],
   "edges": [
@@ -11963,6 +12130,76 @@
       "source": "D0-CARRIER-NOT-ICOSAHEDRAL-001",
       "target": "cert:vp_carrier_not_icosahedral.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-DETECTION-QUADRATIC-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DETECTION-QUADRATIC-001",
+      "target": "module:D0.Tower.DetectionQuadratic",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DETECTION-QUADRATIC-001",
+      "target": "cert:vp_detection_quadratic_types.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-UNITY-SPLIT-SPACETIME-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-UNITY-SPLIT-SPACETIME-001",
+      "target": "module:D0.Synthesis.UnitySplitSpacetime",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-UNITY-SPLIT-SPACETIME-001",
+      "target": "cert:vp_unity_split_spacetime.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FROBENIUS-DIVISION-3D-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FROBENIUS-DIVISION-3D-001",
+      "target": "module:D0.Foundation.FrobeniusDivision3D",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FROBENIUS-DIVISION-3D-001",
+      "target": "cert:vp_frobenius_division_3d.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FROBENIUS-DIVISION-3D-001",
+      "target": "assumption:ASSUMP-FROBENIUS-1877",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-LATTICE-FINITENESS-BRIDGE-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LATTICE-FINITENESS-BRIDGE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LATTICE-FINITENESS-BRIDGE-001",
+      "target": "cert:vp_lattice_finiteness_bridge.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LATTICE-FINITENESS-BRIDGE-001",
+      "target": "assumption:ASSUMP-WILSON-LATTICE-1974",
+      "kind": "uses_assumption"
     }
   ]
 }

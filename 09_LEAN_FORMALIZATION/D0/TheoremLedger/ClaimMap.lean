@@ -382,7 +382,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-RANK3-CAUSAL-CONE-FORCING-001", moduleName := "D0.Synthesis.RankCausalConeForcing",
       theoremName := "rank3_causal_cone_forcing", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CARRIER-NOT-ICOSAHEDRAL-001", moduleName := "D0.Claims.CarrierNotIcosahedral",
-      theoremName := "carrier_not_icosahedral", status := ClaimStatus.leanCoreProved }
+      theoremName := "carrier_not_icosahedral", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DETECTION-QUADRATIC-001", moduleName := "D0.Tower.DetectionQuadratic",
+      theoremName := "detection_quadratic", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-UNITY-SPLIT-SPACETIME-001", moduleName := "D0.Synthesis.UnitySplitSpacetime",
+      theoremName := "unity_split_spacetime", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FROBENIUS-DIVISION-3D-001", moduleName := "D0.Foundation.FrobeniusDivision3D",
+      theoremName := "frobenius_division_3d", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -5,10 +5,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 12
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 14
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 74
-- `CORE-FORMALIZED`: 114
+- `CERT-CLOSED`: 75
+- `CORE-FORMALIZED`: 115
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 1
 - `EMPIRICAL-PASSPORT`: 15
@@ -19,9 +19,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 19
-- `certificate`: 88
-- `core`: 115
+- `bridge`: 20
+- `certificate`: 90
+- `core`: 116
 - `deprecated`: 2
 - `frontier`: 14
 - `no-go`: 16
@@ -31,13 +31,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 153
+- `formal_core`: 156
 - `frontier`: 14
 - `gauge_bridge`: 17
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
-- `smooth_geometry`: 11
+- `smooth_geometry`: 12
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -674,6 +674,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-VERLINDE-ENTROPIC`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter7 cross-bridge E.3, BRIDGE not core] Verlinde emergent gravity (SciPost Phys. 2 016, 2017): gravity AND the dark sector emerge from one entropic structure. D0 lens: the archive/kernel (rank/|Omega8|, the A/4 capacity) is the single structure that yields both the gravitational interface (Book 07) and dark-energy pressure (Book 08) -- a cross-domain bridge. Lean D0.Bridge.VerlindeEntropicBridge (verlinde_entropic_conditional) conditional on ASSUMP-VERLINDE-ENTROPIC. HONEST: Verlinde's program is criticizable -- held BRIDGE, never core; cited not re-derived.
+
+### D0-FROBENIUS-DIVISION-3D-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.FrobeniusDivision3D`
+- theorem: `frobenius_division_3d`
+- cert: `vp_frobenius_division_3d.py`
+- assumptions: `ASSUMP-FROBENIUS-1877`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter13 BRIDGE owner-edge] independent forcing-owner for 3 space dims beside Q8/Dedekind and graph-rank: Frobenius (1877) => only R(1),C(2),H(4) finite-dim assoc. division algebras over R; H maximal, Im(H)=span{i,j,k}=3=rank-3 transport=space, Re=1=time. Lean D0.Foundation.FrobeniusDivision3D (frobenius_division_3d): exact Z-quaternion Hamilton relations i2=j2=k2=ijk=-1, ij=k, Im-dim=3 (gap-free finite content). Cert vp_frobenius_division_3d.py (can-FAIL; controls: C 1 axis, R 0, no 3-dim division algebra). External owner ASSUMP-FROBENIUS-1877 (classification not re-proved). HONEST: H->O octet HYP (dim O=8 vs |Q8|=8 are two different eights), NOT a forcing.
 
 ### D0-M1-INFO-RECONSTRUCTION-001
 
@@ -1442,6 +1455,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Root B synthesis bonus] Quasicrystal carrier = symbolic dynamics of the golden foliation of the time torus. Cert vp_quasicrystal_time_sturmian.py UPGRADES the prose-only 40-symbol check to EXACT executable: cut-and-project word slope phi^-2 = Fibonacci substitution word a->ab,b->a to N=4000 (exact isqrt floors floor(k phi)=(k+isqrt(5k^2))//2), rare-letter freq=phi^-2, aperiodic, rational-slope negative control. Arrow=Pisot |psi|=phi^-1<1 reuses D0-TIME-2D-PISOT-001 (proved). HONEST: proves EXACT SYMBOLIC coincidence only; full topological conjugacy (phi^-2 rotation = foliation return map; Morse-Hedlund/Vershik) needs ergodic machinery not in Mathlib -> theorem-target; arrow interpretation rests on Adler-Weiss external citation.
 
+### D0-UNITY-SPLIT-SPACETIME-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Synthesis.UnitySplitSpacetime`
+- theorem: `unity_split_spacetime`
+- cert: `vp_unity_split_spacetime.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter13 LEM] root: dividing unity around 1/2 => space (symmetric) + time (antisymmetric delta0). Cuts: honest 1=1/2+1/2 (exchange-symmetric => space) and self-consistent 1=phi^-1+phi^-2 (forced p2+p=1); separation delta0=phi^-1-1/2=(sqrt5-2)/2. T=[[0,1],[1,-1]], det=-1=psi*phi, spectrum {phi^-1,-phi}: one negative eigenvalue => exactly one time arrow; delta0=its magnitude. Lean D0.Synthesis.UnitySplitSpacetime (unity_split_spacetime, gap-free): delta0 exact, det=-1=psi*phi, both eigenvalues+signs. Cert vp_unity_split_spacetime.py (can-FAIL; s=0 control reversible). HONEST LEM: the step 'symmetric S2-invariant = rank-3 adjacency' routes to the ALREADY-FORCED rank-3=causal-cone (D0-RANK3-CAUSAL-CONE-FORCING-001, Iter-11); residual = that identification + the cone-speed Connes unit, NOT a fresh gap. BTC transition-asymmetry is a confirmation, not a derivation. Not promoted past LEM.
+
 ### D0-WINDOW44-TOTIENT-M1-001
 
 - type: `certificate`
@@ -1857,6 +1883,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter12 Track-B, sharpens obl.4] Finite shadow of the Delta_alpha analytic owner (CVFT-F1). With delta0=1/2 phi^-3 the algebraic writing collapses to a depth-<=2 archive moment polynomial in the rank-3 unit u=phi^-3: alpha_alg^-1 = mu2*u^2 + mu1*u = (12288/5)phi^-6 + (1/3)phi^-3 exactly in Q(phi), mu2=2^11 pi0 phi^-2, mu1=1/3, mu0=0. This is the shape of the Feshbach-Schur resolvent moment expansion W_eff(z)=A+sum_k z^-(k+1) B D^k C (D0-GENERATIVE-DYNAMICS-001): exponents -6,-3 = -2*rank,-1*rank (archive depth 2,1); the 2nd moment mu2 carries the pi0 feedback phase; no constant term mu0=0 (zero archive depth => zero anomaly, forced). Lean D0.Spectral.DeltaAlphaMoment (delta_alpha_moment): exact Q(phi) decomposition + value + P(0)=0, gap-free. Cert vp_delta_alpha_pi0_moment.py (can-FAIL: wrong unit/constant/no-pi0 controls). HONEST: this SHARPENS, does NOT close, obl.4 -- the two residue amplitudes mu2,mu1 (W_eff residues at the pole) stay the s->pole continuation (profinite spectral measure); CVFT-F1 stays PROOF-TARGET, Delta_alpha status unchanged. 2^11=2^V11 flagged for the continuation, NOT claimed forced (anti-numerology).
+
+### D0-DETECTION-QUADRATIC-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01`
+- module: `D0.Tower.DetectionQuadratic`
+- theorem: `detection_quadratic`
+- cert: `vp_detection_quadratic_types.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter13] 5th independent channel to p2+p=1 via the detection act: exactly two comparison types -- membership (in, levels 1<->2 different categories => linear, degree 1) and value (levels 2<->3 one category => bilinear=area, degree 2); a would-be third reduces (p3=2p-1 in span{1,p}). Lean D0.Tower.DetectionQuadratic (detection_quadratic) reuses the CORE tower-stop algebra (degree2_closure, p_cubed_reduces) + |{membership,value}|=2. Cert vp_detection_quadratic_types.py (can-FAIL: closure, two-types, no-third, neighbour-exclusion). HONEST: the decidable ALGEBRA is the CORE tower-stop content (D0-TOWER-STOP-NOEXT-001); the categorical 'two kinds exhaust degree-2' is the forcing READING (DEF-0.2.2), an independent channel that STRENGTHENS obligation 5, NOT a separate machine-checked categorical theorem and NOT a replacement of the no-go.
 
 ### D0-DIM-LADDER-COMPACT-001
 
@@ -3188,6 +3227,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Finite witness yields symmetric divergence-free second-order TT-compatible macro interface; no continuum Einstein-Hilbert primitive is imported into core.
+
+### D0-LATTICE-FINITENESS-BRIDGE-001
+
+- type: `certificate`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `smooth_geometry`
+- book: `BOOK_01/06`
+- module: ``
+- theorem: `none`
+- cert: `vp_lattice_finiteness_bridge.py`
+- assumptions: `ASSUMP-WILSON-LATTICE-1974`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter13 BRIDGE owner-edge, 'why-finite' leg] companion to D0-QUASICRYSTAL-CARRIER-FORCING-001 ('why-phi'): non-perturbative gauge theory rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay); M1 forbids an exogenous spacing a => the carrier is the unique self-similar phi-quasicrystal (no a->0 limit). Cert vp_lattice_finiteness_bridge.py (can-FAIL: Fibonacci-inflation length ratio->phi, no fixed spacing; control: periodic lattice has distinguished a => perp-M1). External owner ASSUMP-WILSON-LATTICE-1974. Composes with the carrier-forcing claim; cert-only (no reachable Lean).
 
 ### D0-COMPACTNESS-LIMIT-001
 
