@@ -252,7 +252,7 @@ inside the tolerance of a declared transfer protocol Π. The arrow is forced by 
 
 The same split forces a ceiling on the observable transport fraction, independent of the ratio statement.
 
-BRIDGE-LEM [^b08-6]. Under true engagement of the nullity (kernel) régime, the fraction of activity visible through transport modes cannot exceed the transport share of the total mode budget:
+BRIDGE-MECH-LIMIT [^b08-6]. Under true engagement of the nullity (kernel) régime, the fraction of activity visible through transport modes cannot exceed the transport share of the total mode budget:
 
 ```math
 \eta_{obs}\ \le\ \frac{\operatorname{rank}(A)}{\operatorname{rank}(A)+\operatorname{nullity}(A)}
