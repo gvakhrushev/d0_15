@@ -92,13 +92,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 157 | 2276 | 2986 | 705 |
+| formal_core | 156 | 2264 | 2974 | 705 |
 | frontier | 14 | 33 | 280 | 247 |
 | empirical_passport | 22 | 175 | 255 | 75 |
 | smooth_geometry | 12 | 144 | 213 | 65 |
 | cosmology | 22 | 354 | 419 | 65 |
 | spectral_action | 5 | 61 | 100 | 39 |
-| gauge_bridge | 16 | 249 | 262 | 13 |
+| gauge_bridge | 17 | 261 | 274 | 13 |
 | rg | 5 | 61 | 73 | 8 |
 | external_background | 1 | 1 | 2 | 0 |
 | si_calibration | 3 | 25 | 29 | 0 |

@@ -10,12 +10,50 @@ These are not new positive closure claims.  The module collects already owned
 no-go boundaries and one finite isolated-phason control so risky shortcuts can
 be checked as one fast slice.
 
-Scope note (2026-06-15 build-hygiene): the rank-one Higgs scalar-projector no-go
-was removed from the Lean suite — its `FiniteScalarProjector` / `GaugeCompatible`
-API was never formalized (reference-only since base-v14, never compiled). That
-control stays covered by the Python cert `vp_no_go_stress_test_suite.py` and is an
-open Lean theorem-target. The three controls below are Lean-proved.
+Scope note (2026-06-15 build-hygiene): the rank-one Higgs scalar-projector no-go was temporarily
+removed from the Lean suite — its `FiniteScalarProjector` / `GaugeCompatible` API was never
+formalized (reference-only since base-v14). It is now **formalized below** (Iter-15): a scalar
+projector on the SU(2) doublet index is a kept-component mask, and a rank-one mask cannot commute
+with the weak swap, so it is not gauge-compatible. All four controls are Lean-proved.
 -/
+
+/-! ### Rank-one Higgs scalar-projector no-go
+
+A finite scalar projector on the SU(2) doublet index `Fin 2` is the mask of components it keeps.
+The weak/gauge generator is the doublet swap. A projector is gauge-compatible iff it commutes with
+the swap. A rank-one mask keeps one direction and so cannot commute with the swap — the obstruction
+to a single-direction Higgs/scalar projector. (Finite model of cert `vp_no_go_stress_test_suite.py`.) -/
+
+/-- SU(2) doublet index. -/
+abbrev DoubletIndex := Fin 2
+
+/-- A finite scalar projector = the mask of kept doublet components. -/
+abbrev FiniteScalarProjector := Bool × Bool
+
+/-- Rank = number of kept components. -/
+def projectorRank (m : FiniteScalarProjector) : Nat := (if m.1 then 1 else 0) + (if m.2 then 1 else 0)
+
+/-- Does the projector keep direction `x`? -/
+def keeps (m : FiniteScalarProjector) (x : DoubletIndex) : Bool := if x = 0 then m.1 else m.2
+
+/-- Project `x`: keep it (`some x`) or drop it (`none`). -/
+def project (m : FiniteScalarProjector) (x : DoubletIndex) : Option DoubletIndex :=
+  if keeps m x then some x else none
+
+/-- The weak/gauge generator: the doublet swap. -/
+def weakSwap (x : DoubletIndex) : DoubletIndex := if x = 0 then 1 else 0
+
+/-- Gauge-compatible iff the projector commutes with the weak swap on every direction. -/
+def GaugeCompatible (m : FiniteScalarProjector) : Bool :=
+  (List.finRange 2).all (fun x => project m (weakSwap x) == (project m x).map weakSwap)
+
+/-- **Rank-one Higgs scalar-projector no-go.** No rank-one scalar projector is gauge-compatible:
+selecting a single SU(2) doublet direction cannot commute with the weak swap. -/
+theorem no_go_rank_one_higgs_scalar_projector :
+    ∀ m : FiniteScalarProjector, projectorRank m = 1 → GaugeCompatible m = false := by decide
+
+/-- Negative control: the full rank-two doublet projector IS gauge-compatible. -/
+theorem rank_two_full_doublet_gauge_compatible : GaugeCompatible (true, true) = true := by decide
 
 /-- One isolated phason mode, used only as a negative control. -/
 abbrev IsolatedPhasonMode := Fin 1
@@ -67,27 +105,31 @@ structure NoGoStressTestSuite where
   euclidean_signature :
     forall _C : D0.Bridge.FiniteLorentzTickGaugeClosure,
       D0.roleSignature ≠ (4, 0)
+  rank_one_scalar_projector :
+    forall m : FiniteScalarProjector, projectorRank m = 1 → GaugeCompatible m = false
 
 /-- Machine-checkable no-go stress suite. -/
 def noGoStressTestSuite : NoGoStressTestSuite where
   isolated_generation := no_go_isolated_phason_generation_carrier
   isolated_baryon_s3 := no_go_isolated_phason_baryon_s3_sector
   euclidean_signature := no_go_euclidean_signature_export
+  rank_one_scalar_projector := no_go_rank_one_higgs_scalar_projector
 
-/-- The finite no-go stress suite closes the three Lean-backed negative controls:
-isolated-phason generation, isolated-phason baryon S3 sector, and Euclidean
-signature export. (The rank-one Higgs scalar-projector control is cert-level only;
-see the scope note above.) -/
+/-- The finite no-go stress suite closes the four Lean-backed negative controls:
+isolated-phason generation, isolated-phason baryon S3 sector, Euclidean signature export, and the
+rank-one Higgs scalar-projector obstruction. -/
 theorem no_go_stress_test_suite_closed :
     Fintype.card IsolatedPhasonMode ≠
       Fintype.card D0.Matter.GenerationPhasonMode ∧
     Fintype.card IsolatedPhasonTriple ≠
       Fintype.card D0.Matter.BaryonPhasonSymmetricSector ∧
     (forall _C : D0.Bridge.FiniteLorentzTickGaugeClosure,
-      D0.roleSignature ≠ (4, 0)) := by
+      D0.roleSignature ≠ (4, 0)) ∧
+    (forall m : FiniteScalarProjector, projectorRank m = 1 → GaugeCompatible m = false) := by
   exact
     ⟨noGoStressTestSuite.isolated_generation,
       noGoStressTestSuite.isolated_baryon_s3,
-      noGoStressTestSuite.euclidean_signature⟩
+      noGoStressTestSuite.euclidean_signature,
+      noGoStressTestSuite.rank_one_scalar_projector⟩
 
 end D0.NoGo

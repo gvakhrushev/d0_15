@@ -32,9 +32,9 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 157,
-      "realized": 2276,
-      "max": 2986,
+      "n": 156,
+      "realized": 2264,
+      "max": 2974,
       "core_headroom": 705
     },
     "rg": {
@@ -44,9 +44,9 @@
       "core_headroom": 8
     },
     "gauge_bridge": {
-      "n": 16,
-      "realized": 249,
-      "max": 262,
+      "n": 17,
+      "realized": 261,
+      "max": 274,
       "core_headroom": 13
     },
     "smooth_geometry": {
@@ -3568,7 +3568,7 @@
       "ceiling": 12,
       "release_status": "NO_GO_PROVED",
       "lean_status": "LEAN_PROVED",
-      "domain": "formal_core",
+      "domain": "gauge_bridge",
       "book": "BOOK_02/04/05/06/07",
       "leverage": 0,
       "integrity_flag": null

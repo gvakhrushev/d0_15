@@ -31,9 +31,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 22
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 157
+- `formal_core`: 156
 - `frontier`: 14
-- `gauge_bridge`: 17
+- `gauge_bridge`: 18
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
@@ -2638,19 +2638,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: Bare K(9,11,13) spectral cluster generation route is no-go. Core generation index is instead D0-GEN-INDEX-001 via projective branch-defect rays.
 
-### D0-NO-GO-STRESS-SUITE-001
-
-- type: `no-go`
-- release_status: `NO_GO_PROVED`
-- domain: `formal_core`
-- book: `BOOK_02/04/05/06/07`
-- module: `D0.NoGo.StressTestSuite`
-- theorem: `NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed`
-- cert: `vp_no_go_stress_test_suite.py`
-- assumptions: `none`
-- scope: Boundary/no-go row; prevents promotion of this route.
-- notes: Lean suite proves three Lean-backed no-gos: isolated one-phason generation; isolated-phason baryon-S3 sector; Euclidean signature export. Rank-one Higgs scalar-projector no-go is cert-only (vp_no_go_stress_test_suite.py); its finite FiniteScalarProjector/GaugeCompatible Lean API was never formalized (reference-only since base-v14) so it was dropped from the Lean suite on 2026-06-15 and is an open Lean theorem-target.
-
 ### D0-PHASE-TOWER-002
 
 - type: `no-go`
@@ -3085,6 +3072,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: Flat ungraded commutator graph has a concrete Fin 2 residual counterexample.
+
+### D0-NO-GO-STRESS-SUITE-001
+
+- type: `no-go`
+- release_status: `NO_GO_PROVED`
+- domain: `gauge_bridge`
+- book: `BOOK_02/04/05/06/07`
+- module: `D0.NoGo.StressTestSuite`
+- theorem: `NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_rank_one_higgs_scalar_projector;NoGo.no_go_stress_test_suite_closed`
+- cert: `vp_no_go_stress_test_suite.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Iter15] Lean suite now proves FOUR Lean-backed no-gos: isolated one-phason generation; isolated-phason baryon-S3 sector; Euclidean signature export; and the rank-one Higgs scalar-projector obstruction (no_go_rank_one_higgs_scalar_projector). The last one's FiniteScalarProjector/GaugeCompatible API -- reference-only since base-v14, dropped 2026-06-15 build-hygiene -- is now formalized (finite model of vp_no_go_stress_test_suite.py: a rank-1 doublet-projector mask cannot commute with the weak swap, by decide; rank-2 is gauge-compatible, negative control). Open Lean theorem-target CLOSED. Cert vp_no_go_stress_test_suite.py; lake build D0.All GREEN.
 
 
 ## Domain: interpretation_spine

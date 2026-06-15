@@ -34,9 +34,9 @@
       "frontier": 14
     },
     "domain": {
-      "formal_core": 157,
+      "formal_core": 156,
       "rg": 5,
-      "gauge_bridge": 17,
+      "gauge_bridge": 18,
       "smooth_geometry": 12,
       "spectral_action": 5,
       "empirical_passport": 22,
@@ -3890,12 +3890,12 @@
       "kind": "claim",
       "claim_id": "D0-NO-GO-STRESS-SUITE-001",
       "type": "no-go",
-      "domain": "formal_core",
+      "domain": "gauge_bridge",
       "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_02/04/05/06/07",
       "section": "integrated no-go stress-test suite",
       "lean_module": "D0.NoGo.StressTestSuite",
-      "lean_theorem": "NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_stress_test_suite_closed",
+      "lean_theorem": "NoGo.no_go_isolated_phason_generation_carrier;NoGo.no_go_isolated_phason_baryon_s3_sector;NoGo.no_go_euclidean_signature_export;NoGo.no_go_rank_one_higgs_scalar_projector;NoGo.no_go_stress_test_suite_closed",
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
@@ -3904,7 +3904,7 @@
         "vp_no_go_stress_test_suite.py"
       ],
       "status": "NO_GO_PROVED",
-      "notes": "Lean suite proves three Lean-backed no-gos: isolated one-phason generation; isolated-phason baryon-S3 sector; Euclidean signature export. Rank-one Higgs scalar-projector no-go is cert-only (vp_no_go_stress_test_suite.py); its finite FiniteScalarProjector/GaugeCompatible Lean API was never formalized (reference-only since base-v14) so it was dropped from the Lean suite on 2026-06-15 and is an open Lean theorem-target.",
+      "notes": "[Iter15] Lean suite now proves FOUR Lean-backed no-gos: isolated one-phason generation; isolated-phason baryon-S3 sector; Euclidean signature export; and the rank-one Higgs scalar-projector obstruction (no_go_rank_one_higgs_scalar_projector). The last one's FiniteScalarProjector/GaugeCompatible API -- reference-only since base-v14, dropped 2026-06-15 build-hygiene -- is now formalized (finite model of vp_no_go_stress_test_suite.py: a rank-1 doublet-projector mask cannot commute with the weak swap, by decide; rank-2 is gauge-compatible, negative control). Open Lean theorem-target CLOSED. Cert vp_no_go_stress_test_suite.py; lake build D0.All GREEN.",
       "module_path": "09_LEAN_FORMALIZATION/D0/NoGo/StressTestSuite.lean",
       "module_exists": true,
       "certs_exist": true
@@ -10146,7 +10146,7 @@
     },
     {
       "source": "D0-NO-GO-STRESS-SUITE-001",
-      "target": "domain:formal_core",
+      "target": "domain:gauge_bridge",
       "kind": "semantic_domain"
     },
     {

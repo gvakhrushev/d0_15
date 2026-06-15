@@ -119,7 +119,7 @@ digraph D0Theory {
   "D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001" [label="D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001" [label="D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-ICECUBE-001" [label="D0-ICECUBE-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
-  "D0-NO-GO-STRESS-SUITE-001" [label="D0-NO-GO-STRESS-SUITE-001\\nNO_GO_PROVED\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-NO-GO-STRESS-SUITE-001" [label="D0-NO-GO-STRESS-SUITE-001\\nNO_GO_PROVED\\ngauge_bridge", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-HULL-001" [label="D0-HULL-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-KTHEORY-001" [label="D0-KTHEORY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-SOLENOID-001" [label="D0-SOLENOID-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -864,8 +864,8 @@ digraph D0Theory {
   "D0-NO-GO-STRESS-SUITE-001" -> "module:D0.NoGo.StressTestSuite" [label="module"];
   "cert:vp_no_go_stress_test_suite.py" [label="vp_no_go_stress_test_suite.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-NO-GO-STRESS-SUITE-001" -> "cert:vp_no_go_stress_test_suite.py" [label="cert"];
-  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-NO-GO-STRESS-SUITE-001" -> "domain:formal_core" [label="domain"];
+  "domain:gauge_bridge" [label="gauge_bridge", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-NO-GO-STRESS-SUITE-001" -> "domain:gauge_bridge" [label="domain"];
   "module:D0.Topology.TilingHull" [label="D0.Topology.TilingHull", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-HULL-001" -> "module:D0.Topology.TilingHull" [label="module"];
   "cert:vp_d0_tiling_hull.py" [label="vp_d0_tiling_hull.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
