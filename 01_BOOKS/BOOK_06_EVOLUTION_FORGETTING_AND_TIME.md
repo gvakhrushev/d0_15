@@ -624,6 +624,8 @@ The positive test is:
 
 ## 06.17 Claims inherited from the theorem database
 
+**Canonical source: the claim registry** (`09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` / generated `03_THEORY_MAP/theory_status_map.csv`) is the single source of truth for claim IDs and `release_status`. This table is the **Book 06 sector view** — the `Book 06 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel gravity-sector view is §07.16.
+
 | Claim ID | Domain | Status | Claim | Book 06 role |
 |---|---|---|---|---|
 | `D0-FOUND-002` | Foundation | `CORE-FOUNDATION` | Minimal addressable record split | foundation/metrology reference |
@@ -874,83 +876,20 @@ The ordered finite evolution discrete evolution step does not merely order event
 
 ## 06.29 Phase-unfolding master chain
 
-D0 no longer treats spatial branching as a primitive geometric background.  An ordered finite registration can generate visible geometry through a phase quotient.  For a phase circumference \(\tau\), the map
-
-\[
-U_\tau(n)=(n,n\bmod \tau)
-\]
-
-turns the one-dimensional discrete evolution step sequence into a branch foliation whenever an integer pair \((q,m)\) satisfies \(|q-m\tau|\ll 1\).  The residue classes modulo \(q\) are the coherent branches.  An admissibility filter selects the branches visible to the detector.
+**Canonical mechanism: §01.19** (phase-unfolding master chain — the map `U_τ(n)=(n, n mod τ)` turns an ordered finite registration into a branch foliation; the residue classes mod `q` are the coherent branches, an admissibility filter selects the visible ones). Owned there, not re-derived. The time/evolution-sector content recorded here is what *supplies* that ordered finite evolution:
 
 The time operator supplies the non-periodic ordered finite evolution.  The integer toral
 automorphism `T=[[0,1],[1,-1]]` orders the active/archive ladder through
 `Tr(T^n)=(-1)^n L_n`, while the phase owner fixes the return increment
-`alpha_D0=phi^-2`.  Tick order is therefore not a periodic clock embedded in a
+`alpha_D0=phi^-2` (§01.21).  Tick order is therefore not a periodic clock embedded in a
 background lattice; it is an ordered finite evolution whose detector-visible branches are
 created only by finite return quotients.
 
-The D0 structural return
-
-\[
-q_T=|ABCD|\,|V_{11}|=4\cdot11=44,
-\qquad
-m_T=|ABCD|+\operatorname{rank}(A_K)=4+3=7
-\]
-
-is the first terminal phase-return window.  Its admissible coprime branch count is
-
-\[
-\varphi_E(44)=20=d_{13}.
-\]
-
-Thus the terminal shell degree is the branch count of the first stable phase unfolding.
-
-The second return is
-
-\[
-q_{EW}=2(|ABCD|+1)(2|V|+|ABCD|+1)=710,
-\qquad
-m_{EW}=(|ABCD|+1)d_{13}+|V_{13}|=113.
-\]
-
-Since \(710/113\) is a near-return for the Euclidean phase circumference, and
-
-\[
-\varphi_E(710)=280=|\Omega_8|\cdot 35,
-\]
-
-the electroweak radial depth is the per-\(\Omega_8\)-sector branch depth:
-
-\[
-D_{EW}=35.
-\]
-
-This section upgrades phase unfolding from an illustration to a structural theorem: later scale depths are repeated applications of the same finite discrete evolution step \(\to\) phase quotient \(\to\) return modulus \(\to\) residue branch \(\to\) quotient mechanism.
+The terminal and electroweak return windows reached by this ordered-evolution quotient — `q_T=44`, `m_T=7`, `φ_E(44)=20=d₁₃`; `q_EW=710`, `m_EW=113`, `φ_E(710)=280=|Ω₈|·35 ⇒ D_EW=35` — and their M1-forcing are owned by **§01.22 / §07.23**; they are not re-derived here.
 
 ## 06.30 Hurwitz-rigid phase generator and non-resonant spatial unfolding
 
-The normalized D0 phase generator is not an arbitrary irrational angle.  The
-primitive positive-response theorem gives `p+p²=1`, hence the return branch is
-
-```math
-\alpha_{D0}=p^2=\varphi^{-2}.
-```
-
-The physical phase increment is therefore `2π/φ²`.  By the Hurwitz/continued-
-fraction extremality of the `φ` class, this rotation is maximally resistant to
-low-denominator rational locking.  In D0 terminology, it is the admissible phase
-increment that suppresses uncontrolled metric arms in the unresolved complement.
-
-This does not eliminate finite branches.  Branches appear only after a finite
-readout quotient chooses a return modulus.  Thus the same chain has two layers:
-
-```text
-φ^{-2} irrational rotation  > non-resonant archive smoothing;
-finite return modulus q  > residue branch geometry.
-```
-
-This closes the compatibility between macroscopic smoothness and finite branch
-unfolding.
+**Canonical derivation: §01.21** (Hurwitz-rigid phase generator — `α_D0 = p² = φ⁻²` is the maximally non-resonant rotation; `φ⁻²` irrational rotation ⇒ non-resonant archive smoothing, finite return modulus `q` ⇒ residue branch geometry). Owned there, not re-derived. The time/evolution-sector consequence recorded here:
 
 By the Phase-Unfolding Theorem (D0.Geometry.PhaseUnfoldingQuasicrystal):
 

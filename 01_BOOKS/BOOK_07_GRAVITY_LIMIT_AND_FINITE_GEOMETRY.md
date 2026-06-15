@@ -710,6 +710,8 @@ The positive gravity chain is
 
 ## 07.16 Claims inherited from the theorem database
 
+**Canonical source: the claim registry** (`09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` / generated `03_THEORY_MAP/theory_status_map.csv`) is the single source of truth for claim IDs and `release_status`. This table is the **Book 07 sector view** — the `Book 07 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel evolution-sector view is §06.17.
+
 | Claim ID | Status | Stage | Claim | Book 07 role |
 |---|---|---|---|---|
 | `D0-FOUND-003` | `CORE-FOUNDATION` | Foundation | Minimal continuum-measurement skeleton | reference to Books 01-04; used in gravity bridge |
@@ -931,13 +933,7 @@ The terminal shell `V13` is excluded from the exponent because it is the boundar
 
 ## 07.23 Phase-unfolding master chain
 
-D0 no longer treats spatial branching as a primitive geometric background.  An ordered finite registration can generate visible geometry through a phase quotient.  For a phase circumference \(\tau\), the map
-
-\[
-U_\tau(n)=(n,n\bmod \tau)
-\]
-
-turns the one-dimensional tick sequence into a branch foliation whenever an integer pair \((q,m)\) satisfies \(|q-m\tau|\ll 1\).  The residue classes modulo \(q\) are the coherent branches.  An admissibility filter selects the branches visible to the detector.
+**Canonical mechanism: §01.19** (phase-unfolding master chain — the map `U_τ(n)=(n, n mod τ)` turns an ordered finite registration into a branch foliation; residues mod `q` are the coherent branches). Owned there, not re-derived. This section carries the gravity/finite-geometry-sector content: the **M1-forcing** of the two return windows (the part not in §01.19).
 
 The D0 structural return
 
@@ -1005,28 +1001,7 @@ so the electroweak radial depth is the per-oriented-terminal branch depth of the
 
 ## 07.25 Hurwitz-rigid phase generator and non-resonant spatial unfolding
 
-The normalized D0 phase generator is not an arbitrary irrational angle.  The
-primitive positive-response theorem gives `p+p²=1`, hence the return branch is
-
-```math
-\alpha_{D0}=p^2=\varphi^{-2}.
-```
-
-The physical phase increment is therefore `2π/φ²`.  By the Hurwitz/continued-
-fraction extremality of the `φ` class, this rotation is maximally resistant to
-low-denominator rational locking.  In D0 terminology, it is the admissible phase
-increment that suppresses uncontrolled metric arms in the unresolved complement.
-
-This does not eliminate finite branches.  Branches appear only after a finite
-readout quotient chooses a return modulus.  Thus the same chain has two layers:
-
-```text
-φ^{-2} irrational rotation  > non-resonant archive smoothing;
-finite return modulus q  > residue branch geometry.
-```
-
-This closes the compatibility between macroscopic smoothness and finite branch
-unfolding.
+**Canonical derivation: §01.21** (Hurwitz-rigid phase generator — `α_D0 = p² = φ⁻²` is the maximally non-resonant rotation; `φ⁻²` irrational rotation ⇒ non-resonant archive smoothing, finite return modulus `q` ⇒ residue branch geometry). Owned there, not re-derived. The gravity/finite-geometry-sector consequence recorded here:
 
 The active owner promotes this from prose to a finite information-quasicrystal
 statement:
