@@ -38,6 +38,7 @@ import D0.Bridge.LorentzBridge
 import D0.Bridge.M1InfoReconstructionBridge
 import D0.Bridge.OperatorOriginIndex
 import D0.Bridge.PhiDiscreteRG
+import D0.Bridge.RieffelGHPBridge
 import D0.Bridge.SICalibrationBoundary
 import D0.Bridge.SICalibrationClosure
 import D0.Bridge.SmoothMetricBridge

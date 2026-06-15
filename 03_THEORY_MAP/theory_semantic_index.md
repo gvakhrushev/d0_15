@@ -5,7 +5,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 15
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 16
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 79
 - `CORE-FORMALIZED`: 116
@@ -19,7 +19,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 21
+- `bridge`: 22
 - `certificate`: 94
 - `core`: 117
 - `deprecated`: 3
@@ -37,7 +37,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
-- `smooth_geometry`: 13
+- `smooth_geometry`: 14
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -3266,6 +3266,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 
 ## Domain: smooth_geometry
+
+### D0-RIEFFEL-GHP-CONTINUUM-OWNER-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: `D0.Bridge.RieffelGHPBridge`
+- theorem: `rieffel_ghp_continuum_conditional`
+- cert: `vp_connes_distance_geodesic.py`
+- assumptions: `ASSUMP-RIEFFEL-GHP`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter18 owner-edge, refines the Connes confirmation] Names the SPECIFIC framework owning the finite->smooth continuum limit: Rieffel compact quantum metric spaces (Doc. Math. 4 (1999) 559; Mem. AMS 168 (2004), quantum Gromov-Hausdorff distance) + Gromov-Hausdorff(-Prokhorov) convergence of the refinement sequence. D0-side anchor (cert vp_connes_distance_geodesic.py, D0-CONNES-DISTANCE-GEODESIC-001): each finite scene is an INTERNAL compact quantum metric space (Connes distance = geodesic, c=1=edge/tick structural). Connes reconstruction (D0-CONNES-RECONSTRUCTION-OWNER-001) identifies the LIMIT OBJECT (spectral triple = spin manifold); Rieffel/GHP own the CONVERGENCE to it -- complementary, not redundant. Lean D0.Bridge.RieffelGHPBridge (rieffel_ghp_continuum_conditional) conditional on ASSUMP-RIEFFEL-GHP. HONEST NAMED RESIDUAL: D0 does NOT prove the refinement sequence is GHP-Cauchy (not a finite computation) -- that is the explicit open gap; the owner is named, the convergence is not derived inside D0. BRIDGE track, honesty not points. cite Rieffel Doc. Math. 4 (1999) 559; Mem. AMS 168 (2004).
 
 ### D0-SMOOTH-001
 

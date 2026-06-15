@@ -4,10 +4,10 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 264,
+    "claims": 265,
     "release_status": {
       "CORE-FORMALIZED": 116,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 15,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 16,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 79,
@@ -20,14 +20,14 @@
     },
     "lean_status": {
       "LEAN_PROVED": 138,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 15,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 16,
       "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
       "core": 117,
-      "bridge": 21,
+      "bridge": 22,
       "no-go": 16,
       "certificate": 94,
       "deprecated": 3,
@@ -37,7 +37,7 @@
       "formal_core": 160,
       "rg": 5,
       "gauge_bridge": 18,
-      "smooth_geometry": 13,
+      "smooth_geometry": 14,
       "spectral_action": 5,
       "empirical_passport": 22,
       "cosmology": 23,
@@ -7808,6 +7808,55 @@
       "external_source_or_cert": "Connes, arXiv:0810.2088 (2008)"
     },
     {
+      "id": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "type": "bridge",
+      "domain": "smooth_geometry",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_07",
+      "section": "finite->smooth continuum-limit owner (Rieffel compact quantum metric spaces + GHP convergence) for the gravity-geometry layer (07.51.3)",
+      "lean_module": "D0.Bridge.RieffelGHPBridge",
+      "lean_theorem": "rieffel_ghp_continuum_conditional",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-RIEFFEL-GHP"
+      ],
+      "cert": "vp_connes_distance_geodesic.py",
+      "python_cert": [
+        "vp_connes_distance_geodesic.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter18 owner-edge, refines the Connes confirmation] Names the SPECIFIC framework owning the finite->smooth continuum limit: Rieffel compact quantum metric spaces (Doc. Math. 4 (1999) 559; Mem. AMS 168 (2004), quantum Gromov-Hausdorff distance) + Gromov-Hausdorff(-Prokhorov) convergence of the refinement sequence. D0-side anchor (cert vp_connes_distance_geodesic.py, D0-CONNES-DISTANCE-GEODESIC-001): each finite scene is an INTERNAL compact quantum metric space (Connes distance = geodesic, c=1=edge/tick structural). Connes reconstruction (D0-CONNES-RECONSTRUCTION-OWNER-001) identifies the LIMIT OBJECT (spectral triple = spin manifold); Rieffel/GHP own the CONVERGENCE to it -- complementary, not redundant. Lean D0.Bridge.RieffelGHPBridge (rieffel_ghp_continuum_conditional) conditional on ASSUMP-RIEFFEL-GHP. HONEST NAMED RESIDUAL: D0 does NOT prove the refinement sequence is GHP-Cauchy (not a finite computation) -- that is the explicit open gap; the owner is named, the convergence is not derived inside D0. BRIDGE track, honesty not points. cite Rieffel Doc. Math. 4 (1999) 559; Mem. AMS 168 (2004).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/RieffelGHPBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.RieffelGHPBridge",
+      "kind": "lean_module",
+      "label": "D0.Bridge.RieffelGHPBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/RieffelGHPBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_connes_distance_geodesic.py",
+      "kind": "python_cert",
+      "label": "vp_connes_distance_geodesic.py",
+      "path": "05_CERTS/vp_connes_distance_geodesic.py",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-RIEFFEL-GHP",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-RIEFFEL-GHP",
+      "lean_name": "D0.Bridge.BridgeAssumption.RieffelGHPContinuum",
+      "status": "EXPLICIT",
+      "assumption_type": "QUANTUM_METRIC_CONVERGENCE",
+      "external_source_or_cert": "Rieffel, Doc. Math. 4 (1999) 559; Mem. AMS 168 (2004); vp_connes_distance_geodesic.py"
+    },
+    {
       "id": "D0-TIME-MODULAR-FLOW-OWNER-001",
       "kind": "claim",
       "claim_id": "D0-TIME-MODULAR-FLOW-OWNER-001",
@@ -8626,13 +8675,6 @@
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "cert:vp_connes_distance_geodesic.py",
-      "kind": "python_cert",
-      "label": "vp_connes_distance_geodesic.py",
-      "path": "05_CERTS/vp_connes_distance_geodesic.py",
-      "exists": true
     },
     {
       "id": "D0-CARRIER-NOT-ICOSAHEDRAL-001",
@@ -12077,6 +12119,26 @@
     {
       "source": "D0-CONNES-RECONSTRUCTION-OWNER-001",
       "target": "assumption:ASSUMP-CONNES-RECONSTRUCTION",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "target": "module:D0.Bridge.RieffelGHPBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "target": "cert:vp_connes_distance_geodesic.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "target": "assumption:ASSUMP-RIEFFEL-GHP",
       "kind": "uses_assumption"
     },
     {
