@@ -201,6 +201,7 @@ import D0.Geometry.NonCommutativeSolenoid
 import D0.Geometry.NonCommutativeSolenoidGravity
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
+import D0.Geometry.SceneActiveEigenvalues
 import D0.Geometry.SpectralActionAdmissibility
 import D0.Geometry.SpectralActionLadder
 import D0.Geometry.SpectralActionSkeleton

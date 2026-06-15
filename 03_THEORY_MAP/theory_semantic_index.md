@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 17
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 79
-- `CORE-FORMALIZED`: 117
+- `CORE-FORMALIZED`: 118
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 23
 - `certificate`: 94
-- `core`: 118
+- `core`: 119
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 23
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 162
+- `formal_core`: 163
 - `frontier`: 13
 - `gauge_bridge`: 18
 - `interpretation_spine`: 1
@@ -2481,6 +2481,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Tripartite counts 33/359/1287.
+
+### D0-SCENE-ACTIVE-EIGENVALUES-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Geometry.SceneActiveEigenvalues`
+- theorem: `scene_active_eigenvalue_plus;scene_active_eigenvalue_minus;scene_active_eigenvalues_sum;scene_active_eigenvalues_prod`
+- cert: `vp_scene_active_eigenvalues_exact.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter18 reuse item 3] Closes the §04.2 do not cite as proven numerical readout to an EXACT closed form. The reduced off-diagonal S (zero diagonal) has det(S)=2·1287/√(528·440·480)=2574/10560=39/160 (√(528·440·480)=10560 exact); so the two active eigenvalues sum to 3 (trace) and multiply to 2+39/160=359/160, i.e. roots of 160λ²−480λ+359 = 3/2±√10/40. Cert vp_scene_active_eigenvalues_exact.py (exact Q(√10), can-FAIL) + Lean D0.Geometry.SceneActiveEigenvalues (linear_combination on √10²=10). ERROR CORRECTION: §04.2 stated decimals 1.420838683198/1.579158554151 were slightly wrong (sum 2.999997≠3); corrected to 1.42094306/1.57905694 (sum exactly 3).
 
 ### D0-SIGNATURE-31-SPLIT-001
 

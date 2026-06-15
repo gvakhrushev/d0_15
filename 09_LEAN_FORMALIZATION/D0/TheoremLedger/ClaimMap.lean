@@ -398,7 +398,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-FROBENIUS-DIVISION-3D-001", moduleName := "D0.Foundation.FrobeniusDivision3D",
       theoremName := "frobenius_division_3d", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-GALOIS-PHI-IRRATIONAL-001", moduleName := "D0.Algebra.GaloisPhiNontrivial",
-      theoremName := "galois_z2_genuinely_nontrivial;irrational_phi;irrational_psi;phi_ne_psi;irrational_sqrt_five", status := ClaimStatus.leanCoreProved }
+      theoremName := "galois_z2_genuinely_nontrivial;irrational_phi;irrational_psi;phi_ne_psi;irrational_sqrt_five", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-ACTIVE-EIGENVALUES-001", moduleName := "D0.Geometry.SceneActiveEigenvalues",
+      theoremName := "scene_active_eigenvalue_plus;scene_active_eigenvalue_minus;scene_active_eigenvalues_sum;scene_active_eigenvalues_prod", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3469,
-    "track_fair_max": 4743,
-    "pct_strength": 73.1,
-    "core_realized": 2929,
-    "core_potential": 4180,
+    "realized": 3489,
+    "track_fair_max": 4763,
+    "pct_strength": 73.3,
+    "core_realized": 2949,
+    "core_potential": 4200,
     "core_headroom": 1251,
-    "n_claims": 267,
-    "n_active": 265,
+    "n_claims": 268,
+    "n_active": 266,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 161,
-      "realized": 2320,
-      "max": 3056,
+      "n": 162,
+      "realized": 2340,
+      "max": 3076,
       "core_headroom": 731
     },
     "rg": {
@@ -160,9 +160,9 @@
       "core_headroom": 52
     },
     "BOOK_04": {
-      "n": 41,
-      "realized": 523,
-      "max": 751,
+      "n": 42,
+      "realized": 543,
+      "max": 771,
       "core_headroom": 223
     },
     "BOOK_04/08": {
@@ -5699,6 +5699,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
     }

@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 267,
+    "claims": 268,
     "release_status": {
-      "CORE-FORMALIZED": 117,
+      "CORE-FORMALIZED": 118,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 17,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 139,
+      "LEAN_PROVED": 140,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 17,
       "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 118,
+      "core": 119,
       "bridge": 23,
       "no-go": 16,
       "certificate": 94,
@@ -34,7 +34,7 @@
       "frontier": 13
     },
     "domain": {
-      "formal_core": 162,
+      "formal_core": 163,
       "rg": 5,
       "gauge_bridge": 18,
       "smooth_geometry": 14,
@@ -8951,6 +8951,44 @@
       "label": "D0.Algebra.GaloisPhiNontrivial",
       "path": "09_LEAN_FORMALIZATION/D0/Algebra/GaloisPhiNontrivial.lean",
       "exists": true
+    },
+    {
+      "id": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "kind": "claim",
+      "claim_id": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04",
+      "section": "active scene-Laplacian eigenvalues exact = 3/2±√10/40 (roots of 160λ²−480λ+359, det(S)=39/160) (04.2)",
+      "lean_module": "D0.Geometry.SceneActiveEigenvalues",
+      "lean_theorem": "scene_active_eigenvalue_plus;scene_active_eigenvalue_minus;scene_active_eigenvalues_sum;scene_active_eigenvalues_prod",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_scene_active_eigenvalues_exact.py",
+      "python_cert": [
+        "vp_scene_active_eigenvalues_exact.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter18 reuse item 3] Closes the §04.2 do not cite as proven numerical readout to an EXACT closed form. The reduced off-diagonal S (zero diagonal) has det(S)=2·1287/√(528·440·480)=2574/10560=39/160 (√(528·440·480)=10560 exact); so the two active eigenvalues sum to 3 (trace) and multiply to 2+39/160=359/160, i.e. roots of 160λ²−480λ+359 = 3/2±√10/40. Cert vp_scene_active_eigenvalues_exact.py (exact Q(√10), can-FAIL) + Lean D0.Geometry.SceneActiveEigenvalues (linear_combination on √10²=10). ERROR CORRECTION: §04.2 stated decimals 1.420838683198/1.579158554151 were slightly wrong (sum 2.999997≠3); corrected to 1.42094306/1.57905694 (sum exactly 3).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/SceneActiveEigenvalues.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.SceneActiveEigenvalues",
+      "kind": "lean_module",
+      "label": "D0.Geometry.SceneActiveEigenvalues",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/SceneActiveEigenvalues.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_scene_active_eigenvalues_exact.py",
+      "kind": "python_cert",
+      "label": "vp_scene_active_eigenvalues_exact.py",
+      "path": "05_CERTS/vp_scene_active_eigenvalues_exact.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -12703,6 +12741,21 @@
       "source": "D0-GALOIS-PHI-IRRATIONAL-001",
       "target": "module:D0.Algebra.GaloisPhiNontrivial",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "target": "module:D0.Geometry.SceneActiveEigenvalues",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "target": "cert:vp_scene_active_eigenvalues_exact.py",
+      "kind": "certified_by"
     }
   ]
 }
