@@ -1003,3 +1003,63 @@ therefore integrity hygiene + one honest frontier-sharpening, **not** status inf
 `run_registered_certs` (158 certs, 0 MISSING/FAIL), `d0_score` (3320, 0 demotions) — all PASS.
 No claim promoted past its honest level; the one new CORE claim is a gap-free finite shadow that
 explicitly does not close its frontier owner.
+
+### Iteration 13 — integrate 4 not-yet-landed contributions + the open-frontier roadmap
+
+The owner supplied two research-contribution documents (external gravity/quasicrystal/Frobenius
+anchors; a "root derivation" — unity-split + detection-quadratic) and asked to land what was **not
+yet integrated** and to **maintain the repository's roadmap** of open places. A 3-agent audit found
+6 of the 10 proposed claim_ids already integrated and **4 genuinely missing**; those 4 are now
+landed at honest status, and a living roadmap of open places was created.
+
+- **`D0-DETECTION-QUADRATIC-001` (CORE).** 5th independent channel to `p²+p=1` via the detection act:
+  exactly two comparison kinds — membership (∈ ⇒ linear, degree 1) and value (⇒ bilinear=area,
+  degree 2); a third reduces (`p³=2p−1∈span{1,p}`). Lean `D0.Tower.DetectionQuadratic` REUSES the
+  CORE tower-stop algebra + `|{membership,value}|=2`; cert `vp_detection_quadratic_types.py`.
+  **Owner-calibrated:** the decidable algebra is the CORE tower-stop content; the categorical "two
+  kinds exhaust degree-2" is the *forcing reading* (DEF-0.2.2), an independent channel strengthening
+  §05.6 obligation 5 — not a separate machine-checked theorem. Registered CORE (the algebra), per the
+  owner decision "не понижать §2; second channel".
+- **`D0-UNITY-SPLIT-SPACETIME-001` (CERT-CLOSED, LEM).** Dividing unity around ½ ⇒ space (symmetric,
+  exchange-invariant) + time (antisymmetric `s=δ₀`, sign-flip arrow); `δ₀=φ⁻¹−½=(√5−2)/2`;
+  `T=[[0,1],[1,−1]]`, `det=−1=ψφ`, spectrum `{φ⁻¹,−φ}`, one negative eigenvalue ⇒ one arrow. Lean
+  `D0.Synthesis.UnitySplitSpacetime` (gap-free shadow); cert `vp_unity_split_spacetime.py`. **LEM:** the
+  "symmetric S₂-invariant = rank-3 adjacency" step routes to the ALREADY-FORCED rank-3=causal-cone
+  (`D0-RANK3-CAUSAL-CONE-FORCING-001`, Iter-11) — a narrowed residual, not a fresh gap; BTC asymmetry
+  is a confirmation, not a derivation.
+- **`D0-FROBENIUS-DIVISION-3D-001` (BRIDGE owner-edge).** Independent forcing-owner for 3 space dims:
+  Frobenius (1877) ⇒ only ℝ,ℂ,ℍ; ℍ maximal, Im(ℍ)=3=rank-3. Lean `D0.Foundation.FrobeniusDivision3D`
+  (exact ℤ-quaternion Hamilton relations + Im-dim=3) + assumption `D0.Bridge.Assumptions.Frobenius`
+  (`ASSUMP-FROBENIUS-1877`); cert `vp_frobenius_division_3d.py`. **HONEST:** ℍ→𝕆 octet is HYP (dim 𝕆=8
+  vs |Q₈|=8 are two different eights), not a forcing.
+- **`D0-LATTICE-FINITENESS-BRIDGE-001` (BRIDGE owner-edge).** The "why-finite" leg split out of the
+  carrier forcing: Wilson 1974 (lattice rigor; continuum YM = open Clay) + M1 (no exogenous spacing)
+  ⇒ unique self-similar carrier. Cert `vp_lattice_finiteness_bridge.py` (cert-only) + assumption
+  `D0.Bridge.Assumptions.Wilson` (`ASSUMP-WILSON-LATTICE-1974`). Composes with the carrier-forcing.
+
+**Honesty-delta caught by the audit:** the docs treat `rank-3 = causal cone` as an open LEM gap, but
+the repo had already **FORCED** it (Iter-11). Not re-opened — the unity-split's rank-3 dependency was
+routed to the forced node. Much of the contribution prose was already in the books (the §01.14 two-
+cuts/δ₀ subsection, the §01.19a Wilson chain and "four manifestations of one 3") — the user's "многое
+внедрено"; the new work was registering the missing claims + the explicit owner-edges.
+
+**Roadmap.** Created `docs/internal/00_ROADMAP/OPEN_FRONTIER_ROADMAP.md` — a living, registry-anchored,
+5-tier map of every open place (T1 D0-closeable finite/decidable; T2 owner-edged/profinite; T3
+Mathlib-blocked; T4 external owners; T5 owner-decision/hygiene), each item pointing to a real registry
+row or §05.6 obligation, with a "closed since the docs" section so the forced items are not re-opened.
+
+### Iteration 13 metrics
+| metric | Iter12 end | Iter13 now | delta |
+|---|---|---|---|
+| claims | 254 | 258 | +4 (the 4 contributions) |
+| CORE-FORMALIZED | 114 | 115 | +1 (detection-quadratic) |
+| BRIDGE-ASSUMPTIONS-EXPLICIT | 12 | 14 | +2 (Frobenius, Lattice owner-edges) |
+| CERT-CLOSED | 74 | 75 | +1 (unity-split, LEM) |
+| strength | 3320 | 3370 | +50 |
+| integrity demotions | 0 | 0 | — |
+| ledger assumptions | 14 | 16 | +2 (Frobenius-1877, Wilson-1974) |
+
+`lake build D0.All` GREEN (3268 jobs, +5 modules). Guards: `validate_csv` (258), `check_firewall`,
+`check_book_cert_references`, `check_book_publication`, `check_book_assembly`, `run_registered_certs`
+(162 certs, 0 MISSING/FAIL), `check_cert_can_fail` (0 unallowed), aggregates + graph idempotent,
+`d0_score` (3370, 0 demotions, hygiene 100) — all PASS. No claim promoted past its honest level.

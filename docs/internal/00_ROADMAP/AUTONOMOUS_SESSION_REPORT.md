@@ -434,3 +434,36 @@ result, and a concrete confirmation of the "headroom ≠ cheap wins" read.
 - The frontier named in the audit (topological/measure conjugacy, cone-speed metric, Pisot ≥3-letter)
   stays named and external — no D0 action.
 - The 19 grandfathered print-stub certs remain an owner-decision (rewrite-where-finite or leave).
+
+# D0 — Iteration 13 report: 4 contributions integrated + a living open-frontier roadmap
+
+**Headline.** Of the 10 claim_ids in the owner's two contribution docs, an audit found **6 already
+integrated** and **4 genuinely missing**. The 4 are now landed at honest status; a living roadmap of
+open places was created and is maintained from the registry. strength **3320 → 3370 (+50)**;
+CORE **114 → 115**; integrity demotions **0**; `lake build D0.All` GREEN (3268 jobs).
+
+## The four integrations (honest status)
+- **`D0-DETECTION-QUADRATIC-001` — CORE, 2nd channel.** Degree-2 forced by the act of detection: two
+  comparison kinds (membership `∈` ⇒ degree 1; value ⇒ degree 2), a third reduces. Lean reuses the
+  CORE tower-stop algebra; the categorical step is the forcing reading, not a separate theorem.
+- **`D0-UNITY-SPLIT-SPACETIME-001` — LEM.** Unity split ⇒ space (symmetric) + time (antisymmetric
+  `δ₀`); `det T=−1=ψφ`, one negative eigenvalue ⇒ one arrow. The rank-3 step routes to the
+  already-forced cone; not promoted past LEM.
+- **`D0-FROBENIUS-DIVISION-3D-001` — BRIDGE owner-edge.** Frobenius (1877) ⇒ ℍ maximal ⇒ 3 imaginary
+  axes = 3 space; ℍ→𝕆 octet stays HYP (two different 8's).
+- **`D0-LATTICE-FINITENESS-BRIDGE-001` — BRIDGE owner-edge.** The "why-finite" leg (Wilson 1974 + M1),
+  composing with the quasicrystal-carrier "why-φ" forcing.
+
+## Discipline held
+- **Honest delta, no regression.** The docs assumed `rank-3=cone` open; the repo had forced it
+  (Iter-11) — kept forced, the unity-split dependency routed there. Much of the prose was already in
+  the books; the new work was the missing registry claims + the explicit BRIDGE owner-edges.
+- **No over-promotion.** Only the decidable detection-quadratic algebra is CORE; unity-split is LEM;
+  the two owner-edges are explicit BRIDGEs with ledger assumptions; ℍ→𝕆 and γ↔3/8 stay HYP.
+- **Roadmap, not fog.** `OPEN_FRONTIER_ROADMAP.md` is a 5-tier, registry-anchored map; every item
+  points to a real row/obligation, and forced/closed items are explicitly fenced off from re-opening.
+
+## Carried-forward (the roadmap's near-term Tier-1)
+- Q₈→`Z(Q₈)` explicit map; `D0-NO-GO-STRESS-SUITE` scalar-projector Lean; the `D0-EDGE` trace-leg
+  split; the PMNS angle-formula M1-forcing attempt (may resolve to HYP).
+- Everything else stays owner-edged/profinite (Tier 2–4) or owner-decision (Tier 5) — see the roadmap.
