@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 266,
+    "claims": 267,
     "release_status": {
-      "CORE-FORMALIZED": 116,
+      "CORE-FORMALIZED": 117,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 17,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 138,
+      "LEAN_PROVED": 139,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 17,
       "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 117,
+      "core": 118,
       "bridge": 23,
       "no-go": 16,
       "certificate": 94,
@@ -34,7 +34,7 @@
       "frontier": 13
     },
     "domain": {
-      "formal_core": 161,
+      "formal_core": 162,
       "rg": 5,
       "gauge_bridge": 18,
       "smooth_geometry": 14,
@@ -2710,8 +2710,8 @@
       "label": "ASSUMP-COMPACT-LIE-KILLING-NEGATIVE",
       "lean_name": "D0.Bridge.BridgeAssumption.CompactLieKillingNegative",
       "status": "EXPLICIT",
-      "assumption_type": "LIE_ALGEBRA_LIBRARY_GAP",
-      "external_source_or_cert": ""
+      "assumption_type": "CARTAN_COMPACTNESS_CRITERION",
+      "external_source_or_cert": "E. Cartan compactness criterion (classical, absent from Mathlib pin); internal operative proof: D0.Algebra.GaugeActionSignBridge.skew_square_trace_nonpositive"
     },
     {
       "id": "D0-FINAL-BRIDGE-INDEX-001",
@@ -8922,6 +8922,35 @@
       "status": "EXPLICIT",
       "assumption_type": "LATTICE_GAUGE_RIGOR",
       "external_source_or_cert": "Wilson, Phys. Rev. D 10 (1974) 2445; vp_lattice_finiteness_bridge.py"
+    },
+    {
+      "id": "D0-GALOIS-PHI-IRRATIONAL-001",
+      "kind": "claim",
+      "claim_id": "D0-GALOIS-PHI-IRRATIONAL-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02",
+      "section": "phi irrational => genuine quadratic Galois Z2 (Mathlib reuse; upgrades Z2-spinor Galois incarnation, 02.34)",
+      "lean_module": "D0.Algebra.GaloisPhiNontrivial",
+      "lean_theorem": "galois_z2_genuinely_nontrivial;irrational_phi;irrational_psi;phi_ne_psi;irrational_sqrt_five",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter18 reuse item 2] Upgrades the Galois-Z2 incarnation of D0-Z2-SPINOR-COVER-001 from a hand ring-involution (galois_z2_order_two: x|->1-x squares to id on R) to a GENUINE field-theoretic Z2: sqrt 5 is irrational (Mathlib irrational_sqrt_natCast_iff; 5 not a perfect square, native_decide) => phi=(1+sqrt5)/2 and psi=(1-sqrt5)/2 are irrational and phi != psi, so Q(phi)/Q is a genuine degree-2 extension and the phi<->psi conjugation is a nontrivial order-2 automorphism. Lean D0.Algebra.GaloisPhiNontrivial gap-free (Mathlib irrationality + ring). REUSE not reinvention. Full Gal(Q(sqrt5)/Q)=Z2 via IsQuadraticExtension is a further optional rigor step (finrank-2 setup).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Algebra/GaloisPhiNontrivial.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Algebra.GaloisPhiNontrivial",
+      "kind": "lean_module",
+      "label": "D0.Algebra.GaloisPhiNontrivial",
+      "path": "09_LEAN_FORMALIZATION/D0/Algebra/GaloisPhiNontrivial.lean",
+      "exists": true
     }
   ],
   "edges": [
@@ -12664,6 +12693,16 @@
       "source": "D0-LATTICE-FINITENESS-BRIDGE-001",
       "target": "assumption:ASSUMP-WILSON-LATTICE-1974",
       "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-GALOIS-PHI-IRRATIONAL-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-GALOIS-PHI-IRRATIONAL-001",
+      "target": "module:D0.Algebra.GaloisPhiNontrivial",
+      "kind": "implemented_in"
     }
   ]
 }

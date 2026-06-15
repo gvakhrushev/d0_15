@@ -10,6 +10,7 @@ import D0.Algebra.Clifford
 import D0.Algebra.Clifford13
 import D0.Algebra.CliffordExplicit
 import D0.Algebra.D0InternalDimensionSelector
+import D0.Algebra.GaloisPhiNontrivial
 import D0.Algebra.GammaMatrices
 import D0.Algebra.GaugeActionSignBridge
 import D0.Algebra.GaugeKineticPositivity

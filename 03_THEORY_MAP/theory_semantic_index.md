@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 17
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 79
-- `CORE-FORMALIZED`: 116
+- `CORE-FORMALIZED`: 117
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 23
 - `certificate`: 94
-- `core`: 117
+- `core`: 118
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -31,7 +31,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 23
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 161
+- `formal_core`: 162
 - `frontier`: 13
 - `gauge_bridge`: 18
 - `interpretation_spine`: 1
@@ -2013,6 +2013,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Exact p+p^2=1 positive root uniqueness.
+
+### D0-GALOIS-PHI-IRRATIONAL-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Algebra.GaloisPhiNontrivial`
+- theorem: `galois_z2_genuinely_nontrivial;irrational_phi;irrational_psi;phi_ne_psi;irrational_sqrt_five`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter18 reuse item 2] Upgrades the Galois-Z2 incarnation of D0-Z2-SPINOR-COVER-001 from a hand ring-involution (galois_z2_order_two: x|->1-x squares to id on R) to a GENUINE field-theoretic Z2: sqrt 5 is irrational (Mathlib irrational_sqrt_natCast_iff; 5 not a perfect square, native_decide) => phi=(1+sqrt5)/2 and psi=(1-sqrt5)/2 are irrational and phi != psi, so Q(phi)/Q is a genuine degree-2 extension and the phi<->psi conjugation is a nontrivial order-2 automorphism. Lean D0.Algebra.GaloisPhiNontrivial gap-free (Mathlib irrationality + ring). REUSE not reinvention. Full Gal(Q(sqrt5)/Q)=Z2 via IsQuadraticExtension is a further optional rigor step (finrank-2 setup).
 
 ### D0-GEN-INDEX-001
 

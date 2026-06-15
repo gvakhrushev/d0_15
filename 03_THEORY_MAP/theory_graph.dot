@@ -267,6 +267,7 @@ digraph D0Theory {
   "D0-UNITY-SPLIT-SPACETIME-001" [label="D0-UNITY-SPLIT-SPACETIME-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-FROBENIUS-DIVISION-3D-001" [label="D0-FROBENIUS-DIVISION-3D-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-LATTICE-FINITENESS-BRIDGE-001" [label="D0-LATTICE-FINITENESS-BRIDGE-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-GALOIS-PHI-IRRATIONAL-001" [label="D0-GALOIS-PHI-IRRATIONAL-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1763,4 +1764,8 @@ digraph D0Theory {
   "D0-LATTICE-FINITENESS-BRIDGE-001" -> "assumption:ASSUMP-WILSON-LATTICE-1974" [label="assumption"];
   "domain:smooth_geometry" [label="smooth_geometry", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-LATTICE-FINITENESS-BRIDGE-001" -> "domain:smooth_geometry" [label="domain"];
+  "module:D0.Algebra.GaloisPhiNontrivial" [label="D0.Algebra.GaloisPhiNontrivial", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-GALOIS-PHI-IRRATIONAL-001" -> "module:D0.Algebra.GaloisPhiNontrivial" [label="module"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-GALOIS-PHI-IRRATIONAL-001" -> "domain:formal_core" [label="domain"];
 }

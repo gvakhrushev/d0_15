@@ -396,7 +396,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-UNITY-SPLIT-SPACETIME-001", moduleName := "D0.Synthesis.UnitySplitSpacetime",
       theoremName := "unity_split_spacetime", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FROBENIUS-DIVISION-3D-001", moduleName := "D0.Foundation.FrobeniusDivision3D",
-      theoremName := "frobenius_division_3d", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "frobenius_division_3d", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-GALOIS-PHI-IRRATIONAL-001", moduleName := "D0.Algebra.GaloisPhiNontrivial",
+      theoremName := "galois_z2_genuinely_nontrivial;irrational_phi;irrational_psi;phi_ne_psi;irrational_sqrt_five", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

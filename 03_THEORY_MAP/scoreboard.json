@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3449,
-    "track_fair_max": 4723,
-    "pct_strength": 73.0,
-    "core_realized": 2909,
-    "core_potential": 4160,
+    "realized": 3469,
+    "track_fair_max": 4743,
+    "pct_strength": 73.1,
+    "core_realized": 2929,
+    "core_potential": 4180,
     "core_headroom": 1251,
-    "n_claims": 266,
-    "n_active": 264,
+    "n_claims": 267,
+    "n_active": 265,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 160,
-      "realized": 2300,
-      "max": 3036,
+      "n": 161,
+      "realized": 2320,
+      "max": 3056,
       "core_headroom": 731
     },
     "rg": {
@@ -118,9 +118,9 @@
       "core_headroom": 55
     },
     "BOOK_02": {
-      "n": 9,
-      "realized": 127,
-      "max": 153,
+      "n": 10,
+      "realized": 147,
+      "max": 173,
       "core_headroom": 26
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
@@ -5685,6 +5685,20 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "smooth_geometry",
       "book": "BOOK_01/06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GALOIS-PHI-IRRATIONAL-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
       "leverage": 0,
       "integrity_flag": null
     }
