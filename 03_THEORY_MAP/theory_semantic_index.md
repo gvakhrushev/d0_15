@@ -1748,11 +1748,11 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - domain: `formal_core`
 - book: `BOOK_06/07`
 - module: `D0.Geometry.ArchiveRefinementTower`
-- theorem: `terminal_readout_stable;archive_depth_strictly_increases;spectral_modes_strictly_increase;archive_projection_surjective`
+- theorem: `terminal_readout_stable;archive_depth_strictly_increases;spectral_modes_strictly_increase;archive_projection_surjective;archive_tower_defines_profinite_object;inverseLimit_nonempty`
 - cert: `none`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: Terminal readout stable while archive/spectral refinement grows.
+- notes: Terminal readout stable while archive/spectral refinement grows. [Iter19] profinite-object fact now REAL (inverseLimit_nonempty: coherent threads exist via surjective bonding maps + choice; DefinesProfiniteObject no longer := True).
 
 ### D0-ARCHIVE-VARIATION-DUAL-001
 

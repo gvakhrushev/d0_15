@@ -140,11 +140,37 @@ theorem archive_projection_system_surjective :
   ∀ n, Function.Surjective (archiveProjection n) :=
   archive_projection_surjective
 
-def DefinesProfiniteObject (_S : FiniteInverseSystem) : Prop :=
-  True
+/-- The inverse limit of a finite inverse system: coherent threads through all levels. -/
+def InverseLimit (S : FiniteInverseSystem) : Type :=
+  {f : (n : Nat) → S.Obj n // ∀ n, S.map n (f (n + 1)) = f n}
 
+/-- An ℕ-indexed inverse system of NONEMPTY finite sets with surjective bonding maps has a nonempty
+inverse limit: a coherent thread is built upward by choosing a preimage at each level. -/
+theorem inverseLimit_nonempty (S : FiniteInverseSystem)
+    (hne : ∀ n, Nonempty (S.Obj n)) : Nonempty (InverseLimit S) := by
+  classical
+  let f : (n : Nat) → S.Obj n :=
+    fun n => @Nat.rec (fun n => S.Obj n) (hne 0).some (fun k fk => (S.surj k fk).choose) n
+  have hstep : ∀ n, f (n + 1) = (S.surj n (f n)).choose := fun _ => rfl
+  exact ⟨⟨f, fun n => by rw [hstep]; exact (S.surj n (f n)).choose_spec⟩⟩
+
+/-- Each archive level `Fin (modes n)` is nonempty (`modes n = (n+2)^4 > 0`). -/
+theorem archivePoints_nonempty : ∀ n, Nonempty (ArchivePoints n) := by
+  intro n
+  have h : 0 < (archiveTower n).modes := by
+    simp [archiveTower, archiveModes, archiveDepth, archiveFibers]
+  exact ⟨⟨0, h⟩⟩
+
+/-- A finite inverse system "defines a profinite object" when its inverse limit is inhabited — coherent
+infinite threads exist (the profinite point space is nonempty). The full compact-Hausdorff totally-
+disconnected topology is the Mathlib `Profinite`/`LightProfinite` continuation. -/
+def DefinesProfiniteObject (S : FiniteInverseSystem) : Prop :=
+  Nonempty (InverseLimit S)
+
+/-- The archive refinement tower defines a (nonempty) profinite object: its inverse limit is inhabited,
+since each level is a nonempty finite set and the bonding projections are surjective. -/
 theorem archive_tower_defines_profinite_object :
-  DefinesProfiniteObject archiveProfiniteSystem :=
-  trivial
+    DefinesProfiniteObject archiveProfiniteSystem :=
+  inverseLimit_nonempty archiveProfiniteSystem archivePoints_nonempty
 
 end D0

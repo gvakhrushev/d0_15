@@ -68,7 +68,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PHASE-TOWER-002", moduleName := "D0.Combinatorics.InfinitePhaseTower",
       theoremName := "capacity_recursion_total;forced_terminal_window_all;current_recursion_stabilizes_at_shell_two", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-ARCHIVE-TOWER-001", moduleName := "D0.Geometry.ArchiveRefinementTower",
-      theoremName := "terminal_readout_stable;archive_depth_strictly_increases;spectral_modes_strictly_increase;archive_projection_surjective", status := ClaimStatus.leanCoreProved },
+      theoremName := "terminal_readout_stable;archive_depth_strictly_increases;spectral_modes_strictly_increase;archive_projection_surjective;archive_tower_defines_profinite_object;inverseLimit_nonempty", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-MODE-EXPONENT-001", moduleName := "D0.Geometry.ArchiveModeExponent",
       theoremName := "archive_mode_exponent_eq_abcd;archive_mode_exponent_eq_lorentz_dimension;archive_modes_forced", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-HEATTRACE-001", moduleName := "D0.Geometry.ArchiveHeatTrace",
