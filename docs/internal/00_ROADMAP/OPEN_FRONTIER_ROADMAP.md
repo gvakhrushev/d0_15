@@ -62,9 +62,36 @@ _Last synced: 2026-06-15 (Iteration 13). Registry: 258 claims, strength 3370, in
 
 | item | status | disposition |
 |---|---|---|
-| 19 grandfathered print-stub certs (compute-but-don't-gate) | explicit ratchet (`tools/check_cert_can_fail.py`), must only shrink | rewrite-where-finite-content-exists, else leave grandfathered (owner-decision) |
+| ~~19~~ **8** grandfathered print-stub certs (compute-but-don't-gate) | explicit ratchet (`tools/check_cert_can_fail.py`), must only shrink — **shrunk 19→8 in Iter-16** | ✅ the 11 with finite content rewritten to can-FAIL (Iter-16); the 8 left are genuine non-gatable residue (2 proxies, 1 search declaration, 5 empirical-passport templates with no data loaded) — owner-decision |
 | `nullity 30 = icosahedron edges` | confirmed **coincidence**, kept flagged | do not promote to a derivation (anti-numerology) |
 | `K(9,11,13)` ↔ explicit `33D→3D` cut-and-project | `D0-QUASICRYSTAL-PROJECTION-001` resolved by separation (`D0-CARRIER-NOT-ICOSAHEDRAL-001`); the *explicit projection reproducing (9,11,13)* stays a named screw | do not fit the projection to (9,11,13) |
+
+---
+
+## Frontier disposition (Iter-16 full audit — honest verdict)
+
+A full audit of every Tier 2–5 item ("take it all") found that **none of the analytic frontier is
+finite-closeable now** — fabricating a closure would violate the discipline. The honest split:
+
+- **1 already-at-limit / sharpened:** obligation-4 residue amplitudes (`D0-CVFT-F1`) — the moment
+  *shape* is forced (`D0-DELTA-ALPHA-MOMENT-001`, Iter-12); only the two residue *values* remain, and
+  they are the profinite `s→pole` continuation. Nothing finite left to add.
+- **7 Mathlib-blocked:** obligation-6 ergodic conjugacy (Sturm–Morse–Hedlund); the K-theory chain
+  (`D0-KTHEORY-001`, `QUASI007/008/009`, `SOLENOID-001/GRAVITY-001`, `MESON-K0-001`) — each has its
+  **finite shadow already certified**; the missing piece is operator K-theory / spectral-triple
+  (Bellissard IDS→K₀), absent from Mathlib 4.30. Wait for Mathlib.
+- **7 external owners:** `CVFT-F2` (boundary operator + passport), `CVFT-F6` (continuum Yang–Mills
+  mass gap, a Clay problem), `CVFT-F8` (DESI DR3 data), `D0-HODGE-LINKS-001` / `D0-SPECTRAL-EINSTEIN-001`
+  (a new A2-Einstein finite witness — not in the current architecture), cone-speed metric (Connes
+  reconstruction), Pisot ≥3-letter (number theory).
+- **3 already-at-limit (HYP / separation):** ℍ→𝕆 octet (two different 8's, coincidence), γ↔3/8 packing
+  (limits diverge; D=4 coincidence), `33D→3D` projection (separation done; explicit projection a named
+  screw by owner-decision).
+
+So Iter-16's "take it all" resolved to: **close the closeable** (11 grandfathered stubs → can-FAIL;
+all Tier-1 done in Iter-15) and **confirm-and-name the rest** — the frontier is honestly blocked, not
+abandoned. Re-attack each item only when its blocker lifts (Mathlib gains K-theory/ergodic; DESI DR3
+lands; a new A2-Einstein witness or resolvent-trace engine is built).
 
 ---
 

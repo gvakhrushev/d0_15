@@ -1163,3 +1163,40 @@ verified-closure unit at its honest status. Three real closures + one honest sha
 graph/aggregates idempotent — all PASS. Honest split: three genuine closures, one honest dual that
 sharpens without over-promoting; the remaining Tier-1 item (detection-quadratic categorical
 machine-theorem) and all Tier 2–5 frontier stay named in the roadmap.
+
+### Iteration 16 — sweep the remaining frontier ("take it all": close the closeable, name the blocked)
+
+Owner asked to take the whole remaining roadmap at once. A full audit established the honest split:
+the only genuinely finite-closeable work left was the grandfathered-stub debt; the entire Tier 2–5
+analytic frontier is Mathlib-blocked / external / already-at-limit and cannot be closed now without
+fabrication. So the iteration closed the closeable and confirmed-and-named the rest.
+
+- **11 grandfathered print-stub certs → can-FAIL** (commit `68926e7`). The `check_cert_can_fail`
+  GRANDFATHER ratchet held 19 compute-but-don't-gate certs. An audit split them 11 (finite content,
+  rewritable) / 8 (genuine non-gatable residue: 2 proxies, 1 search declaration, 5 empirical-passport
+  templates with no data loaded). The 11 were rewritten (3 parallel agents) to assert their computed
+  quantity + a negative control, each verified PASS-on-correct / FAIL-on-corrupted: mincut S=A/4;
+  fractal ΔB>0∧Δ²B<0; relative-archive Δ²R>0∧R''>0; archive-pressure ΔP>0; logdet dL/dV>0;
+  nonabelian-seam E_abel=0∧E_non>0; baryon image-ranks 40,56 + image-isometry; ramification branch>0;
+  v1132 anomaly-cancellation (|V|=33,E=359,△=1287, four sums=0, D_EW=35); v1143 windows q_T=44/q_EW=710
+  with sharp totients; v1145 Clifford/RG(h=logφ)/projection residuals <1e-12. Ratchet **19→8 (−11)**;
+  no claim status changed (gating, not promotion); strength steady 3388, hygiene 100.
+- **Frontier disposition recorded** (`OPEN_FRONTIER_ROADMAP.md` Iter-16 audit). Verdict: 1
+  already-at-limit (obligation-4 residues, profinite), 7 Mathlib-blocked (ergodic conjugacy + the
+  K-theory chain — finite shadows certified, IDS→K₀ absent from Mathlib), 7 external (CVFT-F2/F6/F8,
+  Hodge/A2-Einstein witness, Connes metric, Pisot), 3 already-at-limit HYP/separation (ℍ→𝕆, γ↔3/8,
+  projection). None finite-closeable now; all named, none fabricated.
+
+### Iteration 16 metrics
+| metric | Iter15 end | Iter16 now | delta |
+|---|---|---|---|
+| grandfathered print-stub certs | 19 | 8 | −11 (rewritten to can-FAIL) |
+| can-FAIL guard | PASS (19 grandfathered) | PASS (8 grandfathered, 0 unallowed) | ratchet shrunk |
+| strength | 3388 | 3388 | — (gating, not promotion) |
+| integrity demotions | 0 | 0 | — |
+| Tier 2–5 frontier | open, mixed | audited: 0 finite-closeable, all named (7 Mathlib / 7 external / 4 at-limit) | confirmed |
+
+`check_cert_can_fail` (164 certs, 8 grandfathered, 0 unallowed, 0 missing), `run_registered_certs`
+(164 → PASS 162, SKIP 2, FAIL 0, MISSING 0), `d0_score` (3388, 0 demotions, hygiene 100) — all PASS.
+Honest outcome: every genuinely-closeable item across Iter-13→16 is now closed; the residual frontier
+is a finite, named, blocker-tagged list — the honest measure of distance to full closure.
