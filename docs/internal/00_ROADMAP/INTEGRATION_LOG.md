@@ -1200,3 +1200,49 @@ fabrication. So the iteration closed the closeable and confirmed-and-named the r
 (164 → PASS 162, SKIP 2, FAIL 0, MISSING 0), `d0_score` (3388, 0 demotions, hygiene 100) — all PASS.
 Honest outcome: every genuinely-closeable item across Iter-13→16 is now closed; the residual frontier
 is a finite, named, blocker-tagged list — the honest measure of distance to full closure.
+
+### Iteration 17 — ТЗ + ТЗ-2: GOLDEN recovery (registry-gated), Δ_α/Connes/phason, cleanup
+
+Two owner ТЗ. ТЗ-1 ("return the load-bearing GOLDEN layer") was corrected by ТЗ-2 to the right
+criterion: **value = registry closure, not GOLDEN presence**; close genuinely-open, do NOT drag back
+what the registry closed better / put out of core / marked no-go. Every unit verified-then-promoted;
+honest gates, no fabricated closures.
+
+- **Cleanup (housekeeping):** removed ~51 MB local untracked junk (graphify-out/, __pycache__, .lake,
+  .agents/.codex, scratch *_results.json). git-tracked tree untouched.
+- **Mass chain returned (`ca886a3`, D0-MASS-CHAIN-001):** π₀=(6/5)φ² confirmed DERIVED (BOOK_04
+  §04.6.π.4); restored m₀=2π₀, t₀=1/m₀ (were staged-only); recorded the exact α↔mass stitch
+  μ₂=2¹¹π₀φ⁻²=2¹⁰m₀φ⁻². Phase B ontology: mass=τ⁻¹ (core), m_rest=m₀·W with **W a physical input
+  (passport), not core** — resolves the W flag (W not from GOLDEN, GOLDEN ledger archivable).
+- **rank-3 metric (`636adb2`, D0-RANK3-METRIC-TRANSPORT-001):** the spatial metric = equitable-quotient
+  transport quadratic form (charpoly λ³−359λ−2574, eigenvalues {−12.08,−9.76,+21.84}, signature (1+,2−));
+  **anisotropy falsifier** (9≠11≠13 splits the negatives; isotropic only in equal-zone limit).
+- **Δ_α residue attack (`1e1f857`, CVFT-F1 SHARPENED not closed):** Feshbach–Schur trace engine derives
+  μ₁=1/rank, owns π₀; but 2¹¹ is not a block-trace count and the naive edge-pushforward pairs
+  active↔archive with multiplicity 2 (na=2,nb=357) not 2¹¹ ⇒ the gap is narrowed to the 2¹¹=2^V₁₁
+  pairing multiplicity. CVFT-F1 stays PROOF-TARGET. No fake closure.
+- **Connes (`b1704ed`, D0-CONNES-DISTANCE-GEODESIC-001, c=1 CONFIRMED):** Connes distance = graph
+  geodesic; c=1=edge/tick structural ⇒ the §07.51.3 cone-speed unit is internalized;
+  ASSUMP-CONNES-RECONSTRUCTION reclassified **owner→continuum-limit confirmation** (only the
+  finite→smooth limit stays external).
+- **phason thawing (D0-PHASON-THAWING-001):** Δ²R_n=φⁿ(φ−1)²>0 (forced convex) ⇒ thawing class w>−1,
+  phantom excluded (concavity needed); w₀ = cosmo-input; DESI phantom = CPL artefact (arXiv:2504.15190).
+- **8 "load-bearing forcings" classified vs registry (Phase C):** none is a genuine new core closure —
+  5 already CLOSED (ρ=3/5, factor-2, Lorentz-tick, charge-H¹, and golden-split W_int=W_ext² = the
+  primitive p+p²=1, cross-reffed to D0-DETECTION-QUADRATIC-001); 1 axiom (M1, externally corroborated);
+  1 honest-negative (CKM/PMNS complementarity, rejected). ℏ-symplectic (THE 2.9A) & charge-H¹ (THE
+  9.1.2) are prose-owned but cert-pending (hygiene, not gaps). Fabricated nothing.
+
+**DID NOT touch (per ТЗ-2 "не трогать"):** generations (GEN-INDEX branch-defect), mass hierarchy
+(GEN-MASS no-go), Cabibbo (CLASS5-ALIASING), α μ-form (already forced), Born/Clifford/Lorentz (bridge).
+
+### Iteration 17 metrics
+| metric | start (3402 prior) | Iter17 end | delta |
+|---|---|---|---|
+| strength | 3388 (Iter16) | 3409 | +21 (4 new CERT-CLOSED + recovery) |
+| claims | 259 | 263 | +4 (mass-chain, metric-transport, connes-geodesic, phason-thawing) |
+| integrity demotions | 0 | 0 | — |
+| local junk | ~51 MB | 0 | cleaned |
+
+All guards PASS (169 certs, 0 MISSING/FAIL); no claim promoted past its honest level (CVFT-F1 stays
+PROOF-TARGET; mass spectrum stays out of core; W = physinput).

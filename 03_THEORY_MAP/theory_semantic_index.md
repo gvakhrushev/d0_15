@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 14
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 78
+- `CERT-CLOSED`: 79
 - `CORE-FORMALIZED`: 116
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 20
-- `certificate`: 93
+- `certificate`: 94
 - `core`: 117
 - `deprecated`: 3
 - `frontier`: 13
@@ -28,7 +28,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain counts
 
-- `cosmology`: 22
+- `cosmology`: 23
 - `empirical_passport`: 22
 - `external_background`: 1
 - `formal_core`: 159
@@ -106,6 +106,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]
+
+### D0-PHASON-THAWING-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_thawing.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter17 ТЗ-2 Phase E] The relative archive ratio R_n=phi^n-1 is CONVEX: Delta^2 R_n=phi^n(phi-1)^2>0 exact (forced, no parameter) => the dark-energy class is THAWING (w>-1) and can NEVER cross to phantom (w<-1 would need a concave archive Delta^2R<0, which phi-growth forbids). Cert vp_phason_thawing.py (can-FAIL; control: saturating 1-phi^-n is concave => would admit phantom). HONEST: forced part is the SIGN/CLASS (convex=>thawing); w0 is a COSMOLOGICAL INPUT (e-folds), NOT a D0 parameter, not promoted; DESI apparent phantom-crossing read as a CPL-parametrization artefact (arXiv:2504.15190), DR3 phys-model fit is the falsifier. Sharpens the H0-evolving-w passport (D0-H0-EVOLVING-W-001).
 
 ### D0-COSMO-002
 
@@ -1921,7 +1934,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_detection_quadratic_types.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: [Iter13] 5th independent channel to p2+p=1 via the detection act: exactly two comparison types -- membership (in, levels 1<->2 different categories => linear, degree 1) and value (levels 2<->3 one category => bilinear=area, degree 2); a would-be third reduces (p3=2p-1 in span{1,p}). Lean D0.Tower.DetectionQuadratic (detection_quadratic) reuses the CORE tower-stop algebra (degree2_closure, p_cubed_reduces) + |{membership,value}|=2. Cert vp_detection_quadratic_types.py (can-FAIL: closure, two-types, no-third, neighbour-exclusion). HONEST: the decidable ALGEBRA is the CORE tower-stop content (D0-TOWER-STOP-NOEXT-001); the categorical 'two kinds exhaust degree-2' is the forcing READING (DEF-0.2.2), an independent channel that STRENGTHENS obligation 5, NOT a separate machine-checked categorical theorem and NOT a replacement of the no-go.
+- notes: [Iter13] 5th independent channel to p2+p=1 via the detection act: exactly two comparison types -- membership (in, levels 1<->2 different categories => linear, degree 1) and value (levels 2<->3 one category => bilinear=area, degree 2); a would-be third reduces (p3=2p-1 in span{1,p}). Lean D0.Tower.DetectionQuadratic (detection_quadratic) reuses the CORE tower-stop algebra (degree2_closure, p_cubed_reduces) + |{membership,value}|=2. Cert vp_detection_quadratic_types.py (can-FAIL: closure, two-types, no-third, neighbour-exclusion). HONEST: the decidable ALGEBRA is the CORE tower-stop content (D0-TOWER-STOP-NOEXT-001); the categorical 'two kinds exhaust degree-2' is the forcing READING (DEF-0.2.2), an independent channel that STRENGTHENS obligation 5, NOT a separate machine-checked categorical theorem and NOT a replacement of the no-go. [Iter17 ТЗ-2 Phase F cross-ref] The GOLDEN 'golden split' W_ext+W_int=1 with W_int=W_ext^2 (THE 6.1.2, BOOK_06 SS06.6) is the SAME primitive quadratic: W_ext=phi^-1=p, W_int=phi^-2=p^2, so W_ext^2+W_ext-1=0 is p+p^2=1. It is a 6th reading (external/internal complexity split) of this already-CORE closure -- cross-ref only, not a new claim.
 
 ### D0-DIM-LADDER-COMPACT-001
 

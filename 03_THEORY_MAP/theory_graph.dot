@@ -224,6 +224,7 @@ digraph D0Theory {
   "D0-PHASON-FORCING-001" [label="D0-PHASON-FORCING-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PMNS-DELTA0-NUFIT-001" [label="D0-PMNS-DELTA0-NUFIT-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-H0-EVOLVING-W-001" [label="D0-H0-EVOLVING-W-001\\nEMPIRICAL-PASSPORT\\nsi_calibration", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-PHASON-THAWING-001" [label="D0-PHASON-THAWING-001\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-E8-COLDEA-ANCHOR-001" [label="D0-E8-COLDEA-ANCHOR-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-RANK3-CAUSAL-CONE-001" [label="D0-RANK3-CAUSAL-CONE-001\\nCORE-FORMALIZED\\nsmooth_geometry", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-DELTA-ALPHA-EXACT-001" [label="D0-DELTA-ALPHA-EXACT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -1479,6 +1480,12 @@ digraph D0Theory {
   "D0-H0-EVOLVING-W-001" -> "cert:vp_h0_evolving_w.py" [label="cert"];
   "domain:si_calibration" [label="si_calibration", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-H0-EVOLVING-W-001" -> "domain:si_calibration" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PHASON-THAWING-001" -> "module:" [label="module"];
+  "cert:vp_phason_thawing.py" [label="vp_phason_thawing.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PHASON-THAWING-001" -> "cert:vp_phason_thawing.py" [label="cert"];
+  "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PHASON-THAWING-001" -> "domain:cosmology" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-E8-COLDEA-ANCHOR-001" -> "module:" [label="module"];
   "cert:vp_e8_coldea_anchor.py" [label="vp_e8_coldea_anchor.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];

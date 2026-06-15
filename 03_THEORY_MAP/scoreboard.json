@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 3409,
-    "track_fair_max": 4670,
-    "pct_strength": 73.0,
-    "core_realized": 2902,
-    "core_potential": 4140,
-    "core_headroom": 1238,
-    "n_claims": 262,
-    "n_active": 260,
+    "realized": 3416,
+    "track_fair_max": 4690,
+    "pct_strength": 72.8,
+    "core_realized": 2909,
+    "core_potential": 4160,
+    "core_headroom": 1251,
+    "n_claims": 263,
+    "n_active": 261,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -68,10 +68,10 @@
       "core_headroom": 75
     },
     "cosmology": {
-      "n": 22,
-      "realized": 354,
-      "max": 419,
-      "core_headroom": 65
+      "n": 23,
+      "realized": 361,
+      "max": 439,
+      "core_headroom": 78
     },
     "external_background": {
       "n": 1,
@@ -172,10 +172,10 @@
       "core_headroom": 70
     },
     "BOOK_08": {
-      "n": 46,
-      "realized": 670,
-      "max": 809,
-      "core_headroom": 135
+      "n": 47,
+      "realized": 677,
+      "max": 829,
+      "core_headroom": 148
     },
     "BOOK_05/06": {
       "n": 6,
@@ -1016,6 +1016,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-PHASON-THAWING-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-MASS-CHAIN-001",
       "domain": "formal_core",
       "book": "BOOK_04/06",
@@ -1814,6 +1824,13 @@
     {
       "claim_id": "D0-PHASON-FORCING-001",
       "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-PHASON-THAWING-001",
+      "domain": "cosmology",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -5065,6 +5082,20 @@
       "release_status": "EMPIRICAL-PASSPORT",
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "si_calibration",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-THAWING-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "cosmology",
       "book": "BOOK_08",
       "leverage": 0,
       "integrity_flag": null
