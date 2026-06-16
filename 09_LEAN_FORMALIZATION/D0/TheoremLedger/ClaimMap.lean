@@ -424,7 +424,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-BSD-RANK-PASSPORT-001", moduleName := "D0.Synthesis.BSDRankNullityPassport",
       theoremName := "bsd_rank_nullity_passport", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-MASSGAP-COSTQUANTUM-001", moduleName := "D0.Gauge.MassGapCostQuantum",
-      theoremName := "positive_cost_quantum;deltaS_min_pos;cost_weights_sum_one", status := ClaimStatus.leanCoreProved }
+      theoremName := "positive_cost_quantum;deltaS_min_pos;cost_weights_sum_one", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HODGE-M1-REDUCTIO-001", moduleName := "D0.Topology.HodgeAlgebraicRealization",
+      theoremName := "hodge_nonalgebraic_needs_catalogue;hodge_algebraic_m1_forced;hodge_algebraic_unique", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

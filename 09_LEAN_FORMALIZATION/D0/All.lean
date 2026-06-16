@@ -326,6 +326,7 @@ import D0.Topology.BoundaryBoundary
 import D0.Topology.DeloneInstance
 import D0.Topology.FiniteCochainNoAxion
 import D0.Topology.GradedIncidenceComplex
+import D0.Topology.HodgeAlgebraicRealization
 import D0.Topology.NoThreeSimplices
 import D0.Topology.SimplicialIncidence
 import D0.Topology.TilingHull
