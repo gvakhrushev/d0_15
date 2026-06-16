@@ -44,18 +44,12 @@ TRIV_GOAL = re.compile(r":\s*([A-Za-z_][\w'.]*)\s*:=\s*(?:by\s+)?trivial\b")
 
 # Iter-18 audit baseline: vacuous-True stubs accepted as redundant doc/summary markers
 # (their claims were repointed to real sibling theorems). The set may only shrink.
+# Iter-19: the 11 operator-origin / no-go / boundary markers were CONVERTED from `: Prop := True`
+# to real statements proved by their module's load-bearing siblings (capacity-core symmetry,
+# gauge / non-abelian curvature skew-closure, vector-operator energy >= 0, flat-tensor no-go
+# symmetry, edge scalar-leakage no-go, internal Hurwitz-dimension closure, ...). Ratchet 12 -> 1.
+# The single remaining entry is a release-status documentation token (no math sibling).
 GRANDFATHER: set[str] = {
-    "Gauge/BianchiResidual.lean::exact_residual_graph_anomaly_boundary_proof",
-    "Gauge/FlatTensorNoGo.lean::naive_flat_tensor_nonabelian_boundary_proof",
-    "Gauge/MatrixRepGaugeTransform.lean::abstract_lieRing_finite_transform_requires_associative_representation",
-    "Gauge/MatrixRepGaugeTransform.lean::exact_bianchi_identity_replaced_by_graded_incidence_closure",
-    "Gauge/NonAbelianDiscreteCurvature.lean::nonabelian_discrete_curvature_boundary_proof",
-    "Matter/GaugeCurvatureOrigin.lean::gauge_curvature_origin_closed_proof",
-    "Matter/GaugeCurvatureOrigin.lean::nonabelian_completion_boundary_proof",
-    "Matter/VectorOperatorOrigin.lean::vector_operator_origin_closed_proof",
-    "Geometry/EdgeStiffnessOrigin.lean::edge_stiffness_origin_closed_proof",
-    "Geometry/EdgeStiffnessOrigin.lean::edge_stiffness_scalar_leakage_no_go_proof",
-    "Algebra/D0InternalDimensionSelector.lean::global_hurwitz_classification_not_core_dependency",
     "TheoremLedger/ReleaseStatus.lean::lean_bridge_assumptions_explicit",
 }
 

@@ -25,10 +25,16 @@ theorem flat_tensor_of_two_skew_is_symmetric {s a : Type}
     linarith
   simp [Matrix.transpose_apply, hA_apply, hT_apply]
 
-def naive_flat_tensor_nonabelian_boundary : Prop := True
+/-- No-go: the naive flat (Kronecker) tensor of two skew gauge operators is SYMMETRIC, not skew, so
+it cannot itself be a non-abelian curvature (instantiates the proved
+`flat_tensor_of_two_skew_is_symmetric`). -/
+def naive_flat_tensor_nonabelian_boundary : Prop :=
+  ∀ {s a : Type} (A : Matrix s s ℝ) (T : Matrix a a ℝ),
+    A.transpose = -A → T.transpose = -T → (flatTensor A T).transpose = flatTensor A T
 
 theorem naive_flat_tensor_nonabelian_boundary_proof :
     naive_flat_tensor_nonabelian_boundary := by
-  trivial
+  intro s a A T hA hT
+  exact flat_tensor_of_two_skew_is_symmetric A T hA hT
 
 end D0.Gauge

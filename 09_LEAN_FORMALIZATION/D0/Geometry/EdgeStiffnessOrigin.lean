@@ -83,14 +83,21 @@ theorem edge_projection_prevents_scalar_leakage :
     (edgeLeakH * edgeLeakP + edgeLeakP * edgeLeakH) 0 0 ≠ 0 := by
   norm_num [edgeLeakH, edgeLeakP, Matrix.add_apply, Matrix.mul_apply]
 
-def edge_stiffness_origin_closed : Prop := True
+/-- The edge-stiffness construction closes: the capacity core `B Bᵀ` is symmetric for every base
+matrix (instantiates the proved `capacityCore_symmetric`). -/
+def edge_stiffness_origin_closed : Prop :=
+  ∀ {n : Type} [Fintype n] (B : Matrix n n ℝ), (capacityCore B).transpose = capacityCore B
 
 theorem edge_stiffness_origin_closed_proof : edge_stiffness_origin_closed := by
-  trivial
+  intro n _ B
+  exact capacityCore_symmetric B
 
-def edge_stiffness_scalar_leakage_no_go : Prop := True
+/-- No-go: the symmetric off-diagonal edge projection prevents scalar (diagonal) leakage — the
+`(0,0)` entry of the edge anticommutator is nonzero (`edge_projection_prevents_scalar_leakage`). -/
+def edge_stiffness_scalar_leakage_no_go : Prop :=
+  (edgeLeakH * edgeLeakP + edgeLeakP * edgeLeakH) 0 0 ≠ 0
 
 theorem edge_stiffness_scalar_leakage_no_go_proof : edge_stiffness_scalar_leakage_no_go := by
-  trivial
+  exact edge_projection_prevents_scalar_leakage
 
 end D0.Geometry

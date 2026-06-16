@@ -75,10 +75,16 @@ theorem d0_selector_closes_core_internal_dimension :
   exact (d0_admissible_dimension_iff d.value).mpr
     (d0_internal_dimension_value d)
 
-def globalHurwitzClassificationExternalBackground : Prop := True
+/-- The global Hurwitz classification is external background, NOT a D0 core dependency: D0's own
+finite selector closes every internal dimension into `{1,2,4,8}` and exhibits the dimension-8
+(octonion) witness as non-associative-matrix — reproducing the Hurwitz dimensions internally via its
+own witnesses, without invoking the external classification theorem. -/
+def globalHurwitzClassificationExternalBackground : Prop :=
+  (∀ d : D0InternalDimension, D0AdmissibleDimension d.value)
+  ∧ octonionFiniteCompositionWitness.associativeMatrixAlgebra = false
 
 theorem global_hurwitz_classification_not_core_dependency :
-    globalHurwitzClassificationExternalBackground := by
-  trivial
+    globalHurwitzClassificationExternalBackground :=
+  ⟨d0_selector_closes_core_internal_dimension, octonion_witness_not_associative_matrix_algebra⟩
 
 end D0.Algebra

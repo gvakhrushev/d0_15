@@ -70,10 +70,15 @@ theorem nonabelian_curvature_preserves_skew {n : Type} [Fintype n] [DecidableEq 
   · apply skew_smul
     exact spatialWedge_preserves_skew A A hA hA
 
-def nonabelian_discrete_curvature_boundary : Prop := True
+/-- The discrete non-abelian curvature closes on skew operators: `[D,A] + ½[A,A]` of two skew
+operators is skew (instantiates the proved `nonabelian_curvature_preserves_skew`). -/
+def nonabelian_discrete_curvature_boundary : Prop :=
+  ∀ {n : Type} [Fintype n] [DecidableEq n] (D A : Matrix n n ℝ),
+    isSkew D → isSkew A → isSkew (discreteNonAbelianCurvature D A)
 
 theorem nonabelian_discrete_curvature_boundary_proof :
     nonabelian_discrete_curvature_boundary := by
-  trivial
+  intro n _ _ D A hD hA
+  exact nonabelian_curvature_preserves_skew D A hD hA
 
 end D0.Gauge

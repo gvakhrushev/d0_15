@@ -34,14 +34,24 @@ theorem gauge_action_positive_from_origin {n : Type} [Fintype n] [DecidableEq n]
     gauge_curvature_skew D A hD hA
   exact D0.Algebra.minus_c_trace_square_nonnegative (discreteGaugeCurvature D A) hK c hc
 
-def gauge_curvature_origin_closed : Prop := True
+/-- The discrete gauge curvature closes on skew operators: `[D,A]` of two skew (Lie-algebra)
+operators is skew (instantiates the proved `gauge_curvature_skew`). -/
+def gauge_curvature_origin_closed : Prop :=
+  ∀ {n : Type} [Fintype n] [DecidableEq n] (D A : Matrix n n ℝ),
+    isSkew D → isSkew A → isSkew (discreteGaugeCurvature D A)
 
 theorem gauge_curvature_origin_closed_proof : gauge_curvature_origin_closed := by
-  trivial
+  intro n _ _ D A hD hA
+  exact gauge_curvature_skew D A hD hA
 
-def nonabelian_completion_boundary : Prop := True
+/-- The abelian boundary that the non-abelian completion lives past: the abelian curvature
+annihilates its own self-interaction, `[A,A] = 0` (`abelian_curvature_annihilates_self_interaction`).
+This vanishing self-interaction is exactly why the `½[A,A]` non-abelian completion term is needed. -/
+def nonabelian_completion_boundary : Prop :=
+  ∀ {n : Type} [Fintype n] (A : Matrix n n ℝ), commutator A A = 0
 
 theorem nonabelian_completion_boundary_proof : nonabelian_completion_boundary := by
-  trivial
+  intro n _ A
+  exact abelian_curvature_annihilates_self_interaction A
 
 end D0.Matter

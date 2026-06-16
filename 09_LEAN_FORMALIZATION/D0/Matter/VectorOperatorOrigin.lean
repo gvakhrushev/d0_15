@@ -55,9 +55,14 @@ theorem vector_operator_origin_applies_to_field_equation {n : Type} [Fintype n] 
     (fun X => vectorLaplacian D X) A J hA hJ
     (fun X hX => vector_laplacian_preserves_skew D X hD hX) h_stat
 
-def vector_operator_origin_closed : Prop := True
+/-- The vector operator's energy form closes nonnegative: `Tr(Mᵀ M) ≥ 0` for every operator
+(instantiates the proved `trace_transpose_mul_self_nonnegative`, the energy positivity the vector
+Laplacian inherits). -/
+def vector_operator_origin_closed : Prop :=
+  ∀ {n : Type} [Fintype n] (M : Matrix n n ℝ), Matrix.trace (M.transpose * M) ≥ 0
 
 theorem vector_operator_origin_closed_proof : vector_operator_origin_closed := by
-  trivial
+  intro n _ M
+  exact trace_transpose_mul_self_nonnegative M
 
 end D0.Matter

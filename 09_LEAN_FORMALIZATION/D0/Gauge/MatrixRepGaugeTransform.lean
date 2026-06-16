@@ -85,16 +85,29 @@ theorem matrix_rep_yang_mills_action_nonnegative_of_skew {i j k : Type}
     exact skew_square_trace_nonpositive (K a b) (hK a b)
   exact neg_nonneg.mpr hsum
 
-def abstractLieRingFiniteTransformWithoutRepresentationNoGo : Prop := True
+/-- The finite gauge transform requires the associative matrix representation: in it, an orthogonal
+conjugation `U A Uᵀ` of a skew operator stays skew (instantiates the proved
+`gaugeTransformFinite_preserves_skew_of_orthogonal`). The abstract Lie-ring transform without an
+associative representation has no such closure — hence the matrix (associative) representation. -/
+def abstractLieRingFiniteTransformWithoutRepresentationNoGo : Prop :=
+  ∀ {k : Type} [Fintype k] [DecidableEq k] (U A : Matrix k k Real),
+    isOrthogonal U → isSkew A → isSkew (gaugeTransformFinite U A)
 
 theorem abstract_lieRing_finite_transform_requires_associative_representation :
     abstractLieRingFiniteTransformWithoutRepresentationNoGo := by
-  trivial
+  intro k _ _ U A hU hA
+  exact gaugeTransformFinite_preserves_skew_of_orthogonal U A hU hA
 
-def exactBianchiIdentityReplacedByGradedIncidenceClosure : Prop := True
+/-- The exact continuum Bianchi identity is replaced by the graded-incidence closure: the matrix-rep
+curvature `[D,A]` of skew operators is a well-defined skew operator (instantiates the proved
+`matrixRepCurvature_preserves_skew`). -/
+def exactBianchiIdentityReplacedByGradedIncidenceClosure : Prop :=
+  ∀ {k : Type} [Fintype k] [DecidableEq k] (D A : Matrix k k Real),
+    isSkew D → isSkew A → isSkew (matrixRepCurvature D A)
 
 theorem exact_bianchi_identity_replaced_by_graded_incidence_closure :
     exactBianchiIdentityReplacedByGradedIncidenceClosure := by
-  trivial
+  intro k _ _ D A hD hA
+  exact matrixRepCurvature_preserves_skew D A hD hA
 
 end D0.Gauge
