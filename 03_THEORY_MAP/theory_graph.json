@@ -6,11 +6,11 @@
   "summary": {
     "claims": 283,
     "release_status": {
-      "CORE-FORMALIZED": 141,
+      "CORE-FORMALIZED": 143,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 68,
+      "CERT-CLOSED": 66,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -19,17 +19,17 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 163,
+      "LEAN_PROVED": 165,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 20,
-      "PYTHON_CERTIFIED": 84,
+      "PYTHON_CERTIFIED": 82,
       "DEPRECATED": 2,
       "OPEN": 14
     },
     "claim_type": {
-      "core": 142,
+      "core": 144,
       "bridge": 26,
       "no-go": 16,
-      "certificate": 83,
+      "certificate": 81,
       "deprecated": 3,
       "frontier": 13
     },
@@ -39,8 +39,8 @@
       "gauge_bridge": 20,
       "smooth_geometry": 18,
       "spectral_action": 5,
-      "empirical_passport": 23,
-      "cosmology": 23,
+      "empirical_passport": 22,
+      "cosmology": 24,
       "external_background": 1,
       "si_calibration": 3,
       "interpretation_spine": 1,
@@ -3675,25 +3675,32 @@
       "id": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
       "kind": "claim",
       "claim_id": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
-      "type": "certificate",
-      "domain": "empirical_passport",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "core",
+      "domain": "cosmology",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
       "book": "BOOK_07/08",
       "section": "phason flip entropy S_DE finite algebra",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Cosmology.PhasonFlipEntropy",
+      "lean_theorem": "phason_flip_transfer_matrix_has_sde_polynomial;sde_roots_are_phason_flip_relaxation_modes",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_flip_entropy_sde.py",
       "python_cert": [
         "vp_phason_flip_entropy_sde.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Finite formal S_DE owner: archive pressure is phason-flip entropy osmosis and the finite transfer characteristic is 160 lambda^2 - 480 lambda + 359; external BAO/DESI survey comparison is a passport/certificate and not core. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean, verify-then-promote] Finite S_DE algebra machine-checked in D0.Cosmology.PhasonFlipEntropy: the explicit 2x2 phason-flip transfer (3/2,1/16,1/10,3/2) has characteristic 160*char = 160 lambda^2 - 480 lambda + 359 (phason_flip_transfer_matrix_has_sde_polynomial, norm_num+ring), and its roots are exactly the relaxation modes (sde_roots_are_phason_flip_relaxation_modes). SUPERSEDES the Phase-L note: the removed placeholder (stmt)(h):=h is gone; these are real proofs, re-verified by reading the module. External BAO/DESI survey comparison stays an empirical passport; the K0/Connes spectral-triple/phason-holonomy GAP-LABELING is external (see D0-SDE-K0-001), not part of this finite-algebra row.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonFlipEntropy.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.PhasonFlipEntropy",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.PhasonFlipEntropy",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonFlipEntropy.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_phason_flip_entropy_sde.py",
@@ -8415,25 +8422,32 @@
       "id": "D0-IF-KS-FORMULA-FIX-001",
       "kind": "claim",
       "claim_id": "D0-IF-KS-FORMULA-FIX-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_09",
       "section": "I_f = h_KS = log|lambda_max| = log phi (formula fix, 09.08)",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing",
+      "lean_theorem": "toral_spectral_radius_eq_phi;neg_phi_toral_eigenvalue",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_if_kolmogorov_sinai.py",
       "python_cert": [
         "vp_if_kolmogorov_sinai.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[Iter8 reforge of researcher doc 2 §09.8] The number log phi is right but the formula I_f=Tr(log T)/rank is WRONG: T=[[0,1],[1,-1]] has eig {phi^-1,-phi}, det T=-1<0, so Tr(log T)=log(det T)=log(-1)=i*pi is COMPLEX (an entropy cannot be complex). Correct: h_KS=log|lambda_max(T)|=log|-phi|=log phi~0.4812 (Kolmogorov-Sinai entropy, real). cert vp_if_kolmogorov_sinai.py. Same number as I_f from the Fibonacci route (D0.Claims.FibonacciIfBridge proves |-phi|=phi). Number kept, formula record corrected.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] Load-bearing core machine-checked: the toral automorphism spectral radius |lambda_max|=|-phi|=phi (toral_spectral_radius_eq_phi) with -phi a root of x^2+x-1 (neg_phi_toral_eigenvalue); charpoly via FibonacciFusionRing. The KS-entropy identification h_KS=log|lambda_max| (Pesin/Margulis-Ruelle) and the log-phi~0.4812 numeric are the external/monotone wrapper. The formula-fix observation (I_f=Tr(log T)/rank wrong since det T=-1<0 => log complex) is recorded; the number log phi is kept, formula corrected.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/FibonacciIfBridge.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing",
+      "kind": "lean_module",
+      "label": "D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/FibonacciIfBridge.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_if_kolmogorov_sinai.py",
@@ -10907,12 +10921,12 @@
     },
     {
       "source": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
-      "target": "domain:empirical_passport",
+      "target": "domain:cosmology",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
-      "target": "module:",
+      "target": "module:D0.Cosmology.PhasonFlipEntropy",
       "kind": "implemented_in"
     },
     {
@@ -12987,7 +13001,7 @@
     },
     {
       "source": "D0-IF-KS-FORMULA-FIX-001",
-      "target": "module:",
+      "target": "module:D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing",
       "kind": "implemented_in"
     },
     {

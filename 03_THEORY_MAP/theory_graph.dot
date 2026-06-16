@@ -113,7 +113,7 @@ digraph D0Theory {
   "D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001" [label="D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CONDENSED-PHI-VACUUM-CUT-PROJECT-001" [label="D0-CONDENSED-PHI-VACUUM-CUT-PROJECT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-QUASICRYSTAL-PHENOMENOLOGY-OPERATOR-ORIGIN-001" [label="D0-QUASICRYSTAL-PHENOMENOLOGY-OPERATOR-ORIGIN-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
-  "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001" [label="D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001\\nCERT-CLOSED\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001" [label="D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001\\nCORE-FORMALIZED\\ncosmology", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-QUASI006-GALOIS-LORENTZ-SIGNATURE-001" [label="D0-QUASI006-GALOIS-LORENTZ-SIGNATURE-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001" [label="D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001\\nCORE-FORMALIZED\\ngauge_bridge", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001" [label="D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -252,7 +252,7 @@ digraph D0Theory {
   "D0-ENTROPIC-DARK-GRAVITY-001" [label="D0-ENTROPIC-DARK-GRAVITY-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-GENERATIVE-DYNAMICS-001" [label="D0-GENERATIVE-DYNAMICS-001\\nCERT-CLOSED\\nrg", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-LAPLACIAN-SPECTRUM-FIX-001" [label="D0-LAPLACIAN-SPECTRUM-FIX-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
-  "D0-IF-KS-FORMULA-FIX-001" [label="D0-IF-KS-FORMULA-FIX-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-IF-KS-FORMULA-FIX-001" [label="D0-IF-KS-FORMULA-FIX-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-FOURCOLOR-HORIZON-CAPACITY-001" [label="D0-FOURCOLOR-HORIZON-CAPACITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CKM-PMNS-COMPLEMENTARITY-001" [label="D0-CKM-PMNS-COMPLEMENTARITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-WINDOW44-TOTIENT-M1-001" [label="D0-WINDOW44-TOTIENT-M1-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -848,12 +848,12 @@ digraph D0Theory {
   "D0-QUASICRYSTAL-PHENOMENOLOGY-OPERATOR-ORIGIN-001" -> "cert:vp_quasicrystal_phenomenology_operator_origin.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-QUASICRYSTAL-PHENOMENOLOGY-OPERATOR-ORIGIN-001" -> "domain:formal_core" [label="domain"];
-  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001" -> "module:" [label="module"];
+  "module:D0.Cosmology.PhasonFlipEntropy" [label="D0.Cosmology.PhasonFlipEntropy", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001" -> "module:D0.Cosmology.PhasonFlipEntropy" [label="module"];
   "cert:vp_phason_flip_entropy_sde.py" [label="vp_phason_flip_entropy_sde.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001" -> "cert:vp_phason_flip_entropy_sde.py" [label="cert"];
-  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001" -> "domain:empirical_passport" [label="domain"];
+  "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001" -> "domain:cosmology" [label="domain"];
   "module:D0.Physics.GaloisLorentzSignature" [label="D0.Physics.GaloisLorentzSignature", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-QUASI006-GALOIS-LORENTZ-SIGNATURE-001" -> "module:D0.Physics.GaloisLorentzSignature" [label="module"];
   "cert:vp_galois_lorentz_signature.py" [label="vp_galois_lorentz_signature.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
@@ -1678,8 +1678,8 @@ digraph D0Theory {
   "D0-LAPLACIAN-SPECTRUM-FIX-001" -> "cert:vp_laplacian_3x3_correct.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-LAPLACIAN-SPECTRUM-FIX-001" -> "domain:formal_core" [label="domain"];
-  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-IF-KS-FORMULA-FIX-001" -> "module:" [label="module"];
+  "module:D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing" [label="D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-IF-KS-FORMULA-FIX-001" -> "module:D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing" [label="module"];
   "cert:vp_if_kolmogorov_sinai.py" [label="vp_if_kolmogorov_sinai.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-IF-KS-FORMULA-FIX-001" -> "cert:vp_if_kolmogorov_sinai.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];

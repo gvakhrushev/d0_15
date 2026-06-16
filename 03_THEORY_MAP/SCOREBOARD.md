@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3910 / 5036 (**77.6%** of track-fair max)
-- **Core spine:** 3337 / 4440 (headroom **1103** points to take every core claim to L5)
+- **Realized strength:** 3936 / 5036 (**78.2%** of track-fair max)
+- **Core spine:** 3363 / 4440 (headroom **1077** points to take every core claim to L5)
 - Claims: 281 active (283 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -43,7 +43,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-ARCHIVE-ENTROPY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-DM-CLASSICALITY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-KTHEORY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-SOLENOID-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
@@ -57,6 +56,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-IM-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-003` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-GRAV-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -64,6 +64,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 |---|---|--:|---|--:|
 | `D0-GRAV-006` | formal_core | 1 | PYTHON_CERTIFIED | 7 |
 | `D0-HORIZON-JET-001` | frontier | 1 | PYTHON_CERTIFIED | 7 |
+| `D0-FIBONACCI-IF-FORCING-001` | formal_core | 1 | LEAN_PROVED | 12 |
 | `D0-CVFT-001B` | frontier | 0 | HYP | 2 |
 | `D0-CVFT-F1` | frontier | 0 | HYP | 2 |
 | `D0-CVFT-F2` | frontier | 0 | HYP | 2 |
@@ -83,7 +84,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-ARCHIVE-ENTROPY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-DM-CLASSICALITY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` | empirical_passport | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-KTHEORY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-SOLENOID-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
@@ -92,11 +92,11 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 170 | 2577 | 3209 | 627 |
+| formal_core | 170 | 2590 | 3209 | 614 |
 | frontier | 13 | 31 | 260 | 229 |
 | smooth_geometry | 18 | 242 | 324 | 78 |
-| empirical_passport | 23 | 213 | 275 | 57 |
-| cosmology | 23 | 387 | 439 | 52 |
+| cosmology | 24 | 407 | 459 | 52 |
+| empirical_passport | 22 | 206 | 255 | 44 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
 | rg | 5 | 61 | 73 | 8 |
@@ -117,8 +117,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_02 | 10 | 160 | 173 | 13 |
 | BOOK_05 | 8 | 133 | 133 | 0 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
+| BOOK_07/08 | 8 | 85 | 147 | 62 |
 | BOOK_06/07 | 4 | 80 | 80 | 0 |
-| BOOK_07/08 | 8 | 72 | 147 | 75 |
 | BOOK_04/08 | 7 | 57 | 127 | 70 |
 | BOOK_06/08 | 5 | 48 | 100 | 52 |
 | BOOK_02/03 | 2 | 40 | 40 | 0 |
@@ -129,6 +129,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | Lean formalization | 2 | 31 | 31 | 0 |
 | BOOK_02/04 | 2 | 31 | 31 | 0 |
 | BOOK_02/05 | 2 | 27 | 40 | 13 |
+| BOOK_09 | 2 | 27 | 27 | 0 |
 | METROLOGY | 5 | 25 | 100 | 75 |
 | BOOK_00 | 2 | 22 | 22 | 0 |
 | BOOK_03/06/07/08 | 1 | 20 | 20 | 0 |
@@ -145,7 +146,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_00/05 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
 | BOOK_01/06 | 2 | 14 | 31 | 13 |
-| BOOK_09 | 2 | 14 | 27 | 13 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
 | BOOK_01/03/06/07/08 | 1 | 11 | 11 | 0 |

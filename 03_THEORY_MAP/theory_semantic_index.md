@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 68
-- `CORE-FORMALIZED`: 141
+- `CERT-CLOSED`: 66
+- `CORE-FORMALIZED`: 143
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -20,16 +20,16 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 26
-- `certificate`: 83
-- `core`: 142
+- `certificate`: 81
+- `core`: 144
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
 
 ## Domain counts
 
-- `cosmology`: 23
-- `empirical_passport`: 23
+- `cosmology`: 24
+- `empirical_passport`: 22
 - `external_background`: 1
 - `formal_core`: 171
 - `frontier`: 13
@@ -328,6 +328,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: [Iter21 promote cert->Lean: the convexity Delta^2 R_n=phi^n(phi-1)^2>0 is machine-checked in D0.Cosmology.ArchiveConvexity (ring + phi>1 positivity); the thawing w>-1 / no-phantom-crossing reading below stays the empirical cosmological residual] [Iter17 ТЗ-2 Phase E] The relative archive ratio R_n=phi^n-1 is CONVEX: Delta^2 R_n=phi^n(phi-1)^2>0 exact (forced, no parameter) => the dark-energy class is THAWING (w>-1) and can NEVER cross to phantom (w<-1 would need a concave archive Delta^2R<0, which phi-growth forbids). Cert vp_phason_thawing.py (can-FAIL; control: saturating 1-phi^-n is concave => would admit phantom). HONEST: forced part is the SIGN/CLASS (convex=>thawing); w0 is a COSMOLOGICAL INPUT (e-folds), NOT a D0 parameter, not promoted; DESI apparent phantom-crossing read as a CPL-parametrization artefact (arXiv:2504.15190), DR3 phys-model fit is the falsifier. Sharpens the H0-evolving-w passport (D0-H0-EVOLVING-W-001).
 
+### D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_07/08`
+- module: `D0.Cosmology.PhasonFlipEntropy`
+- theorem: `phason_flip_transfer_matrix_has_sde_polynomial;sde_roots_are_phason_flip_relaxation_modes`
+- cert: `vp_phason_flip_entropy_sde.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [Iter21 cert->Lean, verify-then-promote] Finite S_DE algebra machine-checked in D0.Cosmology.PhasonFlipEntropy: the explicit 2x2 phason-flip transfer (3/2,1/16,1/10,3/2) has characteristic 160*char = 160 lambda^2 - 480 lambda + 359 (phason_flip_transfer_matrix_has_sde_polynomial, norm_num+ring), and its roots are exactly the relaxation modes (sde_roots_are_phason_flip_relaxation_modes). SUPERSEDES the Phase-L note: the removed placeholder (stmt)(h):=h is gone; these are real proofs, re-verified by reading the module. External BAO/DESI survey comparison stays an empirical passport; the K0/Connes spectral-triple/phason-holonomy GAP-LABELING is external (see D0-SDE-K0-001), not part of this finite-algebra row.
+
 ### D0-CVFT-NOGO-001
 
 - type: `no-go`
@@ -356,19 +369,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open. [was:OPERATOR-SCAFFOLD-CERTIFIED]
-
-### D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `empirical_passport`
-- book: `BOOK_07/08`
-- module: ``
-- theorem: `none`
-- cert: `vp_phason_flip_entropy_sde.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Finite formal S_DE owner: archive pressure is phason-flip entropy osmosis and the finite transfer characteristic is 160 lambda^2 - 480 lambda + 359; external BAO/DESI survey comparison is a passport/certificate and not core. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
 ### D0-QUASI009-CKM-PHASON-HOLONOMY-001
 
@@ -1129,19 +1129,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: HST is external theorem object; D0-side archive hypotheses are cert-backed.
-
-### D0-IF-KS-FORMULA-FIX-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_09`
-- module: ``
-- theorem: `none`
-- cert: `vp_if_kolmogorov_sinai.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter8 reforge of researcher doc 2 §09.8] The number log phi is right but the formula I_f=Tr(log T)/rank is WRONG: T=[[0,1],[1,-1]] has eig {phi^-1,-phi}, det T=-1<0, so Tr(log T)=log(det T)=log(-1)=i*pi is COMPLEX (an entropy cannot be complex). Correct: h_KS=log|lambda_max(T)|=log|-phi|=log phi~0.4812 (Kolmogorov-Sinai entropy, real). cert vp_if_kolmogorov_sinai.py. Same number as I_f from the Fibonacci route (D0.Claims.FibonacciIfBridge proves |-phi|=phi). Number kept, formula record corrected.
 
 ### D0-IM-001
 
@@ -2234,6 +2221,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter6 finite-core, Option-1] Decidable shadow of BOOK_02 02.18 [THE] golden quaternions generate E8. Proves EXACTLY (Lean native_decide + cert Bareiss): the E8 Cartan/Gram (simply-laced => Gram=Cartan) 8x8 over Z is symmetric, diagonal all 2 (EVEN lattice), det=1 (UNIMODULAR/self-dual), rank 8=2*4 (Z[sqrt5]->Z Galois doubling of the rank-4 icosian ring). Negative control: A8 chain has det=9!=1, so unimodularity is forced by the E8 tree, not the 2-diagonal alone. Lean D0.Claims.IcosianE8GramFinite (icosian_e8_gram_finite) gap-free. HONEST: certifies the SPECIFIC Gram's even-unimodular invariants exactly; the Mordell genus-uniqueness (E8 is THE even unimodular rank-8 lattice) stays the EXTERNAL owner ASSUMP-MORDELL-E8 (02.18 already cites Mordell 1938). Lineage D0-ICOSIAN-E8-CARRIER-001.
+
+### D0-IF-KS-FORMULA-FIX-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_09`
+- module: `D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing`
+- theorem: `toral_spectral_radius_eq_phi;neg_phi_toral_eigenvalue`
+- cert: `vp_if_kolmogorov_sinai.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean] Load-bearing core machine-checked: the toral automorphism spectral radius |lambda_max|=|-phi|=phi (toral_spectral_radius_eq_phi) with -phi a root of x^2+x-1 (neg_phi_toral_eigenvalue); charpoly via FibonacciFusionRing. The KS-entropy identification h_KS=log|lambda_max| (Pesin/Margulis-Ruelle) and the log-phi~0.4812 numeric are the external/monotone wrapper. The formula-fix observation (I_f=Tr(log T)/rank wrong since det T=-1<0 => log complex) is recorded; the number log phi is kept, formula corrected.
 
 ### D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001
 
