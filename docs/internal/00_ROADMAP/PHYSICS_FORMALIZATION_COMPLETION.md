@@ -16,7 +16,22 @@ failure mode is **registry lag, not missing proofs**:
 Net: ~20 cert-only rows can flip to machine-checked-finite-leg with well-under-a-day of work, mostly by
 reuse. Inflating the ~30 empirical/owner-edge ones would be the exact over-claim the audit prevents.
 
-## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3884, 77.1%)
+## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3936, 78.2%)
+
+Batch C + verified repoints (later in Iter-21):
+- `D0-HODGE-001` + `D0-NOAXION-001` → `BoundaryBoundary.boundary_boundary_zero` / `FiniteCochainNoAxion.finite_d_d_zero`
+  (the d∘d=0 cores already existed — repoint, NOT a new `FiniteHodgeComplex` module; would have duplicated `BoundaryBoundary`).
+- `D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` → `PhasonFlipEntropy` (finite SDE polynomial 160λ²−480λ+359 verified real;
+  stale "scaffold not proof" Phase-L note superseded after re-reading the module). `D0-IF-KS-FORMULA-FIX-001` →
+  `FibonacciIfBridge`/`FibonacciFusionRing` (|λ_max|=φ load-bearing; KS=log|λ_max| Pesin wrapper external).
+
+**VERIFIED-LEAVE-CERT (do NOT re-attempt — verify-then-promote already ruled these out):** `D0-TIME-MODULAR-FLOW-001`
+(unique = Sturmian symbolic-word coincidence in the cert; Lean siblings prove the adjacent Beatty-carrier + Pisot-arrow
+legs, already owned by other claims), `D0-VACUUM-CUBIC-WINDOW-001` (unique = float discriminator ratios + empirical DESI
+fork; both branch polynomials owned by `MIXING-HIERARCHY-INVERSION`/`PhasonFlipEntropy`), `D0-QUASICRYSTAL-CARRIER-FORCING-001`
+(unique = 4-external-pillar FORCING argument; inflation backbone owned by `FibonacciFusionRing`), `D0-SDE-K0-001`
+(K0/Connes gap-labeling genuinely external). Net: the roadmap's optimistic 6 repoints = 2 genuine + 4 honest leaves.
+
 
 New finite theorems (machine-checked, `decide`/`native_decide`/`norm_num`/`ring`/`field_simp`):
 - `D0-PROTON-001` → `D0.Matter.ProtonReadout306` (306 = 3960/13 + 3960/(13·20·11)); 938 MeV stays cert.
