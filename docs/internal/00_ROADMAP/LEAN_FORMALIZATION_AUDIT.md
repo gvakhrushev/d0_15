@@ -155,3 +155,29 @@ structural-definition / struct-projection wrappers that are shallow but mostly r
 promoting from instance-decide to stated-theorem (§6.A) and 2 ledger assumptions to fix (§6.C). No
 claim currently overclaims a `: True` stub as CORE (Iter-18 sweep + guard). The single most useful
 next formalization pass is §6.A (4 finite, feasible upgrades) + §6.C (the 2 real ledger flags).
+
+---
+
+## Iter-19 re-audit delta (11-agent workflow census + adversarial verification)
+
+| metric | Iter-18 | Iter-19 | note |
+|---|---|---|---|
+| proof holes (sorry/admit/axiom) | 0 | **0** | confirmed across 250 `.lean` files (earlier "sorry/admit" greps were all prose / identifier substrings / owner-edge docstrings) |
+| vacuous-`True` stubs (guard ratchet) | 12 (raw ~32) | **1** | 11 markers converted to real sibling-backed theorems; lone survivor = `ReleaseStatus` release-doc token (no math sibling) |
+| weak-definitional (rfl/decide surface) | ~302 | **~255** | `:= rfl` 31, `by rfl` 2, anon `⟨_,rfl⟩` 14, `*_well_typed` 12 (overlapping), `decide`/`native_decide` 208 (many genuine finite discharges) |
+| load-bearing theorem/lemma decls | ~855 | **1215** | +360 (conversions promoted + cumulative growth) |
+| ledger `ASSUMP-*` | 13 legit | **19/19 verified legit** | every row has real citation + real D0 anchor + confirmed-absent-from-pin owner; HST owner identified |
+| active over-claims | 0 | **0** | re-audit found exactly ONE (`D0-HULL-001`, vacuous TilingHull stub) → corrected `e412ca9` |
+
+**Corrections this iteration:** `D0-HULL-001` over-claim repointed to the real `ktheory_gap_module`
+(§ INTEGRATION_LOG Iter-19). 11 `: True` markers → real theorems (ratchet 12→1). `BianchiResidual` weak
+`rfl` → real `bianchiResidual_skew` (10/11 conversions load-bearing; the lone remaining weak one reads a
+hand-set octonion `Bool` flag). `ASSUMP-HST-EXTERNAL` owner identified.
+
+**New CORE this iteration:** `D0-ARCHIVE-LIGHTPROFINITE-001` (genuine Mathlib `LightProfinite`),
+`D0-FORGETTING-CHANNEL-PTP-001` (positive trace-preserving channel via `Matrix.PosSemidef`), plus the
+reuse wave (Galois ℤ₂, exact eigenvalues, Pisot contraction).
+
+**Verify-then-promote catches (no fakes):** Cartan compactness criterion ABSENT from pin → external owner;
+CPTP complete-positivity NOT bounded → PTP proved, CP a theorem-target; π₁(S¹)≅ℤ, braid groups, fusion
+categories ABSENT from pin → external owners / research-level. Every residual named.

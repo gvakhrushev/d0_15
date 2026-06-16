@@ -1317,3 +1317,94 @@ conjugacy and GHP-Cauchy are named external residuals; 2¹¹ stays a named candi
 Recurring pattern (×3 this iteration: Adler-Weiss, Rieffel-GHP, Dixmier) — EXTERNAL-THEOREM-OWNER
 edge (Lean bridge structure + conditional theorem → ASSUMP-* ledger row → owner claim → regen) —
 flagged as a skill candidate (owner-edge).
+
+## Iteration 19 — reuse-first formalization + frontier wins + honest over-claim correction (autonomous, ~8h)
+
+Owner away ~8h; autonomous full-Lean-formalization push under verified-closure discipline
+(verify-then-promote; full `lake build D0.All` green gate per unit; integrity demotions = 0; one
+commit per verified unit; comma-free / quoted-and-targeted CSV edits only). Reuse existing Mathlib;
+never fake; name every residual.
+
+**Reuse wave (asset-map items 1–4 + Pisot).**
+- `69af4da` reuse-1 — ASSUMP-COMPACT-LIE-KILLING-NEGATIVE reclassified: Cartan's compactness criterion
+  is ABSENT from the pin (Killing.lean has IsKilling/non-degeneracy, not the compact-negativity
+  signature) — verify-then-promote caught the asset-map's optimistic "READY". Legitimate external owner;
+  D0's operative matrix-rep YM positivity stays internal (skew-square-trace).
+- `c3fddc6` reuse-2 — D0-GALOIS-PHI-IRRATIONAL-001: φ irrational ⇒ genuine quadratic Galois ℤ₂ (Mathlib
+  `irrational_sqrt_natCast_iff` + `native_decide` ¬IsSquare 5). Upgrades the hand ring-involution.
+- `1370dea` reuse-3 — D0-SCENE-ACTIVE-EIGENVALUES-001: §04.2 active eigenvalues EXACT = 3/2 ± √10/40
+  (roots of 160λ²−480λ+359, det S = 39/160). Book error-corrected (old decimals summed to 2.999997 ≠ 3).
+- `6164629` Wave2-4 — archive-tower profinite made REAL: `inverseLimit_nonempty` (an ℕ-indexed surjective
+  finite inverse system has a nonempty inverse limit), replacing a `:= True` placeholder.
+- `9e84541` Wave6 — D0-PISOT-CONTRACTION-TIME-ARROW-001: arrow of time = Pisot contraction (φ>1 expands,
+  |ψ|<1 contracts) proved from `D0.Core.Phi`.
+
+**Lean-stub hygiene — vacuous-True ratchet 12 → 1.**
+- `66d2115` — 11 of 12 grandfathered `: Prop := True` operator-origin / no-go / boundary markers CONVERTED
+  to real statements proved by their module's load-bearing siblings (capacity-core symmetry; gauge &
+  non-abelian curvature skew-closure; vector-operator energy ≥ 0; flat-tensor no-go symmetry; edge
+  scalar-leakage no-go; orthogonal-transform skew-preservation; internal Hurwitz-dimension closure).
+  Guard GRANDFATHER ratchet shrunk 12 → 1 (only the ReleaseStatus release-doc token remains; no math
+  sibling). Adversarial re-audit (workflow): 9/11 genuinely load-bearing on first pass.
+- `8d7f5cb` — BianchiResidual marker strengthened from a `:= rfl` def-restatement to the real theorem
+  `bianchiResidual_skew` ([D,K]+[A,K] of skew operators is skew). Now 10/11 load-bearing (only the
+  octonion-non-associativity Bool flag in D0InternalDimensionSelector stays weak-definitional — it reads a
+  hand-set field; genuine octonion non-associativity needs Cayley–Dickson, absent from the pin).
+- `66d2115` — ASSUMP-HST-EXTERNAL owner IDENTIFIED (was flagged "unclear"): the HST macro bridge (BOOK_02
+  §02.22, BOOK_06 §06.26) is the finite-subgaussian → continuum-Gaussian convex-response / MGF comparison;
+  D0 supplies the finite subgaussian archive atom, the continuum Gaussian is the legitimate external owner.
+
+**Over-claim correction (audit/frontier WORKFLOW, 11 read-only agents).**
+- `e412ca9` — D0-HULL-001 was registered LEAN_PROVED/CORE-FORMALIZED on the 5 vacuous D0.Topology.TilingHull
+  theorems (Prop fields := true by rfl). REPOINTED the proof-of-record to the real
+  `D0.Claims.KTheoryGapModule.ktheory_gap_module` (gap labels in ℤ+ℤφ⁻¹ = Sturmian frequencies, exactly
+  proved) — the gap-labeling invariant that is the formal heart of the aperiodic hull. Aperiodicity/FLC
+  scoped honestly as cert-backed; a real Mathlib `Delone.DeloneSet ℝ` instance recorded as a theorem-target.
+  Gate-safe repoint (same CORE status → real theorem; integrity demotions 0). This was the ONLY active
+  over-claim surfaced by the full re-audit (1215 theorems classified; 0 holes; ledger 19/19 legitimate).
+
+**Frontier wins (Mathlib reuse, asset-confirmed routes).**
+- `743aea8` P1 — D0-ARCHIVE-LIGHTPROFINITE-001: archive tower upgraded from the bespoke InverseLimit subtype
+  to a GENUINE Mathlib categorical object — an ℕᵒᵖ ⥤ FintypeCat diagram (`Functor.ofOpSequence` +
+  `FintypeCat.homMk`) whose limit in Profinite packages as a `LightProfinite`. Structural theorems prove the
+  diagram faithfully encodes the tower (succ map = archiveProjection; bonding maps surjective).
+- `6d7465f` P2 — D0-FORGETTING-CHANNEL-PTP-001: forgetting/decoherence as the fully depolarizing channel
+  M ↦ (tr M/n)·I, proved a genuine POSITIVE TRACE-PRESERVING linear map over real matrices (`Matrix.PosSemidef`).
+  HONEST SCOPE: full complete positivity (a Mathlib `CompletelyPositiveMap` over `CStarMatrix`) is NOT bounded
+  — verify-then-promote caught the audit's over-optimism (the `map_cstarMatrix_nonneg'` obligation over all
+  amplifications; the trace channel is not a *-hom) — recorded as a theorem-target.
+
+**Frontier verdicts recorded as theorem-targets / owner-notes (no fake closure):**
+- π₁(T²)≅ℤ² — EXTERNAL_OWNER: the keystone π₁(S¹)≅ℤ is ABSENT from the pin (the π_n(Sⁿ)=ℤ line is a TODO
+  comment; `Circle` hits are analytic). D0 also has no topological torus (its torus is the ℤ²-acting matrix T).
+- braid-valence gauge (THE 04.6.M1.gauge) — EXTERNAL_OWNER: no braid group in the pin (all "Braid" hits are
+  braided-monoidal-category morphisms; the Coxeter `braidWord` is the involutive quotient). Prose-only, no anchor.
+- Fibonacci fusion CATEGORY — RESEARCH_LEVEL: no FusionCategory/FusionRing/Grothendieck-ring asset in the pin;
+  D0 already proves the substantive content (φ²=φ+1 fusion rule + Perron N_τ²=N_τ+I → entropy = log φ; conjugacy
+  held as the Adler–Weiss owner-edge).
+- Delone-hull FLC/aperiodicity — RESEARCH_LEVEL: the pin's Delone/Basic.lean is the DEFINITION only; FLC/Meyer/
+  hull/aperiodicity theorems are absent. Bounded sub-step (a real `Delone.DeloneSet ℝ` instance) is the recorded
+  theorem-target; underlying aperiodicity is already cert/number-theoretically proved (Sturmian + KTheoryGapModule).
+- connections/Bianchi smooth — ALREADY_ADEQUATE (finite) + EXTERNAL_OWNER (smooth): the pin has torsion on
+  CovariantDerivative but NO curvature/Bianchi; D0's finite Bianchi is adequate; the smooth limit is the
+  Rieffel/GHP owner-edge.
+
+| metric | Iter18 | Iter19 | delta |
+|---|---|---|---|
+| strength | 3449 | 3549 | +100 |
+| claims (canonical) | 266 | 271 | +5 (Galois, eigenvalues, Pisot, LightProfinite, PTP) |
+| vacuous-True (guard ratchet) | 12 | 1 | −11 (markers → real theorems) |
+| load-bearing theorems | ~855 | 1215 | +360 |
+| weak-definitional | ~302 | ~255 | −47 |
+| proof holes (sorry/admit/axiom) | 0 | 0 | held |
+| active over-claims | 0 | 0 | D0-HULL-001 found by re-audit & corrected |
+| ledger ASSUMP-* (all legitimate external) | — | 19/19 verified | HST owner identified |
+| integrity demotions | 0 | 0 | held |
+
+All guards PASS (validate_csv / firewall / check_cert_can_fail / check_no_tautology (1 grandfathered) /
+d0_score hygiene 100/100). lake build D0.All GREEN (3319 jobs). No claim promoted past its honest level;
+every external dependency a cited owner-edge; every residual named (CPTP, π₁(S¹)≅ℤ, braid group, fusion
+category, Delone-FLC, smooth Bianchi all recorded as theorem-targets / owner-edges). Verify-then-promote
+caught two over-optimistic "ready" verdicts this iteration (Cartan absent; CPTP unbounded); the
+audit/frontier workflow (11 read-only agents) surfaced the lone over-claim (D0-HULL-001) and the 2 weak
+conversions, all corrected or honestly scoped.

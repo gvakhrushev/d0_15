@@ -100,3 +100,38 @@ limit. D0 already records all five as `BRIDGE-ASSUMPTIONS-EXPLICIT` owner-edges 
 Items 1–3 are the cleanest first wave (decidable/algebraic, small, each removes a flagged weakness).
 Items 4–6 are larger (categorical / manifold API) but use real Mathlib. Everything in NEEDS_NEW /
 STAYS_EXTERNAL is honestly out of reach now and correctly recorded as owner-edges or proof-targets.
+
+---
+
+## Iter-19 reality check (verify-then-promote outcomes — corrects the optimism above)
+
+The reuse plan above was optimistic on several items; the Iter-19 autonomous run executed each against
+the pin and recorded the HONEST verdict (an 11-agent audit/frontier workflow confirmed each by grep):
+
+- **Items 1–3 (decidable/algebraic): DONE** — `c3fddc6` Galois ℤ₂ (φ irrational), `1370dea` §04.2
+  eigenvalues exact, plus the Iter-18 reuse-1 reclassification of `ASSUMP-COMPACT-LIE-KILLING-NEGATIVE`
+  (Cartan's criterion is ABSENT from the pin — the "READY" label was wrong; it is a legitimate external owner).
+- **Item 4 (archive-tower → profinite): DONE as `LightProfinite`** — `743aea8`
+  **D0-ARCHIVE-LIGHTPROFINITE-001** builds the genuine `ℕᵒᵖ ⥤ FintypeCat` diagram + `Profinite` limit +
+  `LightProfinite` object (`Functor.ofOpSequence`, `LightDiagram`, `lightDiagramToLightProfinite`). The
+  feared `FintypeCat.Skeleton` smallness was a red herring (only needed for the *category* being small).
+- **Item 5 (Delone tiling-hull): the `: True` over-claim was the real story.** `D0-HULL-001` was a vacuous
+  `D0.Topology.TilingHull` stub registered CORE — corrected (`e412ca9`, repointed to the real
+  `ktheory_gap_module`). The pin's `Delone/Basic.lean` is the DEFINITION only (no FLC/Meyer/hull/aperiodicity
+  theorems), so "derive FLC/aperiodicity" is RESEARCH-LEVEL; a bounded `Delone.DeloneSet ℝ` instance is the
+  recorded theorem-target.
+- **Item 6 (connections/Bianchi): ALREADY_ADEQUATE (finite) + external (smooth).** The pin has *torsion* on
+  `CovariantDerivative` but NO curvature/Bianchi to port onto; D0's finite Bianchi is adequate
+  (`bianchiResidual_skew`, strengthened `8d7f5cb`); the smooth limit stays the Rieffel/GHP owner-edge.
+- **CPTP channel (PORTABLE):** PARTIALLY — `6d7465f` **D0-FORGETTING-CHANNEL-PTP-001** proves the depolarizing
+  channel is positive + trace-preserving via `Matrix.PosSemidef`. Full complete positivity (a
+  `CompletelyPositiveMap` over `CStarMatrix`) is NOT bounded (the `map_cstarMatrix_nonneg'` obligation over all
+  amplifications; the trace channel is not a *-hom) — recorded as a theorem-target.
+- **π₁(T²)=ℤ², braid groups, fusion CATEGORY (PORTABLE):** EXTERNAL_OWNER / RESEARCH_LEVEL — the keystones
+  (π₁(S¹)≅ℤ; a braid group `Bₙ`; a `FusionCategory`/Grothendieck ring) are ABSENT from the pin (confirmed by
+  grep). Recorded as owner-edges / theorem-targets, not faked. The Fibonacci fusion *ring* content is already
+  proved (φ²=φ+1 + Perron N_τ²=N_τ+I → entropy log φ).
+
+Net: the "too pessimistic" headline was half-right — the categorical/condensed (LightProfinite) and the
+positive-channel reuse landed; but several PORTABLE items rest on Mathlib theorems that are simply not in the
+pin yet, and one "READY" item (the hull) was an over-claim. See `INTEGRATION_LOG.md` Iteration 19.
