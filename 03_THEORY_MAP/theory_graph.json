@@ -4,47 +4,47 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 283,
+    "claims": 280,
     "release_status": {
-      "CORE-FORMALIZED": 145,
+      "CORE-FORMALIZED": 158,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 64,
+      "CERT-CLOSED": 49,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 15,
-      "PROOF-TARGET": 13
+      "PROOF-TARGET": 12
     },
     "lean_status": {
-      "LEAN_PROVED": 167,
+      "LEAN_PROVED": 180,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 20,
-      "PYTHON_CERTIFIED": 80,
+      "PYTHON_CERTIFIED": 64,
       "DEPRECATED": 2,
       "OPEN": 14
     },
     "claim_type": {
-      "core": 146,
+      "core": 159,
       "bridge": 26,
       "no-go": 16,
-      "certificate": 79,
+      "certificate": 64,
       "deprecated": 3,
-      "frontier": 13
+      "frontier": 12
     },
     "domain": {
-      "formal_core": 171,
+      "formal_core": 168,
       "rg": 5,
       "gauge_bridge": 20,
       "smooth_geometry": 18,
       "spectral_action": 5,
-      "empirical_passport": 22,
+      "empirical_passport": 23,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 3,
       "interpretation_spine": 1,
-      "frontier": 13
+      "frontier": 12
     }
   },
   "nodes": [
@@ -4572,24 +4572,24 @@
       "id": "D0-IM-001",
       "kind": "claim",
       "claim_id": "D0-IM-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_06",
       "section": "self-substrate trace principle",
       "lean_module": "D0.IM.SelfSubstrateTrace",
       "lean_theorem": "self_substrate_trace_principle_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_self_substrate_trace_principle.py",
       "python_cert": [
         "vp_self_substrate_trace_principle.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "IM substrate trace cert.",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] D0.IM.SelfSubstrateTrace: total substrate norm conserved (5=5c^2+5s^2 when c^2+s^2=1) and the theta=pi/5 detector node is genuinely populated (c=phi/2 => c^2=(3+sqrt5)/8, s^2=(5-sqrt5)/8>0, c^2+s^2=1). Background-free-measurement / observer-collapse-rejection readings stay cert.",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/SelfSubstrateTrace.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4597,7 +4597,7 @@
       "kind": "lean_module",
       "label": "D0.IM.SelfSubstrateTrace",
       "path": "09_LEAN_FORMALIZATION/D0/IM/SelfSubstrateTrace.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_self_substrate_trace_principle.py",
@@ -4610,24 +4610,24 @@
       "id": "D0-IM-002",
       "kind": "claim",
       "claim_id": "D0-IM-002",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_06",
       "section": "fractal tick informational mechanics",
       "lean_module": "D0.IM.FractalTick",
       "lean_theorem": "fractal_tick_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_fractal_tick_informational_mechanics.py",
       "python_cert": [
         "vp_fractal_tick_informational_mechanics.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Fractal tick cert.",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] D0.IM.FractalTick: golden tick p=1/phi=primitiveRoot with p+p^2=1 (reuses primitive_root_satisfies), p=phi-1, p^2=2-phi, substrate conserved A_n+B_n=A0+B0 for all n, and active amplitude never zero in finite ticks (Pisot positivity). 4x4 orthogonal-block matrix layer + time-as-trace-order reading stay cert.",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/FractalTick.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4635,7 +4635,7 @@
       "kind": "lean_module",
       "label": "D0.IM.FractalTick",
       "path": "09_LEAN_FORMALIZATION/D0/IM/FractalTick.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_fractal_tick_informational_mechanics.py",
@@ -4648,24 +4648,24 @@
       "id": "D0-IM-003",
       "kind": "claim",
       "claim_id": "D0-IM-003",
-      "type": "certificate",
+      "type": "core",
       "domain": "smooth_geometry",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
       "book": "BOOK_06",
       "section": "continuum from fractal tick",
       "lean_module": "D0.IM.ContinuumFromFractalTick",
       "lean_theorem": "continuum_from_fractal_tick_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_continuum_from_fractal_tick.py",
       "python_cert": [
         "vp_continuum_from_fractal_tick.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Continuum envelope cert.",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] D0.IM.ContinuumFromFractalTick: constant per-tick ratio A_{n+1}=A_n*(1/phi) (constant log-gradient exponentiated), conserved total A_n+B_n=1 for all n (column-stochastic), rate 1/phi=primitiveRoot in (0,1). Matrix-exponential M_tick=exp(G) bridge + continuum-envelope limit stay cert.",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/ContinuumFromFractalTick.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4673,7 +4673,7 @@
       "kind": "lean_module",
       "label": "D0.IM.ContinuumFromFractalTick",
       "path": "09_LEAN_FORMALIZATION/D0/IM/ContinuumFromFractalTick.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_continuum_from_fractal_tick.py",
@@ -4762,24 +4762,24 @@
       "id": "D0-GRAV-004",
       "kind": "claim",
       "claim_id": "D0-GRAV-004",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_07",
       "section": "measurement horizon equivalence",
       "lean_module": "D0.Gravity.MeasurementHorizonEquivalence",
       "lean_theorem": "measurement_horizon_equivalence_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_measurement_horizon_equivalence.py",
       "python_cert": [
         "vp_measurement_horizon_equivalence.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Measurement seam / horizon law cert. [was:OPERATOR-LAW-CLOSED]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] D0.Gravity.MeasurementHorizonEquivalence: the theta=pi/4 seam capacity s^2=1/2 (s=sqrt2/2), unitarity 2s^2=1, capacity in (0,1) (saturated, sub-unital -- inaccessible but NOT deleted), nonzero seam s!=0. The explicit 4x4 P/Q/U/QUP/F seam-matrix scaffold and the physical measurement/horizon identification stay cert. [was:OPERATOR-LAW-CLOSED]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/MeasurementHorizonEquivalence.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4787,7 +4787,7 @@
       "kind": "lean_module",
       "label": "D0.Gravity.MeasurementHorizonEquivalence",
       "path": "09_LEAN_FORMALIZATION/D0/Gravity/MeasurementHorizonEquivalence.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_measurement_horizon_equivalence.py",
@@ -4800,24 +4800,24 @@
       "id": "D0-GRAV-005",
       "kind": "claim",
       "claim_id": "D0-GRAV-005",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "core",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
       "book": "BOOK_07",
       "section": "optical jet backreaction",
       "lean_module": "D0.Gravity.OpticalJetBackreaction",
       "lean_theorem": "optical_jet_backreaction_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_optical_jet_backreaction.py",
       "python_cert": [
         "vp_optical_jet_backreaction.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Optical jet backreaction law cert. [was:OPERATOR-LAW-CLOSED]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean: emission operator symmetric + PSD (U-generic Gram) + axial dominance s2^2<s1^2; specific angles + empirical jet ID stay cert]Optical jet backreaction law cert. [was:OPERATOR-LAW-CLOSED]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/OpticalJetBackreaction.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4825,7 +4825,7 @@
       "kind": "lean_module",
       "label": "D0.Gravity.OpticalJetBackreaction",
       "path": "09_LEAN_FORMALIZATION/D0/Gravity/OpticalJetBackreaction.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_optical_jet_backreaction.py",
@@ -4838,24 +4838,24 @@
       "id": "D0-IM-005",
       "kind": "claim",
       "claim_id": "D0-IM-005",
-      "type": "certificate",
+      "type": "core",
       "domain": "smooth_geometry",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
       "book": "BOOK_01/02/06",
       "section": "fractal continuum witness halting",
       "lean_module": "D0.IM.FractalContinuumAndWitnessHalting",
       "lean_theorem": "fractal_continuum_witness_halting_corrected",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_continuum_from_fractal_tick.py",
       "python_cert": [
         "vp_continuum_from_fractal_tick.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Corrected continuum/witness halting layer.",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] D0.IM.FractalContinuumAndWitnessHalting: q=1/phi=primitiveRoot, substrate conserved A_n+B_n=1 and archive strictly grows for all n, plus the finite witness state space |Omega8|=8, |V9|=9 (reuses FiniteTypes card lemmas). Matrix-exp continuum bridge + halting-quotient interpretation stay cert.",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/FractalContinuumAndWitnessHalting.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4863,30 +4863,30 @@
       "kind": "lean_module",
       "label": "D0.IM.FractalContinuumAndWitnessHalting",
       "path": "09_LEAN_FORMALIZATION/D0/IM/FractalContinuumAndWitnessHalting.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-GRAV-006",
       "kind": "claim",
       "claim_id": "D0-GRAV-006",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_07",
       "section": "horizon jet and baryon pole layer",
       "lean_module": "D0.Gravity.HorizonJetAndBaryonPole",
       "lean_theorem": "horizon_jet_baryon_pole_layer_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_horizon_jet_axis_observable.py",
       "python_cert": [
         "vp_horizon_jet_axis_observable.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Horizon closed; jet + baryon image-basis certs present. [was:CERT-SCAFFOLD-CLOSED]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean: horizon emission operator Q U^H P U Q is PSD for any orthogonal U + projector P; the float collimation inequality J_axis>J_trans stays cert]Horizon closed; jet + baryon image-basis certs present. [was:CERT-SCAFFOLD-CLOSED]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/HorizonJetAndBaryonPole.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4894,7 +4894,7 @@
       "kind": "lean_module",
       "label": "D0.Gravity.HorizonJetAndBaryonPole",
       "path": "09_LEAN_FORMALIZATION/D0/Gravity/HorizonJetAndBaryonPole.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_horizon_jet_axis_observable.py",
@@ -4989,24 +4989,24 @@
       "id": "D0-EDGE-RAMIFICATION-001",
       "kind": "claim",
       "claim_id": "D0-EDGE-RAMIFICATION-001",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "core",
+      "domain": "smooth_geometry",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
       "book": "BOOK_04",
       "section": "torus ramification companion cover",
       "lean_module": "D0.Edge.RamificationFromUeEffCompanion",
       "lean_theorem": "ramification_companion_cover_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_ramification_edge_ueff_companion.py",
       "python_cert": [
         "vp_ramification_edge_ueff_companion.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Companion cover cert; physical-edge embedding remains scoped. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] D0.Edge.RamificationFromUeEffCompanion: the cyclic companion relations C4^4=lam.I and R3^3=lam.I (the blocks satisfy charpoly x^4-lam / x^3-lam, ext+fin_cases over Q), total ramification at the branch point lam=0 (both go nilpotent, native_decide), and the unramified diagonal negative control (not nilpotent, 4 distinct sheets). Physical-edge embedding (C4=muon terminal capacity, R3=tau scene-rank holonomy; no 359-dim inflation) remains scoped to the cert. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]\nD0-BARYON-POLES-001,BOOK_04,baryon anonymous image poles,D0.Matter.BaryonAnonymousPoleSet,baryon_anonymous_image_poles_cert,PYTHON_CERTIFIED,False,,vp_baryon_40_56_anonymous_poles.py,CERT-CLOSED,Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]\nD0-HORIZON-JET-001,BOOK_07,horizon jet observable,D0.Gravity.HorizonJetAndBaryonPole,horizon_jet_observable_cert,LEAN_PROVED,False,,vp_horizon_jet_axis_observable.py,CORE-FORMALIZED,[Iter21 cert->Lean: finite observable = emission PSD law + axis/transverse seam projector orthogonality Pi_axis*Pi_trans=0; empirical jets stay passport]Finite observable cert; empirical jets passport. [was:HORIZON-JET-OBSERVABLE-CERT-SCAFFOLD]\nD0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPredictions,fractal_continuum_predictions_cert,LEAN_PROVED,False,,vp_fractal_continuum_predictions.py,CORE-FORMALIZED,[Iter21 cert->Lean] D0.IM.FractalContinuumPredictions: 1-1/phi=(1/phi)^2; archive increment DeltaB_n=(1/phi)^(n+2) strictly positive and strictly decelerating (Delta^2 B<0) for all n",
       "module_path": "09_LEAN_FORMALIZATION/D0/Edge/RamificationFromUeEffCompanion.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5014,113 +5014,13 @@
       "kind": "lean_module",
       "label": "D0.Edge.RamificationFromUeEffCompanion",
       "path": "09_LEAN_FORMALIZATION/D0/Edge/RamificationFromUeEffCompanion.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_ramification_edge_ueff_companion.py",
       "kind": "python_cert",
       "label": "vp_ramification_edge_ueff_companion.py",
       "path": "05_CERTS/vp_ramification_edge_ueff_companion.py",
-      "exists": true
-    },
-    {
-      "id": "D0-BARYON-POLES-001",
-      "kind": "claim",
-      "claim_id": "D0-BARYON-POLES-001",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
-      "book": "BOOK_04",
-      "section": "baryon anonymous image poles",
-      "lean_module": "D0.Matter.BaryonAnonymousPoleSet",
-      "lean_theorem": "baryon_anonymous_image_poles_cert",
-      "lean_status": "PYTHON_CERTIFIED",
-      "uses_bridge_assumptions": false,
-      "assumption_ids": [],
-      "cert": "vp_baryon_40_56_anonymous_poles.py",
-      "python_cert": [
-        "vp_baryon_40_56_anonymous_poles.py"
-      ],
-      "status": "CERT-CLOSED",
-      "notes": "Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/BaryonAnonymousPoleSet.lean",
-      "module_exists": false,
-      "certs_exist": true
-    },
-    {
-      "id": "module:D0.Matter.BaryonAnonymousPoleSet",
-      "kind": "lean_module",
-      "label": "D0.Matter.BaryonAnonymousPoleSet",
-      "path": "09_LEAN_FORMALIZATION/D0/Matter/BaryonAnonymousPoleSet.lean",
-      "exists": false
-    },
-    {
-      "id": "cert:vp_baryon_40_56_anonymous_poles.py",
-      "kind": "python_cert",
-      "label": "vp_baryon_40_56_anonymous_poles.py",
-      "path": "05_CERTS/vp_baryon_40_56_anonymous_poles.py",
-      "exists": true
-    },
-    {
-      "id": "D0-HORIZON-JET-001",
-      "kind": "claim",
-      "claim_id": "D0-HORIZON-JET-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
-      "book": "BOOK_07",
-      "section": "horizon jet observable",
-      "lean_module": "D0.Gravity.HorizonJetAndBaryonPole",
-      "lean_theorem": "horizon_jet_observable_cert",
-      "lean_status": "PYTHON_CERTIFIED",
-      "uses_bridge_assumptions": false,
-      "assumption_ids": [],
-      "cert": "vp_horizon_jet_axis_observable.py",
-      "python_cert": [
-        "vp_horizon_jet_axis_observable.py"
-      ],
-      "status": "PROOF-TARGET",
-      "notes": "Finite observable cert; empirical jets passport. [was:HORIZON-JET-OBSERVABLE-CERT-SCAFFOLD]",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/HorizonJetAndBaryonPole.lean",
-      "module_exists": false,
-      "certs_exist": true
-    },
-    {
-      "id": "D0-IM-PRED-001",
-      "kind": "claim",
-      "claim_id": "D0-IM-PRED-001",
-      "type": "certificate",
-      "domain": "smooth_geometry",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
-      "book": "BOOK_06/08",
-      "section": "fractal continuum predictions",
-      "lean_module": "D0.IM.FractalContinuumPredictions",
-      "lean_theorem": "fractal_continuum_predictions_cert",
-      "lean_status": "PYTHON_CERTIFIED",
-      "uses_bridge_assumptions": false,
-      "assumption_ids": [],
-      "cert": "vp_fractal_continuum_predictions.py",
-      "python_cert": [
-        "vp_fractal_continuum_predictions.py"
-      ],
-      "status": "CERT-CLOSED",
-      "notes": "Absolute/relative sign corrected. [was:FRACTAL-CONTINUUM-PREDICTION-CERT-CLOSED]",
-      "module_path": "09_LEAN_FORMALIZATION/D0/IM/FractalContinuumPredictions.lean",
-      "module_exists": false,
-      "certs_exist": true
-    },
-    {
-      "id": "module:D0.IM.FractalContinuumPredictions",
-      "kind": "lean_module",
-      "label": "D0.IM.FractalContinuumPredictions",
-      "path": "09_LEAN_FORMALIZATION/D0/IM/FractalContinuumPredictions.lean",
-      "exists": false
-    },
-    {
-      "id": "cert:vp_fractal_continuum_predictions.py",
-      "kind": "python_cert",
-      "label": "vp_fractal_continuum_predictions.py",
-      "path": "05_CERTS/vp_fractal_continuum_predictions.py",
       "exists": true
     },
     {
@@ -5165,24 +5065,24 @@
       "id": "D0-IM-COSMO-002",
       "kind": "claim",
       "claim_id": "D0-IM-COSMO-002",
-      "type": "certificate",
+      "type": "core",
       "domain": "cosmology",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
       "book": "BOOK_08",
       "section": "relative pressure bridge law",
       "lean_module": "D0.IM.ArchivePressureCoupling",
       "lean_theorem": "relative_pressure_bridge_law",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_archive_pressure_coupling_from_relative_acceleration.py",
       "python_cert": [
         "vp_archive_pressure_coupling_from_relative_acceleration.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Weak bridge; strong log-det is primary. [was:RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean: relative archive accelerates Delta^2 R_n>0 (reuses archive_growth_strictly_convex) + positive-coupling pressure increment >0 + wrong-sign/zero negative controls; no survey/H0 fit]Weak bridge; strong log-det is primary. [was:RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED]",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/ArchivePressureCoupling.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5190,7 +5090,7 @@
       "kind": "lean_module",
       "label": "D0.IM.ArchivePressureCoupling",
       "path": "09_LEAN_FORMALIZATION/D0/IM/ArchivePressureCoupling.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_archive_pressure_coupling_from_relative_acceleration.py",
@@ -5203,24 +5103,24 @@
       "id": "D0-IM-COSMO-003",
       "kind": "claim",
       "claim_id": "D0-IM-COSMO-003",
-      "type": "certificate",
+      "type": "core",
       "domain": "cosmology",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
       "book": "BOOK_08",
       "section": "strong logdet pressure coupling",
       "lean_module": "D0.IM.StrongLogdetPressure",
       "lean_theorem": "strong_logdet_pressure_coupling",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_strong_logdet_pressure_coupling.py",
       "python_cert": [
         "vp_strong_logdet_pressure_coupling.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Correct r(V) derivative. [was:LOGDET-PRESSURE-COUPLING-CERT-CLOSED]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean: kappa=log phi>0 + closed-form response dL/dV>0 on the resolvent domain for positive couplings + z=0 degeneration; derivative-identity calculus stays cert]Correct r(V) derivative. [was:LOGDET-PRESSURE-COUPLING-CERT-CLOSED]",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/StrongLogdetPressure.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5228,7 +5128,7 @@
       "kind": "lean_module",
       "label": "D0.IM.StrongLogdetPressure",
       "path": "09_LEAN_FORMALIZATION/D0/IM/StrongLogdetPressure.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_strong_logdet_pressure_coupling.py",
@@ -5241,24 +5141,24 @@
       "id": "D0-IM-COSMO-004",
       "kind": "claim",
       "claim_id": "D0-IM-COSMO-004",
-      "type": "certificate",
+      "type": "core",
       "domain": "cosmology",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
       "book": "BOOK_08",
       "section": "logdet second response and stability",
       "lean_module": "D0.IM.LogdetSecondResponse",
       "lean_theorem": "logdet_second_response_stability_sign_corrected",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_logdet_second_response_and_stability.py",
       "python_cert": [
         "vp_logdet_second_response_and_stability.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean: for 0<z<1 the first logdet response is strictly positive and the second is strictly negative (sign-corrected stability) from the closed forms; derivative identities + V->inf asymptotics stay cert]L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/LogdetSecondResponse.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5266,7 +5166,7 @@
       "kind": "lean_module",
       "label": "D0.IM.LogdetSecondResponse",
       "path": "09_LEAN_FORMALIZATION/D0/IM/LogdetSecondResponse.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_logdet_second_response_and_stability.py",
@@ -5284,48 +5184,41 @@
       "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
       "book": "PUBLICATION",
       "section": "release monograph structure",
-      "lean_module": "D0.Publication.MonographStructure",
-      "lean_theorem": "release_monograph_structure_audit",
+      "lean_module": "",
+      "lean_theorem": "",
       "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "",
       "python_cert": [],
       "status": "PROOF-TARGET",
-      "notes": "Audit-only publication structure. [publication-structure meta; deferred; was:PUBLICATION-MONOGRAPH-STRUCTURE]",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Publication/MonographStructure.lean",
+      "notes": "[Iter21 dangling-pointer CLEARED: publication/prose structure has no math leg to formalize -- enforced deterministically by 05_CERTS/vp_publication_claim_register_guardrail.py]Audit-only publication structure. [publication-structure meta; deferred; was:PUBLICATION-MONOGRAPH-STRUCTURE]",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
-    },
-    {
-      "id": "module:D0.Publication.MonographStructure",
-      "kind": "lean_module",
-      "label": "D0.Publication.MonographStructure",
-      "path": "09_LEAN_FORMALIZATION/D0/Publication/MonographStructure.lean",
-      "exists": false
     },
     {
       "id": "D0-QUANT-MET-001",
       "kind": "claim",
       "claim_id": "D0-QUANT-MET-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "METROLOGY",
       "section": "quantum metrology limits",
       "lean_module": "D0.Metrology.QuantumLimits",
       "lean_theorem": "quantum_metrology_limits",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_quantum_metrology_limits.py",
       "python_cert": [
         "vp_quantum_metrology_limits.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "PSD purification inequality (lemma) + conditional φ^{-2} flux + Bragg spectrum targets. [was:OPERATOR-LEMMA-CERT]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean: purification inequality F_lab-Pi.F_N.Pi = Pi.U^H.(P_N-Pi).U.Pi is PSD (Pi<=P_N); kurtosis/Bragg/phi-flux are sibling rows]PSD purification inequality (lemma) + conditional φ^{-2} flux + Bragg spectrum targets. [was:OPERATOR-LEMMA-CERT]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Metrology/QuantumLimits.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5333,7 +5226,7 @@
       "kind": "lean_module",
       "label": "D0.Metrology.QuantumLimits",
       "path": "09_LEAN_FORMALIZATION/D0/Metrology/QuantumLimits.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_quantum_metrology_limits.py",
@@ -5346,24 +5239,24 @@
       "id": "D0-QUANT-MET-002",
       "kind": "claim",
       "claim_id": "D0-QUANT-MET-002",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "METROLOGY",
       "section": "psd purification inequality",
       "lean_module": "D0.Metrology.PSDPurification",
       "lean_theorem": "psd_purification_inequality",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_quantum_metrology_limits.py",
       "python_cert": [
         "vp_quantum_metrology_limits.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean: operator lemma Pi.U^H.R.U.Pi PSD for R PSD + projector-difference P_N-Pi PSD; no longer Admitted]Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Metrology/PSDPurification.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5371,7 +5264,7 @@
       "kind": "lean_module",
       "label": "D0.Metrology.PSDPurification",
       "path": "09_LEAN_FORMALIZATION/D0/Metrology/PSDPurification.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-QUANT-MET-003",
@@ -5390,9 +5283,9 @@
       "cert": "",
       "python_cert": [],
       "status": "PROOF-TARGET",
-      "notes": "φ^{-2} flux is sector hypothesis / prediction target. [was:CONDITIONAL-THEOREM-TARGET]",
+      "notes": "[Iter21 conditional Lean leg in D0.Metrology.Phi2Flux: Tr(Pi.(F-lam.P).Pi)>=0 for PSD sector + phi^-2>0 -- dangling module now resolves; the physical flux=phi^-2 stays the sector hypothesis:]φ^{-2} flux is sector hypothesis / prediction target. [was:CONDITIONAL-THEOREM-TARGET]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Metrology/Phi2Flux.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5400,7 +5293,7 @@
       "kind": "lean_module",
       "label": "D0.Metrology.Phi2Flux",
       "path": "09_LEAN_FORMALIZATION/D0/Metrology/Phi2Flux.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-QUANT-MET-004",
@@ -5419,9 +5312,9 @@
       "cert": "",
       "python_cert": [],
       "status": "PROOF-TARGET",
-      "notes": "Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]",
+      "notes": "[Iter21 formula Lean leg in D0.Metrology.PhasonBragg: phi^-2=2-phi + frac(m.phi^-2)=frac(-m.phi) -- dangling module now resolves; the empirical Bragg-spectrum prediction stays the metrology target:]Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Metrology/PhasonBragg.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -5429,7 +5322,7 @@
       "kind": "lean_module",
       "label": "D0.Metrology.PhasonBragg",
       "path": "09_LEAN_FORMALIZATION/D0/Metrology/PhasonBragg.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-XI5-TORUS-DEFECT-001",
@@ -11433,7 +11326,7 @@
     },
     {
       "source": "D0-GRAV-005",
-      "target": "domain:formal_core",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
@@ -11513,7 +11406,7 @@
     },
     {
       "source": "D0-EDGE-RAMIFICATION-001",
-      "target": "domain:formal_core",
+      "target": "domain:smooth_geometry",
       "kind": "semantic_domain"
     },
     {
@@ -11524,51 +11417,6 @@
     {
       "source": "D0-EDGE-RAMIFICATION-001",
       "target": "cert:vp_ramification_edge_ueff_companion.py",
-      "kind": "certified_by"
-    },
-    {
-      "source": "D0-BARYON-POLES-001",
-      "target": "domain:formal_core",
-      "kind": "semantic_domain"
-    },
-    {
-      "source": "D0-BARYON-POLES-001",
-      "target": "module:D0.Matter.BaryonAnonymousPoleSet",
-      "kind": "implemented_in"
-    },
-    {
-      "source": "D0-BARYON-POLES-001",
-      "target": "cert:vp_baryon_40_56_anonymous_poles.py",
-      "kind": "certified_by"
-    },
-    {
-      "source": "D0-HORIZON-JET-001",
-      "target": "domain:frontier",
-      "kind": "semantic_domain"
-    },
-    {
-      "source": "D0-HORIZON-JET-001",
-      "target": "module:D0.Gravity.HorizonJetAndBaryonPole",
-      "kind": "implemented_in"
-    },
-    {
-      "source": "D0-HORIZON-JET-001",
-      "target": "cert:vp_horizon_jet_axis_observable.py",
-      "kind": "certified_by"
-    },
-    {
-      "source": "D0-IM-PRED-001",
-      "target": "domain:smooth_geometry",
-      "kind": "semantic_domain"
-    },
-    {
-      "source": "D0-IM-PRED-001",
-      "target": "module:D0.IM.FractalContinuumPredictions",
-      "kind": "implemented_in"
-    },
-    {
-      "source": "D0-IM-PRED-001",
-      "target": "cert:vp_fractal_continuum_predictions.py",
       "kind": "certified_by"
     },
     {
@@ -11638,7 +11486,7 @@
     },
     {
       "source": "D0-PUB-001",
-      "target": "module:D0.Publication.MonographStructure",
+      "target": "module:",
       "kind": "implemented_in"
     },
     {

@@ -7,32 +7,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 64
-- `CORE-FORMALIZED`: 145
+- `CERT-CLOSED`: 49
+- `CORE-FORMALIZED`: 158
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 8
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 13
+- `PROOF-TARGET`: 12
 
 ## Type counts
 
 - `bridge`: 26
-- `certificate`: 79
-- `core`: 146
+- `certificate`: 64
+- `core`: 159
 - `deprecated`: 3
-- `frontier`: 13
+- `frontier`: 12
 - `no-go`: 16
 
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 22
+- `empirical_passport`: 23
 - `external_background`: 1
-- `formal_core`: 171
-- `frontier`: 13
+- `formal_core`: 168
+- `frontier`: 12
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -54,45 +54,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] parameter-free internal dark object as additive optical-depth kernel; catalogue is external readout.
-
-### D0-IM-COSMO-002
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `cosmology`
-- book: `BOOK_08`
-- module: `D0.IM.ArchivePressureCoupling`
-- theorem: `relative_pressure_bridge_law`
-- cert: `vp_archive_pressure_coupling_from_relative_acceleration.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Weak bridge; strong log-det is primary. [was:RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED]
-
-### D0-IM-COSMO-003
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `cosmology`
-- book: `BOOK_08`
-- module: `D0.IM.StrongLogdetPressure`
-- theorem: `strong_logdet_pressure_coupling`
-- cert: `vp_strong_logdet_pressure_coupling.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Correct r(V) derivative. [was:LOGDET-PRESSURE-COUPLING-CERT-CLOSED]
-
-### D0-IM-COSMO-004
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `cosmology`
-- book: `BOOK_08`
-- module: `D0.IM.LogdetSecondResponse`
-- theorem: `logdet_second_response_stability_sign_corrected`
-- cert: `vp_logdet_second_response_and_stability.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]
 
 ### D0-COSMO-002
 
@@ -314,6 +275,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: [Iter21 promote cert->Lean; fixed dangling lean_module D0.IM.RelativeArchiveAcceleration which never existed] Relative archive acceleration = strict convexity Delta^2(phi^n-1)=phi^n(phi-1)^2>0, machine-checked in D0.Cosmology.ArchiveConvexity (shared with D0-PHASON-THAWING-001). Internal relative acceleration; no survey fit.
+
+### D0-IM-COSMO-002
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.IM.ArchivePressureCoupling`
+- theorem: `relative_pressure_bridge_law`
+- cert: `vp_archive_pressure_coupling_from_relative_acceleration.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [Iter21 cert->Lean: relative archive accelerates Delta^2 R_n>0 (reuses archive_growth_strictly_convex) + positive-coupling pressure increment >0 + wrong-sign/zero negative controls; no survey/H0 fit]Weak bridge; strong log-det is primary. [was:RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED]
+
+### D0-IM-COSMO-003
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.IM.StrongLogdetPressure`
+- theorem: `strong_logdet_pressure_coupling`
+- cert: `vp_strong_logdet_pressure_coupling.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [Iter21 cert->Lean: kappa=log phi>0 + closed-form response dL/dV>0 on the resolvent domain for positive couplings + z=0 degeneration; derivative-identity calculus stays cert]Correct r(V) derivative. [was:LOGDET-PRESSURE-COUPLING-CERT-CLOSED]
+
+### D0-IM-COSMO-004
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.IM.LogdetSecondResponse`
+- theorem: `logdet_second_response_stability_sign_corrected`
+- cert: `vp_logdet_second_response_and_stability.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [Iter21 cert->Lean: for 0<z<1 the first logdet response is strictly positive and the second is strictly negative (sign-corrected stability) from the closed forms; derivative identities + V->inf asymptotics stay cert]L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]
 
 ### D0-PHASON-THAWING-001
 
@@ -577,6 +577,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
 - notes: [Iter21 promote cert->Lean] Baryon multiplet-dimension counts machine-checked (D0.Matter.BaryonSpinFlavourRanks via decide/native_decide on sorted-triple subtypes): spin 4, flavour decuplet 10, spin-flavour 40=10*4, full SU(6) 56, 56-40=16 (octet sector). PDG names/masses/widths/GeV conversion remain excluded (empirical). [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
+
+### D0-GRAV-005
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_07`
+- module: `D0.Gravity.OpticalJetBackreaction`
+- theorem: `optical_jet_backreaction_cert`
+- cert: `vp_optical_jet_backreaction.py`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: [Iter21 cert->Lean: emission operator symmetric + PSD (U-generic Gram) + axial dominance s2^2<s1^2; specific angles + empirical jet ID stay cert]Optical jet backreaction law cert. [was:OPERATOR-LAW-CLOSED]
 
 ### D0-PROTON-001
 
@@ -870,19 +883,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Entropy-selected archive coupling interface plus finite-stage softmax coupling cert.
 
-### D0-BARYON-POLES-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: `D0.Matter.BaryonAnonymousPoleSet`
-- theorem: `baryon_anonymous_image_poles_cert`
-- cert: `vp_baryon_40_56_anonymous_poles.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]
-
 ### D0-CANONICAL-OP-001
 
 - type: `certificate`
@@ -960,19 +960,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Weak-coupling/mode-averaging nonclassical signature suppression guardrail.
-
-### D0-EDGE-RAMIFICATION-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: `D0.Edge.RamificationFromUeEffCompanion`
-- theorem: `ramification_companion_cover_cert`
-- cert: `vp_ramification_edge_ueff_companion.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Companion cover cert; physical-edge embedding remains scoped. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]
 
 ### D0-EW-002
 
@@ -1052,45 +1039,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] ell_P, G_N from delta0, Omega8, phi^(V9.V11); CODATA G is benchmark.
 
-### D0-GRAV-004
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: `D0.Gravity.MeasurementHorizonEquivalence`
-- theorem: `measurement_horizon_equivalence_cert`
-- cert: `vp_measurement_horizon_equivalence.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Measurement seam / horizon law cert. [was:OPERATOR-LAW-CLOSED]
-
-### D0-GRAV-005
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: `D0.Gravity.OpticalJetBackreaction`
-- theorem: `optical_jet_backreaction_cert`
-- cert: `vp_optical_jet_backreaction.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Optical jet backreaction law cert. [was:OPERATOR-LAW-CLOSED]
-
-### D0-GRAV-006
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: `D0.Gravity.HorizonJetAndBaryonPole`
-- theorem: `horizon_jet_baryon_pole_layer_cert`
-- cert: `vp_horizon_jet_axis_observable.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Horizon closed; jet + baryon image-basis certs present. [was:CERT-SCAFFOLD-CLOSED]
-
 ### D0-GRAVASTAR-FORMATION-BRIDGE-001
 
 - type: `certificate`
@@ -1129,32 +1077,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: HST is external theorem object; D0-side archive hypotheses are cert-backed.
-
-### D0-IM-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_06`
-- module: `D0.IM.SelfSubstrateTrace`
-- theorem: `self_substrate_trace_principle_cert`
-- cert: `vp_self_substrate_trace_principle.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: IM substrate trace cert.
-
-### D0-IM-002
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_06`
-- module: `D0.IM.FractalTick`
-- theorem: `fractal_tick_cert`
-- cert: `vp_fractal_tick_informational_mechanics.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Fractal tick cert.
 
 ### D0-KTHEORY-001
 
@@ -1324,32 +1246,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Audit->FORCING, D.3] phi^99 depth exponent forced: 99=V9*V11=9*11 (defect x memory shells), exact named product, 0 free. Controls: 98,100 not shell products; 117=V9*V13 a different pair. HONEST: exponent forced as named product; the G_N ORDER is the separate length-depth metrology BRIDGE.
-
-### D0-QUANT-MET-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `METROLOGY`
-- module: `D0.Metrology.QuantumLimits`
-- theorem: `quantum_metrology_limits`
-- cert: `vp_quantum_metrology_limits.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: PSD purification inequality (lemma) + conditional φ^{-2} flux + Bragg spectrum targets. [was:OPERATOR-LEMMA-CERT]
-
-### D0-QUANT-MET-002
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `METROLOGY`
-- module: `D0.Metrology.PSDPurification`
-- theorem: `psd_purification_inequality`
-- cert: `vp_quantum_metrology_limits.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
 
 ### D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001
 
@@ -2105,6 +2001,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Flat archive iff zero curvature obstruction.
 
+### D0-GRAV-004
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.MeasurementHorizonEquivalence`
+- theorem: `measurement_horizon_equivalence_cert`
+- cert: `vp_measurement_horizon_equivalence.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean] D0.Gravity.MeasurementHorizonEquivalence: the theta=pi/4 seam capacity s^2=1/2 (s=sqrt2/2), unitarity 2s^2=1, capacity in (0,1) (saturated, sub-unital -- inaccessible but NOT deleted), nonzero seam s!=0. The explicit 4x4 P/Q/U/QUP/F seam-matrix scaffold and the physical measurement/horizon identification stay cert. [was:OPERATOR-LAW-CLOSED]
+
+### D0-GRAV-006
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.HorizonJetAndBaryonPole`
+- theorem: `horizon_jet_baryon_pole_layer_cert`
+- cert: `vp_horizon_jet_axis_observable.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean: horizon emission operator Q U^H P U Q is PSD for any orthogonal U + projector P; the float collimation inequality J_axis>J_trans stays cert]Horizon closed; jet + baryon image-basis certs present. [was:CERT-SCAFFOLD-CLOSED]
+
 ### D0-GRAVITY-ENTROPIC-ARCHIVE-001
 
 - type: `core`
@@ -2208,6 +2130,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter21 cert->Lean] Load-bearing core machine-checked: the toral automorphism spectral radius |lambda_max|=|-phi|=phi (toral_spectral_radius_eq_phi) with -phi a root of x^2+x-1 (neg_phi_toral_eigenvalue); charpoly via FibonacciFusionRing. The KS-entropy identification h_KS=log|lambda_max| (Pesin/Margulis-Ruelle) and the log-phi~0.4812 numeric are the external/monotone wrapper. The formula-fix observation (I_f=Tr(log T)/rank wrong since det T=-1<0 => log complex) is recorded; the number log phi is kept, formula corrected.
+
+### D0-IM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.IM.SelfSubstrateTrace`
+- theorem: `self_substrate_trace_principle_cert`
+- cert: `vp_self_substrate_trace_principle.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean] D0.IM.SelfSubstrateTrace: total substrate norm conserved (5=5c^2+5s^2 when c^2+s^2=1) and the theta=pi/5 detector node is genuinely populated (c=phi/2 => c^2=(3+sqrt5)/8, s^2=(5-sqrt5)/8>0, c^2+s^2=1). Background-free-measurement / observer-collapse-rejection readings stay cert.
+
+### D0-IM-002
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.IM.FractalTick`
+- theorem: `fractal_tick_cert`
+- cert: `vp_fractal_tick_informational_mechanics.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean] D0.IM.FractalTick: golden tick p=1/phi=primitiveRoot with p+p^2=1 (reuses primitive_root_satisfies), p=phi-1, p^2=2-phi, substrate conserved A_n+B_n=A0+B0 for all n, and active amplitude never zero in finite ticks (Pisot positivity). 4x4 orthogonal-block matrix layer + time-as-trace-order reading stay cert.
 
 ### D0-IM-004
 
@@ -2546,6 +2494,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [8D Tier-1 forced] unique minimal Hamiltonian non-abelian group <=8 (Dedekind 1897); [Q8,Q8]=Z=Phi={+-1}. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Q8DedekindMinimality (q8_dedekind_minimality); native_decide/decide on the real finite content.
+
+### D0-QUANT-MET-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `METROLOGY`
+- module: `D0.Metrology.QuantumLimits`
+- theorem: `quantum_metrology_limits`
+- cert: `vp_quantum_metrology_limits.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean: purification inequality F_lab-Pi.F_N.Pi = Pi.U^H.(P_N-Pi).U.Pi is PSD (Pi<=P_N); kurtosis/Bragg/phi-flux are sibling rows]PSD purification inequality (lemma) + conditional φ^{-2} flux + Bragg spectrum targets. [was:OPERATOR-LEMMA-CERT]
+
+### D0-QUANT-MET-002
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `METROLOGY`
+- module: `D0.Metrology.PSDPurification`
+- theorem: `psd_purification_inequality`
+- cert: `vp_quantum_metrology_limits.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean: operator lemma Pi.U^H.R.U.Pi PSD for R PSD + projector-difference P_N-Pi PSD; no longer Admitted]Admitted operator lemma F_lab ≽ Π F_N Π. [was:OPERATOR-LEMMA-CERT]
 
 ### D0-QUASI002-PHASON-STRAIN-GENERATIONS-BARYON-001
 
@@ -2992,31 +2966,18 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared.
 
-### D0-HORIZON-JET-001
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_07`
-- module: `D0.Gravity.HorizonJetAndBaryonPole`
-- theorem: `horizon_jet_observable_cert`
-- cert: `vp_horizon_jet_axis_observable.py`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Finite observable cert; empirical jets passport. [was:HORIZON-JET-OBSERVABLE-CERT-SCAFFOLD]
-
 ### D0-PUB-001
 
 - type: `frontier`
 - release_status: `PROOF-TARGET`
 - domain: `frontier`
 - book: `PUBLICATION`
-- module: `D0.Publication.MonographStructure`
-- theorem: `release_monograph_structure_audit`
+- module: ``
+- theorem: `none`
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Audit-only publication structure. [publication-structure meta; deferred; was:PUBLICATION-MONOGRAPH-STRUCTURE]
+- notes: [Iter21 dangling-pointer CLEARED: publication/prose structure has no math leg to formalize -- enforced deterministically by 05_CERTS/vp_publication_claim_register_guardrail.py]Audit-only publication structure. [publication-structure meta; deferred; was:PUBLICATION-MONOGRAPH-STRUCTURE]
 
 ### D0-QUANT-MET-003
 
@@ -3029,7 +2990,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: φ^{-2} flux is sector hypothesis / prediction target. [was:CONDITIONAL-THEOREM-TARGET]
+- notes: [Iter21 conditional Lean leg in D0.Metrology.Phi2Flux: Tr(Pi.(F-lam.P).Pi)>=0 for PSD sector + phi^-2>0 -- dangling module now resolves; the physical flux=phi^-2 stays the sector hypothesis:]φ^{-2} flux is sector hypothesis / prediction target. [was:CONDITIONAL-THEOREM-TARGET]
 
 ### D0-QUANT-MET-004
 
@@ -3042,7 +3003,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]
+- notes: [Iter21 formula Lean leg in D0.Metrology.PhasonBragg: phi^-2=2-phi + frac(m.phi^-2)=frac(-m.phi) -- dangling module now resolves; the empirical Bragg-spectrum prediction stays the metrology target:]Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]
 
 ### D0-SPECTRAL-EINSTEIN-001
 
@@ -3527,45 +3488,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter17 ТЗ-2 Phase D, verify-then-promote — c=1 CONFIRMED] On the finite scene the Connes spectral distance d_C(p,q)=sup{|f(p)-f(q)| : ||[D,f]||<=1} EQUALS the geodesic (shortest-path) distance: ||[D,f]||<=1 <=> f 1-Lipschitz per edge, sup attained by f=d_geo(.,p), bounded above by telescoping. So the metric is INTERNAL (geodesic), not an external input. And c=1 is STRUCTURAL: <=1 edge/tick => signal speed 1, dimensionless, no external light-speed constant. Cert vp_connes_distance_geodesic.py (path/cycle/K(2,2,3); can-FAIL; control: edge-jump>1 inadmissible). CONSEQUENCE: the §07.51.3 cone-speed residual is c=1=edge/tick (internal), NOT an external Connes unit; ASSUMP-CONNES-RECONSTRUCTION is reclassified owner->continuum-limit CONFIRMATION. HONEST: the finite->smooth Riemannian limit itself is still the external Connes theorem, now as confirmation of the internal geodesic metric's limit, not the owner of a D0 gap.
 
-### D0-IM-003
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `smooth_geometry`
-- book: `BOOK_06`
-- module: `D0.IM.ContinuumFromFractalTick`
-- theorem: `continuum_from_fractal_tick_cert`
-- cert: `vp_continuum_from_fractal_tick.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Continuum envelope cert.
-
-### D0-IM-005
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `smooth_geometry`
-- book: `BOOK_01/02/06`
-- module: `D0.IM.FractalContinuumAndWitnessHalting`
-- theorem: `fractal_continuum_witness_halting_corrected`
-- cert: `vp_continuum_from_fractal_tick.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Corrected continuum/witness halting layer.
-
-### D0-IM-PRED-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `smooth_geometry`
-- book: `BOOK_06/08`
-- module: `D0.IM.FractalContinuumPredictions`
-- theorem: `fractal_continuum_predictions_cert`
-- cert: `vp_fractal_continuum_predictions.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Absolute/relative sign corrected. [was:FRACTAL-CONTINUUM-PREDICTION-CERT-CLOSED]
-
 ### D0-QUASICRYSTAL-CARRIER-FORCING-001
 
 - type: `certificate`
@@ -3605,6 +3527,22 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: [Iter20 Clay-core, two passports] DEF 21.2.1: the D0 continuum is the inverse limit of the finite archive tower (V_k, pi), realised as a genuine Mathlib LightProfinite (D0Continuum := archiveLightProfinite). Reuses Clausen-Scholze condensed apparatus (Profinite.AsLimit, LightProfinite = LightDiagram). NOT the ZFC/actual-infinity continuum (which postulates a completed infinity = unprovable input). Foundational anchor cited by sect24/25/27/30. Passports: physics (archive tower) + math (DEF 21.2.1 point-free continuum).
 
+### D0-EDGE-RAMIFICATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_04`
+- module: `D0.Edge.RamificationFromUeEffCompanion`
+- theorem: `ramification_companion_cover_cert`
+- cert: `vp_ramification_edge_ueff_companion.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter21 cert->Lean] D0.Edge.RamificationFromUeEffCompanion: the cyclic companion relations C4^4=lam.I and R3^3=lam.I (the blocks satisfy charpoly x^4-lam / x^3-lam, ext+fin_cases over Q), total ramification at the branch point lam=0 (both go nilpotent, native_decide), and the unramified diagonal negative control (not nilpotent, 4 distinct sheets). Physical-edge embedding (C4=muon terminal capacity, R3=tau scene-rank holonomy; no 359-dim inflation) remains scoped to the cert. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]
+D0-BARYON-POLES-001,BOOK_04,baryon anonymous image poles,D0.Matter.BaryonAnonymousPoleSet,baryon_anonymous_image_poles_cert,PYTHON_CERTIFIED,False,,vp_baryon_40_56_anonymous_poles.py,CERT-CLOSED,Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]
+D0-HORIZON-JET-001,BOOK_07,horizon jet observable,D0.Gravity.HorizonJetAndBaryonPole,horizon_jet_observable_cert,LEAN_PROVED,False,,vp_horizon_jet_axis_observable.py,CORE-FORMALIZED,[Iter21 cert->Lean: finite observable = emission PSD law + axis/transverse seam projector orthogonality Pi_axis*Pi_trans=0; empirical jets stay passport]Finite observable cert; empirical jets passport. [was:HORIZON-JET-OBSERVABLE-CERT-SCAFFOLD]
+D0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPredictions,fractal_continuum_predictions_cert,LEAN_PROVED,False,,vp_fractal_continuum_predictions.py,CORE-FORMALIZED,[Iter21 cert->Lean] D0.IM.FractalContinuumPredictions: 1-1/phi=(1/phi)^2; archive increment DeltaB_n=(1/phi)^(n+2) strictly positive and strictly decelerating (Delta^2 B<0) for all n
+
 ### D0-GEOM-SPECTRAL-ACTION-LADDER-001
 
 - type: `core`
@@ -3630,6 +3568,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: [Iter20 Clay-core, two passports] Constructively-proven core of sect27 (Navier-Stokes global regularity). On a finite kappa-floor lattice level: every higher (k>=3) spectral-action trace-power norm is bounded by a finite function of the level data (reuses SpectralActionLadder.higher_powers_floor_bounded) AND the kappa-stable archive tower has a nonempty projective limit (global coherent solution, reuses archive_tower_defines_profinite_object). NOT the continuum-R^3 ZFC Clay statement (whose continuum limit appeals to actual infinity = unprovable postulate). PER-LEVEL bound: the constant (card N)^(k+1)(B/floor)^k GROWS with refinement, never a uniform-across-tower constant. M1-contrapositive carried by D0.Foundation.M1Predicate. Passports: physics (finite kappa-bounded lattice hydro) + Clay (sect27).
+
+### D0-IM-003
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_06`
+- module: `D0.IM.ContinuumFromFractalTick`
+- theorem: `continuum_from_fractal_tick_cert`
+- cert: `vp_continuum_from_fractal_tick.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter21 cert->Lean] D0.IM.ContinuumFromFractalTick: constant per-tick ratio A_{n+1}=A_n*(1/phi) (constant log-gradient exponentiated), conserved total A_n+B_n=1 for all n (column-stochastic), rate 1/phi=primitiveRoot in (0,1). Matrix-exponential M_tick=exp(G) bridge + continuum-envelope limit stay cert.
+
+### D0-IM-005
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_01/02/06`
+- module: `D0.IM.FractalContinuumAndWitnessHalting`
+- theorem: `fractal_continuum_witness_halting_corrected`
+- cert: `vp_continuum_from_fractal_tick.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter21 cert->Lean] D0.IM.FractalContinuumAndWitnessHalting: q=1/phi=primitiveRoot, substrate conserved A_n+B_n=1 and archive strictly grows for all n, plus the finite witness state space |Omega8|=8, |V9|=9 (reuses FiniteTypes card lemmas). Matrix-exp continuum bridge + halting-quotient interpretation stay cert.
 
 ### D0-NOAXION-001
 

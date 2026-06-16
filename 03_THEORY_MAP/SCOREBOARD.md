@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4019 / 4976 (**80.8%** of track-fair max)
-- **Core spine:** 3446 / 4380 (headroom **934** points to take every core claim to L5)
+- **Realized strength:** 4110 / 4976 (**82.6%** of track-fair max)
+- **Core spine:** 3537 / 4380 (headroom **843** points to take every core claim to L5)
 - Claims: 278 active (280 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -50,13 +50,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-SDE-K0-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F4` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F7` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-GRAV-005` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-GRAV-006` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-COSMO-002` | cosmology | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-COSMO-003` | cosmology | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-COSMO-004` | cosmology | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-QUANT-MET-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-QUANT-MET-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-MINCUT-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-MASTER-BOOTSTRAP-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-MESON-DEFECT-ALGEBRA-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-CANONICAL-OP-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-LEPTON-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-NEUTRON-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-GRAV-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -92,13 +92,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 168 | 2641 | 3169 | 523 |
+| formal_core | 167 | 2673 | 3149 | 471 |
 | frontier | 12 | 24 | 240 | 216 |
-| cosmology | 24 | 407 | 459 | 52 |
-| empirical_passport | 22 | 206 | 255 | 44 |
+| empirical_passport | 23 | 226 | 275 | 44 |
 | smooth_geometry | 18 | 281 | 324 | 39 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
+| cosmology | 24 | 446 | 459 | 13 |
 | rg | 5 | 61 | 73 | 8 |
 | external_background | 1 | 1 | 2 | 0 |
 | si_calibration | 3 | 25 | 29 | 0 |
@@ -108,8 +108,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| BOOK_08 | 47 | 703 | 829 | 122 |
-| BOOK_07 | 48 | 643 | 861 | 208 |
+| BOOK_08 | 47 | 742 | 829 | 83 |
+| BOOK_07 | 48 | 669 | 861 | 182 |
 | BOOK_04 | 42 | 626 | 771 | 140 |
 | BOOK_01 | 15 | 223 | 278 | 55 |
 | BOOK_06 | 13 | 221 | 242 | 21 |
@@ -120,6 +120,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_07/08 | 8 | 85 | 147 | 62 |
 | BOOK_06/07 | 4 | 80 | 80 | 0 |
 | BOOK_04/08 | 7 | 57 | 127 | 70 |
+| METROLOGY | 5 | 51 | 100 | 49 |
 | BOOK_06/08 | 4 | 41 | 80 | 39 |
 | BOOK_02/03 | 2 | 40 | 40 | 0 |
 | BOOK_00/01 | 2 | 40 | 40 | 0 |
@@ -131,7 +132,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_02/05 | 2 | 27 | 40 | 13 |
 | BOOK_01/06 | 2 | 27 | 31 | 0 |
 | BOOK_09 | 2 | 27 | 27 | 0 |
-| METROLOGY | 5 | 25 | 100 | 75 |
 | BOOK_00 | 2 | 22 | 22 | 0 |
 | BOOK_03/06/07/08 | 1 | 20 | 20 | 0 |
 | BOOK_00/01/03/06/07/08 | 1 | 20 | 20 | 0 |

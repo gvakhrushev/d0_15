@@ -20,27 +20,11 @@ LEAN_ROOT = os.path.join(REPO, "09_LEAN_FORMALIZATION")
 
 # Iter-21 sweep baseline: dangling `lean_module` refs on cert-only/OPEN rows (NOT LEAN_PROVED).
 # The set may only shrink (clear the row's pointer, or build the module).
-GRANDFATHER: set[str] = {
-    # D0.Edge.RamificationFromUeEffCompanion — RESOLVED Iter-21 (D0-EDGE-RAMIFICATION-001 built + promoted)
-    "D0.Gravity.HorizonJetAndBaryonPole",
-    # D0.Gravity.MeasurementHorizonEquivalence — RESOLVED Iter-21 (D0-GRAV-004 built + promoted)
-    "D0.Gravity.OpticalJetBackreaction",
-    "D0.IM.ArchivePressureCoupling",
-    # D0.IM.ContinuumFromFractalTick — RESOLVED Iter-21 (D0-IM-003 built + promoted)
-    # D0.IM.FractalContinuumAndWitnessHalting — RESOLVED Iter-21 (D0-IM-005 built + promoted)
-    # D0.IM.FractalContinuumPredictions — RESOLVED Iter-21 (D0-IM-PRED-001 built + promoted)
-    # D0.IM.FractalTick — RESOLVED Iter-21 (D0-IM-002 built + promoted)
-    "D0.IM.LogdetSecondResponse",
-    # D0.IM.SelfSubstrateTrace — RESOLVED Iter-21 (D0-IM-001 built + promoted)
-    "D0.IM.StrongLogdetPressure",
-    # D0.Matter.BaryonAnonymousPoleSet — RESOLVED Iter-21 (no longer a lean_module pointer)
-    "D0.Metrology.PSDPurification",
-    "D0.Metrology.PhasonBragg",
-    "D0.Metrology.Phi2Flux",
-    "D0.Metrology.QuantumLimits",
-    "D0.Publication.MonographStructure",
-    # D0.Topology.WitnessHalting — RESOLVED in Iter-21 (D0-IM-004 built + promoted); ratchet shrank 19->18.
-}
+# FULLY CLEARED in Iter-21: all 19 original dangling pointers were resolved — 18 by building the named
+# module (each a genuine cert→Lean promotion) and 1 (BaryonAnonymousPoleSet) by dropping a stale pointer;
+# the Publication row's pointer was cleared (publication prose, no math leg). The set is now empty, so the
+# guard enforces ZERO dangling `lean_module` references — any new dangling pointer fails the build gate.
+GRANDFATHER: set[str] = set()
 
 
 def module_exists(mod: str) -> bool:

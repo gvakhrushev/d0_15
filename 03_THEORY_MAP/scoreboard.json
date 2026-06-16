@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 4019,
+    "realized": 4110,
     "track_fair_max": 4976,
-    "pct_strength": 80.8,
-    "core_realized": 3446,
+    "pct_strength": 82.6,
+    "core_realized": 3537,
     "core_potential": 4380,
-    "core_headroom": 934,
+    "core_headroom": 843,
     "n_claims": 280,
     "n_active": 278,
     "duplicates": [],
@@ -32,10 +32,10 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 168,
-      "realized": 2641,
-      "max": 3169,
-      "core_headroom": 523
+      "n": 167,
+      "realized": 2673,
+      "max": 3149,
+      "core_headroom": 471
     },
     "rg": {
       "n": 5,
@@ -62,16 +62,16 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 22,
-      "realized": 206,
-      "max": 255,
+      "n": 23,
+      "realized": 226,
+      "max": 275,
       "core_headroom": 44
     },
     "cosmology": {
       "n": 24,
-      "realized": 407,
+      "realized": 446,
       "max": 459,
-      "core_headroom": 52
+      "core_headroom": 13
     },
     "external_background": {
       "n": 1,
@@ -149,9 +149,9 @@
     },
     "BOOK_07": {
       "n": 48,
-      "realized": 643,
+      "realized": 669,
       "max": 861,
-      "core_headroom": 208
+      "core_headroom": 182
     },
     "BOOK_06/08": {
       "n": 4,
@@ -173,9 +173,9 @@
     },
     "BOOK_08": {
       "n": 47,
-      "realized": 703,
+      "realized": 742,
       "max": 829,
-      "core_headroom": 122
+      "core_headroom": 83
     },
     "BOOK_05/06": {
       "n": 6,
@@ -341,9 +341,9 @@
     },
     "METROLOGY": {
       "n": 5,
-      "realized": 25,
+      "realized": 51,
       "max": 100,
-      "core_headroom": 75
+      "core_headroom": 49
     },
     "BOOK_03/06": {
       "n": 1,
@@ -575,76 +575,6 @@
       "claim_id": "D0-CVFT-F7",
       "domain": "formal_core",
       "book": "BOOK_07",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-GRAV-005",
-      "domain": "formal_core",
-      "book": "BOOK_07",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-GRAV-006",
-      "domain": "formal_core",
-      "book": "BOOK_07",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-IM-COSMO-002",
-      "domain": "cosmology",
-      "book": "BOOK_08",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-IM-COSMO-003",
-      "domain": "cosmology",
-      "book": "BOOK_08",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-IM-COSMO-004",
-      "domain": "cosmology",
-      "book": "BOOK_08",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-QUANT-MET-001",
-      "domain": "formal_core",
-      "book": "METROLOGY",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-QUANT-MET-002",
-      "domain": "formal_core",
-      "book": "METROLOGY",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1281,55 +1211,6 @@
     },
     {
       "claim_id": "D0-CVFT-F7",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-GRAV-005",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-GRAV-006",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-IM-COSMO-002",
-      "domain": "cosmology",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-IM-COSMO-003",
-      "domain": "cosmology",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-IM-COSMO-004",
-      "domain": "cosmology",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-QUANT-MET-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-QUANT-MET-002",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -3609,13 +3490,13 @@
     {
       "claim_id": "D0-GRAV-005",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "formal_core",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
@@ -3637,12 +3518,12 @@
     {
       "claim_id": "D0-GRAV-006",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_07",
       "leverage": 0,
@@ -3721,12 +3602,12 @@
     {
       "claim_id": "D0-IM-COSMO-002",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "cosmology",
       "book": "BOOK_08",
       "leverage": 0,
@@ -3735,12 +3616,12 @@
     {
       "claim_id": "D0-IM-COSMO-003",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "cosmology",
       "book": "BOOK_08",
       "leverage": 0,
@@ -3749,12 +3630,12 @@
     {
       "claim_id": "D0-IM-COSMO-004",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "cosmology",
       "book": "BOOK_08",
       "leverage": 0,
@@ -3777,12 +3658,12 @@
     {
       "claim_id": "D0-QUANT-MET-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "METROLOGY",
       "leverage": 0,
@@ -3791,12 +3672,12 @@
     {
       "claim_id": "D0-QUANT-MET-002",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "METROLOGY",
       "leverage": 0,
