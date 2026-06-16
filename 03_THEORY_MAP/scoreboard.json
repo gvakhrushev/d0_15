@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3751,
-    "track_fair_max": 5025,
-    "pct_strength": 74.6,
+    "realized": 3762,
+    "track_fair_max": 5036,
+    "pct_strength": 74.7,
     "core_realized": 3189,
     "core_potential": 4440,
     "core_headroom": 1251,
-    "n_claims": 282,
-    "n_active": 280,
+    "n_claims": 283,
+    "n_active": 281,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 172,
-      "realized": 2522,
-      "max": 3258,
+      "n": 173,
+      "realized": 2533,
+      "max": 3269,
       "core_headroom": 731
     },
     "rg": {
@@ -388,9 +388,9 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 7,
-      "realized": 122,
-      "max": 122,
+      "n": 8,
+      "realized": 133,
+      "max": 133,
       "core_headroom": 0
     },
     "BOOK_00/05": {
@@ -5906,6 +5906,20 @@
     },
     {
       "claim_id": "D0-RIEMANN-AXIS-M1-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PVSNP-LYAPUNOV-M1-001",
       "track": "BRIDGE",
       "level": 4,
       "level_name": "LEAN_PROVED",

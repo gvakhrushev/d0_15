@@ -83,6 +83,7 @@ import D0.Combinatorics.PhaseTowerMinimality
 import D0.Combinatorics.PhaseTowerRecursion
 import D0.Combinatorics.PhaseUnfolding
 import D0.Combinatorics.Tripartite
+import D0.Complexity.HeatTraceLyapunov
 import D0.Condensed.AdmissibleSubfunctor
 import D0.Condensed.CondensedPhiVacuum
 import D0.Condensed.OperatorNaturality

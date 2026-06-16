@@ -428,7 +428,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-HODGE-M1-REDUCTIO-001", moduleName := "D0.Topology.HodgeAlgebraicRealization",
       theoremName := "hodge_nonalgebraic_needs_catalogue;hodge_algebraic_m1_forced;hodge_algebraic_unique", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-RIEMANN-AXIS-M1-001", moduleName := "D0.Spectral.CriticalAxisM1",
-      theoremName := "critical_axis_unique;half_is_m1_forced_axis;shifted_axis_needs_catalogue", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "critical_axis_unique;half_is_m1_forced_axis;shifted_axis_needs_catalogue", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-PVSNP-LYAPUNOV-M1-001", moduleName := "D0.Complexity.HeatTraceLyapunov",
+      theoremName := "branch_without_potential_needs_catalogue;solution_m1_forced;solution_unique", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
