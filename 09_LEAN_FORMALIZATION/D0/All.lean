@@ -134,6 +134,7 @@ import D0.Dynamics.PisotContraction
 import D0.Dynamics.ToralAutomorphism
 import D0.Dynamics.TraceHeatCapacityGravity
 import D0.Dynamics.TraceHeatLucasCore
+import D0.Edge.RamificationFromUeEffCompanion
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.M1Predicate
@@ -224,6 +225,7 @@ import D0.Gravity.CompactnessLimit
 import D0.Gravity.CriticalCollapseDSS
 import D0.Gravity.EntropicArchiveInterface
 import D0.Gravity.MacroEinsteinInterface
+import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.PressureCapacityBalance
 import D0.IM.ContinuumFromFractalTick
 import D0.IM.FractalContinuumAndWitnessHalting

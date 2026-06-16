@@ -21,9 +21,9 @@ LEAN_ROOT = os.path.join(REPO, "09_LEAN_FORMALIZATION")
 # Iter-21 sweep baseline: dangling `lean_module` refs on cert-only/OPEN rows (NOT LEAN_PROVED).
 # The set may only shrink (clear the row's pointer, or build the module).
 GRANDFATHER: set[str] = {
-    "D0.Edge.RamificationFromUeEffCompanion",
+    # D0.Edge.RamificationFromUeEffCompanion — RESOLVED Iter-21 (D0-EDGE-RAMIFICATION-001 built + promoted)
     "D0.Gravity.HorizonJetAndBaryonPole",
-    "D0.Gravity.MeasurementHorizonEquivalence",
+    # D0.Gravity.MeasurementHorizonEquivalence — RESOLVED Iter-21 (D0-GRAV-004 built + promoted)
     "D0.Gravity.OpticalJetBackreaction",
     "D0.IM.ArchivePressureCoupling",
     # D0.IM.ContinuumFromFractalTick — RESOLVED Iter-21 (D0-IM-003 built + promoted)
@@ -33,7 +33,7 @@ GRANDFATHER: set[str] = {
     "D0.IM.LogdetSecondResponse",
     # D0.IM.SelfSubstrateTrace — RESOLVED Iter-21 (D0-IM-001 built + promoted)
     "D0.IM.StrongLogdetPressure",
-    "D0.Matter.BaryonAnonymousPoleSet",
+    # D0.Matter.BaryonAnonymousPoleSet — RESOLVED Iter-21 (no longer a lean_module pointer)
     "D0.Metrology.PSDPurification",
     "D0.Metrology.PhasonBragg",
     "D0.Metrology.Phi2Flux",
