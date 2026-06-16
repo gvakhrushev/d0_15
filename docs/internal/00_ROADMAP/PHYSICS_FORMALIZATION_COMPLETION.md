@@ -16,7 +16,16 @@ failure mode is **registry lag, not missing proofs**:
 Net: ~20 cert-only rows can flip to machine-checked-finite-leg with well-under-a-day of work, mostly by
 reuse. Inflating the ~30 empirical/owner-edge ones would be the exact over-claim the audit prevents.
 
-## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3949, 78.4%)
+## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3962, 78.7%)
+
+**Batch D** (genuine new theorem + clears a dangling pointer 19→18) — `D0-IM-004` (Möbius witness
+topological halting) → `D0.Topology.WitnessHalting` (`witness_halting_cert`): the orbit average
+`E = (1/8) Σ_k P_k diag(1..8) P_kᵀ` over the 8 cyclic shifts equals the scalar `(9/2)·I` (emission
+`36/8=9/2`), and `P_k E P_kᵀ = E` for every shift (`native_decide` on 8×8 ℚ). The cert's described
+"orbit-average = (9/2)·I" was accurate; the module was a dangling grandfather pointer, now real.
+`native_decide` needed a closed `∀ k` (free-variable goals are rejected). Halting-quotient reading stays cert.
+**With Batch D, all flagged genuine-new-theorem batches (B, C, D, E, H) are done.** Remaining = REACHABLE_BOUNDED
+(hours-each real-analysis/charpoly proofs) + dangling-pointer cleanup.
 
 **Batch H** (genuine new theorem) — `D0-LAPLACIAN-SPECTRUM-FIX-001` → `D0.Spectral.ZoneMatrixSpectrum`
 (`laplacian_3x3_correct`): the 3×3 row-stochastic zone matrix M over ℚ, `e₁=0`/`e₂=−121/160`/`e₃=39/160`
