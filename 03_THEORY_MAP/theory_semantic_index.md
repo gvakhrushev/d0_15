@@ -5,10 +5,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 17
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 79
-- `CORE-FORMALIZED`: 125
+- `CORE-FORMALIZED`: 130
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -19,9 +19,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 23
+- `bridge`: 26
 - `certificate`: 94
-- `core`: 126
+- `core`: 131
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -31,13 +31,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 23
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 169
+- `formal_core`: 174
 - `frontier`: 13
-- `gauge_bridge`: 19
+- `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
-- `smooth_geometry`: 14
+- `smooth_geometry`: 16
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -727,6 +727,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter13 BRIDGE owner-edge] independent forcing-owner for 3 space dims beside Q8/Dedekind and graph-rank: Frobenius (1877) => only R(1),C(2),H(4) finite-dim assoc. division algebras over R; H maximal, Im(H)=span{i,j,k}=3=rank-3 transport=space, Re=1=time. Lean D0.Foundation.FrobeniusDivision3D (frobenius_division_3d): exact Z-quaternion Hamilton relations i2=j2=k2=ijk=-1, ij=k, Im-dim=3 (gap-free finite content). Cert vp_frobenius_division_3d.py (can-FAIL; controls: C 1 axis, R 0, no 3-dim division algebra). External owner ASSUMP-FROBENIUS-1877 (classification not re-proved). HONEST: H->O octet HYP (dim O=8 vs |Q8|=8 are two different eights), NOT a forcing.
 
+### D0-HODGE-M1-REDUCTIO-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Topology.HodgeAlgebraicRealization`
+- theorem: `hodge_nonalgebraic_needs_catalogue;hodge_algebraic_m1_forced;hodge_algebraic_unique`
+- cert: `none`
+- assumptions: `ASSUMP-HODGE-ALGEBRAIC-FORCING`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter20 Clay-core, first conditional M1-reductio on the keystone] sect28 Hodge D0-reformulation: a kappa-stable rational class is algebraic, else a non-algebraic index is an exogenous parameter (forbidden M1). PROVEN conditional: IF the canonical finite cohomology data M1-forces the algebraic realization (ASSUMP-HODGE-ALGEBRAIC-FORCING) THEN the non-algebraic realization RequiresExternalCatalogue (via D0.Foundation.m1_alternative_needs_catalogue). The forcing hypothesis (kappa-stable => algebraic) is the sect28 content, named not derived; NOT the ZFC Hodge statement. First instantiation of the M1 keystone. Passports: physics (kappa-stable cohomology) + Clay (sect28 reductio).
+
 ### D0-M1-INFO-RECONSTRUCTION-001
 
 - type: `bridge`
@@ -739,6 +752,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-M1-INFO-RECONSTRUCTION`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter7 axiom-forcing C.2, strongest axiomatic support] External owner of M1 itself: finite information capacity of an elementary system + continuity + tomographic locality UNIQUELY yield complex Hilbert-space QM (Hardy quant-ph/0101012; Dakic-Brukner 2011; Masanes-Mueller NJP 13 053040 (2011); Chiribella-DAriano-Perinotti PRA 84 012311 (2011)). D0 lens: M1's finite-distinguishability premise IS the finite-capacity hypothesis these reconstructions start from -- an external forcing of the D0 axiomatic base. Lean D0.Bridge.M1InfoReconstructionBridge (m1_info_reconstruction_conditional) conditional on ASSUMP-M1-INFO-RECONSTRUCTION. HONEST: NAMES the reconstruction-theorem family as the owner; not a D0-internal derivation -- BRIDGE not core.
+
+### D0-PVSNP-LYAPUNOV-M1-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Complexity.HeatTraceLyapunov`
+- theorem: `branch_without_potential_needs_catalogue;solution_m1_forced;solution_unique`
+- cert: `none`
+- assumptions: `ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter20 Clay-core, M1-reductio on the keystone] sect24 P vs NP D0-reformulation. PROVEN conditional: given a global navigation potential V that strictly selects the solution (ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL), any other state (a promising branch != solution) RequiresExternalCatalogue — storing which branch is promising is an exogenous branch-index (unprovable input) forbidden by M1, so navigation is directed (no exponential branch-catalogue). Existence of V as the heat-trace relaxation lim e^{-uL}b with uniform spectral gap is the named assumption (corpus has static Laplacian D0.Geometry.ArchiveLaplacianProperties but no u->inf limit), not derived. Regularized P_D0 vs NP_D0 at fixed UV; NOT the ZFC P=?NP. Passports: physics (heat-trace relaxation) + Clay (sect24 navigation core).
 
 ### D0-QM-BORN-001
 
@@ -765,6 +791,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-HST-EXTERNAL`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: Finite skeleton under explicit finite response assumptions.
+
+### D0-RIEMANN-AXIS-M1-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Spectral.CriticalAxisM1`
+- theorem: `critical_axis_unique;half_is_m1_forced_axis;shifted_axis_needs_catalogue`
+- cert: `none`
+- assumptions: `ASSUMP-PACKAGING-REFLECTION-SYMMETRY`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Iter20 Clay-core, M1-reductio on the keystone] sect29 Riemann D0-reformulation: the canonical spectral-packaging functional equation is the reflection s|->1-s; its unique fixed axis is Re=1/2 (half_is_m1_forced_axis, elementary + UNCONDITIONAL) and any shifted axis 1/2+delta (delta!=0) RequiresExternalCatalogue (needs an exogenous shift = unprovable input). The RH-content (that the packaging symmetry IS this reflection and zeros lie on the fixed axis) is the named assumption ASSUMP-PACKAGING-REFLECTION-SYMMETRY, not derived; NOT the ZFC Riemann statement about zeta. Passports: physics (self-adjoint spectral packaging, D0-ALPHA-ZETA-RESIDUE-001) + Clay (sect29 critical axis).
 
 ### D0-TIME-MODULAR-FLOW-OWNER-001
 
@@ -1570,7 +1609,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_zeta_residue_alpha.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|, zeta_adj(0)=3=rank; one zeta carries alpha+capacity. phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier).
+- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|; one zeta carries alpha+capacity. (NB: this module proves ONLY the edge-zeta moments and has NO zetaAdj; the rank=3/nullity fact is proved separately and unwired to any zeta in D0.Claims.Signature31Split + D0.Claims.KernelZoneSplit.) phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier).
 
 ### D0-ARCHIVE-ACTION-001
 
@@ -1831,6 +1870,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Finite phase quadrature gives quadratic response and unit phase-blind calibration gives norm-square before Born normalization.
+
+### D0-BSD-RANK-PASSPORT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Synthesis.BSDRankNullityPassport`
+- theorem: `bsd_rank_nullity_passport`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter20 Clay-core, two passports] sect30 BSD reads ord L(E,s) = rank_D0(E) as one kappa-invariant, two passports. Re-exports the proven CORE rank/nullity side (D0.Claims.kernel_zone_split): scene K(9,11,13) operator has rank <= 3 (3 zone patterns) and nullity >= 30 (30 within-zone diffs in ker A; 30=8+10+12), exact integer LA. NOT the analytic ord L = rank equality (needs an order-of-zero object + elliptic-curve type + the M1 reductio; stays theorem-target). Passports: physics (scene rank-3/nullity-30 = D0-KERNEL-ZONE-SPLIT-001) + Clay (sect30 nullity side).
 
 ### D0-CAPACITY-V11-001
 
@@ -2273,6 +2325,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Release-candidate core status backed by build and CI.
+
+### D0-M1-PREDICATE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/05`
+- module: `D0.Foundation.M1Predicate`
+- theorem: `m1_forced_unique;m1_alternative_needs_catalogue;m1_forced_not_catalogue;selector_M1Forced;demo_one_needs_catalogue`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter20 keystone] M1 formalized as a reusable proof-theoretic predicate (NOT a new axiom): M1Forced (Forced:a->Prop) a = a satisfies the canonical finite constraint AND is its unique witness; RequiresExternalCatalogue Forced b = not (Forced b) (b needs data beyond the finite code = an unprovable input). Core reductio engine: m1_forced_unique (canonical data forces at most one answer) + m1_alternative_needs_catalogue (any alternative to the forced answer requires an external catalogue = the formal not-conclusion => exogenous-parameter step). Generalizes the proven D0.Matter.StrictSelected/strict_selected_unique spine (selector_M1Forced bridge); gap-free, no sorry/axiom. The sect 24-30 millennium-core reformulations instantiate this shared predicate instead of one-off forbidden-index notions. Framing: M1 = a proof may not depend on an unprovable postulate; this is logic, not a D0 superstructure.
 
 ### D0-MASTER-EVOLUTION-001
 
@@ -3151,6 +3216,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
 - notes: Frozen rational SU2 doublet compatibility forces the unique nonzero idempotent scalar projector to be identity trace-rank two without external scalar constants. [Iter18 integrity fix] The 7 Lean theorems were `: True := by trivial` token stubs (registered LEAN_PROVED but vacuous); they are now LOAD-BEARING proofs over concrete 2x2 rational matrices: commutant-of-frozen-SU(2)=scalar
 
+### D0-MASSGAP-COSTQUANTUM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_05`
+- module: `D0.Gauge.MassGapCostQuantum`
+- theorem: `positive_cost_quantum;deltaS_min_pos;cost_weights_sum_one`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: [Iter20 Clay-core, two passports] sect26 Yang-Mills mass gap rests on a positive minimal cycle cost. Proven: corpus weights W_ext=phi^-1, W_int=phi^-2 satisfy W_ext+W_int=1 (D0.Core.Phi.phi_inv_satisfies_primitive), so DeltaS_min=phi^-2>0 is a FIXED positive fraction (cannot vanish under refinement = no exogenous infinitely-fine spacing). NOT the spectral mass gap E1-E0>=c*DeltaS_min of an operator (needs a gauge Hamiltonian + spectral-gap predicate, constant c undefined; stays D0-CVFT-F6/PROOF-TARGET). Passports: physics (phi-weight step cost) + Clay (sect26 cost-quantum core).
+
 ### D0-MATTER-REP-001
 
 - type: `core`
@@ -3527,6 +3605,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter10 FORCING, closed in chat -- the lattice BRIDGE became a FORCING] phi-carrier is forced, not postulated: (1) non-perturbative gauge theory is rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay problem) => finite carrier is the only rigorous one; (2) a periodic lattice has an arbitrary step a (needs a->0); a quasicrystal is self-similar by phi (inflation [[1,1],[1,0]] Perron eigenvalue phi, A/B->phi) with NO preferred step, NO a->0 limit; (3) M1 forbids the hand-chosen a (exogenous) => carrier must be aperiodic-self-similar; (4) aperiodic + 5-fold => phi (Penrose/de Bruijn cut-and-project; 2cos(pi/5)=phi; Shechtman Nobel 2011). cert vp_quasicrystal_carrier_forcing.py (decidable inflation/5-fold backbone + 4 named external pillars). Reuses the already-proved quasicrystalline carrier (Sturmian phi^-2, §01.21.2). NEW external channel to phi (with Hurwitz, Jones-index, KAM, quadratic Pisot). Do not reopen; the open remainder is D0-QUASICRYSTAL-PROJECTION-001.
 
+### D0-CONTINUUM-INVLIM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_05`
+- module: `D0.Foundation.ContinuumAsInverseLimit`
+- theorem: `continuum_is_nonempty_inverse_limit;continuum_no_actual_infinity;d0Continuum_eq`
+- cert: `none`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter20 Clay-core, two passports] DEF 21.2.1: the D0 continuum is the inverse limit of the finite archive tower (V_k, pi), realised as a genuine Mathlib LightProfinite (D0Continuum := archiveLightProfinite). Reuses Clausen-Scholze condensed apparatus (Profinite.AsLimit, LightProfinite = LightDiagram). NOT the ZFC/actual-infinity continuum (which postulates a completed infinity = unprovable input). Foundational anchor cited by sect24/25/27/30. Passports: physics (archive tower) + math (DEF 21.2.1 point-free continuum).
+
 ### D0-GEOM-SPECTRAL-ACTION-LADDER-001
 
 - type: `core`
@@ -3539,6 +3630,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: Finite spectral-action ladder and bounds; no continuum EH promotion.
+
+### D0-HYDRO-NO-BLOWUP-KAPPA-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_05`
+- module: `D0.Dynamics.LatticeHydroNoBlowup`
+- theorem: `no_blowup_under_kappa_floor;no_cascade_bounded_norms;global_solution_exists_projective`
+- cert: `none`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter20 Clay-core, two passports] Constructively-proven core of sect27 (Navier-Stokes global regularity). On a finite kappa-floor lattice level: every higher (k>=3) spectral-action trace-power norm is bounded by a finite function of the level data (reuses SpectralActionLadder.higher_powers_floor_bounded) AND the kappa-stable archive tower has a nonempty projective limit (global coherent solution, reuses archive_tower_defines_profinite_object). NOT the continuum-R^3 ZFC Clay statement (whose continuum limit appeals to actual infinity = unprovable postulate). PER-LEVEL bound: the constant (card N)^(k+1)(B/floor)^k GROWS with refinement, never a uniform-across-tower constant. M1-contrapositive carried by D0.Foundation.M1Predicate. Passports: physics (finite kappa-bounded lattice hydro) + Clay (sect27).
 
 ### D0-RANK3-CAUSAL-CONE-001
 

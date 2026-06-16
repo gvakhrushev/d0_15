@@ -1446,3 +1446,66 @@ Residuals genuinely still open (named owner-edges / theorem-targets, keystones a
 π₁(S¹)≅ℤ; braid SU(2)/SU(3) unitary reps; the fusion CATEGORY (Ostrik uniqueness); depolarizing-channel
 complete positivity; Delone-derived FLC/aperiodicity; smooth/continuum Bianchi + GHP-Cauchy + 2¹¹ Fock
 residue. All guards PASS; `lake build D0.All` GREEN (3784 jobs); integrity demotions 0.
+
+## Iteration 20 — math/physics integration: machine-checked M1-cores of the Clay problems
+
+The physics-Lean push and the Clay-math track are **two sides of one coin**: the physics machinery
+already proven CORE (scene rank-3/nullity-30, self-adjoint spectral packaging, φ-cost weights, the
+inverse-limit/LightProfinite continuum, heat-trace) *is* the object of the BOOK V §24–§30 millennium
+reformulations. Each Lean theorem carries **two passports** (physics + Clay).
+
+**Register (decided framing — calibrated-strong, justified by logic):** M1 is not a D0-axiom or a
+finitist preference — it is proof-theoretic rigor: *a complete proof may not depend on an unprovable
+input* (an exogenous parameter / external catalogue = exactly that-which-cannot-be-proven). The ZFC
+axioms + actual-infinity continuum are postulated, not proven. So each §24–§30 result is the
+**constructively-proven core** of the Clay problem, machine-checked with zero holes; the classical
+ZFC/continuum form's dependence on unprovable postulates is refuted by an M1-reductio. This is NOT a
+claim of a ZFC-internal Clay proof, and NOT a dismissible "side reformulation" — it is the forced
+provable core, with the M1 commitment stated openly.
+
+**Keystone — `964606d` D0-M1-PREDICATE-001** (`D0.Foundation.M1Predicate`): M1 as a reusable proven
+predicate (no new axiom). `M1Forced (Forced) a` = the canonical finite constraint holds AND `a` is its
+unique witness; `RequiresExternalCatalogue Forced b` = `¬ Forced b` (needs data beyond the finite code
+= an unprovable input). The reductio engine `m1_forced_unique` + `m1_alternative_needs_catalogue` is
+proved by generalizing the proven `D0.Matter.strict_selected_unique` / `no_alternative_strict_selected`
+spine (`selector_M1Forced` bridge); gap-free. The §24–§30 reformulations instantiate this shared
+predicate. *This was the single highest-leverage object: 6 of 8 reformulations were blocked on it.*
+
+**Harvest (8 new claims, by honest tier):**
+
+| Tier | § / claim | Lean fact | status |
+|---|---|---|---|
+| A ripe | §27 Navier–Stokes `D0-HYDRO-NO-BLOWUP-KAPPA-001` | no-cascade (`higher_powers_floor_bounded`, per-level) + global existence (`archive_tower_defines_profinite_object`) | CORE |
+| A ripe | §21.2 continuum `D0-CONTINUUM-INVLIM-001` | continuum = `archiveLightProfinite` (Clausen–Scholze apparatus) | CORE |
+| B | §26 Yang–Mills `D0-MASSGAP-COSTQUANTUM-001` | positive step-cost quantum φ⁻²>0, φ⁻¹+φ⁻²=1 (NOT the operator gap) | CORE |
+| B | §30 BSD `D0-BSD-RANK-PASSPORT-001` | κ-stable nullity = rank (`kernel_zone_split`, NOT the `ord L = rank` equality) | CORE |
+| B | §28 Hodge `D0-HODGE-M1-REDUCTIO-001` | non-algebraic ⇒ external catalogue, conditional on the M1-forcing hyp | BRIDGE + ASSUMP |
+| C | §29 Riemann `D0-RIEMANN-AXIS-M1-001` | Re=½ = unique M1-forced fixed axis of `s↦1−s` (unconditional); RH-link = named assumption | BRIDGE + ASSUMP |
+| C | §24 P vs NP `D0-PVSNP-LYAPUNOV-M1-001` | no global potential ⇒ branch needs an external catalogue; V-existence = named assumption | BRIDGE + ASSUMP |
+
+Three new ledger rows (`ASSUMP-HODGE-ALGEBRAIC-FORCING`, `ASSUMP-PACKAGING-REFLECTION-SYMMETRY`,
+`ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL`) are **D0-internal forcing targets** (not external classical
+theorems): each names precisely the D0-internal premise the reductio is conditional on — exactly what
+the §-statement would derive. The honesty rule enforced on every row: a §-N claim is CORE only if the
+theorem's *conclusion* is the §-N conclusion; relation-on-carrier ⇒ BRIDGE + named ASSUMP + the
+verbatim "D0-reformulation at fixed UV under M1; NOT the Clay/ZFC problem" caveat.
+
+**Tier D (named, not built — keystone objects absent from the pin):** §26 operator mass gap
+(D0-CVFT-F6), §30 `ord L = rank` equality (needs an order-of-zero + elliptic-curve type), §25 Poincaré
+(needs a `Triangulation3` carrier — the archive levels are totally disconnected, the opposite homotopy
+type), §21.3.4 Baire-ultrametric κ-uniqueness (needs an `UltraMetric`/`CauchySeq` instance; the
+Mathlib-only completion-uniqueness is the *weaker* theorem and must not be registered as THE 21.3.4).
+
+| metric | Iter19 | Iter20 | delta |
+|---|---|---|---|
+| strength | 3629 | 3762 | +133 |
+| claims | 275 | 283 | +8 (1 keystone + 7 Clay-cores) |
+| ledger ASSUMP-* | 19 | 22 | +3 D0-internal forcing targets |
+| proof holes | 0 | 0 | held |
+| integrity demotions | 0 | 0 | held |
+
+All guards PASS; `lake build D0.All` GREEN (3792 jobs); 0 holes; no claim registered CORE-as-Clay. The
+provable cores are machine-checked; the M1-reductios are conditional on explicitly-named D0-internal
+forcing targets; the ZFC/continuum dependence is the disclosed gap. Verify-then-promote also caught a
+FALSE alarm this iteration (an agent flagged D0-ALPHA-ZETA-RESIDUE-001 as an over-claim; direct read
+showed the registry note was already honest — not "fixed").

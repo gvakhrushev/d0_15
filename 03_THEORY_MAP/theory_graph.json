@@ -4,10 +4,10 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 275,
+    "claims": 283,
     "release_status": {
-      "CORE-FORMALIZED": 125,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 17,
+      "CORE-FORMALIZED": 130,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 79,
@@ -19,25 +19,25 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 147,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 17,
+      "LEAN_PROVED": 152,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 20,
       "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 126,
-      "bridge": 23,
+      "core": 131,
+      "bridge": 26,
       "no-go": 16,
       "certificate": 94,
       "deprecated": 3,
       "frontier": 13
     },
     "domain": {
-      "formal_core": 169,
+      "formal_core": 174,
       "rg": 5,
-      "gauge_bridge": 19,
-      "smooth_geometry": 14,
+      "gauge_bridge": 20,
+      "smooth_geometry": 16,
       "spectral_action": 5,
       "empirical_passport": 22,
       "cosmology": 23,
@@ -6911,7 +6911,7 @@
         "vp_zeta_residue_alpha.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|, zeta_adj(0)=3=rank; one zeta carries alpha+capacity. phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier).",
+      "notes": "zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|; one zeta carries alpha+capacity. (NB: this module proves ONLY the edge-zeta moments and has NO zetaAdj; the rank=3/nullity fact is proved separately and unwired to any zeta in D0.Claims.Signature31Split + D0.Claims.KernelZoneSplit.) phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier).",
       "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/ZetaResidueAlpha.lean",
       "module_exists": true,
       "certs_exist": true
@@ -9185,6 +9185,271 @@
       "label": "D0.Gauge.BraidValence",
       "path": "09_LEAN_FORMALIZATION/D0/Gauge/BraidValence.lean",
       "exists": true
+    },
+    {
+      "id": "D0-M1-PREDICATE-001",
+      "kind": "claim",
+      "claim_id": "D0-M1-PREDICATE-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/05",
+      "section": "M1 as a formal proof-theoretic predicate: forced-answer / external-catalogue (integration keystone, generalizes StrictSelected)",
+      "lean_module": "D0.Foundation.M1Predicate",
+      "lean_theorem": "m1_forced_unique;m1_alternative_needs_catalogue;m1_forced_not_catalogue;selector_M1Forced;demo_one_needs_catalogue",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter20 keystone] M1 formalized as a reusable proof-theoretic predicate (NOT a new axiom): M1Forced (Forced:a->Prop) a = a satisfies the canonical finite constraint AND is its unique witness; RequiresExternalCatalogue Forced b = not (Forced b) (b needs data beyond the finite code = an unprovable input). Core reductio engine: m1_forced_unique (canonical data forces at most one answer) + m1_alternative_needs_catalogue (any alternative to the forced answer requires an external catalogue = the formal not-conclusion => exogenous-parameter step). Generalizes the proven D0.Matter.StrictSelected/strict_selected_unique spine (selector_M1Forced bridge); gap-free, no sorry/axiom. The sect 24-30 millennium-core reformulations instantiate this shared predicate instead of one-off forbidden-index notions. Framing: M1 = a proof may not depend on an unprovable postulate; this is logic, not a D0 superstructure.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/M1Predicate.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.M1Predicate",
+      "kind": "lean_module",
+      "label": "D0.Foundation.M1Predicate",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/M1Predicate.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-HYDRO-NO-BLOWUP-KAPPA-001",
+      "kind": "claim",
+      "claim_id": "D0-HYDRO-NO-BLOWUP-KAPPA-001",
+      "type": "core",
+      "domain": "smooth_geometry",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
+      "book": "BOOK_05",
+      "section": "sect27 Navier-Stokes D0-core: no cascade (bounded trace-power norms) + global existence (nonempty projective limit)",
+      "lean_module": "D0.Dynamics.LatticeHydroNoBlowup",
+      "lean_theorem": "no_blowup_under_kappa_floor;no_cascade_bounded_norms;global_solution_exists_projective",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter20 Clay-core, two passports] Constructively-proven core of sect27 (Navier-Stokes global regularity). On a finite kappa-floor lattice level: every higher (k>=3) spectral-action trace-power norm is bounded by a finite function of the level data (reuses SpectralActionLadder.higher_powers_floor_bounded) AND the kappa-stable archive tower has a nonempty projective limit (global coherent solution, reuses archive_tower_defines_profinite_object). NOT the continuum-R^3 ZFC Clay statement (whose continuum limit appeals to actual infinity = unprovable postulate). PER-LEVEL bound: the constant (card N)^(k+1)(B/floor)^k GROWS with refinement, never a uniform-across-tower constant. M1-contrapositive carried by D0.Foundation.M1Predicate. Passports: physics (finite kappa-bounded lattice hydro) + Clay (sect27).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Dynamics/LatticeHydroNoBlowup.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Dynamics.LatticeHydroNoBlowup",
+      "kind": "lean_module",
+      "label": "D0.Dynamics.LatticeHydroNoBlowup",
+      "path": "09_LEAN_FORMALIZATION/D0/Dynamics/LatticeHydroNoBlowup.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-CONTINUUM-INVLIM-001",
+      "kind": "claim",
+      "claim_id": "D0-CONTINUUM-INVLIM-001",
+      "type": "core",
+      "domain": "smooth_geometry",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
+      "book": "BOOK_05",
+      "section": "sect21.2 continuum = profinite inverse limit of the finite archive tower (Mathlib LightProfinite)",
+      "lean_module": "D0.Foundation.ContinuumAsInverseLimit",
+      "lean_theorem": "continuum_is_nonempty_inverse_limit;continuum_no_actual_infinity;d0Continuum_eq",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter20 Clay-core, two passports] DEF 21.2.1: the D0 continuum is the inverse limit of the finite archive tower (V_k, pi), realised as a genuine Mathlib LightProfinite (D0Continuum := archiveLightProfinite). Reuses Clausen-Scholze condensed apparatus (Profinite.AsLimit, LightProfinite = LightDiagram). NOT the ZFC/actual-infinity continuum (which postulates a completed infinity = unprovable input). Foundational anchor cited by sect24/25/27/30. Passports: physics (archive tower) + math (DEF 21.2.1 point-free continuum).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/ContinuumAsInverseLimit.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.ContinuumAsInverseLimit",
+      "kind": "lean_module",
+      "label": "D0.Foundation.ContinuumAsInverseLimit",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/ContinuumAsInverseLimit.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-BSD-RANK-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-BSD-RANK-PASSPORT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_05",
+      "section": "sect30 BSD: kappa-stable nullity = rank passport (scene rank-3/nullity-30); NOT the ord L = rank equality",
+      "lean_module": "D0.Synthesis.BSDRankNullityPassport",
+      "lean_theorem": "bsd_rank_nullity_passport",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter20 Clay-core, two passports] sect30 BSD reads ord L(E,s) = rank_D0(E) as one kappa-invariant, two passports. Re-exports the proven CORE rank/nullity side (D0.Claims.kernel_zone_split): scene K(9,11,13) operator has rank <= 3 (3 zone patterns) and nullity >= 30 (30 within-zone diffs in ker A; 30=8+10+12), exact integer LA. NOT the analytic ord L = rank equality (needs an order-of-zero object + elliptic-curve type + the M1 reductio; stays theorem-target). Passports: physics (scene rank-3/nullity-30 = D0-KERNEL-ZONE-SPLIT-001) + Clay (sect30 nullity side).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Synthesis/BSDRankNullityPassport.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Synthesis.BSDRankNullityPassport",
+      "kind": "lean_module",
+      "label": "D0.Synthesis.BSDRankNullityPassport",
+      "path": "09_LEAN_FORMALIZATION/D0/Synthesis/BSDRankNullityPassport.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-MASSGAP-COSTQUANTUM-001",
+      "kind": "claim",
+      "claim_id": "D0-MASSGAP-COSTQUANTUM-001",
+      "type": "core",
+      "domain": "gauge_bridge",
+      "scope_guard": "Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.",
+      "book": "BOOK_05",
+      "section": "sect26 Yang-Mills: positive step-cost quantum DeltaS_min=phi^-2>0 (W_ext+W_int=1); NOT the operator mass gap",
+      "lean_module": "D0.Gauge.MassGapCostQuantum",
+      "lean_theorem": "positive_cost_quantum;deltaS_min_pos;cost_weights_sum_one",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter20 Clay-core, two passports] sect26 Yang-Mills mass gap rests on a positive minimal cycle cost. Proven: corpus weights W_ext=phi^-1, W_int=phi^-2 satisfy W_ext+W_int=1 (D0.Core.Phi.phi_inv_satisfies_primitive), so DeltaS_min=phi^-2>0 is a FIXED positive fraction (cannot vanish under refinement = no exogenous infinitely-fine spacing). NOT the spectral mass gap E1-E0>=c*DeltaS_min of an operator (needs a gauge Hamiltonian + spectral-gap predicate, constant c undefined; stays D0-CVFT-F6/PROOF-TARGET). Passports: physics (phi-weight step cost) + Clay (sect26 cost-quantum core).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gauge/MassGapCostQuantum.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gauge.MassGapCostQuantum",
+      "kind": "lean_module",
+      "label": "D0.Gauge.MassGapCostQuantum",
+      "path": "09_LEAN_FORMALIZATION/D0/Gauge/MassGapCostQuantum.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-HODGE-M1-REDUCTIO-001",
+      "kind": "claim",
+      "claim_id": "D0-HODGE-M1-REDUCTIO-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_05",
+      "section": "sect28 Hodge: non-algebraic realization => external catalogue (conditional M1-reductio on the keystone)",
+      "lean_module": "D0.Topology.HodgeAlgebraicRealization",
+      "lean_theorem": "hodge_nonalgebraic_needs_catalogue;hodge_algebraic_m1_forced;hodge_algebraic_unique",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-HODGE-ALGEBRAIC-FORCING"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter20 Clay-core, first conditional M1-reductio on the keystone] sect28 Hodge D0-reformulation: a kappa-stable rational class is algebraic, else a non-algebraic index is an exogenous parameter (forbidden M1). PROVEN conditional: IF the canonical finite cohomology data M1-forces the algebraic realization (ASSUMP-HODGE-ALGEBRAIC-FORCING) THEN the non-algebraic realization RequiresExternalCatalogue (via D0.Foundation.m1_alternative_needs_catalogue). The forcing hypothesis (kappa-stable => algebraic) is the sect28 content, named not derived; NOT the ZFC Hodge statement. First instantiation of the M1 keystone. Passports: physics (kappa-stable cohomology) + Clay (sect28 reductio).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Topology/HodgeAlgebraicRealization.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Topology.HodgeAlgebraicRealization",
+      "kind": "lean_module",
+      "label": "D0.Topology.HodgeAlgebraicRealization",
+      "path": "09_LEAN_FORMALIZATION/D0/Topology/HodgeAlgebraicRealization.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-HODGE-ALGEBRAIC-FORCING",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-HODGE-ALGEBRAIC-FORCING",
+      "lean_name": "D0.Topology.KappaStableHodgeClass.algebraic_forced",
+      "status": "EXPLICIT",
+      "assumption_type": "D0_INTERNAL_FORCING_TARGET",
+      "external_source_or_cert": "D0-internal forcing target (not external)"
+    },
+    {
+      "id": "D0-RIEMANN-AXIS-M1-001",
+      "kind": "claim",
+      "claim_id": "D0-RIEMANN-AXIS-M1-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_05",
+      "section": "sect29 Riemann: Re=1/2 is the unique M1-forced symmetry axis of the canonical reflection s|->1-s",
+      "lean_module": "D0.Spectral.CriticalAxisM1",
+      "lean_theorem": "critical_axis_unique;half_is_m1_forced_axis;shifted_axis_needs_catalogue",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-PACKAGING-REFLECTION-SYMMETRY"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter20 Clay-core, M1-reductio on the keystone] sect29 Riemann D0-reformulation: the canonical spectral-packaging functional equation is the reflection s|->1-s; its unique fixed axis is Re=1/2 (half_is_m1_forced_axis, elementary + UNCONDITIONAL) and any shifted axis 1/2+delta (delta!=0) RequiresExternalCatalogue (needs an exogenous shift = unprovable input). The RH-content (that the packaging symmetry IS this reflection and zeros lie on the fixed axis) is the named assumption ASSUMP-PACKAGING-REFLECTION-SYMMETRY, not derived; NOT the ZFC Riemann statement about zeta. Passports: physics (self-adjoint spectral packaging, D0-ALPHA-ZETA-RESIDUE-001) + Clay (sect29 critical axis).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/CriticalAxisM1.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.CriticalAxisM1",
+      "kind": "lean_module",
+      "label": "D0.Spectral.CriticalAxisM1",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/CriticalAxisM1.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-PACKAGING-REFLECTION-SYMMETRY",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-PACKAGING-REFLECTION-SYMMETRY",
+      "lean_name": "D0.Spectral.ReflectionFixed",
+      "status": "EXPLICIT",
+      "assumption_type": "SPECTRAL_PACKAGING_SYMMETRY",
+      "external_source_or_cert": "D0-internal packaging-symmetry target (not external)"
+    },
+    {
+      "id": "D0-PVSNP-LYAPUNOV-M1-001",
+      "kind": "claim",
+      "claim_id": "D0-PVSNP-LYAPUNOV-M1-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_05",
+      "section": "sect24 P_D0 vs NP_D0: navigation without a global Lyapunov potential needs an external branch-catalogue (M1-reductio)",
+      "lean_module": "D0.Complexity.HeatTraceLyapunov",
+      "lean_theorem": "branch_without_potential_needs_catalogue;solution_m1_forced;solution_unique",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Iter20 Clay-core, M1-reductio on the keystone] sect24 P vs NP D0-reformulation. PROVEN conditional: given a global navigation potential V that strictly selects the solution (ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL), any other state (a promising branch != solution) RequiresExternalCatalogue — storing which branch is promising is an exogenous branch-index (unprovable input) forbidden by M1, so navigation is directed (no exponential branch-catalogue). Existence of V as the heat-trace relaxation lim e^{-uL}b with uniform spectral gap is the named assumption (corpus has static Laplacian D0.Geometry.ArchiveLaplacianProperties but no u->inf limit), not derived. Regularized P_D0 vs NP_D0 at fixed UV; NOT the ZFC P=?NP. Passports: physics (heat-trace relaxation) + Clay (sect24 navigation core).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Complexity/HeatTraceLyapunov.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Complexity.HeatTraceLyapunov",
+      "kind": "lean_module",
+      "label": "D0.Complexity.HeatTraceLyapunov",
+      "path": "09_LEAN_FORMALIZATION/D0/Complexity/HeatTraceLyapunov.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL",
+      "lean_name": "D0.Complexity.LyapunovNavigable.solution_forced",
+      "status": "EXPLICIT",
+      "assumption_type": "COMPLEXITY_NAVIGATION_POTENTIAL",
+      "external_source_or_cert": "D0-internal navigation-potential target (not external)"
     }
   ],
   "edges": [
@@ -13022,6 +13287,101 @@
       "source": "D0-BRAID-VALENCE-U1-001",
       "target": "module:D0.Gauge.BraidValence",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-M1-PREDICATE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-M1-PREDICATE-001",
+      "target": "module:D0.Foundation.M1Predicate",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HYDRO-NO-BLOWUP-KAPPA-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HYDRO-NO-BLOWUP-KAPPA-001",
+      "target": "module:D0.Dynamics.LatticeHydroNoBlowup",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONTINUUM-INVLIM-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONTINUUM-INVLIM-001",
+      "target": "module:D0.Foundation.ContinuumAsInverseLimit",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BSD-RANK-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BSD-RANK-PASSPORT-001",
+      "target": "module:D0.Synthesis.BSDRankNullityPassport",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-MASSGAP-COSTQUANTUM-001",
+      "target": "domain:gauge_bridge",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-MASSGAP-COSTQUANTUM-001",
+      "target": "module:D0.Gauge.MassGapCostQuantum",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HODGE-M1-REDUCTIO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HODGE-M1-REDUCTIO-001",
+      "target": "module:D0.Topology.HodgeAlgebraicRealization",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HODGE-M1-REDUCTIO-001",
+      "target": "assumption:ASSUMP-HODGE-ALGEBRAIC-FORCING",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-RIEMANN-AXIS-M1-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RIEMANN-AXIS-M1-001",
+      "target": "module:D0.Spectral.CriticalAxisM1",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RIEMANN-AXIS-M1-001",
+      "target": "assumption:ASSUMP-PACKAGING-REFLECTION-SYMMETRY",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-PVSNP-LYAPUNOV-M1-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PVSNP-LYAPUNOV-M1-001",
+      "target": "module:D0.Complexity.HeatTraceLyapunov",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PVSNP-LYAPUNOV-M1-001",
+      "target": "assumption:ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL",
+      "kind": "uses_assumption"
     }
   ]
 }

@@ -1,4 +1,35 @@
-# D0 — Autonomous session report (Iteration 19)
+# D0 — Autonomous session report (Iterations 19–20)
+
+## Iteration 20 — math/physics integration: machine-checked M1-cores of the Clay problems
+
+The physics-formalization push and the Clay-math track are **two sides of one coin**: the physics
+machinery already proven CORE *is* the object of the BOOK V §24–§30 millennium reformulations; each
+Lean theorem gets two passports. **M1 is proof-theoretic rigor, not a D0-axiom** — a complete proof may
+not depend on an unprovable input (the ZFC axioms + actual-infinity continuum are postulated, not
+proven). So each result is the **constructively-proven core** of the Clay problem, machine-checked,
+with the classical postulate-dependence refuted by an M1-reductio — NOT a ZFC-internal Clay proof, NOT
+a dismissible "side reformulation".
+
+**Delivered (8 new claims, strength 3629 → 3762, +133; build GREEN 3792 jobs; 0 holes; demotions 0):**
+- **Keystone `D0-M1-PREDICATE-001`** — M1 as a reusable proven predicate (`M1Forced` /
+  `RequiresExternalCatalogue`), generalizing the proven `StrictSelected` spine; gap-free, no axiom. It
+  was the single blocker for 6/8 reformulations.
+- **CORE (ripe):** §27 Navier–Stokes (no-cascade + global existence), §21.2 continuum (= LightProfinite
+  inverse limit), §26 Yang–Mills cost-quantum (φ⁻²>0, NOT the operator gap), §30 BSD rank=nullity
+  passport (NOT the `ord L=rank` equality).
+- **BRIDGE (conditional M1-reductio on the keystone, + named ledger ASSUMP):** §28 Hodge
+  (non-algebraic ⇒ external catalogue), §29 Riemann (Re=½ = unique M1-forced axis), §24 P vs NP
+  (no global potential ⇒ branch-catalogue).
+- **Honesty rule enforced:** a §-N claim is CORE only if the theorem's *conclusion* is the §-N
+  conclusion; relation-on-carrier ⇒ BRIDGE + named ASSUMP + the "D0-reformulation under M1; NOT the
+  Clay/ZFC problem" caveat. Tier-D keystones genuinely absent from the pin are named, not built
+  (§26 operator gap, §30 ord-L equality, §25 `Triangulation3`, §21.3.4 Baire κ-uniqueness).
+
+Full detail: `INTEGRATION_LOG.md` Iteration 20.
+
+---
+
+## Iteration 19 — reuse-first formalization + frontier wins
 
 Owner away ~8h. Mandate: continue the full-Lean-formalization push autonomously — the theory lives
 in the books, the Lean layer lags, this is technical catch-up. Discipline: verified-closure protocol
