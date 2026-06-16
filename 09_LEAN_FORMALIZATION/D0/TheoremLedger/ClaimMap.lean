@@ -414,7 +414,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-FORGETTING-CHANNEL-CP-001", moduleName := "D0.Probability.ForgettingChannelCP",
       theoremName := "d0HomCP;d0ForgetIdCP;d0ForgetIdCP_completelyPositive;d0ForgetIdCP_apply", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-BRAID-VALENCE-U1-001", moduleName := "D0.Gauge.BraidValence",
-      theoremName := "braidGroupTwoEquiv;braidRels_two;braidGroup_generated;braidGroupTwo_nontrivial;braidGroupTwo_finitelyPresented", status := ClaimStatus.leanCoreProved }
+      theoremName := "braidGroupTwoEquiv;braidRels_two;braidGroup_generated;braidGroupTwo_nontrivial;braidGroupTwo_finitelyPresented", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-M1-PREDICATE-001", moduleName := "D0.Foundation.M1Predicate",
+      theoremName := "m1_forced_unique;m1_alternative_needs_catalogue;m1_forced_not_catalogue;selector_M1Forced;demo_one_needs_catalogue", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

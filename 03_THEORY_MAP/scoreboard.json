@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3629,
-    "track_fair_max": 4903,
-    "pct_strength": 74.0,
-    "core_realized": 3089,
-    "core_potential": 4340,
+    "realized": 3649,
+    "track_fair_max": 4923,
+    "pct_strength": 74.1,
+    "core_realized": 3109,
+    "core_potential": 4360,
     "core_headroom": 1251,
-    "n_claims": 275,
-    "n_active": 273,
+    "n_claims": 276,
+    "n_active": 274,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 168,
-      "realized": 2460,
-      "max": 3196,
+      "n": 169,
+      "realized": 2480,
+      "max": 3216,
       "core_headroom": 731
     },
     "rg": {
@@ -388,6 +388,12 @@
       "core_headroom": 0
     },
     "BOOK_05": {
+      "n": 1,
+      "realized": 20,
+      "max": 20,
+      "core_headroom": 0
+    },
+    "BOOK_00/05": {
       "n": 1,
       "realized": 20,
       "max": 20,
@@ -5811,6 +5817,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "gauge_bridge",
       "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-M1-PREDICATE-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00/05",
       "leverage": 0,
       "integrity_flag": null
     }
