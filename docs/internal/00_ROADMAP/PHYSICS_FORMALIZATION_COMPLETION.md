@@ -16,11 +16,39 @@ failure mode is **registry lag, not missing proofs**:
 Net: ~20 cert-only rows can flip to machine-checked-finite-leg with well-under-a-day of work, mostly by
 reuse. Inflating the ~30 empirical/owner-edge ones would be the exact over-claim the audit prevents.
 
-## DONE (Iter-21 so far — all committed, build GREEN, demotions 0)
+## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3884, 77.1%)
 
-- `D0-PROTON-001` → `D0.Matter.ProtonReadout306` (306 = 3960/13 + 3960/(13·20·11), `norm_num`); 938 MeV stays cert.
-- `D0-BH-CAPACITY-A4-001` → `D0.Gravity.BlackHoleCapacityA4` (S(n)=n/4, S(4)=1, divisor 4; `ring`/`norm_num`).
-- `D0-PHASON-THAWING-001` + `D0-IM-COSMO-001` → `D0.Cosmology.ArchiveConvexity` (Δ²(φⁿ−1)=φⁿ(φ−1)²>0; one theorem, two passports; fixed a dangling lean_module pointer).
+New finite theorems (machine-checked, `decide`/`native_decide`/`norm_num`/`ring`/`field_simp`):
+- `D0-PROTON-001` → `D0.Matter.ProtonReadout306` (306 = 3960/13 + 3960/(13·20·11)); 938 MeV stays cert.
+- `D0-BH-CAPACITY-A4-001` → `D0.Gravity.BlackHoleCapacityA4` (S(n)=n/4, S(4)=1, divisor 4).
+- `D0-PHASON-THAWING-001` + `D0-IM-COSMO-001` → `D0.Cosmology.ArchiveConvexity` (Δ²(φⁿ−1)=φⁿ(φ−1)²>0; two passports).
+- `D0-COMPACTNESS-DEF-FORCING-001` → `D0.Gravity.CompactnessLimit.compactness_def_forcing` (Batch B).
+- `D0-CVFT-F3B` → `D0.Matter.BaryonSpinFlavourRanks` (SU(6) 56=40+16: spin 4, decuplet 10, 40, 56, 16) (Batch E).
+
+Verified repoints (sibling confirmed to prove the claim's finite content; cert→Lean upgrade):
+- `D0-FOUND-004` → `D0.Core.BornQuadraticResponse.unit_phase_blind_quadratic_response_is_norm_sq`.
+- `D0-EDGE-ALPHA-001` → `D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one` (unitary-dilation residual noted).
+- `D0-BOOK04-SELECTORS-002` → `D0.Matter.Book04CombinatorialSelectorOrigins`.
+
+**Findings (honesty refinements to the triage):**
+1. **3 dangling `lean_module` pointers fixed** — `D0.IM.RelativeArchiveAcceleration`, `D0.Foundation.QuadraticPeel`,
+   `D0.Edge.AlphaRamificationConstructive` were all named in rows but **never existed**; repointed to the real siblings.
+   Worth a sweep for more dangling pointers.
+2. **Do NOT repoint already-split parents.** `D0-COMPACTNESS-LIMIT-001` (named gap rank-3=cone, deliberately
+   bridge-level), `D0-KTHEORY-001` (Bellissard IDS external), `D0-QUASICRYSTAL-PROJECTION-001` (icosahedral
+   separation) each have their finite shadow as a SEPARATE CORE claim already (`KTHEORY-GAP-MODULE-001`,
+   `CARRIER-NOT-ICOSAHEDRAL-001`, `COMPACTNESS-DEF-FORCING-001`). Repointing the parent would over-claim/duplicate —
+   left untouched. The triage's "ALREADY_LEAN" count is therefore smaller in genuine-repoint terms.
+
+## REMAINING (for careful continuation)
+
+New theorems: **Batch C** `FiniteHodgeComplex` (HODGE-001 d∘d=0 + extend `FiniteCochainNoAxion` NOAXION-001 Betti),
+**Batch D** `WitnessHalting` (IM-004 orbit-average; matrix `native_decide` — riskier), **Batch H** `ZoneMatrixSpectrum`
+(LAPLACIAN-SPECTRUM-FIX charpoly + `SceneActiveEigenvalues` transport). Verified repoints still to verify+do:
+`D0-TIME-MODULAR-FLOW-001` (PisotContraction+DeloneInstance), `D0-QUASICRYSTAL-CARRIER-FORCING-001` (FibonacciFusionRing
+φ-leg), `D0-VACUUM-CUBIC-WINDOW-001` (SceneActiveEigenvalues+MixingHierarchyInversion), `D0-IF-KS-FORMULA-FIX-001`,
+`D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` + `D0-SDE-K0-001` (PhasonFlipEntropy finite core; K0 external). Each:
+verify the sibling matches, watch for dangling pointers + already-split parents, cert→Lean for the finite leg only.
 
 ## REMAINING RIPE batch (new finite theorems, minutes each)
 
