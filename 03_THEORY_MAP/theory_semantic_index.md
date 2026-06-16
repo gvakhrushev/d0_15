@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 79
-- `CORE-FORMALIZED`: 130
+- `CERT-CLOSED`: 68
+- `CORE-FORMALIZED`: 141
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 26
-- `certificate`: 94
-- `core`: 131
+- `certificate`: 83
+- `core`: 142
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -29,15 +29,15 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 23
-- `empirical_passport`: 22
+- `empirical_passport`: 23
 - `external_background`: 1
-- `formal_core`: 174
+- `formal_core`: 171
 - `frontier`: 13
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
-- `smooth_geometry`: 16
+- `smooth_geometry`: 18
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -54,19 +54,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] parameter-free internal dark object as additive optical-depth kernel; catalogue is external readout.
-
-### D0-IM-COSMO-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `cosmology`
-- book: `BOOK_08`
-- module: `D0.IM.RelativeArchiveAcceleration`
-- theorem: `relative_archive_acceleration_positive_second_difference`
-- cert: `vp_relative_archive_acceleration_cosmology_bridge.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Internal relative acceleration; no survey fit. [was:RELATIVE-ARCHIVE-ACCELERATION-CERT-CLOSED]
 
 ### D0-IM-COSMO-002
 
@@ -106,19 +93,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: L bounded; Lp->0; Lpp<0 safe domain. [was:LOGDET-SECOND-RESPONSE-STABILITY-CERT-CLOSED]
-
-### D0-PHASON-THAWING-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `cosmology`
-- book: `BOOK_08`
-- module: ``
-- theorem: `none`
-- cert: `vp_phason_thawing.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter17 ТЗ-2 Phase E] The relative archive ratio R_n=phi^n-1 is CONVEX: Delta^2 R_n=phi^n(phi-1)^2>0 exact (forced, no parameter) => the dark-energy class is THAWING (w>-1) and can NEVER cross to phantom (w<-1 would need a concave archive Delta^2R<0, which phi-growth forbids). Cert vp_phason_thawing.py (can-FAIL; control: saturating 1-phi^-n is concave => would admit phantom). HONEST: forced part is the SIGN/CLASS (convex=>thawing); w0 is a COSMOLOGICAL INPUT (e-folds), NOT a D0 parameter, not promoted; DESI apparent phantom-crossing read as a CPL-parametrization artefact (arXiv:2504.15190), DR3 phys-model fit is the falsifier. Sharpens the H0-evolving-w passport (D0-H0-EVOLVING-W-001).
 
 ### D0-COSMO-002
 
@@ -328,6 +302,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: Closed finite feedback operator core F_N=P_N U_N^dagger Q_N U_N P_N with resolvent determinant trace variation and feedback pressure law.
 
+### D0-IM-COSMO-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ArchiveConvexity`
+- theorem: `archive_growth_strictly_convex`
+- cert: `vp_relative_archive_acceleration_cosmology_bridge.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [Iter21 promote cert->Lean; fixed dangling lean_module D0.IM.RelativeArchiveAcceleration which never existed] Relative archive acceleration = strict convexity Delta^2(phi^n-1)=phi^n(phi-1)^2>0, machine-checked in D0.Cosmology.ArchiveConvexity (shared with D0-PHASON-THAWING-001). Internal relative acceleration; no survey fit.
+
+### D0-PHASON-THAWING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ArchiveConvexity`
+- theorem: `archive_growth_strictly_convex;archive_convexity_second_difference`
+- cert: `vp_phason_thawing.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [Iter21 promote cert->Lean: the convexity Delta^2 R_n=phi^n(phi-1)^2>0 is machine-checked in D0.Cosmology.ArchiveConvexity (ring + phi>1 positivity); the thawing w>-1 / no-phantom-crossing reading below stays the empirical cosmological residual] [Iter17 ТЗ-2 Phase E] The relative archive ratio R_n=phi^n-1 is CONVEX: Delta^2 R_n=phi^n(phi-1)^2>0 exact (forced, no parameter) => the dark-energy class is THAWING (w>-1) and can NEVER cross to phantom (w<-1 would need a concave archive Delta^2R<0, which phi-growth forbids). Cert vp_phason_thawing.py (can-FAIL; control: saturating 1-phi^-n is concave => would admit phantom). HONEST: forced part is the SIGN/CLASS (convex=>thawing); w0 is a COSMOLOGICAL INPUT (e-folds), NOT a D0 parameter, not promoted; DESI apparent phantom-crossing read as a CPL-parametrization artefact (arXiv:2504.15190), DR3 phys-model fit is the falsifier. Sharpens the H0-evolving-w passport (D0-H0-EVOLVING-W-001).
+
 ### D0-CVFT-NOGO-001
 
 - type: `no-go`
@@ -356,19 +356,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open. [was:OPERATOR-SCAFFOLD-CERTIFIED]
-
-### D0-CVFT-F3B
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `empirical_passport`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_cvft_baryon_spin_flavour_40_56.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded. [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
 
 ### D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001
 
@@ -577,6 +564,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
 - notes: [8C orphan-harvest] exact integer cyclic-shift orientation; doubly-stochastic permutation witness. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.CkmExactMatrix (ckm_exact_matrix): generation-overlap = cyclic permutation matrix (doubly-stochastic 0/1, det=1); structural, empirical CKM angles untouched.
+
+### D0-CVFT-F3B
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: `D0.Matter.BaryonSpinFlavourRanks`
+- theorem: `baryon_spin_flavour_ranks`
+- cert: `vp_cvft_baryon_spin_flavour_40_56.py`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: [Iter21 promote cert->Lean] Baryon multiplet-dimension counts machine-checked (D0.Matter.BaryonSpinFlavourRanks via decide/native_decide on sorted-triple subtypes): spin 4, flavour decuplet 10, spin-flavour 40=10*4, full SU(6) 56, 56-40=16 (octet sector). PDG names/masses/widths/GeV conversion remain excluded (empirical). [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
+
+### D0-PROTON-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: `D0.Matter.ProtonReadout306`
+- theorem: `proton_readout306_rational;proton_readout306_control`
+- cert: `vp_proton_terminal_destructive_readout.py`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: [Iter20 promote cert->Lean] readout-306 = 3960/13 + 3960/(13*20*11) exact rational identity, machine-checked (D0.Matter.ProtonReadout306), with the divisor-12 control failing. 938 MeV is benchmark not input (the empirical mass comparison stays cert/passport).
 
 ### D0-TRACEABILITY-STATUS-TAXONOMY-001
 
@@ -870,32 +883,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]
 
-### D0-BH-CAPACITY-A4-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_black_hole_capacity_a4_witness.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] ABCD four-role denominator boundary-cell count -> A/4 entropy witness.
-
-### D0-BOOK04-SELECTORS-002
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_book04_combinatorial_selector_origins.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] support radii from upstream D0 formulas (35, 306, 19); no fitted targets.
-
 ### D0-CANONICAL-OP-001
 
 - type: `certificate`
@@ -935,19 +922,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter8 reforge of researcher doc 2 §04.12] The claim V_CKM U_PMNS^T=I_3 is FALSE: it would force V_CKM=U_PMNS (CKM=PMNS), but CKM angles are SMALL and PMNS LARGE. cert vp_ckm_pmns_orthogonality.py: with theta_C~13.04 deg and theta_12~33.6 deg, R(theta_C)R(theta_12)^T=R(theta_C-theta_12)~R(-20.6 deg) != I. Reforged to the real weaker relation: quark-lepton COMPLEMENTARITY theta_C+theta_12~46.6 deg ~ 45 deg (miss ~1.6 deg). HONEST: strong orthogonality REJECTED; salvaged content = approximate complementarity, status HYP (not an exact identity). Overstatement not kept; idea reforged.
 
-### D0-COMPACTNESS-DEF-FORCING-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_compactness_def_forcing.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Audit->FORCING] C=M/R_initial is FORCED (not a choice): C at the horizon is M/(2M)=1/2 for every mass (constant, zero formation info, CIRCULAR - presupposes the horizon), so only the INITIAL compactness gives a well-posed non-degenerate causal threshold; R=8M/3 (C=3/8) is then unambiguous. cert vp_compactness_def_forcing.py. HONEST: forces the DEFINITION of C (closes the 3/8-depends-on-C nitpick); the separate rank-3=causal-cone gap of D0-COMPACTNESS-LIMIT-001 stays (sharpened by D0-RANK3-CAUSAL-CONE-001). M1: forcing-uniqueness of the posing, not no-other-def-tried.
-
 ### D0-CVFT-F4
 
 - type: `certificate`
@@ -986,19 +960,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Weak-coupling/mode-averaging nonclassical signature suppression guardrail.
-
-### D0-EDGE-ALPHA-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: `D0.Edge.AlphaRamificationConstructive`
-- theorem: `edge_alpha_trace_seam_cert`
-- cert: `vp_edge_alpha_trace_constructive.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Unitary dilation edge alpha trace cert. [was:EDGE-ALPHA-TRACE-CERT-CLOSED]
 
 ### D0-EDGE-RAMIFICATION-001
 
@@ -1051,19 +1012,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter7 cross-bridge, self-calibrated MECH-LIMIT NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Certs vp_fibonacci_if_bridge.py;vp_fibonacci_if_bratteli.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. [Iter18] NAMED GAP CLOSED at the entropy/finite-equivalence level: the categorical<->toral ISOMORPHISM is now CONSTRUCTED -- the fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi, topological entropy log(Perron)=log phi by Parry) and the toral T has the SAME entropy log phi via the SAME mechanism (log Perron of a golden-growth integer matrix); equal-entropy irreducible SFTs are finitely equivalent (cert vp_fibonacci_if_bratteli.py, exact Z + Q(phi)). So I_f=log phi is THE for the VALUE and its MECHANISM (the prior MECH-LIMIT is lifted). The strongest equivalence -- a full topological CONJUGACY (Williams shift-equivalence) -- is NOT implied by equal entropy and stays the cited EXTERNAL OWNER (D0-ADLER-WEISS-PARTITION-OWNER-001 / ASSUMP-ADLER-WEISS; Adler-Weiss 1967). Links the I_f=log phi GW horizontal-hum (Book 09).
-
-### D0-FOUND-004
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_02`
-- module: `D0.Foundation.QuadraticPeel`
-- theorem: `quadratic_peel_born_holography_cert`
-- cert: `vp_quadratic_peel_born_holography.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Quadratic peel cert.
 
 ### D0-FOURCOLOR-HORIZON-CAPACITY-001
 
@@ -1168,19 +1116,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] Theta(u) ~ u^-2(a0+a1 u+a2 u^2) on the archive Laplacian; finite-object fit.
-
-### D0-HODGE-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_finite_hodge_complex_core.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] finite cochain complex d.d=0 + finite Hodge Laplacian.
 
 ### D0-HST-ARCHIVE-001
 
@@ -1390,19 +1325,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] downstream of closed lambda_p, lambda_n, Lambda_act, tau0, delta0; no measured lifetime input.
 
-### D0-NOAXION-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_05/08`
-- module: ``
-- theorem: `none`
-- cert: `vp_no_axion_finite_cochain.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] finite topological density + exact/coexact cancellation; no axion zero-mode.
-
 ### D0-PACKING-LIMIT-001
 
 - type: `certificate`
@@ -1441,19 +1363,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Audit->FORCING, D.3] phi^99 depth exponent forced: 99=V9*V11=9*11 (defect x memory shells), exact named product, 0 free. Controls: 98,100 not shell products; 117=V9*V13 a different pair. HONEST: exponent forced as named product; the G_N ORDER is the separate length-depth metrology BRIDGE.
-
-### D0-PROTON-001
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_proton_terminal_destructive_readout.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] readout-306 terminal formula; 938 MeV is benchmark not input.
 
 ### D0-QUANT-MET-001
 
@@ -1858,6 +1767,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [8C orphan-harvest] selectors over full support 0..2R; zero iff support-symmetry; no inserted indicator. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Book04Selectors (book04_selectors): centered full-support selectors: unique midpoint root 2x=2R<=>x=R for radii 35, 306=18*17, 19=2*10-1 (omega).
 
+### D0-BOOK04-SELECTORS-002
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.Book04CombinatorialSelectorOrigins`
+- theorem: `electroweak_selector_radius_from_omega8;proton_readout_selector_radius_from_high_gain;beta_unlock_selector_radius_from_weak_unlock`
+- cert: `vp_book04_combinatorial_selector_origins.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 promote cert->Lean] Selector support radii derived from upstream D0 formulas (electroweak from Omega8; proton 18*17=306 from high-gain; beta 2*10-1=19 from weak-unlock) — machine-checked in D0.Matter.Book04CombinatorialSelectorOrigins. No fitted targets. [8C orphan-harvest]
+
 ### D0-BORN-QUADRATIC-ORIGIN-001
 
 - type: `core`
@@ -1975,6 +1897,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Root C T-C.3] Closes BOOK_05 05.6 third soft joint (class-5 aliasing, formerly formulated-not-formalized). Cert vp_class5_aliasing_cabibbo.py: branch group (Z/44)* order 20, unique 5-Sylow Z5 + unique 2-Sylow Z2xZ2, characteristic subgroup orders {1,4,5,20}, 20=4*5=|ABCD|*D_Sigma. class-4 killed by orientation (owned THE 3.11.B / Z2-cover); CLASS-5 killed by aliasing: |Z5|=5=D_Sigma, winding-5 orbit bijects onto the 5 address classes (pointer collision=hidden memory, M1-forbidden). Survivors {1,20} => m_s/m_d=20. BRIDGE (not promoted): sinθ_C=1/sqrt20=0.22361 vs 0.22501 (0.62%, within GST O(λ²)≈5%). HONEST: class-5 exclusion closed at finite alias level; full hidden-memory M1 contradiction (grammar 01.11C) stays theorem-target, same standing as the class-4 kill. [Iter4 Group A] Lean L5 CORE-FORMALIZED via D0.Claims.Class5Aliasing (class5_aliasing): |Z5|=5=D_Sigma alias + survivors {1,20} + 20=4*5, reusing window44_odd_part_card. Cabibbo readout stays BRIDGE (not promoted). [Iter5 finite-core] Hidden-memory named gap REDUCED to its decidable shadow: the joint (winding,address) readout collapses 25->5 (class5_readout_collapse), so class-5 needs a hidden register (M1-forbidden) — proved by decide in D0.Claims.Class5Aliasing. The full M1 contradiction (golden 01.11C holographic-pointer, absent/v17) stays the residual frontier.
 
+### D0-COMPACTNESS-DEF-FORCING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.CompactnessLimit`
+- theorem: `compactness_def_forcing`
+- cert: `vp_compactness_def_forcing.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 promote cert->Lean: M/(2M)=1/2, 1/(8/3)=3/8, 3/8<1/2 machine-checked in D0.Gravity.CompactnessLimit.compactness_def_forcing] [Audit->FORCING] C=M/R_initial is FORCED (not a choice): C at the horizon is M/(2M)=1/2 for every mass (constant, zero formation info, CIRCULAR - presupposes the horizon), so only the INITIAL compactness gives a well-posed non-degenerate causal threshold; R=8M/3 (C=3/8) is then unambiguous. cert vp_compactness_def_forcing.py. HONEST: forces the DEFINITION of C (closes the 3/8-depends-on-C nitpick); the separate rank-3=causal-cone gap of D0-COMPACTNESS-LIMIT-001 stays (sharpened by D0-RANK3-CAUSAL-CONE-001). M1: forcing-uniqueness of the posing, not no-other-def-tried.
+
 ### D0-CONDENSED-PHI-VACUUM-CUT-PROJECT-001
 
 - type: `core`
@@ -2066,6 +2001,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter6 synthesis] Ties the corpus order-8/rank-8 objects into ONE forcing of the number 8, sewn by classical uniqueness/classification owners: {±}->Z2 (Bott period 2) -> ABCD x {±}=8=|Omega8| (Hurwitz 1,2,4,8 / Clifford & Bott-KO period 8) -> Q8 c 2T c 2I (Dedekind+Baer + icosians) -> E8 (Mordell) -> Spin(8) triality (3 eight-dim reps). Lean D0.Synthesis.DimensionEightNetwork (dim8_network) machine-checks the arithmetic skeleton: 8=2*4; tower 8|24|120 with indices 3,5,15; Z(Q8)=Z2 base; E8 Gram even unimodular (reuses D0-ICOSIAN-E8-GRAM-001); D4 star has 3 legs and |Out(Spin8)|=|S3|=6. Cert vp_dim8_network.py + names the 6 external owners. HONEST (anti-numerology, 00.9): forces the NUMBER 8 + rank-8 target ONLY; '3 generations' (the 3 = #D4 reps), C_max=3/8, and Leech Λ24<->K=30 are REJECTED forcing-links; the periodicity/triality/uniqueness theorems are EXTERNAL owners. Meets the phi-network (01.21.3) at the icosians.
 
+### D0-EDGE-ALPHA-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Spectral.ZetaResidueAlpha`
+- theorem: `zetaEdge_neg_one`
+- cert: `vp_edge_alpha_trace_constructive.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 promote cert->Lean; fixed dangling lean_module D0.Edge.AlphaRamificationConstructive which never existed] The edge-alpha trace identity zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1 is machine-checked in D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one (shared with D0-ALPHA-ZETA-RESIDUE-001). The unitary-dilation construction stays the optional residual. [was:EDGE-ALPHA-TRACE-CERT-CLOSED]
+
 ### D0-FIBONACCI-FUSION-RING-001
 
 - type: `core`
@@ -2130,6 +2078,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Exact p+p^2=1 positive root uniqueness.
+
+### D0-FOUND-004
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Core.BornQuadraticResponse`
+- theorem: `unit_phase_blind_quadratic_response_is_norm_sq`
+- cert: `vp_quadratic_peel_born_holography.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 promote cert->Lean; fixed dangling lean_module D0.Foundation.QuadraticPeel which never existed] The unit-phase-blind quadratic (Born) response equals the amplitude norm-squared — machine-checked in D0.Core.BornQuadraticResponse.unit_phase_blind_quadratic_response_is_norm_sq.
 
 ### D0-GALOIS-PHI-IRRATIONAL-001
 
@@ -2208,6 +2169,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [8C orphan-harvest] Y compatible with rank-2 scalar projector; Hermitian; single action section. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Claims.HiggsYukawaBlock (higgs_yukawa_block): 3x3 Hermitian Yukawa block + rank-2 projector compatibility (exact Q); rank-1 rejected.
+
+### D0-HODGE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion`
+- theorem: `boundary_boundary_zero;finite_d_d_zero`
+- cert: `vp_finite_hodge_complex_core.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean] The finite cochain/Hodge complex closure d.d=0 is machine-checked: boundary_boundary_zero (I.d1*I.d2=0 for every IncidencePair) and finite_d_d_zero (d1(d0 A)=0 on any GradedCellComplex); the scene Hodge complex is an instance. The specific finite Hodge-Laplacian spectrum stays cert (vp_finite_hodge_complex_core.py). [8C orphan-harvest]
 
 ### D0-HULL-001
 
@@ -3605,6 +3579,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter10 FORCING, closed in chat -- the lattice BRIDGE became a FORCING] phi-carrier is forced, not postulated: (1) non-perturbative gauge theory is rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay problem) => finite carrier is the only rigorous one; (2) a periodic lattice has an arbitrary step a (needs a->0); a quasicrystal is self-similar by phi (inflation [[1,1],[1,0]] Perron eigenvalue phi, A/B->phi) with NO preferred step, NO a->0 limit; (3) M1 forbids the hand-chosen a (exogenous) => carrier must be aperiodic-self-similar; (4) aperiodic + 5-fold => phi (Penrose/de Bruijn cut-and-project; 2cos(pi/5)=phi; Shechtman Nobel 2011). cert vp_quasicrystal_carrier_forcing.py (decidable inflation/5-fold backbone + 4 named external pillars). Reuses the already-proved quasicrystalline carrier (Sturmian phi^-2, §01.21.2). NEW external channel to phi (with Hurwitz, Jones-index, KAM, quadratic Pisot). Do not reopen; the open remainder is D0-QUASICRYSTAL-PROJECTION-001.
 
+### D0-BH-CAPACITY-A4-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: `D0.Gravity.BlackHoleCapacityA4`
+- theorem: `bh_entropy_a4`
+- cert: `vp_black_hole_capacity_a4_witness.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter20 promote cert->Lean] Seam entropy S(n)=n/4 (area law A/4): S(n)*4=n, S(4)=1, divisor 4=|ABCD| not 2 or 8 — exact rational, machine-checked (D0.Gravity.BlackHoleCapacityA4.bh_entropy_a4). The dimensionful Bekenstein-Hawking S=A/(4G) continuum identification stays the cert/owner-edge.
+
 ### D0-CONTINUUM-INVLIM-001
 
 - type: `core`
@@ -3643,6 +3630,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: [Iter20 Clay-core, two passports] Constructively-proven core of sect27 (Navier-Stokes global regularity). On a finite kappa-floor lattice level: every higher (k>=3) spectral-action trace-power norm is bounded by a finite function of the level data (reuses SpectralActionLadder.higher_powers_floor_bounded) AND the kappa-stable archive tower has a nonempty projective limit (global coherent solution, reuses archive_tower_defines_profinite_object). NOT the continuum-R^3 ZFC Clay statement (whose continuum limit appeals to actual infinity = unprovable postulate). PER-LEVEL bound: the constant (card N)^(k+1)(B/floor)^k GROWS with refinement, never a uniform-across-tower constant. M1-contrapositive carried by D0.Foundation.M1Predicate. Passports: physics (finite kappa-bounded lattice hydro) + Clay (sect27).
+
+### D0-NOAXION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `smooth_geometry`
+- book: `BOOK_05/08`
+- module: `D0.Topology.FiniteCochainNoAxion`
+- theorem: `finite_d_d_zero;finite_cochain_exact_topological_density_annihilates_theta_core`
+- cert: `vp_no_axion_finite_cochain.py`
+- assumptions: `none`
+- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
+- notes: [Iter21 cert->Lean] D0.Topology.FiniteCochainNoAxion implements this row directly: TopologicalDensity + finite_d_d_zero (d.d=0 unconditional) + the exact-density-annihilates-theta consequence; an exact topological density carries no axion zero-mode. The continuum-winding theta term is an EFT bridge (continuum_theta_winding_requires_bridge_not_core, a declared Prop). [8C orphan-harvest]
 
 ### D0-RANK3-CAUSAL-CONE-001
 

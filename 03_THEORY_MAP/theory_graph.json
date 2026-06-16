@@ -6,11 +6,11 @@
   "summary": {
     "claims": 283,
     "release_status": {
-      "CORE-FORMALIZED": 130,
+      "CORE-FORMALIZED": 141,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 79,
+      "CERT-CLOSED": 68,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -19,27 +19,27 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 152,
+      "LEAN_PROVED": 163,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 20,
-      "PYTHON_CERTIFIED": 94,
+      "PYTHON_CERTIFIED": 84,
       "DEPRECATED": 2,
-      "OPEN": 15
+      "OPEN": 14
     },
     "claim_type": {
-      "core": 131,
+      "core": 142,
       "bridge": 26,
       "no-go": 16,
-      "certificate": 94,
+      "certificate": 83,
       "deprecated": 3,
       "frontier": 13
     },
     "domain": {
-      "formal_core": 174,
+      "formal_core": 171,
       "rg": 5,
       "gauge_bridge": 20,
-      "smooth_geometry": 16,
+      "smooth_geometry": 18,
       "spectral_action": 5,
-      "empirical_passport": 22,
+      "empirical_passport": 23,
       "cosmology": 23,
       "external_background": 1,
       "si_calibration": 3,
@@ -4374,25 +4374,32 @@
       "id": "D0-CVFT-F3B",
       "kind": "claim",
       "claim_id": "D0-CVFT-F3B",
-      "type": "certificate",
+      "type": "core",
       "domain": "empirical_passport",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
       "book": "BOOK_04",
       "section": "CVFT baryon spin-flavour 40/56 transfer",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_module": "D0.Matter.BaryonSpinFlavourRanks",
+      "lean_theorem": "baryon_spin_flavour_ranks",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_cvft_baryon_spin_flavour_40_56.py",
       "python_cert": [
         "vp_cvft_baryon_spin_flavour_40_56.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Finite internal spin/flavour transfer certifies rank-40 fully symmetric separable sector rank-56 diagonal exchange-symmetric carrier and rank40 subset rank56; PDG names masses widths and GeV conversion remain excluded. [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 promote cert->Lean] Baryon multiplet-dimension counts machine-checked (D0.Matter.BaryonSpinFlavourRanks via decide/native_decide on sorted-triple subtypes): spin 4, flavour decuplet 10, spin-flavour 40=10*4, full SU(6) 56, 56-40=16 (octet sector). PDG names/masses/widths/GeV conversion remain excluded (empirical). [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/BaryonSpinFlavourRanks.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.BaryonSpinFlavourRanks",
+      "kind": "lean_module",
+      "label": "D0.Matter.BaryonSpinFlavourRanks",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/BaryonSpinFlavourRanks.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_cvft_baryon_spin_flavour_40_56.py",
@@ -4710,32 +4717,32 @@
       "id": "D0-FOUND-004",
       "kind": "claim",
       "claim_id": "D0-FOUND-004",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_02",
       "section": "quadratic peel born holography",
-      "lean_module": "D0.Foundation.QuadraticPeel",
-      "lean_theorem": "quadratic_peel_born_holography_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Core.BornQuadraticResponse",
+      "lean_theorem": "unit_phase_blind_quadratic_response_is_norm_sq",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_quadratic_peel_born_holography.py",
       "python_cert": [
         "vp_quadratic_peel_born_holography.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Quadratic peel cert.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/QuadraticPeel.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 promote cert->Lean; fixed dangling lean_module D0.Foundation.QuadraticPeel which never existed] The unit-phase-blind quadratic (Born) response equals the amplitude norm-squared — machine-checked in D0.Core.BornQuadraticResponse.unit_phase_blind_quadratic_response_is_norm_sq.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Core/BornQuadraticResponse.lean",
+      "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "module:D0.Foundation.QuadraticPeel",
+      "id": "module:D0.Core.BornQuadraticResponse",
       "kind": "lean_module",
-      "label": "D0.Foundation.QuadraticPeel",
-      "path": "09_LEAN_FORMALIZATION/D0/Foundation/QuadraticPeel.lean",
-      "exists": false
+      "label": "D0.Core.BornQuadraticResponse",
+      "path": "09_LEAN_FORMALIZATION/D0/Core/BornQuadraticResponse.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_quadratic_peel_born_holography.py",
@@ -4937,32 +4944,32 @@
       "id": "D0-EDGE-ALPHA-001",
       "kind": "claim",
       "claim_id": "D0-EDGE-ALPHA-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_04",
       "section": "edge alpha trace seam construction",
-      "lean_module": "D0.Edge.AlphaRamificationConstructive",
-      "lean_theorem": "edge_alpha_trace_seam_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Spectral.ZetaResidueAlpha",
+      "lean_theorem": "zetaEdge_neg_one",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_edge_alpha_trace_constructive.py",
       "python_cert": [
         "vp_edge_alpha_trace_constructive.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Unitary dilation edge alpha trace cert. [was:EDGE-ALPHA-TRACE-CERT-CLOSED]",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Edge/AlphaRamificationConstructive.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 promote cert->Lean; fixed dangling lean_module D0.Edge.AlphaRamificationConstructive which never existed] The edge-alpha trace identity zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1 is machine-checked in D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one (shared with D0-ALPHA-ZETA-RESIDUE-001). The unitary-dilation construction stays the optional residual. [was:EDGE-ALPHA-TRACE-CERT-CLOSED]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/ZetaResidueAlpha.lean",
+      "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "module:D0.Edge.AlphaRamificationConstructive",
+      "id": "module:D0.Spectral.ZetaResidueAlpha",
       "kind": "lean_module",
-      "label": "D0.Edge.AlphaRamificationConstructive",
-      "path": "09_LEAN_FORMALIZATION/D0/Edge/AlphaRamificationConstructive.lean",
-      "exists": false
+      "label": "D0.Spectral.ZetaResidueAlpha",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/ZetaResidueAlpha.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_edge_alpha_trace_constructive.py",
@@ -5113,32 +5120,32 @@
       "id": "D0-IM-COSMO-001",
       "kind": "claim",
       "claim_id": "D0-IM-COSMO-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "cosmology",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
       "book": "BOOK_08",
       "section": "relative archive acceleration",
-      "lean_module": "D0.IM.RelativeArchiveAcceleration",
-      "lean_theorem": "relative_archive_acceleration_positive_second_difference",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Cosmology.ArchiveConvexity",
+      "lean_theorem": "archive_growth_strictly_convex",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_relative_archive_acceleration_cosmology_bridge.py",
       "python_cert": [
         "vp_relative_archive_acceleration_cosmology_bridge.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Internal relative acceleration; no survey fit. [was:RELATIVE-ARCHIVE-ACCELERATION-CERT-CLOSED]",
-      "module_path": "09_LEAN_FORMALIZATION/D0/IM/RelativeArchiveAcceleration.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 promote cert->Lean; fixed dangling lean_module D0.IM.RelativeArchiveAcceleration which never existed] Relative archive acceleration = strict convexity Delta^2(phi^n-1)=phi^n(phi-1)^2>0, machine-checked in D0.Cosmology.ArchiveConvexity (shared with D0-PHASON-THAWING-001). Internal relative acceleration; no survey fit.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/ArchiveConvexity.lean",
+      "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "module:D0.IM.RelativeArchiveAcceleration",
+      "id": "module:D0.Cosmology.ArchiveConvexity",
       "kind": "lean_module",
-      "label": "D0.IM.RelativeArchiveAcceleration",
-      "path": "09_LEAN_FORMALIZATION/D0/IM/RelativeArchiveAcceleration.lean",
-      "exists": false
+      "label": "D0.Cosmology.ArchiveConvexity",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/ArchiveConvexity.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_relative_archive_acceleration_cosmology_bridge.py",
@@ -5573,25 +5580,32 @@
       "id": "D0-BH-CAPACITY-A4-001",
       "kind": "claim",
       "claim_id": "D0-BH-CAPACITY-A4-001",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "core",
+      "domain": "smooth_geometry",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
       "book": "BOOK_07",
       "section": "finite black-hole A/4 capacity witness",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Gravity.BlackHoleCapacityA4",
+      "lean_theorem": "bh_entropy_a4",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_black_hole_capacity_a4_witness.py",
       "python_cert": [
         "vp_black_hole_capacity_a4_witness.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] ABCD four-role denominator boundary-cell count -> A/4 entropy witness.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter20 promote cert->Lean] Seam entropy S(n)=n/4 (area law A/4): S(n)*4=n, S(4)=1, divisor 4=|ABCD| not 2 or 8 — exact rational, machine-checked (D0.Gravity.BlackHoleCapacityA4.bh_entropy_a4). The dimensionful Bekenstein-Hawking S=A/(4G) continuum identification stays the cert/owner-edge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/BlackHoleCapacityA4.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gravity.BlackHoleCapacityA4",
+      "kind": "lean_module",
+      "label": "D0.Gravity.BlackHoleCapacityA4",
+      "path": "09_LEAN_FORMALIZATION/D0/Gravity/BlackHoleCapacityA4.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_black_hole_capacity_a4_witness.py",
@@ -5604,25 +5618,32 @@
       "id": "D0-HODGE-001",
       "kind": "claim",
       "claim_id": "D0-HODGE-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_07",
       "section": "finite Hodge complex core",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion",
+      "lean_theorem": "boundary_boundary_zero;finite_d_d_zero",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_finite_hodge_complex_core.py",
       "python_cert": [
         "vp_finite_hodge_complex_core.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] finite cochain complex d.d=0 + finite Hodge Laplacian.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] The finite cochain/Hodge complex closure d.d=0 is machine-checked: boundary_boundary_zero (I.d1*I.d2=0 for every IncidencePair) and finite_d_d_zero (d1(d0 A)=0 on any GradedCellComplex); the scene Hodge complex is an instance. The specific finite Hodge-Laplacian spectrum stays cert (vp_finite_hodge_complex_core.py). [8C orphan-harvest]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Topology/BoundaryBoundary.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion",
+      "kind": "lean_module",
+      "label": "D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion",
+      "path": "09_LEAN_FORMALIZATION/D0/Topology/BoundaryBoundary.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_finite_hodge_complex_core.py",
@@ -5726,25 +5747,32 @@
       "id": "D0-NOAXION-001",
       "kind": "claim",
       "claim_id": "D0-NOAXION-001",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "core",
+      "domain": "smooth_geometry",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
       "book": "BOOK_05/08",
       "section": "finite cochain no-axion block",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Topology.FiniteCochainNoAxion",
+      "lean_theorem": "finite_d_d_zero;finite_cochain_exact_topological_density_annihilates_theta_core",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_no_axion_finite_cochain.py",
       "python_cert": [
         "vp_no_axion_finite_cochain.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] finite topological density + exact/coexact cancellation; no axion zero-mode.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] D0.Topology.FiniteCochainNoAxion implements this row directly: TopologicalDensity + finite_d_d_zero (d.d=0 unconditional) + the exact-density-annihilates-theta consequence; an exact topological density carries no axion zero-mode. The continuum-winding theta term is an EFT bridge (continuum_theta_winding_requires_bridge_not_core, a declared Prop). [8C orphan-harvest]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Topology/FiniteCochainNoAxion.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Topology.FiniteCochainNoAxion",
+      "kind": "lean_module",
+      "label": "D0.Topology.FiniteCochainNoAxion",
+      "path": "09_LEAN_FORMALIZATION/D0/Topology/FiniteCochainNoAxion.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_no_axion_finite_cochain.py",
@@ -6048,25 +6076,32 @@
       "id": "D0-PROTON-001",
       "kind": "claim",
       "claim_id": "D0-PROTON-001",
-      "type": "certificate",
-      "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "core",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
       "book": "BOOK_04",
       "section": "proton terminal-destructive readout",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Matter.ProtonReadout306",
+      "lean_theorem": "proton_readout306_rational;proton_readout306_control",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_proton_terminal_destructive_readout.py",
       "python_cert": [
         "vp_proton_terminal_destructive_readout.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] readout-306 terminal formula; 938 MeV is benchmark not input.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter20 promote cert->Lean] readout-306 = 3960/13 + 3960/(13*20*11) exact rational identity, machine-checked (D0.Matter.ProtonReadout306), with the divisor-12 control failing. 938 MeV is benchmark not input (the empirical mass comparison stays cert/passport).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/ProtonReadout306.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.ProtonReadout306",
+      "kind": "lean_module",
+      "label": "D0.Matter.ProtonReadout306",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/ProtonReadout306.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_proton_terminal_destructive_readout.py",
@@ -6272,25 +6307,32 @@
       "id": "D0-BOOK04-SELECTORS-002",
       "kind": "claim",
       "claim_id": "D0-BOOK04-SELECTORS-002",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_04",
       "section": "combinatorial selector origins",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Matter.Book04CombinatorialSelectorOrigins",
+      "lean_theorem": "electroweak_selector_radius_from_omega8;proton_readout_selector_radius_from_high_gain;beta_unlock_selector_radius_from_weak_unlock",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_book04_combinatorial_selector_origins.py",
       "python_cert": [
         "vp_book04_combinatorial_selector_origins.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[8C orphan-harvest] support radii from upstream D0 formulas (35, 306, 19); no fitted targets.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 promote cert->Lean] Selector support radii derived from upstream D0 formulas (electroweak from Omega8; proton 18*17=306 from high-gain; beta 2*10-1=19 from weak-unlock) — machine-checked in D0.Matter.Book04CombinatorialSelectorOrigins. No fitted targets. [8C orphan-harvest]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/Book04CombinatorialSelectorOrigins.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.Book04CombinatorialSelectorOrigins",
+      "kind": "lean_module",
+      "label": "D0.Matter.Book04CombinatorialSelectorOrigins",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/Book04CombinatorialSelectorOrigins.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_book04_combinatorial_selector_origins.py",
@@ -6917,13 +6959,6 @@
       "certs_exist": true
     },
     {
-      "id": "module:D0.Spectral.ZetaResidueAlpha",
-      "kind": "lean_module",
-      "label": "D0.Spectral.ZetaResidueAlpha",
-      "path": "09_LEAN_FORMALIZATION/D0/Spectral/ZetaResidueAlpha.lean",
-      "exists": true
-    },
-    {
       "id": "cert:vp_zeta_residue_alpha.py",
       "kind": "python_cert",
       "label": "vp_zeta_residue_alpha.py",
@@ -7335,24 +7370,24 @@
       "id": "D0-PHASON-THAWING-001",
       "kind": "claim",
       "claim_id": "D0-PHASON-THAWING-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "cosmology",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
       "book": "BOOK_08",
       "section": "08.x",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Cosmology.ArchiveConvexity",
+      "lean_theorem": "archive_growth_strictly_convex;archive_convexity_second_difference",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_thawing.py",
       "python_cert": [
         "vp_phason_thawing.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[Iter17 ТЗ-2 Phase E] The relative archive ratio R_n=phi^n-1 is CONVEX: Delta^2 R_n=phi^n(phi-1)^2>0 exact (forced, no parameter) => the dark-energy class is THAWING (w>-1) and can NEVER cross to phantom (w<-1 would need a concave archive Delta^2R<0, which phi-growth forbids). Cert vp_phason_thawing.py (can-FAIL; control: saturating 1-phi^-n is concave => would admit phantom). HONEST: forced part is the SIGN/CLASS (convex=>thawing); w0 is a COSMOLOGICAL INPUT (e-folds), NOT a D0 parameter, not promoted; DESI apparent phantom-crossing read as a CPL-parametrization artefact (arXiv:2504.15190), DR3 phys-model fit is the falsifier. Sharpens the H0-evolving-w passport (D0-H0-EVOLVING-W-001).",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 promote cert->Lean: the convexity Delta^2 R_n=phi^n(phi-1)^2>0 is machine-checked in D0.Cosmology.ArchiveConvexity (ring + phi>1 positivity); the thawing w>-1 / no-phantom-crossing reading below stays the empirical cosmological residual] [Iter17 ТЗ-2 Phase E] The relative archive ratio R_n=phi^n-1 is CONVEX: Delta^2 R_n=phi^n(phi-1)^2>0 exact (forced, no parameter) => the dark-energy class is THAWING (w>-1) and can NEVER cross to phantom (w<-1 would need a concave archive Delta^2R<0, which phi-growth forbids). Cert vp_phason_thawing.py (can-FAIL; control: saturating 1-phi^-n is concave => would admit phantom). HONEST: forced part is the SIGN/CLASS (convex=>thawing); w0 is a COSMOLOGICAL INPUT (e-folds), NOT a D0 parameter, not promoted; DESI apparent phantom-crossing read as a CPL-parametrization artefact (arXiv:2504.15190), DR3 phys-model fit is the falsifier. Sharpens the H0-evolving-w passport (D0-H0-EVOLVING-W-001).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/ArchiveConvexity.lean",
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -7626,25 +7661,32 @@
       "id": "D0-COMPACTNESS-DEF-FORCING-001",
       "kind": "claim",
       "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_07",
       "section": "C = M/R_initial forced by causal posing (07.5x)",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.Gravity.CompactnessLimit",
+      "lean_theorem": "compactness_def_forcing",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_compactness_def_forcing.py",
       "python_cert": [
         "vp_compactness_def_forcing.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "[Audit->FORCING] C=M/R_initial is FORCED (not a choice): C at the horizon is M/(2M)=1/2 for every mass (constant, zero formation info, CIRCULAR - presupposes the horizon), so only the INITIAL compactness gives a well-posed non-degenerate causal threshold; R=8M/3 (C=3/8) is then unambiguous. cert vp_compactness_def_forcing.py. HONEST: forces the DEFINITION of C (closes the 3/8-depends-on-C nitpick); the separate rank-3=causal-cone gap of D0-COMPACTNESS-LIMIT-001 stays (sharpened by D0-RANK3-CAUSAL-CONE-001). M1: forcing-uniqueness of the posing, not no-other-def-tried.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 promote cert->Lean: M/(2M)=1/2, 1/(8/3)=3/8, 3/8<1/2 machine-checked in D0.Gravity.CompactnessLimit.compactness_def_forcing] [Audit->FORCING] C=M/R_initial is FORCED (not a choice): C at the horizon is M/(2M)=1/2 for every mass (constant, zero formation info, CIRCULAR - presupposes the horizon), so only the INITIAL compactness gives a well-posed non-degenerate causal threshold; R=8M/3 (C=3/8) is then unambiguous. cert vp_compactness_def_forcing.py. HONEST: forces the DEFINITION of C (closes the 3/8-depends-on-C nitpick); the separate rank-3=causal-cone gap of D0-COMPACTNESS-LIMIT-001 stays (sharpened by D0-RANK3-CAUSAL-CONE-001). M1: forcing-uniqueness of the posing, not no-other-def-tried.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/CompactnessLimit.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gravity.CompactnessLimit",
+      "kind": "lean_module",
+      "label": "D0.Gravity.CompactnessLimit",
+      "path": "09_LEAN_FORMALIZATION/D0/Gravity/CompactnessLimit.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_compactness_def_forcing.py",
@@ -11195,7 +11237,7 @@
     },
     {
       "source": "D0-CVFT-F3B",
-      "target": "module:",
+      "target": "module:D0.Matter.BaryonSpinFlavourRanks",
       "kind": "implemented_in"
     },
     {
@@ -11345,7 +11387,7 @@
     },
     {
       "source": "D0-FOUND-004",
-      "target": "module:D0.Foundation.QuadraticPeel",
+      "target": "module:D0.Core.BornQuadraticResponse",
       "kind": "implemented_in"
     },
     {
@@ -11440,7 +11482,7 @@
     },
     {
       "source": "D0-EDGE-ALPHA-001",
-      "target": "module:D0.Edge.AlphaRamificationConstructive",
+      "target": "module:D0.Spectral.ZetaResidueAlpha",
       "kind": "implemented_in"
     },
     {
@@ -11515,7 +11557,7 @@
     },
     {
       "source": "D0-IM-COSMO-001",
-      "target": "module:D0.IM.RelativeArchiveAcceleration",
+      "target": "module:D0.Cosmology.ArchiveConvexity",
       "kind": "implemented_in"
     },
     {
@@ -11690,12 +11732,12 @@
     },
     {
       "source": "D0-BH-CAPACITY-A4-001",
-      "target": "domain:formal_core",
+      "target": "domain:smooth_geometry",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-BH-CAPACITY-A4-001",
-      "target": "module:",
+      "target": "module:D0.Gravity.BlackHoleCapacityA4",
       "kind": "implemented_in"
     },
     {
@@ -11710,7 +11752,7 @@
     },
     {
       "source": "D0-HODGE-001",
-      "target": "module:",
+      "target": "module:D0.Topology.BoundaryBoundary;D0.Topology.FiniteCochainNoAxion",
       "kind": "implemented_in"
     },
     {
@@ -11760,12 +11802,12 @@
     },
     {
       "source": "D0-NOAXION-001",
-      "target": "domain:formal_core",
+      "target": "domain:smooth_geometry",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-NOAXION-001",
-      "target": "module:",
+      "target": "module:D0.Topology.FiniteCochainNoAxion",
       "kind": "implemented_in"
     },
     {
@@ -11905,12 +11947,12 @@
     },
     {
       "source": "D0-PROTON-001",
-      "target": "domain:formal_core",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-PROTON-001",
-      "target": "module:",
+      "target": "module:D0.Matter.ProtonReadout306",
       "kind": "implemented_in"
     },
     {
@@ -12015,7 +12057,7 @@
     },
     {
       "source": "D0-BOOK04-SELECTORS-002",
-      "target": "module:",
+      "target": "module:D0.Matter.Book04CombinatorialSelectorOrigins",
       "kind": "implemented_in"
     },
     {
@@ -12500,7 +12542,7 @@
     },
     {
       "source": "D0-PHASON-THAWING-001",
-      "target": "module:",
+      "target": "module:D0.Cosmology.ArchiveConvexity",
       "kind": "implemented_in"
     },
     {
@@ -12630,7 +12672,7 @@
     },
     {
       "source": "D0-COMPACTNESS-DEF-FORCING-001",
-      "target": "module:",
+      "target": "module:D0.Gravity.CompactnessLimit",
       "kind": "implemented_in"
     },
     {

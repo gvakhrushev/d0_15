@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3884 / 5036 (**77.1%** of track-fair max)
-- **Core spine:** 3311 / 4440 (headroom **1129** points to take every core claim to L5)
+- **Realized strength:** 3910 / 5036 (**77.6%** of track-fair max)
+- **Core spine:** 3337 / 4440 (headroom **1103** points to take every core claim to L5)
 - Claims: 281 active (283 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -92,9 +92,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 171 | 2571 | 3229 | 653 |
+| formal_core | 170 | 2577 | 3209 | 627 |
 | frontier | 13 | 31 | 260 | 229 |
-| smooth_geometry | 17 | 222 | 304 | 78 |
+| smooth_geometry | 18 | 242 | 324 | 78 |
 | empirical_passport | 23 | 213 | 275 | 57 |
 | cosmology | 23 | 387 | 439 | 52 |
 | spectral_action | 5 | 61 | 100 | 39 |
@@ -109,7 +109,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_08 | 47 | 703 | 829 | 122 |
-| BOOK_07 | 49 | 624 | 881 | 247 |
+| BOOK_07 | 49 | 637 | 881 | 234 |
 | BOOK_04 | 43 | 620 | 791 | 166 |
 | BOOK_01 | 15 | 223 | 278 | 55 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
@@ -125,6 +125,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_00/01 | 2 | 40 | 40 | 0 |
 | BOOK_01/04 | 2 | 40 | 40 | 0 |
 | D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE | 3 | 33 | 33 | 0 |
+| BOOK_05/08 | 2 | 32 | 32 | 0 |
 | Lean formalization | 2 | 31 | 31 | 0 |
 | BOOK_02/04 | 2 | 31 | 31 | 0 |
 | BOOK_02/05 | 2 | 27 | 40 | 13 |
@@ -143,7 +144,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_01/03 | 1 | 20 | 20 | 0 |
 | BOOK_00/05 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
-| BOOK_05/08 | 2 | 19 | 32 | 13 |
 | BOOK_01/06 | 2 | 14 | 31 | 13 |
 | BOOK_09 | 2 | 14 | 27 | 13 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
