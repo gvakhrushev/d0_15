@@ -338,6 +338,7 @@ import D0.Topology.NoThreeSimplices
 import D0.Topology.SimplicialIncidence
 import D0.Topology.TilingHull
 import D0.Topology.TripartiteComplex
+import D0.Topology.WitnessHalting
 import D0.Tower.DetectionQuadratic
 import D0.Tower.NoExtension
 import D0.Traceability.StatusTaxonomy

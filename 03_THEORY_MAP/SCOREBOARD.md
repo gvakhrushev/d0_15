@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3949 / 5036 (**78.4%** of track-fair max)
-- **Core spine:** 3376 / 4440 (headroom **1064** points to take every core claim to L5)
+- **Realized strength:** 3962 / 5036 (**78.7%** of track-fair max)
+- **Core spine:** 3389 / 4440 (headroom **1051** points to take every core claim to L5)
 - Claims: 281 active (283 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -55,8 +55,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-IM-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-IM-003` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-GRAV-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-GRAV-005` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -92,7 +92,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 170 | 2603 | 3209 | 601 |
+| formal_core | 170 | 2616 | 3209 | 588 |
 | frontier | 13 | 31 | 260 | 229 |
 | smooth_geometry | 18 | 242 | 324 | 78 |
 | cosmology | 24 | 407 | 459 | 52 |
@@ -129,6 +129,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | Lean formalization | 2 | 31 | 31 | 0 |
 | BOOK_02/04 | 2 | 31 | 31 | 0 |
 | BOOK_02/05 | 2 | 27 | 40 | 13 |
+| BOOK_01/06 | 2 | 27 | 31 | 0 |
 | BOOK_09 | 2 | 27 | 27 | 0 |
 | METROLOGY | 5 | 25 | 100 | 75 |
 | BOOK_00 | 2 | 22 | 22 | 0 |
@@ -145,7 +146,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_01/03 | 1 | 20 | 20 | 0 |
 | BOOK_00/05 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
-| BOOK_01/06 | 2 | 14 | 31 | 13 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
 | BOOK_01/03/06/07/08 | 1 | 11 | 11 | 0 |

@@ -144,7 +144,7 @@ digraph D0Theory {
   "D0-IM-001" [label="D0-IM-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-IM-002" [label="D0-IM-002\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-IM-003" [label="D0-IM-003\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
-  "D0-IM-004" [label="D0-IM-004\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-IM-004" [label="D0-IM-004\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-FOUND-004" [label="D0-FOUND-004\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-GRAV-004" [label="D0-GRAV-004\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-GRAV-005" [label="D0-GRAV-005\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];

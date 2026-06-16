@@ -6,11 +6,11 @@
   "summary": {
     "claims": 283,
     "release_status": {
-      "CORE-FORMALIZED": 144,
+      "CORE-FORMALIZED": 145,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 65,
+      "CERT-CLOSED": 64,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -19,17 +19,17 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 166,
+      "LEAN_PROVED": 167,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 20,
-      "PYTHON_CERTIFIED": 81,
+      "PYTHON_CERTIFIED": 80,
       "DEPRECATED": 2,
       "OPEN": 14
     },
     "claim_type": {
-      "core": 145,
+      "core": 146,
       "bridge": 26,
       "no-go": 16,
-      "certificate": 80,
+      "certificate": 79,
       "deprecated": 3,
       "frontier": 13
     },
@@ -4686,24 +4686,24 @@
       "id": "D0-IM-004",
       "kind": "claim",
       "claim_id": "D0-IM-004",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_01/06",
       "section": "witness topological halting",
       "lean_module": "D0.Topology.WitnessHalting",
       "lean_theorem": "witness_halting_cert",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_mobius_witness_topological_halting.py",
       "python_cert": [
         "vp_mobius_witness_topological_halting.py"
       ],
-      "status": "CERT-CLOSED",
-      "notes": "Möbius witness halting cert.",
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 cert->Lean] Machine-checked in D0.Topology.WitnessHalting (witness_halting_cert): the orbit average E=(1/8) Sum_k P_k diag(1..8) P_k^T over the 8 cyclic shifts equals the scalar (9/2).I (emission 36/8=9/2), and P_k E P_k^T=E for every shift (native_decide on 8x8 Q); |Omega8|=8 reuses D0.Core.FiniteTypes.card_omega8. The 'topological halting quotient' physical reading stays cert. [was: Mobius witness halting cert]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Topology/WitnessHalting.lean",
-      "module_exists": false,
+      "module_exists": true,
       "certs_exist": true
     },
     {
@@ -4711,7 +4711,7 @@
       "kind": "lean_module",
       "label": "D0.Topology.WitnessHalting",
       "path": "09_LEAN_FORMALIZATION/D0/Topology/WitnessHalting.lean",
-      "exists": false
+      "exists": true
     },
     {
       "id": "cert:vp_mobius_witness_topological_halting.py",

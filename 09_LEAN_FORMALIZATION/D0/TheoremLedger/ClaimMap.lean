@@ -276,7 +276,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-IM-003", moduleName := "D0.IM.ContinuumFromFractalTick",
       theoremName := "continuum_from_fractal_tick_cert", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-IM-004", moduleName := "D0.Topology.WitnessHalting",
-      theoremName := "witness_halting_cert", status := ClaimStatus.pythonCertClosed },
+      theoremName := "witness_halting_cert", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FOUND-004", moduleName := "D0.Core.BornQuadraticResponse",
       theoremName := "unit_phase_blind_quadratic_response_is_norm_sq", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-GRAV-004", moduleName := "D0.Gravity.MeasurementHorizonEquivalence",

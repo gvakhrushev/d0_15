@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 65
-- `CORE-FORMALIZED`: 144
+- `CERT-CLOSED`: 64
+- `CORE-FORMALIZED`: 145
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 26
-- `certificate`: 80
-- `core`: 145
+- `certificate`: 79
+- `core`: 146
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -1156,19 +1156,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Fractal tick cert.
 
-### D0-IM-004
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_01/06`
-- module: `D0.Topology.WitnessHalting`
-- theorem: `witness_halting_cert`
-- cert: `vp_mobius_witness_topological_halting.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: Möbius witness halting cert.
-
 ### D0-KTHEORY-001
 
 - type: `certificate`
@@ -2221,6 +2208,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter21 cert->Lean] Load-bearing core machine-checked: the toral automorphism spectral radius |lambda_max|=|-phi|=phi (toral_spectral_radius_eq_phi) with -phi a root of x^2+x-1 (neg_phi_toral_eigenvalue); charpoly via FibonacciFusionRing. The KS-entropy identification h_KS=log|lambda_max| (Pesin/Margulis-Ruelle) and the log-phi~0.4812 numeric are the external/monotone wrapper. The formula-fix observation (I_f=Tr(log T)/rank wrong since det T=-1<0 => log complex) is recorded; the number log phi is kept, formula corrected.
+
+### D0-IM-004
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/06`
+- module: `D0.Topology.WitnessHalting`
+- theorem: `witness_halting_cert`
+- cert: `vp_mobius_witness_topological_halting.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 cert->Lean] Machine-checked in D0.Topology.WitnessHalting (witness_halting_cert): the orbit average E=(1/8) Sum_k P_k diag(1..8) P_k^T over the 8 cyclic shifts equals the scalar (9/2).I (emission 36/8=9/2), and P_k E P_k^T=E for every shift (native_decide on 8x8 Q); |Omega8|=8 reuses D0.Core.FiniteTypes.card_omega8. The 'topological halting quotient' physical reading stays cert. [was: Mobius witness halting cert]
 
 ### D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001
 

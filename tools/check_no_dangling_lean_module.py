@@ -39,7 +39,7 @@ GRANDFATHER: set[str] = {
     "D0.Metrology.Phi2Flux",
     "D0.Metrology.QuantumLimits",
     "D0.Publication.MonographStructure",
-    "D0.Topology.WitnessHalting",
+    # D0.Topology.WitnessHalting — RESOLVED in Iter-21 (D0-IM-004 built + promoted); ratchet shrank 19->18.
 }
 
 
