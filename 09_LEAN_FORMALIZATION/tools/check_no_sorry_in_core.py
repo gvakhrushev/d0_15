@@ -23,13 +23,76 @@ ALLOWED_TYPES = {
 FORBIDDEN_TYPES = {"CORE", "FOUNDATION", "UNSPECIFIED", ""}
 
 
-def strip_line_comment(line: str) -> str:
-    return line.split("--", 1)[0]
+def strip_comments(text: str) -> str:
+    """Return `text` with every Lean comment and string literal blanked out, so
+    that forbidden-token scans only see real code.
+
+    Removes:
+      * `--` line comments (to end of line),
+      * `/- ... -/` block comments — including the `/-!` and `/--` doc-comment
+        variants, which all open with `/-` — and they NEST,
+      * `"..."` string literals (their contents).
+
+    Without this, the naive `\\bconstant\\b` scan false-positives on the English
+    word "constant" (or "axiom", "sorry", ...) inside a docstring even though it
+    is not a Lean keyword. Newlines are preserved and removed regions collapse to
+    whitespace so adjacent code tokens stay separated.
+    """
+    out: list[str] = []
+    i, n = 0, len(text)
+    depth = 0          # block-comment nesting depth
+    in_line = False    # inside a `--` line comment
+    in_string = False  # inside a "..." string literal
+    while i < n:
+        c = text[i]
+        two = text[i:i + 2]
+        if in_line:
+            if c == "\n":
+                in_line = False
+                out.append(c)
+            i += 1
+        elif depth > 0:
+            if two == "/-":
+                depth += 1
+                i += 2
+            elif two == "-/":
+                depth -= 1
+                i += 2
+                if depth == 0:
+                    out.append(" ")
+            else:
+                if c == "\n":
+                    out.append(c)
+                i += 1
+        elif in_string:
+            if c == "\\":
+                i += 2  # skip escaped char (e.g. \" or \\)
+            elif c == '"':
+                in_string = False
+                out.append(" ")
+                i += 1
+            else:
+                if c == "\n":
+                    out.append(c)
+                i += 1
+        else:
+            if two == "--":
+                in_line = True
+                i += 2
+            elif two == "/-":
+                depth = 1
+                i += 2
+            elif c == '"':
+                in_string = True
+                i += 1
+            else:
+                out.append(c)
+                i += 1
+    return "".join(out)
 
 
 def read_code(path: Path) -> str:
-    text = path.read_text(encoding="utf-8")
-    return "\n".join(strip_line_comment(line) for line in text.splitlines())
+    return strip_comments(path.read_text(encoding="utf-8"))
 
 
 def load_assumptions():
