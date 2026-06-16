@@ -416,7 +416,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-BRAID-VALENCE-U1-001", moduleName := "D0.Gauge.BraidValence",
       theoremName := "braidGroupTwoEquiv;braidRels_two;braidGroup_generated;braidGroupTwo_nontrivial;braidGroupTwo_finitelyPresented", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-M1-PREDICATE-001", moduleName := "D0.Foundation.M1Predicate",
-      theoremName := "m1_forced_unique;m1_alternative_needs_catalogue;m1_forced_not_catalogue;selector_M1Forced;demo_one_needs_catalogue", status := ClaimStatus.leanCoreProved }
+      theoremName := "m1_forced_unique;m1_alternative_needs_catalogue;m1_forced_not_catalogue;selector_M1Forced;demo_one_needs_catalogue", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HYDRO-NO-BLOWUP-KAPPA-001", moduleName := "D0.Dynamics.LatticeHydroNoBlowup",
+      theoremName := "no_blowup_under_kappa_floor;no_cascade_bounded_norms;global_solution_exists_projective", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONTINUUM-INVLIM-001", moduleName := "D0.Foundation.ContinuumAsInverseLimit",
+      theoremName := "continuum_is_nonempty_inverse_limit;continuum_no_actual_infinity;d0Continuum_eq", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BSD-RANK-PASSPORT-001", moduleName := "D0.Synthesis.BSDRankNullityPassport",
+      theoremName := "bsd_rank_nullity_passport", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-MASSGAP-COSTQUANTUM-001", moduleName := "D0.Gauge.MassGapCostQuantum",
+      theoremName := "positive_cost_quantum;deltaS_min_pos;cost_weights_sum_one", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

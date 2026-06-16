@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3649,
-    "track_fair_max": 4923,
-    "pct_strength": 74.1,
-    "core_realized": 3109,
-    "core_potential": 4360,
+    "realized": 3729,
+    "track_fair_max": 5003,
+    "pct_strength": 74.5,
+    "core_realized": 3189,
+    "core_potential": 4440,
     "core_headroom": 1251,
-    "n_claims": 276,
-    "n_active": 274,
+    "n_claims": 280,
+    "n_active": 278,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 169,
-      "realized": 2480,
-      "max": 3216,
+      "n": 170,
+      "realized": 2500,
+      "max": 3236,
       "core_headroom": 731
     },
     "rg": {
@@ -44,15 +44,15 @@
       "core_headroom": 8
     },
     "gauge_bridge": {
-      "n": 18,
-      "realized": 281,
-      "max": 294,
+      "n": 19,
+      "realized": 301,
+      "max": 314,
       "core_headroom": 13
     },
     "smooth_geometry": {
-      "n": 14,
-      "realized": 162,
-      "max": 244,
+      "n": 16,
+      "realized": 202,
+      "max": 284,
       "core_headroom": 78
     },
     "spectral_action": {
@@ -388,9 +388,9 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 1,
-      "realized": 20,
-      "max": 20,
+      "n": 5,
+      "realized": 100,
+      "max": 100,
       "core_headroom": 0
     },
     "BOOK_00/05": {
@@ -5831,6 +5831,62 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_00/05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HYDRO-NO-BLOWUP-KAPPA-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CONTINUUM-INVLIM-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-BSD-RANK-PASSPORT-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-MASSGAP-COSTQUANTUM-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "gauge_bridge",
+      "book": "BOOK_05",
       "leverage": 0,
       "integrity_flag": null
     }

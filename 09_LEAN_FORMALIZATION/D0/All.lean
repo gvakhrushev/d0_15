@@ -126,11 +126,13 @@ import D0.Dynamics
 import D0.Dynamics.DarkSectorCoarseGrain
 import D0.Dynamics.GaloisConjugateBalance
 import D0.Dynamics.InternalFeedbackResolvent
+import D0.Dynamics.LatticeHydroNoBlowup
 import D0.Dynamics.MasterEvolutionTheorem
 import D0.Dynamics.PisotContraction
 import D0.Dynamics.ToralAutomorphism
 import D0.Dynamics.TraceHeatCapacityGravity
 import D0.Dynamics.TraceHeatLucasCore
+import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.M1Predicate
 import D0.Foundation.Omega8Center
@@ -142,6 +144,7 @@ import D0.Gauge.BianchiResidual
 import D0.Gauge.BraidValence
 import D0.Gauge.FlatTensorNoGo
 import D0.Gauge.GradedBianchiIdentity
+import D0.Gauge.MassGapCostQuantum
 import D0.Gauge.MatrixRepGaugeTransform
 import D0.Gauge.NonAbelianDiscreteCurvature
 import D0.Gauge.NonAbelianSeamObstructionGap
@@ -306,6 +309,7 @@ import D0.Spectrum.GenerationSpectralRays
 import D0.Spectrum.GenerationTensorExactness
 import D0.Spectrum.Pi0BranchDefectControls
 import D0.Spectrum.Pi0BranchDefectGeneration
+import D0.Synthesis.BSDRankNullityPassport
 import D0.Synthesis.CarrierForcing
 import D0.Synthesis.DimensionEightNetwork
 import D0.Synthesis.RankCausalCone
