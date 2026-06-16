@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3549,
-    "track_fair_max": 4823,
-    "pct_strength": 73.6,
-    "core_realized": 3009,
-    "core_potential": 4260,
+    "realized": 3569,
+    "track_fair_max": 4843,
+    "pct_strength": 73.7,
+    "core_realized": 3029,
+    "core_potential": 4280,
     "core_headroom": 1251,
-    "n_claims": 271,
-    "n_active": 269,
+    "n_claims": 272,
+    "n_active": 270,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 165,
-      "realized": 2400,
-      "max": 3136,
+      "n": 166,
+      "realized": 2420,
+      "max": 3156,
       "core_headroom": 731
     },
     "rg": {
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 14,
-      "realized": 203,
-      "max": 258,
+      "n": 15,
+      "realized": 223,
+      "max": 278,
       "core_headroom": 55
     },
     "BOOK_02": {
@@ -5755,6 +5755,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-DELONE-PHI-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
     }

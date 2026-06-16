@@ -315,6 +315,7 @@ import D0.TheoremLedger.HardClosureTheoremIndex
 import D0.TheoremLedger.ReleaseStatus
 import D0.Topology.ArchiveShiftTopology
 import D0.Topology.BoundaryBoundary
+import D0.Topology.DeloneInstance
 import D0.Topology.FiniteCochainNoAxion
 import D0.Topology.GradedIncidenceComplex
 import D0.Topology.NoThreeSimplices

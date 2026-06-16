@@ -406,7 +406,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-LIGHTPROFINITE-001", moduleName := "D0.Geometry.ArchiveLightProfinite",
       theoremName := "archiveFintypeDiagram_succ;archiveDiagram_transition_surjective;archiveFintypeDiagram_obj;archiveLightProfinite_def", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FORGETTING-CHANNEL-PTP-001", moduleName := "D0.Probability.ForgettingChannelPTP",
-      theoremName := "d0ForgetChannel_trace_preserving;d0ForgetChannel_posSemidef;d0ForgetChannel_add;d0ForgetChannel_smul;d0ForgetChannel_isPTP", status := ClaimStatus.leanCoreProved }
+      theoremName := "d0ForgetChannel_trace_preserving;d0ForgetChannel_posSemidef;d0ForgetChannel_add;d0ForgetChannel_smul;d0ForgetChannel_isPTP", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DELONE-PHI-001", moduleName := "D0.Topology.DeloneInstance",
+      theoremName := "d0BeattyDelone;beatty_dist_ge_one;beatty_cover;beatty_floor_lt", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
