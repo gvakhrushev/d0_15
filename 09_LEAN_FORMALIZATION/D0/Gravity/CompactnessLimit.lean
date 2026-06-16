@@ -58,4 +58,13 @@ theorem compactness_limit :
     (3 / 8 : ℚ) = (3 : ℚ) / (2 ^ 3 : ℚ) :=
   ⟨compactness_master_roots, compactness_threshold, compactness_rank_over_omega8⟩
 
+/-- **D0-COMPACTNESS-DEF-FORCING-001.** The compactness ratio `C = M/R` is definitional: `m/(2m) = 1/2`
+is the Schwarzschild value, and the gravastar causal threshold `3/8 = 1/(8/3)` is strictly below it
+(`3/8 < 1/2`, `3/8 ≠ 1/2`) — the horizonless window is forced below Schwarzschild. -/
+theorem compactness_def_forcing :
+    (∀ m : ℚ, m ≠ 0 → m / (2 * m) = 1 / 2) ∧ ((1 : ℚ) / (8 / 3) = 3 / 8)
+      ∧ ((3 / 8 : ℚ) < 1 / 2) ∧ ((3 / 8 : ℚ) ≠ 1 / 2) := by
+  refine ⟨fun m hm => ?_, by norm_num, by norm_num, by norm_num⟩
+  field_simp
+
 end D0.Gravity

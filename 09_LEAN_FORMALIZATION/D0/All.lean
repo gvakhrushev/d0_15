@@ -236,6 +236,7 @@ import D0.Matter.ArchivePartialTrace
 import D0.Matter.ArchiveStressCoupling
 import D0.Matter.BaryonMultipletBoundary
 import D0.Matter.BaryonS3Symmetrizer
+import D0.Matter.BaryonSpinFlavourRanks
 import D0.Matter.Book04CenteredSupportSelectors
 import D0.Matter.Book04CoefficientOrigin
 import D0.Matter.Book04CombinatorialSelectorOrigins

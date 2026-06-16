@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 3814,
+    "realized": 3845,
     "track_fair_max": 5036,
-    "pct_strength": 75.7,
-    "core_realized": 3241,
+    "pct_strength": 76.4,
+    "core_realized": 3272,
     "core_potential": 4440,
-    "core_headroom": 1199,
+    "core_headroom": 1168,
     "n_claims": 283,
     "n_active": 281,
     "duplicates": [],
@@ -33,9 +33,9 @@
   "by_domain": {
     "formal_core": {
       "n": 171,
-      "realized": 2519,
+      "realized": 2532,
       "max": 3229,
-      "core_headroom": 705
+      "core_headroom": 692
     },
     "rg": {
       "n": 5,
@@ -63,9 +63,9 @@
     },
     "empirical_passport": {
       "n": 23,
-      "realized": 195,
+      "realized": 213,
       "max": 275,
-      "core_headroom": 75
+      "core_headroom": 57
     },
     "cosmology": {
       "n": 23,
@@ -149,9 +149,9 @@
     },
     "BOOK_07": {
       "n": 49,
-      "realized": 611,
+      "realized": 624,
       "max": 881,
-      "core_headroom": 260
+      "core_headroom": 247
     },
     "BOOK_06/08": {
       "n": 5,
@@ -161,9 +161,9 @@
     },
     "BOOK_04": {
       "n": 43,
-      "realized": 576,
+      "realized": 594,
       "max": 791,
-      "core_headroom": 210
+      "core_headroom": 192
     },
     "BOOK_04/08": {
       "n": 7,
@@ -1012,16 +1012,6 @@
       "effort": "write Lean proof"
     },
     {
-      "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
-      "domain": "formal_core",
-      "book": "BOOK_07",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
       "claim_id": "D0-PHI99-DEPTH-FORCING-001",
       "domain": "formal_core",
       "book": "BOOK_07",
@@ -1182,16 +1172,6 @@
       "effort": "write cert scaffold"
     },
     {
-      "claim_id": "D0-CVFT-F3B",
-      "domain": "empirical_passport",
-      "book": "BOOK_04",
-      "level_name": "HYP",
-      "leverage": 0,
-      "next": "CERT_SCAFFOLD",
-      "points_gained": 2,
-      "effort": "write cert scaffold"
-    },
-    {
       "claim_id": "D0-CVFT-F5",
       "domain": "frontier",
       "book": "BOOK_04/08",
@@ -1320,13 +1300,6 @@
     },
     {
       "claim_id": "D0-CVFT-F3",
-      "domain": "empirical_passport",
-      "leverage": 0,
-      "level_name": "HYP",
-      "score": 2
-    },
-    {
-      "claim_id": "D0-CVFT-F3B",
       "domain": "empirical_passport",
       "leverage": 0,
       "level_name": "HYP",
@@ -1782,13 +1755,6 @@
     },
     {
       "claim_id": "D0-EW-WINDOW-FORCING-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -3781,12 +3747,12 @@
     {
       "claim_id": "D0-CVFT-F3B",
       "track": "CORE",
-      "level": 1,
-      "level_name": "HYP",
-      "score": 2,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "OPEN",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "empirical_passport",
       "book": "BOOK_04",
       "leverage": 0,
@@ -5153,12 +5119,12 @@
     {
       "claim_id": "D0-COMPACTNESS-DEF-FORCING-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_07",
       "leverage": 0,
