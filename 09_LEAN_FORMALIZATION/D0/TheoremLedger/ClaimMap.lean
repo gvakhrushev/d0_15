@@ -403,6 +403,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "verlinde_entropic_conditional", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-GENERATIVE-DYNAMICS-001", moduleName := "D0.Claims.GluingAnomalyTime",
       theoremName := "gluing_anomaly_time", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LAPLACIAN-SPECTRUM-FIX-001", moduleName := "D0.Spectral.ZoneMatrixSpectrum",
+      theoremName := "laplacian_3x3_correct", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-IF-KS-FORMULA-FIX-001", moduleName := "D0.Claims.FibonacciIfBridge;D0.Claims.FibonacciFusionRing",
       theoremName := "toral_spectral_radius_eq_phi;neg_phi_toral_eigenvalue", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-TOWER-STOP-NOEXT-001", moduleName := "D0.Tower.NoExtension",

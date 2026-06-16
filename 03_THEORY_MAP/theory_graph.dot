@@ -251,7 +251,7 @@ digraph D0Theory {
   "D0-DSI-EXPERIMENTAL-001" [label="D0-DSI-EXPERIMENTAL-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-ENTROPIC-DARK-GRAVITY-001" [label="D0-ENTROPIC-DARK-GRAVITY-001\\nBRIDGE-ASSUMPTIONS-EXPLICIT\\nformal_core", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-GENERATIVE-DYNAMICS-001" [label="D0-GENERATIVE-DYNAMICS-001\\nCERT-CLOSED\\nrg", fillcolor="#1f6f9f", fontcolor="white"];
-  "D0-LAPLACIAN-SPECTRUM-FIX-001" [label="D0-LAPLACIAN-SPECTRUM-FIX-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-LAPLACIAN-SPECTRUM-FIX-001" [label="D0-LAPLACIAN-SPECTRUM-FIX-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-IF-KS-FORMULA-FIX-001" [label="D0-IF-KS-FORMULA-FIX-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-FOURCOLOR-HORIZON-CAPACITY-001" [label="D0-FOURCOLOR-HORIZON-CAPACITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CKM-PMNS-COMPLEMENTARITY-001" [label="D0-CKM-PMNS-COMPLEMENTARITY-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -1672,8 +1672,8 @@ digraph D0Theory {
   "D0-GENERATIVE-DYNAMICS-001" -> "cert:vp_rg_forgetting.py" [label="cert"];
   "domain:rg" [label="rg", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-GENERATIVE-DYNAMICS-001" -> "domain:rg" [label="domain"];
-  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-LAPLACIAN-SPECTRUM-FIX-001" -> "module:" [label="module"];
+  "module:D0.Spectral.ZoneMatrixSpectrum" [label="D0.Spectral.ZoneMatrixSpectrum", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-LAPLACIAN-SPECTRUM-FIX-001" -> "module:D0.Spectral.ZoneMatrixSpectrum" [label="module"];
   "cert:vp_laplacian_3x3_correct.py" [label="vp_laplacian_3x3_correct.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-LAPLACIAN-SPECTRUM-FIX-001" -> "cert:vp_laplacian_3x3_correct.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];

@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 3936,
+    "realized": 3949,
     "track_fair_max": 5036,
-    "pct_strength": 78.2,
-    "core_realized": 3363,
+    "pct_strength": 78.4,
+    "core_realized": 3376,
     "core_potential": 4440,
-    "core_headroom": 1077,
+    "core_headroom": 1064,
     "n_claims": 283,
     "n_active": 281,
     "duplicates": [],
@@ -33,9 +33,9 @@
   "by_domain": {
     "formal_core": {
       "n": 170,
-      "realized": 2590,
+      "realized": 2603,
       "max": 3209,
-      "core_headroom": 614
+      "core_headroom": 601
     },
     "rg": {
       "n": 5,
@@ -119,9 +119,9 @@
     },
     "BOOK_02": {
       "n": 10,
-      "realized": 160,
+      "realized": 173,
       "max": 173,
-      "core_headroom": 13
+      "core_headroom": 0
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -982,16 +982,6 @@
       "effort": "write Lean proof"
     },
     {
-      "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
-      "domain": "formal_core",
-      "book": "BOOK_02",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
       "claim_id": "D0-FOURCOLOR-HORIZON-CAPACITY-001",
       "domain": "formal_core",
       "book": "BOOK_07",
@@ -1671,13 +1661,6 @@
     },
     {
       "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5252,12 +5235,12 @@
     {
       "claim_id": "D0-LAPLACIAN-SPECTRUM-FIX-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",
       "leverage": 0,

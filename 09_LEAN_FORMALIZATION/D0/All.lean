@@ -308,6 +308,7 @@ import D0.Spectral.CriticalAxisM1
 import D0.Spectral.DeltaAlphaExact
 import D0.Spectral.DeltaAlphaMoment
 import D0.Spectral.ZetaResidueAlpha
+import D0.Spectral.ZoneMatrixSpectrum
 import D0.Spectrum.BranchDefectProjectiveControls
 import D0.Spectrum.BranchDefectProjectiveGeneration
 import D0.Spectrum.GenerationRays
