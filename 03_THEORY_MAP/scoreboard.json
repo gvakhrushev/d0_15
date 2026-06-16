@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3740,
-    "track_fair_max": 5014,
+    "realized": 3751,
+    "track_fair_max": 5025,
     "pct_strength": 74.6,
     "core_realized": 3189,
     "core_potential": 4440,
     "core_headroom": 1251,
-    "n_claims": 281,
-    "n_active": 279,
+    "n_claims": 282,
+    "n_active": 280,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 171,
-      "realized": 2511,
-      "max": 3247,
+      "n": 172,
+      "realized": 2522,
+      "max": 3258,
       "core_headroom": 731
     },
     "rg": {
@@ -388,9 +388,9 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 6,
-      "realized": 111,
-      "max": 111,
+      "n": 7,
+      "realized": 122,
+      "max": 122,
       "core_headroom": 0
     },
     "BOOK_00/05": {
@@ -5892,6 +5892,20 @@
     },
     {
       "claim_id": "D0-HODGE-M1-REDUCTIO-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RIEMANN-AXIS-M1-001",
       "track": "BRIDGE",
       "level": 4,
       "level_name": "LEAN_PROVED",

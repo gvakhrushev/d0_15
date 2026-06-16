@@ -426,7 +426,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-MASSGAP-COSTQUANTUM-001", moduleName := "D0.Gauge.MassGapCostQuantum",
       theoremName := "positive_cost_quantum;deltaS_min_pos;cost_weights_sum_one", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-HODGE-M1-REDUCTIO-001", moduleName := "D0.Topology.HodgeAlgebraicRealization",
-      theoremName := "hodge_nonalgebraic_needs_catalogue;hodge_algebraic_m1_forced;hodge_algebraic_unique", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "hodge_nonalgebraic_needs_catalogue;hodge_algebraic_m1_forced;hodge_algebraic_unique", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-RIEMANN-AXIS-M1-001", moduleName := "D0.Spectral.CriticalAxisM1",
+      theoremName := "critical_axis_unique;half_is_m1_forced_axis;shifted_axis_needs_catalogue", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
