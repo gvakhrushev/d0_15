@@ -16,7 +16,20 @@ failure mode is **registry lag, not missing proofs**:
 Net: ~20 cert-only rows can flip to machine-checked-finite-leg with well-under-a-day of work, mostly by
 reuse. Inflating the ~30 empirical/owner-edge ones would be the exact over-claim the audit prevents.
 
-## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3962, 78.7%)
+## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → ~80.8%)
+
+**REACHABLE dangling-pointer batch (7 new modules, cert→Lean, each also clears a dangling pointer;
+grandfather 18→10).** A 7-agent scoping workflow found all 7 EASY (φ-algebra or finite ℚ/ℝ matrix):
+`D0-IM-001`→`SelfSubstrateTrace` (norm conservation `5=5c²+5s²`; θ=π/5 detector `s²=(5−√5)/8>0`),
+`D0-IM-002`→`FractalTick` (`p=1/φ`: `p+p²=1`, `p=φ−1`, `p²=2−φ`, conserved, active never zero),
+`D0-IM-003`→`ContinuumFromFractalTick` (constant tick ratio `1/φ`, `Aₙ+Bₙ=1`, rate∈(0,1)),
+`D0-IM-005`→`FractalContinuumAndWitnessHalting` (+ `|Ω₈|=8`,`|V₉|=9` reused),
+`D0-IM-PRED-001`→`FractalContinuumPredictions` (`1−1/φ=(1/φ)²`; increment >0 & decelerating; relative
+accelerates via reuse of `archive_growth_strictly_convex`),
+`D0-EDGE-RAMIFICATION-001`→`RamificationFromUeEffCompanion` (cyclic `C4⁴=λI`,`R3³=λI`; nilpotent at λ=0;
+unramified diagonal control — used the cyclic-power relation since `det_fin_four` is absent from the pin),
+`D0-GRAV-004`→`MeasurementHorizonEquivalence` (θ=π/4 capacity `s²=1/2∈(0,1)`, unitarity `2s²=1`, nonzero seam).
+Continuum-envelope/matrix-exp limits, halting-quotient & physical-embedding readings stay cert (named per row).
 
 **Batch D** (genuine new theorem + clears a dangling pointer 19→18) — `D0-IM-004` (Möbius witness
 topological halting) → `D0.Topology.WitnessHalting` (`witness_halting_cert`): the orbit average
