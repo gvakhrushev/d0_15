@@ -101,6 +101,7 @@ import D0.Core.FixedDetectorTimeLadder
 import D0.Core.MatrixResponse
 import D0.Core.Phi
 import D0.Core.PositiveResponse
+import D0.Cosmology.ArchiveConvexity
 import D0.Cosmology.ArchiveHomogeneousState
 import D0.Cosmology.ArchiveVolumeBounds
 import D0.Cosmology.ConcreteEntropyArchiveFlow
