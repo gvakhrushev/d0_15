@@ -8,6 +8,7 @@ import D0.Claims.CkmExactMatrix
 import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
 import D0.Claims.EWWindowForcing
+import D0.Claims.FibonacciFusionRing
 import D0.Claims.FibonacciIfBridge
 import D0.Claims.GluingAnomalyTime
 import D0.Claims.HiggsYukawaBlock

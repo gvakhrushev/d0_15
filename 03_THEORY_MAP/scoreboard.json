@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3569,
-    "track_fair_max": 4843,
-    "pct_strength": 73.7,
-    "core_realized": 3029,
-    "core_potential": 4280,
+    "realized": 3629,
+    "track_fair_max": 4903,
+    "pct_strength": 74.0,
+    "core_realized": 3089,
+    "core_potential": 4340,
     "core_headroom": 1251,
-    "n_claims": 272,
-    "n_active": 270,
+    "n_claims": 275,
+    "n_active": 273,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 166,
-      "realized": 2420,
-      "max": 3156,
+      "n": 168,
+      "realized": 2460,
+      "max": 3196,
       "core_headroom": 731
     },
     "rg": {
@@ -44,9 +44,9 @@
       "core_headroom": 8
     },
     "gauge_bridge": {
-      "n": 17,
-      "realized": 261,
-      "max": 274,
+      "n": 18,
+      "realized": 281,
+      "max": 294,
       "core_headroom": 13
     },
     "smooth_geometry": {
@@ -160,9 +160,9 @@
       "core_headroom": 52
     },
     "BOOK_04": {
-      "n": 42,
-      "realized": 543,
-      "max": 771,
+      "n": 43,
+      "realized": 563,
+      "max": 791,
       "core_headroom": 223
     },
     "BOOK_04/08": {
@@ -316,9 +316,9 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 11,
-      "realized": 142,
-      "max": 202,
+      "n": 13,
+      "realized": 182,
+      "max": 242,
       "core_headroom": 60
     },
     "BOOK_01/06": {
@@ -5769,6 +5769,48 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FIBONACCI-FUSION-RING-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FORGETTING-CHANNEL-CP-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-BRAID-VALENCE-U1-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "gauge_bridge",
+      "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
     }

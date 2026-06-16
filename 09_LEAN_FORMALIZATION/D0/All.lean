@@ -54,6 +54,7 @@ import D0.Claims.CkmExactMatrix
 import D0.Claims.Class5Aliasing
 import D0.Claims.DimLadderCompact
 import D0.Claims.EWWindowForcing
+import D0.Claims.FibonacciFusionRing
 import D0.Claims.FibonacciIfBridge
 import D0.Claims.GluingAnomalyTime
 import D0.Claims.HiggsYukawaBlock
@@ -137,6 +138,7 @@ import D0.Frozen.SeamCurvaturePoisson
 import D0.Gauge.AnomalySums
 import D0.Gauge.AnomalyTrace
 import D0.Gauge.BianchiResidual
+import D0.Gauge.BraidValence
 import D0.Gauge.FlatTensorNoGo
 import D0.Gauge.GradedBianchiIdentity
 import D0.Gauge.MatrixRepGaugeTransform
@@ -286,6 +288,7 @@ import D0.Probability.ArchiveFloorWaterFilling
 import D0.Probability.EntropyCouplingKernel
 import D0.Probability.EntropyFlowJacobian
 import D0.Probability.FiniteArchiveMeasure
+import D0.Probability.ForgettingChannelCP
 import D0.Probability.ForgettingChannelPTP
 import D0.Probability.HSTExternalInterface
 import D0.Probability.SubgaussianArchive

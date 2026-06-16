@@ -408,7 +408,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-FORGETTING-CHANNEL-PTP-001", moduleName := "D0.Probability.ForgettingChannelPTP",
       theoremName := "d0ForgetChannel_trace_preserving;d0ForgetChannel_posSemidef;d0ForgetChannel_add;d0ForgetChannel_smul;d0ForgetChannel_isPTP", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-DELONE-PHI-001", moduleName := "D0.Topology.DeloneInstance",
-      theoremName := "d0BeattyDelone;beatty_dist_ge_one;beatty_cover;beatty_floor_lt", status := ClaimStatus.leanCoreProved }
+      theoremName := "d0BeattyDelone;beatty_dist_ge_one;beatty_cover;beatty_floor_lt", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIBONACCI-FUSION-RING-001", moduleName := "D0.Claims.FibonacciFusionRing",
+      theoremName := "fibFusion_rule;fibFusion_charpoly;fibFusion_trace;fibFusion_det;fibFusion_phi_root", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FORGETTING-CHANNEL-CP-001", moduleName := "D0.Probability.ForgettingChannelCP",
+      theoremName := "d0HomCP;d0ForgetIdCP;d0ForgetIdCP_completelyPositive;d0ForgetIdCP_apply", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BRAID-VALENCE-U1-001", moduleName := "D0.Gauge.BraidValence",
+      theoremName := "braidGroupTwoEquiv;braidRels_two;braidGroup_generated;braidGroupTwo_nontrivial;braidGroupTwo_finitelyPresented", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
