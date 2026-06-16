@@ -286,6 +286,7 @@ import D0.Probability.ArchiveFloorWaterFilling
 import D0.Probability.EntropyCouplingKernel
 import D0.Probability.EntropyFlowJacobian
 import D0.Probability.FiniteArchiveMeasure
+import D0.Probability.ForgettingChannelPTP
 import D0.Probability.HSTExternalInterface
 import D0.Probability.SubgaussianArchive
 import D0.RG.OneLoopStructure
