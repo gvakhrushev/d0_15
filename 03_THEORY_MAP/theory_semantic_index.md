@@ -576,7 +576,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_cvft_baryon_spin_flavour_40_56.py`
 - assumptions: `none`
 - scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
-- notes: [Iter21 promote cert->Lean] Baryon multiplet-dimension counts machine-checked (D0.Matter.BaryonSpinFlavourRanks via decide/native_decide on sorted-triple subtypes): spin 4, flavour decuplet 10, spin-flavour 40=10*4, full SU(6) 56, 56-40=16 (octet sector). PDG names/masses/widths/GeV conversion remain excluded (empirical). [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
+- notes: [Iter21 promote cert->Lean] Baryon multiplet-dimension counts machine-checked (D0.Matter.BaryonSpinFlavourRanks via decide/native_decide on sorted-triple subtypes): spin 4, flavour decuplet 10, spin-flavour 40=10*4, full SU(6) 56, 56-40=16 (octet sector). PDG names/masses/widths/GeV conversion remain an excluded empirical external passport (data, not core). [was:SPIN-FLAVOUR-TRANSFER-CERTIFIED]
 
 ### D0-GRAV-005
 
@@ -589,7 +589,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_optical_jet_backreaction.py`
 - assumptions: `none`
 - scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
-- notes: [Iter21 cert->Lean: emission operator symmetric + PSD (U-generic Gram) + axial dominance s2^2<s1^2; specific angles + empirical jet ID stay cert]Optical jet backreaction law cert. [was:OPERATOR-LAW-CLOSED]
+- notes: [Iter21 cert->Lean: emission operator symmetric + PSD (U-generic Gram) + axial dominance s2^2<s1^2; specific angles + empirical jet ID stay an external passport (not core)]Optical jet backreaction law cert. [was:OPERATOR-LAW-CLOSED]
 
 ### D0-PROTON-001
 
