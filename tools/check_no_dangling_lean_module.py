@@ -26,12 +26,12 @@ GRANDFATHER: set[str] = {
     "D0.Gravity.MeasurementHorizonEquivalence",
     "D0.Gravity.OpticalJetBackreaction",
     "D0.IM.ArchivePressureCoupling",
-    "D0.IM.ContinuumFromFractalTick",
-    "D0.IM.FractalContinuumAndWitnessHalting",
-    "D0.IM.FractalContinuumPredictions",
-    "D0.IM.FractalTick",
+    # D0.IM.ContinuumFromFractalTick — RESOLVED Iter-21 (D0-IM-003 built + promoted)
+    # D0.IM.FractalContinuumAndWitnessHalting — RESOLVED Iter-21 (D0-IM-005 built + promoted)
+    # D0.IM.FractalContinuumPredictions — RESOLVED Iter-21 (D0-IM-PRED-001 built + promoted)
+    # D0.IM.FractalTick — RESOLVED Iter-21 (D0-IM-002 built + promoted)
     "D0.IM.LogdetSecondResponse",
-    "D0.IM.SelfSubstrateTrace",
+    # D0.IM.SelfSubstrateTrace — RESOLVED Iter-21 (D0-IM-001 built + promoted)
     "D0.IM.StrongLogdetPressure",
     "D0.Matter.BaryonAnonymousPoleSet",
     "D0.Metrology.PSDPurification",

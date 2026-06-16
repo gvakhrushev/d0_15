@@ -225,6 +225,11 @@ import D0.Gravity.CriticalCollapseDSS
 import D0.Gravity.EntropicArchiveInterface
 import D0.Gravity.MacroEinsteinInterface
 import D0.Gravity.PressureCapacityBalance
+import D0.IM.ContinuumFromFractalTick
+import D0.IM.FractalContinuumAndWitnessHalting
+import D0.IM.FractalContinuumPredictions
+import D0.IM.FractalTick
+import D0.IM.SelfSubstrateTrace
 import D0.Interface.ArchiveLaplacian
 import D0.Interface.Bianchi
 import D0.Interface.MatterAnomaly

@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 3962 / 5036 (**78.7%** of track-fair max)
-- **Core spine:** 3389 / 4440 (headroom **1051** points to take every core claim to L5)
+- **Realized strength:** 4027 / 5036 (**80.0%** of track-fair max)
+- **Core spine:** 3454 / 4440 (headroom **986** points to take every core claim to L5)
 - Claims: 281 active (283 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -52,11 +52,11 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-SDE-K0-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F4` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CVFT-F7` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-IM-003` | smooth_geometry | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-GRAV-004` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-GRAV-005` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-EDGE-RAMIFICATION-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-BARYON-POLES-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-IM-COSMO-002` | cosmology | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -92,11 +92,11 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 170 | 2616 | 3209 | 588 |
+| formal_core | 170 | 2642 | 3209 | 562 |
 | frontier | 13 | 31 | 260 | 229 |
-| smooth_geometry | 18 | 242 | 324 | 78 |
 | cosmology | 24 | 407 | 459 | 52 |
 | empirical_passport | 22 | 206 | 255 | 44 |
+| smooth_geometry | 18 | 281 | 324 | 39 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
 | rg | 5 | 61 | 73 | 8 |
@@ -112,15 +112,15 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_07 | 49 | 637 | 881 | 234 |
 | BOOK_04 | 43 | 620 | 791 | 166 |
 | BOOK_01 | 15 | 223 | 278 | 55 |
+| BOOK_06 | 13 | 221 | 242 | 21 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
-| BOOK_06 | 13 | 182 | 242 | 60 |
 | BOOK_02 | 10 | 173 | 173 | 0 |
 | BOOK_05 | 8 | 133 | 133 | 0 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_07/08 | 8 | 85 | 147 | 62 |
 | BOOK_06/07 | 4 | 80 | 80 | 0 |
+| BOOK_06/08 | 5 | 61 | 100 | 39 |
 | BOOK_04/08 | 7 | 57 | 127 | 70 |
-| BOOK_06/08 | 5 | 48 | 100 | 52 |
 | BOOK_02/03 | 2 | 40 | 40 | 0 |
 | BOOK_00/01 | 2 | 40 | 40 | 0 |
 | BOOK_01/04 | 2 | 40 | 40 | 0 |
@@ -141,6 +141,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_06/07/08 | 1 | 20 | 20 | 0 |
 | BOOK_02/04/05/08 | 1 | 20 | 20 | 0 |
 | BOOK_00/01/02/03 | 1 | 20 | 20 | 0 |
+| BOOK_01/02/06 | 1 | 20 | 20 | 0 |
 | BOOK_03/06 | 1 | 20 | 20 | 0 |
 | BOOK_03 | 1 | 20 | 20 | 0 |
 | BOOK_01/03 | 1 | 20 | 20 | 0 |
@@ -152,7 +153,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_04/05/08 | 1 | 7 | 7 | 0 |
 | BOOK_00/01/02/04/05/06 | 1 | 7 | 20 | 13 |
 | BOOK_01/07 | 1 | 7 | 20 | 13 |
-| BOOK_01/02/06 | 1 | 7 | 20 | 13 |
 | BOOK_04/06 | 1 | 7 | 20 | 13 |
 | BOOK_04/07 | 2 | 4 | 40 | 36 |
 | BOOK_04/06/07/08 | 1 | 2 | 20 | 18 |
