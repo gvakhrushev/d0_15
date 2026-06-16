@@ -3641,7 +3641,7 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_00/01",
-      "leverage": 0,
+      "leverage": 1,
       "integrity_flag": null
     },
     {
@@ -5181,7 +5181,7 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_07",
-      "leverage": 0,
+      "leverage": 1,
       "integrity_flag": null
     },
     {
