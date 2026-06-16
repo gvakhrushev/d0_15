@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 3509,
-    "track_fair_max": 4783,
-    "pct_strength": 73.4,
-    "core_realized": 2969,
-    "core_potential": 4220,
+    "realized": 3529,
+    "track_fair_max": 4803,
+    "pct_strength": 73.5,
+    "core_realized": 2989,
+    "core_potential": 4240,
     "core_headroom": 1251,
-    "n_claims": 269,
-    "n_active": 267,
+    "n_claims": 270,
+    "n_active": 268,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 163,
-      "realized": 2360,
-      "max": 3096,
+      "n": 164,
+      "realized": 2380,
+      "max": 3116,
       "core_headroom": 731
     },
     "rg": {
@@ -136,9 +136,9 @@
       "core_headroom": 0
     },
     "BOOK_06/07": {
-      "n": 3,
-      "realized": 60,
-      "max": 60,
+      "n": 4,
+      "realized": 80,
+      "max": 80,
       "core_headroom": 0
     },
     "BOOK_07/08": {
@@ -5727,6 +5727,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ARCHIVE-LIGHTPROFINITE-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_06/07",
       "leverage": 0,
       "integrity_flag": null
     }

@@ -402,7 +402,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-SCENE-ACTIVE-EIGENVALUES-001", moduleName := "D0.Geometry.SceneActiveEigenvalues",
       theoremName := "scene_active_eigenvalue_plus;scene_active_eigenvalue_minus;scene_active_eigenvalues_sum;scene_active_eigenvalues_prod", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-PISOT-CONTRACTION-TIME-ARROW-001", moduleName := "D0.Dynamics.PisotContraction",
-      theoremName := "pisot_contraction;phi_gt_one;abs_psi_lt_one;psi_neg;sqrt_five_gt_two;sqrt_five_lt_three", status := ClaimStatus.leanCoreProved }
+      theoremName := "pisot_contraction;phi_gt_one;abs_psi_lt_one;psi_neg;sqrt_five_gt_two;sqrt_five_lt_three", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-LIGHTPROFINITE-001", moduleName := "D0.Geometry.ArchiveLightProfinite",
+      theoremName := "archiveFintypeDiagram_succ;archiveDiagram_transition_surjective;archiveFintypeDiagram_obj;archiveLightProfinite_def", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

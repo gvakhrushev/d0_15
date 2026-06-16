@@ -161,6 +161,7 @@ import D0.Geometry.ArchiveLaplacianNaturality
 import D0.Geometry.ArchiveLaplacianPhaseNaturality
 import D0.Geometry.ArchiveLaplacianProperties
 import D0.Geometry.ArchiveLaplacianRG
+import D0.Geometry.ArchiveLightProfinite
 import D0.Geometry.ArchiveLocalQuadraticForm
 import D0.Geometry.ArchiveLorentzCompatibility
 import D0.Geometry.ArchiveModeExponent
