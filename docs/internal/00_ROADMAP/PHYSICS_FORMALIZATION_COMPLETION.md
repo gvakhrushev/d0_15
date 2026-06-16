@@ -16,9 +16,16 @@ failure mode is **registry lag, not missing proofs**:
 Net: ~20 cert-only rows can flip to machine-checked-finite-leg with well-under-a-day of work, mostly by
 reuse. Inflating the ~30 empirical/owner-edge ones would be the exact over-claim the audit prevents.
 
-## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3936, 78.2%)
+## DONE (Iter-21 — all committed, build GREEN, demotions 0; strength 3762 → 3949, 78.4%)
 
-Batch C + verified repoints (later in Iter-21):
+**Batch H** (genuine new theorem) — `D0-LAPLACIAN-SPECTRUM-FIX-001` → `D0.Spectral.ZoneMatrixSpectrum`
+(`laplacian_3x3_correct`): the 3×3 row-stochastic zone matrix M over ℚ, `e₁=0`/`e₂=−121/160`/`e₃=39/160`
+(`native_decide`), charpoly factorization `(λ−1)(λ²+λ+39/160)` (`ring`), the two active roots `−1/2±√10/40`
+both as direct quadratic roots AND via the `λ↦1−λ` transport reusing `scene_active_eigenvalue_±` (the
+Book-08 S_DE window), and the **error-correction negative control** `p(φ⁻¹)=(199/160)(φ⁻¹−1)≠0` (φ⁻¹ ∉ spec(M)).
+Built clean after dropping `Mathlib.Data.Matrix.Notation` (absent in pin; `!![]` is transitive).
+
+Batch C + verified repoints (earlier in Iter-21):
 - `D0-HODGE-001` + `D0-NOAXION-001` → `BoundaryBoundary.boundary_boundary_zero` / `FiniteCochainNoAxion.finite_d_d_zero`
   (the d∘d=0 cores already existed — repoint, NOT a new `FiniteHodgeComplex` module; would have duplicated `BoundaryBoundary`).
 - `D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001` → `PhasonFlipEntropy` (finite SDE polynomial 160λ²−480λ+359 verified real;
