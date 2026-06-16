@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 3762,
+    "realized": 3788,
     "track_fair_max": 5036,
-    "pct_strength": 74.7,
-    "core_realized": 3189,
+    "pct_strength": 75.2,
+    "core_realized": 3215,
     "core_potential": 4440,
-    "core_headroom": 1251,
+    "core_headroom": 1225,
     "n_claims": 283,
     "n_active": 281,
     "duplicates": [],
@@ -32,10 +32,10 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 173,
-      "realized": 2533,
-      "max": 3269,
-      "core_headroom": 731
+      "n": 171,
+      "realized": 2519,
+      "max": 3229,
+      "core_headroom": 705
     },
     "rg": {
       "n": 5,
@@ -50,9 +50,9 @@
       "core_headroom": 13
     },
     "smooth_geometry": {
-      "n": 16,
-      "realized": 202,
-      "max": 284,
+      "n": 17,
+      "realized": 222,
+      "max": 304,
       "core_headroom": 78
     },
     "spectral_action": {
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 22,
-      "realized": 175,
-      "max": 255,
+      "n": 23,
+      "realized": 195,
+      "max": 275,
       "core_headroom": 75
     },
     "cosmology": {
@@ -149,9 +149,9 @@
     },
     "BOOK_07": {
       "n": 49,
-      "realized": 598,
+      "realized": 611,
       "max": 881,
-      "core_headroom": 273
+      "core_headroom": 260
     },
     "BOOK_06/08": {
       "n": 5,
@@ -161,9 +161,9 @@
     },
     "BOOK_04": {
       "n": 43,
-      "realized": 563,
+      "realized": 576,
       "max": 791,
-      "core_headroom": 223
+      "core_headroom": 210
     },
     "BOOK_04/08": {
       "n": 7,
@@ -792,16 +792,6 @@
       "effort": "write Lean proof"
     },
     {
-      "claim_id": "D0-BH-CAPACITY-A4-001",
-      "domain": "formal_core",
-      "book": "BOOK_07",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
       "claim_id": "D0-HODGE-001",
       "domain": "formal_core",
       "book": "BOOK_07",
@@ -873,16 +863,6 @@
     },
     {
       "claim_id": "D0-NEUTRON-002",
-      "domain": "formal_core",
-      "book": "BOOK_04",
-      "level_name": "PYTHON_CERTIFIED",
-      "leverage": 0,
-      "next": "LEAN_PROVED",
-      "points_gained": 5,
-      "effort": "write Lean proof"
-    },
-    {
-      "claim_id": "D0-PROTON-001",
       "domain": "formal_core",
       "book": "BOOK_04",
       "level_name": "PYTHON_CERTIFIED",
@@ -1674,13 +1654,6 @@
       "score": 7
     },
     {
-      "claim_id": "D0-BH-CAPACITY-A4-001",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
       "claim_id": "D0-HODGE-001",
       "domain": "formal_core",
       "leverage": 0,
@@ -1731,13 +1704,6 @@
     },
     {
       "claim_id": "D0-NEUTRON-002",
-      "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7
-    },
-    {
-      "claim_id": "D0-PROTON-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -4339,13 +4305,13 @@
     {
       "claim_id": "D0-BH-CAPACITY-A4-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "formal_core",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "smooth_geometry",
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
@@ -4549,13 +4515,13 @@
     {
       "claim_id": "D0-PROTON-001",
       "track": "CORE",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
       "ceiling": 20,
-      "release_status": "CERT-CLOSED",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "formal_core",
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null

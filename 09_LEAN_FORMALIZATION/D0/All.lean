@@ -217,6 +217,7 @@ import D0.Geometry.SpectralActionSkeleton
 import D0.Geometry.SpectralTower
 import D0.Geometry.TorusCore13GeometryOrigin
 import D0.Gravity
+import D0.Gravity.BlackHoleCapacityA4
 import D0.Gravity.BoundaryRelaxationSpectrum
 import D0.Gravity.CompactnessLimit
 import D0.Gravity.CriticalCollapseDSS
@@ -266,6 +267,7 @@ import D0.Matter.MesonPhasonDomainWalls
 import D0.Matter.NeutrinoPhasonWaves
 import D0.Matter.NuclearShellContactSRC
 import D0.Matter.PhasonStrainGenerations
+import D0.Matter.ProtonReadout306
 import D0.Matter.RepresentationCarrier
 import D0.Matter.TerminalFeedbackModes
 import D0.Matter.TraceDecompositionSigns
