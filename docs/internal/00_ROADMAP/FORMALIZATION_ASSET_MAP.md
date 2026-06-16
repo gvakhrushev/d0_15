@@ -135,3 +135,19 @@ the pin and recorded the HONEST verdict (an 11-agent audit/frontier workflow con
 Net: the "too pessimistic" headline was half-right — the categorical/condensed (LightProfinite) and the
 positive-channel reuse landed; but several PORTABLE items rest on Mathlib theorems that are simply not in the
 pin yet, and one "READY" item (the hull) was an over-claim. See `INTEGRATION_LOG.md` Iteration 19.
+
+### Round-2 update (a route-finding workflow turned 4 more "targets" into real Lean)
+A second 4-agent route-finder found exact pin routes and each was hand-built + build-verified at honest scope:
+- **Delone (item 5)**: the bounded sub-step is now CLOSED — `D0-DELONE-PHI-001` builds a genuine
+  `Delone.DeloneSet ℝ` from the golden Beatty set `{⌊nφ⌋}` (packing 1/2, covering 2). FLC/aperiodicity
+  AS Delone consequences remain absent-from-pin.
+- **Fibonacci fusion (PORTABLE)**: the RING level is now CLOSED — `D0-FIBONACCI-FUSION-RING-001`
+  (`N_τ²=N_τ+1`, charpoly `X²−X−1`). The fusion CATEGORY stays absent (no `FusionCategory`).
+- **CPTP (PORTABLE)**: the `*`-hom CP case is now CLOSED — `D0-FORGETTING-CHANNEL-CP-001` (any `*`-hom is a
+  genuine `CompletelyPositiveMap`). The depolarizing channel's CP stays a target (it is not a `*`-hom).
+- **Braid (PORTABLE)**: the U(1) leg is now CLOSED — `D0-BRAID-VALENCE-U1-001` (`B(2) ≅ Multiplicative ℤ`,
+  braid group defined as `PresentedGroup`). SU(2)/SU(3) reps stay an owner-edge.
+- **π₁(T²) (PORTABLE)**: stays EXTERNAL_OWNER — the keystone π₁(S¹)≅ℤ is genuinely absent (a TODO comment;
+  only the covering, injective monodromy, and π₁-product splitting exist). Not faked.
+
+Final Iter-19 tally: strength 3449→3629 (+180); 9 new claims; vacuous-True 12→1; 0 holes; integrity demotions 0.

@@ -5,10 +5,10 @@ in the books, the Lean layer lags, this is technical catch-up. Discipline: verif
 (verify-then-promote; full `lake build D0.All` green gate per unit; `d0_score` integrity demotions = 0;
 one reviewable commit per verified unit; reuse existing Mathlib; never fake; name every residual).
 
-**Headline.** strength **3449 → 3549 (+100)**; vacuous-`True` stubs (guard ratchet) **12 → 1**;
-load-bearing theorems **~855 → 1215**; weak-definitional **~302 → ~255**; proof holes **0** throughout;
-integrity demotions **0**; hygiene **100/100**; all guards green; `lake build D0.All` GREEN (3319 jobs).
-**One active over-claim** was surfaced by a full re-audit and **corrected**. 9 commits on `master`.
+**Headline.** strength **3449 → 3629 (+180)**; canonical claims **266 → 275 (+9)**; vacuous-`True` stubs
+(guard ratchet) **12 → 1**; load-bearing theorems **~855 → ~1230**; proof holes **0** throughout;
+integrity demotions **0**; hygiene **100/100**; all guards green; `lake build D0.All` GREEN (3784 jobs).
+**One active over-claim** was surfaced by a full re-audit and **corrected**. 14 commits on `master`.
 
 ---
 
@@ -64,21 +64,35 @@ integrity demotions **0**; hygiene **100/100**; all guards green; `lake build D0
   `map_cstarMatrix_nonneg'` obligation quantifies over all `k×k` amplifications, and the trace channel is
   not a *-homomorphism). Recorded as a theorem-target.
 
+### E. Round-2 frontier closures (a route-finding workflow → 4 more reuse wins)
+A second 4-agent route-finder found exact pin routes for items first filed research-level/external;
+each was hand-built + build-verified at its honest scope:
+- `6897ce9` **D0-DELONE-PHI-001** — the φ-quasicrystal carrier `{⌊nφ⌋}` is a genuine `Delone.DeloneSet ℝ`
+  (packing 1/2 via Beatty floor strict-monotonicity; covering 2 via `round(x/φ)`).
+- `715e3fe` **D0-FIBONACCI-FUSION-RING-001** — `τ⊗τ=1⊕τ` as `N_τ²=N_τ+1` (`N_τ=[[0,1],[1,1]]`), charpoly
+  `X²−X−1`. Sharpens the scalar `φ²=φ+1`.
+- `715e3fe` **D0-FORGETTING-CHANNEL-CP-001** — any `*`-hom between matrix C*-algebras is a genuine
+  `CompletelyPositiveMap` (identity / compression forgetting model).
+- `715e3fe` **D0-BRAID-VALENCE-U1-001** — Artin braid group defined; `B(2) ≅ Multiplicative ℤ` (the
+  U(1) anchor), nontrivial + finitely-presented + generated.
+
 ---
 
-## Honest residuals (named theorem-targets / owner-edges — NOT closed)
-- **π₁(T²)≅ℤ²** — external owner: the keystone π₁(S¹)≅ℤ is absent from the pin (it is a TODO comment).
-  D0 also has no topological torus (its torus is the ℤ²-acting integer matrix `T`).
-- **Braid-valence gauge** (THE 04.6.M1.gauge) — external owner: no braid group in the pin; the claim is a
-  representation-theoretic / no-catalog argument, prose-hedged as "effective-language inevitability".
-- **Fibonacci fusion CATEGORY** — research-level: no fusion-category/Grothendieck-ring asset in the pin.
-  The substantive content (φ²=φ+1 fusion rule + Perron N_τ²=N_τ+I → entropy = log φ) is already proved;
-  full topological conjugacy stays the Adler–Weiss owner-edge.
-- **Delone-hull FLC / aperiodicity** — research-level: the pin has the `DeloneSet` *definition* only.
-  Bounded sub-step (a real `Delone.DeloneSet ℝ` instance from the Sturmian point set) is the theorem-target;
-  the aperiodicity itself is already cert/number-theoretically proved (Sturmian + `KTheoryGapModule`).
-- **Complete positivity (CPTP)** of the forgetting channel — theorem-target (PTP is proved; CP needs the
-  full amplification obligation, not bounded).
+## Honest residuals (named theorem-targets / owner-edges — NOT closed; keystones absent from the pin)
+- **π₁(T²)≅ℤ²** — external owner: the keystone π₁(S¹)≅ℤ is absent from the pin (a TODO comment; only the
+  covering ℝ→S¹, injective monodromy, and π₁-product splitting exist). D0 also has no topological torus.
+- **Braid SU(2)/SU(3) legs** of THE 04.6.M1.gauge — owner-edge: the Burau/Temperley–Lieb/Jones unitary
+  representations and the maps `B(n)→SU(2),SU(3)` are absent from the pin. (The U(1)/`B(2)` leg is now
+  CLOSED — D0-BRAID-VALENCE-U1-001.)
+- **Fibonacci fusion CATEGORY** (object iso + Ostrik uniqueness) — research-level: no
+  `FusionCategory`/Grothendieck-ring in the pin. (The fusion RING level is now CLOSED —
+  D0-FIBONACCI-FUSION-RING-001; full topological conjugacy stays the Adler–Weiss owner-edge.)
+- **Depolarizing-channel complete positivity** — theorem-target: the depolarizing map is not a `*`-hom,
+  so it is unreachable via the pin's only CP constructor. (PTP is proved — D0-FORGETTING-CHANNEL-PTP-001;
+  the `*`-hom CP case is now CLOSED — D0-FORGETTING-CHANNEL-CP-001.)
+- **Delone-derived FLC / aperiodicity** — research-level: the pin has the `DeloneSet` definition only, no
+  FLC/Meyer/hull theorems. (The `Delone.DeloneSet ℝ` instance is now CLOSED — D0-DELONE-PHI-001; the
+  underlying aperiodicity is already proved number-theoretically via Sturmian + `KTheoryGapModule`.)
 - **Smooth/continuum Bianchi**, **GHP-Cauchy limit**, **2¹¹ Fock residue** — remain the existing
   Rieffel–GHP / Dixmier owner-edges; the pin has torsion on `CovariantDerivative` but no curvature/Bianchi.
 
@@ -95,5 +109,6 @@ honest external-owner / theorem-target status rather than faked.
 
 ## Commits (this session, on `master`)
 `66d2115` markers→real + ratchet 12→1 + HST · `e412ca9` D0-HULL-001 over-claim fix ·
-`743aea8` P1 LightProfinite · `6d7465f` P2 forgetting-channel PTP · `8d7f5cb` BianchiResidual strengthened
+`743aea8` P1 LightProfinite · `6d7465f` P2 forgetting-channel PTP · `8d7f5cb` BianchiResidual strengthened ·
+`dd343ca` wrap docs · `6897ce9` Delone instance · `715e3fe` fusion-ring + CP-channel + braid-U(1)
 (preceded earlier this session by `69af4da`, `c3fddc6`, `1370dea`, `6164629`, `9e84541`).

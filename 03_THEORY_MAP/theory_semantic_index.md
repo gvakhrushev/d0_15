@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 17
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 79
-- `CORE-FORMALIZED`: 119
+- `CORE-FORMALIZED`: 125
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 15
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 23
 - `certificate`: 94
-- `core`: 120
+- `core`: 126
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -31,9 +31,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 23
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 164
+- `formal_core`: 169
 - `frontier`: 13
-- `gauge_bridge`: 18
+- `gauge_bridge`: 19
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 3
@@ -1637,6 +1637,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Finite archive Laplacian is symmetric/nonnegative with zero-mode control.
 
+### D0-ARCHIVE-LIGHTPROFINITE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06/07`
+- module: `D0.Geometry.ArchiveLightProfinite`
+- theorem: `archiveFintypeDiagram_succ;archiveDiagram_transition_surjective;archiveFintypeDiagram_obj;archiveLightProfinite_def`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter19 frontier P1, reuse] Upgrades D0-ARCHIVE-TOWER-001's bespoke InverseLimit subtype to the REAL Mathlib categorical object: the tower is a genuine N-op => FintypeCat diagram (objects = finite archive levels ArchivePoints n = Fin(modes n); bonding maps n+1 -> n = archiveProjection) whose limit in Profinite packages as a LightProfinite (compact Hausdorff totally-disconnected second-countable). Reuses Functor.ofOpSequence + FintypeCat.of/homMk + LightDiagram + lightDiagramToLightProfinite from the pin (no new dependency). Structural theorems prove the diagram faithfully encodes the tower (succ transition map = archiveProjection; bonding maps surjective). Nonemptiness is the established sibling archive_tower_defines_profinite_object (inverseLimit_nonempty); transferring it onto the Mathlib limit point (forget_preservesLimits + nonempty_sections_of_finite_cofiltered_system) is a named follow-on theorem-target.
+
 ### D0-ARCHIVE-MODE-EXPONENT-001
 
 - type: `core`
@@ -1923,6 +1936,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Condensed/profinite phi-vacuum support exposes terminal qT=44 branch count 20 electroweak qEW=710 branch count 280 and depth 35 and the physics cut-project readout is tied to this support.
 
+### D0-DELONE-PHI-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Topology.DeloneInstance`
+- theorem: `d0BeattyDelone;beatty_dist_ge_one;beatty_cover;beatty_floor_lt`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter19 frontier, reuse] The D0 phi-quasicrystal carrier { floor(n*phi) : n in Z } (golden Beatty / 1-D cut-and-project = the canonical Sturmian point set) is a GENUINE Mathlib Delone.DeloneSet R: uniformly discrete (packing radius 1/2 — distinct points are distinct integers hence >=1 apart, via Beatty floor strict-monotonicity beatty_floor_lt) AND relatively dense (covering radius 2 — round(x/phi) yields a point within phi/2 + 1 < 2, since 1<phi<2). Reuses Mathlib Analysis/AperiodicOrder/Delone + round/abs_sub_round (no new dependency). Gives the hull a real Mathlib-typed point set, complementing the gap-labeling D0-HULL-001/D0-KTHEORY-GAP-MODULE-001. THEOREM-TARGET: FLC/aperiodicity AS Delone-set consequences (those downstream theorems are absent from the pin; underlying aperiodicity already proved number-theoretically via Sturmian + KTheoryGapModule).
+
 ### D0-DELTA-ALPHA-EXACT-001
 
 - type: `core`
@@ -1988,6 +2014,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter6 synthesis] Ties the corpus order-8/rank-8 objects into ONE forcing of the number 8, sewn by classical uniqueness/classification owners: {±}->Z2 (Bott period 2) -> ABCD x {±}=8=|Omega8| (Hurwitz 1,2,4,8 / Clifford & Bott-KO period 8) -> Q8 c 2T c 2I (Dedekind+Baer + icosians) -> E8 (Mordell) -> Spin(8) triality (3 eight-dim reps). Lean D0.Synthesis.DimensionEightNetwork (dim8_network) machine-checks the arithmetic skeleton: 8=2*4; tower 8|24|120 with indices 3,5,15; Z(Q8)=Z2 base; E8 Gram even unimodular (reuses D0-ICOSIAN-E8-GRAM-001); D4 star has 3 legs and |Out(Spin8)|=|S3|=6. Cert vp_dim8_network.py + names the 6 external owners. HONEST (anti-numerology, 00.9): forces the NUMBER 8 + rank-8 target ONLY; '3 generations' (the 3 = #D4 reps), C_max=3/8, and Leech Λ24<->K=30 are REJECTED forcing-links; the periodicity/triality/uniqueness theorems are EXTERNAL owners. Meets the phi-network (01.21.3) at the icosians.
 
+### D0-FIBONACCI-FUSION-RING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Claims.FibonacciFusionRing`
+- theorem: `fibFusion_rule;fibFusion_charpoly;fibFusion_trace;fibFusion_det;fibFusion_phi_root`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter19 frontier, reuse] Sharpens D0-FIBONACCI-IF-FORCING-001's scalar phi^2=phi+1 to a genuine integer matrix-ring witness of the Fibonacci fusion rule: N_tau=[[0,1],[1,1]] over Z has N_tau*N_tau=N_tau+1, trace 1, det -1, charpoly exactly X^2-X-1 (golden quadratic, real root phi via D0.Core.Phi.phi_sq). Reuses Mathlib Matrix Fin-2/trace/det/charpoly API. Honest scope: RING-level (LEM algebraic core); the fusion CATEGORY (object iso + Ostrik uniqueness) needs a FusionCategory/Grothendieck-ring structure ABSENT from the pin — stays the open categorical<->toral named gap (Adler-Weiss owner-edge).
+
 ### D0-FINAL-BRIDGE-INDEX-001
 
 - type: `core`
@@ -2000,6 +2039,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Machine-checkable final bridge index over closed D0 foundation groups.
+
+### D0-FORGETTING-CHANNEL-CP-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Probability.ForgettingChannelCP`
+- theorem: `d0HomCP;d0ForgetIdCP;d0ForgetIdCP_completelyPositive;d0ForgetIdCP_apply`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter19 frontier, reuse] Companion to D0-FORGETTING-CHANNEL-PTP-001 supplying the COMPLETE-POSITIVITY side for the *-homomorphism forgetting model: any *-hom between matrix C*-algebras CStarMatrix (Fin n)(Fin n) C is a genuine Mathlib CompletelyPositiveMap (the map_cstarMatrix_nonneg' obligation over every k-amplification discharged by Mathlib via NonUnitalStarAlgHomClass.instCompletelyPositiveMapClass; identity = forget-nothing limit, block-embedding = compression model). Reuses Analysis/CStarAlgebra/CompletelyPositiveMap (needs open scoped ComplexOrder). HONEST: the depolarizing channel M->(tr M/n)I is NOT a *-hom, so ITS complete positivity stays the named THEOREM-TARGET (PTP proved in the PTP sibling).
+
+### D0-FORGETTING-CHANNEL-PTP-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Probability.ForgettingChannelPTP`
+- theorem: `d0ForgetChannel_trace_preserving;d0ForgetChannel_posSemidef;d0ForgetChannel_add;d0ForgetChannel_smul;d0ForgetChannel_isPTP`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter19 frontier P2, reuse] D0 forgetting / archive-integration as a decoherence channel: the fully depolarizing map M->(tr M/n).I on n*n real matrices is proved a genuine POSITIVE TRACE-PRESERVING (PTP) linear map — additive + homogeneous + trace-preserving (n>=1) + PSD-preserving (Matrix.PosSemidef.one.smul with trace of a PSD matrix >=0). Reuses Mathlib Matrix.PosSemidef. THEOREM-TARGET (honest scope): full complete positivity as a Mathlib CompletelyPositiveMap over CStarMatrix needs the map_cstarMatrix_nonneg' obligation over all k*k amplifications (not a bounded hand-proof; the trace channel is not a *-hom, so the NonUnitalStarAlgHom CP route does not apply). Backs the 'forgetting = Wilsonian coarse-graining / CPTP' Standard-Physics-Isomorphism callout.
 
 ### D0-FOUND-001
 
@@ -2098,12 +2163,12 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - release_status: `CORE-FORMALIZED`
 - domain: `formal_core`
 - book: `BOOK_00/01`
-- module: `D0.Topology.TilingHull`
-- theorem: `Topology.d0_hull_has_finite_local_complexity;Topology.d0_hull_has_phi_cut_project_origin;Topology.d0_hull_is_nonperiodic;Topology.d0_hull_has_long_range_order;Topology.d0_hull_supports_gap_labeling`
+- module: `D0.Claims.KTheoryGapModule`
+- theorem: `ktheory_gap_module`
 - cert: `vp_d0_tiling_hull.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: D0 tiling hull is aperiodic and repetitive with finite local complexity.
+- notes: [Iter19 over-claim CORRECTED] Lean proof-of-record repointed to the REAL D0.Claims.KTheoryGapModule.ktheory_gap_module (gap labels lie in the rank-2 module Z+Zphi^-1 = Sturmian frequencies; exactly proved) — the gap-labeling invariant is the formal heart of the aperiodic hull. The former D0.Topology.TilingHull theorems were vacuous (Prop fields := true proved by rfl) — a structural placeholder only, NOT a proof-of-record. Aperiodicity / finite-local-complexity / repetitivity are CERT-backed (vp_d0_tiling_hull.py + Sturmian phi^-2 inflation; see D0-QUASICRYSTAL-CARRIER-FORCING-001), not Lean-proved as such. THEOREM-TARGET: a genuine Mathlib Delone.DeloneSet R instance from the phi/Sturmian point set (pin asset Analysis/AperiodicOrder/Delone present; discharge IsSeparated + IsCover); deriving FLC/aperiodicity as Delone consequences stays research-level (those downstream theorems are absent from the pin).
 
 ### D0-HURWITZ-INTERNAL-DIMENSION-SELECTOR-001
 
@@ -2994,6 +3059,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] structural filter: dim, gauge rank, 3-generation chiral count, light exotics, terminal shell.
+
+### D0-BRAID-VALENCE-U1-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_04`
+- module: `D0.Gauge.BraidValence`
+- theorem: `braidGroupTwoEquiv;braidRels_two;braidGroup_generated;braidGroupTwo_nontrivial;braidGroupTwo_finitelyPresented`
+- cert: `none`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: [Iter19 frontier, reuse] Defines the Artin braid group BraidGroup n as a PresentedGroup on Fin(n-1) Artin generators (pin has no braid group; reuses PresentedGroup/FreeGroup). Proves the U(1)/abelian boundary case of THE 04.6.M1.gauge: B(2) has empty relation set (braidRels_two) and is iso to Multiplicative Z (braidGroupTwoEquiv) — the infinite-cyclic/U(1)-character group — hence nontrivial + finitely presented; and every B(n) is generated by its n-1 Artin generators (braidGroup_generated). HONEST: the SU(2)/SU(3) legs (Burau/Temperley-Lieb/Jones unitary reps + maps B(n)->SU(2),SU(3)) are ABSENT from the pin — stay a BRIDGE-ASSUMPTIONS-EXPLICIT owner-edge, NOT promoted on this B(2) anchor.
 
 ### D0-GAUGE-MATRIX-REP-TRANSFORM-001
 

@@ -1408,3 +1408,41 @@ category, Delone-FLC, smooth Bianchi all recorded as theorem-targets / owner-edg
 caught two over-optimistic "ready" verdicts this iteration (Cartan absent; CPTP unbounded); the
 audit/frontier workflow (11 read-only agents) surfaced the lone over-claim (D0-HULL-001) and the 2 weak
 conversions, all corrected or honestly scoped.
+
+### Iter-19 (round 2) — frontier closures via a route-finding workflow
+
+A second 4-agent route-finding workflow found exact pin proof-routes for the items first filed as
+research-level/external; hand-built + build-verified each at its HONEST scope (4 new CORE claims +
+the Delone instance), turning several "theorem-targets" into real Lean:
+
+- `6897ce9` **D0-DELONE-PHI-001** — the φ-quasicrystal carrier `{⌊nφ⌋ : n∈ℤ}` (golden Beatty / 1-D
+  cut-and-project) is a GENUINE `Delone.DeloneSet ℝ`: uniformly discrete (packing 1/2, via Beatty
+  floor strict-monotonicity) + relatively dense (covering 2, via `round(x/φ)`, since `1<φ<2`). Gives
+  the hull a real Mathlib-typed point set; FLC/aperiodicity AS Delone consequences stay a target.
+- `715e3fe` **D0-FIBONACCI-FUSION-RING-001** — fusion rule `τ⊗τ=1⊕τ` as the integer matrix identity
+  `N_τ²=N_τ+1` (`N_τ=[[0,1],[1,1]]`), trace 1, det −1, charpoly exactly `X²−X−1` (root φ). Sharpens
+  the scalar `φ²=φ+1`. The fusion CATEGORY stays absent-from-pin (no `FusionCategory`).
+- `715e3fe` **D0-FORGETTING-CHANNEL-CP-001** — any `*`-hom between matrix C*-algebras is a genuine
+  Mathlib `CompletelyPositiveMap` (identity / compression forgetting model). The depolarizing channel
+  is not a `*`-hom, so ITS complete positivity stays the named target (PTP proved in the sibling).
+- `715e3fe` **D0-BRAID-VALENCE-U1-001** — the Artin braid group defined as a `PresentedGroup`; the
+  U(1)/abelian boundary `B(2) ≅ Multiplicative ℤ` (+ nontrivial, finitely-presented, generated). The
+  SU(2)/SU(3) legs (Burau/TL/Jones reps) stay a BRIDGE owner-edge (no braid reps in the pin).
+- **π₁(T²)≅ℤ² stays EXTERNAL_OWNER** — the route-finder confirmed the keystone π₁(S¹)≅ℤ is genuinely
+  absent from the pin (a TODO comment; only the covering ℝ→S¹ + injective monodromy + the π₁-product
+  splitting exist). Not faked.
+
+| metric | Iter18 | Iter19 (final) | delta |
+|---|---|---|---|
+| strength | 3449 | 3629 | +180 |
+| claims (canonical) | 266 | 275 | +9 (Galois, eigenvalues, Pisot, LightProfinite, PTP, Delone, fusion-ring, CP-channel, braid-U(1)) |
+| vacuous-True (guard ratchet) | 12 | 1 | −11 |
+| load-bearing theorems | ~855 | ~1230 | +375 |
+| proof holes | 0 | 0 | held |
+| active over-claims | 0 | 0 | D0-HULL-001 corrected |
+| integrity demotions | 0 | 0 | held |
+
+Residuals genuinely still open (named owner-edges / theorem-targets, keystones absent from the pin):
+π₁(S¹)≅ℤ; braid SU(2)/SU(3) unitary reps; the fusion CATEGORY (Ostrik uniqueness); depolarizing-channel
+complete positivity; Delone-derived FLC/aperiodicity; smooth/continuum Bianchi + GHP-Cauchy + 2¹¹ Fock
+residue. All guards PASS; `lake build D0.All` GREEN (3784 jobs); integrity demotions 0.

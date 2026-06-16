@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 269,
+    "claims": 275,
     "release_status": {
-      "CORE-FORMALIZED": 119,
+      "CORE-FORMALIZED": 125,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 17,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
@@ -19,14 +19,14 @@
       "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 141,
+      "LEAN_PROVED": 147,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 17,
       "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 15
     },
     "claim_type": {
-      "core": 120,
+      "core": 126,
       "bridge": 23,
       "no-go": 16,
       "certificate": 94,
@@ -34,9 +34,9 @@
       "frontier": 13
     },
     "domain": {
-      "formal_core": 164,
+      "formal_core": 169,
       "rg": 5,
-      "gauge_bridge": 18,
+      "gauge_bridge": 19,
       "smooth_geometry": 14,
       "spectral_action": 5,
       "empirical_passport": 22,
@@ -168,7 +168,7 @@
       "lean_name": "D0.Bridge.BridgeAssumption.ExternalHSTAssumptions",
       "status": "EXPLICIT",
       "assumption_type": "PHYSICS_DICTIONARY",
-      "external_source_or_cert": ""
+      "external_source_or_cert": "subgaussian -> continuum-Gaussian convex-response comparison (subgaussian concentration / Gaussian comparison theory); BOOK_02 §02.22; BOOK_06 §06.26"
     },
     {
       "id": "D0-FOUND-001",
@@ -3932,8 +3932,8 @@
       "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_00/01",
       "section": "D0 tiling hull",
-      "lean_module": "D0.Topology.TilingHull",
-      "lean_theorem": "Topology.d0_hull_has_finite_local_complexity;Topology.d0_hull_has_phi_cut_project_origin;Topology.d0_hull_is_nonperiodic;Topology.d0_hull_has_long_range_order;Topology.d0_hull_supports_gap_labeling",
+      "lean_module": "D0.Claims.KTheoryGapModule",
+      "lean_theorem": "ktheory_gap_module",
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
@@ -3942,16 +3942,16 @@
         "vp_d0_tiling_hull.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "D0 tiling hull is aperiodic and repetitive with finite local complexity.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Topology/TilingHull.lean",
+      "notes": "[Iter19 over-claim CORRECTED] Lean proof-of-record repointed to the REAL D0.Claims.KTheoryGapModule.ktheory_gap_module (gap labels lie in the rank-2 module Z+Zphi^-1 = Sturmian frequencies; exactly proved) — the gap-labeling invariant is the formal heart of the aperiodic hull. The former D0.Topology.TilingHull theorems were vacuous (Prop fields := true proved by rfl) — a structural placeholder only, NOT a proof-of-record. Aperiodicity / finite-local-complexity / repetitivity are CERT-backed (vp_d0_tiling_hull.py + Sturmian phi^-2 inflation; see D0-QUASICRYSTAL-CARRIER-FORCING-001), not Lean-proved as such. THEOREM-TARGET: a genuine Mathlib Delone.DeloneSet R instance from the phi/Sturmian point set (pin asset Analysis/AperiodicOrder/Delone present; discharge IsSeparated + IsCover); deriving FLC/aperiodicity as Delone consequences stays research-level (those downstream theorems are absent from the pin).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/KTheoryGapModule.lean",
       "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "module:D0.Topology.TilingHull",
+      "id": "module:D0.Claims.KTheoryGapModule",
       "kind": "lean_module",
-      "label": "D0.Topology.TilingHull",
-      "path": "09_LEAN_FORMALIZATION/D0/Topology/TilingHull.lean",
+      "label": "D0.Claims.KTheoryGapModule",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/KTheoryGapModule.lean",
       "exists": true
     },
     {
@@ -7554,13 +7554,6 @@
       "certs_exist": true
     },
     {
-      "id": "module:D0.Claims.KTheoryGapModule",
-      "kind": "lean_module",
-      "label": "D0.Claims.KTheoryGapModule",
-      "path": "09_LEAN_FORMALIZATION/D0/Claims/KTheoryGapModule.lean",
-      "exists": true
-    },
-    {
       "id": "cert:vp_ktheory_gap_labels_finite.py",
       "kind": "python_cert",
       "label": "vp_ktheory_gap_labels_finite.py",
@@ -9017,6 +9010,180 @@
       "kind": "lean_module",
       "label": "D0.Dynamics.PisotContraction",
       "path": "09_LEAN_FORMALIZATION/D0/Dynamics/PisotContraction.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-ARCHIVE-LIGHTPROFINITE-001",
+      "kind": "claim",
+      "claim_id": "D0-ARCHIVE-LIGHTPROFINITE-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_06/07",
+      "section": "archive refinement tower IS a genuine Mathlib LightProfinite (categorical upgrade of the bespoke inverse limit, 06/07 archive)",
+      "lean_module": "D0.Geometry.ArchiveLightProfinite",
+      "lean_theorem": "archiveFintypeDiagram_succ;archiveDiagram_transition_surjective;archiveFintypeDiagram_obj;archiveLightProfinite_def",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter19 frontier P1, reuse] Upgrades D0-ARCHIVE-TOWER-001's bespoke InverseLimit subtype to the REAL Mathlib categorical object: the tower is a genuine N-op => FintypeCat diagram (objects = finite archive levels ArchivePoints n = Fin(modes n); bonding maps n+1 -> n = archiveProjection) whose limit in Profinite packages as a LightProfinite (compact Hausdorff totally-disconnected second-countable). Reuses Functor.ofOpSequence + FintypeCat.of/homMk + LightDiagram + lightDiagramToLightProfinite from the pin (no new dependency). Structural theorems prove the diagram faithfully encodes the tower (succ transition map = archiveProjection; bonding maps surjective). Nonemptiness is the established sibling archive_tower_defines_profinite_object (inverseLimit_nonempty); transferring it onto the Mathlib limit point (forget_preservesLimits + nonempty_sections_of_finite_cofiltered_system) is a named follow-on theorem-target.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/ArchiveLightProfinite.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.ArchiveLightProfinite",
+      "kind": "lean_module",
+      "label": "D0.Geometry.ArchiveLightProfinite",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/ArchiveLightProfinite.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-FORGETTING-CHANNEL-PTP-001",
+      "kind": "claim",
+      "claim_id": "D0-FORGETTING-CHANNEL-PTP-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_06",
+      "section": "forgetting = positive trace-preserving (depolarizing) channel M->(tr M/n)I (06 forgetting/decoherence)",
+      "lean_module": "D0.Probability.ForgettingChannelPTP",
+      "lean_theorem": "d0ForgetChannel_trace_preserving;d0ForgetChannel_posSemidef;d0ForgetChannel_add;d0ForgetChannel_smul;d0ForgetChannel_isPTP",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter19 frontier P2, reuse] D0 forgetting / archive-integration as a decoherence channel: the fully depolarizing map M->(tr M/n).I on n*n real matrices is proved a genuine POSITIVE TRACE-PRESERVING (PTP) linear map — additive + homogeneous + trace-preserving (n>=1) + PSD-preserving (Matrix.PosSemidef.one.smul with trace of a PSD matrix >=0). Reuses Mathlib Matrix.PosSemidef. THEOREM-TARGET (honest scope): full complete positivity as a Mathlib CompletelyPositiveMap over CStarMatrix needs the map_cstarMatrix_nonneg' obligation over all k*k amplifications (not a bounded hand-proof; the trace channel is not a *-hom, so the NonUnitalStarAlgHom CP route does not apply). Backs the 'forgetting = Wilsonian coarse-graining / CPTP' Standard-Physics-Isomorphism callout.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Probability/ForgettingChannelPTP.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Probability.ForgettingChannelPTP",
+      "kind": "lean_module",
+      "label": "D0.Probability.ForgettingChannelPTP",
+      "path": "09_LEAN_FORMALIZATION/D0/Probability/ForgettingChannelPTP.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-DELONE-PHI-001",
+      "kind": "claim",
+      "claim_id": "D0-DELONE-PHI-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "phi-quasicrystal carrier is a genuine Mathlib Delone set (golden Beatty / 1-D cut-and-project, 01.21)",
+      "lean_module": "D0.Topology.DeloneInstance",
+      "lean_theorem": "d0BeattyDelone;beatty_dist_ge_one;beatty_cover;beatty_floor_lt",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter19 frontier, reuse] The D0 phi-quasicrystal carrier { floor(n*phi) : n in Z } (golden Beatty / 1-D cut-and-project = the canonical Sturmian point set) is a GENUINE Mathlib Delone.DeloneSet R: uniformly discrete (packing radius 1/2 — distinct points are distinct integers hence >=1 apart, via Beatty floor strict-monotonicity beatty_floor_lt) AND relatively dense (covering radius 2 — round(x/phi) yields a point within phi/2 + 1 < 2, since 1<phi<2). Reuses Mathlib Analysis/AperiodicOrder/Delone + round/abs_sub_round (no new dependency). Gives the hull a real Mathlib-typed point set, complementing the gap-labeling D0-HULL-001/D0-KTHEORY-GAP-MODULE-001. THEOREM-TARGET: FLC/aperiodicity AS Delone-set consequences (those downstream theorems are absent from the pin; underlying aperiodicity already proved number-theoretically via Sturmian + KTheoryGapModule).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Topology/DeloneInstance.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Topology.DeloneInstance",
+      "kind": "lean_module",
+      "label": "D0.Topology.DeloneInstance",
+      "path": "09_LEAN_FORMALIZATION/D0/Topology/DeloneInstance.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-FIBONACCI-FUSION-RING-001",
+      "kind": "claim",
+      "claim_id": "D0-FIBONACCI-FUSION-RING-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_06",
+      "section": "Fibonacci fusion rule tau(x)tau=1+tau as integer matrix-ring identity N_tau^2=N_tau+1 (charpoly X^2-X-1), 09.8",
+      "lean_module": "D0.Claims.FibonacciFusionRing",
+      "lean_theorem": "fibFusion_rule;fibFusion_charpoly;fibFusion_trace;fibFusion_det;fibFusion_phi_root",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter19 frontier, reuse] Sharpens D0-FIBONACCI-IF-FORCING-001's scalar phi^2=phi+1 to a genuine integer matrix-ring witness of the Fibonacci fusion rule: N_tau=[[0,1],[1,1]] over Z has N_tau*N_tau=N_tau+1, trace 1, det -1, charpoly exactly X^2-X-1 (golden quadratic, real root phi via D0.Core.Phi.phi_sq). Reuses Mathlib Matrix Fin-2/trace/det/charpoly API. Honest scope: RING-level (LEM algebraic core); the fusion CATEGORY (object iso + Ostrik uniqueness) needs a FusionCategory/Grothendieck-ring structure ABSENT from the pin — stays the open categorical<->toral named gap (Adler-Weiss owner-edge).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/FibonacciFusionRing.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Claims.FibonacciFusionRing",
+      "kind": "lean_module",
+      "label": "D0.Claims.FibonacciFusionRing",
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/FibonacciFusionRing.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-FORGETTING-CHANNEL-CP-001",
+      "kind": "claim",
+      "claim_id": "D0-FORGETTING-CHANNEL-CP-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_06",
+      "section": "genuine CompletelyPositiveMap for the *-hom forgetting model (identity/compression); depolarizing-CP stays target",
+      "lean_module": "D0.Probability.ForgettingChannelCP",
+      "lean_theorem": "d0HomCP;d0ForgetIdCP;d0ForgetIdCP_completelyPositive;d0ForgetIdCP_apply",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter19 frontier, reuse] Companion to D0-FORGETTING-CHANNEL-PTP-001 supplying the COMPLETE-POSITIVITY side for the *-homomorphism forgetting model: any *-hom between matrix C*-algebras CStarMatrix (Fin n)(Fin n) C is a genuine Mathlib CompletelyPositiveMap (the map_cstarMatrix_nonneg' obligation over every k-amplification discharged by Mathlib via NonUnitalStarAlgHomClass.instCompletelyPositiveMapClass; identity = forget-nothing limit, block-embedding = compression model). Reuses Analysis/CStarAlgebra/CompletelyPositiveMap (needs open scoped ComplexOrder). HONEST: the depolarizing channel M->(tr M/n)I is NOT a *-hom, so ITS complete positivity stays the named THEOREM-TARGET (PTP proved in the PTP sibling).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Probability/ForgettingChannelCP.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Probability.ForgettingChannelCP",
+      "kind": "lean_module",
+      "label": "D0.Probability.ForgettingChannelCP",
+      "path": "09_LEAN_FORMALIZATION/D0/Probability/ForgettingChannelCP.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-BRAID-VALENCE-U1-001",
+      "kind": "claim",
+      "claim_id": "D0-BRAID-VALENCE-U1-001",
+      "type": "core",
+      "domain": "gauge_bridge",
+      "scope_guard": "Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.",
+      "book": "BOOK_04",
+      "section": "Artin braid group defined; 2-strand B(2)=Multiplicative Z (U(1) anchor of braid-valence, 04.6.M1.gauge)",
+      "lean_module": "D0.Gauge.BraidValence",
+      "lean_theorem": "braidGroupTwoEquiv;braidRels_two;braidGroup_generated;braidGroupTwo_nontrivial;braidGroupTwo_finitelyPresented",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter19 frontier, reuse] Defines the Artin braid group BraidGroup n as a PresentedGroup on Fin(n-1) Artin generators (pin has no braid group; reuses PresentedGroup/FreeGroup). Proves the U(1)/abelian boundary case of THE 04.6.M1.gauge: B(2) has empty relation set (braidRels_two) and is iso to Multiplicative Z (braidGroupTwoEquiv) — the infinite-cyclic/U(1)-character group — hence nontrivial + finitely presented; and every B(n) is generated by its n-1 Artin generators (braidGroup_generated). HONEST: the SU(2)/SU(3) legs (Burau/Temperley-Lieb/Jones unitary reps + maps B(n)->SU(2),SU(3)) are ABSENT from the pin — stay a BRIDGE-ASSUMPTIONS-EXPLICIT owner-edge, NOT promoted on this B(2) anchor.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gauge/BraidValence.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gauge.BraidValence",
+      "kind": "lean_module",
+      "label": "D0.Gauge.BraidValence",
+      "path": "09_LEAN_FORMALIZATION/D0/Gauge/BraidValence.lean",
       "exists": true
     }
   ],
@@ -10543,7 +10710,7 @@
     },
     {
       "source": "D0-HULL-001",
-      "target": "module:D0.Topology.TilingHull",
+      "target": "module:D0.Claims.KTheoryGapModule",
       "kind": "implemented_in"
     },
     {
@@ -12794,6 +12961,66 @@
     {
       "source": "D0-PISOT-CONTRACTION-TIME-ARROW-001",
       "target": "module:D0.Dynamics.PisotContraction",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ARCHIVE-LIGHTPROFINITE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ARCHIVE-LIGHTPROFINITE-001",
+      "target": "module:D0.Geometry.ArchiveLightProfinite",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FORGETTING-CHANNEL-PTP-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FORGETTING-CHANNEL-PTP-001",
+      "target": "module:D0.Probability.ForgettingChannelPTP",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DELONE-PHI-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DELONE-PHI-001",
+      "target": "module:D0.Topology.DeloneInstance",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FIBONACCI-FUSION-RING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FIBONACCI-FUSION-RING-001",
+      "target": "module:D0.Claims.FibonacciFusionRing",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FORGETTING-CHANNEL-CP-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FORGETTING-CHANNEL-CP-001",
+      "target": "module:D0.Probability.ForgettingChannelCP",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BRAID-VALENCE-U1-001",
+      "target": "domain:gauge_bridge",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BRAID-VALENCE-U1-001",
+      "target": "module:D0.Gauge.BraidValence",
       "kind": "implemented_in"
     }
   ]
