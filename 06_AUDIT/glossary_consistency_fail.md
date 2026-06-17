@@ -1,5 +1,5 @@
 # Glossary Consistency Failures
-Generated 2026-06-16T12:31:35.267081+00:00
+Generated 2026-06-17T12:35:19.738763+00:00
 
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:71 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:104 [UNDEFINED_D0_TERM_IN_HEADING] ### The three status layers: CORE / FORMALISM / BRIDGE
@@ -57,26 +57,26 @@ Generated 2026-06-16T12:31:35.267081+00:00
 - **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:733 [METAPHOR_IN_PROSE] **Support.**  The support is the finite admissible detector ladder after the φ halt quotient.
 - **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:765 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.10.3 Runtime as navigation, not search: the global potential complexity cell
 - **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1037 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.13.4 Electromagnetic runtime normalization
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1112 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.13.5 QCD runtime and archive scale
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1112 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.13.5 QCD runtime and archive scale
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1154 [UNDEFINED_D0_TERM_IN_HEADING] #### Why `π_0` and not `π` in the runtime: the counter-term ban [^b02-33]
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1258 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.15 Archive pressure and spectral transfer
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1258 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.15 Archive pressure and spectral transfer
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1268 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.16 Archive/cosmology proof cells
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1270 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.16.1 Static archive-pressure coefficient closure
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1280 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.16.2 S_DE finite-window archive-transfer shape
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1488 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1584 [METAPHOR_IN_PROSE] The correction is therefore tied to the terminal role square, signed lift and light gauge carrier dimension.  No empiric
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1598 [METAPHOR_IN_PROSE] Owner: Book 02.  This theorem ties the magnitude cells of §02.19 to the `[J,Y]` commutator of [THE 2.9A] and the `K(9,11
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1600 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.19C Electroweak from quaternions and gravity from Hurwitz archive pressure
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1600 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.19C Electroweak from quaternions and gravity from Hurwitz archive pressure
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1728 [METAPHOR_IN_PROSE] proves that an alternative finite probability assignment is impossible under the same detector response.  The finite eff
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1834 [METAPHOR_IN_PROSE] Let the fluid dynamics be an inverse system of finite lattice models (e.g. lattice-Boltzmann type), each cell carrying a
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1981 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.31 Φ as primitive positive-response capacity
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2248 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.41 Self-substrate trace identity and fractal tick
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2264 [UNDEFINED_D0_TERM_IN_HEADING] ### Fractal Tick Fixed Point
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2276 [UNDEFINED_D0_TERM_IN_HEADING] ### Continuum from Fractal Tick
-- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2327 [METAPHOR_IN_PROSE] [^b02-12]: forcing: D0-DIM-LADDER-COMPACT-001
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1109 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.13.5 QCD runtime and archive scale
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1109 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.13.5 QCD runtime and archive scale
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1151 [UNDEFINED_D0_TERM_IN_HEADING] #### Why `π_0` and not `π` in the runtime: the counter-term ban [^b02-33]
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1255 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.15 Archive pressure and spectral transfer
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1255 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.15 Archive pressure and spectral transfer
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1265 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.16 Archive/cosmology proof cells
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1267 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.16.1 Static archive-pressure coefficient closure
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1277 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.16.2 S_DE finite-window archive-transfer shape
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1485 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1580 [METAPHOR_IN_PROSE] The correction is therefore tied to the terminal role square, signed lift and light gauge carrier dimension.  No empiric
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1594 [METAPHOR_IN_PROSE] Owner: Book 02.  This theorem ties the magnitude cells of §02.19 to the `[J,Y]` commutator of [THE 2.9A] and the `K(9,11
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1596 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.19C Electroweak from quaternions and gravity from Hurwitz archive pressure
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1596 [UNDEFINED_D0_TERM_IN_HEADING] ### 02.19C Electroweak from quaternions and gravity from Hurwitz archive pressure
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1724 [METAPHOR_IN_PROSE] proves that an alternative finite probability assignment is impossible under the same detector response.  The finite eff
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1830 [METAPHOR_IN_PROSE] Let the fluid dynamics be an inverse system of finite lattice models (e.g. lattice-Boltzmann type), each cell carrying a
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:1977 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.31 Φ as primitive positive-response capacity
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2243 [UNDEFINED_D0_TERM_IN_HEADING] ## 02.41 Self-substrate trace identity and fractal tick
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2259 [UNDEFINED_D0_TERM_IN_HEADING] ### Fractal Tick Fixed Point
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2271 [UNDEFINED_D0_TERM_IN_HEADING] ### Continuum from Fractal Tick
+- **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:2322 [METAPHOR_IN_PROSE] [^b02-12]: forcing: D0-DIM-LADDER-COMPACT-001
 - **BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md**:0 [HIGH_FREQ_TERM_MISSING_GLOSSARY] runtime appears 48 times, not defined early
 - **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md**:2 [UNDEFINED_D0_TERM_IN_HEADING] # BOOK 03 — Finite Action Operators and Scene Dynamics
@@ -107,43 +107,42 @@ Generated 2026-06-16T12:31:35.267081+00:00
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:282 [METAPHOR_IN_PROSE] ### 04.1.START Why the shell ladder starts at 9 (forced operationality level)
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:286 [METAPHOR_IN_PROSE] not a tuned offset (the address ladder and the `+2` step are owned by BOOK_01
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:399 [METAPHOR_IN_PROSE] The baryon flavour carrier is the three-body lift
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:550 [METAPHOR_IN_PROSE] The jump at `n=15` marks where control over the carrier is lost: capacity outruns the `9n` budget, so no further zone ca
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:635 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.5 Terminal matter triad
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:706 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.5.4 Fibonacci-fusion / Jones-index bridge to φ
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:921 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.7 Electroweak radial depth as a concrete finite variational selector
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:956 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.7.1 The electron is the terminal calibration register because it is canonically selected, not assumed
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:977 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.8 Charged leptons as a concrete finite variational selector family
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1034 [METAPHOR_IN_PROSE] **[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized [^b04-88]. [^b04-79].** The reason the electron has copies `μ,
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1106 [METAPHOR_IN_PROSE] and the bridge-factor row `B_g` as a finite row function.  These entries are read from the selected coefficient origin; 
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1347 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.12 QCD runtime and confinement grammar
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1366 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.13 Baryon support and nucleon readout
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1441 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.13.1 Full-support replacement of local finite variational selector windows
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1512 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(L_M)
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1514 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(\Gamma_\chi^\dagger\Gamma_\chi)
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1516 [METAPHOR_IN_PROSE] \operatorname{liftGen}(F_{fl}^\dagger F_{fl})
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1518 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(V_{sp}^\dagger V_{sp})
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1525 [METAPHOR_IN_PROSE] The flavour defect enters exclusively through the typed \(\operatorname{liftGen}\) term. Mismatched Gen×Gen blocks added
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1530 [METAPHOR_IN_PROSE] (The previous "closed no-go" framing for 04.15 is superseded by the positive finite closure above. The mathematical carr
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1598 [METAPHOR_IN_PROSE] -> terminal-lift comparison.
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1682 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.23 Selector closures now owned by finite operators
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1698 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.24 Final finite variational selector-origin closures
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:548 [METAPHOR_IN_PROSE] The jump at `n=15` marks where control over the carrier is lost: capacity outruns the `9n` budget, so no further zone ca
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:633 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.5 Terminal matter triad
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:704 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.5.4 Fibonacci-fusion / Jones-index bridge to φ
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:919 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.7 Electroweak radial depth as a concrete finite variational selector
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:954 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.7.1 The electron is the terminal calibration register because it is canonically selected, not assumed
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:975 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.8 Charged leptons as a concrete finite variational selector family
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1032 [METAPHOR_IN_PROSE] **[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized [^b04-88]. [^b04-79].** The reason the electron has copies `μ,
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1108 [METAPHOR_IN_PROSE] **[§00.9 grammar-priority caveat — HYP, not THE].** The operator-origin decimals (e.g. `r_μ=3.8814328681047283`) are a *
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1349 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.12 QCD runtime and confinement grammar
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1368 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.13 Baryon support and nucleon readout
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1443 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.13.1 Full-support replacement of local finite variational selector windows
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1513 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(L_M)
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1515 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(\Gamma_\chi^\dagger\Gamma_\chi)
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1517 [METAPHOR_IN_PROSE] \operatorname{liftGen}(F_{fl}^\dagger F_{fl})
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1519 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(V_{sp}^\dagger V_{sp})
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1526 [METAPHOR_IN_PROSE] The flavour defect enters exclusively through the typed \(\operatorname{liftGen}\) term. Mismatched Gen×Gen blocks added
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1599 [METAPHOR_IN_PROSE] -> terminal-lift comparison.
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1683 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.23 Selector closures owned by finite operators
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1699 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.24 Final finite variational selector-origin closures
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:22 [METAPHOR_IN_PROSE] Book 05 classifies every active claim as core theorem, sector theorem, operator scaffold, bridge law, empirical passport
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:37 [METAPHOR_IN_PROSE] MESON-TYPED-TRANSFER-CERT-CLOSED: finite typed edge-generation meson transfer operator exists, is self-adjoint/positive,
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:160 [UNDEFINED_D0_TERM_IN_HEADING] ### CORE vs BRIDGE for hard-problem claims (the Clay discipline)
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:321 [METAPHOR_IN_PROSE] 5. **Tower-stop theorem (why the tower stops, not `V₁₅`) — finite content now certified.** Why the structural tower term
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:506 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.11a Risky prediction passport discipline
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:517 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.12 Theory-improvement gate
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:572 [METAPHOR_IN_PROSE] | meson transfer algebra | `D0.Matter.MesonDefectTransferAlgebra` | edge and generation operators are lifted to a common
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:575 [METAPHOR_IN_PROSE] | Meson typed transfer | `D0.Matter.MesonDefectTransferAlgebra` | typed E x Gen carrier, C_chiFV self-adjoint/positive, 
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:736 [METAPHOR_IN_PROSE] | meson transfer algebra | edge-space and generation-space operators are added without a common tensor/lift carrier |
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:900 [UNDEFINED_D0_TERM_IN_HEADING] ### 05.15.1 PDG Strict Passport Protocol
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:941 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.17 ABCD and capacity proof-cell rule
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:965 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.18 Bridge proof-cell rule
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1064 [METAPHOR_IN_PROSE] BOOK_03 03.0 and the trace ladder there), so the core fraction of the structure
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1122 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.21 Lepton magnetic-moment and precision bridge rule
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1137 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.26 Trace-heat-capacity and empirical no-go summary
-- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1138 [METAPHOR_IN_PROSE] Trace-heat-capacity gravity is split: core = detector ladder, Lucas traces, heat moments, scene counts and A/4 capacity;
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:321 [METAPHOR_IN_PROSE] 5. **Tower-stop theorem (why the tower stops, not `V₁₅`) — finite content certified.** Why the structural tower terminat
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:505 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.11a Risky prediction passport discipline
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:516 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.12 Theory-improvement gate
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:571 [METAPHOR_IN_PROSE] | meson transfer algebra | `D0.Matter.MesonDefectTransferAlgebra` | edge and generation operators are lifted to a common
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:574 [METAPHOR_IN_PROSE] | Meson typed transfer | `D0.Matter.MesonDefectTransferAlgebra` | typed E x Gen carrier, C_chiFV self-adjoint/positive, 
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:735 [METAPHOR_IN_PROSE] | meson transfer algebra | edge-space and generation-space operators are added without a common tensor/lift carrier |
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:899 [UNDEFINED_D0_TERM_IN_HEADING] ### 05.15.1 PDG Strict Passport Protocol
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:940 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.17 ABCD and capacity proof-cell rule
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:964 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.18 Bridge proof-cell rule
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1063 [METAPHOR_IN_PROSE] BOOK_03 03.0 and the trace ladder there), so the core fraction of the structure
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1121 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.21 Lepton magnetic-moment and precision bridge rule
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1136 [UNDEFINED_D0_TERM_IN_HEADING] ## 05.26 Trace-heat-capacity and empirical no-go summary
+- **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:1137 [METAPHOR_IN_PROSE] Trace-heat-capacity gravity is split: core = detector ladder, Lucas traces, heat moments, scene counts and A/4 capacity;
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:49 [UNDEFINED_D0_TERM_IN_HEADING] ### 06.1.1 Heat-trace operator and the forced u↔t bridge
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:89 [METAPHOR_IN_PROSE] `I(u)` measures the loss of local information accumulated by phase time `u`. This is the heat-trace channel for the arro
@@ -173,7 +172,7 @@ Generated 2026-06-16T12:31:35.267081+00:00
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1077 [METAPHOR_IN_PROSE] The non-vanishing commutator `C_n` is not an artifact of one particular lift; it is the carrier of a CORE obstruction. T
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1082 [METAPHOR_IN_PROSE] - Therefore an inevitable residual remains at every seam. This residual is not noise to be eliminated — it is the **orig
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1084 [METAPHOR_IN_PROSE] [^b06-39] — the finite seam-curvature certificate discharges the CORE leg (`Δα ≠ 0` via `C_n` rank `2`, HS density `4`);
-- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1094 [METAPHOR_IN_PROSE] no-catalog step + "origin of dynamics" lift) is now discharged at the finite level by the
+- **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1094 [METAPHOR_IN_PROSE] no-catalog step + "origin of dynamics" lift) is discharged at the finite level by the
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1311 [METAPHOR_IN_PROSE] ### 06.37.3 Trace-heat time ladder
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1322 [METAPHOR_IN_PROSE] Thus heat moments of `T^2` are even Lucas traces. A fixed detector reads `T^n` layers while the detector itself is uncha
 - **BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md**:1363 [METAPHOR_IN_PROSE] when \(B_0=0\). The retained component never vanishes in finite time. The continuum parameter is the logarithmic coordin
@@ -218,28 +217,28 @@ Generated 2026-06-16T12:31:35.267081+00:00
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:42 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7a Dark matter as archive phason glass
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:81 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.3 Cosmology is finite survey readout, not bare continuum ontology
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:100 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.3.1 Frozen archive cosmology before survey likelihood
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:149 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.4 Archive sector as boundary complement
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:160 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.5 Cosmological readout discipline
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:178 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.6 Archive-pressure operator
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:218 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:218 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:241 [METAPHOR_IN_PROSE] The qualitative "unresolved complement" above hides a forced number. The complement is not free: its size is fixed by th
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:252 [METAPHOR_IN_PROSE] BRIDGE-lift [^b08-5]. The lift is conditional and typed: *if* the "dark" sector is read by a functional that sees **all*
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:275 [METAPHOR_IN_PROSE] [^b08-4] — ceiling inherits the same Π transfer obligation as the DarkRatio lift; no separate `vp_*` cert is registered 
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:381 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.12 BAO archive-transfer comparison protocol
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:470 [UNDEFINED_D0_TERM_IN_HEADING] ### 08.12.2 Archive-window eigenvalue equation for `λ_c,λ_r`
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:566 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.14 QCD archive scale and cosmological guardrail
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:654 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.31.1 Smooth macro-geometry and archive covariance
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:732 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.37 Final bridge index and spectral-cosmology status
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:742 [METAPHOR_IN_PROSE] -> heat-trace A0/A2 ladder
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:760 [METAPHOR_IN_PROSE] | spectral action A0/A2 ladder and higher-power bounds | `CORE-CLOSED` | `D0.Geometry.SpectralActionLadder.a0_is_volume_
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:857 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.42 IceCube neutrino phason decoherence passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:894 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.43 CMB phason-flip entropy spectrum passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:904 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive phason halo / lensing passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:904 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive phason halo / lensing passport
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:998 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing external comparison protocol
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:1137 [UNDEFINED_D0_TERM_IN_HEADING] ## Tabletop bridge guardrail
-- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:1147 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.51 The archive phason: a forced gapless dark mode
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:147 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.4 Archive sector as boundary complement
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:158 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.5 Cosmological readout discipline
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:176 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.6 Archive-pressure operator
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:216 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:216 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7 Dark sector as archive complement
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:239 [METAPHOR_IN_PROSE] The qualitative "unresolved complement" above hides a forced number. The complement is not free: its size is fixed by th
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:250 [METAPHOR_IN_PROSE] BRIDGE-lift [^b08-5]. The lift is conditional and typed: *if* the "dark" sector is read by a functional that sees **all*
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:273 [METAPHOR_IN_PROSE] [^b08-4] — ceiling inherits the same Π transfer obligation as the DarkRatio lift; no separate `vp_*` cert is registered 
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:379 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.12 BAO archive-transfer comparison protocol
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:468 [UNDEFINED_D0_TERM_IN_HEADING] ### 08.12.2 Archive-window eigenvalue equation for `λ_c,λ_r`
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:564 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.14 QCD archive scale and cosmological guardrail
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:652 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.31.1 Smooth macro-geometry and archive covariance
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:728 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.37 Final bridge index and spectral-cosmology status
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:738 [METAPHOR_IN_PROSE] -> heat-trace A0/A2 ladder
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:756 [METAPHOR_IN_PROSE] | spectral action A0/A2 ladder and higher-power bounds | `CORE-CLOSED` | `D0.Geometry.SpectralActionLadder.a0_is_volume_
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:852 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.42 IceCube neutrino phason decoherence passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:887 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.43 CMB phason-flip entropy spectrum passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:897 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive phason halo / lensing passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:897 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.44 Archive phason halo / lensing passport
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:991 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.47 Archive phason halo / lensing external comparison protocol
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:1130 [UNDEFINED_D0_TERM_IN_HEADING] ## Tabletop bridge guardrail
+- **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:1140 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.51 The archive phason: a forced gapless dark mode
 - **BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md**:23 [METAPHOR_IN_PROSE] The V3--V12 GWOSC/LIGO scans are admitted as negative-control discovery work.  Raw `phi` ladders, detector-frame `phi`, 
 - **BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md**:57 [UNDEFINED_D0_TERM_IN_HEADING] ## 09.04 Binary merger as Born-rule beat bridge
