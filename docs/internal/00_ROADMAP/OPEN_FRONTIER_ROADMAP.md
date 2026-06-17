@@ -41,9 +41,14 @@ demotions 0. Status mix: 162 CORE-FORMALIZED · 50 CERT-CLOSED · 20 BRIDGE-ASSU
    What remains under P1 is **not finite**: the Edge-α dilation/Puiseux leg (analytic continuation, P5-style
    Mathlib-blocked) and the detection-quadratic categorical step (needs a faithful finite model). Next
    real movement is therefore P2 (architecture) / P3 (data), not more P1 finite closes.
-3. **P2 · A2-Einstein / Hodge finite witness + the muon §00.9 question.** Architecture-level: a genuine
-   finite witness for the spectral-Einstein/Hodge coupling. Honesty-level: derive the muon decimal
-   ladder from the Lucas integers, or accept it as irreducibly HYP.
+3. **P2 · muon §00.9 caveat CLOSED; A2-Einstein/Hodge confirmed architecture-blocked.** Honesty-level
+   (done, Iter-21): the muon §00.9 caveat is now cert-backed — the charged-lepton cert is a can-FAIL
+   certificate asserting only the THE integer/exponent structure, with the 17-digit decimals + competing
+   `206+2φ⁻²` form logged as declared HYP. Architecture-level (verified blocked): the finite
+   spectral-Einstein/Hodge witness needs a tensor `G_ij=δS_A2/δh` that does not exist, across mismatched
+   ℝ/ℚ carriers, with the Hodge d-forcing colliding with an existing NO-GO — genuinely new architecture,
+   not a finite close. So P2's honesty work is complete; its architecture work is a real frontier, not a
+   quick win. Next actionable movement is **P3 (data-bound passport gates)**.
 4. **P3 · Passport gates (data-bound, falsifiable).** δ_CP (DUNE/JUNO), S_DE→DESI DR3, IceCube, the
    Bragg-spectrum metrology prediction. Pre-registered; closed by data, not by us.
 5. **P4–P6 · Cite / wait / tidy.** 20 external-owner bridge edges (confirm-and-cite); K-theory & ergodic
@@ -88,8 +93,8 @@ they are kept here as named, honestly-bounded gaps, not quick wins.
 
 | item | registry anchor | status | what would sharpen / close it |
 |---|---|---|---|
-| Finite A2-Einstein / Hodge matter-gravity witness | `D0-SPECTRAL-EINSTEIN-001`, `D0-HODGE-LINKS-001` | PROOF-TARGET (print-stub demoted; no finite witness yet) | a genuine finite witness for the A2 Einstein-tensor / Hodge-matter coupling — not in the current architecture |
-| Muon mass-ratio §00.9 grammar-priority gap | `D0-LEPTON-002` (CERT-CLOSED) / BOOK_04 §04.8 | **HYP** value, named caveat | derive the 17-digit decimal ladder `r_μ=3.8814…` *from* the integer Lucas ladder (`L₁₁+L₄=206` is THE), or formally accept the value as irreducibly HYP — resolves the two-formula §00.9 caveat |
+| Finite A2-Einstein / Hodge matter-gravity witness | `D0-SPECTRAL-EINSTEIN-001`, `D0-HODGE-LINKS-001` | PROOF-TARGET — **architecture-blocked** (Iter-21 P2 audit, verified) | The genuine scalar piece (`a2_is_eh_proxy`) is already CORE under `D0-GEOM-SPECTRAL-ACTION-LADDER-001`. OPEN is the rank-2 `G_ij=δS_A2/δh` (symmetric **and** divergence-free) — *no such object exists in `D0/`*. Two verified blocks: (1) a **carrier mismatch** — `HeatTraceEHProxy` lives over `ℝ Matrix N N`, `FiniteSpin2WaveOperator` over `ℚ SymPert4`; (2) a **missing variational-derivative operator**; and for the Hodge link, the needed d-conservation forcing **collides with an existing NO-GO** (`canonical_stress_conservation_no_go`). Real per-side assets exist (`spin2_coupling_depends_only_on_tt_stress`, `PiTT4_kills_trace/_gauge`) but don't bind across carriers. New architecture, not a finite witness — do NOT anchor an ASSUMP row to the scalar. |
+| Muon mass-ratio §00.9 grammar-priority gap | `D0-LEPTON-002` (CERT-CLOSED) / BOOK_04 §04.8 | ✅ **caveat CLOSED (P2, Iter-21)** — cert hardened; value stays **HYP** | The §00.9 caveat is now **cert-backed**: `vp_charged_lepton_transfer_certificate.py` rewritten as a **can-FAIL** cert asserting only the THE structure (computed Lucas `L₁₁+L₄=206`; exponents `0,1/4,1/3`) with reachable negative controls (wrong layers miss 206; free/democratic Yukawa fit rejected), and **logging the 17-digit decimals + the competing `206+2φ⁻²` form (`\|miss\|≈4.35e-3`) as declared HYP**. The prior print-stub (couldn't FAIL) is gone. The mass-ratio *value* remains honestly HYP; *deriving* the decimal ladder from the integers stays a named target (winding `W` is PHYSINPUT, no forced ℚ(φ) operator — not faked). |
 | `Δα` analytic owner | §05.6 obligation 4 / `D0-DELTA-ALPHA-MOMENT-001` | **superseded** by the holonomy route (Iter-21) | Δα is now *derived* as the seam closure holonomy (`D0-ALPHA-HOLONOMY-002`, structure THE / data CHK); the old residue-amplitude route is **closed-negative** (transcendental). Remaining: the holonomy's own `2π₀` origin (→ P1). |
 
 ## P3 — passport gates (await external data; falsifiable, not pure-D0 closure)
