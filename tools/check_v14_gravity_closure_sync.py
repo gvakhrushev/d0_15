@@ -119,7 +119,7 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         [
             "c_D0 = 1 tick gauge",
             "eta4 terminal signature",
-            "delta0 finite readout cut",
+            "δ₀ finite readout cut",
             "heat trace scale is internal, not SI time",
         ],
     ),
@@ -147,8 +147,8 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         "Book 08 archive entropy citation",
         BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
         [
-            "Cosmological acceleration/entropy flow uses archive entropy layer",
-            "D0.Gravity.EntropicArchiveInterface",
+            "Cosmological acceleration/entropy flow uses the archive entropy layer",
+            "entropic archive interface",
             "not import continuum GR as primitive",
         ],
     ),

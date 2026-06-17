@@ -68,7 +68,7 @@ CHECKS: list[tuple[str, Path, list[str]]] = [
     (
         "Book 08 falsification hook",
         BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
-        ["High-energy neutrino decoherence is a falsification hook", "vp_neutrino_phason_decoherence_passport.py"],
+        ["High-energy neutrino decoherence is a falsification hook", "neutrino phason-decoherence passport"],
     ),
     (
         "Hard theorem targets",

@@ -104,9 +104,9 @@ BOOK_CHECKS = [
     (
         BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
         [
-            "dark sector = archive Galois branch",
+            "dark sector is the archive Galois branch",
             "coarse-grained phase-stable readout cancels alternating sign",
-            "expansion is determinant balance, not fitted missing component",
+            "expansion is determinant balance, not a fitted missing component",
         ],
     ),
 ]

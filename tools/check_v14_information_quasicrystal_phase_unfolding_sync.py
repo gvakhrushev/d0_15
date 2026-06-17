@@ -82,15 +82,20 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
             "irrational phi^-2 phase",
             "finite return modulus",
             "residue branches",
-            "D0.Geometry.PhaseUnfoldingQuasicrystal",
+            # Prose is publication-clean: the §01.19 owner sentence replaces the
+            # bare Lean module-id. Pin the concept the book actually states.
+            "The Lean owner establishes that the φ phase is non-periodic, that the finite return modulus unfolds branches, and that the quasicrystal order is not a periodic lattice.",
         ],
     ),
     (
         "Book 06 toral runtime",
         BOOKS / "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
         [
-            "time operator supplies the non-periodic ordered runtime",
-            "toral_runtime_supplies_quasicrystal_order",
+            # §06.29 prose: "runtime" is now stated as "finite evolution"; the
+            # bare theorem-id was dropped for the toral-automorphism concept it
+            # names. Pin both surviving clean strings.
+            "The time operator supplies the non-periodic ordered finite evolution",
+            "integer toral\nautomorphism `T=[[0,1],[1,-1]]` orders the active/archive ladder",
         ],
     ),
     (
@@ -98,8 +103,10 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         BOOKS / "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
         [
             "finite information-quasicrystal",
-            "phi_phase_is_nonperiodic",
-            "finite_return_modulus_unfolds_branches",
+            # §07.25 prose states the two owner theorems as concepts rather than
+            # bare Lean-ids; pin the surviving clean statements.
+            "The non-periodicity theorem says the `phi^-2` phase does not admit a\nrational translational period",
+            "By the Phase-Unfolding Theorem, visible arms\nappear only when the finite quotient chooses q_T=44 or q_EW=710",
         ],
     ),
     (

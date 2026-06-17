@@ -134,8 +134,11 @@ checks: list[tuple[str, Path, list[str]]] = [
         BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
         [
             "Core-13 Passport Boundary",
-            "08_PASSPORTS/PDG",
-            "vp_core13_shell_geometry_passport.py",
+            # Books are publication-clean: prose pins de-pathified in §08.43.
+            # Old repo-paths "08_PASSPORTS/PDG" and "vp_core13_shell_geometry_passport.py"
+            # now read as clean concepts; lockstep the guard to the current prose.
+            "the PDG passport",
+            "the Core-13 shell-geometry passport",
         ],
     ),
     (

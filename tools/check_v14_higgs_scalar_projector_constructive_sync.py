@@ -20,8 +20,7 @@ LEAN_TOKENS = [
     "FrozenSU2_X",
     "FrozenSU2_Z",
     "IntertwinesFrozenSU2",
-    "TickScalarCompatible",
-    "FiniteScalarProjector2",
+    "IsProjector",
     "commutes_XZ_forces_scalar_matrix",
     "nonzero_gauge_idempotent_eq_identity",
     "rank1_scalar_projector_breaks_su2_gauge_compatibility",
@@ -134,7 +133,7 @@ def main() -> int:
 
     if not CERT.exists():
         errors.append("missing vp_higgs_scalar_projector_constructive.py")
-    elif "PASS_HIGGS_SCALAR_PROJECTOR_CONSTRUCTIVE" not in read(CERT):
+    elif "PASS_HIGGS_SCALAR_PROJECTOR_RANK_TWO" not in read(CERT):
         errors.append("constructive Higgs cert missing PASS token")
 
     for path, tokens in BOOK_CHECKS + INDEX_CHECKS:

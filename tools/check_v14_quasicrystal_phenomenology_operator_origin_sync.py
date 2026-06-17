@@ -127,7 +127,7 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         "Book 04 matter section",
         BOOKS / "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
         [
-            "Matter as phason/window defects of the phi-quasicrystal vacuum",
+            "Matter as phason/window defects of the φ-quasicrystal vacuum",
             "generations = inflation classes",
             "quark color/charge = window-sector weights",
             "chirality = acceptance-window offset",
@@ -158,7 +158,7 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         [
             "dark matter = localized archive phason strain",
             "dark energy = determinant-balance/archive expansion",
-            "vp_archive_phason_dark_matter.py",
+            "archive phason dark-matter module",
         ],
     ),
     (

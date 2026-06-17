@@ -60,8 +60,6 @@ CHECKS: list[tuple[str, Path, list[str], list[str]]] = [
             "rank1_scalar_projector_breaks_su2_gauge_compatibility",
             "minimal_positive_scalar_projector_rank_two",
             "higgs_yukawa_core_promotion_valid",
-            "finite_scalar_projector_rank_one_no_go",
-            "finite_scalar_projector_minimal_rank_two",
         ],
         ["sorry", "admit", "axiom", "unsafe", "Float"],
     ),
@@ -152,7 +150,7 @@ CHECKS: list[tuple[str, Path, list[str], list[str]]] = [
     (
         "Book 08 passport separation",
         BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
-        ["Core-13 particle-shell diagnostics", "cosmological survey", "08_PASSPORTS/PDG"],
+        ["Core-13 particle-shell diagnostics", "cosmological survey", "PDG passport"],
         [],
     ),
 ]

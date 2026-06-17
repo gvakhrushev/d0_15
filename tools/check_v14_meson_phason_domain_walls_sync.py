@@ -56,7 +56,8 @@ CHECKS: list[tuple[str, Path, list[str]]] = [
         DOCS / "CLAIM_TO_LEAN_MAP.csv",
         [
             "D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001",
-            "D0.Matter.MesonPhasonDomainWalls",
+            # lean_module pin dropped: QUASI007 re-scoped to PYTHON_CERTIFIED/CERT-CLOSED,
+            # lean_module column emptied by design (Lean = EXTERNAL-GAP, placeholder removed).
             "vp_phason_domain_wall_mesons.py",
         ],
     ),

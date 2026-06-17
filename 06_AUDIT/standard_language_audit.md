@@ -1,15 +1,15 @@
 # D0 Standard Language Audit Report
-Generated: 2026-06-16T12:31:58.506042+00:00
+Generated: 2026-06-17T16:13:09.873251+00:00
 
-Total occurrences scanned: 2280
+Total occurrences scanned: 2265
 
 ## Summary by Classification
-- NEEDS_STANDARD_REWRITE: 149
-- OK_CODE_OR_FORMULA: 191
+- NEEDS_STANDARD_REWRITE: 145
+- OK_CODE_OR_FORMULA: 190
 - OK_FIRST_USE: 70
-- OK_OWNER: 238
-- OK_STANDARD_CONTEXT: 267
-- OK_STRUCTURAL: 1365
+- OK_OWNER: 235
+- OK_STANDARD_CONTEXT: 268
+- OK_STRUCTURAL: 1357
 
 ## Needs Rewrite (sample)
 - BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:254 `readout` → positive measurement outcome / positive response functional
@@ -22,11 +22,11 @@ Total occurrences scanned: 2280
   > 08 cosmology, archive pressure and observable transfer
 - BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:321 `archive pressure` → effective boundary response of traced-out sector
   > 08 cosmology, archive pressure and observable transfer
-- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:442 `gate` → finite variational test functional
+- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:439 `gate` → finite variational test functional
   > If the answer is yes, the result remains a stress test.  If the answer is no, the active book must show the M1, gate, trace, finite-spectrum or stationarity reason why alternatives fail.
-- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:679 `archive` → traced-out complement / quotient sector
+- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:676 `archive` → traced-out complement / quotient sector
   > the electroweak depth, the proton readout, the neutron archive sibling and the
-- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:679 `readout` → positive measurement outcome / positive response functional
+- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:676 `readout` → positive measurement outcome / positive response functional
   > the electroweak depth, the proton readout, the neutron archive sibling and the
 - BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:383 `archive` → traced-out complement / quotient sector
   > Because this phase is irrational and has the golden continued-fraction class, it suppresses low-denominator rational locking. The unresolved archive geometry therefore does not collapse into uncontrol
@@ -70,5 +70,5 @@ Total occurrences scanned: 2280
   > A full oriented return must include the two-sided orientation, the pointed terminal alphabet and the full bilateral scene line:
 - BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1960 `readout` → positive measurement outcome / positive response functional
   > Readout is D^dagger D applied to the T^n-state.
-- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:472 `readout` → positive measurement outcome / positive response functional
-  > The terminal two-port readout is therefore written as a role-preserving representation
+- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:261 `gate` → finite variational test functional
+  > The exponent and two correction terms must be selected from the gate-action grammar. Nearby expressions are rejected unless they satisfy the same admissibility constraints.

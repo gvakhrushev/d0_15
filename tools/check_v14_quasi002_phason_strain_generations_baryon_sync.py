@@ -64,7 +64,7 @@ CHECKS: list[tuple[str, Path, list[str]]] = [
         "Book 04 matter integration",
         BOOKS / "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
         [
-            "Matter generations and baryons as phason modes",
+            "matter generations and baryons as phason modes",
             "BaryonPhasonTriple",
             "baryon_phason_symmetric_sector_dim_eq_ten",
         ],
@@ -73,9 +73,9 @@ CHECKS: list[tuple[str, Path, list[str]]] = [
         "Book 05 verification gate",
         BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
         [
-            "QUASI-002 phason/baryon verification gate",
-            "vp_quasi002_phason_strain_generations_baryon.py",
-            "nucleon-line extrapolation remains forbidden",
+            "baryon S3 carrier",
+            "antisymmetric nucleon-line sectors are annihilated",
+            "nucleon_line_cannot_promote_full_baryon_multiplet",
         ],
     ),
     (
@@ -83,7 +83,7 @@ CHECKS: list[tuple[str, Path, list[str]]] = [
         BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
         [
             "phason coordinate reuse does not identify archive dark strain with baryon S3 transfer",
-            "D0.Matter.PhasonStrainGenerations",
+            "baryon phason-strain-generations module",
         ],
     ),
     (

@@ -104,9 +104,13 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         "Book 05 verification row",
         BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
         [
-            "trace-heat-capacity gravity",
-            "even Lucas heat moments",
-            "black-hole capacity saturation",
+            # Pinned to the present 05.26 split sentence (line ~1062): sentence-case
+            # heading form + the real core/bridge anchors it now names.
+            "Trace-heat-capacity gravity",
+            "Lucas traces",
+            "heat moments",
+            "A/4 capacity",
+            "macro gravity witness",
         ],
     ),
     (
@@ -114,8 +118,8 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         BOOKS / "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
         [
             "Tr(T^n)=(-1)^n L_n",
-            "heat moments of T^2 are even Lucas traces",
-            "fixed detector reads T^n layers",
+            "heat moments of `T^2` are even Lucas traces",
+            "fixed detector reads `T^n` layers",
         ],
     ),
     (
@@ -133,7 +137,7 @@ TEXT_CHECKS: list[tuple[str, Path, list[str]]] = [
         BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
         [
             "Dark/archive branch remains the Galois completion",
-            "black-hole-like regions are finite boundary-capacity saturation events",
+            "black-hole-like regions = finite boundary-capacity saturation events",
         ],
     ),
     (

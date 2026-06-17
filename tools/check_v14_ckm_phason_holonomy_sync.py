@@ -56,7 +56,9 @@ CHECKS: list[tuple[str, Path, list[str]]] = [
         DOCS / "CLAIM_TO_LEAN_MAP.csv",
         [
             "D0-QUASI009-CKM-PHASON-HOLONOMY-001",
-            "D0.Matter.CKMPhasonHolonomy",
+            # lean_module column for QUASI009 was intentionally blanked
+            # (Lean = EXTERNAL-GAP, placeholder theorem removed), so the
+            # D0.Matter.CKMPhasonHolonomy pin no longer belongs in this row.
             "vp_ckm_phason_holonomy_k0.py",
         ],
     ),

@@ -68,7 +68,7 @@ CHECKS: list[tuple[str, Path, list[str], list[str]]] = [
     (
         "Book 07 full spin-2 chain",
         BOOKS / "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
-        ["PiTT4(h)", "WTT4", "vp_finite_spin2_wave_operator.py"],
+        ["PiTT4(h)", "WTT4", "vp_finite_spin2_wave_operator_concrete.py"],
         [],
     ),
 ]
