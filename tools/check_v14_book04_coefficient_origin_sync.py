@@ -61,7 +61,7 @@ checks: list[tuple[Path, list[str]]] = [
         "no longer has an independent coefficient knob",
     ]),
     (BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md", [
-        "## 05.13 Current v14 priority gates",
+        "## 05.13 Current inherited priority gates",
         "D0.Matter.Book04CoefficientOrigin",
         "chargedLeptonCoefficientTableForced",
         "chargedLeptonCoefficientsNoFreeRetuning",

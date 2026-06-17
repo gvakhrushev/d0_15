@@ -63,7 +63,7 @@ checks: list[tuple[Path, list[str]]] = [
         "finite_lorentz_tick_rescaling_preserves_closure",
     ]),
     (BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md", [
-        "## 05.13 Current v14 priority gates",
+        "## 05.13 Current inherited priority gates",
         "D0.Bridge.TickGaugeLorentz",
         "may not introduce a second D0 propagation primitive",
     ]),

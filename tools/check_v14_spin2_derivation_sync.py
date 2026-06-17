@@ -120,7 +120,7 @@ checks: list[tuple[str, Path, list[str], list[str]]] = [
         "Book 05 integrated contract spin-2 derivation",
         BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
         [
-            "## 05.13 Current v14 priority gates",
+            "## 05.13 Current inherited priority gates",
             "D0.Geometry.FiniteWeakFieldQuotient",
             "finite_weak_field_quotient_yields_tt_representative",
             "finite_conserved_stress_spin2_coupling_closed",

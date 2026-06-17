@@ -28,7 +28,7 @@ else:
         "## 05.10 Certificate tiers",
         "## 05.11 External-data and scheme discipline",
         "## 05.12 Theory-improvement gate",
-        "## 05.13 Current v14 priority gates",
+        "## 05.13 Current inherited priority gates",
         "## 05.14 Sector verification protocols",
         "## 05.15 Falsification matrix",
         "## 05.16 Reproducibility requirements",

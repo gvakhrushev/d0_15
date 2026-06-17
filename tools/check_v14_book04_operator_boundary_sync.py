@@ -68,7 +68,7 @@ checks: list[tuple[Path, list[str]]] = [
         "missing_scalar_projector_cannot_promote_higgs_yukawa_core",
     ]),
     (BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md", [
-        "## 05.13 Current v14 priority gates",
+        "## 05.13 Current inherited priority gates",
         "D0.Matter.Book04OperatorBoundary",
         "nucleon_line_cannot_promote_full_baryon_multiplet",
         "lower_hodge_400_cannot_promote_meson_masses",

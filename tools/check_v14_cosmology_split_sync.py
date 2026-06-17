@@ -49,7 +49,7 @@ checks: list[tuple[Path, list[str]]] = [
         "survey likelihood cannot promote to core cosmology closure",
     ]),
     (BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md", [
-        "## 05.13 Current v14 priority gates",
+        "## 05.13 Current inherited priority gates",
         "D0.Cosmology.SurveyReproducibilitySplit",
         "no BAO/DESI/SDE likelihood is allowed to promote to core cosmology closure",
     ]),

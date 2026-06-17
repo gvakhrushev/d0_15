@@ -51,7 +51,7 @@ checks: list[tuple[Path, list[str]]] = [
         "not a fitted Standard-Model import",
     ]),
     (BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md", [
-        "## 05.13 Current v14 priority gates",
+        "## 05.13 Current inherited priority gates",
         "D0.Gauge.SMGaugeDecomposition",
         "sm_eft_bridge_requires_frozen_decomposition",
     ]),

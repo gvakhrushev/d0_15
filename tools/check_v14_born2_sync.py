@@ -75,7 +75,7 @@ checks: list[tuple[str, Path, list[str], list[str]]] = [
         "Book 05 integrated contract records Born finite-effect owners",
         BOOKS / "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
         [
-            "## 05.13 Current v14 priority gates",
+            "## 05.13 Current inherited priority gates",
             "D0.Core.BornFiniteEffects",
             "finite_effect_born_readout_unique",
             "finite_tensor_born_readout_unique",
