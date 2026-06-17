@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Publication claim-register guardrail for D0 v16."""
+"""Publication claim-register guardrail for D0."""
 from pathlib import Path
 import csv, json, sys
 
 ROOT = Path(__file__).resolve().parents[1]
 PUB = ROOT / '00_PUBLICATION'
-STATUS = ROOT / '03_THEORY_MAP' / 'theory_status_map.csv'
+STATUS = ROOT / '00_PUBLICATION' / 'D0_CLAIMS_REGISTER.csv'  # publication register owns the bridge/negative rows
 
 REQUIRED = [
     'D0_CLAIMS_REGISTER.md',
@@ -34,7 +34,7 @@ def main():
 
     dusty = [r for r in rows if r['claim_id'] == 'D0-DUSTY-TABLETOP-BRIDGE-001']
     ligo = [r for r in rows if r['claim_id'] == 'D0-LIGO-DISCOVERY-NEGATIVE-001']
-    assert dusty and ligo, 'required v16 bridge/negative rows missing'
+    assert dusty and ligo, 'required publication bridge/negative rows missing'
     assert 'LAB-BRIDGE' in dusty[0]['release_status'], dusty[0]['release_status']
     assert boolish(dusty[0]['uses_bridge_assumptions'])
     assert 'NEGATIVE' in ligo[0]['release_status'], ligo[0]['release_status']
