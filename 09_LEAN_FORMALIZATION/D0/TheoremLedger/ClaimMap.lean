@@ -267,6 +267,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "Dynamics.internal_feedback_forced_by_split;Dynamics.internal_feedback_resolvent_series;Cosmology.feedback_determinant_return_cycles;Cosmology.feedback_variation_universal_source;Cosmology.feedback_pressure_trace_log", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CVFT-NOGO-001", moduleName := "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FiniteFeedbackEquationOfState;D0.Matter.TerminalFeedbackModes;D0.Cosmology.SDEFeedbackReduction",
       theoremName := "Dynamics.external_mirror_model_forbidden;Cosmology.ideal_gas_core_postulate_forbidden;Matter.matter_as_arbitrary_eigenvalue_forbidden;Cosmology.desi_root_refit_repair_forbidden;Cosmology.desi_window_refit_repair_forbidden;Cosmology.arbitrary_kernel_repair_not_theorem_grade", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-CVFT-F1", moduleName := "D0.Spectral.DeltaAlphaResidueBlocked",
+      theoremName := "delta_alpha_residue_route_blocked", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-CVFT-F3B", moduleName := "D0.Matter.BaryonSpinFlavourRanks",
       theoremName := "baryon_spin_flavour_ranks", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-IM-001", moduleName := "D0.IM.SelfSubstrateTrace",

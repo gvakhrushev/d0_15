@@ -13,9 +13,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 16
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 8
+- `NO-GO`: 9
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 13
+- `PROOF-TARGET`: 12
 
 ## Type counts
 
@@ -23,16 +23,16 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `certificate`: 66
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 13
-- `no-go`: 16
+- `frontier`: 12
+- `no-go`: 17
 
 ## Domain counts
 
 - `cosmology`: 24
 - `empirical_passport`: 25
 - `external_background`: 1
-- `formal_core`: 173
-- `frontier`: 13
+- `formal_core`: 174
+- `frontier`: 12
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -2859,6 +2859,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Deprecated or historical row; not a live promotion path.
 - notes: [Iter15 trace-leg split — CLOSED] The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is proved (CORE) as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, with the phi^-5 seam = xi5 (D0-XI5). This separate trace-target row is therefore redundant and is DEPRECATED (superseded, not abandoned): the trace leg is closed at D0-ALPHA-ZETA-RESIDUE-001. The remaining open EDGE leg is the unitary-dilation / torus-ramification Puiseux target D0-EDGE-002.
 
+### D0-CVFT-F1
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02/04/08`
+- module: `D0.Spectral.DeltaAlphaResidueBlocked`
+- theorem: `delta_alpha_residue_route_blocked`
+- cert: `vp_feshbach_residue_amplitudes.py`
+- assumptions: `ASSUMP-LINDEMANN-LNPHI`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed. [Iter17 ТЗ-2 Phase A — SHARPENED, not closed] The Feshbach-Schur residue attack (cert vp_feshbach_residue_amplitudes.py) DERIVES mu1=1/rank as the uniform depth-0 floor return (F_N=p^2 P_N over 3 active modes) and OWNS the pi0 factor of mu2 (pi0=(6/5)phi^2 derived in BOOK_04 SS04.6.pi.4). The remaining gap is narrowed from 'derive mu1,mu2' to the single capacity factor 2^11=2^V11: it is NOT a block-trace count (2048 not in {rank3,nullity30,33,359,8,...}) and the naive edge-pushforward pairs active<->archive with multiplicity 2 (na=2, nb=357, 2+357=359=|E|), not 2^11. So the active<->archive PAIRING multiplicity is the precise open gap. CVFT-F1 stays PROOF-TARGET; the form is forced, the 2^11 amplitude is NOT resolvent-derived; Delta_alpha unchanged. [Iter18 SHARPENED again, still not closed] 2^11 now has a NAMED CANDIDATE: 2^11=dim Cl(R^11)=dim Lambda*(R^11)=2^|V11| the full exterior/fermionic-Fock dimension over the 11-zone V11 (cert vp_cvft_clifford_fock_capacity.py), distinct from the irreducible Spin(11) spinor 2^5=32 and from the naive 2-edge pairing (na=2). The residue-extraction (s->pole residue traces over the full 2^11 Fock vs the naive 2-edge pairing) is owned by the Dixmier trace / noncommutative integral (owner edge D0-DIXMIER-RESIDUE-OWNER-001 / ASSUMP-DIXMIER-TRACE). Still PROOF-TARGET; gap re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11) vs 2-edge pairing'; NOT promoted. [Iter21 BLOCKED / closed-negative] The residue route to Delta_alpha is now BLOCKED: a phi-graded zeta residue carries ln phi (Res prop 1/ln phi, transcendental) whereas alpha_alg in Q(phi) is algebraic, so the residue cannot equal the algebraic anomaly. The WORKING route to the 9-digit alpha is the closure holonomy D0-ALPHA-HOLONOMY-002. [Iter21 CLOSED-NEGATIVE, Lean] now formalized: D0.Spectral.DeltaAlphaResidueBlocked (delta_alpha_residue_route_blocked) proves 1/ln phi is transcendental (inverse-transcendence of the cited ln phi) hence not equal to any a+b*phi in Q(phi), so no phi-graded residue equals the algebraic Delta_alpha; proved relative to the single cited classical fact ASSUMP-LINDEMANN-LNPHI (transcendence of ln phi, Lindemann-Weierstrass; Mathlib 4.30 formalizes only the analytic part). D0 proves everything else (phi algebraic via X^2-X-1, Q(phi) algebraic via integral closure, inverse-transcendence) from phi^2=phi+1. The residue program is therefore a closed-negative NO-GO for Delta_alpha; alpha comes from the closure holonomy D0-ALPHA-HOLONOMY-002.
+
 ### D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001
 
 - type: `no-go`
@@ -2965,19 +2978,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: Sector projection package points to CVFT-F1 through CVFT-F8 and may not close matter gravity cosmology horizon gauge or empirical passport rows automatically.
-
-### D0-CVFT-F1
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_02/04/08`
-- module: ``
-- theorem: `none`
-- cert: `vp_feshbach_residue_amplitudes.py`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed. [Iter17 ТЗ-2 Phase A — SHARPENED, not closed] The Feshbach-Schur residue attack (cert vp_feshbach_residue_amplitudes.py) DERIVES mu1=1/rank as the uniform depth-0 floor return (F_N=p^2 P_N over 3 active modes) and OWNS the pi0 factor of mu2 (pi0=(6/5)phi^2 derived in BOOK_04 SS04.6.pi.4). The remaining gap is narrowed from 'derive mu1,mu2' to the single capacity factor 2^11=2^V11: it is NOT a block-trace count (2048 not in {rank3,nullity30,33,359,8,...}) and the naive edge-pushforward pairs active<->archive with multiplicity 2 (na=2, nb=357, 2+357=359=|E|), not 2^11. So the active<->archive PAIRING multiplicity is the precise open gap. CVFT-F1 stays PROOF-TARGET; the form is forced, the 2^11 amplitude is NOT resolvent-derived; Delta_alpha unchanged. [Iter18 SHARPENED again, still not closed] 2^11 now has a NAMED CANDIDATE: 2^11=dim Cl(R^11)=dim Lambda*(R^11)=2^|V11| the full exterior/fermionic-Fock dimension over the 11-zone V11 (cert vp_cvft_clifford_fock_capacity.py), distinct from the irreducible Spin(11) spinor 2^5=32 and from the naive 2-edge pairing (na=2). The residue-extraction (s->pole residue traces over the full 2^11 Fock vs the naive 2-edge pairing) is owned by the Dixmier trace / noncommutative integral (owner edge D0-DIXMIER-RESIDUE-OWNER-001 / ASSUMP-DIXMIER-TRACE). Still PROOF-TARGET; gap re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11) vs 2-edge pairing'; NOT promoted. [Iter21 BLOCKED / closed-negative] The residue route to Delta_alpha is now BLOCKED: a phi-graded zeta residue carries ln phi (Res prop 1/ln phi, transcendental) whereas alpha_alg in Q(phi) is algebraic, so the residue cannot equal the algebraic anomaly. The WORKING route to the 9-digit alpha is the closure holonomy D0-ALPHA-HOLONOMY-002; the transcendence Lean-formalization (D0.Spectral.DeltaAlphaResidueBlocked) is a named target.
 
 ### D0-CVFT-F2
 

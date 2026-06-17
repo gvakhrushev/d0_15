@@ -326,6 +326,7 @@ import D0.Response
 import D0.Spectral.CriticalAxisM1
 import D0.Spectral.DeltaAlphaExact
 import D0.Spectral.DeltaAlphaMoment
+import D0.Spectral.DeltaAlphaResidueBlocked
 import D0.Spectral.SeamHolonomy
 import D0.Spectral.ZetaResidueAlpha
 import D0.Spectral.ZoneMatrixSpectrum

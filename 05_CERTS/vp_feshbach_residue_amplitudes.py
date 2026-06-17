@@ -84,6 +84,8 @@ def main() -> int:
     # ---- RESIDUE ROUTE BLOCKED (closure-holonomy supersedes for Delta-alpha; Iter-21) ----
     print("BLOCKED_RESIDUE_ROUTE_TO_DELTA_ALPHA  the residue-amplitude route to the alpha correction carries ln(phi) "
           "(transcendental) and cannot land in alpha_alg in Q(phi) (algebraic) -- closed-negative for Delta-alpha")
+    print("MACHINE_CHECKED_BLOCK  Lean: D0.Spectral.delta_alpha_residue_route_blocked proves 1/ln(phi) is "
+          "transcendental (inverse-transcendence) hence not any a+b*phi in Q(phi); relative to ASSUMP-LINDEMANN-LNPHI")
     print("WORKING_ROUTE  Delta-alpha is closed by closure holonomy: 05_CERTS/vp_seam_holonomy_alpha.py "
           "(D0-ALPHA-HOLONOMY-002); mu1=1/rank (derived) and the assembled mu2 form are kept unchanged")
     print("PASS_FESHBACH_RESIDUE_AMPLITUDES")

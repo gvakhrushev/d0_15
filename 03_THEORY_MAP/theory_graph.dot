@@ -132,7 +132,7 @@ digraph D0Theory {
   "D0-CVFT-001A" [label="D0-CVFT-001A\\nCORE-FORMALIZED\\ncosmology", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CVFT-001B" [label="D0-CVFT-001B\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-CVFT-NOGO-001" [label="D0-CVFT-NOGO-001\\nNO_GO_PROVED\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
-  "D0-CVFT-F1" [label="D0-CVFT-F1\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-CVFT-F1" [label="D0-CVFT-F1\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-CVFT-F2" [label="D0-CVFT-F2\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-CVFT-F3" [label="D0-CVFT-F3\\nCERT-CLOSED\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CVFT-F3B" [label="D0-CVFT-F3B\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
@@ -965,12 +965,14 @@ digraph D0Theory {
   "D0-CVFT-NOGO-001" -> "cert:vp_closed_vacuum_feedback_full_wave.py" [label="cert"];
   "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-CVFT-NOGO-001" -> "domain:cosmology" [label="domain"];
-  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-CVFT-F1" -> "module:" [label="module"];
+  "module:D0.Spectral.DeltaAlphaResidueBlocked" [label="D0.Spectral.DeltaAlphaResidueBlocked", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CVFT-F1" -> "module:D0.Spectral.DeltaAlphaResidueBlocked" [label="module"];
   "cert:vp_feshbach_residue_amplitudes.py" [label="vp_feshbach_residue_amplitudes.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-CVFT-F1" -> "cert:vp_feshbach_residue_amplitudes.py" [label="cert"];
-  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-CVFT-F1" -> "domain:frontier" [label="domain"];
+  "assumption:ASSUMP-LINDEMANN-LNPHI" [label="ASSUMP-LINDEMANN-LNPHI", shape=diamond, fillcolor="#f0e8ff", fontcolor="#111111"];
+  "D0-CVFT-F1" -> "assumption:ASSUMP-LINDEMANN-LNPHI" [label="assumption"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CVFT-F1" -> "domain:formal_core" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-CVFT-F2" -> "module:" [label="module"];
   "cert:vp_horizon_emission_conjugate_feedback.py" [label="vp_horizon_emission_conjugate_feedback.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
