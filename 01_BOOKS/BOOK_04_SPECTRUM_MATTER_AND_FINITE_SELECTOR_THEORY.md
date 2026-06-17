@@ -845,7 +845,7 @@ where `δ₀=(√5−2)/2=1/(2φ³)` is the foundational quantum of distinguisha
 \pi_0=\frac{6}{5}\varphi^2.
 ```
 
-Numerically `φ²≈2.6180339887 ⇒ π_0≈3.1416407865`, departing from classical `π` already at the 4th decimal (3.1415… vs 3.1416…).  This is the same constant BOOK_02 §02 and BOOK_07 §07.11 already cite.
+Numerically `φ²≈2.6180339887 ⇒ π_0≈3.1416407865`, departing from classical `π` already at the 4th decimal (3.1415… vs 3.1416…).  This is the same constant BOOK_02 §02 and BOOK_07 §07.11 already cite. **[machine-checked]** the forcing — closure balance `δ₀=3/(5π₀φ)` with owned `δ₀=1/(2φ³)` ⟹ `π₀=(6/5)φ²` — is proved in Lean as `D0.Geometry.pi0_forced_by_closure_balance` (cert `vp_pi0_discrete_angle.py`).
 
 **[DEF 04.6.π.5] Mass quantum `m_0:=2π_0` and time quantum `t_0:=1/m_0`.** One full holonomy of the memory cycle is two half-turns, so the mass quantum (the cost of one closed internal cycle) is `m_0:=2π_0=(12/5)φ²` and the conjugate time quantum is `t_0:=1/m_0=(5/12)φ⁻²`, with `m_0·t_0=1` (exact in `Q(φ)`). Both identities are immediate consequences of the derived `π_0` (THE 04.6.π.4), with `cert vp_mass_chain_alpha.py` and claim `D0-MASS-CHAIN-001`. The rest-mass reading `m_rest=m_0·W` (W = number of memory windings) needs the per-state winding `W` and is **not** restored here — it is a named gap (OWNER-DECISION; the winding values are sought in the GOLDEN coverage ledger before any re-derivation).
 

@@ -42,5 +42,6 @@ discriminator (`2π(2−φ)=2.39996 ≠ 12/5`), not a gross-α one — not faked
 - The residue route to Δα (Dixmier/`D0-CVFT-F1`) is **BLOCKED** (transcendental `∝1/lnφ` vs `α_alg ∈ ℚ(φ)`);
   the closure holonomy is the working route.
 - 2nd-order holonomy was checked and does **not** close the residual (it worsens it).
-- The cone-angle `2π₀` micro-derivation and the `δ₀=(6/5)` chain lean on corpus THE (`§04.6.π.4`) — named
-  proof-targets, not claimed here.
+- The cone-angle `2π₀` micro-derivation is now **machine-checked**: `π₀=(6/5)φ²` is *forced* by the δ₀-closure
+  balance (`D0.Geometry.pi0_forced_by_closure_balance`; cert `vp_pi0_discrete_angle.py`). Only the deeper origin
+  of the closure ratio leans on corpus THE (`§04.6.π.4`) — a narrower named proof-target.

@@ -34,5 +34,6 @@ forced to degree-2 → **2.7σ** off NuFIT. Correct degrees: all three < 1σ.
   `D0.Matter.PMNSSeamTopology`: θ₁₃>0, θ₂₃>1/2, θ₁₂<1/3); the **numeric values** are CHK (this passport).
 - `δ_CP ≈ π₀` is **HYP** (a prediction), not derived.
 - `θ₁₃` carries the shared seam `ξ₅ = φ⁻⁵` (depth-5 geometry common with α — `D0-XI5-CROSS-SECTOR-001`, COR).
-- The cone-angle `2π₀` and the `δ₀=(6/5)` chain micro-derivations lean on corpus THE (`§04.6.π.4`) — a
-  named **MECH-LIMIT** residual, not closed here.
+- The cone-angle `2π₀` micro-derivation is now **machine-checked** (`π₀=(6/5)φ²` *forced* by the δ₀-closure
+  balance, `D0.Geometry.pi0_forced_by_closure_balance`); only the deeper closure-ratio origin (`§04.6.π.4`)
+  remains a narrower named residual.

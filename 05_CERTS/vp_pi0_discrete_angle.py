@@ -66,6 +66,18 @@ def main() -> int:
     assert theta == (F(12, 5), F(0)), f"2·π₀·(2−φ) must equal the closed rational 12/5: {theta}"
     print(f"PASS_SEAM_ANGLE_EXACT  2·π₀·(2−φ) = 12/5  (exact in ℚ(φ): {theta})")
 
+    # ---- THE 04.6.π.4 closure-balance FORCING (machine-checked: D0.Geometry.pi0_forced_by_closure_balance) ----
+    # δ₀-closure δ₀ = 3/(5·π₀·φ) + owned δ₀ = 1/(2φ³)  ⟺  5·π₀·φ = 6·φ³  (cross-multiplied, exact ℚ(φ))
+    phi3 = mul(phi2, PHIv)                                    # φ³ = 1 + 2φ
+    assert phi3 == (F(1), F(2)), f"φ³ must be 1 + 2φ: {phi3}"
+    lhs = smul(F(5), mul(pi0, PHIv))                          # 5·π₀·φ
+    rhs = smul(F(6), phi3)                                    # 6·φ³  (= 3/δ₀, since δ₀ = 1/(2φ³))
+    assert lhs == rhs, f"closure balance must force 5·π₀·φ = 6·φ³: {lhs} vs {rhs}"
+    print(f"PASS_PI0_FORCED_BY_CLOSURE_BALANCE  5·π₀·φ = 6·φ³ exact ⟹ π₀=(6/5)φ² forced by the δ₀-closure  ({lhs})")
+    pi0_bad = smul(F(5, 4), phi2)                             # a wrong cycle-closure ratio (ρ ≠ 3/5)
+    assert smul(F(5), mul(pi0_bad, PHIv)) != rhs, "control: a wrong π₀ must break the closure balance"
+    print("FAIL_WRONG_PI0_BREAKS_CLOSURE  π₀≠(6/5)φ² fails 5·π₀·φ=6·φ³ (the closure ratio 3/5 is forced)")
+
     # ---- NEGATIVE CONTROL: π (transcendental) does NOT give the closed rational 12/5 -------
     theta_pi = 2.0 * math.pi * (2.0 - PHI)
     assert abs(theta_pi - 2.4) > 1e-5, "control: with π the angle must NOT be exactly 12/5"
@@ -74,8 +86,8 @@ def main() -> int:
     shift = abs(math.log(PHI) * PHI ** -17 * (math.sin(theta_pi) - math.sin(2.4)))
     print(f"HONEST_PI0_NEAR_PI  numeric α-shift from π-vs-π₀ is only {shift:.2e} (sub-measurement); "
           "the discriminator is the EXACT rational 12/5, not a gross miss")
-    print("HONEST_PI0_VALUE_DERIVED_ELSEWHERE  π₀=(6/5)φ² is owned by BOOK_04 §04.6.π.4 (δ₀-closure); "
-          "this cert adds only the exact seam-angle identity")
+    print("HONEST_PI0_VALUE_FORCED  π₀=(6/5)φ² is FORCED by the δ₀-closure balance (BOOK_04 §04.6.π.4), now "
+          "machine-checked (D0.Geometry.pi0_forced_by_closure_balance); this cert also gives the exact 12/5 angle")
 
     print("PASS_PI0_DISCRETE_ANGLE")
     return 0
