@@ -50,5 +50,5 @@
   "b07-49": "forcing: GOLDEN THE 77.1",
   "b07-50": "forcing: GOLDEN COR 77.2; arrow-of-time-from-M1",
   "b07-51": "external anchor / bridge: Jampolski-Rezzolla PRD 113 L121502 (2026) arXiv:2509.15302 (horizonless gravastar, dS-core arrested OS collapse). cert vp_gravastar_os_arrest.py; claim D0-GRAVASTAR-FORMATION-BRIDGE-001 (BRIDGE, ASSUMP-GRAVASTAR-GR-EXTERNAL). GR junction physics owned externally; D0 owns the finite seam reading.",
-  "b07-52": "LEM with named gap: cert vp_gravastar_compactness.py derives C_max=3/8 from -2C(8C-3)=0 (exact). Named gap ASSUMP-RANK3-CAUSAL-CONE (rank-3=causal-cone postulated, not M1-forced); claim D0-COMPACTNESS-LIMIT-001. T1.4 attempt via Connes distance (03.1) open."
+  "b07-52": "LEM: cert vp_gravastar_compactness.py derives C_max=3/8 from -2C(8C-3)=0 (exact). The former rank-3=causal-cone named gap is closed/re-scoped (Iter-21): the (3,1)+Pisot signature arithmetic is machine-checked CORE (claim D0-RANK3-CAUSAL-CONE-FORCING-001, Lean D0.Synthesis.RankCausalConeForcing), and the rank<->metric-cone identification is a named BRIDGE (CORE_BRIDGE_SPLIT), not over-claimed as M1-forced. Residual cone-speed/smooth metric owned by ASSUMP-CONNES-RECONSTRUCTION; claim D0-COMPACTNESS-LIMIT-001."
 }

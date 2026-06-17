@@ -420,8 +420,8 @@ Mapped Book 00 claims are:
 | `D0-FOUND-001` | CORE-FOUNDATION | No-monopoly verification algebra | (see canonical registry); minimal Popper/dyad certs |
 | `D0-FOUND-002` | CORE-FOUNDATION | Minimal addressable record split | (see canonical registry) |
 | `D0-FOUND-003` | CORE-FOUNDATION | Minimal continuum-measurement skeleton | (see canonical registry) |
-| `D0-SCENE-001` | CORE-SUPPORT | Omega8 detector cycle | d0_core_certificates.py; (see canonical registry) |
-| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | d0_graph.py; d0_core_certificates.py; (see canonical registry) |
+| `D0-SCENE-001` | CORE-SUPPORT | Omega8 detector cycle | (see canonical registry) |
+| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | (see canonical registry) |
 | `D0-META-001` | DIAGNOSTIC-ONLY | Active corpus integrity and reader-orientation checks | vp_book*; vp_*refactor*; vp_full_book_audit* |
 | `D0-PROOF-PROTOCOL` | METHODOLOGICAL-LAW | Only Reduction-to-Contradiction-with-Realizability admitted; "obviousness" banned (GOLDEN §0.2) | n/a (protocol-level; gates every THE) |
 | `D0-FORCING-SCHEMA` | CORE-FORCING-SCHEMA | DEF-0.2.2 5-step forcing via exogenous theta; THE-0.4.5 minimality/canonicity template (GOLDEN DEF 0.2.2 / THE 0.4.5) | n/a (schema instantiated per forced result) |

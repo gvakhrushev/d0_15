@@ -640,7 +640,7 @@ section with zero dimensionless freedom; the one anchor is the gauge that sectio
 
 ## 03.17 Integrated beta/scattering comparison protocol as finite transition discipline
 
-The old beta-operator and scattering-comparison protocol notes clarify that collider or scattering formulas are downstream finite-transition comparison protocols, not raw event-count or continuum-field oracles.
+The beta-operator and scattering-comparison protocol notes clarify that collider or scattering formulas are downstream finite-transition comparison protocols, not raw event-count or continuum-field oracles.
 
 A scattering comparison must declare
 

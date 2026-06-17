@@ -1008,8 +1008,8 @@ Particles are stable re-detection classes over finite detector records. They are
 |---|---:|---|---|---|
 | `D0-FOUND-001` | CORE-FOUNDATION | No-monopoly verification algebra | Do not derive phi from generic unitary contact, Helstrom scans, or entropy linearity alone. | (see canonical registry); minimal Popper/dyad certs |
 | `D0-FOUND-002` | CORE-FOUNDATION | Minimal addressable record split | Do not use delta0=phi^-3; active convention is 1/(2 phi^3). | (see canonical registry) |
-| `D0-SCENE-001` | CORE-SUPPORT | eight oriented terminal-role states Ω8 detector cycle | Do not treat phi alone as physical geometry before eight oriented terminal-role states Ω8 closure. | d0_core_certificates.py; (see canonical registry) |
-| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | Do not read J_scene as fitted polynomial for later constants. | d0_graph.py; d0_core_certificates.py; (see canonical registry) |
+| `D0-SCENE-001` | CORE-SUPPORT | eight oriented terminal-role states Ω8 detector cycle | Do not treat phi alone as physical geometry before eight oriented terminal-role states Ω8 closure. | (see canonical registry) |
+| `D0-SCENE-002` | CORE-ACTION | J_scene selects K(9,11,13) | Do not read J_scene as fitted polynomial for later constants. | (see canonical registry) |
 | `D0-METRO-001` | CORE-FOUNDATION | Single causal line/tick invariant | Do not count c as a second sector anchor. | vp_c_time_length_single_section_closure.py |
 | `D0-METRO-002` | SINGLE-SECTION-OUTPUT | Lambda_act single action section | No proton, W/Z, Planck, G_N, H0, or dark anchor as second scale. | vp_c_time_length_single_section_closure.py |
 
@@ -1712,7 +1712,7 @@ The non-resonant unfolding above is not a separate construction laid over the ti
 layer — it *is* the time layer read symbolically. The eigen-directions of the toral
 generator `T=[[0,1],[1,-1]]` have golden slopes `(\varphi^{-1},-\varphi)`, and the
 Fibonacci substitution word `a\to ab,\ b\to a` agrees letter-for-letter with the
-Sturmian word of slope `\varphi^{-2}` (checked to 40 symbols). Therefore the
+Sturmian word of slope `\varphi^{-2}` (verified exactly to 4000 symbols by an executable certificate using exact integer floors; see §01.19a.2). Therefore the
 phase unfolding of this chapter is the symbolic dynamics of the golden foliation of
 the time torus: **carrier (quasicrystal) and time (automorphism) are one object**,
 not two layers that happen to share a constant.
