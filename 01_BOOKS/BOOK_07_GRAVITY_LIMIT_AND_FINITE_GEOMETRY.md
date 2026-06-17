@@ -2033,25 +2033,6 @@ So `rank-3 = the three spatial/causal directions of the cone` is forced, and `C_
 
 A complementary owner on the *thermodynamic* side is **Jacobson's derivation** (T. Jacobson, *Thermodynamics of spacetime: the Einstein equation of state*, Phys. Rev. Lett. **75**, 1260, 1995): the Einstein equation follows from the Clausius relation `δQ = T dS` together with the horizon entropy `S = A/4` imposed on every local Rindler horizon — i.e. gravity is an *equation of state*, emergent from the thermodynamics of information crossing causal horizons. In the D0 lens this is exactly "gravity emergent from the thermodynamics of recording": the same `A/4` capacity that bounds the archive (Bekenstein) yields the field equation by Jacobson's argument. This strengthens the Connes "metric = spectrum" owner with a second, thermodynamic external owner; both are cited, neither is re-derived inside D0, and neither closes the rank-3 = cone gap.
 
-### 07.51.4 Is `3/8` a packing limit? (probe — no: a `D=4` coincidence) [HYP]
-
-A tempting cross-bridge reads `C_max = 3/8` as the same "packing limit" as the Choptuik
-critical-collapse exponent `\gamma`. It is recorded here as a **probe**, not a bridge, because
-the limits filter (BOOK_00 §00.9; the same discipline applied to `710/113`) refuses it. The
-numbers: `\gamma_{\text{Choptuik}}(D{=}4)=0.373961` (Ecker–Ecker–Grumiller, *Phys. Rev. Lett.*
-**136**, 191401, 2026; arXiv:2602.10185) matches `3/8=0.375` to **0.28%** — a genuine near-hit.
-But `\gamma(D)` is monotone-increasing and **crosses** `3/8` between `D=4` and `D=5`
-(`\gamma(4)<3/8<\gamma(5)=0.41322`, `10.2\%` off): `3/8` is a *crossing point near* `D=4`, not
-`\lim_{D\to\infty}\gamma`. The critical exponent `\gamma` and the geometric ceiling
-`C_max=3/8=\operatorname{rank}/|\Omega_8|` are distinct quantities, coincident only at `D=4`;
-Bekenstein `S=A/4` supports the weaker "capacity is finite", not this identity. **Honest status
-HYP** (claim `D0-PACKING-LIMIT-001`, cert `vp_packing_limit_probe.py`). **Named gap:** derive a
-common mechanism `F(D)` projecting to both `\gamma(D{=}4)` and `C_max` (e.g. two slices of one
-archive-capacity function), or accept the `D=4` coincidence and reject the unified-limit
-reading. A coincidence at one point is not an identity — the probe records the near-hit without
-promoting it.
-
-
 ## Apparatus — sources & open obligations
 
 _Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._

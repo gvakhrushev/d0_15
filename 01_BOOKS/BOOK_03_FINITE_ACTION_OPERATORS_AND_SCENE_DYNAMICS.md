@@ -778,7 +778,7 @@ hence
 \Lambda_{act}=h/\tau_0=38m_ec^2.
 ```
 
-**Closure.**  The linear/operator field is explicit: the boundary residual comes from the finite boundary Euler block of the global action, not from a post-hoc scalar correction.  The `q_mass` bridge remains a quotient dictionary only after the stationary residual has been fixed.
+**Closure.**  The linear/operator field is explicit: the boundary residual comes from the finite boundary Euler block of the global action, not from a post-hoc scalar correction.
 
 This closure is verified by the finite certificate.
 

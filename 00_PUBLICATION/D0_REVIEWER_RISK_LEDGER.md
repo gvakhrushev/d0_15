@@ -1,4 +1,4 @@
-# D0 v16 Reviewer Risk Ledger
+# D0 Reviewer Risk Ledger
 
 Status: FINAL-PUBLICATION-GUARDRAIL / RISK-LEDGER
 
@@ -27,4 +27,4 @@ No fixed phi/alpha empirical law is claimed from V3--V12.
 
 ## Strongest defensible publication stance
 
-D0 v16 is a finite operator framework with certified internal components and a disciplined external-test program. Its credibility comes from the separation of proofs, predictions, bridges, and negative controls.
+D0 is a finite operator framework with certified internal components and a disciplined external-test program. Its credibility comes from the separation of proofs, predictions, bridges, and negative controls.

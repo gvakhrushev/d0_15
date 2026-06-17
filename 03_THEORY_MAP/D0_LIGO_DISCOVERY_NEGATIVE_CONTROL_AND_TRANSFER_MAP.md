@@ -4,7 +4,7 @@ Status: `DISCOVERY-NEGATIVE-CONTROL / TRANSFER-MAP-TARGET`
 
 ## Scope
 
-This document freezes the status of the GWOSC/LIGO discovery scans V3--V12 discussed during the D0 v15/v16 exploration.  It is a negative-control and transfer-map note, not an empirical passport and not a core theorem.
+This document freezes the status of the GWOSC/LIGO discovery scans V3--V12 discussed during the D0/v16 exploration.  It is a negative-control and transfer-map note, not an empirical passport and not a core theorem.
 
 ## Frozen discovery results
 

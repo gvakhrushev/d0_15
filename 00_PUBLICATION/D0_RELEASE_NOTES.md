@@ -1,8 +1,8 @@
-# D0 v16 Release Notes
+# D0 Release Notes
 
 Status: RELEASE-CANDIDATE-NOTES
 
-D0 v16 is a publication-candidate package centered on finite-readout active/archive algebra. It contains proofread books, integrated v15/v16 operator layers, guarded dusty-plasma laboratory bridge material, LIGO/GWOSC negative controls, and publication claim guardrails.
+D0 is a publication-candidate package centered on finite-readout active/archive algebra. It contains proofread books, integrated v15/v16 operator layers, guarded dusty-plasma laboratory bridge material, LIGO/GWOSC negative controls, and publication claim guardrails.
 
 ## New in this release-candidate pass
 
@@ -16,7 +16,7 @@ D0 v16 is a publication-candidate package centered on finite-readout active/arch
 
 ## Release stance
 
-D0 v16 should be presented as:
+D0 should be presented as:
 
 ```text
 finite-readout operator framework + certified internal constructions + guarded external bridge program

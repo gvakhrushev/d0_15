@@ -1,4 +1,4 @@
-# D0 v15 baryon spin-flavour 40/56 transfer
+# D0 baryon spin-flavour 40/56 transfer
 
 ## 1. Scope
 

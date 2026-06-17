@@ -1,4 +1,4 @@
-# D0 v15 sector law closure
+# D0 sector law closure
 
 **Status:** sector-law closure of CVFT core.
 **Rule:** finite object first -> transfer law -> passport boundary.

@@ -1,4 +1,4 @@
-# D0 v15 Edge Alpha and Torus Ramification Targets
+# D0 Edge Alpha and Torus Ramification Targets
 
 ## Title
 Theorem targets for edge-sector electromagnetic normalization and lepton ramification indices

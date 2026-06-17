@@ -1,4 +1,4 @@
-# D0 v15 Edge Alpha Ramification Executable Proof (hardened)
+# D0 Edge Alpha Ramification Executable Proof (hardened)
 
 ## Statuses (post-integration)
 

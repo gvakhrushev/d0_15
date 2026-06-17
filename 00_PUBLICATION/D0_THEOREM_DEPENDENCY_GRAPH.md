@@ -1,4 +1,4 @@
-# D0 v16 Theorem Dependency Graph
+# D0 Theorem Dependency Graph
 
 Status: FINAL-PUBLICATION-GUARDRAIL / DEPENDENCY-SPINE
 

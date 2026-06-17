@@ -1,4 +1,4 @@
-# D0 v16 Publication Abstract
+# D0 Publication Abstract
 
 Status: FINAL-PUBLICATION-ABSTRACT / CLAIM-SAFE
 
@@ -14,11 +14,11 @@ a positive finite operator measuring how retained dynamics returns through an ar
 
 External systems are treated separately. Dusty-plasma electron-beam experiments are introduced as a laboratory bridge for active-medium/channel-clearing mechanics, not as proof of quantum gravity. GWOSC/LIGO scans are retained as negative-control discovery work: fixed raw phi, detector-frame phi, ramified phi, and fixed-alpha proxy claims were not supported by the tested metrics. These results motivate transfer-corrected residual observables rather than discovery claims.
 
-D0 v16 is therefore published as a finite mathematical/operator program with certified internal components, explicit theorem targets, guarded external bridges, and recorded negative controls.
+D0 is therefore published as a finite mathematical/operator program with certified internal components, explicit theorem targets, guarded external bridges, and recorded negative controls.
 
 ## One-sentence abstract
 
-D0 v16 formulates finite readout as active/archive feedback-return algebra, verifies selected finite constructions by executable certificates, and separates internal theorems from external bridge protocols and negative empirical controls.
+D0 formulates finite readout as active/archive feedback-return algebra, verifies selected finite constructions by executable certificates, and separates internal theorems from external bridge protocols and negative empirical controls.
 
 ## Keywords
 

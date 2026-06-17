@@ -302,25 +302,15 @@ Status is not evidence. Status is the final ledger projection of theorem/cert/ex
 
 The status vocabulary above would be dishonest without a place to carry what is *honestly undone*. D0's claim is not "complete" but "near-complete with a finite, named list of open joints" — and that finiteness is itself the load-bearing claim about distance to closure [^b05-14]. These are coordinates of the front, not a soft 20% of fog: each entry is a single concrete obligation under the DEF-0.2.2 forcing schema that is *declared but not yet discharged*. Listing them here, with status tags, is what keeps `PROOF-TARGET` from drifting into `CORE`.
 
-The register has two tiers: three **soft joints** (the DEF-0.2.2 schema is declared but the forcing is not driven all the way to contradiction) and three **owner/closure obligations**. Each carries its own status; none may be cited as evidence until its cert is registered. None of these is fabricated-cert territory — where a real cert touches the joint it is named and confirmed to exist; the *open* part is stated as exactly the missing analytic step.
+Each entry carries its own status; none may be cited as evidence until its cert is registered. None of these is fabricated-cert territory — where a real cert touches the joint it is named and confirmed to exist; the *open* part is stated as exactly the missing analytic step.
 
-Five of the six entries below have their finite or algebraic content discharged by a registered certificate (the orbital-uniqueness of `K(9,11,13)`, the `+2`-cover collapse, the class-5 aliasing exclusion, the tower-stop finite content, and the exact symbolic `φ⁻²`-coincidence). What survives in each is a single, sharply-named *meta-step* — an M1 uniqueness reading, a topological conjugacy, or an analytic owner. The M1 no-extension meta-step (obligation 5) is closed (`D0-TOWER-STOP-NOEXT-001`), so the entry still open all the way down is `Δ_α` (obligation 4). The list's length, not its emptiness, remains the honest measure of distance to full closure.
+**Closed elsewhere (finite/algebraic content discharged — off this register).** Four former entries have had their finite or algebraic content discharged by a registered certificate and are no longer carried as open here: the role = orbit orbital-uniqueness of `K(9,11,13)`; the `+2`-cover collapse to `Z(Q₈)`; the class-5 aliasing exclusion (`m_s/m_d = 20`); and the tower-stop M1 no-extension meta-step, closed as a no-go (`D0-TOWER-STOP-NOEXT-001`, Lean `D0.Tower.NoExtension`; second channel `D0-DETECTION-QUADRATIC-001`). What remains genuinely open is the analytic/owner front below.
 
-**Soft joints (DEF-0.2.2 declared, not yet closed):**
+**Owner/closure obligations (genuinely open):**
 
-1. **Role-lists 4 and 5 — orbit argument certified at the finite level.** The two role alphabets must be forced as equivalence classes of distinguishing procedures (role = orbit), not asserted as a by-hand enumeration. Support echo: the factorization `(ℤ/44)* = 4 × 5` is already owned downstream (BOOK_01 THE-A: terminal window `q_T = ABCD · V11 = 44`, `|G| = φ_E(44) = 20 = d13`, splitting as `4 × 5`). **Closed at the finite level:** a finite certificate proves the *orbital block-constancy* (every adjacency invariant under the product symmetric group `S_9×S_11×S_13` depends only on the block pair — verified by exhaustion on a faithful model) and the *uniqueness* of the M1-admissible block pattern (loopless + complete) as the complete tripartite `K(9,11,13)` (`|V|=33`, `|E|=359`), Lean-proved. So role = orbit ⇒ unique scene is discharged; the M1 no-extension meta-step (obligation 5) that is its only residual is closed (`D0-TOWER-STOP-NOEXT-001`, see entry 5 below). [^b05-7] [^b05-15].
+1. **`Δ_α` analytic owner — open.** The seam anomaly `Δ_α = |α⁻¹_top − α⁻¹_alg| ~ 4.15e-4` is the irreducible residue between two independent canonizations of `α⁻¹`; `Δ_α ≠ 0` is itself forced by M1 (a hidden identity rule `Δ_α = 0` would be an external dictionary, which M1 forbids — forcing: GOLDEN REM 16.3.SE). The seam-`α` invariant is checked by an existing finite certificate, and the residual is held at CHK in an existing finite certificate ("NOT promoted to THE until `Δ_α` receives an analytic owner"). What is open is the *analytic owner* — the theorem that derives `Δ_α` rather than measuring it; the dynamical/closure-defect reading is owned downstream (BOOK_04, BOOK_06). The analytic owner is now **routed** to the feedback-resolvent trace/coefficient-origin program (the CVFT-F1 frontier target): `Δ_α` and the residue-at-the-dimension-pole route for `α` both await that same resolvent-trace engine, so they are one obligation, not two. **Narrowed by `D0-DELTA-ALPHA-MOMENT-001` (sharpens, does *not* close, so this entry stays open):** substituting `δ₀=½φ⁻³` collapses the algebraic writing into the depth-≤2 moment polynomial `α_alg⁻¹ = μ₂·φ⁻⁶ + μ₁·φ⁻³` in the rank-3 archive unit `u=φ⁻³`, with `μ₂=2¹¹π₀φ⁻²`, `μ₁=1/3`, *no constant term* — exactly the shape of the Feshbach–Schur resolvent moment expansion (`D0-GENERATIVE-DYNAMICS-001`), the second moment carrying the `π₀` phase, the `μ₀=0` forced (zero archive depth ⇒ zero anomaly). This is certified exactly (Lean `D0.Spectral.DeltaAlphaMoment`, cert `vp_delta_alpha_pi0_moment.py`). So the open meta-step is no longer "no analytic owner" but the **two residue amplitudes** `μ₂, μ₁` — the residues of `W_eff` at the pole, fixed by the `s→pole` continuation (the profinite spectral measure). The *form* is now forced; only the *residue normalization* stays profinite. [^b05-10] for the analytic owner; the seam numbers and neutrino readout carry their own certs and are not duplicated here [^b05-18].
 
-2. **Parity step `+2` — algebraic conjugacy to `Z(Q₈)` machine-checked.** The `+2` carrier expansion has *three independent witnesses* — Lucas parity, the `Q₈` sheet, and the square `T²` of toral time — each owned upstream (Lucas/orientation face: GOLDEN THE 3.11.B, `trace_T_pow_eq_signed_lucas` in BOOK_02/BOOK_03; `det T = −1` orientation class). **Closed at the algebraic level:** a synthesis certificate and Lean module collapse the three witnesses into one order-two element, proving the Lucas-trace sign equals the toral orientation determinant equals the Galois norm `φ·ψ = −1`, and that `+2` is the identity of the cover (`det(T^{n+2}) = det(T^n)`) while `+1` flips the sheet. The only residual is the M1-uniqueness reading (that the orientation bit is *forced* to be exactly `Gal(ℚ(√5)/ℚ)`), owned by the GOLDEN forcing prose. [^b05-8] [^b05-16].
-
-3. **Class-5 aliasing exclusion (Cabibbo chain) — formalized at the finite level.** The exclusion of the class-5 aliasing branch in the Cabibbo chain is driven to a finite witness: a certificate proves the branch group `(ℤ/44)*` has characteristic subgroup orders exactly `{1,4,5,20}` (`20 = 4·5 = |ABCD|·D_Σ`), that class 4 is killed by orientation blindness (the owned `Z(Q₈)` cover) and class 5 by aliasing — the order-5 subgroup has `|·| = 5 = D_Σ`, so the period-5 winding orbit bijects onto the 5 operational address classes (a pointer collision = hidden memory, forbidden by M1) — leaving survivors `{1, 20}` and the integer ratio `m_s/m_d = 20`. The residual is only the full hidden-memory M1 contradiction at the same standing as the class-4 kill; the Cabibbo number `sin θ_C = 1/√20` stays a BRIDGE comparison. [^b05-9] [^b05-17].
-
-**Owner/closure obligations:**
-
-4. **`Δ_α` analytic owner — open.** The seam anomaly `Δ_α = |α⁻¹_top − α⁻¹_alg| ~ 4.15e-4` is the irreducible residue between two independent canonizations of `α⁻¹`; `Δ_α ≠ 0` is itself forced by M1 (a hidden identity rule `Δ_α = 0` would be an external dictionary, which M1 forbids — forcing: GOLDEN REM 16.3.SE). The seam-`α` invariant is checked by an existing finite certificate, and the residual is held at CHK in an existing finite certificate ("NOT promoted to THE until `Δ_α` receives an analytic owner"). What is open is the *analytic owner* — the theorem that derives `Δ_α` rather than measuring it; the dynamical/closure-defect reading is owned downstream (BOOK_04, BOOK_06). The analytic owner is now **routed** to the feedback-resolvent trace/coefficient-origin program (the CVFT-F1 frontier target): `Δ_α` and the residue-at-the-dimension-pole route for `α` both await that same resolvent-trace engine, so they are one obligation, not two. **Narrowed by `D0-DELTA-ALPHA-MOMENT-001` (sharpens, does *not* close, so this entry stays open):** substituting `δ₀=½φ⁻³` collapses the algebraic writing into the depth-≤2 moment polynomial `α_alg⁻¹ = μ₂·φ⁻⁶ + μ₁·φ⁻³` in the rank-3 archive unit `u=φ⁻³`, with `μ₂=2¹¹π₀φ⁻²`, `μ₁=1/3`, *no constant term* — exactly the shape of the Feshbach–Schur resolvent moment expansion (`D0-GENERATIVE-DYNAMICS-001`), the second moment carrying the `π₀` phase, the `μ₀=0` forced (zero archive depth ⇒ zero anomaly). This is certified exactly (Lean `D0.Spectral.DeltaAlphaMoment`, cert `vp_delta_alpha_pi0_moment.py`). So the open meta-step is no longer "no analytic owner" but the **two residue amplitudes** `μ₂, μ₁` — the residues of `W_eff` at the pole, fixed by the `s→pole` continuation (the profinite spectral measure). The *form* is now forced; only the *residue normalization* stays profinite. [^b05-10] for the analytic owner; the seam numbers and neutrino readout carry their own certs and are not duplicated here [^b05-18].
-
-5. **Tower-stop theorem (why the tower stops, not `V₁₅`) — finite content certified.** Why the structural tower terminates where it does rather than continuing to a `V₁₅` floor: the finite content is certified — exactly 3 forced structural zones (defect, memory, shell) give exactly 3 rungs `[9,11,13]`, the realized generation count is `|Tr(T²)| = 3`, and the Lucas control impedance `I_n = L_n/(9n)` climbs across the ladder as a convergent cross-check (GOLDEN CHK 61.2). The full M1 *no-extension* meta-step — that no admissible structure can register a fourth zone — is closed as a no-go (`D0-TOWER-STOP-NOEXT-001`, Lean `D0.Tower.NoExtension`). By DEF-0.2.2 on a hypothetical fourth zone `Z4`: **CASE 2** — if `Z4` repeats an existing type, its `≥2` indistinguishable copies carry a nontrivial copy-permutation symmetry (`|S₂|=2>1`), so the copy-choice is an external catalogue ⇒ `⊥M1` (the Dedekind/`Q₈` copy-catalogue forcing of §01.7.1A, transferred to zones); **CASE 1** — if `Z4` is a *new* type, the types of necessity are the three slots of the forced quadratic `p²+p=1` (`p=φ⁻¹`: `p`↦distinguish, `p²`↦preserve, `=1`↦close — *three = two terms + one closure, by degree-2, not a list*), and there is no fourth *independent* slot because the algebra `ℤ[p]/(p²+p−1)` is rank 2 and every higher power reduces (`p³=2p−1∈span{1,p}`, so a `p³`-type is iterated runtime, BOOK_01:556 — a repeat ⇒ CASE 2). Both branches give `⊥M1`, so the tower stops at `[9,11,13]`. The impedance is a cross-check of a *closed* no-go, not its only support. Honest residue: the COUNT (three slots, no fourth) is Lean-proved; the three role-*names* are the operational reading of the three forced slots, each citing a forced primitive (registration BOOK_01 / self-application / M1+ BOOK_00). **Cascade:** this forces the 3-*count* (`rank=3`); the leaves that also need the *geometric* reading `rank-3 = causal cone` (the `3/8` ceiling, the Choptuik exponent) retain that as a **separate** named gap (§07.51.3) — the count is forced here, the geometric identification is not promoted by this closure. **Second independent channel (`D0-DETECTION-QUADRATIC-001`, §01.14):** the degree-2 closure also follows from the *act of detection* — there are exactly two comparison kinds (by membership `∈` ⇒ linear, degree 1; by value ⇒ bilinear, degree 2), and a third reduces (`p³=2p−1`), so "three levels" is *exhaustion of comparison kinds*, not a list. This strengthens CASE 1 with an independent (type-theoretic) reading; it does not replace the no-go. [^b05-11] [^b05-19].
-
-6. **`φ⁻²` rotation ↔ `T` foliation conjugacy (quasicrystal = time) — symbolic coincidence certified.** The `φ⁻²` circle rotation must be shown *formally conjugate* to the return map of the golden foliation of toral time `T` — one page of standard ergodic mechanics (Sturm / Morse–Hedlund). The letter-by-letter coincidence is closed by an *exact, executable* certificate (4000 symbols, exact integer floors, not a 40-symbol spot-check) and the slope is force-derived. What remains a theorem-target is only the *topological/measure conjugacy* itself, whose ergodic machinery is not yet in the formal kernel; the conjugacy is owned as an obligation in BOOK_01. [^b05-12] [^b05-20].
+2. **`φ⁻²` rotation ↔ `T` foliation conjugacy (quasicrystal = time) — symbolic coincidence certified.** The `φ⁻²` circle rotation must be shown *formally conjugate* to the return map of the golden foliation of toral time `T` — one page of standard ergodic mechanics (Sturm / Morse–Hedlund). The letter-by-letter coincidence is closed by an *exact, executable* certificate (4000 symbols, exact integer floors, not a 40-symbol spot-check) and the slope is force-derived. What remains a theorem-target is only the *topological/measure conjugacy* itself, whose ergodic machinery is not yet in the formal kernel; the conjugacy is owned as an obligation in BOOK_01. This is the honest owner-edge: full topological conjugacy is the cited external owner (Adler–Weiss Markov partition / Williams shift-equivalence), recorded as the conditional bridge `D0-ADLER-WEISS-PARTITION-OWNER-001` (`ASSUMP-ADLER-WEISS`); D0 closes only the golden-mean SFT entropy = `log φ` on both the fusion and toral sides. [^b05-12] [^b05-20].
 
 **Register discipline.** This list is *exhaustive by intent*: a forcing obligation that is not on it, and not closed elsewhere, is a discipline failure, not a silent `CORE`. The register's value is that it is finite — its length, not its emptiness, is the honest measure of nearness to formal closure of the core [^b05-21]. When any entry's cert is registered, its line moves from `PROOF-TARGET` to `CERT-CLOSED` and leaves this register; the register never grows by fiat and never shrinks by relabelling.
 ## 05.7 One promotion process
@@ -1037,82 +1027,17 @@ failure thresholds.
 A survey likelihood may evaluate a frozen D0 cosmology object, but it may not
 create a new primitive, choose a hidden parameter or mutate the archive object.
 
-### 05.20.1 The anomalous-claims consistency protocol [^b05-44]
-
-The rule above states *what a cosmology comparison must carry* but not *which
-concrete thresholds make an "anomalous-effect" claim pass or fail*.  The general
-falsification-hook / BRIDGE-proof-cell discipline (05.15, 05.8) is sharpened here
-into a packaged protocol with spine-forced numbers.  It is not a new freedom:
-every threshold below is forced off already-owned spine objects, so the protocol
-adds *teeth*, not parameters.
-
-A consistency check is a BRIDGE protocol on data `D = (raw, Π, ε²)`: `raw` is the
-input measurement, `Π` is the frozen translation protocol (normalizations,
-windows, tolerances, holdout/split rules, dataset ids), and `ε²` is the fixed
-corpus tolerance.  **`Π` may not change after the result is seen** (the same
-freeze-before-data discipline as 05.20 and CHK 19.4.1).  An effect that is
-measured without a pre-registered `Π` is a BRIDGE *observation*, never a CORE
-check [^b05-45].
-
-The numerical verification suite must return FAIL unless all four checks hold at
-tolerance `ε²`.
-
-**[THE 05.20.CONSIST-RATIO] Effect-fraction exclusion: `ρ := E_anom/E_tot > 1/11` ⇒ FAIL [^b05-46]. [^b05-40].**
-The `1/11` ceiling is *not* a fitted significance cut.  The scene `K(9,11,13)`
-has rank `3` and nullity `30` over `33` vertices (owned by BOOK_01; cited in
-BOOK_03 03.0 and the trace ladder there), so the core fraction of the structure
-is exactly
-
-```text
-Rank / (Rank + nullity) = 3 / 33 = 1/11.
-```
-
-Any effect claiming more than `1/11` of the total budget therefore cannot be
-read as the *core* of the D0 scene — it exceeds the only fraction the scene's
-core can occupy — and the suite must return FAIL.  Below `1/11`, the check
-continues to GEOM / SPECTRA / ANOMALY.
-
-**[THE 05.20.CONSIST-GEOM] Geometric scale ratio: `|L₊/L₋ − φ⁵| ≤ ε²` [^b05-47]. [^b05-41].**
-For two characteristic active-zone scales `L₊, L₋` extracted under `Π`, D0
-consistency demands their ratio sit at `φ⁵` (equivalently `(L₊+L₋)/(L₊−L₋)` in
-the same tolerance).  This is the **memory-torus address** `(R+r)/(R−r) = φ⁵`
-owned by BOOK_06 (06.37), where `φ⁵ = 11 + φ⁻⁵` splits exactly into its integer
-address `11 = |V₁₁|` and the integerization defect `ξ₅ = φ⁻⁵`.  The geometric
-test is thus a demand that the observed scale ratio land on the frozen torus
-address, not on a tuned exponent.  Miss ⇒ FAIL.
-
-**[THE 05.20.CONSIST-SPECTRA] Peak-comb test: `|f_i/f₀ − φ^{k_i}| ≤ ε²` for integer `k_i` [^b05-48]. [^b05-42].**
-The dominant PSD peaks `{f_i}` selected under `Π` must admit one base frequency
-`f₀` and integers `k_i` placing every ratio at a power `φ^{k_i}` — the same
-golden comb the torus-return spectrum forces.  When `Π` searches over multiple
-hypotheses the check **must** run on a holdout split with a declared
-multiple-testing correction (FWER / FDR / explicit look-elsewhere), fixed before
-the main set is touched [^b05-49].  Otherwise ⇒ FAIL.
-
-**[THE 05.20.CONSIST-ANOMALY] Modulation test: `|f_mod/f_c − Δα| ≤ ε²` [^b05-50]. [^b05-43].**
-If a modulation `f_mod` is seen around a carrier `f_c`, D0 consistency requires
-the sideband ratio to equal the **gluing anomaly**
-
-```math
-\Delta_\alpha := \bigl|\alpha_{top}^{-1} - \alpha_{alg}^{-1}\bigr|,
-```
-
-the irreducible residue between the topological and algebraic writings of the
-whitening constant, owned and derived in BOOK_02 §02.13 [^b05-51].  A modulation that does not sit at `Δα` is *not* consistent with a
-topological anomaly — it is ordinary instrumental or astrophysical modulation —
-and the suite returns FAIL.  This is the same `Δα` that drives the neutrino
-seam beat (BOOK_04 04.9), reused, not re-derived.
-
-No finite certificate yet executes THE 05.20.CONSIST-RATIO / GEOM / SPECTRA /
-ANOMALY as a single PASS/FAIL package; the obligation is open.  Until such a
-certificate exists, a claim that "passes the D0 consistency protocol" has status
-`PROOF-TARGET`, not `CERT-CLOSED`, and may not be promoted to an
-`EMPIRICAL-PASSPORT` on protocol grounds alone.
+A claim that "passes the D0 anomalous-claims consistency protocol" is governed by
+the same freeze-before-data discipline: its translation protocol `Π` may not
+change after the result is seen, and until a finite certificate executes the
+protocol as a single PASS/FAIL package the claim has status `PROOF-TARGET`, not
+`CERT-CLOSED`, and may not be promoted to an `EMPIRICAL-PASSPORT` on protocol
+grounds alone.
 
 ### 05.20.2 Status boundary
 
-A consistency check is CORE only when its thresholds are the spine-forced values
-above and `Π` was frozen before data.  Any check that introduces a new
+A consistency check is CORE only when its thresholds are spine-forced values
+and `Π` was frozen before data.  Any check that introduces a new
 dimensionless parameter or "correction coefficient" after fixing the list, or
 that re-reads `α^{-1}` calibration into a free window, drops to BRIDGE status and
 may falsify or validate a frozen D0 cosmology object but never create one

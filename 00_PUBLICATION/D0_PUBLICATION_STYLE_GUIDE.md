@@ -1,4 +1,4 @@
-# D0 v16 Publication Style Guide
+# D0 Publication Style Guide
 
 Status: PUBLICATION-STYLE-GUIDE / EDITORIAL-GUARDRAIL
 

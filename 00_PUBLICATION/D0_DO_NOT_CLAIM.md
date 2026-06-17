@@ -1,8 +1,8 @@
-# D0 v16 Do-Not-Claim List
+# D0 Do-Not-Claim List
 
 Status: FINAL-PUBLICATION-GUARDRAIL / FORBIDDEN-PROMOTION-LIST
 
-The following statements are not allowed in D0 v16 publication text.
+The following statements are not allowed in D0 publication text.
 
 ## Forbidden as claims
 

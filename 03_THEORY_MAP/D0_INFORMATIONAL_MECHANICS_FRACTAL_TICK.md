@@ -1,4 +1,4 @@
-# D0 v15 — Informational Mechanics and Fractal Tick Principle
+# D0 — Informational Mechanics and Fractal Tick Principle
 
 ## 1. Scope
 

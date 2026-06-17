@@ -1,4 +1,4 @@
-# D0 v15 Baryon Horizon Continuum Predictive Layer (Researcher B)
+# D0 Baryon Horizon Continuum Predictive Layer (Researcher B)
 
 ## Status Split (hardened)
 

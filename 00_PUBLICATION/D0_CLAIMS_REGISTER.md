@@ -1,8 +1,8 @@
-# D0 v16 Claims Register
+# D0 Claims Register
 
 Status: FINAL-PUBLICATION-GUARDRAIL / CLAIM-CLASS-REGISTER
 
-This register is the publication-facing claim map for D0 v16. It separates finite internal theorems/certificates from bridge protocols, empirical negative controls, and theorem targets. The register is derived from `03_THEORY_MAP/theory_status_map.csv` and should be treated as the first stop before quoting any strong claim.
+This register is the publication-facing claim map for D0. It separates finite internal theorems/certificates from bridge protocols, empirical negative controls, and theorem targets. The register is derived from `03_THEORY_MAP/theory_status_map.csv` and should be treated as the first stop before quoting any strong claim.
 
 ## Claim-class counts
 

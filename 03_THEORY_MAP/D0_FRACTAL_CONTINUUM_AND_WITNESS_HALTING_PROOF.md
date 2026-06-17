@@ -1,4 +1,4 @@
-# D0 v15 Fractal Continuum and Witness Halting Proof
+# D0 Fractal Continuum and Witness Halting Proof
 
 ## Scope
 This document integrates Researcher A contributions on the fractal tick continuum envelope and Möbius-Witness topological halting, with the required algebraic corrections for semigroup uniqueness and orbit averaging.

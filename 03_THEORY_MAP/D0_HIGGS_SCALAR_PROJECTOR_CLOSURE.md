@@ -1,4 +1,4 @@
-# D0 v15 Higgs scalar projector closure
+# D0 Higgs scalar projector closure
 
 **Status:** SCALAR-PROJECTOR-CERT-CLOSED
 **Owner:** `D0.Matter.HiggsScalarProjectorConstructive`

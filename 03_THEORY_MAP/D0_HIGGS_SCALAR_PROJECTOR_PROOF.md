@@ -1,4 +1,4 @@
-# D0 v15 Higgs Scalar Projector Proof (constructive)
+# D0 Higgs Scalar Projector Proof (constructive)
 
 ## Definitions
 

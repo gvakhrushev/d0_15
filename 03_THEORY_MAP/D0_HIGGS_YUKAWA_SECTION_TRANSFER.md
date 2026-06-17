@@ -1,4 +1,4 @@
-# D0 v15 Higgs/Yukawa Section Transfer
+# D0 Higgs/Yukawa Section Transfer
 
 ## Definitions
 

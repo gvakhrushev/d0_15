@@ -1,4 +1,4 @@
-# D0 v15 Baryon 40/56 Decomposition
+# D0 Baryon 40/56 Decomposition
 
 ## Definitions
 

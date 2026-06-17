@@ -1,4 +1,4 @@
-# D0 v15 Relative Archive Acceleration to Cosmology Bridge
+# D0 Relative Archive Acceleration to Cosmology Bridge
 
 **Status:** RELATIVE-ARCHIVE-ACCELERATION-CERT-CLOSED
 

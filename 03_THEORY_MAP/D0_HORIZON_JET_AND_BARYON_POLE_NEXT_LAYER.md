@@ -1,4 +1,4 @@
-# D0 v15 Horizon Jet and Baryon Pole Next Layer
+# D0 Horizon Jet and Baryon Pole Next Layer
 
 ## 1. Status Split (Researcher B Integration)
 

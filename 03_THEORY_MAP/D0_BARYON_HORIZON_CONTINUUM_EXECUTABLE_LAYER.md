@@ -1,4 +1,4 @@
-# D0 v15 Baryon Horizon Continuum Executable Layer (hardened)
+# D0 Baryon Horizon Continuum Executable Layer (hardened)
 
 ## Statuses (post-repair)
 

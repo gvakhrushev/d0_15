@@ -1,4 +1,4 @@
-# D0 v15 Ramification from Edge UEFF Companion Operator
+# D0 Ramification from Edge UEFF Companion Operator
 
 ## Statuses (hardened)
 

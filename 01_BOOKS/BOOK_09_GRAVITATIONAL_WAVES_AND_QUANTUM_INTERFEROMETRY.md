@@ -52,7 +52,7 @@ Status: `THEOREM-TARGET / PASSPORT-TARGET`.
 
 No LIGO or telescope evidence is claimed here.  The target observable is a residual line or envelope after known ringdown, detector response, and environmental lines have been removed.
 
-**The information rate carried by the hum is the Kolmogorov–Sinai entropy of the toral generator: `I_f = h_{KS} = \log|\lambda_{\max}(T)| = \log\varphi \approx 0.4812`.** The trace form `\mathrm{Tr}(\log T)/\mathrm{rank}` is *not* an admissible entropy record: the toral generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` has eigenvalues `\{\varphi^{-1},-\varphi\}` and `\det T = -1 < 0`, so `\mathrm{Tr}(\log T)=\log(\det T)=\log(-1)=i\pi` is **complex**, whereas an entropy must be real. The admissible quantity is therefore `h_{KS}=\log|\lambda_{\max}(T)|=\log\varphi`. It is the same `\log\varphi` reached by the Fibonacci route (BOOK_01 §01.21.4, via `|-\varphi|=\varphi`).
+**The information rate carried by the hum is the Kolmogorov–Sinai entropy of the toral generator: `I_f = h_{KS} = \log|\lambda_{\max}(T)| = \log\varphi \approx 0.4812`.** The toral generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` has eigenvalues `\{\varphi^{-1},-\varphi\}`, so `\lambda_{\max}(T)=-\varphi` and `h_{KS}=\log|\lambda_{\max}(T)|=\log\varphi`. It is the same `\log\varphi` reached by the Fibonacci route (BOOK_01 §01.21.4, via `|-\varphi|=\varphi`).
 
 ## 09.04 Binary merger as Born-rule beat bridge
 
@@ -79,24 +79,7 @@ I_f = \log\varphi.
 
 ## 09.06 Negative-control ledger: V3--V12
 
-The V3--V12 scans constitute the negative-control ledger; each entry is a falsification result, not a confirmation:
-
-```text
-V3: GW170814 candidate in raw phi-coherent matching is not supported as evidence.
-V4: raw q=phi frequency ladder failed ratio sweep.
-V5: cascade model did not produce single-event significance.
-V6: detector-frame phi beat failed against off-source background.
-V7/V8: mu-plus phi^(5/4) was interesting but not significant; p≈0.53 in the amplified null.
-V9: ramified ratios underperformed base phi in paired population proxy.
-V10/V11/V12: fixed alpha was not population-stable and score saturation made best-alpha unreliable.
-```
-
-Conclusion:
-
-```text
-No LIGO confirmation claim is allowed in v16.
-The valid result is a negative-control map and a transfer-corrected residual programme.
-```
+The V3--V12 scans were run as negative controls: raw `phi` ladders, detector-frame `phi`, `mu/tau` ramified ratios, and fixed population `alpha` were all tested and none was supported as evidence. No LIGO confirmation claim is allowed in v16; the valid result is a negative-control map and a transfer-corrected residual programme. The canonical per-version record lives in the negative-control cert (`vp_ligo_discovery_negative_control.py`) and the theory-map negative-control doc.
 
 ## 09.07 Residual programme after fixed-alpha failure
 

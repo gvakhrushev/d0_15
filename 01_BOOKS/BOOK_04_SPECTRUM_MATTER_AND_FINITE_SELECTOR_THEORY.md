@@ -527,7 +527,7 @@ The D0 vacuum is the condensed/profinite hull of all admissible finite detector 
 
 The matter generations and baryons as phason modes are theorem-owned by `D0.Matter.PhasonStrainGenerations`. The phason carrier is exactly `D0.Geometry.TorusShell`, so the generation/phason mode count is the already proved three-shell torus count.
 
-The ordered carrier is `BaryonPhasonTriple = PhasonMode x PhasonMode x PhasonMode`, hence dimension `27`. The full baryon multiplet 10D symmetric carrier / decuplet-candidate carrier is not a nucleon-line extension; it is the S3-symmetric phason triple sector of dimension `10`, with `baryon_phason_symmetric_sector_dim_eq_ten`.
+The ordered carrier is `BaryonPhasonTriple = PhasonMode x PhasonMode x PhasonMode`, hence dimension `27`. The full baryon multiplet 10D symmetric carrier / decuplet-candidate carrier is the S3-symmetric phason triple sector of dimension `10`, with `baryon_phason_symmetric_sector_dim_eq_ten`.
 
 **Why exactly three, two forced routes [^b04-28].** Three generations are forced by the toral trace `|Tr(T^2)|=3` plus the torus-shell non-commuting selector (`phason_strain_forces_three_generations`). A second, independent and convergent cutoff comes from the control impedance over the Lucas zone capacities `L_n` (BOOK_03-owned),
 
@@ -1746,7 +1746,7 @@ torus noncommuting shell finite variational selectors
 
 The Lean owners are explicit: `D0.Matter.CKMNontrivialFlavourAlgebra` proves `overlap_response_can_force_nonpermutation_transfer` and `nontrivial_flavour_defect_positive_response`; `D0.Matter.MesonDefectTransferOrigin` proves `meson_support_projector_idempotent` and `meson_positive_defect_transfer_admissible` on the typed `Edge x Generation` carrier.
 
-For baryons, the 10D symmetric carrier / decuplet-candidate carrier is not a nucleon-line extension. It is the S3-symmetric triple sector over the three torus shell roles; the Lean owner `BaryonS3Symmetrizer` exposes `BaryonTripleShellCarrier` and `baryon_triple_shell_card_eq_27`.
+For baryons, the 10D symmetric carrier / decuplet-candidate carrier is the S3-symmetric triple sector over the three torus shell roles; the Lean owner `BaryonS3Symmetrizer` exposes `BaryonTripleShellCarrier` and `baryon_triple_shell_card_eq_27`.
 
 For Higgs/Yukawa, the scalar projector is connected but not identical to torus geometry. Torus shell radius is not a Higgs VEV, torus aspect ratio is not a Higgs mass, and radial hopping/phase drift are not the scalar projector. The scalar projector remains the minimal positive idempotent matter-transfer bridge compatible with tick/Lorentz and the frozen gauge ledger.
 
@@ -1762,7 +1762,7 @@ Matter as phason/window defects of the φ-quasicrystal vacuum: generations =
 inflation classes, quark color/charge = window-sector weights, and chirality =
 acceptance-window offset.
 
-Short-range nucleon pairing is not promoted from nuclear mass, density, or neutron-proton imbalance. The D0 object is a finite shell-contact readout operator. This is an operator bridge, not just an empirical note:
+The D0 object for short-range nucleon pairing is a finite shell-contact readout operator:
 
 ```math
 \mathcal C^{D0}_{SRC}(A)

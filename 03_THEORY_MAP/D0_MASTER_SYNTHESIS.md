@@ -1,8 +1,8 @@
-# D0 v15 master synthesis
+# D0 master synthesis
 
 ## 1. Core thesis
 
-D0 v15 is a finite-observability theory over condensed/profinite quasicrystalline support.  The active chain is
+D0 is a finite-observability theory over condensed/profinite quasicrystalline support.  The active chain is
 
 ```text
 finite support -> retained/traced split -> F_N=P_N U_N^dagger Q_N U_N P_N
@@ -247,7 +247,7 @@ vp_neutrino_phason_decoherence_passport.py
 
 ## 15. Final claim boundary
 
-D0 v15 closes the finite feedback operator core and several sector/operator scaffolds.  It does not automatically convert an operator scaffold into an external physical spectrum.  The final classes are:
+D0 closes the finite feedback operator core and several sector/operator scaffolds.  It does not automatically convert an operator scaffold into an external physical spectrum.  The final classes are:
 
 ```text
 core theorem

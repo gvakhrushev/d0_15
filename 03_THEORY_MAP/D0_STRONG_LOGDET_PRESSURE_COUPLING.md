@@ -1,4 +1,4 @@
-# D0 v15 Strong Log-Det Pressure Coupling
+# D0 Strong Log-Det Pressure Coupling
 
 **Status:** LOGDET-PRESSURE-COUPLING-CERT-CLOSED
 

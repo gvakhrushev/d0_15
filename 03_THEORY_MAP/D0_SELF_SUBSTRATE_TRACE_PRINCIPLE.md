@@ -1,4 +1,4 @@
-# D0 v15 — Self-Substrate Trace Principle
+# D0 — Self-Substrate Trace Principle
 
 ## 1. Scope
 

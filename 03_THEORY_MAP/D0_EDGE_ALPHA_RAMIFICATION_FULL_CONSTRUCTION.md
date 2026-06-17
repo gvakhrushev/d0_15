@@ -1,4 +1,4 @@
-# D0 v15 Edge Alpha Ramification Full Construction (Researcher A)
+# D0 Edge Alpha Ramification Full Construction (Researcher A)
 
 ## Status (hardened per executable evidence)
 

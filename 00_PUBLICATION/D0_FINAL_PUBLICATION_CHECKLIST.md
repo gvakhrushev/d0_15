@@ -1,4 +1,4 @@
-# D0 v16 Final Publication Checklist
+# D0 Final Publication Checklist
 
 Status: FINAL-PUBLICATION-CHECKLIST
 

@@ -1,4 +1,4 @@
-# D0 v15 — Continuum from Fractal Tick
+# D0 — Continuum from Fractal Tick
 
 ## 1. Statement
 

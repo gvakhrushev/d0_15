@@ -1,4 +1,4 @@
-# D0 v15 — Topological Halting, Quadratic Peel, and Horizon Seam Optics
+# D0 — Topological Halting, Quadratic Peel, and Horizon Seam Optics
 
 ## 1. Scope
 

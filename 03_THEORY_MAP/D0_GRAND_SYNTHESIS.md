@@ -1,4 +1,4 @@
-# D0 v15 Grand Synthesis
+# D0 Grand Synthesis
 
 This document integrates the v15 sector-law layer. All objects are finite. External passports remain separate.
 
@@ -10,7 +10,7 @@ The central v15 bootstrap is the stationary condition on the combined heat-trace
 \delta\left[\beta^{-1}\log\operatorname{Tr}\left(e^{-\beta\Delta_N(V)}\right) - \log\det\left(I - z P_N U_N^\dagger Q_N U_N P_N\right)\right] = 0.
 \]
 
-The heat-trace term supplies finite spectral geometry (capacity, boundary rank, K0 labels). The feedback determinant supplies return-cycle thermodynamics, pole stabilization, pressure \(P_{\rm fb}\), and leakage. This is the D0 v15 final bootstrap principle. (See Book 02/03 for derivation.)
+The heat-trace term supplies finite spectral geometry (capacity, boundary rank, K0 labels). The feedback determinant supplies return-cycle thermodynamics, pole stabilization, pressure \(P_{\rm fb}\), and leakage. This is the D0 final bootstrap principle. (See Book 02/03 for derivation.)
 
 ## 2. Feedback-return operator as unifying object
 

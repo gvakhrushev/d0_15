@@ -1,4 +1,4 @@
-# D0 v15 Meson Transfer Algebra Proof
+# D0 Meson Transfer Algebra Proof
 
 ## Definitions
 

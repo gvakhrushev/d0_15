@@ -1,4 +1,4 @@
-# D0 v16 Quantum Metrology Limits
+# D0 Quantum Metrology Limits
 
 **Status:** THEOREM-TARGET / OPERATOR-LEMMA-CERT
 

@@ -1,4 +1,4 @@
-# D0 v15 PDG/Core-13 to baryon 40/56 synthesis
+# D0 PDG/Core-13 to baryon 40/56 synthesis
 
 **Status:** internal sector law closure for CVFT-F3c.
 **Rule:** PDG/Core-13 passport validates the frozen three-orbit shell geometry as external shadow only. It does not select or define the internal baryon spin-flavour projectors. The internal decomposition 56 = 40 + 16 is certified before any external labels.

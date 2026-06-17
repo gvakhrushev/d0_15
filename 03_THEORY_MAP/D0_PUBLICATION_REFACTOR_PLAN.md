@@ -1,4 +1,4 @@
-# D0 v15 Publication Refactor Plan
+# D0 Publication Refactor Plan
 
 This document records the hardening steps taken to turn the v15 corpus into a finished, publishable mathematical physics theory.
 

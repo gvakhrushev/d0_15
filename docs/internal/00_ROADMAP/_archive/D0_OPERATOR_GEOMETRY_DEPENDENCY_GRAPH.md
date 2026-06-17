@@ -1,4 +1,4 @@
-# D0 v14 Operator-Geometry Dependency Graph
+# D0 Operator-Geometry Dependency Graph
 
 This graph records the active dependency order after the Torus/Core-13 and Golden Pass30 PDG integration.
 

@@ -1,8 +1,8 @@
-# D0 v16 Minimal Theory Spine
+# D0 Minimal Theory Spine
 
 Status: PUBLICATION-SPINE / READER-ORIENTATION
 
-The shortest defensible D0 v16 chain is:
+The shortest defensible D0 chain is:
 
 1. Start with a finite retained/archive split.
 2. Compress dynamics through retained and archive projectors.

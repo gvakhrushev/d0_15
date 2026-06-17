@@ -1,4 +1,4 @@
-﻿# D0 v14 PDG / Golden Pass30 Integration Audit
+﻿# D0 PDG / Golden Pass30 Integration Audit
 
 This audit records the active import from the older `d0-main` Golden Pass30 branch into the current archive.
 

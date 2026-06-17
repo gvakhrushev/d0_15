@@ -1,8 +1,8 @@
-# D0 v15 publication outline
+# D0 publication outline
 
 ## 1. Abstract
 
-D0 v15 is a finite-observability framework over condensed/profinite quasicrystalline support.  Its central derived operator is the closed feedback-return operator `F_N=P_N U_N^dagger Q_N U_N P_N`; sector laws for matter, gravity, cosmology and time are reductions of finite projection, resolvent and response objects.
+D0 is a finite-observability framework over condensed/profinite quasicrystalline support.  Its central derived operator is the closed feedback-return operator `F_N=P_N U_N^dagger Q_N U_N P_N`; sector laws for matter, gravity, cosmology and time are reductions of finite projection, resolvent and response objects.
 
 ## 2. Introduction
 
