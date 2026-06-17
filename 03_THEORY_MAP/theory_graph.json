@@ -4,47 +4,47 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 280,
+    "claims": 288,
     "release_status": {
-      "CORE-FORMALIZED": 158,
+      "CORE-FORMALIZED": 163,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 4,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 49,
+      "CERT-CLOSED": 50,
       "NO-GO": 8,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 15,
-      "PROOF-TARGET": 12
+      "EMPIRICAL-PASSPORT": 16,
+      "PROOF-TARGET": 13
     },
     "lean_status": {
-      "LEAN_PROVED": 180,
+      "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 20,
-      "PYTHON_CERTIFIED": 64,
+      "PYTHON_CERTIFIED": 66,
       "DEPRECATED": 2,
-      "OPEN": 14
+      "OPEN": 15
     },
     "claim_type": {
-      "core": 159,
+      "core": 164,
       "bridge": 26,
       "no-go": 16,
-      "certificate": 64,
+      "certificate": 66,
       "deprecated": 3,
-      "frontier": 12
+      "frontier": 13
     },
     "domain": {
-      "formal_core": 168,
+      "formal_core": 174,
       "rg": 5,
       "gauge_bridge": 20,
       "smooth_geometry": 18,
       "spectral_action": 5,
-      "empirical_passport": 23,
+      "empirical_passport": 24,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 3,
       "interpretation_spine": 1,
-      "frontier": 12
+      "frontier": 13
     }
   },
   "nodes": [
@@ -4303,7 +4303,7 @@
         "vp_feshbach_residue_amplitudes.py"
       ],
       "status": "PROOF-TARGET",
-      "notes": "Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed. [Iter17 ТЗ-2 Phase A — SHARPENED, not closed] The Feshbach-Schur residue attack (cert vp_feshbach_residue_amplitudes.py) DERIVES mu1=1/rank as the uniform depth-0 floor return (F_N=p^2 P_N over 3 active modes) and OWNS the pi0 factor of mu2 (pi0=(6/5)phi^2 derived in BOOK_04 SS04.6.pi.4). The remaining gap is narrowed from 'derive mu1,mu2' to the single capacity factor 2^11=2^V11: it is NOT a block-trace count (2048 not in {rank3,nullity30,33,359,8,...}) and the naive edge-pushforward pairs active<->archive with multiplicity 2 (na=2, nb=357, 2+357=359=|E|), not 2^11. So the active<->archive PAIRING multiplicity is the precise open gap. CVFT-F1 stays PROOF-TARGET; the form is forced, the 2^11 amplitude is NOT resolvent-derived; Delta_alpha unchanged. [Iter18 SHARPENED again, still not closed] 2^11 now has a NAMED CANDIDATE: 2^11=dim Cl(R^11)=dim Lambda*(R^11)=2^|V11| the full exterior/fermionic-Fock dimension over the 11-zone V11 (cert vp_cvft_clifford_fock_capacity.py), distinct from the irreducible Spin(11) spinor 2^5=32 and from the naive 2-edge pairing (na=2). The residue-extraction (s->pole residue traces over the full 2^11 Fock vs the naive 2-edge pairing) is owned by the Dixmier trace / noncommutative integral (owner edge D0-DIXMIER-RESIDUE-OWNER-001 / ASSUMP-DIXMIER-TRACE). Still PROOF-TARGET; gap re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11) vs 2-edge pairing'; NOT promoted.",
+      "notes": "Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed. [Iter17 ТЗ-2 Phase A — SHARPENED, not closed] The Feshbach-Schur residue attack (cert vp_feshbach_residue_amplitudes.py) DERIVES mu1=1/rank as the uniform depth-0 floor return (F_N=p^2 P_N over 3 active modes) and OWNS the pi0 factor of mu2 (pi0=(6/5)phi^2 derived in BOOK_04 SS04.6.pi.4). The remaining gap is narrowed from 'derive mu1,mu2' to the single capacity factor 2^11=2^V11: it is NOT a block-trace count (2048 not in {rank3,nullity30,33,359,8,...}) and the naive edge-pushforward pairs active<->archive with multiplicity 2 (na=2, nb=357, 2+357=359=|E|), not 2^11. So the active<->archive PAIRING multiplicity is the precise open gap. CVFT-F1 stays PROOF-TARGET; the form is forced, the 2^11 amplitude is NOT resolvent-derived; Delta_alpha unchanged. [Iter18 SHARPENED again, still not closed] 2^11 now has a NAMED CANDIDATE: 2^11=dim Cl(R^11)=dim Lambda*(R^11)=2^|V11| the full exterior/fermionic-Fock dimension over the 11-zone V11 (cert vp_cvft_clifford_fock_capacity.py), distinct from the irreducible Spin(11) spinor 2^5=32 and from the naive 2-edge pairing (na=2). The residue-extraction (s->pole residue traces over the full 2^11 Fock vs the naive 2-edge pairing) is owned by the Dixmier trace / noncommutative integral (owner edge D0-DIXMIER-RESIDUE-OWNER-001 / ASSUMP-DIXMIER-TRACE). Still PROOF-TARGET; gap re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11) vs 2-edge pairing'; NOT promoted. [Iter21 BLOCKED / closed-negative] The residue route to Delta_alpha is now BLOCKED: a phi-graded zeta residue carries ln phi (Res prop 1/ln phi, transcendental) whereas alpha_alg in Q(phi) is algebraic, so the residue cannot equal the algebraic anomaly. The WORKING route to the 9-digit alpha is the closure holonomy D0-ALPHA-HOLONOMY-002; the transcendence Lean-formalization (D0.Spectral.DeltaAlphaResidueBlocked) is a named target.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -6777,7 +6777,7 @@
         "vp_mixing_hierarchy_inversion.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.MixingHierarchyInversion (mixing_hierarchy_inversion); native_decide/decide on the real finite content.",
+      "notes": "[8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.MixingHierarchyInversion (mixing_hierarchy_inversion); native_decide/decide on the real finite content. [Iter21] the rank-nullity demokratie skeleton now carries the DERIVED delta0-corrections via D0-PMNS-SEAM-TOPOLOGY-001 (seam-topology rule: degree = bare/open/closed); the former MECH-LIMIT angle family is replaced by the derived rule.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Claims/MixingHierarchyInversion.lean",
       "module_exists": true,
       "certs_exist": true
@@ -6853,7 +6853,7 @@
         "vp_zeta_residue_alpha.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|; one zeta carries alpha+capacity. (NB: this module proves ONLY the edge-zeta moments and has NO zetaAdj; the rank=3/nullity fact is proved separately and unwired to any zeta in D0.Claims.Signature31Split + D0.Claims.KernelZoneSplit.) phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier).",
+      "notes": "zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|; one zeta carries alpha+capacity. (NB: this module proves ONLY the edge-zeta moments and has NO zetaAdj; the rank=3/nullity fact is proved separately and unwired to any zeta in D0.Claims.Signature31Split + D0.Claims.KernelZoneSplit.) phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier). [Iter21] Residue route now BLOCKED (transcendental, D0-CVFT-F1); the working route to the 9-digit alpha is the closure holonomy D0-ALPHA-HOLONOMY-002. This row keeps alpha_top=zeta_E(-1) (THE) + xi5 (THE) unchanged.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/ZetaResidueAlpha.lean",
       "module_exists": true,
       "certs_exist": true
@@ -7414,7 +7414,7 @@
         "vp_delta_alpha_pi0_moment.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[Iter12 Track-B, sharpens obl.4] Finite shadow of the Delta_alpha analytic owner (CVFT-F1). With delta0=1/2 phi^-3 the algebraic writing collapses to a depth-<=2 archive moment polynomial in the rank-3 unit u=phi^-3: alpha_alg^-1 = mu2*u^2 + mu1*u = (12288/5)phi^-6 + (1/3)phi^-3 exactly in Q(phi), mu2=2^11 pi0 phi^-2, mu1=1/3, mu0=0. This is the shape of the Feshbach-Schur resolvent moment expansion W_eff(z)=A+sum_k z^-(k+1) B D^k C (D0-GENERATIVE-DYNAMICS-001): exponents -6,-3 = -2*rank,-1*rank (archive depth 2,1); the 2nd moment mu2 carries the pi0 feedback phase; no constant term mu0=0 (zero archive depth => zero anomaly, forced). Lean D0.Spectral.DeltaAlphaMoment (delta_alpha_moment): exact Q(phi) decomposition + value + P(0)=0, gap-free. Cert vp_delta_alpha_pi0_moment.py (can-FAIL: wrong unit/constant/no-pi0 controls). HONEST: this SHARPENS, does NOT close, obl.4 -- the two residue amplitudes mu2,mu1 (W_eff residues at the pole) stay the s->pole continuation (profinite spectral measure); CVFT-F1 stays PROOF-TARGET, Delta_alpha status unchanged. 2^11=2^V11 flagged for the continuation, NOT claimed forced (anti-numerology).",
+      "notes": "[Iter12 Track-B, sharpens obl.4] Finite shadow of the Delta_alpha analytic owner (CVFT-F1). With delta0=1/2 phi^-3 the algebraic writing collapses to a depth-<=2 archive moment polynomial in the rank-3 unit u=phi^-3: alpha_alg^-1 = mu2*u^2 + mu1*u = (12288/5)phi^-6 + (1/3)phi^-3 exactly in Q(phi), mu2=2^11 pi0 phi^-2, mu1=1/3, mu0=0. This is the shape of the Feshbach-Schur resolvent moment expansion W_eff(z)=A+sum_k z^-(k+1) B D^k C (D0-GENERATIVE-DYNAMICS-001): exponents -6,-3 = -2*rank,-1*rank (archive depth 2,1); the 2nd moment mu2 carries the pi0 feedback phase; no constant term mu0=0 (zero archive depth => zero anomaly, forced). Lean D0.Spectral.DeltaAlphaMoment (delta_alpha_moment): exact Q(phi) decomposition + value + P(0)=0, gap-free. Cert vp_delta_alpha_pi0_moment.py (can-FAIL: wrong unit/constant/no-pi0 controls). HONEST: this SHARPENS, does NOT close, obl.4 -- the two residue amplitudes mu2,mu1 (W_eff residues at the pole) stay the s->pole continuation (profinite spectral measure); CVFT-F1 stays PROOF-TARGET, Delta_alpha status unchanged. 2^11=2^V11 flagged for the continuation, NOT claimed forced (anti-numerology). [Iter21] The s->pole residue route is BLOCKED (transcendental vs Q(phi), D0-CVFT-F1); the depth-2 moment FORM stays THE, but the 9-digit alpha is obtained via the closure holonomy D0-ALPHA-HOLONOMY-002, not via residue extraction.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/DeltaAlphaMoment.lean",
       "module_exists": true,
       "certs_exist": true
@@ -9406,6 +9406,259 @@
       "status": "EXPLICIT",
       "assumption_type": "COMPLEXITY_NAVIGATION_POTENTIAL",
       "external_source_or_cert": "D0-internal navigation-potential target (not external)"
+    },
+    {
+      "id": "D0-SEAM-HOLONOMY-001",
+      "kind": "claim",
+      "claim_id": "D0-SEAM-HOLONOMY-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02",
+      "section": "02.13.h",
+      "lean_module": "D0.Spectral.SeamHolonomy",
+      "lean_theorem": "seamU_orthogonal",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_seam_holonomy_alpha.py",
+      "python_cert": [
+        "vp_seam_holonomy_alpha.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 closure-holonomy] Closure-Holonomy Law: monodromy U=cos*I+sin*G with G^2=-I is an orthogonal rotation (D0.Spectral.SeamHolonomy.seamU_orthogonal); the correction multiplier 1+h_KS*sin(theta_seam) applies to alpha and PMNS. Structure THE; 2 named lemma-debts: cone-angle 2pi0 micro-derivation and the delta0=(6/5) chain lean on corpus THE (named proof-targets).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/SeamHolonomy.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.SeamHolonomy",
+      "kind": "lean_module",
+      "label": "D0.Spectral.SeamHolonomy",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/SeamHolonomy.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_seam_holonomy_alpha.py",
+      "kind": "python_cert",
+      "label": "vp_seam_holonomy_alpha.py",
+      "path": "05_CERTS/vp_seam_holonomy_alpha.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-HOLONOMY-002",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-HOLONOMY-002",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.13.h",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_seam_holonomy_alpha.py",
+      "python_cert": [
+        "vp_seam_holonomy_alpha.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter21 closure-holonomy, replaces q_res fit] alpha^-1=359phi^-2-phi^-5+phi^-17(1+lnphi*sin(12/5))=137.035999151, matches CODATA-2018 to 6.7e-8 (~9 digits), zero free reals. HONEST SPLIT: the STRUCTURE (12/5 angle, sin-channel, phi^-17 depth) is THE via D0-PI0-DISCRETE-ANGLE-001 + D0-Q8-SIN-CHANNEL-001; this row is the 9-digit data MATCH = CHK (controls cos/exp/depth FAIL); the last ~1e-8 is HYP (D0-ALPHA-MEASUREMENT-LIMIT-001). NOT a THE derivation of the alpha value. Residue route BLOCKED (D0-CVFT-F1).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-PI0-DISCRETE-ANGLE-001",
+      "kind": "claim",
+      "claim_id": "D0-PI0-DISCRETE-ANGLE-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04",
+      "section": "04.6.pi",
+      "lean_module": "D0.Geometry.Pi0DiscreteAngle",
+      "lean_theorem": "seam_angle_eq_twelve_fifths",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_pi0_discrete_angle.py",
+      "python_cert": [
+        "vp_pi0_discrete_angle.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21] 2*pi0*(2-phi)=12/5 exactly in Q(phi) (pi0=(6/5)phi^2 reused from BOOK_04 04.6.pi.4), machine-checked D0.Geometry.Pi0DiscreteAngle. The seam holonomy angle is a closed rational. pi-vs-pi0 is the SYMBOLIC exactness discriminator (pi0~=pi numerically, not a gross-alpha control).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/Pi0DiscreteAngle.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.Pi0DiscreteAngle",
+      "kind": "lean_module",
+      "label": "D0.Geometry.Pi0DiscreteAngle",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/Pi0DiscreteAngle.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_pi0_discrete_angle.py",
+      "kind": "python_cert",
+      "label": "vp_pi0_discrete_angle.py",
+      "path": "05_CERTS/vp_pi0_discrete_angle.py",
+      "exists": true
+    },
+    {
+      "id": "D0-Q8-SIN-CHANNEL-001",
+      "kind": "claim",
+      "claim_id": "D0-Q8-SIN-CHANNEL-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04",
+      "section": "02.13.h",
+      "lean_module": "D0.Spectral.SeamHolonomy",
+      "lean_theorem": "seamU_offdiagonal",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_q8_sin_channel.py",
+      "python_cert": [
+        "vp_q8_sin_channel.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21] the seam correction rides the off-diagonal sin-channel, not the trace (cos): exp(theta*G)=cos*I+sin*G with G^2=-I, off-diagonal=sin (D0.Spectral.SeamHolonomy.seamU_offdiagonal). Forced by Q8/quaternion structure.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/SeamHolonomy.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_q8_sin_channel.py",
+      "kind": "python_cert",
+      "label": "vp_q8_sin_channel.py",
+      "path": "05_CERTS/vp_q8_sin_channel.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PMNS-SEAM-TOPOLOGY-001",
+      "kind": "claim",
+      "claim_id": "D0-PMNS-SEAM-TOPOLOGY-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04",
+      "section": "04.5",
+      "lean_module": "D0.Matter.PMNSSeamTopology",
+      "lean_theorem": "pmns_seam_topology",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_pmns_seam_topology.py",
+      "python_cert": [
+        "vp_pmns_seam_topology.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21] one rule (delta0-degree=seam topology bare/open/closed -> delta0^{0,1,2}) gives all three PMNS angles. RULE THE: directional content machine-checked (D0.Matter.PMNSSeamTopology: th13>0, th23>1/2, th12<1/3). NUMBERS CHK: all three <1sigma vs JUNO-2026+NuFIT-6.0 (cert), permutation control FAILS (th12 deg1->24sigma, th23 deg2->2.7sigma). Replaces the MECH-LIMIT angle family. Cone-angle 2pi0 micro-derivation = named MECH-LIMIT residual.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/PMNSSeamTopology.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.PMNSSeamTopology",
+      "kind": "lean_module",
+      "label": "D0.Matter.PMNSSeamTopology",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/PMNSSeamTopology.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_pmns_seam_topology.py",
+      "kind": "python_cert",
+      "label": "vp_pmns_seam_topology.py",
+      "path": "05_CERTS/vp_pmns_seam_topology.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PMNS-DELTACP-PI0-001",
+      "kind": "claim",
+      "claim_id": "D0-PMNS-DELTACP-PI0-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.5",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter21 HYP] delta_CP ~= pi0 ~= pi (CP near-conservation as the full-3-cycle angle); a falsifiable prediction in normal ordering. Not derived; named prediction target.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-XI5-CROSS-SECTOR-001",
+      "kind": "claim",
+      "claim_id": "D0-XI5-CROSS-SECTOR-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04",
+      "section": "04.4.6",
+      "lean_module": "D0.Claims.Xi5TorusDefect",
+      "lean_theorem": "xi5_torus_defect",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_xi5_cross_sector.py",
+      "python_cert": [
+        "vp_xi5_cross_sector.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter21 COR] the proven xi5=phi^-5=phi^5-11 (D0.Claims.Xi5TorusDefect, L5=11) is the SAME seam shared by alpha_top (359phi^-2-xi5) and sin^2theta13 (xi5/4): one depth-5 closure geometry. Cross-sector correlation (COR), not a new derivation; control: phi^-4/phi^-6 != the alpha seam.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Claims/Xi5TorusDefect.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_xi5_cross_sector.py",
+      "kind": "python_cert",
+      "label": "vp_xi5_cross_sector.py",
+      "path": "05_CERTS/vp_xi5_cross_sector.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.13.h",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_measurement_limit.py",
+      "python_cert": [
+        "vp_alpha_measurement_limit.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[Iter21 HYP/bet] the last ~1e-8 alpha layer is the measurement-limit band: alpha_struct=137.035999151 is straddled by CODATA-2018/2022 and the gap (6.7e-8) < inter-edition shift (9.3e-8). Falsifiable bet: refined alpha^-1 converges to 137.035999151 from below. The holonomy THE-structure and CHK match do not depend on this layer; 2nd-order holonomy does NOT close it.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_alpha_measurement_limit.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_measurement_limit.py",
+      "path": "05_CERTS/vp_alpha_measurement_limit.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -13293,6 +13546,121 @@
       "source": "D0-PVSNP-LYAPUNOV-M1-001",
       "target": "assumption:ASSUMP-GLOBAL-LYAPUNOV-POTENTIAL",
       "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-SEAM-HOLONOMY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SEAM-HOLONOMY-001",
+      "target": "module:D0.Spectral.SeamHolonomy",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SEAM-HOLONOMY-001",
+      "target": "cert:vp_seam_holonomy_alpha.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-HOLONOMY-002",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-HOLONOMY-002",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-HOLONOMY-002",
+      "target": "cert:vp_seam_holonomy_alpha.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PI0-DISCRETE-ANGLE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PI0-DISCRETE-ANGLE-001",
+      "target": "module:D0.Geometry.Pi0DiscreteAngle",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PI0-DISCRETE-ANGLE-001",
+      "target": "cert:vp_pi0_discrete_angle.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-Q8-SIN-CHANNEL-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-Q8-SIN-CHANNEL-001",
+      "target": "module:D0.Spectral.SeamHolonomy",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-Q8-SIN-CHANNEL-001",
+      "target": "cert:vp_q8_sin_channel.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PMNS-SEAM-TOPOLOGY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PMNS-SEAM-TOPOLOGY-001",
+      "target": "module:D0.Matter.PMNSSeamTopology",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PMNS-SEAM-TOPOLOGY-001",
+      "target": "cert:vp_pmns_seam_topology.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PMNS-DELTACP-PI0-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PMNS-DELTACP-PI0-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-XI5-CROSS-SECTOR-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-XI5-CROSS-SECTOR-001",
+      "target": "module:D0.Claims.Xi5TorusDefect",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-XI5-CROSS-SECTOR-001",
+      "target": "cert:vp_xi5_cross_sector.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+      "target": "cert:vp_alpha_measurement_limit.py",
+      "kind": "certified_by"
     }
   ]
 }

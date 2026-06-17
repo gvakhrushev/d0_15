@@ -444,7 +444,17 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-RIEMANN-AXIS-M1-001", moduleName := "D0.Spectral.CriticalAxisM1",
       theoremName := "critical_axis_unique;half_is_m1_forced_axis;shifted_axis_needs_catalogue", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-PVSNP-LYAPUNOV-M1-001", moduleName := "D0.Complexity.HeatTraceLyapunov",
-      theoremName := "branch_without_potential_needs_catalogue;solution_m1_forced;solution_unique", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "branch_without_potential_needs_catalogue;solution_m1_forced;solution_unique", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-SEAM-HOLONOMY-001", moduleName := "D0.Spectral.SeamHolonomy",
+      theoremName := "seamU_orthogonal", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PI0-DISCRETE-ANGLE-001", moduleName := "D0.Geometry.Pi0DiscreteAngle",
+      theoremName := "seam_angle_eq_twelve_fifths", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-Q8-SIN-CHANNEL-001", moduleName := "D0.Spectral.SeamHolonomy",
+      theoremName := "seamU_offdiagonal", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PMNS-SEAM-TOPOLOGY-001", moduleName := "D0.Matter.PMNSSeamTopology",
+      theoremName := "pmns_seam_topology", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-XI5-CROSS-SECTOR-001", moduleName := "D0.Claims.Xi5TorusDefect",
+      theoremName := "xi5_torus_defect", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -212,6 +212,7 @@ import D0.Geometry.NonCommutativeSolenoid
 import D0.Geometry.NonCommutativeSolenoidGravity
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
+import D0.Geometry.Pi0DiscreteAngle
 import D0.Geometry.SceneActiveEigenvalues
 import D0.Geometry.SpectralActionAdmissibility
 import D0.Geometry.SpectralActionLadder
@@ -280,6 +281,7 @@ import D0.Matter.MesonDefectTransferOrigin
 import D0.Matter.MesonPhasonDomainWalls
 import D0.Matter.NeutrinoPhasonWaves
 import D0.Matter.NuclearShellContactSRC
+import D0.Matter.PMNSSeamTopology
 import D0.Matter.PhasonStrainGenerations
 import D0.Matter.ProtonReadout306
 import D0.Matter.RepresentationCarrier
@@ -323,6 +325,7 @@ import D0.Response
 import D0.Spectral.CriticalAxisM1
 import D0.Spectral.DeltaAlphaExact
 import D0.Spectral.DeltaAlphaMoment
+import D0.Spectral.SeamHolonomy
 import D0.Spectral.ZetaResidueAlpha
 import D0.Spectral.ZoneMatrixSpectrum
 import D0.Spectrum.BranchDefectProjectiveControls

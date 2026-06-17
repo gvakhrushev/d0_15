@@ -7,32 +7,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 49
-- `CORE-FORMALIZED`: 158
+- `CERT-CLOSED`: 50
+- `CORE-FORMALIZED`: 163
 - `CORE_BRIDGE_SPLIT`: 4
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 15
+- `EMPIRICAL-PASSPORT`: 16
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 8
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 12
+- `PROOF-TARGET`: 13
 
 ## Type counts
 
 - `bridge`: 26
-- `certificate`: 64
-- `core`: 159
+- `certificate`: 66
+- `core`: 164
 - `deprecated`: 3
-- `frontier`: 12
+- `frontier`: 13
 - `no-go`: 16
 
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 23
+- `empirical_passport`: 24
 - `external_background`: 1
-- `formal_core`: 168
-- `frontier`: 12
+- `formal_core`: 174
+- `frontier`: 13
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -395,6 +395,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter3 §4] HONEST FORK of two catalog-free ownerships of the dark-energy/S_DE archive window. Cert vp_vacuum_cubic_window.py computes the window-center discriminator that the GOLDEN dossier (0940) recorded as never computed: QUADRATIC branch 160l^2-480l+359 (160=2*Omega8*gamma=2*8*10, det=359/160, eigs 3/2-+sqrt10/40) -> ratio (60-sqrt10)/(60+sqrt10)=0.900; CUBIC branch l^3-359l-2574 (e1=0,e2=-359=-|E|,e3=2574=2*1287=2*|triangles|, = the adjacency characteristic poly owned by D0-MIXING-HIERARCHY-INVERSION-001) -> ratio of the two negative roots |9.758|/|12.079|=0.808. Discriminator: cubic 0.808 vs quadratic 0.900 (separable). HONEST: this is a FORK, NOT a decision — DESI DR3 is the empirical decider and is NOT run here; promoting either branch to the sole core form needs that external survey comparison (BRIDGE), kept out of core by the firewall.
+
+### D0-ALPHA-MEASUREMENT-LIMIT-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_alpha_measurement_limit.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter21 HYP/bet] the last ~1e-8 alpha layer is the measurement-limit band: alpha_struct=137.035999151 is straddled by CODATA-2018/2022 and the gap (6.7e-8) < inter-edition shift (9.3e-8). Falsifiable bet: refined alpha^-1 converges to 137.035999151 from below. The holonomy THE-structure and CHK match do not depend on this layer; 2nd-order holonomy does NOT close it.
 
 ### D0-CRITICAL-COLLAPSE-001
 
@@ -869,6 +882,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Fixed finite boundary trace-heat capacity block proves T^2 heat moments as even Lucas traces and saturation as boundary encoding while macro gravity stays bridge-scoped through the finite witness.
+
+### D0-ALPHA-HOLONOMY-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_seam_holonomy_alpha.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter21 closure-holonomy, replaces q_res fit] alpha^-1=359phi^-2-phi^-5+phi^-17(1+lnphi*sin(12/5))=137.035999151, matches CODATA-2018 to 6.7e-8 (~9 digits), zero free reals. HONEST SPLIT: the STRUCTURE (12/5 angle, sin-channel, phi^-17 depth) is THE via D0-PI0-DISCRETE-ANGLE-001 + D0-Q8-SIN-CHANNEL-001; this row is the 9-digit data MATCH = CHK (controls cos/exp/depth FAIL); the last ~1e-8 is HYP (D0-ALPHA-MEASUREMENT-LIMIT-001). NOT a THE derivation of the alpha value. Residue route BLOCKED (D0-CVFT-F1).
 
 ### D0-ARCHIVE-ENTROPY-001
 
@@ -1375,7 +1401,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_zeta_residue_alpha.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|; one zeta carries alpha+capacity. (NB: this module proves ONLY the edge-zeta moments and has NO zetaAdj; the rank=3/nullity fact is proved separately and unwired to any zeta in D0.Claims.Signature31Split + D0.Claims.KernelZoneSplit.) phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier).
+- notes: zeta_D(s)=Tr|D|^-s defined on K(9,11,13) (was ABSENT in v14, golden-0169). Finite spectral moments closed by cert: zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1=137.03563, zeta_E(0)=359=|E|; one zeta carries alpha+capacity. (NB: this module proves ONLY the edge-zeta moments and has NO zetaAdj; the rank=3/nullity fact is proved separately and unwired to any zeta in D0.Claims.Signature31Split + D0.Claims.KernelZoneSplit.) phi^-5 seam=xi5 (D0-XI5, proved). HONEST: finite scene has no dimension pole so alpha is the s=-1 MOMENT not a residue; full residue-at-pole (GOLDEN THE 15.4.2) needs profinite limit -> theorem-target. alpha is structural form (~3.7e-4 residual vs 1.5e-10 exp), NOT a precision prediction; Delta_alpha (top-vs-alg ~4e-4) is DISTINCT from phi^-5, analytic 2nd-order owner remains theorem-target. [Iter5 bless] release CERT-CLOSED->CORE-FORMALIZED: the Lean theorem zeta_residue_alpha_finite is gap-free (finite moments, no sorry/axiom/bridge); the residue-at-pole route + Delta_alpha remain theorem-targets (boundary unchanged). alpha stays a structural form, NOT a precision prediction. [Iter5 owner-edge] Delta_alpha analytic owner = D0-CVFT-F1 (feedback-resolvent trace program); residue-at-pole route depends on the same engine (frontier). [Iter21] Residue route now BLOCKED (transcendental, D0-CVFT-F1); the working route to the 9-digit alpha is the closure holonomy D0-ALPHA-HOLONOMY-002. This row keeps alpha_top=zeta_E(-1) (THE) + xi5 (THE) unchanged.
 
 ### D0-ARCHIVE-ACTION-001
 
@@ -1817,7 +1843,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_delta_alpha_pi0_moment.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: [Iter12 Track-B, sharpens obl.4] Finite shadow of the Delta_alpha analytic owner (CVFT-F1). With delta0=1/2 phi^-3 the algebraic writing collapses to a depth-<=2 archive moment polynomial in the rank-3 unit u=phi^-3: alpha_alg^-1 = mu2*u^2 + mu1*u = (12288/5)phi^-6 + (1/3)phi^-3 exactly in Q(phi), mu2=2^11 pi0 phi^-2, mu1=1/3, mu0=0. This is the shape of the Feshbach-Schur resolvent moment expansion W_eff(z)=A+sum_k z^-(k+1) B D^k C (D0-GENERATIVE-DYNAMICS-001): exponents -6,-3 = -2*rank,-1*rank (archive depth 2,1); the 2nd moment mu2 carries the pi0 feedback phase; no constant term mu0=0 (zero archive depth => zero anomaly, forced). Lean D0.Spectral.DeltaAlphaMoment (delta_alpha_moment): exact Q(phi) decomposition + value + P(0)=0, gap-free. Cert vp_delta_alpha_pi0_moment.py (can-FAIL: wrong unit/constant/no-pi0 controls). HONEST: this SHARPENS, does NOT close, obl.4 -- the two residue amplitudes mu2,mu1 (W_eff residues at the pole) stay the s->pole continuation (profinite spectral measure); CVFT-F1 stays PROOF-TARGET, Delta_alpha status unchanged. 2^11=2^V11 flagged for the continuation, NOT claimed forced (anti-numerology).
+- notes: [Iter12 Track-B, sharpens obl.4] Finite shadow of the Delta_alpha analytic owner (CVFT-F1). With delta0=1/2 phi^-3 the algebraic writing collapses to a depth-<=2 archive moment polynomial in the rank-3 unit u=phi^-3: alpha_alg^-1 = mu2*u^2 + mu1*u = (12288/5)phi^-6 + (1/3)phi^-3 exactly in Q(phi), mu2=2^11 pi0 phi^-2, mu1=1/3, mu0=0. This is the shape of the Feshbach-Schur resolvent moment expansion W_eff(z)=A+sum_k z^-(k+1) B D^k C (D0-GENERATIVE-DYNAMICS-001): exponents -6,-3 = -2*rank,-1*rank (archive depth 2,1); the 2nd moment mu2 carries the pi0 feedback phase; no constant term mu0=0 (zero archive depth => zero anomaly, forced). Lean D0.Spectral.DeltaAlphaMoment (delta_alpha_moment): exact Q(phi) decomposition + value + P(0)=0, gap-free. Cert vp_delta_alpha_pi0_moment.py (can-FAIL: wrong unit/constant/no-pi0 controls). HONEST: this SHARPENS, does NOT close, obl.4 -- the two residue amplitudes mu2,mu1 (W_eff residues at the pole) stay the s->pole continuation (profinite spectral measure); CVFT-F1 stays PROOF-TARGET, Delta_alpha status unchanged. 2^11=2^V11 flagged for the continuation, NOT claimed forced (anti-numerology). [Iter21] The s->pole residue route is BLOCKED (transcendental vs Q(phi), D0-CVFT-F1); the depth-2 moment FORM stays THE, but the 9-digit alpha is obtained via the closure holonomy D0-ALPHA-HOLONOMY-002, not via residue extraction.
 
 ### D0-DETECTION-QUADRATIC-001
 
@@ -2350,7 +2376,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_mixing_hierarchy_inversion.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: [8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.MixingHierarchyInversion (mixing_hierarchy_inversion); native_decide/decide on the real finite content.
+- notes: [8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.MixingHierarchyInversion (mixing_hierarchy_inversion); native_decide/decide on the real finite content. [Iter21] the rank-nullity demokratie skeleton now carries the DERIVED delta0-corrections via D0-PMNS-SEAM-TOPOLOGY-001 (seam-topology rule: degree = bare/open/closed); the former MECH-LIMIT angle family is replaced by the derived rule.
 
 ### D0-NCG-INDEX-001
 
@@ -2469,6 +2495,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: D0 admissible period-one quadratic phase class proved; full global Lagrange spectrum remains external mathematical background. [8C: linked passing cert]
 
+### D0-PI0-DISCRETE-ANGLE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Geometry.Pi0DiscreteAngle`
+- theorem: `seam_angle_eq_twelve_fifths`
+- cert: `vp_pi0_discrete_angle.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21] 2*pi0*(2-phi)=12/5 exactly in Q(phi) (pi0=(6/5)phi^2 reused from BOOK_04 04.6.pi.4), machine-checked D0.Geometry.Pi0DiscreteAngle. The seam holonomy angle is a closed rational. pi-vs-pi0 is the SYMBOLIC exactness discriminator (pi0~=pi numerically, not a gross-alpha control).
+
 ### D0-PISOT-CONTRACTION-TIME-ARROW-001
 
 - type: `core`
@@ -2482,6 +2521,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter19 Wave6] phi (dominant root of monic x^2-x-1) expands >1; its Galois conjugate psi=(1-sqrt5)/2 contracts |psi|<1 — the irreversible time direction. Both are algebraic integers (phi^2=phi+1; psi^2=psi+1); phi is a Pisot number. Proved internally from D0.Core.Phi via sqrt5 bounds (2<sqrt5<3) + nlinarith. Full Mathlib Polynomial/IsIntegral Pisot-number class is the named continuation. Backs BOOK_06 06.36; complements D0-TIME-2D-PISOT-001 (the toral T spectral-radius side).
 
+### D0-PMNS-SEAM-TOPOLOGY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.PMNSSeamTopology`
+- theorem: `pmns_seam_topology`
+- cert: `vp_pmns_seam_topology.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21] one rule (delta0-degree=seam topology bare/open/closed -> delta0^{0,1,2}) gives all three PMNS angles. RULE THE: directional content machine-checked (D0.Matter.PMNSSeamTopology: th13>0, th23>1/2, th12<1/3). NUMBERS CHK: all three <1sigma vs JUNO-2026+NuFIT-6.0 (cert), permutation control FAILS (th12 deg1->24sigma, th23 deg2->2.7sigma). Replaces the MECH-LIMIT angle family. Cone-angle 2pi0 micro-derivation = named MECH-LIMIT residual.
+
 ### D0-Q8-DEDEKIND-MINIMALITY-001
 
 - type: `core`
@@ -2494,6 +2546,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [8D Tier-1 forced] unique minimal Hamiltonian non-abelian group <=8 (Dedekind 1897); [Q8,Q8]=Z=Phi={+-1}. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Q8DedekindMinimality (q8_dedekind_minimality); native_decide/decide on the real finite content.
+
+### D0-Q8-SIN-CHANNEL-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Spectral.SeamHolonomy`
+- theorem: `seamU_offdiagonal`
+- cert: `vp_q8_sin_channel.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21] the seam correction rides the off-diagonal sin-channel, not the trace (cos): exp(theta*G)=cos*I+sin*G with G^2=-I, off-diagonal=sin (D0.Spectral.SeamHolonomy.seamU_offdiagonal). Forced by Q8/quaternion structure.
 
 ### D0-QUANT-MET-001
 
@@ -2585,6 +2650,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter18 reuse item 3] Closes the §04.2 do not cite as proven numerical readout to an EXACT closed form. The reduced off-diagonal S (zero diagonal) has det(S)=2·1287/√(528·440·480)=2574/10560=39/160 (√(528·440·480)=10560 exact); so the two active eigenvalues sum to 3 (trace) and multiply to 2+39/160=359/160, i.e. roots of 160λ²−480λ+359 = 3/2±√10/40. Cert vp_scene_active_eigenvalues_exact.py (exact Q(√10), can-FAIL) + Lean D0.Geometry.SceneActiveEigenvalues (linear_combination on √10²=10). ERROR CORRECTION: §04.2 stated decimals 1.420838683198/1.579158554151 were slightly wrong (sum 2.999997≠3); corrected to 1.42094306/1.57905694 (sum exactly 3).
+
+### D0-SEAM-HOLONOMY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.SeamHolonomy`
+- theorem: `seamU_orthogonal`
+- cert: `vp_seam_holonomy_alpha.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 closure-holonomy] Closure-Holonomy Law: monodromy U=cos*I+sin*G with G^2=-I is an orthogonal rotation (D0.Spectral.SeamHolonomy.seamU_orthogonal); the correction multiplier 1+h_KS*sin(theta_seam) applies to alpha and PMNS. Structure THE; 2 named lemma-debts: cone-angle 2pi0 micro-derivation and the delta0=(6/5) chain lean on corpus THE (named proof-targets).
 
 ### D0-SIGNATURE-31-SPLIT-001
 
@@ -2728,6 +2806,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [8D Tier-1 forced] (Z/44)*=Z2xZ2xZ5, |.|=20=d13, char subgroups {1,4,5,20}, 20=4x5. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Window44GroupSpectrum (window44_group_spectrum); native_decide/decide on the real finite content.
+
+### D0-XI5-CROSS-SECTOR-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Claims.Xi5TorusDefect`
+- theorem: `xi5_torus_defect`
+- cert: `vp_xi5_cross_sector.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Iter21 COR] the proven xi5=phi^-5=phi^5-11 (D0.Claims.Xi5TorusDefect, L5=11) is the SAME seam shared by alpha_top (359phi^-2-xi5) and sin^2theta13 (xi5/4): one depth-5 closure geometry. Cross-sector correlation (COR), not a new derivation; control: phi^-4/phi^-6 != the alpha seam.
 
 ### D0-XI5-TORUS-DEFECT-001
 
@@ -2886,7 +2977,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_feshbach_residue_amplitudes.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed. [Iter17 ТЗ-2 Phase A — SHARPENED, not closed] The Feshbach-Schur residue attack (cert vp_feshbach_residue_amplitudes.py) DERIVES mu1=1/rank as the uniform depth-0 floor return (F_N=p^2 P_N over 3 active modes) and OWNS the pi0 factor of mu2 (pi0=(6/5)phi^2 derived in BOOK_04 SS04.6.pi.4). The remaining gap is narrowed from 'derive mu1,mu2' to the single capacity factor 2^11=2^V11: it is NOT a block-trace count (2048 not in {rank3,nullity30,33,359,8,...}) and the naive edge-pushforward pairs active<->archive with multiplicity 2 (na=2, nb=357, 2+357=359=|E|), not 2^11. So the active<->archive PAIRING multiplicity is the precise open gap. CVFT-F1 stays PROOF-TARGET; the form is forced, the 2^11 amplitude is NOT resolvent-derived; Delta_alpha unchanged. [Iter18 SHARPENED again, still not closed] 2^11 now has a NAMED CANDIDATE: 2^11=dim Cl(R^11)=dim Lambda*(R^11)=2^|V11| the full exterior/fermionic-Fock dimension over the 11-zone V11 (cert vp_cvft_clifford_fock_capacity.py), distinct from the irreducible Spin(11) spinor 2^5=32 and from the naive 2-edge pairing (na=2). The residue-extraction (s->pole residue traces over the full 2^11 Fock vs the naive 2-edge pairing) is owned by the Dixmier trace / noncommutative integral (owner edge D0-DIXMIER-RESIDUE-OWNER-001 / ASSUMP-DIXMIER-TRACE). Still PROOF-TARGET; gap re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11) vs 2-edge pairing'; NOT promoted.
+- notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed. [Iter17 ТЗ-2 Phase A — SHARPENED, not closed] The Feshbach-Schur residue attack (cert vp_feshbach_residue_amplitudes.py) DERIVES mu1=1/rank as the uniform depth-0 floor return (F_N=p^2 P_N over 3 active modes) and OWNS the pi0 factor of mu2 (pi0=(6/5)phi^2 derived in BOOK_04 SS04.6.pi.4). The remaining gap is narrowed from 'derive mu1,mu2' to the single capacity factor 2^11=2^V11: it is NOT a block-trace count (2048 not in {rank3,nullity30,33,359,8,...}) and the naive edge-pushforward pairs active<->archive with multiplicity 2 (na=2, nb=357, 2+357=359=|E|), not 2^11. So the active<->archive PAIRING multiplicity is the precise open gap. CVFT-F1 stays PROOF-TARGET; the form is forced, the 2^11 amplitude is NOT resolvent-derived; Delta_alpha unchanged. [Iter18 SHARPENED again, still not closed] 2^11 now has a NAMED CANDIDATE: 2^11=dim Cl(R^11)=dim Lambda*(R^11)=2^|V11| the full exterior/fermionic-Fock dimension over the 11-zone V11 (cert vp_cvft_clifford_fock_capacity.py), distinct from the irreducible Spin(11) spinor 2^5=32 and from the naive 2-edge pairing (na=2). The residue-extraction (s->pole residue traces over the full 2^11 Fock vs the naive 2-edge pairing) is owned by the Dixmier trace / noncommutative integral (owner edge D0-DIXMIER-RESIDUE-OWNER-001 / ASSUMP-DIXMIER-TRACE). Still PROOF-TARGET; gap re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11) vs 2-edge pairing'; NOT promoted. [Iter21 BLOCKED / closed-negative] The residue route to Delta_alpha is now BLOCKED: a phi-graded zeta residue carries ln phi (Res prop 1/ln phi, transcendental) whereas alpha_alg in Q(phi) is algebraic, so the residue cannot equal the algebraic anomaly. The WORKING route to the 9-digit alpha is the closure holonomy D0-ALPHA-HOLONOMY-002; the transcendence Lean-formalization (D0.Spectral.DeltaAlphaResidueBlocked) is a named target.
 
 ### D0-CVFT-F2
 
@@ -2965,6 +3056,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared.
+
+### D0-PMNS-DELTACP-PI0-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter21 HYP] delta_CP ~= pi0 ~= pi (CP near-conservation as the full-3-cycle angle); a falsifiable prediction in normal ordering. Not derived; named prediction target.
 
 ### D0-PUB-001
 
