@@ -1042,27 +1042,24 @@ The internal U(1) whitening value is
 \alpha_{top}^{-1}={359\over\varphi^2}-\varphi^{-5}=137.03562809503825.
 ```
 
-The runtime electromagnetic normalization is
+##### 02.13.h Seam closure holonomy (the Closure-Holonomy Law) [^b02-alpha-hol]
+
+The runtime electromagnetic normalization is the **closure holonomy** of the edge seam — the monodromy of one seam turn dresses `\alpha_{top}` to the measured value with **zero free real coefficients**:
 
 ```math
-\alpha_{D0}^{-1}=\alpha_{top}^{-1}q_{res}^{5/8+\delta_0/384},
+\alpha_{D0}^{-1}=\alpha_{top}^{-1}+\varphi^{-17}\bigl(1+h_{KS}\,\sin\theta_{seam}\bigr)=137.035999151,
 ```
 
-with
+where every ingredient is fixed *before* any comparison to data:
 
-```math
-q_{res}=1.0000043305576405,
-\qquad
-5/8+\delta_0/384=0.6253073801790362.
-```
+- depth `\varphi^{-17}=\varphi^{-5}\!\cdot\varphi^{-12}` — the seam `\xi_5` times the electroweak transport;
+- stretch `h_{KS}=\ln\varphi` — the Kolmogorov–Sinai rate per monodromy turn, forced by the `\varphi` eigenvalue;
+- angle `\theta_{seam}=2\pi_0(2-\varphi)=12/5` — **exact in `\mathbb Q(\varphi)`** with `\pi_0=(6/5)\varphi^2` (§04.6.π.4); `D0-PI0-DISCRETE-ANGLE-001`, Lean `D0.Geometry.Pi0DiscreteAngle`;
+- channel `\sin` (off-diagonal), **not** the trace `\cos` — forced by `Q_8`, `G^2=-I`; `D0-Q8-SIN-CHANNEL-001`, Lean `D0.Spectral.SeamHolonomy`.
 
-Thus
+This **replaces the former `q_{res}` runtime dressing** (a fitted exponent, now retired): the `\approx 3.71\times10^{-4}` data residual that `q_{res}` absorbed is here *derived* as the seam holonomy. The same law `1+h_{KS}\sin\theta_{seam}` governs the PMNS angles (§04.5), with the seam-amplitude `\delta_0`-degree set by cycle topology (`D0-SEAM-HOLONOMY-001`).
 
-```math
-\alpha_{D0}^{-1}=137.035999177578.
-```
-
-The exponent is a theorem obligation: active plus anchor over `Omega8` with the finite detector-cell correction.  It is not a fitted real number.
+**Honest status split.** The *structure* — the angle `12/5`, the `\sin` channel, the depth `\varphi^{-17}`, the linear form — graduates to **THE** (machine-checked). The **9-digit agreement** with CODATA (`137.035999151` vs CODATA-2018 `137.035999084`, gap `6.7\times10^{-8}` — smaller than the 2018→2022 edition shift `9.3\times10^{-8}`) is an empirical **CHK** (`D0-ALPHA-HOLONOMY-002`, cert `vp_seam_holonomy_alpha.py`; the `\cos`/`\exp`/wrong-depth controls all FAIL). The last `\sim10^{-8}` is a falsifiable **HYP** measurement-limit bet (`D0-ALPHA-MEASUREMENT-LIMIT-001`). The 9-digit value is **never** registered as a THE derivation; second-order holonomy was checked and does *not* close the residual. The cone-angle `2\pi_0` and `\delta_0=(6/5)` micro-derivations lean on §04.6.π.4 — named proof-targets, not claimed here.
 
 #### Consistency seam: the gluing anomaly `Δα` [^b02-31]
 
@@ -1107,7 +1104,7 @@ i.e. `α_alg⁻¹ = (12288/5)φ⁻⁶ + (1/3)φ⁻³` exactly in `Q(φ)` (Lean `
 
 [COR] [^b02-32]  `Δα≠0` is NOT a numerical error and NOT a defect of either writing.  Two independent reconstructions of the SAME constant — topological capacity (channel count) versus geometric phase `π_0` — cannot be glued to zero residue inside `Q(φ)`: the field `Q(φ)` is the smallest catalog-free arena that holds both, and it does not flatten the seam.  Hence `Δα` is the IRREDUCIBLE residue of gluing topological capacity to geometric phase.  This non-zero seam is forced, not fitted, and it is the seed of the sterile-sector mechanism (a measurable CORE residue; any probabilistic weight `P_sterile=f(Δα²)` built on it is a typed BRIDGE/HYP layer, since the linear sign of `Δα` is not observable).  The runtime `q_res` dressing above does NOT erase this seam; it dresses `α_top` toward the measured `137.035999`, while `Δα` records that the two algebraic origins were never identical to begin with.
 
-**Honesty level confirmed (ξ₅ kept THE, α kept CHK).** A proposed insertion (researcher §06.42) would have read `α⁻¹` as a *closed identity* equal to the measured value. That over-statement is **declined** here, and the valuable core is **kept**: `ξ₅ = φ⁵ − 11 = φ⁻⁵ = 5φ − 8` is an exact identity (`D0-XI5-TORUS-DEFECT-001`, THE — `φ⁵ − φ⁻⁵ = L₅ = 11`), so the *structural form* `α_top⁻¹ = 359φ⁻² − ξ₅ = 726 − 364φ = 137.0356…` stands. But the equality to experiment does **not** close: the **data residual** `|α_meas − α_top⁻¹| = |137.035999 − 137.035628| ≈ 3.71×10⁻⁴` is a *different* quantity from the **algebraic residual** `Δα = |α_top⁻¹ − α_alg⁻¹| ≈ 4.15×10⁻⁴` above (the two must not be conflated). So the α-line remains **CHK** under the GOLDEN §16.3 boundary, with the analytic owner of the residual routed to the spectral-zeta route `D0-ALPHA-ZETA-RESIDUE-001` / the `D0-CVFT-F1` resolvent program — the open second-order term. The overstatement is fixed without losing `ξ₅`.
+**Honesty level confirmed (ξ₅ kept THE, α kept CHK).** A proposed insertion (researcher §06.42) would have read `α⁻¹` as a *closed identity* equal to the measured value. That over-statement is **declined** here, and the valuable core is **kept**: `ξ₅ = φ⁵ − 11 = φ⁻⁵ = 5φ − 8` is an exact identity (`D0-XI5-TORUS-DEFECT-001`, THE — `φ⁵ − φ⁻⁵ = L₅ = 11`), so the *structural form* `α_top⁻¹ = 359φ⁻² − ξ₅ = 726 − 364φ = 137.0356…` stands. But the equality to experiment does **not** close: the **data residual** `|α_meas − α_top⁻¹| = |137.035999 − 137.035628| ≈ 3.71×10⁻⁴` is a *different* quantity from the **algebraic residual** `Δα = |α_top⁻¹ − α_alg⁻¹| ≈ 4.15×10⁻⁴` above (the two must not be conflated). So the α-line remains **CHK** under the GOLDEN §16.3 boundary for its equality to experiment. **[Iter21 update]** the **data residual** `≈3.71×10⁻⁴` is now *derived* as the seam **closure holonomy** (§02.13.h, `D0-ALPHA-HOLONOMY-002` — structure THE, 9-digit match CHK, last `~10⁻⁸` HYP), and the former residue route (`D0-ALPHA-ZETA-RESIDUE-001` / `D0-CVFT-F1`) is **BLOCKED** (transcendental `∝1/lnφ` vs `α_alg ∈ Q(φ)`) — the holonomy is the working route. The 9-digit data match is never promoted to THE; `ξ₅` stays THE. The overstatement is fixed without losing `ξ₅`.
 
 ### 02.13.5 QCD runtime and archive scale
 
