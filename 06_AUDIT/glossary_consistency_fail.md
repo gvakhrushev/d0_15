@@ -1,5 +1,5 @@
 # Glossary Consistency Failures
-Generated 2026-06-17T13:43:33.938675+00:00
+Generated 2026-06-17T16:23:08.923161+00:00
 
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:71 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:104 [UNDEFINED_D0_TERM_IN_HEADING] ### The three status layers: CORE / FORMALISM / BRIDGE
@@ -103,28 +103,28 @@ Generated 2026-06-17T13:43:33.938675+00:00
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:2 [UNDEFINED_D0_TERM_IN_HEADING] # BOOK 04 — Spectrum, Matter, and Finite Selector Theory
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:106 [UNDEFINED_D0_TERM_IN_HEADING] ### Integer projection forces the Lucas trace selector
 - **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:153 [UNDEFINED_D0_TERM_IN_HEADING] ### Selector support origin
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:282 [METAPHOR_IN_PROSE] ### 04.1.START Why the shell ladder starts at 9 (forced operationality level)
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:286 [METAPHOR_IN_PROSE] not a tuned offset (the address ladder and the `+2` step are owned by BOOK_01
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:399 [METAPHOR_IN_PROSE] The baryon flavour carrier is the three-body lift
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:548 [METAPHOR_IN_PROSE] The jump at `n=15` marks where control over the carrier is lost: capacity outruns the `9n` budget, so no further zone ca
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:633 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.5 Terminal matter triad
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:704 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.5.4 Fibonacci-fusion / Jones-index bridge to φ
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:919 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.7 Electroweak radial depth as a concrete finite variational selector
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:954 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.7.1 The electron is the terminal calibration register because it is canonically selected, not assumed
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:975 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.8 Charged leptons as a concrete finite variational selector family
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1032 [METAPHOR_IN_PROSE] **[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized [^b04-88]. [^b04-79].** The reason the electron has copies `μ,
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1108 [METAPHOR_IN_PROSE] **[§00.9 grammar-priority caveat — HYP, not THE].** The operator-origin decimals (e.g. `r_μ=3.8814328681047283`) are a *
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1349 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.12 QCD runtime and confinement grammar
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1368 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.13 Baryon support and nucleon readout
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1443 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.13.1 Full-support replacement of local finite variational selector windows
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1513 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(L_M)
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1515 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(\Gamma_\chi^\dagger\Gamma_\chi)
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1517 [METAPHOR_IN_PROSE] \operatorname{liftGen}(F_{fl}^\dagger F_{fl})
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1519 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(V_{sp}^\dagger V_{sp})
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1526 [METAPHOR_IN_PROSE] The flavour defect enters exclusively through the typed \(\operatorname{liftGen}\) term. Mismatched Gen×Gen blocks added
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1599 [METAPHOR_IN_PROSE] -> terminal-lift comparison.
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1683 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.23 Selector closures owned by finite operators
-- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1699 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.24 Final finite variational selector-origin closures
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:284 [METAPHOR_IN_PROSE] ### 04.1.START Why the shell ladder starts at 9 (forced operationality level)
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:288 [METAPHOR_IN_PROSE] not a tuned offset (the address ladder and the `+2` step are owned by BOOK_01
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:401 [METAPHOR_IN_PROSE] The baryon flavour carrier is the three-body lift
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:550 [METAPHOR_IN_PROSE] The jump at `n=15` marks where control over the carrier is lost: capacity outruns the `9n` budget, so no further zone ca
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:635 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.5 Terminal matter triad
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:706 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.5.4 Fibonacci-fusion / Jones-index bridge to φ
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:921 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.7 Electroweak radial depth as a concrete finite variational selector
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:956 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.7.1 The electron is the terminal calibration register because it is canonically selected, not assumed
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:977 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.8 Charged leptons as a concrete finite variational selector family
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1034 [METAPHOR_IN_PROSE] **[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized [^b04-88]. [^b04-79].** The reason the electron has copies `μ,
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1110 [METAPHOR_IN_PROSE] **[§00.9 grammar-priority caveat — HYP, not THE].** The operator-origin decimals (e.g. `r_μ=3.8814328681047283`) are a *
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1351 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.12 QCD runtime and confinement grammar
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1370 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.13 Baryon support and nucleon readout
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1445 [UNDEFINED_D0_TERM_IN_HEADING] ### 04.13.1 Full-support replacement of local finite variational selector windows
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1515 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(L_M)
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1517 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(\Gamma_\chi^\dagger\Gamma_\chi)
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1519 [METAPHOR_IN_PROSE] \operatorname{liftGen}(F_{fl}^\dagger F_{fl})
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1521 [METAPHOR_IN_PROSE] \operatorname{liftEdge}(V_{sp}^\dagger V_{sp})
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1528 [METAPHOR_IN_PROSE] The flavour defect enters exclusively through the typed \(\operatorname{liftGen}\) term. Mismatched Gen×Gen blocks added
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1601 [METAPHOR_IN_PROSE] -> terminal-lift comparison.
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1685 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.23 Selector closures owned by finite operators
+- **BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md**:1701 [UNDEFINED_D0_TERM_IN_HEADING] ## 04.24 Final finite variational selector-origin closures
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:22 [METAPHOR_IN_PROSE] Book 05 classifies every active claim as core theorem, sector theorem, operator scaffold, bridge law, empirical passport
 - **BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md**:37 [METAPHOR_IN_PROSE] MESON-TYPED-TRANSFER-CERT-CLOSED: finite typed edge-generation meson transfer operator exists, is self-adjoint/positive,
@@ -196,18 +196,18 @@ Generated 2026-06-17T13:43:33.938675+00:00
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1396 [METAPHOR_IN_PROSE] The finite spectral-action ladder and the higher-curvature floor of the table
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1472 [METAPHOR_IN_PROSE] -> finite spectral ladder
 - **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1481 [METAPHOR_IN_PROSE] | finite heat-trace A0/A2 ladder | `CORE-CLOSED` |
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1552 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1552 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1682 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.40 Entropic archive to macro Einstein interface
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1697 [METAPHOR_IN_PROSE] 07.4 Entropic surface tension
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1712 [METAPHOR_IN_PROSE] surface tension.  The macro Lean owner packages a
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1721 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.41 Trace-Heat-Capacity Gravity
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1760 [METAPHOR_IN_PROSE] cut capacity is holographic area; entropic surface tension is nonnegative;
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1805 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.50 Finite horizon capacity and A/4 witness
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1869 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.48 LIGO BBH mass-defect passport
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1913 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.CVFT.Horizon emission as conjugate archive leakage
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1972 [UNDEFINED_D0_TERM_IN_HEADING] ## D0_v16 Dusty-plasma channel-clearing bridge
-- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1988 [UNDEFINED_D0_TERM_IN_HEADING] ### 07.51.1 Arrested collapse forms a horizonless seam (bridge)
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1554 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1554 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.36 Tick-gauge compatibility of the gravity bridge
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1684 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.40 Entropic archive to macro Einstein interface
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1699 [METAPHOR_IN_PROSE] 07.4 Entropic surface tension
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1714 [METAPHOR_IN_PROSE] surface tension.  The macro Lean owner packages a
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1723 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.41 Trace-Heat-Capacity Gravity
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1762 [METAPHOR_IN_PROSE] cut capacity is holographic area; entropic surface tension is nonnegative;
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1807 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.50 Finite horizon capacity and A/4 witness
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1871 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.48 LIGO BBH mass-defect passport
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1915 [UNDEFINED_D0_TERM_IN_HEADING] ## 07.CVFT.Horizon emission as conjugate archive leakage
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1974 [UNDEFINED_D0_TERM_IN_HEADING] ## D0_v16 Dusty-plasma channel-clearing bridge
+- **BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md**:1990 [UNDEFINED_D0_TERM_IN_HEADING] ### 07.51.1 Arrested collapse forms a horizonless seam (bridge)
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:0 [MISSING_STANDARD_LANGUAGE_BLOCK] No first-use / glossary paragraph found
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:2 [UNDEFINED_D0_TERM_IN_HEADING] # BOOK 08 — Cosmology, Archive, and Observable Transfer
 - **BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md**:42 [UNDEFINED_D0_TERM_IN_HEADING] ## 08.7a Dark matter as archive phason glass
