@@ -14,7 +14,7 @@ REQUIRED_HEADERS: dict[str, list[str]] = {
     ],
     "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md": [
         "## 01.4a Condensed φ-quasicrystalline support",
-        "## 01.19a Cut-and-project reading of phase unfolding"
+        "## 01.19a Cut-and-project origin of visible branches"
     ],
     "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": [
         "## 02.34 Master Evolution and φ-quasicrystal proof spine"
