@@ -54,12 +54,12 @@ checks: list[tuple[Path, list[str]]] = [
         "no BAO/DESI/SDE likelihood is allowed to promote to core cosmology closure",
     ]),
     (BOOKS / "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md", [
-        "08.3.1 v14 active split",
+        "08.3.1 Frozen archive cosmology before survey likelihood",
         "InternalArchiveCosmologyObject",
         "SurveyLikelihoodPassport",
         "survey_comparison_requires_nonempty_manifest",
         "survey_likelihood_cannot_promote_to_core_cosmology",
-        "08.41 P7 reproducibility split closure",
+        "08.41 Reproducibility split closure",
     ]),
 ]
 

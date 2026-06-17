@@ -45,7 +45,7 @@ checks: list[tuple[Path, list[str]]] = [
         "no alternate factor/representation ledger",
     ]),
     (BOOKS / "BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md", [
-        "04.10 SM-facing finite gauge decomposition",
+        "04.11 SM-facing finite gauge decomposition",
         "D0.Gauge.FrozenSMGaugeDecomposition",
         "no-free-decomposition owners",
         "not a fitted Standard-Model import",

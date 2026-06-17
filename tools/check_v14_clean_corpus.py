@@ -51,7 +51,7 @@ if NEW_BOOK04.exists():
         "## 04.3 Matter objects are selectors, not passports",
         "## 04.4 Matter as defects and gap-labeled spectra over the φ-quasicrystalline hull",
         "## 04.10 CKM as finite basis origin, not a free matrix",
-        "## 04.14 Baryon multiplet boundary as a closed no-go",
+        "## 04.14 Baryon 40/56 carrier and anonymous pole scaffold (closed)",
         "## 04.15 Meson/chiral boundary as a closed no-go",
         "## 04.22 Remaining matter operator frontiers",
         "## 04.V Nuclear shell-contact SRC operator",
@@ -81,7 +81,7 @@ if BOOK05.exists():
         "ledger/status last.",
         "## 05.3 Standard-language audit rule",
         "## 05.12 Theory-improvement gate",
-        "## 05.13 Active priority gates",
+        "## 05.13 Current inherited priority gates",
         "## 05.18 Bridge proof-cell rule",
         "## 05.24 Editorial rule for this book",
     ]
