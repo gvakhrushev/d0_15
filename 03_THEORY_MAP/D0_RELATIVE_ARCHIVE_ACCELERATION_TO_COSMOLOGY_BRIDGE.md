@@ -68,7 +68,7 @@ Executable verification is provided by:
 - `05_CERTS/vp_relative_archive_acceleration_cosmology_bridge.py`
 - `05_CERTS/vp_fractal_continuum_predictions.py` (distinguishes absolute vs. relative second differences)
 
-See also the fractal tick substrate in `D0_v15_INFORMATIONAL_MECHANICS_FRACTAL_TICK.md` and the prior continuum envelope work.
+See also the fractal tick substrate in `D0_INFORMATIONAL_MECHANICS_FRACTAL_TICK.md` and the prior continuum envelope work.
 
 ## Relation to Book 08
 

@@ -78,6 +78,6 @@ g E_\Omega g^{-1} = E_\Omega.
 Insert the corrected orbit-average language and the semigroup uniqueness theorem (with the \(A(s+t)=A(s)A(t)/A_0\) form) into the informational-mechanics / fractal tick section. Reference the executable witnesses in the v15 closure cert runner.
 
 ## 8. Relation to Existing Material
-This document supersedes placeholder language in D0_v15_CONTINUUM_FROM_FRACTAL_TICK.md and D0_v15_TOPOLOGICAL_HALTING_ONION_HORIZON_JET.md for the algebraic details, while preserving the overall scope. The full integration appears in the Grand Synthesis layer.
+This document supersedes placeholder language in D0_CONTINUUM_FROM_FRACTAL_TICK.md and D0_TOPOLOGICAL_HALTING_ONION_HORIZON_JET.md for the algebraic details, while preserving the overall scope. The full integration appears in the Grand Synthesis layer.
 
 (Executable support appears in the v15 closure certs: vp_fractal_tick_informational_mechanics.py, vp_continuum_from_fractal_tick.py, vp_mobius_witness_topological_halting.py.)

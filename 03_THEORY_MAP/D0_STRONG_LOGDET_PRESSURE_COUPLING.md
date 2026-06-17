@@ -60,7 +60,7 @@ The weak bridge law (relative-pressure term \(\mathsf P_{rel} = c_R \Delta R_n\)
 
 ## Relation to Prior Work
 
-See `D0_v15_ARCHIVE_PRESSURE_COUPLING_FROM_RELATIVE_ACCELERATION.md` (weak bridge, status RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED) and `D0_v15_RELATIVE_ARCHIVE_ACCELERATION_TO_COSMOLOGY_BRIDGE.md` for the upstream acceleration observable.
+See `D0_ARCHIVE_PRESSURE_COUPLING_FROM_RELATIVE_ACCELERATION.md` (weak bridge, status RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED) and `D0_RELATIVE_ARCHIVE_ACCELERATION_TO_COSMOLOGY_BRIDGE.md` for the upstream acceleration observable.
 
 Executable verification is in `05_CERTS/vp_strong_logdet_pressure_coupling.py`.
 

@@ -8,15 +8,15 @@ PUB = ROOT / '00_PUBLICATION'
 STATUS = ROOT / '03_THEORY_MAP' / 'theory_status_map.csv'
 
 REQUIRED = [
-    'D0_v16_CLAIMS_REGISTER.md',
-    'D0_v16_CLAIMS_REGISTER.csv',
-    'D0_v16_THEOREM_DEPENDENCY_GRAPH.md',
-    'D0_v16_PUBLICATION_ABSTRACT.md',
-    'D0_v16_REVIEWER_RISK_LEDGER.md',
-    'D0_v16_DO_NOT_CLAIM.md',
-    'D0_v16_FINAL_PUBLICATION_CHECKLIST.md',
-    'D0_v16_RELEASE_NOTES.md',
-    'D0_v16_MINIMAL_THEORY_SPINE.md',
+    'D0_CLAIMS_REGISTER.md',
+    'D0_CLAIMS_REGISTER.csv',
+    'D0_THEOREM_DEPENDENCY_GRAPH.md',
+    'D0_PUBLICATION_ABSTRACT.md',
+    'D0_REVIEWER_RISK_LEDGER.md',
+    'D0_DO_NOT_CLAIM.md',
+    'D0_FINAL_PUBLICATION_CHECKLIST.md',
+    'D0_RELEASE_NOTES.md',
+    'D0_MINIMAL_THEORY_SPINE.md',
 ]
 
 
@@ -41,18 +41,18 @@ def main():
     assert boolish(ligo[0]['uses_bridge_assumptions'])
     print('PASS_EXTERNAL_ROWS_GUARDED')
 
-    reg = (PUB/'D0_v16_CLAIMS_REGISTER.csv').read_text(encoding='utf-8')
+    reg = (PUB/'D0_CLAIMS_REGISTER.csv').read_text(encoding='utf-8')
     assert 'LAB-BRIDGE / EMPIRICAL-PASSPORT' in reg or 'LAB-BRIDGE' in reg
     assert 'EMPIRICAL-NEGATIVE' in reg
     print('PASS_CLAIMS_REGISTER_CLASSES_PRESENT')
 
-    dep = (PUB/'D0_v16_THEOREM_DEPENDENCY_GRAPH.md').read_text(encoding='utf-8')
+    dep = (PUB/'D0_THEOREM_DEPENDENCY_GRAPH.md').read_text(encoding='utf-8')
     assert 'does not depend on' in dep.lower()
     assert 'LIGO/GWOSC' in dep
     assert 'dusty-plasma' in dep or 'dusty plasma' in dep
     print('PASS_CORE_INSULATION_DECLARED')
 
-    abstract = (PUB/'D0_v16_PUBLICATION_ABSTRACT.md').read_text(encoding='utf-8')
+    abstract = (PUB/'D0_PUBLICATION_ABSTRACT.md').read_text(encoding='utf-8')
     assert 'negative-control' in abstract or 'negative controls' in abstract
     assert 'not as proof of quantum gravity' in abstract
     print('PASS_ABSTRACT_CLAIM_SAFE')

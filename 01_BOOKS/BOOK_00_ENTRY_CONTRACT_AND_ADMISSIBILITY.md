@@ -49,7 +49,7 @@ D0 slogan -> metaphor -> status row
 
 Book 00 fixes the public contract: finite support is prior to dynamics; the retained/traced split produces `P_N` and `Q_N`; `R_N = D_N^dagger D_N` is positive readout/Born response; `F_N = P_N U_N^dagger Q_N U_N P_N` is feedback return / unitarity defect; `U_eff = P_N U_N P_N` is compressed nonunitary pole dynamics; `mathsf P_fb = beta^(-1) partial_V log Z_N` is feedback pressure; external comparison is a bridge/passport layer.
 
-The master synthesis is `03_THEORY_MAP/D0_v15_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_v15_PUBLICATION_OUTLINE.md`.
+The master synthesis is `03_THEORY_MAP/D0_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_PUBLICATION_OUTLINE.md`.
 
 ## 00.0 Publication entry status
 

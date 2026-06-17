@@ -13,7 +13,7 @@ This document records the hardening steps taken to turn the v15 corpus into a fi
 - Archive modes separated (Determinant Expansion vs Archive Strain).
 - Script logs removed from books; results moved to _RESULTS/ or audit manifests.
 - Nuclear SRC integrated via F_N trace on pair overlap.
-- Grand Synthesis (D0_v15_GRAND_SYNTHESIS.md) added as v15 sector-law layer.
+- Grand Synthesis (D0_GRAND_SYNTHESIS.md) added as v15 sector-law layer.
 - New closure classes in Book 05.
 - Lightweight cert scaffolds for remaining operator targets.
 - Publication cleanup docs created.
