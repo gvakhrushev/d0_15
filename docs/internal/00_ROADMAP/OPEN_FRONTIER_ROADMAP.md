@@ -33,11 +33,14 @@ demotions 0. Status mix: 162 CORE-FORMALIZED · 50 CERT-CLOSED · 20 BRIDGE-ASSU
    is green, but ~5–6 `check_v14_*_sync` guards still fail on **book-staleness** + one **missing Lean
    module**. This is concrete, finite, and a publication-ready corpus should not ship red guards. The
    single highest-leverage next task. (See "Infrastructure debt" below.)
-2. **P1 · Close the holonomy residual gaps.** Iter-21 made α and PMNS *derived* closure holonomy at the
-   honest THE/CHK/HYP split, but it left **finite, named** sub-derivation gaps that underpin both: the
-   cone-angle `2π₀` and the `δ₀=(6/5)φ²` micro-derivation (§04.6.π.4), and the deferred
-   `DeltaAlphaResidueBlocked` transcendence lemma. These are real ℚ(φ)/cited-fact targets, not waiting
-   on anything external.
+2. **P1 · Holonomy residual gaps — finite items now CLOSED.** Iter-21 made α and PMNS *derived* closure
+   holonomy at the honest THE/CHK/HYP split. The two **finite / machine-closeable** sub-derivation gaps
+   that underpinned both are now closed: the cone-angle `π₀=(6/5)φ²` forcing
+   (`D0.Geometry.pi0_forced_by_closure_balance`) and the `Δα` residue route as a closed-negative no-go
+   (`D0.Spectral.delta_alpha_residue_route_blocked`, relative to one cited fact `ASSUMP-LINDEMANN-LNPHI`).
+   What remains under P1 is **not finite**: the Edge-α dilation/Puiseux leg (analytic continuation, P5-style
+   Mathlib-blocked) and the detection-quadratic categorical step (needs a faithful finite model). Next
+   real movement is therefore P2 (architecture) / P3 (data), not more P1 finite closes.
 3. **P2 · A2-Einstein / Hodge finite witness + the muon §00.9 question.** Architecture-level: a genuine
    finite witness for the spectral-Einstein/Hodge coupling. Honesty-level: derive the muon decimal
    ladder from the Lucas integers, or accept it as irreducibly HYP.
@@ -67,11 +70,18 @@ and would take the guard suite to fully green.
 
 ## P1 — finite / D0-closeable (the real next theory work)
 
+**Status (Iter-21):** the two genuinely **finite / machine-closeable** P1 items are now **CLOSED**
+(cone-angle `π₀` forcing; `Δα` residue route closed-negative). The remaining two rows are **not
+finite identities** — Edge-α is an *analytic* continuation leg (unitary dilation / Puiseux series,
+absent from Mathlib 4.30 → frontier, see P5), and detection-quadratic is a *categorical* forcing
+step (needs a faithful finite model that does not yet exist). Neither is a verified-closure target;
+they are kept here as named, honestly-bounded gaps, not quick wins.
+
 | item | registry anchor | status | what closes it |
 |---|---|---|---|
 | Cone-angle `2π₀` (`π₀=(6/5)φ²`) micro-derivation | `D0-PI0-DISCRETE-ANGLE-001`, §04.6.π.4 | ✅ **CLOSED (P1, Iter-21)** — Lean + cert | `D0.Geometry.pi0_forced_by_closure_balance` machine-checks that the δ₀-closure balance forces `π₀=(6/5)φ²` (cert `vp_pi0_discrete_angle.py` + control); residual = the deeper origin of the closure ratio (`§04.6.π.4`), a narrower named target |
 | `DeltaAlphaResidueBlocked` transcendence lemma | `D0-CVFT-F1` (route **BLOCKED**) | ✅ **CLOSED (P1, Iter-21)** — Lean + 1 cited fact | `D0.Spectral.delta_alpha_residue_route_blocked` proves `1/lnφ` is transcendental (inverse-transcendence) hence `∉ ℚ(φ)`, so no `φ`-graded residue equals the algebraic `Δα` — closed-negative no-go. Relative to the single explicit hypothesis `ASSUMP-LINDEMANN-LNPHI` (transcendence of `lnφ`, Lindemann–Weierstrass; a hypothesis, **not** a global axiom); D0 proves `φ`/`ℚ(φ)`-algebraicity + inverse-transcendence from `φ²=φ+1`. |
-| Edge-α dilation / Puiseux leg | `D0-EDGE-002` (trace leg CLOSED as `zetaEdge_neg_one`) | PROOF-TARGET | the unitary-dilation/Puiseux-index leg over the edge cover (the `Tr(F_E)=359φ⁻²−φ⁻⁵` trace identity is already CORE) |
+| Edge-α dilation / Puiseux leg | `D0-EDGE-002` (trace leg CLOSED as `zetaEdge_neg_one`; finite shadows cert-closed at `D0-EDGE-ALPHA-001`/`D0-EDGE-RAMIFICATION-001`) | PROOF-TARGET — **analytic frontier, not finite** | the unitary-dilation / torus-ramification **Puiseux** leg: analytic continuation of the edge trace through the ramified cover. This is *not* a finite ℚ(φ) identity; unitary-dilation (Sz.-Nagy) + Puiseux-continuation are absent from Mathlib 4.30 → effectively P5-blocked. The finite content (trace identity, ramification shadows) is already CORE/cert. |
 | detection-quadratic categorical exhaustiveness as a machine theorem | `D0-DETECTION-QUADRATIC-001` | CORE for the algebra; categorical step is forcing prose | formalize "exactly two comparison kinds" as a decidable statement if a faithful finite model exists |
 
 ## P2 — sharpenable but needs a new witness / architecture
