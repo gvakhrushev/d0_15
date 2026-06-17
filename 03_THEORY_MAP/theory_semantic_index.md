@@ -8,8 +8,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 50
-- `CORE-FORMALIZED`: 163
-- `CORE_BRIDGE_SPLIT`: 4
+- `CORE-FORMALIZED`: 162
+- `CORE_BRIDGE_SPLIT`: 5
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 16
 - `EXTERNAL-BACKGROUND`: 1
@@ -19,9 +19,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 26
+- `bridge`: 27
 - `certificate`: 66
-- `core`: 164
+- `core`: 163
 - `deprecated`: 3
 - `frontier`: 13
 - `no-go`: 16
@@ -29,9 +29,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 24
+- `empirical_passport`: 25
 - `external_background`: 1
-- `formal_core`: 174
+- `formal_core`: 173
 - `frontier`: 13
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
@@ -369,6 +369,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Finite carrier/symmetrizer scaffold is certified for 27D triple carrier S3 representation 10D symmetric carrier antisymmetric rank-one sector and U_eff^B admissibility; spin/flavour transfer PDG and masses remain open. [was:OPERATOR-SCAFFOLD-CERTIFIED]
+
+### D0-LEPTON-002
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_charged_lepton_transfer_certificate.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [8C orphan-harvest] frozen e/mu/tau ratios, exponents 0,1/4,1/3. [Iter21 §00.9 caveat] the frozen r_mu=3.8814328681047283 17-digit decimal is a HYP realization, NOT derived from the integer Lucas ladder; the parameter-free Lucas closed form m_mu/m_e=L11+L4+2phi^-2=206.764 lands ~5e-3 off PDG 206.768 -> two expressions for one ratio = grammar-priority caveat. Integer-additive part L11+L4=206 is THE (BOOK_04 04.8.L.1); the decimal VALUE and the Lean no-retuning theorem (notation-invariance of a frozen row, not a derivation) are HYP. Status stays CERT-CLOSED (frozen table, not THE).
 
 ### D0-QUASI009-CKM-PHASON-HOLONOMY-001
 
@@ -1116,19 +1129,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof. [Iter5 finite-core] The gap-label MODULE shadow is now proved exactly (new claim D0-KTHEORY-GAP-MODULE-001): labels lie in the rank-2 module Z+Zphi^-1, principal labels phi^-1/phi^-2 sum to 1. The Bellissard THEOREM (IDS=K0-trace image) stays EXTERNAL-GAP (no Mathlib K-theory). FLAG: this row's cert vp_gap_labeling_d0_tiling_hull.py fabricates the IDS as (idx+1)/30 with a float (n,m) fit — a placeholder to RETIRE in favor of the exact shadow (referenced in ~10 places; retirement is a follow-up).
-
-### D0-LEPTON-002
-
-- type: `certificate`
-- release_status: `CERT-CLOSED`
-- domain: `formal_core`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_charged_lepton_transfer_certificate.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] frozen e/mu/tau ratios, exponents 0,1/4,1/3.
 
 ### D0-MASS-CHAIN-001
 
@@ -3553,6 +3553,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Finite witness yields symmetric divergence-free second-order TT-compatible macro interface; no continuum Einstein-Hilbert primitive is imported into core.
 
+### D0-RANK3-CAUSAL-CONE-FORCING-001
+
+- type: `bridge`
+- release_status: `CORE_BRIDGE_SPLIT`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: `D0.Synthesis.RankCausalConeForcing`
+- theorem: `rank3_causal_cone_forcing`
+- cert: `vp_rank3_causal_cone_forcing.py`
+- assumptions: `none`
+- scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
+- notes: [Iter11 closure of the §07.51.3 named gap -- forced, not re-named] The open half (WHICH modes are spacelike vs timelike) is closed by counting. (a) The 3 rank transport modes are REVERSIBLE: the depressed cubic lambda^3-359 lambda-2574 has discriminant 6185264>0 => 3 distinct REAL eigenvalues, no arrow. (b) The 1 Pisot flow is IRREVERSIBLE: exactly one |psi|<1 (the arrow; arrow=time is FORCED, §06.30a). (c) A Lorentzian (3,1) form has exactly 1 timelike + 3 spacelike; the counts match (1 arrow<->1 timelike, 3 reversible<->3 spacelike), and Euclidean (4,0) is excluded (the 4 directions are not alike). Lean D0.Synthesis.RankCausalConeForcing (rank3_causal_cone_forcing): mink4 puts e0 timelike, e1/e2/e3 spacelike; |psi|<1; disc=6185264>0; null cone nontrivial. cert vp_rank3_causal_cone_forcing.py grounds C_max=3/8=rank/|Omega8|. [Iter21 RE-SCOPE CORE-FORMALIZED -> CORE_BRIDGE_SPLIT, review honesty fix] The Lean proves ARITHMETIC only and is real CORE: on the PREDEFINED mink4=a^2-b^2-c^2-d^2 form, e0 timelike & e1/e2/e3 spacelike (signature evals), |psi|<1 (Pisot), disc 6185264>0 (real spectrum, decide), null cone nontrivial. But the rank<->metric-cone PHYSICAL IDENTIFICATION (that the scene's 3 reversible rank-modes ARE the metric's 3 spacelike axes) rests on a counting-MULTIPLICITY argument (1+3 match) -- strong EVIDENCE, NOT a closed theorem (it presupposes the modes map to spacetime directions). So 'closes the gap / rank-3 = spatial directions FORCED' is over-stated: the arithmetic is forced (CORE), the identification is a NAMED BRIDGE. The residual cone-speed/smooth metric g_munu remains the Connes-owned unit (ASSUMP-CONNES-RECONSTRUCTION). Downstream rows that cite this as 'gap closed' (D0-COMPACTNESS-LIMIT-001, D0-RANK3-CAUSAL-CONE-001) inherit the same bridge scope.
+
 ### D0-LATTICE-FINITENESS-BRIDGE-001
 
 - type: `certificate`
@@ -3724,19 +3737,6 @@ D0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPr
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: [Iter5 Track2] SHARPENS (does not close) the gravastar compactness named gap. Lean D0.Synthesis.RankCausalCone (rank3_causal_cone) proves the (3,1)->Minkowski-cone structure: Q=a^2-b^2-c^2-d^2 indefinite (timelike+spacelike) with a nontrivial null direction, plus the Pisot time arrow |psi|<1 (reused). NAMED GAP remaining: the scene-rank-3 <-> cone-space identification is still postulated (this proves the cone EXISTS for (3,1); not that the scene rank-3 IS that spatial sector). Supporting synthesis, modest scope; D0-COMPACTNESS-LIMIT-001 stays MECH-LIMIT. [Iter11 CLOSED] The remaining scene-rank-3<->cone-space identification is now FORCED (D0-RANK3-CAUSAL-CONE-FORCING-001): the partition is forced by the arrow-count (1 Pisot arrow<->1 timelike, 3 reversible real-spectrum modes<->3 spacelike; (4,0) excluded). This is no longer a named gap; the only residual is the cone-speed/smooth metric (Connes unit).
-
-### D0-RANK3-CAUSAL-CONE-FORCING-001
-
-- type: `core`
-- release_status: `CORE-FORMALIZED`
-- domain: `smooth_geometry`
-- book: `BOOK_07`
-- module: `D0.Synthesis.RankCausalConeForcing`
-- theorem: `rank3_causal_cone_forcing`
-- cert: `vp_rank3_causal_cone_forcing.py`
-- assumptions: `none`
-- scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
-- notes: [Iter11 closure of the §07.51.3 named gap -- forced, not re-named] The open half (WHICH modes are spacelike vs timelike) is closed by counting. (a) The 3 rank transport modes are REVERSIBLE: the depressed cubic lambda^3-359 lambda-2574 has discriminant 6185264>0 => 3 distinct REAL eigenvalues, no arrow. (b) The 1 Pisot flow is IRREVERSIBLE: exactly one |psi|<1 (the arrow; arrow=time is FORCED, §06.30a). (c) A Lorentzian (3,1) form has exactly 1 timelike + 3 spacelike; the counts match (1 arrow<->1 timelike, 3 reversible<->3 spacelike), and Euclidean (4,0) is excluded (the 4 directions are not alike). So the timelike axis IS the Pisot/arrow and the 3 spacelike axes ARE the reversible rank-3 modes: rank-3 = the 3 spatial/causal directions, FORCED. Lean D0.Synthesis.RankCausalConeForcing (rank3_causal_cone_forcing): mink4 puts e0 timelike, e1/e2/e3 spacelike; |psi|<1; disc=6185264>0; null cone nontrivial. cert vp_rank3_causal_cone_forcing.py. Closes D0-COMPACTNESS-LIMIT-001's named gap and grounds C_max=3/8=rank/|Omega8|. HONEST: the CAUSAL STRUCTURE (signature+partition+null cone) is THE; the residual cone-speed/smooth metric g_munu is the Connes-owned unit (ASSUMP-CONNES-RECONSTRUCTION), NOT claimed here.
 
 ### D0-TIME-2D-PISOT-001
 

@@ -180,7 +180,7 @@ digraph D0Theory {
   "D0-HIGGS-YUKAWA-001" [label="D0-HIGGS-YUKAWA-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CANONICAL-OP-001" [label="D0-CANONICAL-OP-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CKM-EXACT-001" [label="D0-CKM-EXACT-001\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
-  "D0-LEPTON-002" [label="D0-LEPTON-002\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-LEPTON-002" [label="D0-LEPTON-002\\nCERT-CLOSED\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-NEUTRON-002" [label="D0-NEUTRON-002\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PROTON-001" [label="D0-PROTON-001\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-GRAV-002" [label="D0-GRAV-002\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -256,7 +256,7 @@ digraph D0Theory {
   "D0-TOWER-STOP-NOEXT-001" [label="D0-TOWER-STOP-NOEXT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-QUASICRYSTAL-CARRIER-FORCING-001" [label="D0-QUASICRYSTAL-CARRIER-FORCING-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-QUASICRYSTAL-PROJECTION-001" [label="D0-QUASICRYSTAL-PROJECTION-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
-  "D0-RANK3-CAUSAL-CONE-FORCING-001" [label="D0-RANK3-CAUSAL-CONE-FORCING-001\\nCORE-FORMALIZED\\nsmooth_geometry", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-RANK3-CAUSAL-CONE-FORCING-001" [label="D0-RANK3-CAUSAL-CONE-FORCING-001\\nCORE_BRIDGE_SPLIT\\nsmooth_geometry", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-RANK3-METRIC-TRANSPORT-001" [label="D0-RANK3-METRIC-TRANSPORT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CONNES-DISTANCE-GEODESIC-001" [label="D0-CONNES-DISTANCE-GEODESIC-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CARRIER-NOT-ICOSAHEDRAL-001" [label="D0-CARRIER-NOT-ICOSAHEDRAL-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -1243,8 +1243,8 @@ digraph D0Theory {
   "D0-LEPTON-002" -> "module:" [label="module"];
   "cert:vp_charged_lepton_transfer_certificate.py" [label="vp_charged_lepton_transfer_certificate.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-LEPTON-002" -> "cert:vp_charged_lepton_transfer_certificate.py" [label="cert"];
-  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-LEPTON-002" -> "domain:formal_core" [label="domain"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-LEPTON-002" -> "domain:empirical_passport" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-NEUTRON-002" -> "module:" [label="module"];
   "cert:vp_neutron_lifetime_rate_closure.py" [label="vp_neutron_lifetime_rate_closure.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];

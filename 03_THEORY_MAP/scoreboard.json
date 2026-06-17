@@ -19,11 +19,11 @@
     }
   },
   "totals": {
-    "realized": 4226,
-    "track_fair_max": 5123,
+    "realized": 4217,
+    "track_fair_max": 5114,
     "pct_strength": 82.5,
-    "core_realized": 3646,
-    "core_potential": 4520,
+    "core_realized": 3626,
+    "core_potential": 4500,
     "core_headroom": 874,
     "n_claims": 288,
     "n_active": 286,
@@ -32,10 +32,10 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 173,
-      "realized": 2780,
-      "max": 3269,
-      "core_headroom": 484
+      "n": 172,
+      "realized": 2773,
+      "max": 3249,
+      "core_headroom": 471
     },
     "rg": {
       "n": 5,
@@ -51,8 +51,8 @@
     },
     "smooth_geometry": {
       "n": 18,
-      "realized": 281,
-      "max": 324,
+      "realized": 272,
+      "max": 315,
       "core_headroom": 39
     },
     "spectral_action": {
@@ -62,10 +62,10 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 24,
-      "realized": 233,
-      "max": 282,
-      "core_headroom": 44
+      "n": 25,
+      "realized": 240,
+      "max": 302,
+      "core_headroom": 57
     },
     "cosmology": {
       "n": 24,
@@ -149,8 +149,8 @@
     },
     "BOOK_07": {
       "n": 48,
-      "realized": 669,
-      "max": 861,
+      "realized": 660,
+      "max": 852,
       "core_headroom": 182
     },
     "BOOK_06/08": {
@@ -623,7 +623,7 @@
     },
     {
       "claim_id": "D0-LEPTON-002",
-      "domain": "formal_core",
+      "domain": "empirical_passport",
       "book": "BOOK_04",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
@@ -1273,7 +1273,7 @@
     },
     {
       "claim_id": "D0-LEPTON-002",
-      "domain": "formal_core",
+      "domain": "empirical_passport",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -3992,7 +3992,7 @@
       "ceiling": 20,
       "release_status": "CERT-CLOSED",
       "lean_status": "PYTHON_CERTIFIED",
-      "domain": "formal_core",
+      "domain": "empirical_passport",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -5049,12 +5049,12 @@
     },
     {
       "claim_id": "D0-RANK3-CAUSAL-CONE-FORCING-001",
-      "track": "CORE",
-      "level": 5,
-      "level_name": "CORE_FORMALIZED",
-      "score": 20,
-      "ceiling": 20,
-      "release_status": "CORE-FORMALIZED",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "CORE_BRIDGE_SPLIT",
       "lean_status": "LEAN_PROVED",
       "domain": "smooth_geometry",
       "book": "BOOK_07",

@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4226 / 5123 (**82.5%** of track-fair max)
-- **Core spine:** 3646 / 4520 (headroom **874** points to take every core claim to L5)
+- **Realized strength:** 4217 / 5114 (**82.5%** of track-fair max)
+- **Core spine:** 3626 / 4500 (headroom **874** points to take every core claim to L5)
 - Claims: 286 active (288 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -54,7 +54,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-MASTER-BOOTSTRAP-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-MESON-DEFECT-ALGEBRA-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-CANONICAL-OP-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-LEPTON-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-LEPTON-002` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-NEUTRON-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-GRAV-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
@@ -92,10 +92,10 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 173 | 2780 | 3269 | 484 |
+| formal_core | 172 | 2773 | 3249 | 471 |
 | frontier | 13 | 26 | 260 | 234 |
-| empirical_passport | 24 | 233 | 282 | 44 |
-| smooth_geometry | 18 | 281 | 324 | 39 |
+| empirical_passport | 25 | 240 | 302 | 57 |
+| smooth_geometry | 18 | 272 | 315 | 39 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
 | cosmology | 24 | 446 | 459 | 13 |
@@ -110,7 +110,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 |---|--:|--:|--:|--:|
 | BOOK_08 | 47 | 742 | 829 | 83 |
 | BOOK_04 | 47 | 708 | 871 | 158 |
-| BOOK_07 | 48 | 669 | 861 | 182 |
+| BOOK_07 | 48 | 660 | 852 | 182 |
 | BOOK_01 | 15 | 223 | 278 | 55 |
 | BOOK_06 | 13 | 221 | 242 | 21 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
