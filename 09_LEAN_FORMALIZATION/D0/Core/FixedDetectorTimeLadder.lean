@@ -27,10 +27,16 @@ def detectorQuadraticReadout (D : FixedDetector) (psi : TimeState) : Int :=
 def ladderReadout (D : FixedDetector) (psi : TimeState) (n : Nat) : Int :=
   detectorQuadraticReadout D (evolveState n psi)
 
+/-- The fixed detector is **memoryless under the time ladder**: its layer-`n` readout depends only
+on the *evolved* state, not on the path that produced it — two states that evolve to the same layer-`n`
+state give equal readouts. (The detector `D` is reused unchanged at every layer; only the state
+evolves. This is the genuine content of "fixed detector", replacing the former `D = D` reflexivity.) -/
 theorem detector_fixed_under_time_ladder
-    (D : FixedDetector) (_psi : TimeState) (_n : Nat) :
-    D = D := by
-  rfl
+    (D : FixedDetector) (psi phi : TimeState) (n : Nat)
+    (h : evolveState n psi = evolveState n phi) :
+    ladderReadout D psi n = ladderReadout D phi n := by
+  unfold ladderReadout
+  rw [h]
 
 theorem readout_depends_on_time_power
     (D : FixedDetector) (psi : TimeState) (n : Nat) :

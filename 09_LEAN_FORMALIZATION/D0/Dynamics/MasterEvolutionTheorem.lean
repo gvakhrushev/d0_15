@@ -28,11 +28,14 @@ theorem lucas_heat_moment_bridge (m : Nat) :
     Matrix.trace (TimeEnergyOperator ^ m) = lucas (2 * m) := by
   exact heat_moment_eq_even_lucas m
 
-/-- Stable name for the fixed-detector ladder owner. -/
+/-- Stable name for the fixed-detector ladder owner: the genuine memoryless-detector statement
+(equal evolved states give equal readouts), delegating to `D0.Core.detector_fixed_under_time_ladder`
+(no longer a `D = D` reflexivity). -/
 theorem detector_is_fixed_under_ladder
-    (D : D0.Core.FixedDetector) (_psi : D0.Core.TimeState) (_n : Nat) :
-    D = D := by
-  rfl
+    (D : D0.Core.FixedDetector) (psi phi : D0.Core.TimeState) (n : Nat)
+    (h : D0.Core.evolveState n psi = D0.Core.evolveState n phi) :
+    D0.Core.ladderReadout D psi n = D0.Core.ladderReadout D phi n :=
+  D0.Core.detector_fixed_under_time_ladder D psi phi n h
 
 /-- Stable name for the information-quasicrystal vacuum-support owner. -/
 theorem d0_phi_quasicrystal_vacuum_support :
@@ -65,8 +68,9 @@ structure D0MasterEvolutionClosure where
   heat_lucas_moments :
     forall m : Nat, Matrix.trace (TimeEnergyOperator ^ m) = lucas (2 * m)
   fixed_detector_ladder :
-    forall (D : D0.Core.FixedDetector) (_psi : D0.Core.TimeState) (_n : Nat),
-      D = D
+    forall (D : D0.Core.FixedDetector) (psi phi : D0.Core.TimeState) (n : Nat),
+      D0.Core.evolveState n psi = D0.Core.evolveState n phi ->
+      D0.Core.ladderReadout D psi n = D0.Core.ladderReadout D phi n
   quasicrystal_vacuum_support :
     D0.Geometry.QuasicrystalOrderNotPeriodicLattice
 
@@ -99,8 +103,9 @@ theorem master_evolution_theorem :
     (forall N : Nat,
       Finset.sum (Finset.range (2 * N)) (fun k => darkSign k) = 0) /\
     (forall m : Nat, Matrix.trace (TimeEnergyOperator ^ m) = lucas (2 * m)) /\
-    (forall (D : D0.Core.FixedDetector) (_psi : D0.Core.TimeState) (_n : Nat),
-      D = D) /\
+    (forall (D : D0.Core.FixedDetector) (psi phi : D0.Core.TimeState) (n : Nat),
+      D0.Core.evolveState n psi = D0.Core.evolveState n phi ->
+      D0.Core.ladderReadout D psi n = D0.Core.ladderReadout D phi n) /\
     D0.Geometry.QuasicrystalOrderNotPeriodicLattice := by
   exact
     ⟨d0MasterEvolutionClosure.time_operator_quadratic,
