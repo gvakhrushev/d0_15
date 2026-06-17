@@ -103,19 +103,19 @@ This dictionary extends to the **proof and status vocabulary**, which is the par
 
 ### The three status layers: CORE / FORMALISM / BRIDGE
 
-The dictionary above is not free: each standard object is admitted at exactly one of three status layers, and the layer fixes what a claim is allowed to depend on. This is the status calculus that disciplines the whole active corpus [^b00-1].
+The dictionary above is not free: each standard object is admitted at exactly one of three status layers, and the layer fixes what a claim is allowed to depend on. This is the status calculus that disciplines the whole active corpus.
 
 **CORE (constructive axiomatics).** CORE fixes only constructive objects and procedures derivable from BOOK_01 without exogenous parameters: finite codes and the canonicalization `D_min`; finite graphs and operators on finite sets; computable distinguishability tests and finite sums. CORE is where M1 actually bites — physics is what survives self-distinguishability without an external catalog (M1; DEF-0.2.2 forcing-by-contradiction), so a CORE object must be exhibitable as a finite construction, not posited.
 
-**M1+ (the primitivity ban).** M1+ is the admissibility refinement of M1 used throughout the books: in CORE it is *forbidden* to introduce `\(\mathbb{R}\)`, `\(i\)`, `\(\hbar\)`, `\(c\)`, `\(G\)` as primitive entities. These are not banned from the theory — they are admissible only as BRIDGE representations, downstream of a fixed calibration. Status: FORCED. The argument is by contradiction: a continuum primitive carries an uncountable label set, which is exactly an external catalog that M1 refuses; admitting one as CORE would smuggle in the comparison standard the theory is required to construct [^b00-2]. The five continuum constants therefore enter as BRIDGE units (see BOOK_00 §00.12 bridge austerity), never as CORE sources.
+**M1+ (the primitivity ban).** M1+ is the admissibility refinement of M1 used throughout the books: in CORE it is *forbidden* to introduce `\(\mathbb{R}\)`, `\(i\)`, `\(\hbar\)`, `\(c\)`, `\(G\)` as primitive entities. These are not banned from the theory — they are admissible only as BRIDGE representations, downstream of a fixed calibration. Status: FORCED. The argument is by contradiction: a continuum primitive carries an uncountable label set, which is exactly an external catalog that M1 refuses; admitting one as CORE would smuggle in the comparison standard the theory is required to construct. The five continuum constants therefore enter as BRIDGE units (see BOOK_00 §00.12 bridge austerity), never as CORE sources.
 
 **FORMALISM (algebraic representation).** FORMALISM is the set of mathematical representations into which CORE embeds *without changing the class of distinguishable outcomes*: Hilbert representations, spectral triples, `\(\zeta\)`-regularization; continuum approximations (heat kernel, smooth limits) **provided** the limiting procedure and a falsification criterion are stated; standard theorems (Gleason, spectral decomposition) admitted as bridge-theorems, never as new axioms. FORMALISM is a language, not a source: any invariant it computes must already be a CORE invariant.
 
-**BRIDGE (phenomenological mapping).** BRIDGE maps CORE/FORMALISM invariants to familiar physical quantities and units (SI, etc.). Every BRIDGE step must (i) fix its calibration regimen explicitly, (ii) separate tuning parameters from check parameters, (iii) preserve a binary PASS/FAIL at the distinguishability level [^b00-3]. The constructive ordering proof object > finite/profinite construction > certificate > comparison protocol is owned by §00.13 — this layer is its status face, not a second copy.
+**BRIDGE (phenomenological mapping).** BRIDGE maps CORE/FORMALISM invariants to familiar physical quantities and units (SI, etc.). Every BRIDGE step must (i) fix its calibration regimen explicitly, (ii) separate tuning parameters from check parameters, (iii) preserve a binary PASS/FAIL at the distinguishability level. The constructive ordering proof object > finite/profinite construction > certificate > comparison protocol is owned by §00.13 — this layer is its status face, not a second copy.
 
 ### Finite-observer language: localized packets, not global modes
 
-A consequence of M1+ that the protocol must state explicitly. On a compact discrete scene the global harmonic basis — Fourier modes, infinite-duration eigenmodes — is admissible FORMALISM language, but applying it to a *finite* observer requires an external truncation-or-precision rule: where to cut the mode sum, to what accuracy. That cutoff rule is an external catalog, so an unqualified global-mode description violates M1+ unless it carries an explicit internal procedure. Status: FORCED [^b00-4].
+A consequence of M1+ that the protocol must state explicitly. On a compact discrete scene the global harmonic basis — Fourier modes, infinite-duration eigenmodes — is admissible FORMALISM language, but applying it to a *finite* observer requires an external truncation-or-precision rule: where to cut the mode sum, to what accuracy. That cutoff rule is an external catalog, so an unqualified global-mode description violates M1+ unless it carries an explicit internal procedure. Status: FORCED.
 
 The CORE-compatible language of finiteness is therefore the localized spectral packet (wavelet basis): a basis that localizes simultaneously in scale and in diffusion "time" and so carries a built-in UV/IR regularization with no external catalog. The choice "wavelet packets over global modes" is not a modeling preference — it is the only finite-observer language consistent with the no-external-catalog law. Status: FORCED. Cert obligation for the explicit UV/IR-bound statement: PROOF-TARGET (cert obligation open).
 
@@ -128,16 +128,16 @@ Its primitive object is finite detector readout over a condensed/profinite suppo
 
 ### What question the corpus answers
 
-D0 does not postulate physical laws "by analogy" with the observed world. It asks the prior question: *what criteria must any theory satisfy to be finite, verifiable, and free of observer arbitrariness?* The whole corpus is the answer to that question, and the answer is driven by exactly two principles [^b00-9]:
+D0 does not postulate physical laws "by analogy" with the observed world. It asks the prior question: *what criteria must any theory satisfy to be finite, verifiable, and free of observer arbitrariness?* The whole corpus is the answer to that question, and the answer is driven by exactly two principles:
 
 - **M1** — no exogenous parameters: no background dependence, no external catalog. Physics is *what survives the requirement to distinguish itself without outside help.* The question "why is the world this way?" changes grammar under M1: the world is the fixed point of "describe yourself, borrowing nothing from outside" — not "which laws did someone pick," but **which structure is uniquely compatible with its own existence as a record.**
-- **M1+** — the constructive recursion stop rule: descriptions canonicalize to the minimal record `Can(S)` rather than recursing without end [^b00-10].
+- **M1+** — the constructive recursion stop rule: descriptions canonicalize to the minimal record `Can(S)` rather than recursing without end.
 
-D0 is architectural, not a competitor to QM/GR/SM: it fixes the minimal distinguishability-and-self-consistency skeleton on which any theory becomes formally checkable, comparable and auditable [^b00-11]. Upper-floor theories are admitted as FORMALISM/BRIDGE layers (continuum, fields, integrals, metrics, Lagrangians) provided each declares its internal projection onto a PASS/FAIL test.
+D0 is architectural, not a competitor to QM/GR/SM: it fixes the minimal distinguishability-and-self-consistency skeleton on which any theory becomes formally checkable, comparable and auditable. Upper-floor theories are admitted as FORMALISM/BRIDGE layers (continuum, fields, integrals, metrics, Lagrangians) provided each declares its internal projection onto a PASS/FAIL test.
 
 ### M1 is the single law, read on two levels
 
-M1 is not one axiom among several; it is **the single law**, and everything else is the theory of survival under it. M1 manifests on two levels that must be held together [^b00-12]:
+M1 is not one axiom among several; it is **the single law**, and everything else is the theory of survival under it. M1 manifests on two levels that must be held together:
 
 - **Algebraically** — minimality (MDL/Kolmogorov): the shortest record, empty catalog.
 - **Operationally** — no hidden degrees of freedom: it is forbidden to keep a side-register "which one of."
@@ -146,7 +146,7 @@ M1 is not one axiom among several; it is **the single law**, and everything else
 
 ### Method: forcing-by-contradiction, not enumeration
 
-The corpus is built by forcing, not by search. This is the dividing line between a THE-claim and a HYP-claim, and it is easy to mistake for numerology if missed [^b00-13].
+The corpus is built by forcing, not by search. This is the dividing line between a THE-claim and a HYP-claim, and it is easy to mistake for numerology if missed.
 
 - **Enumeration (forbidden as proof):** "K(9,11,13) is better than other graphs" — bottomless; one can always answer "but you didn't try this one." Search proves nothing.
 - **Forcing (DEF 0.2.2 schema):** assume `¬X`; show `¬X` requires extra structure `θ` not fixed by prior DEF/THE; `θ` affects distinguishable outcomes, hence is an exogenous parameter; that contradicts M1; therefore `X`. This strikes not at candidates but at **any** alternative at once, through the single property "requires a catalog."
@@ -158,22 +158,22 @@ Worked forcings (these are derivations, not associations):
 - *Why the torus?* Memory of two independent loops; a torus is abelian ⇒ loop order is not encoded ⇒ defect.
 - *Why stop at 13?* **Not** "because 15 is worse." Three zones because there are exactly three structural necessities (defect, memory, shell); there is no fourth role, so no fourth zone.
 
-Operational rule for any reviewer [^b00-14]: when scoring a claim, do not ask "does the number match," ask "which `¬X` is impossible here, and why does it require a catalog." If a forcing exists, it is a THE-candidate; if only a numerical coincidence exists, it is HYP and owes an E-account.
+Operational rule for any reviewer: when scoring a claim, do not ask "does the number match," ask "which `¬X` is impossible here, and why does it require a catalog." If a forcing exists, it is a THE-candidate; if only a numerical coincidence exists, it is HYP and owes an E-account.
 
 ### The Finite Holographic Self-Reading Principle
 
-The two-level M1 reading concentrates into one rigid operator rule [^b00-15]:
+The two-level M1 reading concentrates into one rigid operator rule:
 
 > **Finite Holographic Self-Reading Principle.** Physical information is realized exclusively through a finite holographic readout whose response preserves a symplectic (area-preserving) form across the cut between the retained (active) sector and the archive (traced) sector. The detector must read itself autonomously — hidden states and external memory backgrounds are strictly forbidden.
 
 From this principle the structural spine emerges by exact algebraic obstruction, not by choice. Two of these routes give independent (non-algebraic) derivations of facts BOOK_01 forces algebraically:
 
-1. **2D Gleason closure.** A non-degenerate symplectic form requires a minimal 2D phase space; enforcing area-preservation there topologically forces the quadratic Born response (the Born/quadratic-response closure is owned in §00.13; this route corroborates it from the symplectic side). [^b00-5] for the symplectic-route statement.
-2. **Fibonacci fusion bottleneck.** The strict absence of hidden memory forces the readout to obey the minimal non-trivial topological fusion rule `τ ⊗ τ = 1 ⊕ τ`, isolating φ as the exact minimal quantum dimension permitted by the Jones subfactor index. This is a *second* route to φ, independent of the algebraic forcing `p+p^2=1` owned in BOOK_01 §01.6. [^b00-6] for the fusion/Jones route.
-3. **Discrete Darboux extensions.** The structural carrier expands strictly via conjugate symplectic pairs (`+2`), generating the unique `K(9,11,13)` tripartite tensor network — a topological route to the scene that BOOK_01 reaches combinatorially (three necessities ⇒ three zones; scene owned in BOOK_01 §01.8). [^b00-7] for the Darboux-route statement.
+1. **2D Gleason closure.** A non-degenerate symplectic form requires a minimal 2D phase space; enforcing area-preservation there topologically forces the quadratic Born response (the Born/quadratic-response closure is owned in §00.13; this route corroborates it from the symplectic side). for the symplectic-route statement.
+2. **Fibonacci fusion bottleneck.** The strict absence of hidden memory forces the readout to obey the minimal non-trivial topological fusion rule `τ ⊗ τ = 1 ⊕ τ`, isolating φ as the exact minimal quantum dimension permitted by the Jones subfactor index. This is a *second* route to φ, independent of the algebraic forcing `p+p^2=1` owned in BOOK_01 §01.6. for the fusion/Jones route.
+3. **Discrete Darboux extensions.** The structural carrier expands strictly via conjugate symplectic pairs (`+2`), generating the unique `K(9,11,13)` tripartite tensor network — a topological route to the scene that BOOK_01 reaches combinatorially (three necessities ⇒ three zones; scene owned in BOOK_01 §01.8). for the Darboux-route statement.
 4. **Topological index.** The dimensionless action cycle emerges as the homological rank-nullity index of this holographic carrier (rank 3 = space, nullity 30 = traced archive); the action section `Λ_act = 38` is owned in BOOK_03 §03.18, not re-derived here.
 
-Because the principle forces the Fibonacci rule `τ ⊗ τ = 1 ⊕ τ`, the readout operation `τ` has no algebraic inverse: the fundamental symmetry is a **non-invertible categorical symmetry**, so structural time-irreversibility is an algebraic inevitability rather than a statistical artifact, and unitarity is recovered only as an emergent low-energy shadow. [^b00-8].
+Because the principle forces the Fibonacci rule `τ ⊗ τ = 1 ⊕ τ`, the readout operation `τ` has no algebraic inverse: the fundamental symmetry is a **non-invertible categorical symmetry**, so structural time-irreversibility is an algebraic inevitability rather than a statistical artifact, and unitarity is recovered only as an emergent low-energy shadow..
 
 ### Carried objects and the feedback layer
 
@@ -333,9 +333,6 @@ Stated in Algorithmic Information Theory: let `K(T)` be the Kolmogorov complexit
 
 This is why M1 is a derived spine and not an axiom of taste: admitting the Oracle re-admits the external parameter the law forbids.
 
-[^b00-17]
-[^b00-16]
-
 ## 00.7 Relation to established physics
 
 D0 does not ask the reader to discard quantum theory, QFT, the Standard Model, or general relativity.  It changes their logical placement:
@@ -366,13 +363,13 @@ D0 separates proof, calculation and comparison.  A certificate can verify arithm
 
 ### The admissible proof protocol
 
-D0 admits exactly one proof protocol, and bans the rest.  Proof by "obviousness" is forbidden: a result is never licensed because it looks evident, is conventional, or matches a textbook.  The only admissible engine is **Reduction-to-Contradiction-with-Realizability** [^b00-19].  Status: METHODOLOGICAL-LAW (this is the forcing engine the M1 gate exists to protect; without it "THE/LEM/DEF" lose their meaning — see COR 0.4.3, owner GOLDEN §0.4).
+D0 admits exactly one proof protocol, and bans the rest.  Proof by "obviousness" is forbidden: a result is never licensed because it looks evident, is conventional, or matches a textbook.  The only admissible engine is **Reduction-to-Contradiction-with-Realizability**.  Status: METHODOLOGICAL-LAW (this is the forcing engine the M1 gate exists to protect; without it "THE/LEM/DEF" lose their meaning — see COR 0.4.3, owner GOLDEN §0.4).
 
 This ban is what M1 protects.  M1 (no obligatory external catalog) is a statement about admissibility, not about physics; the proof protocol is the procedure that turns M1 into an actual derivation.  A claim that cannot be forced by this protocol is at most a HYP, never a THE.
 
 ### DEF-0.2.2 — forcing-by-contradiction via exogenous parameterization
 
-The load-bearing recipe of the whole corpus is the named 5-step schema [^b00-20].  To prove a statement `X`:
+The load-bearing recipe of the whole corpus is the named 5-step schema.  To prove a statement `X`:
 
 ```text
 (i)   assume not-X;
@@ -392,7 +389,7 @@ The exogenous-parameter test (DEF 0.3.1, owner GOLDEN §0.3) is the hinge of ste
 
 ### THE-0.4.5 — the minimality / canonicity template
 
-Uniqueness and minimality claims are not asserted per-result; they are forced by one reusable template [^b00-21]:
+Uniqueness and minimality claims are not asserted per-result; they are forced by one reusable template:
 
 ```text
 (A) assume an equivalent description of smaller complexity, or of other structure;
@@ -411,7 +408,7 @@ An active theorem requires both a proof of admissibility (forced by the protocol
 \text{finite support}\rightarrow\text{operator}\rightarrow\text{stationarity or trace theorem}\rightarrow\text{certificate}\rightarrow\text{typed bridge}\rightarrow\text{falsification hook}.
 ```
 
-A certificate sits at one link only: it discharges the *calculation* obligation (arithmetic, finite matrices, dependency graphs, tolerances).  It never discharges the *selection* obligation — that is owned by the DEF-0.2.2 / THE-0.4.5 forcing schemata above.  A forcing claim still lacking its calculation cert carries `[^b00-18]`; it is never backed by a fabricated cert token.
+A certificate sits at one link only: it discharges the *calculation* obligation (arithmetic, finite matrices, dependency graphs, tolerances).  It never discharges the *selection* obligation — that is owned by the DEF-0.2.2 / THE-0.4.5 forcing schemata above.  A forcing claim still lacking its calculation cert is flagged as an open obligation; it is never backed by a fabricated cert token.
 
 Mapped Book 00 claims are:
 
@@ -445,15 +442,15 @@ If the answer is yes, the result remains a stress test.  If the answer is no, th
 
 The firewall is not a heuristic — it is the operational face of the single law the whole D0 spine is forced from. BOOK_00 owns the statement of that law; everything below states *why* the firewall facts (no-monopoly, no fitted catalog) hold.
 
-**Exogenous parameter — the thing M1 forbids [^b00-24].** An *exogenous parameter* (background dependence) is required-but-underivable structure — a constant table, an exception list, an external label, an index-scheme, a choice rule — satisfying all three clauses at once:
+**Exogenous parameter — the thing M1 forbids.** An *exogenous parameter* (background dependence) is required-but-underivable structure — a constant table, an exception list, an external label, an index-scheme, a choice rule — satisfying all three clauses at once:
 
 1. it is **not derived** inside the corpus (does not follow from the axioms);
 2. it **affects the result** or the statement of the laws;
 3. it is **not an inevitable part of the distinguishability protocol**.
 
-Canonical example: the Standard-Model list of particle masses is exogenous — the theory does not explain it, it reads it from a catalogue [^b00-25]. A parameter `K` counts as *mandatory* [^b00-26] when without `K` you cannot (1) compute a claimed quantity, (2) run a `VER`/`CHK`, or (3) let an independent executor reproduce the result from the published corpus. Anything else is an optional format convention and may not appear as a necessary part of a law.
+Canonical example: the Standard-Model list of particle masses is exogenous — the theory does not explain it, it reads it from a catalogue. A parameter `K` counts as *mandatory* when without `K` you cannot (1) compute a claimed quantity, (2) run a `VER`/`CHK`, or (3) let an independent executor reproduce the result from the published corpus. Anything else is an optional format convention and may not appear as a necessary part of a law.
 
-**M1 — the central correctness law [^b00-27].** *Principle M1 = ban on a mandatory external catalogue.* This is the central correctness rule of the axiomatic base, the blade that severs infinitely-flexible non-falsifiable extensions:
+**M1 — the central correctness law.** *Principle M1 = ban on a mandatory external catalogue.* This is the central correctness rule of the axiomatic base, the blade that severs infinitely-flexible non-falsifiable extensions:
 
 ```math
 \text{If two constructions give the same class of distinguishable outcomes, the one requiring an extra mandatory external catalogue/parameter is inadmissible.}
@@ -461,28 +458,28 @@ Canonical example: the Standard-Model list of particle masses is exogenous — t
 
 "No-monopoly verification" and "no fitted catalogue" are downstream *effects* of M1; M1 itself is the named theorem they descend from.
 
-**M1 = MDL for physical laws [^b00-28].** Let `K(·)` be (conditional) Kolmogorov complexity in a fixed universal language. Adding an underivable `theta` moves the law from `K(T)` to `K(T) + K(theta | T)` — it strictly increases the minimal description length. M1 forbids exactly such increases at an unchanged distinguishable class. So M1 is a Minimum-Description-Length principle for physical laws, not an aesthetic preference. This is the precise WHY the firewall has teeth: a numerological add-on is, formally, longer code at equal predictive content.
+**M1 = MDL for physical laws.** Let `K(·)` be (conditional) Kolmogorov complexity in a fixed universal language. Adding an underivable `theta` moves the law from `K(T)` to `K(T) + K(theta | T)` — it strictly increases the minimal description length. M1 forbids exactly such increases at an unchanged distinguishable class. So M1 is a Minimum-Description-Length principle for physical laws, not an aesthetic preference. This is the precise WHY the firewall has teeth: a numerological add-on is, formally, longer code at equal predictive content.
 
 **External corroboration of M1 (cited owners, not re-derived).** M1's finite-distinguishability premise is not only a self-imposed economy — it is the exact hypothesis from which quantum theory is *reconstructed* externally. The operational reconstruction theorems — Hardy (arXiv:quant-ph/0101012), Dakić–Brukner, Masanes–Müller (*New J. Phys.* 13, 053040, 2011), Chiribella–D'Ariano–Perinotti (*Phys. Rev. A* 84, 012311, 2011) — show that a **finite information capacity** of an elementary system, plus continuity and tomographic locality, *uniquely* yields the complex Hilbert-space structure of QM. So the finite-capacity law M1 has, as a downstream theorem, the entire structure of QM (owner edge `D0-M1-INFO-RECONSTRUCTION-001`, `ASSUMP-M1-INFO-RECONSTRUCTION`). Relatedly, that structure must be **complex**, not real: real-vector-space QM is experimentally excluded (Renou et al., *Nature* 600, 625, 2021; Chen et al., *Phys. Rev. Lett.* 128, 040403, 43σ; Li et al., 5.30σ) — owner edge `D0-COMPLEX-QM-FORCING-001`, `ASSUMP-COMPLEX-QM`. Honest scope: these are **cited external owners** (the reconstructions assume continuity + tomographic locality; the experiments assume the standard QM postulates), corroborating the D0 axiomatic base, not derived inside D0 — BRIDGE, never core.
 
-**The dichotomy blade [^b00-29].** Add structure `K` to a construction. Exactly one holds:
+**The dichotomy blade.** Add structure `K` to a construction. Exactly one holds:
 
 - **(A)** `K` **changes** the class of distinguishable outcomes → `K` is contentful and *must* be derived/justified inside the corpus; or
 - **(B)** `K` **does not change** the distinguishable class → `K` carries no distinguishability; if it is nonetheless mandatory (DEF 0.3.1a) it is an external catalogue (DEF 0.3.1) and is banned by M1.
 
-Proof (by contradiction): suppose an exogenous parameter is mandatory yet distinguishability-neutral. Then (1) the catalogue cannot be falsified through distinguishability — it changes no `0`-vs-`1` outcome; (2) it is required for the theory to run; (3) therefore the theory's operation depends on an underivable, untestable convention; (4) this violates DEF 0.3.3 (no dependence on hidden conventions). Contradiction [^b00-30]. This dichotomy is the operational decision procedure the firewall executes on every candidate add-on.
+Proof (by contradiction): suppose an exogenous parameter is mandatory yet distinguishability-neutral. Then (1) the catalogue cannot be falsified through distinguishability — it changes no `0`-vs-`1` outcome; (2) it is required for the theory to run; (3) therefore the theory's operation depends on an underivable, untestable convention; (4) this violates DEF 0.3.3 (no dependence on hidden conventions). Contradiction. This dichotomy is the operational decision procedure the firewall executes on every candidate add-on.
 
-**Why M1 is the keystone, not a physics claim [^b00-31].** Without M1 there is no *end* of definition and no *end* of proof: any statement can be modified forever by external corrections (`a = b + c -> a = b + c + c1 + c2 + ...`). Then three distinctions collapse — axiom vs ad-hoc assumption, theorem vs fit, refutation vs rescue-by-new-parameter. So M1 is not an assertion about physics; it is the **minimal condition under which the THE/LEM/DEF language is meaningful at all** [^b00-32]. This is the deepest justification of the entire method.
+**Why M1 is the keystone, not a physics claim.** Without M1 there is no *end* of definition and no *end* of proof: any statement can be modified forever by external corrections (`a = b + c -> a = b + c + c1 + c2 + ...`). Then three distinctions collapse — axiom vs ad-hoc assumption, theorem vs fit, refutation vs rescue-by-new-parameter. So M1 is not an assertion about physics; it is the **minimal condition under which the THE/LEM/DEF language is meaningful at all**. This is the deepest justification of the entire method.
 
-**The infinite-recursion intuition pump [^b00-33].** Format conventions (symbol order, alphabet) are allowed when they add no information [^b00-34]. But a description `A = B + C` is equivalent to an *infinite* family `A = B + C + 0`, `A = B + C + eps_1(interaction_1)`, ..., `A = B + C + ad_hoc_n`. At every step `n` an opponent asks "why did you stop here? why not term `n+1`?" To answer "term `n+1` is zero" you need a justification: if it is derived, fine; if not, zeroing the term is an arbitrary choice — an element of an external catalogue of zeros [^b00-35]. M1 is what terminates the recursion. This is the intuition that makes M1 *necessary*, not merely convenient.
+**The infinite-recursion intuition pump.** Format conventions (symbol order, alphabet) are allowed when they add no information. But a description `A = B + C` is equivalent to an *infinite* family `A = B + C + 0`, `A = B + C + eps_1(interaction_1)`, ..., `A = B + C + ad_hoc_n`. At every step `n` an opponent asks "why did you stop here? why not term `n+1`?" To answer "term `n+1` is zero" you need a justification: if it is derived, fine; if not, zeroing the term is an arbitrary choice — an element of an external catalogue of zeros. M1 is what terminates the recursion. This is the intuition that makes M1 *necessary*, not merely convenient.
 
-**Take the only-possible, never the best [^b00-36].** A theory cannot be proved by enumeration of alternatives ("variant 1 fails, variant 2 fails, ... so mine is right"): since the family of equivalent extensions is infinite (EX 0.4.3), the enumeration never terminates. The only way to a finite theory is to forbid every add-on that needs external specification — **we do not "select the best", we "take the only-possible"** [^b00-37]. This is the forcing-vs-fitting distinction the hostile-reading question above is the field form of: a "yes" answer means selection survived, a "no" answer means the object was forced.
+**Take the only-possible, never the best.** A theory cannot be proved by enumeration of alternatives ("variant 1 fails, variant 2 fails, ... so mine is right"): since the family of equivalent extensions is infinite (EX 0.4.3), the enumeration never terminates. The only way to a finite theory is to forbid every add-on that needs external specification — **we do not "select the best", we "take the only-possible"**. This is the forcing-vs-fitting distinction the hostile-reading question above is the field form of: a "yes" answer means selection survived, a "no" answer means the object was forced.
 
-**M1+ — canonization is the only admissible addition [^b00-38].** The constructive companion that halts the description recursion. Let `S` be the set of all representations of one and the same distinguishable object. Then (1) any mandatory in-class distinction not reducible to choosing `Can(S) := min_{<=}(S)` is a banned external catalogue (by M1); (2) to stop the infinite recursion (EX 0.4.3) one *must* fix a canonical representative [^b00-39]. Proof: not fixing a canon forces you to store the *choice* of a specific spelling; that choice does not affect meaning but costs memory and demands an index — and the choice-index is itself an exogenous parameter. Taking the minimal element automatically removes the index. So M1+ is the second half of the foundational law: M1 forbids the catalogue, M1+ removes the last surviving one (the representative-choice index). The ordering `<=` (length-first, then lexicographic) is itself format, not content [^b00-40].
+**M1+ — canonization is the only admissible addition.** The constructive companion that halts the description recursion. Let `S` be the set of all representations of one and the same distinguishable object. Then (1) any mandatory in-class distinction not reducible to choosing `Can(S) := min_{<=}(S)` is a banned external catalogue (by M1); (2) to stop the infinite recursion (EX 0.4.3) one *must* fix a canonical representative. Proof: not fixing a canon forces you to store the *choice* of a specific spelling; that choice does not affect meaning but costs memory and demands an index — and the choice-index is itself an exogenous parameter. Taking the minimal element automatically removes the index. So M1+ is the second half of the foundational law: M1 forbids the catalogue, M1+ removes the last surviving one (the representative-choice index). The ordering `<=` (length-first, then lexicographic) is itself format, not content.
 
 ### The science/numerology boundary is instrumental, not aesthetic
 
-`phi` as a *forced* constant is numerology by no measure: extreme irrationality by Hurwitz (a theorem), the quantum dimension of Fibonacci anyons, the last KAM torus, Shechtman quasicrystals (Nobel), the `E8`-spectrum mass ratio measured in CoNb2O6 (Coldea 2010, an experiment). That is not a "pretty number" — it is measurable physical fact plus proved mathematics. Numerology does not begin with `phi`; it begins with the *manner of use* [^b00-41].
+`phi` as a *forced* constant is numerology by no measure: extreme irrationality by Hurwitz (a theorem), the quantum dimension of Fibonacci anyons, the last KAM torus, Shechtman quasicrystals (Nobel), the `E8`-spectrum mass ratio measured in CoNb2O6 (Coldea 2010, an experiment). That is not a "pretty number" — it is measurable physical fact plus proved mathematics. Numerology does not begin with `phi`; it begins with the *manner of use*.
 
 - **Numerology:** a `phi`-combination back-fitted from a rich stock of small integers with no look-elsewhere accounting. (Calibration case: `710 = 2·355`, `113` read as *free integers* fit to `2·(355/113)`, a known approximation of `pi`, is numerology. The discriminant is **grammar-priority** (§05.8.R): the claim `D0-EW-WINDOW-FORCING-001` (§07.23) instead reads both numbers as *closed named-invariant expressions* — `710 = 2·D_Σ·(2|V|+D_Σ)`, `113 = (|ABCD|+1)·d₁₃+|V₁₃|`, zero free numbers — plus continued-fraction minimality of the `2π` near-return. That is forcing *iff* the invariant grammar was fixed independently of the `2π` target; a reader who rejects grammar-priority reads it as this failure example. The two readings are distinguished only by whether the grammar is prior, never by the closeness of the fit.)
 - **Science:** a forced constant with a frozen protocol, OR a number that entered the data *after* the grammar was frozen, with honest E-accounting.
@@ -493,14 +490,14 @@ Proof (by contradiction): suppose an exogenous parameter is mandatory yet distin
 E[\text{accidental}] = (\text{local density})\times 2\,|\text{miss}|
 ```
 
-— the expected number of chance hits no worse than the one found. In isolation `E ~ 1` is noise. Strength comes *only* from family-coherence plus out-of-sample (numbers that were never targets, measured by independent processes). This is how the CKM quadruple became strong: `gamma, beta, alpha, J` are independent consequences of four constants — a coherent family, not four separate fits. The CKM-quadruple coherence is held by an existing finite certificate carrying its own external-convention firewall passport. The general E-accounting *procedure* itself has no cert owner. [^b00-22]
+— the expected number of chance hits no worse than the one found. In isolation `E ~ 1` is noise. Strength comes *only* from family-coherence plus out-of-sample (numbers that were never targets, measured by independent processes). This is how the CKM quadruple became strong: `gamma, beta, alpha, J` are independent consequences of four constants — a coherent family, not four separate fits. The CKM-quadruple coherence is held by an existing finite certificate carrying its own external-convention firewall passport. The general E-accounting *procedure* itself has no cert owner.
 
-**Self-guillotine — the machine must kill its own finds [^b00-42].** Two worked rejections from this corpus, kept as the firewall's calibration:
+**Self-guillotine — the machine must kill its own finds.** Two worked rejections from this corpus, kept as the firewall's calibration:
 
 - `sin^2 theta_12 = 9/40` — **rejected**: `40` lives only on the degree scale, i.e. a Babylonian catalogue; failing clause 3 of DEF 0.3.1 it is an exogenous label, banned by M1.
 - `|lambda_3|/|lambda_2| ~ 2/phi` — **discarded**: `0.15%` miss with large `E`; E-accounting kills it as noise.
 
-M1 thus acts as an automatic numerology filter, and the operational rule is absolute: **a cert that cannot return `FAIL` is not a cert** [^b00-43]. [^b00-23]
+M1 thus acts as an automatic numerology filter, and the operational rule is absolute: **a cert that cannot return `FAIL` is not a cert**.
 
 ### Rejected forcing-links — the external-theorem audit (kept as calibration)
 
@@ -614,15 +611,15 @@ A proof object owns the theorem.  A certificate evaluates a finite invariant or 
 
 ### CORE and BRIDGE: the admissibility split is forced, not a style choice
 
-The constructive hierarchy is enforced by a two-layer typing of every promoted claim.  This split is not editorial taste; it is the only way M1 (no exogenous catalog) survives contact with SI/PDG observables, and D0 fixes its two layers by definition [^b00-44].
+The constructive hierarchy is enforced by a two-layer typing of every promoted claim.  This split is not editorial taste; it is the only way M1 (no exogenous catalog) survives contact with SI/PDG observables, and D0 fixes its two layers by definition.
 
 **CORE.**  A CORE statement is derivable *only* from the axioms and constructions of the corpus inside the internal algebra — typically `\mathbb Q(\varphi)` (the field BOOK_01 forces from `p+p^2=1`; see BOOK_01 §01.6) and the finite combinatorial objects of the scene `K(9,11,13)` — with no appeal to external numerical constants and no hand-chosen SI scale.  A CORE statement must be:
 
 1. **finite/constructive** — it is an explicit construction, not an existence claim resting on choice or a continuum limit;
-2. **representation-invariant** — invariant under any computable bijective re-encoding `f` of codes that preserves meaning-equivalence and the distinguishability bit `\Delta` [^b00-45]; changing alphabet/encoding moves only the carrier, never the `{0,1}` content;
-3. **internally self-consistent under the `\varepsilon^2` gluing threshold** — *if two independent derivations of the same quantity disagree by more than `\varepsilon^2`, they are not the same statement* [^b00-46].  `\varepsilon^2` is the inter-derivation agreement scale, not a fit tolerance: it is what makes "two routes to the same invariant" a checkable identity rather than a coincidence.
+2. **representation-invariant** — invariant under any computable bijective re-encoding `f` of codes that preserves meaning-equivalence and the distinguishability bit `\Delta`; changing alphabet/encoding moves only the carrier, never the `{0,1}` content;
+3. **internally self-consistent under the `\varepsilon^2` gluing threshold** — *if two independent derivations of the same quantity disagree by more than `\varepsilon^2`, they are not the same statement*.  `\varepsilon^2` is the inter-derivation agreement scale, not a fit tolerance: it is what makes "two routes to the same invariant" a checkable identity rather than a coincidence.
 
-The forcing behind the CORE definition is M1+ canonicalization (GOLDEN THE 0.5.4): any obligatory distinction inside a meaning-equivalence class `S` that does not reduce to selecting the canonical representative `\mathrm{Can}(S)` is a forbidden external catalog.  Refusing to fix a canon forces the corpus to store the *choice* of one particular record — an exogenous index with no effect on meaning — which M1 prohibits.  Hence the canonical (minimal-code) representative is taken automatically, and only algorithmic minimization, never "intuitive simplicity," is admissible [^b00-47].
+The forcing behind the CORE definition is M1+ canonicalization (GOLDEN THE 0.5.4): any obligatory distinction inside a meaning-equivalence class `S` that does not reduce to selecting the canonical representative `\mathrm{Can}(S)` is a forbidden external catalog.  Refusing to fix a canon forces the corpus to store the *choice* of one particular record — an exogenous index with no effect on meaning — which M1 prohibits.  Hence the canonical (minimal-code) representative is taken automatically, and only algorithmic minimization, never "intuitive simplicity," is admissible.
 
 **BRIDGE.**  A BRIDGE statement is the *packaging* of a CORE invariant into a standard observable (SI units, PDG parameters, cosmological `\Omega`, spectra, `H(z)`, and so on).  A BRIDGE statement is admissible only if it carries both:
 
@@ -721,56 +718,3 @@ F_N=(Q_NU_NP_N)^\dagger(Q_NU_NP_N).
 \]
 
 A finite event exists when internal circulation becomes addressable as such a trace. This entry principle supplies the ontological layer for CVFT and informational mechanics.
-
-
-## Apparatus — sources & open obligations
-
-_Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._
-
-[^b00-1]: forcing: GOLDEN THE II.G.1-3
-[^b00-2]: forcing: GOLDEN THE II.G.1
-[^b00-3]: forcing: GOLDEN THE II.G.3
-[^b00-4]: forcing: GOLDEN REM II.G.2.A
-[^b00-5]: open obligation — cert obligation open
-[^b00-6]: open obligation — cert obligation open
-[^b00-7]: open obligation — cert obligation open
-[^b00-8]: open obligation — cert obligation open
-[^b00-9]: forcing: GOLDEN §0.0 / GOLDEN THE 0.5.4
-[^b00-10]: forcing: GOLDEN THE 0.5.4; canonicalization discipline owned in §00.13 CORE typing
-[^b00-11]: forcing: GOLDEN REM 0.0.A
-[^b00-12]: forcing: GOLDEN, D0-PHILOSOPHY-AND-METHOD §1
-[^b00-13]: forcing: GOLDEN DEF 0.2.2, D0-PHILOSOPHY-AND-METHOD §2
-[^b00-14]: forcing: D0-PHILOSOPHY-AND-METHOD §2
-[^b00-15]: forcing: BOOK-00 §00.2, route-status PROOF-TARGET where noted
-[^b00-16]: open obligation — cert obligation open
-[^b00-17]: forcing: BOOK-00 §00.2
-[^b00-18]: open obligation — cert obligation open
-[^b00-19]: forcing: GOLDEN §0.2
-[^b00-20]: forcing: GOLDEN DEF 0.2.2
-[^b00-21]: forcing: GOLDEN THE 0.4.5, the synthesis of M1+ with the reduction perp
-[^b00-22]: open obligation — cert obligation open
-[^b00-23]: open obligation — cert obligation open
-[^b00-24]: forcing: GOLDEN DEF 0.3.1
-[^b00-25]: forcing: GOLDEN DEF 0.3.1
-[^b00-26]: forcing: GOLDEN DEF 0.3.1a
-[^b00-27]: forcing: GOLDEN §0.4, THE 0.4.1
-[^b00-28]: forcing: GOLDEN REM 0.4.1.MDL
-[^b00-29]: forcing: GOLDEN LEM 0.4.1a
-[^b00-30]: forcing: GOLDEN LEM 0.4.1a
-[^b00-31]: forcing: GOLDEN COR 0.4.3
-[^b00-32]: forcing: GOLDEN COR 0.4.3
-[^b00-33]: forcing: GOLDEN COR 0.4.2 + EX 0.4.3
-[^b00-34]: forcing: GOLDEN COR 0.4.2
-[^b00-35]: forcing: GOLDEN EX 0.4.3
-[^b00-36]: forcing: GOLDEN LEM 0.4.4
-[^b00-37]: forcing: GOLDEN LEM 0.4.4
-[^b00-38]: forcing: GOLDEN THE 0.5.4
-[^b00-39]: forcing: GOLDEN THE 0.5.4
-[^b00-40]: forcing: GOLDEN COR 0.4.2
-[^b00-41]: forcing: transfer D0_PHILOSOPHY §4
-[^b00-42]: forcing: transfer D0_PHILOSOPHY §4
-[^b00-43]: forcing: transfer D0_PHILOSOPHY §4
-[^b00-44]: forcing: GOLDEN THE 0.5.4 / DEF 19.0.1 / DEF 19.0.2
-[^b00-45]: forcing: GOLDEN LEM 0.5.7a
-[^b00-46]: forcing: GOLDEN DEF 19.0.1; the threshold itself is owned in BOOK III / `\Lambda_{\mathrm{act}}` accounting, see BOOK_03
-[^b00-47]: forcing: GOLDEN THE 0.5.6
