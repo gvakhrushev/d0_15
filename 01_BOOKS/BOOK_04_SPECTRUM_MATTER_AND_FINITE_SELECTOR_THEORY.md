@@ -1033,9 +1033,9 @@ with `W` the memory winding number. There is no "substance" term: a leptonic res
 
 **[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized [^b04-88]. [^b04-79].** The reason the electron has copies `μ, τ` (and the baryon sector has heavy modes) is that in a discrete `φ`-graph the layer capacities cannot take arbitrary real values — they quantize *integrally* as Lucas numbers `L_n`. A non-integer layer capacity would need an external ruler to define the fractional part, ⊥M1. So the only admissible excitation capacities are `{L_n}`.  The signed Lucas *trace identity* `Tr(T^n)=(-1)^n L_n` and its uniqueness-of-projection forcing are owned by 04.0 (the Lucas-trace canonical integer projection, certified by existing finite certificates); the generation-count cutoff at `n=15` (the `9n` budget break) is owned by 04.4. What this section adds is the *mass-ratio* consequence of that same integer ladder.
 
-### The muon ratio is forced additive, not fitted
+### The muon ratio: forced-additive integer part (THE), φ⁻² correction (HYP)
 
-**[THE 04.8.L.1] `m_μ/m_e = L_11 + L_4 + 2φ⁻²` [^b04-89]. [^b04-80].** The muon is an excitation localized in the memory zone (the torus, address 11). Its capacity is the Lucas number of layer 11, exactly and without rounding:
+**[THE 04.8.L.1] The integer part `L_11 + L_4 = 206` is forced additive, not fitted [^b04-89]. [^b04-80].** The muon is an excitation localized in the memory zone (the torus, address 11). Its capacity is the Lucas number of layer 11, an exact integer:
 
 ```math
 L_{11} = \varphi^{11}+\psi^{11} = 199.
@@ -1047,13 +1047,15 @@ Any stable excitation must additionally be anchored to the reference addressing 
 L_4 = 7.
 ```
 
-The minimal `Q(φ)` correction that introduces *no new parameter* is twice the internal step weight `b_0=φ⁻²` (the two internal rewrites enter/exit; no spin constant is imported). Hence the canonical integer predictor and its forced correction:
+By impedance-additivity (THE 04.8.L.1.B below) the two capacities **add**, so the forced predictor is the integer `L_11 + L_4 = 206`. This integer-additive structure is THE — M1-forced: integer Lucas capacities (THE 04.8.L.0) composed additively (a quadratic combination would need an external metric, ⊥M1).
+
+**[HYP 04.8.L.1.v] The full value `m_μ/m_e = 206 + 2φ⁻²` is a parameter-free candidate, NOT exact.** The minimal `Q(φ)` correction that imports no new parameter is twice the internal step weight `b_0=φ⁻²` (the two internal rewrites enter/exit; no spin constant is imported):
 
 ```math
-\frac{m_\mu}{m_e} = L_{11} + L_4 + 2\,\varphi^{-2} = 206 + 2\varphi^{-2}.
+\frac{m_\mu}{m_e} \;\overset{?}{=}\; L_{11} + L_4 + 2\,\varphi^{-2} = 206 + 2\varphi^{-2} = 206.76393.
 ```
 
-The numerical readout `m_μ/m_e=206.77` in the BOOK_00 readout table is the *value* of this expression; this section gives the *why* — both why it is `199+7` and why the combination is additive.
+This lands **`4.4×10⁻³` (≈ 5e-3) away** from the PDG value `206.7682830` — close, but *not* "exact". The integer `206` is forced (THE above); the sub-integer `+2φ⁻²` correction is a **HYP** candidate confronting data, so the mass-ratio *value* is HYP, not THE. The BOOK_00 readout table value `m_μ/m_e≈206.77` is this HYP expression, not a derived constant.
 
 **[THE 04.8.L.1.B] Impedance additivity forces additive mass-indices, not quadratic [^b04-90]. [^b04-81].** In CORE, "mass" is the impedance of a process: the minimal length (in `δ₀`-ticks) of the closed resonant cycle that must be realized for the state to be reproducible without external rules. Write `Z(γ):=Len(γ)` for the length of a closed path `γ` in the scene. If a process is a concatenation of two sub-cycles, `γ=γ_1∘γ_2`, then by the definition of length in a discrete graph
 
@@ -1103,7 +1105,9 @@ r_e:r_\mu:r_\tau=1:3.8814328681047283:10.3183483253993735,
 p_e=0,\qquad p_\mu={1\over4},\qquad p_\tau={1\over3},
 ```
 
-and the bridge-factor row `B_g` as a finite row function.  These entries are read from the selected coefficient origin; they are not free Yukawa constants and they are not inverted from external lepton masses.  By DEF 04.8.M.3, each `R_g` is a canonization-period index, not an eV input; the operator-origin decimals are the concrete realization of the Lucas-impedance ladder above (THE 04.8.L.1, THE 04.8.L.1.B). The signed `L_n` layer diagnostic is cross-checked by an existing finite certificate.
+and the bridge-factor row `B_g` as a finite row function.  These entries are read from the selected coefficient origin; by DEF 04.8.M.3 each `R_g` is a canonization-period index, not an eV input.
+
+**[§00.9 grammar-priority caveat — HYP, not THE].** The operator-origin decimals (e.g. `r_μ=3.8814328681047283`) are a *frozen 17-digit realization* of the lepton row; they are **not derived from** the integer Lucas-impedance ladder above. The two routes do not agree: the decimal action-closure reproduces PDG to `<1e-4`, while the parameter-free Lucas closed form (HYP 04.8.L.1.v) lands `~5e-3` off — *two different expressions for one measured ratio*. The corpus's own §00.9 grammar-priority firewall admits **one** forced grammar per quantity, not two competing fits; so until the decimal row is *derived from* the integer Lucas ladder (a named proof-target), these decimal coefficients are a **HYP frozen realization**, not a THE derivation. What is genuinely cross-checked by an existing finite certificate is the *integer* signed-`L_n` layer diagnostic (THE 04.8.L.1, 04.8.L.1.B) — not the 17-digit decimals.
 
 The generation action is still written as
 
@@ -1118,7 +1122,7 @@ Stationarity gives
 R_g^{D0}=r_gA_{EW}^{p_g}B_g.
 ```
 
-The theorem-level replacement is the no-retuning statement: at fixed `ChargedLeptonCoefficientOrigin`, changing any of `r_g`, `p_g` or `B_g` is an origin deformation, not a notation change and not a status update. A deeper spectral derivation of the decimal ratio values from a raw graph operator can still refine the origin, but the active Book 04 lepton row no longer has an independent coefficient knob — and, by the mass contract above, it never could: a free knob would be a hidden parameter (⊥M1).
+The Lean no-retuning statement (`D0.Matter.charged_lepton_mass_transfer_no_free_retuning`) proves only that, at a **fixed** `ChargedLeptonCoefficientOrigin`, the row is *notation-invariant* — changing `r_g`, `p_g` or `B_g` is an origin deformation, not a re-notation. It does **not** derive the decimal values, so it is a *frozen-realization invariance*, **not** a derivation theorem and **not** a THE on the mass ratio. The honest deeper target (named proof-target) is the spectral derivation of the decimal ratio values from a raw graph operator; until that closes, the lepton-row decimals stay **HYP** (per the §00.9 caveat above). The mass contract does forbid a *free* knob — a coefficient inverted from data with no origin would be a hidden parameter (⊥M1) — but a frozen 17-digit decimal whose origin is not yet derived is exactly that named HYP gap, not a closed THE.
 ## 04.9 Neutrino leakage sector
 
 The neutrino sector is a neutral leakage representation.  Its internal support pattern is
