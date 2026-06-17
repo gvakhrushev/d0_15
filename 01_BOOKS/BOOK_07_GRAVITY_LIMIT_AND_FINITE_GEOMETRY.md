@@ -1514,6 +1514,8 @@ D0.Geometry.finite_conserved_stress_spin2_coupling_closed
 D0.Geometry.finite_trace_mode_removed_from_spin2_carrier
 ```
 
+The transverse-traceless projection is the concrete finite operator `PiTT4` on the finite weak-field quotient (`D0.Geometry.FiniteWeakFieldQuotient`; theorems `PiTT4_idempotent`, `PiTT4_is_tt`, `PiTT4_kills_trace`, `PiTT4_kills_gauge`; cert `vp_finite_spin2_wave_operator_concrete.py`): a Poisson response plus a declared TT mode was not yet a derivation, so the spin-2 carrier is fixed by the idempotent TT projector that annihilates the trace and gauge directions.
+
 Thus the active gravity chain is:
 
 ```text
