@@ -501,7 +501,7 @@ A claim that skips the first layer is only an analogy.  A claim that skips the s
 
 ### 02.5.2 Centered half-gap and dimension ladder
 
-The centered half-gap is forced by a *canonical decomposition of unity*, not assumed.  [THE 2.5.2.unit] [^b02-10].  Ask how to split the whole `1=x+y` into parts with no arbitrariness.  Then: (i) `x+y=1`; (ii) the asymmetry ratio `x/y` must be expressible with no new parameter; (iii) the *only* dimensionless scale parameter available in the mechanism is `φ`; (iv) hence the sole M1-admissible ratio is `x/y=\varphi`; (v) solving with `1+\varphi=\varphi^2` gives `x=\varphi^{-1},\;y=\varphi^{-2}`.  The split is unique *because* φ is the only admissible scale — any other ratio would smuggle in an external catalog of cuts, violating M1.  This is the forcing reason behind the result `p_+=\varphi^{-1},\,p_-=\varphi^{-2}` (which BOOK_02 §02.5.2 and §02.31 previously stated only as the output of the `p+p^2=1` detector skeleton).
+The centered half-gap is forced by a *canonical decomposition of unity*, not assumed.  [THE 2.5.2.unit] [^b02-10].  Ask how to split the whole `1=x+y` into parts with no arbitrariness.  Then: (i) `x+y=1`; (ii) the asymmetry ratio `x/y` must be expressible with no new parameter; (iii) the *only* dimensionless scale parameter available in the mechanism is `φ`; (iv) hence the sole M1-admissible ratio is `x/y=\varphi`; (v) solving with `1+\varphi=\varphi^2` gives `x=\varphi^{-1},\;y=\varphi^{-2}`.  The split is unique *because* φ is the only admissible scale — any other ratio would smuggle in an external catalog of cuts, violating M1.  This is the forcing reason behind the result `p_+=\varphi^{-1},\,p_-=\varphi^{-2}`, which §02.5.2 and §02.31 also obtain as the output of the `p+p^2=1` detector skeleton.
 
 From the normalized branches
 
@@ -1057,7 +1057,7 @@ where every ingredient is fixed *before* any comparison to data:
 - angle `\theta_{seam}=2\pi_0(2-\varphi)=12/5` — **exact in `\mathbb Q(\varphi)`** with `\pi_0=(6/5)\varphi^2` (§04.6.π.4); `D0-PI0-DISCRETE-ANGLE-001`, Lean `D0.Geometry.Pi0DiscreteAngle`;
 - channel `\sin` (off-diagonal), **not** the trace `\cos` — forced by `Q_8`, `G^2=-I`; `D0-Q8-SIN-CHANNEL-001`, Lean `D0.Spectral.SeamHolonomy`.
 
-This **replaces the former `q_{res}` runtime dressing** (a fitted exponent, now retired): the `\approx 3.71\times10^{-4}` data residual that `q_{res}` absorbed is here *derived* as the seam holonomy. The same law `1+h_{KS}\sin\theta_{seam}` governs the PMNS angles (§04.5), with the seam-amplitude `\delta_0`-degree set by cycle topology (`D0-SEAM-HOLONOMY-001`).
+The `\approx 3.71\times10^{-4}` data residual of the runtime electromagnetic normalization is the seam closure holonomy derived above. The same law `1+h_{KS}\sin\theta_{seam}` governs the PMNS angles (§04.5), with the seam-amplitude `\delta_0`-degree set by cycle topology (`D0-SEAM-HOLONOMY-001`).
 
 **Honest status split.** The *structure* — the angle `12/5`, the `\sin` channel, the depth `\varphi^{-17}`, the linear form — graduates to **THE** (machine-checked). The **9-digit agreement** with CODATA (`137.035999151` vs CODATA-2018 `137.035999084`, gap `6.7\times10^{-8}` — smaller than the 2018→2022 edition shift `9.3\times10^{-8}`) is an empirical **CHK** (`D0-ALPHA-HOLONOMY-002`, cert `vp_seam_holonomy_alpha.py`; the `\cos`/`\exp`/wrong-depth controls all FAIL). The last `\sim10^{-8}` is a falsifiable **HYP** measurement-limit bet (`D0-ALPHA-MEASUREMENT-LIMIT-001`). The 9-digit value is **never** registered as a THE derivation; second-order holonomy was checked and does *not* close the residual. The cone-angle `2\pi_0` and `\delta_0=(6/5)` micro-derivations lean on §04.6.π.4 — named proof-targets, not claimed here.
 
@@ -1083,7 +1083,7 @@ This **replaces the former `q_{res}` runtime dressing** (a fitted exponent, now 
 \varepsilon^2=\varphi^{-16}\approx 4.53104\cdot10^{-4}.
 ```
 
-This is no longer a numeric check: since both writings are closed forms over `Q(φ)` (no data input), `Δα` is itself an **exact element of `Q(φ)`**, now certified exactly —
+This is not a numeric check: since both writings are closed forms over `Q(φ)` (no data input), `Δα` is itself an **exact element of `Q(φ)`**, certified exactly —
 
 ```math
 \alpha_{top}^{-1}=726-364\varphi,\qquad
@@ -1104,7 +1104,7 @@ i.e. `α_alg⁻¹ = (12288/5)φ⁻⁶ + (1/3)φ⁻³` exactly in `Q(φ)` (Lean `
 
 [COR] [^b02-32]  `Δα≠0` is NOT a numerical error and NOT a defect of either writing.  Two independent reconstructions of the SAME constant — topological capacity (channel count) versus geometric phase `π_0` — cannot be glued to zero residue inside `Q(φ)`: the field `Q(φ)` is the smallest catalog-free arena that holds both, and it does not flatten the seam.  Hence `Δα` is the IRREDUCIBLE residue of gluing topological capacity to geometric phase.  This non-zero seam is forced, not fitted, and it is the seed of the sterile-sector mechanism (a measurable CORE residue; any probabilistic weight `P_sterile=f(Δα²)` built on it is a typed BRIDGE/HYP layer, since the linear sign of `Δα` is not observable).  The closure-holonomy dressing (§02.13.h) does NOT erase this seam; it dresses `α_top` toward the measured `137.035999`, while `Δα` records that the two algebraic origins were never identical to begin with.
 
-**Honesty level confirmed (ξ₅ kept THE, α kept CHK).** A proposed insertion (researcher §06.42) would have read `α⁻¹` as a *closed identity* equal to the measured value. That over-statement is **declined** here, and the valuable core is **kept**: `ξ₅ = φ⁵ − 11 = φ⁻⁵ = 5φ − 8` is an exact identity (`D0-XI5-TORUS-DEFECT-001`, THE — `φ⁵ − φ⁻⁵ = L₅ = 11`), so the *structural form* `α_top⁻¹ = 359φ⁻² − ξ₅ = 726 − 364φ = 137.0356…` stands. But the equality to experiment does **not** close: the **data residual** `|α_meas − α_top⁻¹| = |137.035999 − 137.035628| ≈ 3.71×10⁻⁴` is a *different* quantity from the **algebraic residual** `Δα = |α_top⁻¹ − α_alg⁻¹| ≈ 4.15×10⁻⁴` above (the two must not be conflated). So the α-line remains **CHK** under the GOLDEN §16.3 boundary for its equality to experiment. **[Iter21 update]** the **data residual** `≈3.71×10⁻⁴` is now *derived* as the seam **closure holonomy** (§02.13.h, `D0-ALPHA-HOLONOMY-002` — structure THE, 9-digit match CHK, last `~10⁻⁸` HYP), and the former residue route (`D0-ALPHA-ZETA-RESIDUE-001` / `D0-CVFT-F1`) is **BLOCKED** (transcendental `∝1/lnφ` vs `α_alg ∈ Q(φ)`) — the holonomy is the working route. The 9-digit data match is never promoted to THE; `ξ₅` stays THE. The overstatement is fixed without losing `ξ₅`.
+**Honesty level (ξ₅ is THE, α is CHK).** `α⁻¹` is *not* a closed identity equal to the measured value. `ξ₅ = φ⁵ − 11 = φ⁻⁵ = 5φ − 8` is an exact identity (`D0-XI5-TORUS-DEFECT-001`, THE — `φ⁵ − φ⁻⁵ = L₅ = 11`), so the *structural form* `α_top⁻¹ = 359φ⁻² − ξ₅ = 726 − 364φ = 137.0356…` stands. But the equality to experiment does **not** close: the **data residual** `|α_meas − α_top⁻¹| = |137.035999 − 137.035628| ≈ 3.71×10⁻⁴` is a *different* quantity from the **algebraic residual** `Δα = |α_top⁻¹ − α_alg⁻¹| ≈ 4.15×10⁻⁴` above (the two must not be conflated). So the α-line remains **CHK** under the GOLDEN §16.3 boundary for its equality to experiment. The **data residual** `≈3.71×10⁻⁴` is *derived* as the seam **closure holonomy** (§02.13.h, `D0-ALPHA-HOLONOMY-002` — structure THE, 9-digit match CHK, last `~10⁻⁸` HYP), and the ζ-residue route (`D0-ALPHA-ZETA-RESIDUE-001` / `D0-CVFT-F1`) is **BLOCKED** (transcendental `∝1/lnφ` vs `α_alg ∈ Q(φ)`); the holonomy is the working route. The 9-digit data match is never promoted to THE; `ξ₅` stays THE.
 
 ### 02.13.5 QCD runtime and archive scale
 
@@ -1381,7 +1381,7 @@ For any downstream dimensionless readout \(Y(\varphi)\), define the local struct
 \kappa_Y=\left.\frac{d\log Y}{d\log \varphi}\right|_{\varphi=\varphi_0}.
 ```
 
-A closed D0 formula must declare whether a large \(|\kappa_Y|\) is forced by the detector construction or imported as a fragile numerical coincidence.  The old rigidity audit recorded the following representative structural uniqueness / negative-control rigidityes under the fixed stress convention:
+A closed D0 formula must declare whether a large \(|\kappa_Y|\) is forced by the detector construction or imported as a fragile numerical coincidence.  The representative structural-uniqueness / negative-control rigidities under the fixed stress convention are:
 
 | readout | representative structural uniqueness / negative-control rigidity role |
 |---|---:|
@@ -1484,10 +1484,9 @@ object, not two coincidences.
 
 ### 02.18.4 The zone matrix `M`: a stochastic spectrum, not the fractal tick [clarification]
 
-A reading sometimes proposed for the zone matrix `M=\begin{psmallmatrix}0&11/24&13/24\\9/22&0&13/22\\9/20&11/20&0\end{psmallmatrix}`
-(the row-normalised equitable quotient of `K(9,11,13)`) is that its characteristic polynomial
-yields `\varphi^{-1}`. It does not, and the correction separates three numbers that are easy to
-conflate (claim `D0-LAPLACIAN-SPECTRUM-FIX-001`, cert `vp_laplacian_3x3_correct.py`):
+The zone matrix `M=\begin{psmallmatrix}0&11/24&13/24\\9/22&0&13/22\\9/20&11/20&0\end{psmallmatrix}`
+is the row-normalised equitable quotient of `K(9,11,13)`. Its characteristic polynomial does *not*
+yield `\varphi^{-1}`; three numbers that are easy to conflate must be separated (claim `D0-LAPLACIAN-SPECTRUM-FIX-001`, cert `vp_laplacian_3x3_correct.py`). A reading that takes the zone matrix `M`'s characteristic polynomial to yield `\varphi^{-1}` is wrong, and the correction separates three numbers that are easy to conflate:
 
 - **`M` is row-stochastic**, so `\rho(M)=1` exactly; its characteristic polynomial factors as
   `(\lambda-1)(\lambda^2+\lambda+39/160)`, giving eigenvalues `\{1,\,-\tfrac12\pm\tfrac{\sqrt{10}}{40}\}\approx\{1,-0.421,-0.579\}` — all inside the unit disk. `\varphi^{-1}\approx0.618` is **not** among them.
@@ -1500,8 +1499,8 @@ conflate (claim `D0-LAPLACIAN-SPECTRUM-FIX-001`, cert `vp_laplacian_3x3_correct.
 
 So there are two matrices, two spectra, two roles: `M`'s mixing spectrum `\{1,-0.42,-0.58\}`, the
 `(I-M)` relaxation window `\{1.42,1.58\}` feeding `S_{DE}` (the Book02↔Book08 link), and the
-envelope tick `\varphi^{-1}`. The earlier reading conflated them; the structure is intact once
-they are separated.
+envelope tick `\varphi^{-1}`. These three are distinct; conflating them is the error this cell
+fences off.
 ## 02.19 High-gain uniqueness and structural uniqueness / negative-control rigidity closure
 
 Any formula containing a large exponent or small residual is release-admissible only if the exponent is selected by an operator support rule and neighbouring alternatives are excluded.
@@ -1654,7 +1653,7 @@ after quotienting gauge freedom. The bridge is unique only in this quotient. If 
 
 ### 02.20.2 Proof-cell role
 
-This theorem imports into D0 the finite-support/order/coupling/entropy pattern: reduce to finite stages, preserve a test class, build a coupling, and select the unique gauge-fixed entropy representative. This closes the earlier gap where some bridge claims had formulas but no explicit bridge object.
+This theorem imports into D0 the finite-support/order/coupling/entropy pattern: reduce to finite stages, preserve a test class, build a coupling, and select the unique gauge-fixed entropy representative. A bridge claim is therefore closed only when it supplies an explicit bridge object, not merely a formula.
 
 Terminology lock: this section uses the words `response tests` and `coupling kernel` literally; bridge closure means an explicit coupling kernel preserving the declared response tests.
 
@@ -1722,7 +1721,7 @@ proves `p_i=r_i/(Σ_jr_j)` for every finite outcome, and
 D0.finite_born_no_alternative_readout
 ```
 
-proves that an alternative finite probability assignment is impossible under the same detector response.  The finite effect-frame extension lifts this from a raw response list to finite effect frames, coarse-graining, tensor/product response and power-readout no-go.  Therefore the proof spine no longer depends on a two-channel-only argument or on importing the continuum Born rule as an axiom.
+proves that an alternative finite probability assignment is impossible under the same detector response.  The finite effect-frame extension lifts this from a raw response list to finite effect frames, coarse-graining, tensor/product response and power-readout no-go.  The proof spine therefore depends neither on a two-channel argument nor on importing the continuum Born rule as an axiom.
 
 ### 02.22.2 Theorem: finite entropy/coupling macro bridge source
 
@@ -1766,7 +1765,7 @@ Thus `34` consumes the witness/basepoint section, while `36` introduces a hidden
 
 ## 02.25 High-gain hostile uniqueness atlas completion
 
-The high-gain constants are now governed by a single atlas rule: arithmetic reproduction is insufficient. The completed atlas covers 19, 5/8+δ₀/384, lambda_c/lambda_r, meson transfers and baryon multiplet transfers in addition to the earlier 306, 38, 99 and 35 entries.
+The high-gain constants are governed by a single atlas rule: arithmetic reproduction is insufficient. The atlas covers 306, 38, 99, 35, 19, 5/8+δ₀/384, lambda_c/lambda_r, meson transfers and baryon multiplet transfers.
 
 ---
 
@@ -1907,7 +1906,7 @@ Proof (M1: the axis cannot be a knob).
 The classical Riemann RH is recovered as the special case where the packing is `ζ` of the integers: the "critical line" is a *consequence* of the canonical packing symmetry, not an independent conjecture with tunable knobs. This is the same forcing pattern that selects the phase modulus above — the residue branches and the symmetry axis are both catalog-free outputs of M1, not free parameters laid over the spectrum.
 ## 02.30 Phase-unfolding master chain
 
-D0 no longer treats spatial branching as a primitive geometric background.  An ordered finite registration can generate visible geometry through a phase quotient.  For a phase circumference \(\tau\), the map
+D0 does not treat spatial branching as a primitive geometric background.  An ordered finite registration generates visible geometry through a phase quotient.  For a phase circumference \(\tau\), the map
 
 \[
 U_\tau(n)=(n,n\bmod \tau)
@@ -1951,7 +1950,7 @@ the electroweak radial depth is the per-\(\Omega_8\)-sector branch depth:
 D_{EW}=35.
 \]
 
-This section upgrades phase unfolding from an illustration to a structural theorem: later scale depths are repeated applications of the same finite tick \(\to\) phase quotient \(\to\) return modulus \(\to\) residue branch \(\to\) quotient mechanism.
+Phase unfolding is a structural theorem, not an illustration: later scale depths are repeated applications of the same finite tick \(\to\) phase quotient \(\to\) return modulus \(\to\) residue branch \(\to\) quotient mechanism.
 
 ### Master-chain anchor: one \(\kappa\)-invariant, two passports
 
@@ -2093,20 +2092,19 @@ moments, and the φ cut-and-project support are governed by *one* ℤ₂, so the
 symmetric under φ↔ψ) gets a strict name: `Gal(ℚ(√5)/ℚ) ≅ ℤ₂`. Spontaneous breaking is
 re-read accordingly — nothing breaks; the canonical cut was never the half-cut, and the
 δ₀ offset is forced, not tuned by a potential. [Status: SYNTHESIS — each face is owned
-and proved by the cited owner; the identification is now machine-checked. A finite
+and proved by the cited owner; the identification is machine-checked. A finite
 certificate and a synthesis module prove four of the seven faces (Galois conjugation,
 the Q₈ center, the Lucas parity, and the toral determinant) are the *same* order-two
 element, together with the two joints: the Lucas-trace sign equals the orientation
 determinant, which equals the Galois norm `φ·ψ = −1`; and the address step `+2` is the
 identity of the cover (it stays on one sheet), while `+1` flips the sheet and is therefore
 banned. [^b02-59]]
-## 02.35 Preserved theorem-spine history (formerly 02.101.*)
+## 02.35 Theorem-spine owners: Born 2.0, Torus-Core13, and Galois balance
 
-The 02.101.* rows are preserved theorem-spine history.
 The active proof spine is:
 Master Evolution > QUASI > HULL/KTHEORY/SOLENOID.
 
-This history records the development of the proof spine and contains the owners for the following components:
+The proof owners for the following components are:
 
 - **Born 2.0 / 2.0 Uniqueness**:
   - `Finite Born 2.0 uniqueness`
@@ -2129,7 +2127,7 @@ This history records the development of the proof spine and contains the owners 
   - `toral_volume_conservation_square`
   - `dark_sector_even_window_readout_zero`
 
-## 02.36 Theorem spine for formerly weak sectors
+## 02.36 Theorem spine for the matter, gauge, gravity and cosmology sectors
 
 Selector uniqueness and concrete Book 04 instances: `chargedLeptonElectronTerminalClaim`,
 `electroweakDepth35Claim`, `protonReadout306Claim`,
@@ -2288,14 +2286,14 @@ generates the continuous envelope
 
 Thus continuum time is the semigroup envelope of infinite self-similar trace production.
 
-**Semigroup Uniqueness Theorem (Researcher A correction).**
-The functional equation for the envelope must satisfy the corrected multiplicative form for uniqueness under the retained-archive split:
+**Semigroup Uniqueness Theorem.**
+The functional equation for the envelope satisfies the multiplicative form
 
 \[
-A(s+t) = \frac{A(s) A(t)}{A_0}.
+A(s+t) = \frac{A(s) A(t)}{A_0},
 \]
 
-(The naive additive form is insufficient; the division by \(A_0\) normalizes the initial substrate so that the exponential solution is the unique continuous semigroup compatible with the fractal ratio \(q = \varphi^{-1}\).)
+for uniqueness under the retained-archive split. The division by \(A_0\) normalizes the initial substrate so that the exponential solution is the unique continuous semigroup compatible with the fractal ratio \(q = \varphi^{-1}\); the additive form does not give uniqueness.
 
 ### Quadratic Peel Theorem
 
@@ -2329,7 +2327,7 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b02-17]: forcing: GOLDEN §02.7A, item 4
 [^b02-18]: open obligation — cert obligation open
 [^b02-19]: forcing: GOLDEN THE 2.9A, BOOK-02-MATHEMATICAL-PROOF-SPINE-AND-INVARIANT-CALCULUS; ⊥-proof
-[^b02-20]: forcing: GOLDEN THE 10.1.8 / BOOK-IV; restated immutably as GOLDEN LEM 21.1.2 / BOOK-V
+[^b02-20]: forcing: GOLDEN THE 10.1.8 / BOOK-IV; GOLDEN LEM 21.1.2 / BOOK-V
 [^b02-21]: forcing: GOLDEN REM 21.3.3.Baire / BOOK-V; uniqueness theorem GOLDEN THE 21.3.4
 [^b02-22]: forcing: GOLDEN THE 22.2.1 / BOOK-V
 [^b02-23]: forcing: GOLDEN DEF 24.1.1 / BOOK-V
@@ -2347,7 +2345,7 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b02-35]: forcing: GOLDEN THE 21.4.5
 [^b02-36]: forcing: GOLDEN THE 21.3.4
 [^b02-37]: forcing: GOLDEN THE 21.4.3
-[^b02-38]: forcing: v17 BOOK_02 §02.13
+[^b02-38]: forcing: BOOK_02 §02.13
 [^b02-39]: claim_id: `D0-Q8-DEDEKIND-MINIMALITY-001`; forcing: GOLDEN THE I.3 / D0-THEORY-DOSSIER §I.3
 [^b02-40]: claim_id: `D0-ICOSIAN-E8-CARRIER-001`; forcing: GOLDEN THE II.1 / D0-THEORY-DOSSIER §II.1, cross-checked D0-CKM-INTERFACE-ITERATION-REPORT §28
 [^b02-41]: claim_id: `D0-ICOSIAN-LEECH-BRIDGE-001`; forcing: GOLDEN II.2
@@ -2369,5 +2367,5 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b02-57]: forcing: GOLDEN THE 30.1.1
 [^b02-58]: forcing: GOLDEN BRIDGE 30.B
 [^b02-59]: forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,
-concentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B — now closed: certificate vp_z2_spinor_cover.py and Lean D0.Synthesis.Z2SpinorCover (z2_spinor_cover) prove four of the seven incarnations are one Z2, with the +2 joint (det(T^{n+2})=det(T^n)) and the +1 control; claim D0-Z2-SPINOR-COVER-001.
+concentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B — closed: certificate vp_z2_spinor_cover.py and Lean D0.Synthesis.Z2SpinorCover (z2_spinor_cover) prove four of the seven incarnations are one Z2, with the +2 joint (det(T^{n+2})=det(T^n)) and the +1 control; claim D0-Z2-SPINOR-COVER-001.
 [^b02-60]: forcing: GOLDEN THE 3.11.B

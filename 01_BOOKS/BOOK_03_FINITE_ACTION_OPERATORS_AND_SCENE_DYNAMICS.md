@@ -74,7 +74,7 @@ Once `D` is the carrier, the Laplacian is `Δ_G = D²` (default the normalized `
 
 The forcing here: the interaction coupling is **not** an input, it is read off the spectral action. The route is **THE 15.4.2** — `α⁻¹` is fixed by the **residue of `ζ_D` at the dimension pole**, i.e. `ζ_D(0)` at that pole [^b03-6]. This residue route is what connects the coupling to the **topological capacity 359** (BOOK_03 III.1 / D0 §9) and to the `Δ_α` **seam** that canonicalizes the numerical value of `α` (BOOK_03 III.2 / D0 §16.3). The *outputs* of this — the A0 (volume) / A2 (EH-proxy) spectral-action ladder (BOOK_08 §08.32–08.34) and the `α_top⁻¹ = 359/φ² − φ⁻⁵` number (BOOK_02 §834) — rest on the *mechanism* that derives the coupling from `Res ζ_D`. That mechanism is the "why this `α`."
 
-The A0/A2 ladder stability that the residue route rides on is already certified by the finite certificate. The spectral zeta `ζ_D` is now **defined** on the scene (it was previously absent), and its finite spectral moments are closed by certificate and Lean: the edge-operator zeta yields `ζ_E(0) = 359 = |E|` (the topological capacity, at `s=0`) and `ζ_E(−1) = 359·φ⁻² − φ⁻⁵ = α_top⁻¹` (the fine-structure value as the `s=−1` moment — i.e. the edge trace), with the seam `φ⁻⁵ = ξ₅` proved separately. The **full** residue-at-the-dimension-pole derivation remains a **theorem target**: the scene is finite, so `ζ_D` is an entire finite sum with no dimension pole — `α` is recovered as a spectral *moment*, not a residue, and the genuine residue route would need the profinite/archive limit. Accordingly `α` is a **structural form** good to ~`3.7·10⁻⁴` (not a precision prediction), and the residual seam `Δ_α` — distinct from `φ⁻⁵` — still lacks an analytic second-order owner. [^b03-1] for the `ζ_D`-residue → `α⁻¹` step [^b03-7]; the spectral-action ladder it sits on is CORE.
+The A0/A2 ladder stability that the residue route rides on is already certified by the finite certificate. The spectral zeta `ζ_D` is **defined** on the scene, and its finite spectral moments are closed by certificate and Lean: the edge-operator zeta yields `ζ_E(0) = 359 = |E|` (the topological capacity, at `s=0`) and `ζ_E(−1) = 359·φ⁻² − φ⁻⁵ = α_top⁻¹` (the fine-structure value as the `s=−1` moment — i.e. the edge trace), with the seam `φ⁻⁵ = ξ₅` proved separately. The **full** residue-at-the-dimension-pole derivation remains a **theorem target**: the scene is finite, so `ζ_D` is an entire finite sum with no dimension pole — `α` is recovered as a spectral *moment*, not a residue, and the genuine residue route would need the profinite/archive limit. Accordingly `α` is a **structural form** good to ~`3.7·10⁻⁴` (not a precision prediction), and the residual seam `Δ_α` — distinct from `φ⁻⁵` — still lacks an analytic second-order owner. [^b03-1] for the `ζ_D`-residue → `α⁻¹` step [^b03-7]; the spectral-action ladder it sits on is CORE.
 
 ### 03.1.3 Why the wavefunction is an algebraic sum of path memory-classes (THE 4.1.2)
 
@@ -428,7 +428,7 @@ The discipline above is not a stylistic choice — every clause is forced. A ver
 \kappa_k<\infty,\;\;|C|<\infty\;\Longrightarrow\;\#\{\text{codes of length}\le\kappa_k\}<\infty\;\Longrightarrow\;\#\{\text{outcome profiles}\}<\infty\;\Longrightarrow\;|V_k|<\infty.
 ```
 
-Status: FORCED [^b03-35]. Consequence for this section: the vertex registry `\(\mathcal S_{finite}\)` is a *finite* table at every level. There are no continuum vertices in CORE. QFT-style divergences are not physical — they are the artifact of an unphysical limit `\(k\to\infty\)` taken without carrying the level structure of `\(V_k\)`. This is exactly the "finite detector states" hypothesis above, now derived rather than assumed.
+Status: FORCED [^b03-35]. Consequence for this section: the vertex registry `\(\mathcal S_{finite}\)` is a *finite* table at every level. There are no continuum vertices in CORE. QFT-style divergences are not physical — they are the artifact of an unphysical limit `\(k\to\infty\)` taken without carrying the level structure of `\(V_k\)`. This is exactly the "finite detector states" hypothesis above, derived rather than assumed.
 
 **(b) Minimal refinement arity = 2 — vertices are binary with `\(\varphi^{-1}/\varphi^{-2}\)` weights.** A vertex is the elementary act by which a node `\(v\in V_k\)` splits into `\(m\)` children in `\(V_{k+1}\)`. The arity is forced to `m = 2` by M1:
 - `m = 1`: no new distinction — the refinement is vacuous, not a vertex at all.
@@ -857,7 +857,7 @@ finite action support
 → observable transfer only after the internal object is fixed.
 ```
 
-This removes the previous bridge-only reading in which a large action number could be quoted as if it directly selected a particle mass. The active theory requires the intermediate operator: response for probability claims, strict selector for particle identity claims, and transfer operator for mass/comparison claims.
+A large action number does not by itself select a particle mass: the intermediate operator is required — response for probability claims, strict selector for particle identity claims, and transfer operator for mass/comparison claims.
 ## 03.23 K(9,11,13) Torus Shell Interpretation
 
 The preceding dynamic source is the D0 time-transition matrix:
@@ -1030,7 +1030,7 @@ eps_n := phi^n - L_n = -psi^n = (-1)^{n+1} phi^-n
    direction.)
 4. A step `+2` (`5 -> 7`) preserves the orientation class; the gluing closes with
    no external parameter. So the address step is forced to `+2`. This `+2`-invariance
-   is now machine-checked: the address step is the identity element of the double
+   is machine-checked: the address step is the identity element of the double
    cover `Z(Q8)`, proved as `det(T^{n+2}) = det(T^n)` (with the `+1` flip
    `det(T^{n+1}) = -det(T^n)` as the negative control), so the orientation class is the
    single `Z_2 = Z(Q8)` of the seven-incarnation concentrator (BOOK_02 §02.34).

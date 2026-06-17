@@ -345,13 +345,13 @@ The D0 internal units may be represented by the normalized section
 
 This is not a claim that laboratory SI units are trivial.  It is the internal statement that one line-step and one discrete evolution step-step form a single causal section before external metrology is attached.  The Lean owner records the internal cone speed as a dimensionless invariant of the normalized kinematic gauge.  SI light speed is therefore a metrological export, not a fitted D0 core parameter.
 
-The physical export of the discrete evolution step convention is handled by the matter/metrology books.  The old evolution material contains the terminal relation
+The physical export of the discrete evolution step convention is handled by the matter/metrology books. The terminal relation
 
 ```math
 \tau_0=\frac{h}{38m_ec^2},
 ```
 
-but Book 06 uses it only as a cross-reference: the coefficient `38` (the action cycle `Lambda_act`) belongs to the terminal matter/readout analysis (BOOK_03-owned) and the SI-length/Newton shadow belongs to Book 07.
+enters Book 06 only as a cross-reference: the coefficient `38` (the action cycle `Lambda_act`) belongs to the terminal matter/readout analysis (BOOK_03-owned) and the SI-length/Newton shadow belongs to Book 07.
 
 ### The arrow is forced, not assumed
 
@@ -529,7 +529,7 @@ This rule is essential.  Without it, evolution would become a place to hide fitt
 
 ## 06.12 Runtime coefficient readout sequence
 
-The source evolution book collects several ordered finite evolution coefficient shadows.  In the new order they are not treated as independent derivations inside Book 06; they are read as a sequence of typed readouts from already-defined books:
+Several ordered finite evolution coefficient shadows are not independent derivations inside Book 06; they are read as a sequence of typed readouts from already-defined books:
 
 ```math
 \pi_0\text{-holonomy}\to G_N,
@@ -561,7 +561,7 @@ Scattering is the experimental form of finite ordered finite evolution.  The Boo
 \text{finite support}\to T_{discrete evolution step}^{D0}\to\mathcal U_\gamma^{D0}\to P(b|a,\gamma)\to\sigma_{exp}.
 ```
 
-The source discrete evolution step-to-scattering expression is preserved as
+The discrete evolution step-to-scattering expression is
 
 ```math
 \sigma_{D0\to exp}=\ell_0^2\,\mathcal J_{exp}\,P_{D0},\qquad
@@ -606,7 +606,7 @@ The forbidden direction is
 
 ## 06.15 Saturation, horizons and the gravity cross-reference
 
-Finite ordered finite evolution can saturate.  In the source book this appears in horizon language and Einstein-side heat-trace language.  Book 06 records the ordered finite evolution principle:
+Finite ordered finite evolution can saturate, in horizon language and Einstein-side heat-trace language. Book 06 records the ordered finite evolution principle:
 
 ```math
 \sigma(R)\to1
@@ -674,7 +674,7 @@ The positive test is:
 
 ## 06.19 Integrated causal-information invariants
 
-The integrated source layer contains a compact causal-information invariant layer.  It belongs in the evolution book because it explains why time is not an external parameter but a stable ordering of finite records.
+A compact causal-information invariant layer belongs in the evolution book because it explains why time is not an external parameter but a stable ordering of finite records.
 
 A D0 evolution step is admissible only if it preserves:
 
@@ -698,7 +698,7 @@ Forgetting is a quotient on this history, not destruction of the finite event:
 \Delta(\rho_N)=\sum_a \Pi_a\rho_N\Pi_a,
 ```
 
-with the discarded off-diagonal data entering the traced-out complement sector.  This integrated block is the evolution-side counterpart of Book 01's condensed detector halt.
+with the discarded off-diagonal data entering the traced-out complement sector. This block is the evolution-side counterpart of Book 01's condensed detector halt.
 
 ## 06.20 Wilsonian RG as a typed forgetting map
 
@@ -816,7 +816,7 @@ A bridge comparison protocol is closed when these fields are fixed before numeri
 
 ## 06.24 Forgetting as entropy-selected coupling
 
-The D0 forgetting map is upgraded from a metaphorical archive projection to a finite entropy-selected coupling. Given retained response tests `Test_D0(N)`, the forgetting bridge is the kernel
+The D0 forgetting map is a finite entropy-selected coupling, not a metaphorical archive projection. Given retained response tests `Test_D0(N)`, the forgetting bridge is the kernel
 
 ```math
 K_N^* = \arg\max_{K_N}\ H(Y_N|X_N)
@@ -1000,9 +1000,9 @@ Space (graph spectrum) and time (torus automorphism) are different objects, so r
 
 **Named external owner of "modular flow".** The word *modular* here is not borrowed loosely: its classical owner is **Tomita–Takesaki modular theory** (Tomita 1967; Takesaki, LNM 128, 1970), under which a von Neumann algebra with a cyclic–separating vector carries a *canonical* one-parameter modular automorphism group, unique up to inner automorphism (Connes' Radon–Nikodym cocycle) — the "thermal time" of Connes–Rovelli. That time is fixed by the (algebra, state) pair, **not** read from an external clock-catalogue — exactly the M1-compatible content D0 needs. This is recorded as the forcing-owner edge `D0-TIME-MODULAR-FLOW-OWNER-001` (assumption `ASSUMP-TOMITA-TAKESAKI`, Lean `D0.Bridge.TomitaTakesakiBridge`). Honest scope: D0 proves only the *Pisot/symbolic* structure of the single time flow above; identifying that flow with the Tomita–Takesaki modular automorphism is the named external owner, cited not re-derived (BOOK_05 §05.8.R).
 
-**Time and flavor share the SL(2,ℤ) modular group [LEM].** There is a second, *distinct* sense in which time is "modular" — and it links time to **flavor**. The D0 flavor group `A_5 = 2I/\{\pm1\}` (from the icosians → `E_8`, BOOK_02 §02.18) is exactly the **level-5 finite modular group**: `\overline{\Gamma}_5 = \mathrm{PSL}(2,\mathbb{Z})/\Gamma(5) = \mathrm{PSL}(2,5) \cong A_5` (the modular flavor symmetry of Feruglio; Ding–Everett–Stuart, *Nucl. Phys. B* **857**, 219; arXiv:1110.1688). The toral time generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` is a golden/hyperbolic element of `\mathrm{GL}(2,\mathbb{Z})` (det `-1`, `h_{KS}=\log\varphi`). So **time (a `GL(2,ℤ)` element) and flavor (the level-5 quotient `A_5`) both live in the `SL(2,ℤ)` modular-group structure** (claim `D0-MODULAR-TIME-FLAVOR-001`, cert `vp_modular_time_flavor.py`). This also fixes the solar mixing: `\sin^2\theta_{12} = \tfrac13 - 2\delta_0^2 = 0.3055`, closest to NuFIT 6.0 (`0.307`) and beating the classical golden-ratio predictions GRA (`0.276`) and GRB (`0.346`). **Crucial distinction (mechanism filter):** this `SL(2,ℤ)` *modular group* is **NOT** the Tomita–Takesaki *modular automorphism* of the previous paragraph — the word "modular" carries two different mathematical meanings, and they are kept apart here, not conflated. **Status MECH-LIMIT** (time↔flavor identification): the real shared structure is the modular group; the full identification "the golden time element and the `A_5` level-5 quotient are one modular object" is the named open gap. **[Iter21]** the rate `h_{KS}=\log\varphi` here is *exactly* the closure-holonomy stretch per monodromy turn (§02.13.h, `D0-SEAM-HOLONOMY-001`); and `\sin^2\theta_{12}=\tfrac13-2\delta_0^2` is now the **closed-loop (`δ₀²`) member** of the *derived* seam-topology rule (`D0-PMNS-SEAM-TOPOLOGY-001`, §04.5), no longer a bare MECH-LIMIT formula — the angle is derived (rule THE / value CHK, <0.5σ vs JUNO-2026); only the time↔flavor modular identification stays the named gap.
+**Time and flavor share the SL(2,ℤ) modular group [LEM].** There is a second, *distinct* sense in which time is "modular" — and it links time to **flavor**. The D0 flavor group `A_5 = 2I/\{\pm1\}` (from the icosians → `E_8`, BOOK_02 §02.18) is exactly the **level-5 finite modular group**: `\overline{\Gamma}_5 = \mathrm{PSL}(2,\mathbb{Z})/\Gamma(5) = \mathrm{PSL}(2,5) \cong A_5` (the modular flavor symmetry of Feruglio; Ding–Everett–Stuart, *Nucl. Phys. B* **857**, 219; arXiv:1110.1688). The toral time generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` is a golden/hyperbolic element of `\mathrm{GL}(2,\mathbb{Z})` (det `-1`, `h_{KS}=\log\varphi`). So **time (a `GL(2,ℤ)` element) and flavor (the level-5 quotient `A_5`) both live in the `SL(2,ℤ)` modular-group structure** (claim `D0-MODULAR-TIME-FLAVOR-001`, cert `vp_modular_time_flavor.py`). This also fixes the solar mixing: `\sin^2\theta_{12} = \tfrac13 - 2\delta_0^2 = 0.3055`, closest to NuFIT 6.0 (`0.307`) and beating the classical golden-ratio predictions GRA (`0.276`) and GRB (`0.346`). **Crucial distinction (mechanism filter):** this `SL(2,ℤ)` *modular group* is **NOT** the Tomita–Takesaki *modular automorphism* of the previous paragraph — the word "modular" carries two different mathematical meanings, and they are kept apart here, not conflated. **Status MECH-LIMIT** (time↔flavor identification): the real shared structure is the modular group; the full identification "the golden time element and the `A_5` level-5 quotient are one modular object" is the named open gap. The rate `h_{KS}=\log\varphi` here is *exactly* the closure-holonomy stretch per monodromy turn (§02.13.h, `D0-SEAM-HOLONOMY-001`); and `\sin^2\theta_{12}=\tfrac13-2\delta_0^2` is the **closed-loop (`δ₀²`) member** of the *derived* seam-topology rule (`D0-PMNS-SEAM-TOPOLOGY-001`, §04.5): the angle is derived (rule THE / value CHK, <0.5σ vs JUNO-2026); only the time↔flavor modular identification stays the named gap.
 
-**CKM ↔ PMNS: not mutual inverses, but complementary [reforged].** A proposed relation `V_{CKM} U_{PMNS}^{T} = I_3` is **false** and is reforged here (claim `D0-CKM-PMNS-COMPLEMENTARITY-001`, cert `vp_ckm_pmns_orthogonality.py`): `V_{CKM} U_{PMNS}^{T}=I` would force `V_{CKM}=U_{PMNS}` (i.e. CKM `=` PMNS), but CKM angles are **small** and PMNS **large** — in the 1–2 sector `R(\theta_C)R(\theta_{12})^{T}=R(\theta_C-\theta_{12})\approx R(-20.6^\circ)\neq I`. The salvaged, experimentally real content is **quark–lepton complementarity**: `\theta_C + \theta_{12} \approx 13.04^\circ + 33.6^\circ = 46.6^\circ \approx 45^\circ` (a `\sim1.6^\circ` near-coincidence). Status **HYP** — an approximate relation, not an exact identity; the strong orthogonality is rejected, the weaker complementarity kept.
+**CKM ↔ PMNS: not mutual inverses, but complementary.** A proposed relation `V_{CKM} U_{PMNS}^{T} = I_3` is **false** (claim `D0-CKM-PMNS-COMPLEMENTARITY-001`, cert `vp_ckm_pmns_orthogonality.py`): `V_{CKM} U_{PMNS}^{T}=I` would force `V_{CKM}=U_{PMNS}` (i.e. CKM `=` PMNS), but CKM angles are **small** and PMNS **large** — in the 1–2 sector `R(\theta_C)R(\theta_{12})^{T}=R(\theta_C-\theta_{12})\approx R(-20.6^\circ)\neq I`. The salvaged, experimentally real content is **quark–lepton complementarity**: `\theta_C + \theta_{12} \approx 13.04^\circ + 33.6^\circ = 46.6^\circ \approx 45^\circ` (a `\sim1.6^\circ` near-coincidence). Status **HYP** — an approximate relation, not an exact identity; the strong orthogonality is rejected, the weaker complementarity kept.
 ## 06.31 φ-discrete RG as a typed forgetting step
 
 The renormalization bridge is a typed forgetting map over the D0 scale ladder. At level `k`, the comparison scale is
@@ -1047,7 +1047,7 @@ D0.Gauge.YangMillsKillingPositivity
 D0.Gauge.MatrixRepGaugeTransform
 ```
 
-The exact Bianchi statement is now closed on the graded incidence complex by `D0.Gauge.GradedBianchiIdentity`; the flat ungraded matrix residual remains a `NO-GO`. Finite gauge covariance is closed on the Wilson-link model by `D0.Gauge.WilsonLinkGaugeCovariance`. This closure is group-level and requires an associative `[Group G]` link carrier. Octonions are non-associative and cannot serve directly as the connection group; D0 uses the GaugeGroupDerivable boundary, meaning a derived associative automorphism group or matrix representation group.
+The exact Bianchi statement is closed on the graded incidence complex by `D0.Gauge.GradedBianchiIdentity`; the flat ungraded matrix residual remains a `NO-GO`. Finite gauge covariance is closed on the Wilson-link model by `D0.Gauge.WilsonLinkGaugeCovariance`. This closure is group-level and requires an associative `[Group G]` link carrier. Octonions are non-associative and cannot serve directly as the connection group; D0 uses the GaugeGroupDerivable boundary, meaning a derived associative automorphism group or matrix representation group.
 
 ## 06.33 Renormalized archive Laplacian as finite forgetting
 
@@ -1091,7 +1091,7 @@ The seam anomaly above is the seed of a larger closure: it answers the standing 
 a static classifier of a finite scene, or a generator of dynamics?* The answer is **generator**,
 and the mechanism is **Feshbach–Schur** on the forced active/archive split (claim
 `D0-GENERATIVE-DYNAMICS-001`). The previously open cert obligation of `[^b06-39]` (the M1
-no-catalog step + "origin of dynamics" lift) is now discharged at the finite level by the
+no-catalog step + "origin of dynamics" lift) is discharged at the finite level by the
 certificates below; the only residual is the continuum-limit step, held honestly at MECH-LIMIT.
 
 1. **Effective dynamics (Feshbach–Schur).** Split the carrier into the active block `P` (the
@@ -1105,7 +1105,7 @@ certificates below; the only residual is the continuum-limit step, held honestly
    integrating out the archive — not imposed.
 
 2. **Time = the seam that cannot close.** The non-intertwining `C_n = L_{n+1}B - B L_n ≠ 0` is
-   now machine-checked: the Galerkin restriction `Bᵀ L_{n+1} B = L_n` holds (the Laplacian is
+   machine-checked: the Galerkin restriction `Bᵀ L_{n+1} B = L_n` holds (the Laplacian is
    preserved under coarsening) yet `C_n ≠ 0` (Lean `D0.Claims.GluingAnomalyTime`, `native_decide`;
    `vp_gluing_anomaly_time.py`). A vanishing `C_n` would need `B` aligned to the eigenbasis of
    `L_{n+1}` — an external spectral catalogue M1 forbids. The scalar gluing anomaly is the
@@ -1134,7 +1134,7 @@ exists, "QFT = shadow of the D0 automaton" is a strong MECH-LIMIT, cited not ove
 
 c_D0 = 1 is the invariant causal propagation bound of finite hull dynamics. It means one admissible discrete evolution step cannot cross more than one finite adjacency layer. The SI value of light speed is unit printing, not the invariant.
 
-The current edition separates three statements that were previously too easy to conflate:
+Three statements must be kept apart and not conflated:
 
 1. D0 internal length discrete evolution step: the primitive finite propagation section has one line unit and one discrete evolution step unit.
 2. Internal cone invariant: `internal_cone_speed_eq_one` states `c_D0 = 1` as a dimensionless cone-speed normalization.
@@ -1146,7 +1146,7 @@ This also sharpens the time claim: time is not an extra continuum substance adde
 
 ## 06.36 Finite discrete evolution step-gauge closure
 
-06.36 inherited discrete evolution step-gauge closure: a finite record is admissible as an internal kinematic gauge only when the line readout and the time readout are two faces of one common causal section.
+Discrete evolution step-gauge closure: a finite record is admissible as an internal kinematic gauge only when the line readout and the time readout are two faces of one common causal section.
 
 The active formulation replaces the shorthand `length discrete evolution step = time discrete evolution step` with a finite causal section. The owner is
 
@@ -1287,7 +1287,7 @@ The same `xi5` then drives the α-form as a derived term, not an inserted one:
 alpha^-1 = 359/phi^2 - (phi^5 - 11) = 359/phi^2 - xi5
 ```
 
-read as **channel capacity of the scene (`359/phi^2`) minus the integer-defect of the torus address (`xi5 = phi^5 - 11`)**. The correction `xi5` stopped being a tuned member: it is the Lucas error at the fifth time-return, `Tr(T^5) = -L_5 = -11` (cf. 06.37.1). [^b06-47]
+read as **channel capacity of the scene (`359/phi^2`) minus the integer-defect of the torus address (`xi5 = phi^5 - 11`)**. The correction `xi5` is not a tuned member: it is the Lucas error at the fifth time-return, `Tr(T^5) = -L_5 = -11` (cf. 06.37.1). [^b06-47]
 
 Status boundary (per GOLDEN §16.3, unchanged): the numeric line `alpha^-1 = 359/phi^2 - xi5 = 137.0356...` against experiment `137.035999084` leaves a residual `Delta_alpha ~ 3.7e-4` that remains **CHK** — a declared gluing anomaly, not promoted to THE until `Delta_alpha` receives an analytic second-order owner. The structural α-form is forced; the experimental-precision prediction of α is not (α is known to `~1.5e-10`, seven orders below this residual). This same `Delta_alpha` is the seed of the neutrino scale `Sigma m_nu = Delta_alpha^2 * m_e`.
 
@@ -1475,15 +1475,15 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b06-14]: open obligation — cert obligation open
 [^b06-15]: forcing: GOLDEN BOOK-VI-EXTENSIONS THE 77.1 + COR 77.2
 [^b06-16]: forcing: GOLDEN BOOK-VI-EXTENSIONS COR 77.2
-[^b06-17]: forcing: v17 BOOK-00-ENTRY-CONTRACT-AND-ADMISSIBILITY 00.2A
+[^b06-17]: forcing: BOOK-00-ENTRY-CONTRACT-AND-ADMISSIBILITY 00.2A
 [^b06-18]: open obligation — cert obligation open — the existing cert checks the magnitude, not the `det = B` identity
 [^b06-19]: open obligation — cert obligation open
 [^b06-20]: open obligation — cert obligation open — the existing toral cert checks `det`/trace, not the KS-entropy identity
 [^b06-21]: open obligation — cert obligation open
 [^b06-22]: forcing: D0-CKM-INTERFACE-ITERATION-REPORT §32, verified n=1..10
-[^b06-23]: forcing: v17 BOOK_06 §06.2/§06.8a; GOLDEN REM 51.6, BOOK-VI-EXTENSIONS
+[^b06-23]: forcing: BOOK_06 §06.2/§06.8a; GOLDEN REM 51.6, BOOK-VI-EXTENSIONS
 [^b06-24]: forcing: D0-CKM-INTERFACE-ITERATION-REPORT §33
-[^b06-25]: forcing: v17 BOOK_06 Theorem 06.2E
+[^b06-25]: forcing: BOOK_06 Theorem 06.2E
 [^b06-26]: forcing: GOLDEN LEM II.3.APPX8.4.2, BOOK-II-MECHANISM
 [^b06-27]: forcing: GOLDEN LEM II.3.APPX8.4.2, BOOK-II-MECHANISM
 [^b06-28]: forcing: GOLDEN THE II.3.APPX8.5.2, BOOK-II-MECHANISM
@@ -1503,7 +1503,7 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b06-42]: open obligation — cert obligation open
 [^b06-43]: forcing: D0-SIGNATURE-31-SPLIT-001
 [^b06-44]: forcing: D0-SIGNATURE-31-SPLIT-001; time-as-T^2 minimality: D0-TIME-2D-PISOT-001
-[^b06-45]: forcing: GOLDEN/v17 BOOK_06 06.36A/06.36B Discrete Lorentz Factor, Finite Holographic Self-Reading Principle
+[^b06-45]: forcing: GOLDEN BOOK_06 06.36A/06.36B Discrete Lorentz Factor, Finite Holographic Self-Reading Principle
 [^b06-46]: forcing: GOLDEN THE 36, 40
 [^b06-47]: forcing: GOLDEN THE 36; cite BOOK_02 02.13.4 for the α-form ownership, BOOK_01 for the `359/phi^2` capacity term.
 [^b06-48]: forcing: GOLDEN THE 40.

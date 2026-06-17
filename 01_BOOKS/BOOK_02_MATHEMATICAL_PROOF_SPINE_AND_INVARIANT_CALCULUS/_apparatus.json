@@ -18,7 +18,7 @@
   "b02-17": "forcing: GOLDEN §02.7A, item 4",
   "b02-18": "open obligation — cert obligation open",
   "b02-19": "forcing: GOLDEN THE 2.9A, BOOK-02-MATHEMATICAL-PROOF-SPINE-AND-INVARIANT-CALCULUS; ⊥-proof",
-  "b02-20": "forcing: GOLDEN THE 10.1.8 / BOOK-IV; restated immutably as GOLDEN LEM 21.1.2 / BOOK-V",
+  "b02-20": "forcing: GOLDEN THE 10.1.8 / BOOK-IV; GOLDEN LEM 21.1.2 / BOOK-V",
   "b02-21": "forcing: GOLDEN REM 21.3.3.Baire / BOOK-V; uniqueness theorem GOLDEN THE 21.3.4",
   "b02-22": "forcing: GOLDEN THE 22.2.1 / BOOK-V",
   "b02-23": "forcing: GOLDEN DEF 24.1.1 / BOOK-V",
@@ -36,7 +36,7 @@
   "b02-35": "forcing: GOLDEN THE 21.4.5",
   "b02-36": "forcing: GOLDEN THE 21.3.4",
   "b02-37": "forcing: GOLDEN THE 21.4.3",
-  "b02-38": "forcing: v17 BOOK_02 §02.13",
+  "b02-38": "forcing: BOOK_02 §02.13",
   "b02-39": "claim_id: `D0-Q8-DEDEKIND-MINIMALITY-001`; forcing: GOLDEN THE I.3 / D0-THEORY-DOSSIER §I.3",
   "b02-40": "claim_id: `D0-ICOSIAN-E8-CARRIER-001`; forcing: GOLDEN THE II.1 / D0-THEORY-DOSSIER §II.1, cross-checked D0-CKM-INTERFACE-ITERATION-REPORT §28",
   "b02-41": "claim_id: `D0-ICOSIAN-LEECH-BRIDGE-001`; forcing: GOLDEN II.2",
@@ -57,6 +57,6 @@
   "b02-56": "forcing: GOLDEN DEF 30.0.2, DEF 30.0.3",
   "b02-57": "forcing: GOLDEN THE 30.1.1",
   "b02-58": "forcing: GOLDEN BRIDGE 30.B",
-  "b02-59": "forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,\nconcentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B — now closed: certificate vp_z2_spinor_cover.py and Lean D0.Synthesis.Z2SpinorCover (z2_spinor_cover) prove four of the seven incarnations are one Z2, with the +2 joint (det(T^{n+2})=det(T^n)) and the +1 control; claim D0-Z2-SPINOR-COVER-001.",
+  "b02-59": "forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,\nconcentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B — closed: certificate vp_z2_spinor_cover.py and Lean D0.Synthesis.Z2SpinorCover (z2_spinor_cover) prove four of the seven incarnations are one Z2, with the +2 joint (det(T^{n+2})=det(T^n)) and the +1 control; claim D0-Z2-SPINOR-COVER-001.",
   "b02-60": "forcing: GOLDEN THE 3.11.B"
 }

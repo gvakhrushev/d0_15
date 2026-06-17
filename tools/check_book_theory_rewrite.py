@@ -19,7 +19,7 @@ REQUIRED = {
         "finite_effect_born_readout_unique",
     ],
     "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": [
-        "## 02.36 Theorem spine for formerly weak sectors",
+        "## 02.36 Theorem spine for the matter, gauge, gravity and cosmology sectors",
         "ckm_no_free_matrix_at_fixed_bases",
         "finite_spin2_tt_carrier_closed",
     ],
@@ -50,7 +50,7 @@ REQUIRED = {
     ],
     "BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md": [
         "# BOOK 08 — Cosmology, Archive, and Observable Transfer",
-        "## 08.40 Observable-transfer boundary after theory rewrite",
+        "## 08.40 Observable-transfer boundary",
     ],
 }
 

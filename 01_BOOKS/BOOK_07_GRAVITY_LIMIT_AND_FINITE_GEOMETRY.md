@@ -169,7 +169,7 @@ external catalog of dimension. Throughout this book "\(D\ge 6\)" denotes a
 *computed structural fact* about the scene, never a postulate [^b07-9]. This is the dimension-specific instance of the corpus-wide
 no-retuning discipline.
 
-The book separates three things that were interleaved in earlier gravity drafts:
+The book separates three things:
 
 1. the internal finite-geometric construction;
 2. the SI/metrological Newton shadow;
@@ -604,7 +604,7 @@ This guardrail is essential because several corrected gravity bridges are audit 
 
 ### Why mass is a closure density, not a substance (forcing)
 
-Before the retired `q_mass`/`q_res` bookkeeping makes sense, the geometry side has to say what mass *is*. The forced answer is structural, not material: in CORE there is no mass-stuff, only the density of light-like cycles that close.
+Before the `q_mass`/`q_res` bookkeeping makes sense, the geometry side has to say what mass *is*. The forced answer is structural, not material: in CORE there is no mass-stuff, only the density of light-like cycles that close.
 
 **[COR 07.12.M] Mass = cycle-closure density [^b07-28]. [^b07-27].** A light-like cycle `P` is a stable closure of the fastest transitions on a refinement level `k` [^b07-29]. Its period `τ(P)` is the cycle length in refinement ticks (DEF II.4.5). The closure density at `x` is the forced observable
 
@@ -622,9 +622,9 @@ Before the retired `q_mass`/`q_res` bookkeeping makes sense, the geometry side h
 
 This is the geometry-side root that the matter sector reads downstream: BOOK_04 (THE 04.6.π.D) takes the per-state rest frequency `ω₀:=τ(P)⁻¹` of a single light cycle and reads `E²−p²=ω₀²` off it rather than posting a free mass; the rest-mass-as-spectral-gap packaging (GOLDEN THE II.4.8, BRIDGE-tier) and the `K0` gap labels live there. BOOK_07 does **not** re-derive that spectrum — it only holds the closure-density origin so the gravity equation stays typed and the residual bookkeeping below stays a *cross-reference*, not a knob.
 
-### q-mass and residual as retired cross-reference
+### q-mass and residual as cross-reference
 
-The q-mass and boundary residual terms are retained as cross-reference material, not as independent gravity knobs:
+The q-mass and boundary residual terms are cross-reference material, not independent gravity knobs:
 
 ```math
 q_{mass}=(1+\delta_0^3)^{-1},
@@ -704,7 +704,7 @@ A gravity claim fails if it does any of the following:
 1. starts from a smooth metric as primitive D0 input;
 2. uses measured `G_N` to choose `D_L`;
 3. uses `pi0` as a Newton repair parameter;
-4. uses `q_res`, boundary residual eigenvalue r_∂ (retired q_mass) or boundary information as hidden scalar fitting;
+4. uses `q_res`, boundary residual eigenvalue r_∂ or boundary information as hidden scalar fitting;
 5. collapses runtime `G_runtime` into SI `G_N` without dimensionless spectral scale-separation invariant and metrology;
 6. imports cosmological survey residuals into the definition of the gravity operator;
 7. treats terminal boundary quotient into the traced-out sector loss as literal deletion rather than loss of active readout.
@@ -1055,7 +1055,7 @@ The finite archive is equipped with a canonical weighted graph Laplacian $L$ der
 
 ## 07.28 Renormalized archive Laplacian / RG geometry
 
-The current refinement is that the local phase Laplacian is not required to commute strictly with archive pullback. The finite gravity operator is read through the effective coarse operator
+The local phase Laplacian is not required to commute strictly with archive pullback. The finite gravity operator is read through the effective coarse operator
 
 ```text
 L_eff(n) = B^T L_{n+1} B,
@@ -1067,7 +1067,7 @@ The finite certificate confirms the flow: the projected effective operator has s
 
 ## 07.29 Seam curvature and archive action
 
-The internal curvature object is now the seam commutator
+The internal curvature object is the seam commutator
 
 ```text
 C_n = L_{n+1} B_n - B_n L_n.
@@ -1089,7 +1089,7 @@ The proved Lean facts are: `rho_n >= 0`, `rho_n = 0` iff operator transport is f
 
 ## 07.30 Seam-action variation and archive field equation
 
-The seam action now has a finite variational layer.  Varying the coarse
+The seam action carries a finite variational layer.  Varying the coarse
 archive Laplacian inside
 
 ```text
@@ -1207,7 +1207,7 @@ projectively compatible, so no external limit term `c_n` is introduced
 [^b07-42].
 ## 07.31 Admissible variation space and variational stress dual
 
-The current Lean layer closes the variational-dual algebra for the finite archive field equation.  The raw curvature gradient
+The variational-dual algebra for the finite archive field equation is closed.  The raw curvature gradient
 
 ```text
 G_n = -2 B_n^T C_n
@@ -1236,14 +1236,14 @@ D0.raw_gradient_equivalent_to_canonical_stress
 D0.canonical_stress_symmetric
 ```
 
-The currently proved canonical representative is therefore the variational representative
+The canonical representative is therefore the variational representative
 
 ```text
 canonicalStressRepresentative(G_n) = symPart(G_n),
 VariationEquivalent(G_n, canonicalStressRepresentative(G_n)).
 ```
 
-This does not by itself close the conservation of the symmetric representative.  Lean currently records the guardrail
+This does not by itself close the conservation of the symmetric representative.  The guardrail is
 
 ```text
 NO_GO_CANONICAL_STRESS_CONSERVATION_PROJECTION
@@ -1263,7 +1263,7 @@ For raw gradients with `G · 1 = 0`, this projection is symmetric, row-conserved
 
 ## 07.32 Discrete Poisson / weak-field equation
 
-The finite weak-field skeleton is now the graph Poisson problem on the canonical cycle Laplacian:
+The finite weak-field skeleton is the graph Poisson problem on the canonical cycle Laplacian:
 
 ```math
 L\phi = \rho.
@@ -1302,8 +1302,8 @@ The predicate `ScalarSectorStationary` is a non-vacuous point-test stationarity 
 
 ## 07.33 Final finite-geometry theorem chain
 
-The typed-closure finite-geometry chain is now closed as a theorem/cert/no-go
-sequence rather than an informal gravity analogy:
+The typed-closure finite-geometry chain is closed as a theorem/cert/no-go
+sequence:
 
 ```text
 finite variation
@@ -1535,7 +1535,7 @@ bridge is not a label or a primitive graviton import.
 
 ### 07.35.1 Rejected readings
 
-The following readings are no longer active D0 claims:
+The following readings are not valid D0 claims:
 
 ```text
 Poisson equation alone => GR.
@@ -1551,7 +1551,7 @@ bridge.
 
 ## 07.36 Tick-gauge compatibility of the gravity bridge
 
-The gravity bridge now has an explicit tick-gauge prerequisite.  The weak-field spin-2 derivation closes the TT carrier; the tick/Lorentz layer closes the causal cone on which that carrier propagates.  The active finite owners are
+The gravity bridge has an explicit tick-gauge prerequisite.  The weak-field spin-2 derivation closes the TT carrier; the tick/Lorentz layer closes the causal cone on which that carrier propagates.  The active finite owners are
 
 ```text
 D0.Bridge.FiniteCausalTickSection
@@ -1596,7 +1596,7 @@ finite_spin2_dynamics_two_polarizations
 finite_spin2_dynamics_closed
 ```
 
-The active gravity chain is now
+The active gravity chain is
 
 ```text
 finite weak-field mode
@@ -1646,8 +1646,8 @@ stress coupling.
 
 ## 07.39 Spin-2 two-polarization arithmetic closure
 
-The finite dynamics certificate is now accompanied by an arithmetic readout for
-the 4D Lorentz-facing spin-2 degree count.  The new owner is
+The finite dynamics certificate is accompanied by an arithmetic readout for
+the 4D Lorentz-facing spin-2 degree count.  The owner is
 
 ```text
 D0.Geometry.FiniteSpin2DOF
@@ -1763,7 +1763,7 @@ give the finite spin-2 carrier.
 At the macro level: any compatible gravity interface must be symmetric,
 divergence-free, second-order under finite readout, and compatible with TT
 stress coupling.
-Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface (finite A2 variation + Bianchi selects the class; previous loose "EH bridge calibration" language is replaced by closed finite-response status).
+Therefore the Einstein-Hilbert / Einstein tensor class is the macro-interface (finite A2 variation + Bianchi selects the class; this is closed finite-response status, not bridge calibration).
 ```
 
 ## 07.49 Critical-collapse discrete self-similar log-time lattice and spacetime-crystal horizon
@@ -1774,7 +1774,7 @@ D0 reads this as a gravity-side closure of the finite horizon transition: black-
 
 The self-similar horizon (SSH) is the null boundary where the echo-lattice vector becomes lightlike. In D0 this is the capacity-null boundary of the terminal horizon readout.
 
-New D0 chain (dynamic birth, not static saturation):
+D0 chain (dynamic birth, not static saturation):
 
 ```text
 trace-heat gravity
@@ -1785,11 +1785,11 @@ trace-heat gravity
 > black-hole saturation
 ```
 
-New typed owners:
+Typed owners:
 - `D0.Gravity.CriticalCollapseDSS`
 - `D0.Gravity.EchoCapacityHorizon`
 
-New theorem block:
+Theorem block:
 - D0-GRAV-DSS-001 Critical Collapse Echo-Lattice Closure
 - D0-GRAV-DSS-002 Self-similar horizon is capacity-null boundary
 - D0-GRAV-DSS-003 Echo admissibility constraint (NLO/convexity/SSH filtering)
@@ -1814,7 +1814,7 @@ N_∂ = A / a_0 ,   S_∂^{D0} = N_∂ / 4 .
 This is derived from four terminal readout roles per saturated boundary cell (not imported Bekenstein-Hawking normalization).
 Negative controls (A/2, A/8, volume entropy, singularity-as-deletion) are rejected.
 
-New typed owners:
+Typed owners:
 - D0.Gravity.FiniteHorizonCapacity
 - D0.Gravity.BlackHoleA4EntropyWitness
 
@@ -1983,7 +1983,7 @@ The useful horizon lesson is the sign switch: the periphery of a beam-plasma clo
 This paragraph is not a claim that electron-beam dust fly-out is literally an astrophysical black-hole jet. It is a typed bridge: the laboratory system supplies an experimentally accessible force-balance analogue for channel clearing and archive ejection. The core D0 horizon operators remain finite-algebraic objects; external dusty-plasma behavior is used only as a tabletop passport seed.
 ## 07.51 Horizonless arrest and the causal compactness ceiling
 
-The horizon-as-seam picture of §07.43–§07.50 is a *static* statement: a black-hole horizon is a capacity-saturated aggregate, `σ(R) → 1`, `Cost → ∞`. §07.49 gave the *birth* of such a horizon by discrete self-similar collapse. What was missing is the **complementary dynamics** — the case where collapse is *arrested* and the seam stays open, never reaching saturation. An external result now supplies exactly this counterpart, and reading it through the finite triple yields a sharp, falsifiable compactness ceiling.
+The horizon-as-seam picture of §07.43–§07.50 is a *static* statement: a black-hole horizon is a capacity-saturated aggregate, `σ(R) → 1`, `Cost → ∞`. §07.49 gave the *birth* of such a horizon by discrete self-similar collapse. What was missing is the **complementary dynamics** — the case where collapse is *arrested* and the seam stays open, never reaching saturation. An external result supplies exactly this counterpart, and reading it through the finite triple yields a sharp, falsifiable compactness ceiling.
 
 ### 07.51.1 Arrested collapse forms a horizonless seam (bridge)
 
@@ -2015,19 +2015,19 @@ with `rank = 3` the spatial-transport rank of the scene adjacency (owned by the 
 
 The algebra of `3/8` is exact. Its *identification* with `rank/|Ω₈|` rests on one postulated bridge — that rank-3 transport is the causal light-cone on the 3-sphere seam — which is **not** forced from M1. Accordingly the result is a **lemma with a single named gap**, not a theorem: the master equation is closed, the structural reading is the open obligation.
 
-### 07.51.3 The gap is closed: the causal partition is forced (rank-3 = causal cone)
+### 07.51.3 The causal partition is forced (rank-3 = causal cone)
 
-The identification of the three rank-3 transport modes with the spatial directions of a light-cone — the single Pisot modular flow supplying the time direction — is **now forced**, not postulated (claim `D0-RANK3-CAUSAL-CONE-FORCING-001`, Lean `D0.Synthesis.RankCausalConeForcing`, cert `vp_rank3_causal_cone_forcing.py`). The closure is by **counting**, not by a smooth-manifold construction:
+The identification of the three rank-3 transport modes with the spatial directions of a light-cone — the single Pisot modular flow supplying the time direction — is **forced**, not postulated (claim `D0-RANK3-CAUSAL-CONE-FORCING-001`, Lean `D0.Synthesis.RankCausalConeForcing`, cert `vp_rank3_causal_cone_forcing.py`). The closure is by **counting**, not by a smooth-manifold construction:
 
 - The three rank-3 modes are **reversible**: the depressed cubic `λ³ − 359λ − 2574` has discriminant `−4(−359)³ − 27(−2574)² = 6\,185\,264 > 0`, so its three roots are *real* and distinct — the spatial modes carry no arrow.
 - The single Pisot modular flow is **irreversible**: exactly one direction with `|ψ| < 1` (the time arrow; "arrow = Pisot contraction" is already **FORCED**, BOOK_06 §06.30a).
 - A Lorentzian `(3,1)` form has exactly **one** timelike axis and **three** spacelike. The counts match — one arrow ↔ one timelike, three reversible ↔ three spacelike — and a Euclidean `(4,0)` is **excluded**, because the four directions are not alike (one carries an arrow, three do not), forcing the form *indefinite*. Since the timelike axis must be the arrow-direction (arrow = time), the timelike axis **is** the Pisot flow and the three spacelike axes **are** the reversible rank-3 modes.
 
-So `rank-3 = the three spatial/causal directions of the cone` is forced, and `C_max = rank/|Ω₈| = 3/8` is structurally grounded (THE for the dimensionless ratio). **The only residual** is the cone-speed / smooth Lorentzian metric `g_{μν}` (the light-speed coefficient) — a *unit convention* whose smooth-manifold reconstruction is the **Connes-reconstruction** residual, owned by the cited edge `ASSUMP-CONNES-RECONSTRUCTION` (`D0.Bridge.ConnesReconstructionBridge`). The causal **structure** (signature + partition + null cone) is forced; the metric/cone-speed is the named Connes unit, not claimed here. What was a "static rank vs cone-speed/signature" gap is now split: the *signature and partition* are forced; only the *cone-speed* remains, and it is a unit, not a derivation.
+So `rank-3 = the three spatial/causal directions of the cone` is forced, and `C_max = rank/|Ω₈| = 3/8` is structurally grounded (THE for the dimensionless ratio). **The only residual** is the cone-speed / smooth Lorentzian metric `g_{μν}` (the light-speed coefficient) — a *unit convention* whose smooth-manifold reconstruction is the **Connes-reconstruction** residual, owned by the cited edge `ASSUMP-CONNES-RECONSTRUCTION` (`D0.Bridge.ConnesReconstructionBridge`). The causal **structure** (signature + partition + null cone) is forced; the metric/cone-speed is the named Connes unit, not claimed here. The "static rank vs cone-speed/signature" gap is split: the *signature and partition* are forced; only the *cone-speed* remains, and it is a unit, not a derivation.
 
 **The spatial metric form is realized, with a falsifiable anisotropy (`D0-RANK3-METRIC-TRANSPORT-001`).** The rank-3 spatial metric is the equitable-quotient transport quadratic form of `K(9,11,13)`, `B = [[0,11,13],[9,0,13],[9,11,0]]`, with characteristic polynomial `λ³ − 359λ − 2574` (`359 = |E|` the coupling): eigenvalues `≈ {−12.08, −9.76, +21.84}` — a non-degenerate `(1+,2−)` form, so the light cone is its null set `{x : Q(x)=0}` (cert `vp_rank3_metric_transport.py`). Because the zones `9 ≠ 11 ≠ 13` are unequal, the two negative eigenvalues **split** (`−12.08 ≠ −9.76`): the spatial transport metric is **anisotropic at the carrier level**, becoming isotropic only in the equal-zone limit `(n,n,n)` (spectrum `{2n,−n,−n}`). This is a finite **falsifier**: D0 predicts a Planck-level anisotropy of the spatial form. Honest scope: this realizes the spatial quadratic *form* and its null cone; it does **not** fix the overall cone-speed / dimensionful unit (still the `c=1`/Connes question), and it is a distinct object from the `(3,1)` Pisot-counting signature above — the two are not conflated.
 
-**The cone-speed unit is `c=1=edge/tick`, internal — Connes is now confirmation, not owner (`D0-CONNES-DISTANCE-GEODESIC-001`).** On the finite scene the Connes spectral distance `d_C(p,q)=sup{|f(p)−f(q)| : ‖[D,f]‖≤1}` **equals the graph geodesic** distance (the admissible `f` are exactly the 1-Lipschitz-per-edge functions; the sup is attained by `f=d_geo(·,p)` and bounded above by telescoping) — so the metric is an *internal* graph quantity, not an external input. And `‖[D,a]‖≤1` means a signal moves at most one edge per tick, so the cone speed is `c=1=edge/tick` — dimensionless, with **no external light-speed constant** (cert `vp_connes_distance_geodesic.py`). Therefore the last residual of §07.51.3 is internalized: the cone-speed unit is structural. `ASSUMP-CONNES-RECONSTRUCTION` is accordingly **reclassified owner → continuum-limit confirmation**: the smooth-manifold (Connes 2008) reconstruction now *confirms* that the internal geodesic metric converges to a Riemannian `g`, rather than *owning* the cone-speed gap. The single remaining external statement is the finite→smooth continuum limit itself, owned by the specific convergence framework — Rieffel compact quantum metric spaces + Gromov–Hausdorff(–Prokhorov) convergence (`D0-RIEFFEL-GHP-CONTINUUM-OWNER-001`, `ASSUMP-RIEFFEL-GHP`): each finite scene is an internal compact quantum metric space (Connes distance = geodesic), and the refinement sequence converges in quantum Gromov–Hausdorff distance to a smooth Riemannian limit. Connes reconstruction identifies the limit *object* (a commutative spectral triple is a spin manifold); Rieffel/GHP own the *convergence* to it. The named residual is exact: D0 does not prove the refinement sequence is GHP-Cauchy — that is not a finite computation — so the convergence is owned by Rieffel/GHP, not derived inside D0.
+**The cone-speed unit is `c=1=edge/tick`, internal — Connes is confirmation, not owner (`D0-CONNES-DISTANCE-GEODESIC-001`).** On the finite scene the Connes spectral distance `d_C(p,q)=sup{|f(p)−f(q)| : ‖[D,f]‖≤1}` **equals the graph geodesic** distance (the admissible `f` are exactly the 1-Lipschitz-per-edge functions; the sup is attained by `f=d_geo(·,p)` and bounded above by telescoping) — so the metric is an *internal* graph quantity, not an external input. And `‖[D,a]‖≤1` means a signal moves at most one edge per tick, so the cone speed is `c=1=edge/tick` — dimensionless, with **no external light-speed constant** (cert `vp_connes_distance_geodesic.py`). Therefore the last residual of §07.51.3 is internalized: the cone-speed unit is structural. `ASSUMP-CONNES-RECONSTRUCTION` is accordingly a **continuum-limit confirmation, not an owner**: the smooth-manifold (Connes 2008) reconstruction *confirms* that the internal geodesic metric converges to a Riemannian `g`, rather than *owning* the cone-speed gap. The single remaining external statement is the finite→smooth continuum limit itself, owned by the specific convergence framework — Rieffel compact quantum metric spaces + Gromov–Hausdorff(–Prokhorov) convergence (`D0-RIEFFEL-GHP-CONTINUUM-OWNER-001`, `ASSUMP-RIEFFEL-GHP`): each finite scene is an internal compact quantum metric space (Connes distance = geodesic), and the refinement sequence converges in quantum Gromov–Hausdorff distance to a smooth Riemannian limit. Connes reconstruction identifies the limit *object* (a commutative spectral triple is a spin manifold); Rieffel/GHP own the *convergence* to it. The named residual is exact: D0 does not prove the refinement sequence is GHP-Cauchy — that is not a finite computation — so the convergence is owned by Rieffel/GHP, not derived inside D0.
 
 **Named external owner of the gap.** The classical theorem that *would* close "metric = spectrum" once the causal reading is supplied is the **Connes reconstruction theorem** (A. Connes, *On the spectral characterization of manifolds*, arXiv:0810.2088, 2008): a commutative real spectral triple satisfying the axioms is canonically the spectral triple of a compact oriented Riemannian spin manifold, with the metric recovered by the Connes distance. This is recorded as the forcing-owner edge `D0-CONNES-RECONSTRUCTION-OWNER-001` (assumption `ASSUMP-CONNES-RECONSTRUCTION`, Lean `D0.Bridge.ConnesReconstructionBridge`): naming the owner raises the gap from "asserted" to "owned by a cited classical theorem", without claiming D0 derives metric = spectrum and without closing the rank-3 = cone identification (BOOK_05 §05.8.R).
 

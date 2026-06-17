@@ -68,7 +68,7 @@ checks: list[tuple[Path, list[str]]] = [
         "may not introduce a second D0 propagation primitive",
     ]),
     (BOOKS / "BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md", [
-        "06.36 v14 tick-gauge closure",
+        "06.36 Finite discrete evolution step-gauge closure",
         "D0.Bridge.FiniteCausalTickSection",
         "D0.Bridge.finite_causal_tick_section_cone_speed_eq_one",
         "D0.Bridge.asymmetric_ticks_not_internal_gauge",

@@ -148,7 +148,7 @@ Pi_S3 = 1/6 sum_{sigma in S3} P_sigma
 dim Pi_S3 V_B = 10
 ```
 
-The S3 carrier/symmetrizer scaffold is certified. Physical spin/flavour/mass assignment is the next transfer layer. The phrase `full baryon mass table closed` is forbidden without spin/flavour transfer, frozen pole normalization and PDG passport.
+The S3 carrier/symmetrizer scaffold is certified. Physical spin/flavour/mass assignment is the next transfer layer. A full baryon mass table is not closed without spin/flavour transfer, frozen pole normalization and a PDG passport.
 
 ### Selector support origin
 
@@ -173,7 +173,7 @@ BaryonS3Symmetrizer
 HiggsScalarProjectorConstructive
 ```
 
-Concrete selector sync: Electroweak radial depth as a concrete selector; `D0.Matter.electroweakDepth35FullSupportClaim`; `D0.Matter.chargedLeptonElectronTerminalClaim`; `D0.Matter.protonReadout306FullSupportClaim`; `D0.Matter.neutronArchiveSiblingClaim`; `D0.Matter.betaUnlockDepth19FullSupportClaim`; full-support finite selector owners use `Fin 71`, `Fin 613`, `Fin 39`. Those windows are no longer the active theory.
+Concrete selector owners: Electroweak radial depth as a concrete selector; `D0.Matter.electroweakDepth35FullSupportClaim`; `D0.Matter.chargedLeptonElectronTerminalClaim`; `D0.Matter.protonReadout306FullSupportClaim`; `D0.Matter.neutronArchiveSiblingClaim`; `D0.Matter.betaUnlockDepth19FullSupportClaim`; full-support finite selector owners use `Fin 71`, `Fin 613`, `Fin 39`. Those windows are no longer the active theory.
 
 CKM origin sync: CKM as finite basis origin, not a free matrix; `D0.Matter.CKMBasisOrigin`; `ckm_origin_candidate_matrix_unique`; `ckm_no_free_matrix_at_fixed_basis_origin`; finite up/down basis-origin selectors; concrete physical score terms.
 
@@ -187,7 +187,7 @@ Operator-boundary status (release-candidate):
 - Baryon 40/56 carrier + anonymous poles: SPIN-FLAVOUR-CARRIER-CERTIFIED + BARYON-ANONYMOUS-POLE-SCAFFOLD-CLOSED (image-basis).
 - Meson transfer: MESON-TYPED-TRANSFER-CERT-CLOSED.
 - Higgs scalar projector + Yukawa section: SCALAR-PROJECTOR-CERT-CLOSED + YUKAWA-SECTION-CERT-CLOSED.
-External numerical spectroscopy / Yukawa / PDG comparison remains passport-layer work only. `D0.Matter.book04_operator_boundaries_closed` now points to the above closure classes.
+External numerical spectroscopy / Yukawa / PDG comparison is passport-layer work only. `D0.Matter.book04_operator_boundaries_closed` points to the above closure classes.
 
 ## 04.1 Role of the matter book
 
@@ -506,9 +506,7 @@ This spectral split is the object the rest of Book 04 reads matter off of: the a
 
 ## 04.3 Matter objects are selectors, not passports
 
-The previous reading of Book 04 mixed three different things: internal finite objects, dressed Standard-Model comparison values and external data checks. The active reading removes that ambiguity.
-
-A matter object is admitted only through one of the following forms:
+Book 04 separates three different things: internal finite objects, dressed Standard-Model comparison values and external data checks. A matter object is admitted only through one of the following forms:
 
 1. **Finite support theorem.**  The carrier/support object is proved inside the finite D0 formalism.
 2. **Finite response theorem.**  A positive or quadratic response is normalized by the finite Born/readout theorem.
@@ -743,7 +741,7 @@ against the lattice/FLAG cross-check `m_s/m_d=20.01\pm0.55` (0.03 sigma) and `si
 
 **[THE 04.5.5.D] Deformation no-go: `20` is a group cardinality, not a fitted ratio.** The value `20` enters as `φ_E(44)=|(\mathbb Z/44)^\ast|` — the order of a finite unit group, an integer by construction (a counting invariant, not a measured quantity). It is rigid in three independent ways: (i) `φ_E` is integer-valued, so `20→20±ε` is not the totient of any modulus; (ii) the characteristic subgroup lattice `{1,4,5,20}` is exactly the divisor structure of `20=2^2·5`, and a non-divisor count carries no such lattice; (iii) the factorization `20=4×5=|ABCD|×D_Σ` ties the count to the orientation and operational budgets, themselves fixed integers. Shifting the number off `20` therefore does not perturb a ratio — it leaves the unit group `(\mathbb Z/44)^\ast` altogether, and to land on any other value one would have to *specify* the shift, i.e. supply an external parameter, ⊥M1. The reviewer's question is not "does `20` match `m_s/m_d`" (that cross-check is the GST bridge) but "is `20` forced as a group cardinality" — and it is; the experimental agreement is a consequence, not the support.
 
-**Class 5** is killed by aliasing (winding 5 = address `D_Sigma=5` ⇒ pointer collision = hidden memory, grammar 01.11C). This exclusion — formerly the matter sector's **third soft joint** — is now closed at the finite level by a certificate: the order-5 subgroup of `(ℤ/44)*` has `|·| = 5 = D_Σ`, so the period-5 winding orbit bijects onto the 5 operational address classes (the pointer collision is exact), leaving survivors `{1, 20}`. What remains a theorem-target is only the full hidden-memory M1 contradiction, at the same standing as the (owned) class-4 kill.
+**Class 5** is killed by aliasing (winding 5 = address `D_Sigma=5` ⇒ pointer collision = hidden memory, grammar 01.11C). This exclusion is closed at the finite level by a certificate: the order-5 subgroup of `(ℤ/44)*` has `|·| = 5 = D_Σ`, so the period-5 winding orbit bijects onto the 5 operational address classes (the pointer collision is exact), leaving survivors `{1, 20}`. What remains a theorem-target is only the full hidden-memory M1 contradiction, at the same standing as the (owned) class-4 kill.
 
 **Lepton mixing — the seam-topology rule (rule THE / numbers CHK).** The three PMNS angles follow one closure-holonomy rule (§02.13.h): the **degree of `δ₀`** in each angle correction equals the seam-cycle **topology** — bare/open/closed → `δ₀^{0,1,2}` — with `δ₀ = (√5−2)/2 = 1/(2φ³)` forced. Projected onto the kernel `30 = 8⊕10⊕12` (`D0-MIXING-HIERARCHY-INVERSION-001`):
 
@@ -847,11 +845,11 @@ where `δ₀=(√5−2)/2=1/(2φ³)` is the foundational quantum of distinguisha
 
 Numerically `φ²≈2.6180339887 ⇒ π_0≈3.1416407865`, departing from classical `π` already at the 4th decimal (3.1415… vs 3.1416…).  This is the same constant BOOK_02 §02 and BOOK_07 §07.11 already cite.
 
-**[DEF 04.6.π.5] Mass quantum `m_0:=2π_0` and time quantum `t_0:=1/m_0` [restored].** One full holonomy of the memory cycle is two half-turns, so the mass quantum (the cost of one closed internal cycle) is `m_0:=2π_0=(12/5)φ²` and the conjugate time quantum is `t_0:=1/m_0=(5/12)φ⁻²`, with `m_0·t_0=1` (exact in `Q(φ)`). These two identities were derived in the GOLDEN chain (mass quantum = one full holonomy-cycle length) and dropped in the v14 refactor; they are restored here as immediate consequences of the now-derived `π_0` (THE 04.6.π.4), with `cert vp_mass_chain_alpha.py` and claim `D0-MASS-CHAIN-001`. The rest-mass reading `m_rest=m_0·W` (W = number of memory windings) needs the per-state winding `W` and is **not** restored here — it is a named gap (OWNER-DECISION; the winding values are sought in the GOLDEN coverage ledger before any re-derivation).
+**[DEF 04.6.π.5] Mass quantum `m_0:=2π_0` and time quantum `t_0:=1/m_0`.** One full holonomy of the memory cycle is two half-turns, so the mass quantum (the cost of one closed internal cycle) is `m_0:=2π_0=(12/5)φ²` and the conjugate time quantum is `t_0:=1/m_0=(5/12)φ⁻²`, with `m_0·t_0=1` (exact in `Q(φ)`). Both identities are immediate consequences of the derived `π_0` (THE 04.6.π.4), with `cert vp_mass_chain_alpha.py` and claim `D0-MASS-CHAIN-001`. The rest-mass reading `m_rest=m_0·W` (W = number of memory windings) needs the per-state winding `W` and is **not** restored here — it is a named gap (OWNER-DECISION; the winding values are sought in the GOLDEN coverage ledger before any re-derivation).
 
-**[COR 04.6.π.5a] The fine-structure amplitude is a mass-quantum count (α↔mass stitch).** The second-moment amplitude of the `α⁻¹` resolvent writing (BOOK_02 §02.13.4, `D0-DELTA-ALPHA-MOMENT-001`) is `μ₂=2¹¹π_0φ⁻²`; since `m_0=2π_0`, this is **exactly** `μ₂=2¹⁰·m_0·φ⁻²`. So the same holonomy `π_0/m_0` plays two roles — the scattering phase in `α` and the cycle length in mass — one object, not two derivations (a finite cross-book identity, `vp_mass_chain_alpha.py`). The capacity factor `2¹¹` itself stays flagged (`=2^{V₁₁}`), not forced; the unified resolvent-trace formula `μ_k` remains the named open gap of `D0-CVFT-F1`. (Iter-17 sharpened that gap: `μ₁=1/rank` is now derived as the depth-0 floor return and the `π₀` factor of `μ₂` is owned; only the `2¹¹=2^{V₁₁}` active↔archive pairing multiplicity stays open — `vp_feshbach_residue_amplitudes.py`.)
+**[COR 04.6.π.5a] The fine-structure amplitude is a mass-quantum count (α↔mass stitch).** The second-moment amplitude of the `α⁻¹` resolvent writing (BOOK_02 §02.13.4, `D0-DELTA-ALPHA-MOMENT-001`) is `μ₂=2¹¹π_0φ⁻²`; since `m_0=2π_0`, this is **exactly** `μ₂=2¹⁰·m_0·φ⁻²`. So the same holonomy `π_0/m_0` plays two roles — the scattering phase in `α` and the cycle length in mass — one object, not two derivations (a finite cross-book identity, `vp_mass_chain_alpha.py`). The capacity factor `2¹¹` itself stays flagged (`=2^{V₁₁}`), not forced; the unified resolvent-trace formula `μ_k` remains the named open gap of `D0-CVFT-F1`. Within that gap, `μ₁=1/rank` is derived as the depth-0 floor return and the `π₀` factor of `μ₂` is owned; only the `2¹¹=2^{V₁₁}` active↔archive pairing multiplicity stays open — `vp_feshbach_residue_amplitudes.py`.
 
-**[ONTOLOGY 04.6.π.6] Mass is an inverse period (distinct from the numeric hierarchy no-go).** The core *reading* of mass is `mass = τ⁻¹`, the inverse of a canonization-cycle period — a frequency, not a fitted number. The certified `m_0·t_0=1` (DEF 04.6.π.5) **is** this ontology at the quantum level: the mass quantum is the inverse of the time quantum. The winding extension `m_rest = m_0·W` (`W` = number of memory windings) is the structural form of a rest mass; the **per-particle `W` values are a physical input** (a passport/bridge), **not** core theorems — exactly the boundary of the matter-sector no-go `D0-GEN-MASS-001` (physical masses/Yukawa/PDG clustering require physical input). So the *ontology* (mass = inverse period) is core; the *numeric mass spectrum* stays out of core, and `W` is not recovered from any internal derivation.
+**[ONTOLOGY 04.6.π.6] Mass is an inverse period (distinct from the numeric hierarchy no-go).** The core *reading* of mass is `mass = τ⁻¹`, the inverse of a canonization-cycle period — a frequency, not a fitted number. The certified `m_0·t_0=1` (DEF 04.6.π.5) **is** this ontology at the quantum level: the mass quantum is the inverse of the time quantum. The winding extension `m_rest = m_0·W` (`W` = number of memory windings) is the structural form of a rest mass; the **per-particle `W` values are a physical input** (a passport/bridge), **not** core theorems — exactly the boundary of the matter-sector no-go `D0-GEN-MASS-001` (physical masses/Yukawa/PDG clustering require physical input). The *ontology* (mass = inverse period) is core; the *numeric mass spectrum* is out of core, and `W` is not recovered from any internal derivation.
 
 **[THE 04.6.π.D] Relativistic energy as accelerated cycle frequency [^b04-59]. [^b04-43].** Let a mass state be a stable light cycle `P` of rest frequency `ω₀:=τ(P)⁻¹`.  In CORE normalization (`C=1`) a moving state is the tilt of the light tick between external transport and internal run.  Observed energy is then the amplification of the internal cycle frequency:
 
@@ -922,7 +920,7 @@ with `R` the dimensionless history scale (nodes/layers in the observer window). 
 
 The matter sector inherits the single action section from Book 03.  Electroweak quantities are therefore read as finite radial depths and comparison outputs, not as independent primitive constants.
 
-The active integration replaces the earlier phrase "depth 35" by an actual Book 04 finite variational selector owner:
+The depth-35 reading has an explicit Book 04 finite variational selector owner:
 
 ```text
 D0.Matter.electroweakDepth35FullSupportClaim
@@ -976,7 +974,7 @@ so `α^{-1}` is over-determined, not fitted (GOLDEN BOOK-III-SPECTRUM REM 11.EM.
 Consequence for this section: the EW radial depths `λ_Z^{D0}`, `λ_W^{D0}` and the depth-35 selection are ratios against a base register that M1+ forces, so "an alternative EW depth requires a changed EW radial score" tightens to — an alternative EW depth would have to move the *canonically selected* base, which is fixed by the same canonization that fixes the existence of charge. There is no free knob between the depth window and the electron register.
 ## 04.8 Charged leptons as a concrete finite variational selector family
 
-The charged-lepton branch is controlled by a finite operator family rather than three free Yukawa constants. The active integration makes the finite terminal support explicit in Lean:
+The charged-lepton branch is controlled by a finite operator family rather than three free Yukawa constants. The finite terminal support is explicit in Lean:
 
 ```text
 D0.Matter.ChargedLeptonBranch = {electron, muon, tau}
@@ -1151,7 +1149,7 @@ decoherence comparison belongs to the downstream passport layer
 
 The support pattern above states a splitting *ratio* but not *why the support oscillates*.  The generic two-mode beat structure (BOOK_09, `A_1 e^{iω_1 t}+A_2 e^{iω_2 t}`) does not by itself name the small parameter that sets the beat, which would leave oscillation as an external-scale assertion.  The forcing below names it and closes that gap.
 
-**[THE 04.9.beat] Oscillation IS the beat of the two seam-evolution modes [^b04-95]. [^b04-91].**
+**[THE 04.9.beat] Oscillation IS the beat of the two seam-evolution modes [^b04-91].**
 The whitening constant `α^-1` has two forced, independent writings — the topological reading `α_top` (off the discrete scene/channel count) and the algebraic reading `α_alg` (off the continuous packing/`π_0` phase).  These are not two numbers but two *evolution modes on the same seam*: a leakage mode that does not carry an active EM readout cannot pick one writing over the other, so it propagates as both at once.  A state propagated under two co-present mode frequencies does not relax to one — it beats.  Neutrino oscillation is that beat, not an added oscillator.
 
 **[LEM 04.9.beat.Δα] The beat small parameter is the gluing anomaly `Δα` [^b04-96]. [^b04-92].**
@@ -1293,7 +1291,7 @@ It is not an internal free parameter and it is no longer merely a matrix theorem
 
 ## 04.11 SM-facing finite gauge decomposition
 
-The matter/gauge row is no longer allowed to say merely that D0 has an anomaly-compatible representation. The active object is a finite gauge-decomposition ledger:
+The matter/gauge row is not merely the statement that D0 has an anomaly-compatible representation. The core object is a finite gauge-decomposition ledger:
 
 ```text
 D0.Gauge.FrozenSMGaugeDecomposition
@@ -1344,7 +1342,7 @@ exact anomaly sums: zero;
 bridge boundary: QFT/EFT running and collider observables attach only after freeze.
 ```
 
-A different gauge factor list or a different one-generation ledger is not a second core solution under the same owner.  It is a new carrier attempt and must be routed to a separate theorem/no-go/bridge target.  This closes the weaker old reading where `SU(3)×SU(2)×U(1)` could look like a name attached after the fact.
+A different gauge factor list or a different one-generation ledger is not a second core solution under the same owner.  It is a new carrier attempt and must be routed to a separate theorem/no-go/bridge target.  `SU(3)×SU(2)×U(1)` is not a name attached after the fact: the finite ledger fixes the factor list and forbids retuning it.
 
 This still does not prove the full Standard-Model Lagrangian from first principles.  What is closed is the finite carrier/representation/anomaly skeleton and the rule that the SM/EFT bridge cannot alter it.  The remaining work is stronger: derive the representation ledger itself from the lower D0 matter-operator origin and then evaluate running couplings/masses as external transfer, not as core knobs.
 
@@ -1408,7 +1406,7 @@ The action-section comparison gives
 m_p/m_e=38\sqrt{\lambda_p^{D0}}.
 ```
 
-The neutron is the beta/archive sibling.  This is now owned by
+The neutron is the beta/archive sibling.  This is owned by
 
 ```text
 D0.Matter.neutronArchiveSiblingClaim
@@ -1499,9 +1497,8 @@ nucleon_line_cannot_promote_full_baryon_multiplet
 
 says that this operator cannot be re-read as a full baryon multiplet.  The
 finite reason is that an antisymmetric line sector is annihilated by the S3
-symmetrizer, while the 10D symmetric carrier / decuplet-candidate carrier is fully symmetric.  Therefore the
-previous direct `Delta, Lambda, Omega` formula flow is not merely “not
-certified”; it is blocked under the present operator family.  A numerical
+symmetrizer, while the 10D symmetric carrier / decuplet-candidate carrier is fully symmetric.  Therefore a direct `Delta, Lambda, Omega` formula flow is not merely “not
+certified”; it is blocked under this operator family.  A numerical
 agreement with PDG resonance masses cannot supply the missing operator.
 
 ## 04.15 Meson/chiral boundary as a closed no-go
@@ -1531,7 +1528,7 @@ The flavour defect enters exclusively through the typed \(\operatorname{liftGen}
 The meson/chiral transfer algebra is closed at the finite typed-operator level.
 External meson spectroscopy remains a K0-labeled passport layer.
 
-(The previous "closed no-go" framing for 04.15 is superseded by the positive finite closure above. The mathematical carrier and lift operators remain as previously stated.)
+
 
 ### 04.15.1 Higgs scalar projector closure
 
@@ -1559,7 +1556,7 @@ is Hermitian on the finite left-right-scalar carrier. Yukawa coefficients are di
 
 ## 04.16 Higgs scalar projector + Yukawa section (closed)
 
-Higgs scalar projector is SCALAR-PROJECTOR-CERT-CLOSED (rank-2 FrozenSU2-compatible). Higgs-Yukawa section is YUKAWA-SECTION-CERT-CLOSED (finite block map compatible with the projector, no second mass anchor). The remaining work is numerical Yukawa passport / PDG comparison only. Legacy "missing" language is retired.
+Higgs scalar projector is SCALAR-PROJECTOR-CERT-CLOSED (rank-2 FrozenSU2-compatible). Higgs-Yukawa section is YUKAWA-SECTION-CERT-CLOSED (finite block map compatible with the projector, no second mass anchor). The remaining work is numerical Yukawa passport / PDG comparison only.
 
 ## 04.17 Photon scattering and finite resolution comparisons
 
@@ -1638,7 +1635,7 @@ New particles, hidden thresholds, hidden dark-sector fields or fitted beta-funct
 
 ## 04.20 Claim classification for the active matter book
 
-The active matter book uses the following classification.
+Book 04 uses the following classification.
 
 | Sector | Active reading |
 |---|---|
@@ -1669,11 +1666,11 @@ A Book 04 claim fails if any of the following occurs:
 8. a Higgs/Yukawa row uses a second mass anchor before the scalar projector is supplied;
 9. an external carrier comparison is used as a D0 axiom.
 
-## 04.22 Remaining matter operator frontiers (release-candidate)
+## 04.22 Remaining matter operator frontiers
 
 All internal carriers, projectors, and typed operators for baryon 40/56 + anonymous poles, meson transfer, Higgs scalar projector, and Yukawa section are closed at the finite level (see closure classes in Book 05).
 
-Remaining work is exclusively external numerical spectroscopy / Yukawa / PDG comparison (passport-layer only). No internal operator is missing.
+Remaining work is exclusively external numerical spectroscopy / Yukawa / PDG comparison (passport-layer only).
 
 1. Charged lepton / alpha: coefficient-origin trace/residue theorem target remains (EDGE-TRACE-COEFFICIENT-TARGET guardrail).
 2. CKM: physical convention/RG passport remains.
@@ -1683,17 +1680,17 @@ Remaining work is exclusively external numerical spectroscopy / Yukawa / PDG com
 6. SM decomposition: refine lower operator origin for nearby finite decompositions.
 7. Edge-alpha and lepton ramification: theorem targets only (EDGE-TRACE-COEFFICIENT-TARGET, TORUS-RAMIFICATION-TARGET). Guardrails; no numerology or fit claims.
 
-## 04.23 Selector closures now owned by finite operators
+## 04.23 Selector closures owned by finite operators
 
-The correction pass removes half-closures from the active matter book.
+
 
 ### 04.23.1 Charged-lepton mass transfer is now downstream of the coefficient origin
 
-The charged-lepton block is no longer allowed to stop at "the coefficient row is frozen". The finite row must feed a branch-wise transfer object: `D0.Matter.ChargedLeptonMassTransfer`. These entries are read from the selected coefficient origin, and the theory no longer has an independent coefficient knob.
+The charged-lepton block does not stop at "the coefficient row is frozen". The finite row feeds a branch-wise transfer object: `D0.Matter.ChargedLeptonMassTransfer`. These entries are read from the selected coefficient origin; the theory has no independent coefficient knob.
 
 ### 04.23.2 CKM has a frozen finite transfer before external comparison
 
-The CKM block is no longer only "basis finite variational selectors determine a matrix". The finite matrix now has a downstream frozen transfer owner: `D0.Matter.FrozenCKMMatrixTransfer`. A passport may compare the matrix; it cannot choose or retune it.
+The CKM block is more than "basis finite variational selectors determine a matrix". The finite matrix has a downstream frozen transfer owner: `D0.Matter.FrozenCKMMatrixTransfer`. A passport may compare the matrix; it cannot choose or retune it.
 
 ### 04.23.3 Higgs/Yukawa is decided, not left ambiguous
 
@@ -1735,9 +1732,9 @@ The finite variational selector-origin layer is locked. The active closures and 
 
 ## 04.T Torus/Core13 Matter Integration Boundary
 
-The three-generation carrier is now sourced by the D0 memory-torus shell geometry. `D0.Geometry.TorusCore13GeometryOrigin` proves that radial shell hopping and shell phase/radius drift do not commute; `GenerationSelectorOrigin` and `GenerationOverlapResponseOrigin` use that fact as the source of non-permutation flavour overlap.
+The three-generation carrier is sourced by the D0 memory-torus shell geometry. `D0.Geometry.TorusCore13GeometryOrigin` proves that radial shell hopping and shell phase/radius drift do not commute; `GenerationSelectorOrigin` and `GenerationOverlapResponseOrigin` use that fact as the source of non-permutation flavour overlap.
 
-For mesons, the lower-Hodge `400` seed remains only a support seed. The new flavour-defect route is:
+For mesons, the lower-Hodge `400` seed is only a support seed. The flavour-defect route is:
 
 ```text
 torus noncommuting shell finite variational selectors
@@ -1747,7 +1744,7 @@ torus noncommuting shell finite variational selectors
 -> F_fl^T F_fl positive defect transfer
 ```
 
-The Lean owners are now explicit: `D0.Matter.CKMNontrivialFlavourAlgebra` proves `overlap_response_can_force_nonpermutation_transfer` and `nontrivial_flavour_defect_positive_response`; `D0.Matter.MesonDefectTransferOrigin` proves `meson_support_projector_idempotent` and `meson_positive_defect_transfer_admissible` on the typed `Edge x Generation` carrier.
+The Lean owners are explicit: `D0.Matter.CKMNontrivialFlavourAlgebra` proves `overlap_response_can_force_nonpermutation_transfer` and `nontrivial_flavour_defect_positive_response`; `D0.Matter.MesonDefectTransferOrigin` proves `meson_support_projector_idempotent` and `meson_positive_defect_transfer_admissible` on the typed `Edge x Generation` carrier.
 
 For baryons, the 10D symmetric carrier / decuplet-candidate carrier is not a nucleon-line extension. It is the S3-symmetric triple sector over the three torus shell roles; the Lean owner `BaryonS3Symmetrizer` exposes `BaryonTripleShellCarrier` and `baryon_triple_shell_card_eq_27`.
 

@@ -121,9 +121,7 @@ survey_likelihood_cannot_promote_to_core_cosmology
 frozen_archive_cosmology_core_shape_closed
 ```
 
-This replaces the bridge-only reading where BAO, DESI, SDE, Hubble or covariance
-language could appear to choose the D0 cosmology object.  They cannot.  They
-can only compare a frozen internal object against an external manifest.
+BAO, DESI, SDE, Hubble and covariance language cannot choose the D0 cosmology object. They can only compare a frozen internal object against an external manifest.
 
 The positive order is therefore:
 
@@ -541,7 +539,7 @@ The quadratic above is one of *two* catalog-free ownerships of the archive windo
 
 whose symmetric-function coefficients are all owned by the scene: `e_1 = 0` (traceless), `e_2 = -359 = -|E|` (capacity), `e_3 = 2574 = 2\cdot 1287 = 2\,|\triangle|` (doubled triangle count). This is exactly the adjacency characteristic polynomial of `K(9,11,13)` read as a cosmology window; its roots are `{21.84,\ -9.758,\ -12.079}`.
 
-The two branches make a **separable prediction** for the window-center ratio — the discriminator that was previously never computed:
+The two branches make a **separable prediction** for the window-center ratio — the discriminator between them:
 
 ```math
 \text{quadratic: } \frac{\lambda_c}{\lambda_r} = \frac{60-\sqrt{10}}{60+\sqrt{10}} = 0.900,
@@ -665,8 +663,7 @@ finite phase branches
 
 The phase-unfolding and Hurwitz-rigidity results supply the non-resonant branch mechanism. The covariance/heat-trace theorem supplies the condition under which those branches can be averaged into a smooth macroscopic geometry. A survey likelihood cannot be used as evidence for the bridge unless the data manifest, covariance, hash and negative-control windows are declared.
 
-In the current language, smoothness is the coarse-grained shadow of a finite
-information quasicrystal.  The unresolved branch order is non-resonant because
+Smoothness is the coarse-grained shadow of a finite information quasicrystal.  The unresolved branch order is non-resonant because
 `alpha_D0=phi^-2` is irrational; the visible branch arms are finite residue
 classes selected by the return quotients `q_T=44` and `q_EW=710`.  A smooth
 macro-geometry is admissible only after this aperiodic finite order is averaged
@@ -675,11 +672,11 @@ background.
 
 ## 08.32 Phase-canonical Laplacian in heat trace and spectral action
 
-The dynamic survey transfer, Weyl dimension scaling, and spectral action stability certificates are updated to use the phase-canonical Laplacian operator derived from the cyclic phase-distance metric. This canonical Laplacian replaces the old ambient-pullback Laplacian, ensuring that all macro-geometric shadows are built from translation-invariant local cycle geometry.
+The dynamic survey transfer, Weyl dimension scaling, and spectral action stability certificates use the phase-canonical Laplacian operator derived from the cyclic phase-distance metric. This canonical Laplacian ensures that all macro-geometric shadows are built from translation-invariant local cycle geometry rather than an ambient pullback.
 
 ## 08.33 RG operator source for macro transfer
 
-The cosmology-side heat-trace and spectral-action certificates now report the RG operator source explicitly:
+The cosmology-side heat-trace and spectral-action certificates report the RG operator source explicitly:
 
 ```text
 archive_phase_canonical_laplacian
@@ -690,7 +687,7 @@ This keeps survey transfer downstream of the finite archive RG layer. Cosmologic
 
 ## 08.34 Seam curvature source in spectral-action transfer
 
-The spectral-action certificates now report the curvature source explicitly:
+The spectral-action certificates report the curvature source explicitly:
 
 ```text
 curvature_source: seam_commutator_density
@@ -702,8 +699,7 @@ The seam cert verifies the finite rank/support/density data before any macro tra
 
 ## 08.35 Variational source in spectral-action transfer
 
-The spectral-action certificates now also report the variational origin of the
-curvature slot:
+The spectral-action certificates also report the variational origin of the curvature slot:
 
 ```text
 curvature_source: seam_commutator_density
@@ -719,7 +715,7 @@ seam curvature.
 
 ## 08.36 Weak-field Poisson cert and spectral-action cert chain
 
-In the current theory, the cosmological spectral-action and survey transfer models are downstream of the weak-field Poisson equation and the canonical stress representative:
+The cosmological spectral-action and survey transfer models are downstream of the weak-field Poisson equation and the canonical stress representative:
 ```text
 curvature_source: seam_commutator_density
 action_source: archive_curvature_action
@@ -733,7 +729,7 @@ The archive weak-field Poisson certificate validates the cycle Laplacian, neutra
 
 The final bridge index separates internal cosmology theorems, certificate-backed transfer, empirical comparison protocols and explicit boundary/no-go rows.
 
-The current constructive closure chain is:
+The constructive closure chain is:
 
 ```text
 entropy archive flow
@@ -800,11 +796,11 @@ dimensionless shapes and ratios only.  SI observables require an explicit
 `ExternalSICalibration` object.
 
 
-## 08.40 Observable-transfer boundary after theory rewrite
+## 08.40 Observable-transfer boundary
 
-Cosmology is the sector where external data can most easily masquerade as internal theory.  The current edition makes the boundary explicit.  A cosmological D0 statement is core only when it concerns the finite archive operator, entropy flow, heat-trace window, convex response or no-go bound.  A statement about BAO, S_DE likelihoods, HST tension, survey covariance or external parameter tables is an observable-transfer statement.
+Cosmology is the sector where external data can most easily masquerade as internal theory. The boundary is therefore stated explicitly.  A cosmological D0 statement is core only when it concerns the finite archive operator, entropy flow, heat-trace window, convex response or no-go bound.  A statement about BAO, S_DE likelihoods, HST tension, survey covariance or external parameter tables is an observable-transfer statement.
 
-The strengthened rule is:
+The rule is:
 
 ```text
 finite archive theorem first;
@@ -846,8 +842,7 @@ advertised as reproducible without a nonempty manifest; and that a survey
 likelihood cannot promote to core cosmology — blocking the strongest overclaim,
 that a likelihood agreement is a new D0 core theorem.
 
-Thus Book 08 is no longer a list of cosmological external comparison protocols.  It is a split
-between frozen finite cosmology and external reproducibility protocol.
+Book 08 is therefore a split between frozen finite cosmology and external reproducibility protocol, not a list of cosmological external comparison protocols.
 
 Cosmological acceleration/entropy flow uses the archive entropy layer.  It must
 go through the entropic archive interface, not import continuum GR as primitive.
@@ -871,7 +866,7 @@ R(V)=e^{\kappa V}-1, \qquad r(V)=1-e^{-\kappa V},
 
 The log-det loop pressure term has positive first derivative and negative second derivative in the safe resolvent domain \(0<z<1\). Thus the finite feedback response is positive but bounded and saturating: \(L(V)\to -d_\tau\log(1-z)\) and \(L'(V)\to0\). This does not contradict internal relative archive acceleration, because \(R(V)=e^{\kappa V}-1\) has \(R''(V)>0\). D0 core therefore separates accelerating relative geometry from bounded feedback response. Survey comparison remains passport-layer.
 
-The absolute archive increment decreases monotonically, while total archive trace increases monotonically. Any relative acceleration statement must specify the normalized observable. The strong log-det derivation is the primary internal statement; the weak pressure bridge remains as historical support.
+The absolute archive increment decreases monotonically, while total archive trace increases monotonically. Any relative acceleration statement must specify the normalized observable. The strong log-det derivation is the primary internal statement; the weak pressure bridge is the secondary, relative-pressure support.
 
 Determinant Expansion Mode: global trace/log-det contribution to \(\mathsf P_{fb}\); source of cosmological pressure transfer.
 

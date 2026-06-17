@@ -52,7 +52,7 @@ Status: `THEOREM-TARGET / PASSPORT-TARGET`.
 
 No LIGO or telescope evidence is claimed here.  The target observable is a residual line or envelope after known ringdown, detector response, and environmental lines have been removed.
 
-**The information rate carried by the hum: `I_f = h_{KS} = \log|\lambda_{\max}(T)| = \log\varphi` (formula fixed).** A proposed record `I_f = \mathrm{Tr}(\log T)/\mathrm{rank}` is *incorrect* and is corrected here: the toral generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` has eigenvalues `\{\varphi^{-1},-\varphi\}` and `\det T = -1 < 0`, so `\mathrm{Tr}(\log T)=\log(\det T)=\log(-1)=i\pi` is **complex** — an entropy cannot be. The correct quantity is the Kolmogorov–Sinai entropy `h_{KS}=\log|\lambda_{\max}(T)|=\log\varphi\approx0.4812` (claim `D0-IF-KS-FORMULA-FIX-001`, cert `vp_if_kolmogorov_sinai.py`). The *number* `\log\varphi` was always right; only the *formula record* is fixed. It is the same `\log\varphi` reached by the Fibonacci route (BOOK_01 §01.21.4, `D0.Claims.FibonacciIfBridge`, which proves `|-\varphi|=\varphi`).
+**The information rate carried by the hum is the Kolmogorov–Sinai entropy of the toral generator: `I_f = h_{KS} = \log|\lambda_{\max}(T)| = \log\varphi \approx 0.4812`.** The trace form `\mathrm{Tr}(\log T)/\mathrm{rank}` is *not* an admissible entropy record: the toral generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` has eigenvalues `\{\varphi^{-1},-\varphi\}` and `\det T = -1 < 0`, so `\mathrm{Tr}(\log T)=\log(\det T)=\log(-1)=i\pi` is **complex**, whereas an entropy must be real. The admissible quantity is therefore `h_{KS}=\log|\lambda_{\max}(T)|=\log\varphi`. It is the same `\log\varphi` reached by the Fibonacci route (BOOK_01 §01.21.4, via `|-\varphi|=\varphi`).
 
 ## 09.04 Binary merger as Born-rule beat bridge
 
@@ -79,10 +79,10 @@ I_f = \log\varphi.
 
 ## 09.06 Negative-control ledger: V3--V12
 
-The discovery sequence produced useful falsification:
+The V3--V12 scans constitute the negative-control ledger; each entry is a falsification result, not a confirmation:
 
 ```text
-V3: GW170814 candidate emerged in raw phi-coherent matching.
+V3: GW170814 candidate in raw phi-coherent matching is not supported as evidence.
 V4: raw q=phi frequency ladder failed ratio sweep.
 V5: cascade model did not produce single-event significance.
 V6: detector-frame phi beat failed against off-source background.

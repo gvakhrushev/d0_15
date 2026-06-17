@@ -21,13 +21,13 @@
 
 ## 00.16 Active entry contract
 
-D0 v15 is a finite-observability framework over condensed/profinite quasicrystalline support. The primitive object is the finite/profinite support with admissible projections and finite tick maps. The closed-vacuum feedback operator
+D0 is a finite-observability framework over condensed/profinite quasicrystalline support. The primitive object is the finite/profinite support with admissible projections and finite tick maps. The closed-vacuum feedback operator
 
 ```text
 F_N = P_N U_N^dagger Q_N U_N P_N
 ```
 
-is not the primitive support. It is the central derived dynamical operator of v15.
+is not the primitive support. It is the central derived dynamical operator of the framework.
 
 The reader may ignore D0 mnemonics and follow:
 
@@ -49,11 +49,11 @@ D0 slogan -> metaphor -> status row
 
 Book 00 fixes the public contract: finite support is prior to dynamics; the retained/traced split produces `P_N` and `Q_N`; `R_N = D_N^dagger D_N` is positive readout/Born response; `F_N = P_N U_N^dagger Q_N U_N P_N` is feedback return / unitarity defect; `U_eff = P_N U_N P_N` is compressed nonunitary pole dynamics; `mathsf P_fb = beta^(-1) partial_V log Z_N` is feedback pressure; external comparison is a bridge/passport layer.
 
-The v15 master synthesis is `03_THEORY_MAP/D0_v15_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_v15_PUBLICATION_OUTLINE.md`.
+The master synthesis is `03_THEORY_MAP/D0_v15_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_v15_PUBLICATION_OUTLINE.md`.
 
 ## 00.0 Publication entry status
 
-v16 keeps the condensed φ-vacuum support as a finite/profinite quasicrystalline hull; the active dynamics are derived later through `F_N`, not inserted as primitive smooth space.
+D0 keeps the condensed φ-vacuum support as a finite/profinite quasicrystalline hull; the active dynamics are derived later through `F_N`, not inserted as primitive smooth space.
 
 **Status:** `SCIENTIFIC-FRONT-MATTER / PROCESS-ARCHITECTURE`.
 
@@ -99,7 +99,7 @@ D0 uses a compact internal vocabulary, but the active scientific corpus must be 
 
 The D0 name is the framework identifier. The proof is the support object, the operator, the response functional, the quotient or coupling, and the falsification condition. A reader may ignore the D0 mnemonic and follow the standard object alone.
 
-This dictionary extends to the **proof and status vocabulary**, which is the part most likely to mislead an external reader. The complete term map — including three explicit *collision warnings* — is `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`. In particular: "**forcing**" is **proof by contradiction (reductio ad absurdum) against the admissibility axiom M1** (BOOK_00 §00.8), **not** Cohen forcing; the proof *technique* is standard, only the axiom M1 is D0-specific. The status word "**`LEM`**" (in "still LEM, not THE") is **not** the Law of Excluded Middle — it means "mechanism established, a limit/external step remains"; it is written **`MECH-LIMIT`** going forward (and is distinct from `LEM`=Lemma in the standard `DEF/LEM/THE` taxonomy). The status word "**`THE`**" abbreviates Theorem, not the article. Nothing in the theory is made harder by this vocabulary: the content lives in M1 and in the finite objects, never in the proof method.
+This dictionary extends to the **proof and status vocabulary**, which is the part most likely to mislead an external reader. The complete term map — including three explicit *collision warnings* — is `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`. In particular: "**forcing**" is **proof by contradiction (reductio ad absurdum) against the admissibility axiom M1** (BOOK_00 §00.8), **not** Cohen forcing; the proof *technique* is standard, only the axiom M1 is D0-specific. The status word "**`LEM`**" (in "still LEM, not THE") is **not** the Law of Excluded Middle — it means "mechanism established, a limit/external step remains"; it is written **`MECH-LIMIT`** (and is distinct from `LEM`=Lemma in the standard `DEF/LEM/THE` taxonomy). The status word "**`THE`**" abbreviates Theorem, not the article. Nothing in the theory is made harder by this vocabulary: the content lives in M1 and in the finite objects, never in the proof method.
 
 ### The three status layers: CORE / FORMALISM / BRIDGE
 
@@ -307,7 +307,7 @@ Book 00 states this chain only as the entrance map.  Book 01 constructs it; Book
 
 ## 00.6 The scientific reading order
 
-Historical source numbers are retained only in migration manifests. The canonical proof dependency order is:
+The canonical proof dependency order is:
 
 ```text
 00 entry contract
@@ -664,7 +664,7 @@ D0 uses finite-registration terminology because its primitive object is a finite
 | comparison protocol | typed comparison with an external table, covariance, experiment or survey | not identical to a core theorem |
 | forcing / "(forced)" | proof by contradiction (reductio ad absurdum) against the admissibility axiom M1 (BOOK_00 §00.8) | **not** Cohen/set-theoretic forcing; the technique is standard reductio, only M1 is D0-specific |
 | M1 | admissibility axiom: no obligatory external catalogue / no hidden exogenous parameter | kin to MDL/Kolmogorov but stronger (distinguishability-affecting); genuinely D0-specific, keep the name |
-| status word `MECH-LIMIT` (was `LEM`) | a result whose mechanism is established but a limit/external-mechanism step remains (conditional result) | **not** the Law of Excluded Middle; and **not** `LEM`=Lemma in the `DEF/LEM/THE` taxonomy (which is standard) |
+| status word `MECH-LIMIT` | a result whose mechanism is established but a limit/external-mechanism step remains (conditional result) | **not** the Law of Excluded Middle; and **not** `LEM`=Lemma in the `DEF/LEM/THE` taxonomy (which is standard) |
 | status word `THE` / `[THE n.n]` | Theorem (proved by reductio against M1) | reads like the article "the"; gloss on first use |
 
 This table is not an analogy layer.  It is a bridge discipline.  A manuscript or book section may use D0 terms internally, but every external-facing claim must include its standard-language translation, bridge status and falsification hook.  The full term map (including the proof/status vocabulary and the collision warnings) is `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`.
@@ -698,7 +698,7 @@ This prevents the common failure mode in which a strong internal invariant is ad
 support -> admissible operator -> positive response or finite trace -> quotient/window -> certificate/owner -> typed bridge -> falsification hook
 ```
 
-**Born quadratic-response closure.** D0 no longer treats the raw Born response as a supplied positive list. A finite phase-quadrature atom admits the general quadratic response `a x^2+bxy+c y^2`; internal quarter-turn phase blindness forces `a=c` and `b=0`, hence the response is a scalar multiple of `x^2+y^2`, and unit calibration gives the finite `D†D` response. Only after this step does finite normalization produce probabilities.
+**Born quadratic-response closure.** The raw Born response is not a supplied positive list but a forced closure. A finite phase-quadrature atom admits the general quadratic response `a x^2+bxy+c y^2`; internal quarter-turn phase blindness forces `a=c` and `b=0`, hence the response is a scalar multiple of `x^2+y^2`, and unit calibration gives the finite `D†D` response. Only after this step does finite normalization produce probabilities.
 
 ## 00.17 Self-substrate trace and informational mechanics
 
@@ -741,9 +741,9 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b00-12]: forcing: GOLDEN, D0-PHILOSOPHY-AND-METHOD §1
 [^b00-13]: forcing: GOLDEN DEF 0.2.2, D0-PHILOSOPHY-AND-METHOD §2
 [^b00-14]: forcing: D0-PHILOSOPHY-AND-METHOD §2
-[^b00-15]: forcing: v17 BOOK-00 §00.2, route-status PROOF-TARGET where noted
+[^b00-15]: forcing: BOOK-00 §00.2, route-status PROOF-TARGET where noted
 [^b00-16]: open obligation — cert obligation open
-[^b00-17]: forcing: v17 BOOK-00 §00.2
+[^b00-17]: forcing: BOOK-00 §00.2
 [^b00-18]: open obligation — cert obligation open
 [^b00-19]: forcing: GOLDEN §0.2
 [^b00-20]: forcing: GOLDEN DEF 0.2.2
