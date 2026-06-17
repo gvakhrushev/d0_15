@@ -5513,7 +5513,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.3,
+    "penalty_total": 0.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5558,8 +5558,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 3,
-        "points": -0.3,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -5608,8 +5608,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 3,
-        "points": -0.3,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
