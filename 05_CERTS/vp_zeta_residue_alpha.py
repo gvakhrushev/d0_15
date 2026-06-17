@@ -123,6 +123,11 @@ def main() -> int:
     print("HONEST_DELTA_ALPHA_RESIDUAL_DISTINCT_FROM_PHI5_REMAINS_THEOREM_TARGET")
     print("HONEST_ALPHA_IS_STRUCTURAL_FORM_NOT_PRECISION_PREDICTION")
 
+    # ---- RESIDUE ROUTE BLOCKED (closure-holonomy supersedes for Delta-alpha; Iter-21) ----
+    print("BLOCKED_RESIDUE_ROUTE_TO_DELTA_ALPHA  the residue-at-pole / profinite-limit route to the precision "
+          "correction carries ln(phi) (transcendental) and cannot reproduce alpha_alg in Q(phi) -- closed-negative")
+    print("WORKING_ROUTE  Delta-alpha is closed by closure holonomy: 05_CERTS/vp_seam_holonomy_alpha.py "
+          "(D0-ALPHA-HOLONOMY-002); alpha_top^-1 = zeta_E(-1) (THE) and the structural residual are kept unchanged")
     print("PASS_ZETA_RESIDUE_ALPHA")
     return 0
 

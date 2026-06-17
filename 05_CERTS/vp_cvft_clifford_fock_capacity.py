@@ -92,6 +92,12 @@ def main() -> int:
     print("HONEST_2POW11_HAS_A_NAMED_EXTERIOR_CLIFFORD_FOCK_CANDIDATE_OVER_V11_NOT_A_BARE_LIST_MATCH")
     print("HONEST_RESIDUE_TRACE_OVER_FULL_FOCK_VS_NAIVE_2_EDGE_PAIRING_STAYS_OPEN_OWNED_BY_DIXMIER_TRACE")
     print("HONEST_CVFT_F1_STAYS_PROOF_TARGET_SHARPENED_NOT_CLOSED_NOT_PROMOTED")
+
+    # ---- RESIDUE ROUTE BLOCKED (closure-holonomy supersedes for Delta-alpha; Iter-21) ----
+    print("BLOCKED_RESIDUE_ROUTE_TO_DELTA_ALPHA  a Dixmier/zeta residue carrying ln(phi) is transcendental "
+          "(Res prop 1/ln phi) and cannot land in alpha_alg in Q(phi) (algebraic) -- this route is closed-negative")
+    print("WORKING_ROUTE  Delta-alpha is closed by closure holonomy: 05_CERTS/vp_seam_holonomy_alpha.py "
+          "(D0-ALPHA-HOLONOMY-002); this cert keeps only its proven capacity/pairing content")
     print("PASS_CVFT_CLIFFORD_FOCK_CAPACITY")
     return 0
 

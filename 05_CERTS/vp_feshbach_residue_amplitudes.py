@@ -80,6 +80,12 @@ def main() -> int:
 
     print("HONEST_VERDICT_CVFT_F1_SHARPENED_NOT_CLOSED  μ₁=1/rank DERIVED, π₀ OWNED, 2¹¹=2^V11 PAIRING-MULTIPLICITY GAP")
     print("HONEST_FORM_FORCED_AMPLITUDE_2P11_NOT_RESOLVENT_DERIVED_DELTA_ALPHA_STATUS_UNCHANGED")
+
+    # ---- RESIDUE ROUTE BLOCKED (closure-holonomy supersedes for Delta-alpha; Iter-21) ----
+    print("BLOCKED_RESIDUE_ROUTE_TO_DELTA_ALPHA  the residue-amplitude route to the alpha correction carries ln(phi) "
+          "(transcendental) and cannot land in alpha_alg in Q(phi) (algebraic) -- closed-negative for Delta-alpha")
+    print("WORKING_ROUTE  Delta-alpha is closed by closure holonomy: 05_CERTS/vp_seam_holonomy_alpha.py "
+          "(D0-ALPHA-HOLONOMY-002); mu1=1/rank (derived) and the assembled mu2 form are kept unchanged")
     print("PASS_FESHBACH_RESIDUE_AMPLITUDES")
     return 0
 

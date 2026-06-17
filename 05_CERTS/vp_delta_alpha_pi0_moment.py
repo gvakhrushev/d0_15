@@ -146,6 +146,11 @@ def main() -> int:
     print("HONEST_THIS_SHARPENS_CVFT_F1_OBLIGATION_4_DOES_NOT_CLOSE_IT_DELTA_ALPHA_STATUS_UNCHANGED")
     print("HONEST_2P11_EQ_2_POW_V11_IS_FLAGGED_FOR_THE_CONTINUATION_NOT_CLAIMED_FORCED")
 
+    # ---- RESIDUE ROUTE BLOCKED (closure-holonomy supersedes for Delta-alpha; Iter-21) ----
+    print("BLOCKED_RESIDUE_ROUTE_TO_DELTA_ALPHA  the s->pole residue continuation carries ln(phi) (transcendental) "
+          "and cannot reproduce alpha_alg in Q(phi) (algebraic) -- this route is closed-negative for Delta-alpha")
+    print("WORKING_ROUTE  Delta-alpha is closed by closure holonomy: 05_CERTS/vp_seam_holonomy_alpha.py "
+          "(D0-ALPHA-HOLONOMY-002); the moment-shape result (deg-2, mu0=0, pi0-on-mu2) is kept unchanged")
     print("PASS_DELTA_ALPHA_PI0_MOMENT")
     return 0
 
