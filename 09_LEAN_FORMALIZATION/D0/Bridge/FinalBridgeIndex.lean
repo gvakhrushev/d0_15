@@ -32,6 +32,7 @@ import D0.Matter.Book04CombinatorialSelectorOrigins
 import D0.Matter.Book04CoefficientOrigin
 import D0.Matter.BaryonS3Symmetrizer
 import D0.Matter.BaryonMultipletBoundary
+import D0.Matter.Book04OperatorBoundary
 import D0.Matter.PhasonStrainGenerations
 import D0.Matter.MesonDefectTransferAlgebra
 import D0.Matter.MesonDefectTransferOrigin
@@ -111,6 +112,17 @@ import D0.Matter.CKMExactMatrixCertificate
 import D0.Geometry.FiniteSpin2DOF
 
 namespace D0.Bridge
+
+/-- Book-04 operator-boundary index entries: the meson-`400`, Higgs scalar-projector, and bundled
+no-go closures (the baryon entry is the structure field `book04BaryonMultipletBoundary`). -/
+def book04Meson400Boundary : Prop :=
+  ¬ D0.Matter.CanPromoteMesonMasses D0.Matter.lowerHodge400SeedOnly
+
+def book04HiggsScalarProjectorBoundary : Prop :=
+  ¬ D0.Matter.CanPromoteHiggsYukawaCore D0.Matter.missingScalarProjectorBridge
+
+def book04OperatorBoundariesClosed : D0.Matter.Book04OperatorBoundaryClosed :=
+  D0.Matter.book04_operator_boundaries_closed
 
 inductive FinalBridgeStatus where
   | coreClosed

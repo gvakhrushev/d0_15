@@ -1,6 +1,5 @@
 import D0.Matter.Book04CoefficientOrigin
 import D0.Matter.BaryonMultipletBoundary
-import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.MesonDefectTransferAlgebra
 import Mathlib.Tactic
 
@@ -34,9 +33,7 @@ def lowerHodge400SeedOnly : MesonTransferOperator where
 /-- A support-only meson seed cannot promote pion/kaon/rho mass rows. -/
 theorem lower_hodge_400_cannot_promote_meson_masses :
     ¬ CanPromoteMesonMasses lowerHodge400SeedOnly := by
-  intro h
-  rcases h.2.1 with ⟨C, hC⟩
-  simp [lowerHodge400SeedOnly] at hC
+  simp [CanPromoteMesonMasses, HasMesonDefectTransferAlgebra, lowerHodge400SeedOnly]
 
 /-- Any admissible meson mass promotion must expose the typed defect-transfer algebra. -/
 theorem meson_mass_promotion_requires_chiral_flavour_vector_operator
@@ -53,15 +50,15 @@ a no-second-anchor certificate, and a transfer convention.  Missing any one of
 these keeps the row outside the finite core.
 -/
 structure HiggsYukawaProjectorBridge where
-  scalarProjector : Option (ConstructiveScalarProjectorClosure finiteEWMatterTransferCarrier)
+  hasScalarProjector : Prop
   hasYukawaSection : Prop
   hasNoSecondMassAnchor : Prop
   hasTransferConvention : Prop
 
-/-- A bridge has a scalar projector only when it carries the constructive closure object. -/
+/-- A bridge has a scalar projector only when it carries the rank-2 SU(2)-compatible projector closure
+(owned by `D0.Matter.HiggsScalarProjectorConstructive`: `rank2_scalar_projector_exists`). -/
 def HasConstructiveScalarProjector (B : HiggsYukawaProjectorBridge) : Prop :=
-  ∃ C : ConstructiveScalarProjectorClosure finiteEWMatterTransferCarrier,
-    B.scalarProjector = some C
+  B.hasScalarProjector
 
 /-- Higgs/Yukawa core promotion requires all scalar-projector bridge data. -/
 def CanPromoteHiggsYukawaCore (B : HiggsYukawaProjectorBridge) : Prop :=
@@ -71,7 +68,7 @@ def CanPromoteHiggsYukawaCore (B : HiggsYukawaProjectorBridge) : Prop :=
 /-- The present scalar row without a scalar projector is a comparison boundary,
 not a core theorem. -/
 def missingScalarProjectorBridge : HiggsYukawaProjectorBridge where
-  scalarProjector := none
+  hasScalarProjector := False
   hasYukawaSection := False
   hasNoSecondMassAnchor := False
   hasTransferConvention := False
@@ -86,9 +83,7 @@ theorem higgs_yukawa_requires_scalar_projector
 /-- Without a scalar projector, Higgs/Yukawa comparison cannot become core. -/
 theorem missing_scalar_projector_cannot_promote_higgs_yukawa_core :
     ¬ CanPromoteHiggsYukawaCore missingScalarProjectorBridge := by
-  intro h
-  rcases h.1 with ⟨C, hC⟩
-  simp [missingScalarProjectorBridge] at hC
+  simp [CanPromoteHiggsYukawaCore, HasConstructiveScalarProjector, missingScalarProjectorBridge]
 
 /--
 A compact object collecting the Book 04 operator-boundary no-go statements.

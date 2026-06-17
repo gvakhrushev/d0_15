@@ -189,6 +189,8 @@ Operator-boundary status (release-candidate):
 - Higgs scalar projector + Yukawa section: SCALAR-PROJECTOR-CERT-CLOSED + YUKAWA-SECTION-CERT-CLOSED.
 External numerical spectroscopy / Yukawa / PDG comparison is passport-layer work only. `D0.Matter.book04_operator_boundaries_closed` points to the above closure classes.
 
+The three boundaries are machine-checked no-gos in `D0.Matter.Book04OperatorBoundary`: the **Baryon multiplet boundary as a closed no-go** (`nucleon_line_cannot_promote_full_baryon_multiplet`); the **Meson/chiral boundary as a closed no-go** (`lower_hodge_400_cannot_promote_meson_masses`, i.e. `400 ⇏ m_π`); and the **Higgs/scalar projector boundary** (`missing_scalar_projector_cannot_promote_higgs_yukawa_core`). Each states that the deficient operator — lacking the required transfer/carrier/projector data — cannot be promoted to a physical mass row.
+
 ## 04.1 Role of the matter book
 
 Book 04 is the first place where the finite D0 construction is read as matter.  The detector, condensed support, graph birth, action gate and proof calculus are already fixed in Books 01--03.  Therefore the matter book is not allowed to introduce new primitive scales, new post-hoc labels or a fitted particle table.

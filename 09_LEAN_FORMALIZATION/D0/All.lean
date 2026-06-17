@@ -255,6 +255,7 @@ import D0.Matter.Book04CoefficientOrigin
 import D0.Matter.Book04CombinatorialSelectorOrigins
 import D0.Matter.Book04ConcreteSelectors
 import D0.Matter.Book04FullSupportSelectors
+import D0.Matter.Book04OperatorBoundary
 import D0.Matter.Book04Selectors
 import D0.Matter.CKMBasisMismatch
 import D0.Matter.CKMBasisOrigin
