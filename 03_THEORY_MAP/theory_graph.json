@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 298,
+    "claims": 302,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 60,
+      "CERT-CLOSED": 62,
       "NO-GO": 9,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 18,
+      "PROOF-TARGET": 20,
       "PASSPORT-CLOSED": 3
     },
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 70,
+      "PYTHON_CERTIFIED": 72,
       "DEPRECATED": 2,
-      "OPEN": 20
+      "OPEN": 22
     },
     "claim_type": {
       "core": 163,
       "bridge": 28,
       "no-go": 17,
-      "certificate": 69,
+      "certificate": 71,
       "deprecated": 3,
-      "frontier": 18
+      "frontier": 20
     },
     "domain": {
-      "formal_core": 179,
+      "formal_core": 180,
       "rg": 5,
       "gauge_bridge": 20,
-      "smooth_geometry": 21,
+      "smooth_geometry": 22,
       "spectral_action": 5,
       "empirical_passport": 22,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 18
+      "frontier": 20
     }
   },
   "nodes": [
@@ -9988,6 +9988,121 @@
       "label": "vp_delta_alpha_seam_closed.py",
       "path": "05_CERTS/vp_delta_alpha_seam_closed.py",
       "exists": true
+    },
+    {
+      "id": "D0-GAUGE-MASS-GAP-PLAQUETTE-001",
+      "kind": "claim",
+      "claim_id": "D0-GAUGE-MASS-GAP-PLAQUETTE-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07/05",
+      "section": "sect26",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_gauge_mass_gap_plaquette.py",
+      "python_cert": [
+        "vp_gauge_mass_gap_plaquette.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 closure-delta] FINITE D0 gauge excitation floor (NOT continuum Yang-Mills): a nontrivial non-abelian seam excitation has strictly positive constructive cost -- off-kernel frobSq([B,J])=2>0 vs frobSq([B,I])=0 (exact Z 2x2) and step-cost quantum DeltaS_min=phi^-2>0 (phi^-1+phi^-2=1). cert vp_gauge_mass_gap_plaquette.py (can-FAIL: trivial vacuum zero-cost + sub-unit controls). The continuum Yang-Mills mass gap is NOT claimed. CONSOLIDATION of the proved finite gap under D0-NONABELIAN-SEAM-001 (D0.Claims.NonabelianSeamGap) + D0-MASSGAP-COSTQUANTUM-001 (D0.Gauge.MassGapCostQuantum); the continuous-model positive-gap of D0.Gauge.NonAbelianSeamObstructionGap (only nonnegativity proved) stays an OPEN internal theorem-target, not claimed here.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_gauge_mass_gap_plaquette.py",
+      "kind": "python_cert",
+      "label": "vp_gauge_mass_gap_plaquette.py",
+      "path": "05_CERTS/vp_gauge_mass_gap_plaquette.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06/01",
+      "section": "06.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_sturmian_cylinder_conjugacy.py",
+      "python_cert": [
+        "vp_phi_sturmian_cylinder_conjugacy.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 closure-delta] FINITE cylinder-language equivalence ONLY: the golden substitution word (a->ab,b->a) avoids 'bb' (golden-mean SFT), has factor complexity p(L)=L+1 (Sturmian), and its letter frequencies -> golden split (phi^-1,phi^-2) (same stationary measure as D0-PHI-CYLINDER-TRACE-UNIQUE-001). cert vp_phi_sturmian_cylinder_conjugacy.py (can-FAIL: periodic-complexity, periodic-frequency, non-golden-word controls). SCOPE: full topological/measure conjugacy stays the EXTERNAL owner D0-ADLER-WEISS-PARTITION-OWNER-001 (ASSUMP-ADLER-WEISS); coincidence cert vp_quasicrystal_time_sturmian.py. Not a new conjugacy claim.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi_sturmian_cylinder_conjugacy.py",
+      "kind": "python_cert",
+      "label": "vp_phi_sturmian_cylinder_conjugacy.py",
+      "path": "05_CERTS/vp_phi_sturmian_cylinder_conjugacy.py",
+      "exists": true
+    },
+    {
+      "id": "D0-BARYON-ASYMMETRY-DELTA0-001",
+      "kind": "claim",
+      "claim_id": "D0-BARYON-ASYMMETRY-DELTA0-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.2",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 closure-delta] PROOF-TARGET: the three-zone CP/asymmetry coordinate eta_bar = 3*delta0 = 3/(2phi^3) is a clean Q(phi) value, but NO D0-internal forcing derives it. The named owner D0.Matter.TickS3BaryonAsymmetry is NOT on disk; the scaffold cert vp_tick_s3_baryon_asymmetry_scaffold.py carries a hardcoded placeholder asymmetry (emits SKIP_FULL_COSMOLOGICAL_BARYOGENESIS_EXTERNAL_MODEL_REQUIRED). The MISSING artifact is a finite three-zone CP-coordinate cert that DERIVES 3*delta0 (not just prints it). A value-match is not a forcing -> stays PROOF-TARGET; the observed baryon-to-photon ratio stays an empirical passport, never CORE. (eta-bar=3delta0 currently appears only as a Wolfenstein CKM HYP in GOLDEN_COVERAGE_LEDGER.)",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.8",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_lepton_raw_graph_owner_manifest.py",
+      "python_cert": [
+        "vp_lepton_raw_graph_owner_manifest.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 closure-delta] PROOF-TARGET owner-of-the-gap: the 17-digit charged-lepton transfer decimals (r_mu=3.8814..., r_tau=10.3183...) stay HYP (D0-LEPTON-002); the integer Lucas part L11+L4=206 and exponents (0,1/4,1/3) are THE. The MISSING artifact is a raw finite graph/spectral operator from which the decimals are extracted (none exists in registry or 05_CERTS). manifest vp_lepton_raw_graph_owner_manifest.py (can-FAIL: asserts D0-LEPTON-002 stays CERT-CLOSED with decimals HYP, never promoted to THE). Until a raw-graph operator is supplied this stays PROOF-TARGET.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_lepton_raw_graph_owner_manifest.py",
+      "kind": "python_cert",
+      "label": "vp_lepton_raw_graph_owner_manifest.py",
+      "path": "05_CERTS/vp_lepton_raw_graph_owner_manifest.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -14144,6 +14259,61 @@
     {
       "source": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
       "target": "cert:vp_delta_alpha_seam_closed.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-GAUGE-MASS-GAP-PLAQUETTE-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-GAUGE-MASS-GAP-PLAQUETTE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-GAUGE-MASS-GAP-PLAQUETTE-001",
+      "target": "cert:vp_gauge_mass_gap_plaquette.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+      "target": "cert:vp_phi_sturmian_cylinder_conjugacy.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BARYON-ASYMMETRY-DELTA0-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BARYON-ASYMMETRY-DELTA0-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+      "target": "cert:vp_lepton_raw_graph_owner_manifest.py",
       "kind": "certified_by"
     }
   ]

@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 60
+- `CERT-CLOSED`: 62
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -16,15 +16,15 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 3
-- `PROOF-TARGET`: 18
+- `PROOF-TARGET`: 20
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 69
+- `certificate`: 71
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 18
+- `frontier`: 20
 - `no-go`: 17
 
 ## Domain counts
@@ -32,13 +32,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 24
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 179
-- `frontier`: 18
+- `formal_core`: 180
+- `frontier`: 20
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 21
+- `smooth_geometry`: 22
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -1286,6 +1286,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter21 closure-sprint] The D0-admissible phi-cylinder trace is UNIQUE: on the golden (Fibonacci) subshift cylinder tower the normalized shift-invariant trace is the unique left Perron eigenvector of the primitive transition M=[[1,1],[1,0]] (the 'no bb' rule), = the golden split (phi^-1,phi^-2) (= W_ext/W_int, D0-IM-002): pi M = phi pi, sum=1, embedding-compatible ((pi M)/phi=pi). Any trace differing on a finite cylinder needs a 'which frequency' catalog -> inadmissible by M1. cert vp_phi_cylinder_trace_unique.py (can-FAIL: uniform + reweighted controls rejected). Scope: D0-internal cylinder trace only; the external C*-crossed-product unique trace is the passport D0-PHI-CSTAR-PASSPORT-001.
+
+### D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06/01`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_sturmian_cylinder_conjugacy.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 closure-delta] FINITE cylinder-language equivalence ONLY: the golden substitution word (a->ab,b->a) avoids 'bb' (golden-mean SFT), has factor complexity p(L)=L+1 (Sturmian), and its letter frequencies -> golden split (phi^-1,phi^-2) (same stationary measure as D0-PHI-CYLINDER-TRACE-UNIQUE-001). cert vp_phi_sturmian_cylinder_conjugacy.py (can-FAIL: periodic-complexity, periodic-frequency, non-golden-word controls). SCOPE: full topological/measure conjugacy stays the EXTERNAL owner D0-ADLER-WEISS-PARTITION-OWNER-001 (ASSUMP-ADLER-WEISS); coincidence cert vp_quasicrystal_time_sturmian.py. Not a new conjugacy claim.
 
 ### D0-PHI99-DEPTH-FORCING-001
 
@@ -2993,6 +3006,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain: frontier
 
+### D0-BARYON-ASYMMETRY-DELTA0-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `none`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 closure-delta] PROOF-TARGET: the three-zone CP/asymmetry coordinate eta_bar = 3*delta0 = 3/(2phi^3) is a clean Q(phi) value, but NO D0-internal forcing derives it. The named owner D0.Matter.TickS3BaryonAsymmetry is NOT on disk; the scaffold cert vp_tick_s3_baryon_asymmetry_scaffold.py carries a hardcoded placeholder asymmetry (emits SKIP_FULL_COSMOLOGICAL_BARYOGENESIS_EXTERNAL_MODEL_REQUIRED). The MISSING artifact is a finite three-zone CP-coordinate cert that DERIVES 3*delta0 (not just prints it). A value-match is not a forcing -> stays PROOF-TARGET; the observed baryon-to-photon ratio stays an empirical passport, never CORE. (eta-bar=3delta0 currently appears only as a Wolfenstein CKM HYP in GOLDEN_COVERAGE_LEDGER.)
+
 ### D0-CVFT-001B
 
 - type: `frontier`
@@ -3109,6 +3135,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The substantive claim (matter and TT gravity on ONE shared finite cochain carrier, coupling FORCED by shared-d/conservation) is architecture-blocked: the matter side is R over archivePhaseIndex/Matrix n n (ArchiveStressRepresentative.lean, EdgeStressCoupling.lean) while the TT side is Q over Fin 4 (FiniteSpin2WaveOperator.lean) -- there is NO shared carrier, unifying them is new architecture. Worse, the d-conservation forcing the honest map needs COLLIDES with an existing internal NO-GO, canonical_stress_conservation_no_go (the symmetrized canonical stress has divergence != 0 in general), so the map cannot be derived off the shelf. Real per-side assets exist (spin2_coupling_depends_only_on_tt_stress, PiTT4_kills_trace/PiTT4_kills_gauge; finite C1 Hodge core vp_finite_hodge_complex_core.py) but do NOT constitute the cross-carrier binding the claim asserts. Jointly open with D0-SPECTRAL-EINSTEIN-001.
+
+### D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_lepton_raw_graph_owner_manifest.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 closure-delta] PROOF-TARGET owner-of-the-gap: the 17-digit charged-lepton transfer decimals (r_mu=3.8814..., r_tau=10.3183...) stay HYP (D0-LEPTON-002); the integer Lucas part L11+L4=206 and exponents (0,1/4,1/3) are THE. The MISSING artifact is a raw finite graph/spectral operator from which the decimals are extracted (none exists in registry or 05_CERTS). manifest vp_lepton_raw_graph_owner_manifest.py (can-FAIL: asserts D0-LEPTON-002 stays CERT-CLOSED with decimals HYP, never promoted to THE). Until a raw-graph operator is supplied this stays PROOF-TARGET.
 
 ### D0-PASSPORT-DESI-BAO-001
 
@@ -3709,6 +3748,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter17 ТЗ-2 Phase D, verify-then-promote — c=1 CONFIRMED] On the finite scene the Connes spectral distance d_C(p,q)=sup{|f(p)-f(q)| : ||[D,f]||<=1} EQUALS the geodesic (shortest-path) distance: ||[D,f]||<=1 <=> f 1-Lipschitz per edge, sup attained by f=d_geo(.,p), bounded above by telescoping. So the metric is INTERNAL (geodesic), not an external input. And c=1 is STRUCTURAL: <=1 edge/tick => signal speed 1, dimensionless, no external light-speed constant. Cert vp_connes_distance_geodesic.py (path/cycle/K(2,2,3); can-FAIL; control: edge-jump>1 inadmissible). CONSEQUENCE: the §07.51.3 cone-speed residual is c=1=edge/tick (internal), NOT an external Connes unit; ASSUMP-CONNES-RECONSTRUCTION is reclassified owner->continuum-limit CONFIRMATION. HONEST: the finite->smooth Riemannian limit itself is still the external Connes theorem, now as confirmation of the internal geodesic metric's limit, not the owner of a D0 gap.
+
+### D0-GAUGE-MASS-GAP-PLAQUETTE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07/05`
+- module: ``
+- theorem: `none`
+- cert: `vp_gauge_mass_gap_plaquette.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 closure-delta] FINITE D0 gauge excitation floor (NOT continuum Yang-Mills): a nontrivial non-abelian seam excitation has strictly positive constructive cost -- off-kernel frobSq([B,J])=2>0 vs frobSq([B,I])=0 (exact Z 2x2) and step-cost quantum DeltaS_min=phi^-2>0 (phi^-1+phi^-2=1). cert vp_gauge_mass_gap_plaquette.py (can-FAIL: trivial vacuum zero-cost + sub-unit controls). The continuum Yang-Mills mass gap is NOT claimed. CONSOLIDATION of the proved finite gap under D0-NONABELIAN-SEAM-001 (D0.Claims.NonabelianSeamGap) + D0-MASSGAP-COSTQUANTUM-001 (D0.Gauge.MassGapCostQuantum); the continuous-model positive-gap of D0.Gauge.NonAbelianSeamObstructionGap (only nonnegativity proved) stays an OPEN internal theorem-target, not claimed here.
 
 ### D0-PHI-LADDER-SEMIGROUP-001
 
