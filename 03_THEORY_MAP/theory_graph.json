@@ -4,7 +4,7 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 292,
+    "claims": 294,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
@@ -17,12 +17,12 @@
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
       "PROOF-TARGET": 18,
-      "PASSPORT-CLOSED": 1
+      "PASSPORT-CLOSED": 3
     },
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 64,
+      "PYTHON_CERTIFIED": 66,
       "DEPRECATED": 2,
       "OPEN": 20
     },
@@ -30,7 +30,7 @@
       "core": 163,
       "bridge": 28,
       "no-go": 17,
-      "certificate": 63,
+      "certificate": 65,
       "deprecated": 3,
       "frontier": 18
     },
@@ -38,9 +38,9 @@
       "formal_core": 177,
       "rg": 5,
       "gauge_bridge": 20,
-      "smooth_geometry": 19,
+      "smooth_geometry": 20,
       "spectral_action": 5,
-      "empirical_passport": 20,
+      "empirical_passport": 21,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 2,
@@ -9802,6 +9802,68 @@
       "label": "vp_alpha_mu2_full_ledger.py",
       "path": "05_CERTS/vp_alpha_mu2_full_ledger.py",
       "exists": true
+    },
+    {
+      "id": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.8",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_neutrino_mass_passport.py",
+      "python_cert": [
+        "vp_neutrino_mass_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Iter21 closure-sprint PASSPORT-CLOSED] Neutrino mass is a closed passport over the frozen seam: internal object P_sterile = Delta_alpha^2 (Delta_alpha CORE-exact, D0-DELTA-ALPHA-EXACT-001); external packaging m_nu/m_e ~ P_sterile. External neutrino data may compare against the passport but may not tune Delta_alpha/mu1/mu2/alpha (no reverse selection). PASSPORT-CLOSED per D0-BRIDGE-COMPRESSION-001 (firewall EMPIRICAL_PASSPORT, never CORE-THE); neutrino mass is NOT a CORE theorem. cert vp_neutrino_mass_passport.py.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_neutrino_mass_passport.py",
+      "kind": "python_cert",
+      "label": "vp_neutrino_mass_passport.py",
+      "path": "05_CERTS/vp_neutrino_mass_passport.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.26",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_smooth_manifold_passport.py",
+      "python_cert": [
+        "vp_smooth_manifold_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Iter21 closure-sprint PASSPORT-CLOSED] Smooth manifold as a conditional macro-shadow: internal object = finite spectral/metric tower + phi semigroup envelope (D0-IM-003, D0-CONNES-DISTANCE-GEODESIC-001). The smooth compact Riemannian/spin manifold reading is a downstream macro-shadow, conditional on the external owners D0-RIEFFEL-GHP-CONTINUUM-OWNER-001 (ASSUMP-RIEFFEL-GHP) + D0-CONNES-RECONSTRUCTION-OWNER-001 (ASSUMP-CONNES-RECONSTRUCTION). It is not a primitive D0 input and not a CORE theorem. PASSPORT-CLOSED per D0-BRIDGE-COMPRESSION-001. cert vp_smooth_manifold_passport.py.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_smooth_manifold_passport.py",
+      "kind": "python_cert",
+      "label": "vp_smooth_manifold_passport.py",
+      "path": "05_CERTS/vp_smooth_manifold_passport.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -13868,6 +13930,36 @@
     {
       "source": "D0-ALPHA-MU2-FULL-LEDGER-001",
       "target": "cert:vp_alpha_mu2_full_ledger.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "target": "cert:vp_neutrino_mass_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "target": "cert:vp_smooth_manifold_passport.py",
       "kind": "certified_by"
     }
   ]

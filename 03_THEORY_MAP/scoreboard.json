@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 4225,
-    "track_fair_max": 5294,
-    "pct_strength": 79.8,
+    "realized": 4239,
+    "track_fair_max": 5308,
+    "pct_strength": 79.9,
     "core_realized": 3678,
     "core_potential": 4720,
     "core_headroom": 1042,
-    "n_claims": 292,
-    "n_active": 290,
+    "n_claims": 294,
+    "n_active": 292,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -50,9 +50,9 @@
       "core_headroom": 13
     },
     "smooth_geometry": {
-      "n": 19,
-      "realized": 279,
-      "max": 335,
+      "n": 20,
+      "realized": 286,
+      "max": 342,
       "core_headroom": 52
     },
     "spectral_action": {
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 20,
-      "realized": 205,
-      "max": 284,
+      "n": 21,
+      "realized": 212,
+      "max": 291,
       "core_headroom": 70
     },
     "cosmology": {
@@ -148,9 +148,9 @@
       "core_headroom": 80
     },
     "BOOK_07": {
-      "n": 48,
-      "realized": 650,
-      "max": 882,
+      "n": 49,
+      "realized": 657,
+      "max": 889,
       "core_headroom": 218
     },
     "BOOK_06/08": {
@@ -160,9 +160,9 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 47,
-      "realized": 708,
-      "max": 871,
+      "n": 48,
+      "realized": 715,
+      "max": 878,
       "core_headroom": 158
     },
     "BOOK_04/08": {
@@ -5749,6 +5749,34 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "formal_core",
       "book": "BOOK_02/04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
     }

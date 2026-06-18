@@ -15,13 +15,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
-- `PASSPORT-CLOSED`: 1
+- `PASSPORT-CLOSED`: 3
 - `PROOF-TARGET`: 18
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 63
+- `certificate`: 65
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 18
@@ -30,7 +30,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 20
+- `empirical_passport`: 21
 - `external_background`: 1
 - `formal_core`: 177
 - `frontier`: 18
@@ -38,7 +38,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 19
+- `smooth_geometry`: 20
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -500,6 +500,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter4 T5.4] EMPIRICAL-PASSPORT. delta0-family sin^2 th12=1/3-2 delta0^2=0.30547, th13=phi^-5/4=0.02254, th23=1/2+delta0/2=0.559 vs NuFIT 6.0 (0.307/0.0220/0.561); beats GRA(0.276)/TBM(1/3)/GRB(0.345) on th12; JUNO falsifier window [0.300,0.311]. cite NuFIT 6.0 JHEP 12(2024)216 arXiv:2410.05380; JUNO. HONEST: delta0 forced, angle FORMULAS forcing is backlog/OWNER-DECISION; never core. [Iter15 sharpen — forcing attempt, honest dual] Each angle = an M1-symmetric BASELINE + a correction from forced quantities: sin2 th23 = 1/2(bimaximal) + delta0/2; sin2 th12 = 1/3(trimaximal/democratic, rank-3) - 2 delta0^2; sin2 th13 = xi5/4 (xi5=phi^-5, D0-XI5; |ABCD|=4). The baselines are M1-forced and the corrections reuse ONLY forced delta0/xi5 (no new fit); cert vp_pmns_baseline_correction.py (can-FAIL: baseline-only misses NuFIT; 1st-order delta0 for th12 misses badly => the delta0^2 ORDER is data-fixed). NAMED GAP (precise): the correction ORDERS (delta0^1 vs delta0^2 vs xi5^1) and integer coefficients (1/2, -2, 1/4) are NOT M1-derived. Stays EMPIRICAL-PASSPORT; not promoted. [Iter21] value corrected: sin^2 th12=0.30547 exact (=1/3-2 delta0^2=-37/6+4phi; was mis-displayed 0.3055/0.30553, and the baseline-correction assert target was the wrong 0.30553 at a loose 1e-4 tol -- now 0.30547 at 1e-5). JUNO citation NOT yet pinned (free-text Nature 2026, no arXiv/DOI); the JUNO falsifier-window win is provisional until a resolvable identifier is supplied (NuFIT-6.0 IS pinned: JHEP 12(2024)216 arXiv:2410.05380).
+
+### D0-NEUTRINO-MASS-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_neutrino_mass_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter21 closure-sprint PASSPORT-CLOSED] Neutrino mass is a closed passport over the frozen seam: internal object P_sterile = Delta_alpha^2 (Delta_alpha CORE-exact, D0-DELTA-ALPHA-EXACT-001); external packaging m_nu/m_e ~ P_sterile. External neutrino data may compare against the passport but may not tune Delta_alpha/mu1/mu2/alpha (no reverse selection). PASSPORT-CLOSED per D0-BRIDGE-COMPRESSION-001 (firewall EMPIRICAL_PASSPORT, never CORE-THE); neutrino mass is NOT a CORE theorem. cert vp_neutrino_mass_passport.py.
 
 ### D0-PHI-CSTAR-PASSPORT-001
 
@@ -3670,6 +3683,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter10 FORCING, closed in chat -- the lattice BRIDGE became a FORCING] phi-carrier is forced, not postulated: (1) non-perturbative gauge theory is rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay problem) => finite carrier is the only rigorous one; (2) a periodic lattice has an arbitrary step a (needs a->0); a quasicrystal is self-similar by phi (inflation [[1,1],[1,0]] Perron eigenvalue phi, A/B->phi) with NO preferred step, NO a->0 limit; (3) M1 forbids the hand-chosen a (exogenous) => carrier must be aperiodic-self-similar; (4) aperiodic + 5-fold => phi (Penrose/de Bruijn cut-and-project; 2cos(pi/5)=phi; Shechtman Nobel 2011). cert vp_quasicrystal_carrier_forcing.py (decidable inflation/5-fold backbone + 4 named external pillars). Reuses the already-proved quasicrystalline carrier (Sturmian phi^-2, §01.21.2). NEW external channel to phi (with Hurwitz, Jones-index, KAM, quadratic Pisot). Do not reopen; the open remainder is D0-QUASICRYSTAL-PROJECTION-001.
+
+### D0-SMOOTH-MANIFOLD-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_smooth_manifold_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter21 closure-sprint PASSPORT-CLOSED] Smooth manifold as a conditional macro-shadow: internal object = finite spectral/metric tower + phi semigroup envelope (D0-IM-003, D0-CONNES-DISTANCE-GEODESIC-001). The smooth compact Riemannian/spin manifold reading is a downstream macro-shadow, conditional on the external owners D0-RIEFFEL-GHP-CONTINUUM-OWNER-001 (ASSUMP-RIEFFEL-GHP) + D0-CONNES-RECONSTRUCTION-OWNER-001 (ASSUMP-CONNES-RECONSTRUCTION). It is not a primitive D0 input and not a CORE theorem. PASSPORT-CLOSED per D0-BRIDGE-COMPRESSION-001. cert vp_smooth_manifold_passport.py.
 
 ### D0-BH-CAPACITY-A4-001
 
