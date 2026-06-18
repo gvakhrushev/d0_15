@@ -462,7 +462,21 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001", moduleName := "D0.Cosmology.PhasonWZTransfer",
       theoremName := "kernel_dim_alone_does_not_determine_w", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001", moduleName := "D0.Cosmology.PhasonWZTransfer",
-      theoremName := "phason_w_defined_on_nonzero_energy", status := ClaimStatus.leanCoreProved }
+      theoremName := "phason_w_defined_on_nonzero_energy", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001", moduleName := "D0.Spectral.AlphaFeshbachDixmierOwner",
+      theoremName := "alpha_feshbach_residue_finite_sum", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001", moduleName := "D0.Spectral.AlphaFeshbachDixmierOwner",
+      theoremName := "p_sterile_in_qphi", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001", moduleName := "D0.Matter.LeptonGreenPuiseuxOwner",
+      theoremName := "lepton_green_puiseux_operator_scaffold", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LUCAS-VORONOI-MARKOV-PARTITION-001", moduleName := "D0.Geometry.LucasVoronoiMarkovPartition",
+      theoremName := "lucas_voronoi_markov_partition_scaffold", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TORAL-TIME-MARKOV-CONJUGACY-001", moduleName := "D0.Geometry.LucasVoronoiMarkovPartition",
+      theoremName := "ToralMarkovConjugacyTarget", status := ClaimStatus.openObligation },
+    { claimId := "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001", moduleName := "D0.Cosmology.PhasonWDESignNormalization",
+      theoremName := "phason_wde_sign_normalization_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-GHP-GOLDEN-CAUCHY-BOUND-001", moduleName := "D0.Geometry.GHPGoldenCauchyBound",
+      theoremName := "ghp_golden_cauchy_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

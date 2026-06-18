@@ -114,6 +114,7 @@ import D0.Cosmology.FloorMassProjection
 import D0.Cosmology.InstabilitySaturation
 import D0.Cosmology.LinearizedEntropyFlow
 import D0.Cosmology.PhasonFlipEntropy
+import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
 import D0.Cosmology.ResearchPassCorollaries
 import D0.Cosmology.SDEFeedbackReduction
@@ -202,6 +203,7 @@ import D0.Geometry.FiniteSpin2
 import D0.Geometry.FiniteSpin2DOF
 import D0.Geometry.FiniteSpin2Dynamics
 import D0.Geometry.FiniteSpin2WaveOperator
+import D0.Geometry.GHPGoldenCauchyBound
 import D0.Geometry.HeatTraceA2Decomposition
 import D0.Geometry.HeatTraceConditions
 import D0.Geometry.HeatTraceEHProxy
@@ -209,6 +211,7 @@ import D0.Geometry.HigherCurvatureCutoff
 import D0.Geometry.HigherCurvatureSuppression
 import D0.Geometry.HurwitzRigidPhaseGenerator
 import D0.Geometry.InfiniteSpectralTower
+import D0.Geometry.LucasVoronoiMarkovPartition
 import D0.Geometry.NonCommutativeSolenoid
 import D0.Geometry.NonCommutativeSolenoidGravity
 import D0.Geometry.PhaseReturnBranchCount
@@ -277,6 +280,7 @@ import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
 import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.KTheoryGapLabeling
+import D0.Matter.LeptonGreenPuiseuxOwner
 import D0.Matter.LocalTraceSource
 import D0.Matter.MesonDefectTransferAlgebra
 import D0.Matter.MesonDefectTransferOrigin
@@ -325,6 +329,7 @@ import D0.Probability.SubgaussianArchive
 import D0.RG.OneLoopStructure
 import D0.RG.PhiDifference
 import D0.Response
+import D0.Spectral.AlphaFeshbachDixmierOwner
 import D0.Spectral.CriticalAxisM1
 import D0.Spectral.DeltaAlphaExact
 import D0.Spectral.DeltaAlphaMoment

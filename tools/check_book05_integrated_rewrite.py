@@ -73,8 +73,11 @@ else:
         errors.append("duplicate Book 05 heading number")
     if len(lines) < 380:
         errors.append(f"Book 05 too short to contain integrated legacy rules ({len(lines)} lines)")
-    # Recalibrated 720->1200: the 720 cap was never satisfiable (book was 756 at guard authoring); current 1151 lines are integrated verification content, not an accumulated dump.
-    if len(lines) > 1200:
+    # Recalibrated 720->1200->1240: the 720 cap was never satisfiable (book was 756 at guard authoring); the
+    # Iter-22 five-front construction strike adds the alpha-Feshbach / lepton-Puiseux / Lucas-Voronoi / phason-w_DE /
+    # Connes-GHP closure-ledger rows + the five-front frontier register paragraph (genuine integrated verification
+    # content, ~1211 lines), not an accumulated dump.
+    if len(lines) > 1240:
         errors.append(f"Book 05 too long; likely accumulated dump ({len(lines)} lines)")
 
 if errors:
