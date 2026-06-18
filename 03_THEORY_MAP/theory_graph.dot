@@ -194,7 +194,7 @@ digraph D0Theory {
   "D0-METRO-002" [label="D0-METRO-002\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-COSMO-003" [label="D0-COSMO-003\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-COSMO-002" [label="D0-COSMO-002\\nEMPIRICAL-PASSPORT\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
-  "D0-DUSTY-PLASMA-001" [label="D0-DUSTY-PLASMA-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-DUSTY-PLASMA-001" [label="D0-DUSTY-PLASMA-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-CRITICAL-COLLAPSE-001" [label="D0-CRITICAL-COLLAPSE-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PASSPORT-CORE13-001" [label="D0-PASSPORT-CORE13-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PASSPORT-DESI-BAO-001" [label="D0-PASSPORT-DESI-BAO-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
@@ -1329,8 +1329,8 @@ digraph D0Theory {
   "D0-DUSTY-PLASMA-001" -> "module:" [label="module"];
   "cert:vp_dusty_plasma_d0_mapping.py" [label="vp_dusty_plasma_d0_mapping.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-DUSTY-PLASMA-001" -> "cert:vp_dusty_plasma_d0_mapping.py" [label="cert"];
-  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-DUSTY-PLASMA-001" -> "domain:empirical_passport" [label="domain"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-DUSTY-PLASMA-001" -> "domain:frontier" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-CRITICAL-COLLAPSE-001" -> "module:" [label="module"];
   "cert:vp_critical_collapse_dss_echo_lattice.py" [label="vp_critical_collapse_dss_echo_lattice.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];

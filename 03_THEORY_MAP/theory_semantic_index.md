@@ -11,28 +11,28 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 5
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 12
+- `EMPIRICAL-PASSPORT`: 11
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 16
+- `PROOF-TARGET`: 17
 
 ## Type counts
 
 - `bridge`: 27
-- `certificate`: 62
+- `certificate`: 61
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 16
+- `frontier`: 17
 - `no-go`: 17
 
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 22
+- `empirical_passport`: 21
 - `external_background`: 1
 - `formal_core`: 174
-- `frontier`: 16
+- `frontier`: 17
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -447,19 +447,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter7 cross-bridge E.1, EMPIRICAL anchor with CRITICAL gap] Discrete scale invariance (DSI) gives log-periodic observables cos(2 pi ln x / ln lambda); D0 predicts phi-ladders (lambda=phi, log-period ln(phi)=0.4812=I_f=h_KS). Log-periodic magneto-oscillations ARE observed in ZrTe5/HfTe5 (Wang et al. Natl.Sci.Rev. 6, 914, 2019; Sci.Adv. 4 eaau5096) -- direct evidence a log-periodic ladder occurs in a real material. Cert vp_dsi_experimental.py proves the log-periodic FORM (phi^k land on integer rungs) and that an experimental Coulomb-set lambda != phi gives a different log-period. HONEST CRITICAL GAP: confirms the log-periodic FORM (DSI is physically real), NOT the VALUE lambda=phi (experimental scale is Coulomb-determined, not golden). Must NOT be read as measuring phi. EMPIRICAL-PASSPORT, never core.
-
-### D0-DUSTY-PLASMA-001
-
-- type: `certificate`
-- release_status: `EMPIRICAL-PASSPORT`
-- domain: `empirical_passport`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_dusty_plasma_d0_mapping.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] self-declared TABLETOP-PASSPORT-SEED; forbids core promotion.
 
 ### D0-E8-COLDEA-ANCHOR-001
 
@@ -2992,6 +2979,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure. [was:CERT-CANDIDATE]
 
+### D0-DUSTY-PLASMA-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_dusty_plasma_d0_mapping.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [8C orphan-harvest] self-declared TABLETOP-PASSPORT-SEED; forbids core promotion. [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: the cert is a status-discipline + analogy-dictionary check (asserts the mapping is analogy-not-identity and the status is not in the core/closed forbidden set), NOT an external-data comparison -- it loads no data and all three phi^-2/log(phi) predictions are EXTERNAL_EXPERIMENT_REQUIRED (protocol not run). BOOK_05 §05.20: a pre-registration SEED may not be promoted to EMPIRICAL-PASSPORT on protocol grounds alone. The numeric VALUE confrontation awaits the tabletop experiment (DOI 10.1063/5.0310772).
+
 ### D0-EDGE-002
 
 - type: `frontier`
@@ -3055,7 +3055,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_icecube_hese_baseline_comparison.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Cert rewritten from fake-PASS stub to a data-gated propagator (loads recorded HESE summary; cross-checks manifest sha256/local_path cache). Live verdict SKIP - external HESE cache absent (cache dir missing); cert gates on file presence + sha256 not the manifest status field; recorded baseline verdict FAIL (no-deco null matches/beats tiny D0 damping). OWNER-DECISION-NEEDED: prior PYTHON_CERTIFIED was earned by the removed stub - demote lean_status to OPEN (no passing cert; empirical-passport pending external data).
+- notes: Cert rewritten from fake-PASS stub to a data-gated propagator (loads recorded HESE summary; cross-checks manifest sha256/local_path cache). Live verdict SKIP - external HESE cache absent (cache dir missing); cert gates on file presence + sha256 not the manifest status field; recorded baseline verdict FAIL (no-deco null matches/beats tiny D0 damping). Demoted PYTHON_CERTIFIED/EMPIRICAL-PASSPORT -> OPEN/PROOF-TARGET (prior pass was the removed stub; empirical passport pending external data).
 
 ### D0-PASSPORT-LIGO-CATALOG-001
 

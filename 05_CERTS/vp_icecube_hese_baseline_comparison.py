@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
-"""D0-PASSPORT-ICECUBE-HESE-001 - IceCube HESE baseline comparison (EMPIRICAL-PASSPORT).
+"""D0-PASSPORT-ICECUBE-HESE-001 - IceCube HESE baseline comparison.
 
-This certificate does NOT assert a physics result and CANNOT promote the claim to core.
-It is a *propagator/verifier* of the pre-registered IceCube HESE baseline-comparison
-analysis: it loads the recorded summary artifacts, cross-checks that the external HESE data
-backing them is actually pinned (every manifest cache file present AND sha256-matching), and
-emits the honest PASS/FAIL/SKIP token that matches the recorded analysis. It can FAIL: a FAIL
-verdict or a corrupt/over-claiming artifact returns a non-zero exit.
+Registry: lean_status OPEN, release_status PROOF-TARGET (empirical passport pending external
+data). This certificate does NOT assert a physics result and CANNOT promote the claim to core.
+It is a *propagator/verifier* of the pre-registered IceCube HESE baseline-comparison analysis:
+it loads the recorded summary artifacts, cross-checks that the external HESE data backing them
+is actually pinned (every manifest cache file present AND sha256-matching), and emits the honest
+PASS/FAIL/SKIP token that matches the recorded analysis. It can FAIL: a FAIL verdict or a
+corrupt/over-claiming artifact returns a non-zero exit.
+
+FORM vs VALUE (house style):
+  FORM  = selftest(): always-run, data-independent assertions that the can-FAIL machinery is
+          sound (the PASS gate rejects no-data, rejects a recorded FAIL, rejects a no-improvement
+          PASS). selftest() RAISES on any regression, so the cert can never silently rot.
+  VALUE = main(): data-gated. Readiness is derived from the REAL cache (re-hash of local_path vs
+          the pinned sha256 + file presence), NEVER from the manifest's hand-set status field.
+          No-data ⇒ SKIP_*_EXTERNAL_DATA_REQUIRED; PASS is reserved for a real data run.
 
 ================  PRE-REGISTRATION  (per 08_PASSPORTS/IceCube/icecube_baseline_protocol.md)
 
@@ -117,6 +126,16 @@ def load_json(path: Path) -> dict[str, Any] | None:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def would_pass(baseline: dict[str, Any] | None, data_present: bool) -> bool:
+    """The single PASS gate. PASS requires: data pinned AND recorded status PASS AND the
+    frozen D0 curve strictly improves BOTH declared statistics. Anything else is not a PASS."""
+    if not data_present or not baseline:
+        return False
+    if baseline.get("status") != PASS_TOKEN:
+        return False
+    return float(baseline["delta_loglik"]) > 0.0 and float(baseline["delta_chi2"]) < 0.0
+
+
 def check_cache_files(manifest: dict[str, Any]) -> tuple[bool, list[dict[str, Any]]]:
     """Return (data_present, per-file report). data_present is True ONLY when every declared
     cache file exists AND its sha256 matches the manifest. Missing manifest['files'] => not
@@ -147,18 +166,26 @@ def check_cache_files(manifest: dict[str, Any]) -> tuple[bool, list[dict[str, An
     return all_ok, report
 
 
-def would_pass(baseline: dict[str, Any] | None, data_present: bool) -> bool:
-    """The single PASS gate. PASS requires: data pinned AND recorded status PASS AND the
-    frozen D0 curve strictly improves BOTH declared statistics. Anything else is not a PASS."""
-    if not data_present or not baseline:
-        return False
-    if baseline.get("status") != PASS_TOKEN:
-        return False
-    return float(baseline["delta_loglik"]) > 0.0 and float(baseline["delta_chi2"]) < 0.0
+def selftest() -> None:
+    """FORM gate (always run, data-independent): the can-FAIL machinery itself must be sound.
+    Raises AssertionError on any regression so the cert can never silently rot into a stub."""
+    assert PASS_TOKEN.startswith("PASS_") and FAIL_TOKEN.startswith("FAIL_")
+    assert SKIP_DATA_TOKEN.startswith("SKIP_") and SKIP_BASELINE_TOKEN.startswith("SKIP_")
+    assert len({PASS_TOKEN, FAIL_TOKEN, SKIP_DATA_TOKEN, SKIP_BASELINE_TOKEN}) == 4, "tokens must be distinct"
+    # synthetic fixtures exercise every edge of the PASS gate (no external data needed):
+    rec_pass = {"status": PASS_TOKEN, "delta_loglik": 0.5, "delta_chi2": -0.5}
+    rec_pass_no_gain = {"status": PASS_TOKEN, "delta_loglik": -0.5, "delta_chi2": 0.5}
+    rec_fail = {"status": FAIL_TOKEN, "delta_loglik": 0.003, "delta_chi2": -0.004}
+    assert would_pass(rec_pass, True) is True, "FORM: a genuine improvement with pinned data must PASS"
+    assert would_pass(rec_pass, False) is False, "FORM control A: PASS may never be claimed without data"
+    assert would_pass(rec_fail, True) is False, "FORM control C: a recorded FAIL must never upgrade to PASS"
+    assert would_pass(rec_pass_no_gain, True) is False, "FORM: a PASS status with no improvement must be rejected"
+    assert would_pass(None, True) is False, "FORM: a missing summary cannot PASS"
 
 
 def main() -> int:
     print("=== D0-PASSPORT-ICECUBE-HESE-001  IceCube HESE baseline comparison ===")
+    selftest()  # FORM gate first: refuse to run if the can-FAIL machinery has regressed
 
     # ---- load artifacts (schema guillotine) -----------------------------------------
     manifest = load_json(MANIFEST_PATH)
@@ -209,20 +236,19 @@ def main() -> int:
     print(verdict)
     print(f"reason: {reason}")
 
-    # ---- negative controls (the guillotine; must hold for every run) ------------------
+    # ---- runtime negative controls (the guillotine on THIS run's actual inputs) -------
     assert (verdict != PASS_TOKEN) or data_present, "control A: PASS may never be emitted without pinned data"
-    assert not would_pass(baseline, False), "control B: PASS gate must reject when data are absent"
     if baseline is not None and baseline["status"] == FAIL_TOKEN:
         assert not would_pass(baseline, True), "control C: a recorded FAIL must never upgrade to PASS"
-    print("CONTROL_OK: data-gate, no-data-reject, no-FAIL-upgrade")
+    print("CONTROL_OK: FORM selftest passed; data-gate + no-FAIL-upgrade hold on this run")
 
     # ---- honesty / cross-checks (named boundaries; no PASS_/FAIL_/SKIP_ wordstarts) ---
     if ready_contradicted:
         print(f"HONEST_MANIFEST_READY_CONTRADICTED_BY_DISK: missing={missing} hash_mismatch={hash_mismatch}")
     print(f"HONEST_RECORDED_BASELINE_STATUS: {baseline['status'] if baseline else 'absent'} (reported, not re-derived)")
     print(
-        "HONEST_EMPIRICAL_PASSPORT_NON_PROMOTABLE: this cert never lifts the claim to core; "
-        "external data only constrain the frozen D0 phason-decoherence passport"
+        "HONEST_PROOF_TARGET_NON_PROMOTABLE: this cert never lifts the claim to core; external "
+        "data only constrain the frozen D0 phason-decoherence passport once pinned"
     )
     if phason is not None:
         print(f"HONEST_PHASON_SUMMARY_STATUS: {phason.get('status', 'unknown')}")

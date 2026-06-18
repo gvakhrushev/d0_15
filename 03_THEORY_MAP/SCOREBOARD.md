@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4207 / 5158 (**81.6%** of track-fair max)
-- **Core spine:** 3632 / 4560 (headroom **928** points to take every core claim to L5)
+- **Realized strength:** 4202 / 5171 (**81.3%** of track-fair max)
+- **Core spine:** 3634 / 4580 (headroom **946** points to take every core claim to L5)
 - Claims: 286 active (288 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -73,6 +73,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-QUANT-MET-004` | frontier | 0 | HYP | 2 |
 | `D0-SPECTRAL-EINSTEIN-001` | frontier | 0 | HYP | 2 |
 | `D0-HODGE-LINKS-001` | frontier | 0 | HYP | 2 |
+| `D0-DUSTY-PLASMA-001` | frontier | 0 | HYP | 2 |
 | `D0-PASSPORT-DESI-BAO-001` | frontier | 0 | HYP | 2 |
 | `D0-PASSPORT-ICECUBE-HESE-001` | frontier | 0 | HYP | 2 |
 | `D0-PASSPORT-LIGO-CATALOG-001` | frontier | 0 | HYP | 2 |
@@ -84,15 +85,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-ARCHIVE-ENTROPY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-DM-CLASSICALITY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | formal_core | 173 | 2785 | 3261 | 471 |
-| frontier | 16 | 32 | 320 | 288 |
-| empirical_passport | 22 | 219 | 281 | 57 |
+| frontier | 17 | 34 | 340 | 306 |
+| empirical_passport | 21 | 212 | 274 | 57 |
 | smooth_geometry | 18 | 272 | 315 | 39 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
@@ -108,7 +108,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 |---|--:|--:|--:|--:|
 | BOOK_08 | 47 | 732 | 855 | 119 |
 | BOOK_04 | 47 | 708 | 871 | 158 |
-| BOOK_07 | 48 | 655 | 865 | 200 |
+| BOOK_07 | 48 | 650 | 878 | 218 |
 | BOOK_01 | 15 | 223 | 278 | 55 |
 | BOOK_06 | 13 | 221 | 242 | 21 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |

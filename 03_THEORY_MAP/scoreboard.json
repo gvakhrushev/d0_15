@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 4207,
-    "track_fair_max": 5158,
-    "pct_strength": 81.6,
-    "core_realized": 3632,
-    "core_potential": 4560,
-    "core_headroom": 928,
+    "realized": 4202,
+    "track_fair_max": 5171,
+    "pct_strength": 81.3,
+    "core_realized": 3634,
+    "core_potential": 4580,
+    "core_headroom": 946,
     "n_claims": 288,
     "n_active": 286,
     "duplicates": [],
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 22,
-      "realized": 219,
-      "max": 281,
+      "n": 21,
+      "realized": 212,
+      "max": 274,
       "core_headroom": 57
     },
     "cosmology": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 16,
-      "realized": 32,
-      "max": 320,
-      "core_headroom": 288
+      "n": 17,
+      "realized": 34,
+      "max": 340,
+      "core_headroom": 306
     }
   },
   "by_book": {
@@ -149,9 +149,9 @@
     },
     "BOOK_07": {
       "n": 48,
-      "realized": 655,
-      "max": 865,
-      "core_headroom": 200
+      "realized": 650,
+      "max": 878,
+      "core_headroom": 218
     },
     "BOOK_06/08": {
       "n": 4,
@@ -1012,6 +1012,16 @@
       "effort": "write cert scaffold"
     },
     {
+      "claim_id": "D0-DUSTY-PLASMA-001",
+      "domain": "frontier",
+      "book": "BOOK_07",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
       "claim_id": "D0-PASSPORT-DESI-BAO-001",
       "domain": "frontier",
       "book": "BOOK_08",
@@ -1149,6 +1159,13 @@
     },
     {
       "claim_id": "D0-HODGE-LINKS-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-DUSTY-PLASMA-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -4232,14 +4249,14 @@
     },
     {
       "claim_id": "D0-DUSTY-PLASMA-001",
-      "track": "PASSPORT",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "empirical_passport",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
