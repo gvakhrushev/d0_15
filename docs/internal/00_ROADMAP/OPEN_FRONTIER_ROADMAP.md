@@ -20,7 +20,7 @@ finite / D0-closeable real next theory work. **P2** = sharpenable but needs a ne
 owners (cited edges, not a D0 action). **P5** = Mathlib-blocked (wait for the formal kernel). **P6** =
 hygiene / owner-decision.
 
-_Last synced: 2026-06-17 (Iteration 21). Registry: 288 claims, strength 4217/5114 (82.5%), integrity
+_Last synced: 2026-06-18 (Iteration 21-22). Registry: 294 claims, strength 4239/5308 (79.9%), integrity
 demotions 0. Status mix: 162 CORE-FORMALIZED · 50 CERT-CLOSED · 20 BRIDGE-ASSUMPTIONS-EXPLICIT ·
 16 EMPIRICAL-PASSPORT · 13 PROOF-TARGET · 16 NO_GO/NO-GO · 5 CORE_BRIDGE_SPLIT · 3 BRIDGE-CALIBRATION ·
 2 DEPRECATED · 1 EXTERNAL-BACKGROUND._
@@ -28,6 +28,8 @@ demotions 0. Status mix: 162 CORE-FORMALIZED · 50 CERT-CLOSED · 20 BRIDGE-ASSU
 ---
 
 ## ★ Priority summary — what to do next (by importance)
+
+**Iteration 22 — D0-core closure sprint (done).** Enacted the bridge-compression strategy: a new status `PASSPORT-CLOSED` + the `D0-BRIDGE-COMPRESSION-001` rule (a bridge over a frozen internal object is packaging, not open debt). Closed at the finite/profinite level: `D0-PHI-LADDER-SEMIGROUP-001` (continuous envelope cocycle -> Lean), `D0-PHI-CYLINDER-TRACE-UNIQUE-001` (Perron unique cylinder trace = golden split), `D0-ALPHA-MU2-FULL-LEDGER-001` (mu2 carrier = full Λ*(V11) as a D0-internal M1 selector). Compressed to `PASSPORT-CLOSED`: the C* crossed-product (`D0-PHI-CSTAR-PASSPORT-001`), neutrino mass (`D0-NEUTRINO-MASS-PASSPORT-001`), smooth manifold (`D0-SMOOTH-MANIFOLD-PASSPORT-001`). REUSED (already closed, not duplicated): mu1/alpha_alg/Delta_alpha (CORE), the gauge finite step-cost gap (`D0-MASSGAP-COSTQUANTUM-001`, NOT the Clay operator gap), the Sturmian/cylinder symbolic coincidence (`vp_quasicrystal_time_sturmian.py` + `D0-ADLER-WEISS-PARTITION-OWNER-001`). Left honestly OPEN (verify-then-promote): baryon `eta=3*delta0` (the TickS3 three-zone forcing is not on disk -> PROOF-TARGET) and the lepton raw-graph coefficient owner (no raw operator yet -> PROOF-TARGET).
 
 1. **P0 · Make the gate fully green (infrastructure debt).** The theory is honest and the core build
    is green, but ~5–6 `check_v14_*_sync` guards still fail on **book-staleness** + one **missing Lean
