@@ -1,5 +1,6 @@
 import D0.Core.Phi
 import D0.Dynamics.PisotContraction
+import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Tactic
 
 /-!
@@ -53,5 +54,45 @@ theorem continuum_from_fractal_tick_cert :
     (0 < phi⁻¹ ∧ phi⁻¹ < 1) :=
   ⟨ladder_constant_ratio, ladder_substrate_conserved, ladder_rate_eq_primitiveRoot,
    ladder_rate_mem_unit⟩
+
+/-! ## Continuous envelope of the discrete tick ladder (φ-ladder as the first internal continuum)
+
+The continuum parameter in D0 is NOT an externally imported real coordinate: it is the unique
+multiplicative (cocycle) envelope of the certified discrete φ-tick. BOOK_02 §02.41 ("Semigroup
+Uniqueness Theorem", `A(s+t)=A(s)A(t)/A₀`) and BOOK_06 §06.v15 (`A(s)=A₀·e^{−s·logφ}`) state this in
+prose / the cert (`vp_continuum_from_fractal_tick.py`); the two theorems below lift it into Lean. This
+is the Gate-0 "first continuum"; it is NOT the smooth-manifold limit (that stays the Rieffel/GHP +
+Connes owner-edge, `D0-RIEFFEL-GHP-CONTINUUM-OWNER-001`). -/
+
+/-- Continuous scale envelope `A(t) = A₀·exp(−t·log φ)`, the real-parameter extension of the discrete
+ladder `Aₙ = A₀·(1/φ)ⁿ`. -/
+noncomputable def envAmount (A0 t : ℝ) : ℝ := A0 * Real.exp (-(t * Real.log phi))
+
+/-- **Semigroup / cocycle law** (BOOK_02 §02.41, lifted to Lean): for `A₀ ≠ 0`,
+`A(s+t) = A(s)·A(t)/A₀`. The unique multiplicative one-parameter extension of the φ-tick. -/
+theorem env_cocycle (A0 s t : ℝ) (hA0 : A0 ≠ 0) :
+    envAmount A0 (s + t) = envAmount A0 s * envAmount A0 t / A0 := by
+  unfold envAmount
+  rw [show -((s + t) * Real.log phi) = (-(s * Real.log phi)) + (-(t * Real.log phi)) by ring,
+      Real.exp_add]
+  field_simp
+
+/-- The envelope restricts on the integers to the certified discrete ladder: `A(n) = A₀·(1/φ)ⁿ`. So the
+continuum envelope and the finite tick ladder are the same object seen continuously vs discretely. -/
+theorem env_restricts_to_ladder (A0 : ℝ) (n : ℕ) :
+    envAmount A0 (n : ℝ) = A0 * ladderAmount n := by
+  have hpos : (0 : ℝ) < phi := by unfold phi; positivity
+  unfold envAmount ladderAmount
+  rw [show -((n : ℝ) * Real.log phi) = (n : ℝ) * (-(Real.log phi)) by ring,
+      Real.exp_nat_mul, Real.exp_neg, Real.exp_log hpos]
+
+/-- **Continuum-envelope cert (Lean leg of D0-IM-003).** The φ-ladder is the internal discrete↔continuum
+bridge: the continuous envelope obeys the multiplicative cocycle and restricts on integers to the
+certified discrete tick ladder. (The matrix-exponential `M_tick = exp(G)` identity and the "this IS the
+physical/smooth continuum limit" reading stay the owner-edge residual, not claimed here.) -/
+theorem continuum_envelope_cert :
+    (∀ A0 s t : ℝ, A0 ≠ 0 → envAmount A0 (s + t) = envAmount A0 s * envAmount A0 t / A0) ∧
+    (∀ A0 : ℝ, ∀ n : ℕ, envAmount A0 (n : ℝ) = A0 * ladderAmount n) :=
+  ⟨env_cocycle, env_restricts_to_ladder⟩
 
 end D0.IM

@@ -35,16 +35,20 @@ CERTS = ROOT / "05_CERTS"
 # ramification, v1132 gauge-matter, v1143 return-windows, v1145 operator-triple). A later pass
 # removed vp_icecube_hese_baseline_comparison.py: it is no longer a print-stub but a data-gated
 # propagator cert (loads the recorded IceCube HESE summary, cross-checks the manifest sha256/
-# local_path cache exists, emits SKIP/FAIL/PASS with asserts + a non-zero FAIL exit). The names
-# below are the genuine non-gatable residue: 2 pure proxies (delegate to another cert), 1 search
-# declaration, and empirical-passport templates whose only content is external-data comparison
-# (no data loaded ⇒ nothing finite to gate). These are owner-decision; the set must only SHRINK.
-GRANDFATHER = {
-    "vp_canonical_operator_search.py",
-    "vp_generation_overlap_response_origin.py",
-    "vp_meson_positive_defect_transfer.py",
-    "vp_qnm_delta0_overtone_ladder.py",
-}
+# local_path cache exists, emits SKIP/FAIL/PASS with asserts + a non-zero FAIL exit). The
+# Iteration-21 honesty sweep then cleared the entire remaining residue to real can-FAIL certs
+# (verdict token first, asserts + negative controls):
+#   - vp_canonical_operator_search.py  : exact complete-tripartite Laplacian spectrum gate
+#                                        (negative search result; phi-cluster rule unreachable).
+#   - vp_qnm_delta0_overtone_ladder.py : NO-GO passport gate; absent inputs -> NO_GO (exit 0),
+#                                        present-but-malformed preregistered inputs RAISE.
+#   - vp_sparc_hull_boundary_response_kernel.py : seam-gap FORM (can-FAIL) + data-gated SPARC VALUE.
+#   - vp_meson_positive_defect_transfer.py / vp_generation_overlap_response_origin.py : public
+#     aliases that now PROPAGATE their delegate cert's exit code (and independently re-gate the
+#     core invariant) instead of swallowing the delegate's failure machinery.
+# GRANDFATHER is now EMPTY: every registered cert can FAIL. Keep it so — a new print-stub must be
+# rewritten to gate, never re-added here.
+GRANDFATHER: set[str] = set()
 
 # evidence that a cert can fail: a real failing branch — an assertion, a non-entry raise,
 # a conditional non-zero exit, or the `ok=False ... return 0 if ok else 1` idiom.
