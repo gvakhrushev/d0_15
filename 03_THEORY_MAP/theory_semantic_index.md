@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 75
+- `CERT-CLOSED`: 82
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -16,29 +16,29 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `NO-GO`: 11
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 5
-- `PROOF-TARGET`: 27
+- `PROOF-TARGET`: 33
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 86
+- `certificate`: 93
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 27
+- `frontier`: 33
 - `no-go`: 19
 
 ## Domain counts
 
-- `cosmology`: 29
-- `empirical_passport`: 25
+- `cosmology`: 31
+- `empirical_passport`: 26
 - `external_background`: 1
-- `formal_core`: 185
-- `frontier`: 27
-- `gauge_bridge`: 20
+- `formal_core`: 186
+- `frontier`: 33
+- `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 26
+- `smooth_geometry`: 28
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -82,6 +82,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] parameter-free internal dark object as additive optical-depth kernel; catalogue is external readout.
 
+### D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ReheatingPercolationOwner`
+- theorem: `connectivity_threshold_owner`
+- cert: `vp_connectivity_threshold_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 four-physics P4] t=0 is a graph CONNECTIVITY THRESHOLD, not a singularity (BOOK_08 §08.49 THE 61.4): the complete tripartite K(9,11,13) (33 vertices) is (strongly) connected, while a sub-threshold edgeless stage is disconnected -- so the transition disconnected->connected is real. Lean D0.Cosmology.ReheatingPercolationOwner.connectivity_threshold_owner; cert vp_connectivity_threshold_owner.py (BFS connectivity; controls: connected-before-threshold rejected; arbitrary threshold rejected; vertex count!=33 rejected).
+
 ### D0-PHASON-PRESSURE-EOS-SCAFFOLD-001
 
 - type: `certificate`
@@ -107,6 +120,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 five-front D] The NEGATIVE dark-energy sign is FORCED by the Galois conjugation sigma:phi->psi of Q(phi)/Q (NOT an inserted minus): the positive archive ratio phi^-1>0 maps to sigma(phi^-1)=psi^-1=-phi<0 (since phi*psi=-1; psi<0). The value is the SPECIFIC field conjugate -phi, provably distinct from the naive negation -phi^-1. Lean D0.Cosmology.PhasonWDESignNormalization.phason_wde_sign_normalization_owner; cert vp_phason_wde_sign_normalization_owner.py (controls: arbitrary-sign-flip / +phi^-1-is-physical / DESI-chooses-sign rejected). The magnitude/normalization |w_DE| stays PROOF-TARGET (D0-PHASON-WZ-EXPLICIT-FUNCTION-001); the finite ratio w_N->+phi^-1 (D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001) is not demoted.
+
+### D0-REHEATING-PERCOLATION-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ReheatingPercolationOwner`
+- theorem: `reheating_is_connectivity_onset`
+- cert: `vp_reheating_percolation_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 four-physics P4] The connectivity transition REPLACES the inflaton: the structure before.connected=false -> after.connected=true (33-vertex scene) is owned. Lean D0.Cosmology.ReheatingPercolationOwner.reheating_is_connectivity_onset; cert vp_reheating_percolation_owner.py (controls: inflaton field imported rejected; 'reheat temperature derived' rejected; before-already-connected rejected). OPERATOR-SCAFFOLD: the transition is owned; the reheating ENERGY budget + rate from the discrete rank evolution stay PROOF-TARGET (D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001).
 
 ### D0-PHASON-WZ-CPL-PASSPORT-001
 
@@ -552,6 +578,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter3 §4] HONEST FORK of two catalog-free ownerships of the dark-energy/S_DE archive window. Cert vp_vacuum_cubic_window.py computes the window-center discriminator that the GOLDEN dossier (0940) recorded as never computed: QUADRATIC branch 160l^2-480l+359 (160=2*Omega8*gamma=2*8*10, det=359/160, eigs 3/2-+sqrt10/40) -> ratio (60-sqrt10)/(60+sqrt10)=0.900; CUBIC branch l^3-359l-2574 (e1=0,e2=-359=-|E|,e3=2574=2*1287=2*|triangles|, = the adjacency characteristic poly owned by D0-MIXING-HIERARCHY-INVERSION-001) -> ratio of the two negative roots |9.758|/|12.079|=0.808. Discriminator: cubic 0.808 vs quadratic 0.900 (separable). HONEST: this is a FORK, NOT a decision — DESI DR3 is the empirical decider and is NOT run here; promoting either branch to the sole core form needs that external survey comparison (BRIDGE), kept out of core by the firewall.
+
+### D0-YUKAWA-SHELL-OVERLAP-MATRIX-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: `D0.Matter.YukawaShellOverlapMatrix`
+- theorem: `yukawa_shell_overlap_scaffold`
+- cert: `vp_yukawa_shell_overlap_matrix.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 four-physics P3] The rank-3 shell-overlap Yukawa tensor on V9(+)V11(+)V13 is a symmetric 3x3 matrix over Q with nonzero off-diagonal overlap (the shells mix; not diagonal). Lean D0.Matter.YukawaShellOverlapMatrix.yukawa_shell_overlap_scaffold; cert vp_yukawa_shell_overlap_matrix.py (controls: rank-1/diagonal overlap rejected; VEV=246 GeV entry rejected; PDG-mass-tuned entry rejected). OPERATOR-SCAFFOLD: gauge-compatibility reuses the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001, CORE); the mass HIERARCHY from the overlap eigenvalues stays PROOF-TARGET (D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001).
 
 ### D0-ALPHA-MEASUREMENT-LIMIT-001
 
@@ -1026,6 +1065,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Entropy-selected archive coupling interface plus finite-stage softmax coupling cert.
+
+### D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.PageCurveFiniteRankOwner`
+- theorem: `information_unitarity_owner`
+- cert: `vp_black_hole_information_unitarity_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 four-physics P2] Global unitarity conserves the total rank (totalRank=activeRank+envRank invariant), so information is transferred, never deleted (the active Page bound stays <= totalRank throughout). Lean D0.Gravity.PageCurveFiniteRankOwner.information_unitarity_owner; cert vp_black_hole_information_unitarity_owner.py (controls: non-unitary rank-dropping step rejected; S_total>D rejected; rank_active down without rank_env up rejected). No infinite-Hilbert assumption.
 
 ### D0-CANONICAL-OP-001
 
@@ -3201,6 +3253,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter22 five-front A] The W_eff(z)=A-B(D-zI)^-1 C block scaffold (rank 3 / dim 30) and the finite-pole-sum residue are owned (D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001, CERT-CLOSED). MISSING (exact): the residue-NORMALIZATION equality Res_D0(W_eff)=Delta_alpha (the seam) via the 2^11 active-archive pairing -- this is the EXTERNAL Dixmier/Wodzicki residue extraction (D0-DIXMIER-RESIDUE-OWNER-001, ASSUMP-DIXMIER-TRACE); the bare zeta-residue route is closed-negative (1/ln phi transcendental, D0.Spectral.DeltaAlphaResidueBlocked). cert vp_alpha_feshbach_dixmier_owner.py. Status PROOF-TARGET; no CODATA alpha enters. Existing internal alpha closures (D0-ALPHA-ALG-CLOSED-001, D0-DELTA-ALPHA-SEAM-CLOSED-001) are NOT demoted.
 
+### D0-CMB-PHASON-SPECTRUM-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_cmb_phason_spectrum_owner.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 four-physics P4] The CMB-like spectrum is claimed to come from the archive graph Laplacian spectrum, NOT a Planck fit. MISSING (exact): the formula n_s = f({lambda_i} of the Laplacian). The Laplacian-spectrum INPUT is internal (D0-ARCHIVE-LAPLACIAN-001 CORE); n_s is not yet derived. cert vp_cmb_phason_spectrum_owner.py (controls: 'Planck n_s=0.965 used as input' rejected; CMB spectrum without the Laplacian rejected; survey-fit promoted to core rejected). PROOF-TARGET; the Planck comparison is passport-only.
+
 ### D0-CVFT-001B
 
 - type: `frontier`
@@ -3305,6 +3370,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter21 OVER-CLAIM FIXED] demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED->PROOF-TARGET/OPEN: the cert reads NO external data and its prior 'falsifier' was a self-referential tautology (def falsified(a,b): return a and b), now removed. The only forced piece (convexity Delta^2 R_n=phi^n(phi-1)^2>0) is already CORE in the sibling D0-PHASON-THAWING-001 (D0.Cosmology.ArchiveConvexity); this row's distinct content is the H0(z)/evolving-w cosmological reading, an unverified diagnostic awaiting a pinned DESI DR2/DR3 w0wa+H0(z) table (cert now emits SKIP_H0_EVOLVING_W_EXTERNAL_DATA_REQUIRED). [Iter4 T5.5] R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.
 
+### D0-HIGGS-PHASON-CONDENSATION-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_higgs_phason_condensation_owner.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 four-physics P3] Higgs as macroscopic phason condensation in the V13/shell geometry. CLOSED already: the three-shell geometry (D0-TORUS-CORE13-GEOMETRY-001) and the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001), both CORE. MISSING (exact): the macroscopic order-parameter EOM deriving the Higgs VEV from the V13 condensation. cert vp_higgs_phason_condensation_owner.py (controls: '246 GeV is CORE' rejected; 'Higgs primitive scalar as core' rejected; VEV-from-SM rejected). The 246 GeV SI bridge stays HYP/passport. PROOF-TARGET.
+
 ### D0-HODGE-LINKS-001
 
 - type: `frontier`
@@ -3317,6 +3395,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The substantive claim (matter and TT gravity on ONE shared finite cochain carrier, coupling FORCED by shared-d/conservation) is architecture-blocked: the matter side is R over archivePhaseIndex/Matrix n n (ArchiveStressRepresentative.lean, EdgeStressCoupling.lean) while the TT side is Q over Fin 4 (FiniteSpin2WaveOperator.lean) -- there is NO shared carrier, unifying them is new architecture. Worse, the d-conservation forcing the honest map needs COLLIDES with an existing internal NO-GO, canonical_stress_conservation_no_go (the symmetrized canonical stress has divergence != 0 in general), so the map cannot be derived off the shelf. Real per-side assets exist (spin2_coupling_depends_only_on_tt_stress, PiTT4_kills_trace/PiTT4_kills_gauge; finite C1 Hodge core vp_finite_hodge_complex_core.py) but do NOT constitute the cross-carrier binding the claim asserts. Jointly open with D0-SPECTRAL-EINSTEIN-001.
+
+### D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_hypercharge_graph_flow_owner.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 four-physics P1] The K(9,11,13) edge-current / divergence-free (Kirchhoff) SCAFFOLD is built (Lean EdgeCurrent structure; a tiny-graph conservation check in the cert). MISSING (exact): a divergence-free EdgeCurrent on K(9,11,13) whose zone-normalized U(1) holonomy trace YIELDS the hypercharge row (qL=1/6,...). cert vp_hypercharge_graph_flow_owner.py (controls: nonzero-divergence current rejected; row-derived claim rejected (scaffold only); SM-table-as-derivation rejected). PROOF-TARGET; no SM charge table imported as proof of origin.
+
+### D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_inflationless_early_universe_owner.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 four-physics P4] t=0 is the connectivity threshold, NOT a singularity (THE 61.4, prose-owned); the threshold-replaces-inflaton structure is the connectivity owner (D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001). MISSING (exact): the precise reheating ENERGY budget + rate from the discrete rank evolution d_V F_N + feedback pressure. cert vp_inflationless_early_universe_owner.py (controls: inflaton inserted rejected; t=0 singularity rejected; arbitrary threshold rejected). PROOF-TARGET; no inflaton, no Planck datum.
 
 ### D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001
 
@@ -3356,6 +3460,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter22 closure-delta] PROOF-TARGET owner-of-the-gap: the 17-digit charged-lepton transfer decimals (r_mu=3.8814..., r_tau=10.3183...) stay HYP (D0-LEPTON-002); the integer Lucas part L11+L4=206 and exponents (0,1/4,1/3) are THE. The MISSING artifact is a raw finite graph/spectral operator from which the decimals are extracted (none exists in registry or 05_CERTS). manifest vp_lepton_raw_graph_owner_manifest.py (can-FAIL: asserts D0-LEPTON-002 stays CERT-CLOSED with decimals HYP, never promoted to THE). Until a raw-graph operator is supplied this stays PROOF-TARGET. [Iter22 frontier-strike] the DIRECT raw-graph->decimal route is RETIRED by D0-BARE-GRAPH-DECIMAL-NOGO-001 (NO-GO): a raw graph operator outputs only Q(phi)/Lucas scene invariants, but the 17-digit r_mu encodes the measured mass via the EFT/IR matching scheme (the exact external datum), so direct extraction is M1-forbidden. Only an INDIRECT derivation could close this general owner; none exists -> stays PROOF-TARGET. Decimals stay HYP (D0-LEPTON-002).
+
+### D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_lepton_yukawa_hierarchy_owner.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 four-physics P3] The charged-lepton Yukawa hierarchy from the shell-overlap eigenvalues + ramification exponents. The exponent row (0,1/4,1/3) is exact THE (D0-LEPTON-002). MISSING (exact): (a) a finite Green function G_shell(lambda) with Puiseux indices provably (0,1/4,1/3); (b) branch-index uniqueness; (c) the external EFT/IR matching functor (ASSUMP-EFT-IR-MATCHING-SCHEME). cert vp_lepton_yukawa_hierarchy_owner.py (controls: 'decimals are CORE/THE' rejected; 'PDG validates Yukawa' rejected; PDG-tuned eigenvalue rejected). Decimals r_mu/r_tau stay HYP; extends D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001. PROOF-TARGET.
 
 ### D0-PASSPORT-DESI-BAO-001
 
@@ -3500,6 +3617,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter21 formula Lean leg in D0.Metrology.PhasonBragg: phi^-2=2-phi + frac(m.phi^-2)=frac(-m.phi) -- dangling module now resolves; the empirical Bragg-spectrum prediction stays the metrology target:]Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]
 
+### D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_sm_hypercharge_minimal_denominator.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 four-physics P1] The minimal common denominator of the row {1/6,-2/3,1/3,-1/2,1,0} is lcm(6,3,3,2,1,1)=6 (verified exactly with Fraction + math.lcm). MISSING (exact): deriving 6 as FORCED by the divergence-free graph-flow solution space (not pasted from the SM). cert vp_sm_hypercharge_minimal_denominator.py (controls: denominator 5/7 is not the minimal common denominator; '6 derived from graph flow' rejected -- only the lcm fact is checked). PROOF-TARGET per the task's own guidance (anomaly checked, denominator-from-flow open).
+
 ### D0-SPECTRAL-EINSTEIN-001
 
 - type: `frontier`
@@ -3567,6 +3697,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] structural filter: dim, gauge rank, 3-generation chiral count, light exotics, terminal shell.
+
+### D0-SM-ANOMALY-CANCELLATION-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `gauge_bridge`
+- book: `BOOK_04`
+- module: `D0.Matter.HyperchargeGraphFlowOwner`
+- theorem: `sm_anomaly_cancellation_owner`
+- cert: `vp_sm_anomaly_cancellation_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 four-physics P1] On the K(9,11,13) carrier (33 vertices) the one-generation hypercharge row (qL=1/6,uRc=-2/3,dRc=1/3,lL=-1/2,eRc=1,nuRc=0, left-handed Weyl convention) is ANOMALY-FREE: grav.U(1), U(1)^3, SU(2)^2.U(1), SU(3)^2.U(1) all vanish (exact rationals). Lean D0.Matter.HyperchargeGraphFlowOwner.sm_anomaly_cancellation_owner CONSOLIDATES the existing CORE D0.Gauge.AnomalySums (D0-GAUGE-MATTER-002) with the K(9,11,13) carrier framing; cert vp_sm_anomaly_cancellation_owner.py (controls: omit eRc -> U(1)^3!=0; denominator-5 charge breaks a sum; SM-table-as-origin rejected). The anomaly-FREE property is a genuine arithmetic fact; the row's graph-flow ORIGIN stays D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001 (PROOF-TARGET).
 
 ### D0-BRAID-VALENCE-U1-001
 
@@ -4034,6 +4177,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 five-front E] The internal graph-refinement contracts at the golden scale delta0=1/(2phi^3) (=(phi^-1-phi^-2)/2), and 0 <= delta0 < 1, so the step-bound series Sum_k C*delta0^k is SUMMABLE (converges to C/(1-delta0)) -- the refinement is GHP-Cauchy for the internal step bound. Lean D0.Geometry.GHPGoldenCauchyBound.ghp_golden_cauchy_owner (delta0_lt_one, ghp_refinement_summable via Mathlib summable_geometric_of_lt_one, ghp_golden_cauchy_bound, ghp_golden_cauchy_sum); cert vp_ghp_golden_cauchy_bound.py (controls: ratio>=1 diverges / delta-chosen-after-target rejected). The smooth-manifold LIMIT stays external (D0-RIEFFEL-GHP-CONTINUUM-OWNER-001 + Connes reconstruction).
+
+### D0-HORIZON-FESHBACH-RADIATION-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_horizon_feshbach_radiation_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 four-physics P2] The Feshbach coupling block B between active(rank 3) and archive(dim 30) is the finite radiation channel: B!=0 and bounded (||B|| finite). cert vp_horizon_feshbach_radiation_owner.py (controls: B==0 rejected; unbounded B rejected; 'Hawking spectrum derived' rejected). OPERATOR-SCAFFOLD: the finite rank-loss MECHANISM is owned; the Hawking emission SPECTRUM / temperature T=kappa/2pi stays EXTERNAL (continuum QFT, ASSUMP-HAWKING-SPECTRUM). Reuses the Feshbach W_eff of D0-GENERATIVE-DYNAMICS-001 / D0-ALPHA-FESHBACH-DIXMIER-OWNER-001.
+
+### D0-PAGE-CURVE-FINITE-RANK-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: `D0.Gravity.PageCurveFiniteRankOwner`
+- theorem: `page_curve_finite_rank_owner`
+- cert: `vp_page_curve_finite_rank_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 four-physics P2] Finite-rank Page bound: with H=H_active(+)H_env, ranks nA,nE, D=nA+nE, the bound pageBound=min(nA,nE) satisfies 0<=S_page=min/D<=1, =0 at a pure state (nE=0), =1/2 at the symmetric Page turn (nA=nE), and rises-then-falls. Lean D0.Gravity.PageCurveFiniteRankOwner.page_curve_finite_rank_owner (Nat.min facts); cert vp_page_curve_finite_rank_owner.py (controls: nA+nE!=D; entropy>min; asymmetric swap; infinite/continuum entropy rejected). Continuum-free; the analytic von Neumann entropy + Hawking spectrum + island formula stay EXTERNAL. Distinct from the static D0-BH-CAPACITY-A4-001 (S=n/4): this is the dynamic rank curve.
 
 ### D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001
 

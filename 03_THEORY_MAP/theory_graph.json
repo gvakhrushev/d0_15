@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 326,
+    "claims": 339,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 75,
+      "CERT-CLOSED": 82,
       "NO-GO": 11,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 27,
+      "PROOF-TARGET": 33,
       "PASSPORT-CLOSED": 5
     },
     "lean_status": {
-      "LEAN_PROVED": 194,
+      "LEAN_PROVED": 200,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 80,
+      "PYTHON_CERTIFIED": 81,
       "DEPRECATED": 2,
-      "OPEN": 29
+      "OPEN": 35
     },
     "claim_type": {
       "core": 163,
       "bridge": 28,
       "no-go": 19,
-      "certificate": 86,
+      "certificate": 93,
       "deprecated": 3,
-      "frontier": 27
+      "frontier": 33
     },
     "domain": {
-      "formal_core": 185,
+      "formal_core": 186,
       "rg": 5,
-      "gauge_bridge": 20,
-      "smooth_geometry": 26,
+      "gauge_bridge": 21,
+      "smooth_geometry": 28,
       "spectral_action": 5,
-      "empirical_passport": 25,
-      "cosmology": 29,
+      "empirical_passport": 26,
+      "cosmology": 31,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 27
+      "frontier": 33
     }
   },
   "nodes": [
@@ -10891,6 +10891,437 @@
       "label": "vp_smooth_manifold_internal_limit.py",
       "path": "05_CERTS/vp_smooth_manifold_internal_limit.py",
       "exists": true
+    },
+    {
+      "id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "type": "certificate",
+      "domain": "gauge_bridge",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.9",
+      "lean_module": "D0.Matter.HyperchargeGraphFlowOwner",
+      "lean_theorem": "sm_anomaly_cancellation_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_sm_anomaly_cancellation_owner.py",
+      "python_cert": [
+        "vp_sm_anomaly_cancellation_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 four-physics P1] On the K(9,11,13) carrier (33 vertices) the one-generation hypercharge row (qL=1/6,uRc=-2/3,dRc=1/3,lL=-1/2,eRc=1,nuRc=0, left-handed Weyl convention) is ANOMALY-FREE: grav.U(1), U(1)^3, SU(2)^2.U(1), SU(3)^2.U(1) all vanish (exact rationals). Lean D0.Matter.HyperchargeGraphFlowOwner.sm_anomaly_cancellation_owner CONSOLIDATES the existing CORE D0.Gauge.AnomalySums (D0-GAUGE-MATTER-002) with the K(9,11,13) carrier framing; cert vp_sm_anomaly_cancellation_owner.py (controls: omit eRc -> U(1)^3!=0; denominator-5 charge breaks a sum; SM-table-as-origin rejected). The anomaly-FREE property is a genuine arithmetic fact; the row's graph-flow ORIGIN stays D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001 (PROOF-TARGET).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeGraphFlowOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.HyperchargeGraphFlowOwner",
+      "kind": "lean_module",
+      "label": "D0.Matter.HyperchargeGraphFlowOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeGraphFlowOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_sm_anomaly_cancellation_owner.py",
+      "kind": "python_cert",
+      "label": "vp_sm_anomaly_cancellation_owner.py",
+      "path": "05_CERTS/vp_sm_anomaly_cancellation_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.9",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_hypercharge_graph_flow_owner.py",
+      "python_cert": [
+        "vp_hypercharge_graph_flow_owner.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 four-physics P1] The K(9,11,13) edge-current / divergence-free (Kirchhoff) SCAFFOLD is built (Lean EdgeCurrent structure; a tiny-graph conservation check in the cert). MISSING (exact): a divergence-free EdgeCurrent on K(9,11,13) whose zone-normalized U(1) holonomy trace YIELDS the hypercharge row (qL=1/6,...). cert vp_hypercharge_graph_flow_owner.py (controls: nonzero-divergence current rejected; row-derived claim rejected (scaffold only); SM-table-as-derivation rejected). PROOF-TARGET; no SM charge table imported as proof of origin.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_hypercharge_graph_flow_owner.py",
+      "kind": "python_cert",
+      "label": "vp_hypercharge_graph_flow_owner.py",
+      "path": "05_CERTS/vp_hypercharge_graph_flow_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "kind": "claim",
+      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.9",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_sm_hypercharge_minimal_denominator.py",
+      "python_cert": [
+        "vp_sm_hypercharge_minimal_denominator.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 four-physics P1] The minimal common denominator of the row {1/6,-2/3,1/3,-1/2,1,0} is lcm(6,3,3,2,1,1)=6 (verified exactly with Fraction + math.lcm). MISSING (exact): deriving 6 as FORCED by the divergence-free graph-flow solution space (not pasted from the SM). cert vp_sm_hypercharge_minimal_denominator.py (controls: denominator 5/7 is not the minimal common denominator; '6 derived from graph flow' rejected -- only the lcm fact is checked). PROOF-TARGET per the task's own guidance (anomaly checked, denominator-from-flow open).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_sm_hypercharge_minimal_denominator.py",
+      "kind": "python_cert",
+      "label": "vp_sm_hypercharge_minimal_denominator.py",
+      "path": "05_CERTS/vp_sm_hypercharge_minimal_denominator.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.53",
+      "lean_module": "D0.Gravity.PageCurveFiniteRankOwner",
+      "lean_theorem": "page_curve_finite_rank_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_page_curve_finite_rank_owner.py",
+      "python_cert": [
+        "vp_page_curve_finite_rank_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 four-physics P2] Finite-rank Page bound: with H=H_active(+)H_env, ranks nA,nE, D=nA+nE, the bound pageBound=min(nA,nE) satisfies 0<=S_page=min/D<=1, =0 at a pure state (nE=0), =1/2 at the symmetric Page turn (nA=nE), and rises-then-falls. Lean D0.Gravity.PageCurveFiniteRankOwner.page_curve_finite_rank_owner (Nat.min facts); cert vp_page_curve_finite_rank_owner.py (controls: nA+nE!=D; entropy>min; asymmetric swap; infinite/continuum entropy rejected). Continuum-free; the analytic von Neumann entropy + Hawking spectrum + island formula stay EXTERNAL. Distinct from the static D0-BH-CAPACITY-A4-001 (S=n/4): this is the dynamic rank curve.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/PageCurveFiniteRankOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gravity.PageCurveFiniteRankOwner",
+      "kind": "lean_module",
+      "label": "D0.Gravity.PageCurveFiniteRankOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Gravity/PageCurveFiniteRankOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_page_curve_finite_rank_owner.py",
+      "kind": "python_cert",
+      "label": "vp_page_curve_finite_rank_owner.py",
+      "path": "05_CERTS/vp_page_curve_finite_rank_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.53",
+      "lean_module": "D0.Gravity.PageCurveFiniteRankOwner",
+      "lean_theorem": "information_unitarity_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_black_hole_information_unitarity_owner.py",
+      "python_cert": [
+        "vp_black_hole_information_unitarity_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 four-physics P2] Global unitarity conserves the total rank (totalRank=activeRank+envRank invariant), so information is transferred, never deleted (the active Page bound stays <= totalRank throughout). Lean D0.Gravity.PageCurveFiniteRankOwner.information_unitarity_owner; cert vp_black_hole_information_unitarity_owner.py (controls: non-unitary rank-dropping step rejected; S_total>D rejected; rank_active down without rank_env up rejected). No infinite-Hilbert assumption.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/PageCurveFiniteRankOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_black_hole_information_unitarity_owner.py",
+      "kind": "python_cert",
+      "label": "vp_black_hole_information_unitarity_owner.py",
+      "path": "05_CERTS/vp_black_hole_information_unitarity_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.53",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_horizon_feshbach_radiation_owner.py",
+      "python_cert": [
+        "vp_horizon_feshbach_radiation_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 four-physics P2] The Feshbach coupling block B between active(rank 3) and archive(dim 30) is the finite radiation channel: B!=0 and bounded (||B|| finite). cert vp_horizon_feshbach_radiation_owner.py (controls: B==0 rejected; unbounded B rejected; 'Hawking spectrum derived' rejected). OPERATOR-SCAFFOLD: the finite rank-loss MECHANISM is owned; the Hawking emission SPECTRUM / temperature T=kappa/2pi stays EXTERNAL (continuum QFT, ASSUMP-HAWKING-SPECTRUM). Reuses the Feshbach W_eff of D0-GENERATIVE-DYNAMICS-001 / D0-ALPHA-FESHBACH-DIXMIER-OWNER-001.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_horizon_feshbach_radiation_owner.py",
+      "kind": "python_cert",
+      "label": "vp_horizon_feshbach_radiation_owner.py",
+      "path": "05_CERTS/vp_horizon_feshbach_radiation_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "kind": "claim",
+      "claim_id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.10",
+      "lean_module": "D0.Matter.YukawaShellOverlapMatrix",
+      "lean_theorem": "yukawa_shell_overlap_scaffold",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_yukawa_shell_overlap_matrix.py",
+      "python_cert": [
+        "vp_yukawa_shell_overlap_matrix.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 four-physics P3] The rank-3 shell-overlap Yukawa tensor on V9(+)V11(+)V13 is a symmetric 3x3 matrix over Q with nonzero off-diagonal overlap (the shells mix; not diagonal). Lean D0.Matter.YukawaShellOverlapMatrix.yukawa_shell_overlap_scaffold; cert vp_yukawa_shell_overlap_matrix.py (controls: rank-1/diagonal overlap rejected; VEV=246 GeV entry rejected; PDG-mass-tuned entry rejected). OPERATOR-SCAFFOLD: gauge-compatibility reuses the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001, CORE); the mass HIERARCHY from the overlap eigenvalues stays PROOF-TARGET (D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/YukawaShellOverlapMatrix.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.YukawaShellOverlapMatrix",
+      "kind": "lean_module",
+      "label": "D0.Matter.YukawaShellOverlapMatrix",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/YukawaShellOverlapMatrix.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_yukawa_shell_overlap_matrix.py",
+      "kind": "python_cert",
+      "label": "vp_yukawa_shell_overlap_matrix.py",
+      "path": "05_CERTS/vp_yukawa_shell_overlap_matrix.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.10",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_higgs_phason_condensation_owner.py",
+      "python_cert": [
+        "vp_higgs_phason_condensation_owner.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 four-physics P3] Higgs as macroscopic phason condensation in the V13/shell geometry. CLOSED already: the three-shell geometry (D0-TORUS-CORE13-GEOMETRY-001) and the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001), both CORE. MISSING (exact): the macroscopic order-parameter EOM deriving the Higgs VEV from the V13 condensation. cert vp_higgs_phason_condensation_owner.py (controls: '246 GeV is CORE' rejected; 'Higgs primitive scalar as core' rejected; VEV-from-SM rejected). The 246 GeV SI bridge stays HYP/passport. PROOF-TARGET.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_higgs_phason_condensation_owner.py",
+      "kind": "python_cert",
+      "label": "vp_higgs_phason_condensation_owner.py",
+      "path": "05_CERTS/vp_higgs_phason_condensation_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.10",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_lepton_yukawa_hierarchy_owner.py",
+      "python_cert": [
+        "vp_lepton_yukawa_hierarchy_owner.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 four-physics P3] The charged-lepton Yukawa hierarchy from the shell-overlap eigenvalues + ramification exponents. The exponent row (0,1/4,1/3) is exact THE (D0-LEPTON-002). MISSING (exact): (a) a finite Green function G_shell(lambda) with Puiseux indices provably (0,1/4,1/3); (b) branch-index uniqueness; (c) the external EFT/IR matching functor (ASSUMP-EFT-IR-MATCHING-SCHEME). cert vp_lepton_yukawa_hierarchy_owner.py (controls: 'decimals are CORE/THE' rejected; 'PDG validates Yukawa' rejected; PDG-tuned eigenvalue rejected). Decimals r_mu/r_tau stay HYP; extends D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001. PROOF-TARGET.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_lepton_yukawa_hierarchy_owner.py",
+      "kind": "python_cert",
+      "label": "vp_lepton_yukawa_hierarchy_owner.py",
+      "path": "05_CERTS/vp_lepton_yukawa_hierarchy_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.52",
+      "lean_module": "D0.Cosmology.ReheatingPercolationOwner",
+      "lean_theorem": "connectivity_threshold_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_connectivity_threshold_owner.py",
+      "python_cert": [
+        "vp_connectivity_threshold_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 four-physics P4] t=0 is a graph CONNECTIVITY THRESHOLD, not a singularity (BOOK_08 §08.49 THE 61.4): the complete tripartite K(9,11,13) (33 vertices) is (strongly) connected, while a sub-threshold edgeless stage is disconnected -- so the transition disconnected->connected is real. Lean D0.Cosmology.ReheatingPercolationOwner.connectivity_threshold_owner; cert vp_connectivity_threshold_owner.py (BFS connectivity; controls: connected-before-threshold rejected; arbitrary threshold rejected; vertex count!=33 rejected).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/ReheatingPercolationOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.ReheatingPercolationOwner",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.ReheatingPercolationOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/ReheatingPercolationOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_connectivity_threshold_owner.py",
+      "kind": "python_cert",
+      "label": "vp_connectivity_threshold_owner.py",
+      "path": "05_CERTS/vp_connectivity_threshold_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.52",
+      "lean_module": "D0.Cosmology.ReheatingPercolationOwner",
+      "lean_theorem": "reheating_is_connectivity_onset",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_reheating_percolation_owner.py",
+      "python_cert": [
+        "vp_reheating_percolation_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 four-physics P4] The connectivity transition REPLACES the inflaton: the structure before.connected=false -> after.connected=true (33-vertex scene) is owned. Lean D0.Cosmology.ReheatingPercolationOwner.reheating_is_connectivity_onset; cert vp_reheating_percolation_owner.py (controls: inflaton field imported rejected; 'reheat temperature derived' rejected; before-already-connected rejected). OPERATOR-SCAFFOLD: the transition is owned; the reheating ENERGY budget + rate from the discrete rank evolution stay PROOF-TARGET (D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/ReheatingPercolationOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_reheating_percolation_owner.py",
+      "kind": "python_cert",
+      "label": "vp_reheating_percolation_owner.py",
+      "path": "05_CERTS/vp_reheating_percolation_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_08",
+      "section": "08.52",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cmb_phason_spectrum_owner.py",
+      "python_cert": [
+        "vp_cmb_phason_spectrum_owner.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 four-physics P4] The CMB-like spectrum is claimed to come from the archive graph Laplacian spectrum, NOT a Planck fit. MISSING (exact): the formula n_s = f({lambda_i} of the Laplacian). The Laplacian-spectrum INPUT is internal (D0-ARCHIVE-LAPLACIAN-001 CORE); n_s is not yet derived. cert vp_cmb_phason_spectrum_owner.py (controls: 'Planck n_s=0.965 used as input' rejected; CMB spectrum without the Laplacian rejected; survey-fit promoted to core rejected). PROOF-TARGET; the Planck comparison is passport-only.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_cmb_phason_spectrum_owner.py",
+      "kind": "python_cert",
+      "label": "vp_cmb_phason_spectrum_owner.py",
+      "path": "05_CERTS/vp_cmb_phason_spectrum_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_08",
+      "section": "08.52",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_inflationless_early_universe_owner.py",
+      "python_cert": [
+        "vp_inflationless_early_universe_owner.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 four-physics P4] t=0 is the connectivity threshold, NOT a singularity (THE 61.4, prose-owned); the threshold-replaces-inflaton structure is the connectivity owner (D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001). MISSING (exact): the precise reheating ENERGY budget + rate from the discrete rank evolution d_V F_N + feedback pressure. cert vp_inflationless_early_universe_owner.py (controls: inflaton inserted rejected; t=0 singularity rejected; arbitrary threshold rejected). PROOF-TARGET; no inflaton, no Planck datum.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_inflationless_early_universe_owner.py",
+      "kind": "python_cert",
+      "label": "vp_inflationless_early_universe_owner.py",
+      "path": "05_CERTS/vp_inflationless_early_universe_owner.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -15467,6 +15898,201 @@
     {
       "source": "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001",
       "target": "cert:vp_smooth_manifold_internal_limit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "target": "domain:gauge_bridge",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "target": "module:D0.Matter.HyperchargeGraphFlowOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "target": "cert:vp_sm_anomaly_cancellation_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "target": "cert:vp_hypercharge_graph_flow_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "target": "cert:vp_sm_hypercharge_minimal_denominator.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "target": "module:D0.Gravity.PageCurveFiniteRankOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "target": "cert:vp_page_curve_finite_rank_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "target": "module:D0.Gravity.PageCurveFiniteRankOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "target": "cert:vp_black_hole_information_unitarity_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "target": "cert:vp_horizon_feshbach_radiation_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "target": "module:D0.Matter.YukawaShellOverlapMatrix",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "target": "cert:vp_yukawa_shell_overlap_matrix.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "target": "cert:vp_higgs_phason_condensation_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "target": "cert:vp_lepton_yukawa_hierarchy_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "target": "module:D0.Cosmology.ReheatingPercolationOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "target": "cert:vp_connectivity_threshold_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "target": "module:D0.Cosmology.ReheatingPercolationOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "target": "cert:vp_reheating_percolation_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "target": "cert:vp_cmb_phason_spectrum_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "target": "cert:vp_inflationless_early_universe_owner.py",
       "kind": "certified_by"
     }
   ]

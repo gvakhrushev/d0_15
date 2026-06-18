@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 4463,
-    "track_fair_max": 5906,
-    "pct_strength": 75.6,
-    "core_realized": 3869,
-    "core_potential": 5280,
-    "core_headroom": 1411,
-    "n_claims": 326,
-    "n_active": 324,
+    "realized": 4554,
+    "track_fair_max": 6166,
+    "pct_strength": 73.9,
+    "core_realized": 3960,
+    "core_potential": 5540,
+    "core_headroom": 1580,
+    "n_claims": 339,
+    "n_active": 337,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 184,
-      "realized": 2872,
-      "max": 3473,
-      "core_headroom": 591
+      "n": 185,
+      "realized": 2884,
+      "max": 3493,
+      "core_headroom": 599
     },
     "rg": {
       "n": 5,
@@ -44,16 +44,16 @@
       "core_headroom": 8
     },
     "gauge_bridge": {
-      "n": 19,
-      "realized": 301,
-      "max": 314,
-      "core_headroom": 13
+      "n": 20,
+      "realized": 313,
+      "max": 334,
+      "core_headroom": 21
     },
     "smooth_geometry": {
-      "n": 26,
-      "realized": 333,
-      "max": 449,
-      "core_headroom": 112
+      "n": 28,
+      "realized": 352,
+      "max": 489,
+      "core_headroom": 133
     },
     "spectral_action": {
       "n": 5,
@@ -62,16 +62,16 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 25,
-      "realized": 250,
-      "max": 371,
-      "core_headroom": 112
+      "n": 26,
+      "realized": 262,
+      "max": 391,
+      "core_headroom": 120
     },
     "cosmology": {
-      "n": 29,
-      "realized": 501,
-      "max": 551,
-      "core_headroom": 50
+      "n": 31,
+      "realized": 525,
+      "max": 591,
+      "core_headroom": 66
     },
     "external_background": {
       "n": 1,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 27,
-      "realized": 54,
-      "max": 540,
-      "core_headroom": 486
+      "n": 33,
+      "realized": 66,
+      "max": 660,
+      "core_headroom": 594
     }
   },
   "by_book": {
@@ -148,10 +148,10 @@
       "core_headroom": 80
     },
     "BOOK_07": {
-      "n": 52,
-      "realized": 683,
-      "max": 936,
-      "core_headroom": 239
+      "n": 55,
+      "realized": 714,
+      "max": 996,
+      "core_headroom": 268
     },
     "BOOK_06/08": {
       "n": 4,
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 56,
-      "realized": 766,
-      "max": 1030,
-      "core_headroom": 254
+      "n": 62,
+      "realized": 798,
+      "max": 1150,
+      "core_headroom": 342
     },
     "BOOK_04/08": {
       "n": 7,
@@ -172,10 +172,10 @@
       "core_headroom": 88
     },
     "BOOK_08": {
-      "n": 55,
-      "realized": 788,
-      "max": 1020,
-      "core_headroom": 228
+      "n": 59,
+      "realized": 816,
+      "max": 1100,
+      "core_headroom": 280
     },
     "BOOK_05/06": {
       "n": 6,
@@ -464,6 +464,46 @@
       "effort": "release-bless to core"
     },
     {
+      "claim_id": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "domain": "smooth_geometry",
+      "book": "BOOK_07",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
       "claim_id": "D0-GENERATIVE-DYNAMICS-001",
       "domain": "rg",
       "book": "BOOK_06",
@@ -517,6 +557,26 @@
       "claim_id": "D0-GHP-GOLDEN-CAUCHY-BOUND-001",
       "domain": "smooth_geometry",
       "book": "BOOK_07",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "domain": "gauge_bridge",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "domain": "empirical_passport",
+      "book": "BOOK_04",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -1154,6 +1214,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "domain": "smooth_geometry",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
       "domain": "frontier",
       "book": "BOOK_06",
@@ -1432,6 +1502,66 @@
       "next": "CERT_SCAFFOLD",
       "points_gained": 2,
       "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
     }
   ],
   "leverage_gaps": [
@@ -1473,6 +1603,34 @@
     {
       "claim_id": "D0-LUCAS-VORONOI-MARKOV-PARTITION-001",
       "domain": "formal_core",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "domain": "smooth_geometry",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "domain": "formal_core",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "domain": "cosmology",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "domain": "cosmology",
       "leverage": 1,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -1661,6 +1819,48 @@
     },
     {
       "claim_id": "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -2108,6 +2308,13 @@
       "score": 7
     },
     {
+      "claim_id": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
       "claim_id": "D0-GENERATIVE-DYNAMICS-001",
       "domain": "rg",
       "leverage": 0,
@@ -2145,6 +2352,20 @@
     {
       "claim_id": "D0-GHP-GOLDEN-CAUCHY-BOUND-001",
       "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "domain": "gauge_bridge",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "domain": "empirical_passport",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -6715,12 +6936,194 @@
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "gauge_bridge",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_07",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 1.7,
+    "penalty_total": 1.8,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -6765,8 +7168,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 17,
-        "points": -1.7,
+        "count": 18,
+        "points": -1.8,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -6815,8 +7218,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 17,
-        "points": -1.7,
+        "count": 18,
+        "points": -1.8,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

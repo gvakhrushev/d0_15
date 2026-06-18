@@ -57,6 +57,17 @@ The proof technique behind "forcing" is **standard proof by contradiction** — 
 | `phason` | gapless quasicrystal mode / K₀ gap-label degree of freedom | gap-labelling group / `K₀` class | Standard condensed-matter / operator-K-theory term. |
 
 
+### Additional dynamics / physics-front terms (Iter-22 completion)
+
+| D0 term | Preferred external term | Formal object / notation | Rule |
+|---|---|---|---|
+| `golden tick` | discrete Floquet step / one period of the discrete evolution | `U_N : N -> N+1`, one Floquet period | Use "discrete Floquet step"; D0 mnemonic in parentheses. |
+| `toral time` | modular (Tomita–Takesaki) flow / toral-automorphism time | `T=[[0,1],[1,-1]]`, hyperbolic toral automorphism | Use the automorphism / modular-flow term; "toral time" second. |
+| `feedback-return operator` | Feshbach return / Schur-complement feedback operator | `F_N = P_N U_N† Q_N U_N P_N` (Schur complement of the traced block) | State as a Schur-complement / Feshbach map; keep `F_N`. |
+| `finite detector` | finite measurement instrument | finite POVM / instrument `{R_a}` on the finite state space | Use "finite measurement instrument"; D0 word second. |
+| `retained/archive split` | system/environment split | `H_total = H_obs ⊕ H_traced`, partial trace over the environment | Use "system/environment split"; the active/archive synonyms are defined above. |
+| `archive` (dark kernel) | traced-out environment bath / nullity sector | `ker A`, `nullity = 30 = 8⊕10⊕12` for `K(9,11,13)` | "Traced-out environment"; keep `archive` for the specific nullity-30 sector. |
+
 ## Publication rule
 
 A paragraph is publication-ready only if a reader can replace every D0-local term by its standard object without changing the theorem.

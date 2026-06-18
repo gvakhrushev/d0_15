@@ -476,7 +476,19 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001", moduleName := "D0.Cosmology.PhasonWDESignNormalization",
       theoremName := "phason_wde_sign_normalization_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-GHP-GOLDEN-CAUCHY-BOUND-001", moduleName := "D0.Geometry.GHPGoldenCauchyBound",
-      theoremName := "ghp_golden_cauchy_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "ghp_golden_cauchy_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SM-ANOMALY-CANCELLATION-OWNER-001", moduleName := "D0.Matter.HyperchargeGraphFlowOwner",
+      theoremName := "sm_anomaly_cancellation_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PAGE-CURVE-FINITE-RANK-OWNER-001", moduleName := "D0.Gravity.PageCurveFiniteRankOwner",
+      theoremName := "page_curve_finite_rank_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001", moduleName := "D0.Gravity.PageCurveFiniteRankOwner",
+      theoremName := "information_unitarity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001", moduleName := "D0.Matter.YukawaShellOverlapMatrix",
+      theoremName := "yukawa_shell_overlap_scaffold", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001", moduleName := "D0.Cosmology.ReheatingPercolationOwner",
+      theoremName := "connectivity_threshold_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-REHEATING-PERCOLATION-OWNER-001", moduleName := "D0.Cosmology.ReheatingPercolationOwner",
+      theoremName := "reheating_is_connectivity_onset", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

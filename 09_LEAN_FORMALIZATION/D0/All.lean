@@ -116,6 +116,7 @@ import D0.Cosmology.LinearizedEntropyFlow
 import D0.Cosmology.PhasonFlipEntropy
 import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
+import D0.Cosmology.ReheatingPercolationOwner
 import D0.Cosmology.ResearchPassCorollaries
 import D0.Cosmology.SDEFeedbackReduction
 import D0.Cosmology.SurveyReproducibilitySplit
@@ -233,6 +234,7 @@ import D0.Gravity.HorizonJetAndBaryonPole
 import D0.Gravity.MacroEinsteinInterface
 import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.OpticalJetBackreaction
+import D0.Gravity.PageCurveFiniteRankOwner
 import D0.Gravity.PressureCapacityBalance
 import D0.IM.ArchivePressureCoupling
 import D0.IM.ContinuumFromFractalTick
@@ -279,6 +281,7 @@ import D0.Matter.GenerationMultiplicity
 import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
 import D0.Matter.HiggsScalarProjectorConstructive
+import D0.Matter.HyperchargeGraphFlowOwner
 import D0.Matter.KTheoryGapLabeling
 import D0.Matter.LeptonGreenPuiseuxOwner
 import D0.Matter.LocalTraceSource
@@ -297,6 +300,7 @@ import D0.Matter.TraceDecompositionSigns
 import D0.Matter.VectorCurrentCoupling
 import D0.Matter.VectorFieldEquation
 import D0.Matter.VectorOperatorOrigin
+import D0.Matter.YukawaShellOverlapMatrix
 import D0.Metrology.PSDPurification
 import D0.Metrology.PhasonBragg
 import D0.Metrology.Phi2Flux
