@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 4202,
-    "track_fair_max": 5214,
-    "pct_strength": 80.6,
-    "core_realized": 3655,
-    "core_potential": 4640,
-    "core_headroom": 985,
+    "realized": 4197,
+    "track_fair_max": 5227,
+    "pct_strength": 80.3,
+    "core_realized": 3657,
+    "core_potential": 4660,
+    "core_headroom": 1003,
     "n_claims": 288,
     "n_active": 286,
     "duplicates": [],
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 20,
-      "realized": 205,
-      "max": 284,
+      "n": 19,
+      "realized": 198,
+      "max": 277,
       "core_headroom": 70
     },
     "cosmology": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 17,
-      "realized": 34,
-      "max": 340,
-      "core_headroom": 306
+      "n": 18,
+      "realized": 36,
+      "max": 360,
+      "core_headroom": 324
     }
   },
   "by_book": {
@@ -143,9 +143,9 @@
     },
     "BOOK_07/08": {
       "n": 8,
-      "realized": 85,
-      "max": 147,
-      "core_headroom": 62
+      "realized": 80,
+      "max": 160,
+      "core_headroom": 80
     },
     "BOOK_07": {
       "n": 48,
@@ -1082,6 +1082,16 @@
       "effort": "write cert scaffold"
     },
     {
+      "claim_id": "D0-PASSPORT-SPARC-001",
+      "domain": "frontier",
+      "book": "BOOK_07/08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
       "claim_id": "D0-H0-EVOLVING-W-001",
       "domain": "frontier",
       "book": "BOOK_08",
@@ -1217,6 +1227,13 @@
     },
     {
       "claim_id": "D0-PASSPORT-LIGO-CATALOG-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-PASSPORT-SPARC-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -4398,14 +4415,14 @@
     },
     {
       "claim_id": "D0-PASSPORT-SPARC-001",
-      "track": "PASSPORT",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "empirical_passport",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_07/08",
       "leverage": 0,
       "integrity_flag": null

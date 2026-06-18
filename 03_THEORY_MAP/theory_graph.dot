@@ -201,7 +201,7 @@ digraph D0Theory {
   "D0-PASSPORT-ICECUBE-HESE-001" [label="D0-PASSPORT-ICECUBE-HESE-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-PASSPORT-LIGO-CATALOG-001" [label="D0-PASSPORT-LIGO-CATALOG-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-PASSPORT-PDG-STRICT-001" [label="D0-PASSPORT-PDG-STRICT-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
-  "D0-PASSPORT-SPARC-001" [label="D0-PASSPORT-SPARC-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-PASSPORT-SPARC-001" [label="D0-PASSPORT-SPARC-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-NOGO-LIGO-DISCOVERY-001" [label="D0-NOGO-LIGO-DISCOVERY-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-Q8-DEDEKIND-MINIMALITY-001" [label="D0-Q8-DEDEKIND-MINIMALITY-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-WINDOW44-GROUP-SPECTRUM-001" [label="D0-WINDOW44-GROUP-SPECTRUM-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -1371,8 +1371,8 @@ digraph D0Theory {
   "D0-PASSPORT-SPARC-001" -> "module:" [label="module"];
   "cert:vp_sparc_hull_boundary_response_kernel.py" [label="vp_sparc_hull_boundary_response_kernel.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-PASSPORT-SPARC-001" -> "cert:vp_sparc_hull_boundary_response_kernel.py" [label="cert"];
-  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-PASSPORT-SPARC-001" -> "domain:empirical_passport" [label="domain"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PASSPORT-SPARC-001" -> "domain:frontier" [label="domain"];
   "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-NOGO-LIGO-DISCOVERY-001" -> "module:" [label="module"];
   "cert:vp_ligo_discovery_negative_control.py" [label="vp_ligo_discovery_negative_control.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];

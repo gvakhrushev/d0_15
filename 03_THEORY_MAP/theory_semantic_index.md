@@ -11,28 +11,28 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 7
+- `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 17
+- `PROOF-TARGET`: 18
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 60
+- `certificate`: 59
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 17
+- `frontier`: 18
 - `no-go`: 17
 
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 20
+- `empirical_passport`: 19
 - `external_background`: 1
 - `formal_core`: 175
-- `frontier`: 17
+- `frontier`: 18
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -486,19 +486,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] PDG comparison engine with pinning/holdout/multiple-testing; no operator tuning.
-
-### D0-PASSPORT-SPARC-001
-
-- type: `certificate`
-- release_status: `EMPIRICAL-PASSPORT`
-- domain: `empirical_passport`
-- book: `BOOK_07/08`
-- module: ``
-- theorem: `none`
-- cert: `vp_sparc_hull_boundary_response_kernel.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] SPARC rotation-curve external-data passport.
 
 ### D0-PMNS-DELTA0-NUFIT-001
 
@@ -3069,6 +3056,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter21 OVER-CLAIM FIXED] FORM is cert-checked + can-FAIL (frozen golden-ratio operator coefficient phi_inv, spin-only negative control, unphysical-input rejection; selftest() raises on a wrong form). The VALUE confrontation vs the GWOSC/GWTC catalog is NOT achieved: no gwtc_full.json is present (08_PASSPORTS/_EXTERNAL_DATA_CACHE/gwosc/ absent), so manifest_only now emits SKIP_GWOSC_EXTERNAL_DATA_REQUIRED (was a hollow PASS_* emitted whenever the manifest self-declared status:READY) and clean_BBH_run SKIPs. Readiness is now DERIVED from the real cache (sha256 re-hash + file presence), not a hand-set READY; the faked READY manifest (sha256 pinned for an absent file) was reverted to MISSING. Catalog tag UNPINNED: results CSV labels O4b events (GW2412*/GW2501*) 'GWTC-5.0', which is not a pinned published GWTC release and carries no JHEP/arXiv citation -- pin the exact table+version before any VALUE confrontation. Governing manifest = 08_PASSPORTS/GWOSC/gwosc_manifest.json (the cert reads it); 08_PASSPORTS/GWOSC_LIGO/gwosc_current_merger_manifest.json retired as a SUPERSEDED divergent duplicate. Demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: an open data-confrontation obligation awaiting a pinned GWTC release.
+
+### D0-PASSPORT-SPARC-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_07/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_sparc_hull_boundary_response_kernel.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [8C orphan-harvest] SPARC rotation-curve external-data passport. [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: the prior cert was a print-stub (hard-coded E_seam=0.0/2.0, unconditional PASS, no data). Rewritten to a FORM/VALUE split -- the seam-gap FORM (commuting generator -> E_seam=0; non-commuting -> ||[A,B]||^2>0, with a negative control) is now a real can-FAIL computation, and the VALUE confrontation vs the SPARC rotation-curve database (Lelli-McGaugh-Schombert 2016, 175 galaxies) emits SKIP_SPARC_EXTERNAL_DATA_REQUIRED (database not present/pinned). Cert removed from the check_cert_can_fail GRANDFATHER set.
 
 ### D0-PMNS-DELTACP-PI0-001
 

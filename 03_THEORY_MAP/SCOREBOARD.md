@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4202 / 5214 (**80.6%** of track-fair max)
-- **Core spine:** 3655 / 4640 (headroom **985** points to take every core claim to L5)
+- **Realized strength:** 4197 / 5227 (**80.3%** of track-fair max)
+- **Core spine:** 3657 / 4660 (headroom **1003** points to take every core claim to L5)
 - Claims: 286 active (288 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -77,6 +77,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-PASSPORT-DESI-BAO-001` | frontier | 0 | HYP | 2 |
 | `D0-PASSPORT-ICECUBE-HESE-001` | frontier | 0 | HYP | 2 |
 | `D0-PASSPORT-LIGO-CATALOG-001` | frontier | 0 | HYP | 2 |
+| `D0-PASSPORT-SPARC-001` | frontier | 0 | HYP | 2 |
 | `D0-H0-EVOLVING-W-001` | frontier | 0 | HYP | 2 |
 | `D0-PMNS-DELTACP-PI0-001` | frontier | 0 | HYP | 2 |
 | `D0-ARCHIVE-HEATTRACE-001` | spectral_action | 0 | PYTHON_CERTIFIED | 7 |
@@ -84,15 +85,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-HST-ARCHIVE-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-ARCHIVE-ENTROPY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-DM-CLASSICALITY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | 0 | PYTHON_CERTIFIED | 7 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | formal_core | 174 | 2792 | 3281 | 484 |
-| frontier | 17 | 34 | 340 | 306 |
-| empirical_passport | 20 | 205 | 284 | 70 |
+| frontier | 18 | 36 | 360 | 324 |
+| empirical_passport | 19 | 198 | 277 | 70 |
 | smooth_geometry | 18 | 272 | 315 | 39 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | cosmology | 24 | 446 | 472 | 26 |
@@ -115,8 +115,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_02 | 13 | 207 | 220 | 13 |
 | BOOK_05 | 8 | 133 | 133 | 0 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
-| BOOK_07/08 | 8 | 85 | 147 | 62 |
 | BOOK_06/07 | 4 | 80 | 80 | 0 |
+| BOOK_07/08 | 8 | 80 | 160 | 80 |
 | BOOK_04/08 | 7 | 52 | 140 | 88 |
 | METROLOGY | 5 | 51 | 100 | 49 |
 | BOOK_06/08 | 4 | 41 | 80 | 39 |

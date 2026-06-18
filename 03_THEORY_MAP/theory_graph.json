@@ -15,23 +15,23 @@
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 7,
-      "PROOF-TARGET": 17
+      "EMPIRICAL-PASSPORT": 6,
+      "PROOF-TARGET": 18
     },
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 61,
+      "PYTHON_CERTIFIED": 60,
       "DEPRECATED": 2,
-      "OPEN": 19
+      "OPEN": 20
     },
     "claim_type": {
       "core": 163,
       "bridge": 28,
       "no-go": 17,
-      "certificate": 60,
+      "certificate": 59,
       "deprecated": 3,
-      "frontier": 17
+      "frontier": 18
     },
     "domain": {
       "formal_core": 175,
@@ -39,12 +39,12 @@
       "gauge_bridge": 20,
       "smooth_geometry": 18,
       "spectral_action": 5,
-      "empirical_passport": 20,
+      "empirical_passport": 19,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 17
+      "frontier": 18
     }
   },
   "nodes": [
@@ -6604,22 +6604,22 @@
       "id": "D0-PASSPORT-SPARC-001",
       "kind": "claim",
       "claim_id": "D0-PASSPORT-SPARC-001",
-      "type": "certificate",
-      "domain": "empirical_passport",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
       "book": "BOOK_07/08",
       "section": "SPARC hull-boundary response kernel",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_sparc_hull_boundary_response_kernel.py",
       "python_cert": [
         "vp_sparc_hull_boundary_response_kernel.py"
       ],
-      "status": "EMPIRICAL-PASSPORT",
-      "notes": "[8C orphan-harvest] SPARC rotation-curve external-data passport.",
+      "status": "PROOF-TARGET",
+      "notes": "[8C orphan-harvest] SPARC rotation-curve external-data passport. [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: the prior cert was a print-stub (hard-coded E_seam=0.0/2.0, unconditional PASS, no data). Rewritten to a FORM/VALUE split -- the seam-gap FORM (commuting generator -> E_seam=0; non-commuting -> ||[A,B]||^2>0, with a negative control) is now a real can-FAIL computation, and the VALUE confrontation vs the SPARC rotation-curve database (Lelli-McGaugh-Schombert 2016, 175 galaxies) emits SKIP_SPARC_EXTERNAL_DATA_REQUIRED (database not present/pinned). Cert removed from the check_cert_can_fail GRANDFATHER set.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -12377,7 +12377,7 @@
     },
     {
       "source": "D0-PASSPORT-SPARC-001",
-      "target": "domain:empirical_passport",
+      "target": "domain:frontier",
       "kind": "semantic_domain"
     },
     {

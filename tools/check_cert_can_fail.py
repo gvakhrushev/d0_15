@@ -44,7 +44,6 @@ GRANDFATHER = {
     "vp_generation_overlap_response_origin.py",
     "vp_meson_positive_defect_transfer.py",
     "vp_qnm_delta0_overtone_ladder.py",
-    "vp_sparc_hull_boundary_response_kernel.py",
 }
 
 # evidence that a cert can fail: a real failing branch — an assertion, a non-entry raise,
