@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 4246,
-    "track_fair_max": 5328,
-    "pct_strength": 79.7,
-    "core_realized": 3685,
-    "core_potential": 4740,
-    "core_headroom": 1055,
-    "n_claims": 295,
-    "n_active": 293,
+    "realized": 4267,
+    "track_fair_max": 5388,
+    "pct_strength": 79.2,
+    "core_realized": 3706,
+    "core_potential": 4800,
+    "core_headroom": 1094,
+    "n_claims": 298,
+    "n_active": 296,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 176,
-      "realized": 2806,
-      "max": 3321,
-      "core_headroom": 510
+      "n": 178,
+      "realized": 2820,
+      "max": 3361,
+      "core_headroom": 536
     },
     "rg": {
       "n": 5,
@@ -62,10 +62,10 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 21,
-      "realized": 212,
-      "max": 291,
-      "core_headroom": 70
+      "n": 22,
+      "realized": 219,
+      "max": 311,
+      "core_headroom": 83
     },
     "cosmology": {
       "n": 24,
@@ -118,10 +118,10 @@
       "core_headroom": 68
     },
     "BOOK_02": {
-      "n": 13,
-      "realized": 207,
-      "max": 220,
-      "core_headroom": 13
+      "n": 16,
+      "realized": 228,
+      "max": 280,
+      "core_headroom": 52
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -962,6 +962,36 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-ALPHA-MU1-RANKTRACE-001",
+      "domain": "empirical_passport",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-ALPHA-ALG-CLOSED-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1660,6 +1690,27 @@
     {
       "claim_id": "D0-PHI-LADDER-SEMIGROUP-001",
       "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-ALPHA-MU1-RANKTRACE-001",
+      "domain": "empirical_passport",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-ALPHA-ALG-CLOSED-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -5808,6 +5859,48 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "smooth_geometry",
       "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-MU1-RANKTRACE-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-ALG-CLOSED-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
       "leverage": 0,
       "integrity_flag": null
     }

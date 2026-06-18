@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 57
+- `CERT-CLOSED`: 60
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 66
+- `certificate`: 69
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 18
@@ -30,9 +30,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 21
+- `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 177
+- `formal_core`: 179
 - `frontier`: 18
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
@@ -370,6 +370,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: [8C orphan-harvest] one-directional interpretive cross-reference to the external GR result arXiv:2601.14358 (large-D DSS Einstein-Klein-Gordon). [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT -> CORE_BRIDGE_SPLIT and the 'pins ... via hash manifest' claim removed: the cert did NOT pin anything -- its three 'pinned: hash=' lines were sha256 of self-typed '(simulated fetch)' strings (fabricated provenance), now removed. The external result is CITED, not fetched/pinned; D0 records only the echo-lattice/SSH=capacity-null-boundary interpretive readings (no D0 numeric prediction, no measurement). The cert's one real can-FAIL is that the local manifest exists and cites arXiv:2601.14358.
+
+### D0-ALPHA-MU1-RANKTRACE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_alpha_mu1_rank_trace.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 closure-delta] mu1 = Tr_R(p1)/Tr_R(I_R) = 1/3: primitive first archive-return projector on the rank-3 transport carrier. cert vp_alpha_mu1_rank_trace.py (can-FAIL: wrong-rank + non-primitive controls). CONSOLIDATION: mu1=1/3 is already Lean-CORE in D0.Spectral.DeltaAlphaMoment (D0-DELTA-ALPHA-MOMENT-001) and trace-derived in vp_feshbach_residue_amplitudes.py; states the rank-trace reading, not a new derivation. NOT generations/empirical-alpha/fit.
 
 ### D0-CVFT-F3
 
@@ -845,6 +858,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
 - notes: Fixed finite boundary trace-heat capacity block proves T^2 heat moments as even Lucas traces and saturation as boundary encoding while macro gravity stays bridge-scoped through the finite witness.
 
+### D0-ALPHA-ALG-CLOSED-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_alpha_alg_closed.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 closure-delta] D0-internal algebraic object alpha_alg^-1 = (12288/5)phi^-6 + (1/3)phi^-3 = 159739/5 - (294902/15)phi exact in Q(phi) (~137.036043), NO measured-alpha input. cert vp_alpha_alg_closed.py (can-FAIL: wrong-mu1, mu2-without-pi0). CONSOLIDATION: already Lean-CORE in D0.Spectral.DeltaAlphaMoment (D0-DELTA-ALPHA-MOMENT-001); the measured physical alpha is the closure holonomy D0-ALPHA-HOLONOMY-002 (CHK), a separate object.
+
 ### D0-ALPHA-HOLONOMY-002
 
 - type: `certificate`
@@ -948,6 +974,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Boundary-local rank control has deterministic finite cert candidates; it supports localization only and is not an A4 proof. [was:CERT-CANDIDATE] [8C: linked passing cert]
+
+### D0-DELTA-ALPHA-SEAM-CLOSED-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_delta_alpha_seam_closed.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 closure-delta] gluing-anomaly SEAM INVARIANT Delta_alpha = |alpha_top^-1 - alpha_alg^-1| = -156109/5 + (289442/15)phi exact in Q(phi), nonzero (M1-forced), 0<|Delta_alpha|~4.15e-4<phi^-16~4.53e-4; NOT the data residual ~3.71e-4. cert vp_delta_alpha_seam_closed.py (can-FAIL: nonzero + bound + not-data-residual). CONSOLIDATION: already Lean-CORE in D0.Spectral.DeltaAlphaExact (D0-DELTA-ALPHA-EXACT-001). External Dixmier residue-extraction realization stays D0-DIXMIER-RESIDUE-OWNER-001 (ASSUMP-DIXMIER-TRACE).
 
 ### D0-DM-CLASSICALITY-001
 
