@@ -287,6 +287,7 @@ import D0.Matter.PhasonStrainGenerations
 import D0.Matter.ProtonReadout306
 import D0.Matter.RepresentationCarrier
 import D0.Matter.TerminalFeedbackModes
+import D0.Matter.TickS3BaryonAsymmetry
 import D0.Matter.TraceDecompositionSigns
 import D0.Matter.VectorCurrentCoupling
 import D0.Matter.VectorFieldEquation

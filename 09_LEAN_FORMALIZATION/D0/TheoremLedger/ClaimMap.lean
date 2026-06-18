@@ -456,7 +456,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PMNS-SEAM-TOPOLOGY-001", moduleName := "D0.Matter.PMNSSeamTopology",
       theoremName := "pmns_seam_topology", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-XI5-CROSS-SECTOR-001", moduleName := "D0.Claims.Xi5TorusDefect",
-      theoremName := "xi5_torus_defect", status := ClaimStatus.leanCoreProved }
+      theoremName := "xi5_torus_defect", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BARYON-ASYMMETRY-DELTA0-001", moduleName := "D0.Matter.TickS3BaryonAsymmetry",
+      theoremName := "baryon_cp_eq_three_delta0", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -7,41 +7,54 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 62
+- `CERT-CLOSED`: 64
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 9
+- `NO-GO`: 10
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 3
-- `PROOF-TARGET`: 20
+- `PROOF-TARGET`: 19
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 71
+- `certificate`: 73
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 20
-- `no-go`: 17
+- `frontier`: 19
+- `no-go`: 18
 
 ## Domain counts
 
-- `cosmology`: 24
+- `cosmology`: 25
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 180
-- `frontier`: 20
+- `formal_core`: 181
+- `frontier`: 19
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 22
+- `smooth_geometry`: 23
 - `spectral_action`: 5
 
 ## Domain: cosmology
+
+### D0-BARYON-ASYMMETRY-DELTA0-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_04`
+- module: `D0.Matter.TickS3BaryonAsymmetry`
+- theorem: `baryon_cp_eq_three_delta0`
+- cert: `vp_baryon_asymmetry_delta0.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 frontier-strike] CLOSED for the INTERNAL three-zone additive CP/asymmetry coordinate eta_bar = 3*delta0: K(9,11,13) has 3 zones {9,11,13} whose CP seams form the directed 3-cycle, so the interface count is 3 -- forced by the carrier (decide: D0.Matter.TickS3BaryonAsymmetry.baryon_interface_count_three) -- and eta_bar = (interface count)*delta0 = 3*delta0 (baryon_cp_eq_three_delta0). cert vp_baryon_asymmetry_delta0.py (can-FAIL: 2-zone/4-zone wrong-count, unequal-weight catalog, hardcoded-literal, empirical-input controls). SCOPE: INTERNAL coordinate ONLY; the multiplier 3 is forced by the interface count (not a literal); the per-interface unit is the corpus seam delta0=1/(2phi^3); identifying eta_bar with the observed baryon-to-photon ratio is an empirical passport, never CORE. No cosmological datum used.
 
 ### D0-COSMO-002
 
@@ -713,7 +726,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_cvft_clifford_fock_capacity.py`
 - assumptions: `ASSUMP-DIXMIER-TRACE`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
-- notes: [Iter18 owner-edge, SHARPENS CVFT-F1 -- does NOT close it] Names the residue-extraction owner of the algebraic alpha amplitude mu2=2^11 pi0 phi^-2: the Dixmier trace / noncommutative integral (Connes NCG 1994; Connes trace theorem = Wodzicki residue), the tool that extracts the s->pole residue of zeta_D(s)=Tr(|D|^-s) = the Clifford-bundle multiplicity. D0-side anchor (cert vp_cvft_clifford_fock_capacity.py, exact): 2^11 = dim Cl(R^11) = dim Lambda*(R^11) = 2^|V11| is the full exterior/fermionic-Fock dimension over the 11-element zone V11 -- a NAMED CANDIDATE, distinct from the irreducible Spin(11) spinor dim 2^5=32 and from the naive edge-pushforward pairing multiplicity 2. Lean D0.Bridge.DixmierTraceBridge (dixmier_residue_conditional) conditional on ASSUMP-DIXMIER-TRACE. HONEST: this names the candidate object (Clifford/Fock over V11) and the residue owner (Dixmier); it does NOT derive that the Feshbach-Schur residue traces over the full 2^11 Fock space rather than the naive 2-edge pairing. CVFT-F1 STAYS PROOF-TARGET; the gap is re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11)=2^11 vs naive 2-edge pairing'. BRIDGE track, honesty not points. cite Connes, Noncommutative Geometry (1994).
+- notes: [Iter18 owner-edge, SHARPENS CVFT-F1 -- does NOT close it] Names the residue-extraction owner of the algebraic alpha amplitude mu2=2^11 pi0 phi^-2: the Dixmier trace / noncommutative integral (Connes NCG 1994; Connes trace theorem = Wodzicki residue), the tool that extracts the s->pole residue of zeta_D(s)=Tr(|D|^-s) = the Clifford-bundle multiplicity. D0-side anchor (cert vp_cvft_clifford_fock_capacity.py, exact): 2^11 = dim Cl(R^11) = dim Lambda*(R^11) = 2^|V11| is the full exterior/fermionic-Fock dimension over the 11-element zone V11 -- a NAMED CANDIDATE, distinct from the irreducible Spin(11) spinor dim 2^5=32 and from the naive edge-pushforward pairing multiplicity 2. Lean D0.Bridge.DixmierTraceBridge (dixmier_residue_conditional) conditional on ASSUMP-DIXMIER-TRACE. HONEST: this names the candidate object (Clifford/Fock over V11) and the residue owner (Dixmier); it does NOT derive that the Feshbach-Schur residue traces over the full 2^11 Fock space rather than the naive 2-edge pairing. CVFT-F1 STAYS PROOF-TARGET; the gap is re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11)=2^11 vs naive 2-edge pairing'. BRIDGE track, honesty not points. cite Connes, Noncommutative Geometry (1994). [Iter22 frontier-strike] residue-owner SPLIT: the internal alpha_alg/Delta_alpha seam is CLOSED (D0-ALPHA-ALG-CLOSED-001 / D0-DELTA-ALPHA-SEAM-CLOSED-001, CORE); this row is the EXTERNAL-OWNER PASSPORT for the profinite Dixmier/Wodzicki residue-EXTRACTION realization; the bare zeta-residue route is the closed-negative no-go D0-CVFT-F1. Split guarded by vp_alpha_residue_owner_split.py.
 
 ### D0-ENTROPIC-DARK-GRAVITY-001
 
@@ -2899,6 +2912,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Deprecated or historical row; not a live promotion path.
 - notes: [Iter15 trace-leg split — CLOSED] The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is proved (CORE) as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, with the phi^-5 seam = xi5 (D0-XI5). This separate trace-target row is therefore redundant and is DEPRECATED (superseded, not abandoned): the trace leg is closed at D0-ALPHA-ZETA-RESIDUE-001. The remaining open EDGE leg is the unitary-dilation / torus-ramification Puiseux target D0-EDGE-002.
 
+### D0-BARE-GRAPH-DECIMAL-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_bare_graph_decimal_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Iter22 frontier-strike] NO-GO: a raw finite graph operator (finite/Q(phi)/algebraic scene data) cannot DIRECTLY output the 17-digit charged-lepton decimal rows. r_mu=3.8814... is NOT a scene invariant (misses the small Q(phi)/Lucas lattice) and reconstructs the measured mass ratio (~(m_mu/m_e)^(1/4)); the EXACT external datum needed is the EFT/IR matching scheme carrying m_mu, not part of a raw graph operator -> direct raw-graph->decimal is M1-forbidden. cert vp_bare_graph_decimal_nogo.py (can-FAIL). SCOPE: blocks the DIRECT route only; integer Lucas L11+L4=206 + exponents (0,1/4,1/3) stay THE; decimals stay HYP/BRIDGE (D0-LEPTON-002); the feedback/cylinder trace route is unaffected.
+
 ### D0-CVFT-F1
 
 - type: `no-go`
@@ -3005,19 +3031,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 
 ## Domain: frontier
-
-### D0-BARYON-ASYMMETRY-DELTA0-001
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `none`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 closure-delta] PROOF-TARGET: the three-zone CP/asymmetry coordinate eta_bar = 3*delta0 = 3/(2phi^3) is a clean Q(phi) value, but NO D0-internal forcing derives it. The named owner D0.Matter.TickS3BaryonAsymmetry is NOT on disk; the scaffold cert vp_tick_s3_baryon_asymmetry_scaffold.py carries a hardcoded placeholder asymmetry (emits SKIP_FULL_COSMOLOGICAL_BARYOGENESIS_EXTERNAL_MODEL_REQUIRED). The MISSING artifact is a finite three-zone CP-coordinate cert that DERIVES 3*delta0 (not just prints it). A value-match is not a forcing -> stays PROOF-TARGET; the observed baryon-to-photon ratio stays an empirical passport, never CORE. (eta-bar=3delta0 currently appears only as a Wolfenstein CKM HYP in GOLDEN_COVERAGE_LEDGER.)
 
 ### D0-CVFT-001B
 
@@ -3147,7 +3160,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_lepton_raw_graph_owner_manifest.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 closure-delta] PROOF-TARGET owner-of-the-gap: the 17-digit charged-lepton transfer decimals (r_mu=3.8814..., r_tau=10.3183...) stay HYP (D0-LEPTON-002); the integer Lucas part L11+L4=206 and exponents (0,1/4,1/3) are THE. The MISSING artifact is a raw finite graph/spectral operator from which the decimals are extracted (none exists in registry or 05_CERTS). manifest vp_lepton_raw_graph_owner_manifest.py (can-FAIL: asserts D0-LEPTON-002 stays CERT-CLOSED with decimals HYP, never promoted to THE). Until a raw-graph operator is supplied this stays PROOF-TARGET.
+- notes: [Iter22 closure-delta] PROOF-TARGET owner-of-the-gap: the 17-digit charged-lepton transfer decimals (r_mu=3.8814..., r_tau=10.3183...) stay HYP (D0-LEPTON-002); the integer Lucas part L11+L4=206 and exponents (0,1/4,1/3) are THE. The MISSING artifact is a raw finite graph/spectral operator from which the decimals are extracted (none exists in registry or 05_CERTS). manifest vp_lepton_raw_graph_owner_manifest.py (can-FAIL: asserts D0-LEPTON-002 stays CERT-CLOSED with decimals HYP, never promoted to THE). Until a raw-graph operator is supplied this stays PROOF-TARGET. [Iter22 frontier-strike] the DIRECT raw-graph->decimal route is RETIRED by D0-BARE-GRAPH-DECIMAL-NOGO-001 (NO-GO): a raw graph operator outputs only Q(phi)/Lucas scene invariants, but the 17-digit r_mu encodes the measured mass via the EFT/IR matching scheme (the exact external datum), so direct extraction is M1-forbidden. Only an INDIRECT derivation could close this general owner; none exists -> stays PROOF-TARGET. Decimals stay HYP (D0-LEPTON-002).
 
 ### D0-PASSPORT-DESI-BAO-001
 
@@ -3774,6 +3787,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 closure-sprint] The phi-tick ladder + its unique continuum semigroup envelope (the FIRST D0 continuum): p=phi^-1, p+p^2=1; A_n=A_0 phi^-n, B_n=(1-phi^-n)A_0, R_n=phi^n-1; envelope A(s)=A_0 e^{-s log phi} with semigroup A(s+t)=A(s)A(t)/A_0. cert vp_phi_ladder_semigroup.py (can-FAIL: arbitrary-ratio, additive-ladder, external-base controls). Sprint consolidation: the integer ladder Q(D)=phi^(D-4) is CORE (D0-DIM-LADDER-COMPACT-001), the golden split is CORE (D0-IM-002), and the envelope cocycle is Lean-proved (D0.IM.ContinuumFromFractalTick.env_cocycle / env_restricts_to_ladder, D0-IM-003) -- this row is the sprint's consolidated phi-ladder-semigroup statement, NOT a new theorem over those. The smooth-manifold limit stays the Rieffel/GHP+Connes passport (D0-SMOOTH-MANIFOLD-PASSPORT-001).
+
+### D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_06/01`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_sturmian_profinite_code_conjugacy.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 frontier-strike] D0-internal profinite CODE-extensional conjugacy of the golden hull: two independent codings (substitution a->ab,b->a; Fibonacci concatenation S_n=S_{n-1}.S_{n-2}) form a projection-compatible inverse system, agree on all finite cylinder languages AND frequencies over increasing windows, hence are the same D0 profinite object (extensionality). cert vp_phi_sturmian_profinite_code_conjugacy.py (can-FAIL: periodic/rational, wrong-substitution, language-without-frequency, short-window-only, injected-word controls). EXTENDS D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001 (not demoted). Classical smooth/topological/measure Adler-Weiss conjugacy stays the EXTERNAL owner D0-ADLER-WEISS-PARTITION-OWNER-001 (ASSUMP-ADLER-WEISS).
 
 ### D0-QUASICRYSTAL-CARRIER-FORCING-001
 

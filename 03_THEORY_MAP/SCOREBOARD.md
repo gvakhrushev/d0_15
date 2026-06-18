@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4285 / 5468 (**78.4%** of track-fair max)
-- **Core spine:** 3724 / 4880 (headroom **1156** points to take every core claim to L5)
-- Claims: 300 active (302 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 4309 / 5500 (**78.3%** of track-fair max)
+- **Core spine:** 3741 / 4900 (headroom **1159** points to take every core claim to L5)
+- Claims: 302 active (304 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
@@ -35,6 +35,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-FIBONACCI-IF-FORCING-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-GENERATIVE-DYNAMICS-001` | rg | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-UNITY-SPLIT-SPACETIME-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-BARYON-ASYMMETRY-DELTA0-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-ARCHIVE-HEATTRACE-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-SPECTRAL-ACTION-ADMISS-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-HST-ARCHIVE-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
@@ -56,7 +57,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-CANONICAL-OP-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-LEPTON-002` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-NEUTRON-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-GRAV-002` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -82,22 +82,22 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-PASSPORT-SPARC-001` | frontier | 0 | HYP | 2 |
 | `D0-H0-EVOLVING-W-001` | frontier | 0 | HYP | 2 |
 | `D0-PMNS-DELTACP-PI0-001` | frontier | 0 | HYP | 2 |
-| `D0-BARYON-ASYMMETRY-DELTA0-001` | frontier | 0 | HYP | 2 |
 | `D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001` | frontier | 0 | HYP | 2 |
 | `D0-ARCHIVE-HEATTRACE-001` | spectral_action | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-SPECTRAL-ACTION-ADMISS-001` | spectral_action | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-HST-ARCHIVE-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
+| `D0-ARCHIVE-ENTROPY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 179 | 2827 | 3381 | 549 |
-| frontier | 20 | 40 | 400 | 360 |
+| formal_core | 180 | 2834 | 3393 | 549 |
+| frontier | 19 | 38 | 380 | 342 |
+| smooth_geometry | 23 | 307 | 402 | 91 |
 | empirical_passport | 22 | 219 | 311 | 83 |
-| smooth_geometry | 22 | 300 | 382 | 78 |
 | spectral_action | 5 | 61 | 100 | 39 |
-| cosmology | 24 | 446 | 472 | 26 |
+| cosmology | 25 | 458 | 492 | 34 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
 | rg | 5 | 61 | 73 | 8 |
 | external_background | 1 | 1 | 2 | 0 |
@@ -108,8 +108,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
+| BOOK_04 | 51 | 736 | 930 | 184 |
 | BOOK_08 | 47 | 732 | 881 | 145 |
-| BOOK_04 | 50 | 719 | 918 | 194 |
 | BOOK_07 | 49 | 657 | 889 | 218 |
 | BOOK_06 | 16 | 242 | 289 | 47 |
 | BOOK_02 | 16 | 228 | 280 | 52 |
@@ -147,6 +147,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_01/03 | 1 | 20 | 20 | 0 |
 | BOOK_00/05 | 1 | 20 | 20 | 0 |
 | BOOK_04/05 | 2 | 19 | 19 | 0 |
+| BOOK_06/01 | 2 | 14 | 40 | 26 |
 | BOOK_02/04/05/06/07 | 1 | 12 | 12 | 0 |
 | BOOK_02/04/08 | 1 | 12 | 12 | 0 |
 | BOOK_00/08 | 1 | 11 | 11 | 0 |
@@ -156,7 +157,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_01/07 | 1 | 7 | 20 | 13 |
 | BOOK_04/06 | 1 | 7 | 20 | 13 |
 | BOOK_07/05 | 1 | 7 | 20 | 13 |
-| BOOK_06/01 | 1 | 7 | 20 | 13 |
 | BOOK_04/07 | 2 | 4 | 40 | 36 |
 | BOOK_04/06/07/08 | 1 | 2 | 20 | 18 |
 | PUBLICATION | 1 | 2 | 20 | 18 |
