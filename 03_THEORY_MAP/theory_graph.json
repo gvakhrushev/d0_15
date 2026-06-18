@@ -9666,7 +9666,7 @@
         "vp_alpha_measurement_limit.py"
       ],
       "status": "EMPIRICAL-PASSPORT",
-      "notes": "[Iter21 HYP/bet] the last ~1e-8 alpha layer is the measurement-limit band: alpha_struct=137.035999151 is straddled by CODATA-2018/2022 and the gap (6.7e-8) < inter-edition shift (9.3e-8). Falsifiable bet: refined alpha^-1 converges to 137.035999151 from below. The holonomy THE-structure and CHK match do not depend on this layer; 2nd-order holonomy does NOT close it.",
+      "notes": "[Iter21 HYP/bet] the last ~1e-8 alpha layer is the measurement-limit band: alpha_struct=137.035999151 is straddled by CODATA-2018/2022 and the gap (6.7e-8) < inter-edition shift (9.3e-8). Falsifiable bet: refined alpha^-1 stays bracketed within the inter-edition band of 137.035999151 (CODATA-2018 below, CODATA-2022 above -- a straddle, NOT a monotone 'from below'; the cert asserts the latest gap 2.6e-8 < the 9.3e-8 reach). [Iter21] corrected the prior 'from below' wording, which its own cited straddle contradicted. The holonomy THE-structure and CHK match do not depend on this layer; 2nd-order holonomy does NOT close it.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true

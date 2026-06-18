@@ -28,7 +28,7 @@ Gap to CODATA-2018 = `6.7×10⁻⁸`, smaller than the 2018→2022 inter-edition
 
 ## Pre-registered falsifiable bet
 
-> As α⁻¹ is measured more precisely, the recommended value converges toward **137.035999151 from below**.
+> As α⁻¹ is measured more precisely, the recommended value stays **bracketed within the holonomy's reach** of **137.035999151** — CODATA-2018 (`137.035999084`) sits below it, CODATA-2022 (`137.035999177`) above it (a straddle, *not* a monotone approach "from below").
 > **Falsified if** a future high-precision α⁻¹ settles away from the structural value by more than the
 > closure holonomy can absorb (outside the measurement band).
 
