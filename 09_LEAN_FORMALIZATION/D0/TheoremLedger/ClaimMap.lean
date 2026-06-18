@@ -479,6 +479,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "ghp_golden_cauchy_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SM-ANOMALY-CANCELLATION-OWNER-001", moduleName := "D0.Matter.HyperchargeGraphFlowOwner",
       theoremName := "sm_anomaly_cancellation_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001", moduleName := "D0.Matter.HyperchargeMinimalDenominator",
+      theoremName := "hypercharge_minimal_denominator_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-PAGE-CURVE-FINITE-RANK-OWNER-001", moduleName := "D0.Gravity.PageCurveFiniteRankOwner",
       theoremName := "page_curve_finite_rank_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001", moduleName := "D0.Gravity.PageCurveFiniteRankOwner",

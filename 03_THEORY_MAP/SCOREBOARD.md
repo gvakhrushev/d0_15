@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4554 / 6166 (**73.9%** of track-fair max)
-- **Core spine:** 3960 / 5540 (headroom **1580** points to take every core claim to L5)
+- **Realized strength:** 4564 / 6166 (**74.0%** of track-fair max)
+- **Core spine:** 3970 / 5540 (headroom **1570** points to take every core claim to L5)
 - Claims: 337 active (339 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 100.0 / 100 (penalties **-1.8**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 100.0 / 100 (penalties **-2.0**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -19,14 +19,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
-| `orphan_proof_targets` | 18 | -1.8 | PROOF-TARGET markers in book prose with no registry row |
+| `orphan_proof_targets` | 20 | -2 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 135 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-1.8)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-2)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -48,6 +48,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-GHP-GOLDEN-CAUCHY-BOUND-001` | smooth_geometry | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-SM-ANOMALY-CANCELLATION-OWNER-001` | gauge_bridge | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-YUKAWA-SHELL-OVERLAP-MATRIX-001` | empirical_passport | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-ARCHIVE-HEATTRACE-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-SPECTRAL-ACTION-ADMISS-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
@@ -56,7 +57,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-DM-CLASSICALITY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 | `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-KTHEORY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
 
 ## Highest-leverage open core gaps
 
@@ -92,8 +92,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 185 | 2884 | 3493 | 599 |
-| frontier | 33 | 66 | 660 | 594 |
+| formal_core | 186 | 2896 | 3513 | 607 |
+| frontier | 32 | 64 | 640 | 576 |
 | smooth_geometry | 28 | 352 | 489 | 133 |
 | empirical_passport | 26 | 262 | 391 | 120 |
 | cosmology | 31 | 525 | 591 | 66 |
@@ -109,7 +109,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_08 | 59 | 816 | 1100 | 280 |
-| BOOK_04 | 62 | 798 | 1150 | 342 |
+| BOOK_04 | 62 | 808 | 1150 | 332 |
 | BOOK_07 | 55 | 714 | 996 | 268 |
 | BOOK_06 | 19 | 258 | 349 | 91 |
 | BOOK_02 | 19 | 254 | 340 | 86 |

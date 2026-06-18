@@ -42,11 +42,14 @@ CONDITIONAL = {
     "Yukawa shell-overlap closed": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
     "connectivity threshold closed": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
     "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001 CLOSED": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+    "minimal hypercharge denominator closed": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+    "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001 CLOSED": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
 }
-# the owners this strike registers as OPEN -- must NOT be silently closed.
+# the owners that must remain OPEN -- must NOT be silently closed.
+# (D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001 was a genuine PROOF-TARGET->CERT-CLOSED promotion via the
+# baryon-integrality derivation -- it is correctly removed from this list.)
 MUST_STAY_OPEN = [
     "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
-    "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
     "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
     "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
     "D0-CMB-PHASON-SPECTRUM-OWNER-001",

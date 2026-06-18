@@ -282,6 +282,7 @@ import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
 import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.HyperchargeGraphFlowOwner
+import D0.Matter.HyperchargeMinimalDenominator
 import D0.Matter.KTheoryGapLabeling
 import D0.Matter.LeptonGreenPuiseuxOwner
 import D0.Matter.LocalTraceSource

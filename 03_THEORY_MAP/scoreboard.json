@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 4554,
+    "realized": 4564,
     "track_fair_max": 6166,
-    "pct_strength": 73.9,
-    "core_realized": 3960,
+    "pct_strength": 74.0,
+    "core_realized": 3970,
     "core_potential": 5540,
-    "core_headroom": 1580,
+    "core_headroom": 1570,
     "n_claims": 339,
     "n_active": 337,
     "duplicates": [],
@@ -32,10 +32,10 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 185,
-      "realized": 2884,
-      "max": 3493,
-      "core_headroom": 599
+      "n": 186,
+      "realized": 2896,
+      "max": 3513,
+      "core_headroom": 607
     },
     "rg": {
       "n": 5,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 33,
-      "realized": 66,
-      "max": 660,
-      "core_headroom": 594
+      "n": 32,
+      "realized": 64,
+      "max": 640,
+      "core_headroom": 576
     }
   },
   "by_book": {
@@ -161,9 +161,9 @@
     },
     "BOOK_04": {
       "n": 62,
-      "realized": 798,
+      "realized": 808,
       "max": 1150,
-      "core_headroom": 342
+      "core_headroom": 332
     },
     "BOOK_04/08": {
       "n": 7,
@@ -566,6 +566,16 @@
     {
       "claim_id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
       "domain": "gauge_bridge",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "domain": "formal_core",
       "book": "BOOK_04",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
@@ -1514,16 +1524,6 @@
       "effort": "write cert scaffold"
     },
     {
-      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
-      "domain": "frontier",
-      "book": "BOOK_04",
-      "level_name": "HYP",
-      "leverage": 0,
-      "next": "CERT_SCAFFOLD",
-      "points_gained": 2,
-      "effort": "write cert scaffold"
-    },
-    {
       "claim_id": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1826,13 +1826,6 @@
     },
     {
       "claim_id": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
-      "domain": "frontier",
-      "leverage": 0,
-      "level_name": "HYP",
-      "score": 2
-    },
-    {
-      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -2359,6 +2352,13 @@
     {
       "claim_id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
       "domain": "gauge_bridge",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -6968,13 +6968,13 @@
     {
       "claim_id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
       "track": "CORE",
-      "level": 1,
-      "level_name": "HYP",
-      "score": 2,
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
       "ceiling": 20,
-      "release_status": "PROOF-TARGET",
-      "lean_status": "OPEN",
-      "domain": "frontier",
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -7123,7 +7123,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 1.8,
+    "penalty_total": 2.0,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -7168,8 +7168,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 18,
-        "points": -1.8,
+        "count": 20,
+        "points": -2.0,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -7218,8 +7218,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 18,
-        "points": -1.8,
+        "count": 20,
+        "points": -2.0,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

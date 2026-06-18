@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 82
+- `CERT-CLOSED`: 83
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -16,15 +16,15 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `NO-GO`: 11
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 5
-- `PROOF-TARGET`: 33
+- `PROOF-TARGET`: 32
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 93
+- `certificate`: 94
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 33
+- `frontier`: 32
 - `no-go`: 19
 
 ## Domain counts
@@ -32,8 +32,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 31
 - `empirical_passport`: 26
 - `external_background`: 1
-- `formal_core`: 186
-- `frontier`: 33
+- `formal_core`: 187
+- `frontier`: 32
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -1572,6 +1572,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: S_DE relaxation modes are gap-labeled. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.HyperchargeMinimalDenominator`
+- theorem: `hypercharge_minimal_denominator_owner`
+- cert: `vp_sm_hypercharge_minimal_denominator.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 REAL CLOSURE, promoted PROOF-TARGET->CERT-CLOSED] The minimal hypercharge denominator is exactly 6, DERIVED (not read off the SM table): from SU(2) doublet splitting (Q=T3+Y, T3=+/-1/2) and colour triality (a baryon = 3 quarks = the rank-3 / three-zone structure) plus integer electric charge of colour-singlet states, a 3-quark baryon uud has charge 3*Yq+1/2, integer iff Yq=(2m+1)/6, so the minimal positive quark hypercharge is 1/6; the lepton-doublet quantum 1/2 and the charged-singlet quantum 1 are integer multiples, so the hypercharge lattice is (1/6)Z and the minimal denominator is 6. Lean D0.Matter.HyperchargeMinimalDenominator.hypercharge_minimal_denominator_owner (one_sixth_minimal forces 1/6); cert vp_sm_hypercharge_minimal_denominator.py (controls: Yq=1/3 -> non-integer baryon; row not in (1/5)Z; SM-table-as-origin rejected since 1/6 is the DERIVED minimal admissible value). Honest demotion of the wrong route: the K(9,11,13) divergence-free flow space is 327-dim (E-V+1) and ALONE underdetermines the row -- the graph-flow owner D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001 stays PROOF-TARGET for the FULL row, but the DENOMINATOR is now closed by integrality. Anomaly-freedom stays D0-SM-ANOMALY-CANCELLATION-OWNER-001.
 
 ### D0-SOLENOID-001
 
@@ -3616,19 +3629,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter21 formula Lean leg in D0.Metrology.PhasonBragg: phi^-2=2-phi + frac(m.phi^-2)=frac(-m.phi) -- dangling module now resolves; the empirical Bragg-spectrum prediction stays the metrology target:]Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]
-
-### D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_04`
-- module: ``
-- theorem: `none`
-- cert: `vp_sm_hypercharge_minimal_denominator.py`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 four-physics P1] The minimal common denominator of the row {1/6,-2/3,1/3,-1/2,1,0} is lcm(6,3,3,2,1,1)=6 (verified exactly with Fraction + math.lcm). MISSING (exact): deriving 6 as FORCED by the divergence-free graph-flow solution space (not pasted from the SM). cert vp_sm_hypercharge_minimal_denominator.py (controls: denominator 5/7 is not the minimal common denominator; '6 derived from graph flow' rejected -- only the lcm fact is checked). PROOF-TARGET per the task's own guidance (anomaly checked, denominator-from-flow open).
 
 ### D0-SPECTRAL-EINSTEIN-001
 

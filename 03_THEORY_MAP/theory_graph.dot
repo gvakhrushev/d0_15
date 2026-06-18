@@ -329,7 +329,7 @@ digraph D0Theory {
   "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001" [label="D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001\\nPASSPORT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-SM-ANOMALY-CANCELLATION-OWNER-001" [label="D0-SM-ANOMALY-CANCELLATION-OWNER-001\\nCERT-CLOSED\\ngauge_bridge", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001" [label="D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
-  "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001" [label="D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001" [label="D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PAGE-CURVE-FINITE-RANK-OWNER-001" [label="D0-PAGE-CURVE-FINITE-RANK-OWNER-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001" [label="D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-HORIZON-FESHBACH-RADIATION-OWNER-001" [label="D0-HORIZON-FESHBACH-RADIATION-OWNER-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
@@ -2182,12 +2182,12 @@ digraph D0Theory {
   "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001" -> "cert:vp_hypercharge_graph_flow_owner.py" [label="cert"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001" -> "domain:frontier" [label="domain"];
-  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001" -> "module:" [label="module"];
+  "module:D0.Matter.HyperchargeMinimalDenominator" [label="D0.Matter.HyperchargeMinimalDenominator", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001" -> "module:D0.Matter.HyperchargeMinimalDenominator" [label="module"];
   "cert:vp_sm_hypercharge_minimal_denominator.py" [label="vp_sm_hypercharge_minimal_denominator.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
   "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001" -> "cert:vp_sm_hypercharge_minimal_denominator.py" [label="cert"];
-  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001" -> "domain:frontier" [label="domain"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001" -> "domain:formal_core" [label="domain"];
   "module:D0.Gravity.PageCurveFiniteRankOwner" [label="D0.Gravity.PageCurveFiniteRankOwner", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-PAGE-CURVE-FINITE-RANK-OWNER-001" -> "module:D0.Gravity.PageCurveFiniteRankOwner" [label="module"];
   "cert:vp_page_curve_finite_rank_owner.py" [label="vp_page_curve_finite_rank_owner.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
