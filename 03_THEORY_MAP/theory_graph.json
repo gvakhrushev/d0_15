@@ -4,24 +4,25 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 289,
+    "claims": 291,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 54,
+      "CERT-CLOSED": 55,
       "NO-GO": 9,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 18
+      "PROOF-TARGET": 18,
+      "PASSPORT-CLOSED": 1
     },
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 61,
+      "PYTHON_CERTIFIED": 63,
       "DEPRECATED": 2,
       "OPEN": 20
     },
@@ -29,17 +30,17 @@
       "core": 163,
       "bridge": 28,
       "no-go": 17,
-      "certificate": 60,
+      "certificate": 62,
       "deprecated": 3,
       "frontier": 18
     },
     "domain": {
-      "formal_core": 175,
+      "formal_core": 176,
       "rg": 5,
       "gauge_bridge": 20,
       "smooth_geometry": 19,
       "spectral_action": 5,
-      "empirical_passport": 19,
+      "empirical_passport": 20,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 2,
@@ -9708,6 +9709,68 @@
       "label": "vp_bridge_compression.py",
       "path": "05_CERTS/vp_bridge_compression.py",
       "exists": true
+    },
+    {
+      "id": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_cylinder_trace_unique.py",
+      "python_cert": [
+        "vp_phi_cylinder_trace_unique.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter21 closure-sprint] The D0-admissible phi-cylinder trace is UNIQUE: on the golden (Fibonacci) subshift cylinder tower the normalized shift-invariant trace is the unique left Perron eigenvector of the primitive transition M=[[1,1],[1,0]] (the 'no bb' rule), = the golden split (phi^-1,phi^-2) (= W_ext/W_int, D0-IM-002): pi M = phi pi, sum=1, embedding-compatible ((pi M)/phi=pi). Any trace differing on a finite cylinder needs a 'which frequency' catalog -> inadmissible by M1. cert vp_phi_cylinder_trace_unique.py (can-FAIL: uniform + reweighted controls rejected). Scope: D0-internal cylinder trace only; the external C*-crossed-product unique trace is the passport D0-PHI-CSTAR-PASSPORT-001.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi_cylinder_trace_unique.py",
+      "kind": "python_cert",
+      "label": "vp_phi_cylinder_trace_unique.py",
+      "path": "05_CERTS/vp_phi_cylinder_trace_unique.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHI-CSTAR-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-CSTAR-PASSPORT-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_cstar_passport.py",
+      "python_cert": [
+        "vp_phi_cstar_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Iter21 closure-sprint PASSPORT-CLOSED] External operator-algebra passport: the canonical invariant trace on the phi-hull crossed product A_phi = C(X_phi) rtimes_{sigma_phi} Z is unique under the standard unique-ergodicity / crossed-product theorem owner (external). Frozen internal object = the CERT-CLOSED D0-PHI-CYLINDER-TRACE-UNIQUE-001 cylinder trace; the external C*-theorem is packaging, NOT a D0 theorem, and the corpus does NOT claim a bare scalar C*(S_phi) has a unique trace because phi is unique. PASSPORT-CLOSED per D0-BRIDGE-COMPRESSION-001 (firewall EMPIRICAL_PASSPORT, never CORE-THE). cert vp_phi_cstar_passport.py.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi_cstar_passport.py",
+      "kind": "python_cert",
+      "label": "vp_phi_cstar_passport.py",
+      "path": "05_CERTS/vp_phi_cstar_passport.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -13729,6 +13792,36 @@
     {
       "source": "D0-BRIDGE-COMPRESSION-001",
       "target": "cert:vp_bridge_compression.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "target": "cert:vp_phi_cylinder_trace_unique.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-CSTAR-PASSPORT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-CSTAR-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-CSTAR-PASSPORT-001",
+      "target": "cert:vp_phi_cstar_passport.py",
       "kind": "certified_by"
     }
   ]

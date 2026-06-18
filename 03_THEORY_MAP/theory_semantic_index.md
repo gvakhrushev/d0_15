@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 54
+- `CERT-CLOSED`: 55
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -15,12 +15,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
+- `PASSPORT-CLOSED`: 1
 - `PROOF-TARGET`: 18
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 60
+- `certificate`: 62
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 18
@@ -29,9 +30,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 19
+- `empirical_passport`: 20
 - `external_background`: 1
-- `formal_core`: 175
+- `formal_core`: 176
 - `frontier`: 18
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
@@ -499,6 +500,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter4 T5.4] EMPIRICAL-PASSPORT. delta0-family sin^2 th12=1/3-2 delta0^2=0.30547, th13=phi^-5/4=0.02254, th23=1/2+delta0/2=0.559 vs NuFIT 6.0 (0.307/0.0220/0.561); beats GRA(0.276)/TBM(1/3)/GRB(0.345) on th12; JUNO falsifier window [0.300,0.311]. cite NuFIT 6.0 JHEP 12(2024)216 arXiv:2410.05380; JUNO. HONEST: delta0 forced, angle FORMULAS forcing is backlog/OWNER-DECISION; never core. [Iter15 sharpen — forcing attempt, honest dual] Each angle = an M1-symmetric BASELINE + a correction from forced quantities: sin2 th23 = 1/2(bimaximal) + delta0/2; sin2 th12 = 1/3(trimaximal/democratic, rank-3) - 2 delta0^2; sin2 th13 = xi5/4 (xi5=phi^-5, D0-XI5; |ABCD|=4). The baselines are M1-forced and the corrections reuse ONLY forced delta0/xi5 (no new fit); cert vp_pmns_baseline_correction.py (can-FAIL: baseline-only misses NuFIT; 1st-order delta0 for th12 misses badly => the delta0^2 ORDER is data-fixed). NAMED GAP (precise): the correction ORDERS (delta0^1 vs delta0^2 vs xi5^1) and integer coefficients (1/2, -2, 1/4) are NOT M1-derived. Stays EMPIRICAL-PASSPORT; not promoted. [Iter21] value corrected: sin^2 th12=0.30547 exact (=1/3-2 delta0^2=-37/6+4phi; was mis-displayed 0.3055/0.30553, and the baseline-correction assert target was the wrong 0.30553 at a loose 1e-4 tol -- now 0.30547 at 1e-5). JUNO citation NOT yet pinned (free-text Nature 2026, no arXiv/DOI); the JUNO falsifier-window win is provisional until a resolvable identifier is supplied (NuFIT-6.0 IS pinned: JHEP 12(2024)216 arXiv:2410.05380).
+
+### D0-PHI-CSTAR-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_06`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_cstar_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter21 closure-sprint PASSPORT-CLOSED] External operator-algebra passport: the canonical invariant trace on the phi-hull crossed product A_phi = C(X_phi) rtimes_{sigma_phi} Z is unique under the standard unique-ergodicity / crossed-product theorem owner (external). Frozen internal object = the CERT-CLOSED D0-PHI-CYLINDER-TRACE-UNIQUE-001 cylinder trace; the external C*-theorem is packaging, NOT a D0 theorem, and the corpus does NOT claim a bare scalar C*(S_phi) has a unique trace because phi is unique. PASSPORT-CLOSED per D0-BRIDGE-COMPRESSION-001 (firewall EMPIRICAL_PASSPORT, never CORE-THE). cert vp_phi_cstar_passport.py.
 
 ### D0-CKM-EXACT-001
 
@@ -1194,6 +1208,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter4 T5.1] Closes the phason LANGUAGE DEBT by FORCING (not mass-BRIDGE). Owner of the phason concept across ~99 uses. Cert vp_phason_forcing.py: cut-and-project carrier (forced, BOOK_01 01.19a) has perp DOF d_perp=D-d_par=2-1=1 (the phason); phason shift=intercept change preserves the Sturmian factor set (k=1..8) => local isomorphism => zero patch cost => GAPLESS Goldstone; density-preserving relabel => no EM charge => DARK radiation-free mode. Negative control: rational slope differs. Owning section BOOK_08 08.49. HONEST: forces the CONCEPT; downstream K-theory/spectral-triple phason-holonomy (QUASI007/008/009) stay cert-closed with EXTERNAL-GAP, not promoted.
+
+### D0-PHI-CYLINDER-TRACE-UNIQUE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_cylinder_trace_unique.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter21 closure-sprint] The D0-admissible phi-cylinder trace is UNIQUE: on the golden (Fibonacci) subshift cylinder tower the normalized shift-invariant trace is the unique left Perron eigenvector of the primitive transition M=[[1,1],[1,0]] (the 'no bb' rule), = the golden split (phi^-1,phi^-2) (= W_ext/W_int, D0-IM-002): pi M = phi pi, sum=1, embedding-compatible ((pi M)/phi=pi). Any trace differing on a finite cylinder needs a 'which frequency' catalog -> inadmissible by M1. cert vp_phi_cylinder_trace_unique.py (can-FAIL: uniform + reweighted controls rejected). Scope: D0-internal cylinder trace only; the external C*-crossed-product unique trace is the passport D0-PHI-CSTAR-PASSPORT-001.
 
 ### D0-PHI99-DEPTH-FORCING-001
 

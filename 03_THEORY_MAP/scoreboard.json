@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 4204,
-    "track_fair_max": 5247,
-    "pct_strength": 80.1,
-    "core_realized": 3664,
-    "core_potential": 4680,
-    "core_headroom": 1016,
-    "n_claims": 289,
-    "n_active": 287,
+    "realized": 4218,
+    "track_fair_max": 5274,
+    "pct_strength": 80.0,
+    "core_realized": 3671,
+    "core_potential": 4700,
+    "core_headroom": 1029,
+    "n_claims": 291,
+    "n_active": 289,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 174,
-      "realized": 2792,
-      "max": 3281,
-      "core_headroom": 484
+      "n": 175,
+      "realized": 2799,
+      "max": 3301,
+      "core_headroom": 497
     },
     "rg": {
       "n": 5,
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 19,
-      "realized": 198,
-      "max": 277,
+      "n": 20,
+      "realized": 205,
+      "max": 284,
       "core_headroom": 70
     },
     "cosmology": {
@@ -316,10 +316,10 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 13,
-      "realized": 221,
-      "max": 242,
-      "core_headroom": 21
+      "n": 15,
+      "realized": 235,
+      "max": 269,
+      "core_headroom": 34
     },
     "BOOK_01/06": {
       "n": 2,
@@ -925,6 +925,16 @@
       "claim_id": "D0-BRIDGE-COMPRESSION-001",
       "domain": "smooth_geometry",
       "book": "BOOK_05",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "domain": "formal_core",
+      "book": "BOOK_06",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1609,6 +1619,13 @@
     {
       "claim_id": "D0-BRIDGE-COMPRESSION-001",
       "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -5673,6 +5690,34 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "smooth_geometry",
       "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHI-CSTAR-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_06",
       "leverage": 0,
       "integrity_flag": null
     }

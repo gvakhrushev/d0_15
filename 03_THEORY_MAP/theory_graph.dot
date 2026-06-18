@@ -290,6 +290,8 @@ digraph D0Theory {
   "D0-XI5-CROSS-SECTOR-001" [label="D0-XI5-CROSS-SECTOR-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-ALPHA-MEASUREMENT-LIMIT-001" [label="D0-ALPHA-MEASUREMENT-LIMIT-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-BRIDGE-COMPRESSION-001" [label="D0-BRIDGE-COMPRESSION-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-PHI-CYLINDER-TRACE-UNIQUE-001" [label="D0-PHI-CYLINDER-TRACE-UNIQUE-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-PHI-CSTAR-PASSPORT-001" [label="D0-PHI-CSTAR-PASSPORT-001\\nPASSPORT-CLOSED\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -1898,4 +1900,16 @@ digraph D0Theory {
   "D0-BRIDGE-COMPRESSION-001" -> "cert:vp_bridge_compression.py" [label="cert"];
   "domain:smooth_geometry" [label="smooth_geometry", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-BRIDGE-COMPRESSION-001" -> "domain:smooth_geometry" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PHI-CYLINDER-TRACE-UNIQUE-001" -> "module:" [label="module"];
+  "cert:vp_phi_cylinder_trace_unique.py" [label="vp_phi_cylinder_trace_unique.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PHI-CYLINDER-TRACE-UNIQUE-001" -> "cert:vp_phi_cylinder_trace_unique.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PHI-CYLINDER-TRACE-UNIQUE-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PHI-CSTAR-PASSPORT-001" -> "module:" [label="module"];
+  "cert:vp_phi_cstar_passport.py" [label="vp_phi_cstar_passport.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PHI-CSTAR-PASSPORT-001" -> "cert:vp_phi_cstar_passport.py" [label="cert"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PHI-CSTAR-PASSPORT-001" -> "domain:empirical_passport" [label="domain"];
 }
