@@ -15,13 +15,13 @@ It is an EMPIRICAL-PASSPORT: it is firewall-blocked from core and is NOT a forci
 
 WHAT IS PROVED (exact + comparison, able to FAIL):
   * EXACT FORMULAS.  The three delta0-family values are computed from delta0 and phi:
-    sin^2 th12 = 0.30553, sin^2 th13 = 0.02254, sin^2 th23 = 0.55902.
+    sin^2 th12 = 0.30547, sin^2 th13 = 0.02254, sin^2 th23 = 0.55902.
   * NuFIT 6.0 AGREEMENT.  Each lands within the experimental band of the NuFIT 6.0
     normal-ordering central values (th12~0.307, th13~0.02195, th23~0.561).
   * BEATS THE STANDARD ANSATZE (the falsifier-relevant win).  On theta_12 the D0 value
-    0.30553 is closer to NuFIT than golden-ratio-A (GRA = 0.276), tri-bimaximal
+    0.30547 is closer to NuFIT than golden-ratio-A (GRA = 0.276), tri-bimaximal
     (TBM = 1/3 = 0.3333), and golden-ratio-B (GRB = 0.345).
-  * JUNO JUDGE.  JUNO will pin sin^2 theta_12 to <~0.5%; the prediction 0.30553 is the
+  * JUNO JUDGE.  JUNO will pin sin^2 theta_12 to <~0.5%; the prediction 0.30547 is the
     falsifiable target (a JUNO central value outside [0.300, 0.311] would reject it).
 
 HONESTY BOUNDARY (printed, not hidden):

@@ -66,7 +66,7 @@ def main() -> int:
     s12 = add((F(1, 3), F(0)), smul(-2, mul(delta0, delta0)))     # 1/3 − 2δ₀²
     s23 = add((F(1, 2), F(0)), smul(F(1, 2), delta0))             # 1/2 + δ₀/2
     s13 = smul(F(1, ABCD), xi5)                                   # ξ₅/4
-    assert abs(val(s12) - 0.30553) < 1e-4, f"s12 decomposition off: {val(s12)}"
+    assert abs(val(s12) - 0.30547) < 1e-5, f"s12 decomposition off: {val(s12)}"
     assert abs(val(s23) - 0.55902) < 1e-4, f"s23 decomposition off: {val(s23)}"
     assert abs(val(s13) - 0.02254) < 1e-4, f"s13 decomposition off: {val(s13)}"
     print(f"PASS_DECOMPOSITION  s12=1/3−2δ₀²={val(s12):.5f}, s23=1/2+δ₀/2={val(s23):.5f}, s13=ξ₅/4={val(s13):.5f}")
