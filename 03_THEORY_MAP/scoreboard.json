@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 4227,
-    "track_fair_max": 5106,
-    "pct_strength": 82.8,
-    "core_realized": 3624,
-    "core_potential": 4480,
-    "core_headroom": 856,
+    "realized": 4222,
+    "track_fair_max": 5119,
+    "pct_strength": 82.5,
+    "core_realized": 3626,
+    "core_potential": 4500,
+    "core_headroom": 874,
     "n_claims": 288,
     "n_active": 286,
     "duplicates": [],
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 25,
-      "realized": 240,
-      "max": 302,
+      "n": 24,
+      "realized": 233,
+      "max": 295,
       "core_headroom": 57
     },
     "cosmology": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 12,
-      "realized": 24,
-      "max": 240,
-      "core_headroom": 216
+      "n": 13,
+      "realized": 26,
+      "max": 260,
+      "core_headroom": 234
     }
   },
   "by_book": {
@@ -173,9 +173,9 @@
     },
     "BOOK_08": {
       "n": 47,
-      "realized": 742,
-      "max": 829,
-      "core_headroom": 83
+      "realized": 737,
+      "max": 842,
+      "core_headroom": 101
     },
     "BOOK_05/06": {
       "n": 6,
@@ -1012,6 +1012,16 @@
       "effort": "write cert scaffold"
     },
     {
+      "claim_id": "D0-PASSPORT-DESI-BAO-001",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
       "claim_id": "D0-PMNS-DELTACP-PI0-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1109,6 +1119,13 @@
     },
     {
       "claim_id": "D0-HODGE-LINKS-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-PASSPORT-DESI-BAO-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -4206,14 +4223,14 @@
     },
     {
       "claim_id": "D0-PASSPORT-DESI-BAO-001",
-      "track": "PASSPORT",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "empirical_passport",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_08",
       "leverage": 0,
       "integrity_flag": null
@@ -5496,7 +5513,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.3,
+    "penalty_total": 0.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5541,8 +5558,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 3,
-        "points": -0.3,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -5591,8 +5608,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 3,
-        "points": -0.3,
+        "count": 2,
+        "points": -0.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

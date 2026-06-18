@@ -11,28 +11,28 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 5
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 16
+- `EMPIRICAL-PASSPORT`: 15
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 12
+- `PROOF-TARGET`: 13
 
 ## Type counts
 
 - `bridge`: 27
-- `certificate`: 66
+- `certificate`: 65
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 12
+- `frontier`: 13
 - `no-go`: 17
 
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 25
+- `empirical_passport`: 24
 - `external_background`: 1
 - `formal_core`: 174
-- `frontier`: 12
+- `frontier`: 13
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -499,19 +499,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] pinned PDG mass-width diagnostic; no core promotion.
-
-### D0-PASSPORT-DESI-BAO-001
-
-- type: `certificate`
-- release_status: `EMPIRICAL-PASSPORT`
-- domain: `empirical_passport`
-- book: `BOOK_08`
-- module: ``
-- theorem: `none`
-- cert: `vp_desi_bao_sde_failure_diagnostics.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] honest negative survey diagnostic (FAIL on real data, no refit).
 
 ### D0-PASSPORT-ICECUBE-HESE-001
 
@@ -3056,6 +3043,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The substantive claim (matter and TT gravity on ONE shared finite cochain carrier, coupling FORCED by shared-d/conservation) is architecture-blocked: the matter side is R over archivePhaseIndex/Matrix n n (ArchiveStressRepresentative.lean, EdgeStressCoupling.lean) while the TT side is Q over Fin 4 (FiniteSpin2WaveOperator.lean) -- there is NO shared carrier, unifying them is new architecture. Worse, the d-conservation forcing the honest map needs COLLIDES with an existing internal NO-GO, canonical_stress_conservation_no_go (the symmetrized canonical stress has divergence != 0 in general), so the map cannot be derived off the shelf. Real per-side assets exist (spin2_coupling_depends_only_on_tt_stress, PiTT4_kills_trace/PiTT4_kills_gauge; finite C1 Hodge core vp_finite_hodge_complex_core.py) but do NOT constitute the cross-carrier binding the claim asserts. Jointly open with D0-SPECTRAL-EINSTEIN-001.
+
+### D0-PASSPORT-DESI-BAO-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_desi_bao_sde_failure_diagnostics.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [8C orphan-harvest] FORM pre-registered + cert-checked (frozen S_DE polynomial 160lambda^2-480lambda+359, 359=|E|, no refit -- can-FAIL on a refit). [Iter21 OVER-CLAIM FIXED] the VALUE confrontation vs DESI DR2 BAO is NOT achieved: no DESI table is present (cache empty), so the cert now emits SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED instead of the prior unconditional FAIL_..._REAL_DATA print-stub, and the faked READY manifest (a sha256 pinned for an absent file) was reverted to MISSING. Demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: an open data-confrontation obligation awaiting a pinned DESI DR2/DR3 release, matching BOOK_08 §08.48 SKIP state. Cert removed from the cert-can-fail GRANDFATHER set (now genuinely can-FAIL on the FORM).
 
 ### D0-PMNS-DELTACP-PI0-001
 

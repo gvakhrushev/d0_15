@@ -39,7 +39,6 @@ CERTS = ROOT / "05_CERTS"
 GRANDFATHER = {
     "vp_canonical_operator_search.py",
     "vp_critical_collapse_dss_echo_lattice.py",
-    "vp_desi_bao_sde_failure_diagnostics.py",
     "vp_generation_overlap_response_origin.py",
     "vp_icecube_hese_baseline_comparison.py",
     "vp_meson_positive_defect_transfer.py",

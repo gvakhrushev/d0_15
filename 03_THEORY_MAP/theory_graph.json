@@ -15,23 +15,23 @@
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 16,
-      "PROOF-TARGET": 12
+      "EMPIRICAL-PASSPORT": 15,
+      "PROOF-TARGET": 13
     },
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 66,
+      "PYTHON_CERTIFIED": 65,
       "DEPRECATED": 2,
-      "OPEN": 14
+      "OPEN": 15
     },
     "claim_type": {
       "core": 163,
       "bridge": 27,
       "no-go": 17,
-      "certificate": 66,
+      "certificate": 65,
       "deprecated": 3,
-      "frontier": 12
+      "frontier": 13
     },
     "domain": {
       "formal_core": 174,
@@ -39,12 +39,12 @@
       "gauge_bridge": 20,
       "smooth_geometry": 18,
       "spectral_action": 5,
-      "empirical_passport": 25,
+      "empirical_passport": 24,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 3,
       "interpretation_spine": 1,
-      "frontier": 12
+      "frontier": 13
     }
   },
   "nodes": [
@@ -6480,22 +6480,22 @@
       "id": "D0-PASSPORT-DESI-BAO-001",
       "kind": "claim",
       "claim_id": "D0-PASSPORT-DESI-BAO-001",
-      "type": "certificate",
-      "domain": "empirical_passport",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
       "book": "BOOK_08",
       "section": "DESI BAO S_DE failure diagnostics",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_desi_bao_sde_failure_diagnostics.py",
       "python_cert": [
         "vp_desi_bao_sde_failure_diagnostics.py"
       ],
-      "status": "EMPIRICAL-PASSPORT",
-      "notes": "[8C orphan-harvest] honest negative survey diagnostic (FAIL on real data, no refit).",
+      "status": "PROOF-TARGET",
+      "notes": "[8C orphan-harvest] FORM pre-registered + cert-checked (frozen S_DE polynomial 160lambda^2-480lambda+359, 359=|E|, no refit -- can-FAIL on a refit). [Iter21 OVER-CLAIM FIXED] the VALUE confrontation vs DESI DR2 BAO is NOT achieved: no DESI table is present (cache empty), so the cert now emits SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED instead of the prior unconditional FAIL_..._REAL_DATA print-stub, and the faked READY manifest (a sha256 pinned for an absent file) was reverted to MISSING. Demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: an open data-confrontation obligation awaiting a pinned DESI DR2/DR3 release, matching BOOK_08 §08.48 SKIP state. Cert removed from the cert-can-fail GRANDFATHER set (now genuinely can-FAIL on the FORM).",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -12317,7 +12317,7 @@
     },
     {
       "source": "D0-PASSPORT-DESI-BAO-001",
-      "target": "domain:empirical_passport",
+      "target": "domain:frontier",
       "kind": "semantic_domain"
     },
     {

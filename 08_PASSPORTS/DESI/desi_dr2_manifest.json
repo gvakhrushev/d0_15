@@ -4,7 +4,7 @@
   "source_url": "https://data.desi.lbl.gov/public/dr2/",
   "download_url": "official DR2 products",
   "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/desi_bao/desi_dr2_bao_official.csv",
-  "sha256": "1C0B7A527DB310DFFCD6D611EA913F3D2E48E62A17473F84F0E12F37DDF786A2",
+  "sha256": "",
   "downloaded_at_utc": "2026-06-06T16:54:38.240558+00:00",
   "data_fields_required": [
     "z_eff",
@@ -12,20 +12,15 @@
     "dh_rd",
     "covariance"
   ],
-  "data_fields_found": [
-    "z_eff",
-    "dm_rd",
-    "dh_rd",
-    "cov_diag"
-  ],
+  "data_fields_found": [],
   "license_or_policy_note": "Use DESI public-data policy and cite the release.",
   "citation_note": "Pin exact DESI DR2 BAO table/covariance release.",
-  "status": "READY",
-  "official_data_status": "READY",
-  "compressed_bao_vector_status": "READY",
-  "covariance_status": "READY",
+  "status": "MISSING",
+  "official_data_status": "MISSING",
+  "compressed_bao_vector_status": "MISSING",
+  "covariance_status": "MISSING",
   "source_priority": "COBAYA_BAO_DATA",
-  "sample_data": false,
+  "sample_data": true,
   "no_refit": true,
-  "note": "Official download task. Data not auto-fetched (use the URLs in source). Place official DESI DR2 BAO compressed measurements + full covariance here, update sha256, set sample_data=False, compressed_bao_vector_status=READY, covariance_status=READY. Then run cert with --mode desi_dr2_official."
+  "note": "[Iter21 faked-READY reverted] No official DESI DR2 BAO table is present in 08_PASSPORTS/_EXTERNAL_DATA_CACHE/desi_bao/ (cache empty); the prior READY flags + sha256 were a manual override of an absent file. To activate: place the official DESI DR2 BAO compressed measurements + full covariance at local_path, set the real sha256, sample_data=False, and the *_status fields to READY. Then run the cert."
 }

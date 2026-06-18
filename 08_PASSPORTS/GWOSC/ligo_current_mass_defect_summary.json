@@ -1,5 +1,7 @@
 {
-  "mode": "manifest_only",
-  "status": "PASS_LIGO_D0_MERGER_MASS_DEFECT_CURRENT",
-  "missing": []
+  "mode": "clean_BBH_run",
+  "status": "SKIP_GWOSC_EXTERNAL_DATA_REQUIRED",
+  "missing": [
+    "local_file"
+  ]
 }
