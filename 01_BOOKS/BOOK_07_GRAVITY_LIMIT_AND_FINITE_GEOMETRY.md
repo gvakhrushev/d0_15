@@ -1798,7 +1798,7 @@ Theorem block:
 - D0-GRAV-DSS-004 Spacetime Crystal Bridge
 - D0-GRAV-DSS-NOGO-001 Smooth Monotone Collapse Failure
 
-The echo-lattice closure is backed by a finite certificate and an external passport manifest.
+The echo-lattice reading is an *interpretive cross-reference* to the external GR result (arXiv:2601.14358), recorded via a citation manifest -- not a D0 numeric prediction or a data confrontation. The result is CITED, not independently re-derived or hash-pinned.
 
 The external analytic certificate owns the GR construction (closed DSS family + NLO filtering). D0 owns the finite log-time readout / capacity / admissibility interpretation.
 
