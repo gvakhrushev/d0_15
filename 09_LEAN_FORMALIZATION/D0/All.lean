@@ -104,6 +104,7 @@ import D0.Core.PositiveResponse
 import D0.Cosmology.ArchiveConvexity
 import D0.Cosmology.ArchiveHomogeneousState
 import D0.Cosmology.ArchiveVolumeBounds
+import D0.Cosmology.CLightconePercolationOwner
 import D0.Cosmology.ConcreteEntropyArchiveFlow
 import D0.Cosmology.CoreShapePassportBoundary
 import D0.Cosmology.EntropyArchiveFlow
@@ -116,6 +117,7 @@ import D0.Cosmology.LinearizedEntropyFlow
 import D0.Cosmology.PhasonFlipEntropy
 import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
+import D0.Cosmology.ReheatingHeatTraceJump
 import D0.Cosmology.ReheatingPercolationOwner
 import D0.Cosmology.ResearchPassCorollaries
 import D0.Cosmology.SDEFeedbackReduction
@@ -200,6 +202,7 @@ import D0.Geometry.EdgeMetricEquation
 import D0.Geometry.EdgeStiffnessOrigin
 import D0.Geometry.EinsteinReduction
 import D0.Geometry.ExternalAnalyticTheoremInterface
+import D0.Geometry.FibonacciAnyonUniqueness
 import D0.Geometry.FiniteSpin2
 import D0.Geometry.FiniteSpin2DOF
 import D0.Geometry.FiniteSpin2Dynamics
@@ -235,6 +238,7 @@ import D0.Gravity.MacroEinsteinInterface
 import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.OpticalJetBackreaction
 import D0.Gravity.PageCurveFiniteRankOwner
+import D0.Gravity.PageTurningPointRank
 import D0.Gravity.PressureCapacityBalance
 import D0.IM.ArchivePressureCoupling
 import D0.IM.ContinuumFromFractalTick
@@ -265,6 +269,7 @@ import D0.Matter.Book04OperatorBoundary
 import D0.Matter.Book04Selectors
 import D0.Matter.CKMBasisMismatch
 import D0.Matter.CKMBasisOrigin
+import D0.Matter.CKMClass5ParityExclusion
 import D0.Matter.CKMExactMatrixCertificate
 import D0.Matter.CKMExactTransfer
 import D0.Matter.CKMNontrivialFlavourAlgebra
@@ -281,10 +286,12 @@ import D0.Matter.GenerationMultiplicity
 import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
 import D0.Matter.HiggsScalarProjectorConstructive
+import D0.Matter.HyperchargeFlowLattice
 import D0.Matter.HyperchargeGraphFlowOwner
 import D0.Matter.HyperchargeMinimalDenominator
 import D0.Matter.KTheoryGapLabeling
 import D0.Matter.LeptonGreenPuiseuxOwner
+import D0.Matter.LeptonPuiseuxUniquenessObstruction
 import D0.Matter.LocalTraceSource
 import D0.Matter.MesonDefectTransferAlgebra
 import D0.Matter.MesonDefectTransferOrigin
@@ -338,6 +345,7 @@ import D0.Spectral.AlphaFeshbachDixmierOwner
 import D0.Spectral.CriticalAxisM1
 import D0.Spectral.DeltaAlphaExact
 import D0.Spectral.DeltaAlphaMoment
+import D0.Spectral.DeltaAlphaNormalizationNoGo
 import D0.Spectral.DeltaAlphaResidueBlocked
 import D0.Spectral.SeamHolonomy
 import D0.Spectral.ZetaResidueAlpha

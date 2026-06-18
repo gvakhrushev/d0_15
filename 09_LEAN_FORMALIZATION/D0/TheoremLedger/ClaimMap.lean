@@ -490,7 +490,27 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001", moduleName := "D0.Cosmology.ReheatingPercolationOwner",
       theoremName := "connectivity_threshold_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-REHEATING-PERCOLATION-OWNER-001", moduleName := "D0.Cosmology.ReheatingPercolationOwner",
-      theoremName := "reheating_is_connectivity_onset", status := ClaimStatus.leanCoreProved }
+      theoremName := "reheating_is_connectivity_onset", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-REHEATING-HEAT-TRACE-JUMP-001", moduleName := "D0.Cosmology.ReheatingHeatTraceJump",
+      theoremName := "reheating_heat_trace_jump", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PAGE-TURNING-POINT-RANK-THEOREM-001", moduleName := "D0.Gravity.PageTurningPointRank",
+      theoremName := "page_turning_point_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001", moduleName := "D0.Cosmology.CLightconePercolationOwner",
+      theoremName := "spec_gap_ge_20", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-C-LIGHTCONE-PERCOLATION-OWNER-001", moduleName := "D0.Cosmology.CLightconePercolationOwner",
+      theoremName := "c_lightcone_percolation_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIBONACCI-ANYON-UNIQUENESS-001", moduleName := "D0.Geometry.FibonacciAnyonUniqueness",
+      theoremName := "fibonacci_anyon_uniqueness_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ISING-ANYON-EXCLUSION-001", moduleName := "D0.Geometry.FibonacciAnyonUniqueness",
+      theoremName := "ising_requires_extra_branch", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-HYPERCHARGE-FLOW-LATTICE-001", moduleName := "D0.Matter.HyperchargeFlowLattice",
+      theoremName := "hypercharge_flow_lattice_closed", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001", moduleName := "D0.Matter.LeptonPuiseuxUniquenessObstruction",
+      theoremName := "lepton_puiseux_uniqueness_obstruction", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-CKM-CLASS5-PARITY-EXCLUSION-001", moduleName := "D0.Matter.CKMClass5ParityExclusion",
+      theoremName := "ckm_class5_parity_exclusion_status", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001", moduleName := "D0.Spectral.DeltaAlphaNormalizationNoGo",
+      theoremName := "alpha_residue_delta_normalization_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

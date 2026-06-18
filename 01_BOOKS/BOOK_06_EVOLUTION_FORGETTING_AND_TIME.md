@@ -1148,6 +1148,7 @@ Therefore D0 does not fit the speed of light.  It fixes the internal causal cone
 
 This also sharpens the time claim: time is not an extra continuum substance added to the graph.  It is the invariant registration order of finite propagation, and the smooth time coordinate is a large-scale language for that order.
 
+**Deep-stitch closure (Iteration 22): connectivity spectral gap (Fiedler λ₂=20) and the internal cone speed as a unit gauge.** The Fiedler value (smallest nonzero Laplacian eigenvalue) of `K(9,11,13)` is `λ₂=20>0` (connected; the edgeless carrier has `λ₂=0`), established from explicit real 33×33 ℚ-eigenvectors. The internal cone speed `c_{D0}=ℓ₀/τ₀=1` is one edge per discrete Floquet step — honestly a **unit-fixing gauge** (`ℓ₀=τ₀=1`), NOT a derivation; the SI speed of light is neither input nor output (rejected control). Owners: `D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001` and `D0-C-LIGHTCONE-PERCOLATION-OWNER-001` (both CERT-CLOSED), Lean `D0.Cosmology.CLightconePercolationOwner`, certs `vp_connectivity_spectral_gap_speed.py` / `vp_c_lightcone_percolation_owner.py`. Full spectrum-completeness and an exact Cheeger bound stay PROOF-TARGET.
 ## 06.36 Finite discrete evolution step-gauge closure
 
 Discrete evolution step-gauge closure: a finite record is admissible as an internal kinematic gauge only when the line readout and the time readout are two faces of one common causal section.

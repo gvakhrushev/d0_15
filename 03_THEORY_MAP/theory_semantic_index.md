@@ -7,33 +7,33 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 83
+- `CERT-CLOSED`: 89
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 11
+- `NO-GO`: 14
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 5
-- `PROOF-TARGET`: 32
+- `PROOF-TARGET`: 34
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 94
+- `certificate`: 100
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 32
-- `no-go`: 19
+- `frontier`: 34
+- `no-go`: 22
 
 ## Domain counts
 
-- `cosmology`: 31
-- `empirical_passport`: 26
+- `cosmology`: 34
+- `empirical_passport`: 27
 - `external_background`: 1
-- `formal_core`: 187
-- `frontier`: 32
+- `formal_core`: 192
+- `frontier`: 34
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -55,6 +55,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 frontier-strike] CLOSED for the INTERNAL three-zone additive CP/asymmetry coordinate eta_bar = 3*delta0: K(9,11,13) has 3 zones {9,11,13} whose CP seams form the directed 3-cycle, so the interface count is 3 -- forced by the carrier (decide: D0.Matter.TickS3BaryonAsymmetry.baryon_interface_count_three) -- and eta_bar = (interface count)*delta0 = 3*delta0 (baryon_cp_eq_three_delta0). cert vp_baryon_asymmetry_delta0.py (can-FAIL: 2-zone/4-zone wrong-count, unequal-weight catalog, hardcoded-literal, empirical-input controls). SCOPE: INTERNAL coordinate ONLY; the multiplier 3 is forced by the interface count (not a literal); the per-interface unit is the corpus seam delta0=1/(2phi^3); identifying eta_bar with the observed baryon-to-photon ratio is an empirical passport, never CORE. No cosmological datum used.
+
+### D0-C-LIGHTCONE-PERCOLATION-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_06`
+- module: `D0.Cosmology.CLightconePercolationOwner`
+- theorem: `c_lightcone_percolation_owner`
+- cert: `vp_c_lightcone_percolation_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 deep-stitch] c_D0 = ell0/tau0 = 1 (one edge per discrete Floquet step), propagation enabled at the connectivity threshold (Fiedler gap 20>0). HONEST: the VALUE 1 is a unit-fixing gauge (ell0=tau0=1), NOT a derivation; the SI speed of light is neither input nor output (rejected control). Lean D0.Cosmology.CLightconePercolationOwner.c_lightcone_percolation_owner; cert vp_c_lightcone_percolation_owner.py (controls reject SI-c input, arbitrary c!=1, disconnected-with-c=1).
+
+### D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_06`
+- module: `D0.Cosmology.CLightconePercolationOwner`
+- theorem: `spec_gap_ge_20`
+- cert: `vp_connectivity_spectral_gap_speed.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 deep-stitch] Connectivity spectral gap: K(9,11,13) Fiedler value (smallest nonzero Laplacian eigenvalue) = 20 > 0 (connected); edgeless = 0. Lean D0.Cosmology.CLightconePercolationOwner (lap_ones_eigen0 + lap_fiedler_eigen20 + fiedler_pos, real 33x33 Q-matrix eigenvectors via native_decide); cert vp_connectivity_spectral_gap_speed.py (controls reject lambda_2=2, disconnected-with-propagation). Full spectrum-completeness + exact Cheeger bound stay PROOF-TARGET.
 
 ### D0-COSMO-002
 
@@ -120,6 +146,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 five-front D] The NEGATIVE dark-energy sign is FORCED by the Galois conjugation sigma:phi->psi of Q(phi)/Q (NOT an inserted minus): the positive archive ratio phi^-1>0 maps to sigma(phi^-1)=psi^-1=-phi<0 (since phi*psi=-1; psi<0). The value is the SPECIFIC field conjugate -phi, provably distinct from the naive negation -phi^-1. Lean D0.Cosmology.PhasonWDESignNormalization.phason_wde_sign_normalization_owner; cert vp_phason_wde_sign_normalization_owner.py (controls: arbitrary-sign-flip / +phi^-1-is-physical / DESI-chooses-sign rejected). The magnitude/normalization |w_DE| stays PROOF-TARGET (D0-PHASON-WZ-EXPLICIT-FUNCTION-001); the finite ratio w_N->+phi^-1 (D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001) is not demoted.
+
+### D0-REHEATING-HEAT-TRACE-JUMP-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ReheatingHeatTraceJump`
+- theorem: `reheating_heat_trace_jump`
+- cert: `vp_reheating_heat_trace_jump.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 deep-stitch] Heat-trace JUMP at the connectivity threshold: K(9,11,13) Laplacian spectrum {0:1,20:12,22:10,24:8,33:2} vs edgeless sub-threshold {0:33}; zero-eigenvalue multiplicity (=dim ker L = #components = u->inf heat-trace limit) jumps 33->1, total multiplicity 33 conserved, lambda_2=20>0. Lean D0.Cosmology.ReheatingHeatTraceJump.reheating_heat_trace_jump; cert vp_reheating_heat_trace_jump.py (controls reject connected-still-33-zeros, n_s-from-spectrum, arbitrary threshold). n_s stays PROOF-TARGET (D0-CMB-PHASON-SPECTRUM-OWNER-001).
 
 ### D0-REHEATING-PERCOLATION-OWNER-001
 
@@ -761,6 +800,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
 - notes: Neutrino is a neutral bulk phason leakage mode internally; IceCube decoherence comparison is skipped until a complete external event energy direction response and hash manifest is supplied.
 
+### D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: `D0.Matter.LeptonPuiseuxUniquenessObstruction`
+- theorem: `lepton_puiseux_uniqueness_obstruction`
+- cert: `vp_lepton_puiseux_uniqueness_obstruction.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Iter22 deep-stitch] Branch-index shortcut FORBIDDEN: ramification index 1/n does NOT uniquely determine the operator -- two distinct 4x4 companion-type matrices both have charpoly x^4-lam (index 1/4), so the exponent row (0,1/4,1/3) cannot be promoted from exact-row to a branch-index THEOREM without a finite Green resolvent + uniqueness certificate. Lean D0.Matter.LeptonPuiseuxUniquenessObstruction.lepton_puiseux_uniqueness_obstruction (companionC4_ne_alt + branch_index_does_not_determine_operator); cert vp_lepton_puiseux_uniqueness_obstruction.py (controls reject exponent-row-alone-proves-theorem, decimals-CORE, PDG-tuned). NO-GO; D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001 stays PROOF-TARGET.
+
 ### D0-GEN-MASS-001
 
 - type: `no-go`
@@ -1222,6 +1274,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Audit->FORCING, HYP->THE] (710,113) FORCED not fitted. 710=2*D_Sigma*(2|V|+D_Sigma)=2*5*71, 113=(|ABCD|+1)*d13+|V13|=5*20+13 (every atom a named invariant, ZERO free numbers; 71=2*33+5 derived). Window=ratio q/m~tau=2pi (phase-circle period). MINIMALITY: 710/113 is the FIRST 2pi-convergent with |q/m-2pi|<1e-6 (prior 333/53 = 1.7e-4); by continued-fraction best-approximation no denom<113 beats it, and 113 is the minimal invariant-grammar denominator. Forcing = grammar-expressibility + CF-minimality, NOT look-elsewhere (M1: absence of alternatives is not the argument). HONEST: near-return is the RATIO measure (~5.3e-7); absolute |q-m*2pi|~6e-5 is denominator-scaled, NOT the criterion. Supporting Lean D0.Claims.EWWindowForcing (ew_window_grammar) proves the decomposition; the CF-minimality is cert-level (pi-dependent).
 
+### D0-FIBONACCI-ANYON-UNIQUENESS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Geometry.FibonacciAnyonUniqueness`
+- theorem: `fibonacci_anyon_uniqueness_owner`
+- cert: `vp_fibonacci_anyon_uniqueness.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 deep-stitch] Fibonacci is the unique admissible nontrivial fusion bottleneck over the degree-2 carrier Q(phi)/Q (minimal poly x^2-x-1; toral T charpoly x^2+x-1, exactly 2 eigen-branches phi^-1,-phi). Lean D0.Geometry.FibonacciAnyonUniqueness.fibonacci_anyon_uniqueness_owner; cert vp_fibonacci_anyon_uniqueness.py. Internal CORE carrier only; full unitary-fusion-category classification (Ostrik) stays EXTERNAL, NOT claimed.
+
 ### D0-FIBONACCI-IF-FORCING-001
 
 - type: `certificate`
@@ -1312,6 +1377,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: HST is external theorem object; D0-side archive hypotheses are cert-backed.
+
+### D0-HYPERCHARGE-FLOW-LATTICE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.HyperchargeFlowLattice`
+- theorem: `hypercharge_flow_lattice_closed`
+- cert: `vp_hypercharge_graph_flow_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 deep-stitch] Finite divergence-free edge-current (cycle) lattice of K(9,11,13): dim ker(B) = E-V+1 = 327, rank(B)=V-1=32 (rank-nullity 32+327=359). Lean D0.Matter.HyperchargeFlowLattice.hypercharge_flow_lattice_closed; cert vp_hypercharge_graph_flow_owner.py. HONEST: the 327-dim flow ALONE underdetermines the hypercharge row, and anomaly-freedom is met by a 2-dim space (B-L anomaly-free, denominator 3), so neither forces the row or the denominator. Flow-to-Weyl-ledger map Phi is the exact missing artifact: D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001 PROOF-TARGET. Denominator 6 owned by integrality D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001 (not redone).
 
 ### D0-KTHEORY-001
 
@@ -1468,6 +1546,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter7 cross-bridge, self-calibrated HYP NOT bridge] Probe of the deep-research claim 'gamma_Choptuik <-> C=3/8 one packing limit', downgraded by the LIMITS filter. VERDICT (cert vp_packing_limit_probe.py, able to FAIL): gamma_Choptuik(D=4)=0.373961 matches 3/8=0.375 to 0.28% (genuine near-hit), BUT gamma is monotone-increasing in D and CROSSES 3/8 between D=4 and D=5 (gamma(4)<3/8<gamma(5)=0.41322, 10.2% off) -- so 3/8 is a crossing near D=4, NOT lim gamma. The unified packing limit is NOT derived: gamma (a critical exponent) and C_max=3/8=rank/|Omega8| (a geometric ceiling) are distinct quantities coincident only at D=4. Bekenstein S=A/4 supports 'capacity finite', a separate weaker statement. HONEST: coincidence at one point != identity (same discipline as 710/113); status HYP. NAMED GAP: derive a common F(D) projecting to both gamma(D=4) and C_max, or accept the D=4 coincidence and reject the unified-limit reading. cite Ecker-Ecker-Grumiller PRL 136 191401 + arXiv:2602.10185; Jampolski-Rezzolla PRD 113 L121502; Bekenstein 1981. Links D0-COMPACTNESS-LIMIT-001 + echo-falsifier (Book 09). [Iter21 cleanup] BOOK_07 §07.51.4 was removed in the publication pass; claim stays cert-backed (vp_packing_limit_probe.py, falsifiable) as the canonical record, not narrated in the published book.
+
+### D0-PAGE-TURNING-POINT-RANK-THEOREM-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.PageTurningPointRank`
+- theorem: `page_turning_point_owner`
+- cert: `vp_page_turning_point_rank.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 deep-stitch] Page turning-point: rankSupport(D,a)=min(a,D-a) is maximal at a=D/2 with value D/2 (peaks when rank P = rank Q). Lean D0.Gravity.PageTurningPointRank.page_turning_point_owner; cert vp_page_turning_point_rank.py (controls reject argmax-at-0, value>D/2, asymmetric max). Analytic von Neumann entropy stays external; deepens D0-PAGE-CURVE-FINITE-RANK-OWNER-001.
 
 ### D0-PHASON-FORCING-001
 
@@ -3120,6 +3211,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Deprecated or historical row; not a live promotion path.
 - notes: [Iter15 trace-leg split — CLOSED] The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is proved (CORE) as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, with the phi^-5 seam = xi5 (D0-XI5). This separate trace-target row is therefore redundant and is DEPRECATED (superseded, not abandoned): the trace leg is closed at D0-ALPHA-ZETA-RESIDUE-001. The remaining open EDGE leg is the unitary-dilation / torus-ramification Puiseux target D0-EDGE-002.
 
+### D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.DeltaAlphaNormalizationNoGo`
+- theorem: `alpha_residue_delta_normalization_nogo`
+- cert: `vp_alpha_residue_delta_normalization_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Iter22 deep-stitch] Anti-numerology NO-GO: the finite Feshbach-Schur residue determines alpha_alg^-1=(159739/5,-294902/15) exactly, but does NOT by itself fix the Delta_alpha NORMALIZATION -- canonization|->Delta is injective, so the single finite residue value is compatible with more than one Delta_alpha (which 2nd canonization / 2^11 Dixmier pairing). Lean D0.Spectral.DeltaAlphaNormalizationNoGo.alpha_residue_delta_normalization_nogo (residue_coord_eq + delta_normalization_underdetermined + two_canons_same_residue_diff_delta); cert vp_alpha_residue_delta_normalization_nogo.py (controls reject finite-residue-gives-Delta-normalization, Dixmier-closed-by-finite-sum, CODATA input). External Dixmier/Wodzicki extraction stays D0-DIXMIER-RESIDUE-OWNER-001; blocks re-declaring Dixmier-closed from the finite sum.
+
 ### D0-BARE-GRAPH-DECIMAL-NOGO-001
 
 - type: `no-go`
@@ -3145,6 +3249,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-LINDEMANN-LNPHI`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: Residue/coefficient origin must be derived from the feedback resolvent trace program before any physical coefficient promotion. [was:PROOF-OBLIGATION-EXPOSED] [Iter5 owner-edge] CVFT-F1 (feedback-resolvent trace/coefficient-origin program) is declared the analytic OWNER of Delta_alpha and of the residue-at-pole route; both await this resolvent-trace engine (frontier, not a finite cert). See D0-ALPHA-ZETA-RESIDUE-001. [Iter12] Owner NARROWED for the Delta_alpha leg by D0-DELTA-ALPHA-MOMENT-001: the algebraic writing's FORM (depth-2 pi0-phase moment of W_eff in the rank-3 unit phi^-3, no constant term) is now forced/certified; only the two residue amplitudes (s->pole residues) stay this resolvent-trace engine. Sharpened, not closed. [Iter17 ТЗ-2 Phase A — SHARPENED, not closed] The Feshbach-Schur residue attack (cert vp_feshbach_residue_amplitudes.py) DERIVES mu1=1/rank as the uniform depth-0 floor return (F_N=p^2 P_N over 3 active modes) and OWNS the pi0 factor of mu2 (pi0=(6/5)phi^2 derived in BOOK_04 SS04.6.pi.4). The remaining gap is narrowed from 'derive mu1,mu2' to the single capacity factor 2^11=2^V11: it is NOT a block-trace count (2048 not in {rank3,nullity30,33,359,8,...}) and the naive edge-pushforward pairs active<->archive with multiplicity 2 (na=2, nb=357, 2+357=359=|E|), not 2^11. So the active<->archive PAIRING multiplicity is the precise open gap. CVFT-F1 stays PROOF-TARGET; the form is forced, the 2^11 amplitude is NOT resolvent-derived; Delta_alpha unchanged. [Iter18 SHARPENED again, still not closed] 2^11 now has a NAMED CANDIDATE: 2^11=dim Cl(R^11)=dim Lambda*(R^11)=2^|V11| the full exterior/fermionic-Fock dimension over the 11-zone V11 (cert vp_cvft_clifford_fock_capacity.py), distinct from the irreducible Spin(11) spinor 2^5=32 and from the naive 2-edge pairing (na=2). The residue-extraction (s->pole residue traces over the full 2^11 Fock vs the naive 2-edge pairing) is owned by the Dixmier trace / noncommutative integral (owner edge D0-DIXMIER-RESIDUE-OWNER-001 / ASSUMP-DIXMIER-TRACE). Still PROOF-TARGET; gap re-narrowed from '2^11 unexplained' to 'residue over full Cl(V11) vs 2-edge pairing'; NOT promoted. [Iter21 BLOCKED / closed-negative] The residue route to Delta_alpha is now BLOCKED: a phi-graded zeta residue carries ln phi (Res prop 1/ln phi, transcendental) whereas alpha_alg in Q(phi) is algebraic, so the residue cannot equal the algebraic anomaly. The WORKING route to the 9-digit alpha is the closure holonomy D0-ALPHA-HOLONOMY-002. [Iter21 CLOSED-NEGATIVE, Lean] now formalized: D0.Spectral.DeltaAlphaResidueBlocked (delta_alpha_residue_route_blocked) proves 1/ln phi is transcendental (inverse-transcendence of the cited ln phi) hence not equal to any a+b*phi in Q(phi), so no phi-graded residue equals the algebraic Delta_alpha; proved relative to the single cited classical fact ASSUMP-LINDEMANN-LNPHI (transcendence of ln phi, Lindemann-Weierstrass; Mathlib 4.30 formalizes only the analytic part). D0 proves everything else (phi algebraic via X^2-X-1, Q(phi) algebraic via integral closure, inverse-transcendence) from phi^2=phi+1. The residue program is therefore a closed-negative NO-GO for Delta_alpha; alpha comes from the closure holonomy D0-ALPHA-HOLONOMY-002. [Iter21 selector closed] the SCALAR-TRACE selector sub-gap (which capacity: 2^11 full ledger vs Spin(11) 32 vs edge-pairing 2) is now closed D0-internally as an M1 selector in D0-ALPHA-MU2-FULL-LEDGER-001 (full Lambda*(V11)=2^11 forced; mu2=12288/5); the physical residue-extraction realising it stays the external Dixmier owner D0-DIXMIER-RESIDUE-OWNER-001.
+
+### D0-ISING-ANYON-EXCLUSION-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Geometry.FibonacciAnyonUniqueness`
+- theorem: `ising_requires_extra_branch`
+- cert: `vp_ising_anyon_exclusion.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Iter22 deep-stitch] Ising excluded as a degree-2 CORE carrier: an Ising-type fusion carrier has 3 simple objects {1,sigma,psi} but the degree-2 toral-time algebra has only 2 eigen-branches; 3>2 forces an extra independent branch label not generated by p+p^2=1 (external catalog, M1-forbidden). Lean D0.Geometry.FibonacciAnyonUniqueness.ising_requires_extra_branch; cert vp_ising_anyon_exclusion.py (controls reject Ising-with-2-branches, hidden-psi). NO-GO: internal exclusion, NOT a full MTC classification.
 
 ### D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001
 
@@ -3266,6 +3383,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter22 five-front A] The W_eff(z)=A-B(D-zI)^-1 C block scaffold (rank 3 / dim 30) and the finite-pole-sum residue are owned (D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001, CERT-CLOSED). MISSING (exact): the residue-NORMALIZATION equality Res_D0(W_eff)=Delta_alpha (the seam) via the 2^11 active-archive pairing -- this is the EXTERNAL Dixmier/Wodzicki residue extraction (D0-DIXMIER-RESIDUE-OWNER-001, ASSUMP-DIXMIER-TRACE); the bare zeta-residue route is closed-negative (1/ln phi transcendental, D0.Spectral.DeltaAlphaResidueBlocked). cert vp_alpha_feshbach_dixmier_owner.py. Status PROOF-TARGET; no CODATA alpha enters. Existing internal alpha closures (D0-ALPHA-ALG-CLOSED-001, D0-DELTA-ALPHA-SEAM-CLOSED-001) are NOT demoted.
 
+### D0-CKM-CLASS5-PARITY-EXCLUSION-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: `D0.Matter.CKMClass5ParityExclusion`
+- theorem: `ckm_class5_parity_exclusion_status`
+- cert: `vp_ckm_class5_parity_exclusion.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 deep-stitch] HONEST PROOF-TARGET (parity alone is NOT sufficient). Finite arithmetic: |(Z/44)*|=phi(44)=20; subgroup orders {1,2,4,5,10,20}; class-5 odd, shell step +2 even, det(T)=-1, Tr(T^5)=-11. But Lean parity_only_does_not_witness_obligation PROVES parity-only cannot separate class 5 from class 1 (same parity fibre) -- so the proposed parity/orientation exclusion is NOT a rigorous contradiction. Lean D0.Matter.CKMClass5ParityExclusion (class5_odd, shell_step_even, parity_only_does_not_witness_obligation, ckm_class5_parity_exclusion_status); cert vp_ckm_class5_parity_exclusion.py. MISSING ARTIFACT: a formal orientation-parity selector sel(order,step,det) landing class 5 (not 20/1) in a forbidden coset. Class-20 stays allowed; no measured CKM angle used.
+
 ### D0-CMB-PHASON-SPECTRUM-OWNER-001
 
 - type: `frontier`
@@ -3382,6 +3512,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter21 OVER-CLAIM FIXED] demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED->PROOF-TARGET/OPEN: the cert reads NO external data and its prior 'falsifier' was a self-referential tautology (def falsified(a,b): return a and b), now removed. The only forced piece (convexity Delta^2 R_n=phi^n(phi-1)^2>0) is already CORE in the sibling D0-PHASON-THAWING-001 (D0.Cosmology.ArchiveConvexity); this row's distinct content is the H0(z)/evolving-w cosmological reading, an unverified diagnostic awaiting a pinned DESI DR2/DR3 w0wa+H0(z) table (cert now emits SKIP_H0_EVOLVING_W_EXTERNAL_DATA_REQUIRED). [Iter4 T5.5] R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.
+
+### D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_hbar_symplectic_capacity_status.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 honest status correction] The commutator obstruction [J,Y]!=0 is rigidity-forced (THE, BOOK_02 THE 2.9A). The identification of its symplectic capacity with the DIMENSIONFUL physical hbar is a mechanism-limit (prose status MECH-LIMIT): the finite symplectic-capacity MECHANISM is identified (hbar = c_symp([J,Y])), but the NORMALIZATION from the finite capacity class to physical hbar is an open bridge owner -- NOT a closed CORE theorem. hbar is not used as a core primitive; physical hbar stays bridge/metrological until the finite-capacity-to-physical normalization owner closes. Guard vp_hbar_symplectic_capacity_status.py (forbids re-asserting hbar as a derived CORE theorem). PROOF-TARGET; missing artifact: the finite-symplectic-capacity-class -> dimensionful-hbar normalization owner.
 
 ### D0-HIGGS-PHASON-CONDENSATION-OWNER-001
 

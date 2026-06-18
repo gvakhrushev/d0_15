@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4564 / 6166 (**74.0%** of track-fair max)
-- **Core spine:** 3970 / 5540 (headroom **1570** points to take every core claim to L5)
-- Claims: 337 active (339 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 4686 / 6362 (**73.7%** of track-fair max)
+- **Core spine:** 4056 / 5700 (headroom **1644** points to take every core claim to L5)
+- Claims: 348 active (350 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 100.0 / 100 (penalties **-2.0**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 100.0 / 100 (penalties **-2.5**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -19,14 +19,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
-| `orphan_proof_targets` | 20 | -2 | PROOF-TARGET markers in book prose with no registry row |
+| `orphan_proof_targets` | 25 | -2.5 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 135 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-2)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-2.5)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -41,6 +41,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-REHEATING-PERCOLATION-OWNER-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-C-LIGHTCONE-PERCOLATION-OWNER-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-FIBONACCI-ANYON-UNIQUENESS-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-GENERATIVE-DYNAMICS-001` | rg | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-UNITY-SPLIT-SPACETIME-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-BARYON-ASYMMETRY-DELTA0-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
@@ -50,13 +53,10 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-SM-ANOMALY-CANCELLATION-OWNER-001` | gauge_bridge | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-YUKAWA-SHELL-OVERLAP-MATRIX-001` | empirical_passport | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
-| `D0-ARCHIVE-HEATTRACE-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-SPECTRAL-ACTION-ADMISS-001` | spectral_action | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-HST-ARCHIVE-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-ARCHIVE-ENTROPY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-DM-CLASSICALITY-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
-| `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | PYTHON_CERTIFIED | LEAN_PROVED | 5 | write Lean proof |
+| `D0-REHEATING-HEAT-TRACE-JUMP-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-PAGE-TURNING-POINT-RANK-THEOREM-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-HYPERCHARGE-FLOW-LATTICE-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-CKM-CLASS5-PARITY-EXCLUSION-001` | frontier | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 
 ## Highest-leverage open core gaps
 
@@ -72,6 +72,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | formal_core | 1 | LEAN_PROVED | 12 |
 | `D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001` | cosmology | 1 | LEAN_PROVED | 12 |
 | `D0-REHEATING-PERCOLATION-OWNER-001` | cosmology | 1 | LEAN_PROVED | 12 |
+| `D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001` | cosmology | 1 | LEAN_PROVED | 12 |
+| `D0-C-LIGHTCONE-PERCOLATION-OWNER-001` | cosmology | 1 | LEAN_PROVED | 12 |
+| `D0-FIBONACCI-ANYON-UNIQUENESS-001` | formal_core | 1 | LEAN_PROVED | 12 |
 | `D0-CVFT-001B` | frontier | 0 | HYP | 2 |
 | `D0-CVFT-F2` | frontier | 0 | HYP | 2 |
 | `D0-CVFT-F3` | empirical_passport | 0 | HYP | 2 |
@@ -84,19 +87,16 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-QUANT-MET-004` | frontier | 0 | HYP | 2 |
 | `D0-SPECTRAL-EINSTEIN-001` | frontier | 0 | HYP | 2 |
 | `D0-HODGE-LINKS-001` | frontier | 0 | HYP | 2 |
-| `D0-DUSTY-PLASMA-001` | frontier | 0 | HYP | 2 |
-| `D0-PASSPORT-DESI-BAO-001` | frontier | 0 | HYP | 2 |
-| `D0-PASSPORT-ICECUBE-HESE-001` | frontier | 0 | HYP | 2 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 186 | 2896 | 3513 | 607 |
-| frontier | 32 | 64 | 640 | 576 |
+| formal_core | 191 | 2956 | 3597 | 631 |
+| frontier | 34 | 78 | 680 | 602 |
 | smooth_geometry | 28 | 352 | 489 | 133 |
-| empirical_passport | 26 | 262 | 391 | 120 |
-| cosmology | 31 | 525 | 591 | 66 |
+| empirical_passport | 27 | 274 | 403 | 120 |
+| cosmology | 34 | 561 | 651 | 90 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 20 | 313 | 334 | 21 |
 | rg | 5 | 61 | 73 | 8 |
@@ -108,12 +108,12 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| BOOK_08 | 59 | 816 | 1100 | 280 |
-| BOOK_04 | 62 | 808 | 1150 | 332 |
-| BOOK_07 | 55 | 714 | 996 | 268 |
-| BOOK_06 | 19 | 258 | 349 | 91 |
-| BOOK_02 | 19 | 254 | 340 | 86 |
-| BOOK_01 | 15 | 223 | 291 | 68 |
+| BOOK_04 | 65 | 844 | 1202 | 348 |
+| BOOK_08 | 60 | 828 | 1120 | 288 |
+| BOOK_07 | 56 | 726 | 1016 | 276 |
+| BOOK_06 | 21 | 282 | 389 | 107 |
+| BOOK_02 | 21 | 268 | 372 | 104 |
+| BOOK_01 | 17 | 247 | 323 | 76 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
 | BOOK_05 | 9 | 140 | 153 | 13 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |

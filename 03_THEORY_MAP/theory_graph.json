@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 339,
+    "claims": 350,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 83,
-      "NO-GO": 11,
+      "CERT-CLOSED": 89,
+      "NO-GO": 14,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 32,
+      "PROOF-TARGET": 34,
       "PASSPORT-CLOSED": 5
     },
     "lean_status": {
-      "LEAN_PROVED": 201,
+      "LEAN_PROVED": 211,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 81,
       "DEPRECATED": 2,
-      "OPEN": 34
+      "OPEN": 35
     },
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 19,
-      "certificate": 94,
+      "no-go": 22,
+      "certificate": 100,
       "deprecated": 3,
-      "frontier": 32
+      "frontier": 34
     },
     "domain": {
-      "formal_core": 187,
+      "formal_core": 192,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 28,
       "spectral_action": 5,
-      "empirical_passport": 26,
-      "cosmology": 31,
+      "empirical_passport": 27,
+      "cosmology": 34,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 32
+      "frontier": 34
     }
   },
   "nodes": [
@@ -11329,6 +11329,396 @@
       "label": "vp_inflationless_early_universe_owner.py",
       "path": "05_CERTS/vp_inflationless_early_universe_owner.py",
       "exists": true
+    },
+    {
+      "id": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+      "kind": "claim",
+      "claim_id": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02",
+      "section": "02.9",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_hbar_symplectic_capacity_status.py",
+      "python_cert": [
+        "vp_hbar_symplectic_capacity_status.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 honest status correction] The commutator obstruction [J,Y]!=0 is rigidity-forced (THE, BOOK_02 THE 2.9A). The identification of its symplectic capacity with the DIMENSIONFUL physical hbar is a mechanism-limit (prose status MECH-LIMIT): the finite symplectic-capacity MECHANISM is identified (hbar = c_symp([J,Y])), but the NORMALIZATION from the finite capacity class to physical hbar is an open bridge owner -- NOT a closed CORE theorem. hbar is not used as a core primitive; physical hbar stays bridge/metrological until the finite-capacity-to-physical normalization owner closes. Guard vp_hbar_symplectic_capacity_status.py (forbids re-asserting hbar as a derived CORE theorem). PROOF-TARGET; missing artifact: the finite-symplectic-capacity-class -> dimensionful-hbar normalization owner.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_hbar_symplectic_capacity_status.py",
+      "kind": "python_cert",
+      "label": "vp_hbar_symplectic_capacity_status.py",
+      "path": "05_CERTS/vp_hbar_symplectic_capacity_status.py",
+      "exists": true
+    },
+    {
+      "id": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "kind": "claim",
+      "claim_id": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.v15",
+      "lean_module": "D0.Cosmology.ReheatingHeatTraceJump",
+      "lean_theorem": "reheating_heat_trace_jump",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_reheating_heat_trace_jump.py",
+      "python_cert": [
+        "vp_reheating_heat_trace_jump.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 deep-stitch] Heat-trace JUMP at the connectivity threshold: K(9,11,13) Laplacian spectrum {0:1,20:12,22:10,24:8,33:2} vs edgeless sub-threshold {0:33}; zero-eigenvalue multiplicity (=dim ker L = #components = u->inf heat-trace limit) jumps 33->1, total multiplicity 33 conserved, lambda_2=20>0. Lean D0.Cosmology.ReheatingHeatTraceJump.reheating_heat_trace_jump; cert vp_reheating_heat_trace_jump.py (controls reject connected-still-33-zeros, n_s-from-spectrum, arbitrary threshold). n_s stays PROOF-TARGET (D0-CMB-PHASON-SPECTRUM-OWNER-001).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/ReheatingHeatTraceJump.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.ReheatingHeatTraceJump",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.ReheatingHeatTraceJump",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/ReheatingHeatTraceJump.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_reheating_heat_trace_jump.py",
+      "kind": "python_cert",
+      "label": "vp_reheating_heat_trace_jump.py",
+      "path": "05_CERTS/vp_reheating_heat_trace_jump.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PAGE-TURNING-POINT-RANK-THEOREM-001",
+      "kind": "claim",
+      "claim_id": "D0-PAGE-TURNING-POINT-RANK-THEOREM-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.50",
+      "lean_module": "D0.Gravity.PageTurningPointRank",
+      "lean_theorem": "page_turning_point_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_page_turning_point_rank.py",
+      "python_cert": [
+        "vp_page_turning_point_rank.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 deep-stitch] Page turning-point: rankSupport(D,a)=min(a,D-a) is maximal at a=D/2 with value D/2 (peaks when rank P = rank Q). Lean D0.Gravity.PageTurningPointRank.page_turning_point_owner; cert vp_page_turning_point_rank.py (controls reject argmax-at-0, value>D/2, asymmetric max). Analytic von Neumann entropy stays external; deepens D0-PAGE-CURVE-FINITE-RANK-OWNER-001.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/PageTurningPointRank.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gravity.PageTurningPointRank",
+      "kind": "lean_module",
+      "label": "D0.Gravity.PageTurningPointRank",
+      "path": "09_LEAN_FORMALIZATION/D0/Gravity/PageTurningPointRank.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_page_turning_point_rank.py",
+      "kind": "python_cert",
+      "label": "vp_page_turning_point_rank.py",
+      "path": "05_CERTS/vp_page_turning_point_rank.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+      "kind": "claim",
+      "claim_id": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.35",
+      "lean_module": "D0.Cosmology.CLightconePercolationOwner",
+      "lean_theorem": "spec_gap_ge_20",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_connectivity_spectral_gap_speed.py",
+      "python_cert": [
+        "vp_connectivity_spectral_gap_speed.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 deep-stitch] Connectivity spectral gap: K(9,11,13) Fiedler value (smallest nonzero Laplacian eigenvalue) = 20 > 0 (connected); edgeless = 0. Lean D0.Cosmology.CLightconePercolationOwner (lap_ones_eigen0 + lap_fiedler_eigen20 + fiedler_pos, real 33x33 Q-matrix eigenvectors via native_decide); cert vp_connectivity_spectral_gap_speed.py (controls reject lambda_2=2, disconnected-with-propagation). Full spectrum-completeness + exact Cheeger bound stay PROOF-TARGET.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/CLightconePercolationOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.CLightconePercolationOwner",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.CLightconePercolationOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/CLightconePercolationOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_connectivity_spectral_gap_speed.py",
+      "kind": "python_cert",
+      "label": "vp_connectivity_spectral_gap_speed.py",
+      "path": "05_CERTS/vp_connectivity_spectral_gap_speed.py",
+      "exists": true
+    },
+    {
+      "id": "D0-C-LIGHTCONE-PERCOLATION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-C-LIGHTCONE-PERCOLATION-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.35",
+      "lean_module": "D0.Cosmology.CLightconePercolationOwner",
+      "lean_theorem": "c_lightcone_percolation_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_c_lightcone_percolation_owner.py",
+      "python_cert": [
+        "vp_c_lightcone_percolation_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 deep-stitch] c_D0 = ell0/tau0 = 1 (one edge per discrete Floquet step), propagation enabled at the connectivity threshold (Fiedler gap 20>0). HONEST: the VALUE 1 is a unit-fixing gauge (ell0=tau0=1), NOT a derivation; the SI speed of light is neither input nor output (rejected control). Lean D0.Cosmology.CLightconePercolationOwner.c_lightcone_percolation_owner; cert vp_c_lightcone_percolation_owner.py (controls reject SI-c input, arbitrary c!=1, disconnected-with-c=1).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/CLightconePercolationOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_c_lightcone_percolation_owner.py",
+      "kind": "python_cert",
+      "label": "vp_c_lightcone_percolation_owner.py",
+      "path": "05_CERTS/vp_c_lightcone_percolation_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "kind": "claim",
+      "claim_id": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "01.14",
+      "lean_module": "D0.Geometry.FibonacciAnyonUniqueness",
+      "lean_theorem": "fibonacci_anyon_uniqueness_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_fibonacci_anyon_uniqueness.py",
+      "python_cert": [
+        "vp_fibonacci_anyon_uniqueness.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 deep-stitch] Fibonacci is the unique admissible nontrivial fusion bottleneck over the degree-2 carrier Q(phi)/Q (minimal poly x^2-x-1; toral T charpoly x^2+x-1, exactly 2 eigen-branches phi^-1,-phi). Lean D0.Geometry.FibonacciAnyonUniqueness.fibonacci_anyon_uniqueness_owner; cert vp_fibonacci_anyon_uniqueness.py. Internal CORE carrier only; full unitary-fusion-category classification (Ostrik) stays EXTERNAL, NOT claimed.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/FibonacciAnyonUniqueness.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.FibonacciAnyonUniqueness",
+      "kind": "lean_module",
+      "label": "D0.Geometry.FibonacciAnyonUniqueness",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/FibonacciAnyonUniqueness.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_fibonacci_anyon_uniqueness.py",
+      "kind": "python_cert",
+      "label": "vp_fibonacci_anyon_uniqueness.py",
+      "path": "05_CERTS/vp_fibonacci_anyon_uniqueness.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ISING-ANYON-EXCLUSION-001",
+      "kind": "claim",
+      "claim_id": "D0-ISING-ANYON-EXCLUSION-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_01",
+      "section": "01.14",
+      "lean_module": "D0.Geometry.FibonacciAnyonUniqueness",
+      "lean_theorem": "ising_requires_extra_branch",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ising_anyon_exclusion.py",
+      "python_cert": [
+        "vp_ising_anyon_exclusion.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Iter22 deep-stitch] Ising excluded as a degree-2 CORE carrier: an Ising-type fusion carrier has 3 simple objects {1,sigma,psi} but the degree-2 toral-time algebra has only 2 eigen-branches; 3>2 forces an extra independent branch label not generated by p+p^2=1 (external catalog, M1-forbidden). Lean D0.Geometry.FibonacciAnyonUniqueness.ising_requires_extra_branch; cert vp_ising_anyon_exclusion.py (controls reject Ising-with-2-branches, hidden-psi). NO-GO: internal exclusion, NOT a full MTC classification.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/FibonacciAnyonUniqueness.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_ising_anyon_exclusion.py",
+      "kind": "python_cert",
+      "label": "vp_ising_anyon_exclusion.py",
+      "path": "05_CERTS/vp_ising_anyon_exclusion.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+      "kind": "claim",
+      "claim_id": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.11",
+      "lean_module": "D0.Matter.HyperchargeFlowLattice",
+      "lean_theorem": "hypercharge_flow_lattice_closed",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_hypercharge_graph_flow_owner.py",
+      "python_cert": [
+        "vp_hypercharge_graph_flow_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 deep-stitch] Finite divergence-free edge-current (cycle) lattice of K(9,11,13): dim ker(B) = E-V+1 = 327, rank(B)=V-1=32 (rank-nullity 32+327=359). Lean D0.Matter.HyperchargeFlowLattice.hypercharge_flow_lattice_closed; cert vp_hypercharge_graph_flow_owner.py. HONEST: the 327-dim flow ALONE underdetermines the hypercharge row, and anomaly-freedom is met by a 2-dim space (B-L anomaly-free, denominator 3), so neither forces the row or the denominator. Flow-to-Weyl-ledger map Phi is the exact missing artifact: D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001 PROOF-TARGET. Denominator 6 owned by integrality D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001 (not redone).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeFlowLattice.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.HyperchargeFlowLattice",
+      "kind": "lean_module",
+      "label": "D0.Matter.HyperchargeFlowLattice",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeFlowLattice.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+      "type": "no-go",
+      "domain": "empirical_passport",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "04.8",
+      "lean_module": "D0.Matter.LeptonPuiseuxUniquenessObstruction",
+      "lean_theorem": "lepton_puiseux_uniqueness_obstruction",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_lepton_puiseux_uniqueness_obstruction.py",
+      "python_cert": [
+        "vp_lepton_puiseux_uniqueness_obstruction.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Iter22 deep-stitch] Branch-index shortcut FORBIDDEN: ramification index 1/n does NOT uniquely determine the operator -- two distinct 4x4 companion-type matrices both have charpoly x^4-lam (index 1/4), so the exponent row (0,1/4,1/3) cannot be promoted from exact-row to a branch-index THEOREM without a finite Green resolvent + uniqueness certificate. Lean D0.Matter.LeptonPuiseuxUniquenessObstruction.lepton_puiseux_uniqueness_obstruction (companionC4_ne_alt + branch_index_does_not_determine_operator); cert vp_lepton_puiseux_uniqueness_obstruction.py (controls reject exponent-row-alone-proves-theorem, decimals-CORE, PDG-tuned). NO-GO; D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001 stays PROOF-TARGET.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonPuiseuxUniquenessObstruction.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.LeptonPuiseuxUniquenessObstruction",
+      "kind": "lean_module",
+      "label": "D0.Matter.LeptonPuiseuxUniquenessObstruction",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonPuiseuxUniquenessObstruction.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_lepton_puiseux_uniqueness_obstruction.py",
+      "kind": "python_cert",
+      "label": "vp_lepton_puiseux_uniqueness_obstruction.py",
+      "path": "05_CERTS/vp_lepton_puiseux_uniqueness_obstruction.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+      "kind": "claim",
+      "claim_id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "04.10",
+      "lean_module": "D0.Matter.CKMClass5ParityExclusion",
+      "lean_theorem": "ckm_class5_parity_exclusion_status",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ckm_class5_parity_exclusion.py",
+      "python_cert": [
+        "vp_ckm_class5_parity_exclusion.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 deep-stitch] HONEST PROOF-TARGET (parity alone is NOT sufficient). Finite arithmetic: |(Z/44)*|=phi(44)=20; subgroup orders {1,2,4,5,10,20}; class-5 odd, shell step +2 even, det(T)=-1, Tr(T^5)=-11. But Lean parity_only_does_not_witness_obligation PROVES parity-only cannot separate class 5 from class 1 (same parity fibre) -- so the proposed parity/orientation exclusion is NOT a rigorous contradiction. Lean D0.Matter.CKMClass5ParityExclusion (class5_odd, shell_step_even, parity_only_does_not_witness_obligation, ckm_class5_parity_exclusion_status); cert vp_ckm_class5_parity_exclusion.py. MISSING ARTIFACT: a formal orientation-parity selector sel(order,step,det) landing class 5 (not 20/1) in a forbidden coset. Class-20 stays allowed; no measured CKM angle used.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/CKMClass5ParityExclusion.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.CKMClass5ParityExclusion",
+      "kind": "lean_module",
+      "label": "D0.Matter.CKMClass5ParityExclusion",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/CKMClass5ParityExclusion.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_ckm_class5_parity_exclusion.py",
+      "kind": "python_cert",
+      "label": "vp_ckm_class5_parity_exclusion.py",
+      "path": "05_CERTS/vp_ckm_class5_parity_exclusion.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.13",
+      "lean_module": "D0.Spectral.DeltaAlphaNormalizationNoGo",
+      "lean_theorem": "alpha_residue_delta_normalization_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_residue_delta_normalization_nogo.py",
+      "python_cert": [
+        "vp_alpha_residue_delta_normalization_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Iter22 deep-stitch] Anti-numerology NO-GO: the finite Feshbach-Schur residue determines alpha_alg^-1=(159739/5,-294902/15) exactly, but does NOT by itself fix the Delta_alpha NORMALIZATION -- canonization|->Delta is injective, so the single finite residue value is compatible with more than one Delta_alpha (which 2nd canonization / 2^11 Dixmier pairing). Lean D0.Spectral.DeltaAlphaNormalizationNoGo.alpha_residue_delta_normalization_nogo (residue_coord_eq + delta_normalization_underdetermined + two_canons_same_residue_diff_delta); cert vp_alpha_residue_delta_normalization_nogo.py (controls reject finite-residue-gives-Delta-normalization, Dixmier-closed-by-finite-sum, CODATA input). External Dixmier/Wodzicki extraction stays D0-DIXMIER-RESIDUE-OWNER-001; blocks re-declaring Dixmier-closed from the finite sum.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/DeltaAlphaNormalizationNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.DeltaAlphaNormalizationNoGo",
+      "kind": "lean_module",
+      "label": "D0.Spectral.DeltaAlphaNormalizationNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/DeltaAlphaNormalizationNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_alpha_residue_delta_normalization_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_residue_delta_normalization_nogo.py",
+      "path": "05_CERTS/vp_alpha_residue_delta_normalization_nogo.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -16100,6 +16490,171 @@
     {
       "source": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
       "target": "cert:vp_inflationless_early_universe_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+      "target": "cert:vp_hbar_symplectic_capacity_status.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "target": "module:D0.Cosmology.ReheatingHeatTraceJump",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "target": "cert:vp_reheating_heat_trace_jump.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PAGE-TURNING-POINT-RANK-THEOREM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PAGE-TURNING-POINT-RANK-THEOREM-001",
+      "target": "module:D0.Gravity.PageTurningPointRank",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PAGE-TURNING-POINT-RANK-THEOREM-001",
+      "target": "cert:vp_page_turning_point_rank.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+      "target": "module:D0.Cosmology.CLightconePercolationOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+      "target": "cert:vp_connectivity_spectral_gap_speed.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-C-LIGHTCONE-PERCOLATION-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-C-LIGHTCONE-PERCOLATION-OWNER-001",
+      "target": "module:D0.Cosmology.CLightconePercolationOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-C-LIGHTCONE-PERCOLATION-OWNER-001",
+      "target": "cert:vp_c_lightcone_percolation_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "target": "module:D0.Geometry.FibonacciAnyonUniqueness",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "target": "cert:vp_fibonacci_anyon_uniqueness.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ISING-ANYON-EXCLUSION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ISING-ANYON-EXCLUSION-001",
+      "target": "module:D0.Geometry.FibonacciAnyonUniqueness",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ISING-ANYON-EXCLUSION-001",
+      "target": "cert:vp_ising_anyon_exclusion.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+      "target": "module:D0.Matter.HyperchargeFlowLattice",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+      "target": "cert:vp_hypercharge_graph_flow_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+      "target": "module:D0.Matter.LeptonPuiseuxUniquenessObstruction",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+      "target": "cert:vp_lepton_puiseux_uniqueness_obstruction.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+      "target": "module:D0.Matter.CKMClass5ParityExclusion",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+      "target": "cert:vp_ckm_class5_parity_exclusion.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+      "target": "module:D0.Spectral.DeltaAlphaNormalizationNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+      "target": "cert:vp_alpha_residue_delta_normalization_nogo.py",
       "kind": "certified_by"
     }
   ]

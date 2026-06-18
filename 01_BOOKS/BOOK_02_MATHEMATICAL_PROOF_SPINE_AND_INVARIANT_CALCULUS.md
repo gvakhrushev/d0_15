@@ -675,7 +675,7 @@ The same finite-detector discipline that forces the base equation also forces th
 
 **[DEF] Bulk/Boundary instruments.** Let `J` (Puncture / Localization) be the operator that instantiates a topological defect inside the retained Archive Bulk, and let `Y` (Closure / Compactification) be the trace-out operator projecting the Bulk onto the Active Boundary. `J` localizes a state in the bulk; `Y` reads its boundary projection. Both are admissible finite instruments in the role alphabet, not exogenous postulates.
 
-**[THE 2.9A] Discrete origin of quantum uncertainty — ħ is derived, not postulated [^b02-19]. [^b02-18].** The holographic commutator is forced nonzero,
+**[THE 2.9A (commutator obstruction) + MECH-LIMIT (identification with physical ħ)] Discrete origin of the uncertainty obstruction [^b02-19]. [^b02-18].** What is forced (THE) is the nonzero commutator obstruction; the identification of its symplectic capacity with the *dimensionful physical* `ħ` is a mechanism-limit, not a closed CORE theorem (status `D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001`, see the status note below). The holographic commutator is forced nonzero,
 
 ```math
 [J,Y]\neq 0,
@@ -689,15 +689,17 @@ The algebraic remainder of this commutator defines the minimal irresolvable symp
 \hbar = c_{\mathrm{symp}}\big([J,Y]\big),
 ```
 
-a derived invariant of the K(9,11,13) commutator, not a postulated constant. Heisenberg uncertainty
+the symplectic capacity of the K(9,11,13) commutator obstruction. Heisenberg uncertainty
 
 ```math
 \Delta x\,\Delta p \ge \frac{\hbar}{2}
 ```
 
-is then the macroscopic shadow of the fundamental topological incompatibility between localizing a state in the Bulk (`J`) and perfectly reading its Boundary projection (`Y`). The Newton bridge `G\sim \ell_P^2 c^3/\hbar` *uses* `\hbar`; this theorem is where `\hbar` is sourced.
+is then the macroscopic shadow of the topological incompatibility between localizing a state in the Bulk (`J`) and perfectly reading its Boundary projection (`Y`).
 
-Owner: Book 02. Downstream books cite [THE 2.9A] for the discrete origin of `\hbar` and may not reintroduce `\hbar` as a free input.
+**[MECH-LIMIT — status of the `ħ` identification, `D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001`].** What is closed (THE) is the *obstruction*: `[J,Y] ≠ 0` is rigidity-forced. The finite **symplectic-capacity mechanism** is identified — `ħ` reads as the symplectic capacity `c_symp([J,Y])` of that obstruction — but the full **normalization** from the finite capacity class to the *dimensionful physical* `ħ` remains a mechanism-limit / bridge owner, not a closed CORE theorem. Accordingly `ħ` is **not** used as a core primitive; the physical `ħ` stays a bridge/metrological quantity unless and until the finite-capacity-to-physical normalization owner is closed. The Newton bridge `G\sim \ell_P^2 c^3/\hbar` *uses* `ħ` only at that bridge layer. Guard: `vp_hbar_symplectic_capacity_status.py`.
+
+Owner: Book 02. Downstream books cite [THE 2.9A] for the forced commutator obstruction `[J,Y] ≠ 0`; they may **not** cite a closed CORE derivation of physical `ħ` (it is MECH-LIMIT), and may not reintroduce `ħ` as a free core input.
 ## 02.10 Runtime, entropy and finite S-matrix
 
 For evolution and scattering, Book 02 fixes the algebraic forms; Books 06--08 own the sector interpretations.
@@ -1242,6 +1244,8 @@ which is manifestly positive semidefinite, since `P_N-Π_lab≥0` factors as `K^
 [REM] Status.  This lemma alone does NOT imply a universal `φ^-2` decoherence floor: it gives the projector inequality independent of any sector spectrum.  A golden lower bound requires the additional Clock-Sector Hypothesis 2.13A on the spectrum of the fundamental feedback-return operator.  The two are kept typed-apart: the inequality is general metrology, the golden floor is sector-declared.
 
 **[REM] The gluing anomaly as a Feshbach–Schur finite residue (`D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001`).** The algebraic writing `α_alg⁻¹` is the residue of a Feshbach–Schur effective operator `W_eff(z) = A − B(D − zI)⁻¹C` over the active (rank-3) / archive (dim-30) split. Because the archive block `D` is **finite**, the residue functional `Res_D0(W_eff) = (1/2πi)∮ Tr_archive(W_eff⁻¹ ∂_z W_eff) dz` reduces to a **finite pole sum** over the archive eigenvalues — not an infinite ζ-residue. That finite sum is exactly the depth-2 archive moment `μ₂u² + μ₁u` (`u = φ⁻³`, `μ₂ = 12288/5`, `μ₁ = 1/3`, `μ₀ = 0` ⇒ no infinite-ζ tail) and equals `α_alg⁻¹ = 159739/5 − (294902/15)φ` exactly in `ℚ(φ)` (Lean `D0.Spectral.AlphaFeshbachDixmierOwner`, cert `vp_alpha_feshbach_residue_finite_sum.py`; reuses `D0-DELTA-ALPHA-MOMENT-001`). **Status split:** the finite-pole-sum residue is CERT-CLOSED; the residue-normalization equality `Res_D0(W_eff) = Δ_α` (via the `2¹¹` active–archive pairing) stays the external Dixmier owner (`D0-ALPHA-FESHBACH-DIXMIER-OWNER-001`, PROOF-TARGET; `D0-DIXMIER-RESIDUE-OWNER-001`); the bare ζ-residue route is closed-negative (`1/lnφ` transcendental, `D0.Spectral.DeltaAlphaResidueBlocked`). The neutrino sterile probability `P_sterile = Δ_α²` is an exact `ℚ(φ)` element (`D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001`, cert `vp_neutrino_delta_alpha_norm_square.py`); the `m_ν ∝ P_sterile` reading stays the empirical neutrino passport. No measured `α` enters any of this.
+
+**Deep-stitch closure (Iteration 22): the finite residue does not fix the Δα normalization (anti-numerology NO-GO).** The finite Feshbach–Schur residue determines `α_alg⁻¹=(159739/5,−294902/15)` exactly, but the canonization↦Δ map is injective, so that single finite residue value is compatible with more than one `Δα` normalization (which second canonization / `2¹¹` Dixmier pairing is left open). Hence the finite residue alone may **not** be promoted to a closed Δα normalization — the external Dixmier/Wodzicki extraction (`D0-DIXMIER-RESIDUE-OWNER-001`) is the named missing artifact. Owner: `D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001` (NO-GO), Lean `D0.Spectral.DeltaAlphaNormalizationNoGo`, cert `vp_alpha_residue_delta_normalization_nogo.py` (controls reject finite-residue-gives-normalization, Dixmier-closed-by-finite-sum, CODATA input).
 ## 02.14 Carrier, coefficient and gravity proof blocks
 
 Carrier claims are not independent metaphysics. They are downstream carriers of the finite detector grammar. The light gauge carrier, Lorentz/EH carrier and F-theory admissible carrier are therefore classified as carrier/support bridges.
