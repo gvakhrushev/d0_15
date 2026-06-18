@@ -293,3 +293,4 @@ This is the current status index for D0 theory branches, Lean anchors, certifica
 | D0-PMNS-DELTACP-PI0-001 | frontier | frontier | PROOF-TARGET | OPEN | `` | `` | `` | Frontier/proof-target row; not a core closure, certificate pass or empirical passport. |
 | D0-XI5-CROSS-SECTOR-001 | core | formal_core | CORE-FORMALIZED | LEAN_PROVED | `D0.Claims.Xi5TorusDefect` | `xi5_torus_defect` | `vp_xi5_cross_sector.py` | Lean-owned finite/formal D0 core statement. |
 | D0-ALPHA-MEASUREMENT-LIMIT-001 | certificate | empirical_passport | EMPIRICAL-PASSPORT | PYTHON_CERTIFIED | `` | `` | `vp_alpha_measurement_limit.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |
+| D0-BRIDGE-COMPRESSION-001 | certificate | smooth_geometry | CERT-CLOSED | PYTHON_CERTIFIED | `` | `` | `vp_bridge_compression.py` | Certificate-bounded row; valid only for declared finite inputs and negative controls. |

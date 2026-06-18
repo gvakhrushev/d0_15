@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 288,
+    "claims": 289,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 53,
+      "CERT-CLOSED": 54,
       "NO-GO": 9,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -21,7 +21,7 @@
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 60,
+      "PYTHON_CERTIFIED": 61,
       "DEPRECATED": 2,
       "OPEN": 20
     },
@@ -29,7 +29,7 @@
       "core": 163,
       "bridge": 28,
       "no-go": 17,
-      "certificate": 59,
+      "certificate": 60,
       "deprecated": 3,
       "frontier": 18
     },
@@ -37,7 +37,7 @@
       "formal_core": 175,
       "rg": 5,
       "gauge_bridge": 20,
-      "smooth_geometry": 18,
+      "smooth_geometry": 19,
       "spectral_action": 5,
       "empirical_passport": 19,
       "cosmology": 24,
@@ -4681,7 +4681,7 @@
         "vp_continuum_from_fractal_tick.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[Iter21 cert->Lean] D0.IM.ContinuumFromFractalTick: constant per-tick ratio A_{n+1}=A_n*(1/phi) (constant log-gradient exponentiated), conserved total A_n+B_n=1 for all n (column-stochastic), rate 1/phi=primitiveRoot in (0,1). Matrix-exponential M_tick=exp(G) bridge + continuum-envelope limit stay cert.",
+      "notes": "[Iter21 cert->Lean] D0.IM.ContinuumFromFractalTick: constant per-tick ratio A_{n+1}=A_n*(1/phi) (constant log-gradient exponentiated), conserved total A_n+B_n=1 for all n (column-stochastic), rate 1/phi=primitiveRoot in (0,1). [Iter21 envelope->Lean] the continuous scale envelope A(t)=A0*exp(-t*log phi) is now Lean: env_cocycle (semigroup A(s+t)=A(s)A(t)/A0, BOOK_02 02.41 Semigroup Uniqueness) + env_restricts_to_ladder (A(n)=A0*(1/phi)^n) -- the phi-ladder is the internal discrete<->continuum bridge (Gate-0 first continuum). The matrix-exponential M_tick=exp(G) identity and the 'this IS the physical/smooth continuum limit' reading stay cert/owner-edge (D0-RIEFFEL-GHP-CONTINUUM-OWNER-001); NOT promoted to the smooth-manifold limit.",
       "module_path": "09_LEAN_FORMALIZATION/D0/IM/ContinuumFromFractalTick.lean",
       "module_exists": true,
       "certs_exist": true
@@ -9677,6 +9677,37 @@
       "label": "vp_alpha_measurement_limit.py",
       "path": "05_CERTS/vp_alpha_measurement_limit.py",
       "exists": true
+    },
+    {
+      "id": "D0-BRIDGE-COMPRESSION-001",
+      "kind": "claim",
+      "claim_id": "D0-BRIDGE-COMPRESSION-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_bridge_compression.py",
+      "python_cert": [
+        "vp_bridge_compression.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter21 bridge-compression] Verification rule (BOOK_05 05.6): a bridge is not an indefinite theorem debt. Once its D0-internal object is frozen, the external translation is packaging -> PASSPORT-CLOSED (firewall EMPIRICAL_PASSPORT, NEVER CORE-THE) iff all 7 conditions hold (frozen object; theorem/cert/no-go/assumption owner; explicit D0->external translation map; no reverse selection from external data/terminology; named observable tuple; deterministic PASS/FAIL; negative controls). Missing internal owner -> PROOF-TARGET; missing frozen object/protocol -> INACTIVE-BRIDGE (off the active-debt ledger). Cert vp_bridge_compression.py is can-FAIL: asserts PASSPORT-CLOSED is canonical + non-core-promotable, the rule+PASSPORT-CLOSED/INACTIVE-BRIDGE vocab+the 7 conditions are in BOOK_05 05.6, and the over-claim sentinels (LIGO confirms D0; external data selects the D0 object; smooth manifold is a primitive D0 input; neutrino data tunes Delta_alpha; etc.) are ABSENT from the books, with a planted-over-claim detector control.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_bridge_compression.py",
+      "kind": "python_cert",
+      "label": "vp_bridge_compression.py",
+      "path": "05_CERTS/vp_bridge_compression.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -13683,6 +13714,21 @@
     {
       "source": "D0-ALPHA-MEASUREMENT-LIMIT-001",
       "target": "cert:vp_alpha_measurement_limit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BRIDGE-COMPRESSION-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BRIDGE-COMPRESSION-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BRIDGE-COMPRESSION-001",
+      "target": "cert:vp_bridge_compression.py",
       "kind": "certified_by"
     }
   ]

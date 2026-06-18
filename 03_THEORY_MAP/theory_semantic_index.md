@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 53
+- `CERT-CLOSED`: 54
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -20,7 +20,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 59
+- `certificate`: 60
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 18
@@ -37,7 +37,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 18
+- `smooth_geometry`: 19
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -3579,6 +3579,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter13 BRIDGE owner-edge, 'why-finite' leg] companion to D0-QUASICRYSTAL-CARRIER-FORCING-001 ('why-phi'): non-perturbative gauge theory rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay); M1 forbids an exogenous spacing a => the carrier is the unique self-similar phi-quasicrystal (no a->0 limit). Cert vp_lattice_finiteness_bridge.py (can-FAIL: Fibonacci-inflation length ratio->phi, no fixed spacing; control: periodic lattice has distinguished a => perp-M1). External owner ASSUMP-WILSON-LATTICE-1974. Composes with the carrier-forcing claim; cert-only (no reachable Lean).
 
+### D0-BRIDGE-COMPRESSION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_05`
+- module: ``
+- theorem: `none`
+- cert: `vp_bridge_compression.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter21 bridge-compression] Verification rule (BOOK_05 05.6): a bridge is not an indefinite theorem debt. Once its D0-internal object is frozen, the external translation is packaging -> PASSPORT-CLOSED (firewall EMPIRICAL_PASSPORT, NEVER CORE-THE) iff all 7 conditions hold (frozen object; theorem/cert/no-go/assumption owner; explicit D0->external translation map; no reverse selection from external data/terminology; named observable tuple; deterministic PASS/FAIL; negative controls). Missing internal owner -> PROOF-TARGET; missing frozen object/protocol -> INACTIVE-BRIDGE (off the active-debt ledger). Cert vp_bridge_compression.py is can-FAIL: asserts PASSPORT-CLOSED is canonical + non-core-promotable, the rule+PASSPORT-CLOSED/INACTIVE-BRIDGE vocab+the 7 conditions are in BOOK_05 05.6, and the over-claim sentinels (LIGO confirms D0; external data selects the D0 object; smooth manifold is a primitive D0 input; neutrino data tunes Delta_alpha; etc.) are ABSENT from the books, with a planted-over-claim detector control.
+
 ### D0-COMPACTNESS-LIMIT-001
 
 - type: `certificate`
@@ -3697,7 +3710,7 @@ D0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPr
 - cert: `vp_continuum_from_fractal_tick.py`
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
-- notes: [Iter21 cert->Lean] D0.IM.ContinuumFromFractalTick: constant per-tick ratio A_{n+1}=A_n*(1/phi) (constant log-gradient exponentiated), conserved total A_n+B_n=1 for all n (column-stochastic), rate 1/phi=primitiveRoot in (0,1). Matrix-exponential M_tick=exp(G) bridge + continuum-envelope limit stay cert.
+- notes: [Iter21 cert->Lean] D0.IM.ContinuumFromFractalTick: constant per-tick ratio A_{n+1}=A_n*(1/phi) (constant log-gradient exponentiated), conserved total A_n+B_n=1 for all n (column-stochastic), rate 1/phi=primitiveRoot in (0,1). [Iter21 envelope->Lean] the continuous scale envelope A(t)=A0*exp(-t*log phi) is now Lean: env_cocycle (semigroup A(s+t)=A(s)A(t)/A0, BOOK_02 02.41 Semigroup Uniqueness) + env_restricts_to_ladder (A(n)=A0*(1/phi)^n) -- the phi-ladder is the internal discrete<->continuum bridge (Gate-0 first continuum). The matrix-exponential M_tick=exp(G) identity and the 'this IS the physical/smooth continuum limit' reading stay cert/owner-edge (D0-RIEFFEL-GHP-CONTINUUM-OWNER-001); NOT promoted to the smooth-manifold limit.
 
 ### D0-IM-005
 

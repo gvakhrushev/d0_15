@@ -43,7 +43,7 @@ def track_of(release: str, uses_bridge: bool) -> str:
         return "NO_GO"
     if release in ("BRIDGE-ASSUMPTIONS-EXPLICIT", "BRIDGE-CALIBRATION", "CORE_BRIDGE_SPLIT") or uses_bridge:
         return "BRIDGE"
-    if release == "EMPIRICAL-PASSPORT":
+    if release in ("EMPIRICAL-PASSPORT", "PASSPORT-CLOSED"):
         return "PASSPORT"
     if release == "EXTERNAL-BACKGROUND":
         return "EXTERNAL"
