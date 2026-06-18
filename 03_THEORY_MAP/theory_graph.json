@@ -10,12 +10,12 @@
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 50,
+      "CERT-CLOSED": 53,
       "NO-GO": 9,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 10,
+      "EMPIRICAL-PASSPORT": 7,
       "PROOF-TARGET": 17
     },
     "lean_status": {
@@ -34,12 +34,12 @@
       "frontier": 17
     },
     "domain": {
-      "formal_core": 174,
+      "formal_core": 175,
       "rg": 5,
       "gauge_bridge": 20,
       "smooth_geometry": 18,
       "spectral_action": 5,
-      "empirical_passport": 21,
+      "empirical_passport": 20,
       "cosmology": 24,
       "external_background": 1,
       "si_calibration": 2,
@@ -6370,8 +6370,8 @@
       "python_cert": [
         "vp_final_survey_likelihood_and_baryon_form_factor_closure_20260522.py"
       ],
-      "status": "EMPIRICAL-PASSPORT",
-      "notes": "[8C orphan-harvest] external-survey A_s + baryon form-factor comparison.",
+      "status": "CERT-CLOSED",
+      "notes": "[8C orphan-harvest] D0 cosmological closed-forms + baryon form-factor consistency. [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT -> CERT-CLOSED: the cert asserts INTERNAL D0 closed-forms (rank=327, beta2=960, n_s=29/30, w0=-1, w_a=-delta0^8, monotone baryon F, d0_free_survey_parameters=0) + a loose A_s plausibility band (1e-9<A_s<3e-9); it loads NO pinned survey likelihood/manifest and confronts no DESI/Planck dataset -- a FORM consistency cert, not a data comparison. A real survey-likelihood confrontation is a separate PROOF-TARGET.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -7320,7 +7320,7 @@
       "kind": "claim",
       "claim_id": "D0-E8-COLDEA-ANCHOR-001",
       "type": "certificate",
-      "domain": "empirical_passport",
+      "domain": "formal_core",
       "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_01",
       "section": "CoNb2O6 E8 quantum criticality m2/m1=phi",
@@ -7333,8 +7333,8 @@
       "python_cert": [
         "vp_e8_coldea_anchor.py"
       ],
-      "status": "EMPIRICAL-PASSPORT",
-      "notes": "[Iter4 T5.4] EMPIRICAL-PASSPORT. E8 critical spectrum m2/m1=2cos(pi/5)=phi (the D0-forced golden ratio) measured in CoNb2O6. cite Coldea et al. Science 327(2010)177; Zamolodchikov E8. HONEST: external corroboration of phi/E8, not a derivation; icosian->E8 stays EXTERNAL-GAP (Mordell); never core.",
+      "status": "CERT-CLOSED",
+      "notes": "[Iter4 T5.4; Iter21 OVER-CLAIM FIXED -> CERT-CLOSED] the verifiable content is the trig identity m2/m1=2cos(pi/5)=phi (Zamolodchikov E8) + phi^2=phi+1 -- a FORM/math cert, not a data comparison; the CoNb2O6 ratio (Coldea) is PROSE-CITED corroboration, NOT a pinned datum (the prior hand-typed measured=1.618 assert + the unconditional FAIL_ print are removed). orig: E8 critical spectrum m2/m1=2cos(pi/5)=phi (the D0-forced golden ratio) measured in CoNb2O6. cite Coldea et al. Science 327(2010)177; Zamolodchikov E8. HONEST: external corroboration of phi/E8, not a derivation; icosian->E8 stays EXTERNAL-GAP (Mordell); never core.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -8173,7 +8173,7 @@
       "domain": "empirical_passport",
       "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_08",
-      "section": "DSI log-periodic ladder observed (ZrTe5/HfTe5), FORM not value (08.51)",
+      "section": "DSI log-periodic ladder observed (ZrTe5/HfTe5), FORM not value",
       "lean_module": "",
       "lean_theorem": "",
       "lean_status": "PYTHON_CERTIFIED",
@@ -8183,8 +8183,8 @@
       "python_cert": [
         "vp_dsi_experimental.py"
       ],
-      "status": "EMPIRICAL-PASSPORT",
-      "notes": "[Iter7 cross-bridge E.1, EMPIRICAL anchor with CRITICAL gap] Discrete scale invariance (DSI) gives log-periodic observables cos(2 pi ln x / ln lambda); D0 predicts phi-ladders (lambda=phi, log-period ln(phi)=0.4812=I_f=h_KS). Log-periodic magneto-oscillations ARE observed in ZrTe5/HfTe5 (Wang et al. Natl.Sci.Rev. 6, 914, 2019; Sci.Adv. 4 eaau5096) -- direct evidence a log-periodic ladder occurs in a real material. Cert vp_dsi_experimental.py proves the log-periodic FORM (phi^k land on integer rungs) and that an experimental Coulomb-set lambda != phi gives a different log-period. HONEST CRITICAL GAP: confirms the log-periodic FORM (DSI is physically real), NOT the VALUE lambda=phi (experimental scale is Coulomb-determined, not golden). Must NOT be read as measuring phi. EMPIRICAL-PASSPORT, never core.",
+      "status": "CERT-CLOSED",
+      "notes": "[Iter7 cross-bridge E.1; Iter21 OVER-CLAIM FIXED -> CERT-CLOSED] FORM cert-verified (log-periodicity, ln(phi)=0.4812, phi^k on integer rungs); the experimental VALUE (is the observed scale = phi?) is an OPEN named gap -- no pinned ZrTe5/HfTe5 log-period is bound (the prior self-chosen lambda_exp=e^0.30 placeholder is removed), expected Coulomb-set not golden. The '(08.51)' book pointer was dangling (08.51 narrates the phason/Goldstone mode, not DSI) and is removed; book narration of the DSI FORM is itself a named documentation gap. orig EMPIRICAL anchor with CRITICAL gap: Discrete scale invariance (DSI) gives log-periodic observables cos(2 pi ln x / ln lambda); D0 predicts phi-ladders (lambda=phi, log-period ln(phi)=0.4812=I_f=h_KS). Log-periodic magneto-oscillations ARE observed in ZrTe5/HfTe5 (Wang et al. Natl.Sci.Rev. 6, 914, 2019; Sci.Adv. 4 eaau5096) -- direct evidence a log-periodic ladder occurs in a real material. Cert vp_dsi_experimental.py proves the log-periodic FORM (phi^k land on integer rungs) and that an experimental Coulomb-set lambda != phi gives a different log-period. HONEST CRITICAL GAP: confirms the log-periodic FORM (DSI is physically real), NOT the VALUE lambda=phi (experimental scale is Coulomb-determined, not golden). Must NOT be read as measuring phi. EMPIRICAL-PASSPORT, never core.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -12697,7 +12697,7 @@
     },
     {
       "source": "D0-E8-COLDEA-ANCHOR-001",
-      "target": "domain:empirical_passport",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {

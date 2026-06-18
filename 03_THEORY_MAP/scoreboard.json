@@ -20,11 +20,11 @@
   },
   "totals": {
     "realized": 4202,
-    "track_fair_max": 5175,
-    "pct_strength": 81.2,
-    "core_realized": 3634,
-    "core_potential": 4580,
-    "core_headroom": 946,
+    "track_fair_max": 5214,
+    "pct_strength": 80.6,
+    "core_realized": 3655,
+    "core_potential": 4640,
+    "core_headroom": 985,
     "n_claims": 288,
     "n_active": 286,
     "duplicates": [],
@@ -32,10 +32,10 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 173,
-      "realized": 2785,
-      "max": 3261,
-      "core_headroom": 471
+      "n": 174,
+      "realized": 2792,
+      "max": 3281,
+      "core_headroom": 484
     },
     "rg": {
       "n": 5,
@@ -62,16 +62,16 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 21,
-      "realized": 212,
-      "max": 278,
-      "core_headroom": 57
+      "n": 20,
+      "realized": 205,
+      "max": 284,
+      "core_headroom": 70
     },
     "cosmology": {
       "n": 24,
       "realized": 446,
-      "max": 459,
-      "core_headroom": 13
+      "max": 472,
+      "core_headroom": 26
     },
     "external_background": {
       "n": 1,
@@ -114,8 +114,8 @@
     "BOOK_01": {
       "n": 15,
       "realized": 223,
-      "max": 278,
-      "core_headroom": 55
+      "max": 291,
+      "core_headroom": 68
     },
     "BOOK_02": {
       "n": 13,
@@ -174,8 +174,8 @@
     "BOOK_08": {
       "n": 47,
       "realized": 732,
-      "max": 855,
-      "core_headroom": 119
+      "max": 881,
+      "core_headroom": 145
     },
     "BOOK_05/06": {
       "n": 6,
@@ -712,6 +712,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-COSMO-002",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-TIME-MODULAR-FLOW-001",
       "domain": "formal_core",
       "book": "BOOK_01",
@@ -762,6 +772,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-E8-COLDEA-ANCHOR-001",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-MASS-CHAIN-001",
       "domain": "formal_core",
       "book": "BOOK_04/06",
@@ -805,6 +825,16 @@
       "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
       "domain": "formal_core",
       "book": "BOOK_06",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-DSI-EXPERIMENTAL-001",
+      "domain": "empirical_passport",
+      "book": "BOOK_08",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -1403,6 +1433,13 @@
       "score": 7
     },
     {
+      "claim_id": "D0-COSMO-002",
+      "domain": "cosmology",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
       "claim_id": "D0-TIME-MODULAR-FLOW-001",
       "domain": "formal_core",
       "leverage": 0,
@@ -1432,6 +1469,13 @@
     },
     {
       "claim_id": "D0-PHASON-FORCING-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-E8-COLDEA-ANCHOR-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -1468,6 +1512,13 @@
     {
       "claim_id": "D0-MODULAR-TIME-FLAVOR-001",
       "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-DSI-EXPERIMENTAL-001",
+      "domain": "empirical_passport",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -4235,12 +4286,12 @@
     },
     {
       "claim_id": "D0-COSMO-002",
-      "track": "PASSPORT",
+      "track": "CORE",
       "level": 3,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "cosmology",
       "book": "BOOK_08",
@@ -4641,14 +4692,14 @@
     },
     {
       "claim_id": "D0-E8-COLDEA-ANCHOR-001",
-      "track": "PASSPORT",
+      "track": "CORE",
       "level": 3,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
       "lean_status": "PYTHON_CERTIFIED",
-      "domain": "empirical_passport",
+      "domain": "formal_core",
       "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
@@ -4963,12 +5014,12 @@
     },
     {
       "claim_id": "D0-DSI-EXPERIMENTAL-001",
-      "track": "PASSPORT",
+      "track": "CORE",
       "level": 3,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "empirical_passport",
       "book": "BOOK_08",
