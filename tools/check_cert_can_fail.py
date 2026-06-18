@@ -41,7 +41,6 @@ CERTS = ROOT / "05_CERTS"
 # (no data loaded ⇒ nothing finite to gate). These are owner-decision; the set must only SHRINK.
 GRANDFATHER = {
     "vp_canonical_operator_search.py",
-    "vp_critical_collapse_dss_echo_lattice.py",
     "vp_generation_overlap_response_origin.py",
     "vp_meson_positive_defect_transfer.py",
     "vp_qnm_delta0_overtone_ladder.py",

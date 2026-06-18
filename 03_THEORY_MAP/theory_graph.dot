@@ -195,7 +195,7 @@ digraph D0Theory {
   "D0-COSMO-003" [label="D0-COSMO-003\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-COSMO-002" [label="D0-COSMO-002\\nEMPIRICAL-PASSPORT\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-DUSTY-PLASMA-001" [label="D0-DUSTY-PLASMA-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
-  "D0-CRITICAL-COLLAPSE-001" [label="D0-CRITICAL-COLLAPSE-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-CRITICAL-COLLAPSE-001" [label="D0-CRITICAL-COLLAPSE-001\\nCORE_BRIDGE_SPLIT\\nempirical_passport", fillcolor="#6f5fb5", fontcolor="white"];
   "D0-PASSPORT-CORE13-001" [label="D0-PASSPORT-CORE13-001\\nEMPIRICAL-PASSPORT\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PASSPORT-DESI-BAO-001" [label="D0-PASSPORT-DESI-BAO-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-PASSPORT-ICECUBE-HESE-001" [label="D0-PASSPORT-ICECUBE-HESE-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];

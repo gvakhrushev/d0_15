@@ -8,14 +8,14 @@
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
-      "CORE_BRIDGE_SPLIT": 5,
+      "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 50,
       "NO-GO": 9,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 11,
+      "EMPIRICAL-PASSPORT": 10,
       "PROOF-TARGET": 17
     },
     "lean_status": {
@@ -27,9 +27,9 @@
     },
     "claim_type": {
       "core": 163,
-      "bridge": 27,
+      "bridge": 28,
       "no-go": 17,
-      "certificate": 61,
+      "certificate": 60,
       "deprecated": 3,
       "frontier": 17
     },
@@ -6418,9 +6418,9 @@
       "id": "D0-CRITICAL-COLLAPSE-001",
       "kind": "claim",
       "claim_id": "D0-CRITICAL-COLLAPSE-001",
-      "type": "certificate",
+      "type": "bridge",
       "domain": "empirical_passport",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.",
       "book": "BOOK_07",
       "section": "critical-collapse DSS echo-lattice bridge",
       "lean_module": "",
@@ -6432,8 +6432,8 @@
       "python_cert": [
         "vp_critical_collapse_dss_echo_lattice.py"
       ],
-      "status": "EMPIRICAL-PASSPORT",
-      "notes": "[8C orphan-harvest] pins external arXiv:2601.14358 DSS solutions via hash manifest.",
+      "status": "CORE_BRIDGE_SPLIT",
+      "notes": "[8C orphan-harvest] one-directional interpretive cross-reference to the external GR result arXiv:2601.14358 (large-D DSS Einstein-Klein-Gordon). [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT -> CORE_BRIDGE_SPLIT and the 'pins ... via hash manifest' claim removed: the cert did NOT pin anything -- its three 'pinned: hash=' lines were sha256 of self-typed '(simulated fetch)' strings (fabricated provenance), now removed. The external result is CITED, not fetched/pinned; D0 records only the echo-lattice/SSH=capacity-null-boundary interpretive readings (no D0 numeric prediction, no measurement). The cert's one real can-FAIL is that the local manifest exists and cites arXiv:2601.14358.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true

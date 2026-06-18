@@ -13,16 +13,11 @@
     "topology",
     "sha256"
   ],
-  "data_fields_found": [
-    "event_count",
-    "energy_field",
-    "direction_fields",
-    "topology",
-    "sha256"
-  ],
+  "data_fields_found": [],
   "license_or_policy_note": "Use IceCube public-data policy and cite release metadata.",
-  "citation_note": "Pin the exact IceCube HESE release URL/date in a completed manifest.",
-  "status": "READY",
+  "citation_note": "Pin the exact IceCube HESE release URL/date in a completed manifest. To activate: download files[] to their local_path under 08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/hese12/, confirm each sha256 matches, repopulate data_fields_found, then set status READY.",
+  "status": "MISSING",
+  "note": "faked-READY reverted: the pinned HESE 12-yr event + license files are absent (cache dir 08_PASSPORTS/_EXTERNAL_DATA_CACHE/icecube/hese12/ does not exist). The listed sha256 are the EXPECTED published-release verification hashes for when the files are placed; status stays MISSING until they are present and hash-verified.",
   "files": [
     {
       "label": "hese12_events",

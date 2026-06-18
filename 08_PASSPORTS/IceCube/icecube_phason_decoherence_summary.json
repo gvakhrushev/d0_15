@@ -3,6 +3,12 @@
   "manifest_path": "08_PASSPORTS/IceCube/icecube_manifest.json",
   "manifest_complete": false,
   "missing": [
+    "event_count",
+    "energy_field",
+    "direction_fields",
+    "topology",
+    "sha256",
+    "status_READY",
     "missing_file:hese12_events",
     "missing_file:hese12_license"
   ],

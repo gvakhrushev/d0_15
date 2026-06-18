@@ -9,9 +9,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 50
 - `CORE-FORMALIZED`: 162
-- `CORE_BRIDGE_SPLIT`: 5
+- `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 11
+- `EMPIRICAL-PASSPORT`: 10
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
@@ -19,8 +19,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 27
-- `certificate`: 61
+- `bridge`: 28
+- `certificate`: 60
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 17
@@ -357,6 +357,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain: empirical_passport
 
+### D0-CRITICAL-COLLAPSE-001
+
+- type: `bridge`
+- release_status: `CORE_BRIDGE_SPLIT`
+- domain: `empirical_passport`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_critical_collapse_dss_echo_lattice.py`
+- assumptions: `none`
+- scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
+- notes: [8C orphan-harvest] one-directional interpretive cross-reference to the external GR result arXiv:2601.14358 (large-D DSS Einstein-Klein-Gordon). [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT -> CORE_BRIDGE_SPLIT and the 'pins ... via hash manifest' claim removed: the cert did NOT pin anything -- its three 'pinned: hash=' lines were sha256 of self-typed '(simulated fetch)' strings (fabricated provenance), now removed. The external result is CITED, not fetched/pinned; D0 records only the echo-lattice/SSH=capacity-null-boundary interpretive readings (no D0 numeric prediction, no measurement). The cert's one real can-FAIL is that the local manifest exists and cites arXiv:2601.14358.
+
 ### D0-CVFT-F3
 
 - type: `certificate`
@@ -421,19 +434,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter21 HYP/bet] the last ~1e-8 alpha layer is the measurement-limit band: alpha_struct=137.035999151 is straddled by CODATA-2018/2022 and the gap (6.7e-8) < inter-edition shift (9.3e-8). Falsifiable bet: refined alpha^-1 stays bracketed within the inter-edition band of 137.035999151 (CODATA-2018 below, CODATA-2022 above -- a straddle, NOT a monotone 'from below'; the cert asserts the latest gap 2.6e-8 < the 9.3e-8 reach). [Iter21] corrected the prior 'from below' wording, which its own cited straddle contradicted. The holonomy THE-structure and CHK match do not depend on this layer; 2nd-order holonomy does NOT close it.
-
-### D0-CRITICAL-COLLAPSE-001
-
-- type: `certificate`
-- release_status: `EMPIRICAL-PASSPORT`
-- domain: `empirical_passport`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_critical_collapse_dss_echo_lattice.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] pins external arXiv:2601.14358 DSS solutions via hash manifest.
 
 ### D0-DSI-EXPERIMENTAL-001
 

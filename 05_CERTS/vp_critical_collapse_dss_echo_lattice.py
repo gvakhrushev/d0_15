@@ -1,100 +1,87 @@
 #!/usr/bin/env python3
-"""
-D0 critical collapse DSS echo-lattice bridge certificate.
-Pins arXiv:2601.14358 (PRL 2026 analytic large-D discretely self-similar
-Einstein-massless-Klein-Gordon solutions) and ancillary notebook.
-"""
+"""D0 critical-collapse DSS echo-lattice bridge — INTERPRETIVE cross-reference to an external GR result.
 
+This is a one-directional BRIDGE (CORE_BRIDGE_SPLIT), NOT a data passport: it CITES the external
+analytic result arXiv:2601.14358 (PRL 2026, analytic large-D discretely self-similar
+Einstein-massless-Klein-Gordon solutions) and records how D0's echo-lattice / terminal-archive-boundary
+picture reads it. It does NOT fetch, hash-pin, or independently re-derive the paper; it claims no D0
+numeric prediction and confronts no measurement.
+
+(Earlier this cert printed `arXiv source pinned: hash=<sha256 of a self-typed "(simulated fetch)"
+string>` for three artifacts -- fabricated provenance, since each hash depended on nothing real. Those
+fake-pinning lines are removed; the external result is CITED, not pinned. The one real check kept is
+that the local manifest exists and cites the same arXiv id.)
+"""
 from __future__ import annotations
 
-import hashlib
 import json
+import sys
 from pathlib import Path
-from datetime import datetime, timezone
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
+ROOT = Path(__file__).resolve().parents[1]
+MANIFEST = ROOT / "08_PASSPORTS" / "CriticalCollapseDSS" / "dss_prl2026_manifest.json"
 
 ARXIV_ID = "2601.14358"
-ARXIV_URL = "https://arxiv.org/abs/2601.14358"
-ARXIV_HTML = "https://arxiv.org/html/2601.14358v1"
 DOI = "10.1103/qgl5-5l3t"
 NOTEBOOK = "NNNLOLargeD.nb"
 EXPECTED_TITLE = "Analytic discrete self-similar solutions of Einstein-Klein-Gordon at large D"
 
-STATUS = "PASS_CRITICAL_COLLAPSE_DSS_ECHO_LATTICE_BRIDGE"
+# external claims, as STATED by the cited paper (cited, not independently verified here)
+CITED_CLAIMS = [
+    "closed analytic infinite family of DSS solutions",
+    "Einstein-massless-Klein-Gordon system",
+    "large-D expansion",
+    "self-similar horizon (SSH) as null surface",
+    "spacetime-crystal interpretation (lattice vector timelike / spacelike / lightlike)",
+    "NLO consistency / convexity / SSH constraints filter periodic functions",
+    "echoing period Delta appears; not all LO functions survive NLO",
+]
+# D0-side interpretive readings (the bridge content; no numeric prediction)
+D0_READINGS = [
+    "echo lattice at critical threshold -> finite log-time recurrence (D0)",
+    "SSH = capacity-null boundary (D0 terminal archive boundary)",
+    "NLO admissibility = no-go filter on illegal critical readout modes",
+]
 
-def simulate_hash(data: str) -> str:
-    return hashlib.sha256(data.encode()).hexdigest()[:16]
 
-def run_certificate() -> None:
-    print("--- D0 CRITICAL COLLAPSE DSS ECHO-LATTICE BRIDGE CERTIFICATE ---")
-    print(f"arXiv: {ARXIV_ID}  DOI: {DOI}")
-    print(f"Title (pinned): {EXPECTED_TITLE}")
-    print()
+def run_certificate() -> int:
+    print("--- D0 CRITICAL-COLLAPSE DSS ECHO-LATTICE BRIDGE (interpretive cross-reference, not a data passport) ---")
+    print(f"CITES (not fetched/pinned): arXiv:{ARXIV_ID}  DOI:{DOI}  notebook:{NOTEBOOK}")
+    print(f"  title: {EXPECTED_TITLE}")
 
-    # 1. Pin source
-    arxiv_source = f"arXiv source for {ARXIV_ID} (simulated fetch)"
-    arxiv_hash = simulate_hash(arxiv_source)
-    print(f"[1] arXiv source pinned: hash={arxiv_hash}")
+    # ---- the one real can-FAIL check: the local manifest must exist AND cite this arXiv id ----
+    assert MANIFEST.exists(), f"DSS manifest missing: {MANIFEST}"
+    mtext = MANIFEST.read_text(encoding="utf-8")
+    assert ARXIV_ID in mtext, f"manifest must cite the bridged source arXiv:{ARXIV_ID}"
+    print(f"PASS_MANIFEST_CITES_SOURCE  dss_prl2026_manifest.json present and cites arXiv:{ARXIV_ID} "
+          "(a wrong/absent manifest FAILs this assert)")
 
-    # 2. Pin HTML / claims
-    html_claims = "DSS solutions, large-D expansion, self-similar horizon, spacetime crystal interpretation, NLO convexity restrictions"
-    html_hash = simulate_hash(html_claims)
-    print(f"[2] arXiv HTML claims pinned: hash={html_hash}")
+    print("[external, CITED -- the paper's stated claims, not independently re-derived here]:")
+    for c in CITED_CLAIMS:
+        print(f"  - {c}")
+    print("[D0 reading -- interpretive bridge, no numeric prediction]:")
+    for d in D0_READINGS:
+        print(f"  - {d}")
+    print("  D0-GRAV-DSS-001/002/003/004 bridges recorded.")
 
-    # 3. Ancillary notebook
-    notebook_data = f"Mathematica notebook {NOTEBOOK} for NNNLO large-D DSS (simulated)"
-    notebook_hash = simulate_hash(notebook_data)
-    print(f"[3] Ancillary notebook {NOTEBOOK} pinned: hash={notebook_hash}")
-    print("    (NOTE: full reproduction requires local Mathematica / Wolfram engine)")
+    print("SKIP_DSS_NOTEBOOK_REPRODUCTION_TOOL_REQUIRED  notebook repro needs a local Wolfram engine; "
+          "the GR content stays externally owned, CITED not re-derived")
 
-    # 4. Verified claims (textual + structure match to paper)
-    claims = [
-        "closed analytic infinite family of DSS solutions",
-        "Einstein-massless-Klein-Gordon system",
-        "large-D expansion",
-        "self-similar horizon (SSH) as null surface",
-        "spacetime-crystal interpretation (lattice vector timelike / spacelike / lightlike)",
-        "NLO consistency / convexity / SSH constraints filter periodic functions",
-        "echoing period Δ appears; not all LO functions survive NLO"
-    ]
-    for c in claims:
-        print(f"    - {c}: VERIFIED (paper text)")
-    print("    [4] Core GR claims: PASS")
-
-    # 5. D0 reading (no overclaim)
-    print("[5] D0 reading (external analytic certificate owns GR source):")
-    print("    - Echo lattice at critical threshold → finite log-time recurrence (D0)")
-    print("    - SSH = capacity-null boundary (D0 terminal archive boundary)")
-    print("    - NLO admissibility = no-go filter on illegal critical readout modes")
-    print("    D0-GRAV-DSS-001/002/003/004 bridges recorded.")
-
-    # Notebook reproduction status
-    repro_status = "SKIP_DSS_NOTEBOOK_REPRODUCTION_TOOL_REQUIRED"
-    print(f"[6] Notebook data reproduction: {repro_status}")
-    print("    (Would extract NEC lines, SSH function, convexity condition, sample periodic Z(τ) if tool present)")
-
-    overall = "PASS_CRITICAL_COLLAPSE_DSS_ECHO_LATTICE_BRIDGE"
-    print(f"\n{overall}")
-
-    # Write results
     results = {
-        "status": overall,
-        "arxiv": ARXIV_ID,
-        "doi": DOI,
-        "title": EXPECTED_TITLE,
-        "notebook": NOTEBOOK,
-        "hashes": {
-            "arxiv_source": arxiv_hash,
-            "html_claims": html_hash,
-            "notebook": notebook_hash,
-        },
-        "claims_verified": claims,
-        "d0_reading": "Echo lattice as finite log-time capacity recurrence at horizon threshold",
-        "notebook_repro": repro_status,
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "status": "BRIDGE_RECORDED_CRITICAL_COLLAPSE_DSS_ECHO_LATTICE",
+        "external_owner": {"arxiv": ARXIV_ID, "doi": DOI, "title": EXPECTED_TITLE, "notebook": NOTEBOOK,
+                           "provenance": "CITED, not fetched/hash-pinned"},
+        "cited_claims": CITED_CLAIMS,
+        "d0_readings": D0_READINGS,
+        "notebook_repro": "SKIP_DSS_NOTEBOOK_REPRODUCTION_TOOL_REQUIRED",
     }
-    out_path = Path(__file__).with_suffix(".results.json")
-    out_path.write_text(json.dumps(results, indent=2))
-    print(f"\nResults written to {out_path.name}")
+    (Path(__file__).with_suffix(".results.json")).write_text(json.dumps(results, indent=2), encoding="utf-8")
+    print("PASS_CRITICAL_COLLAPSE_DSS_ECHO_LATTICE_BRIDGE")  # the interpretive bridge is recorded honestly
+    return 0
+
 
 if __name__ == "__main__":
-    run_certificate()
+    raise SystemExit(run_certificate())

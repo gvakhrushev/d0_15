@@ -4,7 +4,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4202 / 5171 (**81.3%** of track-fair max)
+- **Realized strength:** 4202 / 5175 (**81.2%** of track-fair max)
 - **Core spine:** 3634 / 4580 (headroom **946** points to take every core claim to L5)
 - Claims: 286 active (288 total); integrity demotions: 0; duplicates: 0
 
@@ -92,7 +92,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 |---|--:|--:|--:|--:|
 | formal_core | 173 | 2785 | 3261 | 471 |
 | frontier | 17 | 34 | 340 | 306 |
-| empirical_passport | 21 | 212 | 274 | 57 |
+| empirical_passport | 21 | 212 | 278 | 57 |
 | smooth_geometry | 18 | 272 | 315 | 39 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
@@ -108,7 +108,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 |---|--:|--:|--:|--:|
 | BOOK_08 | 47 | 732 | 855 | 119 |
 | BOOK_04 | 47 | 708 | 871 | 158 |
-| BOOK_07 | 48 | 650 | 878 | 218 |
+| BOOK_07 | 48 | 650 | 882 | 218 |
 | BOOK_01 | 15 | 223 | 278 | 55 |
 | BOOK_06 | 13 | 221 | 242 | 21 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |

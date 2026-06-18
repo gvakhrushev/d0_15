@@ -20,8 +20,8 @@
   },
   "totals": {
     "realized": 4202,
-    "track_fair_max": 5171,
-    "pct_strength": 81.3,
+    "track_fair_max": 5175,
+    "pct_strength": 81.2,
     "core_realized": 3634,
     "core_potential": 4580,
     "core_headroom": 946,
@@ -64,7 +64,7 @@
     "empirical_passport": {
       "n": 21,
       "realized": 212,
-      "max": 274,
+      "max": 278,
       "core_headroom": 57
     },
     "cosmology": {
@@ -150,7 +150,7 @@
     "BOOK_07": {
       "n": 48,
       "realized": 650,
-      "max": 878,
+      "max": 882,
       "core_headroom": 218
     },
     "BOOK_06/08": {
@@ -4263,12 +4263,12 @@
     },
     {
       "claim_id": "D0-CRITICAL-COLLAPSE-001",
-      "track": "PASSPORT",
+      "track": "BRIDGE",
       "level": 3,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
+      "ceiling": 11,
+      "release_status": "CORE_BRIDGE_SPLIT",
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "empirical_passport",
       "book": "BOOK_07",
