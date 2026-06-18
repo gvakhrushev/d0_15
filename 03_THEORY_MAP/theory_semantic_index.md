@@ -11,19 +11,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 5
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 13
+- `EMPIRICAL-PASSPORT`: 12
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 15
+- `PROOF-TARGET`: 16
 
 ## Type counts
 
 - `bridge`: 27
-- `certificate`: 63
+- `certificate`: 62
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 15
+- `frontier`: 16
 - `no-go`: 17
 
 ## Domain counts
@@ -32,11 +32,11 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `empirical_passport`: 22
 - `external_background`: 1
 - `formal_core`: 174
-- `frontier`: 15
+- `frontier`: 16
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
-- `si_calibration`: 3
+- `si_calibration`: 2
 - `smooth_geometry`: 18
 - `spectral_action`: 5
 
@@ -3005,6 +3005,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter15 trace-leg split] The edge-alpha TRACE leg is CLOSED (Tr(F_E)=359 phi^-2-phi^-5 = alpha_top^-1 proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, CORE; seam xi5 = D0-XI5). What remains genuinely OPEN here is ONLY the unitary-dilation / torus-ramification Puiseux leg: the analytic continuation of the edge trace through the ramified cover (Puiseux series of the edge sector), which is not a finite identity. Status PROOF-TARGET. Companion finite content at D0-EDGE-ALPHA-001 / D0-EDGE-RAMIFICATION-001 (cert-closed).
 
+### D0-H0-EVOLVING-W-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_h0_evolving_w.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter21 OVER-CLAIM FIXED] demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED->PROOF-TARGET/OPEN: the cert reads NO external data and its prior 'falsifier' was a self-referential tautology (def falsified(a,b): return a and b), now removed. The only forced piece (convexity Delta^2 R_n=phi^n(phi-1)^2>0) is already CORE in the sibling D0-PHASON-THAWING-001 (D0.Cosmology.ArchiveConvexity); this row's distinct content is the H0(z)/evolving-w cosmological reading, an unverified diagnostic awaiting a pinned DESI DR2/DR3 w0wa+H0(z) table (cert now emits SKIP_H0_EVOLVING_W_EXTERNAL_DATA_REQUIRED). [Iter4 T5.5] R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.
+
 ### D0-HODGE-LINKS-001
 
 - type: `frontier`
@@ -3497,19 +3510,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
 - notes: D0 core computes dimensionless traces; H0/GN/Lambda require an explicit ExternalSICalibration object.
-
-### D0-H0-EVOLVING-W-001
-
-- type: `certificate`
-- release_status: `EMPIRICAL-PASSPORT`
-- domain: `si_calibration`
-- book: `BOOK_08`
-- module: ``
-- theorem: `none`
-- cert: `vp_h0_evolving_w.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter4 T5.5] EMPIRICAL-PASSPORT. R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.
 
 
 ## Domain: smooth_geometry

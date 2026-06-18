@@ -15,23 +15,23 @@
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 13,
-      "PROOF-TARGET": 15
+      "EMPIRICAL-PASSPORT": 12,
+      "PROOF-TARGET": 16
     },
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 63,
+      "PYTHON_CERTIFIED": 62,
       "DEPRECATED": 2,
-      "OPEN": 17
+      "OPEN": 18
     },
     "claim_type": {
       "core": 163,
       "bridge": 27,
       "no-go": 17,
-      "certificate": 63,
+      "certificate": 62,
       "deprecated": 3,
-      "frontier": 15
+      "frontier": 16
     },
     "domain": {
       "formal_core": 174,
@@ -42,9 +42,9 @@
       "empirical_passport": 22,
       "cosmology": 24,
       "external_background": 1,
-      "si_calibration": 3,
+      "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 15
+      "frontier": 16
     }
   },
   "nodes": [
@@ -7257,22 +7257,22 @@
       "id": "D0-H0-EVOLVING-W-001",
       "kind": "claim",
       "claim_id": "D0-H0-EVOLVING-W-001",
-      "type": "certificate",
-      "domain": "si_calibration",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
       "book": "BOOK_08",
       "section": "H0(z) downtrend = evolving w from R_n=phi^n-1",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_status": "OPEN",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_h0_evolving_w.py",
       "python_cert": [
         "vp_h0_evolving_w.py"
       ],
-      "status": "EMPIRICAL-PASSPORT",
-      "notes": "[Iter4 T5.5] EMPIRICAL-PASSPORT. R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.",
+      "status": "PROOF-TARGET",
+      "notes": "[Iter21 OVER-CLAIM FIXED] demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED->PROOF-TARGET/OPEN: the cert reads NO external data and its prior 'falsifier' was a self-referential tautology (def falsified(a,b): return a and b), now removed. The only forced piece (convexity Delta^2 R_n=phi^n(phi-1)^2>0) is already CORE in the sibling D0-PHASON-THAWING-001 (D0.Cosmology.ArchiveConvexity); this row's distinct content is the H0(z)/evolving-w cosmological reading, an unverified diagnostic awaiting a pinned DESI DR2/DR3 w0wa+H0(z) table (cert now emits SKIP_H0_EVOLVING_W_EXTERNAL_DATA_REQUIRED). [Iter4 T5.5] R_n=phi^n-1 convex Delta^2 R_n=phi^n(phi-1)^2>0 => thawing evolving-w; H0 falls with z (one phenomenon with DESI w0wa). Internal falsifier: H0 rising with z at Planck S8 rejects. cite DESI DR2; IOP 2041-8213/ae1965 (2025). HONEST: only convexity forced; H0 demoted (needs external SI calibration), never core.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -12667,7 +12667,7 @@
     },
     {
       "source": "D0-H0-EVOLVING-W-001",
-      "target": "domain:si_calibration",
+      "target": "domain:frontier",
       "kind": "semantic_domain"
     },
     {

@@ -4,8 +4,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4212 / 5145 (**81.9%** of track-fair max)
-- **Core spine:** 3630 / 4540 (headroom **910** points to take every core claim to L5)
+- **Realized strength:** 4207 / 5158 (**81.6%** of track-fair max)
+- **Core spine:** 3632 / 4560 (headroom **928** points to take every core claim to L5)
 - Claims: 286 active (288 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
@@ -76,6 +76,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-PASSPORT-DESI-BAO-001` | frontier | 0 | HYP | 2 |
 | `D0-PASSPORT-ICECUBE-HESE-001` | frontier | 0 | HYP | 2 |
 | `D0-PASSPORT-LIGO-CATALOG-001` | frontier | 0 | HYP | 2 |
+| `D0-H0-EVOLVING-W-001` | frontier | 0 | HYP | 2 |
 | `D0-PMNS-DELTACP-PI0-001` | frontier | 0 | HYP | 2 |
 | `D0-ARCHIVE-HEATTRACE-001` | spectral_action | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-SPECTRAL-ACTION-ADMISS-001` | spectral_action | 0 | PYTHON_CERTIFIED | 7 |
@@ -84,14 +85,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-DM-CLASSICALITY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-QUASI009-CKM-PHASON-HOLONOMY-001` | empirical_passport | 0 | PYTHON_CERTIFIED | 7 |
 | `D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
-| `D0-KTHEORY-001` | formal_core | 0 | PYTHON_CERTIFIED | 7 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | formal_core | 173 | 2785 | 3261 | 471 |
-| frontier | 15 | 30 | 300 | 270 |
+| frontier | 16 | 32 | 320 | 288 |
 | empirical_passport | 22 | 219 | 281 | 57 |
 | smooth_geometry | 18 | 272 | 315 | 39 |
 | spectral_action | 5 | 61 | 100 | 39 |
@@ -99,14 +99,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | cosmology | 24 | 446 | 459 | 13 |
 | rg | 5 | 61 | 73 | 8 |
 | external_background | 1 | 1 | 2 | 0 |
-| si_calibration | 3 | 25 | 29 | 0 |
+| si_calibration | 2 | 18 | 22 | 0 |
 | interpretation_spine | 1 | 11 | 11 | 0 |
 
 ## By book
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| BOOK_08 | 47 | 737 | 842 | 101 |
+| BOOK_08 | 47 | 732 | 855 | 119 |
 | BOOK_04 | 47 | 708 | 871 | 158 |
 | BOOK_07 | 48 | 655 | 865 | 200 |
 | BOOK_01 | 15 | 223 | 278 | 55 |

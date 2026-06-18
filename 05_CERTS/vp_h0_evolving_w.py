@@ -1,28 +1,19 @@
-"""D0-H0-EVOLVING-W-001 — H0(z) downtrend = evolving w from R_n=phi^n-1 (passport).
+"""D0-H0-EVOLVING-W-001 — convex archive acceleration R_n=phi^n-1 (FORM); the H0(z)/evolving-w
+cosmological reading is an UNVERIFIED diagnostic awaiting pinned DESI data (PROOF-TARGET).
 
-ROOT Phase 5 / T5.5 (Iteration 4). External anchors: DESI DR2 evolving-w (w0wa) and the
-H0(z) trend literature (IOP 2041-8213/ae1965, 2025). D0's relative-archive-acceleration
-R_n = phi^n - 1 has a convex second difference (Delta^2 R_n > 0), which reads as an
-evolving (thawing) dark-energy equation of state and a redshift-declining effective H0.
-This is an EMPIRICAL-PASSPORT with an internal falsifier; never core.
+FORM (exact, can-FAIL): R_n = phi^n - 1 has strictly positive second difference
+Delta^2 R_n = phi^n (phi-1)^2 > 0 (via phi^2 = phi + 1) -- a thawing/convex signature, distinct
+from a cosmological constant (Delta^2 = 0). This convexity is the only genuinely-forced piece, and
+it is the same fact already machine-checked as CORE in the sibling D0-PHASON-THAWING-001
+(D0.Cosmology.ArchiveConvexity).
 
-WHAT IS PROVED (exact, able to FAIL):
-  * CONVEX ACCELERATION.  R_n = phi^n - 1 has strictly positive second difference
-    Delta^2 R_n = R_{n+2} - 2 R_{n+1} + R_n = phi^n (phi-1)^2 > 0 for all n (exact via
-    the phi^2 = phi + 1 recursion) -> a thawing, evolving-w signature, not a cosmological
-    constant (Delta^2 = 0).
-  * DIRECTION.  The trend is monotone (R_n increasing) and convex, giving a redshift
-    DECLINING effective expansion rate (younger effective age) — the qualitative DESI
-    w0>-1, wa<0 corner, opposite to a phantom (w<-1) crossing.
-  * INTERNAL FALSIFIER.  The passport is rejected if H0 RISES with z while S8 stays at the
-    Planck value (the corpus holds S8 at Planck); the predicted joint move is H0 falling
-    with z together with the DESI w0wa anomaly as ONE phenomenon.
-
-HONESTY BOUNDARY (printed, not hidden):
-  * EMPIRICAL-PASSPORT, firewall-blocked from core (BOOK_08 demotes H0 to a diagnostic and
-    forbids promoting it to a core observable; H0/G_N/Lambda need external SI calibration).
-    The convexity Delta^2 R_n > 0 is the only exact/forced piece; the cosmological reading
-    is a passport comparison against DESI DR2/DR3, not a prediction at survey precision.
+NOT a data confrontation: this cert reads NO external H0(z)/DESI/S8 datum. The earlier version
+asserted a self-referential boolean "falsifier" (`def falsified(a,b): return a and b` re-stating a
+truth table it defined two lines above) -- not a test of any observation; that tautology is removed.
+The cosmological reading (H0 declining with z = the DESI w0>-1, wa<0 corner) is therefore an
+UNVERIFIED diagnostic, NOT a passed empirical passport; binding it requires a pinned, versioned DESI
+DR2/DR3 w0wa + H0(z) table. Registry status: PROOF-TARGET (data confrontation open), not
+EMPIRICAL-PASSPORT.
 """
 from __future__ import annotations
 
@@ -40,39 +31,32 @@ def R(n: int) -> float:
 
 
 def main() -> int:
-    print("=== D0-H0-EVOLVING-W-001  H0(z) downtrend = evolving w from R_n=phi^n-1 (passport) ===")
+    print("=== D0-H0-EVOLVING-W-001  convex archive acceleration (FORM); cosmo reading = unverified diagnostic ===")
+    print("STRUCTURE_FIXED_BEFORE_NUMBER: R_n=phi^n-1, Delta^2 R_n=phi^n(phi-1)^2>0 forced by phi^2=phi+1 "
+          "(convex/thawing FORM); the H0(z)/DESI reading is a diagnostic, NOT asserted against data here")
 
-    # ---- convex second difference Delta^2 R_n = phi^n (phi-1)^2 > 0 ----------------
+    # ---- FORM: convex second difference (exact, can-FAIL on a typo) -----------------
     for n in range(0, 12):
         d2 = R(n + 2) - 2 * R(n + 1) + R(n)
         closed = PHI ** n * (PHI - 1.0) ** 2
-        if abs(d2 - closed) > 1e-9 * max(1.0, abs(closed)):
-            raise AssertionError(f"Delta^2 R_{n} != phi^n (phi-1)^2")
-        if not d2 > 0:
-            raise AssertionError(f"Delta^2 R_{n} not strictly positive")
-    print("PASS_CONVEX_ACCELERATION  Delta^2 R_n = phi^n (phi-1)^2 > 0 (evolving/thawing w)")
+        assert abs(d2 - closed) <= 1e-9 * max(1.0, abs(closed)), f"Delta^2 R_{n} != phi^n (phi-1)^2"
+        assert d2 > 0, f"Delta^2 R_{n} not strictly positive (convexity FORM broken)"
+    print("PASS_CONVEX_ACCELERATION  Delta^2 R_n = phi^n (phi-1)^2 > 0 (thawing/convex FORM)")
 
-    # ---- monotone increasing (declining effective H0 with z) -----------------------
+    # ---- monotone increasing; Lambda-CDM (Delta^2=0) negative control ---------------
     assert all(R(n + 1) > R(n) for n in range(0, 12)), "R_n not monotone increasing"
-    # cosmological-constant control: a constant R would have Delta^2 = 0 (not evolving)
-    constR = lambda n: 1.0
-    assert (constR(2) - 2 * constR(1) + constR(0)) == 0.0, "constant control should have Delta^2=0"
+    assert (1.0 - 2 * 1.0 + 1.0) == 0.0, "control: a constant R (Lambda-CDM) has Delta^2 = 0 (not thawing)"
     print("PASS_MONOTONE_CONVEX  R_n increasing & convex (vs Lambda-CDM Delta^2=0 control)")
 
-    # ---- internal falsifier: H0 up with S8 at Planck rejects the passport ----------
-    # encode the falsifier as a boolean predicate the passport asserts must NOT hold
-    def falsified(H0_rises_with_z: bool, S8_at_planck: bool) -> bool:
-        return H0_rises_with_z and S8_at_planck
-    assert not falsified(False, True), "predicted: H0 falls with z (not rises) at Planck S8"
-    assert falsified(True, True), "control: H0 rising with z at Planck S8 WOULD falsify"
-    print("FAIL_H0_RISING_WITH_Z_AT_PLANCK_S8_WOULD_FALSIFY")
-    print("PASS_H0_FALSIFIER_DEFINED")
+    # ---- honest data boundary: NO external confrontation performed here -------------
+    print("SKIP_H0_EVOLVING_W_EXTERNAL_DATA_REQUIRED  no pinned DESI DR2/DR3 w0wa + H0(z)/S8 table is read; "
+          "the H0-declining-with-z reading is an UNVERIFIED diagnostic, not a passed passport (no self-referential "
+          "boolean falsifier is asserted)")
+    print("HONEST_CONVEXITY_FORCED_BUT_OWNED_BY_SIBLING  the forced piece (convexity) is CORE in "
+          "D0-PHASON-THAWING-001 (D0.Cosmology.ArchiveConvexity); this row's distinct content is the cosmo reading, "
+          "which awaits external data -> PROOF-TARGET")
 
-    # ---- honesty boundary ----------------------------------------------------------
-    print("HONEST_EMPIRICAL_PASSPORT_H0_DEMOTED_NOT_CORE_NEEDS_EXTERNAL_SI_CALIBRATION")
-    print("HONEST_ONLY_CONVEXITY_DELTA2_R_N_FORCED_COSMO_READING_IS_DESI_COMPARISON")
-
-    print("PASS_H0_EVOLVING_W")
+    print("PASS_H0_EVOLVING_W")  # the FORM cert ran + the data confrontation was honestly gated
     return 0
 
 

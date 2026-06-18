@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 4212,
-    "track_fair_max": 5145,
-    "pct_strength": 81.9,
-    "core_realized": 3630,
-    "core_potential": 4540,
-    "core_headroom": 910,
+    "realized": 4207,
+    "track_fair_max": 5158,
+    "pct_strength": 81.6,
+    "core_realized": 3632,
+    "core_potential": 4560,
+    "core_headroom": 928,
     "n_claims": 288,
     "n_active": 286,
     "duplicates": [],
@@ -80,9 +80,9 @@
       "core_headroom": 0
     },
     "si_calibration": {
-      "n": 3,
-      "realized": 25,
-      "max": 29,
+      "n": 2,
+      "realized": 18,
+      "max": 22,
       "core_headroom": 0
     },
     "interpretation_spine": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 15,
-      "realized": 30,
-      "max": 300,
-      "core_headroom": 270
+      "n": 16,
+      "realized": 32,
+      "max": 320,
+      "core_headroom": 288
     }
   },
   "by_book": {
@@ -173,9 +173,9 @@
     },
     "BOOK_08": {
       "n": 47,
-      "realized": 737,
-      "max": 842,
-      "core_headroom": 101
+      "realized": 732,
+      "max": 855,
+      "core_headroom": 119
     },
     "BOOK_05/06": {
       "n": 6,
@@ -1042,6 +1042,16 @@
       "effort": "write cert scaffold"
     },
     {
+      "claim_id": "D0-H0-EVOLVING-W-001",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
       "claim_id": "D0-PMNS-DELTACP-PI0-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1160,6 +1170,13 @@
     },
     {
       "claim_id": "D0-PASSPORT-LIGO-CATALOG-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-H0-EVOLVING-W-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -4579,14 +4596,14 @@
     },
     {
       "claim_id": "D0-H0-EVOLVING-W-001",
-      "track": "PASSPORT",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "si_calibration",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_08",
       "leverage": 0,
       "integrity_flag": null
