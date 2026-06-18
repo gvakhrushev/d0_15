@@ -99,6 +99,20 @@ they are kept here as named, honestly-bounded gaps, not quick wins.
 
 ## P3 — passport gates (await external data; falsifiable, not pure-D0 closure)
 
+**Passport-honesty sweep (Iter-21).** The data-bound passport *certificates* were audited for
+hollow-green over-claims (a cert printing PASS/FAIL with no data, often over a hand-set `status:READY`
+manifest for an absent cache file). **Demoted `EMPIRICAL-PASSPORT`→`PROOF-TARGET`/`OPEN` or re-tagged**
+(no longer registered as passed data confrontations): `D0-PASSPORT-DESI-BAO-001`,
+`D0-PASSPORT-ICECUBE-HESE-001`, `D0-PASSPORT-LIGO-CATALOG-001`, `D0-PASSPORT-SPARC-001`,
+`D0-H0-EVOLVING-W-001` (tautology falsifier removed), `D0-DUSTY-PLASMA-001` (SEED),
+`D0-CRITICAL-COLLAPSE-001` (fabricated hash-pinning stripped → `CORE_BRIDGE_SPLIT`),
+`D0-E8-COLDEA-ANCHOR-001` / `D0-DSI-EXPERIMENTAL-001` / `D0-COSMO-002` (→ `CERT-CLOSED` FORM, fabricated
+data legs stripped). Two faked `READY` manifests (DESI, GWOSC) reverted to `MISSING`; the rewritten certs
+now split FORM (can-FAIL) from VALUE (honest `SKIP_*_EXTERNAL_DATA_REQUIRED`). **Corrected but kept as
+genuine passports:** `D0-PMNS-DELTA0-NUFIT-001` (`sin²θ₁₂` value typo → exact `0.30547`; JUNO citation
+flagged unpinned) and `D0-ALPHA-MEASUREMENT-LIMIT-001` (the data-contradicted "from below" bet →
+straddle + an asserted falsifier). The rows below are the genuine data-bound targets that remain.
+
 | item | registry anchor | status | gate |
 |---|---|---|---|
 | `δ_CP ≈ π₀ ≈ π` (CP near-conservation, normal ordering) | `D0-PMNS-DELTACP-PI0-001` | **HYP** prediction | future δ_CP precision (DUNE / JUNO / T2HK) |
