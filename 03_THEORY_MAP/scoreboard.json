@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 4218,
-    "track_fair_max": 5274,
-    "pct_strength": 80.0,
-    "core_realized": 3671,
-    "core_potential": 4700,
-    "core_headroom": 1029,
-    "n_claims": 291,
-    "n_active": 289,
+    "realized": 4225,
+    "track_fair_max": 5294,
+    "pct_strength": 79.8,
+    "core_realized": 3678,
+    "core_potential": 4720,
+    "core_headroom": 1042,
+    "n_claims": 292,
+    "n_active": 290,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 175,
-      "realized": 2799,
-      "max": 3301,
-      "core_headroom": 497
+      "n": 176,
+      "realized": 2806,
+      "max": 3321,
+      "core_headroom": 510
     },
     "rg": {
       "n": 5,
@@ -130,10 +130,10 @@
       "core_headroom": 0
     },
     "BOOK_02/04": {
-      "n": 2,
-      "realized": 31,
-      "max": 31,
-      "core_headroom": 0
+      "n": 3,
+      "realized": 38,
+      "max": 51,
+      "core_headroom": 13
     },
     "BOOK_06/07": {
       "n": 4,
@@ -942,6 +942,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "domain": "formal_core",
+      "book": "BOOK_02/04",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-CVFT-001B",
       "domain": "frontier",
       "book": "BOOK_04/06/07/08",
@@ -1625,6 +1635,13 @@
     },
     {
       "claim_id": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-ALPHA-MU2-FULL-LEDGER-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -5718,6 +5735,20 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "empirical_passport",
       "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02/04",
       "leverage": 0,
       "integrity_flag": null
     }
