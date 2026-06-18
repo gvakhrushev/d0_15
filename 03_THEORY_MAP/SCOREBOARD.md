@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4337 / 5572 (**77.8%** of track-fair max)
-- **Core spine:** 3757 / 4960 (headroom **1203** points to take every core claim to L5)
-- Claims: 306 active (308 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 4353 / 5632 (**77.3%** of track-fair max)
+- **Core spine:** 3773 / 5020 (headroom **1247** points to take every core claim to L5)
+- Claims: 309 active (311 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 100.0 / 100 (penalties **-0.8**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 100.0 / 100 (penalties **-0.9**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -19,14 +19,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
-| `orphan_proof_targets` | 6 | -0.6 | PROOF-TARGET markers in book prose with no registry row |
+| `orphan_proof_targets` | 9 | -0.9 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
-| `path_leaks` | 3 | -0.2 | internal repo paths / vp_*.py / D0.* module names dumped in book prose  ·  e.g. SULT: FAIL вЂ” 2 publication issue(s); kinds: {'inline repo-ref': 2}, BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md:89: inline repo-ref 'vp_phason_wz_transfer_owner.py' in body prose, BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md:91: inline repo-ref 'vp_phason_pressure_eos.py' in body prose |
+| `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 135 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-0.6); `path_leaks` (-0.2)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-0.9)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -86,15 +86,15 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001` | frontier | 0 | HYP | 2 |
 | `D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001` | frontier | 0 | HYP | 2 |
 | `D0-PHASON-WZ-TRANSFER-OWNER-001` | frontier | 0 | HYP | 2 |
-| `D0-ARCHIVE-HEATTRACE-001` | spectral_action | 0 | PYTHON_CERTIFIED | 7 |
+| `D0-PHASON-WZ-EXPLICIT-FUNCTION-001` | frontier | 0 | HYP | 2 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 180 | 2834 | 3393 | 549 |
-| frontier | 21 | 42 | 420 | 378 |
-| smooth_geometry | 23 | 307 | 402 | 91 |
+| formal_core | 181 | 2841 | 3413 | 562 |
+| frontier | 22 | 44 | 440 | 396 |
+| smooth_geometry | 24 | 314 | 422 | 104 |
 | empirical_passport | 22 | 219 | 311 | 83 |
 | cosmology | 27 | 482 | 524 | 42 |
 | spectral_action | 5 | 61 | 100 | 39 |
@@ -108,8 +108,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| BOOK_08 | 50 | 758 | 933 | 171 |
-| BOOK_04 | 52 | 738 | 950 | 202 |
+| BOOK_08 | 52 | 767 | 973 | 202 |
+| BOOK_04 | 53 | 745 | 970 | 215 |
 | BOOK_07 | 49 | 657 | 889 | 218 |
 | BOOK_06 | 16 | 242 | 289 | 47 |
 | BOOK_02 | 16 | 228 | 280 | 52 |

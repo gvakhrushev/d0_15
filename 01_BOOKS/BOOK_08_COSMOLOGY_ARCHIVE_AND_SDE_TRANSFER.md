@@ -1159,6 +1159,15 @@ d_\perp = D - d_\parallel
 
 **Update (Iteration 22 dual-frontier strike).** The `30-dim kernel → w(z)` map is now owned at three levels: (i) the **kernel-only no-go** `D0-PHASON-WZ-KERNEL-ONLY-NOGO-001` (NO-GO) — the 30-dim kernel alone does *not* determine `w(z)` (two pressure-energy pairs over the same kernel give different `w_D0`; a finite pressure-energy operator is required; Lean `D0.Cosmology.PhasonWZTransfer.kernel_dim_alone_does_not_determine_w`); (ii) the **EOS-form scaffold** `D0-PHASON-PRESSURE-EOS-SCAFFOLD-001` (CERT-CLOSED) — `w_D0 = p/ρ` is well-defined on the nonzero-energy domain, `ρ` from the archive relative-acceleration energy (`D0-IM-COSMO-001`) and `p` from the log-det loop-pressure response; (iii) the **explicit `w_D0(u)` owner** `D0-PHASON-WZ-TRANSFER-OWNER-001` (PROOF-TARGET) — the closed `u`-dependent formula / finite `w_N` is the named missing artifact. Status stays **HYP-with-mechanism-scaffold, not BRIDGE**: the DESI CPL comparison remains an empirical passport (survey data may compare, never define `w_D0`; `vp_phason_wz_no_survey_tuning.py`).
 
+**Update (Iteration 22 explicit-function strike).** The finite `w_N` artifact named in level (iii) is now **constructed and certified** as `D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001` (CERT-CLOSED). On the common archive window `n`, the energy is `ρ_N = R_n = φⁿ − 1` (`D0-IM-COSMO-001`) and the relative pressure is `ΔR_n = φ^{n-1}` (`D0-IM-COSMO-002`, `relative_pressure_bridge_law`), so the internal equation-of-state RATIO is the exact ℚ(φ) sequence
+
+```math
+w_N \;=\; \frac{p_N}{\rho_N} \;=\; \frac{\Delta R_n}{R_n} \;=\; \frac{\varphi^{\,n-1}}{\varphi^{\,n}-1}
+\qquad (n\ge 1),
+```
+
+a monotonically *decreasing* sequence `[φ, 1, φ⁻¹·…] → +φ⁻¹` (cert `vp_phason_wz_explicit_function.py`; controls: energy-only / pressure-only / kernel-dimension-only / CPL-tuned are each rejected; compatibility `vp_phason_energy_pressure_compatibility.py`). **This sharpens, but does not close, the explicit-function owner** `D0-PHASON-WZ-EXPLICIT-FUNCTION-001` (PROOF-TARGET). Two analytic steps remain, and they are now *exactly* named: (a) the **continuum interpolation** `w_N → w_D0(u)` (the envelope function over the windows, not just the discrete ladder); and (b) the **sign/normalization map** — `w_N` is a *positive* internal archive ratio (`→ +φ⁻¹`), whereas a physical dark-energy equation of state is *negative* (`w_DE(z) < 0`); the map from the positive internal object to the negative physical observable is unwritten. Until both close, no `w(z)` numeric is read as physical, and the DESI/CPL comparison stays passport-only (`vp_phason_wz_passport_boundary.py` forbids any redshift/CPL term from *defining* `w_D0`).
+
 
 ## Apparatus — sources & open obligations
 

@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 308,
+    "claims": 311,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 65,
+      "CERT-CLOSED": 67,
       "NO-GO": 11,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 21,
+      "PROOF-TARGET": 22,
       "PASSPORT-CLOSED": 3
     },
     "lean_status": {
       "LEAN_PROVED": 188,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 74,
+      "PYTHON_CERTIFIED": 76,
       "DEPRECATED": 2,
-      "OPEN": 23
+      "OPEN": 24
     },
     "claim_type": {
       "core": 163,
       "bridge": 28,
       "no-go": 19,
-      "certificate": 74,
+      "certificate": 76,
       "deprecated": 3,
-      "frontier": 21
+      "frontier": 22
     },
     "domain": {
-      "formal_core": 181,
+      "formal_core": 182,
       "rg": 5,
       "gauge_bridge": 20,
-      "smooth_geometry": 23,
+      "smooth_geometry": 24,
       "spectral_action": 5,
       "empirical_passport": 22,
       "cosmology": 27,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 21
+      "frontier": 22
     }
   },
   "nodes": [
@@ -10305,6 +10305,92 @@
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
+    },
+    {
+      "id": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "kind": "claim",
+      "claim_id": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phason_wz_explicit_function.py",
+      "python_cert": [
+        "vp_phason_wz_explicit_function.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 next-frontier P2] finite internal archive pressure-energy RATIO sequence w_N = p_N/rho_N = dR_n/R_n = phi^(n-1)/(phi^n-1) (exact Q(phi)) from energy R_n (D0-IM-COSMO-001) + relative pressure dR_n (D0-IM-COSMO-002) on the common window n; w_N decreases monotonically to +phi^-1 (a POSITIVE internal ratio, NOT the physical dark-energy w(z)<0). cert vp_phason_wz_explicit_function.py (controls: energy-only / pressure-only / kernel-dim-only / CPL-tuned rejected; compatibility vp_phason_energy_pressure_compatibility.py). SCOPE: finite-sequence scaffold only; the explicit continuum w_D0(u) + the sign/normalization map to physical w_DE stay PROOF-TARGET (D0-PHASON-WZ-EXPLICIT-FUNCTION-001).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phason_wz_explicit_function.py",
+      "kind": "python_cert",
+      "label": "vp_phason_wz_explicit_function.py",
+      "path": "05_CERTS/vp_phason_wz_explicit_function.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+      "kind": "claim",
+      "claim_id": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_08",
+      "section": "08.51",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phason_wz_explicit_function.py",
+      "python_cert": [
+        "vp_phason_wz_explicit_function.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 next-frontier] explicit internal phason EOS function w_D0(u). CLOSED already: the EOS form (D0-PHASON-PRESSURE-EOS-SCAFFOLD-001, w_D0=p/rho), the kernel-only no-go (D0-PHASON-WZ-KERNEL-ONLY-NOGO-001), and the finite-sequence w_N (D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001). MISSING artifacts (exact): (a) the continuum interpolation w_N -> w_D0(u); (b) the sign/normalization map from the POSITIVE internal archive ratio (w_N -> +phi^-1) to the NEGATIVE physical dark-energy w_DE(z). Status PROOF-TARGET; redshift/CPL is passport-only; no survey datum defines w_D0 (vp_phason_wz_passport_boundary.py).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.8",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_lepton_green_puiseux_scout.py",
+      "python_cert": [
+        "vp_lepton_green_puiseux_scout.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 next-frontier L2 scout] scout closure of the lepton indirect Green/Puiseux route. EXISTING finite assets: shell-torus/edge (D0-EDGE-002 Puiseux target, D0-EDGE-ALPHA-001 zetaEdge, D0-EDGE-RAMIFICATION-001 companion cover) + Feshbach-Schur transfer (D0-GENERATIVE-DYNAMICS-001, cert vp_feshbach_residue_amplitudes.py) + exact exponent row (0,1/4,1/3) THE. MISSING (minimal next owner): a finite Green function over the shell torus whose Puiseux/ramification branch indices PROVABLY equal (0,1/4,1/3) + a branch-index uniqueness certificate + the EFT/IR matching functor. cert vp_lepton_green_puiseux_scout.py. The coefficient owner D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001 stays PROOF-TARGET; this scout is a documentation closure (precisely identifies existing vs missing).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_lepton_green_puiseux_scout.py",
+      "kind": "python_cert",
+      "label": "vp_lepton_green_puiseux_scout.py",
+      "path": "05_CERTS/vp_lepton_green_puiseux_scout.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -14611,6 +14697,51 @@
     {
       "source": "D0-PHASON-WZ-TRANSFER-OWNER-001",
       "target": "cert:vp_phason_wz_transfer_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "target": "cert:vp_phason_wz_explicit_function.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+      "target": "cert:vp_phason_wz_explicit_function.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+      "target": "cert:vp_lepton_green_puiseux_scout.py",
       "kind": "certified_by"
     }
   ]

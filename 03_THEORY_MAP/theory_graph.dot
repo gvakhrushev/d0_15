@@ -309,6 +309,9 @@ digraph D0Theory {
   "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001" [label="D0-PHASON-WZ-KERNEL-ONLY-NOGO-001\\nNO-GO\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001" [label="D0-PHASON-PRESSURE-EOS-SCAFFOLD-001\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PHASON-WZ-TRANSFER-OWNER-001" [label="D0-PHASON-WZ-TRANSFER-OWNER-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001" [label="D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-PHASON-WZ-EXPLICIT-FUNCTION-001" [label="D0-PHASON-WZ-EXPLICIT-FUNCTION-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001" [label="D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2031,4 +2034,22 @@ digraph D0Theory {
   "D0-PHASON-WZ-TRANSFER-OWNER-001" -> "cert:vp_phason_wz_transfer_owner.py" [label="cert"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-PHASON-WZ-TRANSFER-OWNER-001" -> "domain:frontier" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001" -> "module:" [label="module"];
+  "cert:vp_phason_wz_explicit_function.py" [label="vp_phason_wz_explicit_function.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001" -> "cert:vp_phason_wz_explicit_function.py" [label="cert"];
+  "domain:smooth_geometry" [label="smooth_geometry", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001" -> "domain:smooth_geometry" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PHASON-WZ-EXPLICIT-FUNCTION-001" -> "module:" [label="module"];
+  "cert:vp_phason_wz_explicit_function.py" [label="vp_phason_wz_explicit_function.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PHASON-WZ-EXPLICIT-FUNCTION-001" -> "cert:vp_phason_wz_explicit_function.py" [label="cert"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PHASON-WZ-EXPLICIT-FUNCTION-001" -> "domain:frontier" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001" -> "module:" [label="module"];
+  "cert:vp_lepton_green_puiseux_scout.py" [label="vp_lepton_green_puiseux_scout.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001" -> "cert:vp_lepton_green_puiseux_scout.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001" -> "domain:formal_core" [label="domain"];
 }

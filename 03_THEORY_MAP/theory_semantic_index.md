@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 65
+- `CERT-CLOSED`: 67
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -16,15 +16,15 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `NO-GO`: 11
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 3
-- `PROOF-TARGET`: 21
+- `PROOF-TARGET`: 22
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 74
+- `certificate`: 76
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 21
+- `frontier`: 22
 - `no-go`: 19
 
 ## Domain counts
@@ -32,13 +32,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 27
 - `empirical_passport`: 22
 - `external_background`: 1
-- `formal_core`: 181
-- `frontier`: 21
+- `formal_core`: 182
+- `frontier`: 22
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 23
+- `smooth_geometry`: 24
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -1182,6 +1182,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof. [Iter5 finite-core] The gap-label MODULE shadow is now proved exactly (new claim D0-KTHEORY-GAP-MODULE-001): labels lie in the rank-2 module Z+Zphi^-1, principal labels phi^-1/phi^-2 sum to 1. The Bellissard THEOREM (IDS=K0-trace image) stays EXTERNAL-GAP (no Mathlib K-theory). FLAG: this row's cert vp_gap_labeling_d0_tiling_hull.py fabricates the IDS as (idx+1)/30 with a float (n,m) fit — a placeholder to RETIRE in favor of the exact shadow (referenced in ~10 places; retirement is a follow-up).
+
+### D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_lepton_green_puiseux_scout.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 next-frontier L2 scout] scout closure of the lepton indirect Green/Puiseux route. EXISTING finite assets: shell-torus/edge (D0-EDGE-002 Puiseux target, D0-EDGE-ALPHA-001 zetaEdge, D0-EDGE-RAMIFICATION-001 companion cover) + Feshbach-Schur transfer (D0-GENERATIVE-DYNAMICS-001, cert vp_feshbach_residue_amplitudes.py) + exact exponent row (0,1/4,1/3) THE. MISSING (minimal next owner): a finite Green function over the shell torus whose Puiseux/ramification branch indices PROVABLY equal (0,1/4,1/3) + a branch-index uniqueness certificate + the EFT/IR matching functor. cert vp_lepton_green_puiseux_scout.py. The coefficient owner D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001 stays PROOF-TARGET; this scout is a documentation closure (precisely identifies existing vs missing).
 
 ### D0-MASS-CHAIN-001
 
@@ -3253,6 +3266,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] SPARC rotation-curve external-data passport. [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: the prior cert was a print-stub (hard-coded E_seam=0.0/2.0, unconditional PASS, no data). Rewritten to a FORM/VALUE split -- the seam-gap FORM (commuting generator -> E_seam=0; non-commuting -> ||[A,B]||^2>0, with a negative control) is now a real can-FAIL computation, and the VALUE confrontation vs the SPARC rotation-curve database (Lelli-McGaugh-Schombert 2016, 175 galaxies) emits SKIP_SPARC_EXTERNAL_DATA_REQUIRED (database not present/pinned). Cert removed from the check_cert_can_fail GRANDFATHER set.
 
+### D0-PHASON-WZ-EXPLICIT-FUNCTION-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_wz_explicit_function.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 next-frontier] explicit internal phason EOS function w_D0(u). CLOSED already: the EOS form (D0-PHASON-PRESSURE-EOS-SCAFFOLD-001, w_D0=p/rho), the kernel-only no-go (D0-PHASON-WZ-KERNEL-ONLY-NOGO-001), and the finite-sequence w_N (D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001). MISSING artifacts (exact): (a) the continuum interpolation w_N -> w_D0(u); (b) the sign/normalization map from the POSITIVE internal archive ratio (w_N -> +phi^-1) to the NEGATIVE physical dark-energy w_DE(z). Status PROOF-TARGET; redshift/CPL is passport-only; no survey datum defines w_D0 (vp_phason_wz_passport_boundary.py).
+
 ### D0-PHASON-WZ-TRANSFER-OWNER-001
 
 - type: `frontier`
@@ -3826,6 +3852,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 closure-delta] FINITE D0 gauge excitation floor (NOT continuum Yang-Mills): a nontrivial non-abelian seam excitation has strictly positive constructive cost -- off-kernel frobSq([B,J])=2>0 vs frobSq([B,I])=0 (exact Z 2x2) and step-cost quantum DeltaS_min=phi^-2>0 (phi^-1+phi^-2=1). cert vp_gauge_mass_gap_plaquette.py (can-FAIL: trivial vacuum zero-cost + sub-unit controls). The continuum Yang-Mills mass gap is NOT claimed. CONSOLIDATION of the proved finite gap under D0-NONABELIAN-SEAM-001 (D0.Claims.NonabelianSeamGap) + D0-MASSGAP-COSTQUANTUM-001 (D0.Gauge.MassGapCostQuantum); the continuous-model positive-gap of D0.Gauge.NonAbelianSeamObstructionGap (only nonnegativity proved) stays an OPEN internal theorem-target, not claimed here.
+
+### D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_wz_explicit_function.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 next-frontier P2] finite internal archive pressure-energy RATIO sequence w_N = p_N/rho_N = dR_n/R_n = phi^(n-1)/(phi^n-1) (exact Q(phi)) from energy R_n (D0-IM-COSMO-001) + relative pressure dR_n (D0-IM-COSMO-002) on the common window n; w_N decreases monotonically to +phi^-1 (a POSITIVE internal ratio, NOT the physical dark-energy w(z)<0). cert vp_phason_wz_explicit_function.py (controls: energy-only / pressure-only / kernel-dim-only / CPL-tuned rejected; compatibility vp_phason_energy_pressure_compatibility.py). SCOPE: finite-sequence scaffold only; the explicit continuum w_D0(u) + the sign/normalization map to physical w_DE stay PROOF-TARGET (D0-PHASON-WZ-EXPLICIT-FUNCTION-001).
 
 ### D0-PHI-LADDER-SEMIGROUP-001
 
