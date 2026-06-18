@@ -1049,6 +1049,8 @@ Smooth geometry is then a separate bridge. At finite stage `N`, line probes defi
 
 The continuum metric is admissible only if the family is projectively compatible, uniformly non-degenerate on the retained sector, and has a stable four-dimensional Weyl heat-trace asymptotic. Thus D0 does not assume a smooth manifold; it specifies when a smooth manifold is a valid macro-shadow.
 
+**Smooth manifold as a closed passport (`D0-SMOOTH-MANIFOLD-PASSPORT-001`, `PASSPORT-CLOSED`).** The D0-internal object is the finite spectral/metric tower plus the φ semigroup envelope (`D0-IM-003`, `D0-CONNES-DISTANCE-GEODESIC-001`: Connes distance = graph geodesic, `c=1` edge/tick). The smooth compact Riemannian/spin manifold reading is a downstream macro-shadow, active only **conditional** on the external owners `D0-RIEFFEL-GHP-CONTINUUM-OWNER-001` (GHP convergence, `ASSUMP-RIEFFEL-GHP`) and `D0-CONNES-RECONSTRUCTION-OWNER-001` (`ASSUMP-CONNES-RECONSTRUCTION`). It is not a primitive D0 input and not a CORE theorem; the bridge is closed as a passport per `D0-BRIDGE-COMPRESSION-001` (cert `vp_smooth_manifold_passport.py`).
+
 ## 07.27 Canonical archive Laplacian and curvature obstruction
 
 The finite archive is equipped with a canonical weighted graph Laplacian $L$ derived from the cyclic phase-distance metric. We prove in Lean that $L$ is symmetric, nonnegative, and has a row-sum zero constant mode. Projective compatibility of the Laplacian under refinement fails due to topological cycle splitting (no-go on projective compatibility), and a curvature obstruction skeleton prevents projection flatness on refined fibers (no-go on curvature flatness). This formalizes the non-triviality of the finite geometry.

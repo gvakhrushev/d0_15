@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 56
+- `CERT-CLOSED`: 57
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 65
+- `certificate`: 66
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 18
@@ -38,7 +38,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 20
+- `smooth_geometry`: 21
 - `spectral_action`: 5
 
 ## Domain: cosmology
@@ -3670,6 +3670,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter17 ТЗ-2 Phase D, verify-then-promote — c=1 CONFIRMED] On the finite scene the Connes spectral distance d_C(p,q)=sup{|f(p)-f(q)| : ||[D,f]||<=1} EQUALS the geodesic (shortest-path) distance: ||[D,f]||<=1 <=> f 1-Lipschitz per edge, sup attained by f=d_geo(.,p), bounded above by telescoping. So the metric is INTERNAL (geodesic), not an external input. And c=1 is STRUCTURAL: <=1 edge/tick => signal speed 1, dimensionless, no external light-speed constant. Cert vp_connes_distance_geodesic.py (path/cycle/K(2,2,3); can-FAIL; control: edge-jump>1 inadmissible). CONSEQUENCE: the §07.51.3 cone-speed residual is c=1=edge/tick (internal), NOT an external Connes unit; ASSUMP-CONNES-RECONSTRUCTION is reclassified owner->continuum-limit CONFIRMATION. HONEST: the finite->smooth Riemannian limit itself is still the external Connes theorem, now as confirmation of the internal geodesic metric's limit, not the owner of a D0 gap.
+
+### D0-PHI-LADDER-SEMIGROUP-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_06`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_ladder_semigroup.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 closure-sprint] The phi-tick ladder + its unique continuum semigroup envelope (the FIRST D0 continuum): p=phi^-1, p+p^2=1; A_n=A_0 phi^-n, B_n=(1-phi^-n)A_0, R_n=phi^n-1; envelope A(s)=A_0 e^{-s log phi} with semigroup A(s+t)=A(s)A(t)/A_0. cert vp_phi_ladder_semigroup.py (can-FAIL: arbitrary-ratio, additive-ladder, external-base controls). Sprint consolidation: the integer ladder Q(D)=phi^(D-4) is CORE (D0-DIM-LADDER-COMPACT-001), the golden split is CORE (D0-IM-002), and the envelope cocycle is Lean-proved (D0.IM.ContinuumFromFractalTick.env_cocycle / env_restricts_to_ladder, D0-IM-003) -- this row is the sprint's consolidated phi-ladder-semigroup statement, NOT a new theorem over those. The smooth-manifold limit stays the Rieffel/GHP+Connes passport (D0-SMOOTH-MANIFOLD-PASSPORT-001).
 
 ### D0-QUASICRYSTAL-CARRIER-FORCING-001
 

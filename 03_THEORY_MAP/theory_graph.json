@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 294,
+    "claims": 295,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 56,
+      "CERT-CLOSED": 57,
       "NO-GO": 9,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -22,7 +22,7 @@
     "lean_status": {
       "LEAN_PROVED": 185,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 66,
+      "PYTHON_CERTIFIED": 67,
       "DEPRECATED": 2,
       "OPEN": 20
     },
@@ -30,7 +30,7 @@
       "core": 163,
       "bridge": 28,
       "no-go": 17,
-      "certificate": 65,
+      "certificate": 66,
       "deprecated": 3,
       "frontier": 18
     },
@@ -38,7 +38,7 @@
       "formal_core": 177,
       "rg": 5,
       "gauge_bridge": 20,
-      "smooth_geometry": 20,
+      "smooth_geometry": 21,
       "spectral_action": 5,
       "empirical_passport": 21,
       "cosmology": 24,
@@ -9864,6 +9864,37 @@
       "label": "vp_smooth_manifold_passport.py",
       "path": "05_CERTS/vp_smooth_manifold_passport.py",
       "exists": true
+    },
+    {
+      "id": "D0-PHI-LADDER-SEMIGROUP-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-LADDER-SEMIGROUP-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_ladder_semigroup.py",
+      "python_cert": [
+        "vp_phi_ladder_semigroup.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 closure-sprint] The phi-tick ladder + its unique continuum semigroup envelope (the FIRST D0 continuum): p=phi^-1, p+p^2=1; A_n=A_0 phi^-n, B_n=(1-phi^-n)A_0, R_n=phi^n-1; envelope A(s)=A_0 e^{-s log phi} with semigroup A(s+t)=A(s)A(t)/A_0. cert vp_phi_ladder_semigroup.py (can-FAIL: arbitrary-ratio, additive-ladder, external-base controls). Sprint consolidation: the integer ladder Q(D)=phi^(D-4) is CORE (D0-DIM-LADDER-COMPACT-001), the golden split is CORE (D0-IM-002), and the envelope cocycle is Lean-proved (D0.IM.ContinuumFromFractalTick.env_cocycle / env_restricts_to_ladder, D0-IM-003) -- this row is the sprint's consolidated phi-ladder-semigroup statement, NOT a new theorem over those. The smooth-manifold limit stays the Rieffel/GHP+Connes passport (D0-SMOOTH-MANIFOLD-PASSPORT-001).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi_ladder_semigroup.py",
+      "kind": "python_cert",
+      "label": "vp_phi_ladder_semigroup.py",
+      "path": "05_CERTS/vp_phi_ladder_semigroup.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -13960,6 +13991,21 @@
     {
       "source": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
       "target": "cert:vp_smooth_manifold_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-LADDER-SEMIGROUP-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-LADDER-SEMIGROUP-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-LADDER-SEMIGROUP-001",
+      "target": "cert:vp_phi_ladder_semigroup.py",
       "kind": "certified_by"
     }
   ]

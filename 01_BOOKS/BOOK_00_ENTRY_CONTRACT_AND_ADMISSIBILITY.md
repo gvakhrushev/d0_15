@@ -49,6 +49,8 @@ D0 slogan -> metaphor -> status row
 
 Book 00 fixes the public contract: finite support is prior to dynamics; the retained/traced split produces `P_N` and `Q_N`; `R_N = D_N^dagger D_N` is positive readout/Born response; `F_N = P_N U_N^dagger Q_N U_N P_N` is feedback return / unitarity defect; `U_eff = P_N U_N P_N` is compressed nonunitary pole dynamics; `mathsf P_fb = beta^(-1) partial_V log Z_N` is feedback pressure; external comparison is a bridge/passport layer.
 
+D0-core closes at the **finite/profinite admissible** level; external smooth-manifold / C\*-algebra / empirical structures are **passports**, not blockers. A bridge over a frozen internal object is packaging, closed as `PASSPORT-CLOSED` (never `CORE-THE`) under the seven conditions of `D0-BRIDGE-COMPRESSION-001` (BOOK_05 §05.6); a bridge with no internal owner stays `PROOF-TARGET`, and one with no frozen object or PASS/FAIL protocol is `INACTIVE-BRIDGE`.
+
 The master synthesis is `03_THEORY_MAP/D0_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_PUBLICATION_OUTLINE.md`.
 
 ## 00.0 Publication entry status

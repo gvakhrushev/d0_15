@@ -335,6 +335,8 @@ Define `κ` as the minimal inward depth at which the ladder crosses the floor:
 This is the operational replacement of "actual infinity" by a finite distinguishability protocol: every check is obliged to run in the `κ`-truncation defined by `ε²`, and `κ` is a *physical* UV cutoff read off the observer floor, not a free setting [^b06-12].
 
 The `ε²=φ⁻¹⁶` floor is the observer's distinguishability floor that *terminates the inward ladder* and so bounds the depth `N` in `Q_N = Q_0 φ⁻ᴺ`.
+
+**Closure-sprint integration (Iteration 22).** The φ-ladder is the **first D0 continuum**: the discrete tick `A_{n+1}=φ⁻¹A_n` (golden split `p+p²=1`, `W_ext=φ⁻¹`, `W_int=φ⁻²`) has the unique continuous semigroup envelope `A(s)=A₀e^{−s logφ}` with `A(s+t)=A(s)A(t)/A₀` — `D0-PHI-LADDER-SEMIGROUP-001` (cert `vp_phi_ladder_semigroup.py`; the envelope cocycle is Lean-proved in `D0.IM.ContinuumFromFractalTick`, `env_cocycle`/`env_restricts_to_ladder`). On the golden-subshift cylinder tower the unique normalized shift-invariant trace is exactly this golden split `(φ⁻¹,φ⁻²)` — the unique left Perron eigenvector of `M=[[1,1],[1,0]]`; any other trace differing on a finite cylinder needs an external *which-frequency* catalog (⊥M1) — `D0-PHI-CYLINDER-TRACE-UNIQUE-001` (cert `vp_phi_cylinder_trace_unique.py`). The external operator-algebra reading — the crossed-product `C(X_φ)⋊ℤ` unique trace — is closed as a **passport**, not a D0 theorem: `D0-PHI-CSTAR-PASSPORT-001` (`PASSPORT-CLOSED`). The smooth-manifold limit is *not* this continuum; it stays the downstream Rieffel/GHP + Connes macro-shadow (`D0-SMOOTH-MANIFOLD-PASSPORT-001`).
 ## 06.7 Time as invariant registration and the causal section
 
 The D0 internal units may be represented by the normalized section

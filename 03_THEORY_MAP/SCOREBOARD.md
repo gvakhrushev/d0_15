@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 4239 / 5308 (**79.9%** of track-fair max)
-- **Core spine:** 3678 / 4720 (headroom **1042** points to take every core claim to L5)
-- Claims: 292 active (294 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 4246 / 5328 (**79.7%** of track-fair max)
+- **Core spine:** 3685 / 4740 (headroom **1055** points to take every core claim to L5)
+- Claims: 293 active (295 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
@@ -93,7 +93,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | formal_core | 176 | 2806 | 3321 | 510 |
 | frontier | 18 | 36 | 360 | 324 |
 | empirical_passport | 21 | 212 | 291 | 70 |
-| smooth_geometry | 20 | 286 | 342 | 52 |
+| smooth_geometry | 21 | 293 | 362 | 65 |
 | spectral_action | 5 | 61 | 100 | 39 |
 | cosmology | 24 | 446 | 472 | 26 |
 | gauge_bridge | 19 | 301 | 314 | 13 |
@@ -109,7 +109,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_08 | 47 | 732 | 881 | 145 |
 | BOOK_04 | 48 | 715 | 878 | 158 |
 | BOOK_07 | 49 | 657 | 889 | 218 |
-| BOOK_06 | 15 | 235 | 269 | 34 |
+| BOOK_06 | 16 | 242 | 289 | 47 |
 | BOOK_01 | 15 | 223 | 291 | 68 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
 | BOOK_02 | 13 | 207 | 220 | 13 |
