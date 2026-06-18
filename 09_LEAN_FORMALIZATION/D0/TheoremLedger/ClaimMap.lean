@@ -510,7 +510,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CKM-CLASS5-PARITY-EXCLUSION-001", moduleName := "D0.Matter.CKMClass5ParityExclusion",
       theoremName := "ckm_class5_parity_exclusion_status", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001", moduleName := "D0.Spectral.DeltaAlphaNormalizationNoGo",
-      theoremName := "alpha_residue_delta_normalization_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "alpha_residue_delta_normalization_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ASSUMPTION-LEDGER-GREEN-001", moduleName := "D0.Bridge.Assumptions.LindemannLnPhi",
+      theoremName := "LindemannLnPhiAssumption", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

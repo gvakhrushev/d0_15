@@ -25,6 +25,7 @@ import D0.Bridge.Assumptions.Frobenius
 import D0.Bridge.Assumptions.HeatTraceWeyl
 import D0.Bridge.Assumptions.Hurwitz
 import D0.Bridge.Assumptions.JonesIndex
+import D0.Bridge.Assumptions.LindemannLnPhi
 import D0.Bridge.Assumptions.MordellE8
 import D0.Bridge.Assumptions.SmoothInterpolation
 import D0.Bridge.Assumptions.Wilson

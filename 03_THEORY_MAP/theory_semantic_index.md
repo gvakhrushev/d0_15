@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 89
+- `CERT-CLOSED`: 90
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 100
+- `certificate`: 101
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 34
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 34
 - `empirical_passport`: 27
 - `external_background`: 1
-- `formal_core`: 192
+- `formal_core`: 193
 - `frontier`: 34
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1117,6 +1117,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Entropy-selected archive coupling interface plus finite-stage softmax coupling cert.
+
+### D0-ASSUMPTION-LEDGER-GREEN-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Bridge.Assumptions.LindemannLnPhi`
+- theorem: `LindemannLnPhiAssumption`
+- cert: `vp_assumption_ledger_green.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 Layer-0 gate repair] check_no_sorry_in_core's assumption-ledger validator (ALLOWED_TYPES frozen at base-v14, 7 generic types) drifted out of sync with the ledger's Iter-18/19/20 taxonomy: (A) 14 precise EXTERNAL-owner theorem types (Frobenius/Tomita/Connes/Dixmier/Adler-Weiss/... each a real classical theorem wrapped as one explicit D0.Bridge.BridgeAssumption.* under D0/Bridge/, never an axiom) and (B) 3 D0-INTERNAL forcing-target types (Hodge/Riemann-axis/P-vs-NP Lyapunov M1-reductio hypotheses living in their domain module). Reconciled the guard (extend whitelist + recognize internal forcing targets as a distinct checked category: EXPLICIT + real Lean ref, never CORE/FOUNDATION) WITHOUT disabling any check; wrapped ASSUMP-LINDEMANN-LNPHI as a proper bridge (D0/Bridge/Assumptions/LindemannLnPhi). No row deleted, none promoted to CORE, guard not neutered. Cert vp_assumption_ledger_green.py (controls reject CORE-typed/unknown-type/external-outside-D0/Bridge rows). check_no_sorry_in_core now PASS; lake build D0.All green (3840 jobs).
 
 ### D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001
 

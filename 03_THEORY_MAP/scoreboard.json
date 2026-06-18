@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 4686,
-    "track_fair_max": 6362,
-    "pct_strength": 73.7,
-    "core_realized": 4056,
-    "core_potential": 5700,
-    "core_headroom": 1644,
-    "n_claims": 350,
-    "n_active": 348,
+    "realized": 4698,
+    "track_fair_max": 6382,
+    "pct_strength": 73.6,
+    "core_realized": 4068,
+    "core_potential": 5720,
+    "core_headroom": 1652,
+    "n_claims": 351,
+    "n_active": 349,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 191,
-      "realized": 2956,
-      "max": 3597,
-      "core_headroom": 631
+      "n": 192,
+      "realized": 2968,
+      "max": 3617,
+      "core_headroom": 639
     },
     "rg": {
       "n": 5,
@@ -388,10 +388,10 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 9,
-      "realized": 140,
-      "max": 153,
-      "core_headroom": 13
+      "n": 10,
+      "realized": 152,
+      "max": 173,
+      "core_headroom": 21
     },
     "BOOK_00/05": {
       "n": 1,
@@ -657,6 +657,16 @@
       "claim_id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
       "domain": "frontier",
       "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -2502,6 +2512,13 @@
     {
       "claim_id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
       "domain": "frontier",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -7406,6 +7423,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
       "leverage": 0,
       "integrity_flag": null
     }

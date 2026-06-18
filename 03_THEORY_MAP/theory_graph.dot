@@ -351,6 +351,7 @@ digraph D0Theory {
   "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001" [label="D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001\\nNO-GO\\nempirical_passport", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-CKM-CLASS5-PARITY-EXCLUSION-001" [label="D0-CKM-CLASS5-PARITY-EXCLUSION-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001" [label="D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-ASSUMPTION-LEDGER-GREEN-001" [label="D0-ASSUMPTION-LEDGER-GREEN-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2325,4 +2326,10 @@ digraph D0Theory {
   "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001" -> "cert:vp_alpha_residue_delta_normalization_nogo.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Bridge.Assumptions.LindemannLnPhi" [label="D0.Bridge.Assumptions.LindemannLnPhi", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-ASSUMPTION-LEDGER-GREEN-001" -> "module:D0.Bridge.Assumptions.LindemannLnPhi" [label="module"];
+  "cert:vp_assumption_ledger_green.py" [label="vp_assumption_ledger_green.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-ASSUMPTION-LEDGER-GREEN-001" -> "cert:vp_assumption_ledger_green.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-ASSUMPTION-LEDGER-GREEN-001" -> "domain:formal_core" [label="domain"];
 }

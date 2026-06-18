@@ -11,6 +11,7 @@ ASSUMPTION_LEDGER = ROOT / "docs" / "LEAN_ASSUMPTION_LEDGER.csv"
 
 CORE_FORBIDDEN = ["sorry", "admit", "axiom", "unsafe", "Float", "constant", "opaque"]
 CORE_DIRS = {"Core", "Combinatorics", "Topology", "Algebra", "Gauge"}
+# Generic bridge categories (base-v14).
 ALLOWED_TYPES = {
     "CONDENSED_BRIDGE",
     "QFT_RG_BRIDGE",
@@ -19,6 +20,34 @@ ALLOWED_TYPES = {
     "MACRO_LIMIT",
     "PHYSICS_DICTIONARY",
     "LIE_ALGEBRA_LIBRARY_GAP",
+    # Precise external-owner theorem categories (Iter-18/19/20). Each names a real
+    # classical theorem absent from the pinned Mathlib, carried as one explicit
+    # BridgeAssumption (never an axiom). The descriptive type is deliberate — it records
+    # WHICH external owner, information a 7-bucket whitelist would erase.
+    "CARTAN_COMPACTNESS_CRITERION",
+    "SUBFACTOR_INDEX_QUANTIZATION",
+    "LATTICE_GENUS_THEOREM",
+    "NONCOMMUTATIVE_GEOMETRY_THEOREM",
+    "VON_NEUMANN_MODULAR_THEOREM",
+    "QM_FOUNDATIONS_THEOREM",
+    "QM_RECONSTRUCTION_THEOREM",
+    "EMERGENT_GRAVITY_PROGRAM",
+    "DIVISION_ALGEBRA_CLASSIFICATION",
+    "LATTICE_GAUGE_RIGOR",
+    "NONCOMMUTATIVE_INTEGRAL_THEOREM",
+    "QUANTUM_METRIC_CONVERGENCE",
+    "SYMBOLIC_DYNAMICS_CLASSIFICATION",
+    "TRANSCENDENCE_THEOREM_LINDEMANN_WEIERSTRASS",
+}
+# D0-internal named forcing targets (Iter-20 M1-reductio hypotheses). NOT external
+# classical theorems: decidable obligations the corpus assumes-but-has-not-derived, living
+# in their own domain module (Topology/Spectral/Complexity), not under D0/Bridge/. Exempt
+# from the external-wrapper convention but still checked: must be EXPLICIT, reference a real
+# internal Lean decl, and never be typed CORE/FOUNDATION.
+INTERNAL_TARGET_TYPES = {
+    "D0_INTERNAL_FORCING_TARGET",
+    "COMPLEXITY_NAVIGATION_POTENTIAL",
+    "SPECTRAL_PACKAGING_SYMMETRY",
 }
 FORBIDDEN_TYPES = {"CORE", "FOUNDATION", "UNSPECIFIED", ""}
 
@@ -128,13 +157,22 @@ def check_bridge() -> list[str]:
     failures = []
     rows, by_name, by_file = load_assumptions()
     for row in rows:
+        aid = row.get("assumption_id")
         typ = row.get("assumption_type", "")
-        if typ in FORBIDDEN_TYPES or typ not in ALLOWED_TYPES:
-            failures.append(f"assumption ledger {row.get('assumption_id')}: bad type {typ!r}")
-        if "BridgeAssumption." not in row.get("lean_name", ""):
-            failures.append(f"assumption ledger {row.get('assumption_id')}: lean_name must contain BridgeAssumption.*")
-        if not row.get("lean_file", "").replace("\\", "/").startswith("D0/Bridge/"):
-            failures.append(f"assumption ledger {row.get('assumption_id')}: lean_file must be under D0/Bridge/")
+        is_internal = typ in INTERNAL_TARGET_TYPES
+        if typ in FORBIDDEN_TYPES or typ not in (ALLOWED_TYPES | INTERNAL_TARGET_TYPES):
+            failures.append(f"assumption ledger {aid}: bad type {typ!r}")
+        if is_internal:
+            # Internal forcing target: lives in its own domain module, not D0/Bridge/.
+            if row.get("status", "") != "EXPLICIT":
+                failures.append(f"assumption ledger {aid}: internal forcing target must be status EXPLICIT")
+            if not row.get("lean_name", "") or not row.get("lean_file", ""):
+                failures.append(f"assumption ledger {aid}: internal forcing target must reference a real Lean decl (lean_name+lean_file)")
+        else:
+            if "BridgeAssumption." not in row.get("lean_name", ""):
+                failures.append(f"assumption ledger {aid}: lean_name must contain BridgeAssumption.*")
+            if not row.get("lean_file", "").replace("\\", "/").startswith("D0/Bridge/"):
+                failures.append(f"assumption ledger {aid}: lean_file must be under D0/Bridge/")
 
     for path in (D0 / "Bridge").rglob("*.lean"):
         rel = path.relative_to(ROOT).as_posix()

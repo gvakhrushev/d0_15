@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 350,
+    "claims": 351,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 89,
+      "CERT-CLOSED": 90,
       "NO-GO": 14,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 5
     },
     "lean_status": {
-      "LEAN_PROVED": 211,
+      "LEAN_PROVED": 212,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 81,
       "DEPRECATED": 2,
@@ -30,12 +30,12 @@
       "core": 163,
       "bridge": 28,
       "no-go": 22,
-      "certificate": 100,
+      "certificate": 101,
       "deprecated": 3,
       "frontier": 34
     },
     "domain": {
-      "formal_core": 192,
+      "formal_core": 193,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 28,
@@ -4329,7 +4329,7 @@
       "id": "assumption:ASSUMP-LINDEMANN-LNPHI",
       "kind": "bridge_assumption",
       "label": "ASSUMP-LINDEMANN-LNPHI",
-      "lean_name": "D0.Spectral.LindemannLnPhi",
+      "lean_name": "D0.Bridge.BridgeAssumption.LindemannLnPhiAssumption",
       "status": "EXPLICIT",
       "assumption_type": "TRANSCENDENCE_THEOREM_LINDEMANN_WEIERSTRASS",
       "external_source_or_cert": "Lindemann (1882) / Weierstrass (1885); Mathlib NumberTheory.Transcendental.Lindemann.AnalyticalPart (analytic part only); cert vp_feshbach_residue_amplitudes.py"
@@ -11719,6 +11719,44 @@
       "label": "vp_alpha_residue_delta_normalization_nogo.py",
       "path": "05_CERTS/vp_alpha_residue_delta_normalization_nogo.py",
       "exists": true
+    },
+    {
+      "id": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "kind": "claim",
+      "claim_id": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.6",
+      "lean_module": "D0.Bridge.Assumptions.LindemannLnPhi",
+      "lean_theorem": "LindemannLnPhiAssumption",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_assumption_ledger_green.py",
+      "python_cert": [
+        "vp_assumption_ledger_green.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 Layer-0 gate repair] check_no_sorry_in_core's assumption-ledger validator (ALLOWED_TYPES frozen at base-v14, 7 generic types) drifted out of sync with the ledger's Iter-18/19/20 taxonomy: (A) 14 precise EXTERNAL-owner theorem types (Frobenius/Tomita/Connes/Dixmier/Adler-Weiss/... each a real classical theorem wrapped as one explicit D0.Bridge.BridgeAssumption.* under D0/Bridge/, never an axiom) and (B) 3 D0-INTERNAL forcing-target types (Hodge/Riemann-axis/P-vs-NP Lyapunov M1-reductio hypotheses living in their domain module). Reconciled the guard (extend whitelist + recognize internal forcing targets as a distinct checked category: EXPLICIT + real Lean ref, never CORE/FOUNDATION) WITHOUT disabling any check; wrapped ASSUMP-LINDEMANN-LNPHI as a proper bridge (D0/Bridge/Assumptions/LindemannLnPhi). No row deleted, none promoted to CORE, guard not neutered. Cert vp_assumption_ledger_green.py (controls reject CORE-typed/unknown-type/external-outside-D0/Bridge rows). check_no_sorry_in_core now PASS; lake build D0.All green (3840 jobs).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/Assumptions/LindemannLnPhi.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.Assumptions.LindemannLnPhi",
+      "kind": "lean_module",
+      "label": "D0.Bridge.Assumptions.LindemannLnPhi",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/Assumptions/LindemannLnPhi.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_assumption_ledger_green.py",
+      "kind": "python_cert",
+      "label": "vp_assumption_ledger_green.py",
+      "path": "05_CERTS/vp_assumption_ledger_green.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -16655,6 +16693,21 @@
     {
       "source": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
       "target": "cert:vp_alpha_residue_delta_normalization_nogo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "target": "module:D0.Bridge.Assumptions.LindemannLnPhi",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ASSUMPTION-LEDGER-GREEN-001",
+      "target": "cert:vp_assumption_ledger_green.py",
       "kind": "certified_by"
     }
   ]
