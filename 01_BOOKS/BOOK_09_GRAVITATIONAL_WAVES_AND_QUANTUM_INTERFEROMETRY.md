@@ -26,7 +26,7 @@ The V3--V12 GWOSC/LIGO scans are admitted as negative-control discovery work.  R
 
 The binary horizon-interference picture is represented by a finite toroidal readout geometry: two axial release lobes and a transverse equatorial capacity belt.  The geometry is called the apple-torus or spindle-torus bridge because the retained/archive seam closes around an axial puncture while preserving a finite volume constraint.
 
-The bridge object is not an embedding claim about the literal astrophysical horizon.  It is a finite readout carrier used to organize axial release, transverse saturation, and quadrupole strain.
+The bridge object is not an embedding claim about the literal astrophysical horizon.  It is a finite measurement instrument (D0: readout carrier) used to organize axial release, transverse saturation, and quadrupole strain.
 
 ## 09.02 Volume-preserving quadrupole and spin-2 carrier
 
@@ -46,7 +46,7 @@ This is the finite readout expression of volume-preserving quadrupole deformatio
 
 ## 09.03 Horizon hum theorem-target
 
-A single saturated horizon seam need not be perfectly static in the finite theory.  Its retained/archive boundary can support small capacity-preserving micro-vibrations.  In bridge language this is the `horizon hum`: a low-amplitude quadrupole residual of an isolated seam.
+A single saturated horizon seam need not be perfectly static in the finite theory.  Its boundary between retained-sector and traced-out-complement can support small capacity-preserving micro-vibrations.  In external-transfer language this is the `horizon hum`: a low-amplitude quadrupole residual of an isolated seam.
 
 Status: `THEOREM-TARGET / PASSPORT-TARGET`.
 
@@ -67,7 +67,7 @@ The D0 interpretation is that the observable merger strain is a finite interfere
 
 ## 09.05 Dimensionless LIGO passport targets
 
-The clean dimensionless passport targets are:
+The clean dimensionless empirical-comparison targets (D0: passport targets) are:
 
 \[
 I_A = \varphi^{-1},

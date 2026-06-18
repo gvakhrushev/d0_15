@@ -271,7 +271,7 @@ J(x) = A x = 0 ,
 ```
 
 so the 30 kernel modes carry exactly zero inter-zone transport: they cannot be
-radiated. Yet they are genuine internal degrees of freedom of the scene and they
+radiated. Yet they are genuine internal degrees of freedom of the finite incidence complex (D0: scene) and they
 DO enter the spectral traces (heat-trace / entropy of §17.2 onward). Hence the
 sterile sector is "memory without a light channel": a 30-dim hidden capacity
 that contributes to the trace-time bookkeeping while emitting nothing. This is
@@ -1225,7 +1225,7 @@ The same scene that fixes the arity also explains, with zero free parameters, on
 quark currents  -> active sector: 3 non-degenerate modes (21.84, -9.76, -12.08)
                 -> hierarchy SUPPRESSES mixing  => CKM small.
 
-neutrinos       -> sterile archive: kernel 30-fold degenerate
+neutrinos       -> sterile traced-out complement (D0: archive): kernel 30-fold degenerate
                 -> degeneracy PERMITS any rotation => PMNS large.
 ```
 
@@ -1787,7 +1787,7 @@ P_n^{shell}\,
 
 Here `P_p^shell` and `P_n^shell` are occupied proton and neutron shell projectors, and `W_J^D0` is the angular-momentum contact finite variational selector.
 
-In the diagonal shell-occupation approximation the readout is the Shell Contact Index:
+In the diagonal shell-occupation approximation the positive-operator outcome (D0: readout) is the Shell Contact Index:
 
 ```math
 \mathrm{SCI}_{D0}(A)

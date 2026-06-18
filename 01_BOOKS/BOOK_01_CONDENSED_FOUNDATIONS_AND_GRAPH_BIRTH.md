@@ -380,12 +380,12 @@ The primitive return phase is φ-rigid:
 \Delta\theta=\frac{2\pi}{\varphi^2}.
 ```
 
-Because this phase is irrational and has the golden continued-fraction class, it suppresses low-denominator rational locking. The unresolved archive geometry therefore does not collapse into uncontrolled periodic arms.
+Because this phase is irrational and has the golden continued-fraction class, it suppresses low-denominator rational locking. The unresolved traced-out environment geometry (D0: archive geometry) therefore does not collapse into uncontrolled periodic arms.
 
 Visible spatial branches appear only when a finite readout quotient chooses a return modulus `q`. The residue classes modulo `q` become detector-visible geometry:
 
 ```text
-ordered tick chain
+ordered discrete-evolution-endomorphism chain (D0: tick chain)
 -> irrational φ phase
 -> finite return modulus
 -> residue branches
@@ -448,7 +448,7 @@ For an event projector `\Pi_a`, the finite readout law is
 P_N(a)=\frac{\operatorname{Tr}(\Pi_aR_N)}{\operatorname{Tr}(R_N)}.
 \]
 
-The amplitude layer, archive layer and probability layer are separated:
+The amplitude layer, traced-out environment (D0: archive) layer and probability layer are separated:
 
 \[
 \rho_N=|\psi_N\rangle\langle\psi_N|,
@@ -1212,7 +1212,7 @@ The raw response of outcome `i` is therefore
 r_i=\sum_{s\in S}E_i(s)R(s).
 ```
 
-The probability readout is forced to be
+The probability from positive measurement outcomes (D0: readout) is forced to be
 
 ```math
 p_i=\frac{r_i}{\sum_j r_j}.
@@ -1274,7 +1274,7 @@ The active claim is therefore finite and exact:
 
 ```text
 finite effects + positivity + response recovery + coarse/tensor consistency
-=> unique normalized detector readout;
+=> unique normalized positive measurement outcomes (D0: readout);
 no independent probability knob;
 no alternative power readout at fixed response.
 ```
@@ -1296,7 +1296,7 @@ The most general quadratic detector response on this atom is
 Q(z)=a x^2+bxy+c y^2.
 ```
 
-A detector readout cannot depend on the arbitrary internal quarter-turn of the phase quadrature,
+A positive measurement outcome (D0: readout) cannot depend on the arbitrary internal quarter-turn of the phase quadrature,
 
 ```math
 (x,y)\mapsto(-y,x).
@@ -1400,11 +1400,11 @@ turns the one-dimensional tick sequence into a branch foliation whenever an inte
 The strengthened chain is:
 
 ```text
-tick order
+discrete-evolution order (D0: tick order)
 -> irrational phi^-2 phase
 -> finite return modulus
 -> residue branches
--> detector-visible geometry.
+-> measurement-instrument-visible geometry (D0: detector-visible).
 ```
 
 The irrational phase is not an optional decoration.  It prevents rational

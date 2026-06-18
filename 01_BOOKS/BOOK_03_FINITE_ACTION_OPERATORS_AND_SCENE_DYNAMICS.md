@@ -404,7 +404,7 @@ The normalized witness transport is schematically
 \text{tick}\rightarrow\text{witness transport}\rightarrow\text{active/archive split}\rightarrow\text{quadratic readout}.
 ```
 
-Finite-window entropy and dynamic witness transport are proof-referenced to Book 02. Book 03 uses them to control when an action block is a real runtime mechanism and when it is only a formal expression.
+Finite-window entropy and dynamic witness transport are proof-referenced to Book 02. Book 03 uses them to control when an action block is a real ordered finite evolution (D0: runtime) mechanism and when it is only a formal expression.
 
 ## 03.10 Vertex registry and finite scattering discipline
 
@@ -762,7 +762,7 @@ r_* = r_0(1+I_*/d_9),
 c_\partial^2=\delta_0^6r_*.
 ```
 
-The same action-gauge closure fixes
+The same action-section metrological closure (D0: action-gauge) fixes
 
 ```math
 S_\Lambda(\tau,\Lambda)=

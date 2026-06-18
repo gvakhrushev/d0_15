@@ -215,7 +215,7 @@ The bridge to continuum geometry is a functorial/macroscopic shadow:
 g_{ij}^{D0}\xrightarrow{\mathcal F_{macro}} g_{\mu\nu}.
 ```
 
-Definition. The D0 gravity construction is a finite-readout spectral geometry from which the metric description emerges as the stable large-scale language. It is not offered as a replacement for general relativity.
+Definition. The finite spectral geometry with its macro Einstein interface (D0: D0 gravity construction as finite-readout spectral geometry) provides the invariant from which the metric description emerges as the stable large-scale language. It is not offered as a replacement for general relativity.
 
 ## 07.4 Causal section and metrological separation
 
@@ -368,7 +368,7 @@ Equivalently,
 \sim (4\pi u)^{-2}\int d^4x\sqrt{g}\,(a_0+a_1uR+O(u^2)).
 ```
 
-The Einstein--Hilbert shadow is
+The macro interface (D0: Einstein-Hilbert shadow) is
 
 ```math
 S_{EH}=\frac{1}{16\pi G_D}\int d^4x\sqrt{-g}\,R.
@@ -433,7 +433,7 @@ The finite area coefficient retained from the source gravity sector is
 \beta_{area}=\frac{3}{640\pi^2|E|\varphi^4}.
 ```
 
-The runtime gravity coefficient is written as
+The ordered finite evolution gravity coefficient (D0: runtime gravity coefficient) is written as
 
 ```math
 G_{runtime}=\frac{1}{16\pi\kappa_B\beta_{area}}.

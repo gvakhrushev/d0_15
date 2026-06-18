@@ -258,7 +258,7 @@ The source proof spine identifies formulas that are too high-gain to be justifie
 A_{depth}^{EW}=\varphi^{35}\left(1+{\delta_0\over\varphi}-\varphi^2\delta_0^3\right).
 ```
 
-The exponent and two correction terms must be selected from the gate-action grammar. Nearby expressions are rejected unless they satisfy the same admissibility constraints.
+The exponent and two correction terms must be selected from the finite variational test functional (D0: gate-action grammar). Nearby expressions are rejected unless they satisfy the same admissibility constraints.
 
 ### 02.4.2 Charged-lepton generation action
 
@@ -620,7 +620,7 @@ R=\mathcal D^\dagger\mathcal D.
 
 The universal readout form is a normalized trace, determinant, Schur complement or finite spectral functional only after the support, probe and quotient have been fixed. This protects the theory against fitting by replacing a free parameter with a typed finite operator.
 
-The general readout grammar is:
+The general positive measurement outcome grammar is (D0: readout):
 
 ```math
 \text{support}\rightarrow\text{operator}\rightarrow\text{positive response}\rightarrow\text{finite quotient}\rightarrow\text{comparison protocol}.

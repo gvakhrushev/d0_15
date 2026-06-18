@@ -253,7 +253,7 @@ The ambient condensed test functor
 \underline X(S)=\operatorname{Hom}_{Top}(S,X)
 ```
 
-is too broad to be physics.  D0 uses a constrained finite-readout subfunctor
+is too broad to be physics. D0 uses a constrained finite-readout subfunctor (positive measurement outcome / positive response functional with finite factorization)
 
 ```math
 \boxed{
@@ -269,7 +269,7 @@ This is the placement rule for the rest of the corpus: carrier geometries, Stand
 
 The D0 vacuum is the condensed/profinite hull of all admissible finite detector registrations.
 
-The smooth spacetime manifold is a macro readout shadow.
+The smooth spacetime manifold is a macro measurement-outcome shadow (D0: readout shadow).
 The active visible geometry is obtained by φ cut-and-project projection from the archive/profinite support.
 
 The tiling hull of this support is the carrier on which spectral operators, phason defects, holonomies, domain walls and archive pressure modes live.
@@ -320,7 +320,7 @@ The canonical proof dependency order is:
 05 certificate discipline and negative controls
 06 evolution, forgetting and time
 07 gravity, finite geometry and Einstein macro-interface
-08 cosmology, archive pressure and observable transfer
+08 cosmology, effective boundary response of traced-out sector (D0: archive pressure) and observable transfer
 ```
 
 This order prevents later sector closures from being mistaken for first principles. A result is admitted only when its support, operator, normalization, proof/certificate owner, bridge type, and falsification hook are explicit.
@@ -438,7 +438,7 @@ The hostile-reading question is mandatory:
 \text{Could a different admissible finite expression hit the same benchmark?}
 ```
 
-If the answer is yes, the result remains a stress test.  If the answer is no, the active book must show the M1, gate, trace, finite-spectrum or stationarity reason why alternatives fail.
+If the answer is yes, the result remains a stress test. If the answer is no, the active book must show the M1, finite variational test functional (D0: gate), trace, finite-spectrum or stationarity reason why alternatives fail.
 
 ### The law the firewall enforces: M1
 
@@ -674,9 +674,7 @@ A pure change of status vocabulary is not theory improvement.  A claim improves
 only when a proof owner, no-go, executable certificate or external passport
 removes a concrete ambiguity.
 
-Book 04 carries named finite selectors for the charged-lepton electron terminal,
-the electroweak depth, the proton readout, the neutron archive sibling and the
-beta-unlock depth.  Such selectors named as abstract labels are not enough: each
+Book 04 carries named finite selectors for the charged-lepton electron terminal, the electroweak depth, the proton measurement outcome (D0: readout), the neutron traced-out sibling (D0: archive sibling) and the beta-unlock depth.  Such selectors named as abstract labels are not enough: each
 must discharge a concrete ambiguity through its proof owner or certificate.
 
 CKM basis origin: the finite basis-origin selectors establish that the candidate

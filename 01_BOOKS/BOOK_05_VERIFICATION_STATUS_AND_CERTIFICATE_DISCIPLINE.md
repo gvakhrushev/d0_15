@@ -40,7 +40,7 @@ MASTER-BOOTSTRAP-CORE: the stationary condition on the combined heat-trace + fee
 
 GAUGE-BOUNDARY-LAW: color confinement is the commutator obstruction preventing terminal stable poles for non-singlet states (finite lower-bound target on F_N).
 
-HORIZON-EMISSION-LAW: horizon emission is archive-to-retained boundary leakage under capacity saturation (conjugate feedback form certified at finite operator level).
+HORIZON-EMISSION-LAW: horizon emission is traced-out-environment (archive) boundary leakage to the retained sector under capacity saturation (conjugate feedback form certified at finite operator level).
 
 BARYON-ANONYMOUS-POLE-SCAFFOLD-CLOSED: baryon resonances are anonymous poles of the exchange-symmetric compressed dynamics on the certified 40/56 carriers; eigenvalues computed on the image basis of the projectors.
 
@@ -50,7 +50,7 @@ TORUS-RAMIFICATION-TARGET: lepton hierarchy as torus ramification / Puiseux indi
 
 FRACTAL-CONTINUUM-CORE-CLOSED: fractal tick substrate yields the unique continuous semigroup envelope under the corrected multiplicative form \(A(s+t)=A(s)A(t)/A_0\); orbit-averaged emission uses \(|G_8|\) with explicit irreducibility proviso.
 
-RELATIVE-ARCHIVE-ACCELERATION-CERT-CLOSED: A finite internal observable \(R_n = B_n / A_n\) derived from fractal tick recurrence has strictly positive second finite difference, and its continuum envelope has positive second derivative.
+RELATIVE-ARCHIVE-ACCELERATION-CERT-CLOSED: A finite internal observable \(R_n = B_n / A_n\) derived from discrete evolution (tick) recurrence has strictly positive second finite difference, and its continuum envelope has positive second derivative.
 
 RELATIVE-PRESSURE-BRIDGE-LAW-CERT-CLOSED: Weak bridge \(\mathsf P_{rel}=c_R\Delta R_n\) (fixed internal \(c_R>0\)) with positive increment from relative acceleration.
 
@@ -60,7 +60,7 @@ PHI-LADDER-SEMIGROUP-CERT-CLOSED: the phi-tick ladder A_n=A_0 phi^-n / B_n=(1-ph
 
 PHI-CYLINDER-TRACE-UNIQUE-CERT-CLOSED: on the golden-subshift cylinder tower the normalized shift-invariant trace is the unique left Perron eigenvector of M=[[1,1],[1,0]] = the golden split (phi^-1,phi^-2); any trace differing on a finite cylinder needs an external which-frequency catalog (M1) (`D0-PHI-CYLINDER-TRACE-UNIQUE-001`, cert `vp_phi_cylinder_trace_unique.py`).
 
-ALPHA-MU2-FULL-LEDGER-CERT-CLOSED: the depth-2 archive-return scalar trace is M1-forced onto the full Boolean ledger Lambda*(V11)=2^11 (subcarriers spinor 32 / edge-pairing 2 / V9 / V13 each need an external selector), giving mu2=2^11 pi0 phi^-2=12288/5 (`D0-ALPHA-MU2-FULL-LEDGER-001`, cert `vp_alpha_mu2_full_ledger.py`; the physical residue-extraction realisation stays the external Dixmier owner).
+ALPHA-MU2-FULL-LEDGER-CERT-CLOSED: the depth-2 traced-out-environment (archive) return scalar trace is M1-forced onto the full Boolean ledger Lambda*(V11)=2^11 (subcarriers spinor 32 / edge-pairing 2 / V9 / V13 each need an external selector), giving mu2=2^11 pi0 phi^-2=12288/5 (`D0-ALPHA-MU2-FULL-LEDGER-001`, cert `vp_alpha_mu2_full_ledger.py`; the physical residue-extraction realisation stays the external Dixmier owner).
 
 BRIDGE-COMPRESSION-RULE: a bridge over a frozen internal object is packaging, closed as PASSPORT-CLOSED (firewall EMPIRICAL_PASSPORT, never CORE-THE) under seven conditions; missing owner -> PROOF-TARGET, missing frozen object/protocol -> INACTIVE-BRIDGE (`D0-BRIDGE-COMPRESSION-001`, cert `vp_bridge_compression.py`; rule in 05.6).
 
@@ -117,11 +117,11 @@ PUBLICATION-MONOGRAPH-STRUCTURE: Corpus organized into coherent chapters with ex
 Forbidden shortcuts (extended):
 H0 value from core topology alone
 DESI/SPARC/H0 fit without passport
-confusing absolute archive deceleration with relative archive acceleration
+confusing absolute traced-out-sector (archive) deceleration with relative traced-out-sector acceleration
 survey data entering definition of R_n or its acceleration
 using the wrong derivative for r(V) (e.g. treating r(V) as constant)
 retuning z or c_R from external survey data
-confusing the relative archive ratio with a physical FLRW scale factor
+confusing the relative traced-out-sector (archive) ratio with a physical FLRW scale factor
 using the expression outside the resolvent domain
 
 TORUS-RAMIFICATION-TARGET: charged-lepton hierarchy reduces to branch indices (torus ramification / Puiseux exponents) of the finite Green function over the shell torus.
@@ -282,9 +282,9 @@ translations are mandatory in proof cells:
 
 | D0 term | Standard-language obligation |
 |---|---|
-| archive | traced-out complement, environment, quotient store or forgotten support |
+| archive (traced-out complement) | environment bath / traced-out sector / quotient store from finite measurement |
 | forgetting | conditional expectation, partial trace, quotient, RG map or projection |
-| readout | positive operator-valued instrument, response functional or finite selector |
+| readout | POVM outcome / positive operator-valued measurement response / finite selector |
 | bridge | typed coupling, functor, EFT matching map, scheme dictionary or comparison kernel |
 | external comparison protocol | external comparison protocol with manifest and fixed internal input |
 | stiffness | structural uniqueness plus negative controls |
@@ -303,7 +303,7 @@ D0 uses five evidence levels.  They must not be merged.
 | theorem | mathematical consequence of active D0 definitions | yes |
 | certificate | executable finite witness for a stated theorem, formula, uniqueness or no-go | no, unless the finite object is already specified in the theorem |
 | no-go | proof that a promotion is impossible under the current operator set | yes, negatively |
-| bridge | typed dictionary from frozen D0 object to external convention | no |
+| bridge | typed functor / EFT matching map / calibration dictionary from frozen D0 object to external convention | no |
 | external comparison protocol | reproducible comparison with external data or scheme | no |
 
 The anti-numerology firewall is:
@@ -773,7 +773,7 @@ columns; independent row choices are not a CKM closure proof.
 
 ### Gravity and cosmology
 
-Gravity and cosmology claims must distinguish archive geometry, weak-field
+Gravity and cosmology claims must distinguish traced-out-sector (archive) geometry, weak-field
 Poisson response, TT quotient, finite spin-2 dynamics, spectral/EH bridge,
 archive entropy flow, survey transfer and external likelihoods.  BAO, DESI,
 Hubble or S_DE comparisons are external comparison protocols only after the internal archive object is
@@ -1083,7 +1083,7 @@ An empirical cosmology claim may not rely on archived result replay alone.  It
 requires:
 
 ```text
-internal archive object fixed before data;
+internal traced-out-sector (archive) object fixed before data;
 observable-transfer map;
 data manifest;
 SHA-256 hashes;
