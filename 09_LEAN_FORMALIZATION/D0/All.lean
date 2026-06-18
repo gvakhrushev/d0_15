@@ -114,6 +114,7 @@ import D0.Cosmology.FloorMassProjection
 import D0.Cosmology.InstabilitySaturation
 import D0.Cosmology.LinearizedEntropyFlow
 import D0.Cosmology.PhasonFlipEntropy
+import D0.Cosmology.PhasonWZTransfer
 import D0.Cosmology.ResearchPassCorollaries
 import D0.Cosmology.SDEFeedbackReduction
 import D0.Cosmology.SurveyReproducibilitySplit

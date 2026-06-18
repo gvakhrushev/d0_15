@@ -458,7 +458,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-XI5-CROSS-SECTOR-001", moduleName := "D0.Claims.Xi5TorusDefect",
       theoremName := "xi5_torus_defect", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-BARYON-ASYMMETRY-DELTA0-001", moduleName := "D0.Matter.TickS3BaryonAsymmetry",
-      theoremName := "baryon_cp_eq_three_delta0", status := ClaimStatus.leanCoreProved }
+      theoremName := "baryon_cp_eq_three_delta0", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001", moduleName := "D0.Cosmology.PhasonWZTransfer",
+      theoremName := "kernel_dim_alone_does_not_determine_w", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001", moduleName := "D0.Cosmology.PhasonWZTransfer",
+      theoremName := "phason_w_defined_on_nonzero_energy", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

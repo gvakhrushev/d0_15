@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 4309,
-    "track_fair_max": 5500,
-    "pct_strength": 78.3,
-    "core_realized": 3741,
-    "core_potential": 4900,
-    "core_headroom": 1159,
-    "n_claims": 304,
-    "n_active": 302,
+    "realized": 4337,
+    "track_fair_max": 5572,
+    "pct_strength": 77.8,
+    "core_realized": 3757,
+    "core_potential": 4960,
+    "core_headroom": 1203,
+    "n_claims": 308,
+    "n_active": 306,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -68,10 +68,10 @@
       "core_headroom": 83
     },
     "cosmology": {
-      "n": 25,
-      "realized": 458,
-      "max": 492,
-      "core_headroom": 34
+      "n": 27,
+      "realized": 482,
+      "max": 524,
+      "core_headroom": 42
     },
     "external_background": {
       "n": 1,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 19,
-      "realized": 38,
-      "max": 380,
-      "core_headroom": 342
+      "n": 21,
+      "realized": 42,
+      "max": 420,
+      "core_headroom": 378
     }
   },
   "by_book": {
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 51,
-      "realized": 736,
-      "max": 930,
-      "core_headroom": 184
+      "n": 52,
+      "realized": 738,
+      "max": 950,
+      "core_headroom": 202
     },
     "BOOK_04/08": {
       "n": 7,
@@ -172,10 +172,10 @@
       "core_headroom": 88
     },
     "BOOK_08": {
-      "n": 47,
-      "realized": 732,
-      "max": 881,
-      "core_headroom": 145
+      "n": 50,
+      "realized": 758,
+      "max": 933,
+      "core_headroom": 171
     },
     "BOOK_05/06": {
       "n": 6,
@@ -417,6 +417,16 @@
       "claim_id": "D0-FIBONACCI-IF-FORCING-001",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
       "level_name": "LEAN_PROVED",
       "leverage": 1,
       "next": "CORE_FORMALIZED",
@@ -1242,12 +1252,39 @@
       "next": "CERT_SCAFFOLD",
       "points_gained": 2,
       "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
     }
   ],
   "leverage_gaps": [
     {
       "claim_id": "D0-FIBONACCI-IF-FORCING-001",
       "domain": "formal_core",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+      "domain": "cosmology",
       "leverage": 1,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -1387,6 +1424,20 @@
     },
     {
       "claim_id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-PHASON-WZ-TRANSFER-OWNER-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -6084,12 +6135,68 @@
       "book": "BOOK_06/01",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.3,
+    "penalty_total": 0.8,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -6134,8 +6241,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 3,
-        "points": -0.3,
+        "count": 6,
+        "points": -0.6,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -6150,11 +6257,15 @@
       },
       {
         "signal": "path_leaks",
-        "count": 0,
-        "points": -0.0,
+        "count": 3,
+        "points": -0.2,
         "cap": -12.0,
         "label": "internal repo paths / vp_*.py / D0.* module names dumped in book prose",
-        "evidence": []
+        "evidence": [
+          "SULT: FAIL вЂ” 2 publication issue(s); kinds: {'inline repo-ref': 2}",
+          "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md:89: inline repo-ref 'vp_phason_wz_transfer_owner.py' in body prose",
+          "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md:91: inline repo-ref 'vp_phason_pressure_eos.py' in body prose"
+        ]
       },
       {
         "signal": "corpus_errors",
@@ -6184,11 +6295,23 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 3,
-        "points": -0.3,
+        "count": 6,
+        "points": -0.6,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
+      },
+      {
+        "signal": "path_leaks",
+        "count": 3,
+        "points": -0.2,
+        "cap": -12.0,
+        "label": "internal repo paths / vp_*.py / D0.* module names dumped in book prose",
+        "evidence": [
+          "SULT: FAIL вЂ” 2 publication issue(s); kinds: {'inline repo-ref': 2}",
+          "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md:89: inline repo-ref 'vp_phason_wz_transfer_owner.py' in body prose",
+          "BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md:91: inline repo-ref 'vp_phason_pressure_eos.py' in body prose"
+        ]
       }
     ]
   }

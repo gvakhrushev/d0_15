@@ -1157,6 +1157,8 @@ d_\perp = D - d_\parallel
 
 **Dark-energy connection (HYP, not BRIDGE).** If the archive phason carries a slow-rolling pressure, it reads as an evolving dark-energy equation of state `w(z)`. The DESI DR2 analysis prefers a CPL evolving `w` over `ΛCDM` at `~3.1σ` (K. Lodha et al., arXiv:2503.14743). This is *suggestive* of "evolving `w` = archive pressure", **but the mechanism is not derived**: no numerical `w(z)` has been computed from the phason model (the 30-dimensional kernel → `w(z)` map is unwritten). Status **HYP, not BRIDGE**, pending a phason-derived `w(z)`.
 
+**Update (Iteration 22 dual-frontier strike).** The `30-dim kernel → w(z)` map is now owned at three levels: (i) the **kernel-only no-go** `D0-PHASON-WZ-KERNEL-ONLY-NOGO-001` (NO-GO) — the 30-dim kernel alone does *not* determine `w(z)` (two pressure-energy pairs over the same kernel give different `w_D0`; a finite pressure-energy operator is required; Lean `D0.Cosmology.PhasonWZTransfer.kernel_dim_alone_does_not_determine_w`); (ii) the **EOS-form scaffold** `D0-PHASON-PRESSURE-EOS-SCAFFOLD-001` (CERT-CLOSED) — `w_D0 = p/ρ` is well-defined on the nonzero-energy domain, `ρ` from the archive relative-acceleration energy (`D0-IM-COSMO-001`) and `p` from the log-det loop-pressure response; (iii) the **explicit `w_D0(u)` owner** `D0-PHASON-WZ-TRANSFER-OWNER-001` (PROOF-TARGET) — the closed `u`-dependent formula / finite `w_N` is the named missing artifact. Status stays **HYP-with-mechanism-scaffold, not BRIDGE**: the DESI CPL comparison remains an empirical passport (survey data may compare, never define `w_D0`; `vp_phason_wz_no_survey_tuning.py`).
+
 
 ## Apparatus — sources & open obligations
 

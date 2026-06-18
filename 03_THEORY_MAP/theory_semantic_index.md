@@ -7,33 +7,33 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 64
+- `CERT-CLOSED`: 65
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 10
+- `NO-GO`: 11
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 3
-- `PROOF-TARGET`: 19
+- `PROOF-TARGET`: 21
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 73
+- `certificate`: 74
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 19
-- `no-go`: 18
+- `frontier`: 21
+- `no-go`: 19
 
 ## Domain counts
 
-- `cosmology`: 25
+- `cosmology`: 27
 - `empirical_passport`: 22
 - `external_background`: 1
 - `formal_core`: 181
-- `frontier`: 19
+- `frontier`: 21
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -81,6 +81,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] parameter-free internal dark object as additive optical-depth kernel; catalogue is external readout.
+
+### D0-PHASON-PRESSURE-EOS-SCAFFOLD-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.PhasonWZTransfer`
+- theorem: `phason_w_defined_on_nonzero_energy`
+- cert: `vp_phason_pressure_eos.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Iter22 dual-frontier] the phason EOS FORM w_D0 = pressure/rho is well-defined on the nonzero-energy domain (Lean D0.Cosmology.PhasonWZTransfer.phason_w_defined_on_nonzero_energy); the pair is instantiable from internal owners -- rho from the archive relative-acceleration energy (D0-IM-COSMO-001, archive_growth_strictly_convex) and pressure from the log-det loop-pressure response (LOGDET-PRESSURE-COUPLING-CERT-CLOSED). cert vp_phason_pressure_eos.py (can-FAIL: zero-energy, CPL-tuning, baryon-S3-substitution controls). SCOPE: the FORM only; the explicit w_D0(u)/finite w_N FORMULA stays PROOF-TARGET (D0-PHASON-WZ-TRANSFER-OWNER-001); no survey datum enters (vp_phason_wz_no_survey_tuning.py).
 
 ### D0-COSMO-CONCRETE-FLOW-001
 
@@ -354,6 +367,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: [Iter21 cert->Lean, verify-then-promote] Finite S_DE algebra machine-checked in D0.Cosmology.PhasonFlipEntropy: the explicit 2x2 phason-flip transfer (3/2,1/16,1/10,3/2) has characteristic 160*char = 160 lambda^2 - 480 lambda + 359 (phason_flip_transfer_matrix_has_sde_polynomial, norm_num+ring), and its roots are exactly the relaxation modes (sde_roots_are_phason_flip_relaxation_modes). SUPERSEDES the Phase-L note: the removed placeholder (stmt)(h):=h is gone; these are real proofs, re-verified by reading the module. External BAO/DESI survey comparison stays an empirical passport; the K0/Connes spectral-triple/phason-holonomy GAP-LABELING is external (see D0-SDE-K0-001), not part of this finite-algebra row.
+
+### D0-PHASON-WZ-KERNEL-ONLY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.PhasonWZTransfer`
+- theorem: `kernel_dim_alone_does_not_determine_w`
+- cert: `vp_phason_wz_transfer_owner.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Iter22 dual-frontier NO-GO] the 30-dimensional archive/dark kernel (nullity 30 = 8+10+12) ALONE does not determine the dark-energy equation of state w(z): two phason pressure-energy pairs over the same kernel give different w_D0=p/rho (Lean D0.Cosmology.PhasonWZTransfer.kernel_dim_alone_does_not_determine_w). A finite pressure-energy operator is required; the kernel dimension (a single integer) cannot fix a function. Closed-negative.
 
 ### D0-CVFT-NOGO-001
 
@@ -3149,6 +3175,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The substantive claim (matter and TT gravity on ONE shared finite cochain carrier, coupling FORCED by shared-d/conservation) is architecture-blocked: the matter side is R over archivePhaseIndex/Matrix n n (ArchiveStressRepresentative.lean, EdgeStressCoupling.lean) while the TT side is Q over Fin 4 (FiniteSpin2WaveOperator.lean) -- there is NO shared carrier, unifying them is new architecture. Worse, the d-conservation forcing the honest map needs COLLIDES with an existing internal NO-GO, canonical_stress_conservation_no_go (the symmetrized canonical stress has divergence != 0 in general), so the map cannot be derived off the shelf. Real per-side assets exist (spin2_coupling_depends_only_on_tt_stress, PiTT4_kills_trace/PiTT4_kills_gauge; finite C1 Hodge core vp_finite_hodge_complex_core.py) but do NOT constitute the cross-carrier binding the claim asserts. Jointly open with D0-SPECTRAL-EINSTEIN-001.
 
+### D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_lepton_indirect_coefficient_owner.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 dual-frontier] indirect charged-lepton coefficient origin. The direct raw-graph->17-digit-decimal route is retired by no-go (D0-BARE-GRAPH-DECIMAL-NOGO-001). The only admissible positive route is finite shell torus -> finite Green function -> ramification/Puiseux branch indices -> exact coefficient row -> optional EFT/IR decimal bridge. MISSING artifacts (exact): a finite Green function over the shell torus; the Puiseux/ramification extraction theorem (branch indices = the exact exponent row (0,1/4,1/3)); a branch-index uniqueness certificate; the EFT/IR matching functor for the decimal bridge. Status PROOF-TARGET; the exponent row is exact (THE 04.8) and the decimals stay HYP (D0-LEPTON-002); no decimal/PDG fit (vp_lepton_no_decimal_fit_guard.py, vp_lepton_ramification_puiseux.py).
+
 ### D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001
 
 - type: `frontier`
@@ -3213,6 +3252,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] SPARC rotation-curve external-data passport. [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: the prior cert was a print-stub (hard-coded E_seam=0.0/2.0, unconditional PASS, no data). Rewritten to a FORM/VALUE split -- the seam-gap FORM (commuting generator -> E_seam=0; non-commuting -> ||[A,B]||^2>0, with a negative control) is now a real can-FAIL computation, and the VALUE confrontation vs the SPARC rotation-curve database (Lelli-McGaugh-Schombert 2016, 175 galaxies) emits SKIP_SPARC_EXTERNAL_DATA_REQUIRED (database not present/pinned). Cert removed from the check_cert_can_fail GRANDFATHER set.
+
+### D0-PHASON-WZ-TRANSFER-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phason_wz_transfer_owner.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter22 dual-frontier] internal dark-energy transfer: archive kernel -> phason pressure -> w(z). The kernel-only no-go (D0-PHASON-WZ-KERNEL-ONLY-NOGO-001) and the EOS-form scaffold (D0-PHASON-PRESSURE-EOS-SCAFFOLD-001, w_D0=p/rho) are CLOSED. MISSING artifact (exact): the explicit internal w_D0(u) / finite w_N FORMULA -- the actual phason rho(u), p(u) functions over the archive windows (the log-det pressure + archive energy give the pair, but not yet the closed u-dependent formula). Status PROOF-TARGET. The redshift u->z / CPL reading is passport-only; no survey datum defines the object (vp_phason_wz_no_survey_tuning.py). This is HYP-with-mechanism-scaffold, NOT BRIDGE, until w_D0(u) is computed.
 
 ### D0-PMNS-DELTACP-PI0-001
 
