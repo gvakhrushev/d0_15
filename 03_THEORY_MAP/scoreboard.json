@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 4222,
-    "track_fair_max": 5119,
-    "pct_strength": 82.5,
-    "core_realized": 3626,
-    "core_potential": 4500,
-    "core_headroom": 874,
+    "realized": 4212,
+    "track_fair_max": 5145,
+    "pct_strength": 81.9,
+    "core_realized": 3630,
+    "core_potential": 4540,
+    "core_headroom": 910,
     "n_claims": 288,
     "n_active": 286,
     "duplicates": [],
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 24,
-      "realized": 233,
-      "max": 295,
+      "n": 22,
+      "realized": 219,
+      "max": 281,
       "core_headroom": 57
     },
     "cosmology": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 13,
-      "realized": 26,
-      "max": 260,
-      "core_headroom": 234
+      "n": 15,
+      "realized": 30,
+      "max": 300,
+      "core_headroom": 270
     }
   },
   "by_book": {
@@ -149,9 +149,9 @@
     },
     "BOOK_07": {
       "n": 48,
-      "realized": 660,
-      "max": 852,
-      "core_headroom": 182
+      "realized": 655,
+      "max": 865,
+      "core_headroom": 200
     },
     "BOOK_06/08": {
       "n": 4,
@@ -167,9 +167,9 @@
     },
     "BOOK_04/08": {
       "n": 7,
-      "realized": 57,
-      "max": 127,
-      "core_headroom": 70
+      "realized": 52,
+      "max": 140,
+      "core_headroom": 88
     },
     "BOOK_08": {
       "n": 47,
@@ -1022,6 +1022,26 @@
       "effort": "write cert scaffold"
     },
     {
+      "claim_id": "D0-PASSPORT-ICECUBE-HESE-001",
+      "domain": "frontier",
+      "book": "BOOK_04/08",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-PASSPORT-LIGO-CATALOG-001",
+      "domain": "frontier",
+      "book": "BOOK_07",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
       "claim_id": "D0-PMNS-DELTACP-PI0-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -1126,6 +1146,20 @@
     },
     {
       "claim_id": "D0-PASSPORT-DESI-BAO-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-PASSPORT-ICECUBE-HESE-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-PASSPORT-LIGO-CATALOG-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -4237,28 +4271,28 @@
     },
     {
       "claim_id": "D0-PASSPORT-ICECUBE-HESE-001",
-      "track": "PASSPORT",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "empirical_passport",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_04/08",
       "leverage": 0,
       "integrity_flag": null
     },
     {
       "claim_id": "D0-PASSPORT-LIGO-CATALOG-001",
-      "track": "PASSPORT",
-      "level": 3,
-      "level_name": "PYTHON_CERTIFIED",
-      "score": 7,
-      "ceiling": 7,
-      "release_status": "EMPIRICAL-PASSPORT",
-      "lean_status": "PYTHON_CERTIFIED",
-      "domain": "empirical_passport",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
@@ -5513,7 +5547,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 0.2,
+    "penalty_total": 0.0,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -5558,8 +5592,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 2,
-        "points": -0.2,
+        "count": 0,
+        "points": -0.0,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -5605,15 +5639,6 @@
         "evidence": []
       }
     ],
-    "top_actions": [
-      {
-        "signal": "orphan_proof_targets",
-        "count": 2,
-        "points": -0.2,
-        "cap": -10.0,
-        "label": "PROOF-TARGET markers in book prose with no registry row",
-        "evidence": []
-      }
-    ]
+    "top_actions": []
   }
 }

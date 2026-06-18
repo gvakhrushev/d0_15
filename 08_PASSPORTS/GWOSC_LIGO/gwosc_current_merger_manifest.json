@@ -1,21 +1,6 @@
 {
   "dataset_id": "gwosc_ligo_merger_mass_defect",
-  "source_name": "GWOSC compact-binary event catalog",
-  "source_url": "https://www.gw-openscience.org/",
-  "download_url": "",
-  "local_path": "",
-  "sha256": "",
-  "downloaded_at_utc": "",
-  "data_fields_required": [
-    "event_id",
-    "m1_source",
-    "m2_source",
-    "final_mass",
-    "radiated_energy",
-    "sha256"
-  ],
-  "data_fields_found": [],
-  "license_or_policy_note": "Use GWOSC public-data policy and cite catalog/release.",
-  "citation_note": "Pin exact GWTC catalog table and version.",
-  "status": "MISSING"
+  "status": "SUPERSEDED",
+  "superseded_by": "08_PASSPORTS/GWOSC/gwosc_manifest.json",
+  "note": "Divergent duplicate retired. The single governing manifest for dataset_id gwosc_ligo_merger_mass_defect is 08_PASSPORTS/GWOSC/gwosc_manifest.json -- the only one the cert vp_ligo_merger_mass_defect_current_catalog.py actually reads. This file previously declared a divergent older schema (m1_source/m2_source/final_mass/radiated_energy) and a separate MISSING status for the same dataset_id, so the dataset had two conflicting manifests. It is kept only as a redirect so the dataset has exactly one source of truth; do not add data fields here -- update the governing manifest instead."
 }

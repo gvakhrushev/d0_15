@@ -11,28 +11,28 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 5
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 15
+- `EMPIRICAL-PASSPORT`: 13
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 9
 - `NO_GO_PROVED`: 8
-- `PROOF-TARGET`: 13
+- `PROOF-TARGET`: 15
 
 ## Type counts
 
 - `bridge`: 27
-- `certificate`: 65
+- `certificate`: 63
 - `core`: 163
 - `deprecated`: 3
-- `frontier`: 13
+- `frontier`: 15
 - `no-go`: 17
 
 ## Domain counts
 
 - `cosmology`: 24
-- `empirical_passport`: 24
+- `empirical_passport`: 22
 - `external_background`: 1
 - `formal_core`: 174
-- `frontier`: 13
+- `frontier`: 15
 - `gauge_bridge`: 20
 - `interpretation_spine`: 1
 - `rg`: 5
@@ -499,32 +499,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] pinned PDG mass-width diagnostic; no core promotion.
-
-### D0-PASSPORT-ICECUBE-HESE-001
-
-- type: `certificate`
-- release_status: `EMPIRICAL-PASSPORT`
-- domain: `empirical_passport`
-- book: `BOOK_04/08`
-- module: ``
-- theorem: `none`
-- cert: `vp_icecube_hese_baseline_comparison.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] external neutrino-survey baseline comparison.
-
-### D0-PASSPORT-LIGO-CATALOG-001
-
-- type: `certificate`
-- release_status: `EMPIRICAL-PASSPORT`
-- domain: `empirical_passport`
-- book: `BOOK_07`
-- module: ``
-- theorem: `none`
-- cert: `vp_ligo_merger_mass_defect_current_catalog.py`
-- assumptions: `none`
-- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [8C orphan-harvest] external GWOSC catalog passport.
 
 ### D0-PASSPORT-PDG-STRICT-001
 
@@ -3056,6 +3030,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] FORM pre-registered + cert-checked (frozen S_DE polynomial 160lambda^2-480lambda+359, 359=|E|, no refit -- can-FAIL on a refit). [Iter21 OVER-CLAIM FIXED] the VALUE confrontation vs DESI DR2 BAO is NOT achieved: no DESI table is present (cache empty), so the cert now emits SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED instead of the prior unconditional FAIL_..._REAL_DATA print-stub, and the faked READY manifest (a sha256 pinned for an absent file) was reverted to MISSING. Demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: an open data-confrontation obligation awaiting a pinned DESI DR2/DR3 release, matching BOOK_08 §08.48 SKIP state. Cert removed from the cert-can-fail GRANDFATHER set (now genuinely can-FAIL on the FORM).
+
+### D0-PASSPORT-ICECUBE-HESE-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04/08`
+- module: ``
+- theorem: `none`
+- cert: `vp_icecube_hese_baseline_comparison.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: Cert rewritten from fake-PASS stub to a data-gated propagator (loads recorded HESE summary; cross-checks manifest sha256/local_path cache). Live verdict SKIP - external HESE cache absent (cache dir missing); cert gates on file presence + sha256 not the manifest status field; recorded baseline verdict FAIL (no-deco null matches/beats tiny D0 damping). OWNER-DECISION-NEEDED: prior PYTHON_CERTIFIED was earned by the removed stub - demote lean_status to OPEN (no passing cert; empirical-passport pending external data).
+
+### D0-PASSPORT-LIGO-CATALOG-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_ligo_merger_mass_defect_current_catalog.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Iter21 OVER-CLAIM FIXED] FORM is cert-checked + can-FAIL (frozen golden-ratio operator coefficient phi_inv, spin-only negative control, unphysical-input rejection; selftest() raises on a wrong form). The VALUE confrontation vs the GWOSC/GWTC catalog is NOT achieved: no gwtc_full.json is present (08_PASSPORTS/_EXTERNAL_DATA_CACHE/gwosc/ absent), so manifest_only now emits SKIP_GWOSC_EXTERNAL_DATA_REQUIRED (was a hollow PASS_* emitted whenever the manifest self-declared status:READY) and clean_BBH_run SKIPs. Readiness is now DERIVED from the real cache (sha256 re-hash + file presence), not a hand-set READY; the faked READY manifest (sha256 pinned for an absent file) was reverted to MISSING. Catalog tag UNPINNED: results CSV labels O4b events (GW2412*/GW2501*) 'GWTC-5.0', which is not a pinned published GWTC release and carries no JHEP/arXiv citation -- pin the exact table+version before any VALUE confrontation. Governing manifest = 08_PASSPORTS/GWOSC/gwosc_manifest.json (the cert reads it); 08_PASSPORTS/GWOSC_LIGO/gwosc_current_merger_manifest.json retired as a SUPERSEDED divergent duplicate. Demoted EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: an open data-confrontation obligation awaiting a pinned GWTC release.
 
 ### D0-PMNS-DELTACP-PI0-001
 

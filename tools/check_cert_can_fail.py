@@ -32,15 +32,17 @@ CERTS = ROOT / "05_CERTS"
 # decision (see AUTONOMOUS_SESSION_REPORT). Remove a name the moment its cert really gates.
 # Iteration 16 rewrote 11 of the 19 to real can-FAIL certs (asserts + negative controls): the
 # finite-content ones (mincut, fractal/IM-cosmo, logdet, nonabelian-seam, baryon-poles,
-# ramification, v1132 gauge-matter, v1143 return-windows, v1145 operator-triple). The 8 left
+# ramification, v1132 gauge-matter, v1143 return-windows, v1145 operator-triple). A later pass
+# removed vp_icecube_hese_baseline_comparison.py: it is no longer a print-stub but a data-gated
+# propagator cert (loads the recorded IceCube HESE summary, cross-checks the manifest sha256/
+# local_path cache exists, emits SKIP/FAIL/PASS with asserts + a non-zero FAIL exit). The names
 # below are the genuine non-gatable residue: 2 pure proxies (delegate to another cert), 1 search
-# declaration, and 5 empirical-passport templates whose only content is external-data comparison
+# declaration, and empirical-passport templates whose only content is external-data comparison
 # (no data loaded ⇒ nothing finite to gate). These are owner-decision; the set must only SHRINK.
 GRANDFATHER = {
     "vp_canonical_operator_search.py",
     "vp_critical_collapse_dss_echo_lattice.py",
     "vp_generation_overlap_response_origin.py",
-    "vp_icecube_hese_baseline_comparison.py",
     "vp_meson_positive_defect_transfer.py",
     "vp_qnm_delta0_overtone_ladder.py",
     "vp_sparc_hull_boundary_response_kernel.py",

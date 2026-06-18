@@ -1,7 +1,8 @@
 {
-  "mode": "clean_BBH_run",
+  "mode": "manifest_only",
   "status": "SKIP_GWOSC_EXTERNAL_DATA_REQUIRED",
   "missing": [
+    "sha256_pin_absent",
     "local_file"
   ]
 }
