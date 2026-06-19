@@ -225,7 +225,8 @@ The closed feedback action component is `S_fb = -log det(I - z F_N)`, where `F_N
 ```
 
 The log/Neumann expansion is allowed only under `|z|\rho(F_N)<1`; the resolvent itself only requires `z^{-1}` outside the spectrum. Its variation is represented by the finite feedback source owner; pressure and finite PVT are owned by the finite feedback equation of state, each verified by the finite certificate. The ideal-gas postulate is a no-go core shortcut, not the D0 pressure law. This feedback action is the finite, resolvent-form instance of the same `-\log`-of-an-operator-determinant structure that the statistical sum `Z_D` of §03.3.0 produces under `w=\varphi^{-S}`: the partition function over histories and the feedback determinant are the same admissible object read at two scene scales.
-## 03.4 Scene/finite variational test functional backbone
+
+**[Static-to-dynamics pointer].** The finite log-det / action calculus scores histories over an ALREADY-FORCED tick: static self-readout produces the ordered archive-delay index `k` (BOOK_06 §06.8.S, `D0-STATIC-TO-DYNAMICS-OWNER-001`), so the action functional ranges over that forced discrete tick, not over a primitive background time.## 03.4 Scene/finite variational test functional backbone
 
 The finite incidence/clique complex is not background spacetime. It is the finite register on which action can be evaluated. The active action spine is:
 

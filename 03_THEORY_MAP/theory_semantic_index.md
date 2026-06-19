@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 96
+- `CERT-CLOSED`: 104
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 107
+- `certificate`: 115
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
@@ -32,13 +32,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 36
 - `empirical_passport`: 28
 - `external_background`: 1
-- `formal_core`: 197
+- `formal_core`: 203
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 5
 - `si_calibration`: 2
-- `smooth_geometry`: 28
+- `smooth_geometry`: 30
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -1157,6 +1157,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Entropy-selected archive coupling interface plus finite-stage softmax coupling cert.
 
+### D0-ARCHIVE-NEUMANN-TICK-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Evolution.FeshbachSchurTimeDelayOwner`
+- theorem: `neumann_term_k_has_k_archive_circulations`
+- cert: `vp_archive_neumann_tick_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Static-to-dynamics Block II] The archive resolvent Neumann index IS the discrete time tick: (I - Q U Q)^-1 = sum_k (Q U Q)^k, the order-k term has exactly k (Q U Q) factors, the tick ladder is monotone and gap-free (0,1,2,3,...), the direct k=0 P U P channel is separated from the delay ladder k>=1, and a Neumann truncation at order N keeps exactly ticks 0..N. Lean owner D0.Evolution.FeshbachSchurTimeDelayOwner (neumann_term_k_has_k_archive_circulations, tick_index_eq_k, direct_separated_from_delay, delay_term_positive_tick, time_is_feshbach_delay_index; rfl/simp/omega on Nat); cert vp_archive_neumann_tick_owner.py (controls: FAIL_WRONG_CIRCULATION_COUNT_REJECTED, FAIL_ARCHIVE_RANK_NOT_30_REJECTED, FAIL_TIME_INSERTED_INDEPENDENTLY_REJECTED, FAIL_PUP_COUNTED_AS_DELAY_REJECTED). CERT-CLOSED scope = the finite per-term Neumann-index tick identity ONLY. RESIDUAL (named, NOT owned here): CONVERGENCE of the Neumann series, needing spectral radius rho(Q U Q) < 1 (remaining_artifact: Neumann-convergence proof on the resolvent domain rho(Q U Q) < 1). No external clock/time parameter/SI unit enters; the tick is the dimensionless integer Neumann index k.
+
 ### D0-ASSUMPTION-LEDGER-GREEN-001
 
 - type: `certificate`
@@ -1300,6 +1313,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Weak-coupling/mode-averaging nonclassical signature suppression guardrail.
 
+### D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Evolution.StaticToDynamicsOwner`
+- theorem: `dynamics_not_primitive`
+- cert: `vp_dynamics_not_primitive.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Static-to-dynamics] Dynamics is not a primitive D0 input: the ordering that makes a tick meaningful is forced by [J,Y] != 0 (derived, Block I) and the tick weight phi^-1 is fixed by the detector self-return split p+p^2=1 (derived, Block III) -- proved by projecting D0-STATIC-TO-DYNAMICS-OWNER-001. No primitive time object, external clock, or SI unit. SCOPE matches the combined owner (mechanism-level; universal obstruction residual named there). Cert vp_dynamics_not_primitive.py.
+
 ### D0-E8-COLDEA-ANCHOR-001
 
 - type: `certificate`
@@ -1338,6 +1364,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Audit->FORCING, HYP->THE] (710,113) FORCED not fitted. 710=2*D_Sigma*(2|V|+D_Sigma)=2*5*71, 113=(|ABCD|+1)*d13+|V13|=5*20+13 (every atom a named invariant, ZERO free numbers; 71=2*33+5 derived). Window=ratio q/m~tau=2pi (phase-circle period). MINIMALITY: 710/113 is the FIRST 2pi-convergent with |q/m-2pi|<1e-6 (prior 333/53 = 1.7e-4); by continued-fraction best-approximation no denom<113 beats it, and 113 is the minimal invariant-grammar denominator. Forcing = grammar-expressibility + CF-minimality, NOT look-elsewhere (M1: absence of alternatives is not the argument). HONEST: near-return is the RATIO measure (~5.3e-7); absolute |q-m*2pi|~6e-5 is denominator-scaled, NOT the criterion. Supporting Lean D0.Claims.EWWindowForcing (ew_window_grammar) proves the decomposition; the CF-minimality is cert-level (pi-dependent).
+
+### D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Evolution.FeshbachSchurTimeDelayOwner`
+- theorem: `time_is_feshbach_delay_index`
+- cert: `vp_feshbach_schur_time_delay_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Static-to-dynamics Block II] The Feshbach-Schur effective operator W_eff = P U P + P U Q (I - Q U Q)^-1 Q U P over the retained(rank-3)/archive(dim-30) split has a FINITE path grammar: expanding the archive resolvent as the Neumann series (I - Q U Q)^-1 = sum_k (Q U Q)^k, the order-k term P U Q (Q U Q)^k Q U P carries exactly k internal (Q U Q) archive circulations, and the discrete time tick is DEFINED to be that circulation count (read off the grammar): tickIndex(neumannTerm k) = archiveCirculations = k. The direct k=0 P U P term (0 circulations, tick 0) is separated from the delay terms k>=1 (tick >= 1). Lean D0.Evolution.FeshbachSchurTimeDelayOwner.time_is_feshbach_delay_index (rfl/simpa/omega on Nat); cert vp_feshbach_schur_time_delay_owner.py (controls: FAIL_WRONG_CIRCULATION_COUNT_REJECTED, FAIL_ARCHIVE_RANK_NOT_30_REJECTED, FAIL_TIME_INSERTED_INDEPENDENTLY_REJECTED, FAIL_PUP_COUNTED_AS_DELAY_REJECTED). CERT-CLOSED scope = the finite/decidable PATH-GRAMMAR tick-index identity ONLY. RESIDUAL (named, NOT owned here): the Neumann series CONVERGENCE (I - Q U Q)^-1 = sum_k (Q U Q)^k, which requires the spectral radius rho(Q U Q) < 1 -- the resolvent/convergence domain (remaining_artifact: Neumann-convergence proof on the resolvent domain rho(Q U Q) < 1). No primitive time object, external clock, or SI unit (c, h, hbar, seconds) is introduced; the only time content is the dimensionless integer index k. Consumed by D0.Evolution.PhiFractalTickDynamics (which references 'Block II the archive-delay tick, index k').
 
 ### D0-FIBONACCI-ANYON-UNIQUENESS-001
 
@@ -1468,6 +1507,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 deep-stitch] Finite divergence-free edge-current (cycle) lattice of K(9,11,13): dim ker(B) = E-V+1 = 327, rank(B)=V-1=32 (rank-nullity 32+327=359). Lean D0.Matter.HyperchargeFlowLattice.hypercharge_flow_lattice_closed; cert vp_hypercharge_graph_flow_owner.py. HONEST: the 327-dim flow ALONE underdetermines the hypercharge row, and anomaly-freedom is met by a 2-dim space (B-L anomaly-free, denominator 3), so neither forces the row or the denominator. Flow-to-Weyl-ledger map Phi is the exact missing artifact: D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001 PROOF-TARGET. Denominator 6 owned by integrality D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001 (not redone).
+
+### D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Evolution.JYNoncommutativeOrderObstruction`
+- theorem: `jy_noncommutative_order_obstruction_owner`
+- cert: `vp_jy_noncommutative_order_obstruction.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: New Lean owner of the BOOK_02 2.9A commutator obstruction (previously no Lean). Finite witness: 4x4 integer J (nilpotent shift on localization block {0,1,2}, J^3=0) and Y (idempotent boundary-closure readout, Y*Y=Y, reads e2 and e3 into archive e3); proven J*Y != Y*J at entry (3,1)=-1 by native_decide. Wired to the proven M1 spine (selector_M1Forced / m1_alternative_needs_catalogue): the binary registration selector forces the ordered policy as M1Forced and the commuting (order-erasing) policy RequiresExternalCatalogue. RESIDUAL (honest): the UNIVERSAL claim that every commuting self-readout on any carrier erases order is NOT proven — named remaining_artifact JY-UNIVERSAL-COMMUTING-READOUT-OBSTRUCTION. A finite witness for the specific D0 (J,Y) is not a universal theorem; the M1 contradiction is established for this readout + binary selector only.
 
 ### D0-KTHEORY-001
 
@@ -1767,6 +1819,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Noncommutative solenoid model is admitted over the tiling hull. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-STATIC-TO-DYNAMICS-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Evolution.StaticToDynamicsOwner`
+- theorem: `static_to_dynamics_owner_closed`
+- cert: `vp_static_to_dynamics_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Static-to-dynamics combined owner] Composes the three block owners into one proved conjunction: (I) self-readout commutator J*Y != Y*J (Block I, JYNoncommutativeOrderObstruction), (II) Feshbach archive-delay tick index = Neumann order k over the 3/30 split (Block II), (III) each tick multiplies the active amplitude by phi^-1 (Block III, reusing D0-IM-003/D0-PHI-LADDER-SEMIGROUP-001). No primitive time, clock, or SI unit enters. HONEST SCOPE: closes the MECHANISM CHAIN at the witness/finite level; the UNIVERSAL commuting-readout obstruction stays PROOF-TARGET (JY-UNIVERSAL-COMMUTING-READOUT-OBSTRUCTION), the Neumann tick holds on the resolvent/convergence domain, the envelope owner is the reused D0-PHI-LADDER-SEMIGROUP-001. No grand 'dynamics fully derived' claim. Cert vp_static_to_dynamics_owner.py.
+
+### D0-TIME-ARROW-ORDERED-SELF-READOUT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Evolution.JYNoncommutativeOrderObstruction`
+- theorem: `time_arrow_from_ordered_self_readout`
+- cert: `vp_jy_noncommutative_order_obstruction.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Ordered registration is forced by the nonzero finite commutator: J*Y != Y*J AND the ordered registration policy is the unique M1Forced answer AND the commuting/order-erasing alternative RequiresExternalCatalogue. Hence registration is forced ordered — ordered registration is the time arrow. No primitive time object, external clock, or SI unit (c, h, hbar, seconds) enters the Lean or the cert; the cert's FAIL_EXTERNAL_CLOCK_INSERTED_REJECTED control verifies the data contains no SI clock constant. The only content is the dimensionless integer commutator [J,Y] and the proven selector spine.
 
 ### D0-TIME-MODULAR-FLOW-001
 
@@ -4425,6 +4503,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter17 ТЗ-2 Phase D, verify-then-promote — c=1 CONFIRMED] On the finite scene the Connes spectral distance d_C(p,q)=sup{|f(p)-f(q)| : ||[D,f]||<=1} EQUALS the geodesic (shortest-path) distance: ||[D,f]||<=1 <=> f 1-Lipschitz per edge, sup attained by f=d_geo(.,p), bounded above by telescoping. So the metric is INTERNAL (geodesic), not an external input. And c=1 is STRUCTURAL: <=1 edge/tick => signal speed 1, dimensionless, no external light-speed constant. Cert vp_connes_distance_geodesic.py (path/cycle/K(2,2,3); can-FAIL; control: edge-jump>1 inadmissible). CONSEQUENCE: the §07.51.3 cone-speed residual is c=1=edge/tick (internal), NOT an external Connes unit; ASSUMP-CONNES-RECONSTRUCTION is reclassified owner->continuum-limit CONFIRMATION. HONEST: the finite->smooth Riemannian limit itself is still the external Connes theorem, now as confirmation of the internal geodesic metric's limit, not the owner of a D0 gap.
 
+### D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_06`
+- module: `D0.Evolution.PhiFractalTickDynamics`
+- theorem: `continuous_envelope_cocycle`
+- cert: `vp_continuous_time_semigroup_envelope.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Continuous-time leg of the connector. REUSES the existing env_cocycle owner (D0-PHI-LADDER-SEMIGROUP-001, module D0.IM.ContinuumFromFractalTick): continuous_envelope_cocycle and continuous_envelope_restricts_to_ladder are one-line delegations (honest reuse). NEW: log_phi_is_tick_entropy_rate + rate_factor_eq_tick_weight (exp(-log phi)=phi^-1, the per-tick entropy rate is log phi, forced by matching the discrete tick weight). Honest residual: the cocycle A(s+t)=A(s)A(t)/A0 is a Neumann/convergence-domain identity of the real exponential (holds on the convergence domain), not a smooth-manifold continuum limit (that stays the Rieffel/GHP+Connes owner-edge); no SI unit enters.
+
 ### D0-GAUGE-MASS-GAP-PLAQUETTE-001
 
 - type: `certificate`
@@ -4489,6 +4580,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 next-frontier P2] finite internal archive pressure-energy RATIO sequence w_N = p_N/rho_N = dR_n/R_n = phi^(n-1)/(phi^n-1) (exact Q(phi)) from energy R_n (D0-IM-COSMO-001) + relative pressure dR_n (D0-IM-COSMO-002) on the common window n; w_N decreases monotonically to +phi^-1 (a POSITIVE internal ratio, NOT the physical dark-energy w(z)<0). cert vp_phason_wz_explicit_function.py (controls: energy-only / pressure-only / kernel-dim-only / CPL-tuned rejected; compatibility vp_phason_energy_pressure_compatibility.py). SCOPE: finite-sequence scaffold only; the explicit continuum w_D0(u) + the sign/normalization map to physical w_DE stay PROOF-TARGET (D0-PHASON-WZ-EXPLICIT-FUNCTION-001).
+
+### D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_06`
+- module: `D0.Evolution.PhiFractalTickDynamics`
+- theorem: `phi_fractal_tick_dynamics_cert`
+- cert: `vp_phi_fractal_tick_dynamics.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Tick-weight CONNECTOR. REUSED substrate (NOT re-derived): D0-IM-003 (ladder_constant_ratio A_{k+1}=A_k*phi^-1, ladder_substrate_conserved p+p^2=1, env_restricts_to_ladder) and D0-PHI-LADDER-SEMIGROUP-001 (env_cocycle). NEW content = the tick-weight connector: the self-return detector split p+p^2=1 has a UNIQUE root in (0,1), so each archive-delay tick (Block II index k) multiplies the active amplitude by the FORCED weight phi^-1 (phi_split_forces_tick_weight, not a chosen decay constant). discrete_ladder_closed_form A_k=A0*phi^-k. Honest residual: archive_tick_nonincreasing/the ladder are finite WITNESSES on the contraction domain (0<phi^-1<1), not a universal continuum theorem; no primitive time object / SI clock (c,h,hbar,s) introduced — the only rate is dimensionless log phi.
 
 ### D0-PHI-LADDER-SEMIGROUP-001
 

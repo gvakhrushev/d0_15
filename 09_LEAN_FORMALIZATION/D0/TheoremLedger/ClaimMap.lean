@@ -528,7 +528,23 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CKM-CLASS5-SELECTOR-OWNER-001", moduleName := "D0.Matter.CKMClass5SelectorOwner",
       theoremName := "class5_selector_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001", moduleName := "D0.Matter.HiggsLogdetStationary",
-      theoremName := "higgs_logdet_scalar_sector_stationary", status := ClaimStatus.leanCoreProved }
+      theoremName := "higgs_logdet_scalar_sector_stationary", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001", moduleName := "D0.Evolution.JYNoncommutativeOrderObstruction",
+      theoremName := "jy_noncommutative_order_obstruction_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TIME-ARROW-ORDERED-SELF-READOUT-001", moduleName := "D0.Evolution.JYNoncommutativeOrderObstruction",
+      theoremName := "time_arrow_from_ordered_self_readout", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001", moduleName := "D0.Evolution.FeshbachSchurTimeDelayOwner",
+      theoremName := "time_is_feshbach_delay_index", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-NEUMANN-TICK-OWNER-001", moduleName := "D0.Evolution.FeshbachSchurTimeDelayOwner",
+      theoremName := "neumann_term_k_has_k_archive_circulations", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001", moduleName := "D0.Evolution.PhiFractalTickDynamics",
+      theoremName := "phi_fractal_tick_dynamics_cert", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001", moduleName := "D0.Evolution.PhiFractalTickDynamics",
+      theoremName := "continuous_envelope_cocycle", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-STATIC-TO-DYNAMICS-OWNER-001", moduleName := "D0.Evolution.StaticToDynamicsOwner",
+      theoremName := "static_to_dynamics_owner_closed", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001", moduleName := "D0.Evolution.StaticToDynamicsOwner",
+      theoremName := "dynamics_not_primitive", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

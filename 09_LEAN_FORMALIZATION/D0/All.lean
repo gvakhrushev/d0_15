@@ -144,6 +144,10 @@ import D0.Dynamics.ToralShiftEquivalence
 import D0.Dynamics.TraceHeatCapacityGravity
 import D0.Dynamics.TraceHeatLucasCore
 import D0.Edge.RamificationFromUeEffCompanion
+import D0.Evolution.FeshbachSchurTimeDelayOwner
+import D0.Evolution.JYNoncommutativeOrderObstruction
+import D0.Evolution.PhiFractalTickDynamics
+import D0.Evolution.StaticToDynamicsOwner
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.M1Predicate

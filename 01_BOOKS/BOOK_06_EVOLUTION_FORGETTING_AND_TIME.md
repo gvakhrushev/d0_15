@@ -433,7 +433,7 @@ Expanding the traced-out-complement resolvent as a Neumann series exposes the di
 + \sum_{k=0}^{\infty} (P_N U_N Q_N)\,(Q_N U_N Q_N)^{k}\,(Q_N U_N P_N).
 ```
 
-The phenomenological "passage of time" is algebraically identical to the discrete index `k`: time is the algorithmic delay caused by phase information circulating inside the sterile archive `(Q U Q)^k` before its eventual observable return to the active boundary. This welds the archive nullity-30 to the temporal index. [^b06-21]. No Feshbach-Schur-time certificate exists yet.
+The phenomenological "passage of time" is algebraically identical to the discrete index `k`: time is the algorithmic delay caused by phase information circulating inside the sterile archive `(Q U Q)^k` before its eventual observable return to the active boundary. This welds the archive nullity-30 to the temporal index. [^b06-21]. This is now cert-closed by `D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001` and `D0-ARCHIVE-NEUMANN-TICK-OWNER-001` (Lean `D0.Evolution.FeshbachSchurTimeDelayOwner`: the order-`k` Neumann term carries exactly `k` archive circulations, `k=0` being the direct `P U P` channel), and folded into the combined `D0-STATIC-TO-DYNAMICS-OWNER-001`.
 
 The archive increment of a finite state `rho_N` is measured schematically by
 
@@ -467,6 +467,21 @@ P(b|a,\gamma)=
 \frac{\operatorname{Tr}(\Pi_b\,\mathcal U_\gamma R_a\mathcal U_\gamma^\dagger)}
 {\operatorname{Tr}(R_a)}.
 ```
+
+## 06.8.S Static-to-dynamics closure
+
+Dynamics in D0 is not a primitive input; it is forced by finite self-readout. The chain has three linked owners, each a proved finite fact (combined owner `D0-STATIC-TO-DYNAMICS-OWNER-001`, Lean `D0.Evolution.StaticToDynamicsOwner`; cert `vp_static_to_dynamics_owner.py`):
+
+```
+static finite scene -> self-readout -> [J,Y] != 0 -> ordered registration
+   -> Feshbach archive delay index k -> phi-tick weight phi^-1 -> continuous semigroup envelope
+```
+
+**Block I — order obstruction (the time arrow).** The localization defect-shift `J` (nilpotent on the rank-3 localization block, `J^3=0`) and the boundary-closure readout `Y` (idempotent, `Y*Y=Y`) do not commute: `[J,Y]` is nonzero already on the archive-to-localization channel. A self-readout whose operations commuted would be order-blind and could recover its own event order only from an external catalogue — which M1 forbids. So registration is forced ordered, and that ordered registration is the time arrow (`D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001`, `D0-TIME-ARROW-ORDERED-SELF-READOUT-001`, Lean `D0.Evolution.JYNoncommutativeOrderObstruction`, wired to the proven M1 selector spine; cert `vp_jy_noncommutative_order_obstruction.py`). This is the Lean owner of the BOOK_02 §02.9A commutator obstruction, which previously had no Lean. Honest residual: the UNIVERSAL claim that *every* commuting self-readout on *any* carrier erases order is not proven — it is the named PROOF-TARGET `JY-UNIVERSAL-COMMUTING-READOUT-OBSTRUCTION`; the owner proves the specific D0 `(J,Y)` witness and the binary-selector M1 reductio.
+
+**Block II — Feshbach archive delay is the tick.** For an observer restricted to the retained sector `P_N`, the active evolution is the Feshbach–Schur complement `W_eff = P U P + P U Q (I - Q U Q)^{-1} Q U P`; expanding the archive resolvent `(I - Q U Q)^{-1} = Σ_k (Q U Q)^k`, the order-`k` term carries exactly `k` internal archive circulations before observable return. The Neumann index `k` IS the discrete time tick (`D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001`, `D0-ARCHIVE-NEUMANN-TICK-OWNER-001`). Honest residual: the tick identity is closed on the resolvent/convergence domain (spectral radius of `Q U Q < 1`).
+
+**Block III — φ tick weight and continuous envelope.** Each archive-delay tick multiplies the active amplitude by `φ⁻¹`, the unique root of the detector self-return split `p+p²=1` in `(0,1)`; hence `A_{k+1}=φ⁻¹A_k`, and the unique continuous envelope is `A(s)=A₀·exp(−s·log φ)` with cocycle `A(s+t)=A(s)A(t)/A₀` (`D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001`, `D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001`, Lean `D0.Evolution.PhiFractalTickDynamics`, reusing the existing ladder/envelope owners `D0-IM-003` and `D0-PHI-LADDER-SEMIGROUP-001`). No primitive time, external clock, or SI unit (`c`, `h`, `ħ`, seconds) enters the chain; the combined `D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001` records that the order and the tick weight are both derived.
 ## 06.9 Phase transport and quantum emergence
 
 Quantum evolution appears when the finite active record is transported without being immediately forced into a commuting classical quotient.  The finite-stage transport has the standard unitary-looking form

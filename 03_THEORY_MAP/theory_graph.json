@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 361,
+    "claims": 369,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 96,
+      "CERT-CLOSED": 104,
       "NO-GO": 16,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 5
     },
     "lean_status": {
-      "LEAN_PROVED": 220,
+      "LEAN_PROVED": 228,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 81,
       "DEPRECATED": 2,
@@ -30,15 +30,15 @@
       "core": 163,
       "bridge": 28,
       "no-go": 24,
-      "certificate": 107,
+      "certificate": 115,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 197,
+      "formal_core": 203,
       "rg": 5,
       "gauge_bridge": 21,
-      "smooth_geometry": 28,
+      "smooth_geometry": 30,
       "spectral_action": 6,
       "empirical_passport": 28,
       "cosmology": 36,
@@ -12107,6 +12107,275 @@
       "label": "vp_higgs_logdet_stationary.py",
       "path": "05_CERTS/vp_higgs_logdet_stationary.py",
       "exists": true
+    },
+    {
+      "id": "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001",
+      "kind": "claim",
+      "claim_id": "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.S",
+      "lean_module": "D0.Evolution.JYNoncommutativeOrderObstruction",
+      "lean_theorem": "jy_noncommutative_order_obstruction_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_jy_noncommutative_order_obstruction.py",
+      "python_cert": [
+        "vp_jy_noncommutative_order_obstruction.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "New Lean owner of the BOOK_02 2.9A commutator obstruction (previously no Lean). Finite witness: 4x4 integer J (nilpotent shift on localization block {0,1,2}, J^3=0) and Y (idempotent boundary-closure readout, Y*Y=Y, reads e2 and e3 into archive e3); proven J*Y != Y*J at entry (3,1)=-1 by native_decide. Wired to the proven M1 spine (selector_M1Forced / m1_alternative_needs_catalogue): the binary registration selector forces the ordered policy as M1Forced and the commuting (order-erasing) policy RequiresExternalCatalogue. RESIDUAL (honest): the UNIVERSAL claim that every commuting self-readout on any carrier erases order is NOT proven — named remaining_artifact JY-UNIVERSAL-COMMUTING-READOUT-OBSTRUCTION. A finite witness for the specific D0 (J,Y) is not a universal theorem; the M1 contradiction is established for this readout + binary selector only.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/JYNoncommutativeOrderObstruction.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Evolution.JYNoncommutativeOrderObstruction",
+      "kind": "lean_module",
+      "label": "D0.Evolution.JYNoncommutativeOrderObstruction",
+      "path": "09_LEAN_FORMALIZATION/D0/Evolution/JYNoncommutativeOrderObstruction.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_jy_noncommutative_order_obstruction.py",
+      "kind": "python_cert",
+      "label": "vp_jy_noncommutative_order_obstruction.py",
+      "path": "05_CERTS/vp_jy_noncommutative_order_obstruction.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TIME-ARROW-ORDERED-SELF-READOUT-001",
+      "kind": "claim",
+      "claim_id": "D0-TIME-ARROW-ORDERED-SELF-READOUT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.S",
+      "lean_module": "D0.Evolution.JYNoncommutativeOrderObstruction",
+      "lean_theorem": "time_arrow_from_ordered_self_readout",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_jy_noncommutative_order_obstruction.py",
+      "python_cert": [
+        "vp_jy_noncommutative_order_obstruction.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Ordered registration is forced by the nonzero finite commutator: J*Y != Y*J AND the ordered registration policy is the unique M1Forced answer AND the commuting/order-erasing alternative RequiresExternalCatalogue. Hence registration is forced ordered — ordered registration is the time arrow. No primitive time object, external clock, or SI unit (c, h, hbar, seconds) enters the Lean or the cert; the cert's FAIL_EXTERNAL_CLOCK_INSERTED_REJECTED control verifies the data contains no SI clock constant. The only content is the dimensionless integer commutator [J,Y] and the proven selector spine.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/JYNoncommutativeOrderObstruction.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8",
+      "lean_module": "D0.Evolution.FeshbachSchurTimeDelayOwner",
+      "lean_theorem": "time_is_feshbach_delay_index",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_feshbach_schur_time_delay_owner.py",
+      "python_cert": [
+        "vp_feshbach_schur_time_delay_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Static-to-dynamics Block II] The Feshbach-Schur effective operator W_eff = P U P + P U Q (I - Q U Q)^-1 Q U P over the retained(rank-3)/archive(dim-30) split has a FINITE path grammar: expanding the archive resolvent as the Neumann series (I - Q U Q)^-1 = sum_k (Q U Q)^k, the order-k term P U Q (Q U Q)^k Q U P carries exactly k internal (Q U Q) archive circulations, and the discrete time tick is DEFINED to be that circulation count (read off the grammar): tickIndex(neumannTerm k) = archiveCirculations = k. The direct k=0 P U P term (0 circulations, tick 0) is separated from the delay terms k>=1 (tick >= 1). Lean D0.Evolution.FeshbachSchurTimeDelayOwner.time_is_feshbach_delay_index (rfl/simpa/omega on Nat); cert vp_feshbach_schur_time_delay_owner.py (controls: FAIL_WRONG_CIRCULATION_COUNT_REJECTED, FAIL_ARCHIVE_RANK_NOT_30_REJECTED, FAIL_TIME_INSERTED_INDEPENDENTLY_REJECTED, FAIL_PUP_COUNTED_AS_DELAY_REJECTED). CERT-CLOSED scope = the finite/decidable PATH-GRAMMAR tick-index identity ONLY. RESIDUAL (named, NOT owned here): the Neumann series CONVERGENCE (I - Q U Q)^-1 = sum_k (Q U Q)^k, which requires the spectral radius rho(Q U Q) < 1 -- the resolvent/convergence domain (remaining_artifact: Neumann-convergence proof on the resolvent domain rho(Q U Q) < 1). No primitive time object, external clock, or SI unit (c, h, hbar, seconds) is introduced; the only time content is the dimensionless integer index k. Consumed by D0.Evolution.PhiFractalTickDynamics (which references 'Block II the archive-delay tick, index k').",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Evolution.FeshbachSchurTimeDelayOwner",
+      "kind": "lean_module",
+      "label": "D0.Evolution.FeshbachSchurTimeDelayOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_feshbach_schur_time_delay_owner.py",
+      "kind": "python_cert",
+      "label": "vp_feshbach_schur_time_delay_owner.py",
+      "path": "05_CERTS/vp_feshbach_schur_time_delay_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8",
+      "lean_module": "D0.Evolution.FeshbachSchurTimeDelayOwner",
+      "lean_theorem": "neumann_term_k_has_k_archive_circulations",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_archive_neumann_tick_owner.py",
+      "python_cert": [
+        "vp_archive_neumann_tick_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Static-to-dynamics Block II] The archive resolvent Neumann index IS the discrete time tick: (I - Q U Q)^-1 = sum_k (Q U Q)^k, the order-k term has exactly k (Q U Q) factors, the tick ladder is monotone and gap-free (0,1,2,3,...), the direct k=0 P U P channel is separated from the delay ladder k>=1, and a Neumann truncation at order N keeps exactly ticks 0..N. Lean owner D0.Evolution.FeshbachSchurTimeDelayOwner (neumann_term_k_has_k_archive_circulations, tick_index_eq_k, direct_separated_from_delay, delay_term_positive_tick, time_is_feshbach_delay_index; rfl/simp/omega on Nat); cert vp_archive_neumann_tick_owner.py (controls: FAIL_WRONG_CIRCULATION_COUNT_REJECTED, FAIL_ARCHIVE_RANK_NOT_30_REJECTED, FAIL_TIME_INSERTED_INDEPENDENTLY_REJECTED, FAIL_PUP_COUNTED_AS_DELAY_REJECTED). CERT-CLOSED scope = the finite per-term Neumann-index tick identity ONLY. RESIDUAL (named, NOT owned here): CONVERGENCE of the Neumann series, needing spectral radius rho(Q U Q) < 1 (remaining_artifact: Neumann-convergence proof on the resolvent domain rho(Q U Q) < 1). No external clock/time parameter/SI unit enters; the tick is the dimensionless integer Neumann index k.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_archive_neumann_tick_owner.py",
+      "kind": "python_cert",
+      "label": "vp_archive_neumann_tick_owner.py",
+      "path": "05_CERTS/vp_archive_neumann_tick_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.6",
+      "lean_module": "D0.Evolution.PhiFractalTickDynamics",
+      "lean_theorem": "phi_fractal_tick_dynamics_cert",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_fractal_tick_dynamics.py",
+      "python_cert": [
+        "vp_phi_fractal_tick_dynamics.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Tick-weight CONNECTOR. REUSED substrate (NOT re-derived): D0-IM-003 (ladder_constant_ratio A_{k+1}=A_k*phi^-1, ladder_substrate_conserved p+p^2=1, env_restricts_to_ladder) and D0-PHI-LADDER-SEMIGROUP-001 (env_cocycle). NEW content = the tick-weight connector: the self-return detector split p+p^2=1 has a UNIQUE root in (0,1), so each archive-delay tick (Block II index k) multiplies the active amplitude by the FORCED weight phi^-1 (phi_split_forces_tick_weight, not a chosen decay constant). discrete_ladder_closed_form A_k=A0*phi^-k. Honest residual: archive_tick_nonincreasing/the ladder are finite WITNESSES on the contraction domain (0<phi^-1<1), not a universal continuum theorem; no primitive time object / SI clock (c,h,hbar,s) introduced — the only rate is dimensionless log phi.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/PhiFractalTickDynamics.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Evolution.PhiFractalTickDynamics",
+      "kind": "lean_module",
+      "label": "D0.Evolution.PhiFractalTickDynamics",
+      "path": "09_LEAN_FORMALIZATION/D0/Evolution/PhiFractalTickDynamics.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_phi_fractal_tick_dynamics.py",
+      "kind": "python_cert",
+      "label": "vp_phi_fractal_tick_dynamics.py",
+      "path": "05_CERTS/vp_phi_fractal_tick_dynamics.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+      "kind": "claim",
+      "claim_id": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.6",
+      "lean_module": "D0.Evolution.PhiFractalTickDynamics",
+      "lean_theorem": "continuous_envelope_cocycle",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_continuous_time_semigroup_envelope.py",
+      "python_cert": [
+        "vp_continuous_time_semigroup_envelope.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Continuous-time leg of the connector. REUSES the existing env_cocycle owner (D0-PHI-LADDER-SEMIGROUP-001, module D0.IM.ContinuumFromFractalTick): continuous_envelope_cocycle and continuous_envelope_restricts_to_ladder are one-line delegations (honest reuse). NEW: log_phi_is_tick_entropy_rate + rate_factor_eq_tick_weight (exp(-log phi)=phi^-1, the per-tick entropy rate is log phi, forced by matching the discrete tick weight). Honest residual: the cocycle A(s+t)=A(s)A(t)/A0 is a Neumann/convergence-domain identity of the real exponential (holds on the convergence domain), not a smooth-manifold continuum limit (that stays the Rieffel/GHP+Connes owner-edge); no SI unit enters.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/PhiFractalTickDynamics.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_continuous_time_semigroup_envelope.py",
+      "kind": "python_cert",
+      "label": "vp_continuous_time_semigroup_envelope.py",
+      "path": "05_CERTS/vp_continuous_time_semigroup_envelope.py",
+      "exists": true
+    },
+    {
+      "id": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.S",
+      "lean_module": "D0.Evolution.StaticToDynamicsOwner",
+      "lean_theorem": "static_to_dynamics_owner_closed",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_static_to_dynamics_owner.py",
+      "python_cert": [
+        "vp_static_to_dynamics_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Static-to-dynamics combined owner] Composes the three block owners into one proved conjunction: (I) self-readout commutator J*Y != Y*J (Block I, JYNoncommutativeOrderObstruction), (II) Feshbach archive-delay tick index = Neumann order k over the 3/30 split (Block II), (III) each tick multiplies the active amplitude by phi^-1 (Block III, reusing D0-IM-003/D0-PHI-LADDER-SEMIGROUP-001). No primitive time, clock, or SI unit enters. HONEST SCOPE: closes the MECHANISM CHAIN at the witness/finite level; the UNIVERSAL commuting-readout obstruction stays PROOF-TARGET (JY-UNIVERSAL-COMMUTING-READOUT-OBSTRUCTION), the Neumann tick holds on the resolvent/convergence domain, the envelope owner is the reused D0-PHI-LADDER-SEMIGROUP-001. No grand 'dynamics fully derived' claim. Cert vp_static_to_dynamics_owner.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/StaticToDynamicsOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Evolution.StaticToDynamicsOwner",
+      "kind": "lean_module",
+      "label": "D0.Evolution.StaticToDynamicsOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Evolution/StaticToDynamicsOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_static_to_dynamics_owner.py",
+      "kind": "python_cert",
+      "label": "vp_static_to_dynamics_owner.py",
+      "path": "05_CERTS/vp_static_to_dynamics_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "kind": "claim",
+      "claim_id": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.S",
+      "lean_module": "D0.Evolution.StaticToDynamicsOwner",
+      "lean_theorem": "dynamics_not_primitive",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dynamics_not_primitive.py",
+      "python_cert": [
+        "vp_dynamics_not_primitive.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Static-to-dynamics] Dynamics is not a primitive D0 input: the ordering that makes a tick meaningful is forced by [J,Y] != 0 (derived, Block I) and the tick weight phi^-1 is fixed by the detector self-return split p+p^2=1 (derived, Block III) -- proved by projecting D0-STATIC-TO-DYNAMICS-OWNER-001. No primitive time object, external clock, or SI unit. SCOPE matches the combined owner (mechanism-level; universal obstruction residual named there). Cert vp_dynamics_not_primitive.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Evolution/StaticToDynamicsOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_dynamics_not_primitive.py",
+      "kind": "python_cert",
+      "label": "vp_dynamics_not_primitive.py",
+      "path": "05_CERTS/vp_dynamics_not_primitive.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -17203,6 +17472,126 @@
     {
       "source": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
       "target": "cert:vp_higgs_logdet_stationary.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001",
+      "target": "module:D0.Evolution.JYNoncommutativeOrderObstruction",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001",
+      "target": "cert:vp_jy_noncommutative_order_obstruction.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TIME-ARROW-ORDERED-SELF-READOUT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TIME-ARROW-ORDERED-SELF-READOUT-001",
+      "target": "module:D0.Evolution.JYNoncommutativeOrderObstruction",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TIME-ARROW-ORDERED-SELF-READOUT-001",
+      "target": "cert:vp_jy_noncommutative_order_obstruction.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "target": "module:D0.Evolution.FeshbachSchurTimeDelayOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "target": "cert:vp_feshbach_schur_time_delay_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "target": "module:D0.Evolution.FeshbachSchurTimeDelayOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "target": "cert:vp_archive_neumann_tick_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "target": "module:D0.Evolution.PhiFractalTickDynamics",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "target": "cert:vp_phi_fractal_tick_dynamics.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+      "target": "module:D0.Evolution.PhiFractalTickDynamics",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+      "target": "cert:vp_continuous_time_semigroup_envelope.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "target": "module:D0.Evolution.StaticToDynamicsOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "target": "cert:vp_static_to_dynamics_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "target": "module:D0.Evolution.StaticToDynamicsOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "target": "cert:vp_dynamics_not_primitive.py",
       "kind": "certified_by"
     }
   ]

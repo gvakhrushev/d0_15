@@ -1,15 +1,15 @@
 # D0 Standard Language Audit Report
-Generated: 2026-06-19T04:57:42.635769+00:00
+Generated: 2026-06-19T05:58:35.292306+00:00
 
-Total occurrences scanned: 2428
+Total occurrences scanned: 2461
 
 ## Summary by Classification
 - NEEDS_STANDARD_REWRITE: 123
 - OK_CODE_OR_FORMULA: 191
 - OK_FIRST_USE: 67
-- OK_OWNER: 230
-- OK_STANDARD_CONTEXT: 289
-- OK_STRUCTURAL: 1528
+- OK_OWNER: 232
+- OK_STANDARD_CONTEXT: 291
+- OK_STRUCTURAL: 1557
 
 ## Needs Rewrite (sample)
 - BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:272 `readout` → positive measurement outcome / positive response functional
@@ -66,9 +66,9 @@ Total occurrences scanned: 2428
   > The strong coupling runtime readout at the electroweak scale is
 - BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:1115 `runtime` → ordered finite evolution / finite record dynamics
   > The strong coupling runtime readout at the electroweak scale is
-- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:2085 `selector` → finite variational selector / strict minimizer
+- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:2086 `selector` → finite variational selector / strict minimizer
   > by the selector arithmetic. The Lucas approximation error is *literally* the Galois
-- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:2091 `selector` → finite variational selector / strict minimizer
+- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:2092 `selector` → finite variational selector / strict minimizer
   > fixes the sign of the conjugate, i.e. selects one Galois sector; the Lucas selector of
-- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:2327 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
+- BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:2328 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
   > [^b02-7]: algebraic closure of S1; forcing: GOLDEN §2.3.2
