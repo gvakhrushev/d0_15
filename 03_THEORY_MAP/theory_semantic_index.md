@@ -15,13 +15,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 16
 - `NO_GO_PROVED`: 8
-- `PASSPORT-CLOSED`: 5
+- `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 115
+- `certificate`: 119
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 36
 - `empirical_passport`: 28
 - `external_background`: 1
-- `formal_core`: 203
+- `formal_core`: 207
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1897,6 +1897,58 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter8 researcher doc 2 §01.25, verified CORRECT, entered as-is] The first terminal phase-return window q_T=|ABCD|*|V_11|=4*11=44 has admissible coprime branch count = Euler totient phi_E(44)=|(Z/44)*|=20=d_13 (terminal shell degree). cert vp_window44_totient_m1.py: phi_E(44)=44*(1-1/2)*(1-1/11)=20 exact, |(Z/44)*|=20 by direct count, neighbours phi_E(43)=42, phi_E(45)=24 differ. M1 formulation: |Aut(Z/44)|=phi_E(44)=20; any branch count k!=20 changes the automorphism class, needing an external catalogue to index it -> bot M1, so 20 is forced not chosen. Sharpens/confirms D0-WINDOW44-GROUP-SPECTRUM-001 and the §07.23 phase chain; no new free number.
+
+### D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Bridge.ConstrainedHamiltonianEmbeddingPassport`
+- theorem: `bridge_is_formalism_not_core_confirmation`
+- cert: `vp_constrained_hamiltonian_embedding_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Formalism passport] Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py. Maps original theta<->active/retained P_N; auxiliary phi<->auxiliary extension (NOT archive); mirror constraint theta-phi=pi<->retained/archive admissibility / self-readout consistency.
+
+### D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Bridge.ConstrainedHamiltonianEmbeddingPassport`
+- theorem: `feshbach_constraint_submanifold_bridge`
+- cert: `vp_constrained_hamiltonian_embedding_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Formalism bridge] The retained/archive Feshbach-Schur effective dynamics reads in standard language as a constrained Hamiltonian embedding: effective active dim on the constrained submanifold = retained dim 3, archive NOT identified with the article's auxiliary degrees. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.
+
+### D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Bridge.ConstrainedHamiltonianEmbeddingPassport`
+- theorem: `nonreciprocal_active_dynamics_has_formalism_bridge`
+- cert: `vp_constrained_hamiltonian_embedding_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Formalism bridge, downstream] Floquet Hamiltonian engineering becomes available in the embedded (reciprocal, symplectic) system; mapped to the D0 finite tick / driven feedback operator formalism. DOWNSTREAM FORMALISM only -- Floquet engineering is NOT used as a proof of D0. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.
+
+### D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_03`
+- module: `D0.Bridge.ConstrainedHamiltonianEmbeddingPassport`
+- theorem: `nonreciprocal_active_dynamics_has_formalism_bridge`
+- cert: `vp_constrained_hamiltonian_embedding_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Formalism bridge] Non-reciprocal effective active-sector dynamics has a standard Hamiltonian/symplectic embedding language: the enlarged finite space carries J^2=-I; the active dynamics appears on the constraint submanifold after eliminating the auxiliary/traced sector. FORMALISM, not a D0 axiom. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.
 
 ### D0-ABCD-001
 

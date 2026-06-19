@@ -32,6 +32,7 @@ import D0.Bridge.Assumptions.Wilson
 import D0.Bridge.Assumptions.YangMillsKilling
 import D0.Bridge.ComplexQMBridge
 import D0.Bridge.ConnesReconstructionBridge
+import D0.Bridge.ConstrainedHamiltonianEmbeddingPassport
 import D0.Bridge.ConvexResponseBridge
 import D0.Bridge.DixmierTraceBridge
 import D0.Bridge.FinalBridgeIndex

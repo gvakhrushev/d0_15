@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 4894,
-    "track_fair_max": 6726,
-    "pct_strength": 72.8,
+    "realized": 4922,
+    "track_fair_max": 6754,
+    "pct_strength": 72.9,
     "core_realized": 4240,
     "core_potential": 6040,
     "core_headroom": 1800,
-    "n_claims": 369,
-    "n_active": 367,
+    "n_claims": 373,
+    "n_active": 371,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 202,
-      "realized": 3088,
-      "max": 3809,
+      "n": 206,
+      "realized": 3116,
+      "max": 3837,
       "core_headroom": 711
     },
     "rg": {
@@ -316,9 +316,9 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 30,
-      "realized": 390,
-      "max": 569,
+      "n": 33,
+      "realized": 411,
+      "max": 590,
       "core_headroom": 179
     },
     "BOOK_01/06": {
@@ -358,9 +358,9 @@
       "core_headroom": 0
     },
     "BOOK_03": {
-      "n": 1,
-      "realized": 20,
-      "max": 20,
+      "n": 2,
+      "realized": 27,
+      "max": 27,
       "core_headroom": 0
     },
     "BOOK_01/03": {
@@ -7962,6 +7962,62 @@
       "domain": "formal_core",
       "book": "BOOK_06",
       "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 3,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_03",
+      "leverage": 3,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 3,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 3,
       "integrity_flag": null
     }
   ],

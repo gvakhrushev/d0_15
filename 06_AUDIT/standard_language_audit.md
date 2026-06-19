@@ -1,7 +1,7 @@
 # D0 Standard Language Audit Report
-Generated: 2026-06-19T05:58:35.292306+00:00
+Generated: 2026-06-19T06:18:18.432175+00:00
 
-Total occurrences scanned: 2461
+Total occurrences scanned: 2472
 
 ## Summary by Classification
 - NEEDS_STANDARD_REWRITE: 123
@@ -9,7 +9,7 @@ Total occurrences scanned: 2461
 - OK_FIRST_USE: 67
 - OK_OWNER: 232
 - OK_STANDARD_CONTEXT: 291
-- OK_STRUCTURAL: 1557
+- OK_STRUCTURAL: 1568
 
 ## Needs Rewrite (sample)
 - BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:272 `readout` → positive measurement outcome / positive response functional

@@ -544,7 +544,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-STATIC-TO-DYNAMICS-OWNER-001", moduleName := "D0.Evolution.StaticToDynamicsOwner",
       theoremName := "static_to_dynamics_owner_closed", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001", moduleName := "D0.Evolution.StaticToDynamicsOwner",
-      theoremName := "dynamics_not_primitive", status := ClaimStatus.leanCoreProved }
+      theoremName := "dynamics_not_primitive", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001", moduleName := "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      theoremName := "bridge_is_formalism_not_core_confirmation", status := ClaimStatus.pythonCertClosed },
+    { claimId := "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001", moduleName := "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      theoremName := "nonreciprocal_active_dynamics_has_formalism_bridge", status := ClaimStatus.pythonCertClosed },
+    { claimId := "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001", moduleName := "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      theoremName := "feshbach_constraint_submanifold_bridge", status := ClaimStatus.pythonCertClosed },
+    { claimId := "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001", moduleName := "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      theoremName := "nonreciprocal_active_dynamics_has_formalism_bridge", status := ClaimStatus.pythonCertClosed }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -121,7 +121,7 @@ A consequence of M1+ that the protocol must state explicitly. On a compact discr
 
 The CORE-compatible language of finiteness is therefore the localized spectral packet (wavelet basis): a basis that localizes simultaneously in scale and in diffusion "time" and so carries a built-in UV/IR regularization with no external catalog. The choice "wavelet packets over global modes" is not a modeling preference — it is the only finite-observer language consistent with the no-external-catalog law. Status: FORCED. Cert obligation for the explicit UV/IR-bound statement: PROOF-TARGET (cert obligation open).
 
-## 00.2 Primitive thesis
+**[Constrained Hamiltonian embedding bridge].** D0 retained/archive effective dynamics may be read in standard physics as a *constrained Hamiltonian embedding* of non-reciprocal active dynamics (Nature Physics 2026, `s41567-026-03317-0`): the enlarged space carries a reciprocal Hamiltonian/symplectic structure, and the D0 active dynamics is read on the constrained submanifold (or after eliminating the auxiliary/traced sector). This is a FORMALISM reading, never an empirical confirmation and never CORE (`D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001`, PASSPORT-CLOSED).## 00.2 Primitive thesis
 
 D0 is a finite-observability framework over a condensed/profinite φ-quasicrystalline tiling hull.
 

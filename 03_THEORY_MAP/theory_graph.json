@@ -4,7 +4,7 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 369,
+    "claims": 373,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
@@ -17,12 +17,12 @@
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
       "PROOF-TARGET": 36,
-      "PASSPORT-CLOSED": 5
+      "PASSPORT-CLOSED": 9
     },
     "lean_status": {
       "LEAN_PROVED": 228,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 81,
+      "PYTHON_CERTIFIED": 85,
       "DEPRECATED": 2,
       "OPEN": 37
     },
@@ -30,12 +30,12 @@
       "core": 163,
       "bridge": 28,
       "no-go": 24,
-      "certificate": 115,
+      "certificate": 119,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 203,
+      "formal_core": 207,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -12376,6 +12376,116 @@
       "label": "vp_dynamics_not_primitive.py",
       "path": "05_CERTS/vp_dynamics_not_primitive.py",
       "exists": true
+    },
+    {
+      "id": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.H",
+      "lean_module": "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "lean_theorem": "bridge_is_formalism_not_core_confirmation",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_constrained_hamiltonian_embedding_passport.py",
+      "python_cert": [
+        "vp_constrained_hamiltonian_embedding_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Formalism passport] Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py. Maps original theta<->active/retained P_N; auxiliary phi<->auxiliary extension (NOT archive); mirror constraint theta-phi=pi<->retained/archive admissibility / self-readout consistency.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/ConstrainedHamiltonianEmbeddingPassport.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "kind": "lean_module",
+      "label": "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/ConstrainedHamiltonianEmbeddingPassport.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_constrained_hamiltonian_embedding_passport.py",
+      "kind": "python_cert",
+      "label": "vp_constrained_hamiltonian_embedding_passport.py",
+      "path": "05_CERTS/vp_constrained_hamiltonian_embedding_passport.py",
+      "exists": true
+    },
+    {
+      "id": "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001",
+      "kind": "claim",
+      "claim_id": "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_03",
+      "section": "03.3",
+      "lean_module": "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "lean_theorem": "nonreciprocal_active_dynamics_has_formalism_bridge",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_constrained_hamiltonian_embedding_passport.py",
+      "python_cert": [
+        "vp_constrained_hamiltonian_embedding_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Formalism bridge] Non-reciprocal effective active-sector dynamics has a standard Hamiltonian/symplectic embedding language: the enlarged finite space carries J^2=-I; the active dynamics appears on the constraint submanifold after eliminating the auxiliary/traced sector. FORMALISM, not a D0 axiom. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/ConstrainedHamiltonianEmbeddingPassport.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001",
+      "kind": "claim",
+      "claim_id": "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.H",
+      "lean_module": "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "lean_theorem": "feshbach_constraint_submanifold_bridge",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_constrained_hamiltonian_embedding_passport.py",
+      "python_cert": [
+        "vp_constrained_hamiltonian_embedding_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Formalism bridge] The retained/archive Feshbach-Schur effective dynamics reads in standard language as a constrained Hamiltonian embedding: effective active dim on the constrained submanifold = retained dim 3, archive NOT identified with the article's auxiliary degrees. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/ConstrainedHamiltonianEmbeddingPassport.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001",
+      "kind": "claim",
+      "claim_id": "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.H",
+      "lean_module": "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "lean_theorem": "nonreciprocal_active_dynamics_has_formalism_bridge",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_constrained_hamiltonian_embedding_passport.py",
+      "python_cert": [
+        "vp_constrained_hamiltonian_embedding_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Formalism bridge, downstream] Floquet Hamiltonian engineering becomes available in the embedded (reciprocal, symplectic) system; mapped to the D0 finite tick / driven feedback operator formalism. DOWNSTREAM FORMALISM only -- Floquet engineering is NOT used as a proof of D0. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/ConstrainedHamiltonianEmbeddingPassport.lean",
+      "module_exists": true,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -17592,6 +17702,66 @@
     {
       "source": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
       "target": "cert:vp_dynamics_not_primitive.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+      "target": "module:D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+      "target": "cert:vp_constrained_hamiltonian_embedding_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001",
+      "target": "module:D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001",
+      "target": "cert:vp_constrained_hamiltonian_embedding_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001",
+      "target": "module:D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001",
+      "target": "cert:vp_constrained_hamiltonian_embedding_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001",
+      "target": "module:D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001",
+      "target": "cert:vp_constrained_hamiltonian_embedding_passport.py",
       "kind": "certified_by"
     }
   ]
