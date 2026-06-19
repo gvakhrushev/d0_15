@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 4922,
-    "track_fair_max": 6754,
-    "pct_strength": 72.9,
-    "core_realized": 4240,
-    "core_potential": 6040,
-    "core_headroom": 1800,
-    "n_claims": 373,
-    "n_active": 371,
+    "realized": 4943,
+    "track_fair_max": 6814,
+    "pct_strength": 72.5,
+    "core_realized": 4261,
+    "core_potential": 6100,
+    "core_headroom": 1839,
+    "n_claims": 376,
+    "n_active": 374,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 206,
-      "realized": 3116,
-      "max": 3837,
-      "core_headroom": 711
+      "n": 209,
+      "realized": 3137,
+      "max": 3897,
+      "core_headroom": 750
     },
     "rg": {
       "n": 5,
@@ -316,10 +316,10 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 33,
-      "realized": 411,
-      "max": 590,
-      "core_headroom": 179
+      "n": 34,
+      "realized": 418,
+      "max": 610,
+      "core_headroom": 192
     },
     "BOOK_01/06": {
       "n": 2,
@@ -388,10 +388,10 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 10,
-      "realized": 152,
-      "max": 173,
-      "core_headroom": 21
+      "n": 12,
+      "realized": 166,
+      "max": 213,
+      "core_headroom": 47
     },
     "BOOK_00/05": {
       "n": 1,
@@ -1447,6 +1447,36 @@
       "claim_id": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
       "domain": "smooth_geometry",
       "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "domain": "formal_core",
+      "book": "BOOK_06",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -2651,6 +2681,27 @@
     {
       "claim_id": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
       "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -8018,6 +8069,48 @@
       "domain": "formal_core",
       "book": "BOOK_06",
       "leverage": 3,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
       "integrity_flag": null
     }
   ],

@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 373,
+    "claims": 376,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 104,
+      "CERT-CLOSED": 107,
       "NO-GO": 16,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -22,7 +22,7 @@
     "lean_status": {
       "LEAN_PROVED": 228,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 85,
+      "PYTHON_CERTIFIED": 88,
       "DEPRECATED": 2,
       "OPEN": 37
     },
@@ -30,12 +30,12 @@
       "core": 163,
       "bridge": 28,
       "no-go": 24,
-      "certificate": 119,
+      "certificate": 122,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 207,
+      "formal_core": 210,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -12486,6 +12486,99 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/ConstrainedHamiltonianEmbeddingPassport.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "kind": "claim",
+      "claim_id": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_continuation_dependency_graph.py",
+      "python_cert": [
+        "vp_final_continuation_dependency_graph.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Continuation] Integrity owner of 04_VERIFICATION/FINAL_CONTINUATION_BLOCKERS.csv: every closed row names a cert/module; every open PROOF-TARGET names an EXACT (non-broad) missing artifact and is a flagged global blocker; frontier non-empty (global closure NOT asserted). 19 named global blockers remain. Cert vp_final_continuation_dependency_graph.py (controls reject closed-without-owner, broad 'needs work' artifact).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_final_continuation_dependency_graph.py",
+      "kind": "python_cert",
+      "label": "vp_final_continuation_dependency_graph.py",
+      "path": "05_CERTS/vp_final_continuation_dependency_graph.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "kind": "claim",
+      "claim_id": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_continuation_no_status_only_diff.py",
+      "python_cert": [
+        "vp_continuation_no_status_only_diff.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Continuation] No-status-only-diff invariant: every CERT-CLOSED/NO-GO/PASSPORT-CLOSED claim row carries a real owner-of-record (python cert and/or Lean module), never status alone; PASSPORT-CLOSED rows name a protocol cert. Cert vp_continuation_no_status_only_diff.py (control rejects a closed row with no owner).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_continuation_no_status_only_diff.py",
+      "kind": "python_cert",
+      "label": "vp_continuation_no_status_only_diff.py",
+      "path": "05_CERTS/vp_continuation_no_status_only_diff.py",
+      "exists": true
+    },
+    {
+      "id": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "kind": "claim",
+      "claim_id": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.8.S",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_static_dynamics_hamiltonian_bridge_integration.py",
+      "python_cert": [
+        "vp_static_dynamics_hamiltonian_bridge_integration.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Continuation] Integration owner tying the CERT-CLOSED static-to-dynamics owner (D0-STATIC-TO-DYNAMICS-OWNER-001) to the PASSPORT-CLOSED Nature constrained-Hamiltonian bridge (D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001): the symplectic embedding language reads the SAME finite retained(3)/archive(30) Feshbach structure; FORMALISM only, archive NOT identified with the article's auxiliary bath, bridge never CORE. Cert vp_static_dynamics_hamiltonian_bridge_integration.py.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_static_dynamics_hamiltonian_bridge_integration.py",
+      "kind": "python_cert",
+      "label": "vp_static_dynamics_hamiltonian_bridge_integration.py",
+      "path": "05_CERTS/vp_static_dynamics_hamiltonian_bridge_integration.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -17762,6 +17855,51 @@
     {
       "source": "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001",
       "target": "cert:vp_constrained_hamiltonian_embedding_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001",
+      "target": "cert:vp_final_continuation_dependency_graph.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001",
+      "target": "cert:vp_continuation_no_status_only_diff.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "target": "cert:vp_static_dynamics_hamiltonian_bridge_integration.py",
       "kind": "certified_by"
     }
   ]

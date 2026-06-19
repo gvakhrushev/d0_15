@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 104
+- `CERT-CLOSED`: 107
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 119
+- `certificate`: 122
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 36
 - `empirical_passport`: 28
 - `external_background`: 1
-- `formal_core`: 207
+- `formal_core`: 210
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1261,6 +1261,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 five-front E] On explicit finite graphs (path, cycle) the Connes spectral distance d_C(p,q)=sup{|f(p)-f(q)|: ||[D,f]||<=1} equals the geodesic/shortest-path distance, with c=1=edge/tick (max 1-Lipschitz increment per edge = 1). cert vp_connes_graph_distance_owner.py (controls: edge-jump>1 inadmissible). Extends/owns D0-CONNES-DISTANCE-GEODESIC-001. The UNIVERSAL (all finite graphs) Lean theorem stays the named gap. CERT-CLOSED for the finite-graph owner.
 
+### D0-CONTINUATION-FINAL-BLOCKER-GRAPH-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: ``
+- theorem: `none`
+- cert: `vp_final_continuation_dependency_graph.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Continuation] Integrity owner of 04_VERIFICATION/FINAL_CONTINUATION_BLOCKERS.csv: every closed row names a cert/module; every open PROOF-TARGET names an EXACT (non-broad) missing artifact and is a flagged global blocker; frontier non-empty (global closure NOT asserted). 19 named global blockers remain. Cert vp_final_continuation_dependency_graph.py (controls reject closed-without-owner, broad 'needs work' artifact).
+
+### D0-CONTINUATION-NO-STATUS-ONLY-DIFF-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: ``
+- theorem: `none`
+- cert: `vp_continuation_no_status_only_diff.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Continuation] No-status-only-diff invariant: every CERT-CLOSED/NO-GO/PASSPORT-CLOSED claim row carries a real owner-of-record (python cert and/or Lean module), never status alone; PASSPORT-CLOSED rows name a protocol cert. Cert vp_continuation_no_status_only_diff.py (control rejects a closed row with no owner).
+
 ### D0-CVFT-F4
 
 - type: `certificate`
@@ -1819,6 +1845,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Noncommutative solenoid model is admitted over the tiling hull. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: ``
+- theorem: `none`
+- cert: `vp_static_dynamics_hamiltonian_bridge_integration.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Continuation] Integration owner tying the CERT-CLOSED static-to-dynamics owner (D0-STATIC-TO-DYNAMICS-OWNER-001) to the PASSPORT-CLOSED Nature constrained-Hamiltonian bridge (D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001): the symplectic embedding language reads the SAME finite retained(3)/archive(30) Feshbach structure; FORMALISM only, archive NOT identified with the article's auxiliary bath, bridge never CORE. Cert vp_static_dynamics_hamiltonian_bridge_integration.py.
 
 ### D0-STATIC-TO-DYNAMICS-OWNER-001
 
