@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 4998,
-    "track_fair_max": 6906,
-    "pct_strength": 72.4,
-    "core_realized": 4304,
-    "core_potential": 6180,
-    "core_headroom": 1876,
-    "n_claims": 381,
-    "n_active": 379,
+    "realized": 5070,
+    "track_fair_max": 7026,
+    "pct_strength": 72.2,
+    "core_realized": 4376,
+    "core_potential": 6300,
+    "core_headroom": 1924,
+    "n_claims": 387,
+    "n_active": 385,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -68,10 +68,10 @@
       "core_headroom": 128
     },
     "cosmology": {
-      "n": 40,
-      "realized": 633,
-      "max": 763,
-      "core_headroom": 130
+      "n": 46,
+      "realized": 705,
+      "max": 883,
+      "core_headroom": 178
     },
     "external_background": {
       "n": 1,
@@ -172,10 +172,10 @@
       "core_headroom": 88
     },
     "BOOK_08": {
-      "n": 68,
-      "realized": 904,
-      "max": 1272,
-      "core_headroom": 364
+      "n": 74,
+      "realized": 976,
+      "max": 1392,
+      "core_headroom": 412
     },
     "BOOK_05/06": {
       "n": 6,
@@ -414,6 +414,36 @@
   },
   "cheapest_promotions": [
     {
+      "claim_id": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 2,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 2,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 2,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
       "claim_id": "D0-FIBONACCI-IF-FORCING-001",
       "domain": "formal_core",
       "book": "BOOK_01",
@@ -615,6 +645,26 @@
     },
     {
       "claim_id": "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
       "domain": "cosmology",
       "book": "BOOK_08",
       "level_name": "LEAN_PROVED",
@@ -835,6 +885,16 @@
     },
     {
       "claim_id": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
       "domain": "cosmology",
       "book": "BOOK_08",
       "level_name": "LEAN_PROVED",
@@ -1886,6 +1946,27 @@
   ],
   "leverage_gaps": [
     {
+      "claim_id": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "domain": "cosmology",
+      "leverage": 2,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "domain": "cosmology",
+      "leverage": 2,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "domain": "cosmology",
+      "leverage": 2,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
       "claim_id": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
       "domain": "frontier",
       "leverage": 1,
@@ -2034,6 +2115,20 @@
     },
     {
       "claim_id": "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001",
+      "domain": "cosmology",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "domain": "cosmology",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
       "domain": "cosmology",
       "leverage": 1,
       "level_name": "LEAN_PROVED",
@@ -2909,6 +3004,13 @@
     },
     {
       "claim_id": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "domain": "cosmology",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
       "domain": "cosmology",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
@@ -8250,12 +8352,96 @@
       "book": "BOOK_05",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 2,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 2,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 2,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 3.3,
+    "penalty_total": 3.6,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -8300,8 +8486,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 33,
-        "points": -3.3,
+        "count": 36,
+        "points": -3.6,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -8350,8 +8536,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 33,
-        "points": -3.3,
+        "count": 36,
+        "points": -3.6,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

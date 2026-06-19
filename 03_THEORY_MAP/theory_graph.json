@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 381,
+    "claims": 387,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 111,
+      "CERT-CLOSED": 117,
       "NO-GO": 17,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 232,
+      "LEAN_PROVED": 238,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -30,7 +30,7 @@
       "core": 163,
       "bridge": 28,
       "no-go": 25,
-      "certificate": 126,
+      "certificate": 132,
       "deprecated": 3,
       "frontier": 36
     },
@@ -41,7 +41,7 @@
       "smooth_geometry": 30,
       "spectral_action": 6,
       "empirical_passport": 28,
-      "cosmology": 40,
+      "cosmology": 46,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
@@ -12748,6 +12748,192 @@
       "label": "vp_verified_closure_protocol.py",
       "path": "05_CERTS/vp_verified_closure_protocol.py",
       "exists": true
+    },
+    {
+      "id": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.cosmo",
+      "lean_module": "D0.Cosmology.PhasonInitialCovariance",
+      "lean_theorem": "phason_initial_data_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phason_initial_covariance_owner.py",
+      "python_cert": [
+        "vp_phason_initial_covariance_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Cosmology campaign Layer A] Post-threshold phason initial state = normalized heat-kernel covariance on the NONZERO connected modes (zero mode projected out); energy rho_phi(u)=heat-weighted mean of {20,22,24,33} in [20,33], >0 for all u>0, sourced by the reheating heat trace, no inflaton amplitude. Lean D0.Cosmology.PhasonInitialCovariance (div_pos/le_div_iff0/div_le_iff0). Forced unique window u_* NOT supplied -> PROOF-TARGET (COSMOLOGY_CLOSURE_BLOCKERS.csv).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonInitialCovariance.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.PhasonInitialCovariance",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.PhasonInitialCovariance",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonInitialCovariance.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_phason_initial_covariance_owner.py",
+      "kind": "python_cert",
+      "label": "vp_phason_initial_covariance_owner.py",
+      "path": "05_CERTS/vp_phason_initial_covariance_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.cosmo",
+      "lean_module": "D0.Cosmology.PhasonInitialCovariance",
+      "lean_theorem": "phason_initial_covariance_normalized",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phason_initial_covariance_owner.py",
+      "python_cert": [
+        "vp_phason_initial_covariance_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Cosmology campaign Layer A] The phason covariance is normalized (nonzero-mode weights sum to 1) and rho_phi>0. Lean D0.Cosmology.PhasonInitialCovariance.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonInitialCovariance.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.cosmo",
+      "lean_module": "D0.Cosmology.CMBFiedlerFreezeout",
+      "lean_theorem": "cmb_fiedler_freezeout_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cmb_fiedler_freezeout_owner.py",
+      "python_cert": [
+        "vp_cmb_fiedler_freezeout_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Cosmology campaign Layer D] Freeze-out scale = Fiedler value lambda_2=20 = min nonzero eigenvalue of K(9,11,13); k_*^2=20. Decidable off the frozen spectrum (reuses D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001). Lean D0.Cosmology.CMBFiedlerFreezeout.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/CMBFiedlerFreezeout.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.CMBFiedlerFreezeout",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.CMBFiedlerFreezeout",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/CMBFiedlerFreezeout.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_cmb_fiedler_freezeout_owner.py",
+      "kind": "python_cert",
+      "label": "vp_cmb_fiedler_freezeout_owner.py",
+      "path": "05_CERTS/vp_cmb_fiedler_freezeout_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.cosmo",
+      "lean_module": "D0.Cosmology.DarkArchiveTransfer",
+      "lean_theorem": "dark_ratio_transfer_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dark_archive_transfer_owner.py",
+      "python_cert": [
+        "vp_dark_archive_transfer_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Cosmology campaign Layer F] rank-3/nullity-30 split (sum 33), gamma=10, visible share 1/11 + dark share 10/11 = 1, dark=gamma*visible. Decidable exact rationals. Lean D0.Cosmology.DarkArchiveTransfer. No survey-tuned ratio, no dark particle species.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/DarkArchiveTransfer.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.DarkArchiveTransfer",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.DarkArchiveTransfer",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/DarkArchiveTransfer.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_dark_archive_transfer_owner.py",
+      "kind": "python_cert",
+      "label": "vp_dark_archive_transfer_owner.py",
+      "path": "05_CERTS/vp_dark_archive_transfer_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.cosmo",
+      "lean_module": "D0.Cosmology.DarkArchiveTransfer",
+      "lean_theorem": "archive_phason_em_dark_metric_active",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dark_archive_transfer_owner.py",
+      "python_cert": [
+        "vp_dark_archive_transfer_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Cosmology campaign Layer F] Archive phason sector: zero EM coupling (dark), active metric/heat contribution. Lean D0.Cosmology.DarkArchiveTransfer.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/DarkArchiveTransfer.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "kind": "claim",
+      "claim_id": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.cosmo",
+      "lean_module": "D0.Cosmology.DarkArchiveTransfer",
+      "lean_theorem": "cosmology_internal_transfer_composed",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dark_archive_transfer_owner.py",
+      "python_cert": [
+        "vp_dark_archive_transfer_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Cosmology campaign Layer F] Internal cosmology transfer composes over 5 compatible stages (reheating->EOS->branch->redshift->CMB) with the rank-3/nullity-30 split, gamma=10 dark ratio, and EM-dark/metric-active archive. Lean D0.Cosmology.DarkArchiveTransfer. The n_s value + physical w_DE magnitude remain PROOF-TARGET (COSMOLOGY_CLOSURE_BLOCKERS.csv).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/DarkArchiveTransfer.lean",
+      "module_exists": true,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -18144,6 +18330,96 @@
     {
       "source": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
       "target": "cert:vp_verified_closure_protocol.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "target": "module:D0.Cosmology.PhasonInitialCovariance",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "target": "cert:vp_phason_initial_covariance_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "target": "module:D0.Cosmology.PhasonInitialCovariance",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "target": "cert:vp_phason_initial_covariance_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "target": "module:D0.Cosmology.CMBFiedlerFreezeout",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "target": "cert:vp_cmb_fiedler_freezeout_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "target": "module:D0.Cosmology.DarkArchiveTransfer",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "target": "cert:vp_dark_archive_transfer_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "target": "module:D0.Cosmology.DarkArchiveTransfer",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "target": "cert:vp_dark_archive_transfer_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "target": "module:D0.Cosmology.DarkArchiveTransfer",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "target": "cert:vp_dark_archive_transfer_owner.py",
       "kind": "certified_by"
     }
   ]

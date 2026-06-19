@@ -485,7 +485,9 @@ static finite scene -> self-readout -> [J,Y] != 0 -> ordered registration
 
 **[Constrained Hamiltonian embedding bridge].** The retained/archive Feshbach–Schur delay has a standard non-reciprocal-dynamics analogue: a constrained Hamiltonian embedding with auxiliary variables. The D0 archive is NOT identified with the article's auxiliary bath; rather, the bridge says effective non-reciprocal active dynamics can be represented by a Hamiltonian/symplectic enlarged system plus a constraint preserved by the flow, with the active dynamics on the constraint submanifold (`D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001`, `D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001`, PASSPORT-CLOSED; Nature Physics 2026 `s41567-026-03317-0`). FORMALISM, never CORE confirmation.
 
-**[Reheating energy pointer].** The heat-trace time parameter `u` also owns the finite reheating energy functional used in BOOK_08: `E(u) = −∂_u log H(u)` (`D0-REHEATING-ENERGY-BUDGET-OWNER-001`). This is phase-time heat energy over the discrete archive tick, not SI time or an external clock.## 06.9 Phase transport and quantum emergence
+**[Reheating energy pointer].** The heat-trace time parameter `u` also owns the finite reheating energy functional used in BOOK_08: `E(u) = −∂_u log H(u)` (`D0-REHEATING-ENERGY-BUDGET-OWNER-001`). This is phase-time heat energy over the discrete archive tick, not SI time or an external clock.
+
+**[Cosmology handoff].** The heat-trace time `u` and the reheating energy `E(u)=−∂_u log H(u)` hand off to the cosmology chain in BOOK_08 §08.COSMOLOGY-CLOSURE: the post-threshold phason initial covariance `C_φ(u)` is the normalized heat-kernel covariance on the nonzero connected modes, with energy `ρ_φ(u) ∈ [λ₂, λ_max] = [20,33]` sourced by the same heat trace (`D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001`). Phase-time heat energy, not SI time.## 06.9 Phase transport and quantum emergence
 
 Quantum evolution appears when the finite active record is transported without being immediately forced into a commuting classical quotient.  The finite-stage transport has the standard unitary-looking form
 

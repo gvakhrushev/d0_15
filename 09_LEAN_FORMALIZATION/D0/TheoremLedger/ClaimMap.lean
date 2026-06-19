@@ -560,7 +560,19 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001", moduleName := "D0.Cosmology.InflationlessThresholdEnergyOwner",
       theoremName := "inflationless_threshold_energy_owner_closed", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-REHEATING-NO-INFLATON-NOGO-001", moduleName := "D0.Cosmology.InflationlessThresholdEnergyOwner",
-      theoremName := "reheating_no_inflaton_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "reheating_no_inflaton_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001", moduleName := "D0.Cosmology.PhasonInitialCovariance",
+      theoremName := "phason_initial_data_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PHASON-INITIAL-COVARIANCE-OWNER-001", moduleName := "D0.Cosmology.PhasonInitialCovariance",
+      theoremName := "phason_initial_covariance_normalized", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001", moduleName := "D0.Cosmology.CMBFiedlerFreezeout",
+      theoremName := "cmb_fiedler_freezeout_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DARK-RATIO-TRANSFER-OWNER-001", moduleName := "D0.Cosmology.DarkArchiveTransfer",
+      theoremName := "dark_ratio_transfer_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001", moduleName := "D0.Cosmology.DarkArchiveTransfer",
+      theoremName := "archive_phason_em_dark_metric_active", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001", moduleName := "D0.Cosmology.DarkArchiveTransfer",
+      theoremName := "cosmology_internal_transfer_composed", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

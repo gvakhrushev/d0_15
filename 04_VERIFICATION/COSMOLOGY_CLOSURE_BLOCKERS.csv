@@ -1,0 +1,30 @@
+claim_id,layer,status,lean_module,certificate,book_section,depends_on,exact_missing_artifact,is_global_blocker
+D0-REHEATING-ENERGY-BUDGET-OWNER-001,frozen,CERT-CLOSED,D0.Cosmology.ReheatingEnergyBudgetOwner,vp_reheating_energy_budget_owner.py,BOOK_08/08.v15,,,False
+D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001,frozen,CERT-CLOSED,D0.Cosmology.CLightconePercolationOwner,vp_connectivity_spectral_gap_speed.py,BOOK_06/06.35,,,False
+D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001,frozen,CERT-CLOSED,D0.Cosmology.PhasonArchiveCapacityRedshift,vp_phason_archive_capacity_redshift.py,BOOK_08/08.51,,,False
+D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001,frozen,CERT-CLOSED,D0.Cosmology.PhasonWDESignNormalization,vp_phason_wde_sign_normalization.py,BOOK_08,,,False
+D0-PHASON-PRESSURE-EOS-SCAFFOLD-001,frozen,CERT-CLOSED,D0.Cosmology.PhasonWZTransfer,vp_phason_pressure_eos_scaffold.py,BOOK_08,,,False
+D0-CMB-NS-LAPLACIAN-IDS-OWNER-001,frozen,CERT-CLOSED,D0.Cosmology.CMBLaplacianIDS,vp_cmb_ns_laplacian_ids.py,BOOK_08/08.v15,,,False
+D0-PHI-LADDER-SEMIGROUP-001,frozen,CERT-CLOSED,D0.IM.ContinuumFromFractalTick,vp_continuum_from_fractal_tick.py,BOOK_02,,,False
+D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001,A,CERT-CLOSED,D0.Cosmology.PhasonInitialCovariance,vp_phason_initial_covariance_owner.py,BOOK_08/08.COSMOLOGY-CLOSURE,D0-REHEATING-ENERGY-BUDGET-OWNER-001,,False
+D0-PHASON-INITIAL-COVARIANCE-OWNER-001,A,CERT-CLOSED,D0.Cosmology.PhasonInitialCovariance,vp_phason_initial_covariance_owner.py,BOOK_08/08.COSMOLOGY-CLOSURE,D0-REHEATING-ENERGY-BUDGET-OWNER-001,,False
+D0-CMB-FIEDLER-FREEZEOUT-OWNER-001,D,CERT-CLOSED,D0.Cosmology.CMBFiedlerFreezeout,vp_cmb_fiedler_freezeout_owner.py,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001,,False
+D0-DARK-RATIO-TRANSFER-OWNER-001,F,CERT-CLOSED,D0.Cosmology.DarkArchiveTransfer,vp_dark_archive_transfer_owner.py,BOOK_08/08.COSMOLOGY-CLOSURE,,,False
+D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001,F,CERT-CLOSED,D0.Cosmology.DarkArchiveTransfer,vp_dark_archive_transfer_owner.py,BOOK_08/08.COSMOLOGY-CLOSURE,,,False
+D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001,F,CERT-CLOSED,D0.Cosmology.DarkArchiveTransfer,vp_dark_archive_transfer_owner.py,BOOK_08/08.COSMOLOGY-CLOSURE,D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001,,False
+D0-PHASON-TWOMODE-PRESSURE-ENERGY-WINDOW-001,B,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-PHASON-INITIAL-COVARIANCE-OWNER-001,"Lean owner of the nonempty 2x2 two-mode window M(eta)=[[lc,eta],[-eta,lr]] eta_EP=sqrt(10)/40 with rho_phi>0, det(I-zF)!=0, EOS p_phi/rho_phi defined on the window (scratch-verified nonempty; Lean not yet built)",True
+D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001,B,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-PHASON-TWOMODE-PRESSURE-ENERGY-WINDOW-001,Lean owner of the log-det pressure p_phi=d/dV[-log det(I-zF_phi)] finite on the resolvent window,True
+D0-PHASON-CONTINUUM-INTERPOLATION-OWNER-001,B,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001,continuum interpolation w_N -> w_D0(u) agreeing with the discrete archive windows,True
+D0-PHASON-PHYSICAL-BRANCH-MAP-001,C,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001,physical branch map Sigma_DE giving w_DE<0 with correct MAGNITUDE on the late-time window (the Galois SIGN is owned; the magnitude/operator-pair map is open),True
+D0-PHASON-WZ-EXPLICIT-FUNCTION-001,C,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-PHASON-CONTINUUM-INTERPOLATION-OWNER-001,explicit continuum w_DE(z) function on the certified redshift image,True
+D0-PHASON-WDE-Z-MAP-OWNER-001,C,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-PHASON-PHYSICAL-BRANCH-MAP-001,proven continuum interpolation + magnitude/sign normalization map to physical negative w_DE,True
+D0-CMB-IDS-SMOOTHING-OWNER-001,D,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CMB-FIEDLER-FREEZEOUT-OWNER-001,"canonical internally-FORCED smoothing functional/evaluation rule fixing the pair (k,u); scratch shows tilt differs at two (k,u) points so spectrum + an unforced u does NOT determine n_s",True
+D0-CMB-HEATKERNEL-SPECTRAL-TILT-OWNER-001,D,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CMB-IDS-SMOOTHING-OWNER-001,"the tilt VALUE n_eff-1 once (k,u) is forced (the IDS+P(k) construction is owned; the value needs the forced window)",True
+D0-CMB-PHASON-SPECTRUM-OWNER-001,D,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CMB-HEATKERNEL-SPECTRAL-TILT-OWNER-001,the n_s value from a forced smoothing,True
+D0-CMB-PHASON-TRANSFER-OWNER-001,E,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-PHASON-INITIAL-COVARIANCE-OWNER-001,concrete finite transfer operator T_R from Pi_phason + rank-2 scalar projector + heat-kernel covariance (not a free matrix); P_R defined,True
+D0-CMB-PHASON-COVARIANCE-TO-POWER-001,E,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CMB-PHASON-TRANSFER-OWNER-001,P_R(k;u)=Tr[T_R C_phi T_R^dag (k^2+L)^-1] owner once T_R is concrete,True
+D0-CMB-NS-INTERNAL-EXPRESSION-001,E,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CMB-PHASON-COVARIANCE-TO-POWER-001,"internal n_s^D0 value (needs the forced (k,u) of D0-CMB-IDS-SMOOTHING-OWNER-001)",True
+D0-CMB-PHASON-SPECTRUM-PASSPORT-001,G,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CMB-NS-INTERNAL-EXPRESSION-001,external CMB-comparison data manifest (the frozen internal n_s owner must exist first),True
+D0-DARK-RATIO-PASSPORT-001,G,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-DARK-RATIO-TRANSFER-OWNER-001,external cosmological-parameter data manifest mapping the internal 10/11 to an observable tuple (seven-field passport; the internal owner is CERT-CLOSED),True
+D0-COSMOLOGY-FROZEN-PASSPORTS-OWNER-001,G,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-DARK-RATIO-PASSPORT-001,composition over CMB + dark passports once their external-data manifests exist (CPL passport already PASSPORT-CLOSED),True
+D0-COSMOLOGY-REHEATING-TO-CMB-CLOSURE-001,umbrella,PROOF-TARGET,,,BOOK_08/08.COSMOLOGY-CLOSURE,D0-CMB-NS-INTERNAL-EXPRESSION-001,"full chain has open links: n_s value via forced smoothing, and physical w_DE magnitude; the chain is machine-owned through reheating -> phason covariance -> Fiedler -> dark transfer",True

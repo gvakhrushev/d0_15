@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 111
+- `CERT-CLOSED`: 117
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 126
+- `certificate`: 132
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
@@ -29,7 +29,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Domain counts
 
-- `cosmology`: 40
+- `cosmology`: 46
 - `empirical_passport`: 28
 - `external_background`: 1
 - `formal_core`: 211
@@ -42,6 +42,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `spectral_action`: 6
 
 ## Domain: cosmology
+
+### D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.DarkArchiveTransfer`
+- theorem: `archive_phason_em_dark_metric_active`
+- cert: `vp_dark_archive_transfer_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Cosmology campaign Layer F] Archive phason sector: zero EM coupling (dark), active metric/heat contribution. Lean D0.Cosmology.DarkArchiveTransfer.
 
 ### D0-BARYON-ASYMMETRY-DELTA0-001
 
@@ -68,6 +81,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 deep-stitch] c_D0 = ell0/tau0 = 1 (one edge per discrete Floquet step), propagation enabled at the connectivity threshold (Fiedler gap 20>0). HONEST: the VALUE 1 is a unit-fixing gauge (ell0=tau0=1), NOT a derivation; the SI speed of light is neither input nor output (rejected control). Lean D0.Cosmology.CLightconePercolationOwner.c_lightcone_percolation_owner; cert vp_c_lightcone_percolation_owner.py (controls reject SI-c input, arbitrary c!=1, disconnected-with-c=1).
+
+### D0-CMB-FIEDLER-FREEZEOUT-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.CMBFiedlerFreezeout`
+- theorem: `cmb_fiedler_freezeout_owner`
+- cert: `vp_cmb_fiedler_freezeout_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Cosmology campaign Layer D] Freeze-out scale = Fiedler value lambda_2=20 = min nonzero eigenvalue of K(9,11,13); k_*^2=20. Decidable off the frozen spectrum (reuses D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001). Lean D0.Cosmology.CMBFiedlerFreezeout.
 
 ### D0-CMB-NS-LAPLACIAN-IDS-OWNER-001
 
@@ -134,6 +160,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 four-physics P4] t=0 is a graph CONNECTIVITY THRESHOLD, not a singularity (BOOK_08 §08.49 THE 61.4): the complete tripartite K(9,11,13) (33 vertices) is (strongly) connected, while a sub-threshold edgeless stage is disconnected -- so the transition disconnected->connected is real. Lean D0.Cosmology.ReheatingPercolationOwner.connectivity_threshold_owner; cert vp_connectivity_threshold_owner.py (BFS connectivity; controls: connected-before-threshold rejected; arbitrary threshold rejected; vertex count!=33 rejected).
 
+### D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.DarkArchiveTransfer`
+- theorem: `cosmology_internal_transfer_composed`
+- cert: `vp_dark_archive_transfer_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Cosmology campaign Layer F] Internal cosmology transfer composes over 5 compatible stages (reheating->EOS->branch->redshift->CMB) with the rank-3/nullity-30 split, gamma=10 dark ratio, and EM-dark/metric-active archive. Lean D0.Cosmology.DarkArchiveTransfer. The n_s value + physical w_DE magnitude remain PROOF-TARGET (COSMOLOGY_CLOSURE_BLOCKERS.csv).
+
+### D0-DARK-RATIO-TRANSFER-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.DarkArchiveTransfer`
+- theorem: `dark_ratio_transfer_owner`
+- cert: `vp_dark_archive_transfer_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Cosmology campaign Layer F] rank-3/nullity-30 split (sum 33), gamma=10, visible share 1/11 + dark share 10/11 = 1, dark=gamma*visible. Decidable exact rationals. Lean D0.Cosmology.DarkArchiveTransfer. No survey-tuned ratio, no dark particle species.
+
 ### D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001
 
 - type: `certificate`
@@ -159,6 +211,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Narrow finite-window owner of the archive-capacity redshift map 1+z=phi^n and the integer-window ratio w_N=phi^(n-1)/(phi^n-1). Proves: (a) exact Q(phi)=Z[phi] values w_N(1)=phi, w_N(2)=1 (cert checks n=1..8 symbolically); (b) 1+z=phi^n strict monotone bijection (redshift_strictMono, phi>1); (c) energy phi^n-1>0 for n>=1 so w_N well-defined, n=0 is the excluded pole (energy_pos/energy_zero_at_n0), w_N strictly DECREASING (wN_strictAnti). DIRECTION fact owned: the limit phi^-1 is the n->inf (z->inf, EARLY) limit lying strictly BELOW w_N(1)=phi (wN_late_end_exceeds_early_limit); it is NOT the late-time z->0 dark-energy value (w_N diverges as z->0). Finite Z[phi]/real-golden-ratio core; no survey datum (DESI/CPL/H0) enters; the physical w_DE reading is deferred to D0-PHASON-WDE-Z-MAP-OWNER-001.
+
+### D0-PHASON-INITIAL-COVARIANCE-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.PhasonInitialCovariance`
+- theorem: `phason_initial_covariance_normalized`
+- cert: `vp_phason_initial_covariance_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Cosmology campaign Layer A] The phason covariance is normalized (nonzero-mode weights sum to 1) and rho_phi>0. Lean D0.Cosmology.PhasonInitialCovariance.
 
 ### D0-PHASON-PRESSURE-EOS-SCAFFOLD-001
 
@@ -237,6 +302,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 four-physics P4] The connectivity transition REPLACES the inflaton: the structure before.connected=false -> after.connected=true (33-vertex scene) is owned. Lean D0.Cosmology.ReheatingPercolationOwner.reheating_is_connectivity_onset; cert vp_reheating_percolation_owner.py (controls: inflaton field imported rejected; 'reheat temperature derived' rejected; before-already-connected rejected). OPERATOR-SCAFFOLD: the transition is owned; the reheating ENERGY budget + rate from the discrete rank evolution stay PROOF-TARGET (D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001).
+
+### D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.PhasonInitialCovariance`
+- theorem: `phason_initial_data_owner`
+- cert: `vp_phason_initial_covariance_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Cosmology campaign Layer A] Post-threshold phason initial state = normalized heat-kernel covariance on the NONZERO connected modes (zero mode projected out); energy rho_phi(u)=heat-weighted mean of {20,22,24,33} in [20,33], >0 for all u>0, sourced by the reheating heat trace, no inflaton amplitude. Lean D0.Cosmology.PhasonInitialCovariance (div_pos/le_div_iff0/div_le_iff0). Forced unique window u_* NOT supplied -> PROOF-TARGET (COSMOLOGY_CLOSURE_BLOCKERS.csv).
 
 ### D0-PHASON-WZ-CPL-PASSPORT-001
 

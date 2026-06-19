@@ -1,0 +1,34 @@
+{
+  "iteration": 22,
+  "description": "Frozen internal objects imported (not rebuilt) by the cosmology closure campaign. Each is an existing CERT-CLOSED / PASSPORT-CLOSED owner.",
+  "scene": "K(9,11,13)",
+  "laplacian_spectrum": { "0": 1, "20": 12, "22": 10, "24": 8, "33": 2 },
+  "lambda_2_fiedler": 20,
+  "lambda_max": 33,
+  "total_multiplicity": 33,
+  "nonzero_spectral_weight_sum": 718,
+  "frozen_owners": {
+    "heat_trace_energy": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+    "connectivity_gap": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+    "archive_capacity_redshift": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+    "wde_negative_sign": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+    "pressure_eos_scaffold": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+    "ids_powerproxy": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+    "phi_ladder_semigroup": "D0-PHI-LADDER-SEMIGROUP-001",
+    "cpl_passport": "D0-PHASON-WZ-CPL-PASSPORT-001"
+  },
+  "closed_this_campaign": [
+    "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+    "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+    "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+    "D0-DARK-RATIO-TRANSFER-OWNER-001",
+    "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+    "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001"
+  ],
+  "global_closure_claimed": false,
+  "load_bearing_open_gaps": [
+    "canonical forced (k,u) smoothing rule -> n_s value (D0-CMB-IDS-SMOOTHING-OWNER-001)",
+    "physical w_DE(z) magnitude map (D0-PHASON-WDE-Z-MAP-OWNER-001)"
+  ],
+  "no_reverse_selection": "No external survey datum (Planck/DESI/H0) may retune any internal window u_*, k_*, Pi_phason, or smoothing operator."
+}
