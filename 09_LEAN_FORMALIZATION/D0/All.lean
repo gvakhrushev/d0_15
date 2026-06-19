@@ -106,6 +106,7 @@ import D0.Cosmology.ArchiveConvexity
 import D0.Cosmology.ArchiveHomogeneousState
 import D0.Cosmology.ArchiveVolumeBounds
 import D0.Cosmology.CLightconePercolationOwner
+import D0.Cosmology.CMBLaplacianIDS
 import D0.Cosmology.ConcreteEntropyArchiveFlow
 import D0.Cosmology.CoreShapePassportBoundary
 import D0.Cosmology.EntropyArchiveFlow
@@ -115,6 +116,7 @@ import D0.Cosmology.FiniteFeedbackEquationOfState
 import D0.Cosmology.FloorMassProjection
 import D0.Cosmology.InstabilitySaturation
 import D0.Cosmology.LinearizedEntropyFlow
+import D0.Cosmology.PhasonArchiveCapacityRedshift
 import D0.Cosmology.PhasonFlipEntropy
 import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
@@ -138,6 +140,7 @@ import D0.Dynamics.LatticeHydroNoBlowup
 import D0.Dynamics.MasterEvolutionTheorem
 import D0.Dynamics.PisotContraction
 import D0.Dynamics.ToralAutomorphism
+import D0.Dynamics.ToralShiftEquivalence
 import D0.Dynamics.TraceHeatCapacityGravity
 import D0.Dynamics.TraceHeatLucasCore
 import D0.Edge.RamificationFromUeEffCompanion
@@ -271,6 +274,7 @@ import D0.Matter.Book04Selectors
 import D0.Matter.CKMBasisMismatch
 import D0.Matter.CKMBasisOrigin
 import D0.Matter.CKMClass5ParityExclusion
+import D0.Matter.CKMClass5SelectorOwner
 import D0.Matter.CKMExactMatrixCertificate
 import D0.Matter.CKMExactTransfer
 import D0.Matter.CKMNontrivialFlavourAlgebra
@@ -286,13 +290,16 @@ import D0.Matter.GenerationAnomalyPreservation
 import D0.Matter.GenerationMultiplicity
 import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
+import D0.Matter.HiggsLogdetStationary
 import D0.Matter.HiggsScalarProjectorConstructive
+import D0.Matter.HyperchargeAnomalyVariety
 import D0.Matter.HyperchargeFlowLattice
 import D0.Matter.HyperchargeGraphFlowOwner
 import D0.Matter.HyperchargeMinimalDenominator
 import D0.Matter.KTheoryGapLabeling
 import D0.Matter.LeptonGreenPuiseuxOwner
 import D0.Matter.LeptonPuiseuxUniquenessObstruction
+import D0.Matter.LeptonRiemannHurwitzBranchIndex
 import D0.Matter.LocalTraceSource
 import D0.Matter.MesonDefectTransferAlgebra
 import D0.Matter.MesonDefectTransferOrigin
@@ -348,6 +355,7 @@ import D0.Spectral.DeltaAlphaExact
 import D0.Spectral.DeltaAlphaMoment
 import D0.Spectral.DeltaAlphaNormalizationNoGo
 import D0.Spectral.DeltaAlphaResidueBlocked
+import D0.Spectral.DixmierFeshbachFiniteHeatTrace
 import D0.Spectral.SeamHolonomy
 import D0.Spectral.ZetaResidueAlpha
 import D0.Spectral.ZoneMatrixSpectrum

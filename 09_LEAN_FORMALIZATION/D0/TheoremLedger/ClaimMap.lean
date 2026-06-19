@@ -512,7 +512,23 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001", moduleName := "D0.Spectral.DeltaAlphaNormalizationNoGo",
       theoremName := "alpha_residue_delta_normalization_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-ASSUMPTION-LEDGER-GREEN-001", moduleName := "D0.Bridge.Assumptions.LindemannLnPhi",
-      theoremName := "LindemannLnPhiAssumption", status := ClaimStatus.leanCoreProved }
+      theoremName := "LindemannLnPhiAssumption", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001", moduleName := "D0.Spectral.DixmierFeshbachFiniteHeatTrace",
+      theoremName := "dixmier_feshbach_finite_heattrace_no_pole", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001", moduleName := "D0.Matter.LeptonRiemannHurwitzBranchIndex",
+      theoremName := "lepton_riemann_hurwitz_branch_index", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001", moduleName := "D0.Cosmology.PhasonArchiveCapacityRedshift",
+      theoremName := "phason_archive_capacity_redshift", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001", moduleName := "D0.Dynamics.ToralShiftEquivalence",
+      theoremName := "toralShiftEquivalenceInvariants", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001", moduleName := "D0.Matter.HyperchargeAnomalyVariety",
+      theoremName := "anomaly_free_contains_two_independent", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001", moduleName := "D0.Cosmology.CMBLaplacianIDS",
+      theoremName := "cmb_ns_laplacian_ids_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CKM-CLASS5-SELECTOR-OWNER-001", moduleName := "D0.Matter.CKMClass5SelectorOwner",
+      theoremName := "class5_selector_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001", moduleName := "D0.Matter.HiggsLogdetStationary",
+      theoremName := "higgs_logdet_scalar_sector_stationary", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

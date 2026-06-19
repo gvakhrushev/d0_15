@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 351,
+    "claims": 361,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 90,
-      "NO-GO": 14,
+      "CERT-CLOSED": 96,
+      "NO-GO": 16,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 34,
+      "PROOF-TARGET": 36,
       "PASSPORT-CLOSED": 5
     },
     "lean_status": {
-      "LEAN_PROVED": 212,
+      "LEAN_PROVED": 220,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 81,
       "DEPRECATED": 2,
-      "OPEN": 35
+      "OPEN": 37
     },
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 22,
-      "certificate": 101,
+      "no-go": 24,
+      "certificate": 107,
       "deprecated": 3,
-      "frontier": 34
+      "frontier": 36
     },
     "domain": {
-      "formal_core": 193,
+      "formal_core": 197,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 28,
-      "spectral_action": 5,
-      "empirical_passport": 27,
-      "cosmology": 34,
+      "spectral_action": 6,
+      "empirical_passport": 28,
+      "cosmology": 36,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 34
+      "frontier": 36
     }
   },
   "nodes": [
@@ -11757,6 +11757,356 @@
       "label": "vp_assumption_ledger_green.py",
       "path": "05_CERTS/vp_assumption_ledger_green.py",
       "exists": true
+    },
+    {
+      "id": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+      "kind": "claim",
+      "claim_id": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+      "type": "no-go",
+      "domain": "spectral_action",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.13",
+      "lean_module": "D0.Spectral.DixmierFeshbachFiniteHeatTrace",
+      "lean_theorem": "dixmier_feshbach_finite_heattrace_no_pole",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dixmier_feshbach_finite_heattrace.py",
+      "python_cert": [
+        "vp_dixmier_feshbach_finite_heattrace.py"
+      ],
+      "status": "NO-GO",
+      "notes": "Finite NO-GO (anti-numerology guard). A dim-30 FINITE Feshbach archive spectrum has heat trace Theta(s)=sum_i exp(-s lambda_i) entire => Nat-indexed Maclaurin series with NO negative-index (1/s) coefficient: principalCoeff(-1)=0 (no pole), Theta(0)=a_0=card=30 (the dimension, and != mu_2=12288/5), finite geometric tower sum_{k<30} 1^k = 30 (telescope (1-x)*sum=1-x^30 via mul_neg_geom_sum), and the 1/s residue c_{-1}=1 is an INFINITE-tower object (finite block's residue 0 differs). CLOSED here = finite/decidable no-pole + dimension value. PROVES the negative only; does NOT close the Dixmier/Wodzicki residue on the infinite object nor residue->Delta_alpha normalization, which stay external owner edge D0-DIXMIER-RESIDUE-OWNER-001 (ASSUMP-DIXMIER-TRACE). Cert: 4 reachable controls FAIL_FINITE_TRACE_HAS_NO_POLE, FAIL_CONSTANT_TERM_IS_DIM, FAIL_DIXMIER_CLOSED_BY_FINITE_HEATTRACE_REJECTED, FAIL_INFINITE_SPECTRUM_REQUIRED (all verified to fire). No measured/CODATA alpha enters.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/DixmierFeshbachFiniteHeatTrace.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.DixmierFeshbachFiniteHeatTrace",
+      "kind": "lean_module",
+      "label": "D0.Spectral.DixmierFeshbachFiniteHeatTrace",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/DixmierFeshbachFiniteHeatTrace.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_dixmier_feshbach_finite_heattrace.py",
+      "kind": "python_cert",
+      "label": "vp_dixmier_feshbach_finite_heattrace.py",
+      "path": "05_CERTS/vp_dixmier_feshbach_finite_heattrace.py",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.8",
+      "lean_module": "D0.Matter.LeptonRiemannHurwitzBranchIndex",
+      "lean_theorem": "lepton_riemann_hurwitz_branch_index",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_lepton_riemann_hurwitz_branch_index.py",
+      "python_cert": [
+        "vp_lepton_riemann_hurwitz_branch_index.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Narrow arithmetic + identity, NO uniqueness. Proves: cyclic relations C4^4=lam*I, R3^3=lam*I (reused from D0-EDGE-RAMIFICATION-001); ramification index=n, Puiseux exponent=1/n for n=3,4 + general reciprocal; Riemann-Hurwitz genus-0 consistency 2-2g=n*2-2(n-1)=2 => g=0 for EVERY n (omega/ring over Z). Explicitly does NOT assert R-H forces the pair (4,3) unique (genus 0 holds for n=2,3,4,5 alike) and does NOT assert branch index determines the operator (that shortcut is the existing NO-GO D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001). Cert controls: FAIL_RH_FORCES_PAIR_43_REJECTED, FAIL_PDG_MASS_INPUT_REJECTED, FAIL_BRANCH_INDEX_DETERMINES_OPERATOR_REJECTED. Mass-free; finite Green resolvent + branch-index uniqueness stay PROOF-TARGET under D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonRiemannHurwitzBranchIndex.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.LeptonRiemannHurwitzBranchIndex",
+      "kind": "lean_module",
+      "label": "D0.Matter.LeptonRiemannHurwitzBranchIndex",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonRiemannHurwitzBranchIndex.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_lepton_riemann_hurwitz_branch_index.py",
+      "kind": "python_cert",
+      "label": "vp_lepton_riemann_hurwitz_branch_index.py",
+      "path": "05_CERTS/vp_lepton_riemann_hurwitz_branch_index.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+      "kind": "claim",
+      "claim_id": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51",
+      "lean_module": "D0.Cosmology.PhasonArchiveCapacityRedshift",
+      "lean_theorem": "phason_archive_capacity_redshift",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phason_archive_capacity_redshift.py",
+      "python_cert": [
+        "vp_phason_archive_capacity_redshift.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Narrow finite-window owner of the archive-capacity redshift map 1+z=phi^n and the integer-window ratio w_N=phi^(n-1)/(phi^n-1). Proves: (a) exact Q(phi)=Z[phi] values w_N(1)=phi, w_N(2)=1 (cert checks n=1..8 symbolically); (b) 1+z=phi^n strict monotone bijection (redshift_strictMono, phi>1); (c) energy phi^n-1>0 for n>=1 so w_N well-defined, n=0 is the excluded pole (energy_pos/energy_zero_at_n0), w_N strictly DECREASING (wN_strictAnti). DIRECTION fact owned: the limit phi^-1 is the n->inf (z->inf, EARLY) limit lying strictly BELOW w_N(1)=phi (wN_late_end_exceeds_early_limit); it is NOT the late-time z->0 dark-energy value (w_N diverges as z->0). Finite Z[phi]/real-golden-ratio core; no survey datum (DESI/CPL/H0) enters; the physical w_DE reading is deferred to D0-PHASON-WDE-Z-MAP-OWNER-001.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonArchiveCapacityRedshift.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.PhasonArchiveCapacityRedshift",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.PhasonArchiveCapacityRedshift",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonArchiveCapacityRedshift.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_phason_archive_capacity_redshift.py",
+      "kind": "python_cert",
+      "label": "vp_phason_archive_capacity_redshift.py",
+      "path": "05_CERTS/vp_phason_archive_capacity_redshift.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_08",
+      "section": "08.51",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-TARGET",
+      "notes": "Owner of the physical dark-energy z-map reading of the archive window ratio. MISSING ARTIFACTS (neither exists): (1) a proven continuum interpolation w_N -> w_D0(u) from the finite integer-window ratio w_N=phi^(n-1)/(phi^n-1) (CERT-CLOSED at D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001) to a continuum function on the redshift coordinate; AND (2) the magnitude/sign normalization map carrying that internal POSITIVE ratio (-> +phi^-1 at the z->inf early end) onto the physical NEGATIVE w_DE on the LATE-TIME (z->0) window. The direction is the binding constraint: phi^-1 is the early-time (z->inf) limit, not the z->0 value, so the late-time normalization is an additional unproven step. Magnitude sub-piece overlaps D0-PHASON-WZ-EXPLICIT-FUNCTION-001 (also PROOF-TARGET); redshift/CPL reading is passport-only (D0-PHASON-WZ-CPL-PASSPORT-001, PASSPORT-CLOSED).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.30a",
+      "lean_module": "D0.Dynamics.ToralShiftEquivalence",
+      "lean_theorem": "toralShiftEquivalenceInvariants",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_toral_shift_equivalence.py",
+      "python_cert": [
+        "vp_toral_shift_equivalence.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Narrow scope: GL(2,Z) similarity U*(-T)=M*U with det U=+1 (U=[[0,1],[-1,0]], N=-T, M=[[1,1],[1,0]]) + agreeing shift-equivalence INVARIANTS only: charpoly(T)=x^2+x-1, charpoly(M)=charpoly(N)=x^2-x-1 (Galois sign-flip r<->-r), and equal Bowen-Franks group Z^2/(I-A)Z^2 (SNF(I-M)=SNF(I-N)=diag(1,1) via explicit unimodular P*(I-A)*Q=I). SE invariants are NECESSARY not SUFFICIENT; topological conjugacy / full Williams strong-shift-equivalence stay EXTERNAL (ASSUMP-ADLER-WEISS). Does NOT close D0-TORAL-TIME-MARKOV-CONJUGACY-001 or D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001 (both remain PROOF-TARGET).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Dynamics/ToralShiftEquivalence.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Dynamics.ToralShiftEquivalence",
+      "kind": "lean_module",
+      "label": "D0.Dynamics.ToralShiftEquivalence",
+      "path": "09_LEAN_FORMALIZATION/D0/Dynamics/ToralShiftEquivalence.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_toral_shift_equivalence.py",
+      "kind": "python_cert",
+      "label": "vp_toral_shift_equivalence.py",
+      "path": "05_CERTS/vp_toral_shift_equivalence.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+      "kind": "claim",
+      "claim_id": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "04.11",
+      "lean_module": "D0.Matter.HyperchargeAnomalyVariety",
+      "lean_theorem": "anomaly_free_contains_two_independent",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_hypercharge_anomaly_variety.py",
+      "python_cert": [
+        "vp_hypercharge_anomaly_variety.py"
+      ],
+      "status": "NO-GO",
+      "notes": "NO-GO: anomaly-freedom + the proposed {grav,su2,su3 linear, cubic} constraints leave a >=2-dim variety span{Y, B-L}, so the SM hypercharge row is NOT forced. Proved over Q: linear anomaly matrix A=[[6,3,3,2,1,1],[3,0,0,1,0,0],[2,1,1,0,0,0]] has rank 3 (3x3 minor cols{0,1,4} det=3!=0) => 6-3=3-dim solution space (anomaly_rank_eq_three, anomaly_solution_dim_eq_three); Y=(1/6,-2/3,1/3,-1/2,1,0) and B-L=(1/3,-1/3,-1/3,-1,1,1) BOTH satisfy grav=su2=su3=cubic=0 (Y_*_free, bMinusL_su2_free/su3_free + reused bMinusL_grav_free/cubic_free) and are Q-independent (Y_BminusL_independent, reuses Y_and_BminusL_independent). Removing B-L requires imposing Y_nuRc=0 (SM convention, question-begging). Denominator 6 owned separately by D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001; flow->Weyl map Phi stays PROOF-TARGET under D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001. Cert: STRUCTURE_FIXED_BEFORE_NUMBER + exact-Q rank/det/anomaly checks + 3 reachable controls FAIL_ROW_UNIQUE_FROM_ANOMALY_REJECTED / FAIL_NU_R_NEUTRAL_QUESTION_BEGGING / FAIL_SM_TABLE_INPUT_REJECTED; exit 0.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeAnomalyVariety.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.HyperchargeAnomalyVariety",
+      "kind": "lean_module",
+      "label": "D0.Matter.HyperchargeAnomalyVariety",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeAnomalyVariety.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_hypercharge_anomaly_variety.py",
+      "kind": "python_cert",
+      "label": "vp_hypercharge_anomaly_variety.py",
+      "path": "05_CERTS/vp_hypercharge_anomaly_variety.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.v15",
+      "lean_module": "D0.Cosmology.CMBLaplacianIDS",
+      "lean_theorem": "cmb_ns_laplacian_ids_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cmb_ns_laplacian_ids.py",
+      "python_cert": [
+        "vp_cmb_ns_laplacian_ids.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 deep-stitch F8] CMB n_s from the K(9,11,13) Laplacian spectrum {0:1,20:12,22:10,24:8,33:2} (total mult 33, lambda_2=20). PROVED: (a) IDS staircase N(lambda)=(cum mult)/33 equals exact rationals [1/33,13/33,23/33,31/33,1] at jump points 0<20<22<24<33 (strictly increasing, reaches 1); (b) power proxy P(k)=sum mult_i/(k^2+lambda_i) exact: P(1)=163196/68425, P(2)=19857/13468; (c) NO-GO -- the discrete tilt proxy n_s-1=(k/P)dP/dk differs at two eval points (k=1:-29795504237/33500058900 != k=2:-119488232/200575557), so the bare spectrum ALONE does not fix n_s. NO n_s value asserted. Lean D0.Cosmology.CMBLaplacianIDS.cmb_ns_laplacian_ids_owner (decide/interval_cases for spectrum, rw+norm_num for IDS rationals, simp+norm_num for P(k)/tilt exact, norm_num for the differ NO-GO); cert vp_cmb_ns_laplacian_ids.py (controls FAIL_NS_DETERMINED_BY_SPECTRUM_ALONE_REJECTED, FAIL_PLANCK_NS_INPUT_REJECTED, FAIL_INFLATON_INSERTED_REJECTED, FAIL_TAMPERED_IDS_REJECTED). Reuses the heat-trace-jump finite object (D0-REHEATING-HEAT-TRACE-JUMP-001). A canonical (k,u) smoothing rule fixing a single n_s stays PROOF-TARGET (D0-CMB-IDS-SMOOTHING-OWNER-001); spectral map n_s=f({lambda_i}) stays PROOF-TARGET (D0-CMB-PHASON-SPECTRUM-OWNER-001).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/CMBLaplacianIDS.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.CMBLaplacianIDS",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.CMBLaplacianIDS",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/CMBLaplacianIDS.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_cmb_ns_laplacian_ids.py",
+      "kind": "python_cert",
+      "label": "vp_cmb_ns_laplacian_ids.py",
+      "path": "05_CERTS/vp_cmb_ns_laplacian_ids.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_08",
+      "section": "08.v15",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cmb_ns_laplacian_ids.py",
+      "python_cert": [
+        "vp_cmb_ns_laplacian_ids.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Iter22 deep-stitch F8] MISSING ARTIFACT (named, exact): a canonical internally-forced smoothing functional / evaluation rule that fixes the pair (k,u) -- the proxy evaluation scale k and any smoothing window u -- so that the discrete tilt proxy n_s-1=(k/P)dP/dk collapses to a SINGLE determined value. ABSENT: the bare K(9,11,13) Laplacian spectrum admits different n_s at different evaluation points (D0-CMB-NS-LAPLACIAN-IDS-OWNER-001 exhibits two: k=1 -> -29795504237/33500058900, k=2 -> -119488232/200575557). Until such an internally-forced rule is constructed, no single n_s is determined. No Planck n_s, no inflaton, no slow-roll may be inserted (rejected by cert controls in vp_cmb_ns_laplacian_ids.py). Distinct from the spectral-map gap D0-CMB-PHASON-SPECTRUM-OWNER-001 (which is the function n_s=f({lambda_i}) itself); this owner is the evaluation/smoothing-rule gap that would make that map single-valued. PROOF-TARGET.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.10",
+      "lean_module": "D0.Matter.CKMClass5SelectorOwner",
+      "lean_theorem": "class5_selector_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ckm_class5_selector_owner.py",
+      "python_cert": [
+        "vp_ckm_class5_selector_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Front F2] OWNER witness for the class-5 pointer collision (NOT a re-close of the exclusion). The class-5 EXCLUSION itself stays CORE in D0-CLASS5-ALIASING-001 / D0.Claims.Class5Aliasing. NEW scope: a finite FiniteSelector wired to the proven M1 selector spine (D0.Foundation.M1Predicate selector_M1Forced / m1_alternative_needs_catalogue). Part A (orbit-length separation): orbitLength d = d, so the M1-admissible classes {1,5,20} have orbit lengths {1,5,20} (pairwise distinct, orbit_length_separates); class 5 is the UNIQUE pointer-collider orbitLength(5)=D_Sigma=5 while classes 1 and 20 do NOT collide (only_class5_collides) -- so class 20 is NOT excluded. register_deficit: diagonal resolves D_Sigma=5 of D_Sigma^2=25, leaving 20 off-diagonal configs. Part B (the witness): registerSelector over RegisterConfig {diagonal,hiddenPartial,hiddenFull} with register-cost {0,1,20}; diagonal_strictly_selected (StrictSelected, the unique zero-cost strict minimum) -> diagonal_M1Forced (M1Forced via selector_M1Forced) -> hidden_register_needs_catalogue (RequiresExternalCatalogue for any hidden-register alternative via m1_alternative_needs_catalogue) -- a real term-mode M1Forced witness, NOT a not-Forced shell. Cert vp_ckm_class5_selector_owner.py (CERT-CLOSED, exit 0): verifies |(Z/44)*|=phi(44)=20, characteristic orders {1,4,5,20}=20=4*5, orbit-length separation 1/5/20, class 5 unique collider, class 20 NOT excluded, register deficit 25->5, register selector strict minimum; STRUCTURE_FIXED_BEFORE_NUMBER first; negative controls FAIL_PARITY_ONLY_SEPARATES_REJECTED (parity maps orbit-1 and orbit-5 both to odd -> same fibre, insufficient), FAIL_CLASS20_EXCLUDED_REJECTED, FAIL_CKM_DATA_INPUT_REJECTED, FAIL_TIED_SELECTOR_NO_STRICT_MINIMUM_REJECTED -- all four confirmed to fire under tamper. HONEST: the full M1 hidden-memory contradiction (grammar 01.11C holographic pointer machine) stays the upstream frontier obligation already flagged by D0-CLASS5-ALIASING-001; this owner only certifies the finite selector witness. uses_bridge_assumptions=False; assumption_ids empty.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/CKMClass5SelectorOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.CKMClass5SelectorOwner",
+      "kind": "lean_module",
+      "label": "D0.Matter.CKMClass5SelectorOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/CKMClass5SelectorOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_ckm_class5_selector_owner.py",
+      "kind": "python_cert",
+      "label": "vp_ckm_class5_selector_owner.py",
+      "path": "05_CERTS/vp_ckm_class5_selector_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
+      "kind": "claim",
+      "claim_id": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.16",
+      "lean_module": "D0.Matter.HiggsLogdetStationary",
+      "lean_theorem": "higgs_logdet_scalar_sector_stationary",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_higgs_logdet_stationary.py",
+      "python_cert": [
+        "vp_higgs_logdet_stationary.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "Scalar-sector stationary condition for S_fb(theta)=-2 log(1 - z f(theta)): closed-form first variation dS_fb/dtheta = 2 z f'(theta)/(1 - z f) (chain-rule coefficient relation D*S' = 2 z f' proved over Q), and on the resolvent domain (D=1-z f != 0) with nonzero coupling (z != 0) stationarity dS_fb/dtheta = 0 <=> f'(theta)=0. Concrete Lorentzian profile f=theta/(1+theta^2): f'(1)=0 (stationary), f'(0)=1!=0 (non-stationary). Cert verifies the Jacobi identity d/dt(-log det(I-zF))=Tr[(I-zF)^-1 z dF/dt] for a concrete 2x2 F (sympy). Quartic V_eff=lambda(theta^2-v^2)^2 is NOT claimed (rejected: nonzero theta^6 term, coeff z^6/3); SSB negative-quadratic sign NOT forced (quadratic coeff = z^2 >= 0); 246 GeV NOT a core input. Negative controls FAIL_ZERO_COUPLING_DEGENERATE / FAIL_QUARTIC_FORM_ASSERTED / FAIL_SSB_SIGN_FORCED / FAIL_246GEV_INPUT all fire.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HiggsLogdetStationary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.HiggsLogdetStationary",
+      "kind": "lean_module",
+      "label": "D0.Matter.HiggsLogdetStationary",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/HiggsLogdetStationary.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_higgs_logdet_stationary.py",
+      "kind": "python_cert",
+      "label": "vp_higgs_logdet_stationary.py",
+      "path": "05_CERTS/vp_higgs_logdet_stationary.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -16708,6 +17058,151 @@
     {
       "source": "D0-ASSUMPTION-LEDGER-GREEN-001",
       "target": "cert:vp_assumption_ledger_green.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+      "target": "domain:spectral_action",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+      "target": "module:D0.Spectral.DixmierFeshbachFiniteHeatTrace",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+      "target": "cert:vp_dixmier_feshbach_finite_heattrace.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+      "target": "module:D0.Matter.LeptonRiemannHurwitzBranchIndex",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+      "target": "cert:vp_lepton_riemann_hurwitz_branch_index.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+      "target": "module:D0.Cosmology.PhasonArchiveCapacityRedshift",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+      "target": "cert:vp_phason_archive_capacity_redshift.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+      "target": "module:D0.Dynamics.ToralShiftEquivalence",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+      "target": "cert:vp_toral_shift_equivalence.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+      "target": "module:D0.Matter.HyperchargeAnomalyVariety",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+      "target": "cert:vp_hypercharge_anomaly_variety.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+      "target": "module:D0.Cosmology.CMBLaplacianIDS",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+      "target": "cert:vp_cmb_ns_laplacian_ids.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+      "target": "cert:vp_cmb_ns_laplacian_ids.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+      "target": "module:D0.Matter.CKMClass5SelectorOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+      "target": "cert:vp_ckm_class5_selector_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
+      "target": "module:D0.Matter.HiggsLogdetStationary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
+      "target": "cert:vp_higgs_logdet_stationary.py",
       "kind": "certified_by"
     }
   ]
