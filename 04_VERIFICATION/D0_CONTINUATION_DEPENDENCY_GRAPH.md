@@ -1,12 +1,12 @@
 # D0 Continuation Finish Campaign — Dependency Graph (Iteration 22)
 
-Consolidation of the inherited closure campaigns (eight-front, static-to-dynamics, Nature bridge, deep-stitch). State discovery found the **closable items already closed** by prior committed campaigns; duplicates and mathematically-false-to-close items were NOT re-minted (recorded in `D0_CONTINUATION_STATE_TABLE.csv`). **Global closure is NOT asserted**: 19 named global blockers remain, each with an EXACT missing artifact in `FINAL_CONTINUATION_BLOCKERS.csv`.
+Consolidation of the inherited closure campaigns (eight-front, static-to-dynamics, Nature bridge, deep-stitch). State discovery found the **closable items already closed** by prior committed campaigns; duplicates and mathematically-false-to-close items were NOT re-minted (recorded in `D0_CONTINUATION_STATE_TABLE.csv`). **Global closure is NOT asserted**: 18 named global blockers remain, each with an EXACT missing artifact in `FINAL_CONTINUATION_BLOCKERS.csv`.
 
 ## Tally
 
-- Closed (CERT-CLOSED / NO-GO / CORE / PASSPORT-CLOSED / BRIDGE): 30
-- PROOF-TARGET (exact gap named): 20
-- Global blockers: 19
+- Closed (CERT-CLOSED / NO-GO / CORE / PASSPORT-CLOSED / BRIDGE): 34
+- PROOF-TARGET (exact gap named): 19
+- Global blockers: 18
 - Dropped as duplicate / mathematically-false-to-close (NOT minted): 10 (see state table)
 
 ## Not re-minted (would be faking)
@@ -32,7 +32,6 @@ Consolidation of the inherited closure campaigns (eight-front, static-to-dynamic
 - **D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001** (C7-hypercharge): missing flow->Weyl ledger map Phi PLUS an internally-derived Y_nuRc=0 and up/down branch selector; anomaly+constraints leave a 2-dim span{Y,B-L} variety (D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001 NO-GO)
 - **D0-CMB-PHASON-SPECTRUM-OWNER-001** (C8-cmb): missing canonical internally-forced IDS smoothing functional fixing (k,u) so n_s = f({lambda_i}) is a single determined value
 - **D0-CMB-IDS-SMOOTHING-OWNER-001** (C8-cmb): missing canonical internally-forced smoothing/evaluation rule fixing the pair (k,u); spectrum alone does NOT determine n_s (NO-GO closed in D0-CMB-NS-LAPLACIAN-IDS-OWNER-001)
-- **D0-REHEATING-ENERGY-BUDGET-OWNER-001** (C8-cmb): missing finite energy-injection functional E_reheat(u)=-d/du log H(u) owner from the heat-trace jump (D0-REHEATING-HEAT-TRACE-JUMP-001 CERT-CLOSED is the spectral input)
 - **D0-SMOOTH-MANIFOLD-INTERNAL-RECONSTRUCTION-001** (D-geometry): missing finite-atlas -> smooth-shadow reconstruction (local-dim stability + discrete Poincare + heat-kernel Weyl); external Rieffel/GHP owner stands (ASSUMP-RIEFFEL-GHP)
 - **D0-CONNES-GHP-SMOOTH-ATLAS-OWNER-001** (D-geometry): missing GHP-Cauchy convergence proof for the D0 refinement sequence (external Rieffel quantum-metric / GHP limit)
 - **D0-GW-HORIZON-HUM-PASSPORT-001** (D-passport): missing external-data manifest (GWOSC event list + template-subtraction + pre-registered residual statistic); frozen internal object I_f=log phi exists

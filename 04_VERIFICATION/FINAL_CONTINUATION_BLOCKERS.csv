@@ -29,6 +29,10 @@ D0-HYPERCHARGE-FLOW-LATTICE-001,C7-hypercharge,CERT-CLOSED,D0.Matter.Hypercharge
 D0-CMB-NS-LAPLACIAN-IDS-OWNER-001,C8-cmb,CERT-CLOSED,D0.Cosmology.CMBLaplacianIDS,vp_cmb_ns_laplacian_ids.py,BOOK_08/08.v15,,,False
 D0-REHEATING-HEAT-TRACE-JUMP-001,C8-cmb,CERT-CLOSED,D0.Cosmology.ReheatingHeatTraceJump,vp_reheating_heat_trace_jump.py,BOOK_08/08.v15,,,False
 D0-NEUTRINO-MASS-PASSPORT-001,D-passport,PASSPORT-CLOSED,,vp_neutrino_mass_passport.py,BOOK_04/04.8,,,False
+D0-REHEATING-ENERGY-BUDGET-OWNER-001,C8-cmb,CERT-CLOSED,D0.Cosmology.ReheatingEnergyBudgetOwner,vp_reheating_energy_budget_owner.py,BOOK_08/08.v15,,,False
+D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001,C8-cmb,CERT-CLOSED,D0.Cosmology.HeatTraceEnergyFunctional,vp_heat_trace_energy_functional.py,BOOK_08/08.v15,,,False
+D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001,misc,CERT-CLOSED,D0.Cosmology.InflationlessThresholdEnergyOwner,vp_inflationless_threshold_energy_owner.py,BOOK_08/08.v15,,,False
+D0-REHEATING-NO-INFLATON-NOGO-001,C8-cmb,NO-GO,D0.Cosmology.InflationlessThresholdEnergyOwner,vp_inflationless_threshold_energy_owner.py,BOOK_08/08.v15,,,False
 D0-ALPHA-FESHBACH-DIXMIER-OWNER-001,C1-alpha,PROOF-TARGET,,vp_alpha_feshbach_dixmier_owner.py,BOOK_02/02.13,,missing profinite/tower Dixmier pairing: residue->Delta_alpha normalization over the infinite 2^11 tower (external Dixmier/Wodzicki); finite heat trace cannot supply the 1/s pole,True
 D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001,C3-lepton,PROOF-TARGET,,vp_lepton_indirect_coefficient_owner.py,BOOK_04/04.8,,"missing finite Green resolvent G_shell over the shell torus with provably-(0,1/4,1/3) branch indices PLUS operator uniqueness (branch index alone does not determine the operator)",True
 D0-PHASON-WZ-EXPLICIT-FUNCTION-001,C4-phason,PROOF-TARGET,,vp_phason_wz_explicit_function.py,BOOK_08/08.51,,missing continuum interpolation w_N -> w_D0(u) of the integer-window ratio on a declared late-time domain,True
@@ -43,7 +47,6 @@ D0-CKM-CLASS5-PARITY-EXCLUSION-001,C2-ckm,PROOF-TARGET,D0.Matter.CKMClass5Parity
 D0-DELTA-ALPHA-RESIDUE-PAIRING-OWNER-001,C1-alpha,PROOF-TARGET,,,,,missing profinite/tower Dixmier pairing owner (same gap as D0-ALPHA-FESHBACH-DIXMIER-OWNER-001); the finite Feshbach residue recovers alpha_alg but not the Delta_alpha normalization,True
 D0-DELTA-ALPHA-HEATTRACE-COEFFICIENT-OWNER-001,C1-alpha,PROOF-TARGET,,,,,"no positive owner from a finite trace (c_-1=0, c_0=dim=30); missing a regularized profinite trace whose s^-1 coefficient is 2^11*pi0*phi^-2",True
 D0-LUCAS-MARKOV-PARTITION-OWNER-001,C5-toral,PROOF-TARGET,,,,,"missing internal Lucas/Voronoi Markov-partition existence proof; the GL(2,Z) similarity + SE invariants are CERT-CLOSED (D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001)",True
-D0-REHEATING-ENERGY-BUDGET-OWNER-001,C8-cmb,PROOF-TARGET,,,,,missing finite energy-injection functional E_reheat(u)=-d/du log H(u) owner from the heat-trace jump (D0-REHEATING-HEAT-TRACE-JUMP-001 CERT-CLOSED is the spectral input),True
 D0-SMOOTH-MANIFOLD-INTERNAL-RECONSTRUCTION-001,D-geometry,PROOF-TARGET,,,,,missing finite-atlas -> smooth-shadow reconstruction (local-dim stability + discrete Poincare + heat-kernel Weyl); external Rieffel/GHP owner stands (ASSUMP-RIEFFEL-GHP),True
 D0-CONNES-GHP-SMOOTH-ATLAS-OWNER-001,D-geometry,PROOF-TARGET,,,,,missing GHP-Cauchy convergence proof for the D0 refinement sequence (external Rieffel quantum-metric / GHP limit),True
 D0-GW-HORIZON-HUM-PASSPORT-001,D-passport,PROOF-TARGET,,,,,missing external-data manifest (GWOSC event list + template-subtraction + pre-registered residual statistic); frozen internal object I_f=log phi exists,True

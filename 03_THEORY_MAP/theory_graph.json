@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 376,
+    "claims": 380,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 107,
-      "NO-GO": 16,
+      "CERT-CLOSED": 110,
+      "NO-GO": 17,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 228,
+      "LEAN_PROVED": 232,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 88,
       "DEPRECATED": 2,
@@ -29,8 +29,8 @@
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 24,
-      "certificate": 122,
+      "no-go": 25,
+      "certificate": 125,
       "deprecated": 3,
       "frontier": 36
     },
@@ -41,7 +41,7 @@
       "smooth_geometry": 30,
       "spectral_action": 6,
       "empirical_passport": 28,
-      "cosmology": 36,
+      "cosmology": 40,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
@@ -12579,6 +12579,144 @@
       "label": "vp_static_dynamics_hamiltonian_bridge_integration.py",
       "path": "05_CERTS/vp_static_dynamics_hamiltonian_bridge_integration.py",
       "exists": true
+    },
+    {
+      "id": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "kind": "claim",
+      "claim_id": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.v15",
+      "lean_module": "D0.Cosmology.HeatTraceEnergyFunctional",
+      "lean_theorem": "heat_energy_functional_defined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_heat_trace_energy_functional.py",
+      "python_cert": [
+        "vp_heat_trace_energy_functional.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Reheating sprint] Finite heat-energy functional E(u)=-d/du log H(u) over the connected K(9,11,13) Laplacian spectrum {0:1,20:12,22:10,24:8,33:2} (mult sum 33, nonzero spectral weight 718). H=1+12x20+10x22+8x24+2x33, -H'=240x20+220x22+192x24+66x33 (x_k=e^{-lam_k u}); E is the heat-weighted mean eigenvalue. Early limit E(0+)=718/33, late limit 0. Lean D0.Cosmology.HeatTraceEnergyFunctional (Route B over R, div_pos/nlinarith/norm_num, noncomputable energy def). No inflaton, Planck n_s, or survey datum.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/HeatTraceEnergyFunctional.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.HeatTraceEnergyFunctional",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.HeatTraceEnergyFunctional",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/HeatTraceEnergyFunctional.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_heat_trace_energy_functional.py",
+      "kind": "python_cert",
+      "label": "vp_heat_trace_energy_functional.py",
+      "path": "05_CERTS/vp_heat_trace_energy_functional.py",
+      "exists": true
+    },
+    {
+      "id": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.v15",
+      "lean_module": "D0.Cosmology.ReheatingEnergyBudgetOwner",
+      "lean_theorem": "reheating_energy_budget_owner_closed",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_reheating_energy_budget_owner.py",
+      "python_cert": [
+        "vp_reheating_energy_budget_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Reheating sprint] The reheating budget E_reheat=E_connected-E_pre is the positive finite heat-energy release at connectivity onset. Pre-threshold disconnected baseline H_pre=33 (constant) => E_pre=0, so E_reheat=E_connected; for u>0 it is strictly positive (div_pos) and bounded above by lambda_max=33 (33*H-(-H')=33+156x20+110x22+72x24>0, nlinarith). Closes the missing finite reheating energy functional from the already-CERT-CLOSED heat-trace jump (D0-REHEATING-HEAT-TRACE-JUMP-001). Lean D0.Cosmology.ReheatingEnergyBudgetOwner; cert vp_reheating_energy_budget_owner.py. CMB n_s smoothing stays a SEPARATE PROOF-TARGET (D0-CMB-PHASON-SPECTRUM-OWNER-001) -- no n_s closure claimed here.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/ReheatingEnergyBudgetOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.ReheatingEnergyBudgetOwner",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.ReheatingEnergyBudgetOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/ReheatingEnergyBudgetOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_reheating_energy_budget_owner.py",
+      "kind": "python_cert",
+      "label": "vp_reheating_energy_budget_owner.py",
+      "path": "05_CERTS/vp_reheating_energy_budget_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.v15",
+      "lean_module": "D0.Cosmology.InflationlessThresholdEnergyOwner",
+      "lean_theorem": "inflationless_threshold_energy_owner_closed",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_inflationless_threshold_energy_owner.py",
+      "python_cert": [
+        "vp_inflationless_threshold_energy_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Reheating sprint] The early-universe threshold energy is finite, inflationless, and spectrum-determined: positive for u>0, bounded by lambda_max=33, forced early limit spectralWeightSum/totalMultiplicity=718/33, late limit 0, with NO inflaton scalar and NO free reheating-temperature parameter. Lean D0.Cosmology.InflationlessThresholdEnergyOwner; cert vp_inflationless_threshold_energy_owner.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/InflationlessThresholdEnergyOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.InflationlessThresholdEnergyOwner",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.InflationlessThresholdEnergyOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/InflationlessThresholdEnergyOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_inflationless_threshold_energy_owner.py",
+      "kind": "python_cert",
+      "label": "vp_inflationless_threshold_energy_owner.py",
+      "path": "05_CERTS/vp_inflationless_threshold_energy_owner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-REHEATING-NO-INFLATON-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-REHEATING-NO-INFLATON-NOGO-001",
+      "type": "no-go",
+      "domain": "cosmology",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_08",
+      "section": "08.v15",
+      "lean_module": "D0.Cosmology.InflationlessThresholdEnergyOwner",
+      "lean_theorem": "reheating_no_inflaton_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_inflationless_threshold_energy_owner.py",
+      "python_cert": [
+        "vp_inflationless_threshold_energy_owner.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Reheating sprint] NO-GO: the reheating budget introduces no inflaton scalar potential and no tunable reheating-temperature parameter -- the early-limit threshold energy is the forced spectrum ratio spectralWeightSum/totalMultiplicity=718/33, a function of the finite K(9,11,13) spectrum alone. Lean D0.Cosmology.InflationlessThresholdEnergyOwner.reheating_no_inflaton_nogo; cert vp_inflationless_threshold_energy_owner.py (controls reject a tuned T_reheat and external cosmology data).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/InflationlessThresholdEnergyOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -17900,6 +18038,66 @@
     {
       "source": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
       "target": "cert:vp_static_dynamics_hamiltonian_bridge_integration.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "target": "module:D0.Cosmology.HeatTraceEnergyFunctional",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "target": "cert:vp_heat_trace_energy_functional.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "target": "module:D0.Cosmology.ReheatingEnergyBudgetOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "target": "cert:vp_reheating_energy_budget_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001",
+      "target": "module:D0.Cosmology.InflationlessThresholdEnergyOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001",
+      "target": "cert:vp_inflationless_threshold_energy_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-REHEATING-NO-INFLATON-NOGO-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REHEATING-NO-INFLATON-NOGO-001",
+      "target": "module:D0.Cosmology.InflationlessThresholdEnergyOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REHEATING-NO-INFLATON-NOGO-001",
+      "target": "cert:vp_inflationless_threshold_energy_owner.py",
       "kind": "certified_by"
     }
   ]

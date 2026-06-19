@@ -7,13 +7,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 107
+- `CERT-CLOSED`: 110
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 16
+- `NO-GO`: 17
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -21,15 +21,15 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 122
+- `certificate`: 125
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 24
+- `no-go`: 25
 
 ## Domain counts
 
-- `cosmology`: 36
+- `cosmology`: 40
 - `empirical_passport`: 28
 - `external_background`: 1
 - `formal_core`: 210
@@ -134,6 +134,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 four-physics P4] t=0 is a graph CONNECTIVITY THRESHOLD, not a singularity (BOOK_08 §08.49 THE 61.4): the complete tripartite K(9,11,13) (33 vertices) is (strongly) connected, while a sub-threshold edgeless stage is disconnected -- so the transition disconnected->connected is real. Lean D0.Cosmology.ReheatingPercolationOwner.connectivity_threshold_owner; cert vp_connectivity_threshold_owner.py (BFS connectivity; controls: connected-before-threshold rejected; arbitrary threshold rejected; vertex count!=33 rejected).
 
+### D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.InflationlessThresholdEnergyOwner`
+- theorem: `inflationless_threshold_energy_owner_closed`
+- cert: `vp_inflationless_threshold_energy_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Reheating sprint] The early-universe threshold energy is finite, inflationless, and spectrum-determined: positive for u>0, bounded by lambda_max=33, forced early limit spectralWeightSum/totalMultiplicity=718/33, late limit 0, with NO inflaton scalar and NO free reheating-temperature parameter. Lean D0.Cosmology.InflationlessThresholdEnergyOwner; cert vp_inflationless_threshold_energy_owner.py.
+
 ### D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001
 
 - type: `certificate`
@@ -173,6 +186,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 five-front D] The NEGATIVE dark-energy sign is FORCED by the Galois conjugation sigma:phi->psi of Q(phi)/Q (NOT an inserted minus): the positive archive ratio phi^-1>0 maps to sigma(phi^-1)=psi^-1=-phi<0 (since phi*psi=-1; psi<0). The value is the SPECIFIC field conjugate -phi, provably distinct from the naive negation -phi^-1. Lean D0.Cosmology.PhasonWDESignNormalization.phason_wde_sign_normalization_owner; cert vp_phason_wde_sign_normalization_owner.py (controls: arbitrary-sign-flip / +phi^-1-is-physical / DESI-chooses-sign rejected). The magnitude/normalization |w_DE| stays PROOF-TARGET (D0-PHASON-WZ-EXPLICIT-FUNCTION-001); the finite ratio w_N->+phi^-1 (D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001) is not demoted.
 
+### D0-REHEATING-ENERGY-BUDGET-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ReheatingEnergyBudgetOwner`
+- theorem: `reheating_energy_budget_owner_closed`
+- cert: `vp_reheating_energy_budget_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Reheating sprint] The reheating budget E_reheat=E_connected-E_pre is the positive finite heat-energy release at connectivity onset. Pre-threshold disconnected baseline H_pre=33 (constant) => E_pre=0, so E_reheat=E_connected; for u>0 it is strictly positive (div_pos) and bounded above by lambda_max=33 (33*H-(-H')=33+156x20+110x22+72x24>0, nlinarith). Closes the missing finite reheating energy functional from the already-CERT-CLOSED heat-trace jump (D0-REHEATING-HEAT-TRACE-JUMP-001). Lean D0.Cosmology.ReheatingEnergyBudgetOwner; cert vp_reheating_energy_budget_owner.py. CMB n_s smoothing stays a SEPARATE PROOF-TARGET (D0-CMB-PHASON-SPECTRUM-OWNER-001) -- no n_s closure claimed here.
+
 ### D0-REHEATING-HEAT-TRACE-JUMP-001
 
 - type: `certificate`
@@ -185,6 +211,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 deep-stitch] Heat-trace JUMP at the connectivity threshold: K(9,11,13) Laplacian spectrum {0:1,20:12,22:10,24:8,33:2} vs edgeless sub-threshold {0:33}; zero-eigenvalue multiplicity (=dim ker L = #components = u->inf heat-trace limit) jumps 33->1, total multiplicity 33 conserved, lambda_2=20>0. Lean D0.Cosmology.ReheatingHeatTraceJump.reheating_heat_trace_jump; cert vp_reheating_heat_trace_jump.py (controls reject connected-still-33-zeros, n_s-from-spectrum, arbitrary threshold). n_s stays PROOF-TARGET (D0-CMB-PHASON-SPECTRUM-OWNER-001).
+
+### D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.HeatTraceEnergyFunctional`
+- theorem: `heat_energy_functional_defined`
+- cert: `vp_heat_trace_energy_functional.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Reheating sprint] Finite heat-energy functional E(u)=-d/du log H(u) over the connected K(9,11,13) Laplacian spectrum {0:1,20:12,22:10,24:8,33:2} (mult sum 33, nonzero spectral weight 718). H=1+12x20+10x22+8x24+2x33, -H'=240x20+220x22+192x24+66x33 (x_k=e^{-lam_k u}); E is the heat-weighted mean eigenvalue. Early limit E(0+)=718/33, late limit 0. Lean D0.Cosmology.HeatTraceEnergyFunctional (Route B over R, div_pos/nlinarith/norm_num, noncomputable energy def). No inflaton, Planck n_s, or survey datum.
 
 ### D0-REHEATING-PERCOLATION-OWNER-001
 
@@ -497,6 +536,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Iter22 dual-frontier NO-GO] the 30-dimensional archive/dark kernel (nullity 30 = 8+10+12) ALONE does not determine the dark-energy equation of state w(z): two phason pressure-energy pairs over the same kernel give different w_D0=p/rho (Lean D0.Cosmology.PhasonWZTransfer.kernel_dim_alone_does_not_determine_w). A finite pressure-energy operator is required; the kernel dimension (a single integer) cannot fix a function. Closed-negative.
+
+### D0-REHEATING-NO-INFLATON-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.InflationlessThresholdEnergyOwner`
+- theorem: `reheating_no_inflaton_nogo`
+- cert: `vp_inflationless_threshold_energy_owner.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Reheating sprint] NO-GO: the reheating budget introduces no inflaton scalar potential and no tunable reheating-temperature parameter -- the early-limit threshold energy is the forced spectrum ratio spectralWeightSum/totalMultiplicity=718/33, a function of the finite K(9,11,13) spectrum alone. Lean D0.Cosmology.InflationlessThresholdEnergyOwner.reheating_no_inflaton_nogo; cert vp_inflationless_threshold_energy_owner.py (controls reject a tuned T_reheat and external cosmology data).
 
 ### D0-CVFT-NOGO-001
 

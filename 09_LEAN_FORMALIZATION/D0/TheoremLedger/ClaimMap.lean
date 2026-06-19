@@ -552,7 +552,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001", moduleName := "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
       theoremName := "feshbach_constraint_submanifold_bridge", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001", moduleName := "D0.Bridge.ConstrainedHamiltonianEmbeddingPassport",
-      theoremName := "nonreciprocal_active_dynamics_has_formalism_bridge", status := ClaimStatus.pythonCertClosed }
+      theoremName := "nonreciprocal_active_dynamics_has_formalism_bridge", status := ClaimStatus.pythonCertClosed },
+    { claimId := "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001", moduleName := "D0.Cosmology.HeatTraceEnergyFunctional",
+      theoremName := "heat_energy_functional_defined", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-REHEATING-ENERGY-BUDGET-OWNER-001", moduleName := "D0.Cosmology.ReheatingEnergyBudgetOwner",
+      theoremName := "reheating_energy_budget_owner_closed", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001", moduleName := "D0.Cosmology.InflationlessThresholdEnergyOwner",
+      theoremName := "inflationless_threshold_energy_owner_closed", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-REHEATING-NO-INFLATON-NOGO-001", moduleName := "D0.Cosmology.InflationlessThresholdEnergyOwner",
+      theoremName := "reheating_no_inflaton_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

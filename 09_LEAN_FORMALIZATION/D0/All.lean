@@ -115,12 +115,15 @@ import D0.Cosmology.EntropyJacobianSign
 import D0.Cosmology.FeedbackPartitionFunction
 import D0.Cosmology.FiniteFeedbackEquationOfState
 import D0.Cosmology.FloorMassProjection
+import D0.Cosmology.HeatTraceEnergyFunctional
+import D0.Cosmology.InflationlessThresholdEnergyOwner
 import D0.Cosmology.InstabilitySaturation
 import D0.Cosmology.LinearizedEntropyFlow
 import D0.Cosmology.PhasonArchiveCapacityRedshift
 import D0.Cosmology.PhasonFlipEntropy
 import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
+import D0.Cosmology.ReheatingEnergyBudgetOwner
 import D0.Cosmology.ReheatingHeatTraceJump
 import D0.Cosmology.ReheatingPercolationOwner
 import D0.Cosmology.ResearchPassCorollaries
