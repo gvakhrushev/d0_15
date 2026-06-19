@@ -1,7 +1,7 @@
 # D0 Standard Language Audit Report
-Generated: 2026-06-19T06:54:50.162553+00:00
+Generated: 2026-06-19T07:10:30.034512+00:00
 
-Total occurrences scanned: 2487
+Total occurrences scanned: 2495
 
 ## Summary by Classification
 - NEEDS_STANDARD_REWRITE: 123
@@ -9,12 +9,12 @@ Total occurrences scanned: 2487
 - OK_FIRST_USE: 67
 - OK_OWNER: 232
 - OK_STANDARD_CONTEXT: 291
-- OK_STRUCTURAL: 1582
+- OK_STRUCTURAL: 1590
 
 ## Needs Rewrite (sample)
-- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:275 `readout` → positive measurement outcome / positive response functional
+- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:276 `readout` → positive measurement outcome / positive response functional
   > The smooth spacetime manifold is a macro measurement-outcome shadow (D0: readout shadow).
-- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:275 `shadow` → macro interface / smooth limit
+- BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:276 `shadow` → macro interface / smooth limit
   > The smooth spacetime manifold is a macro measurement-outcome shadow (D0: readout shadow).
 - BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:388 `tick` → discrete evolution endomorphism
   > ordered discrete-evolution-endomorphism chain (D0: tick chain)

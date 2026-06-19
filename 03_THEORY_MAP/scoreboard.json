@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 4991,
-    "track_fair_max": 6886,
-    "pct_strength": 72.5,
-    "core_realized": 4297,
-    "core_potential": 6160,
-    "core_headroom": 1863,
-    "n_claims": 380,
-    "n_active": 378,
+    "realized": 4998,
+    "track_fair_max": 6906,
+    "pct_strength": 72.4,
+    "core_realized": 4304,
+    "core_potential": 6180,
+    "core_headroom": 1876,
+    "n_claims": 381,
+    "n_active": 379,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 209,
-      "realized": 3137,
-      "max": 3897,
-      "core_headroom": 750
+      "n": 210,
+      "realized": 3144,
+      "max": 3917,
+      "core_headroom": 763
     },
     "rg": {
       "n": 5,
@@ -388,10 +388,10 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 12,
-      "realized": 166,
-      "max": 213,
-      "core_headroom": 47
+      "n": 13,
+      "realized": 173,
+      "max": 233,
+      "core_headroom": 60
     },
     "BOOK_00/05": {
       "n": 1,
@@ -1507,6 +1507,16 @@
       "claim_id": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
       "domain": "formal_core",
       "book": "BOOK_06",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -2738,6 +2748,13 @@
     },
     {
       "claim_id": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
@@ -8218,6 +8235,20 @@
       "domain": "cosmology",
       "book": "BOOK_08",
       "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
       "integrity_flag": null
     }
   ],

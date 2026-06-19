@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 110
+- `CERT-CLOSED`: 111
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 125
+- `certificate`: 126
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 40
 - `empirical_passport`: 28
 - `external_background`: 1
-- `formal_core`: 210
+- `formal_core`: 211
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1962,6 +1962,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter13 LEM] root: dividing unity around 1/2 => space (symmetric) + time (antisymmetric delta0). Cuts: honest 1=1/2+1/2 (exchange-symmetric => space) and self-consistent 1=phi^-1+phi^-2 (forced p2+p=1); separation delta0=phi^-1-1/2=(sqrt5-2)/2. T=[[0,1],[1,-1]], det=-1=psi*phi, spectrum {phi^-1,-phi}: one negative eigenvalue => exactly one time arrow; delta0=its magnitude. Lean D0.Synthesis.UnitySplitSpacetime (unity_split_spacetime, gap-free): delta0 exact, det=-1=psi*phi, both eigenvalues+signs. Cert vp_unity_split_spacetime.py (can-FAIL; s=0 control reversible). HONEST MECH-LIMIT: the step 'symmetric S2-invariant = rank-3 adjacency' routes to the ALREADY-FORCED rank-3=causal-cone (D0-RANK3-CAUSAL-CONE-FORCING-001, Iter-11); residual = that identification + the cone-speed Connes unit, NOT a fresh gap. BTC transition-asymmetry is a confirmation, not a derivation. Not promoted past MECH-LIMIT.
+
+### D0-VERIFIED-CLOSURE-PROTOCOL-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: ``
+- theorem: `none`
+- cert: `vp_verified_closure_protocol.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Working method] Codifies the verify-then-build closure protocol (04_VERIFICATION/VERIFIED_CLOSURE_PROTOCOL.md) from six campaigns: Phase 0-6, the MANDATORY no-Lean-before-grounded-scout rule, the 5 scout verdicts (CERT-CLOSABLE/NO-GO-CLOSABLE/PARTIAL-CLOSABLE/NOT-CLOSABLE/DUPLICATE-ALREADY-OWNED), the Lean integration recurring fixes (noncomputable R-division, div_lt_iff0, sub-namespaces, no norm_num after closing simp, neg_neg not rfl, build-before-register), the negation-aware no-overclaim discipline, the negative-control rule, and the closure report template. Cert vp_verified_closure_protocol.py (control rejects a protocol text missing a required section). Future agents MUST follow it before attempting remaining blockers.
 
 ### D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001
 

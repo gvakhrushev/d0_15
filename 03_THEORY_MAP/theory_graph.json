@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 380,
+    "claims": 381,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 110,
+      "CERT-CLOSED": 111,
       "NO-GO": 17,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -22,7 +22,7 @@
     "lean_status": {
       "LEAN_PROVED": 232,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 88,
+      "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
       "OPEN": 37
     },
@@ -30,12 +30,12 @@
       "core": 163,
       "bridge": 28,
       "no-go": 25,
-      "certificate": 125,
+      "certificate": 126,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 210,
+      "formal_core": 211,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -12717,6 +12717,37 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/InflationlessThresholdEnergyOwner.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
+      "kind": "claim",
+      "claim_id": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_verified_closure_protocol.py",
+      "python_cert": [
+        "vp_verified_closure_protocol.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Working method] Codifies the verify-then-build closure protocol (04_VERIFICATION/VERIFIED_CLOSURE_PROTOCOL.md) from six campaigns: Phase 0-6, the MANDATORY no-Lean-before-grounded-scout rule, the 5 scout verdicts (CERT-CLOSABLE/NO-GO-CLOSABLE/PARTIAL-CLOSABLE/NOT-CLOSABLE/DUPLICATE-ALREADY-OWNED), the Lean integration recurring fixes (noncomputable R-division, div_lt_iff0, sub-namespaces, no norm_num after closing simp, neg_neg not rfl, build-before-register), the negation-aware no-overclaim discipline, the negative-control rule, and the closure report template. Cert vp_verified_closure_protocol.py (control rejects a protocol text missing a required section). Future agents MUST follow it before attempting remaining blockers.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_verified_closure_protocol.py",
+      "kind": "python_cert",
+      "label": "vp_verified_closure_protocol.py",
+      "path": "05_CERTS/vp_verified_closure_protocol.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -18098,6 +18129,21 @@
     {
       "source": "D0-REHEATING-NO-INFLATON-NOGO-001",
       "target": "cert:vp_inflationless_threshold_energy_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
+      "target": "cert:vp_verified_closure_protocol.py",
       "kind": "certified_by"
     }
   ]

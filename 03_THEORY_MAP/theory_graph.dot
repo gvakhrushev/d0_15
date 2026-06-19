@@ -381,6 +381,7 @@ digraph D0Theory {
   "D0-REHEATING-ENERGY-BUDGET-OWNER-001" [label="D0-REHEATING-ENERGY-BUDGET-OWNER-001\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001" [label="D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-REHEATING-NO-INFLATON-NOGO-001" [label="D0-REHEATING-NO-INFLATON-NOGO-001\\nNO-GO\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-VERIFIED-CLOSURE-PROTOCOL-001" [label="D0-VERIFIED-CLOSURE-PROTOCOL-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2533,4 +2534,10 @@ digraph D0Theory {
   "D0-REHEATING-NO-INFLATON-NOGO-001" -> "cert:vp_inflationless_threshold_energy_owner.py" [label="cert"];
   "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-REHEATING-NO-INFLATON-NOGO-001" -> "domain:cosmology" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-VERIFIED-CLOSURE-PROTOCOL-001" -> "module:" [label="module"];
+  "cert:vp_verified_closure_protocol.py" [label="vp_verified_closure_protocol.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-VERIFIED-CLOSURE-PROTOCOL-001" -> "cert:vp_verified_closure_protocol.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-VERIFIED-CLOSURE-PROTOCOL-001" -> "domain:formal_core" [label="domain"];
 }
