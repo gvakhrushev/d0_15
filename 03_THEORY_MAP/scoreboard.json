@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 5070,
-    "track_fair_max": 7026,
+    "realized": 5082,
+    "track_fair_max": 7038,
     "pct_strength": 72.2,
     "core_realized": 4376,
     "core_potential": 6300,
     "core_headroom": 1924,
-    "n_claims": 387,
-    "n_active": 385,
+    "n_claims": 388,
+    "n_active": 386,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -68,9 +68,9 @@
       "core_headroom": 128
     },
     "cosmology": {
-      "n": 46,
-      "realized": 705,
-      "max": 883,
+      "n": 47,
+      "realized": 717,
+      "max": 895,
       "core_headroom": 178
     },
     "external_background": {
@@ -172,9 +172,9 @@
       "core_headroom": 88
     },
     "BOOK_08": {
-      "n": 74,
-      "realized": 976,
-      "max": 1392,
+      "n": 75,
+      "realized": 988,
+      "max": 1404,
       "core_headroom": 412
     },
     "BOOK_05/06": {
@@ -8436,12 +8436,26 @@
       "book": "BOOK_08",
       "leverage": 2,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 3.6,
+    "penalty_total": 3.7,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -8486,8 +8500,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -8536,8 +8550,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

@@ -572,7 +572,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001", moduleName := "D0.Cosmology.DarkArchiveTransfer",
       theoremName := "archive_phason_em_dark_metric_active", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001", moduleName := "D0.Cosmology.DarkArchiveTransfer",
-      theoremName := "cosmology_internal_transfer_composed", status := ClaimStatus.leanCoreProved }
+      theoremName := "cosmology_internal_transfer_composed", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001", moduleName := "D0.Cosmology.CMBNsSmoothingUndeterminedNoGo",
+      theoremName := "cmb_ns_smoothing_undetermined_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

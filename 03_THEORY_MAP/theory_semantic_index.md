@@ -13,7 +13,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 17
+- `NO-GO`: 18
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -25,11 +25,11 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 25
+- `no-go`: 26
 
 ## Domain counts
 
-- `cosmology`: 46
+- `cosmology`: 47
 - `empirical_passport`: 28
 - `external_background`: 1
 - `formal_core`: 211
@@ -601,6 +601,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: [Iter21 cert->Lean, verify-then-promote] Finite S_DE algebra machine-checked in D0.Cosmology.PhasonFlipEntropy: the explicit 2x2 phason-flip transfer (3/2,1/16,1/10,3/2) has characteristic 160*char = 160 lambda^2 - 480 lambda + 359 (phason_flip_transfer_matrix_has_sde_polynomial, norm_num+ring), and its roots are exactly the relaxation modes (sde_roots_are_phason_flip_relaxation_modes). SUPERSEDES the Phase-L note: the removed placeholder (stmt)(h):=h is gone; these are real proofs, re-verified by reading the module. External BAO/DESI survey comparison stays an empirical passport; the K0/Connes spectral-triple/phason-holonomy GAP-LABELING is external (see D0-SDE-K0-001), not part of this finite-algebra row.
+
+### D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.CMBNsSmoothingUndeterminedNoGo`
+- theorem: `cmb_ns_smoothing_undetermined_nogo`
+- cert: `vp_cmb_ns_smoothing_undetermined_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Cosmology n_s no-go] Closed-negative: the discrete spectral tilt n_eff-1=(k/P)P'(k) of the heat-smoothed phason power proxy over the nonzero K(9,11,13) modes {20,22,24,33} is NOT constant on the (k, positive-smoothing) domain -- it varies with the wavenumber k (tilt(1)!=tilt(2)) AND with the smoothing measure at fixed k (tilt(wA)!=tilt(wB)). Hence the bare spectrum + an unforced (k,u) does NOT determine a single n_s (exact Q arithmetic, norm_num). Lean D0.Cosmology.CMBNsSmoothingUndeterminedNoGo; cert vp_cmb_ns_smoothing_undetermined_nogo.py. This PROVES the obstruction behind D0-CMB-IDS-SMOOTHING-OWNER-001 (which stays PROOF-TARGET): a canonical internally-FORCED (k,u) selection remains the exact missing artifact. No Planck n_s/inflaton/survey datum.
 
 ### D0-PHASON-WZ-KERNEL-ONLY-NOGO-001
 

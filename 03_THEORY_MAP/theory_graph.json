@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 387,
+    "claims": 388,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 117,
-      "NO-GO": 17,
+      "NO-GO": 18,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 238,
+      "LEAN_PROVED": 239,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -29,7 +29,7 @@
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 25,
+      "no-go": 26,
       "certificate": 132,
       "deprecated": 3,
       "frontier": 36
@@ -41,7 +41,7 @@
       "smooth_geometry": 30,
       "spectral_action": 6,
       "empirical_passport": 28,
-      "cosmology": 46,
+      "cosmology": 47,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
@@ -12934,6 +12934,44 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/DarkArchiveTransfer.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+      "type": "no-go",
+      "domain": "cosmology",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_08",
+      "section": "08.cosmo",
+      "lean_module": "D0.Cosmology.CMBNsSmoothingUndeterminedNoGo",
+      "lean_theorem": "cmb_ns_smoothing_undetermined_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cmb_ns_smoothing_undetermined_nogo.py",
+      "python_cert": [
+        "vp_cmb_ns_smoothing_undetermined_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Cosmology n_s no-go] Closed-negative: the discrete spectral tilt n_eff-1=(k/P)P'(k) of the heat-smoothed phason power proxy over the nonzero K(9,11,13) modes {20,22,24,33} is NOT constant on the (k, positive-smoothing) domain -- it varies with the wavenumber k (tilt(1)!=tilt(2)) AND with the smoothing measure at fixed k (tilt(wA)!=tilt(wB)). Hence the bare spectrum + an unforced (k,u) does NOT determine a single n_s (exact Q arithmetic, norm_num). Lean D0.Cosmology.CMBNsSmoothingUndeterminedNoGo; cert vp_cmb_ns_smoothing_undetermined_nogo.py. This PROVES the obstruction behind D0-CMB-IDS-SMOOTHING-OWNER-001 (which stays PROOF-TARGET): a canonical internally-FORCED (k,u) selection remains the exact missing artifact. No Planck n_s/inflaton/survey datum.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/CMBNsSmoothingUndeterminedNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.CMBNsSmoothingUndeterminedNoGo",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.CMBNsSmoothingUndeterminedNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/CMBNsSmoothingUndeterminedNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_cmb_ns_smoothing_undetermined_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_cmb_ns_smoothing_undetermined_nogo.py",
+      "path": "05_CERTS/vp_cmb_ns_smoothing_undetermined_nogo.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -18420,6 +18458,21 @@
     {
       "source": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
       "target": "cert:vp_dark_archive_transfer_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+      "target": "module:D0.Cosmology.CMBNsSmoothingUndeterminedNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+      "target": "cert:vp_cmb_ns_smoothing_undetermined_nogo.py",
       "kind": "certified_by"
     }
   ]
