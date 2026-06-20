@@ -1,0 +1,15 @@
+{
+  "target_fingerprint": {
+    "mults": [
+      1,
+      2,
+      8,
+      10,
+      12
+    ],
+    "trace": 718,
+    "distinct": 5
+  },
+  "status": "no canonical compressed-sector lift (no unique Xi/operator)",
+  "blocked_by": "PRIM-SCENE-HISTORY-REFINEMENT-RULE / PRIM-COMPARISON-MAP-XI-N"
+}

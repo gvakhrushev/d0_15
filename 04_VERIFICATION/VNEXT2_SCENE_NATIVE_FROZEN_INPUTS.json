@@ -1,0 +1,37 @@
+{
+  "route": "scene-native: refine directly from K(9,11,13) (history/path), endpoint conditional expectation",
+  "scene": {
+    "N": 33,
+    "parts": [
+      9,
+      11,
+      13
+    ],
+    "edges": 359,
+    "degrees": [
+      24,
+      22,
+      20
+    ],
+    "laplacian_spectrum": {
+      "0": 1,
+      "20": 12,
+      "22": 10,
+      "24": 8,
+      "33": 2
+    },
+    "trace": 718,
+    "structural": {
+      "R": 3,
+      "K": [
+        8,
+        10,
+        12
+      ]
+    }
+  },
+  "outcome": "D -- refinement rule underdetermined (>=2 admissible families W/NB/E inequivalent)",
+  "primitive_verdict": "PRIM-COMPARISON-MAP-XI-N and PRIM-DIRAC-SCALE-SELECTION remain INDEPENDENT; new upstream primitive PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+  "downstream_gates": "alpha/CMB/Higgs/smooth-geometry STAY CLOSED",
+  "forbidden": "AF revival, 34-1=33, chosen basepoint/orientation/cylinder-order, manual measure/Xi/tick/scale, pullback operator, physical selection"
+}

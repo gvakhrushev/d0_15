@@ -1,0 +1,13 @@
+{
+  "candidates": [
+    "path-length",
+    "diameter-inverse",
+    "spectral-gap",
+    "heat-crossover",
+    "entropy-growth",
+    "feedback-return",
+    "phi-ladder"
+  ],
+  "result": "refinement-family-dependent; no unique cocycle (family underdetermined)",
+  "verdict": "B/D -- PRIM-DIRAC-SCALE-SELECTION remains independent"
+}

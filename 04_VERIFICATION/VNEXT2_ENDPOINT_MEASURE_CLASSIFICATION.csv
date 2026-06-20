@@ -1,0 +1,4 @@
+measure_id,source,unique,reason
+counting,scene degree counting,no,family-dependent; degrees non-constant
+random-walk-stationary,stochastic normalization,no,"gives normalized operator, not combinatorial L"
+degree-weighted,degree data,no,one of several; no forcing owner

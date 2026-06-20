@@ -646,7 +646,25 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001", moduleName := "D0.VNext.AFD0SpectralInvariantComparison",
       theoremName := "spectral_invariant_obstruction", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001", moduleName := "D0.VNext.AFD0SpectralInvariantComparison",
-      theoremName := "spectral_invariant_obstruction", status := ClaimStatus.leanNoGoProved }
+      theoremName := "spectral_invariant_obstruction", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001", moduleName := "D0.VNext2.SceneSpectralFingerprint",
+      theoremName := "fingerprint_consistency", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "walk_families_carriers_differ", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-XI-MAXIMALITY-NOGO-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

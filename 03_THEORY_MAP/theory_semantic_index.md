@@ -7,38 +7,38 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 128
+- `CERT-CLOSED`: 129
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 38
+- `NO-GO`: 46
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 15
-- `PROOF-TARGET`: 40
+- `PROOF-TARGET`: 44
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 149
+- `certificate`: 150
 - `core`: 165
 - `deprecated`: 3
-- `frontier`: 40
-- `no-go`: 46
+- `frontier`: 44
+- `no-go`: 54
 
 ## Domain counts
 
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 242
-- `frontier`: 40
+- `formal_core`: 250
+- `frontier`: 44
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 7
 - `si_calibration`: 2
-- `smooth_geometry`: 33
+- `smooth_geometry`: 34
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -2210,6 +2210,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [vNext Fast-Track Phase A] The canonical Perron-GNS isometric tower EXISTS: the Perron trace is refinement-compatible (1+phi^-1=phi, the scalar form of M_phi t_(N+1)=t_N) and any trace-preserving *-inclusion induces an isometry of GNS spaces <iota x,iota y>=<x,y> (gns_refinement_isometry). Realizes the ISOMETRY half of PRIM-ISOMETRIC-DIRAC-J_N for free from the Perron trace -- no synthetic embedding, no chosen state. Lean D0.VNext.PerronGNSTower (+ FibonacciAFAlgebra). vNext FORMALISM, NOT a present-core physical Hilbert identification.
 
+### D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneSpectralFingerprint`
+- theorem: `fingerprint_consistency`
+- cert: `vp_vnext2_scene_native_input_audit.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [vNext+2 scene-native, Outcome D] Typed scene fingerprint of K(9,11,13): N=33, parts (9,11,13), |E|=359, degrees (24,22,20)=(33-n_i) non-constant; L spectrum {0:1,20:12,22:10,24:8,33:2} trace 718; structural R(3)+within-part K(8,10,12), K_i eigenvalue=33-n_i. Lean D0.VNext2.SceneSpectralFingerprint (decidable). The non-negotiable target for any scene-native lift.
+
 ### D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001
 
 - type: `certificate`
@@ -4173,6 +4186,97 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [vNext Fast-Track Phase B, OUTCOME C] The martingale increments are nonzero (AF dims strictly grow) but the Dirac scale is NOT uniquely forced: lambda_N=phi^N and lambda_N=2^N are each strictly increasing to infinity (compact-resolvent AF triples, a la Christensen-Ivan) yet differ at N=1 (phi!=2). Scale selection is a SECOND independent primitive (PRIM-DIRAC-SCALE-SELECTION). Lean D0.VNext.AFMartingaleDiracScaleNoGo.
 
+### D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `scene_native_refinement_underdetermined`
+- cert: `vp_vnext2_scene_native_scale_cocycles.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] Maximality: candidate scale cocycles (gap/diameter/heat-crossover/...) differ across families -> no unique cocycle. Missing PRIM-DIRAC-SCALE-SELECTION.
+
+### D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `scene_native_refinement_underdetermined`
+- cert: `vp_vnext2_scene_native_maximality.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] Capstone: refinement/Xi/operator/tick/Feshbach/scale all underdetermined or blocked. PRIM-COMPARISON-MAP-XI-N and PRIM-DIRAC-SCALE-SELECTION remain INDEPENDENT; new upstream PRIM-SCENE-HISTORY-REFINEMENT-RULE. No physical promotion.
+
+### D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `scene_native_refinement_underdetermined`
+- cert: `vp_vnext2_tripartite_path_tower_classification.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] Outcome D: the 34-route is closed and the scene-native route is underdetermined (>=2 inequivalent families). First disagreement: depth-2 carrier count (15708 vs 14990).
+
+### D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `scene_native_refinement_underdetermined`
+- cert: `vp_vnext2_scene_native_refinement_category.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] No unique scene-native refinement rule. >=2 admissible families (all-walks, non-backtracking, directed-edge) satisfy M1 but are inequivalent: depth-2 carriers 15708 != 14990 (differ by 2|E|=718); transfer dims 33 != 718. Missing PRIM-SCENE-HISTORY-REFINEMENT-RULE. Lean D0.VNext2.SceneNativeRefinementClassification.
+
+### D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `scene_native_refinement_underdetermined`
+- cert: `vp_vnext2_tripartite_scene_xi_intertwiner.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] Xi_n=C_n is family/measure-dependent -> no canonical Xi. PRIM-COMPARISON-MAP-XI-N remains independent.
+
+### D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `walk_families_carriers_differ`
+- cert: `vp_vnext2_tripartite_path_tower_classification.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] The path/history tower is family-dependent (W/NB/E inequivalent); no unique tower. Missing PRIM-SCENE-HISTORY-REFINEMENT-RULE.
+
+### D0-VNEXT2-XI-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `scene_native_refinement_underdetermined`
+- cert: `vp_vnext2_tripartite_scene_xi_intertwiner.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] Maximality: >=2 admissible families give inequivalent Xi; no canonical comparison map. Missing PRIM-COMPARISON-MAP-XI-N.
+
 ### D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY
 
 - type: `no-go`
@@ -4747,6 +4851,58 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [vNext Fast-Track master] The full Dirac-compatible isometric tower. The ISOMETRY is realized (CERT, D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001), but the Dirac SCALE is underdetermined (Outcome C) and the D0-Laplacian comparison is obstructed (Outcome D). PROOF-TARGET; the candidate primitive PRIM-ISOMETRIC-DIRAC-J_N SPLITS into +2: PRIM-DIRAC-SCALE-SELECTION + PRIM-COMPARISON-MAP-XI-N.
+
+### D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_vnext2_endpoint_conditional_expectation.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [vNext+2 scene-native, Outcome D] C_n is family- and measure-dependent; with no unique refinement rule and no unique endpoint measure (degrees non-constant), no canonical C_n. Missing PRIM-SCENE-HISTORY-REFINEMENT-RULE.
+
+### D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_vnext2_scene_dirac_covariance_selection.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [vNext+2 scene-native, Outcome D] Scale cocycle is refinement-family-dependent; with the family underdetermined no unique cocycle. Missing PRIM-DIRAC-SCALE-SELECTION.
+
+### D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_vnext2_scene_native_feshbach_lift.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [vNext+2 scene-native, Outcome D] Blocked: P_n^scene/U_n^hist/F_n^hist need a canonical Xi (absent). Missing PRIM-COMPARISON-MAP-XI-N.
+
+### D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_vnext2_scene_spectral_intertwining.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [vNext+2 scene-native, Outcome D] Blocked: no canonical Xi/operator -> intertwining hierarchy S1-S5 not canonically testable. Target fingerprint {1,2,8,10,12} intact. Missing PRIM-COMPARISON-MAP-XI-N.
 
 
 ## Domain: gauge_bridge
@@ -5597,6 +5753,19 @@ D0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPr
 - assumptions: `none`
 - scope: Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.
 - notes: [8D Tier-1 forced] phi Pisot => deg Q(phi)=2 => time layer T^2; Adler-Weiss smooth partition. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.Time2DPisot (time_2d_pisot); native_decide/decide on the real finite content.
+
+### D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `smooth_geometry`
+- book: `BOOK_02`
+- module: `D0.VNext2.SceneNativeRefinementClassification`
+- theorem: `scene_native_refinement_underdetermined`
+- cert: `vp_vnext2_no_false_physical_promotion.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+2 scene-native, Outcome D] Closure boundary: the scene-native route does not lift the physical scene dynamics from present core; all downstream alpha/CMB/Higgs/smooth-geometry gates STAY CLOSED.
 
 
 ## Domain: spectral_action

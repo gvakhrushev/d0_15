@@ -430,5 +430,7 @@ import D0.VNext.AFOneDimensionalReductionClassification
 import D0.VNext.AFSceneAnchorDimensionAudit
 import D0.VNext.FibonacciAFAlgebra
 import D0.VNext.PerronGNSTower
+import D0.VNext2.SceneNativeRefinementClassification
+import D0.VNext2.SceneSpectralFingerprint
 import D0.Verification.FinalResearchClosureBoundary
 import D0.Verification.PresentCoreMaximality

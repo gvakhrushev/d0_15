@@ -1,0 +1,27 @@
+{
+  "families": [
+    {
+      "id": "W",
+      "name": "all finite walks",
+      "vertex_transfer": "adjacency A (dim 33)",
+      "depth2_carrier": 15708,
+      "admissible": true
+    },
+    {
+      "id": "NB",
+      "name": "non-backtracking walks",
+      "transfer": "Hashimoto (dim 2|E|=718)",
+      "depth2_carrier": 14990,
+      "admissible": true
+    },
+    {
+      "id": "E",
+      "name": "directed-edge / de Bruijn",
+      "carrier": "directed edges (dim 718)",
+      "admissible": true
+    }
+  ],
+  "inequivalent": true,
+  "first_disagreement": "depth-2 carrier count (15708 vs 14990, differ by 2|E|=718); transfer dim 33 vs 718",
+  "result": "no unique refinement rule -> Xi not canonical (Outcome D)"
+}

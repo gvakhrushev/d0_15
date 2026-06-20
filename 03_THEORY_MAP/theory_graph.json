@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 431,
+    "claims": 444,
     "release_status": {
       "CORE-FORMALIZED": 164,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 128,
-      "NO-GO": 38,
+      "CERT-CLOSED": 129,
+      "NO-GO": 46,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 40,
+      "PROOF-TARGET": 44,
       "PASSPORT-CLOSED": 15
     },
     "lean_status": {
-      "LEAN_PROVED": 273,
+      "LEAN_PROVED": 282,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 95,
       "DEPRECATED": 2,
-      "OPEN": 40
+      "OPEN": 44
     },
     "claim_type": {
       "core": 165,
       "bridge": 28,
-      "no-go": 46,
-      "certificate": 149,
+      "no-go": 54,
+      "certificate": 150,
       "deprecated": 3,
-      "frontier": 40
+      "frontier": 44
     },
     "domain": {
-      "formal_core": 242,
+      "formal_core": 250,
       "rg": 7,
       "gauge_bridge": 21,
-      "smooth_geometry": 33,
+      "smooth_geometry": 34,
       "spectral_action": 6,
       "empirical_passport": 29,
       "cosmology": 49,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 40
+      "frontier": 44
     }
   },
   "nodes": [
@@ -14438,6 +14438,409 @@
       "label": "vp_vnext33_no_overclaim.py",
       "path": "05_CERTS/vp_vnext33_no_overclaim.py",
       "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneSpectralFingerprint",
+      "lean_theorem": "fingerprint_consistency",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_scene_native_input_audit.py",
+      "python_cert": [
+        "vp_vnext2_scene_native_input_audit.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[vNext+2 scene-native, Outcome D] Typed scene fingerprint of K(9,11,13): N=33, parts (9,11,13), |E|=359, degrees (24,22,20)=(33-n_i) non-constant; L spectrum {0:1,20:12,22:10,24:8,33:2} trace 718; structural R(3)+within-part K(8,10,12), K_i eigenvalue=33-n_i. Lean D0.VNext2.SceneSpectralFingerprint (decidable). The non-negotiable target for any scene-native lift.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneSpectralFingerprint.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.SceneSpectralFingerprint",
+      "kind": "lean_module",
+      "label": "D0.VNext2.SceneSpectralFingerprint",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneSpectralFingerprint.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_vnext2_scene_native_input_audit.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_scene_native_input_audit.py",
+      "path": "05_CERTS/vp_vnext2_scene_native_input_audit.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "scene_native_refinement_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_scene_native_refinement_category.py",
+      "python_cert": [
+        "vp_vnext2_scene_native_refinement_category.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] No unique scene-native refinement rule. >=2 admissible families (all-walks, non-backtracking, directed-edge) satisfy M1 but are inequivalent: depth-2 carriers 15708 != 14990 (differ by 2|E|=718); transfer dims 33 != 718. Missing PRIM-SCENE-HISTORY-REFINEMENT-RULE. Lean D0.VNext2.SceneNativeRefinementClassification.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "lean_module",
+      "label": "D0.VNext2.SceneNativeRefinementClassification",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_vnext2_scene_native_refinement_category.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_scene_native_refinement_category.py",
+      "path": "05_CERTS/vp_vnext2_scene_native_refinement_category.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "walk_families_carriers_differ",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_tripartite_path_tower_classification.py",
+      "python_cert": [
+        "vp_vnext2_tripartite_path_tower_classification.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] The path/history tower is family-dependent (W/NB/E inequivalent); no unique tower. Missing PRIM-SCENE-HISTORY-REFINEMENT-RULE.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_tripartite_path_tower_classification.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_tripartite_path_tower_classification.py",
+      "path": "05_CERTS/vp_vnext2_tripartite_path_tower_classification.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "scene_native_refinement_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_tripartite_path_tower_classification.py",
+      "python_cert": [
+        "vp_vnext2_tripartite_path_tower_classification.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] Outcome D: the 34-route is closed and the scene-native route is underdetermined (>=2 inequivalent families). First disagreement: depth-2 carrier count (15708 vs 14990).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_endpoint_conditional_expectation.py",
+      "python_cert": [
+        "vp_vnext2_endpoint_conditional_expectation.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[vNext+2 scene-native, Outcome D] C_n is family- and measure-dependent; with no unique refinement rule and no unique endpoint measure (degrees non-constant), no canonical C_n. Missing PRIM-SCENE-HISTORY-REFINEMENT-RULE.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_endpoint_conditional_expectation.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_endpoint_conditional_expectation.py",
+      "path": "05_CERTS/vp_vnext2_endpoint_conditional_expectation.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "scene_native_refinement_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_tripartite_scene_xi_intertwiner.py",
+      "python_cert": [
+        "vp_vnext2_tripartite_scene_xi_intertwiner.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] Xi_n=C_n is family/measure-dependent -> no canonical Xi. PRIM-COMPARISON-MAP-XI-N remains independent.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_tripartite_scene_xi_intertwiner.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_tripartite_scene_xi_intertwiner.py",
+      "path": "05_CERTS/vp_vnext2_tripartite_scene_xi_intertwiner.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "scene_native_refinement_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_tripartite_scene_xi_intertwiner.py",
+      "python_cert": [
+        "vp_vnext2_tripartite_scene_xi_intertwiner.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] Maximality: >=2 admissible families give inequivalent Xi; no canonical comparison map. Missing PRIM-COMPARISON-MAP-XI-N.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_scene_spectral_intertwining.py",
+      "python_cert": [
+        "vp_vnext2_scene_spectral_intertwining.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[vNext+2 scene-native, Outcome D] Blocked: no canonical Xi/operator -> intertwining hierarchy S1-S5 not canonically testable. Target fingerprint {1,2,8,10,12} intact. Missing PRIM-COMPARISON-MAP-XI-N.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_scene_spectral_intertwining.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_scene_spectral_intertwining.py",
+      "path": "05_CERTS/vp_vnext2_scene_spectral_intertwining.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_scene_native_feshbach_lift.py",
+      "python_cert": [
+        "vp_vnext2_scene_native_feshbach_lift.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[vNext+2 scene-native, Outcome D] Blocked: P_n^scene/U_n^hist/F_n^hist need a canonical Xi (absent). Missing PRIM-COMPARISON-MAP-XI-N.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_scene_native_feshbach_lift.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_scene_native_feshbach_lift.py",
+      "path": "05_CERTS/vp_vnext2_scene_native_feshbach_lift.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_scene_dirac_covariance_selection.py",
+      "python_cert": [
+        "vp_vnext2_scene_dirac_covariance_selection.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[vNext+2 scene-native, Outcome D] Scale cocycle is refinement-family-dependent; with the family underdetermined no unique cocycle. Missing PRIM-DIRAC-SCALE-SELECTION.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_scene_dirac_covariance_selection.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_scene_dirac_covariance_selection.py",
+      "path": "05_CERTS/vp_vnext2_scene_dirac_covariance_selection.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "scene_native_refinement_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_scene_native_scale_cocycles.py",
+      "python_cert": [
+        "vp_vnext2_scene_native_scale_cocycles.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] Maximality: candidate scale cocycles (gap/diameter/heat-crossover/...) differ across families -> no unique cocycle. Missing PRIM-DIRAC-SCALE-SELECTION.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_scene_native_scale_cocycles.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_scene_native_scale_cocycles.py",
+      "path": "05_CERTS/vp_vnext2_scene_native_scale_cocycles.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "scene_native_refinement_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_scene_native_maximality.py",
+      "python_cert": [
+        "vp_vnext2_scene_native_maximality.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] Capstone: refinement/Xi/operator/tick/Feshbach/scale all underdetermined or blocked. PRIM-COMPARISON-MAP-XI-N and PRIM-DIRAC-SCALE-SELECTION remain INDEPENDENT; new upstream PRIM-SCENE-HISTORY-REFINEMENT-RULE. No physical promotion.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_scene_native_maximality.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_scene_native_maximality.py",
+      "path": "05_CERTS/vp_vnext2_scene_native_maximality.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
+      "type": "no-go",
+      "domain": "smooth_geometry",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.v2",
+      "lean_module": "D0.VNext2.SceneNativeRefinementClassification",
+      "lean_theorem": "scene_native_refinement_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext2_no_false_physical_promotion.py",
+      "python_cert": [
+        "vp_vnext2_no_false_physical_promotion.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+2 scene-native, Outcome D] Closure boundary: the scene-native route does not lift the physical scene dynamics from present core; all downstream alpha/CMB/Higgs/smooth-geometry gates STAY CLOSED.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext2_no_false_physical_promotion.py",
+      "kind": "python_cert",
+      "label": "vp_vnext2_no_false_physical_promotion.py",
+      "path": "05_CERTS/vp_vnext2_no_false_physical_promotion.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -20584,6 +20987,201 @@
     {
       "source": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
       "target": "cert:vp_vnext33_no_overclaim.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "target": "module:D0.VNext2.SceneSpectralFingerprint",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "target": "cert:vp_vnext2_scene_native_input_audit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+      "target": "cert:vp_vnext2_scene_native_refinement_category.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+      "target": "cert:vp_vnext2_tripartite_path_tower_classification.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "target": "cert:vp_vnext2_tripartite_path_tower_classification.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "target": "cert:vp_vnext2_endpoint_conditional_expectation.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+      "target": "cert:vp_vnext2_tripartite_scene_xi_intertwiner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+      "target": "cert:vp_vnext2_tripartite_scene_xi_intertwiner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "target": "cert:vp_vnext2_scene_spectral_intertwining.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "target": "cert:vp_vnext2_scene_native_feshbach_lift.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+      "target": "cert:vp_vnext2_scene_dirac_covariance_selection.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+      "target": "cert:vp_vnext2_scene_native_scale_cocycles.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+      "target": "cert:vp_vnext2_scene_native_maximality.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
+      "target": "module:D0.VNext2.SceneNativeRefinementClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
+      "target": "cert:vp_vnext2_no_false_physical_promotion.py",
       "kind": "certified_by"
     }
   ]

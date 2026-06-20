@@ -1,0 +1,7 @@
+object_id,mathematical_type,dimension,inner_product,basis_status,may_be_refinement_input,may_be_refinement_output
+"K(9,11,13)",complete tripartite graph,33 vertices,-,canonical vertex set,yes,no
+H_scene,Hilbert space C^V,33,standard l2,part-graded,no,yes
+L_scene,combinatorial Laplacian D-A,33x33,self-adjoint,"spectrum {0:1,20:12,22:10,24:8,33:2}",no,target
+A_scene,adjacency,33x33,self-adjoint,"spectrum {-12,-10,0:30,22}",via walks,yes
+degrees,diagonal D,33x33,self-adjoint,"(24,22,20) by part",yes,yes
+directed-edge space,C^(2|E|),718,standard l2,Hashimoto/de Bruijn,yes (NB/E families),no

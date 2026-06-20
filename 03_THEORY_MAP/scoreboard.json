@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 5554,
-    "track_fair_max": 7660,
-    "pct_strength": 72.5,
-    "core_realized": 4566,
-    "core_potential": 6640,
-    "core_headroom": 2074,
-    "n_claims": 431,
-    "n_active": 429,
+    "realized": 5670,
+    "track_fair_max": 7856,
+    "pct_strength": 72.2,
+    "core_realized": 4586,
+    "core_potential": 6740,
+    "core_headroom": 2154,
+    "n_claims": 444,
+    "n_active": 442,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 241,
-      "realized": 3504,
-      "max": 4341,
-      "core_headroom": 827
+      "n": 249,
+      "realized": 3600,
+      "max": 4445,
+      "core_headroom": 835
     },
     "rg": {
       "n": 7,
@@ -50,9 +50,9 @@
       "core_headroom": 21
     },
     "smooth_geometry": {
-      "n": 33,
-      "realized": 402,
-      "max": 563,
+      "n": 34,
+      "realized": 414,
+      "max": 575,
       "core_headroom": 157
     },
     "spectral_action": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 40,
-      "realized": 100,
-      "max": 800,
-      "core_headroom": 700
+      "n": 44,
+      "realized": 108,
+      "max": 880,
+      "core_headroom": 772
     }
   },
   "by_book": {
@@ -118,10 +118,10 @@
       "core_headroom": 92
     },
     "BOOK_02": {
-      "n": 38,
-      "realized": 452,
-      "max": 632,
-      "core_headroom": 180
+      "n": 51,
+      "realized": 568,
+      "max": 828,
+      "core_headroom": 260
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -1016,6 +1016,16 @@
     {
       "claim_id": "D0-PERRON-SCALE-FLOW-OWNER-001",
       "domain": "smooth_geometry",
+      "book": "BOOK_02",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "domain": "formal_core",
       "book": "BOOK_02",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
@@ -2092,6 +2102,46 @@
       "next": "CERT_SCAFFOLD",
       "points_gained": 2,
       "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
     }
   ],
   "leverage_gaps": [
@@ -2573,6 +2623,34 @@
     },
     {
       "claim_id": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -3267,6 +3345,13 @@
     {
       "claim_id": "D0-PERRON-SCALE-FLOW-OWNER-001",
       "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -9307,12 +9392,194 @@
       "book": "BOOK_02",
       "leverage": 3,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_02",
+      "leverage": 7,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 4.3,
+    "penalty_total": 4.0,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -9357,8 +9624,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 43,
-        "points": -4.3,
+        "count": 40,
+        "points": -4.0,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -9407,8 +9674,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 43,
-        "points": -4.3,
+        "count": 40,
+        "points": -4.0,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
