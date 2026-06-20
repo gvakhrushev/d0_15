@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 123
+- `CERT-CLOSED`: 124
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 138
+- `certificate`: 139
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 224
+- `formal_core`: 225
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1780,6 +1780,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof. [Iter5 finite-core] The gap-label MODULE shadow is now proved exactly (new claim D0-KTHEORY-GAP-MODULE-001): labels lie in the rank-2 module Z+Zphi^-1, principal labels phi^-1/phi^-2 sum to 1. The Bellissard THEOREM (IDS=K0-trace image) stays EXTERNAL-GAP (no Mathlib K-theory). FLAG: this row's cert vp_gap_labeling_d0_tiling_hull.py fabricates the IDS as (idx+1)/30 with a float (n,m) fit — a placeholder to RETIRE in favor of the exact shadow (referenced in ~10 places; retirement is a follow-up).
+
+### D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.LeptonFiniteGreenResolventOwner`
+- theorem: `lepton_finite_green_resolvent_owner`
+- cert: `vp_lepton_finite_green_resolvent_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Final Core Completion M6 -- POSITIVE OWNER] Closes the long-open resolvent target D0-LEPTON-SHELL-GREEN-RESOLVENT-001. The finite shell-torus Green resolvent G_shell(z)=(I-z*U_eff)^-1 over the cyclic companion cover U_eff=diag(P4,P3) (7x7 permutation, order lcm(4,3)=12, invertible with two-sided inverse U^11) exists on a NONEMPTY non-pole domain (z=0: det=1, G_shell(0)=I); det(I-zU)=(1-z^4)(1-z^3) so the pole set {z^4=1}U{z^3=1} is finite/cofinite domain. Lean D0.Matter.LeptonFiniteGreenResolventOwner (native_decide on U^12=1, U*U^11=1). HONESTY: resolvent layer ONLY -- canonical branch projectors stay no-go-bounded (D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001), mass decimals r_mu,r_tau stay external EFT/IR (HYP). Genuine positive internal closure balancing the maximality no-gos.
 
 ### D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001
 
@@ -4239,7 +4252,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_lepton_indirect_coefficient_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 dual-frontier] indirect charged-lepton coefficient origin. The direct raw-graph->17-digit-decimal route is retired by no-go (D0-BARE-GRAPH-DECIMAL-NOGO-001). The only admissible positive route is finite shell torus -> finite Green function -> ramification/Puiseux branch indices -> exact coefficient row -> optional EFT/IR decimal bridge. MISSING artifacts (exact): a finite Green function over the shell torus; the Puiseux/ramification extraction theorem (branch indices = the exact exponent row (0,1/4,1/3)); a branch-index uniqueness certificate; the EFT/IR matching functor for the decimal bridge. Status PROOF-TARGET; the exponent row is exact (THE 04.8) and the decimals stay HYP (D0-LEPTON-002); no decimal/PDG fit (vp_lepton_no_decimal_fit_guard.py, vp_lepton_ramification_puiseux.py).
+- notes: [Iter22 dual-frontier] indirect charged-lepton coefficient origin. The direct raw-graph->17-digit-decimal route is retired by no-go (D0-BARE-GRAPH-DECIMAL-NOGO-001). The only admissible positive route is finite shell torus -> finite Green function -> ramification/Puiseux branch indices -> exact coefficient row -> optional EFT/IR decimal bridge. MISSING artifacts (exact): a finite Green function over the shell torus; the Puiseux/ramification extraction theorem (branch indices = the exact exponent row (0,1/4,1/3)); a branch-index uniqueness certificate; the EFT/IR matching functor for the decimal bridge. Status PROOF-TARGET; the exponent row is exact (THE 04.8) and the decimals stay HYP (D0-LEPTON-002); no decimal/PDG fit (vp_lepton_no_decimal_fit_guard.py, vp_lepton_ramification_puiseux.py). [M6] Checkpoint 1 (finite Green resolvent) now OWNED by D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001; remaining = branch-index uniqueness (no-go-bounded) + external EFT/IR functor.
 
 ### D0-LEPTON-PUISEUX-DECIMAL-SECTION-001
 
