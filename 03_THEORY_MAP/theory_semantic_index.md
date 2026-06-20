@@ -13,7 +13,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 23
+- `NO-GO`: 25
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -25,11 +25,11 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 31
+- `no-go`: 33
 
 ## Domain counts
 
-- `cosmology`: 47
+- `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
 - `formal_core`: 221
@@ -602,6 +602,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: [Iter21 cert->Lean, verify-then-promote] Finite S_DE algebra machine-checked in D0.Cosmology.PhasonFlipEntropy: the explicit 2x2 phason-flip transfer (3/2,1/16,1/10,3/2) has characteristic 160*char = 160 lambda^2 - 480 lambda + 359 (phason_flip_transfer_matrix_has_sde_polynomial, norm_num+ring), and its roots are exactly the relaxation modes (sde_roots_are_phason_flip_relaxation_modes). SUPERSEDES the Phase-L note: the removed placeholder (stmt)(h):=h is gone; these are real proofs, re-verified by reading the module. External BAO/DESI survey comparison stays an empirical passport; the K0/Connes spectral-triple/phason-holonomy GAP-LABELING is external (see D0-SDE-K0-001), not part of this finite-algebra row.
 
+### D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo`
+- theorem: `cmb_canonical_smoothing_maximality_nogo`
+- cert: `vp_cmb_canonical_smoothing_maximality_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Final Core Completion M2] Maximality strengthening of D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001. The discrete spectral tilt n_eff-1=(k/P)P'(k) over modes {20,22,24,33} is non-constant across the admissible-smoothing family: THREE legitimate positive weightings give THREE distinct tilts (A=mult (12,10,8,2), B=low-lambda (12,5,2,1), C=high-lambda (2,4,8,12)); also varies with k. Lean D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo (norm_num). No canonical (k,u) is forced by present-core => n_s requires an EXTERNAL Planck-comparison passport; the internal forcing question is closed-negative. Not a performative gap.
+
 ### D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001
 
 - type: `no-go`
@@ -614,6 +627,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Cosmology n_s no-go] Closed-negative: the discrete spectral tilt n_eff-1=(k/P)P'(k) of the heat-smoothed phason power proxy over the nonzero K(9,11,13) modes {20,22,24,33} is NOT constant on the (k, positive-smoothing) domain -- it varies with the wavenumber k (tilt(1)!=tilt(2)) AND with the smoothing measure at fixed k (tilt(wA)!=tilt(wB)). Hence the bare spectrum + an unforced (k,u) does NOT determine a single n_s (exact Q arithmetic, norm_num). Lean D0.Cosmology.CMBNsSmoothingUndeterminedNoGo; cert vp_cmb_ns_smoothing_undetermined_nogo.py. This PROVES the obstruction behind D0-CMB-IDS-SMOOTHING-OWNER-001 (which stays PROOF-TARGET): a canonical internally-FORCED (k,u) selection remains the exact missing artifact. No Planck n_s/inflaton/survey datum.
+
+### D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.PhasonMagnitudeMaximalityNoGo`
+- theorem: `phason_magnitude_maximality_nogo`
+- cert: `vp_phason_magnitude_maximality_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Final Core Completion M2] The dark-energy SIGN is owned (D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001, Galois-forced negative, retained reading -phi). The MAGNITUDE MAP z->w_DE(z) is NOT owned: two admissible maps w1(z)=-phi-z, w2(z)=-phi-2z respect every owned invariant (negative on z>=0, anchor -phi at z=0) yet differ at z=1. Lean D0.Cosmology.PhasonMagnitudeMaximalityNoGo. The magnitude profile is underdetermined by present-core => needs an external physical-branch passport (DESI/CPL); the internal magnitude question is closed-negative. The Galois SIGN owner is untouched.
 
 ### D0-PHASON-WZ-KERNEL-ONLY-NOGO-001
 
@@ -3979,7 +4005,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_cmb_ns_laplacian_ids.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 deep-stitch F8] MISSING ARTIFACT (named, exact): a canonical internally-forced smoothing functional / evaluation rule that fixes the pair (k,u) -- the proxy evaluation scale k and any smoothing window u -- so that the discrete tilt proxy n_s-1=(k/P)dP/dk collapses to a SINGLE determined value. ABSENT: the bare K(9,11,13) Laplacian spectrum admits different n_s at different evaluation points (D0-CMB-NS-LAPLACIAN-IDS-OWNER-001 exhibits two: k=1 -> -29795504237/33500058900, k=2 -> -119488232/200575557). Until such an internally-forced rule is constructed, no single n_s is determined. No Planck n_s, no inflaton, no slow-roll may be inserted (rejected by cert controls in vp_cmb_ns_laplacian_ids.py). Distinct from the spectral-map gap D0-CMB-PHASON-SPECTRUM-OWNER-001 (which is the function n_s=f({lambda_i}) itself); this owner is the evaluation/smoothing-rule gap that would make that map single-valued. PROOF-TARGET.
+- notes: [Iter22 deep-stitch F8] MISSING ARTIFACT (named, exact): a canonical internally-forced smoothing functional / evaluation rule that fixes the pair (k,u) -- the proxy evaluation scale k and any smoothing window u -- so that the discrete tilt proxy n_s-1=(k/P)dP/dk collapses to a SINGLE determined value. ABSENT: the bare K(9,11,13) Laplacian spectrum admits different n_s at different evaluation points (D0-CMB-NS-LAPLACIAN-IDS-OWNER-001 exhibits two: k=1 -> -29795504237/33500058900, k=2 -> -119488232/200575557). Until such an internally-forced rule is constructed, no single n_s is determined. No Planck n_s, no inflaton, no slow-roll may be inserted (rejected by cert controls in vp_cmb_ns_laplacian_ids.py). Distinct from the spectral-map gap D0-CMB-PHASON-SPECTRUM-OWNER-001 (which is the function n_s=f({lambda_i}) itself); this owner is the evaluation/smoothing-rule gap that would make that map single-valued. PROOF-TARGET. [M2] Internal forcing route CLOSED-NEGATIVE by D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001 (>=3 admissible smoothings give distinct n_s); remaining artifact is purely EXTERNAL (Planck-comparison passport), not an internal theorem.
 
 ### D0-CMB-PHASON-SPECTRUM-OWNER-001
 
@@ -3992,7 +4018,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_cmb_phason_spectrum_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 four-physics P4] The CMB-like spectrum is claimed to come from the archive graph Laplacian spectrum, NOT a Planck fit. MISSING (exact): the formula n_s = f({lambda_i} of the Laplacian). The Laplacian-spectrum INPUT is internal (D0-ARCHIVE-LAPLACIAN-001 CORE); n_s is not yet derived. cert vp_cmb_phason_spectrum_owner.py (controls: 'Planck n_s=0.965 used as input' rejected; CMB spectrum without the Laplacian rejected; survey-fit promoted to core rejected). PROOF-TARGET; the Planck comparison is passport-only.
+- notes: [Iter22 four-physics P4] The CMB-like spectrum is claimed to come from the archive graph Laplacian spectrum, NOT a Planck fit. MISSING (exact): the formula n_s = f({lambda_i} of the Laplacian). The Laplacian-spectrum INPUT is internal (D0-ARCHIVE-LAPLACIAN-001 CORE); n_s is not yet derived. cert vp_cmb_phason_spectrum_owner.py (controls: 'Planck n_s=0.965 used as input' rejected; CMB spectrum without the Laplacian rejected; survey-fit promoted to core rejected). PROOF-TARGET; the Planck comparison is passport-only. [M2] n_s value not present-core forced (D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001); remaining = external Planck passport.
 
 ### D0-CVFT-001B
 
@@ -4278,7 +4304,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Owner of the physical dark-energy z-map reading of the archive window ratio. MISSING ARTIFACTS (neither exists): (1) a proven continuum interpolation w_N -> w_D0(u) from the finite integer-window ratio w_N=phi^(n-1)/(phi^n-1) (CERT-CLOSED at D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001) to a continuum function on the redshift coordinate; AND (2) the magnitude/sign normalization map carrying that internal POSITIVE ratio (-> +phi^-1 at the z->inf early end) onto the physical NEGATIVE w_DE on the LATE-TIME (z->0) window. The direction is the binding constraint: phi^-1 is the early-time (z->inf) limit, not the z->0 value, so the late-time normalization is an additional unproven step. Magnitude sub-piece overlaps D0-PHASON-WZ-EXPLICIT-FUNCTION-001 (also PROOF-TARGET); redshift/CPL reading is passport-only (D0-PHASON-WZ-CPL-PASSPORT-001, PASSPORT-CLOSED).
+- notes: Owner of the physical dark-energy z-map reading of the archive window ratio. MISSING ARTIFACTS (neither exists): (1) a proven continuum interpolation w_N -> w_D0(u) from the finite integer-window ratio w_N=phi^(n-1)/(phi^n-1) (CERT-CLOSED at D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001) to a continuum function on the redshift coordinate; AND (2) the magnitude/sign normalization map carrying that internal POSITIVE ratio (-> +phi^-1 at the z->inf early end) onto the physical NEGATIVE w_DE on the LATE-TIME (z->0) window. The direction is the binding constraint: phi^-1 is the early-time (z->inf) limit, not the z->0 value, so the late-time normalization is an additional unproven step. Magnitude sub-piece overlaps D0-PHASON-WZ-EXPLICIT-FUNCTION-001 (also PROOF-TARGET); redshift/CPL reading is passport-only (D0-PHASON-WZ-CPL-PASSPORT-001, PASSPORT-CLOSED). [M2] Magnitude map not present-core forced (D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001); sign owned (Galois), magnitude = external physical-branch passport (DESI/CPL).
 
 ### D0-PHASON-WZ-EXPLICIT-FUNCTION-001
 
@@ -4291,7 +4317,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_phason_wz_explicit_function.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 next-frontier] explicit internal phason EOS function w_D0(u). CLOSED already: the EOS form (D0-PHASON-PRESSURE-EOS-SCAFFOLD-001, w_D0=p/rho), the kernel-only no-go (D0-PHASON-WZ-KERNEL-ONLY-NOGO-001), and the finite-sequence w_N (D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001). MISSING artifacts (exact): (a) the continuum interpolation w_N -> w_D0(u); (b) the sign/normalization map from the POSITIVE internal archive ratio (w_N -> +phi^-1) to the NEGATIVE physical dark-energy w_DE(z). Status PROOF-TARGET; redshift/CPL is passport-only; no survey datum defines w_D0 (vp_phason_wz_passport_boundary.py).
+- notes: [Iter22 next-frontier] explicit internal phason EOS function w_D0(u). CLOSED already: the EOS form (D0-PHASON-PRESSURE-EOS-SCAFFOLD-001, w_D0=p/rho), the kernel-only no-go (D0-PHASON-WZ-KERNEL-ONLY-NOGO-001), and the finite-sequence w_N (D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001). MISSING artifacts (exact): (a) the continuum interpolation w_N -> w_D0(u); (b) the sign/normalization map from the POSITIVE internal archive ratio (w_N -> +phi^-1) to the NEGATIVE physical dark-energy w_DE(z). Status PROOF-TARGET; redshift/CPL is passport-only; no survey datum defines w_D0 (vp_phason_wz_passport_boundary.py). [M2] Explicit w_DE(z) magnitude profile not present-core forced (D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001); remaining = external passport.
 
 ### D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001
 

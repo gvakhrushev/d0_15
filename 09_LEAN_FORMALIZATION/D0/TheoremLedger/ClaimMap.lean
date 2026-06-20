@@ -596,7 +596,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ALPHA-PROFINITE-TOWER-NOGO-001", moduleName := "D0.Spectral.AlphaProfiniteTowerNoGo",
       theoremName := "profinite_tower_dixmier_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001", moduleName := "D0.Spectral.AlphaPresentCoreMaximalityNoGo",
-      theoremName := "alpha_present_core_maximality_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "alpha_present_core_maximality_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001", moduleName := "D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo",
+      theoremName := "cmb_canonical_smoothing_maximality_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001", moduleName := "D0.Cosmology.PhasonMagnitudeMaximalityNoGo",
+      theoremName := "phason_magnitude_maximality_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

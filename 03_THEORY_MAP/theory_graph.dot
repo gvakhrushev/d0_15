@@ -400,6 +400,8 @@ digraph D0Theory {
   "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001" [label="D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-ALPHA-PROFINITE-TOWER-NOGO-001" [label="D0-ALPHA-PROFINITE-TOWER-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001" [label="D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001" [label="D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001\\nNO-GO\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001" [label="D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001\\nNO-GO\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2666,4 +2668,16 @@ digraph D0Theory {
   "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001" -> "cert:vp_alpha_present_core_maximality_nogo.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo" [label="D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001" -> "module:D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo" [label="module"];
+  "cert:vp_cmb_canonical_smoothing_maximality_nogo.py" [label="vp_cmb_canonical_smoothing_maximality_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001" -> "cert:vp_cmb_canonical_smoothing_maximality_nogo.py" [label="cert"];
+  "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001" -> "domain:cosmology" [label="domain"];
+  "module:D0.Cosmology.PhasonMagnitudeMaximalityNoGo" [label="D0.Cosmology.PhasonMagnitudeMaximalityNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001" -> "module:D0.Cosmology.PhasonMagnitudeMaximalityNoGo" [label="module"];
+  "cert:vp_phason_magnitude_maximality_nogo.py" [label="vp_phason_magnitude_maximality_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001" -> "cert:vp_phason_magnitude_maximality_nogo.py" [label="cert"];
+  "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001" -> "domain:cosmology" [label="domain"];
 }

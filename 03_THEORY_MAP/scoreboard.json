@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 5214,
-    "track_fair_max": 7218,
-    "pct_strength": 72.2,
+    "realized": 5238,
+    "track_fair_max": 7242,
+    "pct_strength": 72.3,
     "core_realized": 4448,
     "core_potential": 6420,
     "core_headroom": 1972,
-    "n_claims": 399,
-    "n_active": 397,
+    "n_claims": 401,
+    "n_active": 399,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -68,9 +68,9 @@
       "core_headroom": 136
     },
     "cosmology": {
-      "n": 47,
-      "realized": 717,
-      "max": 895,
+      "n": 49,
+      "realized": 741,
+      "max": 919,
       "core_headroom": 178
     },
     "external_background": {
@@ -172,9 +172,9 @@
       "core_headroom": 88
     },
     "BOOK_08": {
-      "n": 75,
-      "realized": 988,
-      "max": 1404,
+      "n": 77,
+      "realized": 1012,
+      "max": 1428,
       "core_headroom": 412
     },
     "BOOK_05/06": {
@@ -8704,6 +8704,34 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_03",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "cosmology",
+      "book": "BOOK_08",
       "leverage": 0,
       "integrity_flag": null
     }

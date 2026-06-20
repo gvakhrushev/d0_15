@@ -107,6 +107,7 @@ import D0.Cosmology.ArchiveConvexity
 import D0.Cosmology.ArchiveHomogeneousState
 import D0.Cosmology.ArchiveVolumeBounds
 import D0.Cosmology.CLightconePercolationOwner
+import D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo
 import D0.Cosmology.CMBFiedlerFreezeout
 import D0.Cosmology.CMBLaplacianIDS
 import D0.Cosmology.CMBNsSmoothingUndeterminedNoGo
@@ -125,6 +126,7 @@ import D0.Cosmology.LinearizedEntropyFlow
 import D0.Cosmology.PhasonArchiveCapacityRedshift
 import D0.Cosmology.PhasonFlipEntropy
 import D0.Cosmology.PhasonInitialCovariance
+import D0.Cosmology.PhasonMagnitudeMaximalityNoGo
 import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
 import D0.Cosmology.ReheatingEnergyBudgetOwner
