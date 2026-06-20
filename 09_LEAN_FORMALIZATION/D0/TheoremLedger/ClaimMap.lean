@@ -590,7 +590,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001", moduleName := "D0.Geometry.ToralLucasPeriodicSeed",
       theoremName := "lucas_periodic_seed_defined", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001", moduleName := "D0.Geometry.ToralCanonicalMarkovNoGo",
-      theoremName := "toral_canonical_markov_partition_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "toral_canonical_markov_partition_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001", moduleName := "D0.Spectral.AlphaProfiniteSpectralTower",
+      theoremName := "profinite_tower_trace_class", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALPHA-PROFINITE-TOWER-NOGO-001", moduleName := "D0.Spectral.AlphaProfiniteTowerNoGo",
+      theoremName := "profinite_tower_dixmier_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

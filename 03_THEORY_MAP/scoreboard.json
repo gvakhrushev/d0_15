@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 5178,
-    "track_fair_max": 7174,
+    "realized": 5202,
+    "track_fair_max": 7206,
     "pct_strength": 72.2,
-    "core_realized": 4436,
-    "core_potential": 6400,
-    "core_headroom": 1964,
-    "n_claims": 396,
-    "n_active": 394,
+    "core_realized": 4448,
+    "core_potential": 6420,
+    "core_headroom": 1972,
+    "n_claims": 398,
+    "n_active": 396,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 217,
-      "realized": 3228,
-      "max": 4033,
-      "core_headroom": 795
+      "n": 219,
+      "realized": 3252,
+      "max": 4065,
+      "core_headroom": 803
     },
     "rg": {
       "n": 5,
@@ -358,10 +358,10 @@
       "core_headroom": 0
     },
     "BOOK_03": {
-      "n": 2,
-      "realized": 27,
-      "max": 27,
-      "core_headroom": 0
+      "n": 4,
+      "realized": 51,
+      "max": 59,
+      "core_headroom": 8
     },
     "BOOK_01/03": {
       "n": 1,
@@ -947,6 +947,16 @@
       "claim_id": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "domain": "formal_core",
+      "book": "BOOK_03",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -3096,6 +3106,13 @@
     },
     {
       "claim_id": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
@@ -8647,12 +8664,40 @@
       "book": "BOOK_06",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_03",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_03",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 4.4,
+    "penalty_total": 4.6,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -8697,8 +8742,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 44,
-        "points": -4.4,
+        "count": 46,
+        "points": -4.6,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -8747,8 +8792,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 44,
-        "points": -4.4,
+        "count": 46,
+        "points": -4.6,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

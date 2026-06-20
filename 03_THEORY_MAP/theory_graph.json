@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 396,
+    "claims": 398,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 122,
-      "NO-GO": 21,
+      "CERT-CLOSED": 123,
+      "NO-GO": 22,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 247,
+      "LEAN_PROVED": 249,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -29,13 +29,13 @@
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 29,
-      "certificate": 137,
+      "no-go": 30,
+      "certificate": 138,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 218,
+      "formal_core": 220,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -10449,7 +10449,7 @@
         "vp_alpha_feshbach_dixmier_owner.py"
       ],
       "status": "PROOF-TARGET",
-      "notes": "[Iter22 five-front A] The W_eff(z)=A-B(D-zI)^-1 C block scaffold (rank 3 / dim 30) and the finite-pole-sum residue are owned (D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001, CERT-CLOSED). MISSING (exact): the residue-NORMALIZATION equality Res_D0(W_eff)=Delta_alpha (the seam) via the 2^11 active-archive pairing -- this is the EXTERNAL Dixmier/Wodzicki residue extraction (D0-DIXMIER-RESIDUE-OWNER-001, ASSUMP-DIXMIER-TRACE); the bare zeta-residue route is closed-negative (1/ln phi transcendental, D0.Spectral.DeltaAlphaResidueBlocked). cert vp_alpha_feshbach_dixmier_owner.py. Status PROOF-TARGET; no CODATA alpha enters. Existing internal alpha closures (D0-ALPHA-ALG-CLOSED-001, D0-DELTA-ALPHA-SEAM-CLOSED-001) are NOT demoted.",
+      "notes": "[Iter22 five-front A] The W_eff(z)=A-B(D-zI)^-1 C block scaffold (rank 3 / dim 30) and the finite-pole-sum residue are owned (D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001, CERT-CLOSED). MISSING (exact): the residue-NORMALIZATION equality Res_D0(W_eff)=Delta_alpha (the seam) via the 2^11 active-archive pairing -- this is the EXTERNAL Dixmier/Wodzicki residue extraction (D0-DIXMIER-RESIDUE-OWNER-001, ASSUMP-DIXMIER-TRACE); the bare zeta-residue route is closed-negative (1/ln phi transcendental, D0.Spectral.DeltaAlphaResidueBlocked). cert vp_alpha_feshbach_dixmier_owner.py. Status PROOF-TARGET; no CODATA alpha enters. Existing internal alpha closures (D0-ALPHA-ALG-CLOSED-001, D0-DELTA-ALPHA-SEAM-CLOSED-001) are NOT demoted. PROFINITE-ROUTE-UPDATE: the profinite tower route is now closed-negative (trace-class, D0-ALPHA-PROFINITE-TOWER-NOGO-001); the seam is therefore the EXTERNAL residue-extraction (ASSUMP-DIXMIER-TRACE) and/or a Perron-phi^3 carrier -- no internal route supplies the coefficient.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -13275,6 +13275,82 @@
       "kind": "python_cert",
       "label": "vp_toral_canonical_markov_partition_nogo.py",
       "path": "05_CERTS/vp_toral_canonical_markov_partition_nogo.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_03",
+      "section": "03.tower",
+      "lean_module": "D0.Spectral.AlphaProfiniteSpectralTower",
+      "lean_theorem": "profinite_tower_trace_class",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_profinite_spectral_tower.py",
+      "python_cert": [
+        "vp_alpha_profinite_spectral_tower.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Profinite Dixmier campaign Phase A-C, Outcome B] The ADMISSIBLE profinite route (NOT the finite-pole/zeta route): the canonical phi-ladder refinement tower has weights w_N=r^N, r=phi^-3 (FORCED by the alpha moment formula alpha_alg^-1=mu_2 phi^-6+mu_1 phi^-3, depth-k term mu_k phi^(-3k)) and increment multiplicity 2^11 = dim Lambda^*(V11) (cites D0-ALPHA-MU2-FULL-LEDGER-001; profinite scaffold D0-ARCHIVE-LIGHTPROFINITE-001). Since 0<r<1 the singular values {r^N x 2^11} are SUMMABLE: the tower operator is trace-class, partial sums bounded by 2^11/(1-r) (theorem global_operator_in_weak_trace_ideal). OWNS the genuinely-absent weak-trace-ideal / log-Cesaro spectral construction ON the existing inverse-limit tower; NOT a new tower primitive, NOT an alpha derivation. The isometric J_N upgrade is a declared defect, firewalled to ASSUMP-RIEFFEL-GHP / ASSUMP-CONNES-RECONSTRUCTION.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaProfiniteSpectralTower.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.AlphaProfiniteSpectralTower",
+      "kind": "lean_module",
+      "label": "D0.Spectral.AlphaProfiniteSpectralTower",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaProfiniteSpectralTower.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_alpha_profinite_spectral_tower.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_profinite_spectral_tower.py",
+      "path": "05_CERTS/vp_alpha_profinite_spectral_tower.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_03",
+      "section": "03.tower",
+      "lean_module": "D0.Spectral.AlphaProfiniteTowerNoGo",
+      "lean_theorem": "profinite_tower_dixmier_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_profinite_tower_nogo.py",
+      "python_cert": [
+        "vp_alpha_profinite_tower_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Profinite Dixmier campaign, OUTCOME B] The canonical phi-ladder tower (D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001) is trace-class, so its ordinary log-Cesaro / Dixmier coefficient lim Sigma_K/log(1+K)=0, NOT mu_2=12288/5 (theorems log_cesaro_tendsto_zero, profinite_tower_dixmier_nogo via tendsto_nhds_unique). SHARPER MECHANISM (adversarial scout, independently re-derived): weight decay phi^(-3N) x golden carrier growth phi^(+N) (Perron eigenvalue phi of [[1,1],[1,0]], forced by 5-fold symmetry + M1) = phi^(-2N), STILL summable -- two powers of phi INSIDE the L^{1,inf} 1/j critical line. EXACT MISSING ARTIFACT: a canonical carrier with Perron eigenvalue phi^3 (mult ~phi^(3N)) onto the 1/j line; no frozen D0 sequence supplies it. NOT the invalid finite-pole route (complement of D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001). External Dixmier-residue owner + the seam stay unpromoted. No CODATA alpha, no zeta-residue=Dixmier, no T^44=I.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaProfiniteTowerNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.AlphaProfiniteTowerNoGo",
+      "kind": "lean_module",
+      "label": "D0.Spectral.AlphaProfiniteTowerNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaProfiniteTowerNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_alpha_profinite_tower_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_profinite_tower_nogo.py",
+      "path": "05_CERTS/vp_alpha_profinite_tower_nogo.py",
       "exists": true
     }
   ],
@@ -18897,6 +18973,36 @@
     {
       "source": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
       "target": "cert:vp_toral_canonical_markov_partition_nogo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "target": "module:D0.Spectral.AlphaProfiniteSpectralTower",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "target": "cert:vp_alpha_profinite_spectral_tower.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "target": "module:D0.Spectral.AlphaProfiniteTowerNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "target": "cert:vp_alpha_profinite_tower_nogo.py",
       "kind": "certified_by"
     }
   ]

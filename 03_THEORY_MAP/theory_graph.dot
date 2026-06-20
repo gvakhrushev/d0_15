@@ -397,6 +397,8 @@ digraph D0Theory {
   "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001" [label="D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001" [label="D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001" [label="D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001" [label="D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-ALPHA-PROFINITE-TOWER-NOGO-001" [label="D0-ALPHA-PROFINITE-TOWER-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2645,4 +2647,16 @@ digraph D0Theory {
   "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001" -> "cert:vp_toral_canonical_markov_partition_nogo.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Spectral.AlphaProfiniteSpectralTower" [label="D0.Spectral.AlphaProfiniteSpectralTower", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001" -> "module:D0.Spectral.AlphaProfiniteSpectralTower" [label="module"];
+  "cert:vp_alpha_profinite_spectral_tower.py" [label="vp_alpha_profinite_spectral_tower.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001" -> "cert:vp_alpha_profinite_spectral_tower.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Spectral.AlphaProfiniteTowerNoGo" [label="D0.Spectral.AlphaProfiniteTowerNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-ALPHA-PROFINITE-TOWER-NOGO-001" -> "module:D0.Spectral.AlphaProfiniteTowerNoGo" [label="module"];
+  "cert:vp_alpha_profinite_tower_nogo.py" [label="vp_alpha_profinite_tower_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-ALPHA-PROFINITE-TOWER-NOGO-001" -> "cert:vp_alpha_profinite_tower_nogo.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-ALPHA-PROFINITE-TOWER-NOGO-001" -> "domain:formal_core" [label="domain"];
 }

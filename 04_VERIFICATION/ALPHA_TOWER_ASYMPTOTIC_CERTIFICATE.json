@@ -1,0 +1,28 @@
+{
+  "status": "LIMIT_ZERO_NE_MU2 (Outcome B)",
+  "mu_2": 2457.6,
+  "trace_class_bound_C": 2680.866804,
+  "ordinary_log_cesaro_limit": 0.0,
+  "samples": [
+    {
+      "M": 1000,
+      "Sigma_K": 2680.866804,
+      "K": 2050048,
+      "log_cesaro": 184.462793
+    },
+    {
+      "M": 10000,
+      "Sigma_K": 2680.866804,
+      "K": 20482048,
+      "log_cesaro": 159.243086
+    },
+    {
+      "M": 100000,
+      "Sigma_K": 2680.866804,
+      "K": 204802048,
+      "log_cesaro": 140.084085
+    }
+  ],
+  "contrast_critical_1_over_j": 2560.279,
+  "note": "canonical phi-ladder tower is trace-class -> Sigma_K bounded -> Sigma_K/log(1+K) -> 0, NOT mu_2; the 1/j contrast (-> mu_2) needs a Perron-phi^3 carrier that no frozen D0 sequence supplies"
+}

@@ -7,13 +7,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 122
+- `CERT-CLOSED`: 123
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 21
+- `NO-GO`: 22
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -21,18 +21,18 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 137
+- `certificate`: 138
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 29
+- `no-go`: 30
 
 ## Domain counts
 
 - `cosmology`: 47
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 218
+- `formal_core`: 220
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1299,6 +1299,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter21 closure-sprint] D0-internal M1 selector for the depth-2 archive-return carrier: a SCALAR archive trace over the unresolved V11 block traces all 2^11 distinguishable subset states (full Boolean ledger P(V11)=Lambda*(V11)); any smaller carrier (Spin(11) spinor 32 needs an irreducible-module selector; edge-pairing 2 discards subset histories; V9=512/V13=8192 change the fixed zone) requires an external catalog -> inadmissible by M1. Hence mu2 = 2^11 * pi0 * phi^-2 = 12288/5 (pi0=(6/5)phi^2). cert vp_alpha_mu2_full_ledger.py (can-FAIL: subcarrier + wrong-pi0 controls). CLOSES the D0-internal scalar-trace selector that was the named PROOF-TARGET inside D0-CVFT-F1. SCOPE: the physical Feshbach W_eff residue-extraction REALISING this scalar trace stays the EXTERNAL Dixmier/Wodzicki owner D0-DIXMIER-RESIDUE-OWNER-001 (ASSUMP-DIXMIER-TRACE); the mu2 arithmetic itself is already Lean-proved (D0-DELTA-ALPHA-MOMENT-001).
+
+### D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_03`
+- module: `D0.Spectral.AlphaProfiniteSpectralTower`
+- theorem: `profinite_tower_trace_class`
+- cert: `vp_alpha_profinite_spectral_tower.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Profinite Dixmier campaign Phase A-C, Outcome B] The ADMISSIBLE profinite route (NOT the finite-pole/zeta route): the canonical phi-ladder refinement tower has weights w_N=r^N, r=phi^-3 (FORCED by the alpha moment formula alpha_alg^-1=mu_2 phi^-6+mu_1 phi^-3, depth-k term mu_k phi^(-3k)) and increment multiplicity 2^11 = dim Lambda^*(V11) (cites D0-ALPHA-MU2-FULL-LEDGER-001; profinite scaffold D0-ARCHIVE-LIGHTPROFINITE-001). Since 0<r<1 the singular values {r^N x 2^11} are SUMMABLE: the tower operator is trace-class, partial sums bounded by 2^11/(1-r) (theorem global_operator_in_weak_trace_ideal). OWNS the genuinely-absent weak-trace-ideal / log-Cesaro spectral construction ON the existing inverse-limit tower; NOT a new tower primitive, NOT an alpha derivation. The isometric J_N upgrade is a declared defect, firewalled to ASSUMP-RIEFFEL-GHP / ASSUMP-CONNES-RECONSTRUCTION.
 
 ### D0-ARCHIVE-ENTROPY-001
 
@@ -3692,6 +3705,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Deprecated or historical row; not a live promotion path.
 - notes: [Iter15 trace-leg split — CLOSED] The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is proved (CORE) as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, with the phi^-5 seam = xi5 (D0-XI5). This separate trace-target row is therefore redundant and is DEPRECATED (superseded, not abandoned): the trace leg is closed at D0-ALPHA-ZETA-RESIDUE-001. The remaining open EDGE leg is the unitary-dilation / torus-ramification Puiseux target D0-EDGE-002.
 
+### D0-ALPHA-PROFINITE-TOWER-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_03`
+- module: `D0.Spectral.AlphaProfiniteTowerNoGo`
+- theorem: `profinite_tower_dixmier_nogo`
+- cert: `vp_alpha_profinite_tower_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Profinite Dixmier campaign, OUTCOME B] The canonical phi-ladder tower (D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001) is trace-class, so its ordinary log-Cesaro / Dixmier coefficient lim Sigma_K/log(1+K)=0, NOT mu_2=12288/5 (theorems log_cesaro_tendsto_zero, profinite_tower_dixmier_nogo via tendsto_nhds_unique). SHARPER MECHANISM (adversarial scout, independently re-derived): weight decay phi^(-3N) x golden carrier growth phi^(+N) (Perron eigenvalue phi of [[1,1],[1,0]], forced by 5-fold symmetry + M1) = phi^(-2N), STILL summable -- two powers of phi INSIDE the L^{1,inf} 1/j critical line. EXACT MISSING ARTIFACT: a canonical carrier with Perron eigenvalue phi^3 (mult ~phi^(3N)) onto the 1/j line; no frozen D0 sequence supplies it. NOT the invalid finite-pole route (complement of D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001). External Dixmier-residue owner + the seam stay unpromoted. No CODATA alpha, no zeta-residue=Dixmier, no T^44=I.
+
 ### D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001
 
 - type: `no-go`
@@ -3914,7 +3940,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_alpha_feshbach_dixmier_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 five-front A] The W_eff(z)=A-B(D-zI)^-1 C block scaffold (rank 3 / dim 30) and the finite-pole-sum residue are owned (D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001, CERT-CLOSED). MISSING (exact): the residue-NORMALIZATION equality Res_D0(W_eff)=Delta_alpha (the seam) via the 2^11 active-archive pairing -- this is the EXTERNAL Dixmier/Wodzicki residue extraction (D0-DIXMIER-RESIDUE-OWNER-001, ASSUMP-DIXMIER-TRACE); the bare zeta-residue route is closed-negative (1/ln phi transcendental, D0.Spectral.DeltaAlphaResidueBlocked). cert vp_alpha_feshbach_dixmier_owner.py. Status PROOF-TARGET; no CODATA alpha enters. Existing internal alpha closures (D0-ALPHA-ALG-CLOSED-001, D0-DELTA-ALPHA-SEAM-CLOSED-001) are NOT demoted.
+- notes: [Iter22 five-front A] The W_eff(z)=A-B(D-zI)^-1 C block scaffold (rank 3 / dim 30) and the finite-pole-sum residue are owned (D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001, CERT-CLOSED). MISSING (exact): the residue-NORMALIZATION equality Res_D0(W_eff)=Delta_alpha (the seam) via the 2^11 active-archive pairing -- this is the EXTERNAL Dixmier/Wodzicki residue extraction (D0-DIXMIER-RESIDUE-OWNER-001, ASSUMP-DIXMIER-TRACE); the bare zeta-residue route is closed-negative (1/ln phi transcendental, D0.Spectral.DeltaAlphaResidueBlocked). cert vp_alpha_feshbach_dixmier_owner.py. Status PROOF-TARGET; no CODATA alpha enters. Existing internal alpha closures (D0-ALPHA-ALG-CLOSED-001, D0-DELTA-ALPHA-SEAM-CLOSED-001) are NOT demoted. PROFINITE-ROUTE-UPDATE: the profinite tower route is now closed-negative (trace-class, D0-ALPHA-PROFINITE-TOWER-NOGO-001); the seam is therefore the EXTERNAL residue-extraction (ASSUMP-DIXMIER-TRACE) and/or a Perron-phi^3 carrier -- no internal route supplies the coefficient.
 
 ### D0-CKM-CLASS5-PARITY-EXCLUSION-001
 

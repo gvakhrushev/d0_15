@@ -1,0 +1,22 @@
+{
+  "route": "profinite tower (ADMISSIBLE) -- NOT the finite-pole/zeta route",
+  "weight_law": "w_N = r^N, r = phi^-3 (forced by alpha_alg^-1 = mu_2 phi^-6 + mu_1 phi^-3)",
+  "increment_multiplicity": "2^11 = dim Lambda^*(V11) (D0-ALPHA-MU2-FULL-LEDGER-001)",
+  "mu_2": "12288/5 = 6*2^11/5",
+  "mu_1": "1/3",
+  "mu_0": 0,
+  "trace_class_bound_C": 2680.8668044798924,
+  "outcome": "B -- canonical tower exists (trace-class) but the critical log-asymptotic FAILS; log-Cesaro coeff 0 != mu_2",
+  "tower_status": "TOWER-AVAILABLE-WITH-DECLARED-DEFECT (inverse-limit downward projections exist; isometric J_N absent, firewalled to ASSUMP-RIEFFEL-GHP/ASSUMP-CONNES-RECONSTRUCTION)",
+  "sharper_mechanism": "phi^(-3N) weight x phi^(+N) golden carrier = phi^(-2N), still summable (two powers inside L^{1,inf})",
+  "missing_artifact": "a canonical carrier with Perron eigenvalue phi^3 (mult ~phi^(3N)) onto the 1/j critical line",
+  "closed_this_campaign": [
+    "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001 (CERT)",
+    "D0-ALPHA-PROFINITE-TOWER-NOGO-001 (NO-GO)"
+  ],
+  "not_promoted": [
+    "D0-DIXMIER-RESIDUE-OWNER-001 (external bridge)",
+    "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001 (PROOF-TARGET seam)"
+  ],
+  "forbidden": "finite heat pole, zeta residue = Dixmier trace, CODATA alpha, external trace state, 2^11 by hand, all-routes-closed, T^44=I-style"
+}

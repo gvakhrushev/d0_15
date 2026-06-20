@@ -1185,7 +1185,8 @@ Sign note: only `|Δα|` enters the beat rate.  The linear sign of `Δα` is not
 The support ratio `Δm²_{21}/Δm²_{31}=δ_0/4` and the bridge "one external oscillation scale fixes the rest" are unchanged.  What 04.9.1 adds is the *mechanism* under that bridge: the leakage mode oscillates because the seam carries two co-present whitening modes whose forced detuning `Δα` cannot relax to zero, and the beat frequency is `∝ Δα`.  Until the beat cert is written, [THE 04.9.beat] / [LEM 04.9.beat.Δα] / [COR 04.9.beat.f] carry an open cert obligation; the IceCube comparison remains downstream in the passport layer.
 
 **Neutrino mass as a closed passport (`D0-NEUTRINO-MASS-PASSPORT-001`, `PASSPORT-CLOSED`).** The D0-internal object is the dimensionless sterile-seam channel `P_sterile := Δα²`, over the CORE-exact gluing anomaly `Δα` (`D0-DELTA-ALPHA-EXACT-001`). The external reading `m_ν/m_e ~ P_sterile` is *packaging*: external neutrino data may be compared against it but may **not** tune `Δα`, `μ₁`, `μ₂`, or `α` (no reverse selection). Neutrino mass is **not** a CORE theorem; the bridge is closed as a passport per `D0-BRIDGE-COMPRESSION-001` (cert `vp_neutrino_mass_passport.py`).
-## 04.10 CKM as finite basis origin, not a free matrix
+
+**[Alpha/neutrino seam stays dimensionless].** The profinite Dixmier campaign (Outcome B) closes only dimensionless internal structure (a trace-class no-go); it makes NO mass-passport promotion and does not derive the measured alpha. The alpha/neutrino seam remains dimensionless. See `D0-ALPHA-PROFINITE-TOWER-NOGO-001`.## 04.10 CKM as finite basis origin, not a free matrix
 
 ### Arity first: the CKM parameter count is forced, not assumed
 

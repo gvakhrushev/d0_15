@@ -845,7 +845,7 @@ D0.Geometry.SpectralActionLadder.higher_powers_floor_bounded
 ```
 
 
-## 03.21a Gap labels do not create new action sections
+**[Finite moments vs profinite log-trace].** The finite spectral moments `mu_0=0, mu_1=1/3, mu_2=12288/5` are owned exactly (`D0-DELTA-ALPHA-MOMENT-001`, `D0-ALPHA-MU2-FULL-LEDGER-001`). They are NOT a Dixmier logarithmic trace coefficient: the canonical phi-ladder profinite tower is trace-class, so its ordinary log-Cesaro coefficient `lim Sigma_K/log(1+K)=0`, not `mu_2` (`D0-ALPHA-PROFINITE-TOWER-NOGO-001`, Outcome B, Lean `D0.Spectral.AlphaProfiniteTowerNoGo`). The sharper mechanism: weight decay `phi^(-3N)` times the golden carrier growth `phi^(+N)` is `phi^(-2N)` -- still summable, two powers of `phi` inside the `L^{1,inf}` `1/j` critical line; reaching it needs a carrier with Perron eigenvalue `phi^3` that no frozen D0 sequence supplies. The Dixmier residue-extraction stays the external owner-edge (`D0-DIXMIER-RESIDUE-OWNER-001` / ASSUMP-DIXMIER-TRACE); the residue-normalization seam (`D0-ALPHA-FESHBACH-DIXMIER-OWNER-001`) stays PROOF-TARGET. See `04_VERIFICATION/ALPHA_DIXMIER_BLOCKERS.csv`.## 03.21a Gap labels do not create new action sections
 
 The topological gap labels assigned to spectral gaps do not introduce new action sections or ad-hoc scalar field parameters. They serve as discrete indices of existing sectors on the tiling hull rather than defining new energy anchors. All calculations remain strictly constrained by the single metrological section $\Lambda_{act} = 38 m_e c^2$. The Lean owner records that gap labeling requires a frozen operator, and the integration is checked by the final bridge index.
 
