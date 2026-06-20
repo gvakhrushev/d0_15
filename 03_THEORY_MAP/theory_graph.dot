@@ -389,6 +389,7 @@ digraph D0Theory {
   "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001" [label="D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001" [label="D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001\\nCERT-CLOSED\\ncosmology", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001" [label="D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001\\nNO-GO\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-SM-HYPERCHARGE-ROW-OWNER-001" [label="D0-SM-HYPERCHARGE-ROW-OWNER-001\\nCERT-CLOSED\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2589,4 +2590,10 @@ digraph D0Theory {
   "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001" -> "cert:vp_cmb_ns_smoothing_undetermined_nogo.py" [label="cert"];
   "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001" -> "domain:cosmology" [label="domain"];
+  "module:D0.Matter.SMHyperchargeRowOwner" [label="D0.Matter.SMHyperchargeRowOwner", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-SM-HYPERCHARGE-ROW-OWNER-001" -> "module:D0.Matter.SMHyperchargeRowOwner" [label="module"];
+  "cert:vp_sm_hypercharge_row_owner.py" [label="vp_sm_hypercharge_row_owner.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-SM-HYPERCHARGE-ROW-OWNER-001" -> "cert:vp_sm_hypercharge_row_owner.py" [label="cert"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-SM-HYPERCHARGE-ROW-OWNER-001" -> "domain:empirical_passport" [label="domain"];
 }

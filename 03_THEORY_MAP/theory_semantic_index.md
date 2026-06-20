@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 117
+- `CERT-CLOSED`: 118
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 132
+- `certificate`: 133
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
@@ -30,7 +30,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 47
-- `empirical_passport`: 28
+- `empirical_passport`: 29
 - `external_background`: 1
 - `formal_core`: 211
 - `frontier`: 36
@@ -786,6 +786,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Finite formal origin: non-permutation phason holonomy on the Torus Core-13 shell loop with rational unitary transport and chiral orientation twist; external CKM comparison passport/certificate is not core and no PDG entries are used. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-SM-HYPERCHARGE-ROW-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_04`
+- module: `D0.Matter.SMHyperchargeRowOwner`
+- theorem: `sm_hypercharge_row_owner`
+- cert: `vp_sm_hypercharge_row_owner.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Gauge-Matter campaign] The 5-field one-generation hypercharge row is the UNIQUE anomaly-free assignment up to (i) normalization (electron Y_e=1), (ii) u<->d labeling, (iii) excluding the degenerate Y_Q=0 branch. Three linear anomaly conditions give the 2-param family (a,t): Y_Q=a,Y_u=-a+t,Y_d=-a-t,Y_L=-3a,Y_e=6a; the cubic U(1)^3 anomaly factors EXACTLY as -18a(t-3a)(t+3a), so anomaly-free rays = {a=0}U{t=3a}U{t=-3a}; SM is the nondegenerate t=-3a branch at a=1/6 -> (1/6,-2/3,1/3,-1/2,1). This RESOLVES the eight-front 'row not unique' finding: the 2-dim freedom was the ADDED nu_R (B-L) direction (6-field, D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001), not the row. Lean D0.Matter.SMHyperchargeRowOwner (ring/norm_num). No SM table/PDG/246 GeV input. The flow->Weyl map Phi (D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001) stays PROOF-TARGET; the row is owned via the anomaly route.
 
 ### D0-VACUUM-CUBIC-WINDOW-001
 

@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 388,
+    "claims": 389,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 117,
+      "CERT-CLOSED": 118,
       "NO-GO": 18,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 239,
+      "LEAN_PROVED": 240,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -30,7 +30,7 @@
       "core": 163,
       "bridge": 28,
       "no-go": 26,
-      "certificate": 132,
+      "certificate": 133,
       "deprecated": 3,
       "frontier": 36
     },
@@ -40,7 +40,7 @@
       "gauge_bridge": 21,
       "smooth_geometry": 30,
       "spectral_action": 6,
-      "empirical_passport": 28,
+      "empirical_passport": 29,
       "cosmology": 47,
       "external_background": 1,
       "si_calibration": 2,
@@ -12972,6 +12972,44 @@
       "label": "vp_cmb_ns_smoothing_undetermined_nogo.py",
       "path": "05_CERTS/vp_cmb_ns_smoothing_undetermined_nogo.py",
       "exists": true
+    },
+    {
+      "id": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.11",
+      "lean_module": "D0.Matter.SMHyperchargeRowOwner",
+      "lean_theorem": "sm_hypercharge_row_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_sm_hypercharge_row_owner.py",
+      "python_cert": [
+        "vp_sm_hypercharge_row_owner.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Gauge-Matter campaign] The 5-field one-generation hypercharge row is the UNIQUE anomaly-free assignment up to (i) normalization (electron Y_e=1), (ii) u<->d labeling, (iii) excluding the degenerate Y_Q=0 branch. Three linear anomaly conditions give the 2-param family (a,t): Y_Q=a,Y_u=-a+t,Y_d=-a-t,Y_L=-3a,Y_e=6a; the cubic U(1)^3 anomaly factors EXACTLY as -18a(t-3a)(t+3a), so anomaly-free rays = {a=0}U{t=3a}U{t=-3a}; SM is the nondegenerate t=-3a branch at a=1/6 -> (1/6,-2/3,1/3,-1/2,1). This RESOLVES the eight-front 'row not unique' finding: the 2-dim freedom was the ADDED nu_R (B-L) direction (6-field, D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001), not the row. Lean D0.Matter.SMHyperchargeRowOwner (ring/norm_num). No SM table/PDG/246 GeV input. The flow->Weyl map Phi (D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001) stays PROOF-TARGET; the row is owned via the anomaly route.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/SMHyperchargeRowOwner.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.SMHyperchargeRowOwner",
+      "kind": "lean_module",
+      "label": "D0.Matter.SMHyperchargeRowOwner",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/SMHyperchargeRowOwner.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_sm_hypercharge_row_owner.py",
+      "kind": "python_cert",
+      "label": "vp_sm_hypercharge_row_owner.py",
+      "path": "05_CERTS/vp_sm_hypercharge_row_owner.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -18473,6 +18511,21 @@
     {
       "source": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
       "target": "cert:vp_cmb_ns_smoothing_undetermined_nogo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "target": "module:D0.Matter.SMHyperchargeRowOwner",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "target": "cert:vp_sm_hypercharge_row_owner.py",
       "kind": "certified_by"
     }
   ]

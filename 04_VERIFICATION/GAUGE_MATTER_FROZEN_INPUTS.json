@@ -1,0 +1,28 @@
+{
+  "scene": "K(9,11,13)",
+  "vertices": 33,
+  "edges": 359,
+  "cycle_rank": 327,
+  "rank_A": 3,
+  "nullity_A": 30,
+  "DSigma_roles": [
+    "Code",
+    "Canon",
+    "Test",
+    "History",
+    "Access"
+  ],
+  "q_T": 44,
+  "hypercharge_row_5field": {
+    "Q_L": "1/6",
+    "u_Rc": "-2/3",
+    "d_Rc": "1/3",
+    "L_L": "-1/2",
+    "e_Rc": "1"
+  },
+  "closed_this_campaign": [
+    "D0-SM-HYPERCHARGE-ROW-OWNER-001"
+  ],
+  "global_closure_claimed": false,
+  "note": "5-field hypercharge row is unique up to normalization + u<->d labeling + excluding degenerate Y_Q=0 branch; B-L is the added-nu_R (6-field) direction. No SM table / PDG / 246 GeV input."
+}
