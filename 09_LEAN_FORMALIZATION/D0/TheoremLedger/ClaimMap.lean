@@ -622,7 +622,17 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001", moduleName := "D0.Bridge.DixmierTraceBridge",
       theoremName := "dixmier_residue_conditional", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001", moduleName := "D0.Bridge.AdlerWeissBridge",
-      theoremName := "", status := ClaimStatus.pythonCertClosed }
+      theoremName := "", status := ClaimStatus.pythonCertClosed },
+    { claimId := "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001", moduleName := "D0.VNext.PerronGNSTower",
+      theoremName := "perron_gns_tower_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001", moduleName := "D0.VNext.AFMartingaleDiracScaleNoGo",
+      theoremName := "dirac_scale_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001", moduleName := "D0.VNext.AFD0LaplacianComparisonNoGo",
+      theoremName := "laplacian_tower_compatibility_no_go", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001", moduleName := "D0.VNext.PerronGNSTower",
+      theoremName := "perron_gns_tower_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001", moduleName := "D0.VNext.AFD0LaplacianComparisonNoGo",
+      theoremName := "laplacian_tower_compatibility_no_go", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

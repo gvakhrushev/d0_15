@@ -1,0 +1,11 @@
+{
+  "laplacian_defect_E_L_N": "NOT canonically definable (no comparison map Xi_N; 33 skipped: 13<33<34)",
+  "feshbach_defects_E_P_Q_F": "blocked upstream (need Xi_N)",
+  "gns_isometry_defect": "exact (0): trace-preserving inclusion is exactly isometric",
+  "scale_family": {
+    "phi^N": "increasing->inf (admissible)",
+    "2^N": "increasing->inf (admissible)",
+    "distinct_at_N=1": "phi != 2"
+  },
+  "control": "no summable/phi-decaying defect bound is claimed where the comparison map is absent"
+}

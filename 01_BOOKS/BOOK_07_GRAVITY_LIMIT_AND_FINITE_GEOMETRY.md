@@ -71,7 +71,7 @@ D0.Geometry.finite_spin2_tt_carrier_closed
 
 This passport remains an observable-transfer boundary. The D0 memory torus is a separate internal shell geometry and does not replace the terminal four-role TT projector. Active contraction and archive expansion are eigen-branches of one toral automorphism; determinant invariant gives exact phase-volume balance.
 
-## 07.1 Standard reading of finite gravity language
+**[vNext quantum-metric passport pointer].** The frozen Fibonacci AF/GNS tower can be tested against an external quantum-metric formalism (Lip-norm, propinquity, inductive spectral triple) -- `D0-VNEXT-QUANTUM-METRIC-EXTENSION-PASSPORT-001` (PASSPORT-CLOSED). No gravity claim is upgraded; no primitive smooth manifold is asserted in CORE.## 07.1 Standard reading of finite gravity language
 
 D0 gravitational language is read as finite spectral geometry. `Line covariance` means covariance of a finite line/edge transport structure. `Length-depth` is a spectral-depth/scale-separation invariant. `Archive boundary` means a boundary of the traced-out complement in the finite geometric response system.
 

@@ -1,0 +1,24 @@
+{
+  "campaign": "D0 vNext Isometric Dirac Tower Fast-Track",
+  "candidate_primitive": "PRIM-ISOMETRIC-DIRAC-J_N",
+  "frozen_inputs": {
+    "incidence": "M_phi=[[1,1],[1,0]] (recovered)",
+    "af_dims": [
+      2,
+      5,
+      13,
+      34,
+      89,
+      233,
+      610
+    ],
+    "perron_trace": "(phi^-1,phi^-2); trace compat 1+phi^-1=phi",
+    "scale_ratio": "Lambda_(N+1)/Lambda_N=phi",
+    "d0_laplacian": "K(9,11,13) FIXED 33-dim spectrum {0:1,20:12,22:10,24:8,33:2}",
+    "support_tower": "S_N downward projections (inverse limit)"
+  },
+  "outcome": "A(isometry)+C(scale)+D(Laplacian): GNS isometry tower EXISTS (CERT); Dirac scale underdetermined (NO-GO); D0-Laplacian comparison obstructed (NO-GO)",
+  "primitive_verdict": "PRIM-ISOMETRIC-DIRAC-J_N realizes the isometry for free, but the full Dirac-compatible tower SPLITS into +2 primitives (scale selection + comparison map Xi_N)",
+  "downstream_gates": "alpha/CMB/Higgs/smooth-geometry gates STAY CLOSED (require the Dirac-compatible tower, which is obstructed)",
+  "forbidden": "manual J_N, chosen Dirac spectrum, AF=D0 carrier identification, smooth manifold in CORE, alpha/n_s/Higgs prediction"
+}

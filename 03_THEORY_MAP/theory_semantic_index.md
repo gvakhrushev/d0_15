@@ -7,38 +7,38 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 127
+- `CERT-CLOSED`: 128
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 28
+- `NO-GO`: 31
 - `NO_GO_PROVED`: 8
-- `PASSPORT-CLOSED`: 14
-- `PROOF-TARGET`: 37
+- `PASSPORT-CLOSED`: 15
+- `PROOF-TARGET`: 39
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 147
+- `certificate`: 149
 - `core`: 165
 - `deprecated`: 3
-- `frontier`: 37
-- `no-go`: 36
+- `frontier`: 39
+- `no-go`: 39
 
 ## Domain counts
 
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 231
-- `frontier`: 37
+- `formal_core`: 235
+- `frontier`: 39
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 7
 - `si_calibration`: 2
-- `smooth_geometry`: 32
+- `smooth_geometry`: 33
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -2197,6 +2197,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Working method] Codifies the verify-then-build closure protocol (04_VERIFICATION/VERIFIED_CLOSURE_PROTOCOL.md) from six campaigns: Phase 0-6, the MANDATORY no-Lean-before-grounded-scout rule, the 5 scout verdicts (CERT-CLOSABLE/NO-GO-CLOSABLE/PARTIAL-CLOSABLE/NOT-CLOSABLE/DUPLICATE-ALREADY-OWNED), the Lean integration recurring fixes (noncomputable R-division, div_lt_iff0, sub-namespaces, no norm_num after closing simp, neg_neg not rfl, build-before-register), the negation-aware no-overclaim discipline, the negative-control rule, and the closure report template. Cert vp_verified_closure_protocol.py (control rejects a protocol text missing a required section). Future agents MUST follow it before attempting remaining blockers.
 
+### D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.PerronGNSTower`
+- theorem: `perron_gns_tower_owner`
+- cert: `vp_vnext_perron_gns_tower.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [vNext Fast-Track Phase A] The canonical Perron-GNS isometric tower EXISTS: the Perron trace is refinement-compatible (1+phi^-1=phi, the scalar form of M_phi t_(N+1)=t_N) and any trace-preserving *-inclusion induces an isometry of GNS spaces <iota x,iota y>=<x,y> (gns_refinement_isometry). Realizes the ISOMETRY half of PRIM-ISOMETRIC-DIRAC-J_N for free from the Perron trace -- no synthetic embedding, no chosen state. Lean D0.VNext.PerronGNSTower (+ FibonacciAFAlgebra). vNext FORMALISM, NOT a present-core physical Hilbert identification.
+
 ### D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001
 
 - type: `certificate`
@@ -4030,6 +4043,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Final Core Completion M4] Maximality strengthening of D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001. The forced dynamical invariants (spectrum {phi,psi}, entropy log phi, trace, det -- all from the integral conjugacy C T C^-1 = -M_phi) do NOT determine the Markov adjacency/partition. Distinct admissible nonnegative integer adjacencies all carry the golden Perron data phi: Mphi=[[1,1],[1,0]] (Mphi^2=Mphi+I, 2 rectangles); M2=[[0,1],[1,1]] (same trace/det, !=Mphi); A3=[[1,1,0],[1,0,0],[0,1,0]] (A3^3=A3^2+A3, charpoly x(x^2-x-1), 3 rectangles). Lean D0.Geometry.ToralSeedMarkovMaximalityNoGo (native_decide). A 2-rectangle and a 3-rectangle admissible adjacency realize the same golden dynamics => partition/adjacency/rectangle-count NOT forced by the seed; a canonical partition needs an external Adler-Weiss/Williams choice (D0-ADLER-WEISS-PARTITION-OWNER-001, passport). Closed-negative.
 
+### D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFD0LaplacianComparisonNoGo`
+- theorem: `laplacian_tower_compatibility_no_go`
+- cert: `vp_vnext_dirac_laplacian_compatibility.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext Fast-Track Phase C, OUTCOME D] No canonical comparison map Xi_N: the frozen D0 K(9,11,13) Laplacian is a FIXED 33-dim carrier; the AF/GNS tower is inductive with dims 2,5,13,34,... that SKIP 33 (13<33<34), and the towers run opposite directions. So the Dirac-compatible lift is OBSTRUCTED -- the recovered AF tower is a correct FORMALISM object but NOT the inductive completion of the D0 Laplacian dynamics. Missing PRIM-COMPARISON-MAP-XI-N. Lean D0.VNext.AFD0LaplacianComparisonNoGo.
+
+### D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFD0LaplacianComparisonNoGo`
+- theorem: `laplacian_tower_compatibility_no_go`
+- cert: `vp_vnext_dirac_laplacian_compatibility.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext Fast-Track master NO-GO] PRIM-ISOMETRIC-DIRAC-J_N does NOT collapse to one extension datum: the GNS isometry is realized for free, but a Dirac-compatible tower requires BOTH a forced scale law (scale underdetermined, Outcome C) AND a canonical comparison map Xi_N (obstructed, Outcome D). The single primitive splits into +2 independent primitives. Lean D0.VNext.AFD0LaplacianComparisonNoGo.
+
+### D0-VNEXT-MARTINGALE-DIRAC-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_03`
+- module: `D0.VNext.AFMartingaleDiracScaleNoGo`
+- theorem: `dirac_scale_underdetermined`
+- cert: `vp_vnext_canonical_dirac_scale_selection.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext Fast-Track Phase B, OUTCOME C] The martingale increments are nonzero (AF dims strictly grow) but the Dirac scale is NOT uniquely forced: lambda_N=phi^N and lambda_N=2^N are each strictly increasing to infinity (compact-resolvent AF triples, a la Christensen-Ivan) yet differ at N=1 (phi!=2). Scale selection is a SECOND independent primitive (PRIM-DIRAC-SCALE-SELECTION). Lean D0.VNext.AFMartingaleDiracScaleNoGo.
+
 ### D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY
 
 - type: `no-go`
@@ -4565,6 +4617,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter22 five-front C] The D0-internal profinite-code conjugacy is CLOSED (D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001: equal cylinder languages AND frequencies). MISSING (exact): full TOPOLOGICAL conjugacy T = golden SFT, which needs an explicit Williams shift-equivalence matrix relating N_tau=[[0,1],[1,1]] to T's SFT realization (external owner D0-ADLER-WEISS-PARTITION-OWNER-001). cert vp_toral_time_markov_conjugacy.py (controls: external-theorem-as-proof / language-without-frequency / short-window-only rejected). PROOF-TARGET.
+
+### D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_vnext_af_feshbach_compatibility.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [vNext Fast-Track Phase D] Transporting the retained/archive split (P_N,Q_N,F_N) to the AF carrier needs the comparison map Xi_N, which is obstructed (Outcome D). So the Feshbach refinement defects E_P,N/E_Q,N/E_F,N are blocked upstream. PROOF-TARGET; missing PRIM-COMPARISON-MAP-XI-N (same primitive as the Laplacian comparison).
+
+### D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: `D0.VNext.PerronGNSTower`
+- theorem: `perron_gns_tower_owner`
+- cert: `vp_vnext_perron_gns_tower.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [vNext Fast-Track master] The full Dirac-compatible isometric tower. The ISOMETRY is realized (CERT, D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001), but the Dirac SCALE is underdetermined (Outcome C) and the D0-Laplacian comparison is obstructed (Outcome D). PROOF-TARGET; the candidate primitive PRIM-ISOMETRIC-DIRAC-J_N SPLITS into +2: PRIM-DIRAC-SCALE-SELECTION + PRIM-COMPARISON-MAP-XI-N.
 
 
 ## Domain: gauge_bridge
@@ -5269,6 +5347,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Research Closure Master E/F3] Smooth quantum-metric passport over the FROZEN golden refinement tower (algebra level). External framework: Lip-norm + propinquity + inductive spectral triple (SRC-LATREMOLIERE-2016, ASSUMP-CONNES-RECONSTRUCTION). PASS iff a compatible tower + isometric Dirac J_N supplied. Never a primitive smooth manifold. Required by D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001 (Master A Outcome B).
+
+### D0-VNEXT-QUANTUM-METRIC-EXTENSION-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_vnext_quantum_metric_extension_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [vNext Fast-Track Phase E] The frozen AF tower (A_N,H_N^GNS,D_N^AF,tau_N) is a FORMALISM object testable against an external quantum-metric formalism (Lip-norm ||[D_N^AF,a]||; propinquity / quantum Gromov-Hausdorff; inductive/AF spectral triple, SRC-LATREMOLIERE-2016). PASSPORT-CLOSED -- never a primitive smooth manifold in CORE; the Dirac is non-canonical (scale underdetermined), so this is formalism, not D0 physical geometry.
 
 ### D0-BH-CAPACITY-A4-001
 
