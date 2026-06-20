@@ -294,6 +294,8 @@ import D0.Matter.CKMPhasonHolonomy
 import D0.Matter.ChargedLeptonMassTransfer
 import D0.Matter.ChargedLeptonTransferCertificate
 import D0.Matter.CouplingOrthogonalDecomposition
+import D0.Matter.DSigmaRoleCycleCarrierNoGo
+import D0.Matter.DSigmaRoleTransitionGraph
 import D0.Matter.EdgeStressCoupling
 import D0.Matter.FiniteSelector
 import D0.Matter.GaugeCurvatureOrigin

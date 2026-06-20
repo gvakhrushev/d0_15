@@ -1,0 +1,20 @@
+{
+  "scene": "K(9,11,13)",
+  "Aut": "S9 x S11 x S13 (distinct part sizes -> no part swaps; orientation A->B->C->A preserved)",
+  "oriented_triangles": 1287,
+  "triangle_orbits": 1,
+  "DSigma_roles": [
+    "Code",
+    "Canon",
+    "Test",
+    "History",
+    "Access"
+  ],
+  "closed_this_campaign": [
+    "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001 (CERT-CLOSED)",
+    "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001 (NO-GO)"
+  ],
+  "key_finding": "the canonical rank-5 role-cycle carrier does NOT exist (triangles=1 Aut-orbit, 5 roles have no canonical geometric attachment); the canonical role-to-operator functor and all role-bound owners (B/C/D/E) inherit this obstruction",
+  "global_closure_claimed": false,
+  "no_reverse_selection": "no manual cycle list / manual vertices / SM table / PDG / 246 GeV"
+}

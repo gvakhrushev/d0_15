@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 389,
+    "claims": 391,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 118,
-      "NO-GO": 18,
+      "CERT-CLOSED": 119,
+      "NO-GO": 19,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 240,
+      "LEAN_PROVED": 242,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -29,13 +29,13 @@
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 26,
-      "certificate": 133,
+      "no-go": 27,
+      "certificate": 134,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 211,
+      "formal_core": 213,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -13010,6 +13010,82 @@
       "label": "vp_sm_hypercharge_row_owner.py",
       "path": "05_CERTS/vp_sm_hypercharge_row_owner.py",
       "exists": true
+    },
+    {
+      "id": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.ROLE",
+      "lean_module": "D0.Matter.DSigmaRoleTransitionGraph",
+      "lean_theorem": "role_motif_is_terminal_carrier_determined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dsigma_role_transition_graph.py",
+      "python_cert": [
+        "vp_dsigma_role_transition_graph.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Role-to-operator campaign Phase A] The 5 DSigma roles (Code->Canon->Test->History->Access->Code) form a single canonical directed 5-cycle: succ is a bijection, succ^5=id, no fixed point / 2-cycle, orbit of each role is all five. Canonical from the role dependency rules alone (no manual list, no scene-vertex choice). Lean D0.Matter.DSigmaRoleTransitionGraph (decide).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/DSigmaRoleTransitionGraph.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.DSigmaRoleTransitionGraph",
+      "kind": "lean_module",
+      "label": "D0.Matter.DSigmaRoleTransitionGraph",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/DSigmaRoleTransitionGraph.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_dsigma_role_transition_graph.py",
+      "kind": "python_cert",
+      "label": "vp_dsigma_role_transition_graph.py",
+      "path": "05_CERTS/vp_dsigma_role_transition_graph.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "04.ROLE",
+      "lean_module": "D0.Matter.DSigmaRoleCycleCarrierNoGo",
+      "lean_theorem": "dsigma_role_cycle_carrier_canonical_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_dsigma_role_cycle_carrier_nogo.py",
+      "python_cert": [
+        "vp_dsigma_role_cycle_carrier_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Role-to-operator campaign Phase A] NO-GO: no canonical (Aut-orbit-determined) rank-5 role-cycle carrier exists. Aut(K(9,11,13))=S9xS11xS13 (distinct part sizes -> no part swaps; orientation A->B->C->A preserved) acts TRANSITIVELY on the 9*11*13=1287 oriented triangles, so the primitive cycle class is a SINGLE orbit; the 5 operational roles have no intrinsic geometric attachment, so a canonical assignment would inject 5 roles into 1 orbit-class -- impossible (pigeonhole, Lean Fintype.card_le_of_injective). Any rank-5 carrier requires arbitrary symmetry-breaking = the forbidden manual list. ROOT CAUSE of the role-bound PROOF-TARGETs (flow->Weyl Phi, CKM address-action, role-bound lepton branches, the unified functor): their physical content is owned by NON-role routes (anomaly row, cardinality class-5, ramification branch index), but the CANONICAL role carrier they would be built from does not exist. Missing structure: a canonical role->vertex-sector attachment the scene does not supply. Lean D0.Matter.DSigmaRoleCycleCarrierNoGo; cert vp_dsigma_role_cycle_carrier_nogo.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/DSigmaRoleCycleCarrierNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.DSigmaRoleCycleCarrierNoGo",
+      "kind": "lean_module",
+      "label": "D0.Matter.DSigmaRoleCycleCarrierNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/DSigmaRoleCycleCarrierNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_dsigma_role_cycle_carrier_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_dsigma_role_cycle_carrier_nogo.py",
+      "path": "05_CERTS/vp_dsigma_role_cycle_carrier_nogo.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -18526,6 +18602,36 @@
     {
       "source": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
       "target": "cert:vp_sm_hypercharge_row_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "target": "module:D0.Matter.DSigmaRoleTransitionGraph",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "target": "cert:vp_dsigma_role_transition_graph.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+      "target": "module:D0.Matter.DSigmaRoleCycleCarrierNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+      "target": "cert:vp_dsigma_role_cycle_carrier_nogo.py",
       "kind": "certified_by"
     }
   ]
