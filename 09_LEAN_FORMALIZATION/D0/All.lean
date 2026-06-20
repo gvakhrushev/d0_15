@@ -421,3 +421,4 @@ import D0.Topology.WitnessHalting
 import D0.Tower.DetectionQuadratic
 import D0.Tower.NoExtension
 import D0.Traceability.StatusTaxonomy
+import D0.Verification.PresentCoreMaximality

@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 124
-- `CORE-FORMALIZED`: 162
+- `CORE-FORMALIZED`: 163
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
@@ -22,7 +22,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 28
 - `certificate`: 139
-- `core`: 163
+- `core`: 164
 - `deprecated`: 3
 - `frontier`: 36
 - `no-go`: 36
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 225
+- `formal_core`: 226
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -2807,6 +2807,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Machine-checkable final bridge index over closed D0 foundation groups.
+
+### D0-FINAL-CORE-COMPLETION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Verification.PresentCoreMaximality`
+- theorem: `present_core_maximality_classified`
+- cert: `vp_final_core_maximality.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [Final Core Completion M7 -- CAPSTONE] Single machine-checked aggregation bundling the campaign (M1-M6): the six present-core maximality NO-GOs (alpha tower trace-class, CMB smoothing non-constant, phason magnitude underdetermined, CKM overlap underdetermined, Higgs projectors commute, toral partition not forced) and the one positive owner (lepton finite Green resolvent). Lean D0.Verification.PresentCoreMaximality (conjunction of the seven proven module theorems; no bridge assumptions). Every targeted internal frontier is now CLASSIFIED (CERT or NO-GO); the residual is external (D0_FINAL_EXTERNAL_PASSPORTS.csv). Inventory FINAL_CORE_COMPLETION_INVENTORY.csv; guard vp_final_core_maximality.py.
 
 ### D0-FORGETTING-CHANNEL-CP-001
 

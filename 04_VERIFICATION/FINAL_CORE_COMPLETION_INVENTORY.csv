@@ -1,0 +1,9 @@
+front,claim_id,status,lean_module,external_boundary
+alpha-dixmier,D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001,NO-GO,D0.Spectral.AlphaPresentCoreMaximalityNoGo,ASSUMP-DIXMIER-TRACE (residue extraction)
+cmb-n_s,D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001,NO-GO,D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo,D0-CMB-PHASON-SPECTRUM-OWNER-001 (Planck passport)
+phason-w_DE,D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001,NO-GO,D0.Cosmology.PhasonMagnitudeMaximalityNoGo,D0-PASSPORT-DESI-BAO-001 (DESI/CPL)
+ckm-overlap,D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001,NO-GO,D0.Matter.CKMOverlapUnderdeterminationNoGo,symmetry-breaking/modulus selector (new primitive)
+higgs-condensation,D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001,NO-GO,D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo,"new non-commuting (U,Q0,Pi_H) (new primitive)"
+toral-markov,D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001,NO-GO,D0.Geometry.ToralSeedMarkovMaximalityNoGo,ASSUMP-ADLER-WEISS (external partition)
+lepton-resolvent,D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001,CERT-CLOSED,D0.Matter.LeptonFiniteGreenResolventOwner,none (positive owner; decimals external EFT/IR)
+capstone,D0-FINAL-CORE-COMPLETION-001,CORE-FORMALIZED,D0.Verification.PresentCoreMaximality,D0_FINAL_EXTERNAL_PASSPORTS.csv

@@ -406,6 +406,7 @@ digraph D0Theory {
   "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001" [label="D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001" [label="D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001" [label="D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-FINAL-CORE-COMPLETION-001" [label="D0-FINAL-CORE-COMPLETION-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2708,4 +2709,10 @@ digraph D0Theory {
   "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001" -> "cert:vp_lepton_finite_green_resolvent_owner.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Verification.PresentCoreMaximality" [label="D0.Verification.PresentCoreMaximality", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-FINAL-CORE-COMPLETION-001" -> "module:D0.Verification.PresentCoreMaximality" [label="module"];
+  "cert:vp_final_core_maximality.py" [label="vp_final_core_maximality.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-FINAL-CORE-COMPLETION-001" -> "cert:vp_final_core_maximality.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-FINAL-CORE-COMPLETION-001" -> "domain:formal_core" [label="domain"];
 }

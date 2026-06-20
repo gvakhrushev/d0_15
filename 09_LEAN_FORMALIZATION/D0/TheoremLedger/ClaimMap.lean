@@ -608,7 +608,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001", moduleName := "D0.Geometry.ToralSeedMarkovMaximalityNoGo",
       theoremName := "toral_seed_markov_maximality_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001", moduleName := "D0.Matter.LeptonFiniteGreenResolventOwner",
-      theoremName := "lepton_finite_green_resolvent_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "lepton_finite_green_resolvent_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FINAL-CORE-COMPLETION-001", moduleName := "D0.Verification.PresentCoreMaximality",
+      theoremName := "present_core_maximality_classified", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

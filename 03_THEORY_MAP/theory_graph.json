@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 405,
+    "claims": 406,
     "release_status": {
-      "CORE-FORMALIZED": 162,
+      "CORE-FORMALIZED": 163,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
@@ -20,14 +20,14 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 256,
+      "LEAN_PROVED": 257,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
       "OPEN": 37
     },
     "claim_type": {
-      "core": 163,
+      "core": 164,
       "bridge": 28,
       "no-go": 36,
       "certificate": 139,
@@ -35,7 +35,7 @@
       "frontier": 36
     },
     "domain": {
-      "formal_core": 225,
+      "formal_core": 226,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -13618,6 +13618,44 @@
       "label": "vp_lepton_finite_green_resolvent_owner.py",
       "path": "05_CERTS/vp_lepton_finite_green_resolvent_owner.py",
       "exists": true
+    },
+    {
+      "id": "D0-FINAL-CORE-COMPLETION-001",
+      "kind": "claim",
+      "claim_id": "D0-FINAL-CORE-COMPLETION-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_05",
+      "section": "05.final",
+      "lean_module": "D0.Verification.PresentCoreMaximality",
+      "lean_theorem": "present_core_maximality_classified",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_core_maximality.py",
+      "python_cert": [
+        "vp_final_core_maximality.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Final Core Completion M7 -- CAPSTONE] Single machine-checked aggregation bundling the campaign (M1-M6): the six present-core maximality NO-GOs (alpha tower trace-class, CMB smoothing non-constant, phason magnitude underdetermined, CKM overlap underdetermined, Higgs projectors commute, toral partition not forced) and the one positive owner (lepton finite Green resolvent). Lean D0.Verification.PresentCoreMaximality (conjunction of the seven proven module theorems; no bridge assumptions). Every targeted internal frontier is now CLASSIFIED (CERT or NO-GO); the residual is external (D0_FINAL_EXTERNAL_PASSPORTS.csv). Inventory FINAL_CORE_COMPLETION_INVENTORY.csv; guard vp_final_core_maximality.py.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Verification/PresentCoreMaximality.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Verification.PresentCoreMaximality",
+      "kind": "lean_module",
+      "label": "D0.Verification.PresentCoreMaximality",
+      "path": "09_LEAN_FORMALIZATION/D0/Verification/PresentCoreMaximality.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_final_core_maximality.py",
+      "kind": "python_cert",
+      "label": "vp_final_core_maximality.py",
+      "path": "05_CERTS/vp_final_core_maximality.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -19374,6 +19412,21 @@
     {
       "source": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
       "target": "cert:vp_lepton_finite_green_resolvent_owner.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FINAL-CORE-COMPLETION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FINAL-CORE-COMPLETION-001",
+      "target": "module:D0.Verification.PresentCoreMaximality",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FINAL-CORE-COMPLETION-001",
+      "target": "cert:vp_final_core_maximality.py",
       "kind": "certified_by"
     }
   ]

@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 5286,
-    "track_fair_max": 7298,
-    "pct_strength": 72.4,
-    "core_realized": 4460,
-    "core_potential": 6440,
+    "realized": 5306,
+    "track_fair_max": 7318,
+    "pct_strength": 72.5,
+    "core_realized": 4480,
+    "core_potential": 6460,
     "core_headroom": 1980,
-    "n_claims": 405,
-    "n_active": 403,
+    "n_claims": 406,
+    "n_active": 404,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 224,
-      "realized": 3312,
-      "max": 4133,
+      "n": 225,
+      "realized": 3332,
+      "max": 4153,
       "core_headroom": 811
     },
     "rg": {
@@ -388,9 +388,9 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 13,
-      "realized": 173,
-      "max": 233,
+      "n": 14,
+      "realized": 193,
+      "max": 253,
       "core_headroom": 60
     },
     "BOOK_00/05": {
@@ -8805,6 +8805,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FINAL-CORE-COMPLETION-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
       "leverage": 0,
       "integrity_flag": null
     }
