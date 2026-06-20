@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 401,
+    "claims": 403,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 123,
-      "NO-GO": 25,
+      "NO-GO": 27,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 252,
+      "LEAN_PROVED": 254,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -29,13 +29,13 @@
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 33,
+      "no-go": 35,
       "certificate": 138,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 221,
+      "formal_core": 223,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -11156,7 +11156,7 @@
         "vp_higgs_phason_condensation_owner.py"
       ],
       "status": "PROOF-TARGET",
-      "notes": "[Iter22 four-physics P3] Higgs as macroscopic phason condensation in the V13/shell geometry. CLOSED already: the three-shell geometry (D0-TORUS-CORE13-GEOMETRY-001) and the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001), both CORE. MISSING (exact): the macroscopic order-parameter EOM deriving the Higgs VEV from the V13 condensation. cert vp_higgs_phason_condensation_owner.py (controls: '246 GeV is CORE' rejected; 'Higgs primitive scalar as core' rejected; VEV-from-SM rejected). The 246 GeV SI bridge stays HYP/passport. PROOF-TARGET.",
+      "notes": "[Iter22 four-physics P3] Higgs as macroscopic phason condensation in the V13/shell geometry. CLOSED already: the three-shell geometry (D0-TORUS-CORE13-GEOMETRY-001) and the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001), both CORE. MISSING (exact): the macroscopic order-parameter EOM deriving the Higgs VEV from the V13 condensation. cert vp_higgs_phason_condensation_owner.py (controls: '246 GeV is CORE' rejected; 'Higgs primitive scalar as core' rejected; VEV-from-SM rejected). The 246 GeV SI bridge stays HYP/passport. PROOF-TARGET. [M3] Route does not start from present-core (D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001): all present-core projectors commute with T (trivial orbit); a new non-commuting (U,Q0,Pi_H) is required.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -13465,6 +13465,82 @@
       "kind": "python_cert",
       "label": "vp_phason_magnitude_maximality_nogo.py",
       "path": "05_CERTS/vp_phason_magnitude_maximality_nogo.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "04.ckm",
+      "lean_module": "D0.Matter.CKMOverlapUnderdeterminationNoGo",
+      "lean_theorem": "ckm_overlap_underdetermination_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_ckm_overlap_underdetermination_nogo.py",
+      "python_cert": [
+        "vp_ckm_overlap_underdetermination_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Final Core Completion M3] The mismatch matrix is unique GIVEN fixed bases (D0.Matter.CKMBasisMismatch), but present-core does not force the basis completion. Two admissible rational-orthogonal overlap completions (3-4-5 and 5-12-13 rotations) give different Cabibbo overlap invariants |V_mix_12|^2 = 16/25 vs 144/169 (Lean D0.Matter.CKMOverlapUnderdeterminationNoGo, ext+fin_cases+norm_num). The overlap invariant is underdetermined by present-core; a canonical selector (symmetry-breaking/modulus-fixing) is a NEW primitive (extension), not a present-core theorem. Closed-negative.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/CKMOverlapUnderdeterminationNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.CKMOverlapUnderdeterminationNoGo",
+      "kind": "lean_module",
+      "label": "D0.Matter.CKMOverlapUnderdeterminationNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/CKMOverlapUnderdeterminationNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_ckm_overlap_underdetermination_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_ckm_overlap_underdetermination_nogo.py",
+      "path": "05_CERTS/vp_ckm_overlap_underdetermination_nogo.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "04.higgs",
+      "lean_module": "D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo",
+      "lean_theorem": "higgs_condensation_present_core_maximality_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_higgs_condensation_present_core_maximality_nogo.py",
+      "python_cert": [
+        "vp_higgs_condensation_present_core_maximality_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Final Core Completion M3] Maximality strengthening of D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001. Condensation needs a nontrivial orbit Q_n=T^n Q0 T^-n => [T,Q0]!=0. But every present-core frozen projector is a polynomial a*1+b*T in the return operator T (theorem tPoly_commutes) and commutes with T => constant orbit => no double-well => no condensation. A non-commuting witness Qnc=[[1,0],[0,0]] has [T,Qnc]!=0 but is NOT a polynomial in T (not present-core). Lean D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo (native_decide). The route does not start from present-core; a new independently-forced (U,Q0,Pi_H) is required (extension). No T^44=I.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HiggsCondensationPresentCoreMaximalityNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo",
+      "kind": "lean_module",
+      "label": "D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/HiggsCondensationPresentCoreMaximalityNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_higgs_condensation_present_core_maximality_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_higgs_condensation_present_core_maximality_nogo.py",
+      "path": "05_CERTS/vp_higgs_condensation_present_core_maximality_nogo.py",
       "exists": true
     }
   ],
@@ -19162,6 +19238,36 @@
     {
       "source": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
       "target": "cert:vp_phason_magnitude_maximality_nogo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+      "target": "module:D0.Matter.CKMOverlapUnderdeterminationNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+      "target": "cert:vp_ckm_overlap_underdetermination_nogo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "target": "module:D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "target": "cert:vp_higgs_condensation_present_core_maximality_nogo.py",
       "kind": "certified_by"
     }
   ]

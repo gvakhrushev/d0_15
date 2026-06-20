@@ -295,6 +295,7 @@ import D0.Matter.CKMClass5SelectorOwner
 import D0.Matter.CKMExactMatrixCertificate
 import D0.Matter.CKMExactTransfer
 import D0.Matter.CKMNontrivialFlavourAlgebra
+import D0.Matter.CKMOverlapUnderdeterminationNoGo
 import D0.Matter.CKMPhasonHolonomy
 import D0.Matter.ChargedLeptonMassTransfer
 import D0.Matter.ChargedLeptonTransferCertificate
@@ -309,6 +310,7 @@ import D0.Matter.GenerationAnomalyPreservation
 import D0.Matter.GenerationMultiplicity
 import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
+import D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo
 import D0.Matter.HiggsLogdetStationary
 import D0.Matter.HiggsPhasonOrbitNoGo
 import D0.Matter.HiggsReturnQuotientAction

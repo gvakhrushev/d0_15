@@ -402,6 +402,8 @@ digraph D0Theory {
   "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001" [label="D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001" [label="D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001\\nNO-GO\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001" [label="D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001\\nNO-GO\\ncosmology", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001" [label="D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001" [label="D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2680,4 +2682,16 @@ digraph D0Theory {
   "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001" -> "cert:vp_phason_magnitude_maximality_nogo.py" [label="cert"];
   "domain:cosmology" [label="cosmology", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001" -> "domain:cosmology" [label="domain"];
+  "module:D0.Matter.CKMOverlapUnderdeterminationNoGo" [label="D0.Matter.CKMOverlapUnderdeterminationNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001" -> "module:D0.Matter.CKMOverlapUnderdeterminationNoGo" [label="module"];
+  "cert:vp_ckm_overlap_underdetermination_nogo.py" [label="vp_ckm_overlap_underdetermination_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001" -> "cert:vp_ckm_overlap_underdetermination_nogo.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo" [label="D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001" -> "module:D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo" [label="module"];
+  "cert:vp_higgs_condensation_present_core_maximality_nogo.py" [label="vp_higgs_condensation_present_core_maximality_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001" -> "cert:vp_higgs_condensation_present_core_maximality_nogo.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001" -> "domain:formal_core" [label="domain"];
 }

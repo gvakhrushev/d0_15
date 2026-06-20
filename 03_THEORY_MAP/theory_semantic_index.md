@@ -13,7 +13,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 25
+- `NO-GO`: 27
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -25,14 +25,14 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 33
+- `no-go`: 35
 
 ## Domain counts
 
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 221
+- `formal_core`: 223
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -3783,6 +3783,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Iter22 frontier-strike] NO-GO: a raw finite graph operator (finite/Q(phi)/algebraic scene data) cannot DIRECTLY output the 17-digit charged-lepton decimal rows. r_mu=3.8814... is NOT a scene invariant (misses the small Q(phi)/Lucas lattice) and reconstructs the measured mass ratio (~(m_mu/m_e)^(1/4)); the EXACT external datum needed is the EFT/IR matching scheme carrying m_mu, not part of a raw graph operator -> direct raw-graph->decimal is M1-forbidden. cert vp_bare_graph_decimal_nogo.py (can-FAIL). SCOPE: blocks the DIRECT route only; integer Lucas L11+L4=206 + exponents (0,1/4,1/3) stay THE; decimals stay HYP/BRIDGE (D0-LEPTON-002); the feedback/cylinder trace route is unaffected.
 
+### D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.CKMOverlapUnderdeterminationNoGo`
+- theorem: `ckm_overlap_underdetermination_nogo`
+- cert: `vp_ckm_overlap_underdetermination_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Final Core Completion M3] The mismatch matrix is unique GIVEN fixed bases (D0.Matter.CKMBasisMismatch), but present-core does not force the basis completion. Two admissible rational-orthogonal overlap completions (3-4-5 and 5-12-13 rotations) give different Cabibbo overlap invariants |V_mix_12|^2 = 16/25 vs 144/169 (Lean D0.Matter.CKMOverlapUnderdeterminationNoGo, ext+fin_cases+norm_num). The overlap invariant is underdetermined by present-core; a canonical selector (symmetry-breaking/modulus-fixing) is a NEW primitive (extension), not a present-core theorem. Closed-negative.
+
 ### D0-CVFT-F1
 
 - type: `no-go`
@@ -3808,6 +3821,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Role-to-operator campaign Phase A] NO-GO: no canonical (Aut-orbit-determined) rank-5 role-cycle carrier exists. Aut(K(9,11,13))=S9xS11xS13 (distinct part sizes -> no part swaps; orientation A->B->C->A preserved) acts TRANSITIVELY on the 9*11*13=1287 oriented triangles, so the primitive cycle class is a SINGLE orbit; the 5 operational roles have no intrinsic geometric attachment, so a canonical assignment would inject 5 roles into 1 orbit-class -- impossible (pigeonhole, Lean Fintype.card_le_of_injective). Any rank-5 carrier requires arbitrary symmetry-breaking = the forbidden manual list. ROOT CAUSE of the role-bound PROOF-TARGETs (flow->Weyl Phi, CKM address-action, role-bound lepton branches, the unified functor): their physical content is owned by NON-role routes (anomaly row, cardinality class-5, ramification branch index), but the CANONICAL role carrier they would be built from does not exist. Missing structure: a canonical role->vertex-sector attachment the scene does not supply. Lean D0.Matter.DSigmaRoleCycleCarrierNoGo; cert vp_dsigma_role_cycle_carrier_nogo.py.
+
+### D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo`
+- theorem: `higgs_condensation_present_core_maximality_nogo`
+- cert: `vp_higgs_condensation_present_core_maximality_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Final Core Completion M3] Maximality strengthening of D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001. Condensation needs a nontrivial orbit Q_n=T^n Q0 T^-n => [T,Q0]!=0. But every present-core frozen projector is a polynomial a*1+b*T in the return operator T (theorem tPoly_commutes) and commutes with T => constant orbit => no double-well => no condensation. A non-commuting witness Qnc=[[1,0],[0,0]] has [T,Qnc]!=0 but is NOT a polynomial in T (not present-core). Lean D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo (native_decide). The route does not start from present-core; a new independently-forced (U,Q0,Pi_H) is required (extension). No T^44=I.
 
 ### D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001
 
@@ -4148,7 +4174,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_higgs_phason_condensation_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 four-physics P3] Higgs as macroscopic phason condensation in the V13/shell geometry. CLOSED already: the three-shell geometry (D0-TORUS-CORE13-GEOMETRY-001) and the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001), both CORE. MISSING (exact): the macroscopic order-parameter EOM deriving the Higgs VEV from the V13 condensation. cert vp_higgs_phason_condensation_owner.py (controls: '246 GeV is CORE' rejected; 'Higgs primitive scalar as core' rejected; VEV-from-SM rejected). The 246 GeV SI bridge stays HYP/passport. PROOF-TARGET.
+- notes: [Iter22 four-physics P3] Higgs as macroscopic phason condensation in the V13/shell geometry. CLOSED already: the three-shell geometry (D0-TORUS-CORE13-GEOMETRY-001) and the rank-2 frozen scalar projector (D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001), both CORE. MISSING (exact): the macroscopic order-parameter EOM deriving the Higgs VEV from the V13 condensation. cert vp_higgs_phason_condensation_owner.py (controls: '246 GeV is CORE' rejected; 'Higgs primitive scalar as core' rejected; VEV-from-SM rejected). The 246 GeV SI bridge stays HYP/passport. PROOF-TARGET. [M3] Route does not start from present-core (D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001): all present-core projectors commute with T (trivial orbit); a new non-commuting (U,Q0,Pi_H) is required.
 
 ### D0-HODGE-LINKS-001
 
