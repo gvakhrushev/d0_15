@@ -594,7 +594,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001", moduleName := "D0.Spectral.AlphaProfiniteSpectralTower",
       theoremName := "profinite_tower_trace_class", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ALPHA-PROFINITE-TOWER-NOGO-001", moduleName := "D0.Spectral.AlphaProfiniteTowerNoGo",
-      theoremName := "profinite_tower_dixmier_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "profinite_tower_dixmier_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001", moduleName := "D0.Spectral.AlphaPresentCoreMaximalityNoGo",
+      theoremName := "alpha_present_core_maximality_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

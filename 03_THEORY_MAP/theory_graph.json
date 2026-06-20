@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 398,
+    "claims": 399,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 123,
-      "NO-GO": 22,
+      "NO-GO": 23,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 249,
+      "LEAN_PROVED": 250,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -29,13 +29,13 @@
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 30,
+      "no-go": 31,
       "certificate": 138,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 220,
+      "formal_core": 221,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -13352,6 +13352,44 @@
       "label": "vp_alpha_profinite_tower_nogo.py",
       "path": "05_CERTS/vp_alpha_profinite_tower_nogo.py",
       "exists": true
+    },
+    {
+      "id": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_03",
+      "section": "03.tower",
+      "lean_module": "D0.Spectral.AlphaPresentCoreMaximalityNoGo",
+      "lean_theorem": "alpha_present_core_maximality_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_present_core_maximality_nogo.py",
+      "python_cert": [
+        "vp_alpha_present_core_maximality_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Final Core Completion M1] Maximality strengthening of D0-ALPHA-PROFINITE-TOWER-NOGO-001, quantified over ALL admissible present-core towers. Admissible tower = frozen weight r=phi^-3 per increment + multiplicity growth rate a (block N ~ phi^(aN)); per-block trace contribution rate(a)=phi^a*r=phi^(a-3). Present-core supplies a=0 (constant 2^11 Boolean ledger) and a=1 (golden carrier, Perron eigenvalue phi of [[1,1],[1,0]]). THEOREM (Lean D0.Spectral.AlphaPresentCoreMaximalityNoGo): for ANY a<=2, rate(a)<1 => Summable => trace-class => log-Cesaro/Dixmier coefficient 0 != mu_2=12288/5; and rate(3)=1 exactly (critical 1/j line) <=> carrier Perron eigenvalue phi^3, which 5-fold symmetry + M1 forbid (single golden rate phi). No admissible present-core tower realizes mu_2. Remaining interface: EXTERNAL Dixmier/Wodzicki residue passport OR a new independently-forced phi^3 carrier (next-version extension, not present-core). Not the invalid finite-pole route.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaPresentCoreMaximalityNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.AlphaPresentCoreMaximalityNoGo",
+      "kind": "lean_module",
+      "label": "D0.Spectral.AlphaPresentCoreMaximalityNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaPresentCoreMaximalityNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_alpha_present_core_maximality_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_present_core_maximality_nogo.py",
+      "path": "05_CERTS/vp_alpha_present_core_maximality_nogo.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -19003,6 +19041,21 @@
     {
       "source": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
       "target": "cert:vp_alpha_profinite_tower_nogo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "target": "module:D0.Spectral.AlphaPresentCoreMaximalityNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "target": "cert:vp_alpha_present_core_maximality_nogo.py",
       "kind": "certified_by"
     }
   ]

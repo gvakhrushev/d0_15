@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 5202,
-    "track_fair_max": 7206,
+    "realized": 5214,
+    "track_fair_max": 7218,
     "pct_strength": 72.2,
     "core_realized": 4448,
     "core_potential": 6420,
     "core_headroom": 1972,
-    "n_claims": 398,
-    "n_active": 396,
+    "n_claims": 399,
+    "n_active": 397,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 219,
-      "realized": 3252,
-      "max": 4065,
+      "n": 220,
+      "realized": 3264,
+      "max": 4077,
       "core_headroom": 803
     },
     "rg": {
@@ -358,9 +358,9 @@
       "core_headroom": 0
     },
     "BOOK_03": {
-      "n": 4,
-      "realized": 51,
-      "max": 59,
+      "n": 5,
+      "realized": 63,
+      "max": 71,
       "core_headroom": 8
     },
     "BOOK_01/03": {
@@ -8681,6 +8681,20 @@
     },
     {
       "claim_id": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_03",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
       "track": "NO_GO",
       "level": 4,
       "level_name": "LEAN_PROVED",

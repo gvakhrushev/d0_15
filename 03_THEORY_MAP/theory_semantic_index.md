@@ -13,7 +13,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 22
+- `NO-GO`: 23
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -25,14 +25,14 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 30
+- `no-go`: 31
 
 ## Domain counts
 
 - `cosmology`: 47
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 220
+- `formal_core`: 221
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -3704,6 +3704,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Deprecated or historical row; not a live promotion path.
 - notes: [Iter15 trace-leg split — CLOSED] The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is proved (CORE) as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, with the phi^-5 seam = xi5 (D0-XI5). This separate trace-target row is therefore redundant and is DEPRECATED (superseded, not abandoned): the trace leg is closed at D0-ALPHA-ZETA-RESIDUE-001. The remaining open EDGE leg is the unitary-dilation / torus-ramification Puiseux target D0-EDGE-002.
+
+### D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_03`
+- module: `D0.Spectral.AlphaPresentCoreMaximalityNoGo`
+- theorem: `alpha_present_core_maximality_nogo`
+- cert: `vp_alpha_present_core_maximality_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Final Core Completion M1] Maximality strengthening of D0-ALPHA-PROFINITE-TOWER-NOGO-001, quantified over ALL admissible present-core towers. Admissible tower = frozen weight r=phi^-3 per increment + multiplicity growth rate a (block N ~ phi^(aN)); per-block trace contribution rate(a)=phi^a*r=phi^(a-3). Present-core supplies a=0 (constant 2^11 Boolean ledger) and a=1 (golden carrier, Perron eigenvalue phi of [[1,1],[1,0]]). THEOREM (Lean D0.Spectral.AlphaPresentCoreMaximalityNoGo): for ANY a<=2, rate(a)<1 => Summable => trace-class => log-Cesaro/Dixmier coefficient 0 != mu_2=12288/5; and rate(3)=1 exactly (critical 1/j line) <=> carrier Perron eigenvalue phi^3, which 5-fold symmetry + M1 forbid (single golden rate phi). No admissible present-core tower realizes mu_2. Remaining interface: EXTERNAL Dixmier/Wodzicki residue passport OR a new independently-forced phi^3 carrier (next-version extension, not present-core). Not the invalid finite-pole route.
 
 ### D0-ALPHA-PROFINITE-TOWER-NOGO-001
 
