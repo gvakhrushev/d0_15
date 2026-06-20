@@ -1,0 +1,11 @@
+claim_id,status,lean_module,certificate,depends_on,exact_finite_object,exact_missing_artifact,is_global_blocker
+D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001,CERT-CLOSED,D0.Matter.HiggsReturnQuotientAction,vp_higgs_return_quotient_action.py,,"T=[[0,1],[1,-1]] over ZMod 44",,False
+D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001,NO-GO,D0.Matter.HiggsPhasonOrbitNoGo,vp_higgs_phason_orbit_nontriviality.py,D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001,conjugation orbit Q_n=T^n Q0 T^-n on ZMod 44,,False
+D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001,CERT-CLOSED,D0.Matter.HiggsLogdetStationary,vp_higgs_logdet_stationary.py,,scalar-sector log-det first variation + stationarity,,False
+D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001,CORE-FORMALIZED,D0.Matter.HiggsScalarProjectorConstructive,,,rank-2 scalar projector Pi_H,,False
+D0-HIGGS-PHASON-ORBIT-CLOSURE-001,NO-GO,D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001 (decision),vp_higgs_phason_orbit_nontriviality.py,D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001,campaign decision A-vs-B,,False
+D0-HIGGS-CANONICAL-PHASON-ORBIT-OWNER-001,PROOF-TARGET,,,D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001,toral return (period 30) + frozen archive projector,"a canonical nontrivial scalar orbit: needs a FROZEN Q0 not commuting with T (the canonical archive projector either commutes -> trivial, or is non-canonical); no period-44 toral return exists",True
+D0-HIGGS-ARCHIVE-PROJECTOR-ORBIT-OWNER-001,PROOF-TARGET,,,D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001,Q_n=Wbar(n) Q0 Wbar(n)^dag,"a FROZEN archive projector Q0 with [T,Q0]!=0 (not a chosen rank-1 projector)",True
+D0-HIGGS-DISCRETE-LOGDET-EOM-OWNER-001,PROOF-TARGET,,,D0-HIGGS-CANONICAL-PHASON-ORBIT-OWNER-001,"S_n=-log det(I-z F_H,n)",the nontrivial canonical orbit (blocked above) + concrete U; then the discrete log-det EOM is computable,True
+D0-HIGGS-DISCRETE-HESSIAN-OWNER-001,PROOF-TARGET,,,D0-HIGGS-DISCRETE-LOGDET-EOM-OWNER-001,Delta2 S_n = S_(n+1)-2S_n+S_(n-1),the finite EOM (blocked above); then the Hessian sign at stationary indices is decidable,True
+D0-HIGGS-FINITE-CONDENSATION-OWNER-001,PROOF-TARGET,,,D0-HIGGS-DISCRETE-HESSIAN-OWNER-001,stable stationary index n!=0 with Delta2 S_n>0,"a new independently-FORCED non-commuting scalar/archive action (concrete frozen U,Q0,Pi_H with [T,Q0]!=0, derived not chosen); a chosen Q0 or theta profile is forbidden",True

@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 5118,
-    "track_fair_max": 7090,
+    "realized": 5142,
+    "track_fair_max": 7122,
     "pct_strength": 72.2,
-    "core_realized": 4400,
-    "core_potential": 6340,
-    "core_headroom": 1940,
-    "n_claims": 391,
-    "n_active": 389,
+    "core_realized": 4412,
+    "core_potential": 6360,
+    "core_headroom": 1948,
+    "n_claims": 393,
+    "n_active": 391,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 212,
-      "realized": 3168,
-      "max": 3949,
-      "core_headroom": 771
+      "n": 214,
+      "realized": 3192,
+      "max": 3981,
+      "core_headroom": 779
     },
     "rg": {
       "n": 5,
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 72,
-      "realized": 928,
-      "max": 1326,
-      "core_headroom": 388
+      "n": 74,
+      "realized": 952,
+      "max": 1358,
+      "core_headroom": 396
     },
     "BOOK_04/08": {
       "n": 7,
@@ -915,6 +915,16 @@
     },
     {
       "claim_id": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001",
       "domain": "formal_core",
       "book": "BOOK_04",
       "level_name": "LEAN_PROVED",
@@ -3045,6 +3055,13 @@
     },
     {
       "claim_id": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
@@ -8526,12 +8543,40 @@
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 4.0,
+    "penalty_total": 4.2,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -8576,8 +8621,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 40,
-        "points": -4.0,
+        "count": 42,
+        "points": -4.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -8626,8 +8671,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 40,
-        "points": -4.0,
+        "count": 42,
+        "points": -4.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

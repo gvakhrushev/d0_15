@@ -580,7 +580,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001", moduleName := "D0.Matter.DSigmaRoleTransitionGraph",
       theoremName := "role_motif_is_terminal_carrier_determined", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001", moduleName := "D0.Matter.DSigmaRoleCycleCarrierNoGo",
-      theoremName := "dsigma_role_cycle_carrier_canonical_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "dsigma_role_cycle_carrier_canonical_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001", moduleName := "D0.Matter.HiggsReturnQuotientAction",
+      theoremName := "higgs_return_quotient_action_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001", moduleName := "D0.Matter.HiggsPhasonOrbitNoGo",
+      theoremName := "higgs_phason_orbit_trivial_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

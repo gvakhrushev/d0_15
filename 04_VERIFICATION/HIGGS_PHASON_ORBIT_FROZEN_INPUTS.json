@@ -1,0 +1,17 @@
+{
+  "scene": "K(9,11,13)",
+  "toral_return": "T=[[0,1],[1,-1]] (charpoly x^2+x-1)",
+  "return_modulus_q_T": 44,
+  "toral_order_mod_44": 30,
+  "T_pow_44_eq_I": false,
+  "GL2Z_order": "infinite (Lucas trace grows)",
+  "rank2_scalar_projector": "D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001 (CORE)",
+  "outcome": "B -- no canonical phason-condensation route from frozen inputs",
+  "closed_this_campaign": [
+    "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001 (CERT-CLOSED)",
+    "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001 (NO-GO)"
+  ],
+  "key_finding": "q_T=44 is a return MODULUS not a toral period (T^44 != I; toral order mod 44 = 30); a nontrivial conjugation orbit needs a non-commuting Q0 that is not canonically frozen -> no canonical condensation route",
+  "global_closure_claimed": false,
+  "forbidden_inputs": "manual Q0, arbitrary theta, quartic potential, 246 GeV, Higgs mass"
+}

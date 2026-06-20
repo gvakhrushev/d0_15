@@ -305,6 +305,8 @@ import D0.Matter.GenerationMultiplicity
 import D0.Matter.GenerationOverlapResponseOrigin
 import D0.Matter.GenerationSelectorOrigin
 import D0.Matter.HiggsLogdetStationary
+import D0.Matter.HiggsPhasonOrbitNoGo
+import D0.Matter.HiggsReturnQuotientAction
 import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.HyperchargeAnomalyVariety
 import D0.Matter.HyperchargeFlowLattice

@@ -7,13 +7,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 119
+- `CERT-CLOSED`: 120
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 19
+- `NO-GO`: 20
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -21,18 +21,18 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 134
+- `certificate`: 135
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 27
+- `no-go`: 28
 
 ## Domain counts
 
 - `cosmology`: 47
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 213
+- `formal_core`: 215
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1676,6 +1676,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Scalar-sector stationary condition for S_fb(theta)=-2 log(1 - z f(theta)): closed-form first variation dS_fb/dtheta = 2 z f'(theta)/(1 - z f) (chain-rule coefficient relation D*S' = 2 z f' proved over Q), and on the resolvent domain (D=1-z f != 0) with nonzero coupling (z != 0) stationarity dS_fb/dtheta = 0 <=> f'(theta)=0. Concrete Lorentzian profile f=theta/(1+theta^2): f'(1)=0 (stationary), f'(0)=1!=0 (non-stationary). Cert verifies the Jacobi identity d/dt(-log det(I-zF))=Tr[(I-zF)^-1 z dF/dt] for a concrete 2x2 F (sympy). Quartic V_eff=lambda(theta^2-v^2)^2 is NOT claimed (rejected: nonzero theta^6 term, coeff z^6/3); SSB negative-quadratic sign NOT forced (quadratic coeff = z^2 >= 0); 246 GeV NOT a core input. Negative controls FAIL_ZERO_COUPLING_DEGENERATE / FAIL_QUARTIC_FORM_ASSERTED / FAIL_SSB_SIGN_FORCED / FAIL_246GEV_INPUT all fire.
+
+### D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.HiggsReturnQuotientAction`
+- theorem: `higgs_return_quotient_action_owner`
+- cert: `vp_higgs_return_quotient_action.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Higgs phason-orbit campaign] The return modulus q_T=44 is NOT a toral period. T=[[0,1],[1,-1]] (charpoly x^2+x-1) has infinite order in GL(2,Z) (trace=signed Lucas, grows) so T^44!=I; on ZMod 44 its order is 30 (T^30=I, T^44!=I). Honors the task restriction (do NOT assert T^44=I). Lean D0.Matter.HiggsReturnQuotientAction (native_decide on ZMod 44).
 
 ### D0-HST-ARCHIVE-001
 
@@ -3704,6 +3717,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Role-to-operator campaign Phase A] NO-GO: no canonical (Aut-orbit-determined) rank-5 role-cycle carrier exists. Aut(K(9,11,13))=S9xS11xS13 (distinct part sizes -> no part swaps; orientation A->B->C->A preserved) acts TRANSITIVELY on the 9*11*13=1287 oriented triangles, so the primitive cycle class is a SINGLE orbit; the 5 operational roles have no intrinsic geometric attachment, so a canonical assignment would inject 5 roles into 1 orbit-class -- impossible (pigeonhole, Lean Fintype.card_le_of_injective). Any rank-5 carrier requires arbitrary symmetry-breaking = the forbidden manual list. ROOT CAUSE of the role-bound PROOF-TARGETs (flow->Weyl Phi, CKM address-action, role-bound lepton branches, the unified functor): their physical content is owned by NON-role routes (anomaly row, cardinality class-5, ramification branch index), but the CANONICAL role carrier they would be built from does not exist. Missing structure: a canonical role->vertex-sector attachment the scene does not supply. Lean D0.Matter.DSigmaRoleCycleCarrierNoGo; cert vp_dsigma_role_cycle_carrier_nogo.py.
+
+### D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.HiggsPhasonOrbitNoGo`
+- theorem: `higgs_phason_orbit_trivial_nogo`
+- cert: `vp_higgs_phason_orbit_nontriviality.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Higgs phason-orbit campaign, OUTCOME B] No canonical phason-condensation route from frozen inputs: (1) no period-44 toral return (order 30, T^44!=I); (2) a nontrivial conjugation orbit Q_n=T^n Q0 T^-n requires Q0 NOT commuting with T -- a commuting Q0 gives a CONSTANT orbit (Commute.pow_left) -- and the corpus supplies no canonically-FROZEN non-commuting (U,Q0,Pi_H); choosing one is the forbidden arbitrary step. ROOT CAUSE of the Higgs condensation PROOF-TARGET. Lean D0.Matter.HiggsPhasonOrbitNoGo; cert vp_higgs_phason_orbit_nontriviality.py. Exact blocker (D0-HIGGS-FINITE-CONDENSATION-OWNER-001, PROOF-TARGET): a new independently-FORCED non-commuting scalar/archive action, derived not chosen. No quartic potential / 246 GeV / Higgs mass enters.
 
 ### D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001
 

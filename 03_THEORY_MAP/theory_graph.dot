@@ -392,6 +392,8 @@ digraph D0Theory {
   "D0-SM-HYPERCHARGE-ROW-OWNER-001" [label="D0-SM-HYPERCHARGE-ROW-OWNER-001\\nCERT-CLOSED\\nempirical_passport", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001" [label="D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001" [label="D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001" [label="D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001" [label="D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2610,4 +2612,16 @@ digraph D0Theory {
   "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001" -> "cert:vp_dsigma_role_cycle_carrier_nogo.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Matter.HiggsReturnQuotientAction" [label="D0.Matter.HiggsReturnQuotientAction", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001" -> "module:D0.Matter.HiggsReturnQuotientAction" [label="module"];
+  "cert:vp_higgs_return_quotient_action.py" [label="vp_higgs_return_quotient_action.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001" -> "cert:vp_higgs_return_quotient_action.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Matter.HiggsPhasonOrbitNoGo" [label="D0.Matter.HiggsPhasonOrbitNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001" -> "module:D0.Matter.HiggsPhasonOrbitNoGo" [label="module"];
+  "cert:vp_higgs_phason_orbit_nontriviality.py" [label="vp_higgs_phason_orbit_nontriviality.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001" -> "cert:vp_higgs_phason_orbit_nontriviality.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001" -> "domain:formal_core" [label="domain"];
 }
