@@ -242,6 +242,9 @@ import D0.Geometry.SpectralActionAdmissibility
 import D0.Geometry.SpectralActionLadder
 import D0.Geometry.SpectralActionSkeleton
 import D0.Geometry.SpectralTower
+import D0.Geometry.ToralCanonicalMarkovNoGo
+import D0.Geometry.ToralIntegralConjugacy
+import D0.Geometry.ToralLucasPeriodicSeed
 import D0.Geometry.TorusCore13GeometryOrigin
 import D0.Gravity
 import D0.Gravity.BlackHoleCapacityA4

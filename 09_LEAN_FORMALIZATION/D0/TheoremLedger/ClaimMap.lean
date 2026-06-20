@@ -584,7 +584,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001", moduleName := "D0.Matter.HiggsReturnQuotientAction",
       theoremName := "higgs_return_quotient_action_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001", moduleName := "D0.Matter.HiggsPhasonOrbitNoGo",
-      theoremName := "higgs_phason_orbit_trivial_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "higgs_phason_orbit_trivial_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001", moduleName := "D0.Geometry.ToralIntegralConjugacy",
+      theoremName := "toral_matrix_integral_conjugate_to_negative_golden_matrix", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001", moduleName := "D0.Geometry.ToralLucasPeriodicSeed",
+      theoremName := "lucas_periodic_seed_defined", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001", moduleName := "D0.Geometry.ToralCanonicalMarkovNoGo",
+      theoremName := "toral_canonical_markov_partition_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

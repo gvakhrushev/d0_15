@@ -1,0 +1,28 @@
+{
+  "toral_operator": "T=[[0,1],[1,-1]]",
+  "integral_conjugacy": "C T C^-1 = -M_phi, C=[[0,-1],[1,0]] unimodular",
+  "golden_cylinder_matrix": "M_phi=[[1,1],[1,0]]",
+  "fix_counts_n_1_to_5": [
+    1,
+    1,
+    4,
+    5,
+    11
+  ],
+  "primitive_period_3": 3,
+  "eigenvalues": [
+    "phi^-1",
+    "-phi"
+  ],
+  "entropy": "log phi",
+  "T_pow_44_eq_I": false,
+  "q_T": "44 (return modulus, not a toral period)",
+  "outcome": "B -- canonical seed exists; canonical Markov partition does NOT follow from the 3-point seed",
+  "closed_this_campaign": [
+    "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001 (CERT)",
+    "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001 (CERT)",
+    "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001 (NO-GO)"
+  ],
+  "global_closure_claimed": false,
+  "forbidden_inputs": "Adler-Weiss core import, manual rectangles, manual coding, M_phi as A_LV, SE-as-conjugacy, T^44=I"
+}

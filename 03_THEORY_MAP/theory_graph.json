@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 393,
+    "claims": 396,
     "release_status": {
       "CORE-FORMALIZED": 162,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 120,
-      "NO-GO": 20,
+      "CERT-CLOSED": 122,
+      "NO-GO": 21,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 244,
+      "LEAN_PROVED": 247,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
@@ -29,13 +29,13 @@
     "claim_type": {
       "core": 163,
       "bridge": 28,
-      "no-go": 28,
-      "certificate": 135,
+      "no-go": 29,
+      "certificate": 137,
       "deprecated": 3,
       "frontier": 36
     },
     "domain": {
-      "formal_core": 215,
+      "formal_core": 218,
       "rg": 5,
       "gauge_bridge": 21,
       "smooth_geometry": 30,
@@ -13162,6 +13162,120 @@
       "label": "vp_higgs_phason_orbit_nontriviality.py",
       "path": "05_CERTS/vp_higgs_phason_orbit_nontriviality.py",
       "exists": true
+    },
+    {
+      "id": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "01.toral",
+      "lean_module": "D0.Geometry.ToralIntegralConjugacy",
+      "lean_theorem": "toral_matrix_integral_conjugate_to_negative_golden_matrix",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_toral_integral_conjugacy.py",
+      "python_cert": [
+        "vp_toral_integral_conjugacy.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Toral Lucas-Voronoi campaign Phase A] C T C^-1 = -M_phi (integral matrix conjugacy ONLY) with C=[[0,-1],[1,0]] unimodular, T=[[0,1],[1,-1]], M_phi=[[1,1],[1,0]]. T hyperbolic: tr=-1, det=-1 (charpoly x^2+x-1), eigenvalues phi^-1 and -phi, entropy log phi. -M_phi has a negative entry and != M_phi -> the integral conjugacy is NOT the symbolic SSE to the golden cylinder shift. Lean D0.Geometry.ToralIntegralConjugacy (native_decide). q_T=44 is a return modulus, T^44 != I.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/ToralIntegralConjugacy.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.ToralIntegralConjugacy",
+      "kind": "lean_module",
+      "label": "D0.Geometry.ToralIntegralConjugacy",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/ToralIntegralConjugacy.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_toral_integral_conjugacy.py",
+      "kind": "python_cert",
+      "label": "vp_toral_integral_conjugacy.py",
+      "path": "05_CERTS/vp_toral_integral_conjugacy.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_01",
+      "section": "01.toral",
+      "lean_module": "D0.Geometry.ToralLucasPeriodicSeed",
+      "lean_theorem": "lucas_periodic_seed_defined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_toral_lucas_periodic_seed.py",
+      "python_cert": [
+        "vp_toral_lucas_periodic_seed.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Toral Lucas-Voronoi campaign Phase A] #Fix_n=|det(T^n-I)|=1,1,4,5,11 for n=1..5 (signed dets 1,-1,4,-5,11). Primitive period-3 set = #Fix_3-#Fix_1 = 4-1 = 3 points = a single f_T orbit (3 prime, non-fixed) -- the canonical first nontrivial periodic landmark as an UNORDERED orbit set; no point privileged. Lean D0.Geometry.ToralLucasPeriodicSeed.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/ToralLucasPeriodicSeed.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.ToralLucasPeriodicSeed",
+      "kind": "lean_module",
+      "label": "D0.Geometry.ToralLucasPeriodicSeed",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/ToralLucasPeriodicSeed.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_toral_lucas_periodic_seed.py",
+      "kind": "python_cert",
+      "label": "vp_toral_lucas_periodic_seed.py",
+      "path": "05_CERTS/vp_toral_lucas_periodic_seed.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_06",
+      "section": "06.toral",
+      "lean_module": "D0.Geometry.ToralCanonicalMarkovNoGo",
+      "lean_theorem": "toral_canonical_markov_partition_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_toral_canonical_markov_partition_nogo.py",
+      "python_cert": [
+        "vp_toral_canonical_markov_partition_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Toral Lucas-Voronoi campaign, OUTCOME B] No canonical Markov partition / golden-cylinder SSE from present inputs: (1) the integral conjugate -M_phi has a negative entry and != M_phi, so the integral conjugacy is NOT the symbolic SSE; (2) a canonical Markov partition is not determined by a 3-point seed (Adler-Weiss partitions are non-unique, involve rectangle-boundary choices). The Markov-rectangle, symbolic-coding, boundary-quotient, and Williams-SSE owners stay PROOF-TARGET. EXACT MISSING ARTIFACT (D0-TORAL-WILLIAMS-SSE-OWNER-001): a canonical seed-determined finite Markov partition whose NONNEGATIVE adjacency matrix is exhibited strong-shift-equivalent to M_phi, derived not chosen. No Adler-Weiss import, no manual rectangles, no T^44=I. Lean D0.Geometry.ToralCanonicalMarkovNoGo.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/ToralCanonicalMarkovNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.ToralCanonicalMarkovNoGo",
+      "kind": "lean_module",
+      "label": "D0.Geometry.ToralCanonicalMarkovNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/ToralCanonicalMarkovNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_toral_canonical_markov_partition_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_toral_canonical_markov_partition_nogo.py",
+      "path": "05_CERTS/vp_toral_canonical_markov_partition_nogo.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -18738,6 +18852,51 @@
     {
       "source": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001",
       "target": "cert:vp_higgs_phason_orbit_nontriviality.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
+      "target": "module:D0.Geometry.ToralIntegralConjugacy",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
+      "target": "cert:vp_toral_integral_conjugacy.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+      "target": "module:D0.Geometry.ToralLucasPeriodicSeed",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+      "target": "cert:vp_toral_lucas_periodic_seed.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+      "target": "module:D0.Geometry.ToralCanonicalMarkovNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+      "target": "cert:vp_toral_canonical_markov_partition_nogo.py",
       "kind": "certified_by"
     }
   ]

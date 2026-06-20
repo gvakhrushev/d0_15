@@ -7,13 +7,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 120
+- `CERT-CLOSED`: 122
 - `CORE-FORMALIZED`: 162
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 20
+- `NO-GO`: 21
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -21,18 +21,18 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 135
+- `certificate`: 137
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 28
+- `no-go`: 29
 
 ## Domain counts
 
 - `cosmology`: 47
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 215
+- `formal_core`: 218
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -2080,6 +2080,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Root B synthesis bonus] Quasicrystal carrier = symbolic dynamics of the golden foliation of the time torus. Cert vp_quasicrystal_time_sturmian.py UPGRADES the prose-only 40-symbol check to EXACT executable: cut-and-project word slope phi^-2 = Fibonacci substitution word a->ab,b->a to N=4000 (exact isqrt floors floor(k phi)=(k+isqrt(5k^2))//2), rare-letter freq=phi^-2, aperiodic, rational-slope negative control. Arrow=Pisot |psi|=phi^-1<1 reuses D0-TIME-2D-PISOT-001 (proved). HONEST: proves EXACT SYMBOLIC coincidence only; full topological conjugacy (phi^-2 rotation = foliation return map; Morse-Hedlund/Vershik) needs ergodic machinery not in Mathlib -> theorem-target; arrow interpretation rests on Adler-Weiss external citation.
 
+### D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Geometry.ToralIntegralConjugacy`
+- theorem: `toral_matrix_integral_conjugate_to_negative_golden_matrix`
+- cert: `vp_toral_integral_conjugacy.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Toral Lucas-Voronoi campaign Phase A] C T C^-1 = -M_phi (integral matrix conjugacy ONLY) with C=[[0,-1],[1,0]] unimodular, T=[[0,1],[1,-1]], M_phi=[[1,1],[1,0]]. T hyperbolic: tr=-1, det=-1 (charpoly x^2+x-1), eigenvalues phi^-1 and -phi, entropy log phi. -M_phi has a negative entry and != M_phi -> the integral conjugacy is NOT the symbolic SSE to the golden cylinder shift. Lean D0.Geometry.ToralIntegralConjugacy (native_decide). q_T=44 is a return modulus, T^44 != I.
+
+### D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Geometry.ToralLucasPeriodicSeed`
+- theorem: `lucas_periodic_seed_defined`
+- cert: `vp_toral_lucas_periodic_seed.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Toral Lucas-Voronoi campaign Phase A] #Fix_n=|det(T^n-I)|=1,1,4,5,11 for n=1..5 (signed dets 1,-1,4,-5,11). Primitive period-3 set = #Fix_3-#Fix_1 = 4-1 = 3 points = a single f_T orbit (3 prime, non-fixed) -- the canonical first nontrivial periodic landmark as an UNORDERED orbit set; no point privileged. Lean D0.Geometry.ToralLucasPeriodicSeed.
+
 ### D0-UNITY-SPLIT-SPACETIME-001
 
 - type: `certificate`
@@ -3795,6 +3821,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [8C orphan-harvest] freezes V3-V12 negative discovery scans; blocks proxy promotion.
+
+### D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Geometry.ToralCanonicalMarkovNoGo`
+- theorem: `toral_canonical_markov_partition_nogo`
+- cert: `vp_toral_canonical_markov_partition_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Toral Lucas-Voronoi campaign, OUTCOME B] No canonical Markov partition / golden-cylinder SSE from present inputs: (1) the integral conjugate -M_phi has a negative entry and != M_phi, so the integral conjugacy is NOT the symbolic SSE; (2) a canonical Markov partition is not determined by a 3-point seed (Adler-Weiss partitions are non-unique, involve rectangle-boundary choices). The Markov-rectangle, symbolic-coding, boundary-quotient, and Williams-SSE owners stay PROOF-TARGET. EXACT MISSING ARTIFACT (D0-TORAL-WILLIAMS-SSE-OWNER-001): a canonical seed-determined finite Markov partition whose NONNEGATIVE adjacency matrix is exhibited strong-shift-equivalent to M_phi, derived not chosen. No Adler-Weiss import, no manual rectangles, no T^44=I. Lean D0.Geometry.ToralCanonicalMarkovNoGo.
 
 ### D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY
 

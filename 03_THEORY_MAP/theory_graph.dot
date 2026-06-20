@@ -394,6 +394,9 @@ digraph D0Theory {
   "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001" [label="D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001" [label="D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001" [label="D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
+  "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001" [label="D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001" [label="D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001" [label="D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2624,4 +2627,22 @@ digraph D0Theory {
   "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001" -> "cert:vp_higgs_phason_orbit_nontriviality.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Geometry.ToralIntegralConjugacy" [label="D0.Geometry.ToralIntegralConjugacy", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001" -> "module:D0.Geometry.ToralIntegralConjugacy" [label="module"];
+  "cert:vp_toral_integral_conjugacy.py" [label="vp_toral_integral_conjugacy.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001" -> "cert:vp_toral_integral_conjugacy.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Geometry.ToralLucasPeriodicSeed" [label="D0.Geometry.ToralLucasPeriodicSeed", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001" -> "module:D0.Geometry.ToralLucasPeriodicSeed" [label="module"];
+  "cert:vp_toral_lucas_periodic_seed.py" [label="vp_toral_lucas_periodic_seed.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001" -> "cert:vp_toral_lucas_periodic_seed.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Geometry.ToralCanonicalMarkovNoGo" [label="D0.Geometry.ToralCanonicalMarkovNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001" -> "module:D0.Geometry.ToralCanonicalMarkovNoGo" [label="module"];
+  "cert:vp_toral_canonical_markov_partition_nogo.py" [label="vp_toral_canonical_markov_partition_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001" -> "cert:vp_toral_canonical_markov_partition_nogo.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001" -> "domain:formal_core" [label="domain"];
 }

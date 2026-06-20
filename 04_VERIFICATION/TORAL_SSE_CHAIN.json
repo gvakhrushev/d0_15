@@ -1,0 +1,5 @@
+{
+  "status": "NOT_FOUND (Outcome B)",
+  "reason": "no canonical Markov partition -> no canonical nonnegative adjacency A_LV -> no SSE chain to M_phi; integral conjugacy gives -M_phi (negative entries, not an adjacency matrix)",
+  "chain": []
+}

@@ -1,7 +1,7 @@
 # D0 Standard Language Audit Report
-Generated: 2026-06-20T11:12:14.053769+00:00
+Generated: 2026-06-20T12:36:15.136082+00:00
 
-Total occurrences scanned: 2521
+Total occurrences scanned: 2527
 
 ## Summary by Classification
 - NEEDS_STANDARD_REWRITE: 123
@@ -9,7 +9,7 @@ Total occurrences scanned: 2521
 - OK_FIRST_USE: 67
 - OK_OWNER: 232
 - OK_STANDARD_CONTEXT: 291
-- OK_STRUCTURAL: 1616
+- OK_STRUCTURAL: 1622
 
 ## Needs Rewrite (sample)
 - BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:276 `readout` → positive measurement outcome / positive response functional
@@ -20,39 +20,39 @@ Total occurrences scanned: 2521
   > ordered discrete-evolution-endomorphism chain (D0: tick chain)
 - BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:906 `scene` → finite incidence / clique complex
   > For the selected scene,
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1217 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1218 `readout` → positive measurement outcome / positive response functional
   > The probability from positive measurement outcomes (D0: readout) is forced to be
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1279 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1280 `readout` → positive measurement outcome / positive response functional
   > => unique normalized positive measurement outcomes (D0: readout);
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1281 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1282 `readout` → positive measurement outcome / positive response functional
   > no alternative power readout at fixed response.
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1301 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1302 `readout` → positive measurement outcome / positive response functional
   > A positive measurement outcome (D0: readout) cannot depend on the arbitrary internal quarter-turn of the phase quadrature,
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1350 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1351 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
   > + quadratic detector closure
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1384 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1385 `readout` → positive measurement outcome / positive response functional
   > No superluminal update is required; the correlation is a support identity before the metric readout.
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1405 `tick` → discrete evolution endomorphism
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1406 `tick` → discrete evolution endomorphism
   > discrete-evolution order (D0: tick order)
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1415 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1416 `readout` → positive measurement outcome / positive response functional
   > after the readout modulus is fixed.
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1462 `archive` → traced-out complement / quotient sector
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1463 `archive` → traced-out complement / quotient sector
   > higher-dimensional archive support
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1555 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1556 `scene` → finite incidence / clique complex
   > The scene is the complete tripartite graph
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1635 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1636 `readout` → positive measurement outcome / positive response functional
   > readout quotient chooses a return modulus.  Thus the same chain has two layers:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1638 `archive` → traced-out complement / quotient sector
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1639 `archive` → traced-out complement / quotient sector
   > φ^{-2} irrational rotation  > non-resonant archive smoothing;
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1834 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1835 `scene` → finite incidence / clique complex
   > The turn count is fixed by terminal role closure plus the three incidence directions of the scene:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1834 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1835 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
   > The turn count is fixed by terminal role closure plus the three incidence directions of the scene:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1852 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1853 `scene` → finite incidence / clique complex
   > and the bilateral scene line
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1858 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1859 `scene` → finite incidence / clique complex
   > A full oriented return must include the two-sided orientation, the pointed terminal alphabet and the full bilateral scene line:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1962 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1963 `readout` → positive measurement outcome / positive response functional
   > Readout is D^dagger D applied to the T^n-state.
 - BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:472 `readout` → positive measurement outcome / positive response functional
   > The terminal two-port readout is therefore written as a role-preserving representation
