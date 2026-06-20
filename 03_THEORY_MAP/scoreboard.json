@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 5708,
-    "track_fair_max": 7910,
+    "realized": 5715,
+    "track_fair_max": 7917,
     "pct_strength": 72.2,
     "core_realized": 4610,
     "core_potential": 6780,
     "core_headroom": 2170,
-    "n_claims": 448,
-    "n_active": 446,
+    "n_claims": 449,
+    "n_active": 447,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -50,9 +50,9 @@
       "core_headroom": 21
     },
     "smooth_geometry": {
-      "n": 35,
-      "realized": 426,
-      "max": 595,
+      "n": 36,
+      "realized": 433,
+      "max": 602,
       "core_headroom": 165
     },
     "spectral_action": {
@@ -148,9 +148,9 @@
       "core_headroom": 80
     },
     "BOOK_07": {
-      "n": 62,
-      "realized": 768,
-      "max": 1084,
+      "n": 63,
+      "realized": 775,
+      "max": 1091,
       "core_headroom": 302
     },
     "BOOK_06/08": {
@@ -9662,6 +9662,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "smooth_geometry",
       "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
     }

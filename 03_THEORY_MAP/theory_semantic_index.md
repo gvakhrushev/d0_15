@@ -15,13 +15,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 46
 - `NO_GO_PROVED`: 8
-- `PASSPORT-CLOSED`: 17
+- `PASSPORT-CLOSED`: 18
 - `PROOF-TARGET`: 44
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 154
+- `certificate`: 155
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 44
@@ -38,7 +38,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `interpretation_spine`: 1
 - `rg`: 7
 - `si_calibration`: 2
-- `smooth_geometry`: 35
+- `smooth_geometry`: 36
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -4486,7 +4486,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_gauge_boundary_commutator_obstruction.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET] [8C: linked passing cert]
+- notes: Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET] [8C: linked passing cert] EXACT-MISSING: a gauge-boundary commutator obstruction theorem (external/PROOF-TARGET).
 
 ### D0-CVFT-F8
 
@@ -4499,7 +4499,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure. [was:CERT-CANDIDATE]
+- notes: S_DE exceptional-point algebra is an effective two-mode transfer candidate only; not DESI pass H0 theorem or cosmology closure. [was:CERT-CANDIDATE] EXACT-MISSING: external DESI passport for the two-mode S_DE transfer (no internal forcing).
 
 ### D0-DUSTY-PLASMA-001
 
@@ -4525,7 +4525,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter15 trace-leg split] The edge-alpha TRACE leg is CLOSED (Tr(F_E)=359 phi^-2-phi^-5 = alpha_top^-1 proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, CORE; seam xi5 = D0-XI5). What remains genuinely OPEN here is ONLY the unitary-dilation / torus-ramification Puiseux leg: the analytic continuation of the edge trace through the ramified cover (Puiseux series of the edge sector), which is not a finite identity. Status PROOF-TARGET. Companion finite content at D0-EDGE-ALPHA-001 / D0-EDGE-RAMIFICATION-001 (cert-closed).
+- notes: [Iter15 trace-leg split] The edge-alpha TRACE leg is CLOSED (Tr(F_E)=359 phi^-2-phi^-5 = alpha_top^-1 proved as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, CORE; seam xi5 = D0-XI5). What remains genuinely OPEN here is ONLY the unitary-dilation / torus-ramification Puiseux leg: the analytic continuation of the edge trace through the ramified cover (Puiseux series of the edge sector), which is not a finite identity. Status PROOF-TARGET. Companion finite content at D0-EDGE-ALPHA-001 / D0-EDGE-RAMIFICATION-001 (cert-closed). EXACT-MISSING: the non-trace edge-alpha leg owner (external EFT/IR normalization passport).
 
 ### D0-H0-EVOLVING-W-001
 
@@ -4577,7 +4577,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The substantive claim (matter and TT gravity on ONE shared finite cochain carrier, coupling FORCED by shared-d/conservation) is architecture-blocked: the matter side is R over archivePhaseIndex/Matrix n n (ArchiveStressRepresentative.lean, EdgeStressCoupling.lean) while the TT side is Q over Fin 4 (FiniteSpin2WaveOperator.lean) -- there is NO shared carrier, unifying them is new architecture. Worse, the d-conservation forcing the honest map needs COLLIDES with an existing internal NO-GO, canonical_stress_conservation_no_go (the symmetrized canonical stress has divergence != 0 in general), so the map cannot be derived off the shelf. Real per-side assets exist (spin2_coupling_depends_only_on_tt_stress, PiTT4_kills_trace/PiTT4_kills_gauge; finite C1 Hodge core vp_finite_hodge_complex_core.py) but do NOT constitute the cross-carrier binding the claim asserts. Jointly open with D0-SPECTRAL-EINSTEIN-001.
+- notes: [8C orphan-harvest] matter on C1, TT gravity on symmetric C1, shared finite cochain carrier. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The substantive claim (matter and TT gravity on ONE shared finite cochain carrier, coupling FORCED by shared-d/conservation) is architecture-blocked: the matter side is R over archivePhaseIndex/Matrix n n (ArchiveStressRepresentative.lean, EdgeStressCoupling.lean) while the TT side is Q over Fin 4 (FiniteSpin2WaveOperator.lean) -- there is NO shared carrier, unifying them is new architecture. Worse, the d-conservation forcing the honest map needs COLLIDES with an existing internal NO-GO, canonical_stress_conservation_no_go (the symmetrized canonical stress has divergence != 0 in general), so the map cannot be derived off the shelf. Real per-side assets exist (spin2_coupling_depends_only_on_tt_stress, PiTT4_kills_trace/PiTT4_kills_gauge; finite C1 Hodge core vp_finite_hodge_complex_core.py) but do NOT constitute the cross-carrier binding the claim asserts. Jointly open with D0-SPECTRAL-EINSTEIN-001. EXACT-MISSING: shared C1 cochain Hodge map (R/Q carrier mismatch; architecture-blocked).
 
 ### D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001
 
@@ -4590,7 +4590,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_hypercharge_graph_flow_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 four-physics P1] The K(9,11,13) edge-current / divergence-free (Kirchhoff) SCAFFOLD is built (Lean EdgeCurrent structure; a tiny-graph conservation check in the cert). MISSING (exact): a divergence-free EdgeCurrent on K(9,11,13) whose zone-normalized U(1) holonomy trace YIELDS the hypercharge row (qL=1/6,...). cert vp_hypercharge_graph_flow_owner.py (controls: nonzero-divergence current rejected; row-derived claim rejected (scaffold only); SM-table-as-derivation rejected). PROOF-TARGET; no SM charge table imported as proof of origin.
+- notes: [Iter22 four-physics P1] The K(9,11,13) edge-current / divergence-free (Kirchhoff) SCAFFOLD is built (Lean EdgeCurrent structure; a tiny-graph conservation check in the cert). MISSING (exact): a divergence-free EdgeCurrent on K(9,11,13) whose zone-normalized U(1) holonomy trace YIELDS the hypercharge row (qL=1/6,...). cert vp_hypercharge_graph_flow_owner.py (controls: nonzero-divergence current rejected; row-derived claim rejected (scaffold only); SM-table-as-derivation rejected). PROOF-TARGET; no SM charge table imported as proof of origin. EXACT-MISSING: the flow->Weyl map Phi (role-carrier NO-GO-bounded; the anomaly ROW is already owned).
 
 ### D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001
 
@@ -4616,7 +4616,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_inflationless_early_universe_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 four-physics P4] t=0 is the connectivity threshold, NOT a singularity (THE 61.4, prose-owned); the threshold-replaces-inflaton structure is the connectivity owner (D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001). MISSING (exact): the precise reheating ENERGY budget + rate from the discrete rank evolution d_V F_N + feedback pressure. cert vp_inflationless_early_universe_owner.py (controls: inflaton inserted rejected; t=0 singularity rejected; arbitrary threshold rejected). PROOF-TARGET; no inflaton, no Planck datum.
+- notes: [Iter22 four-physics P4] t=0 is the connectivity threshold, NOT a singularity (THE 61.4, prose-owned); the threshold-replaces-inflaton structure is the connectivity owner (D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001). MISSING (exact): the precise reheating ENERGY budget + rate from the discrete rank evolution d_V F_N + feedback pressure. cert vp_inflationless_early_universe_owner.py (controls: inflaton inserted rejected; t=0 singularity rejected; arbitrary threshold rejected). PROOF-TARGET; no inflaton, no Planck datum. EXACT-MISSING: external cosmology passport for the THE 61.4 prose value (connectivity-threshold structure owned).
 
 ### D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001
 
@@ -4759,7 +4759,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_phason_wz_logdet_window_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 five-front D] The log-det spectral window FORM rho(u)~exp(-u*lambda_c)+exp(-u*lambda_r), p(u)~d_V[-logdet(I-zF_N(V))], w_D0(u)=p(u)/rho(u) is scaffolded. MISSING (exact): the eigenvalues lambda_c~1.421, lambda_r~1.579 are NOT internally owned (only representative numerical domain-check values in vp_strong_logdet_pressure_coupling.py); an exact Q(phi) derivation of lambda_c, lambda_r as owned objects from the log-det formula is required. cert vp_phason_wz_logdet_window_owner.py (controls: lambda-without-owner / DESI-defines-w / retune-after-survey rejected). PROOF-TARGET.
+- notes: [Iter22 five-front D] The log-det spectral window FORM rho(u)~exp(-u*lambda_c)+exp(-u*lambda_r), p(u)~d_V[-logdet(I-zF_N(V))], w_D0(u)=p(u)/rho(u) is scaffolded. MISSING (exact): the eigenvalues lambda_c~1.421, lambda_r~1.579 are NOT internally owned (only representative numerical domain-check values in vp_strong_logdet_pressure_coupling.py); an exact Q(phi) derivation of lambda_c, lambda_r as owned objects from the log-det formula is required. cert vp_phason_wz_logdet_window_owner.py (controls: lambda-without-owner / DESI-defines-w / retune-after-survey rejected). PROOF-TARGET. EXACT-MISSING: exact Q(phi) roots lambda_c,lambda_r of the log-det window (PROOF-TARGET) -> PRIM-PHYSICAL-MAGNITUDE-MAP.
 
 ### D0-PHASON-WZ-TRANSFER-OWNER-001
 
@@ -4785,7 +4785,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter21 HYP] delta_CP ~= pi0 ~= pi (CP near-conservation as the full-3-cycle angle); a falsifiable prediction in normal ordering. Not derived; named prediction target.
+- notes: [Iter21 HYP] delta_CP ~= pi0 ~= pi (CP near-conservation as the full-3-cycle angle); a falsifiable prediction in normal ordering. Not derived; named prediction target. EXACT-MISSING: external EFT/PMNS passport; delta_CP decimal stays HYP (internal angle pi0 owned).
 
 ### D0-PUB-001
 
@@ -4798,7 +4798,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter21 dangling-pointer CLEARED: publication/prose structure has no math leg to formalize -- enforced deterministically by 05_CERTS/vp_publication_claim_register_guardrail.py]Audit-only publication structure. [publication-structure meta; deferred; was:PUBLICATION-MONOGRAPH-STRUCTURE]
+- notes: [Iter21 dangling-pointer CLEARED: publication/prose structure has no math leg to formalize -- enforced deterministically by 05_CERTS/vp_publication_claim_register_guardrail.py]Audit-only publication structure. [publication-structure meta; deferred; was:PUBLICATION-MONOGRAPH-STRUCTURE] EXACT-MISSING: none -- NO MATH LEG (publication/prose structure); candidate for EXTERNAL-BACKGROUND, not a math proof-target.
 
 ### D0-QUANT-MET-003
 
@@ -4811,7 +4811,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter21 conditional Lean leg in D0.Metrology.Phi2Flux: Tr(Pi.(F-lam.P).Pi)>=0 for PSD sector + phi^-2>0 -- dangling module now resolves; the physical flux=phi^-2 stays the sector hypothesis:]φ^{-2} flux is sector hypothesis / prediction target. [was:CONDITIONAL-THEOREM-TARGET]
+- notes: [Iter21 conditional Lean leg in D0.Metrology.Phi2Flux: Tr(Pi.(F-lam.P).Pi)>=0 for PSD sector + phi^-2>0 -- dangling module now resolves; the physical flux=phi^-2 stays the sector hypothesis:]φ^{-2} flux is sector hypothesis / prediction target. [was:CONDITIONAL-THEOREM-TARGET] EXACT-MISSING: external metrology calibration passport (conditional Lean leg internal; value external).
 
 ### D0-QUANT-MET-004
 
@@ -4824,7 +4824,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter21 formula Lean leg in D0.Metrology.PhasonBragg: phi^-2=2-phi + frac(m.phi^-2)=frac(-m.phi) -- dangling module now resolves; the empirical Bragg-spectrum prediction stays the metrology target:]Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET]
+- notes: [Iter21 formula Lean leg in D0.Metrology.PhasonBragg: phi^-2=2-phi + frac(m.phi^-2)=frac(-m.phi) -- dangling module now resolves; the empirical Bragg-spectrum prediction stays the metrology target:]Analog residual Bragg frequencies f_m = m φ^{-2} mod 1 as metrology target. [was:METROLOGY-PREDICTION-TARGET] EXACT-MISSING: external Bragg/metrology passport (formula leg internal; physical value external).
 
 ### D0-SPECTRAL-EINSTEIN-001
 
@@ -4837,7 +4837,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [8C orphan-harvest] finite spectral-action A2 response. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The GENUINE content (the scalar A2/EH-proxy trace identity a2_is_eh_proxy, D0.Geometry.SpectralActionLadder) is already owned by D0-GEOM-SPECTRAL-ACTION-LADDER-001 (CORE). What is OPEN here is the rank-2 Einstein tensor G_ij = dS_A2/dh proved simultaneously SYMMETRIC and DIVERGENCE-FREE -- that object does NOT exist anywhere in D0/ (no G_A2/EinsteinTensor). The block is two-fold: a CARRIER MISMATCH (HeatTraceEHProxy.lean over R Matrix N N + W_rho vs FiniteSpin2WaveOperator.lean over Q SymPert4 + pairing4) and a MISSING variational-derivative operator (dS_A2/dh as a closed-form matrix on a single carrier was never written). Architecture-blocked, not a quick finite witness; jointly open with D0-HODGE-LINKS-001. Do NOT anchor an ASSUMP row to the scalar a2_is_eh_proxy -- it supplies no tensor for the obligation to be about.
+- notes: [8C orphan-harvest] finite spectral-action A2 response. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The GENUINE content (the scalar A2/EH-proxy trace identity a2_is_eh_proxy, D0.Geometry.SpectralActionLadder) is already owned by D0-GEOM-SPECTRAL-ACTION-LADDER-001 (CORE). What is OPEN here is the rank-2 Einstein tensor G_ij = dS_A2/dh proved simultaneously SYMMETRIC and DIVERGENCE-FREE -- that object does NOT exist anywhere in D0/ (no G_A2/EinsteinTensor). The block is two-fold: a CARRIER MISMATCH (HeatTraceEHProxy.lean over R Matrix N N + W_rho vs FiniteSpin2WaveOperator.lean over Q SymPert4 + pairing4) and a MISSING variational-derivative operator (dS_A2/dh as a closed-form matrix on a single carrier was never written). Architecture-blocked, not a quick finite witness; jointly open with D0-HODGE-LINKS-001. Do NOT anchor an ASSUMP row to the scalar a2_is_eh_proxy -- it supplies no tensor for the obligation to be about. EXACT-MISSING: the G_A2 tensor + d-forcing (architecture-blocked; see p2-architecture-blocked-items).
 
 ### D0-TORAL-TIME-MARKOV-CONJUGACY-001
 
@@ -5620,6 +5620,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter10 FORCING, closed in chat -- the lattice BRIDGE became a FORCING] phi-carrier is forced, not postulated: (1) non-perturbative gauge theory is rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay problem) => finite carrier is the only rigorous one; (2) a periodic lattice has an arbitrary step a (needs a->0); a quasicrystal is self-similar by phi (inflation [[1,1],[1,0]] Perron eigenvalue phi, A/B->phi) with NO preferred step, NO a->0 limit; (3) M1 forbids the hand-chosen a (exogenous) => carrier must be aperiodic-self-similar; (4) aperiodic + 5-fold => phi (Penrose/de Bruijn cut-and-project; 2cos(pi/5)=phi; Shechtman Nobel 2011). cert vp_quasicrystal_carrier_forcing.py (decidable inflation/5-fold backbone + 4 named external pillars). Reuses the already-proved quasicrystalline carrier (Sturmian phi^-2, §01.21.2). NEW external channel to phi (with Hurwitz, Jones-index, KAM, quadratic Pisot). Do not reopen; the open remainder is D0-QUASICRYSTAL-PROJECTION-001.
+
+### D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_smooth_manifold_formalism_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [P2] Finite-to-continuum boundary passport. The finite GHP golden Cauchy bound is INTERNAL; the smooth-manifold reconstruction is CONDITIONAL on explicit external hypotheses (Rieffel Lip-norm precompactness, GH/propinquity convergence, Connes reconstruction regularity/first-order/orientability) -- see GHP_RIEFFEL_CONNES_ASSUMPTION_MATRIX.csv + SMOOTH_LIMIT_FORMALISM_PASSPORT.md + FINITE_TO_CONTINUUM_GAP_MAP.md. The inductive isometric J_N is a vNext NO-GO (D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001). FORBIDDEN: finite Cauchy proves smooth manifold; Connes internally complete; c_D0=1 proves physical c; smooth continuum is CORE. No smooth manifold in CORE.
 
 ### D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001
 

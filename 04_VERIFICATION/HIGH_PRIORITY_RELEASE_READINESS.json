@@ -1,0 +1,22 @@
+{
+  "fronts": 6,
+  "P0": "clean",
+  "P1": "CERT+PASSPORT (echo falsifier)",
+  "P3A": "CERT (phason envelope)",
+  "open_physical_fronts": [
+    "P2 smooth-limit (external)",
+    "P3 magnitude (no-go/passport)",
+    "P4 n_s (no-go)",
+    "P5 lepton coeff (no-go)"
+  ],
+  "new_primitives": [
+    "PRIM-PHYSICAL-MAGNITUDE-MAP",
+    "PRIM-FORCED-SMOOTHING-WINDOW",
+    "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+    "isometric Dirac J_N"
+  ],
+  "physics_promoted_to_core": 0,
+  "fitted_quantities": 0,
+  "release_condition": "every front CERT / NO-GO / PASSPORT / named-primitive; one clean empirical falsifier (echo); no status inflation",
+  "release_ready": true
+}

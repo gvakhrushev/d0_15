@@ -1,0 +1,6 @@
+assumption_id,framework,exact_hypothesis,d0_object,proof_status,external_or_internal,failure_mode
+GHP-FINITE-CAUCHY,finite metric tower,"golden contraction Cauchy bound on (X_N,d_N)",archive refinement metrics,internal finite estimate,internal,defect not summable
+RIEFFEL-LIPNORM,Rieffel compact quantum metric,Lip-norm with precompact Lipschitz ball,finite spectral triple seminorm,conditional (external),external,ball not precompact
+GH-PROPINQUITY,quantum Gromov-Hausdorff propinquity,metric convergence of the inductive tower,Bratteli/refinement tower (formalism),conditional (external),external,no isometric J_N (vNext NO-GO)
+CONNES-RECON-DIM,Connes reconstruction,dimension/orientability/reality/first-order + regularity,finite spectral triple data,conditional (external),external,first-order/orientability unproven internally
+CONNES-RECON-SMOOTH,Connes reconstruction,smooth manifold from a commutative spectral triple,inverse-limit tower,conditional (external),external,commutativity/smoothness not internal

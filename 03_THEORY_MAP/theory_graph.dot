@@ -449,6 +449,7 @@ digraph D0Theory {
   "D0-HORIZONLESS-ECHO-PASSPORT-001" [label="D0-HORIZONLESS-ECHO-PASSPORT-001\\nPASSPORT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001" [label="D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001\\nPASSPORT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001" [label="D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001\\nCERT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
+  "D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001" [label="D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001\\nPASSPORT-CLOSED\\nsmooth_geometry", fillcolor="#1f6f9f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -3009,4 +3010,10 @@ digraph D0Theory {
   "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001" -> "cert:vp_phason_continuum_envelope.py" [label="cert"];
   "domain:smooth_geometry" [label="smooth_geometry", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001" -> "domain:smooth_geometry" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001" -> "module:" [label="module"];
+  "cert:vp_smooth_manifold_formalism_passport.py" [label="vp_smooth_manifold_formalism_passport.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001" -> "cert:vp_smooth_manifold_formalism_passport.py" [label="cert"];
+  "domain:smooth_geometry" [label="smooth_geometry", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001" -> "domain:smooth_geometry" [label="domain"];
 }
