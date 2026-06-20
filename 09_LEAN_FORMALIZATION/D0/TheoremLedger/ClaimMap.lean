@@ -604,7 +604,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001", moduleName := "D0.Matter.CKMOverlapUnderdeterminationNoGo",
       theoremName := "ckm_overlap_underdetermination_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001", moduleName := "D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo",
-      theoremName := "higgs_condensation_present_core_maximality_nogo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "higgs_condensation_present_core_maximality_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001", moduleName := "D0.Geometry.ToralSeedMarkovMaximalityNoGo",
+      theoremName := "toral_seed_markov_maximality_nogo", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

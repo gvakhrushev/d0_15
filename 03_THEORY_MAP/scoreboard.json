@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 5262,
-    "track_fair_max": 7266,
-    "pct_strength": 72.4,
+    "realized": 5274,
+    "track_fair_max": 7278,
+    "pct_strength": 72.5,
     "core_realized": 4448,
     "core_potential": 6420,
     "core_headroom": 1972,
-    "n_claims": 403,
-    "n_active": 401,
+    "n_claims": 404,
+    "n_active": 402,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 222,
-      "realized": 3288,
-      "max": 4101,
+      "n": 223,
+      "realized": 3300,
+      "max": 4113,
       "core_headroom": 803
     },
     "rg": {
@@ -316,9 +316,9 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 35,
-      "realized": 430,
-      "max": 622,
+      "n": 36,
+      "realized": 442,
+      "max": 634,
       "core_headroom": 192
     },
     "BOOK_01/06": {
@@ -8760,6 +8760,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
       "leverage": 0,
       "integrity_flag": null
     }

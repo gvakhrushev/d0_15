@@ -13,7 +13,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 27
+- `NO-GO`: 28
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
 - `PROOF-TARGET`: 36
@@ -25,14 +25,14 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `core`: 163
 - `deprecated`: 3
 - `frontier`: 36
-- `no-go`: 35
+- `no-go`: 36
 
 ## Domain counts
 
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 223
+- `formal_core`: 224
 - `frontier`: 36
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1090,7 +1090,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_fibonacci_if_bratteli.py`
 - assumptions: `ASSUMP-ADLER-WEISS`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
-- notes: [Iter18 owner-edge] Closes the D0-FIBONACCI-IF-FORCING-001 named gap at the entropy/finite-equivalence level. D0 proves internally (cert vp_fibonacci_if_bratteli.py, exact): the Fibonacci fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi), so the categorical Bratteli path-space has topological entropy log(Perron)=log phi; the toral T=[[0,1],[1,-1]] is Anosov (det -1, |lambda_max|=phi), entropy log phi. So I_f=log phi is forced for the value and its mechanism (topological entropy = log Perron of a golden-growth integer matrix); the two systems have equal entropy. EXTERNAL OWNER (named, not re-proved): Adler-Weiss (1967) Markov partition => T conjugate to an SFT with Perron phi; Adler/Williams SFT classification => equal-entropy irreducible SFTs are FINITELY EQUIVALENT, full TOPOLOGICAL CONJUGACY (Williams shift-equivalence) is the residual not implied by equal entropy. Lean D0.Bridge.AdlerWeissBridge (adler_weiss_partition_conditional) conditional on ASSUMP-ADLER-WEISS. HONEST: isomorphism exhibited at entropy/finite-equivalence level; full conjugacy stays the cited external owner. cite Adler-Weiss PNAS 57 (1967) 1573; Williams Ann. Math. 98 (1973) 120. BRIDGE track, honesty not points.
+- notes: [Iter18 owner-edge] Closes the D0-FIBONACCI-IF-FORCING-001 named gap at the entropy/finite-equivalence level. D0 proves internally (cert vp_fibonacci_if_bratteli.py, exact): the Fibonacci fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi), so the categorical Bratteli path-space has topological entropy log(Perron)=log phi; the toral T=[[0,1],[1,-1]] is Anosov (det -1, |lambda_max|=phi), entropy log phi. So I_f=log phi is forced for the value and its mechanism (topological entropy = log Perron of a golden-growth integer matrix); the two systems have equal entropy. EXTERNAL OWNER (named, not re-proved): Adler-Weiss (1967) Markov partition => T conjugate to an SFT with Perron phi; Adler/Williams SFT classification => equal-entropy irreducible SFTs are FINITELY EQUIVALENT, full TOPOLOGICAL CONJUGACY (Williams shift-equivalence) is the residual not implied by equal entropy. Lean D0.Bridge.AdlerWeissBridge (adler_weiss_partition_conditional) conditional on ASSUMP-ADLER-WEISS. HONEST: isomorphism exhibited at entropy/finite-equivalence level; full conjugacy stays the cited external owner. cite Adler-Weiss PNAS 57 (1967) 1573; Williams Ann. Math. 98 (1973) 120. BRIDGE track, honesty not points. [M4] This external partition is now the cited passport boundary for the toral symbolic route: the internal seed-determined route is closed-negative (D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001).
 
 ### D0-COMPLEX-QM-FORCING-001
 
@@ -3925,6 +3925,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Toral Lucas-Voronoi campaign, OUTCOME B] No canonical Markov partition / golden-cylinder SSE from present inputs: (1) the integral conjugate -M_phi has a negative entry and != M_phi, so the integral conjugacy is NOT the symbolic SSE; (2) a canonical Markov partition is not determined by a 3-point seed (Adler-Weiss partitions are non-unique, involve rectangle-boundary choices). The Markov-rectangle, symbolic-coding, boundary-quotient, and Williams-SSE owners stay PROOF-TARGET. EXACT MISSING ARTIFACT (D0-TORAL-WILLIAMS-SSE-OWNER-001): a canonical seed-determined finite Markov partition whose NONNEGATIVE adjacency matrix is exhibited strong-shift-equivalent to M_phi, derived not chosen. No Adler-Weiss import, no manual rectangles, no T^44=I. Lean D0.Geometry.ToralCanonicalMarkovNoGo.
+
+### D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Geometry.ToralSeedMarkovMaximalityNoGo`
+- theorem: `toral_seed_markov_maximality_nogo`
+- cert: `vp_toral_seed_markov_maximality_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Final Core Completion M4] Maximality strengthening of D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001. The forced dynamical invariants (spectrum {phi,psi}, entropy log phi, trace, det -- all from the integral conjugacy C T C^-1 = -M_phi) do NOT determine the Markov adjacency/partition. Distinct admissible nonnegative integer adjacencies all carry the golden Perron data phi: Mphi=[[1,1],[1,0]] (Mphi^2=Mphi+I, 2 rectangles); M2=[[0,1],[1,1]] (same trace/det, !=Mphi); A3=[[1,1,0],[1,0,0],[0,1,0]] (A3^3=A3^2+A3, charpoly x(x^2-x-1), 3 rectangles). Lean D0.Geometry.ToralSeedMarkovMaximalityNoGo (native_decide). A 2-rectangle and a 3-rectangle admissible adjacency realize the same golden dynamics => partition/adjacency/rectangle-count NOT forced by the seed; a canonical partition needs an external Adler-Weiss/Williams choice (D0-ADLER-WEISS-PARTITION-OWNER-001, passport). Closed-negative.
 
 ### D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY
 
