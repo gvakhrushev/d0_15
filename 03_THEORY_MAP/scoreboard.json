@@ -19,28 +19,28 @@
     }
   },
   "totals": {
-    "realized": 5344,
-    "track_fair_max": 7398,
-    "pct_strength": 72.2,
-    "core_realized": 4518,
-    "core_potential": 6540,
+    "realized": 5399,
+    "track_fair_max": 7453,
+    "pct_strength": 72.4,
+    "core_realized": 4538,
+    "core_potential": 6560,
     "core_headroom": 2022,
-    "n_claims": 410,
-    "n_active": 408,
+    "n_claims": 416,
+    "n_active": 414,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 226,
-      "realized": 3344,
-      "max": 4173,
+      "n": 230,
+      "realized": 3372,
+      "max": 4201,
       "core_headroom": 819
     },
     "rg": {
-      "n": 6,
-      "realized": 73,
-      "max": 93,
+      "n": 7,
+      "realized": 93,
+      "max": 113,
       "core_headroom": 16
     },
     "gauge_bridge": {
@@ -50,9 +50,9 @@
       "core_headroom": 21
     },
     "smooth_geometry": {
-      "n": 31,
-      "realized": 388,
-      "max": 549,
+      "n": 32,
+      "realized": 395,
+      "max": 556,
       "core_headroom": 157
     },
     "spectral_action": {
@@ -148,9 +148,9 @@
       "core_headroom": 80
     },
     "BOOK_07": {
-      "n": 57,
-      "realized": 728,
-      "max": 1036,
+      "n": 58,
+      "realized": 735,
+      "max": 1043,
       "core_headroom": 294
     },
     "BOOK_06/08": {
@@ -160,9 +160,9 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 77,
-      "realized": 988,
-      "max": 1402,
+      "n": 79,
+      "realized": 1002,
+      "max": 1416,
       "core_headroom": 404
     },
     "BOOK_04/08": {
@@ -316,9 +316,9 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 36,
-      "realized": 442,
-      "max": 634,
+      "n": 37,
+      "realized": 449,
+      "max": 641,
       "core_headroom": 192
     },
     "BOOK_01/06": {
@@ -358,9 +358,9 @@
       "core_headroom": 0
     },
     "BOOK_03": {
-      "n": 5,
-      "realized": 63,
-      "max": 71,
+      "n": 6,
+      "realized": 70,
+      "max": 78,
       "core_headroom": 8
     },
     "BOOK_01/03": {
@@ -388,9 +388,9 @@
       "core_headroom": 0
     },
     "BOOK_05": {
-      "n": 14,
-      "realized": 193,
-      "max": 253,
+      "n": 15,
+      "realized": 213,
+      "max": 273,
       "core_headroom": 60
     },
     "BOOK_00/05": {
@@ -6493,7 +6493,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 0,
+      "leverage": 1,
       "integrity_flag": null
     },
     {
@@ -6563,7 +6563,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_06",
-      "leverage": 0,
+      "leverage": 1,
       "integrity_flag": null
     },
     {
@@ -8943,6 +8943,90 @@
       "lean_status": "OPEN",
       "domain": "frontier",
       "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "rg",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_03",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
     }

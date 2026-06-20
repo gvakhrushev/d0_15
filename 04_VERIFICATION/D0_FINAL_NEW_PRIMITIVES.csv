@@ -1,0 +1,10 @@
+primitive_id,needed_by,description,why_not_present_core
+PRIM-PERRON-PHI3-CARRIER,alpha (Dixmier mu_2),"carrier with Perron eigenvalue phi^3 (mult ~phi^(3N)) on the L^{1,inf} 1/j line",5-fold symmetry + M1 force the single golden rate phi
+PRIM-ISOMETRIC-DIRAC-J_N,inductive spectral triple / smooth metric,isometric J_N with J_N^dag D_(N+1) J_N = D_N,corpus is an inverse limit (downward projections); firewalled to Connes/propinquity
+PRIM-FORCED-SMOOTHING-WINDOW,CMB n_s,"a canonically-forced (k,u) smoothing/evaluation rule",>=3 admissible smoothings give distinct n_s
+PRIM-PHYSICAL-MAGNITUDE-MAP,phason w_DE,a canonical physical-branch magnitude map z->|w_DE|,two admissible maps differ; only sign+anchor owned
+PRIM-NONCOMMUTING-TRIPLE,Higgs condensation,"a frozen non-commuting (U,Q0,Pi_H) with [T,Q0]!=0",every present-core projector is a polynomial in T (commutes)
+PRIM-CANONICAL-MARKOV-PARTITION,toral symbolic conjugacy,"a canonical seed-determined Markov partition (nonneg adjacency, SSE to M_phi)",distinct-rectangle admissible adjacencies share Perron phi
+PRIM-SYMMETRY-BREAKING-SELECTOR,CKM overlap / role functor,a symmetry-breaking/modulus-fixing selector for the basis completion,two admissible completions give distinct |V12|^2
+PRIM-EFT-IR-FUNCTOR,lepton mass decimals,"an external EFT/IR matching functor (exponent row + coefficients -> r_mu, r_tau)",decimals encode measured mass; not a scene invariant
+PRIM-FINITE-SPECTRAL-TRIPLE-REP,hypercharge flow origin,a frozen finite spectral-triple representation module (unimodularity/K0/gap),"not selected by bare Aut(K(9,11,13))"

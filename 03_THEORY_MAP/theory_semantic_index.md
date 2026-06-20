@@ -8,21 +8,21 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 127
-- `CORE-FORMALIZED`: 163
+- `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 28
 - `NO_GO_PROVED`: 8
-- `PASSPORT-CLOSED`: 9
+- `PASSPORT-CLOSED`: 14
 - `PROOF-TARGET`: 37
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 142
-- `core`: 164
+- `certificate`: 147
+- `core`: 165
 - `deprecated`: 3
 - `frontier`: 37
 - `no-go`: 36
@@ -32,13 +32,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 227
+- `formal_core`: 231
 - `frontier`: 37
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
-- `rg`: 6
+- `rg`: 7
 - `si_calibration`: 2
-- `smooth_geometry`: 31
+- `smooth_geometry`: 32
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -2223,6 +2223,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter8 researcher doc 2 §01.25, verified CORRECT, entered as-is] The first terminal phase-return window q_T=|ABCD|*|V_11|=4*11=44 has admissible coprime branch count = Euler totient phi_E(44)=|(Z/44)*|=20=d_13 (terminal shell degree). cert vp_window44_totient_m1.py: phi_E(44)=44*(1-1/2)*(1-1/11)=20 exact, |(Z/44)*|=20 by direct count, neighbours phi_E(43)=42, phi_E(45)=24 differ. M1 formulation: |Aut(Z/44)|=phi_E(44)=20; any branch count k!=20 changes the automorphism class, needing an external catalogue to index it -> bot M1, so 20 is forced not chosen. Sharpens/confirms D0-WINDOW44-GROUP-SPECTRUM-001 and the §07.23 phase chain; no new free number.
 
+### D0-ADLER-WEISS-WILLIAMS-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Bridge.AdlerWeissBridge`
+- theorem: `none`
+- cert: `vp_final_external_passports.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master E/F2] External Adler-Weiss/Williams passport for the toral symbolic route over the FROZEN integral conjugacy C T C^-1=-M_phi + Lucas seed. Requires chosen partition + nonneg adjacency + SSE chain + boundary relation; raw semiconjugacy is NOT conjugacy. Internal route closed-negative by D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001 (ASSUMP-ADLER-WEISS). No manual partition to CORE.
+
 ### D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001
 
 - type: `certificate`
@@ -2235,6 +2248,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Formalism passport] Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py. Maps original theta<->active/retained P_N; auxiliary phi<->auxiliary extension (NOT archive); mirror constraint theta-phi=pi<->retained/archive admissibility / self-readout consistency.
+
+### D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_03`
+- module: `D0.Bridge.DixmierTraceBridge`
+- theorem: `dixmier_residue_conditional`
+- cert: `vp_final_external_passports.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master E/B3] External Dixmier/Wodzicki residue passport over the FROZEN finite Feshbach mu_2 + Delta_alpha seam. External framework only (ASSUMP-DIXMIER-TRACE, SRC-WODZICKI-1984); PASS iff residue normalization reproduces the frozen internal seam. Never promotes a physical alpha prediction to CORE. Isolated by D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001. See D0_FINAL_PASSPORT_INDEX.csv.
 
 ### D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001
 
@@ -2249,6 +2275,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Formalism bridge] The retained/archive Feshbach-Schur effective dynamics reads in standard language as a constrained Hamiltonian embedding: effective active dim on the constrained submanifold = retained dim 3, archive NOT identified with the article's auxiliary degrees. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.
 
+### D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_final_external_passports.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master E/F1] Finite spectral-triple representation passport: finite path/incidence algebra -> NCG representation -> unimodularity/K0/gap label -> Weyl ledger. Requires a FROZEN representation module first (NOT selected by bare Aut(K(9,11,13))); SRC-CONNES-1994. The five-field anomaly row stays closed; separate from B-L. Backs D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001.
+
 ### D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001
 
 - type: `certificate`
@@ -2261,6 +2300,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Formalism bridge, downstream] Floquet Hamiltonian engineering becomes available in the embedded (reciprocal, symplectic) system; mapped to the D0 finite tick / driven feedback operator formalism. DOWNSTREAM FORMALISM only -- Floquet engineering is NOT used as a proof of D0. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.
+
+### D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: ``
+- theorem: `none`
+- cert: `vp_final_external_passports.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master E/F1] Hypercharge FLOW-ORIGIN passport (distinct from the closed five-field anomaly row). The flow-to-Weyl map requires a frozen finite spectral-triple representation module (D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001); not derivable from bare Aut. Closed anomaly/normalization row preserved; missing primitive PRIM-FINITE-SPECTRAL-TRIPLE-REP.
 
 ### D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001
 
@@ -4887,6 +4939,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal/finite RG proxy only; smooth or physical RG meaning requires explicit bridge assumptions.
 - notes: Nearest-neighbor phase Laplacian is not strictly projective; RG residual/curvature obstruction is tracked by scale-fit cert. [Iter5 Track1] Lean L5 CORE-FORMALIZED via D0.Geometry.ArchiveLaplacianRG (rg_curvature_zero_iff_exact_compatibility): RG curvature zero iff exact projective compatibility (existing proved module).
 
+### D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `rg`
+- book: `BOOK_05`
+- module: `D0.Verification.FinalResearchClosureBoundary`
+- theorem: `final_research_closure_boundary`
+- cert: `vp_final_research_closure_map.py`
+- assumptions: `none`
+- scope: Formal/finite RG proxy only; smooth or physical RG meaning requires explicit bridge assumptions.
+- notes: [Research Closure Master F -- CAPSTONE] Integrated research-to-closure map: Master A renormalization layer (Bratteli M_phi Perron-golden + forced scale ratio phi) atop the M1-M7 present-core maximality capstone. Lean D0.Verification.FinalResearchClosureBoundary (conjunction; imports present_core_maximality_classified). Artifacts: D0_FINAL_RESEARCH_CLOSURE_MAP.csv (17 fronts), D0_FINAL_NEW_PRIMITIVES.csv (9), D0_FINAL_NO_GO_ATLAS.md (8), D0_FINAL_PASSPORT_INDEX.csv (5), D0_FINAL_RELEASE_READINESS.json. Guards vp_final_research_closure_map / vp_final_no_anonymous_proof_targets / vp_final_no_false_completion.
+
 
 ## Domain: si_calibration
 
@@ -5191,6 +5256,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter21 closure-sprint PASSPORT-CLOSED] Smooth manifold as a conditional macro-shadow: internal object = finite spectral/metric tower + phi semigroup envelope (D0-IM-003, D0-CONNES-DISTANCE-GEODESIC-001). The smooth compact Riemannian/spin manifold reading is a downstream macro-shadow, conditional on the external owners D0-RIEFFEL-GHP-CONTINUUM-OWNER-001 (ASSUMP-RIEFFEL-GHP) + D0-CONNES-RECONSTRUCTION-OWNER-001 (ASSUMP-CONNES-RECONSTRUCTION). It is not a primitive D0 input and not a CORE theorem. PASSPORT-CLOSED per D0-BRIDGE-COMPRESSION-001. cert vp_smooth_manifold_passport.py.
+
+### D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_inductive_spectral_triple_tower.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master E/F3] Smooth quantum-metric passport over the FROZEN golden refinement tower (algebra level). External framework: Lip-norm + propinquity + inductive spectral triple (SRC-LATREMOLIERE-2016, ASSUMP-CONNES-RECONSTRUCTION). PASS iff a compatible tower + isometric Dirac J_N supplied. Never a primitive smooth manifold. Required by D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001 (Master A Outcome B).
 
 ### D0-BH-CAPACITY-A4-001
 

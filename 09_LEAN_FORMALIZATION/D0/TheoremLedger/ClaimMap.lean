@@ -616,7 +616,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001", moduleName := "D0.Geometry.FibonacciBratteliRefinement",
       theoremName := "fibonacci_bratteli_refinement_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-PERRON-SCALE-FLOW-OWNER-001", moduleName := "D0.Spectral.CanonicalRefinementScaleFlow",
-      theoremName := "perron_scale_flow_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "perron_scale_flow_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001", moduleName := "D0.Verification.FinalResearchClosureBoundary",
+      theoremName := "final_research_closure_boundary", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001", moduleName := "D0.Bridge.DixmierTraceBridge",
+      theoremName := "dixmier_residue_conditional", status := ClaimStatus.pythonCertClosed },
+    { claimId := "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001", moduleName := "D0.Bridge.AdlerWeissBridge",
+      theoremName := "", status := ClaimStatus.pythonCertClosed }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

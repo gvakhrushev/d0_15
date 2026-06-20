@@ -4,9 +4,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 5344 / 7398 (**72.2%** of track-fair max)
-- **Core spine:** 4518 / 6540 (headroom **2022** points to take every core claim to L5)
-- Claims: 408 active (410 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 5399 / 7453 (**72.4%** of track-fair max)
+- **Core spine:** 4538 / 6560 (headroom **2022** points to take every core claim to L5)
+- Claims: 414 active (416 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
@@ -92,14 +92,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 226 | 3344 | 4173 | 819 |
+| formal_core | 230 | 3372 | 4201 | 819 |
 | frontier | 37 | 84 | 740 | 656 |
 | cosmology | 49 | 741 | 919 | 178 |
-| smooth_geometry | 31 | 388 | 549 | 157 |
+| smooth_geometry | 32 | 395 | 556 | 157 |
 | empirical_passport | 29 | 298 | 443 | 136 |
 | spectral_action | 6 | 73 | 112 | 39 |
 | gauge_bridge | 20 | 313 | 334 | 21 |
-| rg | 6 | 73 | 93 | 16 |
+| rg | 7 | 93 | 113 | 16 |
 | external_background | 1 | 1 | 2 | 0 |
 | si_calibration | 2 | 18 | 22 | 0 |
 | interpretation_spine | 1 | 11 | 11 | 0 |
@@ -109,17 +109,17 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_08 | 77 | 1012 | 1428 | 412 |
-| BOOK_04 | 77 | 988 | 1402 | 404 |
-| BOOK_07 | 57 | 728 | 1036 | 294 |
-| BOOK_06 | 36 | 442 | 634 | 192 |
+| BOOK_04 | 79 | 1002 | 1416 | 404 |
+| BOOK_07 | 58 | 735 | 1043 | 294 |
+| BOOK_06 | 37 | 449 | 641 | 192 |
 | BOOK_02 | 25 | 316 | 444 | 128 |
 | BOOK_01 | 19 | 271 | 363 | 92 |
+| BOOK_05 | 15 | 213 | 273 | 60 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
-| BOOK_05 | 14 | 193 | 253 | 60 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_06/07 | 4 | 80 | 80 | 0 |
 | BOOK_07/08 | 8 | 80 | 160 | 80 |
-| BOOK_03 | 5 | 63 | 71 | 8 |
+| BOOK_03 | 6 | 70 | 78 | 8 |
 | BOOK_04/08 | 7 | 52 | 140 | 88 |
 | METROLOGY | 5 | 51 | 100 | 49 |
 | BOOK_06/08 | 4 | 41 | 80 | 39 |

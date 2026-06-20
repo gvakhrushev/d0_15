@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 410,
+    "claims": 416,
     "release_status": {
-      "CORE-FORMALIZED": 163,
+      "CORE-FORMALIZED": 164,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
@@ -17,28 +17,28 @@
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
       "PROOF-TARGET": 37,
-      "PASSPORT-CLOSED": 9
+      "PASSPORT-CLOSED": 14
     },
     "lean_status": {
-      "LEAN_PROVED": 260,
+      "LEAN_PROVED": 261,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 89,
+      "PYTHON_CERTIFIED": 94,
       "DEPRECATED": 2,
       "OPEN": 38
     },
     "claim_type": {
-      "core": 164,
+      "core": 165,
       "bridge": 28,
       "no-go": 36,
-      "certificate": 142,
+      "certificate": 147,
       "deprecated": 3,
       "frontier": 37
     },
     "domain": {
-      "formal_core": 227,
-      "rg": 6,
+      "formal_core": 231,
+      "rg": 7,
       "gauge_bridge": 21,
-      "smooth_geometry": 31,
+      "smooth_geometry": 32,
       "spectral_action": 6,
       "empirical_passport": 29,
       "cosmology": 49,
@@ -13787,6 +13787,171 @@
       "label": "vp_inductive_spectral_triple_tower.py",
       "path": "05_CERTS/vp_inductive_spectral_triple_tower.py",
       "exists": true
+    },
+    {
+      "id": "D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001",
+      "kind": "claim",
+      "claim_id": "D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001",
+      "type": "core",
+      "domain": "rg",
+      "scope_guard": "Formal/finite RG proxy only; smooth or physical RG meaning requires explicit bridge assumptions.",
+      "book": "BOOK_05",
+      "section": "05.final",
+      "lean_module": "D0.Verification.FinalResearchClosureBoundary",
+      "lean_theorem": "final_research_closure_boundary",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_research_closure_map.py",
+      "python_cert": [
+        "vp_final_research_closure_map.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Research Closure Master F -- CAPSTONE] Integrated research-to-closure map: Master A renormalization layer (Bratteli M_phi Perron-golden + forced scale ratio phi) atop the M1-M7 present-core maximality capstone. Lean D0.Verification.FinalResearchClosureBoundary (conjunction; imports present_core_maximality_classified). Artifacts: D0_FINAL_RESEARCH_CLOSURE_MAP.csv (17 fronts), D0_FINAL_NEW_PRIMITIVES.csv (9), D0_FINAL_NO_GO_ATLAS.md (8), D0_FINAL_PASSPORT_INDEX.csv (5), D0_FINAL_RELEASE_READINESS.json. Guards vp_final_research_closure_map / vp_final_no_anonymous_proof_targets / vp_final_no_false_completion.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Verification/FinalResearchClosureBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Verification.FinalResearchClosureBoundary",
+      "kind": "lean_module",
+      "label": "D0.Verification.FinalResearchClosureBoundary",
+      "path": "09_LEAN_FORMALIZATION/D0/Verification/FinalResearchClosureBoundary.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_final_research_closure_map.py",
+      "kind": "python_cert",
+      "label": "vp_final_research_closure_map.py",
+      "path": "05_CERTS/vp_final_research_closure_map.py",
+      "exists": true
+    },
+    {
+      "id": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_03",
+      "section": "02.13.4",
+      "lean_module": "D0.Bridge.DixmierTraceBridge",
+      "lean_theorem": "dixmier_residue_conditional",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_external_passports.py",
+      "python_cert": [
+        "vp_final_external_passports.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Research Closure Master E/B3] External Dixmier/Wodzicki residue passport over the FROZEN finite Feshbach mu_2 + Delta_alpha seam. External framework only (ASSUMP-DIXMIER-TRACE, SRC-WODZICKI-1984); PASS iff residue normalization reproduces the frozen internal seam. Never promotes a physical alpha prediction to CORE. Isolated by D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001. See D0_FINAL_PASSPORT_INDEX.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/DixmierTraceBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_final_external_passports.py",
+      "kind": "python_cert",
+      "label": "vp_final_external_passports.py",
+      "path": "05_CERTS/vp_final_external_passports.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.toral",
+      "lean_module": "D0.Bridge.AdlerWeissBridge",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_external_passports.py",
+      "python_cert": [
+        "vp_final_external_passports.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Research Closure Master E/F2] External Adler-Weiss/Williams passport for the toral symbolic route over the FROZEN integral conjugacy C T C^-1=-M_phi + Lucas seed. Requires chosen partition + nonneg adjacency + SSE chain + boundary relation; raw semiconjugacy is NOT conjugacy. Internal route closed-negative by D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001 (ASSUMP-ADLER-WEISS). No manual partition to CORE.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/AdlerWeissBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.tower",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_inductive_spectral_triple_tower.py",
+      "python_cert": [
+        "vp_inductive_spectral_triple_tower.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Research Closure Master E/F3] Smooth quantum-metric passport over the FROZEN golden refinement tower (algebra level). External framework: Lip-norm + propinquity + inductive spectral triple (SRC-LATREMOLIERE-2016, ASSUMP-CONNES-RECONSTRUCTION). PASS iff a compatible tower + isometric Dirac J_N supplied. Never a primitive smooth manifold. Required by D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001 (Master A Outcome B).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.rep",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_external_passports.py",
+      "python_cert": [
+        "vp_final_external_passports.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Research Closure Master E/F1] Finite spectral-triple representation passport: finite path/incidence algebra -> NCG representation -> unimodularity/K0/gap label -> Weyl ledger. Requires a FROZEN representation module first (NOT selected by bare Aut(K(9,11,13))); SRC-CONNES-1994. The five-field anomaly row stays closed; separate from B-L. Backs D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.rep",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_final_external_passports.py",
+      "python_cert": [
+        "vp_final_external_passports.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Research Closure Master E/F1] Hypercharge FLOW-ORIGIN passport (distinct from the closed five-field anomaly row). The flow-to-Weyl map requires a frozen finite spectral-triple representation module (D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001); not derivable from bare Aut. Closed anomaly/normalization row preserved; missing primitive PRIM-FINITE-SPECTRAL-TRIPLE-REP.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -19618,6 +19783,96 @@
     {
       "source": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
       "target": "cert:vp_inductive_spectral_triple_tower.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001",
+      "target": "domain:rg",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001",
+      "target": "module:D0.Verification.FinalResearchClosureBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FINAL-RESEARCH-TO-CLOSURE-MAP-001",
+      "target": "cert:vp_final_research_closure_map.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+      "target": "module:D0.Bridge.DixmierTraceBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+      "target": "cert:vp_final_external_passports.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+      "target": "module:D0.Bridge.AdlerWeissBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+      "target": "cert:vp_final_external_passports.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+      "target": "cert:vp_inductive_spectral_triple_tower.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+      "target": "cert:vp_final_external_passports.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+      "target": "cert:vp_final_external_passports.py",
       "kind": "certified_by"
     }
   ]

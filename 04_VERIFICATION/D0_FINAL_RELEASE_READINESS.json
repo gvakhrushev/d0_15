@@ -1,0 +1,41 @@
+{
+  "campaign": "D0 Canonical Renormalization Spectral Tower + Final Research Closure",
+  "master_A_thesis": "Outcome B -- canonical refinement tower (algebra+trace+scale) EXISTS; canonical inductive spectral triple does NOT (external)",
+  "claims_cert_closed": [
+    "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+    "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+    "D0-PERRON-SCALE-FLOW-OWNER-001",
+    "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001"
+  ],
+  "claims_no_go_closed": [
+    "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+    "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+    "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+    "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+    "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+    "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+    "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001"
+  ],
+  "passports": [
+    "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+    "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+    "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+    "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+    "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001"
+  ],
+  "new_primitives_required": [
+    "PRIM-PERRON-PHI3-CARRIER",
+    "PRIM-ISOMETRIC-DIRAC-J_N",
+    "PRIM-FORCED-SMOOTHING-WINDOW",
+    "PRIM-PHYSICAL-MAGNITUDE-MAP",
+    "PRIM-NONCOMMUTING-TRIPLE",
+    "PRIM-CANONICAL-MARKOV-PARTITION",
+    "PRIM-SYMMETRY-BREAKING-SELECTOR",
+    "PRIM-EFT-IR-FUNCTOR",
+    "PRIM-FINITE-SPECTRAL-TRIPLE-REP"
+  ],
+  "physics_claims_promoted_to_core": 0,
+  "external_theorems_imported_as_axiom": 0,
+  "release_condition": "present-core maximality classified; every front CERT / NO-GO / PASSPORT / named-primitive; no anonymous proof-target; no false completion",
+  "final_release_ready": true
+}
