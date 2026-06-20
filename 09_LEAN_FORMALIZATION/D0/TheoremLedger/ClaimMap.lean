@@ -664,7 +664,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
       theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001", moduleName := "D0.VNext2.SceneNativeRefinementClassification",
-      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved }
+      theoremName := "scene_native_refinement_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ECHO-DELAY-COMPACTNESS-OWNER-001", moduleName := "D0.Gravity.HorizonlessEchoDelay",
+      theoremName := "horizonless_echo_delay_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001", moduleName := "D0.Cosmology.PhasonContinuumEnvelope",
+      theoremName := "phason_continuum_envelope_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

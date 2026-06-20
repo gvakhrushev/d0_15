@@ -1,0 +1,7 @@
+control_id,type,expectation_at_2.2885,role
+ordinary_ringdown,null,no echo,standard BH must not produce the cavity echo
+near_horizon_echo,distinct-regime,long/divergent delay,"R->2M echo is a different, longer-delay regime"
+short_delay_false_positive,null,none,reject short-delay instrumental artefacts
+injection_recovery,calibration,recovered,injected 2.2885 echo must be recovered at stated efficiency
+null_waveform,null,none,time-slid / off-source data must show no excess
+noise_line,veto,none,detector spectral lines vetoed

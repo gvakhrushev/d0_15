@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 129
+- `CERT-CLOSED`: 131
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -15,13 +15,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 46
 - `NO_GO_PROVED`: 8
-- `PASSPORT-CLOSED`: 15
+- `PASSPORT-CLOSED`: 17
 - `PROOF-TARGET`: 44
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 150
+- `certificate`: 154
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 44
@@ -32,13 +32,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 250
+- `formal_core`: 253
 - `frontier`: 44
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 7
 - `si_calibration`: 2
-- `smooth_geometry`: 34
+- `smooth_geometry`: 35
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -1586,6 +1586,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter4 T5.4; Iter21 OVER-CLAIM FIXED -> CERT-CLOSED] the verifiable content is the trig identity m2/m1=2cos(pi/5)=phi (Zamolodchikov E8) + phi^2=phi+1 -- a FORM/math cert, not a data comparison; the CoNb2O6 ratio (Coldea) is PROSE-CITED corroboration, NOT a pinned datum (the prior hand-typed measured=1.618 assert + the unconditional FAIL_ print are removed). orig: E8 critical spectrum m2/m1=2cos(pi/5)=phi (the D0-forced golden ratio) measured in CoNb2O6. cite Coldea et al. Science 327(2010)177; Zamolodchikov E8. HONEST: external corroboration of phi/E8, not a derivation; icosian->E8 stays EXTERNAL-GAP (Mordell); never core.
 
+### D0-ECHO-DELAY-COMPACTNESS-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.HorizonlessEchoDelay`
+- theorem: `horizonless_echo_delay_owner`
+- cert: `vp_echo_delay_exact_formula.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [P1] From the frozen causal-compactness ceiling C_max=3/8 (Book 07), the reflecting surface R=8M/3 lies strictly in (2M,3M) with nonempty cavity [8M/3,3M], and the horizonless echo delay is EXACTLY tau_echo/M = 2/3 + 4*log(3/2) ~ 2.2885 (dimensionless, mass-rescaling invariant; M cancels). Lean D0.Gravity.HorizonlessEchoDelay (Real.log_inv/log_div + ring). The GR tortoise coordinate r_star=r+2M log(r/(2M)-1) is EXTERNAL formalism, not a D0 core deduction. Falsifier target, not a detection.
+
 ### D0-EW-002
 
 - type: `certificate`
@@ -2275,6 +2288,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Formalism passport] Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py. Maps original theta<->active/retained P_N; auxiliary phi<->auxiliary extension (NOT archive); mirror constraint theta-phi=pi<->retained/archive admissibility / self-readout consistency.
 
+### D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_echo_passport_negative_controls.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [P1] Negative-control matrix for the echo passport: ordinary-ringdown null, near-horizon (R->2M, divergent-delay) distinct-regime control, short-delay false-positive, injection-recovery, null-waveform, noise-line veto. Ensures the 2.2885 target is falsifiable, not a fishing search. ECHO_NEGATIVE_CONTROL_MATRIX.csv.
+
 ### D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001
 
 - type: `certificate`
@@ -2326,6 +2352,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Formalism bridge, downstream] Floquet Hamiltonian engineering becomes available in the embedded (reciprocal, symplectic) system; mapped to the D0 finite tick / driven feedback operator formalism. DOWNSTREAM FORMALISM only -- Floquet engineering is NOT used as a proof of D0. Nature Physics constrained-Hamiltonian-embedding formalism bridge (Shi/Moessner/Alert/Bukov et al., s41567-026-03317-0, 12 Jun 2026). FORMALISM/PASSPORT, never CORE; the article supplies recognized language, NOT a proof of D0; the D0 archive Q_N is NOT identified with the article's auxiliary/bath degrees (identifiesArchiveWithAuxiliary=false). Lean D0.Bridge.ConstrainedHamiltonianEmbeddingPassport (decidable: effectiveDim=(3+3)-3=3=retainedDim, mirror^2=I constraint preserved, J^2=-I symplectic, status=passport!=coreConfirmation). Cert vp_constrained_hamiltonian_embedding_passport.py.
+
+### D0-HORIZONLESS-ECHO-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_echo_no_detection_overclaim.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [P1] Pre-registered horizonless-echo rejection passport over the FROZEN echo target tau_echo/M=2/3+4log(3/2) (D0-ECHO-DELAY-COMPACTNESS-OWNER-001) + EXTERNAL GR tortoise formalism. NOT a detection, NOT a fit, NOT CORE. No event selects C_max; no post-hoc delay tuning. Protocol ECHO_PASSPORT_PROTOCOL.md, ECHO_PRE_REGISTRATION.json; controls ECHO_NEGATIVE_CONTROL_MATRIX.csv. PASS=trials-corrected excess at 2.2885 survives all controls; FAIL=no excess (theory disfavored). Neither outcome promotes a physical quantity to CORE.
 
 ### D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001
 
@@ -5503,6 +5542,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Research Closure Master A] Every internally-defined refinement scale (Perron count phi^N, Fibonacci level dim, phi-ladder) shares the forced dimensionless step ratio Lambda_(N+1)/Lambda_N = phi; absolute scale dimensionless. Lean D0.Spectral.CanonicalRefinementScaleFlow (scale_ratio_forced, scale_ratio_constant). No imported length, no fitted continuum dimension.
+
+### D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_08`
+- module: `D0.Cosmology.PhasonContinuumEnvelope`
+- theorem: `phason_continuum_envelope_owner`
+- cert: `vp_phason_continuum_envelope.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [P3-A] The closed phi-semigroup FORCES (not chooses) the continuum phason EOS envelope w_D0(s)=1/[phi(1-exp(-s log phi))], which restricts at integer s=N to w_N=phi^(N-1)/(phi^N-1)=1/[phi(1-phi^-N)], is monotone decreasing on s>0, and -> phi^-1. Lean D0.Cosmology.PhasonContinuumEnvelope (exp_nat_mul/exp_log + field_simp). INTERNAL positive envelope only; the physical magnitude/redshift map |w_DE(z)| stays underdetermined (D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001). No DESI/CPL/FLRW.
 
 ### D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001
 

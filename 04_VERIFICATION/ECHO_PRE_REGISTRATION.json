@@ -1,0 +1,19 @@
+{
+  "target": "tau_echo/M = 2/3 + 4*log(3/2)",
+  "decimal": 2.288527,
+  "frozen_input": "C_max=3/8 -> R=8M/3 (Book 07); GR tortoise coordinate is EXTERNAL formalism",
+  "search_window_center": 2.288527,
+  "window_rule": "pre-declared tolerance; no post-hoc tuning",
+  "Cmax_from_event": false,
+  "delay_tuned_post_hoc": false,
+  "controls": [
+    "ordinary_ringdown",
+    "near_horizon_echo",
+    "short_delay_false_positive",
+    "injection_recovery",
+    "null_waveform",
+    "noise_line"
+  ],
+  "pass_fail": "FAIL=no excess at 2.2885 after controls; PASS=trials-corrected excess survives; neither -> CORE",
+  "status": "PASSPORT-CLOSED falsifier (not detection, not fit, not CORE)"
+}

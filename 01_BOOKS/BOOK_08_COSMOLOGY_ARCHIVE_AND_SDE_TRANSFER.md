@@ -1200,6 +1200,8 @@ a monotonically *decreasing* sequence `[φ, 1, φ⁻¹·…] → +φ⁻¹` (cert
 
 **[Phason magnitude maximality].** The dark-energy sign is Galois-forced negative (retained reading -phi, `D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`), but the magnitude map z->w_DE(z) is NOT present-core forced: two admissible maps (w1=-phi-z, w2=-phi-2z) respect every owned invariant (negative, anchor -phi at z=0) yet differ at z=1 (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`, Lean `D0.Cosmology.PhasonMagnitudeMaximalityNoGo`). The magnitude needs an external physical-branch passport (DESI/CPL); the sign owner is untouched.
 
+**[Phason continuum envelope (internal)].** The closed phi-semigroup forces the continuum interpolation of the discrete EOS ratio: `w_D0(s)=1/[phi(1-exp(-s log phi))]`, restricting to `w_N=phi^(N-1)/(phi^N-1)` at integer N, monotone decreasing to `phi^-1` (`D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001`, CERT, Lean `D0.Cosmology.PhasonContinuumEnvelope`). This closes only the INTERNAL positive envelope; the physical magnitude/redshift map `|w_DE(z)|` stays underdetermined (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`). No DESI/CPL/FLRW.
+
 ## Apparatus — sources & open obligations
 
 _Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._

@@ -4,25 +4,25 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 444,
+    "claims": 448,
     "release_status": {
       "CORE-FORMALIZED": 164,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 129,
+      "CERT-CLOSED": 131,
       "NO-GO": 46,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
       "PROOF-TARGET": 44,
-      "PASSPORT-CLOSED": 15
+      "PASSPORT-CLOSED": 17
     },
     "lean_status": {
-      "LEAN_PROVED": 282,
+      "LEAN_PROVED": 284,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 95,
+      "PYTHON_CERTIFIED": 97,
       "DEPRECATED": 2,
       "OPEN": 44
     },
@@ -30,15 +30,15 @@
       "core": 165,
       "bridge": 28,
       "no-go": 54,
-      "certificate": 150,
+      "certificate": 154,
       "deprecated": 3,
       "frontier": 44
     },
     "domain": {
-      "formal_core": 250,
+      "formal_core": 253,
       "rg": 7,
       "gauge_bridge": 21,
-      "smooth_geometry": 34,
+      "smooth_geometry": 35,
       "spectral_action": 6,
       "empirical_passport": 29,
       "cosmology": 49,
@@ -14841,6 +14841,144 @@
       "label": "vp_vnext2_no_false_physical_promotion.py",
       "path": "05_CERTS/vp_vnext2_no_false_physical_promotion.py",
       "exists": true
+    },
+    {
+      "id": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.echo",
+      "lean_module": "D0.Gravity.HorizonlessEchoDelay",
+      "lean_theorem": "horizonless_echo_delay_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_echo_delay_exact_formula.py",
+      "python_cert": [
+        "vp_echo_delay_exact_formula.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[P1] From the frozen causal-compactness ceiling C_max=3/8 (Book 07), the reflecting surface R=8M/3 lies strictly in (2M,3M) with nonempty cavity [8M/3,3M], and the horizonless echo delay is EXACTLY tau_echo/M = 2/3 + 4*log(3/2) ~ 2.2885 (dimensionless, mass-rescaling invariant; M cancels). Lean D0.Gravity.HorizonlessEchoDelay (Real.log_inv/log_div + ring). The GR tortoise coordinate r_star=r+2M log(r/(2M)-1) is EXTERNAL formalism, not a D0 core deduction. Falsifier target, not a detection.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/HorizonlessEchoDelay.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gravity.HorizonlessEchoDelay",
+      "kind": "lean_module",
+      "label": "D0.Gravity.HorizonlessEchoDelay",
+      "path": "09_LEAN_FORMALIZATION/D0/Gravity/HorizonlessEchoDelay.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_echo_delay_exact_formula.py",
+      "kind": "python_cert",
+      "label": "vp_echo_delay_exact_formula.py",
+      "path": "05_CERTS/vp_echo_delay_exact_formula.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HORIZONLESS-ECHO-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-HORIZONLESS-ECHO-PASSPORT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.echo",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_echo_no_detection_overclaim.py",
+      "python_cert": [
+        "vp_echo_no_detection_overclaim.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[P1] Pre-registered horizonless-echo rejection passport over the FROZEN echo target tau_echo/M=2/3+4log(3/2) (D0-ECHO-DELAY-COMPACTNESS-OWNER-001) + EXTERNAL GR tortoise formalism. NOT a detection, NOT a fit, NOT CORE. No event selects C_max; no post-hoc delay tuning. Protocol ECHO_PASSPORT_PROTOCOL.md, ECHO_PRE_REGISTRATION.json; controls ECHO_NEGATIVE_CONTROL_MATRIX.csv. PASS=trials-corrected excess at 2.2885 survives all controls; FAIL=no excess (theory disfavored). Neither outcome promotes a physical quantity to CORE.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_echo_no_detection_overclaim.py",
+      "kind": "python_cert",
+      "label": "vp_echo_no_detection_overclaim.py",
+      "path": "05_CERTS/vp_echo_no_detection_overclaim.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001",
+      "kind": "claim",
+      "claim_id": "D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.echo",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_echo_passport_negative_controls.py",
+      "python_cert": [
+        "vp_echo_passport_negative_controls.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[P1] Negative-control matrix for the echo passport: ordinary-ringdown null, near-horizon (R->2M, divergent-delay) distinct-regime control, short-delay false-positive, injection-recovery, null-waveform, noise-line veto. Ensures the 2.2885 target is falsifiable, not a fishing search. ECHO_NEGATIVE_CONTROL_MATRIX.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_echo_passport_negative_controls.py",
+      "kind": "python_cert",
+      "label": "vp_echo_passport_negative_controls.py",
+      "path": "05_CERTS/vp_echo_passport_negative_controls.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51",
+      "lean_module": "D0.Cosmology.PhasonContinuumEnvelope",
+      "lean_theorem": "phason_continuum_envelope_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phason_continuum_envelope.py",
+      "python_cert": [
+        "vp_phason_continuum_envelope.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[P3-A] The closed phi-semigroup FORCES (not chooses) the continuum phason EOS envelope w_D0(s)=1/[phi(1-exp(-s log phi))], which restricts at integer s=N to w_N=phi^(N-1)/(phi^N-1)=1/[phi(1-phi^-N)], is monotone decreasing on s>0, and -> phi^-1. Lean D0.Cosmology.PhasonContinuumEnvelope (exp_nat_mul/exp_log + field_simp). INTERNAL positive envelope only; the physical magnitude/redshift map |w_DE(z)| stays underdetermined (D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001). No DESI/CPL/FLRW.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonContinuumEnvelope.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.PhasonContinuumEnvelope",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.PhasonContinuumEnvelope",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhasonContinuumEnvelope.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_phason_continuum_envelope.py",
+      "kind": "python_cert",
+      "label": "vp_phason_continuum_envelope.py",
+      "path": "05_CERTS/vp_phason_continuum_envelope.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -21182,6 +21320,66 @@
     {
       "source": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
       "target": "cert:vp_vnext2_no_false_physical_promotion.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+      "target": "module:D0.Gravity.HorizonlessEchoDelay",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+      "target": "cert:vp_echo_delay_exact_formula.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HORIZONLESS-ECHO-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HORIZONLESS-ECHO-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HORIZONLESS-ECHO-PASSPORT-001",
+      "target": "cert:vp_echo_no_detection_overclaim.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001",
+      "target": "cert:vp_echo_passport_negative_controls.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+      "target": "module:D0.Cosmology.PhasonContinuumEnvelope",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+      "target": "cert:vp_phason_continuum_envelope.py",
       "kind": "certified_by"
     }
   ]

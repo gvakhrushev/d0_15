@@ -124,6 +124,7 @@ import D0.Cosmology.InflationlessThresholdEnergyOwner
 import D0.Cosmology.InstabilitySaturation
 import D0.Cosmology.LinearizedEntropyFlow
 import D0.Cosmology.PhasonArchiveCapacityRedshift
+import D0.Cosmology.PhasonContinuumEnvelope
 import D0.Cosmology.PhasonFlipEntropy
 import D0.Cosmology.PhasonInitialCovariance
 import D0.Cosmology.PhasonMagnitudeMaximalityNoGo
@@ -257,6 +258,7 @@ import D0.Gravity.CompactnessLimit
 import D0.Gravity.CriticalCollapseDSS
 import D0.Gravity.EntropicArchiveInterface
 import D0.Gravity.HorizonJetAndBaryonPole
+import D0.Gravity.HorizonlessEchoDelay
 import D0.Gravity.MacroEinsteinInterface
 import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.OpticalJetBackreaction
