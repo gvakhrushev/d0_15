@@ -4,38 +4,38 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 423,
+    "claims": 431,
     "release_status": {
       "CORE-FORMALIZED": 164,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 128,
-      "NO-GO": 31,
+      "NO-GO": 38,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 39,
+      "PROOF-TARGET": 40,
       "PASSPORT-CLOSED": 15
     },
     "lean_status": {
-      "LEAN_PROVED": 266,
+      "LEAN_PROVED": 273,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 95,
       "DEPRECATED": 2,
-      "OPEN": 39
+      "OPEN": 40
     },
     "claim_type": {
       "core": 165,
       "bridge": 28,
-      "no-go": 39,
+      "no-go": 46,
       "certificate": 149,
       "deprecated": 3,
-      "frontier": 39
+      "frontier": 40
     },
     "domain": {
-      "formal_core": 235,
+      "formal_core": 242,
       "rg": 7,
       "gauge_bridge": 21,
       "smooth_geometry": 33,
@@ -45,7 +45,7 @@
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 39
+      "frontier": 40
     }
   },
   "nodes": [
@@ -14176,6 +14176,268 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFD0LaplacianComparisonNoGo.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "D0.VNext.AFSceneAnchorDimensionAudit",
+      "lean_theorem": "typed_audit_not_numerology",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext_af_scene_anchor_dimension_audit.py",
+      "python_cert": [
+        "vp_vnext_af_scene_anchor_dimension_audit.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+1 master, Outcome D + spectral] The 34-to-33 coincidence (dim A_3=5^2+3^2=34 vs scene 9+11+13=33) is TYPED, not structural: a matrix algebra M_5(+)M_3 vs a 33-vertex tripartite graph. PRIM-CANONICAL-33-SCENE-ANCHOR does NOT exist (no scene-structure-preserving reduction; scale-independent spectral obstruction). Lean D0.VNext.AFSceneAnchorDimensionAudit. 34-1=33 is NOT a quotient.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFSceneAnchorDimensionAudit.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext.AFSceneAnchorDimensionAudit",
+      "kind": "lean_module",
+      "label": "D0.VNext.AFSceneAnchorDimensionAudit",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext/AFSceneAnchorDimensionAudit.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_vnext_af_scene_anchor_dimension_audit.py",
+      "kind": "python_cert",
+      "label": "vp_vnext_af_scene_anchor_dimension_audit.py",
+      "path": "05_CERTS/vp_vnext_af_scene_anchor_dimension_audit.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "D0.VNext.AFOneDimensionalReductionClassification",
+      "lean_theorem": "canonical_one_dimensional_reduction_no_go",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext_af_one_dimensional_reduction_classification.py",
+      "python_cert": [
+        "vp_vnext_af_one_dimensional_reduction_classification.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+1 Phase A, Outcome D] The trace=cyclic line C*1 is the unique trace-canonical line; its reduction su(5)(+)su(3)(+)u(1)=(24,8,1) (sum 33) does NOT match the scene (9,11,13): 2 matrix blocks != 3 graph parts. No admissible reduction preserves the tripartite scene structure. Lean D0.VNext.AFOneDimensionalReductionClassification.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFOneDimensionalReductionClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext.AFOneDimensionalReductionClassification",
+      "kind": "lean_module",
+      "label": "D0.VNext.AFOneDimensionalReductionClassification",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext/AFOneDimensionalReductionClassification.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_vnext_af_one_dimensional_reduction_classification.py",
+      "kind": "python_cert",
+      "label": "vp_vnext_af_one_dimensional_reduction_classification.py",
+      "path": "05_CERTS/vp_vnext_af_one_dimensional_reduction_classification.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "D0.VNext.AFOneDimensionalReductionClassification",
+      "lean_theorem": "canonical_one_dimensional_reduction_no_go",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext_canonical_xi_anchor.py",
+      "python_cert": [
+        "vp_vnext_canonical_xi_anchor.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+1 Phase B] No canonical scene-encoding chi: AF-reduced (24,8,1) -> V9 ⊔ V11 ⊔ V13 (incompatible finite structure), so no canonical Xi exists; a dimension-only Xi is ruled out by the spectral invariant obstruction. PRIM-COMPARISON-MAP-XI-N remains independent. Cites D0.VNext.AFOneDimensionalReductionClassification.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFOneDimensionalReductionClassification.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext_canonical_xi_anchor.py",
+      "kind": "python_cert",
+      "label": "vp_vnext_canonical_xi_anchor.py",
+      "path": "05_CERTS/vp_vnext_canonical_xi_anchor.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "D0.VNext.AFD0SpectralInvariantComparison",
+      "lean_theorem": "spectral_invariant_obstruction",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext_joint_dirac_scale_selection.py",
+      "python_cert": [
+        "vp_vnext_joint_dirac_scale_selection.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+1 Phase C] The anchor does NOT co-select the Dirac scale: with no canonical Xi there is no anchored spectral-matching condition. PRIM-DIRAC-SCALE-SELECTION remains the independent primitive. Cites D0.VNext.AFD0SpectralInvariantComparison.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFD0SpectralInvariantComparison.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext.AFD0SpectralInvariantComparison",
+      "kind": "lean_module",
+      "label": "D0.VNext.AFD0SpectralInvariantComparison",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext/AFD0SpectralInvariantComparison.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_vnext_joint_dirac_scale_selection.py",
+      "kind": "python_cert",
+      "label": "vp_vnext_joint_dirac_scale_selection.py",
+      "path": "05_CERTS/vp_vnext_joint_dirac_scale_selection.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "D0.VNext.AFD0SpectralInvariantComparison",
+      "lean_theorem": "spectral_invariant_obstruction",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext_af_d0_spectral_invariant_comparison.py",
+      "python_cert": [
+        "vp_vnext_af_d0_spectral_invariant_comparison.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+1 Phase D, DECISIVE, scale-independent] The AF reduced martingale Dirac^2 multiplicities are the reduced Fibonacci increments {1,3,8,21} (4 distinct eigenvalues); the scene Laplacian {0:1,20:12,22:10,24:8,33:2} has {1,2,8,10,12} (5 distinct, trace 718). {1,3,8,21} != {1,2,8,10,12} and 4 != 5; the scale sets eigenvalues not multiplicities, so NO unitary Xi and NO scale can match. Lean D0.VNext.AFD0SpectralInvariantComparison.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFD0SpectralInvariantComparison.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext_af_d0_spectral_invariant_comparison.py",
+      "kind": "python_cert",
+      "label": "vp_vnext_af_d0_spectral_invariant_comparison.py",
+      "path": "05_CERTS/vp_vnext_af_d0_spectral_invariant_comparison.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext_canonical_anchor_feshbach_compression.py",
+      "python_cert": [
+        "vp_vnext_canonical_anchor_feshbach_compression.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[vNext+1 Phase E] The Feshbach split needs image(Xi^dag)/kernel(Xi); Xi is obstructed, so W_eff=A-B(D-zI)^-1 C cannot be canonically formed against the scene. Blocked upstream; missing PRIM-COMPARISON-MAP-XI-N.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext_canonical_anchor_feshbach_compression.py",
+      "kind": "python_cert",
+      "label": "vp_vnext_canonical_anchor_feshbach_compression.py",
+      "path": "05_CERTS/vp_vnext_canonical_anchor_feshbach_compression.py",
+      "exists": true
+    },
+    {
+      "id": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "D0.VNext.AFD0SpectralInvariantComparison",
+      "lean_theorem": "spectral_invariant_obstruction",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext_af_d0_spectral_invariant_comparison.py",
+      "python_cert": [
+        "vp_vnext_af_d0_spectral_invariant_comparison.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+1] The canonical 33-scene anchor is not constructible from present admissible finite data: double obstruction (structural Outcome D + scale-independent spectral mismatch {1,3,8,21} != {1,2,8,10,12}). Cites D0.VNext.AFD0SpectralInvariantComparison.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFD0SpectralInvariantComparison.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.vnext33",
+      "lean_module": "D0.VNext.AFD0SpectralInvariantComparison",
+      "lean_theorem": "spectral_invariant_obstruction",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_vnext33_no_overclaim.py",
+      "python_cert": [
+        "vp_vnext33_no_overclaim.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[vNext+1 Phase F] PRIM-DIRAC-SCALE-SELECTION and PRIM-COMPARISON-MAP-XI-N are NOT unified by one anchor (D0-VNEXT-33-SCENE-ANCHOR-NOGO-001); they remain INDEPENDENT primitives (Phase F result 4). Cites D0.VNext.AFD0SpectralInvariantComparison.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext/AFD0SpectralInvariantComparison.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_vnext33_no_overclaim.py",
+      "kind": "python_cert",
+      "label": "vp_vnext33_no_overclaim.py",
+      "path": "05_CERTS/vp_vnext33_no_overclaim.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -20202,6 +20464,126 @@
     {
       "source": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001",
       "target": "cert:vp_vnext_dirac_laplacian_compatibility.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001",
+      "target": "module:D0.VNext.AFSceneAnchorDimensionAudit",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001",
+      "target": "cert:vp_vnext_af_scene_anchor_dimension_audit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
+      "target": "module:D0.VNext.AFOneDimensionalReductionClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
+      "target": "cert:vp_vnext_af_one_dimensional_reduction_classification.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001",
+      "target": "module:D0.VNext.AFOneDimensionalReductionClassification",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001",
+      "target": "cert:vp_vnext_canonical_xi_anchor.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001",
+      "target": "module:D0.VNext.AFD0SpectralInvariantComparison",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001",
+      "target": "cert:vp_vnext_joint_dirac_scale_selection.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+      "target": "module:D0.VNext.AFD0SpectralInvariantComparison",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+      "target": "cert:vp_vnext_af_d0_spectral_invariant_comparison.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
+      "target": "cert:vp_vnext_canonical_anchor_feshbach_compression.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+      "target": "module:D0.VNext.AFD0SpectralInvariantComparison",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+      "target": "cert:vp_vnext_af_d0_spectral_invariant_comparison.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+      "target": "module:D0.VNext.AFD0SpectralInvariantComparison",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+      "target": "cert:vp_vnext33_no_overclaim.py",
       "kind": "certified_by"
     }
   ]

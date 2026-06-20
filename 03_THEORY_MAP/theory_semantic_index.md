@@ -13,10 +13,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 31
+- `NO-GO`: 38
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 15
-- `PROOF-TARGET`: 39
+- `PROOF-TARGET`: 40
 
 ## Type counts
 
@@ -24,16 +24,16 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `certificate`: 149
 - `core`: 165
 - `deprecated`: 3
-- `frontier`: 39
-- `no-go`: 39
+- `frontier`: 40
+- `no-go`: 46
 
 ## Domain counts
 
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 235
-- `frontier`: 39
+- `formal_core`: 242
+- `frontier`: 40
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 7
@@ -4043,6 +4043,71 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Final Core Completion M4] Maximality strengthening of D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001. The forced dynamical invariants (spectrum {phi,psi}, entropy log phi, trace, det -- all from the integral conjugacy C T C^-1 = -M_phi) do NOT determine the Markov adjacency/partition. Distinct admissible nonnegative integer adjacencies all carry the golden Perron data phi: Mphi=[[1,1],[1,0]] (Mphi^2=Mphi+I, 2 rectangles); M2=[[0,1],[1,1]] (same trace/det, !=Mphi); A3=[[1,1,0],[1,0,0],[0,1,0]] (A3^3=A3^2+A3, charpoly x(x^2-x-1), 3 rectangles). Lean D0.Geometry.ToralSeedMarkovMaximalityNoGo (native_decide). A 2-rectangle and a 3-rectangle admissible adjacency realize the same golden dynamics => partition/adjacency/rectangle-count NOT forced by the seed; a canonical partition needs an external Adler-Weiss/Williams choice (D0-ADLER-WEISS-PARTITION-OWNER-001, passport). Closed-negative.
 
+### D0-VNEXT-33-SCENE-ANCHOR-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFD0SpectralInvariantComparison`
+- theorem: `spectral_invariant_obstruction`
+- cert: `vp_vnext_af_d0_spectral_invariant_comparison.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+1] The canonical 33-scene anchor is not constructible from present admissible finite data: double obstruction (structural Outcome D + scale-independent spectral mismatch {1,3,8,21} != {1,2,8,10,12}). Cites D0.VNext.AFD0SpectralInvariantComparison.
+
+### D0-VNEXT-33-SCENE-ANCHOR-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFSceneAnchorDimensionAudit`
+- theorem: `typed_audit_not_numerology`
+- cert: `vp_vnext_af_scene_anchor_dimension_audit.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+1 master, Outcome D + spectral] The 34-to-33 coincidence (dim A_3=5^2+3^2=34 vs scene 9+11+13=33) is TYPED, not structural: a matrix algebra M_5(+)M_3 vs a 33-vertex tripartite graph. PRIM-CANONICAL-33-SCENE-ANCHOR does NOT exist (no scene-structure-preserving reduction; scale-independent spectral obstruction). Lean D0.VNext.AFSceneAnchorDimensionAudit. 34-1=33 is NOT a quotient.
+
+### D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFD0SpectralInvariantComparison`
+- theorem: `spectral_invariant_obstruction`
+- cert: `vp_vnext_af_d0_spectral_invariant_comparison.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+1 Phase D, DECISIVE, scale-independent] The AF reduced martingale Dirac^2 multiplicities are the reduced Fibonacci increments {1,3,8,21} (4 distinct eigenvalues); the scene Laplacian {0:1,20:12,22:10,24:8,33:2} has {1,2,8,10,12} (5 distinct, trace 718). {1,3,8,21} != {1,2,8,10,12} and 4 != 5; the scale sets eigenvalues not multiplicities, so NO unitary Xi and NO scale can match. Lean D0.VNext.AFD0SpectralInvariantComparison.
+
+### D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFOneDimensionalReductionClassification`
+- theorem: `canonical_one_dimensional_reduction_no_go`
+- cert: `vp_vnext_af_one_dimensional_reduction_classification.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+1 Phase A, Outcome D] The trace=cyclic line C*1 is the unique trace-canonical line; its reduction su(5)(+)su(3)(+)u(1)=(24,8,1) (sum 33) does NOT match the scene (9,11,13): 2 matrix blocks != 3 graph parts. No admissible reduction preserves the tripartite scene structure. Lean D0.VNext.AFOneDimensionalReductionClassification.
+
+### D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFOneDimensionalReductionClassification`
+- theorem: `canonical_one_dimensional_reduction_no_go`
+- cert: `vp_vnext_canonical_xi_anchor.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+1 Phase B] No canonical scene-encoding chi: AF-reduced (24,8,1) -> V9 ⊔ V11 ⊔ V13 (incompatible finite structure), so no canonical Xi exists; a dimension-only Xi is ruled out by the spectral invariant obstruction. PRIM-COMPARISON-MAP-XI-N remains independent. Cites D0.VNext.AFOneDimensionalReductionClassification.
+
 ### D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001
 
 - type: `no-go`
@@ -4068,6 +4133,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [vNext Fast-Track master NO-GO] PRIM-ISOMETRIC-DIRAC-J_N does NOT collapse to one extension datum: the GNS isometry is realized for free, but a Dirac-compatible tower requires BOTH a forced scale law (scale underdetermined, Outcome C) AND a canonical comparison map Xi_N (obstructed, Outcome D). The single primitive splits into +2 independent primitives. Lean D0.VNext.AFD0LaplacianComparisonNoGo.
+
+### D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFD0SpectralInvariantComparison`
+- theorem: `spectral_invariant_obstruction`
+- cert: `vp_vnext33_no_overclaim.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+1 Phase F] PRIM-DIRAC-SCALE-SELECTION and PRIM-COMPARISON-MAP-XI-N are NOT unified by one anchor (D0-VNEXT-33-SCENE-ANCHOR-NOGO-001); they remain INDEPENDENT primitives (Phase F result 4). Cites D0.VNext.AFD0SpectralInvariantComparison.
+
+### D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.VNext.AFD0SpectralInvariantComparison`
+- theorem: `spectral_invariant_obstruction`
+- cert: `vp_vnext_joint_dirac_scale_selection.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [vNext+1 Phase C] The anchor does NOT co-select the Dirac scale: with no canonical Xi there is no anchored spectral-matching condition. PRIM-DIRAC-SCALE-SELECTION remains the independent primitive. Cites D0.VNext.AFD0SpectralInvariantComparison.
 
 ### D0-VNEXT-MARTINGALE-DIRAC-OWNER-001
 
@@ -4617,6 +4708,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter22 five-front C] The D0-internal profinite-code conjugacy is CLOSED (D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001: equal cylinder languages AND frequencies). MISSING (exact): full TOPOLOGICAL conjugacy T = golden SFT, which needs an explicit Williams shift-equivalence matrix relating N_tau=[[0,1],[1,1]] to T's SFT realization (external owner D0-ADLER-WEISS-PARTITION-OWNER-001). cert vp_toral_time_markov_conjugacy.py (controls: external-theorem-as-proof / language-without-frequency / short-window-only rejected). PROOF-TARGET.
+
+### D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_02`
+- module: ``
+- theorem: `none`
+- cert: `vp_vnext_canonical_anchor_feshbach_compression.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [vNext+1 Phase E] The Feshbach split needs image(Xi^dag)/kernel(Xi); Xi is obstructed, so W_eff=A-B(D-zI)^-1 C cannot be canonically formed against the scene. Blocked upstream; missing PRIM-COMPARISON-MAP-XI-N.
 
 ### D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001
 

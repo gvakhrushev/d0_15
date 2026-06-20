@@ -1,0 +1,6 @@
+{
+  "status": "blocked (no canonical Xi)",
+  "reason": "the Feshbach split needs image(Xi^dag)/kernel(Xi); Xi obstructed",
+  "levels_tested": "F1-F4 not reachable (Xi absent)",
+  "refined_xi_tower": "undefined (Xi_N = Xi_star o E needs Xi_star)"
+}

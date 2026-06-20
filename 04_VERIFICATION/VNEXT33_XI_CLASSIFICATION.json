@@ -1,0 +1,9 @@
+{
+  "xi_orientation_tested": [
+    "unitary",
+    "coisometry",
+    "isometry"
+  ],
+  "result": "NO canonical Xi: no scene-encoding chi from AF-reduced (24,8,1) to the 3-partite scene (9,11,13); and a dimension-only Xi is ruled out by the spectral invariant obstruction",
+  "uniqueness_class": "n/a (does not exist)"
+}

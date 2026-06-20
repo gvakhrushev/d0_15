@@ -1,0 +1,31 @@
+{
+  "class": "invariant/definable one-dimensional subspaces of H_3^GNS",
+  "candidates": [
+    {
+      "line": "GNS cyclic line C*Omega",
+      "canonical": true,
+      "note": "for the tracial Perron state Omega=1_A, so equals the trace line"
+    },
+    {
+      "line": "trace-constant line C*1",
+      "canonical": true,
+      "note": "coincides with the GNS cyclic line"
+    },
+    {
+      "line": "refinement-stationary",
+      "canonical": false,
+      "note": "conditional expectation fixes a large subspace, not a 1-dim line"
+    },
+    {
+      "line": "AF Laplacian eigenline",
+      "canonical": "ambiguous",
+      "note": "depends on which finite AF Laplacian; not uniquely forced"
+    },
+    {
+      "line": "Perron projection line",
+      "canonical": "=trace line",
+      "note": "reduces to C*1"
+    }
+  ],
+  "result": "exactly one trace-canonical line (C*1 = cyclic = Perron); its reduction su(5)(+)su(3)(+)u(1)=(24,8,1) does NOT preserve the (9,11,13) scene structure (Outcome D)"
+}

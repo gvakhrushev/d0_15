@@ -632,7 +632,21 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001", moduleName := "D0.VNext.PerronGNSTower",
       theoremName := "perron_gns_tower_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001", moduleName := "D0.VNext.AFD0LaplacianComparisonNoGo",
-      theoremName := "laplacian_tower_compatibility_no_go", status := ClaimStatus.leanNoGoProved }
+      theoremName := "laplacian_tower_compatibility_no_go", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001", moduleName := "D0.VNext.AFSceneAnchorDimensionAudit",
+      theoremName := "typed_audit_not_numerology", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001", moduleName := "D0.VNext.AFOneDimensionalReductionClassification",
+      theoremName := "canonical_one_dimensional_reduction_no_go", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001", moduleName := "D0.VNext.AFOneDimensionalReductionClassification",
+      theoremName := "canonical_one_dimensional_reduction_no_go", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001", moduleName := "D0.VNext.AFD0SpectralInvariantComparison",
+      theoremName := "spectral_invariant_obstruction", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001", moduleName := "D0.VNext.AFD0SpectralInvariantComparison",
+      theoremName := "spectral_invariant_obstruction", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001", moduleName := "D0.VNext.AFD0SpectralInvariantComparison",
+      theoremName := "spectral_invariant_obstruction", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001", moduleName := "D0.VNext.AFD0SpectralInvariantComparison",
+      theoremName := "spectral_invariant_obstruction", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

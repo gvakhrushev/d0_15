@@ -424,7 +424,10 @@ import D0.Tower.DetectionQuadratic
 import D0.Tower.NoExtension
 import D0.Traceability.StatusTaxonomy
 import D0.VNext.AFD0LaplacianComparisonNoGo
+import D0.VNext.AFD0SpectralInvariantComparison
 import D0.VNext.AFMartingaleDiracScaleNoGo
+import D0.VNext.AFOneDimensionalReductionClassification
+import D0.VNext.AFSceneAnchorDimensionAudit
 import D0.VNext.FibonacciAFAlgebra
 import D0.VNext.PerronGNSTower
 import D0.Verification.FinalResearchClosureBoundary
