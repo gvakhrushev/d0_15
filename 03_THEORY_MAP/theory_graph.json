@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 406,
+    "claims": 410,
     "release_status": {
       "CORE-FORMALIZED": 163,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 124,
+      "CERT-CLOSED": 127,
       "NO-GO": 28,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 36,
+      "PROOF-TARGET": 37,
       "PASSPORT-CLOSED": 9
     },
     "lean_status": {
-      "LEAN_PROVED": 257,
+      "LEAN_PROVED": 260,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
       "PYTHON_CERTIFIED": 89,
       "DEPRECATED": 2,
-      "OPEN": 37
+      "OPEN": 38
     },
     "claim_type": {
       "core": 164,
       "bridge": 28,
       "no-go": 36,
-      "certificate": 139,
+      "certificate": 142,
       "deprecated": 3,
-      "frontier": 36
+      "frontier": 37
     },
     "domain": {
-      "formal_core": 226,
-      "rg": 5,
+      "formal_core": 227,
+      "rg": 6,
       "gauge_bridge": 21,
-      "smooth_geometry": 30,
+      "smooth_geometry": 31,
       "spectral_action": 6,
       "empirical_passport": 29,
       "cosmology": 49,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 36
+      "frontier": 37
     }
   },
   "nodes": [
@@ -13656,6 +13656,137 @@
       "label": "vp_final_core_maximality.py",
       "path": "05_CERTS/vp_final_core_maximality.py",
       "exists": true
+    },
+    {
+      "id": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.tower",
+      "lean_module": "D0.Geometry.FibonacciBratteliRefinement",
+      "lean_theorem": "fibonacci_bratteli_refinement_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_fibonacci_bratteli_refinement.py",
+      "python_cert": [
+        "vp_fibonacci_bratteli_refinement.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Research Closure Master A] The golden cylinder language (golden-mean SFT, forbid factor 11) canonically determines its refinement Bratteli incidence M_phi=[[1,1],[1,0]] RECOVERED from the allowed-word rule (not inserted): incidence_recovered_from_language (decide), Perron eigenvalue phi (M_phi^2=M_phi+I), Fibonacci level dims [2,3,5,8,...], unique normalized AF/cylinder trace ratio phi (left-Perron). Lean D0.Geometry.FibonacciBratteliRefinement.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/FibonacciBratteliRefinement.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.FibonacciBratteliRefinement",
+      "kind": "lean_module",
+      "label": "D0.Geometry.FibonacciBratteliRefinement",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/FibonacciBratteliRefinement.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_fibonacci_bratteli_refinement.py",
+      "kind": "python_cert",
+      "label": "vp_fibonacci_bratteli_refinement.py",
+      "path": "05_CERTS/vp_fibonacci_bratteli_refinement.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "kind": "claim",
+      "claim_id": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "type": "certificate",
+      "domain": "rg",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.tower",
+      "lean_module": "D0.Geometry.FibonacciBratteliRefinement",
+      "lean_theorem": "fibonacci_bratteli_refinement_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_fibonacci_bratteli_refinement.py",
+      "python_cert": [
+        "vp_fibonacci_bratteli_refinement.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Research Closure Master A -- thesis] The present core DOES contain a canonical renormalization/refinement tower at the ALGEBRA+TRACE+SCALE level: incidence M_phi recovered from the cylinder language (D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001), Perron phi, golden AF trace, forced scale ratio phi (D0-PERRON-SCALE-FLOW-OWNER-001). It does NOT contain a canonical inductive SPECTRAL-TRIPLE tower (Dirac-compatible isometric J_N) -- that is the external obstruction D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001 (Master A Outcome B). No tower manufactured; incidence derived not inserted.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/FibonacciBratteliRefinement.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.tower",
+      "lean_module": "D0.Spectral.CanonicalRefinementScaleFlow",
+      "lean_theorem": "perron_scale_flow_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_canonical_refinement_scale.py",
+      "python_cert": [
+        "vp_canonical_refinement_scale.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Research Closure Master A] Every internally-defined refinement scale (Perron count phi^N, Fibonacci level dim, phi-ladder) shares the forced dimensionless step ratio Lambda_(N+1)/Lambda_N = phi; absolute scale dimensionless. Lean D0.Spectral.CanonicalRefinementScaleFlow (scale_ratio_forced, scale_ratio_constant). No imported length, no fitted continuum dimension.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/CanonicalRefinementScaleFlow.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.CanonicalRefinementScaleFlow",
+      "kind": "lean_module",
+      "label": "D0.Spectral.CanonicalRefinementScaleFlow",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/CanonicalRefinementScaleFlow.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_canonical_refinement_scale.py",
+      "kind": "python_cert",
+      "label": "vp_canonical_refinement_scale.py",
+      "path": "05_CERTS/vp_canonical_refinement_scale.py",
+      "exists": true
+    },
+    {
+      "id": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_07",
+      "section": "07.tower",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_inductive_spectral_triple_tower.py",
+      "python_cert": [
+        "vp_inductive_spectral_triple_tower.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "[Research Closure Master A Outcome B -- OBSTRUCTION] The algebra-level Bratteli system embeds inductively (incidence M_phi, Fibonacci dims), but a Dirac-compatible ISOMETRIC inductive spectral triple (J_N^dag J_N=I AND J_N^dag D_(N+1) J_N = D_N) is NOT present-core: the corpus realizes the tower as an INVERSE limit of downward projections (D0-ARCHIVE-LIGHTPROFINITE-001). EXACT MISSING ARTIFACT: an isometric J_N with Dirac compatibility, firewalled to ASSUMP-CONNES-RECONSTRUCTION / Latremoliere propinquity (external passport D0-SMOOTH-QUANTUM-METRIC-PASSPORT / D0-CONNES-RECONSTRUCTION-OWNER-001). cert vp_inductive_spectral_triple_tower.py.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_inductive_spectral_triple_tower.py",
+      "kind": "python_cert",
+      "label": "vp_inductive_spectral_triple_tower.py",
+      "path": "05_CERTS/vp_inductive_spectral_triple_tower.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -19427,6 +19558,66 @@
     {
       "source": "D0-FINAL-CORE-COMPLETION-001",
       "target": "cert:vp_final_core_maximality.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "target": "module:D0.Geometry.FibonacciBratteliRefinement",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "target": "cert:vp_fibonacci_bratteli_refinement.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "target": "domain:rg",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "target": "module:D0.Geometry.FibonacciBratteliRefinement",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "target": "cert:vp_fibonacci_bratteli_refinement.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "target": "module:D0.Spectral.CanonicalRefinementScaleFlow",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "target": "cert:vp_canonical_refinement_scale.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "target": "cert:vp_inductive_spectral_triple_tower.py",
       "kind": "certified_by"
     }
   ]

@@ -610,7 +610,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001", moduleName := "D0.Matter.LeptonFiniteGreenResolventOwner",
       theoremName := "lepton_finite_green_resolvent_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FINAL-CORE-COMPLETION-001", moduleName := "D0.Verification.PresentCoreMaximality",
-      theoremName := "present_core_maximality_classified", status := ClaimStatus.leanCoreProved }
+      theoremName := "present_core_maximality_classified", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001", moduleName := "D0.Geometry.FibonacciBratteliRefinement",
+      theoremName := "fibonacci_bratteli_refinement_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001", moduleName := "D0.Geometry.FibonacciBratteliRefinement",
+      theoremName := "fibonacci_bratteli_refinement_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PERRON-SCALE-FLOW-OWNER-001", moduleName := "D0.Spectral.CanonicalRefinementScaleFlow",
+      theoremName := "perron_scale_flow_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

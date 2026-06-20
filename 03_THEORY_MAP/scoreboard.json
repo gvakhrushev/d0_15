@@ -19,29 +19,29 @@
     }
   },
   "totals": {
-    "realized": 5306,
-    "track_fair_max": 7318,
-    "pct_strength": 72.5,
-    "core_realized": 4480,
-    "core_potential": 6460,
-    "core_headroom": 1980,
-    "n_claims": 406,
-    "n_active": 404,
+    "realized": 5344,
+    "track_fair_max": 7398,
+    "pct_strength": 72.2,
+    "core_realized": 4518,
+    "core_potential": 6540,
+    "core_headroom": 2022,
+    "n_claims": 410,
+    "n_active": 408,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 225,
-      "realized": 3332,
-      "max": 4153,
-      "core_headroom": 811
+      "n": 226,
+      "realized": 3344,
+      "max": 4173,
+      "core_headroom": 819
     },
     "rg": {
-      "n": 5,
-      "realized": 61,
-      "max": 73,
-      "core_headroom": 8
+      "n": 6,
+      "realized": 73,
+      "max": 93,
+      "core_headroom": 16
     },
     "gauge_bridge": {
       "n": 20,
@@ -50,10 +50,10 @@
       "core_headroom": 21
     },
     "smooth_geometry": {
-      "n": 30,
-      "realized": 376,
-      "max": 529,
-      "core_headroom": 149
+      "n": 31,
+      "realized": 388,
+      "max": 549,
+      "core_headroom": 157
     },
     "spectral_action": {
       "n": 6,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 36,
-      "realized": 82,
-      "max": 720,
-      "core_headroom": 638
+      "n": 37,
+      "realized": 84,
+      "max": 740,
+      "core_headroom": 656
     }
   },
   "by_book": {
@@ -118,10 +118,10 @@
       "core_headroom": 92
     },
     "BOOK_02": {
-      "n": 22,
-      "realized": 280,
-      "max": 384,
-      "core_headroom": 104
+      "n": 25,
+      "realized": 316,
+      "max": 444,
+      "core_headroom": 128
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -148,10 +148,10 @@
       "core_headroom": 80
     },
     "BOOK_07": {
-      "n": 56,
-      "realized": 726,
-      "max": 1016,
-      "core_headroom": 276
+      "n": 57,
+      "realized": 728,
+      "max": 1036,
+      "core_headroom": 294
     },
     "BOOK_06/08": {
       "n": 4,
@@ -674,6 +674,26 @@
       "effort": "release-bless to core"
     },
     {
+      "claim_id": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "domain": "rg",
+      "book": "BOOK_02",
+      "level_name": "LEAN_PROVED",
+      "leverage": 1,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
       "claim_id": "D0-GENERATIVE-DYNAMICS-001",
       "domain": "rg",
       "book": "BOOK_06",
@@ -967,6 +987,16 @@
       "claim_id": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
       "domain": "formal_core",
       "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "domain": "smooth_geometry",
+      "book": "BOOK_02",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -2012,6 +2042,16 @@
       "next": "CERT_SCAFFOLD",
       "points_gained": 2,
       "effort": "write cert scaffold"
+    },
+    {
+      "claim_id": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_07",
+      "level_name": "HYP",
+      "leverage": 0,
+      "next": "CERT_SCAFFOLD",
+      "points_gained": 2,
+      "effort": "write cert scaffold"
     }
   ],
   "leverage_gaps": [
@@ -2200,6 +2240,20 @@
     {
       "claim_id": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
       "domain": "cosmology",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "domain": "formal_core",
+      "leverage": 1,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "domain": "rg",
       "leverage": 1,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -2444,6 +2498,13 @@
     },
     {
       "claim_id": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "HYP",
+      "score": 2
+    },
+    {
+      "claim_id": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -3131,6 +3192,13 @@
     {
       "claim_id": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
       "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "domain": "smooth_geometry",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -8821,12 +8889,68 @@
       "book": "BOOK_05",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "rg",
+      "book": "BOOK_02",
+      "leverage": 1,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "smooth_geometry",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "track": "CORE",
+      "level": 1,
+      "level_name": "HYP",
+      "score": 2,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "OPEN",
+      "domain": "frontier",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 4.6,
+    "penalty_total": 4.5,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -8871,8 +8995,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 46,
-        "points": -4.6,
+        "count": 45,
+        "points": -4.5,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -8921,8 +9045,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 46,
-        "points": -4.6,
+        "count": 45,
+        "points": -4.5,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

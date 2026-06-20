@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 124
+- `CERT-CLOSED`: 127
 - `CORE-FORMALIZED`: 163
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -16,15 +16,15 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `NO-GO`: 28
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 9
-- `PROOF-TARGET`: 36
+- `PROOF-TARGET`: 37
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 139
+- `certificate`: 142
 - `core`: 164
 - `deprecated`: 3
-- `frontier`: 36
+- `frontier`: 37
 - `no-go`: 36
 
 ## Domain counts
@@ -32,13 +32,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 49
 - `empirical_passport`: 29
 - `external_background`: 1
-- `formal_core`: 226
-- `frontier`: 36
+- `formal_core`: 227
+- `frontier`: 37
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
-- `rg`: 5
+- `rg`: 6
 - `si_calibration`: 2
-- `smooth_geometry`: 30
+- `smooth_geometry`: 31
 - `spectral_action`: 6
 
 ## Domain: cosmology
@@ -1390,6 +1390,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 four-physics P2] Global unitarity conserves the total rank (totalRank=activeRank+envRank invariant), so information is transferred, never deleted (the active Page bound stays <= totalRank throughout). Lean D0.Gravity.PageCurveFiniteRankOwner.information_unitarity_owner; cert vp_black_hole_information_unitarity_owner.py (controls: non-unitary rank-dropping step rejected; S_total>D rejected; rank_active down without rank_env up rejected). No infinite-Hilbert assumption.
+
+### D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Geometry.FibonacciBratteliRefinement`
+- theorem: `fibonacci_bratteli_refinement_owner`
+- cert: `vp_fibonacci_bratteli_refinement.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master A] The golden cylinder language (golden-mean SFT, forbid factor 11) canonically determines its refinement Bratteli incidence M_phi=[[1,1],[1,0]] RECOVERED from the allowed-word rule (not inserted): incidence_recovered_from_language (decide), Perron eigenvalue phi (M_phi^2=M_phi+I), Fibonacci level dims [2,3,5,8,...], unique normalized AF/cylinder trace ratio phi (left-Perron). Lean D0.Geometry.FibonacciBratteliRefinement.
 
 ### D0-CANONICAL-OP-001
 
@@ -4241,6 +4254,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter22 four-physics P1] The K(9,11,13) edge-current / divergence-free (Kirchhoff) SCAFFOLD is built (Lean EdgeCurrent structure; a tiny-graph conservation check in the cert). MISSING (exact): a divergence-free EdgeCurrent on K(9,11,13) whose zone-normalized U(1) holonomy trace YIELDS the hypercharge row (qL=1/6,...). cert vp_hypercharge_graph_flow_owner.py (controls: nonzero-divergence current rejected; row-derived claim rejected (scaffold only); SM-table-as-derivation rejected). PROOF-TARGET; no SM charge table imported as proof of origin.
 
+### D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_inductive_spectral_triple_tower.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Research Closure Master A Outcome B -- OBSTRUCTION] The algebra-level Bratteli system embeds inductively (incidence M_phi, Fibonacci dims), but a Dirac-compatible ISOMETRIC inductive spectral triple (J_N^dag J_N=I AND J_N^dag D_(N+1) J_N = D_N) is NOT present-core: the corpus realizes the tower as an INVERSE limit of downward projections (D0-ARCHIVE-LIGHTPROFINITE-001). EXACT MISSING ARTIFACT: an isometric J_N with Dirac compatibility, firewalled to ASSUMP-CONNES-RECONSTRUCTION / Latremoliere propinquity (external passport D0-SMOOTH-QUANTUM-METRIC-PASSPORT / D0-CONNES-RECONSTRUCTION-OWNER-001). cert vp_inductive_spectral_triple_tower.py.
+
 ### D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001
 
 - type: `frontier`
@@ -4822,6 +4848,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
 - notes: [Audit->FORCING] sqrt2 is a GEOMETRY THEOREM (forced): orthogonal/cubic-isospin cell, Z=edge, H=in-plane diagonal => diagonal/edge=sqrt(1+1)=sqrt2 exactly (body-diagonal sqrt3 is the negative control). The measured ~2.9% deficit (m_H/m_Z=1.3736 vs sqrt2=1.41421) is delta_loop, a NAMED running list (QED/QCD/EW from m_Z to m_H), a BRIDGE needing external RG to evaluate exactly. HONEST: sqrt2 forced & kept regardless; delta_loop is a NAMED-GAP (consistent at 3% pending RG), NOT a free bag and NOT a precise prediction. cert vp_higgs_cube_forcing.py.
 
+### D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `rg`
+- book: `BOOK_02`
+- module: `D0.Geometry.FibonacciBratteliRefinement`
+- theorem: `fibonacci_bratteli_refinement_owner`
+- cert: `vp_fibonacci_bratteli_refinement.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master A -- thesis] The present core DOES contain a canonical renormalization/refinement tower at the ALGEBRA+TRACE+SCALE level: incidence M_phi recovered from the cylinder language (D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001), Perron phi, golden AF trace, forced scale ratio phi (D0-PERRON-SCALE-FLOW-OWNER-001). It does NOT contain a canonical inductive SPECTRAL-TRIPLE tower (Dirac-compatible isometric J_N) -- that is the external obstruction D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001 (Master A Outcome B). No tower manufactured; incidence derived not inserted.
+
 ### D0-GENERATIVE-DYNAMICS-001
 
 - type: `certificate`
@@ -5048,6 +5087,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter22 four-physics P2] Finite-rank Page bound: with H=H_active(+)H_env, ranks nA,nE, D=nA+nE, the bound pageBound=min(nA,nE) satisfies 0<=S_page=min/D<=1, =0 at a pure state (nE=0), =1/2 at the symmetric Page turn (nA=nE), and rises-then-falls. Lean D0.Gravity.PageCurveFiniteRankOwner.page_curve_finite_rank_owner (Nat.min facts); cert vp_page_curve_finite_rank_owner.py (controls: nA+nE!=D; entropy>min; asymmetric swap; infinite/continuum entropy rejected). Continuum-free; the analytic von Neumann entropy + Hawking spectrum + island formula stay EXTERNAL. Distinct from the static D0-BH-CAPACITY-A4-001 (S=n/4): this is the dynamic rank curve.
+
+### D0-PERRON-SCALE-FLOW-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `smooth_geometry`
+- book: `BOOK_02`
+- module: `D0.Spectral.CanonicalRefinementScaleFlow`
+- theorem: `perron_scale_flow_owner`
+- cert: `vp_canonical_refinement_scale.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Research Closure Master A] Every internally-defined refinement scale (Perron count phi^N, Fibonacci level dim, phi-ladder) shares the forced dimensionless step ratio Lambda_(N+1)/Lambda_N = phi; absolute scale dimensionless. Lean D0.Spectral.CanonicalRefinementScaleFlow (scale_ratio_forced, scale_ratio_constant). No imported length, no fitted continuum dimension.
 
 ### D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001
 
