@@ -5,34 +5,34 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 21
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 138
+- `CERT-CLOSED`: 141
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 51
+- `NO-GO`: 55
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 19
 - `PROOF-TARGET`: 44
 
 ## Type counts
 
-- `bridge`: 28
-- `certificate`: 163
+- `bridge`: 29
+- `certificate`: 166
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 44
-- `no-go`: 59
+- `no-go`: 63
 
 ## Domain counts
 
 - `cosmology`: 50
 - `empirical_passport`: 31
 - `external_background`: 1
-- `formal_core`: 263
+- `formal_core`: 271
 - `frontier`: 44
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1222,6 +1222,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter7 axiom-forcing C.2, strongest axiomatic support] External owner of M1 itself: finite information capacity of an elementary system + continuity + tomographic locality UNIQUELY yield complex Hilbert-space QM (Hardy quant-ph/0101012; Dakic-Brukner 2011; Masanes-Mueller NJP 13 053040 (2011); Chiribella-DAriano-Perinotti PRA 84 012311 (2011)). D0 lens: M1's finite-distinguishability premise IS the finite-capacity hypothesis these reconstructions start from -- an external forcing of the D0 axiomatic base. Lean D0.Bridge.M1InfoReconstructionBridge (m1_info_reconstruction_conditional) conditional on ASSUMP-M1-INFO-RECONSTRUCTION. HONEST: NAMES the reconstruction-theorem family as the owner; not a D0-internal derivation -- BRIDGE not core.
 
+### D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Extensions.AlphaResidueExtension`
+- theorem: `alpha_residue_external_passport`
+- cert: `vp_postcore_e5_alpha_residue.py`
+- assumptions: `ASSUMP-LINDEMANN-LNPHI`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Post-core E5] EXTERNAL-PASSPORT. Two admissible analytic functionals on the SAME a=3 critical operator diverge: internal ordinary log-Cesaro 1/(3 log phi) (transcendental, ASSUMP-LINDEMANN-LNPHI) != rational mu2=12288/5 (R5); the external Wodzicki/Connes-trace reading is the only route to mu2. No INTERNAL measurable trace realizes mu2; realization deferred to D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001. Reuses D0-CVFT-F1; cites D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001. EXACT-MISSING: external Dixmier/Wodzicki carrier.
+
 ### D0-PVSNP-LYAPUNOV-M1-001
 
 - type: `bridge`
@@ -2079,6 +2092,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Audit->FORCING, D.3] phi^99 depth exponent forced: 99=V9*V11=9*11 (defect x memory shells), exact named product, 0 free. Controls: 98,100 not shell products; 117=V9*V13 a different pair. HONEST: exponent forced as named product; the G_N ORDER is the separate length-depth metrology BRIDGE.
+
+### D0-POSTCORE-EXTENSION-BOUNDARY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Verification.PostCoreExtensionBoundary`
+- theorem: `postcore_extension_boundary`
+- cert: `vp_postcore_extension_boundary.py`
+- assumptions: `ASSUMP-LINDEMANN-LNPHI`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Post-core capstone] Conjunction of the 5 extension boundaries: E1-E4 TWO-COMPLETION-NOGO (each with its divergent observable), E5 EXTERNAL-PASSPORT (conditional on the Lindemann bridge), + exactly 2 extension proof-edges. No extension forces a unique completion from admissible data alone; each front is one named typed primitive (or external passport) away. Lean D0.Verification.PostCoreExtensionBoundary.
+
+### D0-POSTCORE-EXTENSION-CATEGORY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.AdmissibleExtensionCategory`
+- theorem: `admissible_extension_category`
+- cert: `vp_postcore_no_manual_extension_data.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Post-core Section 1] D0AdmissibleExtension: typed PARTIAL-object category over the 5 components (R_rep,H_ref,P_arch,B_branch,A_res); 2^5=32 configurations; admissibility rejects manual-data/post-hoc; Hom = component-inclusion of admissible objects with identity+composition. Lean D0.Extensions.AdmissibleExtensionCategory.
+
+### D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.ExtensionMinimality`
+- theorem: `extension_semantic_dependence`
+- cert: `vp_postcore_extension_semantic_dependence.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Post-core Section 7] Real proof-edge graph (NOT identifier distinctness): exactly 2 directed edges E2->E5, E3->E5 (the a=3 exponent leg, asymmetric); E4 isolated; 5 distinct component types (no merge). 5 key tests answered (history NOT-> branch; rep NOT-> coordinate; common-sector NOT-> smoothing; phi^3 -> residue YES; rep NOT-> nc count). POST_CORE_EXTENSION_DEPENDENCE_MATRIX.csv, POST_CORE_EXTENSION_NONDERIVATION_WITNESSES.md, POST_CORE_EXTENSION_MERGER_THEOREMS.md.
 
 ### D0-QUASI007-MESON-PHASON-DOMAIN-WALLS-001
 
@@ -4211,6 +4263,58 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [8C orphan-harvest] freezes V3-V12 negative discovery scans; blocks proxy promotion.
+
+### D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Extensions.SceneHistoryRefinementExtension`
+- theorem: `history_refinement_nogo`
+- cert: `vp_postcore_e2_history_refinement.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Post-core E2] Min-successor mindeg-1=19 > phi^3 closes the PATH-refinement subcase R3 disclaimed (extends beyond inherited-adjacency); all-walks 15708 != non-backtracking 14990 (diff 2|E|=718) => refinement functor not unique. Cites D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001, D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001. EXACT-MISSING: PRIM-SCENE-HISTORY-REFINEMENT-RULE.
+
+### D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Extensions.LeptonSelectorExtension`
+- theorem: `lepton_selector_extension_nogo`
+- cert: `vp_postcore_e4_lepton_selector.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Post-core E4] The 'unique selector' route is CIRCULAR (narrowing to Cent(U_eff) presupposes choosing sigmaA; (4,3) is a single S7 class, 12 conjugators) -- R4 stands. The resolvent forces an orbit-keyed exponent map (4->1/4, 3->1/3, 1/4!=1/3) but 2 orbits < 3 generations => assignment underdetermined. Cites D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001, D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001. EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR; decimals external EFT/IR passport.
+
+### D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Extensions.ArchiveCoordinateExtension`
+- theorem: `phason_extension_nogo`
+- cert: `vp_postcore_e3_archive_coordinate.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Post-core E3] No common sector (integer L_archive {24,22,20} incommensurate with irrational S_DE window, product 359/160); even adopting S_DE, role(2) x cocycle(2) = 4 admissible w_E(z): w_A != w_B (R2) AND phi-tick z(1)=phi-1 != integer-tick z(1)=1 (NEW). Operator-type firewall respected. Cites D0-ARCHIVE-CONTRACTION-NOGO-001, D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001. EXACT-MISSING: PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT + PRIM-PHASON-COORDINATE-FUNCTOR (physical map = external passport).
+
+### D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Extensions.RepresentationReadoutExtension`
+- theorem: `representation_extension_nogo`
+- cert: `vp_postcore_e1_representation_extension.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Post-core E1] Even with the full (rho,Gamma,J,Q_role) interface, commutant M3+C+C+C; the grading signature on the M3 generation block gives neutral-current count p^2+q^2+3 -> 8 (sig 2,1) vs 12 (sig 3,0), both anomaly-free + S3-symmetric => TWO admissible completions (also free S3 Weyl-role bijection). NEW vs R1: the neutral-current 8!=12 divergence. Cites D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001 (carrier 33/commutant 12/Weyl-role -- not re-minted), D0-SM-HYPERCHARGE-ROW-OWNER-001. EXACT-MISSING: PRIM-FINITE-SPECTRAL-TRIPLE-REP.
 
 ### D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001
 

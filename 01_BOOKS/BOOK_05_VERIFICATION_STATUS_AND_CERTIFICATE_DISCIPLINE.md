@@ -130,6 +130,7 @@ TORUS-RAMIFICATION-TARGET: charged-lepton hierarchy reduces to branch indices (t
 Sync gates retained here: `## 05.13 Current inherited priority gates`, `D0.Matter.Book04OperatorBoundary`, `nucleon_line_cannot_promote_full_baryon_multiplet`, `lower_hodge_400_cannot_promote_meson_masses`, `IceCube comparison is EMPIRICAL-PASSPORT`, `cannot select or tune the D0 neutrino kernel`, and Gravity closure requires: finite graph/entropy cert, explicit Pi_TT and W_TT, higher-curvature cut, spectral A2/EH bridge, no continuum constants imported as core.
 
 **[Root-operator program].** Five generative roots each close as an exact NO-GO one typed primitive away; the cross-root semantic dependency is a real proof-graph (one directed edge R3→R5, R4 isolated, asymmetric) — `D0-ROOT-OPERATOR-SEMANTIC-DEPENDENCE-001` (Lean `D0.Verification.RootOperatorSemanticDependence`), `D0-ROOT-OPERATOR-COMPLETION-PROGRAM-001`; board `ROOT_OPERATOR_COMPLETION_BOARD.csv`.
+**[Post-core extension program].** The typed `D0AdmissibleExtension` category (`D0-POSTCORE-EXTENSION-CATEGORY-001`) frames five beyond-present-core interfaces; four are TWO-COMPLETION-NOGO and E5 is EXTERNAL-PASSPORT, with a real proof-edge dependence graph (2 `a=3` edges `E2,E3→E5`, E4 isolated) — `D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001`, capstone `D0-POSTCORE-EXTENSION-BOUNDARY-001`.
 ## 05.1 Role of this book
 
 Book 05 is the verification calculus of the D0 corpus.  It does not introduce the

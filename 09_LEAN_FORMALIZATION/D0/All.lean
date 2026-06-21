@@ -160,6 +160,13 @@ import D0.Evolution.FeshbachSchurTimeDelayOwner
 import D0.Evolution.JYNoncommutativeOrderObstruction
 import D0.Evolution.PhiFractalTickDynamics
 import D0.Evolution.StaticToDynamicsOwner
+import D0.Extensions.AdmissibleExtensionCategory
+import D0.Extensions.AlphaResidueExtension
+import D0.Extensions.ArchiveCoordinateExtension
+import D0.Extensions.ExtensionMinimality
+import D0.Extensions.LeptonSelectorExtension
+import D0.Extensions.RepresentationReadoutExtension
+import D0.Extensions.SceneHistoryRefinementExtension
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.M1Predicate
@@ -441,6 +448,7 @@ import D0.VNext.PerronGNSTower
 import D0.VNext2.SceneNativeRefinementClassification
 import D0.VNext2.SceneSpectralFingerprint
 import D0.Verification.FinalResearchClosureBoundary
+import D0.Verification.PostCoreExtensionBoundary
 import D0.Verification.PresentCoreMaximality
 import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary

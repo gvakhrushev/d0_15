@@ -688,7 +688,23 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001", moduleName := "D0.Spectral.AlphaLogCesaroMeasurability",
       theoremName := "alpha_log_cesaro_ne_mu2", status := ClaimStatus.leanBridgeAssumptionsExplicit },
     { claimId := "D0-ROOT-OPERATOR-SEMANTIC-DEPENDENCE-001", moduleName := "D0.Verification.RootOperatorSemanticDependence",
-      theoremName := "root_operator_semantic_dependence", status := ClaimStatus.leanCoreProved }
+      theoremName := "root_operator_semantic_dependence", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-POSTCORE-EXTENSION-CATEGORY-001", moduleName := "D0.Extensions.AdmissibleExtensionCategory",
+      theoremName := "admissible_extension_category", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001", moduleName := "D0.Extensions.RepresentationReadoutExtension",
+      theoremName := "representation_extension_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001", moduleName := "D0.Extensions.SceneHistoryRefinementExtension",
+      theoremName := "history_refinement_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001", moduleName := "D0.Extensions.ArchiveCoordinateExtension",
+      theoremName := "phason_extension_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001", moduleName := "D0.Extensions.LeptonSelectorExtension",
+      theoremName := "lepton_selector_extension_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001", moduleName := "D0.Extensions.AlphaResidueExtension",
+      theoremName := "alpha_residue_external_passport", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001", moduleName := "D0.Extensions.ExtensionMinimality",
+      theoremName := "extension_semantic_dependence", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-POSTCORE-EXTENSION-BOUNDARY-001", moduleName := "D0.Verification.PostCoreExtensionBoundary",
+      theoremName := "postcore_extension_boundary", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
