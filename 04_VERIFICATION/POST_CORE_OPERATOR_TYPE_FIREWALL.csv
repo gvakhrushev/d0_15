@@ -1,0 +1,7 @@
+operator,definition,spectrum_or_type,may_NOT_be_substituted_for
+L_scene,"combinatorial Laplacian of K(9,11,13)","{0:1,20:12,22:10,24:8,33:2}",the tick U; the adjacency A
+A_scene,"adjacency of K(9,11,13)","{-12,-10,0(x30),22}; Perron(quotient) 21.84",the Laplacian; the tick U
+L_archive,Laplacian restricted to the archive sector ker A_scene,"degrees {24,22,20} (since A|ker=0 => L|ker=D|ker)",QUQ (tick archive block); S_DE
+U_tick (toral T),the actual finite tick/dynamics carrier,"toral T=[[0,1],[1,-1]] -> {phi^-1, -phi}",L_archive; L_scene
+QUQ,archive block of the actual finite tick U,NOT computed from L_archive; requires a canonical intertwiner,"L_archive spectrum {24,22,20}"
+S_DE,two-mode feedback-pressure transfer operator,"active window {3/2 +/- sqrt10/40}, product 359/160",L_archive; QUQ

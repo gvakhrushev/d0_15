@@ -5,11 +5,17 @@ import D0.Core.Phi
 /-!
 # D0-ARCHIVE-CONTRACTION-NOGO-001 — ROOT R2 (archive/phason transfer operator)
 
-On the 30-dim archive sector `K_scene = ker A_scene`, the adjacency is annihilated, so `L|_ker = D|_ker`
-has spectrum exactly the degrees `{24, 22, 20}` — all `> 1 > φ⁻¹`. Hence the only concrete frozen
-realization of the archive block has spectral radius `24`, and the contraction theorem `QUQ = ψ·V`,
-`‖V‖ ≤ 1`, `|ψ| = φ⁻¹` is **unwitnessable without an external rescale** (by `2|E| = 718`, a count =
-forbidden). `φ⁻¹` occurs only on the toral block `T`, never on the 30-dim archive block.
+SCOPE (operator-type firewall — see `POST_CORE_OPERATOR_TYPE_FIREWALL.csv`): three DISTINCT operators must
+not be substituted for one another — `L_archive` (the Laplacian restricted to the archive sector
+`K_scene = ker A_scene`), `QUQ` (the archive block of the actual finite tick `U`), and `S_DE` (the two-mode
+feedback-pressure transfer). On `K_scene` the adjacency is annihilated, so `L_archive = L|_ker = D|_ker` has
+spectrum exactly the degrees `{24, 22, 20}` — all `> 1 > φ⁻¹` (`φ⁻¹` occurs only on the toral tick block `T`,
+spectrum `{φ⁻¹, −φ}`, never on the 30-dim archive block). The frozen data supply **no canonical intertwiner**
+identifying `L_archive` with `QUQ` or `S_DE`; the `L_archive` spectrum is NOT the `QUQ` spectrum. Therefore no
+contraction `QUQ = ψ·V`, `‖V‖ ≤ 1`, `|ψ| = φ⁻¹` is presently derived: what the Lean facts show is that the
+only concretely-realized archive operator (`L_archive`, radius 24) cannot host it without an external rescale
+(by `2|E| = 718`, a count = forbidden). This does NOT prove `QUQ` itself is non-contractive — it proves no
+owner ties the three operators together.
 
 Second leg: the canonical S_DE active 2-D window has eigenvalues `3/2 ± √10/40` (product `359/160`), and
 the two admissible pressure/energy role assignments give `w_A = 361/359 − 12√10/359 ≠ w_B = 361/359 +

@@ -4,15 +4,16 @@ import D0.Core.Phi
 /-!
 # D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001 — ROOT R3
 
-No scene-native multiscale tower supplies the Perron growth `φ³` required by the alpha analytic route. The
-genuinely-new content here is an **average-degree Rayleigh bound**: for the scene adjacency `A`, the all-ones
-Rayleigh quotient gives `ρ(A) ≥ 2|E|/N = 718/33 ≈ 21.76`, while `φ³ = 2φ + 1 < 5`. So every frozen carrier
-has Perron radius far above `φ³` — `φ³` is unreachable. This is a distinct second proof of the `φ³`-absence
-that already appears (via the rate argument `rate_three_eq_one`) in
-`D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001`, and the refinement-rule underdetermination
-(`15708 ≠ 14990`, depth-2 walk carriers) is owned by `D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`. This
-module CITES both and adds only the avg-degree bound; the missing object remains
-`PRIM-SCENE-HISTORY-REFINEMENT-RULE`. No new tilt/4D claim is made.
+SCOPE (do not over-read the Rayleigh bound): the average-degree bound proves the `φ³`-absence ONLY in the
+**inherited-adjacency class** — no `φ³` Perron carrier arises as an adjacency compression, restriction, or
+subgraph transfer of the frozen `K(9,11,13)` adjacency `A`. Indeed the all-ones Rayleigh quotient gives
+`ρ(A) ≥ 2|E|/N = 718/33 ≈ 21.76`, while `φ³ = 2φ + 1 < 5`, so any such inherited carrier has Perron radius far
+above `φ³`. This is a distinct second proof of the `φ³`-absence that already appears (via `rate_three_eq_one`)
+in `D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001`. It does **NOT** rule out a `φ³` mechanism in a genuinely
+different class — scene-native path refinement, projective cylinder history, conditional-expectation tower,
+graded product carrier, or profinite history functor (those are the E2/E3 extension questions). The
+refinement-rule underdetermination (`15708 ≠ 14990`, depth-2 walk carriers) is owned by
+`D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`; missing object `PRIM-SCENE-HISTORY-REFINEMENT-RULE`. No tilt/4D claim.
 -/
 
 namespace D0.Spectral.SceneNativeMultiscaleTower
