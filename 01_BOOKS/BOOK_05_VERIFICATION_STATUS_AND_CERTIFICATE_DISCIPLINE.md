@@ -134,6 +134,7 @@ Sync gates retained here: `## 05.13 Current inherited priority gates`, `D0.Matte
 **[Self-reading functor program].** Outcome D — a unique forced-skeleton functor `S₀: Hist_D0 → ReadoutRep_D0` exists but does not extend to fix the four disputed outputs; `PRIM-CANONICAL-SELF-READING-FUNCTOR` is the CONJUNCTION of `S₀` + four independent primitives, not a merge (0 proof-edges among E1-E4) (`D0-SELF-READING-PRIMITIVE-MINIMALITY-001`). Alpha stays a separate 4-layer external boundary (`D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001`).
 **[Raw no-go-strength + primitive matrix].** Under the 5-item standard the prior frontiers are CLASS-SCOPED (E1/E3/E5) or WITNESS-ONLY (E2/E4) -- none full-maximality, none invalid. The four frontier primitives are independent (0 internal proof-edges; `D0-RAW-PRIMITIVE-MINIMALITY-001`); the self-reading functor is their conjunction, not a merge.
 **[Five-primitive dependence].** The five primitives have exactly one real construction edge `P1→P2` (the coordinate functor needs the pressure-energy sector); `G,H,L` are mutually independent — no merge (`D0-FIVE-PRIMITIVE-DEPENDENCE-001`).
+**[D0-X5 five-contract ledger].** All five contracts admit a joint compatible model `D0X5FullModel` (`D0-X5-FULL-MODEL-001`, terminal X-A); each non-vacuous + deletion-minimal; dependence one edge `P1→P2`; no merge. The five remain postulated extension hypotheses, each one external passport away from a physical reading.
 ## 05.1 Role of this book
 
 Book 05 is the verification calculus of the D0 corpus.  It does not introduce the

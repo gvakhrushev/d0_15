@@ -184,6 +184,15 @@ import D0.Extensions.SelfReadingLeptonSelector
 import D0.Extensions.SelfReadingRefinementExtraction
 import D0.Extensions.SelfReadingRoleExtraction
 import D0.Extensions.TwoCompletionNoGo
+import D0.Extensions.X5.AlphaBoundary
+import D0.Extensions.X5.Base
+import D0.Extensions.X5.Coordinate
+import D0.Extensions.X5.Grading
+import D0.Extensions.X5.History
+import D0.Extensions.X5.Lepton
+import D0.Extensions.X5.Phason
+import D0.Extensions.X5.PrimitiveContract
+import D0.Extensions.X5.Synthesis
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.M1Predicate

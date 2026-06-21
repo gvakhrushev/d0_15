@@ -744,7 +744,23 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001", moduleName := "D0.Extensions.PhasonCoordinateFunctorConstruction",
       theoremName := "phason_coordinate_P2E", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FIVE-PRIMITIVE-DEPENDENCE-001", moduleName := "D0.Extensions.FivePrimitiveSemanticDependence",
-      theoremName := "five_primitive_dependence", status := ClaimStatus.leanCoreProved }
+      theoremName := "five_primitive_dependence", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-EXTENSION-001", moduleName := "D0.Extensions.X5.Base",
+      theoremName := "five_slots", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-GRADING-CONTRACT-001", moduleName := "D0.Extensions.X5.Grading",
+      theoremName := "grading_x5_terminal", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-HISTORY-CONTRACT-001", moduleName := "D0.Extensions.X5.History",
+      theoremName := "history_x5_terminal", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-LEPTON-CONTRACT-001", moduleName := "D0.Extensions.X5.Lepton",
+      theoremName := "lepton_x5_terminal", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-PHASON-PE-CONTRACT-001", moduleName := "D0.Extensions.X5.Phason",
+      theoremName := "phason_pe_x5_terminal", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-PHASON-COORDINATE-CONTRACT-001", moduleName := "D0.Extensions.X5.Coordinate",
+      theoremName := "coordinate_x5_terminal", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-FULL-MODEL-001", moduleName := "D0.Extensions.X5.Synthesis",
+      theoremName := "x5_compatible_joint_model", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-X5-ALPHA-BOUNDARY-001", moduleName := "D0.Extensions.X5.AlphaBoundary",
+      theoremName := "alpha_outside_x5", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

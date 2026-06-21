@@ -1,0 +1,16 @@
+forbidden_promotion,rejected_by
+commutant dim -> grading signature,vp_x5_no_grading_dim_shortcut
+M3 block -> active neutrino count,vp_x5_no_rank_to_neutrino_shortcut
+rank 3 -> N_active=3,vp_x5_no_rank_to_neutrino_shortcut
+path count -> canonical refinement,vp_x5_no_scene_copy_refinement
+L_archive -> QUQ,vp_x5_operator_type_firewall
+trace/det -> intertwiner,vp_x5_no_trace_as_intertwiner
+Puiseux exponent -> generation,vp_x5_no_branch_to_generation_shortcut
+two exponents -> only two rows,vp_x5_no_branch_to_generation_shortcut
+centralizer after branch choice,vp_x5_no_posthoc_group_restriction
+chosen k/u/width -> CMB,vp_x5_no_fitted_cmb_window
+chosen z=0 -> redshift,vp_x5_no_manual_redshift
+CPL/FLRW/DESI/Planck in coordinate,vp_x5_no_manual_redshift
+PDG/LEP in branch selector,vp_x5_no_external_data_in_operator
+transcendence as CORE,vp_x5_extension_status_discipline
+D0-X5 theorem as present-core,vp_x5_no_present_core_rewrite

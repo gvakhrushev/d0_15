@@ -1,0 +1,6 @@
+primitive,status,exact_remaining_external
+PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR,HYP contract + model,which grading signature is physical = external passport
+PRIM-SCENE-HISTORY-REFINEMENT-RULE,HYP contract + model,which refinement family is physical = external
+PRIM-LEPTON-BRANCH-FIXING-OPERATOR,HYP contract + model,branch->generation physical assignment = EFT/IR passport
+PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT,HYP contract + model,physical role assignment = external
+PRIM-PHASON-COORDINATE-FUNCTOR,HYP contract + model,observed redshift = external passport (P2-E)

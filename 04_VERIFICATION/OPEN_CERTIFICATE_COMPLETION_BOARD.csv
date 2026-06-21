@@ -211,4 +211,16 @@ vp_vnext_quantum_metric_no_overclaim.py,(none - guard/aggregate cert),none,green
 vp_vnext_refined_xi_tower_compatibility.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_window_fractional_charge.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_window_offset_chirality.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_book_sync.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_deletion_minimality_required.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_external_data_in_operator.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_false_physical_promotion.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_fitted_cmb_window.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_grading_dim_shortcut.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_manual_basis.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_posthoc_group_restriction.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_present_core_rewrite.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_rank_to_neutrino_shortcut.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_no_trace_as_intertwiner.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_x5_two_completion_validity.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_zone_repeat_catalog.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard

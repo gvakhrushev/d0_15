@@ -1,0 +1,6 @@
+primitive,lane,model_witness,deletion_law,surviving_models,relation
+PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR,G,"diag(1,1,-1) sig (2,1)",response-equivariant,2 (nc 8 vs 12),independent
+PRIM-SCENE-HISTORY-REFINEMENT-RULE,H,all-walks tower 15708,refine-coarsen-inverse,2 (15708 vs 14990),independent
+PRIM-LEPTON-BRANCH-FIXING-OPERATOR,L,"B3=[0,1,2] on (0,1/4,1/3)",full-group-equivariant,2 (B3 vs B3alt),independent
+PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT,P1,S_DE 2-mode sector 359/160,galois-sign,2 (w_A vs w_B),independent (P2 depends)
+PRIM-PHASON-COORDINATE-FUNCTOR,P2,phi-tick cocycle phi-1,normalization-internal,2 (phi-tick vs integer),depends on P1

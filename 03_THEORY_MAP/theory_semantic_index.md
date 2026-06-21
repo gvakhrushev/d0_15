@@ -5,9 +5,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 23
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 24
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 153
+- `CERT-CLOSED`: 160
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 31
-- `certificate`: 178
+- `bridge`: 32
+- `certificate`: 185
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 46
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 50
 - `empirical_passport`: 32
 - `external_background`: 1
-- `formal_core`: 288
+- `formal_core`: 296
 - `frontier`: 46
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1326,6 +1326,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter6 owner-edge] Names the external owner of 'time = modular flow' (thermal time): Tomita-Takesaki modular theory (canonical sigma_t=Delta^it . Delta^-it from a cyclic-separating vector; KMS) + Connes uniqueness up to inner automorphism (Radon-Nikodym cocycle). Tomita 1967; Takesaki LNM 128 (1970). Deepens D0-TIME-2D-PISOT-001 / D0-TIME-MODULAR-FLOW-001: time is forced by the (algebra,state) pair, not an external catalogue parameter -- aligns with M1. Lean D0.Bridge.TomitaTakesakiBridge (tomita_modular_flow_conditional) proves the bridge CONDITIONAL on ASSUMP-TOMITA-TAKESAKI. HONEST: NAMES the owner; D0 proves only the Pisot/symbolic structure of the time layer, not the modular-flow identification. BRIDGE track (<=11), honesty not points.
 
+### D0-X5-ALPHA-BOUNDARY-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Extensions.X5.AlphaBoundary`
+- theorem: `alpha_outside_x5`
+- cert: `vp_x5_extension_status_discipline.py`
+- assumptions: `ASSUMP-LINDEMANN-LNPHI`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: extension_layer=D0-X5; alpha is OUTSIDE the 5 contracts (5-layer boundary). D0-X5 does NOT solve the residue: the a=3 candidate ordinary log-Cesaro 1/(3 log phi) != mu2 (conditional on ASSUMP-LINDEMANN-LNPHI, external, never CORE); no cross-contamination (alpha consumes no D0-X5 slot). Lean D0.Extensions.X5.AlphaBoundary; X5_ALPHA_BOUNDARY.md, X5_ALPHA_ASSUMPTION_MATRIX.csv.
+
 ### D0-CARRIER-003
 
 - type: `bridge`
@@ -2612,6 +2625,97 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter8 researcher doc 2 §01.25, verified CORRECT, entered as-is] The first terminal phase-return window q_T=|ABCD|*|V_11|=4*11=44 has admissible coprime branch count = Euler totient phi_E(44)=|(Z/44)*|=20=d_13 (terminal shell degree). cert vp_window44_totient_m1.py: phi_E(44)=44*(1-1/2)*(1-1/11)=20 exact, |(Z/44)*|=20 by direct count, neighbours phi_E(43)=42, phi_E(45)=24 differ. M1 formulation: |Aut(Z/44)|=phi_E(44)=20; any branch count k!=20 changes the automorphism class, needing an external catalogue to index it -> bot M1, so 20 is forced not chosen. Sharpens/confirms D0-WINDOW44-GROUP-SPECTRUM-001 and the §07.23 phase chain; no new free number.
+
+### D0-X5-EXTENSION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.Extensions.X5.Base`
+- theorem: `five_slots`
+- cert: `vp_x5_primitive_contract_complete.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: extension_layer=D0-X5; D0-X5 framework. The joint extension object D0X5Extension = present-core base + 5 optional primitive contracts + compatibility; PrimitiveContract pattern (id/laws/carrier/model/deletion). NOT present-core: D0-X5 attaches contracts, never rewrites a present-core claim. Lean D0.Extensions.X5.Base/PrimitiveContract.
+
+### D0-X5-FULL-MODEL-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.X5.Synthesis`
+- theorem: `x5_compatible_joint_model`
+- cert: `vp_x5_semantic_dependence.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: extension_layer=D0-X5; joint model D0X5FullModel: all 5 contracts present + compatible (terminal X-A), each well-formed with a complete non-vacuous model and deletion-minimal. Semantic dependence = one real construction edge P1->P2 (coordinate consumes the pressure-energy sector); G,H,L independent; no merge. Lean D0.Extensions.X5.Synthesis; X5_SEMANTIC_DEPENDENCE_MATRIX.csv, X5_FULL_MODEL_COMPATIBILITY.md, X5_PRIMITIVE_MINIMALITY.csv.
+
+### D0-X5-GRADING-CONTRACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Extensions.X5.Grading`
+- theorem: `grading_x5_terminal`
+- cert: `vp_x5_model_witness_required.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: extension_layer=D0-X5; HYP primitive contract PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR (POSTULATED, not derived from present-core). This row CERTIFIES the contract interface: a non-vacuous model (grading diag(1,1,-1), signature (2,1), involution decide-checked) + deletion-minimality (drop response-equivariance -> (2,1) and (3,0), nc 8 vs 12). Consequence N_active=nc(2,1)=8 is THE RELATIVE-TO-D0-X5-G, never present-core. Lean D0.Extensions.X5.Grading.
+
+### D0-X5-HISTORY-CONTRACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Extensions.X5.History`
+- theorem: `history_x5_terminal`
+- cert: `vp_x5_no_scene_copy_refinement.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: extension_layer=D0-X5; HYP primitive contract PRIM-SCENE-HISTORY-REFINEMENT-RULE (POSTULATED). Interface certified: model = all-walks refinement (depth-2 carrier 15708, independently generated, NOT L_n:=J L_scene C) + deletion-minimality (drop naturality -> all-walks 15708 vs non-backtracking 14990). No-phi^3 relative consequence. Lean D0.Extensions.X5.History.
+
+### D0-X5-LEPTON-CONTRACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Extensions.X5.Lepton`
+- theorem: `lepton_x5_terminal`
+- cert: `vp_x5_no_branch_to_generation_shortcut.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: extension_layer=D0-X5; HYP primitive contract PRIM-LEPTON-BRANCH-FIXING-OPERATOR (POSTULATED). Interface certified: model = B3 bijection on the full three-row triple (0,1/4,1/3) + deletion-minimality (drop full-group-equivariance -> B3 vs B3alt). Three-row complete (includes the 0/electron branch). Decimal/mass stays EFT/IR passport. Lean D0.Extensions.X5.Lepton.
+
+### D0-X5-PHASON-COORDINATE-CONTRACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Extensions.X5.Coordinate`
+- theorem: `coordinate_x5_terminal`
+- cert: `vp_x5_no_manual_redshift.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: extension_layer=D0-X5; HYP primitive contract PRIM-PHASON-COORDINATE-FUNCTOR (POSTULATED). Interface certified: model = phi-tick cocycle z(s)=phi^s-1 (z(1)=phi-1) + deletion-minimality (drop internal-normalization -> phi-tick vs integer-tick). P2-E: observed-redshift reading is external-passport-only; physical w_DE = maximality no-go. Lean D0.Extensions.X5.Coordinate.
+
+### D0-X5-PHASON-PE-CONTRACT-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Extensions.X5.Phason`
+- theorem: `phason_pe_x5_terminal`
+- cert: `vp_x5_operator_type_firewall.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: extension_layer=D0-X5; HYP primitive contract PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT (POSTULATED). Interface certified: model = S_DE 2-mode common sector (window product 359/160) + deletion-minimality (drop galois-sign -> w_A vs w_B). Operator-type firewall L_archive!=QUQ!=W_eff!=S_DE maintained. Internal only, no physical EOS. Lean D0.Extensions.X5.Phason.
 
 ### D0-ADLER-WEISS-WILLIAMS-PASSPORT-001
 

@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 6188,
-    "track_fair_max": 8584,
-    "pct_strength": 72.1,
-    "core_realized": 4876,
-    "core_potential": 7240,
-    "core_headroom": 2364,
-    "n_claims": 490,
-    "n_active": 488,
+    "realized": 6283,
+    "track_fair_max": 8735,
+    "pct_strength": 71.9,
+    "core_realized": 4960,
+    "core_potential": 7380,
+    "core_headroom": 2420,
+    "n_claims": 498,
+    "n_active": 496,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 287,
-      "realized": 4033,
-      "max": 5056,
-      "core_headroom": 1013
+      "n": 295,
+      "realized": 4128,
+      "max": 5207,
+      "core_headroom": 1069
     },
     "rg": {
       "n": 7,
@@ -118,9 +118,9 @@
       "core_headroom": 92
     },
     "BOOK_02": {
-      "n": 55,
-      "realized": 613,
-      "max": 873,
+      "n": 56,
+      "realized": 624,
+      "max": 884,
       "core_headroom": 260
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 88,
-      "realized": 1110,
-      "max": 1548,
-      "core_headroom": 428
+      "n": 90,
+      "realized": 1134,
+      "max": 1588,
+      "core_headroom": 444
     },
     "BOOK_04/08": {
       "n": 7,
@@ -172,10 +172,10 @@
       "core_headroom": 88
     },
     "BOOK_08": {
-      "n": 82,
-      "realized": 1072,
-      "max": 1504,
-      "core_headroom": 428
+      "n": 84,
+      "realized": 1096,
+      "max": 1544,
+      "core_headroom": 444
     },
     "BOOK_05/06": {
       "n": 6,
@@ -316,10 +316,10 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 39,
-      "realized": 473,
-      "max": 673,
-      "core_headroom": 200
+      "n": 40,
+      "realized": 485,
+      "max": 693,
+      "core_headroom": 208
     },
     "BOOK_01/06": {
       "n": 2,
@@ -382,16 +382,16 @@
       "core_headroom": 13
     },
     "BOOK_00": {
-      "n": 9,
-      "realized": 101,
-      "max": 162,
-      "core_headroom": 61
+      "n": 10,
+      "realized": 113,
+      "max": 182,
+      "core_headroom": 69
     },
     "BOOK_05": {
-      "n": 26,
-      "realized": 339,
-      "max": 484,
-      "core_headroom": 145
+      "n": 27,
+      "realized": 351,
+      "max": 504,
+      "core_headroom": 153
     },
     "BOOK_00/05": {
       "n": 1,
@@ -1255,6 +1255,76 @@
     },
     {
       "claim_id": "D0-FIVE-PRIMITIVE-DEPENDENCE-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-X5-EXTENSION-001",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-X5-GRADING-CONTRACT-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-X5-HISTORY-CONTRACT-001",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-X5-LEPTON-CONTRACT-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-X5-PHASON-PE-CONTRACT-001",
+      "domain": "formal_core",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "domain": "formal_core",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-X5-FULL-MODEL-001",
       "domain": "formal_core",
       "book": "BOOK_05",
       "level_name": "LEAN_PROVED",
@@ -3780,6 +3850,55 @@
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
+    },
+    {
+      "claim_id": "D0-X5-EXTENSION-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-X5-GRADING-CONTRACT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-X5-HISTORY-CONTRACT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-X5-LEPTON-CONTRACT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-X5-PHASON-PE-CONTRACT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-X5-FULL-MODEL-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
     }
   ],
   "integrity": [],
@@ -5629,7 +5748,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02/04/08",
-      "leverage": 5,
+      "leverage": 6,
       "integrity_flag": null
     },
     {
@@ -10221,7 +10340,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 5,
+      "leverage": 6,
       "integrity_flag": null
     },
     {
@@ -10333,7 +10452,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 5,
+      "leverage": 6,
       "integrity_flag": null
     },
     {
@@ -10361,7 +10480,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_05",
-      "leverage": 5,
+      "leverage": 6,
       "integrity_flag": null
     },
     {
@@ -10431,7 +10550,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "empirical_passport",
       "book": "BOOK_02",
-      "leverage": 5,
+      "leverage": 6,
       "integrity_flag": null
     },
     {
@@ -10543,7 +10662,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 5,
+      "leverage": 6,
       "integrity_flag": null
     },
     {
@@ -10642,6 +10761,118 @@
       "domain": "formal_core",
       "book": "BOOK_05",
       "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-EXTENSION-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-GRADING-CONTRACT-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-HISTORY-CONTRACT-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-LEPTON-CONTRACT-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-PHASON-PE-CONTRACT-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-FULL-MODEL-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-X5-ALPHA-BOUNDARY-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 6,
       "integrity_flag": null
     }
   ],

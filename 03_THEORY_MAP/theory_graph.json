@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 490,
+    "claims": 498,
     "release_status": {
       "CORE-FORMALIZED": 164,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 23,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 24,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 153,
+      "CERT-CLOSED": 160,
       "NO-GO": 59,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -20,22 +20,22 @@
       "PASSPORT-CLOSED": 19
     },
     "lean_status": {
-      "LEAN_PROVED": 317,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 26,
+      "LEAN_PROVED": 324,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 27,
       "PYTHON_CERTIFIED": 101,
       "DEPRECATED": 2,
       "OPEN": 44
     },
     "claim_type": {
       "core": 165,
-      "bridge": 31,
+      "bridge": 32,
       "no-go": 67,
-      "certificate": 178,
+      "certificate": 185,
       "deprecated": 3,
       "frontier": 46
     },
     "domain": {
-      "formal_core": 288,
+      "formal_core": 296,
       "rg": 7,
       "gauge_bridge": 21,
       "smooth_geometry": 36,
@@ -16550,6 +16550,312 @@
       "label": "vp_five_primitive_semantic_dependence.py",
       "path": "05_CERTS/vp_five_primitive_semantic_dependence.py",
       "exists": true
+    },
+    {
+      "id": "D0-X5-EXTENSION-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-EXTENSION-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.x5",
+      "lean_module": "D0.Extensions.X5.Base",
+      "lean_theorem": "five_slots",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_x5_primitive_contract_complete.py",
+      "python_cert": [
+        "vp_x5_primitive_contract_complete.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "extension_layer=D0-X5; D0-X5 framework. The joint extension object D0X5Extension = present-core base + 5 optional primitive contracts + compatibility; PrimitiveContract pattern (id/laws/carrier/model/deletion). NOT present-core: D0-X5 attaches contracts, never rewrites a present-core claim. Lean D0.Extensions.X5.Base/PrimitiveContract.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Base.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.Base",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.Base",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Base.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_primitive_contract_complete.py",
+      "kind": "python_cert",
+      "label": "vp_x5_primitive_contract_complete.py",
+      "path": "05_CERTS/vp_x5_primitive_contract_complete.py",
+      "exists": true
+    },
+    {
+      "id": "D0-X5-GRADING-CONTRACT-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-GRADING-CONTRACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.x5G",
+      "lean_module": "D0.Extensions.X5.Grading",
+      "lean_theorem": "grading_x5_terminal",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_x5_model_witness_required.py",
+      "python_cert": [
+        "vp_x5_model_witness_required.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "extension_layer=D0-X5; HYP primitive contract PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR (POSTULATED, not derived from present-core). This row CERTIFIES the contract interface: a non-vacuous model (grading diag(1,1,-1), signature (2,1), involution decide-checked) + deletion-minimality (drop response-equivariance -> (2,1) and (3,0), nc 8 vs 12). Consequence N_active=nc(2,1)=8 is THE RELATIVE-TO-D0-X5-G, never present-core. Lean D0.Extensions.X5.Grading.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Grading.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.Grading",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.Grading",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Grading.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_model_witness_required.py",
+      "kind": "python_cert",
+      "label": "vp_x5_model_witness_required.py",
+      "path": "05_CERTS/vp_x5_model_witness_required.py",
+      "exists": true
+    },
+    {
+      "id": "D0-X5-HISTORY-CONTRACT-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-HISTORY-CONTRACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.x5H",
+      "lean_module": "D0.Extensions.X5.History",
+      "lean_theorem": "history_x5_terminal",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_x5_no_scene_copy_refinement.py",
+      "python_cert": [
+        "vp_x5_no_scene_copy_refinement.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "extension_layer=D0-X5; HYP primitive contract PRIM-SCENE-HISTORY-REFINEMENT-RULE (POSTULATED). Interface certified: model = all-walks refinement (depth-2 carrier 15708, independently generated, NOT L_n:=J L_scene C) + deletion-minimality (drop naturality -> all-walks 15708 vs non-backtracking 14990). No-phi^3 relative consequence. Lean D0.Extensions.X5.History.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/History.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.History",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.History",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/History.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_no_scene_copy_refinement.py",
+      "kind": "python_cert",
+      "label": "vp_x5_no_scene_copy_refinement.py",
+      "path": "05_CERTS/vp_x5_no_scene_copy_refinement.py",
+      "exists": true
+    },
+    {
+      "id": "D0-X5-LEPTON-CONTRACT-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-LEPTON-CONTRACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.x5L",
+      "lean_module": "D0.Extensions.X5.Lepton",
+      "lean_theorem": "lepton_x5_terminal",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_x5_no_branch_to_generation_shortcut.py",
+      "python_cert": [
+        "vp_x5_no_branch_to_generation_shortcut.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "extension_layer=D0-X5; HYP primitive contract PRIM-LEPTON-BRANCH-FIXING-OPERATOR (POSTULATED). Interface certified: model = B3 bijection on the full three-row triple (0,1/4,1/3) + deletion-minimality (drop full-group-equivariance -> B3 vs B3alt). Three-row complete (includes the 0/electron branch). Decimal/mass stays EFT/IR passport. Lean D0.Extensions.X5.Lepton.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Lepton.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.Lepton",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.Lepton",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Lepton.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_no_branch_to_generation_shortcut.py",
+      "kind": "python_cert",
+      "label": "vp_x5_no_branch_to_generation_shortcut.py",
+      "path": "05_CERTS/vp_x5_no_branch_to_generation_shortcut.py",
+      "exists": true
+    },
+    {
+      "id": "D0-X5-PHASON-PE-CONTRACT-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-PHASON-PE-CONTRACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.x5P1",
+      "lean_module": "D0.Extensions.X5.Phason",
+      "lean_theorem": "phason_pe_x5_terminal",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_x5_operator_type_firewall.py",
+      "python_cert": [
+        "vp_x5_operator_type_firewall.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "extension_layer=D0-X5; HYP primitive contract PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT (POSTULATED). Interface certified: model = S_DE 2-mode common sector (window product 359/160) + deletion-minimality (drop galois-sign -> w_A vs w_B). Operator-type firewall L_archive!=QUQ!=W_eff!=S_DE maintained. Internal only, no physical EOS. Lean D0.Extensions.X5.Phason.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Phason.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.Phason",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.Phason",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Phason.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_operator_type_firewall.py",
+      "kind": "python_cert",
+      "label": "vp_x5_operator_type_firewall.py",
+      "path": "05_CERTS/vp_x5_operator_type_firewall.py",
+      "exists": true
+    },
+    {
+      "id": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.x5P2",
+      "lean_module": "D0.Extensions.X5.Coordinate",
+      "lean_theorem": "coordinate_x5_terminal",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_x5_no_manual_redshift.py",
+      "python_cert": [
+        "vp_x5_no_manual_redshift.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "extension_layer=D0-X5; HYP primitive contract PRIM-PHASON-COORDINATE-FUNCTOR (POSTULATED). Interface certified: model = phi-tick cocycle z(s)=phi^s-1 (z(1)=phi-1) + deletion-minimality (drop internal-normalization -> phi-tick vs integer-tick). P2-E: observed-redshift reading is external-passport-only; physical w_DE = maximality no-go. Lean D0.Extensions.X5.Coordinate.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Coordinate.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.Coordinate",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.Coordinate",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Coordinate.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_no_manual_redshift.py",
+      "kind": "python_cert",
+      "label": "vp_x5_no_manual_redshift.py",
+      "path": "05_CERTS/vp_x5_no_manual_redshift.py",
+      "exists": true
+    },
+    {
+      "id": "D0-X5-FULL-MODEL-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-FULL-MODEL-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.x5",
+      "lean_module": "D0.Extensions.X5.Synthesis",
+      "lean_theorem": "x5_compatible_joint_model",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_x5_semantic_dependence.py",
+      "python_cert": [
+        "vp_x5_semantic_dependence.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "extension_layer=D0-X5; joint model D0X5FullModel: all 5 contracts present + compatible (terminal X-A), each well-formed with a complete non-vacuous model and deletion-minimal. Semantic dependence = one real construction edge P1->P2 (coordinate consumes the pressure-energy sector); G,H,L independent; no merge. Lean D0.Extensions.X5.Synthesis; X5_SEMANTIC_DEPENDENCE_MATRIX.csv, X5_FULL_MODEL_COMPATIBILITY.md, X5_PRIMITIVE_MINIMALITY.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Synthesis.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.Synthesis",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.Synthesis",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/Synthesis.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_semantic_dependence.py",
+      "kind": "python_cert",
+      "label": "vp_x5_semantic_dependence.py",
+      "path": "05_CERTS/vp_x5_semantic_dependence.py",
+      "exists": true
+    },
+    {
+      "id": "D0-X5-ALPHA-BOUNDARY-001",
+      "kind": "claim",
+      "claim_id": "D0-X5-ALPHA-BOUNDARY-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_02",
+      "section": "02.x5",
+      "lean_module": "D0.Extensions.X5.AlphaBoundary",
+      "lean_theorem": "alpha_outside_x5",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-LINDEMANN-LNPHI"
+      ],
+      "cert": "vp_x5_extension_status_discipline.py",
+      "python_cert": [
+        "vp_x5_extension_status_discipline.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "extension_layer=D0-X5; alpha is OUTSIDE the 5 contracts (5-layer boundary). D0-X5 does NOT solve the residue: the a=3 candidate ordinary log-Cesaro 1/(3 log phi) != mu2 (conditional on ASSUMP-LINDEMANN-LNPHI, external, never CORE); no cross-contamination (alpha consumes no D0-X5 slot). Lean D0.Extensions.X5.AlphaBoundary; X5_ALPHA_BOUNDARY.md, X5_ALPHA_ASSUMPTION_MATRIX.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/AlphaBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.X5.AlphaBoundary",
+      "kind": "lean_module",
+      "label": "D0.Extensions.X5.AlphaBoundary",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/X5/AlphaBoundary.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_x5_extension_status_discipline.py",
+      "kind": "python_cert",
+      "label": "vp_x5_extension_status_discipline.py",
+      "path": "05_CERTS/vp_x5_extension_status_discipline.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -23607,6 +23913,131 @@
       "source": "D0-FIVE-PRIMITIVE-DEPENDENCE-001",
       "target": "cert:vp_five_primitive_semantic_dependence.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-EXTENSION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-EXTENSION-001",
+      "target": "module:D0.Extensions.X5.Base",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-EXTENSION-001",
+      "target": "cert:vp_x5_primitive_contract_complete.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-GRADING-CONTRACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-GRADING-CONTRACT-001",
+      "target": "module:D0.Extensions.X5.Grading",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-GRADING-CONTRACT-001",
+      "target": "cert:vp_x5_model_witness_required.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-HISTORY-CONTRACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-HISTORY-CONTRACT-001",
+      "target": "module:D0.Extensions.X5.History",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-HISTORY-CONTRACT-001",
+      "target": "cert:vp_x5_no_scene_copy_refinement.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-LEPTON-CONTRACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-LEPTON-CONTRACT-001",
+      "target": "module:D0.Extensions.X5.Lepton",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-LEPTON-CONTRACT-001",
+      "target": "cert:vp_x5_no_branch_to_generation_shortcut.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-PHASON-PE-CONTRACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-PHASON-PE-CONTRACT-001",
+      "target": "module:D0.Extensions.X5.Phason",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-PHASON-PE-CONTRACT-001",
+      "target": "cert:vp_x5_operator_type_firewall.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "target": "module:D0.Extensions.X5.Coordinate",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "target": "cert:vp_x5_no_manual_redshift.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-FULL-MODEL-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-FULL-MODEL-001",
+      "target": "module:D0.Extensions.X5.Synthesis",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-FULL-MODEL-001",
+      "target": "cert:vp_x5_semantic_dependence.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-ALPHA-BOUNDARY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-X5-ALPHA-BOUNDARY-001",
+      "target": "module:D0.Extensions.X5.AlphaBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-X5-ALPHA-BOUNDARY-001",
+      "target": "cert:vp_x5_extension_status_discipline.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-X5-ALPHA-BOUNDARY-001",
+      "target": "assumption:ASSUMP-LINDEMANN-LNPHI",
+      "kind": "uses_assumption"
     }
   ]
 }
