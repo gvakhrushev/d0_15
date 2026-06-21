@@ -1,0 +1,6 @@
+object_id,lean_constant,math_type,finite_stage,canonical,existing_owner,downstream_use
+lab,D0.SelfReading.RawSceneGraph.lab,Fin 33 -> Fin 3 part labeling,base,yes,D0-RAW-SCENE-GRAPH-001,object construction
+Aadj,D0.SelfReading.RawSceneGraph.Aadj,Fin 33 x Fin 33 -> N adjacency,base,yes,D0-RAW-SCENE-GRAPH-001,degree/edges/trace
+degree,D0.SelfReading.RawSceneGraph.degree,Fin 33 -> N,base,yes,D0-RAW-SCENE-GRAPH-001,"forced output {24,22,20}"
+pairClass,D0.SelfReading.RawSceneGraph.pairClass,Aut pair-orbit invariant,base,yes,D0-RAW-SCENE-GRAPH-001,commutant dim 12
+baseScene,D0.SelfReading.RawHistoryCategory.baseScene,Hist_D0 object,base,yes,D0-RAW-HISTORY-CATEGORY-001,Aut groupoid (H2)

@@ -714,7 +714,23 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-SELF-READING-PRIMITIVE-MINIMALITY-001", moduleName := "D0.Extensions.PrimitiveMinimalityAfterSelfReading",
       theoremName := "primitive_minimality_conjunction_of_independent", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001", moduleName := "D0.Spectral.AlphaAnalyticFormalismBoundary",
-      theoremName := "alpha_candidate_class_scoped", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "alpha_candidate_class_scoped", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-RAW-SCENE-GRAPH-001", moduleName := "D0.SelfReading.RawSceneGraph",
+      theoremName := "raw_scene_invariants", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RAW-HISTORY-CATEGORY-001", moduleName := "D0.SelfReading.RawHistoryCategory",
+      theoremName := "raw_history_terminal_H2", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RAW-READOUT-CATEGORY-001", moduleName := "D0.SelfReading.RawReadoutRepresentationCategory",
+      theoremName := "raw_readout_terminal_R2", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001", moduleName := "D0.SelfReading.RawCanonicalSelfReadingFunctor",
+      theoremName := "raw_self_reading_terminal_S3", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SELF-READING-NO-STIPULATION-001", moduleName := "D0.SelfReading.SelfReadingNoStipulation",
+      theoremName := "no_stipulation_forced_outputs", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RAW-SELF-READING-EXTRACTIONS-001", moduleName := "D0.SelfReading.RawSelfReadingExtractions",
+      theoremName := "extraction_grading_G2", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-RAW-PRIMITIVE-MINIMALITY-001", moduleName := "D0.SelfReading.PrimitiveMinimalityFromRawFunctor",
+      theoremName := "raw_primitive_conjunction_of_independent", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001", moduleName := "D0.Spectral.RawSelfReadingAnalyticResidueBoundary",
+      theoremName := "raw_alpha_terminal_A3", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

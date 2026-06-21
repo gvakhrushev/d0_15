@@ -399,6 +399,13 @@ import D0.RG.OneLoopStructure
 import D0.RG.PhiDifference
 import D0.Representation.FinitePathRepresentation
 import D0.Response
+import D0.SelfReading.PrimitiveMinimalityFromRawFunctor
+import D0.SelfReading.RawCanonicalSelfReadingFunctor
+import D0.SelfReading.RawHistoryCategory
+import D0.SelfReading.RawReadoutRepresentationCategory
+import D0.SelfReading.RawSceneGraph
+import D0.SelfReading.RawSelfReadingExtractions
+import D0.SelfReading.SelfReadingNoStipulation
 import D0.Spectral.AlphaAnalyticFormalismBoundary
 import D0.Spectral.AlphaFeshbachDixmierOwner
 import D0.Spectral.AlphaLogCesaroMeasurability
@@ -412,6 +419,7 @@ import D0.Spectral.DeltaAlphaMoment
 import D0.Spectral.DeltaAlphaNormalizationNoGo
 import D0.Spectral.DeltaAlphaResidueBlocked
 import D0.Spectral.DixmierFeshbachFiniteHeatTrace
+import D0.Spectral.RawSelfReadingAnalyticResidueBoundary
 import D0.Spectral.SceneNativeMultiscaleTower
 import D0.Spectral.SeamHolonomy
 import D0.Spectral.ZetaResidueAlpha

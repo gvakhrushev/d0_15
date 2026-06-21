@@ -1,0 +1,10 @@
+guard,rejects
+vp_raw_self_reading_no_stipulated_output,literal expected spectrum / stipulated isotypic list as derived
+vp_raw_neutral_current_no_rank_shortcut,rank 3 -> three active neutrinos
+vp_raw_archive_operator_type_firewall,L_archive treated as QUQ; trace/det as canonical map
+vp_raw_refinement_no_scene_copy_operator,base adjacency bound -> all-refinement no-go; L_n := J L_scene C
+vp_raw_cmb_no_fitted_window,chosen CMB k/u/window
+vp_raw_lepton_no_posthoc_group_narrowing,branch selector unique via Cent(U_eff) after selection
+vp_raw_phason_no_manual_redshift,chosen phason redshift calibration / CPL / DESI
+vp_raw_alpha_no_bridge_as_core,Lindemann/transcendence as CORE; generalized trace chosen to return mu2
+vp_raw_publication_firewall,Planck/DESI/PDG/LEP/LIGO/CODATA in operator construction; physical-table promotion

@@ -103,6 +103,14 @@ vp_pressure_capacity_balance.py,(none - guard/aggregate cert),none,green-unregis
 vp_primitive_equation_minimal_response_v1121.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_publication_claim_register_guardrail.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_quasi_generation_inflation.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_archive_operator_type_firewall.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_cmb_no_fitted_window.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_lepton_no_posthoc_group_narrowing.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_neutral_current_no_rank_shortcut.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_nogo_strength_audit.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_phason_no_manual_redshift.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_publication_firewall.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_raw_refinement_no_scene_copy_operator.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_readout306_proof_cell_v1113.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_research_closure_source_ledger.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_rg_forgetting.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard

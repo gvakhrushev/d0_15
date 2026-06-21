@@ -1,0 +1,5 @@
+operator,definition,may_NOT_be_substituted_for
+L_archive,"graph/Laplacian restriction to archive support (degrees {24,22,20})","QUQ, S_DE"
+QUQ,archive block of the actual finite tick U,"L_archive, S_DE"
+Feshbach,effective retained/archive transfer block,"QUQ spectrum, L_archive"
+S_DE,two-mode feedback-pressure transfer (window 359/160),"L_archive, QUQ"

@@ -4,14 +4,14 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 475,
+    "claims": 483,
     "release_status": {
       "CORE-FORMALIZED": 164,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 22,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 23,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 145,
-      "NO-GO": 55,
+      "CERT-CLOSED": 151,
+      "NO-GO": 56,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
@@ -20,22 +20,22 @@
       "PASSPORT-CLOSED": 19
     },
     "lean_status": {
-      "LEAN_PROVED": 303,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 25,
+      "LEAN_PROVED": 310,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 26,
       "PYTHON_CERTIFIED": 101,
       "DEPRECATED": 2,
       "OPEN": 44
     },
     "claim_type": {
       "core": 165,
-      "bridge": 30,
-      "no-go": 63,
-      "certificate": 170,
+      "bridge": 31,
+      "no-go": 64,
+      "certificate": 176,
       "deprecated": 3,
       "frontier": 44
     },
     "domain": {
-      "formal_core": 275,
+      "formal_core": 283,
       "rg": 7,
       "gauge_bridge": 21,
       "smooth_geometry": 36,
@@ -15978,6 +15978,312 @@
       "label": "vp_alpha_analytic_formalism_boundary.py",
       "path": "05_CERTS/vp_alpha_analytic_formalism_boundary.py",
       "exists": true
+    },
+    {
+      "id": "D0-RAW-SCENE-GRAPH-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-SCENE-GRAPH-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.raw",
+      "lean_module": "D0.SelfReading.RawSceneGraph",
+      "lean_theorem": "raw_scene_invariants",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_raw_self_reading_no_stipulated_output.py",
+      "python_cert": [
+        "vp_raw_self_reading_no_stipulated_output.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Raw Track 0] The forced skeleton outputs are RAW graph invariants of K(9,11,13), DERIVED by native_decide from the partition (9,11,13) alone -- NOT literals: degrees {24,22,20}, 2|E|=718, trace(A^2)=718, and commutant dim 12 = card(image pairClass) (the Aut pair-orbit count: 3 diag + 3 same-part + 6 cross-part). DE-STIPULATES the prior hand-written isotypic list. Lean D0.SelfReading.RawSceneGraph.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawSceneGraph.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.SelfReading.RawSceneGraph",
+      "kind": "lean_module",
+      "label": "D0.SelfReading.RawSceneGraph",
+      "path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawSceneGraph.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_self_reading_no_stipulated_output.py",
+      "kind": "python_cert",
+      "label": "vp_raw_self_reading_no_stipulated_output.py",
+      "path": "05_CERTS/vp_raw_self_reading_no_stipulated_output.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RAW-HISTORY-CATEGORY-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-HISTORY-CATEGORY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_06",
+      "section": "06.raw",
+      "lean_module": "D0.SelfReading.RawHistoryCategory",
+      "lean_theorem": "raw_history_terminal_H2",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_raw_hist_input_provenance.py",
+      "python_cert": [
+        "vp_raw_hist_input_provenance.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Raw Track I-A] Terminal H2: a certified strict subcategory (the raw Aut-groupoid on the base scene, commutant 12, Aut=S9xS11xS13 from distinct part sizes) exists; the general cross-stage refinement morphism is absent (PRIM-SCENE-HISTORY-REFINEMENT-RULE). Lean D0.SelfReading.RawHistoryCategory.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawHistoryCategory.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.SelfReading.RawHistoryCategory",
+      "kind": "lean_module",
+      "label": "D0.SelfReading.RawHistoryCategory",
+      "path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawHistoryCategory.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_hist_input_provenance.py",
+      "kind": "python_cert",
+      "label": "vp_raw_hist_input_provenance.py",
+      "path": "05_CERTS/vp_raw_hist_input_provenance.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RAW-READOUT-CATEGORY-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-READOUT-CATEGORY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.raw",
+      "lean_module": "D0.SelfReading.RawReadoutRepresentationCategory",
+      "lean_theorem": "raw_readout_terminal_R2",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_raw_readout_input_provenance.py",
+      "python_cert": [
+        "vp_raw_readout_input_provenance.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Raw Track I-B] Terminal R2: the raw response category exists on the C^33 carrier (admissible, id+composition); optional Gamma/J/C remain DERIVED-absent. Lean D0.SelfReading.RawReadoutRepresentationCategory.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawReadoutRepresentationCategory.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.SelfReading.RawReadoutRepresentationCategory",
+      "kind": "lean_module",
+      "label": "D0.SelfReading.RawReadoutRepresentationCategory",
+      "path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawReadoutRepresentationCategory.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_readout_input_provenance.py",
+      "kind": "python_cert",
+      "label": "vp_raw_readout_input_provenance.py",
+      "path": "05_CERTS/vp_raw_readout_input_provenance.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.raw",
+      "lean_module": "D0.SelfReading.RawCanonicalSelfReadingFunctor",
+      "lean_theorem": "raw_self_reading_terminal_S3",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_raw_self_reading_functor_naturality.py",
+      "python_cert": [
+        "vp_raw_self_reading_functor_naturality.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Raw Track I-C] Terminal S3 (partial functor, de-stipulated): the forced skeleton S0 is RAW-derived (commutant 12 = pair-orbit count, 2|E|=718 by native_decide) and unique on the strict subcategory; it does NOT extend to a total functor (disputed nc 8!=12; exactly 2 extension proof-edges). Confirms the prior Outcome D from the raw side, removing the stipulation caveat for the forced part. Lean D0.SelfReading.RawCanonicalSelfReadingFunctor.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawCanonicalSelfReadingFunctor.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.SelfReading.RawCanonicalSelfReadingFunctor",
+      "kind": "lean_module",
+      "label": "D0.SelfReading.RawCanonicalSelfReadingFunctor",
+      "path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawCanonicalSelfReadingFunctor.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_self_reading_functor_naturality.py",
+      "kind": "python_cert",
+      "label": "vp_raw_self_reading_functor_naturality.py",
+      "path": "05_CERTS/vp_raw_self_reading_functor_naturality.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SELF-READING-NO-STIPULATION-001",
+      "kind": "claim",
+      "claim_id": "D0-SELF-READING-NO-STIPULATION-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.raw",
+      "lean_module": "D0.SelfReading.SelfReadingNoStipulation",
+      "lean_theorem": "no_stipulation_forced_outputs",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_raw_self_reading_actual_aut_group.py",
+      "python_cert": [
+        "vp_raw_self_reading_actual_aut_group.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Raw provenance firewall] commutantDim = card(image pairClass) BY DEFINITION (rfl), proven = 12 by native_decide -- the commutant is a raw pair-orbit computation, not a literal. 2|E| and trace(A^2) are raw sums. Provenance: raw-object -> raw-map -> derived-construction -> output-theorem. Lean D0.SelfReading.SelfReadingNoStipulation; SELF_READING_OUTPUT_PROVENANCE.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/SelfReading/SelfReadingNoStipulation.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.SelfReading.SelfReadingNoStipulation",
+      "kind": "lean_module",
+      "label": "D0.SelfReading.SelfReadingNoStipulation",
+      "path": "09_LEAN_FORMALIZATION/D0/SelfReading/SelfReadingNoStipulation.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_self_reading_actual_aut_group.py",
+      "kind": "python_cert",
+      "label": "vp_raw_self_reading_actual_aut_group.py",
+      "path": "05_CERTS/vp_raw_self_reading_actual_aut_group.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "04.raw",
+      "lean_module": "D0.SelfReading.RawSelfReadingExtractions",
+      "lean_theorem": "extraction_grading_G2",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_raw_grading_no_manual_signature.py",
+      "python_cert": [
+        "vp_raw_grading_no_manual_signature.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Raw Track II] Four extraction terminals against the raw S3 functor: II-A grading G2 (forced commutant 12; disputed nc 8!=12), II-B refinement C4 (forced no-phi^3; disputed 15708!=14990, no forced window), II-C lepton L3 (forced 1/4!=1/3; disputed 2 orbits<3, swap-invariant), II-D archive P3 (forced window 359/160, no common sector; disputed phi-1!=1). Each: forced part raw, disputed part two-completion. Lean D0.SelfReading.RawSelfReadingExtractions.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawSelfReadingExtractions.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.SelfReading.RawSelfReadingExtractions",
+      "kind": "lean_module",
+      "label": "D0.SelfReading.RawSelfReadingExtractions",
+      "path": "09_LEAN_FORMALIZATION/D0/SelfReading/RawSelfReadingExtractions.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_grading_no_manual_signature.py",
+      "kind": "python_cert",
+      "label": "vp_raw_grading_no_manual_signature.py",
+      "path": "05_CERTS/vp_raw_grading_no_manual_signature.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.raw",
+      "lean_module": "D0.SelfReading.PrimitiveMinimalityFromRawFunctor",
+      "lean_theorem": "raw_primitive_conjunction_of_independent",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_raw_primitive_semantic_dependence.py",
+      "python_cert": [
+        "vp_raw_primitive_semantic_dependence.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Raw Track III] conjunction-of-independent: 0 proof-edges among the 4 combinatorial frontiers E1-E4 (only E2->E5, E3->E5); PRIM-CANONICAL-SELF-READING-FUNCTOR = raw S0 + 4 independent primitives, NOT a merge. Lean D0.SelfReading.PrimitiveMinimalityFromRawFunctor; RAW_SELF_READING_PRIMITIVE_DEPENDENCE_MATRIX.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/SelfReading/PrimitiveMinimalityFromRawFunctor.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.SelfReading.PrimitiveMinimalityFromRawFunctor",
+      "kind": "lean_module",
+      "label": "D0.SelfReading.PrimitiveMinimalityFromRawFunctor",
+      "path": "09_LEAN_FORMALIZATION/D0/SelfReading/PrimitiveMinimalityFromRawFunctor.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_primitive_semantic_dependence.py",
+      "kind": "python_cert",
+      "label": "vp_raw_primitive_semantic_dependence.py",
+      "path": "05_CERTS/vp_raw_primitive_semantic_dependence.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_02",
+      "section": "02.raw",
+      "lean_module": "D0.Spectral.RawSelfReadingAnalyticResidueBoundary",
+      "lean_theorem": "raw_alpha_terminal_A3",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-LINDEMANN-LNPHI"
+      ],
+      "cert": "vp_raw_alpha_no_bridge_as_core.py",
+      "python_cert": [
+        "vp_raw_alpha_no_bridge_as_core.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Raw Track IV] Terminal A3: only an external Dixmier/Wodzicki passport is presently admissible. The a=3 candidate ordinary log-Cesaro 1/(3 log phi) != rational mu2 (class-scoped, conditional on ASSUMP-LINDEMANN-LNPHI, EXTERNAL, never CORE). NOT A4: no whole-class exhaustion; 'no future profinite realization' is NOT claimed. 4 separated layers (ALPHA_ANALYTIC_FORMALISM_BOUNDARY.md). Lean D0.Spectral.RawSelfReadingAnalyticResidueBoundary.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/RawSelfReadingAnalyticResidueBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.RawSelfReadingAnalyticResidueBoundary",
+      "kind": "lean_module",
+      "label": "D0.Spectral.RawSelfReadingAnalyticResidueBoundary",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/RawSelfReadingAnalyticResidueBoundary.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_raw_alpha_no_bridge_as_core.py",
+      "kind": "python_cert",
+      "label": "vp_raw_alpha_no_bridge_as_core.py",
+      "path": "05_CERTS/vp_raw_alpha_no_bridge_as_core.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -22803,6 +23109,131 @@
     },
     {
       "source": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
+      "target": "assumption:ASSUMP-LINDEMANN-LNPHI",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-RAW-SCENE-GRAPH-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-SCENE-GRAPH-001",
+      "target": "module:D0.SelfReading.RawSceneGraph",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-SCENE-GRAPH-001",
+      "target": "cert:vp_raw_self_reading_no_stipulated_output.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-HISTORY-CATEGORY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-HISTORY-CATEGORY-001",
+      "target": "module:D0.SelfReading.RawHistoryCategory",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-HISTORY-CATEGORY-001",
+      "target": "cert:vp_raw_hist_input_provenance.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-READOUT-CATEGORY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-READOUT-CATEGORY-001",
+      "target": "module:D0.SelfReading.RawReadoutRepresentationCategory",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-READOUT-CATEGORY-001",
+      "target": "cert:vp_raw_readout_input_provenance.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "target": "module:D0.SelfReading.RawCanonicalSelfReadingFunctor",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "target": "cert:vp_raw_self_reading_functor_naturality.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SELF-READING-NO-STIPULATION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SELF-READING-NO-STIPULATION-001",
+      "target": "module:D0.SelfReading.SelfReadingNoStipulation",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SELF-READING-NO-STIPULATION-001",
+      "target": "cert:vp_raw_self_reading_actual_aut_group.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+      "target": "module:D0.SelfReading.RawSelfReadingExtractions",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+      "target": "cert:vp_raw_grading_no_manual_signature.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "target": "module:D0.SelfReading.PrimitiveMinimalityFromRawFunctor",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "target": "cert:vp_raw_primitive_semantic_dependence.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001",
+      "target": "module:D0.Spectral.RawSelfReadingAnalyticResidueBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001",
+      "target": "cert:vp_raw_alpha_no_bridge_as_core.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001",
       "target": "assumption:ASSUMP-LINDEMANN-LNPHI",
       "kind": "uses_assumption"
     }

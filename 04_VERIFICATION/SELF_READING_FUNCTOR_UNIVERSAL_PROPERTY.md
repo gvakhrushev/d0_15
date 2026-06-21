@@ -1,0 +1,3 @@
+# Self-Reading Functor — Universal Property (raw)
+
+**Terminal S3** (`D0.SelfReading.RawCanonicalSelfReadingFunctor.raw_self_reading_terminal_S3`): a unique strict-subcategory functor `S0` exists, RAW-derived (commutant 12 = pair-orbit count, 2|E|=718, trace A^2=718 all native_decide from `RawSceneGraph`); it does not extend to a unique total functor (each disputed output a two-completion; exactly 2 extension proof-edges). No initial/terminal object in `SelfRead_D0` collapses the four disputed coordinates. This confirms the prior Outcome D *from the raw side*, de-stipulating the forced part. The total functor needs the four absent primitives.

@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 6009,
-    "track_fair_max": 8325,
-    "pct_strength": 72.2,
-    "core_realized": 4756,
-    "core_potential": 7040,
-    "core_headroom": 2284,
-    "n_claims": 475,
-    "n_active": 473,
+    "realized": 6104,
+    "track_fair_max": 8468,
+    "pct_strength": 72.1,
+    "core_realized": 4828,
+    "core_potential": 7160,
+    "core_headroom": 2332,
+    "n_claims": 483,
+    "n_active": 481,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 274,
-      "realized": 3878,
-      "max": 4837,
-      "core_headroom": 949
+      "n": 282,
+      "realized": 3973,
+      "max": 4980,
+      "core_headroom": 997
     },
     "rg": {
       "n": 7,
@@ -118,9 +118,9 @@
       "core_headroom": 92
     },
     "BOOK_02": {
-      "n": 54,
-      "realized": 602,
-      "max": 862,
+      "n": 55,
+      "realized": 613,
+      "max": 873,
       "core_headroom": 260
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 83,
-      "realized": 1050,
-      "max": 1464,
-      "core_headroom": 404
+      "n": 85,
+      "realized": 1074,
+      "max": 1496,
+      "core_headroom": 412
     },
     "BOOK_04/08": {
       "n": 7,
@@ -316,10 +316,10 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 37,
-      "realized": 449,
-      "max": 641,
-      "core_headroom": 192
+      "n": 38,
+      "realized": 461,
+      "max": 661,
+      "core_headroom": 200
     },
     "BOOK_01/06": {
       "n": 2,
@@ -382,16 +382,16 @@
       "core_headroom": 13
     },
     "BOOK_00": {
-      "n": 6,
-      "realized": 65,
-      "max": 102,
-      "core_headroom": 37
+      "n": 9,
+      "realized": 101,
+      "max": 162,
+      "core_headroom": 61
     },
     "BOOK_05": {
-      "n": 24,
-      "realized": 315,
-      "max": 444,
-      "core_headroom": 129
+      "n": 25,
+      "realized": 327,
+      "max": 464,
+      "core_headroom": 137
     },
     "BOOK_00/05": {
       "n": 1,
@@ -1155,6 +1155,66 @@
     },
     {
       "claim_id": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-RAW-SCENE-GRAPH-001",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-RAW-HISTORY-CATEGORY-001",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-RAW-READOUT-CATEGORY-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-SELF-READING-NO-STIPULATION-001",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
       "domain": "formal_core",
       "book": "BOOK_05",
       "level_name": "LEAN_PROVED",
@@ -3610,6 +3670,48 @@
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
+    },
+    {
+      "claim_id": "D0-RAW-SCENE-GRAPH-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-RAW-HISTORY-CATEGORY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-RAW-READOUT-CATEGORY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-SELF-READING-NO-STIPULATION-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
     }
   ],
   "integrity": [],
@@ -5459,7 +5561,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02/04/08",
-      "leverage": 4,
+      "leverage": 5,
       "integrity_flag": null
     },
     {
@@ -10051,7 +10153,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 4,
+      "leverage": 5,
       "integrity_flag": null
     },
     {
@@ -10163,7 +10265,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 4,
+      "leverage": 5,
       "integrity_flag": null
     },
     {
@@ -10191,7 +10293,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_05",
-      "leverage": 4,
+      "leverage": 5,
       "integrity_flag": null
     },
     {
@@ -10261,7 +10363,119 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "empirical_passport",
       "book": "BOOK_02",
-      "leverage": 4,
+      "leverage": 5,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-SCENE-GRAPH-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-HISTORY-CATEGORY-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-READOUT-CATEGORY-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SELF-READING-NO-STIPULATION-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 5,
       "integrity_flag": null
     }
   ],

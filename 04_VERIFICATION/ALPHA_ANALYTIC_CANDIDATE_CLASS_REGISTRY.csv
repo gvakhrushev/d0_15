@@ -1,0 +1,4 @@
+candidate,ordinary_log_cesaro,weak_L1,relation_to_mu2,external_assumption,status
+a<=2 sub-critical tower,0,yes (trace-class),0 != mu2,none,class-scoped fail
+a=3 critical tower,1/(3 log phi),borderline,transcendental != rational mu2,ASSUMP-LINDEMANN-LNPHI,class-scoped fail (A2)
+external Wodzicki/Dixmier,mu2 by Connes trace,-,= mu2,spectral-triple realization,external passport (A3)

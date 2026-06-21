@@ -1,0 +1,6 @@
+frontier,classification,item5_kind,why_not_full_maximality
+E1,CLASS-SCOPED-NOGO,exhaustion (scoped to M3 grading signatures),no whole-class exhaustion; no in-Lean forall-class theorem
+E2,TWO-COMPLETION-WITNESS-ONLY,none,no exhaustion of the refinement family; no universal-property
+E3,CLASS-SCOPED-NOGO,universal-property,no canonical intertwiner; scoped to S_DE-adopted sector
+E4,TWO-COMPLETION-WITNESS-ONLY,none,swap is one S7 class; group-narrowing circular
+E5,CLASS-SCOPED-NOGO,none,separate analytic layer; conditional on Lindemann; no whole-class classification

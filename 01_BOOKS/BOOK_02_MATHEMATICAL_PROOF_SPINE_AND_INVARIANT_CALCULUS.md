@@ -89,6 +89,7 @@ Book 04 operator-boundary anchor: `02.36.3b Book 04 operator-boundary closure`, 
 
 **[Root R5 — alpha log-Cesàro no-go].** At the critical rate `a=3` the ordinary log-Cesàro/Dixmier limit of the forced singular values is `1/(3·log φ)`, transcendental (`ASSUMP-LINDEMANN-LNPHI`) and so never the rational moment `μ₂=12288/5` — `D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001` (Lean `D0.Spectral.AlphaLogCesaroMeasurability`, reusing `D0-CVFT-F1`); positive realization stays the external `D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001`.
 **[Post-core E5 extension].** Two admissible analytic functionals on the same `a=3` operator diverge — the internal ordinary log-Cesàro residue `1/(3 log φ)` (transcendental) `≠` rational `μ₂`, while the external Wodzicki reading targets `μ₂` — so the residue realization is the external Dixmier/Wodzicki passport `D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001` (Lean `D0.Extensions.AlphaResidueExtension`), never internal CORE.
+**[Raw operator typing + alpha boundary].** The archive operators `L_archive`, `QUQ`, `Feshbach`, `S_DE` are typed DISTINCT (no spectrum substitution; no trace/det coincidence as a canonical common-sector map). The alpha analytic line stays 4-layer: the `a=3` candidate ordinary log-Cesàro `1/(3 log φ) ≠ μ₂` is class-scoped + external (Lindemann), terminal A3 (`D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001`); no full-class exhaustion.
 ## 02.1 Standard proof-language convention
 
 Every proof cell in this book is written in the sequence:

@@ -1,0 +1,6 @@
+{
+  "stipulated_outputs": 0,
+  "all_outputs_have_provenance": true,
+  "key_destipulation": "commutant dim 12 is DEFINED as card(image pairClass) (rfl) and proven by native_decide, NOT a hand-written list",
+  "lean_owner": "D0.SelfReading.SelfReadingNoStipulation"
+}

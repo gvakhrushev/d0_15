@@ -1,0 +1,23 @@
+{
+  "source": "raw repository finite objects of K(9,11,13)",
+  "stipulation": false,
+  "raw_objects": [
+    "partition (9,11,13)",
+    "lab: Fin 33 -> Fin 3",
+    "Aadj (cross-part adjacency)",
+    "degree (row sum)",
+    "pairClass (Aut orbit invariant)",
+    "Q8/Omega8/ABCD actions (repo)",
+    "tripartite projectors",
+    "shell-torus Ueff (repo)",
+    "S_DE window (repo)"
+  ],
+  "derived_not_inserted": [
+    "degrees {24,22,20}",
+    "2|E|=718",
+    "trace(A^2)=718",
+    "commutant dim 12 (pair-orbit count)",
+    "Laplacian spectrum"
+  ],
+  "lean_owner": "D0.SelfReading.RawSceneGraph"
+}

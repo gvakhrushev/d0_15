@@ -5,34 +5,34 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 22
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 23
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 145
+- `CERT-CLOSED`: 151
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 55
+- `NO-GO`: 56
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 19
 - `PROOF-TARGET`: 44
 
 ## Type counts
 
-- `bridge`: 30
-- `certificate`: 170
+- `bridge`: 31
+- `certificate`: 176
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 44
-- `no-go`: 63
+- `no-go`: 64
 
 ## Domain counts
 
 - `cosmology`: 50
 - `empirical_passport`: 32
 - `external_background`: 1
-- `formal_core`: 275
+- `formal_core`: 283
 - `frontier`: 44
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -1287,6 +1287,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: Finite skeleton under explicit finite response assumptions.
 
+### D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.RawSelfReadingAnalyticResidueBoundary`
+- theorem: `raw_alpha_terminal_A3`
+- cert: `vp_raw_alpha_no_bridge_as_core.py`
+- assumptions: `ASSUMP-LINDEMANN-LNPHI`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Raw Track IV] Terminal A3: only an external Dixmier/Wodzicki passport is presently admissible. The a=3 candidate ordinary log-Cesaro 1/(3 log phi) != rational mu2 (class-scoped, conditional on ASSUMP-LINDEMANN-LNPHI, EXTERNAL, never CORE). NOT A4: no whole-class exhaustion; 'no future profinite realization' is NOT claimed. 4 separated layers (ALPHA_ANALYTIC_FORMALISM_BOUNDARY.md). Lean D0.Spectral.RawSelfReadingAnalyticResidueBoundary.
+
 ### D0-RIEMANN-AXIS-M1-001
 
 - type: `bridge`
@@ -2210,6 +2223,71 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter17 ТЗ Phase C, verify-then-promote] The rank-3 SPATIAL metric is the equitable-quotient transport quadratic form of K(9,11,13), B=[[0,11,13],[9,0,13],[9,11,0]], charpoly lambda^3-359 lambda-2574 (359=|E| coupling); eigenvalues ~ {-12.08,-9.76,+21.84} = non-degenerate (1+,2-) form => light cone = null set. FALSIFIABLE ANISOTROPY: zones 9!=11!=13 split the two negative eigenvalues (-12.08!=-9.76) => spatial metric anisotropic at carrier level; isotropic only in equal-zone limit (n,n,n) spectrum {2n,-n,-n}. Cert vp_rank3_metric_transport.py (can-FAIL; controls: equal-zones isotropic, wrong zones change the form). HONEST: realizes the spatial quadratic FORM + null cone + anisotropy falsifier; does NOT fix the cone-speed/dimensionful unit (that is the c=1/Connes question, separate); distinct object from the (3,1) Pisot-counting signature (D0-RANK3-CAUSAL-CONE-FORCING-001) -- NOT conflated. Anisotropy is a Planck-level PASSPORT-TARGET falsifier.
 
+### D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.SelfReading.RawCanonicalSelfReadingFunctor`
+- theorem: `raw_self_reading_terminal_S3`
+- cert: `vp_raw_self_reading_functor_naturality.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Raw Track I-C] Terminal S3 (partial functor, de-stipulated): the forced skeleton S0 is RAW-derived (commutant 12 = pair-orbit count, 2|E|=718 by native_decide) and unique on the strict subcategory; it does NOT extend to a total functor (disputed nc 8!=12; exactly 2 extension proof-edges). Confirms the prior Outcome D from the raw side, removing the stipulation caveat for the forced part. Lean D0.SelfReading.RawCanonicalSelfReadingFunctor.
+
+### D0-RAW-HISTORY-CATEGORY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.SelfReading.RawHistoryCategory`
+- theorem: `raw_history_terminal_H2`
+- cert: `vp_raw_hist_input_provenance.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Raw Track I-A] Terminal H2: a certified strict subcategory (the raw Aut-groupoid on the base scene, commutant 12, Aut=S9xS11xS13 from distinct part sizes) exists; the general cross-stage refinement morphism is absent (PRIM-SCENE-HISTORY-REFINEMENT-RULE). Lean D0.SelfReading.RawHistoryCategory.
+
+### D0-RAW-PRIMITIVE-MINIMALITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.SelfReading.PrimitiveMinimalityFromRawFunctor`
+- theorem: `raw_primitive_conjunction_of_independent`
+- cert: `vp_raw_primitive_semantic_dependence.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Raw Track III] conjunction-of-independent: 0 proof-edges among the 4 combinatorial frontiers E1-E4 (only E2->E5, E3->E5); PRIM-CANONICAL-SELF-READING-FUNCTOR = raw S0 + 4 independent primitives, NOT a merge. Lean D0.SelfReading.PrimitiveMinimalityFromRawFunctor; RAW_SELF_READING_PRIMITIVE_DEPENDENCE_MATRIX.csv.
+
+### D0-RAW-READOUT-CATEGORY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.SelfReading.RawReadoutRepresentationCategory`
+- theorem: `raw_readout_terminal_R2`
+- cert: `vp_raw_readout_input_provenance.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Raw Track I-B] Terminal R2: the raw response category exists on the C^33 carrier (admissible, id+composition); optional Gamma/J/C remain DERIVED-absent. Lean D0.SelfReading.RawReadoutRepresentationCategory.
+
+### D0-RAW-SCENE-GRAPH-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.SelfReading.RawSceneGraph`
+- theorem: `raw_scene_invariants`
+- cert: `vp_raw_self_reading_no_stipulated_output.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Raw Track 0] The forced skeleton outputs are RAW graph invariants of K(9,11,13), DERIVED by native_decide from the partition (9,11,13) alone -- NOT literals: degrees {24,22,20}, 2|E|=718, trace(A^2)=718, and commutant dim 12 = card(image pairClass) (the Aut pair-orbit count: 3 diag + 3 same-part + 6 cross-part). DE-STIPULATES the prior hand-written isotypic list. Lean D0.SelfReading.RawSceneGraph.
+
 ### D0-ROOT-OPERATOR-COMPLETION-PROGRAM-001
 
 - type: `certificate`
@@ -2248,6 +2326,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: S_DE relaxation modes are gap-labeled. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
+
+### D0-SELF-READING-NO-STIPULATION-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.SelfReading.SelfReadingNoStipulation`
+- theorem: `no_stipulation_forced_outputs`
+- cert: `vp_raw_self_reading_actual_aut_group.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Raw provenance firewall] commutantDim = card(image pairClass) BY DEFINITION (rfl), proven = 12 by native_decide -- the commutant is a raw pair-orbit computation, not a literal. 2|E| and trace(A^2) are raw sums. Provenance: raw-object -> raw-map -> derived-construction -> output-theorem. Lean D0.SelfReading.SelfReadingNoStipulation; SELF_READING_OUTPUT_PROVENANCE.csv.
 
 ### D0-SELF-READING-PRIMITIVE-MINIMALITY-001
 
@@ -4380,6 +4471,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Post-core E1] Even with the full (rho,Gamma,J,Q_role) interface, commutant M3+C+C+C; the grading signature on the M3 generation block gives neutral-current count p^2+q^2+3 -> 8 (sig 2,1) vs 12 (sig 3,0), both anomaly-free + S3-symmetric => TWO admissible completions (also free S3 Weyl-role bijection). NEW vs R1: the neutral-current 8!=12 divergence. Cites D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001 (carrier 33/commutant 12/Weyl-role -- not re-minted), D0-SM-HYPERCHARGE-ROW-OWNER-001. EXACT-MISSING: PRIM-FINITE-SPECTRAL-TRIPLE-REP.
+
+### D0-RAW-SELF-READING-EXTRACTIONS-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.SelfReading.RawSelfReadingExtractions`
+- theorem: `extraction_grading_G2`
+- cert: `vp_raw_grading_no_manual_signature.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Raw Track II] Four extraction terminals against the raw S3 functor: II-A grading G2 (forced commutant 12; disputed nc 8!=12), II-B refinement C4 (forced no-phi^3; disputed 15708!=14990, no forced window), II-C lepton L3 (forced 1/4!=1/3; disputed 2 orbits<3, swap-invariant), II-D archive P3 (forced window 359/160, no common sector; disputed phi-1!=1). Each: forced part raw, disputed part two-completion. Lean D0.SelfReading.RawSelfReadingExtractions.
 
 ### D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001
 

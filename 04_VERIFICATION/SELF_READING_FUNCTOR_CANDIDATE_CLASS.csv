@@ -1,10 +1,11 @@
 condition,status
-"functoriality (S id=id, S(f g)=S f S g)",required
-readout naturality C_f R_{N+1}=R_N C_f,required
-"retained/archive naturality C_f P=P C_f, C_f Q=Q C_f",required
+functoriality,required
+readout naturality,required
+retained/archive naturality,required
+terminal naturality,required
+tripartite compatibility,required
 role equivariance (Q8/Omega8/ABCD),required
-tripartite compatibility (Pi_9/Pi_11/Pi_13),required
-no-extra-catalog (frozen objects only),required
-forced-skeleton S0 exists,YES (Aut-canonical)
-S0 unique on skeleton,YES (modulo natural equivalence)
-S0 extends to fix the 4 disputed outputs,NO (each two-completion)
+no-extra-catalog (raw only),required
+forced-skeleton S0 raw-derived,YES (RawSceneGraph)
+S0 unique on strict subcategory,YES (terminal S3)
+S0 extends to total functor,NO (4 two-completions)
