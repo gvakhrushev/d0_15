@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 5950,
-    "track_fair_max": 8234,
-    "pct_strength": 72.3,
-    "core_realized": 4708,
-    "core_potential": 6960,
-    "core_headroom": 2252,
-    "n_claims": 470,
-    "n_active": 468,
+    "realized": 6009,
+    "track_fair_max": 8325,
+    "pct_strength": 72.2,
+    "core_realized": 4756,
+    "core_potential": 7040,
+    "core_headroom": 2284,
+    "n_claims": 475,
+    "n_active": 473,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 270,
-      "realized": 3830,
-      "max": 4757,
-      "core_headroom": 917
+      "n": 274,
+      "realized": 3878,
+      "max": 4837,
+      "core_headroom": 949
     },
     "rg": {
       "n": 7,
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 31,
-      "realized": 317,
-      "max": 470,
+      "n": 32,
+      "realized": 328,
+      "max": 481,
       "core_headroom": 144
     },
     "cosmology": {
@@ -118,9 +118,9 @@
       "core_headroom": 92
     },
     "BOOK_02": {
-      "n": 53,
-      "realized": 591,
-      "max": 851,
+      "n": 54,
+      "realized": 602,
+      "max": 862,
       "core_headroom": 260
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
@@ -388,10 +388,10 @@
       "core_headroom": 37
     },
     "BOOK_05": {
-      "n": 20,
-      "realized": 267,
-      "max": 364,
-      "core_headroom": 97
+      "n": 24,
+      "realized": 315,
+      "max": 444,
+      "core_headroom": 129
     },
     "BOOK_00/05": {
       "n": 1,
@@ -1115,6 +1115,46 @@
     },
     {
       "claim_id": "D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-COMPLETION-ADMISSIBILITY-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
       "domain": "formal_core",
       "book": "BOOK_05",
       "level_name": "LEAN_PROVED",
@@ -3542,6 +3582,34 @@
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
+    },
+    {
+      "claim_id": "D0-COMPLETION-ADMISSIBILITY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
     }
   ],
   "integrity": [],
@@ -5391,7 +5459,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02/04/08",
-      "leverage": 3,
+      "leverage": 4,
       "integrity_flag": null
     },
     {
@@ -9983,7 +10051,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 3,
+      "leverage": 4,
       "integrity_flag": null
     },
     {
@@ -10095,7 +10163,7 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_02",
-      "leverage": 3,
+      "leverage": 4,
       "integrity_flag": null
     },
     {
@@ -10123,7 +10191,77 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_05",
-      "leverage": 3,
+      "leverage": 4,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COMPLETION-ADMISSIBILITY-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "empirical_passport",
+      "book": "BOOK_02",
+      "leverage": 4,
       "integrity_flag": null
     }
   ],

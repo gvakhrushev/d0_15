@@ -4,13 +4,13 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 470,
+    "claims": 475,
     "release_status": {
       "CORE-FORMALIZED": 164,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 21,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 22,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 141,
+      "CERT-CLOSED": 145,
       "NO-GO": 55,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
@@ -20,27 +20,27 @@
       "PASSPORT-CLOSED": 19
     },
     "lean_status": {
-      "LEAN_PROVED": 299,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 24,
+      "LEAN_PROVED": 303,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 25,
       "PYTHON_CERTIFIED": 101,
       "DEPRECATED": 2,
       "OPEN": 44
     },
     "claim_type": {
       "core": 165,
-      "bridge": 29,
+      "bridge": 30,
       "no-go": 63,
-      "certificate": 166,
+      "certificate": 170,
       "deprecated": 3,
       "frontier": 44
     },
     "domain": {
-      "formal_core": 271,
+      "formal_core": 275,
       "rg": 7,
       "gauge_bridge": 21,
       "smooth_geometry": 36,
       "spectral_action": 6,
-      "empirical_passport": 31,
+      "empirical_passport": 32,
       "cosmology": 50,
       "external_background": 1,
       "si_calibration": 2,
@@ -15786,6 +15786,198 @@
       "label": "vp_postcore_extension_boundary.py",
       "path": "05_CERTS/vp_postcore_extension_boundary.py",
       "exists": true
+    },
+    {
+      "id": "D0-COMPLETION-ADMISSIBILITY-001",
+      "kind": "claim",
+      "claim_id": "D0-COMPLETION-ADMISSIBILITY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.S0a",
+      "lean_module": "D0.Extensions.CompletionAdmissibility",
+      "lean_theorem": "exemplar_valid",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_completion_admissibility.py",
+      "python_cert": [
+        "vp_completion_admissibility.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Self-reading Section 0] The strengthened 5-item two-completion standard: a witness is VALID iff class + two completions + separating observable + owner-preservation (item 4) + exhaustion-or-universal-property (item 5); items 4 and 5 proven NECESSARY (item4_necessary, item5_necessary). Lean D0.Extensions.CompletionAdmissibility.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/CompletionAdmissibility.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.CompletionAdmissibility",
+      "kind": "lean_module",
+      "label": "D0.Extensions.CompletionAdmissibility",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/CompletionAdmissibility.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_completion_admissibility.py",
+      "kind": "python_cert",
+      "label": "vp_completion_admissibility.py",
+      "path": "05_CERTS/vp_completion_admissibility.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "kind": "claim",
+      "claim_id": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.S0b",
+      "lean_module": "D0.Extensions.TwoCompletionNoGo",
+      "lean_theorem": "strong_classes_need_validity",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_postcore_nogo_strength.py",
+      "python_cert": [
+        "vp_postcore_nogo_strength.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Self-reading Section 0] Re-audit of E1-E5 under the 5-item standard: E1 CLASS-SCOPED-NOGO, E2 TWO-COMPLETION-WITNESS-ONLY, E3 CLASS-SCOPED-NOGO, E4 TWO-COMPLETION-WITNESS-ONLY, E5 CLASS-SCOPED-NOGO. NONE is FULL-MAXIMALITY (no whole-class exhaustion) and NONE is INVALID (all preserve owners) -- the prior no-gos are honestly DOWNGRADED, never universal. Decidable classify (Lean D0.Extensions.TwoCompletionNoGo); TWO_COMPLETION_WITNESS_AUDIT.csv, POSTCORE_NOGO_STRENGTH_AUDIT.md.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/TwoCompletionNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.TwoCompletionNoGo",
+      "kind": "lean_module",
+      "label": "D0.Extensions.TwoCompletionNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/TwoCompletionNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_postcore_nogo_strength.py",
+      "kind": "python_cert",
+      "label": "vp_postcore_nogo_strength.py",
+      "path": "05_CERTS/vp_postcore_nogo_strength.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "kind": "claim",
+      "claim_id": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.SR",
+      "lean_module": "D0.Extensions.CanonicalSelfReadingFunctor",
+      "lean_theorem": "canonical_self_reading_partial_functor",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_two_completion_witness_audit.py",
+      "python_cert": [
+        "vp_two_completion_witness_audit.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Self-reading DECISION = Outcome D, partial functor] A forced-skeleton functor S0: Hist_D0 -> ReadoutRep_D0 EXISTS and is UNIQUE on the Aut-canonical subcategory (forced outputs equal across completions: carrier 33, commutant M3+C^3 dim 12, Laplacian spectrum, resolvent det/cycle-type, S_DE window 359/160, no-phi^3, orbit exponent set {1/4,1/3}); but it does NOT extend to a unique total functor -- each of the 4 disputed outputs is a two-completion (nc 8!=12, 15708!=14990, phi-1!=1, 1/4!=1/3), and the 4 do not merge (2 edges E2->E5, E3->E5). NOT Outcome A/B/C. The Aut part-size order 9<11<13 RESOLVES the E1 Weyl-role leg; the separator is the grading SIGNATURE. Categories Lean D0.Extensions.{HistoryCategory,ReadoutRepresentationCategory}; extractions D0.Extensions.SelfReading{Role,Refinement,Lepton,Archive}*. SELF_READING_FUNCTOR_*.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/CanonicalSelfReadingFunctor.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.CanonicalSelfReadingFunctor",
+      "kind": "lean_module",
+      "label": "D0.Extensions.CanonicalSelfReadingFunctor",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/CanonicalSelfReadingFunctor.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_two_completion_witness_audit.py",
+      "kind": "python_cert",
+      "label": "vp_two_completion_witness_audit.py",
+      "path": "05_CERTS/vp_two_completion_witness_audit.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "kind": "claim",
+      "claim_id": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_05",
+      "section": "05.S4",
+      "lean_module": "D0.Extensions.PrimitiveMinimalityAfterSelfReading",
+      "lean_theorem": "primitive_minimality_conjunction_of_independent",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_self_reading_functor_input_audit.py",
+      "python_cert": [
+        "vp_self_reading_functor_input_audit.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Self-reading Section 4] conjunction-of-independent: PRIM-CANONICAL-SELF-READING-FUNCTOR is NOT a genuine single derived object subsuming the four -- it is S0 (owned) + 4 semantically-independent primitives (PRIM-FINITE-SPECTRAL-TRIPLE-REP, PRIM-SCENE-HISTORY-REFINEMENT-RULE, PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT + PRIM-PHASON-COORDINATE-FUNCTOR, PRIM-LEPTON-BRANCH-FIXING-OPERATOR). Decisive: 0 proof-edges among E1-E4 (only E2->E5, E3->E5). PRIMITIVE_MINIMALITY_AFTER_SELF_READING.csv, SELF_READING_DEPENDENCE_WITNESSES.md.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/PrimitiveMinimalityAfterSelfReading.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.PrimitiveMinimalityAfterSelfReading",
+      "kind": "lean_module",
+      "label": "D0.Extensions.PrimitiveMinimalityAfterSelfReading",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/PrimitiveMinimalityAfterSelfReading.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_self_reading_functor_input_audit.py",
+      "kind": "python_cert",
+      "label": "vp_self_reading_functor_input_audit.py",
+      "path": "05_CERTS/vp_self_reading_functor_input_audit.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
+      "type": "bridge",
+      "domain": "empirical_passport",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_02",
+      "section": "02.S5",
+      "lean_module": "D0.Spectral.AlphaAnalyticFormalismBoundary",
+      "lean_theorem": "alpha_candidate_class_scoped",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-LINDEMANN-LNPHI"
+      ],
+      "cert": "vp_alpha_analytic_formalism_boundary.py",
+      "python_cert": [
+        "vp_alpha_analytic_formalism_boundary.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[Self-reading Section 5] Separate analytic layer (4 layers: internal mu1/mu2/Delta_alpha exact CORE; profinite candidate; external Dixmier/Wodzicki passport; empirical). PERMITTED with class: this a=3 candidate has ordinary log-Cesaro coeff 1/(3 log phi) != rational mu2=12288/5 (conditional on ASSUMP-LINDEMANN-LNPHI, EXTERNAL, never CORE). FORBIDDEN (no full classification): 'no future profinite realization can produce mu2'. Reuses R5/CVFT-F1. ALPHA_ANALYTIC_FORMALISM_BOUNDARY.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaAnalyticFormalismBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.AlphaAnalyticFormalismBoundary",
+      "kind": "lean_module",
+      "label": "D0.Spectral.AlphaAnalyticFormalismBoundary",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/AlphaAnalyticFormalismBoundary.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_alpha_analytic_formalism_boundary.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_analytic_formalism_boundary.py",
+      "path": "05_CERTS/vp_alpha_analytic_formalism_boundary.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -22531,6 +22723,86 @@
     },
     {
       "source": "D0-POSTCORE-EXTENSION-BOUNDARY-001",
+      "target": "assumption:ASSUMP-LINDEMANN-LNPHI",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-COMPLETION-ADMISSIBILITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COMPLETION-ADMISSIBILITY-001",
+      "target": "module:D0.Extensions.CompletionAdmissibility",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COMPLETION-ADMISSIBILITY-001",
+      "target": "cert:vp_completion_admissibility.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "target": "module:D0.Extensions.TwoCompletionNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "target": "cert:vp_postcore_nogo_strength.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "target": "module:D0.Extensions.CanonicalSelfReadingFunctor",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "target": "cert:vp_two_completion_witness_audit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "target": "module:D0.Extensions.PrimitiveMinimalityAfterSelfReading",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+      "target": "cert:vp_self_reading_functor_input_audit.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
+      "target": "module:D0.Spectral.AlphaAnalyticFormalismBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
+      "target": "cert:vp_alpha_analytic_formalism_boundary.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001",
       "target": "assumption:ASSUMP-LINDEMANN-LNPHI",
       "kind": "uses_assumption"
     }

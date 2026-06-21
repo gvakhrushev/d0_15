@@ -1,0 +1,5 @@
+layer,content,status,typing
+internal,"mu1, mu2=12288/5, alpha_alg, Delta_alpha",exact,CORE
+profinite,singular-value operator + ordinary log-Cesaro asymptotic; a=3 candidate coeff 1/(3 log phi),class-scoped candidate,internal-construction
+external-formalism,Dixmier/Wodzicki/spectral-triple residue reading of mu2,passport,"external (conditional on ASSUMP-LINDEMANN-LNPHI, never CORE)"
+empirical,measured alpha comparison,passport,external measurement

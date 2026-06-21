@@ -5,9 +5,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 21
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 22
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 141
+- `CERT-CLOSED`: 145
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -20,8 +20,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Type counts
 
-- `bridge`: 29
-- `certificate`: 166
+- `bridge`: 30
+- `certificate`: 170
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 44
@@ -30,9 +30,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 50
-- `empirical_passport`: 31
+- `empirical_passport`: 32
 - `external_background`: 1
-- `formal_core`: 271
+- `formal_core`: 275
 - `frontier`: 44
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -695,6 +695,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 
 ## Domain: empirical_passport
+
+### D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `empirical_passport`
+- book: `BOOK_02`
+- module: `D0.Spectral.AlphaAnalyticFormalismBoundary`
+- theorem: `alpha_candidate_class_scoped`
+- cert: `vp_alpha_analytic_formalism_boundary.py`
+- assumptions: `ASSUMP-LINDEMANN-LNPHI`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [Self-reading Section 5] Separate analytic layer (4 layers: internal mu1/mu2/Delta_alpha exact CORE; profinite candidate; external Dixmier/Wodzicki passport; empirical). PERMITTED with class: this a=3 candidate has ordinary log-Cesaro coeff 1/(3 log phi) != rational mu2=12288/5 (conditional on ASSUMP-LINDEMANN-LNPHI, EXTERNAL, never CORE). FORBIDDEN (no full classification): 'no future profinite realization can produce mu2'. Reuses R5/CVFT-F1. ALPHA_ANALYTIC_FORMALISM_BOUNDARY.csv.
 
 ### D0-CRITICAL-COLLAPSE-001
 
@@ -1469,6 +1482,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] tripartite-Laplacian canonical generation operator selection.
 
+### D0-CANONICAL-SELF-READING-FUNCTOR-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.CanonicalSelfReadingFunctor`
+- theorem: `canonical_self_reading_partial_functor`
+- cert: `vp_two_completion_witness_audit.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Self-reading DECISION = Outcome D, partial functor] A forced-skeleton functor S0: Hist_D0 -> ReadoutRep_D0 EXISTS and is UNIQUE on the Aut-canonical subcategory (forced outputs equal across completions: carrier 33, commutant M3+C^3 dim 12, Laplacian spectrum, resolvent det/cycle-type, S_DE window 359/160, no-phi^3, orbit exponent set {1/4,1/3}); but it does NOT extend to a unique total functor -- each of the 4 disputed outputs is a two-completion (nc 8!=12, 15708!=14990, phi-1!=1, 1/4!=1/3), and the 4 do not merge (2 edges E2->E5, E3->E5). NOT Outcome A/B/C. The Aut part-size order 9<11<13 RESOLVES the E1 Weyl-role leg; the separator is the grading SIGNATURE. Categories Lean D0.Extensions.{HistoryCategory,ReadoutRepresentationCategory}; extractions D0.Extensions.SelfReading{Role,Refinement,Lepton,Archive}*. SELF_READING_FUNCTOR_*.
+
 ### D0-CKM-CLASS5-SELECTOR-OWNER-001
 
 - type: `certificate`
@@ -1507,6 +1533,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter8 reforge of researcher doc 2 §04.12] The claim V_CKM U_PMNS^T=I_3 is FALSE: it would force V_CKM=U_PMNS (CKM=PMNS), but CKM angles are SMALL and PMNS LARGE. cert vp_ckm_pmns_orthogonality.py: with theta_C~13.04 deg and theta_12~33.6 deg, R(theta_C)R(theta_12)^T=R(theta_C-theta_12)~R(-20.6 deg) != I. Reforged to the real weaker relation: quark-lepton COMPLEMENTARITY theta_C+theta_12~46.6 deg ~ 45 deg (miss ~1.6 deg). HONEST: strong orthogonality REJECTED; salvaged content = approximate complementarity, status HYP (not an exact identity). Overstatement not kept; idea reforged.
+
+### D0-COMPLETION-ADMISSIBILITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.CompletionAdmissibility`
+- theorem: `exemplar_valid`
+- cert: `vp_completion_admissibility.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Self-reading Section 0] The strengthened 5-item two-completion standard: a witness is VALID iff class + two completions + separating observable + owner-preservation (item 4) + exhaustion-or-universal-property (item 5); items 4 and 5 proven NECESSARY (item4_necessary, item5_necessary). Lean D0.Extensions.CompletionAdmissibility.
 
 ### D0-CONNES-GRAPH-DISTANCE-OWNER-001
 
@@ -2210,6 +2249,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: S_DE relaxation modes are gap-labeled. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof.
 
+### D0-SELF-READING-PRIMITIVE-MINIMALITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.PrimitiveMinimalityAfterSelfReading`
+- theorem: `primitive_minimality_conjunction_of_independent`
+- cert: `vp_self_reading_functor_input_audit.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Self-reading Section 4] conjunction-of-independent: PRIM-CANONICAL-SELF-READING-FUNCTOR is NOT a genuine single derived object subsuming the four -- it is S0 (owned) + 4 semantically-independent primitives (PRIM-FINITE-SPECTRAL-TRIPLE-REP, PRIM-SCENE-HISTORY-REFINEMENT-RULE, PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT + PRIM-PHASON-COORDINATE-FUNCTOR, PRIM-LEPTON-BRANCH-FIXING-OPERATOR). Decisive: 0 proof-edges among E1-E4 (only E2->E5, E3->E5). PRIMITIVE_MINIMALITY_AFTER_SELF_READING.csv, SELF_READING_DEPENDENCE_WITNESSES.md.
+
 ### D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001
 
 - type: `certificate`
@@ -2352,6 +2404,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Total publication] Ten release conditions satisfied (typed Lean checklist mirror + Python gate verifying artifacts exist). Publication package: ROSETTA_CLAIM_OWNER_MAP.csv, D0_PUBLICATION_EVIDENCE_MATRIX.csv, D0_PUBLICATION_OUTLINE_FINAL.md, D0_LEAN_PAPER_APPENDIX.md, D0_FALSIFIERS_AND_PASSPORTS.md. 0 physics->CORE, 0 fitted quantities.
+
+### D0-TWO-COMPLETION-NOGO-STRENGTH-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.TwoCompletionNoGo`
+- theorem: `strong_classes_need_validity`
+- cert: `vp_postcore_nogo_strength.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Self-reading Section 0] Re-audit of E1-E5 under the 5-item standard: E1 CLASS-SCOPED-NOGO, E2 TWO-COMPLETION-WITNESS-ONLY, E3 CLASS-SCOPED-NOGO, E4 TWO-COMPLETION-WITNESS-ONLY, E5 CLASS-SCOPED-NOGO. NONE is FULL-MAXIMALITY (no whole-class exhaustion) and NONE is INVALID (all preserve owners) -- the prior no-gos are honestly DOWNGRADED, never universal. Decidable classify (Lean D0.Extensions.TwoCompletionNoGo); TWO_COMPLETION_WITNESS_AUDIT.csv, POSTCORE_NOGO_STRENGTH_AUDIT.md.
 
 ### D0-UNITY-SPLIT-SPACETIME-001
 

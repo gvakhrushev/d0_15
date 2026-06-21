@@ -53,6 +53,7 @@ D0-core closes at the **finite/profinite admissible** level; external smooth-man
 
 The master synthesis is `03_THEORY_MAP/D0_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_PUBLICATION_OUTLINE.md`.
 
+**[Canonical self-reading discipline].** A two-completion no-go counts only under the strengthened 5-item standard (`D0-COMPLETION-ADMISSIBILITY-001`): class + two completions + separating observable + owner-preservation + exhaustion-or-universal-property. Audited so, the E1-E5 no-gos are CLASS-SCOPED or WITNESS-ONLY -- never universal impossibility (`D0-TWO-COMPLETION-NOGO-STRENGTH-001`). The canonical self-reading functor question resolves as **Outcome D (partial functor)**: a unique forced-skeleton functor exists but fixes none of the four disputed outputs (`D0-CANONICAL-SELF-READING-FUNCTOR-001`).
 ## 00.0 Publication entry status
 
 D0 keeps the condensed φ-vacuum support as a finite/profinite quasicrystalline hull; the active dynamics are derived later through `F_N`, not inserted as primitive smooth space.

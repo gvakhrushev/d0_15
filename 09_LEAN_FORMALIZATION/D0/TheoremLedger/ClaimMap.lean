@@ -704,7 +704,17 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001", moduleName := "D0.Extensions.ExtensionMinimality",
       theoremName := "extension_semantic_dependence", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-POSTCORE-EXTENSION-BOUNDARY-001", moduleName := "D0.Verification.PostCoreExtensionBoundary",
-      theoremName := "postcore_extension_boundary", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "postcore_extension_boundary", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-COMPLETION-ADMISSIBILITY-001", moduleName := "D0.Extensions.CompletionAdmissibility",
+      theoremName := "exemplar_valid", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TWO-COMPLETION-NOGO-STRENGTH-001", moduleName := "D0.Extensions.TwoCompletionNoGo",
+      theoremName := "strong_classes_need_validity", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CANONICAL-SELF-READING-FUNCTOR-001", moduleName := "D0.Extensions.CanonicalSelfReadingFunctor",
+      theoremName := "canonical_self_reading_partial_functor", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SELF-READING-PRIMITIVE-MINIMALITY-001", moduleName := "D0.Extensions.PrimitiveMinimalityAfterSelfReading",
+      theoremName := "primitive_minimality_conjunction_of_independent", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALPHA-ANALYTIC-FORMALISM-BOUNDARY-001", moduleName := "D0.Spectral.AlphaAnalyticFormalismBoundary",
+      theoremName := "alpha_candidate_class_scoped", status := ClaimStatus.leanBridgeAssumptionsExplicit }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

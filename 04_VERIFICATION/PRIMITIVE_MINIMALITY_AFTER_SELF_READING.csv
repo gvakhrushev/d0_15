@@ -1,0 +1,7 @@
+primitive,relation,math_type,minimal_data,old_no_go_changed,unlocks
+PRIM-CANONICAL-SELF-READING-FUNCTOR,conjunction-of-independent (NOT a merge),total Aut-equivariant functor Hist_D0->ReadoutRep_D0,S0 (owned) + the 4 below,none new beyond S0,decomposes into S0 + 4 independent primitives
+PRIM-FINITE-SPECTRAL-TRIPLE-REP,independent,"finite spectral-triple rep (rho,Gamma,J)",grading signature => neutral-current count,E1,fixes nc count
+PRIM-SCENE-HISTORY-REFINEMENT-RULE,independent,Aut-equivariant refinement functor,refinement/CMB carrier,E2,fixes refinement carrier
+PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT,independent,role section (pressure vs energy),w_E role,E3,fixes w role
+PRIM-PHASON-COORDINATE-FUNCTOR,independent,coordinate cocycle z:s->z,archive/redshift coordinate,E3,fixes z(s)
+PRIM-LEPTON-BRANCH-FIXING-OPERATOR,independent,branch-sensitive selector on shell torus,branch->generation row,E4,fixes assignment row

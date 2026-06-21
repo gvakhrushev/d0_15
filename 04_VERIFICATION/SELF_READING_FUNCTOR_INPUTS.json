@@ -1,0 +1,23 @@
+{
+  "source_category": "Hist_D0",
+  "target_category": "ReadoutRep_D0",
+  "manual_data": false,
+  "external_data": false,
+  "frozen_objects": [
+    "S_N,R_N,D_min,Delta",
+    "P_N,Q_N,U_N",
+    "terminal readout",
+    "Q8/Omega8/ABCD role action",
+    "tripartite projectors Pi_9/Pi_11/Pi_13",
+    "phi ladder",
+    "shell-torus U_eff",
+    "S_DE window",
+    "L_archive (typed != QUQ != S_DE)"
+  ],
+  "forbidden_inputs": [
+    "manual basis/labels/window/anchor/scale",
+    "PDG/Planck/DESI/LEP/LIGO",
+    "post-hoc choice",
+    "Lindemann-as-CORE"
+  ]
+}

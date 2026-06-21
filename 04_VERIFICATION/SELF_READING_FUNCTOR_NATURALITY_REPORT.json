@@ -1,0 +1,26 @@
+{
+  "forced_skeleton_exists": true,
+  "skeleton_unique": true,
+  "forced_outputs": [
+    "carrier C^33",
+    "commutant M3+C+C+C dim 12",
+    "Laplacian spectrum mult-sum 33",
+    "resolvent det/cycle-type",
+    "S_DE window 359/160",
+    "no phi^3 carrier (min-successor 19)",
+    "orbit exponent set {1/4,1/3}"
+  ],
+  "disputed_outputs": [
+    "grading signature -> neutral-current count 8 vs 12",
+    "refinement carrier 15708 vs 14990",
+    "branch->generation assignment (2 orbits < 3 gen)",
+    "archive coordinate cocycle phi-1 vs 1"
+  ],
+  "weyl_role_leg": "RESOLVED by Aut part-size order 9<11<13 (not the separator)",
+  "global_outcome": "D-partial-functor",
+  "extension_proof_edges": 2,
+  "edges": [
+    "E2->E5",
+    "E3->E5"
+  ]
+}

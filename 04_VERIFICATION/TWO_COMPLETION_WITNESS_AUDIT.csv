@@ -1,0 +1,6 @@
+frontier,owner,item1_class,item2_two_completions,item3_observable_separates,item4_preserves_owners,item5_kind,classification
+E1,D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001,yes,yes (nc 8 vs 12),yes (nc 8 vs 12),yes,exhaustion,CLASS-SCOPED-NOGO
+E2,D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001,yes,yes (15708 vs 14990),yes (15708 vs 14990),yes,none,TWO-COMPLETION-WITNESS-ONLY
+E3,D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001,yes,yes (w_A vs w_B; phi-1 vs 1),yes (w_A vs w_B; phi-1 vs 1),yes,universal-property,CLASS-SCOPED-NOGO
+E4,D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001,yes,yes (2 orbits < 3 gen),yes (2 orbits < 3 gen),yes,none,TWO-COMPLETION-WITNESS-ONLY
+E5,D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001,yes,yes (1/(3logphi) vs mu2),yes (1/(3logphi) vs mu2),yes,none,CLASS-SCOPED-NOGO
