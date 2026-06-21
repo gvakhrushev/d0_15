@@ -1,0 +1,25 @@
+{
+  "program": "D0-TOTAL-CLOSURE-PROGRAM-001",
+  "lanes": 10,
+  "active_claims": 447,
+  "terminal_distribution": {
+    "CERT-CLOSED": 293,
+    "PASSPORT-CLOSED": 47,
+    "NO-GO": 54,
+    "INACTIVE-BRIDGE": 3,
+    "EMPIRICAL-PASSPORT": 6,
+    "PROOF-TARGET": 44
+  },
+  "passports": 53,
+  "no_gos": 54,
+  "extension_primitives": 11,
+  "all_primitives_independent": true,
+  "physics_promoted_to_core": 0,
+  "fitted_quantities": 0,
+  "new_owners_this_program": [
+    "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+    "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+    "D0-TOTAL-EXTENSION-PRIMITIVES-INDEPENDENCE-OWNER-001"
+  ],
+  "release_ready": true
+}

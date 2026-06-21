@@ -1,0 +1,16 @@
+source_id,kind,method_extracted,front,d0_frozen_object_needed,external_assumption,cannot_be_core_because,negative_control_relevance
+SRC-BRATTELI-1972,Inductive limits of finite dimensional C*-algebras,Bratteli,1972,Trans. AMS,,AF algebras / Bratteli diagrams,incidence-matrix inductive limit
+SRC-DIXMIER-1966,Existence de traces non normales,Dixmier,1966,C. R. Acad. Sci.,,singular (Dixmier) traces,log-Cesaro singular trace
+SRC-WODZICKI-1984,Noncommutative residue,Wodzicki,1984,Springer LNM,,Wodzicki residue / zeta asymptotics,residue = singular trace coefficient
+SRC-CONNES-1994,Noncommutative Geometry,Connes,1994,Academic Press,,spectral triples / NC integral,Connes trace theorem
+SRC-CONNES-2013,On the spectral characterization of manifolds,Connes,2013,J. Noncommut. Geom.,,reconstruction theorem,smooth manifold from spectral triple
+SRC-LATREMOLIERE-2016,The quantum Gromov-Hausdorff propinquity,Latremoliere,2016,Trans. AMS,,propinquity / inductive spectral triples,metric convergence of inductive triples
+SRC-ADLER-WEISS-1967,Similarity of automorphisms of the torus,Adler-Weiss,1967,Memoirs AMS,,Markov partitions for toral automorphisms,existence (non-unique) Markov partition
+SRC-WILLIAMS-1973,Classification of subshifts of finite type,Williams,1973,Annals of Math,,strong shift equivalence,SSE => conjugacy of SFTs
+SRC-KATO-1966,Perturbation Theory for Linear Operators,Kato,1966,Springer,,Riesz projectors / exceptional points / Puiseux,contour Riesz projector + branch exponents
+spectral-triples-AF,method,AF-algebra spectral triple data (dimension/reality/first-order),F,finite spectral triple,regularity/orientability,"external reconstruction conditions, not internal",Connes-recon control
+propinquity-qGH,method,quantum Gromov-Hausdorff propinquity convergence,F,refinement metric tower,Lip-norm precompactness,metric convergence is an external hypothesis,no isometric J_N (vNext NO-GO)
+dixmier-wodzicki,method,Dixmier measurability / Wodzicki residue extraction,E,frozen mu2 moment,trace/asymptotic hypothesis,needs a true infinite tower (absent in core),finite-tower trace-class control
+graph-heat-wavelets,method,graph heat kernels and wavelet packets,C,scene Laplacian spectrum,window normalization,window selection is not forced internally,chosen-width control
+puiseux-monodromy,method,Puiseux/monodromy branch selection,D,C4xR3 cover,branch-sensitive selector,selector not present-core frozen,ramification-row degeneracy control
+gw-echo-controls,method,GW echo search false-positive controls,H,C_max=3/8 echo target,pre-registration + injection recovery,event must not choose the target,ordinary-ringdown null

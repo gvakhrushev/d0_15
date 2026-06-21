@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 131
+- `CERT-CLOSED`: 136
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
@@ -15,13 +15,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `EXTERNAL-BACKGROUND`: 1
 - `NO-GO`: 46
 - `NO_GO_PROVED`: 8
-- `PASSPORT-CLOSED`: 18
+- `PASSPORT-CLOSED`: 19
 - `PROOF-TARGET`: 44
 
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 155
+- `certificate`: 161
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 44
@@ -30,9 +30,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 49
-- `empirical_passport`: 29
+- `empirical_passport`: 31
 - `external_background`: 1
-- `formal_core`: 253
+- `formal_core`: 257
 - `frontier`: 44
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -826,6 +826,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Gauge-Matter campaign] The 5-field one-generation hypercharge row is the UNIQUE anomaly-free assignment up to (i) normalization (electron Y_e=1), (ii) u<->d labeling, (iii) excluding the degenerate Y_Q=0 branch. Three linear anomaly conditions give the 2-param family (a,t): Y_Q=a,Y_u=-a+t,Y_d=-a-t,Y_L=-3a,Y_e=6a; the cubic U(1)^3 anomaly factors EXACTLY as -18a(t-3a)(t+3a), so anomaly-free rays = {a=0}U{t=3a}U{t=-3a}; SM is the nondegenerate t=-3a branch at a=1/6 -> (1/6,-2/3,1/3,-1/2,1). This RESOLVES the eight-front 'row not unique' finding: the 2-dim freedom was the ADDED nu_R (B-L) direction (6-field, D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001), not the row. Lean D0.Matter.SMHyperchargeRowOwner (ring/norm_num). No SM table/PDG/246 GeV input. The flow->Weyl map Phi (D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001) stays PROOF-TARGET; the row is owned via the anomaly route.
 
+### D0-TOTAL-CLOSURE-BOUNDARY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_00`
+- module: `D0.Verification.TotalClosureBoundary`
+- theorem: `total_closure_boundary`
+- cert: `vp_total_closure_board.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Total boundary] Ten lanes each map to one of the 8 admissible terminal states (CERT-CLOSED/NO-GO/NO-GO-CLOSED/PASSPORT-CLOSED/EMPIRICAL-PASSPORT/OPERATOR-SCAFFOLD-CERTIFIED/PROOF-TARGET/INACTIVE-BRIDGE); distinct labels; terminal kinds all present (Lean decide). No lane is an unowned future task.
+
 ### D0-VACUUM-CUBIC-WINDOW-001
 
 - type: `certificate`
@@ -916,6 +929,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter4 T5.4] EMPIRICAL-PASSPORT. delta0-family sin^2 th12=1/3-2 delta0^2=0.30547, th13=phi^-5/4=0.02254, th23=1/2+delta0/2=0.559 vs NuFIT 6.0 (0.307/0.0220/0.561); beats GRA(0.276)/TBM(1/3)/GRB(0.345) on th12; JUNO falsifier window [0.300,0.311]. cite NuFIT 6.0 JHEP 12(2024)216 arXiv:2410.05380; JUNO. HONEST: delta0 forced, angle FORMULAS forcing is backlog/OWNER-DECISION; never core. [Iter15 sharpen — forcing attempt, honest dual] Each angle = an M1-symmetric BASELINE + a correction from forced quantities: sin2 th23 = 1/2(bimaximal) + delta0/2; sin2 th12 = 1/3(trimaximal/democratic, rank-3) - 2 delta0^2; sin2 th13 = xi5/4 (xi5=phi^-5, D0-XI5; |ABCD|=4). The baselines are M1-forced and the corrections reuse ONLY forced delta0/xi5 (no new fit); cert vp_pmns_baseline_correction.py (can-FAIL: baseline-only misses NuFIT; 1st-order delta0 for th12 misses badly => the delta0^2 ORDER is data-fixed). NAMED GAP (precise): the correction ORDERS (delta0^1 vs delta0^2 vs xi5^1) and integer coefficients (1/2, -2, 1/4) are NOT M1-derived. Stays EMPIRICAL-PASSPORT; not promoted. [Iter21] value corrected: sin^2 th12=0.30547 exact (=1/3-2 delta0^2=-37/6+4phi; was mis-displayed 0.3055/0.30553, and the baseline-correction assert target was the wrong 0.30553 at a loose 1e-4 tol -- now 0.30547 at 1e-5). JUNO citation NOT yet pinned (free-text Nature 2026, no arXiv/DOI); the JUNO falsifier-window win is provisional until a resolvable identifier is supplied (NuFIT-6.0 IS pinned: JHEP 12(2024)216 arXiv:2410.05380).
+
+### D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001
+
+- type: `certificate`
+- release_status: `PASSPORT-CLOSED`
+- domain: `empirical_passport`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_horizon_hum_empirical_passport.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Total H2] Pre-registered transfer-corrected residual passport over the frozen I_f=log(phi) (D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001). NOT a raw frequency-ratio hunt, NOT a LIGO confirmation, NOT CORE. Window frozen before data; detector-frame phi-artifact is a negative control; no event chooses the target. HORIZON_HUM_PASSPORT_PROTOCOL.md, HORIZON_HUM_NEGATIVE_CONTROL_MATRIX.csv, HORIZON_HUM_PRE_REGISTRATION.json.
 
 ### D0-NEUTRINO-MASS-PASSPORT-001
 
@@ -1755,6 +1781,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Higgs phason-orbit campaign] The return modulus q_T=44 is NOT a toral period. T=[[0,1],[1,-1]] (charpoly x^2+x-1) has infinite order in GL(2,Z) (trace=signed Lucas, grows) so T^44!=I; on ZMod 44 its order is 30 (T^30=I, T^44!=I). Honors the task restriction (do NOT assert T^44=I). Lean D0.Matter.HiggsReturnQuotientAction (native_decide on ZMod 44).
 
+### D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Gravity.HorizonHumTransfer`
+- theorem: `horizon_hum_transfer_owner`
+- cert: `vp_horizon_hum_transfer_observable.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Total H2] Frozen horizon information rate I_f=log(phi)~0.4812: dimensionless, 0<I_f<1, golden identity 2 I_f=log(phi+1) (Lean D0.Gravity.HorizonHumTransfer, log_pow+add_one_lt_exp). Transfer-corrected residual TARGET only; external waveform/instrument formalism.
+
 ### D0-HST-ARCHIVE-001
 
 - type: `certificate`
@@ -2183,6 +2222,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Toral Lucas-Voronoi campaign Phase A] #Fix_n=|det(T^n-I)|=1,1,4,5,11 for n=1..5 (signed dets 1,-1,4,-5,11). Primitive period-3 set = #Fix_3-#Fix_1 = 4-1 = 3 points = a single f_T orbit (3 prime, non-fixed) -- the canonical first nontrivial periodic landmark as an UNORDERED orbit set; no point privileged. Lean D0.Geometry.ToralLucasPeriodicSeed.
+
+### D0-TOTAL-CLOSURE-PROGRAM-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: ``
+- theorem: `none`
+- cert: `vp_total_closure_board.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Total program root] Unified finalization over 10 lanes (A-J), each in exactly one admissible terminal state (TOTAL_CLOSURE_BOARD.csv: owner/frozen-input/allowed-move/forbidden-route/min-primitive/external/exit). Aggregates the existing closed owners; mints only horizon-hum + the extension-primitive independence theorem. TOTAL_CLOSURE_DEPENDENCY_GRAPH.md, TOTAL_CLOSURE_BLOCKER_ATLAS.md, TOTAL_FINAL_CLAIM_INDEX.csv.
+
+### D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.Verification.TotalExtensionPrimitiveMinimality`
+- theorem: `total_extension_primitive_independence`
+- cert: `vp_total_extension_primitive_minimality.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Total section 12; = D0-TOTAL-EXTENSION-PRIMITIVES-INDEPENDENCE-OWNER-001] Eleven minimal extension primitives, pairwise-distinct signatures (Nodup by decide -> no merge), empty derive-relation (no derivation), none forced by core. 55 off-diagonal pairs all independent (TOTAL_EXTENSION_PRIMITIVE_INDEPENDENCE_MATRIX.csv, TOTAL_EXTENSION_PRIMITIVES.csv with full typed fields, TOTAL_EXTENSION_PRIMITIVE_MINIMALITY_PROOFS.md). No broad 'new physics primitive' bucket.
+
+### D0-TOTAL-PUBLICATION-READINESS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.Verification.TotalPublicationReadiness`
+- theorem: `total_publication_ready`
+- cert: `vp_total_publication_readiness.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Total publication] Ten release conditions satisfied (typed Lean checklist mirror + Python gate verifying artifacts exist). Publication package: ROSETTA_CLAIM_OWNER_MAP.csv, D0_PUBLICATION_EVIDENCE_MATRIX.csv, D0_PUBLICATION_OUTLINE_FINAL.md, D0_LEAN_PAPER_APPENDIX.md, D0_FALSIFIERS_AND_PASSPORTS.md. 0 physics->CORE, 0 fitted quantities.
 
 ### D0-UNITY-SPLIT-SPACETIME-001
 

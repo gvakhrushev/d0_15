@@ -1,0 +1,7 @@
+control_id,type,role
+detector_frame_phi_artifact,null,reject coincidental detector-frame phi spacings
+external_waveform_subtraction,calibration,remove GR ringdown before residual
+instrument_response_correction,calibration,correct detector transfer function
+population_systematics,systematic,marginalize mass/spin/redshift population
+injection_recovery,calibration,recover injected log-phi residual at stated efficiency
+null_distribution,null,time-slid / off-source shows no excess

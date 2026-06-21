@@ -1,0 +1,12 @@
+primitive,PRIM-SCENE-HISTORY-REFINEMENT-RULE,PRIM-COMPARISON-MAP-XI-N,PRIM-DIRAC-SCALE-SELECTION,PRIM-PHYSICAL-MAGNITUDE-MAP,PRIM-PHYSICAL-REDSHIFT-OBSERVABLE,PRIM-FORCED-SMOOTHING-WINDOW,PRIM-LEPTON-BRANCH-FIXING-OPERATOR,PRIM-PERRON-PHI3-CARRIER,PRIM-NONCOMMUTING-TRIPLE,PRIM-FINITE-SPECTRAL-TRIPLE-REP,PRIM-BARYON-PHYSICAL-LABEL-TRANSFER
+PRIM-SCENE-HISTORY-REFINEMENT-RULE,self,independent,independent,independent,independent,independent,independent,independent,independent,independent,independent
+PRIM-COMPARISON-MAP-XI-N,independent,self,independent,independent,independent,independent,independent,independent,independent,independent,independent
+PRIM-DIRAC-SCALE-SELECTION,independent,independent,self,independent,independent,independent,independent,independent,independent,independent,independent
+PRIM-PHYSICAL-MAGNITUDE-MAP,independent,independent,independent,self,independent,independent,independent,independent,independent,independent,independent
+PRIM-PHYSICAL-REDSHIFT-OBSERVABLE,independent,independent,independent,independent,self,independent,independent,independent,independent,independent,independent
+PRIM-FORCED-SMOOTHING-WINDOW,independent,independent,independent,independent,independent,self,independent,independent,independent,independent,independent
+PRIM-LEPTON-BRANCH-FIXING-OPERATOR,independent,independent,independent,independent,independent,independent,self,independent,independent,independent,independent
+PRIM-PERRON-PHI3-CARRIER,independent,independent,independent,independent,independent,independent,independent,self,independent,independent,independent
+PRIM-NONCOMMUTING-TRIPLE,independent,independent,independent,independent,independent,independent,independent,independent,self,independent,independent
+PRIM-FINITE-SPECTRAL-TRIPLE-REP,independent,independent,independent,independent,independent,independent,independent,independent,independent,self,independent
+PRIM-BARYON-PHYSICAL-LABEL-TRANSFER,independent,independent,independent,independent,independent,independent,independent,independent,independent,independent,self

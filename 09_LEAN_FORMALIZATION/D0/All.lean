@@ -257,6 +257,7 @@ import D0.Gravity.BoundaryRelaxationSpectrum
 import D0.Gravity.CompactnessLimit
 import D0.Gravity.CriticalCollapseDSS
 import D0.Gravity.EntropicArchiveInterface
+import D0.Gravity.HorizonHumTransfer
 import D0.Gravity.HorizonJetAndBaryonPole
 import D0.Gravity.HorizonlessEchoDelay
 import D0.Gravity.MacroEinsteinInterface
@@ -436,3 +437,6 @@ import D0.VNext2.SceneNativeRefinementClassification
 import D0.VNext2.SceneSpectralFingerprint
 import D0.Verification.FinalResearchClosureBoundary
 import D0.Verification.PresentCoreMaximality
+import D0.Verification.TotalClosureBoundary
+import D0.Verification.TotalExtensionPrimitiveMinimality
+import D0.Verification.TotalPublicationReadiness

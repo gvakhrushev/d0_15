@@ -1,0 +1,18 @@
+{
+  "target": "I_f = log(phi)",
+  "decimal": 0.481212,
+  "frozen_input": "golden return rate; window frozen before data",
+  "event_selects_target": false,
+  "raw_frequency_ratio": false,
+  "transfer_corrected": true,
+  "controls": [
+    "detector_frame_phi_artifact",
+    "external_waveform_subtraction",
+    "instrument_response_correction",
+    "population_systematics",
+    "injection_recovery",
+    "null_distribution"
+  ],
+  "pass_fail": "FAIL=no log-phi residual after controls; PASS=trials-corrected residual survives; neither -> CORE",
+  "status": "EMPIRICAL-PASSPORT (not detection, not CORE, no LIGO-confirmation language)"
+}

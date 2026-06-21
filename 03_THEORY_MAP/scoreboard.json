@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 5715,
-    "track_fair_max": 7917,
-    "pct_strength": 72.2,
-    "core_realized": 4610,
-    "core_potential": 6780,
-    "core_headroom": 2170,
-    "n_claims": 449,
-    "n_active": 447,
+    "realized": 5777,
+    "track_fair_max": 8024,
+    "pct_strength": 72.0,
+    "core_realized": 4665,
+    "core_potential": 6880,
+    "core_headroom": 2215,
+    "n_claims": 455,
+    "n_active": 453,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 252,
-      "realized": 3626,
-      "max": 4479,
-      "core_headroom": 843
+      "n": 256,
+      "realized": 3669,
+      "max": 4559,
+      "core_headroom": 880
     },
     "rg": {
       "n": 7,
@@ -62,10 +62,10 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 29,
-      "realized": 298,
-      "max": 443,
-      "core_headroom": 136
+      "n": 31,
+      "realized": 317,
+      "max": 470,
+      "core_headroom": 144
     },
     "cosmology": {
       "n": 49,
@@ -148,10 +148,10 @@
       "core_headroom": 80
     },
     "BOOK_07": {
-      "n": 63,
-      "realized": 775,
-      "max": 1091,
-      "core_headroom": 302
+      "n": 65,
+      "realized": 794,
+      "max": 1118,
+      "core_headroom": 310
     },
     "BOOK_06/08": {
       "n": 4,
@@ -382,10 +382,10 @@
       "core_headroom": 13
     },
     "BOOK_00": {
-      "n": 2,
-      "realized": 22,
-      "max": 22,
-      "core_headroom": 0
+      "n": 6,
+      "realized": 65,
+      "max": 102,
+      "core_headroom": 37
     },
     "BOOK_05": {
       "n": 15,
@@ -1047,6 +1047,46 @@
       "claim_id": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
       "domain": "smooth_geometry",
       "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "domain": "empirical_passport",
+      "book": "BOOK_00",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "domain": "formal_core",
+      "book": "BOOK_00",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -1727,6 +1767,16 @@
       "claim_id": "D0-VERIFIED-CLOSURE-PROTOCOL-001",
       "domain": "formal_core",
       "book": "BOOK_05",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "domain": "formal_core",
+      "book": "BOOK_00",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -3153,6 +3203,13 @@
       "score": 7
     },
     {
+      "claim_id": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
       "claim_id": "D0-GENERATIVE-DYNAMICS-001",
       "domain": "rg",
       "leverage": 0,
@@ -3386,6 +3443,34 @@
     {
       "claim_id": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
       "domain": "smooth_geometry",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "domain": "empirical_passport",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -9676,6 +9761,90 @@
       "lean_status": "PYTHON_CERTIFIED",
       "domain": "smooth_geometry",
       "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "empirical_passport",
+      "book": "BOOK_07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
       "leverage": 0,
       "integrity_flag": null
     }

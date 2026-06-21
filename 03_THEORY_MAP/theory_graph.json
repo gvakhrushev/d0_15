@@ -4,25 +4,25 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 449,
+    "claims": 455,
     "release_status": {
       "CORE-FORMALIZED": 164,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 20,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 131,
+      "CERT-CLOSED": 136,
       "NO-GO": 46,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 6,
       "PROOF-TARGET": 44,
-      "PASSPORT-CLOSED": 18
+      "PASSPORT-CLOSED": 19
     },
     "lean_status": {
-      "LEAN_PROVED": 284,
+      "LEAN_PROVED": 288,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 21,
-      "PYTHON_CERTIFIED": 98,
+      "PYTHON_CERTIFIED": 100,
       "DEPRECATED": 2,
       "OPEN": 44
     },
@@ -30,17 +30,17 @@
       "core": 165,
       "bridge": 28,
       "no-go": 54,
-      "certificate": 155,
+      "certificate": 161,
       "deprecated": 3,
       "frontier": 44
     },
     "domain": {
-      "formal_core": 253,
+      "formal_core": 257,
       "rg": 7,
       "gauge_bridge": 21,
       "smooth_geometry": 36,
       "spectral_action": 6,
-      "empirical_passport": 29,
+      "empirical_passport": 31,
       "cosmology": 49,
       "external_background": 1,
       "si_calibration": 2,
@@ -15010,6 +15010,213 @@
       "label": "vp_smooth_manifold_formalism_passport.py",
       "path": "05_CERTS/vp_smooth_manifold_formalism_passport.py",
       "exists": true
+    },
+    {
+      "id": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.hum",
+      "lean_module": "D0.Gravity.HorizonHumTransfer",
+      "lean_theorem": "horizon_hum_transfer_owner",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_horizon_hum_transfer_observable.py",
+      "python_cert": [
+        "vp_horizon_hum_transfer_observable.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Total H2] Frozen horizon information rate I_f=log(phi)~0.4812: dimensionless, 0<I_f<1, golden identity 2 I_f=log(phi+1) (Lean D0.Gravity.HorizonHumTransfer, log_pow+add_one_lt_exp). Transfer-corrected residual TARGET only; external waveform/instrument formalism.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/HorizonHumTransfer.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gravity.HorizonHumTransfer",
+      "kind": "lean_module",
+      "label": "D0.Gravity.HorizonHumTransfer",
+      "path": "09_LEAN_FORMALIZATION/D0/Gravity/HorizonHumTransfer.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_horizon_hum_transfer_observable.py",
+      "kind": "python_cert",
+      "label": "vp_horizon_hum_transfer_observable.py",
+      "path": "05_CERTS/vp_horizon_hum_transfer_observable.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07",
+      "section": "07.hum",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_horizon_hum_empirical_passport.py",
+      "python_cert": [
+        "vp_horizon_hum_empirical_passport.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "[Total H2] Pre-registered transfer-corrected residual passport over the frozen I_f=log(phi) (D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001). NOT a raw frequency-ratio hunt, NOT a LIGO confirmation, NOT CORE. Window frozen before data; detector-frame phi-artifact is a negative control; no event chooses the target. HORIZON_HUM_PASSPORT_PROTOCOL.md, HORIZON_HUM_NEGATIVE_CONTROL_MATRIX.csv, HORIZON_HUM_PRE_REGISTRATION.json.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_horizon_hum_empirical_passport.py",
+      "kind": "python_cert",
+      "label": "vp_horizon_hum_empirical_passport.py",
+      "path": "05_CERTS/vp_horizon_hum_empirical_passport.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "kind": "claim",
+      "claim_id": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.total",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_total_closure_board.py",
+      "python_cert": [
+        "vp_total_closure_board.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Total program root] Unified finalization over 10 lanes (A-J), each in exactly one admissible terminal state (TOTAL_CLOSURE_BOARD.csv: owner/frozen-input/allowed-move/forbidden-route/min-primitive/external/exit). Aggregates the existing closed owners; mints only horizon-hum + the extension-primitive independence theorem. TOTAL_CLOSURE_DEPENDENCY_GRAPH.md, TOTAL_CLOSURE_BLOCKER_ATLAS.md, TOTAL_FINAL_CLAIM_INDEX.csv.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_total_closure_board.py",
+      "kind": "python_cert",
+      "label": "vp_total_closure_board.py",
+      "path": "05_CERTS/vp_total_closure_board.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "kind": "claim",
+      "claim_id": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.total",
+      "lean_module": "D0.Verification.TotalClosureBoundary",
+      "lean_theorem": "total_closure_boundary",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_total_closure_board.py",
+      "python_cert": [
+        "vp_total_closure_board.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Total boundary] Ten lanes each map to one of the 8 admissible terminal states (CERT-CLOSED/NO-GO/NO-GO-CLOSED/PASSPORT-CLOSED/EMPIRICAL-PASSPORT/OPERATOR-SCAFFOLD-CERTIFIED/PROOF-TARGET/INACTIVE-BRIDGE); distinct labels; terminal kinds all present (Lean decide). No lane is an unowned future task.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Verification/TotalClosureBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Verification.TotalClosureBoundary",
+      "kind": "lean_module",
+      "label": "D0.Verification.TotalClosureBoundary",
+      "path": "09_LEAN_FORMALIZATION/D0/Verification/TotalClosureBoundary.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "kind": "claim",
+      "claim_id": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.total",
+      "lean_module": "D0.Verification.TotalExtensionPrimitiveMinimality",
+      "lean_theorem": "total_extension_primitive_independence",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_total_extension_primitive_minimality.py",
+      "python_cert": [
+        "vp_total_extension_primitive_minimality.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Total section 12; = D0-TOTAL-EXTENSION-PRIMITIVES-INDEPENDENCE-OWNER-001] Eleven minimal extension primitives, pairwise-distinct signatures (Nodup by decide -> no merge), empty derive-relation (no derivation), none forced by core. 55 off-diagonal pairs all independent (TOTAL_EXTENSION_PRIMITIVE_INDEPENDENCE_MATRIX.csv, TOTAL_EXTENSION_PRIMITIVES.csv with full typed fields, TOTAL_EXTENSION_PRIMITIVE_MINIMALITY_PROOFS.md). No broad 'new physics primitive' bucket.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Verification/TotalExtensionPrimitiveMinimality.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Verification.TotalExtensionPrimitiveMinimality",
+      "kind": "lean_module",
+      "label": "D0.Verification.TotalExtensionPrimitiveMinimality",
+      "path": "09_LEAN_FORMALIZATION/D0/Verification/TotalExtensionPrimitiveMinimality.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_total_extension_primitive_minimality.py",
+      "kind": "python_cert",
+      "label": "vp_total_extension_primitive_minimality.py",
+      "path": "05_CERTS/vp_total_extension_primitive_minimality.py",
+      "exists": true
+    },
+    {
+      "id": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "kind": "claim",
+      "claim_id": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_00",
+      "section": "00.total",
+      "lean_module": "D0.Verification.TotalPublicationReadiness",
+      "lean_theorem": "total_publication_ready",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_total_publication_readiness.py",
+      "python_cert": [
+        "vp_total_publication_readiness.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Total publication] Ten release conditions satisfied (typed Lean checklist mirror + Python gate verifying artifacts exist). Publication package: ROSETTA_CLAIM_OWNER_MAP.csv, D0_PUBLICATION_EVIDENCE_MATRIX.csv, D0_PUBLICATION_OUTLINE_FINAL.md, D0_LEAN_PAPER_APPENDIX.md, D0_FALSIFIERS_AND_PASSPORTS.md. 0 physics->CORE, 0 fitted quantities.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Verification/TotalPublicationReadiness.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Verification.TotalPublicationReadiness",
+      "kind": "lean_module",
+      "label": "D0.Verification.TotalPublicationReadiness",
+      "path": "09_LEAN_FORMALIZATION/D0/Verification/TotalPublicationReadiness.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_total_publication_readiness.py",
+      "kind": "python_cert",
+      "label": "vp_total_publication_readiness.py",
+      "path": "05_CERTS/vp_total_publication_readiness.py",
+      "exists": true
     }
   ],
   "edges": [
@@ -21426,6 +21633,96 @@
     {
       "source": "D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001",
       "target": "cert:vp_smooth_manifold_formalism_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "target": "module:D0.Gravity.HorizonHumTransfer",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "target": "cert:vp_horizon_hum_transfer_observable.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+      "target": "cert:vp_horizon_hum_empirical_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TOTAL-CLOSURE-PROGRAM-001",
+      "target": "cert:vp_total_closure_board.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "target": "module:D0.Verification.TotalClosureBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TOTAL-CLOSURE-BOUNDARY-001",
+      "target": "cert:vp_total_closure_board.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "target": "module:D0.Verification.TotalExtensionPrimitiveMinimality",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001",
+      "target": "cert:vp_total_extension_primitive_minimality.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "target": "module:D0.Verification.TotalPublicationReadiness",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TOTAL-PUBLICATION-READINESS-001",
+      "target": "cert:vp_total_publication_readiness.py",
       "kind": "certified_by"
     }
   ]

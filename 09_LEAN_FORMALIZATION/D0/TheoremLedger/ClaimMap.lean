@@ -668,7 +668,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ECHO-DELAY-COMPACTNESS-OWNER-001", moduleName := "D0.Gravity.HorizonlessEchoDelay",
       theoremName := "horizonless_echo_delay_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001", moduleName := "D0.Cosmology.PhasonContinuumEnvelope",
-      theoremName := "phason_continuum_envelope_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "phason_continuum_envelope_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001", moduleName := "D0.Gravity.HorizonHumTransfer",
+      theoremName := "horizon_hum_transfer_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TOTAL-CLOSURE-BOUNDARY-001", moduleName := "D0.Verification.TotalClosureBoundary",
+      theoremName := "total_closure_boundary", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001", moduleName := "D0.Verification.TotalExtensionPrimitiveMinimality",
+      theoremName := "total_extension_primitive_independence", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TOTAL-PUBLICATION-READINESS-001", moduleName := "D0.Verification.TotalPublicationReadiness",
+      theoremName := "total_publication_ready", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
