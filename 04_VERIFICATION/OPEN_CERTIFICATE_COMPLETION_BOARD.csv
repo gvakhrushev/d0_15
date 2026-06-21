@@ -56,6 +56,14 @@ vp_finite_feedback_equation_of_state.py,(none - guard/aggregate cert),none,green
 vp_finite_spin2_wave_operator.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_five_front_construction_no_overclaim.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_five_math_stitches_no_overclaim.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_book_sync.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_no_false_physical_promotion.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_no_fitted_cmb_window.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_no_manual_basis.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_no_posthoc_group_restriction.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_no_trace_as_intertwiner.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_raw_input_provenance.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
+vp_five_primitive_two_completion_validity.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_four_physics_front_no_overclaim.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_fractal_continuum_predictions.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard
 vp_gauge_matter_dependency_graph.py,(none - guard/aggregate cert),none,green-unregistered,keep as gate/guard cert (not a claim owner),remains a green regression guard

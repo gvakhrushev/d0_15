@@ -41,6 +41,7 @@ D0.Bridge.finite_causal_tick_section_cone_speed_eq_one
 Gravity runtime boundary tokens: eta4 terminal signature, δ₀ finite readout cut, heat trace scale is internal, not SI time.
 
 **[Raw history category].** The raw `Hist_D0` closes only as a strict subcategory (terminal H2): the `Aut`-groupoid on the base scene is certified (commutant 12, `Aut=S₉×S₁₁×S₁₃` from distinct part sizes), but the general cross-stage refinement morphism is absent (`PRIM-SCENE-HISTORY-REFINEMENT-RULE`) -- `D0-RAW-HISTORY-CATEGORY-001`.
+**[Five-primitive: history H3].** The all-walks and non-backtracking refinement towers are independently generated and inequivalent (Perron 21.84 vs 20.83; 15708 vs 14990) — several admissible towers, no unique refinement rule (`D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001`, H3); no forced CMB window.
 ## 06.1 Standard reading of evolution and forgetting
 
 Definition. D0 forgetting is one of the following standard operations, depending on context: conditional expectation onto a retained algebra, partial trace over an environment, Wilsonian coarse-graining, or entropy-selected coupling. The D0 archive is the traced-out complement produced by that operation.

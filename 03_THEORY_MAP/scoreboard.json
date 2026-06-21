@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 6104,
-    "track_fair_max": 8468,
+    "realized": 6188,
+    "track_fair_max": 8584,
     "pct_strength": 72.1,
-    "core_realized": 4828,
-    "core_potential": 7160,
-    "core_headroom": 2332,
-    "n_claims": 483,
-    "n_active": 481,
+    "core_realized": 4876,
+    "core_potential": 7240,
+    "core_headroom": 2364,
+    "n_claims": 490,
+    "n_active": 488,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 282,
-      "realized": 3973,
-      "max": 4980,
-      "core_headroom": 997
+      "n": 287,
+      "realized": 4033,
+      "max": 5056,
+      "core_headroom": 1013
     },
     "rg": {
       "n": 7,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 44,
-      "realized": 108,
-      "max": 880,
-      "core_headroom": 772
+      "n": 46,
+      "realized": 132,
+      "max": 920,
+      "core_headroom": 788
     }
   },
   "by_book": {
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 85,
-      "realized": 1074,
-      "max": 1496,
-      "core_headroom": 412
+      "n": 88,
+      "realized": 1110,
+      "max": 1548,
+      "core_headroom": 428
     },
     "BOOK_04/08": {
       "n": 7,
@@ -172,10 +172,10 @@
       "core_headroom": 88
     },
     "BOOK_08": {
-      "n": 80,
-      "realized": 1048,
-      "max": 1472,
-      "core_headroom": 420
+      "n": 82,
+      "realized": 1072,
+      "max": 1504,
+      "core_headroom": 428
     },
     "BOOK_05/06": {
       "n": 6,
@@ -316,9 +316,9 @@
       "core_headroom": 36
     },
     "BOOK_06": {
-      "n": 38,
-      "realized": 461,
-      "max": 661,
+      "n": 39,
+      "realized": 473,
+      "max": 673,
       "core_headroom": 200
     },
     "BOOK_01/06": {
@@ -388,10 +388,10 @@
       "core_headroom": 61
     },
     "BOOK_05": {
-      "n": 25,
-      "realized": 327,
-      "max": 464,
-      "core_headroom": 137
+      "n": 26,
+      "realized": 339,
+      "max": 484,
+      "core_headroom": 145
     },
     "BOOK_00/05": {
       "n": 1,
@@ -1215,6 +1215,46 @@
     },
     {
       "claim_id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-RAW-COMMUTANT-WEDDERBURN-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-FIVE-PRIMITIVE-DEPENDENCE-001",
       "domain": "formal_core",
       "book": "BOOK_05",
       "level_name": "LEAN_PROVED",
@@ -3708,6 +3748,34 @@
     },
     {
       "claim_id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-RAW-COMMUTANT-WEDDERBURN-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-FIVE-PRIMITIVE-DEPENDENCE-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
@@ -10477,12 +10545,110 @@
       "book": "BOOK_02",
       "leverage": 5,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-RAW-COMMUTANT-WEDDERBURN-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "LEAN_PROVED",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "LEAN_PROVED",
+      "domain": "frontier",
+      "book": "BOOK_08",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-FIVE-PRIMITIVE-DEPENDENCE-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_05",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 4.0,
+    "penalty_total": 3.8,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -10527,8 +10693,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 40,
-        "points": -4.0,
+        "count": 38,
+        "points": -3.8,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -10577,8 +10743,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 40,
-        "points": -4.0,
+        "count": 38,
+        "points": -3.8,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

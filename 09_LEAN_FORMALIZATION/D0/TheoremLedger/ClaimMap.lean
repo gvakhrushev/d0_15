@@ -730,7 +730,21 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-RAW-PRIMITIVE-MINIMALITY-001", moduleName := "D0.SelfReading.PrimitiveMinimalityFromRawFunctor",
       theoremName := "raw_primitive_conjunction_of_independent", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-RAW-ALPHA-ANALYTIC-RESIDUE-BOUNDARY-001", moduleName := "D0.Spectral.RawSelfReadingAnalyticResidueBoundary",
-      theoremName := "raw_alpha_terminal_A3", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "raw_alpha_terminal_A3", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-RAW-COMMUTANT-WEDDERBURN-001", moduleName := "D0.Extensions.RawCommutantWedderburn",
+      theoremName := "raw_commutant_wedderburn", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001", moduleName := "D0.Extensions.GradingNeutralCurrentConstruction",
+      theoremName := "grading_neutral_current_G2", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001", moduleName := "D0.Extensions.SceneHistoryRefinementConstruction",
+      theoremName := "scene_history_refinement_H3", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001", moduleName := "D0.Extensions.LeptonBranchSelectorConstruction",
+      theoremName := "lepton_branch_selector_L4", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001", moduleName := "D0.Extensions.ArchiveCommonSectorConstruction",
+      theoremName := "archive_common_sector_P1C", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001", moduleName := "D0.Extensions.PhasonCoordinateFunctorConstruction",
+      theoremName := "phason_coordinate_P2E", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIVE-PRIMITIVE-DEPENDENCE-001", moduleName := "D0.Extensions.FivePrimitiveSemanticDependence",
+      theoremName := "five_primitive_dependence", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

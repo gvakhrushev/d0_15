@@ -1,0 +1,6 @@
+requires(col)<-(row)? row->col,G,H,L,P1,P2
+G,self,non-derivation,non-derivation,non-derivation,non-derivation
+H,non-derivation,self,non-derivation,non-derivation,non-derivation
+L,non-derivation,non-derivation,self,non-derivation,non-derivation
+P1,non-derivation,non-derivation,non-derivation,self,edge
+P2,non-derivation,non-derivation,non-derivation,non-derivation,self

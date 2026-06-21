@@ -7,33 +7,33 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 23
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 151
+- `CERT-CLOSED`: 153
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 56
+- `NO-GO`: 59
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 19
-- `PROOF-TARGET`: 44
+- `PROOF-TARGET`: 46
 
 ## Type counts
 
 - `bridge`: 31
-- `certificate`: 176
+- `certificate`: 178
 - `core`: 165
 - `deprecated`: 3
-- `frontier`: 44
-- `no-go`: 64
+- `frontier`: 46
+- `no-go`: 67
 
 ## Domain counts
 
 - `cosmology`: 50
 - `empirical_passport`: 32
 - `external_background`: 1
-- `formal_core`: 283
-- `frontier`: 44
+- `formal_core`: 288
+- `frontier`: 46
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
 - `rg`: 7
@@ -1768,6 +1768,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter7 cross-bridge, self-calibrated MECH-LIMIT NOT forcing] I_f=log phi reached two independent ways: (1) Fibonacci anyon quantum dim d_tau=phi, unique positive root of d^2=d+1 (fusion tau(x)tau=1+tau; Nayak et al. RMP 80, 1083, 2008); state growth ~phi^n => log phi per step. (2) Toral automorphism T=[[0,1],[1,-1]] charpoly x^2+x-1 (trace -1, det -1), eigenvalue of largest magnitude -phi, spectral radius |-phi|=phi => h_KS=log phi. Lean D0.Claims.FibonacciIfBridge (fibonacci_if_bridge) proves phi^2=phi+1 AND (-phi)^2+(-phi)-1=0 AND |-phi|=phi (the same phi two ways; reuses D0.Core.Phi phi_sq). Certs vp_fibonacci_if_bridge.py;vp_fibonacci_if_bratteli.py. NOTE the two quadratics differ by a sign (x^2-x-1 fusion vs x^2+x-1 toral); phi and -phi are different roots sharing magnitude phi, not conflated. [Iter18] NAMED GAP CLOSED at the entropy/finite-equivalence level: the categorical<->toral ISOMORPHISM is now CONSTRUCTED -- the fusion matrix N_tau=[[0,1],[1,1]] is the golden-mean SFT transition matrix (primitive, N^2=N+I, Perron eigenvalue phi, topological entropy log(Perron)=log phi by Parry) and the toral T has the SAME entropy log phi via the SAME mechanism (log Perron of a golden-growth integer matrix); equal-entropy irreducible SFTs are finitely equivalent (cert vp_fibonacci_if_bratteli.py, exact Z + Q(phi)). So I_f=log phi is THE for the VALUE and its MECHANISM (the prior MECH-LIMIT is lifted). The strongest equivalence -- a full topological CONJUGACY (Williams shift-equivalence) -- is NOT implied by equal entropy and stays the cited EXTERNAL OWNER (D0-ADLER-WEISS-PARTITION-OWNER-001 / ASSUMP-ADLER-WEISS; Adler-Weiss 1967). Links the I_f=log phi GW horizontal-hum (Book 09).
 
+### D0-FIVE-PRIMITIVE-DEPENDENCE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Extensions.FivePrimitiveSemanticDependence`
+- theorem: `five_primitive_dependence`
+- cert: `vp_five_primitive_semantic_dependence.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Cross-lane minimality] Real construction-dependence graph (NOT identifier lists): exactly one asymmetric edge P1->P2 (the coordinate functor requires the pressure-energy sector); G,H,L mutually independent and independent of P1/P2; no merge. Lean D0.Extensions.FivePrimitiveSemanticDependence; FIVE_PRIMITIVE_SEMANTIC_DEPENDENCE_MATRIX.csv, NONDERIVATION_WITNESSES.md, MERGER_THEOREMS.md.
+
 ### D0-FOURCOLOR-HORIZON-CAPACITY-001
 
 - type: `certificate`
@@ -2235,6 +2248,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Raw Track I-C] Terminal S3 (partial functor, de-stipulated): the forced skeleton S0 is RAW-derived (commutant 12 = pair-orbit count, 2|E|=718 by native_decide) and unique on the strict subcategory; it does NOT extend to a total functor (disputed nc 8!=12; exactly 2 extension proof-edges). Confirms the prior Outcome D from the raw side, removing the stipulation caveat for the forced part. Lean D0.SelfReading.RawCanonicalSelfReadingFunctor.
+
+### D0-RAW-COMMUTANT-WEDDERBURN-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Extensions.RawCommutantWedderburn`
+- theorem: `raw_commutant_wedderburn`
+- cert: `vp_grading_raw_commutant.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [Lane G, task 3.3 -- NEW] The raw commutant Wedderburn structure (what dim 12 alone does NOT give): center dim 4 (4 simple blocks), block dims (9,1,1,1) summing to the frozen commutant 12, with the M3 block dim 9 = (3 diagonal pair-orbit classes)^2 = rank(A)=3 (trivial-isotype mult) -- by native_decide, NOT stipulated. => Comm_raw = M3(C) + C + C + C. The three standards (std9/11/13) are 1-dim (distinct part sizes => non-isomorphic). Lean D0.Extensions.RawCommutantWedderburn.
 
 ### D0-RAW-HISTORY-CATEGORY-001
 
@@ -4316,6 +4342,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Role-to-operator campaign Phase A] NO-GO: no canonical (Aut-orbit-determined) rank-5 role-cycle carrier exists. Aut(K(9,11,13))=S9xS11xS13 (distinct part sizes -> no part swaps; orientation A->B->C->A preserved) acts TRANSITIVELY on the 9*11*13=1287 oriented triangles, so the primitive cycle class is a SINGLE orbit; the 5 operational roles have no intrinsic geometric attachment, so a canonical assignment would inject 5 roles into 1 orbit-class -- impossible (pigeonhole, Lean Fintype.card_le_of_injective). Any rank-5 carrier requires arbitrary symmetry-breaking = the forbidden manual list. ROOT CAUSE of the role-bound PROOF-TARGETs (flow->Weyl Phi, CKM address-action, role-bound lepton branches, the unified functor): their physical content is owned by NON-role routes (anomaly row, cardinality class-5, ramification branch index), but the CANONICAL role carrier they would be built from does not exist. Missing structure: a canonical role->vertex-sector attachment the scene does not supply. Lean D0.Matter.DSigmaRoleCycleCarrierNoGo; cert vp_dsigma_role_cycle_carrier_nogo.py.
 
+### D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Extensions.GradingNeutralCurrentConstruction`
+- theorem: `grading_neutral_current_G2`
+- cert: `vp_five_primitive_no_rank_to_neutrino_shortcut.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Lane G terminal G2 -- TWO-COMPLETION] On the DERIVED M3 block, a Z2-grading signature (p,q), p+q=3, gives neutral-current count nc=p^2+q^2+3: (2,1)->8 != (3,0)->12, both anomaly-free + S3-symmetric. The grading operator is NOT forced; N_active is grading-dependent, never rank-3. Witness-only (no whole-class exhaustion). Cites D0-RAW-COMMUTANT-WEDDERBURN-001, D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001. EXACT-MISSING: PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR.
+
 ### D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001
 
 - type: `no-go`
@@ -4420,6 +4459,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [8C orphan-harvest] freezes V3-V12 negative discovery scans; blocks proxy promotion.
 
+### D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_08`
+- module: `D0.Extensions.ArchiveCommonSectorConstruction`
+- theorem: `archive_common_sector_P1C`
+- cert: `vp_five_primitive_operator_type_firewall.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Lane P1 terminal P1-C -- CLASS-SCOPED-MAXIMALITY-NOGO] No typed common sector across {L_archive,QUQ,W_eff,log-det pressure,S_DE}: integer L_archive spectrum {24,22,20} incommensurate with the irrational S_DE window (product 359/160); distinct carriers, no canonical intertwiner in the admissible map class (universal-property obstruction). No trace/det coincidence is an intertwiner. EXACT-MISSING: PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT.
+
 ### D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001
 
 - type: `no-go`
@@ -4497,6 +4549,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [ROOT R1] Aut(K(9,11,13))=S9xS11xS13 perm rep on C^33: isotypes (mult 3,1,1,1; dims 1,8,10,12), carrier 33, commutant dim Sum m^2 = 3^2+1+1+1 = 12. The generation count 3 = trivial-isotype multiplicity is RANK-ONLY: commutant block 9>1 (GL(3) basis freedom) => Weyl-role assignment unforced (>=2 admissible). No finite spectral-triple representation (rho,Gamma,J,Pi) is forced by frozen data. Missing: PRIM-FINITE-SPECTRAL-TRIPLE-REP. Cites D0-SM-HYPERCHARGE-ROW-OWNER-001, D0-MATTER-REP-001, D0-DSIGMA-ROLE-CYCLE-CARRIER-NOGO-001 (no new count). EXACT-MISSING: PRIM-FINITE-SPECTRAL-TRIPLE-REP. SCOPE-REPAIR: proves no UNIQUE Weyl-role assignment in the audited finite rep class without a role-resolution functor; does NOT prove no representation reconstruction can ever exist.
+
+### D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_06`
+- module: `D0.Extensions.SceneHistoryRefinementConstruction`
+- theorem: `scene_history_refinement_H3`
+- cert: `vp_five_primitive_no_scene_copy_refinement.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [Lane H terminal H3 -- TWO-COMPLETION] All-walks (Perron 21.84, depth-2 15708) and non-backtracking (Perron 20.83, 14990) are independently-generated, admissible, inequivalent refinement towers (refined operators NOT L_n:=J L_scene C). No-phi^3 holds in both (min-successor 19). No forced CMB window. Witness-only. Cites D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001. EXACT-MISSING: PRIM-SCENE-HISTORY-REFINEMENT-RULE.
 
 ### D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001
 
@@ -5060,6 +5125,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [Iter22 four-physics P4] t=0 is the connectivity threshold, NOT a singularity (THE 61.4, prose-owned); the threshold-replaces-inflaton structure is the connectivity owner (D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001). MISSING (exact): the precise reheating ENERGY budget + rate from the discrete rank evolution d_V F_N + feedback pressure. cert vp_inflationless_early_universe_owner.py (controls: inflaton inserted rejected; t=0 singularity rejected; arbitrary threshold rejected). PROOF-TARGET; no inflaton, no Planck datum. EXACT-MISSING: external cosmology passport for the THE 61.4 prose value (connectivity-threshold structure owned).
 
+### D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_04`
+- module: `D0.Extensions.LeptonBranchSelectorConstruction`
+- theorem: `lepton_branch_selector_L4`
+- cert: `vp_five_primitive_no_branch_to_generation_shortcut.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Lane L terminal L4] The orbit sizes {4,3} are intrinsically distinct, so the orbit-keyed exponent selector (4->1/4, 3->1/3, 1/4!=1/3) is branch-sensitive WITHOUT post-hoc group narrowing; but 2 orbits < 3 generations, so the full branch->generation row needs one exact new operator. Decimals stay EFT/IR passport. Cites D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001. EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR (the branch->generation row operator).
+
 ### D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001
 
 - type: `frontier`
@@ -5163,6 +5241,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [8C orphan-harvest] SPARC rotation-curve external-data passport. [Iter21 OVER-CLAIM FIXED] EMPIRICAL-PASSPORT/PYTHON_CERTIFIED -> PROOF-TARGET/OPEN: the prior cert was a print-stub (hard-coded E_seam=0.0/2.0, unconditional PASS, no data). Rewritten to a FORM/VALUE split -- the seam-gap FORM (commuting generator -> E_seam=0; non-commuting -> ||[A,B]||^2>0, with a negative control) is now a real can-FAIL computation, and the VALUE confrontation vs the SPARC rotation-curve database (Lelli-McGaugh-Schombert 2016, 175 galaxies) emits SKIP_SPARC_EXTERNAL_DATA_REQUIRED (database not present/pinned). Cert removed from the check_cert_can_fail GRANDFATHER set.
+
+### D0-PHASON-COORDINATE-FUNCTOR-OWNER-001
+
+- type: `frontier`
+- release_status: `PROOF-TARGET`
+- domain: `frontier`
+- book: `BOOK_08`
+- module: `D0.Extensions.PhasonCoordinateFunctorConstruction`
+- theorem: `phason_coordinate_P2E`
+- cert: `vp_five_primitive_no_manual_redshift.py`
+- assumptions: `none`
+- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
+- notes: [Lane P2 terminal P2-E -- EXTERNAL-PASSPORT-ONLY] Conditional on P1 (= P1-C, no sector): no internal coordinate functor is forced (candidate cocycles diverge, phi-1!=1); the physical coordinate map is external-passport-only and the physical w_DE(z) stays a maximality no-go (D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001). EXACT-MISSING: external redshift observable (passport datum). No internal coordinate = observed redshift.
 
 ### D0-PHASON-WDE-Z-MAP-OWNER-001
 
