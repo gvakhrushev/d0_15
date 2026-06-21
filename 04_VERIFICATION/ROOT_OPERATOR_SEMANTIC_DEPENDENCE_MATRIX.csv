@@ -1,0 +1,6 @@
+proof_uses(row)->(col),R1,R2,R3,R4,R5
+R1,self,-,-,-,-
+R2,-,self,-,-,-
+R3,-,-,self,-,edge
+R4,-,-,-,self,-
+R5,-,-,-,-,self

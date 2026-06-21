@@ -87,6 +87,7 @@ Gravity proof-spine anchors: Entropic archive gravity interface, Finite spin-2 w
 
 Book 04 operator-boundary anchor: `02.36.3b Book 04 operator-boundary closure`, `D0.Matter.book04_operator_boundaries_closed`, `nucleon_line_cannot_promote_full_baryon_multiplet`, `lower_hodge_400_cannot_promote_meson_masses`, `missing_scalar_projector_cannot_promote_higgs_yukawa_core`.
 
+**[Root R5 — alpha log-Cesàro no-go].** At the critical rate `a=3` the ordinary log-Cesàro/Dixmier limit of the forced singular values is `1/(3·log φ)`, transcendental (`ASSUMP-LINDEMANN-LNPHI`) and so never the rational moment `μ₂=12288/5` — `D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001` (Lean `D0.Spectral.AlphaLogCesaroMeasurability`, reusing `D0-CVFT-F1`); positive realization stays the external `D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001`.
 ## 02.1 Standard proof-language convention
 
 Every proof cell in this book is written in the sequence:

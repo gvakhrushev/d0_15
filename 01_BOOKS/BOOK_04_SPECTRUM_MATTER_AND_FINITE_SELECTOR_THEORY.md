@@ -179,6 +179,7 @@ CKM origin sync: CKM as finite basis origin, not a free matrix; `D0.Matter.CKMBa
 
 Torus/Core13 and phason-baryon sync: `torus_geometry_forces_generation_selector_noncommute`; `torus_shell_noncommutativity_forces_nonpermutation_overlap_source`; `BaryonTripleShellCarrier`; Torus shell radius is independent of any Higgs VEV; matter generations and baryons are phason modes with `baryon_phason_symmetric_sector_dim_eq_ten`.
 
+**[Root R1/R4 — representation & lepton-branch no-gos].** The `Aut`-rep on `ℂ³³` has commutant dim `3²+1+1+1=12`; the generation count 3 is the trivial-isotype multiplicity (rank-only, `GL(3)` basis freedom), so the Weyl-role assignment is unforced — `D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001` (Lean `D0.Representation.FinitePathRepresentation`), missing `PRIM-FINITE-SPECTRAL-TRIPLE-REP`. The frozen shell-torus `Ueff=blockdiag(4-cycle,3-cycle)` has det `(1−z⁴)(1−z³)` and order 12, but the block→generation assignment is free (`σ_A≠σ_B`, both order 12) — `D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001` (Lean `D0.Matter.LeptonBranchAssignmentNoGo`), missing `PRIM-LEPTON-BRANCH-FIXING-OPERATOR`; decimals stay an EFT/IR passport.
 ## 04.U Matter as defects and gap-labeled spectra of the φ-quasicrystal hull
 
 Neutrino is interpreted as neutral bulk phason wave; `neutral_phason_wave_has_no_em_coupling` is the finite owner token.

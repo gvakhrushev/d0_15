@@ -676,7 +676,19 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-TOTAL-EXTENSION-PRIMITIVES-MINIMALITY-001", moduleName := "D0.Verification.TotalExtensionPrimitiveMinimality",
       theoremName := "total_extension_primitive_independence", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-TOTAL-PUBLICATION-READINESS-001", moduleName := "D0.Verification.TotalPublicationReadiness",
-      theoremName := "total_publication_ready", status := ClaimStatus.leanCoreProved }
+      theoremName := "total_publication_ready", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001", moduleName := "D0.Representation.FinitePathRepresentation",
+      theoremName := "representation_reconstruction_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ARCHIVE-CONTRACTION-NOGO-001", moduleName := "D0.Cosmology.ArchiveContractionCriterion",
+      theoremName := "archive_contraction_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001", moduleName := "D0.Spectral.SceneNativeMultiscaleTower",
+      theoremName := "multiscale_tower_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001", moduleName := "D0.Matter.LeptonBranchAssignmentNoGo",
+      theoremName := "lepton_branch_assignment_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001", moduleName := "D0.Spectral.AlphaLogCesaroMeasurability",
+      theoremName := "alpha_log_cesaro_ne_mu2", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-ROOT-OPERATOR-SEMANTIC-DEPENDENCE-001", moduleName := "D0.Verification.RootOperatorSemanticDependence",
+      theoremName := "root_operator_semantic_dependence", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

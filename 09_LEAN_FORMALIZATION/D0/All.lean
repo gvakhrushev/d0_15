@@ -103,6 +103,7 @@ import D0.Core.FixedDetectorTimeLadder
 import D0.Core.MatrixResponse
 import D0.Core.Phi
 import D0.Core.PositiveResponse
+import D0.Cosmology.ArchiveContractionCriterion
 import D0.Cosmology.ArchiveConvexity
 import D0.Cosmology.ArchiveHomogeneousState
 import D0.Cosmology.ArchiveVolumeBounds
@@ -325,6 +326,7 @@ import D0.Matter.HyperchargeFlowLattice
 import D0.Matter.HyperchargeGraphFlowOwner
 import D0.Matter.HyperchargeMinimalDenominator
 import D0.Matter.KTheoryGapLabeling
+import D0.Matter.LeptonBranchAssignmentNoGo
 import D0.Matter.LeptonFiniteGreenResolventOwner
 import D0.Matter.LeptonGreenPuiseuxOwner
 import D0.Matter.LeptonPuiseuxUniquenessObstruction
@@ -378,8 +380,10 @@ import D0.Probability.HSTExternalInterface
 import D0.Probability.SubgaussianArchive
 import D0.RG.OneLoopStructure
 import D0.RG.PhiDifference
+import D0.Representation.FinitePathRepresentation
 import D0.Response
 import D0.Spectral.AlphaFeshbachDixmierOwner
+import D0.Spectral.AlphaLogCesaroMeasurability
 import D0.Spectral.AlphaPresentCoreMaximalityNoGo
 import D0.Spectral.AlphaProfiniteSpectralTower
 import D0.Spectral.AlphaProfiniteTowerNoGo
@@ -390,6 +394,7 @@ import D0.Spectral.DeltaAlphaMoment
 import D0.Spectral.DeltaAlphaNormalizationNoGo
 import D0.Spectral.DeltaAlphaResidueBlocked
 import D0.Spectral.DixmierFeshbachFiniteHeatTrace
+import D0.Spectral.SceneNativeMultiscaleTower
 import D0.Spectral.SeamHolonomy
 import D0.Spectral.ZetaResidueAlpha
 import D0.Spectral.ZoneMatrixSpectrum
@@ -437,6 +442,7 @@ import D0.VNext2.SceneNativeRefinementClassification
 import D0.VNext2.SceneSpectralFingerprint
 import D0.Verification.FinalResearchClosureBoundary
 import D0.Verification.PresentCoreMaximality
+import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary
 import D0.Verification.TotalExtensionPrimitiveMinimality
 import D0.Verification.TotalPublicationReadiness

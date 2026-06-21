@@ -1,0 +1,126 @@
+{
+  "hard_rule": "No proposed operator may use a coefficient, basis, label, normalization, window, observable, or external datum not present in this inventory.",
+  "inventory_count_scouted": 136,
+  "objects": [
+    {
+      "object_id": "K_9_11_13",
+      "repository_path": "D0/Geometry,D0/Spectral",
+      "mathematical_type": "complete tripartite graph",
+      "level": "finite",
+      "symmetry": "S9xS11xS13",
+      "basis_status": "basis-free",
+      "existing_owner": "D0-SCENE-001",
+      "downstream_uses": "scene carrier; all roots"
+    },
+    {
+      "object_id": "L_scene",
+      "repository_path": "D0/Spectral",
+      "mathematical_type": "combinatorial Laplacian (spectrum {0:1,20:12,22:10,24:8,33:2})",
+      "level": "finite",
+      "symmetry": "Aut",
+      "basis_status": "basis-free",
+      "existing_owner": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "downstream_uses": "R2,R3"
+    },
+    {
+      "object_id": "A_scene",
+      "repository_path": "D0/Geometry",
+      "mathematical_type": "adjacency (Perron 21.84; rank 3, ker 30)",
+      "level": "finite",
+      "symmetry": "Aut",
+      "basis_status": "basis-free",
+      "existing_owner": "D0-SCENE-001",
+      "downstream_uses": "R1,R3"
+    },
+    {
+      "object_id": "K_scene=ker A_scene",
+      "repository_path": "D0/Spectral",
+      "mathematical_type": "30-dim archive sector (within-part dims 8,10,12)",
+      "level": "finite",
+      "symmetry": "Aut",
+      "basis_status": "basis-free",
+      "existing_owner": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "downstream_uses": "R1,R2,R3 substrate"
+    },
+    {
+      "object_id": "S_DE_active_window",
+      "repository_path": "05_CERTS/vp_scene_active_eigenvalues_exact.py",
+      "mathematical_type": "2D Riesz sector {3/2 +/- sqrt10/40}, product 359/160",
+      "level": "finite",
+      "symmetry": "Aut",
+      "basis_status": "basis-free (Riesz)",
+      "existing_owner": "D0-SCENE-ACTIVE-EIGENVALUES-001",
+      "downstream_uses": "R2"
+    },
+    {
+      "object_id": "phi_ladder",
+      "repository_path": "D0/Core/Phi.lean",
+      "mathematical_type": "golden semigroup, phi^2=phi+1",
+      "level": "profinite",
+      "symmetry": "-",
+      "basis_status": "basis-free",
+      "existing_owner": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+      "downstream_uses": "R3,R5"
+    },
+    {
+      "object_id": "profinite_weight_phi^-3N",
+      "repository_path": "D0/Spectral/AlphaProfiniteSpectralTower.lean",
+      "mathematical_type": "forced singular-value weight",
+      "level": "profinite",
+      "symmetry": "-",
+      "basis_status": "basis-free",
+      "existing_owner": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "downstream_uses": "R5"
+    },
+    {
+      "object_id": "mu2=12288/5",
+      "repository_path": "D0/Spectral",
+      "mathematical_type": "frozen second moment",
+      "level": "scalar",
+      "symmetry": "-",
+      "basis_status": "n/a",
+      "existing_owner": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "downstream_uses": "R5"
+    },
+    {
+      "object_id": "shellTorus_Ueff",
+      "repository_path": "D0/Matter/LeptonGreenPuiseuxOwner.lean",
+      "mathematical_type": "blockdiag(4-cycle,3-cycle) on 7 pts, det (1-z^4)(1-z^3)",
+      "level": "finite",
+      "symmetry": "C4xC3",
+      "basis_status": "fixed (rfl inputs 4,3)",
+      "existing_owner": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+      "downstream_uses": "R4"
+    },
+    {
+      "object_id": "Q8_Omega8_role",
+      "repository_path": "D0/Capacity.lean",
+      "mathematical_type": "role carrier",
+      "level": "finite",
+      "symmetry": "Q8",
+      "basis_status": "basis-free",
+      "existing_owner": "D0-DSIGMA-ROLE-CYCLE-CARRIER-NOGO-001",
+      "downstream_uses": "R1"
+    },
+    {
+      "object_id": "anomaly_row",
+      "repository_path": "D0/Gauge",
+      "mathematical_type": "one-generation hypercharge cubic -18a(t-3a)(t+3a)",
+      "level": "finite",
+      "symmetry": "-",
+      "basis_status": "n/a",
+      "existing_owner": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "downstream_uses": "R1 consistency test only"
+    },
+    {
+      "object_id": "LindemannLnPhi",
+      "repository_path": "D0/Bridge/Assumptions/LindemannLnPhi.lean",
+      "mathematical_type": "Transcendental Q (log phi)",
+      "level": "external",
+      "symmetry": "-",
+      "basis_status": "n/a",
+      "existing_owner": "ASSUMP-LINDEMANN-LNPHI",
+      "downstream_uses": "R5 (cited, not axiom)"
+    }
+  ]
+}

@@ -7,13 +7,13 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 20
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 136
+- `CERT-CLOSED`: 138
 - `CORE-FORMALIZED`: 164
 - `CORE_BRIDGE_SPLIT`: 6
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 6
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 46
+- `NO-GO`: 51
 - `NO_GO_PROVED`: 8
 - `PASSPORT-CLOSED`: 19
 - `PROOF-TARGET`: 44
@@ -21,18 +21,18 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 28
-- `certificate`: 161
+- `certificate`: 163
 - `core`: 165
 - `deprecated`: 3
 - `frontier`: 44
-- `no-go`: 54
+- `no-go`: 59
 
 ## Domain counts
 
-- `cosmology`: 49
+- `cosmology`: 50
 - `empirical_passport`: 31
 - `external_background`: 1
-- `formal_core`: 257
+- `formal_core`: 263
 - `frontier`: 44
 - `gauge_bridge`: 21
 - `interpretation_spine`: 1
@@ -601,6 +601,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: [Iter21 cert->Lean, verify-then-promote] Finite S_DE algebra machine-checked in D0.Cosmology.PhasonFlipEntropy: the explicit 2x2 phason-flip transfer (3/2,1/16,1/10,3/2) has characteristic 160*char = 160 lambda^2 - 480 lambda + 359 (phason_flip_transfer_matrix_has_sde_polynomial, norm_num+ring), and its roots are exactly the relaxation modes (sde_roots_are_phason_flip_relaxation_modes). SUPERSEDES the Phase-L note: the removed placeholder (stmt)(h):=h is gone; these are real proofs, re-verified by reading the module. External BAO/DESI survey comparison stays an empirical passport; the K0/Connes spectral-triple/phason-holonomy GAP-LABELING is external (see D0-SDE-K0-001), not part of this finite-algebra row.
+
+### D0-ARCHIVE-CONTRACTION-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Cosmology.ArchiveContractionCriterion`
+- theorem: `archive_contraction_nogo`
+- cert: `vp_root_r2_archive_contraction.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [ROOT R2] Archive sector K_scene=ker A_scene has L|ker = D|ker with spectrum = degrees {24,22,20}, all > 1 > phi^-1; the contraction QUQ=psi*V (|psi|=phi^-1) is unwitnessable without an external rescale by 2|E|=718 (a count) -- so the named-unproven Feshbach residual rho(QUQ)<1 of D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001 is FALSE for the unique concrete frozen U=L_scene (radius 24). The S_DE active 2D window {3/2 +/- sqrt10/40} has product 359/160; two role assignments give w_A=361/359-12sqrt10/359 != w_B => w(z) underdetermined. Sharpens D0-PHASON-WZ-KERNEL-ONLY-NOGO-001 (frozen Riesz eigenpair vs hand-picked rationals); blocks OPEN D0-PHASON-WZ-TRANSFER-OWNER-001. EXACT-MISSING: PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT.
 
 ### D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001
 
@@ -2105,6 +2118,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter17 ТЗ Phase C, verify-then-promote] The rank-3 SPATIAL metric is the equitable-quotient transport quadratic form of K(9,11,13), B=[[0,11,13],[9,0,13],[9,11,0]], charpoly lambda^3-359 lambda-2574 (359=|E| coupling); eigenvalues ~ {-12.08,-9.76,+21.84} = non-degenerate (1+,2-) form => light cone = null set. FALSIFIABLE ANISOTROPY: zones 9!=11!=13 split the two negative eigenvalues (-12.08!=-9.76) => spatial metric anisotropic at carrier level; isotropic only in equal-zone limit (n,n,n) spectrum {2n,-n,-n}. Cert vp_rank3_metric_transport.py (can-FAIL; controls: equal-zones isotropic, wrong zones change the form). HONEST: realizes the spatial quadratic FORM + null cone + anisotropy falsifier; does NOT fix the cone-speed/dimensionful unit (that is the c=1/Connes question, separate); distinct object from the (3,1) Pisot-counting signature (D0-RANK3-CAUSAL-CONE-FORCING-001) -- NOT conflated. Anisotropy is a Planck-level PASSPORT-TARGET falsifier.
+
+### D0-ROOT-OPERATOR-COMPLETION-PROGRAM-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: ``
+- theorem: `none`
+- cert: `vp_root_operator_no_status_only_closure.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [ROOT program root] Five generative roots R1-R5, each terminating in an exact NO-GO with one typed missing primitive; no new positive operator is forced by frozen data. ROOT_OPERATOR_COMPLETION_BOARD.csv, FROZEN_INPUTS.json, DEPENDENCY_GRAPH.md, BLOCKERS.csv, OPEN_JOINTS.csv, FORBIDDEN_SHORTCUTS.md, EXTERNAL_ASSUMPTION_MATRIX.csv, NEGATIVE_CONTROL_LEDGER.csv; 03_THEORY_MAP/D0_ROOT_OPERATOR_COMPLETION_MAP.md. 8 guards: vp_root_operator_{no_status_only_closure,no_manual_basis,no_external_observable_input,no_revival_of_closed_nogos,no_fit_before_operator,semantic_independence,book_sync,publication_firewall}.
+
+### D0-ROOT-OPERATOR-SEMANTIC-DEPENDENCE-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_05`
+- module: `D0.Verification.RootOperatorSemanticDependence`
+- theorem: `root_operator_semantic_dependence`
+- cert: `vp_root_operator_semantic_independence.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [ROOT Section 7] Real semantic dependency (NOT Nodup): exactly one directed proof-edge R3->R5 (rate_three_eq_one, asymmetric); R4 fully isolated; R1/R2/R3 share substrate K_scene with pairwise PROOF-independent conclusions. No primitives merge. ROOT_OPERATOR_SEMANTIC_DEPENDENCE_MATRIX.csv, ROOT_OPERATOR_INDEPENDENCE_WITNESSES.md.
 
 ### D0-SDE-K0-001
 
@@ -3965,6 +4004,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Deprecated or historical row; not a live promotion path.
 - notes: [Iter15 trace-leg split — CLOSED] The edge-alpha TRACE identity Tr(F_E)=359*phi^-2-phi^-5=alpha_top^-1 is proved (CORE) as D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one, with the phi^-5 seam = xi5 (D0-XI5). This separate trace-target row is therefore redundant and is DEPRECATED (superseded, not abandoned): the trace leg is closed at D0-ALPHA-ZETA-RESIDUE-001. The remaining open EDGE leg is the unitary-dilation / torus-ramification Puiseux target D0-EDGE-002.
 
+### D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.AlphaLogCesaroMeasurability`
+- theorem: `alpha_log_cesaro_ne_mu2`
+- cert: `vp_root_r5_alpha_log_cesaro.py`
+- assumptions: `ASSUMP-LINDEMANN-LNPHI`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [ROOT R5] At the critical rate a=3 (forced weight phi^-3N) the per-block mass is constant (phi^3*phi^-3=1, the cited rate_three_eq_one), so the ORDINARY log-Cesaro/Dixmier limit of the singular values = 1/(3 log phi). This is a nonzero Q(phi)-multiple of (log phi)^-1, hence transcendental (ASSUMP-LINDEMANN-LNPHI), so it is NEVER the rational moment mu2=12288/5 -- no frozen carrier realizes the ordinary Dixmier limit = mu2. Reuses D0-CVFT-F1 (delta_alpha_residue_route_blocked); positive realization stays external D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001. EXACT-MISSING: external Dixmier/Wodzicki carrier (PASSPORT).
+
 ### D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001
 
 - type: `no-go`
@@ -4108,6 +4160,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Iter22 deep-stitch] Ising excluded as a degree-2 CORE carrier: an Ising-type fusion carrier has 3 simple objects {1,sigma,psi} but the degree-2 toral-time algebra has only 2 eigen-branches; 3>2 forces an extra independent branch label not generated by p+p^2=1 (external catalog, M1-forbidden). Lean D0.Geometry.FibonacciAnyonUniqueness.ising_requires_extra_branch; cert vp_ising_anyon_exclusion.py (controls reject Ising-with-2-branches, hidden-psi). NO-GO: internal exclusion, NOT a full MTC classification.
 
+### D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Matter.LeptonBranchAssignmentNoGo`
+- theorem: `lepton_branch_assignment_nogo`
+- cert: `vp_root_r4_lepton_branch.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [ROOT R4] Shell-torus Ueff = blockdiag(4-cycle,3-cycle) on 7 pts: det(I-zU)=(1-z^4)(1-z^3), order 12, and (4,3) is the UNIQUE order-12 cycle type among all 15 partitions of 7 (resolvent invariants pin the cycle TYPE). But the block->generation ASSIGNMENT is free: sigmaA=(0123)(456) and sigmaB=(012)(3456) both have order exactly 12 (Lean: ^[12]=id, ^[4]!=id, ^[6]!=id) yet sigmaA != sigmaB; and c4=4,r3=3 are rfl INPUTS. So the coefficient row is underdetermined by the frozen Green resolvent. Complements D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001; blocks OPEN D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001; decimals stay EFT/IR passport. EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR.
+
 ### D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001
 
 - type: `no-go`
@@ -4146,6 +4211,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [8C orphan-harvest] freezes V3-V12 negative discovery scans; blocks proxy promotion.
+
+### D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Representation.FinitePathRepresentation`
+- theorem: `representation_reconstruction_nogo`
+- cert: `vp_root_r1_representation_reconstruction.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [ROOT R1] Aut(K(9,11,13))=S9xS11xS13 perm rep on C^33: isotypes (mult 3,1,1,1; dims 1,8,10,12), carrier 33, commutant dim Sum m^2 = 3^2+1+1+1 = 12. The generation count 3 = trivial-isotype multiplicity is RANK-ONLY: commutant block 9>1 (GL(3) basis freedom) => Weyl-role assignment unforced (>=2 admissible). No finite spectral-triple representation (rho,Gamma,J,Pi) is forced by frozen data. Missing: PRIM-FINITE-SPECTRAL-TRIPLE-REP. Cites D0-SM-HYPERCHARGE-ROW-OWNER-001, D0-MATTER-REP-001, D0-DSIGMA-ROLE-CYCLE-CARRIER-NOGO-001 (no new count). EXACT-MISSING: PRIM-FINITE-SPECTRAL-TRIPLE-REP.
+
+### D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Spectral.SceneNativeMultiscaleTower`
+- theorem: `multiscale_tower_nogo`
+- cert: `vp_root_r3_multiscale_tower.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [ROOT R3] Avg-degree Rayleigh bound: Perron(A) >= 2|E|/N = 718/33 ~ 21.76 > phi^3 = 4.236 (decidable surrogate 2*359 > 21*33), so NO frozen carrier has Perron growth phi^3 -- a distinct second proof of the phi^3-absence in D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001 (rate_three_eq_one). Refinement-rule underdetermination (depth-2 carriers 15708 != 14990, diff 2|E|=718) cited to D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001; backs D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001. No 4D/tilt claim. EXACT-MISSING: PRIM-SCENE-HISTORY-REFINEMENT-RULE.
 
 ### D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001
 

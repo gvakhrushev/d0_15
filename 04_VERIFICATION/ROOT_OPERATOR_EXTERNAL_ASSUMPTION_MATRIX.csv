@@ -1,0 +1,6 @@
+assumption_id,root,statement,internal_or_external,used_as,never
+ASSUMP-LINDEMANN-LNPHI,R5,Transcendental Q (log phi) (Lindemann-Weierstrass),external,cited hypothesis threaded into the no-go,global axiom
+SRC-CONNES-1994,R1,spectral-triple reconstruction conditions,external,consumer edge for a future PRIM-FINITE-SPECTRAL-TRIPLE-REP,internal source
+EXTERNAL-DIXMIER-WODZICKI,R5,positive analytic residue realization,external,positive-realization passport (deferred),CORE prediction
+EFT-IR-MATCHING,R4,decimal/mass matching functor,external,lepton coefficient decimals,internal selector
+DESI-CPL,R2,physical w(z) magnitude/redshift data,external,comparison only,operator-defining input
