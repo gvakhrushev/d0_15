@@ -782,7 +782,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PRESENT-CORE-LIMITS-REGRESSION-V15", moduleName := "D0.Integration.V15.PhysicalBoundary",
       theoremName := "regression_owners_present", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-AMS-HEAVY-NUCLEI-PASSPORT-001", moduleName := "D0.Integration.V15.PhysicalBoundary",
-      theoremName := "ams_is_passport", status := ClaimStatus.leanCoreProved }
+      theoremName := "ams_is_passport", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-Q8-TERMINAL-FOURIER-001", moduleName := "D0.UnifiedFiniteCore.Q8Terminal",
+      theoremName := "q8_terminal_fourier", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-UNIFIED-EDGE-SPINE-001", moduleName := "D0.UnifiedFiniteCore.UnifiedTheorem",
+      theoremName := "unified_finite_core", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

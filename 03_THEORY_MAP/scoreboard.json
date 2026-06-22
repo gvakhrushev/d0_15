@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 6434,
-    "track_fair_max": 8902,
+    "realized": 6466,
+    "track_fair_max": 8942,
     "pct_strength": 72.3,
-    "core_realized": 5044,
-    "core_potential": 7480,
-    "core_headroom": 2436,
-    "n_claims": 509,
-    "n_active": 507,
+    "core_realized": 5076,
+    "core_potential": 7520,
+    "core_headroom": 2444,
+    "n_claims": 511,
+    "n_active": 509,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 303,
-      "realized": 4248,
-      "max": 5327,
+      "n": 304,
+      "realized": 4268,
+      "max": 5347,
       "core_headroom": 1069
     },
     "rg": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 48,
-      "realized": 156,
-      "max": 960,
-      "core_headroom": 804
+      "n": 49,
+      "realized": 168,
+      "max": 980,
+      "core_headroom": 812
     }
   },
   "by_book": {
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 20,
-      "realized": 283,
-      "max": 375,
+      "n": 21,
+      "realized": 303,
+      "max": 395,
       "core_headroom": 92
     },
     "BOOK_02": {
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 95,
-      "realized": 1210,
-      "max": 1672,
-      "core_headroom": 452
+      "n": 96,
+      "realized": 1222,
+      "max": 1692,
+      "core_headroom": 460
     },
     "BOOK_04/08": {
       "n": 7,
@@ -1345,6 +1345,16 @@
     },
     {
       "claim_id": "D0-EDGE-COVER-FAMILY-001",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-UNIFIED-EDGE-SPINE-001",
       "domain": "frontier",
       "book": "BOOK_04",
       "level_name": "LEAN_PROVED",
@@ -3929,6 +3939,13 @@
     },
     {
       "claim_id": "D0-EDGE-COVER-FAMILY-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-UNIFIED-EDGE-SPINE-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
@@ -11062,12 +11079,40 @@
       "book": "BOOK_05",
       "leverage": 1,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-Q8-TERMINAL-FOURIER-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-UNIFIED-EDGE-SPINE-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "LEAN_PROVED",
+      "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 3.6,
+    "penalty_total": 3.5,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -11112,8 +11157,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 35,
+        "points": -3.5,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11162,8 +11207,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 35,
+        "points": -3.5,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

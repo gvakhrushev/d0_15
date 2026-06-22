@@ -489,6 +489,11 @@ import D0.Topology.WitnessHalting
 import D0.Tower.DetectionQuadratic
 import D0.Tower.NoExtension
 import D0.Traceability.StatusTaxonomy
+import D0.UnifiedFiniteCore.All
+import D0.UnifiedFiniteCore.PhiReplication
+import D0.UnifiedFiniteCore.Q8Terminal
+import D0.UnifiedFiniteCore.TerminalReturn
+import D0.UnifiedFiniteCore.UnifiedTheorem
 import D0.VNext.AFD0LaplacianComparisonNoGo
 import D0.VNext.AFD0SpectralInvariantComparison
 import D0.VNext.AFMartingaleDiracScaleNoGo
