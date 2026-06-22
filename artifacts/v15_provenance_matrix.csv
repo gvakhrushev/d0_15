@@ -1,0 +1,12 @@
+claim_id,frozen_source_owner,formula,proof_theorem,status
+D0-ZONE-CURRENT-001,D0-KERNEL-ZONE-SPLIT-001 (D0.Claims.KernelZoneSplit),"comm^3=-2840*comm; (G*comm)^T=-(G*comm); spectrum {0,+-2sqrt710}",D0.Integration.V15.RawZone.zone_current_spine,THE
+D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001,D0-ZONE-CURRENT-001,"P0+Pact=I; (G*Pact)^T=G*Pact; tr Pact=2, tr P0=1; neutral vec (143,-234,99)",D0.Integration.V15.RawZone.zone_current_spine,THE
+D0-FESHBACH-SCHUR-FACTORIZATION-V15,D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001,det Mfull=4=det(A-B*C); Mathlib det_fromBlocks_one22; -d/dz logdet(I-zU)=R_Q+R_P,D0.Integration.V15.Feshbach.feshbach_schur_factorization,THE (algebraic identity only)
+D0-BRANCH-CP-READOUT-NOGO-V15,D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001,commutantDim=3>1; rho1!=rho2 with equal diagonal,D0.Integration.V15.BranchAudit.branch_readout_not_unique,NO-GO
+D0-LEPTON-DECIMAL-MASS-RATIOS,D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001,"Vandermonde det at {0,1/4,1/3}=1/144!=0 -> any (r_mu,r_tau) realized by a smooth m(p)",D0.Integration.V15.BranchAudit.mass_ratio_underdetermined,NO-GO
+D0-P1-PHYSICAL-EOS,D0-ARCHIVE-CONTRACTION-NOGO-001,"(rho,p)=(3,1) and (1,3): same total 4, distinct w (1/3 vs 3)",D0.Integration.V15.Feshbach.eos_underdetermined,NO-GO
+D0-EDGE-COVER-FAMILY-001,D0-EDGE-ALPHA-001 (D0.Spectral.ZetaResidueAlpha),edge dim 359; z^3 coeff of (1-lz^4)(1-lz^3) = -lambda; lambda not fixed by frozen data,D0.Integration.V15.EdgeAudit.edge_cover_is_family,CONDITIONAL-EXTENSION
+D0-STURMIAN-REFINEMENT,D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001,"incidence [[1,1],[1,0]]: det=-1, trace=1, charpoly t^2-t-1, phi^2=phi+1",D0.Integration.V15.Refinement.sturmian_golden_tower,CONDITIONAL-EXTENSION
+D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001,D0-ARCHIVE-CONTRACTION-NOGO-001,regular cover ratio=1; archive window=359/160!=1,D0.Integration.V15.Refinement.archive_window_not_measure_preserving,NO-GO
+D0-PRESENT-CORE-LIMITS-REGRESSION-V15,D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001 + suite,finiteHeatTracePoles=0; c_D0=1; 6 owners unchanged,D0.Integration.V15.PhysicalBoundary.regression_owners_present,NO-GO (regression holds)
+D0-AMS-HEAVY-NUCLEI-PASSPORT-001,NONE (external; nearest internal D0-SRC-001),Phi_X=a_X Phi_Si + b_X Phi_F; amsHasInternalOwner=false,D0.Integration.V15.PhysicalBoundary.ams_is_passport,EMPIRICAL-PASSPORT

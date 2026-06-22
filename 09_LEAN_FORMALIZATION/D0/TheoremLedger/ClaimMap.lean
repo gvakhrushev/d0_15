@@ -760,7 +760,29 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-X5-FULL-MODEL-001", moduleName := "D0.Extensions.X5.Synthesis",
       theoremName := "x5_compatible_joint_model", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-X5-ALPHA-BOUNDARY-001", moduleName := "D0.Extensions.X5.AlphaBoundary",
-      theoremName := "alpha_outside_x5", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "alpha_outside_x5", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-ZONE-CURRENT-001", moduleName := "D0.Integration.V15.RawZone",
+      theoremName := "zone_current_spine", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001", moduleName := "D0.Integration.V15.RawZone",
+      theoremName := "zone_current_spine", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FESHBACH-SCHUR-FACTORIZATION-V15", moduleName := "D0.Integration.V15.Feshbach",
+      theoremName := "feshbach_schur_factorization", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BRANCH-CP-READOUT-NOGO-V15", moduleName := "D0.Integration.V15.BranchAudit",
+      theoremName := "branch_readout_not_unique", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-LEPTON-DECIMAL-MASS-RATIOS", moduleName := "D0.Integration.V15.BranchAudit",
+      theoremName := "mass_ratio_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-P1-PHYSICAL-EOS", moduleName := "D0.Integration.V15.Feshbach",
+      theoremName := "eos_underdetermined", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-EDGE-COVER-FAMILY-001", moduleName := "D0.Integration.V15.EdgeAudit",
+      theoremName := "edge_cover_is_family", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-STURMIAN-REFINEMENT", moduleName := "D0.Integration.V15.Refinement",
+      theoremName := "sturmian_golden_tower", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001", moduleName := "D0.Integration.V15.Refinement",
+      theoremName := "archive_window_not_measure_preserving", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-PRESENT-CORE-LIMITS-REGRESSION-V15", moduleName := "D0.Integration.V15.PhysicalBoundary",
+      theoremName := "regression_owners_present", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-AMS-HEAVY-NUCLEI-PASSPORT-001", moduleName := "D0.Integration.V15.PhysicalBoundary",
+      theoremName := "ams_is_passport", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
