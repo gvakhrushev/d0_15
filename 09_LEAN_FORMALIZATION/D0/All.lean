@@ -331,6 +331,7 @@ import D0.Interface.MatterLocalization
 import D0.Interface.Poisson
 import D0.Interface.ScalarPoissonReduction
 import D0.Interface.VariationDual
+import D0.LeptonClosure.BranchRowMinimalExtension
 import D0.Matter.ArchivePartialTrace
 import D0.Matter.ArchiveStressCoupling
 import D0.Matter.BaryonMultipletBoundary

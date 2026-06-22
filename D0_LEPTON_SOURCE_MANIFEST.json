@@ -1,0 +1,137 @@
+{
+  "task": "D0-v16 source-native lepton Green closure",
+  "decision": "OUTCOME-B: source proves exact two-completion no-go + names one minimal operator (PRIM-LEPTON-BRANCH-FIXING-OPERATOR = B_row); no source-native unique Green+row map (Outcome A excluded).",
+  "carrier_distinction": "Omega8 (8 role points) != C^{V9} (vertices) != C^{E(K)} (359 edges) != H_N (shell stages) != 7-point shell-torus monodromy carrier. No morphism assumed without an explicit code-level map.",
+  "objects": [
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Core/DyadABCD.lean",
+      "exists": true,
+      "sha256_16": "9aa50c746c830a9c",
+      "claim_id": "D0-ABCD-001",
+      "status": "CORE-FORMALIZED",
+      "role": "carrier: Role=4, Omega8=8 (source-native type defs)",
+      "source_native": true,
+      "note": "foundational labelling; supplies the 8-point Omega8 carrier"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/VietaGaloisAbcd.lean",
+      "exists": true,
+      "sha256_16": "907ffdc634024820",
+      "claim_id": "D0-VIETA-GALOIS-ABCD-001",
+      "status": "CORE-FORMALIZED",
+      "role": "ABCD = Vieta/Galois data of x^2-x-1",
+      "source_native": true,
+      "note": "Galois-conjugation swap template (branch pairing)"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/Q8DedekindMinimality.lean",
+      "exists": true,
+      "sha256_16": "f0012b6be4f563b5",
+      "claim_id": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "status": "CERT-CLOSED",
+      "role": "Q8 forced as the role group (Hamiltonian, triple Z2 identity)",
+      "source_native": false,
+      "note": "S0 CAVEAT: carrier is hand-built FinGrp tables; cite as finite-catalog cert, not source-extracted"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonFiniteGreenResolventOwner.lean",
+      "exists": true,
+      "sha256_16": "61859e28b02bf044",
+      "claim_id": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+      "status": "CERT-CLOSED",
+      "role": "finite Green resolvent (Ueff^12=1, G(0)=I)",
+      "source_native": false,
+      "note": "S0 CAVEAT: Ueff is a hand-typed 7x7 literal proved at z=0; det=(1-z^4)(1-z^3) is prose. Positive resolvent half only."
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonGreenPuiseuxOwner.lean",
+      "exists": true,
+      "sha256_16": "866e1573d9a6bec0",
+      "claim_id": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+      "status": "CERT-CLOSED",
+      "role": "(0,1/4,1/3) exponent-row operator scaffold",
+      "source_native": false,
+      "note": "exponent-row scaffold; cite"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonPuiseuxUniquenessObstruction.lean",
+      "exists": true,
+      "sha256_16": "093484d0508954d9",
+      "claim_id": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+      "status": "NO-GO",
+      "role": "many-to-one index->operator obstruction",
+      "source_native": false,
+      "note": "branch index many-to-one; cite"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonRiemannHurwitzBranchIndex.lean",
+      "exists": true,
+      "sha256_16": "f91ebaee70eea194",
+      "claim_id": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+      "status": "CERT-CLOSED",
+      "role": "ramification/genus-0 + non-uniqueness",
+      "source_native": false,
+      "note": "Puiseux ramification; cite"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonBranchAssignmentNoGo.lean",
+      "exists": true,
+      "sha256_16": "ae03268dc9208506",
+      "claim_id": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+      "status": "NO-GO",
+      "role": "two-completion no-go: sigmaA/sigmaB order 12, distinct",
+      "source_native": false,
+      "note": "THE necessity witness; load-bearing negative theorem; cite, do NOT re-mint"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonSelectorExtension.lean",
+      "exists": true,
+      "sha256_16": "86afa925a25ae7e6",
+      "claim_id": "D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001",
+      "status": "NO-GO",
+      "role": "terminal L4: 2 orbits < 3 generations",
+      "source_native": false,
+      "note": "cite"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchSelectorConstruction.lean",
+      "exists": true,
+      "sha256_16": "770c7b2bc2ea4efe",
+      "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+      "status": "PROOF-TARGET",
+      "role": "orbit-keyed selector 1/4!=1/3 (intrinsic)",
+      "source_native": false,
+      "note": "names PRIM-LEPTON-BRANCH-FIXING-OPERATOR; cite"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "exists": true,
+      "sha256_16": "12ea215345101dde",
+      "claim_id": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "status": "CERT-CLOSED",
+      "role": "tick / Feshbach-Schur time delay",
+      "source_native": false,
+      "note": "tick step; cite"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/LeptonClosure/BranchRowMinimalExtension.lean",
+      "exists": true,
+      "sha256_16": "8b23298f0f055944",
+      "claim_id": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+      "status": "NEW",
+      "role": "v16 increment: B_row necessity+sufficiency+minimality",
+      "source_native": true,
+      "note": "source-native permutation combinatorics; NO hand-built matrices"
+    }
+  ],
+  "s0_caveats": [
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Claims/Q8DedekindMinimality.lean",
+      "caveat": "S0 CAVEAT: carrier is hand-built FinGrp tables; cite as finite-catalog cert, not source-extracted"
+    },
+    {
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/LeptonFiniteGreenResolventOwner.lean",
+      "caveat": "S0 CAVEAT: Ueff is a hand-typed 7x7 literal proved at z=0; det=(1-z^4)(1-z^3) is prose. Positive resolvent half only."
+    }
+  ]
+}

@@ -786,7 +786,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-Q8-TERMINAL-FOURIER-001", moduleName := "D0.UnifiedFiniteCore.Q8Terminal",
       theoremName := "q8_terminal_fourier", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-UNIFIED-EDGE-SPINE-001", moduleName := "D0.UnifiedFiniteCore.UnifiedTheorem",
-      theoremName := "unified_finite_core", status := ClaimStatus.leanCoreProved }
+      theoremName := "unified_finite_core", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001", moduleName := "D0.LeptonClosure.BranchRowMinimalExtension",
+      theoremName := "branch_row_minimal_extension", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

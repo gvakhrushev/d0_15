@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 6466,
-    "track_fair_max": 8942,
+    "realized": 6478,
+    "track_fair_max": 8954,
     "pct_strength": 72.3,
     "core_realized": 5076,
     "core_potential": 7520,
     "core_headroom": 2444,
-    "n_claims": 511,
-    "n_active": 509,
+    "n_claims": 512,
+    "n_active": 510,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 304,
-      "realized": 4268,
-      "max": 5347,
+      "n": 305,
+      "realized": 4280,
+      "max": 5359,
       "core_headroom": 1069
     },
     "rg": {
@@ -160,9 +160,9 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 96,
-      "realized": 1222,
-      "max": 1692,
+      "n": 97,
+      "realized": 1234,
+      "max": 1704,
       "core_headroom": 460
     },
     "BOOK_04/08": {
@@ -11104,6 +11104,20 @@
       "release_status": "PROOF-TARGET",
       "lean_status": "LEAN_PROVED",
       "domain": "frontier",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
