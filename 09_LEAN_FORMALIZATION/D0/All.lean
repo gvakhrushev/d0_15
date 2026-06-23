@@ -25,6 +25,7 @@ import D0.Bridge.Assumptions.Frobenius
 import D0.Bridge.Assumptions.HeatTraceWeyl
 import D0.Bridge.Assumptions.Hurwitz
 import D0.Bridge.Assumptions.JonesIndex
+import D0.Bridge.Assumptions.KernelChargeLocalization
 import D0.Bridge.Assumptions.LindemannLnPhi
 import D0.Bridge.Assumptions.MordellE8
 import D0.Bridge.Assumptions.SmoothInterpolation
@@ -372,6 +373,7 @@ import D0.Matter.HiggsPhasonOrbitNoGo
 import D0.Matter.HiggsReturnQuotientAction
 import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.HyperchargeAnomalyVariety
+import D0.Matter.HyperchargeBLDirectionBridge
 import D0.Matter.HyperchargeFlowLattice
 import D0.Matter.HyperchargeGraphFlowOwner
 import D0.Matter.HyperchargeMinimalDenominator

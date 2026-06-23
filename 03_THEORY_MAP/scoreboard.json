@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 6478,
-    "track_fair_max": 8954,
-    "pct_strength": 72.3,
+    "realized": 6489,
+    "track_fair_max": 8965,
+    "pct_strength": 72.4,
     "core_realized": 5076,
     "core_potential": 7520,
     "core_headroom": 2444,
-    "n_claims": 512,
-    "n_active": 510,
+    "n_claims": 513,
+    "n_active": 511,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 305,
-      "realized": 4280,
-      "max": 5359,
+      "n": 306,
+      "realized": 4291,
+      "max": 5370,
       "core_headroom": 1069
     },
     "rg": {
@@ -112,9 +112,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 21,
-      "realized": 303,
-      "max": 395,
+      "n": 22,
+      "realized": 314,
+      "max": 406,
       "core_headroom": 92
     },
     "BOOK_02": {
@@ -11119,6 +11119,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "track": "BRIDGE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 11,
+      "ceiling": 11,
+      "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "domain": "formal_core",
+      "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
     }
