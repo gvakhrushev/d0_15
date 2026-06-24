@@ -35,10 +35,11 @@ open Matrix
 
 /-! ## B — non-unique branch CP readout -/
 
-/-- Commutant dimension of the branch representation: 3 independent generation blocks. -/
+/-- Motivational context (NOT load-bearing for the NO-GO): the branch representation carries the three
+generation directions as isotypic blocks, so its commutant is larger than the scalars. The block count `3` is
+the generation/part count owned by `D0.Extensions.X5.Grading.SymmetryGroups` (`autRawGenerationOrbits =
+partSizes.length = 3`), cited not re-derived; the NO-GO below rests purely on the marginal-coherence control. -/
 def commutantDim : ℕ := 3
-
-/-- The branch representation is reducible (commutant strictly larger than the scalars). -/
 theorem branch_reducible : 1 < commutantDim := by decide
 
 /-- A diagonal admissible readout (the "intended" maximally-mixed block state). -/
@@ -51,11 +52,12 @@ def rho2 : Matrix (Fin 3) (Fin 3) ℚ := !![1/2, 1/10, 0; 1/10, 1/3, 0; 0, 0, 1/
 theorem same_diagonal : rho1 0 0 = rho2 0 0 ∧ rho1 1 1 = rho2 1 1 ∧ rho1 2 2 = rho2 2 2 := by
   refine ⟨?_, ?_, ?_⟩ <;> native_decide
 
-/-- **B is a NO-GO.** Two admissible readouts share the frozen marginals yet differ: the CP readout is not
-unique without `PRIM-BRANCH-ISOTROPIC-READOUT`. -/
+/-- **B is a NO-GO** (load-bearing content = the marginal-coherence control). Two admissible readouts `ρ₁≠ρ₂`
+share the frozen diagonal marginals yet differ in coherence: the CP readout is not fixed by the frozen marginals
+alone, so it is not unique without `PRIM-BRANCH-ISOTROPIC-READOUT`. -/
 theorem branch_readout_not_unique :
-    1 < commutantDim ∧ rho1 ≠ rho2 ∧ (rho1 0 0 = rho2 0 0 ∧ rho1 1 1 = rho2 1 1 ∧ rho1 2 2 = rho2 2 2) := by
-  refine ⟨branch_reducible, ?_, same_diagonal⟩
+    rho1 ≠ rho2 ∧ (rho1 0 0 = rho2 0 0 ∧ rho1 1 1 = rho2 1 1 ∧ rho1 2 2 = rho2 2 2) := by
+  refine ⟨?_, same_diagonal⟩
   intro h
   have : rho1 0 1 = rho2 0 1 := by rw [h]
   simp [rho1, rho2] at this

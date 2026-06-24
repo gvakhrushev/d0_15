@@ -46,11 +46,16 @@ theorem feshbach_schur_factorization : Mfull.det = Schur.det ∧ Mfull.det = 4 :
 /-- Equation-of-state ratio `w = p/ρ`. -/
 def w (rho p : ℚ) : ℚ := p / rho
 
-/-- **E2 (NO-GO).** Two assignments with identical total response `ρ+p = 4` but distinct `w`: the response does
-not determine `(ρ,p)`, so no physical `w` follows without `PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT`. -/
+/-- The two-source response observable fixes only the TOTAL (the log-derivative trace `R_Q + R_P`); model it as
+`response (ρ,p) = ρ + p`. -/
+def response (rho p : ℚ) : ℚ := rho + p
+
+/-- **E2 (NO-GO).** Two assignments with EQUAL response (`response 3 1 = response 1 3`) but distinct EOS ratio
+`w` (`1/3 ≠ 3`): the response does not determine `(ρ,p)`, so no physical `w` follows without
+`PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT`. (Forbidden to read `ρ=eᵘ−1, p=eᵘ/φ` as derived.) -/
 theorem eos_underdetermined :
-    ((3 : ℚ) + 1 = 1 + 3) ∧ w 3 1 ≠ w 1 3 := by
-  refine ⟨by norm_num, ?_⟩
+    response 3 1 = response 1 3 ∧ w 3 1 ≠ w 1 3 := by
+  refine ⟨by native_decide, ?_⟩
   simp only [w]
   norm_num
 
