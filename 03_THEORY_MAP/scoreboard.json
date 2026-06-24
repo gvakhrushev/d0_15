@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 6489,
-    "track_fair_max": 8965,
+    "realized": 6496,
+    "track_fair_max": 8972,
     "pct_strength": 72.4,
     "core_realized": 5076,
     "core_potential": 7520,
     "core_headroom": 2444,
-    "n_claims": 513,
-    "n_active": 511,
+    "n_claims": 514,
+    "n_active": 512,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 306,
-      "realized": 4291,
-      "max": 5370,
+      "n": 307,
+      "realized": 4298,
+      "max": 5377,
       "core_headroom": 1069
     },
     "rg": {
@@ -118,9 +118,9 @@
       "core_headroom": 92
     },
     "BOOK_02": {
-      "n": 57,
-      "realized": 644,
-      "max": 904,
+      "n": 58,
+      "realized": 651,
+      "max": 911,
       "core_headroom": 260
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
@@ -11133,6 +11133,20 @@
       "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+      "track": "PASSPORT",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "PASSPORT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
       "leverage": 0,
       "integrity_flag": null
     }
