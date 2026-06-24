@@ -804,7 +804,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ISOTROPIZATION-MECH-001", moduleName := "D0.Foundation.IsotropizationResidual",
       theoremName := "isotropization_residual", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-LEPTON-CYCLIC-GENERATOR-001", moduleName := "D0.LeptonClosure.BranchIndexUnique",
-      theoremName := "lepton_branch_index_unique", status := ClaimStatus.leanCoreProved }
+      theoremName := "lepton_branch_index_unique", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001", moduleName := "D0.ParallelClosure.FiniteDavisKahanGapBound",
+      theoremName := "finite_davis_kahan_instance", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001", moduleName := "D0.ParallelClosure.CrossGate",
+      theoremName := "crossgate_holds", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

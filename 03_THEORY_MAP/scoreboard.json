@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 6612,
-    "track_fair_max": 9104,
-    "pct_strength": 72.6,
-    "core_realized": 5180,
-    "core_potential": 7640,
-    "core_headroom": 2460,
-    "n_claims": 521,
-    "n_active": 519,
+    "realized": 6644,
+    "track_fair_max": 9144,
+    "pct_strength": 72.7,
+    "core_realized": 5212,
+    "core_potential": 7680,
+    "core_headroom": 2468,
+    "n_claims": 523,
+    "n_active": 521,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 313,
-      "realized": 4402,
-      "max": 5489,
-      "core_headroom": 1077
+      "n": 314,
+      "realized": 4414,
+      "max": 5509,
+      "core_headroom": 1085
     },
     "rg": {
       "n": 7,
@@ -44,9 +44,9 @@
       "core_headroom": 16
     },
     "gauge_bridge": {
-      "n": 20,
-      "realized": 313,
-      "max": 334,
+      "n": 21,
+      "realized": 333,
+      "max": 354,
       "core_headroom": 21
     },
     "smooth_geometry": {
@@ -118,10 +118,10 @@
       "core_headroom": 100
     },
     "BOOK_02": {
-      "n": 58,
-      "realized": 651,
-      "max": 911,
-      "core_headroom": 260
+      "n": 59,
+      "realized": 663,
+      "max": 931,
+      "core_headroom": 268
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -160,9 +160,9 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 98,
-      "realized": 1246,
-      "max": 1724,
+      "n": 99,
+      "realized": 1266,
+      "max": 1744,
       "core_headroom": 468
     },
     "BOOK_04/08": {
@@ -1377,6 +1377,16 @@
       "claim_id": "D0-LEPTON-CYCLIC-GENERATOR-001",
       "domain": "formal_core",
       "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -3980,6 +3990,13 @@
     },
     {
       "claim_id": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
       "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
@@ -11278,6 +11295,34 @@
       "release_status": "CERT-CLOSED",
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "gauge_bridge",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null

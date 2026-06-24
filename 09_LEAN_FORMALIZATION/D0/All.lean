@@ -417,6 +417,8 @@ import D0.NumberTheory.HurwitzMinimaxPhi
 import D0.NumberTheory.HurwitzPhi
 import D0.NumberTheory.PhiAdmissibility
 import D0.NumberTheory.PhiContinuedFraction
+import D0.ParallelClosure.CrossGate
+import D0.ParallelClosure.FiniteDavisKahanGapBound
 import D0.Passport
 import D0.Passport.IceCubePhasonDecoherence
 import D0.Phase

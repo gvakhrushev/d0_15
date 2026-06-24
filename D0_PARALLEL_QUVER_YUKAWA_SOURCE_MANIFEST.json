@@ -1,0 +1,33 @@
+{
+  "task": "D0-v16 parallel dual closure (Track A finite massless-U(1) kernel + Track B Yukawa/CKM gap-mismatch)",
+  "discipline": "D0 selects finite operators; string/quiver only external templates. FORBIDDEN: branes, flux integers, Calabi-Yau moduli, Wilson lines, GSO, alpha', string scale, SUSY, PDG masses, fitted CKM, chosen hypercharge row.",
+  "track_A_outcome": "Case A2 (CITE-ONLY): ker M_U1 = 2-dim span{Y,B-L}; unique span{Y} only via Xi_Y bridge (MECH-LIMIT); coupling map Phi open (PROOF-TARGET+PASSPORT, PRIM-FINITE-SPECTRAL-TRIPLE-REP).",
+  "track_B_outcome": "CKM topology CERTIFIED; CKM magnitude PROOF-TARGET. New: finite Davis-Kahan gap/mismatch bound (C=1). Missing Xi_CKM.",
+  "new_objects": [
+    {"name": "FiniteDavisKahanGapBound", "carrier": "Matrix (Fin 2) Q (rational instance) + random Hermitian (cert)", "claim": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001", "status": "CERT-CLOSED", "tracks": "B", "derived": true},
+    {"name": "CrossGate", "carrier": "Q charge residuals", "claim": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001", "status": "CORE-FORMALIZED", "tracks": "A+B", "derived": true}
+  ],
+  "cite_only_owners": {
+    "track_A": [
+      {"claim": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001", "module": "D0.Matter.HyperchargeAnomalyVariety", "status": "NO-GO", "role": "ker M_U1 = 2-dim span{Y,B-L}"},
+      {"claim": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001", "module": "D0.Matter.HyperchargeBLDirectionBridge", "status": "BRIDGE-ASSUMPTIONS-EXPLICIT", "role": "Xi_Y collapse (MECH-LIMIT)"},
+      {"claim": "D0-SM-HYPERCHARGE-ROW-OWNER-001", "module": "D0.Matter.SMHyperchargeRowOwner", "status": "CERT-CLOSED", "role": "5-field row factorization"},
+      {"claim": "D0-GRAPH-SPACE-NO-ISOMETRY-001", "module": "D0.Foundation.GraphSpaceNoIsometry", "status": "NO-GO", "role": "A4 graph-flow origin separate"},
+      {"claim": "D0-HYPERCHARGE-FLOW-LATTICE-001", "module": "D0.Matter.HyperchargeFlowLattice", "status": "CERT-CLOSED", "role": "327-dim current lattice"},
+      {"claim": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001", "module": "", "status": "PROOF-TARGET", "role": "Xi_U1 = Phi (open coupling map)"}
+    ],
+    "track_B": [
+      {"claim": "D0-CKM-EXACT-001", "module": "D0.Claims.CkmExactMatrix", "status": "CORE-FORMALIZED", "role": "CKM topology = cyclic permutation, det=1"},
+      {"claim": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001", "module": "D0.Matter.YukawaShellOverlapMatrix", "status": "CERT-CLOSED", "role": "the SINGLE shell-overlap tensor"},
+      {"claim": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001", "module": "D0.Matter.CKMOverlapUnderdeterminationNoGo", "status": "NO-GO", "role": "magnitude underdetermined (3-4-5 vs 5-12-13)"},
+      {"claim": "D0-CKM-CLASS5-SELECTOR-OWNER-001", "module": "D0.Matter.CKMClass5SelectorOwner", "status": "CERT-CLOSED", "role": "class-5 selector (fitted, MECH-LIMIT-D)"}
+    ]
+  },
+  "external_owner_edges": [
+    {"name": "Davis-Kahan sin-Theta", "ref": "Davis & Kahan, SIAM J. Numer. Anal. 7 (1970) 1", "role": "general finite gap/mismatch bound; cited, not a defining engine"}
+  ],
+  "minimal_missing_operators": [
+    "Xi_U1 = Phi : ker B_graph (327) -> Weyl charge ledger (Fin 6 -> Q); needs PRIM-FINITE-SPECTRAL-TRIPLE-REP; blocked by D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+    "Xi_CKM in {up/down pairing selector, common-left-carrier id Xi_ud, holonomy->mismatch map}"
+  ]
+}
