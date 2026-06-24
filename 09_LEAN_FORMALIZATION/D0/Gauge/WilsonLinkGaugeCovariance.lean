@@ -11,12 +11,11 @@ structure DirectedEdge (V : Type) where
 
 abbrev Connection (V G : Type) := DirectedEdge V -> G
 
-structure GaugeGroupDerivable (G : Type) [Group G] : Prop where
-  derived_associative_carrier : True
-
-theorem wilson_link_group_carrier_derivable {G : Type} [Group G] :
-    GaugeGroupDerivable G := by
-  exact ⟨trivial⟩
+-- (Removed per corpus over-claim sweep, 2026-06-24: the former `GaugeGroupDerivable : Prop` had a single field
+-- `: True` and `wilson_link_group_carrier_derivable` proved it by `⟨trivial⟩` — a vacuous shell asserting "the
+-- gauge group carrier is derivable from first principles", which is NOT proved. Gauge-group derivability is the
+-- open spectral-triple-representation question; D0-GAUGE-WILSON-LINK-COVARIANCE-001 rests only on the genuine
+-- `wilson_loop_covariance` below + the naive-covariance counterexample, never on a derivability claim.)
 
 structure Face3 (V : Type) where
   e1 : DirectedEdge V

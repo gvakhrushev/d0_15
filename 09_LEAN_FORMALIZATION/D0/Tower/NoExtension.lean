@@ -51,19 +51,17 @@ theorem repeat_has_nontrivial_copy_symmetry : 1 < Fintype.card (Equiv.Perm (Fin 
 repeats `(n≥2)`, not on first instances. -/
 theorem first_instance_canonical : Fintype.card (Equiv.Perm (Fin 1)) = 1 := by native_decide
 
-/-- The count is structural, not a list: `3 = 2` (quadratic terms) `+ 1` (closure). -/
-theorem three_is_two_plus_one : (3 : ℕ) = 2 + 1 := by decide
-
 /-- **D0-TOWER-STOP-NOEXT-001 (no-extension theorem).** Both cases give `⊥M1`, so no admissible
 fourth zone exists and the tower stops at three:
-* the forced quadratic has exactly three slots (`p²+p=1`: two terms + closure);
+* the forced quadratic closes at degree 2 (`p²+p=1`);
 * CASE 1 — no fourth independent type (`p³ = 2p−1` reduces into `span{1,p}`);
-* CASE 2 — a repeat carries a nontrivial copy-symmetry (`|S_2|>1`) ⇒ an external catalogue. -/
+* CASE 2 — a repeat carries a nontrivial copy-symmetry (`|S_2|>1`) ⇒ an external catalogue.
+(The decorative `3 = 2+1` conjunct was dropped 2026-06-24 per the corpus over-claim sweep — a vacuous
+arithmetic fact that added no content; the theorem now rests only on the three substantive facts.) -/
 theorem no_extension_theorem :
     (phi⁻¹ + phi⁻¹ ^ 2 = 1) ∧
     (phi⁻¹ ^ 3 = 2 * phi⁻¹ - 1) ∧
-    (1 < Fintype.card (Equiv.Perm (Fin 2))) ∧
-    ((3 : ℕ) = 2 + 1) :=
-  ⟨degree2_closure, p_cubed_reduces, repeat_has_nontrivial_copy_symmetry, three_is_two_plus_one⟩
+    (1 < Fintype.card (Equiv.Perm (Fin 2))) :=
+  ⟨degree2_closure, p_cubed_reduces, repeat_has_nontrivial_copy_symmetry⟩
 
 end D0.Tower

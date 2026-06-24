@@ -705,7 +705,8 @@ def D0_FINAL_FOUNDATION_INDEX : FinalFoundationIndex :=
 #check D0.Gauge.abstract_lieRing_finite_transform_requires_associative_representation
 
 -- Wilson-link gauge covariance and graded Bianchi closure
-#check D0.Gauge.wilson_link_group_carrier_derivable
+-- (D0.Gauge.wilson_link_group_carrier_derivable removed 2026-06-24: it was a `: True` vacuous shell asserting
+-- gauge-group derivability, which is not proved; the genuine content is wilson_loop_covariance below.)
 #check D0.Gauge.wilson_loop_covariance
 #check D0.Gauge.naive_local_gauge_covariance_counterexample_fin3
 #check D0.Topology.graded_nilpotency
