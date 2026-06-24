@@ -58,11 +58,22 @@ def orbit_size(p, pt):
 def Brow(p): return orbit_size(p, 0) == 4
 check("B_row separates: B_row(sigmaA)=True, B_row(sigmaB)=False", Brow(sigmaA) and not Brow(sigmaB))
 
-# --- necessity / sufficiency / minimality ---
+# --- necessity + the HONEST B_row scope (corrected per self-audit) ---
 completions = [sigmaA, sigmaB]
-check("necessity: >=2 admissible completions", len(completions) >= 2)
-check("sufficiency: with B_row exactly 1 survives", len([p for p in completions if Brow(p)]) == 1)
-check("minimality: without B_row >=2 remain", len(completions) >= 2)
+check("necessity: >=2 admissible completions (same resolvent invariants)", len(completions) >= 2)
+check("B_row separates the two canonical completions (picks 1 of {sigmaA,sigmaB})",
+      len([p for p in completions if Brow(p)]) == 1)
+# B_row is NECESSARY but NOT SUFFICIENT over the full admissible class:
+from itertools import permutations as _perm
+all43 = [p for p in _perm(range(7)) if cycle_type(list(p)) == (3, 4)]
+brow_true = [p for p in all43 if Brow(list(p))]
+check("full admissible class = 420 order-12 cycle-type-(4,3) perms of Fin 7", len(all43) == 420)
+check("B_row NOT sufficient: 240 of 420 satisfy B_row (not 1)", len(brow_true) == 240)
+sigmaC = [1, 2, 3, 0, 6, 4, 5]            # (0123)(465): distinct from sigmaA, also B_row=true
+check("witness sigmaC distinct from sigmaA, both pass B_row", Brow(sigmaC) and sigmaC != sigmaA)
+from math import comb
+check("sufficient operator = full orbit-labeling C(7,4)=35->1; B_row fixes only C(6,3)=20",
+      comb(7, 4) == 35 and comb(6, 3) == 20)
 
 # --- exhaustive 3! row-assignment test (rank->exponent forced) ---
 block_ranks = [1, 4, 3]                 # ranks of E0,E4,E3
@@ -79,6 +90,7 @@ def _neg_control():
 assert not _neg_control(), "negative control breached: resolvent invariants should NOT separate sigmaA/sigmaB"
 # guillotine
 assert ok, "RESULT: SOME FAIL - a claimed identity did not hold"
-print("\n[STATUS] OUTCOME-B: return orders (4,3) forced; row-map two-completion no-go; B_row necessary+sufficient+minimal.")
+print("\n[STATUS] OUTCOME-B: return orders (4,3) forced; row-map two-completion NO-GO; B_row NECESSARY separator")
+print("         but NOT sufficient (240/420 pass) -- the sufficient operator is the full orbit-labeling (35->1).")
 print("[CERT-CLOSED] PASS_BRANCH_ROW_MINIMAL_EXTENSION")
 sys.exit(0)

@@ -780,7 +780,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001", moduleName := "D0.Integration.V15.Refinement",
       theoremName := "archive_window_not_measure_preserving", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-PRESENT-CORE-LIMITS-REGRESSION-V15", moduleName := "D0.Integration.V15.PhysicalBoundary",
-      theoremName := "regression_owners_present", status := ClaimStatus.leanNoGoProved },
+      theoremName := "regression_owners_present", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-AMS-HEAVY-NUCLEI-PASSPORT-001", moduleName := "D0.Integration.V15.PhysicalBoundary",
       theoremName := "ams_is_passport", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-Q8-TERMINAL-FOURIER-001", moduleName := "D0.UnifiedFiniteCore.Q8Terminal",

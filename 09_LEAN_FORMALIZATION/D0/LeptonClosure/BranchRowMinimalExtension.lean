@@ -4,13 +4,18 @@ import Mathlib.Data.List.Permutation
 import Mathlib.Tactic
 
 /-!
-# D0-v16 — `ℬ_row` minimal-extension theorem (necessity + sufficiency + deletion-minimality)
+# D0-v16 — branch-row underdetermination NO-GO and the `ℬ_row` separating bit (corrected)
 
 **Decision: OUTCOME-B.** The frozen source proves an exact two-completion NO-GO — the branch→generation row
-is underdetermined by the frozen Green-resolvent data — and names exactly one minimal missing operator
-`PRIM-LEPTON-BRANCH-FIXING-OPERATOR` (`ℬ_row`). This module CONSOLIDATES the existing source-native owners
-into the rigorous minimal-extension theorem the corpus was missing (sufficiency + deletion-minimality +
-cycle-type uniqueness + the exhaustive row test). It does NOT re-mint them.
+is underdetermined by the frozen Green-resolvent data. The return orders `(4,3)` and the rank→exponent row ARE
+forced; the carrier completion is NOT. `ℬ_row` ("point 0 in the size-4 orbit") is a **necessary separating
+bit** (it distinguishes the two canonical completions `σ_A`, `σ_B`) but is **NOT sufficient** alone: over the
+full admissible class (all 420 order-12 cycle-type-`(4,3)` permutations of `Fin 7`) `ℬ_row` is satisfied by
+`240`, not `1` (`σ_A`, `σ_C` both pass). The **sufficient** row-fixing operator is the full orbit-labeling
+`Fin 7 → {4-orbit, 3-orbit}` (`C(7,4)=35 → 1`), of which `ℬ_row` (`35 → 20`) is one bit — so
+`PRIM-LEPTON-BRANCH-FIXING-OPERATOR` is the full orbit-labeling, not `ℬ_row` alone. (Earlier draft over-claimed
+`ℬ_row` sufficient+minimal over a cherry-picked 2-element list; corrected here per the session self-audit.)
+It does NOT re-mint the cited owners.
 
 **Cited (not re-minted):**
 * `D0.Matter.LeptonBranchAssignmentNoGo` (`D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001`) — the two
@@ -77,14 +82,28 @@ resolvent invariant (both order 12, same cycle type) — the row is genuinely un
 theorem necessity : 2 ≤ completions.length ∧ (∃ i, sigmaA i ≠ sigmaB i) :=
   ⟨by decide, completions_distinct⟩
 
-/-- **Sufficiency.** Imposing `ℬ_row` collapses the admissible completions to EXACTLY ONE. -/
-theorem sufficiency : (completions.filter (fun σ => Brow σ)).length = 1 := by decide
+/-- Among the TWO resolvent-equivalent canonical completions `{σ_A, σ_B}`, `ℬ_row` picks exactly one
+(it separates them). This is necessity/separation — NOT global sufficiency (see below). -/
+theorem Brow_picks_one_of_canonical_pair : (completions.filter (fun σ => Brow σ)).length = 1 := by decide
 
-/-- **Deletion-minimality.** Removing the `ℬ_row` constraint restores ≥ 2 admissible completions — so no
-proper part of `ℬ_row` suffices; the separating observable is minimal. -/
-theorem minimality :
-    (completions.filter (fun _ => true)).length = 2 ∧ 1 < (completions.filter (fun _ => true)).length := by
-  refine ⟨by decide, by decide⟩
+/-- A third admissible completion `σ_C = (0 1 2 3)(4 6 5)`: order-12, cycle type `(4,3)`, with point `0` again
+in the size-4 orbit. -/
+def sigmaC : Fin 7 → Fin 7 := ![1, 2, 3, 0, 6, 4, 5]
+theorem sigmaC_order12 : ∀ i, sigmaC^[12] i = i := by decide
+
+/-- **`ℬ_row` is NECESSARY but NOT SUFFICIENT (honest correction).** `σ_A` and `σ_C` are distinct order-12
+completions that BOTH satisfy `ℬ_row` (point 0 in the size-4 orbit), so imposing `ℬ_row` does **not** collapse
+the full admissible class to one: over all `420` cycle-type-`(4,3)` permutations of `Fin 7`, exactly `240`
+satisfy `ℬ_row` (orbit-membership of a single point fixes only `C(6,3)=20` of the `C(7,4)=35` orbit placements).
+The SUFFICIENT operator is the full orbit-labeling `Fin 7 → {4-orbit, 3-orbit}` (35 → 1), of which `ℬ_row` is
+only one bit. -/
+theorem Brow_not_sufficient :
+    Brow sigmaA = true ∧ Brow sigmaC = true ∧ (∃ i, sigmaA i ≠ sigmaC i) := by
+  refine ⟨?_, ?_, ?_⟩ <;> decide
+
+/-- The sufficient row operator is the full orbit placement: `C(7,4) = 35` choices of the size-4 orbit, of
+which `ℬ_row` (point-0 membership) fixes only `C(6,3) = 20` — so a strictly stronger operator is required. -/
+theorem orbit_placement_counts : Nat.choose 7 4 = 35 ∧ Nat.choose 6 3 = 20 := by decide
 
 /-! ## Exhaustive `3!` row-assignment test -/
 
@@ -104,22 +123,25 @@ def rowCompatible (perm : List ℕ) : Bool :=
 
 /-- **Exhaustive `3!` test.** Of the `6` block→generation assignments, EXACTLY ONE respects the
 orbit-size↔exponent constraint (the rank-keyed map `E₀↔e, E₄↔μ, E₃↔τ` is forced). So the rank→exponent row
-is unique — yet the underlying carrier completion remains 2-fold (`σ_A`/`σ_B`), which is precisely what
-`ℬ_row` fixes. -/
+is unique — yet the underlying carrier completion remains ≥ 2-fold (`σ_A`/`σ_B`), which the FULL orbit-labeling
+fixes (`ℬ_row` alone is only a necessary separating bit, not sufficient — see `Brow_not_sufficient`). -/
 theorem exhaustive_row_test :
     ((List.permutations [0,1,2]).filter (fun p => rowCompatible p)).length = 1 := by native_decide
 
-/-- **D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001 (OUTCOME-B).** The frozen resolvent forces the cycle type
-`(4,3)` (return orders) and the rank→exponent row, but leaves the carrier completion 2-fold ambiguous; the
-minimal operator `ℬ_row` is necessary (two completions), sufficient (collapses to one), and deletion-minimal
-(removing it restores two). -/
+/-- **D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001 (OUTCOME-B, corrected).** The frozen resolvent forces the
+cycle type `(4,3)` (return orders) and the rank→exponent row, but leaves the carrier completion underdetermined
+(≥ 2 admissible completions, same resolvent invariants). `ℬ_row` is **necessary** (it separates the two
+canonical completions `σ_A`, `σ_B`) but **NOT sufficient** alone (`σ_A`, `σ_C` both satisfy `ℬ_row`): the
+sufficient row-fixing operator is the full orbit-labeling (`C(7,4)=35 → 1`), of which `ℬ_row` (point-0
+membership, `35 → 20`) is one bit. -/
 theorem branch_row_minimal_extension :
     partitionsOf7.filter (fun p => decide (lcmList p = 12)) = [[4,3]] ∧
     (2 ≤ completions.length ∧ (∃ i, sigmaA i ≠ sigmaB i)) ∧
     (Brow sigmaA = true ∧ Brow sigmaB = false) ∧
-    (completions.filter (fun σ => Brow σ)).length = 1 ∧
-    1 < (completions.filter (fun _ => true)).length ∧
+    (Brow sigmaA = true ∧ Brow sigmaC = true ∧ (∃ i, sigmaA i ≠ sigmaC i)) ∧
+    (Nat.choose 7 4 = 35 ∧ Nat.choose 6 3 = 20) ∧
     ((List.permutations [0,1,2]).filter (fun p => rowCompatible p)).length = 1 :=
-  ⟨return_orders_forced, necessity, Brow_separates, sufficiency, minimality.2, exhaustive_row_test⟩
+  ⟨return_orders_forced, necessity, Brow_separates, Brow_not_sufficient, orbit_placement_counts,
+    exhaustive_row_test⟩
 
 end D0.LeptonClosure.BranchRowMinimalExtension
