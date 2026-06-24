@@ -137,3 +137,29 @@ already-owned, split, or skeptic-failed** — i.e. NOT new closures:
 new NO-GO closures + 3 over-claim removals this session**, and a verified map showing the remaining frontier is
 external-gated or already-owned. Forcing those would be the inflation the discipline forbids — the cycles' job
 was to find that out rigorously, and they did. Full map: memory `d0-frontier-loop-queue`.
+
+## 8. Phase 4 — completion and convergence (Cycles 3–4)
+**Cycle 3** added one more genuine flip: `D0-EDGE-COVER-FAMILY-001` PROOF-TARGET→**NO-GO** (`27b5ca8`) — the
+edge cover is a `U(1)` λ-family with an injective separating observable (`EdgeAudit.cover_coeff_injective`);
+node C's v15 `cardC` was reclassified `provedImpossibleInClass=true → NO_GO` to align it with its
+structurally-identical siblings B/D/E2. **Cycle 4** (metrology, CVFT remainder, EDGE-002, the VNEXT/VNEXT2
+spectral-triple tower) produced **zero** genuine flips: the 4 VNEXT/VNEXT2 owners drafted as NO-GO all have
+their impossibility already owned by sibling `-NOGO`/`-MAXIMALITY-NOGO` claims (double-own → cite, not flip; 2
+were adversarially rejected), EDGE-002 is a MINIMAL-EXTENSION owned by siblings, and the rest are
+external-passport / STAY-OPEN.
+
+**Convergence.** Four derive-or-rule-out cycles + the census + the self-audit have now exhaustively swept the
+frontier. Maximal *honest* cycling delivers:
+- **4 genuine new frontier NO-GO closures**, each with a real owner and full gate sweep:
+  `LEPTON-RAW-GRAPH-COEFFICIENT` (`81d396c`), `PHASON-WZ-TRANSFER` + new Lean separator (`fc650d5`),
+  `CKM-CLASS5-PARITY` (`0e67b69`), `EDGE-COVER-FAMILY` (`27b5ca8`);
+- **3 vacuous over-claims removed** (`8be7445`) + **2 tightenings** (`49380e9`) + **2 self-audit fixes** (`1739148`);
+- a verified map proving the remaining ~22 PROOF-TARGETs stay open **by necessity, not neglect**
+  (external-data-gated, already-owned-by-sibling, MINIMAL-EXTENSION, or architecture-blocked) — forcing any of
+  them is inflation. The pure external passports (DESI-BAO, ICECUBE, LIGO, SPARC) and the architecture-blocked
+  pair (SPECTRAL-EINSTEIN, HODGE-LINKS) are external/blocked by inspection.
+
+The cycles' adversarial layer (plus my own skepticism) rejected **~19** would-be flips and discarded one
+agent-written over-claim. That is the headline: maximal cycling did not mean maximal flipping — it meant a
+rigorous, exhaustive frontier map with every genuine closure taken and every over-claim refused.
+`d0_score` integrity demotions remained **0** across all 9 commits.
