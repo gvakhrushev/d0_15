@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 6652,
-    "track_fair_max": 9152,
-    "pct_strength": 72.7,
-    "core_realized": 5232,
-    "core_potential": 7700,
-    "core_headroom": 2468,
+    "realized": 6657,
+    "track_fair_max": 9144,
+    "pct_strength": 72.8,
+    "core_realized": 5230,
+    "core_potential": 7680,
+    "core_headroom": 2450,
     "n_claims": 523,
     "n_active": 521,
     "duplicates": [],
@@ -32,9 +32,9 @@
   },
   "by_domain": {
     "formal_core": {
-      "n": 314,
-      "realized": 4422,
-      "max": 5517,
+      "n": 315,
+      "realized": 4429,
+      "max": 5529,
       "core_headroom": 1085
     },
     "rg": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 50,
-      "realized": 180,
-      "max": 1000,
-      "core_headroom": 820
+      "n": 49,
+      "realized": 178,
+      "max": 980,
+      "core_headroom": 802
     }
   },
   "by_book": {
@@ -161,9 +161,9 @@
     },
     "BOOK_04": {
       "n": 99,
-      "realized": 1266,
-      "max": 1744,
-      "core_headroom": 468
+      "realized": 1271,
+      "max": 1736,
+      "core_headroom": 450
     },
     "BOOK_04/08": {
       "n": 7,
@@ -2294,16 +2294,6 @@
       "effort": "write cert scaffold"
     },
     {
-      "claim_id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
-      "domain": "frontier",
-      "book": "BOOK_04",
-      "level_name": "HYP",
-      "leverage": 0,
-      "next": "CERT_SCAFFOLD",
-      "points_gained": 2,
-      "effort": "write cert scaffold"
-    },
-    {
       "claim_id": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
       "domain": "frontier",
       "book": "BOOK_04",
@@ -2877,13 +2867,6 @@
     },
     {
       "claim_id": "D0-PMNS-DELTACP-PI0-001",
-      "domain": "frontier",
-      "leverage": 0,
-      "level_name": "HYP",
-      "score": 2
-    },
-    {
-      "claim_id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -8221,14 +8204,14 @@
     },
     {
       "claim_id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
-      "track": "CORE",
-      "level": 1,
-      "level_name": "HYP",
-      "score": 2,
-      "ceiling": 20,
-      "release_status": "PROOF-TARGET",
-      "lean_status": "OPEN",
-      "domain": "frontier",
+      "track": "NO_GO",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -11331,7 +11314,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 3.4,
+    "penalty_total": 6.5,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -11368,16 +11351,16 @@
       },
       {
         "signal": "phantom_certs",
-        "count": 0,
-        "points": -0.0,
+        "count": 1,
+        "points": -3.0,
         "cap": -12.0,
         "label": "vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET",
         "evidence": []
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 34,
-        "points": -3.4,
+        "count": 35,
+        "points": -3.5,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11426,10 +11409,18 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 34,
-        "points": -3.4,
+        "count": 35,
+        "points": -3.5,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
+        "evidence": []
+      },
+      {
+        "signal": "phantom_certs",
+        "count": 1,
+        "points": -3.0,
+        "cap": -12.0,
+        "label": "vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET",
         "evidence": []
       }
     ]
