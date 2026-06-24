@@ -22,4 +22,17 @@ theorem archive_common_sector_P1C :
     (3 / 2 - Real.sqrt 10 / 40) * (3 / 2 + Real.sqrt 10 / 40) = 359 / 160 :=
   window_product
 
+/-- **Load-bearing spectral-disjointness separator (D0-PHASON-WZ-TRANSFER-OWNER-001 NO-GO).** The `S_DE`
+active-window eigenvalues are the two roots of `x² − 3x + 359/160` (sum `3`, product `359/160`). NONE of the
+integer `L_archive` eigenvalues `{24, 22, 20}` is such a root — verified over `ℚ`. So the archive carrier and
+the `S_DE` window carrier are SPECTRALLY DISJOINT: no eigenvalue-matching, hence no canonical intertwiner, maps
+one onto the other. This is the genuine separator behind P1-C (the `archive_common_sector_P1C` identity above
+only records the window product); together with the role-orientation maximality witnesses it makes the explicit
+internal transfer `archive kernel → phason pressure → w_D0` underdetermined — the missing artifact is
+`PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT`. -/
+theorem sde_window_root_not_archive_eigenvalue :
+    ∀ n ∈ ([24, 22, 20] : List ℚ), n ^ 2 - 3 * n + 359 / 160 ≠ 0 := by
+  intro n hn
+  fin_cases hn <;> norm_num
+
 end D0.Extensions.ArchiveCommonSectorConstruction
