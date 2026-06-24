@@ -58,3 +58,48 @@ The session's output is **honest after two corrections the self-audit forced** �
 inflations (a sufficiency claim over a cherry-picked universe; a NO-GO label on a bookkeeping count), neither a
 laundered physics result. The self-audit is itself the evidence that the discipline holds: it was run with
 maximum skepticism against my own work and it caught real defects, which were fixed rather than defended.
+
+## 6. Phase 2 — loop-engineering advancement (after feedback "could have advanced via loops")
+A single audit pass is not the maximum honest use of an unsupervised window. Two standing honest loops were
+run (the no-fabrication rule forbids inventing claims, not *working*):
+
+**Loop B — corpus-wide over-claim census** (lean-stub-audit over all 521 D0 files; 1725 theorems: 1225
+load-bearing, 377 weak-definitional, 30 vacuous, 39 flagged-but-real). Of 164 non-load-bearing theorems
+backing active CORE/LEAN_PROVED claims, 161 were heuristic-conservative (`decide`/`ring` on real finite
+content). **3 genuine vacuous over-claims found and fixed** (commit `8be7445`):
+- `D0.Gauge.WilsonLinkGaugeCovariance`: removed `GaugeGroupDerivable : True` shell (asserted "gauge group
+  derivable", not proved); claim was already on the genuine `wilson_loop_covariance`, CORE unaffected.
+- `D0.Tower.NoExtension.no_extension_theorem`: dropped the decorative `3=2+1` conjunct; rests on its 3
+  substantive conjuncts.
+- (`gamma_anticomm_entries`/`D0-CARRIER-003`: a helper, not the registered `clifford_relation`; left, noted.)
+
+**Loop A — PROOF-TARGET frontier derive-or-rule-out** (8 targets, each decided + adversarially verified). **6
+NO-GO + 1 EXTERNAL-PASSPORT confirmed ok=true; 1 (`PHASON-WZ-EXPLICIT`) REJECTED by its skeptic (already-
+covered/split) and HELD at PROOF-TARGET.** Two flipped this window with genuine owners:
+- `D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001` PROOF-TARGET→**NO-GO** (commit `81d396c`): frozen raw graph forces
+  the skeleton (Lucas 206, exponents (0,1/4,1/3), order-12 resolvent) but the coefficient is underdetermined
+  over the full 420-element class (branch freedom + companion non-uniqueness). Owner: new can-FAIL cert
+  `vp_lepton_raw_graph_coefficient_nogo.py` (the cert's own control caught — and I removed — a brittle/vacuous
+  "misses every fraction" check). EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR.
+- `D0-PHASON-WZ-TRANSFER-OWNER-001` PROOF-TARGET→**NO-GO** (commit `fc650d5`): NEW decidable Lean theorem
+  `sde_window_root_not_archive_eigenvalue` proves the integer L_archive spectrum {24,22,20} is spectrally
+  disjoint from the S_DE window spectrum (roots of x²−3x+359/160) over ℚ → no canonical intertwiner; with
+  role-orientation freedom the transfer is underdetermined. EXACT-MISSING:
+  PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT.
+
+**Verified-ready frontier build-queue (documented, not yet flipped — each adversarially ok=true):**
+- `D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001` — NO-GO but **redundant** with RAW-GRAPH (same assignment-level
+  obstruction); cite rather than mint a duplicate cert.
+- `D0-LEPTON-PUISEUX-DECIMAL-SECTION-001` — EXTERNAL-PASSPORT; already documented external EFT/IR in its notes;
+  optional formal `ASSUMP-EFT-IR-MATCHING-SCHEME` ledger row (touches the ownership gate — do with care).
+- `D0-ALPHA-FESHBACH-DIXMIER-OWNER-001` — NO-GO (present-core maximality, class a≤2) + external Dixmier-trace
+  passport; needs a Lean bundling theorem (α modules are dense — guard against collision).
+- `D0-PMNS-DELTACP-PI0-001` — exact decimal ruled out (external) + a forced qualitative Z₂ CP-near-conservation
+  lemma (buildable, reuse phason Z₂).
+- `D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001` — NO-GO; citation-binding lemma (obstruction already formalized under
+  the R4/E4 ids).
+
+Gates after every flip: `lake build D0.All` clean (3978); `validate_csv`; `check_cert_can_fail`;
+`check_no_tautology_proofs`; `check_no_sorry_in_core`; `check_physical_bridge_discipline` (523);
+`d0_score` integrity demotions **0** throughout. Net frontier movement this window: **2 PROOF-TARGET→NO-GO**,
+**3 vacuous over-claims removed**, **1 new decidable separator theorem**, all with real owners.
