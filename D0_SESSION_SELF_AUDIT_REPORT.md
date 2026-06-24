@@ -103,3 +103,37 @@ Gates after every flip: `lake build D0.All` clean (3978); `validate_csv`; `check
 `check_no_tautology_proofs`; `check_no_sorry_in_core`; `check_physical_bridge_discipline` (523);
 `d0_score` integrity demotions **0** throughout. Net frontier movement this window: **2 PROOF-TARGET→NO-GO**,
 **3 vacuous over-claims removed**, **1 new decidable separator theorem**, all with real owners.
+
+## 7. Phase 3 — design-and-verify cycles ("делай по максимуму циклами", ultracode)
+Three further adversarial cycles (verify-then-build Workflows) mapped the rest of the frontier; each candidate
+owner was **designed + adversarially verified** before any implementation, which deliberately **prevented
+over-claims** rather than maximizing the flip count.
+
+**One more genuine flip** (`0e67b69`): `D0-CKM-CLASS5-PARITY-EXCLUSION-001` PROOF-TARGET→**NO-GO** — orientation
+parity alone cannot exclude CKM winding class 5 (the parity selector is degenerate on the odd classes
+`{1,5}`: `parityOnlySelector(5)=parityOnlySelector(1)`, a finite contradiction with `sel(5)≠sel(1)`). Owner is
+the claim's own already-`LEAN_PROVED` `ckm_class5_parity_exclusion_status`; its cert was reframed from a
+PROOF-TARGET manifest to a consistent can-FAIL NO-GO cert. The substantive exclusion is owned on the aliasing
+axis (`D0-CLASS5-ALIASING-001` CORE + `D0-CKM-CLASS5-SELECTOR-OWNER-001` CERT-CLOSED).
+
+**The cycles' main value was negative — they stopped me over-claiming.** Across the queue (cycle 1) and 20
+fresh targets (cycles 2–3), the adversarial layer + my own skepticism rejected the rest as **external-gated,
+already-owned, split, or skeptic-failed** — i.e. NOT new closures:
+- **CALIBRATION FIXED:** a NO-GO requires a genuine machine-checked **impossibility** over the full class — NOT
+  mere not-yet-built or external-dependence. On that bar: `ADLER-WEISS` (cell-exact Markov property = external
+  classical Adler-Weiss 1967, no present-core impossibility proof) stays PROOF-TARGET/external, **not** NO-GO.
+- **Discarded an agent-written over-claim:** a workflow agent created `PMNSDeltaCPZ2.lean` bundling a trivial
+  `1/2`-is-fixed-point-of-`1−x` fact with already-owned lemmas under an interpretive "CP near-conservation"
+  label, to justify a CORE flip. Same decorative-conjunct pattern as the Loop-B fixes → **discarded**, PMNS
+  stays PROOF-TARGET (exact δ_CP is an external NuFIT passport).
+- **Already-owned (CITE, no new NO-GO):** `ALPHA-FESHBACH-DIXMIER` (every obstruction owned + external Dixmier
+  passport), `LEPTON-INDIRECT` (redundant with RAW-GRAPH), `LEPTON-YUKAWA-HIERARCHY` (owned under R4/E4),
+  `HYPERCHARGE-GRAPH-FLOW` (span{Y,B-L} 2-dim owned; value-route external), `PHASON-WDE-Z-MAP`.
+- **External / MECH-LIMIT / held:** `PUISEUX-DECIMAL`, `TORAL-TIME-MARKOV` (Williams SSE), `HBAR-SYMPLECTIC`,
+  `INDUCTIVE-SPECTRAL-TRIPLE`, `PHASON-WZ-EXPLICIT` (skeptic-rejected), `LEPTON-BRANCH-FIXING-OPERATOR` (ok=false),
+  `ISOTROPIZATION` (Layer-1 THE already stands).
+
+**Bottom line of Phase 3:** maximum *honest* cycling converges, not to a long list of flips, but to **3 genuine
+new NO-GO closures + 3 over-claim removals this session**, and a verified map showing the remaining frontier is
+external-gated or already-owned. Forcing those would be the inflation the discipline forbids — the cycles' job
+was to find that out rigorously, and they did. Full map: memory `d0-frontier-loop-queue`.
