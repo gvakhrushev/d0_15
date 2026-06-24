@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """D0-CKM-CLASS5-PARITY-EXCLUSION-001 verifier-producer.
 
-HONEST STATUS BY RESULT: PROOF-TARGET.
+HONEST STATUS BY RESULT: NO-GO (the parity-only EXCLUSION ROUTE is proven impossible).
 
-This certificate reproduces the finite arithmetic of the CKM class-5 parity
-question and then states honestly whether the proposed exclusion is a rigorous
-finite contradiction (CERT-CLOSED) or only a heuristic (PROOF-TARGET).
+This certificate reproduces the finite arithmetic of the CKM class-5 parity question and proves, over the
+FULL parity-only admissible class, that orientation PARITY alone cannot exclude winding class 5: the parity-
+only selector is degenerate on the odd classes (sel(5) = sel(1)), so excluding 5 would also exclude the
+identity class. That is a finite, machine-checked NO-GO for the parity route (Lean owner:
+D0.Matter.CKMClass5ParityExclusion.ckm_class5_parity_exclusion_status). The substantive class-5 exclusion is
+NOT lost -- it is owned on a DIFFERENT axis (aliasing |Z5|=5=D_Sigma): D0-CLASS5-ALIASING-001 (CORE-FORMALIZED)
++ D0-CKM-CLASS5-SELECTOR-OWNER-001 (CERT-CLOSED). No status is over-claimed: parity is ruled out, the real
+owners are cited.
 
 Verified finite facts (all exact / integer arithmetic):
   * |(Z/44)*| = phi(44) = 20.
@@ -149,18 +154,16 @@ def main() -> int:
           "would exclude the IDENTITY class too")
     print("PASS_PARITY_ONLY_DEGENERATE_ON_ODD_CLASSES")
 
-    # [7] HONEST VERDICT.
-    mechanized = False  # no finite selector resolving 5 vs 1 has been supplied
-    if mechanized:
-        print("[7] VERDICT: CERT-CLOSED (formal contradiction mechanized)")
-    else:
-        print("[7] VERDICT: PROOF-TARGET -- exclusion is heuristic, not a finite "
-              "contradiction")
-        print("    missing artifact: formal-orientation-parity-contradiction "
-              "(finite selector with sel(5)=forbidden, sel(20)!=forbidden, "
-              "sel(5)!=sel(1))")
-    assert mechanized is False
-    print("PASS_HONEST_VERDICT_PROOF_TARGET")
+    # [7] HONEST VERDICT: the parity-only route is a PROVEN NO-GO (the degeneracy in [6] IS the finite
+    #     contradiction with the resolution requirement sel(5) != sel(1)). The positive exclusion lives on
+    #     the aliasing axis, owned by other claims (cited).
+    parity_route_excluded = (sel5 == sel1)  # proven in [6]: parity cannot separate 5 from 1
+    assert parity_route_excluded is True
+    print("[7] VERDICT: NO-GO -- the parity-only exclusion route is impossible (sel(5)=sel(1); a finite "
+          "contradiction with the requirement sel(5)!=sel(1))")
+    print("    real exclusion owned elsewhere: D0-CLASS5-ALIASING-001 (CORE) + "
+          "D0-CKM-CLASS5-SELECTOR-OWNER-001 (CERT-CLOSED), via orbit-length collision orbitLength(5)=D_Sigma=5")
+    print("PASS_HONEST_VERDICT_NOGO")
 
     # ----- Negative controls (each asserts a planted wrong input is rejected) -----
     print("--- negative controls ---")
@@ -200,7 +203,7 @@ def main() -> int:
     assert not (wrong_phi == 20), "q_T=45 falsely accepted as q_T=44"
     print(f"FAIL_CHANGED_QT_REJECTED (phi(45)={wrong_phi} != 20)")
 
-    print(f"\n[PROOF-TARGET] {STATUS}")
+    print(f"\n[NO-GO] {STATUS}")
     return 0
 
 

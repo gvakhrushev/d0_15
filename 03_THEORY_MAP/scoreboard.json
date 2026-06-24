@@ -20,11 +20,11 @@
   },
   "totals": {
     "realized": 6667,
-    "track_fair_max": 9136,
+    "track_fair_max": 9128,
     "pct_strength": 73.0,
-    "core_realized": 5228,
-    "core_potential": 7660,
-    "core_headroom": 2432,
+    "core_realized": 5216,
+    "core_potential": 7640,
+    "core_headroom": 2424,
     "n_claims": 523,
     "n_active": 521,
     "duplicates": [],
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 34,
-      "realized": 347,
-      "max": 500,
+      "n": 35,
+      "realized": 359,
+      "max": 512,
       "core_headroom": 144
     },
     "cosmology": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 48,
-      "realized": 176,
-      "max": 960,
-      "core_headroom": 784
+      "n": 47,
+      "realized": 164,
+      "max": 940,
+      "core_headroom": 776
     }
   },
   "by_book": {
@@ -162,8 +162,8 @@
     "BOOK_04": {
       "n": 99,
       "realized": 1271,
-      "max": 1736,
-      "core_headroom": 450
+      "max": 1728,
+      "core_headroom": 442
     },
     "BOOK_04/08": {
       "n": 7,
@@ -836,16 +836,6 @@
     {
       "claim_id": "D0-HYPERCHARGE-FLOW-LATTICE-001",
       "domain": "formal_core",
-      "book": "BOOK_04",
-      "level_name": "LEAN_PROVED",
-      "leverage": 0,
-      "next": "CORE_FORMALIZED",
-      "points_gained": 8,
-      "effort": "release-bless to core"
-    },
-    {
-      "claim_id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
-      "domain": "frontier",
       "book": "BOOK_04",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
@@ -3579,13 +3569,6 @@
     {
       "claim_id": "D0-HYPERCHARGE-FLOW-LATTICE-001",
       "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "LEAN_PROVED",
-      "score": 12
-    },
-    {
-      "claim_id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
-      "domain": "frontier",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -8845,14 +8828,14 @@
     },
     {
       "claim_id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
-      "track": "CORE",
+      "track": "NO_GO",
       "level": 4,
       "level_name": "LEAN_PROVED",
       "score": 12,
-      "ceiling": 20,
-      "release_status": "PROOF-TARGET",
+      "ceiling": 12,
+      "release_status": "NO-GO",
       "lean_status": "LEAN_PROVED",
-      "domain": "frontier",
+      "domain": "empirical_passport",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -11297,7 +11280,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 6.6,
+    "penalty_total": 6.7,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -11342,8 +11325,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11392,8 +11375,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
