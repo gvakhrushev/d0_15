@@ -20,11 +20,11 @@
   },
   "totals": {
     "realized": 6667,
-    "track_fair_max": 9128,
-    "pct_strength": 73.0,
-    "core_realized": 5216,
-    "core_potential": 7640,
-    "core_headroom": 2424,
+    "track_fair_max": 9120,
+    "pct_strength": 73.1,
+    "core_realized": 5204,
+    "core_potential": 7620,
+    "core_headroom": 2416,
     "n_claims": 523,
     "n_active": 521,
     "duplicates": [],
@@ -50,9 +50,9 @@
       "core_headroom": 21
     },
     "smooth_geometry": {
-      "n": 36,
-      "realized": 433,
-      "max": 602,
+      "n": 37,
+      "realized": 445,
+      "max": 614,
       "core_headroom": 165
     },
     "spectral_action": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 47,
-      "realized": 164,
-      "max": 940,
-      "core_headroom": 776
+      "n": 46,
+      "realized": 152,
+      "max": 920,
+      "core_headroom": 768
     }
   },
   "by_book": {
@@ -162,8 +162,8 @@
     "BOOK_04": {
       "n": 99,
       "realized": 1271,
-      "max": 1728,
-      "core_headroom": 442
+      "max": 1720,
+      "core_headroom": 434
     },
     "BOOK_04/08": {
       "n": 7,
@@ -1327,16 +1327,6 @@
       "claim_id": "D0-X5-FULL-MODEL-001",
       "domain": "formal_core",
       "book": "BOOK_05",
-      "level_name": "LEAN_PROVED",
-      "leverage": 0,
-      "next": "CORE_FORMALIZED",
-      "points_gained": 8,
-      "effort": "release-bless to core"
-    },
-    {
-      "claim_id": "D0-EDGE-COVER-FAMILY-001",
-      "domain": "frontier",
-      "book": "BOOK_04",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
       "next": "CORE_FORMALIZED",
@@ -3912,13 +3902,6 @@
     {
       "claim_id": "D0-X5-FULL-MODEL-001",
       "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "LEAN_PROVED",
-      "score": 12
-    },
-    {
-      "claim_id": "D0-EDGE-COVER-FAMILY-001",
-      "domain": "frontier",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -11012,14 +10995,14 @@
     },
     {
       "claim_id": "D0-EDGE-COVER-FAMILY-001",
-      "track": "CORE",
+      "track": "NO_GO",
       "level": 4,
       "level_name": "LEAN_PROVED",
       "score": 12,
-      "ceiling": 20,
-      "release_status": "PROOF-TARGET",
+      "ceiling": 12,
+      "release_status": "NO-GO",
       "lean_status": "LEAN_PROVED",
-      "domain": "frontier",
+      "domain": "smooth_geometry",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -11280,7 +11263,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 6.7,
+    "penalty_total": 6.8,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -11325,8 +11308,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 37,
-        "points": -3.7,
+        "count": 38,
+        "points": -3.8,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11375,8 +11358,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 37,
-        "points": -3.7,
+        "count": 38,
+        "points": -3.8,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

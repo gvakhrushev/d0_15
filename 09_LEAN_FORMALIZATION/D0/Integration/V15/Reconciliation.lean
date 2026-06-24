@@ -36,8 +36,14 @@ def cardD : ProofCard := ⟨true, true, false, true, true, false, true, "PRIM-EF
 def cardE2 : ProofCard := ⟨true, true, false, true, true, false, true, "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT"⟩
 /-- F1 (archive regular refinement): negative theorem (archive ≠ regular cover) → `NO_GO`. -/
 def cardF1 : ProofCard := ⟨true, true, false, true, true, false, true, ""⟩
-/-- C (physical edge cover): a λ-family, not impossible, missing selector → `CONDITIONAL_EXTENSION`. -/
-def cardC : ProofCard := ⟨true, true, false, true, false, false, true, "PRIM-EDGE-HOLONOMY-SELECTOR"⟩
+/-- C (physical edge cover): the cover is a `U(1)` λ-family with an injective separating observable
+(`coverCoeffZ3 = −λ`, `EdgeAudit.cover_coeff_injective`); distinct admissible holonomies give inequivalent
+covers, so no UNIQUE present-core cover exists — the same underdetermination/maximality shape as siblings
+B/D/E2. Reclassified `CONDITIONAL_EXTENSION → NO_GO` (2026-06-24, Cycle 3) to align node C with its siblings;
+`provedImpossibleInClass = true` (uniqueness impossible in the present class). Hybrid evidence: Lean owns the
+injective separating observable, the cert `verify_unified_feedback.py` owns the `|λ|=1` continuum admissibility.
+Missing selector still named (`PRIM-EDGE-HOLONOMY-SELECTOR`). -/
+def cardC : ProofCard := ⟨true, true, false, true, true, false, true, "PRIM-EDGE-HOLONOMY-SELECTOR"⟩
 /-- F2 (Sturmian refinement): exists, missing owner → `CONDITIONAL_EXTENSION`. -/
 def cardF2 : ProofCard := ⟨true, true, false, true, false, false, true, "PRIM-STURMIAN-REFINEMENT-OWNER"⟩
 /-- G (present-core limits): the suite of negative limits remains owned → `NO_GO`. -/
@@ -55,7 +61,7 @@ theorem manifest_statuses :
     cardD.status = Status.NO_GO ∧
     cardE2.status = Status.NO_GO ∧
     cardF1.status = Status.NO_GO ∧
-    cardC.status = Status.CONDITIONAL_EXTENSION ∧
+    cardC.status = Status.NO_GO ∧
     cardF2.status = Status.CONDITIONAL_EXTENSION ∧
     cardG.status = Status.NO_GO ∧
     cardH.status = Status.EMPIRICAL_PASSPORT ∧
