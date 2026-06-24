@@ -790,7 +790,21 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001", moduleName := "D0.LeptonClosure.BranchRowMinimalExtension",
       theoremName := "branch_row_minimal_extension", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001", moduleName := "D0.Matter.HyperchargeBLDirectionBridge",
-      theoremName := "hypercharge_bl_direction_bridge", status := ClaimStatus.leanBridgeAssumptionsExplicit }
+      theoremName := "hypercharge_bl_direction_bridge", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-LUCAS-DEFECT-SIGN-001", moduleName := "D0.Foundation.LucasDefectSign",
+      theoremName := "lucas_defect_sign_main", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-BRANCH-SYMPLECTIC-FORCING-001", moduleName := "D0.Foundation.BranchSymplecticForcing",
+      theoremName := "branch_symplectic_forcing", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-Q8-ANISOTROPY-SELECT-001", moduleName := "D0.Foundation.Q8Anisotropy",
+      theoremName := "q8_anisotropy_select", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-STEP-PARITY-001", moduleName := "D0.Foundation.SceneStepParity",
+      theoremName := "scene_step_parity", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-GRAPH-SPACE-NO-ISOMETRY-001", moduleName := "D0.Foundation.GraphSpaceNoIsometry",
+      theoremName := "graph_space_no_isometry", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ISOTROPIZATION-MECH-001", moduleName := "D0.Foundation.IsotropizationResidual",
+      theoremName := "isotropization_residual", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LEPTON-CYCLIC-GENERATOR-001", moduleName := "D0.LeptonClosure.BranchIndexUnique",
+      theoremName := "lepton_branch_index_unique", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 6496,
-    "track_fair_max": 8972,
-    "pct_strength": 72.4,
-    "core_realized": 5076,
-    "core_potential": 7520,
-    "core_headroom": 2444,
-    "n_claims": 514,
-    "n_active": 512,
+    "realized": 6612,
+    "track_fair_max": 9104,
+    "pct_strength": 72.6,
+    "core_realized": 5180,
+    "core_potential": 7640,
+    "core_headroom": 2460,
+    "n_claims": 521,
+    "n_active": 519,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 307,
-      "realized": 4298,
-      "max": 5377,
-      "core_headroom": 1069
+      "n": 313,
+      "realized": 4402,
+      "max": 5489,
+      "core_headroom": 1077
     },
     "rg": {
       "n": 7,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 49,
-      "realized": 168,
-      "max": 980,
-      "core_headroom": 812
+      "n": 50,
+      "realized": 180,
+      "max": 1000,
+      "core_headroom": 820
     }
   },
   "by_book": {
@@ -112,10 +112,10 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 22,
-      "realized": 314,
-      "max": 406,
-      "core_headroom": 92
+      "n": 28,
+      "realized": 418,
+      "max": 518,
+      "core_headroom": 100
     },
     "BOOK_02": {
       "n": 58,
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 97,
-      "realized": 1234,
-      "max": 1704,
-      "core_headroom": 460
+      "n": 98,
+      "realized": 1246,
+      "max": 1724,
+      "core_headroom": 468
     },
     "BOOK_04/08": {
       "n": 7,
@@ -1356,6 +1356,26 @@
     {
       "claim_id": "D0-UNIFIED-EDGE-SPINE-001",
       "domain": "frontier",
+      "book": "BOOK_04",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-ISOTROPIZATION-MECH-001",
+      "domain": "frontier",
+      "book": "BOOK_01",
+      "level_name": "LEAN_PROVED",
+      "leverage": 0,
+      "next": "CORE_FORMALIZED",
+      "points_gained": 8,
+      "effort": "release-bless to core"
+    },
+    {
+      "claim_id": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "domain": "formal_core",
       "book": "BOOK_04",
       "level_name": "LEAN_PROVED",
       "leverage": 0,
@@ -3947,6 +3967,20 @@
     {
       "claim_id": "D0-UNIFIED-EDGE-SPINE-001",
       "domain": "frontier",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-ISOTROPIZATION-MECH-001",
+      "domain": "frontier",
+      "leverage": 0,
+      "level_name": "LEAN_PROVED",
+      "score": 12
+    },
+    {
+      "claim_id": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "domain": "formal_core",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -11149,12 +11183,110 @@
       "book": "BOOK_02",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LUCAS-DEFECT-SIGN-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-BRANCH-SYMPLECTIC-FORCING-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-Q8-ANISOTROPY-SELECT-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SCENE-STEP-PARITY-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GRAPH-SPACE-NO-ISOMETRY-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ISOTROPIZATION-MECH-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "PROOF-TARGET",
+      "lean_status": "LEAN_PROVED",
+      "domain": "frontier",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "track": "CORE",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 3.5,
+    "penalty_total": 3.4,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -11199,8 +11331,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 35,
-        "points": -3.5,
+        "count": 34,
+        "points": -3.4,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11249,8 +11381,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 35,
-        "points": -3.5,
+        "count": 34,
+        "points": -3.4,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

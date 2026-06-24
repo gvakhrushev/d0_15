@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 6496 / 8972 (**72.4%** of track-fair max)
-- **Core spine:** 5076 / 7520 (headroom **2444** points to take every core claim to L5)
-- Claims: 512 active (514 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 6612 / 9104 (**72.6%** of track-fair max)
+- **Core spine:** 5180 / 7640 (headroom **2460** points to take every core claim to L5)
+- Claims: 519 active (521 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 100.0 / 100 (penalties **-3.5**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 100.0 / 100 (penalties **-3.4**, bonuses **+10.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -19,14 +19,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
-| `orphan_proof_targets` | 35 | -3.5 | PROOF-TARGET markers in book prose with no registry row |
+| `orphan_proof_targets` | 34 | -3.4 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 135 | +10 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.5)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.4)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -92,8 +92,8 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 307 | 4298 | 5377 | 1069 |
-| frontier | 49 | 168 | 980 | 812 |
+| formal_core | 313 | 4402 | 5489 | 1077 |
+| frontier | 50 | 180 | 1000 | 820 |
 | cosmology | 50 | 753 | 931 | 178 |
 | smooth_geometry | 36 | 433 | 602 | 165 |
 | empirical_passport | 33 | 335 | 488 | 144 |
@@ -108,13 +108,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| BOOK_04 | 97 | 1234 | 1704 | 460 |
+| BOOK_04 | 98 | 1246 | 1724 | 468 |
 | BOOK_08 | 85 | 1108 | 1556 | 444 |
 | BOOK_07 | 67 | 818 | 1142 | 310 |
 | BOOK_02 | 58 | 651 | 911 | 260 |
 | BOOK_06 | 41 | 497 | 713 | 216 |
+| BOOK_01 | 28 | 418 | 518 | 100 |
 | BOOK_05 | 29 | 370 | 523 | 153 |
-| BOOK_01 | 22 | 314 | 406 | 92 |
 | BOOK_01/02 | 11 | 212 | 212 | 0 |
 | BOOK_00 | 10 | 113 | 182 | 69 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |

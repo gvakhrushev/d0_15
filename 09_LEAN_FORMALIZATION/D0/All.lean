@@ -201,10 +201,16 @@ import D0.Extensions.X5.Soundness.ContractSchema
 import D0.Extensions.X5.Soundness.NondegenerateCompatibility
 import D0.Extensions.X5.Synthesis
 import D0.Extensions.X5.Synthesis.NondegenerateFullModel
+import D0.Foundation.BranchSymplecticForcing
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.FrobeniusDivision3D
+import D0.Foundation.GraphSpaceNoIsometry
+import D0.Foundation.IsotropizationResidual
+import D0.Foundation.LucasDefectSign
 import D0.Foundation.M1Predicate
 import D0.Foundation.Omega8Center
+import D0.Foundation.Q8Anisotropy
+import D0.Foundation.SceneStepParity
 import D0.Frozen.ConservedStressProjection
 import D0.Frozen.SeamCurvaturePoisson
 import D0.Gauge.AnomalySums
@@ -332,6 +338,7 @@ import D0.Interface.MatterLocalization
 import D0.Interface.Poisson
 import D0.Interface.ScalarPoissonReduction
 import D0.Interface.VariationDual
+import D0.LeptonClosure.BranchIndexUnique
 import D0.LeptonClosure.BranchRowMinimalExtension
 import D0.Matter.ArchivePartialTrace
 import D0.Matter.ArchiveStressCoupling
