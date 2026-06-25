@@ -351,7 +351,7 @@ D0-ASSUMPTION-LEDGER-GREEN-001,assumption ledger green,CERT-CLOSED,D0.Bridge.Ass
 D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001,dixmier feshbach finite heattrace,NO-GO,D0.Spectral.DixmierFeshbachFiniteHeatTrace,vp_dixmier_feshbach_finite_heattrace.py
 D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001,lepton riemann hurwitz branch index,CERT-CLOSED,D0.Matter.LeptonRiemannHurwitzBranchIndex,vp_lepton_riemann_hurwitz_branch_index.py
 D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001,phason archive capacity redshift,CERT-CLOSED,D0.Cosmology.PhasonArchiveCapacityRedshift,vp_phason_archive_capacity_redshift.py
-D0-PHASON-WDE-Z-MAP-OWNER-001,phason wde z map owner,PROOF-TARGET,,
+D0-PHASON-WDE-Z-MAP-OWNER-001,phason wde z map owner,NO-GO,,vp_phason_wde_z_map_owner.py
 D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001,williams shift equivalence owner,CERT-CLOSED,D0.Dynamics.ToralShiftEquivalence,vp_toral_shift_equivalence.py
 D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001,hypercharge anomaly variety 2dim,NO-GO,D0.Matter.HyperchargeAnomalyVariety,vp_hypercharge_anomaly_variety.py
 D0-CMB-NS-LAPLACIAN-IDS-OWNER-001,cmb ns laplacian ids owner,CERT-CLOSED,D0.Cosmology.CMBLaplacianIDS,vp_cmb_ns_laplacian_ids.py

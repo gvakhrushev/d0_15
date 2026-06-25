@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 498,
+    "claims": 523,
     "release_status": {
-      "CORE-FORMALIZED": 164,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 24,
+      "CORE-FORMALIZED": 174,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 25,
       "CORE_BRIDGE_SPLIT": 6,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 160,
-      "NO-GO": 59,
+      "CERT-CLOSED": 162,
+      "NO-GO": 70,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 6,
-      "PROOF-TARGET": 46,
-      "PASSPORT-CLOSED": 19
+      "EMPIRICAL-PASSPORT": 7,
+      "PROOF-TARGET": 45,
+      "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 324,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 27,
-      "PYTHON_CERTIFIED": 101,
+      "LEAN_PROVED": 348,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 28,
+      "PYTHON_CERTIFIED": 104,
       "DEPRECATED": 2,
-      "OPEN": 44
+      "OPEN": 41
     },
     "claim_type": {
-      "core": 165,
-      "bridge": 32,
-      "no-go": 67,
-      "certificate": 185,
+      "core": 176,
+      "bridge": 33,
+      "no-go": 78,
+      "certificate": 188,
       "deprecated": 3,
-      "frontier": 46
+      "frontier": 45
     },
     "domain": {
-      "formal_core": 296,
+      "formal_core": 316,
       "rg": 7,
-      "gauge_bridge": 21,
-      "smooth_geometry": 36,
+      "gauge_bridge": 22,
+      "smooth_geometry": 38,
       "spectral_action": 6,
-      "empirical_passport": 32,
+      "empirical_passport": 35,
       "cosmology": 50,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 46
+      "frontier": 45
     }
   },
   "nodes": [
@@ -10093,31 +10093,31 @@
       "id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
       "kind": "claim",
       "claim_id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_04",
       "section": "04.8",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_lepton_raw_graph_owner_manifest.py",
+      "cert": "vp_lepton_raw_graph_coefficient_nogo.py",
       "python_cert": [
-        "vp_lepton_raw_graph_owner_manifest.py"
+        "vp_lepton_raw_graph_coefficient_nogo.py"
       ],
-      "status": "PROOF-TARGET",
-      "notes": "[Iter22 closure-delta] PROOF-TARGET owner-of-the-gap: the 17-digit charged-lepton transfer decimals (r_mu=3.8814..., r_tau=10.3183...) stay HYP (D0-LEPTON-002); the integer Lucas part L11+L4=206 and exponents (0,1/4,1/3) are THE. The MISSING artifact is a raw finite graph/spectral operator from which the decimals are extracted (none exists in registry or 05_CERTS). manifest vp_lepton_raw_graph_owner_manifest.py (can-FAIL: asserts D0-LEPTON-002 stays CERT-CLOSED with decimals HYP, never promoted to THE). Until a raw-graph operator is supplied this stays PROOF-TARGET. [Iter22 frontier-strike] the DIRECT raw-graph->decimal route is RETIRED by D0-BARE-GRAPH-DECIMAL-NOGO-001 (NO-GO): a raw graph operator outputs only Q(phi)/Lucas scene invariants, but the 17-digit r_mu encodes the measured mass via the EFT/IR matching scheme (the exact external datum), so direct extraction is M1-forbidden. Only an INDIRECT derivation could close this general owner; none exists -> stays PROOF-TARGET. Decimals stay HYP (D0-LEPTON-002).",
+      "status": "NO-GO",
+      "notes": "[Loop A frontier 2026-06-24] NO-GO (lifted from PROOF-TARGET): the frozen raw graph forces only the structural SKELETON -- integer Lucas L11+L4=206 (D0-LEPTON-002, CERT-CLOSED), depth-exponent row (0,1/4,1/3) as Puiseux index 1/cyclelength (CERT-CLOSED), finite Green resolvent det(I-zU)=(1-z^4)(1-z^3) order lcm(4,3)=12 (CERT-CLOSED) -- but NOT the lepton mass COEFFICIENT. Underdetermined over the FULL frozen-resolvent-invariant class: cycle type {4,3} is the UNIQUE order-12 partition of 7, so the resolvent pins only the TYPE; the block->generation assignment is free across all 420 order-12 perms of Fin 7. Two machine-checked separators cited (owned by their own claims, not re-pointed here): branch-assignment freedom sigmaA!=sigmaB both order 12 (D0.Matter.LeptonBranchAssignmentNoGo, D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001) and companion non-uniqueness at index 1/4 (D0.Matter.LeptonPuiseuxUniquenessObstruction, D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001). This lifts the DIRECT-route NO-GO D0-BARE-GRAPH-DECIMAL-NOGO-001 to the GENERAL owner level (direct+indirect). cert vp_lepton_raw_graph_coefficient_nogo.py (can-FAIL: 420-class enumeration, 2 separators, self-tested controls). EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR (provably absent from frozen data: 2 orbits < 3 generations). 17-digit decimals stay external EFT/IR HYP (D0-LEPTON-002), claimed nowhere as derived. No forbidden engine.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
     },
     {
-      "id": "cert:vp_lepton_raw_graph_owner_manifest.py",
+      "id": "cert:vp_lepton_raw_graph_coefficient_nogo.py",
       "kind": "python_cert",
-      "label": "vp_lepton_raw_graph_owner_manifest.py",
-      "path": "05_CERTS/vp_lepton_raw_graph_owner_manifest.py",
+      "label": "vp_lepton_raw_graph_coefficient_nogo.py",
+      "path": "05_CERTS/vp_lepton_raw_graph_coefficient_nogo.py",
       "exists": true
     },
     {
@@ -10286,25 +10286,32 @@
       "id": "D0-PHASON-WZ-TRANSFER-OWNER-001",
       "kind": "claim",
       "claim_id": "D0-PHASON-WZ-TRANSFER-OWNER-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "no-go",
+      "domain": "empirical_passport",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_08",
       "section": "08.51",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_module": "D0.Extensions.ArchiveCommonSectorConstruction",
+      "lean_theorem": "sde_window_root_not_archive_eigenvalue",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_wz_transfer_owner.py",
       "python_cert": [
         "vp_phason_wz_transfer_owner.py"
       ],
-      "status": "PROOF-TARGET",
-      "notes": "[Iter22 dual-frontier] internal dark-energy transfer: archive kernel -> phason pressure -> w(z). The kernel-only no-go (D0-PHASON-WZ-KERNEL-ONLY-NOGO-001) and the EOS-form scaffold (D0-PHASON-PRESSURE-EOS-SCAFFOLD-001, w_D0=p/rho) are CLOSED. MISSING artifact (exact): the explicit internal w_D0(u) / finite w_N FORMULA -- the actual phason rho(u), p(u) functions over the archive windows (the log-det pressure + archive energy give the pair, but not yet the closed u-dependent formula). Status PROOF-TARGET. The redshift u->z / CPL reading is passport-only; no survey datum defines the object (vp_phason_wz_no_survey_tuning.py). This is HYP-with-mechanism-scaffold, NOT BRIDGE, until w_D0(u) is computed.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "NO-GO",
+      "notes": "[Loop A frontier 2026-06-24] NO-GO (lifted from PROOF-TARGET): the explicit internal dark-energy transfer L_archive kernel -> phason pressure -> w_D0(u) is NOT forced. Two obstructions, the first now machine-checked: SEP (spectral disjointness, Lean sde_window_root_not_archive_eigenvalue): the integer L_archive spectrum {24,22,20} shares NO eigenvalue with the S_DE active window (roots of x^2-3x+359/160), so no eigenvalue-matching / canonical intertwiner maps one carrier onto the other; ROLE (D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001): distinct admissible pressure/energy role-orientations give distinct EOS (witnesses w_A~0.900, w_B~1.111), so the value is not unique even at fixed carriers. Together the transfer is underdetermined. cert vp_phason_wz_transfer_owner.py (can-FAIL: spectral-disjointness over Q + role-witness + self-tested controls). EXACT-MISSING: PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT. Physical w_DE(z) magnitude/redshift stays external CPL/DESI passport D0-PHASON-WZ-CPL-PASSPORT-001, never core; no survey datum admitted as a derivation input.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/ArchiveCommonSectorConstruction.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Extensions.ArchiveCommonSectorConstruction",
+      "kind": "lean_module",
+      "label": "D0.Extensions.ArchiveCommonSectorConstruction",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/ArchiveCommonSectorConstruction.lean",
+      "exists": true
     },
     {
       "id": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
@@ -11648,9 +11655,9 @@
       "id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
       "kind": "claim",
       "claim_id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "no-go",
+      "domain": "empirical_passport",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_04",
       "section": "04.10",
       "lean_module": "D0.Matter.CKMClass5ParityExclusion",
@@ -11662,8 +11669,8 @@
       "python_cert": [
         "vp_ckm_class5_parity_exclusion.py"
       ],
-      "status": "PROOF-TARGET",
-      "notes": "[Iter22 deep-stitch] HONEST PROOF-TARGET (parity alone is NOT sufficient). Finite arithmetic: |(Z/44)*|=phi(44)=20; subgroup orders {1,2,4,5,10,20}; class-5 odd, shell step +2 even, det(T)=-1, Tr(T^5)=-11. But Lean parity_only_does_not_witness_obligation PROVES parity-only cannot separate class 5 from class 1 (same parity fibre) -- so the proposed parity/orientation exclusion is NOT a rigorous contradiction. Lean D0.Matter.CKMClass5ParityExclusion (class5_odd, shell_step_even, parity_only_does_not_witness_obligation, ckm_class5_parity_exclusion_status); cert vp_ckm_class5_parity_exclusion.py. MISSING ARTIFACT: a formal orientation-parity selector sel(order,step,det) landing class 5 (not 20/1) in a forbidden coset. Class-20 stays allowed; no measured CKM angle used.",
+      "status": "NO-GO",
+      "notes": "[Cycle 2 frontier 2026-06-24] NO-GO (lifted from PROOF-TARGET): orientation PARITY alone cannot exclude CKM winding class 5. Over the FULL parity-only admissible class the parity selector is degenerate on the odd classes (phi(44)=20, odd divisor-orders {1,5}, parityOnlySelector(5)=parityOnlySelector(1)), so excluding 5 would also exclude the identity class -- a finite machine-checked contradiction with the resolution requirement sel(5)!=sel(1). Lean owner (own theorem, single-owned): D0.Matter.CKMClass5ParityExclusion.ckm_class5_parity_exclusion_status (decide on phi(44)=20, 5%2=1, 2%2=0, 5|20, det T=-1, Tr(T^5)=-11, plus the parity degeneracy + non-witness). cert vp_ckm_class5_parity_exclusion.py (can-FAIL, 4 reachable controls). The SUBSTANTIVE class-5 exclusion is owned on the DIFFERENT aliasing axis (|Z5|=5=D_Sigma): D0-CLASS5-ALIASING-001 (CORE-FORMALIZED) + D0-CKM-CLASS5-SELECTOR-OWNER-001 (CERT-CLOSED). No PDG/Wolfenstein input.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Matter/CKMClass5ParityExclusion.lean",
       "module_exists": true,
       "certs_exist": true
@@ -11876,23 +11883,32 @@
       "id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
       "kind": "claim",
       "claim_id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "no-go",
+      "domain": "smooth_geometry",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_08",
       "section": "08.51",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
-      "status": "PROOF-TARGET",
-      "notes": "Owner of the physical dark-energy z-map reading of the archive window ratio. MISSING ARTIFACTS (neither exists): (1) a proven continuum interpolation w_N -> w_D0(u) from the finite integer-window ratio w_N=phi^(n-1)/(phi^n-1) (CERT-CLOSED at D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001) to a continuum function on the redshift coordinate; AND (2) the magnitude/sign normalization map carrying that internal POSITIVE ratio (-> +phi^-1 at the z->inf early end) onto the physical NEGATIVE w_DE on the LATE-TIME (z->0) window. The direction is the binding constraint: phi^-1 is the early-time (z->inf) limit, not the z->0 value, so the late-time normalization is an additional unproven step. Magnitude sub-piece overlaps D0-PHASON-WZ-EXPLICIT-FUNCTION-001 (also PROOF-TARGET); redshift/CPL reading is passport-only (D0-PHASON-WZ-CPL-PASSPORT-001, PASSPORT-CLOSED). [M2] Magnitude map not present-core forced (D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001); sign owned (Galois), magnitude = external physical-branch passport (DESI/CPL).",
+      "cert": "vp_phason_wde_z_map_owner.py",
+      "python_cert": [
+        "vp_phason_wde_z_map_owner.py"
+      ],
+      "status": "NO-GO",
+      "notes": "Owner of the physical dark-energy z-map reading of the archive window ratio: NO-GO + EXTERNAL-PASSPORT composite (every sub-piece settled). (1) CONTINUUM interpolation w_N->w_D0(s) CLOSED by D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001 (CERT-CLOSED, Lean phason_continuum_envelope_owner: w_D0(s)=1/[phi(1-exp(-s log phi))] restricts to w_N=phi^(n-1)/(phi^n-1) at integers). (2) SIGN normalization to negative w_DE OWNED by D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001 (Galois anchor -phi). (3) MAGNITUDE z-profile NOT present-core unique: NO-GO via D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001 (>=2 admissible maps anchored at -phi, differ at z=1). (4) physical redshift profile = external DESI/CPL passport D0-PHASON-WZ-CPL-PASSPORT-001 (PASSPORT-CLOSED). Composite: no unique internal w_DE(z) map (magnitude NO-GO) + external profile -> NO-GO+passport, NOT an open frontier or global blocker. cert vp_phason_wde_z_map_owner.py (can-FAIL, re-derives the decomposition).",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phason_wde_z_map_owner.py",
+      "kind": "python_cert",
+      "label": "vp_phason_wde_z_map_owner.py",
+      "path": "05_CERTS/vp_phason_wde_z_map_owner.py",
+      "exists": true
     },
     {
       "id": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
@@ -16462,13 +16478,6 @@
       "certs_exist": true
     },
     {
-      "id": "module:D0.Extensions.ArchiveCommonSectorConstruction",
-      "kind": "lean_module",
-      "label": "D0.Extensions.ArchiveCommonSectorConstruction",
-      "path": "09_LEAN_FORMALIZATION/D0/Extensions/ArchiveCommonSectorConstruction.lean",
-      "exists": true
-    },
-    {
       "id": "cert:vp_five_primitive_operator_type_firewall.py",
       "kind": "python_cert",
       "label": "vp_five_primitive_operator_type_firewall.py",
@@ -16855,6 +16864,783 @@
       "kind": "python_cert",
       "label": "vp_x5_extension_status_discipline.py",
       "path": "05_CERTS/vp_x5_extension_status_discipline.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ZONE-CURRENT-001",
+      "kind": "claim",
+      "claim_id": "D0-ZONE-CURRENT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04",
+      "section": "v15 zone current",
+      "lean_module": "D0.Integration.V15.RawZone",
+      "lean_theorem": "zone_current_spine",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_zone_current_spine.py",
+      "python_cert": [
+        "vp_zone_current_spine.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "v15 WP-A THE. J=i[D,A] G-Hermitian in canonical part-size inner product G=diag(9,11,13); comm^3=-2840*comm; spectrum {0,+-2sqrt710}. FIREWALL: not a physical current/neutrino/charge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/RawZone.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Integration.V15.RawZone",
+      "kind": "lean_module",
+      "label": "D0.Integration.V15.RawZone",
+      "path": "09_LEAN_FORMALIZATION/D0/Integration/V15/RawZone.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_zone_current_spine.py",
+      "kind": "python_cert",
+      "label": "vp_zone_current_spine.py",
+      "path": "05_CERTS/vp_zone_current_spine.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001",
+      "kind": "claim",
+      "claim_id": "D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04",
+      "section": "v15 zone split",
+      "lean_module": "D0.Integration.V15.RawZone",
+      "lean_theorem": "zone_current_spine",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_zone_current_spine.py",
+      "python_cert": [
+        "vp_zone_current_spine.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "v15 WP-A THE. ran(A)=neutral(1)+active(2) via G-orthogonal projectors P0,Pact (tr 1/2). Corrected from oblique (CONDITIONAL) to G-orthogonal (THE).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/RawZone.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-FESHBACH-SCHUR-FACTORIZATION-V15",
+      "kind": "claim",
+      "claim_id": "D0-FESHBACH-SCHUR-FACTORIZATION-V15",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02",
+      "section": "v15 Feshbach",
+      "lean_module": "D0.Integration.V15.Feshbach",
+      "lean_theorem": "feshbach_schur_factorization",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "v15 WP-E1 THE (algebraic identity only). det[[A,B],[C,I]]=det(A-B*C); Mathlib det_fromBlocks_one22. NOT an energy-pressure tensor.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/Feshbach.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Integration.V15.Feshbach",
+      "kind": "lean_module",
+      "label": "D0.Integration.V15.Feshbach",
+      "path": "09_LEAN_FORMALIZATION/D0/Integration/V15/Feshbach.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-BRANCH-CP-READOUT-NOGO-V15",
+      "kind": "claim",
+      "claim_id": "D0-BRANCH-CP-READOUT-NOGO-V15",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "v15 branch coupling",
+      "lean_module": "D0.Integration.V15.BranchAudit",
+      "lean_theorem": "branch_readout_not_unique",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "v15 WP-B NO-GO. branch commutant>C*I (3 blocks); same marginals, different coherence. Missing PRIM-BRANCH-ISOTROPIC-READOUT.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/BranchAudit.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Integration.V15.BranchAudit",
+      "kind": "lean_module",
+      "label": "D0.Integration.V15.BranchAudit",
+      "path": "09_LEAN_FORMALIZATION/D0/Integration/V15/BranchAudit.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-DECIMAL-MASS-RATIOS",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-DECIMAL-MASS-RATIOS",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "v15 lepton mass ratios",
+      "lean_module": "D0.Integration.V15.BranchAudit",
+      "lean_theorem": "mass_ratio_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "v15 WP-D NO-GO. Vandermonde {0,1/4,1/3} det=1/144!=0; any (r_mu,r_tau) realizable. Missing PRIM-EFT-IR-MATCHING-FUNCTIONAL.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/BranchAudit.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-P1-PHYSICAL-EOS",
+      "kind": "claim",
+      "claim_id": "D0-P1-PHYSICAL-EOS",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_08",
+      "section": "v15 equation of state",
+      "lean_module": "D0.Integration.V15.Feshbach",
+      "lean_theorem": "eos_underdetermined",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "v15 WP-E2 NO-GO. same total response, distinct w=p/rho. Missing PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT. No 1+z=phi^n, no rho=e^u-1.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/Feshbach.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-EDGE-COVER-FAMILY-001",
+      "kind": "claim",
+      "claim_id": "D0-EDGE-COVER-FAMILY-001",
+      "type": "no-go",
+      "domain": "smooth_geometry",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "v15 physical edge cover",
+      "lean_module": "D0.Integration.V15.EdgeAudit",
+      "lean_theorem": "edge_cover_is_family",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "[Cycle 3 frontier 2026-06-24] NO-GO (lifted from PROOF-TARGET/CONDITIONAL; underdetermination-maximality type, aligned with siblings B/D/E2). The physical edge cover is a U(1) lambda-family: the return-edge holonomy is constrained only to |lambda|=1, its phase is NOT forced by symmetry/unitarity/feedback. Distinct admissible holonomies give inequivalent terminal covers -- separating observable z^3-coeff=-lambda is INJECTIVE (Lean: D0.Integration.V15.EdgeAudit.cover_coeff_injective / edge_cover_is_family, LEAN_PROVED). Hybrid owner: Lean owns the injective separating observable; the |lambda|=1 continuum admissibility is cert-borne (verify_unified_feedback.py). v15 cardC reclassified provedImpossibleInClass=true -> NO_GO. EXACT-MISSING: PRIM-EDGE-HOLONOMY-SELECTOR (undefined corpus-wide; selecting a unique lambda needs NEW frozen input). Firewall intact: no physical observable claimed.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/EdgeAudit.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Integration.V15.EdgeAudit",
+      "kind": "lean_module",
+      "label": "D0.Integration.V15.EdgeAudit",
+      "path": "09_LEAN_FORMALIZATION/D0/Integration/V15/EdgeAudit.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-STURMIAN-REFINEMENT",
+      "kind": "claim",
+      "claim_id": "D0-STURMIAN-REFINEMENT",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_06",
+      "section": "v15 Sturmian refinement",
+      "lean_module": "D0.Integration.V15.Refinement",
+      "lean_theorem": "sturmian_golden_tower",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "PROOF-TARGET",
+      "notes": "v15 WP-F2 CONDITIONAL-EXTENSION. golden incidence det=-1,trace=1 (phi). Missing PRIM-STURMIAN-REFINEMENT-OWNER. No CFT/Virasoro import.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/Refinement.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Integration.V15.Refinement",
+      "kind": "lean_module",
+      "label": "D0.Integration.V15.Refinement",
+      "path": "09_LEAN_FORMALIZATION/D0/Integration/V15/Refinement.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_01",
+      "section": "v15 archive refinement",
+      "lean_module": "D0.Integration.V15.Refinement",
+      "lean_theorem": "archive_window_not_measure_preserving",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "v15 WP-F1 NO-GO. archive window 359/160 != 1 (regular cover ratio); archive map is contracting, not a regular cover.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/Refinement.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-PRESENT-CORE-LIMITS-REGRESSION-V15",
+      "kind": "claim",
+      "claim_id": "D0-PRESENT-CORE-LIMITS-REGRESSION-V15",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_05",
+      "section": "v15 no-go regression",
+      "lean_module": "D0.Integration.V15.PhysicalBoundary",
+      "lean_theorem": "regression_owners_present",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "v16 WP-G regression CITATION INDEX (NOT a new NO-GO; downgraded from NO-GO per session self-audit -- the mapped theorem is a bookkeeping list count, not a negative theorem). Confirms the 6 established present-core limits remain OWNED by their cited claims (D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001 etc.) plus the structural constants c_D0=1 and finite-heat-trace poles=0. No new negative content here; the real no-gos are the cited owners.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/PhysicalBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Integration.V15.PhysicalBoundary",
+      "kind": "lean_module",
+      "label": "D0.Integration.V15.PhysicalBoundary",
+      "path": "09_LEAN_FORMALIZATION/D0/Integration/V15/PhysicalBoundary.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-AMS-HEAVY-NUCLEI-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-AMS-HEAVY-NUCLEI-PASSPORT-001",
+      "type": "core",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
+      "book": "BOOK_05",
+      "section": "v15 AMS passport",
+      "lean_module": "D0.Integration.V15.PhysicalBoundary",
+      "lean_theorem": "ams_is_passport",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "v15 WP-H EXTERNAL-PASSPORT. external flux b~1/3 (P,S,Cl), ~1/2 (Ar,K,Ca); amsHasInternalOwner=false. Needs internal nuclear-flux transfer operator. Comparison only.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Integration/V15/PhysicalBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-Q8-TERMINAL-FOURIER-001",
+      "kind": "claim",
+      "claim_id": "D0-Q8-TERMINAL-FOURIER-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "v15 unified Q8 terminal",
+      "lean_module": "D0.UnifiedFiniteCore.Q8Terminal",
+      "lean_theorem": "q8_terminal_fourier",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "verify_unified_backbone.py",
+      "python_cert": [
+        "verify_unified_backbone.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "v15 unified spine. Q8 Fourier E0,E4,E3 orthogonal idempotents, sum=I, branch-order signature ranks (1,4,3) via trace. Forced finite fact from Q8.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/UnifiedFiniteCore/Q8Terminal.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.UnifiedFiniteCore.Q8Terminal",
+      "kind": "lean_module",
+      "label": "D0.UnifiedFiniteCore.Q8Terminal",
+      "path": "09_LEAN_FORMALIZATION/D0/UnifiedFiniteCore/Q8Terminal.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:verify_unified_backbone.py",
+      "kind": "python_cert",
+      "label": "verify_unified_backbone.py",
+      "path": "05_CERTS/verify_unified_backbone.py",
+      "exists": true
+    },
+    {
+      "id": "D0-UNIFIED-EDGE-SPINE-001",
+      "kind": "claim",
+      "claim_id": "D0-UNIFIED-EDGE-SPINE-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_04",
+      "section": "v15 unified edge-feedback-Feshbach-lepton",
+      "lean_module": "D0.UnifiedFiniteCore.UnifiedTheorem",
+      "lean_theorem": "unified_finite_core",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "verify_unified_feedback.py",
+      "python_cert": [
+        "verify_unified_feedback.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "v15 unified chain K(9,11,13)->Q8->H_term->U_E->F_term=P_br/2->W_eff->G_l^fb->A_n. CONDITIONAL-EXTENSION: one constructed admissible member of edge-cover family (chosen holonomy lambda, balanced feedback R_*, line-graph contact). Decidable spine in Lean; det factors+dressed Green+F_term=P_br/2 verified exactly in certs. Missing PRIM-EDGE-HOLONOMY-SELECTOR. FIREWALL: poles are finite resonance geometry, NOT lepton masses/charges/redshift/EOS.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/UnifiedFiniteCore/UnifiedTheorem.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.UnifiedFiniteCore.UnifiedTheorem",
+      "kind": "lean_module",
+      "label": "D0.UnifiedFiniteCore.UnifiedTheorem",
+      "path": "09_LEAN_FORMALIZATION/D0/UnifiedFiniteCore/UnifiedTheorem.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:verify_unified_feedback.py",
+      "kind": "python_cert",
+      "label": "verify_unified_feedback.py",
+      "path": "05_CERTS/verify_unified_feedback.py",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "v16 source-native lepton branch-row closure",
+      "lean_module": "D0.LeptonClosure.BranchRowMinimalExtension",
+      "lean_theorem": "branch_row_minimal_extension",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "d0_branch_row_minimal_extension_verify.py",
+      "python_cert": [
+        "d0_branch_row_minimal_extension_verify.py"
+      ],
+      "status": "NO-GO",
+      "notes": "v16 OUTCOME-B. Return orders (4,3) source-forced (unique order-12 cycle type of partitions of 7); branch->generation row underdetermined (two-completion sigmaA/sigmaB, same resolvent invariants). B_row ('point 0 in size-4 orbit') is NECESSARY (separates sigmaA/sigmaB) but NOT sufficient alone -- over the full admissible class (420 order-12 cycle-type-(4,3) perms of Fin 7) B_row passes 240, not 1 (sigmaA,sigmaC both pass). The SUFFICIENT row-fixing operator (=PRIM-LEPTON-BRANCH-FIXING-OPERATOR) is the full orbit-labeling C(7,4)=35->1, of which B_row (35->20) is one bit. CORRECTED from an over-claimed B_row necessary+sufficient+minimal packaging (true only over a cherry-picked 2-element list) per session self-audit. Source-native permutation combinatorics, NO hand-built matrices. Cites D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001, D0-CKM... etc; does not re-mint. FIREWALL: no numerical mass input.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/LeptonClosure/BranchRowMinimalExtension.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.LeptonClosure.BranchRowMinimalExtension",
+      "kind": "lean_module",
+      "label": "D0.LeptonClosure.BranchRowMinimalExtension",
+      "path": "09_LEAN_FORMALIZATION/D0/LeptonClosure/BranchRowMinimalExtension.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:d0_branch_row_minimal_extension_verify.py",
+      "kind": "python_cert",
+      "label": "d0_branch_row_minimal_extension_verify.py",
+      "path": "05_CERTS/d0_branch_row_minimal_extension_verify.py",
+      "exists": true
+    },
+    {
+      "id": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "kind": "claim",
+      "claim_id": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_01",
+      "section": "hypercharge direction minimal bridge",
+      "lean_module": "D0.Matter.HyperchargeBLDirectionBridge",
+      "lean_theorem": "hypercharge_bl_direction_bridge",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-KERNEL-CHARGE-LOCALIZATION"
+      ],
+      "cert": "vp_hypercharge_bl_direction_bridge.py",
+      "python_cert": [
+        "vp_hypercharge_bl_direction_bridge.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "Closes the hypercharge-direction obligation as a minimal bridge (NOT THE). Bridge Xi_Y = nu^c uncharged = nu_R in ker(A) = R2 graph->physics localization (MECH-LIMIT, not forced). Proven NECESSARY (Y,B-L independent anomaly-free, B-L charges nu^c) + SUFFICIENT (nu^c=0 => b=0 => span{Y}) + MINIMAL (nu^c unique coord reading b alone). Collapses 2-dim span{Y,B-L} to hypercharge ray. Linkage: hypercharge-direction obligation = R2 localization obligation (one, not two). Cites D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001 (NO-GO); does not re-mint. FIREWALL: single Z2 sterile bit, no mass input. EXTERNAL OWNER-EDGES (support the bridge, do NOT upgrade it to THE): Geng-Marshak PRD39(1989)693 + Minahan-Ramond-Warner PRD41(1990)715 (anomalies fix SM Y up to normalization, second branch removed by nu_R); Babu-Mohapatra PRL63(1989)938 (Majorana nu_R => charge quantization). VERIFIED the Majorana route forces beta=0 ONLY given Y(nu_R)=0 (=nu_R in ker = the bridge): maj(beta=1,Y_nuR=1)=0 shows beta NOT forced if Y(nu_R) free. Caveat ASSUMP-NO-EXOTIC-FERMIONS (Costa PRD102(2020)115006: other anomaly-free U(1)s exist with exotics; D0 excludes via fixed K(9,11,13)).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeBLDirectionBridge.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Matter.HyperchargeBLDirectionBridge",
+      "kind": "lean_module",
+      "label": "D0.Matter.HyperchargeBLDirectionBridge",
+      "path": "09_LEAN_FORMALIZATION/D0/Matter/HyperchargeBLDirectionBridge.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_hypercharge_bl_direction_bridge.py",
+      "kind": "python_cert",
+      "label": "vp_hypercharge_bl_direction_bridge.py",
+      "path": "05_CERTS/vp_hypercharge_bl_direction_bridge.py",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-KERNEL-CHARGE-LOCALIZATION",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-KERNEL-CHARGE-LOCALIZATION",
+      "lean_name": "D0.Bridge.BridgeAssumption.KernelChargeLocalizationAssumption",
+      "status": "EXPLICIT",
+      "assumption_type": "PHYSICS_DICTIONARY",
+      "external_source_or_cert": "vp_hypercharge_bl_direction_bridge.py"
+    },
+    {
+      "id": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+      "kind": "claim",
+      "claim_id": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "composition real-quotient (PRL anchoring)",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_d0_composition_real_quotient.py",
+      "python_cert": [
+        "vp_d0_composition_real_quotient.py"
+      ],
+      "status": "PASSPORT-CLOSED",
+      "notes": "PASSPORT (NOT THE). 2-carrier qubit external anchoring to Barrios-Hita PRL 136,240202 (2026) real-quotient P4 QM. Cert verifies the PRL real-quotient identities (dim 8, J_Fa(x)J_Fb=-I, P4 commute, Eq.6) AND the D0-native leg (real Q8 center {+-1}, i^2=j^2=k^2=-1 = J_F^2=-I) grounding J_F. Places D0 in the non-falsifiable P4 class, not the Renou-falsified naive-tensor class. Dictionary Q8-center<->J_F + cluster-decomp<->P4 are interpretive bridges, NOT present-core derivations -> PASSPORT not THE; an external paper is never a defining input for a THE. General d/n>2 = external owner-edge ASSUMP-PRL-RQM-GENERAL (PRL Suppl. B). Cites D0-Q8-SIN-CHANNEL-001, D0-SEAM-HOLONOMY-001, D0-BORN-QUADRATIC-ORIGIN-001.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_d0_composition_real_quotient.py",
+      "kind": "python_cert",
+      "label": "vp_d0_composition_real_quotient.py",
+      "path": "05_CERTS/vp_d0_composition_real_quotient.py",
+      "exists": true
+    },
+    {
+      "id": "D0-LUCAS-DEFECT-SIGN-001",
+      "kind": "claim",
+      "claim_id": "D0-LUCAS-DEFECT-SIGN-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "scene-birth +2 step (Lucas defect sign)",
+      "lean_module": "D0.Foundation.LucasDefectSign",
+      "lean_theorem": "lucas_defect_sign_main",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "A1 R3 THE. phi^n - L_n = (-1)^{n+1} phi^{-n}; defect sign = (-1)^{n+1} (positive iff n odd). Vieta + phi>0 over R (golden ratio).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/LucasDefectSign.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.LucasDefectSign",
+      "kind": "lean_module",
+      "label": "D0.Foundation.LucasDefectSign",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/LucasDefectSign.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-BRANCH-SYMPLECTIC-FORCING-001",
+      "kind": "claim",
+      "claim_id": "D0-BRANCH-SYMPLECTIC-FORCING-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "branch plane symplectic forcing",
+      "lean_module": "D0.Foundation.BranchSymplecticForcing",
+      "lean_theorem": "branch_symplectic_forcing",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "A1 R1 THE. Alternating nonzero form on F2^2 has even rank => rank 2 => nondegenerate symplectic (det=a over ZMod 2). Discharges ASSUMP-COMMUTATOR-SYMPLECTIC; forces extraspecial order 8 (the 8 doubly-forced).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/BranchSymplecticForcing.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.BranchSymplecticForcing",
+      "kind": "lean_module",
+      "label": "D0.Foundation.BranchSymplecticForcing",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/BranchSymplecticForcing.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-Q8-ANISOTROPY-SELECT-001",
+      "kind": "claim",
+      "claim_id": "D0-Q8-ANISOTROPY-SELECT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "Q8 vs D4 anisotropy selector",
+      "lean_module": "D0.Foundation.Q8Anisotropy",
+      "lean_theorem": "q8_anisotropy_select",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "A1 R1 CORE-FORCING. q-(Arf1) anisotropic (q-=1 on all F2^2\u0000 = Q8); q+(Arf0) has null ray (= D4). No-null-ray M1 selector forces Q8, Dedekind-independent. Decidable over F2.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/Q8Anisotropy.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.Q8Anisotropy",
+      "kind": "lean_module",
+      "label": "D0.Foundation.Q8Anisotropy",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/Q8Anisotropy.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-SCENE-STEP-PARITY-001",
+      "kind": "claim",
+      "claim_id": "D0-SCENE-STEP-PARITY-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "scene step parity from det T",
+      "lean_module": "D0.Foundation.SceneStepParity",
+      "lean_theorem": "scene_step_parity",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "A1 R3 CORE-FORCING. det T=-1 (T=[[0,1],[1,-1]]) => one negative eigenvalue => one Z2 sign d.o.f. => constant parity under the existing no-aliasing principle (no new assumption; discharges ASSUMP-ORIENT-PARITY). 11=L5 is the skipped admissible address ruling out +4. Step=+2.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/SceneStepParity.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.SceneStepParity",
+      "kind": "lean_module",
+      "label": "D0.Foundation.SceneStepParity",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/SceneStepParity.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-GRAPH-SPACE-NO-ISOMETRY-001",
+      "kind": "claim",
+      "claim_id": "D0-GRAPH-SPACE-NO-ISOMETRY-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_01",
+      "section": "no forced graph->space isometry",
+      "lean_module": "D0.Foundation.GraphSpaceNoIsometry",
+      "lean_theorem": "graph_space_no_isometry",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "A1 R2 NO-GO. Distinct zone sizes (9,11,13) => induced zone-symmetry trivial (!= cyclic Aut(Q8)) and norms anisotropic => no M1-admissible isometry Image(A)=span{i,j,k}. The graph->space hinge is the isotropization MECH-LIMIT, NOT an identity. Grounds the hypercharge bridge's 'not a forced identity'.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/GraphSpaceNoIsometry.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.GraphSpaceNoIsometry",
+      "kind": "lean_module",
+      "label": "D0.Foundation.GraphSpaceNoIsometry",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/GraphSpaceNoIsometry.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-ISOTROPIZATION-MECH-001",
+      "kind": "claim",
+      "claim_id": "D0-ISOTROPIZATION-MECH-001",
+      "type": "frontier",
+      "domain": "frontier",
+      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "book": "BOOK_01",
+      "section": "isotropization mechanism + residual",
+      "lean_module": "D0.Foundation.IsotropizationResidual",
+      "lean_theorem": "isotropization_residual",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_isotropization_residual.py",
+      "python_cert": [
+        "vp_isotropization_residual.py"
+      ],
+      "status": "PROOF-TARGET",
+      "notes": "A1 R2 MECH-LIMIT. Cubic lambda^3-359lambda-2574 coeffs = scene symmetric functions (e2=359,2e3=2574). Residual shape-anisotropy gap Delta=2.3208, frac=0.2126 (cert). Dimensionful gap->amplitude realization OPEN (MECH-LIMIT, no number claimed).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/IsotropizationResidual.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.IsotropizationResidual",
+      "kind": "lean_module",
+      "label": "D0.Foundation.IsotropizationResidual",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/IsotropizationResidual.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_isotropization_residual.py",
+      "kind": "python_cert",
+      "label": "vp_isotropization_residual.py",
+      "path": "05_CERTS/vp_isotropization_residual.py",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "lepton cyclic generator + branch-index uniqueness",
+      "lean_module": "D0.LeptonClosure.BranchIndexUnique",
+      "lean_theorem": "lepton_branch_index_unique",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_lepton_branch_index_unique.py",
+      "python_cert": [
+        "vp_lepton_branch_index_unique.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "A1.6.1 THE (INDEX only). C_n order exactly n; distinct roots of z^n-1 => non-derogatory => unique similarity class => branch index 1/n similarity-invariant (Newton-Puiseux, Kato; cert). SCOPE: fixes the INDEX, NOT the branch->generation row map (= v16 NO-GO D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001); decimals external (ASSUMP-LEPTON-EFT-DECIMALS).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/LeptonClosure/BranchIndexUnique.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.LeptonClosure.BranchIndexUnique",
+      "kind": "lean_module",
+      "label": "D0.LeptonClosure.BranchIndexUnique",
+      "path": "09_LEAN_FORMALIZATION/D0/LeptonClosure/BranchIndexUnique.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_lepton_branch_index_unique.py",
+      "kind": "python_cert",
+      "label": "vp_lepton_branch_index_unique.py",
+      "path": "05_CERTS/vp_lepton_branch_index_unique.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+      "kind": "claim",
+      "claim_id": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "Track B finite gap/mismatch bound",
+      "lean_module": "D0.ParallelClosure.FiniteDavisKahanGapBound",
+      "lean_theorem": "finite_davis_kahan_instance",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "d0_ckm_mismatch_bound_verify.py",
+      "python_cert": [
+        "d0_ckm_mismatch_bound_verify.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "v16 Track B B4. Finite Davis-Kahan sin-Theta bound ||(I-Pd)Pu|| <= ||V||/gamma (C=1), the honest content of 'small mixing <= small source mismatch / isolated gap' (NOT rank3=>small CKM). Rational instance Lean-proved over Q (||X||^2 gamma^2=16/5<=||V||_HS^2=8); general C=1 bound cert-verified over 3000 random Hermitian + no-gap control. General theorem = external Davis-Kahan SIAM JNA 1970 (cited, not a defining engine). SCOPE: CKM topology CERTIFIED (cite D0-CKM-EXACT-001); MAGNITUDE PROOF-TARGET -- source gives ONE shell-overlap tensor not a genuine (Y_u,Y_d) pair, so V,gamma not forced (cite D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001). Missing Xi_CKM in {up/down pairing, common-left-carrier id, holonomy->mismatch}.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/ParallelClosure/FiniteDavisKahanGapBound.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.ParallelClosure.FiniteDavisKahanGapBound",
+      "kind": "lean_module",
+      "label": "D0.ParallelClosure.FiniteDavisKahanGapBound",
+      "path": "09_LEAN_FORMALIZATION/D0/ParallelClosure/FiniteDavisKahanGapBound.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:d0_ckm_mismatch_bound_verify.py",
+      "kind": "python_cert",
+      "label": "d0_ckm_mismatch_bound_verify.py",
+      "path": "05_CERTS/d0_ckm_mismatch_bound_verify.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+      "kind": "claim",
+      "claim_id": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+      "type": "core",
+      "domain": "gauge_bridge",
+      "scope_guard": "Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.",
+      "book": "BOOK_04",
+      "section": "cross-gate: Yukawa gauge-compat over kernel family",
+      "lean_module": "D0.ParallelClosure.CrossGate",
+      "lean_theorem": "crossgate_holds",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "v16 cross-track gate. [Q,Y_u]=[Q,Y_d]=0 holds for BOTH Y and B-L (the full 2-dim massless kernel span{Y,B-L} of Track A Case A2), so the Yukawa does NOT select the hypercharge row over B-L -- protects against a hidden row choice; consistent with D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001. Decidable over Q; negative control (bad Higgs charge) breaks invariance. Row selection still needs Xi_Y (D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001), NOT supplied here.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/ParallelClosure/CrossGate.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.ParallelClosure.CrossGate",
+      "kind": "lean_module",
+      "label": "D0.ParallelClosure.CrossGate",
+      "path": "09_LEAN_FORMALIZATION/D0/ParallelClosure/CrossGate.lean",
       "exists": true
     }
   ],
@@ -21061,7 +21847,7 @@
     },
     {
       "source": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
-      "target": "domain:frontier",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
@@ -21071,7 +21857,7 @@
     },
     {
       "source": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
-      "target": "cert:vp_lepton_raw_graph_owner_manifest.py",
+      "target": "cert:vp_lepton_raw_graph_coefficient_nogo.py",
       "kind": "certified_by"
     },
     {
@@ -21151,12 +21937,12 @@
     },
     {
       "source": "D0-PHASON-WZ-TRANSFER-OWNER-001",
-      "target": "domain:frontier",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-PHASON-WZ-TRANSFER-OWNER-001",
-      "target": "module:",
+      "target": "module:D0.Extensions.ArchiveCommonSectorConstruction",
       "kind": "implemented_in"
     },
     {
@@ -21766,7 +22552,7 @@
     },
     {
       "source": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
-      "target": "domain:frontier",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
@@ -21856,13 +22642,18 @@
     },
     {
       "source": "D0-PHASON-WDE-Z-MAP-OWNER-001",
-      "target": "domain:frontier",
+      "target": "domain:smooth_geometry",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-PHASON-WDE-Z-MAP-OWNER-001",
       "target": "module:",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+      "target": "cert:vp_phason_wde_z_map_owner.py",
+      "kind": "certified_by"
     },
     {
       "source": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
@@ -24038,6 +24829,311 @@
       "source": "D0-X5-ALPHA-BOUNDARY-001",
       "target": "assumption:ASSUMP-LINDEMANN-LNPHI",
       "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-ZONE-CURRENT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ZONE-CURRENT-001",
+      "target": "module:D0.Integration.V15.RawZone",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ZONE-CURRENT-001",
+      "target": "cert:vp_zone_current_spine.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001",
+      "target": "module:D0.Integration.V15.RawZone",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001",
+      "target": "cert:vp_zone_current_spine.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FESHBACH-SCHUR-FACTORIZATION-V15",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FESHBACH-SCHUR-FACTORIZATION-V15",
+      "target": "module:D0.Integration.V15.Feshbach",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BRANCH-CP-READOUT-NOGO-V15",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BRANCH-CP-READOUT-NOGO-V15",
+      "target": "module:D0.Integration.V15.BranchAudit",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-DECIMAL-MASS-RATIOS",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-DECIMAL-MASS-RATIOS",
+      "target": "module:D0.Integration.V15.BranchAudit",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-P1-PHYSICAL-EOS",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-P1-PHYSICAL-EOS",
+      "target": "module:D0.Integration.V15.Feshbach",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-EDGE-COVER-FAMILY-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-EDGE-COVER-FAMILY-001",
+      "target": "module:D0.Integration.V15.EdgeAudit",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT",
+      "target": "module:D0.Integration.V15.Refinement",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001",
+      "target": "module:D0.Integration.V15.Refinement",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PRESENT-CORE-LIMITS-REGRESSION-V15",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PRESENT-CORE-LIMITS-REGRESSION-V15",
+      "target": "module:D0.Integration.V15.PhysicalBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-AMS-HEAVY-NUCLEI-PASSPORT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-AMS-HEAVY-NUCLEI-PASSPORT-001",
+      "target": "module:D0.Integration.V15.PhysicalBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-Q8-TERMINAL-FOURIER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-Q8-TERMINAL-FOURIER-001",
+      "target": "module:D0.UnifiedFiniteCore.Q8Terminal",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-Q8-TERMINAL-FOURIER-001",
+      "target": "cert:verify_unified_backbone.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-UNIFIED-EDGE-SPINE-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-UNIFIED-EDGE-SPINE-001",
+      "target": "module:D0.UnifiedFiniteCore.UnifiedTheorem",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-UNIFIED-EDGE-SPINE-001",
+      "target": "cert:verify_unified_feedback.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+      "target": "module:D0.LeptonClosure.BranchRowMinimalExtension",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+      "target": "cert:d0_branch_row_minimal_extension_verify.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "target": "module:D0.Matter.HyperchargeBLDirectionBridge",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "target": "cert:vp_hypercharge_bl_direction_bridge.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "target": "assumption:ASSUMP-KERNEL-CHARGE-LOCALIZATION",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+      "target": "cert:vp_d0_composition_real_quotient.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LUCAS-DEFECT-SIGN-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LUCAS-DEFECT-SIGN-001",
+      "target": "module:D0.Foundation.LucasDefectSign",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-BRANCH-SYMPLECTIC-FORCING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-BRANCH-SYMPLECTIC-FORCING-001",
+      "target": "module:D0.Foundation.BranchSymplecticForcing",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-Q8-ANISOTROPY-SELECT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-Q8-ANISOTROPY-SELECT-001",
+      "target": "module:D0.Foundation.Q8Anisotropy",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SCENE-STEP-PARITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SCENE-STEP-PARITY-001",
+      "target": "module:D0.Foundation.SceneStepParity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-GRAPH-SPACE-NO-ISOMETRY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-GRAPH-SPACE-NO-ISOMETRY-001",
+      "target": "module:D0.Foundation.GraphSpaceNoIsometry",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ISOTROPIZATION-MECH-001",
+      "target": "domain:frontier",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ISOTROPIZATION-MECH-001",
+      "target": "module:D0.Foundation.IsotropizationResidual",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ISOTROPIZATION-MECH-001",
+      "target": "cert:vp_isotropization_residual.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "target": "module:D0.LeptonClosure.BranchIndexUnique",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-CYCLIC-GENERATOR-001",
+      "target": "cert:vp_lepton_branch_index_unique.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+      "target": "module:D0.ParallelClosure.FiniteDavisKahanGapBound",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+      "target": "cert:d0_ckm_mismatch_bound_verify.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+      "target": "domain:gauge_bridge",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+      "target": "module:D0.ParallelClosure.CrossGate",
+      "kind": "implemented_in"
     }
   ]
 }

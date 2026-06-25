@@ -351,7 +351,7 @@ D0-ASSUMPTION-LEDGER-GREEN-001,CERT-CLOSED,finite-certificate,D0.Bridge.Assumpti
 D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001,NO-GO,no-go,D0.Spectral.DixmierFeshbachFiniteHeatTrace,vp_dixmier_feshbach_finite_heattrace.py
 D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001,CERT-CLOSED,finite-certificate,D0.Matter.LeptonRiemannHurwitzBranchIndex,vp_lepton_riemann_hurwitz_branch_index.py
 D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001,CERT-CLOSED,finite-certificate,D0.Cosmology.PhasonArchiveCapacityRedshift,vp_phason_archive_capacity_redshift.py
-D0-PHASON-WDE-Z-MAP-OWNER-001,PROOF-TARGET,open-target,,
+D0-PHASON-WDE-Z-MAP-OWNER-001,NO-GO,no-go,,vp_phason_wde_z_map_owner.py
 D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001,CERT-CLOSED,finite-certificate,D0.Dynamics.ToralShiftEquivalence,vp_toral_shift_equivalence.py
 D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001,NO-GO,no-go,D0.Matter.HyperchargeAnomalyVariety,vp_hypercharge_anomaly_variety.py
 D0-CMB-NS-LAPLACIAN-IDS-OWNER-001,CERT-CLOSED,finite-certificate,D0.Cosmology.CMBLaplacianIDS,vp_cmb_ns_laplacian_ids.py

@@ -19,12 +19,12 @@
     }
   },
   "totals": {
-    "realized": 6667,
-    "track_fair_max": 9120,
-    "pct_strength": 73.1,
-    "core_realized": 5204,
-    "core_potential": 7620,
-    "core_headroom": 2416,
+    "realized": 6672,
+    "track_fair_max": 9112,
+    "pct_strength": 73.2,
+    "core_realized": 5202,
+    "core_potential": 7600,
+    "core_headroom": 2398,
     "n_claims": 523,
     "n_active": 521,
     "duplicates": [],
@@ -50,9 +50,9 @@
       "core_headroom": 21
     },
     "smooth_geometry": {
-      "n": 37,
-      "realized": 445,
-      "max": 614,
+      "n": 38,
+      "realized": 452,
+      "max": 626,
       "core_headroom": 165
     },
     "spectral_action": {
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 46,
-      "realized": 152,
-      "max": 920,
-      "core_headroom": 768
+      "n": 45,
+      "realized": 150,
+      "max": 900,
+      "core_headroom": 750
     }
   },
   "by_book": {
@@ -173,9 +173,9 @@
     },
     "BOOK_08": {
       "n": 85,
-      "realized": 1118,
-      "max": 1548,
-      "core_headroom": 426
+      "realized": 1123,
+      "max": 1540,
+      "core_headroom": 408
     },
     "BOOK_05/06": {
       "n": 6,
@@ -2394,16 +2394,6 @@
       "effort": "write cert scaffold"
     },
     {
-      "claim_id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
-      "domain": "frontier",
-      "book": "BOOK_08",
-      "level_name": "HYP",
-      "leverage": 0,
-      "next": "CERT_SCAFFOLD",
-      "points_gained": 2,
-      "effort": "write cert scaffold"
-    },
-    {
       "claim_id": "D0-CMB-IDS-SMOOTHING-OWNER-001",
       "domain": "frontier",
       "book": "BOOK_08",
@@ -2921,13 +2911,6 @@
     },
     {
       "claim_id": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
-      "domain": "frontier",
-      "leverage": 0,
-      "level_name": "HYP",
-      "score": 2
-    },
-    {
-      "claim_id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
       "domain": "frontier",
       "leverage": 0,
       "level_name": "HYP",
@@ -8895,14 +8878,14 @@
     },
     {
       "claim_id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
-      "track": "CORE",
-      "level": 1,
-      "level_name": "HYP",
-      "score": 2,
-      "ceiling": 20,
-      "release_status": "PROOF-TARGET",
-      "lean_status": "OPEN",
-      "domain": "frontier",
+      "track": "NO_GO",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "smooth_geometry",
       "book": "BOOK_08",
       "leverage": 0,
       "integrity_flag": null
@@ -11263,7 +11246,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 6.8,
+    "penalty_total": 6.9,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -11308,8 +11291,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 38,
-        "points": -3.8,
+        "count": 39,
+        "points": -3.9,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11358,8 +11341,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 38,
-        "points": -3.8,
+        "count": 39,
+        "points": -3.9,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
