@@ -11246,7 +11246,7 @@
   "hygiene": {
     "score": 100.0,
     "budget": 100,
-    "penalty_total": 6.9,
+    "penalty_total": 3.7,
     "bonus_total": 10.0,
     "signals": [
       {
@@ -11283,16 +11283,16 @@
       },
       {
         "signal": "phantom_certs",
-        "count": 1,
-        "points": -3.0,
+        "count": 0,
+        "points": -0.0,
         "cap": -12.0,
         "label": "vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET",
         "evidence": []
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 39,
-        "points": -3.9,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11341,18 +11341,10 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 39,
-        "points": -3.9,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
-        "evidence": []
-      },
-      {
-        "signal": "phantom_certs",
-        "count": 1,
-        "points": -3.0,
-        "cap": -12.0,
-        "label": "vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET",
         "evidence": []
       }
     ]

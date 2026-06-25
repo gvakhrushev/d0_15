@@ -298,7 +298,7 @@ D0-DELTA-ALPHA-SEAM-CLOSED-001,delta alpha seam closed,CERT-CLOSED,,vp_delta_alp
 D0-GAUGE-MASS-GAP-PLAQUETTE-001,gauge mass gap plaquette,CERT-CLOSED,,vp_gauge_mass_gap_plaquette.py
 D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001,phi sturmian cylinder conjugacy,CERT-CLOSED,,vp_phi_sturmian_cylinder_conjugacy.py
 D0-BARYON-ASYMMETRY-DELTA0-001,baryon asymmetry delta0,CERT-CLOSED,D0.Matter.TickS3BaryonAsymmetry,vp_baryon_asymmetry_delta0.py
-D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001,lepton raw graph coefficient owner,NO-GO,,vp_lepton_raw_graph_owner_manifest.py
+D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001,lepton raw graph coefficient owner,NO-GO,,vp_lepton_raw_graph_coefficient_nogo.py
 D0-BARE-GRAPH-DECIMAL-NOGO-001,bare graph decimal nogo,NO-GO,,vp_bare_graph_decimal_nogo.py
 D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001,phi sturmian profinite code conjugacy,CERT-CLOSED,,vp_phi_sturmian_profinite_code_conjugacy.py
 D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001,lepton indirect coefficient owner,PROOF-TARGET,,vp_lepton_indirect_coefficient_owner.py

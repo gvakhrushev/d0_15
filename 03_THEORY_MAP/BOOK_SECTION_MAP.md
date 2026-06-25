@@ -1,4 +1,4 @@
-# D0 v14 Active Book Section Map
+# D0 v15 Active Book Section Map
 
 Generated from `01_BOOKS/BOOK_*.md` after the structural refactor. Line ranges are current at generation time and are intended for editorial navigation, not as stable theorem IDs.
 

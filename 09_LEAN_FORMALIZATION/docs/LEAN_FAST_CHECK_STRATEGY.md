@@ -1,6 +1,6 @@
 # Lean Fast Check Strategy
 
-D0_v14 uses three validation levels. Do not use the full release replay after
+D0_v15 uses three validation levels. Do not use the full release replay after
 every small edit.
 
 ## 1. Local Lean Module
