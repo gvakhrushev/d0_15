@@ -298,13 +298,13 @@ D0-DELTA-ALPHA-SEAM-CLOSED-001,CERT-CLOSED,finite-certificate,,vp_delta_alpha_se
 D0-GAUGE-MASS-GAP-PLAQUETTE-001,CERT-CLOSED,finite-certificate,,vp_gauge_mass_gap_plaquette.py
 D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001,CERT-CLOSED,finite-certificate,,vp_phi_sturmian_cylinder_conjugacy.py
 D0-BARYON-ASYMMETRY-DELTA0-001,CERT-CLOSED,finite-certificate,D0.Matter.TickS3BaryonAsymmetry,vp_baryon_asymmetry_delta0.py
-D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001,PROOF-TARGET,open-target,,vp_lepton_raw_graph_owner_manifest.py
+D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001,NO-GO,open-target,,vp_lepton_raw_graph_owner_manifest.py
 D0-BARE-GRAPH-DECIMAL-NOGO-001,NO-GO,no-go,,vp_bare_graph_decimal_nogo.py
 D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001,CERT-CLOSED,finite-certificate,,vp_phi_sturmian_profinite_code_conjugacy.py
 D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001,PROOF-TARGET,open-target,,vp_lepton_indirect_coefficient_owner.py
 D0-PHASON-WZ-KERNEL-ONLY-NOGO-001,NO-GO,no-go,D0.Cosmology.PhasonWZTransfer,vp_phason_wz_transfer_owner.py
 D0-PHASON-PRESSURE-EOS-SCAFFOLD-001,CERT-CLOSED,finite-certificate,D0.Cosmology.PhasonWZTransfer,vp_phason_pressure_eos.py
-D0-PHASON-WZ-TRANSFER-OWNER-001,PROOF-TARGET,open-target,,vp_phason_wz_transfer_owner.py
+D0-PHASON-WZ-TRANSFER-OWNER-001,NO-GO,open-target,,vp_phason_wz_transfer_owner.py
 D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001,CERT-CLOSED,finite-certificate,,vp_phason_wz_explicit_function.py
 D0-PHASON-WZ-EXPLICIT-FUNCTION-001,PROOF-TARGET,open-target,,vp_phason_wz_explicit_function.py
 D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001,CERT-CLOSED,finite-certificate,,vp_lepton_green_puiseux_scout.py
@@ -345,7 +345,7 @@ D0-FIBONACCI-ANYON-UNIQUENESS-001,CERT-CLOSED,finite-certificate,D0.Geometry.Fib
 D0-ISING-ANYON-EXCLUSION-001,NO-GO,no-go,D0.Geometry.FibonacciAnyonUniqueness,vp_ising_anyon_exclusion.py
 D0-HYPERCHARGE-FLOW-LATTICE-001,CERT-CLOSED,finite-certificate,D0.Matter.HyperchargeFlowLattice,vp_hypercharge_graph_flow_owner.py
 D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001,NO-GO,no-go,D0.Matter.LeptonPuiseuxUniquenessObstruction,vp_lepton_puiseux_uniqueness_obstruction.py
-D0-CKM-CLASS5-PARITY-EXCLUSION-001,PROOF-TARGET,open-target,D0.Matter.CKMClass5ParityExclusion,vp_ckm_class5_parity_exclusion.py
+D0-CKM-CLASS5-PARITY-EXCLUSION-001,NO-GO,open-target,D0.Matter.CKMClass5ParityExclusion,vp_ckm_class5_parity_exclusion.py
 D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001,NO-GO,no-go,D0.Spectral.DeltaAlphaNormalizationNoGo,vp_alpha_residue_delta_normalization_nogo.py
 D0-ASSUMPTION-LEDGER-GREEN-001,CERT-CLOSED,finite-certificate,D0.Bridge.Assumptions.LindemannLnPhi,vp_assumption_ledger_green.py
 D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001,NO-GO,no-go,D0.Spectral.DixmierFeshbachFiniteHeatTrace,vp_dixmier_feshbach_finite_heattrace.py
