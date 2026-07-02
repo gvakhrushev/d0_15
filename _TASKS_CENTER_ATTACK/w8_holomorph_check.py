@@ -72,6 +72,16 @@ checks = {
  "typing: L_-1 E4 = -E4 (translation order exactly 4 on E4)": eq(mm(Lmat(4),E4), msca(-1,E4)),
  "typing: L_-1 (E0+E3) = +(E0+E3) (translation order <= 2 off E4)": eq(mm(Lmat(4),madd(E0,E3)), madd(E0,E3)),
  "typing: alpha preserves E4 but is not identity on it": eq(mm(Pa,E4), mm(E4,Pa)) and not eq(mm(Pa,E4), E4),
+ # 13-leg (representation-home) checks: functions on the role-square classes {±1},{±i},{±j},{±k}
+ # embed in C[Q8] exactly as the ±-pair symmetrizer = E0+E3; this home is orthogonal to E4,
+ # and role classes are ill-defined on E4 (L_-1 = -1 there forces f(-g) = -f(g)).
+ "13-leg: E0+E3 = half(I+L_-1) (the C[ABCD] projector, definitional)": eq(madd(E0,E3), msca(Fraction(1,2), madd(I8, Lmat(4)))),
+ "13-leg: trace of the C[ABCD] projector = |ABCD| = 4": sum(madd(E0,E3)[i][i] for i in range(8)) == 4,
+ "13-leg: (E0+E3) E4 = 0 (role-class home orthogonal to E4)": eq(mm(madd(E0,E3), E4), [[Fraction(0)]*8 for _ in range(8)]),
+ # 11-leg bonus: Q8 has a UNIQUE 2-element subgroup {1,-1} (unique involution), so a dyad
+ # embedded as a subgroup is forced to be the structural Z2; its antisymmetric character
+ # lives exactly in the L_-1 = -1 sector = E4.
+ "11-leg: -1 is the unique involution of Q8": [g for g in range(8) if g != 0 and mul(g,g) == 0] == [4],
 }
 # alpha is a genuine algebra automorphism: it intertwines the regular representation,
 # P_a L_g P_a^-1 = L_{alpha(g)} for ALL g. The bare i<->j swap is NOT an automorphism
