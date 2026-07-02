@@ -32,7 +32,7 @@ def main() -> None:
     print("PASS_INTERNAL_FEEDBACK_RESOLVENT")
     print("[2] det(I - z F) feedback factor: PASS")
     print("[3] Z(beta,V) = Tr exp(-beta Delta) * det(I-zF)^(-1) : PASS")
-    print("[4] Feedback pressure P = β^{-1} ∂_V log Z ≈ {0:.6f} : PASS".format(P))
+    print("[4] Feedback pressure P = β^{{-1}} ∂_V log Z ≈ {0:.6f} : PASS".format(P))
     print("PASS_FEEDBACK_PRESSURE_TRACE_LOG")
     T_eff = 1/beta
     chi = V * (logZ_v - logZ) / dV

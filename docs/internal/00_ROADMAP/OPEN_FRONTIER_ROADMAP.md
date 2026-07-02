@@ -20,10 +20,13 @@ finite / D0-closeable real next theory work. **P2** = sharpenable but needs a ne
 owners (cited edges, not a D0 action). **P5** = Mathlib-blocked (wait for the formal kernel). **P6** =
 hygiene / owner-decision.
 
-_Last synced: 2026-06-18 (Iteration 21-22). Registry: 294 claims, strength 4239/5308 (79.9%), integrity
-demotions 0. Status mix: 162 CORE-FORMALIZED · 50 CERT-CLOSED · 20 BRIDGE-ASSUMPTIONS-EXPLICIT ·
-16 EMPIRICAL-PASSPORT · 13 PROOF-TARGET · 16 NO_GO/NO-GO · 5 CORE_BRIDGE_SPLIT · 3 BRIDGE-CALIBRATION ·
-2 DEPRECATED · 1 EXTERNAL-BACKGROUND._
+_Last synced: 2026-07-02 (repo-wide refactor + external-data review). Registry: 524 claims,
+strength 6666/9111 (73.2%), integrity demotions 0. Status mix: 173 CORE-FORMALIZED · 162 CERT-CLOSED ·
+71 NO-GO + 8 NO_GO_PROVED · 45 PROOF-TARGET · 25 BRIDGE-ASSUMPTIONS-EXPLICIT · 20 PASSPORT-CLOSED ·
+8 EMPIRICAL-PASSPORT · 6 CORE_BRIDGE_SPLIT · 3 BRIDGE-CALIBRATION · 2 DEPRECATED · 1 EXTERNAL-BACKGROUND.
+This sync folded the honest external-data corrections into the corpus: PMNS δ₀-family and LIGO φ⁻¹
+demoted to post-hoc passports, DESI thawing-corner over-read corrected, SPARC dark-matter recorded as an
+honest negative; colour SU(3) remains a terminal-passport no-go (`D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001`)._
 
 ---
 
@@ -35,8 +38,9 @@ demotions 0. Status mix: 162 CORE-FORMALIZED · 50 CERT-CLOSED · 20 BRIDGE-ASSU
    is green, but ~5–6 `check_v14_*_sync` guards still fail on **book-staleness** + one **missing Lean
    module**. This is concrete, finite, and a publication-ready corpus should not ship red guards. The
    single highest-leverage next task. (See "Infrastructure debt" below.)
-2. **P1 · Holonomy residual gaps — finite items now CLOSED.** Iter-21 made α and PMNS *derived* closure
-   holonomy at the honest THE/CHK/HYP split. The two **finite / machine-closeable** sub-derivation gaps
+2. **P1 · Holonomy residual gaps — finite items now CLOSED.** Iter-21 made α a *derived* closure
+   holonomy at the honest THE/CHK/HYP split (PMNS was later corrected to an empirical δ₀-family passport —
+   see the PMNS entry below). The two **finite / machine-closeable** sub-derivation gaps
    that underpinned both are now closed: the cone-angle `π₀=(6/5)φ²` forcing
    (`D0.Geometry.pi0_forced_by_closure_balance`) and the `Δα` residue route as a closed-negative no-go
    (`D0.Spectral.delta_alpha_residue_route_blocked`, relative to one cited fact `ASSUMP-LINDEMANN-LNPHI`).
@@ -168,10 +172,13 @@ if D0 can internalize one.
   (`D0-SEAM-HOLONOMY-001`, `D0-PI0-DISCRETE-ANGLE-001`, `D0-Q8-SIN-CHANNEL-001`, Lean-proved); 9-digit
   CODATA match **CHK** (`D0-ALPHA-HOLONOMY-002`); last ~10⁻⁸ **HYP** (`D0-ALPHA-MEASUREMENT-LIMIT-001`).
   The residue route to Δα is **closed-negative** (transcendental `ln φ`).
-- **PMNS angles: MECH-LIMIT → derived seam-topology rule (Iter-21).** `D0-PMNS-SEAM-TOPOLOGY-001` — the
-  δ₀-degree↔cycle-topology rule is **THE** (directional structure Lean-proved + M1-forced via
-  `seamDegreeSelector`); the numeric values are **CHK** (<1σ vs JUNO-2026 + NuFIT-6.0); shared `ξ₅`
-  (`D0-XI5-CROSS-SECTOR-001`).
+- **PMNS angles: δ₀-family empirical passport (corrected from "derived seam-topology rule").**
+  `D0-PMNS-SEAM-TOPOLOGY-001` — all three angles land <1σ vs JUNO-2026 + NuFIT-6.0 (genuine, non-trivial),
+  but the "rule is THE / discriminating" reading was an **over-read** and is retracted: the Lean directional
+  theorem is true by construction of the chosen signs, and a coefficient refit at degree-1 recovers <1σ
+  (`1/3−δ₀/4=0.30382`), so the values are a **post-hoc empirical δ₀-family (CHK)**, not forced. Demoted
+  `CORE-FORMALIZED → EMPIRICAL-PASSPORT` (`BOOK_04 §04.5`; `_QUARANTINE/QUARANTINE_LEDGER.md`); only
+  `δ₀=1/(2φ³)` stays forced. Shared `ξ₅` (`D0-XI5-CROSS-SECTOR-001`).
 - **rank-3 = causal cone: re-scoped FORCED → `CORE_BRIDGE_SPLIT` (Iter-21).** Correction to the prior
   "closed, do not re-open": `D0-RANK3-CAUSAL-CONE-FORCING-001` — the (3,1)+Pisot signature **arithmetic**
   is machine-checked CORE, but the rank↔metric-cone **identification** is a counting-multiplicity

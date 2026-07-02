@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 6672,
-    "track_fair_max": 9112,
+    "realized": 6666,
+    "track_fair_max": 9111,
     "pct_strength": 73.2,
-    "core_realized": 5202,
-    "core_potential": 7600,
+    "core_realized": 5182,
+    "core_potential": 7580,
     "core_headroom": 2398,
-    "n_claims": 523,
-    "n_active": 521,
+    "n_claims": 524,
+    "n_active": 522,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 315,
-      "realized": 4429,
-      "max": 5529,
+      "n": 314,
+      "realized": 4396,
+      "max": 5501,
       "core_headroom": 1085
     },
     "rg": {
@@ -62,9 +62,9 @@
       "core_headroom": 39
     },
     "empirical_passport": {
-      "n": 35,
-      "realized": 359,
-      "max": 512,
+      "n": 37,
+      "realized": 386,
+      "max": 539,
       "core_headroom": 144
     },
     "cosmology": {
@@ -160,9 +160,9 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 99,
-      "realized": 1271,
-      "max": 1720,
+      "n": 100,
+      "realized": 1265,
+      "max": 1719,
       "core_headroom": 434
     },
     "BOOK_04/08": {
@@ -6799,7 +6799,7 @@
       "ceiling": 20,
       "release_status": "CORE-FORMALIZED",
       "lean_status": "LEAN_PROVED",
-      "domain": "formal_core",
+      "domain": "empirical_passport",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -7898,14 +7898,14 @@
     },
     {
       "claim_id": "D0-PMNS-SEAM-TOPOLOGY-001",
-      "track": "CORE",
-      "level": 5,
-      "level_name": "CORE_FORMALIZED",
-      "score": 20,
-      "ceiling": 20,
-      "release_status": "CORE-FORMALIZED",
+      "track": "PASSPORT",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 7,
+      "ceiling": 7,
+      "release_status": "EMPIRICAL-PASSPORT",
       "lean_status": "LEAN_PROVED",
-      "domain": "formal_core",
+      "domain": "empirical_passport",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -11241,13 +11241,27 @@
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001",
+      "track": "NO_GO",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
-    "score": 100.0,
+    "score": 90.8,
     "budget": 100,
-    "penalty_total": 3.7,
-    "bonus_total": 10.0,
+    "penalty_total": 9.2,
+    "bonus_total": 0.0,
     "signals": [
       {
         "signal": "tracked_meta_trash",
@@ -11291,8 +11305,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 37,
-        "points": -3.7,
+        "count": 42,
+        "points": -4.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11323,16 +11337,16 @@
       },
       {
         "signal": "real_in_project_lake",
-        "count": 0,
-        "points": -0.0,
+        "count": 1,
+        "points": -5.0,
         "cap": -10.0,
         "label": "a real .lake build tree inside the repo (must be an external junction)",
         "evidence": []
       },
       {
         "signal": "files_deleted_vs_base",
-        "count": 135,
-        "points": 10.0,
+        "count": 0,
+        "points": 0.0,
         "cap": 10.0,
         "label": "net files removed vs base-v14 (rewards shrinking the publish tree)",
         "evidence": []
@@ -11340,9 +11354,17 @@
     ],
     "top_actions": [
       {
+        "signal": "real_in_project_lake",
+        "count": 1,
+        "points": -5.0,
+        "cap": -10.0,
+        "label": "a real .lake build tree inside the repo (must be an external junction)",
+        "evidence": []
+      },
+      {
         "signal": "orphan_proof_targets",
-        "count": 37,
-        "points": -3.7,
+        "count": 42,
+        "points": -4.2,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

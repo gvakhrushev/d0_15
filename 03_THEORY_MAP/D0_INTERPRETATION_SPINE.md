@@ -20,7 +20,13 @@ finite D0 core
   spectral proxies, cosmology shape statements, and no-go boundaries.
 - The `InterpretationPackage` owns coherence across RG, spectral action,
   cosmology, and gauge readouts. These are explicit package conditions, not
-  hidden promotions of physical meaning into the core.
+  hidden promotions of physical meaning into the core. **They are a contract to
+  be discharged per sector, not a proven core property.** Each coherence
+  condition is conditional on its own sector's bridge/passport owner; no
+  book-level bridge is promoted to core by being bundled here; and aggregating
+  the sectors into one package adds no claim the individual books did not
+  already make. Cross-sector coherence is a working conjecture of the
+  interpretation layer, not a theorem of the finite core.
 - `ExternalSICalibration` is the single SI transition. It declares units and
   macroscopic constants for readout; it does not mutate core trace shapes.
 - Empirical passports compare calibrated readouts to external data. They can

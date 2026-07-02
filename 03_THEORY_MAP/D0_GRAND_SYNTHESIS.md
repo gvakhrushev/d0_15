@@ -80,13 +80,19 @@ Horizon emission is archive-to-retained boundary leakage.
 
 ## 7. Cosmological exceptional point
 
-The internal acceleration transfer matrix has the form
+The internal acceleration transfer matrix has the form (BOOK_08 §08.12 is the owner of record; this section reproduces it, it does not redefine it)
 
 \[
-M(\eta)=\begin{pmatrix} \lambda_c -\eta & \eta \\ \eta & \lambda_r \end{pmatrix}.
+M(\eta)=\begin{pmatrix} \lambda_c & \eta \\ -\eta & \lambda_r \end{pmatrix},
+\qquad
+\lambda_{c,r}=\tfrac{3}{2}\mp\tfrac{\sqrt{10}}{40},
 \]
 
-η_EP = 2λ_r − λ_c = 40/10 .
+the two roots of `λ² − 3λ + 359/160`. The exceptional point is the half-gap
+
+\[
+\eta_{EP}=\frac{\lambda_r-\lambda_c}{2}=\frac{\sqrt{10}}{40}\approx 0.0791 .
+\]
 
 D0 defines the internal acceleration transfer as boundary-derivative feedback-pressure bifurcation. External surveys test this via passports only. No DESI/H0 overclaim.
 
@@ -144,4 +150,4 @@ All internal sector laws (bootstrap, F_N, confinement, holography, inertia, emis
 
 ---
 
-This completes the v15 sector-law layer. The corpus is now a finished mathematical physics theory with explicit positive laws, centralized no-gos (Book 05), and clear passport boundary.
+This completes the v15 sector-law layer. The corpus is a finite-readout operator framework with explicit positive laws, centralized no-gos (Book 05), and a clear passport boundary — **not** a finished theory of everything. Global closure is not claimed, and named PROOF-TARGETs remain open (e.g. α via the external Dixmier/Wodzicki residue, the `w_DE` magnitude map, the CMB `n_s` smoothing window, the finite→continuum isometric Dirac `J_N`, and Higgs condensation). This is the book-level stance and the stance of `00_PUBLICATION/D0_DO_NOT_CLAIM.md`; any reading of this synthesis as "finished physics" is an overclaim the books do not support.

@@ -67,3 +67,32 @@ over-claiming wrapper was retired. (Same move as the v17 `I_f = Tr(log T)` →
    `BLOCKED_RESIDUE_ROUTE_TO_DELTA_ALPHA` verdict pointing to the working holonomy
    route. `D0-CVFT-F1` stays `PROOF-TARGET` with the route honestly marked BLOCKED —
    a named closed-negative, not a hidden dead end.
+
+## External-data review corrections (corrected reaches, **not** discards)
+
+Recorded for provenance after confronting the corpus with real downloaded data
+(`08_PASSPORTS/{DESI,SPARC,PDG,CKM,GWOSC}`). Each kept its *legitimate* content;
+only an over-read wrapper was retired, via `BOOK_05 §05.5` demotion discipline.
+
+1. **PMNS seam-topology `δ₀`-family: "discriminating THE rule" → EMPIRICAL-PASSPORT.**
+   The three angles land `<1σ` (JUNO-2026 + NuFIT-6.0) — a genuine, non-trivial
+   match, kept. But the "rule is THE / discriminating" wrapper was an over-read: the
+   Lean directional theorem (`D0.Matter.PMNSSeamTopology`) is *true by construction*
+   of the chosen signs (`+δ₀/2`, `−2δ₀²`, `φ⁻⁵/4>0`), the degree-permutation control
+   breaks only at *fixed* coefficient, and refitting the coefficient at degree-1
+   recovers `<1σ` (`sin²θ₁₂ = 1/3 − δ₀/4 = 0.30382`, `0.62σ`). Under joint
+   (degree, coefficient) freedom the family is not discriminated. `D0-PMNS-SEAM-TOPOLOGY-001`
+   demoted `CORE-FORMALIZED → EMPIRICAL-PASSPORT`; only `δ₀ = 1/(2φ³)` stays forced
+   (cert `vp_pmns_seam_topology.py`, now failable on the "forced/discriminating" claim;
+   book `§04.5`). The related `D0-MIXING-HIERARCHY-INVERSION-001` rank/nullity skeleton
+   stays derived; its "delta0-corrections are derived" clause is corrected to passport.
+
+2. **DESI dark energy: "convexity ⇒ the thawing corner" → convexity ⇒ *evolving* only.**
+   The convexity `Δ²R_n = φⁿ(φ−1)² > 0` forces *dynamical/evolving* dark energy, and
+   real DESI DR2 BAO confirms it (rejects ΛCDM, Δχ²≈4.7 BAO-only) — kept. But the
+   claim that convexity lands in DESI's *thawing* corner (`w₀>−1, wₐ<0`) is an
+   over-read: an explicit enumeration of the natural phason→`w(z)` maps
+   (source ∈ {R,R′,R″} × direction `N=±ln a`) gives **0/6** in the thawing corner
+   (all `wₐ>0` or phantom `w₀<−1`). Corner sign is map-dependent, stays HYP; book
+   `§08.13` corrected. SPARC galaxy rotation stays a recorded **negative** result
+   (D0's archive-halo does not fit the SPARC rotation curves), not buried.
