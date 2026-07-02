@@ -66,6 +66,12 @@ checks = {
  "L_i | <i>-span == Umu literal": [[Li[a][b] for b in sub] for a in sub] == Umu_lit,
  "alpha^3 = id": eq(Pa3,I8),
  "E0 fixed by L_i (electron = common fixed block)": eq(mm(Li,E0), E0),
+ # block-typing signatures (feed the type-keyed matching, T2' scene half):
+ # E4 = the UNIQUE block where translation has order exactly 4 (L_-1 acts as -1 there);
+ # on E0+E3 translation has order <= 2 (L_-1 acts as +1); E0 = the unique both-fixed block.
+ "typing: L_-1 E4 = -E4 (translation order exactly 4 on E4)": eq(mm(Lmat(4),E4), msca(-1,E4)),
+ "typing: L_-1 (E0+E3) = +(E0+E3) (translation order <= 2 off E4)": eq(mm(Lmat(4),madd(E0,E3)), madd(E0,E3)),
+ "typing: alpha preserves E4 but is not identity on it": eq(mm(Pa,E4), mm(E4,Pa)) and not eq(mm(Pa,E4), E4),
 }
 # alpha is a genuine algebra automorphism: it intertwines the regular representation,
 # P_a L_g P_a^-1 = L_{alpha(g)} for ALL g. The bare i<->j swap is NOT an automorphism
