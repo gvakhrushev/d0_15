@@ -32,6 +32,16 @@ two-completion situation {t=0, t=p}; this task supplies the calculation legs for
    hypotheses), and whether the formula above matches their normalization verbatim. If the published
    form differs (sign/shift of t), document the dictionary precisely — the cert must implement the
    PUBLISHED form and show it equals the form above under the dictionary.
+   **1b. Source the intertwining maps (feeds Addendum 2).** Bass's block-matrix proof of the identity
+   works over the space ℂ^V ⊕ ℂ^E with explicit start/end (source/target) maps between the edge and
+   vertex carriers. Extract those maps explicitly (as matrices on K(9,11,13) conventions), and record
+   any published vertex-weighted / edge-weighted generalizations (Mizuno–Sato weighted Bartholdi;
+   Watanabe–Fukumizu graph-zeta/belief-propagation form) — these are the candidates for upgrading the
+   det-level identities to conditional-expectation-level intertwiners Ξ_N (see
+   `T1_FORCING_MEMO_ADDENDUM_2.md` §4.1).
+   **1c. Verify the t=1 collapse exactly.** Add to the cert: det(I − u(B+R)) = det(I − uA) at ≥3
+   rational u (exact/modular) — the E≡W spectral identity of Addendum 2 §2 (float-verified; needs the
+   exact leg).
 2. **Exact two-variable verification over ℚ.** Cert `vp_scene_bartholdi_typed.py`: verify the
    identity at ≥6 rational pairs (u,t) spanning interior + both degenerations (t=0 must reproduce
    W1's Ihara–Bass numbers; t=1 must reproduce the all-walks vertex side det(I−uA)·(1−0·…) — check
