@@ -55,6 +55,66 @@ theorem level_one_mass : cylWeight [true] + cylWeight [false] = 1 := by
 detector cannot satisfy the §00.3 closure; the golden pair is not a convention. -/
 theorem non_golden_control : ¬ ((1/2 : ℝ) + (1/2 : ℝ) ^ 2 = 1) := by norm_num
 
+/-! ## Anchor 1b — the φ-self-return clause and the gap-module seam
+
+The §00.4 subfunctor clause "φ self-return" at the weight layer: the return branch carries the
+squared direct weight (definitional here; the closure makes it consistent). And the SEAM to the
+owned K-theory row (`D0.Claims.KTheoryGapModule`, the Bellissard owner-edge): **every golden
+cylinder weight lies in the rank-2 gap-label module ℤ + ℤφ⁻¹** — the measure layer and the
+gap-label layer share one module. (The owned row holds the module's defining relations; this
+theorem proves the measure lands in it — cross-reference, not duplication.) -/
+
+/-- §00.4 φ-self-return at the weight layer: the return branch weight is the square of the
+direct branch weight. -/
+theorem cylWeight_return (w : List Bool) :
+    cylWeight (false :: w) = (φ⁻¹) ^ 2 * cylWeight w := by
+  simp [cylWeight]
+
+/-- The direct branch carries one factor φ⁻¹. -/
+theorem cylWeight_direct (w : List Bool) :
+    cylWeight (true :: w) = φ⁻¹ * cylWeight w := by
+  simp [cylWeight]
+
+/-- `φ⁻² = 1 − φ⁻¹` (the module's defining relation, from the closure). -/
+theorem inv_gold_sq : (φ⁻¹) ^ 2 = 1 - φ⁻¹ := by
+  have h := inv_gold_closure; linarith
+
+/-- The weight exponent of a word: direct letters cost 1, return letters cost 2. -/
+def weightExp : List Bool → ℕ
+  | [] => 0
+  | b :: w => (if b then 1 else 2) + weightExp w
+
+/-- Every cylinder weight is a pure power: `cylWeight w = (φ⁻¹) ^ weightExp w`. -/
+theorem cylWeight_eq_pow (w : List Bool) : cylWeight w = (φ⁻¹) ^ weightExp w := by
+  induction w with
+  | nil => simp [cylWeight, weightExp]
+  | cons b w ih =>
+      cases b <;> simp [cylWeight, weightExp, ih, pow_add]
+
+/-- Powers of `φ⁻¹` lie in `ℤ + ℤφ⁻¹` (signed-Fibonacci coefficients, recursion (a,b) ↦ (b, a−b)). -/
+theorem inv_gold_pow_mem (k : ℕ) : ∃ a b : ℤ, (φ⁻¹) ^ k = (a : ℝ) + (b : ℝ) * φ⁻¹ := by
+  induction k with
+  | zero => exact ⟨1, 0, by norm_num⟩
+  | succ n ih =>
+      obtain ⟨a, b, h⟩ := ih
+      refine ⟨b, a - b, ?_⟩
+      have : (φ⁻¹ : ℝ) ^ (n + 1) = ((a : ℝ) + (b : ℝ) * φ⁻¹) * φ⁻¹ := by
+        rw [pow_succ, h]
+      rw [this]
+      calc ((a : ℝ) + (b : ℝ) * φ⁻¹) * φ⁻¹
+          = (a : ℝ) * φ⁻¹ + (b : ℝ) * (φ⁻¹) ^ 2 := by ring
+        _ = (a : ℝ) * φ⁻¹ + (b : ℝ) * (1 - φ⁻¹) := by rw [inv_gold_sq]
+        _ = ((b : ℤ) : ℝ) + (((a - b : ℤ)) : ℝ) * φ⁻¹ := by push_cast; ring
+
+/-- **The gap-module seam:** every golden cylinder weight lies in ℤ + ℤφ⁻¹ — the same rank-2
+module as the K-theory gap labels of the golden hull (`D0.Claims.KTheoryGapModule` holds the
+defining relations; Bellissard owner-edge holds the external theorem). The measure layer and the
+gap-label layer share one module. -/
+theorem cylWeight_mem_gap_module (w : List Bool) :
+    ∃ a b : ℤ, cylWeight w = (a : ℝ) + (b : ℝ) * φ⁻¹ := by
+  rw [cylWeight_eq_pow]
+  exact inv_gold_pow_mem (weightExp w)
+
 /-! ## Anchor 2 — the finite-factorization clause of §00.4 is a THEOREM, not a constraint
 
 BOOK_00 §00.4 lists "finite factorization" among the defining constraints of the D0-admissible
