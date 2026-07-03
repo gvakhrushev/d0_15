@@ -26,10 +26,21 @@ No seam buildable from the owned inventory realizes (μ₁, μ₂, μ₃) = (1/3
      non-negative valuation. **No untuned owned zone-9 seam can reach μ₂.**
    - a TUNED seam (free rational coefficients) is exogenous θ by DEF 0.3.1 — and the skeptic's own
      construction confirms the fingerprint: both tuned coefficients (5/2¹⁴, 8192/45) carry the
-     5-denominator; the tuning IS the 5-import. A seam using the owned scalar π₀ = (6/5)φ² as its
-     coefficient imports the 5 legitimately but then re-derives the assembled form — the ledger
-     costume already killed by skeptic #6 (kill C). Either horn closes the corner:
-     **valuation-blocked (untuned) or costume (π₀-coefficient) or exogenous (tuned).**
+     5-denominator; the tuning IS the 5-import.
+   - **[v2.1, per decisive pass #8] the costume horn is the ρ-FAMILY closure:** the corpus contains
+     exactly ONE owned division by D_Σ — ρ := Z/D_Σ = 3/5 (THE 04.6.π.A, "canonical projection
+     factor") — and it is a cross-taxonomy scalar, not a trace normalization; the upgrade of /D_Σ
+     to a trace normalization is blocked by the corpus's own registered no-go
+     `D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001` (no canonical rank-5 role-cycle carrier
+     exists; Aut transitive on all 1287 triangles). Every owned negative-(√5)-valuation scalar is
+     ρ-family — π₀ = 2ρφ², θ_seam = 4ρ, m₀ = 4ρφ² (verified exact) — and since
+     **μ₂ = 2¹²·ρ exactly**, any seam with a ρ-family coefficient reduces to the tautology
+     2¹²ρ = 2¹²ρ: zero independent content, the assembled-form costume (skeptic-6 kill C).
+   - **[v2.1] the window family is co-prime-blocked:** 359/160 and 39/160 (ℚ(√10) layer, its own
+     field no-go) would need companion traces 393216/359 or 131072/13 — denominators 359 and 13
+     non-invertible in ℤ[φ, 1/2] (verified exact). Not zone-9-admissible.
+     Three-horn closure, now exhaustive over the owned scalar inventory:
+     **valuation-blocked (untuned) / costume (ρ-family) / exogenous (tuned).**
 4. **Structured transports into zones 11/13 — unbuildable** (C1 verbatim + count-only ⊔ + empty
    usage grep; unchanged; survived the aggressive labels hunt: Lucas = trace scalar, TorusCore13 =
    Fin 3 shells, c/d-modes uniform, no Fin 11/13 vertex indexing anywhere in Lean).
@@ -61,3 +72,17 @@ canonization the blocker always wanted).
 Skeptic pass on v2 (the valuation lemma is the load-bearing new text — its inventory-ring premise
 "owned zone-9 entries ⊂ ℤ[φ, 1/2]" is the attack surface); then minting per protocol with
 cross-references (ledger row, holonomy row, the exclusion/washout theorems).
+
+## Decisive pass #8 — VERDICT: STANDS (record)
+
+The pre-registered double-edged question adjudicated AGAINST the fall: /D_Σ is not on par with
+/rank — the unique owned D_Σ-division is the scalar ρ (cross-taxonomy ratio, forced by
+no-weight-catalog, nothing traced over the 5 address classes), and its upgrade to a trace
+normalization is blocked by the registered rank-5-carrier no-go. The strongest finding of the
+pass: **μ₂ = 2¹²·ρ exactly** — the 5 can enter a denominator only as ρ, so every owned-scalar
+route to 12288/5 is the tautology 2¹²ρ = 2¹²ρ. Robustness notes recorded: even absent the lemma,
+the skeptic-7 seam fails independently (V₁₃ capacity in zone 9 without owned transport — the
+mirror of leg 4; /|V₉| unowned; sign-diag needs a per-vertex ± catalog ⊥M1; realizes the moment
+pair, not the §02.13.4 pole-sum functional; coefficients solved from the target). None of the
+falsification hooks (i)–(iv) triggered. **The α-realization front closes at this NO-GO,
+eight-pass-hardened; remaining motion is minting per VERIFIED_CLOSURE_PROTOCOL.md.**
