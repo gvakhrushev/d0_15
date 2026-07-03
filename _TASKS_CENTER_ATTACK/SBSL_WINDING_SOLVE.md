@@ -138,6 +138,33 @@ Findings, stated conservatively:
   NOT rescue this: at p₂ = 0.60 p₀ the torus organization dissolves before tongues widen (v6.3).
   The pre-registration's ratio grid must resolve ~1e-5 near the target rationals, or the
   observable must move to the collapse regime as pre-registered.
-- None of this confirms or falsifies P-SBSL-1 (its observable is the collapse flash phase);
-  this is the theory-side machinery + the first quantitative tongue/no-tongue map for a
-  quasiperiodically two-tone-driven bubble.
+- None of the moderate-regime results confirms or falsifies P-SBSL-1 (its observable is the
+  collapse flash phase); they are the theory-side machinery + the first quantitative
+  tongue/no-tongue map for a quasiperiodically two-tone-driven bubble.
+
+## COLLAPSE-REGIME PILOT (Keller–Miksis, `sbsl_km_collapse_v1.py`, `sbsl_km_v1_out.txt`)
+
+The pre-registered observable itself, first computation: KM with radiation damping, R₀=4.5 μm,
+f₁=26.5 kHz, p₁=1.25 p₀ (SBSL-grade, R_min down to 0.07–0.26 R₀), second tone p₂=0.25 p₀ at
+ρf₁. Flash-phase proxy: θ_k = ω₂ t_k mod 2π at main-collapse events; discreteness measured by
+normalized circular entropy over 36 bins (1 = uniform) on ~150–200 collapses.
+
+| drive | ent | occupied bins |
+|---|---|---|
+| single-tone control (vs tone 1) | 0.306 | 3 — locked, validates the pipeline |
+| ρ = 3/2 (q=2) | 0.401 | 6 |
+| ρ = 8/5 (q=5) | 0.712 | 14 |
+| ρ = 13/8 (q=8) | 0.729 | 18 |
+| ρ = 1.55 (=31/20) | 0.842 | 26 |
+| ρ = √2 | 0.884 | 30 |
+| **ρ = φ** | **0.888** | **31** |
+
+**The flash phase discretizes at rationals with entropy MONOTONE in the denominator and
+equidistributes at φ and √2** (both at the finite-sample uniform ceiling for n≈150). This is
+the frozen prediction's observable, in its regime, showing the golden/rational contrast.
+Honest caveats carried: (i) at rational ρ the drive is qT₁-periodic, so finite phase sets are
+partly kinematic — the physics content is that the response IS phase-locked there (it could
+have been chaotic) while at φ it never discretizes; (ii) n≈150 collapses bounds the entropy
+ceiling (~0.95 expected for uniform at this n; φ's 0.888 is consistent with equidistribution);
+(iii) pilot grid only — no width/robustness scan yet; (iv) P-SBSL-1 remains FROZEN: this is
+theory-side; the pre-registration's test order (theory → experiment) proceeds as stated.
