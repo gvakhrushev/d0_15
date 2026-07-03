@@ -545,3 +545,6 @@ import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary
 import D0.Verification.TotalExtensionPrimitiveMinimality
 import D0.Verification.TotalPublicationReadiness
+import D0.CondensedAnchor.DetectorSupportGoldenWeight
+import D0.Geometry.TorusShellAttachment
+import D0.TasksCenterAttack.LeptonWitnessBranchConstruction
