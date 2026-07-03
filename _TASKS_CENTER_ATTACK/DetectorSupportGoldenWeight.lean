@@ -1,4 +1,6 @@
 import Mathlib.NumberTheory.Real.GoldenRatio
+import Mathlib.Topology.Category.Profinite.AsLimit
+import Mathlib.Topology.Category.Profinite.CofilteredLimit
 import Mathlib.Tactic
 
 /-!
@@ -52,5 +54,24 @@ theorem level_one_mass : cylWeight [true] + cylWeight [false] = 1 := by
 /-- **Negative control:** the non-golden branch pair `(1/2, 1/4)` fails the closure — a fair-coin
 detector cannot satisfy the §00.3 closure; the golden pair is not a convention. -/
 theorem non_golden_control : ¬ ((1/2 : ℝ) + (1/2 : ℝ) ^ 2 = 1) := by norm_num
+
+/-! ## Anchor 2 — the finite-factorization clause of §00.4 is a THEOREM, not a constraint
+
+BOOK_00 §00.4 lists "finite factorization" among the defining constraints of the D0-admissible
+readout subfunctor `M^D0(S_D0^φ) ⊂ Hom_Top(S, X)`. For finite-valued (locally constant) readouts
+of ANY profinite support this clause holds automatically — it is owned by Mathlib
+(`Profinite.exists_locallyConstant` over the canonical tower `Profinite.asLimit`). Consequence for
+the entry contract: the constraint content of the admissible subfunctor lives entirely in the
+REMAINING clauses (φ self-return, quadratic response, single-section, gate stationarity,
+archive/active separation) — finite factorization is free. -/
+
+open CategoryTheory in
+/-- **Finite factorization is automatic**: every locally constant readout of a profinite detector
+support factors through a finite quotient level of its canonical tower. -/
+theorem readout_factors_through_finite_level (S : Profinite) {α : Type*}
+    (f : LocallyConstant S α) :
+    ∃ (j : DiscreteQuotient S) (g : LocallyConstant (S.diagram.obj j) α),
+      f = g.comap (S.asLimitCone.π.app j).hom.hom :=
+  Profinite.exists_locallyConstant S.asLimitCone S.asLimit f
 
 end D0.CondensedAnchor
