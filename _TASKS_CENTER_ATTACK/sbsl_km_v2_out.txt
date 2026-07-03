@@ -1,0 +1,2 @@
+  PHI: n=499, ent=0.9200; uniform-reference 95% band at this n: [0.9852, 0.9942] -> OUTSIDE
+  3/2: n=622, ent=0.4465; uniform-reference 95% band at this n: [0.9882, 0.9952] -> OUTSIDE

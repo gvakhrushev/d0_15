@@ -159,12 +159,18 @@ normalized circular entropy over 36 bins (1 = uniform) on ~150–200 collapses.
 | ρ = √2 | 0.884 | 30 |
 | **ρ = φ** | **0.888** | **31** |
 
-**The flash phase discretizes at rationals with entropy MONOTONE in the denominator and
-equidistributes at φ and √2** (both at the finite-sample uniform ceiling for n≈150). This is
-the frozen prediction's observable, in its regime, showing the golden/rational contrast.
+**The flash phase discretizes at rationals with entropy MONOTONE in the denominator and fills
+densely at φ and √2.** Long-run resolution (v2, `sbsl_km_v2_out.txt`, n≈500–620 collapses with
+a matched-n Monte-Carlo uniform reference band): 3/2 → ent 0.4465 (deep below the uniform band
+[0.988, 0.995] — discrete); φ → ent 0.9200, which is high but OUTSIDE the uniform band
+[0.985, 0.994] — the φ distribution is dense with NO discretization yet measurably non-uniform
+(the correct signature of a quasiperiodic/SNA response: dense filling with modulated density).
+The pilot's "at the uniform ceiling" phrasing at n≈150 is hereby corrected: the discriminator
+is DENSITY vs DISCRETENESS (0.92 vs 0.45 at matched n), not exact equidistribution.
 Honest caveats carried: (i) at rational ρ the drive is qT₁-periodic, so finite phase sets are
 partly kinematic — the physics content is that the response IS phase-locked there (it could
-have been chaotic) while at φ it never discretizes; (ii) n≈150 collapses bounds the entropy
-ceiling (~0.95 expected for uniform at this n; φ's 0.888 is consistent with equidistribution);
-(iii) pilot grid only — no width/robustness scan yet; (iv) P-SBSL-1 remains FROZEN: this is
-theory-side; the pre-registration's test order (theory → experiment) proceeds as stated.
+have been chaotic) while at φ it never discretizes; (ii) resolved by v2 as above; (iii) pilot
+grid only — no width/robustness scan yet; also at φ only ~499 qualifying main collapses arise
+in 650 periods (collapse census varies with ρ — recorded, not interpreted); (iv) P-SBSL-1
+remains FROZEN: this is theory-side; the pre-registration's test order (theory → experiment)
+proceeds as stated.
