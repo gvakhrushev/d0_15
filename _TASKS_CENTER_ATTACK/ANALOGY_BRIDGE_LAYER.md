@@ -70,3 +70,29 @@ Block II's Feshbach-circulation tick, already owned).
 The analogy layer is held; the main focus remains closing weak spots. The one item promoted to the
 active queue: the **Damanik import sweep** (it strengthens the weakest bridge — abstract recursion
 → physical spectra — with proven theorems, zero new risk).
+
+## 5. THE DROPLET OF RODS (user synthesis of §2 + §4) — mapped with owned skeleton + one exact new invariant
+
+The image: a droplet held by surface tension ↔ the graph of blinking rods held by an informational
+surface tension. Decomposition into owned pieces (no metaphor left load-bearing):
+
+- **What "tension" is:** the M1-cost of a cut. Severing the scene creates a boundary whose
+  description demands a which-side register and an external reconnection protocol — exactly what
+  C2 (role-closure, §01.20) forbids: "a missing between-part block would require an external
+  protocol." Cohesion is forced by admissibility, not energy.
+- **Where "the droplet forms":** already owned — the reheating percolation threshold
+  (BOOK_08 §08.49, Lean `D0.Cosmology.ReheatingPercolationOwner`): sub-threshold = 33 disconnected
+  vertices, above = connected scene, with the machine-certified heat-trace jump. The corpus's own
+  t = 0 replacement IS the condensation moment of the user's droplet.
+- **The per-tick maintenance (the blinking):** a persistent cut would re-demand its which-side
+  register at every tick — the tension is paid per circulation, tying cohesion to the owned tick
+  structure (Block II/III).
+- **The quantitative analog, computed exactly (REPORT-ONLY, comparisons pre-registered as
+  FORBIDDEN):** the Cheeger constant of the scene is
+  **h(K(9,11,13)) = 18/35**, achieved by the balanced cross-zone cut (a₉,a₁₁,a₁₃) = (5,5,6)
+  (180 cut edges, volume 350); the vertex-isoperimetric minimum is 45/4 at (4,5,7). Comparison-free
+  structural fact: the cheapest tear is a *balanced cross-zone* cut, while severing any whole role
+  zone costs the maximal ratio 1 (zones are independent sets — all their edges leave) —
+  **role-integrity is the strongest-held structure of the scene**, the quantitative face of C2.
+  The value is banked; no owned-number comparisons were performed and none are licensed post hoc
+  (§00.9 E-accounting: a consuming owned question must come first).
