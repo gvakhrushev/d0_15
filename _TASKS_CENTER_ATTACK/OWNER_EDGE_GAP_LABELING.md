@@ -1,9 +1,11 @@
 # OWNER-EDGE DRAFT — Fibonacci gap labeling: saturated and measured (the cleanest bridge in the corpus)
 
-**Status:** DRAFT owner-edge for `D0-KTHEORY-GAP-MODULE-001` ("Bellissard shadow", CORE-FORMALIZED)
-and the EXTERNAL-GAP-marked K-theory rows; minting per protocol required; no registry row edited.
-Source: full Damanik-import sweep (this campaign; all citations arXiv-verified by the scout;
-one attribution flag carried below).
+**Status:** MINTED 2026-07-04 as `D0-GAP-LABELING-OWNER-EDGE-001` (CERT-CLOSED; cert
+`05_CERTS/vp_fibonacci_gap_labeling_owner_edge.py`, 9/9 PASS: T=A⁻¹ + module pairs + Fricke–Vogt
+symbolic + REAL-spectrum approximant saturation λ∈{1,4}, worst 7.8e-6, + silver/Pell double
+control). The cert is also the retirement replacement for the fabricated-IDS placeholder flagged
+on D0-KTHEORY-001. Source: full Damanik-import sweep (this campaign; all citations arXiv-verified
+by the scout; one attribution flag carried below).
 
 ## The three-layer owned statement (golden hull, α = φ⁻¹)
 
