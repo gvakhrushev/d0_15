@@ -139,3 +139,37 @@ BEFORE any further motion (does two-frequency SBSL data exist at the needed timi
 exists; (ii) the signature is frozen with E-accounting before any data contact; (iii) the analog
 bridge stays FORMALISM (no "SL is a black hole" claims; no vacuum-photon mechanisms; no spectral
 φ-numerology). If conditions fail, reverts to PARKED with the triage kept.
+
+### §6 UPDATE — scout verdict and the FROZEN PRE-REGISTRATION (2026-07-04)
+
+**Scout verdict: NEEDS-NEW-EXPERIMENT + THEORY-TO-BE-DONE.** The two required capabilities are
+mature but have never met: two-frequency SBSL drive exists (Krefting–Mettin–Lauterborn JASA 2002,
+1:2; Moraga et al. PRE 2000, 1:10; FPGA multi-tone rigs) and picosecond flash-timing exists
+(Putterman group, Nature 352 (1991), jitter < ~50 ps) — but ALL two-tone drives are
+integer-harmonic, NO irrational/golden ratio was ever driven, NO flash-timing statistics under
+two-tone drive exist, and NO quasiperiodically-forced Rayleigh–Plesset/Keller–Miksis mode-locking
+study was ever published (SNA/Arnold-tongue apparatus lives in circuits/pendulums only). Real
+cousin anchor: Parlitz–Englisch–Scheffczyk–Lauterborn JASA 88 (1990) — Farey-tree/devil's-staircase
+resonance arithmetic for SINGLE-frequency driven bubbles. Credibility flag: "golden ratio + SL"
+web results are pseudoscience only — disregarded; the field is clean.
+
+**FROZEN PRE-REGISTRATION (made before any simulation or data contact; E-accounting grammar fixed
+now):**
+
+> P-SBSL-1. In a two-tone driven single-bubble system (Keller–Miksis class), with drive ratio
+> ρ = f₂/f₁ scanned across [1, 2] at fixed total drive power within the stable-SBSL window, the
+> flash-phase mode-locking plateaus (Arnold tongues) shrink as ρ approaches the noble irrationals,
+> and the LAST surviving unlocked (quasiperiodic) response as tongues widen with drive amplitude
+> occurs at ρ in the golden family (continued-fraction tail of 1s) — circle-map universality
+> (Shenker) transported to the bubble oscillator. Falsifier: tongues organized by any other
+> number-theoretic family, or no ρ-dependence of locking robustness. Test order: (1) theory —
+> quasiperiodic Keller–Miksis + stroboscopic winding analysis (never published; buildable on
+> existing GPU machinery, e.g. the Budapest group's); (2) experiment — golden-ratio two-tone SBSL
+> with flash-phase histograms (both components standard; combination new; known risk: bubble
+> stability under incommensurate forcing is untested and the Holt–Gaitan window is narrow).
+
+Status remains FORMALISM/passport-target: circle-map universality is the external owner of the
+prediction's shape; D0 contributes the reason golden robustness is *interesting* (the owned
+φ-recursion spine), never a mechanism claim about the light emission itself. Flash-timing caution
+carried: Brennan's contrarian preprints (arXiv:1012.5009, 1111.5229 — unrefereed) flag possible
+conditions-dependence of flash-phase stability.
