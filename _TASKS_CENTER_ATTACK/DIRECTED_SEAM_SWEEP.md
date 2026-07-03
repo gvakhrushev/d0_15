@@ -37,3 +37,16 @@ contains the witness direction ⊕ E₄⊕E₃ — the holomorph module lives in
 archive), with N-truncation from the owned SeamTransportLinear mechanism. If that corner also
 nulls, the honest closing is the NO-GO: "no owned seam realizes the pair — ASSUMP-DIXMIER-TRACE is
 irreducible," now backed by a swept candidate space rather than absence of attempts.
+
+## The corner's fate — a precise fork (recorded before attempting)
+
+The unswept corner (structured directed transports between kernel blocks) hinges on ONE owned-text
+question: is §01.20's `V₁₁ = V₉ ⊔ D₂`, `V₁₃ = V₉ ⊔ ABCD` a **vertex-level identification** (the 11
+vertices contain an owned V₉-copy carrying the Q₈+witness labels — then label-respecting directed
+archive transports are owned-buildable and the corner is genuinely open) or **capacity bookkeeping
+only** (then C1-exchangeability — S₉×S₁₁×S₁₃-invariance, §01.20:50 — forbids within-zone labels of
+V₁₁/V₁₃, any structured map into them imports a labeling catalog ⊥M1, and the corner CLOSES by
+forcing, completing the NO-GO: "ASSUMP-DIXMIER-TRACE is irreducible within present-core, backed by
+a fully swept candidate space"). The two readings conflict; C1's own status adjudicates. This is
+the single next question of the α-front — one read, then either the labeled-transport computation
+or the closing NO-GO.
