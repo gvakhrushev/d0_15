@@ -66,3 +66,25 @@ Seventh consecutive kill of an author forcing/candidate. The system continues to
 the campaign's durable products remain the theorem-grade layer of `CAMPAIGN_FINAL.md` plus this
 round's three new exact facts and the three-way constraint set — which is the sharpest statement
 of the α-realization problem the corpus has had.
+
+## Post-verdict sharpening (verified): the realization is forced into the DIRECTED class
+
+**Symmetric impossibility (two lines, verified):** for any symmetric archive D with C = Bᵀ,
+μ₃ = Tr(BD²Bᵀ) = ‖DBᵀ‖²_F, so μ₃ = 0 ⇒ DBᵀ = 0 ⇒ μ₂ = 0. **Depth-2 exactness with nonzero μ₂ is
+impossible in the self-adjoint class entirely** (strengthens skeptic kill 2 from "positive
+invertible" to "any symmetric").
+
+**The directed escape exists and is already owned:** a nilpotent directed transport N (N² = 0)
+gives exact depth-2 truncation with nonzero μ₂ (verified: μ₃ ≡ 0 exactly, μ₂ ≠ 0). The corpus's
+own α-holonomy row `D0-ALPHA-HOLONOMY-LINEAR-FORM-001` (Iter26, CORE-FORMALIZED,
+`D0.Spectral.SeamTransportLinear`) runs on precisely this mechanism — "DIRECTED transport N
+(CP-seam crossing, N² = 0)... exp(sN) = I + sN EXACTLY... nilpotency proven LOAD-BEARING."
+
+**The α-realization problem, final form:** a directed (non-self-adjoint) seam through the owned
+dim-30 archive with N-type truncation (owned mechanism) and moment pair
+(Tr(BC)/rank, Tr(BNC)) = (1/3, 12288/5) under the owned asymmetric normalization. The working
+route the amplitude cert itself names (lines 84–91: BLOCKED_RESIDUE_ROUTE / WORKING_ROUTE = seam
+holonomy) is the same directed-seam architecture. The construction question is now fully typed;
+the radius constraint transmutes (non-symmetric: the bound argument no longer applies as-is —
+Tr(BNC) is not spectrally bounded by ‖N‖ against Tr(BC) in the same way), which is exactly why
+the directed class can reach 12288/5 where every symmetric carrier provably cannot.
