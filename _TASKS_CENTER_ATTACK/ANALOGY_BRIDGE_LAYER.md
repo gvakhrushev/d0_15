@@ -96,3 +96,46 @@ surface tension. Decomposition into owned pieces (no metaphor left load-bearing)
   **role-integrity is the strongest-held structure of the scene**, the quantitative face of C2.
   The value is banked; no owned-number comparisons were performed and none are licensed post hoc
   (§00.9 E-accounting: a consuming owned question must come first).
+
+## 6. SONOLUMINESCENCE — upgraded: PARKED → CONDITIONAL ANALOG-PASSPORT-TARGET (user hypothesis, typed)
+
+**User hypothesis:** SL as a manifestation of extreme φ/graph recursion (recursive amplification via
+geometry and frequency) — a black-hole analog, in the Einstein-parallel sense (equations predicted
+BHs before observation; an owned extreme regime could likewise predict the phenomenon's shape).
+
+**Honest physics triage first.** Uncontested and remarkable: ~10¹² energy focusing per acoustic
+cycle in a tabletop system; picosecond flash-timing precision; plasma formation established
+(Flannigan–Suslick line emission). Mainstream mechanism: adiabatic compression + shock/plasma →
+thermal bremsstrahlung — adequate, unexotic. Discredited adjacency to be avoided absolutely:
+bubble-fusion claims. Contested: vacuum/Casimir photon mechanisms (Eberlein/Schwinger route) —
+NO-TARGET.
+
+**The legitimate formalism bridge (theorem-grade, importable):** analog gravity. Unruh (1981):
+sonic horizons; Visser: the acoustic metric — sound in a flowing medium obeys a curved-spacetime
+wave equation, derived rigorously within fluid mechanics. A supersonically collapsing bubble wall
+is a sonic-horizon configuration. This is FORMALISM-layer per §00.13 — admissible as a bridge
+language, never a mechanism claim.
+
+**The D0-native skeleton (owned objects only):**
+- the **amplification channel exists and is owned**: the Pisot pair of the toral generator —
+  contraction φ⁻¹ AND expansion −φ; riding the unstable direction amplifies at rate
+  h_KS = ln φ per tick (owned). The user's "recursive amplification via geometry and frequency"
+  types exactly onto the owned unstable manifold;
+- the **ceiling is owned**: boundary capacity saturation σ(R) → 1 with Cost(∂) → ∞ (BOOK_07);
+- the **cycle shape**: charge along the expanding direction → saturate at the capacity ceiling →
+  release/reset — a collapse-flash cycle, structurally parallel to the corpus's own horizon rows
+  (hum/echo passports), which are the house style for exactly this move: pre-registered falsifier,
+  never a detection or mechanism claim (the C = 3/8 echo precedent).
+
+**Candidate pre-registered signature (the one falsifiable hook found):** the driven bubble is a
+nonlinear oscillator (Rayleigh–Plesset); under TWO-frequency drive, circle-map universality applies,
+where golden-mean winding is the most robust torus (last-KAM — an anchor the corpus already cites
+for φ). Pre-registrable target: golden-mean organization of flash-timing stability islands in
+two-frequency SBSL — integer/winding-valued, external theory owner (circle-map universality,
+Shenker), measurable against existing two-frequency SBSL literature. Requires a sourcing scout
+BEFORE any further motion (does two-frequency SBSL data exist at the needed timing resolution?).
+
+**Status:** CONDITIONAL PASSPORT-TARGET — conditions: (i) the scout confirms measurable data
+exists; (ii) the signature is frozen with E-accounting before any data contact; (iii) the analog
+bridge stays FORMALISM (no "SL is a black hole" claims; no vacuum-photon mechanisms; no spectral
+φ-numerology). If conditions fail, reverts to PARKED with the triage kept.
