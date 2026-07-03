@@ -36,13 +36,15 @@ C1-α triple now carries irreducibility evidence via the NO-GO row.
 1. ✓ **Lean tree integration** DONE: three modules in `09_LEAN_FORMALIZATION/D0/`, registered in
    `All.lean`, all build (D0.All full build blocked by PRE-EXISTING RoleHyperchargeReadout
    breakage — being fixed in a parallel session; rows upgrade to LEAN_PROVED after green).
-2. **Solve, Schwarzschild-grade (ACTIVE):** (a) quasiperiodic two-tone Rayleigh–Plesset winding —
-   v1–v4 computed (see `_TASKS_CENTER_ATTACK/SBSL_WINDING_SOLVE.md`): rigid-tracking branches
-   exact, genuine w=1/4 subharmonic tongue found, NO lock at golden (twin-point reproducible),
-   3/2 = branch crossing not a tongue; fine structure + widths in v4. (b) §00.4 quadratic-response
-   clause: preflight found it ALREADY OWNED (`D0/Born.lean`, `D0/Core/BornQuadraticOrigin.lean`) —
-   cross-reference only, no duplicate; next unowned clauses: single-section discipline, gate
-   stationarity, archive/active separation.
+2. ✓ **Solve, Schwarzschild-grade DONE (v1–v6):** quasiperiodic two-tone Rayleigh–Plesset winding
+   (`_TASKS_CENTER_ATTACK/SBSL_WINDING_SOLVE.md`): rigid-tracking branches exact; inside the
+   interaction window every sampled rational locks EXACTLY (3/2, 8/5, 13/8 — cluster ratio
+   0.0000) with measured widths 1e-5–2e-4; golden NEVER locks (bound < 5e-4); at p₂=0.60 p₀ the
+   torus organization dissolves before tongues widen — golden-last ORDERING untestable by
+   amplitude-cranking; open: collapse-regime Keller–Miksis. (b) §00.4 scoreboard COMPLETE by
+   reuse (`D0-GATE-STATIONARITY-OWNER-001`): all seven subfunctor clauses have named owners
+   (orphan `ArchiveShiftTopology` adopted for gate stationarity); single open sliver =
+   history-layer step-preservation (PROOF-TARGET).
 3. ✓ **Quasicrystal owner-edge minting** DONE: `D0-GAP-LABELING-OWNER-EDGE-001` (row above);
    follow-up = retire the fabricated-IDS placeholder references (~10 call sites).
 4. **Protocol-availability trichotomy v2** (swampland salvage) — only after 2; it needs its own
