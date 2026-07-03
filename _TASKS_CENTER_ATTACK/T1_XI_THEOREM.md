@@ -15,9 +15,12 @@ identities (all verified):
 2. **ΦB = MΦ and ΦJ = σΦ, hence Φ(B + tJ) = (M + tσ)Φ for ALL t** (linearity; spot-checked at
    t = 2, −3). One map intertwines the entire Bartholdi family with the 66-dim vertex family M_t.
 3. B + J = TᵀS (rank ≤ 33), so ker Φ = ker S ∩ ker T is invariant for the whole family, which acts
-   there as **(t−1)J** — eigenvalues ±(t−1): the Bartholdi prefactor `(1−(1−t)²u²)^(…)` IS the
-   kernel action, and the vertex polynomial is the coimage action. The det identity family is the
-   shadow of this one operator statement.
+   there as **(t−1)J** — eigenvalues ±(t−1). **[Corrected per skeptic #5, accepted]:** the exact
+   ledger is: kernel action = Bartholdi prefactor × (1−(1−t)u), and vertex polynomial = coimage
+   action × (1−(1−t)u) — one factor (1−(1−t)u) migrates between the two Bartholdi factors on the
+   cokernel line (𝟙,−𝟙): dim ker Φ = 653 = 652 + 1, J splits 326/327 there, and M+tσ has (𝟙,−𝟙)
+   as an exact left-eigenvector with eigenvalue (1−t). With this correction, the det identity
+   family is the shadow of this one operator statement.
 4. rank Φ = 2|V| − 1 = 65 (connected non-bipartite; the 1 is the (α𝟙,−α𝟙) cokernel),
    dim ker Φ = 653 — exactly the 653 unit-modulus eigenvalues of B observed in W1.
 
