@@ -1,0 +1,19 @@
+# v6 tongue widths vs p2 (right edge, log-bisection to factor ~2; p1=0.80 p0 fixed)
+
+## p2 = 0.15 p0
+  3/2: width(+) in [1.33e-04, 2.05e-04]
+  8/5: width(+) in [2.37e-05, 3.65e-05]
+  13/8: width(+) in [2.37e-05, 3.65e-05]
+  GOLDEN phi-2.5e-4, phi, phi+2.5e-4 (w / min_q r_q): +0.16316/0.998, +0.16465/0.995, +0.16771/0.995
+
+## p2 = 0.35 p0
+  3/2: width(+) in [1.33e-04, 2.05e-04]
+  8/5: width(+) in [3.65e-05, 5.62e-05]
+  13/8: width(+) in [3.65e-05, 5.62e-05]
+  GOLDEN phi-2.5e-4, phi, phi+2.5e-4 (w / min_q r_q): +0.17556/0.996, +0.16695/0.996, +0.16944/0.997
+
+## p2 = 0.60 p0
+  3/2: width(+) in [1.54e-05, 2.37e-05]
+  8/5: NOT locked at exact point (r_5=0.962, w=+0.00938) -> width 0 or attractor changed
+  13/8: NOT locked at exact point (r_8=0.837, w=+0.09123) -> width 0 or attractor changed
+  GOLDEN phi-2.5e-4, phi, phi+2.5e-4 (w / min_q r_q): +0.02089/0.751, +0.06377/0.767, +0.01522/0.868

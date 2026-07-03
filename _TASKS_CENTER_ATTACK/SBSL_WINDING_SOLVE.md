@@ -97,6 +97,33 @@ by attractor diameter. A period-q locked orbit gives r_q → 0; a torus gives r_
 4. No wide subharmonic plateau exists at this amplitude (the v3 "1/4 tongue" was aliasing +
    transient; killed by the cluster test — error of record, corrected in v5 section).
 
+## v6: tongue widths vs second-tone amplitude (`sbsl_v6_out.txt`)
+
+Right-edge half-widths by log-bisection of the cluster test (factor-~2 brackets; reduced
+n_trans=1200/n_meas=320 — accuracy caveat recorded):
+
+| p₂/p₀ | 3/2 | 8/5 | 13/8 | golden |
+|---|---|---|---|---|
+| 0.15 | [1.3e-4, 2.1e-4] | [2.4e-5, 3.7e-5] | [2.4e-5, 3.7e-5] | unlocked (r ≥ 0.995) |
+| 0.35 | [1.3e-4, 2.1e-4] | [3.7e-5, 5.6e-5] | [3.7e-5, 5.6e-5] | unlocked (r ≥ 0.996) |
+| 0.60 | [1.5e-5, 2.4e-5] | NOT locked (attractor changed) | NOT locked (attractor changed) | attractor changed (w ~ 0.02–0.06, r ~ 0.75–0.87) |
+
+Findings, stated conservatively:
+
+1. **First tongue-width measurements for this system:** at p₂ ∈ {0.15, 0.35} p₀ the 3/2 tongue
+   is ~1.3–2.1e-4 wide, the convergents 8/5 and 13/8 are ~2–6e-5 — q-ordered (wider at lower
+   denominator), and the convergent tongues WIDEN slightly with p₂ (2.4–3.7e-5 → 3.7–5.6e-5).
+2. **The golden point stays unlocked at every amplitude tested** (r ≥ 0.995 at 0.15 and 0.35;
+   at 0.60 the whole organization changes — see 3).
+3. **No monotone route to tongue overlap:** at p₂ = 0.60 p₀ the doubled-torus organization
+   DISSOLVES before tongues can widen toward each other — the convergent locks vanish, the 3/2
+   tongue narrows an order of magnitude, and the attractor family changes (near-zero winding,
+   intermediate clustering; not classified further here). The classic circle-map scenario
+   (tongues widen until the golden torus is the last survivor) is therefore NOT reproduced by
+   amplitude-cranking in THIS regime — the system exits the torus regime first. The
+   golden-last-locked ORDERING remains untested; what IS established is the fixed-amplitude
+   contrast (convergents lock, φ does not).
+
 ## Honest summary against the frozen expectation
 
 - The golden-side clause of P-SBSL-1's intuition (φ last-unlocked) is CONSISTENT here:
@@ -106,9 +133,11 @@ by attractor diameter. A period-q locked orbit gives r_q → 0; a torus gives r_
   it needs the tongue-width-vs-amplitude scan, and ultimately the strong-drive/collapse
   (Keller–Miksis) regime where the pre-registration's flash-phase observable actually lives.
 - Sharpened experimental guidance for P-SBSL-1: tongues at rational drive ratios are REAL but
-  extremely narrow at moderate drive; an experiment scanning ρ at coarse steps would see the
-  rigid-tracking branches and MISS every tongue. The pre-registration's ratio grid must
-  resolve < 1e-3 near the target rationals, or drive harder.
+  extremely narrow at moderate drive (measured: 1e-5–2e-4, v6); an experiment scanning ρ at
+  coarse steps would see the rigid-tracking branches and MISS every tongue. "Drive harder" does
+  NOT rescue this: at p₂ = 0.60 p₀ the torus organization dissolves before tongues widen (v6.3).
+  The pre-registration's ratio grid must resolve ~1e-5 near the target rationals, or the
+  observable must move to the collapse regime as pre-registered.
 - None of this confirms or falsifies P-SBSL-1 (its observable is the collapse flash phase);
   this is the theory-side machinery + the first quantitative tongue/no-tongue map for a
   quasiperiodically two-tone-driven bubble.
