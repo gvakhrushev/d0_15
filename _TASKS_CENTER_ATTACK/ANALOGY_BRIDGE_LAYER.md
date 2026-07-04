@@ -173,3 +173,121 @@ prediction's shape; D0 contributes the reason golden robustness is *interesting*
 φ-recursion spine), never a mechanism claim about the light emission itself. Flash-timing caution
 carried: Brennan's contrarian preprints (arXiv:1012.5009, 1111.5229 — unrefereed) flag possible
 conditions-dependence of flash-phase stability.
+
+## 7. D0 → AI ARCHITECTURE / TRAINING / COMPRESSION (user candidate, 2026-07-04) — REPORT-ONLY (field map + three kills) + INTUITION (hypothesis; protocol draft held)
+
+**User hypothesis:** D0 structures (φ-graph K(9,11,13), golden invariants, condensed anchor,
+archive dynamics) as the basis of an AI architecture / learning algorithm / compression scheme
+with real metric gains — theoretically derivable and provable on benchmarks.
+
+**Honest triage — the strong claim dies first, three independent ways.**
+
+1. *In-repo kill (computed this scout, exact):* K(9,11,13) as a connectivity pattern is a generic
+   dense tripartite block — density 359/528 = 0.68; nontrivial adjacency spectrum = roots of
+   x³ − 359x − 2574 (≈ 21.84, −9.76, −12.08), a function of the part sizes alone. It is a good
+   expander in the Cheeger/gap sense (h = 18/35, §5; Laplacian λ₂ = 20) — as every dense block
+   is; what it lacks is the *sparse* spectral economy the ML-connectivity literature pays for
+   (|λ₂| ≈ 12.08 > 9.11 ≈ 2√(d̄−1), the d-regular Ramanujan reference used heuristically only —
+   Greenberg/universal-cover is the honest irregular notion); parts (9,11,13) are not Fibonacci,
+   no part or degree ratio is near φ. The corpus itself already banks the anti-numerology:
+   `theorem nullity_not_fibonacci : ∀ m ≤ 12, Nat.fib m ≠ 30` and
+   `theorem edges_prime : Nat.Prime 359`
+   (`09_LEAN_FORMALIZATION/D0/VNext2/SceneLaplacianSpectrumForced.lean:67,70`); the Laplacian
+   spectrum {0¹,24⁸,22¹⁰,20¹²,33²} is forced by the +2 zone grading alone, not by φ. Whatever D0
+   exports to ML, it is NOT the scene graph's topology.
+2. *External kill (scout, arXiv-verified):* the "φ is special in optimization" line refuted
+   itself — GRAAL's φ-step (Malitsky, Math. Prog. 2020) was superseded by "Beyond the Golden
+   Ratio" (Alacaoglu–Böhm–Malitsky, JMLR 2023, arXiv:2212.13955): larger-than-φ steps provably
+   work; the remaining φ-in-ML corner (Jaeger arXiv:2006.04751, IEEE AIPR 2021) is
+   numerology-grade with no uptake. There is no theory route from φ-optimality (Hurwitz,
+   three-distance) to SGD regret/convergence in print.
+3. *Method gate (2026 benchmark reality):* per-scale-tuned-AdamW comparisons shrink claimed 2×
+   optimizer speedups to ~1.1–1.4× (Wen–Hall–Ma–Liang, arXiv:2509.02046); AlgoPerf and the
+   modded-nanoGPT speedrun (mean-of-seeds, p<0.01 discipline) set the honest harness; effects
+   under ~3–5% time-to-target are noise-adjacent. Pre-commitment: below-gate results are NULL.
+
+**Owned-object Rosetta (what D0 could actually export — the golden dynamics, not the graph):**
+
+- golden SFT (no-11; M_φ = !![1,1;1,0], `AdlerWeissInternalMarkov.lean:56,61`) **is** the
+  RLL(1,∞) constrained code of storage engineering, capacity log₂φ ≈ 0.694 (checked exactly:
+  no-11 words of length n = F(n+2)). The "D0 compression" hook is thus TAKEN — by classical
+  coding theory, in industrial use for decades. Not open space.
+- cylinder weights (φ⁻¹)^weightExp, gap module ℤ+ℤφ⁻¹, φ⁻¹+φ⁻² = 1
+  (`DetectorSupportGoldenWeight.lean:27`, Lean-proved) — the quantitative golden layer;
+- Sturmian word = minimal aperiodic factor complexity p(n) = n+1 (Morse–Hedlund 1940, external
+  classical owner; verified by enumeration to n = 12); Kronecker {nφ} = best-constant
+  equidistribution (Hurwitz; computed at Fibonacci-favorable N=987: D*(φ) = 0.00101 < √2's
+  0.00133 < iid-mean 0.0262, and at non-Fibonacci N=1000: 0.00134 < 0.00169 — a constant-factor
+  edge over other irrationals, ~26× over iid points (not over shuffling); the big win is QMC vs
+  random, φ adds only the constant);
+- forgetting CP channel (`ForgettingChannelCP.lean`: any *-hom of matrix algebras is CP) —
+  content-thin for ML: a generic fact, no D0-specific structure survives the transfer;
+- Feshbach 5→4 distinct-eigenvalue compression (cert passes; registry row
+  D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001 still OPEN — desync noted, may not be cited
+  CERT-CLOSED until the row updates) — scene-specific, no ML transfer;
+- in-house warning imported: canonical Φ-compressions wash directedness into ⟨A,D⟩
+  (DIRECTED_SEAM_SWEEP) — D0's own compressions LOSE the load-bearing marker; do not sell them
+  as lossless summaries.
+
+**Hook map (two-leg scout, per-hook verdicts):**
+
+| hook | verdict | owner / blocker |
+|---|---|---|
+| data ordering via {nφ}/QMC | TAKEN | GraB (NeurIPS'22): discrepancy over *gradients*, provably better than random reshuffling; near-optimality by the lower-bound line (Cha–Lee–Yun, ICML 2023); raw-index {nφ} is a category error (indices aren't a metric space) |
+| φ step sizes / optimizers | TAKEN + REFUTED | JMLR 2023 above |
+| golden-angle RoPE frequencies | ADJACENT | GGRoPE (public blog, 07/2025): golden-spaced N-D RoPE directions, vision-only wins, unreviewed; frequency choice matters (p-RoPE, ICLR 2025) |
+| aperiodic/quasicrystal sparse masks | OPEN, capped | random pruning matches dense at scale (ICLR'22 arXiv:2202.02643) — accuracy headroom small; K(9,11,13) itself excluded by kill 1 |
+| Sturmian/Fibonacci compression | WEAKLY CLAIMED | arXiv:2603.14999 (03/2026): 22.6% enwik9 vs ~11% cmix-class — uncompetitive; RLL(1,∞) is the serious classical version |
+| LLM-as-compressor | TAKEN, crowded | Delétang ICLR 2024 line |
+| aperiodic-order computing substrate | OPEN (scoped) | no aperiodic-order physical ML/reservoir substrate benchmarked against echo-state baselines in 2024–26; excluded paradigm: Wang-tile/algorithmic self-assembly computation (Berger→Winfree, active); adjacent: monotile driven-dissipative programmable matter |
+
+**The one D0-native falsifiable question** (the only thing D0 actually contributes — the same
+transported shape as §6/P-SBSL-1): does the ARITHMETIC CLASS of a frequency/interleave ratio
+matter in training dynamics at all, with the golden family extremal? External owners of the
+prediction's shape: equidistribution/three-distance + circle-map robustness; D0 supplies the
+motivation only, never a mechanism claim about learning.
+
+**PROTOCOL DRAFT P-AI-1 — HELD, NOT FROZEN** (skeptic #9, attack B: as first written the draft
+leaked ≥8 free parameters — harness "and/or", unspecified ρ-sets, undefined "equal base
+magnitude", unspecified metric/shift-range/budget, a range-valued gate, a floor-only seed
+count — and one decisive confound; it may not be called a pre-registration until the
+freeze-conditions below are met):
+
+> P-AI-1 (draft). Scan the RoPE frequency-spacing generator ρ over number-theoretic classes
+> (rationals, the √2 quadratic family, the golden family) in a params/FLOPs-matched,
+> per-configuration-LR-tuned small-transformer harness; test whether robustness to
+> context/resolution shift is organized by arithmetic class. Replication+extension of GGRoPE
+> (unreviewed blog, 07/2025) — NOT a novel prediction. Falsifiers: no class-dependence beyond
+> base magnitude → hook dead; a non-golden family wins → golden reading dead; effects below
+> gate → NULL.
+
+Freeze-conditions before any run (all mandatory): exact numeric ρ lists published in advance
+with pre-computed finite-d discrepancy profiles; base-magnitude definition and matching rule
+fixed in advance; ONE harness; ONE gate number; exact seed count and budget (no optional
+stopping); robustness metric and shift range defined; a discrepancy-matched control set. And the ownership caveat that decides the typing: at finite
+frequency count d, the three-distance theorem GUARANTEES the golden family the most uniform
+spacing — so a positive result is finite-d equidistribution arithmetic, owned by QMC theory,
+with zero D0-specific content either way. D0 supplies motivation only.
+
+**Status: REPORT-ONLY (the three kills + the verified hook map) + INTUITION (the hypothesis;
+P-AI-1 held as protocol draft).** Skeptic #9 KILLED the draft's original self-minted type
+"CONDITIONAL EXPORT-TARGET": the charter (this file's header) is a closed intuition-and-import
+type list, and condition (ii) below makes every experimental outcome corpus-inert in both
+directions — a status wheel that turns no gear; §2 (REPORT-ONLY, parked until a consuming
+question exists) and §4 (INTUITION) are the governing precedents. Errors of record in the
+draft, all repaired in place: unlicensed self-minted type; an unfrozen "freeze"; a
+dimensionally-garbled expander sentence contradicting §5's own h = 18/35; "near-optimal"
+attributed to the wrong paper; a CERT-CLOSED citation bypassing an OPEN registry row; a
+Fibonacci-favorable-N discrepancy headline; an over-absolute "zero literature" scope.
+Standing conditions kept: (i) any experiment runs only under a met-freeze protocol;
+(ii) two-way firewall, as with 9-11-13↔strings: no D0 status row may ever cite AI-benchmark
+outcomes as physics evidence, and no ML text may claim D0 "predicts" its result;
+(iii) the phrase "optimal for AI" is BANNED from all corpus text unless a theorem plus a
+surviving-gate benchmark both exist (today: neither).
+
+**What this does NOT show:** no derivation from D0 axioms to any learning-theoretic optimality
+exists or is in sight; the graph is excluded, the optimizer route is refuted, the compression
+route is classical/taken; and even a positive P-AI-1 outcome would be owned by finite-d
+equidistribution/QMC arithmetic, not by D0. The surviving content is one cheap falsifiable
+question plus a scoped map of an open field (aperiodic-order ML substrates), banked for when
+a consuming question exists (§2 precedent).

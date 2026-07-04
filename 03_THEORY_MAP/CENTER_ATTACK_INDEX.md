@@ -47,8 +47,12 @@ C1-α triple now carries irreducibility evidence via the NO-GO row.
    history-layer step-preservation (PROOF-TARGET).
 3. ✓ **Quasicrystal owner-edge minting** DONE: `D0-GAP-LABELING-OWNER-EDGE-001` (row above);
    follow-up = retire the fabricated-IDS placeholder references (~10 call sites).
-4. **Protocol-availability trichotomy v2** (swampland salvage) — only after 2; it needs its own
-   pass and is export-facing, not core-facing.
+4. ✓ **Protocol-availability trichotomy v2 ADJUDICATED** (`TRICHOTOMY_V2_MEMO.md`): pass 1
+   WOUNDED-FIXABLE (4 repairs applied), pass 2 KILLED the JT sorting cross-check (9th accepted
+   kill; JT is NOT a counter-model — global symmetries there necessarily violated,
+   2010.10539/2011.09444). Surviving reduced claim = F/Q/G M1-content classification
+   (mechanism-level reading); boundary-discriminator on hold with reopening hook; NO row,
+   export on hold.
 5. Standing rule: every new claim runs the skill loop (preflight → compute → memo with
    pre-registered self-attack → pass → accept/repair) — narrowing is guaranteed forward motion;
    synthesis lands where two owned chains meet (as the gap-module seam did).
