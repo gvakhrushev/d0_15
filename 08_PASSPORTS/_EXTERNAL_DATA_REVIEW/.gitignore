@@ -1,0 +1,7 @@
+# raw external data is NEVER committed — only manifests (SHA256) + fetch scripts + test results
+cache/
+*.fits
+*.hdf5
+*.h5
+*.dat
+*.mcd

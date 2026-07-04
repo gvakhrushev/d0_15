@@ -1,0 +1,17 @@
+{
+  "dataset": "DESI DR2 BAO (ALL_GCcomb)",
+  "source": "github.com/CobayaSampler/bao_data/desi_bao_dr2",
+  "upstream": "DESI DR2 2025 (arXiv:2503.14738/2503.14743)",
+  "fetched_utc": "2026-07-01",
+  "fetch_script": "fetch/fetch_desi_dr2_bao.sh",
+  "files": {
+    "desi_gaussian_bao_ALL_GCcomb_cov.txt": {
+      "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+      "bytes": 2547
+    },
+    "desi_gaussian_bao_ALL_GCcomb_mean.txt": {
+      "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+      "bytes": 472
+    }
+  }
+}
