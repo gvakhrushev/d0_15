@@ -1,0 +1,11 @@
+# v5 attractor diagnostic: n_trans=2000, n_meas=800
+# rho        w          r4       r8       verdict guide: r_q<0.02 locked-q; both O(1) torus
+   1.625000  +0.124554  0.8124   0.0000   13/8 exact (w~1/8 candidate)
+   1.624500  +0.191488  1.0000   0.9607   13/8 - 5e-4
+   1.630000  +0.249705  0.9999   0.9999   1/4-region repeat pt
+   1.632500  +0.249707  0.9999   0.9998   1/4-region repeat pt
+   1.635000  +0.249707  0.9999   0.9988   1/4-region repeat pt
+   1.631000  +0.254053  0.9999   0.9997   1/4-region in-between
+   1.633500  +0.249037  0.9999   0.9998   1/4-region in-between
+   1.618034  +0.172723  1.0000   1.0000   GOLDEN
+   1.660000  +0.339824  1.0000   1.0000   rigid-torus control

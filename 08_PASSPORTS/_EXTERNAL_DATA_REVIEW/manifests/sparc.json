@@ -1,0 +1,14 @@
+{
+  "dataset": "SPARC mass models (Lelli+2016, 175 galaxies)",
+  "source": "Vizier J/AJ/152/157 table2.dat",
+  "upstream": "Lelli, McGaugh, Schombert, AJ 152,157 (2016)",
+  "fetched_utc": "2026-07-02",
+  "fetch_script": "fetch/fetch_sparc.sh",
+  "files": {
+    "table2.dat": {
+      "sha256": "7d027e515441c6b4ebbf6aadee0327e6ad81156c4e8b151af2f6d62cb44c3962",
+      "bytes": 261107,
+      "rows": 3391
+    }
+  }
+}

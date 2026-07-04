@@ -1,6 +1,6 @@
 lane,primitive,terminal,decision_class,owner,separating_observable_or_missing
 G,PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR,G2 (Wedderburn M3+C^3 DERIVED; grading two-completion),DERIVED algebra + TWO-COMPLETION-NOGO (grading),D0-RAW-COMMUTANT-WEDDERBURN-001 + D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001,nc 8 vs 12
 H,PRIM-SCENE-HISTORY-REFINEMENT-RULE,H3 (several inequivalent towers),TWO-COMPLETION-NOGO (witness-only),D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001,Perron 21.84 vs 20.83; 15708 vs 14990
-L,PRIM-LEPTON-BRANCH-FIXING-OPERATOR,L4 (orbit selector exists; 2 orbits<3),PROOF-TARGET (one new operator),D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001,missing: branch->generation row operator
+L,PRIM-LEPTON-BRANCH-FIXING-OPERATOR,L4 (orbit selector exists; 2 orbits<3),CARDINALITY-NOGO (pigeonhole; Lean-proved),D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001,no injection/surjection/bijection Gen(3)<->Branch(2); shell-torus has no fixed point
 P1,PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT,P1-C (no common sector),CLASS-SCOPED-MAXIMALITY-NOGO (no intertwiner),D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001,no canonical intertwiner; integer vs irrational spectra
 P2,PRIM-PHASON-COORDINATE-FUNCTOR,P2-E (external passport only),EXTERNAL-PASSPORT-ONLY,D0-PHASON-COORDINATE-FUNCTOR-OWNER-001,missing: external redshift observable; physical w_DE = maximality no-go

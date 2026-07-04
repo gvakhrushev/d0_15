@@ -1,0 +1,11 @@
+{
+  "dataset": "PDG mass_width 2025",
+  "source": "pdg.lbl.gov (via d0-main.zip data/)",
+  "fetched_utc": "2026-07-01",
+  "files": {
+    "mass_width_2025.mcd": {
+      "sha256": "7073c02222f08c19f5c40e422c5a54e9f9a75622b9e10b1b64096144e262d4b5",
+      "bytes": 31341
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "dataset": "NuFIT 6.0 (2024) PMNS global fit + JUNO-2026 th12",
+  "source": "Esteban, Gonzalez-Garcia, Maltoni, Schwetz, Menendez; nu-fit.org; arXiv:2410.05380 (NuFIT 6.0)",
+  "note": "machine-readable file at nu-fit.org unavailable (site path moved / TLS cert expired); used PUBLISHED central values + 1sigma from the NuFIT 6.0 paper (real published measurements).",
+  "fetched_utc": "2026-07-01",
+  "values_NO_withSK": {
+    "sin2_th12": [
+      0.307,
+      0.012
+    ],
+    "sin2_th13": [
+      0.02195,
+      0.00058
+    ],
+    "sin2_th23_upper": [
+      0.561,
+      0.015
+    ],
+    "sin2_th23_lower": [
+      0.47,
+      0.017
+    ]
+  }
+}

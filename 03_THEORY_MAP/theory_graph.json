@@ -4,48 +4,48 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 523,
+    "claims": 538,
     "release_status": {
-      "CORE-FORMALIZED": 174,
+      "CORE-FORMALIZED": 184,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 25,
-      "CORE_BRIDGE_SPLIT": 6,
+      "CORE_BRIDGE_SPLIT": 7,
       "NO_GO_PROVED": 8,
-      "CERT-CLOSED": 162,
-      "NO-GO": 70,
+      "CERT-CLOSED": 166,
+      "NO-GO": 74,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 7,
-      "PROOF-TARGET": 45,
+      "EMPIRICAL-PASSPORT": 8,
+      "PROOF-TARGET": 40,
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 348,
+      "LEAN_PROVED": 362,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 28,
-      "PYTHON_CERTIFIED": 104,
+      "PYTHON_CERTIFIED": 109,
       "DEPRECATED": 2,
-      "OPEN": 41
+      "OPEN": 37
     },
     "claim_type": {
-      "core": 176,
-      "bridge": 33,
-      "no-go": 78,
-      "certificate": 188,
+      "core": 187,
+      "bridge": 34,
+      "no-go": 82,
+      "certificate": 192,
       "deprecated": 3,
-      "frontier": 45
+      "frontier": 40
     },
     "domain": {
-      "formal_core": 316,
+      "formal_core": 332,
       "rg": 7,
-      "gauge_bridge": 22,
+      "gauge_bridge": 23,
       "smooth_geometry": 38,
-      "spectral_action": 6,
-      "empirical_passport": 35,
+      "spectral_action": 7,
+      "empirical_passport": 37,
       "cosmology": 50,
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 45
+      "frontier": 40
     }
   },
   "nodes": [
@@ -3767,7 +3767,7 @@
         "vp_higgs_scalar_projector_constructive.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "Frozen rational SU2 doublet compatibility forces the unique nonzero idempotent scalar projector to be identity trace-rank two without external scalar constants. [Iter18 integrity fix] The 7 Lean theorems were `: True := by trivial` token stubs (registered LEAN_PROVED but vacuous); they are now LOAD-BEARING proofs over concrete 2x2 rational matrices: commutant-of-frozen-SU(2)=scalar",
+      "notes": "Frozen rational SU2 doublet compatibility forces the unique nonzero idempotent scalar projector to be identity trace-rank two without external scalar constants. [Iter18 integrity fix] The 7 Lean theorems were `: True := by trivial` token stubs (registered LEAN_PROVED but vacuous); they are now LOAD-BEARING proofs over concrete 2x2 rational matrices: commutant-of-frozen-SU(2)=scalar, nonzero scalar idempotent=I2, rank-1 breaks gauge, rank-2 exists/minimal/unique, trace=2 (lake build D0.All GREEN). The cert vp_higgs_scalar_projector_constructive.py remains the numeric companion. Status LEAN_PROVED/CORE-FORMALIZED is now honest.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Matter/HiggsScalarProjectorConstructive.lean",
       "module_exists": true,
       "certs_exist": true
@@ -3988,7 +3988,7 @@
         "vp_gap_labeling_d0_tiling_hull.py"
       ],
       "status": "CERT-CLOSED",
-      "notes": "Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof. [Iter5 finite-core] The gap-label MODULE shadow is now proved exactly (new claim D0-KTHEORY-GAP-MODULE-001): labels lie in the rank-2 module Z+Zphi^-1, principal labels phi^-1/phi^-2 sum to 1. The Bellissard THEOREM (IDS=K0-trace image) stays EXTERNAL-GAP (no Mathlib K-theory). FLAG: this row's cert vp_gap_labeling_d0_tiling_hull.py fabricates the IDS as (idx+1)/30 with a float (n,m) fit — a placeholder to RETIRE in favor of the exact shadow (referenced in ~10 places; retirement is a follow-up).",
+      "notes": "Stable K-theory gap labels are countable and topological. [Phase L honesty] Lean = EXTERNAL-GAP: K-theory / Connes spectral-triple / phason-holonomy class are not in Mathlib 4.30; the prior leanCoreProved theorem was a placeholder identity (stmt)(h):=h and was removed. Finite content stays cert-closed by the python_cert; the Lean structures-scaffold remains in the module for the Bridge index, not as a proof. [Iter5 finite-core] The gap-label MODULE shadow is now proved exactly (new claim D0-KTHEORY-GAP-MODULE-001): labels lie in the rank-2 module Z+Zphi^-1, principal labels phi^-1/phi^-2 sum to 1. The Bellissard THEOREM (IDS=K0-trace image) stays EXTERNAL-GAP (no Mathlib K-theory). [2026-07-04 RETIRED IN PLACE] the former fabricated-IDS placeholder body of vp_gap_labeling_d0_tiling_hull.py was replaced by the real-spectrum edition (real IDS k/987 from the F_16 Fibonacci approximant, exact congruence labels m*610 mod 987, tolerance 2/987 instead of 0.05; failure now possible); filename/STATUS/d0_gap_labels.json contract preserved so all ~15 references stay valid. Full owner-edge cert: D0-GAP-LABELING-OWNER-EDGE-001.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
@@ -4499,25 +4499,32 @@
       "id": "D0-CVFT-F6",
       "kind": "claim",
       "claim_id": "D0-CVFT-F6",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "bridge",
+      "domain": "gauge_bridge",
+      "scope_guard": "Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.",
       "book": "BOOK_04/07",
       "section": "CVFT gauge-boundary leakage obstruction program",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_module": "D0.VNext2.GaugeBoundaryCommutator",
+      "lean_theorem": "commutator_eq_offblocks;offblock_qgp;zone_preserving_zero_commutator",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_gauge_boundary_commutator_obstruction.py",
       "python_cert": [
         "vp_gauge_boundary_commutator_obstruction.py"
       ],
-      "status": "PROOF-TARGET",
+      "status": "CORE_BRIDGE_SPLIT",
       "notes": "Yang-Mills leakage/mass-gap language requires a gauge-boundary commutator obstruction theorem. [was:LOWER-BOUND-TARGET] [8C: linked passing cert] EXACT-MISSING: a gauge-boundary commutator obstruction theorem (external/PROOF-TARGET).",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/GaugeBoundaryCommutator.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.GaugeBoundaryCommutator",
+      "kind": "lean_module",
+      "label": "D0.VNext2.GaugeBoundaryCommutator",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/GaugeBoundaryCommutator.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_gauge_boundary_commutator_obstruction.py",
@@ -5023,7 +5030,7 @@
         "vp_ramification_edge_ueff_companion.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[Iter21 cert->Lean] D0.Edge.RamificationFromUeEffCompanion: the cyclic companion relations C4^4=lam.I and R3^3=lam.I (the blocks satisfy charpoly x^4-lam / x^3-lam, ext+fin_cases over Q), total ramification at the branch point lam=0 (both go nilpotent, native_decide), and the unramified diagonal negative control (not nilpotent, 4 distinct sheets). Physical-edge embedding (C4=muon terminal capacity, R3=tau scene-rank holonomy; no 359-dim inflation) remains scoped to the cert. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]\nD0-BARYON-POLES-001,BOOK_04,baryon anonymous image poles,D0.Matter.BaryonAnonymousPoleSet,baryon_anonymous_image_poles_cert,PYTHON_CERTIFIED,False,,vp_baryon_40_56_anonymous_poles.py,CERT-CLOSED,Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]\nD0-HORIZON-JET-001,BOOK_07,horizon jet observable,D0.Gravity.HorizonJetAndBaryonPole,horizon_jet_observable_cert,LEAN_PROVED,False,,vp_horizon_jet_axis_observable.py,CORE-FORMALIZED,[Iter21 cert->Lean: finite observable = emission PSD law + axis/transverse seam projector orthogonality Pi_axis*Pi_trans=0; empirical jets stay passport]Finite observable cert; empirical jets passport. [was:HORIZON-JET-OBSERVABLE-CERT-SCAFFOLD]\nD0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPredictions,fractal_continuum_predictions_cert,LEAN_PROVED,False,,vp_fractal_continuum_predictions.py,CORE-FORMALIZED,[Iter21 cert->Lean] D0.IM.FractalContinuumPredictions: 1-1/phi=(1/phi)^2; archive increment DeltaB_n=(1/phi)^(n+2) strictly positive and strictly decelerating (Delta^2 B<0) for all n",
+      "notes": "[Iter21 cert->Lean] D0.Edge.RamificationFromUeEffCompanion: the cyclic companion relations C4^4=lam.I and R3^3=lam.I (the blocks satisfy charpoly x^4-lam / x^3-lam, ext+fin_cases over Q), total ramification at the branch point lam=0 (both go nilpotent, native_decide), and the unramified diagonal negative control (not nilpotent, 4 distinct sheets). Physical-edge embedding (C4=muon terminal capacity, R3=tau scene-rank holonomy; no 359-dim inflation) remains scoped to the cert. [was:RAMIFICATION-COMPANION-COVER-CERT-CLOSED]\nD0-BARYON-POLES-001,BOOK_04,baryon anonymous image poles,D0.Matter.BaryonAnonymousPoleSet,baryon_anonymous_image_poles_cert,PYTHON_CERTIFIED,False,,vp_baryon_40_56_anonymous_poles.py,CERT-CLOSED,Image-basis compressed pole cert. [was:BARYON-ANONYMOUS-POLE-CERT-CLOSED]\nD0-HORIZON-JET-001,BOOK_07,horizon jet observable,D0.Gravity.HorizonJetAndBaryonPole,horizon_jet_observable_cert,LEAN_PROVED,False,,vp_horizon_jet_axis_observable.py,CORE-FORMALIZED,[Iter21 cert->Lean: finite observable = emission PSD law + axis/transverse seam projector orthogonality Pi_axis*Pi_trans=0; empirical jets stay passport]Finite observable cert; empirical jets passport. [was:HORIZON-JET-OBSERVABLE-CERT-SCAFFOLD]\nD0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPredictions,fractal_continuum_predictions_cert,LEAN_PROVED,False,,vp_fractal_continuum_predictions.py,CORE-FORMALIZED,[Iter21 cert->Lean] D0.IM.FractalContinuumPredictions: 1-1/phi=(1/phi)^2; archive increment DeltaB_n=(1/phi)^(n+2) strictly positive and strictly decelerating (Delta^2 B<0) for all n, while the RELATIVE archive accelerates (reuses D0.Cosmology.archive_growth_strictly_convex) -- the opposite-sign correction. Continuum-envelope limit + prediction banners stay cert. [was:FRACTAL-CONTINUUM-PREDICTION-CERT-CLOSED]",
       "module_path": "09_LEAN_FORMALIZATION/D0/Edge/RamificationFromUeEffCompanion.lean",
       "module_exists": true,
       "certs_exist": true
@@ -5644,23 +5651,39 @@
       "id": "D0-SPECTRAL-EINSTEIN-001",
       "kind": "claim",
       "claim_id": "D0-SPECTRAL-EINSTEIN-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "certificate",
+      "domain": "spectral_action",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_07/08",
       "section": "finite A2 Einstein-tensor response",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_module": "D0.VNext2.SpectralEinsteinResponse",
+      "lean_theorem": "einstein_response_symmetric_and_conserved;einstein_response_eq",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
-      "status": "PROOF-TARGET",
+      "cert": "vp_spectral_einstein_response.py",
+      "python_cert": [
+        "vp_spectral_einstein_response.py"
+      ],
+      "status": "CERT-CLOSED",
       "notes": "[8C orphan-harvest] finite spectral-action A2 response. [Iter5 demote] HONEST demotion: the former cert was a print-only stub with no computation (could not FAIL); no quick genuine finite witness exists (A2 Einstein-tensor / Hodge-matter-gravity linking is theorem-target). Demoted CERT-CLOSED -> PROOF-TARGET, cert cleared. [Iter21 P2 audit -- precise architecture block] The GENUINE content (the scalar A2/EH-proxy trace identity a2_is_eh_proxy, D0.Geometry.SpectralActionLadder) is already owned by D0-GEOM-SPECTRAL-ACTION-LADDER-001 (CORE). What is OPEN here is the rank-2 Einstein tensor G_ij = dS_A2/dh proved simultaneously SYMMETRIC and DIVERGENCE-FREE -- that object does NOT exist anywhere in D0/ (no G_A2/EinsteinTensor). The block is two-fold: a CARRIER MISMATCH (HeatTraceEHProxy.lean over R Matrix N N + W_rho vs FiniteSpin2WaveOperator.lean over Q SymPert4 + pairing4) and a MISSING variational-derivative operator (dS_A2/dh as a closed-form matrix on a single carrier was never written). Architecture-blocked, not a quick finite witness; jointly open with D0-HODGE-LINKS-001. Do NOT anchor an ASSUMP row to the scalar a2_is_eh_proxy -- it supplies no tensor for the obligation to be about. EXACT-MISSING: the G_A2 tensor + d-forcing (architecture-blocked; see p2-architecture-blocked-items).",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SpectralEinsteinResponse.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.SpectralEinsteinResponse",
+      "kind": "lean_module",
+      "label": "D0.VNext2.SpectralEinsteinResponse",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/SpectralEinsteinResponse.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_spectral_einstein_response.py",
+      "kind": "python_cert",
+      "label": "vp_spectral_einstein_response.py",
+      "path": "05_CERTS/vp_spectral_einstein_response.py",
+      "exists": true
     },
     {
       "id": "D0-NOAXION-001",
@@ -6064,25 +6087,32 @@
       "id": "D0-EW-002",
       "kind": "claim",
       "claim_id": "D0-EW-002",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_04",
       "section": "Higgs anchor projector (39-dim)",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.VNext2.HiggsAnchorProjector",
+      "lean_theorem": "defect_norm_eq_delta0;delta0_eq_phi",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_higgs_anchor_projector.py",
       "python_cert": [
         "vp_higgs_anchor_projector.py"
       ],
-      "status": "CERT-CLOSED",
+      "status": "CORE-FORMALIZED",
       "notes": "[8C orphan-harvest] Pi_H identity on scalar anchor image; rank.V13=39; delta0-normalized defect.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/HiggsAnchorProjector.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.HiggsAnchorProjector",
+      "kind": "lean_module",
+      "label": "D0.VNext2.HiggsAnchorProjector",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/HiggsAnchorProjector.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_higgs_anchor_projector.py",
@@ -6782,8 +6812,8 @@
       "kind": "claim",
       "claim_id": "D0-MIXING-HIERARCHY-INVERSION-001",
       "type": "core",
-      "domain": "formal_core",
-      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
       "book": "BOOK_04",
       "section": "CKM<->PMNS hierarchy inversion",
       "lean_module": "D0.Claims.MixingHierarchyInversion",
@@ -6796,7 +6826,7 @@
         "vp_mixing_hierarchy_inversion.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.MixingHierarchyInversion (mixing_hierarchy_inversion); native_decide/decide on the real finite content. [Iter21] the rank-nullity demokratie skeleton now carries the DERIVED delta0-corrections via D0-PMNS-SEAM-TOPOLOGY-001 (seam-topology rule: degree = bare/open/closed); the former MECH-LIMIT angle family is replaced by the derived rule.",
+      "notes": "[8D Tier-1 forced] rank-3 nondegenerate (CKM small) vs nullity-30 degenerate (PMNS large); cubic lambda^3-359lambda-2574. Lean L4 queued. Lean L5 CORE-FORMALIZED via D0.Claims.MixingHierarchyInversion (mixing_hierarchy_inversion); native_decide/decide on the real finite content. [Iter21->corrected] the rank-nullity skeleton (rank-3 CKM-small vs nullity-30 PMNS-large) is the DERIVED structural content; the delta0 angle corrections carried via D0-PMNS-SEAM-TOPOLOGY-001 are an EMPIRICAL-PASSPORT delta0-family (post-hoc-consistent, not forced), not a derived rule.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Claims/MixingHierarchyInversion.lean",
       "module_exists": true,
       "certs_exist": true
@@ -8441,25 +8471,32 @@
       "id": "D0-WINDOW44-TOTIENT-M1-001",
       "kind": "claim",
       "claim_id": "D0-WINDOW44-TOTIENT-M1-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_07",
       "section": "phi_E(44)=20=d_13 M1-forced (researcher §01.25, verified) 07.23",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.VNext2.Window44Totient",
+      "lean_theorem": "totient_eq_terminal_degree;units_zmod44_card",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_window44_totient_m1.py",
       "python_cert": [
         "vp_window44_totient_m1.py"
       ],
-      "status": "CERT-CLOSED",
+      "status": "CORE-FORMALIZED",
       "notes": "[Iter8 researcher doc 2 §01.25, verified CORRECT, entered as-is] The first terminal phase-return window q_T=|ABCD|*|V_11|=4*11=44 has admissible coprime branch count = Euler totient phi_E(44)=|(Z/44)*|=20=d_13 (terminal shell degree). cert vp_window44_totient_m1.py: phi_E(44)=44*(1-1/2)*(1-1/11)=20 exact, |(Z/44)*|=20 by direct count, neighbours phi_E(43)=42, phi_E(45)=24 differ. M1 formulation: |Aut(Z/44)|=phi_E(44)=20; any branch count k!=20 changes the automorphism class, needing an external catalogue to index it -> bot M1, so 20 is forced not chosen. Sharpens/confirms D0-WINDOW44-GROUP-SPECTRUM-001 and the §07.23 phase chain; no new free number.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/Window44Totient.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.Window44Totient",
+      "kind": "lean_module",
+      "label": "D0.VNext2.Window44Totient",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/Window44Totient.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_window44_totient_m1.py",
@@ -8642,25 +8679,32 @@
       "id": "D0-RANK3-METRIC-TRANSPORT-001",
       "kind": "claim",
       "claim_id": "D0-RANK3-METRIC-TRANSPORT-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "formal_core",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
       "book": "BOOK_07",
       "section": "07.51.3",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.VNext2.Rank3MetricSignature",
+      "lean_theorem": "signature_one_plus_two_minus;equal_zone_discriminant_zero",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_rank3_metric_transport.py",
       "python_cert": [
         "vp_rank3_metric_transport.py"
       ],
-      "status": "CERT-CLOSED",
+      "status": "CORE-FORMALIZED",
       "notes": "[Iter17 ТЗ Phase C, verify-then-promote] The rank-3 SPATIAL metric is the equitable-quotient transport quadratic form of K(9,11,13), B=[[0,11,13],[9,0,13],[9,11,0]], charpoly lambda^3-359 lambda-2574 (359=|E| coupling); eigenvalues ~ {-12.08,-9.76,+21.84} = non-degenerate (1+,2-) form => light cone = null set. FALSIFIABLE ANISOTROPY: zones 9!=11!=13 split the two negative eigenvalues (-12.08!=-9.76) => spatial metric anisotropic at carrier level; isotropic only in equal-zone limit (n,n,n) spectrum {2n,-n,-n}. Cert vp_rank3_metric_transport.py (can-FAIL; controls: equal-zones isotropic, wrong zones change the form). HONEST: realizes the spatial quadratic FORM + null cone + anisotropy falsifier; does NOT fix the cone-speed/dimensionful unit (that is the c=1/Connes question, separate); distinct object from the (3,1) Pisot-counting signature (D0-RANK3-CAUSAL-CONE-FORCING-001) -- NOT conflated. Anisotropy is a Planck-level PASSPORT-TARGET falsifier.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/Rank3MetricSignature.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.Rank3MetricSignature",
+      "kind": "lean_module",
+      "label": "D0.VNext2.Rank3MetricSignature",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/Rank3MetricSignature.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_rank3_metric_transport.py",
@@ -9562,8 +9606,8 @@
       "kind": "claim",
       "claim_id": "D0-PMNS-SEAM-TOPOLOGY-001",
       "type": "core",
-      "domain": "formal_core",
-      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
       "book": "BOOK_04",
       "section": "04.5",
       "lean_module": "D0.Matter.PMNSSeamTopology",
@@ -9575,8 +9619,8 @@
       "python_cert": [
         "vp_pmns_seam_topology.py"
       ],
-      "status": "CORE-FORMALIZED",
-      "notes": "[Iter21] one rule (delta0-degree=seam topology bare/open/closed -> delta0^{0,1,2}) gives all three PMNS angles. RULE THE: directional content machine-checked (D0.Matter.PMNSSeamTopology: th13>0, th23>1/2, th12<1/3). NUMBERS CHK: all three <1sigma vs JUNO-2026+NuFIT-6.0 (cert), permutation control FAILS (th12 deg1->24sigma, th23 deg2->2.7sigma). Replaces the MECH-LIMIT angle family. Cone-angle 2pi0 micro-derivation = named MECH-LIMIT residual.",
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[Iter21->corrected] delta0-family ansatz: degree assigned by seam topology (bare/open/closed -> delta0^{0,1,2}); all three angles <1sigma vs JUNO-2026+NuFIT-6.0 (genuine non-trivial match, cert vp_pmns_seam_topology.py). SCOPE CORRECTION (was over-claimed 'RULE THE / discriminating'): the Lean directional theorem D0.Matter.PMNSSeamTopology (th13>0, th23>1/2, th12<1/3) is TRUE BY CONSTRUCTION of the chosen signs, not a forcing; the degree-permutation control breaks only at FIXED coefficient, and refitting the coefficient at degree-1 recovers <1sigma (1/3-delta0/4=0.30382, 0.62sigma). Under joint (degree,coefficient) freedom the family is not discriminated -> values are EMPIRICAL-PASSPORT (CHK); only delta0=1/(2phi^3) is forced. Demoted CORE-FORMALIZED->EMPIRICAL-PASSPORT (BOOK_05 05.5; QUARANTINE_LEDGER corrected-reach).",
       "module_path": "09_LEAN_FORMALIZATION/D0/Matter/PMNSSeamTopology.lean",
       "module_exists": true,
       "certs_exist": true
@@ -10317,25 +10361,32 @@
       "id": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
       "kind": "claim",
       "claim_id": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
-      "type": "certificate",
+      "type": "core",
       "domain": "smooth_geometry",
-      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "scope_guard": "Finite/symbolic smooth-geometry proxy; continuum covariance requires declared bridge assumptions.",
       "book": "BOOK_08",
       "section": "08.51",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "PYTHON_CERTIFIED",
+      "lean_module": "D0.VNext2.PhasonWZSequence",
+      "lean_theorem": "w_strictly_decreasing;w_excess_form;w_gt_limit",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_phason_wz_explicit_function.py",
       "python_cert": [
         "vp_phason_wz_explicit_function.py"
       ],
-      "status": "CERT-CLOSED",
+      "status": "CORE-FORMALIZED",
       "notes": "[Iter22 next-frontier P2] finite internal archive pressure-energy RATIO sequence w_N = p_N/rho_N = dR_n/R_n = phi^(n-1)/(phi^n-1) (exact Q(phi)) from energy R_n (D0-IM-COSMO-001) + relative pressure dR_n (D0-IM-COSMO-002) on the common window n; w_N decreases monotonically to +phi^-1 (a POSITIVE internal ratio, NOT the physical dark-energy w(z)<0). cert vp_phason_wz_explicit_function.py (controls: energy-only / pressure-only / kernel-dim-only / CPL-tuned rejected; compatibility vp_phason_energy_pressure_compatibility.py). SCOPE: finite-sequence scaffold only; the explicit continuum w_D0(u) + the sign/normalization map to physical w_DE stay PROOF-TARGET (D0-PHASON-WZ-EXPLICIT-FUNCTION-001).",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/PhasonWZSequence.lean",
+      "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.PhasonWZSequence",
+      "kind": "lean_module",
+      "label": "D0.VNext2.PhasonWZSequence",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/PhasonWZSequence.lean",
+      "exists": true
     },
     {
       "id": "cert:vp_phason_wz_explicit_function.py",
@@ -10672,31 +10723,38 @@
       "id": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
       "kind": "claim",
       "claim_id": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_06",
       "section": "06.31",
-      "lean_module": "",
-      "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_module": "D0.VNext2.AdlerWeissInternalMarkov",
+      "lean_theorem": "conjugacy_T_negMphi;det_T",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_adler_weiss_internal_construction.py",
+      "cert": "vp_adler_weiss_internal_markov.py",
       "python_cert": [
-        "vp_adler_weiss_internal_construction.py"
+        "vp_adler_weiss_internal_markov.py"
       ],
-      "status": "PROOF-TARGET",
-      "notes": "[Iter22 five-front C] The partition SCAFFOLD (explicit Lucas-boundary cells + kappa-stability, D0-LUCAS-VORONOI-MARKOV-PARTITION-001) is built internally. MISSING (exact): the Voronoi-cell-exact MARKOV-property proof T(int P_i) subset int P_j for the Lucas-Voronoi cells (external Adler-Weiss 1967 + de Bruijn Voronoi). cert vp_adler_weiss_internal_construction.py (controls: Adler-Weiss-imported-as-CORE / non-Lucas-boundary rejected). PROOF-TARGET; classical Adler-Weiss stays the external owner D0-ADLER-WEISS-PARTITION-OWNER-001.",
-      "module_path": "09_LEAN_FORMALIZATION/.lean",
-      "module_exists": false,
+      "status": "CERT-CLOSED",
+      "notes": "[Iter22 five-front C] The partition SCAFFOLD (explicit Lucas-boundary cells + kappa-stability, D0-LUCAS-VORONOI-MARKOV-PARTITION-001) is built internally. MISSING (exact): the Voronoi-cell-exact MARKOV-property proof T(int P_i) subset int P_j for the Lucas-Voronoi cells (external Adler-Weiss 1967 + de Bruijn Voronoi). cert vp_adler_weiss_internal_construction.py (controls: Adler-Weiss-imported-as-CORE / non-Lucas-boundary rejected). PROOF-TARGET; classical Adler-Weiss stays the external owner D0-ADLER-WEISS-PARTITION-OWNER-001. [2026-07 PR-review fix: python_cert was stale, still pointing at the scaffold cert vp_adler_weiss_internal_construction.py, whose OWN verdict is HONEST_PROOF_TARGET (not CERT-CLOSED) - it never backed this row's CERT-CLOSED status. Repointed to vp_adler_weiss_internal_markov.py, matching the book's Iter25 paragraph and the already-correct lean_module/lean_theorem fields: the exact 2-cell Markov partition is realized internally via the M1-forced golden beta=phi natural extension (1->1 forbidden, transition [[1,1],[1,0]], Parry (phi^2,1)/(phi^2+1), entropy log phi), conjugate to T~-M_phi. The scaffold cert stays valid as a distinct, earlier-stage artifact (Lucas-boundary cell geometry, still PROOF-TARGET on its own terms) but is no longer this row's proof-of-record.]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/AdlerWeissInternalMarkov.lean",
+      "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "cert:vp_adler_weiss_internal_construction.py",
+      "id": "module:D0.VNext2.AdlerWeissInternalMarkov",
+      "kind": "lean_module",
+      "label": "D0.VNext2.AdlerWeissInternalMarkov",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/AdlerWeissInternalMarkov.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_adler_weiss_internal_markov.py",
       "kind": "python_cert",
-      "label": "vp_adler_weiss_internal_construction.py",
-      "path": "05_CERTS/vp_adler_weiss_internal_construction.py",
+      "label": "vp_adler_weiss_internal_markov.py",
+      "path": "05_CERTS/vp_adler_weiss_internal_markov.py",
       "exists": true
     },
     {
@@ -14373,31 +14431,31 @@
       "id": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
       "kind": "claim",
       "claim_id": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
       "book": "BOOK_02",
       "section": "02.vnext33",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "OPEN",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_vnext_canonical_anchor_feshbach_compression.py",
+      "cert": "vp_vnext_scene_feshbach_compression_owner.py",
       "python_cert": [
-        "vp_vnext_canonical_anchor_feshbach_compression.py"
+        "vp_vnext_scene_feshbach_compression_owner.py"
       ],
-      "status": "PROOF-TARGET",
-      "notes": "[vNext+1 Phase E] The Feshbach split needs image(Xi^dag)/kernel(Xi); Xi is obstructed, so W_eff=A-B(D-zI)^-1 C cannot be canonically formed against the scene. Blocked upstream; missing PRIM-COMPARISON-MAP-XI-N.",
+      "status": "CERT-CLOSED",
+      "notes": "[vNext+1 Phase E; CERT-CLOSED 2026-07-04, retracts the earlier over-scoped unitary-only NO-GO] The canonical Feshbach compression of the scene Laplacian EXISTS and is exact. Against the Aut-invariant zone/archive split (bulk zones 1,2 = 20 vtx / traced boundary zone 3 = 13 vtx) the traced block is D_tt=20*I_13 exactly, so the z=0 Schur complement W_eff(0)=A_bb-(1/20)BB^T is exact with 4 distinct eigenvalues {0,22,24,33}; the scene has 5 {0,20,22,24,33} (computed by nullity probing with completeness sum=33, agrees with frozen upstream D0-SCENE-LAPLACIAN-SPECTRUM-FORCED-001). So the compression performs the 5->4 distinct-eigenvalue reduction a UNITARY Xi cannot (unitaries preserve distinct count); the earlier flip conflated a projection split with a unitary intertwiner (needs image(Xi^dag)/kernel(Xi)). The Schur complement is a sample-z object per house convention vp_feshbach_schur_dynamics.py (NOT z-independent). Reachable controls: equal-part K(11,11,11) drops no eigenvalue (obstruction is scene-specific), cross-zone split breaks D_tt=20*I. cert vp_vnext_scene_feshbach_compression_owner.py; four artifact repairs audited in vp_vnext_scene_feshbach_compression_owner_AUDIT_NOTE.md, skeptic #11 clean. Scoped against the unitary NO-GO vp_vnext_scene_matched_owners_derived_nogo.py.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
       "certs_exist": true
     },
     {
-      "id": "cert:vp_vnext_canonical_anchor_feshbach_compression.py",
+      "id": "cert:vp_vnext_scene_feshbach_compression_owner.py",
       "kind": "python_cert",
-      "label": "vp_vnext_canonical_anchor_feshbach_compression.py",
-      "path": "05_CERTS/vp_vnext_canonical_anchor_feshbach_compression.py",
+      "label": "vp_vnext_scene_feshbach_compression_owner.py",
+      "path": "05_CERTS/vp_vnext_scene_feshbach_compression_owner.py",
       "exists": true
     },
     {
@@ -16419,38 +16477,38 @@
       "id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
       "kind": "claim",
       "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_04",
       "section": "04.L",
-      "lean_module": "D0.Extensions.LeptonBranchSelectorConstruction",
-      "lean_theorem": "lepton_branch_selector_L4",
+      "lean_module": "D0.Extensions.LeptonBranchFixingNoGo",
+      "lean_theorem": "lepton_branch_fixing_operator_nogo",
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "cert": "vp_lepton_branch_fixing_operator_nogo.py",
       "python_cert": [
-        "vp_five_primitive_no_branch_to_generation_shortcut.py"
+        "vp_lepton_branch_fixing_operator_nogo.py"
       ],
-      "status": "PROOF-TARGET",
-      "notes": "[Lane L terminal L4] The orbit sizes {4,3} are intrinsically distinct, so the orbit-keyed exponent selector (4->1/4, 3->1/3, 1/4!=1/3) is branch-sensitive WITHOUT post-hoc group narrowing; but 2 orbits < 3 generations, so the full branch->generation row needs one exact new operator. Decimals stay EFT/IR passport. Cites D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001. EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR (the branch->generation row operator).",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchSelectorConstruction.lean",
+      "status": "NO-GO",
+      "notes": "[Lane L terminal L4] The orbit sizes {4,3} are intrinsically distinct, so the orbit-keyed exponent selector (4->1/4, 3->1/3, 1/4!=1/3) is branch-sensitive WITHOUT post-hoc group narrowing; but 2 orbits < 3 generations, so the full branch->generation row needs one exact new operator. Decimals stay EFT/IR passport. Cites D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001. EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR (the branch->generation row operator). [2026-07 PR-review fix: registry was stale against the book's own Iter23 paragraph. PROMOTED PROOF-TARGET->NO-GO: the terminal-L4 gap is now a proven non-constructibility. Frozen shell-torus Ueff=blockdiag(4-cycle,3-cycle) gives numBranches=2 (exponents 1/4!=1/3) with NO fixed point (no in-carrier third branch), while numGenerations=3 (K(9,11,13) trivial-isotype multiplicity Tr(T^2)=3); a branch->generation row would need an injection/surjection/bijection Gen(3)<->Branch(2), all impossible by cardinality (Lean decide). Lean D0.Extensions.LeptonBranchFixingNoGo.lepton_branch_fixing_operator_nogo; cert vp_lepton_branch_fixing_operator_nogo.py (6/6 PASS). Prior cert vp_five_primitive_no_branch_to_generation_shortcut.py established the same orbit-count fact less formally and remains valid but is superseded as this row's proof-of-record.]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchFixingNoGo.lean",
       "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "module:D0.Extensions.LeptonBranchSelectorConstruction",
+      "id": "module:D0.Extensions.LeptonBranchFixingNoGo",
       "kind": "lean_module",
-      "label": "D0.Extensions.LeptonBranchSelectorConstruction",
-      "path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchSelectorConstruction.lean",
+      "label": "D0.Extensions.LeptonBranchFixingNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchFixingNoGo.lean",
       "exists": true
     },
     {
-      "id": "cert:vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "id": "cert:vp_lepton_branch_fixing_operator_nogo.py",
       "kind": "python_cert",
-      "label": "vp_five_primitive_no_branch_to_generation_shortcut.py",
-      "path": "05_CERTS/vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "label": "vp_lepton_branch_fixing_operator_nogo.py",
+      "path": "05_CERTS/vp_lepton_branch_fixing_operator_nogo.py",
       "exists": true
     },
     {
@@ -17430,7 +17488,7 @@
       "cert": "",
       "python_cert": [],
       "status": "CORE-FORMALIZED",
-      "notes": "A1 R1 CORE-FORCING. q-(Arf1) anisotropic (q-=1 on all F2^2\u0000 = Q8); q+(Arf0) has null ray (= D4). No-null-ray M1 selector forces Q8, Dedekind-independent. Decidable over F2.",
+      "notes": "A1 R1 CORE-FORCING. q-(Arf1) anisotropic (q-=1 on all F2^2 = Q8); q+(Arf0) has null ray (= D4). No-null-ray M1 selector forces Q8, Dedekind-independent. Decidable over F2.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/Q8Anisotropy.lean",
       "module_exists": true,
       "certs_exist": true
@@ -17641,6 +17699,484 @@
       "kind": "lean_module",
       "label": "D0.ParallelClosure.CrossGate",
       "path": "09_LEAN_FORMALIZATION/D0/ParallelClosure/CrossGate.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_04",
+      "section": "04.11",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_colour_generation_typed_carrier_nogo.py",
+      "python_cert": [
+        "vp_colour_generation_typed_carrier_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "Migrated from session matter-sector analysis (consolidated no-go). Two exact finite obstructions: (A) TYPED COLLAPSE - D_zone=diag(24,22,20) simple spectrum reduces the raw M3(C) on the three zone-lines (dim 9) to the abelian diagonal (dim 3), so three zones = GENERATIONS not colour; (B) COMMUTANT GAP - on C^8=C[Q8] dim Commutant(weak)=dim R(Q8)=8<9=dim M3(C), so a source-native colour M3 does not fit and the quark module C^3(x)C^2 needs an external (x)C^3 (the inserted A_F completion H_q=W3(x)V2). NO-GO on scene-zone+terminal carriers only; global colour stays a terminal-passport (octonion/E8) route, consistent with BOOK_04 04.11. Cert vp_colour_generation_typed_carrier_nogo.py is can-FAIL (degenerate-frame control keeps a block; full-algebra commutant=1).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_colour_generation_typed_carrier_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_colour_generation_typed_carrier_nogo.py",
+      "path": "05_CERTS/vp_colour_generation_typed_carrier_nogo.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02",
+      "section": "02.13.h",
+      "lean_module": "D0.Spectral.SeamTransportLinear",
+      "lean_theorem": "transport_add;transport_readout;alpha_dressing_factor",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_holonomy_linear_form.py",
+      "python_cert": [
+        "vp_alpha_holonomy_linear_form.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter26 ELEVATION CHK->THE for the FORM] The alpha closure-holonomy dressing factor 1+h_KS*sin(theta) is DERIVED from nilpotent seam transport not data-selected. Two seam operators: elliptic channel selector G (Q8 G^2=-I picks sin amplitude owned by SeamHolonomy) + DIRECTED transport N (CP-seam crossing N^2=0 nilpotent). Directed CP-3-cycle (D0-BARYON-ASYMMETRY-DELTA0-001) means one crossing per closure so N^2=0 so exp(sN)=I+sN EXACTLY (higher orders vanish identically) so factor exactly 1+s linear; s=h_KS*sin(theta) gives 1+lnphi*sin(12/5). Lean D0.Spectral.SeamTransportLinear (rc=0 0 sorry): seamN_sq (N^2=0) transport_add (parabolic group law exact no cross term) transport_readout (=1+s) alpha_dressing_factor (=1+h*sin) plus elliptic contrast rotation_readout_bounded (|cos-sin|<=sqrt2 so exp/oscillatory form structurally excluded). Nilpotency proven LOAD-BEARING (control: idempotent M^2=M!=0 breaks the parabolic law). Cert vp_alpha_holonomy_linear_form.py rc=0. Closes the last data-selected structural piece of the alpha ansatz: data now CONFIRMS the single directed crossing rather than SELECTING the form. HONEST: N^2=0='one directed crossing' is the physical input; the 9-digit alpha value stays CHK (D0-ALPHA-HOLONOMY-002) last ~1e-8 HYP.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Spectral/SeamTransportLinear.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Spectral.SeamTransportLinear",
+      "kind": "lean_module",
+      "label": "D0.Spectral.SeamTransportLinear",
+      "path": "09_LEAN_FORMALIZATION/D0/Spectral/SeamTransportLinear.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_alpha_holonomy_linear_form.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_holonomy_linear_form.py",
+      "path": "05_CERTS/vp_alpha_holonomy_linear_form.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SCENE-TRIPLE-UNIQUE-001",
+      "kind": "claim",
+      "claim_id": "D0-SCENE-TRIPLE-UNIQUE-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "01.19a",
+      "lean_module": "D0.VNext2.SceneTripleUnique",
+      "lean_theorem": "scene_triple_unique",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_scene_triple_unique.py",
+      "python_cert": [
+        "vp_scene_triple_unique.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter26 CAPSTONE] (9,11,13) is the UNIQUE admissible scene triple proved as a SINGLE statement composing four previously-distinct forcing legs: 3 zones (CarrierForcing.admissible_unique) + +2 address ladder (address_ladder) + centre L5=11 + odd-return parity. NEW content: unique_lucas_in_window -- among ALL Lucas numbers only L5=11 lies in the admissibility window [9,13] (L4=7<9 L6=18>13 L_n monotone so every higher return >13). scene_triple_unique: any +2 ladder whose centre is a Lucas number in [9,13] is uniquely (9,11,13). Non-vacuity proved (scene_triple_realized n=5). Lean D0.VNext2.SceneTripleUnique rc=0 0 sorry; cert vp_scene_triple_unique.py (controls: non-Lucas centre 10 rejected; wide window [9,29] admits 2nd centre 29=L7 so window bound load-bearing; +1 ladder rejected). The theory's root-selection statement in one line -- the scene is not chosen it is the unique fixed point of its admissibility window.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneTripleUnique.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.SceneTripleUnique",
+      "kind": "lean_module",
+      "label": "D0.VNext2.SceneTripleUnique",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/SceneTripleUnique.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_scene_triple_unique.py",
+      "kind": "python_cert",
+      "label": "vp_scene_triple_unique.py",
+      "path": "05_CERTS/vp_scene_triple_unique.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001",
+      "kind": "claim",
+      "claim_id": "D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_07",
+      "section": "07.51",
+      "lean_module": "D0.VNext2.Rank3CubicSymmetricFunctions",
+      "lean_theorem": "cubic_coefficients;discriminant_positive;det_is_twice_product",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_rank3_cubic_symmetric_functions.py",
+      "python_cert": [
+        "vp_rank3_cubic_symmetric_functions.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[Iter25/registered Iter26] The rank-3 zone-quotient cubic lambda^3-359lambda-2574 has coefficients that ARE the scene symmetric functions: e2 = -359 = -|E| (pairwise_is_edgecount: sum of pairwise zone products = 9*11+9*13+11*13 = 359) and e3 = 2574 = 2*(9*11*13) (det_is_twice_product/twice_product_val). discriminant_positive: disc = 6185264 > 0 so three distinct real eigenvalues (anisotropic causal cone). Owns the CUBIC COEFFICIENTS that D0-RANK3-METRIC-TRANSPORT-001 (signature 1+,2-) consumes. Lean D0.VNext2.Rank3CubicSymmetricFunctions rc=0 0 sorry (decide-backed integer identities); cert vp_rank3_cubic_symmetric_functions.py rc=0. Was module-complete but unregistered in the ledger until the Iter26 ground-truth reconciliation.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/Rank3CubicSymmetricFunctions.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.VNext2.Rank3CubicSymmetricFunctions",
+      "kind": "lean_module",
+      "label": "D0.VNext2.Rank3CubicSymmetricFunctions",
+      "path": "09_LEAN_FORMALIZATION/D0/VNext2/Rank3CubicSymmetricFunctions.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_rank3_cubic_symmetric_functions.py",
+      "kind": "python_cert",
+      "label": "vp_rank3_cubic_symmetric_functions.py",
+      "path": "05_CERTS/vp_rank3_cubic_symmetric_functions.py",
+      "exists": true
+    },
+    {
+      "id": "D0-XI-OPERATOR-FAMILY-001",
+      "kind": "claim",
+      "claim_id": "D0-XI-OPERATOR-FAMILY-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.v2/xi",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_xi_operator_family.py",
+      "python_cert": [
+        "vp_xi_operator_family.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Center-attack, skeptic-hardened] Phi=[S;T] intertwines the WHOLE Bartholdi family: Phi(B+tJ)=(M+t*sigma)Phi for all t; ker Phi family-invariant with action (t-1)J; rank Phi=65, dim ker=653. CORRECTED ledger (pass #5 accepted): kernel action = prefactor x (1-(1-t)u); vertex polynomial = coimage x (1-(1-t)u) - one factor migrates on the cokernel line (1,-1); 653=652+1, J splits 326/327. External owner: Bass 1992 block proof made explicit. HONEST: Phi does NOT satisfy the owned Xi_N conditional-expectation typing (Phi*Phi^T singular, [Phi*Phi^T,M]!=0 - proven); re-typing of PRIM-COMPARISON-MAP-XI-N is a PROPOSAL for owner decision, not a discharge; rows 423/433/441/490 stand. Ledger: _TASKS_CENTER_ATTACK/CAMPAIGN_FINAL.md + T1_XI_THEOREM.md.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_xi_operator_family.py",
+      "kind": "python_cert",
+      "label": "vp_xi_operator_family.py",
+      "path": "05_CERTS/vp_xi_operator_family.py",
+      "exists": true
+    },
+    {
+      "id": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "kind": "claim",
+      "claim_id": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.v2/bartholdi",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_scene_bartholdi_typed.py",
+      "python_cert": [
+        "vp_scene_bartholdi_typed.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Center-attack] Bartholdi zeta identity det(I-u(B+tR))=(1-(1-t)^2 u^2)^326 det(I-uA+(1-t)(D-(1-t)I)u^2) verified EXACT on K(9,11,13) (published form = brief form under dictionary (u,t)<->(t,u), B_pub=B+R); t=0 reproduces Ihara-Bass bit-for-bit; t=1 degenerates to det(I-uA); golden point 1-t=t^2 at t=phi-1 exact in Z[phi]. Sourcing: Bartholdi 1999, Mizuno-Sato. CONSEQUENCE: the vNext2 families W/NB/E are specializations of ONE two-parameter object. HONEST: the t-fork is OPEN 3-way {t=0 (H3 two-completion), t=p (exact but not zeta-internally forced - pass #7 of W-series), t=1 (compositional bookkeeping, hostage to Info-revisit fork)} - reconciled in CAMPAIGN_FINAL.md; no t is forced; PRIM-SCENE-HISTORY-REFINEMENT-RULE stands.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_scene_bartholdi_typed.py",
+      "kind": "python_cert",
+      "label": "vp_scene_bartholdi_typed.py",
+      "path": "05_CERTS/vp_scene_bartholdi_typed.py",
+      "exists": true
+    },
+    {
+      "id": "D0-Q8-HOLOMORPH-MODULE-001",
+      "kind": "claim",
+      "claim_id": "D0-Q8-HOLOMORPH-MODULE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_04",
+      "section": "04.q8/holomorph",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_q8_holomorph_module.py",
+      "python_cert": [
+        "vp_q8_holomorph_module.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Center-attack, survived passes #5-#6 attack line D] The holomorph pair (L_i, alpha=(ijk)) on C[Q8]: alpha is a genuine algebra automorphism (intertwines regular rep; i<->j swap control fails it), preserves E0/E4/E3, 3-cycles the E3 character idempotents (e_B->e_C->e_D = the Utau pattern); L_i restricted to <i>-span IS the TerminalReturn.Umu literal verbatim; E0 = common fixed block (unramified electron). Block-typing signatures: E4 unique with L_-1=-1 (translation order exactly 4); 13-leg: role-class function home = half(I+L_-1) = E0+E3 definitionally, orthogonal to E4. PAYS the Q8-internal half of P_iso (ranks (1,4,3) and return orders (4,3) are readings of ONE module, not an integer coincidence). HONEST: the zone correspondence Q9<->E0,Q11<->E4,Q13<->E3 stays a frozen choice of the CONDITIONAL-EXTENSION unified chain; matching forcings v1/v2 were KILLED (accepted); minimal X5 selections {S1 contact bit, S2 lambda=1, S3 port half} stand per CAMPAIGN_FINAL.md.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_q8_holomorph_module.py",
+      "kind": "python_cert",
+      "label": "vp_q8_holomorph_module.py",
+      "path": "05_CERTS/vp_q8_holomorph_module.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-SEAM-LOCATION-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-SEAM-LOCATION-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_02",
+      "section": "02.13/seam-location",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_seam_location.py",
+      "python_cert": [
+        "vp_alpha_seam_location.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[Center-attack] SEAM LOCATION THEOREM: the alpha-chain active(rank-3)/archive(dim-30) split has ZERO seam on the whole vertex algebra <A,D_deg> (A annihilates the kernel 8+10+12; D zone-scalar; all words length<=4 verified, closure algebraic) - B=C=0 for ANY vertex W_eff; the depth-2 moment mu2*u^2+mu1*u is UNREALIZABLE at vertex level. Negative control: single-edge operator (outside algebra) has nonzero seam. COMPANION (washout, in vp-pending scripts): Phi-compressions of the whole directed edge family land inside <A,D> (TBS^T=(D-I)D etc.) - directedness washed out by canonical maps. Consequence: any realization must use the within-zone-structured (Q8-labeled) non-canonical layer. Feeds D0-ALPHA-SEAM-REALIZATION-NOGO-001.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_alpha_seam_location.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_seam_location.py",
+      "path": "05_CERTS/vp_alpha_seam_location.py",
+      "exists": true
+    },
+    {
+      "id": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_02",
+      "section": "02.13/seam-nogo",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_alpha_edge_moment_witness.py",
+      "python_cert": [
+        "vp_alpha_edge_moment_witness.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[Center-attack, EIGHT-PASS-HARDENED incl. decisive pass #8 STANDS] No seam buildable from the owned inventory realizes (mu1,mu2,mu3)=(1/3,12288/5,0). Legs: (1) symmetric class impossible (mu3=||NB^T||_F^2 => depth-2-exact + mu2!=0 impossible for ANY symmetric archive); (2) canonical raw layer seam-free (seam-location + washout theorems); (3) exact directed nulls (edge witness Tr(BC)=2678/3, Tr(BDC)=84971/6, ratio 84971/5356 vs required 12288/5 under the OWNED asymmetric normalization mu1=Tr/rank - note the convention is internally split in vp_feshbach_residue_amplitudes.py header-vs-body, NAMED not adjudicated); (3') VALUATION OBSTRUCTION: 5=(2phi-1)^2 ramifies in Z[phi], N(2phi-1)=-5 => 1/5 not in Z[phi,1/2] = the owned zone-9 seam-trace ring; rho-FAMILY closure: the UNIQUE owned D_Sigma-division is rho=Z/D_Sigma=3/5 (THE 04.6.pi.A), upgrade to trace-normalization blocked by D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001; mu2=2^12*rho EXACTLY so every owned-scalar route is the tautology (costume); window family co-prime-blocked (359,13 non-invertible in Z[phi,1/2]); (4) structured transports into zones 11/13 unbuildable (C1 exchangeability verbatim + count-only sqcup + empty usage grep; zone 9 = unique owned-labeled part); (5) owned two-port W_eff nulls (mu1=Tr(U_br^2)=0 exact). CONSEQUENCE: ASSUMP-DIXMIER-TRACE (D0-DIXMIER-RESIDUE-OWNER-001, D0-ALPHA-FESHBACH-DIXMIER-OWNER-001, D0-DELTA-ALPHA-RESIDUE-PAIRING-OWNER-001, D0-DELTA-ALPHA-HEATTRACE-COEFFICIENT-OWNER-001) is IRREDUCIBLE within present-core - a theorem-shaped boundary with swept candidate space, not an unattempted gap. FALSIFICATION/REOPENING HOOKS: (i) new owned within-part structure on V11/V13; (ii) new owned directed operator entering inventory; (iii) moment-convention adjudication; (iv) an owned derivation placing pi0 as seam coefficient WITH independent content (= the genuine second canonization). Full record: _TASKS_CENTER_ATTACK/ALPHA_SEAM_NOGO_V2.md; witnesses also in directed_seam_sweep.py, directed_seam_round2.py, seam_location_check.py (same folder).",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_alpha_edge_moment_witness.py",
+      "kind": "python_cert",
+      "label": "vp_alpha_edge_moment_witness.py",
+      "path": "05_CERTS/vp_alpha_edge_moment_witness.py",
+      "exists": true
+    },
+    {
+      "id": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "kind": "claim",
+      "claim_id": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "type": "certificate",
+      "domain": "formal_core",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_07/01",
+      "section": "Fibonacci gap labeling: owner edge with saturation shadow and lab passports",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_fibonacci_gap_labeling_owner_edge.py",
+      "python_cert": [
+        "vp_fibonacci_gap_labeling_owner_edge.py"
+      ],
+      "status": "CERT-CLOSED",
+      "notes": "[2026-07 center-attack, step 3] Converts the EXTERNAL-GAP markers of D0-KTHEORY-001/D0-KTHEORY-GAP-MODULE-001 into a NAMED owner edge. External owners (cited, arXiv-verified): allowed labels = trace image of K0(C(Omega)xZ) in Z+Z phi^-1 — Bellissard-Bovier-Ghez Rev.Math.Phys 4 (1992) 1-37; SATURATION all gaps open every coupling — Damanik-Gorodetski-Yessen Invent.Math 206 (2016) 629-692 Thm 1.3 (arXiv:1403.7823); lab passports (integer predictions, zero coefficient freedom): Tanese PRL 112 146404 (2014) gap labels + log-periodic IDS verbatim; Baboux PRB 95 161114(R) (2017) labels as winding numbers. Cert proves the finite shadow: T=A^-1 EXACTLY (toral generator = inverse Fibonacci abelianization; NOT conjugate — claim ceiling), module closure via signed-Fibonacci pairs, Fricke-Vogt invariant preserved + = lambda^2/4 on the Hamiltonian embedding (symbolic), and REAL-SPECTRUM approximant saturation: F_16=987 periodic approximant at lambda=1 AND 4, top-25 widest gaps ALL carry small-|m| golden labels with |IDS-frac(m phi^-1)| <= 7.8e-6 (tol 2e-3); double control on the Pell/silver chain (577 sites): golden labels FAIL (7/15), silver labels 169/577 & 1-1/sqrt2 PASS 15/15 — the method detects THE module of the chain, not any module. ANTI-CONFLATION carried: two spectra on one hull (dynamical pure-point Z+Z alpha vs Schroedinger singular-continuous Cantor) — every spectral claim must declare which; no single spectral dimension (DGY strict chain); large-coupling constant is log(1+sqrt2) SILVER (built-in numerology control); Cantat attribution flag before any hyperbolicity quote. Hypothesis side internal: D0-PHI-CYLINDER-TRACE-UNIQUE-001 + DetectorSupportGoldenWeight.lean cylWeight_mem_gap_module — measure layer and label group share ONE rank-2 module. This cert is the retirement replacement for the fabricated-IDS placeholder flagged on D0-KTHEORY-001 (vp_gap_labeling_d0_tiling_hull.py, IDS=(idx+1)/30 float fit); actual retirement/re-pointing of ~10 references = follow-up. Cross-refs: D0-HULL-001, D0-DELONE-PHI-001, D0-PHASON-FORCING-001.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_fibonacci_gap_labeling_owner_edge.py",
+      "kind": "python_cert",
+      "label": "vp_fibonacci_gap_labeling_owner_edge.py",
+      "path": "05_CERTS/vp_fibonacci_gap_labeling_owner_edge.py",
+      "exists": true
+    },
+    {
+      "id": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+      "kind": "claim",
+      "claim_id": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/07",
+      "section": "condensed anchor: golden detector weight layer + finite-factorization theorem (00.4)",
+      "lean_module": "D0.CondensedAnchor.DetectorSupportGoldenWeight",
+      "lean_theorem": "inv_gold_closure;cylWeight_refine;level_one_mass;non_golden_control;cylWeight_return;cylWeight_direct;cylWeight_eq_pow;cylWeight_mem_gap_module;readout_factors_through_finite_level",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-07 center-attack, condensed import] Anchors the declared-but-unused condensed foundation: (1) detector closure p+p^2=1 as inv_gold_closure; (2) cylinder weight (true->phi^-1, false->phi^-2) with Kolmogorov consistency = EXACTLY the closure identity (cylWeight_refine); fair-coin negative control (non_golden_control); (3) phi-self-return clause at weight layer (cylWeight_return/direct); (4) GAP-MODULE SEAM: cylWeight w = (phi^-1)^weightExp w and every weight lies in Z+Z phi^-1 (cylWeight_mem_gap_module) — the measure layer and the label group of D0-KTHEORY-GAP-MODULE-001 share ONE rank-2 module (cross-ref, not duplicate: that row holds LABELS, this holds WEIGHTS); (5) the 00.4 finite-factorization subfunctor clause is a THEOREM: readout_factors_through_finite_level = wrapper over Mathlib Profinite.exists_locallyConstant (genuine Clausen-Scholze-stack reuse; instantiate at D0Continuum via D0.Foundation.ContinuumAsInverseLimit). 00.4 subfunctor scoreboard: finite-factorization=THEOREM (here), phi-self-return=owned (here), measure-consistency=closure (here), quadratic response=ALREADY OWNED (D0/Born.lean, D0/Core/BornQuadraticOrigin.lean — cross-ref only); remaining OPEN: single-section discipline, gate stationarity, archive/active separation. D0.All GREEN 2026-07-04 (4008 jobs) after parallel-session RoleHyperchargeReadout fix. Cross-refs: D0-GAP-LABELING-OWNER-EDGE-001, D0-PHI-CYLINDER-TRACE-UNIQUE-001.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.CondensedAnchor.DetectorSupportGoldenWeight",
+      "kind": "lean_module",
+      "label": "D0.CondensedAnchor.DetectorSupportGoldenWeight",
+      "path": "09_LEAN_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-TORUS-SHELL-ATTACHMENT-001",
+      "kind": "claim",
+      "claim_id": "D0-TORUS-SHELL-ATTACHMENT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_04/06",
+      "section": "torus shell attachment R2: TorusShell=Shell3, degree law 33-n, radial strict monotonicity",
+      "lean_module": "D0.Geometry.TorusShellAttachment",
+      "lean_theorem": "torusShellEquivShell3;torusShell_degree_law;torusShell_zoneSize_ladder;torusShell_radius_strictMono;torusShell_inner_unit",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-07 center-attack R2] Torus shell structure attached to the three-shell zone decomposition: TorusShell = Shell3 (explicit equivalence), zone degree law deg = 33 - n on sizes (9,11,13), size ladder +2, rational radius profile strictly monotone with unit inner shell. HONEST: this is the geometric attachment (existence + laws), NOT a derivation that physics roles must sit on these shells. D0.All GREEN 2026-07-04.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Geometry/TorusShellAttachment.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Geometry.TorusShellAttachment",
+      "kind": "lean_module",
+      "label": "D0.Geometry.TorusShellAttachment",
+      "path": "09_LEAN_FORMALIZATION/D0/Geometry/TorusShellAttachment.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-LEPTON-WITNESS-BRANCH-001",
+      "kind": "claim",
+      "claim_id": "D0-LEPTON-WITNESS-BRANCH-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_03/04",
+      "section": "lepton witness branch construction (W2): unique fixed point, 3 distinct orbits, order 12, branches=generations",
+      "lean_module": "D0.TasksCenterAttack.LeptonWitnessBranchConstruction",
+      "lean_theorem": "exists_unique_fixed_point;orbit_count_three;orbit_sizes_pairwise_distinct;order_exactly_twelve;numBranches_eq_numGenerations;exists_branch_gen_bijection",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-07 center-attack W2] Explicit sigmaHat on Fin 8: unique fixed point (the lepton witness omega0), exactly 3 orbits with pairwise-distinct sizes, order exactly 12 (pow12 holds, pow4/pow6 fail), numBranches = numGenerations = 3 with explicit bijection. HONEST: witness construction for the matter-sector minimal contract (X5={S1,S2,S3} selections stay the contract; branch<->generation is a witness bijection, not a derived necessity). D0.All GREEN 2026-07-04.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/TasksCenterAttack/LeptonWitnessBranchConstruction.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.TasksCenterAttack.LeptonWitnessBranchConstruction",
+      "kind": "lean_module",
+      "label": "D0.TasksCenterAttack.LeptonWitnessBranchConstruction",
+      "path": "09_LEAN_FORMALIZATION/D0/TasksCenterAttack/LeptonWitnessBranchConstruction.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-GATE-STATIONARITY-OWNER-001",
+      "kind": "claim",
+      "claim_id": "D0-GATE-STATIONARITY-OWNER-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/06",
+      "section": "00.4 gate-stationarity clause: shift-commuting readouts are orbit-stationary (orphan module adopted) + full 00.4 subfunctor scoreboard",
+      "lean_module": "D0.Topology.ArchiveShiftTopology",
+      "lean_theorem": "abstract_shift_commute_implies_diagonal_constant;commute_with_shift_step;shift_matrix_mul_left;shift_matrix_mul_right",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-07 center-attack, reuse-first completion] ADOPTS THE ORPHAN: D0.Topology.ArchiveShiftTopology was LEAN_PROVED but had NO registry row; its content IS the 00.4 gate-stationarity clause in finite form — any readout matrix commuting with the gate (shiftMatrix of the archive shift) has orbit-constant diagonal (abstract_shift_commute_implies_diagonal_constant; single-orbit hypothesis explicit). FULL 00.4 SUBFUNCTOR SCOREBOARD (all seven clauses, named owners, zero new proofs written — pure cross-reference closure): (1) finite factorization = THEOREM readout_factors_through_finite_level [D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001]; (2) phi self-return = cylWeight_return/cylWeight_direct [same row]; (3) measure/refinement consistency = cylWeight_refine = the closure identity [same row]; (4) quadratic response = D0.Born + D0.Core.BornQuadraticOrigin [pre-existing owners, found by preflight]; (5) single-section discipline = D0.Bridge.SICalibrationClosure (calibration_changes_only_action_scaling; h0_gn_lambda_are_not_core_observables; plus the no-external-units theorem) [row: the SICalibrationClosure bridge claim] + Lambda_act=38 (Book 03/04) + single-section shadows [D0-GRAV-002]; (6) gate stationarity = THIS ROW; (7) archive/active separation = scene layer OWNED: DarkArchiveTransfer module, rank-3-active/nullity-30-archive partition of 33 + EM-dark/metric-active typing [row: the internal-transfer-composition claim owning that module]; the HISTORY-layer statement (BOOK_06 admissibility: every evolution step preserves the separation) is NOT Lean-owned — the single remaining open sliver of 00.4, named here as a PROOF-TARGET. Falsification-hooks clause = per-row hook discipline (each owner row carries its own). Entry contract 00.4 is hereby scoreboard-complete: six clauses owned, one named sliver open.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Topology.ArchiveShiftTopology",
+      "kind": "lean_module",
+      "label": "D0.Topology.ArchiveShiftTopology",
+      "path": "09_LEAN_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_06",
+      "section": "06.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_sturmian_refinement_discharge_nogo.py",
+      "python_cert": [
+        "vp_sturmian_refinement_discharge_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[2026-07 PR-review fix: registered, was missing a row despite being asserted as a NO-GO in 01_BOOKS/BOOK_06.../0007__06.6__....md Iter25 and backed by a passing cert.] Why the CONDITIONAL-EXTENSION of D0-STURMIAN-REFINEMENT (parent row, stays PROOF-TARGET) cannot be discharged internally, for two independent reasons: (i) FIELD DISJOINTNESS (load-bearing) - the golden tower lives in Q(sqrt5)=Q(phi), but the archive/window scale 359/160 (roots of 160*lambda^2-480*lambda+359, disc 640=64*10) lives in Q(sqrt10); since sqrt10 not in Q(sqrt5), no canonical intertwiner ties a Q(sqrt5) carrier to a Q(sqrt10) carrier (same structural reason the neighbouring phason-WZ transfer closed NO-GO); explained by D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001 (sqrt10 is the size-fingerprint of 9,11,13, not a golden near-miss). (ii) ORIENTATION - the centre-11 convergence forces T=[[0,1],[1,-1]] (trace -1, orientation-reversed), the Sturmian tower uses orientation-preserving S=[[1,1],[1,0]] (trace +1); trace is a conjugacy invariant so S is not conjugate to T (scene pins T~-S), periodic-point offset [0,2,0,2,...]. Golden back-fit rejected: phi^k=359/160 gives k=1.679 non-integer. HONEST: an external owner could POSTULATE PRIM-STURMIAN-REFINEMENT-OWNER as a passport; that stays a named external choice, not an internal discharge. Cert vp_sturmian_refinement_discharge_nogo.py, 6/6 PASS incl. wrong-object control.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_sturmian_refinement_discharge_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_sturmian_refinement_discharge_nogo.py",
+      "path": "05_CERTS/vp_sturmian_refinement_discharge_nogo.py",
       "exists": true
     }
   ],
@@ -19432,12 +19968,12 @@
     },
     {
       "source": "D0-CVFT-F6",
-      "target": "domain:frontier",
+      "target": "domain:gauge_bridge",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-CVFT-F6",
-      "target": "module:",
+      "target": "module:D0.VNext2.GaugeBoundaryCommutator",
       "kind": "implemented_in"
     },
     {
@@ -19902,13 +20438,18 @@
     },
     {
       "source": "D0-SPECTRAL-EINSTEIN-001",
-      "target": "domain:frontier",
+      "target": "domain:spectral_action",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-SPECTRAL-EINSTEIN-001",
-      "target": "module:",
+      "target": "module:D0.VNext2.SpectralEinsteinResponse",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SPECTRAL-EINSTEIN-001",
+      "target": "cert:vp_spectral_einstein_response.py",
+      "kind": "certified_by"
     },
     {
       "source": "D0-NOAXION-001",
@@ -20092,7 +20633,7 @@
     },
     {
       "source": "D0-EW-002",
-      "target": "module:",
+      "target": "module:D0.VNext2.HiggsAnchorProjector",
       "kind": "implemented_in"
     },
     {
@@ -20417,7 +20958,7 @@
     },
     {
       "source": "D0-MIXING-HIERARCHY-INVERSION-001",
-      "target": "domain:formal_core",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
@@ -21142,7 +21683,7 @@
     },
     {
       "source": "D0-WINDOW44-TOTIENT-M1-001",
-      "target": "module:",
+      "target": "module:D0.VNext2.Window44Totient",
       "kind": "implemented_in"
     },
     {
@@ -21237,7 +21778,7 @@
     },
     {
       "source": "D0-RANK3-METRIC-TRANSPORT-001",
-      "target": "module:",
+      "target": "module:D0.VNext2.Rank3MetricSignature",
       "kind": "implemented_in"
     },
     {
@@ -21597,7 +22138,7 @@
     },
     {
       "source": "D0-PMNS-SEAM-TOPOLOGY-001",
-      "target": "domain:formal_core",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
@@ -21957,7 +22498,7 @@
     },
     {
       "source": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
-      "target": "module:",
+      "target": "module:D0.VNext2.PhasonWZSequence",
       "kind": "implemented_in"
     },
     {
@@ -22117,17 +22658,17 @@
     },
     {
       "source": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
-      "target": "domain:frontier",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
-      "target": "module:",
+      "target": "module:D0.VNext2.AdlerWeissInternalMarkov",
       "kind": "implemented_in"
     },
     {
       "source": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
-      "target": "cert:vp_adler_weiss_internal_construction.py",
+      "target": "cert:vp_adler_weiss_internal_markov.py",
       "kind": "certified_by"
     },
     {
@@ -23752,7 +24293,7 @@
     },
     {
       "source": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
-      "target": "domain:frontier",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
@@ -23762,7 +24303,7 @@
     },
     {
       "source": "D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001",
-      "target": "cert:vp_vnext_canonical_anchor_feshbach_compression.py",
+      "target": "cert:vp_vnext_scene_feshbach_compression_owner.py",
       "kind": "certified_by"
     },
     {
@@ -24647,17 +25188,17 @@
     },
     {
       "source": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "target": "domain:frontier",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "target": "module:D0.Extensions.LeptonBranchSelectorConstruction",
+      "target": "module:D0.Extensions.LeptonBranchFixingNoGo",
       "kind": "implemented_in"
     },
     {
       "source": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "target": "cert:vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "target": "cert:vp_lepton_branch_fixing_operator_nogo.py",
       "kind": "certified_by"
     },
     {
@@ -25134,6 +25675,211 @@
       "source": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
       "target": "module:D0.ParallelClosure.CrossGate",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001",
+      "target": "cert:vp_colour_generation_typed_carrier_nogo.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+      "target": "module:D0.Spectral.SeamTransportLinear",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+      "target": "cert:vp_alpha_holonomy_linear_form.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SCENE-TRIPLE-UNIQUE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SCENE-TRIPLE-UNIQUE-001",
+      "target": "module:D0.VNext2.SceneTripleUnique",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SCENE-TRIPLE-UNIQUE-001",
+      "target": "cert:vp_scene_triple_unique.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001",
+      "target": "module:D0.VNext2.Rank3CubicSymmetricFunctions",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001",
+      "target": "cert:vp_rank3_cubic_symmetric_functions.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-XI-OPERATOR-FAMILY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-XI-OPERATOR-FAMILY-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-XI-OPERATOR-FAMILY-001",
+      "target": "cert:vp_xi_operator_family.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "target": "cert:vp_scene_bartholdi_typed.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-Q8-HOLOMORPH-MODULE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-Q8-HOLOMORPH-MODULE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-Q8-HOLOMORPH-MODULE-001",
+      "target": "cert:vp_q8_holomorph_module.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-SEAM-LOCATION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-SEAM-LOCATION-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-SEAM-LOCATION-001",
+      "target": "cert:vp_alpha_seam_location.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+      "target": "cert:vp_alpha_edge_moment_witness.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "target": "cert:vp_fibonacci_gap_labeling_owner_edge.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+      "target": "module:D0.CondensedAnchor.DetectorSupportGoldenWeight",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-TORUS-SHELL-ATTACHMENT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TORUS-SHELL-ATTACHMENT-001",
+      "target": "module:D0.Geometry.TorusShellAttachment",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LEPTON-WITNESS-BRANCH-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LEPTON-WITNESS-BRANCH-001",
+      "target": "module:D0.TasksCenterAttack.LeptonWitnessBranchConstruction",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-GATE-STATIONARITY-OWNER-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-GATE-STATIONARITY-OWNER-001",
+      "target": "module:D0.Topology.ArchiveShiftTopology",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "target": "cert:vp_sturmian_refinement_discharge_nogo.py",
+      "kind": "certified_by"
     }
   ]
 }

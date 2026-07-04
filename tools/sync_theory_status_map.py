@@ -326,7 +326,9 @@ def write_status_csv(claims: list[dict[str, str]]) -> None:
         "notes",
     ]
     with out.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        # .gitattributes normalizes *.csv to LF; csv's default lineterminator is "\r\n",
+        # which a fresh checkout (no stat-cache to mask it, e.g. CI) then sees as dirty.
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for row in claims:
             certs = split_values(row["python_cert"])

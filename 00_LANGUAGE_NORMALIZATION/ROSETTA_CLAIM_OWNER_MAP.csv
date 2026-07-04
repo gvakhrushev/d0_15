@@ -281,7 +281,7 @@ D0-SEAM-HOLONOMY-001,seam holonomy,CORE-FORMALIZED,D0.Spectral.SeamHolonomy,vp_s
 D0-ALPHA-HOLONOMY-002,alpha holonomy 002,CERT-CLOSED,,vp_seam_holonomy_alpha.py
 D0-PI0-DISCRETE-ANGLE-001,pi0 discrete angle,CORE-FORMALIZED,D0.Geometry.Pi0DiscreteAngle,vp_pi0_discrete_angle.py
 D0-Q8-SIN-CHANNEL-001,q8 sin channel,CORE-FORMALIZED,D0.Spectral.SeamHolonomy,vp_q8_sin_channel.py
-D0-PMNS-SEAM-TOPOLOGY-001,pmns seam topology,CORE-FORMALIZED,D0.Matter.PMNSSeamTopology,vp_pmns_seam_topology.py
+D0-PMNS-SEAM-TOPOLOGY-001,pmns seam topology,EMPIRICAL-PASSPORT,D0.Matter.PMNSSeamTopology,vp_pmns_seam_topology.py
 D0-PMNS-DELTACP-PI0-001,pmns deltacp pi0,PROOF-TARGET,,
 D0-XI5-CROSS-SECTOR-001,xi5 cross sector,CORE-FORMALIZED,D0.Claims.Xi5TorusDefect,vp_xi5_cross_sector.py
 D0-ALPHA-MEASUREMENT-LIMIT-001,alpha measurement limit,EMPIRICAL-PASSPORT,,vp_alpha_measurement_limit.py
@@ -316,7 +316,7 @@ D0-LEPTON-STURMIAN-PUISEUX-COEFFICIENTS-001,lepton sturmian puiseux coefficients
 D0-LEPTON-PUISEUX-DECIMAL-SECTION-001,lepton puiseux decimal section,PROOF-TARGET,,vp_lepton_puiseux_decimal_section.py
 D0-LUCAS-VORONOI-MARKOV-PARTITION-001,lucas voronoi markov partition,CERT-CLOSED,D0.Geometry.LucasVoronoiMarkovPartition,vp_lucas_voronoi_markov_partition.py
 D0-TORAL-TIME-MARKOV-CONJUGACY-001,toral time markov conjugacy,PROOF-TARGET,D0.Geometry.LucasVoronoiMarkovPartition,vp_toral_time_markov_conjugacy.py
-D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001,adler weiss internal construction,PROOF-TARGET,,vp_adler_weiss_internal_construction.py
+D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001,adler weiss internal construction,CERT-CLOSED,D0.VNext2.AdlerWeissInternalMarkov,vp_adler_weiss_internal_markov.py
 D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001,phason wde sign normalization owner,CERT-CLOSED,D0.Cosmology.PhasonWDESignNormalization,vp_phason_wde_sign_normalization_owner.py
 D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001,phason wz logdet window owner,PROOF-TARGET,,vp_phason_wz_logdet_window_owner.py
 D0-PHASON-WZ-CPL-PASSPORT-001,phason wz cpl passport,PASSPORT-CLOSED,,vp_phason_wz_cpl_passport.py

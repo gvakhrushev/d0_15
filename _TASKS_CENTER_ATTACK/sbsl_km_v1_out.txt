@@ -1,0 +1,10 @@
+# KM collapse pilot: R0=4.5um, f1=26.5kHz, p1=1.25p0; entropy over 36 phase bins (1=uniform)
+## control: single-tone (phase vs tone 1 - expect locked, few bins)
+  single-tone: n_collapses=200, R_min=0.111 R0, ent=0.306, bins=3
+## two-tone p2=0.25 p0, phase vs tone 2
+  3/2          rho=1.500000: n=190, R_min=0.255, ent=0.401, bins=6
+  8/5          rho=1.600000: n=160, R_min=0.101, ent=0.712, bins=14
+  13/8         rho=1.625000: n=150, R_min=0.123, ent=0.729, bins=18
+  PHI          rho=1.618034: n=154, R_min=0.108, ent=0.888, bins=31
+  sqrt2        rho=1.414214: n=149, R_min=0.209, ent=0.884, bins=30
+  generic 1.55 rho=1.550000: n=151, R_min=0.066, ent=0.842, bins=26

@@ -1,0 +1,12 @@
+{
+  "dataset": "GWOSC allevents (GWTC compact-binary catalog)",
+  "source": "gwosc.org/eventapi/json/allevents/",
+  "fetched_utc": "2026-07-02",
+  "fetch": "curl gwosc.org/eventapi/json/allevents/",
+  "files": {
+    "allevents.json": {
+      "sha256": "731f167b5545db5b3b4345994fde52730e260bb1112a739051be7f884fca7969",
+      "bytes": 1267691
+    }
+  }
+}

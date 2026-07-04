@@ -1,0 +1,5 @@
+# check_book_ledger_sync — verified-benign suppressions
+# Format: claim_id | section_substring | reason (each verified by human/agent read)
+# A suppression means: the detector flags this as an over-claim, but full-context reading
+# confirms the closure word attaches to an ADJACENT claim, not this one. Auditable on purpose.
+D0-CMB-IDS-SMOOTHING-OWNER-001 | 0039__08.v15 | 'PROVEN' attaches to the adjacent NO-GO (tilt is non-constant); this claim itself is labeled 'Named open links (PROOF-TARGET)' + 'the exact missing artifact' — verified 2026-07 sync audit

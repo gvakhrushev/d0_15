@@ -879,23 +879,25 @@ while
 9\quad\text{belongs to construction of the finite incidence graph}.
 \]
 
-The scene is selected by a finite variational obligation, not by a fitted polynomial. The scene functional is
+The scene is a **compact restatement** of values that are forced upstream; the functional below is a consistency encoding, **not** an independent variational derivation. The scene functional is
 
 \[
 J_{scene}=(\Omega-8)^2+(n_1-\Omega-1)^2+(n_2-n_1-2)^2+(n_3-n_2-2)^2+J_{coup}.
 \]
 
-The admissible order constraint is
+with admissible order constraint
 
 \[
-0<\Omega<n_1<n_2<n_3.
+0<\Omega<n_1<n_2<n_3,
 \]
 
-The minimum is
+whose unique zero is
 
 \[
 (\Omega,n_1,n_2,n_3)=(8,9,11,13).
 \]
+
+**Honest scope (do not read `J_{scene}` as a forcing).** Each squared term has its target as its own additive constant, so the minimum is the zero *by construction*: `J_{scene}` cannot force the scene, it only re-expresses an answer that is fixed elsewhere. The actual forcings of the four numbers are owned upstream and must be cited as the source: `Ω=8` is the signed terminal cycle `Ω_8≅Q_8` (§01.7); the `+1` is the graph-birth basepoint marker `V_9=Ω_8+ω_0` (this section); the two `+2` capacity steps to `11` and `13` are owned by the capacity ladder (§01.20) and the return-window argument (§01.22). Read as a derivation, `J_{scene}` would be circular (its constants `{8,1,2,2}` *are* the outputs of those forcings); it is retained only as a mnemonic checksum. This matches the status warning on `D0-SCENE-002` ("do not read `J_scene` as a fitted polynomial for later constants").
 
 Hence
 
@@ -1494,6 +1496,10 @@ golden foliation of the time torus T (time, seen dynamically)
 Carrier (the quasicrystal) and time (the toral automorphism) are **one object, seen spatially versus dynamically**. The branch foliation that the detector reads as visible spatial arms is the same foliation whose return map the time operator iterates. Status: **CORE-FORCING / THE** [^b01-40].
 
 The same `φ⁻²` rotation is also the address-defect of the memory torus on its own return: for odd `n`, `φⁿ=Lₙ+φ⁻ⁿ`, and at `n=5` this reads `φ⁵=11+φ⁻⁵`, i.e. the torus address `|V_{11}|=11` plus its integrality defect `ξ₅=φ⁻⁵`, with `Tr(T⁵)=−L₅=−11` landing the fifth time-return exactly on the torus address [^b01-41]. This is why the slice that unfolds space and the operator that advances time share the golden slope: they are the spatial and temporal faces of the same return.
+
+**[Iter25 — the centre is forced, and now certified (`D0-SCENE-CENTER-SPACETIME-CONVERGENCE-001`, Lean `D0.VNext2.SceneCenterSpacetimeConvergence`, cert `vp_scene_center_spacetime_convergence.py`).** The coincidence above is upgraded from a remark to a forced two-channel convergence. Five quantities land on `11`: the spatial capacity `|V₁₁|`, the Lucas `L₅`, `round(φ⁵)`, the temporal return `|Tr(T⁵)|`, and `|det(T⁵−I)| = #Fix₅`. The two channels are independent — `T = [[0,1],[1,-1]]` is the time operator (pinned as the *orientation-twisted* golden companion, `trace = −1`, `det = −1`, distinct from the plain Fibonacci matrix `M_φ = [[0,1],[1,1]]` with `trace = +1`), while `|V₁₁|` is a spatial capacity count — so their agreement is not circular. The centre is *forced* as the unique intersection `{Lucas returns Lₙ} ∩ [9,13] = {11}` (`L₃ = 4` too small, `L₇ = 29` too large), at the forced level `5` (the smallest odd return with `Lₙ > Ω₈ = 8`, and the `L5 = Access` closure of the maturity levels). Since the `±2` half-width is the already-owned orientation step, the whole triple `{9,11,13} = {L₅−2, L₅, L₅+2}` has *both* centre and width forced — zero free integers. This does not re-derive `|V₉|, |V₁₃|` (owned separately); it certifies *why the centre is 11*, in the same multi-channel forcing style as the four channels to `rank = 3`.
+
+**The uniqueness capstone (`D0-SCENE-TRIPLE-UNIQUE-001`, Lean `D0.VNext2.SceneTripleUnique.scene_triple_unique`, cert `vp_scene_triple_unique.py`).** The four forcing legs above — exactly three zones (`CarrierForcing.admissible_unique`), the `+2` address ladder (`address_ladder`), the centre `L₅ = 11`, and the odd-return parity — were, until now, *distinct* theorems a reader had to compose by hand. The capstone states and proves the composition as a *single* statement: **any** triple `(z₀,z₁,z₂)` that is a `+2` ladder whose centre `z₁` is a Lucas number in the window `[9,13]` is *uniquely* `(9,11,13)`. Its genuinely new content is the **Lucas-window uniqueness lemma** (`unique_lucas_in_window`): among *all* Lucas numbers, only `L₅ = 11` lies in `[9,13]` — `L₄ = 7 < 9`, `L₆ = 18 > 13`, and `Lₙ` is monotone so every higher return exceeds `13`. The theorem is proved non-vacuous (`scene_triple_realized`: the real scene at level `n = 5` satisfies every hypothesis), `rc = 0`, `0 sorry`. This is the theory's root-selection statement in one line: the scene is not chosen, it is the unique fixed point of its own admissibility window.
 
 ### 01.19a.3 Declared gap
 

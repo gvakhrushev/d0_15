@@ -2,7 +2,7 @@
 
 **Finite verification theory of a condensed φ-quasicrystalline vacuum.**
 
-Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** · 523 registered claims · Lean 4 (mathlib) + deterministic Python certificates · all integrity gates green.
+Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** · 538 registered claims · Lean 4 (mathlib) + deterministic Python certificates · all integrity gates green.
 
 D0 treats *finite detector readout* over a condensed/profinite information-quasicrystalline support as the primitive object — not a smooth continuum, particle fields, or a string vacuum. Observable physics (matter spectrum, gauge interactions, mesons, baryons, neutrinos, cosmology, gravity limits) arises as defects, holonomies, domain walls, gap labels, and capacity saturations of that support.
 
@@ -15,19 +15,21 @@ D0 treats *finite detector readout* over a condensed/profinite information-quasi
 
 ## Status at a glance
 
-523 registered claims ([full registry](09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv) · [theory status map](03_THEORY_MAP/theory_status_map.csv) · [scoreboard](03_THEORY_MAP/SCOREBOARD.md)):
+538 registered claims ([full registry](09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv) · [theory status map](03_THEORY_MAP/theory_status_map.csv) · [scoreboard](03_THEORY_MAP/SCOREBOARD.md)):
 
 | Closure type | Count | Meaning |
 |---|---:|---|
-| `CORE-FORMALIZED` | 174 | present-core Lean theorem (the canonical results) |
-| `CERT-CLOSED` | 162 | complete finite executable certificate |
-| `NO-GO` / `NO_GO_PROVED` | 70 / 8 | proven impossibility within a declared admissible class |
-| `BRIDGE-ASSUMPTIONS-EXPLICIT` / `CORE_BRIDGE_SPLIT` | 25 / 6 | result holds modulo a named, explicit external bridge |
-| `PASSPORT-CLOSED` / `EMPIRICAL-PASSPORT` | 20 / 7 | comparison against frozen external data (PDG/DESI/CMB/LIGO/…) |
-| `PROOF-TARGET` | 45 | open: a named missing primitive or external datum |
+| `CORE-FORMALIZED` | 184 | present-core Lean theorem (the canonical results) |
+| `CERT-CLOSED` | 166 | complete finite executable certificate |
+| `NO-GO` / `NO_GO_PROVED` | 74 / 8 | proven impossibility within a declared admissible class |
+| `BRIDGE-ASSUMPTIONS-EXPLICIT` / `CORE_BRIDGE_SPLIT` | 25 / 7 | result holds modulo a named, explicit external bridge |
+| `PASSPORT-CLOSED` / `EMPIRICAL-PASSPORT` | 20 / 8 | comparison against frozen external data (PDG/DESI/CMB/LIGO/…) |
+| `PROOF-TARGET` | 40 | open: a named missing primitive or external datum |
 | `BRIDGE-CALIBRATION` · `EXTERNAL-BACKGROUND` · `DEPRECATED` | 3 · 1 · 2 | calibration edges / external context / retired |
 
 **D0 is not "complete physics."** Every physical reading remains gated by an explicitly named missing primitive, a no-go, or an external passport — by design. The value is a precise, machine-checked statement of what this finite structure *does* and *does not* determine.
+
+**Real-data honesty (external-data review).** Confronted with downloaded data ([scoreboard](08_PASSPORTS/_EXTERNAL_DATA_REVIEW/tests/SCOREBOARD.md)): single-number/bridge matches hold (sin²θ_W on-shell 0.23σ, `m_s/m_d=20`, `m_μ/m_e` integer 206, Coldea `φ`, `α⁻¹` leading term, the PDG seam-`α` falsifier); DESI DR2 confirms *evolving* dark energy but **not** the specific thawing corner (an over-read, corrected); the PMNS `δ₀`-family and the LIGO `φ⁻¹` mass-defect are **post-hoc passport fits, not discriminating** (demoted); and the SPARC phason-halo dark-matter kernel is an honest **negative** (rejected in 91% of galaxies). There is no sharp multi-point discriminating confirmation — stated plainly rather than dressed up.
 
 ## Repository layout
 
@@ -40,7 +42,7 @@ D0 treats *finite detector readout* over a condensed/profinite information-quasi
 | [`04_VERIFICATION/`](04_VERIFICATION/) | closure protocol, blocker tables, claim-owner normalization, inflation audit |
 | [`05_CERTS/`](05_CERTS/) | Python verification scripts (`vp_*.py`) + runners that produce finite certificates |
 | [`06_AUDIT/`](06_AUDIT/) | corpus peer/self review + standard-language audit trail |
-| [`08_PASSPORTS/`](08_PASSPORTS/) | curated external data (PDG, BAO/DESI, CMB, LIGO, IceCube, SPARC, CKM…) + manifests |
+| [`08_PASSPORTS/`](08_PASSPORTS/) | curated external data (PDG, BAO/DESI, CMB, LIGO, IceCube, SPARC, CKM…) + manifests; [`_EXTERNAL_DATA_REVIEW/`](08_PASSPORTS/_EXTERNAL_DATA_REVIEW/) holds the git-safe real-data test flow (SHA256 manifests + fetch scripts committed, raw data gitignored) and the honest [scoreboard](08_PASSPORTS/_EXTERNAL_DATA_REVIEW/tests/SCOREBOARD.md) |
 | [`09_LEAN_FORMALIZATION/`](09_LEAN_FORMALIZATION/) | the Lean 4 package (mathlib-backed); core theorems under `D0/` — see [its README](09_LEAN_FORMALIZATION/README.md) |
 | [`tools/`](tools/) | gate scripts, registry sync, scoreboard, and the vendored graphify knowledge-graph tool |
 | [`docs/`](docs/) | internal roadmaps and developer notes |
@@ -58,6 +60,9 @@ Rules of record: [`D0_CLAIM_CLOSURE_CONTRACT.md`](D0_CLAIM_CLOSURE_CONTRACT.md) 
 ## Getting started (after clone)
 
 ```bash
+# 0. Python dependencies for the certs/tools (numpy, sympy, pandas)
+pip install -r requirements.txt
+
 # 1. Lean (from repo root) — heavy build artifacts are kept outside the repo
 ./tools/lean_dev.ps1 update
 ./tools/lean_dev.ps1 exe cache get        # optional accelerator
