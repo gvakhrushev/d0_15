@@ -2,7 +2,7 @@
 
 **Finite verification theory of a condensed φ-quasicrystalline vacuum.**
 
-Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** · 524 registered claims · Lean 4 (mathlib) + deterministic Python certificates · all integrity gates green.
+Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** · 537 registered claims · Lean 4 (mathlib) + deterministic Python certificates · all integrity gates green.
 
 D0 treats *finite detector readout* over a condensed/profinite information-quasicrystalline support as the primitive object — not a smooth continuum, particle fields, or a string vacuum. Observable physics (matter spectrum, gauge interactions, mesons, baryons, neutrinos, cosmology, gravity limits) arises as defects, holonomies, domain walls, gap labels, and capacity saturations of that support.
 
@@ -15,16 +15,16 @@ D0 treats *finite detector readout* over a condensed/profinite information-quasi
 
 ## Status at a glance
 
-524 registered claims ([full registry](09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv) · [theory status map](03_THEORY_MAP/theory_status_map.csv) · [scoreboard](03_THEORY_MAP/SCOREBOARD.md)):
+537 registered claims ([full registry](09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv) · [theory status map](03_THEORY_MAP/theory_status_map.csv) · [scoreboard](03_THEORY_MAP/SCOREBOARD.md)):
 
 | Closure type | Count | Meaning |
 |---|---:|---|
-| `CORE-FORMALIZED` | 173 | present-core Lean theorem (the canonical results) |
-| `CERT-CLOSED` | 162 | complete finite executable certificate |
-| `NO-GO` / `NO_GO_PROVED` | 71 / 8 | proven impossibility within a declared admissible class |
-| `BRIDGE-ASSUMPTIONS-EXPLICIT` / `CORE_BRIDGE_SPLIT` | 25 / 6 | result holds modulo a named, explicit external bridge |
+| `CORE-FORMALIZED` | 184 | present-core Lean theorem (the canonical results) |
+| `CERT-CLOSED` | 166 | complete finite executable certificate |
+| `NO-GO` / `NO_GO_PROVED` | 72 / 8 | proven impossibility within a declared admissible class |
+| `BRIDGE-ASSUMPTIONS-EXPLICIT` / `CORE_BRIDGE_SPLIT` | 25 / 7 | result holds modulo a named, explicit external bridge |
 | `PASSPORT-CLOSED` / `EMPIRICAL-PASSPORT` | 20 / 8 | comparison against frozen external data (PDG/DESI/CMB/LIGO/…) |
-| `PROOF-TARGET` | 45 | open: a named missing primitive or external datum |
+| `PROOF-TARGET` | 41 | open: a named missing primitive or external datum |
 | `BRIDGE-CALIBRATION` · `EXTERNAL-BACKGROUND` · `DEPRECATED` | 3 · 1 · 2 | calibration edges / external context / retired |
 
 **D0 is not "complete physics."** Every physical reading remains gated by an explicitly named missing primitive, a no-go, or an external passport — by design. The value is a precise, machine-checked statement of what this finite structure *does* and *does not* determine.
@@ -60,6 +60,9 @@ Rules of record: [`D0_CLAIM_CLOSURE_CONTRACT.md`](D0_CLAIM_CLOSURE_CONTRACT.md) 
 ## Getting started (after clone)
 
 ```bash
+# 0. Python dependencies for the certs/tools (numpy, sympy, pandas)
+pip install -r requirements.txt
+
 # 1. Lean (from repo root) — heavy build artifacts are kept outside the repo
 ./tools/lean_dev.ps1 update
 ./tools/lean_dev.ps1 exe cache get        # optional accelerator
