@@ -9,7 +9,8 @@ sum-zero vectors, structure 8+10+12, archive fingerprint {24x8, 22x10, 20x12} = 
        vertex level: the seam's operator home must be a carrier extension (the 359-edge space,
        where the V11-Fock capacity 2^11 is native).
 Negative control: a single-edge operator (outside the algebra) produces a nonzero seam.
-Exit 1 on failure."""
+Exit 1 on failure.
+"""
 import numpy as np, sys, itertools
 
 zones = [9,11,13]; n = 33

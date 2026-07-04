@@ -9,7 +9,8 @@ Claims verified EXACTLY (integer arithmetic):
       eigenvalues +-(t-1): the Bartholdi prefactor (1-(1-t)^2 u^2)^(|E|-|V|) is the kernel action
   (6) rank Phi = 2|V| - 1 = 65 (connected non-bipartite), dim ker Phi = 653
 Negative control: a corrupted flip J' breaks (2).
-Exit 1 on any failure."""
+Exit 1 on any failure.
+"""
 import numpy as np, sys
 
 zones = [9,11,13]; n = 33

@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: install cert dependencies (numpy/sympy/pandas)
+        run: pip install -r requirements.txt
+
       - name: validate canonical registry
         run: python tools/validate_csv.py
 

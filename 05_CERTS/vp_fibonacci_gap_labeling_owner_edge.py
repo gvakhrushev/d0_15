@@ -70,7 +70,8 @@ def sub_word(rules, n_target, w="a"):
 def dominant_gap_labels(word, lam, slope_num, slope_den, alpha, mmax=34, top_k=25, tol_states=2):
     """Periodic tridiagonal H over the word; label the top_k WIDEST gaps (threshold-free rank
     selection — at large coupling a spacing threshold sweeps in arbitrarily deep gaps whose
-    legitimate labels exceed any fixed |m| bound; the labeled PREDICTION is wide gap <-> small m)."""
+    legitimate labels exceed any fixed |m| bound; the labeled PREDICTION is wide gap <-> small m).
+    """
     N = len(word)
     v = np.array([lam if c == 'b' else 0.0 for c in word])
     H = np.diag(v) + np.diag(np.ones(N-1), 1) + np.diag(np.ones(N-1), -1)

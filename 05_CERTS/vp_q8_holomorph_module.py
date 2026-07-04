@@ -2,7 +2,8 @@
 """W8 Charge B verification: the holomorph pair (L_i, alpha=(ijk)) on C[Q8] carries BOTH
 the (1,4,3) Fourier isotypes AND the (4,3) terminal return cycles, with E0 the common
 fixed block. Exact rational arithmetic; exits 1 on any failure.
-Basis order {1,i,j,k,-1,-i,-j,-k} matching D0/UnifiedFiniteCore/Q8Terminal.lean."""
+Basis order {1,i,j,k,-1,-i,-j,-k} matching D0/UnifiedFiniteCore/Q8Terminal.lean.
+"""
 from fractions import Fraction
 import sys
 

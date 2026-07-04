@@ -22,10 +22,9 @@
     "lean_status": {
       "LEAN_PROVED": 362,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 28,
-      "PYTHON_CERTIFIED": 107,
+      "PYTHON_CERTIFIED": 108,
       "DEPRECATED": 2,
-      "OPEN": 37,
-      "": 1
+      "OPEN": 37
     },
     "claim_type": {
       "core": 187,
@@ -18013,7 +18012,7 @@
       "section": "Fibonacci gap labeling: owner edge with saturation shadow and lab passports",
       "lean_module": "",
       "lean_theorem": "",
-      "lean_status": "",
+      "lean_status": "PYTHON_CERTIFIED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
       "cert": "vp_fibonacci_gap_labeling_owner_edge.py",
