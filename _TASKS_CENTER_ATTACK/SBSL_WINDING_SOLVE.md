@@ -169,8 +169,21 @@ The pilot's "at the uniform ceiling" phrasing at n≈150 is hereby corrected: th
 is DENSITY vs DISCRETENESS (0.92 vs 0.45 at matched n), not exact equidistribution.
 Honest caveats carried: (i) at rational ρ the drive is qT₁-periodic, so finite phase sets are
 partly kinematic — the physics content is that the response IS phase-locked there (it could
-have been chaotic) while at φ it never discretizes; (ii) resolved by v2 as above; (iii) pilot
-grid only — no width/robustness scan yet; also at φ only ~499 qualifying main collapses arise
+have been chaotic) while at φ it never discretizes; (ii) resolved by v2 as above; (iii)
+width scan done in v3 below; also at φ only ~499 qualifying main collapses arise
 in 650 periods (collapse census varies with ρ — recorded, not interpreted); (iv) P-SBSL-1
 remains FROZEN: this is theory-side; the pre-registration's test order (theory → experiment)
 proceeds as stated.
+
+### v3: the discretization window is needle-thin — and that DESIGNS the experiment
+(`sbsl_km_v3_out.txt`) Entropy vs offset from 3/2: exact point 0.4295 (discrete); at
+|δρ| = 1e-3 already 0.82–0.88 (dense); at |δρ| ≥ 3e-3 fully at the dense background
+0.87–0.90 = φ's own level (0.8891 reproduced). **Full window width ≤ 2e-3, conservatively.**
+Consequence for the pre-registered experiment: a drive-ratio SCAN cannot find the rational
+windows — but it does not need to. Two-tone drives are synthesized digitally, and a
+synthesizer locks a ratio EXACTLY; the discriminating experiment is therefore a TWO-POINT
+comparison: exactly-locked ρ = 3/2 (discrete flash phases, entropy ~0.43) vs golden-tuned ρ
+(dense, ~0.89) — a factor-2 entropy contrast, resolvable with ~300 collapses ≈ 11 ms of data
+at 26.5 kHz. The needle-thinness turns from an obstacle into the design: any real
+synthesizer detuning from 3/2 larger than ~1e-3 destroys the discreteness, giving a built-in
+negative control knob.

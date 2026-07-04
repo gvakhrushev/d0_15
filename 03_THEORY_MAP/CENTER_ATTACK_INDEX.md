@@ -56,3 +56,15 @@ C1-α triple now carries irreducibility evidence via the NO-GO row.
 5. Standing rule: every new claim runs the skill loop (preflight → compute → memo with
    pre-registered self-attack → pass → accept/repair) — narrowing is guaranteed forward motion;
    synthesis lands where two owned chains meet (as the gap-module seam did).
+
+## Orphan-cert triage (2026-07-04 audit; other sessions' work-in-progress, untouched)
+
+Eight untracked certs in `05_CERTS/` run clean (7 PASS with honest scopes, 1 explicit NO-GO+).
+Registry check: 7/8 already have rows (their owning sessions integrated; the FILES are just
+uncommitted — committing is their owners' call). Single registry orphan:
+`vp_a2_hypercharge_u1_mass_kernel.py` — honest NO-GO+ naming the missing primitive
+PRIM-U1-MASS-COUPLING-FLOW-TO-LEDGER (its SM-table-as-operator control correctly REJECTS
+assuming the conclusion); appears mid-workflow of the hypercharge session — left to its owner.
+`03_THEORY_MAP/CASCADE_ARCHITECTURE.md` (untracked) = another session's cascade-sync design
+doc (diagnosed 31 prose↔ledger desyncs, 278/523 claims without prose) — not center-attack
+scope; noted for visibility.
