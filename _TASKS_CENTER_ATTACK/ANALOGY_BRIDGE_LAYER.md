@@ -223,8 +223,9 @@ with real metric gains — theoretically derivable and provable on benchmarks.
 - forgetting CP channel (`ForgettingChannelCP.lean`: any *-hom of matrix algebras is CP) —
   content-thin for ML: a generic fact, no D0-specific structure survives the transfer;
 - Feshbach 5→4 distinct-eigenvalue compression (cert passes; registry row
-  D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001 still OPEN — desync noted, may not be cited
-  CERT-CLOSED until the row updates) — scene-specific, no ML transfer;
+  D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001 now CERT-CLOSED, 2026-07-04 — the desync
+  skeptic #9 flagged is resolved: the cert was repaired per its audit note, the row flipped
+  PROOF-TARGET→CERT-CLOSED, and skeptic #11 cleared all four repairs) — scene-specific, no ML transfer;
 - in-house warning imported: canonical Φ-compressions wash directedness into ⟨A,D⟩
   (DIRECTED_SEAM_SWEEP) — D0's own compressions LOSE the load-bearing marker; do not sell them
   as lossless summaries.
