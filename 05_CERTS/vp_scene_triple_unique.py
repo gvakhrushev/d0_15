@@ -62,8 +62,9 @@ def main() -> int:
     print(f"FAIL_WIDE_WINDOW_BREAKS_UNIQUENESS  window [9,29] admits centres {{11=L5, 29=L7}} — [9,13] is load-bearing")
 
     # --- NEGATIVE CONTROL 3: +1 ladder excluded (step parity, re-check) ----------------------
-    # a +1 ladder centred on 11 would be (10,11,12): sizes not all forced by the +2 address ladder
-    assert (11 - 1, 11, 11 + 1) != (9, 11, 13), "+1 ladder must differ from the scene"
+    # a +1 ladder centred on the SAME centre would be (10,11,12): must differ from the actual triple
+    plus_one_ladder = (centre - 1, centre, centre + 1)
+    assert plus_one_ladder != triple, f"+1 ladder {plus_one_ladder} must differ from the scene {triple}"
     print("FAIL_PLUS_ONE_LADDER_REJECTED  (10,11,12) != (9,11,13); +2 step forced upstream (det T=-1 parity)")
 
     print("HONEST_SCOPE  capstone composes proved legs (CarrierForcing 3-zones + SceneCenter L5=11 + address +2 ladder)")

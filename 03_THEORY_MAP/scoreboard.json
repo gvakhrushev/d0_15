@@ -19,23 +19,23 @@
     }
   },
   "totals": {
-    "realized": 6812,
-    "track_fair_max": 9162,
-    "pct_strength": 74.4,
-    "core_realized": 5317,
-    "core_potential": 7620,
-    "core_headroom": 2303,
-    "n_claims": 527,
-    "n_active": 525,
+    "realized": 6941,
+    "track_fair_max": 9358,
+    "pct_strength": 74.2,
+    "core_realized": 5420,
+    "core_potential": 7780,
+    "core_headroom": 2360,
+    "n_claims": 538,
+    "n_active": 536,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 319,
-      "realized": 4514,
-      "max": 5601,
-      "core_headroom": 1067
+      "n": 331,
+      "realized": 4655,
+      "max": 5817,
+      "core_headroom": 1132
     },
     "rg": {
       "n": 7,
@@ -92,10 +92,10 @@
       "core_headroom": 0
     },
     "frontier": {
-      "n": 41,
-      "realized": 142,
-      "max": 820,
-      "core_headroom": 678
+      "n": 40,
+      "realized": 130,
+      "max": 800,
+      "core_headroom": 670
     }
   },
   "by_book": {
@@ -118,10 +118,10 @@
       "core_headroom": 100
     },
     "BOOK_02": {
-      "n": 60,
-      "realized": 688,
-      "max": 951,
-      "core_headroom": 263
+      "n": 64,
+      "realized": 716,
+      "max": 1023,
+      "core_headroom": 302
     },
     "D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE": {
       "n": 3,
@@ -160,10 +160,10 @@
       "core_headroom": 39
     },
     "BOOK_04": {
-      "n": 100,
-      "realized": 1278,
-      "max": 1719,
-      "core_headroom": 421
+      "n": 101,
+      "realized": 1285,
+      "max": 1731,
+      "core_headroom": 426
     },
     "BOOK_04/08": {
       "n": 7,
@@ -316,9 +316,9 @@
       "core_headroom": 18
     },
     "BOOK_06": {
-      "n": 41,
-      "realized": 507,
-      "max": 713,
+      "n": 42,
+      "realized": 514,
+      "max": 725,
       "core_headroom": 206
     },
     "BOOK_01/06": {
@@ -376,9 +376,9 @@
       "core_headroom": 0
     },
     "BOOK_04/06": {
-      "n": 1,
-      "realized": 7,
-      "max": 20,
+      "n": 2,
+      "realized": 27,
+      "max": 40,
       "core_headroom": 13
     },
     "BOOK_00": {
@@ -410,6 +410,30 @@
       "realized": 14,
       "max": 40,
       "core_headroom": 26
+    },
+    "BOOK_07/01": {
+      "n": 1,
+      "realized": 7,
+      "max": 20,
+      "core_headroom": 13
+    },
+    "BOOK_00/07": {
+      "n": 1,
+      "realized": 20,
+      "max": 20,
+      "core_headroom": 0
+    },
+    "BOOK_03/04": {
+      "n": 1,
+      "realized": 20,
+      "max": 20,
+      "core_headroom": 0
+    },
+    "BOOK_00/06": {
+      "n": 1,
+      "realized": 20,
+      "max": 20,
+      "core_headroom": 0
     }
   },
   "cheapest_promotions": [
@@ -1254,16 +1278,6 @@
       "effort": "release-bless to core"
     },
     {
-      "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "domain": "frontier",
-      "book": "BOOK_04",
-      "level_name": "LEAN_PROVED",
-      "leverage": 0,
-      "next": "CORE_FORMALIZED",
-      "points_gained": 8,
-      "effort": "release-bless to core"
-    },
-    {
       "claim_id": "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
       "domain": "frontier",
       "book": "BOOK_08",
@@ -2057,6 +2071,56 @@
       "claim_id": "D0-ROOT-OPERATOR-COMPLETION-PROGRAM-001",
       "domain": "formal_core",
       "book": "BOOK_05",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-XI-OPERATOR-FAMILY-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-Q8-HOLOMORPH-MODULE-001",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-ALPHA-SEAM-LOCATION-001",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
+      "claim_id": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "domain": "formal_core",
+      "book": "BOOK_07/01",
       "level_name": "PYTHON_CERTIFIED",
       "leverage": 0,
       "next": "LEAN_PROVED",
@@ -3364,6 +3428,41 @@
       "score": 7
     },
     {
+      "claim_id": "D0-XI-OPERATOR-FAMILY-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-Q8-HOLOMORPH-MODULE-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-ALPHA-SEAM-LOCATION-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
       "claim_id": "D0-SPECTRAL-EINSTEIN-001",
       "domain": "spectral_action",
       "leverage": 0,
@@ -3730,13 +3829,6 @@
     {
       "claim_id": "D0-RAW-COMMUTANT-WEDDERBURN-001",
       "domain": "formal_core",
-      "leverage": 0,
-      "level_name": "LEAN_PROVED",
-      "score": 12
-    },
-    {
-      "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "domain": "frontier",
       "leverage": 0,
       "level_name": "LEAN_PROVED",
       "score": 12
@@ -10641,14 +10733,14 @@
     },
     {
       "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "track": "CORE",
+      "track": "NO_GO",
       "level": 4,
       "level_name": "LEAN_PROVED",
       "score": 12,
-      "ceiling": 20,
-      "release_status": "PROOF-TARGET",
+      "ceiling": 12,
+      "release_status": "NO-GO",
       "lean_status": "LEAN_PROVED",
-      "domain": "frontier",
+      "domain": "formal_core",
       "book": "BOOK_04",
       "leverage": 0,
       "integrity_flag": null
@@ -11212,12 +11304,166 @@
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-XI-OPERATOR-FAMILY-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-SCENE-BARTHOLDI-TYPED-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-Q8-HOLOMORPH-MODULE-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-SEAM-LOCATION-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+      "track": "NO_GO",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GAP-LABELING-OWNER-EDGE-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_07/01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00/07",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TORUS-SHELL-ATTACHMENT-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_04/06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-LEPTON-WITNESS-BRANCH-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_03/04",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-GATE-STATIONARITY-OWNER-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00/06",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "track": "NO_GO",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "formal_core",
+      "book": "BOOK_06",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
-    "score": 90.4,
+    "score": 90.3,
     "budget": 100,
-    "penalty_total": 9.6,
+    "penalty_total": 9.7,
     "bonus_total": 0.0,
     "signals": [
       {
@@ -11262,8 +11508,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 46,
-        "points": -4.6,
+        "count": 47,
+        "points": -4.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -11320,8 +11566,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 46,
-        "points": -4.6,
+        "count": 47,
+        "points": -4.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

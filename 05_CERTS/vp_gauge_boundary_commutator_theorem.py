@@ -51,7 +51,10 @@ def transpose(A):
 
 
 def fro2(A):
-    return sum(A[i][j] * A[i][j] for i in range(len(A)) for j in range(len(A[0])))
+    # conjugate-product Frobenius norm^2 -- correct for the theorem's stated domain (any Hermitian
+    # g, not just real-symmetric); identical to the old x*x for the real-valued generators this
+    # cert actually tests, so no behavior change on current usage.
+    return sum((A[i][j].conjugate() * A[i][j]).real for i in range(len(A)) for j in range(len(A[0])))
 
 
 def die(msg):

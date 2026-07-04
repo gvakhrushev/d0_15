@@ -487,7 +487,7 @@ digraph D0Theory {
   "D0-RAW-COMMUTANT-WEDDERBURN-001" [label="D0-RAW-COMMUTANT-WEDDERBURN-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001" [label="D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001" [label="D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
-  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" [label="D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" [label="D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001" [label="D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001" [label="D0-PHASON-COORDINATE-FUNCTOR-OWNER-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-FIVE-PRIMITIVE-DEPENDENCE-001" [label="D0-FIVE-PRIMITIVE-DEPENDENCE-001\\nCERT-CLOSED\\nformal_core", fillcolor="#1f6f9f", fontcolor="white"];
@@ -538,6 +538,7 @@ digraph D0Theory {
   "D0-TORUS-SHELL-ATTACHMENT-001" [label="D0-TORUS-SHELL-ATTACHMENT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-LEPTON-WITNESS-BRANCH-001" [label="D0-LEPTON-WITNESS-BRANCH-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-GATE-STATIONARITY-OWNER-001" [label="D0-GATE-STATIONARITY-OWNER-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001" [label="D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -2330,8 +2331,8 @@ digraph D0Theory {
   "D0-TORAL-TIME-MARKOV-CONJUGACY-001" -> "domain:frontier" [label="domain"];
   "module:D0.VNext2.AdlerWeissInternalMarkov" [label="D0.VNext2.AdlerWeissInternalMarkov", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001" -> "module:D0.VNext2.AdlerWeissInternalMarkov" [label="module"];
-  "cert:vp_adler_weiss_internal_construction.py" [label="vp_adler_weiss_internal_construction.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
-  "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001" -> "cert:vp_adler_weiss_internal_construction.py" [label="cert"];
+  "cert:vp_adler_weiss_internal_markov.py" [label="vp_adler_weiss_internal_markov.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001" -> "cert:vp_adler_weiss_internal_markov.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001" -> "domain:formal_core" [label="domain"];
   "module:D0.Cosmology.PhasonWDESignNormalization" [label="D0.Cosmology.PhasonWDESignNormalization", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
@@ -3340,12 +3341,12 @@ digraph D0Theory {
   "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001" -> "cert:vp_five_primitive_no_scene_copy_refinement.py" [label="cert"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001" -> "domain:formal_core" [label="domain"];
-  "module:D0.Extensions.LeptonBranchSelectorConstruction" [label="D0.Extensions.LeptonBranchSelectorConstruction", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" -> "module:D0.Extensions.LeptonBranchSelectorConstruction" [label="module"];
-  "cert:vp_five_primitive_no_branch_to_generation_shortcut.py" [label="vp_five_primitive_no_branch_to_generation_shortcut.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
-  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" -> "cert:vp_five_primitive_no_branch_to_generation_shortcut.py" [label="cert"];
-  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" -> "domain:frontier" [label="domain"];
+  "module:D0.Extensions.LeptonBranchFixingNoGo" [label="D0.Extensions.LeptonBranchFixingNoGo", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" -> "module:D0.Extensions.LeptonBranchFixingNoGo" [label="module"];
+  "cert:vp_lepton_branch_fixing_operator_nogo.py" [label="vp_lepton_branch_fixing_operator_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" -> "cert:vp_lepton_branch_fixing_operator_nogo.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001" -> "domain:formal_core" [label="domain"];
   "module:D0.Extensions.ArchiveCommonSectorConstruction" [label="D0.Extensions.ArchiveCommonSectorConstruction", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001" -> "module:D0.Extensions.ArchiveCommonSectorConstruction" [label="module"];
   "cert:vp_five_primitive_operator_type_firewall.py" [label="vp_five_primitive_operator_type_firewall.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
@@ -3612,4 +3613,10 @@ digraph D0Theory {
   "D0-GATE-STATIONARITY-OWNER-001" -> "module:D0.Topology.ArchiveShiftTopology" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-GATE-STATIONARITY-OWNER-001" -> "domain:formal_core" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001" -> "module:" [label="module"];
+  "cert:vp_sturmian_refinement_discharge_nogo.py" [label="vp_sturmian_refinement_discharge_nogo.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001" -> "cert:vp_sturmian_refinement_discharge_nogo.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001" -> "domain:formal_core" [label="domain"];
 }

@@ -15,7 +15,18 @@ the left algebra (it is not central; left ∩ right = the 5-dim centre = #conjug
 `Q₈`).  Hence `J_role` is NOT forced by the frozen typed carrier.
 
 Residual primitive: an external KO-dimension real structure (`PRIM-FINITE-SPECTRAL-TRIPLE-REP`).
-The finite arithmetic is verified in `D0_ROLE_OPERATORS_CERTIFICATE.py`.
+
+**HONEST SCOPE (flagged, unregistered — no CLAIM_TO_LEAN_MAP.csv row cites this module):**
+`rightB_central` below is a bare `Prop := False`, not a formalized statement about `Q₈`'s group
+algebra — so `rightB_not_central` and the downstream `role_real_structure_nogo` are a logical
+chain over an UNPROVEN premise, not a representation-theory result. The actual claim (`R_i` is
+not central in `ℂ[Q₈]`; left ∩ right = the 5-dim centre = # conjugacy classes) is stated only in
+prose here. `D0_ROLE_OPERATORS_CERTIFICATE.py` (referenced above) does not exist in this repo.
+This module is a SCAFFOLD for a future real proof, not a discharged NO-GO — do not cite it as
+LEAN_PROVED for any registry row until `rightB_central` is replaced by an actual centrality
+statement over `ℂ[Q₈]` (e.g. via `Matrix.trace` non-equality on the regular representation) and
+`q8CentreDim` is derived from a real conjugacy-class count rather than asserted by `decide` on a
+literal.
 -/
 
 namespace D0.Representation.RoleRealStructureNoGo

@@ -22,11 +22,11 @@ hygiene / owner-decision.
 
 _Last synced: 2026-07-04 (center-attack campaign: α-front NO-GO, condensed-math + quasicrystal
 synthesis fronts, SBSL/Keller–Miksis winding computation, swampland trichotomy adjudicated,
-registry source-of-truth reconciliation, CI dependency + idempotence fixes). Registry: 537 claims,
-strength 6934/9354 (74.1%), repo hygiene 90.4/100, integrity demotions 0. Status mix:
-184 CORE-FORMALIZED · 166 CERT-CLOSED · 72 NO-GO + 8 NO_GO_PROVED · 41 PROOF-TARGET ·
-25 BRIDGE-ASSUMPTIONS-EXPLICIT · 20 PASSPORT-CLOSED · 8 EMPIRICAL-PASSPORT · 7 CORE_BRIDGE_SPLIT ·
-3 BRIDGE-CALIBRATION · 2 DEPRECATED · 1 EXTERNAL-BACKGROUND.
+registry source-of-truth reconciliation, CI dependency + idempotence fixes, PR-review registry
+sweep). Registry: 538 claims, strength 6941/9358 (74.2%), repo hygiene 90.3/100, integrity
+demotions 0. Status mix: 184 CORE-FORMALIZED · 166 CERT-CLOSED · 74 NO-GO + 8 NO_GO_PROVED ·
+40 PROOF-TARGET · 25 BRIDGE-ASSUMPTIONS-EXPLICIT · 20 PASSPORT-CLOSED · 8 EMPIRICAL-PASSPORT ·
+7 CORE_BRIDGE_SPLIT · 3 BRIDGE-CALIBRATION · 2 DEPRECATED · 1 EXTERNAL-BACKGROUND.
 Prior sync (2026-07-02) folded the honest external-data corrections into the corpus: PMNS
 δ₀-family and LIGO φ⁻¹ demoted to post-hoc passports, DESI thawing-corner over-read corrected,
 SPARC dark-matter recorded as an honest negative; colour SU(3) remains a terminal-passport no-go

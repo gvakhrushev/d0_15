@@ -51,7 +51,8 @@ def run_certificate() -> None:
     top = sorted(int(i) + 1 for i in np.argsort(spacings)[::-1][:25])   # k = states below gap
     print(f"    Selected top {len(top)} widest gaps: PASS")
 
-    # 3. Exact labels: k = m*610 mod 987, module element n + m*phi^-1, tolerance 2/N
+    # 3. Exact labels: the SAME m must both satisfy the congruence k = m*610 mod 987 AND land
+    #    within tolerance of the golden fraction n + m*phi^-1 (single witness, not two tracks).
     labels = []
     failures = 0
     for idx, k in enumerate(top):
@@ -60,13 +61,13 @@ def run_certificate() -> None:
         for m in range(-34, 35):
             if (m * SLOPE_NUM - k) % N == 0 and (m_int is None or abs(m) < abs(m_int)):
                 m_int = m
-        best = min(
-            ((abs(ids - ((m * PHI_INV) % 1.0)), m) for m in range(-34, 35)),
-            key=lambda t: t[0],
-        )
-        dist, m_mod = best
-        n_mod = round(ids - m_mod * PHI_INV)
-        ok = (m_int is not None) and (dist < 2.0 / N)
+        if m_int is None:
+            ok, m_mod, n_mod, dist = False, 0, 0, float("inf")
+        else:
+            m_mod = m_int
+            n_mod = round(ids - m_mod * PHI_INV)
+            dist = abs(ids - (n_mod + m_mod * PHI_INV))
+            ok = dist < 2.0 / N
         failures += 0 if ok else 1
         labels.append({
             "gap_idx": idx,

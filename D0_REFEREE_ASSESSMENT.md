@@ -13,36 +13,36 @@ D0 builds all of its structure from a single finite object: the complete tripart
 `{0,20,22,24,33}` with multiplicities `{1,12,10,8,2}`. Everything else — a golden-ratio ladder `Q(D)=φ^{D-4}`,
 the fine-structure constant, a mass chain, a discrete Einstein response, a gravitational depth exponent — is
 claimed to be *forced* by finite invariants of this graph (edge count, zone sizes, shell cardinalities,
-Lucas/Fibonacci returns) with **zero free real parameters**. The corpus is organized as 527 numbered claims,
+Lucas/Fibonacci returns) with **zero free real parameters**. The corpus is organized as 538 numbered claims,
 each carrying a `release_status` (what kind of result it is) and a `lean_status` (at what rigor it is
 verified), with a cascade of guard scripts enforcing that the books, the status map, and the claim registry
 never drift out of sync.
 
 ## 2. The verification landscape (the number that matters)
 
-Grouping the 527 claims by what a referee actually cares about — *is this internal finite mathematics, an
+Grouping the 538 claims by what a referee actually cares about — *is this internal finite mathematics, an
 external bridge, or open?*
 
 | Bucket | Count | Share |
 |---|---:|---:|
-| **A. Internal finite theorems** (positive + impossibility) | **419** | **79%** |
+| **A. Internal finite theorems** (positive + impossibility) | **432** | **80%** |
 | B. Finite leg closed, continuum leg external (`CORE_BRIDGE_SPLIT`) | 7 | 1% |
 | C. External bridge / observational passport | 57 | 11% |
-| D. Open internal proof-target | 42 | 8% |
+| D. Open internal proof-target | 40 | 7% |
 | E. Deprecated | 2 | 0% |
 
-Within bucket **A** (419 internal theorems):
-- **340 positive finite theorems** (`CORE-FORMALIZED` / `CERT-CLOSED`) — of which **279 are machine-checked
-  in Lean 4** (`LEAN_PROVED`), the rest closed by falsifiable Python certificates (this session added the scene-triple uniqueness capstone, +1).
-- **79 proven impossibility results** (`NO-GO` / `NO_GO_PROVED`) — of which **73 are Lean-verified**.
+Within bucket **A** (432 internal theorems):
+- **350 positive finite theorems** (`CORE-FORMALIZED` / `CERT-CLOSED`) — of which **276 are machine-checked
+  in Lean 4** (`LEAN_PROVED`), the rest closed by falsifiable Python certificates.
+- **82 proven impossibility results** (`NO-GO` / `NO_GO_PROVED`) — of which **72 are Lean-verified**.
 
-Overall `lean_status`: **358 `LEAN_PROVED`**, 101 `PYTHON_CERTIFIED`, 38 `OPEN`, 28
+Overall `lean_status`: **362 `LEAN_PROVED`**, 109 `PYTHON_CERTIFIED`, 37 `OPEN`, 28
 `LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS`, 2 deprecated. The Lean corpus is **sorry-free** (genuine `sorry`
-count = 0; verified against Lean 4.30.0 + Mathlib, 8114 mathlib oleans + 398 D0 oleans on disk).
+count = 0; verified against Lean 4.30.0 + Mathlib, `lake build D0.All` green, 4008 jobs).
 
 **Referee reading:** four out of five claims are internal finite mathematics, and the large majority of those
 carry a machine-checked proof. This is an unusually high formalization ratio for a physics-facing theory. The
-NO-GO count (79) is a strength, not a weakness — the theory spends real effort proving what its own scene
+NO-GO count (82) is a strength, not a weakness — the theory spends real effort proving what its own scene
 *cannot* do.
 
 ## 3. Flagship results and their honest verification status
@@ -99,11 +99,11 @@ source, and — critically — a stated *failure-meaning* (what collapses if the
 mathematics hands off to an external theorem is labelled as such; the 28 `…_WITH_BRIDGE_ASSUMPTIONS` claims
 are exactly the ones a referee should scrutinize, and they are pre-identified.
 
-## 6. The open frontier — 33 proof-targets, honestly scoped
+## 6. The open frontier — 40 proof-targets, honestly scoped
 
-The 42 open `PROOF-TARGET`s split into **7 observational passports** (data comparisons: DESI-BAO, LIGO
-catalog, IceCube-HESE, SPARC rotation curves — not internal mathematics) and **35 internal-math targets**.
-The internal 26 are not a to-do list of unattempted work; nearly all are *explicitly scoped* to an external
+The 40 open `PROOF-TARGET`s split into **7 observational passports** (data comparisons: DESI-BAO, LIGO
+catalog, IceCube-HESE, SPARC rotation curves — not internal mathematics) and **33 internal-math targets**.
+The internal 33 are not a to-do list of unattempted work; nearly all are *explicitly scoped* to an external
 leg after their finite leg was closed:
 
 - **`D0-EDGE-002`** — the edge-α *trace* leg is CLOSED (`Tr(F_E)`, Lean-backed); what remains is the analytic
@@ -137,9 +137,9 @@ The corpus is not a pile of claims; it is a synchronized system:
 ## 8. Referee verdict (honest, not promotional)
 
 **Strengths.**
-1. Exceptional formalization discipline: 82% internal theorems, 369 machine-checked in Lean, sorry-free.
+1. Exceptional formalization discipline: 80% internal theorems, 362 machine-checked in Lean, sorry-free.
 2. The bridge boundary is explicit and auditable — 24 named external assumptions with failure-meanings.
-3. Heavy, honest use of impossibility proofs (79 NO-GOs) that scope the theory's own limits.
+3. Heavy, honest use of impossibility proofs (82 NO-GOs) that scope the theory's own limits.
 4. A single source of truth with a guard cascade that prevents prose/ledger drift.
 
 **What a referee will still press on.**

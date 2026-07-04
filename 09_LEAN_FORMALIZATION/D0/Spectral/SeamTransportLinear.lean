@@ -58,7 +58,7 @@ theorem transport_add (s t : ℝ) : transport s * transport t = transport (s + t
   ring_nf
   -- expand (1 + s•N)(1 + t•N) = 1 + (s+t)•N + (s*t)•(N*N); the last term is 0
   rw [add_mul, mul_add, mul_add]
-  simp [Matrix.mul_smul, hN]
+  simp [hN]
   module
 
 /-- **Exact linear readout.** The anchor-row transport total (the `(0,0)` identity part plus the `(0,1)`
@@ -67,7 +67,7 @@ theorem transport_add (s t : ℝ) : transport s * transport t = transport (s + t
 theorem transport_readout (s : ℝ) :
     transport s 0 0 + transport s 0 1 = 1 + s := by
   unfold transport seamN
-  simp [Matrix.add_apply, Matrix.one_apply]
+  simp [Matrix.add_apply]
 
 /-- **The α dressing factor.** With the forced amplitude `s = h_KS·sin θ` (`h_KS = ln φ`, `θ = 12/5`, both
     owned upstream), the transported factor is exactly `1 + h_KS·sin θ` — the closure-holonomy linear form,
@@ -98,7 +98,7 @@ noncomputable def rotation (θ : ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
 theorem rotation_readout (θ : ℝ) :
     rotation θ 0 0 + rotation θ 0 1 = Real.cos θ - Real.sin θ := by
   unfold rotation seamG
-  simp [Matrix.add_apply, Matrix.smul_apply, Matrix.one_apply]
+  simp [Matrix.add_apply, Matrix.smul_apply]
   ring
 
 /-- **Boundedness of the elliptic readout** — `|cos θ − sin θ| ≤ √2`. So the elliptic channel cannot supply

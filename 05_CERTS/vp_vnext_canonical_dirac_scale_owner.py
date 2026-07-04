@@ -58,9 +58,13 @@ def main() -> int:
     n_two = norm_Zphi_rational(2.0)
     if abs(abs(n_two) - 1.0) < 0.5:
         die("TWO_NOT_UNIT  N(2) must not be a unit norm (+-1)")
+    PHI_CONJ = (1 - 5 ** 0.5) / 2  # the Galois conjugate root of t^2 - t - 1 = 0
     for k in range(-6, 7):
-        if abs(abs((-1.0) ** k) - 1.0) > TOL:
-            die("PHI_POWER_UNIT  N(phi^k) must be a unit (+-1) for all k")
+        n_phik = (PHI ** k) * (PHI_CONJ ** k)  # actual field norm N(phi^k) = phi^k * conj(phi^k)
+        if abs(n_phik - (-1.0) ** k) > 1e-6:
+            die(f"PHI_POWER_UNIT  N(phi^{k}) must equal (-1)^{k}, got {n_phik}")
+        if abs(abs(n_phik) - 1.0) > 1e-6:
+            die(f"PHI_POWER_UNIT  N(phi^{k}) must be a unit (+-1), got {n_phik}")
     print(f"PASS_TWO_NOT_A_PHI_POWER  N(2)={n_two:.0f} is not a unit while N(phi^k)=(-1)^k in {{+1,-1}} "
           f"-> 2 != phi^k for any integer k (2 externally sourced).")
 

@@ -4,38 +4,38 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 537,
+    "claims": 538,
     "release_status": {
       "CORE-FORMALIZED": 184,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 25,
       "CORE_BRIDGE_SPLIT": 7,
       "NO_GO_PROVED": 8,
       "CERT-CLOSED": 166,
-      "NO-GO": 72,
+      "NO-GO": 74,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
       "EMPIRICAL-PASSPORT": 8,
-      "PROOF-TARGET": 41,
+      "PROOF-TARGET": 40,
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
       "LEAN_PROVED": 362,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 28,
-      "PYTHON_CERTIFIED": 108,
+      "PYTHON_CERTIFIED": 109,
       "DEPRECATED": 2,
       "OPEN": 37
     },
     "claim_type": {
       "core": 187,
       "bridge": 34,
-      "no-go": 80,
+      "no-go": 82,
       "certificate": 192,
       "deprecated": 3,
-      "frontier": 41
+      "frontier": 40
     },
     "domain": {
-      "formal_core": 330,
+      "formal_core": 332,
       "rg": 7,
       "gauge_bridge": 23,
       "smooth_geometry": 38,
@@ -45,7 +45,7 @@
       "external_background": 1,
       "si_calibration": 2,
       "interpretation_spine": 1,
-      "frontier": 41
+      "frontier": 40
     }
   },
   "nodes": [
@@ -10733,12 +10733,12 @@
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_adler_weiss_internal_construction.py",
+      "cert": "vp_adler_weiss_internal_markov.py",
       "python_cert": [
-        "vp_adler_weiss_internal_construction.py"
+        "vp_adler_weiss_internal_markov.py"
       ],
       "status": "CERT-CLOSED",
-      "notes": "[Iter22 five-front C] The partition SCAFFOLD (explicit Lucas-boundary cells + kappa-stability, D0-LUCAS-VORONOI-MARKOV-PARTITION-001) is built internally. MISSING (exact): the Voronoi-cell-exact MARKOV-property proof T(int P_i) subset int P_j for the Lucas-Voronoi cells (external Adler-Weiss 1967 + de Bruijn Voronoi). cert vp_adler_weiss_internal_construction.py (controls: Adler-Weiss-imported-as-CORE / non-Lucas-boundary rejected). PROOF-TARGET; classical Adler-Weiss stays the external owner D0-ADLER-WEISS-PARTITION-OWNER-001.",
+      "notes": "[Iter22 five-front C] The partition SCAFFOLD (explicit Lucas-boundary cells + kappa-stability, D0-LUCAS-VORONOI-MARKOV-PARTITION-001) is built internally. MISSING (exact): the Voronoi-cell-exact MARKOV-property proof T(int P_i) subset int P_j for the Lucas-Voronoi cells (external Adler-Weiss 1967 + de Bruijn Voronoi). cert vp_adler_weiss_internal_construction.py (controls: Adler-Weiss-imported-as-CORE / non-Lucas-boundary rejected). PROOF-TARGET; classical Adler-Weiss stays the external owner D0-ADLER-WEISS-PARTITION-OWNER-001. [2026-07 PR-review fix: python_cert was stale, still pointing at the scaffold cert vp_adler_weiss_internal_construction.py, whose OWN verdict is HONEST_PROOF_TARGET (not CERT-CLOSED) - it never backed this row's CERT-CLOSED status. Repointed to vp_adler_weiss_internal_markov.py, matching the book's Iter25 paragraph and the already-correct lean_module/lean_theorem fields: the exact 2-cell Markov partition is realized internally via the M1-forced golden beta=phi natural extension (1->1 forbidden, transition [[1,1],[1,0]], Parry (phi^2,1)/(phi^2+1), entropy log phi), conjugate to T~-M_phi. The scaffold cert stays valid as a distinct, earlier-stage artifact (Lucas-boundary cell geometry, still PROOF-TARGET on its own terms) but is no longer this row's proof-of-record.]",
       "module_path": "09_LEAN_FORMALIZATION/D0/VNext2/AdlerWeissInternalMarkov.lean",
       "module_exists": true,
       "certs_exist": true
@@ -10751,10 +10751,10 @@
       "exists": true
     },
     {
-      "id": "cert:vp_adler_weiss_internal_construction.py",
+      "id": "cert:vp_adler_weiss_internal_markov.py",
       "kind": "python_cert",
-      "label": "vp_adler_weiss_internal_construction.py",
-      "path": "05_CERTS/vp_adler_weiss_internal_construction.py",
+      "label": "vp_adler_weiss_internal_markov.py",
+      "path": "05_CERTS/vp_adler_weiss_internal_markov.py",
       "exists": true
     },
     {
@@ -16477,38 +16477,38 @@
       "id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
       "kind": "claim",
       "claim_id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_04",
       "section": "04.L",
-      "lean_module": "D0.Extensions.LeptonBranchSelectorConstruction",
-      "lean_theorem": "lepton_branch_selector_L4",
+      "lean_module": "D0.Extensions.LeptonBranchFixingNoGo",
+      "lean_theorem": "lepton_branch_fixing_operator_nogo",
       "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "cert": "vp_lepton_branch_fixing_operator_nogo.py",
       "python_cert": [
-        "vp_five_primitive_no_branch_to_generation_shortcut.py"
+        "vp_lepton_branch_fixing_operator_nogo.py"
       ],
-      "status": "PROOF-TARGET",
-      "notes": "[Lane L terminal L4] The orbit sizes {4,3} are intrinsically distinct, so the orbit-keyed exponent selector (4->1/4, 3->1/3, 1/4!=1/3) is branch-sensitive WITHOUT post-hoc group narrowing; but 2 orbits < 3 generations, so the full branch->generation row needs one exact new operator. Decimals stay EFT/IR passport. Cites D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001. EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR (the branch->generation row operator).",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchSelectorConstruction.lean",
+      "status": "NO-GO",
+      "notes": "[Lane L terminal L4] The orbit sizes {4,3} are intrinsically distinct, so the orbit-keyed exponent selector (4->1/4, 3->1/3, 1/4!=1/3) is branch-sensitive WITHOUT post-hoc group narrowing; but 2 orbits < 3 generations, so the full branch->generation row needs one exact new operator. Decimals stay EFT/IR passport. Cites D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001. EXACT-MISSING: PRIM-LEPTON-BRANCH-FIXING-OPERATOR (the branch->generation row operator). [2026-07 PR-review fix: registry was stale against the book's own Iter23 paragraph. PROMOTED PROOF-TARGET->NO-GO: the terminal-L4 gap is now a proven non-constructibility. Frozen shell-torus Ueff=blockdiag(4-cycle,3-cycle) gives numBranches=2 (exponents 1/4!=1/3) with NO fixed point (no in-carrier third branch), while numGenerations=3 (K(9,11,13) trivial-isotype multiplicity Tr(T^2)=3); a branch->generation row would need an injection/surjection/bijection Gen(3)<->Branch(2), all impossible by cardinality (Lean decide). Lean D0.Extensions.LeptonBranchFixingNoGo.lepton_branch_fixing_operator_nogo; cert vp_lepton_branch_fixing_operator_nogo.py (6/6 PASS). Prior cert vp_five_primitive_no_branch_to_generation_shortcut.py established the same orbit-count fact less formally and remains valid but is superseded as this row's proof-of-record.]",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchFixingNoGo.lean",
       "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "module:D0.Extensions.LeptonBranchSelectorConstruction",
+      "id": "module:D0.Extensions.LeptonBranchFixingNoGo",
       "kind": "lean_module",
-      "label": "D0.Extensions.LeptonBranchSelectorConstruction",
-      "path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchSelectorConstruction.lean",
+      "label": "D0.Extensions.LeptonBranchFixingNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Extensions/LeptonBranchFixingNoGo.lean",
       "exists": true
     },
     {
-      "id": "cert:vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "id": "cert:vp_lepton_branch_fixing_operator_nogo.py",
       "kind": "python_cert",
-      "label": "vp_five_primitive_no_branch_to_generation_shortcut.py",
-      "path": "05_CERTS/vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "label": "vp_lepton_branch_fixing_operator_nogo.py",
+      "path": "05_CERTS/vp_lepton_branch_fixing_operator_nogo.py",
       "exists": true
     },
     {
@@ -18146,6 +18146,37 @@
       "kind": "lean_module",
       "label": "D0.Topology.ArchiveShiftTopology",
       "path": "09_LEAN_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_06",
+      "section": "06.6",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_sturmian_refinement_discharge_nogo.py",
+      "python_cert": [
+        "vp_sturmian_refinement_discharge_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[2026-07 PR-review fix: registered, was missing a row despite being asserted as a NO-GO in 01_BOOKS/BOOK_06.../0007__06.6__....md Iter25 and backed by a passing cert.] Why the CONDITIONAL-EXTENSION of D0-STURMIAN-REFINEMENT (parent row, stays PROOF-TARGET) cannot be discharged internally, for two independent reasons: (i) FIELD DISJOINTNESS (load-bearing) - the golden tower lives in Q(sqrt5)=Q(phi), but the archive/window scale 359/160 (roots of 160*lambda^2-480*lambda+359, disc 640=64*10) lives in Q(sqrt10); since sqrt10 not in Q(sqrt5), no canonical intertwiner ties a Q(sqrt5) carrier to a Q(sqrt10) carrier (same structural reason the neighbouring phason-WZ transfer closed NO-GO); explained by D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001 (sqrt10 is the size-fingerprint of 9,11,13, not a golden near-miss). (ii) ORIENTATION - the centre-11 convergence forces T=[[0,1],[1,-1]] (trace -1, orientation-reversed), the Sturmian tower uses orientation-preserving S=[[1,1],[1,0]] (trace +1); trace is a conjugacy invariant so S is not conjugate to T (scene pins T~-S), periodic-point offset [0,2,0,2,...]. Golden back-fit rejected: phi^k=359/160 gives k=1.679 non-integer. HONEST: an external owner could POSTULATE PRIM-STURMIAN-REFINEMENT-OWNER as a passport; that stays a named external choice, not an internal discharge. Cert vp_sturmian_refinement_discharge_nogo.py, 6/6 PASS incl. wrong-object control.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_sturmian_refinement_discharge_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_sturmian_refinement_discharge_nogo.py",
+      "path": "05_CERTS/vp_sturmian_refinement_discharge_nogo.py",
       "exists": true
     }
   ],
@@ -22637,7 +22668,7 @@
     },
     {
       "source": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
-      "target": "cert:vp_adler_weiss_internal_construction.py",
+      "target": "cert:vp_adler_weiss_internal_markov.py",
       "kind": "certified_by"
     },
     {
@@ -25157,17 +25188,17 @@
     },
     {
       "source": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "target": "domain:frontier",
+      "target": "domain:formal_core",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "target": "module:D0.Extensions.LeptonBranchSelectorConstruction",
+      "target": "module:D0.Extensions.LeptonBranchFixingNoGo",
       "kind": "implemented_in"
     },
     {
       "source": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
-      "target": "cert:vp_five_primitive_no_branch_to_generation_shortcut.py",
+      "target": "cert:vp_lepton_branch_fixing_operator_nogo.py",
       "kind": "certified_by"
     },
     {
@@ -25834,6 +25865,21 @@
       "source": "D0-GATE-STATIONARITY-OWNER-001",
       "target": "module:D0.Topology.ArchiveShiftTopology",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+      "target": "cert:vp_sturmian_refinement_discharge_nogo.py",
+      "kind": "certified_by"
     }
   ]
 }
