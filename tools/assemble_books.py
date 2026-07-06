@@ -83,7 +83,9 @@ def main() -> int:
             if old != new:
                 stale.append(book.name)
         else:
-            book.write_text(new, encoding="utf-8", newline="\n")
+            # py3.9-compatible (Path.write_text gained newline= only in 3.10)
+            with book.open("w", encoding="utf-8", newline="\n") as fh:
+                fh.write(new)
             print(f"assembled {book.name} ({len(list(d.glob('*.md')))} sections)")
 
     if args.check:

@@ -13,6 +13,7 @@ import D0.Claims.FibonacciIfBridge
 import D0.Claims.GluingAnomalyTime
 import D0.Claims.HiggsYukawaBlock
 import D0.Claims.IcosianE8GramFinite
+import D0.Claims.InvariantGenerationBridge
 import D0.Claims.JonesIndexPhi
 import D0.Claims.KTheoryGapModule
 import D0.Claims.KernelZoneSplit

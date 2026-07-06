@@ -48,11 +48,11 @@ CERT_TARGETS = [
 
     CertTarget(
         "05_CERTS/vp_higgs_scalar_projector_positive.py",
-        "PASS_HIGGS_SCALAR_PROJECTOR_CONSTRUCTIVE",
+        "PASS_HIGGS_SCALAR_PROJECTOR_RANK_TWO",
     ),
     CertTarget(
         "05_CERTS/vp_higgs_scalar_projector_constructive.py",
-        "PASS_HIGGS_SCALAR_PROJECTOR_CONSTRUCTIVE",
+        "PASS_SINGLE_ACTION_SECTION_PRESERVED",
     ),
     CertTarget(
         "05_CERTS/vp_ckm_exact_matrix_certificate.py",
@@ -209,7 +209,7 @@ CERT_TARGETS = [
     ),
     CertTarget(
         "05_CERTS/vp_meson_defect_transfer_algebra.py",
-        "PASS_MESON_DEFECT_TRANSFER_ALGEBRA",
+        "PASS_FLAVOUR_DEFECT_ENTERS_ONLY_VIA_LIFTGEN",
     ),
     CertTarget(
         "05_CERTS/vp_meson_positive_defect_transfer.py",

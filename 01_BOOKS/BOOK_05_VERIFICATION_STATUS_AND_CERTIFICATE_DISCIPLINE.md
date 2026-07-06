@@ -12,12 +12,9 @@
 >
 > Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
 
-
 > Scope: Claim classification, proof ownership, certificate discipline, no-go ledger, and promotion rules.
 > Claim discipline: This book decides status; it does not add physical content.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
-
-
 ## 05.0 Active closure law and centralized no-go ledger
 Book 05 classifies every active claim as core theorem, sector theorem, operator scaffold, bridge law, empirical passport, or no-go theorem; completion means a finite operator plus falsification boundary. `OPERATOR-SCAFFOLD-CERTIFIED` is positive internal carrier closure but not an external physical spectrum; `SPIN-FLAVOUR-CARRIER-CERTIFIED` means a finite spin-flavour carrier and its inclusion/decomposition algebra are certified before external physical labels. `SPIN-FLAVOUR-TRANSFER-CERTIFIED` certifies the spin-flavour transfer layer at the carrier level. `SCALAR-PROJECTOR-CERT-CLOSED`, `YUKAWA-SECTION-CERT-CLOSED` and `MESON-TYPED-TRANSFER-CERT-CLOSED` close the corresponding Book 04 operator boundaries at the finite projector/typed-operator level (no second mass anchor, flavour defect only via liftGen, K0 gap labels after freeze).
 
@@ -46,7 +43,7 @@ BARYON-ANONYMOUS-POLE-SCAFFOLD-CLOSED: baryon resonances are anonymous poles of 
 
 EDGE-TRACE-COEFFICIENT-TARGET: edge-sector electromagnetic normalization is a theorem target on the 1-skeleton (guardrail form only; no numerology claim).
 
-TORUS-RAMIFICATION-TARGET: lepton hierarchy as torus ramification / Puiseux indices is a theorem target (guardrail form only; no fraction fit claim).
+TORUS-RAMIFICATION-TARGET: charged-lepton hierarchy as torus ramification / Puiseux branch indices of the finite Green function over the shell torus is a theorem target (guardrail form only; no fraction fit claim).
 
 FRACTAL-CONTINUUM-CORE-CLOSED: fractal tick substrate yields the unique continuous semigroup envelope under the corrected multiplicative form \(A(s+t)=A(s)A(t)/A_0\); orbit-averaged emission uses \(|G_8|\) with explicit irreducibility proviso.
 
@@ -98,7 +95,7 @@ ALPHA-FESHBACH-RESIDUE-FINITE-SUM-CERT-CLOSED: the Feshbach-Schur effective oper
 
 LEPTON-GREEN-PUISEUX-OPERATOR-SCAFFOLD: the shell-torus companion cover C4(charpoly x^4-lam)xR3(x^3-lam) has ramification/Puiseux index = 1/cyclelength, giving the exponent row (p_e,p_mu,p_tau)=(0,1/4,1/3) (`D0-LEPTON-GREEN-PUISEUX-OPERATOR-001`, Lean D0.Matter.LeptonGreenPuiseuxOwner, cert `vp_lepton_green_puiseux_operator.py`); an internal {-1,0,1} Fibonacci-word coefficient section (no PDG) is `D0-LEPTON-STURMIAN-PUISEUX-COEFFICIENTS-001` (cert `vp_lepton_sturmian_puiseux_coefficients.py`). The finite Green RESOLVENT + branch-index uniqueness + the lepton-row identification stay PROOF-TARGET (`D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001`); the decimal section is the external EFT/IR functor (`D0-LEPTON-PUISEUX-DECIMAL-SECTION-001` PROOF-TARGET); decimals HYP, direct route NO-GO.
 
-LUCAS-VORONOI-MARKOV-PARTITION-SCAFFOLD: the toral time matrix T=[[0,1],[1,-1]] generates a finite partition with explicit integer Lucas-trace boundaries (Tr(T^n)=(-1)^n L_n; L_2=3,L_3=4,L_5=11), volume-preserving (det(T^n)^2=1) and kappa-stable (Pisot |psi|=phi^-1<1) (`D0-LUCAS-VORONOI-MARKOV-PARTITION-001`, Lean D0.Geometry.LucasVoronoiMarkovPartition, cert `vp_lucas_voronoi_markov_partition.py`); the Voronoi-cell-exact Markov property (`D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001`) and full topological conjugacy via Williams shift-equivalence (`D0-TORAL-TIME-MARKOV-CONJUGACY-001`) stay PROOF-TARGET; classical Adler-Weiss stays the external owner D0-ADLER-WEISS-PARTITION-OWNER-001 (not imported as CORE).
+LUCAS-VORONOI-MARKOV-PARTITION-SCAFFOLD: the toral time matrix T=[[0,1],[1,-1]] generates a finite partition with explicit integer Lucas-trace boundaries (Tr(T^n)=(-1)^n L_n; L_2=3,L_3=4,L_5=11), volume-preserving (det(T^n)^2=1) and kappa-stable (Pisot |psi|=phi^-1<1) (`D0-LUCAS-VORONOI-MARKOV-PARTITION-001`, Lean D0.Geometry.LucasVoronoiMarkovPartition, cert `vp_lucas_voronoi_markov_partition.py`); the Voronoi-cell-exact Markov property is since realized internally on its symbolic leg (`D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001`, CERT-CLOSED; metric flat-torus embedding external) while full topological conjugacy via Williams shift-equivalence (`D0-TORAL-TIME-MARKOV-CONJUGACY-001`) stays PROOF-TARGET; classical Adler-Weiss stays the external owner D0-ADLER-WEISS-PARTITION-OWNER-001 (not imported as CORE).
 
 PHASON-WDE-SIGN-NORMALIZATION-CERT-CLOSED: the NEGATIVE dark-energy sign is FORCED by the Galois conjugation sigma:phi->psi of Q(phi)/Q -- sigma(phi^-1)=psi^-1=-phi<0 (phi*psi=-1, psi<0), the specific conjugate value, provably distinct from the naive negation -phi^-1 (`D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`, Lean D0.Cosmology.PhasonWDESignNormalization, cert `vp_phason_wde_sign_normalization_owner.py`); the magnitude |w_DE| and the log-det window roots lambda_c/lambda_r stay PROOF-TARGET (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`); the CPL (w0,wa) reading is a downstream passport (`D0-PHASON-WZ-CPL-PASSPORT-001` PASSPORT-CLOSED, cert `vp_phason_wz_cpl_passport.py`).
 
@@ -126,7 +123,6 @@ retuning z or c_R from external survey data
 confusing the relative traced-out-sector (archive) ratio with a physical FLRW scale factor
 using the expression outside the resolvent domain
 
-TORUS-RAMIFICATION-TARGET: charged-lepton hierarchy reduces to branch indices (torus ramification / Puiseux exponents) of the finite Green function over the shell torus.
 Sync gates retained here: `## 05.13 Current inherited priority gates`, `D0.Matter.Book04OperatorBoundary`, `nucleon_line_cannot_promote_full_baryon_multiplet`, `lower_hodge_400_cannot_promote_meson_masses`, `IceCube comparison is EMPIRICAL-PASSPORT`, `cannot select or tune the D0 neutrino kernel`, and Gravity closure requires: finite graph/entropy cert, explicit Pi_TT and W_TT, higher-curvature cut, spectral A2/EH bridge, no continuum constants imported as core.
 
 **[Root-operator program].** Five generative roots each close as an exact NO-GO one typed primitive away; the cross-root semantic dependency is a real proof-graph (one directed edge R3→R5, R4 isolated, asymmetric) — `D0-ROOT-OPERATOR-SEMANTIC-DEPENDENCE-001` (Lean `D0.Verification.RootOperatorSemanticDependence`), `D0-ROOT-OPERATOR-COMPLETION-PROGRAM-001`; board `ROOT_OPERATOR_COMPLETION_BOARD.csv`.
@@ -282,7 +278,6 @@ no information without detector/register.
 
 A verifiable claim is therefore not a beautiful formula.  It is a finite record
 with a falsification hook.
-
 ## 05.3 Standard-language audit rule
 
 Every active D0-local expression must expose its standard object.  The following
@@ -301,7 +296,6 @@ translations are mandatory in proof cells:
 
 Undefined D0-local terminology is a release blocker.  It is not a stylistic
 issue.
-
 ## 05.4 Evidence levels
 
 D0 uses five evidence levels.  They must not be merged.
@@ -325,7 +319,6 @@ not:
 ```text
 external table -> search for a D0-looking expression
 ```
-
 ## 05.5 Claim object schema
 
 Every mature claim must be represented by a complete proof cell:
@@ -344,7 +337,6 @@ Every mature claim must be represented by a complete proof cell:
 | active status | status after the above fields, not before |
 
 A row without support, owner and falsification hook is not an active claim.
-
 ## 05.6 Status vocabulary
 
 Status is not evidence. Status is the final ledger projection of theorem/cert/external comparison protocol ownership.
@@ -388,7 +380,7 @@ Each entry carries its own status; none may be cited as evidence until its cert 
 
 **Frontier status (Iteration 22 strike).** Closed: the finite α-seam cluster (α_alg, Δα, μ₁/μ₂), the φ-continuum / cylinder-trace layer and its profinite code-extensional conjugacy, bridge compression, the finite gauge floor, the finite Sturmian cylinder equivalence, the internal three-zone baryon CP coordinate `η̄=3δ₀`, the **finite phason ratio sequence** `w_N=φ^{n-1}/(φⁿ−1)→+φ⁻¹` (`D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001`), and the **lepton indirect Green/Puiseux scout** (`D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001`, documentation closure). No-go: the **direct** bare-graph→ 17-digit-lepton-decimal route. The open-joints register is **not empty** — active frontier targets remain: the explicit phason continuum function `w_D0(u)` + its sign/normalization map to physical `w_DE<0` (the finite `w_N` is positive, so it is not yet the physical EOS); the charged-lepton coefficient origin via an *indirect* derivation (the direct route is no-go'd; decimals stay HYP); and the analytic/external continuum readings (smooth-manifold, C\*, the profinite Dixmier residue realization, classical Adler–Weiss) which stay passports / external owners unless internally formalized.
 
-**Five-front construction strike (Iteration 22).** Five hard fronts received concrete owners/scaffolds (Book 05 ledger §05.0). Newly closed (internal): the Feshbach–Schur **finite-pole-sum** residue `= α_alg⁻¹` (`D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001`, CERT-CLOSED) and the exact neutrino norm-square `P_sterile=Δ_α²` (`D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001`, CERT-CLOSED); the shell-torus **Puiseux ramification row** `(0,1/4,1/3)` (`D0-LEPTON-GREEN-PUISEUX-OPERATOR-001`, OPERATOR-SCAFFOLD) and the internal Fibonacci-word coefficient section (`D0-LEPTON-STURMIAN-PUISEUX-COEFFICIENTS-001`); the internal **Lucas-trace Markov partition** with κ-stability (`D0-LUCAS-VORONOI-MARKOV-PARTITION-001`, OPERATOR-SCAFFOLD); the **Galois-forced** dark-energy sign `σ(φ⁻¹)=−φ<0` (`D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`, CERT-CLOSED) and the CPL passport (`D0-PHASON-WZ-CPL-PASSPORT-001`, PASSPORT-CLOSED); the **GHP golden Cauchy bound** `Σ C·δ₀^k<∞` (`D0-GHP-GOLDEN-CAUCHY-BOUND-001`, CERT-CLOSED) and the finite-graph Connes=geodesic owner (`D0-CONNES-GRAPH-DISTANCE-OWNER-001`, CERT-CLOSED). Still PROOF-TARGET (each with an exact named missing artifact): the residue→`Δ_α` Dixmier normalization (`D0-ALPHA-FESHBACH-DIXMIER-OWNER-001`); the lepton decimal section / EFT–IR functor (`D0-LEPTON-PUISEUX-DECIMAL-SECTION-001`); the Voronoi-exact Markov property (`D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001`) and Williams shift-equivalence (`D0-TORAL-TIME-MARKOV-CONJUGACY-001`); the explicit log-det window roots `λ_c,λ_r` (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`). The smooth-manifold reconstruction stays PASSPORT-CLOSED (`D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001`, prose MECH-LIMIT); the register remains **non-empty**, and no survey/CODATA/PDG datum was used as a defining input.
+**Five-front construction strike (Iteration 22).** Five hard fronts received concrete owners/scaffolds (Book 05 ledger §05.0). Newly closed (internal): the Feshbach–Schur **finite-pole-sum** residue `= α_alg⁻¹` (`D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001`, CERT-CLOSED) and the exact neutrino norm-square `P_sterile=Δ_α²` (`D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001`, CERT-CLOSED); the shell-torus **Puiseux ramification row** `(0,1/4,1/3)` (`D0-LEPTON-GREEN-PUISEUX-OPERATOR-001`, OPERATOR-SCAFFOLD) and the internal Fibonacci-word coefficient section (`D0-LEPTON-STURMIAN-PUISEUX-COEFFICIENTS-001`); the internal **Lucas-trace Markov partition** with κ-stability (`D0-LUCAS-VORONOI-MARKOV-PARTITION-001`, OPERATOR-SCAFFOLD); the **Galois-forced** dark-energy sign `σ(φ⁻¹)=−φ<0` (`D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`, CERT-CLOSED) and the CPL passport (`D0-PHASON-WZ-CPL-PASSPORT-001`, PASSPORT-CLOSED); the **GHP golden Cauchy bound** `Σ C·δ₀^k<∞` (`D0-GHP-GOLDEN-CAUCHY-BOUND-001`, CERT-CLOSED) and the finite-graph Connes=geodesic owner (`D0-CONNES-GRAPH-DISTANCE-OWNER-001`, CERT-CLOSED). Still PROOF-TARGET (each with an exact named missing artifact): the residue→`Δ_α` Dixmier normalization (`D0-ALPHA-FESHBACH-DIXMIER-OWNER-001`); the lepton decimal section / EFT–IR functor (`D0-LEPTON-PUISEUX-DECIMAL-SECTION-001`); Williams shift-equivalence (`D0-TORAL-TIME-MARKOV-CONJUGACY-001`; its Voronoi-exact-Markov companion has since closed on the symbolic leg — `D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001`, CERT-CLOSED); the explicit log-det window roots `λ_c,λ_r` (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`). The smooth-manifold reconstruction stays PASSPORT-CLOSED (`D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001`, prose MECH-LIMIT); the register remains **non-empty**, and no survey/CODATA/PDG datum was used as a defining input.
 
 **Four-physics-front strike + standard-language (Rosetta) pass (Iteration 22).** Standard-language normalization is realized by the master crosswalk (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`) + a per-book opening note + the guard `vp_rosetta_standard_language_guard.py` / `vp_standard_language_rewrite_integrity.py` — preserving every claim ID, formula, owner, and the phason-`sync`-anchored body prose (a destructive 342-fragment rewrite is deliberately NOT done, as it would break the green `sync` guards). Newly closed (internal): SM hypercharge **anomaly cancellation** on `K(9,11,13)` (`D0-SM-ANOMALY-CANCELLATION-OWNER-001`, CERT-CLOSED, consolidating CORE `D0-GAUGE-MATTER-002`); the **minimal hypercharge denominator 6**, derived by integer-charge quantization of 3-quark baryons (`D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001`, CERT-CLOSED, **promoted from PROOF-TARGET**, Lean `D0.Matter.HyperchargeMinimalDenominator`); the finite-rank **Page curve** `min(n_A,n_E)/D` + **information-unitarity** rank conservation (`D0-PAGE-CURVE-FINITE-RANK-OWNER-001`, `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001`, CERT-CLOSED) + the finite Feshbach radiation channel (`D0-HORIZON-FESHBACH-RADIATION-OWNER-001`); the rank-3 **Yukawa shell-overlap** tensor (`D0-YUKAWA-SHELL-OVERLAP-MATRIX-001`, CERT-CLOSED); the graph **connectivity threshold** `t=0` (`D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001`, CERT-CLOSED) replacing the inflaton (`D0-REHEATING-PERCOLATION-OWNER-001`). Still PROOF-TARGET (exact missing artifact each): the full hypercharge row from the (327-dim, underdetermined) divergence-free graph flow (`D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001`); the Higgs-VEV condensation EOM (`D0-HIGGS-PHASON-CONDENSATION-OWNER-001`) and the lepton-Yukawa mass hierarchy (`D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001`); the reheating energy budget (`D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001`) and `n_s` from the Laplacian spectrum (`D0-CMB-PHASON-SPECTRUM-OWNER-001`). The register stays **non-empty**; no SM charge table, 246 GeV, Planck `n_s`, or PDG/CODATA datum was used as a defining input.
 
@@ -424,13 +416,13 @@ Each entry carries its own status; none may be cited as evidence until its cert 
 
 **vNext+1 33-scene anchor (Outcome D + spectral obstruction).** Canonical-line classification: unique trace=cyclic line; 33-scene quotient: structure `(24,8,1)` != scene `(9,11,13)` (no canonical quotient/Xi); scale: not co-selected; spectral: `{1,3,8,21}` != `{1,2,8,10,12}` (scale-independent NO-GO); Feshbach: blocked (no Xi). Primitive-dependence: `PRIM-CANONICAL-33-SCENE-ANCHOR` REFUTED; `PRIM-DIRAC-SCALE-SELECTION` and `PRIM-COMPARISON-MAP-XI-N` remain INDEPENDENT (Phase F result 4). Lean `D0.VNext.{AFSceneAnchorDimensionAudit, AFOneDimensionalReductionClassification, AFD0SpectralInvariantComparison}`. No physical sector closed; 34-1=33 is not a quotient.
 
-**vNext+2 scene-native refinement (Outcome D).** Scene fingerprint of K(9,11,13) owned (CERT, `D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001`). Refinement rule: underdetermined -- >=2 admissible history families (all-walks/non-backtracking/directed-edge) inequivalent (`D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`, NO-GO). Xi: not canonical (NO-GO); endpoint measure: non-unique; spectral lift / Feshbach: PROOF-TARGET (need Xi); Dirac scale: not unique (NO-GO). The AF route is NOT revived. New primitive `PRIM-SCENE-HISTORY-REFINEMENT-RULE`; `PRIM-COMPARISON-MAP-XI-N` and `PRIM-DIRAC-SCALE-SELECTION` remain INDEPENDENT. Lean `D0.VNext2.{SceneSpectralFingerprint, SceneNativeRefinementClassification}`. No physical sector closed; no 34-1=33; no pullback operator.## 05.7 One promotion process
+**vNext+2 scene-native refinement (Outcome D).** Scene fingerprint of K(9,11,13) owned (CERT, `D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001`). Refinement rule: underdetermined -- >=2 admissible history families (all-walks/non-backtracking/directed-edge) inequivalent (`D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`, NO-GO). Xi: not canonical (NO-GO); endpoint measure: non-unique; spectral lift / Feshbach: PROOF-TARGET (need Xi); Dirac scale: not unique (NO-GO). The AF route is NOT revived. New primitive `PRIM-SCENE-HISTORY-REFINEMENT-RULE`; `PRIM-COMPARISON-MAP-XI-N` and `PRIM-DIRAC-SCALE-SELECTION` remain INDEPENDENT. Lean `D0.VNext2.{SceneSpectralFingerprint, SceneNativeRefinementClassification}`. No physical sector closed; no 34-1=33; no pullback operator.
+## 05.7 One promotion process
 
 The active promotion process follows a strict sequence:
 support > operator > theorem/cert > book integration > optional external comparison protocol > ledger status.
 
 Demotion is mandatory the moment any link in this sequence is broken. Under no circumstances can a status be promoted without the underlying theorem/cert being finalized and integrated first.
-
 ## 05.8 Forbidden shortcuts
 
 The following shortcuts are invalid:
@@ -522,6 +514,14 @@ Worked reforges, kept as calibration: *zone-matrix "char.poly ⇒ φ⁻¹"* (§0
 ### 05.8.U Before "I derive X": grep the registry and the GOLDEN ledger first
 
 The criterion of value is the **registry closure**, never the mere presence of something in a prior corpus. Two failure modes this rule blocks: (i) *re-deriving* what the registry already owns (a duplicate, or a weaker re-derivation that competes with the canonical owner); (ii) the false equation **"it is absent from the active corpus ⇒ it is valuable ⇒ add it"** — a result may be absent precisely *because the registry closes it better, holds it out of core, or marks it no-go*. So before opening any "I derive/return X": (1) grep `theory_status_map.csv` / `CLAIM_TO_LEAN_MAP.csv` for an existing owner — if found, *cross-reference* it, do not duplicate or compete; (2) grep `03_THEORY_MAP/GOLDEN_COVERAGE_LEDGER` — a GOLDEN result may already be present, or be a *definition without a derivation* (so "restoring" it would smuggle in an unproved step). Restore/return only what is **genuinely open AND not better-closed elsewhere AND not a no-go**; everything else is a cross-ref or is left alone. Worked calibration: `m_rest=m₀·W` is GOLDEN but its `W` are *undefined there* and the numeric mass spectrum is a deliberate no-go (`D0-GEN-MASS-001`), so `W` is kept a physical input, **not** core; the golden-split `W_int=W_ext²` is the already-CORE primitive `p+p²=1`, so it is cross-reffed, not re-derived.
+
+### 05.8.V Within-zone labels as gauge-fixing data (organizing lemma — candidate reading layer)
+
+Candidate reading layer, not a closure: registry row `D0-WITHINZONE-GAUGE-ORGANIZING-LEMMA-001` (PROOF-TARGET, named open obligation) + `TORSOR_GAUGE_SYNTHESIS_MEMO.md` v2.1 (post-skeptic; companion `torsor_gauge_check.py` 28/28). The scene owns the TORSOR of within-zone labelings (structure group `S₉×S₁₁×S₁₃`, simply transitive), not a point of it; every import of a specific labeling is typed by a computable four-cell ledger — **A** (invariant ring: where internal results live), **B** (physical invariant underdetermination, split B-meas / B-adj / B-ext), **C** (point-choice on an owned torsor: contentless gauge fixing), **D** (un-owned ansatz structure: NOT contentless). The wall map has three continents — freedom walls file as C (1) or B/D (2), plus a disjoint existence/insufficiency continent (3) the lemma is silent on — with an explicit border criterion: empty admissible set ⇒ existence wall; alternatives agreeing on all invariant content ⇒ insufficiency wall; differing on it ⇒ freedom wall. Candidate language; row stays open.
+
+### 05.8.W Extremality principles behind the no-gos (saturation + invariant-minimality — candidate reading layer)
+
+Candidate reading layer, not closures: registry rows `D0-P-M1-SATURATION-001` (umbrella; corollaries `D0-P-SUBCRIT-001`, `D0-P-ABELIAN-001`) and `D0-P-INVARIANT-MINIMAL-001` — all release-status PROOF-TARGET (script-certified, mutation-tested; Lean-side lifts owner-gated) — record the POSITIVE face of the no-go discipline above (`RAISE_M1CORE_SATURATION_MEMO.md`, `RAISE_SELECTOR_MINIMAL_MEMO.md`). Shape (P-M1-SATURATION): for an owned order/valuation functional `F` on an admissible class `C`, the M1 present-core sub-object is the unique `F`-extremum in `C`, and (no-go holds) ⟺ (the extremum is saturated); the witness just past the extremum lies OUTSIDE `C` — exactly the external import each no-go names. Four instances, one schema: COLOUR rigidity-extremality (the `+2` frame `{24,22,20}` is the joint minimum of commutant dimension → 3 and swap order → 1; colour `⊗ℂ³` stays external, never scene-owned), ALPHA subcritical-extremality (`rate(a)=φ^{a−3}`, `a≤2` the maximal trace-class region, `a=3` the M1-forbidden wall — `D0-P-SUBCRIT-001`), R1 maximal-commutant (`dim Comm = 12 = 3²+1+1+1`, the full centralizer), HIGGS maximal-abelian (present-core maximal T-commutative; W1 leg only, the W2 SSB sign stays external — `D0-P-ABELIAN-001`). Grounding: `D0-P-INVARIANT-MINIMAL-001` (lean-side LEAN_PROVED via `invariant_minimal_meet`, the universal-∀ over partition classifiers; release stays PROOF-TARGET) exhibits `R^Aut` = the class functions (dim 3) as the unique minimal observable algebra, and the 22 P-GAUGE-M1 within-zone torsors ground as Aut-orbits of this single extremal fixed-point algebra. The four saturation-instance rows stay NO-GO; nothing here promotes past a boundary.
 ## 05.9 Negative controls and hostile uniqueness
 
 Negative controls are active evidence.  They protect D0 from overfitting and
@@ -548,10 +548,7 @@ what exact assumption must change for another result to appear?
 
 A no-go result is not a weakness when it prevents a false promotion.  It is a
 boundary theorem.
-
 ## 05.10 Certificate tiers
-
-
 
 | Tier | Role | Public meaning |
 |---|---|---|
@@ -563,7 +560,6 @@ boundary theorem.
 A claim is release-grade only when its primary certificate is callable from a
 release runner or its Lean theorem is part of the active import spine.  A proof
 cell without a runner is manuscript support, not release support.
-
 ## 05.10a Gap-label certificate discipline
 
 Rules for gap labels:
@@ -574,7 +570,6 @@ Rules for gap labels:
 5. Post-hoc relabeling after PDG/BAO/CKM comparison is a FAIL.
 
 The formal verification owner is a finite gap-labeling certificate over the D0 tiling hull, which must return PASS. The underlying Lean formalization of gap stability is checked by its named Lean owner.
-
 ## 05.11 External-data and scheme discipline
 
 External data are allowed only in declared external comparison protocols.  A legal comparison has
@@ -602,7 +597,6 @@ negative controls.
 
 No row, phase convention, renormalization convention, likelihood cut, survey
 subset or external baseline may be chosen after seeing the comparison residual.
-
 ## 05.11a Risky prediction passport discipline
 
 IceCube, LIGO, CMB, BAO and galaxy-lensing external comparison protocols require:
@@ -613,7 +607,6 @@ IceCube, LIGO, CMB, BAO and galaxy-lensing external comparison protocols require
 5. no hidden retuning.
 
 The owners are the finite certificates for phason domain-wall mesons (K0 labels), CKM phason holonomy (K0), and phason-flip entropy SDE (gap labels). They must run under this frozen regime.
-
 ## 05.12 Theory-improvement gate
 
 A patch improves the theory only if it removes a mathematical gap. The accepted forms are:
@@ -632,7 +625,6 @@ A patch does not improve the theory if it only adds:
 - wording that makes a conditional lemma sound like a full derivation.
 
 This section is the acceptance rule for all later book edits.
-
 ## 05.12a Destructive NO-GO stress tests
 
 A destructive certificate attempts an illegal shortcut and reports which invariant collapses. It does not add new physics. It strengthens the boundary by showing why the shortcut cannot be admitted.
@@ -654,7 +646,6 @@ Admissible destructive test cases include:
 - density-only SRC scalar failure.
 
 The nuclear SRC destructive tests are owned by their named Lean owner. The CaFe finite witness blocks promotion of a mass-only, neutron-excess-only or density-only scalar because the dominant readout is the matched proton/neutron shell-contact projector overlap.
-
 ## 05.13 Current inherited priority gates
 
 The active high-value gates are the following.  They are listed here not as
@@ -682,14 +673,9 @@ status trophies but as audit obligations.
 A gate remains conditional where its owner is a certificate object rather than an
 upstream derivation from earlier D0 primitives.
 
-Gravity closure requires: finite graph/entropy cert; explicit Pi_TT and W_TT;
-higher-curvature cut; spectral A2/EH bridge; no continuum constants imported as
-core.
-
 Scalar/Yukawa promotion is accepted only if it points to the constructive
 rank-2 scalar projector theorem.  External Higgs mass, VEV, SM potential, or
 PDG data cannot promote Yukawa core terms.
-
 
 The compact owner index for the active priority gates is:
 
@@ -771,7 +757,6 @@ Tick-gauge / Lorentz strengthening:
   finite_lorentz_tick_gauge_cone_speed_closed
   may not introduce a second D0 propagation primitive
 ```
-
 ## 05.14 Sector verification protocols
 
 ### Foundations
@@ -819,7 +804,6 @@ Poisson response, TT quotient, finite spin-2 dynamics, spectral/EH bridge,
 archive entropy flow, survey transfer and external likelihoods.  BAO, DESI,
 Hubble or S_DE comparisons are external comparison protocols only after the internal archive object is
 frozen.
-
 ## 05.15 Falsification matrix
 
 | Claim type | Failure mode |
@@ -1019,7 +1003,6 @@ dataset pinning and multiple-testing rules are mandatory.  A geometry diagnostic
 may not tune a core operator.
 
 The optional `lucas_trace_layer_diagnostic` may compare downstream trace-layer residues, but it cannot choose the time operator `T` or promote PDG agreement to a toral-automorphism theorem.
-
 ## 05.16 Reproducibility requirements
 
 Each public archive must include:
@@ -1037,7 +1020,6 @@ Each public archive must include:
 
 A result that cannot be reproduced must be marked by its exact failure mode, not
 absorbed into prose.
-
 ## 05.17 ABCD and capacity proof-cell rule
 
 ABCD is not four decorative scalar equations.  A promoted ABCD claim must expose
@@ -1061,7 +1043,6 @@ D2 -> ABCD -> Ω8 -> V9 -> (V9,V11,V13)
 
 and must state whether the resulting object is support, carrier, readout,
 selector, action term or bridge input.
-
 ## 05.18 Bridge proof-cell rule
 
 Bridge-facing claims require an executed proof cell, not bridge prose.  The
@@ -1089,7 +1070,6 @@ KKT, moment or trace residual checks;
 convex-response or response-order checks;
 one-command certificate run.
 ```
-
 ## 05.19 Gauge, matter and anomaly release rule
 
 A gauge-carrier claim is not promoted by writing `8+3+1` or by naming Standard
@@ -1117,7 +1097,6 @@ smooth/EFT bridge.
 ```
 
 Only the first two can be core claims.  The third is a bridge.
-
 ## 05.20 Empirical cosmology and survey rule
 
 An empirical cosmology claim may not rely on archived result replay alone.  It
@@ -1156,30 +1135,22 @@ may falsify or validate a frozen D0 cosmology object but never create one
 operational meaning of the consistency claim.
 ## 05.21 Lepton magnetic-moment and precision bridge rule
 A precision bridge claim must expose finite support, finite transport/trace readout, declared external scheme, uncertainty and negative-control protocol. Matching a central residual is not release evidence by itself.
-
 ## 05.22 Transition theorem promotion rule
 A continuum transition claim must expose finite support, operator lock, finite algebraic/spectral certificate, bridge hypotheses, external dictionary and negative controls. A continuum word does not replace the finite theorem that feeds it.
-
 ## 05.23 What Book 05 proves
 Book 05 proves the verification grammar of the corpus: D0 claim status is typed by construction, owner, bridge discipline and falsification hook. Every active claim must route to proof, no-go, certificate, bridge or demotion.
-
 ## 05.24 Editorial rule for this book
 Book 05 is a coherent contract, not a release diary or storage box. Historical material belongs outside active books unless integrated into the relevant rule.
-
 ## 05.25 Standard-language and external-runner compression
 D0-local terms are allowed in headings, Lean owners and cert names; prose must pair them with standard finite objects. External protocols run through the external-passport runner and write to the passport results store; PASS requires pinned data/hash/fields/baseline and no retuning.
-
 ## 05.26 Trace-heat-capacity and empirical no-go summary
 Trace-heat-capacity gravity is split: core = detector ladder, Lucas traces, heat moments, scene counts and A/4 capacity; bridge = macro gravity witness. No-go controls include SRC scalar-only controls, LIGO spin-only, SPARC arbitrary-kernel repair, DESI root/window/H0/Omega_m/rd refit, continuum topology/theta primitives and continuum Yang-Mills mass-gap import.
-
 ## 05.27 CVFT operator admissibility
 Closed-vacuum feedback uses `F_N=P_NU_N^\dagger Q_NU_NP_N` as feedback-return and `R_N=D_N^\dagger D_N` as positive readout. Allowed identities are `F_N=(Q_NU_NP_N)^\dagger(Q_NU_NP_N)`, `F_N=P_N-(P_NU_NP_N)^\dagger(P_NU_NP_N)`, positivity and `F_N=0 iff Q_NU_NP_N=0`; `Q_N != 0 -> F_N != 0` is forbidden. Resolvent/log-det expansions require `|z|rho(F_N)<1` and `-log det`.
 
 The partition function is `Z_N=Tr exp(-beta Delta_N(V)) det(I-zF_N(V))^{-1}` and feedback pressure uses finite `d_V`. Matter candidates may use `F_N psi=r psi`; complex masses/widths require `U_eff=P_NU_NP_N` or Feshbach-Schur. Baryon F3a/F3b/F3c are scaffold/spin-flavour/Core13-link certified before PDG labels.
-
 ## 05.28 Closure classes
 Closure classes: `MASTER-BOOTSTRAP-CORE`, `GAUGE-BOUNDARY-LAW`, `HORIZON-EMISSION-LAW`, `EDGE-TRACE-COEFFICIENT-TARGET`, `SCALAR-PROJECTOR-CERT-CLOSED`, `YUKAWA-SECTION-CERT-CLOSED`, `MESON-TYPED-TRANSFER-CERT-CLOSED`, `SPIN-FLAVOUR-CARRIER-CERTIFIED`. Forbidden shortcuts: continuum volume derivative before finite halt, second mass anchor, rank-40 as full baryon carrier, rank boundary as A/4 proof, complex poles from bare positive `F`, PDG names before frozen poles, thermality as primitive horizon emission and alpha by post-hoc RG fit.
-
 ## 05.29 Informational mechanics and seam closure classes
 
 ### Closure classes

@@ -557,6 +557,22 @@ n=17: L_17=3571  -> I_17 ≈ 23.340
 
 The jump at `n=15` marks where control over the carrier is lost: capacity outruns the `9n` budget, so no further zone can be registered as a coherent generation without an external catalog to label it (⊥M1). The two routes agree — the trace count fixes the realized generation number, the Lucas impedance fixes *why the ladder terminates* — and neither is fitted. **[^b04-23].** Cross-check obligation: GOLDEN CHK 61.2 (control-loss check at `n=15`).
 
+**[THE 04.R1-B] The generation space IS the minimal observable algebra [bridge].**
+The OWNED generation space — the trivial-isotype multiplicity space `span{1₉,1₁₁,1₁₃}`
+the `M₃` commutant block acts on (Root R1, `D0-MATTER-REP-001`) — and the extremal-
+minimal observable algebra `R^Aut = (ℂ^V)^Aut` (`D0-P-INVARIANT-MINIMAL-001`) are ONE
+subspace of `ℂ³³`: same basis, dim 3, same Reynolds projector
+(`D0-INVARIANT-GENERATION-BRIDGE-001`). The identity is a definition-unfolding (fixed
+space = trivial isotype); the content is the identification of two separately certified
+chains and the composite reading: *the generation degrees of freedom are exactly the
+smallest thing an observer of the finite scene can measure — a zone-axis generation index is a
+class function* (e/μ/τ-role labeling external, `PRIM-FINITE-SPECTRAL-TRIPLE-REP`). Owned exactly as far as csv:555: no-proper-refinement
+rests on LEAN_PROVED `canonical_within_zone_selector_nogo`; class-function-universality is
+EVIDENCE-grade (row-549 scope, RR-1/RR-2). The zone partition is the single owned root of
+both faces — "dim R^Aut = 3" and "3 generations" as two confirmations counts one object
+twice. Nothing new forced: count 3 owned by the frozen finite scene; Weyl-role assignment stays
+unforced (`GL(3)` freedom; idempotent axes = the owned typed-collapse zone axes).
+
 ### 04.4.2 Mesons as phason domain walls
 
 Definition. The lower-Hodge value 400 is the phason domain-wall tension seed on the generation-blind operator. Physical meson transfer requires:

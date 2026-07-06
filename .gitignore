@@ -88,3 +88,8 @@ node_modules/
 !05_CERTS/bridge_params_schema.json
 !05_CERTS/bridge_schema.json
 !05_CERTS/locked_core_params.json
+
+# Claude Code session internals (not part of the research corpus)
+.claude
+# stray root scratch (canonical copy lives in 09_LEAN_FORMALIZATION/D0/VNext2/)
+/SceneTripleUnique.lean

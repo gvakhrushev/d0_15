@@ -20,6 +20,7 @@ import D0.Algebra.LorentzNoGo
 import D0.Algebra.RoleSignature
 import D0.Born
 import D0.Bridge.AdlerWeissBridge
+import D0.Bridge.Assumptions.ClassRecordIsAddressable
 import D0.Bridge.Assumptions.ExternalHST
 import D0.Bridge.Assumptions.Frobenius
 import D0.Bridge.Assumptions.HeatTraceWeyl
@@ -50,6 +51,7 @@ import D0.Bridge.SmoothMetricBridge
 import D0.Bridge.TickGaugeLorentz
 import D0.Bridge.TomitaTakesakiBridge
 import D0.Bridge.VerlindeEntropicBridge
+import D0.CVFT.BoundaryRankLocalization
 import D0.Capacity
 import D0.Claims.Book04Selectors
 import D0.Claims.CarrierNotIcosahedral
@@ -62,6 +64,7 @@ import D0.Claims.FibonacciIfBridge
 import D0.Claims.GluingAnomalyTime
 import D0.Claims.HiggsYukawaBlock
 import D0.Claims.IcosianE8GramFinite
+import D0.Claims.InvariantGenerationBridge
 import D0.Claims.JonesIndexPhi
 import D0.Claims.KTheoryGapModule
 import D0.Claims.KernelZoneSplit
@@ -92,6 +95,7 @@ import D0.Condensed.CondensedPhiVacuum
 import D0.Condensed.OperatorNaturality
 import D0.Condensed.ProfiniteSupport
 import D0.Condensed.ProjectiveSystem
+import D0.CondensedAnchor.DetectorSupportGoldenWeight
 import D0.Core.BornFinite
 import D0.Core.BornFiniteEffects
 import D0.Core.BornQuadraticOrigin
@@ -104,6 +108,8 @@ import D0.Core.FixedDetectorTimeLadder
 import D0.Core.MatrixResponse
 import D0.Core.Phi
 import D0.Core.PositiveResponse
+import D0.Core.WRecArchitecture
+import D0.Core.WitnessForcing
 import D0.Cosmology.ArchiveContractionCriterion
 import D0.Cosmology.ArchiveConvexity
 import D0.Cosmology.ArchiveHomogeneousState
@@ -203,9 +209,11 @@ import D0.Extensions.X5.Soundness.NondegenerateCompatibility
 import D0.Extensions.X5.Synthesis
 import D0.Extensions.X5.Synthesis.NondegenerateFullModel
 import D0.Foundation.BranchSymplecticForcing
+import D0.Foundation.CanonicalSelectorNoGo
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.GraphSpaceNoIsometry
+import D0.Foundation.InvariantMinimal
 import D0.Foundation.IsotropizationResidual
 import D0.Foundation.LucasDefectSign
 import D0.Foundation.M1Predicate
@@ -300,6 +308,7 @@ import D0.Geometry.ToralIntegralConjugacy
 import D0.Geometry.ToralLucasPeriodicSeed
 import D0.Geometry.ToralSeedMarkovMaximalityNoGo
 import D0.Geometry.TorusCore13GeometryOrigin
+import D0.Geometry.TorusShellAttachment
 import D0.Gravity
 import D0.Gravity.BlackHoleCapacityA4
 import D0.Gravity.BoundaryRelaxationSpectrum
@@ -490,6 +499,7 @@ import D0.Synthesis.RankCausalCone
 import D0.Synthesis.RankCausalConeForcing
 import D0.Synthesis.UnitySplitSpacetime
 import D0.Synthesis.Z2SpinorCover
+import D0.TasksCenterAttack.LeptonWitnessBranchConstruction
 import D0.TheoremLedger.ActiveClosureIndex
 import D0.TheoremLedger.ClaimMap
 import D0.TheoremLedger.ClosedVacuumFeedbackIndex
@@ -545,6 +555,3 @@ import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary
 import D0.Verification.TotalExtensionPrimitiveMinimality
 import D0.Verification.TotalPublicationReadiness
-import D0.CondensedAnchor.DetectorSupportGoldenWeight
-import D0.Geometry.TorusShellAttachment
-import D0.TasksCenterAttack.LeptonWitnessBranchConstruction

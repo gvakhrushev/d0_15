@@ -8,6 +8,7 @@ import math
 
 
 def main() -> int:
+    print("RETIRED_2026-07-05_SEE_REFORGED: this cert had fabricated controls (see _QUARANTINE/QUARANTINE_LEDGER.md); superseded by vp_cvft_refined_logdet_rank_bound_REFORGED.py; output below is NON-LOAD-BEARING")
     eigs = [0.8, 0.4, 0.0]
     z = 0.45 + 0.2j
     rho = max(eigs)

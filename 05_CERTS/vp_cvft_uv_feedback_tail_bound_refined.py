@@ -5,6 +5,7 @@ from __future__ import annotations
 
 
 def main() -> int:
+    print("RETIRED_2026-07-05_SEE_REFORGED: this cert had fabricated controls (see _QUARANTINE/QUARANTINE_LEDGER.md); superseded by vp_cvft_uv_feedback_tail_bound_refined_REFORGED.py; output below is NON-LOAD-BEARING")
     eigs = [0.7, 0.25, 0.0]
     z_abs = 0.5
     rho = max(eigs)

@@ -4,5 +4,5 @@
 - missing extracted QNM mode table
 
 Required preregistered inputs:
-- `05_CERTS\data\qnm_delta0_model.json`
-- `05_CERTS\data\qnm_extracted_modes.csv`
+- `05_CERTS/data/qnm_delta0_model.json`
+- `05_CERTS/data/qnm_extracted_modes.csv`

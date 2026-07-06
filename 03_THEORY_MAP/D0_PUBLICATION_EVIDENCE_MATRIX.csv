@@ -133,10 +133,10 @@ D0-CVFT-F1,NO-GO,NO-GO,D0.Spectral.DeltaAlphaResidueBlocked
 D0-CVFT-F2,PROOF-TARGET,PROOF-TARGET,vp_horizon_emission_conjugate_feedback.py
 D0-CVFT-F3,CORE,CERT-CLOSED,vp_cvft_baryon_s3_scaffold.py
 D0-CVFT-F3B,CORE,CORE-FORMALIZED,D0.Matter.BaryonSpinFlavourRanks
-D0-CVFT-F4,CORE,CERT-CLOSED,vp_cvft_uv_feedback_tail_bound_refined.py;vp_cvft_ueff_pole_discipline.py
+D0-CVFT-F4,CORE,CERT-CLOSED,vp_cvft_uv_feedback_tail_bound_refined_REFORGED.py;vp_cvft_ueff_pole_discipline_REFORGED.py
 D0-CVFT-F5,PROOF-TARGET,PROOF-TARGET,
 D0-CVFT-F6,PROOF-TARGET,PROOF-TARGET,vp_gauge_boundary_commutator_obstruction.py
-D0-CVFT-F7,CORE,CERT-CLOSED,vp_cvft_boundary_channel_rank.py;vp_cvft_refined_logdet_rank_bound.py
+D0-CVFT-F7,CORE,CERT-CLOSED,vp_cvft_boundary_channel_rank_REFORGED.py;vp_cvft_refined_logdet_rank_bound_REFORGED.py
 D0-CVFT-F8,PROOF-TARGET,PROOF-TARGET,
 D0-IM-001,CORE,CORE-FORMALIZED,D0.IM.SelfSubstrateTrace
 D0-IM-002,CORE,CORE-FORMALIZED,D0.IM.FractalTick

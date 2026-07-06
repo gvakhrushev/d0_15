@@ -153,7 +153,9 @@ def main() -> int:
             if old != new:
                 stale.append(path.relative_to(s.ROOT).as_posix())
         else:
-            path.write_text(new, encoding="utf-8", newline="")
+            # Path.write_text(newline=...) is Python 3.10+; open(newline=...) works on 3.9 too.
+            with path.open("w", encoding="utf-8", newline="") as f:
+                f.write(new)
             print(f"wrote {path.relative_to(s.ROOT).as_posix()}")
     if args.check:
         if stale:

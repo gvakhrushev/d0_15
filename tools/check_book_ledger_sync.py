@@ -34,6 +34,65 @@ CLOSED = {"CORE-FORMALIZED","CERT-CLOSED","NO_GO_PROVED","PASSPORT-CLOSED","EMPI
 OPEN   = {"PROOF-TARGET","OPEN","DEPRECATED"}
 def tier(rs): return "closed" if rs in CLOSED else ("open" if rs in OPEN else "mid")
 
+# --- demoted-row closure-prose check (mechanical batch 2026-07-05) -------------------
+# tier() maps CORE_BRIDGE_SPLIT (and NO-GO) to "mid", so the over-claim scan above is
+# blind to closure prose written against *demoted/split* rows. This pass closes that
+# hole, deliberately conservatively (no false-positive storm): it flags ONLY an exact
+# claim_id mention (or an exact lean_theorem-name mention) of a demoted row with
+# closure vocabulary within +-DEMOTED_LINES lines, direct negations excluded, same
+# allowlist suppression as the over-claim class.
+DEMOTED_RS   = {"CORE_BRIDGE_SPLIT"}                      # release-side demotion
+DEMOTED_LEAN = {"LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS"}    # lean-side demotion marker
+# Release tiers that already disclose the hedge/negative themselves. A lean-demoted row
+# sitting on one of these tiers is honestly labeled, and the 2026-07-05 acceptance sweep
+# showed prose near such rows trips only benign-attachment hits (closure words belonging
+# to ADJACENT CERT-CLOSED claims) — so the lean-side branch skips them. It also skips
+# CLOSED tiers (there prose closure agrees with the ledger; ledger-vs-lean inflation is
+# vp_status_inflation_audit's jurisdiction, not a book-ledger sync issue).
+DEMOTED_LEAN_EXEMPT_RS = CLOSED | {"BRIDGE-ASSUMPTIONS-EXPLICIT","NO-GO","NO_GO_PROVED",
+                                   "BRIDGE-CALIBRATION","DEPRECATED"}
+DEMOTED_CLOSE_W = re.compile(r'\b(proved|proven|CERT-CLOSED|divergence-free)\b', re.I)
+DEMOTED_LINES = 3
+
+def demoted_rows(byid):
+    """claim_id -> (row, [exact mention tokens]) for demoted/split ledger rows."""
+    out = {}
+    for cid, r in byid.items():
+        rs = r.get("release_status","").strip()
+        if (rs in DEMOTED_RS
+                or (r.get("lean_status","").strip() in DEMOTED_LEAN
+                    and rs not in DEMOTED_LEAN_EXEMPT_RS)):
+            names = []
+            for nm in (r.get("lean_theorem","") or "").split(";"):
+                nm = nm.strip()
+                if not nm: continue
+                names.append(nm)
+                tail = nm.rsplit(".", 1)[-1]          # prose often cites the bare name
+                if tail != nm and len(tail) >= 6: names.append(tail)
+            out[cid] = (r, names)
+    return out
+
+def scan_demoted(demoted, allow):
+    flags = []; seen = set()
+    for f in section_files():
+        lines = Path(f).read_text(encoding="utf-8", errors="replace").splitlines()
+        base = os.path.basename(f)
+        for i, ln in enumerate(lines):
+            for cid, (row, names) in demoted.items():
+                if (cid, base) in seen: continue
+                hit = cid in ln or any(
+                    re.search(r'(?<![A-Za-z0-9_])' + re.escape(nm) + r'(?![A-Za-z0-9_])', ln)
+                    for nm in names)
+                if not hit: continue
+                win = "\n".join(lines[max(0, i - DEMOTED_LINES): i + DEMOTED_LINES + 1])
+                if DEMOTED_CLOSE_W.search(win) and not NEG_CLOSE.search(win):
+                    seen.add((cid, base))
+                    if any(cid == ac and asub in base for ac, asub in allow):
+                        continue  # verified-benign suppression (see allowlist)
+                    flags.append((cid, row.get("release_status"), row.get("lean_status"),
+                                  base, i + 1))
+    return flags
+
 IDPAT = re.compile(r'D0-[A-Z0-9]+(?:-[A-Z0-9]+)*-\d+')
 CLOSED_W = re.compile(r'\b(доказан\w*|теорем\w*|theorem|proved|forced|форсир\w*|выведен\w*|закрыт\w*|established|QED)\b|□', re.I)
 # a closure word negated within ~30 chars is NOT an assertion of closure
@@ -85,14 +144,20 @@ def main() -> int:
                     overs.append((cid, row.get("release_status"), os.path.basename(f))); seen.add(key)
             elif rt=="closed" and openw and not closed and strict and key not in seen:
                 unders.append((cid, row.get("release_status"), os.path.basename(f))); seen.add(key)
+    dflags = scan_demoted(demoted_rows(byid), allow)
     print(f"check_book_ledger_sync: scanned {len(section_files())} sections against {len(byid)} ledger claims")
     print(f"  PROSE-OVERCLAIM (prose claims closure the ledger denies): {len(overs)}")
     for cid,rs,fn in overs: print(f"    [PROSE-OVERCLAIM] {cid}  ledger={rs}  in {fn}")
+    print(f"  DEMOTED-CLOSURE-PROSE (prose asserts closure of a bridge-demoted/split row): {len(dflags)}")
+    for cid,rs,ls,fn,line in dflags:
+        print(f"    [DEMOTED-CLOSURE-PROSE] {cid}  ledger={rs}/{ls}  in {fn}:{line}")
     if strict:
         print(f"  PROSE-UNDERCLAIM (prose calls open what the ledger closed): {len(unders)}")
         for cid,rs,fn in unders: print(f"    [PROSE-UNDERCLAIM] {cid}  ledger={rs}  in {fn}")
     if overs:
         print("FAIL: prose over-claims closure beyond the ledger."); return 1
+    if dflags:
+        print("FAIL: prose asserts closure of demoted/split ledger rows."); return 1
     if strict and unders:
         print("FAIL (strict): prose under-claims closed ledger results."); return 1
     print("PASS"); return 0

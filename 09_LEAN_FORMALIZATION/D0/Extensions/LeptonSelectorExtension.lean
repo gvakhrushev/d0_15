@@ -1,3 +1,5 @@
+import D0.Dynamics.ToralAutomorphism
+import D0.Claims.Signature31Split
 import Mathlib.Tactic
 
 /-!
@@ -19,8 +21,26 @@ namespace D0.Extensions.LeptonSelectorExtension
 /-- The two cycle/orbit sizes of the shell-torus `Ueff = blockdiag(4-cycle, 3-cycle)`. -/
 def orbitSizes : List ℕ := [4, 3]
 
-/-- The number of generations to assign. -/
+/-- The number of generations to assign. NOT a bare literal: `numGenerations_eq_trace`
+and `numGenerations_eq_zone_count` below type it against the in-tree computed
+quantities (F4 wave, 2026-07-06). -/
 def numGenerations : ℕ := 3
+
+/-- **F4 typing (trace route): `numGenerations = Tr(T²)`** — the literal `3` is the trace
+of the squared D0 time-transition operator `T = !![0,1;1,-1]`
+(`D0.Dynamics.trace_T2`, `ToralAutomorphism.lean`), not a free parameter of this module. -/
+theorem numGenerations_eq_trace :
+    (numGenerations : ℤ) = Matrix.trace (D0.Dynamics.T ^ 2) := by
+  rw [D0.Dynamics.trace_T2]; rfl
+
+/-- **F4 typing (zone-count route): `numGenerations = #zones of K(9,11,13)`** — the
+literal `3` is the number of zones of the frozen scene, computed as the image-cardinality
+of the in-tree zone map `D0.Claims.zone31` (`Signature31Split.lean`). This is the OWNED
+root of the count (the generation space is the zone-indicator span, `D0-MATTER-REP-001`);
+the trace route above is the tick-dynamics face of the same number. -/
+theorem numGenerations_eq_zone_count :
+    numGenerations = (Finset.univ.image D0.Claims.zone31).card := by
+  native_decide
 
 /-- The orbit-keyed exponents `1/4` and `1/3` are distinct (the map is well-defined on orbits). -/
 theorem orbit_exponents_distinct : (1 / 4 : ℚ) ≠ 1 / 3 := by norm_num

@@ -32,6 +32,25 @@ discipline). All three were flagged by the transfer documents
    external authority for carrier uniqueness, with phantom cert
    `vp_openai_tower_kerr_359.py` (absent on disk). No such work exists.
 
+4. **Phantom cert (third incident, same class as #2/#3).**
+   `vp_minimal_holographic_carrier.py` — cited by the v17 draft's "Theorem 1.8"
+   ("K(9,11,13) is the unique minimal discrete holographic tensor network via
+   Darboux symplectic conjugate-pair (+2 dimension) rule") at
+   `03_THEORY_MAP/GOLDEN_COVERAGE_LEDGER.csv:811`
+   (row `v17-BOOK-01-CONDENSED-FOUNDATIONS-AND-GRAPH-BIRTH-0677`, §01.8). The
+   file is **absent on disk and never existed at any git commit** (verified
+   `git log --all` empty), and it is **not** registered as OPEN/PROOF-TARGET in
+   `CLAIM_TO_LEAN_MAP.csv` (grep = 0) — so it is a phantom cert, not an honest
+   open target. Same class as the Golod–Shafarevich (`vp_golod_shafarevich_gap_160.py`)
+   and "OpenAI 2026" (`vp_openai_tower_kerr_359.py`) phantom certs above: a
+   named cert propping up a v17 uniqueness "Theorem" with no computation behind
+   it. The *legitimate kernel* (the Darboux conjugate-pair `+2` extension rule
+   as an alternate forcing of the `(9,11,13)` window) is captured honestly and
+   without this cert in `_TASKS_CENTER_ATTACK/GAP_E_*_MEMO.md` and the
+   `D0-WINDOW-9-13-DISSOLVE-001` PROOF-TARGET; the v17 "Theorem 1.8 + cert"
+   framing is the over-claim to quarantine. Excluded from the corpus; do not
+   import or cite as a passing cert.
+
 ## Legitimate reach to harvest before deletion (Phase 8E)
 
 These v17 intuitions are sound and should be re-entered as proper `PROOF-TARGET`
@@ -96,3 +115,40 @@ only an over-read wrapper was retired, via `BOOK_05 §05.5` demotion discipline.
    (all `wₐ>0` or phantom `w₀<−1`). Corner sign is map-dependent, stays HYP; book
    `§08.13` corrected. SPARC galaxy rotation stays a recorded **negative** result
    (D0's archive-halo does not fit the SPARC rotation curves), not buried.
+
+## CVFT F4/F7 fabricated-control certs (retired 2026-07-05, replaced by reforges)
+
+Four `05_CERTS/vp_cvft_*.py` certs that were the sole backing for `D0-CVFT-F4`
+and `D0-CVFT-F7` CERT-CLOSED are **retired as fabricated-control theater** (sweep
+F2; same class as the v17 phantom certs above, except these files DO exist on
+disk — the fabrication is in their *contents*, not their absence). They are
+kept on disk (still named by index/board CSVs) but are **non-load-bearing and
+must not be cited as passing evidence**; the registry `python_cert` for F4/F7
+now points at the reforged replacements.
+
+- **`vp_cvft_uv_feedback_tail_bound_refined.py`** (F4) — fabricated negative
+  controls over hardcoded literals; wrong owned constant `delta12 = 1e-6` vs the
+  owned `δ₀¹² = 7.31e-12`.
+- **`vp_cvft_ueff_pole_discipline.py`** (F4) — fabricated controls AND two
+  hardcoded eigen-lists encoding the FALSE identity `spec(F) = |eig(U_eff)|²`
+  (`0.64=0.8²`, `0.25=0.5²`); the owned relation is `spec(F_c) = 1 − σ²(U_eff)`
+  for non-normal `U_eff`. Corroboration theater with mutually-inconsistent props.
+- **`vp_cvft_boundary_channel_rank.py`** (F7) — fabricated `not-an-A4-proof`
+  discipline control (never computed a non-saturation witness).
+- **`vp_cvft_refined_logdet_rank_bound.py`** (F7) — fabricated `|z|-only-form`
+  domain-discipline control (never computed a domain-discrimination witness).
+
+**Replacements (live, scene-constructed, can-fail, exit 0 with 5 caught
+controls each):** `05_CERTS/vp_cvft_uv_feedback_tail_bound_refined_REFORGED.py`,
+`vp_cvft_ueff_pole_discipline_REFORGED.py`,
+`vp_cvft_boundary_channel_rank_REFORGED.py`,
+`vp_cvft_refined_logdet_rank_bound_REFORGED.py` (adjudication:
+`_TASKS_CENTER_ATTACK/CVFT_F4_F7_REFORGE_REPORT.md`). F4/F7 stay
+`PYTHON_CERTIFIED` (the Lean rank-block lift is compile-verified on scratch, NOT
+in the built tree — no LEAN_PROVED flip). Interval-honesty note: between the
+original `[8C]` closure and 2026-07-05, both CERT-CLOSED labels rested
+exclusively on these non-verifying certs.
+
+Also superseded (retire / mark non-load-bearing demos, no failure path):
+`vp_cvft_boundary_rank_bound.py`, `vp_cvft_logdet_rank_bound.py`,
+`vp_cvft_uv_feedback_tail_bound.py`.

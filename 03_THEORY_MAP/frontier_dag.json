@@ -1,0 +1,5047 @@
+{
+ "generated_by": "tools/build_frontier_dag.py",
+ "sources": {
+  "registry": "09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv",
+  "registry_rows": 545,
+  "atlas_files": [
+   "ALPHA_DIXMIER_BLOCKERS.csv",
+   "COSMOLOGY_CLOSURE_BLOCKERS.csv",
+   "FINAL_CONTINUATION_BLOCKERS.csv",
+   "FINAL_EIGHT_FRONT_BLOCKERS.csv",
+   "GAUGE_MATTER_BLOCKERS.csv",
+   "HIGGS_PHASON_ORBIT_BLOCKERS.csv",
+   "ROLE_TO_OPERATOR_BLOCKERS.csv",
+   "ROOT_OPERATOR_COMPLETION_BLOCKERS.csv",
+   "TORAL_MARKOV_BLOCKERS.csv",
+   "VNEXT33_SCENE_ANCHOR_BLOCKERS.csv",
+   "VNEXT_DIRAC_TOWER_BLOCKERS.csv",
+   "X5_FINAL_BLOCKERS.csv"
+  ],
+  "nogo_atlases": [
+   "D0_FINAL_NO_GO_ATLAS.md",
+   "VNEXT2_SCENE_NATIVE_NO_GO_ATLAS.md",
+   "TOTAL_NO_GO_ATLAS.md"
+  ]
+ },
+ "counts": {
+  "frontier_claims": 46,
+  "nogo_claims": 84,
+  "primitives": 21,
+  "gate_edges": 99,
+  "block_edges": 82,
+  "review_queue": 267,
+  "desyncs": 133,
+  "joint_front_claims": 5,
+  "external_gated": 13,
+  "independent_residual": 16
+ },
+ "nodes": [
+  {
+   "id": "D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+   "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT"
+  },
+  {
+   "id": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "EMPIRICAL-PASSPORT"
+  },
+  {
+   "id": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "wall",
+   "nogo_proved": "every admissible present-core tower (growth a<=2) is trace-class"
+  },
+  {
+   "id": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-ALPHA-ZETA-RESIDUE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-ARCHIVE-CONTRACTION-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-ARCHIVE-LIGHTPROFINITE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-ARCHIVE-REGULAR-REFINEMENT-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-BARE-GRAPH-DECIMAL-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-BARYON-ASYMMETRY-DELTA0-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-BORN-QUADRATIC-ORIGIN-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-BRANCH-CP-READOUT-NOGO-V15",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "witness_pair",
+   "nogo_proved": "two admissible basis completions give distinct |V12|^2"
+  },
+  {
+   "id": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "unclassified",
+   "nogo_proved": "tilt non-constant across the admissible-smoothing family"
+  },
+  {
+   "id": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-CVFT-001B",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-CVFT-F1",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-CVFT-F2",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-CVFT-F3",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-CVFT-F5",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-CVFT-F8",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-CVFT-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+   "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT"
+  },
+  {
+   "id": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-DUSTY-PLASMA-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-EDGE-002",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-EDGE-COVER-FAMILY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "PASSPORT-CLOSED"
+  },
+  {
+   "id": "D0-GAP-W-WITNESS-PLUS-ONE-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-GAUGE-BIANCHI-RESIDUAL-BOUNDARY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-GEN-MASS-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-GENERATION-RAYS-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-GEOM-SPECTRAL-ACTION-LADDER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-GRAPH-SPACE-NO-ISOMETRY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-GRAV-QNM-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-H0-EVOLVING-W-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "wall",
+   "nogo_proved": "every present-core projector commutes with T (incl. Riesz spectral projectors)"
+  },
+  {
+   "id": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-HODGE-LINKS-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+   "release_status": "BRIDGE-ASSUMPTIONS-EXPLICIT"
+  },
+  {
+   "id": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "PASSPORT-CLOSED"
+  },
+  {
+   "id": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET",
+   "nogo_kind": "unclassified",
+   "nogo_proved": "algebra embeds but only downward Hilbert projections exist"
+  },
+  {
+   "id": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-ISING-ANYON-EXCLUSION-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-ISOTROPIZATION-MECH-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-LEPTON-DECIMAL-MASS-RATIOS",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-LEPTON-PUISEUX-DECIMAL-SECTION-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "witness_pair",
+   "nogo_proved": "two companions share charpoly x^4-lam (index many-to-one)"
+  },
+  {
+   "id": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-LEPTON-STURMIAN-PUISEUX-COEFFICIENTS-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-M2-NO-CANONICAL-CYCLIC-LABELING-V9-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-M2-PHASE-LABELING-V9-SHELL-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-MATTER-REP-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-MIXING-HIERARCHY-INVERSION-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-NO-GO-ABSTRACT-LIERING-FINITE-TRANSFORM-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-NO-GO-EDGE-STIFFNESS-SCALAR-LEAKAGE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-NO-GO-FLAT-TENSOR-NONABELIAN-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-NO-GO-NAIVE-LOCAL-GAUGE-COVARIANCE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-NO-GO-STRESS-SUITE-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-NO-GO-UNGRADED-BIANCHI-RESIDUAL-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-NOGO-LIGO-DISCOVERY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-P1-PHYSICAL-EOS",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-PASSPORT-DESI-BAO-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-PASSPORT-ICECUBE-HESE-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-PASSPORT-LIGO-CATALOG-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-PASSPORT-SPARC-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-PHASE-TOWER-002",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "witness_pair",
+   "nogo_proved": "two admissible magnitude maps agree on sign+anchor but differ"
+  },
+  {
+   "id": "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-PMNS-DELTACP-PI0-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-PRESENT-CORE-LIMITS-REGRESSION-V15",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-PUB-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-QUANT-MET-003",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-QUANT-MET-004",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-RAW-HISTORY-CATEGORY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-REHEATING-NO-INFLATON-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-REHEATING-PERCOLATION-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-SCENE-BARTHOLDI-TYPED-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-SPECTRAL-EINSTEIN-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE_BRIDGE_SPLIT"
+  },
+  {
+   "id": "D0-SRC-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO_GO_PROVED"
+  },
+  {
+   "id": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-STURMIAN-REFINEMENT",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-SYMPLECTIC-GLEASON-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CORE-FORMALIZED"
+  },
+  {
+   "id": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "unclassified",
+   "nogo_proved": "distinct-rectangle admissible adjacencies share Perron phi"
+  },
+  {
+   "id": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-UNIFIED-EDGE-SPINE-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-VACUUM-CUBIC-WINDOW-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT-QUANTUM-METRIC-EXTENSION-PASSPORT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "PASSPORT-CLOSED"
+  },
+  {
+   "id": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "unclassified",
+   "nogo_proved": "the covariance system is refinement-dependent; no unique scale cocycle."
+  },
+  {
+   "id": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-NATIVE-CLOSURE-BOUNDARY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "witness_pair",
+   "nogo_proved": ">=2 admissible families (all-walks, non-backtracking, directed-edge) give inequivalent carriers"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO"
+  },
+  {
+   "id": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": true,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "NO-GO",
+   "nogo_kind": "unclassified",
+   "nogo_proved": "Xi = endpoint conditional expectation is family/measure-dependent; no canonical coisometry."
+  },
+  {
+   "id": "D0-WINDOW-9-13-DISSOLVE-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "D0-X5-GRADING-CONTRACT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-X5-HISTORY-CONTRACT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-X5-LEPTON-CONTRACT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-X5-PHASON-PE-CONTRACT-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-XI-OPERATOR-FAMILY-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "PYTHON_CERTIFIED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+   "kind": "claim",
+   "frontier": false,
+   "nogo": false,
+   "lean_status": "LEAN_PROVED",
+   "release_status": "CERT-CLOSED"
+  },
+  {
+   "id": "D0-ZONE-TOWER-READING-FORK-001",
+   "kind": "claim",
+   "frontier": true,
+   "nogo": false,
+   "lean_status": "OPEN",
+   "release_status": "PROOF-TARGET"
+  },
+  {
+   "id": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+   "kind": "primitive",
+   "completion_class": "label transfers preserving carrier symmetry",
+   "lane": "G",
+   "mathematical_type": "spin/flavour/multiplet label transfer"
+  },
+  {
+   "id": "PRIM-BRANCH-ISOTROPIC-READOUT",
+   "kind": "primitive",
+   "completion_class": "readouts collapsing the 3-block branch commutant to an isotropic response",
+   "lane": "G",
+   "mathematical_type": "branch-isotropic readout selector"
+  },
+  {
+   "id": "PRIM-CANONICAL-33-SCENE-ANCHOR",
+   "kind": "primitive"
+  },
+  {
+   "id": "PRIM-CANONICAL-SELF-READING-FUNCTOR",
+   "kind": "primitive",
+   "completion_class": "a functor that genuinely subsumes the 4 independent completion classes into one",
+   "lane": "G",
+   "mathematical_type": "canonical self-reading functor"
+  },
+  {
+   "id": "PRIM-COMPARISON-MAP-XI-N",
+   "kind": "primitive",
+   "completion_class": "tripartite-preserving conditional expectations",
+   "lane": "A",
+   "mathematical_type": "endpoint conditional expectation C_n:H_n->H_scene"
+  },
+  {
+   "id": "PRIM-DIRAC-SCALE-SELECTION",
+   "kind": "primitive",
+   "completion_class": "intrinsic scale cocycles compatible with covariance",
+   "lane": "A",
+   "mathematical_type": "intrinsic scale cocycle"
+  },
+  {
+   "id": "PRIM-EDGE-HOLONOMY-SELECTOR",
+   "kind": "primitive",
+   "completion_class": "selectors fixing the holonomy PHASE on top of |lambda|=1",
+   "lane": "G",
+   "mathematical_type": "return-edge holonomy phase selector"
+  },
+  {
+   "id": "PRIM-EFT-IR-MATCHING-FUNCTIONAL",
+   "kind": "primitive",
+   "completion_class": "IR-matching functionals selecting the physical lepton mass ratios",
+   "lane": "D",
+   "mathematical_type": "EFT/IR matching functional for mass ratios"
+  },
+  {
+   "id": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "kind": "primitive",
+   "completion_class": "finite reps compatible with anomaly + unimodularity",
+   "lane": "G",
+   "mathematical_type": "finite representation module choosing Weyl roles"
+  },
+  {
+   "id": "PRIM-FORCED-SMOOTHING-WINDOW",
+   "kind": "primitive",
+   "completion_class": "refinement-covariant smoothing functionals",
+   "lane": "C",
+   "mathematical_type": "smoothing/evaluation functional (k,u)"
+  },
+  {
+   "id": "PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR",
+   "kind": "primitive",
+   "completion_class": "grading operators forced to rank-3-active by an owned constraint",
+   "lane": "G",
+   "mathematical_type": "Z2-grading operator on the derived M3 block"
+  },
+  {
+   "id": "PRIM-ISOMETRIC-DIRAC-J",
+   "kind": "primitive",
+   "completion_class": "finite Dirac operators completing the isometric tower with a real structure",
+   "lane": "G",
+   "mathematical_type": "isometric finite Dirac operator J with real structure"
+  },
+  {
+   "id": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "kind": "primitive",
+   "completion_class": "frozen branch-sensitive operators",
+   "lane": "D",
+   "mathematical_type": "branch-sensitive frozen selector"
+  },
+  {
+   "id": "PRIM-NONCOMMUTING-TRIPLE",
+   "kind": "primitive",
+   "completion_class": "noncommuting spectral triples with finite flow",
+   "lane": "G",
+   "mathematical_type": "frozen noncommuting (U,Q0,Pi_H)"
+  },
+  {
+   "id": "PRIM-PERRON-PHI3-CARRIER",
+   "kind": "primitive",
+   "completion_class": "external Dixmier/Wodzicki-realizable carriers",
+   "lane": "E",
+   "mathematical_type": "infinite/profinite Perron carrier with eigenvalue phi^3"
+  },
+  {
+   "id": "PRIM-PHASON-COORDINATE-FUNCTOR",
+   "kind": "primitive",
+   "completion_class": "coordinate functors fixing the archive->redshift map canonically",
+   "lane": "B",
+   "mathematical_type": "phason coordinate functor (archive->w(z))"
+  },
+  {
+   "id": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "kind": "primitive",
+   "completion_class": "role assignments tying L_archive pressure to the phason energy channel",
+   "lane": "B",
+   "mathematical_type": "phason pressure/energy role assignment"
+  },
+  {
+   "id": "PRIM-PHYSICAL-MAGNITUDE-MAP",
+   "kind": "primitive",
+   "completion_class": "maps from finite pressure operators preserving sign",
+   "lane": "B",
+   "mathematical_type": "map M: w_D0(s)->|w_DE(z)|"
+  },
+  {
+   "id": "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE",
+   "kind": "primitive",
+   "completion_class": "internal->redshift coordinates",
+   "lane": "B",
+   "mathematical_type": "coordinate Z: s->z"
+  },
+  {
+   "id": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "kind": "primitive",
+   "completion_class": "finite equivariant history towers with an actual endpoint map",
+   "lane": "A",
+   "mathematical_type": "finite automorphism-equivariant refinement functor"
+  },
+  {
+   "id": "PRIM-STURMIAN-REFINEMENT-OWNER",
+   "kind": "primitive"
+  }
+ ],
+ "edges": [
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+   "dst": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:ALPHA_DIXMIER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "dst": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-ALPHA-ZETA-RESIDUE-001",
+   "dst": "D0-CVFT-F1",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-ARCHIVE-LIGHTPROFINITE-001",
+   "dst": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:ALPHA_DIXMIER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-BARE-GRAPH-DECIMAL-NOGO-001",
+   "dst": "D0-LEPTON-PUISEUX-DECIMAL-SECTION-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-BORN-QUADRATIC-ORIGIN-001",
+   "dst": "D0-SYMPLECTIC-GLEASON-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+   "dst": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+   "dst": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+   "dst": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+   "dst": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+   "dst": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "type": "blocks",
+   "provenance": "atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "dst": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "dst": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "dst": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "dst": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "dst": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "dst": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+   "dst": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+   "dst": "D0-PRESENT-CORE-LIMITS-REGRESSION-V15",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-CVFT-F1",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+   "dst": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+   "type": "blocks",
+   "provenance": "atlas:ROLE_TO_OPERATOR_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+   "dst": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+   "dst": "D0-M2-NO-CANONICAL-CYCLIC-LABELING-V9-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+   "dst": "D0-M2-PHASE-LABELING-V9-SHELL-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+   "dst": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-GEOM-SPECTRAL-ACTION-LADDER-001",
+   "dst": "D0-SPECTRAL-EINSTEIN-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "dst": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001",
+   "dst": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001",
+   "dst": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001",
+   "dst": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001",
+   "type": "blocks",
+   "provenance": "atlas:HIGGS_PHASON_ORBIT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001",
+   "dst": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "dst": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "dst": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:GAUGE_MATTER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+   "dst": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "dst": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "dst": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "dst": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "dst": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+   "dst": "D0-REHEATING-PERCOLATION-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "dst": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+   "dst": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "dst": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "dst": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "dst": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "dst": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "dst": "D0-LEPTON-STURMIAN-PUISEUX-COEFFICIENTS-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+   "dst": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+   "dst": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-MIXING-HIERARCHY-INVERSION-001",
+   "dst": "D0-VACUUM-CUBIC-WINDOW-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+   "dst": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+   "dst": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "dst": "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "dst": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "dst": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "dst": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "type": "blocks",
+   "provenance": "atlas:FINAL_EIGHT_FRONT_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "dst": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "dst": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+   "dst": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001",
+   "dst": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "type": "blocks",
+   "provenance": "registry:nogo-ref-rule"
+  },
+  {
+   "src": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+   "dst": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+   "dst": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+   "dst": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+   "dst": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+   "dst": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+   "type": "blocks",
+   "provenance": "atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+   "dst": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+   "dst": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "type": "blocks",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-SM-HYPERCHARGE-MINIMAL-DENOMINATOR-001",
+   "dst": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+   "dst": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+   "type": "depends_on",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
+   "dst": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:TORAL_MARKOV_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+   "dst": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+   "type": "blocks",
+   "provenance": "atlas:TORAL_MARKOV_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "dst": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "dst": "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "dst": "D0-VNEXT-QUANTUM-METRIC-EXTENSION-PASSPORT-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
+   "dst": "D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "type": "blocks",
+   "provenance": "atlas:VNEXT_DIRAC_TOWER_BLOCKERS.csv"
+  },
+  {
+   "src": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+   "dst": "D0-BARYON-ASYMMETRY-DELTA0-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+   "dst": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+   "dst": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+   "dst": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+   "dst": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-BRANCH-ISOTROPIC-READOUT",
+   "dst": "D0-BRANCH-CP-READOUT-NOGO-V15",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-CANONICAL-33-SCENE-ANCHOR",
+   "dst": "D0-VNEXT-33-SCENE-ANCHOR-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-CANONICAL-SELF-READING-FUNCTOR",
+   "dst": "D0-RAW-PRIMITIVE-MINIMALITY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-CANONICAL-SELF-READING-FUNCTOR",
+   "dst": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT-CANONICAL-XI-ANCHOR-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-VNEXT2-XI-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-COMPARISON-MAP-XI-N",
+   "dst": "D0-XI-OPERATOR-FAMILY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-DIRAC-SCALE-SELECTION",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-DIRAC-SCALE-SELECTION",
+   "dst": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-DIRAC-SCALE-SELECTION",
+   "dst": "D0-VNEXT-JOINT-DIRAC-SCALE-SELECTION-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-DIRAC-SCALE-SELECTION",
+   "dst": "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-DIRAC-SCALE-SELECTION",
+   "dst": "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-DIRAC-SCALE-SELECTION",
+   "dst": "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-DIRAC-SCALE-SELECTION",
+   "dst": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-EDGE-HOLONOMY-SELECTOR",
+   "dst": "D0-EDGE-COVER-FAMILY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-EDGE-HOLONOMY-SELECTOR",
+   "dst": "D0-UNIFIED-EDGE-SPINE-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-EFT-IR-MATCHING-FUNCTIONAL",
+   "dst": "D0-LEPTON-DECIMAL-MASS-RATIOS",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-BARYON-ASYMMETRY-DELTA0-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-MATTER-REP-001",
+   "type": "gates",
+   "provenance": "atlas:ROOT_OPERATOR_COMPLETION_BOARD.csv"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+   "dst": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:ROOT_OPERATOR_COMPLETION_BOARD.csv"
+  },
+  {
+   "src": "PRIM-FORCED-SMOOTHING-WINDOW",
+   "dst": "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-FORCED-SMOOTHING-WINDOW",
+   "dst": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-FORCED-SMOOTHING-WINDOW",
+   "dst": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR",
+   "dst": "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR",
+   "dst": "D0-X5-GRADING-CONTRACT-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-ISOMETRIC-DIRAC-J",
+   "dst": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-ISOMETRIC-DIRAC-J",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-ISOMETRIC-DIRAC-J",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:ROOT_OPERATOR_COMPLETION_BOARD.csv"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR",
+   "dst": "D0-X5-LEPTON-CONTRACT-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-NONCOMMUTING-TRIPLE",
+   "dst": "D0-BARYON-ASYMMETRY-DELTA0-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-NONCOMMUTING-TRIPLE",
+   "dst": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-NONCOMMUTING-TRIPLE",
+   "dst": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-NONCOMMUTING-TRIPLE",
+   "dst": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-NONCOMMUTING-TRIPLE",
+   "dst": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PERRON-PHI3-CARRIER",
+   "dst": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PERRON-PHI3-CARRIER",
+   "dst": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PERRON-PHI3-CARRIER",
+   "dst": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PERRON-PHI3-CARRIER",
+   "dst": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PHASON-COORDINATE-FUNCTOR",
+   "dst": "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-COORDINATE-FUNCTOR",
+   "dst": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-COORDINATE-FUNCTOR",
+   "dst": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-ARCHIVE-CONTRACTION-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-P1-PHYSICAL-EOS",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:ROOT_OPERATOR_COMPLETION_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+   "dst": "D0-X5-PHASON-PE-CONTRACT-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHYSICAL-MAGNITUDE-MAP",
+   "dst": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PHYSICAL-MAGNITUDE-MAP",
+   "dst": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PHYSICAL-MAGNITUDE-MAP",
+   "dst": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PHYSICAL-MAGNITUDE-MAP",
+   "dst": "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE",
+   "dst": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE",
+   "dst": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE",
+   "dst": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "type": "gates",
+   "provenance": "atlas:TOTAL_CLOSURE_BOARD.csv"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "type": "gates",
+   "provenance": "atlas:ROOT_OPERATOR_COMPLETION_BOARD.csv"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-RAW-HISTORY-CATEGORY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-SCENE-BARTHOLDI-TYPED-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+   "type": "gates",
+   "provenance": "nogo-atlas:VNEXT2_SCENE_NATIVE_NO_GO_ATLAS.md"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-SCENE-HISTORY-REFINEMENT-RULE",
+   "dst": "D0-X5-HISTORY-CONTRACT-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-STURMIAN-REFINEMENT-OWNER",
+   "dst": "D0-STURMIAN-REFINEMENT",
+   "type": "gates",
+   "provenance": "registry:notes"
+  },
+  {
+   "src": "PRIM-STURMIAN-REFINEMENT-OWNER",
+   "dst": "D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+   "type": "gates",
+   "provenance": "registry:notes"
+  }
+ ],
+ "partition": {
+  "per_primitive": {
+   "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-BRANCH-ISOTROPIC-READOUT": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-CANONICAL-33-SCENE-ANCHOR": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-CANONICAL-SELF-READING-FUNCTOR": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-COMPARISON-MAP-XI-N": {
+    "direct": [
+     "D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001",
+     "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+     "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+     "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001"
+    ],
+    "transitive_sole_gate": [
+     "D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001",
+     "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+     "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001"
+    ]
+   },
+   "PRIM-DIRAC-SCALE-SELECTION": {
+    "direct": [
+     "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+     "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001"
+    ],
+    "transitive_sole_gate": [
+     "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001"
+    ]
+   },
+   "PRIM-EDGE-HOLONOMY-SELECTOR": {
+    "direct": [
+     "D0-UNIFIED-EDGE-SPINE-001"
+    ],
+    "transitive_sole_gate": [
+     "D0-UNIFIED-EDGE-SPINE-001"
+    ]
+   },
+   "PRIM-EFT-IR-MATCHING-FUNCTIONAL": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-FINITE-SPECTRAL-TRIPLE-REP": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-FORCED-SMOOTHING-WINDOW": {
+    "direct": [],
+    "transitive_sole_gate": [
+     "D0-CMB-IDS-SMOOTHING-OWNER-001",
+     "D0-CMB-PHASON-SPECTRUM-OWNER-001"
+    ]
+   },
+   "PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-ISOMETRIC-DIRAC-J": {
+    "direct": [
+     "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001"
+    ],
+    "transitive_sole_gate": []
+   },
+   "PRIM-LEPTON-BRANCH-FIXING-OPERATOR": {
+    "direct": [
+     "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001"
+    ],
+    "transitive_sole_gate": [
+     "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001"
+    ]
+   },
+   "PRIM-NONCOMMUTING-TRIPLE": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-PERRON-PHI3-CARRIER": {
+    "direct": [],
+    "transitive_sole_gate": [
+     "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001"
+    ]
+   },
+   "PRIM-PHASON-COORDINATE-FUNCTOR": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-PHYSICAL-MAGNITUDE-MAP": {
+    "direct": [
+     "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001"
+    ],
+    "transitive_sole_gate": [
+     "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001"
+    ]
+   },
+   "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE": {
+    "direct": [],
+    "transitive_sole_gate": []
+   },
+   "PRIM-SCENE-HISTORY-REFINEMENT-RULE": {
+    "direct": [
+     "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001"
+    ],
+    "transitive_sole_gate": [
+     "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001"
+    ]
+   },
+   "PRIM-STURMIAN-REFINEMENT-OWNER": {
+    "direct": [
+     "D0-STURMIAN-REFINEMENT"
+    ],
+    "transitive_sole_gate": [
+     "D0-STURMIAN-REFINEMENT"
+    ]
+   }
+  },
+  "joint_fronts": [
+   "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+   "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
+   "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001"
+  ],
+  "external_gated": {
+   "D0-CVFT-F8": "external DESI passport for the two-mode S_DE transfer (no internal forcing).",
+   "D0-EDGE-002": "the non-trace edge-alpha leg owner (external EFT/IR normalization passport).",
+   "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001": "an isometric J_N with Dirac compatibility, firewalled to ASSUMP-CONNES-RECONSTRUCTION / Latremoliere propinquity (external passport D0-SMOOTH-QUANTUM-METRIC-PAS",
+   "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001": "(a) a finite Green function G_shell(lambda) with Puiseux indices provably (0,1/4,1/3); (b) branch-index uniqueness; (c) the external EFT/IR matching functor (AS",
+   "D0-PASSPORT-DESI-BAO-001": "observational passport: closes only against external data",
+   "D0-PASSPORT-ICECUBE-HESE-001": "observational passport: closes only against external data",
+   "D0-PASSPORT-LIGO-CATALOG-001": "observational passport: closes only against external data",
+   "D0-PASSPORT-SPARC-001": "observational passport: closes only against external data",
+   "D0-PMNS-DELTACP-PI0-001": "external EFT/PMNS passport; delta_CP decimal stays HYP (internal angle pi0 owned).",
+   "D0-PUB-001": "none -- NO MATH LEG (publication/prose structure); candidate for EXTERNAL-BACKGROUND, not a math proof-target.",
+   "D0-QUANT-MET-003": "external metrology calibration passport (conditional Lean leg internal; value external).",
+   "D0-QUANT-MET-004": "external Bragg/metrology passport (formula leg internal; physical value external).",
+   "D0-TORAL-TIME-MARKOV-CONJUGACY-001": "full TOPOLOGICAL conjugacy T = golden SFT, which needs an explicit Williams shift-equivalence matrix relating N_tau=[[0,1],[1,1]] to T's SFT realization (extern"
+  },
+  "independent_residual": [
+   "D0-CVFT-001B",
+   "D0-CVFT-F2",
+   "D0-CVFT-F3",
+   "D0-CVFT-F5",
+   "D0-DUSTY-PLASMA-001",
+   "D0-GAP-W-WITNESS-PLUS-ONE-001",
+   "D0-H0-EVOLVING-W-001",
+   "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+   "D0-HODGE-LINKS-001",
+   "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+   "D0-ISOTROPIZATION-MECH-001",
+   "D0-LEPTON-PUISEUX-DECIMAL-SECTION-001",
+   "D0-M2-NO-CANONICAL-CYCLIC-LABELING-V9-001",
+   "D0-M2-PHASE-LABELING-V9-SHELL-001",
+   "D0-WINDOW-9-13-DISSOLVE-001",
+   "D0-ZONE-TOWER-READING-FORK-001"
+  ],
+  "requirements": {
+   "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001": [
+    "PRIM-PERRON-PHI3-CARRIER"
+   ],
+   "D0-CMB-IDS-SMOOTHING-OWNER-001": [
+    "PRIM-FORCED-SMOOTHING-WINDOW"
+   ],
+   "D0-CMB-PHASON-SPECTRUM-OWNER-001": [
+    "PRIM-FORCED-SMOOTHING-WINDOW"
+   ],
+   "D0-CVFT-001B": [],
+   "D0-CVFT-F2": [],
+   "D0-CVFT-F3": [],
+   "D0-CVFT-F5": [],
+   "D0-CVFT-F8": [],
+   "D0-DUSTY-PLASMA-001": [],
+   "D0-EDGE-002": [],
+   "D0-GAP-W-WITNESS-PLUS-ONE-001": [],
+   "D0-H0-EVOLVING-W-001": [],
+   "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001": [],
+   "D0-HIGGS-PHASON-CONDENSATION-OWNER-001": [
+    "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+    "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+    "PRIM-NONCOMMUTING-TRIPLE"
+   ],
+   "D0-HODGE-LINKS-001": [],
+   "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001": [
+    "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER",
+    "PRIM-FINITE-SPECTRAL-TRIPLE-REP",
+    "PRIM-NONCOMMUTING-TRIPLE"
+   ],
+   "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001": [],
+   "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001": [],
+   "D0-ISOTROPIZATION-MECH-001": [],
+   "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001": [
+    "PRIM-LEPTON-BRANCH-FIXING-OPERATOR"
+   ],
+   "D0-LEPTON-PUISEUX-DECIMAL-SECTION-001": [],
+   "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001": [],
+   "D0-M2-NO-CANONICAL-CYCLIC-LABELING-V9-001": [],
+   "D0-M2-PHASE-LABELING-V9-SHELL-001": [],
+   "D0-PASSPORT-DESI-BAO-001": [],
+   "D0-PASSPORT-ICECUBE-HESE-001": [],
+   "D0-PASSPORT-LIGO-CATALOG-001": [],
+   "D0-PASSPORT-SPARC-001": [],
+   "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001": [
+    "PRIM-PHYSICAL-MAGNITUDE-MAP",
+    "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE"
+   ],
+   "D0-PHASON-WZ-EXPLICIT-FUNCTION-001": [
+    "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT",
+    "PRIM-PHYSICAL-MAGNITUDE-MAP",
+    "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE"
+   ],
+   "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001": [
+    "PRIM-PHYSICAL-MAGNITUDE-MAP"
+   ],
+   "D0-PMNS-DELTACP-PI0-001": [],
+   "D0-PUB-001": [],
+   "D0-QUANT-MET-003": [],
+   "D0-QUANT-MET-004": [],
+   "D0-STURMIAN-REFINEMENT": [
+    "PRIM-STURMIAN-REFINEMENT-OWNER"
+   ],
+   "D0-TORAL-TIME-MARKOV-CONJUGACY-001": [],
+   "D0-UNIFIED-EDGE-SPINE-001": [
+    "PRIM-EDGE-HOLONOMY-SELECTOR"
+   ],
+   "D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001": [
+    "PRIM-COMPARISON-MAP-XI-N"
+   ],
+   "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001": [
+    "PRIM-COMPARISON-MAP-XI-N",
+    "PRIM-DIRAC-SCALE-SELECTION",
+    "PRIM-ISOMETRIC-DIRAC-J"
+   ],
+   "D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001": [
+    "PRIM-SCENE-HISTORY-REFINEMENT-RULE"
+   ],
+   "D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001": [
+    "PRIM-DIRAC-SCALE-SELECTION"
+   ],
+   "D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001": [
+    "PRIM-COMPARISON-MAP-XI-N"
+   ],
+   "D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001": [
+    "PRIM-COMPARISON-MAP-XI-N"
+   ],
+   "D0-WINDOW-9-13-DISSOLVE-001": [],
+   "D0-ZONE-TOWER-READING-FORK-001": []
+  }
+ },
+ "nogo_flags": {
+  "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001": {
+   "kind": "wall",
+   "proved": "every admissible present-core tower (growth a<=2) is trace-class",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001": {
+   "kind": "witness_pair",
+   "proved": "two admissible basis completions give distinct |V12|^2",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001": {
+   "kind": "unclassified",
+   "proved": "tilt non-constant across the admissible-smoothing family",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001": {
+   "kind": "wall",
+   "proved": "every present-core projector commutes with T (incl. Riesz spectral projectors)",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001": {
+   "kind": "unclassified",
+   "proved": "algebra embeds but only downward Hilbert projections exist",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001": {
+   "kind": "witness_pair",
+   "proved": "two companions share charpoly x^4-lam (index many-to-one)",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001": {
+   "kind": "witness_pair",
+   "proved": "two admissible magnitude maps agree on sign+anchor but differ",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001": {
+   "kind": "unclassified",
+   "proved": "distinct-rectangle admissible adjacencies share Perron phi",
+   "atlas": "D0_FINAL_NO_GO_ATLAS.md"
+  },
+  "D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001": {
+   "kind": "unclassified",
+   "proved": "the covariance system is refinement-dependent; no unique scale cocycle.",
+   "atlas": "VNEXT2_SCENE_NATIVE_NO_GO_ATLAS.md"
+  },
+  "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001": {
+   "kind": "witness_pair",
+   "proved": ">=2 admissible families (all-walks, non-backtracking, directed-edge) give inequivalent carriers",
+   "atlas": "VNEXT2_SCENE_NATIVE_NO_GO_ATLAS.md"
+  },
+  "D0-VNEXT2-XI-MAXIMALITY-NOGO-001": {
+   "kind": "unclassified",
+   "proved": "Xi = endpoint conditional expectation is family/measure-dependent; no canonical coisometry.",
+   "atlas": "VNEXT2_SCENE_NATIVE_NO_GO_ATLAS.md"
+  }
+ },
+ "desyncs": [
+  {
+   "edge": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER -> D0-BARYON-ASYMMETRY-DELTA0-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER -> D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER -> D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER -> D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-BARYON-PHYSICAL-LABEL-TRANSFER -> D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-BARYON-ASYMMETRY-DELTA0-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-MATTER-REP-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FORCED-SMOOTHING-WINDOW -> D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FORCED-SMOOTHING-WINDOW -> D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-FORCED-SMOOTHING-WINDOW -> D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-NONCOMMUTING-TRIPLE -> D0-BARYON-ASYMMETRY-DELTA0-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-NONCOMMUTING-TRIPLE -> D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-NONCOMMUTING-TRIPLE -> D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-NONCOMMUTING-TRIPLE -> D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PERRON-PHI3-CARRIER -> D0-ALPHA-MEASUREMENT-LIMIT-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PERRON-PHI3-CARRIER -> D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PERRON-PHI3-CARRIER -> D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PERRON-PHI3-CARRIER -> D0-DELTA-ALPHA-SEAM-CLOSED-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT -> D0-PHASON-WZ-KERNEL-ONLY-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PHYSICAL-MAGNITUDE-MAP -> D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PHYSICAL-MAGNITUDE-MAP -> D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PHYSICAL-MAGNITUDE-MAP -> D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE -> D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE -> D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-PHYSICAL-REDSHIFT-OBSERVABLE -> D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+   "issue": "in atlas, absent from registry notes"
+  },
+  {
+   "edge": "PRIM-BRANCH-ISOTROPIC-READOUT -> D0-BRANCH-CP-READOUT-NOGO-V15",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-CANONICAL-SELF-READING-FUNCTOR -> D0-RAW-PRIMITIVE-MINIMALITY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-CANONICAL-SELF-READING-FUNCTOR -> D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-COMPARISON-MAP-XI-N -> D0-VNEXT2-SCENE-FESHBACH-LIFT-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-COMPARISON-MAP-XI-N -> D0-VNEXT2-SCENE-SPECTRAL-LIFT-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-COMPARISON-MAP-XI-N -> D0-VNEXT2-SCENE-XI-INTERTWINER-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-COMPARISON-MAP-XI-N -> D0-XI-OPERATOR-FAMILY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-DIRAC-SCALE-SELECTION -> D0-VNEXT2-SCENE-DIRAC-COVARIANCE-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-EDGE-HOLONOMY-SELECTOR -> D0-EDGE-COVER-FAMILY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-EDGE-HOLONOMY-SELECTOR -> D0-UNIFIED-EDGE-SPINE-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-EFT-IR-MATCHING-FUNCTIONAL -> D0-LEPTON-DECIMAL-MASS-RATIOS",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-FINITE-SPECTRAL-TRIPLE-REP -> D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR -> D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR -> D0-X5-GRADING-CONTRACT-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-ISOMETRIC-DIRAC-J -> D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-ISOMETRIC-DIRAC-J -> D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-LEPTON-BRANCH-FIXING-OPERATOR -> D0-X5-LEPTON-CONTRACT-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-COORDINATE-FUNCTOR -> D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-COORDINATE-FUNCTOR -> D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-COORDINATE-FUNCTOR -> D0-X5-PHASON-COORDINATE-CONTRACT-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT -> D0-ARCHIVE-CONTRACTION-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT -> D0-P1-PHYSICAL-EOS",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT -> D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT -> D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT -> D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT -> D0-X5-PHASON-PE-CONTRACT-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-PHYSICAL-MAGNITUDE-MAP -> D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-RAW-HISTORY-CATEGORY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-SCENE-BARTHOLDI-TYPED-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-SELF-READING-PRIMITIVE-MINIMALITY-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-VNEXT2-ENDPOINT-CONDITIONAL-EXPECTATION-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-VNEXT2-SCENE-NATIVE-REFINEMENT-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-VNEXT2-TRIPARTITE-PATH-TOWER-OWNER-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-SCENE-HISTORY-REFINEMENT-RULE -> D0-X5-HISTORY-CONTRACT-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-STURMIAN-REFINEMENT-OWNER -> D0-STURMIAN-REFINEMENT",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "PRIM-STURMIAN-REFINEMENT-OWNER -> D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001",
+   "issue": "in registry notes, absent from all atlases"
+  },
+  {
+   "edge": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001 -> D0-ALPHA-REFINEMENT-INCREMENT-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:ALPHA_DIXMIER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001 -> D0-ALPHA-CRITICAL-IDEAL-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:ALPHA_DIXMIER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001 -> D0-ALPHA-LOG-CESARO-TRACE-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:ALPHA_DIXMIER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-ALPHA-LOG-CESARO-TRACE-OWNER-001 -> D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "issue": "atlas endpoint not in registry (atlas:ALPHA_DIXMIER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-ALPHA-MU2-FULL-LEDGER-001 -> D0-ALPHA-PAIRING-CANONICALIZATION-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:ALPHA_DIXMIER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-ALPHA-PROFINITE-TOWER-NOGO-001 -> D0-ALPHA-DIXMIER-PAIRING-CLOSURE-001",
+   "issue": "atlas endpoint not in registry (atlas:ALPHA_DIXMIER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001 -> D0-PHASON-TWOMODE-PRESSURE-ENERGY-WINDOW-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-PHASON-TWOMODE-PRESSURE-ENERGY-WINDOW-001 -> D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001 -> D0-PHASON-CONTINUUM-INTERPOLATION-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001 -> D0-PHASON-PHYSICAL-BRANCH-MAP-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-PHASON-CONTINUUM-INTERPOLATION-OWNER-001 -> D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-PHASON-PHYSICAL-BRANCH-MAP-001 -> D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CMB-IDS-SMOOTHING-OWNER-001 -> D0-CMB-HEATKERNEL-SPECTRAL-TILT-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CMB-HEATKERNEL-SPECTRAL-TILT-OWNER-001 -> D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001 -> D0-CMB-PHASON-TRANSFER-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CMB-PHASON-TRANSFER-OWNER-001 -> D0-CMB-PHASON-COVARIANCE-TO-POWER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CMB-PHASON-COVARIANCE-TO-POWER-001 -> D0-CMB-NS-INTERNAL-EXPRESSION-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CMB-NS-INTERNAL-EXPRESSION-001 -> D0-CMB-PHASON-SPECTRUM-PASSPORT-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DARK-RATIO-TRANSFER-OWNER-001 -> D0-DARK-RATIO-PASSPORT-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DARK-RATIO-PASSPORT-001 -> D0-COSMOLOGY-FROZEN-PASSPORTS-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CMB-NS-INTERNAL-EXPRESSION-001 -> D0-COSMOLOGY-REHEATING-TO-CMB-CLOSURE-001",
+   "issue": "atlas endpoint not in registry (atlas:COSMOLOGY_CLOSURE_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HYPERCHARGE-FLOW-LATTICE-001 -> D0-DSIGMA-ROLE-CYCLE-CARRIER-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DSIGMA-ROLE-CYCLE-CARRIER-001 -> D0-GAUGE-MATTER-ROLE-FUNCTOR-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DSIGMA-ROLE-CYCLE-CARRIER-001 -> D0-HYPERCHARGE-FLOW-TO-WEYL-MAP-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DSIGMA-ROLE-CYCLE-CARRIER-001 -> D0-HYPERCHARGE-DSIGMA-ROLE-ORTHOGONALITY-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HYPERCHARGE-FLOW-TO-WEYL-MAP-001 -> D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CKM-CLASS5-SELECTOR-OWNER-001 -> D0-CKM-ORDER-STEP-DET-SELECTOR-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CKM-FINITE-OVERLAP-INVARIANT-001 -> D0-CABIBBO-INTERNAL-READOUT-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001 -> D0-LEPTON-SHELL-GREEN-RESOLVENT-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-LEPTON-SHELL-GREEN-RESOLVENT-001 -> D0-LEPTON-BRANCH-PROJECTOR-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-LEPTON-SHELL-GREEN-RESOLVENT-001 -> D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001 -> D0-HIGGS-PHASON-HESSIAN-SIGN-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-PHASON-HESSIAN-SIGN-OWNER-001 -> D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-SM-HYPERCHARGE-ROW-OWNER-001 -> D0-GAUGE-MATTER-FUNCTOR-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:GAUGE_MATTER_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001 -> D0-HIGGS-PHASON-ORBIT-CLOSURE-001",
+   "issue": "atlas endpoint not in registry (atlas:HIGGS_PHASON_ORBIT_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001 -> D0-HIGGS-CANONICAL-PHASON-ORBIT-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:HIGGS_PHASON_ORBIT_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001 -> D0-HIGGS-ARCHIVE-PROJECTOR-ORBIT-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:HIGGS_PHASON_ORBIT_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-CANONICAL-PHASON-ORBIT-OWNER-001 -> D0-HIGGS-DISCRETE-LOGDET-EOM-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:HIGGS_PHASON_ORBIT_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-DISCRETE-LOGDET-EOM-OWNER-001 -> D0-HIGGS-DISCRETE-HESSIAN-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:HIGGS_PHASON_ORBIT_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-DISCRETE-HESSIAN-OWNER-001 -> D0-HIGGS-FINITE-CONDENSATION-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:HIGGS_PHASON_ORBIT_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001 -> D0-ROLE-TO-OPERATOR-FUNCTOR-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:ROLE_TO_OPERATOR_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001 -> D0-HYPERCHARGE-FLOW-TO-WEYL-MAP-001",
+   "issue": "atlas endpoint not in registry (atlas:ROLE_TO_OPERATOR_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001 -> D0-CKM-ROLE-ADDRESS-ACTION-001",
+   "issue": "atlas endpoint not in registry (atlas:ROLE_TO_OPERATOR_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001 -> D0-ROLE-BOUND-SHELL-GREEN-OPERATOR-001",
+   "issue": "atlas endpoint not in registry (atlas:ROLE_TO_OPERATOR_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001 -> D0-CANONICAL-PHASON-PROJECTOR-ORBIT-001",
+   "issue": "atlas endpoint not in registry (atlas:ROLE_TO_OPERATOR_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001 -> D0-TORAL-LUCAS-VORONOI-PARTITION-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:TORAL_MARKOV_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001 -> D0-TORAL-MARKOV-RECTANGLE-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:TORAL_MARKOV_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-TORAL-MARKOV-RECTANGLE-OWNER-001 -> D0-TORAL-SYMBOLIC-CODING-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:TORAL_MARKOV_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-TORAL-SYMBOLIC-CODING-OWNER-001 -> D0-TORAL-BOUNDARY-QUOTIENT-CONJUGACY-001",
+   "issue": "atlas endpoint not in registry (atlas:TORAL_MARKOV_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001 -> D0-TORAL-WILLIAMS-SSE-OWNER-001",
+   "issue": "atlas endpoint not in registry (atlas:TORAL_MARKOV_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-TORAL-BOUNDARY-QUOTIENT-CONJUGACY-001 -> D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+   "issue": "atlas endpoint not in registry (atlas:TORAL_MARKOV_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001 -> D0-TORAL-LUCAS-MARKOV-CLOSURE-001",
+   "issue": "atlas endpoint not in registry (atlas:TORAL_MARKOV_BLOCKERS.csv)"
+  },
+  {
+   "edge": "D0-CVFT-F3",
+   "issue": "lean_status=OPEN but release_status=CERT-CLOSED (status inflation candidate)"
+  }
+ ],
+ "review_queue": [
+  {
+   "src": "D0-HODGE-LINKS-001",
+   "dst": "D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001",
+   "context": "eversal counterterm / cross-carrier binding (bridge-a/b/c), none owned; jointly open with d0-hodge-links-001. cross-ref d0-spectral-einstein-001 (corrected to o"
+  },
+  {
+   "src": "D0-SPECTRAL-EINSTEIN-001",
+   "dst": "D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001",
+   "context": "rrier binding (bridge-a/b/c), none owned; jointly open with d0-hodge-links-001. cross-ref d0-spectral-einstein-001 (corrected to own only the g=2l laplacian-bia"
+  },
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
+   "context": "on-lucas-boundary rejected). proof-target; classical adler-weiss stays the external owner d0-adler-weiss-partition-owner-001. [2026-07 pr-review fix: python_cer"
+  },
+  {
+   "src": "D0-LUCAS-VORONOI-MARKOV-PARTITION-001",
+   "dst": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
+   "context": "22 five-front c] the partition scaffold (explicit lucas-boundary cells + kappa-stability, d0-lucas-voronoi-markov-partition-001) is built internally. missing (e"
+  },
+  {
+   "src": "D0-FIBONACCI-IF-FORCING-001",
+   "dst": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "context": "[iter18 owner-edge] closes the d0-fibonacci-if-forcing-001 named gap at the entropy/finite-equivalence level. d0 proves internally (cert vp_fibonacc"
+  },
+  {
+   "src": "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+   "dst": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "context": "dary for the toral symbolic route: the internal seed-determined route is closed-negative (d0-toral-seed-markov-maximality-nogo-001)."
+  },
+  {
+   "src": "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+   "dst": "D0-ADLER-WEISS-WILLIAMS-PASSPORT-001",
+   "context": "boundary relation; raw semiconjugacy is not conjugacy. internal route closed-negative by d0-toral-seed-markov-maximality-nogo-001 (assump-adler-weiss). no manua"
+  },
+  {
+   "src": "D0-ALPHA-HOLONOMY-002",
+   "dst": "D0-ALPHA-ALG-CLOSED-001",
+   "context": "hamoment (d0-delta-alpha-moment-001); the measured physical alpha is the closure holonomy d0-alpha-holonomy-002 (chk), a separate object."
+  },
+  {
+   "src": "D0-DELTA-ALPHA-MOMENT-001",
+   "dst": "D0-ALPHA-ALG-CLOSED-001",
+   "context": "-mu1, mu2-without-pi0). consolidation: already lean-core in d0.spectral.deltaalphamoment (d0-delta-alpha-moment-001); the measured physical alpha is the closure"
+  },
+  {
+   "src": "D0-ALPHA-ALG-CLOSED-001",
+   "dst": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "context": "_owner.py. status proof-target; no codata alpha enters. existing internal alpha closures (d0-alpha-alg-closed-001, d0-delta-alpha-seam-closed-001) are not demot"
+  },
+  {
+   "src": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+   "dst": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "context": "-b(d-zi)^-1 c block scaffold (rank 3 / dim 30) and the finite-pole-sum residue are owned (d0-alpha-feshbach-residue-finite-sum-001, cert-closed). missing (exact"
+  },
+  {
+   "src": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+   "dst": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "context": "arget; no codata alpha enters. existing internal alpha closures (d0-alpha-alg-closed-001, d0-delta-alpha-seam-closed-001) are not demoted. profinite-route-updat"
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "context": "2^11 active-archive pairing -- this is the external dixmier/wodzicki residue extraction (d0-dixmier-residue-owner-001, assump-dixmier-trace); the bare zeta-resi"
+  },
+  {
+   "src": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "dst": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+   "context": "tion (2^11 pairing) + residue->delta_alpha normalization stay the external dixmier owner (d0-alpha-feshbach-dixmier-owner-001 / d0-dixmier-residue-owner-001)."
+  },
+  {
+   "src": "D0-DELTA-ALPHA-MOMENT-001",
+   "dst": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+   "context": "phi. lean d0.spectral.alphafeshbachdixmierowner.alpha_feshbach_residue_finite_sum (reuses d0-delta-alpha-moment-001); cert vp_alpha_feshbach_residue_finite_sum."
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+   "context": "lpha normalization stay the external dixmier owner (d0-alpha-feshbach-dixmier-owner-001 / d0-dixmier-residue-owner-001)."
+  },
+  {
+   "src": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+   "dst": "D0-ALPHA-HOLONOMY-002",
+   "context": "row is the 9-digit data match = chk (controls cos/exp/depth fail); the last ~1e-8 is hyp (d0-alpha-measurement-limit-001). not a the derivation of the alpha val"
+  },
+  {
+   "src": "D0-PI0-DISCRETE-ANGLE-001",
+   "dst": "D0-ALPHA-HOLONOMY-002",
+   "context": "ee reals. honest split: the structure (12/5 angle, sin-channel, phi^-17 depth) is the via d0-pi0-discrete-angle-001 + d0-q8-sin-channel-001; this row is the 9-d"
+  },
+  {
+   "src": "D0-Q8-SIN-CHANNEL-001",
+   "dst": "D0-ALPHA-HOLONOMY-002",
+   "context": "structure (12/5 angle, sin-channel, phi^-17 depth) is the via d0-pi0-discrete-angle-001 + d0-q8-sin-channel-001; this row is the 9-digit data match = chk (contr"
+  },
+  {
+   "src": "D0-ALPHA-HOLONOMY-002",
+   "dst": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+   "context": ": n^2=0='one directed crossing' is the physical input; the 9-digit alpha value stays chk (d0-alpha-holonomy-002) last ~1e-8 hyp."
+  },
+  {
+   "src": "D0-BARYON-ASYMMETRY-DELTA0-001",
+   "dst": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+   "context": "holonomy) + directed transport n (cp-seam crossing n^2=0 nilpotent). directed cp-3-cycle (d0-baryon-asymmetry-delta0-001) means one crossing per closure so n^2="
+  },
+  {
+   "src": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+   "dst": "D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001",
+   "context": "euses d0-cvft-f1 (delta_alpha_residue_route_blocked); positive realization stays external d0-external-dixmier-wodzicki-passport-001. exact-missing: external dix"
+  },
+  {
+   "src": "D0-DELTA-ALPHA-MOMENT-001",
+   "dst": "D0-ALPHA-MU1-RANKTRACE-001",
+   "context": "e controls). consolidation: mu1=1/3 is already lean-core in d0.spectral.deltaalphamoment (d0-delta-alpha-moment-001) and trace-derived in vp_feshbach_residue_am"
+  },
+  {
+   "src": "D0-DELTA-ALPHA-MOMENT-001",
+   "dst": "D0-ALPHA-MU2-FULL-LEDGER-001",
+   "context": "sidue-owner-001 (assump-dixmier-trace); the mu2 arithmetic itself is already lean-proved (d0-delta-alpha-moment-001)."
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-ALPHA-MU2-FULL-LEDGER-001",
+   "context": "residue-extraction realising this scalar trace stays the external dixmier/wodzicki owner d0-dixmier-residue-owner-001 (assump-dixmier-trace); the mu2 arithmetic"
+  },
+  {
+   "src": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "dst": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "context": "[final core completion m1] maximality strengthening of d0-alpha-profinite-tower-nogo-001, quantified over all admissible present-core towers. admissible tower ="
+  },
+  {
+   "src": "D0-ALPHA-MU2-FULL-LEDGER-001",
+   "dst": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+   "context": ", depth-k term mu_k phi^(-3k)) and increment multiplicity 2^11 = dim lambda^*(v11) (cites d0-alpha-mu2-full-ledger-001; profinite scaffold d0-archive-lightprofi"
+  },
+  {
+   "src": "D0-ARCHIVE-LIGHTPROFINITE-001",
+   "dst": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+   "context": "iplicity 2^11 = dim lambda^*(v11) (cites d0-alpha-mu2-full-ledger-001; profinite scaffold d0-archive-lightprofinite-001). since 0<r<1 the singular values {r^n x"
+  },
+  {
+   "src": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+   "dst": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "context": "[profinite dixmier campaign, outcome b] the canonical phi-ladder tower (d0-alpha-profinite-spectral-tower-owner-001) is trace-class, so its ordinary log-cesaro "
+  },
+  {
+   "src": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+   "dst": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+   "context": "line; no frozen d0 sequence supplies it. not the invalid finite-pole route (complement of d0-dixmier-feshbach-finite-heattrace-001). external dixmier-residue ow"
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+   "context": ", dixmier-closed-by-finite-sum, codata input). external dixmier/wodzicki extraction stays d0-dixmier-residue-owner-001; blocks re-declaring dixmier-closed from "
+  },
+  {
+   "src": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+   "dst": "D0-ALPHA-SEAM-LOCATION-001",
+   "context": "y realization must use the within-zone-structured (q8-labeled) non-canonical layer. feeds d0-alpha-seam-realization-nogo-001."
+  },
+  {
+   "src": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "dst": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+   "context": "mu1=tr(u_br^2)=0 exact). consequence: assump-dixmier-trace (d0-dixmier-residue-owner-001, d0-alpha-feshbach-dixmier-owner-001, d0-delta-alpha-residue-pairing-ow"
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-ALPHA-SEAM-REALIZATION-NOGO-001",
+   "context": ") owned two-port w_eff nulls (mu1=tr(u_br^2)=0 exact). consequence: assump-dixmier-trace (d0-dixmier-residue-owner-001, d0-alpha-feshbach-dixmier-owner-001, d0-"
+  },
+  {
+   "src": "D0-ALPHA-HOLONOMY-002",
+   "dst": "D0-ALPHA-ZETA-RESIDUE-001",
+   "context": "anscendental, d0-cvft-f1); the working route to the 9-digit alpha is the closure holonomy d0-alpha-holonomy-002. this row keeps alpha_top=zeta_e(-1) (the) + xi5"
+  },
+  {
+   "src": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+   "dst": "D0-ARCHIVE-CONTRACTION-NOGO-001",
+   "context": "al rescale by 2|e|=718 (a count) -- so the named-unproven feshbach residual rho(quq)<1 of d0-feshbach-schur-time-delay-owner-001 is false for the unique concret"
+  },
+  {
+   "src": "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001",
+   "dst": "D0-ARCHIVE-CONTRACTION-NOGO-001",
+   "context": "o role assignments give w_a=361/359-12sqrt10/359 != w_b => w(z) underdetermined. sharpens d0-phason-wz-kernel-only-nogo-001 (frozen riesz eigenpair vs hand-pick"
+  },
+  {
+   "src": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+   "dst": "D0-ARCHIVE-CONTRACTION-NOGO-001",
+   "context": "on-wz-kernel-only-nogo-001 (frozen riesz eigenpair vs hand-picked rationals); blocks open d0-phason-wz-transfer-owner-001. exact-missing: prim-phason-pressure-e"
+  },
+  {
+   "src": "D0-ARCHIVE-TOWER-001",
+   "dst": "D0-ARCHIVE-LIGHTPROFINITE-001",
+   "context": "[iter19 frontier p1, reuse] upgrades d0-archive-tower-001's bespoke inverselimit subtype to the real mathlib categorical object: the tower is a gen"
+  },
+  {
+   "src": "D0-LEPTON-002",
+   "dst": "D0-BARE-GRAPH-DECIMAL-NOGO-001",
+   "context": "nly; integer lucas l11+l4=206 + exponents (0,1/4,1/3) stay the; decimals stay hyp/bridge (d0-lepton-002); the feedback/cylinder trace route is unaffected."
+  },
+  {
+   "src": "D0-KERNEL-ZONE-SPLIT-001",
+   "dst": "D0-BSD-RANK-PASSPORT-001",
+   "context": "e + the m1 reductio; stays theorem-target). passports: physics (scene rank-3/nullity-30 = d0-kernel-zone-split-001) + clay (sect30 nullity side)."
+  },
+  {
+   "src": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+   "dst": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+   "context": "r at the algebra+trace+scale level: incidence m_phi recovered from the cylinder language (d0-bratteli-fibonacci-refinement-owner-001), perron phi, golden af tra"
+  },
+  {
+   "src": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+   "dst": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+   "context": "pectral-triple tower (dirac-compatible isometric j_n) -- that is the external obstruction d0-inductive-spectral-triple-owner-001 (master a outcome b). no tower "
+  },
+  {
+   "src": "D0-PERRON-SCALE-FLOW-OWNER-001",
+   "dst": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+   "context": "eli-fibonacci-refinement-owner-001), perron phi, golden af trace, forced scale ratio phi (d0-perron-scale-flow-owner-001). it does not contain a canonical induc"
+  },
+  {
+   "src": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+   "dst": "D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001",
+   "context": "by construction), not a within-zone vertex labeling; gap-e remains simply open. cross-ref d0-dsigma-role-cycle-carrier-canonical-nogo-001, d0-representation-rec"
+  },
+  {
+   "src": "D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+   "dst": "D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001",
+   "context": "ng; gap-e remains simply open. cross-ref d0-dsigma-role-cycle-carrier-canonical-nogo-001, d0-representation-reconstruction-maximality-nogo-001."
+  },
+  {
+   "src": "D0-QUASICRYSTAL-PROJECTION-001",
+   "dst": "D0-CARRIER-NOT-ICOSAHEDRAL-001",
+   "context": "[iter11 decidable negative -- resolves the d0-quasicrystal-projection-001 named gap by separation] aut(k(9,11,13))=s9xs11xs13; the zone sizes are pairwise disti"
+  },
+  {
+   "src": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+   "dst": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+   "context": "the different aliasing axis (|z5|=5=d_sigma): d0-class5-aliasing-001 (core-formalized) + d0-ckm-class5-selector-owner-001 (cert-closed). no pdg/wolfenstein inpu"
+  },
+  {
+   "src": "D0-CLASS5-ALIASING-001",
+   "dst": "D0-CKM-CLASS5-PARITY-EXCLUSION-001",
+   "context": "e substantive class-5 exclusion is owned on the different aliasing axis (|z5|=5=d_sigma): d0-class5-aliasing-001 (core-formalized) + d0-ckm-class5-selector-owne"
+  },
+  {
+   "src": "D0-CLASS5-ALIASING-001",
+   "dst": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+   "context": "r collision (not a re-close of the exclusion). the class-5 exclusion itself stays core in d0-class5-aliasing-001 / d0.claims.class5aliasing. new scope: a finite"
+  },
+  {
+   "src": "D0-CKM-EXACT-001",
+   "dst": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+   "context": "s-kahan siam jna 1970 (cited, not a defining engine). scope: ckm topology certified (cite d0-ckm-exact-001); magnitude proof-target -- source gives one shell-ov"
+  },
+  {
+   "src": "D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001",
+   "dst": "D0-CKM-DAVIS-KAHAN-GAP-BOUND-001",
+   "context": "gives one shell-overlap tensor not a genuine (y_u,y_d) pair, so v,gamma not forced (cite d0-ckm-overlap-underdetermination-nogo-001). missing xi_ckm in {up/down"
+  },
+  {
+   "src": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "dst": "D0-CKM-YUKAWA-KERNEL-CROSSGATE-001",
+   "context": "ect the hypercharge row over b-l -- protects against a hidden row choice; consistent with d0-hypercharge-anomaly-variety-2dim-001. decidable over q; negative co"
+  },
+  {
+   "src": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "dst": "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+   "context": "[final core completion m2] maximality strengthening of d0-cmb-ns-smoothing-undetermined-nogo-001. the discrete spectral tilt n_eff-1=(k/p)p'(k) over modes {20,2"
+  },
+  {
+   "src": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+   "dst": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+   "context": "min nonzero eigenvalue of k(9,11,13); k_*^2=20. decidable off the frozen spectrum (reuses d0-connectivity-spectral-gap-speed-001). lean d0.cosmology.cmbfiedlerf"
+  },
+  {
+   "src": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+   "dst": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "context": "e bare k(9,11,13) laplacian spectrum admits different n_s at different evaluation points (d0-cmb-ns-laplacian-ids-owner-001 exhibits two: k=1 -> -29795504237/33"
+  },
+  {
+   "src": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "dst": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+   "context": "ected by cert controls in vp_cmb_ns_laplacian_ids.py). distinct from the spectral-map gap d0-cmb-phason-spectrum-owner-001 (which is the function n_s=f({lambda_"
+  },
+  {
+   "src": "D0-ARCHIVE-LAPLACIAN-001",
+   "dst": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "context": "e formula n_s = f({lambda_i} of the laplacian). the laplacian-spectrum input is internal (d0-archive-laplacian-001 core); n_s is not yet derived. cert vp_cmb_ph"
+  },
+  {
+   "src": "D0-COMPACTNESS-LIMIT-001",
+   "dst": "D0-COMPACTNESS-DEF-FORCING-001",
+   "context": "nition of c (closes the 3/8-depends-on-c nitpick); the separate rank-3=causal-cone gap of d0-compactness-limit-001 stays (sharpened by d0-rank3-causal-cone-001)"
+  },
+  {
+   "src": "D0-RANK3-CAUSAL-CONE-001",
+   "dst": "D0-COMPACTNESS-DEF-FORCING-001",
+   "context": "ick); the separate rank-3=causal-cone gap of d0-compactness-limit-001 stays (sharpened by d0-rank3-causal-cone-001). m1: forcing-uniqueness of the posing, not n"
+  },
+  {
+   "src": "D0-CONNES-DISTANCE-GEODESIC-001",
+   "dst": "D0-COMPACTNESS-LIMIT-001",
+   "context": "the. [iter17 phase d c=1 confirmed] cone-speed residual is now c=1=edge/tick structural (d0-connes-distance-geodesic-001): metric=geodesic internal, connes=cont"
+  },
+  {
+   "src": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+   "dst": "D0-COMPACTNESS-LIMIT-001",
+   "context": "ap closed] the rank-3=causal-cone identification that kept this mech-limit is now forced (d0-rank3-causal-cone-forcing-001, lean d0.synthesis.rankcausalconeforc"
+  },
+  {
+   "src": "D0-BORN-QUADRATIC-ORIGIN-001",
+   "dst": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+   "context": "assump-prl-rqm-general (prl suppl. b). cites d0-q8-sin-channel-001, d0-seam-holonomy-001, d0-born-quadratic-origin-001."
+  },
+  {
+   "src": "D0-Q8-SIN-CHANNEL-001",
+   "dst": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+   "context": "r a the. general d/n>2 = external owner-edge assump-prl-rqm-general (prl suppl. b). cites d0-q8-sin-channel-001, d0-seam-holonomy-001, d0-born-quadratic-origin-"
+  },
+  {
+   "src": "D0-SEAM-HOLONOMY-001",
+   "dst": "D0-COMPOSITION-REAL-QUOTIENT-EQUIVALENCE-001",
+   "context": "= external owner-edge assump-prl-rqm-general (prl suppl. b). cites d0-q8-sin-channel-001, d0-seam-holonomy-001, d0-born-quadratic-origin-001."
+  },
+  {
+   "src": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "dst": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+   "context": "een 2026-07-04 (4008 jobs) after parallel-session rolehyperchargereadout fix. cross-refs: d0-gap-labeling-owner-edge-001, d0-phi-cylinder-trace-unique-001."
+  },
+  {
+   "src": "D0-KTHEORY-GAP-MODULE-001",
+   "dst": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+   "context": "lies in z+z phi^-1 (cylweight_mem_gap_module) — the measure layer and the label group of d0-ktheory-gap-module-001 share one rank-2 module (cross-ref, not dupli"
+  },
+  {
+   "src": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+   "dst": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+   "context": "parallel-session rolehyperchargereadout fix. cross-refs: d0-gap-labeling-owner-edge-001, d0-phi-cylinder-trace-unique-001."
+  },
+  {
+   "src": "D0-CONNES-DISTANCE-GEODESIC-001",
+   "dst": "D0-CONNES-GRAPH-DISTANCE-OWNER-001",
+   "context": "cert vp_connes_graph_distance_owner.py (controls: edge-jump>1 inadmissible). extends/owns d0-connes-distance-geodesic-001. the universal (all finite graphs) lea"
+  },
+  {
+   "src": "D0-COMPACTNESS-LIMIT-001",
+   "dst": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+   "context": "sup{|f(x)-f(y)|: ||[d,f]||<=1}). arxiv:0810.2088 (2008). routes the existing named gap of d0-compactness-limit-001 (rank-3=causal-cone / connes-distance open, 0"
+  },
+  {
+   "src": "D0-PHI-LADDER-SEMIGROUP-001",
+   "dst": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+   "context": "continuous-time leg of the connector. reuses the existing env_cocycle owner (d0-phi-ladder-semigroup-001, module d0.im.continuumfromfractaltick): continuous_env"
+  },
+  {
+   "src": "D0-ALPHA-HOLONOMY-002",
+   "dst": "D0-CVFT-F1",
+   "context": "ual the algebraic anomaly. the working route to the 9-digit alpha is the closure holonomy d0-alpha-holonomy-002. [iter21 closed-negative, lean] now formalized: "
+  },
+  {
+   "src": "D0-ALPHA-MU2-FULL-LEDGER-001",
+   "dst": "D0-CVFT-F1",
+   "context": "ledger vs spin(11) 32 vs edge-pairing 2) is now closed d0-internally as an m1 selector in d0-alpha-mu2-full-ledger-001 (full lambda*(v11)=2^11 forced; mu2=12288"
+  },
+  {
+   "src": "D0-DELTA-ALPHA-MOMENT-001",
+   "dst": "D0-CVFT-F1",
+   "context": "cert). see d0-alpha-zeta-residue-001. [iter12] owner narrowed for the delta_alpha leg by d0-delta-alpha-moment-001: the algebraic writing's form (depth-2 pi0-ph"
+  },
+  {
+   "src": "D0-HULL-001",
+   "dst": "D0-DELONE-PHI-001",
+   "context": "ependency). gives the hull a real mathlib-typed point set, complementing the gap-labeling d0-hull-001/d0-ktheory-gap-module-001. theorem-target: flc/aperiodicit"
+  },
+  {
+   "src": "D0-KTHEORY-GAP-MODULE-001",
+   "dst": "D0-DELONE-PHI-001",
+   "context": "gives the hull a real mathlib-typed point set, complementing the gap-labeling d0-hull-001/d0-ktheory-gap-module-001. theorem-target: flc/aperiodicity as delone-"
+  },
+  {
+   "src": "D0-ALPHA-HOLONOMY-002",
+   "dst": "D0-DELTA-ALPHA-MOMENT-001",
+   "context": "depth-2 moment form stays the, but the 9-digit alpha is obtained via the closure holonomy d0-alpha-holonomy-002, not via residue extraction."
+  },
+  {
+   "src": "D0-GENERATIVE-DYNAMICS-001",
+   "dst": "D0-DELTA-ALPHA-MOMENT-001",
+   "context": "shape of the feshbach-schur resolvent moment expansion w_eff(z)=a+sum_k z^-(k+1) b d^k c (d0-generative-dynamics-001): exponents -6,-3 = -2*rank,-1*rank (archiv"
+  },
+  {
+   "src": "D0-DELTA-ALPHA-EXACT-001",
+   "dst": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+   "context": "nd + not-data-residual). consolidation: already lean-core in d0.spectral.deltaalphaexact (d0-delta-alpha-exact-001). external dixmier residue-extraction realiza"
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+   "context": "haexact (d0-delta-alpha-exact-001). external dixmier residue-extraction realization stays d0-dixmier-residue-owner-001 (assump-dixmier-trace)."
+  },
+  {
+   "src": "D0-TOWER-STOP-NOEXT-001",
+   "dst": "D0-DETECTION-QUADRATIC-001",
+   "context": "hird, neighbour-exclusion). honest: the decidable algebra is the core tower-stop content (d0-tower-stop-noext-001); the categorical 'two kinds exhaust degree-2'"
+  },
+  {
+   "src": "D0-ICOSIAN-E8-GRAM-001",
+   "dst": "D0-DIM8-NETWORK-001",
+   "context": "8=2*4; tower 8|24|120 with indices 3,5,15; z(q8)=z2 base; e8 gram even unimodular (reuses d0-icosian-e8-gram-001); d4 star has 3 legs and |out(spin8)|=|s3|=6. c"
+  },
+  {
+   "src": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "dst": "D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001",
+   "context": "he infinite object nor residue->delta_alpha normalization, which stay external owner edge d0-dixmier-residue-owner-001 (assump-dixmier-trace). cert: 4 reachable"
+  },
+  {
+   "src": "D0-ALPHA-ALG-CLOSED-001",
+   "dst": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "context": "frontier-strike] residue-owner split: the internal alpha_alg/delta_alpha seam is closed (d0-alpha-alg-closed-001 / d0-delta-alpha-seam-closed-001, core); this r"
+  },
+  {
+   "src": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+   "dst": "D0-DIXMIER-RESIDUE-OWNER-001",
+   "context": "owner split: the internal alpha_alg/delta_alpha seam is closed (d0-alpha-alg-closed-001 / d0-delta-alpha-seam-closed-001, core); this row is the external-owner "
+  },
+  {
+   "src": "D0-ALPHA-ZETA-RESIDUE-001",
+   "dst": "D0-EDGE-001",
+   "context": "efore redundant and is deprecated (superseded, not abandoned): the trace leg is closed at d0-alpha-zeta-residue-001. the remaining open edge leg is the unitary-"
+  },
+  {
+   "src": "D0-EDGE-002",
+   "dst": "D0-EDGE-001",
+   "context": ". the remaining open edge leg is the unitary-dilation / torus-ramification puiseux target d0-edge-002."
+  },
+  {
+   "src": "D0-EDGE-ALPHA-001",
+   "dst": "D0-EDGE-002",
+   "context": "sector), which is not a finite identity. status proof-target. companion finite content at d0-edge-alpha-001 / d0-edge-ramification-001 (cert-closed). exact-miss"
+  },
+  {
+   "src": "D0-EDGE-RAMIFICATION-001",
+   "dst": "D0-EDGE-002",
+   "context": "t a finite identity. status proof-target. companion finite content at d0-edge-alpha-001 / d0-edge-ramification-001 (cert-closed). exact-missing: the non-trace e"
+  },
+  {
+   "src": "D0-ALPHA-ZETA-RESIDUE-001",
+   "dst": "D0-EDGE-ALPHA-001",
+   "context": "a_top^-1 is machine-checked in d0.spectral.zetaresiduealpha.zetaedge_neg_one (shared with d0-alpha-zeta-residue-001). the unitary-dilation construction stays th"
+  },
+  {
+   "src": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "dst": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+   "context": "the frozen internal seam. never promotes a physical alpha prediction to core. isolated by d0-alpha-present-core-maximality-nogo-001. see d0_final_passport_index"
+  },
+  {
+   "src": "D0-FIBONACCI-IF-FORCING-001",
+   "dst": "D0-FIBONACCI-FUSION-RING-001",
+   "context": "[iter19 frontier, reuse] sharpens d0-fibonacci-if-forcing-001's scalar phi^2=phi+1 to a genuine integer matrix-ring witness of the fibonacci fusion rul"
+  },
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-FIBONACCI-IF-FORCING-001",
+   "context": "shift-equivalence) -- is not implied by equal entropy and stays the cited external owner (d0-adler-weiss-partition-owner-001 / assump-adler-weiss; adler-weiss 1"
+  },
+  {
+   "src": "D0-HYPERCHARGE-FLOW-ORIGIN-PASSPORT-001",
+   "dst": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
+   "context": "13))); src-connes-1994. the five-field anomaly row stays closed; separate from b-l. backs d0-hypercharge-flow-origin-passport-001."
+  },
+  {
+   "src": "D0-FORGETTING-CHANNEL-PTP-001",
+   "dst": "D0-FORGETTING-CHANNEL-CP-001",
+   "context": "[iter19 frontier, reuse] companion to d0-forgetting-channel-ptp-001 supplying the complete-positivity side for the *-homomorphism forgetting model: any *-hom"
+  },
+  {
+   "src": "D0-Z2-SPINOR-COVER-001",
+   "dst": "D0-GALOIS-PHI-IRRATIONAL-001",
+   "context": "[iter18 reuse item 2] upgrades the galois-z2 incarnation of d0-z2-spinor-cover-001 from a hand ring-involution (galois_z2_order_two: x|->1-x squares to id on r)"
+  },
+  {
+   "src": "D0-DELONE-PHI-001",
+   "dst": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "context": "t); actual retirement/re-pointing of ~10 references = follow-up. cross-refs: d0-hull-001, d0-delone-phi-001, d0-phason-forcing-001."
+  },
+  {
+   "src": "D0-HULL-001",
+   "dst": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "context": ")/30 float fit); actual retirement/re-pointing of ~10 references = follow-up. cross-refs: d0-hull-001, d0-delone-phi-001, d0-phason-forcing-001."
+  },
+  {
+   "src": "D0-KTHEORY-001",
+   "dst": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "context": "[2026-07 center-attack, step 3] converts the external-gap markers of d0-ktheory-001/d0-ktheory-gap-module-001 into a named owner edge. external owners (cited, a"
+  },
+  {
+   "src": "D0-KTHEORY-GAP-MODULE-001",
+   "dst": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "context": "[2026-07 center-attack, step 3] converts the external-gap markers of d0-ktheory-001/d0-ktheory-gap-module-001 into a named owner edge. external owners (cited, a"
+  },
+  {
+   "src": "D0-PHASON-FORCING-001",
+   "dst": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "context": "nt/re-pointing of ~10 references = follow-up. cross-refs: d0-hull-001, d0-delone-phi-001, d0-phason-forcing-001."
+  },
+  {
+   "src": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+   "dst": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "context": "ntrol); cantat attribution flag before any hyperbolicity quote. hypothesis side internal: d0-phi-cylinder-trace-unique-001 + detectorsupportgoldenweight.lean cy"
+  },
+  {
+   "src": "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001",
+   "dst": "D0-GATE-STATIONARITY-OWNER-001",
+   "context": "erence closure): (1) finite factorization = theorem readout_factors_through_finite_level [d0-condensed-golden-weight-anchor-001]; (2) phi self-return = cylweigh"
+  },
+  {
+   "src": "D0-GRAV-002",
+   "dst": "D0-GATE-STATIONARITY-OWNER-001",
+   "context": "sicalibrationclosure bridge claim] + lambda_act=38 (book 03/04) + single-section shadows [d0-grav-002]; (6) gate stationarity = this row; (7) archive/active sep"
+  },
+  {
+   "src": "D0-GRADED-BIANCHI-EXACT-001",
+   "dst": "D0-GAUGE-BIANCHI-GRADED-DEPRECATED-001",
+   "context": "replaced by d0-graded-bianchi-exact-001; exact bianchi is closed on the graded incidence complex."
+  },
+  {
+   "src": "D0-MASSGAP-COSTQUANTUM-001",
+   "dst": "D0-GAUGE-MASS-GAP-PLAQUETTE-001",
+   "context": "ion of the proved finite gap under d0-nonabelian-seam-001 (d0.claims.nonabelianseamgap) + d0-massgap-costquantum-001 (d0.gauge.massgapcostquantum); the continuo"
+  },
+  {
+   "src": "D0-NONABELIAN-SEAM-001",
+   "dst": "D0-GAUGE-MASS-GAP-PLAQUETTE-001",
+   "context": "ontinuum yang-mills mass gap is not claimed. consolidation of the proved finite gap under d0-nonabelian-seam-001 (d0.claims.nonabelianseamgap) + d0-massgap-cost"
+  },
+  {
+   "src": "D0-GEN-INDEX-001",
+   "dst": "D0-GENERATION-RAYS-001",
+   "context": "e k(9,11,13) spectral cluster generation route is no-go. core generation index is instead d0-gen-index-001 via projective branch-defect rays."
+  },
+  {
+   "src": "D0-DELTA-ALPHA-EXACT-001",
+   "dst": "D0-GENERATIVE-DYNAMICS-001",
+   "context": "nbasis catalogue), so the seam cannot close => time; scalar gluing anomaly = delta_alpha (d0-delta-alpha-exact-001). (a.3) vp_loop_floor_epsilon.py: loop floor "
+  },
+  {
+   "src": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+   "dst": "D0-GHP-GOLDEN-CAUCHY-BOUND-001",
+   "context": "diverges / delta-chosen-after-target rejected). the smooth-manifold limit stays external (d0-rieffel-ghp-continuum-owner-001 + connes reconstruction)."
+  },
+  {
+   "src": "D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001",
+   "dst": "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001",
+   "context": "rank-3. witness-only (no whole-class exhaustion). cites d0-raw-commutant-wedderburn-001, d0-postcore-representation-extension-nogo-001. exact-missing: prim-grad"
+  },
+  {
+   "src": "D0-RAW-COMMUTANT-WEDDERBURN-001",
+   "dst": "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001",
+   "context": "ctive is grading-dependent, never rank-3. witness-only (no whole-class exhaustion). cites d0-raw-commutant-wedderburn-001, d0-postcore-representation-extension-"
+  },
+  {
+   "src": "D0-PHASON-THAWING-001",
+   "dst": "D0-H0-EVOLVING-W-001",
+   "context": "only forced piece (convexity delta^2 r_n=phi^n(phi-1)^2>0) is already core in the sibling d0-phason-thawing-001 (d0.cosmology.archiveconvexity); this row's dist"
+  },
+  {
+   "src": "D0-HIGGS-SCALAR-PROJECTOR-CONSTRUCTIVE-001",
+   "dst": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+   "context": "ree-shell geometry (d0-torus-core13-geometry-001) and the rank-2 frozen scalar projector (d0-higgs-scalar-projector-constructive-001), both core. missing (exact"
+  },
+  {
+   "src": "D0-TORUS-CORE13-GEOMETRY-001",
+   "dst": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+   "context": "phason condensation in the v13/shell geometry. closed already: the three-shell geometry (d0-torus-core13-geometry-001) and the rank-2 frozen scalar projector (d"
+  },
+  {
+   "src": "D0-SPECTRAL-EINSTEIN-001",
+   "dst": "D0-HODGE-LINKS-001",
+   "context": ".py) but do not constitute the cross-carrier binding the claim asserts. jointly open with d0-spectral-einstein-001. exact-missing: shared c1 cochain hodge map ("
+  },
+  {
+   "src": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+   "dst": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+   "context": "qft, assump-hawking-spectrum). reuses the feshbach w_eff of d0-generative-dynamics-001 / d0-alpha-feshbach-dixmier-owner-001."
+  },
+  {
+   "src": "D0-GENERATIVE-DYNAMICS-001",
+   "dst": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+   "context": "2pi stays external (continuum qft, assump-hawking-spectrum). reuses the feshbach w_eff of d0-generative-dynamics-001 / d0-alpha-feshbach-dixmier-owner-001."
+  },
+  {
+   "src": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+   "dst": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+   "context": "tal h2] pre-registered transfer-corrected residual passport over the frozen i_f=log(phi) (d0-horizon-hum-transfer-observable-owner-001). not a raw frequency-rat"
+  },
+  {
+   "src": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+   "dst": "D0-HORIZONLESS-ECHO-PASSPORT-001",
+   "context": "horizonless-echo rejection passport over the frozen echo target tau_echo/m=2/3+4log(3/2) (d0-echo-delay-compactness-owner-001) + external gr tortoise formalism."
+  },
+  {
+   "src": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+   "dst": "D0-HULL-001",
+   "context": "ity / repetitivity are cert-backed (vp_d0_tiling_hull.py + sturmian phi^-2 inflation; see d0-quasicrystal-carrier-forcing-001), not lean-proved as such. theorem"
+  },
+  {
+   "src": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "dst": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+   "context": "kage: hypercharge-direction obligation = r2 localization obligation (one, not two). cites d0-hypercharge-anomaly-variety-2dim-001 (no-go); does not re-mint. fir"
+  },
+  {
+   "src": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+   "dst": "D0-IM-003",
+   "context": "ntity and the 'this is the physical/smooth continuum limit' reading stay cert/owner-edge (d0-rieffel-ghp-continuum-owner-001); not promoted to the smooth-manifo"
+  },
+  {
+   "src": "D0-PHASON-THAWING-001",
+   "dst": "D0-IM-COSMO-001",
+   "context": "(phi^n-1)=phi^n(phi-1)^2>0, machine-checked in d0.cosmology.archiveconvexity (shared with d0-phason-thawing-001). internal relative acceleration; no survey fit."
+  },
+  {
+   "src": "D0-ARCHIVE-LIGHTPROFINITE-001",
+   "dst": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+   "context": "present-core: the corpus realizes the tower as an inverse limit of downward projections (d0-archive-lightprofinite-001). exact missing artifact: an isometric j_"
+  },
+  {
+   "src": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+   "dst": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+   "context": "ruction / latremoliere propinquity (external passport d0-smooth-quantum-metric-passport / d0-connes-reconstruction-owner-001). cert vp_inductive_spectral_triple"
+  },
+  {
+   "src": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+   "dst": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+   "context": "61.4, prose-owned); the threshold-replaces-inflaton structure is the connectivity owner (d0-cosmology-connectivity-threshold-owner-001). missing (exact): the pr"
+  },
+  {
+   "src": "D0-GAP-LABELING-OWNER-EDGE-001",
+   "dst": "D0-KTHEORY-001",
+   "context": "ap_labels.json contract preserved so all ~15 references stay valid. full owner-edge cert: d0-gap-labeling-owner-edge-001."
+  },
+  {
+   "src": "D0-KTHEORY-GAP-MODULE-001",
+   "dst": "D0-KTHEORY-001",
+   "context": "a proof. [iter5 finite-core] the gap-label module shadow is now proved exactly (new claim d0-ktheory-gap-module-001): labels lie in the rank-2 module z+zphi^-1,"
+  },
+  {
+   "src": "D0-KTHEORY-001",
+   "dst": "D0-KTHEORY-GAP-MODULE-001",
+   "context": "ard identity ids=k0-trace (operator k-theory absent from mathlib -> stays external-gap on d0-ktheory-001)."
+  },
+  {
+   "src": "D0-PHASON-FORCING-001",
+   "dst": "D0-KTHEORY-GAP-MODULE-001",
+   "context": "i^-1 (common) phi^-2 (rare) = (0,1)/(1,-1), sum=1 (total ids) — same exact frequencies as d0-phason-forcing-001. lean d0.claims.ktheorygapmodule (ktheory_gap_mo"
+  },
+  {
+   "src": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+   "dst": "D0-LATTICE-FINITENESS-BRIDGE-001",
+   "context": "[iter13 bridge owner-edge, 'why-finite' leg] companion to d0-quasicrystal-carrier-forcing-001 ('why-phi'): non-perturbative gauge theory rigorous only on a fini"
+  },
+  {
+   "src": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "dst": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+   "context": "ession self-audit. source-native permutation combinatorics, no hand-built matrices. cites d0-lepton-branch-selector-maximality-nogo-001, d0-ckm... etc; does not"
+  },
+  {
+   "src": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "dst": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "context": "en green resolvent. complements d0-lepton-puiseux-uniqueness-obstruction-001; blocks open d0-lepton-indirect-coefficient-owner-001; decimals stay eft/ir passpor"
+  },
+  {
+   "src": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "dst": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "context": "uts. so the coefficient row is underdetermined by the frozen green resolvent. complements d0-lepton-puiseux-uniqueness-obstruction-001; blocks open d0-lepton-in"
+  },
+  {
+   "src": "D0-LEPTON-BRANCH-ROW-MINIMAL-EXTENSION-001",
+   "dst": "D0-LEPTON-CYCLIC-GENERATOR-001",
+   "context": "eux, kato; cert). scope: fixes the index, not the branch->generation row map (= v16 no-go d0-lepton-branch-row-minimal-extension-001); decimals external (assump"
+  },
+  {
+   "src": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "dst": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+   "context": "u^11=1). honesty: resolvent layer only -- canonical branch projectors stay no-go-bounded (d0-lepton-puiseux-uniqueness-obstruction-001), mass decimals r_mu,r_ta"
+  },
+  {
+   "src": "D0-EDGE-RAMIFICATION-001",
+   "dst": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+   "context": "ton_green_puiseux_operator_scaffold (reuses companionc4^4=lam*i, companionr3^3=lam*i from d0-edge-ramification-001); cert vp_lepton_green_puiseux_operator.py (c"
+  },
+  {
+   "src": "D0-LEPTON-002",
+   "dst": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+   "context": "electron unramified 0, giving the exponent row (p_e,p_mu,p_tau)=(0,1/4,1/3) (= the row of d0-lepton-002). lean d0.matter.leptongreenpuiseuxowner.lepton_green_pu"
+  },
+  {
+   "src": "D0-BARE-GRAPH-DECIMAL-NOGO-001",
+   "dst": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "context": "ton coefficient origin. the direct raw-graph->17-digit-decimal route is retired by no-go (d0-bare-graph-decimal-nogo-001). the only admissible positive route is"
+  },
+  {
+   "src": "D0-LEPTON-002",
+   "dst": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "context": "dge. status proof-target; the exponent row is exact (the 04.8) and the decimals stay hyp (d0-lepton-002); no decimal/pdg fit (vp_lepton_no_decimal_fit_guard.py,"
+  },
+  {
+   "src": "D0-EDGE-002",
+   "dst": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+   "context": "ure of the lepton indirect green/puiseux route. existing finite assets: shell-torus/edge (d0-edge-002 puiseux target, d0-edge-alpha-001 zetaedge, d0-edge-ramifi"
+  },
+  {
+   "src": "D0-EDGE-ALPHA-001",
+   "dst": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+   "context": "reen/puiseux route. existing finite assets: shell-torus/edge (d0-edge-002 puiseux target, d0-edge-alpha-001 zetaedge, d0-edge-ramification-001 companion cover) "
+  },
+  {
+   "src": "D0-EDGE-RAMIFICATION-001",
+   "dst": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+   "context": "finite assets: shell-torus/edge (d0-edge-002 puiseux target, d0-edge-alpha-001 zetaedge, d0-edge-ramification-001 companion cover) + feshbach-schur transfer (d0"
+  },
+  {
+   "src": "D0-GENERATIVE-DYNAMICS-001",
+   "dst": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+   "context": "-alpha-001 zetaedge, d0-edge-ramification-001 companion cover) + feshbach-schur transfer (d0-generative-dynamics-001, cert vp_feshbach_residue_amplitudes.py) + "
+  },
+  {
+   "src": "D0-LEPTON-002",
+   "dst": "D0-LEPTON-PUISEUX-DECIMAL-SECTION-001",
+   "context": "graph->decimal route stays no-go (d0-bare-graph-decimal-nogo-001); the decimals stay hyp (d0-lepton-002). proof-target."
+  },
+  {
+   "src": "D0-BARE-GRAPH-DECIMAL-NOGO-001",
+   "dst": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+   "context": "ruction, d0-lepton-puiseux-uniqueness-obstruction-001). this lifts the direct-route no-go d0-bare-graph-decimal-nogo-001 to the general owner level (direct+indi"
+  },
+  {
+   "src": "D0-LEPTON-002",
+   "dst": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+   "context": "t): the frozen raw graph forces only the structural skeleton -- integer lucas l11+l4=206 (d0-lepton-002, cert-closed), depth-exponent row (0,1/4,1/3) as puiseux"
+  },
+  {
+   "src": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "dst": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+   "context": "ch-assignment freedom sigmaa!=sigmab both order 12 (d0.matter.leptonbranchassignmentnogo, d0-lepton-branch-selector-maximality-nogo-001) and companion non-uniqu"
+  },
+  {
+   "src": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "dst": "D0-LEPTON-RAW-GRAPH-COEFFICIENT-OWNER-001",
+   "context": "and companion non-uniqueness at index 1/4 (d0.matter.leptonpuiseuxuniquenessobstruction, d0-lepton-puiseux-uniqueness-obstruction-001). this lifts the direct-ro"
+  },
+  {
+   "src": "D0-EDGE-RAMIFICATION-001",
+   "dst": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+   "context": "c + identity, no uniqueness. proves: cyclic relations c4^4=lam*i, r3^3=lam*i (reused from d0-edge-ramification-001); ramification index=n, puiseux exponent=1/n "
+  },
+  {
+   "src": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+   "dst": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+   "context": "does not assert branch index determines the operator (that shortcut is the existing no-go d0-lepton-puiseux-uniqueness-obstruction-001). cert controls: fail_rh_"
+  },
+  {
+   "src": "D0-LEPTON-002",
+   "dst": "D0-LEPTON-STURMIAN-PUISEUX-COEFFICIENTS-001",
+   "context": "icient-owner-001). the cert does not claim the c_k reproduce m_mu/m_e. decimals stay hyp (d0-lepton-002)."
+  },
+  {
+   "src": "D0-LEPTON-002",
+   "dst": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+   "context": "-overlap eigenvalues + ramification exponents. the exponent row (0,1/4,1/3) is exact the (d0-lepton-002). missing (exact): (a) a finite green function g_shell(l"
+  },
+  {
+   "src": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+   "dst": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+   "context": "s yukawa' rejected; pdg-tuned eigenvalue rejected). decimals r_mu/r_tau stay hyp; extends d0-lepton-indirect-coefficient-owner-001. proof-target."
+  },
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-LUCAS-VORONOI-MARKOV-PARTITION-001",
+   "context": "old: the voronoi-cell-exact markov property and full topological conjugacy stay external (d0-adler-weiss-partition-owner-001, assump-adler-weiss). not an import"
+  },
+  {
+   "src": "D0-OMEGA8-CENTER-001",
+   "dst": "D0-M2-PHASE-LABELING-V9-SHELL-001",
+   "context": "urier idempotents on c[q8] (ranks 1,4,3) are d0-q8-terminal-fourier-001 (core). cross-ref d0-omega8-center-001, d0-q8-dedekind-minimality-001, d0-dsigma-role-cy"
+  },
+  {
+   "src": "D0-Q8-DEDEKIND-MINIMALITY-001",
+   "dst": "D0-M2-PHASE-LABELING-V9-SHELL-001",
+   "context": "[q8] (ranks 1,4,3) are d0-q8-terminal-fourier-001 (core). cross-ref d0-omega8-center-001, d0-q8-dedekind-minimality-001, d0-dsigma-role-cycle-carrier-canonical-"
+  },
+  {
+   "src": "D0-Q8-TERMINAL-FOURIER-001",
+   "dst": "D0-M2-PHASE-LABELING-V9-SHELL-001",
+   "context": "e-owner cited not duplicated: the e0/e3/e4 fourier idempotents on c[q8] (ranks 1,4,3) are d0-q8-terminal-fourier-001 (core). cross-ref d0-omega8-center-001, d0-"
+  },
+  {
+   "src": "D0-GEN-MASS-001",
+   "dst": "D0-MASS-CHAIN-001",
+   "context": "s=period ontology + w resolved] ontology (core, distinct from the no-go numeric hierarchy d0-gen-mass-001): mass = inverse canonization-period, mass = tau^-1; t"
+  },
+  {
+   "src": "D0-MATTER-LOCALIZATION-001",
+   "dst": "D0-MATTER-SOURCE-NEUTRALITY-001",
+   "context": "ce neutrality closes the minimal base interface; nonzero localized sources are handled by d0-matter-localization-001."
+  },
+  {
+   "src": "D0-PMNS-SEAM-TOPOLOGY-001",
+   "dst": "D0-MIXING-HIERARCHY-INVERSION-001",
+   "context": "0 pmns-large) is the derived structural content; the delta0 angle corrections carried via d0-pmns-seam-topology-001 are an empirical-passport delta0-family (pos"
+  },
+  {
+   "src": "D0-TIME-MODULAR-FLOW-OWNER-001",
+   "dst": "D0-MODULAR-TIME-FLAVOR-001",
+   "context": ". honest: the sl(2,z) modular-group link is real; the tomita-takesaki thermal-time sense (d0-time-modular-flow-owner-001) is a different modular notion, not con"
+  },
+  {
+   "src": "D0-NEUTRINO-MASS-PASSPORT-001",
+   "dst": "D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001",
+   "context": "lpha rejected). the physical reading m_nu ~ p_sterile is the empirical neutrino passport (d0-neutrino-mass-passport-001), never core-the."
+  },
+  {
+   "src": "D0-BRIDGE-COMPRESSION-001",
+   "dst": "D0-NEUTRINO-MASS-PASSPORT-001",
+   "context": "rt but may not tune delta_alpha/mu1/mu2/alpha (no reverse selection). passport-closed per d0-bridge-compression-001 (firewall empirical_passport, never core-the"
+  },
+  {
+   "src": "D0-DELTA-ALPHA-EXACT-001",
+   "dst": "D0-NEUTRINO-MASS-PASSPORT-001",
+   "context": "over the frozen seam: internal object p_sterile = delta_alpha^2 (delta_alpha core-exact, d0-delta-alpha-exact-001); external packaging m_nu/m_e ~ p_sterile. ext"
+  },
+  {
+   "src": "D0-COMPACTNESS-LIMIT-001",
+   "dst": "D0-PACKING-LIMIT-001",
+   "context": "136 191401 + arxiv:2602.10185; jampolski-rezzolla prd 113 l121502; bekenstein 1981. links d0-compactness-limit-001 + echo-falsifier (book 09). [iter21 cleanup] "
+  },
+  {
+   "src": "D0-BH-CAPACITY-A4-001",
+   "dst": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+   "context": "umann entropy + hawking spectrum + island formula stay external. distinct from the static d0-bh-capacity-a4-001 (s=n/4): this is the dynamic rank curve."
+  },
+  {
+   "src": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+   "dst": "D0-PAGE-TURNING-POINT-RANK-THEOREM-001",
+   "context": "ax-at-0, value>d/2, asymmetric max). analytic von neumann entropy stays external; deepens d0-page-curve-finite-rank-owner-001."
+  },
+  {
+   "src": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "dst": "D0-PHASON-ARCHIVE-CAPACITY-REDSHIFT-001",
+   "context": "atio core; no survey datum (desi/cpl/h0) enters; the physical w_de reading is deferred to d0-phason-wde-z-map-owner-001."
+  },
+  {
+   "src": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "dst": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+   "context": "itive envelope only; the physical magnitude/redshift map |w_de(z)| stays underdetermined (d0-phason-magnitude-maximality-nogo-001). no desi/cpl/flrw."
+  },
+  {
+   "src": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "dst": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "context": "[final core completion m2] the dark-energy sign is owned (d0-phason-wde-sign-normalization-owner-001, galois-forced negative, retained reading -phi). the magnit"
+  },
+  {
+   "src": "D0-IM-COSMO-001",
+   "dst": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+   "context": "s instantiable from internal owners -- rho from the archive relative-acceleration energy (d0-im-cosmo-001, archive_growth_strictly_convex) and pressure from the"
+  },
+  {
+   "src": "D0-H0-EVOLVING-W-001",
+   "dst": "D0-PHASON-THAWING-001",
+   "context": "iv:2504.15190), dr3 phys-model fit is the falsifier. sharpens the h0-evolving-w passport (d0-h0-evolving-w-001)."
+  },
+  {
+   "src": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+   "dst": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "context": "wner-001 (galois anchor -phi). (3) magnitude z-profile not present-core unique: no-go via d0-phason-magnitude-maximality-nogo-001 (>=2 admissible maps anchored "
+  },
+  {
+   "src": "D0-PHASON-WZ-CPL-PASSPORT-001",
+   "dst": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+   "context": "hored at -phi, differ at z=1). (4) physical redshift profile = external desi/cpl passport d0-phason-wz-cpl-passport-001 (passport-closed). composite: no unique "
+  },
+  {
+   "src": "D0-BRIDGE-COMPRESSION-001",
+   "dst": "D0-PHASON-WZ-CPL-PASSPORT-001",
+   "context": "definition' rejected). passport-closed (firewall empirical_passport, never core-the); per d0-bridge-compression-001."
+  },
+  {
+   "src": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+   "dst": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "context": "xt-frontier] explicit internal phason eos function w_d0(u). closed already: the eos form (d0-phason-pressure-eos-scaffold-001, w_d0=p/rho), the kernel-only no-g"
+  },
+  {
+   "src": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+   "dst": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+   "context": ", the kernel-only no-go (d0-phason-wz-kernel-only-nogo-001), and the finite-sequence w_n (d0-phason-wz-finite-sequence-scaffold-001). missing artifacts (exact):"
+  },
+  {
+   "src": "D0-IM-COSMO-001",
+   "dst": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+   "context": "sequence w_n = p_n/rho_n = dr_n/r_n = phi^(n-1)/(phi^n-1) (exact q(phi)) from energy r_n (d0-im-cosmo-001) + relative pressure dr_n (d0-im-cosmo-002) on the com"
+  },
+  {
+   "src": "D0-IM-COSMO-002",
+   "dst": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+   "context": "n-1)/(phi^n-1) (exact q(phi)) from energy r_n (d0-im-cosmo-001) + relative pressure dr_n (d0-im-cosmo-002) on the common window n; w_n decreases monotonically t"
+  },
+  {
+   "src": "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001",
+   "dst": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+   "context": "so no eigenvalue-matching / canonical intertwiner maps one carrier onto the other; role (d0-phason-pressure-energy-maximality-nogo-001): distinct admissible pre"
+  },
+  {
+   "src": "D0-PHASON-WZ-CPL-PASSPORT-001",
+   "dst": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+   "context": "rgy-role-assignment. physical w_de(z) magnitude/redshift stays external cpl/desi passport d0-phason-wz-cpl-passport-001, never core; no survey datum admitted as"
+  },
+  {
+   "src": "D0-BRIDGE-COMPRESSION-001",
+   "dst": "D0-PHI-CSTAR-PASSPORT-001",
+   "context": "aim a bare scalar c*(s_phi) has a unique trace because phi is unique. passport-closed per d0-bridge-compression-001 (firewall empirical_passport, never core-the"
+  },
+  {
+   "src": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+   "dst": "D0-PHI-CSTAR-PASSPORT-001",
+   "context": "city / crossed-product theorem owner (external). frozen internal object = the cert-closed d0-phi-cylinder-trace-unique-001 cylinder trace; the external c*-theor"
+  },
+  {
+   "src": "D0-IM-002",
+   "dst": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+   "context": "on m=[[1,1],[1,0]] (the 'no bb' rule), = the golden split (phi^-1,phi^-2) (= w_ext/w_int, d0-im-002): pi m = phi pi, sum=1, embedding-compatible ((pi m)/phi=pi)"
+  },
+  {
+   "src": "D0-PHI-CSTAR-PASSPORT-001",
+   "dst": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+   "context": "nternal cylinder trace only; the external c*-crossed-product unique trace is the passport d0-phi-cstar-passport-001."
+  },
+  {
+   "src": "D0-IM-003",
+   "dst": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+   "context": "tick-weight connector. reused substrate (not re-derived): d0-im-003 (ladder_constant_ratio a_{k+1}=a_k*phi^-1, ladder_substrate_conserved p+p^2=1, env_restri"
+  },
+  {
+   "src": "D0-PHI-LADDER-SEMIGROUP-001",
+   "dst": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+   "context": "atio a_{k+1}=a_k*phi^-1, ladder_substrate_conserved p+p^2=1, env_restricts_to_ladder) and d0-phi-ladder-semigroup-001 (env_cocycle). new content = the tick-weig"
+  },
+  {
+   "src": "D0-DIM-LADDER-COMPACT-001",
+   "dst": "D0-PHI-LADDER-SEMIGROUP-001",
+   "context": "external-base controls). sprint consolidation: the integer ladder q(d)=phi^(d-4) is core (d0-dim-ladder-compact-001), the golden split is core (d0-im-002), and "
+  },
+  {
+   "src": "D0-IM-002",
+   "dst": "D0-PHI-LADDER-SEMIGROUP-001",
+   "context": "eger ladder q(d)=phi^(d-4) is core (d0-dim-ladder-compact-001), the golden split is core (d0-im-002), and the envelope cocycle is lean-proved (d0.im.continuumfr"
+  },
+  {
+   "src": "D0-IM-003",
+   "dst": "D0-PHI-LADDER-SEMIGROUP-001",
+   "context": "cle is lean-proved (d0.im.continuumfromfractaltick.env_cocycle / env_restricts_to_ladder, d0-im-003) -- this row is the sprint's consolidated phi-ladder-semigro"
+  },
+  {
+   "src": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+   "dst": "D0-PHI-LADDER-SEMIGROUP-001",
+   "context": "new theorem over those. the smooth-manifold limit stays the rieffel/ghp+connes passport (d0-smooth-manifold-passport-001)."
+  },
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+   "context": "golden-word controls). scope: full topological/measure conjugacy stays the external owner d0-adler-weiss-partition-owner-001 (assump-adler-weiss); coincidence c"
+  },
+  {
+   "src": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+   "dst": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+   "context": "), and its letter frequencies -> golden split (phi^-1,phi^-2) (same stationary measure as d0-phi-cylinder-trace-unique-001). cert vp_phi_sturmian_cylinder_conju"
+  },
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001",
+   "context": "ted). classical smooth/topological/measure adler-weiss conjugacy stays the external owner d0-adler-weiss-partition-owner-001 (assump-adler-weiss)."
+  },
+  {
+   "src": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+   "dst": "D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001",
+   "context": "titution, language-without-frequency, short-window-only, injected-word controls). extends d0-phi-sturmian-cylinder-conjugacy-001 (not demoted). classical smooth"
+  },
+  {
+   "src": "D0-TIME-2D-PISOT-001",
+   "dst": "D0-PISOT-CONTRACTION-TIME-ARROW-001",
+   "context": "isintegral pisot-number class is the named continuation. backs book_06 06.36; complements d0-time-2d-pisot-001 (the toral t spectral-radius side)."
+  },
+  {
+   "src": "D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001",
+   "dst": "D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001",
+   "context": "alization deferred to d0-external-dixmier-wodzicki-passport-001. reuses d0-cvft-f1; cites d0-alpha-log-cesaro-measurability-nogo-001. exact-missing: external di"
+  },
+  {
+   "src": "D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001",
+   "dst": "D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001",
+   "context": "the only route to mu2. no internal measurable trace realizes mu2; realization deferred to d0-external-dixmier-wodzicki-passport-001. reuses d0-cvft-f1; cites d0"
+  },
+  {
+   "src": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+   "dst": "D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001",
+   "context": "=718) => refinement functor not unique. cites d0-vnext2-scene-native-refinement-nogo-001, d0-scene-native-multiscale-tower-nogo-001. exact-missing: prim-scene-h"
+  },
+  {
+   "src": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+   "dst": "D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001",
+   "context": "s 15708 != non-backtracking 14990 (diff 2|e|=718) => refinement functor not unique. cites d0-vnext2-scene-native-refinement-nogo-001, d0-scene-native-multiscale"
+  },
+  {
+   "src": "D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001",
+   "dst": "D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001",
+   "context": ">1/4, 3->1/3, 1/4!=1/3) but 2 orbits < 3 generations => assignment underdetermined. cites d0-lepton-branch-selector-maximality-nogo-001, d0-lepton-finite-green-"
+  },
+  {
+   "src": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+   "dst": "D0-POSTCORE-LEPTON-SELECTOR-MAXIMALITY-NOGO-001",
+   "context": "tions => assignment underdetermined. cites d0-lepton-branch-selector-maximality-nogo-001, d0-lepton-finite-green-resolvent-owner-001. exact-missing: prim-lepton"
+  },
+  {
+   "src": "D0-ARCHIVE-CONTRACTION-NOGO-001",
+   "dst": "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+   "context": "phi-tick z(1)=phi-1 != integer-tick z(1)=1 (new). operator-type firewall respected. cites d0-archive-contraction-nogo-001, d0-phason-wde-sign-normalization-owne"
+  },
+  {
+   "src": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+   "dst": "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+   "context": "ck z(1)=1 (new). operator-type firewall respected. cites d0-archive-contraction-nogo-001, d0-phason-wde-sign-normalization-owner-001. exact-missing: prim-phason"
+  },
+  {
+   "src": "D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+   "dst": "D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001",
+   "context": "also free s3 weyl-role bijection). new vs r1: the neutral-current 8!=12 divergence. cites d0-representation-reconstruction-maximality-nogo-001 (carrier 33/commu"
+  },
+  {
+   "src": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "dst": "D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001",
+   "context": "-reconstruction-maximality-nogo-001 (carrier 33/commutant 12/weyl-role -- not re-minted), d0-sm-hypercharge-row-owner-001. exact-missing: prim-finite-spectral-t"
+  },
+  {
+   "src": "D0-SDE-K0-001",
+   "dst": "D0-QUASI008-PHASON-FLIP-ENTROPY-SDE-001",
+   "context": "cal passport; the k0/connes spectral-triple/phason-holonomy gap-labeling is external (see d0-sde-k0-001), not part of this finite-algebra row."
+  },
+  {
+   "src": "D0-QUASICRYSTAL-PROJECTION-001",
+   "dst": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+   "context": "i (with hurwitz, jones-index, kam, quadratic pisot). do not reopen; the open remainder is d0-quasicrystal-projection-001."
+  },
+  {
+   "src": "D0-CARRIER-NOT-ICOSAHEDRAL-001",
+   "dst": "D0-QUASICRYSTAL-PROJECTION-001",
+   "context": "ve] the identification 'k(9,11,13) = a 33d->3d icosahedral cut-and-project' is disproved (d0-carrier-not-icosahedral-001, lean d0.claims.carriernoticosahedral):"
+  },
+  {
+   "src": "D0-ICOSIAN-E8-GRAM-001",
+   "dst": "D0-QUASICRYSTAL-PROJECTION-001",
+   "context": "quasicrystal_slice.py): the icosahedral qc slices e8 (elser-sloane); same e8 as d0 roles (d0-icosian-e8-gram-001); a5=2i/{+-1}=psl(2,5)|60|⊂so(3); e8(8)⊃6d⊃3d c"
+  },
+  {
+   "src": "D0-MODULAR-TIME-FLAVOR-001",
+   "dst": "D0-QUASICRYSTAL-PROJECTION-001",
+   "context": "a5-action on the rank-3 image. a5=2i/{+-1} lives on the flavor/e8 side (level-5 modular, d0-modular-time-flavor-001), not the carrier. the rank=3 convergence is"
+  },
+  {
+   "src": "D0-TOWER-STOP-NOEXT-001",
+   "dst": "D0-QUASICRYSTAL-PROJECTION-001",
+   "context": "frobenius h 3 axes + la tripartite rank=#parts), converging with the tower-stop 3 zones (d0-tower-stop-noext-001). honest: channels independent, not summed as a"
+  },
+  {
+   "src": "D0-COMPACTNESS-LIMIT-001",
+   "dst": "D0-RANK3-CAUSAL-CONE-001",
+   "context": "); not that the scene rank-3 is that spatial sector). supporting synthesis, modest scope; d0-compactness-limit-001 stays mech-limit. [iter11 closed] the remaini"
+  },
+  {
+   "src": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+   "dst": "D0-RANK3-CAUSAL-CONE-001",
+   "context": "it. [iter11 closed] the remaining scene-rank-3<->cone-space identification is now forced (d0-rank3-causal-cone-forcing-001): the partition is forced by the arro"
+  },
+  {
+   "src": "D0-COMPACTNESS-LIMIT-001",
+   "dst": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+   "context": "wned unit (assump-connes-reconstruction). downstream rows that cite this as 'gap closed' (d0-compactness-limit-001, d0-rank3-causal-cone-001) inherit the same b"
+  },
+  {
+   "src": "D0-RANK3-CAUSAL-CONE-001",
+   "dst": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+   "context": "econstruction). downstream rows that cite this as 'gap closed' (d0-compactness-limit-001, d0-rank3-causal-cone-001) inherit the same bridge scope."
+  },
+  {
+   "src": "D0-RANK3-METRIC-TRANSPORT-001",
+   "dst": "D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001",
+   "context": "ree distinct real eigenvalues (anisotropic causal cone). owns the cubic coefficients that d0-rank3-metric-transport-001 (signature 1+,2-) consumes. lean d0.vnex"
+  },
+  {
+   "src": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+   "dst": "D0-RANK3-METRIC-TRANSPORT-001",
+   "context": "c=1/connes question, separate); distinct object from the (3,1) pisot-counting signature (d0-rank3-causal-cone-forcing-001) -- not conflated. anisotropy is a pla"
+  },
+  {
+   "src": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+   "dst": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+   "context": "ert vp_reheating_energy_budget_owner.py. cmb n_s smoothing stays a separate proof-target (d0-cmb-phason-spectrum-owner-001) -- no n_s closure claimed here."
+  },
+  {
+   "src": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+   "dst": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+   "context": "missing finite reheating energy functional from the already-cert-closed heat-trace jump (d0-reheating-heat-trace-jump-001). lean d0.cosmology.reheatingenergybud"
+  },
+  {
+   "src": "D0-MATTER-REP-001",
+   "dst": "D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+   "context": "en data. missing: prim-finite-spectral-triple-rep. cites d0-sm-hypercharge-row-owner-001, d0-matter-rep-001, d0-dsigma-role-cycle-carrier-nogo-001 (no new count"
+  },
+  {
+   "src": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "dst": "D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001",
+   "context": "rho,gamma,j,pi) is forced by frozen data. missing: prim-finite-spectral-triple-rep. cites d0-sm-hypercharge-row-owner-001, d0-matter-rep-001, d0-dsigma-role-cyc"
+  },
+  {
+   "src": "D0-CONNES-DISTANCE-GEODESIC-001",
+   "dst": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+   "context": "vergence of the refinement sequence. d0-side anchor (cert vp_connes_distance_geodesic.py, d0-connes-distance-geodesic-001): each finite scene is an internal com"
+  },
+  {
+   "src": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+   "dst": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+   "context": "tric space (connes distance = geodesic, c=1=edge/tick structural). connes reconstruction (d0-connes-reconstruction-owner-001) identifies the limit object (spect"
+  },
+  {
+   "src": "D0-ALPHA-ZETA-RESIDUE-001",
+   "dst": "D0-RIEMANN-AXIS-M1-001",
+   "context": "he zfc riemann statement about zeta. passports: physics (self-adjoint spectral packaging, d0-alpha-zeta-residue-001) + clay (sect29 critical axis)."
+  },
+  {
+   "src": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+   "dst": "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
+   "context": "c). no-phi^3 holds in both (min-successor 19). no forced cmb window. witness-only. cites d0-vnext2-scene-native-refinement-nogo-001. exact-missing: prim-scene-h"
+  },
+  {
+   "src": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+   "dst": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+   "context": "frozen carrier has perron growth phi^3 -- a distinct second proof of the phi^3-absence in d0-alpha-present-core-maximality-nogo-001 (rate_three_eq_one). refinem"
+  },
+  {
+   "src": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+   "dst": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+   "context": "15708 != 14990, diff 2|e|=718) cited to d0-vnext2-scene-native-refinement-nogo-001; backs d0-cmb-ns-smoothing-undetermined-nogo-001. no 4d/tilt claim. exact-mis"
+  },
+  {
+   "src": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+   "dst": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+   "context": "inement-rule underdetermination (depth-2 carriers 15708 != 14990, diff 2|e|=718) cited to d0-vnext2-scene-native-refinement-nogo-001; backs d0-cmb-ns-smoothing-"
+  },
+  {
+   "src": "D0-GAUGE-MATTER-002",
+   "dst": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+   "context": "wowner.sm_anomaly_cancellation_owner consolidates the existing core d0.gauge.anomalysums (d0-gauge-matter-002) with the k(9,11,13) carrier framing; cert vp_sm_a"
+  },
+  {
+   "src": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+   "dst": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+   "context": "the anomaly-free property is a genuine arithmetic fact; the row's graph-flow origin stays d0-hypercharge-graph-flow-owner-001 (proof-target)."
+  },
+  {
+   "src": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+   "dst": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+   "context": "'row not unique' finding: the 2-dim freedom was the added nu_r (b-l) direction (6-field, d0-hypercharge-anomaly-variety-2dim-001), not the row. lean d0.matter.s"
+  },
+  {
+   "src": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+   "dst": "D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001",
+   "context": "ssport.md + finite_to_continuum_gap_map.md. the inductive isometric j_n is a vnext no-go (d0-inductive-spectral-triple-owner-001). forbidden: finite cauchy prov"
+  },
+  {
+   "src": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+   "dst": "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001",
+   "context": "metric (d0-rieffel-ghp-continuum-owner-001, assump-rieffel-ghp) + connes reconstruction (d0-connes-reconstruction-owner-001). cert vp_smooth_manifold_internal_l"
+  },
+  {
+   "src": "D0-GHP-GOLDEN-CAUCHY-BOUND-001",
+   "dst": "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001",
+   "context": "r22 five-front e] the internal limit = finite metric tower + the ghp-golden-cauchy bound (d0-ghp-golden-cauchy-bound-001, now owned: delta0<1 summable) => the r"
+  },
+  {
+   "src": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+   "dst": "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001",
+   "context": "manifold reconstruction stays external: rieffel/ghp convergence in the quantum-gh metric (d0-rieffel-ghp-continuum-owner-001, assump-rieffel-ghp) + connes recon"
+  },
+  {
+   "src": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+   "dst": "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001",
+   "context": "as-primitive / rieffel-by-slogan / finite-tower-proves-smooth rejected). passport-closed; d0-smooth-manifold-passport-001 not erased."
+  },
+  {
+   "src": "D0-BRIDGE-COMPRESSION-001",
+   "dst": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+   "context": "construction). it is not a primitive d0 input and not a core theorem. passport-closed per d0-bridge-compression-001. cert vp_smooth_manifold_passport.py."
+  },
+  {
+   "src": "D0-CONNES-DISTANCE-GEODESIC-001",
+   "dst": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+   "context": "adow: internal object = finite spectral/metric tower + phi semigroup envelope (d0-im-003, d0-connes-distance-geodesic-001). the smooth compact riemannian/spin m"
+  },
+  {
+   "src": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+   "dst": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+   "context": "ditional on the external owners d0-rieffel-ghp-continuum-owner-001 (assump-rieffel-ghp) + d0-connes-reconstruction-owner-001 (assump-connes-reconstruction). it "
+  },
+  {
+   "src": "D0-IM-003",
+   "dst": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+   "context": "al macro-shadow: internal object = finite spectral/metric tower + phi semigroup envelope (d0-im-003, d0-connes-distance-geodesic-001). the smooth compact rieman"
+  },
+  {
+   "src": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+   "dst": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+   "context": "an/spin manifold reading is a downstream macro-shadow, conditional on the external owners d0-rieffel-ghp-continuum-owner-001 (assump-rieffel-ghp) + d0-connes-re"
+  },
+  {
+   "src": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+   "dst": "D0-SMOOTH-QUANTUM-METRIC-PASSPORT-001",
+   "context": "ible tower + isometric dirac j_n supplied. never a primitive smooth manifold. required by d0-inductive-spectral-triple-owner-001 (master a outcome b)."
+  },
+  {
+   "src": "D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001",
+   "dst": "D0-SPECTRAL-EINSTEIN-001",
+   "context": "ric) and proved not archivedivergence-free: (div g_a2)_j = 4*deg(j) != 0 -- see the no-go d0-a2-einstein-divergence-obstruction-nogo-001 (cert vp_g_a2_einstein_"
+  },
+  {
+   "src": "D0-HODGE-LINKS-001",
+   "dst": "D0-SPECTRAL-EINSTEIN-001",
+   "context": "eversal counterterm / cross-carrier binding (bridge-a/b/c), none owned; jointly open with d0-hodge-links-001. do not anchor an assump row to the scalar a2_is_eh"
+  },
+  {
+   "src": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+   "dst": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+   "context": "atic-to-dynamics-owner-001) to the passport-closed nature constrained-hamiltonian bridge (d0-constrained-hamiltonian-embedding-passport-001): the symplectic emb"
+  },
+  {
+   "src": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+   "dst": "D0-STATIC-DYNAMICS-HAMILTONIAN-BRIDGE-INTEGRATION-001",
+   "context": "[continuation] integration owner tying the cert-closed static-to-dynamics owner (d0-static-to-dynamics-owner-001) to the passport-closed nature constrained-hami"
+  },
+  {
+   "src": "D0-IM-003",
+   "dst": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+   "context": "(block ii), (iii) each tick multiplies the active amplitude by phi^-1 (block iii, reusing d0-im-003/d0-phi-ladder-semigroup-001). no primitive time, clock, or s"
+  },
+  {
+   "src": "D0-PHI-LADDER-SEMIGROUP-001",
+   "dst": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+   "context": ", (iii) each tick multiplies the active amplitude by phi^-1 (block iii, reusing d0-im-003/d0-phi-ladder-semigroup-001). no primitive time, clock, or si unit ent"
+  },
+  {
+   "src": "D0-TIME-2D-PISOT-001",
+   "dst": "D0-TIME-MODULAR-FLOW-001",
+   "context": "req=phi^-2, aperiodic, rational-slope negative control. arrow=pisot |psi|=phi^-1<1 reuses d0-time-2d-pisot-001 (proved). honest: proves exact symbolic coinciden"
+  },
+  {
+   "src": "D0-TIME-2D-PISOT-001",
+   "dst": "D0-TIME-MODULAR-FLOW-OWNER-001",
+   "context": "inner automorphism (radon-nikodym cocycle). tomita 1967; takesaki lnm 128 (1970). deepens d0-time-2d-pisot-001 / d0-time-modular-flow-001: time is forced by the"
+  },
+  {
+   "src": "D0-TIME-MODULAR-FLOW-001",
+   "dst": "D0-TIME-MODULAR-FLOW-OWNER-001",
+   "context": "on-nikodym cocycle). tomita 1967; takesaki lnm 128 (1970). deepens d0-time-2d-pisot-001 / d0-time-modular-flow-001: time is forced by the (algebra,state) pair, "
+  },
+  {
+   "src": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+   "dst": "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+   "context": "[final core completion m4] maximality strengthening of d0-toral-canonical-markov-partition-nogo-001. the forced dynamical invariants (spectrum {phi,psi}, entrop"
+  },
+  {
+   "src": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+   "dst": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+   "context": "ft-equivalence matrix relating n_tau=[[0,1],[1,1]] to t's sft realization (external owner d0-adler-weiss-partition-owner-001). cert vp_toral_time_markov_conjuga"
+  },
+  {
+   "src": "D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001",
+   "dst": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+   "context": "[iter22 five-front c] the d0-internal profinite-code conjugacy is closed (d0-phi-sturmian-profinite-code-conjugacy-001: equal cylinder languages and frequencies"
+  },
+  {
+   "src": "D0-COMPACTNESS-LIMIT-001",
+   "dst": "D0-TOWER-STOP-NOEXT-001",
+   "context": "this forces the 3-count (rank=3); the leaves' separate geometric gap (rank-3=causal-cone, d0-compactness-limit-001) is unchanged -- the count is forced, the geo"
+  },
+  {
+   "src": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+   "dst": "D0-UNITY-SPLIT-SPACETIME-001",
+   "context": "mmetric s2-invariant = rank-3 adjacency' routes to the already-forced rank-3=causal-cone (d0-rank3-causal-cone-forcing-001, iter-11); residual = that identifica"
+  },
+  {
+   "src": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+   "dst": "D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001",
+   "context": "-track master] the full dirac-compatible isometric tower. the isometry is realized (cert, d0-vnext-af-gns-isometry-owner-001), but the dirac scale is underdeter"
+  },
+  {
+   "src": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+   "dst": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+   "context": "f] prim-dirac-scale-selection and prim-comparison-map-xi-n are not unified by one anchor (d0-vnext-33-scene-anchor-nogo-001); they remain independent primitives"
+  },
+  {
+   "src": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
+   "dst": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+   "context": "stay external (assump-adler-weiss). does not close d0-toral-time-markov-conjugacy-001 or d0-adler-weiss-internal-construction-001 (both remain proof-target)."
+  },
+  {
+   "src": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+   "dst": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+   "context": "full williams strong-shift-equivalence stay external (assump-adler-weiss). does not close d0-toral-time-markov-conjugacy-001 or d0-adler-weiss-internal-construc"
+  },
+  {
+   "src": "D0-GAP-W-WITNESS-PLUS-ONE-001",
+   "dst": "D0-WINDOW-9-13-DISSOLVE-001",
+   "context": "e excluded); (2) the uniqueness-form capstone scene_triple_unique_v2 carries hbase=gap-w (d0-gap-w-witness-plus-one-001) and hstep1/hstep2=gap-e (extension comp"
+  },
+  {
+   "src": "D0-SCENE-TRIPLE-UNIQUE-001",
+   "dst": "D0-WINDOW-9-13-DISSOLVE-001",
+   "context": "er-reading-fork-001). strands 4 texts on adoption (att-6): vp_scene_triple_unique.py, row d0-scene-triple-unique-001, book_01:1501-1502, d0_referee_assessment.m"
+  },
+  {
+   "src": "D0-ZONE-TOWER-READING-FORK-001",
+   "dst": "D0-WINDOW-9-13-DISSOLVE-001",
+   "context": "n not closure; (3) the 8+1 vs 4+5 nine-fork stays unidentified (att-2, separate task; see d0-zone-tower-reading-fork-001). strands 4 texts on adoption (att-6): "
+  },
+  {
+   "src": "D0-WINDOW44-GROUP-SPECTRUM-001",
+   "dst": "D0-WINDOW44-TOTIENT-M1-001",
+   "context": "n external catalogue to index it -> bot m1, so 20 is forced not chosen. sharpens/confirms d0-window44-group-spectrum-001 and the §07.23 phase chain; no new free"
+  }
+ ]
+}

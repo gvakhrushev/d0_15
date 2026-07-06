@@ -32,6 +32,7 @@ def rank(a, eps=1e-10):
 
 
 def main() -> int:
+    print("RETIRED_2026-07-05_SEE_REFORGED: this cert had fabricated controls (see _QUARANTINE/QUARANTINE_LEDGER.md); superseded by vp_cvft_boundary_channel_rank_REFORGED.py; output below is NON-LOAD-BEARING")
     # QUP factors through a 2D boundary-channel subspace inside Q.
     qup = [
         [1.0, 0.0, 0.0],

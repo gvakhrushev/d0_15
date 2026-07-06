@@ -1,0 +1,14 @@
+{
+ "null_ok": true,
+ "A1": "non-discriminating",
+ "A2": "not-shown",
+ "phi_rank_holdout": 223,
+ "betas": 231,
+ "budget": 5776,
+ "train_rank": 215,
+ "margins_holdout": [
+  -0.0004780766402365799,
+  4.098482124437197e-05
+ ],
+ "null95": -0.000215789957629442
+}

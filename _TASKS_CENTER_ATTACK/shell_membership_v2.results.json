@@ -1,0 +1,8 @@
+{
+ "p_exact": 8.658008658008658e-05,
+ "p_line": 0.24633477633477632,
+ "loo_pass": 13,
+ "gate_fired": 5,
+ "gate_ok": true,
+ "verdict": "membership-signal-confirmed (pre-registered)"
+}

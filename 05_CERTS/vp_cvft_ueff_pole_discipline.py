@@ -8,6 +8,7 @@ import math
 
 
 def main() -> int:
+    print("RETIRED_2026-07-05_SEE_REFORGED: this cert had fabricated controls (see _QUARANTINE/QUARANTINE_LEDGER.md); superseded by vp_cvft_ueff_pole_discipline_REFORGED.py; output below is NON-LOAD-BEARING")
     # Deterministic compressed diagonal transfer.  It is a contraction and has
     # one damped complex pole candidate.
     eigs_ueff = [0.8 * cmath.exp(0.3j), 0.5, 0.0]
