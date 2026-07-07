@@ -852,7 +852,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-P-INVARIANT-MINIMAL-001", moduleName := "D0.Foundation.InvariantMinimal",
       theoremName := "invariant_minimal_meet;orbit_count_three;deg_classifies_orbits", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-INVARIANT-GENERATION-BRIDGE-001", moduleName := "D0.Claims.InvariantGenerationBridge",
-      theoremName := "bridge_projector_eq;invariant_generation_bridge", status := ClaimStatus.leanCoreProved }
+      theoremName := "bridge_projector_eq;invariant_generation_bridge", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-P-DEGREE2-EXHAUSTION-001", moduleName := "D0.Tower.NoExtension;D0.Tower.DetectionQuadratic",
+      theoremName := "no_extension_theorem;detection_quadratic;degree2_closure;p_cubed_reduces", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

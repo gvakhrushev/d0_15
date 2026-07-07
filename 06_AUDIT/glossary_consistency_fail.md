@@ -1,5 +1,5 @@
 # Glossary Consistency Failures
-Generated 2026-07-06T18:26:48.083473+00:00
+Generated 2026-07-06T22:49:34.344086+00:00
 
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:77 [METAPHOR_IN_PROSE] the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibration and the observable-transfer boundary.
 - **BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md**:110 [UNDEFINED_D0_TERM_IN_HEADING] ### The three status layers: CORE / FORMALISM / BRIDGE

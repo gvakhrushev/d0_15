@@ -556,6 +556,9 @@ digraph D0Theory {
   "D0-P-SUBCRIT-001" [label="D0-P-SUBCRIT-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-P-ABELIAN-001" [label="D0-P-ABELIAN-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "D0-INVARIANT-GENERATION-BRIDGE-001" [label="D0-INVARIANT-GENERATION-BRIDGE-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-GAP-E-PORT-EXHAUSTION-001" [label="D0-GAP-E-PORT-EXHAUSTION-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-PORT-GOLDEN-SPLIT-BRIDGE-001" [label="D0-PORT-GOLDEN-SPLIT-BRIDGE-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-P-DEGREE2-EXHAUSTION-001" [label="D0-P-DEGREE2-EXHAUSTION-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
   "module:D0.TheoremLedger.ReleaseStatus" [label="D0.TheoremLedger.ReleaseStatus", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-LEAN-CORE-001" -> "module:D0.TheoremLedger.ReleaseStatus" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -3740,4 +3743,20 @@ digraph D0Theory {
   "D0-INVARIANT-GENERATION-BRIDGE-001" -> "cert:bridge_invariant_generation_check.py" [label="cert"];
   "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-INVARIANT-GENERATION-BRIDGE-001" -> "domain:frontier" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-GAP-E-PORT-EXHAUSTION-001" -> "module:" [label="module"];
+  "cert:close_gap_e_dimensional_check.py" [label="close_gap_e_dimensional_check.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-GAP-E-PORT-EXHAUSTION-001" -> "cert:close_gap_e_dimensional_check.py" [label="cert"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-GAP-E-PORT-EXHAUSTION-001" -> "domain:frontier" [label="domain"];
+  "module:" [label="", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-PORT-GOLDEN-SPLIT-BRIDGE-001" -> "module:" [label="module"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-PORT-GOLDEN-SPLIT-BRIDGE-001" -> "domain:frontier" [label="domain"];
+  "module:D0.Tower.NoExtension;D0.Tower.DetectionQuadratic" [label="D0.Tower.NoExtension;D0.Tower.DetectionQuadratic", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-P-DEGREE2-EXHAUSTION-001" -> "module:D0.Tower.NoExtension;D0.Tower.DetectionQuadratic" [label="module"];
+  "cert:vp_detection_quadratic_types.py" [label="vp_detection_quadratic_types.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-P-DEGREE2-EXHAUSTION-001" -> "cert:vp_detection_quadratic_types.py" [label="cert"];
+  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-P-DEGREE2-EXHAUSTION-001" -> "domain:frontier" [label="domain"];
 }
