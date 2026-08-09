@@ -1004,7 +1004,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CASCADE-INTERLOCK-SCALE-001", moduleName := "D0.Foundation.CascadeInterlockScale",
       theoremName := "finite_carrier_ratio_captured;chain_linked_five_six_to_six_seven;scale_floor_forces_out", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001", moduleName := "D0.Foundation.CascadeFloorDefectClosure",
-      theoremName := "abelian_defect_trivial;defect_exists;element_defect_not_invariant;class_defect_invariant;class_defect_of_commutator_invariant;chain_linked_order_to_defect_closure;abelian_invariance_is_vacuous;defect_closure_floor_genuine", status := ClaimStatus.leanCoreProved }
+      theoremName := "abelian_defect_trivial;defect_exists;element_defect_not_invariant;class_defect_invariant;class_defect_of_commutator_invariant;chain_linked_order_to_defect_closure;abelian_invariance_is_vacuous;defect_closure_floor_genuine", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CASCADE-FLOOR-SHELL-CLOSURE-001", moduleName := "D0.Foundation.CascadeFloorShellClosure",
+      theoremName := "interior_not_reflection_closed;shells_reflection_closed;shell_scale_forced;shell_scale_is_scale_survivor;chain_linked_closure_to_shell;shell_closure_floor_genuine", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
