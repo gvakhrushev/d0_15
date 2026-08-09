@@ -12,4 +12,4 @@ PRIM-FINITE-SPECTRAL-TRIPLE-REP,PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR,subsumes,D
 # core_excluded,reason,,,
 PRIM-CANONICAL-SELF-READING-FUNCTOR,"proven conjunction-of-independent (bundle), D0-SELF-READING-PRIMITIVE-MINIMALITY-001 (LEAN_PROVED)",,,
 PRIM-ISOMETRIC-DIRAC-J,"NOGO-split bundle, D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001 ('splits into +2 independent primitives')",,,
-PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR,subsumed component of the E1 interface (GRADAXIS split keeps the row as the sharper G2-typed object),,,
+PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR,subsumed component of the E1 interface (D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001 + D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001 GRADAXIS split keeps the row as the sharper G2-typed object),,,

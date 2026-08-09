@@ -44,7 +44,7 @@ layer is cert-borne. No Lean edit in this campaign.
 
 ## Owned pre-facts (verbatim, file-cited)
 
-1. `CLAIM_TO_LEAN_MAP.csv` row 474 (`D0-SELF-READING-PRIMITIVE-MINIMALITY-001` area): "PRIM-CANONICAL-SELF-READING-FUNCTOR is NOT a genuine single derived object subsuming the four
+1. `CLAIM_TO_LEAN_MAP.csv` line 497 (`D0-SELF-READING-PRIMITIVE-MINIMALITY-001`): "PRIM-CANONICAL-SELF-READING-FUNCTOR is NOT a genuine single derived object subsuming the four
    -- it is S0 (owned) + 4 semantically-independent primitives (… PRIM-FINITE-SPECTRAL-TRIPLE-REP,
    PRIM-SCENE-HISTORY-REFINEMENT-RULE, PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT +
    PRIM-PHASON-COORDINATE-FUNCTOR, PRIM-LEPTON-BRANCH-FIXING-OPERATOR)". ✓
@@ -110,7 +110,7 @@ drift untouched (intended-RED state of that cert's other legs).
   (E1 note: "also free S3 Weyl-role bijection") which the part-size order (a statement about zone
   sizes 9<11<13) does not obviously kill; the "two Weyl-role freedoms" ambiguity is REGISTERED here,
   not resolved.
-- **(B) Universal-over-unexhausted-class**: the 163 default 'independent' justifications quantify
+- **(B) Universal-over-unexhausted-class**: the 159 template-default 'independent' justifications (post-repair count; 161 pre-repair) quantify
   over completion classes nobody exhausted. Scoped defense: each default verdict claims only
   "neither datum DETERMINES the other" on distinct registered carriers/no-gos — a pairwise
   non-derivation reading, same grade as the original 11×11, not a new universal.
@@ -140,3 +140,44 @@ drift untouched (intended-RED state of that cert's other legs).
 - PROOF-TARGET tripwires: if `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` or
   `D0-PHASON-COORDINATE-FUNCTOR-OWNER-001` lands, the touched rows stop being primitives and this
   adjudication re-runs.
+
+## POST-SKEPTIC (2026-08-09, independent pass): NO KILL, WOUNDED-FIXABLE — all 4 repairs APPLIED
+
+Verdict per attack line: A/C/D/E/H SURVIVES; B/F/G WOUNDED-fixable. Errors of record (accepted in
+full, no defense):
+
+1. **Strongest finding:** the cert never read `TOTAL_EXTENSION_PRIMITIVE_PAIR_JUSTIFICATIONS.csv`
+   (Claim X conjunct 4 unverified — demonstrated by a garbage-file mutation passing). REPAIRED:
+   pairs-file leg added (C(N,2) count, uniqueness, verdict↔matrix/ledger consistency, non-placeholder
+   justification) + 3 new executable negative controls (dropped pair row / relabeled derive-pair /
+   broken first-11 order).
+2. **False grade in 15 generated justifications:** the default template called
+   `SEAM-CROSSING-TICK` "EXACT-MISSING of a registered no-go" — its owners are core/frontier rows
+   and row 625 says refutation "does not yield a no-go" (same false-grade shape killed 2026-08-03).
+   REPAIRED: SCT-aware template ("registered RESIDUAL of a core obligation, door-2-conditional");
+   generic template softened to "registered completion gap of a different owner (no-go or
+   obligation row)".
+3. **PCF external-passport leftovers:** row 19 kept "monotone, frozen, observable-grounded"
+   (= RED's passport string) and "(archive->w(z))" type against its own X5 scope. REPAIRED: type,
+   minimal_input, class and necessary_conditions now carry X5-internal language; physical reading
+   explicitly external-passport-only.
+4. **Missed trap words 'tick'/'cocycle' + stale FST row-text:** REPAIRED: hand overrides added for
+   (PCF,SCT) — incl. the shared golden value guarded by the coincidence-of-values clause — and
+   (DS,PCF); FST why-field now carries the post-self-reading residual note with the two-freedoms
+   ambiguity REGISTERED (not resolved). GNC core-exclusion reason now cites its D0 owners
+   (cert-validated).
+
+Memo errata fixed: pre-fact 1 line ref 474→497; default-justification count 163→161 pre-repair →
+159 post-repair (two pairs moved to hand overrides; code-counted by the confirm pass). Cert
+soundness limitation MUT-2/MUT-4b-class (owner EXISTENCE is machine-checked, owner APTNESS is
+skeptic-checked) remains documented, skeptic-owned.
+
+**CONFIRM PASS RECORD (2026-08-09, same independent skeptic, load-bearing new text only):**
+Item 1 cert repairs CONFIRM-CLEAN (LEAN_11 matches TotalExtensionPrimitiveMinimality.lean:21-32
+primSig order; MUT-1/MUT-3/MUT-4 all now FAIL against the repaired cert; MUT-4b named as residual
+limitation). Item 2 regenerated pairs CSV CONFIRM-CLEAN (0 SCT rows with no-go language; residual
+grade traces verbatim to rows 625/630; both new overrides trace to rows 519/489/625/630). Item 3
+PCF/FST rows CONFIRM-CLEAN (every new phrase traced to its cited owner; two-freedoms ambiguity
+faithfully REGISTERED-not-resolved). Item 4 memo: one one-number NEW-WOUND (161→159, fixed here) +
+pre-recorded-confirm text nit (replaced by this record). Item 5 generator byte-idempotent.
+OVERALL: CONFIRM-CLEAN; nothing re-opens any SURVIVED line.

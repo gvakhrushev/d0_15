@@ -89,7 +89,7 @@ EDGES = [
 CORE_EXCLUDED = {
     CSF: "proven conjunction-of-independent (bundle), D0-SELF-READING-PRIMITIVE-MINIMALITY-001 (LEAN_PROVED)",
     IDJ: "NOGO-split bundle, D0-VNEXT-ISOMETRIC-DIRAC-TOWER-NOGO-001 ('splits into +2 independent primitives')",
-    GNC: "subsumed component of the E1 interface (GRADAXIS split keeps the row as the sharper G2-typed object)",
+    GNC: "subsumed component of the E1 interface (D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001 + D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001 GRADAXIS split keeps the row as the sharper G2-typed object)",
 }
 
 # Hand-written justifications for the trap-sensitive independent pairs
@@ -115,6 +115,8 @@ OVERRIDES = {
     frozenset({BIR, BAR}): "readout coherence vs physical labels: distinct moduli on distinct carriers (branch commutant vs 40/56 carriers)",
     frozenset({FST, IDJ}): "shared symbol 'J' checked: the finite rep's real structure lives on the 33-scene E1 interface; IDJ's J on the vNext profinite GNS tower; bundle row IDJ has NO registered edge to FST (the vNext split lands on XI/DS, not on E1)",
     frozenset({SMW, SH}): "original 11x11 adjudication; refinement covariance is a CONSTRAINT on smoothing, not a derivation (H-does-not-force pattern)",
+    frozenset({PCF, SCT}): "shared word 'tick' AND shared golden value checked (X5 tick z(1)=phi-1 vs per-crossing ratio phi^-1): X5 internal ARCHIVE cocycle tick vs door-2 SEAM crossing/toral tick - different carriers (phason archive vs 02.13.h seam depth axis); the value coincidence is guarded by D0-SEAM-CROSSING-WEIGHT-001's own clause (forced_value_is_toral_stable_root is a coincidence-of-values record, not an explanation claim); a tick normalization identifies no crossing, an identification fixes no archive cocycle",
+    frozenset({DS, PCF}): "shared word 'cocycle' + phi-vs-rival-normalization shape checked: vNext intrinsic SCALE cocycle on the refinement tower vs phason archive TICK cocycle - different carriers and owners (vNext joint no-go vs phason_extension_nogo/X5); neither cocycle choice determines the other",
 }
 
 BUNDLE_NOTE = {
@@ -184,8 +186,13 @@ def main() -> int:
                     continue
                 ca, ma = CARRIER[a]
                 cb, mb = CARRIER[b]
+                if SCT in (a, b):
+                    other = b if a == SCT else a
+                    w.writerow([a, b, "independent",
+                                f"distinct carriers ({ca} vs {cb}) and distinct moduli ({ma} vs {mb}); {other} is the registered completion gap of its own owner, while SEAM-CROSSING-TICK is the registered RESIDUAL of a core obligation (D0-TRANSPORT-FORK-ENDGAME-001 / D0-SEAM-CROSSING-WEIGHT-001), door-2-conditional - refutation reopens the depth axis, no no-go; neither completion datum determines the other"])
+                    continue
                 w.writerow([a, b, "independent",
-                            f"distinct carriers ({ca} vs {cb}) and distinct moduli ({ma} vs {mb}); each is EXACT-MISSING of a different registered no-go; neither completion datum determines the other"])
+                            f"distinct carriers ({ca} vs {cb}) and distinct moduli ({ma} vs {mb}); each is the registered completion gap of a different owner (no-go or obligation row); neither completion datum determines the other"])
     core = [p for p in ids if p not in CORE_EXCLUDED]
     for a, b, *_ in EDGES:
         assert not (a in core and b in core), f"edge inside core: {a}->{b}"

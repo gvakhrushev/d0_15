@@ -10,7 +10,7 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **35.5**. Claims: 629.
+High-value cut (top quartile): **35.6**. Claims: 629.
 
 | quadrant | count | what it means |
 |---|---:|---|
@@ -81,8 +81,8 @@ sorted to the bottom of the registry.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
+| **35.5** | 100 | 0 | 0 | `D0-SM-HYPERCHARGE-ROW-OWNER-001` | CERT-CLOSED |
 | **35.4** | 100 | 4 | 1 | `D0-DELTA-ALPHA-EXACT-001` | CORE-FORMALIZED |
-| **35.4** | 100 | 1 | 1 | `D0-SELF-READING-PRIMITIVE-MINIMALITY-001` | CERT-CLOSED |
 | **35.0** | 55 | 0 | 0 | `D0-GRAV-QNM-001` | NO_GO_PROVED |
 | **34.9** | 100 | 2 | 0 | `D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001` | CERT-CLOSED |
 | **34.7** | 100 | 5 | 0 | `D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001` | CERT-CLOSED |
@@ -111,8 +111,8 @@ spent here is bookkeeping. Review for merge into a parent claim or deprecation.
 | **31.2** | 45 | 1 | 4 | `D0-P-ABELIAN-001` | PROOF-TARGET |
 | **30.2** | 45 | 2 | 2 | `D0-INVARIANT-GENERATION-BRIDGE-001` | PROOF-TARGET |
 | **28.2** | 45 | 0 | 5 | `D0-PHYSICAL-COMPARISON-REPRESENTATION-REDUCTION-001` | PROOF-TARGET |
+| **28.0** | 45 | 0 | 1 | `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` | PROOF-TARGET |
 | **27.9** | 5 | 0 |  | `D0-ALPHA-SEAM-FORM-FORCED-001` | PROOF-TARGET |
-| **25.8** | 45 | 0 | 1 | `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` | PROOF-TARGET |
 | **24.9** | 45 | 0 | 3 | `D0-GAP-W-COPY-CAP-M1-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001` | PROOF-TARGET |
@@ -121,5 +121,5 @@ spent here is bookkeeping. Review for merge into a parent claim or deprecation.
 | **23.0** | 5 | 0 |  | `D0-CMB-PHASON-SPECTRUM-OWNER-001` | PROOF-TARGET |
 | **22.1** | 0 | 1 | 1 | `D0-GAUGE-BIANCHI-GRADED-DEPRECATED-001` | DEPRECATED |
 | **21.6** | 5 | 0 |  | `D0-ALPHA-FESHBACH-DIXMIER-OWNER-001` | PROOF-TARGET |
-| **20.0** | 5 | 0 | 1 | `D0-QUANT-MET-003` | PROOF-TARGET |
+| **21.4** | 45 | 0 | 3 | `D0-PHASON-COORDINATE-FUNCTOR-OWNER-001` | PROOF-TARGET |
 | … | | | | *+45 more in the ledger CSV* | |

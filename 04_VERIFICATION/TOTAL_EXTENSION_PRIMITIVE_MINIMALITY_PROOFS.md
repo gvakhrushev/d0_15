@@ -18,7 +18,7 @@ Exactly **9 derive-edges**, each owned by an already-registered claim (`TOTAL_EX
 
 ## Pairwise verdict
 
-All 190 unordered pairs are adjudicated one-by-one in `TOTAL_EXTENSION_PRIMITIVE_PAIR_JUSTIFICATIONS.csv` (generated deterministically by `_TASKS_CENTER_ATTACK/build_total_extension_matrix.py`; trap-sensitive pairs — shared words 'branch'/'triple'/'J'/'edge/seam', shared numbers {20,22,24}, same-lane pairs — carry hand-written carrier-typed justifications per the recurring-kill-shape checklist). Off-diagonal cells: 362 `independent`, 9 `subsumes` + 9 `component-of` (the ledger, exactly).
+All 190 unordered pairs are adjudicated one-by-one in `TOTAL_EXTENSION_PRIMITIVE_PAIR_JUSTIFICATIONS.csv` (generated deterministically by `_TASKS_CENTER_ATTACK/build_total_extension_matrix.py`; trap-sensitive pairs — shared words 'branch'/'triple'/'J'/'edge/seam'/'tick'/'cocycle', shared numbers {20,22,24}, the shared golden value φ−1/φ⁻¹ (guarded by the coincidence-of-values clause of D0-SEAM-CROSSING-WEIGHT-001), same-lane pairs — carry hand-written carrier-typed justifications per the recurring-kill-shape checklist). Off-diagonal cells: 362 `independent`, 9 `subsumes` + 9 `component-of` (the ledger, exactly).
 
 None of the core 17 is impossible-in-framework (each a finite admissible completion class, externalizable as a passport where physical; the seam row is door-2-scoped and carries its reopening hook explicitly). None is forced by the present core (each has a counterexample witness in `TOTAL_EXTENSION_PRIMITIVES.csv`; open owner rows `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` and `D0-PHASON-COORDINATE-FUNCTOR-OWNER-001` are PROOF-TARGET tripwires — if either lands, the corresponding row stops being a primitive and this adjudication must re-run).
 
