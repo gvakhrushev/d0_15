@@ -10,13 +10,13 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **36.1**. Claims: 633.
+High-value cut (top quartile): **36.1**. Claims: 634.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 6 | high value, not closed — **this is the work queue** |
 | **FRONT DOOR** | 152 | high value, closed — what the README and reading order must lead with |
-| BALLAST | 414 | closed but nothing rests on it — bottom of the registry |
+| BALLAST | 415 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 61 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
@@ -29,7 +29,7 @@ closing it moves the corpus, closing anything below it does not.
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
 | **60.1** | 45 | 2 | 0 | `D0-P-INVARIANT-MINIMAL-001` | PROOF-TARGET |
-| **58.0** | 5 | 5 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
+| **58.5** | 5 | 6 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
 | **45.5** | 5 | 7 | 2 | `D0-TOWER-STOP-NOEXT-001` | PROOF-TARGET |
 | **45.5** | 45 | 1 | 4 | `D0-P-M1-SATURATION-001` | PROOF-TARGET |
 | **45.5** | 45 | 0 | 4 | `D0-GAP-E-PORT-EXHAUSTION-001` | PROOF-TARGET |
@@ -66,7 +66,7 @@ Nothing outside this table belongs in an abstract.
 | **51.4** | 100 | 2 | 2 | `D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001` | NO-GO |
 | **50.3** | 55 | 0 | 0 | `D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001` | PASSPORT-CLOSED |
 | **50.0** | 100 | 0 | 1 | `D0-SYMPLECTIC-GLEASON-001` | CORE-FORMALIZED |
-| **49.1** | 100 | 11 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
+| **49.5** | 100 | 12 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
 | **48.9** | 100 | 7 | 2 | `D0-ALPHA-PROFINITE-TOWER-NOGO-001` | NO-GO |
 | **48.7** | 100 | 16 | 0 | `D0-COSMO-HOMOGENEOUS-FIXED-POINT-001` | CORE-FORMALIZED |
 | … | | | | *+127 more in the ledger CSV* | |
@@ -95,7 +95,7 @@ sorted to the bottom of the registry.
 | **34.6** | 55 | 0 |  | `D0-PHI-CSTAR-PASSPORT-001` | PASSPORT-CLOSED |
 | **34.6** | 55 | 0 |  | `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001` | PASSPORT-CLOSED |
 | **34.6** | 100 | 0 | 0 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | CERT-CLOSED |
-| … | | | | *+399 more in the ledger CSV* | |
+| … | | | | *+400 more in the ledger CSV* | |
 
 ---
 
