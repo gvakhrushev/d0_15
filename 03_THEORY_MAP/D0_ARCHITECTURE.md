@@ -15,8 +15,8 @@ rest use the conservative proxy.
 |---|---:|---|
 | **FRAGILE JOINT** (L≥5, m≤1) | 61 | carries weight on ONE route — **the value-creation queue** |
 | **PILLAR** (L≥5, m≥2) | 157 | load-bearing and multiply supported — survives a kill |
-| SUPPORTED (L<5, m≥2) | 227 | redundantly established but little rests on it |
-| LEAF (L<5, m≤1) | 154 | decoration, however well proved |
+| SUPPORTED (L<5, m≥2) | 251 | redundantly established but little rests on it |
+| LEAF (L<5, m≤1) | 156 | decoration, however well proved |
 
 ---
 
@@ -93,8 +93,8 @@ these; the corpus's antifragility is exactly this column being non-empty.
 Conceptual edges: 1995 across 191 owning claims,
 of which 190 are evidence-backed per-claim edges (each carrying a quoted reason); the rest are
 the coarse section-level prior, at which co-cited claims share a load value.
-Claims carrying load ≥ 1: 249 of 599.
-Mean support multiplicity: 1.72.
+Claims carrying load ≥ 1: 249 of 625.
+Mean support multiplicity: 1.73.
 
 A corpus of pillars over a narrow base is a pyramid; a corpus of fragile joints is a bush of
 single-thread stems. The ratio 157:61 is the number to move.

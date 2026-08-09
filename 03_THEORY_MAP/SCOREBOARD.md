@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 7714 / 10456 (**73.8%** of track-fair max)
-- **Core spine:** 5985 / 8660 (headroom **2675** points to take every core claim to L5)
-- Claims: 599 active (601 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 8201 / 10935 (**75.0%** of track-fair max)
+- **Core spine:** 6413 / 9080 (headroom **2667** points to take every core claim to L5)
+- Claims: 625 active (627 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 91.6 / 100 (penalties **-8.4**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 96.5 / 100 (penalties **-3.5**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -19,14 +19,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
-| `orphan_proof_targets` | 34 | -3.4 | PROOF-TARGET markers in book prose with no registry row |
+| `orphan_proof_targets` | 35 | -3.5 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
-| `real_in_project_lake` | 1 | -5 | a real .lake build tree inside the repo (must be an external junction) |
+| `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 0 | +0 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `real_in_project_lake` (-5); `orphan_proof_targets` (-3.4)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.5)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -36,7 +36,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001` | cosmology | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-P-M1-SATURATION-001` | frontier | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
-| `D0-P-SUBCRIT-001` | frontier | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-P-ABELIAN-001` | frontier | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-GAP-W-COPY-CAP-M1-001` | frontier | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-FIBONACCI-IF-FORCING-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
@@ -57,6 +56,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-ARCHIVE-NEUMANN-TICK-OWNER-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001` | smooth_geometry | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 | `D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001` | smooth_geometry | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
+| `D0-STATIC-TO-DYNAMICS-OWNER-001` | formal_core | LEAN_PROVED | CORE_FORMALIZED | 8 | release-bless to core |
 
 ## Highest-leverage open core gaps
 
@@ -68,9 +68,9 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001` | cosmology | 2 | LEAN_PROVED | 12 |
 | `D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001` | cosmology | 2 | LEAN_PROVED | 12 |
 | `D0-P-M1-SATURATION-001` | frontier | 2 | LEAN_PROVED | 12 |
-| `D0-P-SUBCRIT-001` | frontier | 2 | LEAN_PROVED | 12 |
 | `D0-P-ABELIAN-001` | frontier | 2 | LEAN_PROVED | 12 |
 | `D0-TORAL-TIME-MARKOV-CONJUGACY-001` | frontier | 1 | HYP | 2 |
+| `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | frontier | 1 | HYP | 2 |
 | `D0-GAP-W-COPY-CAP-M1-001` | frontier | 1 | LEAN_PROVED | 12 |
 | `D0-FIBONACCI-IF-FORCING-001` | formal_core | 1 | LEAN_PROVED | 12 |
 | `D0-PHASON-PRESSURE-EOS-SCAFFOLD-001` | cosmology | 1 | LEAN_PROVED | 12 |
@@ -92,13 +92,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 338 | 4838 | 6021 | 1143 |
-| frontier | 63 | 296 | 1260 | 964 |
-| cosmology | 49 | 741 | 919 | 178 |
+| formal_core | 362 | 5286 | 6469 | 1143 |
+| frontier | 62 | 284 | 1240 | 956 |
+| cosmology | 50 | 752 | 930 | 178 |
 | smooth_geometry | 41 | 517 | 678 | 152 |
 | empirical_passport | 39 | 418 | 571 | 144 |
 | gauge_bridge | 50 | 685 | 724 | 39 |
-| spectral_action | 8 | 96 | 135 | 39 |
+| spectral_action | 10 | 136 | 175 | 39 |
 | rg | 7 | 93 | 113 | 16 |
 | external_background | 1 | 1 | 2 | 0 |
 | si_calibration | 2 | 18 | 22 | 0 |
@@ -108,14 +108,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| BOOK_04 | 107 | 1336 | 1842 | 486 |
-| BOOK_08 | 86 | 1148 | 1552 | 395 |
-| BOOK_07 | 69 | 880 | 1173 | 279 |
-| BOOK_02 | 71 | 790 | 1144 | 344 |
-| BOOK_01 | 52 | 708 | 964 | 256 |
+| BOOK_04 | 112 | 1436 | 1942 | 486 |
+| BOOK_08 | 87 | 1159 | 1563 | 395 |
+| BOOK_02 | 83 | 1006 | 1352 | 336 |
+| BOOK_07 | 72 | 940 | 1233 | 279 |
+| BOOK_01 | 56 | 788 | 1044 | 256 |
 | BOOK_06 | 45 | 547 | 776 | 224 |
 | BOOK_05 | 31 | 384 | 555 | 171 |
-| BOOK_01/02 | 14 | 264 | 264 | 0 |
+| BOOK_01/02 | 15 | 284 | 284 | 0 |
 | BOOK_00 | 11 | 125 | 202 | 77 |
 | BOOK_00/01 | 9 | 122 | 148 | 26 |
 | BOOK_07/08 | 9 | 96 | 163 | 62 |

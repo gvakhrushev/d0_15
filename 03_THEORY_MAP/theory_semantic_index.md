@@ -8,40 +8,53 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 168
-- `CORE-FORMALIZED`: 203
-- `CORE_BRIDGE_SPLIT`: 16
+- `CORE-FORMALIZED`: 225
+- `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 84
+- `NO-GO`: 88
 - `NO_GO_PROVED`: 7
 - `PASSPORT-CLOSED`: 20
-- `PROOF-TARGET`: 63
+- `PROOF-TARGET`: 62
 
 ## Type counts
 
-- `bridge`: 44
+- `bridge`: 45
 - `certificate`: 194
-- `core`: 206
+- `core`: 228
 - `deprecated`: 3
-- `frontier`: 63
-- `no-go`: 91
+- `frontier`: 62
+- `no-go`: 95
 
 ## Domain counts
 
-- `cosmology`: 49
+- `cosmology`: 50
 - `empirical_passport`: 39
 - `external_background`: 1
-- `formal_core`: 339
-- `frontier`: 63
+- `formal_core`: 363
+- `frontier`: 62
 - `gauge_bridge`: 51
 - `interpretation_spine`: 1
 - `rg`: 7
 - `si_calibration`: 2
 - `smooth_geometry`: 41
-- `spectral_action`: 8
+- `spectral_action`: 10
 
 ## Domain: cosmology
+
+### D0-DARK-EOS-DISCRETE-SET-001
+
+- type: `bridge`
+- release_status: `CORE_BRIDGE_SPLIT`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: `D0.Synthesis.RoleOrientationEOS;D0.Synthesis.DarkEOSDiscreteSet;D0.Synthesis.LambdaCDMExcluded;D0.Synthesis.RoleModelDiscrimination;D0.Synthesis.RoleAssignmentNarrowing;D0.Synthesis.DarkEOSMagnitudeFree`
+- theorem: `lambda_cdm_excluded;dark_eos_discrete;minimal_deviation;narrowing`
+- cert: `none`
+- assumptions: `none`
+- scope: Core/bridge split row; the formal spine is proved while physical coherence remains an explicit package.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Cosmology chain, conditionality recorded verbatim: (UNCONDITIONAL) LambdaCDM excluded by the degeneracies alone in the ratio reading (w = -1 needs s = 15 which is NOT a subset sum of {8,10,12}); (CONDITIONAL on the reading |w| = phi -- the sign owner row explicitly keeps |w_DE| PROOF-TARGET) eight values -phi + s/30, exclusion by irrationality, minimal deviation phi - 8/5, narrowed w = 3/5 - phi via the owned radial order. Two modelling steps named as the author's: one-orientation-per-mode; degeneracy-weighted mean.
 
 ### D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001
 
@@ -1610,7 +1623,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_seam_holonomy_alpha.py`
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [Iter21 closure-holonomy, replaces q_res fit] alpha^-1=359phi^-2-phi^-5+phi^-17(1+lnphi*sin(12/5))=137.035999151, matches CODATA-2018 to 6.7e-8 (~9 digits), zero free reals. HONEST SPLIT: the STRUCTURE (12/5 angle, sin-channel, phi^-17 depth) is THE via D0-PI0-DISCRETE-ANGLE-001 + D0-Q8-SIN-CHANNEL-001; this row is the 9-digit data MATCH = CHK (controls cos/exp/depth FAIL); the last ~1e-8 is HYP (D0-ALPHA-MEASUREMENT-LIMIT-001). NOT a THE derivation of the alpha value. Residue route BLOCKED (D0-CVFT-F1).
+- notes: [Iter21 closure-holonomy, replaces q_res fit] alpha^-1=359phi^-2-phi^-5+phi^-17(1+lnphi*sin(12/5))=137.035999151, matches CODATA-2018 to 6.7e-8 (~9 digits), zero free reals. HONEST SPLIT [repaired 2026-08-09 per C4 skeptic flag, TRANSPORT_FORK_ENDGAME_MEMO C4: rows D0-PI0-DISCRETE-ANGLE-001/D0-Q8-SIN-CHANNEL-001 own the angle and channel ONLY, not the depth]: the angle 12/5 and the sin-channel are THE; the depth phi^-17 is NOT owned as a total -- seam factor xi5 THE, transport factor phi^-12 + composition = OPEN sub-leg (i) of D0-ALPHA-SEAM-FORM-FORCED-001 (BOOK_02 02.13.h four-level split); this row is the 9-digit data MATCH = CHK (controls cos/exp/depth FAIL); the last ~1e-8 is HYP (D0-ALPHA-MEASUREMENT-LIMIT-001). NOT a THE derivation of the alpha value. Residue route BLOCKED (D0-CVFT-F1).
 
 ### D0-ALPHA-MU2-FULL-LEDGER-001
 
@@ -3614,6 +3627,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07] FLOOR 5->6 of D0-CASCADE-INSUFFICIENCY-CHAIN-001. Obligation ORDER MEMORY: the record must distinguish 'write then read' from 'read then write'. INSUFFICIENT: proved for EVERY abelian carrier (not just an accident of Z x Z), hence for pi_1(T^2) = Z x Z -- the two composites lie in one class. CONTROL: satisfiable, witnessed twice -- S_3 and, notably, Q_8, the corpus's own forced role group, so the minimal non-commutative repair is realized by an object BOOK_01 already owns rather than by an arbitrary group. MINIMAL: any repair must be non-commutative, since commutativity alone decides the failure. Owns the group-theoretic content; the write/read-as-group-operation reading is owned by BOOK_03 §03.23.4.
 
+### D0-CASCADE-FLOOR-ORIENTATION-PARITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.CascadeFloorOrientationParity`
+- theorem: `orientationClosed_iff_even;cascade_floor_orientation_parity`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] The +2 address step as a cascade floor: orientationClosed_iff_even (OrientationClosed k <-> Even k); reuses D0-LUCAS-DEFECT-SIGN-001. Fifth registered floor of D0-CASCADE-INSUFFICIENCY-CHAIN-001 (umbrella row updated this pass; umbrella stays OPEN).
+
 ### D0-CASCADE-FLOOR-SCALE-RATIO-001
 
 - type: `core`
@@ -3809,6 +3835,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter21 promote cert->Lean; fixed dangling lean_module D0.Edge.AlphaRamificationConstructive which never existed] The edge-alpha trace identity zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1 is machine-checked in D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one (shared with D0-ALPHA-ZETA-RESIDUE-001). The unitary-dilation construction stays the optional residual. [was:EDGE-ALPHA-TRACE-CERT-CLOSED]
 
+### D0-EQUIVARIANT-HYPERCHARGE-CARRIER-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Synthesis.EquivariantHyperchargeCarrier`
+- theorem: `vertex_carrier_nogo;unoriented_edge_carrier_nogo;oriented_edge_image_card_le_six;hypercharge_row_six;hypercharge_row_five`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC 2026-08-02 (uniqueness overclaim killed and repaired). Vertex carrier no-go (<=3 < 5) + symmetric-edge no-go (<=3) + directed-edge pass (<=6). SCOPE: carrier classes audited = {vertex, symmetric edge, directed edge} ONLY -- ordered triangles and directed 2-paths also pass counting, NOT audited. CITE-NOT-REMINT: <=6 = owned "6 cross-part" pair-orbit count (D0-RAW-SCENE-GRAPH-001); vertex leg = corollary of owned zone-indicator minimality (D0-P-INVARIANT-MINIMAL-001/F7). Both row conventions recorded: 5-field passes with slack; 6-field (nu_R = 0, hypercharge_row_six) saturates => directed carrier must be injective on the 6 classes. Zone-constancy delegates to swap_fixed_zoneConstant.
+
+### D0-EQUIVARIANT-MATRIX-STRUCTURE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.EquivariantMatrixStructure`
+- theorem: `equivariant_normal_form;archive_scalar_action;archive_actions_commute;no_equivariant_archive_noncommutativity`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC 2026-08-02 (Higgs carrier-mismatch binding killed and repaired). Operator-level normal form: determination by <= 12 structure constants (3+3+6); equality/freeness of the count owned at D0-RAW-SCENE-GRAPH-001 / D0-RAW-COMMUTANT-WEDDERBURN-001 (cited). archive_scalar_action: scalar diagC-offC per zone; the 33-scene archive block is abelian. SCOPE FIREWALL: the Higgs blocker's Q0 is typed on M2(ZMod 44) (J2 firewall: NOT the 33-scene) and is UNTOUCHED; the theorem closes only the hypothetical 33-scene equivariant analogue. Visible-block non-commuting witness described (cross-indicator pair, MN != NM), not formalized.
+
 ### D0-EW-002
 
 - type: `core`
@@ -3965,6 +4017,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Generation index is the projective closure P1(F2) of the minimal two-branch defect plane; masses/Yukawa hierarchy are not included.
 
+### D0-GENERIC-SCENE-CALCULUS-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.GenericSceneCalculus`
+- theorem: `moment0;moment1;moment2;euler_generic;rival_rules_dependent`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] M2 = D(V+6) derived generically (the +6 structural, not fitted); chi = 1 + H generically; allwalks - nonbacktracking = 2E, so the vNext2 rival carriers are linearly dependent. Cross-references D0-M1-HOMOLOGICAL-SCENE-READING-001, D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001 (no-go unchanged; dependency added).
+
 ### D0-GEOM-HEAT-TRACE-EH-PROXY-001
 
 - type: `core`
@@ -4055,6 +4120,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter21 cert->Lean] The finite cochain/Hodge complex closure d.d=0 is machine-checked: boundary_boundary_zero (I.d1*I.d2=0 for every IncidencePair) and finite_d_d_zero (d1(d0 A)=0 on any GradedCellComplex); the scene Hodge complex is an instance. The specific finite Hodge-Laplacian spectrum stays cert (vp_finite_hodge_complex_core.py). [8C orphan-harvest]
+
+### D0-HODGE-THREE-LEVEL-SPECTRUM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Synthesis.HodgeThreeLevelSpectrum`
+- theorem: `top_hodge_factorizes;mckean_singer;susy_assembly;betti_readout;doubling_law;moment_M2`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] P2 = (8+x^9)(10+x^11)(12+x^13); P0-P1+P2 = 961 for all x; b = (1,0,960) -- b1 = 0, the only homology is the archive; level-1 doubling law. HONESTY SPLIT (verbatim from proposal): the polynomial identities are Lean-proved; the identification of P1 with spec(Delta1) rests on the Hodge assembly over the two owned eigenbases + d1d2 = 0, verified in exact rational arithmetic outside Lean.
 
 ### D0-HULL-001
 
@@ -4251,6 +4329,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Release-candidate core status backed by build and CI.
 
+### D0-LEFSCHETZ-ZONE-EXCLUSION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Synthesis.LefschetzZoneExclusion`
+- theorem: `nfermion_closed_form;thirteen_no_direct_address;thirteen_no_periodic_address;composite_address_value_unique;periodic_five;lucas_recurrence_shares_degree_arithmetic`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC 2026-08-02 (WOUNDED-FIXABLE, W1-W3 repaired; clean axioms, NO native_decide). BOTH closed forms det(T^n +- 1) = (-1)^n +- (-1)^n L_n + 1 for ALL n; 13 lies outside BOTH owned toral address families -- anti-periodic (needs L = 13 or even-11) AND periodic #Fix (needs L = 13 or L = 15; fifteen_not_lucas) -- SCOPED to the two owned families, no wider universal. The owned composite 13 = F(3)+F(4) forced AT VALUE LEVEL ({4,9} unique among two-term sums; index pair NOT unique -- (0,4) also lands, F(0) = det(2I) = 4). periodic_five: G(5) = 11 = #Fix_5 (both families own 11; anti-periodic owns 9; 13 unique zone size outside both). lucas_recurrence_shares_degree_arithmetic (renamed from "is" per skeptic W2): 20 = 9+11 shared equation, NO binding minted. Cross-refs: D0-TRACE-HEAT-CAPACITY-GRAVITY-001 (owner of the values + composite reading), D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001 (periodic family).
+
 ### D0-LEPTON-WITNESS-BRANCH-001
 
 - type: `core`
@@ -4445,6 +4536,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Vector operator origin via negative double commutator.
+
+### D0-P-SUBCRIT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Foundation.M1CoreSaturation;D0.Spectral.SubcriticalTraceClass`
+- theorem: `subcritical_iff;rate_ge_one_of_three_le;alpha_subcritical_extremality;summable_iff_subcritical;not_summable_at_wall;core_carrier_object`
+- cert: `raise_m1core_check.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: POSITIVE extremality principle (corollary-of D0-P-M1-SATURATION-001; script-certified; Lean-lift owner-gated -> PROOF-TARGET, not LEAN_PROVED). THEOREM (cert-grade, mutation-tested): rate(a)=phi^(a-3) (Lean-owned in AlphaPresentCoreMaximalityNoGo.lean: rate_lt_one for a<=2, rate_three_eq_one), so rate(a)<1 iff a<=2 and rate(3)=phi^0=1 is the CRITICAL rate (phi^3 = cube of the forced golden rate phi). Hence a<=2 is the MAXIMAL trace-class (subcritical) region and the present-core (a in {0,1}) SATURATES the golden-subcritical extremum; the boundary a=3 (phi^3) is the M1-forbidden wall (single golden rate phi via 5-fold symmetry + M1). Raises D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001: the maximality no-go = present-core growth saturates the golden-subcritical extremum; the witness just past (a=3, phi^3 carrier) is the external import. RR: rate monotone + Lean-owned, quantifies over ALL admissible a (not a sample); no chosen-tower smuggle. Verified raise_m1core_check.py (RAISE 2, rc=0, mutation-tested); skeptic NO-KILL. Not LEAN_PROVED/CERT-CLOSED [superseded by LEANLIFT 2026-07-18 + the 2026-08-09 gap closure]: originally no Lean module (owner-gated, HELD). See RAISE_M1CORE_SATURATION_MEMO.md. LEANLIFT[2026-07-18]: subcritical_iff (full characterization rate a < 1 <-> a <= 2), rate_ge_one_of_three_le, alpha_subcritical_extremality in D0.Foundation.M1CoreSaturation. Converse leg NEW in-module (no prior >=1-rate statement in tree). Trace-class (Summable) reading remains with NOGO row D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001; GAPS CLOSED [2026-08-09]: both named gaps discharged by D0-SUBCRITICAL-TRACE-CLASS-001 (D0.Spectral.SubcriticalTraceClass: summable_iff_subcritical -- Summable <-> a <= 2 full characterization; not_summable_at_wall; coreCarriers + core_carrier_object strictly inside the region). Scope per module docstring: summability of the rate-weight family, not operator singular values. Release flip PROOF-TARGET -> CORE-FORMALIZED recorded this pass with the gap closure.
+
+### D0-PARTITION-ALGEBRA-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.PartitionAlgebra`
+- theorem: `mem_iff_constant_on_classes`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Finite Stone-Weierstrass: unital subalgebras of V -> Q are exactly partition algebras (mem_iff_constant_on_classes). Closes the InvariantMinimal.lean:32 "cited not formalized" gap of D0-P-INVARIANT-MINIMAL-001 at the general-V level. NAMED REMAINING OBLIGATION: the bridging instantiation to Fin 33 classifiers (no import edge InvariantMinimal -> PartitionAlgebra yet; the source docstring is repaired only by that wiring). SCOPE DISCIPLINE (INVARIANT_MINIMAL_DOMAIN_MEMO v3): the "no invariant proper refinement" universal is TRUE pointwise (0 witnesses) and FALSE Aut-stable (7 witnesses, block counts 11,13,15,21,23,25,33); R^Aut survives as inclusion-minimum/lattice meet under both readings -- any consumer must scope the reading.
 
 ### D0-PHASE-TOWER-001
 
@@ -4706,6 +4823,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter18 reuse item 3] Closes the §04.2 do not cite as proven numerical readout to an EXACT closed form. The reduced off-diagonal S (zero diagonal) has det(S)=2·1287/√(528·440·480)=2574/10560=39/160 (√(528·440·480)=10560 exact); so the two active eigenvalues sum to 3 (trace) and multiply to 2+39/160=359/160, i.e. roots of 160λ²−480λ+359 = 3/2±√10/40. Cert vp_scene_active_eigenvalues_exact.py (exact Q(√10), can-FAIL) + Lean D0.Geometry.SceneActiveEigenvalues (linear_combination on √10²=10). ERROR CORRECTION: §04.2 stated decimals 1.420838683198/1.579158554151 were slightly wrong (sum 2.999997≠3); corrected to 1.42094306/1.57905694 (sum exactly 3).
 
+### D0-SCENE-DARK-ARCHIVE-STRUCTURE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Spectral.DarkArchiveStructure`
+- theorem: `balanced_mem_ker;ker_imp_balanced;no_invariant_vector_in_archive`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] ker A = zone-balanced vectors = std9+std11+std13 (blocks 8/10/12); the archive carries no Aut-invariant vector; the visible/dark division IS the invariant/invariant-free split. Consumers: SEP leg of D0-PHASON-WZ-TRANSFER-OWNER-001 (the operator-annihilation hypothesis of the D0.Synthesis.SDECubicSpectralDisjointness scope note now proved, was cited), R^Aut dimension reading (D0-P-INVARIANT-MINIMAL-001 cross-ref).
+
 ### D0-SCENE-DEGREE-INVARIANT-ALGEBRA-001
 
 - type: `core`
@@ -4718,6 +4848,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07-29] Exact fixed-algebra theorem for the already frozen K(9,11,13) graph. Invariance quantifies over the full SimpleGraph automorphism type, not a literal generator list. Every rational vertex function invariant under all graph automorphisms has a unique form a+b*degree+c*degree^2, with explicit Lagrange coefficients at the computed degree values 20,22,24. Thus (Q^V)^Aut = Q[degree] = span{1,degree,degree^2} at function level, closing the evidence-grade class-function leg for rational vertex observables. Negative control on a two-degree carrier gives distinct quadratics with the same function, proving the third degree value load-bearing. Honest scope: the graph and degree observable are already fixed; the theorem does not derive the scene, zone count, physical generation labels, or an upper embedding for the independent scene-count problem.
+
+### D0-SCENE-JOINT-COMMUTANT-SIX-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.JointCommutant`
+- theorem: `joint_commutant;no_rational_root`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Centralising Aut AND the adjacency leaves dim 6 = 3+3 (visible Q[Q] + one scalar per archive block); transport cubic lambda^3-359*lambda-2574 irreducible over Q (48-divisor sweep, no rational root). Halves the R1 commutant 12 under the scene's own dynamics -- cross-reference D0-P-M1-SATURATION-001 (R1 leg); consumed by D0-TRANSPORT-FIELD-NO-GOLDEN-001 (charpoly owner). ASSEMBLY NOTE: Lean carries the charpoly, the 48-divisor no-root sweep and the count arithmetic; the centraliser(Q)=Q[Q] step and the isotypic split are docstring-grade standard linear algebra (the module records visible_centraliser_dim as the placeholder).
 
 ### D0-SCENE-NORMALIZED-QUOTIENT-DESCENT-001
 
@@ -4745,6 +4888,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: A1 R3 CORE-FORCING. det T=-1 (T=[[0,1],[1,-1]]) => one negative eigenvalue => one Z2 sign d.o.f. => constant parity under the existing no-aliasing principle (no new assumption; discharges ASSUMP-ORIENT-PARITY). 11=L5 is the skipped admissible address ruling out +4. Step=+2.
 
+### D0-SCENE-TRACE-HEAT-CAPACITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Synthesis.SceneTraceHeatCapacity`
+- theorem: `cut_zone;zone_region_never_saturates;full_scene_saturated;covertex_saturated;lucas_defect_of_full_scene;scene_trace_heat_capacity`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] sceneGraph : FiniteArchiveGraph -- FIRST concrete instance; cut_zone = n_z(33 - n_z); horizon structure decided at both granularities (zone unions never saturate; full scene + co-vertex saturate); lucas_defect_of_full_scene = 30 = archive dim -- first genuine TraceHeatDefect instance. Parent bridge row D0-TRACE-HEAT-CAPACITY-GRAVITY-001 cross-referenced; its vacuous-capstone repair (unused _hsat) remains DEFERRED and is not claimed here.
+
 ### D0-SCENE-TRIPLE-UNIQUE-001
 
 - type: `core`
@@ -4757,6 +4913,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter26 CAPSTONE] (9,11,13) is the UNIQUE admissible scene triple proved as a SINGLE statement composing four previously-distinct forcing legs: 3 zones (CarrierForcing.admissible_unique) + +2 address ladder (address_ladder) + centre L5=11 + odd-return parity. NEW content: unique_lucas_in_window -- among ALL Lucas numbers only L5=11 lies in the admissibility window [9,13] (L4=7<9 L6=18>13 L_n monotone so every higher return >13). scene_triple_unique: any +2 ladder whose centre is a Lucas number in [9,13] is uniquely (9,11,13). Non-vacuity proved (scene_triple_realized n=5). Lean D0.VNext2.SceneTripleUnique rc=0 0 sorry; cert vp_scene_triple_unique.py (controls: non-Lucas centre 10 rejected; wide window [9,29] admits 2nd centre 29=L7 so window bound load-bearing; +1 ladder rejected). The theory's root-selection statement in one line -- the scene is not chosen it is the unique fixed point of its admissibility window.
+
+### D0-SEAM-CROSSING-WEIGHT-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.SeamCrossingWeightForced`
+- theorem: `equivariant_weights_equal;twelfth_root_unique;crossing_weight_forced;nonuniform_freedom;seam_crossing_composed;seam_crossing_reduction`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC 2026-08-03 (1 KILL accepted: "derived from owned form" was a FALSE GRADE -- the depth total is PROOF-TARGET not THE; all repairs applied, confirm survivors fixed; C4 addendum of TRANSPORT_FORK_ENDGAME_MEMO.md). Surviving CONDITIONAL content: per-crossing value phi^-1 determined by the REGISTERED form under (alpha) 12th-sector uniformity + (beta) count/product reading + (gamma) the registered total phi^-17 = xi5*phi^-12 (the obligation's own open sub-leg) -- under the equivariance norm (normative, applied to weights-as-moduli NOT the pairing operator) and positivity. equivariant_weights_equal: the eleven V11 weights forced equal. nonuniform_freedom: without (alpha) a one-parameter family (control can fail). seam_crossing_composed: one composed Lean pipeline. Residual of PRIM-SEAM-CROSSING-TICK-IDENTIFICATION = (alpha) AND (beta) AND (gamma); the VALUE is no longer part of the primitive MODULO (gamma). FRAMING CONSTRAINT (mandatory): conditional on the open composition, never "derived from owned". forced_value_is_toral_stable_root is a coincidence-of-values record, not an explanation claim.
 
 ### D0-SEAM-HOLONOMY-001
 
@@ -4809,6 +4978,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: SRC contact is a finite shell-projector overlap readout through an angular-momentum shell-contact selector.
+
+### D0-SUBCRITICAL-TRACE-CLASS-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.SubcriticalTraceClass`
+- theorem: `summable_iff_subcritical;not_summable_at_wall;core_carrier_object`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Summable rate-weight family <-> a <= 2 (full characterization); not-Summable AT the wall a = 3 formalized; coreCarriers a in {0,1} formalized as an object (core_carrier_object) sitting strictly inside the region. Closes BOTH named gaps of D0-P-SUBCRIT-001 (that row's note updated this pass). SCOPE per module docstring: summability of the rate-weight family, not operator singular values.
+
+### D0-SYMMETRIC-FUNCTION-ACTIVE-SPECTRUM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.SymmetricFunctionCalculus;D0.Synthesis.ActiveSplittingFromDistinctness;D0.Synthesis.ActiveSpectrumClosedForm;D0.Synthesis.ActiveWindowIrrational`
+- theorem: `active_product;scene_active_product;gap_sos;gap_zero_iff_equal;scene_discriminant;disjoint_from_integers;sep_leg_structural`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Family row (owner chose one row for four modules): prod(N - n_i) = N*e2 - e3; active gap = Sum a(b-c)^2 (zero iff equal zones); discriminant = gap/prod(deg) = 1/40 (the sqrt10 explained); the S_DE window contains no integer (SEP leg structural). Cross-ref D0-DARK-EOS-DISCRETE-SET-001 (window leg consumer).
 
 ### D0-SYMPLECTIC-GLEASON-001
 
@@ -4927,6 +5122,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07 center-attack R2] Torus shell structure attached to the three-shell zone decomposition: TorusShell = Shell3 (explicit equivalence), zone degree law deg = 33 - n on sizes (9,11,13), size ladder +2, rational radius profile strictly monotone with unit inner shell. HONEST: this is the geometric attachment (existence + laws), NOT a derivation that physics roles must sit on these shells. D0.All GREEN 2026-07-04.
 
+### D0-TRANSPORT-CLOSED-FORM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.TransportClosedForm;D0.Spectral.TransportSelfAdjoint`
+- theorem: `transport_rank_one;secular_eq_cubic;secular_root_gives_eigenvector;transport_self_adjoint`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Q = 1*n^T - diag n; the secular equation Sum n_i/(n_i+lambda) = 1 IS the transport cubic; eigenvectors 1/(n_i+lambda); D*Q = Q^T*D (self-adjoint in the zone-size measure, real spectrum); parameter-free O(3) generation->transport rotation, explicitly NOT CKM-like (stated in-module).
+
+### D0-TRANSPORT-FORK-ENDGAME-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.TransportForkEndgame`
+- theorem: `transport_fork_endgame;door_five_unstable;twelve_profiles_differ;stable_contraction_is_phi_inv;twelve_from_the_same_return;seventeen_ticks`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC (1 KILL accepted + repaired, confirm CLEAN; TRANSPORT_FORK_ENDGAME_MEMO.md). Door-5 double instability Lean-assembled (12->6 joint-commutant halving + both no_equivariant_seam conjuncts) -- closure-negative CANDIDACY, owner-gated, NOT impossibility; two-12 no-merge vaccination ([8,3,1] != [9,1,1,1], centres 1 != 4, deriveds 11 != 8 -- numbers Lean, structure owned+standard); toral stable root phi^-1 + exclusivity + matrix wire; 12 = L5+1 from the xi5 return (+1 sector ANONYMOUS -- V13-witness identification is trap-(d), belongs inside the primitive); phi^-1/-phi not transport-cubic roots (scoped to that cubic ONLY). Door-2 route reduced to named residual PRIM-SEAM-CROSSING-TICK-IDENTIFICATION; door 1 (dim g_light) remains the live rival, untouched. AXIOM SPLIT: toral_matrix_relation and trace_T17 = -L17 = -3571 carry Lean.ofReduceBool (native_decide) and are kept OUT of the assembled theorem. Refuting the primitive RE-OPENS the depth axis; it does not yield a no-go.
+
 ### D0-TRIPARTITE-SIGNATURE-GENERAL-001
 
 - type: `core`
@@ -5005,6 +5226,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: xi5=phi^-5 torus-address defect: phi^5=11+phi^-5, L5=11, Tr(T^5)=-11; exact Z[phi]. Lean L5 CORE-FORMALIZED via D0.Claims.Xi5TorusDefect (xi5_torus_defect, native_decide; reuses D0.Dynamics.ToralAutomorphism trace_T_pow_eq_signed_lucas). alpha-row stays CHK.
 
+### D0-YUKAWA-COMMUTANT-SPECTRUM-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Synthesis.YukawaCommutantSpectrum`
+- theorem: `no_rational_root_rat;qq_spectrum_splits;no_rational_value_at_root;equivariant_yukawa_rigidity`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC 2026-08-03 (2x WOUNDED-FIXABLE, 0 kills, 7 repairs applied; YUKAWA_COMMUTANT_SPECTRUM_MEMO.md). Full-Q no-root statement (RRT step -- owned forms are divisor sweeps); automatic non-degeneracy (qq_spectrum_splits); forced irrationality (no_rational_value_at_root, formalized FROM the skeptic's kill attempt): non-scalar members never take rational values at roots => rational targets unattainable exactly. Three real roots with locations EXPORTED in the statement, in the OWNED brackets (-13,-12), (-10,-9), (21,22) (Q sign table: TransportNotGolden.transport_roots_bracketed; discriminant realness owned at MIXING-HIERARCHY-INVERSION / RANK3-METRIC / RANK3-CUBIC rows -- cited, not re-minted). HONEST NEGATIVE: parameter-free ratio profile <= 22/9 < 2.5 (squares < 6, float-free) vs lepton targets -- kill carried by first ratio, factor >= 9 in every convention; Vandermonde invertibility => arbitrary-precision fit => zero predictive surplus without an owned (a,b,c)-selector. Rival owned route (D0-LEPTON-002 L11+L4 = 206 THE; Puiseux exponents) needs no selector -- cross-referenced. Fork stays owner-gated.
+
 ### D0-Z2-SPINOR-COVER-001
 
 - type: `core`
@@ -5018,6 +5252,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Root B synthesis] One Z2=Z(Q8), seven incarnations unified machine-checked. Cert vp_z2_spinor_cover.py (exact Z[sqrt5]+Q8 table): [Q8,Q8]=Z(Q8)=Phi(Q8)={+-1} |Z|=2 (#3); Galois phi+psi=1 phi*psi=-1 g(x)=1-x involution (#1); Lucas L_n=phi^n+psi^n eps_n=phi^n-L_n=-psi^n chi(n)=(-1)^n (#2); det(T^n)=(-1)^n=chi(n) (#5,#6); 2-sheet+rank-doubling (#4,#7). JOINT A: signedLucasTrace n=det(T^n)*L_n and det T=-1=phi*psi (parity=det=Galois-norm). JOINT B: det(T^{n+2})=det(T^n) (+2 fixes sheet), det(T^{n+1})=-det(T^n) (+1 flips, banned by M1). Lean L5 CORE-FORMALIZED via D0.Synthesis.Z2SpinorCover (z2_spinor_cover), >=4/7 projections sorry-free. HONEST: cert verifies cover ALGEBRA; the M1-uniqueness of orientation=Gal(Q(sqrt5)/Q) stays GOLDEN forcing prose. Note: BOOK_02 02.34 prose sign typo eps_n=L_n-phi^n corrected to phi^n-L_n=-psi^n (matches 03.23.6).
 
+### D0-ZONE-CONNECTIVITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Foundation.ZoneConnectivity`
+- theorem: `reach_iff_sameZone`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] The 30 within-zone transpositions have the zones exactly as orbits (reach_iff_sameZone). Closes the InvariantGenerationBridge.lean:42 "cited not formalized" gap of D0-INVARIANT-GENERATION-BRIDGE-001 at orbit level. The full group-theoretic statement <generators> = S9 x S11 x S13 is NOT claimed (disclaimed in-module).
+
+### D0-ZONE-COUNT-MULTIPLICATIVE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Synthesis.ZoneCountFromSpectrum;D0.Synthesis.ZoneCountCompleteness`
+- theorem: `only_eleven_carries_five;only_thirteen_carries_three;remainder_forced;unique_betti;length_bound`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] The pair (D,H) = (1287,960) has a unique preimage (9,11,13) over ALL part counts (5|H forces 11, 3|H forces 13, remainder [9]); the ADDITIVE pair (V,H) does NOT force the count -- witnesses [3,5,9,16] and [2,2,4,5,9,11] (HomologicalReadingClassBoundary), supplying the class-boundary witness the owned reading's own controls lacked. ASSEMBLY NOTE: the over-ALL-lengths uniqueness is assembled at docstring grade -- unique_betti quantifies over the tabulated 11-item factorisation list (exhaustiveness via Omega(1287)=4, taken as read per module docstring); the forcing steps and the length bound are Lean; the threading list surgery is not mechanised (ZoneCountCompleteness docstring). PREMISE DISCIPLINE: the input is the spectrum pair itself; this is NOT a from-nothing forcing of the count (see the DyadExponentForced retraction of 2026-08-01 -- do not cite that module as a forcing).
+
 ### D0-ZONE-CURRENT-001
 
 - type: `core`
@@ -5030,6 +5290,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: v15 WP-A THE. J=i[D,A] G-Hermitian in canonical part-size inner product G=diag(9,11,13); comm^3=-2840*comm; spectrum {0,+-2sqrt710}. FIREWALL: not a physical current/neutrino/charge.
+
+### D0-ZONE-IS-GENERATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_04`
+- module: `D0.Synthesis.ZoneIsGeneration`
+- theorem: `decomposition;decomposition_unique;dark_mem_ker`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Per zone: 1 visible + (n_i - 1) dark, split unique; ties the generation index, the phason index (torusShell ladder) and the archive index into one object. Cross-ref D0-SCENE-DARK-ARCHIVE-STRUCTURE-001 (the dark side lands in ker A).
 
 ### D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001
 
@@ -5252,6 +5525,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [2026-07-30] Direct attack on the remaining input exactly-two-independent-detection-capabilities. A finite observation has independently variable membership, value and history/order fields. Capability use is extensional: changing only one field can change the comparison output. Membership equality, value equality and history equality are all operational and Lean proves their exact primitive capability vectors are the three atoms e0,e1,e2 in the general Fin 3 grammar. Holding current membership and value fixed while changing history changes historyComparison, so no membership/value-only representation can preserve it. Thus the current operational/no-catalogue conditions do not imply only two capabilities; history/order is a third primitive unless a typed stratification theorem excludes it from the detector layer. Exact reopening/closure condition: primitive detector comparisons factor through current membership/value data; Lean proves such factorization excludes UsesHistory. Does not claim history should physically be counted at the detector floor; it proves the existing prose has not yet formalized the layer separation. Cross-ref D0-GENERAL-COMPARISON-CAPABILITY-COUNT-001 and D0-PHYSICAL-COMPARISON-REPRESENTATION-REDUCTION-001.
 
+### D0-EQUIVARIANT-SEAM-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.EquivariantSeamNoGo`
+- theorem: `no_equivariant_seam;archive_invariant;visible_invariant`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Every Aut-equivariant operator on the 33-scene is block-diagonal across active(3)/archive(30); Feshbach couplings B, C vanish; W_eff z-independent, seam residue zero. SCOPE: necessity of EXTERNAL Dixmier extraction is established WITHIN THE EQUIVARIANT CLASS ONLY (upgrades the alpha-front scope declaration to a class-scoped necessity, not a universal). Consumers: D0-ALPHA-FESHBACH-DIXMIER-OWNER-001 honesty boundary, ASSUMP-DIXMIER-TRACE, matter no-gos D0-EQUIVARIANT-HYPERCHARGE-CARRIER-001 / D0-EQUIVARIANT-MATRIX-STRUCTURE-001. Reopening hook: a non-equivariant seam operator class is untouched by this row.
+
 ### D0-GAP-LABEL-GENERICITY-NOGO-001
 
 - type: `no-go`
@@ -5460,6 +5746,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [2026-07 PR-review fix: registered, was missing a row despite being asserted as a NO-GO in 01_BOOKS/BOOK_06.../0007__06.6__....md Iter25 and backed by a passing cert.] Why the CONDITIONAL-EXTENSION of D0-STURMIAN-REFINEMENT (parent row, stays PROOF-TARGET) cannot be discharged internally, for two independent reasons: (i) FIELD DISJOINTNESS (load-bearing) - the golden tower lives in Q(sqrt5)=Q(phi), but the archive/window scale 359/160 (roots of 160*lambda^2-480*lambda+359, disc 640=64*10) lives in Q(sqrt10); since sqrt10 not in Q(sqrt5), no canonical intertwiner ties a Q(sqrt5) carrier to a Q(sqrt10) carrier (same structural reason the neighbouring phason-WZ transfer closed NO-GO); explained by D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001 (sqrt10 is the size-fingerprint of 9,11,13, not a golden near-miss). (ii) ORIENTATION - the centre-11 convergence forces T=[[0,1],[1,-1]] (trace -1, orientation-reversed), the Sturmian tower uses orientation-preserving S=[[1,1],[1,0]] (trace +1); trace is a conjugacy invariant so S is not conjugate to T (scene pins T~-S), periodic-point offset [0,2,0,2,...]. Golden back-fit rejected: phi^k=359/160 gives k=1.679 non-integer. HONEST: an external owner could POSTULATE PRIM-STURMIAN-REFINEMENT-OWNER as a passport; that stays a named external choice, not an internal discharge. Cert vp_sturmian_refinement_discharge_nogo.py, 6/6 PASS incl. wrong-object control.
 
+### D0-TRANSPORT-FIELD-NO-GOLDEN-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.TransportFieldNoGolden`
+- theorem: `no_quadratic_element_in_transport_field;phi_not_in_transport_field;phi_inv_not_in_transport_field;transport_field_no_golden`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC 2026-08-03 (WOUNDED-FIXABLE, 0 kills, W1-W5 repaired). Field-grade upgrade of the twice-killed universal, in a form exhausted by construction: NO element of quadratic minimal-polynomial degree lies in Q(lambda) for any real transport root ([Q(lambda):Q] = 3, 2 does not divide 3); phi, phi^-1 instances. SCOPE: rational coefficients only; single-eigenvalue fields ONLY (splitting field NOT claimed -- degree 6 would admit a quadratic subfield, a genuine open question); eigenvalue<->root = docstring-grade spectral-mapping convention (charpoly owned at D0-SCENE-JOINT-COMMUTANT-SIX-001). Consequence for the alpha front: the per-crossing phi^-1 of the door-2 route cannot be manufactured from a single transport eigenvalue by any rational-coefficient rational-function reading. TransportNotGolden's Q(sqrt5)-exclusion instances become corollaries (its bracket sign table separate, NOT subsumed). MINT ORDER: consumes no_rational_root_rat from D0-YUKAWA-COMMUTANT-SPECTRUM-001 (minted in this same pass).
+
+### D0-TRANSPORT-NOT-GOLDEN-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Spectral.TransportNotGolden`
+- theorem: `transport_roots_bracketed;no_golden_transport_mode`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] BOUNDARY row: no transport eigenvalue lies in Q(sqrt5); the overclaimed engine-limit reading is retracted inside the module (retraction is part of the record). Consumer: alpha-front obligation (i) of D0-ALPHA-SEAM-FORM-FORCED-001 -- the sharpest pointer that a per-crossing phi^-1 mechanism cannot live on the transport spectrum itself. Superseded-by-generalization note: field-grade export at D0-TRANSPORT-FIELD-NO-GOLDEN-001; the bracket sign table here is separate and NOT subsumed.
+
+### D0-TRANSPORT-SPECTRUM-BLINDNESS-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.TransportSpectrumBlindness`
+- theorem: `isospectral_witness;isospectral_witness_two;transport_not_injective;scene_pinned_by_ET;blindness_and_pinning`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] The transport cubic omits V; two isospectral pairs Lean-exhibited (docstring records an exhaustive sweep to 60 finding 55 such pairs -- docstring-grade count, no cert); the frozen scene is pinned only by the arithmetic of (E,T) = (359,1287). Blocks any future "reconstruct the scene from transport data" claim. Reopening hook: a reconstruction claim must supply data beyond (E,T).
+
 ### D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001
 
 - type: `no-go`
@@ -5643,7 +5968,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_alpha_seam_form_forced.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [MINT 2026-07-18, owner-authorized session; skeptic#19 two passes: v1 WOUNDED (strongest finding: 'four of five legs THE' falsified by the depth split — the phi^-12 transport factor + composition are unowned prose 02.13.h:87; plus F3 ratio artifact, R5 hook-(iv) qualifier, five stale lines) -> all repairs applied -> re-verify: R3/R4/R6 DISCHARGED, R1/R2/R5 residuals fixed in the five named text edits] THE REFRAME (owner criterion: uniqueness + progressive narrowing, NOT digit-matching): the dressing tuple (depth phi^-17 = xi5*phi^-12 SPLIT: seam factor xi5 THE / transport factor OPEN; sin channel THE; angle 12/5 THE; linear form THE; rate h_KS=ln phi identification OPEN) is claimed unique among D0-admissible seam dressings. THREE registered open obligations (= the rc=2 state of cert vp_alpha_seam_form_forced.py): (i) leg 1b own the phi^-12 transport factor + composition; (ii) leg 5 cross-scope identification of row 285's registered multiplier rate with row 243's owned rate value (row 253 = weaker reference: Lean owns only |lambda_max|=phi, KS step external Pesin wrapper); (iii) joint exhaustion. Falsifier surface F1-F5 (7 named rivals SEPARATED >= 1.6e-5: exp-form, cos-channel, depths phi^-16/phi^-18 = the total depths of the registry-named phi^-4/phi^-6 family, rates 1/ln2/phi^-1; continuum rates excluded by F5/ownership + open exhaustion, NOT by separation — separation != exhaustion). F5 redirection clause: a pi0-coefficient result with independent content beyond the assembled form (hook (iv) verbatim, ALPHA_SEAM_NOGO_V2:66) REOPENS the realization no-go — never absorbed here. OBJECT-B ONLY: no realization claim, /D_Sigma, rho, zones 11/13, zeta/Dixmier untouched; ASSUMP-DIXMIER-TRACE untouched; 9-digit stays CHK at D0-ALPHA-HOLONOMY-002 (S2 re-runs 002's control battery against the FROZEN book value — same evidence, two roles, neither row absorbs the other); last ~1e-8 stays HYP at D0-ALPHA-MEASUREMENT-LIMIT-001. Book: 02.13.h Honest-status-split now FOUR levels at BOTH ladder sites (:95 + :142 echo). See ALPHA_SEAM_FORM_FORCED_MEMO.md. OBLIGATIONS UPDATE [2026-07-18 external review, POST-SKEPTIC #20, SEAM_RATE_IMPORT_MEMO.md]: (ii) the cross-scope identification EXISTS in print since 2026-06-17 -- BOOK_06 06.30a: toral h_KS 'is exactly' the 02.13.h stretch (refs D0-SEAM-HOLONOMY-001) -- ASSEMBLY-CANDIDATE, missed by the recon and skeptic #19; reciprocity minted this pass (02.13.h:95 pointer + this note + row 285 note); cert carrier seam_rate_import_check.py (7/7, mutants 6/6); STRUCTURE: seam monodromy is an isometry (seamU_orthogonal) so its intrinsic KS rate is 0 and the rate leg is necessarily an import; residual: owner adoption at owned grade. (i) OPEN -- five-candidate fork recorded [2026-07-18, TRANSPORT_TWELVE_FORK_MEMO.md POST-SKEPTIC #21, cert transport_twelve_check.py 6/6 + 5/5 mutants]: dim g_light (owned value; derived in 02.13.1 as Omega8+Rank+anchor; eta_EM-owned elsewhere; label must change per THE 02.19C), |V11|+1 (cert-comment mechanism only, vp_seam_holonomy_alpha.py), |V13|-1 = S13-isotype dim (ONE object; in-print ANTI-transport -- BOOK_04 owns the kernel as 'transport-null', CERT-CLOSED), |ABCD|+|Omega8| (sum unowned as a unit), commutant 12; extensions: theta_seam numerator 12 (same {12,5} pair, no in-print connection), icosahedron V=12; ZERO in-print bindings (live check); label 'electroweak transport' in tension with THE 02.19C (EW dim 4); composition exponent-rigid: 5+12=17, rivals give 9/13/16/18 != 17 (exact), the 16/18 rivals land on the already-separated F3 surface. (ii) ADOPTED [2026-07-18, post-skeptic #22, SEAM_RATE_ADOPTION_MEMO.md] at assembly grade -- the ceiling available: the entropy reading is permanently the external wrapper, boundary as D0-IF-KS-FORMULA-FIX-001. The 02.13.h stretch bullet now binds the rate to the toral time generator (structure D0.Spectral.SeamRateImport -- isometry at every power + hyperbolic control, wired, full build green; radius machine-checked at row 253; single-turn count = the named single-crossing input + parabolic theorems of row 529; record cert seam_rate_import_check.py v4). Remaining open: (i) five-candidate fork, (iii) joint exhaustion. (iii) DECOMPOSED [2026-07-18, EXHAUSTION_DECOMPOSITION_MEMO.md POST-SKEPTIC #23 (v1 rate-axis KILL accepted -> repaired), cert rate_axis_inventory_check.py v2 5/5 + 7/7 mutants]: channel EXHAUSTED-OWNED (two channels, off-diag forced, row 288); form EXHAUSTED-CONDITIONAL (SL(2,R) trichotomy external-cited; elliptic bounded + parabolic linear owned at 529; hyperbolic seam generator none owned, tripwired); angle ANCHORED (12/5 THE; rivals redirect to hook (iv)); rate INVENTORY-EXHAUSTED-v2 (type-annotation sweep over every named 2x2 def, any body form -- 41 swept + 5 book-derived: ITERATED rates = phi-family only, k=1 pinned in-print count+magnitude; non-phi expanders = six NAMED non-iterated objects incl. the phason S_DE transfer radius 3/2+sqrt10/40 in Q(sqrt10), adjudicated WINDOW against row 252's row-stochastic carrier; FORK PRINTED: classing it ITERATED reopens the axis); depth OPEN = obligation (i). NET: (iii) reduces to (i) + tripwires R1/R4 (corrected scope); inventory-indexed, not future-proof.
+- notes: [MINT 2026-07-18, owner-authorized session; skeptic#19 two passes: v1 WOUNDED (strongest finding: 'four of five legs THE' falsified by the depth split — the phi^-12 transport factor + composition are unowned prose 02.13.h:87; plus F3 ratio artifact, R5 hook-(iv) qualifier, five stale lines) -> all repairs applied -> re-verify: R3/R4/R6 DISCHARGED, R1/R2/R5 residuals fixed in the five named text edits] THE REFRAME (owner criterion: uniqueness + progressive narrowing, NOT digit-matching): the dressing tuple (depth phi^-17 = xi5*phi^-12 SPLIT: seam factor xi5 THE / transport factor OPEN; sin channel THE; angle 12/5 THE; linear form THE; rate h_KS=ln phi identification OPEN) is claimed unique among D0-admissible seam dressings. THREE registered open obligations (= the rc=2 state of cert vp_alpha_seam_form_forced.py): (i) leg 1b own the phi^-12 transport factor + composition; (ii) leg 5 cross-scope identification of the registered multiplier rate (D0-SEAM-HOLONOMY-001) with the owned toral rate value (Adler-Weiss/KS owner edge D0-ADLER-WEISS-PARTITION-OWNER-001; weaker Lean reference D0-IF-KS-FORMULA-FIX-001 owns only |lambda_max|=phi, KS step external Pesin wrapper); (iii) joint exhaustion. Falsifier surface F1-F5 (7 named rivals SEPARATED >= 1.6e-5: exp-form, cos-channel, depths phi^-16/phi^-18 = the total depths of the registry-named phi^-4/phi^-6 family, rates 1/ln2/phi^-1; continuum rates excluded by F5/ownership + open exhaustion, NOT by separation — separation != exhaustion). F5 redirection clause: a pi0-coefficient result with independent content beyond the assembled form (hook (iv) verbatim, ALPHA_SEAM_NOGO_V2:66) REOPENS the realization no-go — never absorbed here. OBJECT-B ONLY: no realization claim, /D_Sigma, rho, zones 11/13, zeta/Dixmier untouched; ASSUMP-DIXMIER-TRACE untouched; 9-digit stays CHK at D0-ALPHA-HOLONOMY-002 (S2 re-runs 002's control battery against the FROZEN book value — same evidence, two roles, neither row absorbs the other); last ~1e-8 stays HYP at D0-ALPHA-MEASUREMENT-LIMIT-001. Book: 02.13.h Honest-status-split now FOUR levels at BOTH ladder sites (:95 + :142 echo). See ALPHA_SEAM_FORM_FORCED_MEMO.md. OBLIGATIONS UPDATE [2026-07-18 external review, POST-SKEPTIC #20, SEAM_RATE_IMPORT_MEMO.md]: (ii) the cross-scope identification EXISTS in print since 2026-06-17 -- BOOK_06 06.30a: toral h_KS 'is exactly' the 02.13.h stretch (refs D0-SEAM-HOLONOMY-001) -- ASSEMBLY-CANDIDATE, missed by the recon and skeptic #19; reciprocity minted this pass (02.13.h:95 pointer + this note + D0-SEAM-HOLONOMY-001 note); cert carrier seam_rate_import_check.py (7/7, mutants 6/6); STRUCTURE: seam monodromy is an isometry (seamU_orthogonal) so its intrinsic KS rate is 0 and the rate leg is necessarily an import; residual: owner adoption at owned grade. (i) OPEN -- fork state UPDATED [2026-08-01/02 POST-COLLAPSE + TRANSPORT_FORK_ENDGAME_MEMO POST-SKEPTIC 1 KILL accepted; Lean D0.Synthesis.TransportForkEndgame, row D0-TRANSPORT-FORK-ENDGAME-001]: doors 3/4 = ONE carrier (witness_removal_identity), in-print ANTI-transport; door 5 (commutant 12) double-instability closure-negative CANDIDACY owner-gated; door 2 (|V11|+1) reduced to named residual PRIM-SEAM-CROSSING-TICK-IDENTIFICATION with semantic content (alpha) 12th-sector uniformity AND (beta) count/product reading AND (gamma) the registered total phi^-17 = xi5*phi^-12 -- per-crossing value phi^-1 is a theorem CONDITIONAL on these (D0-SEAM-CROSSING-WEIGHT-001), conditional on the open composition, never derived-from-owned; door 1 (dim g_light) live rival, mechanism unowned either way. Field-grade negative: no quadratic-degree element (incl. phi, phi^-1) in Q(lambda) for any transport root (D0-TRANSPORT-FIELD-NO-GOLDEN-001). Original five-candidate record [2026-07-18, TRANSPORT_TWELVE_FORK_MEMO.md POST-SKEPTIC #21, cert transport_twelve_check.py, distinct_objects updated to 4]: dim g_light (owned value; derived in 02.13.1 as Omega8+Rank+anchor; eta_EM-owned elsewhere; label must change per THE 02.19C), |V11|+1 (cert-comment mechanism only, vp_seam_holonomy_alpha.py), |V13|-1 = S13-isotype dim (ONE object; in-print ANTI-transport -- BOOK_04 owns the kernel as 'transport-null', CERT-CLOSED), |ABCD|+|Omega8| (sum unowned as a unit), commutant 12; extensions: theta_seam numerator 12 (same {12,5} pair, no in-print connection), icosahedron V=12; ZERO in-print bindings (live check); label 'electroweak transport' in tension with THE 02.19C (EW dim 4); composition exponent-rigid: 5+12=17, rivals give 9/13/16/18 != 17 (exact), the 16/18 rivals land on the already-separated F3 surface. (ii) ADOPTED [2026-07-18, post-skeptic #22, SEAM_RATE_ADOPTION_MEMO.md] at assembly grade -- the ceiling available: the entropy reading is permanently the external wrapper, boundary as D0-IF-KS-FORMULA-FIX-001. The 02.13.h stretch bullet now binds the rate to the toral time generator (structure D0.Spectral.SeamRateImport -- isometry at every power + hyperbolic control, wired, full build green; radius machine-checked at D0-IF-KS-FORMULA-FIX-001; single-turn count = the named single-crossing input + parabolic theorems of D0-ALPHA-HOLONOMY-LINEAR-FORM-001; record cert seam_rate_import_check.py v4). Remaining open: (i) five-candidate fork, (iii) joint exhaustion. (iii) DECOMPOSED [2026-07-18, EXHAUSTION_DECOMPOSITION_MEMO.md POST-SKEPTIC #23 (v1 rate-axis KILL accepted -> repaired), cert rate_axis_inventory_check.py v2 5/5 + 7/7 mutants]: channel EXHAUSTED-OWNED (two channels, off-diag forced, D0-Q8-SIN-CHANNEL-001); form EXHAUSTED-CONDITIONAL (SL(2,R) trichotomy external-cited; elliptic bounded + parabolic linear owned at D0-ALPHA-HOLONOMY-LINEAR-FORM-001; hyperbolic seam generator none owned, tripwired); angle ANCHORED (12/5 THE; rivals redirect to hook (iv)); rate INVENTORY-EXHAUSTED-v2 (type-annotation sweep over every named 2x2 def, any body form -- 41 swept + 5 book-derived: ITERATED rates = phi-family only, k=1 pinned in-print count+magnitude; non-phi expanders = six NAMED non-iterated objects incl. the phason S_DE transfer radius 3/2+sqrt10/40 in Q(sqrt10), adjudicated WINDOW against the owned row-stochastic scene-transport carrier (as in D0-PHASON-ACTIVE-SCENE-CONJUGACY-001); FORK PRINTED: classing it ITERATED reopens the axis); depth OPEN = obligation (i). NET: (iii) reduces to (i) + tripwires R1/R4 (corrected scope); inventory-indexed, not future-proof.
 
 ### D0-CASCADE-INSUFFICIENCY-CHAIN-001
 
@@ -5651,12 +5976,12 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - release_status: `PROOF-TARGET`
 - domain: `frontier`
 - book: `BOOK_01`
-- module: ``
-- theorem: `none`
+- module: `D0.Foundation.CascadeChain`
+- theorem: `chain_linked_four_five_to_five_six`
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target.
+- notes: [2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. Umbrella stays OPEN: floors defect=>closure=>shell and 'three insufficiencies = three zones' unformalized; machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).
 
 ### D0-CMB-IDS-SMOOTHING-OWNER-001
 
@@ -6061,19 +6386,6 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: POSITIVE extremality umbrella principle over COLOUR / ALPHA / R1 / HIGGS (script-certified; Lean-lift owner-gated -> PROOF-TARGET, not LEAN_PROVED). SCHEMA (cert-grade, 26/26 mutation-tested): let X_core be the M1 present-core sub-object and F an owned order/valuation functional on the admissible class C (growth-rate, commutant-dimension, commutativity, distinctness-rigidity); then X_core is the UNIQUE F-extremum in C, and (no-go holds) <=> (the extremum is saturated). A witness lies just past the extremum but OUTSIDE C -- the exact external import each no-go names. Four instances, each a corollary: COLOUR RIGIDITY-EXTREMALITY (the +2 frame {24,22,20} is the joint MIN of commutant dim ->3 and swap order ->1; colour tensor-C^3 STAYS EXTERNAL, NOT derived), ALPHA SUBCRITICAL-EXTREMALITY (a<=2 maximal trace-class, rate(a)=phi^(a-3); -> P-SUBCRIT), R1 MAXIMAL-COMMUTANT (dim Comm=12=3^2+1+1+1 full centralizer), HIGGS MAXIMAL-ABELIAN (present-core maximal T-commutative; W1 leg only, W2 SSB-sign external; -> P-ABELIAN). RR (residual risk): each raise is the POSITIVE FACE of a no-go, NOT a promotion past the boundary -- the four rows STAY NO-GO; COLOUR must never read as 'colour derived' (abelian C^3 dim 3 < dim M3 9), HIGGS raises W1 only (filling Qnc necessary-but-not-sufficient). Verified raise_m1core_check.py (26/26, rc=0, mutation-tested; each MUT breaks exactly one instance); independent skeptic NO-KILL on all four headlines. Not LEAN_PROVED/CERT-CLOSED: no Lean module yet (owner-gated, HELD). See RAISE_M1CORE_SATURATION_MEMO.md. LEANLIFT[2026-07-18, owner-gated lift executed; skeptic#16 first pass WOUNDED -> all four repairs applied -> repair pass ALL DISCHARGED, mint-ready]: D0.Foundation.M1CoreSaturation / m1_core_saturation wired into D0/All.lean, lake build green (4019 jobs). COLOUR uniqueness machine-checked ONLY over the 3-member M1 zone family (m1Frame_unique_joint_min); over all N-frames the (3,1) floor is attained by every all-distinct frame (e.g. ![0,1,2]) -- floors global, uniqueness graded to C. R1 instance = centralizer VALUE + isotype arithmetic (commutant_dim_eq; commutantDim = generationMult^2+1+1+1); double-commutant maximality and the PRIM-FINITE-SPECTRAL-TRIPLE-REP witness stay NARRATED (no candidate class formalized). Second-order universality over functionals stays narrated. Four no-go rows stay NO-GO; colour NOT derived; W2 external. native_decide (ofReduceBool) enters via commute_T_core_characterization and inherited Qnc_not_commute.
 
-### D0-P-SUBCRIT-001
-
-- type: `frontier`
-- release_status: `PROOF-TARGET`
-- domain: `frontier`
-- book: `BOOK_02`
-- module: `D0.Foundation.M1CoreSaturation`
-- theorem: `subcritical_iff;rate_ge_one_of_three_le;alpha_subcritical_extremality`
-- cert: `raise_m1core_check.py`
-- assumptions: `none`
-- scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: POSITIVE extremality principle (corollary-of D0-P-M1-SATURATION-001; script-certified; Lean-lift owner-gated -> PROOF-TARGET, not LEAN_PROVED). THEOREM (cert-grade, mutation-tested): rate(a)=phi^(a-3) (Lean-owned in AlphaPresentCoreMaximalityNoGo.lean: rate_lt_one for a<=2, rate_three_eq_one), so rate(a)<1 iff a<=2 and rate(3)=phi^0=1 is the CRITICAL rate (phi^3 = cube of the forced golden rate phi). Hence a<=2 is the MAXIMAL trace-class (subcritical) region and the present-core (a in {0,1}) SATURATES the golden-subcritical extremum; the boundary a=3 (phi^3) is the M1-forbidden wall (single golden rate phi via 5-fold symmetry + M1). Raises D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001: the maximality no-go = present-core growth saturates the golden-subcritical extremum; the witness just past (a=3, phi^3 carrier) is the external import. RR: rate monotone + Lean-owned, quantifies over ALL admissible a (not a sample); no chosen-tower smuggle. Verified raise_m1core_check.py (RAISE 2, rc=0, mutation-tested); skeptic NO-KILL. Not LEAN_PROVED/CERT-CLOSED: no Lean module yet (owner-gated, HELD). See RAISE_M1CORE_SATURATION_MEMO.md. LEANLIFT[2026-07-18]: subcritical_iff (full characterization rate a < 1 <-> a <= 2), rate_ge_one_of_three_le, alpha_subcritical_extremality in D0.Foundation.M1CoreSaturation. Converse leg NEW in-module (no prior >=1-rate statement in tree). Trace-class (Summable) reading remains with NOGO row D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001; not-Summable at the wall not formalized; present-core carriers a in {0,1} sit strictly inside the region (no core-carrier object formalized).
-
 ### D0-PASSPORT-DESI-BAO-001
 
 - type: `frontier`
@@ -6163,7 +6475,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `vp_phason_wz_logdet_window_owner.py`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [Iter22 five-front D] The log-det spectral window FORM rho(u)~exp(-u*lambda_c)+exp(-u*lambda_r), p(u)~d_V[-logdet(I-zF_N(V))], w_D0(u)=p(u)/rho(u) is scaffolded. MISSING (exact): the eigenvalues lambda_c~1.421, lambda_r~1.579 are NOT internally owned (only representative numerical domain-check values in vp_strong_logdet_pressure_coupling.py); an exact Q(phi) derivation of lambda_c, lambda_r as owned objects from the log-det formula is required. cert vp_phason_wz_logdet_window_owner.py (controls: lambda-without-owner / DESI-defines-w / retune-after-survey rejected). PROOF-TARGET. EXACT-MISSING: exact Q(phi) roots lambda_c,lambda_r of the log-det window (PROOF-TARGET) -> PRIM-PHYSICAL-MAGNITUDE-MAP.
+- notes: [Iter22 five-front D] The log-det spectral window FORM rho(u)~exp(-u*lambda_c)+exp(-u*lambda_r), p(u)~d_V[-logdet(I-zF_N(V))], w_D0(u)=p(u)/rho(u) is scaffolded. MISSING (exact): the eigenvalues lambda_c~1.421, lambda_r~1.579 are NOT internally owned (only representative numerical domain-check values in vp_strong_logdet_pressure_coupling.py) [DESYNC REPAIR 2026-08-09: superseded by BOOK_08 Iter23 -- lambda_c, lambda_r are VALUE-OWNED exactly as the two nontrivial normalized-Laplacian eigenvalues; product lambda_c*lambda_r = 359/160 Lean-owned at D0-SCENE-ACTIVE-EIGENVALUES-001 (scene_active_eigenvalues_prod), discriminant 1/40 at D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001; the exact-Q(phi) target below was replaced by the Q(sqrt10) no-go]; an exact Q(phi) derivation of lambda_c, lambda_r as owned objects from the log-det formula is required. cert vp_phason_wz_logdet_window_owner.py (controls: lambda-without-owner / DESI-defines-w / retune-after-survey rejected). PROOF-TARGET. EXACT-MISSING: exact Q(phi) roots lambda_c,lambda_r of the log-det window (PROOF-TARGET) -> PRIM-PHYSICAL-MAGNITUDE-MAP.
 
 ### D0-PHYSICAL-COMPARISON-REPRESENTATION-REDUCTION-001
 
@@ -7862,6 +8174,32 @@ D0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPr
 - assumptions: `none`
 - scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
 - notes: Higher curvature trace powers are bounded by the conformal density floor estimate.
+
+### D0-SCENE-HEAT-KERNEL-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `spectral_action`
+- book: `BOOK_07`
+- module: `D0.Synthesis.SceneHeatKernel`
+- theorem: `projector_partition;zoneHeat_from_diag;total_heat_is_P0;zetaL_values`
+- cert: `none`
+- assumptions: `none`
+- scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Projector partition of identity; zoneHeat closed forms; zetaL with values zeta(0)=32, zeta(-1)=718, zeta(-2)=16426, zeta(1)=239/165. First closed-form heat/zeta layer at the scene. Consumer: D0-SCENE-SPECTRAL-ACTION-001 (a0/a2 values).
+
+### D0-SCENE-SPECTRAL-ACTION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `spectral_action`
+- book: `BOOK_07`
+- module: `D0.Synthesis.SceneSpectralAction`
+- theorem: `a0_at_scene;a2_at_scene;eh_proxy_is_edge_count`
+- cert: `none`
+- assumptions: `none`
+- scope: Finite spectral-action or heat-trace statement; no continuum Einstein-Hilbert promotion by default.
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] First scene instantiation of the generic spectral action ladder: a0 = 718 = 2E = zetaL(-1); a2 = 16426 = zetaL(-2) = 15708 + 2*359; discrete EH action proxy = 359 = |E| -- the same owned object the alpha_top numerator consumes (D0-EDGE-ALPHA-001). Mechanism: off-diagonal -1 squares are edge indicators. Shared-object bridge gravity<->alpha; NO identification beyond the shared object is claimed.
 
 ### D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001
 

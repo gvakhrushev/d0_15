@@ -1191,6 +1191,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-CASCADE-FLOOR-ORIENTATION-PARITY-001",
+      "cluster": "BOOK_01 \u00a701.6.1c cascade floor: orientation parity (+2 step)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-CASCADE-FLOOR-SCALE-RATIO-001",
       "cluster": "BOOK_01 \u00a701.6.1c / 01.21.1",
       "cluster_size": 1,
@@ -1214,7 +1228,7 @@
       "pillar": 0,
       "resolution": "section",
       "status": "PROOF-TARGET",
-      "support": 0,
+      "support": 1,
       "support_source": "proxy",
       "where": ""
     },
@@ -2171,6 +2185,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-DARK-EOS-DISCRETE-SET-001",
+      "cluster": "BOOK_08 \u00a708.51 dark EOS discrete set (cosmology)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE_BRIDGE_SPLIT",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-DARK-RATIO-TRANSFER-OWNER-001",
       "cluster": "BOOK_08 \u00a708.cosmo",
       "cluster_size": 7,
@@ -2535,6 +2563,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-EQUIVARIANT-HYPERCHARGE-CARRIER-001",
+      "cluster": "BOOK_04 \u00a704.11 equivariant hypercharge carrier audit",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-EQUIVARIANT-M1-001",
       "cluster": "BOOK_01/05 \u00a701.8.1 / 05.6",
       "cluster_size": 1,
@@ -2544,6 +2586,34 @@
       "pillar": 0,
       "resolution": "claim",
       "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-EQUIVARIANT-MATRIX-STRUCTURE-001",
+      "cluster": "BOOK_02 \u00a702.18 equivariant operator normal form",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-EQUIVARIANT-SEAM-NOGO-001",
+      "cluster": "BOOK_02 \u00a702.13.h equivariant seam obstruction",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
       "support": 2,
       "support_source": "proxy",
       "where": ""
@@ -3165,6 +3235,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-GENERIC-SCENE-CALCULUS-001",
+      "cluster": "BOOK_02 \u00a702.34 generic scene calculus",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-GEOM-HEAT-TRACE-A2-DECOMP-001",
       "cluster": "BOOK_08 \u00a7A2 exact trace square decomposition with factor 1/2",
       "cluster_size": 1,
@@ -3622,6 +3706,20 @@
       "pillar": 0,
       "resolution": "claim",
       "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-HODGE-THREE-LEVEL-SPECTRUM-001",
+      "cluster": "BOOK_01/02 \u00a701.8.1 / 02.34 three-level Hodge spectrum",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
       "support": 2,
       "support_source": "proxy",
       "where": ""
@@ -4267,6 +4365,20 @@
       "resolution": "section",
       "status": "CORE-FORMALIZED",
       "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-LEFSCHETZ-ZONE-EXCLUSION-001",
+      "cluster": "BOOK_01 \u00a701.toral Lefschetz zone-address exclusion",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
       "support_source": "proxy",
       "where": ""
     },
@@ -5203,7 +5315,7 @@
       "load": 0,
       "pillar": 0,
       "resolution": "claim",
-      "status": "PROOF-TARGET",
+      "status": "CORE-FORMALIZED",
       "support": 3,
       "support_source": "proxy",
       "where": ""
@@ -5263,6 +5375,20 @@
       "support": 2,
       "support_source": "proxy",
       "where": "BOOK_07 \u00a707.50"
+    },
+    {
+      "claim_id": "D0-PARTITION-ALGEBRA-001",
+      "cluster": "BOOK_01 \u00a7invariant-ring minimal observable algebra: partition-algebra leg",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "LEAF",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 1,
+      "support_source": "proxy",
+      "where": ""
     },
     {
       "claim_id": "D0-PASSPORT-CORE13-001",
@@ -6763,6 +6889,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-SCENE-DARK-ARCHIVE-STRUCTURE-001",
+      "cluster": "BOOK_04 \u00a704.11 scene archive spectral structure",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-SCENE-DEGREE-INVARIANT-ALGEBRA-001",
       "cluster": "BOOK_01/04 \u00a701.8.1 / 04.4",
       "cluster_size": 1,
@@ -6791,6 +6931,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-SCENE-HEAT-KERNEL-001",
+      "cluster": "BOOK_07 \u00a707.heat scene closed forms",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
       "cluster": "BOOK_06 \u00a706.H",
       "cluster_size": 1,
@@ -6800,6 +6954,20 @@
       "pillar": 4,
       "resolution": "claim",
       "status": "NO-GO",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SCENE-JOINT-COMMUTANT-SIX-001",
+      "cluster": "BOOK_02 \u00a702.18 joint commutant under scene dynamics",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
       "support": 2,
       "support_source": "proxy",
       "where": ""
@@ -6847,6 +7015,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-SCENE-SPECTRAL-ACTION-001",
+      "cluster": "BOOK_07 \u00a7finite spectral action at the scene (a0/a2 ladder instantiation)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-SCENE-STEP-PARITY-001",
       "cluster": "BOOK_01 \u00a7scene step parity from det T",
       "cluster_size": 1,
@@ -6870,6 +7052,20 @@
       "pillar": 12,
       "resolution": "section",
       "status": "NO-GO",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SCENE-TRACE-HEAT-CAPACITY-001",
+      "cluster": "BOOK_07 \u00a707.51 trace-heat capacity at the scene",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
       "support": 2,
       "support_source": "proxy",
       "where": ""
@@ -6913,6 +7109,20 @@
       "resolution": "claim",
       "status": "CERT-CLOSED",
       "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SEAM-CROSSING-WEIGHT-001",
+      "cluster": "BOOK_02 \u00a702.13.h seam crossing weight (conditional forcing)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
       "support_source": "proxy",
       "where": ""
     },
@@ -7237,6 +7447,34 @@
       "support": 1,
       "support_source": "proxy",
       "where": "BOOK_06 \u00a706.6"
+    },
+    {
+      "claim_id": "D0-SUBCRITICAL-TRACE-CLASS-001",
+      "cluster": "BOOK_02 \u00a7golden-subcritical extremality a<=2: trace-class leg",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SYMMETRIC-FUNCTION-ACTIVE-SPECTRUM-001",
+      "cluster": "BOOK_02 \u00a702.18 symmetric-function calculus of the active spectrum",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
     },
     {
       "claim_id": "D0-SYMPLECTIC-GLEASON-001",
@@ -7599,6 +7837,76 @@
       "resolution": "claim",
       "status": "CORE-FORMALIZED",
       "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TRANSPORT-CLOSED-FORM-001",
+      "cluster": "BOOK_02 \u00a702.34 transport closed form",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TRANSPORT-FIELD-NO-GOLDEN-001",
+      "cluster": "BOOK_02 \u00a702.13.h transport root field: no quadratic elements",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TRANSPORT-FORK-ENDGAME-001",
+      "cluster": "BOOK_02 \u00a702.13.h obligation (i): transport fork endgame",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TRANSPORT-NOT-GOLDEN-001",
+      "cluster": "BOOK_02 \u00a702.13.h transport/golden field boundary",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TRANSPORT-SPECTRUM-BLINDNESS-NOGO-001",
+      "cluster": "BOOK_02 \u00a702.34 transport spectrum blindness",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 2,
       "support_source": "proxy",
       "where": ""
     },
@@ -8317,6 +8625,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-YUKAWA-COMMUTANT-SPECTRUM-001",
+      "cluster": "BOOK_04 \u00a704.11 Yukawa commutant spectrum (resolution-2)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
       "cluster": "BOOK_04 \u00a704.10",
       "cluster_size": 5,
@@ -8345,8 +8667,50 @@
       "where": ""
     },
     {
+      "claim_id": "D0-ZONE-CONNECTIVITY-001",
+      "cluster": "BOOK_04 \u00a704.R1 bridge: zone orbits of the swap generators",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "LEAF",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-ZONE-COUNT-MULTIPLICATIVE-001",
+      "cluster": "BOOK_01 \u00a701.14 zone count from the multiplicative pair",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-ZONE-CURRENT-001",
       "cluster": "BOOK_04 \u00a7v15 zone current",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-ZONE-IS-GENERATION-001",
+      "cluster": "BOOK_04 \u00a704.11 zone = generation decomposition",
       "cluster_size": 1,
       "fragility": 0.0,
       "kind": "SUPPORTED",
@@ -8389,8 +8753,8 @@
   ],
   "summary": {
     "FRAGILE-JOINT": 61,
-    "LEAF": 154,
+    "LEAF": 156,
     "PILLAR": 157,
-    "SUPPORTED": 227
+    "SUPPORTED": 251
   }
 }
