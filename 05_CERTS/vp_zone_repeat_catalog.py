@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""D0-TOWER-STOP-NOEXT-001 (T1, CASE 2) — a repeated zone-type needs a catalog => bot M1.
+"""D0-TOWER-STOP-NOEXT-001 (T1, CASE 2) — arithmetic companion to the Lean repeat no-go.
 
-Half of the no-extension no-go (BOOK_05 §05.6 obligation 5), with NO gap. Suppose a fourth zone
-Z4 REPEATS an existing structural type (shell-for-shell, memory-for-memory, ...). Then there are
->= 2 indistinguishable copies of that type, and selecting "which copy" requires an index = an
-external catalogue of copies -- forbidden by M1. This is the SAME argument that forces Q8 via
-Dedekind (conjugate copies need a catalogue, BOOK_01 §01.7.1A), transferred to zones.
+This script checks only the finite permutation cardinalities. The substantive step is now
+machine-checked in `D0.Tower.NoExtensionBoundary`: a constraint invariant under every relabelling
+of indistinguishable copies cannot `M1Forced`-select a unique copy. Forcing one necessarily breaks
+the symmetry by importing label data.
 
 WHAT IS PROVED (exact, able to FAIL):
   * n >= 2 identical copies of a type carry a nontrivial copy-permutation symmetry S_n
@@ -14,9 +13,8 @@ WHAT IS PROVED (exact, able to FAIL):
     no catalogue needed. So the no-go bites EXACTLY on repeats (n >= 2), not on first instances.
   * Therefore a repeat-type Z4 forces a copy-catalogue => bot M1 (DEF-0.2.2). CASE 2 closed.
 
-HONESTY BOUNDARY (printed): this is the hard half with no residual gap -- it reuses the
-already-accepted Dedekind/Q8 copy-catalogue logic. The remaining (CASE 1, new-type) half is the
-member<->zone bijection (vp_member_zone_isomorphism.py).
+HONESTY BOUNDARY: CASE 2 is closed by the Lean invariance theorem, not by `|S_2|>1` alone.
+CASE 1 remains open; `vp_member_zone_isomorphism.py` is now a stress test, not a closure cert.
 """
 from __future__ import annotations
 
@@ -54,7 +52,7 @@ def main() -> int:
     assert num_perms(2) == num_perms(2), "the argument is structurally identical to the Q8 case"
     print("PASS_DEDEKIND_Q8_PARALLEL  same copy-catalogue forcing as Omega8~=Q8 (§01.7.1A)")
 
-    print("HONEST_CASE_2_CLOSED_NO_GAP_REPEAT_TYPE_FORCES_CATALOGUE")
+    print("HONEST_CASE_2_CLOSED_BY_LEAN_RELABEL_INVARIANCE_THEOREM")
     print("PASS_ZONE_REPEAT_CATALOG")
     return 0
 

@@ -587,6 +587,15 @@ the largest such constant — and this resistance holds at *every* finite trunca
 
 The two THE derivations meet: the MDL-optimal irrational (Route B) is exactly the fixed point of the depth-1 self-return audit (Route A). The same `\varphi` underwrites the phase generator used later (Hurwitz extremality reappears in §01.21), but here it is forced *from M1 directly*, not assumed for the phase.
 
+**[Route-audit correction, 2026-07 — the independence claimed above did not hold, and has been repaired.]** As stated, Routes A and B are *not* independent, for two reasons found by the route audit and both checkable. First, the sentence immediately above concedes the collapse: Route B's object "is exactly the fixed point of" Route A's audit — `[1;1,1,1,\dots]` is by definition the fixed point of `x = 1 + 1/x`, which is `x^2 - x - 1 = 0` multiplied through by `x`. Second, and decisively, the *formal* owner made the dependency literal: `D0.NumberTheory.HurwitzMinimaxPhi` quantifies over `D0PhaseGeneratorAdmissible \alpha := \exists x, D0ResponseRoot x \wedge \alpha = x^2` with `D0ResponseRoot x := 0 < x \wedge x + x^2 = 1` — it maximises *inside Route A's own equation family*, so the "second route" imported the first route's conclusion as a hypothesis. Two further facts sharpen this: Hurwitz extremality selects the whole `GL(2,\mathbb Z)` **noble class**, not a number (`\varphi`, `1/\varphi`, `2+\varphi`, `(\varphi+1)/(\varphi+2)` all attain `1/\sqrt5`), and for a quadratic irrational `\liminf q^2|\alpha - p/q| = 1/\sqrt{\mathrm{disc}}`, so the extremality carries no information beyond the minimal polynomial.
+
+**The repaired pair.** Two routes now reach `\varphi` with the golden quadratic as the *output* rather than a hypothesis, and they share no load-bearing premise:
+
+- **Hurwitz + `M1^+` canonization** (`D0-PHI-HURWITZ-CLASS-CANONIZATION-001`). Hurwitz, over *all* reals, selects the noble class; `M1^+` then selects its representative by minimal description. Within the period-one continued fractions `[n;n,n,\dots]` — roots of `x^2 - n x - 1`, discriminant `n^2+4` — minimal description selects `n = 1` uniquely, giving discriminant `5` and `(1+\sqrt5)/2`. At `n = 1` the equation `x^2 - x - 1 = 0` is the conclusion. Negative control: `n = 2` gives discriminant `8` and `1+\sqrt2`, so the canonization step can fail.
+- **Jones slot selection** (`D0-JONES-SLOT-SELECTOR-001`). Jones (1983) forces the subfactor index below `4` into `\{4\cos^2(\pi/n)\}`; finite depth gives `index < 4`; the owned M1 rational-capture clause (§01.21.1) gives irrationality; and by Niven the slots at `n = 3,4,6` are the rationals `1,2,3`, so the least irrational slot is `n = 5`, with value `(3+\sqrt5)/2 = \varphi^2`. Again `\varphi` is the output.
+
+The rigidity argument of §01.14 ("four unrelated failures at once") must be read on this repaired pair, not on four faces of one equation. Full verdict and evidence: `03_THEORY_MAP/D0_FORCING_ROUTES.json`.
+
 ### 01.6.1b Gleason-2D loophole and the Fibonacci fusion route [^b01-28]
 
 There is a third, categorical, forcing of the same equation, and it closes a known loophole.
@@ -626,7 +635,20 @@ At the seed of this chain, `p^2+p=1` is to be read at its deepest: **not** a bal
 - **`\delta_0`** = displacement of the cut;
 - **symmetry** = the Galois group of the equation.
 
-Status: PROOF-TARGET for the full cascade as a single theorem (the individual links — dyad, `\varphi` closure, torus, `K(9,11,13)` rank 3 / nullity 30 — are each established and cert-backed elsewhere in this book; the unifying "each floor forced by the previous" statement is the open obligation). Engine: `\varphi`-recursion. Transmission: `Q_8`. Body: the 9-11-13 shell tower. Dark memory: the kernel of the adjacency operator.
+Status: PROOF-TARGET for the full cascade as a single theorem (`D0-CASCADE-INSUFFICIENCY-CHAIN-001`) — the individual links — dyad, `\varphi` closure, torus, `K(9,11,13)` rank 3 / nullity 30 — are each established and cert-backed elsewhere in this book; the unifying "each floor forced by the previous" statement is the open obligation. Engine: `\varphi`-recursion. Transmission: `Q_8`. Body: the 9-11-13 shell tower. Dark memory: the kernel of the adjacency operator.
+
+**Formalization shape of `D0-CASCADE-INSUFFICIENCY-CHAIN-001`.** The content of the cascade is in the *insufficiency*, not in the construction: each floor exists because the one below it **provably fails** a named distinguishability obligation. So the chain is formalized floor by floor as an object `Floor n`, a named `Obligation n`, the load-bearing lemma `insufficient n : ¬ Obligation n (Floor n)`, a minimality lemma selecting `Floor (n+1)` as the `≤`-minimal repair, and — decisively — a `control n` exhibiting a structure in which `Obligation n` *is* satisfiable. Without that control the insufficiency lemma could be vacuous, and a vacuous floor forces nothing; this is the `check_cert_can_fail` discipline applied to the spine rather than to a certificate. The composition of the floors is then mechanical, and it is that composition — not any single link — that answers the standing external objection that the root of the corpus is verbal.
+
+**Four floors are carried, machine-checked** (`D0-CASCADE-CHAIN-SCAFFOLD-001`, Lean `D0.Foundation.CascadeChain`):
+
+| step | obligation | fails on | repaired by | owner |
+|---|---|---|---|---|
+| 2→3 | verifiability — the acceptor must be able to fail | a monopoly acceptor, *provably constant* | the dyad: direct vs return | `D0-CASCADE-FLOOR-COMPARISON-001` |
+| 4→5 | operation memory — the state determines its history | one `ℤ` register | two registers | `D0-CASCADE-FLOOR-ONE-LOOP-001` |
+| 5→6 | order memory — the record distinguishes `ab` from `ba` | `π₁(T²) = ℤ×ℤ`, abelian | `S₃`, and `Q₈` | `D0-CASCADE-FLOOR-ORDER-MEMORY-001` |
+| 6→7 | non-capture — no finite stage matches the scale ratio | any rational ratio | an irrational one | `D0-CASCADE-FLOOR-SCALE-RATIO-001` |
+
+Two structural theorems come with them. **The chain is linked**: the two-register carrier that repairs floor 4→5 *is* `ℤ × ℤ`, and `ℤ × ℤ` is abelian — so the very object that fixed the previous floor is precisely what the next floor rejects. The unfolding cannot terminate at its own repair, and that is "each floor forced by the insufficiency of the previous" in checkable form. **And the chain has a proved lower bound**: since the operation-memory repair fails order memory, one structural addition cannot discharge both, so the cascade past the register model is at least two steps long. That is the lower-bound half of "three insufficiencies = three zones"; the *exact* count needs the floors still open (defect⇒closure⇒shell) and is deliberately **not** claimed. Note also that floor 6→7 reaches *irrational*, **not** `\varphi`: `\sqrt5` is exhibited as a second survivor, and the narrowing to `\varphi` is the separately owned canonization step (`D0-PHI-HURWITZ-CLASS-CANONIZATION-001`). Crediting a floor with a conclusion its premises do not reach is precisely the error the route audit found elsewhere in the corpus, so the two steps are kept apart by construction.
 
 ### 01.6.2 Recursive distinguishability and the detector ladder
 
@@ -929,6 +951,322 @@ d_9=24,\qquad d_{11}=22,\qquad d_{13}=20.
 
 Book 01 stops at construction of the finite incidence graph. The action, boundary, matter, gravity and cosmology books may use this scene, but they may not refit it.
 
+### 01.8.1 Homology reads the quotient scene, not a preferred label
+
+There are now two non-circular reverse readings of the already-constructed
+scene.  The first fixes an ordered representative of the canonical
+complete-tripartite class,
+
+\[
+K(p+1,q+1,r+1),\qquad p\le q\le r.
+\]
+
+The pair of intrinsic coordinates
+
+\[
+|V|=33,\qquad
+\beta_2=\dim_{\mathbb Q}\ker\partial_2=960
+\]
+
+has exactly one preimage:
+
+\[
+(p,q,r)=(8,10,12),
+\qquad
+(|V_1|,|V_2|,|V_3|)=(9,11,13).
+\]
+
+The second coordinate is the Betti number of the actual generic boundary
+matrix, not an inserted arithmetic proxy: the constructive homology theorem
+proves \(\beta_2=pqr\).  The resulting predicate is therefore genuinely
+`M1Forced` in this candidate class
+(`D0-M1-HOMOLOGICAL-SCENE-READING-001`, Lean
+`D0.Synthesis.M1HomologicalSceneReading.homological_scene_m1_forced`).
+Both observations are load-bearing.  The vertex count alone also admits
+\((7,10,13)\), while \(\beta_2=960\) alone also admits \((8,8,15)\).
+
+The stronger form removes the order from the conclusion and removes the
+separately supplied vertex coordinate.  Use the spectrum of the one actual
+operator
+
+\[
+\Delta_2=\partial_2^{\mathsf T}\partial_2
+\]
+
+on top chains, and write
+
+\[
+D=\dim C_2,\qquad
+H=\dim\ker\Delta_2,\qquad
+M_2=\sum_{\lambda\in\operatorname{spec}(\Delta_2)}
+       \operatorname{mult}(\lambda)\lambda^2 .
+\]
+
+The proved complete tensor eigenbasis gives, for zone sizes
+\(a=p+1,b=q+1,c=r+1\),
+
+\[
+D=abc,\qquad
+H=(a-1)(b-1)(c-1),\qquad
+M_2=D(a+b+c+6).
+\]
+
+Consequently the spectrum recovers all three elementary scene counts:
+
+\[
+T=D,\qquad
+V={M_2\over D}-6,\qquad
+E=T+V-1-H.
+\]
+
+Equivalently, it recovers the root multiset of
+
+\[
+x^3-Vx^2+Ex-T.
+\]
+
+For the source spectrum
+
+\[
+(D,H,M_2)=(1287,960,50193)
+\]
+
+this gives
+
+\[
+(V,E,T)=(33,359,1287),\qquad
+x^3-33x^2+359x-1287=(x-9)(x-11)(x-13),
+\]
+
+and Lean proves directly that every canonical tripartite preimage has the
+unordered zone multiset
+
+\[
+\{a,b,c\}=\{9,11,13\}.
+\]
+
+No ordering hypothesis and no numerical search bound occurs in this
+statement
+(`D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001`, Lean
+`D0.Synthesis.TopHodgeSpectralSceneReconstruction.reconstruct_scene_unordered_from_topHodge_spectral_data`).
+The inverse statement is now generic, not only a classification of the source
+numbers.  For any two positive complete-tripartite scenes, equality of their
+actual triples \((D,H,M_2)\) forces equality of the unordered multisets of zone
+sizes.  Lean constructs the common monic Vieta polynomial and identifies its
+actual root multiset with the three sizes, so no distinctness, ordering or
+finite search is hidden in the proof
+(`D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`).  Permuting the zones proves
+that their displayed order is unrecoverable, while separate positive
+counterexamples show that deleting any one of \(D,H,M_2\) destroys the
+generic conclusion.
+The harmonic coordinate is genuinely necessary:
+\(K(2,6,6)\) and \(K(3,3,8)\) have the same \(D=72\) and
+\(M_2=1440\), but \(H=25\) and \(H=28\), respectively.
+
+The same spectral triple also determines the normalized dynamics on the
+three quotient cells.  For a positive complete-tripartite scene write
+
+\[
+V=a+b+c,\qquad E=ab+ac+bc,\qquad T=abc
+\]
+
+and let \(L=I-M\), where \(M\) is the row-normalized equitable quotient.
+Direct computation of the actual \(3\times3\) determinant gives the generic
+identity
+
+\[
+\det(xI-L)
+  =x\left(x^2-3x+\frac{2VE}{VE-T}\right),
+\qquad
+VE-T=(a+b)(a+c)(b+c)>0.
+\]
+
+Since the top-Hodge data recover \(V,E,T\), they therefore recover the whole
+active characteristic polynomial, not just the scene cardinalities.  For
+\((D,H,M_2)=(1287,960,50193)\) the active product is
+
+\[
+\frac{2VE}{VE-T}=\frac{359}{160},
+\]
+
+so the active factor is exactly
+
+\[
+x^2-3x+\frac{359}{160},
+\]
+
+the characteristic polynomial of the owned two-mode \(S_{DE}\) transfer
+(`D0-TOP-HODGE-NORMALIZED-QUOTIENT-SPECTRUM-001`).  This implication is
+operator-level: Lean proves the determinant of the generic normalized
+quotient and then composes it with the actual top-Hodge reconstruction.
+The previous control pair remains destructive at this stronger level:
+\(K(2,6,6)\) and \(K(3,3,8)\) have active products \(35/16\) and \(266/121\).
+Thus omitting \(H\) changes the dynamics even when \(D\) and \(M_2\) agree.
+
+There is a deeper cross-dimensional product law.  Put
+
+\[
+d_a=b+c,\qquad d_b=a+c,\qquad d_c=a+b,\qquad
+S=ad_a+bd_b+cd_c=2E
+\]
+
+and let \(\delta\) be the second characteristic coefficient of \(L\), hence
+the product of its two nonzero eigenvalues.  The complete top-Hodge
+eigenbasis splits its positive pseudodeterminant into a low factor and
+
+\[
+K_{\rm high}
+  =(a+b+c)d_a^{a-1}d_b^{b-1}d_c^{c-1}.
+\]
+
+Lean proves the exact restoration identity
+
+\[
+K_{\rm high}
+ =\delta\,\frac{d_a^a d_b^b d_c^c}{S},
+\]
+
+and consequently
+
+\[
+\operatorname{pdet}^{+}(\Delta_2)
+ =K_{\rm low}\,
+   \delta\,\frac{d_a^a d_b^b d_c^c}{S}
+\]
+
+from the actual complete eigenbasis
+(`D0-TOP-HODGE-KIRCHHOFF-STATIONARY-BRIDGE-001`).  Thus the upper-Hodge
+spectral volume and the normalized active relaxation are two normalizations
+of one finite invariant; the stationary mass and literal degree volume carry
+the scale discarded by \(M\).  The control \(K(1,1,1)\) versus \(K(2,2,2)\)
+keeps the same \(\delta=9/4\) but changes \(K_{\rm high}\) from \(3\) to
+\(384\), proving those restoration factors necessary.
+
+The operator half of the classical Matrix-Tree reading is now internal.
+Starting from the actual `SimpleGraph` \(K(a,b,c)\), Lean forms its literal
+graph Laplacian, deletes one vertex, and proves
+
+\[
+\det\widehat L_{K(a,b,c)}
+  =(a+b+c)d_a^{a-1}d_b^{b-1}d_c^{c-1}
+  =K_{\rm high}
+\]
+
+by a diagonal-plus-rank-three factorization and a \(3\times3\) determinant
+compression
+(`D0-COMPLETE-TRIPARTITE-LAPLACIAN-COFACTOR-BRIDGE-001`).  What remains is
+now exactly combinatorial: the current Lean dependency graph still contains
+no theorem equating this cofactor with the cardinality of spanning trees.
+Thus the cofactor identity is formalized, while the spanning-tree count is
+not promoted.
+
+The same theorem package fixes the exact boundary of this self-reading.  The
+local gauge group \(S_9\times S_{11}\times S_{13}\) moves every typed vertex.
+Consequently every forcing predicate invariant under within-zone relabeling
+fails to M1-force an individual vertex
+(`no_invariant_m1_forced_scene_vertex`).  In general, a unique forced answer
+under an invariant predicate must be fixed by every allowed symmetry
+(`D0-EQUIVARIANT-M1-001`, Lean
+`D0.Foundation.EquivariantM1.m1_forced_is_fixed_under_symmetry`).
+
+Thus the scene can read its orbit data — the three zone cardinalities — without
+reading a preferred name inside any orbit.  This is the positive quotient face
+of the canonical-selector no-go, not a way around it.  Ordering is load-bearing
+only for choosing the displayed representative \((9,11,13)\); it is not
+load-bearing for the quotient theorem.  Scope remains the canonical positive
+complete-tripartite class.  The spectral theorem does not classify arbitrary
+finite complexes, and it does not claim that M1 alone generates the numerical
+spectrum \((1287,960,50193)\).
+
+The quotient statement is stronger than a count of three orbits.  On the
+frozen scene, let \(\mathrm{Aut}(K)\) mean the full graph-automorphism group,
+not a hand-selected generator list.  A machine-checked interpolation theorem
+now gives
+
+\[
+\bigl(\mathbb Q^V\bigr)^{\mathrm{Aut}(K)}
+  =\mathbb Q[\deg]
+  =\operatorname{span}_{\mathbb Q}\{1,\deg,\deg^2\}.
+\]
+
+Equivalently, every rational intrinsic vertex observable has one and only one
+representation
+
+\[
+f(v)=a+b\,\deg(v)+c\,\deg(v)^2.
+\]
+
+The coefficients are recovered by Lagrange interpolation at the three actual
+degree values \(20,22,24\)
+(`D0-SCENE-DEGREE-INVARIANT-ALGEBRA-001`, Lean
+`D0.Foundation.InvariantAlgebraDegree.degree_generates_full_invariant_algebra`).
+A two-degree negative control produces two distinct quadratics defining the
+same function, so the third orbit is essential to uniqueness.
+
+This closes the previously evidence-grade “every invariant scalar is a class
+function” leg for rational vertex observables on the fixed graph.  It still
+does not derive the graph, privilege degree before the graph is constructed,
+or select physical names for the three polynomial idempotents.
+
+The quotient itself is now reconstructed with the same intrinsic discipline.
+The three Lagrange projectors of the literal \(33\times33\) degree operator
+recover the degree fibres and their masses \(9,11,13\).  Their diagonal
+indicator \(C:\mathbb Q^3\to\mathbb Q^{33}\) and orbit-average restriction
+\(R:\mathbb Q^{33}\to\mathbb Q^3\) choose no representative vertex and obey
+
+\[
+RC=I_3,\qquad CR=P_{\rm Reynolds}.
+\]
+
+Compression by \(R(-)C\) recovers the already-owned quotient adjacency,
+degree, random walk and normalized Laplacian.  At full-scene level,
+
+\[
+L_{\rm full}=(I-CR)+C\,L_{\rm quot}\,R,
+\]
+
+and \(I-CR\) is an exact two-sided eigenvalue-one block
+(`D0-INTRINSIC-QUOTIENT-RECONSTRUCTION-001`).  Combining this with the
+stationary/active quotient split gives three pairwise-annihilating projectors
+of traces \(30,1,2\) and the exact operator factorization
+
+\[
+\mathbb Q^{33}=A_{30}\oplus S_1\oplus D_2,\qquad
+L_{\rm full}\simeq I_{30}\oplus 0\oplus T_{S_{DE}}.
+\]
+
+Here the active embedding and retraction are explicit and the top-Hodge data
+force the active coefficient \(359/160\)
+(`D0-AUTOMORPHISM-HODGE-SDE-DECOMPOSITION-001`).  The three summands and the
+active similarity class are canonical; a basis on the active plane and
+physical names for the degree fibres are not.
+
+There is also a sharp orientation boundary.  Within-zone relabelings act on
+the actual integral top-homology lattice
+
+\[
+H_2\!\left(K(9,11,13);\mathbb Z\right)\cong\mathbb Z^{960}
+\]
+
+by pullback of 2-chains.  In the explicit octahedral basis the action matrix is
+the triple Kronecker product of the three augmentation-zero permutation
+actions.  Its determinant is
+
+\[
+\det(A)^{10\cdot12}\,
+\det(B)^{8\cdot12}\,
+\det(C)^{8\cdot10}=+1
+\]
+
+for every \((A,B,C)\in S_9\times S_{11}\times S_{13}\): each reduced integral
+determinant is \(\pm1\), while all three exponents are even
+(`D0-SCENE-TOP-HOMOLOGY-ORIENTATION-TRIVIAL-001`, Lean
+`D0.Topology.SceneTopHomologyOrientation.scene_topHomologyAction_det_one`).
+The determinant line of \(H_2\) is therefore trivial; it cannot be a hidden
+source of the D0 orientation bit.  This is not true for every tripartite
+complex: the formal negative control \(K(2,2,2)\) has a one-zone swap acting
+with determinant \(-1\).  The no-go is specific to the parity of
+\((8,10,12)\), not an artefact of the construction.
 ## 01.9 Internal causality and the single line/tick section
 
 The internal metrological section is defined before SI calibration:
@@ -1127,13 +1465,26 @@ The two cuts above are not only a rigidity device; they are the **root of the sp
 
 ### Degree-2 from the detection act (the type-theoretic 2nd channel) [^b01-35]
 
-The quadratic recursion \(C(x)=x^2-x-1\) at the head of this section also has a **type-theoretic** origin — a fifth independent route to \(p^2+p=1\) (claim `D0-DETECTION-QUADRATIC-001`, CORE), and the one that reads the *degree* off the act of detection. A detection has exactly two comparison kinds: by **membership** (\(\in\)) — levels "existence-class" vs "event-in-class" are different categories (Russell hierarchy), so they compare *linearly*, against a reference of belonging (degree 1, the term \(p\)); and by **value** — two events inside the *same* class cannot be separated by membership (each belongs), only by their mutual value, a bilinear form = area (degree 2, the term \(p^2\)). Unity is exhausted by the direct and the mutual contribution, \(p+p^2=1\), root \(p=1/\varphi\). The degree is *exactly* 2 because there are *exactly two* comparison kinds: a would-be third is a degree-3 term \(p^3=2p-1\), which reduces into \(\mathrm{span}\{1,p\}\) (runtime iteration, BOOK_01:556) and is therefore not an independent slot. So the tower closes on three levels by **exhaustion of comparison kinds**, not by enumeration — an independent reading of the same no-go that stops the zone tower at three (`D0-TOWER-STOP-NOEXT-001`, §05.6 obligation 5). Lean `D0.Tower.DetectionQuadratic` (`detection_quadratic`) reuses the CORE tower-stop algebra (`degree2_closure`, `p_cubed_reduces`) and adds `|{membership, value}| = 2`; cert `vp_detection_quadratic_types.py` (can-FAIL). **Honest boundary:** the decidable algebra is the CORE tower-stop content; the categorical "two kinds exhaust degree-2" is the *forcing reading* (DEF-0.2.2 style), an independent channel that **strengthens** obligation 5 — it is not a separate machine-checked categorical theorem and does not replace the no-go.
+The quadratic recursion \(C(x)=x^2-x-1\) at the head of this section has a proposed **type-theoretic** reading (`D0-DETECTION-QUADRATIC-001`, `PROOF-TARGET`): membership and value are the two named comparison kinds. Lean verifies the algebra \(p+p^2=1\), the reduction \(p^3=2p-1\), and the cardinality of the explicitly declared inductive type `{membership, value}`. It does **not** prove that these constructors exhaust every admissible comparison kind. The 2026-07-29 stress test `D0.Tower.NoExtensionBoundary` also kills the former algebraic shortcut: because \(0<p=\varphi^{-1}<1\), the power ladder \(n\mapsto p^n\) is strictly decreasing and injective, so \(1,p,p^2,p^3\) are four distinct values even though \(p^3\in\mathrm{span}\{1,p\}\). Linear dependence is not repetition.
+
+The conclusion-free capability grammar is now formalized by `D0.Foundation.AdmissibleComparisonGrammar` (`D0-ADMISSIBLE-COMPARISON-GRAMMAR-BOUNDARY-001`, `NO-GO`). A raw comparison says independently whether it uses membership/category data and whether it uses value data; no desired count is built into its type. Operationality removes only the empty comparison and leaves **three** forms: membership-only, value-only, and a hybrid using both. The hybrid is not a third primitive kind: the module defines a comparison as **primitive** when it is operational and cannot be assembled as the join of two strictly smaller operational comparisons, proves `Primitive ↔ Atomic`, and derives that the primitive subgrammar has exactly two elements, equivalent to the existing `ComparisonKind`. The hybrid is proved decomposable as the canonical join of membership-only and value-only. Thus the finite capability-lattice exhaustion is now closed without constructor-count circularity. Honest residual: the module does not prove that every physical/M1-admissible comparison is represented by this two-capability raw grammar. That representation theorem, preserving primitive/decomposable structure, is the remaining upper-bound owner. Until it exists, `D0-TOWER-STOP-NOEXT-001` / `D0-P-DEGREE2-EXHAUSTION-001` remain `OPEN/PROOF-TARGET`.
+
+That representation residual is now itself typed by `D0.Foundation.PhysicalComparisonRepresentation` (`D0-PHYSICAL-COMPARISON-REPRESENTATION-REDUCTION-001`, `PROOF-TARGET`). A physical system supplies its own admissibility, operationality, subcomparison and composition laws plus a capability map into the raw grammar. The contract requires operational/subcomparison preservation and reflection, composition compatibility, injectivity on admissible comparisons, and realization of every proper operational raw subcomparison below an admissible image. From exactly these fields Lean proves physical decomposability iff raw decomposability, physical primitiveness iff raw primitiveness, an injection of physical primitives into the existing two-element `ComparisonKind`, and therefore a finite upper bound of two; if both raw primitive atoms are physically realized, the count is exactly two. Two controls show the load-bearing conditions: duplicate physical names break the bound without injectivity, and a hybrid-only candidate class makes the composite falsely primitive when proper raw components are not realized. The raw grammar represented by itself is a non-vacuous model with exactly two physical primitives. Honest boundary: the reduction theorem does not construct this contract from M1; that construction is now the single named residual rather than an informal request.
+
+Both grammars above still take the *number* of detection capabilities to be two. That last input is now itself made transparent by `D0.Foundation.GeneralComparisonGrammar` (`D0-GENERAL-COMPARISON-CAPABILITY-COUNT-001`, `NO-GO`). A raw comparison over `n` capabilities is a Boolean vector `Fin n → Bool`, with the same conclusion-free notions (operational, subcomparison, join, decomposable, primitive) and no target count anywhere. Lean proves, for **every** `n`, that a comparison is indecomposable iff it inspects exactly one capability, and that the primitive comparisons are in bijection with `Fin n`, so their count is exactly `n`. The boundary instances `n = 0, 1, 3` confirm the count genuinely tracks `n`; the D0 detection grammar is the `n = 2` instance, exposing the `2` as the number of independent detection capabilities rather than a two-constructor artefact. In particular, a forced third detection capability would give three primitive kinds — the exact falsifier the degree-2 exhaustion needs. Honest boundary: this reduces "exactly two comparison kinds" to "exactly two independent detection capabilities (membership and value)"; that the detection act has exactly those two capabilities is the single remaining external input, not proved here.
+
+The remaining input has now been attacked directly, with a negative result. `D0.Foundation.DetectionCapabilityBoundary` (`D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001`, `NO-GO`) constructs a finite observation with three independently variable coordinates — membership, value and history/order — and defines capability use extensionally: a comparison uses a coordinate exactly when changing only that coordinate can change its result. Membership equality, value equality and history equality are all operational and have the exact primitive capability vectors `e₀`, `e₁`, `e₂`. In particular, two observations can have identical current membership/value data while history equality distinguishes them, so no representation using only membership/value capabilities can preserve that comparison. Therefore the present operational/no-catalogue conditions do **not** imply that the detector layer has only two independent capabilities. The exact missing theorem is now sharper: primitive detector comparison must be proved to **factor through current observation data**, placing history/order strictly in the later memory layer. Under that typed factorization the history capability is excluded; without it, the third capability survives and the degree-2 exhaustion cannot close.
+
+The quotient mathematics of that missing theorem is now complete. `D0.Foundation.CurrentDataFactorization` (`D0-CURRENT-DATA-FACTORIZATION-001`, `CORE-FORMALIZED`) treats a full observation abstractly as `Current × History` and proves that a Boolean comparison is invariant under changing either history coordinate **iff** it factors uniquely through a comparison on `Current` alone. The theorem is generic in both types, supplies an explicit descent through any reference history, proves independence of that reference and uniqueness of the descended comparison, and records the empty-history boundary where lift ceases to be injective. On the concrete D0 observation, membership and value comparisons descend, while history comparison is non-invariant and has no current-data factorization. Thus no quotient lemma remains missing: the sole stratification obligation is proving history-invariance for every primitive M1-admissible detector-layer comparison.
+
+A second independent obstruction was exposed after closing the quotient. History-invariance and capability support still do not make the physical comparison-to-capability map injective: equality and inequality on one Boolean current coordinate are distinct, operational, and use exactly the same capability. `D0.Foundation.CurrentDataComparisonCanonicity` (`D0-CURRENT-DATA-COMPARISON-CANONICITY-NOGO-001`, `NO-GO`) proves this same-support underdetermination and its exact two-completion repair. Equality and inequality are pointwise complements; both are operational and coordinate-sensitive, but only equality is reflexive. Inside this equality/complement family, reflexivity uniquely selects equality, while dropping reflexivity leaves both completions. Hence closing the physical two-kind theorem requires **two** typed results, not one: detector-layer history-invariance and a canonicity/polarity theorem strong enough to make capability support injective over the full admissible comparison class.
 
 **Theorem 12.1 — φ-rigidity.**  The φ root is structurally isolated as the unique point where finite detector normalization, quadratic recursion and detector asymmetry coincide.  Perturbing the root separates these three definitions — and simultaneously breaks all four faces of φ (Galois, arithmetic, dynamics, topology) — before any particle or cosmological formula is used. Equivalently, by the φ/M1 duality lemma the perturbation breaks the law M1 itself, not a convention layered on top of it.
 
 **Deep-stitch closure (Iteration 22): Fibonacci uniqueness + Ising exclusion over the degree-2 carrier.** Over the degree-2 carrier `ℚ(φ)/ℚ` (minimal polynomial `x²−x−1`) the toral-time operator has exactly two eigen-branches `φ⁻¹,−φ`, so Fibonacci is the unique admissible nontrivial fusion bottleneck — a finite internal CORE fact, **not** a full unitary-fusion-category classification (Ostrik stays external). The Ising-type carrier has three simple objects `{1,σ,ψ}`; `3>2` forces an extra independent branch label not generated by `p+p²=1`, an external catalog forbidden by M1, so Ising is excluded (closed-negative NO-GO). Owners: `D0-FIBONACCI-ANYON-UNIQUENESS-001` (CERT-CLOSED) and `D0-ISING-ANYON-EXCLUSION-001` (NO-GO), Lean `D0.Geometry.FibonacciAnyonUniqueness`, cert `vp_fibonacci_anyon_uniqueness.py` / `vp_ising_anyon_exclusion.py`.
 
-**[Toral integral conjugacy + Lucas seed].** The D0 toral operator `T=[[0,1],[1,-1]]` is integrally conjugate to `-M_phi` (golden cylinder matrix `M_phi=[[1,1],[1,0]]`) via the unimodular `C=[[0,-1],[1,0]]`: `C T C^-1 = -M_phi` (`D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001`, Lean `D0.Geometry.ToralIntegralConjugacy`) -- an integral matrix conjugacy only (entropy `log phi`; `-M_phi` has a negative entry, so NOT the symbolic SSE). The canonical periodic seed is the primitive period-3 orbit, `#Fix_n=|det(T^n-I)|=1,1,4,5,11`, `#Fix_3-#Fix_1=3` (`D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001`). `q_T=44` is a return modulus, `T^44 != I`.## 01.15 Condensed/profinite formal specification
+**[Toral integral conjugacy + Lucas seed].** The D0 toral operator `T=[[0,1],[1,-1]]` is integrally conjugate to `-M_phi` (golden cylinder matrix `M_phi=[[1,1],[1,0]]`) via the unimodular `C=[[0,-1],[1,0]]`: `C T C^-1 = -M_phi` (`D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001`, Lean `D0.Geometry.ToralIntegralConjugacy`) -- an integral matrix conjugacy only (entropy `log phi`; `-M_phi` has a negative entry, so NOT the symbolic SSE). The canonical periodic seed is the primitive period-3 orbit, `#Fix_n=|det(T^n-I)|=1,1,4,5,11`, `#Fix_3-#Fix_1=3` (`D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001`). `q_T=44` is a return modulus, `T^44 != I`.
+## 01.15 Condensed/profinite formal specification
 
 D0 uses condensed/profinite language as a formal support layer, not as terminology.  Let `Prof` be the category of profinite sets with continuous maps.  The D0 support is a filtered inverse system
 
@@ -1517,7 +1868,7 @@ Leg (i) — "finite is rigorous-only" — is now carried as its **own explicit o
 
 **Resolved (separation).** The question — is `K(9,11,13)` itself a `33D→3D` icosahedral cut-and-project with `A₅` symmetry on its rank-3 image? — is answered **no**, decidably (claim `D0-CARRIER-NOT-ICOSAHEDRAL-001`, Lean `D0.Claims.CarrierNotIcosahedral`, cert `vp_carrier_not_icosahedral.py`). `Aut(K(9,11,13)) = S₉×S₁₁×S₁₃`, and because the zone sizes are *distinct* (`9≠11≠13`) the induced symmetry on the three zone-classes — the entire symmetry the rank-3 physical image can inherit — is the **trivial** group (only the identity preserves the size assignment). The icosahedral group `A₅` has order `60`; it cannot embed into the trivial induced symmetry (`60>1`), so `K(9,11,13)` carries **no** icosahedral symmetry on its rank-3 image and is **not** the icosahedral cut-and-project. The obstruction is exactly the size-asymmetry: an *equal*-zone `K(n,n,n)` would admit the full `S₃` zone-swap, but `9≠11≠13` kills it. So the icosahedral `A₅` belongs to the **flavor/`E₈`** side (the level-5 modular group `Γ₅≅A₅`, §06.30a, `D0-MODULAR-TIME-FLAVOR-001`), not the carrier; the `rank=3` convergence (carrier rank-3 ↔ icosahedral 3D-slice dimension) is **kept** as a real third channel to "3", and `nullity 30 = ` edges is a **confirmed coincidence**. The named gap is closed by a sharp negative — the same honest discipline that resolved the `γ`-packing probe and the `V_CKM U_PMNS^T=I` reading.
 
-**Third channel to the triple.** The `3D` physical slice (`A₅ = 2I/\{\pm1\} = \mathrm{PSL}(2,5) ⊂ SO(3)`) is a third independent route to `rank = 3`, alongside Frobenius (`ℍ` has three imaginary axes) and the linear-algebra theorem (the rank of a complete tripartite graph is its number of parts). With the tower-stop no-go (`D0-TOWER-STOP-NOEXT-001`, three zones) these are four manifestations of one `3`. And the icosahedral quasicrystal slices `E₈` (Elser–Sloane), the *same* `E₈` the icosian role lattice generates (BOOK_02 §02.18) — one object yields both the role lattice and the carrier slice (consistency, cert `vp_e8_quasicrystal_slice.py`; not a new derivation of the zones). The three channels are independent forcings — their convergence strengthens, it is not summed as a single proof.
+**Third channel to the triple.** The `3D` physical slice (`A₅ = 2I/\{\pm1\} = \mathrm{PSL}(2,5) ⊂ SO(3)`) is a third independent route to `rank = 3`, alongside Frobenius (`ℍ` has three imaginary axes) and the linear-algebra theorem (the rank of a complete tripartite graph is its number of parts). These are three independent appearances of `3`; they do not prove that every admissible scene has exactly three zones. In particular, the former tower-stop argument (`D0-TOWER-STOP-NOEXT-001`) remains a proof target: its repeat branch is closed by copy-relabelling invariance, while its new-type branch still lacks a semantic exhaustivity theorem. And the icosahedral quasicrystal slices `E₈` (Elser–Sloane), the *same* `E₈` the icosian role lattice generates (BOOK_02 §02.18) — one object yields both the role lattice and the carrier slice (consistency, cert `vp_e8_quasicrystal_slice.py`; not a new derivation of the zones). The three channels are independent forcings — their convergence strengthens, it is not summed as a single proof.
 ## 01.20 Capacity closure of four terminal roles A,B,C,D, Ω8 and V9
 
 The terminal readout alphabet is fixed by finite information capacity. A primitive two-port detector has a binary terminal dyad `D2`. The complete terminal role set is therefore `D2 × D2`, with four roles. This is the four terminal roles A,B,C,D alphabet:
@@ -1560,6 +1911,8 @@ This gives the first complete scene sizes `(9,11,13)`. The construction rules ou
 **[E-SYNTH record (candidate reading layer; `GAP_E_SYNTHESIS_MEMO.md`, post-skeptic — closure headline killed, computation layer retained).** Three computed structure results survive and are recorded here without any closure reading. The proper nontrivial characteristic subquotients (canonical layers) of the role group `Q₈` are exactly `{ℤ₂, V₄}`, sizes `{2,4}` — numerically matching the two extensions above; the order-8 census finds `Q₈` uniquely clean among the five order-8 groups (`ℤ₂³` has zero canonical layers); and the four roles A,B,C,D admit a coset reading as the four cosets of `Z(Q₈)`, each a sign-pair `{x,−x}`. Load-bearing caveats: the exhaustiveness clause (GAP-E — that `{D₂, ABCD}` is the COMPLETE admissible extension list) remains OPEN, with the E-SYNTH kill its FOURTH independent confirmation (after R3 underdetermination, the E-b forge, and the dyad-power kill); and the `D₂ = Z(Q₈)` identification is fork-open against the owned two-port dyad reading. No "scene is a central extension" reading is asserted.]
 
 **[Window final state (candidate record; `CLOSE_GAP_W_MEMO.md` + `CLOSE_GAP_E_META_MEMO.md`, both post-independent-skeptic 2026-07-06).** The `[9,13]` window stands lower-SEALED / upper-OPEN. Lower bound: `|V_base| = |Ω₈| + 1 = 9` seals through W-REC — owned architecture, the complementarity `P_N + Q_N = I` with the single `:1998` orbit-averaged archive writer — plus one REGISTERED explicit bridge assumption, `ASSUMP-CLASS-RECORD-IS-ADDRESSABLE` (`LEAN_ASSUMPTION_LEDGER.csv` row 25; the R-A IS-typing of the re-detection class-record across the §01.3/§01.11.3 layer boundary), carried by `D0-GAP-W-WITNESS-PLUS-ONE-001` (lean-side LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS; release stays PROOF-TARGET): a registered-bridge seal, NOT a full owned closure. Upper bound: stays OPEN after the closed 9-pass GAP-E campaign (R3 → E-b → dyad-power → E-SYNTH → 5th → 6th → RAISE-7th → H7-probe → META-9th, the last KILLED under §05.8.R); the STOP-RULE is binding (no further forging), the residue is ONE sentence — "an admissible zone-extension alphabet is a coset partition of a characteristic-chain term `1 < Z < Q₈`" — and the only two adjudicated doors are (a) an owner-authored banning sentence of the `:1539` exogenous-catalog type, or (b) an owned algebraic exhaustion of the `:1548` capacity inventory of the row-257 CASE-1 type; absent either, the surviving rivals are `z₃ ∈ {15, 17}` (`|X| ∈ {6,8}`, finite GIVEN the assembly-grade partition bound; owned-parity-only residue: `z₃` odd ≥ 13); `z₃ = 12` and every odd-letter-count alphabet are excluded by the owned orientation-parity ban (B01:1893-1909, B03 §03.23.6, row 522) — see `CLOSE_GAP_E_OWNER_MEMO.md`. [EoR — GAPE-1011 2026-07-06, 10th pass.]]
+
+**[Window final state — UPDATE (door (b) taken; `CLOSE_GAP_E_DIMENSIONAL_MEMO.md` 12th pass 2026-07-07, Lean formalization 13th pass 2026-07-18).** Door (b) is DISCHARGED at operative grade by the port-power exhaustion `D0-GAP-E-PORT-EXHAUSTION-001`: the admissible zone-extension alphabets are exactly the port-powers `D₂^k` of the binary terminal dyad with `k ≤ 2`, where the cap `k ≤ 2` is the OWNED two-comparison-kind count (`D0-DETECTION-QUADRATIC-001`, `:1130`) with the `:860` falsifier as its second channel, and the tower `{D₂¹, D₂²}` is the owned capacity chain (`:1548`/`:1816`). The surviving even rivals die natively: `|X| = 6` is not a dyad power at any exponent (cap-independent), `|X| = 8 = D₂³` demands a third port (cap-gated; re-admitted at cap 3 — the machine-checked negative control). Hence `z₃ ≤ 13`: the `[9,13]` window is upper-SEALED at owned-inheritance/operative grade. The ARITHMETIC leg is Lean-proved and wired (`D0.Tower.PortPowerExhaustion`, kernel build green; corroborated from the distinct factor-lattice ambient by `D0.Tower.FactorBlockLaw` — group-grade Lagrange exclusion of sizes 3/5/6 for ALL subgroups of `ℤ₂³`); the CATEGORICAL leg (two ports/kinds exhaust the tower) remains a forcing reading, PROOF-TARGET, exactly parallel to `D0-DETECTION-QUADRATIC-001`'s own categorical leg — the seal is operative, not a CORE-THE. The STOP-RULE's "absent either door" clause reads "door (b) taken"; the H7 sentence and door (a) lapse as unneeded. Reopening hooks: sever BOTH channels (deny port ⟺ comparison-kind AND read `:860` as consistency-check), or exhibit a third comparison kind.]
 
 ### Orbital rigidity: K(9,11,13) is the unique vacuum graph
 
@@ -2004,6 +2357,23 @@ E_\Omega = \frac{1}{|G_8|} \sum_{g \in G_8} P_g F_N P_g^\dagger.
 \]
 
 This average is invariant, but it is **not** a scalar multiple of the identity unless irreducibility of the representation on the trace space is separately proved.
+## 01.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_01 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| ladder (detector ladder, φ-ladder, division/time ladder, capacity ladder) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| lift (operator lift, signed lift) | typed extension of a finite operator along an inclusion of finite carriers (block embedding / induced operator); the lifted object is derived, not primitive |
+| capacity | finite boundary-capacity count: the rank/dimension budget of admissible finite levels |
+| terminal (four roles A,B,C,D) | absorbing rank-reducing measurement channel; the four terminal roles form the finite instrument alphabet |
+| tick, tick-gauge | discrete evolution endomorphism (time-step operator) and its gauge normalization |
+| gate (Σ realizability gate) | finite variational test functional |
+| readout (Born readout) | positive measurement outcome (POVM/instrument response functional) |
+| scene | finite incidence / clique complex K(9,11,13) |
+| archive (archive floor) | traced-out complement / environment sector (partial-trace quotient) |
 
 
 ## Apparatus — sources & open obligations

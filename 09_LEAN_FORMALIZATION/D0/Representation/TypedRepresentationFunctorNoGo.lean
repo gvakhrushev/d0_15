@@ -51,11 +51,25 @@ theorem residual_sufficient (c d : Completion) (hp : c.p = d.p) (hq : c.q = d.q)
 
 /-- **Deletion-minimality.** The residual is a single bit: up to overall sign there are
 exactly two admissible classes `{(3,0),(2,1)}`, so nothing smaller than one bit can be
-removed while restoring uniqueness. -/
+removed while restoring uniqueness. [REPAIR 2026-07-18, skeptic #20: the second conjunct was
+vacuous (`∨ True`) — replaced by the GENUINE dichotomy, proved by exhausting the `p+q=3`
+cases; the full fibre structure is stated in the pass-#2 draft (see the registry row if minted).] -/
 theorem residual_minimal_two_classes :
-    ncCount 3 0 ≠ ncCount 2 1 ∧ (∀ c : Completion, c.nc = 12 ∨ c.nc = 8 ∨ True) := by
+    ncCount 3 0 ≠ ncCount 2 1 ∧ (∀ c : Completion, c.nc = 12 ∨ c.nc = 8) := by
   refine ⟨by decide, ?_⟩
-  intro _; exact Or.inr (Or.inr trivial)
+  intro c
+  have h := c.sum_three
+  have hp : c.p ≤ 3 := by omega
+  unfold Completion.nc
+  interval_cases hc : c.p
+  · have hq : c.q = 3 := by omega
+    rw [hq]; left; decide
+  · have hq : c.q = 2 := by omega
+    rw [hq]; right; decide
+  · have hq : c.q = 1 := by omega
+    rw [hq]; right; decide
+  · have hq : c.q = 0 := by omega
+    rw [hq]; left; decide
 
 /-- **D0-TYPED-REPRESENTATION-FUNCTOR-NOGO (Outcome B).** The full typed source does not
 force `Φ_typed`: two inequivalent completions survive, and the residual is the

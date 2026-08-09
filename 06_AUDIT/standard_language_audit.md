@@ -1,15 +1,15 @@
 # D0 Standard Language Audit Report
-Generated: 2026-07-06T22:49:37.467115+00:00
+Generated: 2026-07-18T15:53:19.795413+00:00
 
-Total occurrences scanned: 2716
+Total occurrences scanned: 2810
 
 ## Summary by Classification
 - NEEDS_STANDARD_REWRITE: 124
 - OK_CODE_OR_FORMULA: 193
 - OK_FIRST_USE: 64
-- OK_OWNER: 242
+- OK_OWNER: 240
 - OK_STANDARD_CONTEXT: 290
-- OK_STRUCTURAL: 1803
+- OK_STRUCTURAL: 1899
 
 ## Needs Rewrite (sample)
 - BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md:280 `readout` → positive measurement outcome / positive response functional
@@ -40,21 +40,21 @@ Total occurrences scanned: 2716
   > after the readout modulus is fixed.
 - BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1465 `archive` → traced-out complement / quotient sector
   > higher-dimensional archive support
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1566 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1568 `scene` → finite incidence / clique complex
   > The scene is the complete tripartite graph
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1646 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1648 `readout` → positive measurement outcome / positive response functional
   > readout quotient chooses a return modulus.  Thus the same chain has two layers:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1649 `archive` → traced-out complement / quotient sector
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1651 `archive` → traced-out complement / quotient sector
   > φ^{-2} irrational rotation  > non-resonant archive smoothing;
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1845 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1847 `scene` → finite incidence / clique complex
   > The turn count is fixed by terminal role closure plus the three incidence directions of the scene:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1845 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1847 `closure` → proved theorem / executable certificate / verified comparison (context-dependent)
   > The turn count is fixed by terminal role closure plus the three incidence directions of the scene:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1863 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1865 `scene` → finite incidence / clique complex
   > and the bilateral scene line
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1869 `scene` → finite incidence / clique complex
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1871 `scene` → finite incidence / clique complex
   > A full oriented return must include the two-sided orientation, the pointed terminal alphabet and the full bilateral scene line:
-- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1973 `readout` → positive measurement outcome / positive response functional
+- BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md:1975 `readout` → positive measurement outcome / positive response functional
   > Readout is D^dagger D applied to the T^n-state.
 - BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md:476 `readout` → positive measurement outcome / positive response functional
   > The terminal two-port readout is therefore written as a role-preserving representation

@@ -2067,6 +2067,26 @@ So `rank-3 = the three spatial/causal directions of the cone` is forced, and `C_
 A complementary owner on the *thermodynamic* side is **Jacobson's derivation** (T. Jacobson, *Thermodynamics of spacetime: the Einstein equation of state*, Phys. Rev. Lett. **75**, 1260, 1995): the Einstein equation follows from the Clausius relation `δQ = T dS` together with the horizon entropy `S = A/4` imposed on every local Rindler horizon — i.e. gravity is an *equation of state*, emergent from the thermodynamics of information crossing causal horizons. In the D0 lens this is exactly "gravity emergent from the thermodynamics of recording": the same `A/4` capacity that bounds the archive (Bekenstein) yields the field equation by Jacobson's argument. This strengthens the Connes "metric = spectrum" owner with a second, thermodynamic external owner; both are cited, neither is re-derived inside D0, and neither closes the rank-3 = cone gap.
 
 **The GHP golden Cauchy bound — the internal-Cauchy half is now owned (`D0-GHP-GOLDEN-CAUCHY-BOUND-001`).** The "D0 does not prove the refinement sequence is GHP-Cauchy" residual above is now discharged **on the internal side**: the refinement `G_k → G_{k+1}` contracts at the golden scale `δ₀ = 1/(2φ³)`, and since `0 ≤ δ₀ < 1`, the step-bound series `Σ_k C·δ₀^k` is summable (converges to `C/(1 − δ₀)`) — a genuine Lean theorem (`D0.Geometry.GHPGoldenCauchyBound`, via Mathlib `summable_geometric_of_lt_one`; cert `vp_ghp_golden_cauchy_bound.py`). So the refinement is Cauchy *for the internal step bound*. The finite-graph Connes = geodesic owner (`D0-CONNES-GRAPH-DISTANCE-OWNER-001`, cert `vp_connes_graph_distance_owner.py`, `c = 1 = edge/tick`) is the metric anchor. What stays external (prose status MECH-LIMIT, `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001`, PASSPORT-CLOSED): the convergence in the quantum Gromov–Hausdorff metric and the Connes reconstruction to a smooth Riemannian spin manifold — owned by `D0-RIEFFEL-GHP-CONTINUUM-OWNER-001` + `D0-CONNES-RECONSTRUCTION-OWNER-001`. The smooth manifold stays the conditional macro-shadow `D0-SMOOTH-MANIFOLD-PASSPORT-001`, never a primitive D0 input.
+## 07.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_07 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| shadow (Einstein shadow) | macro interface / smooth-limit reading of a finite object (Einstein-Hilbert macro-interface) |
+| archive (horizon archive, archive Laplacian, archive action, archive field equation) | traced-out complement / environment sector; the horizon variant is the terminal boundary quotient into that sector |
+| capacity (cut capacity, horizon capacity, trace-heat-capacity) | finite boundary-capacity count: the rank/dimension budget of admissible finite levels |
+| ladder (capacity ladder, spectral ladder, heat-trace A0/A2 ladder) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| surface tension (entropic surface tension) | boundary response coefficient of the finite cut-capacity functional; not a material property |
+| runtime | ordered finite evolution / finite record dynamics (composition of finite tick maps) |
+| terminal (terminal boundary) | absorbing rank-reducing measurement channel and the boundary of its traced-out complement |
+| tick, tick-gauge | discrete evolution endomorphism (time-step operator) and its gauge normalization |
+| lift (row-sum lift) | typed extension of a finite operator along an inclusion of finite carriers; the lifted object is derived, not primitive |
+| bridge (gravity bridge) | typed transfer / calibration map from an internal finite object to an external model object |
+| scene | finite incidence / clique complex K(9,11,13) |
+
 
 ## Apparatus — sources & open obligations
 

@@ -68,6 +68,25 @@ The proof technique behind "forcing" is **standard proof by contradiction** — 
 | `retained/archive split` | system/environment split | `H_total = H_obs ⊕ H_traced`, partial trace over the environment | Use "system/environment split"; the active/archive synonyms are defined above. |
 | `archive` (dark kernel) | traced-out environment bath / nullity sector | `ker A`, `nullity = 30 = 8⊕10⊕12` for `K(9,11,13)` | "Traced-out environment"; keep `archive` for the specific nullity-30 sector. |
 
+### Compressed-metaphor terms (v15 standard-language layer)
+
+These are the compressed metaphors the v15 book contracts (`## NN.v15 Active standard-language contract` in each book) declare as typed abbreviations. Each is a name for the standard object listed here, never independent physics.
+
+| D0 term | Preferred external term | Formal object / notation | Rule |
+|---|---|---|---|
+| `ladder` (φ-ladder; address/detector/dimension/capacity/time ladder) | φ-graded discrete filtration / indexed family of finite levels | graded family `n ↦ φ^{±n}` of levels of one finite operator family | Names an index family only; never an extra dynamical object. |
+| `lift` | typed extension along an inclusion of finite carriers | block embedding / induced operator on the larger typed carrier | The lifted object is derived, not primitive; state the inclusion. |
+| `fluid` (finite fluid cell) | inverse system of finite lattice flow models | lattice-Boltzmann-type cells with finite response data | No continuum fluid is primitive; use only over the named finite cells. |
+| `surface tension` (entropic) | boundary response coefficient of the cut-capacity functional | derivative of finite cut capacity along the boundary | Not a material property; specify the capacity functional. |
+| `runtime` | ordered finite evolution / finite record dynamics | composition of finite tick maps `U_N` | Use after the tick maps are specified. |
+| `gate` | finite variational test functional | finite test functional on admissible configurations | Use standard term first; D0 word second. |
+| `selector` | finite variational selector / strict minimizer | strict minimizer of a finite test functional | State the functional and its uniqueness/negative controls. |
+| `capacity` | finite boundary-capacity count | rank/dimension budget of admissible finite levels | Use as a count/budget, not as a substance. |
+| `shadow` | macro interface / smooth-limit reading | smooth-limit readout of a finite object | Interface reading only; the finite object stays the owner. |
+| `dark sector` | Galois-conjugate unresolved branch | traced-out complement read by an external survey functional | Never poetic; specify the functional and window. |
+| `phason glass` | phason-strain disorder in the internal/Galois branch | gap-label / `K₀`-class strain disorder | Standard condensed-matter reading; specify the branch. |
+| `D0 vacuum` | condensed/profinite φ-quasicrystalline tiling hull | tiling hull with admissible projections | Model object, not empty space. |
+
 ## Publication rule
 
 A paragraph is publication-ready only if a reader can replace every D0-local term by its standard object without changing the theorem.

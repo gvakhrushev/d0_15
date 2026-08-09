@@ -1059,14 +1059,14 @@ The runtime electromagnetic normalization is the **closure holonomy** of the edg
 where every ingredient is fixed *before* any comparison to data:
 
 - depth `\varphi^{-17}=\varphi^{-5}\!\cdot\varphi^{-12}` — the seam `\xi_5` times the electroweak transport;
-- stretch `h_{KS}=\ln\varphi` — the Kolmogorov–Sinai rate per monodromy turn, forced by the `\varphi` eigenvalue;
+- stretch `h_{KS}=\ln\varphi` — the Kolmogorov–Sinai rate of the toral time generator (BOOK_06 §06.30a), imported once per monodromy turn: the seam monodromy itself is an isometry at every power (`D0-SEAM-HOLONOMY-001`; iterated form `D0.Spectral.SeamRateImport`) and so carries no intrinsic rate; the imported rate is the toral `h_{KS}=\log|\lambda_{\max}|=\log\varphi` (BOOK_01 §01.21.4; the radius `|\lambda_{\max}|=\varphi` machine-checked at `D0-IF-KS-FORMULA-FIX-001`, the entropy reading the named external wrapper), and the single-turn count is the one directed crossing of `D0-ALPHA-HOLONOMY-LINEAR-FORM-001`;
 - angle `\theta_{seam}=2\pi_0(2-\varphi)=12/5` — **exact in `\mathbb Q(\varphi)`** with `\pi_0=(6/5)\varphi^2` (§04.6.π.4); `D0-PI0-DISCRETE-ANGLE-001`, Lean `D0.Geometry.Pi0DiscreteAngle`;
 - channel `\sin` (off-diagonal), **not** the trace `\cos` — forced by `Q_8`, `G^2=-I`; `D0-Q8-SIN-CHANNEL-001`, Lean `D0.Spectral.SeamHolonomy`;
 - **linear form `1+h_{KS}\sin\theta` (not `\exp`) — now DERIVED, not data-selected** (`D0-ALPHA-HOLONOMY-LINEAR-FORM-001`, Lean `D0.Spectral.SeamTransportLinear`). The seam carries *two* operators: the elliptic channel selector `G` (`G^2=-I`, picks the `\sin` amplitude) and the **directed** transport `N` (the CP-seam crossing). Because the CP-seam is the *directed* 3-cycle (`D0-BARYON-ASYMMETRY-DELTA0-001`), one closure crosses it **once** and cannot return, so `N` is nilpotent (`N^2=0`). For nilpotent transport the flow is *parabolic* — `(I+sN)(I+tN)=I+(s+t)N` with **identically zero** higher-order term — so the transported dressing factor is *exactly* `1+s`, linear. The `\exp`/oscillatory form would require `N^2\ne0` (a returning/undirected seam), and the elliptic channel alone gives a *bounded* readout `\cos\theta-\sin\theta` (`\le\sqrt2`) that can never be the unbounded linear `1+s`. Nilpotency is proved load-bearing (a non-nilpotent generator breaks the parabolic law). So the data's role **shrinks from selecting the form to confirming the single directed crossing**: the `\exp` control fails because its second-order term `\varphi^{-17}\cdot\tfrac12(h_{KS}\sin\theta)^2\approx1.5\times10^{-5}` is exactly what the nilpotency annihilates.
 
-The `\approx 3.71\times10^{-4}` data residual of the runtime electromagnetic normalization is the seam closure holonomy derived above. The same law `1+h_{KS}\sin\theta_{seam}` governs the PMNS angles (§04.5), with the seam-amplitude `\delta_0`-degree set by cycle topology (`D0-SEAM-HOLONOMY-001`).
+The `\approx 3.71\times10^{-4}` data residual of the runtime electromagnetic normalization is the seam closure holonomy derived above. The same closure-holonomy discipline governs the PMNS angles (§04.5) — there as the seam-topology `\delta_0`-degree family (bare/open/closed → `\delta_0^{0,1,2}`, `D0-SEAM-HOLONOMY-001`), not the `1+h_{KS}\sin\theta` multiplier form, which is the α instance.
 
-**Honest status split.** The *structure* — the angle `12/5`, the `\sin` channel, the depth `\varphi^{-17}`, the linear form — graduates to **THE** (machine-checked). The **9-digit agreement** with CODATA (`137.035999151` vs CODATA-2018 `137.035999084`, gap `6.7\times10^{-8}` — smaller than the 2018→2022 edition shift `9.3\times10^{-8}`) is an empirical **CHK** (`D0-ALPHA-HOLONOMY-002`, cert `vp_seam_holonomy_alpha.py`; the `\cos`/`\exp`/wrong-depth controls all FAIL). The last `\sim10^{-8}` is a falsifiable **HYP** measurement-limit bet (`D0-ALPHA-MEASUREMENT-LIMIT-001`). The 9-digit value is **never** registered as a THE derivation; second-order holonomy was checked and does *not* close the residual. The cone-angle `2\pi_0` and `\delta_0=(6/5)` micro-derivations lean on §04.6.π.4 — named proof-targets, not claimed here.
+**Honest status split (four levels; 2026-07-18 reframe — uniqueness + progressive narrowing, not digit-matching).** *Level 1, STRUCTURE THE (machine-checked):* the angle `12/5`, the `\sin` channel, the linear form, and the depth's **seam factor** `\xi_5=\varphi^{-5}`. Honest split (skeptic #19): the depth's **transport factor** `\varphi^{-12}` and the composition `\varphi^{-17}=\xi_5\cdot\varphi^{-12}` are owned only as prose above — a **named open sub-leg**, not THE. *Level 2, FORM-FORCED (PROOF-TARGET, `D0-ALPHA-SEAM-FORM-FORCED-001`, cert `vp_alpha_seam_form_forced.py` rc=2):* the joint uniqueness of the dressing tuple, with three registered obligations — (i) own the `\varphi^{-12}` transport factor, (ii) the cross-scope identification of the registered multiplier rate (`D0-SEAM-HOLONOMY-001`) with the owned rate value (`D0-FIBONACCI-IF-FORCING-001`) — ADOPTED at assembly grade — the stretch bullet above binds the system (structure `D0.Spectral.SeamRateImport`; §06.30a reciprocal; the entropy reading remains the named external wrapper, boundary as `D0-IF-KS-FORMULA-FIX-001`), (iii) joint exhaustion — and a seven-rival separated falsifier surface (F1–F5; free real coefficients are tuning by 02.13.h; a `\pi_0`-coefficient result with independent content *beyond the assembled form* redirects to the realization no-go's hook (iv), never absorbed here). *Level 3:* the **9-digit agreement** with CODATA (`137.035999151` vs CODATA-2018 `137.035999084`, gap `6.7\times10^{-8}` — smaller than the 2018→2022 edition shift `9.3\times10^{-8}`) is an empirical **CHK** — a CONSEQUENCE of the form, never the criterion (`D0-ALPHA-HOLONOMY-002`, cert `vp_seam_holonomy_alpha.py`; the `\cos`/`\exp`/wrong-depth controls all FAIL — same evidence re-run structurally in the FORM-FORCED cert, two roles, neither row absorbs the other). *Level 4:* the last `\sim10^{-8}` is a falsifiable **HYP** measurement-limit bet (`D0-ALPHA-MEASUREMENT-LIMIT-001`). The 9-digit value is **never** registered as a THE derivation; second-order holonomy was checked and does *not* close the residual. The cone-angle `2\pi_0` and `\delta_0=(6/5)` micro-derivations lean on §04.6.π.4 — named proof-targets, not claimed here.
 
 #### Consistency seam: the gluing anomaly `Δα` [^b02-31]
 
@@ -1113,7 +1113,7 @@ i.e. `α_alg⁻¹ = (12288/5)φ⁻⁶ + (1/3)φ⁻³` exactly in `Q(φ)` (Lean `
 
 [COR] [^b02-32]  `Δα≠0` is NOT a numerical error and NOT a defect of either writing.  Two independent reconstructions of the SAME constant — topological capacity (channel count) versus geometric phase `π_0` — cannot be glued to zero residue inside `Q(φ)`: the field `Q(φ)` is the smallest catalog-free arena that holds both, and it does not flatten the seam.  Hence `Δα` is the IRREDUCIBLE residue of gluing topological capacity to geometric phase.  This non-zero seam is forced, not fitted, and it is the seed of the sterile-sector mechanism (a measurable CORE residue; any probabilistic weight `P_sterile=f(Δα²)` built on it is a typed BRIDGE/HYP layer, since the linear sign of `Δα` is not observable).  The closure-holonomy dressing (§02.13.h) does NOT erase this seam; it dresses `α_top` toward the measured `137.035999`, while `Δα` records that the two algebraic origins were never identical to begin with.
 
-**Honesty level (ξ₅ is THE, α is CHK).** `α⁻¹` is *not* a closed identity equal to the measured value. `ξ₅ = φ⁵ − 11 = φ⁻⁵ = 5φ − 8` is an exact identity (`D0-XI5-TORUS-DEFECT-001`, THE — `φ⁵ − φ⁻⁵ = L₅ = 11`), so the *structural form* `α_top⁻¹ = 359φ⁻² − ξ₅ = 726 − 364φ = 137.0356…` stands. But the equality to experiment does **not** close: the **data residual** `|α_meas − α_top⁻¹| = |137.035999 − 137.035628| ≈ 3.71×10⁻⁴` is a *different* quantity from the **algebraic residual** `Δα = |α_top⁻¹ − α_alg⁻¹| ≈ 4.15×10⁻⁴` above (the two must not be conflated). So the α-line remains **CHK** under the GOLDEN §16.3 boundary for its equality to experiment. The **data residual** `≈3.71×10⁻⁴` is *derived* as the seam **closure holonomy** (§02.13.h, `D0-ALPHA-HOLONOMY-002` — structure THE, 9-digit match CHK, last `~10⁻⁸` HYP), and the ζ-residue route to `Δα` (`D0-CVFT-F1`) is **BLOCKED** (transcendental `∝1/lnφ` vs `α_alg ∈ Q(φ)`) — now **machine-checked** as a closed-negative no-go (`D0.Spectral.delta_alpha_residue_route_blocked`: `1/lnφ` is transcendental, hence `∉ ℚ(φ)`, so no `φ`-graded residue equals the algebraic `Δα`; proved relative to the one cited classical fact `ASSUMP-LINDEMANN-LNPHI`, transcendence of `lnφ`); the holonomy is the working route. The 9-digit data match is never promoted to THE; `ξ₅` stays THE.
+**Honesty level (ξ₅ is THE, α is CHK).** `α⁻¹` is *not* a closed identity equal to the measured value. `ξ₅ = φ⁵ − 11 = φ⁻⁵ = 5φ − 8` is an exact identity (`D0-XI5-TORUS-DEFECT-001`, THE — `φ⁵ − φ⁻⁵ = L₅ = 11`), so the *structural form* `α_top⁻¹ = 359φ⁻² − ξ₅ = 726 − 364φ = 137.0356…` stands. But the equality to experiment does **not** close: the **data residual** `|α_meas − α_top⁻¹| = |137.035999 − 137.035628| ≈ 3.71×10⁻⁴` is a *different* quantity from the **algebraic residual** `Δα = |α_top⁻¹ − α_alg⁻¹| ≈ 4.15×10⁻⁴` above (the two must not be conflated). So the α-line remains **CHK** under the GOLDEN §16.3 boundary for its equality to experiment. The **data residual** `≈3.71×10⁻⁴` is *derived* as the seam **closure holonomy** (§02.13.h, four-level ladder — structure THE with the depth-transport sub-leg named open, FORM-FORCED PROOF-TARGET `D0-ALPHA-SEAM-FORM-FORCED-001`, 9-digit match CHK `D0-ALPHA-HOLONOMY-002`, last `~10⁻⁸` HYP), and the ζ-residue route to `Δα` (`D0-CVFT-F1`) is **BLOCKED** (transcendental `∝1/lnφ` vs `α_alg ∈ Q(φ)`) — now **machine-checked** as a closed-negative no-go (`D0.Spectral.delta_alpha_residue_route_blocked`: `1/lnφ` is transcendental, hence `∉ ℚ(φ)`, so no `φ`-graded residue equals the algebraic `Δα`; proved relative to the one cited classical fact `ASSUMP-LINDEMANN-LNPHI`, transcendence of `lnφ`); the holonomy is the working route. The 9-digit data match is never promoted to THE; `ξ₅` stays THE.
 
 ### 02.13.5 QCD runtime and archive scale
 
@@ -1535,10 +1535,82 @@ yield `\varphi^{-1}`; three numbers that are easy to conflate must be separated 
 - The fractal tick `\varphi^{-1}` (the envelope recursion `A_{n+1}=\varphi^{-1}A_n`, BOOK_06
   §06.2) is a **different operator** entirely.
 
-So there are two matrices, two spectra, two roles: `M`'s mixing spectrum `\{1,-0.42,-0.58\}`, the
-`(I-M)` relaxation window `\{1.42,1.58\}` feeding `S_{DE}` (the Book02↔Book08 link), and the
-envelope tick `\varphi^{-1}`. These three are distinct; conflating them is the error this cell
-fences off.
+The relation between the first two operators is now proved at operator level,
+not merely at the level of characteristic polynomials.  Let \(A_{33}\) be the
+literal full-scene adjacency and let \(C:\mathbb Q^3\to\mathbb Q^{33}\) be the
+zone-indicator lift.  With
+
+\[
+A_W=\begin{pmatrix}0&11&13\\9&0&13\\9&11&0\end{pmatrix},
+\qquad
+D_W=\operatorname{diag}(24,22,20),
+\]
+
+Lean proves
+
+\[
+A_{33}C=CA_W,\qquad
+M=D_W^{-1}A_W,
+\]
+
+and the corresponding full random-walk Laplacian descends through \(C\) to
+\(I-M\).  The quotient is unique once the intrinsic degree fibres are fixed:
+two full-scene vertices have equal degree exactly when they lie in the same
+zone.  The stationary degree weight
+
+\[
+\pi=(9\cdot24,\ 11\cdot22,\ 13\cdot20)=(216,242,260)
+\]
+
+is the pushforward of the full degree measure and satisfies detailed balance
+(`D0-SCENE-NORMALIZED-QUOTIENT-DESCENT-001`).
+
+Now let
+
+\[
+T_2=\begin{pmatrix}3/2&1/16\\1/10&3/2\end{pmatrix},
+\qquad
+X=\begin{pmatrix}-132&55\\-24&-120\\132&66\end{pmatrix}.
+\]
+
+There is an explicit rational retraction \(Y\) for which
+
+\[
+(I-M)X=XT_2,\qquad
+YX=I_2,\qquad
+XY=P_{\mathrm{act}},\qquad
+XT_2Y=I-M,\qquad
+Y(I-M)X=T_2.
+\]
+
+Moreover
+
+\[
+\operatorname{im}X=\ker\pi,\qquad
+P_{\mathrm{act}}
+=I-\frac1{718}\mathbf1\pi
+=I-\frac{160M^2+160M+39I}{359}.
+\]
+
+Thus the S_DE matrix is exactly the restriction of the normalized scene
+Laplacian to its canonical two-dimensional active spectral summand
+(`D0-PHASON-ACTIVE-SCENE-CONJUGACY-001`).  The particular \(X\) is not
+canonical — \(X\) and \(2X\) are distinct intertwiners with the same image —
+but \(\ker\pi\), \(P_{\mathrm{act}}\), and the similarity class are canonical.
+Uniform zero-sum is the wrong constraint; the degree-stationary weight is
+load-bearing.
+
+The resulting separation is therefore exact:
+
+- \(M\) has the mixing spectrum \(\{1,-0.42,-0.58\}\);
+- \(I-M\) has a zero stationary mode and an active restriction genuinely
+  conjugate to the two-mode S_DE transfer;
+- the unnormalized cubic quotient \(A_W\) is not conjugate to that transfer;
+- the envelope tick \(\varphi^{-1}\) belongs to a different operator.
+
+No log-det pressure, equation of state, redshift map, or survey comparison is
+created by this finite conjugacy.  Conflating those downstream readings with
+the exact operator statement is the remaining error this cell fences off.
 ## 02.19 High-gain uniqueness and structural uniqueness / negative-control rigidity closure
 
 Any formula containing a large exponent or small residual is release-admissible only if the exponent is selected by an operator support rule and neighbouring alternatives are excluded.
@@ -2139,6 +2211,134 @@ element, together with the two joints: the Lucas-trace sign equals the orientati
 determinant, which equals the Galois norm `φ·ψ = −1`; and the address step `+2` is the
 identity of the cover (it stays on one sheet), while `+1` flips the sheet and is therefore
 banned. [^b02-59]]
+
+**Top-homology exclusion.**  The determinant line of
+\(H_2(K(9,11,13);\mathbb Z)\) is *not* an eighth incarnation of this bit.
+The actual \(S_9\times S_{11}\times S_{13}\) chain-pullback action has
+determinant \(+1\) for every automorphism because its three determinant
+exponents are \(120,96,80\), all even
+(`D0-SCENE-TOP-HOMOLOGY-ORIENTATION-TRIVIAL-001`).  Thus the concentrator
+remains grounded in its Galois/Q₈/toral owners; top homology contributes rank
+\(960\) but no nontrivial orientation character.  The \(K(2,2,2)\) negative
+control has determinant \(-1\), so this exclusion is a real parity theorem,
+not a convention.
+
+**Pure top-Hodge scene passport.**  Although the determinant character is
+trivial, the full spectrum of the same upper Hodge operator is far from
+empty.  For \(K(a,b,c)\), the complete proved eigenbasis yields
+
+\[
+D=\dim C_2=abc,\qquad
+H=\dim\ker\Delta_2=(a-1)(b-1)(c-1),\qquad
+M_2=\sum_\lambda\operatorname{mult}(\lambda)\lambda^2
+   =D(a+b+c+6).
+\]
+
+Hence the spectral triple \((D,H,M_2)\) recovers
+
+\[
+T=D,\qquad V=M_2/D-6,\qquad E=T+V-1-H,
+\]
+
+and therefore the unordered roots of \(x^3-Vx^2+Ex-T\).
+At \((D,H,M_2)=(1287,960,50193)\) this polynomial is
+
+\[
+x^3-33x^2+359x-1287=(x-9)(x-11)(x-13).
+\]
+
+Lean proves the resulting unordered reconstruction without an order or
+external bound in the theorem statement
+(`D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001`).  Thus top homology does not
+supply the orientation bit, but the top-Hodge spectrum does self-read the
+finite scene partition inside the canonical complete-tripartite class.
+This has been strengthened to generic inverse spectral rigidity:
+
+\[
+(D,H,M_2)=(D',H',M_2')
+\Longrightarrow
+\{a,b,c\}_{\rm multiset}=\{a',b',c'\}_{\rm multiset}
+\]
+
+for arbitrary positive complete-tripartite scenes.  The proof passes through
+the actual roots-with-multiplicity of the reconstructed Vieta polynomial and
+uses no order, distinctness or search bound
+(`D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`).  Explicit counterexamples
+after removing each coordinate show that the triple is minimal for this
+generic theorem.
+
+**Top-Hodge-to-normalized-transfer synthesis.**  The same three spectral
+coordinates determine more than the partition.  For the row-normalized
+tripartite quotient \(M\), Lean proves from the actual \(3\times3\) matrix
+
+\[
+\det(xI-(I-M))
+ =x\left(x^2-3x+\frac{2VE}{VE-T}\right),
+\qquad
+VE-T=(a+b)(a+c)(b+c)>0.
+\]
+
+Because \(V,E,T\) are reconstructed from \((D,H,M_2)\), this is a generic map
+from the upper-Hodge spectrum to the active normalized-Laplacian polynomial.
+The source data force \(2VE/(VE-T)=359/160\), and the resulting quadratic is
+identically the characteristic polynomial of the owned \(S_{DE}\) transfer
+(`D0-TOP-HODGE-NORMALIZED-QUOTIENT-SPECTRUM-001`).  The polynomial and its
+eigenvalue multiset are canonical; a basis of the active plane is not.  The
+already-proved distinct intertwiners \(X\) and \(2X\) witness that coordinate
+freedom exactly.
+
+The quotient is no longer reached by a chosen row representative.  Spectral
+projectors of the literal full degree operator construct an indicator \(C\)
+and orbit-average restriction \(R\) with \(RC=I\) and
+\(CR=P_{\rm Reynolds}\).  They reconstruct the quotient operators and give
+
+\[
+L_{\rm full}=(I-CR)+C\,L_{\rm quot}\,R.
+\]
+
+The stationary/active factorization then upgrades the polynomial coincidence
+to the full literal block theorem
+
+\[
+\mathbb Q^{33}=A_{30}\oplus S_1\oplus D_2,\qquad
+L_{\rm full}\simeq I_{30}\oplus0\oplus T_{S_{DE}},
+\]
+
+with projector traces \(30,1,2\), exact annihilation between the blocks, and
+the active coefficient \(359/160\) forced by top-Hodge data
+(`D0-INTRINSIC-QUOTIENT-RECONSTRUCTION-001`,
+`D0-AUTOMORPHISM-HODGE-SDE-DECOMPOSITION-001`).  This is a finite rational
+operator decomposition; it supplies neither physical generation names nor a
+continuum dynamics.
+
+The product-level form is stronger.  With \(d_a=b+c,d_b=a+c,d_c=a+b\),
+stationary mass \(S=ad_a+bd_b+cd_c=2E\), and
+\(\delta=e_2(I-M)\), the high sector of the actual positive top-Hodge
+pseudodeterminant satisfies
+
+\[
+K_{\rm high}
+ =(a+b+c)d_a^{a-1}d_b^{b-1}d_c^{c-1}
+ =\delta\,\frac{d_a^a d_b^b d_c^c}{S}.
+\]
+
+Hence the actual complete-eigenbasis product obeys
+
+\[
+\operatorname{pdet}^{+}(\Delta_2)
+ =K_{\rm low}\,\delta\,\frac{d_a^a d_b^b d_c^c}{S}
+\]
+
+(`D0-TOP-HODGE-KIRCHHOFF-STATIONARY-BRIDGE-001`).  The trace identity
+\(e_2(L)=((\operatorname{tr}L)^2-\operatorname{tr}L^2)/2\) makes
+\(\delta\) basis-free.  At the source scene it is exactly the determinant of
+the owned \(S_{DE}\) transfer.  Lean now also constructs the actual
+deleted-vertex cofactor of the `SimpleGraph` Laplacian and proves
+\(\det\widehat L=K_{\rm high}\) by a rank-three compression
+(`D0-COMPLETE-TRIPARTITE-LAPLACIAN-COFACTOR-BRIDGE-001`).  The remaining
+Matrix-Tree boundary is only the combinatorial equality between this
+determinant and the cardinality of spanning trees; that theorem is still
+absent and no tree count is claimed.
 ## 02.35 Theorem-spine owners: Born 2.0, Torus-Core13, and Galois balance
 
 The active proof spine is:
@@ -2342,6 +2542,25 @@ Phase-blind finite readout is quadratic because archive trace is a norm-square b
 \[
 F_N=(Q_NU_NP_N)^\dagger(Q_NU_NP_N).
 \]
+## 02.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_02 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| runtime | ordered finite evolution / finite record dynamics (composition of finite tick maps) |
+| ladder (dimension ladder, detector ladder) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| lift (dimension lift, tower lift) | typed extension of a finite operator along an inclusion of finite carriers (block embedding / induced operator); the lifted object is derived, not primitive |
+| fluid (fluid dynamics cell) | inverse system of finite lattice flow cells (lattice-Boltzmann type); no continuum fluid is primitive |
+| gate | finite variational test functional |
+| scene | finite incidence / clique complex K(9,11,13) |
+| readout (universal quadratic readout) | positive measurement outcome (POVM/instrument response functional) |
+| archive, archive pressure, archive scale | traced-out complement / environment sector; its effective boundary response in a finite window; the scale at which that response is read |
+| terminal (terminal quotient ideal) | absorbing rank-reducing measurement channel and the ideal it generates in the finite algebra |
+| tick (fractal tick) | discrete evolution endomorphism (time-step operator) |
+| capacity (positive-response capacity Φ) | finite boundary-capacity count: the rank/dimension budget of admissible finite levels |
 
 
 ## Apparatus — sources & open obligations

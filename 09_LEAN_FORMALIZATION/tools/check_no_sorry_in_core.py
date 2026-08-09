@@ -38,6 +38,8 @@ ALLOWED_TYPES = {
     "QUANTUM_METRIC_CONVERGENCE",
     "SYMBOLIC_DYNAMICS_CLASSIFICATION",
     "TRANSCENDENCE_THEOREM_LINDEMANN_WEIERSTRASS",
+    "K_THEORY_GAP_LABELLING_THEOREM",
+    "SPECTRAL_GRAPH_CHARACTERISATION",
 }
 # D0-internal named forcing targets (Iter-20 M1-reductio hypotheses). NOT external
 # classical theorems: decidable obligations the corpus assumes-but-has-not-derived, living
