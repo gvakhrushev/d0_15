@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 8320,
-    "track_fair_max": 11067,
+    "realized": 8340,
+    "track_fair_max": 11087,
     "pct_strength": 75.2,
-    "core_realized": 6520,
-    "core_potential": 9200,
+    "core_realized": 6540,
+    "core_potential": 9220,
     "core_headroom": 2680,
-    "n_claims": 634,
-    "n_active": 632,
+    "n_claims": 635,
+    "n_active": 633,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 368,
-      "realized": 5398,
-      "max": 6581,
+      "n": 369,
+      "realized": 5418,
+      "max": 6601,
       "core_headroom": 1143
     },
     "smooth_geometry": {
@@ -154,9 +154,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 58,
-      "realized": 828,
-      "max": 1084,
+      "n": 59,
+      "realized": 848,
+      "max": 1104,
       "core_headroom": 256
     },
     "BOOK_05": {
@@ -13249,6 +13249,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01/03",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CASCADE-CARRIED-ASSEMBLY-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
       "leverage": 0,
       "integrity_flag": null
     }

@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 634,
+    "claims": 635,
     "release_status": {
-      "CORE-FORMALIZED": 230,
+      "CORE-FORMALIZED": 231,
       "CORE_BRIDGE_SPLIT": 17,
       "NO-GO": 89,
       "PROOF-TARGET": 62,
@@ -20,14 +20,14 @@
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 441,
+      "LEAN_PROVED": 442,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 31,
       "PYTHON_CERTIFIED": 111,
       "DEPRECATED": 2,
       "OPEN": 49
     },
     "claim_type": {
-      "core": 233,
+      "core": 234,
       "bridge": 45,
       "no-go": 96,
       "frontier": 62,
@@ -35,7 +35,7 @@
       "deprecated": 3
     },
     "domain": {
-      "formal_core": 369,
+      "formal_core": 370,
       "smooth_geometry": 41,
       "empirical_passport": 39,
       "gauge_bridge": 51,
@@ -19827,7 +19827,7 @@
       "cert": "",
       "python_cert": [],
       "status": "PROOF-TARGET",
-      "notes": "[2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. THIRD LINK + FIRST NEW FLOOR [2026-08-09]: D0-CASCADE-FLOOR-DEFECT-CLOSURE-001 (stepDefectClosure + chain_linked_order_to_defect_closure) -- the prose step 'defect => circulation needs closure' carried in the CascadeStep shape: the order repair's commutator defect fails element-level basepoint invariance, survives only as the closed (conjugacy-class) datum. Remaining unformalized: closure=>shell, three-insufficiencies=>three-zones. FOURTH LINK [2026-08-09]: D0-CASCADE-FLOOR-SHELL-CLOSURE-001 (stepShellClosure + chain_linked_closure_to_shell, 03.23.5 FORCED reading) -- the interior defect+circulation pair fails reflection-closure, the outer shell closes it, and the shell scale is forced parameter-free to the scale floor's own survivor phi. The 01.6.1c segment order => defect => closure => shell is now carried end-to-end AT REFLECTION-PROXY GRADE; still open: the topological/2-cell-attachment reading of closure=>shell (the registered description stands) and the terminal 'three insufficiencies = three zones'. COUNT LEG [2026-08-09]: D0-CASCADE-TERMINAL-COUNT-001 -- the count three derived from the closure structure itself (2 interior + forced third; least completion proved), at proxy grade, on a carrier none of the three dead routes used; remaining for the terminal step: the insufficiencies<->layers identification (prose grade), the typed seam (D0-SCENE-COUNT-REDUCTION-001, both interpretation records unconstructed) and the zone sizes (owned separately). Umbrella stays OPEN: floors defect=>closure=>shell and 'three insufficiencies = three zones' unformalized; machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).",
+      "notes": "[2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. THIRD LINK + FIRST NEW FLOOR [2026-08-09]: D0-CASCADE-FLOOR-DEFECT-CLOSURE-001 (stepDefectClosure + chain_linked_order_to_defect_closure) -- the prose step 'defect => circulation needs closure' carried in the CascadeStep shape: the order repair's commutator defect fails element-level basepoint invariance, survives only as the closed (conjugacy-class) datum. Remaining unformalized: closure=>shell, three-insufficiencies=>three-zones. FOURTH LINK [2026-08-09]: D0-CASCADE-FLOOR-SHELL-CLOSURE-001 (stepShellClosure + chain_linked_closure_to_shell, 03.23.5 FORCED reading) -- the interior defect+circulation pair fails reflection-closure, the outer shell closes it, and the shell scale is forced parameter-free to the scale floor's own survivor phi. The 01.6.1c segment order => defect => closure => shell is now carried end-to-end AT REFLECTION-PROXY GRADE; still open: the topological/2-cell-attachment reading of closure=>shell (the registered description stands) and the terminal 'three insufficiencies = three zones'. COUNT LEG [2026-08-09]: D0-CASCADE-TERMINAL-COUNT-001 -- the count three derived from the closure structure itself (2 interior + forced third; least completion proved), at proxy grade, on a carrier none of the three dead routes used; remaining for the terminal step: the insufficiencies<->layers identification (prose grade), the typed seam (D0-SCENE-COUNT-REDUCTION-001, both interpretation records unconstructed) and the zone sizes (owned separately). Umbrella stays OPEN: the each-floor-FORCED statement over the full prose chain is the open obligation; carried as of 2026-08-09 -- floors defect-closure and shell-closure at their registered (proxy/prose-anchored) grades, the terminal COUNT leg, four links; CARRIED-CONTENT CITATION THEOREM: D0-CASCADE-CARRIED-ASSEMBLY-001 (cascade_carried_assembly -- one conjunction of all carried content; note-only pointer, this row's lean fields unchanged); still open: the topological/2-cell reading of closure=>shell, the typed count seam (D0-SCENE-COUNT-REDUCTION-001), the insufficiencies<->layers identifications. Machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeChain.lean",
       "module_exists": true,
       "certs_exist": true
@@ -21083,6 +21083,35 @@
       "kind": "lean_module",
       "label": "D0.Foundation.CascadeTerminalCount",
       "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeTerminalCount.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-CASCADE-CARRIED-ASSEMBLY-001",
+      "kind": "claim",
+      "claim_id": "D0-CASCADE-CARRIED-ASSEMBLY-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "01.6.1c the carried cascade in one theorem (assembly)",
+      "lean_module": "D0.Foundation.CascadeCarriedAssembly",
+      "lean_theorem": "extended_floors_are_genuine;cascade_carried_assembly",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-08-09 POST-SKEPTIC: MINT-AFTER-REPAIRS, 0 kills; NEW ROW + note-only umbrella update adjudicated; R1-R4 applied; memo CASCADE_CARRIED_ASSEMBLY_MEMO.md] PURE ASSEMBLY -- the carried-content CITATION THEOREM for D0-CASCADE-INSUFFICIENCY-CHAIN-001: one conjunction, every conjunct CITED from its minted module at its own registered grade, no new mathematics; the content is citability (one theorem replacing six scattered pointers) and the machine-checked clean-axiom composition. CONJUNCTS AND THEIR GRADES, verbatim: (1) carriedFloorsExtended -- the scaffold's four CascadeStep floors + defect-closure + shell-closure, SIX steps, every one genuine via the scaffold's own step_discriminates (extended_floors_are_genuine; genuineness of the members owned at their rows); the extended list is THIS module's object, inserted at prose positions -- the scaffold's own carriedFloors (4 steps) is untouched and link 2's 5->6 6->7 adjacency stays owned there; (2) link 1 chain_linked_four_five_to_five_six (scaffold, shared-object); (3) link 2 chain_linked_five_six_to_six_seven (scale, shared-object); (4) link 3 chain_linked_order_to_defect_closure (shared-object); (5) link 4 chain_linked_closure_to_shell (PROSE-ANCHORED, its registered grade -- not upgraded by assembly); (6) the terminal count leg cascade_terminal_count (every admissible parameter, reflection-proxy grade); (7) the address-ladder floor stepOrientationParity genuine (it IS a CascadeStep, the fifth registered floor D0-CASCADE-FLOOR-ORIENTATION-PARITY-001, anchored at the address-ladder prose so it has no position in the ordered chain list -- assembled as a separate conjunct). Cross-ref D0-CASCADE-CHAIN-SCAFFOLD-001 (cascade_chain_scaffold already contains conjunct 2 and the four-floor genuineness; this assembly cites, does not compete). NOTHING UPGRADED: the umbrella stays OPEN (the each-floor-FORCED-by-previous statement over the full prose chain is not claimed); the topological/2-cell reading, the typed count seam (D0-SCENE-COUNT-REDUCTION-001, records unconstructed) and the insufficiencies<->layers identifications (prose grade) remain with their owners. Clean axioms propext/Classical.choice/Quot.sound; no native_decide. Finite dimensionless statement; no physical promotion claimed.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeCarriedAssembly.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.CascadeCarriedAssembly",
+      "kind": "lean_module",
+      "label": "D0.Foundation.CascadeCarriedAssembly",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeCarriedAssembly.lean",
       "exists": true
     }
   ],
@@ -29880,6 +29909,16 @@
     {
       "source": "D0-CASCADE-TERMINAL-COUNT-001",
       "target": "module:D0.Foundation.CascadeTerminalCount",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CASCADE-CARRIED-ASSEMBLY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CASCADE-CARRIED-ASSEMBLY-001",
+      "target": "module:D0.Foundation.CascadeCarriedAssembly",
       "kind": "implemented_in"
     }
   ]

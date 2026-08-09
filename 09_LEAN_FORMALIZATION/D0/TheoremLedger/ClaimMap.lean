@@ -1008,7 +1008,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CASCADE-FLOOR-SHELL-CLOSURE-001", moduleName := "D0.Foundation.CascadeFloorShellClosure",
       theoremName := "interior_not_reflection_closed;shells_reflection_closed;shell_scale_forced;shell_scale_is_scale_survivor;chain_linked_closure_to_shell;shell_closure_floor_genuine", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CASCADE-TERMINAL-COUNT-001", moduleName := "D0.Foundation.CascadeTerminalCount",
-      theoremName := "interior_card_two;closed_superset_contains_outer;three_shells_least_closed;closure_card_three;carrier_card_three;cascade_terminal_count", status := ClaimStatus.leanCoreProved }
+      theoremName := "interior_card_two;closed_superset_contains_outer;three_shells_least_closed;closure_card_three;carrier_card_three;cascade_terminal_count", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CASCADE-CARRIED-ASSEMBLY-001", moduleName := "D0.Foundation.CascadeCarriedAssembly",
+      theoremName := "extended_floors_are_genuine;cascade_carried_assembly", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

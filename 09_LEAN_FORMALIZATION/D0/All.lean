@@ -219,6 +219,7 @@ import D0.Extensions.X5.Synthesis.NondegenerateFullModel
 import D0.Foundation.AdmissibleComparisonGrammar
 import D0.Foundation.BranchSymplecticForcing
 import D0.Foundation.CanonicalSelectorNoGo
+import D0.Foundation.CascadeCarriedAssembly
 import D0.Foundation.CascadeChain
 import D0.Foundation.CascadeFloorComparison
 import D0.Foundation.CascadeFloorDefectClosure
