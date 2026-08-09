@@ -605,3 +605,35 @@ idempotent.
 **Lesson recorded:** after any Lean closure, verify the CSV row was actually written to disk — do not trust the
 in-kernel count. This is exactly the cascade-not-pointwise integrity the sync architecture is meant to
 enforce, and the guard did its job once the CSV parsed cleanly.
+
+## §14 — 2026-08-09: registration + nine adversarial campaigns (the largest single-day advance on record)
+
+**Campaign 0 executed** (the mandatory-first registration the 2026-08 plan declared blocking):
+the July–August session layer committed (checkpoint b515028), 26 owner-gated rows minted +
+6 registry repairs (rows 305/583 stale-THE and fork-state; D0-P-SUBCRIT-001 closed — left the
+attack queue; PHASON-WZ-LOGDET desync). Registry 601 → 635 across the day; strength 73.8% →
+75.2%; D0.All 4458 → 4476 jobs GREEN; 0 integrity demotions throughout.
+
+**Nine campaigns, each through the full loop** (pre-flight → compute → Lean → memo with
+pre-registered attack surface → independent skeptic → repairs as errors of record → mint →
+gate): B1 359-cross-sector COR row; toral composition law for 17 = 5+12 (transport factor
+gains the owned address 322 − φ¹²); transport splitting-field no-go (√5, φ outside K —
+owner-edge, discharges TransportFieldNoGolden's named next step; row 583 upgraded: no
+transport-spectral origin in the exhausted class, toral system the only owned positive
+origin); cascade interlock second link (finite carriers realize only captured scales);
+defect-closure floor (commutator survives the basepoint move only as the conjugacy-class =
+closed-loop datum); shell-closure floor (03.23.5 at reflection-proxy grade; shell scale
+forced to φ = the scale floor's own survivor); terminal COUNT leg (2 interior + forced
+closure = exactly 3, on a carrier none of the three dead routes used, all obituaries
+standing); carried-cascade assembly (one citation theorem, note-only umbrella pointer).
+Umbrella D0-CASCADE-INSUFFICIENCY-CHAIN-001: value 37.2 → 59.5, carries 7.
+
+**Lesson recorded (5 hits in one day):** every draft claim of ABSENCE or NOVELTY must be
+grepped before writing — including the ±10-line neighborhood of your own citations, the real
+level when the integer level looks clean, and the target module's own controls. The skeptics
+found false pre-flights in five of nine campaigns (LucasDefectSign owned the defect identity;
+BOOK_04 owned the S₃ computation; control_quaternion_orderEncoded existed 8 lines below the
+cited line; torus_shell_card_eq_three was registered; stepOrientationParity WAS a
+CascadeStep). All five caught pre-mint, repaired as errors of record, zero false theorems
+entered. Identifier discipline twin: lean_theorem names come from the modules, never from
+proposal prose (14 fictional identifiers in one draft batch).
