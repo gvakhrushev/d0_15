@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 227
+- `CORE-FORMALIZED`: 228
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
@@ -22,7 +22,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 45
 - `certificate`: 195
-- `core`: 230
+- `core`: 231
 - `deprecated`: 3
 - `frontier`: 62
 - `no-go`: 96
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 50
 - `empirical_passport`: 39
 - `external_background`: 1
-- `formal_core`: 366
+- `formal_core`: 367
 - `frontier`: 62
 - `gauge_bridge`: 51
 - `interpretation_spine`: 1
@@ -3601,6 +3601,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07] FLOOR 2->3 of D0-CASCADE-INSUFFICIENCY-CHAIN-001, the step the cascade opens with and the same requirement BOOK_01 §01.3 states as the no-monopoly dyad. Obligation VERIFIABILITY: an acceptor must admit some record and refuse another, or it certifies nothing. INSUFFICIENT: proved for EVERY monopoly acceptor -- one with no second reading to consult is constant, since a non-constant predicate on the raw value IS an admissible-value table, i.e. the external catalogue M1 forbids -- and both degenerate cases are named (accept-all discriminates nothing, reject-all records nothing). CONTROL: the dyadic acceptor (direct vs return) admits agreeing pairs and refuses disagreeing ones. MINIMAL: the dyad differs from the floor exactly by not being constant -- one return reading. Owns the information-theoretic content; identifying the second reading with the detector's return branch is the reading, owned by §01.3.
 
+### D0-CASCADE-FLOOR-DEFECT-CLOSURE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.CascadeFloorDefectClosure`
+- theorem: `abelian_defect_trivial;defect_exists;element_defect_not_invariant;class_defect_invariant;class_defect_of_commutator_invariant;chain_linked_order_to_defect_closure;abelian_invariance_is_vacuous;defect_closure_floor_genuine`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08-09 POST-SKEPTIC] FIRST NEW FLOOR since the scaffold + THIRD interlock link of D0-CASCADE-INSUFFICIENCY-CHAIN-001: the 01.6.1c prose step 'defect => circulation needs closure' carried in the registered CascadeStep shape (stepDefectClosure). CONTENT: the defect is the commutator [a,b] = a*b*a^-1*b^-1 -- the exact element measuring the order floor's failure; abelian carrier: identically 1, invariance vacuous (abelian_defect_trivial, abelian_invariance_is_vacuous -- the floor only OPENS once order is repaired); on the order-repair carrier S3 (control_orderEncoded cited from D0-CASCADE-FLOOR-ORDER-MEMORY-001) defects exist (defect_exists) BUT the element-level defect fails invariance under the basepoint move = conjugation (element_defect_not_invariant, kernel decide); the CLOSED reading -- the conjugacy CLASS -- is generically invariant (class_defect_invariant). Conjugacy classes of pi1 = free-homotopy classes of CLOSED loops: standard correspondence at docstring-grade convention (same grade as the corpus's eigenvalue<->root pointer); the Lean content is the invariance split itself. Floor genuine via the scaffold's own step_discriminates (defect_closure_floor_genuine); third link chain_linked_order_to_defect_closure -- the repair creates the object on which the next obligation is asked, fails its open form, forces the closed one; restricted corollary class_defect_of_commutator_invariant instantiates the exact requirement at the defect classes; the Above obligation is the DESCENT statement to the quotient carrier ConjClasses (Equiv.Perm (Fin 3)) -- below carrier S3, above carrier the quotient (the scaffold's at-both-carriers grammar). In-corpus anchors: BOOK_03 03.23.4 ('non-commutative holonomy on the same loop basis' = the defect-datum reading); BOOK_03 03.23.5 owns the OTHER closure (outer-shell/global topology) = the still-open closure=>shell half -- two named, non-competing closures. HONESTY: the control is generic (true on every carrier by the quotient construction); the floor's bite is entirely in the insufficient leg (kernel decide on S3). Load-bearing definitions: commDefect, stepDefectClosure. NON-BINDINGS (pre-registered): the prose gloss 'generations = defect classes' is NOT bound (separate owner burden); the Q8 role-group class partition (FactorBlockLaw, GAP-E context) is a different carrier -- ConjClasses here is generic Mathlib machinery. PLACEMENT: floor + link package, NOT a renumbering of the scaffold (carriedFloors untouched; the floor sits between order and shell in the prose; the scaffold's carried numbering does not yet index it; in the 01.6.1c prose the defect step is order-memory's IMMEDIATE successor -- prose adjacency exact, scale comes earlier per the caveat at D0-CASCADE-INTERLOCK-SCALE-001). UMBRELLA STAYS OPEN: closure=>shell (2-cell/attachment layer) and 'three insufficiencies = three zones' remain unformalized. Clean axioms propext/Classical.choice/Quot.sound; no native_decide. Finite dimensionless statement; no physical promotion claimed.
+
 ### D0-CASCADE-FLOOR-ONE-LOOP-001
 
 - type: `core`
@@ -6020,7 +6033,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. Umbrella stays OPEN: floors defect=>closure=>shell and 'three insufficiencies = three zones' unformalized; machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).
+- notes: [2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. THIRD LINK + FIRST NEW FLOOR [2026-08-09]: D0-CASCADE-FLOOR-DEFECT-CLOSURE-001 (stepDefectClosure + chain_linked_order_to_defect_closure) -- the prose step 'defect => circulation needs closure' carried in the CascadeStep shape: the order repair's commutator defect fails element-level basepoint invariance, survives only as the closed (conjugacy-class) datum. Remaining unformalized: closure=>shell, three-insufficiencies=>three-zones. Umbrella stays OPEN: floors defect=>closure=>shell and 'three insufficiencies = three zones' unformalized; machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).
 
 ### D0-CMB-IDS-SMOOTHING-OWNER-001
 

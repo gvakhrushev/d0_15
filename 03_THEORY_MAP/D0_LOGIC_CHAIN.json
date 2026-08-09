@@ -981,7 +981,7 @@
     },
     "D0-CASCADE-CHAIN-SCAFFOLD-001": {
       "block_hash": "2857a00c90ed2aa684051356b11306039b3ff652a9f2ae3c92787fac6d9d9701",
-      "carries": 3,
+      "carries": 4,
       "claim_id": "D0-CASCADE-CHAIN-SCAFFOLD-001",
       "content_hash": "c3bf254d9ed1c8b316429375e5e734e5447e161cf60270930a920045c2912152",
       "depth": 2,
@@ -999,7 +999,7 @@
     },
     "D0-CASCADE-FLOOR-COMPARISON-001": {
       "block_hash": "931d7a270afb67a0c952ff2853996371420df46408f6400f0325e6cff82c1fef",
-      "carries": 5,
+      "carries": 6,
       "claim_id": "D0-CASCADE-FLOOR-COMPARISON-001",
       "content_hash": "cc83b6cc9b2d86e7c6f4ad909b2493784d592c1f6655dbe7885b7262bacbcd66",
       "depth": 0,
@@ -1010,9 +1010,25 @@
       "parents": [],
       "rests_on": 0
     },
+    "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001": {
+      "block_hash": "99ee7bc6d4b2385c82b5437816ac0a1776308c3277f2977000323a16fe486ac5",
+      "carries": 0,
+      "claim_id": "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001",
+      "content_hash": "133b654653f6ec4d38b2295ace182f4bf891aa945e492fd28a1cbfe362789cca",
+      "depth": 3,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.CascadeFloorDefectClosure"
+      ],
+      "parents": [
+        "D0-CASCADE-CHAIN-SCAFFOLD-001",
+        "D0-CASCADE-INSUFFICIENCY-CHAIN-001"
+      ],
+      "rests_on": 7
+    },
     "D0-CASCADE-FLOOR-ONE-LOOP-001": {
       "block_hash": "0e05761f2804d12255298eb7aa34d6e6e0a0361e1d5e137f127b689754b2cfb4",
-      "carries": 5,
+      "carries": 6,
       "claim_id": "D0-CASCADE-FLOOR-ONE-LOOP-001",
       "content_hash": "83fe734d33365f3c06488a5f9bdb8a541b5a4c255545b6c998ce2dac50a4a38b",
       "depth": 0,
@@ -1025,7 +1041,7 @@
     },
     "D0-CASCADE-FLOOR-ORDER-MEMORY-001": {
       "block_hash": "5efcc2469c125e7dcaa310167f6ffe3fb3abd3173194706d240aec6ada5fe996",
-      "carries": 5,
+      "carries": 6,
       "claim_id": "D0-CASCADE-FLOOR-ORDER-MEMORY-001",
       "content_hash": "c4b10e443d5c0462207570f41ed0e91f1844a9fcca03de72a62059a6ad2598f0",
       "depth": 0,
@@ -1055,7 +1071,7 @@
     },
     "D0-CASCADE-FLOOR-SCALE-RATIO-001": {
       "block_hash": "f3b606de204d0259a8fc5ef0ce4153377852c3043ede8e223371621ee7403b6f",
-      "carries": 5,
+      "carries": 6,
       "claim_id": "D0-CASCADE-FLOOR-SCALE-RATIO-001",
       "content_hash": "4e3117238bf36cb422e6fd338f279bae329c6e699e1d85104ee9b05471e6aeb2",
       "depth": 1,
@@ -1070,7 +1086,7 @@
     },
     "D0-CASCADE-INSUFFICIENCY-CHAIN-001": {
       "block_hash": "2857a00c90ed2aa684051356b11306039b3ff652a9f2ae3c92787fac6d9d9701",
-      "carries": 3,
+      "carries": 4,
       "claim_id": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
       "content_hash": "c3bf254d9ed1c8b316429375e5e734e5447e161cf60270930a920045c2912152",
       "depth": 2,
@@ -4720,7 +4736,7 @@
     },
     "D0-PHI-HURWITZ-CLASS-CANONIZATION-001": {
       "block_hash": "8a6f17c3a430ea9ea5538731a154cb99571c6e67ffcc4e7e3a85e91701e61371",
-      "carries": 6,
+      "carries": 7,
       "claim_id": "D0-PHI-HURWITZ-CLASS-CANONIZATION-001",
       "content_hash": "629c8586c9e9c46cc64290112d4c26e635c376afb1d38cafd48cadd28b89523d",
       "depth": 0,
@@ -7204,8 +7220,8 @@
     "09_LEAN_FORMALIZATION/D0/**/*.lean"
   ],
   "summary": {
-    "claims_chained": 490,
-    "claims_total": 631,
+    "claims_chained": 491,
+    "claims_total": 632,
     "claims_unchained": 141,
     "cycle_detected": false,
     "genesis_blocks": 226,

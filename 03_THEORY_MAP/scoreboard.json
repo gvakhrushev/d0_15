@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 8260,
-    "track_fair_max": 11007,
-    "pct_strength": 75.0,
-    "core_realized": 6460,
-    "core_potential": 9140,
+    "realized": 8280,
+    "track_fair_max": 11027,
+    "pct_strength": 75.1,
+    "core_realized": 6480,
+    "core_potential": 9160,
     "core_headroom": 2680,
-    "n_claims": 631,
-    "n_active": 629,
+    "n_claims": 632,
+    "n_active": 630,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 365,
-      "realized": 5338,
-      "max": 6521,
+      "n": 366,
+      "realized": 5358,
+      "max": 6541,
       "core_headroom": 1143
     },
     "smooth_geometry": {
@@ -154,9 +154,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 57,
-      "realized": 808,
-      "max": 1064,
+      "n": 58,
+      "realized": 828,
+      "max": 1084,
       "core_headroom": 256
     },
     "BOOK_05": {
@@ -13198,6 +13198,20 @@
     },
     {
       "claim_id": "D0-CASCADE-INTERLOCK-SCALE-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001",
       "track": "CORE",
       "level": 5,
       "level_name": "CORE_FORMALIZED",

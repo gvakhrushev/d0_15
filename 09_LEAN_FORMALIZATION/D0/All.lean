@@ -221,6 +221,7 @@ import D0.Foundation.BranchSymplecticForcing
 import D0.Foundation.CanonicalSelectorNoGo
 import D0.Foundation.CascadeChain
 import D0.Foundation.CascadeFloorComparison
+import D0.Foundation.CascadeFloorDefectClosure
 import D0.Foundation.CascadeFloorOneLoop
 import D0.Foundation.CascadeFloorOrderMemory
 import D0.Foundation.CascadeFloorOrientationParity

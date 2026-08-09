@@ -1002,7 +1002,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001", moduleName := "D0.Synthesis.TransportSplittingFieldObstruction",
       theoremName := "disc_from_coefficients;disc_factorization;prime_193;prime_2003;disc_not_square;five_disc_not_square;five_not_square;kernel_certificate;transport_splitting_field_obstruction", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-CASCADE-INTERLOCK-SCALE-001", moduleName := "D0.Foundation.CascadeInterlockScale",
-      theoremName := "finite_carrier_ratio_captured;chain_linked_five_six_to_six_seven;scale_floor_forces_out", status := ClaimStatus.leanCoreProved }
+      theoremName := "finite_carrier_ratio_captured;chain_linked_five_six_to_six_seven;scale_floor_forces_out", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001", moduleName := "D0.Foundation.CascadeFloorDefectClosure",
+      theoremName := "abelian_defect_trivial;defect_exists;element_defect_not_invariant;class_defect_invariant;class_defect_of_commutator_invariant;chain_linked_order_to_defect_closure;abelian_invariance_is_vacuous;defect_closure_floor_genuine", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

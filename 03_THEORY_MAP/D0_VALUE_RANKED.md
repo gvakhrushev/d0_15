@@ -10,13 +10,13 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **35.9**. Claims: 631.
+High-value cut (top quartile): **36.0**. Claims: 632.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 6 | high value, not closed — **this is the work queue** |
 | **FRONT DOOR** | 151 | high value, closed — what the README and reading order must lead with |
-| BALLAST | 413 | closed but nothing rests on it — bottom of the registry |
+| BALLAST | 414 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 61 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
@@ -29,7 +29,7 @@ closing it moves the corpus, closing anything below it does not.
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
 | **60.1** | 45 | 2 | 0 | `D0-P-INVARIANT-MINIMAL-001` | PROOF-TARGET |
-| **55.7** | 5 | 3 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
+| **56.9** | 5 | 4 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
 | **45.5** | 5 | 7 | 2 | `D0-TOWER-STOP-NOEXT-001` | PROOF-TARGET |
 | **45.5** | 45 | 1 | 4 | `D0-P-M1-SATURATION-001` | PROOF-TARGET |
 | **45.5** | 45 | 0 | 4 | `D0-GAP-E-PORT-EXHAUSTION-001` | PROOF-TARGET |
@@ -80,9 +80,11 @@ sorted to the bottom of the registry.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
-| **35.6** | 100 | 6 | 0 | `D0-PHI-HURWITZ-CLASS-CANONIZATION-001` | CORE-FORMALIZED |
+| **35.9** | 70 | 0 | 0 | `D0-CONNES-RECONSTRUCTION-OWNER-001` | BRIDGE-ASSUMPTIONS-EXPLICIT |
+| **35.8** | 100 | 6 | 0 | `D0-CASCADE-FLOOR-ORDER-MEMORY-001` | CORE-FORMALIZED |
 | **35.5** | 100 | 0 | 0 | `D0-SM-HYPERCHARGE-ROW-OWNER-001` | CERT-CLOSED |
 | **35.4** | 100 | 4 | 1 | `D0-DELTA-ALPHA-EXACT-001` | CORE-FORMALIZED |
+| **35.0** | 100 | 6 | 0 | `D0-CASCADE-FLOOR-ONE-LOOP-001` | CORE-FORMALIZED |
 | **35.0** | 55 | 0 | 0 | `D0-GRAV-QNM-001` | NO_GO_PROVED |
 | **34.9** | 100 | 2 | 0 | `D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001` | CERT-CLOSED |
 | **34.7** | 100 | 5 | 0 | `D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001` | CERT-CLOSED |
@@ -93,9 +95,7 @@ sorted to the bottom of the registry.
 | **34.6** | 55 | 0 |  | `D0-ALPHA-MEASUREMENT-LIMIT-001` | EMPIRICAL-PASSPORT |
 | **34.6** | 55 | 0 |  | `D0-PHI-CSTAR-PASSPORT-001` | PASSPORT-CLOSED |
 | **34.6** | 55 | 0 |  | `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001` | PASSPORT-CLOSED |
-| **34.6** | 100 | 0 | 0 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | CERT-CLOSED |
-| **34.6** | 100 | 0 | 0 | `D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001` | CERT-CLOSED |
-| … | | | | *+398 more in the ledger CSV* | |
+| … | | | | *+399 more in the ledger CSV* | |
 
 ---
 
