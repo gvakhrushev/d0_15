@@ -10,13 +10,13 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **35.4**. Claims: 627.
+High-value cut (top quartile): **35.5**. Claims: 628.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 7 | high value, not closed — **this is the work queue** |
-| **FRONT DOOR** | 150 | high value, closed — what the README and reading order must lead with |
-| BALLAST | 410 | closed but nothing rests on it — bottom of the registry |
+| **FRONT DOOR** | 149 | high value, closed — what the README and reading order must lead with |
+| BALLAST | 412 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 60 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
@@ -70,7 +70,7 @@ Nothing outside this table belongs in an abstract.
 | **48.9** | 100 | 7 | 2 | `D0-ALPHA-PROFINITE-TOWER-NOGO-001` | NO-GO |
 | **48.7** | 100 | 16 | 0 | `D0-COSMO-HOMOGENEOUS-FIXED-POINT-001` | CORE-FORMALIZED |
 | **48.6** | 100 | 10 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
-| … | | | | *+125 more in the ledger CSV* | |
+| … | | | | *+124 more in the ledger CSV* | |
 
 ---
 
@@ -81,22 +81,22 @@ sorted to the bottom of the registry.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
+| **35.4** | 100 | 4 | 1 | `D0-DELTA-ALPHA-EXACT-001` | CORE-FORMALIZED |
+| **35.4** | 100 | 1 | 1 | `D0-SELF-READING-PRIMITIVE-MINIMALITY-001` | CERT-CLOSED |
 | **35.0** | 55 | 0 | 0 | `D0-GRAV-QNM-001` | NO_GO_PROVED |
 | **34.9** | 100 | 2 | 0 | `D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001` | CERT-CLOSED |
-| **34.8** | 100 | 1 | 2 | `D0-YUKAWA-COMMUTANT-SPECTRUM-001` | CORE-FORMALIZED |
 | **34.7** | 100 | 5 | 0 | `D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001` | CERT-CLOSED |
 | **34.7** | 100 | 0 | 0 | `D0-COMPACTNESS-DEF-FORCING-001` | CORE-FORMALIZED |
 | **34.7** | 70 | 0 | 0 | `D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001` | BRIDGE-ASSUMPTIONS-EXPLICIT |
 | **34.6** | 100 | 5 | 3 | `D0-SCENE-NORMALIZED-QUOTIENT-DESCENT-001` | CORE-FORMALIZED |
+| **34.6** | 100 | 0 | 1 | `D0-XI5-CROSS-SECTOR-001` | CORE-FORMALIZED |
 | **34.6** | 55 | 0 |  | `D0-ALPHA-MEASUREMENT-LIMIT-001` | EMPIRICAL-PASSPORT |
 | **34.6** | 55 | 0 |  | `D0-PHI-CSTAR-PASSPORT-001` | PASSPORT-CLOSED |
 | **34.6** | 55 | 0 |  | `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001` | PASSPORT-CLOSED |
 | **34.6** | 100 | 0 | 0 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | CERT-CLOSED |
 | **34.6** | 100 | 0 | 0 | `D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001` | CERT-CLOSED |
 | **34.5** | 55 | 0 | 0 | `D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001` | PASSPORT-CLOSED |
-| **34.5** | 55 | 0 | 0 | `D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001` | PASSPORT-CLOSED |
-| **34.5** | 55 | 0 | 0 | `D0-FLOQUET-NONRECIPROCAL-DYNAMICS-BRIDGE-001` | PASSPORT-CLOSED |
-| … | | | | *+395 more in the ledger CSV* | |
+| … | | | | *+397 more in the ledger CSV* | |
 
 ---
 
@@ -111,8 +111,8 @@ spent here is bookkeeping. Review for merge into a parent claim or deprecation.
 | **31.2** | 45 | 1 | 4 | `D0-P-ABELIAN-001` | PROOF-TARGET |
 | **30.2** | 45 | 2 | 2 | `D0-INVARIANT-GENERATION-BRIDGE-001` | PROOF-TARGET |
 | **28.2** | 45 | 0 | 5 | `D0-PHYSICAL-COMPARISON-REPRESENTATION-REDUCTION-001` | PROOF-TARGET |
+| **26.7** | 5 | 0 |  | `D0-ALPHA-SEAM-FORM-FORCED-001` | PROOF-TARGET |
 | **25.8** | 45 | 0 | 1 | `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` | PROOF-TARGET |
-| **25.3** | 5 | 0 |  | `D0-ALPHA-SEAM-FORM-FORCED-001` | PROOF-TARGET |
 | **24.9** | 45 | 0 | 3 | `D0-GAP-W-COPY-CAP-M1-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001` | PROOF-TARGET |

@@ -23,7 +23,7 @@ form. Then
 * `reach_iff_sameZone` — hence the orbits of the generated group are precisely the three zones.
 
 Nothing here evaluates `Equiv.Perm (Fin 33)` as a `Fintype`, matching the source module's stated
-constraint. The full group-theoretic statement (`⟨generators⟩ = S₉ × S₁₃ × S₁₃`) is not claimed;
+constraint. The full group-theoretic statement (`⟨generators⟩ = S₉ × S₁₁ × S₁₃`) is not claimed;
 `InvariantGenerationBridge` says the orbit fact is what it consumes, and that is what is supplied.
 -/
 

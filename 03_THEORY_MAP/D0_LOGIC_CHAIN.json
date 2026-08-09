@@ -7158,8 +7158,8 @@
   ],
   "summary": {
     "claims_chained": 487,
-    "claims_total": 627,
-    "claims_unchained": 140,
+    "claims_total": 628,
+    "claims_unchained": 141,
     "cycle_detected": false,
     "genesis_blocks": 226,
     "max_depth": 10
@@ -7205,6 +7205,7 @@
     "D0-ECHO-NEGATIVE-CONTROL-PROTOCOL-001",
     "D0-EDGE-001",
     "D0-EDGE-002",
+    "D0-EDGE-INVARIANT-CROSS-SECTOR-001",
     "D0-EW-WINDOW-FORCING-001",
     "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
     "D0-FOURCOLOR-HORIZON-CAPACITY-001",

@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 8201,
-    "track_fair_max": 10935,
-    "pct_strength": 75.0,
-    "core_realized": 6413,
-    "core_potential": 9080,
-    "core_headroom": 2667,
-    "n_claims": 627,
-    "n_active": 625,
+    "realized": 8208,
+    "track_fair_max": 10955,
+    "pct_strength": 74.9,
+    "core_realized": 6420,
+    "core_potential": 9100,
+    "core_headroom": 2680,
+    "n_claims": 628,
+    "n_active": 626,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -68,10 +68,10 @@
       "core_headroom": 16
     },
     "spectral_action": {
-      "n": 10,
-      "realized": 136,
-      "max": 175,
-      "core_headroom": 39
+      "n": 11,
+      "realized": 143,
+      "max": 195,
+      "core_headroom": 52
     },
     "cosmology": {
       "n": 50,
@@ -196,10 +196,10 @@
       "core_headroom": 62
     },
     "BOOK_07": {
-      "n": 72,
-      "realized": 940,
-      "max": 1233,
-      "core_headroom": 279
+      "n": 73,
+      "realized": 947,
+      "max": 1253,
+      "core_headroom": 292
     },
     "BOOK_06/08": {
       "n": 4,
@@ -2272,6 +2272,16 @@
       "effort": "write Lean proof"
     },
     {
+      "claim_id": "D0-EDGE-INVARIANT-CROSS-SECTOR-001",
+      "domain": "spectral_action",
+      "book": "BOOK_07",
+      "level_name": "PYTHON_CERTIFIED",
+      "leverage": 0,
+      "next": "LEAN_PROVED",
+      "points_gained": 5,
+      "effort": "write Lean proof"
+    },
+    {
       "claim_id": "D0-P-DEGREE2-EXHAUSTION-001",
       "domain": "frontier",
       "book": "BOOK_00/01",
@@ -3820,6 +3830,13 @@
     {
       "claim_id": "D0-GAP-LABELING-OWNER-EDGE-001",
       "domain": "formal_core",
+      "leverage": 0,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7
+    },
+    {
+      "claim_id": "D0-EDGE-INVARIANT-CROSS-SECTOR-001",
+      "domain": "spectral_action",
       "leverage": 0,
       "level_name": "PYTHON_CERTIFIED",
       "score": 7
@@ -13134,6 +13151,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-EDGE-INVARIANT-CROSS-SECTOR-001",
+      "track": "CORE",
+      "level": 3,
+      "level_name": "PYTHON_CERTIFIED",
+      "score": 7,
+      "ceiling": 20,
+      "release_status": "CERT-CLOSED",
+      "lean_status": "PYTHON_CERTIFIED",
+      "domain": "spectral_action",
+      "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
     }

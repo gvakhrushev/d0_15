@@ -7,7 +7,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 168
+- `CERT-CLOSED`: 169
 - `CORE-FORMALIZED`: 225
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
@@ -21,7 +21,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 45
-- `certificate`: 194
+- `certificate`: 195
 - `core`: 228
 - `deprecated`: 3
 - `frontier`: 62
@@ -39,7 +39,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `rg`: 7
 - `si_calibration`: 2
 - `smooth_geometry`: 41
-- `spectral_action`: 10
+- `spectral_action`: 11
 
 ## Domain: cosmology
 
@@ -4860,7 +4860,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Centralising Aut AND the adjacency leaves dim 6 = 3+3 (visible Q[Q] + one scalar per archive block); transport cubic lambda^3-359*lambda-2574 irreducible over Q (48-divisor sweep, no rational root). Halves the R1 commutant 12 under the scene's own dynamics -- cross-reference D0-P-M1-SATURATION-001 (R1 leg); consumed by D0-TRANSPORT-FIELD-NO-GOLDEN-001 (charpoly owner). ASSEMBLY NOTE: Lean carries the charpoly, the 48-divisor no-root sweep and the count arithmetic; the centraliser(Q)=Q[Q] step and the isotypic split are docstring-grade standard linear algebra (the module records visible_centraliser_dim as the placeholder).
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Centralising Aut AND the adjacency leaves dim 6 = 3+3 (visible Q[Q] + one scalar per archive block); transport cubic lambda^3-359*lambda-2574 irreducible over Q (48-divisor sweep, no rational root). Halves the R1 commutant 12 under the scene's own dynamics -- cross-reference D0-P-M1-SATURATION-001 (R1 leg); consumed by D0-TRANSPORT-FIELD-NO-GOLDEN-001 (charpoly owner). ASSEMBLY NOTE: Lean carries the charpoly, the 48-divisor no-root sweep and the count arithmetic; the centraliser(Q)=Q[Q] step and the isotypic split are docstring-grade standard linear algebra (the module records visible_centraliser_dim as the placeholder). Finite dimensionless 33-scene statement; no physical promotion claimed.
 
 ### D0-SCENE-NORMALIZED-QUOTIENT-DESCENT-001
 
@@ -5133,7 +5133,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Q = 1*n^T - diag n; the secular equation Sum n_i/(n_i+lambda) = 1 IS the transport cubic; eigenvectors 1/(n_i+lambda); D*Q = Q^T*D (self-adjoint in the zone-size measure, real spectrum); parameter-free O(3) generation->transport rotation, explicitly NOT CKM-like (stated in-module).
+- notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] Q = 1*n^T - diag n; the secular equation Sum n_i/(n_i+lambda) = 1 IS the transport cubic; eigenvectors 1/(n_i+lambda); D*Q = Q^T*D (self-adjoint in the zone-size measure, real spectrum); parameter-free O(3) generation->transport rotation, explicitly NOT CKM-like (stated in-module). Finite dimensionless scene object; no physical promotion claimed.
 
 ### D0-TRANSPORT-FORK-ENDGAME-001
 
@@ -8122,6 +8122,19 @@ D0-IM-PRED-001,BOOK_06/08,fractal continuum predictions,D0.IM.FractalContinuumPr
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: Lean structural heat trace skeleton plus Weyl dimension cert.
+
+### D0-EDGE-INVARIANT-CROSS-SECTOR-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `spectral_action`
+- book: `BOOK_07`
+- module: ``
+- theorem: `none`
+- cert: `vp_edge_invariant_cross_sector.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [2026-08-09 POST-SKEPTIC v2 + confirm pass: 0 kills, W1-W5 + RD-1 repaired; memo EDGE_INVARIANT_CROSS_SECTOR_MEMO.md] COR row in the D0-XI5-CROSS-SECTOR-001 sense: the edge count 359 = e2(9,11,13) = |E(K(9,11,13))| (origin owner D0-SCENE-001, edge_count_K_9_11_13) is the SAME owned object consumed by five registered sector chains: spectral action (D0-SCENE-SPECTRAL-ACTION-001 eh_proxy_is_edge_count, a0 = 718 = 2E), alpha (D0-EDGE-ALPHA-001 zetaEdge edge-indexed by construction, 358 bulk + 1 seam = |E| slots), metric/signature (D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001 pairwise_is_edgecount), matter (D0-YUKAWA-COMMUTANT-SPECTRUM-001 qq_spectrum_splits on the same cubic; charpoly owner D0-SCENE-JOINT-COMMUTANT-SIX-001), S_DE/phason window (D0-SCENE-ACTIVE-EIGENVALUES-001 scene_active_eigenvalues_prod = 359/160; generic form D0-TOP-HODGE-NORMALIZED-QUOTIENT-SPECTRUM-001). REQUIRED clause (BOOK_07 Iter27-CAP, verbatim discipline): the identities are structural while the VALUE 359 is scene-specific -- the scene content is only the identification of the five registered constants as one edge count, never the identities themselves (lockstep control K(9,11,15): all structural faces move to 399 together; alpha face exempt, no owned rival-scene formula). CEILING (owned twice, cited not re-minted): no intertwiner -- D0-SDE-CUBIC-SPECTRAL-DISJOINTNESS-001 Bezout certificate 39590739579959 (reproduced in-cert by independent Sylvester/Bareiss resultant) + D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001 'no trace/det coincidence is an intertwiner'. NOT the 'predeclared cross-sector transfer' of the Bezout row's unless-clause; consumer list NOT claimed exhaustive (Tr G = 4|E|, Perron 718/33, cycle space E-V+1 = 327 are further consumers); no EH promotion beyond the finite proxy; the alpha depth sub-leg of D0-ALPHA-SEAM-FORM-FORCED-001 untouched.
 
 ### D0-SOLENOID-GRAVITY-001
 
