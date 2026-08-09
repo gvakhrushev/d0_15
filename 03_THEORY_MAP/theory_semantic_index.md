@@ -3895,10 +3895,10 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - book: `BOOK_04`
 - module: `D0.Spectral.ZetaResidueAlpha`
 - theorem: `zetaEdge_neg_one`
-- cert: `vp_edge_alpha_trace_constructive.py`
+- cert: `vp_edge_alpha_trace_constructive.py;vp_alpha_leading_term_sweep.py`
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
-- notes: [Iter21 promote cert->Lean; fixed dangling lean_module D0.Edge.AlphaRamificationConstructive which never existed] The edge-alpha trace identity zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1 is machine-checked in D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one (shared with D0-ALPHA-ZETA-RESIDUE-001). The unitary-dilation construction stays the optional residual. [was:EDGE-ALPHA-TRACE-CERT-CLOSED]
+- notes: [Iter21 promote cert->Lean; fixed dangling lean_module D0.Edge.AlphaRamificationConstructive which never existed] The edge-alpha trace identity zeta_E(-1)=359*phi^-2-phi^-5=alpha_top^-1 is machine-checked in D0.Spectral.ZetaResidueAlpha.zetaEdge_neg_one (shared with D0-ALPHA-ZETA-RESIDUE-001). The unitary-dilation construction stays the optional residual. [was:EDGE-ALPHA-TRACE-CERT-CLOSED] SWEEP CERT ATTACHED [2026-08-10, error of record]: the pre-refactor README's 'exactly one value within 4e-4 of alpha^-1' sweep-uniqueness claim FAILED reproduction -- the window contains THREE distinct values and both rivals lie closer than the D0 term; the claim had no owner (README prose only) and is retired; vp_alpha_leading_term_sweep.py pins the true combinatorics with can-fail controls. The owned content of this row (zetaEdge_zero, zetaEdge_neg_one) is unaffected.
 
 ### D0-EQUIVARIANT-HYPERCHARGE-CARRIER-001
 

@@ -1,131 +1,171 @@
 # D0 — v15
 
-**A finite theory of physics whose axiom is minimum description length, and which is built to know exactly where its own knowledge ends.**
+**A finite theory of physics whose single axiom is minimum description length, stated as
+exact theorems: hypotheses inside every statement, conclusions machine-checked, open
+problems named as targets.**
 
-Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** · Lean 4 (mathlib) + deterministic Python certificates · `lake build D0.All` green, 0 `sorry` · 53/53 guard scripts pass.
+Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** ·
+Lean 4 (mathlib) + deterministic Python certificates · `lake build D0.All` green, 0
+`sorry`, 4476 jobs · full guard gate green.
+
+**The results, stated exactly: [`D0_EXACT_RESULTS.md`](D0_EXACT_RESULTS.md)** — 24 theorems,
+7 no-go theorems, 5 named open problems. Everything below is a digest of that ledger.
 
 ---
 
 ## The axiom
 
-Everything below descends from one principle, **M1**:
+Everything descends from one principle, **M1**:
 
-> If two constructions give the same class of distinguishable outcomes, the one requiring an extra mandatory external catalogue is inadmissible.
+> If two constructions give the same class of distinguishable outcomes, the one requiring an
+> extra mandatory external catalogue is inadmissible.
 
-This is not an aesthetic preference. In Kolmogorov terms, adding an underivable `θ` moves a law from `K(T)` to `K(T) + K(θ|T)` — it strictly lengthens the minimal description at unchanged predictive content. **M1 is minimum description length applied to physical laws** ([BOOK_00 §0.3.1](01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md)), and it is what terminates the infinite regress `a = b + c + c₁ + c₂ + …` that otherwise collapses the distinction between theorem and fit.
+In Kolmogorov terms: an underivable `θ` moves a law from `K(T)` to `K(T) + K(θ|T)` — a
+strictly longer minimal description at unchanged predictive content. **M1 is minimum
+description length applied to physical laws** ([BOOK_00 §0.3.1](01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md)).
+The operational reconstruction programme (Hardy 2001; Chiribella–D'Ariano–Perinotti 2011;
+Masanes–Müller 2011) derives complex Hilbert space from finite capacity plus tomographic
+locality; D0 reaches the same target from MDL instead of tomographic locality. That
+substitution is the novelty claim; M1 is a proven predicate whose derivability clause is
+grammar-functorial (`D0-M1-PREDICATE-001`, `D0-M1-UNIVERSALITY-001`).
 
-The operational reconstruction programme (Hardy 2001; Chiribella–D'Ariano–Perinotti 2011; Masanes–Müller 2011) derives complex Hilbert space from finite information capacity plus tomographic locality. D0 takes a **different entry point to the same target**: MDL instead of tomographic locality. That substitution is the theory's actual novelty claim.
+## What is proved (digest — exact forms in the [ledger](D0_EXACT_RESULTS.md))
 
-## The results, ranked by value
+**Quantum mechanics.** Linearity of superposition: the unique catalogue-free mediator
+evolution has no interaction term (T1). The Born quadratic `x²+y²` is the unique phase-blind
+form invariant under the quarter-turn `J` — a hypothesis that covers dimension 2, where
+Gleason does not apply; the weaker area-preservation hypothesis provably does not suffice
+(T2, with machine-checked counterexample). The role algebra: all-subgroups-normal +
+non-abelian ⇒ Hamiltonian ⇒ `Q₈` is a forced factor by Baer's classification (T3). The
+arrow of time is heat-trace monotonicity of a finite Laplacian; the time layer has dimension
+`deg ℚ(φ) = 2`, the unique Pisot-clean choice (T5).
 
-Ranking is [computed, not asserted](03_THEORY_MAP/D0_VALUE_RANKED.md) — structural weight in the derivation chain, semantic load of the formal statement, falsifiability reach, foundation position, and declared external significance (every weight carrying a [named external question and citation](03_THEORY_MAP/D0_EXTERNAL_SIGNIFICANCE.csv), disputable per row).
+**Geometry.** For any 3-zone scene the quotient cubic is `λ³ − e₂λ − 2e₃`, forcing
+signature (1,2); on K(9,11,13) the coefficients ARE the scene: `e₂ = 359 = |E|`,
+`2e₃ = 2574` (T6–T7). The spectrum data `(D,H,M₂)` determine the zone triple — inverse
+spectral rigidity with every hypothesis load-bearing (T8). The multiplicative pair
+`(1287, 960)` has the unique preimage `(9,11,13)` over all part counts (T9). The dark
+sector is exactly the Aut-invariant-free part of `ker A` (T10).
 
-| result | what it answers outside D0 | status |
-|---|---|---|
-| **Linearity of superposition is derived, not postulated** (`D0-BRANCH-SYMPLECTIC-FORCING-001`) | Linearity is postulate I in every standard axiomatisation. Here: a mediator's arity is forced to 2, any interaction term needs a coupling constant = a catalogue, and truncating the resulting series presupposes a scale catalogue. The only catalogue-free form has no interaction term. [§01.6.0](01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md) | CORE-FORMALIZED |
-| **The Born rule's quadratic form, including the 2D case Gleason cannot reach** (`D0-SYMPLECTIC-GLEASON-001`, `D0-BORN-QUADRATIC-ORIGIN-001`) | Gleason's theorem requires dim ≥ 3; in dim 2 the Born rule is a known open loophole, closed in the literature only by moving to POVMs (Busch 2003). D0 closes it from M1: a phase-blind response must be invariant under the **quarter-turn** `J(x,y)=(-y,x)`, and `x²+y²` is the unique such quadratic form. *Scope, corrected 2026-07: this is invariance under a specific order-4 rotation, **not** symplectic-area preservation — the shear is area-preserving and does not fix `x²+y²` (machine-checked negative control, `D0-BORN-AREA-PRESERVATION-INSUFFICIENT-NOGO-001`).* [§01.6.1b, §01.17.1a](01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md) | CORE-FORMALIZED |
-| **φ is selected by minimum description length** (`D0-PHI-HURWITZ-001`) | Why φ and not another constant? Because `φ = [1;1,1,1,…]` is the irrational whose continued fraction stores no information — the MDL optimum — and by Hurwitz it is maximally resistant to rational capture *at every truncation depth*, hence compatible with the inverse limit. *Scope: the corpus presents this as one of several **independent** routes alongside `p+p²=1` and Fibonacci fusion. That independence does not currently hold — the formal owner quantifies over `D0ResponseRoot x := 0 < x ∧ x + x² = 1`, i.e. it maximises **inside** the detector route's own equation family, and `1/√5` is just `1/√disc(x²−x−1)`. Treated as one route with several readings until a genuinely independent second route is proved; see the [route audit](03_THEORY_MAP/D0_FORCING_ROUTES.json).* | CORE-FORMALIZED |
-| **The arrow of time is a corollary, not a postulate** (`D0-PISOT-CONTRACTION-TIME-ARROW-001`) | The thermodynamic arrow normally requires an independent low-entropy past hypothesis. Here information time `I(t) = −log P(t)` is monotone because the heat trace decays — a spectral property of a finite Laplacian. The time layer is 2-dimensional because `deg ℚ(φ) = 2`, and a smooth Markov partition exists **iff** the spectrum is Pisot, so 2 is the only pathology-free dimension. [§06.30a](01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md) | CORE-FORMALIZED |
-| **Lorentzian signature from tripartiteness alone** (`D0-SIGNATURE-31-SPLIT-001`, `D0-RANK3-METRIC-TRANSPORT-001`) | Recovering `(3,1)` rather than assuming it is an open problem shared by causal sets, CDT and spin foams. The equitable quotient of any 3-zone graph has characteristic polynomial `λ³ − e₂λ − 2e₃`; with zero trace and positive `e₃` this forces exactly one positive and two negative eigenvalues. Space rank 3 is proved on the literal 33×33 adjacency matrix. **Falsifier**: the two negative eigenvalues split unless the zones are equal — the carrier-level spatial form is anisotropic. | CORE-FORMALIZED |
-| **The role algebra is pinned by a classification theorem** (`D0-Q8-DEDEKIND-MINIMALITY-001`) | Not "the smallest example a search found": a non-normal subgroup would force recording *which* conjugate copy = a catalogue, so all subgroups are normal; order memory forbids abelian; hence Hamiltonian; and by Baer 1933 every Hamiltonian group is `Q₈ × B × D`, so `Q₈` is a forced **factor**, not a minimal instance. [§02.18.1](01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md) | CORE-FORMALIZED |
-| **M1 itself is a proven predicate, and grammar-stable** (`D0-M1-PREDICATE-001`) | The exogenous-parameter test transports and reflects along faithful interpretations, with kernel-checked countermodels showing each direction load-bearing — so the criterion is not parochial to D0's own vocabulary. | CORE-FORMALIZED |
+**One invariant, five sectors.** The edge count `359` is the identical owned object in the
+discrete Einstein–Hilbert proxy, the α leading term, the metric cubic, the Yukawa
+non-degeneracy, and the S_DE window product `359/160` — with a certificate whose control
+moves every structural face together on a rival scene, and a proven no-intertwiner ceiling
+(Bézout certificate `39590739579959`) (T13).
 
-The scene **K(9,11,13)** (33 vertices, 359 edges, role algebra `Q₈`) is the object these forcings converge on; the α-line, the mass chain and the cosmology sector are its representation theory. Those are downstream and are *not* the entry point — see the honest status below.
+**Golden/toral calculus.** `Tr(Tⁿ) = (−1)ⁿLₙ`; `(φ⁻¹)ⁿ = (−1)ⁿ(Lₙ − φⁿ)`; the composition
+law `L_{m+n} = L_mL_n − (−1)ⁿL_{m−n}` transports to traces; at `17 = 12+5`:
+`L₁₇ = L₁₂L₅ + L₇` with the correction forced by `det T⁵ = −1`, and
+`φ⁻¹⁷ = (φ⁵−11)(322−φ¹²)` — both factors of the α depth are return defects of one toral
+automorphism (T14).
 
-**For a foundations reader:** [`D0_FOUNDATIONS_ARTIFACT.md`](00_PUBLICATION/D0_FOUNDATIONS_ARTIFACT.md) states the above self-contained, with every claim's machine-checked owner and its scope, and requires no entry into the corpus.
+**The α line.** `ζ_E(0) = 359` and `ζ_E(−1) = 359φ⁻² − φ⁻⁵ = α_top⁻¹`, exact in ℤ[φ] (T17;
+the pre-refactor sweep-uniqueness claim failed reproduction and is retired — the true sweep
+combinatorics are pinned by a can-fail certificate, see T17). Of the dressing: angle `12/5`, `sin` channel, seam
+factor `ξ₅`, linear form — each an exact theorem; under the five named hypotheses of T18
+the per-crossing weight is exactly `φ⁻¹`. And a full-closure negative: `√5` lies outside
+the entire splitting field of the transport cubic (`Gal = S₃`, discriminant certificates
+mod 9 and mod 7) — no rational-coefficient function of all transport eigenvalues jointly
+produces golden content, so the φ-power mechanism's only owned home is the toral return
+system (T19–T20).
 
-## The honest boundary
+**The cascade** (the central thesis, carried part): seven insufficiency floors, each with a
+proved insufficiency and satisfiable control; four interlock links of the exact shape *the
+repair of floor n is the failing carrier of floor n+1*; the count **3** derived from the
+closure structure itself (least reflection-closed completion of the two interior layers —
+no `3 ≤ _` hypothesis anywhere); all of it composed in one clean-axiom theorem
+(T21–T24).
 
-**No sharp multi-point discriminating confirmation exists.** This is stated first because it is what a physicist needs to know before reading anything else. From the [external-data scoreboard](08_PASSPORTS/_EXTERNAL_DATA_REVIEW/tests/SCOREBOARD.md), against downloaded data:
+**No-go theorems** are exact results, not caveats: transport spectrum blindness, ΛCDM
+excluded by degeneracies alone in the ratio reading, gap-label genericity (the 25 computed
+plateaux all lie in the module of any Fibonacci hull — such a measurement cannot
+discriminate D0; revival condition: a forced gap-opening subset), equivariant seam
+vanishing, three dead count routes (N1–N7; reopening conditions live in the registry rows).
 
-- **Survivors** are single-number or bridge matches: `sin²θ_W` on-shell (0.23σ), `m_s/m_d = 20` (0.02σ), the Coldea `φ`, the α leading term, the PDG seam-α falsifier.
-- **Demoted after self-audit**: the PMNS `δ₀`-family and the LIGO `φ⁻¹` mass-defect are post-hoc passport fits, not discriminating.
-- **Honest negative**: the SPARC phason-halo dark-matter kernel is rejected in ~91% of galaxies.
-- **Corrected over-read**: DESI DR2 confirms *evolving* dark energy but not the specific thawing corner.
+## Open problems ([ledger §Open problems](D0_EXACT_RESULTS.md#open-problems-named-targets-not-qualifications))
 
-On the flagship α line: `α⁻¹ = 359φ⁻² − φ⁻⁵ + φ⁻¹⁷(1+lnφ·sin(12/5))`. The leading term is structurally rare — an exhaustive sweep of `N·φᵖ + m·φᵠ` over `N ≤ 500`, `|m| ≤ 12`, exponents to ±20 finds exactly **one** value within `4·10⁻⁴` of `α⁻¹`, and it is this one. But the third term's ratio is fitted, and simple alternatives fit it better. So roughly 5.5 digits are structural and the rest is a consequence-grade check — the registry says so, and so does this README.
+- **P1** — a second forcing route to φ with premises disjoint from the detector equation
+  family (one repaired pair exists: Hurwitz-class canonization + Jones slot; the route audit
+  found 0/20 sampled multiplicity claims independent — proving one more is the
+  highest-value theorem available).
+- **P2** — the α depth total `φ⁻¹⁷ = ξ₅·φ⁻¹²` as a seam statement; sharpest form: identify
+  the seam transport with the twelfth toral return; door 1 (`dim g_light`) is the live
+  rival awaiting an owner decision.
+- **P3** — cascade completion: the each-floor-forced statement over the full chain, the
+  2-cell reading of shell closure, the typed count seam.
+- **P4** — a discriminating experiment. Pre-registered candidates: two-tone SBSL
+  golden-drive (frozen before data contact), the Keller–Miksis window (≤ 2·10⁻³),
+  `w = 3/5 − φ` vs future DESI.
+- **P5** — the [computed attack queue](03_THEORY_MAP/D0_VALUE_RANKED.md) (6 items).
 
-The theory is at the stage where the mathematical structure is being built and the discriminating test does not yet exist. Gap labelling was the most plausible route to one — Fibonacci-quasicrystal gap labels are *measured* in photonic and cold-atom platforms rather than Planck-suppressed — and it was checked before any comparison with data: **the D0 label set is generic** (`D0-GAP-LABEL-GENERICITY-NOGO-001`). All 25 computed plateaux lie in `ℤ + ℤ/φ`, Bellissard's module for *any* Fibonacci hull, so a measurement agreeing with them distinguishes nothing. The channel revives only if a forced gap-opening *subset* is derived. Recorded as a closed lead, in the same class as the SPARC dark-matter negative.
+## Empirical record (exact, from the [external-data scoreboard](08_PASSPORTS/_EXTERNAL_DATA_REVIEW/tests/SCOREBOARD.md))
 
-## The structural defect worth knowing about first
+| test | result |
+|---|---|
+| `sin²θ_W` on-shell | 0.23σ |
+| `m_s/m_d = 20` | 0.02σ (bridge) |
+| α leading term | exact identity (T17); sweep-uniqueness claim retired by reproduction; 9-digit total = consequence check pending P2 |
+| Coldea `φ` (CoNb₂O₆) | corroborates; not discriminating |
+| SPARC phason-halo kernel | rejected in ~91% of galaxies (recorded negative) |
+| PMNS `δ₀` family, LIGO `φ⁻¹` defect | recorded non-discriminating (post-hoc family) |
+| DESI DR2 | consistent with evolving dark energy; thawing corner not confirmed |
 
-The corpus repeatedly claims an object is forced by **several independent routes** — "two independent
-forcings of φ", "two-channel forced centre", "(3,1) from two distinct mechanisms". That redundancy is
-what would make the structure antifragile: kill one route, the object survives.
+No multi-point discriminating confirmation exists yet; producing one is P4.
 
-An adversarial audit of 20 of the 82 such claims ([route audit](03_THEORY_MAP/D0_FORCING_ROUTES.json))
-found **none** of the 20 independent — each pair or family shares a load-bearing premise. Three spot
-checks, verified by hand:
+## Verify it yourself
 
-- the machine-checked Hurwitz/phase-generator uniqueness quantifies over `D0ResponseRoot x := 0 < x ∧ x + x² = 1`, so the "MDL route" to φ is formalised *inside* the detector route's equation family;
-- the two routes to the Born quadratic are the same three-line computation on the same map `J`, and the stated weaker premise (area preservation) is provably insufficient;
-- the registry itself already mints `D0-P-DEGREE2-EXHAUSTION-001` as the *shared parent* of several claims the books present as independent.
+```bash
+pip install -r requirements.txt
+python tools/validate_csv.py            # registry integrity (635 claims)
+python tools/d0_logic_chain.py          # derivation chain + block hashes
+python tools/d0_value_model.py          # value ledger + ranking
+python tools/d0_score.py --strict       # scoreboard (75.2%, 0 integrity demotions)
+```
 
-A second failure mode surfaced in the hand audit: several assertions are **decomposition, not
-redundancy**. BOOK_06 §06.30a derives the `3` of `(3,1)` from a graph rank and the `1` from a Pisot
-flow — each mechanism forcing a *different component*. That is correct mathematics and zero
-antifragility: kill either and its component is gone, because neither covers for the other.
+```bash
+cd 09_LEAN_FORMALIZATION && lake build D0.All   # 4476 jobs, 0 sorry
+python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
+```
 
-Nothing here refutes a theorem. What collapses is the **redundancy**: the structure is more
-single-threaded than the prose says.
-
-**Two routes have since been repaired to genuine independence, machine-checked** — the arithmetic
-route to φ (`D0-PHI-HURWITZ-CLASS-CANONIZATION-001`: Hurwitz selects the `GL(2,ℤ)` noble class,
-`M1⁺` canonization selects the representative, and `x²−x−1` comes out as the *conclusion*) and the
-Jones channel (`D0-JONES-SLOT-SELECTOR-001`: external quantization + the owned M1 rational-capture
-clause select `n=5`, and `φ` is the output). Under φ — the corpus's most load-bearing object — there
-is now a real pair of independent supports rather than a claimed one.
-
-Proving a genuinely independent second route to any remaining high-load object is the highest-value
-theorem available: it strengthens everything above that object and needs no new empirical input.
-Ranked targets: the fragile joints in [the architecture map](03_THEORY_MAP/D0_ARCHITECTURE.md);
-full inventory of assertions in [the route inventory](03_THEORY_MAP/D0_ROUTE_INVENTORY.md).
-
-## Where to attack
-
-The [attack queue](03_THEORY_MAP/D0_VALUE_RANKED.md#1-attack-queue--highest-value-not-yet-closed) is the ranked list of claims that are high-value **and** open — closing anything on it moves the corpus, closing anything below it does not. Also standing:
-
-- **Refute a bridge** — 25 named external assumptions, each with an owner file and a written failure condition ([ledger](09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv)).
-- **Exhibit a second object** against any uniqueness row — the kill rule works for outsiders.
-- **Break a certificate** — every cert must be able to fail (`check_cert_can_fail.py` enforces it).
-- **The root**: `D_anchor = 4`, `D_Σ = 5` and the `+2` step rest on the M1 squeeze (`N < D` loses distinguishability; `N > D` needs a significance catalogue). The lower branch is solid; the upper branch is carried by MDL plus canonization (`M1+`). That is the load-bearing argument of the whole scene selection.
+Ways to attack the theory (the kill rules work for outsiders): refute one of 27 named
+bridge assumptions ([ledger](09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv), each
+with a written failure condition); exhibit a second object against any uniqueness row;
+break a certificate (every cert must be able to fail — `check_cert_can_fail.py` enforces
+it); attack the root M1 squeeze (`N < D` loses distinguishability, `N > D` needs a
+significance catalogue; the squeeze's lower branch is solid — the upper branch is carried
+by MDL plus canonization, and that is where to press).
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
-| [`01_BOOKS/`](01_BOOKS/) | the theoretical spine — `BOOK_00` is the entry contract; `BOOK_01`–`08` the mathematics and physics |
-| [`03_THEORY_MAP/`](03_THEORY_MAP/) | **[value ranking](03_THEORY_MAP/D0_VALUE_RANKED.md)**, **[derivation chain](03_THEORY_MAP/D0_LOGIC_CHAIN.json)**, dependency graph, status map, scoreboard |
+| [`D0_EXACT_RESULTS.md`](D0_EXACT_RESULTS.md) | **the theorem ledger — start here** |
+| [`01_BOOKS/`](01_BOOKS/) | the theoretical spine — `BOOK_00` entry contract; `BOOK_01`–`09` mathematics and physics |
+| [`03_THEORY_MAP/`](03_THEORY_MAP/) | [value ranking](03_THEORY_MAP/D0_VALUE_RANKED.md), [derivation chain](03_THEORY_MAP/D0_LOGIC_CHAIN.json), architecture, route inventory |
 | [`05_CERTS/`](05_CERTS/) | deterministic `vp_*.py` certificates with reachable FAIL controls |
-| [`08_PASSPORTS/`](08_PASSPORTS/) | curated external data (PDG, DESI, CMB, LIGO, SPARC…) + SHA256 manifests and the real-data scoreboard |
-| [`09_LEAN_FORMALIZATION/`](09_LEAN_FORMALIZATION/) | the Lean 4 package; the canonical registry and the **[value ledger](09_LEAN_FORMALIZATION/docs/D0_VALUE_LEDGER.csv)** under `docs/` |
+| [`08_PASSPORTS/`](08_PASSPORTS/) | curated external data (PDG, DESI, CMB, LIGO, SPARC…) + SHA256 manifests + real-data scoreboard |
+| [`09_LEAN_FORMALIZATION/`](09_LEAN_FORMALIZATION/) | the Lean 4 package; canonical registry + [value ledger](09_LEAN_FORMALIZATION/docs/D0_VALUE_LEDGER.csv) |
 | [`00_LANGUAGE_NORMALIZATION/`](00_LANGUAGE_NORMALIZATION/) | Rosetta stone: every D0 mnemonic in conventional terms |
-| [`tools/`](tools/) | guard scripts, registry sync, the value model and the chain builder |
+| [`tools/`](tools/) | guard scripts, registry sync, value model, chain builder |
 
 ## Registry, by the numbers
 
-Counts come last on purpose: they measure bookkeeping, not insight. 563 claims — 377 `LEAN_PROVED` (+29 with named bridge assumptions), 109 python-certified, 80 proved impossibilities, 58 open proof-targets, 25 declared external bridges. The [derivation chain](03_THEORY_MAP/D0_LOGIC_CHAIN.json) reports the shape honestly: **205 of 424 Lean-backed claims are genesis blocks** — they import no other D0 module — and the maximum derivation depth is 10. The corpus is currently wide, not deep; connecting those islands is the structural work ahead.
-
-## Getting started
-
-```bash
-pip install -r requirements.txt
-python tools/d0_logic_chain.py        # rebuild the derivation chain + block hashes
-python tools/d0_value_model.py        # rebuild the value ledger and the ranking
-python tools/validate_csv.py          # registry integrity
-python 05_CERTS/vp_status_inflation_audit.py   # anti-promotion audit (its control must fire)
-```
-
-Lean (heavy build artifacts live outside the repo):
-
-```bash
-./tools/lean_dev.ps1 build D0.All
-python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
-```
+635 claims — 442 `LEAN_PROVED` (+31 with named bridge assumptions), 111 python-certified,
+49 open, 2 deprecated; 231 core-formalized, 169 cert-closed, **96 no-go theorems** (89
+NO-GO + 7 NO_GO_PROVED), 62 proof-targets. Derivation chain: 494 of 635 chained, 226
+genesis blocks, max depth 10 — the structure is wide, not deep.
+Counts measure bookkeeping, not insight; the [value ranking](03_THEORY_MAP/D0_VALUE_RANKED.md)
+measures what matters.
 
 ## Method
 
-The corpus is built by an adversarial forcing loop — pre-flight against the registry, compute first with can-fail certificates, a memo with a pre-registered attack surface, then an independent skeptic with a kill mandate. Kills are accepted in full and recorded with their refuting object. Details: [the engine](D0_EPISTEMIC_ENGINE_README.md) · [domain-independent spec](docs/ADVERSARIAL_FORCING_ENGINE_SPEC.md) · [closure contract](D0_CLAIM_CLOSURE_CONTRACT.md).
+Every claim passes an adversarial forcing loop before registration: registry pre-flight →
+exact computation with can-fail certificates → memo with a pre-registered attack surface →
+an independent skeptic mandated to kill by naming a second object or a precise gap →
+repairs accepted as errors of record. Kills, retractions and false grades are themselves
+registered results: the registry carries 2 deprecated rows, a quarantine ledger, and
+accepted-kill records — the loop's output is not that errors never happen, but that they
+are caught, named and kept.
 
 ## License / status
 

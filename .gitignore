@@ -93,3 +93,6 @@ node_modules/
 .claude
 # stray root scratch (canonical copy lives in 09_LEAN_FORMALIZATION/D0/VNext2/)
 /SceneTripleUnique.lean
+
+# Tracked exception: the exact-results ledger (the *_RESULTS.md pattern above is for generated cert outputs)
+!D0_EXACT_RESULTS.md
