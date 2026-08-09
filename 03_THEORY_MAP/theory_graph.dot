@@ -630,6 +630,7 @@ digraph D0Theory {
   "D0-TRANSPORT-FIELD-NO-GOLDEN-001" [label="D0-TRANSPORT-FIELD-NO-GOLDEN-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-EDGE-INVARIANT-CROSS-SECTOR-001" [label="D0-EDGE-INVARIANT-CROSS-SECTOR-001\\nCERT-CLOSED\\nspectral_action", fillcolor="#1f6f9f", fontcolor="white"];
   "D0-TORAL-COMPOSITION-SEVENTEEN-001" [label="D0-TORAL-COMPOSITION-SEVENTEEN-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001" [label="D0-TRANSPORT-SPLITTING-FIELD-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="D0.Synthesis.TopHodgeInverseSpectralRigidity", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001" -> "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -4126,4 +4127,10 @@ digraph D0Theory {
   "D0-TORAL-COMPOSITION-SEVENTEEN-001" -> "module:D0.Synthesis.ToralCompositionSeventeen" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-TORAL-COMPOSITION-SEVENTEEN-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Synthesis.TransportSplittingFieldObstruction" [label="D0.Synthesis.TransportSplittingFieldObstruction", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001" -> "module:D0.Synthesis.TransportSplittingFieldObstruction" [label="module"];
+  "cert:vp_transport_splitting_field.py" [label="vp_transport_splitting_field.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001" -> "cert:vp_transport_splitting_field.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001" -> "domain:formal_core" [label="domain"];
 }

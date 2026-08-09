@@ -10,12 +10,12 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **35.6**. Claims: 629.
+High-value cut (top quartile): **35.6**. Claims: 630.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 7 | high value, not closed — **this is the work queue** |
-| **FRONT DOOR** | 149 | high value, closed — what the README and reading order must lead with |
+| **FRONT DOOR** | 150 | high value, closed — what the README and reading order must lead with |
 | BALLAST | 413 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 60 | low value, not closed — retirement candidates, not campaign targets |
 
@@ -51,18 +51,18 @@ Nothing outside this table belongs in an abstract.
 | **57.5** | 100 | 7 | 1 | `D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001` | NO-GO |
 | **57.3** | 100 | 13 | 1 | `D0-SIGNATURE-31-SPLIT-001` | CORE-FORMALIZED |
 | **56.1** | 100 | 2 | 0 | `D0-Q8-DEDEKIND-MINIMALITY-001` | CORE-FORMALIZED |
+| **56.0** | 100 | 6 | 1 | `D0-EQUIVARIANT-SEAM-NOGO-001` | NO-GO |
 | **54.9** | 100 | 6 | 3 | `D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001` | NO-GO |
 | **54.9** | 100 | 0 | 0 | `D0-PHASON-WZ-KERNEL-ONLY-NOGO-001` | NO-GO |
 | **54.6** | 100 | 9 | 0 | `D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001` | NO-GO |
 | **54.6** | 100 | 3 | 1 | `D0-BORN-QUADRATIC-ORIGIN-001` | CORE-FORMALIZED |
 | **54.6** | 100 | 0 | 2 | `D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001` | NO-GO |
-| **54.3** | 100 | 5 | 1 | `D0-EQUIVARIANT-SEAM-NOGO-001` | NO-GO |
 | **54.2** | 100 | 25 | 1 | `D0-PISOT-CONTRACTION-TIME-ARROW-001` | CORE-FORMALIZED |
 | **54.0** | 100 | 13 | 1 | `D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001` | NO-GO |
 | **53.7** | 100 | 0 | 0 | `D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001` | NO-GO |
 | **53.1** | 70 | 5 | 2 | `D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001` | NO-GO |
 | **52.2** | 100 | 0 | 0 | `D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001` | NO-GO |
-| **51.7** | 100 | 42 | 0 | `D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001` | CORE-FORMALIZED |
+| **51.8** | 100 | 43 | 0 | `D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001` | CORE-FORMALIZED |
 | **51.6** | 100 | 6 | 2 | `D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001` | NO-GO |
 | **51.4** | 100 | 2 | 2 | `D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001` | NO-GO |
 | **50.3** | 55 | 0 | 0 | `D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001` | PASSPORT-CLOSED |
@@ -70,7 +70,7 @@ Nothing outside this table belongs in an abstract.
 | **48.9** | 100 | 7 | 2 | `D0-ALPHA-PROFINITE-TOWER-NOGO-001` | NO-GO |
 | **48.7** | 100 | 16 | 0 | `D0-COSMO-HOMOGENEOUS-FIXED-POINT-001` | CORE-FORMALIZED |
 | **48.6** | 100 | 10 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
-| … | | | | *+124 more in the ledger CSV* | |
+| … | | | | *+125 more in the ledger CSV* | |
 
 ---
 
@@ -110,9 +110,9 @@ spent here is bookkeeping. Review for merge into a parent claim or deprecation.
 | **34.4** | 5 | 0 | 1 | `D0-TORAL-TIME-MARKOV-CONJUGACY-001` | PROOF-TARGET |
 | **31.2** | 45 | 1 | 4 | `D0-P-ABELIAN-001` | PROOF-TARGET |
 | **30.2** | 45 | 2 | 2 | `D0-INVARIANT-GENERATION-BRIDGE-001` | PROOF-TARGET |
+| **28.9** | 5 | 0 |  | `D0-ALPHA-SEAM-FORM-FORCED-001` | PROOF-TARGET |
 | **28.2** | 45 | 0 | 5 | `D0-PHYSICAL-COMPARISON-REPRESENTATION-REDUCTION-001` | PROOF-TARGET |
 | **28.0** | 45 | 0 | 1 | `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` | PROOF-TARGET |
-| **27.9** | 5 | 0 |  | `D0-ALPHA-SEAM-FORM-FORCED-001` | PROOF-TARGET |
 | **24.9** | 45 | 0 | 3 | `D0-GAP-W-COPY-CAP-M1-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001` | PROOF-TARGET |

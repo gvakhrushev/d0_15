@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 8228,
-    "track_fair_max": 10975,
+    "realized": 8240,
+    "track_fair_max": 10987,
     "pct_strength": 75.0,
     "core_realized": 6440,
     "core_potential": 9120,
     "core_headroom": 2680,
-    "n_claims": 629,
-    "n_active": 627,
+    "n_claims": 630,
+    "n_active": 628,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 363,
-      "realized": 5306,
-      "max": 6489,
+      "n": 364,
+      "realized": 5318,
+      "max": 6501,
       "core_headroom": 1143
     },
     "smooth_geometry": {
@@ -130,9 +130,9 @@
       "core_headroom": 0
     },
     "BOOK_02": {
-      "n": 84,
-      "realized": 1026,
-      "max": 1372,
+      "n": 85,
+      "realized": 1038,
+      "max": 1384,
       "core_headroom": 336
     },
     "BOOK_08": {
@@ -13176,6 +13176,20 @@
       "score": 20,
       "ceiling": 20,
       "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_02",

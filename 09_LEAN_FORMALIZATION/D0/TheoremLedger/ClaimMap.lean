@@ -998,7 +998,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-TRANSPORT-FIELD-NO-GOLDEN-001", moduleName := "D0.Synthesis.TransportFieldNoGolden",
       theoremName := "no_quadratic_element_in_transport_field;phi_not_in_transport_field;phi_inv_not_in_transport_field;transport_field_no_golden", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-TORAL-COMPOSITION-SEVENTEEN-001", moduleName := "D0.Synthesis.ToralCompositionSeventeen",
-      theoremName := "lucas_gold;golden_return_defect;seam_factor_toral_address;transport_factor_toral_address;composed_defect_seventeen;registered_total_toral_form;lucas_composition;trace_return_composition;seventeenth_return_composition;trace_T17_clean;lucas_seventeen_composition;fifth_return_orientation;toral_composition_seventeen", status := ClaimStatus.leanCoreProved }
+      theoremName := "lucas_gold;golden_return_defect;seam_factor_toral_address;transport_factor_toral_address;composed_defect_seventeen;registered_total_toral_form;lucas_composition;trace_return_composition;seventeenth_return_composition;trace_T17_clean;lucas_seventeen_composition;fifth_return_orientation;toral_composition_seventeen", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001", moduleName := "D0.Synthesis.TransportSplittingFieldObstruction",
+      theoremName := "disc_from_coefficients;disc_factorization;prime_193;prime_2003;disc_not_square;five_disc_not_square;five_not_square;kernel_certificate;transport_splitting_field_obstruction", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -586,6 +586,7 @@ import D0.Synthesis.ToralCompositionSeventeen
 import D0.Synthesis.TransportFieldNoGolden
 import D0.Synthesis.TransportForkEndgame
 import D0.Synthesis.TransportSpectrumBlindness
+import D0.Synthesis.TransportSplittingFieldObstruction
 import D0.Synthesis.TransportTwelveForkCollapse
 import D0.Synthesis.TypedSceneSelfReconstruction
 import D0.Synthesis.UnitySplitSpacetime

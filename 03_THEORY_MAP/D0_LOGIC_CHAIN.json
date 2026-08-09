@@ -901,7 +901,7 @@
     },
     "D0-CAPACITY-V11-001": {
       "block_hash": "0c527faa041cfdaed4afc840d15569e699d1722d49199ba2e16a7f8b035c3aad",
-      "carries": 18,
+      "carries": 19,
       "claim_id": "D0-CAPACITY-V11-001",
       "content_hash": "890703817f85d9d8245155e575d815cb52fe5e6eea24838c20951a6e97c31f8b",
       "depth": 0,
@@ -914,7 +914,7 @@
     },
     "D0-CAPACITY-V13-001": {
       "block_hash": "0c527faa041cfdaed4afc840d15569e699d1722d49199ba2e16a7f8b035c3aad",
-      "carries": 18,
+      "carries": 19,
       "claim_id": "D0-CAPACITY-V13-001",
       "content_hash": "890703817f85d9d8245155e575d815cb52fe5e6eea24838c20951a6e97c31f8b",
       "depth": 0,
@@ -927,7 +927,7 @@
     },
     "D0-CAPACITY-V9-001": {
       "block_hash": "0c527faa041cfdaed4afc840d15569e699d1722d49199ba2e16a7f8b035c3aad",
-      "carries": 18,
+      "carries": 19,
       "claim_id": "D0-CAPACITY-V9-001",
       "content_hash": "890703817f85d9d8245155e575d815cb52fe5e6eea24838c20951a6e97c31f8b",
       "depth": 0,
@@ -2105,7 +2105,7 @@
     },
     "D0-EQUIVARIANT-SEAM-NOGO-001": {
       "block_hash": "1b4e3abd6595d50e3aa3b2cf84e47ef03d27df7f3bd2bfed6b227847cdbe569c",
-      "carries": 5,
+      "carries": 6,
       "claim_id": "D0-EQUIVARIANT-SEAM-NOGO-001",
       "content_hash": "74ef6573bc2ba60c5cddec6a6284c052bca4b1afc838432fd96aeb22911e4065",
       "depth": 1,
@@ -5559,7 +5559,7 @@
     },
     "D0-SCENE-DARK-ARCHIVE-STRUCTURE-001": {
       "block_hash": "cb13eda4979113f336122e85f12add3fc021774c700dff9983f9efbc0b6366c5",
-      "carries": 12,
+      "carries": 13,
       "claim_id": "D0-SCENE-DARK-ARCHIVE-STRUCTURE-001",
       "content_hash": "d8972c6ae215ae2a1873737b400e6b721e0c35371cf2e0b48d9df8438bcfea55",
       "depth": 0,
@@ -5631,7 +5631,7 @@
     },
     "D0-SCENE-JOINT-COMMUTANT-SIX-001": {
       "block_hash": "137415b4f11952f93d114a410f882b639f9b9eed80940bbe4b9238c9878ad2f1",
-      "carries": 2,
+      "carries": 3,
       "claim_id": "D0-SCENE-JOINT-COMMUTANT-SIX-001",
       "content_hash": "6f2c142e6248f38b0b3c01fccb8ce6eeafa1ff7f0425b1805c9628a1e01f46e9",
       "depth": 1,
@@ -6156,7 +6156,7 @@
     },
     "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001": {
       "block_hash": "8003ab219cb009b6f24e17157639f96693d785c8e61b399d92d0ce06c8cc72a6",
-      "carries": 42,
+      "carries": 43,
       "claim_id": "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001",
       "content_hash": "cbb4e8628aeec51c2199544012394f426de6b96f67203e4b5515ac56b29f01cf",
       "depth": 0,
@@ -6421,7 +6421,7 @@
     },
     "D0-TRANSPORT-FIELD-NO-GOLDEN-001": {
       "block_hash": "1f0ba35b594997def4de4bab90d26717714408c8295de4e315efd8c596963e39",
-      "carries": 0,
+      "carries": 1,
       "claim_id": "D0-TRANSPORT-FIELD-NO-GOLDEN-001",
       "content_hash": "361899b5533064dfd07ee4e33fe592707f03a422e4bde70bd212af3d48053d13",
       "depth": 3,
@@ -6437,7 +6437,7 @@
     },
     "D0-TRANSPORT-FORK-ENDGAME-001": {
       "block_hash": "038eb64f912a212be87a6ca38323b0ea978c252cd4b497d7f3a089eca4716872",
-      "carries": 2,
+      "carries": 3,
       "claim_id": "D0-TRANSPORT-FORK-ENDGAME-001",
       "content_hash": "d832a71e5120dc1aa6102c13895c61c635917aa9f23e8da47abbe6ff35d3c7ec",
       "depth": 2,
@@ -6479,6 +6479,21 @@
       ],
       "parents": [],
       "rests_on": 0
+    },
+    "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001": {
+      "block_hash": "7007b2e6b95f3bf5325c08025454f3b313f51255b07ab4fb0fca38a3667c5bef",
+      "carries": 0,
+      "claim_id": "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001",
+      "content_hash": "adacc376a1f49d80a2a53c5da8f572dcf8d9ad940b0651c03c452a089ed59a15",
+      "depth": 4,
+      "genesis": false,
+      "modules": [
+        "D0.Synthesis.TransportSplittingFieldObstruction"
+      ],
+      "parents": [
+        "D0-TRANSPORT-FIELD-NO-GOLDEN-001"
+      ],
+      "rests_on": 10
     },
     "D0-TRIPARTITE-SIGNATURE-GENERAL-001": {
       "block_hash": "20ff7a06c43e1bb6b9ccc8f6d6ad188db10a48574c19274a5f914118e5ceeed1",
@@ -7056,7 +7071,7 @@
     },
     "D0-YUKAWA-COMMUTANT-SPECTRUM-001": {
       "block_hash": "81418ad88110da3d314f3144146ff5826a7f647414de6c5876645b94a5984993",
-      "carries": 1,
+      "carries": 2,
       "claim_id": "D0-YUKAWA-COMMUTANT-SPECTRUM-001",
       "content_hash": "ee851676efba5626b8e2ad1dd58601f97a85725e3a760a62e8f08f3b3d8bb8d6",
       "depth": 2,
@@ -7173,8 +7188,8 @@
     "09_LEAN_FORMALIZATION/D0/**/*.lean"
   ],
   "summary": {
-    "claims_chained": 488,
-    "claims_total": 629,
+    "claims_chained": 489,
+    "claims_total": 630,
     "claims_unchained": 141,
     "cycle_detected": false,
     "genesis_blocks": 226,
