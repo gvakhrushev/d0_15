@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 226
+- `CORE-FORMALIZED`: 227
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
@@ -22,7 +22,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 45
 - `certificate`: 195
-- `core`: 229
+- `core`: 230
 - `deprecated`: 3
 - `frontier`: 62
 - `no-go`: 96
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 50
 - `empirical_passport`: 39
 - `external_background`: 1
-- `formal_core`: 365
+- `formal_core`: 366
 - `frontier`: 62
 - `gauge_bridge`: 51
 - `interpretation_spine`: 1
@@ -3653,6 +3653,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07] FLOOR 6->7 of D0-CASCADE-INSUFFICIENCY-CHAIN-001: 'return without an external clock => the scale ratio is the fixed point of refinement'. Instantiates the corpus's OWNED M1 rational-capture clause (§01.21.1, the same clause that selects the irrational Jones slot in D0-JONES-SLOT-SELECTOR-001): a rational p/q is captured at a finite stage, becoming indistinguishable from a periodic catalogue entry, bot-M1. INSUFFICIENT: proved for EVERY rational, not for an unlucky choice -- a rational is exactly its own value, so the whole floor fails at once. CONTROL: non-capture is satisfiable, witnessed twice (sqrt 5 and phi), so the demand is real rather than impossible. EXPLICITLY SCOPED: this floor reaches IRRATIONAL, not phi -- proved by exhibiting sqrt 5 as a second survivor distinct from phi. Narrowing to phi is the separately owned D0-PHI-HURWITZ-CLASS-CANONIZATION-001 (Hurwitz class + M1+ canonization, with x^2-x-1 as the OUTPUT). Keeping the two apart is deliberate: crediting a floor with a conclusion its premises do not reach is exactly the error the 2026-07 route audit found elsewhere.
 
+### D0-CASCADE-INTERLOCK-SCALE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.CascadeInterlockScale`
+- theorem: `finite_carrier_ratio_captured;chain_linked_five_six_to_six_seven;scale_floor_forces_out`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08-09 POST-SKEPTIC] SECOND INTERLOCK LINK of D0-CASCADE-INSUFFICIENCY-CHAIN-001 (the umbrella's own named open shape: 'each floor forced by the insufficiency of the previous'), matching chain_linked_four_five_to_five_six in grade and shape, at the SCAFFOLD'S CARRIED ORDER (the D0-CASCADE-CHAIN-SCAFFOLD-001 table is the adjacency owner, reproduced in 01.6.1c: order memory 5->6, scale ratio 6->7; the 01.6.1c prose one-liner places the scale step earlier and gives order-memory the successor 'defect' -- the semantic content is numbering-independent and an owner re-ordering would re-label, not refute, the link). CONTENT: the 5->6 repair carriers meet the order obligation -- OrderEncoded (Equiv.Perm (Fin 3)) (cited control) AND OrderEncoded (QuaternionGroup 2) (control_quaternion_orderEncoded) -- BOTH owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001 ('witnessed twice -- S3 and, notably, Q8'), cited not re-proved -- while EVERY scale ratio either carrier realizes is CAPTURED, failing the 6->7 obligation (finite_carrier_ratio_captured: quotients of finite-stage cardinalities are rational; NonCaptured = Irrational is the floor's own reading, D0-CASCADE-FLOOR-SCALE-RATIO-001). Non-collapse: phi satisfies the scale obligation while no carrier-realized ratio does (scale_floor_forces_out) -- the floors are independent requirements; the repair object creates the carrier on which the next obligation is asked, and fails it. BRIDGING DEFINITION, scoped: carrierRealizedRatio G r := exists s t : Finset G, t.Nonempty and r = s.card/t.card -- THIS module's reading of the finite-stage values available inside a carrier; a different owned reading of carrier-realized scale is new work with its own audit; robustness: the captured-lemma survives dropping t.Nonempty (s.card/0 = 0 is rational); the Fibonacci quantum dimension d = phi is an asymptotic limit of stage ratios, never stage-attained -- it instantiates non-capture, not a counterexample. NO binding of QuaternionGroup 2 to the corpus's Q8-typed role objects (zone-9 labeling, role algebra -- different carrier). UMBRELLA STAYS OPEN: floors defect=>closure=>shell and 'three insufficiencies = three zones' remain unformalized; two links are not the chain. No phi selection claimed (the 6->7 floor reaches 'irrational' only; floor_does_not_select_phi cited). Clean axioms propext/Classical.choice/Quot.sound; no native_decide (q8 witness by decide, kernel). Finite dimensionless statement; no physical promotion claimed.
+
 ### D0-CKM-NONTRIVIAL-FLAVOUR-ALGEBRA-001
 
 - type: `core`
@@ -6007,7 +6020,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
-- notes: [2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. Umbrella stays OPEN: floors defect=>closure=>shell and 'three insufficiencies = three zones' unformalized; machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).
+- notes: [2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. Umbrella stays OPEN: floors defect=>closure=>shell and 'three insufficiencies = three zones' unformalized; machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).
 
 ### D0-CMB-IDS-SMOOTHING-OWNER-001
 

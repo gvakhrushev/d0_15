@@ -10,14 +10,14 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **35.6**. Claims: 630.
+High-value cut (top quartile): **35.9**. Claims: 631.
 
 | quadrant | count | what it means |
 |---|---:|---|
-| **ATTACK QUEUE** | 7 | high value, not closed — **this is the work queue** |
-| **FRONT DOOR** | 150 | high value, closed — what the README and reading order must lead with |
+| **ATTACK QUEUE** | 6 | high value, not closed — **this is the work queue** |
+| **FRONT DOOR** | 151 | high value, closed — what the README and reading order must lead with |
 | BALLAST | 413 | closed but nothing rests on it — bottom of the registry |
-| DRIFT | 60 | low value, not closed — retirement candidates, not campaign targets |
+| DRIFT | 61 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
 
@@ -29,12 +29,11 @@ closing it moves the corpus, closing anything below it does not.
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
 | **60.1** | 45 | 2 | 0 | `D0-P-INVARIANT-MINIMAL-001` | PROOF-TARGET |
-| **54.5** | 5 | 2 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
+| **55.7** | 5 | 3 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
 | **45.5** | 5 | 7 | 2 | `D0-TOWER-STOP-NOEXT-001` | PROOF-TARGET |
 | **45.5** | 45 | 1 | 4 | `D0-P-M1-SATURATION-001` | PROOF-TARGET |
 | **45.5** | 45 | 0 | 4 | `D0-GAP-E-PORT-EXHAUSTION-001` | PROOF-TARGET |
 | **44.2** | 5 | 6 | 2 | `D0-P-DEGREE2-EXHAUSTION-001` | PROOF-TARGET |
-| **35.6** | 45 | 1 | 1 | `D0-GRADING-MINIMAL-COMPLETION-SELECTION-001` | PROOF-TARGET |
 
 ---
 
@@ -70,7 +69,7 @@ Nothing outside this table belongs in an abstract.
 | **48.9** | 100 | 7 | 2 | `D0-ALPHA-PROFINITE-TOWER-NOGO-001` | NO-GO |
 | **48.7** | 100 | 16 | 0 | `D0-COSMO-HOMOGENEOUS-FIXED-POINT-001` | CORE-FORMALIZED |
 | **48.6** | 100 | 10 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
-| … | | | | *+125 more in the ledger CSV* | |
+| … | | | | *+126 more in the ledger CSV* | |
 
 ---
 
@@ -81,6 +80,7 @@ sorted to the bottom of the registry.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
+| **35.6** | 100 | 6 | 0 | `D0-PHI-HURWITZ-CLASS-CANONIZATION-001` | CORE-FORMALIZED |
 | **35.5** | 100 | 0 | 0 | `D0-SM-HYPERCHARGE-ROW-OWNER-001` | CERT-CLOSED |
 | **35.4** | 100 | 4 | 1 | `D0-DELTA-ALPHA-EXACT-001` | CORE-FORMALIZED |
 | **35.0** | 55 | 0 | 0 | `D0-GRAV-QNM-001` | NO_GO_PROVED |
@@ -95,7 +95,6 @@ sorted to the bottom of the registry.
 | **34.6** | 55 | 0 |  | `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001` | PASSPORT-CLOSED |
 | **34.6** | 100 | 0 | 0 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | CERT-CLOSED |
 | **34.6** | 100 | 0 | 0 | `D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001` | CERT-CLOSED |
-| **34.5** | 55 | 0 | 0 | `D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001` | PASSPORT-CLOSED |
 | … | | | | *+398 more in the ledger CSV* | |
 
 ---
@@ -107,6 +106,7 @@ spent here is bookkeeping. Review for merge into a parent claim or deprecation.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
+| **35.6** | 45 | 1 | 1 | `D0-GRADING-MINIMAL-COMPLETION-SELECTION-001` | PROOF-TARGET |
 | **34.4** | 5 | 0 | 1 | `D0-TORAL-TIME-MARKOV-CONJUGACY-001` | PROOF-TARGET |
 | **31.2** | 45 | 1 | 4 | `D0-P-ABELIAN-001` | PROOF-TARGET |
 | **30.2** | 45 | 2 | 2 | `D0-INVARIANT-GENERATION-BRIDGE-001` | PROOF-TARGET |
@@ -121,5 +121,4 @@ spent here is bookkeeping. Review for merge into a parent claim or deprecation.
 | **23.0** | 5 | 0 |  | `D0-CMB-PHASON-SPECTRUM-OWNER-001` | PROOF-TARGET |
 | **22.1** | 0 | 1 | 1 | `D0-GAUGE-BIANCHI-GRADED-DEPRECATED-001` | DEPRECATED |
 | **21.6** | 5 | 0 |  | `D0-ALPHA-FESHBACH-DIXMIER-OWNER-001` | PROOF-TARGET |
-| **21.4** | 45 | 0 | 3 | `D0-PHASON-COORDINATE-FUNCTOR-OWNER-001` | PROOF-TARGET |
-| … | | | | *+45 more in the ledger CSV* | |
+| … | | | | *+46 more in the ledger CSV* | |

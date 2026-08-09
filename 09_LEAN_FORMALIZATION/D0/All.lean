@@ -225,6 +225,7 @@ import D0.Foundation.CascadeFloorOneLoop
 import D0.Foundation.CascadeFloorOrderMemory
 import D0.Foundation.CascadeFloorOrientationParity
 import D0.Foundation.CascadeFloorScaleRatio
+import D0.Foundation.CascadeInterlockScale
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.CurrentDataComparisonCanonicity
 import D0.Foundation.CurrentDataFactorization
