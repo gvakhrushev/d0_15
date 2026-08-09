@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 8208,
-    "track_fair_max": 10955,
-    "pct_strength": 74.9,
-    "core_realized": 6420,
-    "core_potential": 9100,
+    "realized": 8228,
+    "track_fair_max": 10975,
+    "pct_strength": 75.0,
+    "core_realized": 6440,
+    "core_potential": 9120,
     "core_headroom": 2680,
-    "n_claims": 628,
-    "n_active": 626,
+    "n_claims": 629,
+    "n_active": 627,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 362,
-      "realized": 5286,
-      "max": 6469,
+      "n": 363,
+      "realized": 5306,
+      "max": 6489,
       "core_headroom": 1143
     },
     "smooth_geometry": {
@@ -130,9 +130,9 @@
       "core_headroom": 0
     },
     "BOOK_02": {
-      "n": 83,
-      "realized": 1006,
-      "max": 1352,
+      "n": 84,
+      "realized": 1026,
+      "max": 1372,
       "core_headroom": 336
     },
     "BOOK_08": {
@@ -13167,12 +13167,26 @@
       "book": "BOOK_07",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-TORAL-COMPOSITION-SEVENTEEN-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_02",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
-    "score": 96.5,
+    "score": 91.5,
     "budget": 100,
-    "penalty_total": 3.5,
+    "penalty_total": 8.5,
     "bonus_total": 0.0,
     "signals": [
       {
@@ -13249,8 +13263,8 @@
       },
       {
         "signal": "real_in_project_lake",
-        "count": 0,
-        "points": -0.0,
+        "count": 1,
+        "points": -5.0,
         "cap": -10.0,
         "label": "a real .lake build tree inside the repo (must be an external junction)",
         "evidence": []
@@ -13265,6 +13279,14 @@
       }
     ],
     "top_actions": [
+      {
+        "signal": "real_in_project_lake",
+        "count": 1,
+        "points": -5.0,
+        "cap": -10.0,
+        "label": "a real .lake build tree inside the repo (must be an external junction)",
+        "evidence": []
+      },
       {
         "signal": "orphan_proof_targets",
         "count": 35,

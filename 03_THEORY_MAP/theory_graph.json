@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 628,
+    "claims": 629,
     "release_status": {
-      "CORE-FORMALIZED": 225,
+      "CORE-FORMALIZED": 226,
       "CORE_BRIDGE_SPLIT": 17,
       "NO-GO": 88,
       "PROOF-TARGET": 62,
@@ -20,14 +20,14 @@
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 435,
+      "LEAN_PROVED": 436,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 31,
       "PYTHON_CERTIFIED": 111,
       "DEPRECATED": 2,
       "OPEN": 49
     },
     "claim_type": {
-      "core": 228,
+      "core": 229,
       "bridge": 45,
       "no-go": 95,
       "frontier": 62,
@@ -35,7 +35,7 @@
       "deprecated": 3
     },
     "domain": {
-      "formal_core": 363,
+      "formal_core": 364,
       "smooth_geometry": 41,
       "empirical_passport": 39,
       "gauge_bridge": 51,
@@ -20901,6 +20901,35 @@
       "label": "vp_edge_invariant_cross_sector.py",
       "path": "05_CERTS/vp_edge_invariant_cross_sector.py",
       "exists": true
+    },
+    {
+      "id": "D0-TORAL-COMPOSITION-SEVENTEEN-001",
+      "kind": "claim",
+      "claim_id": "D0-TORAL-COMPOSITION-SEVENTEEN-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_02",
+      "section": "02.13.h obligation (i): toral composition law for 17 = 5+12",
+      "lean_module": "D0.Synthesis.ToralCompositionSeventeen",
+      "lean_theorem": "lucas_gold;golden_return_defect;seam_factor_toral_address;transport_factor_toral_address;composed_defect_seventeen;registered_total_toral_form;lucas_composition;trace_return_composition;seventeenth_return_composition;trace_T17_clean;lucas_seventeen_composition;fifth_return_orientation;toral_composition_seventeen",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-08-09 POST-SKEPTIC v2: WOUNDED-FIXABLE, 0 kills, R1-R3 repaired; memo TORAL_COMPOSITION_SEVENTEEN_MEMO.md] The depth composition 17 = 5+12 of obligation (i) (D0-ALPHA-SEAM-FORM-FORCED-001) acquires a toral LAW, clean axioms throughout (no native_decide; propext/Classical.choice/Quot.sound on all listed theorems). (1) INTEGER BRIDGE + ADDRESSES: lucas_gold ties the recursive integer lucas to the golden closed form phi^n + (1-phi)^n -- the real-level defect identity is OWNED at D0-LUCAS-DEFECT-SIGN-001 (lucas_defect, THE; the identity shape is NOT new here), the integer identification and the numeral instantiations are: seam factor xi5 = phi^-5 = phi^5 - 11 (integer level D0-XI5-TORUS-DEFECT-001, real level row 538, joined clean) and the OPEN transport factor phi^-12 = 322 - phi^12 = L12 - phi^12 -- the same defect shape as the seam factor, at the twelfth return. (2) COMPOSITION AS LAW: lucas_composition L_(m+n) = L_m*L_n - (-1)^n*L_(m-n) (classical identity, formalized clean, no prior in-tree carrier of the composition law), transported through the owned dictionary Tr(T^k) = (-1)^k L_k (trace_T_pow_clean, D0-LEFSCHETZ-ZONE-EXCLUSION-001): trace_return_composition; at (m,n)=(12,5): Tr(T^17) = Tr(T^12)*Tr(T^5) - (det T)^5*Tr(T^7), i.e. L17 = L12*L5 + L7 (3571 = 322*11 + 29), the +L7 correction FORCED by the orientation reversal of the odd return (det T^5 = -1). trace_T17_clean re-derives Tr(T^17) = -3571 clean -- the D0-TRANSPORT-FORK-ENDGAME-001 AXIOM SPLIT exclusion of trace_T17 (ofReduceBool) is now bypassable downstream. (3) registered_total_toral_form: phi^-17 = (phi^5 - 11)(322 - phi^12) -- both factors of the registered total as return defects of one toral automorphism. SCOPE (skeptic R2, kill-shape-1 guard): (gamma) NOT owned; unconditionally this is arithmetic of the number phi^-17 and traces of T, nothing about the seam (the owned seam transport is parabolic-additive, SeamTransportLinear N^2 = 0, untouched); the primitive is SHARPENED on the TORAL route only -- on that route the missing step is the identification 'seam transport = twelfth toral return'; door 1 (dim g_light) remains the live rival and a door-1 discharge would need no such identification; the return INDEX 12 is NOT bound to any dim-12 carrier (doors 1/2/5 untouched -- numeral coincidence is not a binding). Finite dimensionless statement; no physical promotion claimed.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Synthesis/ToralCompositionSeventeen.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Synthesis.ToralCompositionSeventeen",
+      "kind": "lean_module",
+      "label": "D0.Synthesis.ToralCompositionSeventeen",
+      "path": "09_LEAN_FORMALIZATION/D0/Synthesis/ToralCompositionSeventeen.lean",
+      "exists": true
     }
   ],
   "edges": [
@@ -29633,6 +29662,16 @@
       "source": "D0-EDGE-INVARIANT-CROSS-SECTOR-001",
       "target": "cert:vp_edge_invariant_cross_sector.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-TORAL-COMPOSITION-SEVENTEEN-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-TORAL-COMPOSITION-SEVENTEEN-001",
+      "target": "module:D0.Synthesis.ToralCompositionSeventeen",
+      "kind": "implemented_in"
     }
   ]
 }

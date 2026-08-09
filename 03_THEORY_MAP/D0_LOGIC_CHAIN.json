@@ -3661,7 +3661,7 @@
     },
     "D0-LEFSCHETZ-ZONE-EXCLUSION-001": {
       "block_hash": "effe71e11d0085aa2106ec8322b684fca34ce00059ebe368c605dceaf17f6bec",
-      "carries": 0,
+      "carries": 1,
       "claim_id": "D0-LEFSCHETZ-ZONE-EXCLUSION-001",
       "content_hash": "044341d6a14d479a0b49cf644f0b54e779459b48d45647b1a2f42e3fb3538b30",
       "depth": 0,
@@ -6156,7 +6156,7 @@
     },
     "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001": {
       "block_hash": "8003ab219cb009b6f24e17157639f96693d785c8e61b399d92d0ce06c8cc72a6",
-      "carries": 41,
+      "carries": 42,
       "claim_id": "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001",
       "content_hash": "cbb4e8628aeec51c2199544012394f426de6b96f67203e4b5515ac56b29f01cf",
       "depth": 0,
@@ -6183,6 +6183,22 @@
         "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001"
       ],
       "rests_on": 3
+    },
+    "D0-TORAL-COMPOSITION-SEVENTEEN-001": {
+      "block_hash": "ab86657ebf2d39cab850335295d379ceb20a275d4aa3f969390c95bba315d7b0",
+      "carries": 0,
+      "claim_id": "D0-TORAL-COMPOSITION-SEVENTEEN-001",
+      "content_hash": "24cf23f035309310d2b6146f989257ff544be817030944265bd90be965e2abb4",
+      "depth": 1,
+      "genesis": false,
+      "modules": [
+        "D0.Synthesis.ToralCompositionSeventeen"
+      ],
+      "parents": [
+        "D0-LEFSCHETZ-ZONE-EXCLUSION-001",
+        "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001"
+      ],
+      "rests_on": 2
     },
     "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001": {
       "block_hash": "a935606f34fbe55d90604f625dc97514612f32a6c254c3cfccd4e1d2825b7884",
@@ -7157,8 +7173,8 @@
     "09_LEAN_FORMALIZATION/D0/**/*.lean"
   ],
   "summary": {
-    "claims_chained": 487,
-    "claims_total": 628,
+    "claims_chained": 488,
+    "claims_total": 629,
     "claims_unchained": 141,
     "cycle_detected": false,
     "genesis_blocks": 226,

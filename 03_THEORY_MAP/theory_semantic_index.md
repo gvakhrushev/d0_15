@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 225
+- `CORE-FORMALIZED`: 226
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
@@ -22,7 +22,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 45
 - `certificate`: 195
-- `core`: 228
+- `core`: 229
 - `deprecated`: 3
 - `frontier`: 62
 - `no-go`: 95
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 50
 - `empirical_passport`: 39
 - `external_background`: 1
-- `formal_core`: 363
+- `formal_core`: 364
 - `frontier`: 62
 - `gauge_bridge`: 51
 - `interpretation_spine`: 1
@@ -5069,6 +5069,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Fixed finite integer time matrix T yields signed Lucas trace layers 3/4/11 determinant-square volume balance and exact even-window archive sign cancellation without external-data input.
+
+### D0-TORAL-COMPOSITION-SEVENTEEN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_02`
+- module: `D0.Synthesis.ToralCompositionSeventeen`
+- theorem: `lucas_gold;golden_return_defect;seam_factor_toral_address;transport_factor_toral_address;composed_defect_seventeen;registered_total_toral_form;lucas_composition;trace_return_composition;seventeenth_return_composition;trace_T17_clean;lucas_seventeen_composition;fifth_return_orientation;toral_composition_seventeen`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08-09 POST-SKEPTIC v2: WOUNDED-FIXABLE, 0 kills, R1-R3 repaired; memo TORAL_COMPOSITION_SEVENTEEN_MEMO.md] The depth composition 17 = 5+12 of obligation (i) (D0-ALPHA-SEAM-FORM-FORCED-001) acquires a toral LAW, clean axioms throughout (no native_decide; propext/Classical.choice/Quot.sound on all listed theorems). (1) INTEGER BRIDGE + ADDRESSES: lucas_gold ties the recursive integer lucas to the golden closed form phi^n + (1-phi)^n -- the real-level defect identity is OWNED at D0-LUCAS-DEFECT-SIGN-001 (lucas_defect, THE; the identity shape is NOT new here), the integer identification and the numeral instantiations are: seam factor xi5 = phi^-5 = phi^5 - 11 (integer level D0-XI5-TORUS-DEFECT-001, real level row 538, joined clean) and the OPEN transport factor phi^-12 = 322 - phi^12 = L12 - phi^12 -- the same defect shape as the seam factor, at the twelfth return. (2) COMPOSITION AS LAW: lucas_composition L_(m+n) = L_m*L_n - (-1)^n*L_(m-n) (classical identity, formalized clean, no prior in-tree carrier of the composition law), transported through the owned dictionary Tr(T^k) = (-1)^k L_k (trace_T_pow_clean, D0-LEFSCHETZ-ZONE-EXCLUSION-001): trace_return_composition; at (m,n)=(12,5): Tr(T^17) = Tr(T^12)*Tr(T^5) - (det T)^5*Tr(T^7), i.e. L17 = L12*L5 + L7 (3571 = 322*11 + 29), the +L7 correction FORCED by the orientation reversal of the odd return (det T^5 = -1). trace_T17_clean re-derives Tr(T^17) = -3571 clean -- the D0-TRANSPORT-FORK-ENDGAME-001 AXIOM SPLIT exclusion of trace_T17 (ofReduceBool) is now bypassable downstream. (3) registered_total_toral_form: phi^-17 = (phi^5 - 11)(322 - phi^12) -- both factors of the registered total as return defects of one toral automorphism. SCOPE (skeptic R2, kill-shape-1 guard): (gamma) NOT owned; unconditionally this is arithmetic of the number phi^-17 and traces of T, nothing about the seam (the owned seam transport is parabolic-additive, SeamTransportLinear N^2 = 0, untouched); the primitive is SHARPENED on the TORAL route only -- on that route the missing step is the identification 'seam transport = twelfth toral return'; door 1 (dim g_light) remains the live rival and a door-1 discharge would need no such identification; the return INDEX 12 is NOT bound to any dim-12 carrier (doors 1/2/5 untouched -- numeral coincidence is not a binding). Finite dimensionless statement; no physical promotion claimed.
 
 ### D0-TORUS-CORE13-GEOMETRY-001
 

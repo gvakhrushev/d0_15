@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 8208 / 10955 (**74.9%** of track-fair max)
-- **Core spine:** 6420 / 9100 (headroom **2680** points to take every core claim to L5)
-- Claims: 626 active (628 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 8228 / 10975 (**75.0%** of track-fair max)
+- **Core spine:** 6440 / 9120 (headroom **2680** points to take every core claim to L5)
+- Claims: 627 active (629 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 96.5 / 100 (penalties **-3.5**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 91.5 / 100 (penalties **-8.5**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -23,10 +23,10 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
-| `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
+| `real_in_project_lake` | 1 | -5 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 0 | +0 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.5)
+**Top cleanup actions (most points to regain):** `real_in_project_lake` (-5); `orphan_proof_targets` (-3.5)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -92,7 +92,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 362 | 5286 | 6469 | 1143 |
+| formal_core | 363 | 5306 | 6489 | 1143 |
 | frontier | 62 | 284 | 1240 | 956 |
 | cosmology | 50 | 752 | 930 | 178 |
 | smooth_geometry | 41 | 517 | 678 | 152 |
@@ -110,7 +110,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 |---|--:|--:|--:|--:|
 | BOOK_04 | 112 | 1436 | 1942 | 486 |
 | BOOK_08 | 87 | 1159 | 1563 | 395 |
-| BOOK_02 | 83 | 1006 | 1352 | 336 |
+| BOOK_02 | 84 | 1026 | 1372 | 336 |
 | BOOK_07 | 73 | 947 | 1253 | 292 |
 | BOOK_01 | 56 | 788 | 1044 | 256 |
 | BOOK_06 | 45 | 547 | 776 | 224 |
