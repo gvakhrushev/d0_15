@@ -8,7 +8,7 @@ Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_1
 Lean 4 (mathlib) + deterministic Python certificates · `lake build D0.All` green, 0
 `sorry`, 4477 jobs · full guard gate green.
 
-**The results, stated exactly: [`D0_EXACT_RESULTS.md`](D0_EXACT_RESULTS.md)** — 25 theorems,
+**The results, stated exactly: [`D0_EXACT_RESULTS.md`](D0_EXACT_RESULTS.md)** — 26 theorems,
 7 no-go theorems, 5 named open problems. Everything below is a digest of that ledger.
 
 ---
@@ -79,7 +79,10 @@ proved insufficiency and satisfiable control; four interlock links of the exact 
 repair of floor n is the failing carrier of floor n+1*; the count **3** derived from the
 closure structure itself (least reflection-closed completion of the two interior layers —
 no `3 ≤ _` hypothesis anywhere); all of it composed in one clean-axiom theorem
-(T21–T24).
+(T21–T24). A new floor at the record end — the first structural import from another
+substrate: one equilibrium test cannot reach the proofread fidelity `δ²`; the repair is a
+second test behind an irreversible reset (kinetic proofreading, external-cited as the
+reading; the arithmetic floor is Lean-owned, adjacency into the chain open) (T26).
 
 **No-go theorems** are exact results, not caveats: transport spectrum blindness, ΛCDM
 excluded by degeneracies alone in the ratio reading, gap-label genericity (the 25 computed
@@ -121,14 +124,14 @@ No multi-point discriminating confirmation exists yet; producing one is P4.
 
 ```bash
 pip install -r requirements.txt
-python tools/validate_csv.py            # registry integrity (636 claims)
+python tools/validate_csv.py            # registry integrity (637 claims)
 python tools/d0_logic_chain.py          # derivation chain + block hashes
 python tools/d0_value_model.py          # value ledger + ranking
 python tools/d0_score.py --strict       # scoreboard (75.3%, 0 integrity demotions)
 ```
 
 ```bash
-cd 09_LEAN_FORMALIZATION && lake build D0.All   # 4477 jobs, 0 sorry
+cd 09_LEAN_FORMALIZATION && lake build D0.All   # 4478 jobs, 0 sorry
 python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
 ```
 
@@ -155,9 +158,9 @@ by MDL plus canonization, and that is where to press).
 
 ## Registry, by the numbers
 
-636 claims — 443 `LEAN_PROVED` (+31 with named bridge assumptions), 111 python-certified,
-49 open, 2 deprecated; 232 core-formalized, 169 cert-closed, **96 no-go theorems** (89
-NO-GO + 7 NO_GO_PROVED), 62 proof-targets. Derivation chain: 495 of 636 chained, 226
+637 claims — 444 `LEAN_PROVED` (+31 with named bridge assumptions), 111 python-certified,
+49 open, 2 deprecated; 233 core-formalized, 169 cert-closed, **96 no-go theorems** (89
+NO-GO + 7 NO_GO_PROVED), 62 proof-targets. Derivation chain: 496 of 637 chained, 226
 genesis blocks, max depth 10 — the structure is wide, not deep.
 Counts measure bookkeeping, not insight; the [value ranking](03_THEORY_MAP/D0_VALUE_RANKED.md)
 measures what matters.

@@ -8,7 +8,7 @@ part of its statement. Open problems are collected at the end as named targets, 
 qualifications of the theorems.
 
 Verification: `cd 09_LEAN_FORMALIZATION && lake build D0.All` (green, 0 `sorry`,
-4477 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (636 claims) ·
+4478 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (637 claims) ·
 gate `tools/` (validate, sync, value ledger, certificates, score — all green).
 
 ---
@@ -208,6 +208,20 @@ different carriers and stand. `D0-CASCADE-TERMINAL-COUNT-001`.
 
 **T24 (Assembly).** All of T21–T23 composes into one theorem with clean axioms:
 `cascade_carried_assembly`. `D0-CASCADE-CARRIED-ASSEMBLY-001`.
+
+**T26 (Proofreading floor — added 2026-08-14, the first structural import of the
+cross-substrate program).** For every discrimination limit `0 < δ < 1`: a single
+equilibrium test (wrong/right acceptance ratio bounded by one Boltzmann factor — the
+carrier's defining hypothesis, inside the statement) provably cannot reach the proofread
+error level `errOf (δ²)`; two tests separated by an irreversible reset (ratios composing
+multiplicatively — the reset assumption is ENCODED in the carrier definition, not proved)
+reach it exactly; the pair is a genuine `CascadeStep`. The error targets `errOf (δⁿ)`
+descend strictly at every depth (levels only — the n-stage carrier family is not
+constructed). External anchor: kinetic proofreading (Hopfield 1974, Ninio 1975), cited as
+the physical reading of the carrier definitions, not load-bearing in any Lean statement.
+Adjacency into the chain is open; no biochemical claim is registered; the frozen R-A2
+passport record (committed before the mint) grades any real stage beating its equilibrium
+bound as internally multi-test. `D0-CASCADE-FLOOR-PROOFREADING-001`.
 
 ## 6. No-go theorems (exact negative results)
 

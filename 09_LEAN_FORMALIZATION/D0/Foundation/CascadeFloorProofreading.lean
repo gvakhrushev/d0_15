@@ -7,15 +7,19 @@ import D0.Foundation.CascadeChain
 **The first structural import of the cross-substrate program** (licensed by
 `D0-INFORMATION-CONNECTIVITY-001`; program artifact `COVERAGE_MATRIX_REWIND_2026_08.md`).
 The imported structure is kinetic proofreading (Hopfield 1974 PNAS 71:4135; Ninio 1975
-Biochimie 57:587 — external-cited, the same grade as Baer 1933 in the role-algebra row):
-a single equilibrium discrimination between a right and a wrong substrate is bounded by one
-Boltzmann factor — the wrong/right acceptance ratio cannot go below a floor `δ`; reaching
-the squared factor `δ²` requires a SECOND test separated by an irreversible reset, i.e. a
-second record register plus an arrow-of-time cost. Biology pays this cost in every
-replication fork; that is a structural fact about records, not about chemistry.
+Biochimie 57:587 — external-cited as the physical READING of the carrier definitions below,
+docstring/bridging-definition grade; NOT load-bearing in any Lean statement, unlike Baer
+1933 in `D0-Q8-DEDEKIND-MINIMALITY-001`, where the external classification owns a leg of
+the registered claim). Per the cited structure: a single equilibrium discrimination between
+a right and a wrong substrate is bounded by one Boltzmann factor — the wrong/right
+acceptance ratio cannot go below a floor `δ` — and reaching the squared factor `δ²`
+requires a SECOND test separated by an irreversible reset, i.e. a second record register
+plus an arrow-of-time cost. Biology pays this cost in every replication fork; that reading
+is the citation's, not this module's theorem.
 
 **In the cascade's own shape** (`CascadeStep`, `D0-CASCADE-CHAIN-SCAFFOLD-001`): the floor
-extends the chain at the record/comparison end (moves 1–2 of the coverage matrix).
+sits at the record/comparison end (moves 1–2 of the coverage matrix); its adjacency into
+the chain (which floor's repair is this floor's failing carrier) is OPEN.
 
 - Carrier below: ONE equilibrium test — achievable ratios are exactly `ρ ≥ δ` (the
   one-Boltzmann-factor bound is the DEFINING hypothesis of the carrier, stated inside the
@@ -25,8 +29,9 @@ extends the chain at the record/comparison end (moves 1–2 of the coverage matr
   for `0 < δ < 1`.
 - Repair/control: TWO tests (a pair of ratio slots — the pair carrier whose necessity the
   4→5 floor owns) compose multiplicatively and reach `δ²` exactly.
-- Ladder: `n+1` stages strictly beat `n` stages for every `n` — the proofreading cascade
-  is unbounded in depth, each stage a genuine floor.
+- Ladder: the error TARGETS `errOf (δⁿ)` descend strictly at every depth — only the 1→2
+  step is carried in the registered `CascadeStep` shape; the n-stage carrier family is not
+  constructed here.
 
 **Honest scope (pre-registered).**
 1. The multiplicative composition of the two-stage carrier ENCODES the irreversible-reset
@@ -107,9 +112,9 @@ theorem stepProofreading_discriminates (δ : ℚ) (h₀ : 0 < δ) (h₁ : δ < 1
         (stepProofreading δ h₀ h₁).ObligationAbove) :=
   step_discriminates _
 
-/-- **The proofreading ladder**: `n+1` stages strictly beat `n` stages — each added
-register-plus-reset is a genuine floor, for every `n`. The cascade of verified records is
-unbounded in depth. -/
+/-- **The proofreading ladder**: the error targets `errOf (δⁿ)` descend strictly at every
+depth. This orders the LEVELS only — no n-stage carrier is defined here, so no floor
+claim is made beyond the registered 1→2 step (`stepProofreading`). -/
 theorem proofreading_ladder (δ : ℚ) (h₀ : 0 < δ) (h₁ : δ < 1) (n : ℕ) :
     errOf (δ ^ (n + 1)) < errOf (δ ^ n) := by
   apply errOf_lt_errOf (by positivity)

@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 636,
+    "claims": 637,
     "release_status": {
-      "CORE-FORMALIZED": 232,
+      "CORE-FORMALIZED": 233,
       "CORE_BRIDGE_SPLIT": 17,
       "NO-GO": 89,
       "PROOF-TARGET": 62,
@@ -20,14 +20,14 @@
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 443,
+      "LEAN_PROVED": 444,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 31,
       "PYTHON_CERTIFIED": 111,
       "DEPRECATED": 2,
       "OPEN": 49
     },
     "claim_type": {
-      "core": 235,
+      "core": 236,
       "bridge": 45,
       "no-go": 96,
       "frontier": 62,
@@ -35,7 +35,7 @@
       "deprecated": 3
     },
     "domain": {
-      "formal_core": 371,
+      "formal_core": 372,
       "smooth_geometry": 41,
       "empirical_passport": 39,
       "gauge_bridge": 51,
@@ -19835,7 +19835,7 @@
       "cert": "",
       "python_cert": [],
       "status": "PROOF-TARGET",
-      "notes": "[2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. THIRD LINK + FIRST NEW FLOOR [2026-08-09]: D0-CASCADE-FLOOR-DEFECT-CLOSURE-001 (stepDefectClosure + chain_linked_order_to_defect_closure) -- the prose step 'defect => circulation needs closure' carried in the CascadeStep shape: the order repair's commutator defect fails element-level basepoint invariance, survives only as the closed (conjugacy-class) datum. Remaining unformalized: closure=>shell, three-insufficiencies=>three-zones. FOURTH LINK [2026-08-09]: D0-CASCADE-FLOOR-SHELL-CLOSURE-001 (stepShellClosure + chain_linked_closure_to_shell, 03.23.5 FORCED reading) -- the interior defect+circulation pair fails reflection-closure, the outer shell closes it, and the shell scale is forced parameter-free to the scale floor's own survivor phi. The 01.6.1c segment order => defect => closure => shell is now carried end-to-end AT REFLECTION-PROXY GRADE; still open: the topological/2-cell-attachment reading of closure=>shell (the registered description stands) and the terminal 'three insufficiencies = three zones'. COUNT LEG [2026-08-09]: D0-CASCADE-TERMINAL-COUNT-001 -- the count three derived from the closure structure itself (2 interior + forced third; least completion proved), at proxy grade, on a carrier none of the three dead routes used; remaining for the terminal step: the insufficiencies<->layers identification (prose grade), the typed seam (D0-SCENE-COUNT-REDUCTION-001, both interpretation records unconstructed) and the zone sizes (owned separately). Umbrella stays OPEN: the each-floor-FORCED statement over the full prose chain is the open obligation; carried as of 2026-08-09 -- floors defect-closure and shell-closure at their registered (proxy/prose-anchored) grades, the terminal COUNT leg, four links; CARRIED-CONTENT CITATION THEOREM: D0-CASCADE-CARRIED-ASSEMBLY-001 (cascade_carried_assembly -- one conjunction of all carried content; note-only pointer, this row's lean fields unchanged); still open: the topological/2-cell reading of closure=>shell, the typed count seam (D0-SCENE-COUNT-REDUCTION-001), the insufficiencies<->layers identifications. Machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds).",
+      "notes": "[2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. THIRD LINK + FIRST NEW FLOOR [2026-08-09]: D0-CASCADE-FLOOR-DEFECT-CLOSURE-001 (stepDefectClosure + chain_linked_order_to_defect_closure) -- the prose step 'defect => circulation needs closure' carried in the CascadeStep shape: the order repair's commutator defect fails element-level basepoint invariance, survives only as the closed (conjugacy-class) datum. Remaining unformalized: closure=>shell, three-insufficiencies=>three-zones. FOURTH LINK [2026-08-09]: D0-CASCADE-FLOOR-SHELL-CLOSURE-001 (stepShellClosure + chain_linked_closure_to_shell, 03.23.5 FORCED reading) -- the interior defect+circulation pair fails reflection-closure, the outer shell closes it, and the shell scale is forced parameter-free to the scale floor's own survivor phi. The 01.6.1c segment order => defect => closure => shell is now carried end-to-end AT REFLECTION-PROXY GRADE; still open: the topological/2-cell-attachment reading of closure=>shell (the registered description stands) and the terminal 'three insufficiencies = three zones'. COUNT LEG [2026-08-09]: D0-CASCADE-TERMINAL-COUNT-001 -- the count three derived from the closure structure itself (2 interior + forced third; least completion proved), at proxy grade, on a carrier none of the three dead routes used; remaining for the terminal step: the insufficiencies<->layers identification (prose grade), the typed seam (D0-SCENE-COUNT-REDUCTION-001, both interpretation records unconstructed) and the zone sizes (owned separately). Umbrella stays OPEN: the each-floor-FORCED statement over the full prose chain is the open obligation; carried as of 2026-08-09 -- floors defect-closure and shell-closure at their registered (proxy/prose-anchored) grades, the terminal COUNT leg, four links; CARRIED-CONTENT CITATION THEOREM: D0-CASCADE-CARRIED-ASSEMBLY-001 (cascade_carried_assembly -- one conjunction of all carried content; note-only pointer, this row's lean fields unchanged); still open: the topological/2-cell reading of closure=>shell, the typed count seam (D0-SCENE-COUNT-REDUCTION-001), the insufficiencies<->layers identifications. Machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds). [2026-08-14] New floor D0-CASCADE-FLOOR-PROOFREADING-001 minted at the record/comparison end, outside carriedFloorsExtended; adjacency open; umbrella unchanged and stays OPEN.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeChain.lean",
       "module_exists": true,
       "certs_exist": true
@@ -21149,6 +21149,35 @@
       "kind": "lean_module",
       "label": "D0.Foundation.InformationConnectivity",
       "path": "09_LEAN_FORMALIZATION/D0/Foundation/InformationConnectivity.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-CASCADE-FLOOR-PROOFREADING-001",
+      "kind": "claim",
+      "claim_id": "D0-CASCADE-FLOOR-PROOFREADING-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "01.6.1c proofreading floor: one equilibrium test cannot reach the verified-record fidelity",
+      "lean_module": "D0.Foundation.CascadeFloorProofreading",
+      "lean_theorem": "errOf_lt_errOf;one_test_insufficient;two_stage_control;stepProofreading_discriminates;proofreading_ladder;proofreading_floor",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-08-14 campaign; standalone 3030 GREEN; D0.All 4478 GREEN; axioms propext/Classical.choice/Quot.sound on all six theorems] The proofreading floor - first structural import of the cross-substrate program (license D0-INFORMATION-CONNECTIVITY-001; artifact COVERAGE_MATRIX_REWIND_2026_08.md). For every discrimination limit 0 < delta < 1: the one-test carrier (single equilibrium test, wrong/right acceptance ratio bounded by one Boltzmann factor - the carrier's DEFINING hypothesis, inside the statement) provably cannot reach the proofread error level errOf(delta^2) (errOf strictly monotone, delta^2 < delta); the two-stage carrier (two tests separated by an irreversible reset, ratios composing multiplicatively) reaches it exactly; the pair is a genuine CascadeStep (step_discriminates non-vacuous). Load-bearing definitions: errOf, OneTestReaches, TwoStageReaches, stepProofreading. Multiplicative composition ENCODES the irreversible-reset assumption - definition, not theorem; the detailed-balance collapse of a reset-free pair is the cited content (Hopfield 1974, Ninio 1975 - cited as the physical reading of the carrier definitions, docstring grade, NOT load-bearing in any Lean statement), not proved here; the arrow-floor interlock is a named target. proofreading_ladder proves strict descent of the error TARGETS errOf(delta^(n+1)) < errOf(delta^n) - levels only; the n-stage carrier family is not constructed; only the 1->2 step is carried in the registered CascadeStep shape. NOT in carriedFloors nor carriedFloorsExtended (D0-CASCADE-CARRIED-ASSEMBLY-001); no position in the ordered chain list; adjacency into the chain is OPEN; the umbrella stays OPEN (note-only update). The structural anchor is the SHAPE; whether any actual biochemical step instantiates the one-test carrier is an A1/A2 passport question; no causal claim about biochemistry is registered; per the frozen R-A2 record (A1_A2_ACQUISITION_2026_08_14.md, commit 02413ce, BEFORE this mint) a real stage beating its equilibrium bound is graded internally multi-test - the floor's register count is a lower-bound reading, never a per-stage count. The control is definitional (the corner rho1=rho2=delta attains the target by construction); the floor's bite is entirely in the insufficient leg. Finite dimensionless statement; no physical promotion claimed.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFloorProofreading.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.CascadeFloorProofreading",
+      "kind": "lean_module",
+      "label": "D0.Foundation.CascadeFloorProofreading",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFloorProofreading.lean",
       "exists": true
     }
   ],
@@ -29971,6 +30000,16 @@
     {
       "source": "D0-INFORMATION-CONNECTIVITY-001",
       "target": "module:D0.Foundation.InformationConnectivity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CASCADE-FLOOR-PROOFREADING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CASCADE-FLOOR-PROOFREADING-001",
+      "target": "module:D0.Foundation.CascadeFloorProofreading",
       "kind": "implemented_in"
     }
   ]

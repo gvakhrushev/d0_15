@@ -10,13 +10,13 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **36.1**. Claims: 636.
+High-value cut (top quartile): **36.1**. Claims: 637.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 6 | high value, not closed — **this is the work queue** |
 | **FRONT DOOR** | 152 | high value, closed — what the README and reading order must lead with |
-| BALLAST | 417 | closed but nothing rests on it — bottom of the registry |
+| BALLAST | 418 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 61 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
@@ -29,7 +29,7 @@ closing it moves the corpus, closing anything below it does not.
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
 | **60.1** | 45 | 2 | 0 | `D0-P-INVARIANT-MINIMAL-001` | PROOF-TARGET |
-| **59.5** | 5 | 7 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
+| **60.0** | 5 | 8 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
 | **45.5** | 5 | 7 | 2 | `D0-TOWER-STOP-NOEXT-001` | PROOF-TARGET |
 | **45.5** | 45 | 1 | 4 | `D0-P-M1-SATURATION-001` | PROOF-TARGET |
 | **45.5** | 45 | 0 | 4 | `D0-GAP-E-PORT-EXHAUSTION-001` | PROOF-TARGET |
@@ -89,13 +89,13 @@ sorted to the bottom of the registry.
 | **34.7** | 100 | 5 | 0 | `D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001` | CERT-CLOSED |
 | **34.7** | 100 | 0 | 0 | `D0-COMPACTNESS-DEF-FORCING-001` | CORE-FORMALIZED |
 | **34.7** | 70 | 0 | 0 | `D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001` | BRIDGE-ASSUMPTIONS-EXPLICIT |
+| **34.6** | 100 | 10 | 1 | `D0-CASCADE-FLOOR-SCALE-RATIO-001` | CORE-FORMALIZED |
 | **34.6** | 100 | 5 | 3 | `D0-SCENE-NORMALIZED-QUOTIENT-DESCENT-001` | CORE-FORMALIZED |
 | **34.6** | 100 | 0 | 1 | `D0-XI5-CROSS-SECTOR-001` | CORE-FORMALIZED |
 | **34.6** | 55 | 0 |  | `D0-ALPHA-MEASUREMENT-LIMIT-001` | EMPIRICAL-PASSPORT |
 | **34.6** | 55 | 0 |  | `D0-PHI-CSTAR-PASSPORT-001` | PASSPORT-CLOSED |
 | **34.6** | 55 | 0 |  | `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001` | PASSPORT-CLOSED |
-| **34.6** | 100 | 0 | 0 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | CERT-CLOSED |
-| … | | | | *+402 more in the ledger CSV* | |
+| … | | | | *+403 more in the ledger CSV* | |
 
 ---
 
