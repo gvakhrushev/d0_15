@@ -226,6 +226,7 @@ import D0.Foundation.CascadeFloorDefectClosure
 import D0.Foundation.CascadeFloorOneLoop
 import D0.Foundation.CascadeFloorOrderMemory
 import D0.Foundation.CascadeFloorOrientationParity
+import D0.Foundation.CascadeFloorProofreading
 import D0.Foundation.CascadeFloorScaleRatio
 import D0.Foundation.CascadeFloorShellClosure
 import D0.Foundation.CascadeInterlockScale

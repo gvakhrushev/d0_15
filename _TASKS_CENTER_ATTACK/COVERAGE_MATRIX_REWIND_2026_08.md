@@ -29,7 +29,7 @@ PROSE = book-owned reading · ABSENT = no data, acquisition target)
 
 | move | quantum spectra | quasicrystal/optics | cosmology | genetics/biology | economics |
 |---|---|---|---|---|---|
-| 1 record | **PASSPORT** — decoherence as record formation: IceCube phason-decoherence (`08_PASSPORTS/IceCube`, ICECUBE-PHAS1) | PROSE — diffraction pattern as frozen record (BOOK_06 hull reading) | PROSE — horizon as record boundary (BOOK_08) | ABSENT → acq. target A1 (replication-fidelity dataset) | ABSENT |
+| 1 record | **PASSPORT** — decoherence as record formation: IceCube phason-decoherence (`08_PASSPORTS/IceCube`, ICECUBE-PHAS1) | PROSE — diffraction pattern as frozen record (BOOK_06 hull reading) | PROSE — horizon as record boundary (BOOK_08) | **PASSPORT (2026-08-14)** — `potapov_ong_pcr_fidelity_2017` hash-pinned READY; frozen R-A1 EXECUTED → FAIL (scalar fidelity vindicated, vector hypothesis dead; `R_A1_RESULT_2026_08_14.md`) | ABSENT |
 | 2 memory | OWNED (theory side) — one-loop floor; no substrate passport | PROSE — substitution rule = memory of the inflation step (Fibonacci hull, BOOK_06) | PROSE — expansion history as accumulated comparison | ABSENT → acq. target A2 (proofreading kinetics dataset) | ABSENT |
 | 3 order | **OWNED** — role algebra Q₈ forced (T3); substrate data absent (anyon braiding would be the passport) | ABSENT | ABSENT | ABSENT → acq. target A3 (transcription-order data) | ABSENT |
 | 4 closure | PROSE — E8 critical chain as closure structure (Coldea passport's own context; NOT owned) | **OWNED** — shell triple {R−r,R,R+r} closure (T23); gap-label module closure (N6, bridge) | PASSPORT — S_DE window product 359/160 (DESI-SDE1) | ABSENT | ABSENT |
