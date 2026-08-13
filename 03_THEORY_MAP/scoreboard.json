@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 8340,
-    "track_fair_max": 11087,
-    "pct_strength": 75.2,
-    "core_realized": 6540,
-    "core_potential": 9220,
+    "realized": 8360,
+    "track_fair_max": 11107,
+    "pct_strength": 75.3,
+    "core_realized": 6560,
+    "core_potential": 9240,
     "core_headroom": 2680,
-    "n_claims": 635,
-    "n_active": 633,
+    "n_claims": 636,
+    "n_active": 634,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 369,
-      "realized": 5418,
-      "max": 6601,
+      "n": 370,
+      "realized": 5438,
+      "max": 6621,
       "core_headroom": 1143
     },
     "smooth_geometry": {
@@ -412,9 +412,9 @@
       "core_headroom": 13
     },
     "BOOK_00": {
-      "n": 11,
-      "realized": 125,
-      "max": 202,
+      "n": 12,
+      "realized": 145,
+      "max": 222,
       "core_headroom": 77
     },
     "BOOK_00/05": {
@@ -13263,6 +13263,20 @@
       "lean_status": "LEAN_PROVED",
       "domain": "formal_core",
       "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-INFORMATION-CONNECTIVITY-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00",
       "leverage": 0,
       "integrity_flag": null
     }

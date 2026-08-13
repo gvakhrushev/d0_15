@@ -6,9 +6,9 @@ problems named as targets.**
 
 Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** ·
 Lean 4 (mathlib) + deterministic Python certificates · `lake build D0.All` green, 0
-`sorry`, 4476 jobs · full guard gate green.
+`sorry`, 4477 jobs · full guard gate green.
 
-**The results, stated exactly: [`D0_EXACT_RESULTS.md`](D0_EXACT_RESULTS.md)** — 24 theorems,
+**The results, stated exactly: [`D0_EXACT_RESULTS.md`](D0_EXACT_RESULTS.md)** — 25 theorems,
 7 no-go theorems, 5 named open problems. Everything below is a digest of that ledger.
 
 ---
@@ -38,7 +38,12 @@ Gleason does not apply; the weaker area-preservation hypothesis provably does no
 (T2, with machine-checked counterexample). The role algebra: all-subgroups-normal +
 non-abelian ⇒ Hamiltonian ⇒ `Q₈` is a forced factor by Baer's classification (T3). The
 arrow of time is heat-trace monotonicity of a finite Laplacian; the time layer has dimension
-`deg ℚ(φ) = 2`, the unique Pisot-clean choice (T5).
+`deg ℚ(φ) = 2`, the unique Pisot-clean choice (T5). Information connectivity: under minimal
+record semantics, an observer's record-connected domains have M1-forced values (unique
+witness = the observation, axiom-free leg), while for a record-disconnected domain every
+candidate value requires an external catalogue, and two record-disconnected observers can
+force agreement on nothing — a disconnected information domain and an external catalogue
+are the same thing (T25).
 
 **Geometry.** For any 3-zone scene the quotient cubic is `λ³ − e₂λ − 2e₃`, forcing
 signature (1,2); on K(9,11,13) the coefficients ARE the scene: `e₂ = 359 = |E|`,
@@ -116,14 +121,14 @@ No multi-point discriminating confirmation exists yet; producing one is P4.
 
 ```bash
 pip install -r requirements.txt
-python tools/validate_csv.py            # registry integrity (635 claims)
+python tools/validate_csv.py            # registry integrity (636 claims)
 python tools/d0_logic_chain.py          # derivation chain + block hashes
 python tools/d0_value_model.py          # value ledger + ranking
-python tools/d0_score.py --strict       # scoreboard (75.2%, 0 integrity demotions)
+python tools/d0_score.py --strict       # scoreboard (75.3%, 0 integrity demotions)
 ```
 
 ```bash
-cd 09_LEAN_FORMALIZATION && lake build D0.All   # 4476 jobs, 0 sorry
+cd 09_LEAN_FORMALIZATION && lake build D0.All   # 4477 jobs, 0 sorry
 python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
 ```
 
@@ -150,9 +155,9 @@ by MDL plus canonization, and that is where to press).
 
 ## Registry, by the numbers
 
-635 claims — 442 `LEAN_PROVED` (+31 with named bridge assumptions), 111 python-certified,
-49 open, 2 deprecated; 231 core-formalized, 169 cert-closed, **96 no-go theorems** (89
-NO-GO + 7 NO_GO_PROVED), 62 proof-targets. Derivation chain: 494 of 635 chained, 226
+636 claims — 443 `LEAN_PROVED` (+31 with named bridge assumptions), 111 python-certified,
+49 open, 2 deprecated; 232 core-formalized, 169 cert-closed, **96 no-go theorems** (89
+NO-GO + 7 NO_GO_PROVED), 62 proof-targets. Derivation chain: 495 of 636 chained, 226
 genesis blocks, max depth 10 — the structure is wide, not deep.
 Counts measure bookkeeping, not insight; the [value ranking](03_THEORY_MAP/D0_VALUE_RANKED.md)
 measures what matters.

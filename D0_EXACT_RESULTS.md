@@ -8,7 +8,7 @@ part of its statement. Open problems are collected at the end as named targets, 
 qualifications of the theorems.
 
 Verification: `cd 09_LEAN_FORMALIZATION && lake build D0.All` (green, 0 `sorry`,
-4476 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (635 claims) ·
+4477 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (636 claims) ·
 gate `tools/` (validate, sync, value ledger, certificates, score — all green).
 
 ---
@@ -46,6 +46,20 @@ irreversible direction; both are algebraic integers and φ is Pisot (Lean,
 `D0-PISOT-CONTRACTION-TIME-ARROW-001`). The monotonicity of `I(t) = −log P(t)` via heat-trace
 decay and the Markov-partition-iff-Pisot reading are owned by prose §06.30a, with the Markov
 machinery bridge-graded (`ASSUMP-ADLER-WEISS`).
+
+**T25 (Information connectivity — added 2026-08-14).** Under minimal record semantics
+(record relation `Rec`, connectivity = its equivalence closure, contents in `V` with
+`Nontrivial V`, admissibility = records copy content faithfully), for an observer at `b`
+with observation `obs`: (i) every record-connected domain's value is `M1Forced` with `obs`
+as the unique witness — this leg is axiom-free; (ii) for every record-disconnected domain,
+EVERY candidate value satisfies `RequiresExternalCatalogue`, by explicit
+piecewise-admissible witnesses (load-bearing exactly at `v = obs`: not even the observed
+value transfers); (iii) corollary: two record-disconnected observers can force agreement on
+no domain. A record-disconnected information domain and an external catalogue are the same
+thing. The constraint family is a universal (semantic) constraint, not a finite selector;
+carrier: abstract description domains, not the scene graph; applying the license to real
+substrates requires identifying `Rec` (bridge step, not discharged).
+`D0-INFORMATION-CONNECTIVITY-001`.
 
 ## 2. The scene and its geometry
 

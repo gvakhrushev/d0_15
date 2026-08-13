@@ -10,13 +10,13 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **36.1**. Claims: 635.
+High-value cut (top quartile): **36.1**. Claims: 636.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 6 | high value, not closed — **this is the work queue** |
 | **FRONT DOOR** | 152 | high value, closed — what the README and reading order must lead with |
-| BALLAST | 416 | closed but nothing rests on it — bottom of the registry |
+| BALLAST | 417 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 61 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
@@ -44,7 +44,7 @@ Nothing outside this table belongs in an abstract.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
-| **75.9** | 100 | 21 | 0 | `D0-M1-PREDICATE-001` | CORE-FORMALIZED |
+| **76.2** | 100 | 22 | 0 | `D0-M1-PREDICATE-001` | CORE-FORMALIZED |
 | **64.6** | 100 | 14 | 0 | `D0-PHI-HURWITZ-001` | CORE-FORMALIZED |
 | **60.4** | 100 | 115 | 0 | `D0-FOUND-001` | CORE-FORMALIZED |
 | **57.5** | 100 | 7 | 1 | `D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001` | NO-GO |
@@ -95,7 +95,7 @@ sorted to the bottom of the registry.
 | **34.6** | 55 | 0 |  | `D0-PHI-CSTAR-PASSPORT-001` | PASSPORT-CLOSED |
 | **34.6** | 55 | 0 |  | `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001` | PASSPORT-CLOSED |
 | **34.6** | 100 | 0 | 0 | `D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001` | CERT-CLOSED |
-| … | | | | *+401 more in the ledger CSV* | |
+| … | | | | *+402 more in the ledger CSV* | |
 
 ---
 

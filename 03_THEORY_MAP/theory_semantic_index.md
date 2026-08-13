@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 231
+- `CORE-FORMALIZED`: 232
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
@@ -22,7 +22,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 45
 - `certificate`: 195
-- `core`: 234
+- `core`: 235
 - `deprecated`: 3
 - `frontier`: 62
 - `no-go`: 96
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 50
 - `empirical_passport`: 39
 - `external_background`: 1
-- `formal_core`: 370
+- `formal_core`: 371
 - `frontier`: 62
 - `gauge_bridge`: 51
 - `interpretation_spine`: 1
@@ -4302,6 +4302,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter21 cert->Lean] Machine-checked in D0.Topology.WitnessHalting (witness_halting_cert): the orbit average E=(1/8) Sum_k P_k diag(1..8) P_k^T over the 8 cyclic shifts equals the scalar (9/2).I (emission 36/8=9/2), and P_k E P_k^T=E for every shift (native_decide on 8x8 Q); |Omega8|=8 reuses D0.Core.FiniteTypes.card_omega8. The 'topological halting quotient' physical reading stays cert. [was: Mobius witness halting cert]
+
+### D0-INFORMATION-CONNECTIVITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00`
+- module: `D0.Foundation.InformationConnectivity`
+- theorem: `admissible_constant_on_component;reachable_value_m1_forced;piecewise_admissible;unreachable_every_value_needs_catalogue;disconnected_observers_share_no_forced_domain;information_connectivity`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08-14 campaign; build standalone 2948 + D0.All 4477 GREEN; axioms propext/Classical.choice/Quot.sound on assembly, reachable_value_m1_forced axiom-free] Information connectivity under minimal record semantics (domains, record relation Rec, connectivity = equivalence closure, Nontrivial V, admissibility = records copy content faithfully): (1) in-component the ForcedValue family has the observation as unique M1Forced witness (uniqueness is by the constant control; connectivity carries the forcing); (2) out-of-component EVERY candidate value RequiresExternalCatalogue, by explicit piecewise-admissible witnesses - for v /= obs the constant assignment alone suffices and the piecewise witness is load-bearing exactly at v = obs (not even the observed value transfers); (3) corollary of (2) + transitivity: two record-disconnected observers share no forced domain. Net: a record-disconnected information domain and an external catalogue are the same thing. Clause 2 extends the M1Predicate pattern: at out-of-component d the family is PROVEN unsatisfiable, so RequiresExternalCatalogue there is licensed by the uniform-family dichotomy with clause 1 as the in-component non-vacuity control - not by a per-d M1Forced obligation as in the m1_* lemmas. The constraint family is a universal (semantic) constraint over all admissible assignments, not a finite selector with scores; M1Forced is abstract and imposes no finiteness (precedent: ReflectionFixed over R); the 'finite code' reading is exact on the in-component leg only, where the forcing witness is a finite record chain. License reading (model-level): whatever is M1-forced for an observer lies in the observer's record-component, so for assertable content the open question shifts from WHETHER connected to WHICH carrier realizes the record relation; no connectivity of any actual substrate pair is asserted - applying the license requires identifying Rec (bridge step, not discharged here). Carrier: abstract description domains, NOT the scene graph - the graph-connectivity rows of the reheating scene (BOOK_08 08.52 owners) are a different carrier, non-binding (pre-registered).
 
 ### D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001
 

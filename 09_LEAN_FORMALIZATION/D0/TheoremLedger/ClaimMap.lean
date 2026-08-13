@@ -1010,7 +1010,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CASCADE-TERMINAL-COUNT-001", moduleName := "D0.Foundation.CascadeTerminalCount",
       theoremName := "interior_card_two;closed_superset_contains_outer;three_shells_least_closed;closure_card_three;carrier_card_three;cascade_terminal_count", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CASCADE-CARRIED-ASSEMBLY-001", moduleName := "D0.Foundation.CascadeCarriedAssembly",
-      theoremName := "extended_floors_are_genuine;cascade_carried_assembly", status := ClaimStatus.leanCoreProved }
+      theoremName := "extended_floors_are_genuine;cascade_carried_assembly", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-INFORMATION-CONNECTIVITY-001", moduleName := "D0.Foundation.InformationConnectivity",
+      theoremName := "admissible_constant_on_component;reachable_value_m1_forced;piecewise_admissible;unreachable_every_value_needs_catalogue;disconnected_observers_share_no_forced_domain;information_connectivity", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

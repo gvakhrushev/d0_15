@@ -1,5 +1,5 @@
 claim_id,value,strength,quadrant,carries,cites,rests_on,depth,genesis,v1_structural,v2_semantic,v3_falsifiable,v4_foundation,v5_external,value_floored,external_question,lean_status,release_status,book,lean_module
-D0-M1-PREDICATE-001,75.9,100,FRONT-DOOR,21,1,0,0,True,18.2,16.7,9.0,12.0,20.0,,"Can a physical theory be axiomatised on minimum description length instead of on operational postulates (tomographic locality, continuity)? M1=MDL is a distinct entry point to the same target as the operational reconstructions.",LEAN_PROVED,CORE-FORMALIZED,BOOK_00/05,D0.Foundation.M1Predicate
+D0-M1-PREDICATE-001,76.2,100,FRONT-DOOR,22,1,0,0,True,18.5,16.7,9.0,12.0,20.0,,"Can a physical theory be axiomatised on minimum description length instead of on operational postulates (tomographic locality, continuity)? M1=MDL is a distinct entry point to the same target as the operational reconstructions.",LEAN_PROVED,CORE-FORMALIZED,BOOK_00/05,D0.Foundation.M1Predicate
 D0-PHI-HURWITZ-001,64.6,100,FRONT-DOOR,14,0,0,0,True,16.0,12.7,4.0,12.0,20.0,,"Why phi and not another constant? Hurwitz extremality (phi is the irrational maximally resistant to rational approximation, at every truncation depth) is the arithmetic content that makes the choice non-aesthetic.",LEAN_PROVED,CORE-FORMALIZED,BOOK_01/02,D0.NumberTheory.HurwitzMinimaxPhi
 D0-FOUND-001,60.4,100,FRONT-DOOR,115,3,0,0,True,28.0,11.4,9.0,12.0,0.0,,,LEAN_PROVED,CORE-FORMALIZED,BOOK_01/02,D0.Core.Phi
 D0-P-INVARIANT-MINIMAL-001,60.1,45,ATTACK-QUEUE,2,37,0,0,True,27.8,16.3,13.0,3.0,0.0,,,LEAN_PROVED,PROOF-TARGET,BOOK_01,D0.Foundation.InvariantMinimal
@@ -292,6 +292,7 @@ D0-VNEXT2-XI-MAXIMALITY-NOGO-001,29.0,100,BALLAST,0,0,1,1,False,0.0,9.0,20.0,0.0
 D0-VNEXT2-DIRAC-COVARIANCE-MAXIMALITY-NOGO-001,29.0,100,BALLAST,0,0,1,1,False,0.0,9.0,20.0,0.0,0.0,,,LEAN_PROVED,NO-GO,BOOK_02,D0.VNext2.SceneNativeRefinementClassification
 D0-VNEXT2-SCENE-NATIVE-MAXIMALITY-OWNER-001,29.0,100,BALLAST,0,0,1,1,False,0.0,9.0,20.0,0.0,0.0,,,LEAN_PROVED,NO-GO,BOOK_02,D0.VNext2.SceneNativeRefinementClassification
 D0-BRANCH-CP-READOUT-NOGO-V15,29.0,100,BALLAST,0,0,0,0,True,0.0,9.0,20.0,0.0,0.0,,,LEAN_PROVED,NO-GO,BOOK_04,D0.Integration.V15.BranchAudit
+D0-INFORMATION-CONNECTIVITY-001,29.0,100,BALLAST,0,0,1,1,False,0.0,20.0,9.0,0.0,0.0,,,LEAN_PROVED,CORE-FORMALIZED,BOOK_00,D0.Foundation.InformationConnectivity
 D0-HODGE-M1-REDUCTIO-001,29.0,70,BALLAST,0,0,1,1,False,0.0,20.0,9.0,0.0,0.0,,,LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS,BRIDGE-ASSUMPTIONS-EXPLICIT,BOOK_05,D0.Topology.HodgeAlgebraicRealization
 D0-PVSNP-LYAPUNOV-M1-001,29.0,70,BALLAST,0,0,1,1,False,0.0,20.0,9.0,0.0,0.0,,,LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS,BRIDGE-ASSUMPTIONS-EXPLICIT,BOOK_05,D0.Complexity.HeatTraceLyapunov
 D0-M1-HOMOLOGICAL-SCENE-READING-001,28.9,100,BALLAST,0,2,2,2,False,8.4,11.5,9.0,0.0,0.0,,,LEAN_PROVED,CORE-FORMALIZED,BOOK_01,D0.Synthesis.M1HomologicalSceneReading
