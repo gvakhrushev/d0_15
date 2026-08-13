@@ -229,6 +229,7 @@ import D0.Foundation.CascadeFloorOrientationParity
 import D0.Foundation.CascadeFloorProofreading
 import D0.Foundation.CascadeFloorScaleRatio
 import D0.Foundation.CascadeFloorShellClosure
+import D0.Foundation.CascadeInterlockArrow
 import D0.Foundation.CascadeInterlockScale
 import D0.Foundation.CascadeTerminalCount
 import D0.Foundation.ContinuumAsInverseLimit

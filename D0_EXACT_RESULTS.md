@@ -8,7 +8,7 @@ part of its statement. Open problems are collected at the end as named targets, 
 qualifications of the theorems.
 
 Verification: `cd 09_LEAN_FORMALIZATION && lake build D0.All` (green, 0 `sorry`,
-4478 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (637 claims) ·
+4479 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (638 claims) ·
 gate `tools/` (validate, sync, value ledger, certificates, score — all green).
 
 ---
@@ -222,6 +222,18 @@ the physical reading of the carrier definitions, not load-bearing in any Lean st
 Adjacency into the chain is open; no biochemical claim is registered; the frozen R-A2
 passport record (committed before the mint) grades any real stage beating its equilibrium
 bound as internally multi-test. `D0-CASCADE-FLOOR-PROOFREADING-001`.
+
+**T27 (Arrow interlock — added 2026-08-14).** The floor's insufficiency is
+depth-universal: with the equilibrium-pathway carrier (nonempty positive stage factors
+telescoping to the endpoint ratio `δ` — detailed balance as the defining hypothesis,
+provably inhabited at depths 1 and 2), every equilibrium pathway is extensionally a
+single test (reach-set inclusion, any depth), so no equilibrium pathway of ANY depth
+reaches `errOf (δ²)` — while the two-stage carrier does, and its stage product `δ²`
+cannot telescope to `δ`. Necessity is class-relative: Lean forces only that any carrier
+representable as a telescoping factor list fails; reading class-exit as broken detailed
+balance is the defining-hypothesis gloss, and the identification with the time arrow's
+owned carrier (T5) is new prose with no book owner yet — stated as such.
+`D0-CASCADE-INTERLOCK-ARROW-001`.
 
 ## 6. No-go theorems (exact negative results)
 

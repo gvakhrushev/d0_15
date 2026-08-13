@@ -638,6 +638,7 @@ digraph D0Theory {
   "D0-CASCADE-CARRIED-ASSEMBLY-001" [label="D0-CASCADE-CARRIED-ASSEMBLY-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-INFORMATION-CONNECTIVITY-001" [label="D0-INFORMATION-CONNECTIVITY-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CASCADE-FLOOR-PROOFREADING-001" [label="D0-CASCADE-FLOOR-PROOFREADING-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-CASCADE-INTERLOCK-ARROW-001" [label="D0-CASCADE-INTERLOCK-ARROW-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="D0.Synthesis.TopHodgeInverseSpectralRigidity", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001" -> "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -4170,4 +4171,8 @@ digraph D0Theory {
   "D0-CASCADE-FLOOR-PROOFREADING-001" -> "module:D0.Foundation.CascadeFloorProofreading" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-CASCADE-FLOOR-PROOFREADING-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Foundation.CascadeInterlockArrow" [label="D0.Foundation.CascadeInterlockArrow", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CASCADE-INTERLOCK-ARROW-001" -> "module:D0.Foundation.CascadeInterlockArrow" [label="module"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CASCADE-INTERLOCK-ARROW-001" -> "domain:formal_core" [label="domain"];
 }

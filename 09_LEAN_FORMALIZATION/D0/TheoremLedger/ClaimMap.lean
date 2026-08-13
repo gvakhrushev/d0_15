@@ -1014,7 +1014,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-INFORMATION-CONNECTIVITY-001", moduleName := "D0.Foundation.InformationConnectivity",
       theoremName := "admissible_constant_on_component;reachable_value_m1_forced;piecewise_admissible;unreachable_every_value_needs_catalogue;disconnected_observers_share_no_forced_domain;information_connectivity", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CASCADE-FLOOR-PROOFREADING-001", moduleName := "D0.Foundation.CascadeFloorProofreading",
-      theoremName := "errOf_lt_errOf;one_test_insufficient;two_stage_control;stepProofreading_discriminates;proofreading_ladder;proofreading_floor", status := ClaimStatus.leanCoreProved }
+      theoremName := "errOf_lt_errOf;one_test_insufficient;two_stage_control;stepProofreading_discriminates;proofreading_ladder;proofreading_floor", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CASCADE-INTERLOCK-ARROW-001", moduleName := "D0.Foundation.CascadeInterlockArrow",
+      theoremName := "equilibrium_class_inhabited;equilibrium_collapses_to_one_test;equilibrium_depth_collapse;repair_breaks_equilibrium;interlock_proofreading_arrow", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

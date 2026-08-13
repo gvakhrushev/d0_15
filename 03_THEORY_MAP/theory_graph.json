@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 637,
+    "claims": 638,
     "release_status": {
-      "CORE-FORMALIZED": 233,
+      "CORE-FORMALIZED": 234,
       "CORE_BRIDGE_SPLIT": 17,
       "NO-GO": 89,
       "PROOF-TARGET": 62,
@@ -20,14 +20,14 @@
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 444,
+      "LEAN_PROVED": 445,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 31,
       "PYTHON_CERTIFIED": 111,
       "DEPRECATED": 2,
       "OPEN": 49
     },
     "claim_type": {
-      "core": 236,
+      "core": 237,
       "bridge": 45,
       "no-go": 96,
       "frontier": 62,
@@ -35,7 +35,7 @@
       "deprecated": 3
     },
     "domain": {
-      "formal_core": 372,
+      "formal_core": 373,
       "smooth_geometry": 41,
       "empirical_passport": 39,
       "gauge_bridge": 51,
@@ -21179,6 +21179,35 @@
       "label": "D0.Foundation.CascadeFloorProofreading",
       "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFloorProofreading.lean",
       "exists": true
+    },
+    {
+      "id": "D0-CASCADE-INTERLOCK-ARROW-001",
+      "kind": "claim",
+      "claim_id": "D0-CASCADE-INTERLOCK-ARROW-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "01.6.1c arrow interlock: equilibrium depth collapses, the exit is forced",
+      "lean_module": "D0.Foundation.CascadeInterlockArrow",
+      "lean_theorem": "equilibrium_class_inhabited;equilibrium_collapses_to_one_test;equilibrium_depth_collapse;repair_breaks_equilibrium;interlock_proofreading_arrow",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-08-14 campaign; standalone 3031 GREEN; D0.All 4479 GREEN; axioms propext/Classical.choice/Quot.sound on all five theorems] The arrow interlock - closes the named target of D0-CASCADE-FLOOR-PROOFREADING-001's note at the stated grade (floor row untouched). For every discrimination limit 0 < delta < 1, with the equilibrium-pathway carrier (nonempty list of positive stage factors whose product TELESCOPES to the endpoint ratio delta - detailed balance as the defining hypothesis, cited reading, Hopfield 1974 docstring grade): (1) equilibrium_class_inhabited - the class is inhabited at depth 1 and 2 (non-vacuity, skeptic-demanded); (2) equilibrium_collapses_to_one_test - every equilibrium pathway is extensionally a single test (reach-set inclusion, any depth); (3) equilibrium_depth_collapse - no equilibrium pathway of ANY depth reaches errOf(delta^2), closing the just-add-more-equilibrium-tests escape; (4) repair_breaks_equilibrium - the repair's stage product delta^2 cannot telescope to delta (elementary annotation); (5) assembly interlock_proofreading_arrow. HONESTY (skeptic-required): the module's new formal content is the carrier definition plus wiring - the depth-universal insufficiency composes the floor's own one_test_insufficient through a one-rewrite reach-set inclusion; the class-exit at the target is carried by equilibrium_depth_collapse. Necessity is CLASS-RELATIVE: Lean forces only that no carrier representable as a positive factor list telescoping to delta reaches errOf(delta^2) while the two-stage carrier does; reading class-exit as broken detailed balance is the defining-hypothesis gloss, not Lean-forced; carriers not representable as factor lists are outside the statement; no exhaustion of un-modeled carrier shapes is claimed. The identification of the class-exit with the time arrow's owned carrier (D0-PISOT-CONTRACTION-TIME-ARROW-001) is docstring-anchored NEW prose - no book-prose owner yet, no arrow-side formal object, strictly below interlock link 4's grade; book-prose target (01.6.1c arrow-interlock subsection with a 06.36 cross-reference) is the named continuation. Load-bearing definitions: EquilibriumPathReaches (plus the floor's errOf/OneTestReaches/TwoStageReaches). Finite dimensionless statement; no physical promotion claimed.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeInterlockArrow.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.CascadeInterlockArrow",
+      "kind": "lean_module",
+      "label": "D0.Foundation.CascadeInterlockArrow",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeInterlockArrow.lean",
+      "exists": true
     }
   ],
   "edges": [
@@ -30010,6 +30039,16 @@
     {
       "source": "D0-CASCADE-FLOOR-PROOFREADING-001",
       "target": "module:D0.Foundation.CascadeFloorProofreading",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CASCADE-INTERLOCK-ARROW-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CASCADE-INTERLOCK-ARROW-001",
+      "target": "module:D0.Foundation.CascadeInterlockArrow",
       "kind": "implemented_in"
     }
   ]

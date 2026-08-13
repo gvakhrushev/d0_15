@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 233
+- `CORE-FORMALIZED`: 234
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
@@ -22,7 +22,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 45
 - `certificate`: 195
-- `core`: 236
+- `core`: 237
 - `deprecated`: 3
 - `frontier`: 62
 - `no-go`: 96
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 50
 - `empirical_passport`: 39
 - `external_background`: 1
-- `formal_core`: 372
+- `formal_core`: 373
 - `frontier`: 62
 - `gauge_bridge`: 51
 - `interpretation_spine`: 1
@@ -3704,6 +3704,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-08-09 POST-SKEPTIC] The floor 'closure => shell' + the PROSE-ANCHORED fourth link of D0-CASCADE-INSUFFICIENCY-CHAIN-001: the 01.6.1c prose segment order => defect => closure => shell is now carried END-TO-END in the registered CascadeStep shape AT REFLECTION-PROXY GRADE (the topological/2-cell-attachment reading of closure=>shell stays OPEN, as registered at D0-CASCADE-FLOOR-DEFECT-CLOSURE-001). OWNED READING: BOOK_03 03.23.5 (FORCED), verbatim: 'An interior defect (03.23.4) plus a memory-circulation zone (03.23.3) leaves the global topology open; closing it requires an outer shell (the Closure role D of 03.23.1). The shell's scaling cannot carry a free parameter (M1). The only self-consistent parameter-free scale is the positive root of r^2 - r - 1 = 0 => r = phi.' BRIDGING PROXY, scoped (the carrierRealizedRatio discipline): closure is read as closure of the radius set under the radial reflection rho(x) = 2*core - x -- the canonical completion move of the three-term radial progression; the topological (genus/boundary) reading stays at 03.23.5's own prose grade. CONTENT on the OWNED geometry (TorusShellAttachment radii inner = 1 = R-r, core = (a+1)/2 = R, outer = a = R+r, every admissible parameter): insufficient -- the interior pair {inner, core} (03.23.5's own defect+circulation identification) is NOT reflection-closed, rho(inner) = outer escapes for EVERY parameter (interior_not_reflection_closed, the verbatim negation of ObligationBelow); control -- the three-shell set IS reflection-closed (shells_reflection_closed: rho swaps inner<->outer, fixes core). M1 LEG: x = 1 + 1/x has EXACTLY ONE positive solution and it is phi (shell_scale_forced, real level, golden quadratic) -- and phi is the scale floor's own survivor (shell_scale_is_scale_survivor = phi_non_captured, cited): the cascade's phi reappears at the shell, linking the shell floor back to the scale floor's control. Floor genuine via step_discriminates (shell_closure_floor_genuine). LINK GRADE (skeptic R1, mandatory): the fourth link is PROSE-ANCHORED -- unlike links 1-3 (shared-object interlock shape) the adjacency to the defect-closure floor is carried by 03.23.5's own FORCED two-layer identification, NOT by a shared formal object (no defect-floor object occurs in the theorem); the only formal cross-floor tie is to the SCALE floor's control (phi_non_captured, cited). RIVAL PROXY, pre-empted: reflection around inner completes the pair with an INTERIOR shell (3-a)/2 -- closure => OUTER shell is proxy-relative; canonicity anchor: core = the owned major radius = tube center, rho is the tube's own radial symmetry. RATIONAL/REAL SPLIT: the reflection legs live in Q over all parameters; the phi-scale leg forces 03.23.5's OWN equation x = 1 + 1/x (unique positive solution phi); 'that equation = the shell's scaling' stays at prose grade; no owned rational TorusParameter ever attains phi -- its ratios are rational = captured, exactly the non-capture frame of D0-CASCADE-INTERLOCK-SCALE-001 (instantiates non-capture, not a counterexample). Load-bearing definitions: shellReflection, stepShellClosure. NON-CLAIMS: the phi^5 aspect (03.23.6), the {9,11,13} spectrum forcing, the address-parity floor (D0-CASCADE-FLOOR-ORIENTATION-PARITY-001), and the topological closure statement. UMBRELLA STAYS OPEN: the terminal step 'three insufficiencies = three zones' remains unformalized. Clean axioms propext/Classical.choice/Quot.sound; no native_decide. Finite dimensionless statement; no physical promotion claimed.
+
+### D0-CASCADE-INTERLOCK-ARROW-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.CascadeInterlockArrow`
+- theorem: `equilibrium_class_inhabited;equilibrium_collapses_to_one_test;equilibrium_depth_collapse;repair_breaks_equilibrium;interlock_proofreading_arrow`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [2026-08-14 campaign; standalone 3031 GREEN; D0.All 4479 GREEN; axioms propext/Classical.choice/Quot.sound on all five theorems] The arrow interlock - closes the named target of D0-CASCADE-FLOOR-PROOFREADING-001's note at the stated grade (floor row untouched). For every discrimination limit 0 < delta < 1, with the equilibrium-pathway carrier (nonempty list of positive stage factors whose product TELESCOPES to the endpoint ratio delta - detailed balance as the defining hypothesis, cited reading, Hopfield 1974 docstring grade): (1) equilibrium_class_inhabited - the class is inhabited at depth 1 and 2 (non-vacuity, skeptic-demanded); (2) equilibrium_collapses_to_one_test - every equilibrium pathway is extensionally a single test (reach-set inclusion, any depth); (3) equilibrium_depth_collapse - no equilibrium pathway of ANY depth reaches errOf(delta^2), closing the just-add-more-equilibrium-tests escape; (4) repair_breaks_equilibrium - the repair's stage product delta^2 cannot telescope to delta (elementary annotation); (5) assembly interlock_proofreading_arrow. HONESTY (skeptic-required): the module's new formal content is the carrier definition plus wiring - the depth-universal insufficiency composes the floor's own one_test_insufficient through a one-rewrite reach-set inclusion; the class-exit at the target is carried by equilibrium_depth_collapse. Necessity is CLASS-RELATIVE: Lean forces only that no carrier representable as a positive factor list telescoping to delta reaches errOf(delta^2) while the two-stage carrier does; reading class-exit as broken detailed balance is the defining-hypothesis gloss, not Lean-forced; carriers not representable as factor lists are outside the statement; no exhaustion of un-modeled carrier shapes is claimed. The identification of the class-exit with the time arrow's owned carrier (D0-PISOT-CONTRACTION-TIME-ARROW-001) is docstring-anchored NEW prose - no book-prose owner yet, no arrow-side formal object, strictly below interlock link 4's grade; book-prose target (01.6.1c arrow-interlock subsection with a 06.36 cross-reference) is the named continuation. Load-bearing definitions: EquilibriumPathReaches (plus the floor's errOf/OneTestReaches/TwoStageReaches). Finite dimensionless statement; no physical promotion claimed.
 
 ### D0-CASCADE-INTERLOCK-SCALE-001
 
