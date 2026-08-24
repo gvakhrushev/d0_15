@@ -181,7 +181,8 @@ def factorial(n):
 
 def admissible(m: int, marks_labeled: bool = False):
     """Apply the three forged criteria to base B_m = Omega8 |_| {m marks}.
-    Returns (ok, killers)."""
+    Returns (ok, killers).
+    """
     killers = []
     if m < 1:
         killers.append("C-HALT")            # no stationary mark to close against
