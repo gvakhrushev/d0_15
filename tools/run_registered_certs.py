@@ -25,7 +25,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import sync_theory_status_map as s  # noqa: E402
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-TIMEOUT = 120
+# hosted runners run ~3x slower than a dev box; the slowest registered cert
+# (vp_scene_bartholdi_typed) needs ~50s locally => allow up to 10 minutes.
+TIMEOUT = 600
 
 
 DATA_GATED = ("EXTERNAL_DATA_REQUIRED", "missing preregistered", "missing extracted",
