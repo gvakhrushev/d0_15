@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 8400 / 11147 (**75.4%** of track-fair max)
-- **Core spine:** 6600 / 9280 (headroom **2680** points to take every core claim to L5)
-- Claims: 636 active (638 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 8632 / 11387 (**75.8%** of track-fair max)
+- **Core spine:** 6832 / 9520 (headroom **2688** points to take every core claim to L5)
+- Claims: 648 active (650 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 91.5 / 100 (penalties **-8.5**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 93.5 / 100 (penalties **-6.5**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -18,15 +18,15 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tracked_but_ignored` | 0 | -0 | tracked-but-gitignored files (scratch that should not ship) |
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
-| `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
+| `phantom_certs` | 1 | -3 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
 | `orphan_proof_targets` | 35 | -3.5 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
-| `real_in_project_lake` | 1 | -5 | a real .lake build tree inside the repo (must be an external junction) |
+| `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 0 | +0 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `real_in_project_lake` (-5); `orphan_proof_targets` (-3.5)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.5); `phantom_certs` (-3)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -70,6 +70,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-P-M1-SATURATION-001` | frontier | 2 | LEAN_PROVED | 12 |
 | `D0-P-ABELIAN-001` | frontier | 2 | LEAN_PROVED | 12 |
 | `D0-TORAL-TIME-MARKOV-CONJUGACY-001` | frontier | 1 | HYP | 2 |
+| `D0-WINDOW-9-13-DISSOLVE-001` | gauge_bridge | 1 | HYP | 2 |
 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | frontier | 1 | HYP | 2 |
 | `D0-GAP-W-COPY-CAP-M1-001` | frontier | 1 | LEAN_PROVED | 12 |
 | `D0-FIBONACCI-IF-FORCING-001` | formal_core | 1 | LEAN_PROVED | 12 |
@@ -86,13 +87,12 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `D0-FIBONACCI-ANYON-UNIQUENESS-001` | formal_core | 1 | LEAN_PROVED | 12 |
 | `D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001` | formal_core | 1 | LEAN_PROVED | 12 |
 | `D0-TIME-ARROW-ORDERED-SELF-READOUT-001` | formal_core | 1 | LEAN_PROVED | 12 |
-| `D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001` | formal_core | 1 | LEAN_PROVED | 12 |
 
 ## By domain
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 372 | 5478 | 6661 | 1143 |
+| formal_core | 384 | 5710 | 6901 | 1151 |
 | frontier | 62 | 284 | 1240 | 956 |
 | cosmology | 50 | 752 | 930 | 178 |
 | smooth_geometry | 41 | 517 | 678 | 152 |
@@ -111,11 +111,12 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_04 | 112 | 1436 | 1942 | 486 |
 | BOOK_08 | 87 | 1159 | 1563 | 395 |
 | BOOK_02 | 85 | 1038 | 1384 | 336 |
-| BOOK_07 | 73 | 947 | 1253 | 292 |
-| BOOK_01 | 61 | 888 | 1144 | 256 |
+| BOOK_07 | 75 | 987 | 1293 | 292 |
+| BOOK_01 | 62 | 908 | 1164 | 256 |
 | BOOK_06 | 45 | 547 | 776 | 224 |
 | BOOK_05 | 31 | 384 | 555 | 171 |
-| BOOK_01/02 | 15 | 284 | 284 | 0 |
+| BOOK_01/02 | 17 | 316 | 324 | 8 |
+| BOOK_01/04 | 10 | 200 | 200 | 0 |
 | BOOK_00 | 12 | 145 | 222 | 77 |
 | BOOK_00/01 | 9 | 122 | 148 | 26 |
 | BOOK_07/08 | 9 | 96 | 163 | 62 |
@@ -123,7 +124,6 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_03 | 7 | 82 | 90 | 8 |
 | BOOK_01/02/08 | 4 | 80 | 80 | 0 |
 | BOOK_06/07 | 4 | 80 | 80 | 0 |
-| BOOK_01/04 | 3 | 60 | 60 | 0 |
 | BOOK_01/03 | 3 | 60 | 60 | 0 |
 | BOOK_04/08 | 7 | 52 | 140 | 88 |
 | METROLOGY | 5 | 51 | 100 | 49 |

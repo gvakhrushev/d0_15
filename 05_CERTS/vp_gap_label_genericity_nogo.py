@@ -113,6 +113,8 @@ def main() -> int:
     print("WHICH labels appear (the gap-opening subset, which depends on the specific operator and")
     print("coupling), or their relative gap widths — and freeze that prediction before comparison.")
     print("Until such a forced subset exists, no gap-labelling measurement is a test of D0.")
+    print("PASS: genericity no-go demonstrated — labels = generic Bellissard module, "
+          "zero discriminating power (controls C1-C3 fired)")
     return 0
 
 

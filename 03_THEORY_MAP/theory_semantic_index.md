@@ -7,8 +7,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
 - `BRIDGE-CALIBRATION`: 3
-- `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 234
+- `CERT-CLOSED`: 170
+- `CORE-FORMALIZED`: 245
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
@@ -21,8 +21,8 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Type counts
 
 - `bridge`: 45
-- `certificate`: 195
-- `core`: 237
+- `certificate`: 196
+- `core`: 248
 - `deprecated`: 3
 - `frontier`: 62
 - `no-go`: 96
@@ -32,7 +32,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `cosmology`: 50
 - `empirical_passport`: 39
 - `external_background`: 1
-- `formal_core`: 373
+- `formal_core`: 385
 - `frontier`: 62
 - `gauge_bridge`: 51
 - `interpretation_spine`: 1
@@ -1962,6 +1962,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [P1] From the frozen causal-compactness ceiling C_max=3/8 (Book 07), the reflecting surface R=8M/3 lies strictly in (2M,3M) with nonempty cavity [8M/3,3M], and the horizonless echo delay is EXACTLY tau_echo/M = 2/3 + 4*log(3/2) ~ 2.2885 (dimensionless, mass-rescaling invariant; M cancels). Lean D0.Gravity.HorizonlessEchoDelay (Real.log_inv/log_div + ring). The GR tortoise coordinate r_star=r+2M log(r/(2M)-1) is EXTERNAL formalism, not a D0 core deduction. Falsifier target, not a detection.
+
+### D0-EW-TRANSPORT-SECTORS-001
+
+- type: `certificate`
+- release_status: `CERT-CLOSED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.Core.EWTransportSectors`
+- theorem: `ew_sector_count_value;ew_depth_composition;ew_depth_is_twelve;v11_card`
+- cert: `vp_ew_transport_sectors.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: Discharges the unowned phi^-12 leg of the D0-ALPHA-HOLONOMY-002 depth decomposition phi^-17=phi^-5·phi^-12 (flagged as the one soft joint of the flagship chain). Sector chain over OWNED pieces: |Omega8|=8 (§01.7) → V9=9 (+omega0 basepoint §01.8) → V11=11 (V11=V9⊔D2 §01.20 count-certified vp_v1141) → N_EW=12 (+1 = single directed seam crossing N²=0 owned by D0-BARYON-ASYMMETRY-DELTA0-001; no-skip of V11 vertices under M1 — skipping needs an exogenous selection catalog). Depth composition phi^-5·phi^-12=phi^-17 exact in Q(phi) (Lean zpow). Cert: sympy-exact identity; decomposition feeds alpha holonomy identically (0.0e00 diff); controls FAIL at N_EW=11/13 (|Δα|~1e-3..e-2 ≫ 1e-7 window). [skeptic 2026-08-24 SURVIVES-WITH-AMENDMENTS: A1 carrier identification ('those 12 sectors ARE the EW transport') marked typed-BRIDGE — only the arithmetic chain is CERT grade; A2 catalog-free minimality named as third cited input, formalization queued (no-skip alone forces N_EW>=11 lower bound only); A3 ownership audit PASS (D2=Z(Q8) fork-open caveat does not affect the count); A4 numeric PASS. Re-skeptic if amendments disputed.] Built Lean 4.30.0 rc=0 0 sorry.
 
 ### D0-EW-WINDOW-FORCING-001
 
@@ -3913,6 +3926,58 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter6 synthesis] Ties the corpus order-8/rank-8 objects into ONE forcing of the number 8, sewn by classical uniqueness/classification owners: {±}->Z2 (Bott period 2) -> ABCD x {±}=8=|Omega8| (Hurwitz 1,2,4,8 / Clifford & Bott-KO period 8) -> Q8 c 2T c 2I (Dedekind+Baer + icosians) -> E8 (Mordell) -> Spin(8) triality (3 eight-dim reps). Lean D0.Synthesis.DimensionEightNetwork (dim8_network) machine-checks the arithmetic skeleton: 8=2*4; tower 8|24|120 with indices 3,5,15; Z(Q8)=Z2 base; E8 Gram even unimodular (reuses D0-ICOSIAN-E8-GRAM-001); D4 star has 3 legs and |Out(Spin8)|=|S3|=6. Cert vp_dim8_network.py + names the 6 external owners. HONEST (anti-numerology, 00.9): forces the NUMBER 8 + rank-8 target ONLY; '3 generations' (the 3 = #D4 reps), C_max=3/8, and Leech Λ24<->K=30 are REJECTED forcing-links; the periodicity/triality/uniqueness theorems are EXTERNAL owners. Meets the phi-network (01.21.3) at the icosians.
 
+### D0-DYAD-CLOSURE-FORCING-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Core.DyadClosureForcing`
+- theorem: `DYAD_CLOSURE_FORCING_PROVED;gen_bound_valid_iff;gen_bound_saturable_iff;gen_closure_forced;dyad_state_is_forced_closure`
+- cert: `vp_dyad_closure_forcing.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Answers WHY the total response is exactly 1 (raised by the trace-2 control of DYAD-FRINGE-BRIDGE). Generalized closure k=r11+r22, raw functionals D,V, identity D²+V²=k²−4det. VALIDITY: raw bound for all admissible states iff k≤1 (k>1 broken by pure state r11=k). SATURABILITY: equality attainable iff k≥1 (k<1 gives max=k²<1 — dead capacity; witness r11=(k+1)/2,r22=(k−1)/2,r12=0). FORCING: both together iff k=1. M1/Kolmogorov reading: k≠1 costs a broken law or an exogenous normalization constant 1/k in every readout statement — a free real constant is an external catalog, forbidden by M1; hence unit closure (= owned p+p² split) is DERIVED. Cert: grid scan confirms biconditionals; controls FAIL at k=2 (bound broken) and k=0.5 (dead capacity) as designed. Built Lean 4.30.0 rc=0 0 sorry.
+
+### D0-DYAD-COMPLEMENTARITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Core.DyadComplementarity`
+- theorem: `DYAD_COMPLEMENTARITY_PROVED;dyad_complementarity_bound;dyad_bound_eq_iff_det_zero;pathCertain_readout;coherenceMaximal_readout`
+- cert: `vp_dyad_complementarity.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Complementarity as a theorem of the §01.3 no-monopoly dyad: admissible branch state = unit closure (r11+r22=1) ∧ PSD (det=r11·r22−r12²≥0); readout functionals D=|r11−r22| (path/which-branch) and V=2|r12| (coherence). THEOREM: D²+V²≤1 with equality iff det=0 — bound IS positivity of the joint response, zero quantum postulates (same primitives as upstream Born weights D0.Core.BornFinite). Equality families = wave/particle extremes: diag(1,0)->(D,V)=(1,0), balanced coherent->(0,1). HONEST SPLIT: structure THE; lab identification (fringe visibility/which-path) = typed BRIDGE to interferometry; Englert V²+D²≤1 = external-background correspondence, not derived here. Cert: 62809-state scan PASS; controls FAIL as designed (non-PSD violates bound ⇒ non-vacuous; linear D+V≤1 violable ⇒ squares structural). Built Lean 4.30.0 rc=0 0 sorry.
+
+### D0-DYAD-FRINGE-BRIDGE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Core.DyadFringeBridge`
+- theorem: `DYAD_FRINGE_BRIDGE_PROVED;fringe_contrast_eq_visibility;operational_complementarity;phaseIntensity_bounded;fringe_envelope_closure`
+- cert: `vp_dyad_fringe_bridge.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: DISCHARGES the quantity-level bridge of D0-DYAD-COMPLEMENTARITY-001 into derivation. Phase-scanned comparison of the dyad I(phi)=1/2+r12*cos(phi) (baseline=unit closure) yields fringeMax/min envelope with fringeMax+fringeMin=1; hence standard fringe contrast (Imax-Imin)/(Imax+Imin)=2|r12|=V IDENTITY (no optical input); branch best-guess gap |r11-r22|=D. OPERATIONAL COMPLEMENTARITY: fringe-contrast²+path-gap²≤1 for every admissible record. Residual external bridge shrinks to apparatus-level only: 'a lab interferometer realizes the phase-scanned comparison'. Cert: 4000-state identity check PASS worst-dev 1e-16; controls FAIL as designed (non-PSD violates operational bound; trace=2 state gives contrast V/2 ⇒ closure enters via Imax+Imin=1). Built Lean 4.30.0 rc=0 0 sorry.
+
+### D0-DYAD-SUBENSEMBLES-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Core.DyadSubensembles`
+- theorem: `DYAD_SUBENSEMBLES_PROVED;mix_admissible;eraser_identity;phaseIntensity_mix;cross_nonneg;dyad_qf_nonneg`
+- cert: `vp_dyad_subensembles.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Explanation-bricks for existing lab situations, derived in the dyad house. MIXTURES: entrywise w-mixture of admissible records is admissible (det decomposes into weighted dets + cross term; cross >= 0 by the Cauchy-Schwarz each record supplies) and obeys D²+V²<=1 => weak/incomplete registrations never leave the house; weak-measurement trajectories coexist with fringes without paradox. ERASER IDENTITY: mixing rho with antiPhase(rho) (branches swapped, coherence negated) at weight w scales visibility by |2w-1|·V(rho); w=1/2 erases fully. NO-RETRO: scanned intensity linear in record I(mix,phi)=w·I(rho,phi)+(1-w)·I(sigma,phi) => delayed choice changes subensemble bookkeeping only, no backward reach. Cert: 3000 mixtures PASS; controls FAIL as designed (beyond-circle probes non-admissible; interior saturation 0/2000 = non-generic, extreme-point scope queued). Built Lean 4.30.0 rc=0 0 sorry.
+
 ### D0-EDGE-ALPHA-001
 
 - type: `core`
@@ -4172,6 +4237,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter21 cert->Lean: horizon emission operator Q U^H P U Q is PSD for any orthogonal U + projector P; the float collimation inequality J_axis>J_trans stays cert]Horizon closed; jet + baryon image-basis certs present. [was:CERT-SCAFFOLD-CLOSED]
+
+### D0-GRAV-EINSTEIN-CLASS-SELECTION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Geometry.FiniteBianchiEinsteinTensor`
+- theorem: `ricci_or_scalar_only_not_full_gravity_response;einstein_transform_coupling_eq;scalar_coupling_of_conserved;graded_bianchi_closure`
+- cert: `vp_gravity_einstein_class_nogo.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Revives the _OPEN_WITNESSES orphan against REAL APIs (new files D0.Geometry.FiniteA2ResponseTensor-in-FiniteA2EinsteinResponse + GradedBianchiClosure replace the two phantom imports). SETTING: finite index N, admissible response = symmetric + divergence-balanced (discrete contracted Bianchi); conserved source = zero row sums. THEOREMS: scalar decoupling (every constant response couples 0 to every conserved source); trace-part invisibility (mean-null transform has identical coupling to conserved sources); MAIN NO-GO: given G with a conserved source coupling nontrivially, EVERY scalar-only kappa-response fails to reproduce its profile => scalar-only cannot be full gravity. SEMANTICS HONESTY: einsteinTransform here is mean-null normalization (total response vanishes), NOT metric-trace adjustment — that refinement queued. Cert: 3000 trials PASS; conservation load-bearing control FAIL-as-designed (1000/1000). Built Lean 4.30.0 rc=0 0 sorry.
 
 ### D0-GRAVITY-ENTROPIC-ARCHIVE-001
 
@@ -4563,6 +4641,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: Meson transfer uses the typed Edge by Generation carrier and lifted flavour defect rather than a direct sum of unrelated spaces.
 
+### D0-MINCUT-A4-ENTROPY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07`
+- module: `D0.Topology.FiniteMinCutEntropy`
+- theorem: `finite_min_cut_exists;cutCapacity;minCutValue;finiteEntanglementEntropy;finite_entanglement_entropy_nonneg`
+- cert: `vp_mincut_entropy.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Revives the _OPEN_WITNESSES orphan (was: undefined minCutValue). Finite network = Fintype vertices + nonneg capacity matrix. ATTAINMENT: over the FINITE family of proper nonempty subsets the minimum cut capacity is attained by an actual partition (finiteness replaces max-flow iteration) — Lean witness construction via Finset.image.min. ENTROPY: S=(1/4)·minCutValue ≥ 0, the /4 being the ABCD boundary-cell capacity linking to the gravity area-law reading. Cert: 14-cut brute force on deterministic 4-vertex network, attainment+minimality PASS; controls FAIL as designed (negative-capacity probe rejected by admissibility gate; bulk internal capacity ≠ boundary minCut — volume/boundary distinct). Honest scope: finite combinatorics only; A/4 area-law physical reading = typed layer toward gravity sector. Built Lean 4.30.0 rc=0 0 sorry.
+
 ### D0-NCG-INDEX-001
 
 - type: `core`
@@ -4718,6 +4809,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07 route audit] Repairs the independence of the arithmetic route to phi. Hurwitz selects the GL(2,Z) noble CLASS not a number (phi, 1/phi, 2+phi, (phi+1)/(phi+2) all attain 1/sqrt5); and the previous owner HurwitzMinimaxPhi quantifies over D0ResponseRoot i.e. inside the detector route's own equation family. Here the representative is fixed by M1+ canonization: within the period-one family [n;n,n,...] (root of x^2-nx-1, disc n^2+4) minimal description selects n=1 uniquely, giving disc 5 and (1+sqrt5)/2. The golden quadratic is the OUTPUT never a hypothesis, so the route is independent of p+p^2=1. Negative control: n=2 gives disc 8 and 1+sqrt2. External owner for step 1: Hurwitz 1891.
+
+### D0-PHI-QUADPISOT-MINIMALITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/02`
+- module: `D0.NumberTheory.PhiQuadPisotMinimality`
+- theorem: `PHI_QUADPISOT_MINIMALITY_PROVED;quad_pisot_phi_le;quad_pisot_eq_phi_iff;betaOne_quad_pisot;betaOne_one_eq_phi`
+- cert: `vp_phi_quadpisot_minimality.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: NEW independent leg of the φ-forcing: every quadratic Pisot number γ (root of x²−sx+t, s,t∈Z, γ>1, conjugate |s−γ|<1) satisfies φ≤γ, equality iff (s,t)=(1,−1); every admissible period-one member β_a=a+tail_a (a≥1) is quad-Pisot and β₁=φ. Composed with the owned upstream Hurwitz leg all three classical selectors (self-reference / Hurwitz / quad-Pisot minimality) agree on a=1=φ. NO-OVERCLAIM guard: naive 'φ is the smallest Pisot number' is FALSE — plastic ρ≈1.3247 (x³=x+1) is Pisot below φ; cert C1 must FAIL it. Correct global claims: minimal QUADRATIC Pisot + simplest defining polynomial (deg 2) + Hurwitz-extremal worst-approximable. No Irrational machinery: s=2 case dies on 'k²=k+1 has no integer solution'. Built Lean 4.30.0 + Mathlib rc=0 0 sorry.
 
 ### D0-PI0-DISCRETE-ANGLE-001
 
@@ -4952,6 +5056,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07-29] Exact fixed-algebra theorem for the already frozen K(9,11,13) graph. Invariance quantifies over the full SimpleGraph automorphism type, not a literal generator list. Every rational vertex function invariant under all graph automorphisms has a unique form a+b*degree+c*degree^2, with explicit Lagrange coefficients at the computed degree values 20,22,24. Thus (Q^V)^Aut = Q[degree] = span{1,degree,degree^2} at function level, closing the evidence-grade class-function leg for rational vertex observables. Negative control on a two-degree carrier gives distinct quadratics with the same function, proving the third degree value load-bearing. Honest scope: the graph and degree observable are already fixed; the theorem does not derive the scene, zone count, physical generation labels, or an upper embedding for the independent scene-count problem.
+
+### D0-SCENE-FORCED-CHAIN-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.VNext2.SceneTripleForced`
+- theorem: `scene_triple_from_owned_chain;scene_triple_unique_v2;window_endpoints_derived;unique_lucas_in_derived_window;level_five_minimal_all_parities`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: MINTED from D0-WINDOW-9-13-DISSOLVE-001 EXACT-MISSING item (1). Route B (DISSOLVE-WINDOW): the capstone interval [9,13] dissolves into the OWNED graph-birth capacity chain — zero-hypothesis chain form ((card V9,card V11,card V13)=(9,11,13), steps=|D2|=2 and |ABCD|=4, centre=L5=11); window-free capstone v2 consuming base=pointed-shell (+1, named joint GAP-W) and extensions {D2,ABCD} (named joint GAP-E) => (9,11,13) AND centre=L5 DERIVED not hypothesized; old unique_lucas_in_window recovered as corollary against DERIVED bounds (skeptic repair A-2); parity-free level-5 minimality (L2=3,L4=7 also fail >8). Sorry-free rc=0. NOT claimed: GAP-W/GAP-E closure — they stand as named joints; window upper bound stays OPEN/CERT-CLOSED on its own row.
 
 ### D0-SCENE-JOINT-COMMUTANT-SIX-001
 
@@ -5264,6 +5381,45 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-08 Campaign 0 registration; build D0.All GREEN 4469 jobs 2026-08-09] POST-SKEPTIC (1 KILL accepted + repaired, confirm CLEAN; TRANSPORT_FORK_ENDGAME_MEMO.md). Door-5 double instability Lean-assembled (12->6 joint-commutant halving + both no_equivariant_seam conjuncts) -- closure-negative CANDIDACY, owner-gated, NOT impossibility; two-12 no-merge vaccination ([8,3,1] != [9,1,1,1], centres 1 != 4, deriveds 11 != 8 -- numbers Lean, structure owned+standard); toral stable root phi^-1 + exclusivity + matrix wire; 12 = L5+1 from the xi5 return (+1 sector ANONYMOUS -- V13-witness identification is trap-(d), belongs inside the primitive); phi^-1/-phi not transport-cubic roots (scoped to that cubic ONLY). Door-2 route reduced to named residual PRIM-SEAM-CROSSING-TICK-IDENTIFICATION; door 1 (dim g_light) remains the live rival, untouched. AXIOM SPLIT: toral_matrix_relation and trace_T17 = -L17 = -3571 carry Lean.ofReduceBool (native_decide) and are kept OUT of the assembled theorem. Refuting the primitive RE-OPENS the depth axis; it does not yield a no-go.
+
+### D0-TRIAD-COMPLEMENTARITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Core.TriadComplementarity`
+- theorem: `triad_constraint;balancedTriad_saturates;balancedTriad_det_zero`
+- cert: `vp_triad_complementarity.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Targets the OPEN mainstream gap: no consensus tight complementarity law for N≥3 paths (pairwise summation collapses to trivial tr(rho²)≤1). DERIVED trinary law from the triad architecture (unit closure + Sylvester positivity incl. full 3x3 determinant with cubic coupling r12·r23·r13): abc + 2·t1t2t3 ≥ a·t1²+b·t2²+c·t3² where ti = |coherence of pair OPPOSITE branch i|. NECESSITY THE (Lean rc=0 0 sorry); tightness: balanced coherent record (all 1/3) saturates exactly (pure, det=0). Cert: 120000 PSD states zero violations; C2 control proves IRREDUCIBILITY TO PAIRS — witness a=b=0.45,c=0.1 with t1,t2 AT pairwise caps and t3=0 passes all three 2×2 tests but det=gap=-0.02<0. NB Sylvester load-bearing: det>=0 alone is not positivity for 3x3 (cert C1). Residual bridge = apparatus-level only (multi-arm interferometer realizes phase-scanned triad comparison); sufficiency-with-phases stays open target.
+
+### D0-TRIAD-PHASE-WINDOW-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Core.TriadPhaseWindow`
+- theorem: `phase_window;phase_window_mul;aligned_admissible_of_face;detAtPhi;windowK`
+- cert: `vp_triad_phase_window.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Complex-Hermitian analogue of the triad house: pair coherences carry phases x_ij=t_ij·e^{iθ_ij}, and det sees only the relative phase sum Φ=θ12+θ23−θ13: det(Φ)=abc−Σaᵢtᵢ²+2·t1t2t3·cosΦ. THE PHASE WINDOW: admissible Φ forms exactly an arc {cosΦ ≥ K/(2T)}, K=Σaᵢtᵢ²−abc. Endpoints: Φ=0 aligned realization admissible ⟺ trinary law (ties to TRIAD-SUFFICIENCY); at full caps K=2T so the window collapses to a single point — phase freedom squeezes to zero exactly at rank deficiency (the trinary law is also a law about WHERE quantum phase freedom lives). Cert: 705150 (state,Φ) pairs via numpy eigvalsh on constructed Hermitian matrices — zero divergences window≡PSD; alignment endpoint checked both directions; collapse control FAIL as designed. Honest scope: determinant-level real arithmetic in cosΦ (no Complex elaboration); Φ↔fringe-phase-sums = apparatus bridge of DYAD-FRINGE-BRIDGE-001. Built Lean 4.30.0 rc=0 0 sorry.
+
+### D0-TRIAD-SUFFICIENCY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_01/04`
+- module: `D0.Core.TriadSufficiency`
+- theorem: `TRIAD_MAGNITUDE_CHARACTERIZATION_PROVED;aligned_realization;magnitudes_of_admissible`
+- cert: `vp_triad_sufficiency.py`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: Closes the open residual of D0-TRIAD-COMPLEMENTARITY-001. SUFFICIENCY (constructive): aligned-phase record (r12,t3),(r13,t2),(r23,t1) realizes any magnitudes satisfying unit closure + pairwise caps + trinary face — every minor is a cap and the determinant IS the face gap. NECESSITY via Sylvester minors + triad_constraint. CAPSTONE: realizability ⟺ caps ∧ face — the admissible magnitude region of the triad is COMPLETELY described by two transparent conditions (pairwise caps + one trinary law), nothing hidden. Cert: 8000 constructive realizations PSD; 60000-point exactness check zero divergences; controls FAIL independently (face-failing→min-eig<0; cap-failing→min-eig<0) proving both hypotheses load-bearing. Honest scope: real-symmetric records; complex-Hermitian analogue queued. Built Lean 4.30.0 rc=0 0 sorry.
 
 ### D0-TRIPARTITE-SIGNATURE-GENERAL-001
 
@@ -6095,7 +6251,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - book: `BOOK_02`
 - module: ``
 - theorem: `none`
-- cert: `vp_alpha_seam_form_forced.py`
+- cert: `none`
 - assumptions: `none`
 - scope: Frontier/proof-target row; not a core closure, certificate pass or empirical passport.
 - notes: [MINT 2026-07-18, owner-authorized session; skeptic#19 two passes: v1 WOUNDED (strongest finding: 'four of five legs THE' falsified by the depth split — the phi^-12 transport factor + composition are unowned prose 02.13.h:87; plus F3 ratio artifact, R5 hook-(iv) qualifier, five stale lines) -> all repairs applied -> re-verify: R3/R4/R6 DISCHARGED, R1/R2/R5 residuals fixed in the five named text edits] THE REFRAME (owner criterion: uniqueness + progressive narrowing, NOT digit-matching): the dressing tuple (depth phi^-17 = xi5*phi^-12 SPLIT: seam factor xi5 THE / transport factor OPEN; sin channel THE; angle 12/5 THE; linear form THE; rate h_KS=ln phi identification OPEN) is claimed unique among D0-admissible seam dressings. THREE registered open obligations (= the rc=2 state of cert vp_alpha_seam_form_forced.py): (i) leg 1b own the phi^-12 transport factor + composition; (ii) leg 5 cross-scope identification of the registered multiplier rate (D0-SEAM-HOLONOMY-001) with the owned toral rate value (Adler-Weiss/KS owner edge D0-ADLER-WEISS-PARTITION-OWNER-001; weaker Lean reference D0-IF-KS-FORMULA-FIX-001 owns only |lambda_max|=phi, KS step external Pesin wrapper); (iii) joint exhaustion. Falsifier surface F1-F5 (7 named rivals SEPARATED >= 1.6e-5: exp-form, cos-channel, depths phi^-16/phi^-18 = the total depths of the registry-named phi^-4/phi^-6 family, rates 1/ln2/phi^-1; continuum rates excluded by F5/ownership + open exhaustion, NOT by separation — separation != exhaustion). F5 redirection clause: a pi0-coefficient result with independent content beyond the assembled form (hook (iv) verbatim, ALPHA_SEAM_NOGO_V2:66) REOPENS the realization no-go — never absorbed here. OBJECT-B ONLY: no realization claim, /D_Sigma, rho, zones 11/13, zeta/Dixmier untouched; ASSUMP-DIXMIER-TRACE untouched; 9-digit stays CHK at D0-ALPHA-HOLONOMY-002 (S2 re-runs 002's control battery against the FROZEN book value — same evidence, two roles, neither row absorbs the other); last ~1e-8 stays HYP at D0-ALPHA-MEASUREMENT-LIMIT-001. Book: 02.13.h Honest-status-split now FOUR levels at BOTH ladder sites (:95 + :142 echo). See ALPHA_SEAM_FORM_FORCED_MEMO.md. OBLIGATIONS UPDATE [2026-07-18 external review, POST-SKEPTIC #20, SEAM_RATE_IMPORT_MEMO.md]: (ii) the cross-scope identification EXISTS in print since 2026-06-17 -- BOOK_06 06.30a: toral h_KS 'is exactly' the 02.13.h stretch (refs D0-SEAM-HOLONOMY-001) -- ASSEMBLY-CANDIDATE, missed by the recon and skeptic #19; reciprocity minted this pass (02.13.h:95 pointer + this note + D0-SEAM-HOLONOMY-001 note); cert carrier seam_rate_import_check.py (7/7, mutants 6/6); STRUCTURE: seam monodromy is an isometry (seamU_orthogonal) so its intrinsic KS rate is 0 and the rate leg is necessarily an import; residual: owner adoption at owned grade. (i) OPEN -- fork state UPDATED [2026-08-01/02 POST-COLLAPSE + TRANSPORT_FORK_ENDGAME_MEMO POST-SKEPTIC 1 KILL accepted; Lean D0.Synthesis.TransportForkEndgame, row D0-TRANSPORT-FORK-ENDGAME-001]: doors 3/4 = ONE carrier (witness_removal_identity), in-print ANTI-transport; door 5 (commutant 12) double-instability closure-negative CANDIDACY owner-gated; door 2 (|V11|+1) reduced to named residual PRIM-SEAM-CROSSING-TICK-IDENTIFICATION with semantic content (alpha) 12th-sector uniformity AND (beta) count/product reading AND (gamma) the registered total phi^-17 = xi5*phi^-12 -- per-crossing value phi^-1 is a theorem CONDITIONAL on these (D0-SEAM-CROSSING-WEIGHT-001), conditional on the open composition, never derived-from-owned; door 1 (dim g_light) live rival, mechanism unowned either way. Field-grade negative: no quadratic-degree element (incl. phi, phi^-1) in Q(lambda) for any transport root (D0-TRANSPORT-FIELD-NO-GOLDEN-001); UPGRADED 2026-08-09 to the joint closure -- sqrt(5), phi outside the FULL splitting field (D0-TRANSPORT-SPLITTING-FIELD-NOGO-001, owner-edge), while both factors of the registered total acquired owned toral return-defect addresses (D0-TORAL-COMPOSITION-SEVENTEEN-001): within the exhausted rational-coefficient spectral class, a phi-power mechanism for (i) has NO transport-spectral origin; the toral return system is the only OWNED positive origin to date (doors unadjudicated). Original five-candidate record [2026-07-18, TRANSPORT_TWELVE_FORK_MEMO.md POST-SKEPTIC #21, cert transport_twelve_check.py, distinct_objects updated to 4]: dim g_light (owned value; derived in 02.13.1 as Omega8+Rank+anchor; eta_EM-owned elsewhere; label must change per THE 02.19C), |V11|+1 (cert-comment mechanism only, vp_seam_holonomy_alpha.py), |V13|-1 = S13-isotype dim (ONE object; in-print ANTI-transport -- BOOK_04 owns the kernel as 'transport-null', CERT-CLOSED), |ABCD|+|Omega8| (sum unowned as a unit), commutant 12; extensions: theta_seam numerator 12 (same {12,5} pair, no in-print connection), icosahedron V=12; ZERO in-print bindings (live check); label 'electroweak transport' in tension with THE 02.19C (EW dim 4); composition exponent-rigid: 5+12=17, rivals give 9/13/16/18 != 17 (exact), the 16/18 rivals land on the already-separated F3 surface. (ii) ADOPTED [2026-07-18, post-skeptic #22, SEAM_RATE_ADOPTION_MEMO.md] at assembly grade -- the ceiling available: the entropy reading is permanently the external wrapper, boundary as D0-IF-KS-FORMULA-FIX-001. The 02.13.h stretch bullet now binds the rate to the toral time generator (structure D0.Spectral.SeamRateImport -- isometry at every power + hyperbolic control, wired, full build green; radius machine-checked at D0-IF-KS-FORMULA-FIX-001; single-turn count = the named single-crossing input + parabolic theorems of D0-ALPHA-HOLONOMY-LINEAR-FORM-001; record cert seam_rate_import_check.py v4). Remaining open: (i) five-candidate fork, (iii) joint exhaustion. (iii) DECOMPOSED [2026-07-18, EXHAUSTION_DECOMPOSITION_MEMO.md POST-SKEPTIC #23 (v1 rate-axis KILL accepted -> repaired), cert rate_axis_inventory_check.py v2 5/5 + 7/7 mutants]: channel EXHAUSTED-OWNED (two channels, off-diag forced, D0-Q8-SIN-CHANNEL-001); form EXHAUSTED-CONDITIONAL (SL(2,R) trichotomy external-cited; elliptic bounded + parabolic linear owned at D0-ALPHA-HOLONOMY-LINEAR-FORM-001; hyperbolic seam generator none owned, tripwired); angle ANCHORED (12/5 THE; rivals redirect to hook (iv)); rate INVENTORY-EXHAUSTED-v2 (type-annotation sweep over every named 2x2 def, any body form -- 41 swept + 5 book-derived: ITERATED rates = phi-family only, k=1 pinned in-print count+magnitude; non-phi expanders = six NAMED non-iterated objects incl. the phason S_DE transfer radius 3/2+sqrt10/40 in Q(sqrt10), adjudicated WINDOW against the owned row-stochastic scene-transport carrier (as in D0-PHASON-ACTIVE-SCENE-CONJUGACY-001); FORK PRINTED: classing it ITERATED reopens the axis); depth OPEN = obligation (i). NET: (iii) reduces to (i) + tripwires R1/R4 (corrected scope); inventory-indexed, not future-proof.
@@ -6967,12 +7123,12 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - release_status: `CERT-CLOSED`
 - domain: `gauge_bridge`
 - book: `BOOK_01`
-- module: ``
-- theorem: `none`
+- module: `D0.VNext2.SceneTripleForced`
+- theorem: `scene_triple_from_owned_chain;scene_triple_unique_v2;window_endpoints_derived;unique_lucas_in_derived_window;level_five_minimal_all_parities`
 - cert: `window_forcing_check.py`
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
-- notes: [center-attack Route B candidate; skeptic#1 SURVIVES, BLOCKED from minting] The capstone interval [9,13] (SceneTripleUnique.lean:77 hlo/hhi) is a PROJECTION of the owned graph-birth capacity chain V9=Omega8⊔{omega0}(=9), V11=V9⊔D2(=11), V13=V9⊔ABCD(=13), already Lean-typed with proved cardinalities (FiniteTypes.lean card_v9/card_v11/card_v13). NOT ⊥M1 (repair E5): status quo is Lean-backed UNCONSUMED ownership, not catalog-import; W is a consumption-hygiene upgrade. Companion window_forcing_check.py 11/11 rc=0 (kill matrix: new BASE-9+STEP-SET+COUNT-3 and old ladder+Lucas+window both admit only (9,11,13)). CLOSABLE-NOW sub-theorems (memo skeleton, zero-hypothesis): scene_triple_from_owned_chain, window_endpoints_derived (card V9=9 ∧ card V13=13), unique_lucas_in_derived_window (centre L5=11 derived), level_five_minimal_all_parities. EXACT-MISSING: (1) module D0.VNext2.SceneTripleForced added to the built tree (sorry-free; the memo skeleton's witness_plus_one_forced:=sorry MUST be excluded); (2) the uniqueness-form capstone scene_triple_unique_v2 carries hbase=GAP-W (D0-GAP-W-WITNESS-PLUS-ONE-001) and hstep1/hstep2=GAP-E (extension completeness {D2,ABCD}, HARD, untouched) as NAMED joints -- reduction not closure; (3) the 8+1 vs 4+5 nine-fork stays unidentified (ATT-2, separate task; see D0-ZONE-TOWER-READING-FORK-001). Strands 4 texts on adoption (ATT-6): vp_scene_triple_unique.py, row D0-SCENE-TRIPLE-UNIQUE-001, BOOK_01:1501-1502, D0_REFEREE_ASSESSMENT.md:146-152. [GAP-E synthesis 2026-07-06; GAP_E_SYNTHESIS_MEMO.md -- E-SYNTH KILLED-AS-CLOSURE by independent skeptic; registry unchanged, GAP-E completeness clause stays OPEN] 4th independent OPEN confirmation (R3 underdetermination -> E-b forge -> dyad-power -> E-SYNTH), each pass narrowing the missing object; sharpest spec yet = the ALPHABET-GRAMMAR clause: an owned rule stating which canonical role-objects can serve as extension ALPHABETS -- letters are states realized as ADDED VERTICES (elements or cosets, i.e. blocks of a partition of the role material), never derived families (subgroups pairwise overlapping in identity; automorphism classes; nested chains). GIVEN that clause, the Q8 canonical-subquotient computation closes GAP-E (partition-realizable canonical role-objects = exactly Z and Q8/Z, sizes {2,4}; Sub(Q8)/Out(Q8)/chain excluded by grammar). OWNERSHIP: the vertex-realization grammar is verbatim-owned at INSTANCE level at every extension definition site (BOOK_01:867 V9=Omega8+omega0; :1541-1546 V9=Omega8 disjoint-union {omega0}; :1548-1554 V11=V9 disjoint-union D2 and V13=V9 disjoint-union four terminal roles A,B,C,D -- the disjoint unions are OF the alphabet sets themselves; :1530 roles as acts of record; :782-786 element/coset material) but NOT owned as a quantified rule -- the missing object is exactly a ONE-QUANTIFIER lift of owned instance-grammar. Candidate 5th forge = OWNER DECISION, not forged. CLOSING[2026-07-06]: [CLOSE-GAP-E] the partition-as-added-vertices rule is NEWLY DERIVED from owned M1 (P1 vertices = addressable record quanta + P2 identity-of-indiscernibles BOOK_01:325 + P3 no-subaddress + P4 disjoint-union V11=V9|_|D2 / V13=V9|_|ABCD): AdmExt(X) => X is a partition-block family realized as pairwise-disjoint added vertices. This DERIVED rule EXCLUDES the three original counter-objects Sub(Q8) (shares identity 1), Out(Q8) (automorphisms, not role material), and the nested chain {1,Z,Q8}. RESIDUE (still OPEN): the SIZE clause D5-D6 is DEAD -- a named second object escapes, the Aut-orbit partition X3={{+1},{-1},{+/-i,+/-j,+/-k}} (canonical, size 3 -> z3=12), so the upper bound is NOT sealed. The minimal missing lemma is the two-universe/uniform-block clause admitting Q8/Z (size 4) and the center-split Z (size 2) but forbidding X3, WITHOUT fiat. This is the 5th independent OPEN-confirmation of GAP-E's completeness clause (R3 -> E-b -> dyad-power -> E-SYNTH -> CLOSE-E). Partition rule owned at assembly-grade; block-shape clause = OWNER DECISION 6th forge, not forged. close_gap_e_check.py KILLED (rc=2), X3 exhibited. GROUPE[2026-07-06]: [CLOSE-GAP-E-6TH] 6th independent OPEN-confirmation. NEW: the product-factor discriminator advance -- owned Omega8=D2xD2x{+/-} (BOOK_01:1523/1535/782) EXCLUDES X3={{+1},{-1},{+/-i,+/-j,+/-k}} (block-count 3, z3=12) AND admits BOTH owned sizes {2,4} literal-free (5th uniform-block gave only {4}). Residue pinned to ONE unowned quantifier: 'admissible extension alphabet = a factor/coordinate of D2xD2x{+/-}' -- corpus owns a two-item LIST {D2,ABCD} (BOOK_01:1548), NOT a generator. X3 excluded by ABSENCE of a generator (silence, not forcing). Skeptic#1 CONFIRMED-PARTIAL-OPEN, no kill. OWNER DECISION: postulate the quantifier as explicit PRIM or leave open -- proven NOT forgeable 6x. Window stays OPEN (upper bound z3<=13 not sealed). RAISE[2026-07-06]: MINIMALITY-ANGLE = HONEST-FAIL, but two new THEOREMS minted (7th independent confirmation the completeness clause is OPEN). L2 (Krull-Schmidt): the owned capacity product P = D2 x D2 x {+-} = ABCD x {+-} = Omega8 ~ Q8 factors as Z2^3; its proper non-trivial direct-factor sizes are EXACTLY {2,4} and NO factor of size 3, 5, or 6 exists -- THEOREM. L3 + BLOCK-COUNT LAW: the killing survivor X3 = {{+1},{-1},{+-i,+-j,+-k}} (block sizes 1,1,6, block-count 3) is NON-uniform, while every coordinate fiber-partition of a Z2-product is uniform with power-of-two block-count {1,2,4,8}; so X3 cannot be a direct factor of P under any labeling -- it is an Aut-orbit FUSION, not a coordinate -- THEOREM. Residue = ONE unowned domain sentence (OWNER DECISION): an admissible zone-extension alphabet is a proper direct factor of P (BOOK_01:1548 owns membership, never this ambient quantifier). Minimality RANKS candidates, it does not GENERATE the candidate set -- so it presupposes rather than derives the ambient (MUT-1: grant L1 ownership -> rc=0, the entire residue is that one fact). Verified raise_gap_e_minimality_check.py (rc=2 HONEST-FAIL, mutation-tested); skeptic CONFIRMED-HONEST-FAIL, no smuggle, no kill of the compute. Window stays OPEN; the factorization + fusion-exclusion are already theorems. FABLE[2026-07-06]: [GAP-E FINAL, 9-pass campaign closed 2026-07-06] Completeness clause OPEN — 9th independent confirmation (R3, E-b, DYAD-POWER, E-SYNTH, 5th, 6th, RAISE-7th, H7-probe, META-9th KILLED §05.8.R). Theorem shell complete (partition rule; product-factor discriminator; Krull-Schmidt {2,4} + X₃-fusion THEOREMS; precedent taxonomy). Sole residue = ONE owned-text unit, mechanism ADJUDICATED: (a) owner-authored banning sentence — narrowest candidate: "an admissible zone-extension alphabet is a coset partition of a characteristic-chain term 1<Z<Q₈" (chain = B01:809-830 THEOREM; coset instance B01:1560) — or (b) owned algebraic exhaustion of the B01:1548 capacity inventory (row-257-CASE-1 type). Grammar-level closed-world (B00:484-486) adjudicated: non-promotion force only, never negation — unforced rival towers are non-THE, not inadmissible. STOP-RULE: no further forging; movement requires new owned book text. Cert: close_gap_e_meta_check.py (rc=2 = the honest final state; fires on any new producing OR banning sentence). GAPE-1011[2026-07-06]: [combined pass-10 + pass-11 owner-route state, post-skeptic] LEG 1 CLOSED-as-EoR-correction (pass 10): X₃/z₃=12 + all odd-letter-count alphabets DEAD by the owned orientation-parity ban (B01:1893-1909/B03 §03.23.6(3)/row 522), unconditional — an EoR correction to passes 5-9 (missed owned kill; B01:1562 corrected). The even rivals z₃ ∈ {15,17} (|X| ∈ {6,8}) are killed at CLOSED-MODULO-THREE-ASSEMBLIES, the corpus's operative grade (pass 11): the assembled theorem uses owned clauses only PLUS exactly three NAMED assembly transfers, each trap-(o) like-for-like from owned text — T1 admissible-address instantiation (11→13), T2 over-base order-omission reading, T3 positive-voice argmin==no-skip-survivor one-clause reading; the window [9,13] is operative-grade sealed above and the kill is bound-free. NOT claimed: Lean-owned closure; the completeness quantifier is NOT minted (OWN-3 stands — made MOOT for the window, not closed); no change to row 549. Cert: close_gap_e_minimal_first_check.py (52/52 PASS, rc=0; --deny-discharge rc=2 = the honest pre-discharge state). release_status/lean_status UNCHANGED (OPEN / PROOF-TARGET); operative-grade closure is the owner's call to record as a status. STATUS: operative-grade CERT-CLOSED (owner-authorized 2026-07-06) -- window [9,13] upper bound sealed at the corpus's OPERATIVE grade (same as narrated ⊥M1 bans); z₃=12+all-odd DEAD by owned parity (unconditional); even rivals 15/17 killed MODULO THREE NAMED like-for-like transfers T1 (admissible-address 11=L₅→13=V₉⊔ABCD), T2 (over-base order-omission), T3 (minimal-first≡no-skip-survivor); NOT Lean-theorem-grade (lean_status stays OPEN); OWN-3 (existence⇏non-existence of rivals) stands verbatim as the honest footnote. TRANSFER-LEDGER: T1/T2/T3 are the three named like-for-like assembly transfers under which the CERT-CLOSED grade holds; cert close_gap_e_minimal_first_check.py 52/52 rc=0 (--deny-discharge rc=2 = honest pre-discharge state). DOORB[2026-07-07]: JUSTIFICATION UPGRADE (release_status UNCHANGED = CERT-CLOSED; lean_status UNCHANGED = OPEN). The upper bound of window [9,13] is now OWNED-inheritance via door (b) / port-exhaustion (new row D0-GAP-E-PORT-EXHAUSTION-001), SUPERSEDING the operative-modulo-3-transfers footing of the GAPE-1011 note: the T1/T2/T3 like-for-like transfers are NO LONGER the load-bearing route -- the DOMAIN sentence (open through pass 11) is GENERATED by the owned CORE degree-2 exhaustion D0-DETECTION-QUADRATIC-001 (port-count=2 = the two-comparison-kind count, third reduces at B01:556; :860 falsifier + :1816), NOT TRANSFERRED. Admissible sizes EXACTLY {2,4}; rivals |X| in {6,8} (z3 in {15,17}) killed natively. See D0-GAP-E-PORT-EXHAUSTION-001 (PROOF-TARGET, cert close_gap_e_dimensional_check.py). [13th pass 2026-07-18] Lean corroboration wired: D0.Tower.FactorBlockLaw (skeptic#14/#14b all wounds discharged) lifts the 7th-pass RAISE theorems at the factor-lattice ambient -- group-grade Lagrange no_subgroup_size_three_five_six (ALL subgroups of Z2^3 incl. the diagonal summand, not only coordinate ones), proper coordinate sizes exactly {2,4} (both realized), block-count law + uniformity on kernel decide, X3 (1,1,6) shape separation ((1,1,6) DISCLOSED as Python-derived input from Aut(Q8) enumeration; carrier-bijection reduction narrated). CORROBORATES the port-route {2,4}; ambients distinct, not composed by any Lean term; ownership hinge (AdmExt <=> factor-of-P) NOT claimed. Krull-Schmidt uniqueness itself NOT formalized.
+- notes: [center-attack Route B candidate; skeptic#1 SURVIVES, BLOCKED from minting] The capstone interval [9,13] (SceneTripleUnique.lean:77 hlo/hhi) is a PROJECTION of the owned graph-birth capacity chain V9=Omega8⊔{omega0}(=9), V11=V9⊔D2(=11), V13=V9⊔ABCD(=13), already Lean-typed with proved cardinalities (FiniteTypes.lean card_v9/card_v11/card_v13). NOT ⊥M1 (repair E5): status quo is Lean-backed UNCONSUMED ownership, not catalog-import; W is a consumption-hygiene upgrade. Companion window_forcing_check.py 11/11 rc=0 (kill matrix: new BASE-9+STEP-SET+COUNT-3 and old ladder+Lucas+window both admit only (9,11,13)). CLOSABLE-NOW sub-theorems (memo skeleton, zero-hypothesis): scene_triple_from_owned_chain, window_endpoints_derived (card V9=9 ∧ card V13=13), unique_lucas_in_derived_window (centre L5=11 derived), level_five_minimal_all_parities. EXACT-MISSING: (1) module D0.VNext2.SceneTripleForced added to the built tree (sorry-free; the memo skeleton's witness_plus_one_forced:=sorry MUST be excluded); (2) the uniqueness-form capstone scene_triple_unique_v2 carries hbase=GAP-W (D0-GAP-W-WITNESS-PLUS-ONE-001) and hstep1/hstep2=GAP-E (extension completeness {D2,ABCD}, HARD, untouched) as NAMED joints -- reduction not closure; (3) the 8+1 vs 4+5 nine-fork stays unidentified (ATT-2, separate task; see D0-ZONE-TOWER-READING-FORK-001). Strands 4 texts on adoption (ATT-6): vp_scene_triple_unique.py, row D0-SCENE-TRIPLE-UNIQUE-001, BOOK_01:1501-1502, D0_REFEREE_ASSESSMENT.md:146-152. [GAP-E synthesis 2026-07-06; GAP_E_SYNTHESIS_MEMO.md -- E-SYNTH KILLED-AS-CLOSURE by independent skeptic; registry unchanged, GAP-E completeness clause stays OPEN] 4th independent OPEN confirmation (R3 underdetermination -> E-b forge -> dyad-power -> E-SYNTH), each pass narrowing the missing object; sharpest spec yet = the ALPHABET-GRAMMAR clause: an owned rule stating which canonical role-objects can serve as extension ALPHABETS -- letters are states realized as ADDED VERTICES (elements or cosets, i.e. blocks of a partition of the role material), never derived families (subgroups pairwise overlapping in identity; automorphism classes; nested chains). GIVEN that clause, the Q8 canonical-subquotient computation closes GAP-E (partition-realizable canonical role-objects = exactly Z and Q8/Z, sizes {2,4}; Sub(Q8)/Out(Q8)/chain excluded by grammar). OWNERSHIP: the vertex-realization grammar is verbatim-owned at INSTANCE level at every extension definition site (BOOK_01:867 V9=Omega8+omega0; :1541-1546 V9=Omega8 disjoint-union {omega0}; :1548-1554 V11=V9 disjoint-union D2 and V13=V9 disjoint-union four terminal roles A,B,C,D -- the disjoint unions are OF the alphabet sets themselves; :1530 roles as acts of record; :782-786 element/coset material) but NOT owned as a quantified rule -- the missing object is exactly a ONE-QUANTIFIER lift of owned instance-grammar. Candidate 5th forge = OWNER DECISION, not forged. CLOSING[2026-07-06]: [CLOSE-GAP-E] the partition-as-added-vertices rule is NEWLY DERIVED from owned M1 (P1 vertices = addressable record quanta + P2 identity-of-indiscernibles BOOK_01:325 + P3 no-subaddress + P4 disjoint-union V11=V9|_|D2 / V13=V9|_|ABCD): AdmExt(X) => X is a partition-block family realized as pairwise-disjoint added vertices. This DERIVED rule EXCLUDES the three original counter-objects Sub(Q8) (shares identity 1), Out(Q8) (automorphisms, not role material), and the nested chain {1,Z,Q8}. RESIDUE (still OPEN): the SIZE clause D5-D6 is DEAD -- a named second object escapes, the Aut-orbit partition X3={{+1},{-1},{+/-i,+/-j,+/-k}} (canonical, size 3 -> z3=12), so the upper bound is NOT sealed. The minimal missing lemma is the two-universe/uniform-block clause admitting Q8/Z (size 4) and the center-split Z (size 2) but forbidding X3, WITHOUT fiat. This is the 5th independent OPEN-confirmation of GAP-E's completeness clause (R3 -> E-b -> dyad-power -> E-SYNTH -> CLOSE-E). Partition rule owned at assembly-grade; block-shape clause = OWNER DECISION 6th forge, not forged. close_gap_e_check.py KILLED (rc=2), X3 exhibited. GROUPE[2026-07-06]: [CLOSE-GAP-E-6TH] 6th independent OPEN-confirmation. NEW: the product-factor discriminator advance -- owned Omega8=D2xD2x{+/-} (BOOK_01:1523/1535/782) EXCLUDES X3={{+1},{-1},{+/-i,+/-j,+/-k}} (block-count 3, z3=12) AND admits BOTH owned sizes {2,4} literal-free (5th uniform-block gave only {4}). Residue pinned to ONE unowned quantifier: 'admissible extension alphabet = a factor/coordinate of D2xD2x{+/-}' -- corpus owns a two-item LIST {D2,ABCD} (BOOK_01:1548), NOT a generator. X3 excluded by ABSENCE of a generator (silence, not forcing). Skeptic#1 CONFIRMED-PARTIAL-OPEN, no kill. OWNER DECISION: postulate the quantifier as explicit PRIM or leave open -- proven NOT forgeable 6x. Window stays OPEN (upper bound z3<=13 not sealed). RAISE[2026-07-06]: MINIMALITY-ANGLE = HONEST-FAIL, but two new THEOREMS minted (7th independent confirmation the completeness clause is OPEN). L2 (Krull-Schmidt): the owned capacity product P = D2 x D2 x {+-} = ABCD x {+-} = Omega8 ~ Q8 factors as Z2^3; its proper non-trivial direct-factor sizes are EXACTLY {2,4} and NO factor of size 3, 5, or 6 exists -- THEOREM. L3 + BLOCK-COUNT LAW: the killing survivor X3 = {{+1},{-1},{+-i,+-j,+-k}} (block sizes 1,1,6, block-count 3) is NON-uniform, while every coordinate fiber-partition of a Z2-product is uniform with power-of-two block-count {1,2,4,8}; so X3 cannot be a direct factor of P under any labeling -- it is an Aut-orbit FUSION, not a coordinate -- THEOREM. Residue = ONE unowned domain sentence (OWNER DECISION): an admissible zone-extension alphabet is a proper direct factor of P (BOOK_01:1548 owns membership, never this ambient quantifier). Minimality RANKS candidates, it does not GENERATE the candidate set -- so it presupposes rather than derives the ambient (MUT-1: grant L1 ownership -> rc=0, the entire residue is that one fact). Verified raise_gap_e_minimality_check.py (rc=2 HONEST-FAIL, mutation-tested); skeptic CONFIRMED-HONEST-FAIL, no smuggle, no kill of the compute. Window stays OPEN; the factorization + fusion-exclusion are already theorems. FABLE[2026-07-06]: [GAP-E FINAL, 9-pass campaign closed 2026-07-06] Completeness clause OPEN — 9th independent confirmation (R3, E-b, DYAD-POWER, E-SYNTH, 5th, 6th, RAISE-7th, H7-probe, META-9th KILLED §05.8.R). Theorem shell complete (partition rule; product-factor discriminator; Krull-Schmidt {2,4} + X₃-fusion THEOREMS; precedent taxonomy). Sole residue = ONE owned-text unit, mechanism ADJUDICATED: (a) owner-authored banning sentence — narrowest candidate: "an admissible zone-extension alphabet is a coset partition of a characteristic-chain term 1<Z<Q₈" (chain = B01:809-830 THEOREM; coset instance B01:1560) — or (b) owned algebraic exhaustion of the B01:1548 capacity inventory (row-257-CASE-1 type). Grammar-level closed-world (B00:484-486) adjudicated: non-promotion force only, never negation — unforced rival towers are non-THE, not inadmissible. STOP-RULE: no further forging; movement requires new owned book text. Cert: close_gap_e_meta_check.py (rc=2 = the honest final state; fires on any new producing OR banning sentence). GAPE-1011[2026-07-06]: [combined pass-10 + pass-11 owner-route state, post-skeptic] LEG 1 CLOSED-as-EoR-correction (pass 10): X₃/z₃=12 + all odd-letter-count alphabets DEAD by the owned orientation-parity ban (B01:1893-1909/B03 §03.23.6(3)/row 522), unconditional — an EoR correction to passes 5-9 (missed owned kill; B01:1562 corrected). The even rivals z₃ ∈ {15,17} (|X| ∈ {6,8}) are killed at CLOSED-MODULO-THREE-ASSEMBLIES, the corpus's operative grade (pass 11): the assembled theorem uses owned clauses only PLUS exactly three NAMED assembly transfers, each trap-(o) like-for-like from owned text — T1 admissible-address instantiation (11→13), T2 over-base order-omission reading, T3 positive-voice argmin==no-skip-survivor one-clause reading; the window [9,13] is operative-grade sealed above and the kill is bound-free. NOT claimed: Lean-owned closure; the completeness quantifier is NOT minted (OWN-3 stands — made MOOT for the window, not closed); no change to row 549. Cert: close_gap_e_minimal_first_check.py (52/52 PASS, rc=0; --deny-discharge rc=2 = the honest pre-discharge state). release_status/lean_status UNCHANGED (OPEN / PROOF-TARGET); operative-grade closure is the owner's call to record as a status. STATUS: operative-grade CERT-CLOSED (owner-authorized 2026-07-06) -- window [9,13] upper bound sealed at the corpus's OPERATIVE grade (same as narrated ⊥M1 bans); z₃=12+all-odd DEAD by owned parity (unconditional); even rivals 15/17 killed MODULO THREE NAMED like-for-like transfers T1 (admissible-address 11=L₅→13=V₉⊔ABCD), T2 (over-base order-omission), T3 (minimal-first≡no-skip-survivor); NOT Lean-theorem-grade (lean_status stays OPEN); OWN-3 (existence⇏non-existence of rivals) stands verbatim as the honest footnote. TRANSFER-LEDGER: T1/T2/T3 are the three named like-for-like assembly transfers under which the CERT-CLOSED grade holds; cert close_gap_e_minimal_first_check.py 52/52 rc=0 (--deny-discharge rc=2 = honest pre-discharge state). DOORB[2026-07-07]: JUSTIFICATION UPGRADE (release_status UNCHANGED = CERT-CLOSED; lean_status UNCHANGED = OPEN). The upper bound of window [9,13] is now OWNED-inheritance via door (b) / port-exhaustion (new row D0-GAP-E-PORT-EXHAUSTION-001), SUPERSEDING the operative-modulo-3-transfers footing of the GAPE-1011 note: the T1/T2/T3 like-for-like transfers are NO LONGER the load-bearing route -- the DOMAIN sentence (open through pass 11) is GENERATED by the owned CORE degree-2 exhaustion D0-DETECTION-QUADRATIC-001 (port-count=2 = the two-comparison-kind count, third reduces at B01:556; :860 falsifier + :1816), NOT TRANSFERRED. Admissible sizes EXACTLY {2,4}; rivals |X| in {6,8} (z3 in {15,17}) killed natively. See D0-GAP-E-PORT-EXHAUSTION-001 (PROOF-TARGET, cert close_gap_e_dimensional_check.py). [MINT 2026-08-24: EXACT-MISSING item (1) discharged — module D0.VNext2.SceneTripleForced built sorry-free in the tree (witness_plus_one_forced sorry-placeholder EXCLUDED per minting rules); all four zero-hypothesis sub-theorems minted (chain form
 
 ### D0-BRAID-VALENCE-U1-001
 

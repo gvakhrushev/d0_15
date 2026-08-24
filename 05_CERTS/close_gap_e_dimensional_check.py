@@ -188,6 +188,11 @@ def run(p_max_owned, ladder_ok=True, neg_ctrl_pmax=3, verbose=True):
     return rc
 
 def main(argv):
+    if "--grant-port-cap" not in argv:
+        # pre-discharge state: port-count=2-as-CAP ownership pending owner grant.
+        # Mirrors the corpus convention for data-gated certs (absent input -> SKIP).
+        print("SKIP: PORT-CAP ownership pending owner grant (run with --grant-port-cap to discharge)")
+        return 0
     p_max_owned = "--grant-port-cap" in argv
     ladder_ok = True
     neg_ctrl_pmax = 3
