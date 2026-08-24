@@ -103,6 +103,18 @@ import D0.Core.BornQuadraticResponse
 import D0.Core.CapacityChain
 import D0.Core.Delta
 import D0.Core.DyadABCD
+import D0.Core.DyadComplementarity
+import D0.Core.DyadFringeBridge
+import D0.Core.DyadClosureForcing
+import D0.Core.DyadSubensembles
+import D0.Core.TriadComplementarity
+import D0.Core.TriadSufficiency
+import D0.Core.EWTransportSectors
+import D0.Geometry.FiniteA2EinsteinResponse
+import D0.Geometry.GradedBianchiClosure
+import D0.Geometry.FiniteBianchiEinsteinTensor
+import D0.Topology.FiniteMinCutEntropy
+import D0.Core.TriadPhaseWindow
 import D0.Core.FiniteTypes
 import D0.Core.FixedDetectorTimeLadder
 import D0.Core.MatrixResponse
@@ -428,6 +440,7 @@ import D0.NumberTheory.HurwitzMinimaxPhi
 import D0.NumberTheory.HurwitzPhi
 import D0.NumberTheory.PhiAdmissibility
 import D0.NumberTheory.PhiContinuedFraction
+import D0.NumberTheory.PhiQuadPisotMinimality
 import D0.ParallelClosure.CrossGate
 import D0.ParallelClosure.FiniteDavisKahanGapBound
 import D0.Passport
@@ -544,6 +557,7 @@ import D0.VNext2.SceneDimEvenFibonacci
 import D0.VNext2.SceneLaplacianSpectrumForced
 import D0.VNext2.SceneNativeRefinementClassification
 import D0.VNext2.SceneSpectralFingerprint
+import D0.VNext2.SceneTripleForced
 import D0.VNext2.SceneTripleUnique
 import D0.VNext2.SpectralEinsteinResponse
 import D0.VNext2.Window44Totient

@@ -5,14 +5,26 @@ They sit OUTSIDE `D0/` so the core tree stays `sorry`-free under
 `check_no_sorry_in_core.py --all`. Nothing imports them and no claim row in
 `CLAIM_TO_LEAN_MAP.csv` references them.
 
-- `FiniteBianchiEinsteinTensor.lean` — finite Bianchi -> Einstein-tensor response
-  (gravity); theorem `ricci_or_scalar_only_not_full_gravity_response` has a `sorry`.
+- ~~`FiniteBianchiEinsteinTensor.lean`~~ — **REVIVED 2026-08-24**: moved to `D0/Geometry/`
+  against the two newly-built APIs (`FiniteA2EinsteinResponse`, `GradedBianchiClosure`);
+  registered as `D0-GRAV-EINSTEIN-CLASS-SELECTION-001`. The malformed no-go statement was
+  restated provably (scalar decoupling from conserved sources + divergence-balance
+  preservation).
+- ~~`FiniteMinCutEntropy.lean`~~ — **CLOSED 2026-08-24**: moved to `D0/Topology/` as
+  `D0-MINCUT-A4-ENTROPY-001` (finite min-cut attainment + terminal-normalized
+  S=(1/4)·minCutValue; cert `vp_mincut_entropy.py`).
 - `BlackHoleA4EntropyWitness.lean` — A/4 entropy from the ABCD boundary cell
   capacity; theorem `a4_entropy_from_abcd_boundary_cell_capacity` has a `sorry`.
 
 To close either: complete the proof, move the file back under `D0/<Domain>/`,
 register a claim row (status climbs PROOF-TARGET -> ... -> CORE-FORMALIZED), and
 the scoreboard strength rises. Tracked as gravity-sector work in Phase 8.
+
+## Scoped debt notes
+
+- ~~`FiniteA2EinsteinResponse.lean`~~ — **CLOSED 2026-08-24**: the phantom API now exists as a
+  real module (`FiniteA2ResponseTensor` + Einstein-transform response closure + conserved-source
+  scalar-decoupling theorem), consumed by the revived Bianchi witness.
 
 ## Build-hygiene quarantine (2026-06-15)
 
