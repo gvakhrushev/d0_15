@@ -16,7 +16,7 @@ digraph D0Theory {
   "D0-SCENE-DEGREE-INVARIANT-ALGEBRA-001" [label="D0-SCENE-DEGREE-INVARIANT-ALGEBRA-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-EQUIVARIANT-M1-001" [label="D0-EQUIVARIANT-M1-001\\nCORE-FORMALIZED\\ngauge_bridge", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-M1-HOMOLOGICAL-SCENE-READING-001" [label="D0-M1-HOMOLOGICAL-SCENE-READING-001\\nCORE-FORMALIZED\\ngauge_bridge", fillcolor="#2f7d4f", fontcolor="white"];
-  "D0-SCENE-COUNT-REDUCTION-001" [label="D0-SCENE-COUNT-REDUCTION-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-SCENE-COUNT-REDUCTION-001" [label="D0-SCENE-COUNT-REDUCTION-001\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-REPEATED-ZONE-M1-NOGO-001" [label="D0-REPEATED-ZONE-M1-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-DEGREE2-VALUE-EXHAUSTION-NOGO-001" [label="D0-DEGREE2-VALUE-EXHAUSTION-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-GAP-W-COPY-CAP-M1-001" [label="D0-GAP-W-COPY-CAP-M1-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
@@ -600,7 +600,7 @@ digraph D0Theory {
   "D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001" [label="D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-CURRENT-DATA-FACTORIZATION-001" [label="D0-CURRENT-DATA-FACTORIZATION-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-CURRENT-DATA-COMPARISON-CANONICITY-NOGO-001" [label="D0-CURRENT-DATA-COMPARISON-CANONICITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
-  "D0-CASCADE-INSUFFICIENCY-CHAIN-001" [label="D0-CASCADE-INSUFFICIENCY-CHAIN-001\\nPROOF-TARGET\\nfrontier", fillcolor="#8a6d1f", fontcolor="white"];
+  "D0-CASCADE-INSUFFICIENCY-CHAIN-001" [label="D0-CASCADE-INSUFFICIENCY-CHAIN-001\\nNO-GO\\nempirical_passport", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-SCENE-CHROMATIC-THREE-NOGO-001" [label="D0-SCENE-CHROMATIC-THREE-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-GAP-LABEL-GENERICITY-NOGO-001" [label="D0-GAP-LABEL-GENERICITY-NOGO-001\\nNO-GO\\nformal_core", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-CASCADE-FLOOR-ONE-LOOP-001" [label="D0-CASCADE-FLOOR-ONE-LOOP-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
@@ -667,6 +667,9 @@ digraph D0Theory {
   "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001" [label="D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001\\nNO-GO\\nempirical_passport", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001" [label="D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001" [label="D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001" [label="D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001" [label="D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-CASCADE-FULL-FORCING-DAG-001" [label="D0-CASCADE-FULL-FORCING-DAG-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="D0.Synthesis.TopHodgeInverseSpectralRigidity", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001" -> "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -729,8 +732,8 @@ digraph D0Theory {
   "D0-M1-HOMOLOGICAL-SCENE-READING-001" -> "domain:gauge_bridge" [label="domain"];
   "module:D0.Foundation.SceneCountReduction" [label="D0.Foundation.SceneCountReduction", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-SCENE-COUNT-REDUCTION-001" -> "module:D0.Foundation.SceneCountReduction" [label="module"];
-  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-SCENE-COUNT-REDUCTION-001" -> "domain:frontier" [label="domain"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-SCENE-COUNT-REDUCTION-001" -> "domain:empirical_passport" [label="domain"];
   "module:D0.Tower.NoExtensionBoundary" [label="D0.Tower.NoExtensionBoundary", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-REPEATED-ZONE-M1-NOGO-001" -> "module:D0.Tower.NoExtensionBoundary" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -4053,10 +4056,12 @@ digraph D0Theory {
   "D0-CURRENT-DATA-COMPARISON-CANONICITY-NOGO-001" -> "module:D0.Foundation.CurrentDataComparisonCanonicity" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-CURRENT-DATA-COMPARISON-CANONICITY-NOGO-001" -> "domain:formal_core" [label="domain"];
-  "module:D0.Foundation.CascadeChain" [label="D0.Foundation.CascadeChain", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
-  "D0-CASCADE-INSUFFICIENCY-CHAIN-001" -> "module:D0.Foundation.CascadeChain" [label="module"];
-  "domain:frontier" [label="frontier", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
-  "D0-CASCADE-INSUFFICIENCY-CHAIN-001" -> "domain:frontier" [label="domain"];
+  "module:D0.Foundation.CascadeFullForcingSynthesis" [label="D0.Foundation.CascadeFullForcingSynthesis", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CASCADE-INSUFFICIENCY-CHAIN-001" -> "module:D0.Foundation.CascadeFullForcingSynthesis" [label="module"];
+  "cert:vp_cascade_full_forcing_dag.py" [label="vp_cascade_full_forcing_dag.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CASCADE-INSUFFICIENCY-CHAIN-001" -> "cert:vp_cascade_full_forcing_dag.py" [label="cert"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CASCADE-INSUFFICIENCY-CHAIN-001" -> "domain:empirical_passport" [label="domain"];
   "module:D0.Combinatorics.SceneChromaticThree" [label="D0.Combinatorics.SceneChromaticThree", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-SCENE-CHROMATIC-THREE-NOGO-001" -> "module:D0.Combinatorics.SceneChromaticThree" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -4375,4 +4380,22 @@ digraph D0Theory {
   "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001" -> "cert:vp_independent_detection_repair_grammar.py" [label="cert"];
   "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001" -> "domain:empirical_passport" [label="domain"];
+  "module:D0.Foundation.ConcreteIndependentDetectionRepairSemantics" [label="D0.Foundation.ConcreteIndependentDetectionRepairSemantics", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001" -> "module:D0.Foundation.ConcreteIndependentDetectionRepairSemantics" [label="module"];
+  "cert:vp_cascade_full_forcing_dag.py" [label="vp_cascade_full_forcing_dag.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001" -> "cert:vp_cascade_full_forcing_dag.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Foundation.CascadeTopologicalShellAttachment" [label="D0.Foundation.CascadeTopologicalShellAttachment", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001" -> "module:D0.Foundation.CascadeTopologicalShellAttachment" [label="module"];
+  "cert:vp_cascade_full_forcing_dag.py" [label="vp_cascade_full_forcing_dag.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001" -> "cert:vp_cascade_full_forcing_dag.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001" -> "domain:formal_core" [label="domain"];
+  "module:D0.Foundation.CascadeFullForcingSynthesis" [label="D0.Foundation.CascadeFullForcingSynthesis", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-CASCADE-FULL-FORCING-DAG-001" -> "module:D0.Foundation.CascadeFullForcingSynthesis" [label="module"];
+  "cert:vp_cascade_full_forcing_dag.py" [label="vp_cascade_full_forcing_dag.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-CASCADE-FULL-FORCING-DAG-001" -> "cert:vp_cascade_full_forcing_dag.py" [label="cert"];
+  "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-CASCADE-FULL-FORCING-DAG-001" -> "domain:formal_core" [label="domain"];
 }

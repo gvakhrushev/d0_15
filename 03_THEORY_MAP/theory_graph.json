@@ -4,12 +4,12 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 666,
+    "claims": 669,
     "release_status": {
-      "CORE-FORMALIZED": 253,
+      "CORE-FORMALIZED": 257,
       "CORE_BRIDGE_SPLIT": 17,
-      "NO-GO": 98,
-      "PROOF-TARGET": 62,
+      "NO-GO": 99,
+      "PROOF-TARGET": 60,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 26,
       "NO_GO_PROVED": 7,
       "CERT-CLOSED": 169,
@@ -20,26 +20,26 @@
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 473,
+      "LEAN_PROVED": 477,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 31,
       "PYTHON_CERTIFIED": 111,
       "DEPRECATED": 2,
-      "OPEN": 49
+      "OPEN": 48
     },
     "claim_type": {
-      "core": 256,
+      "core": 260,
       "bridge": 45,
-      "no-go": 105,
-      "frontier": 62,
+      "no-go": 106,
+      "frontier": 60,
       "certificate": 195,
       "deprecated": 3
     },
     "domain": {
-      "formal_core": 393,
+      "formal_core": 396,
       "smooth_geometry": 41,
-      "empirical_passport": 47,
+      "empirical_passport": 49,
       "gauge_bridge": 51,
-      "frontier": 62,
+      "frontier": 60,
       "rg": 7,
       "spectral_action": 11,
       "cosmology": 50,
@@ -508,9 +508,9 @@
       "id": "D0-SCENE-COUNT-REDUCTION-001",
       "kind": "claim",
       "claim_id": "D0-SCENE-COUNT-REDUCTION-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "core",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
       "book": "BOOK_01",
       "section": "01.6.1c",
       "lean_module": "D0.Foundation.SceneCountReduction",
@@ -520,16 +520,11 @@
       "assumption_ids": [],
       "cert": "",
       "python_cert": [],
-      "status": "PROOF-TARGET",
-      "notes": "[2026-07] HONEST REDUCTION, not closure of the cascade claim. Introduces a SceneCandidate whose zoneCount is variable rather than Fin 3 or [9,11,13]. The exact-count theorem consumes the real owner propositions already proved by CascadeChain.chain_length_lower_bound and Tower.no_extension_theorem, but requires two explicit typed interpretations returning checked embeddings: Fin 3 -> Fin zoneCount for three distinct cascade-forced zones, and Fin zoneCount -> Fin 3 for exhaustive nonduplicating classification into the three quadratic slots. Lean derives both cardinality bounds from injectivity and then zoneCount = 3. Neither embedding is currently constructed from M1/M1+, and two finite countermodels prove each interpretation load-bearing: the upper embedding alone permits 2 zones, while the lower embedding alone permits 4. This row certifies the reduction theorem only; D0-CASCADE-INSUFFICIENCY-CHAIN-001 remains OPEN/PROOF-TARGET. [OBSERVATIONAL QUOTIENT INTERFACE CLOSED 2026-08-25] D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001 now derives the finite repair quotient Q from structural Discrimination modulo observable kind, proves the universal current-grammar M1 no-fourth-class reductio, constructs the canonical quotient SceneCandidate and its faithful two-way representation, and obtains zoneCount=3 without a count premise. For an arbitrary external physical SceneCandidate, the remaining obligation is now ordinary application data: provide FaithfulRepairSceneRepresentation S Q. This row remains PROOF-TARGET because its original interpretation records quantify over an arbitrary S and are not filled for every physical formalization. [GRAMMAR COMPLETENESS DERIVED 2026-08-25] The prior repair-grammar owner is discharged: D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001 derives the three-kind count from the two independent detection loops. This row stays PROOF-TARGET only for the concrete external-scene FaithfulRepairSceneRepresentation application obligation.",
+      "status": "CORE-FORMALIZED",
+      "notes": "[2026-07] HONEST REDUCTION, not closure of the cascade claim. Introduces a SceneCandidate whose zoneCount is variable rather than Fin 3 or [9,11,13]. The exact-count theorem consumes the real owner propositions already proved by CascadeChain.chain_length_lower_bound and Tower.no_extension_theorem, but requires two explicit typed interpretations returning checked embeddings: Fin 3 -> Fin zoneCount for three distinct cascade-forced zones, and Fin zoneCount -> Fin 3 for exhaustive nonduplicating classification into the three quadratic slots. Lean derives both cardinality bounds from injectivity and then zoneCount = 3. Neither embedding is currently constructed from M1/M1+, and two finite countermodels prove each interpretation load-bearing: the upper embedding alone permits 2 zones, while the lower embedding alone permits 4. This row certifies the reduction theorem only; D0-CASCADE-INSUFFICIENCY-CHAIN-001 remains OPEN/PROOF-TARGET. [OBSERVATIONAL QUOTIENT INTERFACE CLOSED 2026-08-25] D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001 now derives the finite repair quotient Q from structural Discrimination modulo observable kind, proves the universal current-grammar M1 no-fourth-class reductio, constructs the canonical quotient SceneCandidate and its faithful two-way representation, and obtains zoneCount=3 without a count premise. For an arbitrary external physical SceneCandidate, the remaining obligation is now ordinary application data: provide FaithfulRepairSceneRepresentation S Q. This row remains PROOF-TARGET because its original interpretation records quantify over an arbitrary S and are not filled for every physical formalization. [GRAMMAR COMPLETENESS DERIVED 2026-08-25] The prior repair-grammar owner is discharged: D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001 derives the three-kind count from the two independent detection loops. This row stays PROOF-TARGET only for the concrete external-scene FaithfulRepairSceneRepresentation application obligation. [CONCRETE APPLICATION CLOSED 2026-08-25] D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001 constructs the actual physical comparison quotient from computed left/right history support and supplies FaithfulRepairSceneRepresentation torusShellScene RepairObservationQuotient. The in-repo physical scene application is no longer open; faithful_scene_zoneCount gives zoneCount=3. External formalisms still instantiate the same interface, but that is not a blocker for the concrete D0 model.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/SceneCountReduction.lean",
       "module_exists": true,
       "certs_exist": true
-    },
-    {
-      "id": "domain:frontier",
-      "kind": "semantic_domain",
-      "label": "frontier"
     },
     {
       "id": "module:D0.Foundation.SceneCountReduction",
@@ -610,6 +605,11 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Core/WitnessForcing.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "domain:frontier",
+      "kind": "semantic_domain",
+      "label": "frontier"
     },
     {
       "id": "module:D0.Core.WitnessForcing",
@@ -20126,29 +20126,38 @@
       "id": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
       "kind": "claim",
       "claim_id": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
-      "type": "frontier",
-      "domain": "frontier",
-      "scope_guard": "Frontier/proof-target row; not a core closure, certificate pass or empirical passport.",
+      "type": "no-go",
+      "domain": "empirical_passport",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
       "book": "BOOK_01",
       "section": "01.6.1c",
-      "lean_module": "D0.Foundation.CascadeChain",
-      "lean_theorem": "chain_linked_four_five_to_five_six",
-      "lean_status": "OPEN",
+      "lean_module": "D0.Foundation.CascadeFullForcingSynthesis",
+      "lean_theorem": "scale_does_not_force_two_loop_memory;full_carried_forcing_dag;cascade_full_forcing_synthesis",
+      "lean_status": "LEAN_PROVED",
       "uses_bridge_assumptions": false,
       "assumption_ids": [],
-      "cert": "",
-      "python_cert": [],
-      "status": "PROOF-TARGET",
-      "notes": "[2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. THIRD LINK + FIRST NEW FLOOR [2026-08-09]: D0-CASCADE-FLOOR-DEFECT-CLOSURE-001 (stepDefectClosure + chain_linked_order_to_defect_closure) -- the prose step 'defect => circulation needs closure' carried in the CascadeStep shape: the order repair's commutator defect fails element-level basepoint invariance, survives only as the closed (conjugacy-class) datum. Remaining unformalized: closure=>shell, three-insufficiencies=>three-zones. FOURTH LINK [2026-08-09]: D0-CASCADE-FLOOR-SHELL-CLOSURE-001 (stepShellClosure + chain_linked_closure_to_shell, 03.23.5 FORCED reading) -- the interior defect+circulation pair fails reflection-closure, the outer shell closes it, and the shell scale is forced parameter-free to the scale floor's own survivor phi. The 01.6.1c segment order => defect => closure => shell is now carried end-to-end AT REFLECTION-PROXY GRADE; still open: the topological/2-cell-attachment reading of closure=>shell (the registered description stands) and the terminal 'three insufficiencies = three zones'. COUNT LEG [2026-08-09]: D0-CASCADE-TERMINAL-COUNT-001 -- the count three derived from the closure structure itself (2 interior + forced third; least completion proved), at proxy grade, on a carrier none of the three dead routes used; remaining for the terminal step: the insufficiencies<->layers identification (prose grade), the typed seam (D0-SCENE-COUNT-REDUCTION-001, both interpretation records unconstructed) and the zone sizes (owned separately). Umbrella stays OPEN: the each-floor-FORCED statement over the full prose chain is the open obligation; carried as of 2026-08-09 -- floors defect-closure and shell-closure at their registered (proxy/prose-anchored) grades, the terminal COUNT leg, four links; CARRIED-CONTENT CITATION THEOREM: D0-CASCADE-CARRIED-ASSEMBLY-001 (cascade_carried_assembly -- one conjunction of all carried content; note-only pointer, this row's lean fields unchanged); still open: the topological/2-cell reading of closure=>shell, the typed count seam (D0-SCENE-COUNT-REDUCTION-001), the insufficiencies<->layers identifications. Machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds). [NARROWING 2026-08-22] The terminal scene-window joint is reduced by D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001 to a single typed obligation: primitive M1-admissible detector comparisons factor through current membership/value data. Proving this excludes history, forces capability count<=2, and seals the port-power upper bound; without it zone17 survives. [CORRECTION 2026-08-24] Typed detector capability exhaustion and the zone<=13 consequence are now closed at D0-TYPED-DETECTOR-PRIMITIVE-EXHAUSTION-001. The remaining cascade joint is not a definition: D0-DETECTOR-M1-PREDICATE-BOUNDARY-001 proves CatalogueFree is non-singleton, so canonical M1Forced cannot represent the admissible detector class. Exact missing object: class-level M1 admissibility/representation into the typed detector layer. [DETECTOR/M1 SEAM CLOSED AT INTERFACE GRADE 2026-08-24] Class-level M1 admissibility and generic physical detector representation are now Lean-owned (D0-M1-CLASS-ADMISSIBILITY-001, D0-DETECTOR-M1-CLASS-REPRESENTATION-001). Remaining cascade work lies elsewhere (full each-floor forcing, closure=>shell topology, insufficiency<->layer identification, concrete application instances), not in the detector capability interface. [CONCRETE DETECTOR JOINT CLOSED 2026-08-24] The actual finite Observation comparison system now instantiates the class-level M1 detector representation with two-sided catalogues; admissibility iff history invariance, current-data factorization and two-profile exhaustion are Lean-owned. The detector/M1/GAP-E application joint is no longer open for the in-repo model. [REPAIR-QUOTIENT JOINT CLOSED AT INTERFACE GRADE 2026-08-25] The terminal insufficiency-to-zone count joint now has a derived observational quotient and universal M1 extension reductio at D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001. The quotient-generated variable scene is faithfully represented and has three zones. Remaining umbrella work is elsewhere: full each-floor forcing/topological closure reading, concrete external-scene application, and the independent 9/11/13 size selector. [GRAMMAR COMPLETENESS DERIVED 2026-08-25] The repair-grammar kind count is now derived from double independent detection (D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001: 3 = budget+1, budget=2). Umbrella still open for full each-floor forcing, closure=>shell topology, concrete external-scene application and the independent 9/11/13 size selector.",
-      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeChain.lean",
+      "cert": "vp_cascade_full_forcing_dag.py",
+      "python_cert": [
+        "vp_cascade_full_forcing_dag.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[2026-07] MINTED. The corpus's central thesis had no claim_id: BOOK_01 §01.6.1c states the cascade -- distinguish => trace => a trace without comparison is not a trace => comparison needs memory => memory needs a return with a distinguishable outcome => return without an external clock => the scale ratio is the fixed point of refinement (phi) => two independent loops => torus => torus is abelian so order is not encoded => defect => circulation needs closure => shell => three insufficiencies = three zones => K(9,11,13) -- and marks it PROOF-TARGET in prose only, so it appeared in no ledger, no dependency graph and no attack queue. FORMALIZATION SHAPE: per floor n, an object Floor n, a named distinguishability Obligation n, the load-bearing lemma insufficient n : NOT Obligation n (Floor n), a minimality lemma for Floor (n+1), and a control n exhibiting a structure where Obligation n IS satisfiable (non-vacuity, the check_cert_can_fail discipline applied to the spine). The content is in the INSUFFICIENCY, not the construction. Individual links (dyad, phi closure, torus, K(9,11,13) rank 3 / nullity 30) are owned elsewhere; the unifying 'each floor forced by the insufficiency of the previous' statement is the open obligation and is the corpus's headline target. SCAFFOLD REGISTERED [2026-08-09]: D0.Foundation.CascadeChain + five floor modules in tree (D0-CASCADE-FLOOR-COMPARISON/ONE-LOOP/ORDER-MEMORY/SCALE-RATIO-001 minted 2026-07; D0-CASCADE-FLOOR-ORIENTATION-PARITY-001 minted this pass); chain_linked_four_five_to_five_six carries the interlock -- the 4->5 repair (ZxZ) IS the 5->6 failure (abelian) -- at ONE link, not across the chain. SECOND LINK [2026-08-09]: D0-CASCADE-INTERLOCK-SCALE-001 (chain_linked_five_six_to_six_seven) -- the 5->6 repair carriers (S3 and Q8, both controls owned at D0-CASCADE-FLOOR-ORDER-MEMORY-001) realize only captured (rational) scale ratios, failing the 6->7 obligation; adjacency per the scaffold's carried order, prose-order caveat recorded in that row. THIRD LINK + FIRST NEW FLOOR [2026-08-09]: D0-CASCADE-FLOOR-DEFECT-CLOSURE-001 (stepDefectClosure + chain_linked_order_to_defect_closure) -- the prose step 'defect => circulation needs closure' carried in the CascadeStep shape: the order repair's commutator defect fails element-level basepoint invariance, survives only as the closed (conjugacy-class) datum. Remaining unformalized: closure=>shell, three-insufficiencies=>three-zones. FOURTH LINK [2026-08-09]: D0-CASCADE-FLOOR-SHELL-CLOSURE-001 (stepShellClosure + chain_linked_closure_to_shell, 03.23.5 FORCED reading) -- the interior defect+circulation pair fails reflection-closure, the outer shell closes it, and the shell scale is forced parameter-free to the scale floor's own survivor phi. The 01.6.1c segment order => defect => closure => shell is now carried end-to-end AT REFLECTION-PROXY GRADE; still open: the topological/2-cell-attachment reading of closure=>shell (the registered description stands) and the terminal 'three insufficiencies = three zones'. COUNT LEG [2026-08-09]: D0-CASCADE-TERMINAL-COUNT-001 -- the count three derived from the closure structure itself (2 interior + forced third; least completion proved), at proxy grade, on a carrier none of the three dead routes used; remaining for the terminal step: the insufficiencies<->layers identification (prose grade), the typed seam (D0-SCENE-COUNT-REDUCTION-001, both interpretation records unconstructed) and the zone sizes (owned separately). Umbrella stays OPEN: the each-floor-FORCED statement over the full prose chain is the open obligation; carried as of 2026-08-09 -- floors defect-closure and shell-closure at their registered (proxy/prose-anchored) grades, the terminal COUNT leg, four links; CARRIED-CONTENT CITATION THEOREM: D0-CASCADE-CARRIED-ASSEMBLY-001 (cascade_carried_assembly -- one conjunction of all carried content; note-only pointer, this row's lean fields unchanged); still open: the topological/2-cell reading of closure=>shell, the typed count seam (D0-SCENE-COUNT-REDUCTION-001), the insufficiencies<->layers identifications. Machine-checked dead ends recorded: propositional count route caps at 2 (SceneCountRouteNoGo), pair-indexed route uninhabitable (DiscriminationRetyping), sort-indexed circular (DiscriminationKinds). [NARROWING 2026-08-22] The terminal scene-window joint is reduced by D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001 to a single typed obligation: primitive M1-admissible detector comparisons factor through current membership/value data. Proving this excludes history, forces capability count<=2, and seals the port-power upper bound; without it zone17 survives. [CORRECTION 2026-08-24] Typed detector capability exhaustion and the zone<=13 consequence are now closed at D0-TYPED-DETECTOR-PRIMITIVE-EXHAUSTION-001. The remaining cascade joint is not a definition: D0-DETECTOR-M1-PREDICATE-BOUNDARY-001 proves CatalogueFree is non-singleton, so canonical M1Forced cannot represent the admissible detector class. Exact missing object: class-level M1 admissibility/representation into the typed detector layer. [DETECTOR/M1 SEAM CLOSED AT INTERFACE GRADE 2026-08-24] Class-level M1 admissibility and generic physical detector representation are now Lean-owned (D0-M1-CLASS-ADMISSIBILITY-001, D0-DETECTOR-M1-CLASS-REPRESENTATION-001). Remaining cascade work lies elsewhere (full each-floor forcing, closure=>shell topology, insufficiency<->layer identification, concrete application instances), not in the detector capability interface. [CONCRETE DETECTOR JOINT CLOSED 2026-08-24] The actual finite Observation comparison system now instantiates the class-level M1 detector representation with two-sided catalogues; admissibility iff history invariance, current-data factorization and two-profile exhaustion are Lean-owned. The detector/M1/GAP-E application joint is no longer open for the in-repo model. [REPAIR-QUOTIENT JOINT CLOSED AT INTERFACE GRADE 2026-08-25] The terminal insufficiency-to-zone count joint now has a derived observational quotient and universal M1 extension reductio at D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001. The quotient-generated variable scene is faithfully represented and has three zones. Remaining umbrella work is elsewhere: full each-floor forcing/topological closure reading, concrete external-scene application, and the independent 9/11/13 size selector. [GRAMMAR COMPLETENESS DERIVED 2026-08-25] The repair-grammar kind count is now derived from double independent detection (D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001: 3 = budget+1, budget=2). Umbrella still open for full each-floor forcing, closure=>shell topology, concrete external-scene application and the independent 9/11/13 size selector. [FINAL LINEAR-ROUTE VERDICT 2026-08-25] The one-line cascade is false as a forcing chain: scale_does_not_force_two_loop_memory gives a concrete phi/non-captured one-register model whose histories still collapse. Thus the linear umbrella route is closed NO-GO, not left indefinitely OPEN. The corrected theorem is D0-CASCADE-FULL-FORCING-DAG-001: every carried edge is machine-owned in the branching forcing DAG, including comparison->memory, memory->order, order->scale, order->closed-defect, topological 2-cell shell, concrete quotient scene and the independent capacity selection of (9,11,13).",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFullForcingSynthesis.lean",
       "module_exists": true,
       "certs_exist": true
     },
     {
-      "id": "module:D0.Foundation.CascadeChain",
+      "id": "module:D0.Foundation.CascadeFullForcingSynthesis",
       "kind": "lean_module",
-      "label": "D0.Foundation.CascadeChain",
-      "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeChain.lean",
+      "label": "D0.Foundation.CascadeFullForcingSynthesis",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFullForcingSynthesis.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_cascade_full_forcing_dag.py",
+      "kind": "python_cert",
+      "label": "vp_cascade_full_forcing_dag.py",
+      "path": "05_CERTS/vp_cascade_full_forcing_dag.py",
       "exists": true
     },
     {
@@ -20301,6 +20310,13 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeChain.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.CascadeChain",
+      "kind": "lean_module",
+      "label": "D0.Foundation.CascadeChain",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeChain.lean",
+      "exists": true
     },
     {
       "id": "D0-CASCADE-FLOOR-COMPARISON-001",
@@ -21850,7 +21866,7 @@
       "cert": "",
       "python_cert": [],
       "status": "CORE-FORMALIZED",
-      "notes": "[2026-08-09 POST-SKEPTIC] The floor 'closure => shell' + the PROSE-ANCHORED fourth link of D0-CASCADE-INSUFFICIENCY-CHAIN-001: the 01.6.1c prose segment order => defect => closure => shell is now carried END-TO-END in the registered CascadeStep shape AT REFLECTION-PROXY GRADE (the topological/2-cell-attachment reading of closure=>shell stays OPEN, as registered at D0-CASCADE-FLOOR-DEFECT-CLOSURE-001). OWNED READING: BOOK_03 03.23.5 (FORCED), verbatim: 'An interior defect (03.23.4) plus a memory-circulation zone (03.23.3) leaves the global topology open; closing it requires an outer shell (the Closure role D of 03.23.1). The shell's scaling cannot carry a free parameter (M1). The only self-consistent parameter-free scale is the positive root of r^2 - r - 1 = 0 => r = phi.' BRIDGING PROXY, scoped (the carrierRealizedRatio discipline): closure is read as closure of the radius set under the radial reflection rho(x) = 2*core - x -- the canonical completion move of the three-term radial progression; the topological (genus/boundary) reading stays at 03.23.5's own prose grade. CONTENT on the OWNED geometry (TorusShellAttachment radii inner = 1 = R-r, core = (a+1)/2 = R, outer = a = R+r, every admissible parameter): insufficient -- the interior pair {inner, core} (03.23.5's own defect+circulation identification) is NOT reflection-closed, rho(inner) = outer escapes for EVERY parameter (interior_not_reflection_closed, the verbatim negation of ObligationBelow); control -- the three-shell set IS reflection-closed (shells_reflection_closed: rho swaps inner<->outer, fixes core). M1 LEG: x = 1 + 1/x has EXACTLY ONE positive solution and it is phi (shell_scale_forced, real level, golden quadratic) -- and phi is the scale floor's own survivor (shell_scale_is_scale_survivor = phi_non_captured, cited): the cascade's phi reappears at the shell, linking the shell floor back to the scale floor's control. Floor genuine via step_discriminates (shell_closure_floor_genuine). LINK GRADE (skeptic R1, mandatory): the fourth link is PROSE-ANCHORED -- unlike links 1-3 (shared-object interlock shape) the adjacency to the defect-closure floor is carried by 03.23.5's own FORCED two-layer identification, NOT by a shared formal object (no defect-floor object occurs in the theorem); the only formal cross-floor tie is to the SCALE floor's control (phi_non_captured, cited). RIVAL PROXY, pre-empted: reflection around inner completes the pair with an INTERIOR shell (3-a)/2 -- closure => OUTER shell is proxy-relative; canonicity anchor: core = the owned major radius = tube center, rho is the tube's own radial symmetry. RATIONAL/REAL SPLIT: the reflection legs live in Q over all parameters; the phi-scale leg forces 03.23.5's OWN equation x = 1 + 1/x (unique positive solution phi); 'that equation = the shell's scaling' stays at prose grade; no owned rational TorusParameter ever attains phi -- its ratios are rational = captured, exactly the non-capture frame of D0-CASCADE-INTERLOCK-SCALE-001 (instantiates non-capture, not a counterexample). Load-bearing definitions: shellReflection, stepShellClosure. NON-CLAIMS: the phi^5 aspect (03.23.6), the {9,11,13} spectrum forcing, the address-parity floor (D0-CASCADE-FLOOR-ORIENTATION-PARITY-001), and the topological closure statement. UMBRELLA STAYS OPEN: the terminal step 'three insufficiencies = three zones' remains unformalized. Clean axioms propext/Classical.choice/Quot.sound; no native_decide. Finite dimensionless statement; no physical promotion claimed.",
+      "notes": "[2026-08-09 POST-SKEPTIC] The floor 'closure => shell' + the PROSE-ANCHORED fourth link of D0-CASCADE-INSUFFICIENCY-CHAIN-001: the 01.6.1c prose segment order => defect => closure => shell is now carried END-TO-END in the registered CascadeStep shape AT REFLECTION-PROXY GRADE (the topological/2-cell-attachment reading of closure=>shell stays OPEN, as registered at D0-CASCADE-FLOOR-DEFECT-CLOSURE-001). OWNED READING: BOOK_03 03.23.5 (FORCED), verbatim: 'An interior defect (03.23.4) plus a memory-circulation zone (03.23.3) leaves the global topology open; closing it requires an outer shell (the Closure role D of 03.23.1). The shell's scaling cannot carry a free parameter (M1). The only self-consistent parameter-free scale is the positive root of r^2 - r - 1 = 0 => r = phi.' BRIDGING PROXY, scoped (the carrierRealizedRatio discipline): closure is read as closure of the radius set under the radial reflection rho(x) = 2*core - x -- the canonical completion move of the three-term radial progression; the topological (genus/boundary) reading stays at 03.23.5's own prose grade. CONTENT on the OWNED geometry (TorusShellAttachment radii inner = 1 = R-r, core = (a+1)/2 = R, outer = a = R+r, every admissible parameter): insufficient -- the interior pair {inner, core} (03.23.5's own defect+circulation identification) is NOT reflection-closed, rho(inner) = outer escapes for EVERY parameter (interior_not_reflection_closed, the verbatim negation of ObligationBelow); control -- the three-shell set IS reflection-closed (shells_reflection_closed: rho swaps inner<->outer, fixes core). M1 LEG: x = 1 + 1/x has EXACTLY ONE positive solution and it is phi (shell_scale_forced, real level, golden quadratic) -- and phi is the scale floor's own survivor (shell_scale_is_scale_survivor = phi_non_captured, cited): the cascade's phi reappears at the shell, linking the shell floor back to the scale floor's control. Floor genuine via step_discriminates (shell_closure_floor_genuine). LINK GRADE (skeptic R1, mandatory): the fourth link is PROSE-ANCHORED -- unlike links 1-3 (shared-object interlock shape) the adjacency to the defect-closure floor is carried by 03.23.5's own FORCED two-layer identification, NOT by a shared formal object (no defect-floor object occurs in the theorem); the only formal cross-floor tie is to the SCALE floor's control (phi_non_captured, cited). RIVAL PROXY, pre-empted: reflection around inner completes the pair with an INTERIOR shell (3-a)/2 -- closure => OUTER shell is proxy-relative; canonicity anchor: core = the owned major radius = tube center, rho is the tube's own radial symmetry. RATIONAL/REAL SPLIT: the reflection legs live in Q over all parameters; the phi-scale leg forces 03.23.5's OWN equation x = 1 + 1/x (unique positive solution phi); 'that equation = the shell's scaling' stays at prose grade; no owned rational TorusParameter ever attains phi -- its ratios are rational = captured, exactly the non-capture frame of D0-CASCADE-INTERLOCK-SCALE-001 (instantiates non-capture, not a counterexample). Load-bearing definitions: shellReflection, stepShellClosure. NON-CLAIMS: the phi^5 aspect (03.23.6), the {9,11,13} spectrum forcing, the address-parity floor (D0-CASCADE-FLOOR-ORIENTATION-PARITY-001), and the topological closure statement. UMBRELLA STAYS OPEN: the terminal step 'three insufficiencies = three zones' remains unformalized. Clean axioms propext/Classical.choice/Quot.sound; no native_decide. Finite dimensionless statement; no physical promotion claimed. [TOPOLOGICAL UPGRADE 2026-08-25] D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001 closes the registered topological/2-cell residual: the closed defect class labels a nonzero circulation cycle, zero 2-cells cannot fill it, one shell cell fills it, and any filling needs a nonempty cell carrier. The reflection result remains the geometric realisation.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFloorShellClosure.lean",
       "module_exists": true,
       "certs_exist": true
@@ -21908,7 +21924,7 @@
       "cert": "",
       "python_cert": [],
       "status": "CORE-FORMALIZED",
-      "notes": "[2026-08-09 POST-SKEPTIC: MINT-AFTER-REPAIRS, 0 kills; NEW ROW + note-only umbrella update adjudicated; R1-R4 applied; memo CASCADE_CARRIED_ASSEMBLY_MEMO.md] PURE ASSEMBLY -- the carried-content CITATION THEOREM for D0-CASCADE-INSUFFICIENCY-CHAIN-001: one conjunction, every conjunct CITED from its minted module at its own registered grade, no new mathematics; the content is citability (one theorem replacing six scattered pointers) and the machine-checked clean-axiom composition. CONJUNCTS AND THEIR GRADES, verbatim: (1) carriedFloorsExtended -- the scaffold's four CascadeStep floors + defect-closure + shell-closure, SIX steps, every one genuine via the scaffold's own step_discriminates (extended_floors_are_genuine; genuineness of the members owned at their rows); the extended list is THIS module's object, inserted at prose positions -- the scaffold's own carriedFloors (4 steps) is untouched and link 2's 5->6 6->7 adjacency stays owned there; (2) link 1 chain_linked_four_five_to_five_six (scaffold, shared-object); (3) link 2 chain_linked_five_six_to_six_seven (scale, shared-object); (4) link 3 chain_linked_order_to_defect_closure (shared-object); (5) link 4 chain_linked_closure_to_shell (PROSE-ANCHORED, its registered grade -- not upgraded by assembly); (6) the terminal count leg cascade_terminal_count (every admissible parameter, reflection-proxy grade); (7) the address-ladder floor stepOrientationParity genuine (it IS a CascadeStep, the fifth registered floor D0-CASCADE-FLOOR-ORIENTATION-PARITY-001, anchored at the address-ladder prose so it has no position in the ordered chain list -- assembled as a separate conjunct). Cross-ref D0-CASCADE-CHAIN-SCAFFOLD-001 (cascade_chain_scaffold already contains conjunct 2 and the four-floor genuineness; this assembly cites, does not compete). NOTHING UPGRADED: the umbrella stays OPEN (the each-floor-FORCED-by-previous statement over the full prose chain is not claimed); the topological/2-cell reading, the typed count seam (D0-SCENE-COUNT-REDUCTION-001, records unconstructed) and the insufficiencies<->layers identifications (prose grade) remain with their owners. Clean axioms propext/Classical.choice/Quot.sound; no native_decide. Finite dimensionless statement; no physical promotion claimed.",
+      "notes": "[2026-08-09 POST-SKEPTIC: MINT-AFTER-REPAIRS, 0 kills; NEW ROW + note-only umbrella update adjudicated; R1-R4 applied; memo CASCADE_CARRIED_ASSEMBLY_MEMO.md] PURE ASSEMBLY -- the carried-content CITATION THEOREM for D0-CASCADE-INSUFFICIENCY-CHAIN-001: one conjunction, every conjunct CITED from its minted module at its own registered grade, no new mathematics; the content is citability (one theorem replacing six scattered pointers) and the machine-checked clean-axiom composition. CONJUNCTS AND THEIR GRADES, verbatim: (1) carriedFloorsExtended -- the scaffold's four CascadeStep floors + defect-closure + shell-closure, SIX steps, every one genuine via the scaffold's own step_discriminates (extended_floors_are_genuine; genuineness of the members owned at their rows); the extended list is THIS module's object, inserted at prose positions -- the scaffold's own carriedFloors (4 steps) is untouched and link 2's 5->6 6->7 adjacency stays owned there; (2) link 1 chain_linked_four_five_to_five_six (scaffold, shared-object); (3) link 2 chain_linked_five_six_to_six_seven (scale, shared-object); (4) link 3 chain_linked_order_to_defect_closure (shared-object); (5) link 4 chain_linked_closure_to_shell (PROSE-ANCHORED, its registered grade -- not upgraded by assembly); (6) the terminal count leg cascade_terminal_count (every admissible parameter, reflection-proxy grade); (7) the address-ladder floor stepOrientationParity genuine (it IS a CascadeStep, the fifth registered floor D0-CASCADE-FLOOR-ORIENTATION-PARITY-001, anchored at the address-ladder prose so it has no position in the ordered chain list -- assembled as a separate conjunct). Cross-ref D0-CASCADE-CHAIN-SCAFFOLD-001 (cascade_chain_scaffold already contains conjunct 2 and the four-floor genuineness; this assembly cites, does not compete). NOTHING UPGRADED: the umbrella stays OPEN (the each-floor-FORCED-by-previous statement over the full prose chain is not claimed); the topological/2-cell reading, the typed count seam (D0-SCENE-COUNT-REDUCTION-001, records unconstructed) and the insufficiencies<->layers identifications (prose grade) remain with their owners. Clean axioms propext/Classical.choice/Quot.sound; no native_decide. Finite dimensionless statement; no physical promotion claimed. [SUPERSEDED BY FORCING DAG 2026-08-25] D0-CASCADE-FULL-FORCING-DAG-001 adds comparison->memory, topological defect->shell, concrete scene and size edges. It also proves the old linear scale->memory route false; full carried architecture is now a DAG, not a list/prose chain.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeCarriedAssembly.lean",
       "module_exists": true,
       "certs_exist": true
@@ -22234,7 +22250,7 @@
         "vp_m1_repair_observational_quotient.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[MINT 2026-08-25 BREAKTHROUGH M1 REPAIR QUOTIENT] Closes the exact constructive owner named by D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001 without enumerating fourth candidates or supplying a target count. Q is the actual Quotient of the existing structural Discrimination carrier by SameRepairObservation(D,E): kindOf D = kindOf E. repairQuotientEquivDatumKind is derived using the carried representatives; comparison/one-loop/order-memory occupy pairwise distinct classes, duplicate same-kind witnesses collapse, and only then repairObservationQuotient_card computes card Q=3. UNIVERSAL NO-EXTENSION: for arbitrary Type Theta and theta:Theta, the extended observation domain is Q-kind + Theta. The theta component is record-disconnected from every current observer. Using the owned InformationConnectivity/M1Forced machinery, Lean proves the required chain: external_underived; external_outcome_affecting via two explicit admissible Bool contents agreeing on the current observer and differing at theta; external_not_protocol; external_every_value_needs_catalogue for every current kind and every proposed Bool value; therefore external_not_resolved_by_current_repairs and mandatory_fourth_class_reductio. This is universal in Theta, not a scan. connection_deletion_control mutates the relation to connect theta and then constructs an M1Forced value, proving disconnection load-bearing. SCENE: quotientScene is defined with zoneCount=card Q before that card is evaluated; quotientSceneRepresentation constructs checked embeddings Q -> zones and zones -> Q; quotientScene_zoneCount outputs 3. faithful_scene_zoneCount proves every external SceneCandidate carrying the same representation has three zones. No Fin 3, 3, 9,11,13 enters the quotient, extension grammar or scene representation premise; 3 occurs only as the computed conclusion/control. Exact residual application: a concrete external physical scene must provide FaithfulRepairSceneRepresentation S Q. Zone sizes remain a separate owner. Certificate independently checks quotient collapse, outcome variation, underived/nonprotocol status, catalogue failure, faithful scene and connection/deletion mutations. Clean Lean, no sorry/new axiom/bridge assumption. [GRAMMAR COMPLETENESS DERIVED 2026-08-25] The quotient cardinality is no longer read off DatumKind: D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001 derives it from the double-detection loop budget (card = budget+1 for every budget; budget=2 -> 3), with an explicit equiv RepairObservationQuotient ~= RepairArity 2 ~= DatumKind. The remaining modelling premise (repair datum = order-arity over independent detection loops) is named and non-vacuous.",
+      "notes": "[MINT 2026-08-25 BREAKTHROUGH M1 REPAIR QUOTIENT] Closes the exact constructive owner named by D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001 without enumerating fourth candidates or supplying a target count. Q is the actual Quotient of the existing structural Discrimination carrier by SameRepairObservation(D,E): kindOf D = kindOf E. repairQuotientEquivDatumKind is derived using the carried representatives; comparison/one-loop/order-memory occupy pairwise distinct classes, duplicate same-kind witnesses collapse, and only then repairObservationQuotient_card computes card Q=3. UNIVERSAL NO-EXTENSION: for arbitrary Type Theta and theta:Theta, the extended observation domain is Q-kind + Theta. The theta component is record-disconnected from every current observer. Using the owned InformationConnectivity/M1Forced machinery, Lean proves the required chain: external_underived; external_outcome_affecting via two explicit admissible Bool contents agreeing on the current observer and differing at theta; external_not_protocol; external_every_value_needs_catalogue for every current kind and every proposed Bool value; therefore external_not_resolved_by_current_repairs and mandatory_fourth_class_reductio. This is universal in Theta, not a scan. connection_deletion_control mutates the relation to connect theta and then constructs an M1Forced value, proving disconnection load-bearing. SCENE: quotientScene is defined with zoneCount=card Q before that card is evaluated; quotientSceneRepresentation constructs checked embeddings Q -> zones and zones -> Q; quotientScene_zoneCount outputs 3. faithful_scene_zoneCount proves every external SceneCandidate carrying the same representation has three zones. No Fin 3, 3, 9,11,13 enters the quotient, extension grammar or scene representation premise; 3 occurs only as the computed conclusion/control. Exact residual application: a concrete external physical scene must provide FaithfulRepairSceneRepresentation S Q. Zone sizes remain a separate owner. Certificate independently checks quotient collapse, outcome variation, underived/nonprotocol status, catalogue failure, faithful scene and connection/deletion mutations. Clean Lean, no sorry/new axiom/bridge assumption. [GRAMMAR COMPLETENESS DERIVED 2026-08-25] The quotient cardinality is no longer read off DatumKind: D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001 derives it from the double-detection loop budget (card = budget+1 for every budget; budget=2 -> 3), with an explicit equiv RepairObservationQuotient ~= RepairArity 2 ~= DatumKind. The remaining modelling premise (repair datum = order-arity over independent detection loops) is named and non-vacuous. [PHYSICAL QUOTIENT IDENTIFIED 2026-08-25] The quotient of ALL concrete binary Observation comparisons by equal computed history-support arity is Lean-equivalent to RepairObservationQuotient; the physical class representation and concrete TorusShell scene map are now constructed, not assumed.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/M1RepairObservationalQuotient.lean",
       "module_exists": true,
       "certs_exist": true
@@ -22272,7 +22288,7 @@
         "vp_independent_detection_repair_grammar.py"
       ],
       "status": "CORE-FORMALIZED",
-      "notes": "[MINT 2026-08-25 BREAKTHROUGH GRAMMAR COMPLETENESS] Discharges the earlier semantic owner standing above D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001: why the repair grammar has exactly three observational kinds. The front premise is independent REPEATED detection = two independent loops (detectionBudget=2). A repair datum is characterised by its order-arity over the supplied loops: arity 0 = raw reading, 1 = order within one loop, 2 = joint order of the two loops; RepairArity b := Fin (b+1). repair_arity_count proves card = b+1 for EVERY budget b (not a fitted value); quotient_card_eq_budget_succ and detection_budget_forces_three give 3 = detectionBudget+1. repairArityEquivDatumKind is an explicit bijection RepairArity 2 ~= DatumKind and quotientEquivRepairArity composes it with the owned repairQuotientEquivDatumKind, so RepairObservationQuotient ~= order-arity space of the two-loop budget. carried_floor_arities proves comparison/one-loop/order-memory realise arities 0/1/2 (model non-vacuous). CONTROLS (falsifiable): repair_arity_count_single_detection = 2 (one loop caps at two -- explains the historic propositional two-cap; the SECOND independent detection lifts two to three), repair_arity_count_triple_detection = 4; no_extra_arity_beyond_budget proves a (b+2)-th arity class cannot inject into RepairArity b (pigeonhole). The M1 no-mandatory-fresh-loop reductio is carried from D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001 (external_not_resolved_by_current_repairs). NO target 3/9/11/13 enters any premise; 3 is the computed detectionBudget+1. HONEST RESIDUAL (named, non-vacuous): the single remaining semantic input is the modelling premise that a repair datum equals its order-arity over the independent detection loops, replacing the previously unexplained three-constructor DatumKind. Clean Lean, no sorry/new axiom/bridge. Certificate checks count-from-budget, floor arities, budget controls, pigeonhole cap and a wrong-budget mutation.",
+      "notes": "[MINT 2026-08-25 BREAKTHROUGH GRAMMAR COMPLETENESS] Discharges the earlier semantic owner standing above D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001: why the repair grammar has exactly three observational kinds. The front premise is independent REPEATED detection = two independent loops (detectionBudget=2). A repair datum is characterised by its order-arity over the supplied loops: arity 0 = raw reading, 1 = order within one loop, 2 = joint order of the two loops; RepairArity b := Fin (b+1). repair_arity_count proves card = b+1 for EVERY budget b (not a fitted value); quotient_card_eq_budget_succ and detection_budget_forces_three give 3 = detectionBudget+1. repairArityEquivDatumKind is an explicit bijection RepairArity 2 ~= DatumKind and quotientEquivRepairArity composes it with the owned repairQuotientEquivDatumKind, so RepairObservationQuotient ~= order-arity space of the two-loop budget. carried_floor_arities proves comparison/one-loop/order-memory realise arities 0/1/2 (model non-vacuous). CONTROLS (falsifiable): repair_arity_count_single_detection = 2 (one loop caps at two -- explains the historic propositional two-cap; the SECOND independent detection lifts two to three), repair_arity_count_triple_detection = 4; no_extra_arity_beyond_budget proves a (b+2)-th arity class cannot inject into RepairArity b (pigeonhole). The M1 no-mandatory-fresh-loop reductio is carried from D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001 (external_not_resolved_by_current_repairs). NO target 3/9/11/13 enters any premise; 3 is the computed detectionBudget+1. HONEST RESIDUAL (named, non-vacuous): the single remaining semantic input is the modelling premise that a repair datum equals its order-arity over the independent detection loops, replacing the previously unexplained three-constructor DatumKind. Clean Lean, no sorry/new axiom/bridge. Certificate checks count-from-budget, floor arities, budget controls, pigeonhole cap and a wrong-budget mutation. [ORDER-ARITY PREMISE DISCHARGED 2026-08-25] D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001 derives arity as the cardinality of the extensional history-support subset of the two actual binary InputSide positions. The previous residual modelling premise is removed for the concrete Observation system.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/IndependentDetectionRepairGrammar.lean",
       "module_exists": true,
       "certs_exist": true
@@ -22290,6 +22306,92 @@
       "label": "vp_independent_detection_repair_grammar.py",
       "path": "05_CERTS/vp_independent_detection_repair_grammar.py",
       "exists": true
+    },
+    {
+      "id": "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+      "kind": "claim",
+      "claim_id": "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "01.6.1c concrete support quotient and physical scene",
+      "lean_module": "D0.Foundation.ConcreteIndependentDetectionRepairSemantics",
+      "lean_theorem": "zeroArity_support;oneArity_support;twoArity_support;zeroArity_value;oneArity_value;twoArity_value;physicalRepairQuotientEquivArity;physicalRepairObservationQuotient_card;physicalRepairQuotientEquivStructural;repairQuotientEquivTorusShell;torusShellSceneRepresentation;torusShellScene_zoneCount;repair_arity_shell_mapping;carried_repair_zone_sizes;repair_scene_sizes_selected_independently;concrete_independent_detection_repair_semantics",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cascade_full_forcing_dag.py",
+      "python_cert": [
+        "vp_cascade_full_forcing_dag.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-08-25 CONCRETE SEMANTIC CLOSURE] Removes the last repair-datum/order-arity premise. On the actual binary Observation comparison carrier, UsesHistorySide is extensional dependence on left/right history with current member/value fixed; historySupport is the computed Finset of used InputSide positions and comparisonRepairArity is its cardinality. Concrete witnesses realise support empty/singleton/univ and arities 0/1/2. PhysicalRepairObservationQuotient is the quotient of ALL concrete comparisons by equal computed arity; physicalRepairQuotientEquivArity proves it equivalent to RepairArity 2, and physicalRepairQuotientEquivStructural identifies it with RepairObservationQuotient. The physical scene application is constructed: repairQuotientEquivTorusShell maps arity 0/1/2 to inner/core/outer radial shell, torusShellSceneRepresentation supplies both checked embeddings, and torusShellScene_zoneCount outputs 3. carried_repair_zone_sizes maps comparison/one-loop/order-memory to 9/11/13. Sizes are selected independently by capacity_defects_reconstruct_scene from (ABCD,qT)=(4,44), not inferred from count. No residual semantic premise remains for the concrete in-repo detector/scene model. Clean Lean, no sorry/axiom/bridge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/ConcreteIndependentDetectionRepairSemantics.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.ConcreteIndependentDetectionRepairSemantics",
+      "kind": "lean_module",
+      "label": "D0.Foundation.ConcreteIndependentDetectionRepairSemantics",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/ConcreteIndependentDetectionRepairSemantics.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
+      "kind": "claim",
+      "claim_id": "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01/03",
+      "section": "01.6.1c / 03.23.5 topological closure to shell",
+      "lean_module": "D0.Foundation.CascadeTopologicalShellAttachment",
+      "lean_theorem": "circulationCycle_nonzero;circulation_not_fillable_without_shell;shell_fills_circulation;circulation_fillable_with_shell;filling_requires_nonempty_cell;shell_attachment_minimal;explicit_defect_nontrivial;carried_defect_is_closed;topological_closure_forces_shell",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cascade_full_forcing_dag.py",
+      "python_cert": [
+        "vp_cascade_full_forcing_dag.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-08-25 TOPOLOGICAL 2-CELL CLOSURE] Closes the exact residual of D0-CASCADE-FLOOR-SHELL-CLOSURE-001 beyond the reflection proxy. The preceding defect floor output is used as the label: an explicit nontrivial S3 commutator has a basepoint-invariant ConjClasses class. Its closed circulation is a nonzero integral 1-cycle on three boundary edges. cellularBoundary is the finite sum of 2-cell attaching cycles. With OpenTwoCells=Empty every boundary is zero, so the circulation is not fillable. One PUnit shell 2-cell attached along the cycle fills it; filling_requires_nonempty_cell proves every finite filling carrier is nonempty, hence the one-cell attachment is minimal. This is a shared-object defect->closed-cycle->shell theorem, not prose adjacency. Clean Lean, no sorry/axiom/bridge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeTopologicalShellAttachment.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.CascadeTopologicalShellAttachment",
+      "kind": "lean_module",
+      "label": "D0.Foundation.CascadeTopologicalShellAttachment",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeTopologicalShellAttachment.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-CASCADE-FULL-FORCING-DAG-001",
+      "kind": "claim",
+      "claim_id": "D0-CASCADE-FULL-FORCING-DAG-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_01",
+      "section": "01.6.1c corrected full carried forcing architecture",
+      "lean_module": "D0.Foundation.CascadeFullForcingSynthesis",
+      "lean_theorem": "dyad_comparison_collapses_histories;phiOneLoop_scale_adequate;phiOneLoop_history_not_separated;scale_does_not_force_two_loop_memory;full_carried_forcing_dag;cascade_full_forcing_synthesis",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cascade_full_forcing_dag.py",
+      "python_cert": [
+        "vp_cascade_full_forcing_dag.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-08-25 FULL FORCING DAG + LINEAR NO-GO] Adds the missing first shared-object edge: the dyadic comparison accepts direct/return agreement but collapses h1/h2, while the two-loop repair separates them. Assembles all carried forcing edges in FullCarriedForcingDAG: comparison->memory; memory->order; order->scale; order->closed defect; closed defect->minimal shell 2-cell; shell->faithfully represented repair scene; scene->(9,11,13) via independent capacity defects. The old prose linearisation is machine-refuted: phiOneLoopModel has NonCaptured phi while runOne still collapses h1/h2, so scale non-capture does not force two-loop memory. The correct architecture is branching. cascade_full_forcing_synthesis packages genuine floors + full DAG + linear-route no-go. Cert checks physical supports, cellular fill, linear countermodel, unique capacity solution and mutations. Clean Lean, no sorry/axiom/bridge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFullForcingSynthesis.lean",
+      "module_exists": true,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -22445,7 +22547,7 @@
     },
     {
       "source": "D0-SCENE-COUNT-REDUCTION-001",
-      "target": "domain:frontier",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
@@ -30760,13 +30862,18 @@
     },
     {
       "source": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
-      "target": "domain:frontier",
+      "target": "domain:empirical_passport",
       "kind": "semantic_domain"
     },
     {
       "source": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
-      "target": "module:D0.Foundation.CascadeChain",
+      "target": "module:D0.Foundation.CascadeFullForcingSynthesis",
       "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
+      "target": "cert:vp_cascade_full_forcing_dag.py",
+      "kind": "certified_by"
     },
     {
       "source": "D0-SCENE-CHROMATIC-THREE-NOGO-001",
@@ -31561,6 +31668,51 @@
     {
       "source": "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001",
       "target": "cert:vp_independent_detection_repair_grammar.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+      "target": "module:D0.Foundation.ConcreteIndependentDetectionRepairSemantics",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+      "target": "cert:vp_cascade_full_forcing_dag.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
+      "target": "module:D0.Foundation.CascadeTopologicalShellAttachment",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
+      "target": "cert:vp_cascade_full_forcing_dag.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CASCADE-FULL-FORCING-DAG-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CASCADE-FULL-FORCING-DAG-001",
+      "target": "module:D0.Foundation.CascadeFullForcingSynthesis",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CASCADE-FULL-FORCING-DAG-001",
+      "target": "cert:vp_cascade_full_forcing_dag.py",
       "kind": "certified_by"
     }
   ]

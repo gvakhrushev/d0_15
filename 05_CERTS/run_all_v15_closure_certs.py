@@ -45,6 +45,7 @@ scripts = [
     'vp_m1_cascade_scene_nogo.py',
     'vp_m1_repair_observational_quotient.py',
     'vp_independent_detection_repair_grammar.py',
+    'vp_cascade_full_forcing_dag.py',
 ]
 
 def run_one(script: str) -> dict:

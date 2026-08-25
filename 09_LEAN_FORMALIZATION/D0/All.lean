@@ -237,9 +237,12 @@ import D0.Foundation.CascadeFloorOrientationParity
 import D0.Foundation.CascadeFloorProofreading
 import D0.Foundation.CascadeFloorScaleRatio
 import D0.Foundation.CascadeFloorShellClosure
+import D0.Foundation.CascadeFullForcingSynthesis
 import D0.Foundation.CascadeInterlockArrow
 import D0.Foundation.CascadeInterlockScale
 import D0.Foundation.CascadeTerminalCount
+import D0.Foundation.CascadeTopologicalShellAttachment
+import D0.Foundation.ConcreteIndependentDetectionRepairSemantics
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.CurrentDataComparisonCanonicity
 import D0.Foundation.CurrentDataFactorization

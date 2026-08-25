@@ -943,8 +943,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "liftCurrent_historyInvariant;liftCurrent_injective;lift_descendAt_eq;descendAt_independent;historyInvariant_iff_existsUnique_factorization;fullComparison_subsingleton_of_isEmpty;empty_history_lift_not_injective;membership_transport_factors;value_transport_factors;history_transport_no_factorization;current_data_factorization", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CURRENT-DATA-COMPARISON-CANONICITY-NOGO-001", moduleName := "D0.Foundation.CurrentDataComparisonCanonicity",
       theoremName := "eq_operational;ne_operational;eq_uses_current;ne_uses_current;eq_ne_distinct;ne_eq_not_eq;support_not_injective;reflexive_iff_equality;equality_unique_reflexive;operational_support_underdetermination;current_data_comparison_canonicity_boundary", status := ClaimStatus.leanNoGoProved },
-    { claimId := "D0-CASCADE-INSUFFICIENCY-CHAIN-001", moduleName := "D0.Foundation.CascadeChain",
-      theoremName := "chain_linked_four_five_to_five_six", status := ClaimStatus.openObligation },
+    { claimId := "D0-CASCADE-INSUFFICIENCY-CHAIN-001", moduleName := "D0.Foundation.CascadeFullForcingSynthesis",
+      theoremName := "scale_does_not_force_two_loop_memory;full_carried_forcing_dag;cascade_full_forcing_synthesis", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-SCENE-CHROMATIC-THREE-NOGO-001", moduleName := "D0.Combinatorics.SceneChromaticThree",
       theoremName := "scene_chromatic_three_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-CASCADE-FLOOR-ONE-LOOP-001", moduleName := "D0.Foundation.CascadeFloorOneLoop",
@@ -1072,7 +1072,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001", moduleName := "D0.Foundation.M1RepairObservationalQuotient",
       theoremName := "repairQuotientEquivDatumKind;repairObservationQuotient_card;carried_repair_classes_pairwise_distinct;prior_external_disconnected;external_underived;external_not_protocol;external_outcome_affecting;current_repair_resolved;external_every_value_needs_catalogue;external_not_resolved_by_current_repairs;resolved_iff_current_repair;fourth_class_forbidden_by_M1;mandatory_fourth_class_reductio;connection_deletion_control;quotientSceneRepresentation;quotientScene_zoneCount;faithful_scene_zoneCount;carried_repair_zones_pairwise_distinct;m1_repair_observational_quotient_scene", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001", moduleName := "D0.Foundation.IndependentDetectionRepairGrammar",
-      theoremName := "repair_arity_count;repair_arity_count_single_detection;repair_arity_count_triple_detection;no_extra_arity_beyond_budget;repairArityEquivDatumKind;carried_floor_arities;quotientEquivRepairArity;quotient_card_eq_budget_succ;detection_budget_forces_three;repair_grammar_complete_from_double_detection", status := ClaimStatus.leanCoreProved }
+      theoremName := "repair_arity_count;repair_arity_count_single_detection;repair_arity_count_triple_detection;no_extra_arity_beyond_budget;repairArityEquivDatumKind;carried_floor_arities;quotientEquivRepairArity;quotient_card_eq_budget_succ;detection_budget_forces_three;repair_grammar_complete_from_double_detection", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001", moduleName := "D0.Foundation.ConcreteIndependentDetectionRepairSemantics",
+      theoremName := "zeroArity_support;oneArity_support;twoArity_support;zeroArity_value;oneArity_value;twoArity_value;physicalRepairQuotientEquivArity;physicalRepairObservationQuotient_card;physicalRepairQuotientEquivStructural;repairQuotientEquivTorusShell;torusShellSceneRepresentation;torusShellScene_zoneCount;repair_arity_shell_mapping;carried_repair_zone_sizes;repair_scene_sizes_selected_independently;concrete_independent_detection_repair_semantics", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001", moduleName := "D0.Foundation.CascadeTopologicalShellAttachment",
+      theoremName := "circulationCycle_nonzero;circulation_not_fillable_without_shell;shell_fills_circulation;circulation_fillable_with_shell;filling_requires_nonempty_cell;shell_attachment_minimal;explicit_defect_nontrivial;carried_defect_is_closed;topological_closure_forces_shell", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CASCADE-FULL-FORCING-DAG-001", moduleName := "D0.Foundation.CascadeFullForcingSynthesis",
+      theoremName := "dyad_comparison_collapses_histories;phiOneLoop_scale_adequate;phiOneLoop_history_not_separated;scale_does_not_force_two_loop_memory;full_carried_forcing_dag;cascade_full_forcing_synthesis", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
