@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 8836,
-    "track_fair_max": 11583,
+    "realized": 8848,
+    "track_fair_max": 11595,
     "pct_strength": 76.3,
     "core_realized": 6940,
     "core_potential": 9620,
     "core_headroom": 2680,
-    "n_claims": 663,
-    "n_active": 661,
+    "n_claims": 664,
+    "n_active": 662,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -44,9 +44,9 @@
       "core_headroom": 152
     },
     "empirical_passport": {
-      "n": 44,
-      "realized": 510,
-      "max": 663,
+      "n": 45,
+      "realized": 522,
+      "max": 675,
       "core_headroom": 144
     },
     "gauge_bridge": {
@@ -154,9 +154,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 60,
-      "realized": 868,
-      "max": 1124,
+      "n": 61,
+      "realized": 880,
+      "max": 1136,
       "core_headroom": 256
     },
     "BOOK_05": {
@@ -13669,12 +13669,26 @@
       "book": "BOOK_02/04",
       "leverage": 0,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
+      "track": "NO_GO",
+      "level": 4,
+      "level_name": "LEAN_PROVED",
+      "score": 12,
+      "ceiling": 12,
+      "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
-    "score": 91.5,
+    "score": 96.5,
     "budget": 100,
-    "penalty_total": 8.5,
+    "penalty_total": 3.5,
     "bonus_total": 0.0,
     "signals": [
       {
@@ -13751,8 +13765,8 @@
       },
       {
         "signal": "real_in_project_lake",
-        "count": 1,
-        "points": -5.0,
+        "count": 0,
+        "points": -0.0,
         "cap": -10.0,
         "label": "a real .lake build tree inside the repo (must be an external junction)",
         "evidence": []
@@ -13767,14 +13781,6 @@
       }
     ],
     "top_actions": [
-      {
-        "signal": "real_in_project_lake",
-        "count": 1,
-        "points": -5.0,
-        "cap": -10.0,
-        "label": "a real .lake build tree inside the repo (must be an external junction)",
-        "evidence": []
-      },
       {
         "signal": "orphan_proof_targets",
         "count": 35,

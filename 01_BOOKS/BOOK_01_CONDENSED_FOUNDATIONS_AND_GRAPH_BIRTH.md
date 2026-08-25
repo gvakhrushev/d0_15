@@ -650,6 +650,25 @@ Status: PROOF-TARGET for the full cascade as a single theorem (`D0-CASCADE-INSUF
 
 Two structural theorems come with them. **The chain is linked**: the two-register carrier that repairs floor 4→5 *is* `ℤ × ℤ`, and `ℤ × ℤ` is abelian — so the very object that fixed the previous floor is precisely what the next floor rejects. The unfolding cannot terminate at its own repair, and that is "each floor forced by the insufficiency of the previous" in checkable form. **And the chain has a proved lower bound**: since the operation-memory repair fails order memory, one structural addition cannot discharge both, so the cascade past the register model is at least two steps long. That is the lower-bound half of "three insufficiencies = three zones"; the *exact* count needs the floors still open (defect⇒closure⇒shell) and is deliberately **not** claimed. Note also that floor 6→7 reaches *irrational*, **not** `\varphi`: `\sqrt5` is exhibited as a second survivor, and the narrowing to `\varphi` is the separately owned canonization step (`D0-PHI-HURWITZ-CLASS-CANONIZATION-001`). Crediting a floor with a conclusion its premises do not reach is precisely the error the route audit found elsewhere in the corpus, so the two steps are kept apart by construction.
 
+**Structural count boundary (2026-08-25).** The carried spine is now larger than the four-floor
+snapshot above: `D0-CASCADE-CARRIED-ASSEMBLY-001` assembles six genuine ordered floors, four
+interlocks, the terminal shell-count leg, and the separate orientation-parity floor. The remaining
+scene-count problem has also been settled at the correct logical level. The complete present
+package — carried cascade, three computed datum kinds, both no-extension owner facts, and the
+concrete two-sided class-M1 detector representation — admits variable-scene models with every
+positive zone count. In particular, the same premises survive at two and four zones
+(`D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001`). Thus the current M1/cascade grammar does not determine
+any unique zone count; this is a formal non-derivability theorem, not a failed search.
+
+The reopening owner is now singular and typed: derive the finite quotient `Q` of mandatory,
+outcome-affecting, non-protocol repair classes by observational equivalence, then construct a
+faithful representation `Q ≃ zones(S)` for the variable scene. The proof of quotient exhaustivity
+must have the M1 form "a fourth class forces a new outcome-affecting external catalogue", rather
+than import three constructors or a cardinal bound. Once this representation exists, the count is
+the cardinality of the independently derived quotient. The subsequent selection of the sizes
+`(9,11,13)` remains a separate capacity/orientation/homology owner and does not follow from the
+zone count alone.
+
 ### 01.6.2 Recursive distinguishability and the detector ladder
 
 Define
@@ -1473,47 +1492,6 @@ That representation residual is now itself typed by `D0.Foundation.PhysicalCompa
 
 Both grammars above still take the *number* of detection capabilities to be two. That last input is now itself made transparent by `D0.Foundation.GeneralComparisonGrammar` (`D0-GENERAL-COMPARISON-CAPABILITY-COUNT-001`, `NO-GO`). A raw comparison over `n` capabilities is a Boolean vector `Fin n → Bool`, with the same conclusion-free notions (operational, subcomparison, join, decomposable, primitive) and no target count anywhere. Lean proves, for **every** `n`, that a comparison is indecomposable iff it inspects exactly one capability, and that the primitive comparisons are in bijection with `Fin n`, so their count is exactly `n`. The boundary instances `n = 0, 1, 3` confirm the count genuinely tracks `n`; the D0 detection grammar is the `n = 2` instance, exposing the `2` as the number of independent detection capabilities rather than a two-constructor artefact. In particular, a forced third detection capability would give three primitive kinds — the exact falsifier the degree-2 exhaustion needs. Honest boundary: this reduces "exactly two comparison kinds" to "exactly two independent detection capabilities (membership and value)"; that the detection act has exactly those two capabilities is the single remaining external input, not proved here.
 
-The scene consequence is now formal (`D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001`). Under the
-GAP-E port-power reading, `n` primitive detector capabilities generate extensions `2^k`,
-`1≤k≤n`, and Lean proves
-`(∀k≤n, 9+2^k≤13) ↔ n≤2`. Thus the third history atom is not merely a local detector ambiguity:
-it re-admits `2³=8` and the rival zone `17`. Conversely every comparison factoring through the
-current membership/value quotient is history-blind. The exact remaining theorem is now one
-sentence: every primitive M1-admissible detector-layer comparison factors through current data,
-with history/order typed into the memory layer.
-
-The typed detector mathematics is now closed, while the M1 seam is corrected precisely
-(`D0-DETECTOR-M1-PREDICATE-BOUNDARY-001`,
-`D0-DETECTOR-LAYER-EQUIVALENCE-001`,
-`D0-TYPED-DETECTOR-PRIMITIVE-EXHAUSTION-001`, 2026-08-24). Catalogue-free comparisons and
-history-invariant full comparisons are canonically equivalent to bare current-data comparisons.
-Inside the full three-axis ambient, primitive history-blind profiles are exactly membership and
-value, explicitly equivalent to `Fin 2`; history remains the excluded third-atom control, and
-the typed count two seals the port-power bound. However, catalogue-free comparisons form a
-non-singleton class (constant-false and constant-true are already distinct witnesses), whereas
-the canonical repository predicate `M1Forced` requires one unique forced answer. Therefore the
-typed detector layer is complete, but its physical/M1 representation needs a class-level
-admissibility bridge; it cannot be obtained by relabeling catalogue-freedom as `M1Forced`.
-
-The missing class-level bridge is now formalized (`D0-M1-CLASS-ADMISSIBILITY-001`,
-`D0-DETECTOR-M1-CLASS-REPRESENTATION-001`, 2026-08-24). `M1ClassAdmissible` is invariance under
-all catalogue changes and may retain a non-singleton class; the existing unique-answer
-`M1Forced` is proved to be the singleton witness-carrier special case. A generic
-`PhysicalDetectorRepresentation` maps any supplied physical admissible class injectively into
-the catalogue-free/history-invariant detector carrier, where primitive images exhaust to the
-membership/value profiles. The canonical detector class is a non-singleton instance. Hence the
-formal representation seam is closed; applying it to an external physical formalism requires
-only an explicit instance (comparison map, admissibility equivalence and injectivity), not a new
-foundational principle.
-
-The actual in-repo finite observation formalization now supplies that instance
-(`D0-CONCRETE-PHYSICAL-DETECTOR-REPRESENTATION-001`, 2026-08-24). Since comparisons are binary,
-the orientation catalogue is two-sided (`InputSide→Current→Bool`), assigning left/right histories
-independently. Lean proves class-M1 admissibility iff full history invariance, defines
-`comparison=id`, proves injectivity, factors every admissible comparison through current data on
-both arguments, and exhausts primitive images to membership/value. The independent-side design is
-necessary: a one-sided catalogue misses same-current/different-history dependencies.
-
 The remaining input has now been attacked directly, with a negative result. `D0.Foundation.DetectionCapabilityBoundary` (`D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001`, `NO-GO`) constructs a finite observation with three independently variable coordinates — membership, value and history/order — and defines capability use extensionally: a comparison uses a coordinate exactly when changing only that coordinate can change its result. Membership equality, value equality and history equality are all operational and have the exact primitive capability vectors `e₀`, `e₁`, `e₂`. In particular, two observations can have identical current membership/value data while history equality distinguishes them, so no representation using only membership/value capabilities can preserve that comparison. Therefore the present operational/no-catalogue conditions do **not** imply that the detector layer has only two independent capabilities. The exact missing theorem is now sharper: primitive detector comparison must be proved to **factor through current observation data**, placing history/order strictly in the later memory layer. Under that typed factorization the history capability is excluded; without it, the third capability survives and the degree-2 exhaustion cannot close.
 
 The quotient mathematics of that missing theorem is now complete. `D0.Foundation.CurrentDataFactorization` (`D0-CURRENT-DATA-FACTORIZATION-001`, `CORE-FORMALIZED`) treats a full observation abstractly as `Current × History` and proves that a Boolean comparison is invariant under changing either history coordinate **iff** it factors uniquely through a comparison on `Current` alone. The theorem is generic in both types, supplies an explicit descent through any reference history, proves independence of that reference and uniqueness of the descended comparison, and records the empty-history boundary where lift ceases to be injective. On the concrete D0 observation, membership and value comparisons descend, while history comparison is non-invariant and has no current-data factorization. Thus no quotient lemma remains missing: the sole stratification obligation is proving history-invariance for every primitive M1-admissible detector-layer comparison.
@@ -1892,13 +1870,6 @@ The same `φ⁻²` rotation is also the address-defect of the memory torus on it
 **[Iter25 — the centre is forced, and now certified (`D0-SCENE-CENTER-SPACETIME-CONVERGENCE-001`, Lean `D0.VNext2.SceneCenterSpacetimeConvergence`, cert `vp_scene_center_spacetime_convergence.py`).** The coincidence above is upgraded from a remark to a forced two-channel convergence. Five quantities land on `11`: the spatial capacity `|V₁₁|`, the Lucas `L₅`, `round(φ⁵)`, the temporal return `|Tr(T⁵)|`, and `|det(T⁵−I)| = #Fix₅`. The two channels are independent — `T = [[0,1],[1,-1]]` is the time operator (pinned as the *orientation-twisted* golden companion, `trace = −1`, `det = −1`, distinct from the plain Fibonacci matrix `M_φ = [[0,1],[1,1]]` with `trace = +1`), while `|V₁₁|` is a spatial capacity count — so their agreement is not circular. The centre is *forced* as the unique intersection `{Lucas returns Lₙ} ∩ [9,13] = {11}` (`L₃ = 4` too small, `L₇ = 29` too large), at the forced level `5` (the smallest odd return with `Lₙ > Ω₈ = 8`, and the `L5 = Access` closure of the maturity levels). Since the `±2` half-width is the already-owned orientation step, the whole triple `{9,11,13} = {L₅−2, L₅, L₅+2}` has *both* centre and width forced — zero free integers. This does not re-derive `|V₉|, |V₁₃|` (owned separately); it certifies *why the centre is 11*, in the same multi-channel forcing style as the four channels to `rank = 3`.
 
 **The uniqueness capstone (`D0-SCENE-TRIPLE-UNIQUE-001`, Lean `D0.VNext2.SceneTripleUnique.scene_triple_unique`, cert `vp_scene_triple_unique.py`).** The four forcing legs above — exactly three zones (`CarrierForcing.admissible_unique`), the `+2` address ladder (`address_ladder`), the centre `L₅ = 11`, and the odd-return parity — were, until now, *distinct* theorems a reader had to compose by hand. The capstone states and proves the composition as a *single* statement: **any** triple `(z₀,z₁,z₂)` that is a `+2` ladder whose centre `z₁` is a Lucas number in the window `[9,13]` is *uniquely* `(9,11,13)`. Its genuinely new content is the **Lucas-window uniqueness lemma** (`unique_lucas_in_window`): among *all* Lucas numbers, only `L₅ = 11` lies in `[9,13]` — `L₄ = 7 < 9`, `L₆ = 18 > 13`, and `Lₙ` is monotone so every higher return exceeds `13`. The theorem is proved non-vacuous (`scene_triple_realized`: the real scene at level `n = 5` satisfies every hypothesis), `rc = 0`, `0 sorry`. This is the theory's root-selection statement in one line: the scene is not chosen, it is the unique fixed point of its own admissibility window.
-
-**Reverse implication blocked (`D0-EDGE359-SCENE-SELECTION-NOGO-001`).** The resulting edge
-count `359` cannot be used as an independent derivation or confirmation of the triple. The
-equation `ab+ac+bc=359` has 19 positive ordered solutions; in particular
-`E(7,10,17)=E(9,11,13)=359`, while their vertex and triangle counts differ. Lean proves the
-sharp repair: among ordered triples, `(V,E)=(33,359)` uniquely implies `(9,11,13)`. Thus the
-logic is selector hypotheses → scene → edge count → sector readouts, never edge count → scene.
 
 ### 01.19a.3 Declared gap
 

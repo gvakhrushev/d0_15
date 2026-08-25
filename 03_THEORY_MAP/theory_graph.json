@@ -4,11 +4,11 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 663,
+    "claims": 664,
     "release_status": {
       "CORE-FORMALIZED": 251,
       "CORE_BRIDGE_SPLIT": 17,
-      "NO-GO": 97,
+      "NO-GO": 98,
       "PROOF-TARGET": 62,
       "BRIDGE-ASSUMPTIONS-EXPLICIT": 26,
       "NO_GO_PROVED": 7,
@@ -20,7 +20,7 @@
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 470,
+      "LEAN_PROVED": 471,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 31,
       "PYTHON_CERTIFIED": 111,
       "DEPRECATED": 2,
@@ -29,7 +29,7 @@
     "claim_type": {
       "core": 254,
       "bridge": 45,
-      "no-go": 104,
+      "no-go": 105,
       "frontier": 62,
       "certificate": 195,
       "deprecated": 3
@@ -37,7 +37,7 @@
     "domain": {
       "formal_core": 393,
       "smooth_geometry": 41,
-      "empirical_passport": 44,
+      "empirical_passport": 45,
       "gauge_bridge": 51,
       "frontier": 62,
       "rg": 7,
@@ -18798,14 +18798,14 @@
       "notes": "[center-attack M2 v2 candidate; skeptic#1 SURVIVES] Owned labeling of the DETECTOR-LAYER pointed shell V9=Omega8 ⊔ {omega0} into Q8 ⊔ {*} is FORCED ONLY UP TO a residual group G_res ∈ {1 (R-strong), V4 (R-mid), (Z/2)^3 (R-weak)} -- the 3-way reading is UN-ADJUDICATED (JOINT, not closed). Companion m2_phase_labeling_check.py 50/50 (fraction-exact tick fingerprint {80/81,|ratio|=1/9}). PRE-OWNER cited not duplicated: the E0/E3/E4 Fourier idempotents on C[Q8] (ranks 1,4,3) are D0-Q8-TERMINAL-FOURIER-001 (CORE). Cross-ref D0-OMEGA8-CENTER-001, D0-Q8-DEDEKIND-MINIMALITY-001, D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001 (per-vertex analogue, computed independently). EXACT-MISSING: (1) a Lean module for the pointed-shell extension C^{V9}=C.omega0 ⊕ (E0⊕E3⊕E4) with the std9-refinement statement and reading-independence (all four block projectors (Z/2)^3-invariant); (2) the R-strong/mid/weak reading adjudication (JOINT G_res); (3) transport of the labeling onto K(9,11,13) graph slots is the UN-OWNED torsor datum (C1-forbidden internally, memo X4). No closure status: joints narrated.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "cert:m2_phase_labeling_check.py",
       "kind": "python_cert",
       "label": "m2_phase_labeling_check.py",
       "path": "05_CERTS/m2_phase_labeling_check.py",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-M2-NO-CANONICAL-CYCLIC-LABELING-V9-001",
@@ -18829,7 +18829,7 @@
       "notes": "[center-attack M2 v2 candidate] NO canonical cyclic (mu9/mu8, Z/9 or Z/8) per-vertex labeling of V9 exists from owned data -- three COMPUTED walls: (i) type wall (Q8 exponent 4, no order-8 element); (ii) relation wall (typed partition A/B/C/D, no successor order; emission orbit-averaged over G8, BOOK_01:1996); (iii) invariance wall (under R-mid/R-weak G_res has 2-elt orbits so no bijective phase labeling is statable). Companion controls CTRL_NO_ORDER8, MU9_NO_INVARIANT_BIJECTION. EXACT-MISSING: a formal NO-GO Lean theorem (e.g. no_canonical_cyclic_labeling) discharging the three walls by decide/Fintype -- the walls are script-computed, not Lean-proved, so this is NOT NO-GO-CLOSED (contract forbids negative-controls-as-closure). Adjacent NO-GO owner (different object, cross-ref only): D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001.",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "D0-GAP-W-WITNESS-PLUS-ONE-001",
@@ -18855,7 +18855,7 @@
       "notes": "[center-attack GAP-W v2 candidate; OB-1 of Route B; skeptic#1 WOUNDED->repaired] |V_base|=|Omega8|+1=9 is FORCED GIVEN THREE NAMED JOINTS: W-BRIDGE-1' (stable re-detection class BOOK_01:1166.5 realized as >=1 stationary marked witness; narrated x3 A1:1541/A2:1987-1990/A3:1993; halt-QUOTIENT contract-owned :296/:366.5 BUT halt-PROPER lands +0 in adverse texts :846/:858, so +1 rides re-detection sliver only), W-T1 (CASE-2 copy schema on marks; :1556 does NOT back it), W-BIT (:1539 no-further-bit scope-transferred to mark labels, load-bearing by toggle). 8-kill: contract + re-detection bridge + COMPUTED full-cycle freeness. 10-kill: copy branch reuses repeat_has_nontrivial_copy_symmetry (NoExtension.lean:47), bit branch = W-BIT. No-overfire: first_instance_canonical (|S1|=1, NoExtension.lean:52) -- NOT a V10-killer. Companion gap_w_witness_check.py 10/10 rc=0 (~7 independent). EXACT-MISSING: (1) DONE 2026-07-05 -- module D0.Core.WitnessForcing IS in the built tree (lake build D0.Core.WitnessForcing -> 0 errors, 0 sorry; #print axioms: no_stationary_in_omega8 = [propext] only, no sorryAx; check_no_sorry_in_core --core PASS). Theorems: base_card_arith, no_stationary_in_omega8 (decidable 8-kill half), no_overfire_at_one (reuses first_instance_canonical), copy_kill_arith (reuses repeat_has_nontrivial_copy_symmetry), card_base_forced_conditional(m)(h_halt:1<=m)(h_nocopy:m<2) [=lean_theorem], forced_base_is_v9. The three joints are EXPLICIT HYPOTHESES (h_halt/h_nocopy), NOT axioms. (2) STILL OPEN -- the three joints (W-BRIDGE-1'/W-T1/W-BIT) have NO Lean/ASSUMP owner; they must be promoted to registered ASSUMP ledger ids before any BRIDGE-ASSUMPTIONS-EXPLICIT upgrade, so lean_status stays OPEN / release_status stays PROOF-TARGET (module cited, NOT upgraded). (3) GAP-E (extension completeness {D2,ABCD}) is NOT attempted here. Not claimed: unconditional forcing. [GAP-W synthesis 2026-07-06; GAP_W_SYNTHESIS_MEMO.md, skeptic#1: Derivation I KILLED / II SURVIVES / III WOUNDED->SC-1-repaired; gap_w_synthesis_check.py 19/19 rc=0] JOINT INVENTORY 3 -> 2 (candidate supersession of the three-joint accounting above; status stays OPEN/PROOF-TARGET): |V_base|=|Omega8|+1=9 is FORCED GIVEN TWO named residues. W-ELEM (element-realization; STILL-NARRATED, sharpened from W-BRIDGE-1'): 'The stable re-detection class is realized as a base-element address -- not as invariant operator content of the emission channel (the circulant algebra of :2002).' W-REC (channel-exhaustiveness; conclusion-free): 'Every record available for cross-event re-detection of the circulated sector's event class is sourced in the archive memory layer (:1993), and every archive write from the circulated sector factors through the orbit-averaged shell emission of :1996.' W-T1 RETIRED (DERIVED: DEF-0.2.2's own universal charter + type-free Lean statement + 3 owned cross-class precedents). W-BIT DERIVED-AFTER-SC1-REPAIR (one-Z2 uniqueness of Q8, Lean-owned, + computed four-horn fork with archive-extended model; leans on W-REC -- if W-REC falls, Derivation I's surviving halves AND H3 reopen). W-BRIDGE-1' derivation KILLED (P13-ADV :2002); its outside-Omega8 + existence + stationarity halves are DERIVED given {W-ELEM, W-REC} (checks 1-5,7); only the realization-FORMAT sentence W-ELEM stays narrated (owners :1541/:1987/:1993; discharge lead :253, owner decision). EXACT-MISSING (2-residue state): (1) built Lean module with OB-S1..OB-S4 + capstone, corrected support attribution (h_halt backed by {W-ELEM,W-REC}+OB-S1/S2/S3, NOT contract alone; h_nocopy by Derivations II+III); (2) TWO residues registered -- W-ELEM + W-REC (W-REC consumed by BOTH the 8-kill and the 10-kill's H3); (3) W-T1 retired (derived), W-BIT derived-after-SC-1; (4) GAP-E untouched. The v1 headline '3 -> 1' is DEAD (E-GWS-2). GROUPE[2026-07-06]: [CLOSE-GAP-W] W-REC CLOSED at owned-architecture grade: the record support is partitioned by the owned complementarity P_N+Q_N=I (BOOK_01:37), single Q_N-writer = the :1998 orbit-averaged emission (disk sweep, no second writer). W-ELEM CLOSED GIVEN W-REC + a NAMED EXTERNAL ASSEMBLY-BRIDGE R-A (the un-owned IS-typing of the class-record; :988 forces INTERACT-WITH not IS; no in-print name-match unlike GAP-E's :836/:862/:67). Load-bearing discovery: W-REC and W-ELEM are NOT independent -- W-REC shuts the S9 escape (smuggle-guarded, mutation M3). Lower bound |V_base|=|Omega8|+1=9 SEALED CONDITIONAL ON R-A (honest partial, NOT a full owned closure). Supersedes the synthesis memo's 2-residue accounting -> 1 owned-architecture fact (W-REC) + 1 named external bridge (R-A). GAP-E upper bound untouched (OPEN). R-A-REGISTERED[2026-07-06]: [F3 honest-bridges] the CLOSE-GAP-W residue R-A is promoted to a registered ledger id ASSUMP-CLASS-RECORD-IS-ADDRESSABLE (LEAN_ASSUMPTION_LEDGER.csv line 26, D0_INTERNAL_FORCING_TARGET, EXPLICIT): the un-owned IS-typing 'the re-detection class-record IS (not merely interacts-with) an addressable registration', assembled across the S01.3/S01.11.3 layer boundary; :988 forces INTERACT-WITH only; no in-print name-match (unlike GAP-E's :836/:862/:67). This partially discharges EXACT-MISSING(2) of the three-joint accounting UNDER THE GROUPE[2026-07-06] SUPERSESSION: the current accounting is 1 owned-architecture fact (W-REC, needs the F4 Lean lift, NOT an ASSUMP) + 1 registered ASSUMP (this id). Upgrade path: once the F4 wave lands the W-REC lift (partition + decidable OB-W1/OB-W2/OB-W3 legs) and the re-attributed capstone consumes ASSUMP-CLASS-RECORD-IS-ADDRESSABLE explicitly, this row may move OPEN -> LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS with uses_bridge_assumptions=True / assumption_ids=ASSUMP-CLASS-RECORD-IS-ADDRESSABLE (precedent: row D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001); until then lean_status stays OPEN / release_status PROOF-TARGET. Reopening hook: maintainer scoping :253's q to the primitive dyad blocks the bridge (W-ELEM demotes to narrated; no regression below the synthesis-memo state). F4-UPGRADE-APPLIED[2026-07-06]: the F3 par-1.3 upgrade-path conditions are BOTH met by the F4 wave (F4_LEAN_WAVE_LOG.md Target 5: D0.Core.WRecArchitecture landed -- L1-L4 proved decidable legs (retained_traced_partition, marker_average_address_blind, addr_disjoint_from_trace, avg_idempotent), L5-L7 explicit-hypothesis carriers; re-attributed capstone card_base_forced_wrec CONSUMES ClassRecordIsAddressableAssumption explicitly (h_ra), h_halt NOT promoted to a proved term per memo :406; capstone axioms propext/Classical.choice/Quot.sound ONLY, no sorryAx) AND the ledger id ASSUMP-CLASS-RECORD-IS-ADDRESSABLE is REGISTERED (LEAN_ASSUMPTION_LEDGER.csv line 26, type D0_INTERNAL_FORCING_TARGET = the F3 par-1.1(3) sanctioned fallback -- the par-1.2 primary coinage is not in the validator whitelist). FLIP APPLIED THIS PASS: lean_status OPEN->LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS, uses_bridge_assumptions=True, assumption_ids=ASSUMP-CLASS-RECORD-IS-ADDRESSABLE, lean fields += D0.Core.WRecArchitecture/card_base_forced_wrec (precedent row D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001). release_status STAYS PROOF-TARGET per F3 until R-A is owned.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Core/WitnessForcing.lean",
       "module_exists": true,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "module:D0.Core.WitnessForcing;D0.Core.WRecArchitecture",
@@ -18869,7 +18869,7 @@
       "kind": "python_cert",
       "label": "gap_w_witness_check.py",
       "path": "05_CERTS/gap_w_witness_check.py",
-      "exists": false
+      "exists": true
     },
     {
       "id": "assumption:ASSUMP-CLASS-RECORD-IS-ADDRESSABLE",
@@ -19048,14 +19048,14 @@
       "notes": "[center-attack torsor-gauge synthesis 2026-07-06; TORSOR_GAUGE_SYNTHESIS_MEMO.md v2.1 motion (i); GRADE: candidate READING LAYER post-2-skeptics -- demotion from 'derived gauge principle' to organizing lemma EXECUTED (skeptic#1 WOUNDED-FIXABLE, pre-registered demotion path taken; skeptic#2 WOUNDED NO-KILL, repairs applied in v2.1); NOT a principle, NOT CERT-CLOSED] ORGANIZING LEMMA (candidate, reading layer): the within-zone labeling of K(9,11,13) is gauge-fixing data -- the scene owns the TORSOR (and, on the detector layer, its owned reduction to S8 with three reading-conditional candidate rungs below), and C1's own invariance clause plus D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001 close the two directions: invariance is required, fixing is impossible; internal physics is therefore valued in the INVARIANT RING of the frozen data. FOUR-CELL IMPORT CLASSIFICATION (one-liner): every external import types as exactly one of A (no import -- theorem) / B-meas / B-adj / B-ext (measurement / adjudication / extension -- physical cost) / C (owned-torsor gauge-fixing -- contentless; license applies ONLY where the torsor itself is owned) / D (un-owned ansatz -- conditional structure, falsifiable); freedom-shaped matter walls file into B/C/D computably; existence/insufficiency walls are a disjoint third continent the lemma does not touch. Cross-refs: D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001 (no-canonical-section direction), D0-M2-PHASE-LABELING-V9-SHELL-001 (detector-layer pointed-shell torsor), D0-M2-NO-CANONICAL-CYCLIC-LABELING-V9-001 (cyclic/mu_9 impossibility walls). Companion cert torsor_gauge_check.py v3 28/28 rc=0 (_TASKS_CENTER_ATTACK/; exact where load-bearing, floats labelled FLOAT-CORROBORATION). EXACT-MISSING (memo mint path, v2): (1) the general-lemma Lean route for D0.Foundation.CanonicalSelectorNoGo (row-549 pending item per SELECTOR_NOGO_MINT_LOG.md:111) + the A6 invariance lemma over Fin 33 (decidable); (2) cert promotion per VERIFIED_CLOSURE_PROTOCOL.md; (3) ledger four-typing = owner decision. Memo motions (ii)-(iv) HELD (owner-gated, not applied).",
       "module_path": "09_LEAN_FORMALIZATION/.lean",
       "module_exists": false,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "cert:torsor_gauge_check.py",
       "kind": "python_cert",
       "label": "torsor_gauge_check.py",
       "path": "05_CERTS/torsor_gauge_check.py",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-SCENE-DIM-EVEN-FIBONACCI-FORCING-001",
@@ -19199,7 +19199,7 @@
       "notes": "POSITIVE extremality principle (script-certified; Lean-lift owner-gated -> PROOF-TARGET, not LEAN_PROVED). THEOREM (cert-grade, 21/21 mutation-tested): on the frozen scene K(9,11,13), R^Aut = (C^V)^Aut (the class functions) is the UNIQUE MINIMAL observable algebra -- the fixed-ring (dim 3 = #orbits), the smallest Aut-closed unital algebra separating the owned observables (the degree 24/22/20 separates all three zones), and the unique such minimizer = the point-free lattice meet of the separator lattice (NC_NO_POINT_USED: relabeling-invariant, no torsor point constructed). The selector no-go D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001 (0 Aut-equivariant sections, LEAN_PROVED) is its COROLLARY -- a section would be the invariant proper refinement extremality forbids -- and the 22 P-GAUGE-M1 within-zone T3 torsors ground as the Aut-orbits of this single extremal fixed-point algebra. RR-1 (residual risk): the cert T3 refinement clause proves ONE refinement (vertex-0 indicator) non-invariant, NOT the universal 'no invariant proper refinement exists'; the universal is outsourced to the owned no_equivariant_section Lean theorem + SSB trichotomy (cross-reference, not cert-proven). RR-2: the 'no extremum refines R^Aut' tagline is EVIDENCE-grade, inheriting row 549 scope caveat (class-function universality). Verified raise_selector_minimal_check.py (21/21, rc=0, mutation-tested); independent skeptic NO-KILL (gauge-smuggle KILL failed). Mint path (owner-gated, HELD): Lean Fin 33 orbit-minimality lemma (row-550 EXACT-MISSING item 1) + cert promotion per VERIFIED_CLOSURE_PROTOCOL.md. Not LEAN_PROVED/CERT-CLOSED: no Lean module yet. See RAISE_SELECTOR_MINIMAL_MEMO.md. F4-LEAN[2026-07-06]: Lean lift LANDED (F4_LEAN_WAVE_LOG.md Target 2; row-550 EXACT-MISSING item (1), the Fin-33 orbit-count/minimality lemma) -- module D0.Foundation.InvariantMinimal: invariant_minimal_meet (capstone lattice-meet: every gens-invariant separating classifier c has c i = c j <-> j in orbit i; no Aut-closed proper refinement separates deg), orbit_count_three (dim R^Aut = 3 as orbit count of the literal generator list), deg_classifies_orbits (the owned degree observable, COMPUTED from adjacency, classifies orbits), classifier_constant_on_orbits (abstract leg, axiom-pure: propext/choice/Quot.sound only, NO native_decide). QUANTIFICATION HONESTY: the universal is over PARTITION CLASSIFIERS -- the Lean lift upgrades the RR-1 single-witness refinement clause to a UNIVERSAL over all partition classifiers (better than cert-grade on that leg), NOTHING ELSE; the partition-algebra<->subalgebra equivalence and \"gens generate Aut\" stay cited-not-formalized; class-function-universality of owned functionals stays EVIDENCE-grade (row-549 scope). Axioms: propext/Classical.choice/Quot.sound + native_decide reduceBool where used, NO sorryAx. lean_status OPEN->LEAN_PROVED; release stays PROOF-TARGET (unchanged by this pass).",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/InvariantMinimal.lean",
       "module_exists": true,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "module:D0.Foundation.InvariantMinimal",
@@ -19213,7 +19213,7 @@
       "kind": "python_cert",
       "label": "raise_selector_minimal_check.py",
       "path": "05_CERTS/raise_selector_minimal_check.py",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-P-M1-SATURATION-001",
@@ -19237,7 +19237,7 @@
       "notes": "POSITIVE extremality umbrella principle over COLOUR / ALPHA / R1 / HIGGS (script-certified; Lean-lift owner-gated -> PROOF-TARGET, not LEAN_PROVED). SCHEMA (cert-grade, 26/26 mutation-tested): let X_core be the M1 present-core sub-object and F an owned order/valuation functional on the admissible class C (growth-rate, commutant-dimension, commutativity, distinctness-rigidity); then X_core is the UNIQUE F-extremum in C, and (no-go holds) <=> (the extremum is saturated). A witness lies just past the extremum but OUTSIDE C -- the exact external import each no-go names. Four instances, each a corollary: COLOUR RIGIDITY-EXTREMALITY (the +2 frame {24,22,20} is the joint MIN of commutant dim ->3 and swap order ->1; colour tensor-C^3 STAYS EXTERNAL, NOT derived), ALPHA SUBCRITICAL-EXTREMALITY (a<=2 maximal trace-class, rate(a)=phi^(a-3); -> P-SUBCRIT), R1 MAXIMAL-COMMUTANT (dim Comm=12=3^2+1+1+1 full centralizer), HIGGS MAXIMAL-ABELIAN (present-core maximal T-commutative; W1 leg only, W2 SSB-sign external; -> P-ABELIAN). RR (residual risk): each raise is the POSITIVE FACE of a no-go, NOT a promotion past the boundary -- the four rows STAY NO-GO; COLOUR must never read as 'colour derived' (abelian C^3 dim 3 < dim M3 9), HIGGS raises W1 only (filling Qnc necessary-but-not-sufficient). Verified raise_m1core_check.py (26/26, rc=0, mutation-tested; each MUT breaks exactly one instance); independent skeptic NO-KILL on all four headlines. Not LEAN_PROVED/CERT-CLOSED: no Lean module yet (owner-gated, HELD). See RAISE_M1CORE_SATURATION_MEMO.md. LEANLIFT[2026-07-18, owner-gated lift executed; skeptic#16 first pass WOUNDED -> all four repairs applied -> repair pass ALL DISCHARGED, mint-ready]: D0.Foundation.M1CoreSaturation / m1_core_saturation wired into D0/All.lean, lake build green (4019 jobs). COLOUR uniqueness machine-checked ONLY over the 3-member M1 zone family (m1Frame_unique_joint_min); over all N-frames the (3,1) floor is attained by every all-distinct frame (e.g. ![0,1,2]) -- floors global, uniqueness graded to C. R1 instance = centralizer VALUE + isotype arithmetic (commutant_dim_eq; commutantDim = generationMult^2+1+1+1); double-commutant maximality and the PRIM-FINITE-SPECTRAL-TRIPLE-REP witness stay NARRATED (no candidate class formalized). Second-order universality over functionals stays narrated. Four no-go rows stay NO-GO; colour NOT derived; W2 external. native_decide (ofReduceBool) enters via commute_T_core_characterization and inherited Qnc_not_commute.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/M1CoreSaturation.lean",
       "module_exists": true,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "module:D0.Foundation.M1CoreSaturation",
@@ -19251,7 +19251,7 @@
       "kind": "python_cert",
       "label": "raise_m1core_check.py",
       "path": "05_CERTS/raise_m1core_check.py",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-P-SUBCRIT-001",
@@ -19275,7 +19275,7 @@
       "notes": "POSITIVE extremality principle (corollary-of D0-P-M1-SATURATION-001; script-certified; Lean-lift owner-gated -> PROOF-TARGET, not LEAN_PROVED). THEOREM (cert-grade, mutation-tested): rate(a)=phi^(a-3) (Lean-owned in AlphaPresentCoreMaximalityNoGo.lean: rate_lt_one for a<=2, rate_three_eq_one), so rate(a)<1 iff a<=2 and rate(3)=phi^0=1 is the CRITICAL rate (phi^3 = cube of the forced golden rate phi). Hence a<=2 is the MAXIMAL trace-class (subcritical) region and the present-core (a in {0,1}) SATURATES the golden-subcritical extremum; the boundary a=3 (phi^3) is the M1-forbidden wall (single golden rate phi via 5-fold symmetry + M1). Raises D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001: the maximality no-go = present-core growth saturates the golden-subcritical extremum; the witness just past (a=3, phi^3 carrier) is the external import. RR: rate monotone + Lean-owned, quantifies over ALL admissible a (not a sample); no chosen-tower smuggle. Verified raise_m1core_check.py (RAISE 2, rc=0, mutation-tested); skeptic NO-KILL. Not LEAN_PROVED/CERT-CLOSED [superseded by LEANLIFT 2026-07-18 + the 2026-08-09 gap closure]: originally no Lean module (owner-gated, HELD). See RAISE_M1CORE_SATURATION_MEMO.md. LEANLIFT[2026-07-18]: subcritical_iff (full characterization rate a < 1 <-> a <= 2), rate_ge_one_of_three_le, alpha_subcritical_extremality in D0.Foundation.M1CoreSaturation. Converse leg NEW in-module (no prior >=1-rate statement in tree). Trace-class (Summable) reading remains with NOGO row D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001; GAPS CLOSED [2026-08-09]: both named gaps discharged by D0-SUBCRITICAL-TRACE-CLASS-001 (D0.Spectral.SubcriticalTraceClass: summable_iff_subcritical -- Summable <-> a <= 2 full characterization; not_summable_at_wall; coreCarriers + core_carrier_object strictly inside the region). Scope per module docstring: summability of the rate-weight family, not operator singular values. Release flip PROOF-TARGET -> CORE-FORMALIZED recorded this pass with the gap closure.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/M1CoreSaturation.lean",
       "module_exists": true,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "module:D0.Foundation.M1CoreSaturation;D0.Spectral.SubcriticalTraceClass",
@@ -19306,7 +19306,7 @@
       "notes": "POSITIVE extremality principle (corollary-of D0-P-M1-SATURATION-001; script-certified; Lean-lift owner-gated -> PROOF-TARGET, not LEAN_PROVED). THEOREM (cert-grade, mutation-tested): every present-core projector is a polynomial a*1+b*T and commutes with T (Lean-owned tPoly_commutes in HiggsCondensationPresentCoreMaximalityNoGo.lean, exhaustive over all 44^2=1936 polynomials); hence the present-core is the MAXIMAL T-commutative (abelian) sub-object. Non-commutativity is extremally excluded: a witness Qnc with [T,Qnc]!=0 exists (Qnc_not_commute) but lies OUTSIDE the core (not a polynomial in T) -- only in a central-extension/archive layer. Raises W1 (the commutativity wall) of D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001. RR (residual risk): W2 (the SSB double-well sign z^2>=0, D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001) STAYS EXTERNAL, orbit-independent, scalar-sector owned -- filling Qnc (W1) is NECESSARY-BUT-NOT-SUFFICIENT; this is NOT 'condensation derived'. Control: a scalar T would have no abelian boundary (claim genuinely T-specific). Verified raise_m1core_check.py (RAISE 4, rc=0, mutation-tested); skeptic NO-KILL (both W2-smuggle and condensation-over-claim blocked). Not LEAN_PROVED/CERT-CLOSED: no Lean module yet (owner-gated, HELD). See RAISE_M1CORE_SATURATION_MEMO.md. LEANLIFT[2026-07-18]: commute_T_core_characterization + higgs_maximal_abelian in D0.Foundation.M1CoreSaturation. Maximality leg NEW in-module -- full characterization Comm(T)={a*1+b*T} (constructive Q = Q00*1 + Q01*T, native_decide over 44^4; same grade as owned Qnc_not_commute); not a re-export of NOGO row 407 symbols. Raises W1 only; W2 (SSB sign) stays external; NOT condensation-derived.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/M1CoreSaturation.lean",
       "module_exists": true,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "D0-INVARIANT-GENERATION-BRIDGE-001",
@@ -19330,7 +19330,7 @@
       "notes": "[F1 flagship bridge 2026-07-06, skeptic-repaired] IDENTITY OF READINGS: the OWNED generation space (trivial-isotype multiplicity space span{1_9,1_11,1_13} the M3 commutant block acts on; D0-MATTER-REP-001, D0-REPRESENTATION-RECONSTRUCTION-MAXIMALITY-NOGO-001, W2_QUANTITY_IDENT_MEMO:126-128) IS the extremal-minimal observable algebra R^Aut = (C^V)^Aut (D0-P-INVARIANT-MINIMAL-001, RAISE_SELECTOR_MINIMAL_MEMO T1-T3): same subspace of C^33, same basis {1_9,1_11,1_13}, dim 3, same Reynolds projector. HONESTY: fixed-space = trivial-isotype is a definition-unfolding (one projector); the content is the identification of two separately built and certified registry chains + the composite reading: the generation degrees of freedom are exactly the extremal minimal observables of the scene -- a ZONE-AXIS generation index is a class function (physical e/mu/tau-role labeling stays external, PRIM-FINITE-SPECTRAL-TRIPLE-REP). INHERITANCE (RR-1/RR-2): the composite reading is owned exactly as far as D0-P-INVARIANT-MINIMAL-001 is owned -- universal no-proper-refinement outsourced to LEAN_PROVED canonical_within_zone_selector_nogo; class-function-universality EVIDENCE-grade, row-549 scope; the bridge inherits, never upgrades, that grading. Face G Lean-grade honesty: csv:51 Lean proves card=3 via the defect/branchRay route; the isotype list in FinitePathRepresentation is declared not derived; the trivial-isotype identification is script-grade (W2). Verified: 3-independent-route coincidence (indicator span / generator-fixed nullspace / commutant M3-block invariance; Reynolds route kept but entailed by the checked orbits=zones partition identity) + lockstep (zone-count != 3 moves both faces together) + repeated-size collapse + wrong-space controls, mutation-tested 5/5 (bridge_invariant_generation_check.py). Does NOT force Weyl-role assignment (GL(3) freedom intact; canonical idempotent axes = owned W2 typed-collapse zone axes); does NOT re-derive the count 3 (scene-generic identity; 3 owned by the frozen scene). Status tied to D0-P-INVARIANT-MINIMAL-001 (PROOF-TARGET; Lean lift = projector identity P=Q on Fin 33, native_decide-able, gens as LITERAL permutation list not derived from the zone map). F4-LEAN[2026-07-06]: Lean lift LANDED (F4_LEAN_WAVE_LOG.md Target 1) -- module D0.Claims.InvariantGenerationBridge: bridge_projector_eq (P=Q, THE bridge; entrywise native_decide payload), capstone invariant_generation_bridge (+ q_idempotent, q_symmetric, q_trace_three, orbit_count_three, gens_length=30). Anti-circularity R3b honored: gens = LITERAL list of 30 Equiv.swap terms (not derived from the zone map); P = Reynolds/orbit-averaging projector from gens only (step^[33] closure); Q = zone-indicator projector from in-tree D0.Claims.zone31. Axioms: propext/Classical.choice/Quot.sound + native_decide reduceBool only, NO sorryAx (precedent row D0-P-INVARIANT-CANONICAL-SELECTOR-NOGO-001 native_decide grade). lean_status OPEN->LEAN_PROVED; release stays PROOF-TARGET per memo inheritance clause (status tied to D0-P-INVARIANT-MINIMAL-001); count 3 NOT re-derived; Weyl-role freedom intact; \"gens generate Aut\" cited-not-formalized (only orbit closure used); class-function-universality stays EVIDENCE-grade.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Claims/InvariantGenerationBridge.lean",
       "module_exists": true,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "module:D0.Claims.InvariantGenerationBridge",
@@ -19344,7 +19344,7 @@
       "kind": "python_cert",
       "label": "bridge_invariant_generation_check.py",
       "path": "05_CERTS/bridge_invariant_generation_check.py",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-GAP-E-PORT-EXHAUSTION-001",
@@ -19368,7 +19368,7 @@
       "notes": "[DOORB mint 2026-07-07, from CLOSE_GAP_E_DIMENSIONAL_MEMO.md §7] DOOR-(b) closure of GAP-E's upper bound: the admissible zone-extension alphabets are EXACTLY the port-powers D2^k of the binary terminal dyad up to the OWNED port-count 2 = {D2^1, D2^2} = {2,4}; rivals |X| in {6,8} (z3 in {15,17}) killed natively -- 6 not a D2-power (non-port-power, cap-independent), 8=D2^3 needs a THIRD port (excluded at cap 2, re-admitted at cap 3 = negative control). The DOMAIN sentence (open through pass 11, the sole residue the 7th pass's MUT-1 pinned) is now GENERATED, not transferred: it is the owned CORE degree-2 exhaustion D0-DETECTION-QUADRATIC-001 (two comparison kinds => degree exactly 2; the would-be third p^3=2p-1 reduces into span{1,p} at B01:556 -- the SAME algebraic exhaustion as row 257, i.e. door (b) as the STOP-RULE named it). port-count=2 owned-AS-CAP twice over: (A) = the CORE two-comparison-kind count (D0-DETECTION-QUADRATIC-001, B01:1130), (B) the :860 falsification hook (>4 pre-sign roles => scene FAILS, i.e. port-count>2 is a declared falsifier) + :1816 |ABCD|=D2^2 forced by terminal capacity. GRADE: OWNED-inheritance -- the decidable p^3-core is Lean-backed (parent D0-DETECTION-QUADRATIC-001 LEAN_PROVED); the categorical port=degree identification is a forcing-READING, parent-grade (PROOF-TARGET, operative), exactly like D0-DETECTION-QUADRATIC-001's forcing-reading leg. cert close_gap_e_dimensional_check.py: default rc=2 (CLOSED-MODULO-PORT-CAP, honest can-fail) / --grant-port-cap rc=0 (OWNED-CLOSURE); mutation-tested (rc=1 ladder-break, rc=3 3-port neg-control, rc=1 cap-without-ladder). Upgrades GAP-E (D0-WINDOW-9-13-DISSOLVE-001) upper bound from operative-modulo-3-transfers to OWNED-inheritance. lean_status LEAN_PROVED for the ARITHMETIC leg only [13th pass 2026-07-18, skeptic#13 SURVIVES-WITH-REPAIR applied]: D0.Tower.PortPowerExhaustion (wired into D0/All.lean, lake build green) machine-checks portCap=2 inherited from two_comparison_kinds (not a numeral), 6 not a dyad power (cap-independent), 8=D2^3 needs a 3rd port (cap-gated; negative control eight_readmitted_at_cap_three machine-exhibits re-admission at cap 3), z3<=13; zone_bound docstring names the FULL conditioning (Channel A port<->kind reading, Channel B :860 falsifier, ladder :1548/:1816, base-V9 reading). The categorical leg (two ports/kinds exhaust the ladder) REMAINS PROOF-TARGET / forcing-reading, NOT machine-checked -- release_status stays PROOF-TARGET for exactly this leg. Cross-ref: D0-DETECTION-QUADRATIC-001, row 257, D0-WINDOW-9-13-DISSOLVE-001. DEGREE2[2026-07-07]: corollary-of D0-P-DEGREE2-EXHAUSTION-001 -- 8=D2^3 needs a 3rd port = the 3rd comparison-kind, excluded by the k<=2 two-kind cap; the door-(b) proof-of-concept that the degree-2 exhaustion closes a live residue. [FOUNDATIONAL BOUNDARY 2026-08-22] D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001 now proves the exact dependency that this row previously narrated: the zone<=13 port-power bound holds iff independent capability count<=2. The unstratified observation model has a third primitive history capability, which re-admits D2^3=8 and zone17. Thus this row remains PROOF-TARGET until every primitive M1-admissible detector comparison is proved to factor through current data; arithmetic exhaustion alone is insufficient.",
       "module_path": "09_LEAN_FORMALIZATION/D0/Tower/PortPowerExhaustion.lean",
       "module_exists": true,
-      "certs_exist": false
+      "certs_exist": true
     },
     {
       "id": "module:D0.Tower.PortPowerExhaustion",
@@ -19382,7 +19382,7 @@
       "kind": "python_cert",
       "label": "close_gap_e_dimensional_check.py",
       "path": "05_CERTS/close_gap_e_dimensional_check.py",
-      "exists": false
+      "exists": true
     },
     {
       "id": "D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001",
@@ -22175,6 +22175,44 @@
       "kind": "python_cert",
       "label": "vp_seam_return_address_rigidity.py",
       "path": "05_CERTS/vp_seam_return_address_rigidity.py",
+      "exists": true
+    },
+    {
+      "id": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
+      "type": "no-go",
+      "domain": "empirical_passport",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_01",
+      "section": "01.6.1c M1 cascade to variable scene count",
+      "lean_module": "D0.Foundation.M1CascadeSceneNoGo",
+      "lean_theorem": "present_model_at_every_positive_count;two_and_four_zone_countermodels;present_grammar_does_not_determine_zoneCount;zoneAssignmentK_iff_bound;gluedKindToTwo_not_injective;four_zone_rank_eq_four;zoneCount_eq_repairCard;datumKindRepresentation_nonvacuous;deleting_lower_leg_allows_two;deleting_upper_leg_allows_four;no_uniform_datumKind_representation_from_present_facts",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_m1_cascade_scene_nogo.py",
+      "python_cert": [
+        "vp_m1_cascade_scene_nogo.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[MINT 2026-08-25 STRUCTURAL CASCADE/SCENE NO-GO] Phase-A verdict NO-GO-CLOSABLE. The theorem packages the complete carried cascade theorem (six genuine ordered floors, four interlocks, terminal count leg and separate orientation-parity floor), both SceneCountReduction owner facts, the three computed DatumKind distinctions, and the concrete two-sided class-M1 detector admissibility equivalence. present_model_at_every_positive_count proves this entire present package has a model over EVERY positive SceneCandidate.zoneCount; explicit zoneCount=2 and zoneCount=4 instances therefore refute not only count three but any uniquely forced count. This is a grammar-level countermodel: no current premise contains a semantic map to the variable scene. zoneAssignmentK_iff_bound closes the documented circularity exactly: the finite-kind assignment is equivalent to 3<=zoneCount. gluedKindToTwo_not_injective is the deletion control showing two kinds glue when injectivity is removed. four_zone_rank_eq_four proves the variable complete-multipartite invariant detects a fourth slot exactly; the absent owner is rank<=3 for the variable scene, not rank machinery. FaithfulRepairSceneRepresentation is the minimal number-free typed reopening contract: an independently derived finite quotient of mandatory outcome-affecting non-protocol repairs must embed faithfully into zones and every zone back into the same quotient. It has a canonical non-vacuous DatumKind model and separate lower/upper deletion controls, but no theorem constructs it from present M1/cascade facts; no bridge is consumed and no count closure is promoted. Exact remaining owner: derive the observational repair quotient and its faithful variable-scene representation by the M1 reductio so that a fourth class forces a new outcome-affecting external catalogue. D0-SCENE-COUNT-REDUCTION-001 and D0-CASCADE-INSUFFICIENCY-CHAIN-001 remain PROOF-TARGET; zone sizes 9/11/13 remain a separate selector owner. Certificate fixes repair classes before reading cardinality and checks two/four models, assignment iff bound, gluing, exact hollow-4 rank and rank mutation.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/M1CascadeSceneNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.M1CascadeSceneNoGo",
+      "kind": "lean_module",
+      "label": "D0.Foundation.M1CascadeSceneNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/M1CascadeSceneNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_m1_cascade_scene_nogo.py",
+      "kind": "python_cert",
+      "label": "vp_m1_cascade_scene_nogo.py",
+      "path": "05_CERTS/vp_m1_cascade_scene_nogo.py",
       "exists": true
     }
   ],
@@ -31402,6 +31440,21 @@
     {
       "source": "D0-SEAM-RETURN-ADDRESS-RIGIDITY-001",
       "target": "cert:vp_seam_return_address_rigidity.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
+      "target": "module:D0.Foundation.M1CascadeSceneNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
+      "target": "cert:vp_m1_cascade_scene_nogo.py",
       "kind": "certified_by"
     }
   ]

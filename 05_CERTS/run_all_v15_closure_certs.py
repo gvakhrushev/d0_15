@@ -42,6 +42,7 @@ scripts = [
     'vp_archive_pressure_coupling_from_relative_acceleration.py',
     'vp_strong_logdet_pressure_coupling.py',
     'vp_logdet_second_response_and_stability.py',
+    'vp_m1_cascade_scene_nogo.py',
 ]
 
 def run_one(script: str) -> dict:

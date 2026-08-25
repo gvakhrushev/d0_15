@@ -13,7 +13,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 8
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 97
+- `NO-GO`: 98
 - `NO_GO_PROVED`: 7
 - `PASSPORT-CLOSED`: 20
 - `PROOF-TARGET`: 62
@@ -25,12 +25,12 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `core`: 254
 - `deprecated`: 3
 - `frontier`: 62
-- `no-go`: 104
+- `no-go`: 105
 
 ## Domain counts
 
 - `cosmology`: 50
-- `empirical_passport`: 44
+- `empirical_passport`: 45
 - `external_background`: 1
 - `formal_core`: 393
 - `frontier`: 62
@@ -1215,6 +1215,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Iter22 deep-stitch] Branch-index shortcut FORBIDDEN: ramification index 1/n does NOT uniquely determine the operator -- two distinct 4x4 companion-type matrices both have charpoly x^4-lam (index 1/4), so the exponent row (0,1/4,1/3) cannot be promoted from exact-row to a branch-index THEOREM without a finite Green resolvent + uniqueness certificate. Lean D0.Matter.LeptonPuiseuxUniquenessObstruction.lepton_puiseux_uniqueness_obstruction (companionC4_ne_alt + branch_index_does_not_determine_operator); cert vp_lepton_puiseux_uniqueness_obstruction.py (controls reject exponent-row-alone-proves-theorem, decimals-CORE, PDG-tuned). NO-GO; D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001 stays PROOF-TARGET. UPLIFT[2026-07-06]: Continent-3 INSUFFICIENCY wall per the border criterion (companions agree on charpoly x^4-lam) — organizing lemma silent, NO B/C/D cell; T3-torsor seed in UPLIFT_MAP rejected; filing reused from TORSOR_GAUGE_SYNTHESIS_MEMO v2.1 Continent-3 table; row unchanged. RAISE[2026-07-06]: corollary-of D0-P-INVARIANT-MINIMAL-001 (one free Aut-orbit of the extremal-minimal observable algebra)
+
+### D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `empirical_passport`
+- book: `BOOK_01`
+- module: `D0.Foundation.M1CascadeSceneNoGo`
+- theorem: `present_model_at_every_positive_count;two_and_four_zone_countermodels;present_grammar_does_not_determine_zoneCount;zoneAssignmentK_iff_bound;gluedKindToTwo_not_injective;four_zone_rank_eq_four;zoneCount_eq_repairCard;datumKindRepresentation_nonvacuous;deleting_lower_leg_allows_two;deleting_upper_leg_allows_four;no_uniform_datumKind_representation_from_present_facts`
+- cert: `vp_m1_cascade_scene_nogo.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [MINT 2026-08-25 STRUCTURAL CASCADE/SCENE NO-GO] Phase-A verdict NO-GO-CLOSABLE. The theorem packages the complete carried cascade theorem (six genuine ordered floors, four interlocks, terminal count leg and separate orientation-parity floor), both SceneCountReduction owner facts, the three computed DatumKind distinctions, and the concrete two-sided class-M1 detector admissibility equivalence. present_model_at_every_positive_count proves this entire present package has a model over EVERY positive SceneCandidate.zoneCount; explicit zoneCount=2 and zoneCount=4 instances therefore refute not only count three but any uniquely forced count. This is a grammar-level countermodel: no current premise contains a semantic map to the variable scene. zoneAssignmentK_iff_bound closes the documented circularity exactly: the finite-kind assignment is equivalent to 3<=zoneCount. gluedKindToTwo_not_injective is the deletion control showing two kinds glue when injectivity is removed. four_zone_rank_eq_four proves the variable complete-multipartite invariant detects a fourth slot exactly; the absent owner is rank<=3 for the variable scene, not rank machinery. FaithfulRepairSceneRepresentation is the minimal number-free typed reopening contract: an independently derived finite quotient of mandatory outcome-affecting non-protocol repairs must embed faithfully into zones and every zone back into the same quotient. It has a canonical non-vacuous DatumKind model and separate lower/upper deletion controls, but no theorem constructs it from present M1/cascade facts; no bridge is consumed and no count closure is promoted. Exact remaining owner: derive the observational repair quotient and its faithful variable-scene representation by the M1 reductio so that a fourth class forces a new outcome-affecting external catalogue. D0-SCENE-COUNT-REDUCTION-001 and D0-CASCADE-INSUFFICIENCY-CHAIN-001 remain PROOF-TARGET; zone sizes 9/11/13 remain a separate selector owner. Certificate fixes repair classes before reading cardinality and checks two/four models, assignment iff bound, gluing, exact hollow-4 rank and rank mutation.
 
 ### D0-PHASON-WZ-TRANSFER-OWNER-001
 

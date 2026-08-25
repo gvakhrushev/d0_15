@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 8836 / 11583 (**76.3%** of track-fair max)
+- **Realized strength:** 8848 / 11595 (**76.3%** of track-fair max)
 - **Core spine:** 6940 / 9620 (headroom **2680** points to take every core claim to L5)
-- Claims: 661 active (663 total); integrity demotions: 0; duplicates: 0
+- Claims: 662 active (664 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 91.5 / 100 (penalties **-8.5**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 96.5 / 100 (penalties **-3.5**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -23,10 +23,10 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
-| `real_in_project_lake` | 1 | -5 | a real .lake build tree inside the repo (must be an external junction) |
+| `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 0 | +0 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `real_in_project_lake` (-5); `orphan_proof_targets` (-3.5)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.5)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -96,7 +96,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | frontier | 62 | 284 | 1240 | 956 |
 | cosmology | 50 | 752 | 930 | 178 |
 | smooth_geometry | 41 | 517 | 678 | 152 |
-| empirical_passport | 44 | 510 | 663 | 144 |
+| empirical_passport | 45 | 522 | 675 | 144 |
 | spectral_action | 11 | 143 | 195 | 52 |
 | gauge_bridge | 50 | 685 | 724 | 39 |
 | rg | 7 | 93 | 113 | 16 |
@@ -112,7 +112,7 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | BOOK_08 | 87 | 1159 | 1563 | 395 |
 | BOOK_02 | 87 | 1078 | 1424 | 336 |
 | BOOK_07 | 73 | 947 | 1253 | 292 |
-| BOOK_01 | 60 | 868 | 1124 | 256 |
+| BOOK_01 | 61 | 880 | 1136 | 256 |
 | BOOK_06 | 45 | 547 | 776 | 224 |
 | BOOK_05 | 31 | 384 | 555 | 171 |
 | BOOK_01/02 | 15 | 284 | 284 | 0 |
