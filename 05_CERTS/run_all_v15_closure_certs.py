@@ -43,6 +43,7 @@ scripts = [
     'vp_strong_logdet_pressure_coupling.py',
     'vp_logdet_second_response_and_stability.py',
     'vp_m1_cascade_scene_nogo.py',
+    'vp_m1_repair_observational_quotient.py',
 ]
 
 def run_one(script: str) -> dict:

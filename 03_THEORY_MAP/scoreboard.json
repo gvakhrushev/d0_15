@@ -19,14 +19,14 @@
     }
   },
   "totals": {
-    "realized": 8848,
-    "track_fair_max": 11595,
+    "realized": 8868,
+    "track_fair_max": 11615,
     "pct_strength": 76.3,
-    "core_realized": 6940,
-    "core_potential": 9620,
+    "core_realized": 6960,
+    "core_potential": 9640,
     "core_headroom": 2680,
-    "n_claims": 664,
-    "n_active": 662,
+    "n_claims": 665,
+    "n_active": 663,
     "duplicates": [],
     "integrity_demotions": 0
   },
@@ -44,9 +44,9 @@
       "core_headroom": 152
     },
     "empirical_passport": {
-      "n": 45,
-      "realized": 522,
-      "max": 675,
+      "n": 46,
+      "realized": 542,
+      "max": 695,
       "core_headroom": 144
     },
     "gauge_bridge": {
@@ -154,9 +154,9 @@
       "core_headroom": 0
     },
     "BOOK_01": {
-      "n": 61,
-      "realized": 880,
-      "max": 1136,
+      "n": 62,
+      "realized": 900,
+      "max": 1156,
       "core_headroom": 256
     },
     "BOOK_05": {
@@ -13678,6 +13678,20 @@
       "score": 12,
       "ceiling": 12,
       "release_status": "NO-GO",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
+      "book": "BOOK_01",
+      "leverage": 0,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
       "lean_status": "LEAN_PROVED",
       "domain": "empirical_passport",
       "book": "BOOK_01",

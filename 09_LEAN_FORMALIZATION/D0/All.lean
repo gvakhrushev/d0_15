@@ -262,6 +262,7 @@ import D0.Foundation.M1CascadeSceneNoGo
 import D0.Foundation.M1ClassAdmissibility
 import D0.Foundation.M1CoreSaturation
 import D0.Foundation.M1Predicate
+import D0.Foundation.M1RepairObservationalQuotient
 import D0.Foundation.M1Universality
 import D0.Foundation.Omega8Center
 import D0.Foundation.PartitionAlgebra

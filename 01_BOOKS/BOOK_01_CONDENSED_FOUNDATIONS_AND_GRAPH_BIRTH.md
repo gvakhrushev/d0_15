@@ -669,6 +669,28 @@ the cardinality of the independently derived quotient. The subsequent selection 
 `(9,11,13)` remains a separate capacity/orientation/homology owner and does not follow from the
 zone count alone.
 
+**Observational-quotient closure (2026-08-25).** That owner is now constructed in
+`D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001`. The carrier being quotiented is the existing structural
+type `Discrimination`; two repairs are equivalent exactly when their observable failure kind
+agrees. Duplicate witnesses of the same failure collapse, while the carried comparison,
+one-loop-history and order-memory discriminations occupy distinct classes. Only after this quotient
+is fixed does Lean compute its cardinality.
+
+The no-extension leg is a universal M1 reductio over an arbitrary extension type `Θ`, not a fourth
+candidate list. A new tag `θ : Θ` is record-disconnected from every current quotient observer.
+Consequently it is underived in the current repair grammar, changes a distinguishable admissible
+outcome while current observations remain fixed, is not current protocol data, and every proposed
+value for it requires an external catalogue. Therefore a mandatory fourth repair class is
+incompatible with M1 resolution. Connecting `θ` to an existing component is an explicit mutation
+control and makes it resolvable, so the disconnection argument is load-bearing.
+
+The quotient itself generates a variable `SceneCandidate`; Lean constructs embeddings in both
+directions between its repair classes and zones and derives `zoneCount = 3`. More generally, every
+external scene supplied with the same faithful representation has three zones. The remaining
+application obligation is concrete rather than foundational: identify the zones of an external
+physical scene with this derived observational quotient. Selection of the zone sizes
+`(9,11,13)` remains independent of the count theorem.
+
 ### 01.6.2 Recursive distinguishability and the detector ladder
 
 Define
