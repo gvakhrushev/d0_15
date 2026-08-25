@@ -531,27 +531,238 @@ archive phason flip
 
 External survey data may test the transfer shape; they cannot choose the roots or relabel the phason-flip spectrum.
 
-### 08.12.4 The cubic-vs-quadratic window fork (an honest fork, not a decision)
+### 08.12.4 The cubic-vs-quadratic window fork is spectrally closed
 
-The quadratic above is one of *two* catalog-free ownerships of the archive window, and the corpus keeps the choice between them as a declared fork rather than settling it by hand. The competing form is the **vacuum cubic**
+The quadratic above and the **vacuum cubic**
 
 ```math
 \lambda^3 = 359\,\lambda + 2574,
 \qquad (e_1,e_2,e_3) = (0,\ -359,\ 2\cdot 1287),
 ```
 
-whose symmetric-function coefficients are all owned by the scene: `e_1 = 0` (traceless), `e_2 = -359 = -|E|` (capacity), `e_3 = 2574 = 2\cdot 1287 = 2\,|\triangle|` (doubled triangle count). This is exactly the adjacency characteristic polynomial of `K(9,11,13)` read as a cosmology window; its roots are `{21.84,\ -9.758,\ -12.079}`.
-
-The two branches make a **separable prediction** for the window-center ratio — the discriminator between them:
+are both internally owned, but they are not two forms of one transfer.  Write
 
 ```math
-\text{quadratic: } \frac{\lambda_c}{\lambda_r} = \frac{60-\sqrt{10}}{60+\sqrt{10}} = 0.900,
-\qquad
-\text{cubic: } \frac{|\lambda_2|}{|\lambda_3|} = \frac{9.758}{12.079} = 0.808.
+P(x)=160x^2-480x+359,\qquad
+Q(x)=x^3-359x-2574.
 ```
 
-Both numbers are now computed exactly from the scene; the separation `0.900` vs `0.808` is what an external survey can decide. **This is a fork, not a result:** the deciding observable is DESI DR3, which is *not* run here, and promoting either branch to the sole core form requires that external comparison (a BRIDGE step the firewall keeps out of core). The honest state is two competing core-forms with a computed, falsifiable discriminator.
+They satisfy the exact integral Bézout identity
 
+```text
+(-9017440 x² + 66066720 x + 3455694001) P(x)
++ (1442790400 x - 14899046400) Q(x)
+= 39590739579959,
+```
+
+so their resultant is nonzero.  More strongly, the identity lifts to rational
+endomorphism rings: if \(P(T_2)=0\), \(Q(T_3)=0\), and
+\(F T_2=T_3F\), then \(F=0\).
+The concrete Lean capstone checks these annihilation identities for the actual
+two-mode phason-flip matrix
+
+```math
+T_2=\begin{pmatrix}3/2&1/16\\1/10&3/2\end{pmatrix}
+```
+
+and the actual rank-three zone quotient
+
+```math
+T_3=\begin{pmatrix}0&11&13\\9&0&13\\9&11&0\end{pmatrix},
+```
+
+then proves that every rational linear intertwiner between them is zero
+(`D0-SDE-CUBIC-SPECTRAL-DISJOINTNESS-001`, Lean
+`D0.Synthesis.SDECubicSpectralDisjointness.concrete_owned_intertwiner_is_zero`).
+
+Therefore DESI cannot decide *which operator the internal theory meant*:
+that would be reverse selection, and the two objects are not spectrally
+equivalent in the first place.  The type-correct present state is:
+
+- the quadratic remains the two-mode `S_DE` phason-pressure transfer;
+- the cubic remains the rank-three scene/gravity/metric operator;
+- the cubic can re-enter an `S_DE` comparison only after a new cross-sector
+  transfer is constructed and frozen before looking at survey data.
+
+External surveys may still test separately pre-registered outputs of either
+model.  They may not turn the absent intertwiner into an internal identity.
+
+### 08.12.5 The positive bridge is the normalized active scene operator
+
+The cubic no-go above identifies the wrong operator; it does not say that the
+quadratic window is detached from the scene.  The unnormalized quotient
+
+\[
+A_W=\begin{pmatrix}0&11&13\\9&0&13\\9&11&0\end{pmatrix}
+\]
+
+and the row-stochastic scene transport
+
+\[
+M=D_W^{-1}A_W,\qquad D_W=\operatorname{diag}(24,22,20),
+\]
+
+are different operators.  The latter is now proved to descend from the
+literal \(33\times33\) adjacency through the actual zone-indicator lift; it is
+not a separately fitted matrix
+(`D0-SCENE-NORMALIZED-QUOTIENT-DESCENT-001`).
+
+For the stationary degree weight
+
+\[
+\pi=(216,242,260)
+\]
+
+the hyperplane \(\ker\pi\) is invariant under \(L=I-M\).  With the owned
+phason-flip transfer
+
+\[
+T_2=\begin{pmatrix}3/2&1/16\\1/10&3/2\end{pmatrix}
+\]
+
+and the explicit embedding
+
+\[
+X=\begin{pmatrix}-132&55\\-24&-120\\132&66\end{pmatrix},
+\]
+
+Lean constructs a rational retraction \(Y\) and proves
+
+\[
+LX=XT_2,\qquad YX=I_2,\qquad
+XT_2Y=L,\qquad YLX=T_2,\qquad
+\operatorname{im}X=\ker\pi.
+\]
+
+The associated active projector is intrinsic:
+
+\[
+P_{\mathrm{act}}
+=I-\frac1{718}\mathbf1\pi
+=I-\frac{160M^2+160M+39I}{359}.
+\]
+
+Therefore the two S_DE relaxation modes are not merely roots of a polynomial
+that happens to match the scene.  They are the exact similarity class of the
+normalized scene Laplacian on its canonical active two-dimensional summand
+(`D0-PHASON-ACTIVE-SCENE-CONJUGACY-001`).
+
+The coordinate matrix \(X\) is not unique; rescaling it gives a distinct
+intertwiner with the same active image.  What is canonical is the active
+subspace, its projector, and the restricted operator up to change of basis.
+This closes the finite algebraic provenance of the S_DE quadratic.  It does
+not identify this active sector with the separate integer archive Laplacian,
+log-det pressure, a physical equation of state, redshift, or DESI data, and it
+does not weaken the no-intertwiner theorem for the unnormalized cubic
+quotient.
+
+The conjugacy now lifts all the way back to the literal \(33\)-vertex
+operator.  Degree-spectral fibre projectors construct a representative-free
+indicator \(C\) and averaging restriction \(R\) satisfying
+\(RC=I_3\) and \(CR=P_{\rm Reynolds}\)
+(`D0-INTRINSIC-QUOTIENT-RECONSTRUCTION-001`).  Together with the stationary
+line and the active embedding \(X\), they produce three exact
+pairwise-annihilating projectors of traces \(30,1,2\):
+
+\[
+\mathbb Q^{33}=A_{30}\oplus S_1\oplus D_2,
+\qquad
+L_{\rm full}\simeq I_{30}\oplus0\oplus T_2.
+\]
+
+Equivalently, for an explicit full active retraction \(Y_{\rm full}\),
+
+\[
+L_{\rm full}
+ =P_{\rm archive}+X_{\rm full}T_2Y_{\rm full}.
+\]
+
+The archive is an exact eigenvalue-one block, the stationary line an exact
+zero block, and the active block the owned \(S_{DE}\) similarity class
+(`D0-AUTOMORPHISM-HODGE-SDE-DECOMPOSITION-001`).  Top-Hodge data force its
+constant characteristic coefficient \(359/160\).  Here “archive” means the
+within-zone complement of the Reynolds image; it is not an identification
+with the separately typed integer archive Laplacian.  This closes the finite
+operator provenance of the two-mode sector, not its downstream interpretation
+as pressure, redshift or an empirical BAO law.
+
+### 08.12.6 The quadratic is forced already by the top-Hodge spectrum
+
+The explicit conjugacy above is scene-specific, but its polynomial origin is
+now generic.  For any positive complete-tripartite \(K(a,b,c)\), set
+
+\[
+V=a+b+c,\qquad E=ab+ac+bc,\qquad T=abc.
+\]
+
+If \(L=I-M\) is the normalized three-zone quotient Laplacian, then the actual
+matrix determinant satisfies
+
+\[
+\det(xI-L)
+ =x\left(x^2-3x+\frac{2VE}{VE-T}\right),
+\qquad
+VE-T=(a+b)(a+c)(b+c)>0.
+\]
+
+The upper-Hodge spectral coordinates
+
+\[
+D=\dim C_2,\qquad H=\dim\ker\Delta_2,\qquad
+M_2=\sum_\lambda\operatorname{mult}(\lambda)\lambda^2
+\]
+
+recover \(T=D\), \(V=M_2/D-6\), and \(E=T+V-1-H\).  They therefore determine
+the normalized active factor before any cosmological reading is introduced.
+At the source values this gives
+
+\[
+x^2-3x+\frac{359}{160},
+\]
+
+which Lean proves identical to the characteristic polynomial of the owned
+two-mode phason-flip transfer
+(`D0-TOP-HODGE-NORMALIZED-QUOTIENT-SPECTRUM-001`).  This explains the entire
+quadratic from the finite Hodge scene.  It still does not turn the resulting
+finite relaxation operator into log-det pressure, an equation of state,
+redshift, or survey data; those remain separately typed downstream layers.
+
+The product identity behind this coefficient is also exact.  If
+\(d_a=b+c,d_b=a+c,d_c=a+b\) and
+\(S=ad_a+bd_b+cd_c=2E\), then
+
+\[
+\delta=e_2(L)=\det T_2
+\]
+
+at the source scene, while the high positive sector of the actual top-Hodge
+pseudodeterminant is
+
+\[
+K_{\rm high}
+ =(a+b+c)d_a^{a-1}d_b^{b-1}d_c^{c-1}
+ =\delta\,\frac{d_a^a d_b^b d_c^c}{S}.
+\]
+
+Lean proves both the generic identity and its descent from the literal
+\(33\times33\) graph
+(`D0-TOP-HODGE-KIRCHHOFF-STATIONARY-BRIDGE-001`).  Therefore \(359/160\)
+is the scale-free active remnant of a larger Hodge/degree product, while
+\(S\) and the full degree volume retain the scale erased by normalization.
+The determinant side is now literal as well: Lean constructs the actual
+deleted-vertex cofactor of the complete-tripartite `SimpleGraph` Laplacian and
+proves
+
+\[
+\det\widehat L_{K(a,b,c)}=K_{\rm high}
+\]
+
+by diagonal-plus-rank-three reduction
+(`D0-COMPLETE-TRIPARTITE-LAPLACIAN-COFACTOR-BRIDGE-001`).  The exact remaining
+gap is combinatorial: the present Lean corpus still has no theorem identifying
+that cofactor with the cardinality of spanning trees.  Accordingly the
+operator determinant is CORE-FORMALIZED, while the spanning-tree count is not
+claimed.
 ## 08.13 Hubble and structure tensions
 
 Hubble and structure tensions are not primitive D0 inputs. They may be read as diagnostics of whether finite archive/runtime transfer is missing from a conventional comparison model. The allowed status is
@@ -1209,6 +1420,24 @@ a monotonically *decreasing* sequence `[φ, 1, φ⁻¹·…] → +φ⁻¹` (cert
 **[Iter23 — log-det window scales now VALUE-OWNED, with a `ℚ(φ)` NO-GO].** The two window scales `λ_c, λ_r` (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`) are no longer representative domain-check numbers: they are owned **exactly** as the two nontrivial eigenvalues of the **normalized graph Laplacian** `L̂ = I − D^{−1/2} A D^{−1/2}` of the scene `K(9,11,13)` (BOOK_01), verified at the full `33×33` level. Explicitly `λ_{c,r} = 3/2 ∓ √10/40`, the roots of `160λ² − 480λ + 359`, with the two symmetric functions **forced by the scene**: `λ_c + λ_r = 3 = Z` (the zone count, a trace identity) and `λ_c·λ_r = 359/160 = |E|/160` (`|E| = 359` edges). The normalizer is itself an intrinsic scene invariant, `160 = (∏ zone-degrees)/(2V) = 10560/66` — a single graph quantity, not the `2·Ω₈·γ = 2·8·10` octet factorization used in §08.12.2. Nothing is inserted: `A, D, Z, |E|, V` are all owned by BOOK_01, so the scales are FORCED (cert `vp_logdet_window_scale_owner.py`, failable). **NO-GO refinement** (sharpening the former "`EXACT-MISSING: exact ℚ(φ) roots"): the roots lie in `ℚ(√10)` and `√10 ∉ ℚ(φ)=ℚ(√5)` (`√10 = a+b√5` forces `a²+5b²=10, 2ab=0`, which has no rational solution). So an exact `ℚ(φ)` closed form for `λ_c, λ_r` is **provably unreachable** — the correct owned field is `ℚ(√10)`. What remains PROOF-TARGET is narrowed to **formula-ownership**: proving the log-det kernel `d_V[−logdet(I − z F_N(V))]` spectrally *reproduces* these Laplacian scales (the values and their field are now owned). The physical `w_DE(z)` magnitude stays external passport (`D0-PHASON-WZ-CPL-PASSPORT-001`); no survey datum enters.
 
 **[Iter25 — the splitting has an exact forced closed form, and `√10` is a size-fingerprint (`D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001`, Lean `D0.VNext2.WindowScaleDiscriminant`, cert `vp_window_scale_discriminant_forced.py`).** For a general `+2` zone progression `{m, m+2, m+4}` the discriminant of the window pair is exactly `D(m) = (λ_r − λ_c)² = 9 − 4·(λ_cλ_r) = 3/((m+1)(m+3))` — and since the degrees are `2(m+3), 2(m+2), 2(m+1)`, the denominator is the product of the smallest and largest *degree-halves*, so `D(m) = Z/(h_min·h_max)` with `Z = 3`. At the scene `m = 9` this is `3/(10·12) = 1/40`, whence `λ = 3/2 ± √(1/40)/2 = 3/2 ± √10/40` — the corpus `η_EP = √10/40` is now a closed-form consequence, not a readout. Two honest riders. (i) `D(m) > 0` for every `m`, so the two scales are *always* real and distinct: reading "orientation = sign of the discriminant" (§01) here gives a **constant** `+`, never a `ℤ₂` flip — `√10` is **not** an orientation bit, and that tempting reading is rejected. (ii) The field `ℚ(√(sqfree(3(m+1)(m+3))))` is a **size-fingerprint**: the golden field `ℚ(√5)` occurs at `m = 29` (zones `29,31,33`), *not* the scene, and `m = 5` gives rational scales (`3·6·8 = 144 = 12²`). So the scene's `√10` is the fingerprint of the specific sizes `9,11,13` and carries no forced "departure from golden" meaning — which *explains* (does not weaken) the `√10 ∉ ℚ(φ)` NO-GO above: it is generic, not a near-miss.
+## 08.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_08 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| archive (archive complement, archive-pressure operator, archive covariance, archive phason halo) | traced-out complement / environment sector (partial-trace quotient); its effective boundary response; its covariance readout; its phason-strain halo profile |
+| dark sector | Galois-conjugate unresolved branch (the traced-out complement read by an external survey functional) |
+| phason glass | phason-strain disorder in the internal/Galois branch |
+| readout (survey readout) | positive measurement outcome (POVM/instrument response functional); survey readout is the external likelihood-transfer instance |
+| ladder (heat-trace A0/A2 ladder) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| lift (conditional typed lift) | typed extension of a finite operator along an inclusion of finite carriers; the lifted object is derived, not primitive |
+| bridge (tabletop bridge guardrail, final bridge index) | typed transfer / calibration map from an internal finite object to an external model object |
+| D0 cosmology | finite survey readout and transfer/comparison protocols |
+| terminal | absorbing rank-reducing measurement channel; the four terminal roles form the finite instrument alphabet |
+
 
 ## Apparatus — sources & open obligations
 

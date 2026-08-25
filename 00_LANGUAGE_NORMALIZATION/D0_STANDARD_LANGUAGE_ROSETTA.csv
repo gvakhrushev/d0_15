@@ -33,3 +33,15 @@ scene incidence,"incidence matrix of K(9,11,13)","A, rank A=3, nullity A=30",Use
 delta0 (detector quantum),forced D0 constant (sqrt5-2)/2 = 1/(2 phi^3),delta0 = phi^-1 - 1/2,Genuinely D0-specific; norm-distance of the two cuts of unity.
 F_N (feedback return),residual non-unitarity of the retained sector after tracing the complement,F_N = P_N U_N^dagger Q_N U_N P_N,Genuinely D0-specific operator; state the operator.
 phason,gapless quasicrystal mode / K0 gap-label degree of freedom,gap-labelling group / K0 class,Standard condensed-matter / operator-K-theory term.
+ladder (phi-ladder; address/detector/dimension/capacity/time ladder),phi-graded discrete filtration / indexed family of finite levels,graded family n -> phi^(+-n) of levels of one finite operator family,Names an index family only; never an extra dynamical object.
+lift,typed extension along an inclusion of finite carriers,block embedding / induced operator on the larger typed carrier,The lifted object is derived not primitive; state the inclusion.
+fluid (finite fluid cell),inverse system of finite lattice flow models,lattice-Boltzmann-type cells with finite response data,No continuum fluid is primitive; use only over the named finite cells.
+surface tension (entropic),boundary response coefficient of the cut-capacity functional,derivative of finite cut capacity along the boundary,Not a material property; specify the capacity functional.
+runtime,ordered finite evolution / finite record dynamics,composition of finite tick maps U_N,Use after the tick maps are specified.
+gate,finite variational test functional,finite test functional on admissible configurations,Use standard term first; D0 word second.
+selector,finite variational selector / strict minimizer,strict minimizer of a finite test functional,State the functional and its uniqueness/negative controls.
+capacity,finite boundary-capacity count,rank/dimension budget of admissible finite levels,Use as a count/budget not as a substance.
+shadow,macro interface / smooth-limit reading,smooth-limit readout of a finite object,Interface reading only; the finite object stays the owner.
+dark sector,Galois-conjugate unresolved branch,traced-out complement read by an external survey functional,Never poetic; specify the functional and window.
+phason glass,phason-strain disorder in the internal/Galois branch,gap-label / K0-class strain disorder,Standard condensed-matter reading; specify the branch.
+D0 vacuum,condensed/profinite phi-quasicrystalline tiling hull,tiling hull with admissible projections,Model object not empty space.

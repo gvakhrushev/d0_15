@@ -115,3 +115,18 @@ The characteristic echo delay is the light round-trip across the cavity in torto
 Two features make this falsifiable rather than decorative. First, `τ_echo` is **dimensionless** in units of the remnant mass `M`, so it scales with every event and is not a free fit. Second, it is a *short-delay* train — distinct from the long-delay echoes of objects pressed against the horizon (`R → 2M`, where `r*` diverges); the surface here sits well above `2M`, so the delay is of order a few `M`, a qualitatively different signature.
 
 The echo mechanism for ultracompact horizonless objects is standard (Cardoso–Pani); the D0-specific content is only the surface placement at the causal ceiling `C = 3/8`. This target is frozen as an empirical passport — a clean rejection criterion for the horizon hypothesis — and is not asserted from any current LIGO–Virgo–KAGRA event. As with the `I_f` target, a negative scan does not falsify D0; a confirmed short-delay echo train at the predicted scale would promote the target, never the converse.
+## 09.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_09 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. It restates the Standard Physics Isomorphism block of the front matter as the book's binding standard-language contract; the corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| ladder (raw φ ladders of the V3–V12 scans) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| archive | traced-out complement / environment sector (integrated-out environment bath) |
+| carrier | representation (state) space |
+| readout | positive measurement outcome (POVM/instrument response functional) |
+| bridge (Born-rule beat bridge) | typed transfer / calibration map from an internal finite object to an external model object |
+| passport (dimensionless LIGO passport targets) | external comparison protocol |
+| scene | finite incidence / clique complex K(9,11,13) |

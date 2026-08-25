@@ -1,0 +1,104 @@
+# Coverage matrix × rewind — the cross-substrate program (первый артефакт)
+
+**License:** `D0-INFORMATION-CONNECTIVITY-001` (T25) — whatever is M1-forced lies in the
+observer's record-component; for assertable content the question is not WHETHER substrates
+are connected but WHICH carrier realizes the record relation. This artifact is the WORKING
+MAP of that question: it does not mint claims, it grades data coverage and pre-registers
+retrodiction checks. Discipline: a cell may cite ONLY (a) registry rows / Lean modules /
+certs, (b) passports under `08_PASSPORTS/` (manifest+SHA), (c) book prose labeled PROSE.
+No outside numbers enter a cell without a passport — an empty cell is a named acquisition
+target, not a place for pop-science values.
+
+**Origin (owner conversation, 2026-08-10..13):** project every domain to the information
+level (bits/quanta/information geometry) where the format is unified (= measurements);
+build the levels × moves matrix with per-move data coverage; stitch the best segments;
+rewind backward as a retrodiction check; then transfer structure into the theory.
+
+## The moves (rows) — the cascade's own ladder (T21, carried rows)
+
+| move | informational primitive | owned floor (registry) |
+|---|---|---|
+| 1 | **record** — a distinction must leave a trace | comparison/trace floor (`D0-CASCADE-INSUFFICIENCY-CHAIN-001` leg) |
+| 2 | **memory** — a trace without comparison is not a trace; one register cannot hold history | one-loop floor (`D0-CASCADE-CHAIN-SCAFFOLD-001`) |
+| 3 | **order** — history is non-abelian; order-memory forbids ℤ×ℤ | order-memory floor (S₃/Q₈; T3, T21) |
+| 4 | **closure** — the defect survives only as a class; the shell closes as a triple | defect-closure + shell-closure floors (`D0-CASCADE-FLOOR-DEFECT-CLOSURE-001`, `-SHELL-CLOSURE-001`) |
+| 5 | **scale** — the closed shell's self-ratio is φ (x = 1+1/x); rationals are captured | scale floor + terminal count (`D0-CASCADE-INTERLOCK-SCALE-001`, `D0-CASCADE-TERMINAL-COUNT-001`) |
+
+## The matrix (grades: OWNED = Lean/cert · PASSPORT = external data, manifest+SHA ·
+PROSE = book-owned reading · ABSENT = no data, acquisition target)
+
+| move | quantum spectra | quasicrystal/optics | cosmology | genetics/biology | economics |
+|---|---|---|---|---|---|
+| 1 record | **PASSPORT** — decoherence as record formation: IceCube phason-decoherence (`08_PASSPORTS/IceCube`, ICECUBE-PHAS1) | PROSE — diffraction pattern as frozen record (BOOK_06 hull reading) | PROSE — horizon as record boundary (BOOK_08) | **PASSPORT (2026-08-14)** — `potapov_ong_pcr_fidelity_2017` hash-pinned READY; frozen R-A1 EXECUTED → FAIL (scalar fidelity vindicated, vector hypothesis dead; `R_A1_RESULT_2026_08_14.md`) | ABSENT |
+| 2 memory | OWNED (theory side) — one-loop floor; no substrate passport | PROSE — substitution rule = memory of the inflation step (Fibonacci hull, BOOK_06) | PROSE — expansion history as accumulated comparison | ABSENT → acq. target A2 (proofreading kinetics dataset) | ABSENT |
+| 3 order | **OWNED** — role algebra Q₈ forced (T3); substrate data absent (anyon braiding would be the passport) | ABSENT | ABSENT | ABSENT → acq. target A3 (transcription-order data) | ABSENT |
+| 4 closure | PROSE — E8 critical chain as closure structure (Coldea passport's own context; NOT owned) | **OWNED** — shell triple {R−r,R,R+r} closure (T23); gap-label module closure (N6, bridge) | PASSPORT — S_DE window product 359/160 (DESI-SDE1) | ABSENT | ABSENT |
+| 5 scale | **PASSPORT** — Coldea CoNb₂O₆ m₂/m₁ = φ (SINGLE-MATCH, scoreboard); PMNS φ-powers (PASSPORT, post-hoc family) | **PASSPORT+CAP** — 25 gap-label plateaux in ℤ+ℤ/φ; capped by N6: module of ANY Fibonacci hull, non-discriminating | PASSPORT — DESI evolving-DE consistent; thawing corner NOT forced (corrected over-read) | ABSENT → acq. target A4 (phyllotaxis morphometry dataset) | ABSENT |
+
+**Reading the matrix (honest):** no column is complete. The stitched best path uses
+move 1 from quantum (decoherence records), moves 3–4 from OWNED theory + quasicrystal
+closure, move 5 from Coldea/gap-labels. Genetics is the emptiest column with the highest
+named upside (the error-correction import, below) — its cells are acquisition targets, not
+results. Economics carries nothing and stays a placeholder until someone names a passport.
+
+## Rewind (pre-registered retrodiction checks — questions with pass/fail, not results)
+
+The rewind runs BACKWARD along the stitched path: if move n's data are real, the theory
+says move n−1's structure must already be present in the same substrate. Each check is
+falsifiable and none is claimed in advance:
+
+- **R1 (5→4, quasicrystal): EXECUTED 2026-08-14 — FAIL (recorded negative).** Frozen
+  criterion `R1_FROZEN_CRITERION.md` (commit f6e315e, before data contact); result
+  `R1_RESULT_2026_08_14.md`: 5 distinct exact gaps, not 3 (control fired at 0.18% null
+  rate — informative FAIL); reflection triples at null level. The 5→4 rewind on this
+  column is dead under this criterion. Post-hoc φ-power gap ladder recorded as
+  module-generic, not promoted. (Cap N6 stands.)
+- **R2 (5→4→3, quantum):** Coldea's φ (move 5) sits at the E8 point of a chain whose
+  spectrum is generated by a non-abelian structure (move 3). The check: is the passport's
+  own m₂/m₁ = φ derivable inside the dataset from ratios that require the non-commuting
+  generator set, or does an abelian surrogate reproduce it? PASS = abelian surrogate fails.
+- **R3 (1→2, quantum→theory): ADJUDICATED 2026-08-14 — NOT-TESTABLE-ON-THIS-DATA**
+  (recon verdict, distinct from FAIL: the criterion cannot fire in either direction). The
+  frozen kernel's total effect on the 164-event HESE table is 0.0147 expected suppressed
+  events (≤ 0.007/bin, Δloglik ~1e-6); the passport's own recorded FAIL already says the
+  data cannot separate the kernel from no-decoherence, a fortiori not from a one-channel
+  rival — exclusion is unreachable by six orders of magnitude. Also killed as stated: the
+  "register ↔ decoherence channel" identification exists nowhere in the corpus
+  (carrier-mismatch-by-shared-word; the Lean kernel object has no memory content). DATA
+  CAVEAT: the IceCube manifest is status=MISSING with a reverted faked-READY history; the
+  local table is not hash-verified (the degeneracy no-go survives any plausible
+  corruption). Becomes testable only via acquisition target **A5** below.
+
+One rewind at a time; each becomes a campaign (memo → skeptic → mint or recorded FAIL).
+
+## Acquisition targets (what a genetics/biology passport must be, before ANY number enters)
+
+- **A1 replication fidelity:** published polymerase error-rate dataset (primary source,
+  DOI), manifest+SHA256, frozen observable BEFORE data contact. Candidate frame: error
+  rate as record-fidelity parameter of move 1.
+- **A2 proofreading kinetics:** kinetic-proofreading measurements (Hopfield-line
+  literature, primary data). This is the data leg of the **named structural-transfer
+  candidate: the error-correction floor** — the cascade's next floor candidate, with
+  biology (proofreading) and holography (QECC) as its two anchors. Import direction:
+  biology → theory (a floor of the shape "a record channel below fidelity f cannot carry
+  a comparison" with a satisfiable control), NOT metaphor-matching.
+- **A3 transcription order:** datasets where the ORDER of regulatory events is measured
+  (move 3 in a biological substrate).
+- **A4 phyllotaxis:** a real morphometric dataset (golden-angle statistics) with primary
+  provenance — the ONLY admissible way the famous golden-angle claim can touch this
+  repo.
+- **A5 neutrino decoherence at resolving statistics (added after R3 recon):** a dataset
+  with survival-probability precision ≤1% in ≥3 independent energy windows placed where
+  the frozen kernel's H_φ modulation predicts non-monotonicity (≥ ~10⁴ post-cut events;
+  candidates: IceCube DeepCore atmospheric sample, or a published decoherence-bound
+  release with per-bin covariances), full manifest+SHA, and the kernel's energy-unit
+  convention fixed in the protocol BEFORE contact (the current cert evaluates H_φ at GeV
+  in one mode and TeV in another — must be pinned). Conditional criterion skeleton
+  recorded in the R3 recon; "register" wording must become "single-channel monotone
+  kernel" unless a Lean bridge theorem is minted first.
+
+## Status
+
+Artifact created 2026-08-14 under the license of T25. No registry row minted by this file.
+Next campaign = R1 (best-covered rewind step, needs no new data acquisition: the 25
+plateaux are already owned by `D0-GAP-LABEL-GENERICITY-NOGO-001`'s computation).

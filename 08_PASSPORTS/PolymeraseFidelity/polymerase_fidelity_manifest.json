@@ -1,0 +1,81 @@
+{
+  "dataset_id": "potapov_ong_pcr_fidelity_2017",
+  "source_name": "Potapov & Ong 2017, PLoS ONE 12(1):e0169774 - single-molecule PCR fidelity",
+  "source_url": "https://doi.org/10.1371/journal.pone.0169774",
+  "correction_doi": "10.1371/journal.pone.0181128",
+  "download_url": "https://raw.githubusercontent.com/potapovneb/pcr-fidelity/733e062ec49031f235bb7cc9540bce35cecfd6c8/",
+  "pinned_commit": "733e062ec49031f235bb7cc9540bce35cecfd6c8",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/polymerase_fidelity/results.csv",
+  "sha256": "results=25b2918010072ab486d782dc172316831fabb4e3862fe3308f35d569303675af;samples=ad5a6092b5d6b6f29e25d8b40e79b0bcbdca95349cbc3a2f9c28bd8d99a33c47;license=f5b26d7915d3528f340e14e14abc97518e6235be9a4286fa37cda4c882061fd6",
+  "downloaded_at_utc": "2026-08-13T22:13:42Z",
+  "data_fields_required": [
+    "Enzyme",
+    "Amplicon",
+    "GroupID",
+    "AC",
+    "AT",
+    "AG",
+    "CA",
+    "CT",
+    "CG",
+    "TA",
+    "TC",
+    "TG",
+    "GA",
+    "GC",
+    "GT",
+    "Deletion",
+    "Insertion"
+  ],
+  "data_fields_found": [
+    "SampleID",
+    "Enzyme",
+    "Amplicon",
+    "Input",
+    "Yield",
+    "collectionPathUri",
+    "GroupID",
+    "AA",
+    "AC",
+    "AT",
+    "AG",
+    "CA",
+    "CC",
+    "CT",
+    "CG",
+    "TA",
+    "TC",
+    "TT",
+    "TG",
+    "GA",
+    "GC",
+    "GT",
+    "GG",
+    "Deletion",
+    "Insertion"
+  ],
+  "license_or_policy_note": "CC-BY 4.0 (PLoS ONE); repo LICENSE.md co-pinned (GPL for code).",
+  "citation_note": "Frozen observable R-A1 pre-registered in _TASKS_CENTER_ATTACK/A1_A2_ACQUISITION_2026_08_14.md, commit 02413ce, BEFORE this fetch; contamination ledger therein. Correction DOI pinned (PrimeSTAR/KOD label swap in Fig 1A).",
+  "status": "READY",
+  "note": "First fetch by this repo; hashes above ARE the pin. 49 samples, 9 polymerases x 3 amplicons.",
+  "files": [
+    {
+      "label": "results",
+      "url": "https://raw.githubusercontent.com/potapovneb/pcr-fidelity/733e062ec49031f235bb7cc9540bce35cecfd6c8/results/results.csv",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/polymerase_fidelity/results.csv",
+      "sha256": "25b2918010072ab486d782dc172316831fabb4e3862fe3308f35d569303675af"
+    },
+    {
+      "label": "samples",
+      "url": "https://raw.githubusercontent.com/potapovneb/pcr-fidelity/733e062ec49031f235bb7cc9540bce35cecfd6c8/input/samples.csv",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/polymerase_fidelity/samples.csv",
+      "sha256": "ad5a6092b5d6b6f29e25d8b40e79b0bcbdca95349cbc3a2f9c28bd8d99a33c47"
+    },
+    {
+      "label": "license",
+      "url": "https://raw.githubusercontent.com/potapovneb/pcr-fidelity/733e062ec49031f235bb7cc9540bce35cecfd6c8/LICENSE.md",
+      "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/polymerase_fidelity/LICENSE.md",
+      "sha256": "f5b26d7915d3528f340e14e14abc97518e6235be9a4286fa37cda4c882061fd6"
+    }
+  ]
+}

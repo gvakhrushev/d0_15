@@ -24,6 +24,18 @@ jobs:
       - name: validate canonical registry
         run: python tools/validate_csv.py
 
+      - name: derivation chain + block hashes (cycle in the DAG is a hard failure)
+        run: python tools/d0_logic_chain.py
+
+      - name: value ledger is a live view of the registry (coverage + freshness + auditable weights)
+        run: python tools/check_value_ledger_sync.py
+
+      - name: every "forced by N independent routes" assertion is adjudicated (no unbacked multiplicity)
+        run: python tools/d0_route_audit.py --strict
+
+      - name: dependency attribution coverage (report; the attack queue is only as good as this)
+        run: python tools/d0_architecture.py && python tools/check_dependency_resolution.py
+
       - name: registered certs pass (existence != passes)
         run: python tools/run_registered_certs.py
 

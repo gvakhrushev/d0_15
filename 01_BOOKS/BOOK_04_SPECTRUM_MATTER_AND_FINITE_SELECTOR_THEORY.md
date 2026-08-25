@@ -1414,7 +1414,58 @@ So `ν^c` is at most **Dirac** from the frozen scene, and the seesaw selector re
 
 **[Role-to-operator: canonical carrier no-go].** The five DΣ roles `Code→Canon→Test→History→Access→Code` form a single canonical directed 5-cycle (`D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001`, Lean `D0.Matter.DSigmaRoleTransitionGraph`). But there is **no canonical rank-5 role-cycle carrier**: the oriented automorphism group `Aut(K(9,11,13)) = S₉×S₁₁×S₁₃` is transitive on the 1287 triangles (a single orbit), and the operational roles carry no intrinsic geometric attachment, so the five roles cannot be canonically injected into distinct cycle orbit-classes — any rank-5 carrier is an arbitrary symmetry-breaking choice (`D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001`, NO-GO, Lean `D0.Matter.DSigmaRoleCycleCarrierNoGo`). This is the root cause of the role-bound PROOF-TARGETs (flow→Weyl `Φ`, CKM address-action, role-bound lepton branches, the unified functor): their physical content is owned by non-role routes, but the canonical role carrier they would be built from does not exist. See `04_VERIFICATION/ROLE_TO_OPERATOR_BLOCKERS.csv`.
 
-**[Colour vs generation on the typed carriers — `M₃` is generation, not colour (`D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001`, cert `vp_colour_generation_typed_carrier_nogo.py`).]** The tempting reading "baryon = 3 quarks = rank-3 = three zones = colour" fails on both frozen carriers, by two exact finite obstructions. **(A) Typed collapse.** On the scene-zone carrier `ℂ³³` the raw commutant on the three zone-lines is the full matrix algebra `M₃(ℂ)` (dim 9), but the typed degree operator `D_zone = diag(24,22,20)` has a *simple* (distinct-eigenvalue) spectrum, so its commutant inside `M₃(ℂ)` is the **diagonal** algebra `ℂ³` (dim 3, abelian): the three zone-lines are the abelian **generation** lines, not an unbroken non-abelian colour. The `+2` zone increment is load-bearing — a degenerate frame `diag(24,24,20)` would leave a non-abelian block (dim 5). **(B) Commutant gap.** On the terminal spinor carrier `ℂ⁸ = ℂ[Q₈]` (`Ω₈ ≅ Q₈`) a source-native colour `M₃` would have to lie in `Commutant(weak)`, but `dim Commutant(weak) = dim R(Q₈) = 8 < 9 = dim M₃(ℂ)` — no 9-dimensional `M₃` fits. The joint quark gauge module `ℂ³⊗ℂ²` therefore requires an **external** `⊗ℂ³` (the inserted `𝒜_F` completion `ℋ_q = W₃⊗V₂`), not a source-derived factor. Honest scope: this is NO-GO on the scene-zone and terminal carriers only — it removes the most tempting false candidate, but does not classify colour on `H_edge` / the `P·Q` feedback globally; global colour stays a **terminal-passport** (octonion / E₈) route, not scene-native, consistent with the root/Weyl no-go above.## 04.12 QCD runtime and confinement grammar
+**[Colour vs generation on the typed carriers — `M₃` is generation, not colour (`D0-COLOUR-GENERATION-TYPED-CARRIER-NOGO-001`, cert `vp_colour_generation_typed_carrier_nogo.py`).]** The tempting reading "baryon = 3 quarks = rank-3 = three zones = colour" fails on both frozen carriers, by two exact finite obstructions. **(A) Typed collapse.** On the scene-zone carrier `ℂ³³` the raw commutant on the three zone-lines is the full matrix algebra `M₃(ℂ)` (dim 9), but the typed degree operator `D_zone = diag(24,22,20)` has a *simple* (distinct-eigenvalue) spectrum, so its commutant inside `M₃(ℂ)` is the **diagonal** algebra `ℂ³` (dim 3, abelian): the three zone-lines are the abelian **generation** lines, not an unbroken non-abelian colour. The `+2` zone increment is load-bearing — a degenerate frame `diag(24,24,20)` would leave a non-abelian block (dim 5). **(B) Commutant gap.** On the terminal spinor carrier `ℂ⁸ = ℂ[Q₈]` (`Ω₈ ≅ Q₈`) a source-native colour `M₃` would have to lie in `Commutant(weak)`, but `dim Commutant(weak) = dim R(Q₈) = 8 < 9 = dim M₃(ℂ)` — no 9-dimensional `M₃` fits. The joint quark gauge module `ℂ³⊗ℂ²` therefore requires an **external** `⊗ℂ³` (the inserted `𝒜_F` completion `ℋ_q = W₃⊗V₂`), not a source-derived factor. Honest scope: this is NO-GO on the scene-zone and terminal carriers only — it removes the most tempting false candidate, but does not classify colour on `H_edge` / the `P·Q` feedback globally; global colour stays a **terminal-passport** (octonion / E₈) route, not scene-native, consistent with the root/Weyl no-go above.
+
+**[Intrinsic provenance of the generation frame, with the exact residual.]**
+The operator \(D_{\rm zone}=\operatorname{diag}(24,22,20)\) is no longer a
+separately displayed typed input.  Restricting the literal \(33\times33\)
+degree operator after lifting the three intrinsic degree fibres gives exactly
+the previous `TypedRepresentationFunctor.degreeOp`
+(`D0-INTRINSIC-DEGREE-FIBRE-FRAME-001`).  Moreover its three lines are
+recovered without chosen eigenvectors by the Lagrange projectors
+
+\[
+P_{24}=\frac{(D-22I)(D-20I)}8,\quad
+P_{22}=-\frac{(D-24I)(D-20I)}4,\quad
+P_{20}=\frac{(D-24I)(D-22I)}8.
+\]
+
+Lean proves that these projectors are orthogonal, sum to \(I\), reconstruct
+\(D\), and force every commuting operator to be diagonal.  This closes the
+graph-to-frame provenance but not the graph-to-\(Q_8\) pairing: the terminal
+owner supplies the distinct ranks \((1,4,3)\), while two permutation-related
+rank decorations of the same degree frame remain possible without a
+scene-to-\(Q_8\) carrier map.  The residual real-structure bit also survives:
+distinct \((3,0)\) and \((2,1)\) grading representatives commute with \(D\)
+and all three projectors.  Thus the finite scene forces the intrinsic frame,
+but neither physical generation names nor the KO-signature convention.
+
+The same spectral projectors now recover the full quotient interface without
+choosing one vertex from each fibre
+(`D0-INTRINSIC-QUOTIENT-RECONSTRUCTION-001`).  If \(C\) is their diagonal
+indicator and \(R\) averages over the recovered fibres, then
+
+\[
+RC=I_3,\qquad CR=P_{\rm Reynolds}.
+\]
+
+The image is therefore simultaneously the degree-spectral quotient and the
+independently computed within-zone Reynolds image.  Separately, the
+full-graph-automorphism invariant rational functions are proved to form
+\(\mathbb Q[\deg]\); no presentation theorem identifying the displayed
+generator list with the whole abstract automorphism group is used here.
+Compression \(R(-)C\) recovers the owned adjacency, degree, transport and
+normalized Laplacian, while the full operator splits as
+
+\[
+L_{\rm full}=(I-CR)+C\,L_{\rm quot}\,R.
+\]
+
+This makes the three degree lines intrinsic up to permutation and coordinate
+rescaling, but it does not repair the separate scene-to-\(Q_8\) pairing or
+select generation labels.  The formal gain is a canonical carrier and
+quotient map; the residual remains exactly the cross-carrier identification.
+## 04.12 QCD runtime and confinement grammar
 
 The QCD line is controlled by the action section and archive runtime; it is not a new fitted scale.  A hadronic comparison may use
 
@@ -1965,6 +2016,22 @@ F_E=P_EU_E^\dagger Q_EU_EP_E,
 \operatorname{Tr}(F_E)=\frac{359}{\varphi^2}-\varphi^{-5}.
 \]
 The first term is the edge-channel phase-return contribution and the second term is the torus-boundary leakage contribution. This is a coefficient-origin operator target; QED running and external numerical comparison are passport layers.
+## 04.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_04 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| selector | finite variational selector (strict minimizer of a finite test functional) |
+| terminal (matter triad, calibration register) | absorbing rank-reducing measurement channel; the four terminal roles form the finite instrument alphabet |
+| ladder (shell ladder, address ladder) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| lift (three-body lift, typed edge/generation lifts) | typed extension of a finite operator along an inclusion of finite carriers (block embedding / induced operator); the lifted object is derived, not primitive |
+| readout (nucleon readout) | positive measurement outcome (POVM/instrument response functional) |
+| bridge (Fibonacci-fusion / Jones-index bridge) | typed transfer / calibration map from an internal finite object to an external model object |
+| capacity | finite boundary-capacity count: the rank/dimension budget of admissible finite levels |
+| gate | finite variational test functional |
 
 
 ## Apparatus — sources & open obligations

@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""D0-TOWER-STOP-NOEXT-001 (T2, CASE 1) — member<->zone bijection of p^2+p=1 (no new type).
+"""D0-TOWER-STOP-NOEXT-001 CASE-1 stress test — the written map is not exhaustivity.
 
-The other half of the no-go (BOOK_05 §05.6 obligation 5). A fourth zone as a NEW type of
-structural necessity is excluded because the types of necessity are not a list but the SLOTS of
-the quadratic branching law p^2 + p = 1 (p = phi^-1), and there are exactly three:
+The former certificate wrote a three-entry dictionary
 
     p^1 (direct registration)  -> DISTINGUISH  (the first act; without it there is no fact)
     p^2 (self-return)          -> PRESERVE     (apply registration to itself; else no comparison)
     = 1 (closure/exhaustion)   -> CLOSE        (M1+ canonisation of the unit; BOOK_00)
 
-Three types = 2 quadratic terms + 1 closure = 3. There is NO fourth NEW type: every higher
-power reduces into the 2-dimensional algebra Z[p]/(p^2+p-1) = span{1,p}, so a 'p^3 type' is not
-new -- it is a combination (a repeat), which falls into CASE 2 (vp_zone_repeat_catalog.py).
+but writing a bijection between two declared three-element sets does not prove that every
+admissible zone belongs to either set. Moreover p^3 is a distinct value despite reducing in the
+two-dimensional algebra. This script now records that counterexample and leaves semantic
+exhaustivity open.
 
 WHAT IS PROVED (exact Z[p] / surd, able to FAIL):
   * p = phi^-1 satisfies p^2 + p = 1 (the forced branching law).
@@ -21,11 +20,7 @@ WHAT IS PROVED (exact Z[p] / surd, able to FAIL):
     1<->CLOSE -- each pairing sourced from a forced primitive (registration / self-application /
     M1+), each type from exactly one slot and each slot to exactly one type.
 
-HONESTY BOUNDARY (printed): the COUNT (exactly 3 slots) and the NO-4th (p^3 reduces) are proved
-exactly; the three role-NAMES (distinguish/preserve/close) are the operational reading of the 3
-forced slots, each citing a corpus-forced primitive (p=registration BOOK_01; p^2=return; =1=M1+
-BOOK_00) -- an assembly of forced pieces, not a new postulate. The bijection is thus WRITTEN, so
-CASE 1 closes; what is cited (not re-derived here) is the forcing of each of the three primitives.
+HONESTY BOUNDARY: the dictionary is a proposed interpretation, not a classification theorem.
 """
 from __future__ import annotations
 
@@ -62,7 +57,7 @@ class Surd:
 
 
 def main() -> int:
-    print("=== D0-TOWER-STOP-NOEXT-001 (T2, CASE 1)  member<->zone bijection, no new type ===")
+    print("=== D0-TOWER-STOP-NOEXT-001 CASE-1 exhaustivity stress test ===")
 
     p = Surd(F(-1, 2), F(1, 2))     # phi^-1 = (sqrt5-1)/2
     one = Surd(1)
@@ -74,10 +69,11 @@ def main() -> int:
     # ---- rank-2 algebra: p^3 reduces to 2p-1 (no 4th independent slot) --------------
     p3 = p * p * p
     assert p3 == (p + p) - one, "p^3 = 2p - 1 (reduces into span{1,p})"
+    assert p3 != one and p3 != p and p3 != p * p, "linear reduction does not make p^3 a repeated value"
     # identity p^3 - 2p + 1 = (p-1)(p^2+p-1) = 0
     lhs = p3 - ((p + p) - one)
     assert lhs == Surd(0), "p^3 - (2p-1) = 0"
-    print(f"PASS_NO_FOURTH_SLOT  p^3 = 2p-1 = {p3.fval():.6f} in span{{1,p}} (rank-2 algebra; p^3 is not new)")
+    print(f"PASS_FOURTH_DISTINCT_VALUE  p^3 = 2p-1 = {p3.fval():.6f}, in span{{1,p}} but distinct from 1,p,p^2")
 
     # ---- the 3 slots and the bijection to the 3 necessity-types ---------------------
     slots = {"p^1": "DISTINGUISH", "p^2": "PRESERVE", "=1": "CLOSE"}
@@ -86,20 +82,20 @@ def main() -> int:
                "=1": "M1+ unit exhaustion / canonisation (BOOK_00)"}
     assert len(slots) == 3 and len(set(slots.values())) == 3, "3 slots <-> 3 distinct types (injective+surjective)"
     assert set(slots.keys()) == set(sources.keys()), "every slot has exactly one forced source"
-    print(f"PASS_MEMBER_ZONE_BIJECTION  {{p,p^2,=1}} <-> {{distinguish,preserve,close}} 3<->3, each from a forced primitive")
+    print("PASS_DECLARED_DICTIONARY_IS_BIJECTIVE_ON_ITS_OWN_THREE_ENTRIES")
 
     # ---- count: 3 = 2 quadratic terms + 1 closure (NOT a list) ----------------------
     assert 3 == 2 + 1, "3 types = 2 quadratic terms + 1 closure (degree-2, not enumeration)"
-    print("PASS_THREE_IS_TWO_PLUS_ONE  3 = deg(2 terms) + 1 closure -- structural, not a list")
+    print("PASS_THREE_IS_TWO_PLUS_ONE_ARITHMETIC_ONLY")
 
     # ---- negative control --------------------------------------------------------
     # a genuinely-new 4th slot would be an independent p^3; but p^3 in span{1,p} => not independent
-    assert p3 == (p + p) - one, "control: any '4th type' p^3 collapses into the 2-dim algebra"
-    print("FAIL_FOURTH_TYPE_P3_COLLAPSES_INTO_RANK2_ALGEBRA_NOT_INDEPENDENT")
+    assert p3 != one and p3 != p and p3 != p * p
+    print("FAIL_WRITTEN_DICTIONARY_DOES_NOT_EXHAUST_DISTINCT_POWERS")
     print("PASS_MEMBER_ZONE_CONTROLS")
 
-    print("HONEST_COUNT_AND_NO4TH_PROVED_EXACTLY_ROLE_NAMES_CITE_FORCED_PRIMITIVES_BIJECTION_WRITTEN")
-    print("PASS_MEMBER_ZONE_ISOMORPHISM")
+    print("OPEN_MEMBER_ZONE_EXHAUSTIVITY_REQUIRES_SEMANTIC_OWNER")
+    print("PASS_MEMBER_ZONE_ISOMORPHISM_STRESS_TEST")
     return 0
 
 

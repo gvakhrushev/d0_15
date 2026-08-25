@@ -1,0 +1,402 @@
+{
+  "assertions_found": 20,
+  "counts": {
+    "REGISTERED": 20
+  },
+  "findings": [
+    {
+      "assertion": "nhinge the KAM fixed point and detune the \\(E_8\\) lattice \u2014 four unrelated failures at once, each killing one floor of the spine. There is no s",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [],
+      "line": 1411,
+      "n_objects": 13,
+      "registered": true,
+      "section": "01.14",
+      "shared_objects": [
+        "ABCD",
+        "E8",
+        "E_8",
+        "Fibonacci",
+        "Galois",
+        "Hurwitz",
+        "KAM",
+        "Lucas",
+        "Q8",
+        "Q_8",
+        "delta_0",
+        "varphi^2=\\varphi+1",
+        "x^2-x-1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all five routes are load-bearing on the single instance C(x)=x^2-x-1=0 (Route 5's triple-coincidence locus is exactly C's root set and it shares Route 1's cert file; Route 2's Hurwitz constant is C's discriminant sqrt5 proved via Route 1's Vieta norm form; Route 3's r=1+1/r is C rew"
+    },
+    {
+      "assertion": "RCED** [^b06-37]. ### Side synthesis: (3,1) signature from two independent objects The Lorentz signature $(3,1)$ is forced by **two distinct",
+      "book": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME",
+      "category": "DECOMPOSITION",
+      "claim_ids": [
+        "D0-RANK3-CAUSAL-CONE-FORCING-001"
+      ],
+      "line": 1017,
+      "n_objects": 9,
+      "registered": true,
+      "section": "06.30a",
+      "shared_objects": [
+        "Fibonacci",
+        "K(9,11,13)",
+        "Pisot",
+        "delta_0",
+        "nullity 30",
+        "p+p^2=1",
+        "rank 3",
+        "rank-3",
+        "toral"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not a multiplicity claim at all. The two mechanisms force DIFFERENT COMPONENTS: rank(adjacency of K(9,11,13)) gives the 3, the single Pisot modular flow gives the 1. Kill either and that component is lost; neither covers for the other, so the arrangement provides ZERO redundancy. The section's actua"
+    },
+    {
+      "assertion": "`\\varphi` is the output. The rigidity argument of \u00a701.14 (\"four unrelated failures at once\") must be read on this repaired pair, not on four f",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-JONES-SLOT-SELECTOR-001",
+        "D0-PHI-HURWITZ-CLASS-CANONIZATION-001"
+      ],
+      "line": 597,
+      "n_objects": 7,
+      "registered": true,
+      "section": "01.6.1a",
+      "shared_objects": [
+        "Fibonacci",
+        "Hurwitz",
+        "Ising",
+        "Jones",
+        "quarter-turn",
+        "symplectic",
+        "x^2 - x - 1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: both routes rest on the single premise \"the scale is its own depth-1 self-return\" \u2014 Route A writes it as p+p^2=1, Route B writes the same equation as the continued fraction [1;1,1,...] \u2014 and the formal owner makes the dependency literal, since the machine-checked Hurwitz claim (D0/N"
+    },
+    {
+      "assertion": "the icosian\u2192`E_8` embedding (BOOK_02 \u00a702.18), `\\varphi` is forced through four independent channels \u2014 the \"`\\varphi`-network\". ### 01.21.4 `I_f = \\lo",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-JONES-INDEX-PHI-001"
+      ],
+      "line": 2121,
+      "n_objects": 7,
+      "registered": true,
+      "section": "01.21.3",
+      "shared_objects": [
+        "E_8",
+        "Fibonacci",
+        "Hurwitz",
+        "Jones",
+        "Pisot",
+        "toral",
+        "varphi^2=\\varphi+1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all six routes are evaluations of one load-bearing premise \u2014 the quadratic x^2-x-1=0 / ring Z[phi] \u2014 with R2/R3/R5 sharing a single GL2(Z) golden companion matrix (verified P^-1\u00b7[[1,1],[1,0]]\u00b7P = [[0,1],[1,1]]), R3/R4/R5 sharing the identity 2cos(pi/5)=phi, R1's '1/sqrt5' being just"
+    },
+    {
+      "assertion": "te `I_f = h_{KS} = \\log\\varphi` from the automorphism side; a second, independent route reaches the *same* number from the fusion side, and the two",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-JONES-INDEX-PHI-001"
+      ],
+      "line": 2127,
+      "n_objects": 7,
+      "registered": true,
+      "section": "01.21.4",
+      "shared_objects": [
+        "E_8",
+        "Fibonacci",
+        "Hurwitz",
+        "Jones",
+        "Pisot",
+        "toral",
+        "varphi^2=\\varphi+1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all three routes rest on a single load-bearing premise instance \u2014 the golden quadratic x^2 = x + 1 (D0's own p + p^2 = 1, formalized once as D0.Core.Phi.phi_sq) \u2014 and D0's own machine-checked ledger proves the two matrices are the same object, C T C^-1 = -M_phi (D0-TORAL-INTEGRAL-CO"
+    },
+    {
+      "assertion": "icrystal_slice.py`; not a new derivation of the zones). The three channels are independent forcings \u2014 their convergence strengthens, it is not summed as a sin",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-MODULAR-TIME-FLAVOR-001",
+        "D0-TOWER-STOP-NOEXT-001"
+      ],
+      "line": 1871,
+      "n_objects": 6,
+      "registered": true,
+      "section": "01.19a.4",
+      "shared_objects": [
+        "ABCD",
+        "D_2",
+        "Omega_8",
+        "nullity 30",
+        "rank-3",
+        "\u03a98"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all six routes are evaluations of one load-bearing premise \u2014 the quadratic x^2-x-1=0 / ring Z[phi] \u2014 with R2/R3/R5 sharing a single GL2(Z) golden companion matrix (verified P^-1\u00b7[[1,1],[1,0]]\u00b7P = [[0,1],[1,1]]), R3/R4/R5 sharing the identity 2cos(pi/5)=phi, R1's '1/sqrt5' being just"
+    },
+    {
+      "assertion": "entifiers so no adjacent boundary cell aliases [^b07-33].** A second, independent forcing fixes the same `4`. To distinguish itself without an extern",
+      "book": "BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY",
+      "category": "REDUNDANCY-CLAIMED",
+      "claim_ids": [],
+      "line": 933,
+      "n_objects": 6,
+      "registered": true,
+      "section": "07.21",
+      "shared_objects": [
+        "ABCD",
+        "K(9,11,13)",
+        "Omega8",
+        "nullity 30",
+        "rank 3",
+        "symplectic"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "FAIL on the mathematics, not on the independence. The premises ARE disjoint (a symplectic phase-quotient / min-cut count vs a planar-colouring argument), so the route would be independent if it were sound. It is not as written: the Four-Colour Theorem states four colours SUFFICE for every planar map"
+    },
+    {
+      "assertion": "l slice (`A\u2085 = 2I/\\{\\pm1\\} = \\mathrm{PSL}(2,5) \u2282 SO(3)`) is a third independent route to `rank = 3`, alongside Frobenius (`\u210d` has three ima",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-CARRIER-NOT-ICOSAHEDRAL-001",
+        "D0-MODULAR-TIME-FLAVOR-001",
+        "D0-TOWER-STOP-NOEXT-001"
+      ],
+      "line": 1871,
+      "n_objects": 5,
+      "registered": true,
+      "section": "01.19a.4",
+      "shared_objects": [
+        "D_2",
+        "K(9,11,13)",
+        "nullity 30",
+        "rank-3",
+        "\u03a98"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all six routes are evaluations of one load-bearing premise \u2014 the quadratic x^2-x-1=0 / ring Z[phi] \u2014 with R2/R3/R5 sharing a single GL2(Z) golden companion matrix (verified P^-1\u00b7[[1,1],[1,0]]\u00b7P = [[0,1],[1,1]]), R3/R4/R5 sharing the identity 2cos(pi/5)=phi, R1's '1/sqrt5' being just"
+    },
+    {
+      "assertion": "z/MDL minimizer and as the `M1` fixed point \u2014 are joined by a third, independent both of approximation theory and of `M1`: `\\varphi` is a *q",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-JONES-INDEX-PHI-001"
+      ],
+      "line": 2096,
+      "n_objects": 5,
+      "registered": true,
+      "section": "01.21.3",
+      "shared_objects": [
+        "Fibonacci",
+        "Hurwitz",
+        "Jones",
+        "toral",
+        "varphi^2=\\varphi+1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all six routes are evaluations of one load-bearing premise \u2014 the quadratic x^2-x-1=0 / ring Z[phi] \u2014 with R2/R3/R5 sharing a single GL2(Z) golden companion matrix (verified P^-1\u00b7[[1,1],[1,0]]\u00b7P = [[0,1],[1,1]]), R3/R4/R5 sharing the identity 2cos(pi/5)=phi, R1's '1/sqrt5' being just"
+    },
+    {
+      "assertion": "he use is typed by the finite operator grammar. ### 02.5.0 Two independent forcings of `\u03c6` Book 01 owns the \u03c6 derivation; Book 02 inherits it",
+      "book": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS",
+      "category": "",
+      "claim_ids": [],
+      "line": 329,
+      "n_objects": 5,
+      "registered": true,
+      "section": "02.5.0",
+      "shared_objects": [
+        "ABCD",
+        "delta_0",
+        "p+p^2=1",
+        "\u03a9_8",
+        "\u03b4_0"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all three routes stand on one premise instance \u2014 the unit-normalized binary mediator P=S\u2295T with additive F whose SECOND ingredient must be the first applied to itself and whose recursion is truncated at depth 2 (BOOK_01 \u00a701.6.0/\u00a701.6) \u2014 so Route 2's r\u00b2\u2212r\u22121=0 is Route 1's p\u00b2+p\u22121=0 un"
+    },
+    {
+      "assertion": "m}`-dim `=3`; cert `vp_frobenius_division_3d.py`). This is a second independent channel to `\\mathrm{rank}=3` beside the `Q_8`/Dedekind route here a",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-FROBENIUS-DIVISION-3D-001",
+        "D0-TOWER-STOP-NOEXT-001"
+      ],
+      "line": 854,
+      "n_objects": 3,
+      "registered": true,
+      "section": "01.7.1C",
+      "shared_objects": [
+        "Omega_8",
+        "Q_8",
+        "\u03a98"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: the five routes collapse onto two kernels that themselves share a premise \u2014 Routes 1, 2 and 4 all deliver the same dim Im(H) = 3 through the same Q_8/quaternion object (Route 2 explicitly re-enters via 'Q_8 is the unit group of H'; Route 4 via the corpus's own chain Q_8 \u2282 2T \u2282 2I wi"
+    },
+    {
+      "assertion": "ion is the first theorem of those obligations. ### 01.6.1a Two independent forcings of `\\varphi` [^b01-27] The golden ratio is forced from M1",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [],
+      "line": 574,
+      "n_objects": 2,
+      "registered": true,
+      "section": "01.6.1a",
+      "shared_objects": [
+        "Hurwitz",
+        "p+p^2=1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: both routes rest on the single premise \"the scale is its own depth-1 self-return\" \u2014 Route A writes it as p+p^2=1, Route B writes the same equation as the continued fraction [1;1,1,...] \u2014 and the formal owner makes the dependency literal, since the machine-checked Hurwitz claim (D0/N"
+    },
+    {
+      "assertion": "\\varphi` [^b01-27] The golden ratio is forced from M1 by **two independent routes**, and they agree. Either alone fixes `\\varphi`; the agree",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [],
+      "line": 576,
+      "n_objects": 2,
+      "registered": true,
+      "section": "01.6.1a",
+      "shared_objects": [
+        "Hurwitz",
+        "p+p^2=1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: both routes rest on the single premise \"the scale is its own depth-1 self-return\" \u2014 Route A writes it as p+p^2=1, Route B writes the same equation as the continued fraction [1;1,1,...] \u2014 and the formal owner makes the dependency literal, since the machine-checked Hurwitz claim (D0/N"
+    },
+    {
+      "assertion": "ebraic minimizer coincide [^b01-52] The phase generator is fixed twice over, from two unrelated directions, and the two answers are the",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-PHI-M1-DUALITY-001"
+      ],
+      "line": 2018,
+      "n_objects": 2,
+      "registered": true,
+      "section": "01.21.1",
+      "shared_objects": [
+        "Hurwitz",
+        "p+p^2=1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all three routes hang on one premise \u2014 \u03c6's badly-approximable/Hurwitz extremality read through the single M1 clause 'capture at a finite stage = a periodic catalog entry = \u22a5M1' \u2014 which \u00a701.21.1 lines 63-70 explicitly identifies as Route 2's load-bearing clause and as the same proper"
+    },
+    {
+      "assertion": "oincide [^b01-52] The phase generator is fixed twice over, from two unrelated directions, and the two answers are the *same* `\\varphi`. This is the",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [
+        "D0-PHI-M1-DUALITY-001"
+      ],
+      "line": 2018,
+      "n_objects": 2,
+      "registered": true,
+      "section": "01.21.1",
+      "shared_objects": [
+        "Hurwitz",
+        "p+p^2=1"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all three routes hang on one premise \u2014 \u03c6's badly-approximable/Hurwitz extremality read through the single M1 clause 'capture at a finite stage = a periodic catalog entry = \u22a5M1' \u2014 which \u00a701.21.1 lines 63-70 explicitly identifies as Route 2's load-bearing clause and as the same proper"
+    },
+    {
+      "assertion": "-role-square route. That route fixes the *cardinalities*. A second, independent forcing fixes the *step* between successive addresses: the address",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [],
+      "line": 2246,
+      "n_objects": 2,
+      "registered": true,
+      "section": "01.22",
+      "shared_objects": [
+        "Lucas",
+        "Omega_8"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all three routes stand on one object \u2014 the single \u2124\u2082 = Z(Q\u2088) = Gal(\u211a(\u221a5)/\u211a) built from the Vieta relation \u03c6\u03c8 = \u22121 (terminal role B) \u2014 together with one specific sub-lemma about it (\"no further orientation bit without an exogenous sign catalog\"), which R1 uses to seal |\u03a9\u2088| = 8 \u21d2 V\u2089 ="
+    },
+    {
+      "assertion": "13` the capacity route produces, so the two derivations are mutually reinforcing: capacity sets the cardinalities, orientation-parity sets t",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [],
+      "line": 2262,
+      "n_objects": 2,
+      "registered": true,
+      "section": "01.22",
+      "shared_objects": [
+        "Lucas",
+        "heat-trace"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all three routes stand on one object \u2014 the single \u2124\u2082 = Z(Q\u2088) = Gal(\u211a(\u221a5)/\u211a) built from the Vieta relation \u03c6\u03c8 = \u22121 (terminal role B) \u2014 together with one specific sub-lemma about it (\"no further orientation bit without an exogenous sign catalog\"), which R1 uses to seal |\u03a9\u2088| = 8 \u21d2 V\u2089 ="
+    },
+    {
+      "assertion": "e cardinalities, orientation-parity sets the increment, and neither leans on the other. In topological language the `+2` step is precisely the co",
+      "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
+      "category": "",
+      "claim_ids": [],
+      "line": 2262,
+      "n_objects": 2,
+      "registered": true,
+      "section": "01.22",
+      "shared_objects": [
+        "Lucas",
+        "heat-trace"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "Not independent: all three routes stand on one object \u2014 the single \u2124\u2082 = Z(Q\u2088) = Gal(\u211a(\u221a5)/\u211a) built from the Vieta relation \u03c6\u03c8 = \u22121 (terminal role B) \u2014 together with one specific sub-lemma about it (\"no further orientation bit without an exogenous sign catalog\"), which R1 uses to seal |\u03a9\u2088| = 8 \u21d2 V\u2089 ="
+    },
+    {
+      "assertion": "ogical postulate added on top of the section; it is forced. Three independent routes converge on the same direction, and the convergence is the",
+      "book": "BOOK_06_EVOLUTION_FORGETTING_AND_TIME",
+      "category": "REDUNDANCY-PARTIAL",
+      "claim_ids": [],
+      "line": 365,
+      "n_objects": 1,
+      "registered": true,
+      "section": "06.7",
+      "shared_objects": [
+        "Fibonacci"
+      ],
+      "triage": "REGISTERED",
+      "verdict": "PARTIAL PASS -- two real routes, not three. Route 1 (Y-then-J is a reproducible assembly order, J-then-Y is not; M1 admits only the catalogue-free order) rests on the commutator obstruction [J,Y] != 0, which BOOK_02 \u00a702.9A derives from the scene's rank-3 / nullity-30 rigidity. Routes 2 (non-invertib"
+    },
+    {
+      "assertion": "ality of the Bloch ball from operational postulates, giving a second independent route to both `d=3` and quadraticity alongside the Frobenius (`\u210d`",
+      "book": "BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS",
+      "category": "EXTERNAL-CORROBORATION",
+      "claim_ids": [],
+      "line": 1964,
+      "n_objects": 0,
+      "registered": true,
+      "section": "02.28",
+      "shared_objects": [],
+      "triage": "REGISTERED",
+      "verdict": "PASS, and the section is already honest. Masanes-Muller-Galley (Nat.Commun. 10 1361, 2019) derive the Born rule and the 3-dimensionality of the Bloch ball from operational postulates, sharing no premise with p+p^2=1 -- genuinely independent. But \u00a702.28 labels it correctly as 'external corroboration,"
+    }
+  ],
+  "generated_from": "01_BOOKS/*.md",
+  "test": "a route pair is dependent when it shares a load-bearing PREMISE, not when it reaches the same conclusion; this tool triages, it does not adjudicate"
+}

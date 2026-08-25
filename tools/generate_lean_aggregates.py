@@ -31,7 +31,14 @@ HEADER = "-- AUTO-GENERATED from CLAIM_TO_LEAN_MAP.csv by tools/generate_lean_ag
 EOL = "\n"
 
 # Modules that must not enter the release build-all (known broken / intentionally out).
-ALL_EXCLUDE: set[str] = set()
+# Draft modules deliberately kept OUT of D0.All: CurrentDataAxisClassification carries a
+# `sorry` + open elaboration errors (typed-stratification draft for the degree-2 campaign);
+# InvariantStableSubalgebraLattice is the 2026-08-05 DRAFT with no registry row. Remove from
+# this set only when the module builds sorry-free and is minted.
+ALL_EXCLUDE: set[str] = {
+    "D0.Foundation.CurrentDataAxisClassification",
+    "D0.Foundation.InvariantStableSubalgebraLattice",
+}
 
 # CSV (lean_status, release_status) -> Lean ClaimStatus constructor.
 def claim_status(lean_status: str, release: str) -> str:

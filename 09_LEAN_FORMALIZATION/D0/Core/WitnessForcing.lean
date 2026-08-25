@@ -1,5 +1,5 @@
 import D0.Core.FiniteTypes
-import D0.Tower.NoExtension
+import D0.Tower.NoExtensionBoundary
 import Mathlib.Tactic
 
 /-!
@@ -17,11 +17,14 @@ forges from owned parts but which are NOT Lean-owned:
   narrated ×3 (`:1541`, `:1987-1990`, `:1993`). The halt-proper itself lands at +0
   (`:846`, `:858` — adverse). Enters as `h_halt : 1 ≤ m`.
 * **W-T1** — the copy-catalogue schema (`≥2` indistinguishable copies ⇒ ⊥M1)
-  instantiated on adjoined marks; Lean arithmetic owned (`repeat_has_nontrivial_copy_symmetry`).
+  instantiated on adjoined marks; now Lean-owned as an `M1Forced` uniqueness theorem under
+  copy-relabelling invariance (`m1_forced_copy_family_has_card_lt_two`).
 * **W-BIT** — `BOOK_01:1539`'s "no further bit" scope-transferred to labels on marks.
 
-W-T1 + W-BIT enter as `h_nocopy : m < 2`. The arithmetic shell below is trivial BY
-DESIGN: all forcing content lives in the named hypotheses, none is hidden in a proof.
+The legacy capstone still exposes `h_nocopy : m < 2` for compatibility. The strengthened capstone
+derives that bound from W-T1's semantic hypotheses (M1-forced choice plus relabelling invariance),
+so W-BIT is no longer needed for the copy cap. The remaining independent input is the stable
+re-detection lower bound `h_halt : 1 ≤ m`.
 The one genuinely NEW Lean content is the decidable `no_stationary_in_omega8` (the
 computable half of the 8-kill — full-cycle translation is fixed-point-free on Ω₈).
 
@@ -53,13 +56,22 @@ catalogue — the copy-kill does not fire at m = 1, `|S₁| = 1`. Reuses
 theorem no_overfire_at_one : Fintype.card (Equiv.Perm (Fin 1)) = 1 :=
   D0.Tower.first_instance_canonical
 
-/-- **OB-W3 (OWNED reuse — copy branch of the 10-kill):** ≥ 2 identical marks carry a
-nontrivial copy-symmetry `1 < |S₂|`, so there is no canonical copy — copy-choice is an
-external catalogue ⇒ ⊥M1. Reuses `D0.Tower.repeat_has_nontrivial_copy_symmetry`
-(`NoExtension.lean:47`); the ⊥M1 reading is owned in the `NoExtension` module docstring
-(CASE-2 schema). Instantiation on witness marks = W-T1 (named joint). -/
+/-- **OB-W3 arithmetic input:** two identical marks carry a nontrivial copy-symmetry
+`1 < |S₂|`. The theorem immediately below supplies the missing M1/invariance argument; this
+cardinality fact alone is not credited with the catalogue conclusion. -/
 theorem copy_kill_arith : 1 < Fintype.card (Equiv.Perm (Fin 2)) :=
   D0.Tower.repeat_has_nontrivial_copy_symmetry
+
+/-- **OB-W3 semantic closure.** An M1-forced mark under a constraint invariant under all
+relabellings of the `m` indistinguishable marks forces `m < 2`. Unlike `copy_kill_arith`, this
+proves the catalogue no-go itself rather than only counting `S₂`. -/
+theorem copy_kill_m1
+    (m : ℕ) (Forced : Fin m → Prop)
+    (hInvariant : D0.Tower.NoExtensionBoundary.CopyRelabellingInvariant Forced)
+    (hForced : ∃ a, D0.Foundation.M1Forced Forced a) :
+    m < 2 :=
+  D0.Tower.NoExtensionBoundary.m1_forced_copy_family_has_card_lt_two
+    m Forced hInvariant hForced
 
 /-- **Conditional capstone (honest form).** GIVEN the joints as hypotheses on the number
 `m` of adjoined stationary marks — `1 ≤ m` (re-detection realization, **W-BRIDGE-1′**) and
@@ -71,6 +83,19 @@ theorem card_base_forced_conditional (m : ℕ)
     (h_nocopy : m < 2) :  -- W-T1 + W-BIT: at most one (10-kill)
     Fintype.card Omega8 + m = 9 := by
   rw [card_omega8]; omega
+
+/-- **Strengthened capstone.** Replaces the numerical copy-cap hypothesis `m < 2` by its semantic
+owner: the mark is M1-forced and its constraint is invariant under all relabellings of
+indistinguishable marks. The only remaining forcing hypothesis is the independent lower bound
+`1 ≤ m` supplied by stable re-detection. -/
+theorem card_base_forced_from_m1_copy_invariance
+    (m : ℕ) (h_halt : 1 ≤ m)
+    (Forced : Fin m → Prop)
+    (hInvariant : D0.Tower.NoExtensionBoundary.CopyRelabellingInvariant Forced)
+    (hForced : ∃ a, D0.Foundation.M1Forced Forced a) :
+    Fintype.card Omega8 + m = 9 :=
+  card_base_forced_conditional m h_halt
+    (copy_kill_m1 m Forced hInvariant hForced)
 
 /-- **Sanity corollary:** the forced base IS the owned V₉ count. -/
 theorem forced_base_is_v9 (m : ℕ) (h1 : 1 ≤ m) (h2 : m < 2) :

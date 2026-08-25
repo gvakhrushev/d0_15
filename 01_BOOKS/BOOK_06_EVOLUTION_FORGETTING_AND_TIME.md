@@ -1496,6 +1496,22 @@ Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.
 Electron-beam dusty-plasma experiments are admitted as an external bridge for the Book 06 claim that a finite readout medium is active rather than passive. In the bridge dictionary, the electron beam is a directed readout, dust grains are archive-capacity sinks, and the measured plasma channel is co-produced by beam propagation and archive loading. The laboratory fact that dust loading changes beam deposition, density profiles, and plasma-cloud geometry supports the finite-readout principle at the level of an external analogue.
 
 This bridge does not close a core theorem. In particular, the golden mass-loss and acoustic log-φ proposals remain external experimental targets, not Book 06 proofs.
+## 06.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_06 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| archive (active/archive decomposition, archive Laplacian, archive-pressure kernel) | traced-out complement / environment sector (partial-trace quotient); its canonical finite Laplacian; its effective boundary response |
+| ladder (δ-ladder, scale ladder, RG ladder, active/archive ladder, trace-heat time ladder) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| runtime | ordered finite evolution / finite record dynamics (composition of finite tick maps) |
+| tick (tick fraction, tick-to-space) | discrete evolution endomorphism (time-step operator) |
+| bridge (u↔t bridge, RG/forgetting bridge, dusty-plasma bridge) | typed transfer / calibration map from an internal finite object to an external model object |
+| lift | typed extension of a finite operator along an inclusion of finite carriers; the lifted object is derived, not primitive |
+| shadow (interpolation shadow) | macro interface / smooth-limit reading of a finite object |
+| terminal | absorbing rank-reducing measurement channel; the four terminal roles form the finite instrument alphabet |
 
 
 ## Apparatus — sources & open obligations

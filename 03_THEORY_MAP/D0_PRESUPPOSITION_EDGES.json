@@ -1,0 +1,958 @@
+{
+  "generated_from": "per-book extraction of conceptual presupposition edges, each carrying a quoted reason",
+  "test": "claim A cannot be stated or believed unless claim B already holds; NOT proof-term reuse and NOT co-occurrence",
+  "edges_extracted": 292,
+  "edges_resolving_to_registry_claims": 190,
+  "edges": [
+    {
+      "claim": "D0-COMPACTNESS-DEF-FORCING-001",
+      "presupposes": "D0-SCENE-001",
+      "evidence": "\"3/8 = rank/|\u03a9\u2088| is forced by the D0 posing (D0-COMPACTNESS-DEF-FORCING-001), not by the spin-2 theorems\" (\u00a700.9)"
+    },
+    {
+      "claim": "D0-EW-WINDOW-FORCING-001",
+      "presupposes": "D0-SCENE-001",
+      "evidence": "\"113 = (|ABCD|+1)\u00b7d\u2081\u2083+|V\u2081\u2083|\" reads the terminal alphabet of \u00a700.5 \"ABCD\u00d7{+,-}\u21d2\u03a9_8\" as a closed invariant"
+    },
+    {
+      "claim": "D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001",
+      "presupposes": "D0-BRIDGE-COMPRESSION-001",
+      "evidence": "\"A bridge over a frozen internal object is packaging, closed as PASSPORT-CLOSED (never CORE-THE) under the seven conditions of D0-BRIDGE-COMPRESSION-001\""
+    },
+    {
+      "claim": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "presupposes": "D0-COMPLETION-ADMISSIBILITY-001",
+      "evidence": "\"A two-completion no-go counts only under the strengthened 5-item standard (D0-COMPLETION-ADMISSIBILITY-001) ... Audited so, the E1-E5 no-gos are CLASS-SCOPED\""
+    },
+    {
+      "claim": "D0-CANONICAL-SELF-READING-FUNCTOR-001",
+      "presupposes": "D0-TWO-COMPLETION-NOGO-STRENGTH-001",
+      "evidence": "\"the E1-E5 no-gos are CLASS-SCOPED or WITNESS-ONLY -- never universal impossibility ... The canonical self-reading functor question resolves as Outcome D\""
+    },
+    {
+      "claim": "D0-SELF-READING-NO-STIPULATION-001",
+      "presupposes": "D0-RAW-SCENE-GRAPH-001",
+      "evidence": "\"derived by native_decide from the partition alone (D0-RAW-SCENE-GRAPH-001): commutant 12 is the Aut pair-orbit count ... not a literal\""
+    },
+    {
+      "claim": "D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001",
+      "presupposes": "D0-RAW-SCENE-GRAPH-001",
+      "evidence": "\"The raw self-reading functor is partial (S3) -- forced skeleton raw-derived ... claim promotion requires a provenance chain raw-object -> raw-map -> derived theorem\""
+    },
+    {
+      "claim": "D0-COMPLEX-QM-FORCING-001",
+      "presupposes": "D0-M1-INFO-RECONSTRUCTION-001",
+      "evidence": "\"uniquely yields the complex Hilbert-space structure of QM ... Relatedly, that structure must be complex, not real\" (\u00a700.9)"
+    },
+    {
+      "claim": "D0-SCENE-001",
+      "presupposes": "D0-FOUND-001",
+      "evidence": "\u00a701.2 proof path: \"x\u00b2=x+1 \u21d2 \u03b4\u2080 \u21d2 four terminal roles A,B,C,D\u00d7{\u00b1} \u21d2 \u03a9\u2088 \u21d2 V\u2089 \u21d2 K(9,11,13)\"."
+    },
+    {
+      "claim": "D0-SCENE-001",
+      "presupposes": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "evidence": "\u00a701.7.2: \"\u03a9\u2088={A,B,C,D}\u00d7{+,\u2212} \u2245 Q\u2088 ... The group identification is forced, not declared (see \u00a701.7.1A)\"."
+    },
+    {
+      "claim": "D0-OMEGA8-CENTER-001",
+      "presupposes": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "evidence": "\u00a701.7.1C: \"the \u03a9\u2088\u2245Q\u2088 identification itself stays owned by \u00a701.7.1A / Dedekind\"."
+    },
+    {
+      "claim": "D0-FROBENIUS-DIVISION-3D-001",
+      "presupposes": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "evidence": "\u00a701.7.1C: \"Q\u2088 is exactly their unit group; Im(\u210d)=span{i,j,k} is 3-dimensional \u2014 the three reversible transport directions\"."
+    },
+    {
+      "claim": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+      "presupposes": "D0-LATTICE-FINITENESS-BRIDGE-001",
+      "evidence": "\u00a701.19a.4: leg (i) \"finite is rigorous-only\" is \"the 'why-finite' leg that composes with the 'why-\u03c6' forcing here\"."
+    },
+    {
+      "claim": "D0-QUASICRYSTAL-PROJECTION-001",
+      "presupposes": "D0-QUASICRYSTAL-CARRIER-FORCING-001",
+      "evidence": "\u00a701.19a.4: \"The principled forcing is closed; one technical screw is open \u2014 identifying the specific scene with a specific cut-and-project\"."
+    },
+    {
+      "claim": "D0-UNITY-SPLIT-SPACETIME-001",
+      "presupposes": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+      "evidence": "\u00a701.14: \"the symmetric S\u2082-invariant is specifically rank-3 adjacency routes to the rank-3 = causal-cone node, which is already FORCED\"."
+    },
+    {
+      "claim": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "presupposes": "D0-FOUND-001",
+      "evidence": "\u00a701.14: \"Over the degree-2 carrier \u211a(\u03c6)/\u211a (minimal polynomial x\u00b2\u2212x\u22121) the toral-time operator has exactly two eigen-branches\"."
+    },
+    {
+      "claim": "D0-ISING-ANYON-EXCLUSION-001",
+      "presupposes": "D0-FOUND-001",
+      "evidence": "\u00a701.14: \"3>2 forces an extra independent branch label not generated by p+p\u00b2=1, an external catalog forbidden by M1\"."
+    },
+    {
+      "claim": "D0-JONES-INDEX-PHI-001",
+      "presupposes": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "evidence": "\u00a701.21.3: \"It is the squared quantum dimension d_\u03c4=\u03c6 of the Fibonacci category ... forced as the positive root of x\u00b2=x+1\"."
+    },
+    {
+      "claim": "D0-DETECTION-QUADRATIC-001",
+      "presupposes": "D0-TOWER-STOP-NOEXT-001",
+      "evidence": "\u00a701.14 honest boundary: \"the decidable algebra is the CORE tower-stop content; the categorical 'two kinds exhaust degree-2' is the forcing reading\"."
+    },
+    {
+      "claim": "D0-GAP-E-PORT-EXHAUSTION-001",
+      "presupposes": "D0-DETECTION-QUADRATIC-001",
+      "evidence": "\u00a701.20: \"the cap k \u2264 2 is the OWNED two-comparison-kind count (D0-DETECTION-QUADRATIC-001, :1130)\"."
+    },
+    {
+      "claim": "D0-GAP-W-WITNESS-PLUS-ONE-001",
+      "presupposes": "D0-SCENE-001",
+      "evidence": "\u00a701.20: \"Lower bound: |V_base| = |\u03a9\u2088| + 1 = 9 seals through W-REC\" \u2014 the +1 witness needs |\u03a9\u2088|=8."
+    },
+    {
+      "claim": "D0-SCENE-TRIPLE-UNIQUE-001",
+      "presupposes": "D0-TOWER-STOP-NOEXT-001",
+      "evidence": "\u00a701.19a.2 capstone composes \"exactly three zones (CarrierForcing.admissible_unique)\" as one of its four hypotheses."
+    },
+    {
+      "claim": "D0-FIBONACCI-IF-FORCING-001",
+      "presupposes": "D0-ADLER-WEISS-PARTITION-OWNER-001",
+      "evidence": "\u00a701.21.4: full conjugacy \"is owned by the symbolic-dynamics classification ... recorded as the external-theorem-owner edge D0-ADLER-WEISS-PARTITION-OWNER-001\"."
+    },
+    {
+      "claim": "D0-GRAV-002",
+      "presupposes": "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+      "evidence": "\u00a702.9A: \"The Newton bridge `G\\sim \\ell_P^2 c^3/\\hbar` *uses* `\u0127` only at that bridge layer.\""
+    },
+    {
+      "claim": "D0-DIM8-NETWORK-001",
+      "presupposes": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "evidence": "\u00a702.18.3: \"**The unit-quaternion tower (Dedekind + icosians).** `Q_8\\subset 2T\\subset 2I` with orders `8\\mid 24\\mid 120`\" \u2014 a network leg"
+    },
+    {
+      "claim": "D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001",
+      "presupposes": "D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001",
+      "evidence": "Post-core E5: \"the internal ... residue `1/(3 log \u03c6)` ... `\u2260` rational `\u03bc\u2082` ... so the residue realization is the external Dixmier/Wodzicki passport\""
+    },
+    {
+      "claim": "D0-ALPHA-HOLONOMY-LINEAR-FORM-001",
+      "presupposes": "D0-BARYON-ASYMMETRY-DELTA0-001",
+      "evidence": "\u00a702.13.h: \"Because the CP-seam is the *directed* 3-cycle ..., one closure crosses it **once** and cannot return, so `N` is nilpotent\""
+    },
+    {
+      "claim": "D0-Q8-SIN-CHANNEL-001",
+      "presupposes": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "evidence": "\u00a702.13.h: \"channel `\\sin` (off-diagonal), **not** the trace `\\cos` \u2014 forced by `Q_8`, `G^2=-I`\""
+    },
+    {
+      "claim": "D0-ALPHA-SEAM-FORM-FORCED-001",
+      "presupposes": "D0-SEAM-HOLONOMY-001",
+      "evidence": "\u00a702.13.h obligation (ii): \"the cross-scope identification of the registered multiplier rate (`D0-SEAM-HOLONOMY-001`) with the owned rate value\""
+    },
+    {
+      "claim": "D0-ALPHA-SEAM-FORM-FORCED-001",
+      "presupposes": "D0-FIBONACCI-IF-FORCING-001",
+      "evidence": "\u00a702.13.h obligation (ii): \"identification of the registered multiplier rate ... with the owned rate value (`D0-FIBONACCI-IF-FORCING-001`)\""
+    },
+    {
+      "claim": "D0-ALPHA-SEAM-FORM-FORCED-001",
+      "presupposes": "D0-PI0-DISCRETE-ANGLE-001",
+      "evidence": "\u00a702.13.h: \"angle `\\theta_{seam}=2\\pi_0(2-\\varphi)=12/5` \u2014 **exact in `\\mathbb Q(\\varphi)`**\" is an ingredient \"fixed *before* any comparison\""
+    },
+    {
+      "claim": "D0-ALPHA-HOLONOMY-002",
+      "presupposes": "D0-ALPHA-SEAM-FORM-FORCED-001",
+      "evidence": "\u00a702.13.h: \"the **9-digit agreement** with CODATA ... is an empirical **CHK** \u2014 a CONSEQUENCE of the form, never the criterion\""
+    },
+    {
+      "claim": "D0-ALPHA-MEASUREMENT-LIMIT-001",
+      "presupposes": "D0-ALPHA-HOLONOMY-002",
+      "evidence": "\u00a702.13.h: \"*Level 4:* the last `\\sim10^{-8}` is a falsifiable **HYP** measurement-limit bet\" \u2014 residual of the 9-digit CHK"
+    },
+    {
+      "claim": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+      "presupposes": "D0-ALPHA-ALG-CLOSED-001",
+      "evidence": "\u00a702.13: \"the seam invariant `\u0394\u03b1 = |\u03b1_top\u207b\u00b9 \u2212 \u03b1_alg\u207b\u00b9|`, exact in \u211a(\u03c6), nonzero, `0<|\u0394\u03b1|<\u03c6\u207b\u00b9\u2076`\""
+    },
+    {
+      "claim": "D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001",
+      "presupposes": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+      "evidence": "\u00a702.13.7: \"The neutrino sterile probability `P_sterile = \u0394_\u03b1\u00b2` is an exact `\u211a(\u03c6)` element\""
+    },
+    {
+      "claim": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "presupposes": "D0-DELTA-ALPHA-MOMENT-001",
+      "evidence": "\u00a702.13: \"what stays frontier are the two *residue amplitudes* `\u03bc\u2082=2\u00b9\u00b9\u03c0\u2080\u03c6\u207b\u00b2` and `\u03bc\u2081=1/3`\" \u2014 \u03bc\u2082 exists only inside the moment shape"
+    },
+    {
+      "claim": "D0-ALPHA-RESIDUE-DELTA-NORMALIZATION-NOGO-001",
+      "presupposes": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+      "evidence": "\u00a702.13.7: \"the finite residue alone may **not** be promoted to a closed \u0394\u03b1 normalization\""
+    },
+    {
+      "claim": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "presupposes": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+      "evidence": "\u00a702.15: \"The finite Feshbach-Schur effective operator `W_eff(z)` ... extends to the canonical phi-ladder refinement tower\""
+    },
+    {
+      "claim": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "presupposes": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "evidence": "\u00a702.15: \"golden cylinder language ... canonically determines its refinement Bratteli incidence ... **So** the present core DOES carry a canonical renormalization tower\""
+    },
+    {
+      "claim": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
+      "presupposes": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "evidence": "\u00a702.15: \"unique AF trace ratio `phi`, forced scale ratio `phi` (`D0-PERRON-SCALE-FLOW-OWNER-001`). So the present core DOES carry a canonical renormalization tower\""
+    },
+    {
+      "claim": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
+      "presupposes": "D0-ARCHIVE-LIGHTPROFINITE-001",
+      "evidence": "\u00a702.15: \"the **canonicity/forcing** of the upward inductive structure over the corpus's *downward* inverse limit (`D0-ARCHIVE-LIGHTPROFINITE-001`)\""
+    },
+    {
+      "claim": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+      "presupposes": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+      "evidence": "\u00a702.15: \"AF martingale Dirac^2 multiplicities ... differ from the scene Laplacian's for ANY scale ... So `PRIM-CANONICAL-33-SCENE-ANCHOR` does not exist\""
+    },
+    {
+      "claim": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
+      "presupposes": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
+      "evidence": "\u00a702.15: \"the unique trace=cyclic line gives a 33-dim reduction ... that does not match the tripartite scene `(9,11,13)`\""
+    },
+    {
+      "claim": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
+      "presupposes": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+      "evidence": "\u00a702.15: \"Perron-trace compatibility ... induces genuine isometries `J_N` ... The Dirac/Laplacian defect test **then** FAILS canonically\""
+    },
+    {
+      "claim": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
+      "presupposes": "D0-SCENE-LAPLACIAN-SPECTRUM-FORCED-001",
+      "evidence": "\u00a702.15: \"the spectral bunching, and the whole shape of the transport obstruction are *downstream* consequences of the single zone forcing\""
+    },
+    {
+      "claim": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "presupposes": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "evidence": "\u00a702.13.7: \"the Neumann index `k` ... is cert-closed as the discrete time tick (`D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001`, combined `D0-STATIC-TO-DYNAMICS-OWNER-001`)\""
+    },
+    {
+      "claim": "D0-Z2-SPINOR-COVER-001",
+      "presupposes": "D0-MASTER-EVOLUTION-001",
+      "evidence": "\u00a702.34: \"`trace_T_pow_eq_signed_lucas` carries a Lucas sign, `det_T_pow_square_eq_one` carries `det T = \u22121` ... seven faces of the *same* \u2124\u2082\""
+    },
+    {
+      "claim": "D0-Z2-SPINOR-COVER-001",
+      "presupposes": "D0-Q8-DEDEKIND-MINIMALITY-001",
+      "evidence": "\u00a702.34, face 3: \"The center = commutator = Frattini subgroup of Q\u2088, all equal to `{\u00b11}`\""
+    },
+    {
+      "claim": "D0-Z2-SPINOR-COVER-001",
+      "presupposes": "D0-VIETA-GALOIS-ABCD-001",
+      "evidence": "\u00a702.34, face 1: \"ABCD = the Galois data \u2014 A,B are the conjugation-invariant elementary symmetric functions, C,D the conjugate pair\""
+    },
+    {
+      "claim": "D0-BSD-RANK-PASSPORT-001",
+      "presupposes": "D0-KERNEL-ZONE-SPLIT-001",
+      "evidence": "\u00a702.30: \"it **re-exports** the proven scene rank-3 / nullity-30 fact\"; rank_D0 is \"the same rank/nullity principle as the K(9,11,13) scene\""
+    },
+    {
+      "claim": "D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "evidence": "\u00a703.21: \"Strengthening of the profinite no-go: NOT just one tower, but EVERY admissible present-core tower fails to realize mu_2\""
+    },
+    {
+      "claim": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "presupposes": "D0-DELTA-ALPHA-MOMENT-001",
+      "evidence": "\u00a703.21: \"The finite spectral moments mu_0=0, mu_1=1/3, mu_2=12288/5 are owned exactly ... They are NOT a Dixmier logarithmic trace coefficient\""
+    },
+    {
+      "claim": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "presupposes": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "evidence": "\u00a703.21: the no-go's target mu_2 \"owned exactly (D0-DELTA-ALPHA-MOMENT-001, D0-ALPHA-MU2-FULL-LEDGER-001)\"; without the owned value there is nothing to deny"
+    },
+    {
+      "claim": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+      "presupposes": "D0-DIXMIER-RESIDUE-OWNER-001",
+      "evidence": "\u00a703.21: \"Dixmier residue-extraction stays the external owner-edge ...; the residue-normalization seam ... stays PROOF-TARGET\""
+    },
+    {
+      "claim": "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001",
+      "presupposes": "D0-VNEXT-FESHBACH-TOWER-COMPATIBILITY-OWNER-001",
+      "evidence": "\u00a703.21: \"the tower remains formalism until Feshbach compatibility is certified -- which is blocked upstream\""
+    },
+    {
+      "claim": "D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001",
+      "presupposes": "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001",
+      "evidence": "\u00a703.21: \"the AF martingale Dirac and its finite log-det action remain FORMALISM, not D0 physical dynamics\""
+    },
+    {
+      "claim": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "presupposes": "D0-DELTA-ALPHA-EXACT-001",
+      "evidence": "\"The D0-internal object is the dimensionless sterile-seam channel P_sterile := \u0394\u03b1\u00b2, over the CORE-exact gluing anomaly \u0394\u03b1 (D0-DELTA-ALPHA-EXACT-001)\" (\u00a704.9.2)"
+    },
+    {
+      "claim": "D0-PMNS-SEAM-TOPOLOGY-001",
+      "presupposes": "D0-MIXING-HIERARCHY-INVERSION-001",
+      "evidence": "\"Projected onto the kernel 30 = 8\u229510\u229512 (D0-MIXING-HIERARCHY-INVERSION-001)\" \u2014 the \u03b4\u2080-angle family is stated on that kernel (\u00a704.5.5)"
+    },
+    {
+      "claim": "D0-INVARIANT-GENERATION-BRIDGE-001",
+      "presupposes": "D0-MATTER-REP-001",
+      "evidence": "\"The OWNED generation space \u2026 the M\u2083 commutant block acts on (Root R1, D0-MATTER-REP-001) \u2026 are ONE subspace of \u2102\u00b3\u00b3\" (THE 04.R1-B)"
+    },
+    {
+      "claim": "D0-INVARIANT-GENERATION-BRIDGE-001",
+      "presupposes": "D0-P-INVARIANT-MINIMAL-001",
+      "evidence": "\"the extremal-minimal observable algebra R^Aut = (\u2102^V)^Aut (D0-P-INVARIANT-MINIMAL-001) \u2026 same basis, dim 3, same Reynolds projector\" (THE 04.R1-B)"
+    },
+    {
+      "claim": "D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-RAW-COMMUTANT-WEDDERBURN-001",
+      "evidence": "\"On that M\u2083 the grading is two-completion (nc 8 vs 12, D0-GRADING-NEUTRAL-CURRENT-MAXIMALITY-NOGO-001)\" \u2014 the M\u2083 block is the Wedderburn output (\u00a704.0)"
+    },
+    {
+      "claim": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+      "presupposes": "D0-RAW-COMMUTANT-WEDDERBURN-001",
+      "evidence": "\"The raw commutant Wedderburn structure is now DERIVED \u2026 On that M\u2083 \u2026 the lepton orbit-keyed selector exists but 2 orbits < 3 generations\" (\u00a704.0)"
+    },
+    {
+      "claim": "D0-X5-LEPTON-CONTRACT-001",
+      "presupposes": "D0-LEPTON-BRANCH-FIXING-OPERATOR-OWNER-001",
+      "evidence": "\"PRIM-LEPTON-BRANCH-FIXING-OPERATOR is not constructible from the frozen 2-orbit data; the third datum is genuinely external (postulated HYP in D0-X5-LEPTON-CONTRACT-001)\" (Iter23)"
+    },
+    {
+      "claim": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+      "presupposes": "D0-EDGE-RAMIFICATION-001",
+      "evidence": "\"The shell-torus companion cover C4 \u00d7 R3 \u2026 of D0-EDGE-RAMIFICATION-001 \u2014 has ramification/Puiseux index = 1/cycle-length, so the cover yields exactly the exponent row\""
+    },
+    {
+      "claim": "D0-LEPTON-RIEMANN-HURWITZ-BRANCH-INDEX-001",
+      "presupposes": "D0-EDGE-RAMIFICATION-001",
+      "evidence": "\"The charged-lepton shell-torus cover is assembled from cyclic companion blocks \u2014 the 4-cycle C4 \u2026 and 3-cycle R3 \u2026 of D0-EDGE-RAMIFICATION-001\""
+    },
+    {
+      "claim": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+      "presupposes": "D0-BARE-GRAPH-DECIMAL-NOGO-001",
+      "evidence": "\"The general (raw-graph\u2192coefficient) owner is therefore a closed-negative NO-GO; only an indirect derivation could supply the coefficient\" (\u00a704.8)"
+    },
+    {
+      "claim": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+      "presupposes": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+      "evidence": "\"the scout records the existing finite scaffolds the owner would be built on \u2026 the coefficient owner itself stays PROOF-TARGET\" (\u00a704.8)"
+    },
+    {
+      "claim": "D0-LEPTON-FINITE-GREEN-RESOLVENT-OWNER-001",
+      "presupposes": "D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001",
+      "evidence": "\"the missing artifacts are the finite Green function, the Puiseux extraction theorem, branch-index uniqueness\"; resolvent owner \"closes the resolvent checkpoint\" (\u00a704.8)"
+    },
+    {
+      "claim": "D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001",
+      "presupposes": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
+      "evidence": "\"the generation mass HIERARCHY from the overlap eigenvalues + ramification exponents (D0-LEPTON-YUKAWA-HIERARCHY-OWNER-001)\" (\u00a704.16)"
+    },
+    {
+      "claim": "D0-HIGGS-PHASON-CONDENSATION-OWNER-001",
+      "presupposes": "D0-TORUS-CORE13-GEOMETRY-001",
+      "evidence": "\"deriving the Higgs VEV from the V13 condensation \u2026; the shell geometry D0-TORUS-CORE13-GEOMETRY-001 and the rank-2 projector are CORE, the EOM is missing\""
+    },
+    {
+      "claim": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001",
+      "presupposes": "D0-HIGGS-RETURN-QUOTIENT-ACTION-OWNER-001",
+      "evidence": "\"A nontrivial conjugation orbit Q_n = T\u207f Q\u2080 T\u207b\u207f requires a Q\u2080 that does not commute with T\" \u2014 orbit stated over the return action"
+    },
+    {
+      "claim": "D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001",
+      "evidence": "\"Every present-core projector is a polynomial a*1+b*T in the return operator and commutes with T, giving a constant orbit\""
+    },
+    {
+      "claim": "D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001",
+      "presupposes": "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001",
+      "evidence": "\"The five D\u03a3 roles \u2026 form a single canonical directed 5-cycle (D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001). But there is no canonical rank-5 role-cycle carrier\""
+    },
+    {
+      "claim": "D0-CKM-CLASS5-SELECTOR-OWNER-001",
+      "presupposes": "D0-CLASS5-ALIASING-001",
+      "evidence": "\"The class-5 aliasing exclusion is owned upstream (D0-CLASS5-ALIASING-001); \u00a704.10 now also carries its selector owner\""
+    },
+    {
+      "claim": "D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001",
+      "presupposes": "D0-HYPERCHARGE-FLOW-LATTICE-001",
+      "evidence": "\"this 327-dimensional flow alone underdetermines the hypercharge row \u2026 The flow\u2192Weyl-ledger map \u03a6 is now a certified NO-GO\" (\u00a704.11)"
+    },
+    {
+      "claim": "D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001",
+      "presupposes": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+      "evidence": "\"The 2-dimensional freedom seen when a right-neutral \u03bd_R is added is the B\u2212L direction\" \u2014 the bridge exists only to fix that direction"
+    },
+    {
+      "claim": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "presupposes": "D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001",
+      "evidence": "\"The one-generation 5-field hypercharge row is the unique anomaly-free assignment \u2026 The 2-dimensional freedom \u2026 is the B\u2212L direction, not the row\""
+    },
+    {
+      "claim": "D0-GEN-MASS-001",
+      "presupposes": "D0-MASS-CHAIN-001",
+      "evidence": "\"The winding extension m_rest = m_0\u00b7W \u2026 per-particle W values are a physical input \u2026 exactly the boundary of the matter-sector no-go D0-GEN-MASS-001\""
+    },
+    {
+      "claim": "D0-RAW-SELF-READING-EXTRACTIONS-001",
+      "presupposes": "D0-RAW-READOUT-CATEGORY-001",
+      "evidence": "\"Against the raw partial functor: the grading/neutral-current is two-completion \u2026 The C^33 response carrier is raw (D0-RAW-READOUT-CATEGORY-001)\" (\u00a704.0)"
+    },
+    {
+      "claim": "D0-NEUTRINO-MASS-PASSPORT-001",
+      "presupposes": "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+      "evidence": "\"m_nu/m_e ~ P_sterile = Delta_alpha^2 is external packaging over the CORE seam Delta_alpha\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001",
+      "presupposes": "D0-DELTA-ALPHA-EXACT-001",
+      "evidence": "\"P_sterile=Delta_alpha^2 is exact Q(phi)\"; external neutrino data \"may not tune Delta_alpha\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-ALPHA-ALG-CLOSED-001",
+      "presupposes": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "evidence": "\"the `\u03bc\u2082=2\u00b9\u00b9\u03c0\u2080\u03c6\u207b\u00b2` carrier is the M1-forced full `\u039b*(V\u2081\u2081)` ledger (`D0-ALPHA-MU2-FULL-LEDGER-001`)\" (\u00a705.6.1)"
+    },
+    {
+      "claim": "D0-ALPHA-ALG-CLOSED-001",
+      "presupposes": "D0-ALPHA-MU1-RANKTRACE-001",
+      "evidence": "\"`\u03bc\u2081=1/3` is the rank-normalized first-return trace (`D0-ALPHA-MU1-RANKTRACE-001`)\" (\u00a705.6.1)"
+    },
+    {
+      "claim": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+      "presupposes": "D0-GENERATIVE-DYNAMICS-001",
+      "evidence": "\"exactly the shape of the Feshbach\u2013Schur resolvent moment expansion (`D0-GENERATIVE-DYNAMICS-001`)\" (\u00a705.6.1)"
+    },
+    {
+      "claim": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+      "presupposes": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "evidence": "\"The `2^11` pairing is cited to `D0-ALPHA-MU2-FULL-LEDGER-001` (not re-minted)\"; \"residue->Delta_alpha normalization via the 2^11 pairing\""
+    },
+    {
+      "claim": "D0-ALPHA-PROFINITE-TOWER-NOGO-001",
+      "presupposes": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
+      "evidence": "\"The canonical phi-ladder spectral tower is CERT-CLOSED ...; the Dixmier realization of `mu_2` is a NO-GO\""
+    },
+    {
+      "claim": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "presupposes": "D0-IM-COSMO-001",
+      "evidence": "\"energy R_n=phi^n-1 (D0-IM-COSMO-001) ... on the common window n\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "presupposes": "D0-IM-COSMO-002",
+      "evidence": "\"relative pressure dR_n=phi^(n-1) (D0-IM-COSMO-002) on the common window n\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+      "presupposes": "D0-IM-COSMO-001",
+      "evidence": "\"the phason EOS form w_D0 = pressure/rho is well-defined ... (rho from archive energy D0-IM-COSMO-001, p from log-det pressure)\""
+    },
+    {
+      "claim": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+      "presupposes": "D0-PHASON-WZ-KERNEL-ONLY-NOGO-001",
+      "evidence": "\"the 30-dim archive kernel ALONE does not determine w(z) ... a finite pressure-energy operator is required\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+      "presupposes": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+      "evidence": "\"the phason EOS form w_D0 = pressure/rho is well-defined on the nonzero-energy domain ...; the explicit w_D0(u) stays PROOF-TARGET\""
+    },
+    {
+      "claim": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+      "presupposes": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "evidence": "\"the sign/normalization map from this POSITIVE internal archive ratio (`w_N \u2192 +\u03c6\u207b\u00b9`) to the NEGATIVE physical dark-energy\" (\u00a705.6.1)"
+    },
+    {
+      "claim": "D0-PHASON-WZ-CPL-PASSPORT-001",
+      "presupposes": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+      "evidence": "\"the CPL (w0,wa) reading is a downstream passport (`D0-PHASON-WZ-CPL-PASSPORT-001` PASSPORT-CLOSED)\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-BARE-GRAPH-DECIMAL-NOGO-001",
+      "presupposes": "D0-LEPTON-002",
+      "evidence": "\"a raw finite graph operator cannot DIRECTLY output the 17-digit charged-lepton decimals ... decimals stay HYP (D0-LEPTON-002)\""
+    },
+    {
+      "claim": "D0-LEPTON-INDIRECT-GREEN-PUISEUX-SCOUT-001",
+      "presupposes": "D0-EDGE-002",
+      "evidence": "\"existing finite assets named (shell-torus/edge D0-EDGE-002 Puiseux target / D0-EDGE-ALPHA-001 zetaEdge / D0-EDGE-RAMIFICATION-001 companion cover ...)\""
+    },
+    {
+      "claim": "D0-LEPTON-PUISEUX-DECIMAL-SECTION-001",
+      "presupposes": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+      "evidence": "\"exponent row (p_e,p_mu,p_tau)=(0,1/4,1/3) ...; the decimal section is the external EFT/IR functor\" \u2014 a section of that row"
+    },
+    {
+      "claim": "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
+      "presupposes": "D0-LEPTON-GREEN-PUISEUX-OPERATOR-001",
+      "evidence": "\"the lepton branch-index \u2192 operator shortcut is forbidden (two distinct 4\u00d74 companions share `x\u2074\u2212\u03bb`)\" (\u00a705.6.1 deep-stitch)"
+    },
+    {
+      "claim": "D0-PHI-CSTAR-PASSPORT-001",
+      "presupposes": "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
+      "evidence": "\"the external crossed-product C(X_phi) rtimes Z unique trace is a passport over the CERT-CLOSED cylinder trace\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-PHI-CSTAR-PASSPORT-001",
+      "presupposes": "D0-BRIDGE-COMPRESSION-001",
+      "evidence": "\"a bridge over a frozen internal object is packaging, closed as PASSPORT-CLOSED ... under seven conditions\" (\u00a705.0, \u00a705.6)"
+    },
+    {
+      "claim": "D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001",
+      "presupposes": "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
+      "evidence": "\"two independent codings of the golden hull agree on all finite cylinder languages AND frequencies over increasing windows\""
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "presupposes": "D0-PHI-LADDER-SEMIGROUP-001",
+      "evidence": "\"the smooth compact Riemannian/spin manifold is a downstream macro-shadow over the finite metric tower + phi envelope\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001",
+      "presupposes": "D0-GHP-GOLDEN-CAUCHY-BOUND-001",
+      "evidence": "\"the step-bound series ... is summable -- the internal-metric GHP-Cauchy bound ...; The smooth-manifold reconstruction stays external Rieffel/GHP + Connes\""
+    },
+    {
+      "claim": "D0-REHEATING-PERCOLATION-OWNER-001",
+      "presupposes": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "evidence": "\"the transition disconnected->connected is real ...; the transition replaces the inflaton (`D0-REHEATING-PERCOLATION-OWNER-001`)\" (\u00a705.0)"
+    },
+    {
+      "claim": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "presupposes": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "evidence": "\"closes the connectivity-onset reheating budget `E_reheat = E_connected \u2212 E_pre`: the pre-threshold disconnected baseline is `E_pre = 0`\""
+    },
+    {
+      "claim": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "presupposes": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "evidence": "\"The finite heat-energy functional `E(u) = \u2212\u2202_u log H(u)` over the `K(9,11,13)` Laplacian spectrum closes the ... reheating budget\""
+    },
+    {
+      "claim": "D0-REHEATING-NO-INFLATON-NOGO-001",
+      "presupposes": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "evidence": "\"It is inflationless and spectrum-determined \u2014 no inflaton scalar and no tunable reheating temperature\" (\u00a705.6.1 reheating budget)"
+    },
+    {
+      "claim": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "presupposes": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+      "evidence": "\"the connectivity spectral gap Fiedler `\u03bb\u2082=20>0` ...\"; \"the Fiedler freeze-out `k_*\u00b2=\u03bb\u2082=20`\" \u2014 freeze-out wavenumber IS \u03bb\u2082"
+    },
+    {
+      "claim": "D0-C-LIGHTCONE-PERCOLATION-OWNER-001",
+      "presupposes": "D0-CONNECTIVITY-SPECTRAL-GAP-SPEED-001",
+      "evidence": "\"the connectivity spectral gap Fiedler `\u03bb\u2082=20>0` from explicit \u211a-eigenvectors and `c_{D0}=\u2113\u2080/\u03c4\u2080=1` as a unit gauge\""
+    },
+    {
+      "claim": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "presupposes": "D0-PHI-LADDER-SEMIGROUP-001",
+      "evidence": "\"closed by three linked finite owners \u2014 ... and the \u03c6 tick weight `\u03c6\u207b\u00b9` with its `A(s)=A\u2080e^{\u2212s log \u03c6}` semigroup envelope\""
+    },
+    {
+      "claim": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "presupposes": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "evidence": "\"Dynamics is therefore derived, not primitive (`D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001`); no primitive time, clock, or SI unit enters\""
+    },
+    {
+      "claim": "D0-SM-HYPERCHARGE-ROW-OWNER-001",
+      "presupposes": "D0-SM-ANOMALY-CANCELLATION-OWNER-001",
+      "evidence": "\"The 5-field hypercharge row is the unique anomaly-free assignment up to normalization + `u\u2194d` labeling\" (\u00a705.6.1)"
+    },
+    {
+      "claim": "D0-PAGE-TURNING-POINT-RANK-THEOREM-001",
+      "presupposes": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "evidence": "\"the finite-rank Page bound S_page=min(nA,nE)/D ... =1/2 at the Page turn nA=nE\"; turning point peaks at a=D/2"
+    },
+    {
+      "claim": "D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001",
+      "presupposes": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "evidence": "\"over H=H_active(+)H_env, and global unitarity conserves total rank (nA+nE=D) so information is transferred not deleted\""
+    },
+    {
+      "claim": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
+      "presupposes": "D0-LUCAS-VORONOI-MARKOV-PARTITION-001",
+      "evidence": "\"the Voronoi-cell-exact Markov property is since realized internally on its symbolic leg (`D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001`, CERT-CLOSED)\""
+    },
+    {
+      "claim": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+      "presupposes": "D0-LUCAS-VORONOI-MARKOV-PARTITION-001",
+      "evidence": "\"the toral time matrix T ... generates a finite partition ...; full topological conjugacy via Williams shift-equivalence ... stays PROOF-TARGET\""
+    },
+    {
+      "claim": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+      "presupposes": "D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001",
+      "evidence": "\"a 3-point seed does not canonically fix a partition and `-M_phi` (negative entry) is not the symbolic SSE\""
+    },
+    {
+      "claim": "D0-ISING-ANYON-EXCLUSION-001",
+      "presupposes": "D0-FIBONACCI-ANYON-UNIQUENESS-001",
+      "evidence": "\"Fibonacci uniqueness as the degree-2 fusion bottleneck over \u211a(\u03c6)\"; \"Ising excluded as a degree-2 carrier (3 simple objects > 2 eigen-branches)\""
+    },
+    {
+      "claim": "D0-PERRON-SCALE-FLOW-OWNER-001",
+      "presupposes": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
+      "evidence": "\"the golden cylinder language recovers its Bratteli incidence `M_phi` (Perron `phi`), with forced scale ratio `phi`\""
+    },
+    {
+      "claim": "D0-POSTCORE-EXTENSION-BOUNDARY-001",
+      "presupposes": "D0-POSTCORE-EXTENSION-CATEGORY-001",
+      "evidence": "\"The typed `D0AdmissibleExtension` category (`D0-POSTCORE-EXTENSION-CATEGORY-001`) frames five beyond-present-core interfaces ..., capstone `D0-POSTCORE-EXTENSION-BOUNDARY-001`\""
+    },
+    {
+      "claim": "D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001",
+      "presupposes": "D0-POSTCORE-EXTENSION-CATEGORY-001",
+      "evidence": "\"the typed category ... frames five beyond-present-core interfaces ... with a real proof-edge dependence graph \u2014 `D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001`\""
+    },
+    {
+      "claim": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "presupposes": "D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001",
+      "evidence": "\"Scene fingerprint of K(9,11,13) owned (CERT ...). Refinement rule: underdetermined -- >=2 admissible history families ... inequivalent\""
+    },
+    {
+      "claim": "D0-X5-FULL-MODEL-001",
+      "presupposes": "D0-FIVE-PRIMITIVE-DEPENDENCE-001",
+      "evidence": "\"All five contracts admit a joint compatible model ...; each non-vacuous + deletion-minimal; dependence one edge `P1\u2192P2`; no merge\""
+    },
+    {
+      "claim": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "presupposes": "D0-DARK-RATIO-TRANSFER-OWNER-001",
+      "evidence": "\"the dark/transport composition `\u03b3=10`, `1/11 + 10/11` (`D0-DARK-RATIO-TRANSFER-OWNER-001`, ..., `D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001`)\""
+    },
+    {
+      "claim": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "presupposes": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "evidence": "\"the dark/transport composition ... (`D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001`, `D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001`)\" \u2014 composition of the named transfers"
+    },
+    {
+      "claim": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "presupposes": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "evidence": "\u00a706.8.S Block II: \"the order-k term carries exactly k internal archive circulations before observable return. The Neumann index k IS the discrete time tick\""
+    },
+    {
+      "claim": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "presupposes": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "evidence": "\u00a706.8.S Block III: \"Each archive-delay tick multiplies the active amplitude by \u03c6\u207b\u00b9\" \u2014 the tick must already exist to carry a weight"
+    },
+    {
+      "claim": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+      "presupposes": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "evidence": "\u00a706.8.S: \"hence A_{k+1}=\u03c6\u207b\u00b9A_k, and the unique continuous envelope is A(s)=A\u2080\u00b7exp(\u2212s\u00b7log \u03c6)\""
+    },
+    {
+      "claim": "D0-TIME-ARROW-ORDERED-SELF-READOUT-001",
+      "presupposes": "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001",
+      "evidence": "\u00a706.8.S Block I: \"So registration is forced ordered, and that ordered registration is the time arrow\""
+    },
+    {
+      "claim": "D0-STATIC-TO-DYNAMICS-OWNER-001",
+      "presupposes": "D0-JY-NONCOMMUTATIVE-ORDER-OBSTRUCTION-001",
+      "evidence": "\u00a706.8.S chain: \"static finite scene -> self-readout -> [J,Y] != 0 -> ordered registration -> Feshbach archive delay index k\""
+    },
+    {
+      "claim": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "presupposes": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+      "evidence": "\u00a706.8.S: \"the combined D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001 records that the order and the tick weight are both derived\""
+    },
+    {
+      "claim": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+      "presupposes": "D0-TIME-ARROW-ORDERED-SELF-READOUT-001",
+      "evidence": "\u00a706.8.S: \"records that the order and the tick weight are both derived\" \u2014 the 'order' half is the ordered self-readout arrow"
+    },
+    {
+      "claim": "D0-FESHBACH-CONSTRAINT-SUBMANIFOLD-BRIDGE-001",
+      "presupposes": "D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001",
+      "evidence": "\u00a706.8.S: \"The retained/archive Feshbach\u2013Schur delay has a standard non-reciprocal-dynamics analogue: a constrained Hamiltonian embedding with auxiliary variables\""
+    },
+    {
+      "claim": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "presupposes": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "evidence": "\u00a706.8.S Cosmology handoff: \"The heat-trace time u and the reheating energy E(u)=\u2212\u2202_u log H(u) hand off to the cosmology chain in BOOK_08\""
+    },
+    {
+      "claim": "D0-GENERATIVE-DYNAMICS-001",
+      "presupposes": "D0-DELTA-ALPHA-EXACT-001",
+      "evidence": "\u00a706.34a(2) \"Time = the seam that cannot close \u2026 The scalar gluing anomaly is the already-certified \u0394\u03b1 (D0-DELTA-ALPHA-EXACT-001)\""
+    },
+    {
+      "claim": "D0-GENERATIVE-DYNAMICS-001",
+      "presupposes": "D0-ARCHIVE-NEUMANN-TICK-OWNER-001",
+      "evidence": "\u00a706.34a(1): \"The Feshbach series \u2026 indexes archive excursions by k: the depth k *is* the D0 algorithmic time\""
+    },
+    {
+      "claim": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+      "presupposes": "D0-SIGNATURE-31-SPLIT-001",
+      "evidence": "\u00a706.30a: \"a Lorentzian (3,1) form has exactly one timelike axis and three spacelike, the counts match the one Pisot arrow\""
+    },
+    {
+      "claim": "D0-SIGNATURE-31-SPLIT-001",
+      "presupposes": "D0-TIME-2D-PISOT-001",
+      "evidence": "[^b06-44]: \"forcing: D0-SIGNATURE-31-SPLIT-001; time-as-T^2 minimality: D0-TIME-2D-PISOT-001\" \u2014 the '1' leg is the single toral flow"
+    },
+    {
+      "claim": "D0-TIME-MODULAR-FLOW-OWNER-001",
+      "presupposes": "D0-TIME-2D-PISOT-001",
+      "evidence": "\u00a706.30a: \"D0 proves only the Pisot/symbolic structure of the single time flow; identifying that flow with the Tomita\u2013Takesaki modular automorphism is the named external owner\""
+    },
+    {
+      "claim": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
+      "presupposes": "D0-WILLIAMS-SHIFT-EQUIVALENCE-OWNER-001",
+      "evidence": "\u00a706.30a Iter25: the Markov property is \"transported through the owned orientation-twisted conjugacy T \u223c \u2212M_\u03c6 (Lean-verified conjugacy_T_negMphi, det U = +1)\""
+    },
+    {
+      "claim": "D0-TORAL-TIME-MARKOV-CONJUGACY-001",
+      "presupposes": "D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001",
+      "evidence": "\u00a706.30a Iter23: \"it does not by itself establish topological conjugacy \u2014 that still requires the geometric Adler\u2013Weiss Markov partition\""
+    },
+    {
+      "claim": "D0-LUCAS-VORONOI-MARKOV-PARTITION-001",
+      "presupposes": "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001",
+      "evidence": "\u00a706.30a: \"an internal partition built from integer Lucas-trace data: Tr(T\u207f) = (\u22121)\u207f L\u2099 gives explicit boundary cuts L\u2082=3, L\u2083=4, L\u2085=11\""
+    },
+    {
+      "claim": "D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001",
+      "presupposes": "D0-LUCAS-VORONOI-MARKOV-PARTITION-001",
+      "evidence": "\u00a706.30a Outcome B: \"The internal Lucas-Voronoi symbolic construction is closed-negative at the canonical-partition step: a 3-point periodic seed does not canonically determine a Markov partition\""
+    },
+    {
+      "claim": "D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001",
+      "evidence": "\u00a706.30a: \"The forced dynamical invariants (spectrum, entropy log phi, trace, det) do not determine the Markov partition\""
+    },
+    {
+      "claim": "D0-MODULAR-TIME-FLAVOR-001",
+      "presupposes": "D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001",
+      "evidence": "\u00a706.30a: \"The toral time generator T \u2026 is a golden/hyperbolic element of GL(2,\u2124) (det \u22121, h_KS=log \u03c6)\" \u2014 the det/entropy data is the premise"
+    },
+    {
+      "claim": "D0-MODULAR-TIME-FLAVOR-001",
+      "presupposes": "D0-PMNS-SEAM-TOPOLOGY-001",
+      "evidence": "\u00a706.30a: \"sin\u00b2\u03b8\u2081\u2082=\u2153\u22122\u03b4\u2080\u00b2 is the closed-loop (\u03b4\u2080\u00b2) member of the derived seam-topology rule (D0-PMNS-SEAM-TOPOLOGY-001)\""
+    },
+    {
+      "claim": "D0-RAW-HISTORY-CATEGORY-001",
+      "presupposes": "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
+      "evidence": "\u00a706.0: raw Hist_D0 closes only as strict subcategory because \"the general cross-stage refinement morphism is absent (PRIM-SCENE-HISTORY-REFINEMENT-RULE)\""
+    },
+    {
+      "claim": "D0-X5-HISTORY-CONTRACT-001",
+      "presupposes": "D0-SCENE-HISTORY-REFINEMENT-RULE-OWNER-001",
+      "evidence": "\u00a706.0: contract \"has a concrete model (all-walks tower, depth-2 15708) and is deletion-minimal (15708 \u2260 14990)\" \u2014 the H3 tower data"
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "presupposes": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "evidence": "\"a downstream macro-shadow, active only **conditional** on the external owners `D0-RIEFFEL-GHP-CONTINUUM-OWNER-001` (GHP convergence)\" (\u00a707.26)"
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "presupposes": "D0-CONNES-RECONSTRUCTION-OWNER-001",
+      "evidence": "\"active only **conditional** on the external owners ... and `D0-CONNES-RECONSTRUCTION-OWNER-001` (`ASSUMP-CONNES-RECONSTRUCTION`)\" (\u00a707.26)"
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "presupposes": "D0-CONNES-DISTANCE-GEODESIC-001",
+      "evidence": "\"The D0-internal object is the finite spectral/metric tower plus the \u03c6 semigroup envelope (`D0-IM-003`, `D0-CONNES-DISTANCE-GEODESIC-001`: Connes distance = graph geodesic)\""
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "presupposes": "D0-IM-003",
+      "evidence": "\"The D0-internal object is the finite spectral/metric tower plus the \u03c6 semigroup envelope (`D0-IM-003`, ...)\" (\u00a707.26)"
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+      "presupposes": "D0-BRIDGE-COMPRESSION-001",
+      "evidence": "\"the bridge is closed as a passport per `D0-BRIDGE-COMPRESSION-001`\" (\u00a707.26) \u2014 passport form licensed by the compression rule"
+    },
+    {
+      "claim": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "presupposes": "D0-CONNES-DISTANCE-GEODESIC-001",
+      "evidence": "\"each finite scene is an internal compact quantum metric space (Connes distance = geodesic), and the refinement sequence converges in quantum Gromov\u2013Hausdorff distance\" (\u00a707.51.3)"
+    },
+    {
+      "claim": "D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001",
+      "presupposes": "D0-RIEFFEL-GHP-CONTINUUM-OWNER-001",
+      "evidence": "\"What stays external ... the convergence in the quantum Gromov\u2013Hausdorff metric ... owned by `D0-RIEFFEL-GHP-CONTINUUM-OWNER-001` + `D0-CONNES-RECONSTRUCTION-OWNER-001`\" (\u00a707.51.3)"
+    },
+    {
+      "claim": "D0-COMPACTNESS-LIMIT-001",
+      "presupposes": "D0-GRAVASTAR-FORMATION-BRIDGE-001",
+      "evidence": "\"the junction closure relating compactness to the interior opening angle (`2C = sin\u00b2\u03c7\u2082`)\" \u2014 ceiling derived inside the arrested-collapse junction (\u00a707.51.2)"
+    },
+    {
+      "claim": "D0-COMPACTNESS-LIMIT-001",
+      "presupposes": "D0-RANK3-CAUSAL-CONE-FORCING-001",
+      "evidence": "\"Its *identification* with `rank/|\u03a9\u2088|` rests on one postulated bridge \u2014 that rank-3 transport is the causal light-cone on the 3-sphere seam\" (\u00a707.51.2)"
+    },
+    {
+      "claim": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+      "presupposes": "D0-COMPACTNESS-LIMIT-001",
+      "evidence": "\"The frozen causal-compactness ceiling `C_max=3/8` places the reflecting surface at `R=8M/3` ... giving the exact ... echo delay\" (\u00a707.0)"
+    },
+    {
+      "claim": "D0-HORIZONLESS-ECHO-PASSPORT-001",
+      "presupposes": "D0-ECHO-DELAY-COMPACTNESS-OWNER-001",
+      "evidence": "the frozen delay `tau_echo/M ~ 2.2885` is what \"This is a PASSPORT-CLOSED pre-registered falsifier (`D0-HORIZONLESS-ECHO-PASSPORT-001`)\" tests (\u00a707.0)"
+    },
+    {
+      "claim": "D0-HORIZON-HUM-EMPIRICAL-PASSPORT-001",
+      "presupposes": "D0-HORIZON-HUM-TRANSFER-OBSERVABLE-OWNER-001",
+      "evidence": "\"The frozen horizon information rate `I_f = log phi` ... is the target of a transfer-corrected residual passport\" (\u00a707.0)"
+    },
+    {
+      "claim": "D0-RANK3-METRIC-TRANSPORT-001",
+      "presupposes": "D0-RANK3-CUBIC-SYMMETRIC-FUNCTIONS-001",
+      "evidence": "\"characteristic polynomial `\u03bb\u00b3 \u2212 359\u03bb \u2212 2574` \u2014 **both** non-leading coefficients forced scene invariants ... exactly `\u03bb\u00b3 \u2212 |E|\u00b7\u03bb \u2212 2\u220f(zones)`\" (\u00a707.51.3)"
+    },
+    {
+      "claim": "D0-POSTCORE-HISTORY-REFINEMENT-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+      "evidence": "\"The min-successor bound `mindeg\u22121 = 19 > \u03c6\u00b3` closes the path-refinement subcase R3 disclaimed\" (\u00a707.0)"
+    },
+    {
+      "claim": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
+      "presupposes": "D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001",
+      "evidence": "\"missing `PRIM-SCENE-HISTORY-REFINEMENT-RULE`; the refinement underdetermination is cited to `D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`\" (\u00a707.0)"
+    },
+    {
+      "claim": "D0-WINDOW44-TOTIENT-M1-001",
+      "presupposes": "D0-WINDOW44-GROUP-SPECTRUM-001",
+      "evidence": "\"This sharpens `D0-WINDOW44-GROUP-SPECTRUM-001`\" \u2014 the totient forcing refines the same 44-window object (\u00a707.23)"
+    },
+    {
+      "claim": "D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001",
+      "presupposes": "D0-SPECTRAL-EINSTEIN-001",
+      "evidence": "\"the finite A2 Einstein sector carries TWO exact tensors, joined by one identity ... These are two halves of ONE exact identity\" (\u00a707.41)"
+    },
+    {
+      "claim": "D0-HODGE-LINKS-001",
+      "presupposes": "D0-SPECTRAL-EINSTEIN-001",
+      "evidence": "\"**Positive partial** (the Laplacian-Bianchi leg of `D0-SPECTRAL-EINSTEIN-001` ...): matter and the Einstein response *do* share the vertex carrier\" (\u00a707.41)"
+    },
+    {
+      "claim": "D0-HORIZON-FESHBACH-RADIATION-OWNER-001",
+      "presupposes": "D0-PAGE-CURVE-FINITE-RANK-OWNER-001",
+      "evidence": "\"The finite radiation channel is the active\u2194archive Feshbach coupling block `B`\" \u2014 defined on the same finite active/env rank split (\u00a707.50)"
+    },
+    {
+      "claim": "D0-CMB-PHASON-SPECTRUM-OWNER-001",
+      "presupposes": "D0-ARCHIVE-LAPLACIAN-001",
+      "evidence": "\u00a708.49: \"the scalar spectral index n_s as a function of the archive Laplacian spectrum ... the Laplacian source is internal (D0-ARCHIVE-LAPLACIAN-001)\""
+    },
+    {
+      "claim": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+      "presupposes": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "evidence": "\u00a708.0: \"Reusing the connectivity-onset finite object (the complete-tripartite K(9,11,13) graph Laplacian ...), the CMB scalar-spectrum front F8 closes\""
+    },
+    {
+      "claim": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "presupposes": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "evidence": "\u00a708.49: \"Crossing the connectivity threshold, the K(9,11,13) Laplacian spectrum ... replaces the edgeless sub-threshold spectrum {0:33}\""
+    },
+    {
+      "claim": "D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001",
+      "presupposes": "D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001",
+      "evidence": "\u00a708.49: \"\u2202_V F_N and the feedback pressure P_fb are defined only on the connected (post-threshold) regime\""
+    },
+    {
+      "claim": "D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001",
+      "presupposes": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "evidence": "\u00a708.49: \"the graph-Laplacian heat trace is H(u) = 1 + 12e^{-20u} + ... and the heat-energy functional is E_reheat(u) = \u2212\u2202_u log H(u)\""
+    },
+    {
+      "claim": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "presupposes": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "evidence": "\u00a708.49: \"The finite reheating budget is the heat-energy functional associated with connectivity onset\"; \"pre-threshold disconnected baseline has constant H_pre = 33, hence E_pre = 0\""
+    },
+    {
+      "claim": "D0-REHEATING-NO-INFLATON-NOGO-001",
+      "presupposes": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "evidence": "\u00a708.49: \"the positive heat-energy release at connectivity onset is fixed by the finite spectrum alone \u2014 no inflaton potential ... enters\""
+    },
+    {
+      "claim": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "presupposes": "D0-REHEATING-ENERGY-BUDGET-OWNER-001",
+      "evidence": "\u00a708.COSMOLOGY-CLOSURE: \"post-threshold phason initial state is the normalized heat-kernel covariance ... strictly positive and sourced by the reheating heat trace\""
+    },
+    {
+      "claim": "D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001",
+      "presupposes": "D0-PHASON-FORCING-001",
+      "evidence": "\u00a708.51: \"This section is its owner: it derives the phason from the forced carrier ... Every downstream use cites here\""
+    },
+    {
+      "claim": "D0-CMB-FIEDLER-FREEZEOUT-OWNER-001",
+      "presupposes": "D0-REHEATING-HEAT-TRACE-JUMP-001",
+      "evidence": "\u00a708.49: zero-multiplicity \"jumps 33\u21921 ... and \u03bb\u2082=20>0\" \u2014 the Fiedler freeze-out k_*\u00b2=\u03bb\u2082=20 exists only post-jump"
+    },
+    {
+      "claim": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+      "presupposes": "D0-PHASON-INITIAL-COVARIANCE-OWNER-001",
+      "evidence": "\u00a708.COSMOLOGY-CLOSURE: \"the internal transfer composes over five compatible stages\"; chain \"reheating energy E(u) \u2192 phason initial covariance C_\u03c6(u) \u2192 ...\""
+    },
+    {
+      "claim": "D0-CMB-IDS-SMOOTHING-OWNER-001",
+      "presupposes": "D0-CMB-NS-LAPLACIAN-IDS-OWNER-001",
+      "evidence": "\u00a708.0: the missing artifact is \"a smoothing functional / evaluation rule fixing the pair (k, u) so that the tilt proxy collapses to one determined value\""
+    },
+    {
+      "claim": "D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001",
+      "evidence": "\u00a708.COSMOLOGY-CLOSURE: \"Not just one smoothing window: the heat-smoothed tilt n_eff-1 ... is non-constant across the admissible-smoothing family\""
+    },
+    {
+      "claim": "D0-PHASON-WZ-TRANSFER-OWNER-001",
+      "presupposes": "D0-PHASON-PRESSURE-EOS-SCAFFOLD-001",
+      "evidence": "\u00a708.51: \"(ii) the EOS-form scaffold ... w_D0 = p/\u03c1 is well-defined ...; (iii) the explicit w_D0(u) owner ... the closed u-dependent formula\""
+    },
+    {
+      "claim": "D0-PHASON-WZ-EXPLICIT-FUNCTION-001",
+      "presupposes": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "evidence": "\u00a708.51: \"This sharpens, but does not close, the explicit-function owner ... (a) the continuum interpolation w_N \u2192 w_D0(u)\""
+    },
+    {
+      "claim": "D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001",
+      "presupposes": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "evidence": "\u00a708.51: \"the continuum interpolation of the discrete EOS ratio: w_D0(s)=... , restricting to w_N=phi^(N-1)/(phi^N-1) at integer N\""
+    },
+    {
+      "claim": "D0-PHASON-WDE-Z-MAP-OWNER-001",
+      "presupposes": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+      "evidence": "\u00a708.COSMOLOGY-CLOSURE: \"the negative SIGN is owned by the Galois conjugate \u03c3(\u03c6\u207b\u00b9) = \u2212\u03c6 ..., but the magnitude on the observational window is not\""
+    },
+    {
+      "claim": "D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001",
+      "evidence": "\u00a708.51: \"two admissible maps (w1=-phi-z, w2=-phi-2z) respect every owned invariant (negative, anchor -phi at z=0) yet differ at z=1\""
+    },
+    {
+      "claim": "D0-PHASON-WZ-CPL-PASSPORT-001",
+      "presupposes": "D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001",
+      "evidence": "\u00a708.51: \"The CPL (w\u2080, w_a) reading is a downstream passport ...: a survey may compare, never define w_D0\""
+    },
+    {
+      "claim": "D0-PHASON-COORDINATE-FUNCTOR-OWNER-001",
+      "presupposes": "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001",
+      "evidence": "\u00a708.0: \"No typed common pressure-energy sector exists ...; the coordinate functor is therefore external-passport-only\""
+    },
+    {
+      "claim": "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
+      "presupposes": "D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001",
+      "evidence": "\u00a708.0: \"No common archive sector exists (integer L_archive ... incommensurate with the irrational S_DE window); even adopting S_DE, ... 4 admissible w_E(z)\""
+    },
+    {
+      "claim": "D0-X5-PHASON-COORDINATE-CONTRACT-001",
+      "presupposes": "D0-X5-PHASON-PE-CONTRACT-001",
+      "evidence": "\u00a708.0: \"one construction edge P1\u2192P2. No physical w_DE(z) without both contracts and the passport.\""
+    },
+    {
+      "claim": "D0-ARCHIVE-CONTRACTION-NOGO-001",
+      "presupposes": "D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001",
+      "evidence": "\u00a708.0: \"the S_DE active window {3/2\u00b1\u221a10/40} (product 359/160) gives w_A\u2260w_B \u2014 D0-ARCHIVE-CONTRACTION-NOGO-001\""
+    },
+    {
+      "claim": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+      "presupposes": "D0-PHASON-FORCING-001",
+      "evidence": "\u00a708.51: \"a phason flip is a geometric relabelling of archive support ... it carries no electromagnetic coupling and does not radiate\""
+    }
+  ]
+}
