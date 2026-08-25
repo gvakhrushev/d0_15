@@ -252,6 +252,7 @@ import D0.Foundation.EquivariantM1
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.GeneralComparisonGrammar
 import D0.Foundation.GraphSpaceNoIsometry
+import D0.Foundation.IndependentDetectionRepairGrammar
 import D0.Foundation.InformationConnectivity
 import D0.Foundation.InvariantAlgebraDegree
 import D0.Foundation.InvariantMinimal

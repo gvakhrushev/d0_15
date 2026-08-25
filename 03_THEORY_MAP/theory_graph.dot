@@ -666,6 +666,7 @@ digraph D0Theory {
   "D0-SEAM-RETURN-ADDRESS-RIGIDITY-001" [label="D0-SEAM-RETURN-ADDRESS-RIGIDITY-001\\nCORE-FORMALIZED\\nformal_core", fillcolor="#2f7d4f", fontcolor="white"];
   "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001" [label="D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001\\nNO-GO\\nempirical_passport", fillcolor="#9f3f3f", fontcolor="white"];
   "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001" [label="D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
+  "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001" [label="D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001\\nCORE-FORMALIZED\\nempirical_passport", fillcolor="#2f7d4f", fontcolor="white"];
   "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="D0.Synthesis.TopHodgeInverseSpectralRigidity", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
   "D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001" -> "module:D0.Synthesis.TopHodgeInverseSpectralRigidity" [label="module"];
   "domain:formal_core" [label="formal_core", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
@@ -4368,4 +4369,10 @@ digraph D0Theory {
   "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001" -> "cert:vp_m1_repair_observational_quotient.py" [label="cert"];
   "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
   "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001" -> "domain:empirical_passport" [label="domain"];
+  "module:D0.Foundation.IndependentDetectionRepairGrammar" [label="D0.Foundation.IndependentDetectionRepairGrammar", shape=ellipse, fillcolor="#eeeeee", fontcolor="#111111"];
+  "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001" -> "module:D0.Foundation.IndependentDetectionRepairGrammar" [label="module"];
+  "cert:vp_independent_detection_repair_grammar.py" [label="vp_independent_detection_repair_grammar.py", shape=note, fillcolor="#fff0cc", fontcolor="#111111"];
+  "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001" -> "cert:vp_independent_detection_repair_grammar.py" [label="cert"];
+  "domain:empirical_passport" [label="empirical_passport", shape=folder, fillcolor="#e8f4ff", fontcolor="#111111"];
+  "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001" -> "domain:empirical_passport" [label="domain"];
 }

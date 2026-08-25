@@ -691,6 +691,25 @@ application obligation is concrete rather than foundational: identify the zones 
 physical scene with this derived observational quotient. Selection of the zone sizes
 `(9,11,13)` remains independent of the count theorem.
 
+**Grammar completeness from double detection (2026-08-25).** The one remaining semantic owner —
+why the repair grammar has exactly three kinds — is discharged in
+`D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001`. The front's own premise is
+`independent repeated detection`: the detection act is repeated, giving **two independent loops**.
+A repair's observational datum is characterised by its order-arity over the supplied loops — arity
+`0` is the raw reading, arity `1` the order inside one loop, arity `2` the joint order of the two
+loops. On a budget of `b` loops the realisable arities are `{0,…,b}`, so the grammar has exactly
+`b + 1` kinds. The number three is therefore derived: `3 = detectionBudget + 1 = 2 + 1`, in explicit
+Lean bijection with both `DatumKind` and the observational quotient. The controls make it
+falsifiable and explain the earlier two-cap: a single detection loop yields only two kinds, and the
+**second** independent detection is exactly what lifts two to three; a hypothetical triple detection
+would give four. A fourth arity class cannot fit the two-loop budget (pigeonhole), and a repair
+needing a fresh loop is record-disconnected, hence an external catalogue, hence not M1-mandatory.
+
+Honest residual: this derives the count and the equivalences from the physical loop budget. It
+keeps one explicit, non-vacuous modelling premise — that a repair's observational datum is its
+order-arity over the independent detection loops — which now replaces the previously unexplained
+three-constructor datum type.
+
 ### 01.6.2 Recursive distinguishability and the detector ladder
 
 Define

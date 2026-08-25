@@ -10,13 +10,13 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **37.4**. Claims: 665.
+High-value cut (top quartile): **37.4**. Claims: 666.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 6 | high value, not closed — **this is the work queue** |
-| **FRONT DOOR** | 159 | high value, closed — what the README and reading order must lead with |
-| BALLAST | 439 | closed but nothing rests on it — bottom of the registry |
+| **FRONT DOOR** | 161 | high value, closed — what the README and reading order must lead with |
+| BALLAST | 438 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 61 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
@@ -28,11 +28,11 @@ closing it moves the corpus, closing anything below it does not.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
-| **60.6** | 5 | 9 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
+| **60.6** | 5 | 10 | 2 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | PROOF-TARGET |
 | **60.1** | 45 | 2 | 0 | `D0-P-INVARIANT-MINIMAL-001` | PROOF-TARGET |
-| **47.9** | 45 | 9 | 4 | `D0-GAP-E-PORT-EXHAUSTION-001` | PROOF-TARGET |
-| **47.5** | 5 | 16 | 2 | `D0-TOWER-STOP-NOEXT-001` | PROOF-TARGET |
-| **46.3** | 5 | 15 | 2 | `D0-P-DEGREE2-EXHAUSTION-001` | PROOF-TARGET |
+| **48.0** | 45 | 10 | 4 | `D0-GAP-E-PORT-EXHAUSTION-001` | PROOF-TARGET |
+| **47.8** | 5 | 17 | 2 | `D0-TOWER-STOP-NOEXT-001` | PROOF-TARGET |
+| **46.7** | 5 | 16 | 2 | `D0-P-DEGREE2-EXHAUSTION-001` | PROOF-TARGET |
 | **45.5** | 45 | 1 | 4 | `D0-P-M1-SATURATION-001` | PROOF-TARGET |
 
 ---
@@ -44,11 +44,11 @@ Nothing outside this table belongs in an abstract.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
-| **77.9** | 100 | 32 | 0 | `D0-M1-PREDICATE-001` | CORE-FORMALIZED |
+| **78.1** | 100 | 33 | 0 | `D0-M1-PREDICATE-001` | CORE-FORMALIZED |
 | **64.3** | 100 | 14 | 0 | `D0-PHI-HURWITZ-001` | CORE-FORMALIZED |
-| **60.4** | 100 | 125 | 0 | `D0-FOUND-001` | CORE-FORMALIZED |
+| **60.4** | 100 | 126 | 0 | `D0-FOUND-001` | CORE-FORMALIZED |
 | **60.4** | 100 | 11 | 1 | `D0-EQUIVARIANT-SEAM-NOGO-001` | NO-GO |
-| **57.8** | 100 | 12 | 0 | `D0-GENERAL-COMPARISON-CAPABILITY-COUNT-001` | NO-GO |
+| **58.3** | 100 | 13 | 0 | `D0-GENERAL-COMPARISON-CAPABILITY-COUNT-001` | NO-GO |
 | **57.3** | 100 | 7 | 1 | `D0-HIGGS-PHASON-ORBIT-TRIVIAL-NOGO-001` | NO-GO |
 | **57.0** | 100 | 13 | 1 | `D0-SIGNATURE-31-SPLIT-001` | CORE-FORMALIZED |
 | **56.1** | 100 | 2 | 0 | `D0-Q8-DEDEKIND-MINIMALITY-001` | CORE-FORMALIZED |
@@ -58,18 +58,18 @@ Nothing outside this table belongs in an abstract.
 | **54.6** | 100 | 3 | 1 | `D0-BORN-QUADRATIC-ORIGIN-001` | CORE-FORMALIZED |
 | **54.6** | 100 | 0 | 2 | `D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001` | NO-GO |
 | **54.3** | 100 | 9 | 0 | `D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001` | NO-GO |
-| **53.9** | 100 | 25 | 1 | `D0-PISOT-CONTRACTION-TIME-ARROW-001` | CORE-FORMALIZED |
+| **53.8** | 100 | 25 | 1 | `D0-PISOT-CONTRACTION-TIME-ARROW-001` | CORE-FORMALIZED |
 | **53.7** | 100 | 13 | 1 | `D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001` | NO-GO |
 | **53.7** | 100 | 0 | 0 | `D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001` | NO-GO |
-| **52.9** | 100 | 11 | 1 | `D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001` | NO-GO |
+| **53.3** | 100 | 12 | 1 | `D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001` | NO-GO |
 | **52.9** | 70 | 5 | 2 | `D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001` | NO-GO |
-| **52.6** | 100 | 22 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
+| **52.8** | 100 | 23 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
 | **52.2** | 100 | 49 | 0 | `D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001` | CORE-FORMALIZED |
 | **52.2** | 100 | 0 | 0 | `D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001` | NO-GO |
 | **51.7** | 100 | 29 | 0 | `D0-SCENE-DARK-ARCHIVE-STRUCTURE-001` | CORE-FORMALIZED |
 | **51.6** | 100 | 6 | 2 | `D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001` | NO-GO |
 | **51.4** | 100 | 2 | 2 | `D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001` | NO-GO |
-| … | | | | *+134 more in the ledger CSV* | |
+| … | | | | *+136 more in the ledger CSV* | |
 
 ---
 
@@ -82,20 +82,20 @@ sorted to the bottom of the registry.
 |---:|---:|---:|---:|---|---|
 | **36.9** | 100 | 7 | 0 | `D0-ZONE-CURRENT-001` | CORE-FORMALIZED |
 | **36.9** | 100 | 7 | 0 | `D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001` | CORE-FORMALIZED |
+| **36.9** | 100 | 2 | 1 | `D0-INFORMATION-CONNECTIVITY-001` | CORE-FORMALIZED |
 | **36.9** | 100 | 0 | 0 | `D0-VNEXT-33-SCENE-ANCHOR-NOGO-001` | CORE_BRIDGE_SPLIT |
 | **36.9** | 100 | 0 | 0 | `D0-SCENE-DIM-EVEN-FIBONACCI-FORCING-001` | CERT-CLOSED |
 | **36.8** | 100 | 2 | 5 | `D0-SECTOR-FIELD-INDEPENDENCE-001` | NO-GO |
 | **36.7** | 100 | 8 | 2 | `D0-PHASE-UNFOLD-002` | CORE-FORMALIZED |
+| **36.7** | 100 | 1 | 11 | `D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001` | CORE-FORMALIZED |
 | **36.3** | 100 | 7 | 3 | `D0-ARCHIVE-MODE-EXPONENT-001` | CORE-FORMALIZED |
 | **36.3** | 100 | 0 | 1 | `D0-GEN-MASS-001` | NO_GO_PROVED |
 | **36.3** | 100 | 0 | 3 | `D0-IM-COSMO-002` | CORE-FORMALIZED |
 | **36.3** | 55 | 0 |  | `D0-NEUTRINO-MASS-PASSPORT-001` | PASSPORT-CLOSED |
 | **36.3** | 100 | 0 | 0 | `D0-SCENE-TRIPLE-UNIQUE-001` | CORE-FORMALIZED |
 | **36.3** | 100 | 0 | 1 | `D0-BORN-AREA-PRESERVATION-INSUFFICIENT-NOGO-001` | NO-GO |
-| **36.2** | 100 | 4 | 3 | `D0-CASCADE-FLOOR-SHELL-CLOSURE-001` | CORE-FORMALIZED |
-| **36.1** | 100 | 9 | 4 | `D0-YUKAWA-SPECTRAL-FIBER-LADDER-001` | CORE-FORMALIZED |
 | **36.1** | 100 | 2 | 3 | `D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001` | NO-GO |
-| … | | | | *+424 more in the ledger CSV* | |
+| … | | | | *+423 more in the ledger CSV* | |
 
 ---
 
@@ -113,12 +113,12 @@ spent here is bookkeeping. Review for merge into a parent claim or deprecation.
 | **28.9** | 5 | 0 |  | `D0-ALPHA-SEAM-FORM-FORCED-001` | PROOF-TARGET |
 | **28.2** | 45 | 0 | 5 | `D0-PHYSICAL-COMPARISON-REPRESENTATION-REDUCTION-001` | PROOF-TARGET |
 | **28.0** | 45 | 0 | 1 | `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` | PROOF-TARGET |
+| **27.8** | 45 | 2 | 0 | `D0-M1-UNIVERSALITY-001` | PROOF-TARGET |
 | **25.4** | 45 | 0 | 3 | `D0-SCENE-COUNT-REDUCTION-001` | PROOF-TARGET |
 | **24.9** | 45 | 0 | 3 | `D0-GAP-W-COPY-CAP-M1-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-LEPTON-INDIRECT-COEFFICIENT-OWNER-001` | PROOF-TARGET |
 | **24.7** | 5 | 0 |  | `D0-HYPERCHARGE-GRAPH-FLOW-OWNER-001` | PROOF-TARGET |
 | **24.0** | 45 | 0 | 1 | `D0-UNIFIED-EDGE-SPINE-001` | PROOF-TARGET |
-| **23.9** | 45 | 1 | 0 | `D0-M1-UNIVERSALITY-001` | PROOF-TARGET |
 | **23.9** | 45 | 0 | 2 | `D0-COMPLETION-RESIDUAL-COLLAPSE-001` | PROOF-TARGET |
 | **23.0** | 5 | 0 |  | `D0-CMB-PHASON-SPECTRUM-OWNER-001` | PROOF-TARGET |
 | … | | | | *+46 more in the ledger CSV* | |
