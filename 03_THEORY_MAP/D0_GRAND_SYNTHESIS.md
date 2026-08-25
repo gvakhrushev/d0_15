@@ -1,5 +1,11 @@
 # D0 Grand Synthesis
 
+> **Orientation.** For the canonical top-level argument see [`../D0_SYNTHESIS.md`](../D0_SYNTHESIS.md)
+> (through-line) and [`../D0_EXACT_RESULTS.md`](../D0_EXACT_RESULTS.md) (exact owners). This
+> document is the **sector-law integration layer**: how the finite operator machinery is
+> applied across the matter/gravity/cosmology sectors. All objects are finite; external
+> passports remain separate.
+
 This document integrates the v15 sector-law layer. All objects are finite. External passports remain separate.
 
 ## 1. Master bootstrap equation

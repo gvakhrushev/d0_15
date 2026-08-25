@@ -1,5 +1,12 @@
 # D0 master synthesis
 
+> **Orientation.** The canonical one-page argument of D0 — the axiom-to-constants through-line
+> — is [`../D0_SYNTHESIS.md`](../D0_SYNTHESIS.md), with exact owners in
+> [`../D0_EXACT_RESULTS.md`](../D0_EXACT_RESULTS.md). *This* document is the **finite
+> operator layer**: the feedback-return operator `F_N` and the resolvent/trace machinery used
+> inside individual sector derivations. Read it for the operator mechanics, not for the top-level
+> claim structure.
+
 ## 1. Core thesis
 
 D0 is a finite-observability theory over condensed/profinite quasicrystalline support.  The active chain is
