@@ -181,7 +181,7 @@
     },
     "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001": {
       "block_hash": "e893f2519710607fd2e661f7349d4c9a22d5ad0f2ba9ab4966ecc33740dbc1a8",
-      "carries": 32,
+      "carries": 34,
       "claim_id": "D0-ALPHA-PROFINITE-SPECTRAL-TOWER-OWNER-001",
       "content_hash": "3f988e5b109cf9b019fdaeb643e6bccd255c66e2045905b403b2b49b4b506cd3",
       "depth": 1,
@@ -477,7 +477,7 @@
     },
     "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001": {
       "block_hash": "51bc9cb9d91d221acf709c2c1dbb15c641b3185e241c1003a120811d9d740ae6",
-      "carries": 0,
+      "carries": 9,
       "claim_id": "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
       "content_hash": "b0dab35e993a04835912f416997084c20e8c70429a7ed89ef673a45ea52788f6",
       "depth": 0,
@@ -744,7 +744,7 @@
     },
     "D0-BORN-QUADRATIC-ORIGIN-001": {
       "block_hash": "79ec2b39fdf840cf76099bed4a223c46a9e093bb8f1694993bc6f3c15b2353bf",
-      "carries": 3,
+      "carries": 5,
       "claim_id": "D0-BORN-QUADRATIC-ORIGIN-001",
       "content_hash": "7fa336a3301d37f2bc2b8b9dd2868f678eb74f19883a7d019fc4210b060421d8",
       "depth": 1,
@@ -1012,7 +1012,7 @@
     },
     "D0-CASCADE-CARRIED-ASSEMBLY-001": {
       "block_hash": "48c4b07c92857e0d5546d7477027caff032868c5e0fba903910ec9abf44024e7",
-      "carries": 6,
+      "carries": 8,
       "claim_id": "D0-CASCADE-CARRIED-ASSEMBLY-001",
       "content_hash": "fecdef05c797b2015bd13ffd6528fac8eaff71eecc02e2eb673e8c2482b0109f",
       "depth": 5,
@@ -1032,7 +1032,7 @@
     },
     "D0-CASCADE-CHAIN-SCAFFOLD-001": {
       "block_hash": "2857a00c90ed2aa684051356b11306039b3ff652a9f2ae3c92787fac6d9d9701",
-      "carries": 14,
+      "carries": 16,
       "claim_id": "D0-CASCADE-CHAIN-SCAFFOLD-001",
       "content_hash": "c3bf254d9ed1c8b316429375e5e734e5447e161cf60270930a920045c2912152",
       "depth": 2,
@@ -1050,7 +1050,7 @@
     },
     "D0-CASCADE-FLOOR-COMPARISON-001": {
       "block_hash": "931d7a270afb67a0c952ff2853996371420df46408f6400f0325e6cff82c1fef",
-      "carries": 15,
+      "carries": 17,
       "claim_id": "D0-CASCADE-FLOOR-COMPARISON-001",
       "content_hash": "cc83b6cc9b2d86e7c6f4ad909b2493784d592c1f6655dbe7885b7262bacbcd66",
       "depth": 0,
@@ -1063,7 +1063,7 @@
     },
     "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001": {
       "block_hash": "29cd02ae2645c9d41e9e7f4c4155509cfdc020b0d13f14b94e0a4a482660d11b",
-      "carries": 8,
+      "carries": 10,
       "claim_id": "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001",
       "content_hash": "133b654653f6ec4d38b2295ace182f4bf891aa945e492fd28a1cbfe362789cca",
       "depth": 3,
@@ -1078,7 +1078,7 @@
     },
     "D0-CASCADE-FLOOR-ONE-LOOP-001": {
       "block_hash": "0e05761f2804d12255298eb7aa34d6e6e0a0361e1d5e137f127b689754b2cfb4",
-      "carries": 15,
+      "carries": 17,
       "claim_id": "D0-CASCADE-FLOOR-ONE-LOOP-001",
       "content_hash": "83fe734d33365f3c06488a5f9bdb8a541b5a4c255545b6c998ce2dac50a4a38b",
       "depth": 0,
@@ -1091,7 +1091,7 @@
     },
     "D0-CASCADE-FLOOR-ORDER-MEMORY-001": {
       "block_hash": "5efcc2469c125e7dcaa310167f6ffe3fb3abd3173194706d240aec6ada5fe996",
-      "carries": 15,
+      "carries": 17,
       "claim_id": "D0-CASCADE-FLOOR-ORDER-MEMORY-001",
       "content_hash": "c4b10e443d5c0462207570f41ed0e91f1844a9fcca03de72a62059a6ad2598f0",
       "depth": 0,
@@ -1104,7 +1104,7 @@
     },
     "D0-CASCADE-FLOOR-ORIENTATION-PARITY-001": {
       "block_hash": "bcea27d013799de00959516f868d49527ea9c06f2347649be6a121e8ab54dbb0",
-      "carries": 7,
+      "carries": 9,
       "claim_id": "D0-CASCADE-FLOOR-ORIENTATION-PARITY-001",
       "content_hash": "d4c798050480f2854e6df7e74de6e9da5f36dd982b74c2ecb98b3cf526d84e2f",
       "depth": 3,
@@ -1120,7 +1120,7 @@
     },
     "D0-CASCADE-FLOOR-SCALE-RATIO-001": {
       "block_hash": "f3b606de204d0259a8fc5ef0ce4153377852c3043ede8e223371621ee7403b6f",
-      "carries": 15,
+      "carries": 17,
       "claim_id": "D0-CASCADE-FLOOR-SCALE-RATIO-001",
       "content_hash": "4e3117238bf36cb422e6fd338f279bae329c6e699e1d85104ee9b05471e6aeb2",
       "depth": 1,
@@ -1135,7 +1135,7 @@
     },
     "D0-CASCADE-FLOOR-SHELL-CLOSURE-001": {
       "block_hash": "0bb78539fe868138b3c1198c5d7316b5504618a5a486a79a642844f7050d0772",
-      "carries": 9,
+      "carries": 11,
       "claim_id": "D0-CASCADE-FLOOR-SHELL-CLOSURE-001",
       "content_hash": "2c0e827c0215179d8d57c4fdf7e8d7f5c3a6d6f914aa01577c1612b1247a8628",
       "depth": 3,
@@ -1151,11 +1151,11 @@
       "rests_on": 8
     },
     "D0-CASCADE-FULL-FORCING-DAG-001": {
-      "block_hash": "9f3ef27ebbaa53dda92058bfbd1863377d1073262de103e40636ae6cf8e87378",
+      "block_hash": "12986eeed32af6d2541a892df9b47001873382b8de66163e82a460adffb28a89",
       "carries": 0,
       "claim_id": "D0-CASCADE-FULL-FORCING-DAG-001",
-      "content_hash": "f8f57130c0c9bf4531bed03e0513bba430392f9ed6b86ba6773c52b4c7e86978",
-      "depth": 14,
+      "content_hash": "2e3f2b1e5c4984b3aa396ca908adba59574fb01253bb973479175f41d1b9452c",
+      "depth": 16,
       "genesis": false,
       "modules": [
         "D0.Foundation.CascadeFullForcingSynthesis"
@@ -1163,16 +1163,17 @@
       "parents": [
         "D0-CASCADE-CARRIED-ASSEMBLY-001",
         "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
-        "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001"
+        "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+        "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001"
       ],
-      "rests_on": 38
+      "rests_on": 40
     },
     "D0-CASCADE-INSUFFICIENCY-CHAIN-001": {
-      "block_hash": "9f3ef27ebbaa53dda92058bfbd1863377d1073262de103e40636ae6cf8e87378",
+      "block_hash": "12986eeed32af6d2541a892df9b47001873382b8de66163e82a460adffb28a89",
       "carries": 0,
       "claim_id": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
-      "content_hash": "f8f57130c0c9bf4531bed03e0513bba430392f9ed6b86ba6773c52b4c7e86978",
-      "depth": 14,
+      "content_hash": "2e3f2b1e5c4984b3aa396ca908adba59574fb01253bb973479175f41d1b9452c",
+      "depth": 16,
       "genesis": false,
       "modules": [
         "D0.Foundation.CascadeFullForcingSynthesis"
@@ -1180,13 +1181,14 @@
       "parents": [
         "D0-CASCADE-CARRIED-ASSEMBLY-001",
         "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
-        "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001"
+        "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+        "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001"
       ],
-      "rests_on": 38
+      "rests_on": 40
     },
     "D0-CASCADE-INTERLOCK-SCALE-001": {
       "block_hash": "0d49aa3300ca641dfcbfae8353f43aacba9a8319aacd07a49d5af4f5f52d75b0",
-      "carries": 7,
+      "carries": 9,
       "claim_id": "D0-CASCADE-INTERLOCK-SCALE-001",
       "content_hash": "bcacaa27da16f69cf11bbdc7bd0cfcf1d3e9bd1f55851d225403a3303eb9d810",
       "depth": 3,
@@ -1201,7 +1203,7 @@
     },
     "D0-CASCADE-TERMINAL-COUNT-001": {
       "block_hash": "f9597f0e382bcd0310d7882f32a6725c4a1c111b96ad13c32e4bc8201c2bb76c",
-      "carries": 7,
+      "carries": 9,
       "claim_id": "D0-CASCADE-TERMINAL-COUNT-001",
       "content_hash": "b8f5f88e8647d26f26857e47a69c13ec31cd807c682e750564363d76c5852dd1",
       "depth": 4,
@@ -1216,7 +1218,7 @@
     },
     "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001": {
       "block_hash": "3fba4b31ac4c83fb7899819356b34ad9a1c541ec635d6e402abacad139358ce5",
-      "carries": 2,
+      "carries": 3,
       "claim_id": "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
       "content_hash": "5745e5d87baef4613c42e48a0b37d40f411a96b9bf9f71d07c0d61c9452b9f9d",
       "depth": 4,
@@ -1483,7 +1485,7 @@
     },
     "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001": {
       "block_hash": "32f06c3f118286936ff95ea71a9cab6a583675a80d3621199be844b54e03b7ad",
-      "carries": 2,
+      "carries": 4,
       "claim_id": "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
       "content_hash": "1d4154fe0d0a9b284b47ede0988d98ee1f0aca8cb78f4a53bd6dfaef4b2b7d06",
       "depth": 13,
@@ -1500,7 +1502,7 @@
     },
     "D0-CONCRETE-PHYSICAL-DETECTOR-REPRESENTATION-001": {
       "block_hash": "bf08f5766270acbbea5d02a51508e25a9b700dbec330f757d3d40af752b16fa3",
-      "carries": 6,
+      "carries": 8,
       "claim_id": "D0-CONCRETE-PHYSICAL-DETECTOR-REPRESENTATION-001",
       "content_hash": "d9d520dfd8968da382aecd6e6cc3c63c9b650a7159aa8606c92c73873b8fda9d",
       "depth": 9,
@@ -1513,6 +1515,22 @@
         "D0-TYPED-DETECTOR-PRIMITIVE-EXHAUSTION-001"
       ],
       "rests_on": 15
+    },
+    "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001": {
+      "block_hash": "79de81c292a798e156b0828bd5e162853931f84b35ba9eab8998ac799bc599cf",
+      "carries": 2,
+      "claim_id": "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001",
+      "content_hash": "e36e318c7510c26204d6c5d47bacaec566756c62e48a463222fb8d7bdd725585",
+      "depth": 15,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.ConcreteRepairForcingCanonicity"
+      ],
+      "parents": [
+        "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
+        "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001"
+      ],
+      "rests_on": 39
     },
     "D0-CONDENSED-GOLDEN-WEIGHT-ANCHOR-001": {
       "block_hash": "0e3faa7ea369f39df0543c7f515fbf6b0cc6c26db488b57271b1c8445284eeda",
@@ -1584,7 +1602,7 @@
     },
     "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001": {
       "block_hash": "3bde28d116f76c95a345666a1dcbf2c4fe56d29999a94d1dfb4efed4f10c2071",
-      "carries": 2,
+      "carries": 11,
       "claim_id": "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
       "content_hash": "e2bb6e5929467205f6e74ad7d8c550885d74031851468e7f20ed3ee3f4f16064",
       "depth": 3,
@@ -1688,7 +1706,7 @@
     },
     "D0-COSMO-HOMOGENEOUS-FIXED-POINT-001": {
       "block_hash": "1cbbbde400dfac67e043be42b9d86bf8b62edaca17f14be98b405989b5c5e967",
-      "carries": 17,
+      "carries": 21,
       "claim_id": "D0-COSMO-HOMOGENEOUS-FIXED-POINT-001",
       "content_hash": "d92eaac5809e1479a8b430d031d8f5b4eb1668a6c314f5a045bce184b56ed789",
       "depth": 0,
@@ -1820,7 +1838,7 @@
     },
     "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001": {
       "block_hash": "51bc9cb9d91d221acf709c2c1dbb15c641b3185e241c1003a120811d9d740ae6",
-      "carries": 0,
+      "carries": 9,
       "claim_id": "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
       "content_hash": "b0dab35e993a04835912f416997084c20e8c70429a7ed89ef673a45ea52788f6",
       "depth": 0,
@@ -1848,7 +1866,7 @@
     },
     "D0-CURRENT-DATA-FACTORIZATION-001": {
       "block_hash": "2497b755c68ce7e96fcfc7112a48de974e9e6256091f1c78187143a572a4abb8",
-      "carries": 14,
+      "carries": 16,
       "claim_id": "D0-CURRENT-DATA-FACTORIZATION-001",
       "content_hash": "676221aa99737bcf36dc03ae33dc87b12fa65cb9fd6131726ac0a7c74ed8b3e5",
       "depth": 2,
@@ -1967,7 +1985,7 @@
     },
     "D0-DARK-RATIO-TRANSFER-OWNER-001": {
       "block_hash": "51bc9cb9d91d221acf709c2c1dbb15c641b3185e241c1003a120811d9d740ae6",
-      "carries": 0,
+      "carries": 9,
       "claim_id": "D0-DARK-RATIO-TRANSFER-OWNER-001",
       "content_hash": "b0dab35e993a04835912f416997084c20e8c70429a7ed89ef673a45ea52788f6",
       "depth": 0,
@@ -2041,7 +2059,7 @@
     },
     "D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001": {
       "block_hash": "fd41b9d62993f0e78f5d979201e2e22206cdd7d81e2759b0a233ac31c12326c4",
-      "carries": 15,
+      "carries": 17,
       "claim_id": "D0-DETECTION-CAPABILITY-THIRD-HISTORY-NOGO-001",
       "content_hash": "2c049984c848dead632d49a129933b5930dec9a9bbd7093529abf7892a658f33",
       "depth": 1,
@@ -2056,7 +2074,7 @@
     },
     "D0-DETECTION-QUADRATIC-001": {
       "block_hash": "138a2e2b6ec75a169ce731b1969bb54892fba4a34fd98560ec62484b9df2114b",
-      "carries": 16,
+      "carries": 18,
       "claim_id": "D0-DETECTION-QUADRATIC-001",
       "content_hash": "41b700032b644955bbe9ec45e6b29b3b1e154ae4644bad9ec13f3a3943e96856",
       "depth": 3,
@@ -2071,7 +2089,7 @@
     },
     "D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001": {
       "block_hash": "cdc3acce9522352bc6f922876b6e1d77fb8b85c45f98261e11bd561bc442d254",
-      "carries": 12,
+      "carries": 14,
       "claim_id": "D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001",
       "content_hash": "278ee335697b1a8474a13ce057a4f954db27a456de9733483e77ea82fc6beb7d",
       "depth": 5,
@@ -2087,7 +2105,7 @@
     },
     "D0-DETECTOR-CATALOGUE-FREEDOM-001": {
       "block_hash": "c84dfd0117ec444a565ef7d3ddf234678fbb8b65b12e1a3c76c4ff4d921a39a1",
-      "carries": 11,
+      "carries": 13,
       "claim_id": "D0-DETECTOR-CATALOGUE-FREEDOM-001",
       "content_hash": "2738be5ca4303d68db015f2adbeefb79bb50cf38e0294dd3923901aad1007ca3",
       "depth": 6,
@@ -2102,7 +2120,7 @@
     },
     "D0-DETECTOR-LAYER-EQUIVALENCE-001": {
       "block_hash": "8371c93d7f7760fc957ac57139b62539aa324218404864b0fb25064859855113",
-      "carries": 9,
+      "carries": 11,
       "claim_id": "D0-DETECTOR-LAYER-EQUIVALENCE-001",
       "content_hash": "3e3ff3b95eae1a72b89984f0d7dea648cfd6e0039fa40816d47941e225ef5793",
       "depth": 7,
@@ -2243,6 +2261,29 @@
       ],
       "parents": [],
       "rests_on": 0
+    },
+    "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001": {
+      "block_hash": "3aab6b66f2e1326ec7cf8bc6736490de19befc252f18db8985ffa43ab2235e74",
+      "carries": 7,
+      "claim_id": "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+      "content_hash": "afb43f658bc36b57c0d2b05dc86489ca2884834023b1e3f98107a82e2cb6b57b",
+      "depth": 4,
+      "genesis": false,
+      "modules": [
+        "D0.Cosmology.SelfUnfoldingObservableRelations"
+      ],
+      "parents": [
+        "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+        "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+        "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+        "D0-DARK-RATIO-TRANSFER-OWNER-001",
+        "D0-IM-002",
+        "D0-IM-COSMO-001",
+        "D0-PHASON-THAWING-001",
+        "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+        "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001"
+      ],
+      "rests_on": 13
     },
     "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001": {
       "block_hash": "e0ae89da11e7d9350f75fcef8a09819a0ab681734f23bff6a1f6e3e37a0a2c50",
@@ -2420,6 +2461,22 @@
         "D0-FOUND-001"
       ],
       "rests_on": 1
+    },
+    "D0-EXPANSION-DARK-RESPONSE-COUPLING-001": {
+      "block_hash": "f91a8620f5c5b48251cb92487d7b9d8fbe1c02bf64be6067ad96e01512b7c72b",
+      "carries": 0,
+      "claim_id": "D0-EXPANSION-DARK-RESPONSE-COUPLING-001",
+      "content_hash": "e2c34ec8ad3ce2cb4832cfd3a381736ff89a9c0c410e452d478debafbc588ccf",
+      "depth": 5,
+      "genesis": false,
+      "modules": [
+        "D0.Bridge.RedshiftExpansionArchiveCoupling"
+      ],
+      "parents": [
+        "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+        "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001"
+      ],
+      "rests_on": 15
     },
     "D0-EXTERNAL-BACKGROUND-HURWITZ-GLOBAL-CLASSIFICATION-001": {
       "block_hash": "8701e76a6f269d8232fc0b11fe5f808a74fbffc3eeab46f981e239f390618b34",
@@ -2656,6 +2713,22 @@
       ],
       "rests_on": 18
     },
+    "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001": {
+      "block_hash": "1cd40e305a5c0e0e4826b24681a7161e84870e909cda482e331407dc98635265",
+      "carries": 0,
+      "claim_id": "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001",
+      "content_hash": "3303e7d8546e73f0cb4aa3341191cbff6042d31b33f6bfba2e62e1983bd2bea2",
+      "depth": 6,
+      "genesis": false,
+      "modules": [
+        "D0.Cosmology.PhaseCycleFrequencyRealization"
+      ],
+      "parents": [
+        "D0-BORN-QUADRATIC-ORIGIN-001",
+        "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001"
+      ],
+      "rests_on": 18
+    },
     "D0-FIVE-PRIMITIVE-DEPENDENCE-001": {
       "block_hash": "06ee9a55ca8b6d296e568d2fa06c7eb0207bc6f2ff33990723a0b61f612949a3",
       "carries": 1,
@@ -2728,7 +2801,7 @@
     },
     "D0-FOUND-001": {
       "block_hash": "415bcdd3994b85968f50dde59a48ce6bf0280d6888bd59a8a9d256522453060e",
-      "carries": 129,
+      "carries": 140,
       "claim_id": "D0-FOUND-001",
       "content_hash": "4f106cb6b010427fb392dc0bbf81411dd256c57263d9d12b85d9b8bed9b9d41a",
       "depth": 0,
@@ -2741,7 +2814,7 @@
     },
     "D0-FOUND-004": {
       "block_hash": "c317a1e7196a8885d6cb345c77944fa975efa8cd9bd4ea1ca178595003015212",
-      "carries": 5,
+      "carries": 7,
       "claim_id": "D0-FOUND-004",
       "content_hash": "69524d3c905ba7f58d67b9515d37bb6381d5dae2f02b66285b046b4fab24324d",
       "depth": 0,
@@ -2782,7 +2855,7 @@
     },
     "D0-GAP-E-PORT-EXHAUSTION-001": {
       "block_hash": "3407241f769f216bd29e0d7cfd797dfc48c6b5511ff32d6fcb305bcd5f742eab",
-      "carries": 13,
+      "carries": 15,
       "claim_id": "D0-GAP-E-PORT-EXHAUSTION-001",
       "content_hash": "3ccf79fc5de8e64b71125752fa7811a64d9269a7632c9484d9514b1c8c1bd6d6",
       "depth": 4,
@@ -2992,7 +3065,7 @@
     },
     "D0-GENERAL-COMPARISON-CAPABILITY-COUNT-001": {
       "block_hash": "231c392273a583e36a13230436241d62a0d7cc7a467ddc13dff7fa1c5e1d8640",
-      "carries": 16,
+      "carries": 18,
       "claim_id": "D0-GENERAL-COMPARISON-CAPABILITY-COUNT-001",
       "content_hash": "d1c9ff7d7eb97efb6a19f34c665d66f6c43e1797cf98b9e28531d942ffaf073e",
       "depth": 0,
@@ -3606,7 +3679,7 @@
     },
     "D0-IM-002": {
       "block_hash": "d1365d8ef949a3527076fdfc57075f1af32b5c4ec260e92d4f991e5ad43676a6",
-      "carries": 0,
+      "carries": 9,
       "claim_id": "D0-IM-002",
       "content_hash": "c805d26e466bcc907328dd5e4c202c58312f0ca3b35a523a8454737b9f6b9c6a",
       "depth": 2,
@@ -3622,7 +3695,7 @@
     },
     "D0-IM-003": {
       "block_hash": "2d6c1c77377ab049265ab04a53829603272023d9c122a180eb607e8d0d546e92",
-      "carries": 4,
+      "carries": 13,
       "claim_id": "D0-IM-003",
       "content_hash": "56a7ed13f6dbc291118e62f6fc4c512b27b9f4298e15003d4eb49442aea43667",
       "depth": 2,
@@ -3674,7 +3747,7 @@
     },
     "D0-IM-COSMO-001": {
       "block_hash": "a51907d7491694d1fca75f3efd3ad97527f2a79ecd72add47e4976d122efa122",
-      "carries": 1,
+      "carries": 10,
       "claim_id": "D0-IM-COSMO-001",
       "content_hash": "298f7c76ed07546a1e935aa326711eaee80f27cd7526a5b103b6438688313369",
       "depth": 2,
@@ -3740,7 +3813,7 @@
     },
     "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001": {
       "block_hash": "9d318ad7963c225bbe1b1cd5244976c74d6d220bc110094539abc8bf3fefdd75",
-      "carries": 3,
+      "carries": 5,
       "claim_id": "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001",
       "content_hash": "e776b34a62fdf04f126826fc141a4e32dbdf6eedf09f39ad5f053477fc9b26fe",
       "depth": 12,
@@ -3752,6 +3825,21 @@
         "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001"
       ],
       "rests_on": 35
+    },
+    "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001": {
+      "block_hash": "f241e0f029a2bfd508f8ae1303420af5025ee98d8733cdca027e7067dc7dd3b0",
+      "carries": 3,
+      "claim_id": "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001",
+      "content_hash": "66fff0caf2eaf18487cc11b8e4a448e957bf4a627a9d14ea65ccb5f1d72b7a1e",
+      "depth": 14,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.IndependentDetectionSideSymmetryBoundary"
+      ],
+      "parents": [
+        "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001"
+      ],
+      "rests_on": 37
     },
     "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001": {
       "block_hash": "db960d0cc8b9ec81f6648b206b3ec8e9a61a1edc53165368af853d1a7b3e33ee",
@@ -3770,7 +3858,7 @@
     },
     "D0-INFORMATION-CONNECTIVITY-001": {
       "block_hash": "87cdf584ba98e602b75dc940bb74286729d27478591615eed0f55a4b00e278c1",
-      "carries": 5,
+      "carries": 7,
       "claim_id": "D0-INFORMATION-CONNECTIVITY-001",
       "content_hash": "b990f49d14dafc3042467b71d249f33d373d5295acd4691e5289c88e6f92f989",
       "depth": 1,
@@ -4165,9 +4253,40 @@
       "parents": [],
       "rests_on": 0
     },
+    "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001": {
+      "block_hash": "e6f25d4bf7456b109d0e499bbbc4cce64f0e1da4428276671e2b1e8057ab8cc8",
+      "carries": 2,
+      "claim_id": "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001",
+      "content_hash": "c14b26ddede2596fbd794ff100955d6d18c1149167674ee5f4afc1beb004f143",
+      "depth": 1,
+      "genesis": false,
+      "modules": [
+        "D0.Gravity.LocalPressureCapacityDynamics"
+      ],
+      "parents": [
+        "D0-COSMO-HOMOGENEOUS-FIXED-POINT-001"
+      ],
+      "rests_on": 1
+    },
+    "D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001": {
+      "block_hash": "b78d12354ed6f3c990516042ec1565ccd6ea1e5c26fcbd9dc05ca6d4de860d47",
+      "carries": 0,
+      "claim_id": "D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001",
+      "content_hash": "22a9e264673ace1c89846df8c4dc218323e734e0f785141512ef871df32ec16a",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Bridge.LocalRaychaudhuriRepresentation"
+      ],
+      "parents": [
+        "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001",
+        "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001"
+      ],
+      "rests_on": 3
+    },
     "D0-LUCAS-DEFECT-SIGN-001": {
       "block_hash": "5301619111674f53d0b561004ef2fc9c3af220df1466fbf9fccb9ac1cf097ca7",
-      "carries": 8,
+      "carries": 10,
       "claim_id": "D0-LUCAS-DEFECT-SIGN-001",
       "content_hash": "0693f4fa2d246cf014e2b663157dafde299e9c52371847790bb1f2df5c3ea088",
       "depth": 0,
@@ -4196,7 +4315,7 @@
     },
     "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001": {
       "block_hash": "fa8810e0bb3c0c0834507db312c56f1ffde4f3802cd8cc15f7dbf5c95dc51a7f",
-      "carries": 5,
+      "carries": 7,
       "claim_id": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
       "content_hash": "e3ee5b6861e73fc384494af34bc1a117bcae1dd851744ed0a0a0fe35d0c97352",
       "depth": 10,
@@ -4212,7 +4331,7 @@
     },
     "D0-M1-CLASS-ADMISSIBILITY-001": {
       "block_hash": "ee19adf2c97718e01106bfff7f9a8494050e6096d0dfaec785be70f6b9fe02c0",
-      "carries": 8,
+      "carries": 10,
       "claim_id": "D0-M1-CLASS-ADMISSIBILITY-001",
       "content_hash": "34b4104e79fc38df3aae93caaa96bc356eef58d8788a917eff1bb727ca6c3c4e",
       "depth": 1,
@@ -4255,7 +4374,7 @@
     },
     "D0-M1-PREDICATE-001": {
       "block_hash": "1cfbe78be6202cecdabda3fbb38584ee03c8e0c723434726622f6e4b0ae5d0fa",
-      "carries": 36,
+      "carries": 38,
       "claim_id": "D0-M1-PREDICATE-001",
       "content_hash": "b57a7541300fd6bf8eed4f7528f2ee9ce1065837e908bb3b02330e254d4829f2",
       "depth": 0,
@@ -4268,7 +4387,7 @@
     },
     "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001": {
       "block_hash": "98eac02980e0fcf727857041b8924b64c9e51b1beaf8a1f0044ede60e55c887a",
-      "carries": 4,
+      "carries": 6,
       "claim_id": "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001",
       "content_hash": "2e708efda61c1634eaf0c1ec8df49b47cf0abeba414b945763321bb3d1aee455",
       "depth": 11,
@@ -4285,7 +4404,7 @@
     },
     "D0-M1-UNIVERSALITY-001": {
       "block_hash": "075a30e628ddb215cc1e4616536d971416a55cb3026b5c33fb7ebbb3ed67d047",
-      "carries": 5,
+      "carries": 7,
       "claim_id": "D0-M1-UNIVERSALITY-001",
       "content_hash": "8066739163652251c915f8230104dae6ceda4d8cda6b80bbc9da9e6aaa42c209",
       "depth": 0,
@@ -4498,6 +4617,22 @@
       ],
       "parents": [],
       "rests_on": 0
+    },
+    "D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001": {
+      "block_hash": "b78d12354ed6f3c990516042ec1565ccd6ea1e5c26fcbd9dc05ca6d4de860d47",
+      "carries": 0,
+      "claim_id": "D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001",
+      "content_hash": "22a9e264673ace1c89846df8c4dc218323e734e0f785141512ef871df32ec16a",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Bridge.LocalRaychaudhuriRepresentation"
+      ],
+      "parents": [
+        "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001",
+        "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001"
+      ],
+      "rests_on": 3
     },
     "D0-NEUTRINO-DELTA-ALPHA-NORM-SQUARE-001": {
       "block_hash": "4827e36f6ca48de534719ee607592bf806edf732ddf03d191915745be14ddbc5",
@@ -4748,7 +4883,7 @@
     },
     "D0-P-DEGREE2-EXHAUSTION-001": {
       "block_hash": "483d4540328ec3556aabe2ff6e0ea92995b72aba8c521476fcabeaa0cdab3b16",
-      "carries": 19,
+      "carries": 21,
       "claim_id": "D0-P-DEGREE2-EXHAUSTION-001",
       "content_hash": "99e2770aef68b468b2d01706ccd2ebec17282b50030793be7a451ba1bebb4b62",
       "depth": 2,
@@ -4825,6 +4960,21 @@
       ],
       "parents": [],
       "rests_on": 0
+    },
+    "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001": {
+      "block_hash": "e6f25d4bf7456b109d0e499bbbc4cce64f0e1da4428276671e2b1e8057ab8cc8",
+      "carries": 2,
+      "claim_id": "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001",
+      "content_hash": "c14b26ddede2596fbd794ff100955d6d18c1149167674ee5f4afc1beb004f143",
+      "depth": 1,
+      "genesis": false,
+      "modules": [
+        "D0.Gravity.LocalPressureCapacityDynamics"
+      ],
+      "parents": [
+        "D0-COSMO-HOMOGENEOUS-FIXED-POINT-001"
+      ],
+      "rests_on": 1
     },
     "D0-PAGE-CURVE-FINITE-RANK-OWNER-001": {
       "block_hash": "3f305247dd7e6728737fbde0782a1accacce4dfa74533516724159ac0683ac2d",
@@ -5047,7 +5197,7 @@
     },
     "D0-PHASON-THAWING-001": {
       "block_hash": "a51907d7491694d1fca75f3efd3ad97527f2a79ecd72add47e4976d122efa122",
-      "carries": 1,
+      "carries": 10,
       "claim_id": "D0-PHASON-THAWING-001",
       "content_hash": "298f7c76ed07546a1e935aa326711eaee80f27cd7526a5b103b6438688313369",
       "depth": 2,
@@ -5122,7 +5272,7 @@
     },
     "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001": {
       "block_hash": "3bde28d116f76c95a345666a1dcbf2c4fe56d29999a94d1dfb4efed4f10c2071",
-      "carries": 2,
+      "carries": 11,
       "claim_id": "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
       "content_hash": "e2bb6e5929467205f6e74ad7d8c550885d74031851468e7f20ed3ee3f4f16064",
       "depth": 3,
@@ -5151,7 +5301,7 @@
     },
     "D0-PHI-HURWITZ-CLASS-CANONIZATION-001": {
       "block_hash": "8a6f17c3a430ea9ea5538731a154cb99571c6e67ffcc4e7e3a85e91701e61371",
-      "carries": 16,
+      "carries": 18,
       "claim_id": "D0-PHI-HURWITZ-CLASS-CANONIZATION-001",
       "content_hash": "629c8586c9e9c46cc64290112d4c26e635c376afb1d38cafd48cadd28b89523d",
       "depth": 0,
@@ -5177,6 +5327,21 @@
       ],
       "rests_on": 7
     },
+    "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001": {
+      "block_hash": "c3697b1ae28bd58b2b644f8c590b1c1246a9cf6049e81d7f9247eea4d704b189",
+      "carries": 0,
+      "claim_id": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "content_hash": "ab04f1776510879fd28204fe92ac0329fe39f44415950e2434fb01d4a75b4fd6",
+      "depth": 6,
+      "genesis": false,
+      "modules": [
+        "D0.Bridge.PhysicalRedshiftDetection"
+      ],
+      "parents": [
+        "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001"
+      ],
+      "rests_on": 16
+    },
     "D0-PI0-DISCRETE-ANGLE-001": {
       "block_hash": "365f0134a15d1318bdc8c87fa11e75fd02ab7776bf437f45eac2364536b30581",
       "carries": 1,
@@ -5194,7 +5359,7 @@
     },
     "D0-PISOT-CONTRACTION-TIME-ARROW-001": {
       "block_hash": "96bfdfa80c4ef028b1ccaec2a61265fc6a2e281d1c194efb0838995c4af8f129",
-      "carries": 25,
+      "carries": 34,
       "claim_id": "D0-PISOT-CONTRACTION-TIME-ARROW-001",
       "content_hash": "3a12557eb3fe0cf9697b9fa5b9fa3c4e770e5a770344046e3b216a5e12b1f1fc",
       "depth": 1,
@@ -5320,7 +5485,7 @@
     },
     "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001": {
       "block_hash": "339cc13e1ad49cf7c979df549e2a8c91a1f8a7c191830ca937409513e98728bf",
-      "carries": 9,
+      "carries": 18,
       "claim_id": "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001",
       "content_hash": "0c0db3efe8c6c543319a4769a9b067076668761e1361e1de116b953aacb7ba3e",
       "depth": 2,
@@ -5715,6 +5880,38 @@
       ],
       "rests_on": 1
     },
+    "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001": {
+      "block_hash": "1cd40e305a5c0e0e4826b24681a7161e84870e909cda482e331407dc98635265",
+      "carries": 0,
+      "claim_id": "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001",
+      "content_hash": "3303e7d8546e73f0cb4aa3341191cbff6042d31b33f6bfba2e62e1983bd2bea2",
+      "depth": 6,
+      "genesis": false,
+      "modules": [
+        "D0.Cosmology.PhaseCycleFrequencyRealization"
+      ],
+      "parents": [
+        "D0-BORN-QUADRATIC-ORIGIN-001",
+        "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001"
+      ],
+      "rests_on": 18
+    },
+    "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001": {
+      "block_hash": "1d3802fdb0c7d3d4b803c017841b42826ff5990901188e909e909e81c6270c3f",
+      "carries": 3,
+      "claim_id": "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001",
+      "content_hash": "ce9caf1498a9a300c00c73b315bc46a5df71fbe090a3670a88ff5516693725b6",
+      "depth": 5,
+      "genesis": false,
+      "modules": [
+        "D0.Cosmology.PhysicalRedshiftDetectionPassport"
+      ],
+      "parents": [
+        "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+        "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001"
+      ],
+      "rests_on": 15
+    },
     "D0-RAW-HISTORY-CATEGORY-001": {
       "block_hash": "9d0e9446a0b1230f23d7dfcc0bfb2cd1783a6093b97ac528aabe177fe6db84a4",
       "carries": 0,
@@ -5792,6 +5989,38 @@
         "D0-RAW-SCENE-GRAPH-001"
       ],
       "rests_on": 9
+    },
+    "D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001": {
+      "block_hash": "f91a8620f5c5b48251cb92487d7b9d8fbe1c02bf64be6067ad96e01512b7c72b",
+      "carries": 0,
+      "claim_id": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001",
+      "content_hash": "e2c34ec8ad3ce2cb4832cfd3a381736ff89a9c0c410e452d478debafbc588ccf",
+      "depth": 5,
+      "genesis": false,
+      "modules": [
+        "D0.Bridge.RedshiftExpansionArchiveCoupling"
+      ],
+      "parents": [
+        "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+        "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001"
+      ],
+      "rests_on": 15
+    },
+    "D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001": {
+      "block_hash": "fe7a748d27ab15d0daab9e8b45fb201219691c95b2897c2d43d4ced1f90a27f9",
+      "carries": 0,
+      "claim_id": "D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001",
+      "content_hash": "76f8fb059e9b4d772ea8fe788ccd4aebe00b6d814d0574bbc47db6a5b2f3e6eb",
+      "depth": 5,
+      "genesis": false,
+      "modules": [
+        "D0.Bridge.RedshiftSITickCalibrationNoGo"
+      ],
+      "parents": [
+        "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+        "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001"
+      ],
+      "rests_on": 15
     },
     "D0-REHEATING-ENERGY-BUDGET-OWNER-001": {
       "block_hash": "ea035381d339914f8a7df8f443172564d352d30169ef4543a7b4b0fe8e81400c",
@@ -6135,7 +6364,7 @@
     },
     "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001": {
       "block_hash": "526918c25ce366d4eb8e85e930d312a4be84e1a37867e839b3bfa2ce354ce6b0",
-      "carries": 13,
+      "carries": 22,
       "claim_id": "D0-SCENE-NATIVE-MULTISCALE-TOWER-NOGO-001",
       "content_hash": "8e3d144c819a298f8f85c86f049e98a32434d34362070a69f0efc9c42e725736",
       "depth": 1,
@@ -6356,6 +6585,29 @@
         "D0-POSTCORE-EXTENSION-SEMANTIC-DEPENDENCE-001"
       ],
       "rests_on": 1
+    },
+    "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001": {
+      "block_hash": "3aab6b66f2e1326ec7cf8bc6736490de19befc252f18db8985ffa43ab2235e74",
+      "carries": 7,
+      "claim_id": "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001",
+      "content_hash": "afb43f658bc36b57c0d2b05dc86489ca2884834023b1e3f98107a82e2cb6b57b",
+      "depth": 4,
+      "genesis": false,
+      "modules": [
+        "D0.Cosmology.SelfUnfoldingObservableRelations"
+      ],
+      "parents": [
+        "D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001",
+        "D0-CONTINUOUS-TIME-SEMIGROUP-ENVELOPE-001",
+        "D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001",
+        "D0-DARK-RATIO-TRANSFER-OWNER-001",
+        "D0-IM-002",
+        "D0-IM-COSMO-001",
+        "D0-PHASON-THAWING-001",
+        "D0-PHI-FRACTAL-TICK-DYNAMICS-OWNER-001",
+        "D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001"
+      ],
+      "rests_on": 13
     },
     "D0-SIGNATURE-31-SPLIT-001": {
       "block_hash": "9cd8ade952ca1060a188e9750ae78901d01dc8d1c752675bbe31a25b3a5afae7",
@@ -6783,7 +7035,7 @@
     },
     "D0-TORUS-CORE13-GEOMETRY-001": {
       "block_hash": "10f55614df52d4ce606e24d70a230dd1ba980a047f8237323f6315238a888117",
-      "carries": 27,
+      "carries": 29,
       "claim_id": "D0-TORUS-CORE13-GEOMETRY-001",
       "content_hash": "5e0b5e41625782447a0041936b2188777cd2386df2b9b9a2fa710ea3673414fe",
       "depth": 0,
@@ -6826,7 +7078,7 @@
     },
     "D0-TORUS-SHELL-ATTACHMENT-001": {
       "block_hash": "3a7f319abfb62e1cc55e7a85fa3655fca94c5f115ebfeb0aba1713f1cafd76b0",
-      "carries": 18,
+      "carries": 20,
       "claim_id": "D0-TORUS-SHELL-ATTACHMENT-001",
       "content_hash": "af7b9acbc887f5a8d8bf7f7e25797da09611909dacf8648063eddacdf3e0d7a7",
       "depth": 1,
@@ -6880,7 +7132,7 @@
     },
     "D0-TOWER-STOP-NOEXT-001": {
       "block_hash": "c7eb511e05886fe7b8eb0823c4827d71417754c03ad74ec1c38aafb16cdb19f8",
-      "carries": 20,
+      "carries": 22,
       "claim_id": "D0-TOWER-STOP-NOEXT-001",
       "content_hash": "c6caa1e01fb7b639d5602a9b4e415327e27f302b55de0c599361fb082676ef78",
       "depth": 2,
@@ -7092,7 +7344,7 @@
     },
     "D0-TYPED-DETECTOR-PRIMITIVE-EXHAUSTION-001": {
       "block_hash": "07862da9c4af3875b22995d5d4e368246fa33d00dac939bbc96261a977ab1c4f",
-      "carries": 8,
+      "carries": 10,
       "claim_id": "D0-TYPED-DETECTOR-PRIMITIVE-EXHAUSTION-001",
       "content_hash": "d3a7edf355aeabcd5a92a88aed61d267133cd9b5b2512e16d9fb59d421fd69c7",
       "depth": 8,
@@ -7801,12 +8053,12 @@
     "09_LEAN_FORMALIZATION/D0/**/*.lean"
   ],
   "summary": {
-    "claims_chained": 528,
-    "claims_total": 669,
-    "claims_unchained": 141,
+    "claims_chained": 543,
+    "claims_total": 689,
+    "claims_unchained": 146,
     "cycle_detected": false,
     "genesis_blocks": 226,
-    "max_depth": 14
+    "max_depth": 16
   },
   "unchained": [
     "D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001",
@@ -7843,6 +8095,7 @@
     "D0-CVFT-F5",
     "D0-CVFT-F8",
     "D0-DELTA-ALPHA-SEAM-CLOSED-001",
+    "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
     "D0-DSI-EXPERIMENTAL-001",
     "D0-DUSTY-PLASMA-001",
     "D0-E8-COLDEA-ANCHOR-001",
@@ -7910,6 +8163,9 @@
     "D0-PHI-CSTAR-PASSPORT-001",
     "D0-PHI-CYLINDER-TRACE-UNIQUE-001",
     "D0-PHI-LADDER-SEMIGROUP-001",
+    "D0-PHI-QSO-LEVEL-EXCESS-DESI-001",
+    "D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001",
+    "D0-PHI-STEP-H-DESI-DR2-001",
     "D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001",
     "D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001",
     "D0-PHI99-DEPTH-FORCING-001",
@@ -7924,6 +8180,7 @@
     "D0-QUASI009-CKM-PHASON-HOLONOMY-001",
     "D0-QUASICRYSTAL-CARRIER-FORCING-001",
     "D0-QUASICRYSTAL-PROJECTION-001",
+    "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
     "D0-ROOT-OPERATOR-COMPLETION-PROGRAM-001",
     "D0-SCENE-BARTHOLDI-TYPED-001",
     "D0-SDE-K0-001",

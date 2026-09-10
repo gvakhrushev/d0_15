@@ -9,7 +9,7 @@
       "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
       "category": "",
       "claim_ids": [],
-      "line": 1411,
+      "line": 1545,
       "n_objects": 13,
       "registered": true,
       "section": "01.14",
@@ -87,7 +87,7 @@
       "claim_ids": [
         "D0-JONES-INDEX-PHI-001"
       ],
-      "line": 2121,
+      "line": 2255,
       "n_objects": 7,
       "registered": true,
       "section": "01.21.3",
@@ -110,7 +110,7 @@
       "claim_ids": [
         "D0-JONES-INDEX-PHI-001"
       ],
-      "line": 2127,
+      "line": 2261,
       "n_objects": 7,
       "registered": true,
       "section": "01.21.4",
@@ -134,7 +134,7 @@
         "D0-MODULAR-TIME-FLAVOR-001",
         "D0-TOWER-STOP-NOEXT-001"
       ],
-      "line": 1871,
+      "line": 2005,
       "n_objects": 6,
       "registered": true,
       "section": "01.19a.4",
@@ -178,7 +178,7 @@
         "D0-MODULAR-TIME-FLAVOR-001",
         "D0-TOWER-STOP-NOEXT-001"
       ],
-      "line": 1871,
+      "line": 2005,
       "n_objects": 5,
       "registered": true,
       "section": "01.19a.4",
@@ -199,7 +199,7 @@
       "claim_ids": [
         "D0-JONES-INDEX-PHI-001"
       ],
-      "line": 2096,
+      "line": 2230,
       "n_objects": 5,
       "registered": true,
       "section": "01.21.3",
@@ -240,7 +240,7 @@
         "D0-FROBENIUS-DIVISION-3D-001",
         "D0-TOWER-STOP-NOEXT-001"
       ],
-      "line": 854,
+      "line": 988,
       "n_objects": 3,
       "registered": true,
       "section": "01.7.1C",
@@ -291,7 +291,7 @@
       "claim_ids": [
         "D0-PHI-M1-DUALITY-001"
       ],
-      "line": 2018,
+      "line": 2152,
       "n_objects": 2,
       "registered": true,
       "section": "01.21.1",
@@ -309,7 +309,7 @@
       "claim_ids": [
         "D0-PHI-M1-DUALITY-001"
       ],
-      "line": 2018,
+      "line": 2152,
       "n_objects": 2,
       "registered": true,
       "section": "01.21.1",
@@ -325,7 +325,7 @@
       "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
       "category": "",
       "claim_ids": [],
-      "line": 2246,
+      "line": 2380,
       "n_objects": 2,
       "registered": true,
       "section": "01.22",
@@ -341,7 +341,7 @@
       "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
       "category": "",
       "claim_ids": [],
-      "line": 2262,
+      "line": 2396,
       "n_objects": 2,
       "registered": true,
       "section": "01.22",
@@ -357,7 +357,7 @@
       "book": "BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH",
       "category": "",
       "claim_ids": [],
-      "line": 2262,
+      "line": 2396,
       "n_objects": 2,
       "registered": true,
       "section": "01.22",

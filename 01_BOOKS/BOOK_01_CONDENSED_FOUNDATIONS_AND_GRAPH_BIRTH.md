@@ -736,6 +736,53 @@ The same equivalence constructs the previously external physical scene applicati
 are then selected independently of the count: the existing capacity defects
 `(|ABCD|,q_T)=(4,44)` uniquely reconstruct center `11`, spread `2`, and therefore `(9,11,13)`.
 
+**Labelled-side boundary and structural repair (2026-08-25).** The preceding formulation needs one
+qualification. With the left and right repetitions kept as physical labels, the exact support
+grammar has four realised profiles, not three: `∅`, `{left}`, `{right}`, and `{left,right}`. The two
+singleton comparisons are distinct functions with distinct supports, and class-M1 admissibility
+does not force a comparison to be invariant under exchanging its arguments. This is formalized as
+the structural no-go `D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001`. Therefore equality of
+support cardinality is not a consequence of M1 alone and must not be read as one.
+
+The corrected positive theorem is
+`D0-CONCRETE-REPAIR-FORCING-CANONICITY-001`. The protocol preregisters two independent repetitions
+but treats their names as gauge: two exact supports represent the same repair precisely when a
+permutation of those registered labels carries one to the other. For arbitrary concrete
+comparisons, Lean proves structurally that this orbit relation is equivalent to equality of support
+arity; no catalogue of possible comparisons is enumerated. Hence the three repair classes are the
+three permutation orbits of the four labelled supports. The claim is deliberately conditional on
+this protocol-label gauge and does not assert that M1 forces every external detector to adopt it.
+
+The downstream choices are strengthened at the same time. The repair-to-shell equivalence is the
+unique equivalence preserving computed support rank and radial rank. Shell sizes are computed as
+`q_T/|Role| + (rank-1)|Dyad|`, giving `9,11,13`, and only afterwards proved equal to the legacy named
+shell table. Finally, the trivial defect class generates the zero cycle while the carried
+nontrivial closed defect generates the circulation filled by the shell cell. Thus the forcing DAG
+now consumes an orbit theorem, a unique rank-preserving representation, capacity-derived sizes,
+and a defect-generated cycle rather than four adjacent definitional choices.
+
+**Composition boundary and relative repair data (2026-09-09).**
+The three support orbits classify individual repairs. They do not support composition of
+comparisons sharing an internal source. The separately built module
+`D0.Foundation.RelationalRepairClosure` proves that no operation on marginal repair ranks can
+compute the rank of output equality: comparing left-history with itself has rank `0`, whereas
+comparing left-history with right-history has rank `2`, although both inputs have rank `1` in
+both cases. A simultaneous swap of the whole apparatus preserves this distinction.
+
+Consequently composition must retain relative alignment in addition to marginal ranks. For an
+arbitrary group of frame changes, the module proves that the family `a⁻¹bᵢ` completely classifies
+joint frames modulo a common frame change, and that every invariant readout factors through this
+family. For binary frames, relative recording is reversible while retaining the reference; a
+record recovering `n` independently variable relative bits needs at least `2^n` states. These
+are joint configurations, not new repair kinds or spatial zones. The theorem does not supply
+the physical preparation or M1 admissibility of all such configurations.
+
+Frame differences alone have trivial closed product. Nontrivial closed transport therefore
+needs actual edge transformations beyond local frame names. Given such transformations, their
+triangle product transforms by conjugation at the base point. This supplies a precise interface
+to the closed-defect layer; it does not yet force the transformation group or its dynamics.
+The earlier three-class count remains valid within its individual-support scope.
+
 **Topological shell and full forcing architecture (2026-08-25).**
 `D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001` upgrades the reflection proxy to a finite cellular
 theorem. The closed conjugacy-class defect labels a nonzero three-edge circulation cycle. With no

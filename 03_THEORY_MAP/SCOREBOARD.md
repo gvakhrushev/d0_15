@@ -4,13 +4,13 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 ## Headline
 
-- **Realized strength:** 8966 / 11687 (**76.7%** of track-fair max)
-- **Core spine:** 7046 / 9700 (headroom **2654** points to take every core claim to L5)
-- Claims: 667 active (669 total); integrity demotions: 0; duplicates: 0
+- **Realized strength:** 9217 / 11938 (**77.2%** of track-fair max)
+- **Core spine:** 7146 / 9800 (headroom **2654** points to take every core claim to L5)
+- Claims: 687 active (689 total); integrity demotions: 0; duplicates: 0
 
 ## Repository hygiene / refactor score
 
-- **Hygiene:** 96.3 / 100 (penalties **-3.7**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
+- **Hygiene:** 96.4 / 100 (penalties **-3.6**, bonuses **+0.0**) — cleanup *gains* points here; tracked meta-trash / fake proofs / book-clutter *lose* them.
 
 | signal | count | points | what to clean |
 |---|--:|--:|---|
@@ -19,14 +19,14 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | `tautology_proofs` | 0 | -0 | Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing) |
 | `proof_debt` | 0 | -0 | sorry/axiom inside the built D0/ tree |
 | `phantom_certs` | 0 | -0 | vp_*.py cited in books but absent on disk and not OPEN/PROOF-TARGET |
-| `orphan_proof_targets` | 37 | -3.7 | PROOF-TARGET markers in book prose with no registry row |
+| `orphan_proof_targets` | 36 | -3.6 | PROOF-TARGET markers in book prose with no registry row |
 | `dev_comments` | 0 | -0 | developer '# ...' TODO/notes left in book prose |
 | `path_leaks` | 0 | -0 | internal repo paths / vp_*.py / D0.* module names dumped in book prose |
 | `corpus_errors` | 0 | -0 | check_v14_clean_corpus violations (duplicate headings, version logs) |
 | `real_in_project_lake` | 0 | -0 | a real .lake build tree inside the repo (must be an external junction) |
 | `files_deleted_vs_base` | 0 | +0 | net files removed vs base-v14 (rewards shrinking the publish tree) |
 
-**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.7)
+**Top cleanup actions (most points to regain):** `orphan_proof_targets` (-3.6)
 
 ## Where to gain points next (cheapest promotions)
 
@@ -92,16 +92,16 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 
 | domain | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
-| formal_core | 395 | 5882 | 7065 | 1143 |
+| formal_core | 401 | 5959 | 7142 | 1143 |
 | frontier | 60 | 270 | 1200 | 930 |
-| cosmology | 50 | 752 | 930 | 178 |
-| smooth_geometry | 41 | 517 | 678 | 152 |
-| empirical_passport | 49 | 594 | 747 | 144 |
+| cosmology | 56 | 843 | 1021 | 178 |
+| smooth_geometry | 42 | 524 | 685 | 152 |
+| empirical_passport | 54 | 638 | 791 | 144 |
 | spectral_action | 11 | 143 | 195 | 52 |
-| gauge_bridge | 50 | 685 | 724 | 39 |
+| gauge_bridge | 51 | 705 | 744 | 39 |
 | rg | 7 | 93 | 113 | 16 |
 | external_background | 1 | 1 | 2 | 0 |
-| si_calibration | 2 | 18 | 22 | 0 |
+| si_calibration | 3 | 30 | 34 | 0 |
 | interpretation_spine | 1 | 11 | 11 | 0 |
 
 ## By book
@@ -109,27 +109,27 @@ _Generated from `CLAIM_TO_LEAN_MAP.csv` + on-disk artifacts by `tools/d0_score.p
 | book | n | realized | max | core headroom |
 |---|--:|--:|--:|--:|
 | BOOK_04 | 123 | 1624 | 2130 | 486 |
-| BOOK_08 | 87 | 1159 | 1563 | 395 |
+| BOOK_08 | 92 | 1194 | 1598 | 395 |
 | BOOK_02 | 87 | 1078 | 1424 | 336 |
-| BOOK_01 | 65 | 978 | 1208 | 230 |
+| BOOK_01 | 66 | 990 | 1220 | 230 |
 | BOOK_07 | 73 | 947 | 1253 | 292 |
 | BOOK_06 | 45 | 547 | 776 | 224 |
 | BOOK_05 | 31 | 384 | 555 | 171 |
 | BOOK_01/02 | 15 | 284 | 284 | 0 |
 | BOOK_00/01 | 17 | 266 | 292 | 26 |
+| BOOK_06/08 | 13 | 170 | 209 | 39 |
+| BOOK_07/08 | 13 | 151 | 218 | 62 |
 | BOOK_00 | 12 | 145 | 222 | 77 |
-| BOOK_07/08 | 9 | 96 | 163 | 62 |
+| BOOK_01/03 | 5 | 100 | 100 | 0 |
 | BOOK_05/06 | 6 | 96 | 96 | 0 |
 | BOOK_03 | 7 | 82 | 90 | 8 |
 | BOOK_01/02/08 | 4 | 80 | 80 | 0 |
 | BOOK_06/07 | 4 | 80 | 80 | 0 |
-| BOOK_01/03 | 4 | 80 | 80 | 0 |
 | BOOK_01/04 | 3 | 60 | 60 | 0 |
 | BOOK_02/04 | 4 | 58 | 71 | 13 |
 | BOOK_04/08 | 7 | 52 | 140 | 88 |
 | METROLOGY | 5 | 51 | 100 | 49 |
 | BOOK_02/04/08 | 3 | 44 | 44 | 0 |
-| BOOK_06/08 | 4 | 41 | 80 | 39 |
 | BOOK_02/03 | 2 | 40 | 40 | 0 |
 | D0_OPERATOR_BRIDGE_TRIPLE_CLOSURE | 3 | 33 | 33 | 0 |
 | BOOK_05/08 | 2 | 32 | 32 | 0 |

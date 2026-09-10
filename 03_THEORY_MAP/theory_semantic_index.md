@@ -5,40 +5,40 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 ## Status counts
 
-- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 26
+- `BRIDGE-ASSUMPTIONS-EXPLICIT`: 30
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 257
+- `CORE-FORMALIZED`: 262
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
-- `EMPIRICAL-PASSPORT`: 8
+- `EMPIRICAL-PASSPORT`: 13
 - `EXTERNAL-BACKGROUND`: 1
-- `NO-GO`: 99
+- `NO-GO`: 105
 - `NO_GO_PROVED`: 7
 - `PASSPORT-CLOSED`: 20
 - `PROOF-TARGET`: 60
 
 ## Type counts
 
-- `bridge`: 45
-- `certificate`: 195
-- `core`: 260
+- `bridge`: 49
+- `certificate`: 200
+- `core`: 265
 - `deprecated`: 3
 - `frontier`: 60
-- `no-go`: 106
+- `no-go`: 112
 
 ## Domain counts
 
-- `cosmology`: 50
-- `empirical_passport`: 49
+- `cosmology`: 56
+- `empirical_passport`: 54
 - `external_background`: 1
-- `formal_core`: 396
+- `formal_core`: 402
 - `frontier`: 60
-- `gauge_bridge`: 51
+- `gauge_bridge`: 52
 - `interpretation_spine`: 1
 - `rg`: 7
-- `si_calibration`: 2
-- `smooth_geometry`: 41
+- `si_calibration`: 3
+- `smooth_geometry`: 42
 - `spectral_action`: 11
 
 ## Domain: cosmology
@@ -329,6 +329,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Cosmology campaign Layer A] Post-threshold phason initial state = normalized heat-kernel covariance on the NONZERO connected modes (zero mode projected out); energy rho_phi(u)=heat-weighted mean of {20,22,24,33} in [20,33], >0 for all u>0, sourced by the reheating heat trace, no inflaton amplitude. Lean D0.Cosmology.PhasonInitialCovariance (div_pos/le_div_iff0/div_le_iff0). Forced unique window u_* NOT supplied -> PROOF-TARGET (COSMOLOGY_CLOSURE_BLOCKERS.csv).
 
+### D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `cosmology`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_redshift_drift_expansion_coupled.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [MINT 2026-09-03 D0-RDEC-01 REAL DATA] Cross-observable test of the same constant-rate physical bridge using the hash-pinned D0-RD-01 GBT+ESPRESSO verdict and six official DESI DR2 radial BAO measurements with published covariance. Eliminating rho against FLRW forces DH/rd=C/(1+z); one-normalization GLS gives C=31.78441+/-0.19922, chi2=132.01316/5, p=8.8978e-27: REJECT_CONSTANT_RATE_D0_FLRW_COUPLED_BRIDGE at alpha=0.001. Phi cancels, so this is not a peak/numerology test. Free exponent alpha=-1.22190 improves by Delta chi2=106.013 (nested p=7.32e-25) but still fails absolute fit p=3.16e-5. Galaxy-only calibration p=0.17896 misses the same-survey z=2.33 Lyman-alpha holdout by -11.21 sigma; removing that point removes rejection, reported explicitly. The electron action tick tau=h/(38m_ec^2)=2.1298e-22 s is excluded as the cosmological tick by the direct-drift limit, requiring scale separation >2.3616e37. Dark-response representation is absent and explicitly NOT_TESTED. Empirical passport only; rejects the coupled physical bridge, not the internal cocycle or coefficient 38.
+
 ### D0-PHASON-WZ-CPL-PASSPORT-001
 
 - type: `certificate`
@@ -537,6 +550,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: Closed finite feedback operator core F_N=P_N U_N^dagger Q_N U_N P_N with resolvent determinant trace variation and feedback pressure law.
 
+### D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_06/08`
+- module: `D0.Cosmology.SelfUnfoldingObservableRelations`
+- theorem: `dynamic_shares_partition_unity;dynamic_archive_share_eq_redshift_fraction;first_dynamic_archive_share_eq_golden_trace;dynamic_measure_ne_static_dimension_share;self_unfolding_observable_relations`
+- cert: `vp_self_unfolding_observable_relations.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [MINT 2026-08-26 DIMENSION-VS-MEASURE SEPARATION] Resolves the red-point distinction between the fixed rank/nullity count 3/30 and the dynamic golden tick measure. The conserved tick defines dynamicVisibleShare(n)=phi^(-n) and dynamicArchiveShare(n)=1-phi^(-n), which partition unity for every depth. Eliminating n against the internal registered depth coordinate proves dynamicArchiveShare=zD0/(1+zD0), so dynamic archive response and internal expansion history are not independently tunable. At the first tick the archive share is phi^-2=2-phi, while the static dimension-count share is 10/11; Lean proves they are unequal. Therefore 10/11 remains a carrier-dimension ratio and cannot be advertised as the dynamical dark percentage, while the golden 0.382... share has an explicit tick-measure origin. Exact boundary: this is an internal conserved measure, not an astronomical matter-density or lensing observable; physical response still requires a measurement passport. The certificate checks the division-free relation darkDynamic*(1+zD0)=zD0 and rejects conflation with 10/11. Clean Lean, no sorry/new axiom/bridge.
+
+### D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_06/08`
+- module: `D0.Cosmology.PhaseCycleFrequencyRealization`
+- theorem: `phaseQuarterTurn_four;phaseQuarterTurn_three_not_full;completed_phase_cycles_are_returns;cycleFrequencyReadout_one_step;phaseCycleFrequencyProtocol;phase_cycle_frequency_ratio_eq_internal;phase_cycle_frequency_drift_relation;finite_phase_cycle_frequency_realization`
+- cert: `vp_phase_cycle_frequency_realization.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [MINT 2026-08-26 FINITE PHASE-CYCLE FREQUENCY REALIZATION] The abstract self-return frequency passport now has a concrete finite in-repository realization. The owned phase action J is a quarter turn; Lean proves J^4(v)=v for every finite quadrature, proves three turns are not a full cycle, and proves every finite count of four-turn blocks returns. A protocol freezes one positive completed-cycle count N and one positive base window W before comparison, transports the detector window as W*phi^n, and defines nu(n)=N/(W*phi^n). Lean derives nu(n+1)=nu(n)phi^-1, constructs PreregisteredSelfReturnFrequencyProtocol, and inherits nu_em/nu_obs=phi^(o-e) and the drift law. N and W cancel rather than being fitted. Scope is internal finite detector semantics; mapping a laboratory phase return and clock window to these types remains an external application obligation. Clean Lean, no sorry/new axiom/bridge assumption in the internal construction.
+
 ### D0-IM-COSMO-001
 
 - type: `core`
@@ -615,6 +654,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
 - notes: [Iter21 cert->Lean, verify-then-promote] Finite S_DE algebra machine-checked in D0.Cosmology.PhasonFlipEntropy: the explicit 2x2 phason-flip transfer (3/2,1/16,1/10,3/2) has characteristic 160*char = 160 lambda^2 - 480 lambda + 359 (phason_flip_transfer_matrix_has_sde_polynomial, norm_num+ring), and its roots are exactly the relaxation modes (sde_roots_are_phason_flip_relaxation_modes). SUPERSEDES the Phase-L note: the removed placeholder (stmt)(h):=h is gone; these are real proofs, re-verified by reading the module. External BAO/DESI survey comparison stays an empirical passport; the K0/Connes spectral-triple/phason-holonomy GAP-LABELING is external (see D0-SDE-K0-001), not part of this finite-algebra row.
 
+### D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `cosmology`
+- book: `BOOK_06/08`
+- module: `D0.Cosmology.SelfUnfoldingObservableRelations`
+- theorem: `depthGap_composes;onePlusInternalRedshift_cocycle;repeated_detection_one_step;internal_redshift_drift_relation;one_step_generator_unique;origin_redshift_eq_archive_growth;scale_increment_eq_archive_growth_increment;origin_redshift_drift_eq_archive_growth_increment;drift_scale_archive_same_increment;tick_expansion_reciprocity;physical_redshift_identification_not_internal;self_unfolding_observable_relations`
+- cert: `vp_self_unfolding_observable_relations.py`
+- assumptions: `none`
+- scope: Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.
+- notes: [MINT 2026-08-26 SELF-UNFOLDING MULTI-OBSERVABLE RELATION] Eliminates the shared refinement depth from four internal readouts instead of fitting another number. A registered emission depth e and observer depth o define 1+zD0=phi^(o-e); composable depth comparisons obey an exact multiplicative cocycle. Repeating the same emission observation one tick later gives the parameter-free law Delta zD0=(phi-1)(1+zD0), and any rival constant one-step multiplier compatible with the same protocol is proved equal to phi. From the origin, zD0(n)=archiveGrowth(n)=phi^n-1; redshift drift, metric-scale increment and relative archive-growth increment are the same exact object. The active time ladder simultaneously contracts by phi^-1, with phi*phi^-1=1, so time retention and depth expansion are reciprocal readings of one generator. STRUCTURAL BOUNDARY: zD0 is an internal preregistered depth comparison, not measured astronomical redshift. The integer coordinate is monotone but differs already at one tick, so physical identification still requires PRIM-PHYSICAL-REDSHIFT-OBSERVABLE / a preregistered external comparison protocol. The fixed 3/30 dimension split is not reinterpreted as a dynamic dark measure. Certificate checks exact Q(phi) cocycle/drift/shared-increment laws and rejects integer-coordinate and free-multiplier mutations. Clean Lean, no sorry/new axiom/bridge.
+
 ### D0-ARCHIVE-CONTRACTION-NOGO-001
 
 - type: `no-go`
@@ -667,6 +719,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Final Core Completion M2] The dark-energy SIGN is owned (D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001, Galois-forced negative, retained reading -phi). The MAGNITUDE MAP z->w_DE(z) is NOT owned: two admissible maps w1(z)=-phi-z, w2(z)=-phi-2z respect every owned invariant (negative on z>=0, anchor -phi at z=0) yet differ at z=1. Lean D0.Cosmology.PhasonMagnitudeMaximalityNoGo. The magnitude profile is underdetermined by present-core => needs an external physical-branch passport (DESI/CPL); the internal magnitude question is closed-negative. The Galois SIGN owner is untouched. UPLIFT[2026-07-06]: instance-of the organizing lemma (reading layer); moduli=magnitude maps z->w_DE(z) anchored -phi; gauge-fixing=B-meas: DESI/CPL passport (evolving-DE only, no corner claim); invariant content=Galois sign owner + w_D0(s) envelope; row unchanged. RAISE[2026-07-06]: corollary-of D0-P-INVARIANT-MINIMAL-001 (one free Aut-orbit of the extremal-minimal observable algebra)
 
+### D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_06/08`
+- module: `D0.Cosmology.PhaseCycleFrequencyRealization`
+- theorem: `internalScale_transport;internalScale_ratio_eq_internal;raw_cycle_window_defect_factorization;same_count_and_normalizedWindow_forces_internal;rival_requires_count_or_normalizedWindow_defect;raw_cycle_window_realises_every_positive_ratio;raw_cycle_window_does_not_force_redshift`
+- cert: `vp_phase_cycle_frequency_realization.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [MINT 2026-08-26 RAW CYCLE-WINDOW STRUCTURAL NO-GO] For arbitrary positive raw registrations, Lean proves the exact universal factorization nu_em/nu_obs=(N_em/N_obs)*(Wbar_obs/Wbar_em)*phi^(o-e), where Wbar=W/phi^depth. Equal cycle count and equal normalized window force the D0 ratio. Therefore, by contradiction, any rival ratio at the same typed depths must change the completed-cycle count or the normalized window; there is no third datum in this carrier. Independently, a parametric construction realizes every positive ratio with raw count/window registrations, proving that count labels alone do not force phi. This is a structural factorization and reductio over all raw registrations, not enumeration. Clean Lean, no sorry/new axiom and no empirical data.
+
+### D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `cosmology`
+- book: `BOOK_06/08`
+- module: `D0.Cosmology.PhysicalRedshiftDetectionPassport`
+- theorem: `rawProtocolForRatio;raw_double_detection_realises_every_positive_ratio;raw_double_detection_does_not_force_redshift;rival_redshift_requires_relativeCalibration_defect`
+- cert: `vp_physical_redshift_detection_passport.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [MINT 2026-08-26 RAW DOUBLE-DETECTION NO-GO] Positive double registration alone does not force redshift. At the fixed depths e=0,o=1, raw_double_detection_realises_every_positive_ratio constructs, for arbitrary r>0, a positive detector protocol with nu_em/nu_obs=r. Hence the raw interface is ratio-surjective and cannot select phi by observation count alone. This is one parametric construction over all positive r, not an enumeration. The exact reopening condition is the preregistered self-return covariance of D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001; absent it, any non-D0 result is carried by a distinct relative calibration C_em/C_obs and therefore contains additional outcome-affecting information. Clean Lean, no sorry/new axiom and no empirical data.
+
 ### D0-REHEATING-NO-INFLATON-NOGO-001
 
 - type: `no-go`
@@ -708,6 +786,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-LINDEMANN-LNPHI`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Self-reading Section 5] Separate analytic layer (4 layers: internal mu1/mu2/Delta_alpha exact CORE; profinite candidate; external Dixmier/Wodzicki passport; empirical). PERMITTED with class: this a=3 candidate has ordinary log-Cesaro coeff 1/(3 log phi) != rational mu2=12288/5 (conditional on ASSUMP-LINDEMANN-LNPHI, EXTERNAL, never CORE). FORBIDDEN (no full classification): 'no future profinite realization can produce mu2'. Reuses R5/CVFT-F1. ALPHA_ANALYTIC_FORMALISM_BOUNDARY.csv.
+
+### D0-EXPANSION-DARK-RESPONSE-COUPLING-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `empirical_passport`
+- book: `BOOK_06/08`
+- module: `D0.Bridge.RedshiftExpansionArchiveCoupling`
+- theorem: `radial_bao_archive_candidate_coupling;represented_dark_response_coupling;redshift_expansion_archive_coupling`
+- cert: `none`
+- assumptions: `ASSUMP-MEASURED-DARK-RESPONSE-REPRESENTATION`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [MINT 2026-09-03 DARK-RESPONSE APPLICATION INTERFACE] The internal relation f_archive=z/(1+z) and the coupled radial shape imply DH/rd=C*(1-f_archive). Lean types the exact missing external datum as MeasuredDarkResponseRepresentation and proves the relation once it is supplied; no inhabitant is asserted. This prevents BAO residuals, carrier nullity 30, or the dynamic archive share from being silently renamed as observed dark energy/lensing density. The existing physical magnitude maximality NO-GO remains load-bearing.
 
 ### D0-CRITICAL-COLLAPSE-001
 
@@ -904,6 +995,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter21 HYP/bet] the last ~1e-8 alpha layer is the measurement-limit band: alpha_struct=137.035999151 is straddled by CODATA-2018/2022 and the gap (6.7e-8) < inter-edition shift (9.3e-8). Falsifiable bet: refined alpha^-1 stays bracketed within the inter-edition band of 137.035999151 (CODATA-2018 below, CODATA-2022 above -- a straddle, NOT a monotone 'from below'; the cert asserts the latest gap 2.6e-8 < the 9.3e-8 reach). [Iter21] corrected the prior 'from below' wording, which its own cited straddle contradicted. The holonomy THE-structure and CHK match do not depend on this layer; 2nd-order holonomy does NOT close it.
 
+### D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_d0_redshift_drift_direct.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [MINT 2026-09-03 D0-RD-01 REAL DATA] Hash-pinned published-measurement confrontation using ten GBT H I absorbers from arXiv:1211.4585 and the independent three-epoch ESPRESSO Lyman-alpha sightline from arXiv:2603.02318. LITERAL DISCRETE BRIDGE: every registered baseline excludes one or more forward D0 ticks under Delta z=(phi-1)(1+z); the weakest minimum-jump/(|observed change|+5sigma) separation is 5.1023e4. This rejects only assigning a nonzero refinement tick to those physical intervals because Lean supplies no SI tick duration. CONTINUOUS SI BRIDGE: the explicit one-parameter interpolation 1+z(t)=(1+z0)phi^(rho t), rho>=0, forces constant A=c dot(z)/(1+z)=c rho log(phi). The joint independent-block fit is A=-4.9321+/-1.8889 m/s/yr, chi2=11.0173/10 (p=0.3562): no positive detection; nonnegative-family boundary p=0.004513 is above inherited alpha=0.001, hence not rejected. 99.9% upper bound rho<6.2742e-9 tick/yr (>1.5938e8 yr per phi tick under this external interpolation). GBT-only prediction agrees with ESPRESSO holdout at 0.498sigma, but both are null-level; the second ESPRESSO method is a correlated control and is not pooled. Measurement-level external passport, not raw-spectra re-reduction and never CORE. The source values were public and inspected before the protocol, so this is retrospective form-frozen analysis, not prospective preregistration.
+
 ### D0-GRAVASTAR-GW-FALSIFIER-001
 
 - type: `certificate`
@@ -942,6 +1046,32 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [8C orphan-harvest] PDG comparison engine with pinning/holdout/multiple-testing; no operator tuning.
+
+### D0-PHI-QSO-LEVEL-EXCESS-DESI-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_qso_redshift_levels_desi_dr1.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [MINT 2026-08-31 PHI-P_DESI_01 LEG A REAL DATA] Frozen-before-value-access local sideband test of z_n=phi^n-1 at n=1,2,3 on the official hash-verified DESI DR1 QSO catalogue. MAIN/DARK, ZWARN=0, deterministic minimum-ZERR TARGETID deduplication leaves 1,497,382 unique quasars. At primary delta=0.01 in log_phi(1+z): core=29,083, equal-width side=28,549, one-sided p=0.0132016 (about 2.22 sigma), above the frozen p<0.001 threshold; verdict NO_DESI_LEVEL_EXCESS_AT_FROZEN_PRIMARY_SCALE. The effect changes to a deficit at delta=0.02. Same-spectrum estimator control: Z_QN alone gives p=9.24e-5 but has a level-1 deficit and is absent in final Z and Z_RR, so it is a pipeline/selection diagnostic, not an independent detection. External empirical passport only; no core promotion and no refit.
+
+### D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `empirical_passport`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_qso_redshift_levels_sdss_dr16q.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [MINT 2026-08-31 PHI-P_DESI_01 LEG A2 INDEPENDENT SURVEY] The identical frozen phi levels, coordinate, delta=0.01, equal-width sideband statistic and p<0.001 threshold were applied without refit to 750,414 unique SDSS DR16Q quasars from CDS/VizieR VII/289. Pooled core=14,662, side=14,629, one-sided p=0.42584; level 1 is a deficit. Verdict NO_INDEPENDENT_SDSS_LEVEL_EXCESS_REPLICATION. SDSS supplies a different survey/instrument/pipeline, though exact object overlap with DESI was not removed. This closes the old 3.2-sigma note as non-reproduced under the registered double-detection criterion; empirical passport, never CORE.
 
 ### D0-PMNS-DELTA0-NUFIT-001
 
@@ -1281,6 +1411,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [MINT 2026-08-25 STRUCTURAL CASCADE/SCENE NO-GO] Phase-A verdict NO-GO-CLOSABLE. The theorem packages the complete carried cascade theorem (six genuine ordered floors, four interlocks, terminal count leg and separate orientation-parity floor), both SceneCountReduction owner facts, the three computed DatumKind distinctions, and the concrete two-sided class-M1 detector admissibility equivalence. present_model_at_every_positive_count proves this entire present package has a model over EVERY positive SceneCandidate.zoneCount; explicit zoneCount=2 and zoneCount=4 instances therefore refute not only count three but any uniquely forced count. This is a grammar-level countermodel: no current premise contains a semantic map to the variable scene. zoneAssignmentK_iff_bound closes the documented circularity exactly: the finite-kind assignment is equivalent to 3<=zoneCount. gluedKindToTwo_not_injective is the deletion control showing two kinds glue when injectivity is removed. four_zone_rank_eq_four proves the variable complete-multipartite invariant detects a fourth slot exactly; the absent owner is rank<=3 for the variable scene, not rank machinery. FaithfulRepairSceneRepresentation is the minimal number-free typed reopening contract: an independently derived finite quotient of mandatory outcome-affecting non-protocol repairs must embed faithfully into zones and every zone back into the same quotient. It has a canonical non-vacuous DatumKind model and separate lower/upper deletion controls, but no theorem constructs it from present M1/cascade facts; no bridge is consumed and no count closure is promoted. Exact remaining owner: derive the observational repair quotient and its faithful variable-scene representation by the M1 reductio so that a fourth class forces a new outcome-affecting external catalogue. D0-SCENE-COUNT-REDUCTION-001 and D0-CASCADE-INSUFFICIENCY-CHAIN-001 remain PROOF-TARGET; zone sizes 9/11/13 remain a separate selector owner. Certificate fixes repair classes before reading cardinality and checks two/four models, assignment iff bound, gluing, exact hollow-4 rank and rank mutation. [RESOLUTION 2026-08-25] The named reopening owner is now implemented by D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001. This no-go remains load-bearing: present facts alone remain count-parametric; the new positive theorem succeeds only after constructing the observational quotient and its faithful quotient-generated scene rather than pretending the old package already contained a scene map.
 
+### D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `empirical_passport`
+- book: `BOOK_07/08`
+- module: `D0.Bridge.LocalRaychaudhuriRepresentation`
+- theorem: `common_shift_preserves_net;nonzero_common_shift_gives_observational_twin;no_dark_component_identifiable_from_net;dark_component_recovered_from_net_and_focusing;same_net_and_focusing_forces_same_dark;same_net_distinct_focusing_forces_distinct_dark;local_raychaudhuri_representation_coupling`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [MINT 2026-09-03 TWO-READOUT INFORMATION BOUNDARY] For arbitrary local fields the observable net response darkDrive-focusingLoad is invariant under the functional common-shift gauge (dark,focus)->(dark+g,focus+g). Every nonzero g therefore gives a distinct observational twin, and Lean proves by contradiction that no universal algorithm can recover the dark component from the net field alone. Supplying the focusing field as a second independent readout removes the gauge: dark=net+focus uniquely, and at fixed net any focusing change forces a dark change. This is a structural non-identifiability theorem over all functions, not an enumeration or parameter-count slogan.
+
 ### D0-PHASON-WZ-TRANSFER-OWNER-001
 
 - type: `no-go`
@@ -1469,6 +1612,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: Closes the hypercharge-direction obligation as a minimal bridge (NOT THE). Bridge Xi_Y = nu^c uncharged = nu_R in ker(A) = R2 graph->physics localization (MECH-LIMIT, not forced). Proven NECESSARY (Y,B-L independent anomaly-free, B-L charges nu^c) + SUFFICIENT (nu^c=0 => b=0 => span{Y}) + MINIMAL (nu^c unique coord reading b alone). Collapses 2-dim span{Y,B-L} to hypercharge ray. Linkage: hypercharge-direction obligation = R2 localization obligation (one, not two). Cites D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001 (NO-GO); does not re-mint. FIREWALL: single Z2 sterile bit, no mass input. EXTERNAL OWNER-EDGES (support the bridge, do NOT upgrade it to THE): Geng-Marshak PRD39(1989)693 + Minahan-Ramond-Warner PRD41(1990)715 (anomalies fix SM Y up to normalization, second branch removed by nu_R); Babu-Mohapatra PRL63(1989)938 (Majorana nu_R => charge quantization). VERIFIED the Majorana route forces beta=0 ONLY given Y(nu_R)=0 (=nu_R in ker = the bridge): maj(beta=1,Y_nuR=1)=0 shows beta NOT forced if Y(nu_R) free. Caveat ASSUMP-NO-EXOTIC-FERMIONS (registered EXTERNAL_ASSUMPTION_REGISTRY.csv:26, DIVISION_ALGEBRA_CLASSIFICATION; Costa PRD102(2020)115006: other anomaly-free U(1)s exist with exotics; D0 excludes via fixed K(9,11,13)). F7-INTERFACE[2026-07-06]: [F3 honest-bridges consolidation] This row IS the single discrete gate of the hypercharge F7 slot: it collapses the NO-GO's 2-dim span{Y,B-L} (D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001, LEAN_PROVED) to the hypercharge ray through exactly ONE registered assumption, ASSUMP-KERNEL-CHARGE-LOCALIZATION (LEAN_ASSUMPTION_LEDGER.csv:25, PHYSICS_DICTIONARY - 'a physics-dictionary identification, NOT a forced D0 identity'). Gate properties already proven in-row: NECESSARY (Y,B-L independent anomaly-free, B-L charges nu^c) + SUFFICIENT (nu^c=0 => b=0 => span{Y}) + MINIMAL (nu^c unique coord reading b alone) - so the F7 residue is EXACTLY this one localization datum, nothing else. Failure meaning (ledger:25): if nu_R is not kernel-localized, B-L stays gaugeable, the 2-dim anomaly-free freedom returns. Recent raises supply no localization datum - probe-verified 2026-07-06 (no UPLIFT/RAISE tag on this row; the variety row's 2026-07-06 tags re-file only). Hygiene item resolved F5[2026-07-06]: the in-row caveat ASSUMP-NO-EXOTIC-FERMIONS is registered in EXTERNAL_ASSUMPTION_REGISTRY.csv:26 (DIVISION_ALGEBRA_CLASSIFICATION, EXPLICIT) but NOT in LEAN_ASSUMPTION_LEDGER.csv - a D0/Bridge Lean owner file does not exist, so Lean-ledger registration stays a named OWNER item (or an explicit K(9,11,13)-exclusion cross-ref; no new physics either way). NET: F7 = clean typed interface (NO-GO floor + this single ASSUMP gate), not a vague open. F7[2026-07-07]: corollary-of D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001 / D0-P-INVARIANT-MINIMAL-001 -- the Y_{nu^c}=0 charge residue is the selector-M1-no-go in the charge sector (single-vertex covector, not Aut-invariant, vanishes on ker A; the only Aut-invariant covectors are the 3 zone-indicators, all zero on the 30-dim kernel).
 
+### D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_07/08`
+- module: `D0.Bridge.LocalRaychaudhuriRepresentation`
+- theorem: `added_matter_increases_focusing;added_dark_drive_increases_defocusing;represented_local_acceleration_eq_defocusing_sub_focusing;represented_balance_zero_acceleration;represented_defocusing_dominance_accelerates;represented_focusing_dominance_brakes;represented_focusing_hypercompensation_reverses;represented_dark_drive_recovered;represented_focusing_recovered;local_raychaudhuri_representation_coupling`
+- cert: `none`
+- assumptions: `ASSUMP-LOCAL-RAYCHAUDHURI-REPRESENTATION`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [MINT 2026-09-03 LOCAL RAYCHAUDHURI BRIDGE] A typed application interface maps kappa*P_cap to the local self-focusing+shear+active-matter load, kappa*P_fb to vorticity+an independently measured dark/archive drive, and the physical acceleration readout to the internal pressure-capacity acceleration. Lean eliminates the internal pressures and proves measuredAcceleration=defocusing-focusing, exact balance, acceleration/braking sign laws, hypercompensation reversal, and pointwise recovery of the dark drive from acceleration plus independently read focusing and vorticity. No representation inhabitant, spacetime, SI clock, or measured dark field is asserted by the finite core; the three map equalities remain one explicit physics-dictionary assumption.
+
 ### D0-M1-INFO-RECONSTRUCTION-001
 
 - type: `bridge`
@@ -1481,6 +1637,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-M1-INFO-RECONSTRUCTION`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Iter7 axiom-forcing C.2, strongest axiomatic support] External owner of M1 itself: finite information capacity of an elementary system + continuity + tomographic locality UNIQUELY yield complex Hilbert-space QM (Hardy quant-ph/0101012; Dakic-Brukner 2011; Masanes-Mueller NJP 13 063001 (2011); Chiribella-DAriano-Perinotti PRA 84 012311 (2011)). D0 lens: M1's finite-distinguishability premise IS the finite-capacity hypothesis these reconstructions start from -- an external forcing of the D0 axiomatic base. Lean D0.Bridge.M1InfoReconstructionBridge (m1_info_reconstruction_conditional) conditional on ASSUMP-M1-INFO-RECONSTRUCTION. HONEST: NAMES the reconstruction-theorem family as the owner; not a D0-internal derivation -- BRIDGE not core.
+
+### D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_06/08`
+- module: `D0.Bridge.PhysicalRedshiftDetection`
+- theorem: `represented_physicalOnePlusRedshift_eq_internal;represented_physical_redshift_drift_relation`
+- cert: `vp_physical_redshift_detection_passport.py`
+- assumptions: `ASSUMP-PREREGISTERED-SELF-RETURN-FREQUENCY-REPRESENTATION`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [MINT 2026-08-26 PREREGISTERED PHYSICAL REDSHIFT PASSPORT] Closes the conditional bridge from the internally owned active tick to the standard dimensionless frequency ratio. A preregistered positive detector protocol carries a constant contracting multiplier constrained by the same self-return equation p+p^2=1; Lean derives p=phi^-1 rather than assuming or fitting it. Iteration gives nu(n)=nu(0)phi^(-n), so two typed emission/observation registrations with e<=o satisfy nu_em/nu_obs=phi^(o-e)=1+zD0 and the absolute frequency calibration cancels. Repeating the observation transfers the parameter-free drift law Delta z=(phi-1)(1+z). For every raw detector, Lean proves the exact decomposition (nu_em/nu_obs)=(C_em/C_obs)phi^(o-e); therefore every rival result under the same depths requires C_em!=C_obs, one additional outcome-affecting relative-calibration datum. PASSPORT scope: the theorem does not assert that an astronomical instrument instantiates the protocol; an external application must provide the typed frequency representation before data comparison. Certificate validates preregistration schema and exact Q(phi) algebra and rejects post-registration, fitted generator, hidden recalibration and constant-readout mutations.
 
 ### D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001
 
@@ -1546,6 +1715,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `ASSUMP-LINDEMANN-LNPHI`
 - scope: Conditional bridge row; not a D0-core closure without listed assumptions.
 - notes: [Raw Track IV] Terminal A3: only an external Dixmier/Wodzicki passport is presently admissible. The a=3 candidate ordinary log-Cesaro 1/(3 log phi) != rational mu2 (class-scoped, conditional on ASSUMP-LINDEMANN-LNPHI, EXTERNAL, never CORE). NOT A4: no whole-class exhaustion; 'no future profinite realization' is NOT claimed. 4 separated layers (ALPHA_ANALYTIC_FORMALISM_BOUNDARY.md). Lean D0.Spectral.RawSelfReadingAnalyticResidueBoundary.
+
+### D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001
+
+- type: `bridge`
+- release_status: `BRIDGE-ASSUMPTIONS-EXPLICIT`
+- domain: `formal_core`
+- book: `BOOK_06/08`
+- module: `D0.Bridge.RedshiftExpansionArchiveCoupling`
+- theorem: `expansion_shape_after_eliminating_drift;normalized_expansion_constant;unequal_normalized_expansion_forces_rate_variation`
+- cert: `none`
+- assumptions: `ASSUMP-CONSTANT-RATE-FLRW-REDSHIFT-DRIFT`
+- scope: Conditional bridge row; not a D0-core closure without listed assumptions.
+- notes: [MINT 2026-09-03 COUPLED OBSERVABLE ELIMINATION] Conditional on the explicit continuous D0 interpolation dotz=rho*ln(phi)*(1+z) and the standard FLRW redshift-drift identity dotz=(1+z)H0-H(z), Lean eliminates drift and proves H(z)/(1+z)=H0-rho*ln(phi), hence a constant normalized expansion rate. The M1-shaped reopening is structural: if normalized H differs at two redshifts, any variable-rate repair must have rho(z1)!=rho(z2); one scalar cannot absorb the failure. FLRW/physical-time identification remains a named bridge assumption, never CORE.
 
 ### D0-RIEMANN-AXIS-M1-001
 
@@ -4680,6 +4862,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [2026-07 center-attack W2] Explicit sigmaHat on Fin 8: unique fixed point (the lepton witness omega0), exactly 3 orbits with pairwise-distinct sizes, order exactly 12 (pow12 holds, pow4/pow6 fail), numBranches = numGenerations = 3 with explicit bijection. HONEST: witness construction for the matter-sector minimal contract (X5={S1,S2,S3} selections stay the contract; branch<->generation is a witness bijection, not a derived necessity). D0.All GREEN 2026-07-04.
 
+### D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_07/08`
+- module: `D0.Gravity.LocalPressureCapacityDynamics`
+- theorem: `balanced_acceleration_zero;balanced_preserves_existing_rate;feedback_excess_accelerates;capacity_excess_brakes;capacity_hypercompensation_reverses;unequal_imbalance_forces_unequal_acceleration;homogeneous_imbalance_gives_homogeneous_acceleration;local_pressure_capacity_dynamics_and_packing_boundary`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [MINT 2026-09-03 LOCAL DYNAMIC BALANCE] Upgrades the former three concrete integer regime examples to a universal real-valued local law. The internal response is Delta theta=kappa(P_fb-P_cap): exact balance gives zero acceleration and preserves an existing rate, feedback excess accelerates, capacity excess brakes, and sufficient capacity hypercompensation reverses the next-step rate. For nonzero kappa, unequal local imbalances force unequal accelerations, while homogeneous imbalance implies homogeneous acceleration. Scope is finite internal response algebra over declared P_fb/P_cap fields. It does not identify acceleration with an FLRW observable, P_fb with measured dark response, or P_cap with physical matter density; those remain representation bridges.
+
 ### D0-LUCAS-DEFECT-SIGN-001
 
 - type: `core`
@@ -6084,6 +6279,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [Higgs phason-orbit campaign, OUTCOME B] No canonical phason-condensation route from frozen inputs: (1) no period-44 toral return (order 30, T^44!=I); (2) a nontrivial conjugation orbit Q_n=T^n Q0 T^-n requires Q0 NOT commuting with T -- a commuting Q0 gives a CONSTANT orbit (Commute.pow_left) -- and the corpus supplies no canonically-FROZEN non-commuting (U,Q0,Pi_H); choosing one is the forbidden arbitrary step. ROOT CAUSE of the Higgs condensation PROOF-TARGET. Lean D0.Matter.HiggsPhasonOrbitNoGo; cert vp_higgs_phason_orbit_nontriviality.py. Exact blocker (D0-HIGGS-FINITE-CONDENSATION-OWNER-001, PROOF-TARGET): a new independently-FORCED non-commuting scalar/archive action, derived not chosen. No quartic potential / 246 GeV / Higgs mass enters. CLOSING[2026-07-06]: [DEEP-M sharpening] condensation faces TWO independent walls, so the missing non-commuting Q0 is NECESSARY-BUT-NOT-SUFFICIENT -- (W1) present-core [T,Q0]=0 trivial orbit (tPoly_commutes), and (W2) the log-det quadratic coefficient is z^2>=0, never the SSB sign (D0-HIGGS-LOGDET-STATIONARY-POTENTIAL-001). Two external imports are required, not one: a frozen non-commuting (U,Q0,Pi_H) AND a negative-sign input, so two imports are needed. W2 owned in the scalar sector, flagged-conditional in the full matrix sector (reopening hook). Decompose-via-central-extension is NOT an owned lever (GAP-E fork). TorusCore13 fit already killed (J2_HIGGS_NONCOMMUTE_CHECK.md). Verified deep_m_colour_higgs_check.py FINDING H. GROUPE[2026-07-06]: [CLOSE-HIGGS-WINDING W1 correction] The prior 'no owned non-commuting object on the ZMod 44 carrier' claim is TOO STRONG and is corrected: an owned frozen non-commuting object DOES live on the exact return carrier M2(ZMod 44) -- FrozenSU2_X=!![0,1;1,0] (HiggsScalarProjectorConstructive.lean:32), [T,X]!=0, X not in present-core {a*1+b*T}. The real wall is a THREE-PROPERTY TRAP: a Higgs Q0 needs (i) idempotent AND (ii) [T,Q0]!=0 AND (iii) owned/frozen; the owned 2x2 objects realize any TWO but never all THREE (FrozenSU2_X is an involution X^2=I, not idempotent; the 8 present-core idempotents all commute with T; non-commuting idempotents exist 3476/3484 but are unowned choices). OWNERSHIP wall, not existence wall. Missing object: a frozen idempotent Q0 in M2(ZMod 44) with [T,Q0]!=0, derived. No no-go drops; status unchanged.
 
+### D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_01`
+- module: `D0.Foundation.IndependentDetectionSideSymmetryBoundary`
+- theorem: `rightArity_support;rightArity_value;left_right_repairs_distinct;left_right_supports_distinct;arity_quotient_not_support_injective;swap_left_history_is_right;M1_does_not_force_side_exchange;fourSupport_injective;four_exact_supports_realised;independent_detection_side_symmetry_boundary`
+- cert: `vp_cascade_full_forcing_dag.py`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [MINT 2026-08-25 LABELLED-SIDE NO-GO] Corrects the overstrong reading of the concrete arity quotient. On the actual binary Observation carrier there are four realised exact labelled history supports: empty, left-only, right-only, and both. The left-only and right-only comparisons are extensionally distinct and have distinct exact supports although comparisonRepairArity merges them. M1 admissibility alone does not force exchange symmetry: leftCurrentComparison is catalogue-independent and admissible but changes under argument swap. Therefore three classes do not follow from M1 plus labelled independent detection alone. The exact extra principle is preregistration invariance under relabeling the two independent repetitions. This is a structural countermodel, not a scan over candidate theories; it remains load-bearing beside the positive orbit theorem D0-CONCRETE-REPAIR-FORCING-CANONICITY-001.
+
 ### D0-ISING-ANYON-EXCLUSION-001
 
 - type: `no-go`
@@ -6161,6 +6369,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Boundary/no-go row; prevents promotion of this route.
 - notes: [8C orphan-harvest] freezes V3-V12 negative discovery scans; blocks proxy promotion. CLOSING[2026-07-06]: [CLOSE-DATA] closure kind = GENUINE-BOUNDARY, I/O-typed (negative-control discipline gate). INPUT = LIGO discovery scans (V3-V12, external strain). OUTPUT/INVARIANT = a frozen NEGATIVE verdict: raw-phi REJECTED, detector-frame phi NOT_SIGNIFICANT, GW170814 mu+phi p=0.53, ramified-population NOT_SUPPORTED, fixed-alpha NO_STABLE_FIXED_ALPHA -- no proxy route may be promoted to core/passport; the only admissible next target is a transfer-corrected residual observable. Not an owned prediction (D0 makes no confirmed GW claim), not a proof-of-impossibility. Skeptic NO-KILL.
+
+### D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `formal_core`
+- book: `BOOK_07/08`
+- module: `D0.Gravity.LocalPressureCapacityDynamics`
+- theorem: `packing_limit_does_not_force_homogeneity;everywhere_saturation_forces_homogeneity;local_pressure_capacity_dynamics_and_packing_boundary`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [MINT 2026-09-03 STRUCTURAL PACKING NO-GO] A pointwise density ceiling does not force homogeneity: Lean constructs a two-site real density field below one common bound that is not homogeneous. Uniformity follows only from the stronger premise that every site saturates the same bound. The current D0 BlackHoleCapacitySaturation predicate is boundary heat/capacity saturation and supplies no bulk-density field or everywhere-saturation theorem, so black-hole homogeneity cannot be inferred by renaming the existing boundary law. This is a parametric logical separation, not an enumeration of black-hole interiors.
 
 ### D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001
 
@@ -7403,6 +7624,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
 - notes: v16 cross-track gate. [Q,Y_u]=[Q,Y_d]=0 holds for BOTH Y and B-L (the full 2-dim massless kernel span{Y,B-L} of Track A Case A2), so the Yukawa does NOT select the hypercharge row over B-L -- protects against a hidden row choice; consistent with D0-HYPERCHARGE-ANOMALY-VARIETY-2DIM-001. Decidable over Q; negative control (bad Higgs charge) breaks invariance. Row selection still needs Xi_Y (D0-HYPERCHARGE-BL-DIRECTION-BRIDGE-001), NOT supplied here.
 
+### D0-CONCRETE-REPAIR-FORCING-CANONICITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `gauge_bridge`
+- book: `BOOK_01/03`
+- module: `D0.Foundation.ConcreteRepairForcingCanonicity`
+- theorem: `sameSupportOrbit_iff_samePhysicalRepairObservation;left_right_same_protocol_orbit;protocolSupportOrbitSetoid_eq_physical;protocolRepairQuotientEquivStructural;canonical_repair_shell_map_rank_preserving;rank_preserving_repair_shell_map_unique;capacity_center_and_spread;capacity_shell_sizes;capacity_shell_size_matches_named_table;carried_repair_capacity_sizes;closedDefectClass_nontrivial;closed_defect_generates_circulation;closed_defect_forces_minimal_shell;concrete_repair_forcing_canonicity`
+- cert: `vp_cascade_full_forcing_dag.py`
+- assumptions: `none`
+- scope: Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.
+- notes: [MINT 2026-08-25 STRUCTURAL CANONICITY REPAIR] Replaces three definitional seams by structural theorems. First, SameSupportOrbit identifies exact labelled history supports only when a permutation of the preregistered detector repetitions carries one to the other. sameSupportOrbit_iff_samePhysicalRepairObservation proves for arbitrary concrete comparisons that this orbit relation is equivalent to equality of computed support arity, using the general finite-set permutation theorem rather than enumeration; hence the three-class quotient is a protocol-label gauge quotient, while D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001 records that M1 alone does not supply the gauge. Second, repairQuotientEquivTorusShell is proved to be the unique equivalence preserving computed repair rank and radial shell rank. Third, qT/card(Role)=11 and card(Dyad)=2 compute sizes 9,11,13 by rank, and the legacy named D9/D11/D13 table is proved pointwise equal to this capacity computation; the forcing DAG now consumes repairClassCapacitySize rather than the table. Fourth, defectGeneratedCycle maps the trivial defect class to zero and the carried nontrivial closed defect to the nonzero circulation, so the shell theorem consumes a cycle generated from the actual defect instead of an adjacent record field. The corrected FullCarriedForcingDAG imports these stronger edges. Exact scope: concrete in-repo Observation protocol with preregistered repetition labels modulo their permutation gauge; no claim that every external physical detector must adopt that gauge. Clean Lean, no sorry/new axiom/bridge.
+
 ### D0-EQUIVARIANT-M1-001
 
 - type: `core`
@@ -8088,6 +8322,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Bridge-calibration row; SI or dimensional interpretation requires an explicit external calibration object.
 - notes: D0 core computes dimensionless traces; H0/GN/Lambda require an explicit ExternalSICalibration object.
 
+### D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001
+
+- type: `no-go`
+- release_status: `NO-GO`
+- domain: `si_calibration`
+- book: `BOOK_06/08`
+- module: `D0.Bridge.RedshiftSITickCalibrationNoGo`
+- theorem: `rho_rescale;rho_calibrationForRate;same_internal_protocol_distinct_si_rates;no_si_rho_identifiable_from_internal_protocol;redshift_si_tick_calibration_nogo`
+- cert: `none`
+- assumptions: `none`
+- scope: Boundary/no-go row; prevents promotion of this route.
+- notes: [MINT 2026-09-03 STRUCTURAL SI SCALE-GAUGE NO-GO] Replaces the informal missing-SI-duration statement by a parametric Lean countermodel family. Every positive SI rate is realized by a reciprocal RefinementSITimeCalibration. Positive rescaling changes rho inversely while preserving every internal depth/redshift comparison; for every calibration Lean constructs an observationally identical one with a distinct SI rate. Therefore no real rho is identifiable from the dimensionless internal protocol alone. This is universal scale-gauge non-identifiability, not enumeration. Reopening requires an external clock section or a derived dimensionless ratio to an already calibrated cycle. The existing electron section is not silently identified with the cosmological tick. Clean Lean, no sorry/axiom/bridge assumption.
+
 
 ## Domain: smooth_geometry
 
@@ -8337,6 +8584,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
 - notes: [Iter10 FORCING, closed in chat -- the lattice BRIDGE became a FORCING] phi-carrier is forced, not postulated: (1) non-perturbative gauge theory is rigorous ONLY on a finite lattice (Wilson 1974; continuum YM mass gap = open Clay problem) => finite carrier is the only rigorous one; (2) a periodic lattice has an arbitrary step a (needs a->0); a quasicrystal is self-similar by phi (inflation [[1,1],[1,0]] Perron eigenvalue phi, A/B->phi) with NO preferred step, NO a->0 limit; (3) M1 forbids the hand-chosen a (exogenous) => carrier must be aperiodic-self-similar; (4) aperiodic + 5-fold => phi (Penrose/de Bruijn cut-and-project; 2cos(pi/5)=phi; Shechtman Nobel 2011). cert vp_quasicrystal_carrier_forcing.py (decidable inflation/5-fold backbone + 4 named external pillars). Reuses the already-proved quasicrystalline carrier (Sturmian phi^-2, §01.21.2). NEW external channel to phi (with Hurwitz, Jones-index, KAM, quadratic Pisot). Do not reopen; the open remainder is D0-QUASICRYSTAL-PROJECTION-001.
+
+### D0-PHI-STEP-H-DESI-DR2-001
+
+- type: `certificate`
+- release_status: `EMPIRICAL-PASSPORT`
+- domain: `smooth_geometry`
+- book: `BOOK_08`
+- module: ``
+- theorem: `none`
+- cert: `vp_phi_step_h_desi_dr2.py`
+- assumptions: `none`
+- scope: Certificate-bounded row; valid only for declared finite inputs and negative controls.
+- notes: [MINT 2026-08-31 PHI-P_DESI_01 LEG B REAL DATA] Retrospective frozen-formula falsification against the official DESI-linked DR2 Gaussian BAO mean vector and full covariance, hash-verified and sample_data=false. The recovered physical law H(z)=H0*phi^-floor(log_phi(1+z)) predicts DH/rd=C*phi^k. Fitting only positive C to six DH/rd points with fixed k=[0,1,1,1,1,2] gives chi2=7631.137391 for 5 dof, p=1.4738e-1652: REJECT_DIRECT_PHYSICAL_STEP_H. Reverse ladder remains bad (chi2=449.37); smooth power-law diagnostic chi2=26.00. Exact scope: rejects only identification of the draft symbol H with conventional Hubble expansion; it does not reject the Lean-proved internal depth/frequency cocycle. Empirical passport, never CORE.
 
 ### D0-SMOOTH-MANIFOLD-FORMALISM-PASSPORT-001
 

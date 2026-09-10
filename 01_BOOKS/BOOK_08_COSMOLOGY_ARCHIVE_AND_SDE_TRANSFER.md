@@ -1417,9 +1417,192 @@ a monotonically *decreasing* sequence `[φ, 1, φ⁻¹·…] → +φ⁻¹` (cert
 
 **[Phason continuum envelope (internal)].** The closed phi-semigroup forces the continuum interpolation of the discrete EOS ratio: `w_D0(s)=1/[phi(1-exp(-s log phi))]`, restricting to `w_N=phi^(N-1)/(phi^N-1)` at integer N, monotone decreasing to `phi^-1` (`D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001`, CERT, Lean `D0.Cosmology.PhasonContinuumEnvelope`). This closes only the INTERNAL positive envelope; the physical magnitude/redshift map `|w_DE(z)|` stays underdetermined (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`). No DESI/CPL/FLRW.
 
+**[Self-unfolding observable elimination, internal].**
+`D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001` now joins three formerly adjacent uses of the depth
+index. For the internal registered comparison `1+z_D0(o,e)=phi^(o-e)`, a repeat observation at
+`o+1` forces `Delta z_D0=(phi-1)(1+z_D0)`. At origin depth,
+`z_D0(n,0)=archiveGrowth(n)=phi^n-1`, and the redshift-drift, metric-scale, and relative-archive
+increments coincide. The active time ladder contracts by the inverse generator `phi^-1` in the
+same step. Thus time, expansion, and relative archive growth lose an independent internal knob.
+The result does **not** turn the fixed rank/nullity split `3/30` into a dynamic dark measure and does
+not identify `z_D0` with astronomical redshift; the physical light/detector realization remains the
+registered external owner.
+
+The associated dynamical-measure theorem
+`D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001` makes the bookkeeping distinction exact:
+`f_arch(n)=1-phi^(-n)=z_D0/(1+z_D0)`, while the fixed dimension share remains `30/33=10/11`.
+The first-step golden share `phi^-2=2-phi` is proved unequal to `10/11`. Hence the corpus now has a
+specific internal dark-growth/expansion relation without claiming that nullity count, tick measure,
+or observed cosmological matter fraction are the same object.
+
+**[Physical redshift detector passport and its deletion control].** The formerly open
+light/detector edge is now closed conditionally by
+`D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001`. A positive preregistered frequency protocol uses one
+constant contracting multiplier satisfying the same self-return equation `p+p²=1`; the positive
+root is Lean-forced to `p=phi^-1`. Hence `nu(n)=nu(0)phi^-n`, absolute calibration cancels between
+the typed emission/observation records, and `nu_em/nu_obs=phi^(o-e)=1+z_D0`. The physical drift law
+is inherited from the same generator. The theorem is a representation passport, not a claim that an
+arbitrary survey pipeline already implements this readout.
+
+Its load-bearing deletion control is `D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001`: two arbitrary
+positive readouts at fixed depths can realize every positive ratio. More generally every raw result
+factors exactly as `(nu_em/nu_obs)=(C_em/C_obs)phi^(o-e)`, with `C_n=nu(n)/phi^-n`. Thus a rival under
+the same depth protocol necessarily carries `C_em!=C_obs`, an additional relative-calibration datum.
+The forcing is structural and universal; no list of rival cosmologies is scanned.
+
+**[Finite phase-cycle realization and its structural reductio].**
+`D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001` now realizes the preceding abstract frequency
+passport inside the finite theory. The owned rational phase action is a quarter turn: Lean proves
+`J⁴(v)=v` for every phase quadrature, rejects three turns as a full cycle, and proves that every
+finite count of four-turn blocks is a return. A protocol freezes one positive cycle count `N` and
+one positive base window `W` before observation; with `Delta t_n=W phi^n` and
+`nu_n=N/Delta t_n`, Lean derives `nu_{n+1}=nu_n phi^-1` and constructs the preregistered
+self-return frequency protocol. Hence the redshift ratio and drift laws are inherited without a
+new fitted parameter.
+
+The paired NO-GO `D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001` is universal. For arbitrary positive raw
+registrations it proves
+`nu_em/nu_obs=(N_em/N_obs)(Wbar_obs/Wbar_em)phi^(o-e)`, where
+`Wbar_n=W_n/phi^n`. Therefore a rival ratio at the same registered depths implies, by contradiction,
+that either the completed-cycle counts differ or the normalized windows differ. Raw registrations
+remain ratio-surjective, so the result is not obtained by enumerating cosmologies or by treating any
+two detector numbers as frequencies. The remaining physical obligation is narrow: a laboratory
+pipeline must represent its fringe return and clock gate by this finite counter. Certificate:
+`vp_phase_cycle_frequency_realization.py`.
+
 **[Iter23 — log-det window scales now VALUE-OWNED, with a `ℚ(φ)` NO-GO].** The two window scales `λ_c, λ_r` (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`) are no longer representative domain-check numbers: they are owned **exactly** as the two nontrivial eigenvalues of the **normalized graph Laplacian** `L̂ = I − D^{−1/2} A D^{−1/2}` of the scene `K(9,11,13)` (BOOK_01), verified at the full `33×33` level. Explicitly `λ_{c,r} = 3/2 ∓ √10/40`, the roots of `160λ² − 480λ + 359`, with the two symmetric functions **forced by the scene**: `λ_c + λ_r = 3 = Z` (the zone count, a trace identity) and `λ_c·λ_r = 359/160 = |E|/160` (`|E| = 359` edges). The normalizer is itself an intrinsic scene invariant, `160 = (∏ zone-degrees)/(2V) = 10560/66` — a single graph quantity, not the `2·Ω₈·γ = 2·8·10` octet factorization used in §08.12.2. Nothing is inserted: `A, D, Z, |E|, V` are all owned by BOOK_01, so the scales are FORCED (cert `vp_logdet_window_scale_owner.py`, failable). **NO-GO refinement** (sharpening the former "`EXACT-MISSING: exact ℚ(φ) roots"): the roots lie in `ℚ(√10)` and `√10 ∉ ℚ(φ)=ℚ(√5)` (`√10 = a+b√5` forces `a²+5b²=10, 2ab=0`, which has no rational solution). So an exact `ℚ(φ)` closed form for `λ_c, λ_r` is **provably unreachable** — the correct owned field is `ℚ(√10)`. What remains PROOF-TARGET is narrowed to **formula-ownership**: proving the log-det kernel `d_V[−logdet(I − z F_N(V))]` spectrally *reproduces* these Laplacian scales (the values and their field are now owned). The physical `w_DE(z)` magnitude stays external passport (`D0-PHASON-WZ-CPL-PASSPORT-001`); no survey datum enters.
 
 **[Iter25 — the splitting has an exact forced closed form, and `√10` is a size-fingerprint (`D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001`, Lean `D0.VNext2.WindowScaleDiscriminant`, cert `vp_window_scale_discriminant_forced.py`).** For a general `+2` zone progression `{m, m+2, m+4}` the discriminant of the window pair is exactly `D(m) = (λ_r − λ_c)² = 9 − 4·(λ_cλ_r) = 3/((m+1)(m+3))` — and since the degrees are `2(m+3), 2(m+2), 2(m+1)`, the denominator is the product of the smallest and largest *degree-halves*, so `D(m) = Z/(h_min·h_max)` with `Z = 3`. At the scene `m = 9` this is `3/(10·12) = 1/40`, whence `λ = 3/2 ± √(1/40)/2 = 3/2 ± √10/40` — the corpus `η_EP = √10/40` is now a closed-form consequence, not a readout. Two honest riders. (i) `D(m) > 0` for every `m`, so the two scales are *always* real and distinct: reading "orientation = sign of the discriminant" (§01) here gives a **constant** `+`, never a `ℤ₂` flip — `√10` is **not** an orientation bit, and that tempting reading is rejected. (ii) The field `ℚ(√(sqfree(3(m+1)(m+3))))` is a **size-fingerprint**: the golden field `ℚ(√5)` occurs at `m = 29` (zones `29,31,33`), *not* the scene, and `m = 5` gives rational scales (`3·6·8 = 144 = 12²`). So the scene's `√10` is the fingerprint of the specific sizes `9,11,13` and carries no forced "departure from golden" meaning — which *explains* (does not weaken) the `√10 ∉ ℚ(φ)` NO-GO above: it is generic, not a near-miss.
+
+
+**[2026-08-31 — PHI-P_DESI_01 real-data verdict].** The recovered phenomenological draft has now
+been separated into two hash-pinned external passports and run without fitting phi, the phase
+origin, levels, or redshift bins. The object-level claim `z_n=phi^n-1` was tested by an equal-width
+local core/sideband statistic at the frozen levels `n=1,2,3` and `delta=0.01` in
+`log_phi(1+z)`. On 1,497,382 unique DESI DR1 MAIN/DARK quasars the pooled result is
+`29,083/28,549`, one-sided `p=0.0132016`, above the frozen `p<0.001` threshold
+(`D0-PHI-QSO-LEVEL-EXCESS-DESI-001`). The identical statistic on 750,414 SDSS DR16Q quasars gives
+`14,662/14,629`, `p=0.42584`: no independent replication
+(`D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001`). A QuasarNet-only control is formally stronger but has a
+level-1 deficit and is absent from final DESI `Z`, Redrock, and SDSS, so it is classified as
+estimator/selection structure rather than double detection.
+
+The direct physical reading
+`H(z)=H0 phi^-floor(log_phi(1+z))` was tested separately against the six official DESI DR2 radial
+BAO measurements because `DH/rd=c/[H(z)rd]`. With only one fitted positive normalization, the
+frozen step assignment `[0,1,1,1,1,2]` gives `chi2=7631.137391` for 5 dof and
+`p=1.4738e-1652`: `REJECT_DIRECT_PHYSICAL_STEP_H`
+(`D0-PHI-STEP-H-DESI-DR2-001`). This rejects only the old identification of the symbol `H` with
+the conventional Hubble rate. It does not alter the internal depth/frequency cocycle or its
+conditional detector representation. Protocol, manifests, executable certificates, and full
+scope report: `08_PASSPORTS/DESI/PHI_P_DESI_01_PROTOCOL.md` and
+`04_VERIFICATION/PHI_REDSHIFT_REAL_DATA_EXPERIMENT_REPORT.md`.
+
+**[2026-09-03 — D0-RD-01 direct redshift-drift verdict].** The next red point was tested on
+repeated observations of the same absorbers rather than reconstructed from `H(z)`: ten digital
+GBT H I systems at `0.09<=z<=0.69` and the independent three-epoch ESPRESSO Lyman-alpha sightline
+at mean `z=3.57`. The literal physical reading of the Lean one-tick law
+`Delta z=(phi-1)(1+z)` is rejected on every registered baseline; even the weakest
+`minimum jump / (|observed change|+5 sigma)` ratio is `5.1023e4`. This does **not** reject the
+internal theorem, which contains no SI tick duration; it rejects assigning a nonzero refinement
+tick to those astronomical intervals.
+
+The separately typed minimal continuous bridge
+`1+z(t)=(1+z0)phi^(rho t)`, `rho>=0`, eliminates `z` and predicts the common observable
+`c dot(z)/(1+z)=c rho log(phi)`. Fitting its one amplitude to the independent GBT+ESPRESSO blocks
+gives `-4.9321+/-1.8889 m/s/yr`; no positive signal is detected, while the nonnegative family has
+boundary `p=0.004513`, above the frozen `alpha=0.001` rejection threshold. The 99.9% upper limit is
+`rho<6.2742e-9 tick/yr` (more than `1.5938e8 yr` per phi tick under this interpolation). The second
+ESPRESSO analysis is a correlated control and is not double-counted. Status
+`D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001 = EMPIRICAL-PASSPORT`; full protocol and scope:
+`08_PASSPORTS/REDSHIFT_DRIFT/D0_RD_01_PROTOCOL.md` and
+`04_VERIFICATION/D0_REDSHIFT_DRIFT_DIRECT_EXPERIMENT_REPORT.md`. The values were public before this
+protocol was written, so the result is retrospective and is not advertised as a prospective
+discovery.
+
+**[2026-09-03 — D0-RDEC-01 coupled redshift-drift / expansion verdict].** The continuous
+constant-rate bridge has now been tested against a second observable rather than given another
+amplitude. Combining `dot z=rho log(phi)(1+z)` with the explicit FLRW bridge
+`dot z=(1+z)H0-H(z)` eliminates `rho` from the redshift shape and forces
+
+```math
+\frac{H(z)}{1+z}=\mathrm{constant},\qquad
+\frac{D_H(z)}{r_d}=\frac{C}{1+z}.
+```
+
+On the six hash-pinned DESI DR2 radial-BAO measurements, one-normalization GLS gives
+`C=31.78441+/-0.19922`, `chi2=132.01316/5`, `p=8.8978e-27`. Thus
+`D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001` rejects the constant-rate D0+FLRW physical
+bridge at `alpha=0.001`. Phi cancels from this test: it is a coupled-generator falsification, not a
+phi-peak search. A free power-law exponent improves the fit by `Delta chi2=106.013` but still fails
+absolute goodness-of-fit (`p=3.16e-5`). The first five galaxy-tracer points alone do not reject;
+their prediction misses the `z=2.33` DESI Lyman-alpha point by `-11.21 sigma`, and removing that
+point removes the primary rejection. This dependence is part of the verdict, not hidden.
+
+The paired Lean theorem
+`D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001` proves that the internal dimensionless protocol cannot
+select an SI `rho`: positive clock rescalings preserve every internal comparison and change the SI
+rate. The repository's existing candidate `tau_e=h/(38m_ec^2)` also cannot be identified directly
+with the cosmological tick: the D0-RD-01 limit requires a dimensionless separation greater than
+`2.3616e37`. This rejects only the cross-scale identification, not the action-section coefficient.
+
+Finally, the internal archive law would conditionally give
+`DH/rd=C(1-f_archive)` for `f_archive=z/(1+z)`. Lean exposes the missing external object as a
+`MeasuredDarkResponseRepresentation`. No independent dark-response dataset instantiates it in this
+run, so that leg remains `NOT_TESTED_NO_INDEPENDENT_DARK_RESPONSE_REPRESENTATION`; BAO residuals are
+not relabelled as dark energy and the phason-magnitude NO-GO remains intact. Full protocol and
+controls: `08_PASSPORTS/COUPLED_REDSHIFT_EXPANSION/D0_RDEC_01_PROTOCOL.md` and
+`04_VERIFICATION/REDSHIFT_DRIFT_EXPANSION_COUPLED_REPORT.md`.
+
+**[2026-09-03 — local pressure/capacity dynamics and the density-bound firewall].** The global
+phrase "expansion is determinant balance" is now sharpened to a local signed law. For every site,
+the internal one-step acceleration readout is
+
+```math
+\Delta\theta(x)=\kappa\,[P_{fb}(x)-P_{cap}(x)],\qquad \kappa>0.
+```
+
+Exact balance gives zero *acceleration* and therefore preserves an already existing expansion rate;
+it does not force `theta=0`. Feedback excess accelerates, capacity excess brakes, and a capacity
+excess larger than the current positive rate reverses the next-step motion. Unequal local
+imbalances force unequal local accelerations, so no homogeneity premise is smuggled into the law.
+This is the finite internal content of `D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001`; identifying
+`P_fb` with a measured dark response or `P_cap` with a physical matter-density source remains a
+separate representation obligation.
+
+The paired `D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001` closes a tempting but invalid black-hole step.
+A pointwise ceiling `rho(x)<=rho_max` does not imply a homogeneous density field; Lean supplies one
+parametric two-site countermodel. Homogeneity follows only from the strictly stronger premise
+`rho(x)=rho_max` at every bulk site. The current D0 black-hole predicate is saturation of
+heat content against **boundary capacity**, which forces boundary encoding but does not assert
+everywhere-saturated bulk density. Therefore black-hole homogeneity is not derived and cannot be
+inserted by renaming boundary saturation as a local packing law.
+
+**[2026-09-03 — local Raychaudhuri representation and two-readout theorem].** The formerly verbal
+matter/dark interpretation now has a typed conditional owner. A
+`LocalRaychaudhuriRepresentation` supplies three independently checkable equalities:
+
+```math
+\kappa P_{cap}=\theta^2/3+\sigma^2+F_{matter},\qquad
+\kappa P_{fb}=\omega^2+D_{archive},\qquad
+a_{measured}=\kappa(P_{fb}-P_{cap}).
+```
+
+Lean eliminates `P_fb,P_cap` and proves
+`a_measured=(omega^2+D_archive)-(theta^2/3+sigma^2+F_matter)`. Adding positive matter focusing
+lowers acceleration by the same amount; adding positive dark/archive drive raises it by the same
+amount. Exact equality gives zero acceleration, focusing dominance brakes, and sufficient
+overcompensation reverses the next-step expansion rate. This is
+`D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001 = BRIDGE-ASSUMPTIONS-EXPLICIT`; no physical inhabitant is
+asserted.
+
+The companion `D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001` is unconditional. A lone net
+acceleration `D-F` is unchanged by `(D,F)->(D+g,F+g)` for every local function `g`. Lean therefore
+proves that no universal net-only algorithm can identify `D`. The second independently registered
+focusing field is not optional information: it removes the gauge and gives the unique recovery
+`D=net+F`. Hence a future empirical passport must pair a local acceleration/divergence observable
+with an independently obtained focusing map (matter plus kinematic terms); BAO or expansion data
+alone cannot be recycled as its own dark-sector confirmation.
 ## 08.v15 Active standard-language contract
 
 _This section is the active standard-language layer of BOOK_08 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._

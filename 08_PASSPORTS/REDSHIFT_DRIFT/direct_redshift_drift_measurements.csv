@@ -1,0 +1,13 @@
+group,object,z,baseline_days,dotz_per_year,sigma_dotz_per_year,dv_mps_per_year,sigma_dv_mps_per_year,role,source
+GBT_HI,0738+313_A,0.091234959,3053,-3.0e-8,0.9e-8,-8.3,2.5,primary,arXiv:1211.4585 Table 1
+GBT_HI,0738+313_B,0.22124990,3050,2.6e-8,3.1e-8,6.3,7.7,primary,arXiv:1211.4585 Table 1
+GBT_HI,PKS_1413+135,0.24670374,2969,-2.3e-8,6.9e-8,-5.5,16.7,primary,arXiv:1211.4585 Table 1
+GBT_HI,PKS_1127-145,0.312658286,4573,1.4e-7,1.0e-7,30.9,23.4,primary,arXiv:1211.4585 Table 1
+GBT_HI,0248+430,0.39408591,2710,5.8e-8,10.6e-8,12.6,22.8,primary,arXiv:1211.4585 Table 1
+GBT_HI,PKS_1229-021,0.39498824,2882,-8.4e-8,20.8e-8,-18.1,44.7,primary,arXiv:1211.4585 Table 1
+GBT_HI,0235+164,0.523741603,2699,-1.3e-7,1.5e-7,-25.9,28.7,primary,arXiv:1211.4585 Table 1
+GBT_HI,B3_1504+377,0.67324197,2978,2.3e-7,2.0e-7,40.6,35.3,primary,arXiv:1211.4585 Table 1
+GBT_HI,B0218+357,0.6846808,4936,2.1e-7,2.6e-7,37.1,46.2,primary,arXiv:1211.4585 Table 1
+GBT_HI,3C286,0.692153275,2956,1.6e-8,4.7e-8,2.8,8.4,primary,arXiv:1211.4585 Table 1
+ESPRESSO_LYA,SB2_pixel,3.57,792.79463481,-5.23e-8,5.43e-8,-3.43,3.56,primary,arXiv:2603.02318 Sections 2 and 4.2
+ESPRESSO_LYA,SB2_likelihood,3.57,792.79463481,-5.53e-8,5.56e-8,-3.63,3.65,correlated_control,arXiv:2603.02318 Section 4.3

@@ -339,6 +339,28 @@ This is the operational replacement of "actual infinity" by a finite distinguish
 
 The `ε²=φ⁻¹⁶` floor is the observer's distinguishability floor that *terminates the inward ladder* and so bounds the depth `N` in `Q_N = Q_0 φ⁻ᴺ`.
 
+**Endpoint storage versus complete process storage (2026-09-10).** The recorded golden
+channel supplies a distinct, explicitly operational depth test. Its n-step endpoint channel
+has Choi rank 2 at n=1 and rank 4 at n≥2. In contrast, the n-slot memoryless process, with
+all intermediate quantum interventions available, has Choi operator `J(Φ)⊗n`; since
+`J(Φ)²=J(Φ)` and `tr J(Φ)=2`, its rank is `2^n`. A pure isometric implementation retaining
+all purifying records therefore requires total environment dimension at least `2^n`,
+achieved by one fresh retained bit per step. This is not a bound on active memory when
+discarding/resetting records is allowed. For normalized process-Choi trace-distance error
+ε, a D-dimensional pure retained environment obeys `ε≥max(0,1−D/2^n)`.
+
+The distinction is observable in the existing apparatus. Two schedules have identical
+two-step endpoint channels, but an intermediate internal SWAP with a prepared register
+separates their final outcome probabilities by `(5√5−11)/2`. The previous state is retained
+in the SWAP register. `D0.Representation.GoldenProcessContext` proves the endpoint equality
+and separating context; `_TASKS_PROCESS_MEMORY_20260910/verify.py` checks the full internal
+circuit and endpoint Choi calculations. The all-n dimension and approximation bounds are
+analytic applications of channel/process representation theory, detailed with primary
+sources in `RESULT.md` in the same task directory; they are not promoted to Lean or global
+M1 closure. They neither identify n with geometric depth N nor infer a cosmological dark
+sector. They separate the cost of a current state from the cost of preserving all tests of
+its process history.
+
 **Closure-sprint integration (Iteration 22).** The φ-ladder is the **first D0 continuum**: the discrete tick `A_{n+1}=φ⁻¹A_n` (golden split `p+p²=1`, `W_ext=φ⁻¹`, `W_int=φ⁻²`) has the unique continuous semigroup envelope `A(s)=A₀e^{−s logφ}` with `A(s+t)=A(s)A(t)/A₀` — `D0-PHI-LADDER-SEMIGROUP-001` (cert `vp_phi_ladder_semigroup.py`; the envelope cocycle is Lean-proved in `D0.IM.ContinuumFromFractalTick`, `env_cocycle`/`env_restricts_to_ladder`). On the golden-subshift cylinder tower the unique normalized shift-invariant trace is exactly this golden split `(φ⁻¹,φ⁻²)` — the unique left Perron eigenvector of `M=[[1,1],[1,0]]`; any other trace differing on a finite cylinder needs an external *which-frequency* catalog (⊥M1) — `D0-PHI-CYLINDER-TRACE-UNIQUE-001` (cert `vp_phi_cylinder_trace_unique.py`). The external operator-algebra reading — the crossed-product `C(X_φ)⋊ℤ` unique trace — is closed as a **passport**, not a D0 theorem: `D0-PHI-CSTAR-PASSPORT-001` (`PASSPORT-CLOSED`). The smooth-manifold limit is *not* this continuum; it stays the downstream Rieffel/GHP + Connes macro-shadow (`D0-SMOOTH-MANIFOLD-PASSPORT-001`). The finite cylinder-LANGUAGE equivalence (the golden word avoids `bb`, has Sturmian complexity `p(L)=L+1`, and its letter frequencies are the same golden split) is `D0-PHI-STURMIAN-CYLINDER-CONJUGACY-001` (cert `vp_phi_sturmian_cylinder_conjugacy.py`); the full topological/measure conjugacy stays the external owner `D0-ADLER-WEISS-PARTITION-OWNER-001`. Beyond the finite language, the **profinite code-extensional** conjugacy is also internal: two independent codings agreeing on every finite cylinder window (language and frequency) are the same D0 profinite object by extensionality — `D0-PHI-STURMIAN-PROFINITE-CODE-CONJUGACY-001` (cert `vp_phi_sturmian_profinite_code_conjugacy.py`); only the classical smooth/measure Adler-Weiss conjugacy stays the external passport.
 
 **[Iter25 — why the Sturmian refinement's CONDITIONAL cannot be discharged internally (`D0-STURMIAN-REFINEMENT-DISCHARGE-NOGO-001`, NO-GO, cert `vp_sturmian_refinement_discharge_nogo.py`).** The refinement tower `D0-STURMIAN-REFINEMENT` carries a CONDITIONAL-EXTENSION: its step 2 would identify the Sturmian bonding maps with the frozen *archive* maps (a new primitive `PRIM-STURMIAN-REFINEMENT-OWNER`). That step is not forced — and provably so, for two independent reasons, so the parent claim stays PROOF-TARGET honestly. (i) **Field disjointness (load-bearing).** The golden tower lives in `ℚ(√5) = ℚ(φ)`, but the archive/window scale `359/160` is the product of the two nontrivial normalized-Laplacian eigenvalues (roots of `160λ² − 480λ + 359`, discriminant `640 = 64·10`), which live in `ℚ(√10)`. Since `√10 ∉ ℚ(√5)` (`√10 = a + b√5` forces `a² + 5b² = 10, 2ab = 0`, no rational solution), the two fields are disjoint over `ℚ` — no canonical intertwiner ties a `ℚ(√5)` carrier to a `ℚ(√10)` carrier. This is the identical structural reason the neighbouring phason-WZ transfer closed NO-GO, and it is *explained* by the size-fingerprint result (`D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001`): `√10` is the fingerprint of sizes `9,11,13`, generic, not a golden near-miss. (ii) **Orientation.** The centre-11 convergence forces the *time* operator `T = [[0,1],[1,-1]]` (trace `−1`, orientation-reversed), whereas the Sturmian tower uses the orientation-*preserving* `S = [[1,1],[1,0]]` (trace `+1`); trace is a conjugacy invariant, so `S` is not conjugate to `T` (the scene pins `T ∼ −S`), with periodic-point offset `Lₙ − |Fix(Tⁿ)| = [0,2,0,2,…]`. The golden back-fit is rejected out loud: `φᵏ = 359/160` gives `k = 1.679…`, non-integer. Honest scope: the tower is a genuinely M1-forced *substitution*, and an external owner could *postulate* `PRIM-STURMIAN-REFINEMENT-OWNER` as a passport — but that is the named external choice, not an internal discharge.
@@ -865,6 +887,26 @@ This makes the RG/forgetting layer a constructive finite bridge rather than a co
 
 Terminology lock: RG/forgetting is a `convex-response` bridge and must expose a `coupling kernel` preserving retained response tests before loss quotient.
 
+**Global information accounting (2026-09-10).** The loss quotient in this section is a
+reduction of the retained description. It must not be identified with destruction of
+distinctions by the complete substrate dynamics. For a complete update
+`s ↦ (visible(s), archive(s))`, information preservation means injectivity of this joint
+map. Equivalently, the archive separates every pair of distinct inputs with the same
+visible output. Hence its capacity is at least the size of each fiber of the visible map.
+These statements are proved in `D0.Representation.ArchiveFiberConservation`.
+
+The maximum-entropy representative describes retained responses; it does not by itself
+construct the fine-grained archive or prove that its information is preserved. An exact
+information-preserving interpretation needs the joint-update witness. In the quantum
+apparatus this witness is the full isometry: information may remain in system–archive
+correlations even when neither reduced state distinguishes it. A partial trace removes
+coordinates from the description, not from the full state. Trace preservation alone is
+not a proof of information preservation.
+
+Absence of an external output is not by itself a mathematical proof of injectivity;
+that property must follow from the actual dynamics. The existing golden recording
+apparatus has such a witness. No claim identifying its record with the cosmological
+dark sector is made here.
 ## 06.25 RG/forgetting as an executed finite entropy bridge
 
 The forgetting map is not an informal loss of information.  At a finite stage it is represented by a conditional kernel selected by maximum entropy under retained D0 response constraints.  Given a finite response grid `Y` and retained response `r`, the forgetting channel is
@@ -1427,6 +1469,182 @@ R''(s)=(\log\varphi)^2\,e^{s\log\varphi}>0 .
 
 The active component decays exponentially in finite tick depth; the *relative* archive ratio **accelerates**, because its denominator is the shrinking retained component, not because anything is added externally. This strictly positive second derivative is the time-layer origin of the internal cosmological mechanism that Book 08 carries to the continuum — Book 08 inherits this convexity, it does not re-postulate an acceleration. Status: FORCED (convexity is algebraic in \(\varphi\)); the archive-measure convex-order domination underpinning the Book 08 transfer is discharged by the finite convex-order-domination certificate.
 
+### Elimination of the shared refinement depth
+
+The common refinement index now yields an exact multi-observable theorem
+`D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001`. Register an emission at depth `e` and observe the same
+record at depth `o`. The internal multiplicative depth comparison is
+
+\[
+1+z_{D0}(o,e)=\varphi^{o-e}.
+\]
+
+It is a cocycle under intermediate registered depths. Repeating the observation one tick later,
+without changing the emission record, eliminates `o-e` and gives
+
+\[
+1+z'_{D0}=\varphi(1+z_{D0}),
+\qquad
+\Delta z_{D0}=(\varphi-1)(1+z_{D0}).
+\]
+
+No separate drift coefficient remains: Lean proves that any constant one-step multiplier compatible
+with this same comparison protocol is `\varphi`. At origin depth,
+
+\[
+z_{D0}(n,0)=R_n=\varphi^n-1,
+\]
+
+so the internal redshift drift, metric-scale increment, and relative archive-growth increment are
+the same exact quantity. Simultaneously the active time ladder contracts by `\varphi^{-1}`; expansion
+and time retention are reciprocal readings of one generator.
+
+This is an internal observable-elimination theorem, not an astronomical claim. A monotone
+integer-depth coordinate disagrees with the `\varphi` coordinate already after one step. Therefore
+identifying `z_{D0}` with measured redshift still requires a preregistered light/detector comparison
+protocol; the theorem removes freedom after that protocol is fixed, but does not manufacture the
+physical bridge.
+
+The same elimination separates dimension from measure
+(`D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001`). Conservation gives the dynamical shares
+
+\[
+f_{\rm vis}(n)=\varphi^{-n},
+\qquad
+f_{\rm arch}(n)=1-\varphi^{-n}
+                  =\frac{z_{D0}(n,0)}{1+z_{D0}(n,0)}.
+\]
+
+At the first tick `f_arch(1)=φ⁻²=2−φ`, whereas the static rank/nullity counting share is `30/33=10/11`;
+Lean proves these values unequal. Thus `3/30` is a carrier-dimension statement and `φ⁻²/φ⁻¹` is a
+dynamical tick-measure statement. Neither may be silently renamed as an observed dark percentage.
+
+### Physical redshift passport: what two detections do and do not force
+
+The remaining light/detector edge is now split into a positive conditional theorem and a sharp
+NO-GO (`D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001`,
+`D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001`).  Let a preregistered detector assign a positive
+frequency readout `ν(n)` to depth `n`.  Its one-step multiplier is not declared to be golden: the
+protocol requires only that the same contracting multiplier `p` is used at every depth and obeys
+the already-owned self-return closure
+
+\[
+0<p<1,\qquad p+p^2=1.
+\]
+
+Lean then forces `p=φ⁻¹`, so iteration gives `ν(n)=ν(0)φ^{-n}`.  For independently stored emission
+and observation registrations at `e≤o`, the unknown absolute calibration cancels:
+
+\[
+1+z_{\rm phys}=\frac{\nu_e}{\nu_o}=\varphi^{o-e}=1+z_{D0}.
+\]
+
+The same passport transfers the drift law without another parameter,
+`Δz_phys=(φ−1)(1+z_phys)`.
+
+The result is not obtained by calling every pair of numbers a frequency.  For a completely raw
+positive detector define its depth-dependent relative calibration
+
+\[
+C_n=\frac{\nu(n)}{\varphi^{-n}}.
+\]
+
+For every raw protocol, without exception, Lean proves the factorization
+
+\[
+\frac{\nu_e}{\nu_o}=\frac{C_e}{C_o}\,\varphi^{o-e}.
+\]
+
+Therefore a rival redshift under the same registered depths implies `C_e≠C_o`: it requires one
+additional outcome-affecting relative-scale datum.  Conversely, raw positive double registration
+alone can realize every positive ratio already at depths `0,1`; it cannot force `φ`.  This is the
+structural contradiction boundary requested by M1, not a catalogue of alternative cosmologies.
+
+Status: the representation theorem is `BRIDGE-ASSUMPTIONS-EXPLICIT`; a concrete astronomical application must
+still demonstrate that its preregistered frequency extraction instantiates the self-return-covariant
+interface.  No survey data or SI frequency scale is used by the theorem.
+
+### Finite phase cycles realize the frequency protocol
+
+The abstract frequency sequence above now has a concrete finite owner
+(`D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001`).  On the already-owned rational phase
+quadrature, the phase action `J` is a quarter turn. Lean proves universally
+
+\[
+J^4(v)=v,
+\]
+
+and exhibits a quadrature for which `J³(v)≠v`; hence a completed cycle is a genuine four-step
+return rather than a renamed arbitrary reading. Every finite number of such four-turn blocks also
+returns exactly.
+
+Before the two sides are compared, the detector protocol fixes a positive completed-cycle count
+`N` and a positive base window `W`. At depth `n` its transported window and frequency are
+
+\[
+\Delta t_n=W\varphi^n,
+\qquad
+\nu_n=\frac{N}{\Delta t_n}.
+\]
+
+Lean then derives, rather than postulates, `ν_{n+1}=ν_n φ⁻¹`. This finite construction instantiates
+the self-return frequency interface, so the prior ratio and drift theorems follow with `N` and `W`
+cancelling. The internal bridge is therefore constructive; only the application statement “this
+laboratory fringe return and this clock gate instantiate the finite counter” remains external.
+
+The deletion control is exact (`D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001`). For every raw pair,
+
+\[
+\frac{\nu_e}{\nu_o}
+=\frac{N_e}{N_o}\,
+ \frac{\bar W_o}{\bar W_e}\,
+ \varphi^{o-e},
+\qquad
+\bar W_n=\frac{W_n}{\varphi^n}.
+\]
+
+Thus equal count and equal normalized window force the D0 result. By contradiction, a rival at the
+same typed depths must change `N` or `W̄`; that additional outcome-affecting information is the
+whole alternative freedom on this carrier. Raw positive count/window pairs can still realize every
+positive ratio, so neither “two readings” nor “we counted cycles” is sufficient without the frozen
+window law. Certificate: `vp_phase_cycle_frequency_realization.py`.
+
+### SI duration is not fixed by the dimensionless tick
+
+`D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001` closes the SI question negatively and structurally.
+For every positive SI rate `rho`, Lean constructs a positive reciprocal clock calibration; a common
+positive rescaling of seconds per tick changes `rho` inversely while leaving every internal
+redshift/depth comparison unchanged. Consequently two distinct SI rates are observationally
+identical to the dimensionless refinement protocol, and no SI `rho` is identifiable from that
+protocol alone. This is one parametric scale-gauge countermodel, not a catalogue of clocks.
+
+The existing electron action section does supply a physical time
+`tau_e=h/(38m_ec^2)`, but identifying one cosmological refinement tick with that microscopic
+terminal cycle is an additional cross-scale statement. D0-RDEC-01 tests it against the direct-drift
+bound and rejects the identification: the cosmological tick must be more than `2.36e37` electron
+section ticks long. Preserving the single-section discipline therefore requires a *derived
+dimensionless* scale-separation factor at least that large; none is currently wired into the
+redshift protocol. The coefficient `38` and the terminal electron section are not rejected.
+
+### Eliminating the SI rate against expansion
+
+The explicit FLRW bridge `dot z=(1+z)H0-H(z)` and the continuous D0 interpolation
+`dot z=rho log(phi)(1+z)` jointly force
+
+\[
+\frac{H(z)}{1+z}=H_0-\rho\log\varphi=\text{constant}.
+\]
+
+Lean owns this conditional elimination in
+`D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001`. It also proves the M1-shaped reopening: if normalized
+expansion differs at two redshifts, any rescuing rate must satisfy `rho(z1) != rho(z2)`. The repair
+therefore adds an outcome-affecting function rather than merely renaming the old scalar.
+
+The independent DESI DR2 radial-BAO test gives `chi2=132.0132/5`, `p=8.90e-27` for the forced shape
+`DH/rd=C/(1+z)`, rejecting the constant-rate FLRW application. This does not reject the internal
+tick cocycle. Full scope and the dependence on the `z=2.33` Lyman-alpha point are recorded in
+`04_VERIFICATION/REDSHIFT_DRIFT_EXPANSION_COUPLED_REPORT.md`.
+
 ### Why the time layer is two-dimensional (toral, forced)
 
 The clock is not a scalar parameter; it is the modular flow of the **toral time operator**
@@ -1488,7 +1706,6 @@ g(k)=g_0\,\big(1+O(\varphi^{-k})\big),
 where the \(O(\varphi^{-k})\) coefficients are computed from the projection/spectral statistics at level \(k\) — **with no new constants introduced**. The \(\varphi^{-k}\) suppression is the same self-similar tick ladder that drives \(A_t=\varphi^{-t}A_0\): running and forgetting are one mechanism viewed at one resolution. Status: FORCED (running \(=\) projection statistics, not external \(\beta\)-functions); the projected effective Laplacian renormalizes exactly under the canonical phase projection \(x\mapsto x\bmod(n{+}2)\), discharged by the finite Laplacian RG-flow certificate. The QFT \(\beta\)-function scheme passports for SM-comparison remain strict passport work under their own certificate. [^b06-53]
 
 ----
-
 ## D0_v16 Dusty-plasma active-medium bridge
 
 Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.

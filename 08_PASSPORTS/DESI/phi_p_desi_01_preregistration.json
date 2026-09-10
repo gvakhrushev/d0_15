@@ -1,0 +1,29 @@
+{
+  "protocol_id": "PHI-P_DESI_01",
+  "frozen_at_utc": "2026-08-31T10:33:38Z",
+  "phi_definition": "(1 + sqrt(5)) / 2",
+  "historical_claims_carried_as_results": false,
+  "historical_claims_note": "The repository contains no located data/code provenance for the old ~10% and 3.2 sigma statements.",
+  "qso_leg": {
+    "status": "FROZEN_BEFORE_QSO_VALUE_ACCESS",
+    "dataset": "DESI_DR1_QSO_iron_v0",
+    "url": "https://data.desi.lbl.gov/public/dr1/survey/catalogs/dr1/QSO/iron/QSO_cat_iron_cumulative_v0.fits",
+    "levels_n": [1, 2, 3],
+    "coordinate": "log_phi(1+z)",
+    "primary_half_width": 0.01,
+    "diagnostic_half_widths": [0.005, 0.02],
+    "primary_test": "pooled one-sided conditional binomial, equal-width core versus adjacent local controls",
+    "confirmation": "same frozen test in SDSS_DR16Q and future DESI_DR2; no refit"
+  },
+  "bao_leg": {
+    "status": "RETROSPECTIVE_FROZEN_FORMULA_TEST",
+    "dataset": "DESI_DR2_GAUSSIAN_BAO_ALL_GCcomb",
+    "mean_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "covariance_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "quantity": "DH_over_rs",
+    "model": "C * phi^floor(log_phi(1+z))",
+    "free_parameters": ["C"],
+    "alpha_reject": 0.001
+  }
+}
+

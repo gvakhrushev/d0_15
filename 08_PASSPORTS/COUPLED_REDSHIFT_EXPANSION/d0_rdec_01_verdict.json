@@ -1,0 +1,186 @@
+{
+  "protocol_id": "D0-RDEC-01",
+  "hashes_verified": true,
+  "sample_data": false,
+  "prospective_preregistration": false,
+  "independent_observable_blocks": [
+    "GBT_HI_plus_ESPRESSO_redshift_drift",
+    "DESI_DR2_radial_BAO_expansion"
+  ],
+  "derivation": {
+    "d0_continuous": "dot(z)=rho*ln(phi)*(1+z)",
+    "external_flrw_kinematics": "dot(z)=(1+z)*H0-H(z)",
+    "rho_eliminated_shape": "H(z)/(1+z)=constant",
+    "tested_radial_bao_shape": "DH(z)/rd=C/(1+z)",
+    "phi_cancels_from_shape": true
+  },
+  "direct_drift_cross_block": {
+    "decision": "NO_POSITIVE_DRIFT_DETECTION_CONTINUOUS_RATE_NOT_REJECTED_AT_FROZEN_ALPHA",
+    "constant_shape_p_value": 0.35617251436522485,
+    "upper_rho_ticks_per_year_99_9pct": 6.274169656976888e-09
+  },
+  "desi_radial_bao_primary": {
+    "decision": "REJECT_CONSTANT_RATE_D0_FLRW_COUPLED_BRIDGE",
+    "alpha": 0.001,
+    "fitted_parameters": 1,
+    "best_fit_C": 31.784408727673227,
+    "sigma_C": 0.1992190324811965,
+    "chi2": 132.01315944933663,
+    "dof": 5,
+    "p_value": 8.897801796830549e-27,
+    "measurements": [
+      {
+        "z": 0.51,
+        "DH_over_rd_observed": 21.86294686,
+        "marginal_sigma": 0.42886832478046216,
+        "DH_over_rd_model": 21.049277303094854,
+        "residual": 0.8136695569051469,
+        "marginal_pull": 1.8972479660783168,
+        "transformed_one_plus_z_times_DH_over_rd": 33.013049758600005
+      },
+      {
+        "z": 0.706,
+        "DH_over_rd_observed": 19.45534918,
+        "marginal_sigma": 0.33387003159912393,
+        "DH_over_rd_model": 18.630954705552888,
+        "residual": 0.8243944744471108,
+        "marginal_pull": 2.469207764765653,
+        "transformed_one_plus_z_times_DH_over_rd": 33.190825701079994
+      },
+      {
+        "z": 0.934,
+        "DH_over_rd_observed": 17.64149464,
+        "marginal_sigma": 0.20104324858099562,
+        "DH_over_rd_model": 16.4345443266149,
+        "residual": 1.2069503133851,
+        "marginal_pull": 6.003436185517307,
+        "transformed_one_plus_z_times_DH_over_rd": 34.118650633760005
+      },
+      {
+        "z": 1.321,
+        "DH_over_rd_observed": 14.17602155,
+        "marginal_sigma": 0.22455135092000672,
+        "DH_over_rd_model": 13.694273471638619,
+        "residual": 0.481748078361381,
+        "marginal_pull": 2.1453804503407197,
+        "transformed_one_plus_z_times_DH_over_rd": 32.902546017549994
+      },
+      {
+        "z": 1.484,
+        "DH_over_rd_observed": 12.81699964,
+        "marginal_sigma": 0.5180117691713191,
+        "DH_over_rd_model": 12.795655687469093,
+        "residual": 0.021343952530907373,
+        "marginal_pull": 0.04120360540273441,
+        "transformed_one_plus_z_times_DH_over_rd": 31.83742710576
+      },
+      {
+        "z": 2.33,
+        "DH_over_rd_observed": 8.631545674846294,
+        "marginal_sigma": 0.10106245296844917,
+        "DH_over_rd_model": 9.544867485787757,
+        "residual": -0.9133218109414631,
+        "marginal_pull": -9.037202087570488,
+        "transformed_one_plus_z_times_DH_over_rd": 28.743047097238158
+      }
+    ]
+  },
+  "controls": {
+    "free_power_law": {
+      "model": "C*(1+z)^alpha",
+      "best_fit_C": 38.25318235073823,
+      "sigma_C_conditional_on_alpha": 0.23926642798591,
+      "best_fit_alpha": -1.221896358587332,
+      "chi2": 26.000032676529962,
+      "dof": 4,
+      "p_value": 3.164413161316462e-05,
+      "delta_chi2_fixed_alpha_minus1": 106.01312677280666,
+      "fixed_alpha_minus1_nested_p_value": 7.324838198805231e-25,
+      "interpretation": "rescue requires at least one additional shape datum; even the best exact power law fails the frozen 0.001 goodness-of-fit threshold"
+    },
+    "reverse_shape": {
+      "model": "C*(1+z)",
+      "best_fit_C": 3.6438694538249945,
+      "chi2": 7707.091973225499
+    },
+    "galaxy_calibration_lyalpha_holdout": {
+      "galaxy_best_fit_C": 33.42511724124806,
+      "galaxy_sigma_C": 0.24718138034614937,
+      "galaxy_chi2": 6.283470515100451,
+      "galaxy_dof": 4,
+      "galaxy_p_value": 0.1789550873660693,
+      "lyalpha_z": 2.33,
+      "lyalpha_observed": 8.631545674846294,
+      "lyalpha_prediction": 10.037572745119538,
+      "lyalpha_total_sigma": 0.12539342408595874,
+      "lyalpha_holdout_pull": -11.21292508376991,
+      "same_survey_not_claimed_independent": true
+    },
+    "leave_one_out": [
+      {
+        "omitted_z": 0.51,
+        "best_fit_C": 31.655980062622163,
+        "chi2": 128.03735212191924,
+        "dof": 4,
+        "p_value": 1.023482378968877e-26
+      },
+      {
+        "omitted_z": 0.706,
+        "best_fit_C": 31.588373661683587,
+        "chi2": 125.06633683985952,
+        "dof": 4,
+        "p_value": 4.417642155464531e-26
+      },
+      {
+        "omitted_z": 0.934,
+        "best_fit_C": 30.9534720071079,
+        "chi2": 83.14205430555293,
+        "dof": 4,
+        "p_value": 3.7587758637099917e-17
+      },
+      {
+        "omitted_z": 1.321,
+        "best_fit_C": 31.593083055937388,
+        "chi2": 126.62293654611408,
+        "dof": 4,
+        "p_value": 2.0533695277076138e-26
+      },
+      {
+        "omitted_z": 1.484,
+        "best_fit_C": 31.783106632401005,
+        "chi2": 132.0114200169709,
+        "dof": 4,
+        "p_value": 1.4460928627650738e-27
+      },
+      {
+        "omitted_z": 2.33,
+        "best_fit_C": 33.42511724124806,
+        "chi2": 6.283470515100451,
+        "dof": 4,
+        "p_value": 0.1789550873660693
+      }
+    ],
+    "rejection_without_z_2_33": false
+  },
+  "single_section_tick_collision": {
+    "candidate": "one cosmological refinement tick = h/(38*m_e*c^2)",
+    "tau_e_seconds": 2.129815732459607e-22,
+    "rho_e_ticks_per_year": 1.481705648007204e+29,
+    "rho_upper_ticks_per_year_99_9pct": 6.274169656976888e-09,
+    "minimum_dimensionless_scale_separation": 2.3615964008234056e+37,
+    "cosmological_tick_time_lower_seconds": 5029765168193674.0,
+    "decision": "REJECT_ELECTRON_ACTION_SECTION_TICK_AS_COSMOLOGICAL_REFINEMENT_TICK",
+    "scope": "rejects the cross-scale tick identification, not the dimensionless coefficient 38 or the electron terminal section"
+  },
+  "dark_response_leg": {
+    "internal_candidate_relation": "f_archive=z/(1+z); therefore DH/rd=C*(1-f_archive)",
+    "independent_measured_representation_supplied": false,
+    "decision": "NOT_TESTED_NO_INDEPENDENT_DARK_RESPONSE_REPRESENTATION",
+    "forbidden_promotion": "BAO residuals are not relabelled as dark response"
+  },
+  "structural_reopening": {
+    "constant_rho_rejected": true,
+    "minimal_shape_repair": "rho must become a nonconstant function rho(z), or the FLRW/physical-redshift bridge must be abandoned",
+    "information_cost": "at least one additional outcome-affecting shape degree of freedom; a free exponent is itself rejected in absolute goodness-of-fit"
+  }
+}

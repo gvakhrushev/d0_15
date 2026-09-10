@@ -42,10 +42,14 @@ import D0.Bridge.DixmierTraceBridge
 import D0.Bridge.FinalBridgeIndex
 import D0.Bridge.InternalConeSpeed
 import D0.Bridge.InterpretationSpine
+import D0.Bridge.LocalRaychaudhuriRepresentation
 import D0.Bridge.LorentzBridge
 import D0.Bridge.M1InfoReconstructionBridge
 import D0.Bridge.OperatorOriginIndex
 import D0.Bridge.PhiDiscreteRG
+import D0.Bridge.PhysicalRedshiftDetection
+import D0.Bridge.RedshiftExpansionArchiveCoupling
+import D0.Bridge.RedshiftSITickCalibrationNoGo
 import D0.Bridge.RieffelGHPBridge
 import D0.Bridge.SICalibrationBoundary
 import D0.Bridge.SICalibrationClosure
@@ -146,6 +150,7 @@ import D0.Cosmology.HeatTraceEnergyFunctional
 import D0.Cosmology.InflationlessThresholdEnergyOwner
 import D0.Cosmology.InstabilitySaturation
 import D0.Cosmology.LinearizedEntropyFlow
+import D0.Cosmology.PhaseCycleFrequencyRealization
 import D0.Cosmology.PhasonArchiveCapacityRedshift
 import D0.Cosmology.PhasonContinuumEnvelope
 import D0.Cosmology.PhasonFlipEntropy
@@ -153,11 +158,13 @@ import D0.Cosmology.PhasonInitialCovariance
 import D0.Cosmology.PhasonMagnitudeMaximalityNoGo
 import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
+import D0.Cosmology.PhysicalRedshiftDetectionPassport
 import D0.Cosmology.ReheatingEnergyBudgetOwner
 import D0.Cosmology.ReheatingHeatTraceJump
 import D0.Cosmology.ReheatingPercolationOwner
 import D0.Cosmology.ResearchPassCorollaries
 import D0.Cosmology.SDEFeedbackReduction
+import D0.Cosmology.SelfUnfoldingObservableRelations
 import D0.Cosmology.SurveyReproducibilitySplit
 import D0.Cosmology.TransientAcceleration
 import D0.Cosmology.ZeroMeanModes
@@ -243,6 +250,7 @@ import D0.Foundation.CascadeInterlockScale
 import D0.Foundation.CascadeTerminalCount
 import D0.Foundation.CascadeTopologicalShellAttachment
 import D0.Foundation.ConcreteIndependentDetectionRepairSemantics
+import D0.Foundation.ConcreteRepairForcingCanonicity
 import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.CurrentDataComparisonCanonicity
 import D0.Foundation.CurrentDataFactorization
@@ -256,6 +264,7 @@ import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.GeneralComparisonGrammar
 import D0.Foundation.GraphSpaceNoIsometry
 import D0.Foundation.IndependentDetectionRepairGrammar
+import D0.Foundation.IndependentDetectionSideSymmetryBoundary
 import D0.Foundation.InformationConnectivity
 import D0.Foundation.InvariantAlgebraDegree
 import D0.Foundation.InvariantMinimal
@@ -378,6 +387,7 @@ import D0.Gravity.EntropicArchiveInterface
 import D0.Gravity.HorizonHumTransfer
 import D0.Gravity.HorizonJetAndBaryonPole
 import D0.Gravity.HorizonlessEchoDelay
+import D0.Gravity.LocalPressureCapacityDynamics
 import D0.Gravity.MacroEinsteinInterface
 import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.OpticalJetBackreaction

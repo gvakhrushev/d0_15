@@ -1,6 +1,7 @@
 import D0.Foundation.CascadeCarriedAssembly
 import D0.Foundation.CascadeTopologicalShellAttachment
 import D0.Foundation.ConcreteIndependentDetectionRepairSemantics
+import D0.Foundation.ConcreteRepairForcingCanonicity
 
 /-!
 # Full carried forcing synthesis: the cascade is a DAG, not a false linear chain
@@ -34,9 +35,13 @@ namespace D0.Foundation.CascadeFullForcingSynthesis
 open D0.Foundation
 open D0.Foundation.CascadeTopologicalShellAttachment
 open D0.Foundation.ConcreteIndependentDetectionRepairSemantics
+open D0.Foundation.ConcreteRepairForcingCanonicity
 open D0.Foundation.DiscriminationRetyping
+open D0.Foundation.IndependentDetectionRepairGrammar
 open D0.Foundation.M1CascadeSceneNoGo
 open D0.Foundation.M1RepairObservationalQuotient
+open D0.Geometry
+open D0.Synthesis.SceneAnisotropyCapacityWeld
 
 /-! ## Missing first interlock: comparison repair still needs memory -/
 
@@ -122,22 +127,35 @@ structure FullCarriedForcingDAG : Prop where
       ConjClasses.mk
           (g * commDefect defectGeneratorA defectGeneratorB * g⁻¹) =
         carriedClosedDefectCirculation.defect)
-      ∧ carriedClosedDefectCirculation.cycle ≠ 0
+      ∧ defectGeneratedCycle closedDefectClass ≠ 0
       ∧ ¬ (∃ coeff : OpenTwoCells → ℤ,
           cellularBoundary openAttach coeff =
-            carriedClosedDefectCirculation.cycle)
+            defectGeneratedCycle closedDefectClass)
       ∧ (∃ coeff : ShellTwoCell → ℤ,
           cellularBoundary shellAttach coeff =
-            carriedClosedDefectCirculation.cycle)
+            defectGeneratedCycle closedDefectClass)
   shell_to_scene :
     Nonempty
       (FaithfulRepairSceneRepresentation
         torusShellScene RepairObservationQuotient)
       ∧ torusShellScene.zoneCount = 3
+      ∧ RankPreservingRepairShellMap repairQuotientEquivTorusShell
+      ∧ (∀ e : RepairObservationQuotient ≃ TorusShell,
+          RankPreservingRepairShellMap e →
+            e = repairQuotientEquivTorusShell)
   scene_to_sizes :
-    (repairClassZoneSize (repairClass discComparison),
-      repairClassZoneSize (repairClass discOneLoop),
-      repairClassZoneSize (repairClass discOrderMemory)) = (9, 11, 13)
+    (repairClassCapacitySize (repairClass discComparison),
+      repairClassCapacitySize (repairClass discOneLoop),
+      repairClassCapacitySize (repairClass discOrderMemory)) =
+      ((9 : ℤ), 11, 13)
+  capacity_selector_unique :
+    ∀ m d : ℤ, 0 ≤ d →
+      3 * m ^ 2 - centeredEdges m d = (Fintype.card D0.Role : ℤ) →
+      m ^ 3 - centeredTriangles m d = (D0.qT : ℤ) →
+      (m - d, m, m + d) =
+        (capacitySizeAtRank (0 : RepairArity detectionBudget),
+          capacitySizeAtRank (1 : RepairArity detectionBudget),
+          capacitySizeAtRank (2 : RepairArity detectionBudget))
 
 /-- **All carried forcing edges are now machine-owned.** -/
 theorem full_carried_forcing_dag : FullCarriedForcingDAG where
@@ -152,12 +170,19 @@ theorem full_carried_forcing_dag : FullCarriedForcingDAG where
   order_to_closed_defect := chain_linked_order_to_defect_closure
   closed_defect_to_shell :=
     ⟨topological_closure_forces_shell.1,
-      topological_closure_forces_shell.2.1,
-      topological_closure_forces_shell.2.2.1,
-      topological_closure_forces_shell.2.2.2.1⟩
+      closed_defect_forces_minimal_shell.1,
+      closed_defect_forces_minimal_shell.2.1,
+      closed_defect_forces_minimal_shell.2.2.1⟩
   shell_to_scene :=
-    ⟨⟨torusShellSceneRepresentation⟩, torusShellScene_zoneCount⟩
-  scene_to_sizes := repair_scene_sizes_selected_independently.1
+    ⟨⟨torusShellSceneRepresentation⟩,
+      torusShellScene_zoneCount,
+      canonical_repair_shell_map_rank_preserving,
+      rank_preserving_repair_shell_map_unique⟩
+  scene_to_sizes := by
+    rw [carried_repair_capacity_sizes.1,
+      carried_repair_capacity_sizes.2.1,
+      carried_repair_capacity_sizes.2.2]
+  capacity_selector_unique := capacity_defects_reconstruct_capacity_sizes
 
 /-- Capstone: the carried floors are genuine, the full forcing DAG exists, and the false linear
 scale→memory route is excluded. -/

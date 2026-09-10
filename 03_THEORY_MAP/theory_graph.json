@@ -4,47 +4,47 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 669,
+    "claims": 689,
     "release_status": {
-      "CORE-FORMALIZED": 257,
+      "CORE-FORMALIZED": 262,
       "CORE_BRIDGE_SPLIT": 17,
-      "NO-GO": 99,
+      "NO-GO": 105,
       "PROOF-TARGET": 60,
-      "BRIDGE-ASSUMPTIONS-EXPLICIT": 26,
+      "BRIDGE-ASSUMPTIONS-EXPLICIT": 30,
       "NO_GO_PROVED": 7,
       "CERT-CLOSED": 169,
       "EXTERNAL-BACKGROUND": 1,
       "DEPRECATED": 2,
       "BRIDGE-CALIBRATION": 3,
-      "EMPIRICAL-PASSPORT": 8,
+      "EMPIRICAL-PASSPORT": 13,
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 477,
-      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 31,
-      "PYTHON_CERTIFIED": 111,
+      "LEAN_PROVED": 488,
+      "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 35,
+      "PYTHON_CERTIFIED": 116,
       "DEPRECATED": 2,
       "OPEN": 48
     },
     "claim_type": {
-      "core": 260,
-      "bridge": 45,
-      "no-go": 106,
+      "core": 265,
+      "bridge": 49,
+      "no-go": 112,
       "frontier": 60,
-      "certificate": 195,
+      "certificate": 200,
       "deprecated": 3
     },
     "domain": {
-      "formal_core": 396,
-      "smooth_geometry": 41,
-      "empirical_passport": 49,
-      "gauge_bridge": 51,
+      "formal_core": 402,
+      "smooth_geometry": 42,
+      "empirical_passport": 54,
+      "gauge_bridge": 52,
       "frontier": 60,
       "rg": 7,
       "spectral_action": 11,
-      "cosmology": 50,
+      "cosmology": 56,
       "external_background": 1,
-      "si_calibration": 2,
+      "si_calibration": 3,
       "interpretation_spine": 1
     }
   },
@@ -22392,6 +22392,642 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/CascadeFullForcingSynthesis.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001",
+      "kind": "claim",
+      "claim_id": "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_01",
+      "section": "01.6.1c labelled-side symmetry boundary",
+      "lean_module": "D0.Foundation.IndependentDetectionSideSymmetryBoundary",
+      "lean_theorem": "rightArity_support;rightArity_value;left_right_repairs_distinct;left_right_supports_distinct;arity_quotient_not_support_injective;swap_left_history_is_right;M1_does_not_force_side_exchange;fourSupport_injective;four_exact_supports_realised;independent_detection_side_symmetry_boundary",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cascade_full_forcing_dag.py",
+      "python_cert": [
+        "vp_cascade_full_forcing_dag.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[MINT 2026-08-25 LABELLED-SIDE NO-GO] Corrects the overstrong reading of the concrete arity quotient. On the actual binary Observation carrier there are four realised exact labelled history supports: empty, left-only, right-only, and both. The left-only and right-only comparisons are extensionally distinct and have distinct exact supports although comparisonRepairArity merges them. M1 admissibility alone does not force exchange symmetry: leftCurrentComparison is catalogue-independent and admissible but changes under argument swap. Therefore three classes do not follow from M1 plus labelled independent detection alone. The exact extra principle is preregistration invariance under relabeling the two independent repetitions. This is a structural countermodel, not a scan over candidate theories; it remains load-bearing beside the positive orbit theorem D0-CONCRETE-REPAIR-FORCING-CANONICITY-001.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/IndependentDetectionSideSymmetryBoundary.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.IndependentDetectionSideSymmetryBoundary",
+      "kind": "lean_module",
+      "label": "D0.Foundation.IndependentDetectionSideSymmetryBoundary",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/IndependentDetectionSideSymmetryBoundary.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001",
+      "kind": "claim",
+      "claim_id": "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001",
+      "type": "core",
+      "domain": "gauge_bridge",
+      "scope_guard": "Gauge-sector statement; physical Yang-Mills interpretation remains bridge-scoped when assumptions appear.",
+      "book": "BOOK_01/03",
+      "section": "01.6.1c / 03.23.5 protocol-orbit quotient and canonical shell forcing",
+      "lean_module": "D0.Foundation.ConcreteRepairForcingCanonicity",
+      "lean_theorem": "sameSupportOrbit_iff_samePhysicalRepairObservation;left_right_same_protocol_orbit;protocolSupportOrbitSetoid_eq_physical;protocolRepairQuotientEquivStructural;canonical_repair_shell_map_rank_preserving;rank_preserving_repair_shell_map_unique;capacity_center_and_spread;capacity_shell_sizes;capacity_shell_size_matches_named_table;carried_repair_capacity_sizes;closedDefectClass_nontrivial;closed_defect_generates_circulation;closed_defect_forces_minimal_shell;concrete_repair_forcing_canonicity",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_cascade_full_forcing_dag.py",
+      "python_cert": [
+        "vp_cascade_full_forcing_dag.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-08-25 STRUCTURAL CANONICITY REPAIR] Replaces three definitional seams by structural theorems. First, SameSupportOrbit identifies exact labelled history supports only when a permutation of the preregistered detector repetitions carries one to the other. sameSupportOrbit_iff_samePhysicalRepairObservation proves for arbitrary concrete comparisons that this orbit relation is equivalent to equality of computed support arity, using the general finite-set permutation theorem rather than enumeration; hence the three-class quotient is a protocol-label gauge quotient, while D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001 records that M1 alone does not supply the gauge. Second, repairQuotientEquivTorusShell is proved to be the unique equivalence preserving computed repair rank and radial shell rank. Third, qT/card(Role)=11 and card(Dyad)=2 compute sizes 9,11,13 by rank, and the legacy named D9/D11/D13 table is proved pointwise equal to this capacity computation; the forcing DAG now consumes repairClassCapacitySize rather than the table. Fourth, defectGeneratedCycle maps the trivial defect class to zero and the carried nontrivial closed defect to the nonzero circulation, so the shell theorem consumes a cycle generated from the actual defect instead of an adjacent record field. The corrected FullCarriedForcingDAG imports these stronger edges. Exact scope: concrete in-repo Observation protocol with preregistered repetition labels modulo their permutation gauge; no claim that every external physical detector must adopt that gauge. Clean Lean, no sorry/new axiom/bridge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/ConcreteRepairForcingCanonicity.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.ConcreteRepairForcingCanonicity",
+      "kind": "lean_module",
+      "label": "D0.Foundation.ConcreteRepairForcingCanonicity",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/ConcreteRepairForcingCanonicity.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001",
+      "kind": "claim",
+      "claim_id": "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001",
+      "type": "core",
+      "domain": "cosmology",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 self-unfolding observable elimination",
+      "lean_module": "D0.Cosmology.SelfUnfoldingObservableRelations",
+      "lean_theorem": "depthGap_composes;onePlusInternalRedshift_cocycle;repeated_detection_one_step;internal_redshift_drift_relation;one_step_generator_unique;origin_redshift_eq_archive_growth;scale_increment_eq_archive_growth_increment;origin_redshift_drift_eq_archive_growth_increment;drift_scale_archive_same_increment;tick_expansion_reciprocity;physical_redshift_identification_not_internal;self_unfolding_observable_relations",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_self_unfolding_observable_relations.py",
+      "python_cert": [
+        "vp_self_unfolding_observable_relations.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-08-26 SELF-UNFOLDING MULTI-OBSERVABLE RELATION] Eliminates the shared refinement depth from four internal readouts instead of fitting another number. A registered emission depth e and observer depth o define 1+zD0=phi^(o-e); composable depth comparisons obey an exact multiplicative cocycle. Repeating the same emission observation one tick later gives the parameter-free law Delta zD0=(phi-1)(1+zD0), and any rival constant one-step multiplier compatible with the same protocol is proved equal to phi. From the origin, zD0(n)=archiveGrowth(n)=phi^n-1; redshift drift, metric-scale increment and relative archive-growth increment are the same exact object. The active time ladder simultaneously contracts by phi^-1, with phi*phi^-1=1, so time retention and depth expansion are reciprocal readings of one generator. STRUCTURAL BOUNDARY: zD0 is an internal preregistered depth comparison, not measured astronomical redshift. The integer coordinate is monotone but differs already at one tick, so physical identification still requires PRIM-PHYSICAL-REDSHIFT-OBSERVABLE / a preregistered external comparison protocol. The fixed 3/30 dimension split is not reinterpreted as a dynamic dark measure. Certificate checks exact Q(phi) cocycle/drift/shared-increment laws and rejects integer-coordinate and free-multiplier mutations. Clean Lean, no sorry/new axiom/bridge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/SelfUnfoldingObservableRelations.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.SelfUnfoldingObservableRelations",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.SelfUnfoldingObservableRelations",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/SelfUnfoldingObservableRelations.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_self_unfolding_observable_relations.py",
+      "kind": "python_cert",
+      "label": "vp_self_unfolding_observable_relations.py",
+      "path": "05_CERTS/vp_self_unfolding_observable_relations.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+      "kind": "claim",
+      "claim_id": "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+      "type": "core",
+      "domain": "cosmology",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 dynamic archive measure and expansion relation",
+      "lean_module": "D0.Cosmology.SelfUnfoldingObservableRelations",
+      "lean_theorem": "dynamic_shares_partition_unity;dynamic_archive_share_eq_redshift_fraction;first_dynamic_archive_share_eq_golden_trace;dynamic_measure_ne_static_dimension_share;self_unfolding_observable_relations",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_self_unfolding_observable_relations.py",
+      "python_cert": [
+        "vp_self_unfolding_observable_relations.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-08-26 DIMENSION-VS-MEASURE SEPARATION] Resolves the red-point distinction between the fixed rank/nullity count 3/30 and the dynamic golden tick measure. The conserved tick defines dynamicVisibleShare(n)=phi^(-n) and dynamicArchiveShare(n)=1-phi^(-n), which partition unity for every depth. Eliminating n against the internal registered depth coordinate proves dynamicArchiveShare=zD0/(1+zD0), so dynamic archive response and internal expansion history are not independently tunable. At the first tick the archive share is phi^-2=2-phi, while the static dimension-count share is 10/11; Lean proves they are unequal. Therefore 10/11 remains a carrier-dimension ratio and cannot be advertised as the dynamical dark percentage, while the golden 0.382... share has an explicit tick-measure origin. Exact boundary: this is an internal conserved measure, not an astronomical matter-density or lensing observable; physical response still requires a measurement passport. The certificate checks the division-free relation darkDynamic*(1+zD0)=zD0 and rejects conflation with 10/11. Clean Lean, no sorry/new axiom/bridge.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/SelfUnfoldingObservableRelations.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 preregistered physical redshift detection passport",
+      "lean_module": "D0.Bridge.PhysicalRedshiftDetection",
+      "lean_theorem": "represented_physicalOnePlusRedshift_eq_internal;represented_physical_redshift_drift_relation",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-PREREGISTERED-SELF-RETURN-FREQUENCY-REPRESENTATION"
+      ],
+      "cert": "vp_physical_redshift_detection_passport.py",
+      "python_cert": [
+        "vp_physical_redshift_detection_passport.py"
+      ],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[MINT 2026-08-26 PREREGISTERED PHYSICAL REDSHIFT PASSPORT] Closes the conditional bridge from the internally owned active tick to the standard dimensionless frequency ratio. A preregistered positive detector protocol carries a constant contracting multiplier constrained by the same self-return equation p+p^2=1; Lean derives p=phi^-1 rather than assuming or fitting it. Iteration gives nu(n)=nu(0)phi^(-n), so two typed emission/observation registrations with e<=o satisfy nu_em/nu_obs=phi^(o-e)=1+zD0 and the absolute frequency calibration cancels. Repeating the observation transfers the parameter-free drift law Delta z=(phi-1)(1+z). For every raw detector, Lean proves the exact decomposition (nu_em/nu_obs)=(C_em/C_obs)phi^(o-e); therefore every rival result under the same depths requires C_em!=C_obs, one additional outcome-affecting relative-calibration datum. PASSPORT scope: the theorem does not assert that an astronomical instrument instantiates the protocol; an external application must provide the typed frequency representation before data comparison. Certificate validates preregistration schema and exact Q(phi) algebra and rejects post-registration, fitted generator, hidden recalibration and constant-readout mutations.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/PhysicalRedshiftDetection.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.PhysicalRedshiftDetection",
+      "kind": "lean_module",
+      "label": "D0.Bridge.PhysicalRedshiftDetection",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/PhysicalRedshiftDetection.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_physical_redshift_detection_passport.py",
+      "kind": "python_cert",
+      "label": "vp_physical_redshift_detection_passport.py",
+      "path": "05_CERTS/vp_physical_redshift_detection_passport.py",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-PREREGISTERED-SELF-RETURN-FREQUENCY-REPRESENTATION",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-PREREGISTERED-SELF-RETURN-FREQUENCY-REPRESENTATION",
+      "lean_name": "D0.Bridge.BridgeAssumption.PreregisteredSelfReturnFrequencyRepresentation",
+      "status": "EXPLICIT",
+      "assumption_type": "PHYSICS_DICTIONARY",
+      "external_source_or_cert": "vp_physical_redshift_detection_passport.py"
+    },
+    {
+      "id": "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001",
+      "type": "no-go",
+      "domain": "cosmology",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 raw double-detection redshift boundary",
+      "lean_module": "D0.Cosmology.PhysicalRedshiftDetectionPassport",
+      "lean_theorem": "rawProtocolForRatio;raw_double_detection_realises_every_positive_ratio;raw_double_detection_does_not_force_redshift;rival_redshift_requires_relativeCalibration_defect",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_physical_redshift_detection_passport.py",
+      "python_cert": [
+        "vp_physical_redshift_detection_passport.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[MINT 2026-08-26 RAW DOUBLE-DETECTION NO-GO] Positive double registration alone does not force redshift. At the fixed depths e=0,o=1, raw_double_detection_realises_every_positive_ratio constructs, for arbitrary r>0, a positive detector protocol with nu_em/nu_obs=r. Hence the raw interface is ratio-surjective and cannot select phi by observation count alone. This is one parametric construction over all positive r, not an enumeration. The exact reopening condition is the preregistered self-return covariance of D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001; absent it, any non-D0 result is carried by a distinct relative calibration C_em/C_obs and therefore contains additional outcome-affecting information. Clean Lean, no sorry/new axiom and no empirical data.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhysicalRedshiftDetectionPassport.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.PhysicalRedshiftDetectionPassport",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.PhysicalRedshiftDetectionPassport",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhysicalRedshiftDetectionPassport.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001",
+      "kind": "claim",
+      "claim_id": "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001",
+      "type": "core",
+      "domain": "cosmology",
+      "scope_guard": "Formal finite cosmology shape statement; not an observational cosmology fit without certificate/passport data.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 finite phase-cycle frequency realization",
+      "lean_module": "D0.Cosmology.PhaseCycleFrequencyRealization",
+      "lean_theorem": "phaseQuarterTurn_four;phaseQuarterTurn_three_not_full;completed_phase_cycles_are_returns;cycleFrequencyReadout_one_step;phaseCycleFrequencyProtocol;phase_cycle_frequency_ratio_eq_internal;phase_cycle_frequency_drift_relation;finite_phase_cycle_frequency_realization",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phase_cycle_frequency_realization.py",
+      "python_cert": [
+        "vp_phase_cycle_frequency_realization.py"
+      ],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-08-26 FINITE PHASE-CYCLE FREQUENCY REALIZATION] The abstract self-return frequency passport now has a concrete finite in-repository realization. The owned phase action J is a quarter turn; Lean proves J^4(v)=v for every finite quadrature, proves three turns are not a full cycle, and proves every finite count of four-turn blocks returns. A protocol freezes one positive completed-cycle count N and one positive base window W before comparison, transports the detector window as W*phi^n, and defines nu(n)=N/(W*phi^n). Lean derives nu(n+1)=nu(n)phi^-1, constructs PreregisteredSelfReturnFrequencyProtocol, and inherits nu_em/nu_obs=phi^(o-e) and the drift law. N and W cancel rather than being fitted. Scope is internal finite detector semantics; mapping a laboratory phase return and clock window to these types remains an external application obligation. Clean Lean, no sorry/new axiom/bridge assumption in the internal construction.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhaseCycleFrequencyRealization.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Cosmology.PhaseCycleFrequencyRealization",
+      "kind": "lean_module",
+      "label": "D0.Cosmology.PhaseCycleFrequencyRealization",
+      "path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhaseCycleFrequencyRealization.lean",
+      "exists": true
+    },
+    {
+      "id": "cert:vp_phase_cycle_frequency_realization.py",
+      "kind": "python_cert",
+      "label": "vp_phase_cycle_frequency_realization.py",
+      "path": "05_CERTS/vp_phase_cycle_frequency_realization.py",
+      "exists": true
+    },
+    {
+      "id": "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001",
+      "type": "no-go",
+      "domain": "cosmology",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 raw finite cycle-window boundary",
+      "lean_module": "D0.Cosmology.PhaseCycleFrequencyRealization",
+      "lean_theorem": "internalScale_transport;internalScale_ratio_eq_internal;raw_cycle_window_defect_factorization;same_count_and_normalizedWindow_forces_internal;rival_requires_count_or_normalizedWindow_defect;raw_cycle_window_realises_every_positive_ratio;raw_cycle_window_does_not_force_redshift",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phase_cycle_frequency_realization.py",
+      "python_cert": [
+        "vp_phase_cycle_frequency_realization.py"
+      ],
+      "status": "NO-GO",
+      "notes": "[MINT 2026-08-26 RAW CYCLE-WINDOW STRUCTURAL NO-GO] For arbitrary positive raw registrations, Lean proves the exact universal factorization nu_em/nu_obs=(N_em/N_obs)*(Wbar_obs/Wbar_em)*phi^(o-e), where Wbar=W/phi^depth. Equal cycle count and equal normalized window force the D0 ratio. Therefore, by contradiction, any rival ratio at the same typed depths must change the completed-cycle count or the normalized window; there is no third datum in this carrier. Independently, a parametric construction realizes every positive ratio with raw count/window registrations, proving that count labels alone do not force phi. This is a structural factorization and reductio over all raw registrations, not enumeration. Clean Lean, no sorry/new axiom and no empirical data.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Cosmology/PhaseCycleFrequencyRealization.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-PHI-QSO-LEVEL-EXCESS-DESI-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-QSO-LEVEL-EXCESS-DESI-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51 DESI DR1 QSO phi-level test",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_qso_redshift_levels_desi_dr1.py",
+      "python_cert": [
+        "vp_phi_qso_redshift_levels_desi_dr1.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[MINT 2026-08-31 PHI-P_DESI_01 LEG A REAL DATA] Frozen-before-value-access local sideband test of z_n=phi^n-1 at n=1,2,3 on the official hash-verified DESI DR1 QSO catalogue. MAIN/DARK, ZWARN=0, deterministic minimum-ZERR TARGETID deduplication leaves 1,497,382 unique quasars. At primary delta=0.01 in log_phi(1+z): core=29,083, equal-width side=28,549, one-sided p=0.0132016 (about 2.22 sigma), above the frozen p<0.001 threshold; verdict NO_DESI_LEVEL_EXCESS_AT_FROZEN_PRIMARY_SCALE. The effect changes to a deficit at delta=0.02. Same-spectrum estimator control: Z_QN alone gives p=9.24e-5 but has a level-1 deficit and is absent in final Z and Z_RR, so it is a pipeline/selection diagnostic, not an independent detection. External empirical passport only; no core promotion and no refit.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi_qso_redshift_levels_desi_dr1.py",
+      "kind": "python_cert",
+      "label": "vp_phi_qso_redshift_levels_desi_dr1.py",
+      "path": "05_CERTS/vp_phi_qso_redshift_levels_desi_dr1.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51 SDSS DR16Q independent replication",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_qso_redshift_levels_sdss_dr16q.py",
+      "python_cert": [
+        "vp_phi_qso_redshift_levels_sdss_dr16q.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[MINT 2026-08-31 PHI-P_DESI_01 LEG A2 INDEPENDENT SURVEY] The identical frozen phi levels, coordinate, delta=0.01, equal-width sideband statistic and p<0.001 threshold were applied without refit to 750,414 unique SDSS DR16Q quasars from CDS/VizieR VII/289. Pooled core=14,662, side=14,629, one-sided p=0.42584; level 1 is a deficit. Verdict NO_INDEPENDENT_SDSS_LEVEL_EXCESS_REPLICATION. SDSS supplies a different survey/instrument/pipeline, though exact object overlap with DESI was not removed. This closes the old 3.2-sigma note as non-reproduced under the registered double-detection criterion; empirical passport, never CORE.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi_qso_redshift_levels_sdss_dr16q.py",
+      "kind": "python_cert",
+      "label": "vp_phi_qso_redshift_levels_sdss_dr16q.py",
+      "path": "05_CERTS/vp_phi_qso_redshift_levels_sdss_dr16q.py",
+      "exists": true
+    },
+    {
+      "id": "D0-PHI-STEP-H-DESI-DR2-001",
+      "kind": "claim",
+      "claim_id": "D0-PHI-STEP-H-DESI-DR2-001",
+      "type": "certificate",
+      "domain": "smooth_geometry",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51 DESI DR2 direct physical step-H test",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_phi_step_h_desi_dr2.py",
+      "python_cert": [
+        "vp_phi_step_h_desi_dr2.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[MINT 2026-08-31 PHI-P_DESI_01 LEG B REAL DATA] Retrospective frozen-formula falsification against the official DESI-linked DR2 Gaussian BAO mean vector and full covariance, hash-verified and sample_data=false. The recovered physical law H(z)=H0*phi^-floor(log_phi(1+z)) predicts DH/rd=C*phi^k. Fitting only positive C to six DH/rd points with fixed k=[0,1,1,1,1,2] gives chi2=7631.137391 for 5 dof, p=1.4738e-1652: REJECT_DIRECT_PHYSICAL_STEP_H. Reverse ladder remains bad (chi2=449.37); smooth power-law diagnostic chi2=26.00. Exact scope: rejects only identification of the draft symbol H with conventional Hubble expansion; it does not reject the Lean-proved internal depth/frequency cocycle. Empirical passport, never CORE.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_phi_step_h_desi_dr2.py",
+      "kind": "python_cert",
+      "label": "vp_phi_step_h_desi_dr2.py",
+      "path": "05_CERTS/vp_phi_step_h_desi_dr2.py",
+      "exists": true
+    },
+    {
+      "id": "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
+      "type": "certificate",
+      "domain": "empirical_passport",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51 direct repeated-spectrum redshift-drift passport",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_d0_redshift_drift_direct.py",
+      "python_cert": [
+        "vp_d0_redshift_drift_direct.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[MINT 2026-09-03 D0-RD-01 REAL DATA] Hash-pinned published-measurement confrontation using ten GBT H I absorbers from arXiv:1211.4585 and the independent three-epoch ESPRESSO Lyman-alpha sightline from arXiv:2603.02318. LITERAL DISCRETE BRIDGE: every registered baseline excludes one or more forward D0 ticks under Delta z=(phi-1)(1+z); the weakest minimum-jump/(|observed change|+5sigma) separation is 5.1023e4. This rejects only assigning a nonzero refinement tick to those physical intervals because Lean supplies no SI tick duration. CONTINUOUS SI BRIDGE: the explicit one-parameter interpolation 1+z(t)=(1+z0)phi^(rho t), rho>=0, forces constant A=c dot(z)/(1+z)=c rho log(phi). The joint independent-block fit is A=-4.9321+/-1.8889 m/s/yr, chi2=11.0173/10 (p=0.3562): no positive detection; nonnegative-family boundary p=0.004513 is above inherited alpha=0.001, hence not rejected. 99.9% upper bound rho<6.2742e-9 tick/yr (>1.5938e8 yr per phi tick under this external interpolation). GBT-only prediction agrees with ESPRESSO holdout at 0.498sigma, but both are null-level; the second ESPRESSO method is a correlated control and is not pooled. Measurement-level external passport, not raw-spectra re-reduction and never CORE. The source values were public and inspected before the protocol, so this is retrospective form-frozen analysis, not prospective preregistration.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_d0_redshift_drift_direct.py",
+      "kind": "python_cert",
+      "label": "vp_d0_redshift_drift_direct.py",
+      "path": "05_CERTS/vp_d0_redshift_drift_direct.py",
+      "exists": true
+    },
+    {
+      "id": "D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001",
+      "type": "no-go",
+      "domain": "si_calibration",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 SI refinement-tick calibration boundary",
+      "lean_module": "D0.Bridge.RedshiftSITickCalibrationNoGo",
+      "lean_theorem": "rho_rescale;rho_calibrationForRate;same_internal_protocol_distinct_si_rates;no_si_rho_identifiable_from_internal_protocol;redshift_si_tick_calibration_nogo",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "[MINT 2026-09-03 STRUCTURAL SI SCALE-GAUGE NO-GO] Replaces the informal missing-SI-duration statement by a parametric Lean countermodel family. Every positive SI rate is realized by a reciprocal RefinementSITimeCalibration. Positive rescaling changes rho inversely while preserving every internal depth/redshift comparison; for every calibration Lean constructs an observationally identical one with a distinct SI rate. Therefore no real rho is identifiable from the dimensionless internal protocol alone. This is universal scale-gauge non-identifiability, not enumeration. Reopening requires an external clock section or a derived dimensionless ratio to an already calibrated cycle. The existing electron section is not silently identified with the cosmological tick. Clean Lean, no sorry/axiom/bridge assumption.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/RedshiftSITickCalibrationNoGo.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.RedshiftSITickCalibrationNoGo",
+      "kind": "lean_module",
+      "label": "D0.Bridge.RedshiftSITickCalibrationNoGo",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/RedshiftSITickCalibrationNoGo.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001",
+      "kind": "claim",
+      "claim_id": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 constant-rate redshift-drift and FLRW expansion coupling",
+      "lean_module": "D0.Bridge.RedshiftExpansionArchiveCoupling",
+      "lean_theorem": "expansion_shape_after_eliminating_drift;normalized_expansion_constant;unequal_normalized_expansion_forces_rate_variation",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-CONSTANT-RATE-FLRW-REDSHIFT-DRIFT"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[MINT 2026-09-03 COUPLED OBSERVABLE ELIMINATION] Conditional on the explicit continuous D0 interpolation dotz=rho*ln(phi)*(1+z) and the standard FLRW redshift-drift identity dotz=(1+z)H0-H(z), Lean eliminates drift and proves H(z)/(1+z)=H0-rho*ln(phi), hence a constant normalized expansion rate. The M1-shaped reopening is structural: if normalized H differs at two redshifts, any variable-rate repair must have rho(z1)!=rho(z2); one scalar cannot absorb the failure. FLRW/physical-time identification remains a named bridge assumption, never CORE.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/RedshiftExpansionArchiveCoupling.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.RedshiftExpansionArchiveCoupling",
+      "kind": "lean_module",
+      "label": "D0.Bridge.RedshiftExpansionArchiveCoupling",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/RedshiftExpansionArchiveCoupling.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-CONSTANT-RATE-FLRW-REDSHIFT-DRIFT",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-CONSTANT-RATE-FLRW-REDSHIFT-DRIFT",
+      "lean_name": "D0.Bridge.BridgeAssumption.ConstantRateFLRWRepresentation",
+      "status": "EXPLICIT",
+      "assumption_type": "PHYSICS_DICTIONARY",
+      "external_source_or_cert": "vp_redshift_drift_expansion_coupled.py"
+    },
+    {
+      "id": "D0-EXPANSION-DARK-RESPONSE-COUPLING-001",
+      "kind": "claim",
+      "claim_id": "D0-EXPANSION-DARK-RESPONSE-COUPLING-001",
+      "type": "bridge",
+      "domain": "empirical_passport",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_06/08",
+      "section": "06.40 / 08.51 conditional radial-expansion and measured archive-response relation",
+      "lean_module": "D0.Bridge.RedshiftExpansionArchiveCoupling",
+      "lean_theorem": "radial_bao_archive_candidate_coupling;represented_dark_response_coupling;redshift_expansion_archive_coupling",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-MEASURED-DARK-RESPONSE-REPRESENTATION"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[MINT 2026-09-03 DARK-RESPONSE APPLICATION INTERFACE] The internal relation f_archive=z/(1+z) and the coupled radial shape imply DH/rd=C*(1-f_archive). Lean types the exact missing external datum as MeasuredDarkResponseRepresentation and proves the relation once it is supplied; no inhabitant is asserted. This prevents BAO residuals, carrier nullity 30, or the dynamic archive share from being silently renamed as observed dark energy/lensing density. The existing physical magnitude maximality NO-GO remains load-bearing.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/RedshiftExpansionArchiveCoupling.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "assumption:ASSUMP-MEASURED-DARK-RESPONSE-REPRESENTATION",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-MEASURED-DARK-RESPONSE-REPRESENTATION",
+      "lean_name": "D0.Bridge.BridgeAssumption.MeasuredDarkResponseRepresentation",
+      "status": "EXPLICIT",
+      "assumption_type": "PHYSICS_DICTIONARY",
+      "external_source_or_cert": "vp_redshift_drift_expansion_coupled.py"
+    },
+    {
+      "id": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
+      "kind": "claim",
+      "claim_id": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
+      "type": "certificate",
+      "domain": "cosmology",
+      "scope_guard": "Certificate-bounded row; valid only for declared finite inputs and negative controls.",
+      "book": "BOOK_08",
+      "section": "08.51 coupled direct-drift and DESI DR2 expansion test",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "vp_redshift_drift_expansion_coupled.py",
+      "python_cert": [
+        "vp_redshift_drift_expansion_coupled.py"
+      ],
+      "status": "EMPIRICAL-PASSPORT",
+      "notes": "[MINT 2026-09-03 D0-RDEC-01 REAL DATA] Cross-observable test of the same constant-rate physical bridge using the hash-pinned D0-RD-01 GBT+ESPRESSO verdict and six official DESI DR2 radial BAO measurements with published covariance. Eliminating rho against FLRW forces DH/rd=C/(1+z); one-normalization GLS gives C=31.78441+/-0.19922, chi2=132.01316/5, p=8.8978e-27: REJECT_CONSTANT_RATE_D0_FLRW_COUPLED_BRIDGE at alpha=0.001. Phi cancels, so this is not a peak/numerology test. Free exponent alpha=-1.22190 improves by Delta chi2=106.013 (nested p=7.32e-25) but still fails absolute fit p=3.16e-5. Galaxy-only calibration p=0.17896 misses the same-survey z=2.33 Lyman-alpha holdout by -11.21 sigma; removing that point removes rejection, reported explicitly. The electron action tick tau=h/(38m_ec^2)=2.1298e-22 s is excluded as the cosmological tick by the direct-drift limit, requiring scale separation >2.3616e37. Dark-response representation is absent and explicitly NOT_TESTED. Empirical passport only; rejects the coupled physical bridge, not the internal cocycle or coefficient 38.",
+      "module_path": "09_LEAN_FORMALIZATION/.lean",
+      "module_exists": false,
+      "certs_exist": true
+    },
+    {
+      "id": "cert:vp_redshift_drift_expansion_coupled.py",
+      "kind": "python_cert",
+      "label": "vp_redshift_drift_expansion_coupled.py",
+      "path": "05_CERTS/vp_redshift_drift_expansion_coupled.py",
+      "exists": true
+    },
+    {
+      "id": "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001",
+      "kind": "claim",
+      "claim_id": "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_07/08",
+      "section": "07.2 / 08.51 local signed pressure-capacity dynamics",
+      "lean_module": "D0.Gravity.LocalPressureCapacityDynamics",
+      "lean_theorem": "balanced_acceleration_zero;balanced_preserves_existing_rate;feedback_excess_accelerates;capacity_excess_brakes;capacity_hypercompensation_reverses;unequal_imbalance_forces_unequal_acceleration;homogeneous_imbalance_gives_homogeneous_acceleration;local_pressure_capacity_dynamics_and_packing_boundary",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-09-03 LOCAL DYNAMIC BALANCE] Upgrades the former three concrete integer regime examples to a universal real-valued local law. The internal response is Delta theta=kappa(P_fb-P_cap): exact balance gives zero acceleration and preserves an existing rate, feedback excess accelerates, capacity excess brakes, and sufficient capacity hypercompensation reverses the next-step rate. For nonzero kappa, unequal local imbalances force unequal accelerations, while homogeneous imbalance implies homogeneous acceleration. Scope is finite internal response algebra over declared P_fb/P_cap fields. It does not identify acceleration with an FLRW observable, P_fb with measured dark response, or P_cap with physical matter density; those remain representation bridges.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/LocalPressureCapacityDynamics.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Gravity.LocalPressureCapacityDynamics",
+      "kind": "lean_module",
+      "label": "D0.Gravity.LocalPressureCapacityDynamics",
+      "path": "09_LEAN_FORMALIZATION/D0/Gravity/LocalPressureCapacityDynamics.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001",
+      "type": "no-go",
+      "domain": "formal_core",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_07/08",
+      "section": "07.2 / 08.51 packing ceiling versus bulk homogeneity boundary",
+      "lean_module": "D0.Gravity.LocalPressureCapacityDynamics",
+      "lean_theorem": "packing_limit_does_not_force_homogeneity;everywhere_saturation_forces_homogeneity;local_pressure_capacity_dynamics_and_packing_boundary",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "[MINT 2026-09-03 STRUCTURAL PACKING NO-GO] A pointwise density ceiling does not force homogeneity: Lean constructs a two-site real density field below one common bound that is not homogeneous. Uniformity follows only from the stronger premise that every site saturates the same bound. The current D0 BlackHoleCapacitySaturation predicate is boundary heat/capacity saturation and supplies no bulk-density field or everywhere-saturation theorem, so black-hole homogeneity cannot be inferred by renaming the existing boundary law. This is a parametric logical separation, not an enumeration of black-hole interiors.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Gravity/LocalPressureCapacityDynamics.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001",
+      "kind": "claim",
+      "claim_id": "D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001",
+      "type": "bridge",
+      "domain": "formal_core",
+      "scope_guard": "Conditional bridge row; not a D0-core closure without listed assumptions.",
+      "book": "BOOK_07/08",
+      "section": "07.2 / 08.51 conditional local focusing-defocusing representation",
+      "lean_module": "D0.Bridge.LocalRaychaudhuriRepresentation",
+      "lean_theorem": "added_matter_increases_focusing;added_dark_drive_increases_defocusing;represented_local_acceleration_eq_defocusing_sub_focusing;represented_balance_zero_acceleration;represented_defocusing_dominance_accelerates;represented_focusing_dominance_brakes;represented_focusing_hypercompensation_reverses;represented_dark_drive_recovered;represented_focusing_recovered;local_raychaudhuri_representation_coupling",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "uses_bridge_assumptions": true,
+      "assumption_ids": [
+        "ASSUMP-LOCAL-RAYCHAUDHURI-REPRESENTATION"
+      ],
+      "cert": "",
+      "python_cert": [],
+      "status": "BRIDGE-ASSUMPTIONS-EXPLICIT",
+      "notes": "[MINT 2026-09-03 LOCAL RAYCHAUDHURI BRIDGE] A typed application interface maps kappa*P_cap to the local self-focusing+shear+active-matter load, kappa*P_fb to vorticity+an independently measured dark/archive drive, and the physical acceleration readout to the internal pressure-capacity acceleration. Lean eliminates the internal pressures and proves measuredAcceleration=defocusing-focusing, exact balance, acceleration/braking sign laws, hypercompensation reversal, and pointwise recovery of the dark drive from acceleration plus independently read focusing and vorticity. No representation inhabitant, spacetime, SI clock, or measured dark field is asserted by the finite core; the three map equalities remain one explicit physics-dictionary assumption.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/LocalRaychaudhuriRepresentation.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Bridge.LocalRaychaudhuriRepresentation",
+      "kind": "lean_module",
+      "label": "D0.Bridge.LocalRaychaudhuriRepresentation",
+      "path": "09_LEAN_FORMALIZATION/D0/Bridge/LocalRaychaudhuriRepresentation.lean",
+      "exists": true
+    },
+    {
+      "id": "assumption:ASSUMP-LOCAL-RAYCHAUDHURI-REPRESENTATION",
+      "kind": "bridge_assumption",
+      "label": "ASSUMP-LOCAL-RAYCHAUDHURI-REPRESENTATION",
+      "lean_name": "D0.Bridge.BridgeAssumption.LocalRaychaudhuriRepresentation",
+      "status": "EXPLICIT",
+      "assumption_type": "PHYSICS_DICTIONARY",
+      "external_source_or_cert": "Raychaudhuri, Physical Review 98 (1955) 1123, DOI 10.1103/PhysRev.98.1123; 04_VERIFICATION/LOCAL_RAYCHAUDHURI_REPRESENTATION_REPORT.md"
+    },
+    {
+      "id": "D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001",
+      "kind": "claim",
+      "claim_id": "D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001",
+      "type": "no-go",
+      "domain": "empirical_passport",
+      "scope_guard": "Boundary/no-go row; prevents promotion of this route.",
+      "book": "BOOK_07/08",
+      "section": "07.2 / 08.51 net expansion cannot identify dark and focusing sectors",
+      "lean_module": "D0.Bridge.LocalRaychaudhuriRepresentation",
+      "lean_theorem": "common_shift_preserves_net;nonzero_common_shift_gives_observational_twin;no_dark_component_identifiable_from_net;dark_component_recovered_from_net_and_focusing;same_net_and_focusing_forces_same_dark;same_net_distinct_focusing_forces_distinct_dark;local_raychaudhuri_representation_coupling",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "NO-GO",
+      "notes": "[MINT 2026-09-03 TWO-READOUT INFORMATION BOUNDARY] For arbitrary local fields the observable net response darkDrive-focusingLoad is invariant under the functional common-shift gauge (dark,focus)->(dark+g,focus+g). Every nonzero g therefore gives a distinct observational twin, and Lean proves by contradiction that no universal algorithm can recover the dark component from the net field alone. Supplying the focusing field as a second independent readout removes the gauge: dark=net+focus uniquely, and at fixed net any focusing change forces a dark change. This is a structural non-identifiability theorem over all functions, not an enumeration or parameter-count slogan.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/LocalRaychaudhuriRepresentation.lean",
+      "module_exists": true,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -31714,6 +32350,291 @@
       "source": "D0-CASCADE-FULL-FORCING-DAG-001",
       "target": "cert:vp_cascade_full_forcing_dag.py",
       "kind": "certified_by"
+    },
+    {
+      "source": "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001",
+      "target": "module:D0.Foundation.IndependentDetectionSideSymmetryBoundary",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001",
+      "target": "cert:vp_cascade_full_forcing_dag.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001",
+      "target": "domain:gauge_bridge",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001",
+      "target": "module:D0.Foundation.ConcreteRepairForcingCanonicity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001",
+      "target": "cert:vp_cascade_full_forcing_dag.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001",
+      "target": "module:D0.Cosmology.SelfUnfoldingObservableRelations",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001",
+      "target": "cert:vp_self_unfolding_observable_relations.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+      "target": "module:D0.Cosmology.SelfUnfoldingObservableRelations",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+      "target": "cert:vp_self_unfolding_observable_relations.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "target": "module:D0.Bridge.PhysicalRedshiftDetection",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "target": "cert:vp_physical_redshift_detection_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "target": "assumption:ASSUMP-PREREGISTERED-SELF-RETURN-FREQUENCY-REPRESENTATION",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001",
+      "target": "module:D0.Cosmology.PhysicalRedshiftDetectionPassport",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001",
+      "target": "cert:vp_physical_redshift_detection_passport.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001",
+      "target": "module:D0.Cosmology.PhaseCycleFrequencyRealization",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001",
+      "target": "cert:vp_phase_cycle_frequency_realization.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001",
+      "target": "module:D0.Cosmology.PhaseCycleFrequencyRealization",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001",
+      "target": "cert:vp_phase_cycle_frequency_realization.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-QSO-LEVEL-EXCESS-DESI-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-QSO-LEVEL-EXCESS-DESI-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-QSO-LEVEL-EXCESS-DESI-001",
+      "target": "cert:vp_phi_qso_redshift_levels_desi_dr1.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001",
+      "target": "cert:vp_phi_qso_redshift_levels_sdss_dr16q.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-PHI-STEP-H-DESI-DR2-001",
+      "target": "domain:smooth_geometry",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PHI-STEP-H-DESI-DR2-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PHI-STEP-H-DESI-DR2-001",
+      "target": "cert:vp_phi_step_h_desi_dr2.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
+      "target": "cert:vp_d0_redshift_drift_direct.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001",
+      "target": "domain:si_calibration",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001",
+      "target": "module:D0.Bridge.RedshiftSITickCalibrationNoGo",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001",
+      "target": "module:D0.Bridge.RedshiftExpansionArchiveCoupling",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLING-001",
+      "target": "assumption:ASSUMP-CONSTANT-RATE-FLRW-REDSHIFT-DRIFT",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-EXPANSION-DARK-RESPONSE-COUPLING-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-EXPANSION-DARK-RESPONSE-COUPLING-001",
+      "target": "module:D0.Bridge.RedshiftExpansionArchiveCoupling",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-EXPANSION-DARK-RESPONSE-COUPLING-001",
+      "target": "assumption:ASSUMP-MEASURED-DARK-RESPONSE-REPRESENTATION",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
+      "target": "domain:cosmology",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
+      "target": "module:",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
+      "target": "cert:vp_redshift_drift_expansion_coupled.py",
+      "kind": "certified_by"
+    },
+    {
+      "source": "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001",
+      "target": "module:D0.Gravity.LocalPressureCapacityDynamics",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001",
+      "target": "module:D0.Gravity.LocalPressureCapacityDynamics",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001",
+      "target": "module:D0.Bridge.LocalRaychaudhuriRepresentation",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001",
+      "target": "assumption:ASSUMP-LOCAL-RAYCHAUDHURI-REPRESENTATION",
+      "kind": "uses_assumption"
+    },
+    {
+      "source": "D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001",
+      "target": "module:D0.Bridge.LocalRaychaudhuriRepresentation",
+      "kind": "implemented_in"
     }
   ]
 }

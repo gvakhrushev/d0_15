@@ -1,0 +1,163 @@
+{
+  "protocol_id": "D0-RD-01",
+  "hashes_verified": true,
+  "sample_data": false,
+  "measurement_level_only": true,
+  "prospective_preregistration": false,
+  "independent_blocks": [
+    "GBT_HI",
+    "ESPRESSO_LYA"
+  ],
+  "leg_a_literal_discrete_tick": {
+    "decision": "REJECT_LITERAL_NONZERO_D0_TICK_IN_EACH_REGISTERED_BASELINE",
+    "test": "minimum one-tick jump versus absolute observed change plus five sigma",
+    "minimum_separation_factor": 51023.249316495036,
+    "rows": [
+      {
+        "object": "0738+313_A",
+        "group": "GBT_HI",
+        "baseline_years": 8.358658453114305,
+        "observed_delta_z": -2.507597535934291e-07,
+        "sigma_delta_z": 7.522792607802874e-08,
+        "five_sigma_envelope": 6.268993839835728e-07,
+        "minimum_one_tick_delta_z": 0.674420294374098,
+        "separation_factor": 1075803.0899449256
+      },
+      {
+        "object": "0738+313_B",
+        "group": "GBT_HI",
+        "baseline_years": 8.350444900752908,
+        "observed_delta_z": 2.1711156741957564e-07,
+        "sigma_delta_z": 2.5886379192334015e-07,
+        "five_sigma_envelope": 1.5114305270362764e-06,
+        "minimum_one_tick_delta_z": 0.7547739469574103,
+        "separation_factor": 499377.20156905014
+      },
+      {
+        "object": "PKS_1413+135",
+        "group": "GBT_HI",
+        "baseline_years": 8.128678986995208,
+        "observed_delta_z": -1.8695961670088978e-07,
+        "sigma_delta_z": 5.608788501026693e-07,
+        "five_sigma_envelope": 2.9913538672142366e-06,
+        "minimum_one_tick_delta_z": 0.770505285221612,
+        "separation_factor": 257577.44467028297
+      },
+      {
+        "object": "PKS_1127-145",
+        "group": "GBT_HI",
+        "baseline_years": 12.5201916495551,
+        "observed_delta_z": 1.752826830937714e-06,
+        "sigma_delta_z": 1.25201916495551e-06,
+        "five_sigma_envelope": 8.012922655715265e-06,
+        "minimum_one_tick_delta_z": 0.8112674363621803,
+        "separation_factor": 101244.88544557946
+      },
+      {
+        "object": "0248+430",
+        "group": "GBT_HI",
+        "baseline_years": 7.4195756331279945,
+        "observed_delta_z": 4.303353867214237e-07,
+        "sigma_delta_z": 7.864750171115674e-07,
+        "five_sigma_envelope": 4.362710472279261e-06,
+        "minimum_one_tick_delta_z": 0.861592475617327,
+        "separation_factor": 197490.17980723237
+      },
+      {
+        "object": "PKS_1229-021",
+        "group": "GBT_HI",
+        "baseline_years": 7.8904859685147155,
+        "observed_delta_z": -6.628008213552361e-07,
+        "sigma_delta_z": 1.641221081451061e-06,
+        "five_sigma_envelope": 8.86890622861054e-06,
+        "minimum_one_tick_delta_z": 0.8621501462263956,
+        "separation_factor": 97210.42527715005
+      },
+      {
+        "object": "0235+164",
+        "group": "GBT_HI",
+        "baseline_years": 7.389459274469542,
+        "observed_delta_z": -9.606297056810404e-07,
+        "sigma_delta_z": 1.1084188911704312e-06,
+        "five_sigma_envelope": 6.502724161533196e-06,
+        "minimum_one_tick_delta_z": 0.9417241007262488,
+        "separation_factor": 144819.9365885776
+      },
+      {
+        "object": "B3_1504+377",
+        "group": "GBT_HI",
+        "baseline_years": 8.153319644079398,
+        "observed_delta_z": 1.8752635181382615e-06,
+        "sigma_delta_z": 1.6306639288158794e-06,
+        "five_sigma_envelope": 1.0028583162217658e-05,
+        "minimum_one_tick_delta_z": 1.034120408862832,
+        "separation_factor": 103117.29903769908
+      },
+      {
+        "object": "B0218+357",
+        "group": "GBT_HI",
+        "baseline_years": 13.514031485284052,
+        "observed_delta_z": 2.837946611909651e-06,
+        "sigma_delta_z": 3.5136481861738537e-06,
+        "five_sigma_envelope": 2.0406187542778918e-05,
+        "minimum_one_tick_delta_z": 1.041189994594364,
+        "separation_factor": 51023.249316495036
+      },
+      {
+        "object": "3C286",
+        "group": "GBT_HI",
+        "baseline_years": 8.093086926762492,
+        "observed_delta_z": 1.2948939082819987e-07,
+        "sigma_delta_z": 3.803750855578371e-07,
+        "five_sigma_envelope": 2.0313648186173856e-06,
+        "minimum_one_tick_delta_z": 1.0458082381244478,
+        "separation_factor": 514830.3389620874
+      },
+      {
+        "object": "SB2_pixel",
+        "group": "ESPRESSO_LYA",
+        "baseline_years": 2.1705534149486656,
+        "observed_delta_z": -1.1351994360181521e-07,
+        "sigma_delta_z": 1.1786105043171254e-07,
+        "five_sigma_envelope": 7.028251957603779e-07,
+        "minimum_one_tick_delta_z": 2.82441532858702,
+        "separation_factor": 4018659.7544092312
+      }
+    ],
+    "scope": "rejects only a physical bridge assigning one or more forward D0 ticks to a registered observing baseline"
+  },
+  "leg_b_continuous_si_bridge": {
+    "bridge": "1+z(t)=(1+z0)*phi^(rho*t), rho>=0 ticks/year",
+    "eliminated_relation": "dv/dt=c*dot(z)/(1+z)=c*rho*ln(phi)=constant",
+    "decision": "NO_POSITIVE_DRIFT_DETECTION_CONTINUOUS_RATE_NOT_REJECTED_AT_FROZEN_ALPHA",
+    "alpha": 0.001,
+    "joint_unrestricted_A_mps_per_year": -4.93210514493834,
+    "joint_sigma_A_mps_per_year": 1.8889323986841977,
+    "joint_z_score": -2.611054343910863,
+    "constant_shape_chi2": 11.017290301866074,
+    "constant_shape_dof": 10,
+    "constant_shape_p_value": 0.35617251436522485,
+    "positive_detection_p_value": 0.9954868225569877,
+    "nonnegative_family_exclusion_p_value": 0.004513177443012308,
+    "gbt_only_A_mps_per_year": -5.520715266432357,
+    "gbt_only_sigma_A_mps_per_year": 2.228505416695657,
+    "gbt_only_chi2": 10.769493767471017,
+    "gbt_only_dof": 9,
+    "gbt_only_p_value": 0.2918405226457012,
+    "espresso_holdout_observed_mps_per_year": -3.43,
+    "espresso_holdout_sigma_mps_per_year": 3.56,
+    "espresso_holdout_prediction_residual_mps_per_year": 2.090715266432357,
+    "espresso_holdout_pull": 0.49779165761898386,
+    "upper_limit_confidence": 0.999,
+    "upper_A_mps_per_year": 0.9051347776426271,
+    "upper_rho_ticks_per_year": 6.274169656976888e-09,
+    "lower_time_per_phi_tick_years": 159383640.33366522,
+    "scope": "external one-parameter SI interpolation; null/sensitivity result, never Lean core"
+  },
+  "correlated_control": {
+    "object": "SB2_likelihood",
+    "not_pooled": true,
+    "invalid_double_count_A_mps_per_year": -4.657040550167151,
+    "invalid_double_count_sigma_A_mps_per_year": 1.6775952340709697
+  }
+}

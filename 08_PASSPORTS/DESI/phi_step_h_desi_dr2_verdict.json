@@ -1,0 +1,89 @@
+{
+  "protocol_id": "PHI-P_DESI_01",
+  "leg": "B_DIRECT_PHYSICAL_STEP_H",
+  "decision": "REJECT_DIRECT_PHYSICAL_STEP_H",
+  "scope": "conventional Hubble-rate interpretation only; internal D0 depth/frequency laws are not tested here",
+  "dataset": "DESI_DR2_GAUSSIAN_BAO_ALL_GCcomb",
+  "hashes_verified": true,
+  "sample_data": false,
+  "no_refit": {
+    "phi": true,
+    "phase_origin": true,
+    "step_boundaries": true,
+    "redshift_bins": true
+  },
+  "fitted_nuisance_parameters": 1,
+  "best_fit_C": 4.661123464933966,
+  "chi2": 7631.137390976874,
+  "dof": 5,
+  "p_value": "1.47381734624e-1652",
+  "log10_p_value": -1651.8315563363121,
+  "alpha_reject": 0.001,
+  "controls": {
+    "reverse_ladder": {
+      "best_fit_C": 24.58256072468034,
+      "chi2": 449.37054148942207
+    },
+    "smooth_power_law": {
+      "best_fit_C": 38.25318242664368,
+      "alpha": -1.2218963610453595,
+      "chi2": 26.00003267653006
+    }
+  },
+  "measurements": [
+    {
+      "z": 0.51,
+      "DH_over_rs_observed": 21.86294686,
+      "step_k": 0,
+      "DH_over_rs_model": 4.661123464933966,
+      "residual": 17.201823395066036,
+      "marginal_sigma": 0.42886832478046216,
+      "pull": 40.10980154309987
+    },
+    {
+      "z": 0.706,
+      "DH_over_rs_observed": 19.45534918,
+      "step_k": 1,
+      "DH_over_rs_model": 7.541856192022836,
+      "residual": 11.913492987977163,
+      "marginal_sigma": 0.33387003159912393,
+      "pull": 35.68302590956002
+    },
+    {
+      "z": 0.934,
+      "DH_over_rs_observed": 17.64149464,
+      "step_k": 1,
+      "DH_over_rs_model": 7.541856192022836,
+      "residual": 10.099638447977165,
+      "marginal_sigma": 0.20104324858099562,
+      "pull": 50.23614828780613
+    },
+    {
+      "z": 1.321,
+      "DH_over_rs_observed": 14.17602155,
+      "step_k": 1,
+      "DH_over_rs_model": 7.541856192022836,
+      "residual": 6.634165357977164,
+      "marginal_sigma": 0.22455135092000672,
+      "pull": 29.54409016377057
+    },
+    {
+      "z": 1.484,
+      "DH_over_rs_observed": 12.81699964,
+      "step_k": 1,
+      "DH_over_rs_model": 7.541856192022836,
+      "residual": 5.275143447977165,
+      "marginal_sigma": 0.5180117691713191,
+      "pull": 10.183443238009804
+    },
+    {
+      "z": 2.33,
+      "DH_over_rs_observed": 8.631545674846294,
+      "step_k": 2,
+      "DH_over_rs_model": 12.202979656956801,
+      "residual": -3.5714339821105074,
+      "marginal_sigma": 0.10106245296844917,
+      "pull": -35.33888083268154
+    }
+  ]
+}

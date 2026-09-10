@@ -1,0 +1,15 @@
+{
+  "dataset_id": "SDSS_DR16Q_VII_289",
+  "source_name": "SDSS DR16Q quasar-only catalogue via CDS/VizieR VII/289",
+  "source_documentation_url": "https://www.sdss4.org/dr17/algorithms/qso_catalog/",
+  "catalogue_landing_url": "https://cdsarc.cds.unistra.fr/viz-bin/cat/VII/289",
+  "query_url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=VII/289/dr16q&-out=SDSS,z&-out.max=unlimited",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/sdss_qso/SDSS_DR16Q_VII_289_redshift.tsv",
+  "sha256": "996c167c6469b0dc01670d6b2d9de4241ea396ce50e2b1cdbb430effc901769e",
+  "downloaded_at_utc": "2026-08-31T10:53:00Z",
+  "expected_rows": 750414,
+  "sample_data": false,
+  "status": "READY",
+  "same_frozen_levels_and_statistic_as_desi": true,
+  "no_refit": true
+}

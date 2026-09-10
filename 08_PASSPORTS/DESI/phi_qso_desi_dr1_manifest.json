@@ -1,0 +1,16 @@
+{
+  "dataset_id": "DESI_DR1_QSO_iron_cumulative_v0",
+  "source_name": "DESI DR1 QSO redshift catalogue",
+  "source_documentation_url": "https://data.desi.lbl.gov/doc/releases/dr1/",
+  "data_url": "https://data.desi.lbl.gov/public/dr1/survey/catalogs/dr1/QSO/iron/QSO_cat_iron_cumulative_v0.fits",
+  "checksum_url": "https://data.desi.lbl.gov/public/dr1/survey/catalogs/dr1/QSO/iron/dr1_survey_catalogs_dr1_QSO_iron.sha256sum",
+  "local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/desi_qso/QSO_cat_iron_cumulative_v0.fits",
+  "sha256": "a65604303cc29af8865db9193a23934b2540591b16c5afd2a4bea2d61464aef4",
+  "downloaded_at_utc": "2026-08-31T10:45:00Z",
+  "size_bytes": 816203520,
+  "sample_data": false,
+  "status": "READY",
+  "protocol_frozen_before_value_access": true,
+  "no_refit": true
+}
+

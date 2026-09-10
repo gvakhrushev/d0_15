@@ -99,6 +99,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-AFFINE-SHELL-READOUT-NOGO-001",
+      "cluster": "BOOK_04 \u00a704.10/04.11 affine shell readout equal-spacing no-go",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-ALPHA-ALG-CLOSED-001",
       "cluster": "BOOK_02 \u00a702.13.4",
       "cluster_size": 3,
@@ -1009,6 +1023,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-CANONICAL-PUISEUX-SHELL-TRANSFER-001",
+      "cluster": "BOOK_04 \u00a704.10/04.11 canonical normalized Puiseux shell transfer",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
       "cluster": "BOOK_02 \u00a702.tower",
       "cluster_size": 3,
@@ -1135,6 +1163,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-CASCADE-CARRIED-ASSEMBLY-001",
+      "cluster": "BOOK_01 \u00a701.6.1c the carried cascade in one theorem (assembly)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-CASCADE-CHAIN-SCAFFOLD-001",
       "cluster": "BOOK_01 \u00a701.6.1c",
       "cluster_size": 3,
@@ -1159,6 +1201,20 @@
       "resolution": "claim",
       "status": "CORE-FORMALIZED",
       "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CASCADE-FLOOR-DEFECT-CLOSURE-001",
+      "cluster": "BOOK_01 \u00a701.6.1c cascade floor: defect => circulation needs closure (+ third interlock link)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
       "support_source": "proxy",
       "where": ""
     },
@@ -1219,16 +1275,100 @@
       "where": ""
     },
     {
+      "claim_id": "D0-CASCADE-FLOOR-SHELL-CLOSURE-001",
+      "cluster": "BOOK_01/03 \u00a701.6.1c cascade floor: closure => shell (03.23.5 reading; prose-anchored fourth link)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CASCADE-FULL-FORCING-DAG-001",
+      "cluster": "BOOK_01 \u00a701.6.1c corrected full carried forcing architecture",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-CASCADE-INSUFFICIENCY-CHAIN-001",
       "cluster": "BOOK_01 \u00a701.6.1c",
       "cluster_size": 3,
       "fragility": 0.0,
-      "kind": "LEAF",
+      "kind": "SUPPORTED",
       "load": 0,
       "pillar": 0,
       "resolution": "section",
-      "status": "PROOF-TARGET",
-      "support": 1,
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CASCADE-INTERLOCK-SCALE-001",
+      "cluster": "BOOK_01 \u00a701.6.1c cascade interlock: second link (order repair fails scale floor)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CASCADE-TERMINAL-COUNT-001",
+      "cluster": "BOOK_01/03 \u00a701.6.1c terminal step, COUNT leg at proxy grade: 2 interior + forced closure = exactly 3",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CASCADE-TOPOLOGICAL-SHELL-ATTACHMENT-001",
+      "cluster": "BOOK_01/03 \u00a701.6.1c / 03.23.5 topological closure to shell",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CHARGED-LEPTON-SHELL-BRIDGE-001",
+      "cluster": "BOOK_04 \u00a704.8/04.11 charged-lepton names to structural generation shells",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -1565,6 +1705,48 @@
       "resolution": "claim",
       "status": "PASSPORT-CLOSED",
       "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001",
+      "cluster": "BOOK_01 \u00a701.6.1c concrete support quotient and physical scene",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CONCRETE-PHYSICAL-DETECTOR-REPRESENTATION-001",
+      "cluster": "BOOK_00/01 \u00a7concrete D0 observation class-M1 detector representation",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-CONCRETE-REPAIR-FORCING-CANONICITY-001",
+      "cluster": "BOOK_01/03 \u00a701.6.1c / 03.23.5 protocol-orbit quotient and canonical shell forcing",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -2311,6 +2493,76 @@
       "where": ""
     },
     {
+      "claim_id": "D0-DETECTION-SCENE-BOUND-EQUIVALENCE-001",
+      "cluster": "BOOK_00/01 \u00a7detector capability count iff GAP-E zone-13 bound",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-DETECTOR-CATALOGUE-FREEDOM-001",
+      "cluster": "BOOK_00/01 \u00a7detector catalogue-freedom: order/history requires an external orientation catalogue",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-DETECTOR-LAYER-EQUIVALENCE-001",
+      "cluster": "BOOK_00/01 \u00a7canonical detector/current/history layer equivalence",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-DETECTOR-M1-CLASS-REPRESENTATION-001",
+      "cluster": "BOOK_00/01 \u00a7class-level M1 physical detector representation into typed detector layer",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-DETECTOR-M1-PREDICATE-BOUNDARY-001",
+      "cluster": "BOOK_00/01 \u00a7canonical M1 unique-answer predicate versus catalogue-free detector class",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-DIM-LADDER-COMPACT-001",
       "cluster": "BOOK_06 \u00a7dimension ladder compactification",
       "cluster_size": 1,
@@ -2437,6 +2689,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001",
+      "cluster": "BOOK_06/08 \u00a706.40 / 08.51 dynamic archive measure and expansion relation",
+      "cluster_size": 1,
+      "fragility": 27.7,
+      "kind": "PILLAR",
+      "load": 83,
+      "pillar": 249,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
       "cluster": "BOOK_06 \u00a706.8.S",
       "cluster_size": 5,
@@ -2535,6 +2801,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-EDGE-INVARIANT-CROSS-SECTOR-001",
+      "cluster": "BOOK_07 \u00a707.41 cross-sector edge invariant (finite spectral action ladder)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "LEAF",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CERT-CLOSED",
+      "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-EDGE-RAMIFICATION-001",
       "cluster": "BOOK_04 \u00a7torus ramification companion cover",
       "cluster_size": 1,
@@ -2545,6 +2825,20 @@
       "resolution": "claim",
       "status": "CORE-FORMALIZED",
       "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-EDGE359-SCENE-SELECTION-NOGO-001",
+      "cluster": "BOOK_01/03/04/07 \u00a7scene/alpha edge-count selection boundary",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -2801,6 +3095,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001",
+      "cluster": "BOOK_06/08 \u00a706.40 / 08.51 finite phase-cycle frequency realization",
+      "cluster_size": 1,
+      "fragility": 27.7,
+      "kind": "PILLAR",
+      "load": 83,
+      "pillar": 249,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-FINITE-SPECTRAL-TRIPLE-REPRESENTATION-PASSPORT-001",
       "cluster": "BOOK_04 \u00a704.rep",
       "cluster_size": 2,
@@ -2825,6 +3133,20 @@
       "resolution": "claim",
       "status": "CERT-CLOSED",
       "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-FIVE-SECTOR-FIELD-LEDGER-001",
+      "cluster": "BOOK_02/04/07/08 \u00a7five-sector field ledger: rational hub + three independent characters",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -3217,6 +3539,20 @@
       "resolution": "claim",
       "status": "NO_GO_PROVED",
       "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-GENERATION-ROOT-ORDER-BRIDGE-001",
+      "cluster": "BOOK_04 \u00a704.11 structural generation-shell to transport-root order bridge",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -4089,6 +4425,34 @@
       "where": ""
     },
     {
+      "claim_id": "D0-INDEPENDENT-DETECTION-REPAIR-GRAMMAR-COMPLETENESS-001",
+      "cluster": "BOOK_01 \u00a701.6.1c repair grammar completeness from double independent detection",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-INDEPENDENT-DETECTION-SIDE-SYMMETRY-BOUNDARY-001",
+      "cluster": "BOOK_01 \u00a701.6.1c labelled-side symmetry boundary",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
       "cluster": "BOOK_07 \u00a707.tower",
       "cluster_size": 2,
@@ -4129,6 +4493,20 @@
       "support": 2,
       "support_source": "proxy",
       "where": "BOOK_08 \u00a708.v15"
+    },
+    {
+      "claim_id": "D0-INFORMATION-CONNECTIVITY-001",
+      "cluster": "BOOK_00 \u00a70.3.1 information connectivity: the assertable universe is one record-component",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
     },
     {
       "claim_id": "D0-INFORMATION-QUASICRYSTAL-PHASE-UNFOLDING-001",
@@ -4649,6 +5027,34 @@
       "where": ""
     },
     {
+      "claim_id": "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001",
+      "cluster": "BOOK_01 \u00a701.6.1c M1 cascade to variable scene count",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-M1-CLASS-ADMISSIBILITY-001",
+      "cluster": "BOOK_00/01 \u00a7class-level M1 catalogue-independence and unique-forcing singleton compatibility",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-M1-HOMOLOGICAL-SCENE-READING-001",
       "cluster": "BOOK_01 \u00a701.8.1",
       "cluster_size": 1,
@@ -4687,6 +5093,20 @@
       "resolution": "claim",
       "status": "CORE-FORMALIZED",
       "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001",
+      "cluster": "BOOK_01 \u00a701.6.1c observational repair quotient and variable scene",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -4743,6 +5163,48 @@
       "resolution": "claim",
       "status": "CERT-CLOSED",
       "support": 1,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-MASS-SECTOR-COMPLETION-NOGO-001",
+      "cluster": "BOOK_04 \u00a704.11 joint Yukawa-coefficient and shell-metric completion boundary",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-MASS-SECTOR-METRIC-UNDERDETERMINATION-001",
+      "cluster": "BOOK_04 \u00a704.8/04.11 mass-sector metric classification and order-only no-go",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-MASS-SECTOR-ORIENTATION-BIT-001",
+      "cluster": "BOOK_04 \u00a704.11 mass-sector residual = one orientation bit",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
       "support_source": "proxy",
       "where": ""
     },
@@ -5923,6 +6385,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001",
+      "cluster": "BOOK_06/08 \u00a706.40 / 08.51 preregistered physical redshift detection passport",
+      "cluster_size": 1,
+      "fragility": 27.7,
+      "kind": "PILLAR",
+      "load": 83,
+      "pillar": 249,
+      "resolution": "claim",
+      "status": "PASSPORT-CLOSED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-PI0-DISCRETE-ANGLE-001",
       "cluster": "BOOK_04 \u00a704.6.pi",
       "cluster_size": 1,
@@ -6185,6 +6661,20 @@
       "resolution": "claim",
       "status": "PROOF-TARGET",
       "support": 0,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-PUISEUX-TRANSFER-SATURATION-001",
+      "cluster": "BOOK_04 \u00a704.10/04.11 canonical Puiseux transfer saturation and increment compression",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -6567,6 +7057,34 @@
       "where": ""
     },
     {
+      "claim_id": "D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001",
+      "cluster": "BOOK_06/08 \u00a706.40 / 08.51 raw finite cycle-window boundary",
+      "cluster_size": 1,
+      "fragility": 27.7,
+      "kind": "PILLAR",
+      "load": 83,
+      "pillar": 249,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001",
+      "cluster": "BOOK_06/08 \u00a706.40 / 08.51 raw double-detection redshift boundary",
+      "cluster_size": 1,
+      "fragility": 27.7,
+      "kind": "PILLAR",
+      "load": 83,
+      "pillar": 249,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-RAW-HISTORY-CATEGORY-001",
       "cluster": "BOOK_06 \u00a706.raw",
       "cluster_size": 1,
@@ -6883,7 +7401,7 @@
       "load": 0,
       "pillar": 0,
       "resolution": "section",
-      "status": "PROOF-TARGET",
+      "status": "CORE-FORMALIZED",
       "support": 1,
       "support_source": "proxy",
       "where": ""
@@ -6955,6 +7473,20 @@
       "resolution": "claim",
       "status": "NO-GO",
       "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SCENE-INVARIANT-OVERDETERMINATION-001",
+      "cluster": "BOOK_01 \u00a7scene invariant over-determination: any two of (V,E,T) pin the scene",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -7141,6 +7673,48 @@
       "where": ""
     },
     {
+      "claim_id": "D0-SEAM-RETURN-ADDRESS-RIGIDITY-001",
+      "cluster": "BOOK_02/04 \u00a7P2 seam-return address rigidity: angle 12/5 + depth 17",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SECTOR-FIELD-INDEPENDENCE-001",
+      "cluster": "BOOK_02/04/08 \u00a7cross-sector field-independence of the scene invariant 359",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SECTOR-GALOIS-CLOSURE-001",
+      "cluster": "BOOK_02/04/08 \u00a7sector character field: full Galois closure (Z/2)^3",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-SELF-READING-NO-STIPULATION-001",
       "cluster": "BOOK_00 \u00a700.raw",
       "cluster_size": 3,
@@ -7165,6 +7739,20 @@
       "resolution": "claim",
       "status": "CERT-CLOSED",
       "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001",
+      "cluster": "BOOK_06/08 \u00a706.40 / 08.51 self-unfolding observable elimination",
+      "cluster_size": 1,
+      "fragility": 27.7,
+      "kind": "PILLAR",
+      "load": 83,
+      "pillar": 249,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -7631,6 +8219,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-TORAL-COMPOSITION-SEVENTEEN-001",
+      "cluster": "BOOK_02 \u00a702.13.h obligation (i): toral composition law for 17 = 5+12",
+      "cluster_size": 1,
+      "fragility": 29.5,
+      "kind": "PILLAR",
+      "load": 59,
+      "pillar": 118,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-TORAL-INTEGRAL-CONJUGACY-OWNER-001",
       "cluster": "BOOK_01 \u00a701.toral",
       "cluster_size": 2,
@@ -7855,6 +8457,34 @@
       "where": ""
     },
     {
+      "claim_id": "D0-TRANSPORT-CUBIC-GALOIS-CONFINEMENT-001",
+      "cluster": "BOOK_02 \u00a7transport cubic Galois order/degree confinement (02.13.h)",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TRANSPORT-CUBIC-GALOIS-S3-001",
+      "cluster": "BOOK_02 \u00a7transport cubic full Galois closure: Gal = S3",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-TRANSPORT-FIELD-NO-GOLDEN-001",
       "cluster": "BOOK_02 \u00a702.13.h transport root field: no quadratic elements",
       "cluster_size": 1,
@@ -7897,6 +8527,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-TRANSPORT-ROOT-LABELING-CANONICAL-001",
+      "cluster": "BOOK_04 \u00a704.11 canonical transport-root generation labeling",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-TRANSPORT-SPECTRUM-BLINDNESS-NOGO-001",
       "cluster": "BOOK_02 \u00a702.34 transport spectrum blindness",
       "cluster_size": 1,
@@ -7907,6 +8551,20 @@
       "resolution": "claim",
       "status": "NO-GO",
       "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TRANSPORT-SPLITTING-FIELD-NOGO-001",
+      "cluster": "BOOK_02 \u00a702.13.h transport splitting field: discriminant obstruction",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -7935,6 +8593,20 @@
       "resolution": "claim",
       "status": "CERT-CLOSED",
       "support": 2,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
+      "claim_id": "D0-TYPED-DETECTOR-PRIMITIVE-EXHAUSTION-001",
+      "cluster": "BOOK_00/01 \u00a7typed detector primitive capability profile exhaustion",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
       "support_source": "proxy",
       "where": ""
     },
@@ -8639,6 +9311,20 @@
       "where": ""
     },
     {
+      "claim_id": "D0-YUKAWA-QUALITATIVE-SELECTOR-NOGO-001",
+      "cluster": "BOOK_04 \u00a704.11 Yukawa qualitative-profile selector no-go",
+      "cluster_size": 1,
+      "fragility": 0.7,
+      "kind": "SUPPORTED",
+      "load": 2,
+      "pillar": 6,
+      "resolution": "claim",
+      "status": "NO-GO",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
+    },
+    {
       "claim_id": "D0-YUKAWA-SHELL-OVERLAP-MATRIX-001",
       "cluster": "BOOK_04 \u00a704.10",
       "cluster_size": 5,
@@ -8651,6 +9337,20 @@
       "support": 2,
       "support_source": "proxy",
       "where": "BOOK_04 \u00a704.10"
+    },
+    {
+      "claim_id": "D0-YUKAWA-SPECTRAL-FIBER-LADDER-001",
+      "cluster": "BOOK_04 \u00a704.11 Yukawa selection ladder: qualitative/spectral/labeled fibers",
+      "cluster_size": 1,
+      "fragility": 0.0,
+      "kind": "SUPPORTED",
+      "load": 0,
+      "pillar": 0,
+      "resolution": "claim",
+      "status": "CORE-FORMALIZED",
+      "support": 3,
+      "support_source": "proxy",
+      "where": ""
     },
     {
       "claim_id": "D0-Z2-SPINOR-COVER-001",
@@ -8754,7 +9454,7 @@
   "summary": {
     "FRAGILE-JOINT": 61,
     "LEAF": 156,
-    "PILLAR": 157,
-    "SUPPORTED": 251
+    "PILLAR": 164,
+    "SUPPORTED": 294
   }
 }

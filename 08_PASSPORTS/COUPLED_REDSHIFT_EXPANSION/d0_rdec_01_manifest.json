@@ -1,0 +1,31 @@
+{
+  "protocol_id": "D0-RDEC-01",
+  "status": "READY",
+  "prospective_preregistration": false,
+  "sample_data": false,
+  "alpha": 0.001,
+  "direct_drift_verdict": {
+    "local_path": "08_PASSPORTS/REDSHIFT_DRIFT/d0_rd_01_verdict.json",
+    "sha256": "09d6a4f5cce9bcbf2cde0f790dc34cdffe4345a168a3b0851a28c542f88feaf1"
+  },
+  "desi_dr2_radial_bao": {
+    "dataset_id": "DESI_DR2_GAUSSIAN_BAO_ALL_GCcomb",
+    "source_documentation_url": "https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html",
+    "mean_local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/desi_bao/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "covariance_local_path": "08_PASSPORTS/_EXTERNAL_DATA_CACHE/desi_bao/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "mean_sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "covariance_sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+  },
+  "electron_action_section": {
+    "formula": "tau_e=h/(38*m_e*c^2)",
+    "h_J_s_exact": 6.62607015e-34,
+    "c_m_per_s_exact": 299792458.0,
+    "electron_mass_kg_codata_2022": 9.1093837139e-31,
+    "electron_mass_source_url": "https://physics.nist.gov/cgi-bin/cuu/Value?me"
+  },
+  "primary_model": "DH_over_rd=C/(1+z)",
+  "fitted_primary_parameters": ["C"],
+  "forbidden_primary_refits": ["phi", "rho", "exponent", "redshift bins", "covariance"],
+  "dark_response_representation_supplied": false
+}
+

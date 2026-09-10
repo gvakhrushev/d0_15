@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "exact_scalar_checks": 89,
+  "repeated_record_controls": [
+    {
+      "steps": 1,
+      "joint_dimension": 4,
+      "global_orthogonal": true,
+      "local_contrast": "(2 delta)^1"
+    },
+    {
+      "steps": 2,
+      "joint_dimension": 8,
+      "global_orthogonal": true,
+      "local_contrast": "(2 delta)^2"
+    },
+    {
+      "steps": 3,
+      "joint_dimension": 16,
+      "global_orthogonal": true,
+      "local_contrast": "(2 delta)^3"
+    },
+    {
+      "steps": 4,
+      "joint_dimension": 32,
+      "global_orthogonal": true,
+      "local_contrast": "(2 delta)^4"
+    },
+    {
+      "steps": 5,
+      "joint_dimension": 64,
+      "global_orthogonal": true,
+      "local_contrast": "(2 delta)^5"
+    }
+  ],
+  "scope": "Complex input, exact polynomial reduction, full retained archive; dimension is sufficient, not minimal"
+}

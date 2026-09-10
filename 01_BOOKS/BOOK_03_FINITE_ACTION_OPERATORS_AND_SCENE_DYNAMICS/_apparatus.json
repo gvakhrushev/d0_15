@@ -9,7 +9,7 @@
   "b03-8": "forcing: GOLDEN DEF II.3.1, BOOK-II-MECHANISM",
   "b03-9": "forcing: GOLDEN THE 4.1.2, BOOK-II-MECHANISM",
   "b03-10": "forcing: GOLDEN THE 4.1.2, BOOK-II-MECHANISM; completeness ⊥-argument",
-  "b03-11": "forcing: GOLDEN REM II.3.A.1, BOOK-II-MECHANISM",
+  "b03-11": "Historical source: GOLDEN REM II.3.A.1, BOOK-II-MECHANISM. The scalar U(1) packaging is corrected for noncommutative Q8 memory by D0/Representation/OrderMemoryReadout.lean; the existing golden-gate readout is computed in D0/Representation/GoldenOrderInterferometer.lean. These built finite owners preserve the representation/apparatus boundary; see _TASKS_ORDER_MEMORY_20260906/README.md.",
   "b03-12": "open obligation — cert obligation open",
   "b03-13": "forcing: GOLDEN DEF II.3.APPX8.2.1, BOOK-II-MECHANISM",
   "b03-14": "forcing: GOLDEN THE II.3.APPX8.2.1a, BOOK-II-MECHANISM",

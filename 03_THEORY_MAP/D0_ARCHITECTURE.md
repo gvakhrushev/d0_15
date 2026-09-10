@@ -14,8 +14,8 @@ rest use the conservative proxy.
 | shape | count | reading |
 |---|---:|---|
 | **FRAGILE JOINT** (L≥5, m≤1) | 61 | carries weight on ONE route — **the value-creation queue** |
-| **PILLAR** (L≥5, m≥2) | 157 | load-bearing and multiply supported — survives a kill |
-| SUPPORTED (L<5, m≥2) | 251 | redundantly established but little rests on it |
+| **PILLAR** (L≥5, m≥2) | 164 | load-bearing and multiply supported — survives a kill |
+| SUPPORTED (L<5, m≥2) | 294 | redundantly established but little rests on it |
 | LEAF (L<5, m≤1) | 156 | decoration, however well proved |
 
 ---
@@ -65,6 +65,12 @@ these; the corpus's antifragility is exactly this column being non-empty.
 | claim | load | support | pillar | status |
 |---|---:|---:|---:|---:|
 | `D0-TOWER-STOP-NOEXT-001` | 69 | 4 | 276 | PROOF-TARGET |
+| `D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001` | 83 | 3 | 249 | CORE-FORMALIZED |
+| `D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001` | 83 | 3 | 249 | CORE-FORMALIZED |
+| `D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001` | 83 | 3 | 249 | PASSPORT-CLOSED |
+| `D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001` | 83 | 3 | 249 | NO-GO |
+| `D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001` | 83 | 3 | 249 | NO-GO |
+| `D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001` | 83 | 3 | 249 | CORE-FORMALIZED |
 | `D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001` | 82 | 3 | 246 | CORE-FORMALIZED |
 | `D0-PROTON-001` | 69 | 3 | 207 | CORE-FORMALIZED |
 | `D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001` | 67 | 3 | 201 | CORE-FORMALIZED |
@@ -78,23 +84,17 @@ these; the corpus's antifragility is exactly this column being non-empty.
 | `D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001` | 59 | 3 | 177 | NO-GO |
 | `D0-ADLER-WEISS-INTERNAL-CONSTRUCTION-001` | 58 | 3 | 174 | CERT-CLOSED |
 | `D0-IM-COSMO-001` | 83 | 2 | 166 | CORE-FORMALIZED |
-| `D0-IM-COSMO-002` | 83 | 2 | 166 | CORE-FORMALIZED |
-| `D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001` | 82 | 2 | 164 | CERT-CLOSED |
-| `D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001` | 82 | 2 | 164 | NO-GO |
-| `D0-PHASON-PRESSURE-EOS-SCAFFOLD-001` | 82 | 2 | 164 | CERT-CLOSED |
-| `D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001` | 82 | 2 | 164 | CERT-CLOSED |
-| `D0-PHASON-WZ-KERNEL-ONLY-NOGO-001` | 82 | 2 | 164 | NO-GO |
-| *+137 more in D0_ARCHITECTURE.json* | | | | |
+| *+144 more in D0_ARCHITECTURE.json* | | | | |
 
 ---
 
 ## 3. Shape
 
-Conceptual edges: 1995 across 191 owning claims,
+Conceptual edges: 2088 across 191 owning claims,
 of which 190 are evidence-backed per-claim edges (each carrying a quoted reason); the rest are
 the coarse section-level prior, at which co-cited claims share a load value.
-Claims carrying load ≥ 1: 249 of 625.
-Mean support multiplicity: 1.73.
+Claims carrying load ≥ 1: 264 of 675.
+Mean support multiplicity: 1.81.
 
 A corpus of pillars over a narrow base is a pyramid; a corpus of fragile joints is a bush of
-single-thread stems. The ratio 157:61 is the number to move.
+single-thread stems. The ratio 164:61 is the number to move.
