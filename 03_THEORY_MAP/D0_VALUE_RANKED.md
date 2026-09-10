@@ -10,13 +10,13 @@ weight names the outside question it answers and cites a source
 Strength is the orthogonal axis — how well the claim is closed. Regenerate with
 `python tools/d0_value_model.py`; kept honest by `tools/check_value_ledger_sync.py`.*
 
-High-value cut (top quartile): **37.8**. Claims: 685.
+High-value cut (top quartile): **37.7**. Claims: 695.
 
 | quadrant | count | what it means |
 |---|---:|---|
 | **ATTACK QUEUE** | 6 | high value, not closed — **this is the work queue** |
-| **FRONT DOOR** | 164 | high value, closed — what the README and reading order must lead with |
-| BALLAST | 456 | closed but nothing rests on it — bottom of the registry |
+| **FRONT DOOR** | 169 | high value, closed — what the README and reading order must lead with |
+| BALLAST | 461 | closed but nothing rests on it — bottom of the registry |
 | DRIFT | 59 | low value, not closed — retirement candidates, not campaign targets |
 
 ---
@@ -44,7 +44,7 @@ Nothing outside this table belongs in an abstract.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
-| **78.4** | 100 | 38 | 0 | `D0-M1-PREDICATE-001` | CORE-FORMALIZED |
+| **79.2** | 100 | 44 | 0 | `D0-M1-PREDICATE-001` | CORE-FORMALIZED |
 | **74.4** | 100 | 0 | 16 | `D0-CASCADE-INSUFFICIENCY-CHAIN-001` | NO-GO |
 | **64.0** | 100 | 14 | 0 | `D0-PHI-HURWITZ-001` | CORE-FORMALIZED |
 | **60.4** | 100 | 140 | 0 | `D0-FOUND-001` | CORE-FORMALIZED |
@@ -64,12 +64,12 @@ Nothing outside this table belongs in an abstract.
 | **54.0** | 100 | 9 | 0 | `D0-POSTCORE-REPRESENTATION-EXTENSION-NOGO-001` | NO-GO |
 | **53.7** | 100 | 29 | 0 | `D0-TORUS-CORE13-GEOMETRY-001` | CORE-FORMALIZED |
 | **53.7** | 100 | 0 | 0 | `D0-LEPTON-BRANCH-SELECTOR-MAXIMALITY-NOGO-001` | NO-GO |
-| **52.6** | 100 | 10 | 1 | `D0-M1-CLASS-ADMISSIBILITY-001` | CORE-FORMALIZED |
+| **52.7** | 100 | 10 | 1 | `D0-M1-CLASS-ADMISSIBILITY-001` | CORE-FORMALIZED |
 | **52.6** | 70 | 5 | 2 | `D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001` | NO-GO |
 | **52.2** | 100 | 0 | 0 | `D0-DSIGMA-ROLE-CYCLE-CARRIER-CANONICAL-NOGO-001` | NO-GO |
 | **51.7** | 100 | 49 | 0 | `D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001` | CORE-FORMALIZED |
 | **51.6** | 100 | 6 | 2 | `D0-HIGGS-CONDENSATION-PRESENT-CORE-MAXIMALITY-NOGO-001` | NO-GO |
-| … | | | | *+139 more in the ledger CSV* | |
+| … | | | | *+144 more in the ledger CSV* | |
 
 ---
 
@@ -80,9 +80,6 @@ sorted to the bottom of the registry.
 
 | value | strength | carries | depth | claim | status |
 |---:|---:|---:|---:|---|---|
-| **37.7** | 55 | 1 | 1 | `D0-ARCHIVE-ENTROPY-001` | CERT-CLOSED |
-| **37.7** | 100 | 0 | 0 | `D0-PHASON-PRESSURE-EOS-SCAFFOLD-001` | CERT-CLOSED |
-| **37.7** | 100 | 0 | 0 | `D0-PAGE-CURVE-FINITE-RANK-OWNER-001` | CERT-CLOSED |
 | **37.6** | 100 | 0 | 2 | `D0-PMNS-SEAM-TOPOLOGY-001` | EMPIRICAL-PASSPORT |
 | **37.5** | 100 | 12 | 3 | `D0-GEOM-HEAT-TRACE-EH-PROXY-001` | CORE-FORMALIZED |
 | **37.5** | 100 | 9 | 2 | `D0-QUASICRYSTAL-PHENOMENOLOGY-OPERATOR-ORIGIN-001` | CORE-FORMALIZED |
@@ -95,7 +92,10 @@ sorted to the bottom of the registry.
 | **36.9** | 100 | 17 | 1 | `D0-CASCADE-FLOOR-SCALE-RATIO-001` | CORE-FORMALIZED |
 | **36.9** | 100 | 0 | 0 | `D0-VNEXT-33-SCENE-ANCHOR-NOGO-001` | CORE_BRIDGE_SPLIT |
 | **36.9** | 100 | 0 | 0 | `D0-SCENE-DIM-EVEN-FIBONACCI-FORCING-001` | CERT-CLOSED |
-| … | | | | *+441 more in the ledger CSV* | |
+| **36.7** | 100 | 2 | 5 | `D0-SECTOR-FIELD-INDEPENDENCE-001` | NO-GO |
+| **36.6** | 100 | 7 | 0 | `D0-ZONE-CURRENT-001` | CORE-FORMALIZED |
+| **36.6** | 100 | 7 | 0 | `D0-ZONE-NEUTRAL-ACTIVE-SPLIT-001` | CORE-FORMALIZED |
+| … | | | | *+446 more in the ledger CSV* | |
 
 ---
 

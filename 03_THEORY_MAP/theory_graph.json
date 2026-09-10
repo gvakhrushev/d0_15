@@ -4,9 +4,9 @@
     "09_LEAN_FORMALIZATION/docs/LEAN_ASSUMPTION_LEDGER.csv"
   ],
   "summary": {
-    "claims": 689,
+    "claims": 695,
     "release_status": {
-      "CORE-FORMALIZED": 262,
+      "CORE-FORMALIZED": 268,
       "CORE_BRIDGE_SPLIT": 17,
       "NO-GO": 105,
       "PROOF-TARGET": 60,
@@ -20,14 +20,14 @@
       "PASSPORT-CLOSED": 20
     },
     "lean_status": {
-      "LEAN_PROVED": 488,
+      "LEAN_PROVED": 494,
       "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS": 35,
       "PYTHON_CERTIFIED": 116,
       "DEPRECATED": 2,
       "OPEN": 48
     },
     "claim_type": {
-      "core": 265,
+      "core": 271,
       "bridge": 49,
       "no-go": 112,
       "frontier": 60,
@@ -35,9 +35,9 @@
       "deprecated": 3
     },
     "domain": {
-      "formal_core": 402,
+      "formal_core": 406,
       "smooth_geometry": 42,
-      "empirical_passport": 54,
+      "empirical_passport": 56,
       "gauge_bridge": 52,
       "frontier": 60,
       "rg": 7,
@@ -23028,6 +23028,145 @@
       "module_path": "09_LEAN_FORMALIZATION/D0/Bridge/LocalRaychaudhuriRepresentation.lean",
       "module_exists": true,
       "certs_exist": true
+    },
+    {
+      "id": "D0-VERIFIABILITY-CLASS-001",
+      "kind": "claim",
+      "claim_id": "D0-VERIFIABILITY-CLASS-001",
+      "type": "core",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
+      "book": "BOOK_00/01",
+      "section": "0.3.1 / 01.6.0 verifiable theory versus unverifiable story",
+      "lean_module": "D0.Foundation.VerifiabilityNecessity",
+      "lean_theorem": "operationally_verifiable_or_unverifiable_story;operationally_verifiable_not_story;protocolTheoryVerification;canonicalProtocol_verifiable",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-09-10 VERIFIABILITY CLASS] Defines an empirical theory as operationally verifiable exactly when a correct protocol represents its canonical observational quotient; the complementary class is an unverifiable story. The split is exhaustive and exclusive, and a concrete Boolean two-line protocol proves non-vacuity. State may already be an observational quotient, so microscopic distinctions outside the supplied tests are not asserted. External physical realization and causal independence of line implementations remain explicit application obligations.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "module:D0.Foundation.VerifiabilityNecessity",
+      "kind": "lean_module",
+      "label": "D0.Foundation.VerifiabilityNecessity",
+      "path": "09_LEAN_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "exists": true
+    },
+    {
+      "id": "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
+      "kind": "claim",
+      "claim_id": "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/01",
+      "section": "0.3.1 / 01.6.0 verifiability forces distinction retention and repeated comparison",
+      "lean_module": "D0.Foundation.VerifiabilityNecessity",
+      "lean_theorem": "record_injective;verification_lines_agree;protocol_verifiability_forces_functional_tuple;verifiability_forces_functional_tuple;verificationRecordRelation_iff_eq;verificationRecordConnectivity_iff_eq",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-09-10 FUNCTIONAL TUPLE NECESSITY] From one verification contract Lean derives a nontrivial distinction carrier, injective persistent recording, a correct comparison, two distinct registered verification lines and agreement across lines/catalogues. If two distinct states shared one record, comparison of that record would be forced to return both same and different. On the verified carrier, the equivalence closure of record equality is exactly state equality, strengthening D0-INFORMATION-CONNECTIVITY-001 without identifying an external physical substrate. The tuple counts necessary functions, not hardware boxes.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001",
+      "kind": "claim",
+      "claim_id": "D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/01",
+      "section": "0.3.1 / 01.6.0 operational MDL minimality modulo role renaming",
+      "lean_module": "D0.Foundation.VerifiabilityNecessity",
+      "lean_theorem": "semanticImage_eq_univ_of_complete;semanticCost_eq_three_of_complete;canonicalRoles_nameMinimal;same_functions_different_language_equivalent;redundantRoles_complete;redundantRole_removed_still_complete;redundantRoles_not_nameMinimal;operational_mdl_role_minimality",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-09-10 OPERATIONAL MDL] FunctionalRole is the derived semantic carrier distinction/retention/comparison. Every complete role language has semantic image equal to the full three-element carrier and therefore semantic cost three. The canonical language is deletion-minimal. Any bijective renaming has the same semantic image, while an explicit four-name language duplicates comparison; deleting the duplicate preserves completeness, so the redundant presentation is rejected. This is language-invariant role MDL, not a claim that three separate physical components are required.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-M1-AS-VERIFIABILITY-NECESSITY-001",
+      "kind": "claim",
+      "claim_id": "D0-M1-AS-VERIFIABILITY-NECESSITY-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/01",
+      "section": "0.3.1 / 01.6.0 class M1 derived from public verification correctness",
+      "lean_module": "D0.Foundation.VerifiabilityNecessity",
+      "lean_theorem": "m1_as_verifiability_necessity;verifiableLineEmbedding;all_lines_M1_iff_not_catalogue_outsourced;privileged_catalogue_can_distinguish;privileged_catalogue_is_outcome_affecting;privileged_catalogue_not_M1;necessary_role_outsourced_loses_verifiability",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-09-10 M1 NECESSITY] If every registered line returns the same checkable difference truth for every catalogue value, catalogue invariance follows by equality through that common truth; M1ClassAdmissible is therefore derived rather than added to the protocol. All verified lines embed injectively into the class-M1 carrier. Conversely an explicit comparator that distinguishes under catalogue=true but fails under catalogue=false is outcome-affecting, not class-M1 and cannot satisfy verification. This strengthens D0-M1-CLASS-ADMISSIBILITY-001, D0-DETECTOR-M1-CLASS-REPRESENTATION-001 and D0-CONCRETE-PHYSICAL-DETECTOR-REPRESENTATION-001 at their upstream verification layer while preserving external representation obligations.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001",
+      "kind": "claim",
+      "claim_id": "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001",
+      "type": "core",
+      "domain": "empirical_passport",
+      "scope_guard": "Passport or empirical interface row; not a D0-core theorem without external data discipline.",
+      "book": "BOOK_00/01",
+      "section": "0.3.1 / 01.6.0 regress closure and empirical factorization through verification",
+      "lean_module": "D0.Foundation.VerifiabilityNecessity",
+      "lean_theorem": "operational_signature_injective;operationalEmpiricalQuotientEquivState;verifiedTheorySignatureEmbedding;m1_regress_closure_via_verifiability;removing_distinction_breaks_verification;removing_retention_breaks_verification;removing_comparison_breaks_verification;removing_second_line_breaks_verification;verifiability_necessity_controls",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-09-10 REGRESS CLOSURE] M1 and the functional tuple are both consequences of the same verification contract, so their use does not start a second M1 justification regress. Full operational signatures are injective; the canonical empirical quotient is equivalent to the verified state carrier; every represented theory embeds into its complete experimental signature layer. This composes D0-VERIFIABILITY-CLASS-001, D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001, D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001 and D0-M1-AS-VERIFIABILITY-NECESSITY-001. Four deletion controls independently remove distinction, retention, comparison or the second line and each destroys verification; the privileged-catalogue control destroys it as well. Exact scope is operational empirical description, not an ontological TOE theorem.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "module_exists": true,
+      "certs_exist": true
+    },
+    {
+      "id": "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001",
+      "kind": "claim",
+      "claim_id": "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001",
+      "type": "core",
+      "domain": "formal_core",
+      "scope_guard": "Lean-owned finite/formal D0 core statement.",
+      "book": "BOOK_00/01/06",
+      "section": "0.3.1 / 01.6.0 / 06.24 verified line identity requires a provenance archive",
+      "lean_module": "D0.Foundation.VerifiabilityNecessity",
+      "lean_theorem": "verificationLineOutcome_eq;verified_lines_collapse_in_outcome_layer;archivedVerificationLine_injective;provenance_memory_injective_of_joint_injective;provenance_memory_card_lower_bound;unit_provenance_memory_insufficient;independent_verification_forces_provenance_archive",
+      "lean_status": "LEAN_PROVED",
+      "uses_bridge_assumptions": false,
+      "assumption_ids": [],
+      "cert": "",
+      "python_cert": [],
+      "status": "CORE-FORMALIZED",
+      "notes": "[MINT 2026-09-10 PROVENANCE ARCHIVE NECESSITY] Independent verification creates two distinct registered lines that must return the same public truth. Lean therefore proves the bare outcome-table map is non-injective: detector results alone erase which line produced them. Pairing the outcome with line provenance is injective. More strongly, for any auxiliary memory, if the joint outcome-memory representation is injective then the memory map itself is injective; on finite carriers its cardinality is at least the number of lines, while a one-value archive fails. This gives a structural reason history/provenance belongs outside the primitive detector layer of D0-DETECTOR-M1-CLASS-REPRESENTATION-001 and cannot be discarded. It is an internal formal capacity theorem, not a physical medium claim.",
+      "module_path": "09_LEAN_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "module_exists": true,
+      "certs_exist": true
     }
   ],
   "edges": [
@@ -32634,6 +32773,66 @@
     {
       "source": "D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001",
       "target": "module:D0.Bridge.LocalRaychaudhuriRepresentation",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VERIFIABILITY-CLASS-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VERIFIABILITY-CLASS-001",
+      "target": "module:D0.Foundation.VerifiabilityNecessity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
+      "target": "module:D0.Foundation.VerifiabilityNecessity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001",
+      "target": "module:D0.Foundation.VerifiabilityNecessity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-M1-AS-VERIFIABILITY-NECESSITY-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-M1-AS-VERIFIABILITY-NECESSITY-001",
+      "target": "module:D0.Foundation.VerifiabilityNecessity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001",
+      "target": "domain:empirical_passport",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001",
+      "target": "module:D0.Foundation.VerifiabilityNecessity",
+      "kind": "implemented_in"
+    },
+    {
+      "source": "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001",
+      "target": "domain:formal_core",
+      "kind": "semantic_domain"
+    },
+    {
+      "source": "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001",
+      "target": "module:D0.Foundation.VerifiabilityNecessity",
       "kind": "implemented_in"
     }
   ]

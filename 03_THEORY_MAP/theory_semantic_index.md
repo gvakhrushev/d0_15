@@ -8,7 +8,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - `BRIDGE-ASSUMPTIONS-EXPLICIT`: 30
 - `BRIDGE-CALIBRATION`: 3
 - `CERT-CLOSED`: 169
-- `CORE-FORMALIZED`: 262
+- `CORE-FORMALIZED`: 268
 - `CORE_BRIDGE_SPLIT`: 17
 - `DEPRECATED`: 2
 - `EMPIRICAL-PASSPORT`: 13
@@ -22,7 +22,7 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 
 - `bridge`: 49
 - `certificate`: 200
-- `core`: 265
+- `core`: 271
 - `deprecated`: 3
 - `frontier`: 60
 - `no-go`: 112
@@ -30,9 +30,9 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 ## Domain counts
 
 - `cosmology`: 56
-- `empirical_passport`: 54
+- `empirical_passport`: 56
 - `external_background`: 1
-- `formal_core`: 402
+- `formal_core`: 406
 - `frontier`: 60
 - `gauge_bridge`: 52
 - `interpretation_spine`: 1
@@ -1203,6 +1203,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
 - notes: [MINT 2026-08-25 BREAKTHROUGH GRAMMAR COMPLETENESS] Discharges the earlier semantic owner standing above D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001: why the repair grammar has exactly three observational kinds. The front premise is independent REPEATED detection = two independent loops (detectionBudget=2). A repair datum is characterised by its order-arity over the supplied loops: arity 0 = raw reading, 1 = order within one loop, 2 = joint order of the two loops; RepairArity b := Fin (b+1). repair_arity_count proves card = b+1 for EVERY budget b (not a fitted value); quotient_card_eq_budget_succ and detection_budget_forces_three give 3 = detectionBudget+1. repairArityEquivDatumKind is an explicit bijection RepairArity 2 ~= DatumKind and quotientEquivRepairArity composes it with the owned repairQuotientEquivDatumKind, so RepairObservationQuotient ~= order-arity space of the two-loop budget. carried_floor_arities proves comparison/one-loop/order-memory realise arities 0/1/2 (model non-vacuous). CONTROLS (falsifiable): repair_arity_count_single_detection = 2 (one loop caps at two -- explains the historic propositional two-cap; the SECOND independent detection lifts two to three), repair_arity_count_triple_detection = 4; no_extra_arity_beyond_budget proves a (b+2)-th arity class cannot inject into RepairArity b (pigeonhole). The M1 no-mandatory-fresh-loop reductio is carried from D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001 (external_not_resolved_by_current_repairs). NO target 3/9/11/13 enters any premise; 3 is the computed detectionBudget+1. HONEST RESIDUAL (named, non-vacuous): the single remaining semantic input is the modelling premise that a repair datum equals its order-arity over the independent detection loops, replacing the previously unexplained three-constructor DatumKind. Clean Lean, no sorry/new axiom/bridge. Certificate checks count-from-budget, floor arities, budget controls, pigeonhole cap and a wrong-budget mutation. [ORDER-ARITY PREMISE DISCHARGED 2026-08-25] D0-CONCRETE-INDEPENDENT-DETECTION-REPAIR-SEMANTICS-001 derives arity as the cardinality of the extensional history-support subset of the two actual binary InputSide positions. The previous residual modelling premise is removed for the concrete Observation system.
 
+### D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_00/01`
+- module: `D0.Foundation.VerifiabilityNecessity`
+- theorem: `operational_signature_injective;operationalEmpiricalQuotientEquivState;verifiedTheorySignatureEmbedding;m1_regress_closure_via_verifiability;removing_distinction_breaks_verification;removing_retention_breaks_verification;removing_comparison_breaks_verification;removing_second_line_breaks_verification;verifiability_necessity_controls`
+- cert: `none`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: [MINT 2026-09-10 REGRESS CLOSURE] M1 and the functional tuple are both consequences of the same verification contract, so their use does not start a second M1 justification regress. Full operational signatures are injective; the canonical empirical quotient is equivalent to the verified state carrier; every represented theory embeds into its complete experimental signature layer. This composes D0-VERIFIABILITY-CLASS-001, D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001, D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001 and D0-M1-AS-VERIFIABILITY-NECESSITY-001. Four deletion controls independently remove distinction, retention, comparison or the second line and each destroys verification; the privileged-catalogue control destroys it as well. Exact scope is operational empirical description, not an ontological TOE theorem.
+
 ### D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001
 
 - type: `core`
@@ -1306,6 +1319,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
 - notes: [MINT 2026-08-22 BREAKTHROUGH SYNTHESIS] Resolves the mathematical half of the T33 residual primitive PRIM-GENERATION-ROOT-LABELING. The three transport roots are distinct reals, hence linearly ordered: there is a transport root frame with StrictMono root, and any strictly monotone enumeration g of the same three-element root set equals it (Finset.orderEmbOfFin_unique on the card-3 root finset). So the S3 labeling freedom of the Yukawa selection ladder is NOT free -- the reals canonically order the roots (unique of 6 relabelings). Combined with orderedEig_injective, the labeled coefficient map is injective on this canonical frame. NET: the S3 residue of D0-YUKAWA-SPECTRAL-FIBER-LADDER-001 collapses to the identity using only the intrinsic real order; the only genuinely external residue is the order-preserving identification of the ordered roots with the physical generations e<mu<tau (a single monotone bridge, the already-flagged winding order W(e)<W(mu)<W(tau) / EFT-IR functor), NOT a full S3 choice, and the external empirical target spectrum. HONEST SCOPE: this does not select the numerical Yukawa coefficients (the target masses stay external) and does not identify which ordered root is which physical generation; it removes the combinatorial S3 ambiguity entirely and downgrades the missing primitive to a monotone identification. Clean axioms propext/Classical.choice/Quot.sound, 0 sorry, no bridge. Certificate checks three real roots, a unique monotone enumeration (1 of 6), and controls (repeated-root frame has no strict order; a swap breaks monotonicity).
+
+### D0-VERIFIABILITY-CLASS-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `empirical_passport`
+- book: `BOOK_00/01`
+- module: `D0.Foundation.VerifiabilityNecessity`
+- theorem: `operationally_verifiable_or_unverifiable_story;operationally_verifiable_not_story;protocolTheoryVerification;canonicalProtocol_verifiable`
+- cert: `none`
+- assumptions: `none`
+- scope: Passport or empirical interface row; not a D0-core theorem without external data discipline.
+- notes: [MINT 2026-09-10 VERIFIABILITY CLASS] Defines an empirical theory as operationally verifiable exactly when a correct protocol represents its canonical observational quotient; the complementary class is an unverifiable story. The split is exhaustive and exclusive, and a concrete Boolean two-line protocol proves non-vacuity. State may already be an observational quotient, so microscopic distinctions outside the supplied tests are not asserted. External physical realization and causal independence of line implementations remain explicit application obligations.
 
 ### D0-AMS-HEAVY-NUCLEI-PASSPORT-001
 
@@ -4732,6 +4758,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter21 cert->Lean] Machine-checked in D0.Topology.WitnessHalting (witness_halting_cert): the orbit average E=(1/8) Sum_k P_k diag(1..8) P_k^T over the 8 cyclic shifts equals the scalar (9/2).I (emission 36/8=9/2), and P_k E P_k^T=E for every shift (native_decide on 8x8 Q); |Omega8|=8 reuses D0.Core.FiniteTypes.card_omega8. The 'topological halting quotient' physical reading stays cert. [was: Mobius witness halting cert]
 
+### D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01/06`
+- module: `D0.Foundation.VerifiabilityNecessity`
+- theorem: `verificationLineOutcome_eq;verified_lines_collapse_in_outcome_layer;archivedVerificationLine_injective;provenance_memory_injective_of_joint_injective;provenance_memory_card_lower_bound;unit_provenance_memory_insufficient;independent_verification_forces_provenance_archive`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [MINT 2026-09-10 PROVENANCE ARCHIVE NECESSITY] Independent verification creates two distinct registered lines that must return the same public truth. Lean therefore proves the bare outcome-table map is non-injective: detector results alone erase which line produced them. Pairing the outcome with line provenance is injective. More strongly, for any auxiliary memory, if the joint outcome-memory representation is injective then the memory map itself is injective; on finite carriers its cardinality is at least the number of lines, while a one-value archive fails. This gives a structural reason history/provenance belongs outside the primitive detector layer of D0-DETECTOR-M1-CLASS-REPRESENTATION-001 and cannot be discarded. It is an internal formal capacity theorem, not a physical medium claim.
+
 ### D0-INFORMATION-CONNECTIVITY-001
 
 - type: `core`
@@ -4888,6 +4927,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: A1 R3 THE. phi^n - L_n = (-1)^{n+1} phi^{-n}; defect sign = (-1)^{n+1} (positive iff n odd). Vieta + phi>0 over R (golden ratio).
 
+### D0-M1-AS-VERIFIABILITY-NECESSITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01`
+- module: `D0.Foundation.VerifiabilityNecessity`
+- theorem: `m1_as_verifiability_necessity;verifiableLineEmbedding;all_lines_M1_iff_not_catalogue_outsourced;privileged_catalogue_can_distinguish;privileged_catalogue_is_outcome_affecting;privileged_catalogue_not_M1;necessary_role_outsourced_loses_verifiability`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [MINT 2026-09-10 M1 NECESSITY] If every registered line returns the same checkable difference truth for every catalogue value, catalogue invariance follows by equality through that common truth; M1ClassAdmissible is therefore derived rather than added to the protocol. All verified lines embed injectively into the class-M1 carrier. Conversely an explicit comparator that distinguishes under catalogue=true but fails under catalogue=false is outcome-affecting, not class-M1 and cannot satisfy verification. This strengthens D0-M1-CLASS-ADMISSIBILITY-001, D0-DETECTOR-M1-CLASS-REPRESENTATION-001 and D0-CONCRETE-PHYSICAL-DETECTOR-REPRESENTATION-001 at their upstream verification layer while preserving external representation obligations.
+
 ### D0-M1-CLASS-ADMISSIBILITY-001
 
 - type: `core`
@@ -5043,6 +5095,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [Iter15] Closes the SS01.7.1C proof-target (the explicit Omega8-orientation -> Z(Q8) map). Decidable in exact Z-quaternions over Q8={+-1,+-i,+-j,+-k}: Z(Q8)={+-1} (center=the +- orientation bit), every commutator [a,b] in {+-1} with [i,j]=-1 realizing it, i non-central; the abelianization Q8/[Q8,Q8] is Klein-four (g^2 in {+-1}) so Phi(Q8)=[Q8,Q8] too => [Q8,Q8]=Z(Q8)=Phi(Q8)={+-1} (one Z2). Lean D0.Foundation.Omega8Center (omega8_center_collapse, native_decide), cert vp_omega8_center_collapse.py (can-FAIL; control i*j=k!=-k=j*i). HONEST: Omega8~Q8 itself owned by Dedekind-minimality SS01.7.1A; this discharges only the orientation-bit<->center/holonomy-parity map.
+
+### D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01`
+- module: `D0.Foundation.VerifiabilityNecessity`
+- theorem: `semanticImage_eq_univ_of_complete;semanticCost_eq_three_of_complete;canonicalRoles_nameMinimal;same_functions_different_language_equivalent;redundantRoles_complete;redundantRole_removed_still_complete;redundantRoles_not_nameMinimal;operational_mdl_role_minimality`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [MINT 2026-09-10 OPERATIONAL MDL] FunctionalRole is the derived semantic carrier distinction/retention/comparison. Every complete role language has semantic image equal to the full three-element carrier and therefore semantic cost three. The canonical language is deletion-minimal. Any bijective renaming has the same semantic image, while an explicit four-name language duplicates comparison; deleting the duplicate preserves completeness, so the redundant presentation is rejected. This is language-invariant role MDL, not a claim that three separate physical components are required.
 
 ### D0-OPERATOR-EDGE-STIFFNESS-ORIGIN-001
 
@@ -5797,6 +5862,19 @@ Purpose: make bridge boundaries, risky physical domains, Lean anchors, certifica
 - assumptions: `none`
 - scope: Lean-owned finite/formal D0 core statement.
 - notes: [MINT 2026-08-24 BREAKTHROUGH TYPED EXHAUSTION] Classifies primitive capability profiles inside the FULL three-capability ambient (membership,value,history), keeping history as a real negative control rather than declaring a two-constructor answer. DetectorPrimitiveProfile := primitive GenComparison 3 vectors with history coordinate false. Lean proves primitive_historyBlind_classification: every such profile is exactly atomicOf 0 (membership) or atomicOf 1 (value). It constructs an explicit equivalence DetectorPrimitiveProfile ~= Fin 2 and proves Nat.card=2; membership/value realize the two distinct survivors. For every concrete comparison factoring through current data, primitive capabilityVector is membership-only or value-only. History equality remains primitive in the ambient but is excluded from the detector profile. Through T45, typed_detector_seals_zone13 proves the exact two-profile count seals the port-power scene bound <=13 ON THE TYPED DETECTOR LAYER. NET: detector-layer capability exhaustion is fully Lean-closed; the only remaining frontier is representing physical/M1-admissible comparisons in this typed layer via a class-level M1 bridge, not the capability classification itself. Clean axioms propext/Classical.choice/Quot.sound, 0 sorry, no bridge. Certificate exhausts all 8 three-axis profiles, confirms exactly two history-blind atoms, history negative control, cap2 seal and cap3/zone17 reopening. [REPRESENTATION CLOSED 2026-08-24] D0-DETECTOR-M1-CLASS-REPRESENTATION-001 now embeds every admissible object of any supplied PhysicalDetectorRepresentation into this typed layer and applies the two-profile exhaustion. The foundational representation interface exists; concrete external systems must instantiate its explicit fields.
+
+### D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001
+
+- type: `core`
+- release_status: `CORE-FORMALIZED`
+- domain: `formal_core`
+- book: `BOOK_00/01`
+- module: `D0.Foundation.VerifiabilityNecessity`
+- theorem: `record_injective;verification_lines_agree;protocol_verifiability_forces_functional_tuple;verifiability_forces_functional_tuple;verificationRecordRelation_iff_eq;verificationRecordConnectivity_iff_eq`
+- cert: `none`
+- assumptions: `none`
+- scope: Lean-owned finite/formal D0 core statement.
+- notes: [MINT 2026-09-10 FUNCTIONAL TUPLE NECESSITY] From one verification contract Lean derives a nontrivial distinction carrier, injective persistent recording, a correct comparison, two distinct registered verification lines and agreement across lines/catalogues. If two distinct states shared one record, comparison of that record would be forced to return both same and different. On the verified carrier, the equivalence closure of record equality is exactly state equality, strengthening D0-INFORMATION-CONNECTIVITY-001 without identifying an external physical substrate. The tuple counts necessary functions, not hardware boxes.
 
 ### D0-VIETA-GALOIS-ABCD-001
 

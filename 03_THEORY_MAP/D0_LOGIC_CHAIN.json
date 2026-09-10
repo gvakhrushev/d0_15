@@ -3841,6 +3841,21 @@
       ],
       "rests_on": 37
     },
+    "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001": {
+      "block_hash": "165211b4b5a0ba2019067198d0a368843250197d67e6876b6540b6a5bb43e19a",
+      "carries": 0,
+      "claim_id": "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001",
+      "content_hash": "cf54ebe65b7f2c28028b0bfd046eb019ff92a516606e5021fbfe367110e08ddf",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.VerifiabilityNecessity"
+      ],
+      "parents": [
+        "D0-INFORMATION-CONNECTIVITY-001"
+      ],
+      "rests_on": 2
+    },
     "D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001": {
       "block_hash": "db960d0cc8b9ec81f6648b206b3ec8e9a61a1edc53165368af853d1a7b3e33ee",
       "carries": 0,
@@ -3858,7 +3873,7 @@
     },
     "D0-INFORMATION-CONNECTIVITY-001": {
       "block_hash": "87cdf584ba98e602b75dc940bb74286729d27478591615eed0f55a4b00e278c1",
-      "carries": 7,
+      "carries": 13,
       "claim_id": "D0-INFORMATION-CONNECTIVITY-001",
       "content_hash": "b990f49d14dafc3042467b71d249f33d373d5295acd4691e5289c88e6f92f989",
       "depth": 1,
@@ -4313,6 +4328,21 @@
       ],
       "rests_on": 2
     },
+    "D0-M1-AS-VERIFIABILITY-NECESSITY-001": {
+      "block_hash": "165211b4b5a0ba2019067198d0a368843250197d67e6876b6540b6a5bb43e19a",
+      "carries": 0,
+      "claim_id": "D0-M1-AS-VERIFIABILITY-NECESSITY-001",
+      "content_hash": "cf54ebe65b7f2c28028b0bfd046eb019ff92a516606e5021fbfe367110e08ddf",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.VerifiabilityNecessity"
+      ],
+      "parents": [
+        "D0-INFORMATION-CONNECTIVITY-001"
+      ],
+      "rests_on": 2
+    },
     "D0-M1-CASCADE-SCENE-PARAMETRIC-NOGO-001": {
       "block_hash": "fa8810e0bb3c0c0834507db312c56f1ffde4f3802cd8cc15f7dbf5c95dc51a7f",
       "carries": 7,
@@ -4374,7 +4404,7 @@
     },
     "D0-M1-PREDICATE-001": {
       "block_hash": "1cfbe78be6202cecdabda3fbb38584ee03c8e0c723434726622f6e4b0ae5d0fa",
-      "carries": 38,
+      "carries": 44,
       "claim_id": "D0-M1-PREDICATE-001",
       "content_hash": "b57a7541300fd6bf8eed4f7528f2ee9ce1065837e908bb3b02330e254d4829f2",
       "depth": 0,
@@ -4384,6 +4414,21 @@
       ],
       "parents": [],
       "rests_on": 0
+    },
+    "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001": {
+      "block_hash": "165211b4b5a0ba2019067198d0a368843250197d67e6876b6540b6a5bb43e19a",
+      "carries": 0,
+      "claim_id": "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001",
+      "content_hash": "cf54ebe65b7f2c28028b0bfd046eb019ff92a516606e5021fbfe367110e08ddf",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.VerifiabilityNecessity"
+      ],
+      "parents": [
+        "D0-INFORMATION-CONNECTIVITY-001"
+      ],
+      "rests_on": 2
     },
     "D0-M1-REPAIR-OBSERVATIONAL-QUOTIENT-001": {
       "block_hash": "98eac02980e0fcf727857041b8924b64c9e51b1beaf8a1f0044ede60e55c887a",
@@ -4820,6 +4865,21 @@
       ],
       "parents": [],
       "rests_on": 0
+    },
+    "D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001": {
+      "block_hash": "165211b4b5a0ba2019067198d0a368843250197d67e6876b6540b6a5bb43e19a",
+      "carries": 0,
+      "claim_id": "D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001",
+      "content_hash": "cf54ebe65b7f2c28028b0bfd046eb019ff92a516606e5021fbfe367110e08ddf",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.VerifiabilityNecessity"
+      ],
+      "parents": [
+        "D0-INFORMATION-CONNECTIVITY-001"
+      ],
+      "rests_on": 2
     },
     "D0-OPERATOR-EDGE-STIFFNESS-ORIGIN-001": {
       "block_hash": "b7ec3d92274d8bbb59144ff4dca78585b3744c626332940d6314b086f337e6e4",
@@ -7390,6 +7450,36 @@
       ],
       "rests_on": 1
     },
+    "D0-VERIFIABILITY-CLASS-001": {
+      "block_hash": "165211b4b5a0ba2019067198d0a368843250197d67e6876b6540b6a5bb43e19a",
+      "carries": 0,
+      "claim_id": "D0-VERIFIABILITY-CLASS-001",
+      "content_hash": "cf54ebe65b7f2c28028b0bfd046eb019ff92a516606e5021fbfe367110e08ddf",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.VerifiabilityNecessity"
+      ],
+      "parents": [
+        "D0-INFORMATION-CONNECTIVITY-001"
+      ],
+      "rests_on": 2
+    },
+    "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001": {
+      "block_hash": "165211b4b5a0ba2019067198d0a368843250197d67e6876b6540b6a5bb43e19a",
+      "carries": 0,
+      "claim_id": "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
+      "content_hash": "cf54ebe65b7f2c28028b0bfd046eb019ff92a516606e5021fbfe367110e08ddf",
+      "depth": 2,
+      "genesis": false,
+      "modules": [
+        "D0.Foundation.VerifiabilityNecessity"
+      ],
+      "parents": [
+        "D0-INFORMATION-CONNECTIVITY-001"
+      ],
+      "rests_on": 2
+    },
     "D0-VIETA-GALOIS-ABCD-001": {
       "block_hash": "3e3f400558d2b1d95a2ce35dcdd32ba832a3ea8d47ebe7ea27542afd79f67333",
       "carries": 0,
@@ -8053,8 +8143,8 @@
     "09_LEAN_FORMALIZATION/D0/**/*.lean"
   ],
   "summary": {
-    "claims_chained": 543,
-    "claims_total": 689,
+    "claims_chained": 549,
+    "claims_total": 695,
     "claims_unchained": 146,
     "cycle_detected": false,
     "genesis_blocks": 226,

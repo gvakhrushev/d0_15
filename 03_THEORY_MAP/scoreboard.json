@@ -19,22 +19,22 @@
     }
   },
   "totals": {
-    "realized": 9217,
-    "track_fair_max": 11938,
-    "pct_strength": 77.2,
-    "core_realized": 7146,
-    "core_potential": 9800,
+    "realized": 9337,
+    "track_fair_max": 12058,
+    "pct_strength": 77.4,
+    "core_realized": 7266,
+    "core_potential": 9920,
     "core_headroom": 2654,
-    "n_claims": 689,
-    "n_active": 687,
+    "n_claims": 695,
+    "n_active": 693,
     "duplicates": [],
     "integrity_demotions": 0
   },
   "by_domain": {
     "formal_core": {
-      "n": 401,
-      "realized": 5959,
-      "max": 7142,
+      "n": 405,
+      "realized": 6039,
+      "max": 7222,
       "core_headroom": 1143
     },
     "smooth_geometry": {
@@ -44,9 +44,9 @@
       "core_headroom": 152
     },
     "empirical_passport": {
-      "n": 54,
-      "realized": 638,
-      "max": 791,
+      "n": 56,
+      "realized": 678,
+      "max": 831,
       "core_headroom": 144
     },
     "gauge_bridge": {
@@ -292,9 +292,9 @@
       "core_headroom": 0
     },
     "BOOK_00/01": {
-      "n": 17,
-      "realized": 266,
-      "max": 292,
+      "n": 22,
+      "realized": 366,
+      "max": 392,
       "core_headroom": 26
     },
     "BOOK_00/01/02/04/05/06": {
@@ -466,6 +466,12 @@
       "core_headroom": 0
     },
     "BOOK_02/04/07/08": {
+      "n": 1,
+      "realized": 20,
+      "max": 20,
+      "core_headroom": 0
+    },
+    "BOOK_00/01/06": {
       "n": 1,
       "realized": 20,
       "max": 20,
@@ -13999,12 +14005,96 @@
       "book": "BOOK_07/08",
       "leverage": 1,
       "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VERIFIABILITY-CLASS-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
+      "book": "BOOK_00/01",
+      "leverage": 5,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00/01",
+      "leverage": 5,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00/01",
+      "leverage": 5,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-M1-AS-VERIFIABILITY-NECESSITY-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00/01",
+      "leverage": 5,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "empirical_passport",
+      "book": "BOOK_00/01",
+      "leverage": 5,
+      "integrity_flag": null
+    },
+    {
+      "claim_id": "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001",
+      "track": "CORE",
+      "level": 5,
+      "level_name": "CORE_FORMALIZED",
+      "score": 20,
+      "ceiling": 20,
+      "release_status": "CORE-FORMALIZED",
+      "lean_status": "LEAN_PROVED",
+      "domain": "formal_core",
+      "book": "BOOK_00/01/06",
+      "leverage": 5,
+      "integrity_flag": null
     }
   ],
   "hygiene": {
-    "score": 96.4,
+    "score": 96.3,
     "budget": 100,
-    "penalty_total": 3.6,
+    "penalty_total": 3.7,
     "bonus_total": 0.0,
     "signals": [
       {
@@ -14049,8 +14139,8 @@
       },
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []
@@ -14099,8 +14189,8 @@
     "top_actions": [
       {
         "signal": "orphan_proof_targets",
-        "count": 36,
-        "points": -3.6,
+        "count": 37,
+        "points": -3.7,
         "cap": -10.0,
         "label": "PROOF-TARGET markers in book prose with no registry row",
         "evidence": []

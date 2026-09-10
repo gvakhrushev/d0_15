@@ -8,7 +8,7 @@ part of its statement. Open problems are collected at the end as named targets, 
 qualifications of the theorems.
 
 Verification: `cd 09_LEAN_FORMALIZATION && lake build D0.All` (green, 0 `sorry`,
-4509 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (663 claims) ·
+4558 jobs) · registry `09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` (695 claims) ·
 gate `tools/` (validate, sync, value ledger, certificates, score — all green).
 
 ---
@@ -225,6 +225,70 @@ controls membership/value admissible versus history rejected. The certificate ex
 `2^16` Boolean full-comparison tables on the reduced mirror and shows one-sided catalogues miss
 a same-current/different-history dependence that two-sided catalogues detect. The in-repo
 application obligation is therefore closed. `D0-CONCRETE-PHYSICAL-DETECTOR-REPRESENTATION-001`.
+
+**T53 (Verifiable theory versus unverifiable story — added 2026-09-10).** An empirical theory is
+`OperationallyVerifiable` when a correct protocol represents its canonical observational
+quotient; its exact complement is `UnverifiableStory`. The protocol compares persistent records
+of observational states, has at least two distinguishable states and two registered verification
+lines, and must return the same equality/difference truth for every catalogue value. Lean proves
+the partition exhaustive and exclusive and constructs a concrete non-vacuous Boolean instance.
+The states may already be observational equivalence classes: no claim is made that operational
+tests recover microscopic distinctions outside the chosen empirical interface.
+`D0-VERIFIABILITY-CLASS-001`.
+
+**T54 (Verifiability forces the functional tuple and strengthens T25 — added 2026-09-10).** From
+the verification contract Lean derives the three functions rather than postulating them:
+distinction exists; the record map is injective; comparison separates equal from unequal records;
+and two registered lines agree across all catalogue values. The retention proof is a reductio:
+if two distinct states shared one record, comparing that record with itself would have to return
+both `same` and `different`. On a verified carrier, record equality is therefore state equality,
+and the equivalence closure of the record relation adds no spurious identifications. This is the
+precise new link to T25: information connectivity remains record connectivity, while verification
+forces the record itself to preserve every distinction it claims to test.
+`D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001`.
+
+**T55 (Operational MDL role minimality — added 2026-09-10).** The semantic role carrier is the
+inductive three-element type `{distinction, retention, comparison}`. For an arbitrary vocabulary,
+operational cost is the cardinality of the semantic image of its active names. Lean proves every
+functionally complete vocabulary has that full image and cost exactly three; the canonical
+vocabulary is deletion-minimal; every bijective renaming has the same image. A four-name control
+duplicates `comparison`: deleting the duplicate preserves completeness, so it is not minimal.
+This proves minimality of functions under equal verification capability, not a claim that an
+apparatus must contain three separate hardware components.
+`D0-OPERATIONAL-MDL-ROLE-MINIMALITY-001`.
+
+**T56 (M1 is forced by public verifiability — added 2026-09-10).** For each registered verification
+line, correctness fixes its output to the same checkable truth for every catalogue. Equality
+through that truth proves `M1ClassAdmissible`; catalogue-independence is a conclusion, not an
+extra protocol axiom. Conversely, Lean constructs a comparator that distinguishes Boolean states
+when a privileged catalogue bit is `true` but fails when it is `false`: it is outcome-affecting,
+not class-M1, and cannot be verifiable. Every verified line embeds into the class-M1 admissible
+carrier. This is the upstream necessity theorem behind T50–T52; their physical representation and
+finite detector specialization remain separate, explicit application theorems. Once such a map is
+supplied, the result composes with T51, T46–T49 and T45 to send primitive verified comparisons to
+the membership/value profiles and then to the port-power bound.
+`D0-M1-AS-VERIFIABILITY-NECESSITY-001`.
+
+**T57 (Regress closure and empirical factorization — added 2026-09-10).** A verified protocol's
+full operational signature is injective, and its empirical quotient is equivalent to its verified
+state carrier. Any empirical theory supplied with such a representation therefore embeds into its
+complete catalogue/test/outcome signature layer. The capstone derives both the functional tuple
+and M1 from that single verification contract, so applying M1 to the discourse does not require a
+second catalogue-removal postulate. Four independent mutations remove distinction, retention,
+comparison or the second registered line; each makes verification impossible. The result is a
+universal property of operationally verifiable descriptions, not a theorem that every imagined
+ontology has a physical realization. `D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001`.
+
+**T58 (Independent verification forces a provenance archive — added 2026-09-10).** Distinct
+registered verification lines must return the same public truth. Lean therefore proves that the
+map from line identity to its complete catalogue/state outcome table is non-injective: the bare
+detector result necessarily forgets which independent line produced it. Adding the line as a
+provenance coordinate restores injectivity. The statement is stronger for an arbitrary auxiliary
+memory: if `(outcome,memory)` is injective, then `memory` itself must be injective because the
+outcome coordinate is constant across verified lines. For finite carriers this forces
+`card(lines) ≤ card(memory)`; a one-value archive is an explicit failing control. Thus repeated
+verification simultaneously requires agreement in the detector layer and preserved difference in
+the archive layer. `D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001`.
 
 **T26 (Sector field-independence — added 2026-08-21).** The single invariant `359 = |E|` is the
 *only* object the sectors share: their characteristic quadratic irrationals lie in three

@@ -6,7 +6,7 @@ the core is machine-checked in Lean; the frontier is a list of named targets.
 
 Repository: **[github.com/gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15)** ·
 Lean 4 (mathlib) + deterministic Python certificates · `lake build D0.All` green, 0
-`sorry`, 4509 jobs · full guard gate green.
+`sorry`, 4558 jobs · full guard gate green.
 
 **Start here — the one-page argument: [`D0_SYNTHESIS.md`](D0_SYNTHESIS.md).**
 **The results, stated exactly: [`D0_EXACT_RESULTS.md`](D0_EXACT_RESULTS.md)** — 52 theorems,
@@ -60,6 +60,20 @@ witness = the observation, axiom-free leg), while for a record-disconnected doma
 candidate value requires an external catalogue, and two record-disconnected observers can
 force agreement on nothing — a disconnected information domain and an external catalogue
 are the same thing (T25).
+
+**Verifiability below M1.** T53–T57 now derive the functional foundation that was previously
+only stated as motivation. A correct independently repeated comparison forces distinguishable
+alternatives, an injective persistent record and catalogue-invariant outcomes. If two distinct
+states leave one record, the same record must compare as both equal and unequal; if the result
+changes with a privileged catalogue, it is not independently verifiable. Thus class-level M1 is
+a theorem of the verification contract. Operational MDL then proves that every complete language
+has the same three-function semantic image `{distinction, retention, comparison}`; renaming changes
+nothing and a duplicated fourth role is removable. Four deletion controls and one privileged-
+catalogue control make every function load-bearing. Exact scope: operational empirical theories
+with a supplied verification representation; physical realization remains an explicit interface.
+The same proof forces an archive split: correct independent lines have identical outcome tables,
+so bare detector output cannot retain their identity; any faithful joint outcome/provenance code
+must carry an injective provenance memory, with capacity at least the number of lines (T58).
 
 **Geometry.** For any 3-zone scene the quotient cubic is `λ³ − e₂λ − 2e₃`, forcing
 signature (1,2); on K(9,11,13) the coefficients ARE the scene: `e₂ = 359 = |E|`,
@@ -279,14 +293,14 @@ frozen.**
 
 ```bash
 pip install -r requirements.txt
-python tools/validate_csv.py            # registry integrity (663 claims)
+python tools/validate_csv.py            # registry integrity (695 claims)
 python tools/d0_logic_chain.py          # derivation chain + block hashes
 python tools/d0_value_model.py          # value ledger + ranking
-python tools/d0_score.py --strict       # scoreboard (75.5%, 0 integrity demotions)
+python tools/d0_score.py --strict       # scoreboard (77.4%, 0 integrity demotions)
 ```
 
 ```bash
-cd 09_LEAN_FORMALIZATION && lake build D0.All   # 4509 jobs, 0 sorry
+cd 09_LEAN_FORMALIZATION && lake build D0.All   # 4558 jobs, 0 sorry
 python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
 ```
 
@@ -315,10 +329,10 @@ the point: nothing here hides behind vagueness.
 
 ## Registry, by the numbers
 
-663 claims — 470 `LEAN_PROVED` (+31 with named bridge assumptions), 111 python-certified,
-49 open, 2 deprecated; 251 core-formalized, 169 cert-closed, **104 no-go theorems** (97
-NO-GO + 7 NO_GO_PROVED), 62 proof-targets. Derivation chain: 522 of 663 chained, 226
-genesis blocks, max depth 10 — the structure is wide, not deep, because the results converge
+695 claims — 494 `LEAN_PROVED` (+35 with named bridge assumptions), 116 python-certified,
+48 open, 2 deprecated; 268 core-formalized, 169 cert-closed, **112 no-go theorems** (105
+NO-GO + 7 NO_GO_PROVED), 60 proof-targets. Derivation chain: 549 of 695 chained, 226
+genesis blocks, max depth 16 — the structure is wide, not deep, because the results converge
 on shared objects rather than stacking into a fragile tower. What each result is *worth* is
 ranked separately in the [value ledger](03_THEORY_MAP/D0_VALUE_RANKED.md).
 
