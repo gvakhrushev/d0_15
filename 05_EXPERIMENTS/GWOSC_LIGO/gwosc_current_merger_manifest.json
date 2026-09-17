@@ -1,0 +1,6 @@
+{
+  "dataset_id": "gwosc_ligo_merger_mass_defect",
+  "status": "SUPERSEDED",
+  "superseded_by": "05_EXPERIMENTS/GWOSC/gwosc_manifest.json",
+  "note": "Divergent duplicate retired. The single governing manifest for dataset_id gwosc_ligo_merger_mass_defect is 05_EXPERIMENTS/GWOSC/gwosc_manifest.json -- the only one the cert vp_ligo_merger_mass_defect_current_catalog.py actually reads. This file previously declared a divergent older schema (m1_source/m2_source/final_mass/radiated_energy) and a separate MISSING status for the same dataset_id, so the dataset had two conflicting manifests. It is kept only as a redirect so the dataset has exactly one source of truth; do not add data fields here -- update the governing manifest instead."
+}

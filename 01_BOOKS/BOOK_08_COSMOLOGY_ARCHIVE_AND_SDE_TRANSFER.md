@@ -1,4 +1,3 @@
-<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 08 — Cosmology, Archive, and Observable Transfer
 
 > **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
@@ -9,7 +8,7 @@
 > - phason → Goldstone mode of broken translation symmetry
 > - readout → measurement outcome (POVM effect)
 >
-> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
 
 
 > Scope: Archive pressure, S_DE transfer, empirical survey discipline, and external-passport guardrails.
@@ -773,7 +772,7 @@ diagnostic / downstream row
 
 unless a claim explicitly declares its operator, window, external data and falsification hook.
 
-**External anchor (passport target, not core).** The relative-archive acceleration `R_n = φⁿ − 1` has a strictly convex second difference `Δ²R_n = φⁿ(φ−1)² > 0`, which reads as an *evolving* (dynamical) dark-energy equation of state — `w ≠ const −1`. This is confirmed against real data: DESI DR2 BAO rejects ΛCDM in favour of evolving `w` (Δχ²≈4.7, BAO-only; test in `08_PASSPORTS/DESI`). **Scope correction — the specific corner is not forced.** Whether the evolution sits in DESI's *thawing* corner (`w₀ > −1`, `wₐ < 0`) depends on the unwritten phason→`w(z)` map; an explicit enumeration of the natural maps (source ∈ {R, R′, R″} × direction `N = ±ln a`, 6 cases) lands **0/6** in the thawing corner — all give `wₐ > 0` (the opposite sign) or a phantom `w₀ < −1`. So convexity forces *evolving* DE, **not** the thawing corner; the corner sign is map-dependent and stays HYP. The Hubble tension and the `w₀wₐ` anomaly are still read as **one** phenomenon (an effective `H₀` that declines with redshift), registered as an empirical-passport target against DESI DR2/DR3 with an internal falsifier — a measured `H₀` that *rises* with `z` while `S₈` stays at the Planck value would reject it. It is a diagnostic, never a core observable; only the convexity `Δ²R_n > 0` is forced.
+**External anchor (passport target, not core).** The relative-archive acceleration `R_n = φⁿ − 1` has a strictly convex second difference `Δ²R_n = φⁿ(φ−1)² > 0`, which reads as an *evolving* (dynamical) dark-energy equation of state — `w ≠ const −1`. This is confirmed against real data: DESI DR2 BAO rejects ΛCDM in favour of evolving `w` (Δχ²≈4.7, BAO-only; test in `05_EXPERIMENTS/DESI`). **Scope correction — the specific corner is not forced.** Whether the evolution sits in DESI's *thawing* corner (`w₀ > −1`, `wₐ < 0`) depends on the unwritten phason→`w(z)` map; an explicit enumeration of the natural maps (source ∈ {R, R′, R″} × direction `N = ±ln a`, 6 cases) lands **0/6** in the thawing corner — all give `wₐ > 0` (the opposite sign) or a phantom `w₀ < −1`. So convexity forces *evolving* DE, **not** the thawing corner; the corner sign is map-dependent and stays HYP. The Hubble tension and the `w₀wₐ` anomaly are still read as **one** phenomenon (an effective `H₀` that declines with redshift), registered as an empirical-passport target against DESI DR2/DR3 with an internal falsifier — a measured `H₀` that *rises* with `z` while `S₈` stays at the Planck value would reject it. It is a diagnostic, never a core observable; only the convexity `Δ²R_n > 0` is forced.
 
 ## 08.14 QCD archive scale and cosmological guardrail
 
@@ -984,14 +983,14 @@ No cosmology likelihood script is allowed to promote `H0`, `Omega_m`, redshift c
 
 | script | status | role |
 |---|---|---|
-| `05_CERTS/vp_cosmology_entropy_flow_likelihood.py` | `EMPIRICAL-PASSPORT` | verifies locked core-shape guardrails while external bridge parameters cannot mutate core parameters |
-| `05_CERTS/vp_spectral_action_eh_coefficient.py` | `CERT-CLOSED` | checks heat-trace A0/A2 proxy and higher-curvature report artifacts |
-| `05_CERTS/vp_spectral_action_expansion_stability.py` | `CERT-CLOSED` | checks finite spectral-action stability and negative controls |
-| `05_CERTS/vp_v1133_bao_sde_reproducible_passport.py` | `EMPIRICAL-PASSPORT` | BAO/SDE reproducibility comparison protocol, not core parameter derivation |
-| `05_CERTS/ported_legacy_primary/D0-COSMO-004/run_cosmological_full_likelihood.py` | `EMPIRICAL-PASSPORT` / `EXTERNAL-DATA-REQUIRED` | ported full-likelihood comparison with external survey data |
-| `05_CERTS/ported_legacy_primary/D0-COSMO-005/run_bao_sde_shape_parameter_derivation.py` | `CERT-CLOSED` | internal SDE window-shape derivation |
-| `05_CERTS/ported_legacy_primary/D0-COSMO-005/run_bao_sde_kernel_archive_transfer.py` | `CERT-CLOSED` | finite bridge kernel construction before survey comparison |
-| `05_CERTS/ported_legacy_primary/D0-COSMO-005/run_bao_dynamic_archive_pressure.py` | `EMPIRICAL-PASSPORT` | dynamic archive-pressure comparison protocol layer |
+| `04_CERTIFICATES/vp_cosmology_entropy_flow_likelihood.py` | `EMPIRICAL-PASSPORT` | verifies locked core-shape guardrails while external bridge parameters cannot mutate core parameters |
+| `04_CERTIFICATES/vp_spectral_action_eh_coefficient.py` | `CERT-CLOSED` | checks heat-trace A0/A2 proxy and higher-curvature report artifacts |
+| `04_CERTIFICATES/vp_spectral_action_expansion_stability.py` | `CERT-CLOSED` | checks finite spectral-action stability and negative controls |
+| `04_CERTIFICATES/vp_v1133_bao_sde_reproducible_passport.py` | `EMPIRICAL-PASSPORT` | BAO/SDE reproducibility comparison protocol, not core parameter derivation |
+| `04_CERTIFICATES/D0-COSMO-004/run_cosmological_full_likelihood.py` | `EMPIRICAL-PASSPORT` / `EXTERNAL-DATA-REQUIRED` | ported full-likelihood comparison with external survey data |
+| `04_CERTIFICATES/D0-COSMO-005/run_bao_sde_shape_parameter_derivation.py` | `CERT-CLOSED` | internal SDE window-shape derivation |
+| `04_CERTIFICATES/D0-COSMO-005/run_bao_sde_kernel_archive_transfer.py` | `CERT-CLOSED` | finite bridge kernel construction before survey comparison |
+| `04_CERTIFICATES/D0-COSMO-005/run_bao_dynamic_archive_pressure.py` | `EMPIRICAL-PASSPORT` | dynamic archive-pressure comparison protocol layer |
 
 Thus redshift variables `z`, `z_c` and `z_r` are transfer coordinates, and `H0` / `Omega_m` are external comparison coordinates. They are fixed for a comparison protocol run only after the finite D0 source and bridge schema are declared.
 
@@ -1334,7 +1333,7 @@ The finite reheating budget is the heat-energy functional associated with connec
 
 ## 08.COSMOLOGY-CLOSURE Internal cosmology chain (reheating → phason → CMB)
 
-The internal cosmology chain is machine-owned where closed, with every remaining gap named exactly in `04_VERIFICATION/COSMOLOGY_CLOSURE_BLOCKERS.csv`. **No external survey datum retunes any internal window, and global cosmology closure is not claimed.** The chain:
+The internal cosmology chain is machine-owned where closed, with every remaining gap named exactly in `02_REGISTRY/frontier/cosmology_frontier.csv`. **No external survey datum retunes any internal window, and global cosmology closure is not claimed.** The chain:
 
 `reheating energy E(u)` → `phason initial covariance C_φ(u)` → `two-mode pressure–energy window` → `continuum EOS w_D0(u)` → `physical branch w_DE(z)` → `archive-capacity redshift` → `IDS smoothing` → `CMB transfer / n_s` → `passports`.
 
@@ -1495,8 +1494,8 @@ frozen step assignment `[0,1,1,1,1,2]` gives `chi2=7631.137391` for 5 dof and
 (`D0-PHI-STEP-H-DESI-DR2-001`). This rejects only the old identification of the symbol `H` with
 the conventional Hubble rate. It does not alter the internal depth/frequency cocycle or its
 conditional detector representation. Protocol, manifests, executable certificates, and full
-scope report: `08_PASSPORTS/DESI/PHI_P_DESI_01_PROTOCOL.md` and
-`04_VERIFICATION/PHI_REDSHIFT_REAL_DATA_EXPERIMENT_REPORT.md`.
+scope report: `05_EXPERIMENTS/DESI/PHI_P_DESI_01_PROTOCOL.md` and
+`05_EXPERIMENTS/reports/phi_redshift_real_data.md`.
 
 **[2026-09-03 — D0-RD-01 direct redshift-drift verdict].** The next red point was tested on
 repeated observations of the same absorbers rather than reconstructed from `H(z)`: ten digital
@@ -1515,8 +1514,8 @@ boundary `p=0.004513`, above the frozen `alpha=0.001` rejection threshold. The 9
 `rho<6.2742e-9 tick/yr` (more than `1.5938e8 yr` per phi tick under this interpolation). The second
 ESPRESSO analysis is a correlated control and is not double-counted. Status
 `D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001 = EMPIRICAL-PASSPORT`; full protocol and scope:
-`08_PASSPORTS/REDSHIFT_DRIFT/D0_RD_01_PROTOCOL.md` and
-`04_VERIFICATION/D0_REDSHIFT_DRIFT_DIRECT_EXPERIMENT_REPORT.md`. The values were public before this
+`05_EXPERIMENTS/REDSHIFT_DRIFT/D0_RD_01_PROTOCOL.md` and
+`05_EXPERIMENTS/reports/redshift_drift_direct.md`. The values were public before this
 protocol was written, so the result is retrospective and is not advertised as a prospective
 discovery.
 
@@ -1551,8 +1550,8 @@ Finally, the internal archive law would conditionally give
 `MeasuredDarkResponseRepresentation`. No independent dark-response dataset instantiates it in this
 run, so that leg remains `NOT_TESTED_NO_INDEPENDENT_DARK_RESPONSE_REPRESENTATION`; BAO residuals are
 not relabelled as dark energy and the phason-magnitude NO-GO remains intact. Full protocol and
-controls: `08_PASSPORTS/COUPLED_REDSHIFT_EXPANSION/D0_RDEC_01_PROTOCOL.md` and
-`04_VERIFICATION/REDSHIFT_DRIFT_EXPANSION_COUPLED_REPORT.md`.
+controls: `05_EXPERIMENTS/COUPLED_REDSHIFT_EXPANSION/D0_RDEC_01_PROTOCOL.md` and
+`05_EXPERIMENTS/reports/redshift_drift_expansion_coupled.md`.
 
 **[2026-09-03 — local pressure/capacity dynamics and the density-bound firewall].** The global
 phrase "expansion is determinant balance" is now sharpened to a local signed law. For every site,
@@ -1605,7 +1604,7 @@ with an independently obtained focusing map (matter plus kinematic terms); BAO o
 alone cannot be recycled as its own dark-sector confirmation.
 ## 08.v15 Active standard-language contract
 
-_This section is the active standard-language layer of BOOK_08 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+_This section is the active standard-language layer of BOOK_08 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
 
 _Standard-language reading of the terms this book uses:_
 

@@ -1,4 +1,3 @@
-<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 07 — Gravity Limit and Finite Geometry
 
 > **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
@@ -11,7 +10,7 @@
 > - carrier → representation (state) space
 > - readout → measurement outcome (POVM effect)
 >
-> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
 
 
 > Scope: Finite spectral geometry, horizon/seam law, spin-2 carrier, finite gravity limits, and laboratory channel-clearing bridges.
@@ -584,7 +583,7 @@ Every factor is structural:
 
 The `16 = ABCD²` factor rests on the owned reading `ABCD = D2×D2 = 4` (BOOK_01 §01.7 owns the ABCD/Ω8 capacity alphabet, where `|V| = 33` is also fixed). The bound is therefore read off the symplectic structure and edge cardinality of the minimal carrier — `c_4` is a *derived* ceiling, not a tunable EFT Wilson coefficient. This is the higher-curvature analogue of the no-knob discipline the whole book runs on: the cut sets *where* the row dies, this coefficient sets *how large* it may be before it dies, and both are functions of the same finite carrier.
 
-**[^b07-22]** — the edge tally `359` of the holographic carrier and the assembly `5744/33` into the `c_4` ceiling are not yet discharged by a registered `vp_*` cert. (`05_CERTS/higher_curvature_bound_report.json` records a *separate* trace-power floor check at curvature orders 3/4/5 and does not certify this `δ0^12` coefficient; do not conflate the two.)
+**[^b07-22]** — the edge tally `359` of the holographic carrier and the assembly `5744/33` into the `c_4` ceiling are not yet discharged by a registered `vp_*` cert. (`vp_spectral_action_eh_coefficient.py` performs a *separate* trace-power floor check at curvature orders 3/4/5 and does not certify this `δ0^12` coefficient; do not conflate the two.)
 
 ### 07.10.3 The 12D→4D compactification fold and the 2⁶ = 64 degree-of-freedom difference
 
@@ -751,7 +750,7 @@ The positive gravity chain is
 
 ## 07.16 Claims inherited from the theorem database
 
-**Canonical source: the claim registry** (`09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` / generated `03_THEORY_MAP/theory_status_map.csv`) is the single source of truth for claim IDs and `release_status`. This table is the **Book 07 sector view** — the `Book 07 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel evolution-sector view is §06.17.
+**Canonical source: the claim registry** `02_REGISTRY/claims.csv` is the single source of truth for claim IDs and `release_status`. This table is the **Book 07 sector view** — the `Book 07 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel evolution-sector view is §06.17.
 
 | Claim ID | Status | Stage | Claim | Book 07 role |
 |---|---|---|---|---|
@@ -951,7 +950,7 @@ C_{\partial}=A_{D0}/4
 
 falls out as a finite topological count, not a thermodynamic fit. Cert status: the min-cut = 4 edge-cut structure is checked as a finite deterministic max-flow/min-cut object (cert: `vp_finite_mincut_holographic_entropy.py`, owned by §07.40 — cited, not duplicated here); the *identification* of that four-edge cut with the full `(A,B,C,D)` symplectic phase quotient is [^b07-30].
 
-**[THE 07.21.4C] Four-Color boundary limit: exactly four identifiers so no adjacent boundary cell aliases [^b07-33].** A second, independent forcing fixes the same `4`. To distinguish itself without an external catalog (M1), the boundary automaton must assign each cell a phase identifier such that no two adjacent cells share a state — otherwise adjacent quantum domains alias and the boundary cannot tell them apart, ⊥M1. The boundary resolves its information on a planar-equivalent surface, so by the Four-Color Theorem any contiguous planar map needs *exactly four* distinct identifiers to guarantee no adjacent regions collide. The four terminal detector roles `ABCD` are precisely that minimal four-coloring. Hence the maximal resolvable capacity is one logical bit per four geometric cells, and the `A/4` law is the macroscopic shadow of the Four-Color Theorem applied to the holographic boundary graph. This is a forcing for *why exactly four* that is independent of the symplectic-quotient count above; the two agreeing on `4` is the cross-check. [^b07-31] — no Four-Color-boundary cert exists in `05_CERTS/`; do NOT cite a `vp_*` token for this claim.
+**[THE 07.21.4C] Four-Color boundary limit: exactly four identifiers so no adjacent boundary cell aliases [^b07-33].** A second, independent forcing fixes the same `4`. To distinguish itself without an external catalog (M1), the boundary automaton must assign each cell a phase identifier such that no two adjacent cells share a state — otherwise adjacent quantum domains alias and the boundary cannot tell them apart, ⊥M1. The boundary resolves its information on a planar-equivalent surface, so by the Four-Color Theorem any contiguous planar map needs *exactly four* distinct identifiers to guarantee no adjacent regions collide. The four terminal detector roles `ABCD` are precisely that minimal four-coloring. Hence the maximal resolvable capacity is one logical bit per four geometric cells, and the `A/4` law is the macroscopic shadow of the Four-Color Theorem applied to the holographic boundary graph. This is a forcing for *why exactly four* that is independent of the symplectic-quotient count above; the two agreeing on `4` is the cross-check. [^b07-31] — no Four-Color-boundary cert exists in `04_CERTIFICATES/`; do NOT cite a `vp_*` token for this claim.
 
 The downstream `S_{D0}^{BH}=A_{D0}/4` witness (boundary cells × ABCD denominator, with negative controls A/2, A/8, volume entropy, singularity-as-deletion all rejected) is owned by §07.50 and cert-backed there (`vp_black_hole_capacity_a4_witness.py`); this section owns only the two forcing roots for the denominator `4` and defers the saturation witness to §07.50.
 ## 07.22 Gravity-depth hostile uniqueness: the exponent 99
@@ -2092,7 +2091,7 @@ A complementary owner on the *thermodynamic* side is **Jacobson's derivation** (
 **The GHP golden Cauchy bound — the internal-Cauchy half is now owned (`D0-GHP-GOLDEN-CAUCHY-BOUND-001`).** The "D0 does not prove the refinement sequence is GHP-Cauchy" residual above is now discharged **on the internal side**: the refinement `G_k → G_{k+1}` contracts at the golden scale `δ₀ = 1/(2φ³)`, and since `0 ≤ δ₀ < 1`, the step-bound series `Σ_k C·δ₀^k` is summable (converges to `C/(1 − δ₀)`) — a genuine Lean theorem (`D0.Geometry.GHPGoldenCauchyBound`, via Mathlib `summable_geometric_of_lt_one`; cert `vp_ghp_golden_cauchy_bound.py`). So the refinement is Cauchy *for the internal step bound*. The finite-graph Connes = geodesic owner (`D0-CONNES-GRAPH-DISTANCE-OWNER-001`, cert `vp_connes_graph_distance_owner.py`, `c = 1 = edge/tick`) is the metric anchor. What stays external (prose status MECH-LIMIT, `D0-SMOOTH-MANIFOLD-INTERNAL-LIMIT-001`, PASSPORT-CLOSED): the convergence in the quantum Gromov–Hausdorff metric and the Connes reconstruction to a smooth Riemannian spin manifold — owned by `D0-RIEFFEL-GHP-CONTINUUM-OWNER-001` + `D0-CONNES-RECONSTRUCTION-OWNER-001`. The smooth manifold stays the conditional macro-shadow `D0-SMOOTH-MANIFOLD-PASSPORT-001`, never a primitive D0 input.
 ## 07.v15 Active standard-language contract
 
-_This section is the active standard-language layer of BOOK_07 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+_This section is the active standard-language layer of BOOK_07 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
 
 _Standard-language reading of the terms this book uses:_
 

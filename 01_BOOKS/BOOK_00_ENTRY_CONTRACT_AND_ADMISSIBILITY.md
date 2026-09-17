@@ -1,4 +1,3 @@
-<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 00 — Entry Contract and Admissibility Discipline
 
 > **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
@@ -11,7 +10,7 @@
 > - carrier → representation (state) space
 > - readout → measurement outcome (POVM effect)
 >
-> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
 
 
 > Scope: Entry contract, admissibility rules, claim language, and publication guardrails.
@@ -51,7 +50,7 @@ Book 00 fixes the public contract: finite support is prior to dynamics; the reta
 
 D0-core closes at the **finite/profinite admissible** level; external smooth-manifold / C\*-algebra / empirical structures are **passports**, not blockers. A bridge over a frozen internal object is packaging, closed as `PASSPORT-CLOSED` (never `CORE-THE`) under the seven conditions of `D0-BRIDGE-COMPRESSION-001` (BOOK_05 §05.6); a bridge with no internal owner stays `PROOF-TARGET`, and one with no frozen object or PASS/FAIL protocol is `INACTIVE-BRIDGE`.
 
-The master synthesis is `03_THEORY_MAP/D0_MASTER_SYNTHESIS.md`. The publication outline is `03_THEORY_MAP/D0_PUBLICATION_OUTLINE.md`.
+The canonical corpus consists of the books, the registry, the formalization, certificates, and empirical passports; no separate synthesis or publication-plan file is normative.
 
 **[Canonical self-reading discipline].** A two-completion no-go counts only under the strengthened 5-item standard (`D0-COMPLETION-ADMISSIBILITY-001`): class + two completions + separating observable + owner-preservation + exhaustion-or-universal-property. Audited so, the E1-E5 no-gos are CLASS-SCOPED or WITNESS-ONLY -- never universal impossibility (`D0-TWO-COMPLETION-NOGO-STRENGTH-001`). The canonical self-reading functor question resolves as **Outcome D (partial functor)**: a unique forced-skeleton functor exists but fixes none of the four disputed outputs (`D0-CANONICAL-SELF-READING-FUNCTOR-001`).
 **[Raw self-reading provenance].** Every forced self-reading output is a RAW graph invariant of K(9,11,13), derived by `native_decide` from the partition alone (`D0-RAW-SCENE-GRAPH-001`): commutant 12 is the Aut pair-orbit count `card(image pairClass)`, not a literal (`D0-SELF-READING-NO-STIPULATION-001`). The raw self-reading functor is **partial (S3)** -- forced skeleton raw-derived, total functor obstructed (`D0-RAW-CANONICAL-SELF-READING-FUNCTOR-001`). No stipulated-output list; claim promotion requires a provenance chain raw-object -> raw-map -> derived theorem.
@@ -105,7 +104,7 @@ D0 uses a compact internal vocabulary, but the active scientific corpus must be 
 
 The D0 name is the framework identifier. The proof is the support object, the operator, the response functional, the quotient or coupling, and the falsification condition. A reader may ignore the D0 mnemonic and follow the standard object alone.
 
-This dictionary extends to the **proof and status vocabulary**, which is the part most likely to mislead an external reader. The complete term map — including three explicit *collision warnings* — is `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`. In particular: "**forcing**" is **proof by contradiction (reductio ad absurdum) against the admissibility axiom M1** (BOOK_00 §00.8), **not** Cohen forcing; the proof *technique* is standard, only the axiom M1 is D0-specific. The status word "**`LEM`**" (in "still LEM, not THE") is **not** the Law of Excluded Middle — it means "mechanism established, a limit/external step remains"; it is written **`MECH-LIMIT`** (and is distinct from `LEM`=Lemma in the standard `DEF/LEM/THE` taxonomy). The status word "**`THE`**" abbreviates Theorem, not the article. Nothing in the theory is made harder by this vocabulary: the content lives in M1 and in the finite objects, never in the proof method.
+This dictionary extends to the **proof and status vocabulary**, which is the part most likely to mislead an external reader. The complete term map — including three explicit *collision warnings* — is `02_REGISTRY/VOCABULARY.md`. In particular: "**forcing**" is **proof by contradiction (reductio ad absurdum) against the admissibility axiom M1** (BOOK_00 §00.8), **not** Cohen forcing; the proof *technique* is standard, only the axiom M1 is D0-specific. The status word "**`LEM`**" (in "still LEM, not THE") is **not** the Law of Excluded Middle — it means "mechanism established, a limit/external step remains"; it is written **`MECH-LIMIT`** (and is distinct from `LEM`=Lemma in the standard `DEF/LEM/THE` taxonomy). The status word "**`THE`**" abbreviates Theorem, not the article. Nothing in the theory is made harder by this vocabulary: the content lives in M1 and in the finite objects, never in the proof method.
 
 ### The three status layers: CORE / FORMALISM / BRIDGE
 
@@ -127,9 +126,9 @@ The CORE-compatible language of finiteness is therefore the localized spectral p
 
 **[Constrained Hamiltonian embedding bridge].** D0 retained/archive effective dynamics may be read in standard physics as a *constrained Hamiltonian embedding* of non-reciprocal active dynamics (Nature Physics 2026, `s41567-026-03317-0`): the enlarged space carries a reciprocal Hamiltonian/symplectic structure, and the D0 active dynamics is read on the constrained submanifold (or after eliminating the auxiliary/traced sector). This is a FORMALISM reading, never an empirical confirmation and never CORE (`D0-CONSTRAINED-HAMILTONIAN-EMBEDDING-PASSPORT-001`, PASSPORT-CLOSED).
 
-**[Final-claim reading rule].** A claim may be cited as *closed* only if it names a theorem / certificate / no-go / passport owner of record (never status prose alone); the continuation guard `vp_continuation_no_status_only_diff.py` enforces this. The static-to-dynamics chain (static scene -> `[J,Y]≠0` order obstruction -> Feshbach archive-delay tick -> `φ⁻¹` weight -> semigroup envelope) is closed at the mechanism level (`D0-STATIC-TO-DYNAMICS-OWNER-001`, BOOK_06 §06.8.S); global closure is NOT asserted — the named open front is `04_VERIFICATION/FINAL_CONTINUATION_BLOCKERS.csv`.
+**[Final-claim reading rule].** A claim may be cited as *closed* only if it names a theorem / certificate / no-go / passport owner of record (never status prose alone); the continuation guard `vp_continuation_no_status_only_diff.py` enforces this. The static-to-dynamics chain (static scene -> `[J,Y]≠0` order obstruction -> Feshbach archive-delay tick -> `φ⁻¹` weight -> semigroup envelope) is closed at the mechanism level (`D0-STATIC-TO-DYNAMICS-OWNER-001`, BOOK_06 §06.8.S); global closure is NOT asserted — the named open front is `02_REGISTRY/frontier/continuation_frontier.csv`.
 
-**[Closure-campaign rule].** Major closure campaigns must follow `04_VERIFICATION/VERIFIED_CLOSURE_PROTOCOL.md` before promoting proof-targets: a grounded verification scout checks the mathematical route first, and a proof-target is closed only with a real owner (Lean theorem / finite cert / no-go / passport), reachable negative controls, and a green gate -- never by status migration (`D0-VERIFIED-CLOSURE-PROTOCOL-001`).## 00.2 Primitive thesis
+**[Closure-campaign rule].** Major closure campaigns must follow `02_REGISTRY/frontier/verification_protocol.md` before promoting proof-targets: a grounded verification scout checks the mathematical route first, and a proof-target is closed only with a real owner (Lean theorem / finite cert / no-go / passport), reachable negative controls, and a green gate -- never by status migration (`D0-VERIFIED-CLOSURE-PROTOCOL-001`).## 00.2 Primitive thesis
 
 D0 is a finite-observability framework over a condensed/profinite φ-quasicrystalline tiling hull.
 
@@ -393,7 +392,7 @@ The load-bearing recipe of the whole corpus is the named 5-step schema.  To prov
 
 Status: CORE-FORCING-SCHEMA.  This is "forcing = contradiction via exogenous parameterization" stated as an explicit, reusable recipe rather than as ad hoc per-result contradiction arguments.  Every forced claim in the corpus — phi from p+p^2=1, delta0, Q8~Omega8 minimality, the K(9,11,13) scene, the toral time generator — instantiates this schema with a different θ.  When a section says "(forced)" it means: the negation demands an undefined, outcome-affecting structure, and that structure is an exogenous catalog M1 forbids.
 
-**Standard-language note (the technique is not new — only the axiom is).**  The *logical form* of DEF-0.2.2 is **ordinary proof by contradiction (reductio ad absurdum)**: steps (i)–(v) are the textbook pattern *assume `¬X`, derive a contradiction, conclude `X`*.  There is no novel inference rule here.  The **only** D0-specific ingredient is the admissibility axiom **M1** (no obligatory external catalog), which supplies *which* contradiction counts: a reductio closes iff `¬X` forces an exogenous parameter that M1 forbids.  So "**forcing**" in this corpus is shorthand for "**reductio against M1**" — it is **not** Cohen/set-theoretic forcing, and it does not make a proof harder or more exotic than a standard contradiction argument; the content lives entirely in the axiom M1 and in the finite objects, not in the proof method.  (Full term map: `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`; the publication rule §00.1 lets a reader drop every D0 mnemonic and read the standard object.)
+**Standard-language note (the technique is not new — only the axiom is).**  The *logical form* of DEF-0.2.2 is **ordinary proof by contradiction (reductio ad absurdum)**: steps (i)–(v) are the textbook pattern *assume `¬X`, derive a contradiction, conclude `X`*.  There is no novel inference rule here.  The **only** D0-specific ingredient is the admissibility axiom **M1** (no obligatory external catalog), which supplies *which* contradiction counts: a reductio closes iff `¬X` forces an exogenous parameter that M1 forbids.  So "**forcing**" in this corpus is shorthand for "**reductio against M1**" — it is **not** Cohen/set-theoretic forcing, and it does not make a proof harder or more exotic than a standard contradiction argument; the content lives entirely in the axiom M1 and in the finite objects, not in the proof method.  (Full term map: `02_REGISTRY/VOCABULARY.md`; the publication rule §00.1 lets a reader drop every D0 mnemonic and read the standard object.)
 
 The exogenous-parameter test (DEF 0.3.1, owner GOLDEN §0.3) is the hinge of step (iii)–(iv): θ counts as exogenous iff it (1) is not derived inside the corpus, (2) affects a distinguishable result or a law's formulation, and (3) is not an unavoidable part of the distinguishability protocol.  A required-but-not-distinguishing addition is, by LEM 0.4.1a (the dichotomy of an added structure K), exactly a hidden external catalog and falls to M1.
 
@@ -674,7 +673,7 @@ D0 uses finite-registration terminology because its primitive object is a finite
 | status word `MECH-LIMIT` | a result whose mechanism is established but a limit/external-mechanism step remains (conditional result) | **not** the Law of Excluded Middle; and **not** `LEM`=Lemma in the `DEF/LEM/THE` taxonomy (which is standard) |
 | status word `THE` / `[THE n.n]` | Theorem (proved by reductio against M1) | reads like the article "the"; gloss on first use |
 
-This table is not an analogy layer.  It is a bridge discipline.  A manuscript or book section may use D0 terms internally, but every external-facing claim must include its standard-language translation, bridge status and falsification hook.  The full term map (including the proof/status vocabulary and the collision warnings) is `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`.
+This table is not an analogy layer.  It is a bridge discipline.  A manuscript or book section may use D0 terms internally, but every external-facing claim must include its standard-language translation, bridge status and falsification hook.  The full term map (including the proof/status vocabulary and the collision warnings) is `02_REGISTRY/VOCABULARY.md`.
 
 ## 00.23 Theory-improvement rule: no decorative layer
 
@@ -728,7 +727,7 @@ F_N=(Q_NU_NP_N)^\dagger(Q_NU_NP_N).
 A finite event exists when internal circulation becomes addressable as such a trace. This entry principle supplies the ontological layer for CVFT and informational mechanics.
 ## 00.v15 Active standard-language contract
 
-_This section is the active standard-language layer of BOOK_00 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary, never slogan-first. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+_This section is the active standard-language layer of BOOK_00 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary, never slogan-first. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
 
 _Standard-language reading of the terms this book uses:_
 

@@ -5,7 +5,7 @@ track-fair scoring ladder.
 
 Imported by validate_csv.py, check_firewall.py and d0_score.py so the guards and
 the scorer never drift from each other. Mirrors
-09_LEAN_FORMALIZATION/D0/Traceability/StatusTaxonomy.lean (D0Status + canPromoteTo).
+03_FORMALIZATION/D0/Traceability/StatusTaxonomy.lean (D0Status + canPromoteTo).
 """
 from __future__ import annotations
 
@@ -130,7 +130,7 @@ TRACK_CEILING = {
 HYGIENE_BUDGET = 100
 # name: (unit_penalty, max_penalty, human_label)
 HYGIENE_PENALTIES: dict[str, tuple[float, float, str]] = {
-    "tracked_meta_trash":   (0.3, 20.0, "tracked files under add/ + _QUARANTINE/v17_overshoots/ (vendored input, not release)"),
+    "tracked_meta_trash":   (0.3, 20.0, "historical non-release artifacts"),
     "tracked_but_ignored":  (1.0, 8.0,  "tracked-but-gitignored files (scratch that should not ship)"),
     "tautology_proofs":     (1.5, 18.0, "Lean (h:stmt):stmt:=h tautologies marked leanCoreProved (prove nothing)"),
     "proof_debt":           (2.0, 10.0, "sorry/axiom inside the built D0/ tree"),

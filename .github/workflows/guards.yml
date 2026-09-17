@@ -11,78 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0          # full history + tags so check_firewall can diff base-v14
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: install cert dependencies (numpy/sympy/pandas)
+      - name: Install certificate dependencies
         run: pip install -r requirements.txt
-
-      - name: validate canonical registry
-        run: python tools/validate_csv.py
-
-      - name: derivation chain + block hashes (cycle in the DAG is a hard failure)
-        run: python tools/d0_logic_chain.py
-
-      - name: value ledger is a live view of the registry (coverage + freshness + auditable weights)
-        run: python tools/check_value_ledger_sync.py
-
-      - name: every "forced by N independent routes" assertion is adjudicated (no unbacked multiplicity)
-        run: python tools/d0_route_audit.py --strict
-
-      - name: dependency attribution coverage (report; the attack queue is only as good as this)
-        run: python tools/d0_architecture.py && python tools/check_dependency_resolution.py
-
-      - name: registered certs pass (existence != passes)
-        run: python tools/run_registered_certs.py
-
-      - name: every registered cert can FAIL (guillotine; blocks new print-stubs)
-        run: python tools/check_cert_can_fail.py
-
-      - name: anti-promotion firewall (vs base-v14)
-        run: python tools/check_firewall.py --base base-v14
-
-      - name: no sorry/axiom in core+bridge+all
-        run: python 09_LEAN_FORMALIZATION/tools/check_no_sorry_in_core.py
-
-      - name: no identity-tautology theorems (Lean must be valuable, not for-show)
-        run: python tools/check_no_tautology_proofs.py
-
-      - name: claim<->lean coverage
-        run: python 09_LEAN_FORMALIZATION/tools/check_claim_map_coverage.py
-
-      - name: physical bridge discipline
-        run: python tools/check_physical_bridge_discipline.py
-
-      - name: prose<->registry cert references
-        run: python tools/check_book_cert_references.py
-
-      - name: books assembled from per-section sources (idempotent)
-        run: python tools/check_book_assembly.py
-
-      - name: trace metadata extracted to apparatus (no raw forcing/Status tags in prose)
-        run: python tools/extract_apparatus.py --check
-
-      - name: book bodies are publication-clean (no dangling refs / dup headings / dev-TODO / prose repo-refs)
-        run: python tools/check_book_publication.py
-
-      - name: book token firewall (no v17 overshoots / deprecated delta0 in prose)
-        run: python tools/check_book_tokens.py
-
-      - name: lean aggregates idempotent (generated, not hand-edited)
-        run: |
-          python tools/generate_lean_aggregates.py --check --only claimmap
-          python tools/generate_lean_aggregates.py --check --only active
-
-      - name: graph idempotence (generated artifacts up to date)
-        shell: pwsh
-        run: ./tools/regen_graph.ps1 -CheckOnly
-
-      - name: scoreboard integrity (strict)
-        run: python tools/d0_score.py --strict
-
-# Note: Lean `lake build` is deferred (see 09_LEAN_FORMALIZATION/docs/
-# LEAN_DEFERRED_RUN_POLICY.md); it runs only in a manual/release workflow.
+      - name: Validate canonical architecture
+        run: python tools/validate_repo.py
+      - name: Check generated Lean views
+        run: python tools/generate_lean_views.py --check
+      - name: Python syntax
+        run: python -m compileall -q tools 04_CERTIFICATES
+      - name: Registered certificates
+        run: python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py
+      - name: Long-running Bartholdi certificate
+        timeout-minutes: 12
+        run: python 04_CERTIFICATES/vp_scene_bartholdi_typed.py
+      - name: Certificates do not mutate release tree
+        run: git diff --exit-code

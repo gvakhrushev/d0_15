@@ -1,4 +1,3 @@
-<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 06 — Evolution, Forgetting, and Time
 
 > **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
@@ -10,7 +9,7 @@
 > - carrier → representation (state) space
 > - readout → measurement outcome (POVM effect)
 >
-> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
 
 
 > Scope: Time as ordered finite registration, forgetting/coarse-graining, RG transfer, and active-medium bridge discipline.
@@ -353,7 +352,7 @@ The distinction is observable in the existing apparatus. Two schedules have iden
 two-step endpoint channels, but an intermediate internal SWAP with a prepared register
 separates their final outcome probabilities by `(5√5−11)/2`. The previous state is retained
 in the SWAP register. `D0.Representation.GoldenProcessContext` proves the endpoint equality
-and separating context; `_TASKS_PROCESS_MEMORY_20260910/verify.py` checks the full internal
+and separating context; `04_CERTIFICATES/process_memory_verify.py` checks the full internal
 circuit and endpoint Choi calculations. The all-n dimension and approximation bounds are
 analytic applications of channel/process representation theory, detailed with primary
 sources in `RESULT.md` in the same task directory; they are not promoted to Lean or global
@@ -685,7 +684,7 @@ The positive test is:
 
 ## 06.17 Claims inherited from the theorem database
 
-**Canonical source: the claim registry** (`09_LEAN_FORMALIZATION/docs/CLAIM_TO_LEAN_MAP.csv` / generated `03_THEORY_MAP/theory_status_map.csv`) is the single source of truth for claim IDs and `release_status`. This table is the **Book 06 sector view** — the `Book 06 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel gravity-sector view is §07.16.
+**Canonical source: the claim registry** `02_REGISTRY/claims.csv` is the single source of truth for claim IDs and `release_status`. This table is the **Book 06 sector view** — the `Book 06 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel gravity-sector view is §07.16.
 
 | Claim ID | Domain | Status | Claim | Book 06 role |
 |---|---|---|---|---|
@@ -1085,7 +1084,7 @@ Space (graph spectrum) and time (torus automorphism) are different objects, so r
 
 **[Iter23 — the orientation obstruction (why "T = golden SFT" is false as stated).** The same certificate records a partial NO-GO that sharpens the target further, using the most basic topological-conjugacy invariant: the periodic-point count. For the toral automorphism `|Fix(T^n)| = |det(T^n − I)|`; for the golden-mean subshift it is `tr(N_τ^n) = Lucas(n)`. These **disagree**: they are equal at odd `n` but differ by *exactly* `2` at even `n` (offsets `[0,2,0,2,0,2,0,2]` for `n=1..8`). A topological conjugacy would force equality at every `n`, so `T` is **not** conjugate to the plain (nonnegative) golden SFT `N_τ`. The offset pattern is the exact signature of `T ∼ −N_τ`: `T` realizes the SFT of the *orientation-reversed* matrix `−N_τ` (a signed/`±1` system), and the naive statement "the toral time-map is the golden SFT" is false as written. The honest positive target is therefore "`T` is topologically conjugate to the **orientation-reversed** golden SFT," whose remaining leg is still the geometric Adler–Weiss partition. This is not a gap to be filled by more shift-equivalence data — it is a genuine feature of the map (its determinant is `−1`), and it vindicates keeping `D0-TORAL-TIME-MARKOV-CONJUGACY-001` at PROOF-TARGET rather than closing it.
 
-**[Toral Markov: Outcome B].** The internal Lucas-Voronoi symbolic construction is closed-negative at the canonical-partition step: a 3-point periodic seed does not canonically determine a Markov partition (Adler-Weiss partitions are non-unique), and the integral conjugate `-M_phi` (negative entry, `!= M_phi`) is not the symbolic SSE (`D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001`, NO-GO). The Markov-rectangle, coding, boundary-quotient, and Williams-SSE owners stay PROOF-TARGET; the exact missing artifact is a canonical seed-determined Markov partition whose nonnegative adjacency matrix is SSE-equivalent to `M_phi`. External Adler-Weiss remains the cited bridge owner, never a core import; ordinary shift equivalence is not sufficient for conjugacy. See `04_VERIFICATION/TORAL_MARKOV_BLOCKERS.csv`.
+**[Toral Markov: Outcome B].** The internal Lucas-Voronoi symbolic construction is closed-negative at the canonical-partition step: a 3-point periodic seed does not canonically determine a Markov partition (Adler-Weiss partitions are non-unique), and the integral conjugate `-M_phi` (negative entry, `!= M_phi`) is not the symbolic SSE (`D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001`, NO-GO). The Markov-rectangle, coding, boundary-quotient, and Williams-SSE owners stay PROOF-TARGET; the exact missing artifact is a canonical seed-determined Markov partition whose nonnegative adjacency matrix is SSE-equivalent to `M_phi`. External Adler-Weiss remains the cited bridge owner, never a core import; ordinary shift equivalence is not sufficient for conjugacy. See `02_REGISTRY/frontier/toral_markov_frontier.csv`.
 
 **[Toral seed-Markov maximality].** The forced dynamical invariants (spectrum, entropy log phi, trace, det) do not determine the Markov partition: distinct admissible nonnegative-integer adjacencies carry the golden Perron data phi -- a 2-rectangle `Mphi=!![1,1;1,0]` (`Mphi^2=Mphi+I`) and a 3-rectangle `A3=!![1,1,0;1,0,0;0,1,0]` (`A3^3=A3^2+A3`, charpoly `x(x^2-x-1)`), plus a same-size relabel `M2!=Mphi` with identical invariants (`D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001`, Lean `D0.Geometry.ToralSeedMarkovMaximalityNoGo`). The rectangle count and adjacency are not forced by the seed; a canonical partition requires an external Adler-Weiss/Williams choice (`D0-ADLER-WEISS-PARTITION-OWNER-001`, passport), not a present-core theorem.## 06.31 φ-discrete RG as a typed forgetting step
 
@@ -1643,7 +1642,7 @@ therefore adds an outcome-affecting function rather than merely renaming the old
 The independent DESI DR2 radial-BAO test gives `chi2=132.0132/5`, `p=8.90e-27` for the forced shape
 `DH/rd=C/(1+z)`, rejecting the constant-rate FLRW application. This does not reject the internal
 tick cocycle. Full scope and the dependence on the `z=2.33` Lyman-alpha point are recorded in
-`04_VERIFICATION/REDSHIFT_DRIFT_EXPANSION_COUPLED_REPORT.md`.
+`05_EXPERIMENTS/reports/redshift_drift_expansion_coupled.md`.
 
 ### Why the time layer is two-dimensional (toral, forced)
 
@@ -1715,7 +1714,7 @@ Electron-beam dusty-plasma experiments are admitted as an external bridge for th
 This bridge does not close a core theorem. In particular, the golden mass-loss and acoustic log-φ proposals remain external experimental targets, not Book 06 proofs.
 ## 06.v15 Active standard-language contract
 
-_This section is the active standard-language layer of BOOK_06 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+_This section is the active standard-language layer of BOOK_06 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
 
 _Standard-language reading of the terms this book uses:_
 
@@ -1770,9 +1769,9 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b06-33]: forcing: GOLDEN COR II.2.LEG18.1.1.E
 [^b06-34]: forcing: GOLDEN REM 11.dS.A; numerical differentiation of $\log P$ is prohibited so the dimension is read off the spectrum directly
 [^b06-35]: forcing: GOLDEN THE II.2.LEG18.1.2 + VER II.2.LEG18.1.3
-[^b06-36]: forcing: D0-RESEARCH-ADDENDUM-cosmology-sterile-2D §A; cert `05_CERTS/vp_time_2d_pisot.py`, `PASS_TIME_2D_PISOT`
+[^b06-36]: forcing: D0-RESEARCH-ADDENDUM-cosmology-sterile-2D §A; cert `04_CERTIFICATES/vp_time_2d_pisot.py`, `PASS_TIME_2D_PISOT`
 [^b06-37]: forcing: D0-RESEARCH-ADDENDUM §A, Adler–Weiss/Pisot smoothness
-[^b06-38]: forcing: D0-RESEARCH-ADDENDUM §A; certs `05_CERTS/vp_signature_31_split.py`, `PASS_SIGNATURE_31_SPLIT`, and `05_CERTS/vp_galois_lorentz_signature.py`
+[^b06-38]: forcing: D0-RESEARCH-ADDENDUM §A; certs `04_CERTIFICATES/vp_signature_31_split.py`, `PASS_SIGNATURE_31_SPLIT`, and `04_CERTIFICATES/vp_galois_lorentz_signature.py`
 [^b06-39]: open obligation — cert obligation open
 [^b06-40]: forcing: GOLDEN THE 61.10
 [^b06-41]: forcing: GOLDEN THE 61.10

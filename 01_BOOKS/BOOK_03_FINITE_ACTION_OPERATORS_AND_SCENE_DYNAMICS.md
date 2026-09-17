@@ -1,4 +1,3 @@
-<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 03 — Finite Action Operators and Scene Dynamics
 
 > **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
@@ -11,7 +10,7 @@
 > - carrier → representation (state) space
 > - readout → measurement outcome (POVM effect)
 >
-> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
 
 
 > Scope: Finite action/variation language, scene dynamics, and admissible finite equations of motion.
@@ -100,7 +99,7 @@ There is a constructive replacement on this terminal quotient. Rational left mul
 
 **Order becomes a detector distinction through an explicit reference.** The closed word `i j i⁻¹ j⁻¹` acts as `−I`. Its isolated quadratic response equals that of `+I`; comparison against a coherent reference converts this global sign into a relative sign. Using the existing golden gate of §03.26 and its inverse as the two-port comparison, with `p=φ⁻¹`, gives squared output weights `(1,0)` for the identity word and `(p⁶,4p³)` for the order loop, with `p⁶+4p³=1`. No additional splitter angle is fitted. Erasing inter-arm coherence makes the two cases indistinguishable. Section §03.26.1 constructs the reference preparation and inverse gate from forward operations, with internal program, clock and record registers. Physical access to the local port action, initial apparatus preparation and calibrated detector remain explicit implementation obligations.
 
-The finite proofs are in `D0/Representation/OrderMemoryReadout.lean` and `D0/Representation/GoldenOrderInterferometer.lean`; the derivation and exact controls are in `_TASKS_ORDER_MEMORY_20260906/README.md` and `verify.py`. Both modules are built as standalone owners; this addition does not promote a claim to full quantum reconstruction or empirical closure. The quadratic-response step uses the existing Born owner, with its quadratic-family and calibration assumptions explicit. The CKM phason holonomy (BOOK_04 §04.4.4) remains a distinct downstream construct.
+The finite proofs are in `D0/Representation/OrderMemoryReadout.lean` and `D0/Representation/GoldenOrderInterferometer.lean`; the derivation and exact controls are in `04_CERTIFICATES/order_memory_verify.py`. Both modules are built as standalone owners; this addition does not promote a claim to full quantum reconstruction or empirical closure. The quadratic-response step uses the existing Born owner, with its quadratic-family and calibration assumptions explicit. The CKM phason holonomy (BOOK_04 §04.4.4) remains a distinct downstream construct.
 ## 03.2 Role and boundary of this book
 
 Book 03 contains the finite action mechanism. It does not re-prove the condensed/profinite detector object, and it does not complete the particle, gravity or cosmology comparison protocols. Those are adjacent books.
@@ -853,7 +852,7 @@ D0.Geometry.SpectralActionLadder.higher_powers_floor_bounded
 ```
 
 
-**[Finite moments vs profinite log-trace].** The finite spectral moments `mu_0=0, mu_1=1/3, mu_2=12288/5` are owned exactly (`D0-DELTA-ALPHA-MOMENT-001`, `D0-ALPHA-MU2-FULL-LEDGER-001`). They are NOT a Dixmier logarithmic trace coefficient: the canonical phi-ladder profinite tower is trace-class, so its ordinary log-Cesaro coefficient `lim Sigma_K/log(1+K)=0`, not `mu_2` (`D0-ALPHA-PROFINITE-TOWER-NOGO-001`, Outcome B, Lean `D0.Spectral.AlphaProfiniteTowerNoGo`). The sharper mechanism: weight decay `phi^(-3N)` times the golden carrier growth `phi^(+N)` is `phi^(-2N)` -- still summable, two powers of `phi` inside the `L^{1,inf}` `1/j` critical line; reaching it needs a carrier with Perron eigenvalue `phi^3` that no frozen D0 sequence supplies. The Dixmier residue-extraction stays the external owner-edge (`D0-DIXMIER-RESIDUE-OWNER-001` / ASSUMP-DIXMIER-TRACE); the residue-normalization seam (`D0-ALPHA-FESHBACH-DIXMIER-OWNER-001`) stays PROOF-TARGET. See `04_VERIFICATION/ALPHA_DIXMIER_BLOCKERS.csv`.
+**[Finite moments vs profinite log-trace].** The finite spectral moments `mu_0=0, mu_1=1/3, mu_2=12288/5` are owned exactly (`D0-DELTA-ALPHA-MOMENT-001`, `D0-ALPHA-MU2-FULL-LEDGER-001`). They are NOT a Dixmier logarithmic trace coefficient: the canonical phi-ladder profinite tower is trace-class, so its ordinary log-Cesaro coefficient `lim Sigma_K/log(1+K)=0`, not `mu_2` (`D0-ALPHA-PROFINITE-TOWER-NOGO-001`, Outcome B, Lean `D0.Spectral.AlphaProfiniteTowerNoGo`). The sharper mechanism: weight decay `phi^(-3N)` times the golden carrier growth `phi^(+N)` is `phi^(-2N)` -- still summable, two powers of `phi` inside the `L^{1,inf}` `1/j` critical line; reaching it needs a carrier with Perron eigenvalue `phi^3` that no frozen D0 sequence supplies. The Dixmier residue-extraction stays the external owner-edge (`D0-DIXMIER-RESIDUE-OWNER-001` / ASSUMP-DIXMIER-TRACE); the residue-normalization seam (`D0-ALPHA-FESHBACH-DIXMIER-OWNER-001`) stays PROOF-TARGET. See `02_REGISTRY/frontier/alpha_dixmier_frontier.csv`.
 
 **[Alpha present-core maximality].** Strengthening of the profinite no-go: NOT just one tower, but EVERY admissible present-core tower fails to realize `mu_2`. An admissible tower has frozen weight `r=phi^-3` per increment and multiplicity growth rate `a` (block `N ~ phi^(aN)`); the per-block trace contribution is `phi^(a-3)`. Present-core gives `a=0` (constant `2^11` ledger) and `a=1` (golden carrier, Perron `phi`). For any `a<=2<3` the contribution `<1` => trace-class => Dixmier coefficient `0`, never `mu_2` (`D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001`, Lean `D0.Spectral.AlphaPresentCoreMaximalityNoGo`). The critical `1/j` line is reached only at `a=3` (`rate=1`, carrier Perron eigenvalue `phi^3`), which 5-fold symmetry + M1 forbid. The remaining interface is an external Dixmier/Wodzicki residue passport or a new independently-forced `phi^3` carrier, not a present-core object.
 
@@ -1156,7 +1155,7 @@ The operation schedule can be internalized in 16 stage labels: `W=Σ_c |c+1><c|�
 
 The remaining locality condition is substantive. Every finite word generated by common two-port maps `diag(A,A)` and mixers `[[aI,−pI],[pI,aI]]` commutes with `[[0,−I],[I,0]]`, whereas Z does not. Consequently neither Z nor X can be synthesized from that common palette. Replacing X by a global i in the actual program preserves norm but removes the contrast between its two record distributions.
 
-Owners: `D0/Representation/OrderMemoryControl.lean` and `D0/Representation/FiniteProtocolClock.lean`; concrete apparatus and controls: `_TASKS_ORDER_MEMORY_20260906/control_verify.py`, derivation: `CONTROL.md` in the same directory. Scope is conditional finite implementation: physical port addressability, initial apparatus preparation and access to its primitive actions remain explicit. Orthogonality alone does not establish those actions as M1-admissible.
+Owners: `D0/Representation/OrderMemoryControl.lean` and `D0/Representation/FiniteProtocolClock.lean`; concrete apparatus and controls: `04_CERTIFICATES/order_memory_control_verify.py`. Scope is conditional finite implementation: physical port addressability, initial apparatus preparation and access to its primitive actions remain explicit. Orthogonality alone does not establish those actions as M1-admissible.
 
 ### 03.26.2 Ports and interaction from the source operators
 
@@ -1168,7 +1167,7 @@ On scene × Q₈ coordinates, `H_int=R⊗L_i` is metric-skew, `H_int²=−R⊗I`
 
 Preparation must retain its complement: `QᵀGQ+(I−Q)ᵀG(I−Q)=G`. Projection alone is not injective and may fail. A general theorem shows that injective complete dynamics resetting all inputs must retain their distinction in an injective archive map; a finite archive then has at least as many states as the input. Another general theorem shows that an independently initialized detector cannot distinguish inputs under product dynamics. These force retention and some interaction, not a unique physical interaction law.
 
-Owners: `D0/Representation/SourcePortPreparation.lean`, `PortFrameCovariance.lean`, `PreparationMemoryBound.lean`; exact verification and derivation: `_TASKS_ORDER_MEMORY_20260906/source_verify.py` and `SOURCE_PORTS.md`. The constructed interaction and selective preparation have explicit mathematical realizations; their physical actuation is not inferred from matrix-algebra closure or norm conservation alone. This does not promote M1 uniqueness or empirical closure.
+Owners: `D0/Representation/SourcePortPreparation.lean`, `PortFrameCovariance.lean`, `PreparationMemoryBound.lean`; exact verification and derivation: `04_CERTIFICATES/order_memory_source_verify.py`. The constructed interaction and selective preparation have explicit mathematical realizations; their physical actuation is not inferred from matrix-algebra closure or norm conservation alone. This does not promote M1 uniqueness or empirical closure.
 
 ### 03.26.3 Three-reference identification and whole-apparatus equivalence
 
@@ -1178,7 +1177,7 @@ If the action is required to remain in the existing Q₈ table and square to −
 
 A concrete orthogonal change of memory coordinates, `T(a,b,c,d)=(a,d,−c,b)`, implements the Q₈ automorphism `i↦k, j↦−j, k↦i` and transports every source action. When references and input are transported as well, the golden mixer and port readout are unchanged and the comparison words are conjugate. Thus the i and k constructions are equivalent representations of this finite apparatus under simultaneous transport. Changing only the interaction while physically anchoring the references is distinguishable. Neither statement establishes equivalence or inequivalence of entire physical worlds.
 
-Owner: `D0/Representation/CouplingAxisReadout.lean`; exact forward-circuit verification: `_TASKS_ORDER_MEMORY_20260906/axis_verify.py`; derivation and interpretation boundaries: `AXIS_IDENTITY.md` in the same directory. No empirical or global uniqueness promotion is made.
+Owner: `D0/Representation/CouplingAxisReadout.lean`; exact forward-circuit verification: `04_CERTIFICATES/order_memory_axis_verify.py`. No empirical or global uniqueness promotion is made.
 
 ### 03.26.4 Golden transfer into retained correlations
 
@@ -1203,7 +1202,7 @@ These are squared readout coordinates, not entropy or cosmological matter fracti
 
 `D0.Representation.GoldenCoherentMemory` proves orthogonality, real-vector blank
 evolution, coefficient closure, coordinate balance and reconstruction. Exact
-complex-matrix checks in `_TASKS_RELATIONAL_CLOSURE_20260909/coherent_verify.py`
+complex-matrix checks in `04_CERTIFICATES/relational_coherent_verify.py`
 verify the stated Pauli readouts, partial trace, and five consecutive recordings
 with all old records retained. The local contrast is `φ^(−3n)z₀` for diagonal input,
 while the two joint states from opposite basis inputs remain orthogonal. The
@@ -1212,7 +1211,7 @@ physical availability of these resources is inferred. Preparation, coupling and
 joint-readout implementation remain explicit bridges.
 ## 03.v15 Active standard-language contract
 
-_This section is the active standard-language layer of BOOK_03 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+_This section is the active standard-language layer of BOOK_03 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
 
 _Standard-language reading of the terms this book uses:_
 
@@ -1243,7 +1242,7 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b03-8]: forcing: GOLDEN DEF II.3.1, BOOK-II-MECHANISM
 [^b03-9]: forcing: GOLDEN THE 4.1.2, BOOK-II-MECHANISM
 [^b03-10]: forcing: GOLDEN THE 4.1.2, BOOK-II-MECHANISM; completeness ⊥-argument
-[^b03-11]: Historical source: GOLDEN REM II.3.A.1, BOOK-II-MECHANISM. The scalar U(1) packaging is corrected for noncommutative Q8 memory by D0/Representation/OrderMemoryReadout.lean; the existing golden-gate readout is computed in D0/Representation/GoldenOrderInterferometer.lean. These built finite owners preserve the representation/apparatus boundary; see _TASKS_ORDER_MEMORY_20260906/README.md.
+[^b03-11]: Historical source: GOLDEN REM II.3.A.1, BOOK-II-MECHANISM. The scalar U(1) packaging is corrected for noncommutative Q8 memory by D0/Representation/OrderMemoryReadout.lean; the existing golden-gate readout is computed in D0/Representation/GoldenOrderInterferometer.lean. These built finite owners preserve the representation/apparatus boundary; see the registered finite owners and `04_CERTIFICATES/order_memory_verify.py`.
 [^b03-12]: open obligation — cert obligation open
 [^b03-13]: forcing: GOLDEN DEF II.3.APPX8.2.1, BOOK-II-MECHANISM
 [^b03-14]: forcing: GOLDEN THE II.3.APPX8.2.1a, BOOK-II-MECHANISM

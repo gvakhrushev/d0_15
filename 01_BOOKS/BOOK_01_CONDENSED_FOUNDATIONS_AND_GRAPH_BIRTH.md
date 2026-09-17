@@ -1,4 +1,3 @@
-<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 01 — Condensed Foundations, Finite Registration, and Construction of the Finite Incidence Graph
 
 > **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
@@ -10,7 +9,7 @@
 > - carrier → representation (state) space
 > - readout → measurement outcome (POVM effect)
 >
-> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
 
 
 > Scope: Finite/profinite support, graph birth, retained/archive split, and terminal-role construction.
@@ -594,7 +593,7 @@ The two THE derivations meet: the MDL-optimal irrational (Route B) is exactly th
 - **Hurwitz + `M1^+` canonization** (`D0-PHI-HURWITZ-CLASS-CANONIZATION-001`). Hurwitz, over *all* reals, selects the noble class; `M1^+` then selects its representative by minimal description. Within the period-one continued fractions `[n;n,n,\dots]` — roots of `x^2 - n x - 1`, discriminant `n^2+4` — minimal description selects `n = 1` uniquely, giving discriminant `5` and `(1+\sqrt5)/2`. At `n = 1` the equation `x^2 - x - 1 = 0` is the conclusion. Negative control: `n = 2` gives discriminant `8` and `1+\sqrt2`, so the canonization step can fail.
 - **Jones slot selection** (`D0-JONES-SLOT-SELECTOR-001`). Jones (1983) forces the subfactor index below `4` into `\{4\cos^2(\pi/n)\}`; finite depth gives `index < 4`; the owned M1 rational-capture clause (§01.21.1) gives irrationality; and by Niven the slots at `n = 3,4,6` are the rationals `1,2,3`, so the least irrational slot is `n = 5`, with value `(3+\sqrt5)/2 = \varphi^2`. Again `\varphi` is the output.
 
-The rigidity argument of §01.14 ("four unrelated failures at once") must be read on this repaired pair, not on four faces of one equation. Full verdict and evidence: `03_THEORY_MAP/D0_FORCING_ROUTES.json`.
+The rigidity argument of §01.14 ("four unrelated failures at once") must be read on this repaired pair, not on four faces of one equation. Full verdict and evidence: `02_REGISTRY/forcing_routes.json`.
 
 ### 01.6.1b Gleason-2D loophole and the Fibonacci fusion route [^b01-28]
 
@@ -2062,11 +2061,11 @@ V_{13}=V_9\sqcup four terminal roles A,B,C,D.
 
 This gives the first complete scene sizes `(9,11,13)`. The construction rules out alternatives: `V8` has no basepoint, `V10` has an extra hidden marker, `V11` cannot be replaced by `V10` without losing direct/return capacity, and `V13` cannot be replaced by `V12` without losing one terminal role.
 
-- **Certificate (count side)**: `05_CERTS/vp_v1141_abcd_omega8_v9_phi_capacity.py` checks the full capacity ladder `ABCD=D2×D2=4`, `Ω8=8`, `V9=9`, `V11=11`, `V13=13`, total `|V|=33`, and the V8/V10 exclusions as finite-capacity gaps. Status: VERIFIED (count).
+- **Certificate (count side)**: `04_CERTIFICATES/vp_v1141_abcd_omega8_v9_phi_capacity.py` checks the full capacity ladder `ABCD=D2×D2=4`, `Ω8=8`, `V9=9`, `V11=11`, `V13=13`, total `|V|=33`, and the V8/V10 exclusions as finite-capacity gaps. Status: VERIFIED (count).
 
 **[E-SYNTH record (candidate reading layer; `GAP_E_SYNTHESIS_MEMO.md`, post-skeptic — closure headline killed, computation layer retained).** Three computed structure results survive and are recorded here without any closure reading. The proper nontrivial characteristic subquotients (canonical layers) of the role group `Q₈` are exactly `{ℤ₂, V₄}`, sizes `{2,4}` — numerically matching the two extensions above; the order-8 census finds `Q₈` uniquely clean among the five order-8 groups (`ℤ₂³` has zero canonical layers); and the four roles A,B,C,D admit a coset reading as the four cosets of `Z(Q₈)`, each a sign-pair `{x,−x}`. Load-bearing caveats: the exhaustiveness clause (GAP-E — that `{D₂, ABCD}` is the COMPLETE admissible extension list) remains OPEN, with the E-SYNTH kill its FOURTH independent confirmation (after R3 underdetermination, the E-b forge, and the dyad-power kill); and the `D₂ = Z(Q₈)` identification is fork-open against the owned two-port dyad reading. No "scene is a central extension" reading is asserted.]
 
-**[Window final state (candidate record; `CLOSE_GAP_W_MEMO.md` + `CLOSE_GAP_E_META_MEMO.md`, both post-independent-skeptic 2026-07-06).** The `[9,13]` window stands lower-SEALED / upper-OPEN. Lower bound: `|V_base| = |Ω₈| + 1 = 9` seals through W-REC — owned architecture, the complementarity `P_N + Q_N = I` with the single `:1998` orbit-averaged archive writer — plus one REGISTERED explicit bridge assumption, `ASSUMP-CLASS-RECORD-IS-ADDRESSABLE` (`LEAN_ASSUMPTION_LEDGER.csv` row 25; the R-A IS-typing of the re-detection class-record across the §01.3/§01.11.3 layer boundary), carried by `D0-GAP-W-WITNESS-PLUS-ONE-001` (lean-side LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS; release stays PROOF-TARGET): a registered-bridge seal, NOT a full owned closure. Upper bound: stays OPEN after the closed 9-pass GAP-E campaign (R3 → E-b → dyad-power → E-SYNTH → 5th → 6th → RAISE-7th → H7-probe → META-9th, the last KILLED under §05.8.R); the STOP-RULE is binding (no further forging), the residue is ONE sentence — "an admissible zone-extension alphabet is a coset partition of a characteristic-chain term `1 < Z < Q₈`" — and the only two adjudicated doors are (a) an owner-authored banning sentence of the `:1539` exogenous-catalog type, or (b) an owned algebraic exhaustion of the `:1548` capacity inventory of the row-257 CASE-1 type; absent either, the surviving rivals are `z₃ ∈ {15, 17}` (`|X| ∈ {6,8}`, finite GIVEN the assembly-grade partition bound; owned-parity-only residue: `z₃` odd ≥ 13); `z₃ = 12` and every odd-letter-count alphabet are excluded by the owned orientation-parity ban (B01:1893-1909, B03 §03.23.6, row 522) — see `CLOSE_GAP_E_OWNER_MEMO.md`. [EoR — GAPE-1011 2026-07-06, 10th pass.]]
+**[Window final state (candidate record; `CLOSE_GAP_W_MEMO.md` + `CLOSE_GAP_E_META_MEMO.md`, both post-independent-skeptic 2026-07-06).** The `[9,13]` window stands lower-SEALED / upper-OPEN. Lower bound: `|V_base| = |Ω₈| + 1 = 9` seals through W-REC — owned architecture, the complementarity `P_N + Q_N = I` with the single `:1998` orbit-averaged archive writer — plus one REGISTERED explicit bridge assumption, `ASSUMP-CLASS-RECORD-IS-ADDRESSABLE` (`02_REGISTRY/assumptions.csv` row 25; the R-A IS-typing of the re-detection class-record across the §01.3/§01.11.3 layer boundary), carried by `D0-GAP-W-WITNESS-PLUS-ONE-001` (lean-side LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS; release stays PROOF-TARGET): a registered-bridge seal, NOT a full owned closure. Upper bound: stays OPEN after the closed 9-pass GAP-E campaign (R3 → E-b → dyad-power → E-SYNTH → 5th → 6th → RAISE-7th → H7-probe → META-9th, the last KILLED under §05.8.R); the STOP-RULE is binding (no further forging), the residue is ONE sentence — "an admissible zone-extension alphabet is a coset partition of a characteristic-chain term `1 < Z < Q₈`" — and the only two adjudicated doors are (a) an owner-authored banning sentence of the `:1539` exogenous-catalog type, or (b) an owned algebraic exhaustion of the `:1548` capacity inventory of the row-257 CASE-1 type; absent either, the surviving rivals are `z₃ ∈ {15, 17}` (`|X| ∈ {6,8}`, finite GIVEN the assembly-grade partition bound; owned-parity-only residue: `z₃` odd ≥ 13); `z₃ = 12` and every odd-letter-count alphabet are excluded by the owned orientation-parity ban (B01:1893-1909, B03 §03.23.6, row 522) — see `CLOSE_GAP_E_OWNER_MEMO.md`. [EoR — GAPE-1011 2026-07-06, 10th pass.]]
 
 **[Window final state — UPDATE (door (b) taken; `CLOSE_GAP_E_DIMENSIONAL_MEMO.md` 12th pass 2026-07-07, Lean formalization 13th pass 2026-07-18).** Door (b) is DISCHARGED at operative grade by the port-power exhaustion `D0-GAP-E-PORT-EXHAUSTION-001`: the admissible zone-extension alphabets are exactly the port-powers `D₂^k` of the binary terminal dyad with `k ≤ 2`, where the cap `k ≤ 2` is the OWNED two-comparison-kind count (`D0-DETECTION-QUADRATIC-001`, `:1130`) with the `:860` falsifier as its second channel, and the tower `{D₂¹, D₂²}` is the owned capacity chain (`:1548`/`:1816`). The surviving even rivals die natively: `|X| = 6` is not a dyad power at any exponent (cap-independent), `|X| = 8 = D₂³` demands a third port (cap-gated; re-admitted at cap 3 — the machine-checked negative control). Hence `z₃ ≤ 13`: the `[9,13]` window is upper-SEALED at owned-inheritance/operative grade. The ARITHMETIC leg is Lean-proved and wired (`D0.Tower.PortPowerExhaustion`, kernel build green; corroborated from the distinct factor-lattice ambient by `D0.Tower.FactorBlockLaw` — group-grade Lagrange exclusion of sizes 3/5/6 for ALL subgroups of `ℤ₂³`); the CATEGORICAL leg (two ports/kinds exhaust the tower) remains a forcing reading, PROOF-TARGET, exactly parallel to `D0-DETECTION-QUADRATIC-001`'s own categorical leg — the seal is operative, not a CORE-THE. The STOP-RULE's "absent either door" clause reads "door (b) taken"; the H7 sentence and door (a) lapse as unneeded. Reopening hooks: sever BOTH channels (deny port ⟺ comparison-kind AND read `:860` as consistency-check), or exhibit a third comparison kind.]
 
@@ -2130,7 +2129,7 @@ The degree of every 13-shell vertex is `d13 = |V9| + |V11| = 9 + 11 = 20`. This 
 - **MECH-LIMIT-D (the one declared gap).** Orientation-blindness (THE 3.11.B: flavour structure must be blind to an external ℤ2 orientation bit) excludes the T-charged class (cost 4). The cost-5 class is excluded by address-aliasing: winding 5 collides with the operational address `D_Σ = 5`, so using a role-address as a flavour winding is a scene pointer collision = hidden memory (grammar 01.11C). What remains: the trivial class (`W ∝ 1`, generation 1) and the full catalog-free class (`W ∝ 20`, generation 2). **The aliasing step is stated but not formalized — this is a soft joint of the corpus, alongside the role lists and the +2 parity.**
 - **COR-E.** Hence `m_s/m_d = 20`, exact.
 
-**[^b01-44]** — the `φ_E(44)=20=d13` count is certified by `05_CERTS/vp_v1141_abcd_omega8_v9_phi_capacity.py`. The empirical cross-check (lattice `m_s/m_d = 20.01 ± 0.55`, 0.03σ) and the Gatto–Sartori–Tonina Cabibbo bridge `sinθ_C = 1/√20` are downstream comparisons, not part of the forcing.
+**[^b01-44]** — the `φ_E(44)=20=d13` count is certified by `04_CERTIFICATES/vp_v1141_abcd_omega8_v9_phi_capacity.py`. The empirical cross-check (lattice `m_s/m_d = 20.01 ± 0.55`, 0.03σ) and the Gatto–Sartori–Tonina Cabibbo bridge `sinθ_C = 1/√20` are downstream comparisons, not part of the forcing.
 
 ## 01.21 Hurwitz-rigid phase generator and non-resonant spatial unfolding
 
@@ -2467,7 +2466,7 @@ A finite detector supplies effects, a detector state, raw responses, coarse-grai
 ### Born 4.0 composition to norm-square
 The phase-blind quadratic response of a finite phase-quadrature atom.
 - **Lean Owner**: `D0.Core.BornQuadraticOrigin` (`phase_blind_quadratic_response_is_norm_sq_scaled`, `unit_phase_blind_quadratic_response_is_norm_sq`).
-- **Certificate**: `05_CERTS/vp_born_quadratic_origin.py` (`PASS_BORN_QUADRATIC_ORIGIN`).
+- **Certificate**: `04_CERTIFICATES/vp_born_quadratic_origin.py` (`PASS_BORN_QUADRATIC_ORIGIN`).
 - **Guardrail**: Parallelogram quadratic response and quarter-turn phase blindness select the unit norm-square response before Born normalization.
 
 ### Torus shell overlap response (Torus Shell Overlap And Born Readout)
@@ -2486,7 +2485,7 @@ Readout is D^dagger D applied to the T^n-state.
 ### Cut-and-project quasicrystal operator origin
 Aperiodic geometry generated by $\varphi^{-2}$ irrational phase return:
 - **Lean Owner**: `D0.Physics.QuasicrystalPhenomenology` (`quasicrystal_phenomenology_operator_origin`, `D0PhiCutProject`, cut-and-project quasicrystal geometry).
-- **Certificate**: `05_CERTS/vp_quasicrystal_phenomenology_operator_origin.py` (`PASS_QUASICRYSTAL_PHENOMENOLOGY_OPERATOR_ORIGIN`).
+- **Certificate**: `04_CERTIFICATES/vp_quasicrystal_phenomenology_operator_origin.py` (`PASS_QUASICRYSTAL_PHENOMENOLOGY_OPERATOR_ORIGIN`).
 - **Guardrail**: Generational inflation, archive phason strain, chiral window offset, phason-flip drag, and fractional charge weights are read from a common cut-and-project vacuum support.
 
 ## 01.24 Mobius-Witness topological halting
@@ -2515,7 +2514,7 @@ E_\Omega = \frac{1}{|G_8|} \sum_{g \in G_8} P_g F_N P_g^\dagger.
 This average is invariant, but it is **not** a scalar multiple of the identity unless irreducibility of the representation on the trace space is separately proved.
 ## 01.v15 Active standard-language contract
 
-_This section is the active standard-language layer of BOOK_01 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+_This section is the active standard-language layer of BOOK_01 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
 
 _Standard-language reading of the terms this book uses:_
 

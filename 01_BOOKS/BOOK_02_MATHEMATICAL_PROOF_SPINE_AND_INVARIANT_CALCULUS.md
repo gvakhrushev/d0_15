@@ -1,4 +1,3 @@
-<!-- AUTO-ASSEMBLED from 01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS/ by tools/assemble_books.py — edit the per-section files, never this generated book. -->
 # BOOK 02 — Mathematical Proof Spine and Invariant Calculus
 
 > **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
@@ -11,7 +10,7 @@
 > - carrier → representation (state) space
 > - readout → measurement outcome (POVM effect)
 >
-> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`).
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
 
 
 > Scope: Finite operator identities, feedback positivity, log-det calculus, and theorem-spine ownership.
@@ -2339,6 +2338,68 @@ deleted-vertex cofactor of the `SimpleGraph` Laplacian and proves
 Matrix-Tree boundary is only the combinatorial equality between this
 determinant and the cardinality of spanning trees; that theorem is still
 absent and no tree count is claimed.
+## 02.34a Operator recognition without a preselected tripartite class
+
+The complete-tripartite class is a conclusion, rather than an input, in
+`D0-DENSE-OPERATOR-SCENE-RIGIDITY-001`. Let \(A\) be an arbitrary finite
+symmetric zero-one matrix over \(\mathbb Q\) with zero diagonal. Then
+
+\[
+|V|=33,\qquad \operatorname{rank}A\leq3,\qquad
+\operatorname{tr}(A^2)=718
+\quad\Longrightarrow\quad G_A\cong K(9,11,13).
+\]
+
+No partition, triangle, connectedness or absence of isolated vertices is
+assumed. Lean constructs three nonempty fibres, proves that adjacency is
+exactly inequality of their labels, and recovers the unordered cardinalities
+\(\{9,11,13\}\). Two vertices belong to the same fibre if and only if their
+adjacency rows are equal. The implementation also constructs the corresponding
+graph isomorphism. Permuting labels changes neither this equivalence relation
+nor the recovered graph.
+
+The proof has four steps:
+
+1. The second moment counts twice the edges, so \(E=359\). On 33 vertices
+   this exceeds the triangle-free bound \(\lfloor33^2/4\rfloor=272\).
+2. A triangle and rank at most three determine every matrix entry through its
+   three triangle columns. Symmetry, the zero diagonal and binary entries force
+   every nonisolated vertex to miss exactly one triangle neighbour. These three
+   possible profiles give the complete-tripartite support.
+3. A support of at most 32 vertices would have at most
+   \(\lfloor32^2/3\rfloor=341\) edges. Thus all 33 vertices are active.
+4. The existing exact vertex/edge inverse theorem forces the positive part
+   sizes to be \(9,11,13\). Consequently
+   \(\operatorname{tr}(A^3)=6\cdot9\cdot11\cdot13=7722\): the third moment
+   is now a prediction of the passport, not an independent input.
+
+The rank/clique argument is a formalized special case of the classical
+[Akbari-Cameron-Khosrovshahi recognition theorem, Corollary 8](https://webspace.maths.qmul.ac.uk/p.j.cameron/preprints/ranksign.pdf).
+The contribution here is its checked composition with the D0 inverse theorem
+and the removal of the supplied tripartite class, not a novelty claim for
+the classical graph theorem.
+
+This recognition route does not use `ASSUMP-SMITH-ONE-POSITIVE`. It proves the
+required scene instance directly; the broader Smith characterization for
+arbitrary numbers of parts remains an explicit external owner.
+
+The independent exact-integer certificate `vp_spectral_scene_rigidity.py`
+checks all 33,867 labelled simple graphs with one through six vertices, scene
+relabelings, and one deletion rival for each input reading:
+
+| Omitted reading | Rival | Why it is not the scene |
+|---|---|---|
+| Rank bound | \(K(12,12,9)\) minus one edge between its two 12-parts | Same 33 vertices and both moments 718 and 7722, but rank 5 |
+| Carrier size | \(K(9,11,13)\) plus an isolated vertex | Same rank and every positive moment, but 34 vertices |
+| Second moment | \(K(11,11,11)\) | Same 33 vertices and rank 3, but second moment 726 |
+
+These are finite certificate controls; the universal implication and the
+concrete input-passport witness are Lean theorems without additional axioms.
+The result identifies a supplied finite simple operator. It does not derive
+the values 33, 3 and 718, or the binary adjacency contract, from primitive
+verifiability. Nor does it identify a physical realization or independently
+close continuum and empirical obligations.
+
 ## 02.35 Theorem-spine owners: Born 2.0, Torus-Core13, and Galois balance
 
 The active proof spine is:
@@ -2544,7 +2605,7 @@ F_N=(Q_NU_NP_N)^\dagger(Q_NU_NP_N).
 \]
 ## 02.v15 Active standard-language contract
 
-_This section is the active standard-language layer of BOOK_02 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `00_LANGUAGE_NORMALIZATION/D0_STANDARD_LANGUAGE_ROSETTA.md`._
+_This section is the active standard-language layer of BOOK_02 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
 
 _Standard-language reading of the terms this book uses:_
 

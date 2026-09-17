@@ -1,0 +1,28 @@
+{
+  "protocol_id": "D0-RD-01",
+  "status": "READY",
+  "sample_data": false,
+  "measurement_level_only": true,
+  "prospective_preregistration": false,
+  "data_local_path": "05_EXPERIMENTS/REDSHIFT_DRIFT/direct_redshift_drift_measurements.csv",
+  "data_sha256": "babff30f2659436ee8878d60068c069e2b04935d3d015f5e4c7a0c4705fdb37b",
+  "sources": [
+    {
+      "id": "arXiv:1211.4585",
+      "title": "Toward a Direct Measurement of the Cosmic Acceleration",
+      "url": "https://export.arxiv.org/e-print/1211.4585",
+      "local_path": "05_EXPERIMENTS/REDSHIFT_DRIFT/source/1211.4585.tar",
+      "sha256": "b95084f2fb5b8e8f3af5ed86d3fcd487ca5880b067c2479947164f12e1bd0a18"
+    },
+    {
+      "id": "arXiv:2603.02318",
+      "title": "The ESPRESSO Redshift Drift Experiment III",
+      "url": "https://export.arxiv.org/e-print/2603.02318",
+      "local_path": "05_EXPERIMENTS/REDSHIFT_DRIFT/source/2603.02318.tar",
+      "sha256": "dba07cc504fbc60eae5ea3167e6b1ce01878a31071ac8e715bdb2bbbf675bab5"
+    }
+  ],
+  "independence_rule": "ten GBT rows form one low-z technology block; only SB2_pixel is the independent high-z holdout; SB2_likelihood is a correlated control",
+  "alpha": 0.001,
+  "confidence_level": 0.999
+}
