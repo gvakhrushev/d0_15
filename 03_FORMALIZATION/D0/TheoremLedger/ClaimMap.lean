@@ -1134,7 +1134,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-LUCAS-MUON-ELECTRON-RATIO-001", moduleName := "D0.Matter.LucasMuonElectronRatio",
       theoremName := "phi_inv_sq;lucasRatio_eq;lucasRatio_interval;lucasRatio_pdg_defect;lucasRatio_algebraic;lucas_muon_electron_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-PERRON-PHI3-CARRIER-OWNER-001", moduleName := "D0.Spectral.PerronPhi3Carrier",
-      theoremName := "carrier_not_trace_class;normLog_tendsto;logCesaroPhi3_tendsto;dixmier_coefficient_ne_zero;logCesaroPhi3_c2_tendsto_mu2;carrier_vs_present_core;perron_phi3_carrier_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "carrier_not_trace_class;normLog_tendsto;logCesaroPhi3_tendsto;dixmier_coefficient_ne_zero;logCesaroPhi3_c2_tendsto_mu2;carrier_vs_present_core;perron_phi3_carrier_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SEDENIONS-THREE-GENERATIONS-001", moduleName := "D0.Algebra.Sedenions",
+      theoremName := "octonion_branch_card;branch_generation_bijective;s3_cycle_order3;s3_swap_order2;s3_action_transitive;sedenion_cayley_dickson_dim;octonion_subalgebra_intersection_dim;sedenion_three_generation_forcing", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALBERT-JORDAN-BL-ELIMINATION-001", moduleName := "D0.Algebra.AlbertJordan",
+      theoremName := "albert_algebra_dim_eq;e6_fundamental_eq_albert;majorana_charge_eq_two_b;majorana_invariance_forces_b_zero;majorana_singlet_forces_sm_hypercharge;albert_jordan_bl_elimination", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SOLID-PHI-CYCLOTOMIC-TRACE-001", moduleName := "D0.Condensed.SolidPhi",
+      theoremName := "ZPhi.toReal_zero;ZPhi.toReal_one;ZPhi.toReal_add;ZPhi.toReal_mul;mu2_pos;mu2_eq_frac;solid_phi_cyclotomic_trace_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-GROMOV-HAUSDORFF-DEQUARANTINE-001", moduleName := "D0.Bridge.GromovHausdorff",
+      theoremName := "quantum_ghp_cauchy_discharged;gromov_hausdorff_dequarantine_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

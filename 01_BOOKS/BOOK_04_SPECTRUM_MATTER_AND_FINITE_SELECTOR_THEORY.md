@@ -1052,9 +1052,21 @@ m_{rest} = m_0\cdot W,
 
 with `W` the memory winding number. There is no "substance" term: a leptonic rest mass is the number of times the canonization cycle wraps, and nothing else.  This is the structural definition of rest mass that the `τ`, `m=1/τ` chain above presumes.
 
-### Why three copies: integer Lucas quantization
+### Why three copies: integer Lucas quantization and the Sedenion Cl(8) Triality
 
 **[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized [^b04-88]. [^b04-79].** The reason the electron has copies `μ, τ` (and the baryon sector has heavy modes) is that in a discrete `φ`-graph the layer capacities cannot take arbitrary real values — they quantize *integrally* as Lucas numbers `L_n`. A non-integer layer capacity would need an external ruler to define the fractional part, ⊥M1. So the only admissible excitation capacities are `{L_n}`.  The signed Lucas *trace identity* `Tr(T^n)=(-1)^n L_n` and its uniqueness-of-projection forcing are owned by 04.0 (the Lucas-trace canonical integer projection, certified by existing finite certificates); the generation-count cutoff at `n=15` (the `9n` budget break) is owned by 04.4. What this section adds is the *mass-ratio* consequence of that same integer ladder.
+
+**[THE 04.8.SEDENION.3] Algebraic derivation of three generations via Sedenions $\mathbb{S}$ (`D0-SEDENIONS-THREE-GENERATIONS-001`).**
+While the combinatorial torus $C_4 \times R_3$ supplies strictly 2 branch orbits ($p_\mu = 1/4, p_\tau = 1/3$), proving the impossibility of an in-carrier fixed point for the electron on the bare graph (`LeptonBranchFixingNoGo`), the Cayley-Dickson algebra of sedenions $\mathbb{S} = \mathbb{O} \oplus \mathbb{O}\ell$ provides the exact algebraic resolution (`D0.Algebra.Sedenions`):
+1. Sedenion left-multiplication generates the 8-graded Clifford algebra $\mathbb{C}\ell(8)$.
+2. Sedenions admit an outer automorphism group containing $S_3$, which transitively permutes the three distinct octonionic subalgebras $\mathbb{O}_1, \mathbb{O}_2, \mathbb{O}_3$ intersecting along the quaternionic core $\mathbb{H}$ (`dim = 4`).
+3. Under the $S_3$ action, the spinor space decomposes into exactly three minimal left ideals, generating three fermion generations without requiring a fixed point on the combinatorial graph.
+
+**[THE 04.8.JORDAN.BL] Albert Jordan algebra and Majorana $B - L$ elimination (`D0-ALBERT-JORDAN-BL-ELIMINATION-001`).**
+In `D0.Algebra.AlbertJordan`, the 2-dimensional anomaly variety $\operatorname{span}\{Y, B - L\}$ is dynamically collapsed to the single Standard Model hypercharge ray $\operatorname{span}\{Y\}$:
+1. In the exceptional Jordan algebra $J_3(\mathbb{O})$ (dimension 27, automorphism $F_4 / E_6$), the right-handed neutrino Majorana mass term $\overline{(\nu^c)^c} \nu^c$ carries gauge charge $2b$ under general generator $aY + b(B - L)$.
+2. Majorana condensation and gauge invariance of the singlet condensate strictly demand $2b = 0 \implies b = 0$.
+3. This eliminates $B - L$ dynamically, transforming $Y_{\nu^c} = 0$ from an arbitrary convention into an algebraic consequence of Majorana neutrino mass generation.
 
 ### The muon ratio: forced-additive integer part (THE), φ⁻² correction (HYP)
 

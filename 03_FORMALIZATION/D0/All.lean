@@ -3,10 +3,12 @@
 
 import D0.Active.NonzeroMatterSourceNeutrality
 import D0.Active.ScalarPoissonReduction
+import D0.Algebra.AlbertJordan
 import D0.Algebra.Clifford
 import D0.Algebra.D0InternalDimensionSelector
 import D0.Algebra.GaloisPhiNontrivial
 import D0.Algebra.HurwitzLocalBoundary
+import D0.Algebra.Sedenions
 import D0.Born
 import D0.Bridge.AdlerWeissBridge
 import D0.Bridge.Assumptions.BellissardGapLabel
@@ -28,6 +30,7 @@ import D0.Bridge.ConnesReconstructionBridge
 import D0.Bridge.ConstrainedHamiltonianEmbeddingPassport
 import D0.Bridge.DixmierTraceBridge
 import D0.Bridge.FinalBridgeIndex
+import D0.Bridge.GromovHausdorff
 import D0.Bridge.InterpretationSpine
 import D0.Bridge.LocalRaychaudhuriRepresentation
 import D0.Bridge.LorentzBridge
@@ -76,6 +79,7 @@ import D0.Combinatorics.Tripartite
 import D0.Combinatorics.TripartiteSignatureGeneral
 import D0.Complexity.HeatTraceLyapunov
 import D0.Condensed.CondensedPhiVacuum
+import D0.Condensed.SolidPhi
 import D0.CondensedAnchor.DetectorSupportGoldenWeight
 import D0.Core.BornAreaPreservationNoGo
 import D0.Core.BornFinite
