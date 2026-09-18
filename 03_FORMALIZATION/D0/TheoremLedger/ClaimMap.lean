@@ -1124,7 +1124,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001", moduleName := "D0.Foundation.VerifiabilityNecessity",
       theoremName := "operational_signature_injective;operationalEmpiricalQuotientEquivState;verifiedTheorySignatureEmbedding;m1_regress_closure_via_verifiability;removing_distinction_breaks_verification;removing_retention_breaks_verification;removing_comparison_breaks_verification;removing_second_line_breaks_verification;verifiability_necessity_controls", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001", moduleName := "D0.Foundation.VerifiabilityNecessity",
-      theoremName := "verificationLineOutcome_eq;verified_lines_collapse_in_outcome_layer;archivedVerificationLine_injective;provenance_memory_injective_of_joint_injective;provenance_memory_card_lower_bound;unit_provenance_memory_insufficient;independent_verification_forces_provenance_archive", status := ClaimStatus.leanCoreProved }
+      theoremName := "verificationLineOutcome_eq;verified_lines_collapse_in_outcome_layer;archivedVerificationLine_injective;provenance_memory_injective_of_joint_injective;provenance_memory_card_lower_bound;unit_provenance_memory_insufficient;independent_verification_forces_provenance_archive", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-POPPERIAN-BOOTSTRAP-001", moduleName := "D0.Foundation.PopperianBootstrap",
+      theoremName := "killingTest_iff_contract;killingTest_forces_functional_tuple;killingTest_record_injective;killingTest_catalogue_invariant;no_killingTest_single_line;alternative_burden;boolProtocol_killingTest", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
