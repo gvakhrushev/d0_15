@@ -242,6 +242,40 @@ The detector asymmetry quantum is fixed, not fitted:
 
 Book 00 uses this as a gateway theorem.  Book 01 constructs the finite support and scene; Book 05 owns the proof and uniqueness audits.
 
+### 00.3a Exact verification forces orthogonal registration supports
+
+In `D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001`, the primitive verification contract \(\operatorname{compare}(x, y) = [x \ne y]\) is analyzed on physical states represented by density operators \(\tau_x\). If a two-input measurement effect \(0 \le C \le I\) reliably outputs 0 for identical records and 1 for distinct records, the supports of distinct states are strictly orthogonal:
+\[
+\operatorname{supp}(\tau_x) \perp \operatorname{supp}(\tau_y)\qquad\text{for all }x \ne y.
+\]
+Thus, exact distinguishability cannot be implemented over non-orthogonal quantum states without error. Furthermore, when records are registered across the three archive sectors of the scene, memory minimality alone drops the intermediate sector \(W_{11}\) (yielding dimension 30), whereas requiring 3-record distinguishable comparison forces full participation of all three archive sectors \(W_9, W_{11}, W_{13}\), fixing the minimal pure memory dimension to 31.
+
+### 00.3b Symmetrizing the golden source: exact price and parity uniqueness
+
+In `D0-GOLDEN-READOUT-SYMMETRIZATION-COST-001`, the Bernoulli golden source with letters \(\{A, B\}\) and weights \(p = \varphi^{-1}\), \(q = \varphi^{-2}\) is tested by arbitrary deterministic binary tests \(f: \{A, B\}^N \to \{0, 1\}\). The exact minimum total variation distance to a fair coin is
+\[
+\varepsilon_N^* = \min_f \left|\Pr(f = 1) - \frac{1}{2}\right| = \frac{1}{2}\varphi^{-3N}.
+\]
+For every \(N \ge 1\), this lower bound is reached uniquely by the parity of the count of letter \(A\) and its logical negation. The lower bound is proved analytically via the non-zero integer norm in the quadratic ring \(\mathbb Z[p]\), establishing that \(\varepsilon_1^* = \delta_0\), and that parity is the unique algebraic extraction channel.
+
+### 00.3c Operational independence defect on finite preparation records
+
+In `D0-PREPARATION-INDEPENDENCE-DEFECT-001`, independence between two registered record components \((A, B)\) is tested without assuming prior knowledge of catalog labels or probabilities. Using pair coincidence events across at most four independently prepared records,
+\[
+J = \Pr[A_1 = A_2, B_1 = B_2],\quad M = \Pr[A_1 = A_2, B_1 = B_3],\quad K = \Pr[A_1 = A_2, B_3 = B_4],
+\]
+the operational independence defect is defined as:
+\[
+\Delta = J - 2M + K = \sum_{a,b} (p_{ab} - u_a v_b)^2 \ge 0,
+\]
+which vanishes if and only if the joint distribution factorizes: \(p = u \otimes v\). For independent preparations, the relative mean squared error \(\rho\) satisfies \(1 + \rho_{A \otimes B} = (1 + \rho_A)(1 + \rho_B)\), establishing the strict additivity of \(\log(1 + \rho)\).
+
+## 00.3d External-input ledger after the two-channel origin
+
+The admissibility contract requires every scene number to be traced to an owner. The collision invariant \(P_2 = 371/1089\) and the return modulus \(q_T = 44\) were, until §01.22a, carried as inputs: \(q_T = \operatorname{lcm}(|\mathrm{Role}|, |V_{11}|)\) read \(|V_{11}|\) in, and the capacity centre \(q_T/|\mathrm{Role}| = 11\) read it back out. They are now computed by two independent channels that share no input beyond the integer \(2\): the return groups \(\mathrm{Fix}(T^n)\) of the golden toral class (`D0-TORAL-ORIGIN-OF-QT-NONCIRCULAR-001`, `D0-TORAL-ORIGIN-OF-P2-001`) and the atomic-readout zone ladder of a binary two-line preparation register (`D0-TYPED-LADDER-CENTERING-FORCES-Q2R2-001`, `D0-TYPED-INVENTORY-ORIGIN-OF-QT-001`), which agree on \((|\mathrm{Role}|, \Delta, |\Omega_8|, m, q_T) = (4,2,8,11,44)\) (`D0-TWO-CHANNEL-SCENE-WELD-001`).
+
+Residual inputs, stated so that they can be attacked: (i) the golden toral class itself (owner: \(\varphi\)-rigidity); (ii) the constant-step rule for the address ladder (owner: orientation parity, §01.22); (iii) the minimality rule selecting the first return above the oriented role carrier. A Lucas-return coincidence is explicitly *not* accepted as a selector (`D0-LUCAS-WELD-NOT-A-SELECTOR-NOGO-001`). The structural identification of the three zones with the period-3 seed orbit remains a proof target (`D0-THREE-ZONES-SEED-ORBIT-IDENTIFICATION-001`).
+
 ## 00.4 Condensed/profinite placement
 
 The upstream object is not a smooth carrier.  The upstream test object is a weighted profinite detector support:

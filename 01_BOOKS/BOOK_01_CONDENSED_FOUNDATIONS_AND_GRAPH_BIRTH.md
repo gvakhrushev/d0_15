@@ -1422,6 +1422,45 @@ source of the D0 orientation bit.  This is not true for every tripartite
 complex: the formal negative control \(K(2,2,2)\) has a one-zone swap acting
 with determinant \(-1\).  The no-go is specific to the parity of
 \((8,10,12)\), not an artefact of the construction.
+
+### 01.8.2 Scene-free class selection by comparison statistics
+
+In `D0-SCENE-FREE-PARTITION-SELECTOR-001`, the complete tripartite scene \(K(9,11,13)\) is derived without assuming either tripartite structure, degree profiles, or rank bounds. Given 33 elementary alternatives with pair coincidence probability \(P_2 = 371/1089\) (equivalently \(\sum n_i^2 = 371\)), the cubic coincidence probability \(P_3 = \sum w_i^3\) attains a unique global minimum over all 17 integer partitions of 33 precisely at
+\[
+(n_1, n_2, n_3) = (9, 11, 13),\qquad P_3 = \frac{4257}{35937} = \frac{43}{363}.
+\]
+The next smallest sum of cubes is 4617 (for \((1, 8, 9, 15)\)), or 4797 for partitions with all parts \(\ge 2\). Furthermore, this is proved for the infinite family: for any \(m \ge 9\), on partitions of \(3m\) with sum of squares \(3m^2 + 8\), the unique minimizer of the sum of cubes is \((m-2, m, m+2)\).
+
+In `D0-COMPOSITIONAL-U-STATISTICS-VARIANCE-001`, this cubic selection criterion is given an operational origin: an unbiased U-statistic estimator \(\hat U_2\) of \(P_2\) from \(L\) independent preparations has exact sample variance
+\[
+\operatorname{Var}(\hat U_2) = \frac{2}{L(L-1)}P_2(1 - P_2) + \frac{4(L-2)}{L(L-1)}(P_3 - P_2^2).
+\]
+At fixed \(P_2\), minimizing the variance of the optimal coincidence estimator is strictly equivalent to minimizing \(P_3\).
+
+In `D0-NATIVE-SIZE-COMPOSITIONAL-LIMIT-NOGO-001`, the limitations of this operational derivation are mapped: uniform scaling \(N \mapsto aN, n_i \mapsto a n_i\) preserves all moments \(P_k\) and all adaptive comparison experiments, showing that the micro-scale 33 cannot be derived from record statistics alone without a capacity anchor. Furthermore, for the tensor product \(K(9,11,13) \otimes K(9,11,13)\) on 1089 vertices, an asymmetric competitor partition achieves a smaller sum of cubes by 110,592, showing that naive \(P_3\) minimization is not tensor-compositional without preparation factorization.
+
+In `D0-FINITE-COST-COMPOSITIONAL-SELECTOR-001`, this defect is repaired by the additive finite-cost criterion
+\[
+\mathcal C_{\lambda, L} = \log N + \lambda \log(1 + \rho_L),\qquad 0 < \lambda \le 1,
+\]
+which uniquely selects \((9,11,13)\) across all 17 candidate partitions for every sample budget \(L \ge 3\) at \(P_2 = 371/1089\).
+
+### 01.8.3 Typed memory from future continuations and atomicity boundary
+
+In `D0-TYPED-MEMORY-CONTINUATION-MINIMALITY-001`, the memory required to maintain distinguishable records is reconstructed without assuming an ad-hoc state space. Under independent line filling and distinguishability under future write continuations, the minimal memory for \(r\) lines with an alphabet of size \(q\) is uniquely isomorphic to partial assignments:
+\[
+M_r \simeq \{\bot, 0, \ldots, q-1\}^r,\qquad |M_r| = (q+1)^r.
+\]
+For two binary lines (\(q=2, r=2\)), this gives exactly 9 states, all of which are distinguished by at most one future write. The 8 non-empty partial assignments have swap fixed-point count 4, whereas \(\Omega_8 \simeq \operatorname{Role} \times \operatorname{Orient}\) has fixed-point count 2, proving that they are not equivariantly isomorphic under line swap. When counting atomic snapshots, representative layer counts give \(9, 11, 13\) (totaling 33), while the full support inventory contains 44 states and at most 32 orbits under swap.
+
+### 01.8.4 Compositional multi-register algebra, AF-tower and reference frame threshold
+
+In `D0-COMPOSITIONAL-SCENE-ALGEBRA-TOWER-001`, joint registers \(H^{\otimes k}\) of the scene \(K(9,11,13)\) are analyzed under the diagonal action of the automorphism group \(G = S_9 \times S_{11} \times S_{13}\). On two registers, the commutant \(\mathcal A_2 = \operatorname{End}_G(H^{\otimes 2})\) has dimension 309 (exceeding \(\dim(\mathcal A_1 \otimes \mathcal A_1) = 144\)), decomposing into
+\[
+\mathcal A_2 \simeq M_{12}(\mathbb C) \oplus M_7(\mathbb C)^{\oplus 3} \oplus \mathbb C^6 \oplus M_2(\mathbb C)^{\oplus 3}.
+\]
+The resulting tower of algebras yields an AF-algebra \(\mathcal A_\infty\) with a unique tracial state. An ideal internal reference frame for the scene symmetry appears at precisely 30 copies of the scene (\(d_9 + d_{11} + d_{13} = 8 + 10 + 12\)). The associated spectral triple \((\mathcal A_\infty, \mathcal H_\infty, \mathcal D_b)\) for scaling factor \(b > 1\) has metric dimension \(2\ln(33)/\ln(b)\) and a meromorphic zeta function.
+
 ## 01.9 Internal causality and the single line/tick section
 
 The internal metrological section is defined before SI calibration:
@@ -2438,6 +2477,75 @@ v^*:=\frac{2\pi}{9}=\frac{360^\circ}{9}=40^\circ .
 The `40°` step is a *representation* of the phase fraction, not a new CORE object: it adds no axiom, only writes `ν*` as an angle.  This `9`-step quantization is what makes the return ratios `44/7` and `710/113` well-posed *near-returns of a fixed discrete cycle* rather than approximants chosen post hoc to a continuum circle.  Status: CORE-FORCING (forcing: GOLDEN THE 3.13.A and COR 3.13.B(3), BOOK-I-ARCHITECTURE; ⊥-proof, glue-vs-catalog fork; `N<9` ⇒ address collapse, `N>9` ⇒ significance catalog).
 
 Taken together the three forcings close the non-post-hoc claim of this section: capacity fixes the address cardinalities `9, 11, 13`, the `(-1)^n` orientation parity fixes the `+2` step that connects them, and the glue-vs-catalog fork fixes the `9`-step cycle (`ν*=1/9`, `40°`) against which every return window is checked — all three derived before any ratio is evaluated, none of them a fitted parameter.
+
+## 01.22a Two-channel origin of the scene: toral return groups and typed preparation
+
+The preceding section still carries one circular reading.  The return modulus is written as `q_T = lcm(|ABCD|, V_11) = 44`, while the concrete repair-forcing module reads the capacity centre back as `capacityCenter = q_T / |Role| = 11`.  Taken together these two lines define `11` in terms of `11`.  This section removes the circle by exhibiting two independent computations, neither of which takes `|V_11|` as an input, and both of which return the same tuple
+
+```math
+(|\mathrm{Role}|,\ \Delta,\ |\Omega_8|,\ m,\ q_T) = (4,\ 2,\ 8,\ 11,\ 44),
+\qquad
+(9,11,13),\qquad P_2=\tfrac{371}{1089}.
+```
+
+**Channel I — return groups of the toral operator (`D0-TORAL-RETURN-GROUP-LADDER-001`, `D0-GOLDEN-CLASS-STERILE-RETURNS-001`).**  For `T = [[0,1],[1,-1]]` the periodic points of period dividing `n` form the finite group `Fix(T^n) = Z^2/(T^n - I)Z^2`, of order `#Fix_n = |det(T^n - I)|`.  Its Smith normal forms for `n = 1..6` are
+
+```
+n      : 1      2      3        4      5       6
+Fix    : 0      0      (Z/2)^2  Z/5    Z/11    (Z/4)^2
+#Fix_n : 1      1      4        5      11      16
+```
+
+with `#Fix_n = L_n` for odd `n` and `L_n - 2` for even `n` (certified to `n = 60`).  The first two returns are sterile.  Among all integral unimodular classes with `|trace| <= 10`, sterility of returns `1` and `2` holds **only** for `(trace, det) in {(-1,-1), (1,-1)}` — the golden class already owned by the `φ`-rigidity theorem of §01.14.  The first nontrivial return, `n = 3`, is the full two-torsion `T^2[2] ≅ (Z/2)^2`: `T ≡ I (mod 2)` exactly when `3 | n`, and `T` permutes the three nonzero half-periods as one 3-cycle (this is the primitive period-3 seed of `D0-TORAL-LUCAS-PERIODIC-SEED-OWNER-001`).  The cat map (trace `3`, det `1`) has first nontrivial return `Z/5`, cyclic — no Klein layer.
+
+Now define, using `T` only (`D0-TORAL-ORIGIN-OF-QT-NONCIRCULAR-001`):
+
+```math
+\mathrm{Role}_T := \mathrm{Fix}(T^3),\quad |\mathrm{Role}_T| = 4,\quad \Delta_T := \exp \mathrm{Fix}(T^3) = 2;
+\qquad
+\mathrm{Orient} := \mathbb Z/2 \ \text{(from } \det T = -1\text{)},\quad |\Omega_T| = 8;
+```
+
+```math
+m_T := \#\mathrm{Fix}_{n^*},\quad n^* := \min\{n : \#\mathrm{Fix}_n > |\Omega_T|\} = 5,\quad m_T = 11;
+\qquad
+q_T' := |\mathrm{Fix}(T^3)|\cdot|\mathrm{Fix}(T^5)| = 4\cdot 11 = 44.
+```
+
+So `|Role| = 4`, the `±2` half-width, `|Ω_8| = 8`, the centre `11` and the modulus `44` are all read off the golden toral class.  The Lucas-window argument of §01.19a/§01.20 ("the unique Lucas number in `[9,13]` is `11`") used the scene's own window; here the window is replaced by the `T`-internal threshold `|Ω_T| = 2·#Fix_3`.  The threshold is load-bearing: thresholds `|Role| = 4` or `|V_11| = 11` would give centres `5` and `16` and collision invariants `83/225` and `97/288`.  It is recorded as the residual internal selection rule (minimality: the first return that exceeds the oriented role carrier).
+
+**Consequence for the invariant (`D0-TORAL-ORIGIN-OF-P2-001`).**  With `(m, Δ) = (11, 2)` read from `T`, the centred triple gives `N = 33`, `Σ n_i^2 = 371`, and the exact identities (`D0-EXCESS-COLLISION-EQUALS-OMEGA8-001`)
+
+```math
+\sum_i n_i^2 - \frac{N^2}{3} = 2\Delta^2 = |\Omega_8| = 8,
+\qquad
+P_2 = \frac13 + \frac{|\Omega_8|}{N^2} = \frac{371}{1089},
+\qquad
+m^3 - \prod_i n_i = m\Delta^2 = 44 = q_T .
+```
+
+The excess collision mass over the uniform three-block baseline is exactly the oriented role carrier, and the triangle deficit of the centred scene is exactly the return modulus.  `P_2 = 371/1089` is therefore no longer an independent external input: it is a function of the golden toral class and the first-return rule.
+
+**Channel II — typed preparation with atomic readout (`D0-TYPED-LADDER-CENTERING-FORCES-Q2R2-001`).**  Take `r` independent write lines over a `q`-letter alphabet with the atomic (transactional) readout of §01.14: a `k`-line sub-register has `a(q,k) = 1 + q^k` atomic classes (`a(q,0) = 1`).  Complete records with an orientation bit form the live carrier `Ω(q,r) = {0..q-1}^r × {±}`, `|Ω| = 2q^r`, and zone `k` is
+
+```math
+z_k(q,r) = 2q^r + a(q,k),\qquad k = 0,\dots,r,\qquad \operatorname{rank} = r+1 .
+```
+
+The steps are `z_1 - z_0 = q` and `z_k - z_{k-1} = q^k - q^{k-1}` for `k >= 2`.  They are all equal only if `q^2 - q = q`, i.e. `q = 2`, and then only up to `k = 2` (since `2^3 - 2^2 = 4 ≠ 2`).  Hence **the zone ladder is arithmetic with at least three zones iff `(q, r) = (2, 2)`** (certified for `q <= 300`, `r <= 12`), and at that point it is `(9, 11, 13)`.  The `+2` step of §01.22 is thus not only forced against `+1`; imposed as a constant step, it selects the binary alphabet and the two-line (dyadic, no-monopoly) verifier at once.  Rank `2` is arithmetic for every `q`, so the third zone is what makes the constraint bite.
+
+The same typed data compute the return modulus without `|V_11|` (`D0-TYPED-INVENTORY-ORIGIN-OF-QT-001`).  The exact support inventory over the `2^r` write masks — live states of the mask plus the atomic classes of the masked sub-register, the empty record counted once — is
+
+```math
+\mathrm{Inv}(q,r) = 2^r\cdot 2q^r + 2^r + (1+q)^r - 1,\qquad \mathrm{Inv}(2,2) = 32 + 4 + 9 - 1 = 44 .
+```
+
+The four masks have sizes `9, 11, 11, 13` (mean `11`); the verifier-exchange swap identifies the two single-line masks, leaving `3·8 + (1+3+5) = 33 = N`, and the removed class has exactly `11 = m` elements.  So `q_T = N + m` and `m = q_T/|Role|` are *computed* from `(q,r) = (2,2)`, with `|Role| = 2^r` the number of masks.  The eight-element carrier that is equivariant under the swap is the set of complete two-line records times orientation — literally `Dyad × Dyad × Bool = Role × Orient` with four swap-fixed points — not the eight nonempty partial records (two fixed points), which settles the carrier question left open in §01.14 (`D0-OMEGA8-CARRIER-SWAP-EQUIVARIANCE-001`).
+
+**The weld and its limits (`D0-TWO-CHANNEL-SCENE-WELD-001`, `D0-LUCAS-WELD-NOT-A-SELECTOR-NOGO-001`).**  Channel I uses the toral operator and nothing about registers; Channel II uses registers and nothing about `T`.  At `q = 2` they return the same tuple `(4, 2, 8, 11, 44)`, the same ladder and the same `P_2`.  The agreement must not be oversold: the condition "typed centre `2q^2 + q + 1` equals the first `#Fix_n` above `2q^2`" holds for `q ∈ {1, 2, 42}`, and `q^3 + q + 1` is a Lucas number for `q ∈ {1, 2, 8}`.  Lucas-return coincidence alone is therefore **not** a selector; the selector is the centering constraint of Channel II (or, equivalently, the Klein first return of Channel I), after which the two channels are found to agree.
+
+**What remains external.**  After this section the scene's arithmetic rests on: (i) the golden toral class (owned by `φ`-rigidity, §01.14); (ii) the constant-step (centering) rule for the address ladder (owned by the orientation-parity argument of §01.22); (iii) the minimality rule "first return above the oriented role carrier" for the centre.  The identification of the three zones with the three points of the period-3 seed orbit is exhibited only at the level of counts (`rank 3 = #Fix_3 - #Fix_1 = r + 1`) and is registered as the open target `D0-THREE-ZONES-SEED-ORBIT-IDENTIFICATION-001`.
+
 ## 01.23 Final finite-support closures
 
 The following finite-support structures and operators close the foundation of the D0 vacuum:

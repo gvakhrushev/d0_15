@@ -2400,6 +2400,49 @@ the values 33, 3 and 718, or the binary adjacency contract, from primitive
 verifiability. Nor does it identify a physical realization or independently
 close continuum and empirical obligations.
 
+## 02.34b Scene selection from comparison statistics without rank bounds
+
+In `D0-SCENE-FREE-PARTITION-SELECTOR-001`, the rank bound \(\operatorname{rank} A \le 3\) of §02.34a is superseded by an operational statistical criterion. Given a 33-alternative system with pair coincidence probability \(P_2 = 371/1089\), minimizing the cubic coincidence probability \(P_3 = \sum w_i^3\) selects the partition \((9, 11, 13)\) uniquely across all 17 integer partitions of 33:
+\[
+\min_{\sum n_i=33, \sum n_i^2=371} \sum_{i} n_i^3 = 4257\quad\Longrightarrow\quad (n_1, n_2, n_3) = (9, 11, 13).
+\]
+The next smallest candidate has sum of cubes 4617 (or 4797 for partitions with all parts \(\ge 2\)). The operational graph of distinguishable records \(A_{uv} = [\pi(u) \ne \pi(v)]\) is canonically \(K(9,11,13)\) with degree spectrum \((24, 22, 20)\).
+
+The selection of \(P_3\) is proved in `D0-COMPOSITIONAL-U-STATISTICS-VARIANCE-001` to originate from the variance of the optimal unbiased U-statistic estimator \(\hat U_2\) of \(P_2\), where \(\operatorname{Var}(\hat U_2)\) is strictly increasing in \(P_3\) at fixed \(P_2\). Limitations on deriving the native scale 33 and tensor product compositionality are bounded by `D0-NATIVE-SIZE-COMPOSITIONAL-LIMIT-NOGO-001`, and resolved via the additive finite cost criterion \(\mathcal C_{\lambda, L} = \log N + \lambda \log(1 + \rho_L)\) in `D0-FINITE-COST-COMPOSITIONAL-SELECTOR-001`.
+
+## 02.34c Covariant active-archive channels, memory dimension 31 and degree preservation
+
+In `D0-COVARIANT-ARCHIVE-CHANNEL-CLASSIFICATION-001`, the interaction between the active 3D sector \(PH\) and the 30D archive complement \(QH\) on the scene \(K(9,11,13)\) is classified under the automorphism group \(G = S_9 \times S_{11} \times S_{13}\). By Schur's lemma, no linear equivariant operator on \(\mathbb C^{33}\) can map between \(PH\) and \(QH\).
+
+Under an equivariant Stinespring dilation with a coherent golden forward pass, the minimal pure memory dimension ensuring participation of all three archive sectors \(W_9, W_{11}, W_{13}\) is exactly:
+\[
+\dim \mathcal H_{\mathrm{mem}} = 1 + d_9 + d_{11} + d_{13} = 1 + 8 + 10 + 12 = 31.
+\]
+Minimality forces the archive readout to be projective. Furthermore, preserving the expectation of the canonical degree operator \(\mathsf D = 24\Pi_9 + 22\Pi_{11} + 20\Pi_{13}\) uniquely selects the zonal basis \(\{s_9, s_{11}, s_{13}\}\) as its eigenbasis.
+
+In `D0-COMPOSITIONAL-SCENE-ALGEBRA-TOWER-001` and `D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001`, multi-register powers \(H^{\otimes k}\) generate an AF-algebra tower whose two-register commutant \(\mathcal A_2\) has dimension 309, with an ideal reference frame emerging at 30 copies. For any scale \(b > 1\), the Connes spectral metric on this tower generates the weak* topology on the state space.
+
+## 02.34d Centred-triple calculus: the excess-collision identity and the toral reading of \(P_2\)
+
+For any centred triple \((m-\Delta, m, m+\Delta)\) with \(N = 3m\) the elementary symmetric data are exact polynomials in \((m,\Delta)\):
+
+\[
+\sum_i n_i^2 = 3m^2 + 2\Delta^2,\qquad
+\sum_i n_i^2 - \frac{N^2}{3} = 2\Delta^2,\qquad
+m^3 - \prod_i n_i = m\Delta^2,\qquad
+P_2 = \frac13 + \frac{2\Delta^2}{9m^2}.
+\]
+
+For D0, \((m,\Delta) = (11,2)\) and the two defect terms are not new numbers: \(2\Delta^2 = 8 = |\Omega_8|\) and \(m\Delta^2 = 44 = q_T\) (`D0-EXCESS-COLLISION-EQUALS-OMEGA8-001`). Hence
+
+\[
+P_2 = \frac13 + \frac{|\Omega_8|}{N^2} = \frac{371}{1089},\qquad
+\operatorname{tr}A^2 = N^2 - \sum_i n_i^2 = 718,\qquad
+\operatorname{tr}A^3 = 6\prod_i n_i = 7722 .
+\]
+
+Both parameters are read off the toral operator \(T = [[0,1],[1,-1]]\) without using \(|V_{11}|\): \(\Delta = \exp\mathrm{Fix}(T^3) = 2\) with \(\mathrm{Fix}(T^3) \cong (\mathbb Z/2)^2\), \(|\Omega_8| = 2\,\#\mathrm{Fix}_3 = 8\), and \(m = \#\mathrm{Fix}_5 = 11\) is the first return count exceeding \(|\Omega_8|\); the product \(\#\mathrm{Fix}_3\cdot\#\mathrm{Fix}_5 = 44\) is the return modulus (`D0-TORAL-ORIGIN-OF-QT-NONCIRCULAR-001`, `D0-TORAL-ORIGIN-OF-P2-001`). The same tuple is returned by the typed preparation register at \((q,r) = (2,2)\) (`D0-TWO-CHANNEL-SCENE-WELD-001`); see §01.22a for the two derivations and the recorded no-go on Lucas coincidence as a stand-alone selector.
+
 ## 02.35 Theorem-spine owners: Born 2.0, Torus-Core13, and Galois balance
 
 The active proof spine is:
