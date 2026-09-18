@@ -211,6 +211,7 @@ import D0.Foundation.M1Universality
 import D0.Foundation.Omega8Center
 import D0.Foundation.PartitionAlgebra
 import D0.Foundation.PhysicalComparisonRepresentation
+import D0.Foundation.PopperianBootstrap
 import D0.Foundation.Q8Anisotropy
 import D0.Foundation.RelationalRepairClosure
 import D0.Foundation.SceneCountReduction

@@ -276,6 +276,22 @@ The admissibility contract requires every scene number to be traced to an owner.
 
 The residual inputs are now completely resolved into M1-derived theorems: (i) the golden toral class is forced globally across all of \(\mathrm{GL}_2(\mathbb Z)\) by sterility of returns 1 and 2, which is algebraic generation transitivity on \(\mathbb P^1(\mathbb F_2)\) (`D0-GLOBAL-RETURN-STERILITY-GOLDEN-FORCING-001`, `D0-TRANSITIVE-DEFECT-AND-COLLISION-UNIQUENESS-001`); (ii) the constant-step rule \(\Delta = 2\) is uniquely forced by arithmetic centering over a \(q\)-alphabet (\(q=q(q-1) \implies q=2, \Delta=2\)) and by the non-degenerate integer solution of the collision identity \(2(d_1^2 - d_1 d_2 + d_2^2) = |\Omega_8| = 8\) (`D0-STEP-TWO-AND-LINE-COUNT-NOGO-001`, `D0-TRANSITIVE-DEFECT-AND-COLLISION-UNIQUENESS-001`); (iii) rule (iii) — selecting the first return above the oriented role carrier — is derived from M1-minimality: accommodating \(\Omega_8 \sqcup \{\omega_0\}\) forces capacity \(\ge 9\), uniquely picking \(n^* = 5, m = 11\) (`D0-M1-MINIMALITY-THRESHOLD-FORCING-001`); (iv) line count \(r = 2\) is forced by non-solipsism (\(r \ge 2\)) and quadratic degree of \(\varphi\) (\(r \le 2\)), giving \(|\mathrm{Role}| = 2^2 = 4\); (v) the representation uniqueness of the 2-torus as Cartan's unique compact abelian 2D Lie group, \(\mathbb P^1(\mathbb F_2)\) as the unique 3-ray defect space, and line parity \(r=2k\) as the unique solvability condition for integer \(\Delta\) closes the full M1 representation (`D0-M1-REPRESENTATION-UNIQUENESS-001`). The structural identification of the three zones with the period-3 seed orbit and line-swap orbits is closed by the \(\mathrm{GL}_2(\mathbb F_2)\) functor (`D0-THREE-ZONES-SEED-ORBIT-IDENTIFICATION-001`). No ungrounded external inputs remain.
 
+## 00.3e Popperian bootstrap: falsifiability forces the functional tuple
+
+A recurring meta-theoretical demand leveled against structural foundations is to "prove that no other finite realizations exist". When posed over an open class of conceivable models, this demand is an invitation to prove an unbounded universal negative — a moving target where any finite exhaustion can be answered with an unexamined hypothetical alternative.
+
+In `D0-POPPERIAN-BOOTSTRAP-001`, this demand is methodologically inverted via the Popperian criterion of empirical falsifiability. For an empirical theory to be capable of being killed by a test, the operational prerequisites of that test must themselves be defined:
+1. **Prediction and violation:** at least two admissible outcomes must be distinguished by the theory (\(x \ne y\));
+2. **Persistent retention:** the realized outcome must be recorded in an injective manner that survives until independent inspection;
+3. **Independent witnesses:** the verdict must be verifiable across at least two distinct, non-identical observation lines (\(l_0 \ne l_1\)), preventing single-apparatus solipsism;
+4. **Catalogue invariance:** the verdict cannot rely on a privileged external catalogue to manufacture its decision (the M1 condition).
+
+Lean formalization (`D0.Foundation.PopperianBootstrap`) proves:
+- `killingTest_iff_contract`: the existence of a Popperian killing test \(\operatorname{KillingTest}(P)\) is logically equivalent to the verification contract \(\operatorname{VerificationContract}(P)\). Falsifiability and the M1 verification contract are not two separate hypotheses, but the identical mathematical structure.
+- `killingTest_forces_functional_tuple`: the full functional tuple (distinction, persistent retention, comparison, two independent lines, catalogue invariance) is forced by the bare possibility of refutation.
+- `no_killingTest_single_line`: a single observation line cannot support a killing test; a solitary-witness apparatus is formally unfalsifiable.
+- `alternative_burden`: the burden of proof is shifted to proposed alternatives. Any competitor realization that claims empirical standing must exhibit its own killing test, which immediately forces it into the same functional tuple. A realization can deviate from the derived structure only by abandoning empirical falsifiability altogether.
+
 ## 00.4 Condensed/profinite placement
 
 The upstream object is not a smooth carrier.  The upstream test object is a weighted profinite detector support:
