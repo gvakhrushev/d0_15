@@ -224,6 +224,7 @@ import D0.Foundation.SceneStepParity
 import D0.Foundation.VerifiabilityNecessity
 import D0.Foundation.ZoneConnectivity
 import D0.Frozen.ConservedStressProjection
+import D0.Gauge.AlbertSMProjection
 import D0.Gauge.AnomalySums
 import D0.Gauge.BianchiResidual
 import D0.Gauge.BraidValence

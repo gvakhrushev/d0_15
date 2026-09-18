@@ -2505,6 +2505,7 @@ The active proof spine maps directly onto the proof owners below.
   - `02.36.6 SM-facing gauge decomposition`
   - `D0.Gauge.SMGaugeDecomposition`
   - `no alternate factor/representation ledger`
+  - `D0.Gauge.AlbertSMProjection`: exact algebraic projection of the Albert algebra $J_3(\mathbb{O})$ ($F_4$ automorphism) onto $\mathfrak{su}(3) \times \mathfrak{su}(2) \times \mathfrak{u}(1)$ ($\dim = 12 < 52$) with Majorana $B - L$ elimination (`D0-ALBERT-SM-GAUGE-PROJECTION-001`).
 
 - **Spin-2 Derivation / Carrier**:
   - `Spin-2 derivation and internal cone speed`
