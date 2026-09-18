@@ -352,7 +352,9 @@ The remaining open questions in the registry (`02_REGISTRY/frontier/closure_fron
    generating the Einstein–Hilbert action directly via the Chamseddine–Connes spectral action on $\mathcal{D}_\infty$ (`D0/Bridge/RieffelGHPBridge.lean`).
 4. **Cosmological SDE Smoothing (`CMBNsSmoothingUndeterminedNoGo`):** Spatial convolution with arbitrary continuous Gaussian kernels $\sigma$ is replaced by the canonical discrete spectral projector of the Hodge Laplacian onto the lowest non-trivial Fiedler eigenspace (`CMBFiedlerFreezeout.lean`), fixing $n_s$ through combinatorial projector ranks.
 
-For full technical specifications and Lean formalization roadmaps, see [02_REGISTRY/frontier/FRONTIER_STRATEGY.md](02_REGISTRY/frontier/FRONTIER_STRATEGY.md).
+For full technical specifications, advanced mathematical integrations, and Lean formalization roadmaps, see:
+- [02_REGISTRY/frontier/FRONTIER_STRATEGY.md](02_REGISTRY/frontier/FRONTIER_STRATEGY.md) — Strategic resolution of the continuum interface crisis.
+- [02_REGISTRY/frontier/D0_RESEARCH_MONOGRAPH.md](02_REGISTRY/frontier/D0_RESEARCH_MONOGRAPH.md) — Comprehensive research monograph: theoretical foundations, advanced mathematical apparatus, and strict formalization program.
 
 ---
 
