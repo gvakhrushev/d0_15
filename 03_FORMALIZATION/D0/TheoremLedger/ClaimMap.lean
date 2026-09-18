@@ -1126,7 +1126,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-INDEPENDENT-VERIFICATION-PROVENANCE-ARCHIVE-001", moduleName := "D0.Foundation.VerifiabilityNecessity",
       theoremName := "verificationLineOutcome_eq;verified_lines_collapse_in_outcome_layer;archivedVerificationLine_injective;provenance_memory_injective_of_joint_injective;provenance_memory_card_lower_bound;unit_provenance_memory_insufficient;independent_verification_forces_provenance_archive", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-POPPERIAN-BOOTSTRAP-001", moduleName := "D0.Foundation.PopperianBootstrap",
-      theoremName := "killingTest_iff_contract;killingTest_forces_functional_tuple;killingTest_record_injective;killingTest_catalogue_invariant;no_killingTest_single_line;alternative_burden;boolProtocol_killingTest", status := ClaimStatus.leanCoreProved }
+      theoremName := "killingTest_iff_contract;killingTest_forces_functional_tuple;killingTest_record_injective;killingTest_catalogue_invariant;no_killingTest_single_line;alternative_burden;boolProtocol_killingTest", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ENDOGENOUS-ACTION-QUANTUM-001", moduleName := "D0.Foundation.EndogenousActionQuantum",
+      theoremName := "S_min_pos;canonicalActionProtocol;endogenous_action_quantum_minimal;subquantum_collapse;relative_action_scale_invariant;action_distinction_forcing", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-GHP-GOLDEN-CAUCHY-SEQUENCE-001", moduleName := "D0.Geometry.GHPGoldenCauchySequence",
+      theoremName := "goldenTower_cauchySeq;goldenTower_converges;goldenTower_dist_le_limit;golden_tower_limit_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LUCAS-MUON-ELECTRON-RATIO-001", moduleName := "D0.Matter.LucasMuonElectronRatio",
+      theoremName := "phi_inv_sq;lucasRatio_eq;lucasRatio_interval;lucasRatio_pdg_defect;lucasRatio_algebraic;lucas_muon_electron_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PERRON-PHI3-CARRIER-OWNER-001", moduleName := "D0.Spectral.PerronPhi3Carrier",
+      theoremName := "carrier_not_trace_class;normLog_tendsto;logCesaroPhi3_tendsto;dixmier_coefficient_ne_zero;logCesaroPhi3_c2_tendsto_mu2;carrier_vs_present_core;perron_phi3_carrier_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -1080,6 +1080,12 @@ By impedance-additivity (THE 04.8.L.1.B below) the two capacities **add**, so th
 
 This lands **`4.4×10⁻³` (≈ 5e-3) away** from the PDG value `206.7682830` — close, but *not* "exact". The integer `206` is forced (THE above); the sub-integer `+2φ⁻²` correction is a **HYP** candidate confronting data, so the mass-ratio *value* is HYP, not THE. The BOOK_00 readout table value `m_μ/m_e≈206.77` is this HYP expression, not a derived constant.
 
+In `D0-LUCAS-MUON-ELECTRON-RATIO-001` (`D0.Matter.LucasMuonElectronRatio`), this candidate is given an exact algebraic formalization in Lean 4 without numerical floats:
+- `lucasRatio_eq`: $L_{11} + L_4 + 2\varphi^{-2} = 209 - \sqrt{5} \in \mathbb{Q}(\sqrt{5})$ exactly;
+- `lucasRatio_algebraic`: the ratio is an algebraic integer of degree 2 satisfying $x^2 - 418x + 43676 = 0$;
+- `lucasRatio_interval`: strictly bounded $206.7639 < m_\mu/m_e < 206.76394$;
+- `lucasRatio_pdg_defect`: the residual difference from the 2024 PDG value $206.7682830$ is formally bounded within $(0.00434, 0.00436)$, establishing that the algebraic core isolates the remaining gap to high precision without decimal fitting.
+
 **[THE 04.8.L.1.B] Impedance additivity forces additive mass-indices, not quadratic [^b04-90]. [^b04-81].** In CORE, "mass" is the impedance of a process: the minimal length (in `δ₀`-ticks) of the closed resonant cycle that must be realized for the state to be reproducible without external rules. Write `Z(γ):=Len(γ)` for the length of a closed path `γ` in the scene. If a process is a concatenation of two sub-cycles, `γ=γ_1∘γ_2`, then by the definition of length in a discrete graph
 
 ```math

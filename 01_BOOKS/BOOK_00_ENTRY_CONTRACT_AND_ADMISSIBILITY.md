@@ -292,6 +292,11 @@ Lean formalization (`D0.Foundation.PopperianBootstrap`) proves:
 - `no_killingTest_single_line`: a single observation line cannot support a killing test; a solitary-witness apparatus is formally unfalsifiable.
 - `alternative_burden`: the burden of proof is shifted to proposed alternatives. Any competitor realization that claims empirical standing must exhibit its own killing test, which immediately forces it into the same functional tuple. A realization can deviate from the derived structure only by abandoning empirical falsifiability altogether.
 
+In `D0-ENDOGENOUS-ACTION-QUANTUM-001` (`D0.Foundation.EndogenousActionQuantum`), the Popperian verification contract is extended to the operational definition of physical action. Rather than importing continuous Planck scales $\hbar$ or SI units, the action scale is derived endogenously from the requirement of state distinguishability:
+- `endogenous_action_quantum_minimal`: every non-trivial state transition costs at least the canonical endogenous action quantum $S_{\min} \equiv 1$.
+- `subquantum_collapse`: any hypothetical sub-quantum transition with $0 < S < 1$ collapses to identity ($0$) under threshold observation, ensuring the injectivity of the detector's state retention.
+- `relative_action_scale_invariant`: relative ratios of physical actions are strictly invariant under any extrinsic positive rescaling $\hbar_{\mathrm{ext}} > 0$, formalizing that external SI calibrations are operational gauge conventions that cannot alter internal physics.
+
 ## 00.4 Condensed/profinite placement
 
 The upstream object is not a smooth carrier.  The upstream test object is a weighted profinite detector support:

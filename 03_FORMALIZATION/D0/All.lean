@@ -191,6 +191,7 @@ import D0.Foundation.ContinuumAsInverseLimit
 import D0.Foundation.CurrentDataComparisonCanonicity
 import D0.Foundation.CurrentDataFactorization
 import D0.Foundation.DetectionCapabilityBoundary
+import D0.Foundation.EndogenousActionQuantum
 import D0.Foundation.EquivariantM1
 import D0.Foundation.FrobeniusDivision3D
 import D0.Foundation.GeneralComparisonGrammar
@@ -259,6 +260,7 @@ import D0.Geometry.FiniteSpin2DOF
 import D0.Geometry.FiniteSpin2Dynamics
 import D0.Geometry.FiniteSpin2WaveOperator
 import D0.Geometry.GHPGoldenCauchyBound
+import D0.Geometry.GHPGoldenCauchySequence
 import D0.Geometry.HeatTraceA2Decomposition
 import D0.Geometry.HeatTraceEHProxy
 import D0.Geometry.HigherCurvatureSuppression
@@ -348,6 +350,7 @@ import D0.Matter.LeptonFiniteGreenResolventOwner
 import D0.Matter.LeptonGreenPuiseuxOwner
 import D0.Matter.LeptonPuiseuxUniquenessObstruction
 import D0.Matter.LeptonRiemannHurwitzBranchIndex
+import D0.Matter.LucasMuonElectronRatio
 import D0.Matter.MesonDefectTransferAlgebra
 import D0.Matter.MesonDefectTransferOrigin
 import D0.Matter.MesonPhasonDomainWalls
@@ -423,6 +426,7 @@ import D0.Spectral.DeltaAlphaNormalizationNoGo
 import D0.Spectral.DeltaAlphaResidueBlocked
 import D0.Spectral.DixmierFeshbachFiniteHeatTrace
 import D0.Spectral.JointCommutant
+import D0.Spectral.PerronPhi3Carrier
 import D0.Spectral.RawSelfReadingAnalyticResidueBoundary
 import D0.Spectral.SceneNativeMultiscaleTower
 import D0.Spectral.SeamHolonomy
