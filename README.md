@@ -8,6 +8,36 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 
 ---
 
+## Table of Contents
+
+- [1. The Core Inversion (Read This First)](#1-the-core-inversion-read-this-first)
+  - [The Foundational Premise](#the-foundational-premise)
+- [2. Architecture & Flow of Forcing](#2-architecture--flow-of-forcing)
+- [3. The 10-Book Derivation Chain (From Admissibility to Interferometry)](#3-the-10-book-derivation-chain-from-admissibility-to-interferometry)
+  - [BOOK 00: Entry Contract and Admissibility](#book-00-entry-contract-and-admissibility)
+  - [BOOK 01: Condensed Foundations and Graph Birth](#book-01-condensed-foundations-and-graph-birth)
+  - [BOOK 02: Mathematical Proof Spine and Invariant Calculus](#book-02-mathematical-proof-spine-and-invariant-calculus)
+  - [BOOK 03: Finite Action Operators and Scene Dynamics](#book-03-finite-action-operators-and-scene-dynamics)
+  - [BOOK 04: Spectrum, Matter, and Finite Selector Theory](#book-04-spectrum-matter-and-finite-selector-theory)
+  - [BOOK 05: Verification Status and Certificate Discipline](#book-05-verification-status-and-certificate-discipline)
+  - [BOOK 06: Evolution, Forgetting, and Time](#book-06-evolution-forgetting-and-time)
+  - [BOOK 07: Gravity Limit and Finite Geometry](#book-07-gravity-limit-and-finite-geometry)
+  - [BOOK 08: Cosmology, Archive, and SDE Transfer](#book-08-cosmology-archive-and-sde-transfer)
+  - [BOOK 09: Gravitational Waves and Quantum Interferometry](#book-09-gravitational-waves-and-quantum-interferometry)
+- [4. The Three Architecture Layers](#4-the-three-architecture-layers)
+- [5. Spectral Rigidity: The Golden Ratio φ and Zero-Parameter Mass Sectors](#5-spectral-rigidity-the-golden-ratio-varphi-and-zero-parameter-mass-sectors)
+  - [Five Independent Mathematical Convergences to φ](#five-independent-mathematical-convergences-to-varphi)
+  - [Scientific Falsifiability](#scientific-falsifiability)
+- [6. Non-Trivial Theorems in the Corpus](#6-non-trivial-theorems-in-the-corpus)
+- [7. How to Read (Short Paths)](#7-how-to-read-short-paths)
+- [8. Canonical Repository Layout & Sources of Truth](#8-canonical-repository-layout--sources-of-truth)
+  - [Source-of-Truth Rules](#source-of-truth-rules)
+- [9. Local Verification & Reproducibility](#9-local-verification--reproducibility)
+- [10. Epistemic Guardrails (What D0 Is Not Claiming)](#10-epistemic-guardrails-what-d0-is-not-claiming)
+- [Citation & Status](#citation--status)
+
+---
+
 ## 1. The Core Inversion (Read This First)
 
 Standard physics proceeds from geometry to observation:
@@ -212,10 +242,10 @@ Because D0 possesses zero free parameters in this sector, empirical comparison i
 
 ## 6. Non-Trivial Theorems in the Corpus
 
-- **Popperian Bootstrap Equivalence (`D0-POPPERIAN-BOOTSTRAP-001`):** Proof that $\operatorname{KillingTest}(P) \iff \operatorname{VerificationContract}(P)$, turning empirical falsifiability into a constructive mathematical constraint on detector state spaces.
-- **Exact Support Orthogonality (`D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001`):** An exact verification contract $\operatorname{compare}(x,y) = [x \neq y]$ on physical states forces strictly orthogonal density supports: $\operatorname{supp}(\tau_x) \perp \operatorname{supp}(\tau_y)$. Exact distinguishability cannot be implemented over non-orthogonal states.
+- **Popperian Bootstrap Equivalence (`D0-POPPERIAN-BOOTSTRAP-001`):** Proof that $\text{KillingTest}(P) \iff \text{VerificationContract}(P)$, turning empirical falsifiability into a constructive mathematical constraint on detector state spaces.
+- **Exact Support Orthogonality (`D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001`):** An exact verification contract $\text{compare}(x, y) = [x \neq y]$ on physical states forces strictly orthogonal density supports: $\text{supp}(\tau_x) \perp \text{supp}(\tau_y)$. Exact distinguishability cannot be implemented over non-orthogonal states.
 - **Top-Hodge Inverse Spectral Rigidity (`D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`):** Equality of top-Hodge data $(D, H, M_2)$ for positive complete tripartite scenes uniquely forces equality of the unlabelled part-size multisets.
-- **Dense Operator Scene Rigidity (`D0-DENSE-OPERATOR-SCENE-RIGIDITY-001`):** Any finite simple rational adjacency matrix on 33 vertices with rank $\le 3$ and $\mathrm{tr}(A^2)=718$ is recovered as the complete tripartite graph $K(9,11,13)$ without assuming partitions, triangles, or connectedness.
+- **Dense Operator Scene Rigidity (`D0-DENSE-OPERATOR-SCENE-RIGIDITY-001`):** Any finite simple rational adjacency matrix on 33 vertices with rank $\le 3$ and $\text{tr}(A^2)=718$ is recovered as the complete tripartite graph $K(9,11,13)$ without assuming partitions, triangles, or connectedness.
 - **No-Go on Non-Quadratic Measures (`BornAreaPreservationNoGo`):** Symplectic area preservation on finite state carriers forces power $p=2$, deriving Born's rule from cyclic measurement consistency.
 - **Explicit Bridge Quarantine (`D0-BRIDGE-COMPRESSION-001`):** Conjectured continuum limits (such as `HeatTraceWeyl.lean` or `SmoothInterpolation.lean`) are strictly quarantined in `03_FORMALIZATION/D0/Bridge/Assumptions/` and never masquerade as core Lean theorems.
 
@@ -318,5 +348,5 @@ D0 is an open, actively developed research corpus. The state of any claim is det
 ```text
 Repository: https://github.com/gvakhrushev/d0_15
 Registry:   02_REGISTRY/claims.csv
-Contact:    grigorijvahrusev@gmail.com
+Contact:    g.vakhrushev1993@gmail.com
 ```
