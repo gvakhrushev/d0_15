@@ -33,7 +33,7 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 - [8. Canonical Repository Layout & Sources of Truth](#8-canonical-repository-layout--sources-of-truth)
   - [Source-of-Truth Rules](#source-of-truth-rules)
 - [9. Local Verification & Reproducibility](#9-local-verification--reproducibility)
-- [10. Epistemic Guardrails (What D0 Is Not Claiming)](#10-epistemic-guardrails-what-d0-is-not-claiming)
+- [10. Epistemic Guardrails & Frontier Resolution Strategy](#10-epistemic-guardrails--frontier-resolution-strategy)
 - [Citation & Status](#citation--status)
 
 ---
@@ -331,13 +331,28 @@ lake build D0.All
 
 ---
 
-## 10. Epistemic Guardrails (What D0 Is Not Claiming)
+## 10. Epistemic Guardrails & Frontier Resolution Strategy
+
+### What D0 Is Not Claiming
 
 To maintain scientific integrity, D0 explicitly records what has **not** been achieved:
 
-- **Continuum Limit as Theorem:** D0 does **not** claim that the Einstein–Hilbert action or smooth Yang–Mills theory has been proved as an unconditional mathematical theorem from the graph. They are conditioned on explicitly quarantined bridge assumptions (`HeatTraceWeyl`, `SmoothInterpolation`).
+- **Continuum Limit as Finished Theorem:** D0 does **not** claim that the Einstein–Hilbert action or smooth Yang–Mills theory has been proved as an unconditional mathematical theorem from the graph. They are conditioned on explicitly quarantined bridge assumptions (`HeatTraceWeyl`, `SmoothInterpolation`).
 - **Empirical Confirmation:** D0 does **not** claim that observational hints (e.g. DESI $w(z)$ dynamical dark energy or LIGO black hole horizon step features) constitute verified empirical discoveries. They are structured, pre-registered falsification tests.
 - **Universal Metaphysical Uniqueness:** D0 does **not** claim that no other mathematical universe could ever be conceived. It claims that *within the regime of finite, catalogue-free, endogenous verifiability*, the canonical scene and functional tuple are mathematically forced.
+
+### The Four Hard Frontiers: Interface Crisis, Not Missing Core Physics
+
+The remaining open questions in the registry (`02_REGISTRY/frontier/closure_frontier.csv`) do not reflect defects in the discrete algebraic core. They reflect the **interface crisis between an endogenous discrete operator framework and legacy continuum language**:
+
+1. **Alpha Dixmier Trace (`AlphaProfiniteTowerNoGo`):** Rather than seeking external Feshbach regulators to force continuous integration on profinite sets, the tower is resolved as an inductive limit of Fibonacci $AF$-algebras (`D0/VNext/FibonacciAFAlgebra.lean`, `PerronGNSTower.lean`), whose unique tracial state normalizes the Cesàro residue endogenously via Perron–Frobenius powers $\varphi^{-k}$.
+2. **Metric Scale Underdetermination (`MassSectorMetricUnderdetermination`):** Extrinsic SI units (meters, seconds, eV) are historically contingent artifacts. The fundamental action quantum is fixed endogenously at $S_{\mathrm{min}} = \frac{1}{2}\hbar_{\mathrm{endogenous}} \equiv 1$, grounding energy scales in the topological capacity saturation of the scene relative to archive dissipation (`PreparationMemoryBound.lean`).
+3. **Smooth Interpolation Bridge (`Bridge/Assumptions/SmoothInterpolation`):** Proving a diffeomorphism from a graph to a smooth $C^\infty$ manifold is a redundant concession to classical geometry. In noncommutative geometry, the continuum limit is formulated rigorously as convergence in the quantum Gromov–Hausdorff distance (Rieffel propinquity) on Compact Quantum Metric Spaces:
+   $$\operatorname{dist}_{\mathrm{QGH}}\big((\mathcal{A}_n, \mathcal{D}_n), (\mathcal{A}_\infty, \mathcal{D}_\infty)\big) \longrightarrow 0$$
+   generating the Einstein–Hilbert action directly via the Chamseddine–Connes spectral action on $\mathcal{D}_\infty$ (`D0/Bridge/RieffelGHPBridge.lean`).
+4. **Cosmological SDE Smoothing (`CMBNsSmoothingUndeterminedNoGo`):** Spatial convolution with arbitrary continuous Gaussian kernels $\sigma$ is replaced by the canonical discrete spectral projector of the Hodge Laplacian onto the lowest non-trivial Fiedler eigenspace (`CMBFiedlerFreezeout.lean`), fixing $n_s$ through combinatorial projector ranks.
+
+For full technical specifications and Lean formalization roadmaps, see [02_REGISTRY/frontier/FRONTIER_STRATEGY.md](02_REGISTRY/frontier/FRONTIER_STRATEGY.md).
 
 ---
 
