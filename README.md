@@ -181,20 +181,32 @@ The repository strictly separates internal theorems, mathematical operators, and
 
 ---
 
-## 5. Why This Cannot Be Dismissed Casually
+## 5. Spectral Rigidity: The Golden Ratio $\varphi$ and Zero-Parameter Mass Sectors
 
-Superficial critics often label the appearance of the golden ratio $\varphi = \frac{1+\sqrt{5}}{2}$ or Lucas numbers as "numerological curve fitting". Within D0, this dismissive response is intellectually invalid:
+In standard continuous field theory, Yukawa couplings $y_f \sim \sqrt{2} m_f / v$ are free parameters fitted by hand to match experimental particle masses. In D0, the logical sequence is strictly inverted:
 
-1. **Global Toral Forcing:** The matrix class of $T = \begin{pmatrix} 0 & 1 \\ 1 & -1 \end{pmatrix}$ is the *unique* unimodular integral class in $\mathrm{GL}_2(\mathbb{Z})$ whose first two returns are sterile ($\#\mathrm{Fix}_1 = \#\mathrm{Fix}_2 = 1$). Orientation-preserving classes ($\det = +1$) have zero integer solutions. Thus, $\varphi$ is the unique non-trapped dynamic memory eigenvalue (`D0-GLOBAL-RETURN-STERILITY-GOLDEN-FORCING-001`).
-2. **Step Rigidity:** Constant arithmetic zone step $\Delta$ requires $q = q(q-1)$, which uniquely forces the binary alphabet $q=2$ and $\Delta=2$. Any alphabet $q \ge 3$ causes exponential step blowup (`D0-STEP-TWO-AND-LINE-COUNT-NOGO-001`).
-3. **The Asymmetric Burden of Proof (`alternative_burden`):**
-   To dispute the foundational layer, a critic cannot simply demand "prove that no other exotic models exist in the universe". Under `D0-POPPERIAN-BOOTSTRAP-001`, any claimed alternative realization that supports a falsifiable killing test **must itself carry the functional tuple** (distinction, retention, comparison, multi-witness, catalogue invariance).
+- **Ban on Arbitrary Couplings:** Theorem `YukawaQualitativeSelectorNoGo.lean` proves that on a discrete carrier the interaction matrix cannot be chosen freely; it is forced to be a spectral projector of the scene.
+- **Analytical Origin of Mass Hierarchies:** Fermion masses emerge as resolvent poles across scene defects (`LeptonGreenPuiseuxOwner.lean`). Puiseux series expansions proceed in integer powers of the deformation scale $\varepsilon = \varphi^{-n}$ as an analytical consequence of hyperbolic Pisot contraction on the underlying torus (`Time2DPisot.lean`, `CanonicalPuiseuxShellTransfer.lean`).
+- **Zero Parametric Freedom:** The theory contains zero continuous tunable parameters in its mass and mixing sectors. The fundamental ratio $\varphi = \frac{1+\sqrt{5}}{2}$ is locked at the foundational level (`BOOK_00`–`BOOK_02`) as the unique algebraic root $x^2 - x - 1 = 0$ where five independent branches of mathematics strictly coincide.
 
-To substantively challenge D0's foundation, an opponent must do one of four concrete things:
-- Point out an internal mathematical contradiction in the repair and distinction grammar (`IndependentDetectionRepairGrammar.lean`).
-- Construct a non-quadratic probability response law on a finite carrier that preserves measure and unitarity under cyclic independent readout (overcoming `BornAreaPreservationNoGo.lean`).
-- Construct an endogenous readout functor that does not factor through the $M_1$ quotient and does not require infinite preparation memory (`PrimitiveMinimalityFromRawFunctor.lean`).
-- Exhibit a viable physical alternative that admits a Popperian killing test without satisfying the M1 verification contract.
+### Five Independent Mathematical Convergences to $\varphi$
+
+1. **Diophantine Extremality and KAM Stability (Dynamical Systems):**
+   The continued fraction $\varphi = [1; 1, 1, \dots]$ possesses the maximal Hurwitz constant $c = \sqrt{5}$, providing the worst rational approximation among all real numbers. In `HurwitzMinimaxPhi.lean` and `HurwitzPhi.lean`, this maximal irrationality prevents mode-locking and phase resonance, ensuring KAM stability of cyclic discrete detector ticks.
+2. **Hyperbolic Toral Automorphisms and Pisot Contraction (Ergodic Theory):**
+   The discrete monodromy on the 2-torus $\begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix} \in \mathrm{SL}_2(\mathbb{Z})$ has eigenvalues $\{\varphi, -\varphi^{-1}\}$. Because $\varphi$ is a quadratic Pisot unit ($|\lambda_1| > 1 > |\lambda_2|$), it generates an intrinsic thermodynamic arrow of time: phase space expands along the unstable direction and contracts exponentially along the stable direction while strictly preserving symplectic measure (`Time2DPisot.lean`, `PisotContraction.lean`).
+3. **Von Neumann Factors and Fibonacci Tensor Categories (Operator Algebras):**
+   In Jones' classification of $\mathrm{II}_1$ subfactor indices $[M : N] = 4 \cos^2(\pi/n)$, the primitive torsion index $n = 5$ evaluates to $[M : N] = 4 \cos^2(\pi/5) = \frac{3+\sqrt{5}}{2} = \varphi^2 = \varphi + 1$ (`JonesIndexPhi.lean`). In the category of boundary braid representations, the unique non-abelian solution to the pentagon equation is the Fibonacci fusion ring $\tau \otimes \tau = \mathbf{1} \oplus \tau$, whose fundamental anyonic quantum dimension is identically $d_\tau = \varphi$ (`FibonacciFusionRing.lean`, `FibonacciAnyonUniqueness.lean`).
+4. **Projective Quasicrystals and the $E_8$ Root Lattice (Discrete Geometry):**
+   The projection of the 8-dimensional root lattice $E_8$ onto 4-dimensional physical space is governed by the ring of Hamiltonian icosians over $\mathbb{Q}(\sqrt{5})$ (`IcosianE8GramFinite.lean`). To generate an aperiodic cut-and-project scene without translational singularities or point-density blowup, the projection window is uniquely determined by a golden projector trace (`CondensedPhiVacuum.lean`).
+5. **Self-Similar Memory Scaling (Quantum Measurement):**
+   Internal calibration without external reference standards forces the detector self-return split $p + p^2 = 1$ between the direct channel and return channel. Its unique positive root $p = \varphi^{-1}$ sets the scale-invariant step of measurement memory $\varepsilon = \varphi^{-1}$ and the dimensionless entropy rate $\log\varphi$ (`PhiFractalTickDynamics.lean`, `DetectorSupportGoldenWeight.lean`).
+
+### Scientific Falsifiability
+
+Because D0 possesses zero free parameters in this sector, empirical comparison is an unyielding test of structural validity:
+- Any statistically significant deviation between the derived Puiseux mass series and high-precision experimental measurements (PDG, lepton g-2, neutrino oscillation bounds) falsifies the entire 3-partite scene topology, rather than an isolated fitting parameter.
+- Under `alternative_burden` (`D0-POPPERIAN-BOOTSTRAP-001`), any alternative discrete model that admits an empirical killing test carries the same functional tuple and must demonstrate its own endogenous stability against mode-locking and measure loss.
 
 ---
 
