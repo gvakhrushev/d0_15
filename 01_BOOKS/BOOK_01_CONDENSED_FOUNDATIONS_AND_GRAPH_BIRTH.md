@@ -2555,6 +2555,11 @@ The four masks have sizes `9, 11, 11, 13` (mean `11`); the verifier-exchange swa
 2. *Arithmetic step as collision balance:* The collision balance identity for asymmetric steps `d_1, d_2 \ge 0`, `2(d_1^2 - d_1 d_2 + d_2^2) = |\Omega_8| = 8`, has only three non-negative integer solutions: `(0, 2)`, `(2, 0)`, and `(2, 2)`.  The first two collapse the scene to two zones (`d = 0`).  The unique non-degenerate solution with strictly positive steps is `d_1 = d_2 = 2`.  Constant step is therefore not an independent postulate, but an algebraic theorem of collision balance.
 3. *Role cardinality:* The space of complete joint terminal outcomes of `r = 2` binary lines is `\{0, 1\}^2`, with `|\mathrm{Role}| = 2^2 = 4` identically.
 
+**M1 representation uniqueness (`D0-M1-REPRESENTATION-UNIQUENESS-001`).**  The conceptual uniqueness of the entire representation is closed by three structural theorems:
+1. *Phase Lie topology:* Causal independence of two lines requires commuting phase shifts `[\partial_L, \partial_R] = 0` (abelian Lie algebra), and discrete tick recurrence imposes compactness.  By Cartan's classification, `\mathbb T^2 = S^1 \times S^1` is the unique connected compact abelian 2D Lie group.
+2. *Defect ray count:* The projective ray count `N_{\mathrm{rays}} = (q^r - 1)/(q - 1) = 3` has the unique non-trivial solution `(q, r) = (2, 2)` across all `q, r \ge 2`.
+3. *Line parity and collision balance:* The collision balance `2\Delta^2 = |\Omega| = 2^{r+1} \iff \Delta^2 = 2^r` demands that `2^r` be a perfect square in `\mathbb Z`, forcing `r` to be even (`r = 2k`).  Any odd line count `r \in \{1, 3, 5, \dots\}` yields irrational `\Delta = 2^{r/2} \notin \mathbb Z`, forbidding a discrete integer scene.  The minimal non-monopoly even line count `r \ge 2` is uniquely `r = 2`, which fixes `\Delta = 2` and excess collision `2^{2+1} = 8`.
+
 **What remains external.**  After these closures the scene's arithmetic is completely derived from the operational verification contract M1: non-solipsism and golden degree 2 force `r = 2`; ladder centering forces `q = 2, \Delta = 2`; return sterility forces the golden class `T`; zone admissibility forces `m = 11, q_T = 44`; and the excess collision identity fixes `P_2 = 371/1089`.  No free parameters or ad-hoc numerical inputs remain.
 
 ## 01.23 Final finite-support closures
