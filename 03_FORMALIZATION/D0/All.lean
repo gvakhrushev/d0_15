@@ -418,6 +418,7 @@ import D0.Representation.Omega8OrientationDecomposition
 import D0.Representation.OrderMemoryControl
 import D0.Representation.OrderMemoryReadout
 import D0.Representation.OrientationNontrivialGrading
+import D0.Representation.OrientationOperatorTransport
 import D0.Representation.PortFrameCovariance
 import D0.Representation.PreparationMemoryBound
 import D0.Representation.RoleRealStructureNoGo
