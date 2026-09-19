@@ -2,6 +2,7 @@ import Mathlib.Tactic
 import Mathlib.Data.Matrix.Notation
 import D0.Representation.TypedRepresentationFunctor
 import D0.Extensions.RepresentationReadoutExtension
+import D0.Synthesis.Z2SpinorCover
 
 namespace D0.Representation.CompatibleInvolutionClassification
 
@@ -152,5 +153,41 @@ theorem compatible_involution_scalar_or_nc8
 theorem representation_residual_reduced_to_nonscalar :
     ∀ X : M3, CompatibleInvolution X → NonScalar X → ncReadout X = 8 :=
   nonscalar_compatible_involution_nc
+
+
+/-- The direct scene-step orientation sign on the three zone addresses 9, 11, 13. -/
+def sceneParitySign : Fin 3 → ℚ
+  | 0 => (Matrix.det (D0.Dynamics.T ^ 9) : ℚ)
+  | 1 => (Matrix.det (D0.Dynamics.T ^ 11) : ℚ)
+  | 2 => (Matrix.det (D0.Dynamics.T ^ 13) : ℚ)
+
+/-- The grading obtained by using only the toral/address orientation parity. -/
+def sceneParityGrading : M3 := Matrix.diagonal sceneParitySign
+
+/-- The +2 address progression preserves the orientation sheet, so all three
+generation-zone addresses carry the same odd sign. -/
+theorem scene_parity_signs_all_negative :
+    sceneParitySign 0 = -1 ∧ sceneParitySign 1 = -1 ∧ sceneParitySign 2 = -1 := by
+  simp [sceneParitySign, D0.Dynamics.det_T_pow]
+
+/-- Therefore the direct scene-parity grading is scalar: it is exactly minus identity. -/
+theorem sceneParityGrading_eq_neg_one :
+    sceneParityGrading = -(1 : M3) := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [sceneParityGrading, sceneParitySign, D0.Dynamics.det_T_pow]
+
+/-- Consequently the direct +2 scene parity gives the scalar nc=12 branch, not nc=8. -/
+theorem scene_parity_nc_is_twelve :
+    ncReadout sceneParityGrading = 12 := by
+  rw [sceneParityGrading_eq_neg_one]
+  native_decide
+
+/-- Sharp route exclusion: the already-owned address parity cannot by itself be recycled
+as the missing non-scalar generation grading. -/
+theorem scene_parity_cannot_supply_nc8 :
+    ncReadout sceneParityGrading ≠ 8 := by
+  rw [scene_parity_nc_is_twelve]
+  decide
 
 end D0.Representation.CompatibleInvolutionClassification
