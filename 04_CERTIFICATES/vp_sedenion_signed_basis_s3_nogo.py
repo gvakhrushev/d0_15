@@ -66,6 +66,61 @@ def basis_mul(level: int, i: int, j: int) -> tuple[int, int]:
 TABLE = tuple(tuple(basis_mul(4, i, j) for j in range(16)) for i in range(16))
 
 
+def signed_mul(x: tuple[int, int], y: tuple[int, int]) -> tuple[int, int]:
+    """Multiply two signed canonical basis units (sign,index)."""
+    sx, ix = x
+    sy, iy = y
+    st, k = TABLE[ix][iy]
+    return (sx * sy * st, k)
+
+
+def generated_basis_images(g1, g2, g4, g8):
+    """Images forced by multiplicativity from e1,e2,e4,e8.
+
+    Canonical relations used here are e3=e1e2, e5=e1e4, e6=e2e4,
+    e7=e3e4, and e_(8+i)=e_i e8 for 1<=i<8.
+    """
+    img = [None] * 16
+    img[0] = (1, 0)
+    img[1], img[2], img[4], img[8] = g1, g2, g4, g8
+    img[3] = signed_mul(img[1], img[2])
+    img[5] = signed_mul(img[1], img[4])
+    img[6] = signed_mul(img[2], img[4])
+    img[7] = signed_mul(img[3], img[4])
+    for i in range(1, 8):
+        img[8 + i] = signed_mul(img[i], img[8])
+    return tuple(img)
+
+
+def generated_images_are_automorphism(img) -> bool:
+    """Check bijectivity and all 256 multiplicativity equations directly."""
+    if sorted(k for _, k in img) != list(range(16)):
+        return False
+    for i in range(16):
+        for j in range(16):
+            lhs = signed_mul(img[i], img[j])
+            source_sign, k = TABLE[i][j]
+            rhs_sign, rhs_index = img[k]
+            rhs = (source_sign * rhs_sign, rhs_index)
+            if lhs != rhs:
+                return False
+    return True
+
+
+def vector_mul(v: tuple[int, ...], w: tuple[int, ...]) -> tuple[int, ...]:
+    """Bilinear multiplication in the integer canonical basis."""
+    out = [0] * 16
+    for i, vi in enumerate(v):
+        if not vi:
+            continue
+        for j, wj in enumerate(w):
+            if not wj:
+                continue
+            s, k = TABLE[i][j]
+            out[k] += vi * wj * s
+    return tuple(out)
+
+
 def span_f2(vs: tuple[int, ...]) -> frozenset[int]:
     out = {0}
     for v in vs:
@@ -143,6 +198,14 @@ def main() -> int:
     assert all(TABLE[i][j][1] == (i ^ j) for i in range(16) for j in range(16))
     print("PASS_CD_XOR_INDEX_LAW 256/256 basis products")
 
+    # Bind this independently generated table to a concrete witness already
+    # certified in D0.Algebra.SedenionTower: (e1+e10)(e4-e15)=0.
+    zx = tuple(1 if i in (1, 10) else 0 for i in range(16))
+    zy = tuple(1 if i == 4 else (-1 if i == 15 else 0) for i in range(16))
+    assert any(zx) and any(zy)
+    assert vector_mul(zx, zy) == (0,) * 16
+    print("PASS_REPOSITORY_ZERO_DIVISOR_WITNESS (e1+e10)(e4-e15)=0")
+
     linear_candidates = list(h_preserving_linear_maps())
     assert len(linear_candidates) == 576
     assert all(span_f2((a, b)) == H for a, b, _, _ in linear_candidates)
@@ -160,6 +223,41 @@ def main() -> int:
     assert len(linear_candidates) * 16 == 9216
     assert len(automorphisms) == 384
     print("PASS_SIGNED_BASIS_AUTOMORPHISM_COUNT 384/9216")
+
+    # Independent completeness audit.  Do NOT assume F_2-linearity here.
+    # A unital signed-basis automorphism preserving H must send e1,e2 to
+    # distinct signed nonzero H units, and e4,e8 to distinct signed units
+    # outside H.  These four images force all remaining basis images by
+    # multiplicativity.  Exhaust all 24*24*22 = 12672 such generator choices,
+    # then test bijectivity and all 256 products from scratch.
+    direct_keys = set()
+    direct_candidates = 0
+    for p1 in (1, 2, 3):
+        for p2 in (1, 2, 3):
+            if p1 == p2:
+                continue
+            for s1, s2 in product((-1, 1), repeat=2):
+                for p4 in range(4, 16):
+                    for s4 in (-1, 1):
+                        for p8 in range(4, 16):
+                            if p8 == p4:
+                                continue
+                            for s8 in (-1, 1):
+                                direct_candidates += 1
+                                img = generated_basis_images(
+                                    (s1, p1), (s2, p2), (s4, p4), (s8, p8)
+                                )
+                                if generated_images_are_automorphism(img):
+                                    direct_keys.add(img)
+    assert direct_candidates == 12672
+    assert len(direct_keys) == 384
+
+    gl_keys = {
+        tuple((signs[i], p(i)) for i in range(16))
+        for _, _, p, signs in automorphisms
+    }
+    assert direct_keys == gl_keys
+    print("PASS_INDEPENDENT_GENERATOR_ENUMERATION 384/12672; exact set agrees")
 
     # All 384 stabilize each of the three octonion-sized carriers individually.
     perms = [block_permutation(p) for _, _, p, _ in automorphisms]
