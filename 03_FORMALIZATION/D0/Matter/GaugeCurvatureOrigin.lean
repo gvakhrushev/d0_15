@@ -44,9 +44,10 @@ theorem gauge_curvature_origin_closed_proof : gauge_curvature_origin_closed := b
   intro n _ _ D A hD hA
   exact gauge_curvature_skew D A hD hA
 
-/-- The abelian boundary that the non-abelian completion lives past: the abelian curvature
-annihilates its own self-interaction, `[A,A] = 0` (`abelian_curvature_annihilates_self_interaction`).
-This vanishing self-interaction is exactly why the `½[A,A]` non-abelian completion term is needed. -/
+/-- The self-commutator vanishes identically: `[A,A] = 0` (`abelian_curvature_annihilates_self_interaction`).
+Truth Repair: This vanishing holds for ANY matrix operator (abelian or non-abelian).
+Genuine non-abelian interaction does NOT arise from `½[A,A]` (which is zero), but from
+cross-role directional commutators `[A_r, A_s]` ($r \ne s$) as formalized in `QuaternionMixedCurvature`. -/
 def nonabelian_completion_boundary : Prop :=
   ∀ {n : Type} [Fintype n] (A : Matrix n n ℝ), commutator A A = 0
 

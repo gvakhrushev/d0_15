@@ -70,7 +70,17 @@ theorem nonabelian_curvature_preserves_skew {n : Type} [Fintype n] [DecidableEq 
   · apply skew_smul
     exact spatialWedge_preserves_skew A A hA hA
 
-/-- The discrete non-abelian curvature closes on skew operators: `[D,A] + ½[A,A]` of two skew
+/-- **Truth Repair**: The self-wedge `spatialWedge A A = commutator A A` vanishes identically,
+so `discreteNonAbelianCurvature D A` is identically equal to the linear commutator `spatialCommutator D A`.
+Genuine non-abelian interaction only exists across different directional components `[A_r, A_s]` ($r \ne s$),
+as formalized in `D0.Geometry.QuaternionMixedCurvature`. -/
+theorem discreteNonAbelianCurvature_eq_spatialCommutator {n : Type} [Fintype n]
+    (D A : Matrix n n ℝ) :
+    discreteNonAbelianCurvature D A = spatialCommutator D A := by
+  unfold discreteNonAbelianCurvature spatialWedge spatialCommutator
+  rw [commutator_self_zero A, smul_zero, add_zero]
+
+/-- The discrete gauge curvature closes on skew operators: `[D,A] + ½[A,A] = [D,A]` of two skew
 operators is skew (instantiates the proved `nonabelian_curvature_preserves_skew`). -/
 def nonabelian_discrete_curvature_boundary : Prop :=
   ∀ {n : Type} [Fintype n] [DecidableEq n] (D A : Matrix n n ℝ),

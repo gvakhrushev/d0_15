@@ -18,7 +18,11 @@ theorem localized_matter_source_neutral_if_anomaly_free
   rw [loc.total_source_eq_anomaly_or_charge, h]
   simp
 
-noncomputable def canonicalMatterLocalization (n : Nat) (R : MatterRep) :
+/-- Uniform (translation-invariant) matter source localization:
+Distributes the anomaly sum uniformly over all fibers:
+  source(i) = R.anomalySum / (n + 2).
+This is ONE specific translation-invariant completion, not a uniquely forced physical localization. -/
+noncomputable def uniformMatterLocalization (n : Nat) (R : MatterRep) :
     MatterArchiveLocalization n R :=
   { source := fun _ => (R.anomalySum : ℝ) / (archiveFibers n : ℝ),
     total_source_eq_anomaly_or_charge := by
@@ -29,16 +33,31 @@ noncomputable def canonicalMatterLocalization (n : Nat) (R : MatterRep) :
       field_simp [h_ne]
   }
 
+/-- Legacy alias for compatibility. -/
+noncomputable def canonicalMatterLocalization (n : Nat) (R : MatterRep) :
+    MatterArchiveLocalization n R :=
+  uniformMatterLocalization n R
+
+theorem uniform_localization_is_neutral_if_anomaly_free (n : Nat) (R : MatterRep)
+    (h : R.anomalySum = 0) :
+    NeutralSource (uniformMatterLocalization n R).source :=
+  localized_matter_source_neutral_if_anomaly_free n R (uniformMatterLocalization n R) h
+
 theorem canonical_localization_is_neutral_if_anomaly_free (n : Nat) (R : MatterRep)
     (h : R.anomalySum = 0) :
     NeutralSource (canonicalMatterLocalization n R).source :=
-  localized_matter_source_neutral_if_anomaly_free n R (canonicalMatterLocalization n R) h
+  uniform_localization_is_neutral_if_anomaly_free n R h
+
+theorem uniform_localization_source_val (n : Nat) (R : MatterRep)
+    (h : R.anomalySum = 0) :
+    ∀ i : archivePhaseIndex n, (uniformMatterLocalization n R).source i = 0 := by
+  intro i
+  unfold uniformMatterLocalization
+  simp [h]
 
 theorem canonical_localization_source_val (n : Nat) (R : MatterRep)
     (h : R.anomalySum = 0) :
-    ∀ i : archivePhaseIndex n, (canonicalMatterLocalization n R).source i = 0 := by
-  intro i
-  unfold canonicalMatterLocalization
-  simp [h]
+    ∀ i : archivePhaseIndex n, (canonicalMatterLocalization n R).source i = 0 :=
+  uniform_localization_source_val n R h
 
 end D0.Matter

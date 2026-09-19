@@ -9,23 +9,27 @@ open D0
 /-!
 # D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
 
-Owner: `D0-ARCHIVE-HODGE-DIRAC-ZERO-MODE-POLLUTION-NOGO-001`.
+Owner: `D0-ARCHIVE-TRUNCATED-01-HODGE-ZERO-MODE-POLLUTION-NOGO-001`.
+Legacy alias: `D0-ARCHIVE-HODGE-DIRAC-ZERO-MODE-POLLUTION-NOGO-001`.
 
-Structural spectral obstruction of the full Hodge/incidence Dirac operator on Cartesian lattices:
+Structural spectral obstruction of the TRUNCATED C⁰ ⊕ C¹ incidence Dirac operator:
 On a connected d-dimensional periodic grid of side L (total nodes N = L^d):
   - 0-cochains (vertices): dim H_0 = N
   - 1-cochains (oriented edges): dim H_1 = d * N
   - Incidence differential: rank(d) = N - 1 (connected graph)
-The full Hodge Dirac operator D_H = [[0, d*], [d, 0]] acting on H_0 ⊕ H_1 has kernel dimension:
-  dim ker D_H = (dim H_0 - rank d) + (dim H_1 - rank d)
-              = (N - (N - 1)) + (d * N - (N - 1))
-              = 1 + (d - 1) * N + 1
-              = (d - 1) * L^d + 2.
+The truncated incidence Dirac operator D_01 = [[0, d*], [d, 0]] acting on C⁰ ⊕ C¹ has kernel dimension:
+  dim ker D_01 = (dim H_0 - rank d) + (dim H_1 - rank d)
+               = (N - (N - 1)) + (d * N - (N - 1))
+               = 1 + (d - 1) * N + 1
+               = (d - 1) * L^d + 2.
 
 For d = 4, this yields:
-  dim ker D_H = 3 * L^4 + 2.
-As L → ∞, the zero-mode kernel diverges as 3 * L^4, creating massive spectral pollution
-(spurious harmonic 1-forms) that completely ruins the discrete-to-continuum spectral convergence.
+  dim ker D_01 = 3 * L^4 + 2.
+As L → ∞, this truncated zero-mode kernel diverges as 3 * L^4 (50 at L=2), creating massive spectral pollution.
+In contrast, the FULL cubical cochain complex ⨁_{k=0}⁴ C^k(T_L⁴) ≃ ℓ²(X_L) ⊗ ⋀* ℂ⁴
+has kernel dimension equal to the total Betti sum:
+  b₀ + b₁ + b₂ + b₃ + b₄ = 1 + 4 + 6 + 4 + 1 = 16,
+which is strictly constant and matches the 16-state CAR Fock carrier!
 -/
 
 /-- Vertex cochain dimension for a d-dimensional lattice of side L. -/
@@ -68,15 +72,21 @@ theorem hodge_kernel_pollution_divergence (L : ℕ) (hL : 2 ≤ L) :
     exact this
   linarith
 
-/-- **D0-ARCHIVE-HODGE-DIRAC-ZERO-MODE-POLLUTION-NOGO-001 (Owner)**:
-No-go theorem proving that the canonical incidence/Hodge Dirac operator suffers from
+/-- **D0-ARCHIVE-TRUNCATED-01-HODGE-ZERO-MODE-POLLUTION-NOGO-001 (Owner)**:
+No-go theorem proving that the truncated C⁰ ⊕ C¹ incidence Dirac operator suffers from
 divergent harmonic zero-mode pollution:
-1. At d = 4, dim ker D_H = 3 * L^4 + 2;
+1. At d = 4, dim ker D_01 = 3 * L^4 + 2;
 2. Evaluates to 50 at L = 2;
 3. Diverges as O(L^4) and strictly exceeds the physical 16-dimensional zero sector for all L >= 2. -/
-theorem archive_hodge_dirac_zero_mode_pollution_nogo_owner :
+theorem archive_truncated_01_hodge_zero_mode_pollution_nogo_owner :
     (hodgeDiracKernelDim 4 2 = 50) ∧
     (∀ L : ℕ, 2 ≤ L → 16 < hodgeDiracKernelDim4D L) :=
   ⟨hodge_kernel_at_two, hodge_kernel_pollution_divergence⟩
+
+/-- Legacy alias retained for backwards compatibility. -/
+theorem archive_hodge_dirac_zero_mode_pollution_nogo_owner :
+    (hodgeDiracKernelDim 4 2 = 50) ∧
+    (∀ L : ℕ, 2 ≤ L → 16 < hodgeDiracKernelDim4D L) :=
+  archive_truncated_01_hodge_zero_mode_pollution_nogo_owner
 
 end D0.Geometry
