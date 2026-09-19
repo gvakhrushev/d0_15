@@ -115,6 +115,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "archiveRolePhasePoint_card_pow_roles;archiveRolePhasePoint_card_eq_archiveModes;archiveRolePhaseProjection_surjective;archive_modes_realized_by_role_phase_product;archive_role_phase_product_carrier_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-ROLE-PRODUCT-LAPLACIAN-001", moduleName := "D0.Geometry.ArchiveRoleProductLaplacian",
       theoremName := "archiveRoleProductLaplacian_symmetric;archiveRoleCoboundary_constant_zero;archiveRoleProductLaplacian_constant_zero;archiveRoleMetricEnergy_nonnegative;archive_role_product_laplacian_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-HODGE-DIRAC-SQUARE-001", moduleName := "D0.Geometry.ArchiveHodgeDirac",
+      theoremName := "archiveRoleHodgeDirac_symmetric;archiveRoleHodgeDirac_sq_vertex_block;archiveRoleHodgeDirac_sq_edge_block;archiveRoleHodgeDirac_sq_vertex_edge_zero;archiveRoleHodgeDirac_sq_edge_vertex_zero;archive_hodge_dirac_square_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-HEATTRACE-001", moduleName := "D0.Geometry.ArchiveHeatTrace",
       theoremName := "heat_trace_positive;heat_trace_projection_compatible", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-ARCHIVE-LAPLACIAN-001", moduleName := "D0.Geometry.ArchiveLaplacianProperties",
