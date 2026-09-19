@@ -77,7 +77,10 @@ theorem divergenceFree_classification
 /-- Conversely every scalar multiple of (13,9,11) is divergence-free. -/
 theorem scalar_primitive_divergenceFree (t : ℚ) :
     DivergenceFree ⟨13 * t, 9 * t, 11 * t⟩ := by
-  constructor <;> norm_num <;> ring
+  unfold DivergenceFree
+  constructor
+  · ring
+  constructor <;> ring
 
 /-- Exact iff characterization of the invariant circulation line. -/
 theorem divergenceFree_iff_primitive_line (J : ZoneFlow) :
