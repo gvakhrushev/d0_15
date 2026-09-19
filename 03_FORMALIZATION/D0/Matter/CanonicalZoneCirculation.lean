@@ -118,6 +118,48 @@ theorem nonzero_flow_all_components_nonzero
   · rw [hz]
     exact mul_ne_zero (by norm_num) ht
 
+/-- Zero geometric current. -/
+def zeroFlow : ZoneFlow := ⟨0, 0, 0⟩
+
+theorem primitiveCirculation_ne_zero :
+    primitiveCirculation ≠ zeroFlow := by
+  intro h
+  have hx := congrArg ZoneFlow.x h
+  norm_num [primitiveCirculation, zeroFlow] at hx
+
+/-- The alternative carrier type: five canonical DΣ role coordinates, each
+valued in the same canonical geometric circulation line.  No role is assigned
+to a distinct graph orbit. -/
+abbrev RoleCirculationCarrier :=
+  D0.Matter.DSigmaRoleTransitionGraph.Role → ZoneFlow
+
+/-- Canonical role-tagged basis carrier. -/
+def roleTaggedCirculation
+    (r : D0.Matter.DSigmaRoleTransitionGraph.Role) :
+    RoleCirculationCarrier :=
+  fun s => if s = r then primitiveCirculation else zeroFlow
+
+/-- The five role tags remain distinguishable although all use the SAME
+geometric circulation line.  This is the exact type-theoretic reason the old
+Fin 5 -> Fin 1 orbit-injection no-go does not forbid a rank-5 typed carrier. -/
+theorem roleTaggedCirculation_injective :
+    Function.Injective roleTaggedCirculation := by
+  intro r s hrs
+  by_contra hne
+  have hAt := congrFun hrs r
+  simp [roleTaggedCirculation, hne] at hAt
+  exact primitiveCirculation_ne_zero hAt
+
+/-- The canonical DΣ successor acts on the five tagged carrier states without
+touching the geometric line. -/
+theorem roleTagged_succ_distinct
+    (r : D0.Matter.DSigmaRoleTransitionGraph.Role) :
+    roleTaggedCirculation
+        (D0.Matter.DSigmaRoleTransitionGraph.succ r) ≠
+      roleTaggedCirculation r := by
+  apply roleTaggedCirculation_injective.ne
+  exact D0.Matter.DSigmaRoleTransitionGraph.dsigma_transition_graph_is_single_cycle.2.1 r
+
 /-- The geometric factor is one-dimensional while the DΣ role factor has five
 states.  This avoids, rather than contradicts, the old Fin 5 -> Fin 1
 injection no-go: geometry supplies one line and role space supplies the five
