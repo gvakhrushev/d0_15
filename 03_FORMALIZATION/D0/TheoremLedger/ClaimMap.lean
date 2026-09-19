@@ -111,6 +111,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "terminal_readout_stable;archive_depth_strictly_increases;spectral_modes_strictly_increase;archive_projection_surjective;archive_tower_defines_profinite_object;inverseLimit_nonempty;archive_covariance_projectively_compatible;archive_laplacian_projectively_compatible", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-MODE-EXPONENT-001", moduleName := "D0.Geometry.ArchiveModeExponent",
       theoremName := "archive_mode_exponent_eq_abcd;archive_mode_exponent_eq_lorentz_dimension;archive_modes_forced", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001", moduleName := "D0.Geometry.ArchiveRolePhaseCarrier",
+      theoremName := "archiveRolePhasePoint_card_pow_roles;archiveRolePhasePoint_card_eq_archiveModes;archiveRolePhaseProjection_surjective;archive_modes_realized_by_role_phase_product;archive_role_phase_product_carrier_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-HEATTRACE-001", moduleName := "D0.Geometry.ArchiveHeatTrace",
       theoremName := "heat_trace_positive;heat_trace_projection_compatible", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-ARCHIVE-LAPLACIAN-001", moduleName := "D0.Geometry.ArchiveLaplacianProperties",
