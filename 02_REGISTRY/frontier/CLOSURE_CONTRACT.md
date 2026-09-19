@@ -88,13 +88,12 @@ representation output into the definition of done.
 
 ## 5. Current delegated work classification
 
-**Active independent blocker count: 3.**  They are integrity audits, not three new
-physics mechanisms.  SymTFT remains outside the count.
+**Active independent blocker count: 2.**  They are integrity audits (#11 and #13), not new
+physics mechanisms.  The quantum-metric audit (#12) is terminally classified below; SymTFT remains outside the count.
 
 - Sedenion audit (#11): **load-bearing integrity audit** — genuine construction or honest
   status downgrade are both terminal outcomes.
-- Quantum propinquity audit (#12): **load-bearing integrity audit** — genuine CQMS/
-  propinquity construction or honest downgrade are both terminal outcomes.
+- Quantum propinquity audit (#12): **TERMINAL — honest downgrade completed.** The owned Lean result is the generic golden-step Cauchy/convergence theorem in an arbitrary pseudometric space. A concrete D0 stage metric realization is now typed explicitly, while genuine CQMS/quantum-distance realization and continuum convergence stay under `ASSUMP-RIEFFEL-GHP`. This is BRIDGE/PASSPORT, not open core debt.
 - Alpha critical-carrier normalization audit (#13): **load-bearing integrity audit** —
   structural criticality must be separated from calibrated normalization; a positive
   new alpha derivation is not required for closure.
