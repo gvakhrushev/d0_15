@@ -28,7 +28,7 @@ open Matrix
 open D0.Dynamics
 
 /-- The connected two-torus `(R/Z)^2`. -/
-abbrev Torus2 := UnitAddTorus (Fin 2)
+abbrev Torus2 := Fin 2 → AddCircle (1 : ℝ)
 
 /-- Golden transition matrix used by the two-symbol SFT. -/
 def goldenTransition : ZMat2 := !![0, 1; 1, 1]
