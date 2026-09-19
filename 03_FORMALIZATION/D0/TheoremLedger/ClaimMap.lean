@@ -1200,7 +1200,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-PRODUCT-LAPLACIAN-OWNER-001", moduleName := "D0.Geometry.ArchiveProductLaplacian",
       theoremName := "roleLaplacian_symmetric;archiveProductLaplacian_symmetric;roleLaplacian_row_sum_zero;archiveProductLaplacian_constant_zero;archive_product_laplacian_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-METRIC-LAPLACIAN-SCALE-OWNER-001", moduleName := "D0.Geometry.ArchiveMetricLaplacianScaleNoGo",
-      theoremName := "metric_scale_strictly_exceeds_combinatorial;metric_scale_strictly_increasing;lattice_spacing_strictly_decreasing;metricProductLaplacian_symmetric;archive_metric_laplacian_scale_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "metric_scale_strictly_exceeds_combinatorial;metric_scale_strictly_increasing;lattice_spacing_strictly_decreasing;metricProductLaplacian_symmetric;archive_metric_laplacian_scale_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-EDGE-HOLONOMY-ADMISSIBLE-FAMILY-001", moduleName := "D0.Edge.HolonomyRamificationSeparation",
+      theoremName := "h_plus_admissible;h_minus_admissible;admissible_edge_cover_is_family", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-HOLONOMY-RAMIFICATION-SEPARATION-001", moduleName := "D0.Edge.HolonomyRamificationSeparation",
+      theoremName := "companionC4Deformed_cyclic;companionR3Deformed_cyclic;companion_physical_slice;companion_branch_locus_nilpotent;holonomy_ramification_separation_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PROJECTIVE-TERMINAL-RETURN-ORDER-001", moduleName := "D0.Edge.HolonomyRamificationSeparation",
+      theoremName := "companionC4_not_projective_intermediate;companionR3_not_projective_intermediate;companion_projective_orders", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LEPTON-HOLONOMY-BLIND-EXPONENT-CANONICITY-001", moduleName := "D0.Edge.HolonomyRamificationSeparation",
+      theoremName := "terminalExponentRow_constant;lepton_holonomy_blind_exponent_m1_forced", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

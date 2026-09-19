@@ -154,6 +154,7 @@ import D0.Dynamics.PisotContraction
 import D0.Dynamics.ToralAutomorphism
 import D0.Dynamics.ToralShiftEquivalence
 import D0.Dynamics.TraceHeatCapacityGravity
+import D0.Edge.HolonomyRamificationSeparation
 import D0.Edge.RamificationFromUeEffCompanion
 import D0.Evolution.FeshbachSchurTimeDelayOwner
 import D0.Evolution.JYNoncommutativeOrderObstruction
