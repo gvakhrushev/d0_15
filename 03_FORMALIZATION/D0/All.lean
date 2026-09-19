@@ -413,6 +413,7 @@ import D0.Representation.FiniteProtocolClock
 import D0.Representation.GoldenCoherentMemory
 import D0.Representation.GoldenOrderInterferometer
 import D0.Representation.GoldenProcessContext
+import D0.Representation.GenerationGradingPresentCoreMaximality
 import D0.Representation.GoldenRelativeChannel
 import D0.Representation.Omega8OrientationDecomposition
 import D0.Representation.OrderMemoryControl
