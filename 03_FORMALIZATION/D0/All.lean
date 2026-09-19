@@ -250,6 +250,7 @@ import D0.Geometry.ArchiveBianchiIdentity
 import D0.Geometry.ArchiveCurvatureDensity
 import D0.Geometry.ArchiveCurvatureObstruction
 import D0.Geometry.ArchiveFieldEquation
+import D0.Geometry.ArchiveHodgeDirac
 import D0.Geometry.ArchiveHeatTrace
 import D0.Geometry.ArchiveLaplacianPhaseNaturality
 import D0.Geometry.ArchiveLaplacianProperties
