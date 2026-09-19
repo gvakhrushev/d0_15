@@ -177,6 +177,14 @@ theorem sceneParityGrading_eq_neg_one :
   fin_cases i <;> fin_cases j <;>
     simp [sceneParityGrading, sceneParitySign, D0.Dynamics.det_T_pow]
 
+
+/-- The direct scene-parity operator is a perfectly valid compatible involution; its
+failure is not algebraic admissibility but scalarity. -/
+theorem sceneParityGrading_compatible :
+    CompatibleInvolution sceneParityGrading := by
+  rw [sceneParityGrading_eq_neg_one]
+  constructor <;> native_decide
+
 /-- Consequently the direct +2 scene parity gives the scalar nc=12 branch, not nc=8. -/
 theorem scene_parity_nc_is_twelve :
     ncReadout sceneParityGrading = 12 := by
