@@ -1168,7 +1168,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-SCENE-HISTORY-WEYL4-COMPATIBILITY-001", moduleName := "D0.Continuum.SceneHistoryWeyl4Compatibility",
       theoremName := "phi_pow_four;three_phi_plus_two_cubed;transport_cubic_at_phi_four;transport_cubic_at_phi_four_ne_zero;scene_history_weyl4_incompatibility;scene_history_weyl4_compatibility_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ALBERT-TRILINEAR-INVARIANT-001", moduleName := "D0.Algebra.AlbertTrilinearInvariant",
-      theoremName := "trilinear_symm_12;trilinear_symm_23;trilinear_permutation_invariant;trilinear_contraction_one;trilinear_nondegenerate;albert_trilinear_invariant_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "trilinear_symm_12;trilinear_symm_23;trilinear_permutation_invariant;trilinear_contraction_one;trilinear_nondegenerate;albert_trilinear_invariant_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-PHYSICAL-SCENE-SPECTRAL-TOWER-INVENTORY-001", moduleName := "D0.Continuum.PhysicalSceneSpectralTowerInventory",
+      theoremName := "archive_delta_base_is_equality;archive_delta_step_is_pullback;af_scene_eigenvalue_count_mismatch;physical_scene_spectral_tower_inventory_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SPECTRAL-PROPINQUITY-CONTINUITY-BRIDGE-001", moduleName := "D0.Continuum.SpectralPropinquityContinuityBridge",
+      theoremName := "spectral_propinquity_implies_hausdorff_spectral_convergence;spectral_propinquity_continuity_bridge_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALBERT-TO-YUKAWA-INTERTWINER-001", moduleName := "D0.Matter.AlbertYukawaIntertwiner",
+      theoremName := "pierce_trace_one;pierce_trace_sum_three;pierce_diag_mul_orthogonal;pierce_trilinear_diagonal;shell_overlap_trace_zero;shell_overlap_nearest_couplings;albert_to_yukawa_intertwiner_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-YUKAWA-BASIS-CANONICITY-001", moduleName := "D0.Matter.YukawaBasisCanonicity",
+      theoremName := "rotation_A_violates_pierce_stabilizer;rotation_B_violates_pierce_stabilizer;both_admissible_completions_demoted;stabilizer_forces_diagonal;yukawa_basis_canonicity_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

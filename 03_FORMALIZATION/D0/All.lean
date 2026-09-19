@@ -85,7 +85,9 @@ import D0.Condensed.CondensedPhiVacuum
 import D0.Condensed.SolidPhi
 import D0.CondensedAnchor.DetectorSupportGoldenWeight
 import D0.Continuum.HeatA2LimitInterchange
+import D0.Continuum.PhysicalSceneSpectralTowerInventory
 import D0.Continuum.SceneHistoryWeyl4Compatibility
+import D0.Continuum.SpectralPropinquityContinuityBridge
 import D0.Core.BornAreaPreservationNoGo
 import D0.Core.BornFinite
 import D0.Core.BornFiniteEffects
@@ -323,6 +325,7 @@ import D0.Integration.V15.RawZone
 import D0.Integration.V15.Refinement
 import D0.LeptonClosure.BranchIndexUnique
 import D0.LeptonClosure.BranchRowMinimalExtension
+import D0.Matter.AlbertYukawaIntertwiner
 import D0.Matter.ArchiveStressCoupling
 import D0.Matter.BaryonS3Symmetrizer
 import D0.Matter.BaryonSpinFlavourRanks
@@ -379,6 +382,7 @@ import D0.Matter.SMHyperchargeRowOwner
 import D0.Matter.TerminalFeedbackModes
 import D0.Matter.TickS3BaryonAsymmetry
 import D0.Matter.VectorOperatorOrigin
+import D0.Matter.YukawaBasisCanonicity
 import D0.Matter.YukawaShellOverlapMatrix
 import D0.Metrology.PSDPurification
 import D0.Metrology.PhasonBragg
