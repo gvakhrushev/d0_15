@@ -3,6 +3,7 @@
 
 import D0.Active.NonzeroMatterSourceNeutrality
 import D0.Active.ScalarPoissonReduction
+import D0.Algebra.CayleyDickson
 import D0.Algebra.AlbertJordan
 import D0.Algebra.Clifford
 import D0.Algebra.D0InternalDimensionSelector
