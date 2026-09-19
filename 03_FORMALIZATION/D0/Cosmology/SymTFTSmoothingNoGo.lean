@@ -38,12 +38,19 @@ noncomputable def uStar : ℝ := Real.log rho / 20
 
 theorem rho_pos : 0 < rho := by
   unfold rho
-  positivity
+  have hphi : (0 : ℝ) < phi := by
+    unfold phi
+    positivity
+  have hp : 0 < phi ^ 2 := pow_pos hphi 2
+  exact div_pos hp (by linarith)
 
 theorem rho_lt_one : rho < 1 := by
   unfold rho
-  have hp : 0 < phi ^ 2 := by positivity
-  have hd : 0 < 1 + phi ^ 2 := by positivity
+  have hphi : (0 : ℝ) < phi := by
+    unfold phi
+    positivity
+  have hp : 0 < phi ^ 2 := pow_pos hphi 2
+  have hd : 0 < 1 + phi ^ 2 := by linarith
   rw [div_lt_one hd]
   linarith
 
@@ -54,7 +61,7 @@ theorem rho_unit_interval : 0 < rho ∧ rho < 1 :=
 theorem proposed_uStar_negative : uStar < 0 := by
   unfold uStar
   have hlog : Real.log rho < 0 := Real.log_neg rho_pos rho_lt_one
-  positivity
+  exact div_neg_of_neg_of_pos hlog (by norm_num)
 
 /-- Fixing a smoothing prescription does not remove the independent k-axis:
 the same weights give different exact tilts at k=1 and k=2. -/
