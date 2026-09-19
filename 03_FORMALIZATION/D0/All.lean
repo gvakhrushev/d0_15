@@ -3,8 +3,8 @@
 
 import D0.Active.NonzeroMatterSourceNeutrality
 import D0.Active.ScalarPoissonReduction
-import D0.Algebra.CayleyDickson
 import D0.Algebra.AlbertJordan
+import D0.Algebra.CayleyDickson
 import D0.Algebra.Clifford
 import D0.Algebra.D0InternalDimensionSelector
 import D0.Algebra.FibonacciAFTower
@@ -107,6 +107,7 @@ import D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo
 import D0.Cosmology.CMBFiedlerFreezeout
 import D0.Cosmology.CMBLaplacianIDS
 import D0.Cosmology.CMBNsSmoothingUndeterminedNoGo
+import D0.Cosmology.SymTFTSmoothingNoGo
 import D0.Cosmology.ConcreteEntropyArchiveFlow
 import D0.Cosmology.CoreShapePassportBoundary
 import D0.Cosmology.DarkArchiveTransfer
