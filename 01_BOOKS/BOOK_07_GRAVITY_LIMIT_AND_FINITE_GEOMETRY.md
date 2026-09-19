@@ -1116,6 +1116,12 @@ S_N = sum_{n < N} rho_n.
 
 The proved Lean facts are: `rho_n >= 0`, `rho_n = 0` iff operator transport is flat, `S_N >= 0`, and `S_N = 0` iff every included refinement step is flat. The Python seam certificate supplies the exact finite rank/support invariant: rank `2`, four seam entries, HS density `4`. This closes the internal action skeleton as accumulated seam curvature.
 
+**Archive Operator Identity and Continuum Limits Separation (`D0-ARCHIVE-OPERATOR-IDENTITY-AUDIT-001`, `D0-ARCHIVE-TWO-LIMIT-SEPARATION-001`, `D0-ARCHIVE-SEAM-CURVATURE-SCOPE-001`).**
+The geometric sector strictly separates three distinct archive layers:
+1. $X_{\rm record} = \texttt{archiveLightProfinite}$: The informational inverse limit of finite records under integer-mod bonding $\operatorname{Fin}(3^4) \to \operatorname{Fin}(2^4)$. This is a compact totally disconnected Stone/profinite space, NOT a smooth manifold.
+2. $X_{\rm phase}^{(1)} = \texttt{archivePhaseIndex}$: The 1D cyclic phase sector on $C_L$. Its seam commutator invariant $\|C_1\|_{HS}^2 = 4$ is strictly a 1D phase refinement density (`D0-ARCHIVE-SEAM-CANONICITY-001`), because the 4D product graph lift gives $\|C_4\|_{HS}^2 = 16(L+1)^2(L+4) \to \infty$ (`D0-ARCHIVE-SEAM-CURVATURE-SCOPE-001`).
+3. $X_{\rm metric}^{(4)} = \{\texttt{ArchiveRolePhasePoint}_L\}_L$: The coordinate-free 4D metric role-product carrier $(\mathbb Z / L \mathbb Z)^{\rm ABCD}$ of cardinality $(n+2)^4 = \texttt{archiveModes}(n)$ (`D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001`). Equipped with the quadratic lattice metric scale $L^2 = d_{\rm edge}^{-2}$ (`D0-ARCHIVE-PHASE-EDGE-METRIC-SCALE-001`), the 4D metric Laplacian $\Delta_L^{(4)}$ (`D0-ARCHIVE-4D-METRIC-LAPLACIAN-001`) converges to the flat Riemannian 4-torus $T^4$ with scalar curvature $R_{\rm flat} = 0$ (`D0-ARCHIVE-4D-CURVATURE-PERTURBATION-BRIDGE-001`). Naive 1D-to-4D Galerkin RG lifting fails due to product Gram trace divergence $81 \ne 16$ (`D0-ARCHIVE-1D-TO-4D-RG-LIFT-NOGO-001`), requiring the common-limit spectral propinquity framework (`D0-ARCHIVE-CONCRETE-SPECTRAL-PROPINQUITY-001`). Furthermore, the algebraic trace-square identity of `SpectralActionLadder` decomposes into diagonal and off-diagonal proxies without deriving divergence-free Einstein dynamics (`D0-A2-EINSTEIN-DIVERGENCE-OBSTRUCTION-NOGO-001`).
+
 ## 07.30 Seam-action variation and archive field equation
 
 The seam action carries a finite variational layer.  Varying the coarse
