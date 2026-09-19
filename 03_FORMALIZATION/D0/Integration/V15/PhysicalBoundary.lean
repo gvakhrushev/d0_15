@@ -12,7 +12,7 @@ machine-checked regression of the two arithmetic anchors plus a register of cita
   owner `D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001`.
 * the internal tick `c_D0 = 1` is structural and is **not** the SI speed of light (`c_D0_is_one`,
   firewall token); `D0-...-TICK`.
-* α-residue route blocked; no canonical CMB smoothing window; single `n_s` not derived; cycle-flow ≠ Weyl
+* α-residue route blocked; strict archive phase pullback is non-flat; no canonical CMB smoothing window; single `n_s` not derived; cycle-flow ≠ Weyl
   hypercharge; CKM selector unforced; finite spin-2 ≠ smooth GR; internal flow ≠ physical `w(z)`;
   LIGO/DESI/AMS are passports — all cited (`regressionOwners`), none upgraded.
 
@@ -46,7 +46,7 @@ theorem c_D0_is_one : c_D0 = 1 := rfl
 def regressionOwners : List String :=
   ["D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001", "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
    "D0-ARCHIVE-CONTRACTION-NOGO-001", "D0-LEPTON-PUISEUX-UNIQUENESS-OBSTRUCTION-001",
-   "D0-ARCHIVE-LAPLACIAN-PHASE-NATURALITY", "D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001"]
+   "D0-ARCHIVE-PHASE-CURVATURE", "D0-NO-GO-BARE-ARCHIVE-NONABELIAN-001"]
 
 theorem regression_owners_present : regressionOwners.length = 6 := by decide
 
