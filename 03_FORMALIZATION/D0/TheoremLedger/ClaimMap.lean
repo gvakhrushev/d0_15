@@ -1146,7 +1146,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ALBERT-SM-GAUGE-PROJECTION-001", moduleName := "D0.Gauge.AlbertSMProjection",
       theoremName := "sm_gauge_dim_eq_twelve;sm_gauge_dim_le_f4;sm_factor_count_eq_three;albert_hypercharge_matches_weyl_generation;albert_sm_gauge_projection_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FIEDLER-HODGE-PROJECTION-001", moduleName := "D0.Cosmology.FiedlerHodgeProjection",
-      theoremName := "fiedler_tilt_formula;fiedler_tilt_kernel_invariant;fiedler_freezeout_tilt_exact;fiedler_hodge_projection_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "fiedler_tilt_formula;fiedler_tilt_kernel_invariant;fiedler_freezeout_tilt_exact;fiedler_hodge_projection_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIBONACCI-AF-TOWER-OWNER-001", moduleName := "D0.Algebra.FibonacciAFTower",
+      theoremName := "af_dimensions_initial;two_step_bratteli_matrix;af_dimensions_strictly_increasing;perron_eigenvalue_relation;perron_trace_consistency;gns_refinement_isometry;fibonacci_af_tower_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

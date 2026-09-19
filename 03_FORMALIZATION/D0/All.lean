@@ -6,6 +6,7 @@ import D0.Active.ScalarPoissonReduction
 import D0.Algebra.AlbertJordan
 import D0.Algebra.Clifford
 import D0.Algebra.D0InternalDimensionSelector
+import D0.Algebra.FibonacciAFTower
 import D0.Algebra.GaloisPhiNontrivial
 import D0.Algebra.HurwitzLocalBoundary
 import D0.Algebra.Sedenions
