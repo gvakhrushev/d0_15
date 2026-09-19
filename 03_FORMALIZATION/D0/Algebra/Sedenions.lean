@@ -1,38 +1,32 @@
-import Mathlib.Data.Fin.Basic
 import Mathlib.Data.Fintype.Perm
 import Mathlib.GroupTheory.Perm.Basic
 import Mathlib.Tactic
+import D0.Algebra.SedenionTower
 
 /-!
-# D0.Algebra.Sedenions
+# Legacy three-label S3 scaffold — not a sedenion realization
 
-Algebraic resolution of the 3-generation fermion barrier (overcoming `LeptonBranchFixingNoGo` $2 < 3$).
+The historical version of this file called a three-element type
+`OctonionBranch` a formalization of sedenions and inferred three fermion
+generations from hand-written permutations.  That was status inflation.
 
-In `D0.Extensions.LeptonBranchFixingNoGo`, it was proven that the combinatorial shell-torus
-carrier $C_4 \times R_3$ decomposes into strictly 2 orbits (with ramification indices $1/4$ and $1/3$),
-making it impossible by pigeonhole principle ($2 < 3$) to generate the 3 generations of fermions internally.
+The actual Cayley--Dickson carrier now lives in
+`D0.Algebra.CayleyDickson` and `D0.Algebra.SedenionTower`.
+This file retains only the finite three-label S3-set because it can be useful
+as a combinatorial indexing scaffold.
 
-Following the algebraic construction of Furey, Gresnigt (arXiv:2306.13098) and Boyle, Farnsworth (arXiv:1910.11888):
-1. Sedenions $\mathbb{S}$ are the 16-dimensional Cayley-Dickson algebra over $\mathbb{Q}(\sqrt{5})$
-   doubling octonions $\mathbb{O}$: $\mathbb{S} = \mathbb{O} \oplus \mathbb{O} \ell$.
-2. The left multiplication algebra of $\mathbb{S}$ generates the Clifford algebra $\mathbb{C}\ell(8)$.
-3. Sedenions admit an outer automorphism group containing the symmetric group $S_3$.
-4. Inside $\mathbb{S}$, there are exactly 3 distinct octonionic subalgebras $\mathbb{O}_1, \mathbb{O}_2, \mathbb{O}_3$
-   sharing a common quaternionic core $\mathbb{H}$:
-   $$\mathbb{O}_1 \cap \mathbb{O}_2 \cap \mathbb{O}_3 = \mathbb{H}$$
-5. The $S_3$ group acts transitively by permuting these three subalgebras:
-   $$\sigma(\mathbb{O}_i) = \mathbb{O}_{\sigma(i)} \quad (\sigma \in S_3)$$
-6. The action of $S_3$ decomposes the spinor space into exactly three minimal left ideals,
-   corresponding to the three physical generations of fermions, without requiring any fixed point
-   or unramified orbit in the combinatorial torus.
-
-This module formalizes the algebraic structure, the $S_3$ triality action, and proves the existence
-of the canonical 3-generation ideal decomposition.
+Crucially, the scaffold does **not** determine an algebra structure.  We give
+two distinct binary products on the same carrier, both equivariant under every
+relabeling permutation.  Therefore cardinality three plus an S3 action cannot
+establish a sedenion multiplication, octonionic subalgebras, algebra
+automorphisms, Clifford left action, minimal ideals, or a D0 generation
+representation functor.
 -/
 
 namespace D0.Algebra.Sedenions
 
-/-- The three octonionic subalgebra branches of sedenions sharing a quaternionic core. -/
+/-- A legacy three-label indexing carrier.  The constructors are names only;
+they are not octonionic subalgebras until an actual embedding theorem is supplied. -/
 inductive OctonionBranch : Type
   | O1 : OctonionBranch
   | O2 : OctonionBranch
@@ -41,11 +35,9 @@ inductive OctonionBranch : Type
 
 open OctonionBranch
 
-/-- The cardinality of octonionic branches in sedenions is exactly 3. -/
 theorem octonion_branch_card : Fintype.card OctonionBranch = 3 := by
   decide
 
-/-- Equivalence between `OctonionBranch` and `Fin 3`. -/
 def branchToFin : OctonionBranch → Fin 3
   | O1 => 0
   | O2 => 1
@@ -56,29 +48,29 @@ def finToBranch : Fin 3 → OctonionBranch
   | ⟨1, _⟩ => O2
   | ⟨2, _⟩ => O3
 
-theorem branchToFin_finToBranch (i : Fin 3) : branchToFin (finToBranch i) = i := by
+theorem branchToFin_finToBranch (i : Fin 3) :
+    branchToFin (finToBranch i) = i := by
   fin_cases i <;> rfl
 
-theorem finToBranch_branchToFin (b : OctonionBranch) : finToBranch (branchToFin b) = b := by
+theorem finToBranch_branchToFin (b : OctonionBranch) :
+    finToBranch (branchToFin b) = b := by
   cases b <;> rfl
 
-/-- Bijections between the 3 branches and 3 physical fermion generations exist canonically. -/
-theorem branch_generation_bijective : ∃ h : OctonionBranch → Fin 3, Function.Bijective h := by
-  use branchToFin
-  constructor
+theorem branch_generation_bijective :
+    ∃ h : OctonionBranch → Fin 3, Function.Bijective h := by
+  refine ⟨branchToFin, ?_, ?_⟩
   · intro x y hxy
-    cases x <;> cases y <;> revert hxy <;> decide
+    cases x <;> cases y <;> simp [branchToFin] at hxy ⊢
   · intro y
-    use finToBranch y
-    exact branchToFin_finToBranch y
+    exact ⟨finToBranch y, branchToFin_finToBranch y⟩
 
-/-- The cyclic generator (order 3) of the $S_3$ outer automorphism group. -/
+/-- Cyclic permutation of the three labels. -/
 def s3_cycle : OctonionBranch → OctonionBranch
   | O1 => O2
   | O2 => O3
   | O3 => O1
 
-/-- The transposition generator (order 2) of the $S_3$ outer automorphism group. -/
+/-- Transposition of the first two labels. -/
 def s3_swap : OctonionBranch → OctonionBranch
   | O1 => O2
   | O2 => O1
@@ -92,12 +84,11 @@ theorem s3_swap_order2 : s3_swap ∘ s3_swap = id := by
   funext b
   cases b <;> rfl
 
-/-- Transitivity: for any two octonionic branches $O_i$ and $O_j$, there exists an automorphism
-in the generated $S_3$ group mapping $O_i$ to $O_j$. -/
 theorem s3_action_transitive (x y : OctonionBranch) :
     ∃ f : OctonionBranch → OctonionBranch,
       (f = id ∨ f = s3_cycle ∨ f = s3_cycle ∘ s3_cycle ∨
-       f = s3_swap ∨ f = s3_swap ∘ s3_cycle ∨ f = s3_cycle ∘ s3_swap) ∧ f x = y := by
+       f = s3_swap ∨ f = s3_swap ∘ s3_cycle ∨ f = s3_cycle ∘ s3_swap) ∧
+      f x = y := by
   cases x <;> cases y
   · use id; simp
   · use s3_cycle; simp [s3_cycle]
@@ -109,47 +100,52 @@ theorem s3_action_transitive (x y : OctonionBranch) :
   · use s3_cycle ∘ s3_cycle; simp [s3_cycle]
   · use id; simp
 
-/-- Sedenion dimension is 16. -/
-def sedenionDim : ℕ := 16
+/-! ## Negative control: an S3-set does not determine multiplication -/
 
-/-- Octonion dimension is 8. -/
-def octonionDim : ℕ := 8
+/-- First projection product on the same three-label carrier. -/
+def leftProduct (x _y : OctonionBranch) : OctonionBranch := x
 
-/-- Quaternion core dimension is 4. -/
-def quaternionCoreDim : ℕ := 4
+/-- Second projection product on the same three-label carrier. -/
+def rightProduct (_x y : OctonionBranch) : OctonionBranch := y
 
-/-- The Cayley-Dickson dimension doubling law: $16 = 2 \times 8$. -/
-theorem sedenion_cayley_dickson_dim : sedenionDim = 2 * octonionDim := by
+theorem leftProduct_ne_rightProduct : leftProduct ≠ rightProduct := by
+  intro h
+  have hh := congrFun (congrFun h O1) O2
+  simp [leftProduct, rightProduct] at hh
+
+/-- Every relabeling permutation is an automorphism of the left-projection magma. -/
+theorem leftProduct_equivariant (σ : Equiv.Perm OctonionBranch) (x y : OctonionBranch) :
+    σ (leftProduct x y) = leftProduct (σ x) (σ y) := by
   rfl
 
-/-- Dimension formula for the intersection of the 3 octonionic subalgebras:
-$\dim(\mathbb{O}_i \cap \mathbb{O}_j) = 4 = \dim(\mathbb{H})$ for all $i \neq j$. -/
-theorem octonion_subalgebra_intersection_dim (i j : OctonionBranch) (_h : i ≠ j) :
-    quaternionCoreDim = 4 := rfl
+/-- Every relabeling permutation is also an automorphism of the distinct
+right-projection magma. -/
+theorem rightProduct_equivariant (σ : Equiv.Perm OctonionBranch) (x y : OctonionBranch) :
+    σ (rightProduct x y) = rightProduct (σ x) (σ y) := by
+  rfl
 
-/-- The Clifford algebra generation: left multiplication of sedenions $\mathbb{S}$
-generates the 8-graded Clifford algebra $\mathbb{C}\ell(8)$. -/
-def cliffordSpinorDim : ℕ := 16
+/-- The exact negative control required by the sedenion audit: the same
+three-element S3 carrier admits distinct fully relabeling-equivariant products.
+Hence the S3-set data do not determine even a multiplication law. -/
+theorem bare_threeset_insufficient_for_sedenion_realization :
+    leftProduct ≠ rightProduct ∧
+    (∀ (σ : Equiv.Perm OctonionBranch) x y,
+      σ (leftProduct x y) = leftProduct (σ x) (σ y)) ∧
+    (∀ (σ : Equiv.Perm OctonionBranch) x y,
+      σ (rightProduct x y) = rightProduct (σ x) (σ y)) := by
+  exact ⟨leftProduct_ne_rightProduct,
+    leftProduct_equivariant,
+    rightProduct_equivariant⟩
 
-/-- Decomposition into three minimal left ideals under $S_3$:
-Each ideal corresponds to an irreducible representation of the single generation Standard Model
-algebra $\mathfrak{su}(3) \times \mathfrak{u}(1)$. -/
-structure S3IdealDecomposition where
-  ideals : OctonionBranch → Type
-  ideal_distinct : ∀ i j, i ≠ j → ideals i ≠ ideals j
-
-/-- Formal resolution of the Lepton 2 < 3 barrier:
-While the combinatorial torus has only 2 orbits (4-cycle and 3-cycle),
-the sedenion Cayley-Dickson algebra supplies exactly 3 transitive algebraic branches,
-resolving the 3-generation requirement without external ad-hoc parameters. -/
-theorem sedenion_three_generation_forcing :
+/-- Honest capstone for the legacy file: exactly a transitive three-label S3
+scaffold plus the proof that this scaffold is algebraically insufficient. -/
+theorem branch_label_s3_scaffold :
     Fintype.card OctonionBranch = 3 ∧
-    (∃ h : OctonionBranch → Fin 3, Function.Bijective h) ∧
     (∀ x y : OctonionBranch, ∃ f : OctonionBranch → OctonionBranch,
-      ((f = id ∨ f = s3_cycle ∨ f = s3_cycle ∘ s3_cycle ∨
-        f = s3_swap ∨ f = s3_swap ∘ s3_cycle ∨ f = s3_cycle ∘ s3_swap) ∧ f x = y)) := by
-  refine ⟨octonion_branch_card, branch_generation_bijective, ?_⟩
-  intro x y
-  exact s3_action_transitive x y
+      (f = id ∨ f = s3_cycle ∨ f = s3_cycle ∘ s3_cycle ∨
+       f = s3_swap ∨ f = s3_swap ∘ s3_cycle ∨ f = s3_cycle ∘ s3_swap) ∧
+      f x = y) ∧
+    leftProduct ≠ rightProduct := by
+  exact ⟨octonion_branch_card, s3_action_transitive, leftProduct_ne_rightProduct⟩
 
 end D0.Algebra.Sedenions
