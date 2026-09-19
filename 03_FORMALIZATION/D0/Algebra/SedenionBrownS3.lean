@@ -108,7 +108,8 @@ def basisVec (i : Fin 16) : SVec :=
 def vecMul (x y : SVec) : SVec :=
   fun k =>
     ∑ i : Fin 16, ∑ j : Fin 16,
-      if mulIndex i j = k then
+      if x i = 0 ∨ y j = 0 then 0
+      else if mulIndex i j = k then
         if mulNeg i j then -(q3Mul (x i) (y j)) else q3Mul (x i) (y j)
       else 0
 
