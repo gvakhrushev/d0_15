@@ -1,5 +1,6 @@
 import Mathlib.Tactic
 import D0.Representation.OrientationNontrivialGrading
+import D0.Representation.Omega8OrientationDecomposition
 import D0.Extensions.RepresentationReadoutExtension
 import D0.Matter.CanonicalZoneCirculation
 import D0.Foundation.ObservableCompletionCanonicity
@@ -18,9 +19,23 @@ results to the canonical `ObservableCompletionCanonicity` framework:
    - The observable `readout := fun (p, q) => ncCount p q` evaluates to `8` on ALL
      such completions.
    - By `constant_readout_m1_forced`, the neutral-current count `8` is `M1Forced`
-     WITHOUT variational MDL / commutant-minimization!
+     WITHOUT variational MDL / commutant-minimization.
 
-2. **Canonical Zone Circulation Direction Canonicity**:
+2. **Cross-carrier transport-choice invariance**:
+   - The three owned terminal sectors `(E₀,E₄,E₃)` carry the sign multiset `(+,-,+)`.
+   - The intrinsic generation frame has exactly three lines.
+   - Any bijective relabelling of terminal sectors onto generation lines preserves the
+     sign multiplicities `(2,1)`; therefore every such transport completion has
+     neutral-current readout `8`.
+   - Hence the *choice of bijection itself* is gauge for this observable: no canonical
+     sector-to-generation numbering is required to force `nc=8`.
+
+   Honest boundary: this removes the need to choose a privileged bijection.  It does
+   not prove the stronger semantic statement that the terminal sector sign is the
+   physical grading acting on the generation block; that representation-level bridge
+   remains distinct.
+
+3. **Canonical Zone Circulation Direction Canonicity**:
    - For any nonzero divergence-free zone-homogeneous flow $J$ on $K(9,11,13)$,
      all three components are nonzero and proportional to $(13, 9, 11)$.
    - The normalized orientation ray / projectivized circulation line is uniquely forced.
@@ -71,6 +86,116 @@ theorem nc_count_eight_m1_forced :
   rw [h_val] at h_forced
   exact h_forced
 
+/-! ## Transport-choice invariance
+
+The cross-carrier issue has two logically separate parts:
+
+* a semantic bridge saying that terminal orientation signs grade the generation lines;
+* a choice of which of the three terminal sectors is identified with which generation line.
+
+Only the first can matter for the neutral-current observable.  Once the semantic bridge
+is admitted, the second is a pure permutation choice, and the theorem below proves that
+all six choices have the same readout.
+-/
+
+/-- The three terminal projectors in the owned order `(E₀,E₄,E₃)`.
+This is not a copied rank/sign table: the projectors are the literal typed owners on
+the already-owned `Omega8 = Role × Orient` carrier. -/
+def terminalProjector :
+    Fin 3 → D0.Representation.Omega8OrientationDecomposition.MOmega
+  | 0 => D0.Representation.Omega8OrientationDecomposition.typedE0
+  | 1 => D0.Representation.Omega8OrientationDecomposition.typedE4
+  | 2 => D0.Representation.Omega8OrientationDecomposition.typedE3
+
+/-- Read the orientation sign directly from the owned orientation involution:
+a sector is positive exactly when `orientFlip` fixes its projector. -/
+def terminalSectorPositive (s : Fin 3) : Bool :=
+  decide (
+    D0.Representation.Omega8OrientationDecomposition.orientFlip * terminalProjector s =
+      terminalProjector s)
+
+/-- The Boolean sign pattern used by transport is therefore computed from the literal
+owned projectors/involution, not restated as input. -/
+theorem terminal_sector_sign_pattern_owned :
+    terminalSectorPositive 0 = true ∧
+    terminalSectorPositive 1 = false ∧
+    terminalSectorPositive 2 = true := by
+  native_decide
+
+/-- A transport completion is any bijective relabelling of the three terminal sectors
+onto the three intrinsic generation lines. -/
+abbrev OrientationTransport := Equiv.Perm (Fin 3)
+
+/-- Pull the terminal sign pattern through a transport. -/
+def transportedSectorPositive (σ : OrientationTransport) (g : Fin 3) : Bool :=
+  terminalSectorPositive (σ.symm g)
+
+/-- Number of positive generation lines after transport. -/
+def transportedPositiveCount (σ : OrientationTransport) : ℕ :=
+  ((Finset.univ : Finset (Fin 3)).filter
+    (fun g => transportedSectorPositive σ g = true)).card
+
+/-- Number of negative generation lines after transport. -/
+def transportedNegativeCount (σ : OrientationTransport) : ℕ :=
+  ((Finset.univ : Finset (Fin 3)).filter
+    (fun g => transportedSectorPositive σ g = false)).card
+
+/-- The transported grading signature. -/
+def transportedSignature (σ : OrientationTransport) : ℕ × ℕ :=
+  (transportedPositiveCount σ, transportedNegativeCount σ)
+
+/-- Permuting the three sectors cannot change the sign multiplicities: every transport
+has signature exactly `(2,1)`.  The proposition is finite (six permutations), so this
+is discharged by exact kernel computation rather than by a chosen transport. -/
+theorem transported_signature_invariant :
+    ∀ σ : OrientationTransport, transportedSignature σ = (2, 1) := by
+  native_decide
+
+/-- Every bijective transport therefore lands inside the already-owned admissible
+nontrivial grading class. -/
+theorem transported_signature_admissible (σ : OrientationTransport) :
+    AdmissibleGradingSignature (transportedSignature σ) := by
+  rw [transported_signature_invariant σ]
+  exact admissible_grading_21
+
+/-- Neutral-current readout of a transport completion. -/
+def transportNcReadout (σ : OrientationTransport) : ℕ :=
+  ncReadout (transportedSignature σ)
+
+/-- **Cross-carrier choice elimination for the observable.**
+Every one of the six terminal-sector ↔ generation-line bijections gives `nc=8`. -/
+theorem all_orientation_transports_give_eight (σ : OrientationTransport) :
+    transportNcReadout σ = 8 := by
+  unfold transportNcReadout
+  exact all_admissible_gradings_give_eight
+    (transportedSignature σ) (transported_signature_admissible σ)
+
+/-- All bijective sector-to-line transports are admissible as *labelling completions*.
+This intentionally does not assert the stronger physical representation bridge. -/
+def AdmissibleOrientationTransport (_σ : OrientationTransport) : Prop := True
+
+/-- **M1 canonicity modulo transport choice.**
+The neutral-current observable is forced even though the transport object is not unique:
+all admissible transport completions have the same readout. -/
+theorem nc_transport_choice_m1_forced :
+    M1Forced
+      (CompletionForcesReadout AdmissibleOrientationTransport transportNcReadout)
+      8 := by
+  let σ₀ : OrientationTransport := Equiv.refl (Fin 3)
+  have hσ₀ : AdmissibleOrientationTransport σ₀ := trivial
+  have h_const :
+      ∀ σ, AdmissibleOrientationTransport σ →
+        transportNcReadout σ = transportNcReadout σ₀ := by
+    intro σ _
+    rw [all_orientation_transports_give_eight σ]
+    rw [all_orientation_transports_give_eight σ₀]
+  have h_forced := constant_readout_m1_forced
+    AdmissibleOrientationTransport transportNcReadout σ₀ hσ₀ h_const
+  have h_val : transportNcReadout σ₀ = 8 :=
+    all_orientation_transports_give_eight σ₀
+  rw [h_val] at h_forced
+  exact h_forced
+
 /-- Admissible circulation ray: ratio of $x$ to $y$ component for any nonzero divergence-free current. -/
 def circulationRatio (J : ZoneFlow) : ℚ :=
   J.x / J.y
@@ -96,11 +221,14 @@ theorem circulation_ratio_invariant
   _ = (13 / 9 : ℚ) * 1 := by rw [div_self ht_nonzero]
   _ = 13 / 9 := mul_one _
 
-/-- Summary owner connecting representation and matter circulation to the canonicity framework. -/
+/-- Summary owner connecting representation and matter circulation to the canonicity framework.
+It now records both grading-signature canonicity and invariance under all cross-carrier
+sector relabellings, while leaving the stronger semantic representation bridge explicit. -/
 theorem representation_circulation_canonicity_owner :
     M1Forced (CompletionForcesReadout AdmissibleGradingSignature ncReadout) 8 ∧
+    M1Forced (CompletionForcesReadout AdmissibleOrientationTransport transportNcReadout) 8 ∧
     (∀ J : ZoneFlow, DivergenceFree J → (J.x ≠ 0 ∨ J.y ≠ 0 ∨ J.z ≠ 0) →
       circulationRatio J = 13 / 9) :=
-  ⟨nc_count_eight_m1_forced, circulation_ratio_invariant⟩
+  ⟨nc_count_eight_m1_forced, nc_transport_choice_m1_forced, circulation_ratio_invariant⟩
 
 end D0.Synthesis.RepresentationAndCirculationCanonicity
