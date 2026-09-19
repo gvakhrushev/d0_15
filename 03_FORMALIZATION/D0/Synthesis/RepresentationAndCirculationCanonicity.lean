@@ -97,13 +97,29 @@ is admitted, the second is a pure permutation choice, and the theorem below prov
 all six choices have the same readout.
 -/
 
-/-- Three terminal orientation sectors in the owned order `(E₀,E₄,E₃)`.
-`true` denotes the `+1` orientation sign and `false` the `-1` sign.  This is
-exactly the sign pattern proved by `terminalOrientationSign_on_E0/E4/E3`. -/
-def terminalSectorPositive : Fin 3 → Bool
-  | 0 => true
-  | 1 => false
-  | 2 => true
+/-- The three terminal projectors in the owned order `(E₀,E₄,E₃)`.
+This is not a copied rank/sign table: the projectors are the literal typed owners on
+the already-owned `Omega8 = Role × Orient` carrier. -/
+def terminalProjector :
+    Fin 3 → D0.Representation.Omega8OrientationDecomposition.MOmega
+  | 0 => D0.Representation.Omega8OrientationDecomposition.typedE0
+  | 1 => D0.Representation.Omega8OrientationDecomposition.typedE4
+  | 2 => D0.Representation.Omega8OrientationDecomposition.typedE3
+
+/-- Read the orientation sign directly from the owned orientation involution:
+a sector is positive exactly when `orientFlip` fixes its projector. -/
+def terminalSectorPositive (s : Fin 3) : Bool :=
+  decide (
+    D0.Representation.Omega8OrientationDecomposition.orientFlip * terminalProjector s =
+      terminalProjector s)
+
+/-- The Boolean sign pattern used by transport is therefore computed from the literal
+owned projectors/involution, not restated as input. -/
+theorem terminal_sector_sign_pattern_owned :
+    terminalSectorPositive 0 = true ∧
+    terminalSectorPositive 1 = false ∧
+    terminalSectorPositive 2 = true := by
+  native_decide
 
 /-- A transport completion is any bijective relabelling of the three terminal sectors
 onto the three intrinsic generation lines. -/
