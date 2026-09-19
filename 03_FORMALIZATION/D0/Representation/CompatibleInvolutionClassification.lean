@@ -1,5 +1,5 @@
 import Mathlib.Tactic
-import Mathlib.Data.Matrix.Notation
+import Mathlib.LinearAlgebra.Matrix.Notation
 import D0.Representation.TypedRepresentationFunctor
 import D0.Extensions.RepresentationReadoutExtension
 import D0.Synthesis.Z2SpinorCover
