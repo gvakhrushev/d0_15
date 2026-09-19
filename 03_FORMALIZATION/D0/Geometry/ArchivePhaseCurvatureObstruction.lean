@@ -128,7 +128,6 @@ theorem phase_projection_not_flat (n : Nat) (hn : 1 < n) :
     intro h
     have hv := congrArg Fin.val h
     simp [iFine, jFine] at hv
-    omega
   have hcoarse_adj : archiveAdjacent n iCoarse jCoarse := by
     simpa [iCoarse, jCoarse] using phase_cycle_zero_adj_one n hn
   have hfine_not_adj : ¬ archiveAdjacent (n+1) iFine jFine := by
