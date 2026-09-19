@@ -192,6 +192,14 @@ theorem logCesaroPhi3_tendsto (c : ℝ) :
 theorem dixmier_coefficient_ne_zero {c : ℝ} (hc : c ≠ 0) : c / Real.log alpha ≠ 0 :=
   div_ne_zero hc (ne_of_gt log_alpha_pos)
 
+/-- **Structural criticality only.**  The φ³ growth law forces the critical
+log-Cesàro coefficient to be `c / log α`; it is nonzero whenever the independently
+supplied level constant `c` is nonzero.  No `μ₂` appears in this theorem. -/
+theorem perron_phi3_structural_criticality (c : ℝ) :
+    Tendsto (logCesaroPhi3 c) atTop (𝓝 (c / Real.log alpha)) ∧
+    (c ≠ 0 → c / Real.log alpha ≠ 0) := by
+  exact ⟨logCesaroPhi3_tendsto c, fun hc => dixmier_coefficient_ne_zero hc⟩
+
 /-- The level constant that normalises the carrier onto `μ₂`: `c₂ = 3·μ₂·log φ = μ₂·log α`. -/
 noncomputable def c2 : ℝ := mu2 * Real.log alpha
 
@@ -201,6 +209,14 @@ theorem logCesaroPhi3_c2_tendsto_mu2 : Tendsto (logCesaroPhi3 c2) atTop (𝓝 mu
   have e : c2 / Real.log alpha = mu2 := by
     unfold c2; exact mul_div_cancel_right₀ mu2 (ne_of_gt log_alpha_pos)
   rwa [e] at h
+
+/-- **Calibration boundary.**  The exact `μ₂` limit follows because the defining
+constant `c2` already contains `μ₂`.  This records a valid normalization identity,
+not an internal derivation of `μ₂` or of the level constant. -/
+theorem perron_phi3_calibration_is_normalized :
+    c2 = mu2 * Real.log alpha ∧
+    Tendsto (logCesaroPhi3 c2) atTop (𝓝 mu2) := by
+  exact ⟨rfl, logCesaroPhi3_c2_tendsto_mu2⟩
 
 /-- **Contrast with the present-core no-go.** The forced present-core tower has log-Cesàro limit
 `0`, the φ³ carrier has limit `μ₂`: the two towers are analytically distinct, and only the

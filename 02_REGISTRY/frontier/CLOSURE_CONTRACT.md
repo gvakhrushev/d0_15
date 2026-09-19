@@ -86,20 +86,28 @@ NO-GO / explicit BRIDGE**, not an active core blocker.  Further finite-spectral-
 work is an optional extension unless the project explicitly promotes a stronger
 representation output into the definition of done.
 
-## 5. Current delegated work classification
+## 5. Delegated integrity audits — terminal classification
 
-**Active independent blocker count: 3.**  They are integrity audits, not three new
-physics mechanisms.  SymTFT remains outside the count.
+**Active independent blocker count from #11/#12/#13: 0.**  The audits have terminal
+outcomes; the existence of sharper continuation targets does not reopen them.
 
-- Sedenion audit (#11): **load-bearing integrity audit** — genuine construction or honest
-  status downgrade are both terminal outcomes.
-- Quantum propinquity audit (#12): **load-bearing integrity audit** — genuine CQMS/
-  propinquity construction or honest downgrade are both terminal outcomes.
-- Alpha critical-carrier normalization audit (#13): **load-bearing integrity audit** —
-  structural criticality must be separated from calibrated normalization; a positive
-  new alpha derivation is not required for closure.
-- SymTFT smoothing (#15): **optional extension** unless parameter-free internal CMB
-  `n_s` is explicitly promoted into the required D0 output contract.
+- Sedenion audit (#11): **terminal split.**  A genuine recursive Cayley–Dickson carrier
+  and concrete sedenion algebraic core are CORE.  The old three-label “three generations”
+  owner is deprecated, with an explicit algebra-insufficiency negative control.  A real
+  sedenion/Clifford/D0 representation functor is a named optional bridge target, not
+  unfinished algebraic CORE.
+- Quantum propinquity audit (#12): **terminal downgrade.**  The owned theorem is the
+  generic golden pseudometric Cauchy theorem.  Genuine Rieffel/Latremoliere stage
+  structure and propinquity convergence are explicitly typed bridge targets/passports,
+  not claimed CORE.
+- Alpha critical-carrier normalization audit (#13): **terminal split.**  The phi^3
+  critical-line asymptotic is CORE.  The exact mu2 value from
+  `c2 := mu2 * log(alpha)` is explicitly a calibration identity; independent origin
+  of the level constant is a continuation target/passport, not an unclassified core
+  ambiguity.
+- SymTFT smoothing (#15): remains an **optional extension**.  The proposed formula now
+  has an exact no-go check: its `u*` is negative and fixing smoothing still leaves the
+  independent `k` choice.  This does not enter the active blocker count.
 
 ## 6. Stop rule
 

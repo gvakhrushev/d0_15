@@ -856,11 +856,12 @@ D0.Geometry.SpectralActionLadder.higher_powers_floor_bounded
 
 **[Alpha present-core maximality].** Strengthening of the profinite no-go: NOT just one tower, but EVERY admissible present-core tower fails to realize `mu_2`. An admissible tower has frozen weight `r=phi^-3` per increment and multiplicity growth rate `a` (block `N ~ phi^(aN)`); the per-block trace contribution is `phi^(a-3)`. Present-core gives `a=0` (constant `2^11` ledger) and `a=1` (golden carrier, Perron `phi`). For any `a<=2<3` the contribution `<1` => trace-class => Dixmier coefficient `0`, never `mu_2` (`D0-ALPHA-PRESENT-CORE-MAXIMALITY-NOGO-001`, Lean `D0.Spectral.AlphaPresentCoreMaximalityNoGo`). The critical `1/j` line is reached only at `a=3` (`rate=1`, carrier Perron eigenvalue `phi^3`), which 5-fold symmetry + M1 forbid. The remaining interface is an external Dixmier/Wodzicki residue passport or a new independently-forced `phi^3` carrier, not a present-core object.
 
-In `D0-PERRON-PHI3-CARRIER-OWNER-001` (`D0.Spectral.PerronPhi3Carrier`), the mathematical structure of this critical carrier is constructively formalised in Lean 4:
-- `carrier_not_trace_class`: the partial sums are unbounded for any positive step weight $c > 0$;
-- `normLog_tendsto`: the normalized logarithmic level count satisfies $\frac{\ln(1 + M_K)}{K + 1} \to 3 \ln \varphi = \ln \alpha$;
-- `logCesaroPhi3_tendsto`: the log-Cesàro ratio converges rigorously to $c / (3 \ln \varphi) \ne 0$;
-- `logCesaroPhi3_c2_tendsto_mu2`: under the canonical capacity calibration $c_2 = 3 \mu_2 \ln \varphi$, the limit converges exactly to $\mu_2 = 12288/5$, proving that the $\varphi^3$ growth rate is the unique algebraic structure capable of landing on the Dixmier critical line and matching the moment $\mu_2$.
+In `D0-PERRON-PHI3-STRUCTURAL-CRITICALITY-001` (`D0.Spectral.PerronPhi3Carrier`), the mathematical structure of the critical carrier is constructively formalised in Lean 4:
+- the partial sums are unbounded for every independently supplied positive level constant $c$;
+- the normalized logarithmic level count satisfies $\frac{\ln(1 + M_K)}{K + 1} \to 3\ln\varphi = \ln\alpha$;
+- the log-Cesàro ratio converges to $c/(3\ln\varphi)$, nonzero for $c\ne0$.
+
+The former normalization-owner wording is withdrawn.  The definition `c2 := μ2 * log alpha` already contains the target moment, so `logCesaroPhi3_c2_tendsto_mu2` is a correct **calibration identity**, not a derivation of $\mu_2$.  Lean now records this explicitly as `perron_phi3_calibration_is_normalized`.  The one remaining internal question is `D0-PERRON-PHI3-NORMALIZATION-ORIGIN-001`: derive $c$ from frozen D0 data without inserting $\mu_2$; otherwise the residue normalization stays at the existing external Dixmier/Wodzicki passport boundary.
 
 **[Solid $\mathbb{Z}[\varphi]^\blacksquare$ modules and cyclotomic trace representation (`D0-SOLID-PHI-CYCLOTOMIC-TRACE-001`)].**
 In `D0.Condensed.SolidPhi`, the condensed mathematics of Clausen–Scholze and Efimov's large categories are applied to bypass the classical $\mathcal{L}^{1,\infty}$ divergence dilemma altogether:
