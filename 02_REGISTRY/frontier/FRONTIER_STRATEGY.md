@@ -1,5 +1,13 @@
 # D0 Frontier Strategy: Resolving the Interface Crisis
 
+> **HISTORICAL EXPLORATION — NOT THE ACTIVE DEFINITION OF DONE.**  This document
+> records an earlier research strategy and intentionally contains conjectural positive
+> routes.  It must not be read as saying that the four vectors below are current
+> load-bearing blockers or already-proved replacements for registered NO-GOs.
+> The authoritative closure rule is [CLOSURE_CONTRACT.md](CLOSURE_CONTRACT.md):
+> a proved NO-GO or explicit BRIDGE/PASSPORT is terminal, and optional continuation
+> does not count against theory closure.
+
 > **The four remaining hard frontiers of D0 do not represent incompleteness in the discrete operator core; they represent the crisis of the interface between an endogenous discrete system and legacy continuum language.**
 
 A superficial reading of the project's open boundaries treats them as "gaps on the road to a smooth field theory." In truth, the development path of D0 is not to stretch the discrete skeleton into classical continuous equations, but to **systematically dismantle the remaining continuum crutches** within the formalism.
