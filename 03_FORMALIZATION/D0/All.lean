@@ -114,6 +114,7 @@ import D0.Cosmology.EntropyArchiveFlow
 import D0.Cosmology.EntropyJacobianSign
 import D0.Cosmology.FeedbackPartitionFunction
 import D0.Cosmology.FiedlerHodgeProjection
+import D0.Cosmology.FiedlerTiltTautologyNoGo
 import D0.Cosmology.FiedlerProjectorOperator
 import D0.Cosmology.FiedlerRelaxationLimit
 import D0.Cosmology.FiniteFeedbackEquationOfState
@@ -148,6 +149,7 @@ import D0.Dynamics.LatticeHydroNoBlowup
 import D0.Dynamics.MasterEvolutionTheorem
 import D0.Dynamics.PisotContraction
 import D0.Dynamics.ToralAutomorphism
+import D0.Dynamics.ToralSFTConjugacyNoGo
 import D0.Dynamics.ToralShiftEquivalence
 import D0.Dynamics.TraceHeatCapacityGravity
 import D0.Edge.RamificationFromUeEffCompanion
