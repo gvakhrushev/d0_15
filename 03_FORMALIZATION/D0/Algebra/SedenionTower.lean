@@ -129,8 +129,8 @@ def inO3Block (i : Fin 16) : Bool :=
 
 /-- Does `x` equal a signed canonical basis unit belonging to `block`? -/
 def signedBasisIn (block : Fin 16 → Bool) (x : ZS) : Bool :=
-  decide (∃ k : Fin 16,
-    block k = true ∧ (x = basisZS k ∨ x = -basisZS k))
+  Finset.univ.any (fun k : Fin 16 =>
+    block k && decide (x = basisZS k ∨ x = -basisZS k))
 
 theorem O1_basis_closed :
     ∀ i j : Fin 16,
