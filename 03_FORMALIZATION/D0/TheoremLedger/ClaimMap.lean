@@ -1144,7 +1144,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-SOLID-PHI-CYCLOTOMIC-TRACE-001", moduleName := "D0.Condensed.SolidPhi",
       theoremName := "ZPhi.toReal_zero;ZPhi.toReal_one;ZPhi.toReal_add;ZPhi.toReal_mul;mu2_pos;mu2_eq_frac;solid_phi_cyclotomic_trace_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-GROMOV-HAUSDORFF-DEQUARANTINE-001", moduleName := "D0.Bridge.GromovHausdorff",
-      theoremName := "quantum_ghp_cauchy_discharged;gromov_hausdorff_dequarantine_owner", status := ClaimStatus.leanCoreProved },
+      theoremName := "metric_sequence_cauchy;metric_stage_realization_cauchy;metric_stage_realization_converges;golden_metric_cauchy_boundary_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ALBERT-SM-GAUGE-PROJECTION-001", moduleName := "D0.Gauge.AlbertSMProjection",
       theoremName := "sm_gauge_dim_eq_twelve;sm_gauge_dim_le_f4;sm_factor_count_eq_three;albert_hypercharge_matches_weyl_generation;albert_sm_gauge_projection_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FIEDLER-HODGE-PROJECTION-001", moduleName := "D0.Cosmology.FiedlerHodgeProjection",
