@@ -568,6 +568,7 @@ import D0.VNext2.SceneCenterSpacetimeConvergence
 import D0.VNext2.SceneDimEvenFibonacci
 import D0.VNext2.SceneLaplacianSpectrumForced
 import D0.VNext2.SceneNativeRefinementClassification
+import D0.VNext2.ScenePathHistoryCanonicity
 import D0.VNext2.SceneSpectralFingerprint
 import D0.VNext2.SceneTripleUnique
 import D0.VNext2.SpectralEinsteinResponse

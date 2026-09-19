@@ -1160,7 +1160,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-SCENE-ENDPOINT-LOCAL-REFINEMENT-001", moduleName := "D0.Extensions.SceneEndpointLocalRefinement",
       theoremName := "all_walks_endpoint_local;all_walks_scene_faithful;endpoint_local_scene_faithful_unique;non_backtracking_not_endpoint_local;scene_endpoint_local_refinement_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-REPRESENTATION-AND-CIRCULATION-CANONICITY-001", moduleName := "D0.Synthesis.RepresentationAndCirculationCanonicity",
-      theoremName := "admissible_grading_21;all_admissible_gradings_give_eight;nc_count_eight_m1_forced;circulation_ratio_invariant;representation_circulation_canonicity_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "admissible_grading_21;all_admissible_gradings_give_eight;nc_count_eight_m1_forced;circulation_ratio_invariant;representation_circulation_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-PATH-COMPOSITION-CANONICITY-001", moduleName := "D0.VNext2.ScenePathHistoryCanonicity",
+      theoremName := "composition_complete_eq_all_walks;nonBacktracking_not_composition_closed;immediate_return_cardinality;depth2_carrier_decomposition;directed_edges_are_level_one_histories;scene_path_composition_canonicity_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
