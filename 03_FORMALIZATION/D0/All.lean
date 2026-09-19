@@ -398,6 +398,8 @@ import D0.Probability.ForgettingChannelPTP
 import D0.Probability.HSTExternalInterface
 import D0.Representation.ArchiveFiberConservation
 import D0.Representation.CompletionResidualCollapse
+import D0.Representation.Omega8OrientationDecomposition
+import D0.Representation.OrientationNontrivialGrading
 import D0.Representation.CouplingAxisReadout
 import D0.Representation.FinitePathRepresentation
 import D0.Representation.FiniteProtocolClock
