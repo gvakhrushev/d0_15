@@ -1162,7 +1162,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-REPRESENTATION-AND-CIRCULATION-CANONICITY-001", moduleName := "D0.Synthesis.RepresentationAndCirculationCanonicity",
       theoremName := "admissible_grading_21;all_admissible_gradings_give_eight;nc_count_eight_m1_forced;circulation_ratio_invariant;representation_circulation_canonicity_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SCENE-PATH-COMPOSITION-CANONICITY-001", moduleName := "D0.VNext2.ScenePathHistoryCanonicity",
-      theoremName := "composition_complete_eq_all_walks;nonBacktracking_not_composition_closed;immediate_return_cardinality;depth2_carrier_decomposition;directed_edges_are_level_one_histories;scene_path_composition_canonicity_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "composition_complete_eq_all_walks;nonBacktracking_not_composition_closed;immediate_return_cardinality;depth2_carrier_decomposition;directed_edges_are_level_one_histories;scene_path_composition_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HEAT-A2-LIMIT-INTERCHANGE-001", moduleName := "D0.Continuum.HeatA2LimitInterchange",
+      theoremName := "a2_difference_identity;a2_error_bound_at_t;heat_a2_limit_interchange", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-HISTORY-WEYL4-COMPATIBILITY-001", moduleName := "D0.Continuum.SceneHistoryWeyl4Compatibility",
+      theoremName := "phi_pow_four;three_phi_plus_two_cubed;transport_cubic_at_phi_four;transport_cubic_at_phi_four_ne_zero;scene_history_weyl4_incompatibility;scene_history_weyl4_compatibility_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ALBERT-TRILINEAR-INVARIANT-001", moduleName := "D0.Algebra.AlbertTrilinearInvariant",
+      theoremName := "trilinear_symm_12;trilinear_symm_23;trilinear_permutation_invariant;trilinear_contraction_one;trilinear_nondegenerate;albert_trilinear_invariant_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

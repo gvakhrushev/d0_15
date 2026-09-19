@@ -4,6 +4,7 @@
 import D0.Active.NonzeroMatterSourceNeutrality
 import D0.Active.ScalarPoissonReduction
 import D0.Algebra.AlbertJordan
+import D0.Algebra.AlbertTrilinearInvariant
 import D0.Algebra.Clifford
 import D0.Algebra.D0InternalDimensionSelector
 import D0.Algebra.FibonacciAFTower
@@ -83,6 +84,8 @@ import D0.Complexity.HeatTraceLyapunov
 import D0.Condensed.CondensedPhiVacuum
 import D0.Condensed.SolidPhi
 import D0.CondensedAnchor.DetectorSupportGoldenWeight
+import D0.Continuum.HeatA2LimitInterchange
+import D0.Continuum.SceneHistoryWeyl4Compatibility
 import D0.Core.BornAreaPreservationNoGo
 import D0.Core.BornFinite
 import D0.Core.BornFiniteEffects
