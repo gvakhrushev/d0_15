@@ -1208,7 +1208,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PROJECTIVE-TERMINAL-RETURN-ORDER-001", moduleName := "D0.Edge.HolonomyRamificationSeparation",
       theoremName := "companionC4_not_projective_intermediate;companionR3_not_projective_intermediate;companion_projective_orders", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-LEPTON-HOLONOMY-BLIND-EXPONENT-CANONICITY-001", moduleName := "D0.Edge.HolonomyRamificationSeparation",
-      theoremName := "terminalExponentRow_constant;lepton_holonomy_blind_exponent_m1_forced", status := ClaimStatus.leanCoreProved }
+      theoremName := "terminalExponentRow_constant;lepton_holonomy_blind_exponent_m1_forced", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-LEPTON-OBSERVABLE-BRANCH-CANONICITY-001", moduleName := "D0.LeptonClosure.ObservableBranchCanonicity",
+      theoremName := "terminalRanks_eq;terminal_exponent_readout_eq;raw_completions_not_unique;raw_readout_agrees;raw_readout_constant;lepton_exponent_row_m1_forced;lepton_mass_firewall;lepton_observable_branch_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HIGGS-RADIAL-DYNAMICS-MAXIMALITY-NOGO-001", moduleName := "D0.Matter.HiggsRadialInstabilityBoundary",
+      theoremName := "P0_idempotent;P1_idempotent;vacuum_orbit_swapped_by_X;T_P0_not_commute;T_P1_not_commute;carrier_projector_is_identity;higgs_radial_dynamics_maximality_nogo_owner", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

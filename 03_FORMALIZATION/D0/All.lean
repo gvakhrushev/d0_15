@@ -334,6 +334,7 @@ import D0.Integration.V15.RawZone
 import D0.Integration.V15.Refinement
 import D0.LeptonClosure.BranchIndexUnique
 import D0.LeptonClosure.BranchRowMinimalExtension
+import D0.LeptonClosure.ObservableBranchCanonicity
 import D0.Matter.AlbertYukawaIntertwiner
 import D0.Matter.ArchiveStressCoupling
 import D0.Matter.BaryonS3Symmetrizer
@@ -364,6 +365,7 @@ import D0.Matter.GenerationSelectorOrigin
 import D0.Matter.HiggsCondensationPresentCoreMaximalityNoGo
 import D0.Matter.HiggsLogdetStationary
 import D0.Matter.HiggsPhasonOrbitNoGo
+import D0.Matter.HiggsRadialInstabilityBoundary
 import D0.Matter.HiggsReturnQuotientAction
 import D0.Matter.HiggsScalarProjectorConstructive
 import D0.Matter.HyperchargeAnomalyVariety
