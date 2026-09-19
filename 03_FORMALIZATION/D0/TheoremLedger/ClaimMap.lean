@@ -1164,7 +1164,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-REPRESENTATION-AND-CIRCULATION-CANONICITY-001", moduleName := "D0.Synthesis.RepresentationAndCirculationCanonicity",
       theoremName := "admissible_grading_21;all_admissible_gradings_give_eight;nc_count_eight_m1_forced;circulation_ratio_invariant;representation_circulation_canonicity_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SCENE-PATH-COMPOSITION-CANONICITY-001", moduleName := "D0.VNext2.ScenePathHistoryCanonicity",
-      theoremName := "composition_complete_eq_all_walks;nonBacktracking_not_composition_closed;immediate_return_cardinality;depth2_carrier_decomposition;directed_edges_are_level_one_histories;scene_path_composition_canonicity_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "composition_complete_eq_all_walks;nonBacktracking_not_composition_closed;immediate_return_cardinality;depth2_carrier_decomposition;directed_edges_are_level_one_histories;scene_path_composition_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-GENERATION-GRADING-PRESENT-CORE-MAXIMALITY-NOGO-001", moduleName := "D0.Representation.GenerationGradingPresentCoreMaximality",
+      theoremName := "generation_grading_present_core_maximality", status := ClaimStatus.leanNoGoProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

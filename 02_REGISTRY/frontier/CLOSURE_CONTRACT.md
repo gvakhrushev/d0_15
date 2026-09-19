@@ -51,22 +51,45 @@ map, blocker count remains one.  When a NO-GO proves that a whole family of cand
 cannot work, blocker count decreases even if the registry gains several explanatory
 theorems.
 
-## 4. Current representation example
+## 4. Representation / neutral-current frontier — terminal classification
 
-The finite-generation grading frontier illustrates the rule.
+The finite-generation grading frontier now illustrates an actual blocker reduction.
 
-The graph-derived degree operator is `diag(24,22,20)`.  A compatible involution is now
-classified into exactly eight diagonal sign patterns.  The two scalar cases `±I` give
-the scalar branch; all six non-scalar cases give the same neutral-current readout
-`nc = 8`.  Direct scene/address parity is `-I`, so that route is closed-negative.
+The graph-derived degree operator is `diag(24,22,20)`.  Every compatible rational
+involution has been exhaustively classified into exactly eight diagonal sign patterns.
+The two scalar cases `±I` give the scalar `nc = 12` branch; every one of the six
+non-scalar cases gives `nc = 8`.  Once the owned terminal Fourier sign pattern
+`(+,-,+)` is admitted as the grading source, every one of the six sector-to-fibre
+bijections produces an actual compatible non-scalar grading operator and the same
+readout `nc = 8`; the placement choice is therefore observable-gauge.
 
-Therefore the load-bearing representation residual is **not** “find a grading”, “choose
-which generation is negative”, or “choose a Q8-rank pairing”.  Those are already
-collapsed.  The residual is the single provenance statement connecting the owned
-terminal Fourier orientation sector algebra to the intrinsic generation observable
-algebra.  All downstream variants of that one statement count as one blocker.
+The obvious attempts to derive that non-scalar action from the present core are now
+closed rather than left as new targets:
+
+- direct scene/address parity is scalar `-I` and gives `nc = 12`;
+- the canonical RawZone active/neutral `2+1` split is an involution but does not commute
+  with the intrinsic degree operator;
+- the verifier line-swap has abstract eigensigns `(+,-,+)` but likewise fails degree
+  compatibility;
+- the ordinary pointwise `Omega8` orientation action extends canonically through
+  `V9/V11/V13`, but it preserves every zone tag, so its induced action on the
+  three-zone generation quotient is exactly `+I` and again gives `nc = 12`.
+
+Therefore the present core does **not** contain a derivation of a non-scalar generation
+grading.  The exact missing datum is representation provenance: a semantic
+Fourier-sector → intrinsic-degree-fibre representation bridge.  This is already the
+registered `PRIM-GRADING-NEUTRAL-CURRENT-OPERATOR` component of
+`PRIM-FINITE-SPECTRAL-TRIPLE-REP`.
+
+Under this closure contract that residual is now **terminally classified as
+NO-GO / explicit BRIDGE**, not an active core blocker.  Further finite-spectral-triple
+work is an optional extension unless the project explicitly promotes a stronger
+representation output into the definition of done.
 
 ## 5. Current delegated work classification
+
+**Active independent blocker count: 3.**  They are integrity audits, not three new
+physics mechanisms.  SymTFT remains outside the count.
 
 - Sedenion audit (#11): **load-bearing integrity audit** — genuine construction or honest
   status downgrade are both terminal outcomes.
