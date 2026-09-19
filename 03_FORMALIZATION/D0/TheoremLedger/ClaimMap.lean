@@ -1176,7 +1176,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ALBERT-TO-YUKAWA-INTERTWINER-001", moduleName := "D0.Matter.AlbertYukawaIntertwiner",
       theoremName := "pierce_trace_one;pierce_trace_sum_three;pierce_diag_mul_orthogonal;pierce_trilinear_diagonal;shell_overlap_trace_zero;shell_overlap_nearest_couplings;albert_to_yukawa_intertwiner_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-YUKAWA-BASIS-CANONICITY-001", moduleName := "D0.Matter.YukawaBasisCanonicity",
-      theoremName := "rotation_A_violates_pierce_stabilizer;rotation_B_violates_pierce_stabilizer;both_admissible_completions_demoted;stabilizer_forces_diagonal;yukawa_basis_canonicity_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "rotation_A_violates_pierce_stabilizer;rotation_B_violates_pierce_stabilizer;both_admissible_completions_demoted;stabilizer_forces_diagonal;yukawa_basis_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-PERRON-TRACE-CANONICITY-001", moduleName := "D0.VNext2.ScenePerronTraceCanonicity",
+      theoremName := "scene_positive_perron_root_exists_unique;normalized_scene_perron_profile_unique;full_positive_eigenprofile_zone_constant;fullScenePerronVector_sum_eq_one;scene_perron_trace_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-ONE-STEP-HISTORY-TRANSPORT-001", moduleName := "D0.VNext2.SceneEndpointReynoldsExpectation",
+      theoremName := "endpoint_counting_mass_eq_degree;endpoint_average_left_inverse;endpoint_reynolds_idempotent;endpoint_reynolds_fixes_endpoint_functions;one_step_history_forgetting_eq_fullTransport;oriented_edge_pushforward_eq_stationary_weight;edge_reversal_detailed_balance;scene_one_step_history_transport_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ENDPOINT-REYNOLDS-EXPECTATION-CANONICITY-001", moduleName := "D0.VNext2.GenericEndpointExpectationCanonicity",
+      theoremName := "fiber_symmetric_expectation_unique;canonicalReynoldsWeight_admissible;endpoint_reynolds_expectation_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-HISTORY-PERRON-TRACE-001", moduleName := "D0.VNext2.SceneHistoryPerronTrace",
+      theoremName := "depth1_masses;depth2_masses;total_depth2_walks;history_transition_step2_at_zero;random_walk_step2_at_zero;history_counting_ne_random_walk;fullScenePerron_eigen_equation;scene_history_perron_trace_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
