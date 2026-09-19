@@ -404,16 +404,16 @@ import D0.Probability.EntropyCouplingKernel
 import D0.Probability.ForgettingChannelCP
 import D0.Probability.ForgettingChannelPTP
 import D0.Probability.HSTExternalInterface
-import D0.Representation.CompatibleInvolutionClassification
 import D0.Representation.ArchiveFiberConservation
+import D0.Representation.CompatibleInvolutionClassification
 import D0.Representation.CompletionResidualCollapse
 import D0.Representation.CouplingAxisReadout
 import D0.Representation.FinitePathRepresentation
 import D0.Representation.FiniteProtocolClock
+import D0.Representation.GenerationGradingPresentCoreMaximality
 import D0.Representation.GoldenCoherentMemory
 import D0.Representation.GoldenOrderInterferometer
 import D0.Representation.GoldenProcessContext
-import D0.Representation.GenerationGradingPresentCoreMaximality
 import D0.Representation.GoldenRelativeChannel
 import D0.Representation.Omega8OrientationDecomposition
 import D0.Representation.OrderMemoryControl
@@ -425,6 +425,7 @@ import D0.Representation.PortFrameCovariance
 import D0.Representation.PreparationMemoryBound
 import D0.Representation.RoleRealStructureNoGo
 import D0.Representation.SourcePortPreparation
+import D0.Representation.VerifierSwapGradingNoGo
 import D0.SelfReading.PrimitiveMinimalityFromRawFunctor
 import D0.SelfReading.RawCanonicalSelfReadingFunctor
 import D0.SelfReading.RawHistoryCategory
