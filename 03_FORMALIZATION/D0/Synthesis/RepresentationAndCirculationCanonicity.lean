@@ -1,5 +1,6 @@
 import Mathlib.Tactic
 import D0.Representation.OrientationNontrivialGrading
+import D0.Representation.Omega8OrientationDecomposition
 import D0.Extensions.RepresentationReadoutExtension
 import D0.Matter.CanonicalZoneCirculation
 import D0.Foundation.ObservableCompletionCanonicity
