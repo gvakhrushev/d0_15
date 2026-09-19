@@ -1056,11 +1056,16 @@ with `W` the memory winding number. There is no "substance" term: a leptonic res
 
 **[THE 04.8.L.0] Lepton/baryon copies are Lucas-quantized [^b04-88]. [^b04-79].** The reason the electron has copies `μ, τ` (and the baryon sector has heavy modes) is that in a discrete `φ`-graph the layer capacities cannot take arbitrary real values — they quantize *integrally* as Lucas numbers `L_n`. A non-integer layer capacity would need an external ruler to define the fractional part, ⊥M1. So the only admissible excitation capacities are `{L_n}`.  The signed Lucas *trace identity* `Tr(T^n)=(-1)^n L_n` and its uniqueness-of-projection forcing are owned by 04.0 (the Lucas-trace canonical integer projection, certified by existing finite certificates); the generation-count cutoff at `n=15` (the `9n` budget break) is owned by 04.4. What this section adds is the *mass-ratio* consequence of that same integer ladder.
 
-**[THE 04.8.SEDENION.3] Algebraic derivation of three generations via Sedenions $\mathbb{S}$ (`D0-SEDENIONS-THREE-GENERATIONS-001`).**
-While the combinatorial torus $C_4 \times R_3$ supplies strictly 2 branch orbits ($p_\mu = 1/4, p_\tau = 1/3$), proving the impossibility of an in-carrier fixed point for the electron on the bare graph (`LeptonBranchFixingNoGo`), the Cayley-Dickson algebra of sedenions $\mathbb{S} = \mathbb{O} \oplus \mathbb{O}\ell$ provides the exact algebraic resolution (`D0.Algebra.Sedenions`):
-1. Sedenion left-multiplication generates the 8-graded Clifford algebra $\mathbb{C}\ell(8)$.
-2. Sedenions admit an outer automorphism group containing $S_3$, which transitively permutes the three distinct octonionic subalgebras $\mathbb{O}_1, \mathbb{O}_2, \mathbb{O}_3$ intersecting along the quaternionic core $\mathbb{H}$ (`dim = 4`).
-3. Under the $S_3$ action, the spinor space decomposes into exactly three minimal left ideals, generating three fermion generations without requiring a fixed point on the combinatorial graph.
+**[AUDIT 04.8.SEDENION.3] Real Cayley–Dickson core, representation bridge still open.**
+The former `D0-SEDENIONS-THREE-GENERATIONS-001` owner was status-inflated: its Lean content was only a three-element label type with hand-written permutations.  It did not define sedenion multiplication, octonionic subalgebras, algebra automorphisms, a Clifford representation, or minimal left ideals.  That positive claim is therefore deprecated.
+
+The algebraic carrier is now real and machine-owned in two layers.  `D0-CAYLEY-DICKSON-TOWER-001` constructs the recursive integer Cayley–Dickson tower
+$\mathbb Z \to \mathbb Z[i] \to \mathbb H_{\mathbb Z} \to \mathbb O_{\mathbb Z} \to \mathbb S_{\mathbb Z}$
+with explicit multiplication and conjugation.  `D0-SEDENION-ALGEBRAIC-CORE-001` then checks on the actual 16-basis carrier: quaternion-basis associativity, octonion nonassociativity, an explicit nonzero zero-divisor pair, failure of alternativity, and three canonical eight-basis multiplicatively closed carriers whose pairwise basis intersections are exactly the common four-basis quaternion block.
+
+What remains is one sharply typed representation problem, `D0-SEDENION-D0-REPRESENTATION-FUNCTOR-001` (PROOF-TARGET): construct genuine algebra automorphisms realizing the literature $S_3$ action on the actual carrier (or a precisely stated complexification), construct the relevant $\mathbb C\ell(8)$ / minimal-left-ideal representation, and then give the map from those sectors to the D0 generation carrier.  The legacy three-label scaffold now contains the negative control that the same transitive three-set supports two distinct multiplication laws, both equivariant under every relabeling; therefore `|X|=3` plus an $S_3$ action cannot substitute for this missing representation theorem.
+
+Thus the sedenion audit no longer creates a vague new frontier: the algebraic part is CORE, while the physical three-generation identification is one explicit FORMALISM/bridge target.  No lepton mass decimal or external generation label is imported by the algebraic core.
 
 **[THE 04.8.JORDAN.BL] Albert Jordan algebra and Majorana $B - L$ elimination (`D0-ALBERT-JORDAN-BL-ELIMINATION-001`).**
 In `D0.Algebra.AlbertJordan`, the 2-dimensional anomaly variety $\operatorname{span}\{Y, B - L\}$ is dynamically collapsed to the single Standard Model hypercharge ray $\operatorname{span}\{Y\}$:
