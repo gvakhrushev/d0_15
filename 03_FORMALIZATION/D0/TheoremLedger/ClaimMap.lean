@@ -1190,7 +1190,17 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CMB-EQUIVARIANT-PHASON-CURVATURE-TRANSFER-NOGO-001", moduleName := "D0.Cosmology.EquivariantPhasonCurvatureTransferNoGo",
       theoremName := "Q_annihilates_zone_balanced;Q_mul_matrix_eq_zero_of_columns_balanced;equivariant_transfer_annihilated_by_Q;equivariant_phason_curvature_transfer_nogo;adj31_equivariant;lap_equivariant;equivariant_phason_curvature_transfer_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CMB-PHASON-TRANSFER-MAXIMALITY-NOGO-001", moduleName := "D0.Cosmology.PhasonTransferMaximalityNoGo",
-      theoremName := "carrier_dimension_mismatch;higgs_scalar_projector_trace;fiedler_projector_trace;phason_transfer_maximality_nogo_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "carrier_dimension_mismatch;higgs_scalar_projector_trace;fiedler_projector_trace;phason_transfer_maximality_nogo_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-WEYL-DIMENSION-VACUITY-NOGO-001", moduleName := "D0.Geometry.ArchiveWeylDimensionVacuityNoGo",
+      theoremName := "hasWeylDimension_vacuous;archiveHeatTrace4D_vacuous;hasWeylDimension_vacuous_false;archive_weyl_dimension_vacuity_nogo_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-ENUMERATION-SPECTRUM-WEYL4-NOGO-001", moduleName := "D0.Geometry.ArchiveEnumerationSpectrumWeyl4NoGo",
+      theoremName := "card_fin_val_le;archiveEigenvalue_le_iff;eigenCountBelow_eq_succ;enumeration_scaling_is_linear;archive_enumeration_spectrum_weyl4_nogo_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001", moduleName := "D0.Geometry.ArchiveRolePhaseProductCarrier",
+      theoremName := "card_archive_phase_index;card_role_is_four;card_archive_role_phase_point;archive_role_phase_product_carrier_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-PRODUCT-LAPLACIAN-OWNER-001", moduleName := "D0.Geometry.ArchiveProductLaplacian",
+      theoremName := "roleLaplacian_symmetric;archiveProductLaplacian_symmetric;roleLaplacian_row_sum_zero;archiveProductLaplacian_constant_zero;archive_product_laplacian_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-ARCHIVE-METRIC-LAPLACIAN-SCALE-OWNER-001", moduleName := "D0.Geometry.ArchiveMetricLaplacianScaleNoGo",
+      theoremName := "metric_scale_strictly_exceeds_combinatorial;metric_scale_strictly_increasing;lattice_spacing_strictly_decreasing;metricProductLaplacian_symmetric;archive_metric_laplacian_scale_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
