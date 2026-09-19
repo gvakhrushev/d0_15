@@ -403,6 +403,7 @@ import D0.Probability.EntropyCouplingKernel
 import D0.Probability.ForgettingChannelCP
 import D0.Probability.ForgettingChannelPTP
 import D0.Probability.HSTExternalInterface
+import D0.Representation.CompatibleInvolutionClassification
 import D0.Representation.ArchiveFiberConservation
 import D0.Representation.CompletionResidualCollapse
 import D0.Representation.CouplingAxisReadout
