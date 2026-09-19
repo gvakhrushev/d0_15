@@ -1345,11 +1345,13 @@ The internal cosmology chain is machine-owned where closed, with every remaining
 
 **[CMB smoothing maximality].** Not just one smoothing window: the heat-smoothed tilt n_eff-1=(k/P)P'(k) over modes {20,22,24,33} is non-constant across the admissible-smoothing family -- three legitimate positive weightings (flat-mult, low-lambda, high-lambda) give three distinct n_s, and it varies with k (`D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001`, Lean `D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo`). No canonical (k,u) is forced by present-core; the n_s value requires an external Planck-comparison passport. The internal forcing question is closed-negative.
 
-**[Algebraic resolution via Hodge-Fiedler spectral projection (`D0-FIEDLER-HODGE-PROJECTION-001`)].**
-In `D0.Cosmology.FiedlerHodgeProjection`, the ontological cause of the smoothing arbitrariness is resolved: continuous Gaussian smoothing $e^{-u\lambda}$ artificially mixes distinct combinatorial eigenspaces.
-1. Projecting the SDE relaxation via the canonical Hodge spectral projector $\Pi_{\le \lambda_2}$ isolates the lowest connected Fiedler mode $\lambda_{\mathrm{Fiedler}} = 20$ (multiplicity 12).
-2. The projected tilt $n_{\mathrm{eff}} - 1 = (k/P)P'(k)$ is proven strictly invariant under any overall kernel weighting $w > 0$ (`fiedler_tilt_kernel_invariant`).
-3. At the canonical freeze-out scale $k_*^2 = \lambda_2 = 20$, the tilt evaluates to the exact rational integer $-1$ (`fiedler_freezeout_tilt_exact`), eliminating arbitrary smoothing width dependencies.## 08.50 Orbit-averaged trace expansion
+**[Fiedler projection audit: weight invariance is real; scale closure is not (`D0-FIEDLER-HODGE-PROJECTION-001`, FORMALISM; `D0-FIEDLER-TILT-TAUTOLOGY-NOGO-001`, NO-GO)].**
+`D0.Cosmology.FiedlerHodgeProjection` correctly isolates the lowest connected mode $\lambda_2=20$ (multiplicity 12) and proves that an overall nonzero kernel prefactor cancels from the logarithmic tilt.  What it does **not** do is select the evaluation scale.
+For any one-mode Lorentzian denominator the squared-scale tilt is
+\[
+-\frac{2q}{q+\lambda}.
+\]
+Hence the prescription $q_*=\lambda$ gives $-1$ for **every** nonzero $\lambda$; the value does not use the special graph eigenvalue $20$.  Lean now records this universal identity in `D0.Cosmology.FiedlerTiltTautologyNoGo`.  At fixed $\lambda=20$, $q=20$ gives $-1$ while $q=40$ gives $-4/3$, so scale dependence remains after the projection.  The honest conclusion is therefore: the Fiedler projector removes an overall weighting ambiguity, but the CMB tilt selector remains underdetermined until an independently forced scale/pivot rule is supplied.## 08.50 Orbit-averaged trace expansion
 
 Cosmological expansion is the macroscopic orbit-average of completed terminal trace emissions. With
 
