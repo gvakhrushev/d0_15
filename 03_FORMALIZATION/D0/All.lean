@@ -262,6 +262,7 @@ import D0.Geometry.ArchivePoissonEquation
 import D0.Geometry.ArchiveRefinementTower
 import D0.Geometry.ArchiveResolventCompactness
 import D0.Geometry.ArchiveRolePhaseCarrier
+import D0.Geometry.ArchiveRoleProductLaplacian
 import D0.Geometry.ArchiveStressRepresentative
 import D0.Geometry.ArchiveTickGaugeFixing
 import D0.Geometry.ArchiveVariationDual
