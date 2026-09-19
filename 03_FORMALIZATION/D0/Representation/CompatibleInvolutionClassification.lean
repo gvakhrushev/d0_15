@@ -157,9 +157,9 @@ theorem representation_residual_reduced_to_nonscalar :
 
 /-- The direct scene-step orientation sign on the three zone addresses 9, 11, 13. -/
 def sceneParitySign : Fin 3 → ℚ
-  | 0 => (Matrix.det (D0.Dynamics.T ^ 9) : ℚ)
-  | 1 => (Matrix.det (D0.Dynamics.T ^ 11) : ℚ)
-  | 2 => (Matrix.det (D0.Dynamics.T ^ 13) : ℚ)
+  | 0 => ((Matrix.det (D0.Dynamics.T ^ 9) : ℤ) : ℚ)
+  | 1 => ((Matrix.det (D0.Dynamics.T ^ 11) : ℤ) : ℚ)
+  | 2 => ((Matrix.det (D0.Dynamics.T ^ 13) : ℤ) : ℚ)
 
 /-- The grading obtained by using only the toral/address orientation parity. -/
 def sceneParityGrading : M3 := Matrix.diagonal sceneParitySign
@@ -168,14 +168,12 @@ def sceneParityGrading : M3 := Matrix.diagonal sceneParitySign
 generation-zone addresses carry the same odd sign. -/
 theorem scene_parity_signs_all_negative :
     sceneParitySign 0 = -1 ∧ sceneParitySign 1 = -1 ∧ sceneParitySign 2 = -1 := by
-  simp [sceneParitySign, D0.Dynamics.det_T_pow]
+  native_decide
 
 /-- Therefore the direct scene-parity grading is scalar: it is exactly minus identity. -/
 theorem sceneParityGrading_eq_neg_one :
     sceneParityGrading = -(1 : M3) := by
-  ext i j
-  fin_cases i <;> fin_cases j <;>
-    simp [sceneParityGrading, sceneParitySign, D0.Dynamics.det_T_pow]
+  native_decide
 
 
 /-- The direct scene-parity operator is a perfectly valid compatible involution; its
