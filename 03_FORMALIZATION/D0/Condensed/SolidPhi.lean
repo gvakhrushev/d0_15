@@ -106,16 +106,24 @@ structure SolidGoldenTower where
   stage : ℕ → ZPhi
   stage_bound : ∀ N, 0 ≤ (stage N).toReal
 
-/-- **D0-SOLID-PHI-CYCLOTOMIC-TRACE-001 (CORE-FORMALIZED).**
-The cyclotomic trace over solid $\mathbb{Z}[\varphi]^\blacksquare$ modules
-identifies the spectral moment $\mu_2$ as a well-defined topological rational invariant:
-1. $\mathbb{Z}[\varphi]$ arithmetic is closed and respects the golden equation $\varphi^2 = \varphi + 1$;
-2. $\mu_2 = 12288/5$ is positive, rational, and matches the archive moment;
-3. The topological cyclotomic residue bypasses the classical Dixmier divergence obstacle. -/
-theorem solid_phi_cyclotomic_trace_owner :
+/-- **D0-ZPHI-ARITHMETIC-OWNER-001 (Owner)**:
+Truthful ring arithmetic owner:
+1. Z[phi] arithmetic is closed, associative, and respects phi^2 = phi + 1;
+2. Canonical embedding into R respects addition and multiplication;
+3. Positive rational constant mu2Rational = 12288/5 is explicitly defined.
+This formalizes the exact ring arithmetic without claiming a derivation
+from topological cyclic homology TC(Z[phi]) or cyclotomic trace spectra. -/
+theorem zphi_arithmetic_owner :
     (∀ x y : ZPhi, (ZPhi.mul x y).toReal = x.toReal * y.toReal) ∧
     (0 < mu2Rational) ∧
     (mu2Rational = 12288 / 5) := by
   refine ⟨ZPhi.toReal_mul, mu2_pos, rfl⟩
+
+/-- Legacy alias for compatibility. -/
+theorem solid_phi_cyclotomic_trace_owner :
+    (∀ x y : ZPhi, (ZPhi.mul x y).toReal = x.toReal * y.toReal) ∧
+    (0 < mu2Rational) ∧
+    (mu2Rational = 12288 / 5) :=
+  zphi_arithmetic_owner
 
 end D0.Condensed.SolidPhi

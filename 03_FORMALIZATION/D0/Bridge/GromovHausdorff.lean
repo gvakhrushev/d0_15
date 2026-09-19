@@ -43,21 +43,28 @@ structure CompactQuantumMetricSpace (A : Type*) where
 noncomputable def propinquityStep (C : ℝ) (k : ℕ) : ℝ :=
   C * delta0 ^ k
 
-/-- **Unconditional Cauchy theorem for the quantum Gromov-Hausdorff refinement tower:**
-The step bound contracts geometrically with ratio $\delta_0 = 1/(2\varphi^3) < 1$.
-Therefore, by `goldenTower_cauchySeq`, the refinement tower is Cauchy in the quantum metric topology,
-unconditionally discharging the "GHP-Cauchy residual" of `ASSUMP-RIEFFEL-GHP`. -/
-theorem quantum_ghp_cauchy_discharged {X : Type*} [PseudoMetricSpace X]
+/-- **Conditional Cauchy theorem under golden geometric step bound:**
+If an abstract sequence satisfies the geometric step bound contracting at delta0 = 1/(2*phi^3) < 1,
+then by goldenTower_cauchySeq it is Cauchy in the metric topology.
+This is a general conditional metric lemma, not an unconditional proof that concrete D0 archive
+towers satisfy this step bound. -/
+theorem quantum_ghp_cauchy_conditional {X : Type*} [PseudoMetricSpace X]
     (x : ℕ → X) (C : ℝ) (hstep : ∀ k, dist (x k) (x (k + 1)) ≤ propinquityStep C k) :
     CauchySeq x := by
   have htower : GoldenTower x C := ⟨hstep⟩
   exact goldenTower_cauchySeq htower
 
-/-- **D0-GROMOV-HAUSDORFF-DEQUARANTINE-001 (CORE-FORMALIZED).**
-The internal Cauchyness of the refinement sequence is an unconditional theorem of the golden contraction:
-1. $\delta_0 < 1$;
-2. Every golden refinement tower is CauchySeq;
-3. In any complete quantum metric space, the sequence converges to a well-defined limit. -/
+/-- Legacy alias retained for backwards compatibility. -/
+theorem quantum_ghp_cauchy_discharged {X : Type*} [PseudoMetricSpace X]
+    (x : ℕ → X) (C : ℝ) (hstep : ∀ k, dist (x k) (x (k + 1)) ≤ propinquityStep C k) :
+    CauchySeq x :=
+  quantum_ghp_cauchy_conditional x C hstep
+
+/-- **D0-GROMOV-HAUSDORFF-DEQUARANTINE-001 (Conditional Formalism).**
+The internal Cauchyness lemma:
+1. delta0 < 1;
+2. Any sequence satisfying the GoldenTower geometric bound is CauchySeq.
+This does NOT unconditionally discharge the concrete archive continuum residual of ASSUMP-RIEFFEL-GHP. -/
 theorem gromov_hausdorff_dequarantine_owner :
     delta0 < 1 ∧
     (∀ (X : Type*) [PseudoMetricSpace X] (x : ℕ → X) (C : ℝ),

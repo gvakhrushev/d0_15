@@ -69,15 +69,14 @@ theorem albert_hypercharge_matches_weyl_generation :
     Yhc 5 = D0.nuRc.hypercharge := by
   refine ⟨rfl, rfl, rfl, rfl, rfl, rfl⟩
 
-/-- **D0-ALBERT-SM-GAUGE-PROJECTION-001 (CORE-FORMALIZED).**
-The Albert Jordan algebra $J_3(\mathbb{O})$ provides a closed algebraic origin for the
-Standard Model gauge group $SU(3) \times SU(2) \times U(1)$:
-1. Dimension conservation: the SM Lie algebra has dimension 12 and embeds into $F_4$ ($\dim = 52$);
+/-- **D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001 (Owner)**:
+Truthful dimension alignment owner:
+1. Dimension alignment: the SM Lie algebra dimension 12 is strictly less than dim(F_4) = 52;
 2. Factor matching: the factor ledger consists of exactly 3 factors `[su3, su2, u1]`;
-3. Charge alignment: the dynamically forced hypercharge ray strictly coincides with the
-   frozen Weyl generation ledger `D0.generation`;
-4. Anomaly cancellation: the resulting multiplet is completely anomaly-free. -/
-theorem albert_sm_gauge_projection_owner :
+3. Charge alignment: the hypercharge vector matches the frozen Weyl generation ledger `D0.generation`;
+4. Anomaly cancellation: the resulting multiplet is anomaly-free.
+This formalizes dimension and charge alignment without claiming an explicit Lie group embedding. -/
+theorem albert_sm_gauge_dimension_alignment_owner :
     smGaugeDim = 12 ∧
     smGaugeDim < f4Dim ∧
     frozenSMGaugeFactorLedger.length = 3 ∧
@@ -93,5 +92,22 @@ theorem albert_sm_gauge_projection_owner :
      D0.su3su3u1Sum = 0) := by
   refine ⟨sm_gauge_dim_eq_twelve, sm_gauge_dim_le_f4, sm_factor_count_eq_three,
           albert_hypercharge_matches_weyl_generation, frozen_sm_generation_anomaly_free⟩
+
+/-- Legacy alias for compatibility. -/
+theorem albert_sm_gauge_projection_owner :
+    smGaugeDim = 12 ∧
+    smGaugeDim < f4Dim ∧
+    frozenSMGaugeFactorLedger.length = 3 ∧
+    (Yhc 0 = D0.QL.hypercharge ∧
+     Yhc 1 = D0.uRc.hypercharge ∧
+     Yhc 2 = D0.dRc.hypercharge ∧
+     Yhc 3 = D0.LL.hypercharge ∧
+     Yhc 4 = D0.eRc.hypercharge ∧
+     Yhc 5 = D0.nuRc.hypercharge) ∧
+    (D0.gravU1Sum = 0 ∧
+     D0.cubicU1Sum = 0 ∧
+     D0.su2su2u1Sum = 0 ∧
+     D0.su3su3u1Sum = 0) :=
+  albert_sm_gauge_dimension_alignment_owner
 
 end D0.Gauge.AlbertSMProjection

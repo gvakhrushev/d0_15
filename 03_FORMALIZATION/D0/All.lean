@@ -267,6 +267,16 @@ import D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo
 import D0.Geometry.ArchiveLaplacianPhaseNaturality
 import D0.Geometry.ArchiveLaplacianProperties
 import D0.Geometry.ArchiveLaplacianRG
+import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
+import D0.Geometry.ArchiveRolePhaseGroup
+import D0.Geometry.ArchiveCARFockCarrier
+import D0.Geometry.ArchiveCARRelations
+import D0.Geometry.ArchiveCARDirac
+import D0.Geometry.PseudoinverseTwistAlgebra
+import D0.Geometry.ArchiveCanonicalZeroModeProjector
+import D0.Geometry.ArchiveDiracPseudoinverse
+import D0.Geometry.ArchivePseudoinverseTwist
+import D0.Geometry.ArchiveLatremoliereTorusInstantiation
 import D0.Geometry.ArchiveLightProfinite
 import D0.Geometry.ArchiveMetricLaplacianScaleNoGo
 import D0.Geometry.ArchiveModeExponent
@@ -616,3 +626,4 @@ import D0.Verification.PresentCoreMaximality
 import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary
 import D0.Verification.TotalExtensionPrimitiveMinimality
+import D0.Verification.ExternalResearchStatusInflationAudit

@@ -138,11 +138,11 @@ structure S3IdealDecomposition where
   ideals : OctonionBranch → Type
   ideal_distinct : ∀ i j, i ≠ j → ideals i ≠ ideals j
 
-/-- Formal resolution of the Lepton 2 < 3 barrier:
-While the combinatorial torus has only 2 orbits (4-cycle and 3-cycle),
-the sedenion Cayley-Dickson algebra supplies exactly 3 transitive algebraic branches,
-resolving the 3-generation requirement without external ad-hoc parameters. -/
-theorem sedenion_three_generation_forcing :
+/-- **D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001 (Owner)**:
+Truthful combinatorial owner: explicit 3-element branch set with transitive S_3 permutation action.
+This formalizes the finite combinatorial scaffold of three octonionic branches without claiming
+an internal derivation of the full Cayley-Dickson multiplication algebra or minimal left ideals. -/
+theorem sedenion_branch_threeset_scaffold_owner :
     Fintype.card OctonionBranch = 3 ∧
     (∃ h : OctonionBranch → Fin 3, Function.Bijective h) ∧
     (∀ x y : OctonionBranch, ∃ f : OctonionBranch → OctonionBranch,
@@ -151,5 +151,22 @@ theorem sedenion_three_generation_forcing :
   refine ⟨octonion_branch_card, branch_generation_bijective, ?_⟩
   intro x y
   exact s3_action_transitive x y
+
+/-- Legacy alias retained for backwards compatibility. -/
+theorem sedenion_three_generation_forcing :
+    Fintype.card OctonionBranch = 3 ∧
+    (∃ h : OctonionBranch → Fin 3, Function.Bijective h) ∧
+    (∀ x y : OctonionBranch, ∃ f : OctonionBranch → OctonionBranch,
+      ((f = id ∨ f = s3_cycle ∨ f = s3_cycle ∘ s3_cycle ∨
+        f = s3_swap ∨ f = s3_swap ∘ s3_cycle ∨ f = s3_cycle ∘ s3_swap) ∧ f x = y)) :=
+  sedenion_branch_threeset_scaffold_owner
+
+/-- **D0-TRIALITY-SEDENION-S3-DISJOINTNESS-GUARD-001**:
+Negative guard: equality of group orders |Out(Spin(8))| = |S_3| = 6 does NOT identify
+the sedenion branch permutation action with Spin(8) triality without an explicit algebraic intertwiner. -/
+theorem triality_sedenion_s3_disjointness_guard :
+    (Fintype.card (Equiv.Perm OctonionBranch) = 6) ∧
+    (Fintype.card (Equiv.Perm (Fin 3)) = 6) := by
+  decide
 
 end D0.Algebra.Sedenions
