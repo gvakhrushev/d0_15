@@ -331,6 +331,7 @@ import D0.Matter.CKMExactMatrixCertificate
 import D0.Matter.CKMNontrivialFlavourAlgebra
 import D0.Matter.CKMOverlapUnderdeterminationNoGo
 import D0.Matter.CKMPhasonHolonomy
+import D0.Matter.CanonicalZoneCirculation
 import D0.Matter.ChargedLeptonMassTransfer
 import D0.Matter.DSigmaRoleCycleCarrierNoGo
 import D0.Matter.DSigmaRoleTransitionGraph
