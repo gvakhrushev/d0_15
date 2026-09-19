@@ -152,7 +152,7 @@ theorem sqrt2_flip_swaps_window_roots :
 theorem sqrt5_flip_swaps_golden_pair :
     ((1 - Real.sqrt 5) / 2 : ℝ) = psi ∧
     ((1 + Real.sqrt 5) / 2 : ℝ) = phi := by
-  simp only [D0.psi, D0.phi]
+  simp [D0.psi, D0.phi]
 
 /-- On the positive archive ratio, golden conjugation gives the owned negative value
 `ψ⁻¹ = -φ`. -/
