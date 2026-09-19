@@ -62,14 +62,23 @@ theorem archiveRoleProductLaplacian_symmetric (n : Nat) :
   unfold archiveRoleProductLaplacian
   rw [Matrix.transpose_mul, Matrix.transpose_transpose]
 
+/-- Every oriented metric-incidence row has total coefficient zero. -/
+theorem archiveRoleCoboundary_row_sum_zero
+    (n : Nat) (e : ArchiveRolePhaseEdge n) :
+    (∑ y : ArchiveRolePhasePoint n, archiveRoleCoboundary n e y) = 0 := by
+  classical
+  rcases e with ⟨r, x⟩
+  unfold archiveRoleCoboundary
+  rw [← Finset.mul_sum, Finset.sum_sub_distrib]
+  simp
+
 /-- A constant potential has zero metric coboundary. -/
 theorem archiveRoleCoboundary_constant_zero (n : Nat) (c : ℝ) :
     Matrix.mulVec (archiveRoleCoboundary n) (fun _ => c) = 0 := by
   classical
   funext e
-  rcases e with ⟨r, x⟩
-  simp [archiveRoleCoboundary, Matrix.mulVec, dotProduct]
-  ring
+  unfold Matrix.mulVec dotProduct
+  rw [← Finset.sum_mul, archiveRoleCoboundary_row_sum_zero, zero_mul]
 
 /-- Consequently constants are zero modes of the role-product Laplacian. -/
 theorem archiveRoleProductLaplacian_constant_zero (n : Nat) (c : ℝ) :
