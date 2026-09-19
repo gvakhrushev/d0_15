@@ -1184,7 +1184,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ENDPOINT-REYNOLDS-EXPECTATION-CANONICITY-001", moduleName := "D0.VNext2.GenericEndpointExpectationCanonicity",
       theoremName := "fiber_symmetric_expectation_unique;canonicalReynoldsWeight_admissible;endpoint_reynolds_expectation_canonicity_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SCENE-HISTORY-PERRON-TRACE-001", moduleName := "D0.VNext2.SceneHistoryPerronTrace",
-      theoremName := "depth1_masses;depth2_masses;total_depth2_walks;history_transition_step2_at_zero;random_walk_step2_at_zero;history_counting_ne_random_walk;fullScenePerron_eigen_equation;scene_history_perron_trace_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "depth1_masses;depth2_masses;total_depth2_walks;history_transition_step2_at_zero;random_walk_step2_at_zero;history_counting_ne_random_walk;fullScenePerron_eigen_equation;scene_history_perron_trace_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CMB-FIEDLER-ACTIVE-SECTOR-DISJOINTNESS-001", moduleName := "D0.Cosmology.FiedlerActiveSectorDisjointness",
+      theoremName := "Q_mul_PiF_eq_zero;PiF_mul_Q_eq_zero;reynolds_Q_PiF_disjoint;archive_P_mul_PiF;visible_subprojector_annihilates_PiF;PiF_col_sum_zone;PiF_image_in_archive;fiedler_active_sector_disjointness_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CMB-EQUIVARIANT-PHASON-CURVATURE-TRANSFER-NOGO-001", moduleName := "D0.Cosmology.EquivariantPhasonCurvatureTransferNoGo",
+      theoremName := "Q_annihilates_zone_balanced;Q_mul_matrix_eq_zero_of_columns_balanced;equivariant_transfer_annihilated_by_Q;equivariant_phason_curvature_transfer_nogo;adj31_equivariant;lap_equivariant;equivariant_phason_curvature_transfer_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CMB-PHASON-TRANSFER-MAXIMALITY-NOGO-001", moduleName := "D0.Cosmology.PhasonTransferMaximalityNoGo",
+      theoremName := "carrier_dimension_mismatch;higgs_scalar_projector_trace;fiedler_projector_trace;phason_transfer_maximality_nogo_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

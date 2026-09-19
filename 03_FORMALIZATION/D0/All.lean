@@ -114,7 +114,9 @@ import D0.Cosmology.CoreShapePassportBoundary
 import D0.Cosmology.DarkArchiveTransfer
 import D0.Cosmology.EntropyArchiveFlow
 import D0.Cosmology.EntropyJacobianSign
+import D0.Cosmology.EquivariantPhasonCurvatureTransferNoGo
 import D0.Cosmology.FeedbackPartitionFunction
+import D0.Cosmology.FiedlerActiveSectorDisjointness
 import D0.Cosmology.FiedlerHodgeProjection
 import D0.Cosmology.FiedlerProjectorOperator
 import D0.Cosmology.FiedlerRelaxationLimit
@@ -130,6 +132,7 @@ import D0.Cosmology.PhasonContinuumEnvelope
 import D0.Cosmology.PhasonFlipEntropy
 import D0.Cosmology.PhasonInitialCovariance
 import D0.Cosmology.PhasonMagnitudeMaximalityNoGo
+import D0.Cosmology.PhasonTransferMaximalityNoGo
 import D0.Cosmology.PhasonWDESignNormalization
 import D0.Cosmology.PhasonWZTransfer
 import D0.Cosmology.PhysicalRedshiftDetectionPassport
