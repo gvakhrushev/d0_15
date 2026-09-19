@@ -50,6 +50,29 @@ abbrev GoldenSFT := {x : ℤ → Fin 2 // goldenAdmissible x}
 instance goldenSFTTotallyDisconnected : TotallyDisconnectedSpace GoldenSFT :=
   inferInstance
 
+/-- Two explicit points witness that the two-torus is nontrivial.  We avoid
+relying on a `Nontrivial (AddCircle 1)` instance because the pinned Mathlib
+version does not expose that instance through this import surface. -/
+theorem torus_two_points :
+    ∃ x y : Torus2, x ≠ y := by
+  let x : Torus2 := fun _ => (0 : AddCircle (1 : ℝ))
+  let y : Torus2 := fun i =>
+    if i = (0 : Fin 2) then ((1 / 2 : ℝ) : AddCircle (1 : ℝ)) else 0
+  refine ⟨x, y, ?_⟩
+  intro hxy
+  have h0 := congrFun hxy (0 : Fin 2)
+  have hcircle :
+      ((0 : ℝ) : AddCircle (1 : ℝ)) =
+        ((1 / 2 : ℝ) : AddCircle (1 : ℝ)) := by
+    simpa [x, y] using h0
+  have hz : (0 : ℝ) ∈ Set.Ico (0 : ℝ) (0 + 1) := by
+    norm_num
+  have hh : (1 / 2 : ℝ) ∈ Set.Ico (0 : ℝ) (0 + 1) := by
+    norm_num
+  have hreal : (0 : ℝ) = 1 / 2 :=
+    (AddCircle.coe_eq_coe_iff_of_mem_Ico (p := (1 : ℝ)) (a := 0) hz hh).mp hcircle
+  norm_num at hreal
+
 /-- Every continuous map from a preconnected space into a totally disconnected
 space is constant.  This is the exact topological obstruction used below. -/
 theorem continuous_into_goldenSFT_constant
@@ -63,7 +86,7 @@ theorem torus_not_homeomorphic_goldenSFT :
     IsEmpty (Torus2 ≃ₜ GoldenSFT) := by
   constructor
   intro h
-  obtain ⟨x, y, hxy⟩ := exists_pair_ne Torus2
+  obtain ⟨x, y, hxy⟩ := torus_two_points
   have heq : h x = h y :=
     continuous_into_goldenSFT_constant h h.continuous x y
   exact hxy (h.injective heq)
