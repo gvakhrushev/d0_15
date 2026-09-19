@@ -325,13 +325,13 @@ import D0.Matter.Book04FullSupportSelectors
 import D0.Matter.Book04OperatorBoundary
 import D0.Matter.CKMBasisMismatch
 import D0.Matter.CKMBasisOrigin
-import D0.Matter.CanonicalZoneCirculation
 import D0.Matter.CKMClass5ParityExclusion
 import D0.Matter.CKMClass5SelectorOwner
 import D0.Matter.CKMExactMatrixCertificate
 import D0.Matter.CKMNontrivialFlavourAlgebra
 import D0.Matter.CKMOverlapUnderdeterminationNoGo
 import D0.Matter.CKMPhasonHolonomy
+import D0.Matter.CanonicalZoneCirculation
 import D0.Matter.ChargedLeptonMassTransfer
 import D0.Matter.DSigmaRoleCycleCarrierNoGo
 import D0.Matter.DSigmaRoleTransitionGraph
