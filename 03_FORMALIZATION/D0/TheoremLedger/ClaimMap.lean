@@ -1146,9 +1146,21 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ALBERT-SM-GAUGE-PROJECTION-001", moduleName := "D0.Gauge.AlbertSMProjection",
       theoremName := "sm_gauge_dim_eq_twelve;sm_gauge_dim_le_f4;sm_factor_count_eq_three;albert_hypercharge_matches_weyl_generation;albert_sm_gauge_projection_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FIEDLER-HODGE-PROJECTION-001", moduleName := "D0.Cosmology.FiedlerHodgeProjection",
-      theoremName := "fiedler_tilt_formula;fiedler_tilt_kernel_invariant;fiedler_freezeout_tilt_exact;fiedler_hodge_projection_owner", status := ClaimStatus.leanCoreProved },
+      theoremName := "fiedler_tilt_formula;fiedlerTiltSq;fiedlerTilt_eq_sq;fiedler_tilt_sq_freezeout;fiedler_tilt_kernel_invariant;fiedler_freezeout_tilt_exact;fiedler_hodge_projection_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FIBONACCI-AF-TOWER-OWNER-001", moduleName := "D0.Algebra.FibonacciAFTower",
-      theoremName := "af_dimensions_initial;two_step_bratteli_matrix;af_dimensions_strictly_increasing;perron_eigenvalue_relation;perron_trace_consistency;gns_refinement_isometry;fibonacci_af_tower_owner", status := ClaimStatus.leanCoreProved }
+      theoremName := "af_dimensions_initial;two_step_bratteli_matrix;af_dimensions_strictly_increasing;perron_eigenvalue_relation;perron_trace_consistency;gns_refinement_isometry;fibonacci_af_tower_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-OBSERVABLE-COMPLETION-CANONICITY-001", moduleName := "D0.Foundation.ObservableCompletionCanonicity",
+      theoremName := "constant_readout_m1_forced;distinct_readouts_no_m1_forced;observable_canonicity_criterion;readout_separates_object_uniqueness;observable_completion_canonicity_summary", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIEDLER-PROJECTOR-OPERATOR-001", moduleName := "D0.Cosmology.FiedlerProjectorOperator",
+      theoremName := "PiF_transpose;PiF_mul_self;Lq_mul_PiF;PiF_trace;fiedler_projector_operator_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIEDLER-RELAXATION-LIMIT-001", moduleName := "D0.Cosmology.FiedlerRelaxationLimit",
+      theoremName := "relHeatDenom_ge_twelve;higher_mode_sum_le;fiedler_share_error_bound;fiedler_energy_error_bound;fiedler_relaxation_limit_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FIBONACCI-PERRON-PROFILE-CANONICITY-001", moduleName := "D0.Algebra.FibonacciPerronTraceCanonicity",
+      theoremName := "phi_gt_one;poly_factorization;positive_perron_eigenvalue_unique;normalized_perron_profile_unique;canonical_perron_profile_exists;perron_profile_m1_forced;fibonacci_perron_profile_canonicity_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-ENDPOINT-LOCAL-REFINEMENT-001", moduleName := "D0.Extensions.SceneEndpointLocalRefinement",
+      theoremName := "all_walks_endpoint_local;all_walks_scene_faithful;endpoint_local_scene_faithful_unique;non_backtracking_not_endpoint_local;scene_endpoint_local_refinement_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-REPRESENTATION-AND-CIRCULATION-CANONICITY-001", moduleName := "D0.Synthesis.RepresentationAndCirculationCanonicity",
+      theoremName := "admissible_grading_21;all_admissible_gradings_give_eight;nc_count_eight_m1_forced;circulation_ratio_invariant;representation_circulation_canonicity_owner", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

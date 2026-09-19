@@ -7,6 +7,7 @@ import D0.Algebra.AlbertJordan
 import D0.Algebra.Clifford
 import D0.Algebra.D0InternalDimensionSelector
 import D0.Algebra.FibonacciAFTower
+import D0.Algebra.FibonacciPerronTraceCanonicity
 import D0.Algebra.GaloisPhiNontrivial
 import D0.Algebra.HurwitzLocalBoundary
 import D0.Algebra.Sedenions
@@ -110,6 +111,8 @@ import D0.Cosmology.EntropyArchiveFlow
 import D0.Cosmology.EntropyJacobianSign
 import D0.Cosmology.FeedbackPartitionFunction
 import D0.Cosmology.FiedlerHodgeProjection
+import D0.Cosmology.FiedlerProjectorOperator
+import D0.Cosmology.FiedlerRelaxationLimit
 import D0.Cosmology.FiniteFeedbackEquationOfState
 import D0.Cosmology.FloorMassProjection
 import D0.Cosmology.HeatTraceEnergyFunctional
@@ -164,6 +167,7 @@ import D0.Extensions.PhasonCoordinateFunctorConstruction
 import D0.Extensions.PrimitiveMinimalityAfterSelfReading
 import D0.Extensions.RawCommutantWedderburn
 import D0.Extensions.RepresentationReadoutExtension
+import D0.Extensions.SceneEndpointLocalRefinement
 import D0.Extensions.SceneHistoryRefinementConstruction
 import D0.Extensions.SceneHistoryRefinementExtension
 import D0.Extensions.TwoCompletionNoGo
@@ -215,6 +219,7 @@ import D0.Foundation.M1CoreSaturation
 import D0.Foundation.M1Predicate
 import D0.Foundation.M1RepairObservationalQuotient
 import D0.Foundation.M1Universality
+import D0.Foundation.ObservableCompletionCanonicity
 import D0.Foundation.Omega8Center
 import D0.Foundation.PartitionAlgebra
 import D0.Foundation.PhysicalComparisonRepresentation
@@ -491,6 +496,7 @@ import D0.Synthesis.PhasonActiveSceneConjugacy
 import D0.Synthesis.PuiseuxTransferSaturation
 import D0.Synthesis.RankCausalCone
 import D0.Synthesis.RankCausalConeForcing
+import D0.Synthesis.RepresentationAndCirculationCanonicity
 import D0.Synthesis.RoleAssignmentNarrowing
 import D0.Synthesis.RoleModelDiscrimination
 import D0.Synthesis.RoleOrientationEOS

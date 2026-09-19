@@ -91,7 +91,12 @@ theorem divergenceFree_iff_primitive_line (J : ZoneFlow) :
         J.z = 11 * t := by
   constructor
   · exact divergenceFree_classification J
-  · rintro ⟨t, rfl, rfl, rfl⟩
+  · rintro ⟨t, hx, hy, hz⟩
+    have hJ : J = ⟨13 * t, 9 * t, 11 * t⟩ := by
+      cases J
+      dsimp at hx hy hz
+      rw [hx, hy, hz]
+    rw [hJ]
     exact scalar_primitive_divergenceFree t
 
 /-- Nonzero divergence-free currents have no vanishing component; hence their

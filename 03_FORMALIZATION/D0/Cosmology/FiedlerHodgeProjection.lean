@@ -64,6 +64,26 @@ theorem fiedler_tilt_formula (k : ℚ) (_hk : k ^ 2 + lambdaFiedler ≠ 0) :
   unfold fiedlerTilt fiedlerPower fiedlerPowerDeriv fiedlerMultiplicity lambdaFiedler
   field_simp
 
+/-- Scale-squared tilt function: tilt as a direct function of $q = k^2$,
+$\text{tiltSq}(q) = \frac{-2q}{q + 20}$.
+This formulation avoids square roots in $\mathbb{Q}$ and non-vacuously represents
+the scale dependence since the power spectrum depends strictly on $q = k^2$. -/
+def fiedlerTiltSq (q : ℚ) : ℚ :=
+  -2 * q / (q + lambdaFiedler)
+
+/-- Bridge between tilt as a function of wavenumber $k$ and tilt as a function of scale squared $q = k^2$. -/
+theorem fiedlerTilt_eq_sq (k : ℚ) (h : k ^ 2 + lambdaFiedler ≠ 0) :
+    fiedlerTilt k = fiedlerTiltSq (k ^ 2) := by
+  rw [fiedler_tilt_formula k h]
+  rfl
+
+/-- At the canonical freeze-out scale-squared $q_* = \lambda_2 = 20$,
+the spectral tilt evaluates non-vacuously to exact $-1$. -/
+theorem fiedler_tilt_sq_freezeout :
+    fiedlerTiltSq 20 = -1 := by
+  unfold fiedlerTiltSq lambdaFiedler
+  norm_num
+
 /-- Invariance under window scaling: when the power spectrum is restricted to the
 Fiedler eigenspace via the Hodge projector, multiplying by an arbitrary positive
 kernel weight $w > 0$ cancels identically out of the spectral tilt. -/
@@ -92,14 +112,16 @@ The Hodge spectral projection onto the lowest connected Laplacian mode eliminate
 smoothing-kernel indeterminacy of the cosmological tilt:
 1. The Fiedler scale is the lowest nonzero eigenvalue $\lambda_2 = 20$;
 2. The tilt is strictly invariant under any overall kernel weighting $w > 0$;
-3. At the freeze-out scale $k_*^2 = 20$, the algebraic tilt evaluates exactly to $-1$. -/
+3. At the freeze-out scale $k_*^2 = 20$, the algebraic tilt evaluates exactly to $-1$;
+4. In terms of scale-squared $q = k^2$, freezeout at $q_* = 20$ non-vacuously gives $-1$. -/
 theorem fiedler_hodge_projection_owner :
     lambdaFiedler = 20 ∧
+    fiedlerTiltSq 20 = -1 ∧
     (∀ k w : ℚ, w ≠ 0 → k ^ 2 + lambdaFiedler ≠ 0 →
       k * (w * (12 : ℚ) * (-2 * k) / (k ^ 2 + lambdaFiedler) ^ 2) /
           (w * (12 : ℚ) / (k ^ 2 + lambdaFiedler)) = fiedlerTilt k) ∧
     (∀ k : ℚ, k ^ 2 = 20 → fiedlerTilt k = -1) := by
-  refine ⟨rfl, ?_, ?_⟩
+  refine ⟨rfl, fiedler_tilt_sq_freezeout, ?_, ?_⟩
   · intro k w hw hk
     exact fiedler_tilt_kernel_invariant k w hw hk
   · intro k hk
