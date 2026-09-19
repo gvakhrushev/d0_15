@@ -641,6 +641,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "cosmology_internal_transfer_composed", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001", moduleName := "D0.Cosmology.CMBNsSmoothingUndeterminedNoGo",
       theoremName := "cmb_ns_smoothing_undetermined_nogo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-SYMTFT-SMOOTHING-UNDERDETERMINATION-NOGO-001", moduleName := "D0.Cosmology.SymTFTSmoothingNoGo",
+      theoremName := "rho_unit_interval;proposed_uStar_negative;fixed_smoothing_still_leaves_k_choice;symtft_smoothing_underdetermination_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-SM-HYPERCHARGE-ROW-OWNER-001", moduleName := "D0.Matter.SMHyperchargeRowOwner",
       theoremName := "sm_hypercharge_row_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-DSIGMA-CANONICAL-ROLE-ADDRESS-OWNER-001", moduleName := "D0.Matter.DSigmaRoleTransitionGraph",
