@@ -2,49 +2,48 @@ namespace D0.Bridge
 
 namespace BridgeAssumption
 
-/-- External owner of the finite→smooth **continuum limit** for the gravity/geometry layer
-(BOOK_07 §07.51.3). The D0 scene is a sequence of finite metric graphs at increasing refinement;
-the question is whether that sequence converges to a smooth compact Riemannian space. The apt
-classical framework is:
+/-!
+External owner of the finite -> quantum-metric -> smooth continuum interface.
 
-* **Rieffel — compact quantum metric spaces** (M. Rieffel, *Metrics on state spaces*, Doc. Math. 4
-  (1999) 559; *Gromov–Hausdorff distance for quantum metric spaces*, Mem. AMS 168 (2004)): a
-  spectral/order-unit datum with a Lipschitz seminorm is a compact quantum metric space, and such
-  spaces carry a **quantum Gromov–Hausdorff distance**.
-* **Gromov–Hausdorff(–Prokhorov) convergence**: a Cauchy sequence of compact metric (measure)
-  spaces in the (q)GH(P) metric has a limit compact metric space.
+The present D0 core owns a finite graph metric (the finite Connes-distance/geodesic
+identity is handled elsewhere).  It does **not** by that fact alone construct a Rieffel
+compact quantum metric space: the required order-unit/C*-algebraic state-space and
+Lip-norm axioms, and any quantum Gromov-Hausdorff/propinquity distance, are absent from
+the local Lean development.
 
-D0 proves internally (cert `vp_connes_distance_geodesic.py`, claim
-`D0-CONNES-DISTANCE-GEODESIC-001`): on each finite scene the Connes spectral distance equals the
-graph geodesic and the cone speed is `c = 1 = edge/tick` (structural), so each finite scene is an
-*internal* compact quantum metric space — no external metric input. The continuum limit (that the
-refinement sequence is GHP-Cauchy and its limit is a smooth Riemannian manifold) is the assumed
-external owner; this refines the abstract Connes-reconstruction *confirmation*
-(`D0-CONNES-RECONSTRUCTION-OWNER-001`) with the specific convergence framework. Connes
-reconstruction identifies the *limit object* (a spectral triple is a spin manifold); Rieffel/GHP
-own the *convergence to it*. D0 does NOT prove GHP-Cauchyness of the refinement sequence — that is
-the explicit named residual. -/
+Accordingly this bridge keeps two external pieces explicit:
+
+1. a genuine quantum-metric realization of the finite refinement stages, including
+   whatever hypotheses are required by the chosen Rieffel/Latrémolière framework;
+2. convergence of those realized stages to the intended continuum limit.
+
+The generic golden Cauchy lemma in `D0.Bridge.GromovHausdorff` can be applied only
+*after* such a concrete metric-stage realization and its step bound are supplied.
+-/
+
+/-- Explicit external bridge contract.  These propositions are intentionally assumptions,
+not locally fabricated CQMS objects. -/
 structure RieffelGHPContinuum where
-  /-- D0-side anchor: each finite scene is an internal compact quantum metric space (Connes
-      distance = geodesic, `c=1=edge/tick`; cert-proved). -/
-  d0FiniteInternalQuantumMetric : Prop
-  /-- External: the refinement sequence is GHP-Cauchy and converges (Rieffel qGH + GHP) to a
-      smooth compact Riemannian space. -/
-  ghpCauchyConvergesToSmooth : Prop
-  d0Witness : d0FiniteInternalQuantumMetric
-  cited : ghpCauchyConvergesToSmooth
+  /-- External mathematical realization of D0 finite stages as genuine objects in the
+  selected quantum-metric framework. -/
+  finiteStageQuantumMetricRealization : Prop
+  /-- External convergence statement in the selected quantum metric/distance, together
+  with identification of the intended smooth compact limit. -/
+  quantumMetricConvergesToSmooth : Prop
+  finiteStageCited : finiteStageQuantumMetricRealization
+  convergenceCited : quantumMetricConvergesToSmooth
 
 end BridgeAssumption
 
 abbrev RieffelGHPContinuum := BridgeAssumption.RieffelGHPContinuum
 
-/-- Conditional bridge: given the D0 finite internal quantum metric (Connes distance = geodesic on
-each finite scene) and Rieffel quantum-Gromov–Hausdorff + GHP convergence (assumed), the finite
-scene sequence converges to a smooth compact Riemannian space. Proved ONLY relative to the declared
-external assumption (`ASSUMP-RIEFFEL-GHP`); the GHP-Cauchy proof for the D0 refinement sequence is
-the named residual, not supplied here. -/
+/-- Conditional bridge, and nothing stronger: once a genuine finite-stage quantum-metric
+realization and its continuum convergence are supplied externally, both are available to
+downstream bridge consumers.
+
+This theorem does not construct a compact quantum metric space or a propinquity distance. -/
 theorem rieffel_ghp_continuum_conditional (h : RieffelGHPContinuum) :
-    h.d0FiniteInternalQuantumMetric ∧ h.ghpCauchyConvergesToSmooth :=
-  ⟨h.d0Witness, h.cited⟩
+    h.finiteStageQuantumMetricRealization ∧ h.quantumMetricConvergesToSmooth :=
+  ⟨h.finiteStageCited, h.convergenceCited⟩
 
 end D0.Bridge
