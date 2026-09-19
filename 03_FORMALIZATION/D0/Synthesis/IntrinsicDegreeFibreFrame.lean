@@ -3,6 +3,7 @@ import D0.Synthesis.SceneNormalizedQuotientDescent
 import D0.Representation.TypedRepresentationFunctor
 import D0.Representation.TypedRepresentationFunctorNoGo
 import D0.UnifiedFiniteCore.Q8Terminal
+import D0.Integration.V15.RawZone
 
 /-!
 # Intrinsic degree-fibre generation frame
@@ -181,6 +182,51 @@ theorem q8_pairing_not_fixed_by_unpaired_frame :
     swappedQ8Ranks 1 ≠ swappedQ8Ranks 2 := by
   native_decide
 
+/-! ## The canonical zone-current split is not a typed grading
+
+There is an extremely tempting internal candidate for the missing `(2,1)` grading:
+`RawZone.Pact` and `RawZone.P0` are canonical complementary rank-`2` / rank-`1`
+projectors on this same three-dimensional quotient carrier.  Their difference is
+therefore a genuine involution with signs `(+,+,-)`.
+
+However the typed representation requires the grading to preserve the intrinsic
+degree fibres.  The candidate below fails exactly there: it does not commute with
+the graph-derived degree operator.  This is a useful maximality result — the
+canonical zone-current split cannot silently be recycled as the missing KO/grading
+operator.
+-/
+
+/-- The most direct grading candidate built from the canonical zone-current split. -/
+def zoneCurrentGrading : Matrix Fibre3 Fibre3 ℚ :=
+  D0.Integration.V15.RawZone.Pact - D0.Integration.V15.RawZone.P0
+
+/-- It really is an involution. -/
+theorem zoneCurrentGrading_involution :
+    zoneCurrentGrading * zoneCurrentGrading =
+      (1 : Matrix Fibre3 Fibre3 ℚ) := by
+  native_decide
+
+/-- Its rank-`2` active sector has sign `+1`. -/
+theorem zoneCurrentGrading_on_active :
+    zoneCurrentGrading * D0.Integration.V15.RawZone.Pact =
+      D0.Integration.V15.RawZone.Pact := by
+  native_decide
+
+/-- Its rank-`1` neutral sector has sign `-1`, so algebraically it has the desired
+`(2,1)` sign multiplicities. -/
+theorem zoneCurrentGrading_on_neutral :
+    zoneCurrentGrading * D0.Integration.V15.RawZone.P0 =
+      -D0.Integration.V15.RawZone.P0 := by
+  native_decide
+
+/-- **Exact obstruction.**  Despite having the desired `(2,1)` split, the canonical
+zone-current involution does not preserve the intrinsic degree-fibre frame. -/
+theorem zoneCurrentGrading_not_degree_compatible :
+    zoneCurrentGrading * intrinsicDegreeOp ≠
+      intrinsicDegreeOp * zoneCurrentGrading := by
+  rw [intrinsicDegreeOp_eq_typedDegreeOp]
+  native_decide
+
 /-! ## The residual signature survives the intrinsic frame -/
 
 /-- The all-positive grading representative. -/
@@ -219,11 +265,14 @@ theorem intrinsic_frame_with_residual_signature :
     D0.Representation.TypedRepresentationFunctorNoGo.Phi1.nc = 12 ∧
     D0.Representation.TypedRepresentationFunctorNoGo.Phi2.nc = 8 ∧
     D0.Representation.TypedRepresentationFunctorNoGo.Phi1.nc ≠
-      D0.Representation.TypedRepresentationFunctorNoGo.Phi2.nc :=
+      D0.Representation.TypedRepresentationFunctorNoGo.Phi2.nc ∧
+    zoneCurrentGrading * intrinsicDegreeOp ≠
+      intrinsicDegreeOp * zoneCurrentGrading :=
   ⟨intrinsicDegreeOp_eq_typedDegreeOp,
     intrinsic_fibre_projectors.2.2.2.1,
     D0.Representation.TypedRepresentationFunctorNoGo.typed_representation_functor_nogo.1,
     D0.Representation.TypedRepresentationFunctorNoGo.typed_representation_functor_nogo.2.1,
-    D0.Representation.TypedRepresentationFunctorNoGo.typed_representation_functor_nogo.2.2⟩
+    D0.Representation.TypedRepresentationFunctorNoGo.typed_representation_functor_nogo.2.2,
+    zoneCurrentGrading_not_degree_compatible⟩
 
 end D0.Synthesis.IntrinsicDegreeFibreFrame
