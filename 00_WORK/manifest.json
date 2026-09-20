@@ -40,22 +40,104 @@
   ],
   "tasks": [
     {
-      "id": "CTRL-RECONCILE-LOCAL-DIVERGENCE",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "PLANNED",
-      "affected_claims": [],
-      "exit_condition": "Reconciliation audit of 35 diverged local commits against remote main completed with clear per-commit merge or discard decision.",
-      "brief": "00_WORK/tasks/CTRL-RECONCILE-LOCAL-DIVERGENCE.md"
-    },
-    {
       "id": "CTRL-MIGRATE-ACTIVE-WORK",
       "class": "CONTROL",
       "parent": "ROOT",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [],
-      "exit_condition": "Active work items migrated from legacy notes and pending branches into 00_WORK manifest with valid CONTROL parentage and affected claims.",
+      "exit_condition": "Selected reconciliation payloads have been reimplemented or deliberately rejected on current main, with every spawned WORKER task reviewed and no unclassified legacy payload remaining in the selected batch.",
       "brief": "00_WORK/tasks/CTRL-MIGRATE-ACTIVE-WORK.md"
+    },
+    {
+      "id": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The post-C1 gravity dynamics seam is terminally classified after A-Z review: either a theorem-ready internally forced kinetic/Hodge construction exists or the exact remaining primitive is isolated as a NO-GO or bridge boundary.",
+      "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
+    },
+    {
+      "id": "EXP-AOMEGA-NORMALIZATION-GAUGE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-ENDOGENOUS-ACTION-QUANTUM-001",
+        "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
+        "D0-STATIC-TO-DYNAMICS-OWNER-001",
+        "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001"
+      ],
+      "exit_condition": "Determine the exact dimension of the remaining gravity-wave normalization choice space after quotienting unit and branch-gauge freedom, and decide whether the residual is already owned by the existing action/HBAR normalization seams or requires a genuinely independent boundary primitive.",
+      "brief": "00_WORK/tasks/EXP-AOMEGA-NORMALIZATION-GAUGE.md"
+    },
+    {
+      "id": "WRK-HODGE-SCENE-COCHAIN",
+      "class": "WORKER",
+      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-001",
+        "D0-CARRIER-CENSUS-001",
+        "D0-HODGE-THREE-LEVEL-SPECTRUM-001",
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The literal K(9,11,13) scene cochain complex and the honestly supported finite Hodge decomposition from the local payload are reimplemented on current main using existing topology owners where possible; actual incidence maps replace declared dimension constants where supported; d₁d₂=0 and claimed decomposition facts build in Lean; no physical Hamiltonian, TT dynamics, or matter-gravity identification is promoted beyond what is proved.",
+      "brief": "00_WORK/tasks/WRK-HODGE-SCENE-COCHAIN.md"
+    },
+    {
+      "id": "WRK-GRAV-COMPENSATOR-NOETHER",
+      "class": "WORKER",
+      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
+        "D0-SPECTRAL-EINSTEIN-001",
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The research-certified compensator construction is reimplemented as a generic Lean owner for the proved A1/Noether/Ward statements, including gauge invariance, Euler/Noether identity and the supported projected-field result, while preserving the semantic firewall that B₊ is the unsigned Weyl/Ward operator and is not B₋, Hodge divergence, Bianchi conservation or an Einstein tensor.",
+      "brief": "00_WORK/tasks/WRK-GRAV-COMPENSATOR-NOETHER.md"
+    },
+    {
+      "id": "WRK-GEO-CAR-DIRAC-PARITY",
+      "class": "WORKER",
+      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
+        "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001"
+      ],
+      "exit_condition": "Current-main ArchiveCARDirac contains the explicit supported CAR Dirac operator, its self-adjointness theorem, a typed parity operator Γ_F and the exact anticommutation Γ_F D = −D Γ_F; any ± spectral-pairing consequence is added only if it follows on the actually typed finite carrier without importing an unstated spectral theorem.",
+      "brief": "00_WORK/tasks/WRK-GEO-CAR-DIRAC-PARITY.md"
+    },
+    {
+      "id": "WRK-CERT-ARTIFACT-FRESHNESS",
+      "class": "WORKER",
+      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
+        "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001"
+      ],
+      "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
+      "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
+    },
+    {
+      "id": "WRK-DYN-TWO-TICK-SYMPLECTIC",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
+        "D0-STATIC-TO-DYNAMICS-OWNER-001",
+        "D0-TIME-2D-PISOT-001",
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "Formalize the finite two-tick algebraic structure already implied by ToralAutomorphism.T: T² entries, one-tick anti-symplecticity, two-tick symplecticity, invariant Lorentzian form, invariant-form classification, and the exact two-tick recurrence/generating relations, without promoting Hodge coupling normalization or a physical branch interpretation.",
+      "brief": "00_WORK/tasks/WRK-DYN-TWO-TICK-SYMPLECTIC.md"
     }
   ]
 }

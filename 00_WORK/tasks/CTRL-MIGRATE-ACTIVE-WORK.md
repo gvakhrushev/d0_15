@@ -4,12 +4,17 @@
 CONTROL
 
 ## Objective
-Audit existing legacy task notes, worker queues, and research briefs, and prepare their selective migration into the `00_WORK` active manifest with valid CONTROL parentage and affected claims.
+Integrate selected unique legacy mathematical payloads onto current main without importing stale registry/docs assumptions or obsolete scaffolding.
 
 ## Scope
-1. Review all frozen legacy scaffolds (`legacy_scaffolds`).
-2. Identify genuinely active work items versus historical or archived notes.
-3. Formulate compliant `CONTROL`, `WORKER`, and `EXPENSIVE` task descriptors without auto-minting claims or bypassing WIP limits.
+1. Reimplement verified mathematical payloads from diverged local branches into clean, self-contained Lean 4 owners.
+2. Maintain strict semantic firewalls preventing overclaim or false identification of geometric operators.
+3. Supervise and review the four selected WORKER tasks:
+   - `WRK-HODGE-SCENE-COCHAIN`
+   - `WRK-GRAV-COMPENSATOR-NOETHER`
+   - `WRK-GEO-CAR-DIRAC-PARITY`
+   - `WRK-CERT-ARTIFACT-FRESHNESS`
+4. Ensure no unclassified legacy payload remains in the selected batch.
 
 ## Exit Condition
-Active work items migrated from legacy notes and pending branches into 00_WORK manifest with valid CONTROL parentage and affected claims.
+Selected reconciliation payloads have been reimplemented or deliberately rejected on current main, with every spawned WORKER task reviewed and no unclassified legacy payload remaining in the selected batch.
