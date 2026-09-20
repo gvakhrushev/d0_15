@@ -7,10 +7,10 @@ namespace D0.Dynamics
 
 open Matrix
 
-/-- Canonical symplectic form on the 2D toral integer lattice. -/
+/-- Standard primitive symplectic form on the 2D toral integer lattice. -/
 def Jsymp : ZMat2 := !![0, 1; -1, 0]
 
-/-- Canonical invariant Lorentzian / hyperbolic form on the 2D toral integer lattice. -/
+/-- Primitive symmetric two-tick-invariant Lorentzian / hyperbolic form on the 2D toral integer lattice. -/
 def Gform : ZMat2 := !![-2, 1; 1, 2]
 
 /-- The two-tick operator T² has explicit integer entries !![1, -1; -1, 2]. -/
@@ -151,23 +151,23 @@ theorem generating_relations_q_p (q p q' p' : ℚ)
   · linarith
   · linarith
 
-/-- Rational discrete Euler-Lagrange operator for the two-tick generating action. -/
-def twoTickEL (qPrev q qNext : ℚ) : ℚ :=
+/-- Exact scalar recurrence residual induced by the two-tick transfer map. -/
+def twoTickRecurrenceResidual (qPrev q qNext : ℚ) : ℚ :=
   -qPrev + 3 * q - qNext
 
-/-- Exact equivalence of the two-tick Euler-Lagrange condition with the step recurrence. -/
-theorem twoTickEL_eq_zero_iff (qPrev q qNext : ℚ) :
-    twoTickEL qPrev q qNext = 0 ↔ qNext = 3 * q - qPrev := by
-  unfold twoTickEL
+/-- Exact equivalence of the vanishing two-tick recurrence residual with the step recurrence. -/
+theorem twoTickRecurrenceResidual_eq_zero_iff (qPrev q qNext : ℚ) :
+    twoTickRecurrenceResidual qPrev q qNext = 0 ↔ qNext = 3 * q - qPrev := by
+  unfold twoTickRecurrenceResidual
   constructor
   · intro h; linarith
   · intro h; linarith
 
-/-- The standard two-tick trajectory satisfies the discrete Euler-Lagrange equation. -/
-theorem twoTickEL_satisfied_by_evolution (q : ℤ → ℚ)
+/-- The standard two-tick trajectory satisfies the two-tick recurrence residual equation. -/
+theorem twoTickRecurrenceResidual_satisfied_by_evolution (q : ℤ → ℚ)
     (h_rec : ∀ k : ℤ, q (k + 1) = 3 * q k - q (k - 1)) (k : ℤ) :
-    twoTickEL (q (k - 1)) (q k) (q (k + 1)) = 0 := by
-  rw [twoTickEL_eq_zero_iff]
+    twoTickRecurrenceResidual (q (k - 1)) (q k) (q (k + 1)) = 0 := by
+  rw [twoTickRecurrenceResidual_eq_zero_iff]
   exact h_rec k
 
 end D0.Dynamics
