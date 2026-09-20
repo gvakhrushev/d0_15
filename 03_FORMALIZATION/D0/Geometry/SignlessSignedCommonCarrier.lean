@@ -619,4 +619,40 @@ theorem U_isometry (X Y : SceneC1) : inner (U X) (U Y) = inner X Y := by
     ring
   exact h_block
 
+/-- Projection onto the matter-gravity sector (orthogonal to omega). -/
+def Pmg (Y : SceneC1) : SceneC1 :=
+  Y - ((inner Y omega) / 42471) • omega
+
+theorem Pmg_omega_perp (Y : SceneC1) : omega_perp (Pmg Y) := by
+  simp only [omega_perp, Pmg, Pi.sub_apply, Pi.smul_apply, inner, smul_eq_mul]
+  simp only [Finset.sum_sub_distrib, Finset.sum_mul]
+  rw [show ∑ e, (inner Y omega / 42471 * omega e) * omega e =
+    (inner Y omega / 42471) * ∑ e, omega e * omega e by
+      simp only [mul_assoc]
+      rw [Finset.mul_sum]
+      congr]
+  rw [omega_norm]
+  simp only [inner]
+  field_simp
+  ring
+
+theorem ker_BMinus_decomposition (Y : SceneC1) (hY : BMinus Y = 0) :
+    Y = Pmg Y + ((inner Y omega) / 42471) • omega ∧
+    BMinus (Pmg Y) = 0 ∧ omega_perp (Pmg Y) := by
+  constructor
+  · simp [Pmg]
+  · constructor
+    · simp [Pmg, hY, omega_BMinus_zero]
+    · exact Pmg_omega_perp Y
+
+/-- Centered functions on the (11,13) block. -/
+def BlockCorrectionSpace : Submodule ℚ SceneC1 :=
+  { X : SceneC1 | (∀ e, match e with | Sum.inr (Sum.inr _) => True | _ => X e = 0) ∧
+    (∑ y, ∑ z, X (Sum.inr (Sum.inr (y, z))) = 0) }
+
+theorem BlockCorrectionSpace_finrank :
+    Module.finrank ℚ BlockCorrectionSpace = 142 := by
+  -- Card(11*13) = 143. Centering condition removes 1 dimension.
+  sorry
+
 end D0.Geometry.SignlessSignedCommonCarrier
