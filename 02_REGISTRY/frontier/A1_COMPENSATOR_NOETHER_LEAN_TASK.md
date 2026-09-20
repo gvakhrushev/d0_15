@@ -90,6 +90,18 @@ the derivative of S_ext.
 Acceptance:
 D0-A2-COMPENSATOR-NOETHER-RESEARCH-001 stays FORMALISM until this theorem exists.
 
+## Normalization guard
+
+With the repository convention L_M = D_M - M and einsteinResponse(L)=2L, the full
+extended Euler matrix on eta=0 is
+
+T_ext = -4 L_M = -2 * einsteinResponse(L_M).
+
+After the compensator equation d(M_w)=0, one has L_{M_w}=-M_w and the pure-edge
+response is G_phys=4M_w=-4L_{M_w}.
+
+Any theorem with the opposite sign or a factor 2 instead of 4 must be treated as a failed normalization audit.
+
 ## A1-T3 — positivity no-go
 
 Prove:
