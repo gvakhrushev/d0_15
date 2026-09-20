@@ -368,6 +368,7 @@ import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.OpticalJetBackreaction
 import D0.Gravity.PageCurveFiniteRankOwner
 import D0.Gravity.PageTurningPointRank
+import D0.Gravity.VariationalCarrierAudit
 import D0.IM.ArchivePressureCoupling
 import D0.IM.ContinuumFromFractalTick
 import D0.IM.FractalContinuumAndWitnessHalting
