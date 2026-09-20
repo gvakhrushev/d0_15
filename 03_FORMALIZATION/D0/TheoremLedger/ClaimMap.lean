@@ -1374,7 +1374,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-CROSS-ROLE-CURVATURE-ORIGIN-001", moduleName := "D0.Geometry.SpatialCrossRoleFluxCanonicity",
       theoremName := "cross_role_curvature_origin_master", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-EDGE-HOLONOMY-SELECTOR-REVISION-001", moduleName := "D0.Edge.EdgeHolonomySelectorRevision",
-      theoremName := "edge_holonomy_bifurcation", status := ClaimStatus.leanCoreProved }
+      theoremName := "edge_holonomy_bifurcation", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TWO-TICK-SYMPLECTIC-GENERATOR-001", moduleName := "D0.Dynamics.TwoTickSymplectic",
+      theoremName := "Dynamics.T_sq_entries;Dynamics.det_T_sq;Dynamics.T_anti_symplectic;Dynamics.T_sq_symplectic;Dynamics.T_anti_G;Dynamics.T_sq_preserves_G;Dynamics.T_pow_anti_symplectic;Dynamics.T_pow_anti_G;Dynamics.one_tick_no_invariant_form;Dynamics.two_tick_invariant_forms;Dynamics.generating_relations_q_p;Dynamics.twoTickRecurrenceResidual_eq_zero_iff", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
