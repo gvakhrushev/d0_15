@@ -1,10 +1,13 @@
+> **Scope Notice:** This document is an operating procedure for proof/cert verification, NOT the definition of done. The canonical Definition of Done is located at `02_REGISTRY/CLOSURE_CONTRACT.md`.
+
 # VERIFIED CLOSURE PROTOCOL
 
-**Purpose.** A reusable procedure for closing D0 proof-targets without fake theorem promotion. This
-protocol is part of the D0 working method: future agents MUST follow it before attempting any remaining
-blocker in `continuation_frontier.csv`. It was distilled from six closure campaigns (Layer-0 gate
-repair, eight-front, static-to-dynamics, Nature constrained-Hamiltonian bridge, continuation
-consolidation, reheating energy budget). Guard: `04_CERTIFICATES/vp_verified_closure_protocol.py`.
+**Purpose.** A reusable procedure for closing D0 proof-targets without fake theorem promotion.
+While `00_WORK/manifest.json` governs ALL active work, this verification protocol applies specifically
+to `EXPENSIVE` and `WORKER` tasks that investigate or implement claim closure, theorems, certificates,
+no-go bounds, or empirical passports. `CONTROL` tasks are governed by `00_WORK/README.md`, manifest
+invariants, and control review; a CONTROL task is not required to carry a claim ID, book patch,
+certificate, or negative control. Guard: `04_CERTIFICATES/vp_verified_closure_protocol.py`.
 
 A closure is **real** only when it has: an exact finite object, a genuinely-provable Lean theorem (or a
 finite executable cert / formal no-go / explicit passport over a frozen internal object), reachable
@@ -16,10 +19,7 @@ never a closure.
 ## Phases
 
 ### Phase 0 — identify owner and exact blocker
-Read `02_REGISTRY/frontier/continuation_frontier.csv` and the registry
-(`02_REGISTRY/claims.csv`). Confirm the claim ID, its current status, and the
-**exact missing artifact**. Grep the repo for the ID and near-synonyms — if a related claim already
-exists, update it; never mint a duplicate. Hard-freeze new claim IDs except those the task allows.
+The active work source is `00_WORK/manifest.json`. (`continuation_frontier.csv` is a legacy registry/frontier input, not an active task queue). For `EXPENSIVE` and `WORKER` tasks, `affected_claims` are already fixed by the manifest; `CONTROL` tasks may carry `affected_claims = []`. Read the assigned task brief in `00_WORK/tasks/` and the registry (`02_REGISTRY/claims.csv`). Confirm the claim ID, its current status, and the **exact missing artifact**. Grep the repo for the ID and near-synonyms — if a related claim already exists, update it; never mint a duplicate. Hard-freeze new claim IDs except those explicitly authorized by CONTROL.
 
 ### Phase 1 — grounded verification scout
 Before any Lean is written, a scout VERIFIES the mathematical route by actually computing the key
@@ -39,19 +39,22 @@ derivation. If a goal will not close cleanly, NARROW the statement until it is h
 **Lean integration recurring fixes**.
 
 ### Phase 4 — negative controls
-Every cert prints `STRUCTURE_FIXED_BEFORE_NUMBER:` as its first output line and contains at least one
-reachable `FAIL_*` negative control that actually fires (mutation-tested), with no bare `PASS`. Close
-every docstring `"""` on its own line (a mid-line close false-flags later asserts in
-`check_cert_can_fail`).
+Policy for new and modified certificates: each should print `STRUCTURE_FIXED_BEFORE_NUMBER:` as its first output line and contain at least one reachable `FAIL_*` negative control that actually fires (mutation-tested), with no bare `PASS`. (Note: while this is authoring policy for new/modified certs, it is not globally machine-enforced across all historical certs). Close every docstring `"""` on its own line (a mid-line close false-flags later asserts in `check_cert_can_fail`).
 
 ### Phase 5 — book / registry integration
-Edit only source fragments (never generated `BOOK_*.md`); reassemble with `tools/assemble_books.py`.
-Register the row; regenerate aggregates (`tools/generate_lean_aggregates.py`) and the status map. Cert
-references in book prose MUST be backtick-wrapped and carry no `04_CERTIFICATES/` path prefix (publication
-guard). PROOF-TARGET registry rows use `lean_status = OPEN`; passport rows use `PYTHON_CERTIFIED`.
+Update the affected registry rows in `02_REGISTRY/claims.csv` and any corresponding documentation. Update active work tracking in `00_WORK/manifest.json` and regenerate status views via `python tools/render_work_status.py`. Cert references in book prose MUST be backtick-wrapped and carry no `04_CERTIFICATES/` path prefix (publication guard). Preserve the existing registry status vocabulary and set lean_status/release_status only according to the literal owned scope and current registry contract. CP1 does not normalize their cross-product.
 
 ### Phase 6 — full gate and final report
-Run the full gate and `lake build D0.All`; commit one reviewable unit; emit the report template below.
+Run mandatory integration checks:
+1. `python tools/validate_repo.py`
+2. `python tools/generate_lean_views.py --check`
+3. `python tools/validate_work.py --self-test`
+4. `python tools/validate_work.py`
+5. `python tools/render_work_status.py --check`
+6. `python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py`
+7. `lake build D0.All` (when Lean-import-reachable formalization scope is touched)
+
+Commit one reviewable unit; emit the report template below.
 
 ---
 
@@ -113,17 +116,15 @@ Commit:
 Files changed:
 Lean modules:
 Certificates:
-Claims CERT-CLOSED:
-Claims NO-GO:
-Claims still PROOF-TARGET:
-continuation_frontier.csv delta:
+Claims affected:
+Active task (00_WORK/manifest.json):
 Gate:
-  validate_csv:
-  check_sync:
-  assemble_books:
+  validate_repo:
+  generate_lean_views --check:
+  validate_work (--self-test and repo):
+  render_work_status --check:
   registered certs:
-  d0_score --strict:
-  lake build:
+  lake build (if Lean touched):
 Remaining exact blockers:
 ```
 

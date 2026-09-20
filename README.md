@@ -358,6 +358,15 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 
 ## Citation & Status
 
+<!-- D0-WORK-STATUS:BEGIN -->
+### Active Work Status (CP1 Control Plane)
+
+- **Active Tasks**: CONTROL: 2, EXPENSIVE: 0, WORKER: 0 (Total: 2)
+- **WIP Utilization**: CONTROL: 0/2, EXPENSIVE: 0/3, WORKER: 0/5
+- **Legacy Scaffolds Remaining**: 12
+- **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
+<!-- D0-WORK-STATUS:END -->
+
 D0 is an open, actively developed research corpus. The state of any claim is determined by the registry, not by narrative prose.
 
 ```text

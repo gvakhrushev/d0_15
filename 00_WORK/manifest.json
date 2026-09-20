@@ -1,0 +1,61 @@
+{
+  "schema": "d0-work/1",
+  "limits": {
+    "EXPENSIVE": 3,
+    "WORKER": 5,
+    "CONTROL": 2
+  },
+  "legacy_scaffolds": [
+    "02_REGISTRY/frontier/A1_COMPENSATOR_NOETHER_LEAN_TASK.md",
+    "02_REGISTRY/frontier/A1_COMPENSATOR_NOETHER_RESULT.md",
+    "02_REGISTRY/frontier/C1_COMMON_CARRIER_LEAN_TASK.md",
+    "02_REGISTRY/frontier/C1_COMMON_CARRIER_RESULT.md",
+    "02_REGISTRY/frontier/LEVEL2_TRUTH_REPAIR_01.md",
+    "02_REGISTRY/frontier/LEVEL2_WORKER_QUEUE_AFTER_TRUTH_REPAIR.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_A1_VARIATIONAL_BIANCHI.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_AX_A1_DYNAMICS_ADEQUACY.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_BX_CLIFFORD10_TRANSPORT.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_C1_COMMON_CARRIER.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_DX_TWISTED_PROPINQUITY.md",
+    "02_REGISTRY/frontier/TASK_INDUCTIVE_SPECTRAL_TRIPLE_ALL_N.md"
+  ],
+  "legacy_frontier_markdown_paths": [
+    "02_REGISTRY/frontier/A1_COMPENSATOR_NOETHER_LEAN_TASK.md",
+    "02_REGISTRY/frontier/A1_COMPENSATOR_NOETHER_RESULT.md",
+    "02_REGISTRY/frontier/C1_COMMON_CARRIER_LEAN_TASK.md",
+    "02_REGISTRY/frontier/C1_COMMON_CARRIER_RESULT.md",
+    "02_REGISTRY/frontier/CLOSURE_CONTRACT.md",
+    "02_REGISTRY/frontier/D0_RESEARCH_MONOGRAPH.md",
+    "02_REGISTRY/frontier/FRONTIER_STRATEGY.md",
+    "02_REGISTRY/frontier/LEVEL2_TRUTH_REPAIR_01.md",
+    "02_REGISTRY/frontier/LEVEL2_WORKER_QUEUE_AFTER_TRUTH_REPAIR.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_A1_VARIATIONAL_BIANCHI.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_AX_A1_DYNAMICS_ADEQUACY.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_BX_CLIFFORD10_TRANSPORT.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_C1_COMMON_CARRIER.md",
+    "02_REGISTRY/frontier/RESEARCH_BRIEF_DX_TWISTED_PROPINQUITY.md",
+    "02_REGISTRY/frontier/TASK_INDUCTIVE_SPECTRAL_TRIPLE_ALL_N.md",
+    "02_REGISTRY/frontier/no_go_atlas.md",
+    "02_REGISTRY/frontier/verification_protocol.md"
+  ],
+  "tasks": [
+    {
+      "id": "CTRL-RECONCILE-LOCAL-DIVERGENCE",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Reconciliation audit of 35 diverged local commits against remote main completed with clear per-commit merge or discard decision.",
+      "brief": "00_WORK/tasks/CTRL-RECONCILE-LOCAL-DIVERGENCE.md"
+    },
+    {
+      "id": "CTRL-MIGRATE-ACTIVE-WORK",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Active work items migrated from legacy notes and pending branches into 00_WORK manifest with valid CONTROL parentage and affected claims.",
+      "brief": "00_WORK/tasks/CTRL-MIGRATE-ACTIVE-WORK.md"
+    }
+  ]
+}
