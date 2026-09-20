@@ -78,7 +78,7 @@
       "id": "WRK-HODGE-SCENE-COCHAIN",
       "class": "WORKER",
       "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "REVIEW",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-001",
         "D0-CARRIER-CENSUS-001",
