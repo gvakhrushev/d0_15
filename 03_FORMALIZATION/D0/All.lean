@@ -165,6 +165,7 @@ import D0.Dynamics.ToralAutomorphism
 import D0.Dynamics.ToralSFTConjugacyNoGo
 import D0.Dynamics.ToralShiftEquivalence
 import D0.Dynamics.TraceHeatCapacityGravity
+import D0.Dynamics.TwoTickSymplectic
 import D0.Edge.EdgeHolonomySelectorRevision
 import D0.Edge.HolonomyRamificationSeparation
 import D0.Edge.RamificationFromUeEffCompanion
