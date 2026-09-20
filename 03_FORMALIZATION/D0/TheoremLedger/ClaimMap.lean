@@ -1145,6 +1145,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "zcConj_involutive;zhConj_involutive;zoConj_involutive;zsConj_involutive;hToO_mul;oToS_mul;tower_shape", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SEDENION-ALGEBRAIC-CORE-001", moduleName := "D0.Algebra.SedenionTower",
       theoremName := "quaternion_basis_associative;octonion_basis_nonassociative;explicit_sedenion_zero_divisor;sedenion_not_left_alternative;O1_basis_closed;O2_basis_closed;O3_basis_closed;canonical_block_cardinalities;canonical_block_pairwise_intersections;sedenion_three_block_algebraic_core", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SEDENION-BROWN-S3-SCALAR-EXTENSION-001", moduleName := "D0.Algebra.SedenionBrownS3",
+      theoremName := "table_agrees_with_repository;psi_basis_multiplicative;epsilon_basis_multiplicative;psi_order_three_on_basis;epsilon_order_two_on_basis;brown_s3_relation_on_basis;psi_nonmonomial_witness;literature_blocks_closed;literature_block_cardinalities;literature_common_quaternion;brown_s3_stabilizes_literature_blocks;sedenion_brown_s3_scalar_extension_core", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SEDENIONS-THREE-GENERATIONS-001", moduleName := "D0.Algebra.Sedenions",
       theoremName := "bare_threeset_insufficient_for_sedenion_realization;branch_label_s3_scaffold", status := ClaimStatus.deprecated },
     { claimId := "D0-ALBERT-JORDAN-BL-ELIMINATION-001", moduleName := "D0.Algebra.AlbertJordan",
