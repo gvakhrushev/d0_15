@@ -61,6 +61,28 @@ Done:
 - literal theorem contains the Lie relations + same-action/S3 relation.
 - 8+3+1=12 alone is explicitly insufficient.
 
+## W-C1X — Formalize the canonical signless-to-signed common carrier
+
+Branch: research/l2-c1-common-carrier-lean
+
+The expensive C1 research is complete. Do not redo classification.
+
+Use:
+- C1_COMMON_CARRIER_RESULT.md
+- C1_COMMON_CARRIER_LEAN_TASK.md
+- vp_c1_common_carrier_reduced.py
+
+Core deliverables:
+1. typed B_+ and B_- on the actual K(9,11,13) edge carrier;
+2. dim ker B_+=326, dim ker B_-=327, dim intersection=316;
+3. K0 double-centered sector dim 296;
+4. explicit rank-10 correction U on block (11,13);
+5. omega=(13,-11,9), ||omega||^2=42471 and image complement theorem;
+6. U*U=I, UU*=I-omega omega^T/42471;
+7. rho-weighted sign theorem sign(13 rho_9 - 9 rho_13).
+
+Semantic firewall: B_+ is Weyl/trace-like; B_- is signed current divergence. U is a carrier bridge, not a diffeomorphism or Bianchi identity.
+
 ## W-C1 — Derive the cochain census from the actual scene
 
 Branch: research/l2-c1-derived-cochain-census
