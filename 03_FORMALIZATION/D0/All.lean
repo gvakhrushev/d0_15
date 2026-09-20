@@ -7,6 +7,7 @@ import D0.Algebra.AlbertJordan
 import D0.Algebra.AlbertTrilinearInvariant
 import D0.Algebra.CayleyDickson
 import D0.Algebra.Clifford
+import D0.Algebra.CliffordThreeFamilies
 import D0.Algebra.D0InternalDimensionSelector
 import D0.Algebra.FibonacciAFTower
 import D0.Algebra.FibonacciPerronTraceCanonicity
