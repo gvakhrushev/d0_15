@@ -129,7 +129,7 @@
       "id": "WRK-DYN-TWO-TICK-SYMPLECTIC",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001",
         "D0-STATIC-TO-DYNAMICS-OWNER-001",
