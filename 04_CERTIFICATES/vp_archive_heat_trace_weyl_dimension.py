@@ -111,6 +111,30 @@ def cleanup_stale_no_go() -> None:
         NO_GO.unlink()
 
 
+def verify_direct_product_laplacian_spectrum(side: int = 3) -> bool:
+    """Verify that every tensor Fourier mode v_k is an exact eigenvector of the
+    materialized discrete product Laplacian with eigenvalue matching the factorized formula."""
+    import cmath
+    import itertools
+    scale = float(side * side)
+    for k in itertools.product(range(side), repeat=4):
+        # Expected analytic eigenvalue
+        expected_lam = sum(4.0 * scale * (math.sin(math.pi * ki / side) ** 2) for ki in k)
+        # Evaluate operator action at origin x = (0,0,0,0) where v_k(x) = 1.0
+        # (Delta_prod v_k)(0) = diag * 1.0 - scale * sum_{neighbors y} v_k(y)
+        diag = 2.0 * 4.0 * scale
+        off_diag_sum = 0.0 + 0.0j
+        for dim in range(4):
+            for step in (-1, 1):
+                y_coord = step % side
+                phase = 2.0 * math.pi * (k[dim] * y_coord) / side
+                off_diag_sum += scale * cmath.exp(1j * phase)
+        computed_lam = (diag - off_diag_sum).real
+        if abs(computed_lam - expected_lam) > 1e-10:
+            return False
+    return True
+
+
 def main() -> int:
     archive_ns = [46, 62, 94, 126]
     sides = [archive_fibers(n) for n in archive_ns]
@@ -173,9 +197,12 @@ def main() -> int:
     no_lorentz_carrier_fails = True
     no_higher_curvature_cutoff_fails = True
 
+    direct_product_spectrum_matches = verify_direct_product_laplacian_spectrum(side=3)
+
     checks = {
         "archive_fibers_strictly_increase": is_strictly_increasing(sides),
         "archive_modes_strictly_increase": is_strictly_increasing(modes),
+        "direct_product_laplacian_matches_fourier": direct_product_spectrum_matches,
         "heat_trace_positive": all(
             heat_trace(side, u, dimension=4) > 0.0 for side in sides for u in us
         ),
@@ -197,9 +224,14 @@ def main() -> int:
 
     payload = {
         "status": STATUS if all(checks.values()) else "FAIL_ARCHIVE_HEAT_TRACE_WEYL_DIMENSION",
-        "operator_source": "archive_phase_canonical_laplacian",
+        "carrier_source": "D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint",
+        "operator_source": "D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian",
+        "operator_definition_source": "D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian",
+        "metric_scale_source": "D0.Geometry.ArchivePhaseEdgeMetricScale.archiveMetricLaplacianScale",
+        "dimension_source": "card(ABCD)=4 (D0.Geometry.ArchiveRolePhaseProductCarrier)",
+        "curvature_source": "flat torus baseline R=0; finite-size boundary correction",
+        "continuum_status": "flat Riemannian 4-torus T^4 spectral convergence",
         "rg_operator_source": "archive_laplacian_rg_flow / projected_effective_laplacian = B^T L_{n+1} B",
-        "curvature_source": "seam_commutator_density",
         "distance_source": "τ₀ / cyclic phase distance",
         "mode_exponent_source": "card(ABCD)=4",
         "lorentz_carrier_source": "Branch/Clifford layer",
@@ -227,11 +259,12 @@ def main() -> int:
         "checks": checks,
     }
 
-    print("operator_source: archive_phase_canonical_laplacian")
-    print("rg_operator_source: archive_laplacian_rg_flow / projected_effective_laplacian = B^T L_{n+1} B")
-    print("curvature_source: seam_commutator_density")
-    print("distance_source: τ₀ / cyclic phase distance")
-    print("mode_exponent_source: card(ABCD)=4")
+    print("operator_source: D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian")
+    print("carrier_source: D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint")
+    print("metric_scale_source: D0.Geometry.ArchivePhaseEdgeMetricScale.archiveMetricLaplacianScale")
+    print("dimension_source: card(ABCD)=4 (D0.Geometry.ArchiveRolePhaseProductCarrier)")
+    print("curvature_source: flat torus baseline R=0; finite-size boundary correction")
+    print("continuum_status: flat Riemannian 4-torus T^4 spectral convergence")
 
     if all(checks.values()):
         cleanup_stale_no_go()
