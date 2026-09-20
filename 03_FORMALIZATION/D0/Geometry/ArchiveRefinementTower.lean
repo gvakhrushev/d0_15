@@ -118,13 +118,25 @@ theorem archive_covariance_projectively_compatible :
   intro n x y
   rfl
 
-theorem archive_laplacian_projectively_compatible (n : Nat)
+/-- The pullback equality kernel `archiveDelta` (record kernel) is projectively compatible
+across refinement stages. This is an informational/record pullback compatibility, not a metric
+graph Laplacian compatibility. -/
+theorem archive_record_kernel_projectively_compatible (n : Nat)
     (x y : ArchivePoints (n + 1)) :
     (archiveSpectralStage (n + 1)).Delta x y =
       (archiveSpectralStage n).Delta
         ((archiveSpectralProjection n).map x)
         ((archiveSpectralProjection n).map y) := by
   rfl
+
+/-- Legacy alias retained for backwards compatibility. -/
+theorem archive_laplacian_projectively_compatible (n : Nat)
+    (x y : ArchivePoints (n + 1)) :
+    (archiveSpectralStage (n + 1)).Delta x y =
+      (archiveSpectralStage n).Delta
+        ((archiveSpectralProjection n).map x)
+        ((archiveSpectralProjection n).map y) :=
+  archive_record_kernel_projectively_compatible n x y
 
 structure FiniteInverseSystem where
   Obj : Nat → Type

@@ -69,16 +69,39 @@ theorem majorana_charge_eq_two_b (a b : ℚ) :
   unfold majoranaBilinearCharge
   rw [nu_charge_eq_b]
 
-/-- Algebraic elimination of $B - L$:
-Majorana gauge invariance of the right-handed neutrino forces $b = 0$. -/
-theorem majorana_invariance_forces_b_zero (a b : ℚ)
+/-- Honest conditional charge algebra:
+In the absence of a charged scalar compensator (q_phi = 0),
+Majorana gauge invariance forces b = 0. -/
+theorem majorana_without_charged_compensator_forces_b_zero (a b : ℚ)
     (h : MajoranaGaugeInvariant (combo a b)) : b = 0 := by
   unfold MajoranaGaugeInvariant at h
   rw [majorana_charge_eq_two_b] at h
   linarith
 
+theorem majorana_invariance_forces_b_zero (a b : ℚ)
+    (h : MajoranaGaugeInvariant (combo a b)) : b = 0 :=
+  majorana_without_charged_compensator_forces_b_zero a b h
+
+/-- **D0-MAJORANA-BL-SCALAR-COMPENSATION-NOGO-001**:
+Exact NO-GO showing that Majorana invariance does NOT unconditionally eliminate B - L.
+A Majorana Yukawa interaction with a charged scalar phi satisfies:
+  2 * b + q_phi = 0
+For ANY non-zero B - L component b != 0, there exists a scalar charge q_phi = -2b
+restoring complete gauge invariance. -/
+def MajoranaWithScalarInvariant (b qφ : ℚ) : Prop :=
+  2 * b + qφ = 0
+
+theorem compensator_exists (b : ℚ) :
+    ∃ qφ : ℚ, MajoranaWithScalarInvariant b qφ :=
+  ⟨-2 * b, by unfold MajoranaWithScalarInvariant; ring⟩
+
+theorem majorana_with_scalar_does_not_force_b_zero :
+    ∃ b qφ : ℚ, b ≠ 0 ∧ MajoranaWithScalarInvariant b qφ :=
+  ⟨1, -2, by decide, by unfold MajoranaWithScalarInvariant; ring⟩
+
 /-- The unique unbroken gaugeable ray is SM hypercharge:
-Majorana condensation dynamically collapses the 2D anomaly variety to $\operatorname{span}\{Y\}$. -/
+Majorana condensation dynamically collapses the 2D anomaly variety to $\operatorname{span}\{Y\}$
+assuming no charged singlet scalar is present. -/
 theorem majorana_singlet_forces_sm_hypercharge (a b : ℚ)
     (h : MajoranaGaugeInvariant (combo a b)) :
     combo a b = fun i => a * Yhc i := by
@@ -87,12 +110,13 @@ theorem majorana_singlet_forces_sm_hypercharge (a b : ℚ)
   funext i
   simp [combo]
 
-/-- **D0-ALBERT-JORDAN-BL-ELIMINATION-001 (CORE-FORMALIZED).**
-The Albert-Jordan / Majorana structure provides the dynamical algebraic mechanism
-that selects the Standard Model hypercharge ray from the anomaly variety:
+/-- **D0-ALBERT-JORDAN-BL-ELIMINATION-001 (Conditional Formalism).**
+The Albert-Jordan / Majorana structure provides a conditional charge algebra
+that selects the Standard Model hypercharge ray from the anomaly variety
+when the scalar compensator charge is constrained to zero:
 1. $Y$ is anomaly-free and preserves Majorana neutrality;
-2. $B - L$ violates Majorana neutrality;
-3. Neutrality of the Majorana mass operator strictly forces $b = 0$. -/
+2. $B - L$ violates uncompensated Majorana neutrality;
+3. Neutrality of the uncompensated Majorana mass operator strictly forces $b = 0$. -/
 theorem albert_jordan_bl_elimination :
     MajoranaGaugeInvariant Yhc ∧
     ¬ MajoranaGaugeInvariant bMinusL ∧
@@ -106,5 +130,12 @@ theorem albert_jordan_bl_elimination :
     simp
   · intro a b h
     exact majorana_singlet_forces_sm_hypercharge a b h
+
+/-- **D0-MAJORANA-BL-SCALAR-COMPENSATION-NOGO-001 (Owner)**:
+Master owner of the scalar compensation no-go. -/
+theorem majorana_bl_scalar_compensation_nogo_owner :
+    (∃ b qφ : ℚ, b ≠ 0 ∧ MajoranaWithScalarInvariant b qφ) ∧
+    (∀ b : ℚ, ∃ qφ : ℚ, MajoranaWithScalarInvariant b qφ) :=
+  ⟨majorana_with_scalar_does_not_force_b_zero, compensator_exists⟩
 
 end D0.Algebra.AlbertJordan

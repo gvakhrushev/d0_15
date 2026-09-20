@@ -152,9 +152,14 @@ def main() -> int:
 
     payload = {
         "status": STATUS if all(checks.values()) else "FAIL_ARCHIVE_HEAT_TRACE_EXPANSION_FIT",
-        "operator_source": "archive_phase_canonical_laplacian",
+        "carrier_source": "D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint",
+        "operator_source": "D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian",
+        "operator_definition_source": "D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian",
+        "metric_scale_source": "D0.Geometry.ArchivePhaseEdgeMetricScale.archiveMetricLaplacianScale",
+        "dimension_source": "card(ABCD)=4 (D0.Geometry.ArchiveRolePhaseProductCarrier)",
+        "curvature_source": "flat torus baseline R=0; finite-size boundary correction (a1 -> 0)",
+        "continuum_status": "flat Riemannian 4-torus T^4 spectral expansion",
         "rg_operator_source": "archive_laplacian_rg_flow / projected_effective_laplacian = B^T L_{n+1} B",
-        "curvature_source": "seam_commutator_density",
         "distance_source": "τ₀ / cyclic phase distance",
         "mode_exponent_source": "card(ABCD)=4",
         "lorentz_carrier_source": "Branch/Clifford layer",
@@ -172,11 +177,12 @@ def main() -> int:
         },
         "checks": checks,
     }
-    print("operator_source: archive_phase_canonical_laplacian")
-    print("rg_operator_source: archive_laplacian_rg_flow / projected_effective_laplacian = B^T L_{n+1} B")
-    print("curvature_source: seam_commutator_density")
-    print("distance_source: τ₀ / cyclic phase distance")
-    print("mode_exponent_source: card(ABCD)=4")
+    print("operator_source: D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian")
+    print("carrier_source: D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint")
+    print("metric_scale_source: D0.Geometry.ArchivePhaseEdgeMetricScale.archiveMetricLaplacianScale")
+    print("dimension_source: card(ABCD)=4 (D0.Geometry.ArchiveRolePhaseProductCarrier)")
+    print("curvature_source: flat torus baseline R=0; finite-size boundary correction (a1 -> 0)")
+    print("continuum_status: flat Riemannian 4-torus T^4 spectral expansion")
 
     print(payload["status"])
     print(json.dumps(payload, indent=2, sort_keys=True))
