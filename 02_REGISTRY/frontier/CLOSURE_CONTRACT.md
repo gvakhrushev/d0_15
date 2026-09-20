@@ -115,6 +115,25 @@ outcomes; the existence of sharper continuation targets does not reopen them.
   has an exact no-go check: its `u*` is negative and fixing smoothing still leaves the
   independent `k` choice.  This does not enter the active blocker count.
 
+## 5.1 Level-II gravity/matter carrier — current closure boundary
+
+The A1/C1 research passes reduce one broad Level-II ambiguity into typed pieces:
+
+- the A1 compensator construction gives a genuine finite variational Ward identity on the unsigned endpoint-sum carrier;
+- C1 gives an explicit Euclidean H-equivariant isometric embedding from its 326-dimensional kernel into the 327-dimensional signed-current/Hodge kernel, with one canonical matter-only complement mode;
+- these two statements do **not** identify the unsigned Ward operator with the signed Hodge divergence.
+
+Accordingly, the former blocker "no common matter/gravity carrier map exists" is no longer the correct frontier description.
+
+The active residual is narrower:
+
+1. formalize the explicit C1 map and projector in Lean;
+2. type the A1 vertex weight. The already-owned positive Perron profile would select the same C1 polar sign, but this use is not yet owned by A1;
+3. prove the source/action coupling across the map and classify the one-dimensional signed-current complement;
+4. determine whether the completed A1 action derives any nontrivial Poisson/TT kinetic operator (separate A-X research).
+
+This is one coupled Level-II assembly blocker, not four independent theory failures.
+
 ## 6. Stop rule
 
 Research on a lane stops when its load-bearing ambiguity is terminally classified.
