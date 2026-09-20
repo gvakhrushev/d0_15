@@ -91,11 +91,17 @@ representation output into the definition of done.
 **Active independent blocker count from #11/#12/#13: 0.**  The audits have terminal
 outcomes; the existence of sharper continuation targets does not reopen them.
 
-- Sedenion audit (#11): **terminal split and representation bridge closed.** A genuine recursive Cayley–Dickson carrier
-  and concrete sedenion algebraic core are CORE. The old three-label “three generations”
-  owner is deprecated, with an explicit algebra-insufficiency negative control. The representation-theoretic
-  bridge to Cl(0,8), fermionic CAR Witt ladder operators, and 3 linearly independent generations under the
-  Brown S3 automorphism is formalized and certified (D0-SEDENION-D0-REPRESENTATION-FUNCTOR-001, CORE-FORMALIZED).
+- Sedenion audit (#11): **terminal algebra split; final representation typing re-opened.** A genuine recursive Cayley–Dickson carrier,
+  Brown scalar-extension S3 automorphism, Cl(0,8) left-action and Witt CAR layer are formalized.
+  The old three-label “three generations” owner remains deprecated. The later PR #28 supplied substantial
+  algebraic support and executable rank evidence, but its own scope explicitly states that it does not construct
+  a typed map into the D0 generation carrier. The subsequent Lean owner for “three independent families” proves
+  declared dimension arithmetic and one nonzero projector, not a direct-sum theorem for three explicit ideals;
+  the “single gauge sector” owner proves only 8+3+1=12 plus reflexivity, not Lie brackets or S3 commutation.
+  Therefore D0-SEDENION-D0-REPRESENTATION-FUNCTOR-001,
+  D0-CLIFFORD-THREE-INDEPENDENT-FAMILIES-001, and
+  D0-CLIFFORD-SINGLE-GAUGE-SECTOR-001 are PROOF-TARGETS again. This does not reopen the Brown/Cl(0,8)/CAR
+  algebraic core; it isolates the exact remaining representation-theoretic work.
 - Quantum propinquity audit (#12): **terminal downgrade.**  The owned theorem is the
   generic golden pseudometric Cauchy theorem.  Genuine Rieffel/Latremoliere stage
   structure and propinquity convergence are explicitly typed bridge targets/passports,
