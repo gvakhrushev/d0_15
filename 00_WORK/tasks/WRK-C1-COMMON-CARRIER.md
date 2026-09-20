@@ -26,5 +26,22 @@ Formalize the research-certified common-carrier theorem on the literal $K(9,11,1
 - `D0-HODGE-LINKS-001`
 - `D0-SPECTRAL-EINSTEIN-001`
 
+## Implementation & Formalization Evidence
+- Lean module: `03_FORMALIZATION/D0/Geometry/SignlessSignedCommonCarrier.lean`
+- Reused symmetry group: `LocalRelabelling := Equiv.Perm V9T × Equiv.Perm V11T × Equiv.Perm V13T`
+- Induced edge relabelling: `edgeRelabel` on literal `SceneEdge`
+- Carrier action: `sceneAction h X = fun e => X (edgeRelabel (localRelabellingInv h) e)`
+- Proved symmetry theorems:
+  - `BPlus_equivariant : BPlus (sceneAction h X) = vertexAction h (BPlus X)`
+  - `BMinus_equivariant : BMinus (sceneAction h X) = vertexAction h (BMinus X)`
+  - `U_equivariant : U (sceneAction h X) = sceneAction h (U X)`
+- Exact kernel dimensions and complement invariants proved on the literal carrier:
+  - `BMinus_rank : sceneBoundary1.rank = 32`
+  - `BMinus_kernel_finrank : Module.finrank ℚ (LinearMap.ker sceneBoundary1.mulVecLin) = 327`
+  - `omega_norm : ∑ e, (omega e)^2 = 42471`
+  - `omega_BMinus_zero : BMinus omega = 0`
+- Companion exact Python certificate: `04_CERTIFICATES/vp_c1_common_carrier_reduced.py` (all checks PASS)
+- Semantic firewall preserved: $B_+$ is unsigned endpoint sum (Weyl/Ward generator adjoint), $B_-$ is signed current divergence; no TT/Spin-2 module imported.
+
 ## Exit Condition
 Formalize the research-certified common-carrier theorem on the literal K(9,11,13) edge space: unsigned B₊, signed B₋ with transitive orientation, their exact kernel dimensions, the explicit H-equivariant Euclidean isometry U:ker(B₊)→ker(B₋), the rank-10 correction, the omega complement and projector identities, while preserving the semantic firewall that B₊ is the A1 Weyl/Ward endpoint-sum operator and is not the signed Hodge/current divergence.
