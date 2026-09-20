@@ -194,8 +194,8 @@ The old blocker "there is no shared carrier map" is substantially reduced.
 
 The exact residual is now:
 
-1. METRIC COMPATIBILITY.
-   A1's variational universal property uses the rho-weighted edge pairing, while the canonical U above is selected by the Euclidean edge metric.
+1. RHO OWNERSHIP / METRIC COMPATIBILITY.
+   A1's variational universal property uses the rho-weighted edge pairing, while the canonical U above is selected by the Euclidean edge metric. The already-owned Perron profile would give the same polar sign, but A1 has not yet been typed to that profile.
 
    For zone-constant rho, the A_11 overlap sign is controlled by
 
@@ -218,6 +218,37 @@ The exact residual is now:
 
 4. TT/GRAVITY DYNAMICS.
    C1 supplies a carrier map, not a derivation of the existing TT wave operator or continuum Einstein dynamics.
+
+## Metric residual sharpened by an existing owned Perron profile
+
+The repository already owns a canonical normalized positive scene Perron profile in
+D0.VNext2.ScenePerronTraceCanonicity:
+
+rho_9  = 1/(sceneRho+9),
+rho_11 = 1/(sceneRho+11),
+rho_13 = 1/(sceneRho+13),
+
+with sceneRho>0.
+
+For this profile,
+
+13 rho_9 - 9 rho_13
+ = (4 sceneRho + 88) / ((sceneRho+9)(sceneRho+13))
+ > 0.
+
+Therefore, IF this owned Perron profile is the rho used by the A1 variational action,
+the rho-weighted polar sign on A_11 agrees with the Euclidean C1 polar sign and the
+explicit U above survives unchanged.
+
+A second natural but currently certificate-level choice, rho_i=deg(i), gives
+(rho_9,rho_11,rho_13)=(24,22,20) and likewise
+13*24-9*20=132>0.
+
+Do not collapse this conditional into an ownership claim. The exact remaining metric task is now:
+
+> type the rho used in A1 and prove it is the owned Perron profile (or another internally forced profile satisfying 13 rho_9 > 9 rho_13).
+
+Once that is done, the sign/degeneracy concern is discharged for the physical scene.
 
 ## Lean-ready theorem package
 
