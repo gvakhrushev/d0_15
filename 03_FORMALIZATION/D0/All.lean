@@ -42,6 +42,7 @@ import D0.Bridge.FinalBridgeIndex
 import D0.Bridge.GromovHausdorff
 import D0.Bridge.InterpretationSpine
 import D0.Bridge.LocalRaychaudhuriRepresentation
+import D0.Bridge.LocalTickGaugeDiscrimination
 import D0.Bridge.LorentzBridge
 import D0.Bridge.M1InfoReconstructionBridge
 import D0.Bridge.OperatorOriginIndex
