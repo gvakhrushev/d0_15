@@ -1,6 +1,9 @@
 # A1 Result Review — compensator/Noether completion of the finite a2 response
 
 Source research: external A1 memo v2 + exact-arithmetic verification supplied to the reviewer.
+Source SHA-256:
+- memo: c4dd20dc248eade195978ad6b2186f7d9a5a01c5801128946ed04a8d2874bfce
+- verifier: cc17a7c1ff890d27cd74b1b5a0111ca815d3aed8f28806836687fd73e309bede
 Status in this repository: RESEARCH-CERTIFIED / FORMALISM until the arbitrary-graph statements are formalized in Lean.
 
 ## Reviewer verdict
