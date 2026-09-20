@@ -46,9 +46,6 @@ theorem q3_sqrt3_sq :
     q3Mul q3Sqrt3 q3Sqrt3 = q3Rat 3 := by
   norm_num [q3Mul, q3Sqrt3, q3Rat]
 
-/-- Coordinate vector on the 16 canonical sedenion basis units. -/
-abbrev SVec := Fin 16 → Q3
-
 /-- XOR index table for the repository Cayley--Dickson convention. -/
 def mulIndex : Fin 16 → Fin 16 → Fin 16 :=
   ![
@@ -102,44 +99,60 @@ theorem table_agrees_with_repository :
       zsMul (basisZS i) (basisZS j) = tableProductZS i j := by
   native_decide
 
-def basisVec (i : Fin 16) : SVec :=
-  fun j => if j = i then (1, 0) else (0, 0)
+/-- Coordinate vector on the 16 canonical sedenion basis units. -/
+abbrev SVec := Array Q3
 
-def vecMul (x y : SVec) : SVec :=
-  fun k =>
-    ∑ i : Fin 16, ∑ j : Fin 16,
-      if x i = 0 ∨ y j = 0 then 0
-      else if mulIndex i j = k then
-        if mulNeg i j then -(q3Mul (x i) (y j)) else q3Mul (x i) (y j)
-      else 0
+instance : CoeFun SVec (fun _ => Fin 16 → Q3) where
+  coe v := fun i => v[i.1]!
+
+def basisVec (i : Fin 16) : SVec := Id.run do
+  let mut a := (List.replicate 16 ((0 : ℚ), (0 : ℚ))).toArray
+  a := a.set! i.1 (1, 0)
+  return a
+
+def vecMul (x y : SVec) : SVec := Id.run do
+  let mut a := (List.replicate 16 ((0 : ℚ), (0 : ℚ))).toArray
+  for i in [:16] do
+    let xi := x[i]!
+    if xi != (0, 0) then
+      for j in [:16] do
+        let yj := y[j]!
+        if yj != (0, 0) then
+          let fi : Fin 16 := ⟨i % 16, by omega⟩
+          let fj : Fin 16 := ⟨j % 16, by omega⟩
+          let k := (mulIndex fi fj).1
+          let p := q3Mul xi yj
+          let neg := mulNeg fi fj
+          let term := if neg = true then (-p.1, -p.2) else p
+          let curr := a[k]!
+          a := a.set! k (curr.1 + term.1, curr.2 + term.2)
+  return a
 
 /-- Brown order-three automorphism, in exact Q(sqrt(3)) coordinates. -/
-def psi (x : SVec) : SVec :=
-  ![
-    x 0,
-    q3Mul q3MHalf (x 1) + q3Mul q3PSqrt3Half (x 9),
-    q3Mul q3MHalf (x 2) + q3Mul q3PSqrt3Half (x 10),
-    q3Mul q3MHalf (x 3) + q3Mul q3PSqrt3Half (x 11),
-    q3Mul q3MHalf (x 4) + q3Mul q3PSqrt3Half (x 12),
-    q3Mul q3MHalf (x 5) + q3Mul q3PSqrt3Half (x 13),
-    q3Mul q3MHalf (x 6) + q3Mul q3PSqrt3Half (x 14),
-    q3Mul q3MHalf (x 7) + q3Mul q3PSqrt3Half (x 15),
-    x 8,
-    q3Mul q3MSqrt3Half (x 1) + q3Mul q3MHalf (x 9),
-    q3Mul q3MSqrt3Half (x 2) + q3Mul q3MHalf (x 10),
-    q3Mul q3MSqrt3Half (x 3) + q3Mul q3MHalf (x 11),
-    q3Mul q3MSqrt3Half (x 4) + q3Mul q3MHalf (x 12),
-    q3Mul q3MSqrt3Half (x 5) + q3Mul q3MHalf (x 13),
-    q3Mul q3MSqrt3Half (x 6) + q3Mul q3MHalf (x 14),
-    q3Mul q3MSqrt3Half (x 7) + q3Mul q3MHalf (x 15)
-  ]
+def psi (x : SVec) : SVec := Id.run do
+  let mut a := (List.replicate 16 ((0 : ℚ), (0 : ℚ))).toArray
+  a := a.set! 0 x[0]!
+  a := a.set! 8 x[8]!
+  for i in [1:8] do
+    let x_i := x[i]!
+    let x_i8 := x[i+8]!
+    let p1 := q3Mul q3MHalf x_i
+    let p2 := q3Mul q3PSqrt3Half x_i8
+    a := a.set! i (p1.1 + p2.1, p1.2 + p2.2)
+    let q1 := q3Mul q3MSqrt3Half x_i
+    let q2 := q3Mul q3MHalf x_i8
+    a := a.set! (i+8) (q1.1 + q2.1, q1.2 + q2.2)
+  return a
 
 /-- Brown order-two automorphism epsilon(a+b e8)=a-b e8. -/
-def epsilon (x : SVec) : SVec :=
-  ![
-    x 0, x 1, x 2, x 3, x 4, x 5, x 6, x 7,
-    -x 8, -x 9, -x 10, -x 11, -x 12, -x 13, -x 14, -x 15
-  ]
+def epsilon (x : SVec) : SVec := Id.run do
+  let mut a := (List.replicate 16 ((0 : ℚ), (0 : ℚ))).toArray
+  for i in [:8] do
+    a := a.set! i x[i]!
+  for i in [8:16] do
+    let v := x[i]!
+    a := a.set! i (-v.1, -v.2)
+  return a
 
 /-- Exact multiplicativity of the order-three action on all 256 canonical
 basis products.  Since both operations are Q(sqrt(3))-linear/bilinear, this is
@@ -224,6 +237,9 @@ theorem literature_common_quaternion :
 
 def SupportedIn (block : Fin 16 → Bool) (x : SVec) : Prop :=
   ∀ k : Fin 16, block k = false → x k = 0
+
+instance (block : Fin 16 → Bool) (x : SVec) : Decidable (SupportedIn block x) :=
+  Fintype.decidableForallFintype
 
 theorem brown_s3_stabilizes_literature_blocks :
     (∀ i : Fin 16, inLitO1 i = true →
