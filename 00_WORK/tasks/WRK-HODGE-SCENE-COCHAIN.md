@@ -26,4 +26,4 @@ Continue the R1 repair of the literal $K(9,11,13)$ scene cochain complex on curr
 - `D0-HODGE-LINKS-001`
 
 ## Exit Condition
-The literal K(9,11,13) scene cochain complex and the honestly supported finite Hodge decomposition from the local payload are reimplemented on current main using existing topology owners where possible; actual incidence maps replace declared dimension constants where supported; d₁d₂=0 and claimed decomposition facts build in Lean; no physical Hamiltonian, TT dynamics, or matter-gravity identification is promoted beyond what is proved.
+The literal K(9,11,13) scene cochain complex and the honestly supported finite Hodge decomposition from the local payload are reimplemented on current main using existing topology owners where possible; actual incidence maps replace declared dimension constants where supported; the literal chain relation ∂₁∂₂ = 0 and its cochain transpose d₁d₀ = 0 and claimed decomposition facts build in Lean; no physical Hamiltonian, TT dynamics, or matter-gravity identification is promoted beyond what is proved.

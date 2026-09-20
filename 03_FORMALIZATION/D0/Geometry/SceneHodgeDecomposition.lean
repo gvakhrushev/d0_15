@@ -145,8 +145,10 @@ theorem scene_first_homology_zero :
   simpa [sceneP, sceneQ, sceneR] using
     (first_homology_finrank (p := sceneP) (q := sceneQ) (r := sceneR))
 
-/-- R1 owner for the literal cochain/Hodge seam. -/
-theorem scene_hodge_decomposition_owner :
+/-- Master owner for the literal scene cochain/Hodge identities: Euclidean
+adjointness, exact/co-exact orthogonality, middle cochain exactness, and
+vanishing first homology. -/
+theorem scene_hodge_identities_owner :
     (∀ A : SceneC0, ∀ B : SceneC1, inner1 (d0 A) B = inner0 A (delta0 B)) ∧
     (∀ B : SceneC1, ∀ F : SceneC2, inner2 (d1 B) F = inner1 B (delta1 F)) ∧
     (∀ A : SceneC0, ∀ F : SceneC2, inner1 (d0 A) (delta1 F) = 0) ∧
