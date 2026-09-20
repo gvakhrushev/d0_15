@@ -60,33 +60,16 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-ASIGMA-SPATIAL-HODGE-SELECTOR",
-      "class": "EXPENSIVE",
+      "id": "WRK-C1-COMMON-CARRIER",
+      "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
-        "D0-HODGE-001",
-        "D0-HODGE-THREE-LEVEL-SPECTRUM-001",
-        "D0-CARRIER-CENSUS-001",
-        "D0-SPIN2-001"
+        "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Determine whether the literal finite Hodge operator on the physical edge carrier is uniquely selected by current D0 cochain, symmetry, locality and carrier principles, or isolate the exact residual operator-choice space with explicit inequivalent countermodels.",
-      "brief": "00_WORK/tasks/EXP-ASIGMA-SPATIAL-HODGE-SELECTOR.md"
-    },
-    {
-      "id": "WRK-HODGE-SCENE-COCHAIN",
-      "class": "WORKER",
-      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-001",
-        "D0-CARRIER-CENSUS-001",
-        "D0-HODGE-THREE-LEVEL-SPECTRUM-001",
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The literal K(9,11,13) scene cochain complex and the honestly supported finite Hodge decomposition from the local payload are reimplemented on current main using existing topology owners where possible; actual incidence maps replace declared dimension constants where supported; the literal chain relation ∂₁∂₂ = 0 and its cochain transpose d₁d₀ = 0 and claimed decomposition facts build in Lean; no physical Hamiltonian, TT dynamics, or matter-gravity identification is promoted beyond what is proved.",
-      "brief": "00_WORK/tasks/WRK-HODGE-SCENE-COCHAIN.md"
+      "exit_condition": "Formalize the research-certified common-carrier theorem on the literal K(9,11,13) edge space: unsigned B₊, signed B₋ with transitive orientation, their exact kernel dimensions, the explicit H-equivariant Euclidean isometry U:ker(B₊)→ker(B₋), the rank-10 correction, the omega complement and projector identities, while preserving the semantic firewall that B₊ is the A1 Weyl/Ward endpoint-sum operator and is not the signed Hodge/current divergence.",
+      "brief": "00_WORK/tasks/WRK-C1-COMMON-CARRIER.md"
     },
     {
       "id": "WRK-GRAV-COMPENSATOR-NOETHER",
