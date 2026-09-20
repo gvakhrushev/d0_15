@@ -341,6 +341,7 @@ import D0.Geometry.HurwitzRigidPhaseGenerator
 import D0.Geometry.LucasVoronoiMarkovPartition
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
+import D0.Geometry.PhysicalCarrierInventory
 import D0.Geometry.Pi0DiscreteAngle
 import D0.Geometry.PseudoinverseTwistAlgebra
 import D0.Geometry.QuaternionMixedCurvature

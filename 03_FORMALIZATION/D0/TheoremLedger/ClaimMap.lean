@@ -1157,6 +1157,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "clifford_single_gauge_sector_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-GRAVITY-VARIATIONAL-CARRIER-AUDIT-001", moduleName := "D0.Gravity.VariationalCarrierAudit",
       theoremName := "raw_edge_variation_divergence_obstruction;laplacian_response_conserved;constant_scalar_shift_annihilates_traceless_variation;gravity_variational_carrier_audit_owner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CARRIER-CENSUS-001", moduleName := "D0.Geometry.PhysicalCarrierInventory",
+      theoremName := "dim_c0_eq;dim_c1_eq;dim_c2_eq;hodge_c1_rank_nullity;hodge_c1_no_harmonic;euler_poincare_census;carrier_census_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ALBERT-JORDAN-BL-ELIMINATION-001", moduleName := "D0.Algebra.AlbertJordan",
       theoremName := "albert_algebra_dim_eq;e6_fundamental_eq_albert;majorana_charge_eq_two_b;majorana_invariance_forces_b_zero;majorana_singlet_forces_sm_hypercharge;albert_jordan_bl_elimination", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SOLID-PHI-CYCLOTOMIC-TRACE-001", moduleName := "D0.Condensed.SolidPhi",
