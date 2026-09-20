@@ -91,11 +91,11 @@ representation output into the definition of done.
 **Active independent blocker count from #11/#12/#13: 0.**  The audits have terminal
 outcomes; the existence of sharper continuation targets does not reopen them.
 
-- Sedenion audit (#11): **terminal split.**  A genuine recursive Cayley–Dickson carrier
-  and concrete sedenion algebraic core are CORE.  The old three-label “three generations”
-  owner is deprecated, with an explicit algebra-insufficiency negative control.  A real
-  sedenion/Clifford/D0 representation functor is a named optional bridge target, not
-  unfinished algebraic CORE.
+- Sedenion audit (#11): **terminal split and representation bridge closed.** A genuine recursive Cayley–Dickson carrier
+  and concrete sedenion algebraic core are CORE. The old three-label “three generations”
+  owner is deprecated, with an explicit algebra-insufficiency negative control. The representation-theoretic
+  bridge to Cl(0,8), fermionic CAR Witt ladder operators, and 3 linearly independent generations under the
+  Brown S3 automorphism is formalized and certified (D0-SEDENION-D0-REPRESENTATION-FUNCTOR-001, CORE-FORMALIZED).
 - Quantum propinquity audit (#12): **terminal downgrade.**  The owned theorem is the
   generic golden pseudometric Cauchy theorem.  Genuine Rieffel/Latremoliere stage
   structure and propinquity convergence are explicitly typed bridge targets/passports,

@@ -1149,6 +1149,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "table_agrees_with_repository;psi_basis_multiplicative;epsilon_basis_multiplicative;psi_order_three_on_basis;epsilon_order_two_on_basis;brown_s3_relation_on_basis;psi_nonmonomial_witness;literature_blocks_closed;literature_block_cardinalities;literature_common_quaternion;brown_s3_stabilizes_literature_blocks;sedenion_brown_s3_scalar_extension_core", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SEDENIONS-THREE-GENERATIONS-001", moduleName := "D0.Algebra.Sedenions",
       theoremName := "bare_threeset_insufficient_for_sedenion_realization;branch_label_s3_scaffold", status := ClaimStatus.deprecated },
+    { claimId := "D0-SEDENION-D0-REPRESENTATION-FUNCTOR-001", moduleName := "D0.Algebra.SedenionClifford8",
+      theoremName := "clifford8_relations;clifford_monomial_tr_id;clifford_monomial_tr_zero;witt_car_aa;witt_car_adag_adag;witt_car_a_adag;sedenion_clifford8_car_generation_core", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ALBERT-JORDAN-BL-ELIMINATION-001", moduleName := "D0.Algebra.AlbertJordan",
       theoremName := "albert_algebra_dim_eq;e6_fundamental_eq_albert;majorana_charge_eq_two_b;majorana_invariance_forces_b_zero;majorana_singlet_forces_sm_hypercharge;albert_jordan_bl_elimination", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SOLID-PHI-CYCLOTOMIC-TRACE-001", moduleName := "D0.Condensed.SolidPhi",
