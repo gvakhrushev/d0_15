@@ -40,6 +40,17 @@ where phi_* solves
 
 B W B^T phi_* = B W h.
 
+## Semantic firewall from C1
+
+Keep the existing function name `divRow` if needed for compatibility, but document its mathematical type correctly:
+
+- `B_+` / `divRow` is the unsigned endpoint-sum operator;
+- its adjoint generates the zero-order shift `xi_i+xi_j`;
+- the associated Noether identity is a Weyl/Stueckelberg Ward identity;
+- it is NOT the oriented Hodge/current divergence and is NOT by itself a discrete Bianchi identity.
+
+The signed current-divergence carrier is a separate `B_-` object handled by the C1 common-carrier task.
+
 ## Carrier rule
 
 Prefer an actual edge type derived from a SimpleGraph / incidence Finset, not Matrix V V with unused entries.
