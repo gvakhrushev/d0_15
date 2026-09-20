@@ -63,7 +63,7 @@ with ThreadPoolExecutor(max_workers=args.workers) as ex:
     for i,f in enumerate(as_completed(futs),1):
         r=f.result();results.append(r)
         if r[1] not in {'PASS','SKIP','OPEN'}:
-            print(f'{r[1]:7} {r[0]} rc={r[2]} claims={";".join(r[3])}')
+            print(f'{r[1]:7} {r[0]} rc={r[2]} claims={";".join(r[3])}\n{r[4]}')
 
 cnt=collections.Counter(r[1] for r in results)
 print('SUMMARY',dict(cnt),'total',len(results))
