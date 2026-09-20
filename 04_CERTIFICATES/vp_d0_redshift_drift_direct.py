@@ -234,7 +234,8 @@ def main() -> int:
             "invalid_double_count_sigma_A_mps_per_year": invalid_sigma,
         },
     }
-    VERDICT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if not VERDICT.exists():
+        VERDICT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print("=== D0-RD-01 direct redshift-drift passport ===")
     print("HASHES_VERIFIED arXiv:1211.4585 + arXiv:2603.02318; SAMPLE_DATA=False")

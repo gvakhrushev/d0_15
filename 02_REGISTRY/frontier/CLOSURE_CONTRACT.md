@@ -1,3 +1,5 @@
+> **Legacy Notice:** This file is a legacy duplicate. The canonical Definition of Done and Claim Closure Contract is located at `02_REGISTRY/CLOSURE_CONTRACT.md`.
+
 # D0 Theory Closure Contract
 
 This file fixes the **definition of done** for the research programme.  Its purpose is

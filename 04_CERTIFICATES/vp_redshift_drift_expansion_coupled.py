@@ -289,7 +289,8 @@ def main() -> int:
             "information_cost": "at least one additional outcome-affecting shape degree of freedom; a free exponent is itself rejected in absolute goodness-of-fit",
         },
     }
-    VERDICT.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    if not VERDICT.exists():
+        VERDICT.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
 
     print("=== D0-RDEC-01 coupled redshift-drift / expansion passport ===")
     print("HASHES_VERIFIED direct-drift verdict + DESI DR2 mean/cov; SAMPLE_DATA=False")
