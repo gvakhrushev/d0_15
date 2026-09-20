@@ -153,6 +153,26 @@ sign <v_+,v_->_rho = sign(13 rho_9 - 9 rho_13).
 
 This theorem must remain visible because it prevents silently replacing A1's rho-weighted pairing by the Euclidean pairing used to define U.
 
+## C1-T9 — canonical rho sign bridge
+
+Import the owned scene Perron profile from D0.VNext2.ScenePerronTraceCanonicity.
+
+Prove:
+
+13 * (1/(sceneRho+9)) - 9 * (1/(sceneRho+13)) > 0
+
+using sceneRho_pos.
+
+Conclude that the rho-weighted A_11 polar sign equals the Euclidean sign for this profile.
+
+IMPORTANT: this theorem does not prove A1 uses that rho. Keep a separate typed hypothesis/bridge:
+
+A1VertexWeight = fullScenePerronVector
+
+or the exact repository-equivalent statement.
+
+If that ownership bridge is absent, leave it OPEN rather than silently substituting the Perron profile.
+
 ## Negative controls
 
 1. K(5,7,5): the middle-sector overlap is zero and F is not injective.
