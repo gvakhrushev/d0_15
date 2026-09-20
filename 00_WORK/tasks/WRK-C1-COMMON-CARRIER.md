@@ -1,4 +1,4 @@
-# WRK-C1-COMMON-CARRIER — REVIEW
+# WRK-C1-COMMON-CARRIER
 
 ## Class
 WORKER
@@ -58,3 +58,9 @@ Formalize the research-certified common-carrier theorem on the literal $K(9,11,1
 
 ## Exit Condition
 Formalize the research-certified common-carrier theorem on the literal K(9,11,13) edge space: unsigned B₊, signed B₋ with transitive orientation, their exact kernel dimensions, the explicit H-equivariant Euclidean isometry U:ker(B₊)→ker(B₋), the rank-10 correction, the omega complement and projector identities, while preserving the semantic firewall that B₊ is the A1 Weyl/Ward endpoint-sum operator and is not the signed Hodge/current divergence.
+
+## Current CI Blocker
+- PR #44 is open as a draft while the worker remains IN_PROGRESS.
+- GitHub `D0 guards` passes, but `D0 Lean build` fails on `D0.Geometry.SignlessSignedCommonCarrier` in the canonical clean environment.
+- Therefore theorem names listed above are candidate implementation evidence only until the module compiles on GitHub CI without inserted error-recovery `sorryAx`.
+- The next acceptance boundary is reproducibility: clean canonical dependencies, `lake build D0.All` green, no `sorry`, then repeat the axiom audit.
