@@ -1,4 +1,4 @@
-# WRK-C1-COMMON-CARRIER
+# WRK-C1-COMMON-CARRIER — REVIEW
 
 ## Class
 WORKER
@@ -35,11 +35,24 @@ Formalize the research-certified common-carrier theorem on the literal $K(9,11,1
   - `BPlus_equivariant : BPlus (sceneAction h X) = vertexAction h (BPlus X)`
   - `BMinus_equivariant : BMinus (sceneAction h X) = vertexAction h (BMinus X)`
   - `U_equivariant : U (sceneAction h X) = sceneAction h (U X)`
-- Exact kernel dimensions and complement invariants proved on the literal carrier:
-  - `BMinus_rank : sceneBoundary1.rank = 32`
-  - `BMinus_kernel_finrank : Module.finrank ℚ (LinearMap.ker sceneBoundary1.mulVecLin) = 327`
+- Exact kernel dimensions and isomorphism bridge:
+  - `BPlusMatrix` and `BPlusLin` unify the operator on the literal edge carrier.
+  - `BPlus_rank : Matrix.rank BPlusMatrix = 33`
+  - `BPlus_kernel_finrank : Module.finrank ℚ (LinearMap.ker BPlusLin) = 326`
+  - `BMinus_rank : Matrix.rank sceneBoundary1 = 32`
+  - `BMinus_kernel_finrank : Module.finrank ℚ (LinearMap.ker BMinusLin) = 327`
+  - `ker_BPlus_iso_ker_BMinus_perp` establishes the isomorphism between $\ker B_+$ and the sector orthogonal to $\omega$.
+- Complement and Projector owners:
   - `omega_norm : ∑ e, (omega e)^2 = 42471`
   - `omega_BMinus_zero : BMinus omega = 0`
+  - `Pmg` projector defines the matter-gravity sector mapping.
+  - `ker_BMinus_decomposition` provides the explicit decomposition $Y = P_{mg}Y + \frac{\langle Y,\omega \rangle}{42471} \omega$.
+- Rank-10 correction:
+  - `RowCorrectionSpace` identifies the 10-dimensional space of centered row corrections.
+  - `U_minus_I_in_RowCorrectionSpace` proves that $U - I$ maps into this space.
+- Involutive Isometry:
+  - `U_involutive` ($U^2 = I$)
+  - `U_isometry` (Euclidean isometry on `SceneC1`)
 - Companion exact Python certificate: `04_CERTIFICATES/vp_c1_common_carrier_reduced.py` (all checks PASS)
 - Semantic firewall preserved: $B_+$ is unsigned endpoint sum (Weyl/Ward generator adjoint), $B_-$ is signed current divergence; no TT/Spin-2 module imported.
 
