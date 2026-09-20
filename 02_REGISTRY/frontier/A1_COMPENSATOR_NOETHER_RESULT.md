@@ -8,7 +8,9 @@ Status in this repository: RESEARCH-CERTIFIED / FORMALISM until the arbitrary-gr
 
 ## Reviewer verdict
 
-A positive mechanism exists.
+A positive variational/Weyl-compensator mechanism exists.
+
+**C1 semantic correction (2026-09-20):** the unsigned endpoint-sum operator B used below is retained as the algebraic `DivRow` name in existing files, but it is NOT the signed Hodge/current divergence. Since J=B^T acts by (J xi)_ij=xi_i+xi_j, its continuum-order interpretation is a zero-order Weyl/conformal scaling generator, and B is trace-like. Therefore the off-shell identity below is a Weyl/Stueckelberg Ward identity, not by itself a discrete Bianchi identity. Signed current conservation is carried by a distinct oriented incidence B_-; see C1_COMMON_CARRIER_RESULT.md for the canonical finite bridge between the two kernel carriers.
 
 For a finite undirected graph with edge variables h_e and positive vertex weights rho_i, write
 
@@ -86,8 +88,7 @@ and the research derivation/certificate supports the envelope identity
 
 d S_phys / d h_e = G_phys(e).
 
-Thus the row-divergence-free response is produced by a variational gauge completion,
-not imposed as an admissibility predicate.
+Thus the response lies in the kernel of the unsigned endpoint-sum operator by a variational gauge completion, not by an imposed admissibility predicate. This is a Ward/trace statement; it must not be renamed a Hodge/Bianchi conservation theorem.
 
 ## Normalization/sign guard relative to the existing repo Laplacian response
 
@@ -136,10 +137,10 @@ when rho is inhomogeneous; the two coincide when rho is constant.
 
 ## Structural consequences accepted by the reviewer
 
-### 1. Nonnegative + row-divergence-free implies zero
+### 1. Nonnegative + unsigned endpoint-sum-free implies zero
 
 If T_e >= 0 on every edge and B T = 0, then every incident nonnegative summand at every
-vertex vanishes. Therefore every nonzero row-divergence-free edge response is sign-indefinite.
+vertex vanishes. Therefore every nonzero edge response in ker(B_+) is sign-indefinite.
 
 Consequently any D0 requirement that a nonzero gravitational response itself be entrywise
 nonnegative is incompatible with this conservation law. Positivity, if needed, must belong to
@@ -258,7 +259,7 @@ A1 is considered mathematically closed only after:
 1. A1-T1 through A1-T5 are Lean theorems on an actual typed edge carrier;
 2. the extended diagonal/Stueckelberg carrier is accepted as the physical/gauge completion rather
    than an arbitrary new field;
-3. the resulting G_phys is connected to the common gravity/matter carrier in D0-HODGE-LINKS-001;
+3. the resulting G_phys is connected through the explicit C1 map U:ker(B_+)->ker(B_-) to the signed matter-current carrier, with the rho-vs-Euclidean metric compatibility proved rather than assumed;
 4. weak-field/TT reductions are derived from the same completed action.
 
 Until then this result is the preferred positive successor mechanism and a precise implementation target.
