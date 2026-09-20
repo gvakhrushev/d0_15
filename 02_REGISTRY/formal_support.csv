@@ -56,3 +56,5 @@ D0.Representation.OrientationZoneDescentNoGo,D0/Representation/OrientationZoneDe
 D0.Algebra.CayleyDickson,D0/Algebra/CayleyDickson.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Algebra/Sedenions.lean
 D0.Algebra.SedenionTower,D0/Algebra/SedenionTower.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Algebra/CayleyDickson.lean
 D0.Cosmology.SymTFTSmoothingNoGo,D0/Cosmology/SymTFTSmoothingNoGo.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Cosmology/CMBNsSmoothingUndeterminedNoGo.lean
+D0.Geometry.SceneCochainComplex,D0/Geometry/SceneCochainComplex.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-HODGE-SCENE-COCHAIN.md
+D0.Geometry.SceneHodgeDecomposition,D0/Geometry/SceneHodgeDecomposition.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-HODGE-SCENE-COCHAIN.md

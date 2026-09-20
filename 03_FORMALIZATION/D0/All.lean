@@ -348,6 +348,8 @@ import D0.Geometry.Pi0DiscreteAngle
 import D0.Geometry.PseudoinverseTwistAlgebra
 import D0.Geometry.QuaternionMixedCurvature
 import D0.Geometry.SceneActiveEigenvalues
+import D0.Geometry.SceneCochainComplex
+import D0.Geometry.SceneHodgeDecomposition
 import D0.Geometry.SpatialCrossRoleFluxCanonicity
 import D0.Geometry.SpectralActionAdmissibility
 import D0.Geometry.SpectralActionLadder
