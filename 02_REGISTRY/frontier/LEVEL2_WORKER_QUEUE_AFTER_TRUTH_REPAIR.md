@@ -169,22 +169,26 @@ Done:
 - D0-ARCHIVE-LATREMOLIERE-TORUS-INSTANTIATION-001 and
   D0-ARCHIVE-CONCRETE-SPECTRAL-PROPINQUITY-001 can close.
 
-## W-A0b — Upgrade the variational audit while A1 research runs
+## W-A1 — Formalize the compensator/Noether completion
 
-Branch: research/l2-a0b-variational-types
+Branch: research/l2-a1-compensator-noether-lean
 
-Do not solve the conceptual A1 problem. Prepare the types needed for the expensive memo to land.
+The expensive research pass is complete. Do not redo the conceptual search.
 
-Task:
-1. Define edge-variable space, symmetric-matrix embedding, measure carrier and pairings.
-2. Define S_A2(h,rho) in Lean for arbitrary finite graph.
-3. Prove the exact fixed-rho gradient formula.
-4. Prove raw divergence formula.
-5. Define M,D_M,L_M and prove the exact completion identity.
-6. Do NOT call 2L the physical variational response.
+Use:
+- A1_COMPENSATOR_NOETHER_RESULT.md
+- A1_COMPENSATOR_NOETHER_LEAN_TASK.md
+- vp_a2_compensator_noether.py
 
-Done:
-- A1 memo can be integrated without redoing basic algebra.
+Core theorem sequence:
+1. row-divergence = adjoint of the unsigned vertex-shift generator;
+2. finite shift invariance of the extended action and off-shell edge+diagonal Noether identity;
+3. nonnegative + row-divergence-free edge response implies zero;
+4. compensator elimination via K=B W B^T without assuming invertibility, with unique projected w;
+5. reduced-action minimality, rho-weighted universal property, and envelope derivative G_phys;
+6. K(9,11,13) specialization: rank(B)=33, dim ker(B)=326, zone-constant fields pure gauge.
+
+Do not call the full Einstein gate closed. This package closes only the finite variational/Bianchi mechanism.
 
 ## W-I1 — Lightweight automatic status-inflation guard
 
@@ -200,6 +204,6 @@ This lint is heuristic and must never replace reviewer judgment.
 
 ## Merge order
 
-Independent now: W-B1, W-B2, W-C1, W-D1, W-D2, W-A0b, W-I1.
+Independent now: W-A1, W-B1, W-B2, W-C1, W-D1, W-D2, W-I1.
 Then: W-D3 -> W-D4.
-A1 conceptual closure waits for the separate expensive-agent memo, but W-A0b prepares its Lean landing zone.
+A1 conceptual search is complete; W-A1 is now a direct formalization/integration task.
