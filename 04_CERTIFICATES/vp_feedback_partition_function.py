@@ -43,9 +43,11 @@ def main() -> int:
         "return_cycle_series_error": abs(cycle_sum - det_log),
         "negative_controls": ["FAIL_PHOTON_ACCELERATION_MODEL"],
     }
-    (PASSPORT / "feedback_partition_function_summary.json").write_text(
-        json.dumps(result, indent=2) + "\n", encoding="utf-8"
-    )
+    summary_path = PASSPORT / "feedback_partition_function_summary.json"
+    if not summary_path.exists():
+        summary_path.write_text(
+            json.dumps(result, indent=2) + "\n", encoding="utf-8"
+        )
     output_path(__file__, Path(__file__).with_suffix(".results.json").name).write_text(json.dumps(result, indent=2) + "\n")
     print("PASS_FEEDBACK_DETERMINANT_RETURN_CYCLES")
     print("PASS_FINITE_FEEDBACK_PARTITION_FUNCTION")
