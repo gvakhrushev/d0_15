@@ -86,6 +86,32 @@ d S_phys / d h_e = G_phys(e).
 Thus the row-divergence-free response is produced by a variational gauge completion,
 not imposed as an admissibility predicate.
 
+## Normalization/sign guard relative to the existing repo Laplacian response
+
+On the gauge slice eta=0, with M=W h,
+
+T_edge = +4 M,
+T_diag = -4 d(M).
+
+Therefore, as a full symmetric matrix,
+
+T_ext = -4 L_M
+
+for the convention L_M = D_M - M used by the repository.
+
+Since D0.VNext2.SpectralEinsteinResponse defines
+
+einsteinResponse(L) = 2 L,
+
+the exact relation is
+
+T_ext = -2 * einsteinResponse(L_M).
+
+After compensator elimination, d(M_w)=0, so L_{M_w}=-M_w and the surviving
+pure-edge response is G_phys=4M_w=-4L_{M_w}.
+
+Any Lean integration must preserve this sign/factor. Do not identify G_phys with +2L_M.
+
 ## Projection interpretation
 
 The minimizer w is the W-orthogonal projection of h onto
