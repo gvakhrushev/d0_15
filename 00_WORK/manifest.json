@@ -56,23 +56,23 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The post-C1 gravity dynamics seam is terminally classified after A-Z review: either a theorem-ready internally forced kinetic/Hodge construction exists or the exact remaining primitive is isolated as a NO-GO or bridge boundary.",
+      "exit_condition": "The post-C1 gravity dynamics seam is terminally classified when the two-tick kinetic owner, the relative-normalization lane, and the spatial Hodge-operator selector are each assigned an honest CORE, NO-GO, BRIDGE/PASSPORT, or EMPIRICAL boundary, with no unclassified physical TT/propagation choice remaining.",
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-AOMEGA-NORMALIZATION-GAUGE",
+      "id": "EXP-ASIGMA-SPATIAL-HODGE-SELECTOR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
-        "D0-ENDOGENOUS-ACTION-QUANTUM-001",
-        "D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001",
-        "D0-STATIC-TO-DYNAMICS-OWNER-001",
-        "D0-DYNAMICS-NOT-PRIMITIVE-CERT-CLOSED-001"
+        "D0-HODGE-001",
+        "D0-HODGE-THREE-LEVEL-SPECTRUM-001",
+        "D0-CARRIER-CENSUS-001",
+        "D0-SPIN2-001"
       ],
-      "exit_condition": "Determine the exact dimension of the remaining gravity-wave normalization choice space after quotienting unit and branch-gauge freedom, and decide whether the residual is already owned by the existing action/HBAR normalization seams or requires a genuinely independent boundary primitive.",
-      "brief": "00_WORK/tasks/EXP-AOMEGA-NORMALIZATION-GAUGE.md"
+      "exit_condition": "Determine whether the literal finite Hodge operator on the physical edge carrier is uniquely selected by current D0 cochain, symmetry, locality and carrier principles, or isolate the exact residual operator-choice space with explicit inequivalent countermodels.",
+      "brief": "00_WORK/tasks/EXP-ASIGMA-SPATIAL-HODGE-SELECTOR.md"
     },
     {
       "id": "WRK-HODGE-SCENE-COCHAIN",
