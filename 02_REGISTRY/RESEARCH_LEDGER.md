@@ -22,6 +22,8 @@ Baseline mathematical snapshot for the gravity lane: `e6d9d4b7f17a4cf2f478cb737c
 
 | A-NORM — finite gravity relative normalization | ACCEPT AS RESEARCH / TWO-FINITE-MODULI-LEFT | After quotienting overall action scale, canonical field rescaling, exact Q↔alpha reciprocal scaling, symplectic conjugacy and branch/time-orientation equivalences, the finite Hodge+A1+two-tick lane has exactly two observable dimensionless moduli: m^2=4*kappa_A/kappa_H and gamma=alpha*kappa_H. Sector traces recover both invariants. Strict ellipticity and positive conserved energy leave an open two-dimensional region; they do not select a point. Q=Q_H+4I is therefore conditional on a missing relative-action theorem. Durable packet: `02_REGISTRY/research/ANORM_FINITE_GRAVITY_NORMALIZATION.md`. | SceneSpectralAction rho1=1, S_min=1, the finite-hbar mechanism, C1 isometry, source reciprocity and Hamiltonian interpolation do not fix either modulus. Internal closure requires a new typed common finite action/generating law; later continuum/SI/empirical matching is calibration/passport input, not retroactive CORE. |
 
+| A-WEIGHT — A1 conformal-weight selector | IN PROGRESS | Classifies H-invariant positive A1 vertex weights and tests whether compensator gauge symmetry, C1 weighted-isometry, the Euclidean Hodge pairing, SceneSpectralAction rho1=1, S_min=1, reciprocity or family naturality force rho to be uniform. | Do not revive the old Perron-profile blocker without a typed bridge. Active task: `EXP-AWEIGHT-A1-CONFORMAL-WEIGHT-SELECTOR`. |
+
 ## Current gravity closure map
 
 The finite lane should presently be read as:
