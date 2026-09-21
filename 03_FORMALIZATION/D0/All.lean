@@ -368,6 +368,7 @@ import D0.Gravity.BoundaryRelaxationSpectrum
 import D0.Gravity.CompactnessLimit
 import D0.Gravity.CriticalCollapseDSS
 import D0.Gravity.EntropicArchiveInterface
+import D0.Gravity.FiniteGravityResponseSingleWitness
 import D0.Gravity.HorizonHumTransfer
 import D0.Gravity.HorizonJetAndBaryonPole
 import D0.Gravity.HorizonlessEchoDelay

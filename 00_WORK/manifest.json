@@ -89,7 +89,7 @@
       "id": "WRK-FINITE-GRAVITY-RESPONSE-SINGLE-WITNESS",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-SPECTRAL-EINSTEIN-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
