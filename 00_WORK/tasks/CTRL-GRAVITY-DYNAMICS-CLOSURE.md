@@ -8,7 +8,7 @@ Supervise and terminally classify the post-C1 gravity dynamics seam across the k
 
 ## Scope
 1. Coordinate formalization and review of the two-tick symplectic kinetic structure.
-2. Supervise formal integration of accepted source-stratification research through `WRK-SOURCE-STRATIFICATION-NOGO`; classify the matter-to-tensor arrow using accepted A-STRESS (`SOURCE-CARRIER-MISSING`) and active `EXP-ASOURCE-ACTION-NATURALITY-SELECTOR` on whether the exact 3-dimensional quadratic selector class can be reduced by owned action/cochain naturality.
+2. Treat `D0.Geometry.SceneSourceStratification` as the accepted literal owner of the source/tensor orthogonality and uniform triangle-source identities; supervise the fresh C1-v2 implementation through `WRK-C1-COMMON-CARRIER`. In parallel, classify the matter-to-tensor arrow using accepted A-STRESS (`SOURCE-CARRIER-MISSING`) and active `EXP-ASOURCE-ACTION-NATURALITY-SELECTOR`.
 3. Maintain `02_REGISTRY/RESEARCH_LEDGER.md` and `02_REGISTRY/research/` so accepted research changes the active closure map before formal integration.
 4. Provide terminal classification: assign an honest CORE, NO-GO, BRIDGE/PASSPORT, or EMPIRICAL boundary to each lane, with no unclassified physical TT/propagation choice remaining.
 
