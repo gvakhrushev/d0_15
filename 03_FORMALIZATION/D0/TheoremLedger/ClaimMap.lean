@@ -379,6 +379,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "finite_d_d_zero;finite_cochain_exact_topological_density_annihilates_theta_core", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-NONABELIAN-SEAM-001", moduleName := "D0.Claims.NonabelianSeamGap",
       theoremName := "nonabelian_seam_gap", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-C1-COMMON-CARRIER-RESEARCH-001", moduleName := "D0.Geometry.SignlessSignedCommonCarrier",
+      theoremName := "BMinus_eq_sceneBoundary1_mulVec;BPlus_rank;BPlus_kernel_finrank;BMinus_kernel_finrank;U_involutive;U_isometry;ker_BPlus_iso_ker_BMinus_perp;omega_scene_norm;Pmg_idempotent;Pmg_omega;signed_kernel_decomposition;RowCorrectionSpace_finrank;U_minus_I_in_RowCorrectionSpace", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-HIGGS-YUKAWA-001", moduleName := "D0.Claims.HiggsYukawaBlock",
       theoremName := "higgs_yukawa_block", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CKM-EXACT-001", moduleName := "D0.Claims.CkmExactMatrix",
