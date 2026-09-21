@@ -60,18 +60,6 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-ASOURCE-ACTION-NATURALITY-SELECTOR",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-SPECTRAL-EINSTEIN-001"
-      ],
-      "exit_condition": "Conditioned on an abstract scene matter amplitude, determine whether any owned cochain/action/naturality principle reduces the exact three-dimensional H-equivariant quadratic source class Sym^2 C0 -> Z to a unique line up to scale, or terminally prove the two essential block-ratio selector freedoms survive.",
-      "brief": "00_WORK/tasks/EXP-ASOURCE-ACTION-NATURALITY-SELECTOR.md"
-    },
-    {
       "id": "WRK-C1-COMMON-CARRIER",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
