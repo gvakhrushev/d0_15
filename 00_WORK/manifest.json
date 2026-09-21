@@ -86,24 +86,10 @@
       "brief": "00_WORK/tasks/EXP-LOVELOVK-NATURAL-OPERATOR-PASSPORT.md"
     },
     {
-      "id": "WRK-ACAP-RIESZ-MISMATCH-LEAN",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
-        "D0-C1-COMMON-CARRIER-RESEARCH-001",
-        "D0-ZONE-IS-GENERATION-001"
-      ],
-      "exit_condition": "Current-main Lean owns the exact bare-metric mismatch map on the literal K(9,11,13) common carrier, its tensor-sector annihilation and three standard-sector coefficient formulas, zero mismatch iff uniform block metric, and—if technically reachable without weakening the theorem—the exact 0/18/20/22/30 rank stratification; no memory/capacity/physical-leakage interpretation is promoted.",
-      "brief": "00_WORK/tasks/WRK-ACAP-RIESZ-MISMATCH-LEAN.md"
-    },
-    {
       "id": "WRK-FINITE-GRAVITY-RESPONSE-SINGLE-WITNESS",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-SPECTRAL-EINSTEIN-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
