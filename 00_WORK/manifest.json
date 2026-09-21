@@ -107,6 +107,18 @@
       ],
       "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
+    },
+    {
+      "id": "EXP-ARAD-SOURCE-RADIATIVE-SPLIT",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-SPECTRAL-EINSTEIN-001"
+      ],
+      "exit_condition": "Determine whether the source-stratified K(9,11,13) split generalizes to ordered K(a,b,c), classify the unique projected vertex-source/C1-defect sector and the zero-marginal tensor carrier, and terminally decide whether linear H-equivariant vertex matter can excite the tensor/radiative candidate sector or requires a new source type, symmetry breaking, or nonlinearity.",
+      "brief": "00_WORK/tasks/EXP-ARAD-SOURCE-RADIATIVE-SPLIT.md"
     }
   ]
 }
