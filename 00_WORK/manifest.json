@@ -72,27 +72,15 @@
       "brief": "00_WORK/tasks/EXP-ASOURCE-ACTION-NATURALITY-SELECTOR.md"
     },
     {
-      "id": "WRK-SOURCE-STRATIFICATION-NOGO",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-SPECTRAL-EINSTEIN-001"
-      ],
-      "exit_condition": "The stable literal cochain complex owns a typed blockwise-zero-marginal tensor subspace, signed-kernel inclusion, carrier-free vertex-source orthogonality, and the uniform-triangle-source omega identity, with clean D0.All build and no physical TT overclaim.",
-      "brief": "00_WORK/tasks/WRK-SOURCE-STRATIFICATION-NOGO.md"
-    },
-    {
       "id": "WRK-C1-COMMON-CARRIER",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "After WRK-SOURCE-STRATIFICATION-NOGO is accepted, reimplement C1 from a fresh branch off then-current main (do not reopen or base on PR #44): own literal B₊/B₋, kernel dimensions 326/327, the explicit involutive Euclidean isometry U, the 10-dimensional centered-row correction, and the omega orthogonal complement/decomposition with a clean D0.All build and no signed/unsigned semantic collapse.",
+      "exit_condition": "Reimplement C1 from a fresh branch off current main using the accepted SceneSourceStratification owner: own literal B₊/B₋, exact kernel dimensions 326/327, the explicit involutive Euclidean isometry U, the 10-dimensional centered-row correction, and the omega orthogonal complement/decomposition with a clean D0.All build and no signed/unsigned semantic collapse.",
       "brief": "00_WORK/tasks/WRK-C1-COMMON-CARRIER.md"
     },
     {
