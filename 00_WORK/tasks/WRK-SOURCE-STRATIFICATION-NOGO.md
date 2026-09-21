@@ -3,141 +3,178 @@
 ## Class
 WORKER
 
+## Priority
+**1 — the only WORKER task currently authorized for execution.**
+
+Do not start any PLANNED worker task after this one. Finish this task, open the PR, move it to REVIEW, and stop for CONTROL.
+
 ## Parent
 CTRL-GRAVITY-DYNAMICS-CLOSURE
 
+## Repository / launch protocol
+Repository: https://github.com/gvakhrushev/d0_15
+
+At launch:
+```bash
+git fetch origin
+git checkout main
+git pull --ff-only origin main
+git status --porcelain
+```
+The tree must be clean.
+
+Create a fresh branch from the fetched `origin/main`:
+```text
+work/source-stratification-nogo
+```
+
+Report the exact base SHA before editing.
+
+Do not reuse any local dirty worktree, stale branch, or generated olean state as evidence.
+
 ## Objective
-Formalize the smallest theorem-ready part of accepted A-RAD research without depending on the unstable C1 branch.
+Formalize the smallest theorem-ready part of accepted A-RAD/A-STRESS research without depending on the failed C1 attempt.
 
-The worker must own the literal-scene source/tensor separation directly from the already-stable cochain complex:
+Own directly from the stable literal scene complex:
 
-1. a zero-block-marginal tensor subspace on SceneC1;
-2. its inclusion in the signed Hodge kernel;
-3. orthogonality of every signed vertex gradient/source to that tensor subspace;
-4. the uniform triangle-source identity producing the H-fixed omega pattern.
+1. a blockwise-zero-marginal tensor subspace on `SceneC1`;
+2. its inclusion in the signed kernel;
+3. carrier-free orthogonality of every signed vertex gradient/source to that subspace;
+4. the literal uniform triangle-source identity for the block-constant omega pattern.
 
-This is deliberately narrower than the full A-RAD memo. Do not formalize TT, the six-sector commutant, nonlinear source maps, or the general K(a,b,c) classification in this worker.
+This task is intentionally small. The goal is a fast green theorem owner, not the full 296-dimensional representation theory.
 
-## Repository
-https://github.com/gvakhrushev/d0_15
+## Required context
+Read before editing:
 
-## Required research packet
-Read first:
 - `02_REGISTRY/research/ARAD_SOURCE_STRATIFIED_RADIATIVE_CARRIER.md`
+- `02_REGISTRY/research/ASTRESS_QUADRATIC_MATTER_TENSOR_SOURCE.md`
 - `02_REGISTRY/RESEARCH_LEDGER.md`
+- `02_REGISTRY/claims.csv` row `D0-HODGE-LINKS-001`
 
-## Stable owners to reuse
+Stable Lean owners:
+
 - `D0.Topology.GenericTripartiteHomology`
 - `D0.Geometry.SceneCochainComplex`
 - `D0.Geometry.SceneHodgeDecomposition`
 
-Do NOT import the draft `SignlessSignedCommonCarrier` module from PR #44.
+PR #44 is a **closed failed attempt** and is not an implementation dependency. Do not import `D0.Geometry.SignlessSignedCommonCarrier`.
 
 ## Target module
 Preferred:
-`03_FORMALIZATION/D0/Geometry/SceneSourceStratification.lean`
+```text
+03_FORMALIZATION/D0/Geometry/SceneSourceStratification.lean
+```
 
-Use stable imports only.
+Add it to `D0.All` only after the module builds by itself.
 
-## Required objects and theorems
+## Required theorem package
 
-### A. Literal block-marginal tensor subspace
-Define the literal SceneC1 submodule whose row and column sums vanish separately in each of the three edge blocks.
+### A. SceneTensorBlock
+Define a `Submodule ℚ SceneC1` whose elements have zero row and column sums separately in all three literal edge blocks.
 
-A good API may use six families of linear marginal maps. The exact internal representation is up to the worker, but the public statement must make the blockwise-zero-marginal meaning explicit.
+The public API must expose the actual marginal equations; do not hide the meaning behind an opaque predicate only.
 
-Name suggestion:
-`SceneTensorBlock`.
-
-### B. Tensor block lies in the signed kernel
+### B. Signed-kernel inclusion
 Prove:
 [
-SceneTensorBlock \le \ker(sceneBoundary1.mulVecLin).
+SceneTensorBlock le ker(sceneBoundary1.mulVecLin).
 ]
 
-This follows because signed vertex divergence is a signed row/column marginal.
-
-If the unsigned operator is available without importing the draft C1 module, you may also prove the unsigned-kernel inclusion. It is optional in this worker.
+Use the literal signed incidence already owned by `SceneCochainComplex`.
 
 ### C. Carrier-free vertex-source orthogonality
-For every vertex cochain `f : SceneC0` and every `z : SceneTensorBlock`, prove the Euclidean pairing
-[
-\langle sceneBoundary1^T f, z\rangle = 0.
-]
+For every `f : SceneC0` and `z : SceneTensorBlock`, prove the Euclidean pairing of the signed vertex gradient with `z` is zero.
 
-Prefer deriving this from the already-owned adjointness identity when possible:
-[
-\langle d_0 f,z\rangle_1=\langle f,\delta_1 z\rangle_0
-]
-and the result from B.
+Prefer the already-owned adjointness theorem rather than re-expanding the matrix if that keeps the proof small.
 
-This theorem is the load-bearing formal core of the linear vertex-radiation no-go.
+Suggested semantic theorem name:
+```text
+vertex_source_orthogonal_to_tensorBlock
+```
 
-Do NOT call it a graviton/TT theorem. Suggested semantic name:
-`vertex_source_orthogonal_to_tensorBlock`.
+This is a source/tensor orthogonality theorem, **not** a TT theorem.
 
 ### D. Literal uniform triangle source
-Define the literal block-constant edge vector
+Define
 [
-\omega_{scene}=(13,-11,9)
+omega_{scene}=(13,-11,9)
 ]
-on the three edge blocks.
+blockwise on the three edge zones.
 
 Prove:
 [
-sceneBoundary1.mulVec\,\omega_{scene}=0.
+sceneBoundary1.mulVec,omega_{scene}=0.
 ]
 
-Then prove the literal source identity
+Then prove the repository-convention identity:
 [
-sceneBoundary2.mulVec(\mathbf1_{SceneTriangle})=\omega_{scene}
+sceneBoundary2.mulVec(mathbf 1_{SceneTriangle})=omega_{scene}.
 ]
-with the repository boundary2 convention.
 
-Normalization firewall: with `omega_scene := (13,-11,9)` there is NO extra factor 13. The equivalent research-normalized vector `omega := (1,-11/13,9/13)` satisfies `sceneBoundary2.mulVec 1 = 13 • omega`.
-
-This supplies a stable meaning of the omega pattern independent of C1 formalization:
-it is the image of the uniform triangle 2-cochain.
-
-### E. Dimension 296 — only if clean
-If Mathlib/submodule rank APIs make it straightforward, prove:
+**Normalization firewall:** with `omega_scene=(13,-11,9)` there is NO extra factor 13. If a normalized vector
 [
-\operatorname{finrank} SceneTensorBlock=296.
+omega=(1,-11/13,9/13)
+]
+is introduced, then and only then `sceneBoundary2.mulVec 1 = 13 • omega`.
+
+### E. Optional dimension theorem
+Only if clean and short:
+[
+operatorname{finrank} SceneTensorBlock=296.
 ]
 
-Do not block acceptance on a long generic rank development. If dimension proof becomes disproportionate, expose the tensorBlock API and orthogonality theorem first and report the exact remaining rank lemma.
+Do not hold the PR hostage to this dimension proof. The load-bearing exit condition is A–D.
+
+## Explicitly out of scope
+Do not formalize in this task:
+
+- general `K(a,b,c)`;
+- the character-theoretic `dim Hom_H(Sym² C0,Z)=3`;
+- quadratic matter sources;
+- source-carrier selection;
+- TT/readout;
+- C1 common carrier;
+- Hodge kinetic selector;
+- Einstein interpretation.
 
 ## Semantic firewall
-The worker may conclude only:
+Allowed conclusion:
 
-- linear signed vertex sources are orthogonal to the blockwise-zero-marginal tensor sector;
-- the omega pattern is a uniform triangle source;
-- this supports the research classification of the tensor block as a vertex-source-decoupled candidate sector.
+> the literal blockwise-zero-marginal scene sector is signed-divergence-free, is orthogonal to all linear signed vertex sources, and the block-constant omega pattern is a uniform triangle source.
 
-Forbidden claims:
-- `SceneTensorBlock = TT`;
-- tensor block = graviton;
-- Einstein equation;
-- physical radiation has been derived;
-- nonlinear matter coupling is owned;
-- C1 is closed.
+Forbidden:
+`SceneTensorBlock = TT`, graviton, physical radiation, Einstein equation, nonlinear matter coupling owned, or C1 closed.
 
-## Acceptance gates
-Run:
+## Gates
+Run from the clean branch:
+
 ```bash
+lake clean
 lake build D0.Geometry.SceneSourceStratification
 lake build D0.All
+
 python tools/validate_repo.py
 python tools/generate_lean_views.py --check
 python tools/validate_work.py --self-test
 python tools/validate_work.py
 python tools/render_work_status.py --check
 git diff --check
+git status --porcelain
 ```
 
 No `sorry`.
 
-Return exact theorem signatures and `#print axioms` for the load-bearing theorems.
+Run `#print axioms` for the load-bearing theorems only after the clean build succeeds.
+
+## Delivery
+Push the branch and open a PR against current `main`.
+
+Only after GitHub `D0 Lean build` and `D0 guards` are green:
+
+- set this task to `REVIEW`;
+- report PR URL, head SHA, exact theorem signatures, axiom audit and CI results;
+- **stop**. Do not begin C1 or any other PLANNED task until CONTROL accepts this PR.
 
 ## Exit condition
-The stable literal cochain complex owns a typed blockwise-zero-marginal tensor subspace, signed-kernel inclusion, carrier-free vertex-source orthogonality, and the uniform-triangle-source omega identity, with clean `D0.All` build and no physical TT overclaim.
+The stable literal cochain complex owns a typed blockwise-zero-marginal tensor subspace, signed-kernel inclusion, carrier-free vertex-source orthogonality, and the correctly normalized uniform-triangle-source omega identity, with clean `D0.All` and GitHub CI.
