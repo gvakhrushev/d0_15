@@ -4,7 +4,7 @@
 WORKER
 
 ## Priority
-**3 — PLANNED. Do not execute until CONTROL promotes it after the source-stratification and C1 integration sequence.**
+**1 — IN_PROGRESS. This is now the only ordinary WORKER task authorized for execution.**
 
 ## Parent
 CTRL-MIGRATE-ACTIVE-WORK
@@ -66,3 +66,6 @@ Use a fresh current-main branch. Require clean `lake build D0.All`, all reposito
 
 ## Exit condition
 Current main owns the finite compensator gauge invariance, Euler response, Ward identity and supported projected-response theorem for the unsigned A1 operator, with no Bianchi/Einstein/Hodge overclaim.
+
+## Delivery discipline
+After opening a green PR and moving this task to REVIEW, stop and return to CONTROL. Do not start CAR parity or certificate-freshness tasks.
