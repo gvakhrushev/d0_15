@@ -14,6 +14,7 @@ D0.Geometry.FiniteSpin2WaveOperator,D0/Geometry/FiniteSpin2WaveOperator.lean,EXP
 D0.Geometry.SceneSourceStratification,D0/Geometry/SceneSourceStratification.lean,EXPLICIT_SUPPORT,D0-HODGE-LINKS-001
 D0.Geometry.SignlessSignedCommonCarrier,D0/Geometry/SignlessSignedCommonCarrier.lean,EXPLICIT_SUPPORT,D0-C1-COMMON-CARRIER-RESEARCH-001;D0-HODGE-LINKS-001
 D0.Gravity.A2CompensatorNoether,D0/Gravity/A2CompensatorNoether.lean,EXPLICIT_SUPPORT,D0-A2-COMPENSATOR-NOETHER-RESEARCH-001
+D0.Gravity.A1RieszMismatch,D0/Gravity/A1RieszMismatch.lean,EXPLICIT_SUPPORT,D0-HODGE-LINKS-001
 D0.Gravity.CriticalCollapseDSS,D0/Gravity/CriticalCollapseDSS.lean,EXPLICIT_SUPPORT,01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md
 D0.Matter.BaryonS3Symmetrizer,D0/Matter/BaryonS3Symmetrizer.lean,EXPLICIT_SUPPORT,01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md;01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md
 D0.Matter.Book04CoefficientOrigin,D0/Matter/Book04CoefficientOrigin.lean,EXPLICIT_SUPPORT,01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md

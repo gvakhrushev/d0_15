@@ -361,6 +361,7 @@ import D0.Geometry.ToralLucasPeriodicSeed
 import D0.Geometry.ToralSeedMarkovMaximalityNoGo
 import D0.Geometry.TorusCore13GeometryOrigin
 import D0.Geometry.TorusShellAttachment
+import D0.Gravity.A1RieszMismatch
 import D0.Gravity.A2CompensatorNoether
 import D0.Gravity.BlackHoleCapacityA4
 import D0.Gravity.BoundaryRelaxationSpectrum
