@@ -18,6 +18,8 @@ Baseline mathematical snapshot for the gravity lane: `e6d9d4b7f17a4cf2f478cb737c
 
 | A-STRESS — quadratic matter→tensor source | ACCEPT AS RESEARCH | The A-RAD quadratic route spans the full tensor block once a scene vertex amplitude is supplied. Exact character theory gives dim Hom_H(Sym^2 C0,Z)=3, so all H-equivariant quadratic completions are the three block-weight directions; two essential selector ratios remain after overall scale. Current D0 matter ownership supplies no typed matter→SceneC0 amplitude, and ArchiveStressCoupling is anomalySum·archiveLaplacian, hence zero for anomaly-free matter and on the wrong carrier. Primary boundary: SOURCE-CARRIER-MISSING; secondary: SELECTOR-NOGO. Durable packet: `02_REGISTRY/research/ASTRESS_QUADRATIC_MATTER_TENSOR_SOURCE.md`. | No physical stress-energy/TT claim. A scene matter amplitude and a selector/action principle remain new primitives. The existing matter-stress CORE row remains valid for its literal zero-for-anomaly-free minimal coupling. |
 
+| A-SOURCE — action/naturality selector | IN PROGRESS | Conditions on an abstract scene matter amplitude and tests whether triangle factorisation, Hodge exactness, SceneSpectralAction unit weight, universal edge-local actions, Dirichlet variation, cochain products, zone-relabel naturality, A1 pairing or Q_H compatibility reduce the exact 3-dimensional quadratic source class to one line. | Do not reopen A-STRESS's SOURCE-CARRIER-MISSING result. Active task: `EXP-ASOURCE-ACTION-NATURALITY-SELECTOR`. |
+
 ## Current gravity closure map
 
 The finite lane should presently be read as:
