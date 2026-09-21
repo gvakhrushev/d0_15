@@ -1,5 +1,12 @@
 # WRK-GEO-CAR-DIRAC-PARITY
 
+## Queue state
+**PLANNED / PAUSED.** Do not execute during the current gravity closure sequence. CONTROL will explicitly promote this task later.
+
+Repository: https://github.com/gvakhrushev/d0_15
+
+When promoted, start from a fresh then-current `origin/main`; do not assume any local backup branch is present in a stateless worker environment.
+
 ## Class
 WORKER
 
