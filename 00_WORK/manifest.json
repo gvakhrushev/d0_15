@@ -75,6 +75,20 @@
       "brief": "00_WORK/tasks/EXP-APARENT-FINITE-GRAVITY-COMMON-ACTION-SELECTOR.md"
     },
     {
+      "id": "EXP-EINSTEIN-ALLY-CHARACTERIZATION-BRIDGE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-SPECTRAL-EINSTEIN-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
+        "D0-SPIN2-001"
+      ],
+      "exit_condition": "Identify the lowest-bridge-debt standard GR characterization/uniqueness theorem stack whose antecedents can plausibly be supplied by D0, audit the current finite/macro owners against those antecedents, and produce an exact D0->GR signature-match theorem target or a terminal statement that no present characterization route is typed closely enough.",
+      "brief": "00_WORK/tasks/EXP-EINSTEIN-ALLY-CHARACTERIZATION-BRIDGE.md"
+    },
+    {
       "id": "WRK-ACAP-RIESZ-MISMATCH-LEAN",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
