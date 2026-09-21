@@ -92,7 +92,7 @@
       "id": "WRK-ACAP-RIESZ-MISMATCH-LEAN",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
