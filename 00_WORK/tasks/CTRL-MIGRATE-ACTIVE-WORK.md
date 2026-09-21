@@ -4,17 +4,26 @@
 CONTROL
 
 ## Objective
-Integrate selected unique legacy mathematical payloads onto current main without importing stale registry/docs assumptions or obsolete scaffolding.
+Integrate selected unique legacy payloads onto current main without importing stale registry/docs assumptions or obsolete scaffolding.
 
-## Scope
-1. Reimplement verified mathematical payloads from diverged local branches into clean, self-contained Lean 4 owners.
-2. Maintain strict semantic firewalls preventing overclaim or false identification of geometric operators.
-3. Supervise and review the four selected WORKER tasks:
-   - `WRK-HODGE-SCENE-COCHAIN`
-   - `WRK-GRAV-COMPENSATOR-NOETHER`
-   - `WRK-GEO-CAR-DIRAC-PARITY`
-   - `WRK-CERT-ARTIFACT-FRESHNESS`
-4. Ensure no unclassified legacy payload remains in the selected batch.
+## Current queue policy
+The migration lane is deliberately throttled while the gravity closure lane is being cleaned up.
 
-## Exit Condition
-Selected reconciliation payloads have been reimplemented or deliberately rejected on current main, with every spawned WORKER task reviewed and no unclassified legacy payload remaining in the selected batch.
+Current child states:
+
+- `WRK-GRAV-COMPENSATOR-NOETHER` — PLANNED, priority 3 in the worker restart queue.
+- `WRK-GEO-CAR-DIRAC-PARITY` — PLANNED / paused.
+- `WRK-CERT-ARTIFACT-FRESHNESS` — PLANNED / paused.
+
+The old `WRK-HODGE-SCENE-COCHAIN` payload is no longer an active child; its literal scene Hodge owner was integrated previously.
+
+CONTROL must explicitly promote a PLANNED task before an ordinary worker begins it.
+
+## Rules
+1. Reimplement from fresh current main; do not resume unpublished local dirt as canonical state.
+2. One worker task should normally be IN_PROGRESS at a time during this cleanup.
+3. Every worker stops at REVIEW and waits for CONTROL acceptance.
+4. No worker may create additional child tasks or broaden scope.
+
+## Exit condition
+Selected reconciliation payloads have been reimplemented or deliberately rejected on current main, with every selected worker reviewed and no unclassified legacy payload remaining in this batch.
