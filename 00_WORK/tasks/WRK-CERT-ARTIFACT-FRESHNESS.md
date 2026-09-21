@@ -1,5 +1,12 @@
 # WRK-CERT-ARTIFACT-FRESHNESS
 
+## Queue state
+**PLANNED / PAUSED.** Do not execute during the current gravity closure sequence. CONTROL will explicitly promote this task later.
+
+Repository: https://github.com/gvakhrushev/d0_15
+
+When promoted, start from a fresh then-current `origin/main` and treat tracked artifacts as immutable test inputs.
+
 ## Class
 WORKER
 
