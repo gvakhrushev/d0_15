@@ -21,3 +21,12 @@ CONTROL decides
 4. **Claim discipline.** `affected_claims` for worker and expensive tasks must name existing claim IDs from `02_REGISTRY/claims.csv` or `02_REGISTRY/aliases.csv`. New claim IDs require a formal CONTROL decision; no automatic claim minting is permitted.
 5. **Canonical shared state.** The authoritative shared state is the remote `origin/main` branch on GitHub.
 6. **Generated status views.** The active task listing and status metrics are rendered deterministically into `00_WORK/STATUS.md` and `README.md` by `tools/render_work_status.py`. Do not edit generated status views manually.
+
+## Worker Restart Discipline
+
+1. **Only tasks in `IN_PROGRESS` may be executed.** `PLANNED` is a queue, not authorization.
+2. **One ordinary worker task at a time by default.** Finish it to a green PR and `REVIEW`, then stop for CONTROL.
+3. **Fresh branch from current `origin/main`.** A stale local branch, dirty tree, old olean cache, or closed PR is never the execution baseline.
+4. **Remote CI is acceptance truth.** Local build output is supporting evidence only; GitHub `D0 Lean build` and `D0 guards` must be green.
+5. **No autonomous queue advance.** The worker must not start the next PLANNED task after opening a PR.
+6. **Closed failed PRs stay closed.** Git history is reference material, not a branch to repair unless CONTROL explicitly says otherwise.
