@@ -88,11 +88,13 @@ Prove:
 sceneBoundary1.mulVec\,\omega_{scene}=0.
 ]
 
-Then prove the stronger source identity
+Then prove the literal source identity
 [
-sceneBoundary2.mulVec(\mathbf1_{SceneTriangle})=13\,\omega_{scene}
+sceneBoundary2.mulVec(\mathbf1_{SceneTriangle})=\omega_{scene}
 ]
 with the repository boundary2 convention.
+
+Normalization firewall: with `omega_scene := (13,-11,9)` there is NO extra factor 13. The equivalent research-normalized vector `omega := (1,-11/13,9/13)` satisfies `sceneBoundary2.mulVec 1 = 13 • omega`.
 
 This supplies a stable meaning of the omega pattern independent of C1 formalization:
 it is the image of the uniform triangle 2-cochain.
