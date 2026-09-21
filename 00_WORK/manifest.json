@@ -60,53 +60,16 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "WRK-C1-COMMON-CARRIER",
-      "class": "WORKER",
+      "id": "EXP-ASOURCE-ACTION-NATURALITY-SELECTOR",
+      "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Formalize the research-certified common-carrier theorem on the literal K(9,11,13) edge space: unsigned B₊, signed B₋ with transitive orientation, their exact kernel dimensions, the explicit H-equivariant Euclidean isometry U:ker(B₊)→ker(B₋), the rank-10 correction, the omega complement and projector identities, while preserving the semantic firewall that B₊ is the A1 Weyl/Ward endpoint-sum operator and is not the signed Hodge/current divergence.",
-      "brief": "00_WORK/tasks/WRK-C1-COMMON-CARRIER.md"
-    },
-    {
-      "id": "WRK-GRAV-COMPENSATOR-NOETHER",
-      "class": "WORKER",
-      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
-        "D0-SPECTRAL-EINSTEIN-001",
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The research-certified compensator construction is reimplemented as a generic Lean owner for the proved A1/Noether/Ward statements, including gauge invariance, Euler/Noether identity and the supported projected-field result, while preserving the semantic firewall that B₊ is the unsigned Weyl/Ward operator and is not B₋, Hodge divergence, Bianchi conservation or an Einstein tensor.",
-      "brief": "00_WORK/tasks/WRK-GRAV-COMPENSATOR-NOETHER.md"
-    },
-    {
-      "id": "WRK-GEO-CAR-DIRAC-PARITY",
-      "class": "WORKER",
-      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
-        "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001"
-      ],
-      "exit_condition": "Current-main ArchiveCARDirac contains the explicit supported CAR Dirac operator, its self-adjointness theorem, a typed parity operator Γ_F and the exact anticommutation Γ_F D = −D Γ_F; any ± spectral-pairing consequence is added only if it follows on the actually typed finite carrier without importing an unstated spectral theorem.",
-      "brief": "00_WORK/tasks/WRK-GEO-CAR-DIRAC-PARITY.md"
-    },
-    {
-      "id": "WRK-CERT-ARTIFACT-FRESHNESS",
-      "class": "WORKER",
-      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
-        "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001"
-      ],
-      "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
-      "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
+      "exit_condition": "Conditioned on an abstract scene matter amplitude, determine whether any owned cochain/action/naturality principle reduces the exact three-dimensional H-equivariant quadratic source class Sym^2 C0 -> Z to a unique line up to scale, or terminally prove the two essential block-ratio selector freedoms survive.",
+      "brief": "00_WORK/tasks/EXP-ASOURCE-ACTION-NATURALITY-SELECTOR.md"
     },
     {
       "id": "WRK-SOURCE-STRATIFICATION-NOGO",
@@ -121,16 +84,53 @@
       "brief": "00_WORK/tasks/WRK-SOURCE-STRATIFICATION-NOGO.md"
     },
     {
-      "id": "EXP-ASOURCE-ACTION-NATURALITY-SELECTOR",
-      "class": "EXPENSIVE",
+      "id": "WRK-C1-COMMON-CARRIER",
+      "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "PLANNED",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Conditioned on an abstract scene matter amplitude, determine whether any owned cochain/action/naturality principle reduces the exact three-dimensional H-equivariant quadratic source class Sym^2 C0 -> Z to a unique line up to scale, or terminally prove the two essential block-ratio selector freedoms survive.",
-      "brief": "00_WORK/tasks/EXP-ASOURCE-ACTION-NATURALITY-SELECTOR.md"
+      "exit_condition": "After WRK-SOURCE-STRATIFICATION-NOGO is accepted, reimplement C1 from a fresh branch off then-current main (do not reopen or base on PR #44): own literal B₊/B₋, kernel dimensions 326/327, the explicit involutive Euclidean isometry U, the 10-dimensional centered-row correction, and the omega orthogonal complement/decomposition with a clean D0.All build and no signed/unsigned semantic collapse.",
+      "brief": "00_WORK/tasks/WRK-C1-COMMON-CARRIER.md"
+    },
+    {
+      "id": "WRK-GRAV-COMPENSATOR-NOETHER",
+      "class": "WORKER",
+      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
+        "D0-SPECTRAL-EINSTEIN-001",
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The research-certified compensator construction is reimplemented as a generic Lean owner for the proved A1/Noether/Ward statements, including gauge invariance, Euler/Noether identity and the supported projected-field result, while preserving the semantic firewall that B₊ is the unsigned Weyl/Ward operator and is not B₋, Hodge divergence, Bianchi conservation or an Einstein tensor.",
+      "brief": "00_WORK/tasks/WRK-GRAV-COMPENSATOR-NOETHER.md"
+    },
+    {
+      "id": "WRK-GEO-CAR-DIRAC-PARITY",
+      "class": "WORKER",
+      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
+        "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001"
+      ],
+      "exit_condition": "Current-main ArchiveCARDirac contains the explicit supported CAR Dirac operator, its self-adjointness theorem, a typed parity operator Γ_F and the exact anticommutation Γ_F D = −D Γ_F; any ± spectral-pairing consequence is added only if it follows on the actually typed finite carrier without importing an unstated spectral theorem.",
+      "brief": "00_WORK/tasks/WRK-GEO-CAR-DIRAC-PARITY.md"
+    },
+    {
+      "id": "WRK-CERT-ARTIFACT-FRESHNESS",
+      "class": "WORKER",
+      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
+        "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001"
+      ],
+      "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
+      "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
     }
   ]
 }
