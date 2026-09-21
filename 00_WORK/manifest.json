@@ -60,17 +60,16 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-AWEIGHT-A1-CONFORMAL-WEIGHT-SELECTOR",
+      "id": "EXP-AWEIGHT-DYN-GENERAL-WEIGHT-HESSIAN",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
-        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
-        "D0-C1-COMMON-CARRIER-RESEARCH-001"
+        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001"
       ],
-      "exit_condition": "Classify the positive A1 vertex/edge conformal weights compatible with H-symmetry, the compensator/Ward mechanism, C1 weighted isometry and the owned Euclidean Hodge pairing, and determine whether rho≡1 is internally forced or whether a genuine zone-weight selector freedom remains.",
-      "brief": "00_WORK/tasks/EXP-AWEIGHT-A1-CONFORMAL-WEIGHT-SELECTOR.md"
+      "exit_condition": "Compute the exact compensator-reduced A1 quadratic operator for arbitrary positive H-invariant block weights, decompose it on the six common-carrier H-sectors, and determine the true finite observable modulus count after genuine quotients, without assuming the uniform-branch scalar contact shift.",
+      "brief": "00_WORK/tasks/EXP-AWEIGHT-DYN-GENERAL-WEIGHT-HESSIAN.md"
     },
     {
       "id": "WRK-GRAV-COMPENSATOR-NOETHER",
