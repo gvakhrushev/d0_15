@@ -60,19 +60,33 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-ACAP-A1-RIESZ-LEAKAGE-CAPACITY-SELECTOR",
+      "id": "EXP-APARENT-FINITE-GRAVITY-COMMON-ACTION-SELECTOR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
-        "D0-ZONE-IS-GENERATION-001",
-        "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
-        "D0-TRACE-HEAT-CAPACITY-GRAVITY-001"
+        "D0-C1-COMMON-CARRIER-RESEARCH-001",
+        "D0-TWO-TICK-SYMPLECTIC-GENERATOR-001",
+        "D0-ENDOGENOUS-ACTION-QUANTUM-001"
       ],
-      "exit_condition": "Determine whether nonuniform A1/Hodge metric mismatch creates a canonically typed Riesz/interface leakage whose independent correction information consumes already-owned archive capacity strongly enough to force the uniform weight ray; otherwise terminally classify the exact leakage theorem and the missing capacity/enforcement bridge.",
-      "brief": "00_WORK/tasks/EXP-ACAP-A1-RIESZ-LEAKAGE-CAPACITY-SELECTOR.md"
+      "exit_condition": "Classify the most general finite common parent-action/generating-law compatible with the owned A1, Euclidean Hodge/common-carrier and two-tick structures, and determine exactly whether current D0 principles force the uniform A1 metric ray and/or the remaining relative spatial and temporal moduli, without smuggling a single-metric or fixed-coefficient premise into the definition of parent action.",
+      "brief": "00_WORK/tasks/EXP-APARENT-FINITE-GRAVITY-COMMON-ACTION-SELECTOR.md"
+    },
+    {
+      "id": "WRK-ACAP-RIESZ-MISMATCH-LEAN",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
+        "D0-C1-COMMON-CARRIER-RESEARCH-001",
+        "D0-ZONE-IS-GENERATION-001"
+      ],
+      "exit_condition": "Current-main Lean owns the exact bare-metric mismatch map on the literal K(9,11,13) common carrier, its tensor-sector annihilation and three standard-sector coefficient formulas, zero mismatch iff uniform block metric, and—if technically reachable without weakening the theorem—the exact 0/18/20/22/30 rank stratification; no memory/capacity/physical-leakage interpretation is promoted.",
+      "brief": "00_WORK/tasks/WRK-ACAP-RIESZ-MISMATCH-LEAN.md"
     },
     {
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
