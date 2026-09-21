@@ -119,6 +119,19 @@
       ],
       "exit_condition": "The stable literal cochain complex owns a typed blockwise-zero-marginal tensor subspace, signed-kernel inclusion, carrier-free vertex-source orthogonality, and the uniform-triangle-source omega identity, with clean D0.All build and no physical TT overclaim.",
       "brief": "00_WORK/tasks/WRK-SOURCE-STRATIFICATION-NOGO.md"
+    },
+    {
+      "id": "EXP-ASTRESS-QUADRATIC-MATTER-TENSOR-SOURCE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-SPECTRAL-EINSTEIN-001",
+        "D0-MATTER-STRESS-COUPLING-001"
+      ],
+      "exit_condition": "Determine whether the owned D0 matter/source layer canonically generates a nonzero quadratic/stress-type source reaching the A-RAD tensor carrier, or terminally classify the missing source carrier, selector, conservation projection and coupling coefficient as a NO-GO or explicit bridge.",
+      "brief": "00_WORK/tasks/EXP-ASTRESS-QUADRATIC-MATTER-TENSOR-SOURCE.md"
     }
   ]
 }
