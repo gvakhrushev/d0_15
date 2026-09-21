@@ -4,7 +4,7 @@
 WORKER
 
 ## Priority
-**2 — PLANNED. Do not execute until CONTROL promotes this task after WRK-SOURCE-STRATIFICATION-NOGO is accepted.**
+**1 — IN_PROGRESS. This is now the only ordinary WORKER task authorized for execution.**
 
 ## Parent
 CTRL-GRAVITY-DYNAMICS-CLOSURE
@@ -15,7 +15,7 @@ https://github.com/gvakhrushev/d0_15
 ## Restart decision
 PR #44 is closed and superseded as an implementation attempt. Do **not** reopen it, branch from it, cherry-pick its proof scripts wholesale, or treat its local-build reports as evidence.
 
-The mathematical C1 result is not rejected. The new implementation must start from a fresh branch off the then-current `origin/main`, after the source-stratification module has been accepted.
+The mathematical C1 result is not rejected. `D0.Geometry.SceneSourceStratification` is now accepted on main, so the new implementation must start from a fresh branch off current `origin/main` and reuse that stable owner where appropriate.
 
 Preferred branch:
 ```text
@@ -40,7 +40,7 @@ Read first:
 - `02_REGISTRY/frontier/C1_COMMON_CARRIER_RESULT.md`
 - `04_CERTIFICATES/vp_c1_common_carrier_reduced.py`
 - `02_REGISTRY/research/ARAD_SOURCE_STRATIFIED_RADIATIVE_CARRIER.md`
-- accepted `D0.Geometry.SceneSourceStratification` module once present on main
+- accepted `D0.Geometry.SceneSourceStratification` module on current main
 - `D0.Geometry.SceneCochainComplex`
 - `D0.Geometry.SceneHodgeDecomposition`
 
@@ -103,4 +103,7 @@ git status --porcelain
 No `sorry`, and both GitHub workflows must be green before REVIEW.
 
 ## Exit condition
-After source-stratification is accepted, a fresh current-main implementation owns the literal 326→327 common-carrier theorem, rank-10 correction and omega complement/decomposition with reproducible clean CI and no signed/unsigned semantic collapse.
+A fresh current-main implementation owns the literal 326→327 common-carrier theorem, rank-10 correction and omega complement/decomposition with reproducible clean CI and no signed/unsigned semantic collapse.
+
+## Delivery discipline
+This is the only active ordinary-worker task. After opening a green PR and moving this task to REVIEW, stop and return to CONTROL. Do not start the compensator, CAR parity, or certificate-freshness PLANNED tasks.
