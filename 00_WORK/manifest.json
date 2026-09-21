@@ -60,6 +60,19 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
+      "id": "EXP-ANORM-FINITE-GRAVITY-NORMALIZATION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-SPECTRAL-EINSTEIN-001",
+        "D0-TWO-TICK-SYMPLECTIC-GENERATOR-001"
+      ],
+      "exit_condition": "After quotienting genuine scale/conjugacy/time-orientation redundancies, count the inequivalent finite normalization moduli in the Hodge+A1+two-tick gravity lane and determine whether any owned D0 principle fixes them, or terminally classify the surviving relative-normalization freedom and its external calibration boundary.",
+      "brief": "00_WORK/tasks/EXP-ANORM-FINITE-GRAVITY-NORMALIZATION.md"
+    },
+    {
       "id": "WRK-C1-COMMON-CARRIER",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
