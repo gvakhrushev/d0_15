@@ -60,33 +60,30 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-APARENT-FINITE-GRAVITY-COMMON-ACTION-SELECTOR",
+      "id": "EXP-LORENTZ-CONTINUUM-TYPED-OWNER",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
-        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
-        "D0-C1-COMMON-CARRIER-RESEARCH-001",
-        "D0-TWO-TICK-SYMPLECTIC-GENERATOR-001",
-        "D0-ENDOGENOUS-ACTION-QUANTUM-001"
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
+        "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Classify the most general finite common parent-action/generating-law compatible with the owned A1, Euclidean Hodge/common-carrier and two-tick structures, and determine exactly whether current D0 principles force the uniform A1 metric ray and/or the remaining relative spatial and temporal moduli, without smuggling a single-metric or fixed-coefficient premise into the definition of parent action.",
-      "brief": "00_WORK/tasks/EXP-APARENT-FINITE-GRAVITY-COMMON-ACTION-SELECTOR.md"
+      "exit_condition": "Under only the explicitly named continuum bridge assumptions, determine whether D0 can construct a genuinely typed smooth connected 4-manifold with Lorentz metric and finite-to-continuum comparison data strong enough to state tensor/operator convergence; otherwise isolate the first exact type-level bridge gap.",
+      "brief": "00_WORK/tasks/EXP-LORENTZ-CONTINUUM-TYPED-OWNER.md"
     },
     {
-      "id": "EXP-EINSTEIN-ALLY-CHARACTERIZATION-BRIDGE",
+      "id": "EXP-LOVELOVK-NATURAL-OPERATOR-PASSPORT",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-HODGE-LINKS-001",
         "D0-SPECTRAL-EINSTEIN-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
-        "D0-SPIN2-001"
+        "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Identify the lowest-bridge-debt standard GR characterization/uniqueness theorem stack whose antecedents can plausibly be supplied by D0, audit the current finite/macro owners against those antecedents, and produce an exact D0->GR signature-match theorem target or a terminal statement that no present characterization route is typed closely enough.",
-      "brief": "00_WORK/tasks/EXP-EINSTEIN-ALLY-CHARACTERIZATION-BRIDGE.md"
+      "exit_condition": "Choose one explicit finite gravity response sequence and classify whether, conditional on the typed Lorentz-continuum passport, it can converge to one metric-only diffeomorphism-natural symmetric covariantly-conserved genuinely-second-order J^2 metric response operator satisfying the exact Lovelock/Navarro antecedents; otherwise return the first terminal obstruction or bridge gap.",
+      "brief": "00_WORK/tasks/EXP-LOVELOVK-NATURAL-OPERATOR-PASSPORT.md"
     },
     {
       "id": "WRK-ACAP-RIESZ-MISMATCH-LEAN",
@@ -101,6 +98,18 @@
       ],
       "exit_condition": "Current-main Lean owns the exact bare-metric mismatch map on the literal K(9,11,13) common carrier, its tensor-sector annihilation and three standard-sector coefficient formulas, zero mismatch iff uniform block metric, and—if technically reachable without weakening the theorem—the exact 0/18/20/22/30 rank stratification; no memory/capacity/physical-leakage interpretation is promoted.",
       "brief": "00_WORK/tasks/WRK-ACAP-RIESZ-MISMATCH-LEAN.md"
+    },
+    {
+      "id": "WRK-FINITE-GRAVITY-RESPONSE-SINGLE-WITNESS",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-SPECTRAL-EINSTEIN-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+      ],
+      "exit_condition": "Lean owns one explicit finite response object E_L=2L together with symmetry, row-sum conservation and nontriviality predicates stated on that same stored response witness, with an explicit firewall against continuum/Lorentz/Einstein interpretation.",
+      "brief": "00_WORK/tasks/WRK-FINITE-GRAVITY-RESPONSE-SINGLE-WITNESS.md"
     },
     {
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
