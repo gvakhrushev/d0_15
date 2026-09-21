@@ -60,16 +60,19 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-AWEIGHT-DYN-GENERAL-WEIGHT-HESSIAN",
+      "id": "EXP-ACAP-A1-RIESZ-LEAKAGE-CAPACITY-SELECTOR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
-        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001"
+        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
+        "D0-ZONE-IS-GENERATION-001",
+        "D0-VERIFIABILITY-FORCES-FUNCTIONAL-TUPLE-001",
+        "D0-TRACE-HEAT-CAPACITY-GRAVITY-001"
       ],
-      "exit_condition": "Compute the exact compensator-reduced A1 quadratic operator for arbitrary positive H-invariant block weights, decompose it on the six common-carrier H-sectors, and determine the true finite observable modulus count after genuine quotients, without assuming the uniform-branch scalar contact shift.",
-      "brief": "00_WORK/tasks/EXP-AWEIGHT-DYN-GENERAL-WEIGHT-HESSIAN.md"
+      "exit_condition": "Determine whether nonuniform A1/Hodge metric mismatch creates a canonically typed Riesz/interface leakage whose independent correction information consumes already-owned archive capacity strongly enough to force the uniform weight ray; otherwise terminally classify the exact leakage theorem and the missing capacity/enforcement bridge.",
+      "brief": "00_WORK/tasks/EXP-ACAP-A1-RIESZ-LEAKAGE-CAPACITY-SELECTOR.md"
     },
     {
       "id": "WRK-GRAV-COMPENSATOR-NOETHER",
