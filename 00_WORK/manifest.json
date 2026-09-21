@@ -75,7 +75,7 @@
       "id": "WRK-SOURCE-STRATIFICATION-NOGO",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-SPECTRAL-EINSTEIN-001"
