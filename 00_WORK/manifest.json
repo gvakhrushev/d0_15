@@ -78,7 +78,7 @@
       "id": "WRK-GRAV-COMPENSATOR-NOETHER",
       "class": "WORKER",
       "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
         "D0-SPECTRAL-EINSTEIN-001",
