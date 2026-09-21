@@ -14,3 +14,4 @@ Current gravity packets:
 - `ARAD_SOURCE_STRATIFIED_RADIATIVE_CARRIER.md` — source stratification, ordered-tripartite middle-zone theorem, and linear vertex-radiation no-go.
 - `ASTRESS_QUADRATIC_MATTER_TENSOR_SOURCE.md` — missing matter→scene carrier and exact three-parameter equivariant quadratic selector class.
 - `ASOURCE_ACTION_NATURALITY_SELECTOR.md` — terminal no-go for selecting a unique quadratic block ratio from current cochain/action/naturality structures.
+- `ANORM_FINITE_GRAVITY_NORMALIZATION.md` — terminal two-modulus finite normalization boundary for the Hodge+A1+two-tick lane.
