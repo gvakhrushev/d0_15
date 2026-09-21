@@ -12,3 +12,4 @@ Rules:
 
 Current gravity packets:
 - `ARAD_SOURCE_STRATIFIED_RADIATIVE_CARRIER.md` — source stratification, ordered-tripartite middle-zone theorem, and linear vertex-radiation no-go.
+- `ASTRESS_QUADRATIC_MATTER_TENSOR_SOURCE.md` — missing matter→scene carrier and exact three-parameter equivariant quadratic selector class.
