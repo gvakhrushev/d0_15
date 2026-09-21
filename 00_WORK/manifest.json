@@ -75,19 +75,6 @@
       "brief": "00_WORK/tasks/EXP-ACAP-A1-RIESZ-LEAKAGE-CAPACITY-SELECTOR.md"
     },
     {
-      "id": "WRK-GRAV-COMPENSATOR-NOETHER",
-      "class": "WORKER",
-      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001",
-        "D0-SPECTRAL-EINSTEIN-001",
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The research-certified compensator construction is reimplemented as a generic Lean owner for the proved A1/Noether/Ward statements, including gauge invariance, Euler/Noether identity and the supported projected-field result, while preserving the semantic firewall that B₊ is the unsigned Weyl/Ward operator and is not B₋, Hodge divergence, Bianchi conservation or an Einstein tensor.",
-      "brief": "00_WORK/tasks/WRK-GRAV-COMPENSATOR-NOETHER.md"
-    },
-    {
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
       "class": "WORKER",
       "parent": "CTRL-MIGRATE-ACTIVE-WORK",

@@ -893,6 +893,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "abstract_shift_commute_implies_diagonal_constant;commute_with_shift_step;shift_matrix_mul_left;shift_matrix_mul_right", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-GAP-W-WITNESS-PLUS-ONE-001", moduleName := "D0.Core.WitnessForcing;D0.Core.WRecArchitecture",
       theoremName := "card_base_forced_conditional;card_base_forced_wrec", status := ClaimStatus.leanBridgeAssumptionsExplicit },
+    { claimId := "D0-A2-COMPENSATOR-NOETHER-RESEARCH-001", moduleName := "D0.Gravity.A2CompensatorNoether",
+      theoremName := "unsigned_shift_divergence_adjoint;compensatorResidual_shift;extendedAction_shift_invariant;edge_euler_response;extendedAction_edge_variation;diagonal_euler_response;off_shell_ward_identity;normalOperator_apply;normalOperator_pairing;normalOperator_ker_eq_shift_ker;normalOperator_range_eq_divergence_range;normal_equation_exists;physical_residual_unique;physicalResponse;physical_response_eq_edge_response;physical_response_divergence_free", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CANONICAL-WITHIN-ZONE-SELECTOR-M1-NOGO-001", moduleName := "D0.Foundation.CanonicalSelectorNoGo",
       theoremName := "canonical_within_zone_selector_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-SCENE-DIM-EVEN-FIBONACCI-FORCING-001", moduleName := "D0.VNext2.SceneDimEvenFibonacci",
