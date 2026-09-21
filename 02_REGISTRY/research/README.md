@@ -1,0 +1,14 @@
+# Accepted Research Packets
+
+This directory contains CONTROL-curated research packets that materially affect D0 roadmap decisions but are not yet proof owners.
+
+Rules:
+
+- A research packet is not a substitute for Lean, a finite certificate, a registered external theorem, or an empirical passport.
+- Packets must separate repository-owned facts, accepted research, exact finite checks, and interpretation.
+- `02_REGISTRY/RESEARCH_LEDGER.md` is the index and CONTROL disposition table.
+- When a packet yields a theorem-ready result, formalization moves to a bounded `00_WORK` task.
+- When a packet is superseded, the ledger must say so; stale research must not silently continue driving the roadmap.
+
+Current gravity packets:
+- `ARAD_SOURCE_STRATIFIED_RADIATIVE_CARRIER.md` — source stratification, ordered-tripartite middle-zone theorem, and linear vertex-radiation no-go.
