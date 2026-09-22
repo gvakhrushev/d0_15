@@ -83,6 +83,19 @@
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {
+      "id": "EXP-SCENE-RIESZ-M1-OPERATOR-WELD",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "REVIEW",
+      "affected_claims": [
+        "D0-SCENE-OPPOSITE-CUT-RIESZ-001",
+        "D0-M1-RIESZ-REPRESENTATION-GAP-001",
+        "D0-ROLE-FOCK-PERMUTATION-001"
+      ],
+      "exit_condition": "The bare Riesz mismatch is identified with the scene opposite-cut operator on the standard sectors, or that identification is refuted; M1 verification equality either selects the uniform block weight or the missing representation premise is named; the Role permutation action on the Fock carrier is owned or the fermionic sign gap is named.",
+      "brief": "00_WORK/tasks/EXP-SCENE-RIESZ-M1-OPERATOR-WELD.md"
+    },
+    {
       "id": "EXP-ATORUS-CAR-DIRAC-DISPERSION-TRUTH-REPAIR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",

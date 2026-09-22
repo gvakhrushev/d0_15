@@ -243,6 +243,7 @@ import D0.Foundation.M1ClassAdmissibility
 import D0.Foundation.M1CoreSaturation
 import D0.Foundation.M1Predicate
 import D0.Foundation.M1RepairObservationalQuotient
+import D0.Foundation.M1RieszRepresentationGap
 import D0.Foundation.M1Universality
 import D0.Foundation.ObservableCompletionCanonicity
 import D0.Foundation.Omega8Center
@@ -348,12 +349,14 @@ import D0.Geometry.HeatTraceEHProxy
 import D0.Geometry.HigherCurvatureSuppression
 import D0.Geometry.HurwitzRigidPhaseGenerator
 import D0.Geometry.LucasVoronoiMarkovPartition
+import D0.Geometry.OppositeCutPairing
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
 import D0.Geometry.PhysicalCarrierInventory
 import D0.Geometry.Pi0DiscreteAngle
 import D0.Geometry.PseudoinverseTwistAlgebra
 import D0.Geometry.QuaternionMixedCurvature
+import D0.Geometry.RoleFockPermutation
 import D0.Geometry.SceneActiveEigenvalues
 import D0.Geometry.SceneCochainComplex
 import D0.Geometry.SceneHodgeDecomposition
@@ -386,6 +389,7 @@ import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.OpticalJetBackreaction
 import D0.Gravity.PageCurveFiniteRankOwner
 import D0.Gravity.PageTurningPointRank
+import D0.Gravity.SceneOppositeCutIdentification
 import D0.Gravity.VariationalCarrierAudit
 import D0.IM.ArchivePressureCoupling
 import D0.IM.ContinuumFromFractalTick
