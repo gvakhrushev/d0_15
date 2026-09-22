@@ -60,57 +60,44 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-FINITE-METRIC-PROVENANCE-CARRIER",
+      "id": "EXP-A4D-METRIC-ACTION-GAUGE-PROVENANCE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
-        "D0-SMOOTH-001",
+        "D0-HODGE-LINKS-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Construct or terminally refute an actual provenance map Theta_N from an owned D0 finite metric/geometry carrier into LocalSymRoleField N, together with a compatible finite response factorization and the strongest possible finite gauge/reparametrization provenance theorem whose linearization is the symmetricRoleGradient; identify whether the present conductance/Laplacian carrier is insufficient because it lacks cross-Role metric slots.",
-      "brief": "00_WORK/tasks/EXP-A4D-FINITE-METRIC-PROVENANCE-CARRIER.md"
+      "exit_condition": "Given the minimal 4+6 Role-pair metric carrier identified by E-METPROV, determine whether an owned or minimally extended finite D0 action selects the Lorentz E_eta response and whether a genuine finite redundancy/reparametrization action generates symmetricRoleGradient; otherwise classify the first exact new modelling primitive.",
+      "brief": "00_WORK/tasks/EXP-A4D-METRIC-ACTION-GAUGE-PROVENANCE.md"
     },
     {
-      "id": "EXP-A4D-LOCAL-MATTER-REALIZATION-CARRIER",
+      "id": "EXP-A4D-CAR-MATTER-STATE-ACTION-PROVENANCE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-MATTER-STRESS-COUPLING-001",
-        "D0-MATTER-LOCALIZATION-001",
-        "D0-ARCHIVE-STRESS-CONSERVATION-001",
+        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
+        "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "Construct or terminally classify the first provenance-bearing nonzero anomaly-free matter realization on the 4D archive role-phase carrier, with a local metric-response/stress map into LocalSymRoleField N and explicit conservation/selector accounting; do not reuse zero anomaly stress or arbitrary supplied localization as a physical source.",
-      "brief": "00_WORK/tasks/EXP-A4D-LOCAL-MATTER-REALIZATION-CARRIER.md"
+      "exit_condition": "Using the 4D role-phase carrier and 16-state CAR/Fock fibre, construct or terminally classify an actual provenance-bearing local matter state and finite matter action/operator on l2(X_N) tensor Fock whose metric variation could yield a nonzero anomaly-free LocalSymRoleField stress; separate state provenance, explicit CAR Dirac ownership, metric dependence and Ward conservation.",
+      "brief": "00_WORK/tasks/EXP-A4D-CAR-MATTER-STATE-ACTION-PROVENANCE.md"
     },
     {
-      "id": "WRK-A4D-LINEARIZED-RESPONSE-SEED",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001"
-      ],
-      "exit_condition": "Lean owns one explicit Euclidean centered-difference local Sym^2(Role) response E_delta on the sitewise role tensor carrier, with exact local tensor symmetry, gauge nullity, local divergence identity, self-adjoint quadratic action/first variation, radius-two locality, small-cycle guard and a nonzero second-difference control, without any claim of uniqueness, Lorentz covariance, continuum Einstein interpretation or Lovelock naturality.",
-      "brief": "00_WORK/tasks/WRK-A4D-LINEARIZED-RESPONSE-SEED.md"
-    },
-    {
-      "id": "WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION",
+      "id": "WRK-A4D-ROLEPAIR-METRIC-CARRIER",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-SMOOTH-MANIFOLD-PASSPORT-001",
-        "D0-SMOOTH-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
+        "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Lean owns a concrete smooth fixed T4, actual symmetric covariant tangent 2-tensors, an actual smooth Lorentz metric structure, local Role-labelled frames/stencils, finite metric sampling, pointwise response reconstruction, and at least the center-frame/reconstruction pullback square, without any limit/naturality/Lovelock claim.",
-      "brief": "00_WORK/tasks/WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION.md"
+      "exit_condition": "Lean owns the six unordered distinct Role-pair labels, the 4+6 local metric-probe carrier over ArchiveRolePhaseGroup N, an explicit linear equivalence to LocalSymRoleField N, the diagonal embedding of axis data with codimension-six-per-site characterization, and an exterior-two-form negative control, without response/gauge/Einstein claims.",
+      "brief": "00_WORK/tasks/WRK-A4D-ROLEPAIR-METRIC-CARRIER.md"
     },
     {
       "id": "WRK-A4D-EXTRA-RAY-FRAME-NOGO",
@@ -128,7 +115,7 @@
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
       "class": "WORKER",
       "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
         "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001"
