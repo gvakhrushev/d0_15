@@ -517,6 +517,39 @@ This is diagnostic only.  It is not the topological owner: at N=0 (L=2) every ce
 difference vanishes.
 -/
 
+/-- Centered difference distributes through finite site-independent weights. -/
+theorem centeredDifference_weighted_sum {ι : Type*} [Fintype ι]
+    (N : ℕ) (r : Role) (c : ι → ℝ)
+    (F : ι → ArchiveRolePhaseGroup N → ℝ) :
+    centeredDifference N r (fun x => ∑ i, c i * F i x) =
+      fun x => ∑ i, c i * centeredDifference N r (F i) x := by
+  classical
+  funext x
+  simp only [centeredDifference_apply]
+  calc
+    centeredDifferenceScale N *
+        ((∑ i, c i * F i (roleTranslatePlus N r x)) -
+          ∑ i, c i * F i (roleTranslateMinus N r x)) =
+      centeredDifferenceScale N *
+        (∑ i, (c i * F i (roleTranslatePlus N r x) -
+          c i * F i (roleTranslateMinus N r x))) := by
+            rw [Finset.sum_sub_distrib]
+    _ = ∑ i, centeredDifferenceScale N *
+        (c i * F i (roleTranslatePlus N r x) -
+          c i * F i (roleTranslateMinus N r x)) := by
+            rw [Finset.mul_sum]
+    _ = ∑ i, c i *
+        (centeredDifferenceScale N *
+          (F i (roleTranslatePlus N r x) -
+            F i (roleTranslateMinus N r x))) := by
+            apply Finset.sum_congr rfl
+            intro i hi
+            ring
+
+noncomputable def centeredSite (N : ℕ) (r : Role)
+    (ψ : ArchiveCochain N) : ArchiveCochain N :=
+  fun p => centeredDifference N r (fun x => ψ (x, p.2)) p.1
+
 noncomputable def centeredCreateDirection (N : ℕ) (r : Role)
     (ψ : ArchiveCochain N) : ArchiveCochain N :=
   fun p =>
@@ -524,13 +557,117 @@ noncomputable def centeredCreateDirection (N : ℕ) (r : Role)
       carCreate r p.2 ket *
         centeredDifference N r (fun x => ψ (x, ket)) p.1
 
+theorem centeredCreateDirection_eq_createAction_centeredSite (N : ℕ) (r : Role)
+    (ψ : ArchiveCochain N) :
+    centeredCreateDirection N r ψ =
+      createAction N r (centeredSite N r ψ) := by
+  rfl
+
+theorem centeredSite_comm (N : ℕ) (r s : Role) (ψ : ArchiveCochain N) :
+    centeredSite N r (centeredSite N s ψ) =
+      centeredSite N s (centeredSite N r ψ) := by
+  funext p
+  change
+    centeredDifference N r
+        (centeredDifference N s (fun x => ψ (x, p.2))) p.1 =
+      centeredDifference N s
+        (centeredDifference N r (fun x => ψ (x, p.2))) p.1
+  exact congrFun (centeredDifference_comm N r s (fun x => ψ (x, p.2))) p.1
+
+theorem centeredSite_createAction_comm (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) :
+    centeredSite N r (createAction N s ψ) =
+      createAction N s (centeredSite N r ψ) := by
+  classical
+  funext p
+  change
+    centeredDifference N r
+        (fun x => ∑ ket : ArchiveFockState,
+          carCreate s p.2 ket * ψ (x, ket)) p.1 =
+      ∑ ket : ArchiveFockState,
+        carCreate s p.2 ket *
+          centeredDifference N r (fun x => ψ (x, ket)) p.1
+  exact congrFun
+    (centeredDifference_weighted_sum N r
+      (fun ket : ArchiveFockState => carCreate s p.2 ket)
+      (fun ket x => ψ (x, ket))) p.1
+
+theorem centeredCreateDirection_anticommute (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) :
+    centeredCreateDirection N r (centeredCreateDirection N s ψ) +
+      centeredCreateDirection N s (centeredCreateDirection N r ψ) = 0 := by
+  change
+    createAction N r
+        (centeredSite N r (createAction N s (centeredSite N s ψ))) +
+      createAction N s
+        (centeredSite N s (createAction N r (centeredSite N r ψ))) = 0
+  rw [centeredSite_createAction_comm N r s (centeredSite N s ψ)]
+  rw [centeredSite_createAction_comm N s r (centeredSite N r ψ)]
+  rw [centeredSite_comm N s r ψ]
+  exact createAction_anticommute N r s
+    (centeredSite N r (centeredSite N s ψ))
+
 noncomputable def dCentered (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
   fun p => ∑ r : Role, centeredCreateDirection N r ψ p
 
+@[simp] theorem dCentered_zero (N : ℕ) :
+    dCentered N (0 : ArchiveCochain N) = 0 := by
+  funext p
+  simp [dCentered, centeredCreateDirection, centeredDifference_apply]
+
+theorem dCentered_add (N : ℕ) (ψ φ : ArchiveCochain N) :
+    dCentered N (ψ + φ) = dCentered N ψ + dCentered N φ := by
+  funext p
+  simp [dCentered, centeredCreateDirection, centeredDifference_apply]
+  ring
+
+theorem dCentered_eq_sum_directions (N : ℕ) (ψ : ArchiveCochain N) :
+    dCentered N ψ = ∑ r : Role, centeredCreateDirection N r ψ := by
+  funext p
+  simp [dCentered]
+
+theorem dCentered_sum {ι : Type*} [Fintype ι] (N : ℕ)
+    (F : ι → ArchiveCochain N) :
+    dCentered N (∑ i, F i) = ∑ i, dCentered N (F i) := by
+  classical
+  have hfin : ∀ s : Finset ι,
+      dCentered N (∑ i in s, F i) = ∑ i in s, dCentered N (F i) := by
+    intro s
+    induction s using Finset.induction_on with
+    | empty =>
+        simp [dCentered_zero]
+    | @insert a s ha ih =>
+        rw [Finset.sum_insert ha, dCentered_add, Finset.sum_insert ha, ih]
+  exact hfin Finset.univ
+
 theorem dCentered_sq_zero (N : ℕ) (ψ : ArchiveCochain N) :
     dCentered N (dCentered N ψ) = 0 := by
-  -- Same CAR cancellation as dForward, now using centeredDifference_comm.
-  sorry
+  classical
+  rw [dCentered_eq_sum_directions N ψ, dCentered_sum]
+  simp_rw [dCentered_eq_sum_directions]
+  funext p
+  simp only [Finset.sum_apply, Pi.zero_apply]
+  let X : Role → Role → ℝ :=
+    fun r s => centeredCreateDirection N r
+      (centeredCreateDirection N s ψ) p
+  change (∑ s : Role, ∑ r : Role, X r s) = 0
+  have hanti : ∀ r s : Role, X r s + X s r = 0 := by
+    intro r s
+    have h := congrFun (centeredCreateDirection_anticommute N r s ψ) p
+    simpa [X] using h
+  have hpair : (∑ s : Role, ∑ r : Role, (X r s + X s r)) = 0 := by
+    apply Finset.sum_eq_zero
+    intro s hs
+    apply Finset.sum_eq_zero
+    intro r hr
+    exact hanti r s
+  have hswap :
+      (∑ s : Role, ∑ r : Role, X s r) =
+        ∑ s : Role, ∑ r : Role, X r s := by
+    rw [Finset.sum_comm]
+  simp only [Finset.sum_add_distrib] at hpair
+  rw [hswap] at hpair
+  linarith
 
 theorem dCentered_zero_at_minimal (ψ : ArchiveCochain 0) :
     dCentered 0 ψ = 0 := by
