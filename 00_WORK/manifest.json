@@ -90,7 +90,7 @@
       "id": "WRK-A4D-SYMROLE-CENTRAL-DIFFERENCE-CARRIER",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
         "D0-HODGE-LINKS-001"
