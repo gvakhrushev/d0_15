@@ -115,7 +115,7 @@
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
       "class": "WORKER",
       "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
         "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001"
