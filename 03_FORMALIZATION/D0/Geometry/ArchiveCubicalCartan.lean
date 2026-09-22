@@ -50,6 +50,22 @@ theorem contraction_smul (N : ℕ) (xi : LocalRoleVector N)
   simp [contraction]
   ring
 
+/-- Contraction at a site only sees the vector and cochain at that site. -/
+theorem contraction_point_congr (N : ℕ)
+    (xi eta : LocalRoleVector N) (ψ φ : ArchiveCochain N)
+    (x : ArchiveRolePhaseGroup N) (bra : ArchiveFockState)
+    (hxi : ∀ r, xi x r = eta x r)
+    (hψ : ∀ ket, ψ (x, ket) = φ (x, ket)) :
+    contraction N xi ψ (x, bra) = contraction N eta φ (x, bra) := by
+  unfold contraction
+  apply Finset.sum_congr rfl
+  intro r hr
+  rw [hxi r]
+  congr 1
+  apply Finset.sum_congr rfl
+  intro ket hk
+  rw [hψ ket]
+
 /-- Contraction lowers a positive homogeneous degree by one. -/
 theorem contraction_degree_lower (N k : ℕ) (xi : LocalRoleVector N)
     (ψ : ArchiveCochain N)
@@ -104,10 +120,45 @@ theorem cartanForward_degree_preserving (N k : ℕ) (xi : LocalRoleVector N)
     (ψ : ArchiveCochain N)
     (hψ : HomogeneousCochain N k ψ) :
     HomogeneousCochain N k (cartanForward N xi ψ) := by
-  -- Split k=0 / k+1.  Use contraction_degree_zero in degree zero and,
-  -- in positive degree, contraction_degree_lower together with
-  -- dForward_degree_raise on both Cartan summands.
-  sorry
+  cases k with
+  | zero =>
+      have hi0 : contraction N xi ψ = 0 :=
+        contraction_degree_zero N xi ψ hψ
+      have hfirst :
+          HomogeneousCochain N 0 (dForward N (contraction N xi ψ)) := by
+        rw [hi0, dForward_zero]
+        exact homogeneousCochain_zero N 0
+      have hd :
+          HomogeneousCochain N 1 (dForward N ψ) := by
+        simpa using dForward_degree_raise N 0 ψ hψ
+      have hsecond :
+          HomogeneousCochain N 0 (contraction N xi (dForward N ψ)) := by
+        exact contraction_degree_lower N 0 xi (dForward N ψ) (by simpa using hd)
+      simpa [cartanForward] using
+        homogeneousCochain_add N 0
+          (dForward N (contraction N xi ψ))
+          (contraction N xi (dForward N ψ)) hfirst hsecond
+  | succ k =>
+      have hψ' : HomogeneousCochain N (k + 1) ψ := by
+        simpa [Nat.succ_eq_add_one] using hψ
+      have hi :
+          HomogeneousCochain N k (contraction N xi ψ) :=
+        contraction_degree_lower N k xi ψ hψ'
+      have hfirst :
+          HomogeneousCochain N (k + 1)
+            (dForward N (contraction N xi ψ)) :=
+        dForward_degree_raise N k (contraction N xi ψ) hi
+      have hd :
+          HomogeneousCochain N ((k + 1) + 1) (dForward N ψ) :=
+        dForward_degree_raise N (k + 1) ψ hψ'
+      have hsecond :
+          HomogeneousCochain N (k + 1)
+            (contraction N xi (dForward N ψ)) :=
+        contraction_degree_lower N (k + 1) xi (dForward N ψ) hd
+      simpa [cartanForward, Nat.succ_eq_add_one] using
+        homogeneousCochain_add N (k + 1)
+          (dForward N (contraction N xi ψ))
+          (contraction N xi (dForward N ψ)) hfirst hsecond
 
 /-- Cartan is radius one: at x it uses only x and the four forward neighbours. -/
 theorem cartanForward_radius_one (N : ℕ)
@@ -125,10 +176,33 @@ theorem cartanForward_radius_one (N : ℕ)
           φ (roleTranslatePlus N r x, ket)) :
     cartanForward N xi ψ (x, bra) =
       cartanForward N eta φ (x, bra) := by
-  -- Direct finite support expansion; no second neighbour enters because
-  -- d acts once on the local contraction and the second Cartan term contracts
-  -- d at the base site.
-  sorry
+  have hfirst :
+      dForward N (contraction N xi ψ) (x, bra) =
+        dForward N (contraction N eta φ) (x, bra) := by
+    apply dForward_radius_one
+    intro r ket
+    constructor
+    · apply contraction_point_congr N xi eta ψ φ x ket
+      · intro s
+        exact (hxi r s).1
+      · intro state
+        exact (hψ r state).1
+    · apply contraction_point_congr N xi eta ψ φ
+        (roleTranslatePlus N r x) ket
+      · intro s
+        exact (hxi r s).2
+      · intro state
+        exact (hψ r state).2
+  have hsecond :
+      contraction N xi (dForward N ψ) (x, bra) =
+        contraction N eta (dForward N φ) (x, bra) := by
+    apply contraction_point_congr N xi eta (dForward N ψ) (dForward N φ) x bra
+    · intro s
+      exact (hxi D0.A s).1
+    · intro ket
+      exact dForward_radius_one N ψ φ x ket hψ
+  simpa [cartanForward] using
+    congrArg₂ (fun a b : ℝ => a + b) hfirst hsecond
 
 /-- Exact cochain identity d L_xi^f = L_xi^f d, using only d_f^2 = 0. -/
 theorem dForward_cartan_comm (N : ℕ) (xi : LocalRoleVector N)
@@ -181,9 +255,25 @@ def constantCoframe (N : ℕ) (b : Role) : ArchiveCochain N :=
 theorem contraction_constantCoframe (N : ℕ) (xi : LocalRoleVector N) (b : Role) :
     contraction N xi (constantCoframe N b) =
       scalarCochain N (fun x => xi x b) := by
-  -- Collapse the Fock sum to the singleton b coefficient and use
-  -- <vac|c_r|{b}> = δ_rb.
-  sorry
+  classical
+  funext p
+  unfold contraction
+  have hinner : ∀ r : Role,
+      (∑ ket : ArchiveFockState,
+        carAnnihilate r p.2 ket * constantCoframe N b (p.1, ket)) =
+        carAnnihilate r p.2 (singletonFockState b) := by
+    intro r
+    rw [Finset.sum_eq_single (singletonFockState b)]
+    · simp [constantCoframe]
+    · intro ket _ hket
+      simp [constantCoframe, hket]
+    · simp
+  simp_rw [hinner, carAnnihilate_singleton]
+  rw [Finset.sum_eq_single b]
+  · simp [roleDelta, fockIdentity, scalarCochain]
+  · intro r _ hr
+    simp [roleDelta, hr]
+  · simp
 
 /-- Constant coframes are d_f-closed. -/
 theorem dForward_constantCoframe (N : ℕ) (b : Role) :
