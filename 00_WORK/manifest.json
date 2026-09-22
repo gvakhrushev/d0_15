@@ -86,18 +86,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-CAUSAL-TIME-ROLE-INTERTWINER.md"
     },
     {
-      "id": "WRK-A4D-ROLEPAIR-METRIC-CARRIER",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns the six unordered distinct Role-pair labels, the 4+6 local metric-probe carrier over ArchiveRolePhaseGroup N, an explicit linear equivalence to LocalSymRoleField N, the diagonal embedding of axis data with codimension-six-per-site characterization, and an exterior-two-form negative control, without response/gauge/Einstein claims.",
-      "brief": "00_WORK/tasks/WRK-A4D-ROLEPAIR-METRIC-CARRIER.md"
-    },
-    {
       "id": "WRK-A4D-CUBICAL-DIFFERENTIAL-CARTAN",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
