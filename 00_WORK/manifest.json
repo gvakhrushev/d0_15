@@ -60,7 +60,7 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-PRIMAL-DUAL-HODGE-PARENT-WARD",
+      "id": "EXP-A4D-CARTAN-CHAIN-CONNECTION-REALIZATION",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
@@ -69,34 +69,34 @@
         "D0-MATTER-STRESS-COUPLING-001",
         "D0-ARCHIVE-STRESS-CONSERVATION-001"
       ],
-      "exit_condition": "Extend the flat tangent primal/dual Hodge result to the minimum honest finite parent architecture: classify an e-dependent/nonlinear coframe transport law, a local primal/dual constitutive Hodge operator that avoids dense inverse locality, and the parent constraint m=R(e)+n with coframe EOM sufficient to descend exact matter Ward covariance to centered metric stress conservation; otherwise isolate the first unavoidable connection/frame-gauge primitive.",
-      "brief": "00_WORK/tasks/EXP-A4D-PRIMAL-DUAL-HODGE-PARENT-WARD.md"
+      "exit_condition": "Construct or terminally classify a local discrete Cartan/chain transport connection and associative link group acting on the primal/dual cochain system, together with a bounded-stencil equivariant constitutive Hodge map star=S(e,n,Omega) whose flat derivative reproduces the accepted tangent Hodge response and whose curvature absorbs centered-Cartan closure; otherwise isolate the exact local-factorization or structure-group primitive still missing.",
+      "brief": "00_WORK/tasks/EXP-A4D-CARTAN-CHAIN-CONNECTION-REALIZATION.md"
     },
     {
-      "id": "EXP-A4D-CAUSAL-TIME-ROLE-INTERTWINER",
+      "id": "EXP-ATORUS-SPATIAL-CAR-HAMILTONIAN-STRESS",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-MATTER-STRESS-COUPLING-001",
-        "D0-SMOOTH-001",
+        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "Construct or terminally classify the narrow bridge identifying one archive matter Role with the owned causal/Pisot timelike axis without falsely conjugating finite cyclic archive translation to the infinite-order hyperbolic time operator; include the minimum time-unwrapping/orientation data needed to define the spatial T3 carrier and positive Hamiltonian matter passport.",
-      "brief": "00_WORK/tasks/EXP-A4D-CAUSAL-TIME-ROLE-INTERTWINER.md"
+      "exit_condition": "Assuming the explicitly declared same-axis/orientation bridge archive A <-> causal/Pisot e0 and real-time unwrapping to R×T3, reuse the landed carDirac directional decomposition to construct the fixed-time spatial CAR operator, positive Hamiltonian |D_Sigma|, lowest spatial mixed shell, Lorentzian stress components from metric/coframe variation, unitary evolution and the sourced-background interface; terminally isolate the first remaining non-bridge physics modulus.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-SPATIAL-CAR-HAMILTONIAN-STRESS.md"
     },
     {
-      "id": "WRK-A4D-CUBICAL-DIFFERENTIAL-CARTAN",
+      "id": "WRK-A4D-PRIMAL-DUAL-PARENT-ALGEBRA",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
+      "state": "PLANNED",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
-        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
-        "D0-MATTER-STRESS-COUPLING-001"
+        "D0-MATTER-STRESS-COUPLING-001",
+        "D0-ARCHIVE-STRESS-CONSERVATION-001"
       ],
-      "exit_condition": "Lean owns the full CAR anticommutators, literal ArchiveCochain carrier, forward cubical differential with d^2=0 and degree raising, exact centeredDifference=average∘forward identity, forward Cartan operator, and the capstone reconstruction theorem cartanMetricVariation=symmetricRoleGradient, without Hodge-action Ward or physical matter claims.",
-      "brief": "00_WORK/tasks/WRK-A4D-CUBICAL-DIFFERENTIAL-CARTAN.md"
+      "exit_condition": "Lean owns the finite coframe parent-constraint transport no-go on the odd one-role sector, an explicit small-lattice centered-Cartan closure/radius-one no-go, an abstract local mixed primal/dual Hodge parent action with exact Ward invariance under chain-covariance hypotheses, and conditional centered metric-stress divergence descent using the owned symmetricRoleGradient adjoint theorem; no actual connection group or physical Hodge constitutive law is claimed.",
+      "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-PARENT-ALGEBRA.md"
     },
     {
       "id": "WRK-A4D-EXTRA-RAY-FRAME-NOGO",
