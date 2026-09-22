@@ -57,6 +57,18 @@ def oneFormCochain (N : ℕ) (α : LocalRoleVector N) : ArchiveCochain N :=
 def HomogeneousCochain (N k : ℕ) (ψ : ArchiveCochain N) : Prop :=
   ∀ x S, fockDegree S ≠ k → ψ (x, S) = 0
 
+theorem homogeneousCochain_zero (N k : ℕ) :
+    HomogeneousCochain N k (0 : ArchiveCochain N) := by
+  intro x S hS
+  rfl
+
+theorem homogeneousCochain_add (N k : ℕ) (ψ φ : ArchiveCochain N)
+    (hψ : HomogeneousCochain N k ψ)
+    (hφ : HomogeneousCochain N k φ) :
+    HomogeneousCochain N k (ψ + φ) := by
+  intro x S hS
+  simp [hψ x S hS, hφ x S hS]
+
 /-- Archive derivative scale L = N+2. -/
 noncomputable def forwardDifferenceScale (N : ℕ) : ℝ :=
   (archiveFibers N : ℝ)
@@ -264,10 +276,31 @@ theorem dForward_scalar_oneForm_component (N : ℕ)
     (f : ArchiveRolePhaseGroup N → ℝ) (r : Role) :
     oneFormComponent N (dForward N (scalarCochain N f)) r =
       forwardDifference N r f := by
-  -- The only surviving fiber coefficient is
-  -- <{r}| c_s† |vac> = δ_sr.  The finite CAR coefficient theorem above
-  -- makes this a small sum-collapse proof for the local worker to elaborate.
-  sorry
+  classical
+  funext x
+  unfold oneFormComponent dForward forwardCreateDirection
+  have hinner : ∀ s : Role,
+      (∑ ket : ArchiveFockState,
+        carCreate s (singletonFockState r) ket *
+          forwardDifference N s (fun y => scalarCochain N f (y, ket)) x) =
+        roleDelta s r * forwardDifference N s f x := by
+    intro s
+    rw [Finset.sum_eq_single vacuumFockState]
+    · simp [scalarCochain, carCreate_singleton_vacuum]
+    · intro ket _ hket
+      have hz : (fun y : ArchiveRolePhaseGroup N =>
+          scalarCochain N f (y, ket)) = 0 := by
+        funext y
+        simp [scalarCochain, hket]
+      rw [hz, forwardDifference_zero]
+      simp
+    · simp
+  simp_rw [hinner]
+  rw [Finset.sum_eq_single r]
+  · simp [roleDelta]
+  · intro s _ hsr
+    simp [roleDelta, hsr]
+  · simp
 
 /-- Canonical nilpotency.  Algebraically this is the pairwise cancellation of
 commuting forward differences against the creation-creation CAR. -/
