@@ -60,21 +60,20 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-METRIC-ACTION-GAUGE-PROVENANCE",
+      "id": "EXP-A4D-FINITE-LORENTZ-ACTION-SELECTOR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
         "D0-HODGE-LINKS-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Given the minimal 4+6 Role-pair metric carrier identified by E-METPROV, determine whether an owned or minimally extended finite D0 action selects the Lorentz E_eta response and whether a genuine finite redundancy/reparametrization action generates symmetricRoleGradient; otherwise classify the first exact new modelling primitive.",
-      "brief": "00_WORK/tasks/EXP-A4D-METRIC-ACTION-GAUGE-PROVENANCE.md"
+      "exit_condition": "Exhaustively test whether any already-owned finite D0 principle selects beta_N=0 in the exact Lorentz response family c_N(E_eta,N + beta_N E_sp,N), without importing continuum target matching or inventing a new finite symmetry; otherwise terminally classify beta_N as an empirical/bridge/model parameter and identify the minimal selector primitive.",
+      "brief": "00_WORK/tasks/EXP-A4D-FINITE-LORENTZ-ACTION-SELECTOR.md"
     },
     {
-      "id": "EXP-A4D-CAR-MATTER-STATE-ACTION-PROVENANCE",
+      "id": "EXP-A4D-CAR-HODGE-METRIC-ACTION",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
@@ -82,10 +81,10 @@
         "D0-MATTER-STRESS-COUPLING-001",
         "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
         "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+        "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Using the 4D role-phase carrier and 16-state CAR/Fock fibre, construct or terminally classify an actual provenance-bearing local matter state and finite matter action/operator on l2(X_N) tensor Fock whose metric variation could yield a nonzero anomaly-free LocalSymRoleField stress; separate state provenance, explicit CAR Dirac ownership, metric dependence and Ward conservation.",
-      "brief": "00_WORK/tasks/EXP-A4D-CAR-MATTER-STATE-ACTION-PROVENANCE.md"
+      "exit_condition": "Construct or terminally classify the strongest full-metric CAR/exterior action route on X_N: a 4+6 metric-dependent Hodge weight W_m on the 16-state exterior/Fock fibre, the induced finite codifferential/Dirac operator and matter action, and literal metric variation into LocalSymRoleField; separate Riemannian success, Lorentz/Krein obstruction, state-selection dependence and Ward conservation.",
+      "brief": "00_WORK/tasks/EXP-A4D-CAR-HODGE-METRIC-ACTION.md"
     },
     {
       "id": "WRK-A4D-ROLEPAIR-METRIC-CARRIER",
