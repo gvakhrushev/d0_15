@@ -239,12 +239,15 @@ theorem carAnnihilate_degree_lower (r : Role) (bra ket : ArchiveFockState)
   apply h
   simp [hz]
 
+theorem carCreateInt_singleton_vacuum :
+    ∀ r s : Role,
+      carCreateInt r (fockSingletonState s) fockVacuumState = roleDeltaInt r s := by
+  native_decide
+
 theorem carCreate_singleton_vacuum (r s : Role) :
     carCreate r (fockSingletonState s) fockVacuumState = roleDelta r s := by
-  have h :
-      carCreateInt r (fockSingletonState s) fockVacuumState = roleDeltaInt r s := by
-    native_decide
-  have hc := congrArg (fun z : ℤ => (z : ℝ)) h
+  have hc := congrArg (fun z : ℤ => (z : ℝ))
+    (carCreateInt_singleton_vacuum r s)
   simpa using hc
 
 theorem carAnnihilate_vacuum_singleton (r s : Role) :
