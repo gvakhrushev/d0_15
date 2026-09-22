@@ -254,6 +254,20 @@ theorem carAnnihilate_vacuum_singleton (r s : Role) :
     carAnnihilate r fockVacuumState (fockSingletonState s) = roleDelta r s := by
   simpa [carCreate] using carCreate_singleton_vacuum r s
 
+/-- Annihilating a singleton can only land in the vacuum, with the expected role delta. -/
+theorem carAnnihilateInt_singleton :
+    ∀ r b : Role, ∀ bra : ArchiveFockState,
+      carAnnihilateInt r bra (fockSingletonState b) =
+        roleDeltaInt r b * fockIdentityInt bra fockVacuumState := by
+  native_decide
+
+theorem carAnnihilate_singleton (r b : Role) (bra : ArchiveFockState) :
+    carAnnihilate r bra (fockSingletonState b) =
+      roleDelta r b * fockIdentity bra fockVacuumState := by
+  have h := congrArg (fun z : ℤ => (z : ℝ))
+    (carAnnihilateInt_singleton r b bra)
+  simpa using h
+
 /-- **D0-ARCHIVE-CAR-RELATIONS-001 (Owner)**:
 The four-mode creation and annihilation operators satisfy the exact finite CAR. -/
 theorem archive_car_relations_owner :
