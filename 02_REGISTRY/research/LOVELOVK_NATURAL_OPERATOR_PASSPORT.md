@@ -80,7 +80,7 @@ Only after such an (E_N) exists should D0 launch the operator-convergence/natura
 
 ## Registry truth repair
 
-The current `D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001` claim is overstated: literal Lean proves only edge-count/dimension arithmetic, not the advertised linear bijection. CONTROL demotes it to PROOF-TARGET until an explicit map and inverse are formalized.
+The claim `D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001` was previously demoted because the old owner proved only edge-count/dimension arithmetic. The current Lean owner now constructs the typed undirected edge carrier, the symmetric row-sum-zero supported matrix subspace, and an explicit two-sided linear equivalence between them. This remains finite algebra only; it is not a continuum naturality or curvature result.
 
 Terminal verdict:
 [

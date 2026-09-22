@@ -1354,7 +1354,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-TENSOR-SEAM-CROSS-ROLE-CURVATURE-NOGO-001", moduleName := "D0.Geometry.ArchiveTensorSeamCrossRoleNoGo",
       theoremName := "cross_role_variation_vanishes;tensor_seam_cross_role_nogo", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001", moduleName := "D0.Geometry.ArchiveLocalLaplacianVariation",
-      theoremName := "archive_local_laplacian_variation_isomorphism_owner", status := ClaimStatus.leanCoreProved },
+      theoremName := "archiveLocalLaplacianVariationEquiv;archive_local_laplacian_variation_isomorphism_owner;recover_forward;forward_recover", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-STRESS-EDGE-READOUT-001", moduleName := "D0.Geometry.ArchiveStressEdgeReadout",
       theoremName := "archive_stress_edge_readout_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-MATTER-LOCALIZATION-NONUNIQUENESS-NOGO-001", moduleName := "D0.Matter.MatterLocalizationNonuniquenessNoGo",

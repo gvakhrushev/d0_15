@@ -92,7 +92,7 @@
       "id": "WRK-ARCHIVE-4D-LOCAL-LAPLACIAN-VARIATION",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001",
         "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001"
