@@ -7,17 +7,23 @@ WORKER
 CTRL-GRAVITY-DYNAMICS-CLOSURE
 
 ## State
-PLANNED
+IN_PROGRESS
 
-Do not dispatch this worker until a current worker slot is free.
+Local verification phase is now active.
 
-Dispatch it separately, never bundled with another worker prompt.
+Use the existing cloud draft as the starting implementation:
 
-If two workers are active simultaneously they must use separate git worktrees/checkouts. Sharing the external Lake/Mathlib cache is allowed and preferred.
+- draft branch: `draft/a4d-cubical-differential-cartan`
+- cloud draft head observed by CONTROL: `7dea8207bb297dd91ac64b112c6b024a554047a8`
+- the draft contains only the intended three owner files and no shared metadata edits.
+
+Do not reimplement from scratch. Rebase/merge the draft source commits onto fresh canonical main in a dedicated local work branch, compile first, and fix concrete Lean/API failures before redesigning anything.
+
+This is the only active local worker. Preserve the shared Lean/Mathlib cache.
 
 ## Cloud draft phase
 
-A cloud formalizer MAY prepare a candidate implementation for this PLANNED task before a local worker slot is free.
+A cloud formalizer has prepared the candidate implementation. This section records the provenance of the draft; the task is now in local verification.
 
 Rules:
 

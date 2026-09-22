@@ -89,7 +89,7 @@
       "id": "WRK-A4D-CUBICAL-DIFFERENTIAL-CARTAN",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
@@ -109,18 +109,6 @@
       ],
       "exit_condition": "Lean owns exact finite-dimensional witnesses that the Euclidean E_perp projector changes under an orthogonal frame change preserving the metric and that the Lorentz E_sp time/spatial projector changes under an exact rational boost preserving eta, without claiming a continuum manifold or full naturality theorem.",
       "brief": "00_WORK/tasks/WRK-A4D-EXTRA-RAY-FRAME-NOGO.md"
-    },
-    {
-      "id": "WRK-GEO-CAR-DIRAC-PARITY",
-      "class": "WORKER",
-      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
-        "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001"
-      ],
-      "exit_condition": "Current-main ArchiveCARDirac contains the explicit supported CAR Dirac operator, its self-adjointness theorem, a typed parity operator Γ_F and the exact anticommutation Γ_F D = −D Γ_F; any ± spectral-pairing consequence is added only if it follows on the actually typed finite carrier without importing an unstated spectral theorem.",
-      "brief": "00_WORK/tasks/WRK-GEO-CAR-DIRAC-PARITY.md"
     },
     {
       "id": "WRK-CERT-ARTIFACT-FRESHNESS",
