@@ -54,6 +54,18 @@ Run mandatory integration checks:
 6. `python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py`
 7. `lake build D0.All` (when Lean-import-reachable formalization scope is touched)
 
+### Lean build-cache policy (MANDATORY)
+
+For ordinary `WORKER` / `EXPENSIVE` implementation loops, builds are **incremental by default**.
+
+- During editing, build the narrowest affected target/module first.
+- Before PR/REVIEW, run one incremental `lake build D0.All` if Lean-import-reachable scope changed.
+- Do **not** run `lake clean`, delete `.lake`, remove the Mathlib cache, or otherwise force a cold rebuild as routine proof evidence.
+- A cold rebuild is a special CONTROL/release diagnostic only: use it after a Lean/Mathlib/toolchain or dependency-manifest change, after confirmed cache corruption/staleness, or when CONTROL explicitly requests cache-independence evidence.
+- GitHub `lean-build` remains the independent integration gate and already uses the pinned Mathlib cache on a fresh checkout.
+
+Repeated `lake build D0.All` after source changes may reuse the local Lake cache; this is expected and desirable. Cache reuse does not weaken theorem checking for changed/import-reachable modules.
+
 Commit one reviewable unit; emit the report template below.
 
 ---
@@ -85,6 +97,36 @@ risk.
 - CMB `n_s` is **not** determined by the finite spectrum without a canonical smoothing owner.
 
 ---
+
+## Cloud formalization draft phase
+
+A \`PLANNED\` worker may have its Lean implementation prepared in advance by a **cloud formalizer** that does not have the local warm Lean/Mathlib cache.
+
+This is a draft phase, not worker acceptance:
+
+- keep the manifest task state \`PLANNED\`;
+- use a dedicated branch such as \`draft/<task-slug>\` from the stated canonical baseline;
+- prefer isolated owner modules and theorem proofs; avoid editing \`manifest.json\`, \`STATUS.md\`, generated views, claim status, or release metadata;
+- run narrow Lean checks only if the cloud environment can do so cheaply; a full \`D0.All\` build is not required;
+- never claim \`LEAN_PROVED\`/CORE or move the task to \`REVIEW\`;
+- commit and push the candidate implementation;
+- finish with a \`CLOUD_DRAFT_READY\` handoff containing base/head SHA, changed files, intended capstones, checks actually run, unchecked gates, and known API/proof risks.
+
+When a local worker slot opens, the worker starts from the cloud draft branch (rebased/merged onto fresh canonical main as needed), tries to compile the draft before redesigning it, fixes concrete Lean/API failures, performs the normal incremental verification gates, updates shared metadata, then moves the task to \`REVIEW\`.
+
+
+## Worker checkout / dispatch policy
+
+Terminology in user-facing coordination:
+- manifest class \`WORKER\` = **worker**;
+- manifest class \`EXPENSIVE\` = **researcher**.
+
+Workers mutate repository state; researchers normally do not.
+
+Two workers may execute concurrently only when they use separate git worktrees/checkouts. They may intentionally share the external Lake/Mathlib cache. If only one checkout/working directory is available, worker execution is sequential.
+
+Dispatch each worker task separately. Do not put two worker launch prompts into one combined packet. This keeps branch ownership, generated metadata, and shared-cache behavior explicit.
+
 
 ## Lean integration recurring fixes
 
