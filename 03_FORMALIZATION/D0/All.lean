@@ -270,6 +270,9 @@ import D0.Gauge.SMCharges
 import D0.Gauge.SMGaugeDecomposition
 import D0.Gauge.WilsonLinkGaugeCovariance
 import D0.Gauge.YangMillsKillingPositivity
+import D0.Geometry.A4DCenteredCartanClosureNoGo
+import D0.Geometry.A4DCoframeParentConstraint
+import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Geometry.Archive1DCochainRefinement
@@ -277,6 +280,7 @@ import D0.Geometry.Archive1Dto4DRGLiftNoGo
 import D0.Geometry.Archive4DCurvaturePerturbationBridge
 import D0.Geometry.ArchiveActionFunctional
 import D0.Geometry.ArchiveBianchiIdentity
+import D0.Geometry.ArchiveCARDegreePreserving
 import D0.Geometry.ArchiveCARDirac
 import D0.Geometry.ArchiveCARFockCarrier
 import D0.Geometry.ArchiveCARRelations
@@ -295,6 +299,8 @@ import D0.Geometry.ArchiveFieldEquation
 import D0.Geometry.ArchiveFlatProductBondingNoGo
 import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveHeatTrace
+import D0.Geometry.ArchiveHodgeCARDirac
+import D0.Geometry.ArchiveHodgeCARDiracSquare
 import D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo
 import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
 import D0.Geometry.ArchiveJYToPlaquetteBoundary
@@ -338,6 +344,7 @@ import D0.Geometry.ConformalLaplacianTrace
 import D0.Geometry.EdgeStiffnessOrigin
 import D0.Geometry.FibonacciAnyonUniqueness
 import D0.Geometry.FibonacciBratteliRefinement
+import D0.Geometry.FinitePrimalDualHodgeParent
 import D0.Geometry.FiniteSpin2DOF
 import D0.Geometry.FiniteSpin2Dynamics
 import D0.Geometry.FiniteSpin2WaveOperator
@@ -371,6 +378,7 @@ import D0.Geometry.TorusShellAttachment
 import D0.Gravity.A1RieszMismatch
 import D0.Gravity.A2CompensatorNoether
 import D0.Gravity.A4DLinearizedMetricResponse
+import D0.Gravity.A4DParentWardStressDescent
 import D0.Gravity.BlackHoleCapacityA4
 import D0.Gravity.BoundaryRelaxationSpectrum
 import D0.Gravity.CompactnessLimit

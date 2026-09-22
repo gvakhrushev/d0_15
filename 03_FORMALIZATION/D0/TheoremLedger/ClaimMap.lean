@@ -1300,7 +1300,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-CAR-RELATIONS-001", moduleName := "D0.Geometry.ArchiveCARRelations",
       theoremName := "archive_car_relations_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-CAR-DIRAC-OWNER-001", moduleName := "D0.Geometry.ArchiveCARDirac",
-      theoremName := "dirac_derivative_scale_eq_fibers;carDirac_self_adjoint;archive_car_dirac_owner", status := ClaimStatus.leanCoreProved },
+      theoremName := "dirac_derivative_scale_eq_fibers;carDirac_self_adjoint;archive_car_dirac_owner;hoppingCarDirac_eq_carDirac", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-CAR-DIRAC-SQUARE-001", moduleName := "D0.Geometry.ArchiveCARDirac",
       theoremName := "carDiracSquareScalarSectorFactor_eq_fock_dim;archive_car_dirac_square_owner", status := ClaimStatus.openObligation },
     { claimId := "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001", moduleName := "D0.Geometry.ArchiveCARDirac",

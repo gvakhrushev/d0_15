@@ -98,6 +98,8 @@ Baseline mathematical snapshot for the gravity lane: `e6d9d4b7f17a4cf2f478cb737c
 
 ## Current gravity closure map
 
+| E-HODGE-CONN — Hodge constitutive/connection closure | PENDING / HODGE-CONSTITUTIVE-PRIMITIVE-REQUIRED | Flat `hodgeCarDirac` has a Lean counting adjoint and odd fermionic parity, and is not `hoppingCarDirac`. The scalar difference Laplacian and its `L=2` diagonal double-count are Lean-owned. The degree-preserving CAR envelope has dimension 70 and the stated `E_sr` bracket. The mixed parent Ward, five-cycle centered closure no-go, 1+3+6 Frobenius factor, temporal probe, shear-versus-axis no-go, and noncommuting lapse witness are Lean-owned. Durable packet: `02_REGISTRY/research/MEMO_53_A4D_HODGE_CONSTITUTIVE_CONNECTION_CLOSURE.md`. | `D_H^2` is not proved. `S(e,n,Ω)` and `δ_ξ Ω` are not derived. No rank-96 shell or `E→2π` claim follows. |
+
 The finite lane should presently be read as:
 
 ```text
