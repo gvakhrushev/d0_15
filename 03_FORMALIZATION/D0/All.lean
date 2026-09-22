@@ -54,6 +54,9 @@ import D0.Bridge.RieffelGHPBridge
 import D0.Bridge.SICalibrationBoundary
 import D0.Bridge.SICalibrationClosure
 import D0.Bridge.SmoothMetricBridge
+import D0.Bridge.T4LocalRoleFrame
+import D0.Bridge.T4ResponseReconstruction
+import D0.Bridge.T4TypedGeometry
 import D0.Bridge.TickGaugeLorentz
 import D0.Bridge.TomitaTakesakiBridge
 import D0.Bridge.VerlindeEntropicBridge

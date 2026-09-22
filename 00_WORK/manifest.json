@@ -103,7 +103,7 @@
       "id": "WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-SMOOTH-MANIFOLD-PASSPORT-001",
         "D0-SMOOTH-001",
