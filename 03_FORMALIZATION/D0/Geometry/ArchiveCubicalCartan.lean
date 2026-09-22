@@ -21,6 +21,185 @@ covariance, stress conservation, continuum Diff invariance, state selection, or 
 coupling.
 -/
 
+/-- Apply one Fock annihilation matrix at each site. -/
+noncomputable def annihilateAction (N : ℕ) (r : Role)
+    (ψ : ArchiveCochain N) : ArchiveCochain N :=
+  fun p => ∑ ket : ArchiveFockState, carAnnihilate r p.2 ket * ψ (p.1, ket)
+
+@[simp] theorem annihilateAction_zero (N : ℕ) (r : Role) :
+    annihilateAction N r (0 : ArchiveCochain N) = 0 := by
+  funext p
+  simp [annihilateAction]
+
+theorem annihilateAction_add (N : ℕ) (r : Role)
+    (ψ φ : ArchiveCochain N) :
+    annihilateAction N r (ψ + φ) =
+      annihilateAction N r ψ + annihilateAction N r φ := by
+  funext p
+  simp [annihilateAction, Finset.mul_sum]
+  ring
+
+theorem annihilateAction_smul (N : ℕ) (r : Role) (a : ℝ)
+    (ψ : ArchiveCochain N) :
+    annihilateAction N r (a • ψ) = a • annihilateAction N r ψ := by
+  funext p
+  simp [annihilateAction, Finset.mul_sum]
+  ring
+
+theorem annihilateAction_sum {ι : Type*} [Fintype ι] (N : ℕ) (r : Role)
+    (F : ι → ArchiveCochain N) :
+    annihilateAction N r (∑ i, F i) =
+      ∑ i, annihilateAction N r (F i) := by
+  classical
+  have hfin : ∀ s : Finset ι,
+      annihilateAction N r (∑ i in s, F i) =
+        ∑ i in s, annihilateAction N r (F i) := by
+    intro s
+    induction s using Finset.induction_on with
+    | empty =>
+        simp [annihilateAction_zero]
+    | @insert a s ha ih =>
+        rw [Finset.sum_insert ha, annihilateAction_add,
+          Finset.sum_insert ha, ih]
+  exact hfin Finset.univ
+
+theorem forwardSite_annihilateAction_comm (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) :
+    forwardSite N r (annihilateAction N s ψ) =
+      annihilateAction N s (forwardSite N r ψ) := by
+  classical
+  funext p
+  change
+    forwardDifference N r
+        (fun x => ∑ ket : ArchiveFockState,
+          carAnnihilate s p.2 ket * ψ (x, ket)) p.1 =
+      ∑ ket : ArchiveFockState,
+        carAnnihilate s p.2 ket *
+          forwardDifference N r (fun x => ψ (x, ket)) p.1
+  exact congrFun
+    (forwardDifference_weighted_sum N r
+      (fun ket : ArchiveFockState => carAnnihilate s p.2 ket)
+      (fun ket x => ψ (x, ket))) p.1
+
+theorem annihilateAction_createAction_comp_apply (N : ℕ) (s r : Role)
+    (ψ : ArchiveCochain N) (p : ArchiveCochainBasis N) :
+    annihilateAction N s (createAction N r ψ) p =
+      ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState,
+          carAnnihilate s p.2 mid * carCreate r mid ket) *
+            ψ (p.1, ket) := by
+  classical
+  unfold annihilateAction createAction
+  calc
+    (∑ mid : ArchiveFockState,
+      carAnnihilate s p.2 mid *
+        (∑ ket : ArchiveFockState,
+          carCreate r mid ket * ψ (p.1, ket))) =
+      ∑ mid : ArchiveFockState, ∑ ket : ArchiveFockState,
+        carAnnihilate s p.2 mid *
+          (carCreate r mid ket * ψ (p.1, ket)) := by
+            apply Finset.sum_congr rfl
+            intro mid hmid
+            rw [Finset.mul_sum]
+    _ = ∑ ket : ArchiveFockState, ∑ mid : ArchiveFockState,
+        carAnnihilate s p.2 mid *
+          (carCreate r mid ket * ψ (p.1, ket)) := by
+            rw [Finset.sum_comm]
+    _ = ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState,
+          carAnnihilate s p.2 mid * carCreate r mid ket) *
+            ψ (p.1, ket) := by
+            apply Finset.sum_congr rfl
+            intro ket hket
+            rw [Finset.sum_mul]
+            apply Finset.sum_congr rfl
+            intro mid hmid
+            ring
+
+theorem createAction_annihilateAction_comp_apply (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) (p : ArchiveCochainBasis N) :
+    createAction N r (annihilateAction N s ψ) p =
+      ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState,
+          carCreate r p.2 mid * carAnnihilate s mid ket) *
+            ψ (p.1, ket) := by
+  classical
+  unfold createAction annihilateAction
+  calc
+    (∑ mid : ArchiveFockState,
+      carCreate r p.2 mid *
+        (∑ ket : ArchiveFockState,
+          carAnnihilate s mid ket * ψ (p.1, ket))) =
+      ∑ mid : ArchiveFockState, ∑ ket : ArchiveFockState,
+        carCreate r p.2 mid *
+          (carAnnihilate s mid ket * ψ (p.1, ket)) := by
+            apply Finset.sum_congr rfl
+            intro mid hmid
+            rw [Finset.mul_sum]
+    _ = ∑ ket : ArchiveFockState, ∑ mid : ArchiveFockState,
+        carCreate r p.2 mid *
+          (carAnnihilate s mid ket * ψ (p.1, ket)) := by
+            rw [Finset.sum_comm]
+    _ = ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState,
+          carCreate r p.2 mid * carAnnihilate s mid ket) *
+            ψ (p.1, ket) := by
+            apply Finset.sum_congr rfl
+            intro ket hket
+            rw [Finset.sum_mul]
+            apply Finset.sum_congr rfl
+            intro mid hmid
+            ring
+
+/-- Literal mixed CAR lifted from the Fock matrices to cochain operators. -/
+theorem annihilate_createAction_anticommute (N : ℕ) (s r : Role)
+    (ψ : ArchiveCochain N) :
+    annihilateAction N s (createAction N r ψ) +
+      createAction N r (annihilateAction N s ψ) =
+        roleDelta s r • ψ := by
+  classical
+  funext p
+  simp only [Pi.add_apply, Pi.smul_apply]
+  rw [annihilateAction_createAction_comp_apply,
+    createAction_annihilateAction_comp_apply]
+  rw [← Finset.sum_add_distrib]
+  calc
+    (∑ ket : ArchiveFockState,
+      (∑ mid : ArchiveFockState,
+          carAnnihilate s p.2 mid * carCreate r mid ket) * ψ (p.1, ket) +
+        (∑ mid : ArchiveFockState,
+          carCreate r p.2 mid * carAnnihilate s mid ket) * ψ (p.1, ket)) =
+      ∑ ket : ArchiveFockState,
+        (roleDelta s r * fockIdentity p.2 ket) * ψ (p.1, ket) := by
+          apply Finset.sum_congr rfl
+          intro ket hket
+          rw [← add_mul]
+          have hcar := car_mixed_anticommutator s r p.2 ket
+          unfold anticommutator at hcar
+          rw [hcar]
+    _ = roleDelta s r * ψ (p.1, p.2) := by
+          rw [Finset.sum_eq_single p.2]
+          · simp [fockIdentity]
+          · intro ket _ hket
+            simp [fockIdentity, hket, Ne.symm hket]
+          · simp
+
+/-- A forward-create direction and annihilation satisfy the mixed CAR after transport. -/
+theorem forwardCreateDirection_mixed (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) :
+    forwardCreateDirection N r (annihilateAction N s ψ) +
+      annihilateAction N s (forwardCreateDirection N r ψ) =
+        roleDelta s r • forwardSite N r ψ := by
+  change
+    createAction N r
+        (forwardSite N r (annihilateAction N s ψ)) +
+      annihilateAction N s
+        (createAction N r (forwardSite N r ψ)) =
+      roleDelta s r • forwardSite N r ψ
+  rw [forwardSite_annihilateAction_comm N r s ψ]
+  simpa [add_comm] using
+    annihilate_createAction_anticommute N s r (forwardSite N r ψ)
+
 /-- CAR contraction with a site-dependent role vector. -/
 noncomputable def contraction (N : ℕ) (xi : LocalRoleVector N)
     (ψ : ArchiveCochain N) : ArchiveCochain N :=
@@ -229,6 +408,13 @@ theorem dForward_cartan_comm (N : ℕ) (xi : LocalRoleVector N)
 def constantRoleVector (N : ℕ) (v : Role → ℝ) : LocalRoleVector N :=
   fun _ r => v r
 
+theorem contraction_constantRoleVector_eq (N : ℕ) (v : Role → ℝ)
+    (ψ : ArchiveCochain N) :
+    contraction N (constantRoleVector N v) ψ =
+      ∑ s : Role, v s • annihilateAction N s ψ := by
+  funext p
+  simp [contraction, constantRoleVector, annihilateAction, Finset.sum_apply]
+
 /-- Pure forward transport by a constant role vector. -/
 noncomputable def constantForwardTransport (N : ℕ) (v : Role → ℝ)
     (ψ : ArchiveCochain N) : ArchiveCochain N :=
@@ -236,14 +422,61 @@ noncomputable def constantForwardTransport (N : ℕ) (v : Role → ℝ)
     ∑ r : Role,
       v r * forwardDifference N r (fun x => ψ (x, p.2)) p.1
 
+theorem constantForwardTransport_eq (N : ℕ) (v : Role → ℝ)
+    (ψ : ArchiveCochain N) :
+    constantForwardTransport N v ψ =
+      ∑ r : Role, v r • forwardSite N r ψ := by
+  funext p
+  simp [constantForwardTransport, forwardSite, Finset.sum_apply]
+
 /-- Mixed CAR reduces the constant-vector Cartan operator to ordinary forward transport. -/
 theorem cartanForward_constant_vector (N : ℕ) (v : Role → ℝ)
     (ψ : ArchiveCochain N) :
     cartanForward N (constantRoleVector N v) ψ =
       constantForwardTransport N v ψ := by
-  -- Expand d i + i d; translation commutes with the constant coefficients.
-  -- The Fock coefficient is {c_r,c_s†}=δ_rs I.
-  sorry
+  classical
+  unfold cartanForward
+  rw [contraction_constantRoleVector_eq]
+  rw [dForward_sum]
+  simp_rw [dForward_smul]
+  rw [contraction_constantRoleVector_eq]
+  simp_rw [dForward_eq_sum_directions]
+  simp_rw [annihilateAction_sum]
+  rw [constantForwardTransport_eq]
+  funext p
+  simp only [Finset.sum_apply, Pi.smul_apply, Pi.add_apply]
+  calc
+    (∑ s : Role, v s *
+        (∑ r : Role, forwardCreateDirection N r (annihilateAction N s ψ) p)) +
+      ∑ s : Role, v s *
+        (∑ r : Role, annihilateAction N s (forwardCreateDirection N r ψ) p) =
+      ∑ s : Role, ∑ r : Role,
+        v s * (forwardCreateDirection N r (annihilateAction N s ψ) p +
+          annihilateAction N s (forwardCreateDirection N r ψ) p) := by
+            rw [← Finset.sum_add_distrib]
+            apply Finset.sum_congr rfl
+            intro s hs
+            rw [Finset.mul_sum, Finset.mul_sum, ← Finset.sum_add_distrib]
+            apply Finset.sum_congr rfl
+            intro r hr
+            ring
+    _ = ∑ s : Role, ∑ r : Role,
+        v s * (roleDelta s r * forwardSite N r ψ p) := by
+            apply Finset.sum_congr rfl
+            intro s hs
+            apply Finset.sum_congr rfl
+            intro r hr
+            have hpair := congrFun (forwardCreateDirection_mixed N r s ψ) p
+            simp only [Pi.add_apply, Pi.smul_apply] at hpair
+            rw [hpair]
+    _ = ∑ r : Role, v r * forwardSite N r ψ p := by
+            apply Finset.sum_congr rfl
+            intro s hs
+            rw [Finset.sum_eq_single s]
+            · simp [roleDelta]
+            · intro r _ hrs
+              simp [roleDelta, Ne.symm hrs]
+            · simp
 
 /-! ## Constant coframes and centered reconstruction -/
 
