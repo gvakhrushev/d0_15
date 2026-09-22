@@ -21,6 +21,20 @@ Optional acceleration:
 ../tools/lean_dev.ps1 exe cache get
 ```
 
+## Build-cache policy
+
+Normal development and worker verification should preserve the Lake/Mathlib cache.
+
+Use:
+
+1. a narrow target build while iterating;
+2. one incremental \`lake build D0.All\` before PR/REVIEW;
+3. the GitHub \`D0 Lean build\` check as the independent integration build.
+
+Do **not** run \`lake clean\`, remove \`.lake\`, or delete the global Mathlib cache merely to obtain "clean evidence". A forced cold rebuild is reserved for toolchain/dependency changes, confirmed cache corruption, or an explicit CONTROL/release request.
+
+The "Rebuild from a clean checkout" recipe below is recovery/bootstrap documentation, not a per-worker Definition of Done.
+
 Known Windows cache issue: `lake exe cache get` may fail when the global
 mathlib cache under `~/.cache/mathlib` is inconsistent.  This is a
 precompiled-cache download/decompression issue, not a D0 proof-checking

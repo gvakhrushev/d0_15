@@ -54,6 +54,18 @@ Run mandatory integration checks:
 6. `python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py`
 7. `lake build D0.All` (when Lean-import-reachable formalization scope is touched)
 
+### Lean build-cache policy (MANDATORY)
+
+For ordinary `WORKER` / `EXPENSIVE` implementation loops, builds are **incremental by default**.
+
+- During editing, build the narrowest affected target/module first.
+- Before PR/REVIEW, run one incremental `lake build D0.All` if Lean-import-reachable scope changed.
+- Do **not** run `lake clean`, delete `.lake`, remove the Mathlib cache, or otherwise force a cold rebuild as routine proof evidence.
+- A cold rebuild is a special CONTROL/release diagnostic only: use it after a Lean/Mathlib/toolchain or dependency-manifest change, after confirmed cache corruption/staleness, or when CONTROL explicitly requests cache-independence evidence.
+- GitHub `lean-build` remains the independent integration gate and already uses the pinned Mathlib cache on a fresh checkout.
+
+Repeated `lake build D0.All` after source changes may reuse the local Lake cache; this is expected and desirable. Cache reuse does not weaken theorem checking for changed/import-reachable modules.
+
 Commit one reviewable unit; emit the report template below.
 
 ---

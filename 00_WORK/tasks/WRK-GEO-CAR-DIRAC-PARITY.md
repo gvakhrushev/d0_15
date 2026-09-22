@@ -32,3 +32,17 @@ Reimplement the explicit CAR Dirac operator, prove its self-adjointness, formali
 
 ## Exit Condition
 Current-main ArchiveCARDirac contains the explicit supported CAR Dirac operator, its self-adjointness theorem, a typed parity operator Γ_F and the exact anticommutation Γ_F D = −D Γ_F; any ± spectral-pairing consequence is added only if it follows on the actually typed finite carrier without importing an unstated spectral theorem.
+
+## Lean build-cache policy
+
+This worker must preserve the local Lean/Mathlib cache.
+
+- Iterate with the narrowest target/module build.
+- After the implementation stabilizes, run one incremental \`lake build D0.All\`.
+- Run the normal guards/generated-view/no-sorry/axiom checks required by scope.
+- **Do not run \`lake clean\`, delete \`.lake\`, or clear the Mathlib cache for routine evidence.**
+- A cold rebuild is only for an explicit CONTROL/release request, a toolchain/dependency-manifest change, or confirmed cache corruption.
+- Remote GitHub \`lean-build\` is the independent integration build.
+
+If a long cold build was already started before reading this policy and no source change depends on its result, it may be cancelled rather than treated as mandatory evidence.
+

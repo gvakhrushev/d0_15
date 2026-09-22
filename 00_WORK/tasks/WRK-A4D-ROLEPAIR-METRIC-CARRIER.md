@@ -72,3 +72,17 @@ Do not claim:
 Run target build, `lake build D0.All`, guards/generated views, no-sorry scan and capstone `#print axioms`.
 
 Move task to REVIEW, open PR and STOP.
+
+## Lean build-cache policy
+
+This worker must preserve the local Lean/Mathlib cache.
+
+- Iterate with the narrowest target/module build.
+- After the implementation stabilizes, run one incremental \`lake build D0.All\`.
+- Run the normal guards/generated-view/no-sorry/axiom checks required by scope.
+- **Do not run \`lake clean\`, delete \`.lake\`, or clear the Mathlib cache for routine evidence.**
+- A cold rebuild is only for an explicit CONTROL/release request, a toolchain/dependency-manifest change, or confirmed cache corruption.
+- Remote GitHub \`lean-build\` is the independent integration build.
+
+If a long cold build was already started before reading this policy and no source change depends on its result, it may be cancelled rather than treated as mandatory evidence.
+
