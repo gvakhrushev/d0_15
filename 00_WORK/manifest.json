@@ -60,30 +60,31 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-ATORUS-TYPED-RESPONSE-RECONSTRUCTION",
+      "id": "EXP-ATORUS-NORMAL-SAMPLING-PROVENANCE-GAUGE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-SMOOTH-MANIFOLD-PASSPORT-001",
         "D0-SMOOTH-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
+        "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Produce a Lean-ready typed fixed-T4 local grid/frame, arbitrary-Lorentz-metric sampling and pointwise Sym^2(Role)-response reconstruction design with exact pullback squares, or isolate the first concrete Mathlib/type-theoretic obstruction preventing these maps from being actual repository objects.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-TYPED-RESPONSE-RECONSTRUCTION.md"
+      "exit_condition": "Classify whether metric-normal local sampling/exponential-frame reconstruction is merely a coordinate/gauge realization of an intrinsic metric-only finite-to-continuum response or a genuinely new modelling input; determine whether different admissible normal realizations yield the same estimator and isolate any remaining provenance theorem needed to interpret the finite E_eta response as D0 gravity rather than an externally chosen numerical scheme.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-NORMAL-SAMPLING-PROVENANCE-GAUGE.md"
     },
     {
-      "id": "EXP-ATORUS-NORMAL-JET-EINSTEIN-BRIDGE",
+      "id": "EXP-ATORUS-MATTER-STRESS-EINSTEIN-COUPLING",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-SPECTRAL-EINSTEIN-001",
+        "D0-MATTER-STRESS-COUPLING-001",
+        "D0-ARCHIVE-STRESS-CONSERVATION-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
-        "D0-SMOOTH-001"
+        "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Determine whether the centered-difference Lorentz linearized response, sampled in metric normal coordinates on fixed T4, yields a theorem-ready second-order-consistent local tensor estimator whose frame-erased limit is the Einstein principal response / Einstein tensor at the base point without circularly assuming the desired field equation; classify the exact bridge assumptions and remaining nonlinear gap.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-NORMAL-JET-EINSTEIN-BRIDGE.md"
+      "exit_condition": "Determine whether any currently owned nonzero D0 matter/archive source can be typed, reconstructed and converged on the same fixed-T4 symmetric-tensor carrier as the gravity estimator to produce a conserved continuum T_ab and a sourced equation E_ab=kappa T_ab; otherwise identify the first exact source-carrier/selector/coupling bridge and whether it is already terminally no-go under A-STRESS/A-SOURCE.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-MATTER-STRESS-EINSTEIN-COUPLING.md"
     },
     {
       "id": "WRK-A4D-LINEARIZED-RESPONSE-SEED",
@@ -96,6 +97,19 @@
       ],
       "exit_condition": "Lean owns one explicit Euclidean centered-difference local Sym^2(Role) response E_delta on the sitewise role tensor carrier, with exact local tensor symmetry, gauge nullity, local divergence identity, self-adjoint quadratic action/first variation, radius-two locality, small-cycle guard and a nonzero second-difference control, without any claim of uniqueness, Lorentz covariance, continuum Einstein interpretation or Lovelock naturality.",
       "brief": "00_WORK/tasks/WRK-A4D-LINEARIZED-RESPONSE-SEED.md"
+    },
+    {
+      "id": "WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+        "D0-SMOOTH-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+      ],
+      "exit_condition": "Lean owns a concrete smooth fixed T4, actual symmetric covariant tangent 2-tensors, an actual smooth Lorentz metric structure, local Role-labelled frames/stencils, finite metric sampling, pointwise response reconstruction, and at least the center-frame/reconstruction pullback square, without any limit/naturality/Lovelock claim.",
+      "brief": "00_WORK/tasks/WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION.md"
     },
     {
       "id": "WRK-A4D-EXTRA-RAY-FRAME-NOGO",
