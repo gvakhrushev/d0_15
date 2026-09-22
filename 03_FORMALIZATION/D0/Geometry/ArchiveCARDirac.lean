@@ -363,7 +363,15 @@ theorem fock_parity_anticommutes_with_gamma (r : Role) :
   unfold fockGamma
   by_cases h_ann : carAnnihilate r bra ket = 0
   · by_cases h_cre : carCreate r bra ket = 0
-    · simp [h_ann, h_cre]
+    · have h_ann_cast : (carAnnihilateInt r bra ket : ℝ) = 0 := by
+        simpa only [carAnnihilate_eq_intCast] using h_ann
+      have h_cre_cast : (carCreateInt r bra ket : ℝ) = 0 := by
+        simpa only [carCreate_eq_intCast] using h_cre
+      have h_ann_int : carAnnihilateInt r bra ket = 0 := by
+        exact_mod_cast h_ann_cast
+      have h_cre_int : carCreateInt r bra ket = 0 := by
+        exact_mod_cast h_cre_cast
+      simp [h_ann, h_cre, h_ann_int, h_cre_int]
     · unfold carCreate at h_cre
       unfold carAnnihilate at h_cre
       split_ifs at h_cre with h_cond
