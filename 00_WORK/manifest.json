@@ -60,45 +60,43 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-LOCAL-GRAVITY-RESPONSE-SEED",
+      "id": "EXP-A4D-LINEARIZED-NOETHER-UNIQUENESS",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
+        "D0-HODGE-LINKS-001",
         "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
-        "D0-ARCHIVE-STRESS-CONSERVATION-001",
-        "D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001",
-        "D0-HODGE-LINKS-001"
+        "D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001"
       ],
-      "exit_condition": "Construct or terminally refute a single refinement-indexed 4D local finite gravity response seed on the role-product carrier that has action provenance, a genuine local symmetric tensor fibre, metric-only finite dependence, nontrivial second-metric-difference structure, and one discrete Noether/divergence identity on that same response object.",
-      "brief": "00_WORK/tasks/EXP-A4D-LOCAL-GRAVITY-RESPONSE-SEED.md"
+      "exit_condition": "Classify the most general translation-invariant local degree-two linear operator on sitewise Sym^2(Role) metric perturbations and determine whether finite metric-gauge nullity/divergence, self-adjointness and Role isotropy force the linearized Einstein/Fierz-Pauli response uniquely up to scale, while separating the conditional uniqueness theorem from the still-unowned gauge principle.",
+      "brief": "00_WORK/tasks/EXP-A4D-LINEARIZED-NOETHER-UNIQUENESS.md"
     },
     {
-      "id": "EXP-ATORUS-DIRECT-LORENTZ-CONTINUUM-REALIZATION",
+      "id": "EXP-ATORUS-LOVELOVK-LOCAL-UNIVERSALITY",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001",
-        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
-        "D0-GHP-GOLDEN-CAUCHY-SEQUENCE-001",
         "D0-SMOOTH-MANIFOLD-PASSPORT-001",
-        "D0-SMOOTH-001"
+        "D0-SMOOTH-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
+        "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Determine whether the explicit archive role-phase cyclic product tower admits a direct typed continuum realization as a smooth four-torus/testbed with explicit finite-to-continuum point maps and a typed Lorentz metric structure, bypassing proposition-only Rieffel/Connes bridge shells without silently promoting the result to physical global spacetime.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-DIRECT-LORENTZ-CONTINUUM-REALIZATION.md"
+      "exit_condition": "Determine whether an explicit T4 continuum plus a local all-metrics response can serve as a theorem-complete local-universality testbed for Lovelock/Navarro, or whether the global torus frame/discretization leaves an unavoidable diffeomorphism-naturality obstruction; produce the exact reduction theorem or terminal gap.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-LOVELOVK-LOCAL-UNIVERSALITY.md"
     },
     {
-      "id": "WRK-ARCHIVE-4D-LOCAL-LAPLACIAN-VARIATION",
+      "id": "WRK-A4D-SYMROLE-CENTRAL-DIFFERENCE-CARRIER",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
+      "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001",
-        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001"
+        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
+        "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Lean owns explicit undirected nearest-neighbor edge conductance variations on ArchiveRolePhasePoint n, an actual linear map to symmetric row-sum-zero nearest-neighbor-supported Laplacian variations, an inverse/recovery theorem establishing injectivity and surjectivity onto the declared local variation subspace, and the old dimension-only overclaim is replaced by literal ownership.",
-      "brief": "00_WORK/tasks/WRK-ARCHIVE-4D-LOCAL-LAPLACIAN-VARIATION.md"
+      "exit_condition": "Lean owns a sitewise symmetric Role-tensor field over ArchiveRolePhaseGroup, canonical role translations, scaled centered finite differences as linear maps, commuting directional differences, finite-sum skew-adjointness, and a symmetric-gradient map, without yet asserting a gravity response law.",
+      "brief": "00_WORK/tasks/WRK-A4D-SYMROLE-CENTRAL-DIFFERENCE-CARRIER.md"
     },
     {
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
