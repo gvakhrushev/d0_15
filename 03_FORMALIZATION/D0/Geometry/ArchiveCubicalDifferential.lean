@@ -120,6 +120,32 @@ theorem forwardDifference_smul (N : ℕ) (r : Role) (c : ℝ)
   simp [forwardDifference]
   ring
 
+/-- Forward difference distributes through a finite sum with site-independent coefficients. -/
+theorem forwardDifference_weighted_sum {ι : Type*} [Fintype ι]
+    (N : ℕ) (r : Role) (c : ι → ℝ)
+    (F : ι → ArchiveRolePhaseGroup N → ℝ) :
+    forwardDifference N r (fun x => ∑ i, c i * F i x) =
+      fun x => ∑ i, c i * forwardDifference N r (F i) x := by
+  classical
+  funext x
+  simp only [forwardDifference_apply]
+  calc
+    forwardDifferenceScale N *
+        ((∑ i, c i * F i (roleTranslatePlus N r x)) -
+          ∑ i, c i * F i x) =
+      forwardDifferenceScale N *
+        (∑ i, (c i * F i (roleTranslatePlus N r x) - c i * F i x)) := by
+          rw [Finset.sum_sub_distrib]
+    _ = ∑ i, forwardDifferenceScale N *
+        (c i * F i (roleTranslatePlus N r x) - c i * F i x) := by
+          rw [Finset.mul_sum]
+    _ = ∑ i, c i *
+        (forwardDifferenceScale N *
+          (F i (roleTranslatePlus N r x) - F i x)) := by
+          apply Finset.sum_congr rfl
+          intro i hi
+          ring
+
 /-- Independent role translations commute, hence so do forward differences. -/
 theorem forwardDifference_comm (N : ℕ) (r s : Role)
     (f : ArchiveRolePhaseGroup N → ℝ) :
@@ -200,6 +226,16 @@ theorem centeredDifference_eq_average_forward (N : ℕ) (r : Role)
 
 /-! ## Literal forward cubical differential -/
 
+/-- Apply a directional forward difference without changing the Fock label. -/
+noncomputable def forwardSite (N : ℕ) (r : Role)
+    (ψ : ArchiveCochain N) : ArchiveCochain N :=
+  fun p => forwardDifference N r (fun x => ψ (x, p.2)) p.1
+
+/-- Apply the Fock creation matrix at each site. -/
+noncomputable def createAction (N : ℕ) (r : Role)
+    (ψ : ArchiveCochain N) : ArchiveCochain N :=
+  fun p => ∑ ket : ArchiveFockState, carCreate r p.2 ket * ψ (p.1, ket)
+
 /-- One directional summand ∇_r^+ c_r†. -/
 noncomputable def forwardCreateDirection (N : ℕ) (r : Role)
     (ψ : ArchiveCochain N) : ArchiveCochain N :=
@@ -207,6 +243,107 @@ noncomputable def forwardCreateDirection (N : ℕ) (r : Role)
     ∑ ket : ArchiveFockState,
       carCreate r p.2 ket *
         forwardDifference N r (fun x => ψ (x, ket)) p.1
+
+theorem forwardCreateDirection_eq_createAction_forwardSite (N : ℕ) (r : Role)
+    (ψ : ArchiveCochain N) :
+    forwardCreateDirection N r ψ = createAction N r (forwardSite N r ψ) := by
+  rfl
+
+theorem forwardSite_comm (N : ℕ) (r s : Role) (ψ : ArchiveCochain N) :
+    forwardSite N r (forwardSite N s ψ) =
+      forwardSite N s (forwardSite N r ψ) := by
+  funext p
+  change
+    forwardDifference N r
+        (forwardDifference N s (fun x => ψ (x, p.2))) p.1 =
+      forwardDifference N s
+        (forwardDifference N r (fun x => ψ (x, p.2))) p.1
+  exact congrFun (forwardDifference_comm N r s (fun x => ψ (x, p.2))) p.1
+
+theorem forwardSite_createAction_comm (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) :
+    forwardSite N r (createAction N s ψ) =
+      createAction N s (forwardSite N r ψ) := by
+  classical
+  funext p
+  change
+    forwardDifference N r
+        (fun x => ∑ ket : ArchiveFockState,
+          carCreate s p.2 ket * ψ (x, ket)) p.1 =
+      ∑ ket : ArchiveFockState,
+        carCreate s p.2 ket *
+          forwardDifference N r (fun x => ψ (x, ket)) p.1
+  exact congrFun
+    (forwardDifference_weighted_sum N r
+      (fun ket : ArchiveFockState => carCreate s p.2 ket)
+      (fun ket x => ψ (x, ket))) p.1
+
+theorem createAction_comp_apply (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) (p : ArchiveCochainBasis N) :
+    createAction N r (createAction N s ψ) p =
+      ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState,
+          carCreate r p.2 mid * carCreate s mid ket) * ψ (p.1, ket) := by
+  classical
+  unfold createAction
+  calc
+    (∑ mid : ArchiveFockState,
+      carCreate r p.2 mid *
+        (∑ ket : ArchiveFockState,
+          carCreate s mid ket * ψ (p.1, ket))) =
+      ∑ mid : ArchiveFockState, ∑ ket : ArchiveFockState,
+        carCreate r p.2 mid *
+          (carCreate s mid ket * ψ (p.1, ket)) := by
+            apply Finset.sum_congr rfl
+            intro mid hmid
+            rw [Finset.mul_sum]
+    _ = ∑ ket : ArchiveFockState, ∑ mid : ArchiveFockState,
+        carCreate r p.2 mid *
+          (carCreate s mid ket * ψ (p.1, ket)) := by
+            rw [Finset.sum_comm]
+    _ = ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState,
+          carCreate r p.2 mid * carCreate s mid ket) * ψ (p.1, ket) := by
+            apply Finset.sum_congr rfl
+            intro ket hket
+            rw [Finset.sum_mul]
+            apply Finset.sum_congr rfl
+            intro mid hmid
+            ring
+
+/-- Creation actions anticommute as literal cochain operators. -/
+theorem createAction_anticommute (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) :
+    createAction N r (createAction N s ψ) +
+      createAction N s (createAction N r ψ) = 0 := by
+  classical
+  funext p
+  simp only [Pi.add_apply, Pi.zero_apply]
+  rw [createAction_comp_apply, createAction_comp_apply]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_eq_zero
+  intro ket hket
+  rw [← add_mul]
+  have hcar := car_create_anticommutator r s p.2 ket
+  unfold anticommutator at hcar
+  rw [hcar]
+  simp
+
+/-- Directional forward-create pieces anticommute. -/
+theorem forwardCreateDirection_anticommute (N : ℕ) (r s : Role)
+    (ψ : ArchiveCochain N) :
+    forwardCreateDirection N r (forwardCreateDirection N s ψ) +
+      forwardCreateDirection N s (forwardCreateDirection N r ψ) = 0 := by
+  change
+    createAction N r
+        (forwardSite N r (createAction N s (forwardSite N s ψ))) +
+      createAction N s
+        (forwardSite N s (createAction N r (forwardSite N r ψ))) = 0
+  rw [forwardSite_createAction_comm N r s (forwardSite N s ψ)]
+  rw [forwardSite_createAction_comm N s r (forwardSite N r ψ)]
+  rw [forwardSite_comm N s r ψ]
+  exact createAction_anticommute N r s
+    (forwardSite N r (forwardSite N s ψ))
 
 /-- Canonical forward cubical differential
 `d_f = sum_r ∇_r^+ c_r†`. -/
@@ -229,6 +366,25 @@ theorem dForward_smul (N : ℕ) (c : ℝ) (ψ : ArchiveCochain N) :
   funext p
   simp [dForward, forwardCreateDirection, forwardDifference]
   ring
+
+theorem dForward_eq_sum_directions (N : ℕ) (ψ : ArchiveCochain N) :
+    dForward N ψ = ∑ r : Role, forwardCreateDirection N r ψ := by
+  funext p
+  simp [dForward]
+
+theorem dForward_sum {ι : Type*} [Fintype ι] (N : ℕ)
+    (F : ι → ArchiveCochain N) :
+    dForward N (∑ i, F i) = ∑ i, dForward N (F i) := by
+  classical
+  have hfin : ∀ s : Finset ι,
+      dForward N (∑ i in s, F i) = ∑ i in s, dForward N (F i) := by
+    intro s
+    induction s using Finset.induction_on with
+    | empty =>
+        simp [dForward_zero]
+    | @insert a s ha ih =>
+        rw [Finset.sum_insert ha, dForward_add, Finset.sum_insert ha, ih]
+  exact hfin Finset.univ
 
 /-- The full differential at x only samples x and the four forward neighbours. -/
 theorem dForward_radius_one (N : ℕ) (ψ φ : ArchiveCochain N)
@@ -306,12 +462,32 @@ theorem dForward_scalar_oneForm_component (N : ℕ)
 commuting forward differences against the creation-creation CAR. -/
 theorem dForward_sq_zero (N : ℕ) (ψ : ArchiveCochain N) :
     dForward N (dForward N ψ) = 0 := by
-  -- Proof plan for the local verifier:
-  -- 1. expand the two finite Role sums and the intermediate Fock sum;
-  -- 2. use forwardDifference_comm;
-  -- 3. swap (r,s);
-  -- 4. close each paired coefficient with car_create_anticommutator.
-  sorry
+  classical
+  rw [dForward_eq_sum_directions N ψ, dForward_sum]
+  simp_rw [dForward_eq_sum_directions]
+  funext p
+  simp only [Finset.sum_apply, Pi.zero_apply]
+  let X : Role → Role → ℝ :=
+    fun r s => forwardCreateDirection N r
+      (forwardCreateDirection N s ψ) p
+  change (∑ s : Role, ∑ r : Role, X r s) = 0
+  have hanti : ∀ r s : Role, X r s + X s r = 0 := by
+    intro r s
+    have h := congrFun (forwardCreateDirection_anticommute N r s ψ) p
+    simpa [X] using h
+  have hpair : (∑ s : Role, ∑ r : Role, (X r s + X s r)) = 0 := by
+    apply Finset.sum_eq_zero
+    intro s hs
+    apply Finset.sum_eq_zero
+    intro r hr
+    exact hanti r s
+  have hswap :
+      (∑ s : Role, ∑ r : Role, X s r) =
+        ∑ s : Role, ∑ r : Role, X r s := by
+    rw [Finset.sum_comm]
+  simp only [Finset.sum_add_distrib] at hpair
+  rw [hswap] at hpair
+  linarith
 
 /-! ## One-form centering -/
 
