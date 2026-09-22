@@ -1,6 +1,6 @@
 # External Review Remediation Roadmap
 
-Status: **ACTIVE ROADMAP / control lane queued**
+Status: **ACTIVE ROADMAP / control lane IN_PROGRESS**
 
 This roadmap records the remediation triggered by the repository review. It does not replace \`claims.csv\`, the closure contract, or literal Lean owners.
 
@@ -64,7 +64,7 @@ This lane does **not** invalidate the existing M1 uniqueness theorems inside the
 
 ## P2 — genuine SM gauge representation / commutant owner
 
-Task: \`EXP-SM-GAUGE-REPRESENTATION-COMMUTANT\` (PLANNED).
+Task: \`EXP-SM-GAUGE-REPRESENTATION-COMMUTANT\` (**IN_PROGRESS**).
 
 Required endpoint is not another factor list or dimension count. It is an actual finite carrier/representation with a theorem such as:
 
@@ -89,11 +89,11 @@ Mapped to:
 - \`EXP-ATORUS-SPATIAL-CAR-HAMILTONIAN-STRESS\`;
 - the cloud-first primal/dual parent formalization lane.
 
-The review's request for an actual dynamics/action owner therefore reinforces the current critical path rather than replacing it.
+The review's request for an actual dynamics/action owner therefore reinforces the current critical path rather than replacing it. The latest gravity audit now records two sharp truth boundaries: MEMO_49 isolates the Cartan link-action/constitutive law as a genuinely new finite primitive, while MEMO_50 exposes that the landed CAR operator has cosine hopping dispersion rather than the advertised massless Laplacian square. The active gravity researcher is therefore the CAR-dispersion truth-repair lane before any Lorentz-stress promotion.
 
 ## Semantic CI hardening
 
-Task: \`WRK-PUBLIC-CLAIM-STRENGTH-LINT\` (PLANNED).
+Task: \`WRK-PUBLIC-CLAIM-STRENGTH-LINT\` (PLANNED, **cloud-first draft allowed while the sole local worker verifies the primal/dual parent draft**).
 
 Minimum scope:
 
@@ -119,7 +119,7 @@ New decorative prediction lanes are not a priority.
 
 ## Execution order
 
-1. Immediate semantic repairs — **NOW / applied**.
+1. Immediate semantic repairs, including the second-pass top-level M1/Born/Layer-III qualifiers — **APPLIED**.
 2. Continue active gravity/matter dynamics — **NOW**.
 3. Cloud-first theorem-ready formalization packages — **NOW**.
 4. Claim-strength lint — **NEXT worker/tooling lane**.

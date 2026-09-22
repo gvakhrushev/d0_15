@@ -40,15 +40,6 @@
   ],
   "tasks": [
     {
-      "id": "CTRL-MIGRATE-ACTIVE-WORK",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "IN_PROGRESS",
-      "affected_claims": [],
-      "exit_condition": "Selected reconciliation payloads have been reimplemented or deliberately rejected on current main, with every spawned WORKER task reviewed and no unclassified legacy payload remaining in the selected batch.",
-      "brief": "00_WORK/tasks/CTRL-MIGRATE-ACTIVE-WORK.md"
-    },
-    {
       "id": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "class": "CONTROL",
       "parent": "ROOT",
@@ -63,7 +54,7 @@
       "id": "CTRL-REVIEW-SEMANTIC-HARDENING",
       "class": "CONTROL",
       "parent": "ROOT",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
@@ -84,7 +75,7 @@
       "id": "EXP-SM-GAUGE-REPRESENTATION-COMMUTANT",
       "class": "EXPENSIVE",
       "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001"
       ],
@@ -92,37 +83,29 @@
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {
-      "id": "EXP-A4D-CARTAN-CHAIN-CONNECTION-REALIZATION",
+      "id": "EXP-ATORUS-CAR-DIRAC-DISPERSION-TRUTH-REPAIR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-MATTER-STRESS-COUPLING-001",
-        "D0-ARCHIVE-STRESS-CONSERVATION-001"
-      ],
-      "exit_condition": "Construct or terminally classify a local discrete Cartan/chain transport connection and associative link group acting on the primal/dual cochain system, together with a bounded-stencil equivariant constitutive Hodge map star=S(e,n,Omega) whose flat derivative reproduces the accepted tangent Hodge response and whose curvature absorbs centered-Cartan closure; otherwise isolate the exact local-factorization or structure-group primitive still missing.",
-      "brief": "00_WORK/tasks/EXP-A4D-CARTAN-CHAIN-CONNECTION-REALIZATION.md"
-    },
-    {
-      "id": "EXP-ATORUS-SPATIAL-CAR-HAMILTONIAN-STRESS",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-MATTER-STRESS-COUPLING-001",
         "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
+        "D0-MATTER-STRESS-COUPLING-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "Assuming the explicitly declared same-axis/orientation bridge archive A <-> causal/Pisot e0 and real-time unwrapping to R×T3, reuse the landed carDirac directional decomposition to construct the fixed-time spatial CAR operator, positive Hamiltonian |D_Sigma|, lowest spatial mixed shell, Lorentzian stress components from metric/coframe variation, unitary evolution and the sourced-background interface; terminally isolate the first remaining non-bridge physics modulus.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-SPATIAL-CAR-HAMILTONIAN-STRESS.md"
+      "exit_condition": "Truth-repair the literal landed CAR operator: derive its exact Fourier/cosine symbol and square/kernel structure, classify the mismatch with the owned lattice Laplacian and advertised massless shell, and determine the minimal all-L corrected difference/Hodge-Dirac owner or explicitly reclassify the current matrix as a hopping Clifford operator; do not attach Lorentz stress until the operator layer is honest.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-CAR-DIRAC-DISPERSION-TRUTH-REPAIR.md"
     },
     {
       "id": "WRK-PUBLIC-CLAIM-STRENGTH-LINT",
       "class": "WORKER",
       "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
       "state": "PLANNED",
-      "affected_claims": [],
+      "affected_claims": [
+        "D0-BORN-AREA-PRESERVATION-INSUFFICIENT-NOGO-001",
+        "D0-DARK-EOS-DISCRETE-SET-001",
+        "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001",
+        "D0-PHI-HURWITZ-CLASS-CANONIZATION-001"
+      ],
       "exit_condition": "Repository tooling audits README/BOOK/frontier/monograph public claims against registry/forcing/no-go metadata for known overstatement classes, blocks stale phrases or missing qualifiers in CI, and the remaining high-risk public surfaces have an explicit reviewed allowlist or issue list.",
       "brief": "00_WORK/tasks/WRK-PUBLIC-CLAIM-STRENGTH-LINT.md"
     },
@@ -130,7 +113,7 @@
       "id": "WRK-A4D-PRIMAL-DUAL-PARENT-ALGEBRA",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-MATTER-STRESS-COUPLING-001",
@@ -154,7 +137,7 @@
     {
       "id": "WRK-CERT-ARTIFACT-FRESHNESS",
       "class": "WORKER",
-      "parent": "CTRL-MIGRATE-ACTIVE-WORK",
+      "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
       "state": "PLANNED",
       "affected_claims": [
         "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",

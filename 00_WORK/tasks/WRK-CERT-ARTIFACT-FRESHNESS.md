@@ -1,7 +1,7 @@
 # WRK-CERT-ARTIFACT-FRESHNESS
 
 ## Queue state
-**PLANNED / PAUSED.** Do not execute during the current gravity closure sequence. CONTROL will explicitly promote this task later.
+**PLANNED.** Rehomed under `CTRL-REVIEW-SEMANTIC-HARDENING`; execute only after CONTROL explicitly promotes it. It is independent of the active gravity closure sequence.
 
 Repository: https://github.com/gvakhrushev/d0_15
 
@@ -9,6 +9,9 @@ When promoted, start from a fresh then-current `origin/main` and treat tracked a
 
 ## Class
 WORKER
+
+## Parent
+CTRL-REVIEW-SEMANTIC-HARDENING
 
 ## Objective
 Eliminate the stale-artifact write-if-absent loophole in certificates, enforce strict deterministic freshness verification, and add mutation tests.

@@ -50,14 +50,14 @@ $$\text{Verifiability Contract (M1)} \;\longrightarrow\; \text{Functional Tuple}
 
 > Any process claiming to produce objectively reproducible distinctions between independent runs must already possess the internal means of **distinction**, **retention**, and **independent comparison** — and cannot outsource these operations to an obligatory external catalogue.
 
-From this operational contract (the **M1 condition** + finite realizability), the programme derives:
+Within the repository's **currently formalized admissibility architecture** (the M1 condition + finite realizability), the programme derives the following registered results. The stronger meta-question whether these premises classify *all* possible finite/catalogue-free carriers is intentionally separated as `EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION`:
 
 1. **The Functional Tuple:** distinction ($x \neq y$), persistent record ($x \mapsto \text{rec}(x)$ injective), and independent comparison lines ($l_0 \neq l_1$) are forced as the minimal requirements for empirical verifiability.
 2. **The Popperian Bootstrap (`D0-POPPERIAN-BOOTSTRAP-001`):** A theory can be falsified by a "killing test" if and only if it admits a verification contract ($\text{KillingTest}(P) \iff \text{VerificationContract}(P)$). The bare possibility of refutation strictly forces the entire functional tuple. Solitary-witness systems are non-falsifiable.
-3. **Endogenous Scene Genesis:** Independent line filling, toral return sterility in $\mathrm{GL}_2(\mathbb{Z})$, and minimal zone capacity uniquely weld the parameters $(|\mathrm{Role}|, \Delta, |\Omega_8|, m, q_T) = (4, 2, 8, 11, 44)$ into the tripartite scene $K(9,11,13)$ with $N=33$ and collision invariant $P_2 = 371/1089$.
-4. **The Born Rule as Consistency:** Quadratic detector response ($P \propto |\psi|^2$) is not an arbitrary quantum postulate, but a mathematical consequence of symplectic area preservation on finite carriers; non-quadratic powers destroy unitarity under cyclic independent readout.
+3. **Endogenous Scene Genesis (inside the registered forcing architecture):** Independent line filling, toral return sterility in $\mathrm{GL}_2(\mathbb{Z})$, and minimal zone capacity weld the parameters $(|\mathrm{Role}|, \Delta, |\Omega_8|, m, q_T) = (4, 2, 8, 11, 44)$ into the tripartite scene $K(9,11,13)$ with $N=33$ and collision invariant $P_2 = 371/1089$. This is a strong internal uniqueness statement; completeness of the surrounding admissible-carrier class is the separate P1 review target.
+4. **Quadratic Born readout inside the phase-response class:** the finite response is quadratic, and uniqueness of the phase quadratic is owned under quarter-turn phase blindness (`QuarterTurnInvariant`). Generic symplectic-area preservation alone is explicitly **insufficient** (`BornAreaPreservationNoGo`).
 
-The foundational derivation is proved in **BOOK_00** and **BOOK_01** and formalized in Lean 4. Everything else in the repository builds upon this layer.
+The registered functional-tuple and scene-forcing results are developed in **BOOK_00** and **BOOK_01** and formalized in Lean 4 within their stated candidate/admissibility classes. The external-review P1 lane audits the stronger completeness claim rather than treating it as already proved. Everything downstream builds on the registered finite architecture, not on an unqualified universal-classification assertion.
 
 ---
 
@@ -91,10 +91,10 @@ The foundational derivation is proved in **BOOK_00** and **BOOK_01** and formali
          ┌───────────────┴───────────────┐
          ▼                               ▼
 [ Layer II: Algebraic Spine ]   [ Layer III: Downstream Readout ]
-  - Top-Hodge inverse rigidity    - Gauge group decomposition (SU(3)xSU(2)xU(1))
-  - Commutant AF-algebra tower    - Puiseux branchings & mass hierarchies
-  - Discrete Dirac & Laplacians   - CKM/PMNS phason holonomies
-  - Isolated bridge assumptions   - Dynamic cosmological SDE w(z) != -1
+  - Top-Hodge inverse rigidity    - Frozen SM factor/Weyl ledger + representation target
+  - Commutant AF-algebra tower    - Puiseux mass-hierarchy passports
+  - Discrete Dirac & Laplacians   - CKM/PMNS phason-holonomy passports
+  - Isolated bridge assumptions   - Conditional dark-EOS / cosmology passports
     (HeatTraceWeyl, etc.)         - Pre-registered empirical passports
 ```
 
@@ -117,7 +117,7 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 [ BOOK 03: Variational Action S_fb = -log det(I-z F_N) & Conserved Stress ]
                  │
                  ▼
-[ BOOK 04: Matter Resonance, Gauge SU(3)xSU(2)xU(1), Puiseux Mass Hierarchy ]
+[ BOOK 04: Matter Resonance, Frozen SM Ledger, Gauge-Representation Target, Puiseux Passports ]
                  │
                  ▼
 [ BOOK 05: Verification Audit & Centralized No-Go Ledger ]
@@ -126,10 +126,10 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 [ BOOK 06: Markov Forgetting Channels, Entropy Monotonicity & Arrow of Time ]
                  │
                  ▼
-[ BOOK 07: Noncommutative Spectral Gravity, Heat Trace a_2 ~ R-2Λ, Horizons ]
+[ BOOK 07: Finite/Spectral Gravity Operators, Quarantined EH Bridge, Horizons ]
                  │
                  ▼
-[ BOOK 08: Dynamic Cosmology SDE, LambdaCDM Exclusion (w ≠ -1), DESI Drift ]
+[ BOOK 08: Conditional Dark-EOS/Cosmology Passports, SDE Tests, DESI Drift ]
                  │
                  ▼
 [ BOOK 09: Apple Torus, Spin-2 Quadrupole, GW Horizon Capacity (LIGO/GWOSC) ]
@@ -364,8 +364,8 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Active Work Status (CP1 Control Plane)
 
-- **Active Tasks**: CONTROL: 3, EXPENSIVE: 4, WORKER: 4 (Total: 11)
-- **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 2/3, WORKER: 0/5
+- **Active Tasks**: CONTROL: 2, EXPENSIVE: 3, WORKER: 4 (Total: 9)
+- **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 2/3, WORKER: 1/5
 - **Legacy Scaffolds Remaining**: 12
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->

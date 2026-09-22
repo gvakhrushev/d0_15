@@ -7,9 +7,9 @@ WORKER
 CTRL-GRAVITY-DYNAMICS-CLOSURE
 
 ## State
-PLANNED
+IN_PROGRESS
 
-This task is intended for **cloud-first formalization**. Do not activate a local worker until a candidate draft branch is ready.
+This task has completed the cloud-first draft phase and is now the **sole active local verification worker**.
 
 ## Objective
 
@@ -137,3 +137,12 @@ A local worker later rebases the draft onto fresh canonical main, compiles/fixes
 Cloud phase: \`CLOUD_DRAFT_READY\`, task stays PLANNED.
 
 Local phase: REVIEW, PR, STOP.
+
+
+## Local verification handoff
+
+Cloud draft branch: `draft/a4d-primal-dual-parent-algebra`
+
+Observed draft head: `594210ce521f72a8296b28732eb323caa1064a0d`
+
+The draft adds only the four intended owner modules. Start from fresh current `origin/main`, create/update `work/a4d-primal-dual-parent-algebra`, and rebase/cherry-pick the draft source commit. Compile the draft before redesigning. Do not run `lake clean` and do not delete the warm Mathlib/Lake cache. Use narrow builds for the four owner modules, concrete Lean/API fixes only, then one incremental `lake build D0.All`, normal guards/no-sorry/#print axioms, task -> REVIEW, PR, STOP. Do not invent the missing Cartan connection/constitutive law.

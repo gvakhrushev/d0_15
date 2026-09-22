@@ -4,7 +4,7 @@
 CONTROL
 
 ## State
-PLANNED
+IN_PROGRESS
 
 ## Objective
 
@@ -30,4 +30,12 @@ A NO-GO or scope repair invalidates stale stronger narrative wording.
 
 ## Execution
 
-Remain PLANNED while both CONTROL WIP slots are occupied. Child research/tooling tasks may stay queued until CONTROL activates this lane explicitly.
+The obsolete migration CONTROL has been retired and its remaining certificate-freshness child rehomed here. This lane is active alongside gravity closure.
+
+Current execution:
+
+- P2 `EXP-SM-GAUGE-REPRESENTATION-COMMUTANT` — IN_PROGRESS;
+- P1 `EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION` — PLANNED next researcher;
+- `WRK-PUBLIC-CLAIM-STRENGTH-LINT` — PLANNED, cloud-first draft permitted;
+- `WRK-CERT-ARTIFACT-FRESHNESS` — PLANNED under this control;
+- public Born / ΛCDM / SM-gauge / φ-route wording repairs are landed and must remain regression-protected.

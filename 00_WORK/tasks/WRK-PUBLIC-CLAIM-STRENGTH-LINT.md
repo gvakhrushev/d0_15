@@ -34,3 +34,16 @@ This is not an LLM semantic judge in CI. Use deterministic phrases/metadata/rule
 Do not change mathematical claim status merely to satisfy prose lint.
 
 Completion requires normal tooling tests/guards and a small set of negative test fixtures.
+
+
+## Affected Claims
+
+- `D0-BORN-AREA-PRESERVATION-INSUFFICIENT-NOGO-001`
+- `D0-DARK-EOS-DISCRETE-SET-001`
+- `D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001`
+- `D0-PHI-HURWITZ-CLASS-CANONIZATION-001`
+
+
+## Cloud-first phase
+
+A cloud coding agent may prepare this task now on `draft/public-claim-strength-lint` while the one local worker slot is occupied by primal/dual parent verification. Keep the task PLANNED, do not edit manifest/status/generated views in the draft, and end with `CLOUD_DRAFT_READY`. CONTROL/local verification later runs guards and negative fixtures on fresh main.
