@@ -26,7 +26,7 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
   - [BOOK 09: Gravitational Waves and Quantum Interferometry](#book-09-gravitational-waves-and-quantum-interferometry)
 - [4. The Three Architecture Layers](#4-the-three-architecture-layers)
 - [5. Spectral Rigidity: The Golden Ratio φ and Zero-Parameter Mass Sectors](#5-spectral-rigidity-the-golden-ratio-varphi-and-zero-parameter-mass-sectors)
-  - [Five Independent Mathematical Convergences to φ](#five-independent-mathematical-convergences-to-varphi)
+  - [Audited Mathematical Routes to φ](#audited-mathematical-routes-to-varphi)
   - [Scientific Falsifiability](#scientific-falsifiability)
 - [6. Non-Trivial Theorems in the Corpus](#6-non-trivial-theorems-in-the-corpus)
 - [7. How to Read (Short Paths)](#7-how-to-read-short-paths)
@@ -153,7 +153,7 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 
 ### BOOK 02: Mathematical Proof Spine and Invariant Calculus
 - **Feedback Operator Algebra:** The unitary defect operator $F_N = P_N U_N^\dagger Q_N U_N P_N \ge 0$ ($0 \le F_N \le P_N$) on retained ($P_N$) and archive ($Q_N = I - P_N$) subspaces, with resolvent $G_N(z) = (I - z F_N)^{-1}$.
-- **Born Rule Derivation:** Quadratic readout response $R_N = D_N^\dagger D_N$ is derived from symplectic area preservation under cyclic phase reading (`finite_effect_born_readout_unique`). Any power $p \neq 2$ violates measure conservation (`BornAreaPreservationNoGo`).
+- **Born Quadratic Readout:** The finite positive readout $R_N = D_N^\dagger D_N$ is owned as a quadratic response, and uniqueness inside the phase-quadratic class is forced by quarter-turn phase blindness (`QuarterTurnInvariant`, `finite_effect_born_readout_unique`). `BornAreaPreservationNoGo` proves that symplectic-area preservation **alone is insufficient**; it is a negative control, not the uniqueness premise.
 - **Spectral Scene Rigidity:** Unlabelled multiset $\{9, 11, 13\}$ on $N=33$ is uniquely recovered from rational adjacency with $\mathrm{rank} \le 3$ and $\mathrm{tr}(A^2)=718$ without assuming partitions or triangles (`DenseOperatorSceneRigidity.lean`). Top-Hodge data $(D, H, M_2)$ rigidly force the scene (`TopHodgeInverseSpectralRigidity.lean`).
 
 ### BOOK 03: Finite Action Operators and Scene Dynamics
@@ -163,7 +163,7 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 
 ### BOOK 04: Spectrum, Matter, and Finite Selector Theory
 - **Matter as Resonant Modes:** Particles are terminally projected near-critical feedback modes ($F_N \psi_j = r_j \psi_j$ with $|z r_j| \approx 1$ and $P_\mathrm{term} \psi_j = \psi_j$).
-- **Gauge Group Decomposition:** $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ arises as the automorphism algebra of 3-partite boundary cycles and $4\times 4$ window selectors (`SMGaugeDecomposition.lean`, `BraidValence.lean`).
+- **SM-Facing Gauge Ledger (frozen boundary):** `SMGaugeDecomposition.lean` freezes the factor labels $[\mathrm{SU}(3),\mathrm{SU}(2),\mathrm{U}(1)]$, the one-generation Weyl ledger, and exact rational anomaly cancellations. `AlbertSMProjection.lean` proves dimension/charge alignment only; the repository does **not yet own** an explicit commutant/automorphism theorem deriving the Standard Model gauge group from the finite carrier.
 - **Hypercharge Quantization:** Anomaly cancellation sums on the discrete lattice force hypercharge denominators to be quantized in multiples of $1/6$ (`SMCharges.lean`, `AnomalySums.lean`, `HyperchargeMinimalDenominator.lean`).
 - **Mass Hierarchy via Puiseux Series:** Lepton and quark mass eigenvalues expand in Puiseux series in deformation parameter $\varepsilon = \varphi^{-n}$ on Riemann–Hurwitz branched coverings (`LeptonRiemannHurwitzBranchIndex.lean`, `LeptonGreenPuiseuxOwner.lean`), removing arbitrary Yukawa couplings.
 - **CKM & PMNS Phason Holonomies:** Flavour mixing matrices are computed as topological holonomies of phason displacement waves around scene boundary singularities (`CKMPhasonHolonomy.lean`, `PMNSSeamTopology.lean`).
@@ -185,7 +185,7 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 - **Quarantined Bridge Interface:** Assumptions of continuum limit existence (`HeatTraceWeyl.lean`, `SmoothInterpolation.lean`) are strictly quarantined in `Bridge/Assumptions/`.
 
 ### BOOK 08: Cosmology, Archive, and SDE Transfer
-- **Exclusion of Strict $\Lambda\mathrm{CDM}$:** Theorem `LambdaCDMExcluded.lean` proves that $w = -1$ is impossible in an open graph with unitary dissipation; dark energy density must dynamically relax.
+- **Conditional dark-EOS exclusion of $w=-1$:** `LambdaCDMExcluded.lean` proves $w=-1$ is absent **inside the adopted discrete EOS family** $w=-\varphi+s/30$ (and companion role-assignment models give a separate arithmetic exclusion). The role-to-pressure/energy interpretation and weighted-mean EOS are modelling premises; this is not a theorem that every open graph with unitary archive dissipation excludes $\Lambda\mathrm{CDM}$.
 - **Cosmological SDE & $w(z)$ Drift:** Vacuum energy evolution obeys a stochastic differential equation (SDE) of phason-archive interaction, predicting a thawing/freezing deviation from $w=-1$ tested against DESI BAO and Planck CMB data (`DarkArchiveTransfer.lean`, `vp_phason_thawing.py`).
 - **Sandage–Loeb Redshift Drift:** Cosmic acceleration drift $\dot{v} = c \frac{\dot{z}}{1+z} + \Delta_\mathrm{phason}(z)$ derived from the desynchronization rate between detector and source discrete ticks (`RedshiftExpansionArchiveCoupling.lean`).
 
@@ -219,7 +219,9 @@ In standard continuous field theory, Yukawa couplings $y_f \sim \sqrt{2} m_f / v
 - **Analytical Origin of Mass Hierarchies:** Fermion masses emerge as resolvent poles across scene defects (`LeptonGreenPuiseuxOwner.lean`). Puiseux series expansions proceed in integer powers of the deformation scale $\varepsilon = \varphi^{-n}$ as an analytical consequence of hyperbolic Pisot contraction on the underlying torus (`Time2DPisot.lean`, `CanonicalPuiseuxShellTransfer.lean`).
 - **Zero Parametric Freedom:** The theory contains zero continuous tunable parameters in its mass and mixing sectors. The fundamental ratio $\varphi = \frac{1+\sqrt{5}}{2}$ is locked at the foundational level (`BOOK_00`–`BOOK_02`) as the unique algebraic root $x^2 - x - 1 = 0$ where five independent branches of mathematics strictly coincide.
 
-### Five Independent Mathematical Convergences to $\varphi$
+### Audited Mathematical Routes to $\varphi$
+
+The routes below are an inventory of golden-ratio appearances/forcing attempts, **not five independent derivations**. `02_REGISTRY/forcing_routes.json` is the source of truth for premise overlap, negative controls, repairs, and the field `independent_now`; several historical routes collapse to the same golden quadratic or the same quarter-turn invariance and therefore must not be counted twice.
 
 1. **Diophantine Extremality and KAM Stability (Dynamical Systems):**
    The continued fraction $\varphi = [1; 1, 1, \dots]$ possesses the maximal Hurwitz constant $c = \sqrt{5}$, providing the worst rational approximation among all real numbers. In `HurwitzMinimaxPhi.lean` and `HurwitzPhi.lean`, this maximal irrationality prevents mode-locking and phase resonance, ensuring KAM stability of cyclic discrete detector ticks.
@@ -246,7 +248,7 @@ Because D0 possesses zero free parameters in this sector, empirical comparison i
 - **Exact Support Orthogonality (`D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001`):** An exact verification contract $\text{compare}(x, y) = [x \neq y]$ on physical states forces strictly orthogonal density supports: $\text{supp}(\tau_x) \perp \text{supp}(\tau_y)$. Exact distinguishability cannot be implemented over non-orthogonal states.
 - **Top-Hodge Inverse Spectral Rigidity (`D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`):** Equality of top-Hodge data $(D, H, M_2)$ for positive complete tripartite scenes uniquely forces equality of the unlabelled part-size multisets.
 - **Dense Operator Scene Rigidity (`D0-DENSE-OPERATOR-SCENE-RIGIDITY-001`):** Any finite simple rational adjacency matrix on 33 vertices with rank $\le 3$ and $\text{tr}(A^2)=718$ is recovered as the complete tripartite graph $K(9,11,13)$ without assuming partitions, triangles, or connectedness.
-- **No-Go on Non-Quadratic Measures (`BornAreaPreservationNoGo`):** Symplectic area preservation on finite state carriers forces power $p=2$, deriving Born's rule from cyclic measurement consistency.
+- **Area-Preservation Insufficiency No-Go (`BornAreaPreservationNoGo`):** determinant/area preservation alone does **not** force $x^2+y^2$ or a Born exponent; an explicit area-preserving shear is a counterexample. The machine-owned quadratic uniqueness premise is quarter-turn phase blindness (`QuarterTurnInvariant`).
 - **Explicit Bridge Quarantine (`D0-BRIDGE-COMPRESSION-001`):** Conjectured continuum limits (such as `HeatTraceWeyl.lean` or `SmoothInterpolation.lean`) are strictly quarantined in `03_FORMALIZATION/D0/Bridge/Assumptions/` and never masquerade as core Lean theorems.
 
 ---
@@ -288,6 +290,7 @@ tools/              Repository validator, Lean view generator, and test runners
 ### Source-of-Truth Rules
 
 - **Books explain; they do not define release status.** Formal claim status and proof ownership are governed strictly by `02_REGISTRY/claims.csv`.
+- **Public prose cannot outrun its owner.** README/BOOK/monograph statements must preserve the theorem's actual quantifiers, candidate class, and BRIDGE/NO-GO conditions. A later NO-GO or scope repair overrides older narrative wording; stale stronger prose is a repository defect, not an alternative interpretation.
 - **Lean ownership is explicit.** `D0.All` and `ClaimMap.lean` are machine-generated from registered claims and audited in CI. Hand edits are rejected.
 - **Certificates are reachable evidence.** Every python certificate in `04_CERTIFICATES` must be referenced by an active claim in `claims.csv`.
 - **The release tree is immutable under verification.** Executing certificates writes only to temporary `.build/cert_outputs/`; the git working tree remains clean.
@@ -361,7 +364,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Active Work Status (CP1 Control Plane)
 
-- **Active Tasks**: CONTROL: 2, EXPENSIVE: 2, WORKER: 3 (Total: 7)
+- **Active Tasks**: CONTROL: 3, EXPENSIVE: 4, WORKER: 4 (Total: 11)
 - **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 2/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 12
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)

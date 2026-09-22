@@ -599,7 +599,7 @@ The rigidity argument of §01.14 ("four unrelated failures at once") must be rea
 
 There is a third, categorical, forcing of the same equation, and it closes a known loophole.
 
-**Phase-blindness forces the quadratic.** By the finite holographic self-reading principle a primitive amplitude needs a minimal 2D phase space `z=(x,y)`. Gleason's theorem derives the quadratic Born response only for `D\ge3` and **fails in 2D** — the standard loophole. D0 closes it: a phase-blind self-reading response in 2D must preserve symplectic area, which uniquely forces the quadratic form
+**Phase-blindness forces the quadratic.** By the finite holographic self-reading principle a primitive amplitude needs a minimal 2D phase space `z=(x,y)`. Gleason's theorem derives the quadratic Born response only for `D\ge3` and **fails in 2D** — the standard loophole. D0 closes it through **quarter-turn phase blindness**. Symplectic-area preservation by itself is not a sufficient uniqueness premise (`BornAreaPreservationNoGo` gives an explicit area-preserving counterexample). The machine-owned statement is that a phase-quadratic response invariant under the quarter-turn $J(x,y)=(-y,x)$ is forced, up to scale, to the quadratic form
 
 ```math
 Q(z)=x^2+y^2.

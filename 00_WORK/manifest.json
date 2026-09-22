@@ -60,6 +60,38 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
+      "id": "CTRL-REVIEW-SEMANTIC-HARDENING",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
+      "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
+    },
+    {
+      "id": "EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-M1-REPRESENTATION-UNIQUENESS-001",
+        "D0-M1-MINIMALITY-THRESHOLD-FORCING-001"
+      ],
+      "exit_condition": "Determine whether the current M1 admissibility premises classify all finite/catalogue-free realizations up to the owned equivalences, rather than only the explicitly formalized candidate classes; return a positive universal classification theorem design or a terminal statement of the additional admissibility primitive needed.",
+      "brief": "00_WORK/tasks/EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION.md"
+    },
+    {
+      "id": "EXP-SM-GAUGE-REPRESENTATION-COMMUTANT",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001"
+      ],
+      "exit_condition": "Construct or terminally classify an actual finite representation/commutant/automorphism owner whose derived Lie/group factors are SU(3)×SU(2)×U(1), clearly separating dimension/charge alignment and frozen ledgers from a genuine gauge-group derivation.",
+      "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
+    },
+    {
       "id": "EXP-A4D-CARTAN-CHAIN-CONNECTION-REALIZATION",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
@@ -84,6 +116,15 @@
       ],
       "exit_condition": "Assuming the explicitly declared same-axis/orientation bridge archive A <-> causal/Pisot e0 and real-time unwrapping to R×T3, reuse the landed carDirac directional decomposition to construct the fixed-time spatial CAR operator, positive Hamiltonian |D_Sigma|, lowest spatial mixed shell, Lorentzian stress components from metric/coframe variation, unitary evolution and the sourced-background interface; terminally isolate the first remaining non-bridge physics modulus.",
       "brief": "00_WORK/tasks/EXP-ATORUS-SPATIAL-CAR-HAMILTONIAN-STRESS.md"
+    },
+    {
+      "id": "WRK-PUBLIC-CLAIM-STRENGTH-LINT",
+      "class": "WORKER",
+      "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Repository tooling audits README/BOOK/frontier/monograph public claims against registry/forcing/no-go metadata for known overstatement classes, blocks stale phrases or missing qualifiers in CI, and the remaining high-risk public surfaces have an explicit reviewed allowlist or issue list.",
+      "brief": "00_WORK/tasks/WRK-PUBLIC-CLAIM-STRENGTH-LINT.md"
     },
     {
       "id": "WRK-A4D-PRIMAL-DUAL-PARENT-ALGEBRA",

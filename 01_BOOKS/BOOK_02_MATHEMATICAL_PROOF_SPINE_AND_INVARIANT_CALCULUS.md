@@ -139,7 +139,7 @@ W_A\rightarrow
 \text{normalized readout/comparison protocol}.
 ```
 
-The "operator" slot of that tuple is not free: it is fixed by the **Finite Holographic Self-Reading Principle**. The principle requires that the feedback-return operator preserve the symplectic area form across the retained/archive cut `P_N + Q_N = I`. That single area-preservation requirement is the forcing for the whole quadratic-response calculus this book carries downstream.
+The "operator" slot of that tuple is not free: the finite feedback construction fixes the Gram-type operator on the retained/archive cut `P_N + Q_N = I`. **Semantic correction:** generic symplectic-area preservation is not the uniqueness premise for the Born quadratic; `BornAreaPreservationNoGo` proves it is insufficient. Quadratic uniqueness inside the phase-response class rests on the explicit quarter-turn phase-blindness owner. The positive/compression facts for `F_N` below come from its finite Gram/projector construction.
 
 **[DEF] Core dynamical operator.** Admit the retained projector `P_N`, the archive complement `Q_N = I - P_N`, and the finite tick `U_N` from BOOK_01 (the retained/traced split and the handoff `F_N = P_N U_N^dagger Q_N U_N P_N` are owned there; see BOOK_01 §01.0). The feedback-return operator is
 
@@ -147,15 +147,15 @@ The "operator" slot of that tuple is not free: it is fixed by the **Finite Holog
 F_N = (Q_N U_N P_N)^\dagger (Q_N U_N P_N) \in B(P_N\mathcal H).
 ```
 
-This is the exact embodiment of holographic area preservation under self-reading: `F_N` measures how much of a retained state, after one tick and the cut, returns through the archive complement, and the area form admits no other quadratic that closes on the retained block [^b02-4].
+`F_N` measures how much of a retained state, after one tick and the cut, returns through the archive complement. Its positivity and quadratic form follow from the explicit Gram construction. No generic uniqueness claim is made from area preservation alone; phase-quadratic uniqueness is separately owned by the quarter-turn invariant response theorem [^b02-4].
 
-**[THE] What the area form forces.** Because `F_N = (Q_N U_N P_N)^\dagger (Q_N U_N P_N)` is a Gram operator, the self-reading requirement forces, with no further input:
+**[THE] What the finite Gram construction owns.** Because `F_N = (Q_N U_N P_N)^\dagger (Q_N U_N P_N)` is a Gram operator, the finite construction proves:
 
 - **positivity** `F_N >= 0`, indeed `0 <= F_N <= P_N`, since the area-preserving cut cannot return more than the retained block carries;
 - **compression** of the dynamics onto `P_N\mathcal H`, so the quadratic response lives on a finite retained block rather than the full stage;
 - the **log-det functional** `-\log\det(I - z F_N)` as the natural area-derived generating functional, with its spectral admissibility bound `|z|\rho(F_N) < 1`.
 
-So positivity, the compression bound and the log-det calculus are not three separate postulates; they are one consequence of symplectic-area preservation across the retained/archive cut [^b02-5]. This is why a typed comparison formula is not yet a theorem until its operator slot is shown to be this area-derived `F_N`: only then is the quadratic response forced rather than fitted.
+So positivity and the compression bound are consequences of the explicit finite Gram/projector construction; the log-det functional is then defined on that operator under its spectral admissibility condition [^b02-5]. This statement does not promote generic area preservation into a uniqueness theorem.
 ## 02.3a Active v15 proof spine
 
 The active proof spine is:

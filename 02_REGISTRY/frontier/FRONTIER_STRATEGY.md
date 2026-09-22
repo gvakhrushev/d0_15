@@ -1,5 +1,7 @@
 # D0 Frontier Strategy: Resolving the Interface Crisis
 
+> **Current semantic/remediation roadmap:** [REVIEW_REMEDIATION_ROADMAP.md](REVIEW_REMEDIATION_ROADMAP.md).  It records the external-review repairs, universal-carrier and gauge-representation research lanes, and the rule that public prose may not exceed literal owner strength.
+
 > **HISTORICAL EXPLORATION — NOT THE ACTIVE DEFINITION OF DONE.**  This document
 > records an earlier research strategy and intentionally contains conjectural positive
 > routes.  It must not be read as saying that the four vectors below are current
