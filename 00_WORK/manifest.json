@@ -60,20 +60,7 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-LINEARIZED-NOETHER-UNIQUENESS",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
-        "D0-ARCHIVE-LOCAL-LAPLACIAN-VARIATION-ISOMORPHISM-001"
-      ],
-      "exit_condition": "Classify the most general translation-invariant local degree-two linear operator on sitewise Sym^2(Role) metric perturbations and determine whether finite metric-gauge nullity/divergence, self-adjointness and Role isotropy force the linearized Einstein/Fierz-Pauli response uniquely up to scale, while separating the conditional uniqueness theorem from the still-unowned gauge principle.",
-      "brief": "00_WORK/tasks/EXP-A4D-LINEARIZED-NOETHER-UNIQUENESS.md"
-    },
-    {
-      "id": "EXP-ATORUS-LOVELOVK-LOCAL-UNIVERSALITY",
+      "id": "EXP-ATORUS-FRAME-ERASURE-LOCAL-DIFF-NATURALITY",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
@@ -83,20 +70,33 @@
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Determine whether an explicit T4 continuum plus a local all-metrics response can serve as a theorem-complete local-universality testbed for Lovelock/Navarro, or whether the global torus frame/discretization leaves an unavoidable diffeomorphism-naturality obstruction; produce the exact reduction theorem or terminal gap.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-LOVELOVK-LOCAL-UNIVERSALITY.md"
+      "exit_condition": "Construct or terminally refute a finite-to-T4 response comparison in which the continuum limit descends from framed/grid metric data to an ordinary metric-only J^2 operator, is natural under local diffeomorphisms on fixed T4, and has a covariant-divergence identity for every Lorentz metric; isolate the first exact bridge if the full package cannot yet be reached.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-FRAME-ERASURE-LOCAL-DIFF-NATURALITY.md"
     },
     {
-      "id": "WRK-A4D-SYMROLE-CENTRAL-DIFFERENCE-CARRIER",
+      "id": "EXP-A4D-ANISOTROPIC-RAYS-NATURALITY-SELECTOR",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
+        "D0-SPECTRAL-EINSTEIN-001"
+      ],
+      "exit_condition": "For the exact surviving finite degree-two Noether rays from E-LIN, determine whether the non-Einstein anisotropic rays can descend to a metric-only locally diffeomorphism-natural J^2 continuum response on T4; prove their frame/grid dependence or exhibit a counterexample, and determine whether local naturality selects the Einstein ray without adding an ad hoc finite symmetry.",
+      "brief": "00_WORK/tasks/EXP-A4D-ANISOTROPIC-RAYS-NATURALITY-SELECTOR.md"
+    },
+    {
+      "id": "WRK-A4D-LINEARIZED-RESPONSE-SEED",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
+      "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
-        "D0-HODGE-LINKS-001"
+        "D0-HODGE-LINKS-001",
+        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001"
       ],
-      "exit_condition": "Lean owns a sitewise symmetric Role-tensor field over ArchiveRolePhaseGroup, canonical role translations, scaled centered finite differences as linear maps, commuting directional differences, finite-sum skew-adjointness, and a symmetric-gradient map, without yet asserting a gravity response law.",
-      "brief": "00_WORK/tasks/WRK-A4D-SYMROLE-CENTRAL-DIFFERENCE-CARRIER.md"
+      "exit_condition": "Lean owns one explicit Euclidean centered-difference local Sym^2(Role) response E_delta on the sitewise role tensor carrier, with exact local tensor symmetry, gauge nullity, local divergence identity, self-adjoint quadratic action/first variation, radius-two locality, small-cycle guard and a nonzero second-difference control, without any claim of uniqueness, Lorentz covariance, continuum Einstein interpretation or Lovelock naturality.",
+      "brief": "00_WORK/tasks/WRK-A4D-LINEARIZED-RESPONSE-SEED.md"
     },
     {
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
