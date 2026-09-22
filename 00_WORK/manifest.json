@@ -60,7 +60,7 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-CENTERED-CARTAN-WARD-REPAIR",
+      "id": "EXP-A4D-STAGGERED-PRIMAL-DUAL-HODGE-CARRIER",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
@@ -69,11 +69,11 @@
         "D0-MATTER-STRESS-COUPLING-001",
         "D0-ARCHIVE-STRESS-CONSERVATION-001"
       ],
-      "exit_condition": "Classify the smallest modified finite matter transformation, with forward topological d retained, that removes the constant-vector non-skew defect while preserving d-commutation, coframe reconstruction to symmetricRoleGradient and exact Hodge-action Ward covariance; test centered contraction and flux-split candidates and return either a theorem-ready corrected Cartan architecture or a terminal no-go.",
-      "brief": "00_WORK/tasks/EXP-A4D-CENTERED-CARTAN-WARD-REPAIR.md"
+      "exit_condition": "Construct or terminally classify the minimal pre-centered staggered coframe / primal-dual Hodge carrier that retains forward link strain, reconstructs the centered metric gauge exactly, supports the forward topological differential, and admits an exact first-order and preferably second-order matter Ward identity; separate auxiliary frame redundancy, Nyquist information loss and the need for non-diagonal edge-edge Hodge couplings.",
+      "brief": "00_WORK/tasks/EXP-A4D-STAGGERED-PRIMAL-DUAL-HODGE-CARRIER.md"
     },
     {
-      "id": "EXP-ATORUS-LOWEST-SHELL-CONTINUUM-STRESS-PASSPORT",
+      "id": "EXP-ATORUS-LORENTZ-HAMILTONIAN-MATTER-BRIDGE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
@@ -82,8 +82,8 @@
         "D0-SMOOTH-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "Bypass the absent exact finite refinement intertwiner if possible by constructing a direct finite-to-fixed-T4 passport for the lowest-positive mixed shell and its normalized stress: common ±e_r Fourier labels, projector/kernel convergence, cell-volume normalization and continuum tensor limit; classify the Lorentz/time-split debt and the uniform-source zero-mode/backreaction issue.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-LOWEST-SHELL-CONTINUUM-STRESS-PASSPORT.md"
+      "exit_condition": "Construct or terminally classify the minimal 1+3 matter bridge from the owned Role/signature/causal data to a spatial T3 slice or local globally hyperbolic target, a positive spatial CAR/Hodge Hamiltonian, the lowest spatial mixed shell, Lorentzian stress variation and a sourced-background equation suitable for perturbation theory; determine whether the fixed T4 testbed must be locally unwrapped in time.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-LORENTZ-HAMILTONIAN-MATTER-BRIDGE.md"
     },
     {
       "id": "WRK-A4D-ROLEPAIR-METRIC-CARRIER",
