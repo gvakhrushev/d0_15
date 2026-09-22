@@ -270,6 +270,7 @@ import D0.Gauge.SMCharges
 import D0.Gauge.SMGaugeDecomposition
 import D0.Gauge.WilsonLinkGaugeCovariance
 import D0.Gauge.YangMillsKillingPositivity
+import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Geometry.Archive1DCochainRefinement
 import D0.Geometry.Archive1Dto4DRGLiftNoGo
