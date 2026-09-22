@@ -60,31 +60,32 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-ATORUS-NORMAL-SAMPLING-PROVENANCE-GAUGE",
+      "id": "EXP-A4D-FINITE-METRIC-PROVENANCE-CARRIER",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
+        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
         "D0-SMOOTH-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Classify whether metric-normal local sampling/exponential-frame reconstruction is merely a coordinate/gauge realization of an intrinsic metric-only finite-to-continuum response or a genuinely new modelling input; determine whether different admissible normal realizations yield the same estimator and isolate any remaining provenance theorem needed to interpret the finite E_eta response as D0 gravity rather than an externally chosen numerical scheme.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-NORMAL-SAMPLING-PROVENANCE-GAUGE.md"
+      "exit_condition": "Construct or terminally refute an actual provenance map Theta_N from an owned D0 finite metric/geometry carrier into LocalSymRoleField N, together with a compatible finite response factorization and the strongest possible finite gauge/reparametrization provenance theorem whose linearization is the symmetricRoleGradient; identify whether the present conductance/Laplacian carrier is insufficient because it lacks cross-Role metric slots.",
+      "brief": "00_WORK/tasks/EXP-A4D-FINITE-METRIC-PROVENANCE-CARRIER.md"
     },
     {
-      "id": "EXP-ATORUS-MATTER-STRESS-EINSTEIN-COUPLING",
+      "id": "EXP-A4D-LOCAL-MATTER-REALIZATION-CARRIER",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-MATTER-STRESS-COUPLING-001",
+        "D0-MATTER-LOCALIZATION-001",
         "D0-ARCHIVE-STRESS-CONSERVATION-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
-        "D0-SPECTRAL-EINSTEIN-001"
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "Determine whether any currently owned nonzero D0 matter/archive source can be typed, reconstructed and converged on the same fixed-T4 symmetric-tensor carrier as the gravity estimator to produce a conserved continuum T_ab and a sourced equation E_ab=kappa T_ab; otherwise identify the first exact source-carrier/selector/coupling bridge and whether it is already terminally no-go under A-STRESS/A-SOURCE.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-MATTER-STRESS-EINSTEIN-COUPLING.md"
+      "exit_condition": "Construct or terminally classify the first provenance-bearing nonzero anomaly-free matter realization on the 4D archive role-phase carrier, with a local metric-response/stress map into LocalSymRoleField N and explicit conservation/selector accounting; do not reuse zero anomaly stress or arbitrary supplied localization as a physical source.",
+      "brief": "00_WORK/tasks/EXP-A4D-LOCAL-MATTER-REALIZATION-CARRIER.md"
     },
     {
       "id": "WRK-A4D-LINEARIZED-RESPONSE-SEED",
@@ -102,7 +103,7 @@
       "id": "WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-SMOOTH-MANIFOLD-PASSPORT-001",
         "D0-SMOOTH-001",
