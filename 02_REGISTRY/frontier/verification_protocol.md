@@ -98,6 +98,19 @@ risk.
 
 ---
 
+## Worker checkout / dispatch policy
+
+Terminology in user-facing coordination:
+- manifest class \`WORKER\` = **worker**;
+- manifest class \`EXPENSIVE\` = **researcher**.
+
+Workers mutate repository state; researchers normally do not.
+
+Two workers may execute concurrently only when they use separate git worktrees/checkouts. They may intentionally share the external Lake/Mathlib cache. If only one checkout/working directory is available, worker execution is sequential.
+
+Dispatch each worker task separately. Do not put two worker launch prompts into one combined packet. This keeps branch ownership, generated metadata, and shared-cache behavior explicit.
+
+
 ## Lean integration recurring fixes
 
 - ℝ division definitions often need `noncomputable` (real `Inv`/`Div` is noncomputable; `+`/`*` are fine).

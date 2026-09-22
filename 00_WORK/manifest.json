@@ -60,31 +60,30 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-FINITE-LORENTZ-ACTION-SELECTOR",
+      "id": "EXP-A4D-CENTERED-CUBICAL-DIFFERENTIAL-WARD",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
-        "D0-SPECTRAL-EINSTEIN-001"
+        "D0-MATTER-STRESS-COUPLING-001",
+        "D0-ARCHIVE-CAR-DIRAC-OWNER-001"
       ],
-      "exit_condition": "Exhaustively test whether any already-owned finite D0 principle selects beta_N=0 in the exact Lorentz response family c_N(E_eta,N + beta_N E_sp,N), without importing continuum target matching or inventing a new finite symmetry; otherwise terminally classify beta_N as an empirical/bridge/model parameter and identify the minimal selector primitive.",
-      "brief": "00_WORK/tasks/EXP-A4D-FINITE-LORENTZ-ACTION-SELECTOR.md"
+      "exit_condition": "Design the literal cubical/exterior differential owner on ArchiveRolePhaseGroup×ArchiveFockState and determine whether a centered variant or explicit averaging/staggering construction can simultaneously give d^2=0, degree raising, CAR support, metric Hodge adjointness and a Cartan/Ward identity compatible with symmetricRoleGradient; isolate the minimum implementable worker theorem package.",
+      "brief": "00_WORK/tasks/EXP-A4D-CENTERED-CUBICAL-DIFFERENTIAL-WARD.md"
     },
     {
-      "id": "EXP-A4D-CAR-HODGE-METRIC-ACTION",
+      "id": "EXP-A4D-MATTER-STATE-SELECTION-PRINCIPLE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-MATTER-STRESS-COUPLING-001",
-        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
         "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001",
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Construct or terminally classify the strongest full-metric CAR/exterior action route on X_N: a 4+6 metric-dependent Hodge weight W_m on the 16-state exterior/Fock fibre, the induced finite codifferential/Dirac operator and matter action, and literal metric variation into LocalSymRoleField; separate Riemannian success, Lorentz/Krein obstruction, state-selection dependence and Ward conservation.",
-      "brief": "00_WORK/tasks/EXP-A4D-CAR-HODGE-METRIC-ACTION.md"
+      "exit_condition": "Classify whether any currently owned finite D0 principle selects a nonconstant physical CAR/Hodge matter state or density matrix on the local 16-state fibre after the explicit Dirac/Hodge operator exists; separate spectral subspace selection, pure-state preparation, initial data, thermal/mixed states and anomaly-free internal species, and terminally identify the first genuine new physics primitive if none is selected.",
+      "brief": "00_WORK/tasks/EXP-A4D-MATTER-STATE-SELECTION-PRINCIPLE.md"
     },
     {
       "id": "WRK-A4D-ROLEPAIR-METRIC-CARRIER",
