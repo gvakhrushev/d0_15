@@ -98,6 +98,23 @@ risk.
 
 ---
 
+## Cloud formalization draft phase
+
+A \`PLANNED\` worker may have its Lean implementation prepared in advance by a **cloud formalizer** that does not have the local warm Lean/Mathlib cache.
+
+This is a draft phase, not worker acceptance:
+
+- keep the manifest task state \`PLANNED\`;
+- use a dedicated branch such as \`draft/<task-slug>\` from the stated canonical baseline;
+- prefer isolated owner modules and theorem proofs; avoid editing \`manifest.json\`, \`STATUS.md\`, generated views, claim status, or release metadata;
+- run narrow Lean checks only if the cloud environment can do so cheaply; a full \`D0.All\` build is not required;
+- never claim \`LEAN_PROVED\`/CORE or move the task to \`REVIEW\`;
+- commit and push the candidate implementation;
+- finish with a \`CLOUD_DRAFT_READY\` handoff containing base/head SHA, changed files, intended capstones, checks actually run, unchecked gates, and known API/proof risks.
+
+When a local worker slot opens, the worker starts from the cloud draft branch (rebased/merged onto fresh canonical main as needed), tries to compile the draft before redesigning it, fixes concrete Lean/API failures, performs the normal incremental verification gates, updates shared metadata, then moves the task to \`REVIEW\`.
+
+
 ## Worker checkout / dispatch policy
 
 Terminology in user-facing coordination:

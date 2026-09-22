@@ -60,7 +60,7 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-HODGE-ACTION-WARD-COVARIANCE",
+      "id": "EXP-A4D-CENTERED-CARTAN-WARD-REPAIR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
@@ -69,21 +69,21 @@
         "D0-MATTER-STRESS-COUPLING-001",
         "D0-ARCHIVE-STRESS-CONSERVATION-001"
       ],
-      "exit_condition": "Determine whether the full-metric finite Hodge matter action admits an exact Cartan/metric covariance or telescoping identity under the forward cubical Cartan action plus reconstructed centered metric variation, sufficient to derive on-shell centered Role stress conservation; otherwise isolate the exact discrete Leibniz/staggering obstruction and minimum corrected action.",
-      "brief": "00_WORK/tasks/EXP-A4D-HODGE-ACTION-WARD-COVARIANCE.md"
+      "exit_condition": "Classify the smallest modified finite matter transformation, with forward topological d retained, that removes the constant-vector non-skew defect while preserving d-commutation, coframe reconstruction to symmetricRoleGradient and exact Hodge-action Ward covariance; test centered contraction and flux-split candidates and return either a theorem-ready corrected Cartan architecture or a terminal no-go.",
+      "brief": "00_WORK/tasks/EXP-A4D-CENTERED-CARTAN-WARD-REPAIR.md"
     },
     {
-      "id": "EXP-A4D-LOWEST-SHELL-MATTER-PREPARATION",
+      "id": "EXP-ATORUS-LOWEST-SHELL-CONTINUUM-STRESS-PASSPORT",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-MATTER-STRESS-COUPLING-001",
-        "D0-ARCHIVE-CAR-PARITY-SPECTRUM-001",
+        "D0-SMOOTH-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "Treat lowest-positive-shell occupation explicitly as a new BRIDGE/model primitive and determine whether the normalized lowest-positive spectral projector on the CAR/Hodge carrier gives a symmetry-respecting nonconstant mixed matter state with nonzero metric stress, acceptable refinement behavior and no arbitrary spatial profile; classify what remains for physical preparation provenance and continuum T_ab.",
-      "brief": "00_WORK/tasks/EXP-A4D-LOWEST-SHELL-MATTER-PREPARATION.md"
+      "exit_condition": "Bypass the absent exact finite refinement intertwiner if possible by constructing a direct finite-to-fixed-T4 passport for the lowest-positive mixed shell and its normalized stress: common ±e_r Fourier labels, projector/kernel convergence, cell-volume normalization and continuum tensor limit; classify the Lorentz/time-split debt and the uniform-source zero-mode/backreaction issue.",
+      "brief": "00_WORK/tasks/EXP-ATORUS-LOWEST-SHELL-CONTINUUM-STRESS-PASSPORT.md"
     },
     {
       "id": "WRK-A4D-ROLEPAIR-METRIC-CARRIER",

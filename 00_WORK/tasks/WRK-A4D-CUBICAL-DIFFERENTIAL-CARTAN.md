@@ -15,6 +15,22 @@ Dispatch it separately, never bundled with another worker prompt.
 
 If two workers are active simultaneously they must use separate git worktrees/checkouts. Sharing the external Lake/Mathlib cache is allowed and preferred.
 
+## Cloud draft phase
+
+A cloud formalizer MAY prepare a candidate implementation for this PLANNED task before a local worker slot is free.
+
+Rules:
+
+- keep this task \`PLANNED\`;
+- use branch \`draft/a4d-cubical-differential-cartan\` (or an equivalent clearly draft-named branch) from the stated current canonical baseline;
+- do not edit \`manifest.json\`, \`STATUS.md\`, generated views, claim statuses, or release metadata;
+- implement the owner modules and theorem proofs as far as possible;
+- run only narrow Lean checks if affordable; full \`D0.All\` is not required in the cloud;
+- do not claim \`LEAN_PROVED\` or move the task to \`REVIEW\`;
+- commit/push the branch and finish with a \`CLOUD_DRAFT_READY\` handoff listing base/head SHA, changed files, intended capstones, checks actually run, unchecked gates, and known proof/API risks.
+
+When a local worker slot opens, the worker should start from this draft rather than reimplementing from scratch, rebase/merge onto fresh canonical main, compile first, fix concrete failures, then perform the normal local verification and metadata update.
+
 ## Objective
 
 Formalize the finite algebraic package identified by E-CDIFF:
