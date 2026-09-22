@@ -91,7 +91,7 @@
       "id": "WRK-A4D-LINEARIZED-RESPONSE-SEED",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001"
