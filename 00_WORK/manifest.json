@@ -60,31 +60,32 @@
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
-      "id": "EXP-ATORUS-FRAME-ERASURE-LOCAL-DIFF-NATURALITY",
+      "id": "EXP-A4D-FINITE-METRIC-PROVENANCE-CARRIER",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+        "D0-ARCHIVE-4D-METRIC-LAPLACIAN-001",
         "D0-SMOOTH-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-SPECTRAL-EINSTEIN-001"
       ],
-      "exit_condition": "Construct or terminally refute a finite-to-T4 response comparison in which the continuum limit descends from framed/grid metric data to an ordinary metric-only J^2 operator, is natural under local diffeomorphisms on fixed T4, and has a covariant-divergence identity for every Lorentz metric; isolate the first exact bridge if the full package cannot yet be reached.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-FRAME-ERASURE-LOCAL-DIFF-NATURALITY.md"
+      "exit_condition": "Construct or terminally refute an actual provenance map Theta_N from an owned D0 finite metric/geometry carrier into LocalSymRoleField N, together with a compatible finite response factorization and the strongest possible finite gauge/reparametrization provenance theorem whose linearization is the symmetricRoleGradient; identify whether the present conductance/Laplacian carrier is insufficient because it lacks cross-Role metric slots.",
+      "brief": "00_WORK/tasks/EXP-A4D-FINITE-METRIC-PROVENANCE-CARRIER.md"
     },
     {
-      "id": "EXP-A4D-ANISOTROPIC-RAYS-NATURALITY-SELECTOR",
+      "id": "EXP-A4D-LOCAL-MATTER-REALIZATION-CARRIER",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
-        "D0-SPECTRAL-EINSTEIN-001"
+        "D0-MATTER-STRESS-COUPLING-001",
+        "D0-MATTER-LOCALIZATION-001",
+        "D0-ARCHIVE-STRESS-CONSERVATION-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "For the exact surviving finite degree-two Noether rays from E-LIN, determine whether the non-Einstein anisotropic rays can descend to a metric-only locally diffeomorphism-natural J^2 continuum response on T4; prove their frame/grid dependence or exhibit a counterexample, and determine whether local naturality selects the Einstein ray without adding an ad hoc finite symmetry.",
-      "brief": "00_WORK/tasks/EXP-A4D-ANISOTROPIC-RAYS-NATURALITY-SELECTOR.md"
+      "exit_condition": "Construct or terminally classify the first provenance-bearing nonzero anomaly-free matter realization on the 4D archive role-phase carrier, with a local metric-response/stress map into LocalSymRoleField N and explicit conservation/selector accounting; do not reuse zero anomaly stress or arbitrary supplied localization as a physical source.",
+      "brief": "00_WORK/tasks/EXP-A4D-LOCAL-MATTER-REALIZATION-CARRIER.md"
     },
     {
       "id": "WRK-A4D-LINEARIZED-RESPONSE-SEED",
@@ -97,6 +98,31 @@
       ],
       "exit_condition": "Lean owns one explicit Euclidean centered-difference local Sym^2(Role) response E_delta on the sitewise role tensor carrier, with exact local tensor symmetry, gauge nullity, local divergence identity, self-adjoint quadratic action/first variation, radius-two locality, small-cycle guard and a nonzero second-difference control, without any claim of uniqueness, Lorentz covariance, continuum Einstein interpretation or Lovelock naturality.",
       "brief": "00_WORK/tasks/WRK-A4D-LINEARIZED-RESPONSE-SEED.md"
+    },
+    {
+      "id": "WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-SMOOTH-MANIFOLD-PASSPORT-001",
+        "D0-SMOOTH-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+      ],
+      "exit_condition": "Lean owns a concrete smooth fixed T4, actual symmetric covariant tangent 2-tensors, an actual smooth Lorentz metric structure, local Role-labelled frames/stencils, finite metric sampling, pointwise response reconstruction, and at least the center-frame/reconstruction pullback square, without any limit/naturality/Lovelock claim.",
+      "brief": "00_WORK/tasks/WRK-ATORUS-TYPED-LOCAL-RESPONSE-RECONSTRUCTION.md"
+    },
+    {
+      "id": "WRK-A4D-EXTRA-RAY-FRAME-NOGO",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001",
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+      ],
+      "exit_condition": "Lean owns exact finite-dimensional witnesses that the Euclidean E_perp projector changes under an orthogonal frame change preserving the metric and that the Lorentz E_sp time/spatial projector changes under an exact rational boost preserving eta, without claiming a continuum manifold or full naturality theorem.",
+      "brief": "00_WORK/tasks/WRK-A4D-EXTRA-RAY-FRAME-NOGO.md"
     },
     {
       "id": "WRK-GEO-CAR-DIRAC-PARITY",
