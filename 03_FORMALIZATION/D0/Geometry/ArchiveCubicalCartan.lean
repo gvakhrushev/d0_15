@@ -36,14 +36,22 @@ theorem annihilateAction_add (N : ℕ) (r : Role)
     annihilateAction N r (ψ + φ) =
       annihilateAction N r ψ + annihilateAction N r φ := by
   funext p
-  simp [annihilateAction, Finset.mul_sum]
+  unfold annihilateAction
+  simp only [Pi.add_apply]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro ket hket
   ring
 
 theorem annihilateAction_smul (N : ℕ) (r : Role) (a : ℝ)
     (ψ : ArchiveCochain N) :
     annihilateAction N r (a • ψ) = a • annihilateAction N r ψ := by
   funext p
-  simp [annihilateAction, Finset.mul_sum]
+  unfold annihilateAction
+  simp only [Pi.smul_apply, smul_eq_mul]
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro ket hket
   ring
 
 theorem annihilateAction_sum {ι : Type*} [Fintype ι] (N : ℕ) (r : Role)
@@ -52,8 +60,8 @@ theorem annihilateAction_sum {ι : Type*} [Fintype ι] (N : ℕ) (r : Role)
       ∑ i, annihilateAction N r (F i) := by
   classical
   have hfin : ∀ s : Finset ι,
-      annihilateAction N r (∑ i in s, F i) =
-        ∑ i in s, annihilateAction N r (F i) := by
+      (annihilateAction N r (∑ i ∈ s, F i) =
+        (∑ i ∈ s, annihilateAction N r (F i))) := by
     intro s
     induction s using Finset.induction_on with
     | empty =>
@@ -165,10 +173,10 @@ theorem annihilate_createAction_anticommute (N : ℕ) (s r : Role)
   rw [← Finset.sum_add_distrib]
   calc
     (∑ ket : ArchiveFockState,
-      (∑ mid : ArchiveFockState,
+      ((∑ mid : ArchiveFockState,
           carAnnihilate s p.2 mid * carCreate r mid ket) * ψ (p.1, ket) +
         (∑ mid : ArchiveFockState,
-          carCreate r p.2 mid * carAnnihilate s mid ket) * ψ (p.1, ket)) =
+          carCreate r p.2 mid * carAnnihilate s mid ket) * ψ (p.1, ket))) =
       ∑ ket : ArchiveFockState,
         (roleDelta s r * fockIdentity p.2 ket) * ψ (p.1, ket) := by
           apply Finset.sum_congr rfl
@@ -219,15 +227,68 @@ theorem contraction_add (N : ℕ) (xi : LocalRoleVector N)
     contraction N xi (ψ + φ) =
       contraction N xi ψ + contraction N xi φ := by
   funext p
-  simp [contraction]
-  ring
+  unfold contraction
+  simp only [Pi.add_apply]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r hr
+  calc
+    xi p.1 r *
+        (∑ ket : ArchiveFockState,
+          carAnnihilate r p.2 ket *
+            (ψ (p.1, ket) + φ (p.1, ket))) =
+      xi p.1 r *
+        (∑ ket : ArchiveFockState,
+          (carAnnihilate r p.2 ket * ψ (p.1, ket) +
+            carAnnihilate r p.2 ket * φ (p.1, ket))) := by
+          congr 1
+          apply Finset.sum_congr rfl
+          intro ket hket
+          ring
+    _ = xi p.1 r *
+        ((∑ ket : ArchiveFockState,
+            carAnnihilate r p.2 ket * ψ (p.1, ket)) +
+          (∑ ket : ArchiveFockState,
+            carAnnihilate r p.2 ket * φ (p.1, ket))) := by
+          rw [Finset.sum_add_distrib]
+    _ = xi p.1 r *
+        (∑ ket : ArchiveFockState,
+            carAnnihilate r p.2 ket * ψ (p.1, ket)) +
+        xi p.1 r *
+        (∑ ket : ArchiveFockState,
+            carAnnihilate r p.2 ket * φ (p.1, ket)) := by
+          ring
 
 theorem contraction_smul (N : ℕ) (xi : LocalRoleVector N)
     (c : ℝ) (ψ : ArchiveCochain N) :
     contraction N xi (c • ψ) = c • contraction N xi ψ := by
   funext p
-  simp [contraction]
-  ring
+  unfold contraction
+  simp only [Pi.smul_apply, smul_eq_mul]
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro r hr
+  calc
+    xi p.1 r *
+        (∑ ket : ArchiveFockState,
+          carAnnihilate r p.2 ket * (c * ψ (p.1, ket))) =
+      ∑ ket : ArchiveFockState,
+        xi p.1 r * (carAnnihilate r p.2 ket * (c * ψ (p.1, ket))) := by
+          rw [Finset.mul_sum]
+    _ =
+      ∑ ket : ArchiveFockState,
+        (c * xi p.1 r) * (carAnnihilate r p.2 ket * ψ (p.1, ket)) := by
+          apply Finset.sum_congr rfl
+          intro ket hket
+          ring
+    _ = (c * xi p.1 r) *
+        (∑ ket : ArchiveFockState,
+          carAnnihilate r p.2 ket * ψ (p.1, ket)) := by
+          rw [Finset.mul_sum]
+    _ = c * (xi p.1 r *
+        (∑ ket : ArchiveFockState,
+          carAnnihilate r p.2 ket * ψ (p.1, ket))) := by
+          ring
 
 /-- Contraction at a site only sees the vector and cochain at that site. -/
 theorem contraction_point_congr (N : ℕ)
@@ -259,7 +320,11 @@ theorem contraction_degree_lower (N k : ℕ) (xi : LocalRoleVector N)
   apply Finset.sum_eq_zero
   intro ket hk
   by_cases hc : carAnnihilate r bra ket = 0
-  · simp [hc]
+  · have hcast : (carAnnihilateInt r bra ket : ℝ) = 0 := by
+      simpa only [carAnnihilate_eq_intCast] using hc
+    have hcar : carAnnihilateInt r bra ket = 0 := by
+      exact_mod_cast hcast
+    simp [hcar, hc]
   · have hdeg := carAnnihilate_degree_lower r bra ket hc
     have hket : fockDegree ket ≠ k + 1 := by
       intro hkdeg
@@ -282,7 +347,11 @@ theorem contraction_degree_zero (N : ℕ) (xi : LocalRoleVector N)
   apply Finset.sum_eq_zero
   intro ket hk
   by_cases hc : carAnnihilate r p.2 ket = 0
-  · simp [hc]
+  · have hcast : (carAnnihilateInt r p.2 ket : ℝ) = 0 := by
+      simpa only [carAnnihilate_eq_intCast] using hc
+    have hcar : carAnnihilateInt r p.2 ket = 0 := by
+      exact_mod_cast hcast
+    simp [hcar, hc]
   · have hdeg := carAnnihilate_degree_lower r p.2 ket hc
     have hket : fockDegree ket ≠ 0 := by omega
     have hx := hψ p.1 ket hket
@@ -468,7 +537,12 @@ theorem cartanForward_constant_vector (N : ℕ) (v : Role → ℝ)
             intro r hr
             have hpair := congrFun (forwardCreateDirection_mixed N r s ψ) p
             simp only [Pi.add_apply, Pi.smul_apply] at hpair
-            rw [hpair]
+            have hpair' :
+                forwardCreateDirection N r (annihilateAction N s ψ) p +
+                  annihilateAction N s (forwardCreateDirection N r ψ) p =
+                  roleDelta s r * forwardSite N r ψ p := by
+              simpa only [smul_eq_mul] using hpair
+            rw [hpair']
     _ = ∑ r : Role, v r * forwardSite N r ψ p := by
             apply Finset.sum_congr rfl
             intro s hs
@@ -520,7 +594,13 @@ theorem dForward_constantCoframe (N : ℕ) (b : Role) :
   have hconst :
       forwardDifference N r
         (fun x => constantCoframe N b (x, ket)) = 0 := by
-    apply forwardDifference_const
+    have hconstFun :
+        (fun x : ArchiveRolePhaseGroup N => constantCoframe N b (x, ket)) =
+          (fun _ => if ket = singletonFockState b then (1 : ℝ) else 0) := by
+      funext x
+      simp [constantCoframe]
+    rw [hconstFun]
+    exact forwardDifference_const N r _
   rw [hconst]
   simp
 

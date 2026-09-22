@@ -282,8 +282,10 @@ import D0.Geometry.ArchiveCARFockCarrier
 import D0.Geometry.ArchiveCARRelations
 import D0.Geometry.ArchiveCanonicalZeroModeProjector
 import D0.Geometry.ArchiveConcreteSpectralPropinquity
+import D0.Geometry.ArchiveCubicalCartan
 import D0.Geometry.ArchiveCubicalCoboundary
 import D0.Geometry.ArchiveCubicalCochainCarrier
+import D0.Geometry.ArchiveCubicalDifferential
 import D0.Geometry.ArchiveCurvatureDensity
 import D0.Geometry.ArchiveCurvatureObstruction
 import D0.Geometry.ArchiveDiracPseudoinverse

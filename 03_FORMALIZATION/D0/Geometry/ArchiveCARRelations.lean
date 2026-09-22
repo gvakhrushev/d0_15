@@ -175,7 +175,8 @@ theorem car_mixed_anticommutator_create_first (r s : Role)
     (bra ket : ArchiveFockState) :
     anticommutator (carCreate r) (carAnnihilate s) bra ket =
       roleDelta r s * fockIdentity bra ket := by
-  simpa [anticommutator, mul_comm] using car_mixed_anticommutator s r bra ket
+  simpa [anticommutator, add_comm, roleDelta, eq_comm] using
+    car_mixed_anticommutator s r bra ket
 
 /-! ## Support and degree bookkeeping -/
 

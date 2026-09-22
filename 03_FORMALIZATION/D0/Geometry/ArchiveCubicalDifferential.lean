@@ -9,6 +9,8 @@ namespace D0.Geometry
 open D0
 open scoped BigOperators
 
+noncomputable section
+
 /-!
 # D0.Geometry.ArchiveCubicalDifferential
 
@@ -183,17 +185,22 @@ theorem forward_backward_adjoint (N : ℕ) (r : Role)
   simp only [forwardDifference_apply, backwardDifference_apply,
     roleTranslatePlus_apply, roleTranslateMinus_apply, e]
   calc
-    (∑ x, forwardDifferenceScale N * (f (x + roleStep N r) - f x) * g x) =
+    (∑ x, forwardDifferenceScale N * (f (x + e) - f x) * g x) =
         forwardDifferenceScale N * (∑ x, f (x + e) * g x) -
           forwardDifferenceScale N * (∑ x, f x * g x) := by
-      simp [e, Finset.mul_sum, mul_sub]
+      rw [Finset.mul_sum, Finset.mul_sum, ← Finset.sum_sub_distrib]
+      apply Finset.sum_congr rfl
+      intro x hx
       ring
     _ = forwardDifferenceScale N * (∑ x, f x * g (x - e)) -
           forwardDifferenceScale N * (∑ x, f x * g x) := by
       rw [hplus]
     _ = -∑ x, f x *
-          (forwardDifferenceScale N * (g x - g (x - roleStep N r))) := by
-      simp [e, Finset.mul_sum, mul_sub]
+          (forwardDifferenceScale N * (g x - g (x - e))) := by
+      rw [Finset.mul_sum, Finset.mul_sum, ← Finset.sum_sub_distrib,
+        ← Finset.sum_neg_distrib]
+      apply Finset.sum_congr rfl
+      intro x hx
       ring
 
 /-! ## Exact forward-to-centered bridge -/
@@ -358,13 +365,30 @@ noncomputable def dForward (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N 
 theorem dForward_add (N : ℕ) (ψ φ : ArchiveCochain N) :
     dForward N (ψ + φ) = dForward N ψ + dForward N φ := by
   funext p
-  simp [dForward, forwardCreateDirection, forwardDifference]
+  simp only [Pi.add_apply]
+  unfold dForward forwardCreateDirection
+  simp only [Pi.add_apply]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r hr
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro ket hk
+  simp only [Pi.add_apply, forwardDifference_apply]
   ring
 
 theorem dForward_smul (N : ℕ) (c : ℝ) (ψ : ArchiveCochain N) :
     dForward N (c • ψ) = c • dForward N ψ := by
   funext p
-  simp [dForward, forwardCreateDirection, forwardDifference]
+  unfold dForward forwardCreateDirection
+  simp only [Pi.smul_apply, smul_eq_mul]
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro r hr
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro ket hk
+  simp only [forwardDifference_apply]
   ring
 
 theorem dForward_eq_sum_directions (N : ℕ) (ψ : ArchiveCochain N) :
@@ -377,7 +401,7 @@ theorem dForward_sum {ι : Type*} [Fintype ι] (N : ℕ)
     dForward N (∑ i, F i) = ∑ i, dForward N (F i) := by
   classical
   have hfin : ∀ s : Finset ι,
-      dForward N (∑ i in s, F i) = ∑ i in s, dForward N (F i) := by
+      (dForward N (∑ i ∈ s, F i) = (∑ i ∈ s, dForward N (F i))) := by
     intro s
     induction s using Finset.induction_on with
     | empty =>
@@ -417,7 +441,11 @@ theorem dForward_degree_raise (N k : ℕ) (ψ : ArchiveCochain N)
   apply Finset.sum_eq_zero
   intro ket hk
   by_cases hc : carCreate r bra ket = 0
-  · simp [hc]
+  · have hcast : (carCreateInt r bra ket : ℝ) = 0 := by
+      simpa only [carCreate_eq_intCast] using hc
+    have hcar : carCreateInt r bra ket = 0 := by
+      exact_mod_cast hcast
+    simp [hcar, hc]
   · have hdeg := carCreate_degree_raise r bra ket hc
     have hket : fockDegree ket ≠ k := by
       intro hkdeg
@@ -442,13 +470,19 @@ theorem dForward_scalar_oneForm_component (N : ℕ)
         roleDelta s r * forwardDifference N s f x := by
     intro s
     rw [Finset.sum_eq_single vacuumFockState]
-    · simp [scalarCochain, carCreate_singleton_vacuum]
+    · have hsc : (fun y : ArchiveRolePhaseGroup N =>
+          scalarCochain N f (y, vacuumFockState)) = f := by
+        funext y
+        simp [scalarCochain]
+      rw [hsc, carCreate_singleton_vacuum]
     · intro ket _ hket
       have hz : (fun y : ArchiveRolePhaseGroup N =>
           scalarCochain N f (y, ket)) = 0 := by
         funext y
         simp [scalarCochain, hket]
-      rw [hz, forwardDifference_zero]
+      have hz' : (fun y : ArchiveRolePhaseGroup N =>
+          scalarCochain N f (y, ket)) = (fun _ => 0) := hz
+      rw [hz', forwardDifference_zero]
       simp
     · simp
   simp_rw [hinner]
@@ -618,7 +652,16 @@ noncomputable def dCentered (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N
 theorem dCentered_add (N : ℕ) (ψ φ : ArchiveCochain N) :
     dCentered N (ψ + φ) = dCentered N ψ + dCentered N φ := by
   funext p
-  simp [dCentered, centeredCreateDirection, centeredDifference_apply]
+  simp only [Pi.add_apply]
+  unfold dCentered centeredCreateDirection
+  simp only [Pi.add_apply]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r hr
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro ket hk
+  simp only [Pi.add_apply, centeredDifference_apply]
   ring
 
 theorem dCentered_eq_sum_directions (N : ℕ) (ψ : ArchiveCochain N) :
@@ -631,7 +674,7 @@ theorem dCentered_sum {ι : Type*} [Fintype ι] (N : ℕ)
     dCentered N (∑ i, F i) = ∑ i, dCentered N (F i) := by
   classical
   have hfin : ∀ s : Finset ι,
-      dCentered N (∑ i in s, F i) = ∑ i in s, dCentered N (F i) := by
+      (dCentered N (∑ i ∈ s, F i) = (∑ i ∈ s, dCentered N (F i))) := by
     intro s
     induction s using Finset.induction_on with
     | empty =>
@@ -684,4 +727,5 @@ theorem dCentered_zero_at_minimal (ψ : ArchiveCochain 0) :
   simp at hz
   simp [hz]
 
+end
 end D0.Geometry
