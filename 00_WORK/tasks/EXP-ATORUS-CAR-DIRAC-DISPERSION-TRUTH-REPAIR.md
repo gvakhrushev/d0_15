@@ -8,9 +8,9 @@ CTRL-GRAVITY-DYNAMICS-CLOSURE
 
 ## Objective
 
-Truth-repair the literal landed CAR operator before any Lorentz-stress promotion.
+The hopping-versus-difference audit is closed. `carDirac` is `hoppingCarDirac`. `hodgeCarDirac` owns the counting adjoint and fermionic parity. The remaining exit is the exact square and the spectral consequences that depend on it.
 
-Repository edits: **NONE**.
+Repository edits for that square package belong to `WRK-ATORUS-CAR-HODGE-SQUARE-SHELL`.
 
 ## Frozen audit result
 
@@ -32,15 +32,17 @@ MEMO_50 establishes that the current directional owner is A_r = L/2(U_r+U_r^-1),
 
 Do not derive Lorentz stress here. Do not select the matter preparation state. Do not import a continuum Dirac operator as the definition.
 
-## Terminal verdict
+## Remaining exit
 
-Return exactly one:
+Prove, for the landed `hodgeCarDirac`,
 
-- CORRECTED-CAR-DIRAC-REACHED
-- HODGE-DIRAC-OWNER-READY
-- HOPPING-CAR-OWNER-RECLASSIFICATION-REQUIRED
-- ALL-L-DIFFERENCE-DIRAC-PRIMITIVE-MISSING
-- CAR-DIRAC-SQUARE-CLAIM-TERMINAL-NOGO
+$$
+D_H^2=-\sum_r\nabla_r^-\nabla_r^+\otimes I_{16},
+$$
+
+then the `L=2` normalization against the graph Laplacian, the kernel, the spatial first shell of rank 96 for `L>=3`, `E_1(L)=2L\sin(\pi/L)`, and `E_1(L)\to 2\pi`.
+
+Do not promote those spectral statements before the square. Do not use `hoppingCarDirac` as the massless owner.
 
 ## Deliverable
 

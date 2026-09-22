@@ -35,6 +35,7 @@
     "02_REGISTRY/frontier/RESEARCH_BRIEF_C1_COMMON_CARRIER.md",
     "02_REGISTRY/frontier/RESEARCH_BRIEF_DX_TWISTED_PROPINQUITY.md",
     "02_REGISTRY/frontier/TASK_INDUCTIVE_SPECTRAL_TRIPLE_ALL_N.md",
+    "02_REGISTRY/frontier/REVIEW_REMEDIATION_ROADMAP.md",
     "02_REGISTRY/frontier/no_go_atlas.md",
     "02_REGISTRY/frontier/verification_protocol.md"
   ],
@@ -79,7 +80,7 @@
       "affected_claims": [
         "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001"
       ],
-      "exit_condition": "Construct or terminally classify an actual finite representation/commutant/automorphism owner whose derived Lie/group factors are SU(3)×SU(2)×U(1), clearly separating dimension/charge alignment and frozen ledgers from a genuine gauge-group derivation.",
+      "exit_condition": "Close U_sigma c_r U_sigma^{-1} = c_{sigma r} for arbitrary Equiv.Perm Role with the fermionic sign cocycle, then derive or terminally classify the commutant on the 16-state CAR/Fock carrier. Adjacent-transposition intertwining is already owned. Albert dimension alignment and the frozen anomaly ledger are comparisons, not the definition.",
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {
@@ -105,7 +106,7 @@
         "D0-MATTER-STRESS-COUPLING-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
       ],
-      "exit_condition": "Truth-repair the literal landed CAR operator: derive its exact Fourier/cosine symbol and square/kernel structure, classify the mismatch with the owned lattice Laplacian and advertised massless shell, and determine the minimal all-L corrected difference/Hodge-Dirac owner or explicitly reclassify the current matrix as a hopping Clifford operator; do not attach Lorentz stress until the operator layer is honest.",
+      "exit_condition": "Prove hodgeCarDirac squared equals -sum_r nabla_r^- nabla_r^+ tensor I_16, then the L=2 graph-normalization, the kernel, the spatial first shell of rank 96 for L>=3, E_1(L)=2L sin(pi/L), and the limit 2pi. The hopping-versus-difference audit is already closed: carDirac is hoppingCarDirac and is not this owner.",
       "brief": "00_WORK/tasks/EXP-ATORUS-CAR-DIRAC-DISPERSION-TRUTH-REPAIR.md"
     },
     {
@@ -126,7 +127,7 @@
       "id": "WRK-A4D-PRIMAL-DUAL-PARENT-ALGEBRA",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-MATTER-STRESS-COUPLING-001",
@@ -158,6 +159,31 @@
       ],
       "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
+    },
+    {
+      "id": "WRK-ATORUS-CAR-HODGE-SQUARE-SHELL",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
+        "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
+        "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001"
+      ],
+      "exit_condition": "Lean owns hodgeCarDirac squared as the fibrewise difference Laplacian, the L=2 normalization, the kernel, spatial first-shell rank 96 for L>=3, E_1(L)=2L sin(pi/L), and the limit 2pi, without using hoppingCarDirac or selecting a constitutive law.",
+      "brief": "00_WORK/tasks/WRK-ATORUS-CAR-HODGE-SQUARE-SHELL.md"
+    },
+    {
+      "id": "EXP-M1-RIESZ-READOUT-REPRESENTATION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-M1-RIESZ-REPRESENTATION-GAP-001",
+        "D0-SCENE-OPPOSITE-CUT-RIESZ-001"
+      ],
+      "exit_condition": "Construct or refute an independently motivated representation from the two M1 verification lines to two scene/Riesz readouts. Uniform block weight is M1-selected only if that representation forces it.",
+      "brief": "00_WORK/tasks/EXP-M1-RIESZ-READOUT-REPRESENTATION.md"
     }
   ]
 }

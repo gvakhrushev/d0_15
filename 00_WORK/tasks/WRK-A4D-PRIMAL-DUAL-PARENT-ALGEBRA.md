@@ -139,6 +139,17 @@ Cloud phase: \`CLOUD_DRAFT_READY\`, task stays PLANNED.
 Local phase: REVIEW, PR, STOP.
 
 
+## Integration evidence
+
+The exit condition is met by the landed modules, without a constitutive selection:
+
+- `parentConstraint_transport_in_readout_kernel` and `odd_one_role_transport_zero`
+- `centered_generator_family_not_closed` and `radius_one_correction_cannot_cancel_distance_two`
+- `mixedPrimalDualWard_invariant`
+- `centeredRoleDivergence_zero_of_parentWard`, which still assumes `readout (df xi) = symmetricRoleGradient xi`
+
+State: REVIEW.
+
 ## Local verification handoff
 
 Cloud draft branch: `draft/a4d-primal-dual-parent-algebra`
