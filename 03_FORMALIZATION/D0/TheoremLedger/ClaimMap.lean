@@ -1392,7 +1392,17 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-HODGE-TWISTED-ZEROMODE-LIFTING-001", moduleName := "D0.Geometry.ArchiveTwistedHodgeDirac;D0.Spectrum.TwistedHodgeZeroModeLifting",
       theoremName := "twistedCycle_nontrivial_holonomy_kernel_eq_bot;twistedCycle_kernel_nontrivial_iff;twistedScalar_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_one_ofReal;twistedHolonomy_one_recovers_kernel_finrank", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-FOCK-INTRINSIC-COMMUTANT-001", moduleName := "D0.Geometry.ArchiveFockIntrinsicCommutant",
-      theoremName := "fullCAR_commutant_scalar;dressedSkew_commutes_majorana;carMajoranaInt_eq_fockGamma", status := ClaimStatus.leanCoreProved }
+      theoremName := "fullCAR_commutant_scalar;dressedSkew_commutes_majorana;carMajoranaInt_eq_fockGamma", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FINITE-CHAIN-LINK-TRANSPORT-001", moduleName := "D0.Geometry.ArchiveChainConnection",
+      theoremName := "transport_gauge;transport_inverse_left;transport_inverse_right;transport_translate;pathTransport_nil;pathTransport_append;pathTransport_reverse;pathTransport_gauge;seamConnection_recovers_twistedRoleShift;oriented_links_not_collapsed_at_period_two", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FINITE-CHAIN-CURVATURE-001", moduleName := "D0.Geometry.ArchiveChainCurvature",
+      theoremName := "transport_commutator_apply;curvature_gauge;curvature_eq_holonomy_defect;basedHolonomy_gauge;trivialLink_curvature_zero;nonabelian_curvature_nonzero;period_two_square_uses_both_slots", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-COEFFICIENT-COVARIANT-DIFFERENTIAL-001", moduleName := "D0.Geometry.ArchiveCovariantCubicalDifferential",
+      theoremName := "dConn_add;dConn_smul;dConn_raises_degree;dConn_radius_one;dConn_trivial_eq_dForward;dConn_gauge;cartanConn_comm_dConn", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CAR-OCCUPATION-PROJECTOR-001", moduleName := "D0.Geometry.ArchiveCARAssociativeEnvelope",
+      theoremName := "occupationProjector_matrixUnit;carEnd_linear_span_misses_vacuum_projector;car_unital_envelope_dimension", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CARTAN-LINK-SCOPED-NOGO-001", moduleName := "D0.Geometry.ArchiveCartanLinkNoGo",
+      theoremName := "centered_conjugation_distance_two_entry;centered_conjugation_not_elementary_link_tangent;flat_wilson_curvature_cannot_equal_centered_defect;sameFock_flat_links_square_entry", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

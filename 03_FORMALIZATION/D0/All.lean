@@ -282,12 +282,17 @@ import D0.Geometry.Archive1Dto4DRGLiftNoGo
 import D0.Geometry.Archive4DCurvaturePerturbationBridge
 import D0.Geometry.ArchiveActionFunctional
 import D0.Geometry.ArchiveBianchiIdentity
+import D0.Geometry.ArchiveCARAssociativeEnvelope
 import D0.Geometry.ArchiveCARDegreePreserving
 import D0.Geometry.ArchiveCARDirac
 import D0.Geometry.ArchiveCARFockCarrier
 import D0.Geometry.ArchiveCARRelations
 import D0.Geometry.ArchiveCanonicalZeroModeProjector
+import D0.Geometry.ArchiveCartanLinkNoGo
+import D0.Geometry.ArchiveChainConnection
+import D0.Geometry.ArchiveChainCurvature
 import D0.Geometry.ArchiveConcreteSpectralPropinquity
+import D0.Geometry.ArchiveCovariantCubicalDifferential
 import D0.Geometry.ArchiveCubicalCartan
 import D0.Geometry.ArchiveCubicalCoboundary
 import D0.Geometry.ArchiveCubicalCochainCarrier

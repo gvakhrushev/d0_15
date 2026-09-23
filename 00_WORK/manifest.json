@@ -97,6 +97,21 @@
       ],
       "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
+    },
+    {
+      "id": "WRK-A4D-CHAIN-CONNECTION-THEOREM-PACKAGE",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-FINITE-CHAIN-LINK-TRANSPORT-001",
+        "D0-FINITE-CHAIN-CURVATURE-001",
+        "D0-COEFFICIENT-COVARIANT-DIFFERENTIAL-001",
+        "D0-CAR-OCCUPATION-PROJECTOR-001",
+        "D0-CARTAN-LINK-SCOPED-NOGO-001"
+      ],
+      "exit_condition": "Finite link transport, open-path curvature, coefficient differential covariance, occupation projectors, and the scoped Cartan-link no-gos are Lean-owned, while DISCRETE-CHAIN-CONNECTION-PRIMITIVE-REQUIRED stays open. The coefficient square, frame-to-Fock lift, replacement generation of every degree matrix unit, staggered Hodge tangent, and moving-d parent Ward are not claimed.",
+      "brief": "00_WORK/tasks/WRK-A4D-CHAIN-CONNECTION-THEOREM-PACKAGE.md"
     }
   ]
 }
