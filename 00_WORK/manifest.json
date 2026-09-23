@@ -84,19 +84,6 @@
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {
-      "id": "EXP-SCENE-RIESZ-M1-OPERATOR-WELD",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-SCENE-OPPOSITE-CUT-RIESZ-001",
-        "D0-M1-RIESZ-REPRESENTATION-GAP-001",
-        "D0-ROLE-FOCK-PERMUTATION-001"
-      ],
-      "exit_condition": "The bare Riesz mismatch is identified with the scene opposite-cut operator on the standard sectors, or that identification is refuted; M1 verification equality either selects the uniform block weight or the missing representation premise is named; the Role permutation action on the Fock carrier is owned or the fermionic sign gap is named.",
-      "brief": "00_WORK/tasks/EXP-SCENE-RIESZ-M1-OPERATOR-WELD.md"
-    },
-    {
       "id": "EXP-ATORUS-CAR-DIRAC-DISPERSION-TRUTH-REPAIR",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
@@ -122,19 +109,6 @@
       ],
       "exit_condition": "Repository tooling audits README/BOOK/frontier/monograph public claims against registry/forcing/no-go metadata for known overstatement classes, blocks stale phrases or missing qualifiers in CI, and the remaining high-risk public surfaces have an explicit reviewed allowlist or issue list.",
       "brief": "00_WORK/tasks/WRK-PUBLIC-CLAIM-STRENGTH-LINT.md"
-    },
-    {
-      "id": "WRK-A4D-PRIMAL-DUAL-PARENT-ALGEBRA",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-MATTER-STRESS-COUPLING-001",
-        "D0-ARCHIVE-STRESS-CONSERVATION-001"
-      ],
-      "exit_condition": "Lean owns the finite coframe parent-constraint transport no-go on the odd one-role sector, an explicit small-lattice centered-Cartan closure/radius-one no-go, an abstract local mixed primal/dual Hodge parent action with exact Ward invariance under chain-covariance hypotheses, and conditional centered metric-stress divergence descent using the owned symmetricRoleGradient adjoint theorem; no actual connection group or physical Hodge constitutive law is claimed.",
-      "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-PARENT-ALGEBRA.md"
     },
     {
       "id": "WRK-A4D-EXTRA-RAY-FRAME-NOGO",
