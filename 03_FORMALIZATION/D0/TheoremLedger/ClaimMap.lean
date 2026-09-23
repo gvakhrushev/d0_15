@@ -1390,7 +1390,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-HODGE-GENERIC-TWISTED-HOLONOMY-001", moduleName := "D0.Geometry.ArchiveTwistedHodgeDirac",
       theoremName := "dTwisted_sq;dTwistedAdjoint_sq;hodgeCarDiracTwisted_sq;hodgeCarDiracTwisted_self_adjoint;hodgeCarDiracTwisted_parity_odd;dTwisted_degree_raise;dTwistedAdjoint_degree_lower;hodgeCarDiracTwisted_radius_one", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-HODGE-TWISTED-ZEROMODE-LIFTING-001", moduleName := "D0.Geometry.ArchiveTwistedHodgeDirac;D0.Spectrum.TwistedHodgeZeroModeLifting",
-      theoremName := "twistedCycle_nontrivial_holonomy_kernel_eq_bot;twistedCycle_kernel_nontrivial_iff;twistedScalar_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_one_ofReal;twistedHolonomy_one_recovers_kernel_finrank", status := ClaimStatus.leanCoreProved }
+      theoremName := "twistedCycle_nontrivial_holonomy_kernel_eq_bot;twistedCycle_kernel_nontrivial_iff;twistedScalar_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_one_ofReal;twistedHolonomy_one_recovers_kernel_finrank", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-FOCK-INTRINSIC-COMMUTANT-001", moduleName := "D0.Geometry.ArchiveFockIntrinsicCommutant",
+      theoremName := "fullCAR_commutant_scalar;dressedSkew_commutes_majorana;carMajoranaInt_eq_fockGamma", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

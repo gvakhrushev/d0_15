@@ -78,7 +78,8 @@
       "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
       "state": "IN_PROGRESS",
       "affected_claims": [
-        "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001"
+        "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001",
+        "D0-FOCK-INTRINSIC-COMMUTANT-001"
       ],
       "exit_condition": "The signed Perm Role cocycle and arbitrary CAR conjugation are owned. Derive or terminally classify the intrinsic commutant on the 16-state CAR/Fock carrier, using the signed transport, the corrected Hodge/CAR Dirac, and the degree/number structure. Albert dimension alignment and the frozen anomaly ledger are comparisons, not the definition.",
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
@@ -98,18 +99,6 @@
       "brief": "00_WORK/tasks/WRK-PUBLIC-CLAIM-STRENGTH-LINT.md"
     },
     {
-      "id": "WRK-A4D-EXTRA-RAY-FRAME-NOGO",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
-      ],
-      "exit_condition": "Lean owns exact finite-dimensional witnesses that the Euclidean E_perp projector changes under an orthogonal frame change preserving the metric and that the Lorentz E_sp time/spatial projector changes under an exact rational boost preserving eta, without claiming a continuum manifold or full naturality theorem.",
-      "brief": "00_WORK/tasks/WRK-A4D-EXTRA-RAY-FRAME-NOGO.md"
-    },
-    {
       "id": "WRK-CERT-ARTIFACT-FRESHNESS",
       "class": "WORKER",
       "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
@@ -120,18 +109,6 @@
       ],
       "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
-    },
-    {
-      "id": "WRK-HODGE-GENERIC-TWISTED-HOLONOMY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-GENERIC-TWISTED-HOLONOMY-001",
-        "D0-HODGE-TWISTED-ZEROMODE-LIFTING-001"
-      ],
-      "exit_condition": "Commuting unitary scalar seam holonomies own a self-adjoint twisted Hodge/CAR operator whose square is the twisted difference Laplacian, and any nontrivial scalar holonomy removes the phase-constant zero sector, while no canonical pi0 holonomy is chosen.",
-      "brief": "00_WORK/tasks/WRK-HODGE-GENERIC-TWISTED-HOLONOMY.md"
     }
   ]
 }
