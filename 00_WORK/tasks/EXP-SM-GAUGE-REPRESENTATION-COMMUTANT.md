@@ -13,17 +13,15 @@ IN_PROGRESS
 
 Do not start from `AlbertSMProjection` as a positive gauge owner. Dimension and charge alignment stay a comparison, not a definition.
 
-The intrinsic finite starting point is the 16-state CAR/Fock carrier, the Role-indexed creation and annihilation operators, the proved Role permutation action on Fock states, the degree-preserving operator algebra, and `hodgeCarDirac` after its square is owned.
+The intrinsic finite starting point is now owned:
 
-Before any physical commutant, close
+* the 16-state CAR/Fock carrier;
+* the full signed `Equiv.Perm Role` action `signedTransport`;
+* arbitrary CAR conjugation `U_σ c_r U_σ^{-1} = c_{σ(r)}` and the same statement for creation and for `c_s† c_r`;
+* the corrected Hodge/CAR Dirac;
+* the degree/number structure, including dimension 70 as the count of all degree-preserving endomorphisms.
 
-$$
-U_\sigma c_r U_\sigma^{-1}=c_{\sigma(r)}
-$$
-
-for arbitrary `σ : Equiv.Perm Role`, with the fermionic sign cocycle. The landed intertwiner does this only for the three adjacent transpositions `swapAB`, `swapBC`, and `swapCD`.
-
-The frozen anomaly ledger is a downstream comparison. It is not the definition of the commutant.
+The fermionic sign cocycle is no longer the blocker. The remaining work is the intrinsic commutant on that carrier. Albert alignment and the frozen anomaly ledger stay comparisons. They are not the definition of the commutant. Do not start that commutant inside the cocycle worker.
 
 
 ## Deliverable

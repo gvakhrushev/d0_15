@@ -80,7 +80,7 @@
       "affected_claims": [
         "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001"
       ],
-      "exit_condition": "Close U_sigma c_r U_sigma^{-1} = c_{sigma r} for arbitrary Equiv.Perm Role with the fermionic sign cocycle, then derive or terminally classify the commutant on the 16-state CAR/Fock carrier. Adjacent-transposition intertwining is already owned. Albert dimension alignment and the frozen anomaly ledger are comparisons, not the definition.",
+      "exit_condition": "The signed Perm Role cocycle and arbitrary CAR conjugation are owned. Derive or terminally classify the intrinsic commutant on the 16-state CAR/Fock carrier, using the signed transport, the corrected Hodge/CAR Dirac, and the degree/number structure. Albert dimension alignment and the frozen anomaly ledger are comparisons, not the definition.",
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {

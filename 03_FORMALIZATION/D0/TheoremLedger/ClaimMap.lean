@@ -1386,7 +1386,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-M1-RIESZ-REPRESENTATION-GAP-001", moduleName := "D0.Foundation.M1RieszRepresentationGap",
       theoremName := "verification_contract_coexists_with_nonuniform_mismatch;pairwise_weight_locus_is_not_uniform;half_radius_reproduces_centered;radius_one_eq_backward_forces_half;forward_only_average_not_backward", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-ROLE-FOCK-PERMUTATION-001", moduleName := "D0.Geometry.RoleFockPermutation",
-      theoremName := "transportState_mul;transportState_bijective;fockDegree_transport;signedTransport_one;signed_annihilate_intertwining_adjacent;signed_create_intertwining_adjacent;numberBilinear_intertwining_adjacent;numberBilinear_preserves_degree;signedTransport_preserves_degree", status := ClaimStatus.leanCoreProved }
+      theoremName := "transportState_mul;transportState_bijective;fockDegree_transport;fermionSign_one;fermionSign_mul;signedTransport_one;signedTransport_mul;signedTransport_inv;perm_conj_annihilation;perm_conj_creation;perm_conj_carBilinear;perm_conj_numberCommutator;conjTransport_preserves_degree;signedTransport_preserves_degree", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

@@ -1,5 +1,6 @@
 import Mathlib.Tactic
 import D0.Geometry.ArchiveCARRelations
+import D0.Geometry.RoleFockPermutation
 
 namespace D0.Geometry
 
@@ -16,7 +17,9 @@ open scoped BigOperators
 The degree sectors have dimensions `1,4,6,4,1`, so the associative algebra of all
 degree-preserving fibre endomorphisms has dimension `70`.  That algebra is an
 available coefficient envelope.  Its unit group is not identified with a physical
-gauge or connection group.
+gauge or connection group.  Signed role permutations conjugate `E_sr` to
+`E_{σ s, σ r}` and preserve the bracket.  This file does not prove that the
+CAR bilinears span the 70-dimensional algebra.
 -/
 
 /-- `E_sr = c_s† c_r`.  The first index is the creation label. -/
@@ -99,5 +102,38 @@ theorem degreePreservingEndomorphismDimension :
   rw [fock_sector_card_zero, fock_sector_card_one, fock_sector_card_two,
     fock_sector_card_three, fock_sector_card_four]
   norm_num
+
+theorem carEndInt_eq_numberBilinear (s r : Role) (bra ket : ArchiveFockState) :
+    carEndInt s r bra ket = RoleFockPermutation.numberBilinear s r bra ket := by
+  unfold carEndInt RoleFockPermutation.numberBilinear RoleFockPermutation.fockMatMul
+  rfl
+
+theorem carEndCommInt_eq_numberCommutator (s r t u : Role) (bra ket : ArchiveFockState) :
+    carEndCommInt s r t u bra ket =
+      RoleFockPermutation.numberCommutator s r t u bra ket := by
+  unfold carEndCommInt RoleFockPermutation.numberCommutator
+  simp [carEndInt_eq_numberBilinear, RoleFockPermutation.fockMatMul]
+
+/-- Signed role transport is a bracket automorphism of the CAR number bilinears.
+The dimension count `70` remains the count of all degree-preserving endomorphisms. -/
+theorem perm_conj_carEndCommInt (σ : Equiv.Perm Role) (s r t u : Role)
+    (bra ket : ArchiveFockState) :
+    RoleFockPermutation.conjTransport σ (fun b k => carEndCommInt s r t u b k) bra ket =
+      carEndCommInt (σ s) (σ r) (σ t) (σ u) bra ket := by
+  have hfun : (fun b k => carEndCommInt s r t u b k) =
+      RoleFockPermutation.numberCommutator s r t u := by
+    ext b k
+    exact carEndCommInt_eq_numberCommutator s r t u b k
+  rw [hfun, carEndCommInt_eq_numberCommutator]
+  exact RoleFockPermutation.perm_conj_numberCommutator σ s r t u bra ket
+
+theorem perm_conj_carEndInt (σ : Equiv.Perm Role) (s r : Role) (bra ket : ArchiveFockState) :
+    RoleFockPermutation.conjTransport σ (fun b k => carEndInt s r b k) bra ket =
+      carEndInt (σ s) (σ r) bra ket := by
+  have hfun : (fun b k => carEndInt s r b k) = RoleFockPermutation.numberBilinear s r := by
+    ext b k
+    exact carEndInt_eq_numberBilinear s r b k
+  rw [hfun, carEndInt_eq_numberBilinear]
+  exact RoleFockPermutation.perm_conj_carBilinear σ s r bra ket
 
 end D0.Geometry
