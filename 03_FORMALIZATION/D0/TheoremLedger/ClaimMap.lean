@@ -1408,11 +1408,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-HODGE-GRADING-SYMMETRY-001", moduleName := "D0.Geometry.ArchiveHodgeGradingSymmetry",
       theoremName := "number_comm_dForward;number_comm_hodgeCodifferential;number_comm_hodgeCarDirac;number_not_commute_hodgeCarDirac;number_commutes_hodgeSquare;parity_anticommutes_hodgeCarDirac;parity_commutes_hodgeSquare;diagonalRoleTransport_commutes_number;diagonalRoleTransport_preserves_degree;diagonalRoleTransport_commutes_parity", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-SPATIAL-HODGE-SHELL-OPERATOR-001", moduleName := "D0.Geometry.ArchiveHodgeSpatialShellOperator",
-      theoremName := "spatialRoleTransport_preserves_axisInvariant;roleTransport_movingA_not_axisInvariant;spatialRoleTransport_commutes_spatialLaplacian;spatialRoleTransport_commutes_axisInvariantHodgeSquare;spatialShellSubmodule_finrank;hodgeSquare_on_spatialShell;hodgeSquare_on_spatialShell_eq;spatialRoleTransport_preserves_shell;hoppingRoleTransport_commutes_hoppingCarDirac", status := ClaimStatus.leanCoreProved }
+      theoremName := "spatialRoleTransport_preserves_axisInvariant;roleTransport_movingA_not_axisInvariant;spatialRoleTransport_commutes_spatialLaplacian;spatialRoleTransport_commutes_axisInvariantHodgeSquare;spatialShellSubmodule_finrank;hodgeSquare_on_spatialShell;hodgeSquare_on_spatialShell_eq;spatialRoleTransport_preserves_shell;hoppingRoleTransport_commutes_hoppingCarDirac", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001", moduleName := "D0.Geometry.TypedSceneOppositeCut;D0.Geometry.TypedRoleOppositeCut;D0.Geometry.TypedTowerResidualClosure;D0.Representation.TypedRoleSceneAction",
+      theoremName := "typed_scene_opposite_cut_factorization;typed_role_cut_factorization;typed_role_residual_v9Summand_zero;typed_role_residual_roleSummand;typed_role_cut_rank_three;typed_role_residual_eq_zero_iff;balancedRole_finrank;typed_dyad_cut_factorization;typed_dyad_cut_rank_one;typed_omega8_cut_factorization;typed_omega8_cut_rank_seven;typed_tower_probe_residual_zero_iff_uniform_weights;role_sector_alone_does_not_force_uniform_weights;typedRoleOppositeCut_perm_equivariant;typed_role_weighted_incidence_perm_equivariant;balancedRole_basis_apply;roleSummand_landing_not_forced_by_cardinality;structuredBridge_transports_roleCut;role_summand_perm_ne_orientation_flip", status := ClaimStatus.leanCoreProved }
   ]
 
-theorem claimMap_nonempty : claimMap ≠ [] := by
-  intro h
-  cases h
-
-end D0
+theorem claimMap_nonempty
