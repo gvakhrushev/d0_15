@@ -1,5 +1,6 @@
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Tactic
+import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.ArchiveChainCurvature
 import D0.Geometry.ArchiveCubicalDifferential
 
@@ -218,6 +219,263 @@ theorem cartanConn_comm_dConn (ι : CoeffCochain N V → CoeffCochain N V)
   simp only [cartanGenerator]
   rw [dConn_add]
   exact operator_cartan_curvature (dConn U) ι ψ
+
+/-! ## Square equals the open-path curvature
+
+`d_Ω = L ∑_r c_r† (T_r - I)`, so
+`d_Ω² = L² ∑_{r<s} c_r† c_s† [T_r, T_s]`.
+The strict order is the owned role code `Role ↪ Fin 4`.
+Flat plaquettes force `d_Ω² = 0`. The converse is not claimed.
+-/
+
+def transportCommutator (U : LinkConnection N ℝ V) (r s : Role)
+    (ψ : CoeffCochain N V) : CoeffCochain N V :=
+  coeffTransport U r (coeffTransport U s ψ) - coeffTransport U s (coeffTransport U r ψ)
+
+/-- `[T_r, T_s] ψ(x) = F_rs(x) ψ(x+r+s)`. -/
+theorem dConn_sq_apply_eq_curvature (U : LinkConnection N ℝ V) (r s : Role)
+    (ψ : CoeffCochain N V) (x : ArchiveRolePhaseGroup N) (ket : ArchiveFockState) :
+    transportCommutator U r s ψ x ket =
+      openCurvature U r s x
+        (ψ (roleTranslatePlus N s (roleTranslatePlus N r x)) ket) :=
+  coeffTransport_commutator U r s ψ x ket
+
+theorem coeffTransport_sub (U : LinkConnection N ℝ V) (r : Role)
+    (ψ φ : CoeffCochain N V) :
+    coeffTransport U r (ψ - φ) = coeffTransport U r ψ - coeffTransport U r φ := by
+  funext x ket
+  simp [coeffTransport, map_sub]
+
+theorem coeffTransport_sum {ι : Type*} [Fintype ι] (U : LinkConnection N ℝ V) (r : Role)
+    (ψ : ι → CoeffCochain N V) :
+    coeffTransport U r (∑ i, ψ i) = ∑ i, coeffTransport U r (ψ i) := by
+  funext x ket
+  simp [coeffTransport, map_sum, Finset.sum_apply]
+
+theorem coeffCreate_sub (r : Role) (ψ φ : CoeffCochain N V) :
+    coeffCreate r (ψ - φ) = coeffCreate r ψ - coeffCreate r φ := by
+  funext x bra
+  simp only [coeffCreate, Pi.sub_apply, Finset.sum_sub_distrib, smul_sub]
+
+theorem coeffCreate_sum {ι : Type*} [Fintype ι] (r : Role)
+    (ψ : ι → CoeffCochain N V) :
+    coeffCreate r (∑ i, ψ i) = ∑ i, coeffCreate r (ψ i) := by
+  funext x bra
+  simp only [coeffCreate, Finset.sum_apply]
+  rw [Finset.sum_comm]
+  refine Finset.sum_congr rfl ?_
+  intro ket _
+  rw [Finset.smul_sum]
+
+theorem coeffCreate_smul (r : Role) (c : ℝ) (ψ : CoeffCochain N V) :
+    coeffCreate r (c • ψ) = c • coeffCreate r ψ := by
+  funext x bra
+  simp only [coeffCreate, Pi.smul_apply, Finset.smul_sum, smul_smul, mul_comm c]
+
+theorem coeffCreate_zero (r : Role) : coeffCreate r (0 : CoeffCochain N V) = 0 := by
+  funext x bra
+  simp [coeffCreate]
+
+theorem coeffShift_sum {ι : Type*} [Fintype ι] (U : LinkConnection N ℝ V) (r : Role)
+    (ψ : ι → CoeffCochain N V) :
+    coeffShift U r (∑ i, ψ i) = ∑ i, coeffShift U r (ψ i) := by
+  simp [coeffShift, coeffTransport_sum, Finset.sum_sub_distrib]
+
+theorem coeffShift_smul (U : LinkConnection N ℝ V) (r : Role) (c : ℝ)
+    (ψ : CoeffCochain N V) :
+    coeffShift U r (c • ψ) = c • coeffShift U r ψ := by
+  funext x ket
+  simp [coeffShift, coeffTransport, map_smul, smul_sub]
+
+theorem coeffCreate_anticomm (r s : Role) (ψ : CoeffCochain N V) :
+    coeffCreate r (coeffCreate s ψ) + coeffCreate s (coeffCreate r ψ) = 0 := by
+  funext x bra
+  simp only [Pi.add_apply, Pi.zero_apply]
+  rw [coeffCreate_comp, coeffCreate_comp, ← Finset.sum_add_distrib]
+  refine Finset.sum_eq_zero ?_
+  intro ket _
+  rw [← add_smul, createProduct_antisym, zero_smul]
+
+theorem coeffCreate_sq_zero (r : Role) (ψ : CoeffCochain N V) :
+    coeffCreate r (coeffCreate r ψ) = 0 := by
+  funext x bra
+  rw [coeffCreate_comp]
+  refine Finset.sum_eq_zero ?_
+  intro ket _
+  rw [createProduct_diag, zero_smul]
+
+theorem coeffShift_commutator (U : LinkConnection N ℝ V) (r s : Role)
+    (ψ : CoeffCochain N V) :
+    coeffShift U r (coeffShift U s ψ) - coeffShift U s (coeffShift U r ψ) =
+      transportCommutator U r s ψ := by
+  simp only [coeffShift, transportCommutator, coeffTransport_sub]
+  abel
+
+theorem coeffCreate_shift_comm (U : LinkConnection N ℝ V) (r s : Role)
+    (ψ : CoeffCochain N V) :
+    coeffShift U r (coeffCreate s ψ) = coeffCreate s (coeffShift U r ψ) := by
+  simp only [coeffShift, coeffCreate_sub]
+  rw [coeffCreate_transport_comm]
+
+theorem dConn_eq_sum (U : LinkConnection N ℝ V) (ψ : CoeffCochain N V) :
+    dConn U ψ =
+      forwardDifferenceScale N • ∑ r : Role, coeffCreate r (coeffShift U r ψ) := by
+  funext x bra
+  simp only [dConn, Pi.smul_apply, Finset.sum_apply]
+
+theorem dConn_sq_expand (U : LinkConnection N ℝ V) (ψ : CoeffCochain N V) :
+    dConn U (dConn U ψ) =
+      (forwardDifferenceScale N * forwardDifferenceScale N) •
+        ∑ r : Role, ∑ s : Role,
+          coeffCreate r (coeffCreate s (coeffShift U r (coeffShift U s ψ))) := by
+  rw [dConn_eq_sum]
+  have hshift : ∀ r,
+      coeffShift U r (dConn U ψ) =
+        forwardDifferenceScale N •
+          ∑ s : Role, coeffCreate s (coeffShift U r (coeffShift U s ψ)) := by
+    intro r
+    rw [dConn_eq_sum, coeffShift_smul, coeffShift_sum]
+    refine congrArg (fun t => forwardDifferenceScale N • t) ?_
+    refine Finset.sum_congr rfl ?_
+    intro s _
+    exact coeffCreate_shift_comm U r s (coeffShift U s ψ)
+  simp only [hshift, coeffCreate_smul, coeffCreate_sum]
+  rw [Finset.smul_sum]
+  simp only [Finset.smul_sum, smul_smul]
+
+private theorem sum_role_gt_reindex {M : Type*} [AddCommGroup M] (f : Role → Role → M) :
+    (∑ r : Role, ∑ s ∈ Finset.univ.filter (fun s => roleCode s < roleCode r), f r s) =
+      ∑ r : Role, ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f s r := by
+  classical
+  simp only [Finset.sum_filter]
+  rw [Finset.sum_comm]
+
+private theorem sum_role_pairs {M : Type*} [AddCommGroup M] (f : Role → Role → M)
+    (hdiag : ∀ r, f r r = 0) :
+    (∑ r : Role, ∑ s : Role, f r s) =
+      ∑ r : Role, ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s),
+        (f r s + f s r) := by
+  classical
+  have hpart : ∀ r s,
+      f r s =
+        (if roleCode r < roleCode s then f r s else 0) +
+        (if roleCode s < roleCode r then f r s else 0) +
+        (if roleCode s = roleCode r then f r s else 0) := by
+    intro r s
+    rcases lt_trichotomy (roleCode r) (roleCode s) with h | h | h
+    · have hne : roleCode s ≠ roleCode r := (ne_of_lt h).symm
+      have hlt : ¬ roleCode s < roleCode r := not_lt_of_gt h
+      simp [h, hne, hlt]
+    · simp [h]
+    · have hne : roleCode s ≠ roleCode r := ne_of_lt h
+      have hlt : ¬ roleCode r < roleCode s := not_lt_of_gt h
+      simp [h, hne, hlt]
+  have hsum : ∀ r, (∑ s, f r s) =
+      (∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f r s) +
+      (∑ s ∈ Finset.univ.filter (fun s => roleCode s < roleCode r), f r s) +
+      (∑ s ∈ Finset.univ.filter (fun s => roleCode s = roleCode r), f r s) := by
+    intro r
+    simp only [Finset.sum_filter]
+    rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib]
+    refine Finset.sum_congr rfl ?_
+    intro s _
+    exact hpart r s
+  have hdiagSum : ∀ r,
+      (∑ s ∈ Finset.univ.filter (fun s => roleCode s = roleCode r), f r s) = f r r := by
+    intro r
+    have hset :
+        Finset.univ.filter (fun s => roleCode s = roleCode r) = {r} := by
+      ext s
+      simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.mem_singleton]
+      constructor
+      · intro hs
+        exact roleCode_injective hs
+      · intro hs
+        simp [hs]
+    rw [hset, Finset.sum_singleton]
+  simp only [hsum, hdiagSum, hdiag, add_zero]
+  have hsplit :
+      (∑ r, ((∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f r s) +
+          ∑ s ∈ Finset.univ.filter (fun s => roleCode s < roleCode r), f r s)) =
+        (∑ r, ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f r s) +
+          ∑ r, ∑ s ∈ Finset.univ.filter (fun s => roleCode s < roleCode r), f r s :=
+    Finset.sum_add_distrib (s := (Finset.univ : Finset Role))
+      (f := fun r => ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f r s)
+      (g := fun r => ∑ s ∈ Finset.univ.filter (fun s => roleCode s < roleCode r), f r s)
+  rw [hsplit, sum_role_gt_reindex]
+  have hmerge :
+      (∑ r, ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f r s) +
+          ∑ r, ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f s r =
+        ∑ r, ((∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f r s) +
+          ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f s r) :=
+    (Finset.sum_add_distrib (s := (Finset.univ : Finset Role))
+      (f := fun r => ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f r s)
+      (g := fun r => ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s), f s r)).symm
+  rw [hmerge]
+  refine Finset.sum_congr rfl ?_
+  intro r _
+  exact (Finset.sum_add_distrib
+      (s := Finset.univ.filter (fun s : Role => roleCode r < roleCode s))
+      (f := fun s : Role => f r s) (g := fun s : Role => f s r)).symm
+
+theorem dConn_sq_eq_curvature (U : LinkConnection N ℝ V) (ψ : CoeffCochain N V) :
+    dConn U (dConn U ψ) =
+      (forwardDifferenceScale N * forwardDifferenceScale N) •
+        ∑ r : Role, ∑ s ∈ Finset.univ.filter (fun s => roleCode r < roleCode s),
+          coeffCreate r (coeffCreate s (transportCommutator U r s ψ)) := by
+  rw [dConn_sq_expand]
+  refine congrArg
+      (fun t => (forwardDifferenceScale N * forwardDifferenceScale N) • t) ?_
+  let f : Role → Role → CoeffCochain N V := fun r s =>
+    coeffCreate r (coeffCreate s (coeffShift U r (coeffShift U s ψ)))
+  have hdiag : ∀ r, f r r = 0 := by
+    intro r
+    simpa [f] using coeffCreate_sq_zero r (coeffShift U r (coeffShift U r ψ))
+  rw [show (∑ r, ∑ s, coeffCreate r (coeffCreate s (coeffShift U r (coeffShift U s ψ))) =
+      ∑ r, ∑ s, f r s) by rfl]
+  rw [sum_role_pairs f hdiag]
+  refine Finset.sum_congr rfl ?_
+  intro r _
+  refine Finset.sum_congr rfl ?_
+  intro s _
+  let A := coeffShift U r (coeffShift U s ψ)
+  let B := coeffShift U s (coeffShift U r ψ)
+  have hanti := coeffCreate_anticomm r s B
+  calc
+    f r s + f s r =
+        coeffCreate r (coeffCreate s A) + coeffCreate s (coeffCreate r B) := by
+          rfl
+    _ = coeffCreate r (coeffCreate s A) +
+          (-coeffCreate r (coeffCreate s B)) := by
+          rw [eq_neg_of_add_eq_zero_right hanti]
+    _ = coeffCreate r (coeffCreate s A) - coeffCreate r (coeffCreate s B) := by
+          rw [sub_eq_add_neg]
+    _ = coeffCreate r (coeffCreate s A - coeffCreate s B) := by
+          rw [← coeffCreate_sub]
+    _ = coeffCreate r (coeffCreate s (A - B)) := by
+          rw [← coeffCreate_sub]
+    _ = coeffCreate r (coeffCreate s (transportCommutator U r s ψ)) := by
+          rw [show A - B = transportCommutator U r s ψ by
+            simpa [A, B] using coeffShift_commutator U r s ψ]
+
+/-- Vanishing open-path curvature forces `d_Ω² = 0`.
+The converse needs a richness hypothesis on coefficient sections and is not claimed. -/
+theorem dConn_sq_zero_of_flat (U : LinkConnection N ℝ V)
+    (hF : ∀ r s (x : ArchiveRolePhaseGroup N), openCurvature U r s x = 0)
+    (ψ : CoeffCochain N V) :
+    dConn U (dConn U ψ) = 0 := by
+  rw [dConn_sq_eq_curvature]
+  simp only [smul_eq_zero]
+  right
+  refine Finset.sum_eq_zero ?_
+  intro r _
+  refine Finset.sum_eq_zero ?_
+  intro s _
+  have hcomm : transportCommutator U r s ψ = 0 := by
+    funext x ket
+    rw [dConn_sq_apply_eq_curvature]
+    simp [hF]
+  simp [hcomm, coeffCreate_zero]
 
 end
 

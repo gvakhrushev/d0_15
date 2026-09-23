@@ -275,6 +275,8 @@ import D0.Gauge.YangMillsKillingPositivity
 import D0.Geometry.A4DCenteredCartanClosureNoGo
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DMetricStressInterface
+import D0.Geometry.A4DPathCovariantHodge
+import D0.Geometry.A4DPathWordParentWard
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DSymRoleCentralDifference
@@ -327,6 +329,7 @@ import D0.Geometry.ArchiveLocalLaplacianVariation
 import D0.Geometry.ArchiveMetricLaplacianScaleNoGo
 import D0.Geometry.ArchiveMetricMeasureHodgeLift
 import D0.Geometry.ArchiveModeExponent
+import D0.Geometry.ArchiveMovingDifferential
 import D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo
 import D0.Geometry.ArchiveNaturalTwistedDirac
 import D0.Geometry.ArchiveOperatorIdentityAudit
@@ -334,6 +337,7 @@ import D0.Geometry.ArchivePhaseCurvatureObstruction
 import D0.Geometry.ArchivePhaseDistance
 import D0.Geometry.ArchivePhaseEdgeMetricScale
 import D0.Geometry.ArchivePoissonEquation
+import D0.Geometry.ArchivePrimalDualMovingAction
 import D0.Geometry.ArchiveProductLaplacian
 import D0.Geometry.ArchiveProductSpectrumConvergence
 import D0.Geometry.ArchivePseudoinverseTwist

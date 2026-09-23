@@ -93,3 +93,7 @@ D0.Geometry.ArchiveRolePermutationAction,D0/Geometry/ArchiveRolePermutationActio
 D0.Geometry.ArchiveDiagonalRoleTransport,D0/Geometry/ArchiveDiagonalRoleTransport.lean,EXPLICIT_SUPPORT,D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001
 D0.Geometry.ArchiveHodgeGradingSymmetry,D0/Geometry/ArchiveHodgeGradingSymmetry.lean,EXPLICIT_SUPPORT,D0-HODGE-GRADING-SYMMETRY-001
 D0.Geometry.ArchiveHodgeSpatialShellOperator,D0/Geometry/ArchiveHodgeSpatialShellOperator.lean,EXPLICIT_SUPPORT,D0-SPATIAL-HODGE-SHELL-OPERATOR-001
+D0.Geometry.ArchiveMovingDifferential,D0/Geometry/ArchiveMovingDifferential.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_MOVING_D_PARENT_WARD.md
+D0.Geometry.ArchivePrimalDualMovingAction,D0/Geometry/ArchivePrimalDualMovingAction.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_MOVING_D_PARENT_WARD.md
+D0.Geometry.A4DPathCovariantHodge,D0/Geometry/A4DPathCovariantHodge.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_MOVING_D_PARENT_WARD.md
+D0.Geometry.A4DPathWordParentWard,D0/Geometry/A4DPathWordParentWard.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_MOVING_D_PARENT_WARD.md
