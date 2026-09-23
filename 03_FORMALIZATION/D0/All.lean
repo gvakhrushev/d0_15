@@ -84,6 +84,7 @@ import D0.Claims.Time2DPisot
 import D0.Claims.VietaGaloisAbcd
 import D0.Claims.Window44GroupSpectrum
 import D0.Claims.Xi5TorusDefect
+import D0.Combinatorics.CompleteTripartiteCuts
 import D0.Combinatorics.InfinitePhaseTower
 import D0.Combinatorics.MultipartiteLorentzian
 import D0.Combinatorics.PhaseTowerMinimality
@@ -243,6 +244,7 @@ import D0.Foundation.M1ClassAdmissibility
 import D0.Foundation.M1CoreSaturation
 import D0.Foundation.M1Predicate
 import D0.Foundation.M1RepairObservationalQuotient
+import D0.Foundation.M1RieszRepresentationGap
 import D0.Foundation.M1Universality
 import D0.Foundation.ObservableCompletionCanonicity
 import D0.Foundation.Omega8Center
@@ -270,6 +272,9 @@ import D0.Gauge.SMCharges
 import D0.Gauge.SMGaugeDecomposition
 import D0.Gauge.WilsonLinkGaugeCovariance
 import D0.Gauge.YangMillsKillingPositivity
+import D0.Geometry.A4DCenteredCartanClosureNoGo
+import D0.Geometry.A4DCoframeParentConstraint
+import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Geometry.Archive1DCochainRefinement
@@ -277,6 +282,7 @@ import D0.Geometry.Archive1Dto4DRGLiftNoGo
 import D0.Geometry.Archive4DCurvaturePerturbationBridge
 import D0.Geometry.ArchiveActionFunctional
 import D0.Geometry.ArchiveBianchiIdentity
+import D0.Geometry.ArchiveCARDegreePreserving
 import D0.Geometry.ArchiveCARDirac
 import D0.Geometry.ArchiveCARFockCarrier
 import D0.Geometry.ArchiveCARRelations
@@ -295,6 +301,10 @@ import D0.Geometry.ArchiveFieldEquation
 import D0.Geometry.ArchiveFlatProductBondingNoGo
 import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveHeatTrace
+import D0.Geometry.ArchiveHodgeCARDirac
+import D0.Geometry.ArchiveHodgeCARDiracKernel
+import D0.Geometry.ArchiveHodgeCARDiracShell
+import D0.Geometry.ArchiveHodgeCARDiracSquare
 import D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo
 import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
 import D0.Geometry.ArchiveJYToPlaquetteBoundary
@@ -336,8 +346,11 @@ import D0.Geometry.ArchiveWeightedHodgeDirac
 import D0.Geometry.ArchiveWeylDimensionVacuityNoGo
 import D0.Geometry.ConformalLaplacianTrace
 import D0.Geometry.EdgeStiffnessOrigin
+import D0.Geometry.ExtraRayFrameNoGo
 import D0.Geometry.FibonacciAnyonUniqueness
 import D0.Geometry.FibonacciBratteliRefinement
+import D0.Geometry.FiniteCycleFourier
+import D0.Geometry.FinitePrimalDualHodgeParent
 import D0.Geometry.FiniteSpin2DOF
 import D0.Geometry.FiniteSpin2Dynamics
 import D0.Geometry.FiniteSpin2WaveOperator
@@ -348,12 +361,14 @@ import D0.Geometry.HeatTraceEHProxy
 import D0.Geometry.HigherCurvatureSuppression
 import D0.Geometry.HurwitzRigidPhaseGenerator
 import D0.Geometry.LucasVoronoiMarkovPartition
+import D0.Geometry.OppositeCutPairing
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
 import D0.Geometry.PhysicalCarrierInventory
 import D0.Geometry.Pi0DiscreteAngle
 import D0.Geometry.PseudoinverseTwistAlgebra
 import D0.Geometry.QuaternionMixedCurvature
+import D0.Geometry.RoleFockPermutation
 import D0.Geometry.SceneActiveEigenvalues
 import D0.Geometry.SceneCochainComplex
 import D0.Geometry.SceneHodgeDecomposition
@@ -371,6 +386,7 @@ import D0.Geometry.TorusShellAttachment
 import D0.Gravity.A1RieszMismatch
 import D0.Gravity.A2CompensatorNoether
 import D0.Gravity.A4DLinearizedMetricResponse
+import D0.Gravity.A4DParentWardStressDescent
 import D0.Gravity.BlackHoleCapacityA4
 import D0.Gravity.BoundaryRelaxationSpectrum
 import D0.Gravity.CompactnessLimit
@@ -386,6 +402,7 @@ import D0.Gravity.MeasurementHorizonEquivalence
 import D0.Gravity.OpticalJetBackreaction
 import D0.Gravity.PageCurveFiniteRankOwner
 import D0.Gravity.PageTurningPointRank
+import D0.Gravity.SceneOppositeCutIdentification
 import D0.Gravity.VariationalCarrierAudit
 import D0.IM.ArchivePressureCoupling
 import D0.IM.ContinuumFromFractalTick

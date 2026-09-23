@@ -1300,7 +1300,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-ARCHIVE-CAR-RELATIONS-001", moduleName := "D0.Geometry.ArchiveCARRelations",
       theoremName := "archive_car_relations_owner", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-CAR-DIRAC-OWNER-001", moduleName := "D0.Geometry.ArchiveCARDirac",
-      theoremName := "dirac_derivative_scale_eq_fibers;carDirac_self_adjoint;archive_car_dirac_owner", status := ClaimStatus.leanCoreProved },
+      theoremName := "dirac_derivative_scale_eq_fibers;carDirac_self_adjoint;archive_car_dirac_owner;hoppingCarDirac_eq_carDirac", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-ARCHIVE-CAR-DIRAC-SQUARE-001", moduleName := "D0.Geometry.ArchiveCARDirac",
       theoremName := "carDiracSquareScalarSectorFactor_eq_fock_dim;archive_car_dirac_square_owner", status := ClaimStatus.openObligation },
     { claimId := "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001", moduleName := "D0.Geometry.ArchiveCARDirac",
@@ -1380,7 +1380,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-EDGE-HOLONOMY-SELECTOR-REVISION-001", moduleName := "D0.Edge.EdgeHolonomySelectorRevision",
       theoremName := "edge_holonomy_bifurcation", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-TWO-TICK-SYMPLECTIC-GENERATOR-001", moduleName := "D0.Dynamics.TwoTickSymplectic",
-      theoremName := "Dynamics.T_sq_entries;Dynamics.det_T_sq;Dynamics.T_anti_symplectic;Dynamics.T_sq_symplectic;Dynamics.T_anti_G;Dynamics.T_sq_preserves_G;Dynamics.T_pow_anti_symplectic;Dynamics.T_pow_anti_G;Dynamics.one_tick_no_invariant_form;Dynamics.two_tick_invariant_forms;Dynamics.generating_relations_q_p;Dynamics.twoTickRecurrenceResidual_eq_zero_iff", status := ClaimStatus.leanCoreProved }
+      theoremName := "Dynamics.T_sq_entries;Dynamics.det_T_sq;Dynamics.T_anti_symplectic;Dynamics.T_sq_symplectic;Dynamics.T_anti_G;Dynamics.T_sq_preserves_G;Dynamics.T_pow_anti_symplectic;Dynamics.T_pow_anti_G;Dynamics.one_tick_no_invariant_form;Dynamics.two_tick_invariant_forms;Dynamics.generating_relations_q_p;Dynamics.twoTickRecurrenceResidual_eq_zero_iff", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SCENE-OPPOSITE-CUT-RIESZ-001", moduleName := "D0.Geometry.OppositeCutPairing;D0.Gravity.SceneOppositeCutIdentification",
+      theoremName := "opposite_cut_factorization;mismatch_standard_sectors_are_opposite_cuts;owned_numeric_factors_are_cut_products;standardSectorRank_strata;distinct_weights_standard_sector_finrank;uniform_weights_standard_sector_finrank;control_K266_products;control_K338_products;k234_coefficients_follow_zones", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-M1-RIESZ-REPRESENTATION-GAP-001", moduleName := "D0.Foundation.M1RieszRepresentationGap",
+      theoremName := "verification_contract_coexists_with_nonuniform_mismatch;pairwise_weight_locus_is_not_uniform;half_radius_reproduces_centered;radius_one_eq_backward_forces_half;forward_only_average_not_backward", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-ROLE-FOCK-PERMUTATION-001", moduleName := "D0.Geometry.RoleFockPermutation",
+      theoremName := "transportState_mul;transportState_bijective;fockDegree_transport;signedTransport_one;signed_annihilate_intertwining_adjacent;signed_create_intertwining_adjacent;numberBilinear_intertwining_adjacent;numberBilinear_preserves_degree;signedTransport_preserves_degree", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

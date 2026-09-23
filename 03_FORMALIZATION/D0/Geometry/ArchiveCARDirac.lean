@@ -24,17 +24,17 @@ noncomputable section
 /-!
 # D0.Geometry.ArchiveCARDirac
 
-Owners:
-- `D0-ARCHIVE-CAR-DIRAC-OWNER-001`
-- `D0-ARCHIVE-CAR-DIRAC-SQUARE-001`
-- `D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001`
-- `D0-ARCHIVE-CAR-PARITY-SPECTRUM-001`
-- `D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001`
-- `D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001`
+Public name: **hopping CAR**.
 
-Canonical finite CAR Dirac operator on the four-dimensional role-product carrier
-equipped with the 16-dimensional Fock space:
-  H_L = ℓ²(ArchiveRolePhasePoint n) ⊗ ℂ¹⁶.
+`carDirac` / `hoppingCarDirac` is the self-adjoint nearest-neighbour Clifford
+hopping operator.  It is not the massless Hodge/difference operator.  The
+forward/backward operator `hodgeCarDirac`, its adjoint, parity and square live
+in `D0.Geometry.ArchiveHodgeCARDirac`.
+
+The declarations `archive_car_dirac_square_owner`, `archive_car_zero_mode_owner`,
+`archive_car_spectrum_amplification_owner` and
+`archive_dirac_heattrace_multiplicity_owner` are arithmetic scaffolds.  They do
+not state an operator square, a kernel, a spinor decomposition, or a heat trace.
 -/
 
 /-- Derivative lattice scale factor: exactly L = n + 2 = d_edge⁻¹. -/
@@ -102,10 +102,15 @@ theorem spatialDiracComponent_symmetric (n : ℕ) (r : Role) :
       exact ⟨fun s hs => (h1 s hs).symm, h2.symm⟩
   rw [if_congr h_cond rfl rfl]
 
-/-- The finite CAR Dirac operator on the typed product carrier. -/
+/-- Hopping CAR operator: nearest-neighbour Clifford adjacency, not a difference Dirac operator. -/
 def carDirac (n : ℕ) : CARHilbertMatrix n :=
   fun ⟨x, f⟩ ⟨y, g⟩ =>
     ∑ r : Role, spatialDiracComponent n r x y * fockGamma r f g
+
+/-- Public alias.  `carDirac` remains the compatibility name of this hopping operator. -/
+abbrev hoppingCarDirac (n : ℕ) : CARHilbertMatrix n := carDirac n
+
+theorem hoppingCarDirac_eq_carDirac (n : ℕ) : hoppingCarDirac n = carDirac n := rfl
 
 theorem carDirac_self_adjoint (n : ℕ) :
     (carDirac n).transpose = carDirac n := by
@@ -459,10 +464,7 @@ theorem archive_car_dirac_owner (n : ℕ) :
     (diracDerivativeScale n = (archiveFibers n : ℝ)) :=
   ⟨carDirac_self_adjoint n, card_role, card_archive_fock_state, rfl⟩
 
-/-- **D0-ARCHIVE-CAR-DIRAC-SQUARE-001 (Owner)**:
-The central square identity:
-$$D_L^2 = \Delta_L^{(4)} \otimes I_{16}.$$
-The scalar sector of D_L^2 coincides exactly with the 4D role-product metric Laplacian. -/
+/-- Arithmetic Fock-dimension scaffold.  This is not an operator square. -/
 def carDiracSquareScalarSectorFactor : ℕ := 16
 
 theorem carDiracSquareScalarSectorFactor_eq_fock_dim :
@@ -475,11 +477,7 @@ theorem archive_car_dirac_square_owner :
     (Fintype.card ArchiveFockState = 16) :=
   ⟨rfl, card_archive_fock_state⟩
 
-/-- **D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 (Owner)**:
-Exact harmonic zero-mode sector dimension:
-Because the connected 4-torus has dim ker Δ_L = 1 (constants), the CAR Dirac operator
-has kernel dimension strictly equal to 1 * 16 = 16 for ALL L >= 2.
-This completely eliminates the spurious 3*L^4 + 2 harmonic forms of the Hodge construction. -/
+/-- Declared integer 16.  This definition does not identify `ker hoppingCarDirac`. -/
 def carDiracKernelDim : ℕ := 16
 
 theorem car_zero_mode_independent_of_L (_n : ℕ) :
@@ -523,10 +521,7 @@ theorem archive_car_parity_spectrum_owner (n : ℕ) (r : Role) :
    fock_parity_anticommutes_with_gamma r,
    carDirac_parity_anticommutation n⟩
 
-/-- **D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001 (Owner)**:
-Fourfold amplification of the standard flat Dirac spectrum:
-The 16-component CAR Dirac decomposes into 4 copies of the 4-component spinor Dirac operator,
-with modewise asymptotic convergence: √(λ_L(k)) → 2π |k|. -/
+/-- Arithmetic declaration `4`.  No spinor decomposition or continuum limit is proved. -/
 def carDiracAmplificationFactor : ℕ := 4
 
 theorem car_amplification_times_spinor_eq_sixteen :
@@ -539,10 +534,7 @@ theorem archive_car_spectrum_amplification_owner :
     (carDiracAmplificationFactor * 4 = 16) :=
   ⟨rfl, rfl⟩
 
-/-- **D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001 (Owner)**:
-Exact factor-of-16 multiplicity relation between full CAR Dirac heat trace
-and scalar product heat trace:
-$$\operatorname{Tr}_{H_L}(e^{-u D_L^2}) = 16 \cdot \operatorname{Tr}_{\rm scalar}(e^{-u \Delta_L^{(4)}}).$$ -/
+/-- Arithmetic declaration `16`.  No heat-trace identity is stated. -/
 def diracHeatTraceMultiplicity : ℕ := 16
 
 theorem diracHeatTraceMultiplicity_eq_fock_dim :

@@ -11,18 +11,19 @@ IN_PROGRESS
 
 ## Objective
 
-Replace or terminally classify the gap between the frozen SM-facing factor ledger and a genuine derived gauge-group owner.
+Do not start from `AlbertSMProjection` as a positive gauge owner. Dimension and charge alignment stay a comparison, not a definition.
 
-Frozen facts:
+The intrinsic finite starting point is the 16-state CAR/Fock carrier, the Role-indexed creation and annihilation operators, the proved Role permutation action on Fock states, the degree-preserving operator algebra, and `hodgeCarDirac` after its square is owned.
 
-- \`SMGaugeDecomposition\` freezes factor labels and the Weyl ledger and proves anomaly cancellation.
-- \`AlbertSMProjection\` proves dimension/charge alignment and explicitly does not claim a Lie-group embedding.
+Before any physical commutant, close
 
-Target an actual finite representation/commutant/automorphism theorem deriving the appropriate \(SU(3)\times SU(2)\times U(1)\) object from an owned carrier.
+$$
+U_\sigma c_r U_\sigma^{-1}=c_{\sigma(r)}
+$$
 
-Do not accept dimension matching, a prefilled factor list or anomaly cancellation alone as a positive endpoint.
+for arbitrary `σ : Equiv.Perm Role`, with the fermionic sign cocycle. The landed intertwiner does this only for the three adjacent transpositions `swapAB`, `swapBC`, and `swapCD`.
 
-Repository edits: NONE during research phase.
+The frozen anomaly ledger is a downstream comparison. It is not the definition of the commutant.
 
 
 ## Deliverable
