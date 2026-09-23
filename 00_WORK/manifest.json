@@ -122,18 +122,6 @@
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
     },
     {
-      "id": "EXP-M1-RIESZ-READOUT-REPRESENTATION",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-M1-RIESZ-REPRESENTATION-GAP-001",
-        "D0-SCENE-OPPOSITE-CUT-RIESZ-001"
-      ],
-      "exit_condition": "Construct or refute an independently motivated representation from the two M1 verification lines to two scene/Riesz readouts. Uniform block weight is M1-selected only if that representation forces it.",
-      "brief": "00_WORK/tasks/EXP-M1-RIESZ-READOUT-REPRESENTATION.md"
-    },
-    {
       "id": "WRK-HODGE-GENERIC-TWISTED-HOLONOMY",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",

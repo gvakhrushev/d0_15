@@ -1,7 +1,9 @@
+import D0.Core.FiniteTypes
 import D0.Foundation.PopperianBootstrap
 import D0.Geometry.ArchiveCubicalDifferential
 import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Gravity.A1RieszMismatch
+import Mathlib.Logic.Equiv.Fin.Basic
 import Mathlib.Tactic
 
 /-!
@@ -138,5 +140,212 @@ theorem constants_do_not_select_average (α β : ℝ) (N : ℕ) (r : Role) (c : 
   rw [forwardDifference_const, centeredDifference_const]
   funext x
   simp [radiusOneAverage]
+
+/-! ## Typed zones and scene ordinals
+
+`D0.V9` is `Omega8 ⊕ Witness`.  The scene zone used by the Riesz carrier is
+`Fin 9`.  Equal cardinality does not identify them.  The same split holds for
+the 11- and 13-zones.
+-/
+
+abbrev Scene9 := D0.Gravity.A1RieszMismatch.V9
+abbrev Scene11 := D0.Gravity.A1RieszMismatch.V11
+abbrev Scene13 := D0.Gravity.A1RieszMismatch.V13
+
+def typedWitness9 : D0.V9 := Sum.inr PUnit.unit
+
+/-- Base-2 enumeration of `Omega8`, with the unique witness sent to `8`. -/
+def typedZone9Index : D0.V9 → Scene9
+  | Sum.inl (((a, b), o)) =>
+      Fin.mk (a.val + 2 * b.val + 4 * (if o then 1 else 0)) (by
+        fin_cases a <;> fin_cases b <;> cases o <;> decide)
+  | Sum.inr _ => 8
+
+def scene9Preimage : Scene9 → D0.V9
+  | 0 => Sum.inl (((0, 0), false))
+  | 1 => Sum.inl (((1, 0), false))
+  | 2 => Sum.inl (((0, 1), false))
+  | 3 => Sum.inl (((1, 1), false))
+  | 4 => Sum.inl (((0, 0), true))
+  | 5 => Sum.inl (((1, 0), true))
+  | 6 => Sum.inl (((0, 1), true))
+  | 7 => Sum.inl (((1, 1), true))
+  | 8 => typedWitness9
+
+def typedZone9Equiv : D0.V9 ≃ Scene9 where
+  toFun := typedZone9Index
+  invFun := scene9Preimage
+  left_inv v := by
+    cases v with
+    | inl p =>
+        rcases p with ⟨⟨a, b⟩, o⟩
+        fin_cases a <;> fin_cases b <;> cases o <;>
+          simp [typedZone9Index, scene9Preimage, typedWitness9]
+    | inr w =>
+        cases w
+        simp [typedZone9Index, scene9Preimage, typedWitness9]
+  right_inv i := by
+    fin_cases i <;> simp [typedZone9Index, scene9Preimage, typedWitness9]
+
+def typedZone11Index : D0.V11 → Scene11
+  | Sum.inl v => Fin.mk (typedZone9Index v).val (by
+      have hlt := (typedZone9Index v).isLt
+      omega)
+  | Sum.inr d => Fin.mk (9 + d.val) (by fin_cases d <;> decide)
+
+def scene11Preimage : Scene11 → D0.V11
+  | 0 => Sum.inl (scene9Preimage 0)
+  | 1 => Sum.inl (scene9Preimage 1)
+  | 2 => Sum.inl (scene9Preimage 2)
+  | 3 => Sum.inl (scene9Preimage 3)
+  | 4 => Sum.inl (scene9Preimage 4)
+  | 5 => Sum.inl (scene9Preimage 5)
+  | 6 => Sum.inl (scene9Preimage 6)
+  | 7 => Sum.inl (scene9Preimage 7)
+  | 8 => Sum.inl (scene9Preimage 8)
+  | 9 => Sum.inr 0
+  | 10 => Sum.inr 1
+
+def typedZone11Equiv : D0.V11 ≃ Scene11 where
+  toFun := typedZone11Index
+  invFun := scene11Preimage
+  left_inv v := by
+    cases v with
+    | inl w =>
+        have h9 := typedZone9Equiv.left_inv w
+        cases w with
+        | inl p =>
+            rcases p with ⟨⟨a, b⟩, o⟩
+            fin_cases a <;> fin_cases b <;> cases o <;>
+              simp [typedZone11Index, scene11Preimage, typedZone9Index, scene9Preimage, h9]
+        | inr u =>
+            cases u
+            simp [typedZone11Index, scene11Preimage, typedZone9Index, scene9Preimage, typedWitness9]
+    | inr d =>
+        fin_cases d <;> simp [typedZone11Index, scene11Preimage]
+  right_inv i := by
+    fin_cases i <;> simp [typedZone11Index, scene11Preimage, typedZone9Index, scene9Preimage,
+      typedWitness9]
+
+def typedZone13Index : D0.V13 → Scene13
+  | Sum.inl v => Fin.mk (typedZone9Index v).val (by
+      have hlt := (typedZone9Index v).isLt
+      omega)
+  | Sum.inr (a, b) => Fin.mk (9 + a.val + 2 * b.val) (by
+      fin_cases a <;> fin_cases b <;> decide)
+
+def scene13Preimage : Scene13 → D0.V13
+  | 0 => Sum.inl (scene9Preimage 0)
+  | 1 => Sum.inl (scene9Preimage 1)
+  | 2 => Sum.inl (scene9Preimage 2)
+  | 3 => Sum.inl (scene9Preimage 3)
+  | 4 => Sum.inl (scene9Preimage 4)
+  | 5 => Sum.inl (scene9Preimage 5)
+  | 6 => Sum.inl (scene9Preimage 6)
+  | 7 => Sum.inl (scene9Preimage 7)
+  | 8 => Sum.inl (scene9Preimage 8)
+  | 9 => Sum.inr (0, 0)
+  | 10 => Sum.inr (1, 0)
+  | 11 => Sum.inr (0, 1)
+  | 12 => Sum.inr (1, 1)
+
+def typedZone13Equiv : D0.V13 ≃ Scene13 where
+  toFun := typedZone13Index
+  invFun := scene13Preimage
+  left_inv v := by
+    cases v with
+    | inl w =>
+        cases w with
+        | inl p =>
+            rcases p with ⟨⟨a, b⟩, o⟩
+            fin_cases a <;> fin_cases b <;> cases o <;>
+              simp [typedZone13Index, scene13Preimage, typedZone9Index, scene9Preimage]
+        | inr u =>
+            cases u
+            simp [typedZone13Index, scene13Preimage, typedZone9Index, scene9Preimage, typedWitness9]
+    | inr r =>
+        rcases r with ⟨a, b⟩
+        fin_cases a <;> fin_cases b <;>
+          simp [typedZone13Index, scene13Preimage]
+  right_inv i := by
+    fin_cases i <;> simp [typedZone13Index, scene13Preimage, typedZone9Index, scene9Preimage,
+      typedWitness9]
+
+/-- A cardinality bridge.  Its fields do not mention weights, records, or line comparison. -/
+structure CardinalityBridge where
+  zone9 : D0.V9 ≃ Scene9
+  zone11 : D0.V11 ≃ Scene11
+  zone13 : D0.V13 ≃ Scene13
+
+def explicitCardinalityBridge : CardinalityBridge where
+  zone9 := typedZone9Equiv
+  zone11 := typedZone11Equiv
+  zone13 := typedZone13Equiv
+
+theorem cardinality_bridge_not_unique :
+    ∃ b₁ b₂ : CardinalityBridge, b₁ ≠ b₂ := by
+  let swap9 : Scene9 ≃ Scene9 := Equiv.swap 8 0
+  have hswap : swap9 8 = 0 := by
+    exact Equiv.swap_apply_left (a := (8 : Scene9)) (b := (0 : Scene9))
+  refine ⟨explicitCardinalityBridge,
+    { explicitCardinalityBridge with zone9 := typedZone9Equiv.trans swap9 }, ?_⟩
+  intro h
+  have hfun := congrArg CardinalityBridge.zone9 h
+  have hw := congrFun (congrArg Equiv.toFun hfun) typedWitness9
+  simp [explicitCardinalityBridge, typedZone9Equiv, typedZone9Index, typedWitness9, swap9,
+    hswap] at hw
+
+theorem witness_landing_not_forced :
+    ∃ e₁ e₂ : D0.V9 ≃ Scene9, e₁ typedWitness9 = 8 ∧ e₂ typedWitness9 = 0 := by
+  let swap9 : Scene9 ≃ Scene9 := Equiv.swap 8 0
+  refine ⟨typedZone9Equiv, typedZone9Equiv.trans swap9, ?_, ?_⟩
+  · simp [typedZone9Equiv, typedZone9Index, typedWitness9]
+  · have hswap : swap9 8 = 0 := by
+      exact Equiv.swap_apply_left (a := (8 : Scene9)) (b := (0 : Scene9))
+    simp [typedZone9Equiv, typedZone9Index, typedWitness9, swap9, hswap]
+
+/-! ## Readouts sourced from the verification outcome
+
+A readout may depend on a line only through that line's outcome table.  The
+contract makes those tables equal, so the two readouts agree for every correct
+protocol.  That agreement is not the uniform-weight locus.
+-/
+
+structure OutcomeSourcedReadout (P : VerificationProtocol) where
+  ofOutcome : (P.Catalogue → P.State → P.State → Bool) →
+    EdgeCochain →ₗ[ℚ] VertexCochain
+
+theorem outcome_sourced_readouts_agree {P : VerificationProtocol}
+    (V : VerificationContract P) (R : OutcomeSourcedReadout P) (l l' : P.Line) :
+    R.ofOutcome (verificationLineOutcome P l) =
+      R.ofOutcome (verificationLineOutcome P l') := by
+  rw [verificationLineOutcome_eq V]
+
+theorem uniform_positive_weight_iff_mismatch_zero (x y z : ℚ)
+    (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) :
+    (x = y ∧ y = z) ↔
+      ∀ X : KPlus, D0.Geometry.SignlessSignedCommonCarrier.BPlusLin
+        (WInverse x y z (X : EdgeCochain)) = 0 :=
+  (positive_weight_mismatch_zero_iff x y z hx hy hz).symm
+
+theorem outcome_agreement_does_not_force_uniform_weight
+    (R : OutcomeSourcedReadout boolProtocol) :
+    (∀ l l' : boolProtocol.Line,
+      R.ofOutcome (verificationLineOutcome boolProtocol l) =
+        R.ofOutcome (verificationLineOutcome boolProtocol l')) ∧
+      0 < (1 : ℚ) ∧ 0 < (2 : ℚ) ∧ 0 < (3 : ℚ) ∧
+      ¬ ((1 : ℚ) = 2 ∧ (2 : ℚ) = 3) ∧
+      ¬ (∀ X : KPlus, mismatchOnK (1 : ℚ)⁻¹ 2⁻¹ 3⁻¹ X = 0) := by
+  obtain ⟨V, hx, hy, hz, hneq, hmis⟩ :=
+    verification_contract_coexists_with_nonuniform_mismatch
+  exact ⟨fun l l' => outcome_sourced_readouts_agree V R l l', hx, hy, hz, hneq, hmis⟩
+
+/-- The centered radius-one identity can hold while the block weights stay nonuniform. -/
+theorem centering_coexists_with_nonuniform_mismatch :
+    (∀ (N : ℕ) (r : Role) (f : ArchiveRolePhaseGroup N → ℝ),
+      radiusOneAverage (1 / 2) (1 / 2) N r f = backwardAverage N r f) ∧
+      ¬ (∀ X : KPlus, mismatchOnK (1 : ℚ)⁻¹ 2⁻¹ 3⁻¹ X = 0) := by
+  exact ⟨fun N r f => radiusOneAverage_half_eq_backwardAverage N r f,
+    verification_contract_coexists_with_nonuniform_mismatch.2.2.2.2.2⟩
 
 end D0.Foundation.M1RieszRepresentationGap
