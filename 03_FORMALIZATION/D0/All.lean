@@ -287,6 +287,7 @@ import D0.Geometry.Archive1DCochainRefinement
 import D0.Geometry.Archive1Dto4DRGLiftNoGo
 import D0.Geometry.Archive4DCurvaturePerturbationBridge
 import D0.Geometry.ArchiveActionFunctional
+import D0.Geometry.ArchiveAffineCartanConnection
 import D0.Geometry.ArchiveBianchiIdentity
 import D0.Geometry.ArchiveCARAssociativeEnvelope
 import D0.Geometry.ArchiveCARDegreePreserving
@@ -309,6 +310,7 @@ import D0.Geometry.ArchiveDiagonalRoleTransport
 import D0.Geometry.ArchiveDiracPseudoinverse
 import D0.Geometry.ArchiveEnumerationSpectrumWeyl4NoGo
 import D0.Geometry.ArchiveExtrinsicRGCurvature
+import D0.Geometry.ArchiveFiniteCartanLieClosureNoGo
 import D0.Geometry.ArchiveFieldEquation
 import D0.Geometry.ArchiveFlatProductBondingNoGo
 import D0.Geometry.ArchiveFockIntrinsicCommutant
@@ -336,6 +338,7 @@ import D0.Geometry.ArchiveMovingDifferential
 import D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo
 import D0.Geometry.ArchiveNaturalTwistedDirac
 import D0.Geometry.ArchiveOperatorIdentityAudit
+import D0.Geometry.ArchivePathWordAlgebra
 import D0.Geometry.ArchivePhaseCurvatureObstruction
 import D0.Geometry.ArchivePhaseDistance
 import D0.Geometry.ArchivePhaseEdgeMetricScale
