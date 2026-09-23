@@ -1,42 +1,29 @@
 #!/usr/bin/env python3
-"""vp_spectral_einstein_response - D0-SPECTRAL-EINSTEIN-001 (finite Einstein-tensor response, core object).
+"""vp_spectral_einstein_response - legacy doubled graph-Laplacian response certificate.
 
-Target. The rank-2 Einstein-tensor response G_ij = dS_A2/dh of the finite spectral action, proved
-SIMULTANEOUSLY SYMMETRIC and DIVERGENCE-FREE. The ledger flags this object as "does NOT exist anywhere in
-D0/", split by a carrier mismatch (EH-proxy over R Matrix N N vs the Fin 4 spin-2 side) and blocked by a
-mis-scoped conservation NO-GO.
+Truth-repaired scope (C1/A1, 2026-09-20).
 
-Result. The object EXISTS and is canonical: for the quadratic spectral action S(L) = Tr(L^2) (the a2 / EH
-proxy at flat measure), the variational response is
-        G := dS/dh = 2 L,
-the scene graph Laplacian (up to the factor 2). It is (i) exactly SYMMETRIC (L is symmetric) and (ii) exactly
-DIVERGENCE-FREE in the corpus's own sense archiveDivergence(G)_i = sum_j G_ij = 0, because a graph Laplacian
-annihilates constants (row sums vanish). This is the discrete contracted-Bianchi identity: the variational
-response of the quadratic invariant is conserved. It lives natively on the single R Matrix N N carrier, so
-the "carrier mismatch" is bypassed -- the Fin 4 spin-2 side is a SEPARATE linkage (D0-HODGE-LINKS-001), not
-needed for the existence of G.
+This certificate checks the genuine matrix statement behind the historical
+D0-SPECTRAL-EINSTEIN-001 implementation:
 
-Correctly scoping the old NO-GO. NO_GO_CANONICAL_STRESS_CONSERVATION_PROJECTION only says: there EXISTS a
-symmetric matrix whose archiveDivergence is nonzero (trivially true -- e.g. a rank-1 corner). That does NOT
-block the existence of a symmetric divergence-free RESPONSE; it says conservation is FORCED by the Laplacian
-structure, not automatic for arbitrary symmetric matrices. The canonical variational response 2L satisfies
-both conditions; the NO-GO was about arbitrary projections, not the variational gradient.
+    S(L) = Tr(L^2),        grad_L S = 2L.
 
-Variational identity (exact). d/dt Tr((L + tE)^2)|_{t=0} = 2 Tr(L E) = Tr(G E) for every symmetric E, so
-G = 2L is genuinely the gradient dS/dh, not a fitted stand-in.
+For a symmetric graph Laplacian L, the matrix 2L is symmetric and has zero row
+sums. The spectrum check on K(9,11,13) is also exact up to the script's numerical
+eigensolver rounding guard.
 
-Honest boundary. CLOSED: the finite rank-2 Einstein-tensor variational response exists, is symmetric, and is
-archiveDivergence-free, on the EH-proxy carrier, verified for the scene and for general graph Laplacians
-(Lean D0.VNext2.SpectralEinsteinResponse). NOT claimed: (i) the smooth-limit identification G -> Ric - 1/2 R g
-(external Connes/Rieffel bridge, D0-SMOOTH-MANIFOLD-PASSPORT); (ii) the two-polarization Fin 4 TT-graviton
-linkage (D0-HODGE-LINKS-001, still open -- a separate shared-carrier unification); (iii) for the WEIGHTED a2
-at the Perron measure, the conservation is in the sqrt(rho)-weighted sense (the conformal Laplacian W L W
-annihilates sqrt(rho)), NOT the naive row sum -- both are genuine conservation laws, w.r.t. their respective
-divergence operators.
+It does NOT certify that 2L is the A1 edge variational response dS_A2/dh, an
+Einstein tensor, a signed-current Bianchi object, or a TT operator. The row-sum
+map archiveDivergence used here is a matrix row-sum functional; C1 distinguishes
+it from the oriented signed current divergence B_-.
 
-Falsifiable: breaks (rc=1) if 2L is not symmetric, if its row sums (archiveDivergence) are nonzero for a
-graph Laplacian, if the variational identity dTr(L^2)=Tr(2L,E) fails, or if the scene spectrum of G is not
-2x the scene Laplacian spectrum {0,20,22,24,33}. Control: an arbitrary symmetric matrix has nonzero row sums.
+The variational finite-difference control below differentiates with respect to
+the matrix variable L along a symmetric matrix direction E:
+    d/dt Tr((L+tE)^2)|_0 = Tr((2L)E).
+
+Falsifiable: breaks (rc=1) if 2L is not symmetric, if graph-Laplacian row sums
+fail to vanish, if the matrix-gradient identity fails, or if the scene spectrum
+is not 2x the scene Laplacian spectrum.
 """
 import sys
 import numpy as np
@@ -62,9 +49,9 @@ def scene_laplacian():
 
 
 def main():
-    print("=== vp_spectral_einstein_response  G = dS_a2/dh = 2L is symmetric AND divergence-free ===")
-    print("STRUCTURE_FIXED_BEFORE_NUMBER: S(L)=Tr(L^2) is the a2/EH proxy; its variational response is a "
-          "THEOREM (the discrete contracted Bianchi identity), computed below, not a fitted object.")
+    print("=== vp_spectral_einstein_response  grad_L Tr(L^2) = 2L: symmetry + zero row sums ===")
+    print("SCOPE: this cert checks the matrix gradient grad_L Tr(L^2)=2L and graph-Laplacian row-sum zero; "
+          "it does not identify 2L with the A1 edge response, Einstein tensor, or signed Bianchi current.")
 
     L = scene_laplacian()
     G = 2 * L
@@ -78,8 +65,7 @@ def main():
     rowsums = G.sum(1)
     if not np.allclose(rowsums, 0, atol=1e-10):
         die(f"DIVERGENCE_FREE  archiveDivergence(G) (row sums) must vanish: max {np.abs(rowsums).max()}")
-    print("PASS_DIVERGENCE_FREE  archiveDivergence(G)_i = sum_j G_ij = 0 exactly (graph Laplacian kills "
-          "constants) -- the discrete contracted-Bianchi conservation of the variational response.")
+    print("PASS_ROW_SUM_ZERO  archiveDivergence(G)_i = sum_j G_ij = 0 exactly because the graph Laplacian kills constants.")
 
     # (3) variational identity: dTr((L+tE)^2)/dt|0 = 2 Tr(L E) = Tr(G E) for symmetric E
     rng = np.random.default_rng(1)
@@ -88,8 +74,8 @@ def main():
     dS = (np.trace((L + t * E) @ (L + t * E)) - np.trace((L - t * E) @ (L - t * E))) / (2 * t)
     if not np.isclose(dS, np.trace(G @ E), rtol=1e-6):
         die(f"VARIATIONAL  dTr(L^2) must equal Tr(G E): {dS} vs {np.trace(G @ E)}")
-    print(f"PASS_VARIATIONAL_GRADIENT  d/dt Tr((L+tE)^2)|0 = {dS:.4f} = Tr(G E) = {np.trace(G @ E):.4f} for "
-          f"symmetric E => G = 2L is genuinely the gradient dS/dh (not a fitted stand-in).")
+    print(f"PASS_MATRIX_GRADIENT  d/dt Tr((L+tE)^2)|0 = {dS:.4f} = Tr(G E) = {np.trace(G @ E):.4f} for "
+          f"symmetric E => G = 2L is the gradient with respect to the matrix variable L.")
 
     # (4) scene spectrum = 2 * {0,20,22,24,33}
     from collections import Counter
@@ -104,15 +90,11 @@ def main():
     Erand = rng.random((N, N)); Erand = (Erand + Erand.T) / 2
     if np.allclose(Erand.sum(1), 0, atol=1e-6):
         die("CONTROL  an arbitrary symmetric matrix must have NONzero row sums")
-    print("PASS_CONTROL_NONCONSERVED  an arbitrary symmetric matrix has NONzero archiveDivergence => "
-          "conservation is FORCED by the Laplacian structure, not automatic; the old "
-          "NO_GO_CANONICAL_STRESS_CONSERVATION_PROJECTION is about arbitrary projections, NOT the "
-          "canonical variational response 2L.")
+    print("PASS_CONTROL_NONZERO_ROWSUM  an arbitrary symmetric matrix has nonzero row sums => the zero-row-sum property is forced by graph-Laplacian structure, not symmetry alone.")
 
-    print("PASS_SPECTRAL_EINSTEIN_RESPONSE — the finite rank-2 Einstein-tensor variational response "
-          "G = dS_a2/dh = 2L EXISTS on the EH-proxy carrier, is exactly SYMMETRIC and DIVERGENCE-FREE "
-          "(archiveDivergence, the discrete contracted Bianchi), verified for the scene. Smooth-limit "
-          "identification and the Fin 4 TT-graviton linkage stay external/open (D0-HODGE-LINKS-001).")
+    print("PASS_SPECTRAL_EINSTEIN_RESPONSE — legacy API certificate passed: 2L is the exact "
+          "matrix gradient grad_L Tr(L^2), symmetric, with zero graph-Laplacian row sums on the scene. "
+          "No A1 edge-gradient, Einstein-tensor, signed-Bianchi, or TT identification is certified here.")
     return 0
 
 
