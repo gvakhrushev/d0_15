@@ -132,6 +132,18 @@
       ],
       "exit_condition": "Construct or refute an independently motivated representation from the two M1 verification lines to two scene/Riesz readouts. Uniform block weight is M1-selected only if that representation forces it.",
       "brief": "00_WORK/tasks/EXP-M1-RIESZ-READOUT-REPRESENTATION.md"
+    },
+    {
+      "id": "WRK-HODGE-GENERIC-TWISTED-HOLONOMY",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "REVIEW",
+      "affected_claims": [
+        "D0-HODGE-GENERIC-TWISTED-HOLONOMY-001",
+        "D0-HODGE-TWISTED-ZEROMODE-LIFTING-001"
+      ],
+      "exit_condition": "Commuting unitary scalar seam holonomies own a self-adjoint twisted Hodge/CAR operator whose square is the twisted difference Laplacian, and any nontrivial scalar holonomy removes the phase-constant zero sector, while no canonical pi0 holonomy is chosen.",
+      "brief": "00_WORK/tasks/WRK-HODGE-GENERIC-TWISTED-HOLONOMY.md"
     }
   ]
 }

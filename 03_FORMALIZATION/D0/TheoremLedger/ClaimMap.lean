@@ -1386,7 +1386,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-M1-RIESZ-REPRESENTATION-GAP-001", moduleName := "D0.Foundation.M1RieszRepresentationGap",
       theoremName := "verification_contract_coexists_with_nonuniform_mismatch;pairwise_weight_locus_is_not_uniform;half_radius_reproduces_centered;radius_one_eq_backward_forces_half;forward_only_average_not_backward", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-ROLE-FOCK-PERMUTATION-001", moduleName := "D0.Geometry.RoleFockPermutation",
-      theoremName := "transportState_mul;transportState_bijective;fockDegree_transport;fermionSign_one;fermionSign_mul;signedTransport_one;signedTransport_mul;signedTransport_inv;perm_conj_annihilation;perm_conj_creation;perm_conj_carBilinear;perm_conj_numberCommutator;conjTransport_preserves_degree;signedTransport_preserves_degree", status := ClaimStatus.leanCoreProved }
+      theoremName := "transportState_mul;transportState_bijective;fockDegree_transport;fermionSign_one;fermionSign_mul;signedTransport_one;signedTransport_mul;signedTransport_inv;perm_conj_annihilation;perm_conj_creation;perm_conj_carBilinear;perm_conj_numberCommutator;conjTransport_preserves_degree;signedTransport_preserves_degree", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HODGE-GENERIC-TWISTED-HOLONOMY-001", moduleName := "D0.Geometry.ArchiveTwistedHodgeDirac",
+      theoremName := "dTwisted_sq;dTwistedAdjoint_sq;hodgeCarDiracTwisted_sq;hodgeCarDiracTwisted_self_adjoint;hodgeCarDiracTwisted_parity_odd;dTwisted_degree_raise;dTwistedAdjoint_degree_lower;hodgeCarDiracTwisted_radius_one", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HODGE-TWISTED-ZEROMODE-LIFTING-001", moduleName := "D0.Geometry.ArchiveTwistedHodgeDirac;D0.Spectrum.TwistedHodgeZeroModeLifting",
+      theoremName := "twistedCycle_nontrivial_holonomy_kernel_eq_bot;twistedCycle_kernel_nontrivial_iff;twistedScalar_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_nontrivial_kernel_eq_bot;hodgeCarDiracTwisted_one_ofReal;twistedHolonomy_one_recovers_kernel_finrank", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
