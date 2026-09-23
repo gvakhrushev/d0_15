@@ -276,6 +276,7 @@ import D0.Geometry.A4DCenteredCartanClosureNoGo
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DRolePairMetricCarrier
+import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Geometry.Archive1DCochainRefinement
 import D0.Geometry.Archive1Dto4DRGLiftNoGo
@@ -342,6 +343,7 @@ import D0.Geometry.ArchiveRolePhaseGroup
 import D0.Geometry.ArchiveRoleProductLaplacian
 import D0.Geometry.ArchiveSeamCanonicity
 import D0.Geometry.ArchiveSeamCurvatureScope
+import D0.Geometry.ArchiveSpatialHistorySplit
 import D0.Geometry.ArchiveStressEdgeReadout
 import D0.Geometry.ArchiveStressRepresentative
 import D0.Geometry.ArchiveTensorSeamCrossRoleNoGo
