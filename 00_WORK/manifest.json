@@ -101,7 +101,7 @@
       "id": "WRK-A4D-EXTRA-RAY-FRAME-NOGO",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001",
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"

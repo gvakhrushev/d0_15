@@ -346,6 +346,7 @@ import D0.Geometry.ArchiveWeightedHodgeDirac
 import D0.Geometry.ArchiveWeylDimensionVacuityNoGo
 import D0.Geometry.ConformalLaplacianTrace
 import D0.Geometry.EdgeStiffnessOrigin
+import D0.Geometry.ExtraRayFrameNoGo
 import D0.Geometry.FibonacciAnyonUniqueness
 import D0.Geometry.FibonacciBratteliRefinement
 import D0.Geometry.FiniteCycleFourier

@@ -81,3 +81,4 @@ D0.Combinatorics.CompleteTripartiteCuts,D0/Combinatorics/CompleteTripartiteCuts.
 D0.Geometry.ArchiveHodgeCARDiracKernel,D0/Geometry/ArchiveHodgeCARDiracKernel.lean,EXPLICIT_SUPPORT,hodgeCarDirac kernel is the 16-dimensional constant Fock fibre
 D0.Geometry.FiniteCycleFourier,D0/Geometry/FiniteCycleFourier.lean,EXPLICIT_SUPPORT,finite-cycle Fourier symbol for the spatial shell
 D0.Geometry.ArchiveHodgeCARDiracShell,D0/Geometry/ArchiveHodgeCARDiracShell.lean,EXPLICIT_SUPPORT,spatial first-shell rank 96 and E_1 to 2pi
+D0.Geometry.ExtraRayFrameNoGo,D0/Geometry/ExtraRayFrameNoGo.lean,EXPLICIT_SUPPORT,rational Euclidean and Lorentz frame witnesses for E-RAYSEL

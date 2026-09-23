@@ -7,7 +7,7 @@ WORKER
 CTRL-GRAVITY-DYNAMICS-CLOSURE
 
 ## State
-PLANNED
+REVIEW
 
 Do not start while another ordinary WORKER is active.
 
