@@ -340,6 +340,7 @@ import D0.Geometry.ArchiveStressEdgeReadout
 import D0.Geometry.ArchiveStressRepresentative
 import D0.Geometry.ArchiveTensorSeamCrossRoleNoGo
 import D0.Geometry.ArchiveTickGaugeFixing
+import D0.Geometry.ArchiveTwistedHodgeDirac
 import D0.Geometry.ArchiveTwoLimitSeparation
 import D0.Geometry.ArchiveVariationDual
 import D0.Geometry.ArchiveWeightedHodgeDirac
@@ -567,6 +568,7 @@ import D0.Spectral.ZoneMatrixSpectrum
 import D0.Spectrum.BranchDefectProjectiveControls
 import D0.Spectrum.BranchDefectProjectiveGeneration
 import D0.Spectrum.GenerationSpectralRays
+import D0.Spectrum.TwistedHodgeZeroModeLifting
 import D0.Synthesis.ActiveSpectrumClosedForm
 import D0.Synthesis.ActiveSplittingFromDistinctness
 import D0.Synthesis.ActiveWindowIrrational
