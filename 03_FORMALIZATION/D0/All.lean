@@ -396,9 +396,9 @@ import D0.Geometry.ToralLucasPeriodicSeed
 import D0.Geometry.ToralSeedMarkovMaximalityNoGo
 import D0.Geometry.TorusCore13GeometryOrigin
 import D0.Geometry.TorusShellAttachment
-import D0.Geometry.TypedTowerResidualClosure
-import D0.Geometry.TypedSceneOppositeCut
 import D0.Geometry.TypedRoleOppositeCut
+import D0.Geometry.TypedSceneOppositeCut
+import D0.Geometry.TypedTowerResidualClosure
 import D0.Gravity.A1RieszMismatch
 import D0.Gravity.A2CompensatorNoether
 import D0.Gravity.A4DLinearizedMetricResponse

@@ -1413,4 +1413,8 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "typed_scene_opposite_cut_factorization;typed_role_cut_factorization;typed_role_residual_v9Summand_zero;typed_role_residual_roleSummand;typed_role_cut_rank_three;typed_role_residual_eq_zero_iff;balancedRole_finrank;typed_dyad_cut_factorization;typed_dyad_cut_rank_one;typed_omega8_cut_factorization;typed_omega8_cut_rank_seven;typed_tower_probe_residual_zero_iff_uniform_weights;role_sector_alone_does_not_force_uniform_weights;typedRoleOppositeCut_perm_equivariant;typed_role_weighted_incidence_perm_equivariant;balancedRole_basis_apply;roleSummand_landing_not_forced_by_cardinality;structuredBridge_transports_roleCut;role_summand_perm_ne_orientation_flip", status := ClaimStatus.leanCoreProved }
   ]
 
-theorem claimMap_nonempty
+theorem claimMap_nonempty : claimMap ≠ [] := by
+  intro h
+  cases h
+
+end D0
