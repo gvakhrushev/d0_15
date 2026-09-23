@@ -61,18 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-M1-REPRESENTATION-UNIQUENESS-001",
-        "D0-M1-MINIMALITY-THRESHOLD-FORCING-001"
-      ],
-      "exit_condition": "Determine whether the current M1 admissibility premises classify all finite/catalogue-free realizations up to the owned equivalences, rather than only the explicitly formalized candidate classes; return a positive universal classification theorem design or a terminal statement of the additional admissibility primitive needed.",
-      "brief": "00_WORK/tasks/EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION.md"
-    },
-    {
       "id": "EXP-SM-GAUGE-REPRESENTATION-COMMUTANT",
       "class": "EXPENSIVE",
       "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",

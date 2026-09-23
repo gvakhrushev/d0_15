@@ -50,11 +50,11 @@ $$\text{Verifiability Contract (M1)} \;\longrightarrow\; \text{Functional Tuple}
 
 > Any process claiming to produce objectively reproducible distinctions between independent runs must already possess the internal means of **distinction**, **retention**, and **independent comparison** — and cannot outsource these operations to an obligatory external catalogue.
 
-Within the repository's **currently formalized admissibility architecture** (the M1 condition + finite realizability), the programme derives the following registered results. The stronger meta-question whether these premises classify *all* possible finite/catalogue-free carriers is intentionally separated as `EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION`:
+Within the repository's **currently formalized admissibility architecture** (the M1 condition + finite realizability), the programme derives the following registered results. These premises do not classify every finite catalogue-free carrier: a killing test also exists for a three-line protocol and for a protocol whose record type has an unused coordinate (`M1-UNIVERSALITY-COUNTEREXAMPLE`).
 
 1. **The Functional Tuple:** distinction ($x \neq y$), persistent record ($x \mapsto \text{rec}(x)$ injective), and independent comparison lines ($l_0 \neq l_1$) are forced as the minimal requirements for empirical verifiability.
-2. **The Popperian Bootstrap (`D0-POPPERIAN-BOOTSTRAP-001`):** A theory can be falsified by a "killing test" if and only if it admits a verification contract ($\text{KillingTest}(P) \iff \text{VerificationContract}(P)$). The bare possibility of refutation strictly forces the entire functional tuple. Solitary-witness systems are non-falsifiable.
-3. **Endogenous Scene Genesis (inside the registered forcing architecture):** Independent line filling, toral return sterility in $\mathrm{GL}_2(\mathbb{Z})$, and minimal zone capacity weld the parameters $(|\mathrm{Role}|, \Delta, |\Omega_8|, m, q_T) = (4, 2, 8, 11, 44)$ into the tripartite scene $K(9,11,13)$ with $N=33$ and collision invariant $P_2 = 371/1089$. This is a strong internal uniqueness statement; completeness of the surrounding admissible-carrier class is the separate P1 review target.
+2. **The Popperian Bootstrap (`D0-POPPERIAN-BOOTSTRAP-001`):** A theory can be falsified by a "killing test" if and only if it admits a verification contract ($\text{KillingTest}(P) \iff \text{VerificationContract}(P)$). The bare possibility of refutation strictly forces the entire functional tuple. Solitary-witness systems are non-falsifiable. The tuple does not fix the carrier: `Bool` is not equivalent to `Fin 3`, and a record type may contain an unused coordinate.
+3. **Endogenous Scene Genesis (inside the registered forcing architecture):** Independent line filling, toral return sterility in $\mathrm{GL}_2(\mathbb{Z})$, and minimal zone capacity weld the parameters $(|\mathrm{Role}|, \Delta, |\Omega_8|, m, q_T) = (4, 2, 8, 11, 44)$ into the tripartite scene $K(9,11,13)$ with $N=33$ and collision invariant $P_2 = 371/1089$. This is a strong internal uniqueness statement inside that forcing architecture. It is not a classification of every contract carrier.
 4. **Quadratic Born readout inside the phase-response class:** the finite response is quadratic, and uniqueness of the phase quadratic is owned under quarter-turn phase blindness (`QuarterTurnInvariant`). Generic symplectic-area preservation alone is explicitly **insufficient** (`BornAreaPreservationNoGo`).
 
 The registered functional-tuple and scene-forcing results are developed in **BOOK_00** and **BOOK_01** and formalized in Lean 4 within their stated candidate/admissibility classes. The external-review P1 lane audits the stronger completeness claim rather than treating it as already proved. Everything downstream builds on the registered finite architecture, not on an unqualified universal-classification assertion.
@@ -364,7 +364,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Active Work Status (CP1 Control Plane)
 
-- **Active Tasks**: CONTROL: 2, EXPENSIVE: 2, WORKER: 2 (Total: 6)
+- **Active Tasks**: CONTROL: 2, EXPENSIVE: 1, WORKER: 2 (Total: 5)
 - **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 1/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 12
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
