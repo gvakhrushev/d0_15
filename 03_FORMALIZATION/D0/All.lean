@@ -300,6 +300,7 @@ import D0.Geometry.ArchiveCubicalCochainCarrier
 import D0.Geometry.ArchiveCubicalDifferential
 import D0.Geometry.ArchiveCurvatureDensity
 import D0.Geometry.ArchiveCurvatureObstruction
+import D0.Geometry.ArchiveDiagonalRoleTransport
 import D0.Geometry.ArchiveDiracPseudoinverse
 import D0.Geometry.ArchiveEnumerationSpectrumWeyl4NoGo
 import D0.Geometry.ArchiveExtrinsicRGCurvature
@@ -314,6 +315,8 @@ import D0.Geometry.ArchiveHodgeCARDiracShell
 import D0.Geometry.ArchiveHodgeCARDiracSquare
 import D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo
 import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
+import D0.Geometry.ArchiveHodgeGradingSymmetry
+import D0.Geometry.ArchiveHodgeSpatialShellOperator
 import D0.Geometry.ArchiveJYToPlaquetteBoundary
 import D0.Geometry.ArchiveLaplacianPhaseNaturality
 import D0.Geometry.ArchiveLaplacianProperties
@@ -338,6 +341,7 @@ import D0.Geometry.ArchiveRefinementHodgeWeights
 import D0.Geometry.ArchiveRefinementTower
 import D0.Geometry.ArchiveResolventCompactness
 import D0.Geometry.ArchiveRoleEquivalence
+import D0.Geometry.ArchiveRolePermutationAction
 import D0.Geometry.ArchiveRolePhaseCarrier
 import D0.Geometry.ArchiveRolePhaseGroup
 import D0.Geometry.ArchiveRoleProductLaplacian
