@@ -89,3 +89,7 @@ D0.Geometry.ArchiveCARAssociativeEnvelope,D0/Geometry/ArchiveCARAssociativeEnvel
 D0.Geometry.ArchiveCartanLinkNoGo,D0/Geometry/ArchiveCartanLinkNoGo.lean,EXPLICIT_SUPPORT,D0-CARTAN-LINK-SCOPED-NOGO-001
 D0.Geometry.A4DSolderMetricCompletion,D0/Geometry/A4DSolderMetricCompletion.lean,EXPLICIT_SUPPORT,D0-HODGE-LINKS-001
 D0.Geometry.ArchiveSpatialHistorySplit,D0/Geometry/ArchiveSpatialHistorySplit.lean,EXPLICIT_SUPPORT,D0-HODGE-LINKS-001
+D0.Geometry.ArchiveRolePermutationAction,D0/Geometry/ArchiveRolePermutationAction.lean,EXPLICIT_SUPPORT,D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001
+D0.Geometry.ArchiveDiagonalRoleTransport,D0/Geometry/ArchiveDiagonalRoleTransport.lean,EXPLICIT_SUPPORT,D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001
+D0.Geometry.ArchiveHodgeGradingSymmetry,D0/Geometry/ArchiveHodgeGradingSymmetry.lean,EXPLICIT_SUPPORT,D0-HODGE-GRADING-SYMMETRY-001
+D0.Geometry.ArchiveHodgeSpatialShellOperator,D0/Geometry/ArchiveHodgeSpatialShellOperator.lean,EXPLICIT_SUPPORT,D0-SPATIAL-HODGE-SHELL-OPERATOR-001

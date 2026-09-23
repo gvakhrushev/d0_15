@@ -1402,7 +1402,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-CAR-OCCUPATION-PROJECTOR-001", moduleName := "D0.Geometry.ArchiveCARAssociativeEnvelope",
       theoremName := "occupationProjector_matrixUnit;carEnd_linear_span_misses_vacuum_projector;car_unital_envelope_dimension", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-CARTAN-LINK-SCOPED-NOGO-001", moduleName := "D0.Geometry.ArchiveCartanLinkNoGo",
-      theoremName := "centered_conjugation_distance_two_entry;centered_conjugation_not_elementary_link_tangent;flat_wilson_curvature_cannot_equal_centered_defect;sameFock_flat_links_square_entry", status := ClaimStatus.leanCoreProved }
+      theoremName := "centered_conjugation_distance_two_entry;centered_conjugation_not_elementary_link_tangent;flat_wilson_curvature_cannot_equal_centered_defect;sameFock_flat_links_square_entry", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001", moduleName := "D0.Geometry.ArchiveRolePermutationAction;D0.Geometry.ArchiveDiagonalRoleTransport",
+      theoremName := "permuteRoleSite_mul;permuteRoleSite_translatePlus;pullRoleScalar_forwardDifference;pullRoleScalar_laplacian;diagonalRoleTransport_mul;diagonalRoleTransport_pairing;diagonalRoleTransport_commutes_hodgeCarDirac;diagonalRoleTransport_commutes_hodgeSquare;fockOnlyTransport_not_hodgeSymmetry", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-HODGE-GRADING-SYMMETRY-001", moduleName := "D0.Geometry.ArchiveHodgeGradingSymmetry",
+      theoremName := "number_comm_dForward;number_comm_hodgeCodifferential;number_comm_hodgeCarDirac;number_not_commute_hodgeCarDirac;number_commutes_hodgeSquare;parity_anticommutes_hodgeCarDirac;parity_commutes_hodgeSquare;diagonalRoleTransport_commutes_number;diagonalRoleTransport_preserves_degree;diagonalRoleTransport_commutes_parity", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-SPATIAL-HODGE-SHELL-OPERATOR-001", moduleName := "D0.Geometry.ArchiveHodgeSpatialShellOperator",
+      theoremName := "spatialRoleTransport_preserves_axisInvariant;roleTransport_movingA_not_axisInvariant;spatialRoleTransport_commutes_spatialLaplacian;spatialRoleTransport_commutes_axisInvariantHodgeSquare;spatialShellSubmodule_finrank;hodgeSquare_on_spatialShell;hodgeSquare_on_spatialShell_eq;spatialRoleTransport_preserves_shell;hoppingRoleTransport_commutes_hoppingCarDirac", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

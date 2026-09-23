@@ -123,6 +123,19 @@
       ],
       "exit_condition": "The nonlinear solder Gram flat tangent, Lorentz frame tangent algebra, literal archive spatial factor and A-invariant Hodge-square intertwiner are Lean-owned, validated, and submitted in one PR for CONTROL review, retaining the physical representation and constitutive boundaries.",
       "brief": "00_WORK/tasks/WRK-A4D-SOLDER-METRIC-HISTORY-SPATIAL-SPLIT.md"
+    },
+    {
+      "id": "WRK-A4D-DIAGONAL-ROLE-HODGE-SYMMETRY",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001",
+        "D0-HODGE-GRADING-SYMMETRY-001",
+        "D0-SPATIAL-HODGE-SHELL-OPERATOR-001"
+      ],
+      "exit_condition": "The diagonal Role action on the archive cochain commutes with the Hodge Dirac and its square, the Fock-only action does not, fermion number commutes with the square and not with the first-order operator, and the Role-A stabilizer preserves the rank-96 spatial shell as a literal operator carrier without identifying that compression with the BOOK finite feedback operator.",
+      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-ROLE-HODGE-SYMMETRY.md"
     }
   ]
 }
