@@ -37,7 +37,32 @@ Create one worktree on branch:
 
 `work/a4d-primal-dual-flux-energy-kernel`
 
-Do not clone again. Do not run `lake clean`. Preserve the warm Lean/Mathlib cache.
+Do not clone again under normal operation. Do not run `lake clean`. Preserve the warm Lean/Mathlib cache.
+
+### Sandbox recovery exception
+
+If the existing git worktree cannot write its own shared metadata under
+`.git/worktrees/...` and therefore fails on `rebase`, `merge --ff-only`,
+`git add`, or equivalent ref/index operations with `Operation not permitted`,
+the coordinator may authorize exactly one temporary standalone recovery clone for
+this worker.
+
+Under that exception:
+
+- do not mutate or delete the blocked worktree;
+- create the recovery clone from the authorized remote worker branch/current main;
+- transfer only the worker's untracked source artifacts, with checksums recorded
+  before and after;
+- do not transfer `.git` metadata;
+- do not commit `.lake`;
+- reuse the existing Lean/Mathlib cache by a non-versioned symlink or equivalent
+  cache path where supported;
+- all final commits, validation, push, and the single PR must come from the
+  recovery clone;
+- report that this exception was used.
+
+This exception is operational only. It does not change theorem scope, task state,
+or scientific ownership.
 
 ## Research source
 
