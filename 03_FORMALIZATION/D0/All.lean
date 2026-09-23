@@ -310,8 +310,8 @@ import D0.Geometry.ArchiveDiagonalRoleTransport
 import D0.Geometry.ArchiveDiracPseudoinverse
 import D0.Geometry.ArchiveEnumerationSpectrumWeyl4NoGo
 import D0.Geometry.ArchiveExtrinsicRGCurvature
-import D0.Geometry.ArchiveFiniteCartanLieClosureNoGo
 import D0.Geometry.ArchiveFieldEquation
+import D0.Geometry.ArchiveFiniteCartanLieClosureNoGo
 import D0.Geometry.ArchiveFlatProductBondingNoGo
 import D0.Geometry.ArchiveFockIntrinsicCommutant
 import D0.Geometry.ArchiveGradedRefinementChainMap
