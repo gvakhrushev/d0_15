@@ -276,10 +276,13 @@ import D0.Geometry.A4DCenteredCartanClosureNoGo
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DConstitutiveHolonomyStabilizer
 import D0.Geometry.A4DConstitutiveKernelClassification
+import D0.Geometry.A4DDiscreteEnergyKernel
 import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DPathCovariantHodge
 import D0.Geometry.A4DPathWordParentWard
+import D0.Geometry.A4DPrimalDualCellPairing
 import D0.Geometry.A4DRolePairMetricCarrier
+import D0.Geometry.A4DRoleSpatialRepresentationWeld
 import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DStaggeredHodgeSelector
 import D0.Geometry.A4DSymRoleCentralDifference

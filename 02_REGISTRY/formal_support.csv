@@ -100,3 +100,6 @@ D0.Geometry.A4DPathWordParentWard,D0/Geometry/A4DPathWordParentWard.lean,EXPLICI
 D0.Geometry.A4DStaggeredHodgeSelector,D0/Geometry/A4DStaggeredHodgeSelector.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_CONSTITUTIVE_KERNEL_CLASSIFICATION_NOGO.md
 D0.Geometry.A4DConstitutiveKernelClassification,D0/Geometry/A4DConstitutiveKernelClassification.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_CONSTITUTIVE_KERNEL_CLASSIFICATION_NOGO.md
 D0.Geometry.A4DConstitutiveHolonomyStabilizer,D0/Geometry/A4DConstitutiveHolonomyStabilizer.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_CONSTITUTIVE_KERNEL_CLASSIFICATION_NOGO.md
+D0.Geometry.A4DPrimalDualCellPairing,D0/Geometry/A4DPrimalDualCellPairing.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md
+D0.Geometry.A4DDiscreteEnergyKernel,D0/Geometry/A4DDiscreteEnergyKernel.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md
+D0.Geometry.A4DRoleSpatialRepresentationWeld,D0/Geometry/A4DRoleSpatialRepresentationWeld.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md
