@@ -116,4 +116,72 @@ theorem boolProtocol_killingTest : KillingTest boolProtocol where
   runnable := ⟨()⟩
   verdict := by intro _ _ x y; rfl
 
+/-! ## The killing test does not fix the carrier
+
+Both protocols below admit a killing test, hence both carry the functional
+tuple.  Their line sets and record sets are not bijective.  The tuple is not
+a classification of all contract carriers.
+-/
+
+def fin3Protocol : VerificationProtocol where
+  State := Bool
+  Record := Bool
+  Line := Fin 3
+  Catalogue := Unit
+  stateDecidableEq := inferInstance
+  record := id
+  compare := fun _ _ x y => decide (x ≠ y)
+
+lemma fin3_zero_ne_one : (0 : Fin 3) ≠ 1 := by
+  intro h
+  exact absurd (congrArg Fin.val h) (by decide)
+
+theorem fin3Protocol_killingTest : KillingTest fin3Protocol where
+  prediction_violation := ⟨true, false, by simp⟩
+  two_witnesses := ⟨(0 : Fin 3), (1 : Fin 3), fin3_zero_ne_one⟩
+  runnable := ⟨()⟩
+  verdict := by intro _ _ x y; rfl
+
+/-- Unused record values.  Retention stays injective, but the record type is larger. -/
+def silentRecordProtocol : VerificationProtocol where
+  State := Bool
+  Record := Bool × Fin 2
+  Line := Bool
+  Catalogue := Unit
+  stateDecidableEq := inferInstance
+  record := fun b => (b, 0)
+  compare := fun _ _ x y => decide (x.1 ≠ y.1)
+
+theorem silentRecordProtocol_killingTest : KillingTest silentRecordProtocol where
+  prediction_violation := ⟨true, false, by simp⟩
+  two_witnesses := ⟨true, false, by simp⟩
+  runnable := ⟨()⟩
+  verdict := by
+    intro _ _ x y
+    simp [silentRecordProtocol]
+
+theorem boolProtocol_line_is_bool : boolProtocol.Line = Bool := rfl
+
+theorem fin3Protocol_line_is_fin3 : fin3Protocol.Line = Fin 3 := rfl
+
+theorem silentRecord_record_is_product : silentRecordProtocol.Record = (Bool × Fin 2) := rfl
+
+theorem killing_test_does_not_fix_line_card :
+    KillingTest boolProtocol ∧ KillingTest fin3Protocol ∧
+      Fintype.card Bool ≠ Fintype.card (Fin 3) := by
+  refine ⟨boolProtocol_killingTest, fin3Protocol_killingTest, ?_⟩
+  decide
+
+theorem killing_test_does_not_fix_record_card :
+    KillingTest boolProtocol ∧ KillingTest silentRecordProtocol ∧
+      Fintype.card Bool ≠ Fintype.card (Bool × Fin 2) := by
+  refine ⟨boolProtocol_killingTest, silentRecordProtocol_killingTest, ?_⟩
+  decide
+
+theorem bool_and_fin3_lines_not_equiv :
+    ¬ Nonempty (Bool ≃ Fin 3) := by
+  intro ⟨e⟩
+  have hcard := Fintype.card_congr e
+  simp at hcard
+
 end D0.Foundation.PopperianBootstrap
