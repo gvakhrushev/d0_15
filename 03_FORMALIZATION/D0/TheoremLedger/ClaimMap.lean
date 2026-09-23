@@ -1418,7 +1418,13 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-PATH-HODGE-STABILIZER-001", moduleName := "D0.Geometry.A4DPathCovariantHodge",
       theoremName := "pathDressing_eq_iff_relativeHolonomy_stabilizes;all_pathDressing_independent_iff_holonomy_subset_stabilizer;nontrivial_holonomy_can_preserve_seed;holonomy_outside_stabilizer_changes_dressing;fullScalarClosure_invariantBilinear_zero;flat_plaquettes_do_not_force_trivial_periods;pointwiseKernel_cannot_realize_staggeredTangent;periodTwo_centeredMetric_blind_oneFormTangent;flatFirstJet_extensions_not_unique", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-MOVING-D-PARENT-WARD-001", moduleName := "D0.Geometry.A4DPathWordParentWard",
-      theoremName := "mixedConstraint_transform;mixedAction_transform;mixedMovingConstraintVariation_covariant;mixedMovingPrimalDualWard_invariant;movingWard_specializes_fixedWard;frozenDifferential_movingWard_fails;physicalMovingWard_of_constitutiveAction;movingWard_keeps_independentFieldEuler", status := ClaimStatus.leanCoreProved }
+      theoremName := "mixedConstraint_transform;mixedAction_transform;mixedMovingConstraintVariation_covariant;mixedMovingPrimalDualWard_invariant;movingWard_specializes_fixedWard;frozenDifferential_movingWard_fails;physicalMovingWard_of_constitutiveAction;movingWard_keeps_independentFieldEuler", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-RADIUS-ONE-WARD-KERNEL-001", moduleName := "D0.Geometry.A4DStaggeredHodgeSelector",
+      theoremName := "gauge_symbol_iff_laurent_syzygy;boundedLaurent_syzygy_iff_curl;boundedLaurent_syzygy_finrank_six;finiteCurl_forwardGauge;selfAdjoint_radiusOneWardKernel_eq_diagonalCurl;selfAdjoint_radiusOneWardKernel_finrank_twentyFour;RolePerm_invariants_finrank_one;invariantCurl_nonzero;periodTwo_minus_not_forced;periodThree_plusDiag_not_forced;radiusOne_graded_target_empty", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONSTITUTIVE-KERNEL-FAMILY-001", moduleName := "D0.Geometry.A4DConstitutiveKernelClassification",
+      theoremName := "squaredFlux_same_flat_value_and_firstJet;kernelPoly_positive_of_quarter_lt;nonlinearSelector_not_from_flatJet;kernelPoly_degree_preserving;kernelPoly_parity_preserving;kernelPoly_matterPathLength_le_four;detDensity_firstJet_zero;detDensity_constantDiagonal_nonzero;detSolder_nonzero_flat;detDomain_Lorentz_invariant;suppliedDerivative_zero_by_extensionality;wardClass_remains_twentyFour;refinement_sameTrace_distinct;refinementOwners_are_traces", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001", moduleName := "D0.Geometry.A4DConstitutiveHolonomyStabilizer",
+      theoremName := "edgeMetricCompatibility_implies_allLoopStabilizer;metricCompatibility_does_not_select_connection", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
