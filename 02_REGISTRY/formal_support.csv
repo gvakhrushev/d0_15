@@ -82,3 +82,8 @@ D0.Geometry.ArchiveHodgeCARDiracKernel,D0/Geometry/ArchiveHodgeCARDiracKernel.le
 D0.Geometry.FiniteCycleFourier,D0/Geometry/FiniteCycleFourier.lean,EXPLICIT_SUPPORT,finite-cycle Fourier symbol for the spatial shell
 D0.Geometry.ArchiveHodgeCARDiracShell,D0/Geometry/ArchiveHodgeCARDiracShell.lean,EXPLICIT_SUPPORT,spatial first-shell rank 96 and E_1 to 2pi
 D0.Geometry.ExtraRayFrameNoGo,D0/Geometry/ExtraRayFrameNoGo.lean,EXPLICIT_SUPPORT,rational Euclidean and Lorentz frame witnesses for E-RAYSEL
+D0.Geometry.ArchiveChainConnection,D0/Geometry/ArchiveChainConnection.lean,EXPLICIT_SUPPORT,D0-FINITE-CHAIN-LINK-TRANSPORT-001
+D0.Geometry.ArchiveChainCurvature,D0/Geometry/ArchiveChainCurvature.lean,EXPLICIT_SUPPORT,D0-FINITE-CHAIN-CURVATURE-001
+D0.Geometry.ArchiveCovariantCubicalDifferential,D0/Geometry/ArchiveCovariantCubicalDifferential.lean,EXPLICIT_SUPPORT,D0-COEFFICIENT-COVARIANT-DIFFERENTIAL-001
+D0.Geometry.ArchiveCARAssociativeEnvelope,D0/Geometry/ArchiveCARAssociativeEnvelope.lean,EXPLICIT_SUPPORT,D0-CAR-OCCUPATION-PROJECTOR-001
+D0.Geometry.ArchiveCartanLinkNoGo,D0/Geometry/ArchiveCartanLinkNoGo.lean,EXPLICIT_SUPPORT,D0-CARTAN-LINK-SCOPED-NOGO-001
