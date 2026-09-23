@@ -156,7 +156,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The algebraic complementary primal/dual pairing, full uncentered staggered Hodge first jet, independent finite flux energy, exact Riesz kernel identity, corner-support theorem, centered-metric Nyquist no-go, and algebraic-dual Riesz candidate are Lean-owned and submitted in one PR, while geometric dual-cell placement and nonlinear physical constitutive selection remain explicit open primitives.",
+      "exit_condition": "The algebraic complementary primal/dual pairing, full uncentered staggered Hodge first jet, independent finite flux energy, exact Riesz kernel identity, corner-support theorem, centered-metric Nyquist no-go, algebraic-dual Riesz candidate, and the canonical A-stabilizer weld between BalancedRole and spatial Role coefficients are Lean-owned and submitted in one PR, while geometric dual-cell placement, nonlinear physical constitutive selection, and any physical scene-to-shell embedding remain explicit open primitives.",
       "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md"
     }
   ]

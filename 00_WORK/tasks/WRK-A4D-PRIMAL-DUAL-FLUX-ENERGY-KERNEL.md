@@ -349,6 +349,136 @@ Document it explicitly as an algebraic-dual constitutive candidate.
 
 Do not call it the selected physical Hodge.
 
+
+## Package N — Role residual / spatial-triad representation weld
+
+This package is mandatory and must reuse the already-owned typed scene and shell symmetry APIs.
+
+Read additionally:
+
+```text
+D0/Geometry/TypedSceneOppositeCut.lean
+D0/Geometry/TypedRoleOppositeCut.lean
+D0/Representation/TypedRoleSceneAction.lean
+D0/Geometry/ArchiveSpatialHistorySplit.lean
+D0/Geometry/ArchiveHodgeSpatialShellOperator.lean
+```
+
+Current owners already provide:
+
+- `BalancedRole` over `ℚ`, with `balancedRole_perm`;
+- `SpatialRole := {r : Role // r ≠ A}`, with cardinality three;
+- `spatialAxisEquivRole : SpatialAxis ≃ SpatialRole`;
+- `SpatialRoleStabilizer := {σ : Equiv.Perm Role // FixesRoleA σ}`;
+- `typedRoleResidual`, whose Role-summand value is
+  [
+  99(w_{AC}-w_{BC})f(r);
+  ]
+- shell transport whose basis action is axis permutation × unchanged harmonic × signed Fock transport.
+
+Construct the canonical restriction/extension between spatial coefficients and balanced Role functions.
+
+Required public names should include the requested surface:
+
+```text
+balancedRoleOfSpatial
+balancedRoleOfSpatial_iso
+typedRoleCut_stabA_eq_spatialTriad
+```
+
+A recommended exact API is:
+
+1. `balancedRoleOfSpatial : (SpatialRole → ℚ) →ₗ[ℚ] BalancedRole`, with
+   [
+   (iota g)(A)=-sum_{r:SpatialRole}g(r),
+   qquad
+   (iota g)(r)=g(r)quad(r
+e A).
+   ]
+
+2. `spatialOfBalancedRole : BalancedRole →ₗ[ℚ] (SpatialRole → ℚ)` by restriction.
+
+3. `balancedRoleOfSpatial_iso : (SpatialRole → ℚ) ≃ₗ[ℚ] BalancedRole`, proving the two maps are inverse.
+
+4. Define the natural stabilizer action on `SpatialRole → ℚ` and prove that the equivalence intertwines it with `balancedRole_perm` restricted to `SpatialRoleStabilizer`.
+
+The intertwining theorem should be structural, not an enumeration of all six permutations.
+
+### Spatial residual readout
+
+Define a restricted Role-summand/spatial readout of `typedRoleResidual`:
+
+[
+R_{sp}(w)(g)(r)
+=
+typedRoleResidual(w)(iota g)
+  (Role	ext{-summand at }r),
+qquad r:SpatialRole.
+]
+
+Prove exactly:
+
+[
+oxed{
+R_{sp}(w)
+=
+99(w_{AC}-w_{BC}),I_3.
+}
+]
+
+The requested capstone `typedRoleCut_stabA_eq_spatialTriad` should express this identity together with stabilizer equivariance, or be accompanied by a clearly named scalar identity plus an equivariance theorem.
+
+This is the precise sense in which the rank-three typed Role residual is the spatial triad representation after freezing Role A.
+
+Do NOT identify the whole typed vertex residual carrier with a spatial cochain carrier.
+
+### Shell representation compatibility
+
+Use `spatialAxisEquivRole` and the already-owned
+`diagonalRoleTransport_shellCochain` to state the exact common stabilizer action.
+
+The full rank-96 shell basis transforms as:
+
+[
+SpatialAxis
+	imes
+ShellHarmonic
+	imes
+ArchiveFockState,
+]
+
+with:
+
+- `SpatialAxis` permuted by the A-stabilizer;
+- `ShellHarmonic` unchanged;
+- `ArchiveFockState` moved by the signed Fock representation.
+
+Therefore the shell is an amplification/tensor-type representation of the spatial-axis action, not literally the same 3-dimensional representation.
+
+Because `BalancedRole` is over `ℚ` and the shell is over `ℝ`, any direct linear comparison must explicitly perform scalar extension/casting. Do not silently identify the fields.
+
+Strongly preferred control:
+
+- exhibit at least two distinct stabilizer-equivariant spatial-triad embeddings into the shell when `archiveFibers N ≥ 3`, for example the vacuum `cos` and vacuum `sin` axis spans, if the existing API makes this clean;
+- conclude that Role symmetry alone does not select a unique physical `3 → 96` scene-to-shell embedding.
+
+If this preferred control is expensive, the mandatory result is the spatial coefficient/BalancedRole isomorphism and exact residual scalar identity.
+
+### Representation truth boundary
+
+This package establishes a common representation language for the same A-stabilizer.
+
+It does NOT establish:
+
+- scene carrier = archive cochain carrier;
+- typed Role residual = matter state;
+- typed Role residual = Hodge shell;
+- a canonical physical scene-to-shell embedding;
+- Einstein residual/stress identification.
+
+Any constitutive use of the spatial residual must be typed as additional data or a later derived pairing.
+
+
 ## Mandatory controls
 
 Include exact controls for:
