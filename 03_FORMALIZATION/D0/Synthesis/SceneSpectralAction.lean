@@ -85,7 +85,7 @@ theorem ρ1_inverse_edge_weight_eq_one (i j : Fin 33) :
 owned unit scene weight; in fact it is exactly `13 - 9 = 4`. -/
 theorem ρ1_c1_middle_polar_discriminant (i j : Fin 33) :
     13 * ρ1 i - 9 * ρ1 j = 4 := by
-  simp [ρ1]
+  norm_num [ρ1]
 
 
 /-- The scene Laplacian is symmetric. -/
