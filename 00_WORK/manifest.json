@@ -84,19 +84,6 @@
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {
-      "id": "EXP-ATORUS-CAR-DIRAC-DISPERSION-TRUTH-REPAIR",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-ARCHIVE-CAR-DIRAC-OWNER-001",
-        "D0-MATTER-STRESS-COUPLING-001",
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
-      ],
-      "exit_condition": "Prove hodgeCarDirac squared equals -sum_r nabla_r^- nabla_r^+ tensor I_16, then the L=2 graph-normalization, the kernel, the spatial first shell of rank 96 for L>=3, E_1(L)=2L sin(pi/L), and the limit 2pi. The hopping-versus-difference audit is already closed: carDirac is hoppingCarDirac and is not this owner.",
-      "brief": "00_WORK/tasks/EXP-ATORUS-CAR-DIRAC-DISPERSION-TRUTH-REPAIR.md"
-    },
-    {
       "id": "WRK-PUBLIC-CLAIM-STRENGTH-LINT",
       "class": "WORKER",
       "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
@@ -133,19 +120,6 @@
       ],
       "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
-    },
-    {
-      "id": "WRK-ATORUS-CAR-HODGE-SQUARE-SHELL",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
-        "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
-        "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001"
-      ],
-      "exit_condition": "Lean owns hodgeCarDirac squared as the fibrewise difference Laplacian, the L=2 normalization, the kernel, spatial first-shell rank 96 for L>=3, E_1(L)=2L sin(pi/L), and the limit 2pi, without using hoppingCarDirac or selecting a constitutive law.",
-      "brief": "00_WORK/tasks/WRK-ATORUS-CAR-HODGE-SQUARE-SHELL.md"
     },
     {
       "id": "EXP-M1-RIESZ-READOUT-REPRESENTATION",

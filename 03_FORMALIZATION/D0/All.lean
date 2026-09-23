@@ -303,6 +303,7 @@ import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveHeatTrace
 import D0.Geometry.ArchiveHodgeCARDirac
 import D0.Geometry.ArchiveHodgeCARDiracKernel
+import D0.Geometry.ArchiveHodgeCARDiracShell
 import D0.Geometry.ArchiveHodgeCARDiracSquare
 import D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo
 import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
@@ -347,6 +348,7 @@ import D0.Geometry.ConformalLaplacianTrace
 import D0.Geometry.EdgeStiffnessOrigin
 import D0.Geometry.FibonacciAnyonUniqueness
 import D0.Geometry.FibonacciBratteliRefinement
+import D0.Geometry.FiniteCycleFourier
 import D0.Geometry.FinitePrimalDualHodgeParent
 import D0.Geometry.FiniteSpin2DOF
 import D0.Geometry.FiniteSpin2Dynamics
