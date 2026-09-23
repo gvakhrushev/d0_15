@@ -224,6 +224,36 @@ Do not claim a new spectrum.
 
 Where easy, prove kernel/shell transport consequences only as transported eigenspaces after the relevant dual operator is typed.
 
+
+## Package J — counting adjoint and chirality conjugacy
+
+After the independently defined incidence theorem, identify dual functionals with dual cochains ONLY through the counting Riesz map.
+
+Derive the degree-signed counting-adjoint relation:
+
+[
+J_{k-1}(d_P^{k-1})^\dagger
+=
+(-1)^k d_D^{4-k}J_k.
+]
+
+Then define the dual-degree chirality sign
+
+[
+\chi|_{D^\ell}=(-1)^{\ell(\ell-1)/2}I
+]
+
+and prove the correctly signed Dirac conjugacy:
+
+[
+J D_P J^{-1}=\chi D_D\chi^{-1}.
+]
+
+Do NOT simplify this to `J D_P J⁻¹=D_D` under the present incidence conventions.
+
+This theorem transports the flat spectrum; it does not create a new spectrum, mass, or physical metric Hodge.
+
+
 ## Truth boundaries
 
 Do NOT claim:

@@ -76,6 +76,24 @@ They share:
 
 Do not use Nyquist or the corner as if they separated these two models.
 
+
+## Upstream physical-frame boundary from later research
+
+A later located-star/cell-action memo establishes a sharper physical gate:
+
+```text
+SOLDERED-CREATOR-FRAME-LIFT-PRIMITIVE-REQUIRED
+```
+
+and proves that the two reference kernels and the naive flux seed fail a fixed-counting Lorentz boost test, while a pointwise Lorentz metric star cannot reproduce the staggered off-site jet.
+
+Therefore this task is a PARALLEL ALGEBRAIC INTEGRABILITY LANE.
+
+Its second-order Cartan calculation must not be presented as the first physical blocker or as a replacement for the missing local frame lift.
+
+If `EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT` lands first, consume its frame-action conventions where relevant but keep Cartan gauge and local Lorentz frame covariance distinct.
+
+
 ## Primary question
 
 Given

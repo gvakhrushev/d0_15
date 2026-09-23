@@ -156,7 +156,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The algebraic complementary primal/dual pairing, full uncentered staggered Hodge first jet, independent finite flux energy, exact Riesz kernel identity, corner-support theorem, centered-metric Nyquist no-go, algebraic-dual Riesz candidate, and the canonical A-stabilizer weld between BalancedRole and spatial Role coefficients are Lean-owned and submitted in one PR, while geometric dual-cell placement, nonlinear physical constitutive selection, and any physical scene-to-shell embedding remain explicit open primitives.",
+      "exit_condition": "The algebraic complementary primal/dual pairing, full uncentered staggered Hodge first jet, independent finite flux energy, exact Riesz kernel identity, corner-support theorem, centered-metric Nyquist no-go, algebraic-dual Riesz candidate, and the canonical A-stabilizer weld between BalancedRole and spatial Role coefficients are Lean-owned and submitted in one PR, while located dual-cell placement remains a separate formalization owner, nonlinear physical constitutive selection remains open, and any physical scene-to-shell embedding remains explicitly unclaimed.",
       "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md"
     },
     {
@@ -191,6 +191,39 @@
       ],
       "exit_condition": "After its research and carrier prerequisites land, the generic second-order quadratic-energy covariance algebra and exact scalar Cartan witness are Lean-owned, including the exponential/zero-second-jet no-go and any research-selected necessary second-jet conditions, without inventing a physical finite symmetry.",
       "brief": "00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md"
+    },
+    {
+      "id": "EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The existing 16-state exterior/CAR carrier is either equipped with an independently defined local Lorentz-frame lift, observer-covariant positive exterior pairing, moving creators and compatible link transformation whose flat first variation can reproduce the accepted staggered H(e), or the first exact obstruction in that construction is terminally classified.",
+      "brief": "00_WORK/tasks/EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT.md"
+    },
+    {
+      "id": "WRK-A4D-LOCAL-REVERSE-STAR-NOGO",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The explicit L=5 inverse witnesses and the scoped Laurent-polynomial theorem prove that uniformly bounded translation-covariant forward/reverse scalar stars with exact inverse composition cannot realize the accepted neighboring scalar first jet, while inverse-free parents, nonlocal inverses and enlarged fibers remain outside the no-go.",
+      "brief": "00_WORK/tasks/WRK-A4D-LOCAL-REVERSE-STAR-NOGO.md"
+    },
+    {
+      "id": "WRK-A4D-OBSERVER-FRAME-CAR-LIFT",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "Conditional on the research terminal, the exterior lift on ArchiveFockState, observer-positive pairing and any validated soldered creator/link covariance are Lean-owned without claiming a spinor representation, physical time identification or nonlinear constitutive selector.",
+      "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     }
   ]
 }
