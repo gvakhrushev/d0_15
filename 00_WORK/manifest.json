@@ -136,6 +136,18 @@
       ],
       "exit_condition": "The diagonal Role action on the archive cochain commutes with the Hodge Dirac and its square, the Fock-only action does not, fermion number commutes with the square and not with the first-order operator, and the Role-A stabilizer preserves the rank-96 spatial shell as a literal operator carrier without identifying that compression with the BOOK finite feedback operator.",
       "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-ROLE-HODGE-SYMMETRY.md"
+    },
+
+    {
+      "id": "WRK-TYPED-SCENE-ROLE-OPPOSITE-CUT-WELD",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "REVIEW",
+      "affected_claims": [
+        "D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001"
+      ],
+      "exit_condition": "The typed opposite-cut weld on D0.V9, D0.V11, and D0.V13, the Role-cut rank 3, the algebraic uniform-weight locus of the three typed probes, and Perm Role equivariance are Lean-owned and submitted in one PR. A bare Fin 13 equivalence does not choose the Role image. Uniform weights are not an M1 theorem.",
+      "brief": "00_WORK/tasks/WRK-TYPED-SCENE-ROLE-OPPOSITE-CUT-WELD.md"
     }
   ]
 }
