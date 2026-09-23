@@ -138,7 +138,7 @@
       "id": "WRK-ATORUS-CAR-HODGE-SQUARE-SHELL",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
         "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",

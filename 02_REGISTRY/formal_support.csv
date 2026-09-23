@@ -78,3 +78,4 @@ D0.Geometry.A4DCenteredCartanClosureNoGo,D0/Geometry/A4DCenteredCartanClosureNoG
 D0.Gravity.A4DParentWardStressDescent,D0/Gravity/A4DParentWardStressDescent.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_53_A4D_HODGE_CONSTITUTIVE_CONNECTION_CLOSURE.md
 D0.Geometry.A4DMetricStressInterface,D0/Geometry/A4DMetricStressInterface.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_53_A4D_HODGE_CONSTITUTIVE_CONNECTION_CLOSURE.md
 D0.Combinatorics.CompleteTripartiteCuts,D0/Combinatorics/CompleteTripartiteCuts.lean,EXPLICIT_SUPPORT,36877f3 numeric cut-size fixture
+D0.Geometry.ArchiveHodgeCARDiracKernel,D0/Geometry/ArchiveHodgeCARDiracKernel.lean,EXPLICIT_SUPPORT,hodgeCarDirac kernel is the 16-dimensional constant Fock fibre

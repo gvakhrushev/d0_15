@@ -302,6 +302,7 @@ import D0.Geometry.ArchiveFlatProductBondingNoGo
 import D0.Geometry.ArchiveGradedRefinementChainMap
 import D0.Geometry.ArchiveHeatTrace
 import D0.Geometry.ArchiveHodgeCARDirac
+import D0.Geometry.ArchiveHodgeCARDiracKernel
 import D0.Geometry.ArchiveHodgeCARDiracSquare
 import D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo
 import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
