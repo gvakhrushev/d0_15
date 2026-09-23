@@ -112,6 +112,8 @@ Baseline mathematical snapshot for the gravity lane: `e6d9d4b7f17a4cf2f478cb737c
 
 | E-HODGE-CONN — Hodge constitutive/connection closure | ACCEPT AS RESEARCH / HODGE-CONSTITUTIVE-PRIMITIVE-REQUIRED | Flat `hodgeCarDirac` has a Lean counting adjoint and odd fermionic parity, and is not `hoppingCarDirac`. The scalar difference Laplacian and its `L=2` diagonal double-count are Lean-owned. The degree-preserving CAR envelope has dimension 70 and the stated `E_sr` bracket. The mixed parent Ward, five-cycle centered closure no-go, 1+3+6 Frobenius factor, temporal probe, shear-versus-axis no-go, and noncommuting lapse witness are Lean-owned. Durable packet: `02_REGISTRY/research/MEMO_53_A4D_HODGE_CONSTITUTIVE_CONNECTION_CLOSURE.md`. | `D_H^2`, its 16-dimensional constant-fibre kernel, and the separate spatial shell (rank 96 for `L>=3`, rank 48 at `L=2`, `E_1→2π`) are Lean-owned. `S(e,n,Ω)` and `δ_ξ Ω` are not derived. |
 
+| E-AFFINE-CARTAN — affine path geometry and scalar closure | AFFINE-CARTAN-PATH-GEOMETRY-OWNED / PHYSICAL-CONSTITUTIVE-ACTION-STILL-MISSING | Finite affine Cartan maps, exact path composition, open and based `(F,T)` laws, the scalar Lie closure of dimension `L^4(L^4-1)`, the uniform-radius Lie no-go, the vanishing of pointwise derivations, and the crossed-product identification with `End` of dimension `n^2` are Lean-owned. Factorized path-word cost is not a uniform support bound. | `HODGE-CONSTITUTIVE-PRIMITIVE-REQUIRED` stays. No physical Hodge selector, stress law, or continuum Diff is selected. |
+
 The finite lane should presently be read as:
 
 ```text
