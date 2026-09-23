@@ -158,6 +158,39 @@
       ],
       "exit_condition": "The algebraic complementary primal/dual pairing, full uncentered staggered Hodge first jet, independent finite flux energy, exact Riesz kernel identity, corner-support theorem, centered-metric Nyquist no-go, algebraic-dual Riesz candidate, and the canonical A-stabilizer weld between BalancedRole and spatial Role coefficients are Lean-owned and submitted in one PR, while geometric dual-cell placement, nonlinear physical constitutive selection, and any physical scene-to-shell embedding remain explicit open primitives.",
       "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md"
+    },
+    {
+      "id": "EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The second-order covariance identity for the cell-energy kernel is derived, the scalar delta Cartan witness is classified, and the research determines whether a bounded-local finite Cartan action fixes the matter-transformation second jet and hence selects/rejects the surviving nonlinear cell-energy family.",
+      "brief": "00_WORK/tasks/EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY.md"
+    },
+    {
+      "id": "WRK-A4D-LOCATED-PRIMAL-DUAL-STAR",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The center-matched two-color primal/dual placement, signed topological star, independent dual-incidence intertwiner, topological square, parity-even complement law, and Role orientation pseudoequivariance are Lean-owned without claiming a metric or nonlinear constitutive selector.",
+      "brief": "00_WORK/tasks/WRK-A4D-LOCATED-PRIMAL-DUAL-STAR.md"
+    },
+    {
+      "id": "WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "After its research and carrier prerequisites land, the generic second-order quadratic-energy covariance algebra and exact scalar Cartan witness are Lean-owned, including the exponential/zero-second-jet no-go and any research-selected necessary second-jet conditions, without inventing a physical finite symmetry.",
+      "brief": "00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md"
     }
   ]
 }
