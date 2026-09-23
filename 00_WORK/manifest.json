@@ -112,6 +112,17 @@
       ],
       "exit_condition": "Finite link transport, open-path curvature, coefficient differential covariance, occupation projectors, and the scoped Cartan-link no-gos are Lean-owned, while DISCRETE-CHAIN-CONNECTION-PRIMITIVE-REQUIRED stays open. The coefficient square, frame-to-Fock lift, replacement generation of every degree matrix unit, staggered Hodge tangent, and moving-d parent Ward are not claimed.",
       "brief": "00_WORK/tasks/WRK-A4D-CHAIN-CONNECTION-THEOREM-PACKAGE.md"
+    },
+    {
+      "id": "WRK-A4D-SOLDER-METRIC-HISTORY-SPATIAL-SPLIT",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "REVIEW",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The nonlinear solder Gram flat tangent, Lorentz frame tangent algebra, literal archive spatial factor and A-invariant Hodge-square intertwiner are Lean-owned, validated, and submitted in one PR for CONTROL review, retaining the physical representation and constitutive boundaries.",
+      "brief": "00_WORK/tasks/WRK-A4D-SOLDER-METRIC-HISTORY-SPATIAL-SPLIT.md"
     }
   ]
 }

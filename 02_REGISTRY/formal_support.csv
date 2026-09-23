@@ -87,3 +87,5 @@ D0.Geometry.ArchiveChainCurvature,D0/Geometry/ArchiveChainCurvature.lean,EXPLICI
 D0.Geometry.ArchiveCovariantCubicalDifferential,D0/Geometry/ArchiveCovariantCubicalDifferential.lean,EXPLICIT_SUPPORT,D0-COEFFICIENT-COVARIANT-DIFFERENTIAL-001
 D0.Geometry.ArchiveCARAssociativeEnvelope,D0/Geometry/ArchiveCARAssociativeEnvelope.lean,EXPLICIT_SUPPORT,D0-CAR-OCCUPATION-PROJECTOR-001
 D0.Geometry.ArchiveCartanLinkNoGo,D0/Geometry/ArchiveCartanLinkNoGo.lean,EXPLICIT_SUPPORT,D0-CARTAN-LINK-SCOPED-NOGO-001
+D0.Geometry.A4DSolderMetricCompletion,D0/Geometry/A4DSolderMetricCompletion.lean,EXPLICIT_SUPPORT,D0-HODGE-LINKS-001
+D0.Geometry.ArchiveSpatialHistorySplit,D0/Geometry/ArchiveSpatialHistorySplit.lean,EXPLICIT_SUPPORT,D0-HODGE-LINKS-001
