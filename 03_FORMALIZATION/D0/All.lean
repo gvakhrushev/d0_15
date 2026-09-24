@@ -315,6 +315,7 @@ import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DStaggeredFirstJetPathExpansion
 import D0.Geometry.A4DStaggeredHodgeSelector
 import D0.Geometry.A4DSymRoleCentralDifference
+import D0.Geometry.A4DTransportedReferenceMismatch
 import D0.Geometry.A4DUnlabelledCenterHolonomyNoGo
 import D0.Geometry.Archive1DCochainRefinement
 import D0.Geometry.Archive1Dto4DRGLiftNoGo

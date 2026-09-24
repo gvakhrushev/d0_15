@@ -83,17 +83,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-SOLDER-REFERENCE-LEG-SECTION.md"
     },
     {
-      "id": "WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Lean owns the conditional transported-reference mismatch kappa_q for a supplied source reference leg q, with exact flat, pure-shift, cancellation and nilpotent-response controls, while selection of an intrinsic q(A,e) remains outside the worker.",
-      "brief": "00_WORK/tasks/WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH.md"
-    },
-    {
       "id": "EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
