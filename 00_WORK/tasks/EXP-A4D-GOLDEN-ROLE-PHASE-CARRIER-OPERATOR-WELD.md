@@ -10,7 +10,7 @@ EXPENSIVE / DEEP RESEARCH
 
 ## State
 
-PLANNED
+IN_PROGRESS
 
 ## Start gate
 
@@ -44,7 +44,7 @@ Current terminal:
 
 ## Objective
 
-Construct or terminally classify the **first actual typed Tower-C ↔ Tower-B carrier/operator comparison** beyond a shared scalar probe.
+Construct or terminally classify the **first actual typed Tower-C \u2194 Tower-B carrier/operator comparison** beyond a shared scalar probe.
 
 The task must first decide the correct comparison layer.
 
@@ -167,7 +167,7 @@ Test the finite Role permutation action and coordinatewise projection.
 
 A comparison that requires a distinguished Role without an owned reason is noncanonical.
 
-### I. Downstream firewall
+## I. Downstream firewall
 
 Do not attempt `J`, corrected `D_H`, or `H(e)` inter-level intertwining until a genuine carrier/function/algebra comparison exists.
 

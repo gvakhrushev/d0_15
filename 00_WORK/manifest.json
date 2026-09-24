@@ -97,13 +97,13 @@
       "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-ARCHIVE-LAPLACIAN-RG",
         "D0-PERRON-SCALE-FLOW-OWNER-001",
         "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
       ],
-      "exit_condition": "The first genuine Tower-C↔Tower-B carrier/function-space/algebra/operator comparison beyond the scalar phi probe is constructed or terminally scoped, with index separation, refinement diagrams, Role equivariance and the existing operator/energy residual interface audited; J, D_H, H(e) and physical time remain downstream unless a carrier weld is actually obtained.",
+      "exit_condition": "The first genuine Tower-C\u2194Tower-B carrier/function-space/algebra/operator comparison beyond the scalar phi probe is constructed or terminally scoped, with index separation, refinement diagrams, Role equivariance and the existing operator/energy residual interface audited; J, D_H, H(e) and physical time remain downstream unless a carrier weld is actually obtained.",
       "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD.md"
     }
   ]
