@@ -16,15 +16,17 @@ BLOCKED
 
 NOT SATISFIED.
 
-Do not start until the terminal of
+Do not start until the successor reference/origin task
 
-\`EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH\`
+\`EXP-A4D-SOLDER-REFERENCE-LEG-SECTION\`
 
-is merged and the resulting comparison/mismatch primitive is available on current main.
+has landed a usable source-fibre reference-leg / affine-origin section, or the repository has explicitly adopted an equivalent primitive with the required flat, exact pure-gauge, pure-shift and frame-covariance laws.
+
+PR #112 by itself does **not** satisfy this gate: it constructs only the conditional family \(\kappa_q\) for a supplied \(q\) and terminally identifies the missing reference section.
 
 ## Purpose
 
-This is the next constitutive research step **after** the solder–Cartan edge comparison.
+This is the next constitutive research step **after** the solder–Cartan edge comparison **and** after the reference-leg/origin datum needed to make \(\kappa(A,e)\) intrinsic has landed.
 
 The target is not \(W_{\rm flux}\) itself and not a second-jet selector.
 
