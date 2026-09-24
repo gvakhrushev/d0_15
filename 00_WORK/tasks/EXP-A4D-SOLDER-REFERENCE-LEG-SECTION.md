@@ -16,11 +16,17 @@ PLANNED
 
 SATISFIED on current \`main\` after merged PR #112.
 
-The worker
+PR #113 has merged the nilpotent affine lift/grading boundary.
 
-\`WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY\`
+The workers
 
-may continue in parallel. Do not wait for it.
+\`WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH\`
+
+and
+
+\`WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY\`
+
+may run in parallel. This EXP must not wait for them; they formalize theorem-ready algebra from PR #112 and do not select \(q\).
 
 ## Read first
 
@@ -32,7 +38,7 @@ Read completely:
 4. \`03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean\`;
 5. \`03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean\`;
 6. \`03_FORMALIZATION/D0/Geometry/A4DLabelledPathHolonomyDescent.lean\`;
-7. merged PR #109/#110/#111/#112 artifacts.
+7. merged PR #109/#110/#111/#112/#113 artifacts.
 
 ## Frozen result from PR #112
 
