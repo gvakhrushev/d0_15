@@ -1430,7 +1430,7 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-LOCATED-PRIMAL-DUAL-CELL-001", moduleName := "D0.Geometry.A4DLocatedPrimalDualCell",
       theoremName := "locatedDualToPrimal_leftInverse;locatedDualToPrimal_rightInverse;located_placement_inverse_l2;located_placement_inverse_l3;located_placement_inverse_l5;centerMatchedCorner_insert;centerMatchedCorner_eq_indicator;locatedPrimalToDual_centerMatched", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-LOCATED-PRIMAL-DUAL-STAR-001", moduleName := "D0.Geometry.A4DLocatedTopologicalStar",
-      theoremName := "locatedStar_square_homogeneous;locatedStar_square_l2;locatedStar_square_l3;locatedStar_square_l5;locatedStar_commutes_fockParity;located_coface_corner;dualIncidenceAdjoint_pairing;locatedStar_intertwines_forward;locatedStar_role_pseudoequivariant;locatedStar_swapAB;locatedStar_even_cycle;dualDirac_eq_hodgeCarDirac", status := ClaimStatus.leanCoreProved }
+      theoremName := "locatedStar_square_homogeneous;locatedStar_square_l2;locatedStar_square_l3;locatedStar_square_l5;locatedStar_commutes_fockParity;located_coface_corner;dualIncidenceAdjoint_pairing;locatedStar_intertwines_forward;locatedStar_intertwines_codifferential;locatedStar_role_pseudoequivariant;locatedStar_swapAB;locatedStar_even_cycle;locatedStar_dirac_chirality", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

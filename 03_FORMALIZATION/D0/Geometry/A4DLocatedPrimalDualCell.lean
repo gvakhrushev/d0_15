@@ -258,4 +258,50 @@ theorem locatedPrimalToDual_centerMatched (N : ℕ) (x : ArchiveRolePhaseGroup N
       simp [fockSingletonState, hs]
     simp [hfalse, roleStep, hs, occupationIndicator]
 
+/-- Primal cochain. The carrier is not the dual cochain type. -/
+structure PrimalCochain (N : ℕ) where
+  coeff : ArchiveCochain N
+
+/-- Dual cochain. Distinct from `PrimalCochain`. -/
+structure DualCochain (N : ℕ) where
+  coeff : ArchiveCochain N
+
+theorem PrimalCochain.ext {N : ℕ} {ψ φ : PrimalCochain N}
+    (h : ψ.coeff = φ.coeff) : ψ = φ := by
+  cases ψ
+  cases φ
+  cases h
+  rfl
+
+theorem DualCochain.ext {N : ℕ} {ψ φ : DualCochain N}
+    (h : ψ.coeff = φ.coeff) : ψ = φ := by
+  cases ψ
+  cases φ
+  cases h
+  rfl
+
+instance {N : ℕ} : Zero (PrimalCochain N) where
+  zero := ⟨0⟩
+
+instance {N : ℕ} : Add (PrimalCochain N) where
+  add ψ φ := ⟨ψ.coeff + φ.coeff⟩
+
+instance {N : ℕ} : SMul ℝ (PrimalCochain N) where
+  smul a ψ := ⟨a • ψ.coeff⟩
+
+instance {N : ℕ} : Neg (PrimalCochain N) where
+  neg ψ := ⟨-ψ.coeff⟩
+
+instance {N : ℕ} : Zero (DualCochain N) where
+  zero := ⟨0⟩
+
+instance {N : ℕ} : Add (DualCochain N) where
+  add ψ φ := ⟨ψ.coeff + φ.coeff⟩
+
+instance {N : ℕ} : SMul ℝ (DualCochain N) where
+  smul a ψ := ⟨a • ψ.coeff⟩
+
+instance {N : ℕ} : Neg (DualCochain N) where
+  neg ψ := ⟨-ψ.coeff⟩
+
 end D0.Geometry

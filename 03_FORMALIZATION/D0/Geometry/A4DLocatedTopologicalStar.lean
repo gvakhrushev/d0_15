@@ -41,33 +41,33 @@ def chiralitySign (ℓ : ℕ) : ℝ :=
   if (ℓ * (ℓ - 1) / 2) % 2 = 0 then 1 else -1
 
 /-- `⋆_PD` on the existing site/Fock cochain carrier. -/
-def locatedPrimalStar (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
+def locatedPrimalStarCoeff (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
   fun p =>
     complementOrientation (occupationComplement p.2) *
       ψ (p.1 + occupationIndicator N p.2, occupationComplement p.2)
 
 /-- Reverse star `⋆_DP`, with the orientation sign of the input label. -/
-def locatedDualStar (N : ℕ) (φ : ArchiveCochain N) : ArchiveCochain N :=
+def locatedDualStarCoeff (N : ℕ) (φ : ArchiveCochain N) : ArchiveCochain N :=
   fun p =>
     complementOrientation (occupationComplement p.2) *
       φ (p.1 - occupationIndicator N (occupationComplement p.2),
         occupationComplement p.2)
 
-theorem locatedPrimalStar_add (N : ℕ) (ψ φ : ArchiveCochain N) :
-    locatedPrimalStar N (ψ + φ) = locatedPrimalStar N ψ + locatedPrimalStar N φ := by
+theorem locatedPrimalStarCoeff_add (N : ℕ) (ψ φ : ArchiveCochain N) :
+    locatedPrimalStarCoeff N (ψ + φ) = locatedPrimalStarCoeff N ψ + locatedPrimalStarCoeff N φ := by
   funext p
-  simp only [locatedPrimalStar, Pi.add_apply]
+  simp only [locatedPrimalStarCoeff, Pi.add_apply]
   ring
 
-theorem locatedPrimalStar_smul (N : ℕ) (a : ℝ) (ψ : ArchiveCochain N) :
-    locatedPrimalStar N (a • ψ) = a • locatedPrimalStar N ψ := by
+theorem locatedPrimalStarCoeff_smul (N : ℕ) (a : ℝ) (ψ : ArchiveCochain N) :
+    locatedPrimalStarCoeff N (a • ψ) = a • locatedPrimalStarCoeff N ψ := by
   funext p
-  simp only [locatedPrimalStar, Pi.smul_apply, smul_eq_mul]
+  simp only [locatedPrimalStarCoeff, Pi.smul_apply, smul_eq_mul]
   ring
 
-theorem locatedPrimalStar_homogeneous (N k : ℕ) (ψ : ArchiveCochain N)
+theorem locatedPrimalStarCoeff_homogeneous (N k : ℕ) (ψ : ArchiveCochain N)
     (hψ : HomogeneousCochain N k ψ) :
-    HomogeneousCochain N (4 - k) (locatedPrimalStar N ψ) := by
+    HomogeneousCochain N (4 - k) (locatedPrimalStarCoeff N ψ) := by
   intro x S hS
   have hpre : fockDegree (occupationComplement S) ≠ k := by
     intro hk
@@ -77,15 +77,15 @@ theorem locatedPrimalStar_homogeneous (N k : ℕ) (ψ : ArchiveCochain N)
       rw [hk] at hcomp
       omega
     exact hS hdeg
-  simp only [locatedPrimalStar]
+  simp only [locatedPrimalStarCoeff]
   rw [hψ _ _ hpre]
   ring
 
-theorem locatedStar_square_homogeneous (N k : ℕ) (_hk : k ≤ 4)
+theorem locatedStar_square_homogeneousCoeff (N k : ℕ) (_hk : k ≤ 4)
     (ψ : ArchiveCochain N) (hψ : HomogeneousCochain N k ψ) :
-    locatedDualStar N (locatedPrimalStar N ψ) = koszulDegreeSign k • ψ := by
+    locatedDualStarCoeff N (locatedPrimalStarCoeff N ψ) = koszulDegreeSign k • ψ := by
   funext p
-  simp only [locatedDualStar, locatedPrimalStar, Pi.smul_apply, smul_eq_mul]
+  simp only [locatedDualStarCoeff, locatedPrimalStarCoeff, Pi.smul_apply, smul_eq_mul]
   have hsite : p.1 - occupationIndicator N (occupationComplement p.2) +
       occupationIndicator N (occupationComplement p.2) = p.1 := by
     simp only [sub_eq_add_neg]
@@ -101,27 +101,46 @@ theorem locatedStar_square_homogeneous (N k : ℕ) (_hk : k ≤ 4)
   · rw [hψ p.1 p.2 hdeg]
     simp [koszulDegreeSign]
 
-theorem locatedStar_square_l2 (k : ℕ) (hk : k ≤ 4) (ψ : ArchiveCochain 0)
+theorem locatedStar_square_reverse (N k : ℕ) (_hk : k ≤ 4)
+    (φ : ArchiveCochain N) (hφ : HomogeneousCochain N k φ) :
+    locatedPrimalStarCoeff N (locatedDualStarCoeff N φ) = koszulDegreeSign k • φ := by
+  funext p
+  simp only [locatedPrimalStarCoeff, locatedDualStarCoeff, Pi.smul_apply, smul_eq_mul]
+  have hsite : p.1 + occupationIndicator N p.2 - occupationIndicator N p.2 = p.1 := by
+    simp only [sub_eq_add_neg]
+    abel
+  rw [occupationComplement_involutive, hsite]
+  by_cases hdeg : fockDegree p.2 = k
+  · rw [show complementOrientation (occupationComplement p.2) *
+          (complementOrientation p.2 * φ p) =
+          (complementOrientation p.2 *
+            complementOrientation (occupationComplement p.2)) * φ p by ring,
+        epsilon_complement_sign, hdeg]
+    simp only [koszulDegreeSign]
+  · rw [hφ p.1 p.2 hdeg]
+    simp [koszulDegreeSign]
+
+theorem locatedStar_square_l2Coeff (k : ℕ) (hk : k ≤ 4) (ψ : ArchiveCochain 0)
     (hψ : HomogeneousCochain 0 k ψ) :
-    locatedDualStar 0 (locatedPrimalStar 0 ψ) = koszulDegreeSign k • ψ :=
-  locatedStar_square_homogeneous 0 k hk ψ hψ
+    locatedDualStarCoeff 0 (locatedPrimalStarCoeff 0 ψ) = koszulDegreeSign k • ψ :=
+  locatedStar_square_homogeneousCoeff 0 k hk ψ hψ
 
-theorem locatedStar_square_l3 (k : ℕ) (hk : k ≤ 4) (ψ : ArchiveCochain 1)
+theorem locatedStar_square_l3Coeff (k : ℕ) (hk : k ≤ 4) (ψ : ArchiveCochain 1)
     (hψ : HomogeneousCochain 1 k ψ) :
-    locatedDualStar 1 (locatedPrimalStar 1 ψ) = koszulDegreeSign k • ψ :=
-  locatedStar_square_homogeneous 1 k hk ψ hψ
+    locatedDualStarCoeff 1 (locatedPrimalStarCoeff 1 ψ) = koszulDegreeSign k • ψ :=
+  locatedStar_square_homogeneousCoeff 1 k hk ψ hψ
 
-theorem locatedStar_square_l5 (k : ℕ) (hk : k ≤ 4) (ψ : ArchiveCochain 3)
+theorem locatedStar_square_l5Coeff (k : ℕ) (hk : k ≤ 4) (ψ : ArchiveCochain 3)
     (hψ : HomogeneousCochain 3 k ψ) :
-    locatedDualStar 3 (locatedPrimalStar 3 ψ) = koszulDegreeSign k • ψ :=
-  locatedStar_square_homogeneous 3 k hk ψ hψ
+    locatedDualStarCoeff 3 (locatedPrimalStarCoeff 3 ψ) = koszulDegreeSign k • ψ :=
+  locatedStar_square_homogeneousCoeff 3 k hk ψ hψ
 
 /-- The complement does not flip Fock parity: `(-1)^{|Sᶜ|} = (-1)^{|S|}`. -/
-theorem locatedStar_commutes_fockParity (N : ℕ) (ψ : ArchiveCochain N) :
-    parityCochain N (locatedPrimalStar N ψ) =
-      locatedPrimalStar N (parityCochain N ψ) := by
+theorem locatedStar_commutes_fockParityCoeff (N : ℕ) (ψ : ArchiveCochain N) :
+    parityCochain N (locatedPrimalStarCoeff N ψ) =
+      locatedPrimalStarCoeff N (parityCochain N ψ) := by
   funext p
-  simp only [parityCochain, locatedPrimalStar]
+  simp only [parityCochain, locatedPrimalStarCoeff]
   rw [fockParitySign_occupationComplement]
   ring
 
@@ -213,29 +232,29 @@ noncomputable section
 
 /-- Independent dual forward incidence: creation along one positive role step.
 This is not `J d J⁻¹`. -/
-def dualPositiveIncidence (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
+def dualPositiveIncidenceCoeff (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
   fun p => ∑ r : Role, ∑ ket : ArchiveFockState,
     carCreate r p.2 ket *
       (forwardDifferenceScale N *
         (ψ (p.1 + dualPositiveStep N r, ket) - ψ (p.1, ket)))
 
-theorem dualPositiveIncidence_eq_dForward (N : ℕ) (ψ : ArchiveCochain N) :
-    dualPositiveIncidence N ψ = dForward N ψ := by
+theorem dualPositiveIncidenceCoeff_eq_dForwardCoeff (N : ℕ) (ψ : ArchiveCochain N) :
+    dualPositiveIncidenceCoeff N ψ = dForward N ψ := by
   funext p
-  unfold dualPositiveIncidence dForward forwardCreateDirection dualPositiveStep
+  unfold dualPositiveIncidenceCoeff dForward forwardCreateDirection dualPositiveStep
   simp only [forwardDifference_apply, roleTranslatePlus_apply]
 
 /-- Counting adjoint of the dual forward incidence. On this carrier it is `d†`. -/
-def dualIncidenceAdjoint (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
+def dualIncidenceAdjointCoeff (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
   fun p => ∑ r : Role, ∑ ket : ArchiveFockState,
     carAnnihilate r p.2 ket *
       (forwardDifferenceScale N *
         (ψ (p.1 - dualPositiveStep N r, ket) - ψ (p.1, ket)))
 
-theorem dualIncidenceAdjoint_eq_hodgeCodifferential (N : ℕ) (ψ : ArchiveCochain N) :
-    dualIncidenceAdjoint N ψ = hodgeCodifferential N ψ := by
+theorem dualIncidenceAdjointCoeff_eq_hodgeCodifferentialCoeff (N : ℕ) (ψ : ArchiveCochain N) :
+    dualIncidenceAdjointCoeff N ψ = hodgeCodifferential N ψ := by
   funext p
-  unfold dualIncidenceAdjoint hodgeCodifferential backwardAnnihilateDirection
+  unfold dualIncidenceAdjointCoeff hodgeCodifferential backwardAnnihilateDirection
     annihilateAction backwardSite dualPositiveStep
   simp only [backwardDifference_apply, roleTranslateMinus_apply]
   apply Finset.sum_congr rfl
@@ -245,10 +264,10 @@ theorem dualIncidenceAdjoint_eq_hodgeCodifferential (N : ℕ) (ψ : ArchiveCocha
   intro ket _
   ring
 
-theorem dualIncidenceAdjoint_pairing (N : ℕ) (ψ φ : ArchiveCochain N) :
-    cochainPairing N (dualPositiveIncidence N ψ) φ =
-      cochainPairing N ψ (dualIncidenceAdjoint N φ) := by
-  rw [dualPositiveIncidence_eq_dForward, dualIncidenceAdjoint_eq_hodgeCodifferential]
+theorem dualIncidenceAdjointCoeff_pairingCoeff (N : ℕ) (ψ φ : ArchiveCochain N) :
+    cochainPairing N (dualPositiveIncidenceCoeff N ψ) φ =
+      cochainPairing N ψ (dualIncidenceAdjointCoeff N φ) := by
+  rw [dualPositiveIncidenceCoeff_eq_dForwardCoeff, dualIncidenceAdjointCoeff_eq_hodgeCodifferentialCoeff]
   exact dForward_adjoint N ψ φ
 
 theorem carCreate_ne_removeRole (r : Role) (bra ket : ArchiveFockState)
@@ -306,16 +325,16 @@ theorem incidenceDegreeSign_eq_neg_parity (k : ℕ) :
   · have hk1 : (k + 1) % 2 = 0 := by omega
     simp [incidenceDegreeSign, degreeParitySign, hk, hk1]
 
-theorem locatedStar_intertwines_forward (N k : ℕ) (_hk : k ≤ 4)
+theorem locatedStar_intertwines_forwardCoeff (N k : ℕ) (_hk : k ≤ 4)
     (ψ : ArchiveCochain N) (hψ : HomogeneousCochain N k ψ) :
-    locatedPrimalStar N (dForward N ψ) =
-      incidenceDegreeSign k • hodgeCodifferential N (locatedPrimalStar N ψ) := by
+    locatedPrimalStarCoeff N (dForward N ψ) =
+      incidenceDegreeSign k • hodgeCodifferential N (locatedPrimalStarCoeff N ψ) := by
   classical
   funext p
   set y : ArchiveRolePhaseGroup N := p.1
   set T : ArchiveFockState := p.2
   set U : ArchiveFockState := occupationComplement T
-  simp only [Pi.smul_apply, smul_eq_mul, locatedPrimalStar]
+  simp only [Pi.smul_apply, smul_eq_mul, locatedPrimalStarCoeff]
   have hforward :
       dForward N ψ (y + occupationIndicator N T, U) =
         ∑ r : Role,
@@ -334,13 +353,13 @@ theorem locatedStar_intertwines_forward (N k : ℕ) (_hk : k ≤ 4)
     · intro h
       exact (h (Finset.mem_univ _)).elim
   have hbackward :
-      hodgeCodifferential N (locatedPrimalStar N ψ) (y, T) =
+      hodgeCodifferential N (locatedPrimalStarCoeff N ψ) (y, T) =
         ∑ r : Role,
           carAnnihilate r T (insertRole T r) * forwardDifferenceScale N *
-            ((locatedPrimalStar N ψ) (y - roleStep N r, insertRole T r) -
-              (locatedPrimalStar N ψ) (y, insertRole T r)) := by
-    rw [← dualIncidenceAdjoint_eq_hodgeCodifferential]
-    unfold dualIncidenceAdjoint dualPositiveStep
+            ((locatedPrimalStarCoeff N ψ) (y - roleStep N r, insertRole T r) -
+              (locatedPrimalStarCoeff N ψ) (y, insertRole T r)) := by
+    rw [← dualIncidenceAdjointCoeff_eq_hodgeCodifferentialCoeff]
+    unfold dualIncidenceAdjointCoeff dualPositiveStep
     apply Finset.sum_congr rfl
     intro r _
     rw [Finset.sum_eq_single (insertRole T r)]
@@ -386,14 +405,14 @@ theorem locatedStar_intertwines_forward (N k : ℕ) (_hk : k ≤ 4)
       have hK' : occupationComplement (insertRole T r) = S := by
         rw [← hK, occupationComplement_involutive]
       have hstarMinus :
-          locatedPrimalStar N ψ (y - roleStep N r, insertRole T r) =
+          locatedPrimalStarCoeff N ψ (y - roleStep N r, insertRole T r) =
             complementOrientation S * ψ (y + occupationIndicator N T, S) := by
-        rw [locatedPrimalStar, hK', hsiteMinus]
+        rw [locatedPrimalStarCoeff, hK', hsiteMinus]
       have hstarAt :
-          locatedPrimalStar N ψ (y, insertRole T r) =
+          locatedPrimalStarCoeff N ψ (y, insertRole T r) =
             complementOrientation S *
               ψ (y + occupationIndicator N T + roleStep N r, S) := by
-        rw [locatedPrimalStar, hK', hsitePlus]
+        rw [locatedPrimalStarCoeff, hK', hsitePlus]
       rw [hstarMinus, hstarAt]
       rw [show occupationComplement p.2 = U from rfl]
       rw [← mul_assoc, ← mul_assoc, hsign']
@@ -404,14 +423,14 @@ theorem locatedStar_intertwines_forward (N k : ℕ) (_hk : k ≤ 4)
       have hK' : occupationComplement (insertRole T r) = S := by
         rw [← hK, occupationComplement_involutive]
       have hstarMinus :
-          locatedPrimalStar N ψ (y - roleStep N r, insertRole T r) =
+          locatedPrimalStarCoeff N ψ (y - roleStep N r, insertRole T r) =
             complementOrientation S * ψ (y + occupationIndicator N T, S) := by
-        rw [locatedPrimalStar, hK', hsiteMinus]
+        rw [locatedPrimalStarCoeff, hK', hsiteMinus]
       have hstarAt :
-          locatedPrimalStar N ψ (y, insertRole T r) =
+          locatedPrimalStarCoeff N ψ (y, insertRole T r) =
             complementOrientation S *
               ψ (y + occupationIndicator N T + roleStep N r, S) := by
-        rw [locatedPrimalStar, hK', hsitePlus]
+        rw [locatedPrimalStarCoeff, hK', hsitePlus]
       rw [hstarMinus, hstarAt, hzero₁, hzero₂]
       simp
   · have hUr : U r = false := by
@@ -428,7 +447,7 @@ theorem locatedStar_intertwines_forward (N k : ℕ) (_hk : k ≤ 4)
       · have hfalse := (carAnnihilate_support r T (insertRole T r) hc).2.1
         exact (hTr hfalse).elim
     rw [incidenceDegreeSign_eq_neg_parity, hcreate, hann]
-    simp [locatedPrimalStar]
+    simp [locatedPrimalStarCoeff]
 
 end
 
@@ -477,14 +496,14 @@ theorem complement_transport_fermion_sign :
           complementOrientationInt (occupationComplement U) := by
   native_decide
 
-theorem locatedStar_role_pseudoequivariant (N : ℕ) (σ : Equiv.Perm Role)
+theorem locatedStar_role_pseudoequivariantCoeff (N : ℕ) (σ : Equiv.Perm Role)
     (ψ : ArchiveCochain N) :
-    locatedPrimalStar N (diagonalRoleTransport σ ψ) =
+    locatedPrimalStarCoeff N (diagonalRoleTransport σ ψ) =
       ((Equiv.Perm.sign σ : ℤ) : ℝ) •
-        diagonalRoleTransport σ (locatedPrimalStar N ψ) := by
+        diagonalRoleTransport σ (locatedPrimalStarCoeff N ψ) := by
   classical
   funext p
-  simp only [locatedPrimalStar, Pi.smul_apply, smul_eq_mul]
+  simp only [locatedPrimalStarCoeff, Pi.smul_apply, smul_eq_mul]
   rw [diagonalRoleTransport_apply, diagonalRoleTransport_apply]
   set S : ArchiveFockState := p.2
   set U : ArchiveFockState := transportState σ.symm S
@@ -507,15 +526,15 @@ theorem locatedStar_role_pseudoequivariant (N : ℕ) (σ : Equiv.Perm Role)
     simpa [complementOrientation, Int.cast_mul] using hcast
   rw [hback] at hsign
   rw [hsite, hcomp]
-  simp only [locatedPrimalStar]
+  simp only [locatedPrimalStarCoeff]
   rw [← mul_assoc]
   rw [hsign]
   ring
 
-theorem locatedStar_swapAB (N : ℕ) (ψ : ArchiveCochain N) :
-    locatedPrimalStar N (diagonalRoleTransport (Equiv.swap D0.A D0.B) ψ) =
-      -diagonalRoleTransport (Equiv.swap D0.A D0.B) (locatedPrimalStar N ψ) := by
-  rw [locatedStar_role_pseudoequivariant]
+theorem locatedStar_swapABCoeff (N : ℕ) (ψ : ArchiveCochain N) :
+    locatedPrimalStarCoeff N (diagonalRoleTransport (Equiv.swap D0.A D0.B) ψ) =
+      -diagonalRoleTransport (Equiv.swap D0.A D0.B) (locatedPrimalStarCoeff N ψ) := by
+  rw [locatedStar_role_pseudoequivariantCoeff]
   have hsign : ((Equiv.Perm.sign (Equiv.swap D0.A D0.B) : ℤ) : ℝ) = -1 := by
     rw [Equiv.Perm.sign_swap (by decide : D0.A ≠ D0.B)]
     norm_num
@@ -525,10 +544,10 @@ theorem locatedStar_swapAB (N : ℕ) (ψ : ArchiveCochain N) :
 def evenRoleCycle : Equiv.Perm Role :=
   Equiv.swap D0.A D0.B * Equiv.swap D0.B D0.C
 
-theorem locatedStar_even_cycle (N : ℕ) (ψ : ArchiveCochain N) :
-    locatedPrimalStar N (diagonalRoleTransport evenRoleCycle ψ) =
-      diagonalRoleTransport evenRoleCycle (locatedPrimalStar N ψ) := by
-  rw [locatedStar_role_pseudoequivariant]
+theorem locatedStar_even_cycleCoeff (N : ℕ) (ψ : ArchiveCochain N) :
+    locatedPrimalStarCoeff N (diagonalRoleTransport evenRoleCycle ψ) =
+      diagonalRoleTransport evenRoleCycle (locatedPrimalStarCoeff N ψ) := by
+  rw [locatedStar_role_pseudoequivariantCoeff]
   have hsign : ((Equiv.Perm.sign evenRoleCycle : ℤ) : ℝ) = 1 := by
     rw [evenRoleCycle, map_mul, Equiv.Perm.sign_swap (by decide : D0.A ≠ D0.B),
       Equiv.Perm.sign_swap (by decide : D0.B ≠ D0.C)]
@@ -577,6 +596,12 @@ theorem applyChirality_smul (N : ℕ) (a : ℝ) (ψ : ArchiveCochain N) :
   simp [applyChirality, Pi.smul_apply, smul_eq_mul]
   ring
 
+theorem applyChirality_add (N : ℕ) (ψ φ : ArchiveCochain N) :
+    applyChirality N (ψ + φ) = applyChirality N ψ + applyChirality N φ := by
+  funext p
+  simp [applyChirality, Pi.add_apply]
+  ring
+
 theorem applyChirality_homogeneous (N k : ℕ) (ψ : ArchiveCochain N)
     (hψ : HomogeneousCochain N k ψ) :
     applyChirality N ψ = chiralitySign k • ψ := by
@@ -588,37 +613,60 @@ theorem applyChirality_homogeneous (N k : ℕ) (ψ : ArchiveCochain N)
     rw [h0]
     ring
 
-theorem locatedPrimalStar_neg (N : ℕ) (ψ : ArchiveCochain N) :
-    locatedPrimalStar N (-ψ) = -locatedPrimalStar N ψ := by
+theorem locatedPrimalStarCoeff_neg (N : ℕ) (ψ : ArchiveCochain N) :
+    locatedPrimalStarCoeff N (-ψ) = -locatedPrimalStarCoeff N ψ := by
   funext p
-  simp [locatedPrimalStar, Pi.neg_apply]
+  simp [locatedPrimalStarCoeff, Pi.neg_apply]
 
-theorem locatedPrimalStar_hodge (N : ℕ) (ψ : ArchiveCochain N) :
-    locatedPrimalStar N (hodgeCarDirac N ψ) =
-      locatedPrimalStar N (dForward N ψ) +
-        locatedPrimalStar N (hodgeCodifferential N ψ) := by
-  rw [hodgeCarDirac, locatedPrimalStar_add]
+theorem locatedPrimalStarCoeff_hodge (N : ℕ) (ψ : ArchiveCochain N) :
+    locatedPrimalStarCoeff N (hodgeCarDirac N ψ) =
+      locatedPrimalStarCoeff N (dForward N ψ) +
+        locatedPrimalStarCoeff N (hodgeCodifferential N ψ) := by
+  rw [hodgeCarDirac, locatedPrimalStarCoeff_add]
 
-theorem dualDirac_eq_hodgeCarDirac (N : ℕ) (ψ : ArchiveCochain N) :
-    dualPositiveIncidence N ψ + dualIncidenceAdjoint N ψ = hodgeCarDirac N ψ := by
-  rw [dualPositiveIncidence_eq_dForward, dualIncidenceAdjoint_eq_hodgeCodifferential,
+theorem dualDirac_eq_hodgeCarDiracCoeff (N : ℕ) (ψ : ArchiveCochain N) :
+    dualPositiveIncidenceCoeff N ψ + dualIncidenceAdjointCoeff N ψ = hodgeCarDirac N ψ := by
+  rw [dualPositiveIncidenceCoeff_eq_dForwardCoeff, dualIncidenceAdjointCoeff_eq_hodgeCodifferentialCoeff,
     hodgeCarDirac]
 
-/-- The complementary half of the signed incidence relation. -/
-theorem locatedStar_intertwines_codifferential (N k : ℕ) (hk : k ≤ 4)
+theorem located_codifferential_sign_int :
+    ∀ (T : ArchiveFockState) (r : Role), T r = true →
+      complementOrientationInt (occupationComplement T) *
+          carAnnihilateInt r (occupationComplement T)
+            (insertRole (occupationComplement T) r) =
+        -(if fockDegree (removeRole T r) % 2 = 0 then (1 : ℤ) else -1) *
+          complementOrientationInt (occupationComplement (removeRole T r)) *
+            carCreateInt r T (removeRole T r) := by
+  native_decide
+
+theorem located_codifferential_sign (T : ArchiveFockState) (r : Role)
+    (hTr : T r = true) :
+    complementOrientation (occupationComplement T) *
+        carAnnihilate r (occupationComplement T)
+          (insertRole (occupationComplement T) r) =
+      -degreeParitySign (fockDegree (removeRole T r)) *
+        complementOrientation (occupationComplement (removeRole T r)) *
+          carCreate r T (removeRole T r) := by
+  have h := congrArg (fun z : ℤ => (z : ℝ)) (located_codifferential_sign_int T r hTr)
+  simpa [complementOrientation, degreeParitySign, carCreate_eq_intCast,
+    carAnnihilate_eq_intCast, Int.cast_mul, Int.cast_ite, Int.cast_neg] using h
+
+/-- Counting adjoint of the primal differential, transported by the located star:
+`J d† = (-1)^k d J` on homogeneous degree `k`. -/
+theorem locatedStar_intertwines_codifferentialCoeff (N k : ℕ) (hk : k ≤ 4)
     (ψ : ArchiveCochain N) (hψ : HomogeneousCochain N k ψ) :
-    locatedPrimalStar N (hodgeCodifferential N ψ) =
-      degreeParitySign k • dForward N (locatedPrimalStar N ψ) := by
+    locatedPrimalStarCoeff N (hodgeCodifferential N ψ) =
+      degreeParitySign k • dForward N (locatedPrimalStarCoeff N ψ) := by
   classical
   funext p
-  let y : ArchiveRolePhaseGroup N := p.1
-  let T : ArchiveFockState := p.2
-  let S : ArchiveFockState := occupationComplement T
-  let x : ArchiveRolePhaseGroup N := y + occupationIndicator N T
-  simp only [Pi.smul_apply, smul_eq_mul, locatedPrimalStar]
+  simp only [Pi.smul_apply, smul_eq_mul, locatedPrimalStarCoeff]
+  set y : ArchiveRolePhaseGroup N := p.1
+  set T : ArchiveFockState := p.2
+  set S : ArchiveFockState := occupationComplement T
+  set x : ArchiveRolePhaseGroup N := y + occupationIndicator N T
   have hleft : hodgeCodifferential N ψ (x, S) =
       ∑ r : Role, carAnnihilate r S (insertRole S r) * forwardDifferenceScale N *
-        (ψ (x, insertRole S r) - ψ (x - roleStep N r, insertRole S r)) := by
+        (ψ (x - roleStep N r, insertRole S r) - ψ (x, insertRole S r)) := by
     unfold hodgeCodifferential backwardAnnihilateDirection annihilateAction backwardSite
     simp only [backwardDifference_apply, roleTranslateMinus_apply]
     apply Finset.sum_congr rfl
@@ -630,10 +678,10 @@ theorem locatedStar_intertwines_codifferential (N k : ℕ) (hk : k ≤ 4)
       ring
     · intro h
       exact (h (Finset.mem_univ _)).elim
-  have hright : dForward N (locatedPrimalStar N ψ) (y, T) =
+  have hright : dForward N (locatedPrimalStarCoeff N ψ) (y, T) =
       ∑ r : Role, carCreate r T (removeRole T r) * forwardDifferenceScale N *
-        (locatedPrimalStar N ψ (y + roleStep N r, removeRole T r) -
-          locatedPrimalStar N ψ (y, removeRole T r)) := by
+        ((locatedPrimalStarCoeff N ψ) (y + roleStep N r, removeRole T r) -
+          (locatedPrimalStarCoeff N ψ) (y, removeRole T r)) := by
     unfold dForward forwardCreateDirection
     simp only [forwardDifference_apply, roleTranslatePlus_apply]
     apply Finset.sum_congr rfl
@@ -645,73 +693,312 @@ theorem locatedStar_intertwines_codifferential (N k : ℕ) (hk : k ≤ 4)
       ring
     · intro h
       exact (h (Finset.mem_univ _)).elim
+  dsimp only [y, T, S, x] at hleft hright ⊢
   rw [hleft, hright]
   rw [Finset.mul_sum, Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro r _
   by_cases hTr : T r = true
-  · have hSr : S r = false := by simpa [S, occupationComplement] using hTr
-    let K : ArchiveFockState := removeRole T r
-    have hinsert : insertRole K r = T := insertRole_removeRole T r hTr
+  · set K : ArchiveFockState := removeRole T r
+    have hinsert : insertRole K r = T := by
+      simpa [K] using insertRole_removeRole T r hTr
+    have hKfalse : K r = false := by simp [K, removeRole]
     have hcompK : occupationComplement K = insertRole S r := by
-      simpa [K, S, occupationComplement_involutive] using occupationComplement_removeRole T r
+      simpa [K, S] using occupationComplement_removeRole T r
     have hstep : occupationIndicator N T =
         occupationIndicator N K + roleStep N r := by
-      simpa [K] using occupationIndicator_insertRole N K r (by simp [K, removeRole])
+      rw [← hinsert]
+      exact occupationIndicator_insertRole N K r hKfalse
     have hxminus : x - roleStep N r = y + occupationIndicator N K := by
-      dsimp [x]
-      rw [hstep, sub_eq_add_neg]
+      rw [show x = y + occupationIndicator N T from rfl, hstep, sub_eq_add_neg]
       abel
     have hxplus : y + roleStep N r + occupationIndicator N K = x := by
-      dsimp [x]
-      rw [← hstep]
+      rw [show x = y + occupationIndicator N T from rfl, hstep]
       abel
-    have hstarPlus : locatedPrimalStar N ψ (y + roleStep N r, K) =
-        complementOrientation K * ψ (x, insertRole S r) := by
-      rw [locatedPrimalStar, hcompK, hxplus]
-    have hstarAt : locatedPrimalStar N ψ (y, K) =
-        complementOrientation K * ψ (x - roleStep N r, insertRole S r) := by
-      rw [locatedPrimalStar, hcompK, hxminus]
-    have hsign := located_incidence_sign K r (by simp [K, removeRole])
-    rw [hinsert] at hsign
-    have hsign' : complementOrientation T * carCreate r T K =
-        degreeParitySign (fockDegree K) * complementOrientation K *
-          carAnnihilate r S (insertRole S r) := by
-      simpa [S, hcompK, occupationComplement_involutive] using hsign
-    by_cases hdeg : fockDegree K = 4 - k
-    · have hparity : degreeParitySign (fockDegree K) = degreeParitySign k := by
-        rw [hdeg, degreeParitySign_complement k hk]
-      have hsign'' : complementOrientation T * carAnnihilate r S (insertRole S r) =
-          degreeParitySign k * complementOrientation K * carCreate r T K := by
-        rw [← hparity] at hsign'
-        linear_combination degreeParitySign_sq (fockDegree K) *
-          (carAnnihilate r S (insertRole S r) * complementOrientation T)
-      rw [hstarPlus, hstarAt, hsign'']
-      ring
-    · have hdegK : fockDegree (insertRole S r) = 4 - fockDegree K := by
-        rw [← hcompK, degree_complement]
-      have hnot : fockDegree (insertRole S r) ≠ k := by
-        rw [hdegK]
+    have hstarPlus : locatedPrimalStarCoeff N ψ (y + roleStep N r, K) =
+        complementOrientation (occupationComplement K) *
+          ψ (x, occupationComplement K) := by
+      rw [locatedPrimalStarCoeff, hxplus]
+    have hstarHere : locatedPrimalStarCoeff N ψ (y, K) =
+        complementOrientation (occupationComplement K) *
+          ψ (x - roleStep N r, occupationComplement K) := by
+      rw [locatedPrimalStarCoeff, hxminus]
+    rw [hstarPlus, hstarHere, hcompK]
+    by_cases hdeg : fockDegree (insertRole S r) = k
+    · have hdegK : fockDegree K = 4 - k := by
+        have hle : fockDegree K ≤ 4 := fockDegree_le_four K
+        have hcomp := degree_complement K
+        rw [hcompK, hdeg] at hcomp
         omega
-      have hzero₁ : ψ (x, insertRole S r) = 0 := hψ x _ hnot
-      have hzero₂ : ψ (x - roleStep N r, insertRole S r) = 0 := hψ _ _ hnot
-      rw [hstarPlus, hstarAt, hzero₁, hzero₂]
-      simp
-  · have hSr : S r = false := by
-      simpa [S, occupationComplement] using hTr
+      have hsign := located_codifferential_sign T r hTr
+      have hpar : degreeParitySign (fockDegree K) = degreeParitySign k := by
+        rw [hdegK, degreeParitySign_complement k hk]
+      rw [hpar] at hsign
+      simp only [T, S, show removeRole T r = K from rfl, hcompK] at hsign
+      linear_combination hsign * (forwardDifferenceScale N *
+        (ψ (x - roleStep N r, insertRole S r) - ψ (x, insertRole S r)))
+    · have hzero₁ : ψ (x, insertRole S r) = 0 := hψ x _ hdeg
+      have hzero₂ : ψ (x - roleStep N r, insertRole S r) = 0 := hψ _ _ hdeg
+      rw [hzero₁, hzero₂]
+      ring
+  · have hTfalse : T r = false := by
+      cases hval : T r
+      · rfl
+      · exact (hTr hval).elim
+    have hStrue : S r = true := by simp [S, occupationComplement, hTfalse]
     have hcreate : carCreate r T (removeRole T r) = 0 := by
       by_cases hc : carCreate r T (removeRole T r) = 0
       · exact hc
-      · have hfalse := (carCreate_support r T (removeRole T r) hc).1
-        rw [hTr] at hfalse
-        cases hfalse
+      · have hpos := (carCreate_support r T (removeRole T r) hc).1
+        rw [hTfalse] at hpos
+        cases hpos
     have hann : carAnnihilate r S (insertRole S r) = 0 := by
       by_cases hc : carAnnihilate r S (insertRole S r) = 0
       · exact hc
-      · have htrue := (carAnnihilate_support r S (insertRole S r) hc).2.1
-        exact (hSr htrue).elim
+      · have hneg := (carAnnihilate_support r S (insertRole S r) hc).2.1
+        rw [hStrue] at hneg
+        cases hneg
     rw [hcreate, hann]
-    simp
+    simp [locatedPrimalStarCoeff]
 
+theorem locatedStar_dirac_chirality_homogeneousCoeff (N k : ℕ) (hk : k ≤ 4)
+    (ψ : ArchiveCochain N) (hψ : HomogeneousCochain N k ψ) :
+    locatedPrimalStarCoeff N (hodgeCarDirac N ψ) =
+      applyChirality N
+        (dualPositiveIncidenceCoeff N (applyChirality N (locatedPrimalStarCoeff N ψ)) +
+          dualIncidenceAdjointCoeff N (applyChirality N (locatedPrimalStarCoeff N ψ))) := by
+  have hJ : HomogeneousCochain N (4 - k) (locatedPrimalStarCoeff N ψ) :=
+    locatedPrimalStarCoeff_homogeneous N k ψ hψ
+  have hdJ : HomogeneousCochain N (5 - k)
+      (dForward N (locatedPrimalStarCoeff N ψ)) := by
+    have h := dForward_degree_raise N (4 - k) (locatedPrimalStarCoeff N ψ) hJ
+    have heq : (4 - k) + 1 = 5 - k := by omega
+    simpa [heq] using h
+  have hδJ : HomogeneousCochain N (3 - k)
+      (hodgeCodifferential N (locatedPrimalStarCoeff N ψ)) := by
+    by_cases hk4 : k = 4
+    · subst k
+      have hJ0 : HomogeneousCochain N 0 (locatedPrimalStarCoeff N ψ) := by simpa using hJ
+      rw [hodgeCodifferential_degree_zero N _ hJ0]
+      intro x S hS
+      rfl
+    · have h1 : 1 ≤ 4 - k := by omega
+      have h := hodgeCodifferential_degree_lower N (4 - k) h1
+        (locatedPrimalStarCoeff N ψ) hJ
+      have heq : (4 - k) - 1 = 3 - k := by omega
+      simpa [heq] using h
+  have hχJ : applyChirality N (locatedPrimalStarCoeff N ψ) =
+      chiralitySign (4 - k) • locatedPrimalStarCoeff N ψ :=
+    applyChirality_homogeneous N (4 - k) _ hJ
+  rw [locatedPrimalStarCoeff_hodge,
+    locatedStar_intertwines_forwardCoeff N k hk ψ hψ,
+    locatedStar_intertwines_codifferentialCoeff N k hk ψ hψ,
+    incidenceDegreeSign_eq_neg_parity,
+    dualPositiveIncidenceCoeff_eq_dForwardCoeff, dualIncidenceAdjointCoeff_eq_hodgeCodifferentialCoeff,
+    applyChirality_add, hχJ, dForward_smul, hodgeCodifferential_smul,
+    applyChirality_smul, applyChirality_smul,
+    applyChirality_homogeneous N (5 - k) _ hdJ,
+    applyChirality_homogeneous N (3 - k) _ hδJ]
+  by_cases hk4 : k = 4
+  · subst k
+    have hJ0 : HomogeneousCochain N 0 (locatedPrimalStarCoeff N ψ) := by simpa using hJ
+    rw [hodgeCodifferential_degree_zero N _ hJ0]
+    have hp : degreeParitySign 4 = 1 := by norm_num [degreeParitySign]
+    have hc : chiralitySign 0 * chiralitySign 1 = 1 := by norm_num [chiralitySign]
+    simp only [smul_smul]
+    rw [hp, hc]
+    funext p
+    simp only [Pi.add_apply, Pi.smul_apply, Pi.zero_apply, smul_eq_mul]
+    ring
+  · have hk3 : k ≤ 3 := by omega
+    have hcoeffD : chiralitySign (4 - k) * chiralitySign (5 - k) =
+        degreeParitySign k := by
+      interval_cases k <;> norm_num [chiralitySign, degreeParitySign]
+    have hcoeffδ : chiralitySign (4 - k) * chiralitySign (3 - k) =
+        -degreeParitySign k := by
+      interval_cases k <;> norm_num [chiralitySign, degreeParitySign] at *
+    simp only [smul_smul]
+    rw [hcoeffD, hcoeffδ]
+    funext p
+    simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul]
+    ring
+
+theorem locatedDualStarCoeff_homogeneous (N k : ℕ) (φ : ArchiveCochain N)
+    (hφ : HomogeneousCochain N k φ) :
+    HomogeneousCochain N (4 - k) (locatedDualStarCoeff N φ) := by
+  intro x S hS
+  have hpre : fockDegree (occupationComplement S) ≠ k := by
+    intro hk
+    have hcomp := degree_complement S
+    have hle := fockDegree_le_four S
+    have hdeg : fockDegree S = 4 - k := by
+      rw [hk] at hcomp
+      omega
+    exact hS hdeg
+  simp only [locatedDualStarCoeff]
+  rw [hφ _ _ hpre]
+  ring
+
+/-!
+Typed primal and dual cochains. The coefficient formulas above are the
+calculations. The operators in this section do not identify the two colors.
+-/
+
+noncomputable section
+
+def locatedPrimalStar (N : ℕ) (ψ : PrimalCochain N) : DualCochain N :=
+  ⟨locatedPrimalStarCoeff N ψ.coeff⟩
+
+def locatedDualStar (N : ℕ) (φ : DualCochain N) : PrimalCochain N :=
+  ⟨locatedDualStarCoeff N φ.coeff⟩
+
+def primalForward (N : ℕ) (ψ : PrimalCochain N) : PrimalCochain N :=
+  ⟨dForward N ψ.coeff⟩
+
+def primalCodifferential (N : ℕ) (ψ : PrimalCochain N) : PrimalCochain N :=
+  ⟨hodgeCodifferential N ψ.coeff⟩
+
+def primalDirac (N : ℕ) (ψ : PrimalCochain N) : PrimalCochain N :=
+  primalForward N ψ + primalCodifferential N ψ
+
+def dualPositiveIncidence (N : ℕ) (ψ : DualCochain N) : DualCochain N :=
+  ⟨dualPositiveIncidenceCoeff N ψ.coeff⟩
+
+def dualIncidenceAdjoint (N : ℕ) (ψ : DualCochain N) : DualCochain N :=
+  ⟨dualIncidenceAdjointCoeff N ψ.coeff⟩
+
+def dualDirac (N : ℕ) (ψ : DualCochain N) : DualCochain N :=
+  dualPositiveIncidence N ψ + dualIncidenceAdjoint N ψ
+
+def parityPrimal (N : ℕ) (ψ : PrimalCochain N) : PrimalCochain N :=
+  ⟨parityCochain N ψ.coeff⟩
+
+def parityDual (N : ℕ) (φ : DualCochain N) : DualCochain N :=
+  ⟨parityCochain N φ.coeff⟩
+
+def primalRoleTransport {N : ℕ} (σ : Equiv.Perm Role) (ψ : PrimalCochain N) :
+    PrimalCochain N :=
+  ⟨diagonalRoleTransport σ ψ.coeff⟩
+
+def dualRoleTransport {N : ℕ} (σ : Equiv.Perm Role) (φ : DualCochain N) :
+    DualCochain N :=
+  ⟨diagonalRoleTransport σ φ.coeff⟩
+
+def chiralityPrimal (N : ℕ) (ψ : PrimalCochain N) : PrimalCochain N :=
+  ⟨applyChirality N ψ.coeff⟩
+
+def chiralityDual (N : ℕ) (φ : DualCochain N) : DualCochain N :=
+  ⟨applyChirality N φ.coeff⟩
+
+theorem locatedStar_square_homogeneous (N k : ℕ) (hk : k ≤ 4)
+    (ψ : PrimalCochain N) (hψ : HomogeneousCochain N k ψ.coeff) :
+    locatedDualStar N (locatedPrimalStar N ψ) = koszulDegreeSign k • ψ := by
+  apply PrimalCochain.ext
+  simpa [locatedDualStar, locatedPrimalStar] using
+    locatedStar_square_homogeneousCoeff N k hk ψ.coeff hψ
+
+theorem locatedStar_square_l2 (k : ℕ) (hk : k ≤ 4) (ψ : PrimalCochain 0)
+    (hψ : HomogeneousCochain 0 k ψ.coeff) :
+    locatedDualStar 0 (locatedPrimalStar 0 ψ) = koszulDegreeSign k • ψ :=
+  locatedStar_square_homogeneous 0 k hk ψ hψ
+
+theorem locatedStar_square_l3 (k : ℕ) (hk : k ≤ 4) (ψ : PrimalCochain 1)
+    (hψ : HomogeneousCochain 1 k ψ.coeff) :
+    locatedDualStar 1 (locatedPrimalStar 1 ψ) = koszulDegreeSign k • ψ :=
+  locatedStar_square_homogeneous 1 k hk ψ hψ
+
+theorem locatedStar_square_l5 (k : ℕ) (hk : k ≤ 4) (ψ : PrimalCochain 3)
+    (hψ : HomogeneousCochain 3 k ψ.coeff) :
+    locatedDualStar 3 (locatedPrimalStar 3 ψ) = koszulDegreeSign k • ψ :=
+  locatedStar_square_homogeneous 3 k hk ψ hψ
+
+theorem locatedStar_commutes_fockParity (N : ℕ) (ψ : PrimalCochain N) :
+    parityDual N (locatedPrimalStar N ψ) =
+      locatedPrimalStar N (parityPrimal N ψ) := by
+  apply DualCochain.ext
+  simpa [parityDual, locatedPrimalStar, parityPrimal] using
+    locatedStar_commutes_fockParityCoeff N ψ.coeff
+
+theorem dualIncidenceAdjoint_pairing (N : ℕ) (ψ φ : DualCochain N) :
+    cochainPairing N (dualPositiveIncidence N ψ).coeff φ.coeff =
+      cochainPairing N ψ.coeff (dualIncidenceAdjoint N φ).coeff := by
+  simpa [dualPositiveIncidence, dualIncidenceAdjoint] using
+    dualIncidenceAdjointCoeff_pairingCoeff N ψ.coeff φ.coeff
+
+theorem locatedStar_intertwines_forward (N k : ℕ) (hk : k ≤ 4)
+    (ψ : PrimalCochain N) (hψ : HomogeneousCochain N k ψ.coeff) :
+    locatedPrimalStar N (primalForward N ψ) =
+      incidenceDegreeSign k • dualIncidenceAdjoint N (locatedPrimalStar N ψ) := by
+  apply DualCochain.ext
+  simp only [locatedPrimalStar, primalForward, dualIncidenceAdjoint]
+  rw [dualIncidenceAdjointCoeff_eq_hodgeCodifferentialCoeff]
+  exact locatedStar_intertwines_forwardCoeff N k hk ψ.coeff hψ
+
+theorem locatedStar_intertwines_codifferential (N k : ℕ) (hk : k ≤ 4)
+    (ψ : PrimalCochain N) (hψ : HomogeneousCochain N k ψ.coeff) :
+    locatedPrimalStar N (primalCodifferential N ψ) =
+      degreeParitySign k • dualPositiveIncidence N (locatedPrimalStar N ψ) := by
+  apply DualCochain.ext
+  show locatedPrimalStarCoeff N (hodgeCodifferential N ψ.coeff) =
+      degreeParitySign k •
+        dualPositiveIncidenceCoeff N (locatedPrimalStarCoeff N ψ.coeff)
+  rw [dualPositiveIncidenceCoeff_eq_dForwardCoeff]
+  exact locatedStar_intertwines_codifferentialCoeff N k hk ψ.coeff hψ
+
+theorem locatedStar_role_pseudoequivariant (N : ℕ) (σ : Equiv.Perm Role)
+    (ψ : PrimalCochain N) :
+    locatedPrimalStar N (primalRoleTransport σ ψ) =
+      ((Equiv.Perm.sign σ : ℤ) : ℝ) •
+        dualRoleTransport σ (locatedPrimalStar N ψ) := by
+  apply DualCochain.ext
+  simpa [locatedPrimalStar, primalRoleTransport, dualRoleTransport] using
+    locatedStar_role_pseudoequivariantCoeff N σ ψ.coeff
+
+theorem locatedStar_swapAB (N : ℕ) (ψ : PrimalCochain N) :
+    locatedPrimalStar N (primalRoleTransport (Equiv.swap D0.A D0.B) ψ) =
+      -dualRoleTransport (Equiv.swap D0.A D0.B) (locatedPrimalStar N ψ) := by
+  apply DualCochain.ext
+  simpa [locatedPrimalStar, primalRoleTransport, dualRoleTransport] using
+    locatedStar_swapABCoeff N ψ.coeff
+
+theorem locatedStar_even_cycle (N : ℕ) (ψ : PrimalCochain N) :
+    locatedPrimalStar N (primalRoleTransport evenRoleCycle ψ) =
+      dualRoleTransport evenRoleCycle (locatedPrimalStar N ψ) := by
+  apply DualCochain.ext
+  simpa [locatedPrimalStar, primalRoleTransport, dualRoleTransport] using
+    locatedStar_even_cycleCoeff N ψ.coeff
+
+/-- `J D_P J⁻¹ = χ D_D χ⁻¹` on a homogeneous dual cochain.
+`J⁻¹` is `koszul • ⋆_DP`, and `χ⁻¹ = χ`. -/
+theorem locatedStar_dirac_chirality (N k : ℕ) (hk : k ≤ 4)
+    (ξ : DualCochain N) (hξ : HomogeneousCochain N k ξ.coeff) :
+    locatedPrimalStar N (primalDirac N
+        (koszulDegreeSign k • locatedDualStar N ξ)) =
+      chiralityDual N (dualDirac N (chiralityDual N ξ)) := by
+  apply DualCochain.ext
+  have hrev := locatedStar_square_reverse N k hk ξ.coeff hξ
+  have hdeg : HomogeneousCochain N (4 - k) (locatedDualStarCoeff N ξ.coeff) :=
+    locatedDualStarCoeff_homogeneous N k ξ.coeff hξ
+  have hpre : HomogeneousCochain N (4 - k)
+      (koszulDegreeSign k • locatedDualStarCoeff N ξ.coeff) := by
+    intro x S hS
+    simp [hdeg x S hS, Pi.smul_apply, smul_eq_mul]
+  have htrans := locatedStar_dirac_chirality_homogeneousCoeff N (4 - k) (by omega)
+      (koszulDegreeSign k • locatedDualStarCoeff N ξ.coeff) hpre
+  have hback : locatedPrimalStarCoeff N (locatedDualStarCoeff N ξ.coeff) =
+      koszulDegreeSign k • ξ.coeff := hrev
+  -- J (κ • R ξ) = κ • (J R ξ) = κ • κ ξ = ξ
+  have hJpre : locatedPrimalStarCoeff N
+      (koszulDegreeSign k • locatedDualStarCoeff N ξ.coeff) = ξ.coeff := by
+    rw [locatedPrimalStarCoeff_smul, hback, smul_smul, koszulDegreeSign_eq_parity k hk,
+      degreeParitySign_sq, one_smul]
+  rw [hJpre] at htrans
+  -- The transport theorem's right-hand side still has χ (J (κ R ξ)) = χ ξ,
+  -- and D_D is linear, so the scalar κ² disappears.
+  simpa [locatedPrimalStar, primalDirac, primalForward, primalCodifferential,
+    chiralityDual, dualDirac, dualPositiveIncidence, dualIncidenceAdjoint,
+    locatedDualStar, hJpre] using htrans
+
+end
 
 end D0.Geometry
