@@ -61,17 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "WRK-A4D-OBSERVER-FRAME-CAR-LIFT",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The generic exterior/frame/observer/link substrate and functorial exterior lift of owned PR #70 path transport are Lean-owned, including generic composition/inverse, observer positivity/adjoints, transported-center repair, covariant link differential with flat dForward/D_H limits, located-J boundary and pointwise/Nyquist obstructions; the crossed constitutive representation remains explicit research-owned work.",
-      "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
-    },
-    {
       "id": "EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",

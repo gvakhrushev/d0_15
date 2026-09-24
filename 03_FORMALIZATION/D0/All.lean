@@ -284,15 +284,19 @@ import D0.Geometry.A4DDiscreteEnergyKernel
 import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DLocalReverseStarNoGo
+import D0.Geometry.A4DLocatedFrameCompatibilityBoundary
 import D0.Geometry.A4DLocatedMatterCellEnergy
 import D0.Geometry.A4DLocatedPrimalDualCell
 import D0.Geometry.A4DLocatedTopologicalStar
+import D0.Geometry.A4DMetricStarSignatureBoundary
 import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DMovingDifferentialSecondJet
+import D0.Geometry.A4DObserverPositiveExterior
 import D0.Geometry.A4DPathCovariantHodge
 import D0.Geometry.A4DPathResolvedComparisonBoundary
 import D0.Geometry.A4DPathWordParentWard
 import D0.Geometry.A4DPrimalDualCellPairing
+import D0.Geometry.A4DRawSolderFrameAction
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DRoleSpatialRepresentationWeld
 import D0.Geometry.A4DScalarAdvectiveGroupoidObstruction
@@ -308,6 +312,7 @@ import D0.Geometry.Archive1Dto4DRGLiftNoGo
 import D0.Geometry.Archive4DCurvaturePerturbationBridge
 import D0.Geometry.ArchiveActionFunctional
 import D0.Geometry.ArchiveAffineCartanConnection
+import D0.Geometry.ArchiveAffineExteriorLink
 import D0.Geometry.ArchiveBianchiIdentity
 import D0.Geometry.ArchiveCARAssociativeEnvelope
 import D0.Geometry.ArchiveCARDegreePreserving
@@ -329,6 +334,8 @@ import D0.Geometry.ArchiveCurvatureObstruction
 import D0.Geometry.ArchiveDiagonalRoleTransport
 import D0.Geometry.ArchiveDiracPseudoinverse
 import D0.Geometry.ArchiveEnumerationSpectrumWeyl4NoGo
+import D0.Geometry.ArchiveExteriorFrameLift
+import D0.Geometry.ArchiveExteriorPathTransport
 import D0.Geometry.ArchiveExtrinsicRGCurvature
 import D0.Geometry.ArchiveFieldEquation
 import D0.Geometry.ArchiveFiniteCartanLieClosureNoGo
