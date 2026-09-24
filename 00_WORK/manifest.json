@@ -85,19 +85,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-GOLDEN-CARRIER-WELD-BOUNDARY.md"
     },
     {
-      "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-ARCHIVE-LAPLACIAN-RG",
-        "D0-PERRON-SCALE-FLOW-OWNER-001",
-        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
-      ],
-      "exit_condition": "Finite-dimensional A_k-C(B_n) correspondences are classified by explicit multiplicity data and their AF/Role-phase refinement equations either derive a canonical Role-compatible index/comparison law or identify the earliest additional action/index primitive without ad-hoc Fibonacci period insertion.",
-      "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE.md"
-    },
-    {
       "id": "WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
