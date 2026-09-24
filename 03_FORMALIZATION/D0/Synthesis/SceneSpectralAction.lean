@@ -75,6 +75,19 @@ def ρ1 : Fin 33 → ℝ := fun _ => 1
 
 theorem ρ1_pos : ∀ i, ρ1 i > 0 := fun _ => by unfold ρ1; norm_num
 
+/-- On the owned scene spectral-action instantiation the A1 edge weight is exactly Euclidean:
+`1 / (ρ_i ρ_j) = 1` for every vertex pair. -/
+theorem ρ1_inverse_edge_weight_eq_one (i j : Fin 33) :
+    1 / (ρ1 i * ρ1 j) = 1 := by
+  simp [ρ1]
+
+/-- The C1 middle-sector weighted polar discriminant is strictly positive for the
+owned unit scene weight; in fact it is exactly `13 - 9 = 4`. -/
+theorem ρ1_c1_middle_polar_discriminant (i j : Fin 33) :
+    13 * ρ1 i - 9 * ρ1 j = 4 := by
+  norm_num [ρ1]
+
+
 /-- The scene Laplacian is symmetric. -/
 theorem Lr_symm : ∀ i j, Lr i j = Lr j i := by
   intro i j
