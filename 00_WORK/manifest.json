@@ -99,7 +99,7 @@
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "PLANNED",
       "affected_claims": [
-        "D0-ARCHIVE-LAPLACIAN-RG-001",
+        "D0-ARCHIVE-LAPLACIAN-RG",
         "D0-PERRON-SCALE-FLOW-OWNER-001",
         "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
       ],
