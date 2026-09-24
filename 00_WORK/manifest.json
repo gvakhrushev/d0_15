@@ -59,17 +59,6 @@
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
-    },
-    {
-      "id": "EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "One fixed-N positive elementary matter letter is constructed or terminally classified on an explicit site-aware carrier: its products define the labelled word action, its linear limit is PR #103 exterior transport, its affine translation channel is resolved, its global assembly has first derivative equal to the complete owned H(e), its exact descended cycle/plaquette relations linearize to PR #108, and its L=2 endpoint descent obeys the exact labelled period; otherwise the earliest failed L/E/B channel coupling is identified without reopening Q, S, K, stress, Einstein, physical time or golden refinement.",
-      "brief": "00_WORK/tasks/EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK.md"
     }
   ]
 }
