@@ -408,28 +408,19 @@ theorem energy_riesz_unique (N k : ℕ) (hk : k ≤ 4)
     exact sub_eq_zero.mp
       ((algebraicComplementPairing_perfect N k hk).2 (z' - z) hzero)
 
-/-! ## Supplied geometric placement data (no canonical instance) -/
+/-! ## Center-matching negative control, without a located-star owner -/
 
-/-- Data required to turn algebraic complementary labels into located dual cells. -/
-structure GeometryDualPlacement (N k : ℕ) where
-  targetSite : ArchiveRolePhaseGroup N → ArchiveFockState → ArchiveRolePhaseGroup N
-  orientationCoefficient : ArchiveRolePhaseGroup N → ArchiveFockState → ℝ
-  dualIncidence : ArchiveRolePhaseGroup N → ArchiveFockState → ℝ
-  localVolume : Option (ArchiveRolePhaseGroup N → ArchiveFockState → ℝ) := none
+/-- Cardinality-only ansatz. It is deliberately a negative control, not a dual-star rule. -/
+def cardinalityOnlyPlacementControl (N : ℕ) :
+    ArchiveRolePhaseGroup N → ArchiveFockState → ArchiveRolePhaseGroup N :=
+  fun x _ => x
 
-/-- First local placement: keep the archive site. -/
-def identityDualPlacement (N k : ℕ) : GeometryDualPlacement N k where
-  targetSite x _ := x
-  orientationCoefficient _ S := complementOrientation S
-  dualIncidence _ _ := 1
-  localVolume := none
-
-/-- Second local placement: translate the target by one role edge. -/
-def shiftedDualPlacement (N k : ℕ) : GeometryDualPlacement N k where
-  targetSite x _ := roleTranslatePlus N D0.A x
-  orientationCoefficient _ S := complementOrientation S
-  dualIncidence _ _ := 1
-  localVolume := none
+/-- Necessary center-matching clause of the independently classified reference rule,
+on the primal label whose complement is the singleton `A`. -/
+def CenterMatchedAtAComplement (N : ℕ)
+    (targetSite : ArchiveRolePhaseGroup N → ArchiveFockState → ArchiveRolePhaseGroup N) : Prop :=
+  ∀ x, targetSite x (occupationComplement (fockSingletonState D0.A)) =
+    roleTranslateMinus N D0.A x
 
 /-- A role edge is nonzero whenever the archive cycle has at least three sites. -/
 theorem roleStep_A_ne_zero_of_three_le (N : ℕ) (hN : 3 ≤ archiveFibers N) :
@@ -446,21 +437,15 @@ theorem roleStep_A_ne_zero_of_three_le (N : ℕ) (hN : 3 ≤ archiveFibers N) :
     omega
   exact hone hval
 
-/-- The two rules have the same primal and complementary carrier cardinalities. -/
-theorem placement_carrier_cardinalities_equal (N k : ℕ) :
-    Fintype.card (ArchiveRolePhaseGroup N × ArchiveFockState) =
-      Fintype.card (ArchiveRolePhaseGroup N × ArchiveFockState) := rfl
-
-/-- Equal carrier cardinality does not identify a located dual-cell placement. -/
-theorem same_cardinality_does_not_provide_placement (N k : ℕ)
+/-- The cardinality-only ansatz fails the independent reference center condition. -/
+theorem cardinalityOnlyPlacementControl_fails_center_match (N : ℕ)
     (hN : 3 ≤ archiveFibers N) :
-    identityDualPlacement N k ≠ shiftedDualPlacement N k := by
+    ¬ CenterMatchedAtAComplement N (cardinalityOnlyPlacementControl N) := by
   intro h
-  have hsite := congrArg
-    (fun P : GeometryDualPlacement N k => P.targetSite 0 fockVacuumState) h
+  have hsite := h 0
   have hstep : roleStep N D0.A = 0 := by
-    simpa [identityDualPlacement, shiftedDualPlacement, roleTranslatePlus,
-      roleTranslate] using hsite.symm
+    simpa [CenterMatchedAtAComplement, cardinalityOnlyPlacementControl,
+      roleTranslateMinus, roleTranslate] using hsite.symm
   exact roleStep_A_ne_zero_of_three_le N hN hstep
 
 end D0.Geometry

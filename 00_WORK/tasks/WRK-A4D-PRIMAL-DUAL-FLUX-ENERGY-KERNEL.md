@@ -10,7 +10,7 @@ WORKER / LARGE LEAN FORMALIZATION
 
 ## State
 
-IN_PROGRESS
+REVIEW
 
 ## Canonical baseline
 
