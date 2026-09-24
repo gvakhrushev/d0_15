@@ -52,7 +52,7 @@ The following are frozen current inputs to this CONTROL lane:
 Current frontier labels:
 
 ```text
-LOCATED-DUAL-PAIRING-FIXED-NONLINEAR-CELL-ENERGY-LAW-MISSING
+COMMON-CENTER-CELL-ACTION-NEW-PRIMITIVE-REQUIRED
 FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING
 ```
 
@@ -63,11 +63,21 @@ WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL  (#75)
 WRK-A4D-LOCATED-PRIMAL-DUAL-STAR        (#76)
 ```
 
-Remaining critical worker lane:
+Current formalization lanes:
 
 ```text
 MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
 → WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD
+
+MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
+→ WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION
+```
+
+The new research lane is intentionally NOT blocked by those workers:
+
+```text
+MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
+→ EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW
 ```
 
 Parallel physical worker lane:
@@ -119,16 +129,29 @@ Frame-lift research is terminal `FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`. 
 
 Second-order research is terminal `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`. The exact two-jet identities, scoped background-independent representation no-go, constants-preserving rejection of c=1,2, groupoid second-jet equations and transverse Hessian modulus now pass to `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD`.
 
-### Nonlinear cell law
+### Common-center matter action
 
-The located-star/cell-action research exhibits at least two strict single-cell reference kernels with the same full first jet:
+The durable packet `MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md` sharpens the nonlinear frontier.
+
+Within the output-site-local scalar class, exact groupoid composition forces
 
 ```text
-W1 = I + H + M_q
-W2 = I + H + 2 M_q
+(D_e g_xi)_0[h] = - M_xi H_0(h) D
+K_xi = M_(xi^2) D^2
 ```
 
-Nyquist and the distance-two corner do not select between them. The reference pair also fails a naive fixed-counting Lorentz boost test. A physical selector must come from a derived frame/observer/action law or an explicit constitutive measure/energy identity.
+and the induced Hessian has unavoidable same-axis distance-two entries, excluding a direct elementary-cell invariant energy in that scoped class.
+
+For general scalar lifts, the remaining flat comparison freedom is
+
+```text
+B(xi,h) = B_adv(xi,h) + S(h_xi,h)
+S : Sym^2(im d_f) -> End(C^0)
+```
+
+with strict cell support already forcing nontrivial distance-two components of `S+S^T`. The graded pure-gauge benchmark reproduces all blocks of `H(d_f xi)`, including Nyquist/corner, but does not extend to arbitrary uncentered coframes, harmonic strain or boosted raw solder backgrounds.
+
+Therefore the earliest live primitive is no longer a generic Hodge selector: it is a geometric endpoint/common-center comparison jet `S` together with a finite overlap-composition law. `WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION` formalizes the new scalar theorem-ready core while `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW` continues the research immediately.
 
 ### Stress/source
 
@@ -172,6 +195,6 @@ This control closes the current research/formalization gate when:
 2. the complete first jet `DW|_0 = H` / flux-energy kernel is Lean-owned;
 3. `D^2W|_0` and the matter second-jet boundary are either classified or terminally no-go;
 4. the frame/CAR lift is independently classified in its parallel lane;
-5. the remaining nonlinear cell-energy freedom is named exactly rather than hidden inside a generic “Hodge selector”.
+5. the common-center endpoint-comparison freedom is named exactly as the comparison jet `S` plus its missing finite overlap-composition law, rather than hidden inside a generic “Hodge selector”.
 
 Provenance-bearing stress/source and continuum Lorentz/Einstein promotion remain downstream gates; this CONTROL must not claim them closed merely because the current constitutive seam is classified.

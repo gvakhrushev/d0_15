@@ -5,9 +5,9 @@
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Active | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
-| WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **2** | **2** | **0** | **0** | **4** | **2 / 10** |
+| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
+| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
+| **Total** | **4** | **2** | **0** | **0** | **6** | **2 / 10** |
 
 ## Active Tasks
 
@@ -17,6 +17,8 @@
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-OBSERVER-FRAME-CAR-LIFT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
+| WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
+| EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
