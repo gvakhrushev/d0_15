@@ -16,6 +16,7 @@ import json
 import os
 import pathlib
 import re
+import subprocess
 import sys
 import tempfile
 from typing import Any
@@ -68,6 +69,33 @@ def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
     brief_path = root / "00_WORK" / "tasks" / f"{task_id}.md"
 
     if is_draft:
+        if event.get("action") == "opened":
+            base_sha = ((pr.get("base") or {}).get("sha") or "").strip()
+            head_sha = ((pr.get("head") or {}).get("sha") or "").strip()
+            if base_sha and head_sha:
+                diff = subprocess.run(
+                    ["git", "diff", "--name-only", base_sha, head_sha],
+                    cwd=root,
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                )
+                allowed_open = {
+                    "00_WORK/manifest.json",
+                    "00_WORK/STATUS.md",
+                    "README.md",
+                }
+                premature = [
+                    p.strip()
+                    for p in diff.stdout.splitlines()
+                    if p.strip() and p.strip() not in allowed_open
+                ]
+                if premature:
+                    raise ContractError(
+                        "Draft PR must be opened before implementation/research work; "
+                        f"premature files at open: {', '.join(premature)}"
+                    )
+
         if lifecycle not in {"IN_PROGRESS", "BLOCKED"}:
             raise ContractError(
                 f"draft PR #{number} must declare Lifecycle: IN_PROGRESS or BLOCKED, got {lifecycle}"
