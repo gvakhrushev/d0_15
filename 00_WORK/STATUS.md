@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
-| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **2** | **2** | **0** | **0** | **4** | **2 / 10** |
+| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
+| **Total** | **4** | **2** | **0** | **0** | **6** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -19,6 +19,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | WRK-A4D-OBSERVER-FRAME-CAR-LIFT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 | EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
+| WRK-A4D-ENDPOINT-OVERLAP-COMPARISON-BOUNDARY | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
+| WRK-A4D-GOLDEN-RG-DEFECT-INTERFACE | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-ARCHIVE-LAPLACIAN-RG-001; D0-PERRON-SCALE-FLOW-OWNER-001; D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001 |
 
 ## Registry Health & Metrics
 
