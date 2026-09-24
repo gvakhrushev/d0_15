@@ -6,7 +6,7 @@ EXPENSIVE / DEEP RESEARCH
 
 ## Parent
 
-`CTRL-GRAVITY-DYNAMICS-CLOSURE`
+\`CTRL-GRAVITY-DYNAMICS-CLOSURE\`
 
 ## State
 
@@ -14,325 +14,531 @@ PLANNED
 
 ## Start gate
 
-SATISFIED on current `main` after merged PR #103, PR #107 and PR #108.
+SATISFIED on current \`main\` after merged PR #103, PR #107 and PR #108.
 
-The two parallel workers
+The parallel workers
 
-- `WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT`;
-- `WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS`
+- \`WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT\`;
+- \`WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS\`
 
-may run concurrently. Do not wait for them. Treat their statements as theorem-ready until merged.
+may run concurrently. Do not wait for them. Treat their target statements as theorem-ready until merged, and replace research restatements with literal Lean owners if they land during this task.
 
-Read completely:
+## Read first
 
-- `02_REGISTRY/research/MEMO_A4D_PATH_GROUPOID_CROSSED_MATTER_LIFT.md`;
-- `02_REGISTRY/research/MEMO_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md`;
-- `02_REGISTRY/research/MEMO_A4D_CROSSED_CONSTITUTIVE_REPRESENTATION.md`;
-- `03_FORMALIZATION/D0/Geometry/ArchiveExteriorPathTransport.lean`;
-- `03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean`;
-- `03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean`;
-- `03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean`;
-- `03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean`;
-- `03_FORMALIZATION/D0/Geometry/A4DLocatedFrameCompatibilityBoundary.lean`;
-- `03_FORMALIZATION/D0/Geometry/A4DCrossedDerivationIntegrability.lean`;
-- PR #70 path/affine Cartan owners;
-- PR #101/#102 crossed first-jet/path-expression owners.
+Read completely, in this order:
 
-## Frozen boundary
+1. \`02_REGISTRY/research/SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL.md\`;
+2. \`02_REGISTRY/research/MEMO_A4D_PATH_GROUPOID_CROSSED_MATTER_LIFT.md\`;
+3. \`02_REGISTRY/research/MEMO_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md\`;
+4. \`02_REGISTRY/research/MEMO_A4D_CROSSED_CONSTITUTIVE_REPRESENTATION.md\`;
+5. \`03_FORMALIZATION/D0/Geometry/ArchiveExteriorPathTransport.lean\`;
+6. \`03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean\`;
+7. \`03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean\`;
+8. \`03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean\`;
+9. \`03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean\`;
+10. \`03_FORMALIZATION/D0/Geometry/A4DLocatedFrameCompatibilityBoundary.lean\`;
+11. \`03_FORMALIZATION/D0/Geometry/A4DCrossedDerivationIntegrability.lean\`;
+12. PR #70 affine/path owners;
+13. PR #101/#102 crossed first-jet/path-expression owners.
 
-The repository now owns:
+## Updated research thesis
 
-1. exact affine path geometry and free path words;
-2. exact exterior/frame/observer lift of the **linear** path transport on the existing 16-state Fock carrier;
-3. full uncentered first jet `H(e)` as a finite additive path-expression with CAR blocks;
-4. scalar crossed first-jet integrability constraints in the compressed endpoint algebra;
-5. a free-path descent/holonomy classification showing that generic curl/harmonic data must remain path-resolved unless holonomy trivializes;
-6. fixed located `J` and its shifted-anchor boundary.
+Do **not** reopen the problem as:
 
-The earliest missing datum is therefore no longer "some comparison law" in the abstract.
+- choose \(Q(e)\);
+- choose a scalar coefficient;
+- choose \(\mathcal S\);
+- choose a universal \(K\);
+- invent an abstract \(C_N\) and only later ask what one edge means.
 
-It is one explicit **site-aware affine-sensitive positive matter link**
+The surviving fixed-N object is one positive labelled elementary matter arrow
 
-```text
-ell_N^+(A,e,n; x,r)
-```
+\[
+\ell_N^+(A,e,n;x,r):
+V_{x+r}\xrightarrow{\sim}V_x,
+\]
 
-whose products define a free labelled path transport and whose assembled constitutive first derivative reproduces the already-owned full `H(e)`.
+or an explicitly typed site-corner/path-expression equivalent if one local fibre map is too small.
 
-The task must either construct such a link in a mathematically honest target, or identify the earliest additional primitive needed to do so.
+The negative arrow is the shifted inverse.
+
+The path transport
+
+\[
+\Pi_{A,e,n}(x;p)
+\]
+
+is **defined by the ordered product of these letters**. It is not an independent primitive.
+
+The constitutive/energy object \(W\) is an explicit global assembly/section transported by the same arrow/word structure. It is not a second selector.
+
+The heavy research problem is now:
+
+> integrate the already-owned tangent/path data into one finite elementary letter and one assembly law.
+
+## Frozen ownership
+
+The repository already owns:
+
+### Channel L — linear Cartan/exterior transport
+
+PR #103 owns the exterior/frame/observer lift of the **linear** affine Cartan path transport on the existing 16-state Fock carrier, including exact composition, inverse, observer form and frame covariance.
+
+The parallel blindness worker is formalizing the fact that this channel factors through the linear affine path part and is blind to a pure translation \((I,b)\).
+
+Do not ask again whether the existing exterior transport sees \(b\).
+
+### Channel E — raw coframe/constitutive tangent
+
+PR #75 owns the complete uncentered first jet \(H(e)\).
+
+PR #101 owns the exact pure-gauge chart.
+
+PR #102 owns the additive path-expression support of the first jet.
+
+PR #108 owns the scalar **infinitesimal descent constraints** for the landed first-jet law at \(L\ge3\):
+
+- zero cycle sum;
+- plaquette/closedness identity.
+
+These #108 equations are not yet an exact nonlinear theorem about the unknown finite letter. They are the tangent equations the finite descended relations of the letter must differentiate to.
+
+### Labelled word skeleton
+
+PR #107 research-classifies the free labelled path parent and the descent boundary.
+
+The labelled-path worker is formalizing:
+
+- exact empty/append/reverse/inverse;
+- endpoint independence iff trivial labelled holonomy;
+- the exact \(L=2\) parallel-slot period consequence.
+
+### Fixed-J boundary
+
+PR #103 plus existing located owners already fix the observer/frame substrate and the located anchor obstruction.
+
+The primal letter comes first. \(J\) only dualizes it afterward.
+
+## One letter, three channels
+
+The input \((A,e,n)\) contains three distinct mathematical roles.
+
+### L — linear Cartan channel
+
+Already owned.
+
+It supplies the exterior lift of the linear part of the affine link.
+
+### E — coframe amplitude / constitutive channel
+
+Owned only at tangent level.
+
+Its finite integration must be such that the global assembly has
+
+\[
+W_0=I,\qquad D_eW_0[e]=H(e).
+\]
+
+### B — affine translational/site channel
+
+Missing.
+
+This channel must make a pure affine translation \((I,b\ne0)\) visible somewhere in the elementary/site/path action if the claimed construction is affine-sensitive.
+
+The current fibre-only exterior channel cannot do that.
+
+### Critical rule
+
+Do **not** assume in advance that
+
+\[
+\ell^+=\ell_L\,\ell_E\,\ell_B
+\]
+
+with commuting factors.
+
+That is only one hypothesis.
+
+The task must determine the actual coupling law:
+
+- direct product;
+- semidirect/crossed product;
+- triangular/site-corner extension;
+- path-expression corner;
+- another explicit typed construction.
+
+If no coupling works, identify the earliest failed coupling law.
 
 ## Objective
 
-Construct or terminally classify one fixed-N affine-sensitive matter-link package with all of the following typed simultaneously:
+Construct or terminally classify one fixed-N positive elementary matter letter plus assembly with all of the following typed simultaneously:
 
-```text
-ell_N^+(A,e,n; x,r)
-Pi_{A,e,n}(x; p)
-site / coefficient action
-frame-observer covariance
-fixed-J dual action
-constitutive first-jet assembly
-```
+\`\`\`text
+ellPlus(A,e,n;x,r)
+negative = shifted inverse
+Pi(A,e,n;x;steps) = ordered product of ellPlus
+W(A,e,n) = explicit global/site-corner assembly or section
+\`\`\`
 
-The target may be larger than a same-site `16 x 16` matrix, but every enlargement must be explicit and justified.
+The target may enlarge a same-site \(16\times16\) fibre, but the enlargement must retain literal archive/site support and be explicit.
 
-A vague "take a representation of the affine group" is not a solution.
+A phrase such as "take a representation of the affine group" is not a construction.
 
 ## Mandatory attack
 
-### A. Start from the literal positive link
+### A. Exact carrier and corner typing
 
-Give the exact source and target of
+State the precise source and target of one positive letter.
 
-```text
-ell_N^+(A,e,n;x,r)
-```
+Record:
 
-including:
-
-- site anchor;
+- source site;
+- target site;
 - Fock degree/parity behavior;
-- any path-expression/site-idempotent component;
-- whether the map acts on one local Fock fiber, a site corner of the global cochain carrier, or an enlarged typed fiber.
+- site idempotents/corners if global;
+- whether it acts on one Fock fibre, a site corner of the global cochain carrier, or an enlarged typed fibre;
+- the algebra in which inverse and multiplication live.
 
-Define the negative link only as the shifted inverse if the positive link is invertible.
+A global matrix with no site-corner typing is not sufficient.
 
-### B. Recover the landed linear exterior transport
+### B. Negative letter is not independent
 
-In the zero affine-shift / flat-coframe limit, the link must reduce exactly to the PR #103 exterior lift of the linear Cartan link.
+Define the negative letter by the shifted inverse of the positive letter in the literal archive convention.
 
-For a general affine path with zero translational part, products of the new letters must agree with `exteriorPathTransport`.
+Then derive the one-step reverse identity.
 
-### C. Be genuinely affine-shift sensitive
+Do not introduce two unrelated directional links.
 
-The construction must distinguish an affine path with value
+### C. Recover Channel L exactly
 
-```text
-(I,b),  b != 0
-```
+In the zero site-translation / flat amplitude limit, the positive letter must reduce exactly to the PR #103 exterior lift of the linear Cartan link.
 
-from the identity whenever the claimed physical/mathematical interpretation says translation should be visible.
+For paths whose affine translation channel is trivial, products of the new letters must recover \`exteriorPathTransport\`.
 
-Use exact finite witnesses, preferably at `L=3`.
+This is an equality requirement, not just a continuum analogy.
 
-If the construction cannot make affine translations visible while preserving the other laws, isolate the precise obstruction.
+### D. Construct Channel B — the actual new work
 
-### D. Keep raw coframe and affine connection distinct
+The link must distinguish a pure affine path/loop value
 
-Inputs are
+\[
+(I,b),\qquad b\ne0,
+\]
 
-```text
-(A,e,n)
-```
+from the identity **if** the claimed target is affine-sensitive.
 
-with no silent identification `A=A(e)`.
+Use an exact \(L=3\) witness.
 
-A solder/Cartan compatibility map may only appear if derived inside this task from an explicit new principle.
+The response must carry site/path support. A translation acting only in an auxiliary fibre while the physical archive/site action remains unchanged does not solve the missing support problem unless an explicit projection/assembly back to the owned carrier is proved.
 
-Do not smuggle it in as notation.
+### E. Integrate Channel E into the same object
 
-### E. Reproduce the complete owned first jet
+The complete owned \(H(e)\) is additive and has path-word length at most two.
 
-The full
+The elementary letter is multiplicative.
 
-```text
-H(e)
-```
+Do not write \(H=\log\ell\) and stop.
 
-is an **additive path-expression kernel**, not one multiplicative word value.
+Define an explicit assembly
 
-Therefore define an explicit assembly rule from the elementary links/site corners to the constitutive/global operator whose flat derivative is tested.
+\[
+\operatorname{Asm}(\ell)(A,e,n)=W_{A,e,n}
+\]
 
-Require:
+or an equivalent site-corner/global construction and prove or derive
 
-```text
-W_0 = I
-D_e W_0[e] = H(e)
-```
+\[
+W_0=I,
+\qquad
+D_eW_0[e]=H(e)
+\]
 
-for arbitrary uncentered raw coframe directions in the scope actually constructed.
+for arbitrary uncentered raw coframe directions in the claimed scope.
 
-This must include:
+The derivative must recover literally:
 
 - scalar edge polarization;
-- both half-average terms;
+- both half-average pieces;
 - mixed CAR blocks;
 - both corner paths;
-- L=2 Nyquist sensitivity;
-- L=3 corner coefficient.
+- \(L=2\) Nyquist sensitivity;
+- \(L=3\) corner coefficient.
 
-Do not define the nonlinear law by simply writing `W(e)=I+H(e)` unless the task is explicitly ending at that independent seed and proves why no stronger link-derived law exists.
+If a local letter cannot produce the additive first jet without an additional assembly datum, say exactly what assembly datum is missing. Do not rename that gap "another constitutive selector."
 
-### F. Pure-gauge benchmark
+### F. Integrate PR #108 as the tangent of exact finite relations
 
-For `e=d_f phi`, compare with the exact pure-gauge crossed construction from PR #101.
+This is now a central requirement.
 
-The new link/path action must either:
+In any sector where the labelled action descends to the compressed periodic endpoint algebra, derive the **exact finite cycle word relation** in the literal pull order:
 
-- specialize to the same pure-gauge transport up to an explicitly proved gauge/conjugacy equivalence; or
-- explain exactly why the targets differ and what extra comparison map is needed.
+\[
+\ell_t(x)\ell_t(x+t)\cdots\ell_t(x+(L-1)t)=I.
+\]
 
-### G. Respect the compressed-algebra obstruction
+Differentiate this finite identity at the flat configuration and require the result to be exactly the #108 zero-cycle-sum theorem.
 
-PR #108 proves that the owned scalar vertical first-jet law descends to the compressed endpoint crossed algebra only under zero-period and plaquette constraints for `L>=3`, with `L=2` degenerate.
+Likewise derive the exact descended plaquette equality:
 
-Therefore:
+\[
+\Pi(x;[s,t])=\Pi(x;[t,s])
+\]
 
-- do not force generic harmonic/curl raw backgrounds into endpoint-compressed relations;
-- keep the generic construction on the free labelled path/path-expression parent;
-- treat compressed descent only as a derived quotient criterion.
+in the repository's actual order.
 
-### H. Labelled path composition
+Differentiate it and require the result to be exactly the #108 plaquette/closedness theorem.
 
-Products of the positive/negative links must give exact:
+This is the key integration test.
 
-- empty path;
-- append;
-- reverse/inverse;
-- relative labelled holonomy.
+Do not merely check #108 afterward as an unrelated diagnostic.
 
-At `L=2`, `.fwd r` and `.bwd r` must remain distinct labels until the local period relation is actually proved.
+### G. Keep generic curl/harmonic data free-path resolved
 
-If the labelled-path worker lands during the task, use it. Otherwise reproduce only the research statement and cite it as pending formalization.
+For generic backgrounds:
 
-### I. Observer/frame covariance
+- plaquette curl is nontrivial relative labelled holonomy;
+- harmonic period is nontrivial cycle holonomy.
 
-Use the merged PR #103 owners literally.
+Do not impose the finite cycle/plaquette identities before descent.
 
-Required checks:
+Endpoint compression is derived only after the relevant labelled holonomy is trivial.
 
-- exterior/frame covariance;
+### H. L=2 exact period
+
+At \(L=2\), keep \`.fwd r\` and \`.bwd r\` as distinct labels.
+
+When endpoint descent is imposed, derive/use the exact finite relation
+
+\[
+\ell^+(x,r)\,\ell^+(x+r,r)=I
+\]
+
+in the actual pull order.
+
+Do not replace this by the centered fact that the #108 response formula degenerates at \(L=2\).
+
+Both facts are required and they are different:
+
+- #108: tangent scalar formula is zero at \(L=2\);
+- labelled descent: exact finite period relation survives.
+
+### I. Pure-gauge exact chart
+
+For
+
+\[
+e=d_f\varphi,
+\]
+
+compare with the exact owned PR #101 chart
+
+\[
+\ell_t=F_\varphi U_tF_\varphi^{-1}.
+\]
+
+The new letter must either specialize to this law exactly or come with a proved typed equivalence to it.
+
+Do not identify arbitrary raw \(e\) with a gauge potential.
+
+### J. Keep \(A\), \(e\), \(n\) separate
+
+Do not silently set \(A=A(e)\).
+
+If the new Channel-B/E coupling needs a solder-Cartan compatibility map, derive it from an explicit principle inside this task or make that missing map the terminal.
+
+Observer \(n\) enters through the owned \(h_n\) covariance structure.
+
+It is not a fourth channel and is not physical time.
+
+### K. Observer/frame covariance
+
+Only after the primal letter exists, prove/test compatibility with the merged PR #103 owners:
+
+- linear exterior covariance;
 - moving observer-positive form;
-- creator/contraction covariance where the link acts on those blocks;
-- rational A/B boost control.
+- creator/contraction covariance where applicable;
+- exact rational A/B boost.
 
-Observer covariance is a transport law, not permission to select an arbitrary constitutive modulus.
+Observer covariance constrains transport. It does not select an arbitrary scalar/Hessian coefficient.
 
-Do not identify the rest observer with physical time.
+### L. Fixed located-J dualization
 
-### J. Fixed located-J dualization
-
-Only after the primal link/path law exists, derive the dual action through the fixed located `J`.
+Only after the primal letter and word action exist, derive the dual via fixed located \(J\).
 
 Preserve:
 
+- Fock degree/parity;
+- complement orientation/sign;
+- shifted anchors;
+- distinction between common-fibre contragredience and sitewise archive placement.
+
+If degree mixing produces a sum of shifted dual blocks, keep the sum. Do not force a single bare dual word.
+
+## Candidate carriers to test
+
+At minimum compare:
+
+### 1. Current 16-state exterior fibre
+
+Expected positive:
+- exact Channel-L frame/path action.
+
+Expected boundary:
+- affine translation blindness.
+
+Do not reject the carrier globally merely because the current action is blind; test whether site-corner coupling can use the same Fock fibre while adding archive support externally.
+
+### 2. PR #101 nilpotent 16-state affine candidate
+
+Test:
+
+- translation sensitivity;
 - degree/parity;
-- complement signs;
-- shifted dual anchors;
-- distinction between common-fibre contragredience and sitewise located covariance.
-
-A generic degree-mixing action may yield a finite sum of shifted dual blocks; do not force it into one bare dual word.
-
-### K. Test the obvious candidate carriers honestly
-
-At minimum test:
-
-1. current 16-state exterior carrier;
-2. the PR #101 nilpotent 16-state affine translation candidate;
-3. the homogeneous 32-state `Lambda*(V+R e_*)` affine lift;
-4. a site-corner/path-expression enlargement on the existing global archive cochain carrier.
-
-For each candidate record exactly:
-
-- affine translation sensitivity;
-- degree preservation;
-- parity preservation;
 - normalization of the owned degree algebra;
-- compatibility with site projectors;
-- pure-gauge specialization;
-- full first-jet support;
-- labelled path invertibility;
-- observer/frame covariance;
-- fixed-J behavior.
+- site support;
+- pure-gauge chart;
+- first-jet assembly;
+- invertibility/path product.
 
-Do not reject a candidate for failing a property that the final target does not actually require; state the type change explicitly instead.
+### 3. Homogeneous 32-state affine exterior lift
 
-## Hostile controls
+Test:
 
-Use exact symbolic/rational controls for at least:
+- honest affine sensitivity;
+- whether translations act nontrivially on the original physical \(16\)-state sector or only the auxiliary sector;
+- return/projection to the owned archive matter carrier;
+- site support;
+- first jet;
+- observer covariance;
+- located-J consequences.
 
-- flat background;
+### 4. Site-corner/path-expression enlargement
+
+This is the primary candidate class.
+
+Test a construction in which site idempotents/path shifts are part of the letter target algebra while the local Fock fibre remains the owned \(16\)-state exterior carrier.
+
+Determine whether this is the minimal target that simultaneously supports:
+
+- Channel L;
+- affine translation sensitivity;
+- the path supports already present in \(H(e)\);
+- exact inverse and labelled path multiplication.
+
+## Required hostile controls
+
+Use exact rational/symbolic controls for:
+
+- flat identity background;
 - one pure-gauge background;
-- L=3 pure affine translation loop;
-- L=3 plaquette curl;
-- L=3 mixed corner;
-- L=5 constant harmonic period;
-- L=2 Nyquist and parallel labelled slots;
+- \(L=3\) pure affine translation \((I,b\ne0)\);
+- \(L=3\) plaquette curl;
+- \(L=3\) mixed corner;
+- \(L=5\) nonzero harmonic cycle;
+- \(L=2\) Nyquist;
+- \(L=2\) parallel \`.fwd/.bwd\` labels and exact period;
 - all five Fock degrees;
 - parity;
 - exact rational A/B Lorentz boost;
-- one same-endpoint pair with different affine shifts;
-- one background where compressed descent holds;
-- one where free-path transport is necessary.
+- one same-endpoint pair distinguished by affine shift before descent;
+- one background where cycle/plaquette descent relations hold;
+- one background where nontrivial labelled holonomy prevents descent.
 
 ## Second-order firewall
 
-Do not try to solve the whole constitutive Hessian before the positive link exists.
+Do not open a separate \(Q\), \(\mathcal S\), \(K\), Hessian or scalar-coefficient search.
 
-If a constructed link canonically induces a second jet, record it and compare with the already-owned nonselection/dressing family.
+If the finite elementary letter plus assembly is constructed, then a same-axis two-letter product and the second derivative of \(W\) may be inspected as consequences.
 
-If not, stop at the first-order/link boundary.
+If second-order freedom remains, record it as a jet of the already-constructed letter/assembly package.
 
-Do not select `S`, `K`, or a scalar coefficient by hand.
+Do not select it by hand.
 
-## Allowed terminal forms
+## Tick interpretation firewall
 
-Examples:
+A length-one positive letter may be described as the minimal algebraic distinguishability step of this fixed-N action.
 
-- `AFFINE-SENSITIVE-SITE-MATTER-LINK-CONSTRUCTED-FIRST-JET-OWNED`;
-- `AFFINE-SENSITIVE-LINK-CONSTRUCTED-CONSTITUTIVE-ASSEMBLY-MISSING`;
-- `SITE-CORNER-PATH-EXPRESSION-TARGET-REQUIRED-16-AND-32-FIBER-LIFTS-INSUFFICIENT`;
-- `AFFINE-MATTER-LINK-REQUIRES-SOLDER-CARTAN-COMPATIBILITY-PRIMITIVE`;
-- `AFFINE-MATTER-LINK-REQUIRES-NEW-SITE-ACTION-PRIMITIVE`.
+A longer word is composition.
 
-Use only the strongest wording actually derived.
+A closed word with trivial labelled holonomy returns to identity after descent.
 
-## Downstream firewall
+Do not promote this operational statement to physical time, the Pisot arrow, causal \(e_0\), or golden refinement.
 
-Do not promote:
+## Golden firewall
 
-- stress tensor;
-- Einstein equations;
-- physical time;
-- golden/phi matching;
-- inter-level refinement;
-- a metric reinterpretation of located `J`;
-- a universal second jet;
-- endpoint-only transport on nontrivial holonomy backgrounds.
+Do not use:
+
+- \(\varphi\);
+- AF/Bratteli index;
+- a \(k=n\) rule;
+- Tower-C scale data;
+
+inside the fixed-N elementary letter.
+
+The Tower-C ↔ Tower-B correspondence-grid path-selection problem is separate.
+
+## Allowed terminals
+
+Use the strongest terminal actually derived.
+
+Preferred positive terminals include:
+
+- \`AFFINE-SENSITIVE-ELEMENTARY-MATTER-LINK-AND-FIRST-JET-ASSEMBLY-CONSTRUCTED\`;
+- \`SITE-CORNER-MATTER-LINK-CONSTRUCTED-PR108-FINITE-RELATIONS-INTEGRATED\`.
+
+Scoped partial terminals include:
+
+- \`SITE-CORNER-AFFINE-LINK-CONSTRUCTED-FIRST-JET-ASSEMBLY-MISSING\`;
+- \`FIRST-JET-ASSEMBLY-CONSTRUCTED-AFFINE-TRANSLATION-CHANNEL-MISSING\`;
+- \`AFFINE-MATTER-LINK-REQUIRES-SOLDER-CARTAN-COMPATIBILITY-PRIMITIVE\`;
+- \`ELEMENTARY-LINK-INTEGRATION-FAILS-AT-CHANNEL-B-E-COUPLING\`.
+
+Do **not** end merely with:
+
+\`CROSSED-CONSTITUTIVE-REPRESENTATION-REQUIRED\`
+
+unless the research proves that the elementary-link integration problem itself cannot be sharpened further.
 
 ## Deliverable
 
-One durable theorem-ready memo in `02_REGISTRY/research/` containing:
+One durable theorem-ready memo in \`02_REGISTRY/research/\`.
 
-- exact carrier/target type;
-- positive link and shifted inverse;
-- free labelled path law;
-- affine translation sensitivity result;
-- linear exterior limit;
-- pure-gauge comparison;
-- full first-jet assembly calculation;
-- observer/frame covariance;
-- fixed-J dual result;
-- compressed-descent boundary;
-- hostile controls;
-- candidate comparison table;
-- terminal verdict;
-- theorem-ready handoff;
-- exactly one recommended next step.
+It must contain:
+
+1. exact carrier and site-corner typing;
+2. positive letter;
+3. shifted negative inverse;
+4. product definition of labelled path transport;
+5. exact Channel-L reduction;
+6. Channel-B affine translation result;
+7. explicit \(W\)/assembly rule;
+8. complete first-jet calculation;
+9. exact finite cycle relation and derivative-to-#108 calculation;
+10. exact finite plaquette relation and derivative-to-#108 calculation;
+11. \(L=2\) labelled period;
+12. pure-gauge PR #101 comparison;
+13. generic curl/harmonic holonomy boundary;
+14. observer/frame covariance;
+15. fixed-J dual result;
+16. candidate carrier comparison;
+17. hostile controls;
+18. terminal verdict;
+19. theorem-ready handoff;
+20. exactly one recommended next step.
 
 No Lean source.
 
 ## GitHub-first flow
 
-1. fresh branch from current `main`;
-2. `python tools/task_lifecycle.py start EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK`;
+1. fresh branch from current \`main\`;
+2. \`python tools/task_lifecycle.py start EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK\`;
 3. immediately open Draft PR before research edits;
 4. research and durable memo only inside that PR;
 5. before Ready self-retire the task;
-6. set `Lifecycle: REVIEW`;
+6. set \`Lifecycle: REVIEW\`;
 7. Ready for review;
 8. do not self-merge.
 
 ## Exit condition
 
-One fixed-N site-aware affine-sensitive elementary matter link is either explicitly constructed on a typed free-path/path-expression carrier with exact path laws and complete owned first-jet recovery, or the earliest additional primitive required for such a link is terminally identified without hiding affine translation, curl, harmonic or L=2 labelled information in an endpoint quotient.
+One fixed-N positive elementary matter letter is constructed or terminally classified on an explicit site-aware carrier such that its products define the labelled word action, its linear limit is the owned PR #103 exterior transport, its affine translation channel is explicitly resolved, its global assembly has first derivative equal to the complete owned \(H(e)\), its exact descended cycle/plaquette relations linearize to the PR #108 constraints, and its \(L=2\) endpoint descent obeys the exact labelled period; otherwise the earliest failed coupling among the L/E/B channels is identified as the next primitive without reopening \(Q\), \(\mathcal S\), \(K\), stress, Einstein, physical time or golden refinement.
