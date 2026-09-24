@@ -21,7 +21,7 @@ Do NOT start until all are true:
 3. `WRK-A4D-LOCATED-PRIMAL-DUAL-STAR` is merged or CONTROL explicitly accepts its located-pairing API;
 4. Research terminal is frozen as `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`.
 
-This task integrates that verdict. It must not guess `K`, choose `c`, or repair a negative research result by inventing a different finite action.
+Current main satisfies all four start gates: the flux kernel is merged via PR #75, the located primal/dual star is merged via PR #76, a WORKER slot is free, and the research terminal is frozen.\n\nDurable research packet: `02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md`.\n\nThis task integrates that verdict. It must not guess `K`, choose `c`, or repair a negative research result by inventing a different finite action.
 
 ## Three-star dictionary — keep these objects distinct
 
