@@ -43,20 +43,20 @@ The nearby roadmap uses three distinct finite systems.
 
 | Tower | Literal carrier / owner | Bonding or refinement | Meaning |
 |---|---|---|---|
-| A — record/profinite | \`ArchivePoints n = Fin ((n+2)^4)\` | flat integer-mod \`archiveProjection\` | informational inverse-limit record carrier |
-| B — Role-phase/CAR | \`ArchiveRolePhaseGroup N = Role -> ZMod (N+2)\` | geometric period/coordinate comparison must be typed separately | carrier of \`D_H\`, \`J\`, \`H(e)\`, coframes and Cartan geometry |
-| C — golden Bratteli/AF | golden cylinder language / \`M_phi\` | Bratteli incidence, AF inclusion, Perron trace/scale | canonical golden refinement at algebra/trace/scale level |
+| A — record/profinite | `ArchivePoints n = Fin ((n+2)^4)` | flat integer-mod `archiveProjection` | informational inverse-limit record carrier |
+| B — Role-phase/CAR | `ArchiveRolePhaseGroup N = Role -> ZMod (N+2)` | geometric period/coordinate comparison must be typed separately | carrier of `D_H`, `J`, `H(e)`, coframes and Cartan geometry |
+| C — golden Bratteli/AF | golden cylinder language / `M_phi` | Bratteli incidence, AF inclusion, Perron trace/scale | canonical golden refinement at algebra/trace/scale level |
 
 Frozen separation:
 
-- Tower A and the natural coordinate-wise product refinement underlying Tower B are NOT stagewise isomorphic under their accepted bondings; the first-step zero-fiber sizes are \`6\` and \`16\`.
-- Tower C already has a recovered golden refinement owner and forced dimensionless Perron scale ratio \`phi\`.
+- Tower A and the natural coordinate-wise product refinement underlying Tower B are NOT stagewise isomorphic under their accepted bondings; the first-step zero-fiber sizes are `6` and `16`.
+- Tower C already has a recovered golden refinement owner and forced dimensionless Perron scale ratio `phi`.
 - What is missing is a typed Tower-C <-> Tower-B weld. A common scale ratio is not a carrier map.
-- \`ArchiveSpatialHistorySplit\` keeps history tick, cyclic A-phase, phi-ladder and observer structure distinct.
+- `ArchiveSpatialHistorySplit` keeps history tick, cyclic A-phase, phi-ladder and observer structure distinct.
 
 Durable synthesis:
 
-\`02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md\`.
+`02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md`.
 
 The current constitutive seam lives inside one Tower-B level. The golden/Role-phase weld is an adjacent strategic lane, not permission to reinterpret record refinement or physical time.
 
@@ -193,13 +193,13 @@ D0 already owns a canonical golden cylinder/Bratteli refinement at algebra/trace
 
 The strategic research task
 
-\`EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD\`
+`EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD`
 
 asks for the strongest typed relation between the golden Bratteli/AF tower and the Role-phase/CAR geometry:
 
 - carrier map, correspondence, subsequence, operator intertwiner, scale-only relation, or scoped no-go;
 - exact index-type audit before any equation;
-- naturality tests for Role action, degree/parity, located \`J\`, corrected \`D_H\`, and only then \`H(e)\`;
+- naturality tests for Role action, degree/parity, located `J`, corrected `D_H`, and only then `H(e)`;
 - explicit time firewall.
 
 This lane may shape the next synthesis after the constitutive seam is terminal, but it is not a current stress/Einstein owner and does not change this CONTROL's exit condition.
