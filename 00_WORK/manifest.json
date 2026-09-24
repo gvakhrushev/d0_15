@@ -72,19 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     },
     {
-      "id": "WRK-A4D-GOLDEN-CARRIER-WELD-BOUNDARY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-ARCHIVE-LAPLACIAN-RG",
-        "D0-PERRON-SCALE-FLOW-OWNER-001",
-        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
-      ],
-      "exit_condition": "The repaired golden carrier/group/algebra/equivariance boundary is Lean-owned with exact early-stage exceptions and bounded arithmetic scope, while the surviving Role-equivariant correspondence and index rule remain research-owned.",
-      "brief": "00_WORK/tasks/WRK-A4D-GOLDEN-CARRIER-WELD-BOUNDARY.md"
-    },
-    {
       "id": "WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
