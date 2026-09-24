@@ -47,12 +47,13 @@ Current lanes are intentionally ordered:
 PR #109 nilpotent affine response → Lean ownership + grading firewall
   → WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY
 
-covariant comparison of affine shift with raw solder on one edge
-  → EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH
+PR #112 transported-reference mismatch
+  → EXP-A4D-SOLDER-REFERENCE-LEG-SECTION
+  → construct/classify the source reference-leg / affine-origin datum q
 
 arbitrary-background finite graded E dressing
   → EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
-  → BLOCKED until the mismatch task lands
+  → BLOCKED until a usable q/origin datum lands
 ```
 
 The current durable synthesis is
@@ -64,7 +65,7 @@ Two typing firewalls are now central:
 - `F_phi` is an invertible background trivialization, while `W_flux = I + H(e)` is a constitutive/Riesz section. `DW = H` does not imply `D F = H`.
 - Degree-preserving conjugation cannot erase a nonzero degree-mixing `T_b`. The disappearance of the extra affine response on the exact pure-gauge diagonal must occur in the mismatch/comparison layer, not through a commutator shortcut.
 
-The golden Tower-C↔Tower-BThe golden Tower-C↔Tower-B correspondence/index problem remains a separate inter-level lane. No `phi`, AF index or `k=n` rule belongs in the fixed-N elementary matter letter.
+The golden Tower-C↔Tower-B correspondence/index problem remains a separate inter-level lane. No `phi`, AF index or `k=n` rule belongs in the fixed-N elementary matter letter.
 
 The scalar reverse-star no-go remains a separate object, not `J` and not the constitutive assembly `W`. The topological placement, positive matter energy, Lorentzian exterior form, local frame covariance, connection transport and gravity-source variation stay distinct typed layers until a theorem identifies them.
 
@@ -122,11 +123,12 @@ Current frontier labels:
 LABELLED-LIST-CHAINSTEP-HOLONOMY-DESCENT-SKELETON-LEAN-OWNED
 CHANNEL-L-EXTERIOR-AFFINE-SHIFT-BLINDNESS-LEAN-OWNED
 AFFINE-TRANSLATION-SITE-RESPONSE-CONSTRUCTED-LEAN-OWNER-PENDING
-SOLDER-CARTAN-B-E-EDGE-COMPARISON-OPEN
-FINITE-GRADED-E-DRESSING-BLOCKED-ON-EDGE-COMPARISON
+SOLDER-CARTAN-TRANSPORTED-REFERENCE-MISMATCH-CLASSIFIED
+SOLDER-REFERENCE-LEG-ORIGIN-SECTION-OPEN
+FINITE-GRADED-E-DRESSING-BLOCKED-ON-REFERENCE-SECTION
 ```
 
-Landed prerequisites:Landed prerequisites:
+Landed prerequisites:
 
 ```text
 WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL  (#75)
@@ -154,24 +156,31 @@ SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING
 Active fixed-level research lane:
 
 ```text
-SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING
-→ EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH
-→ derive or terminally classify target-fibre covariant B/E edge comparison
+MEMO_A4D_SOLDER_CARTAN_EDGE_MISMATCH  (#112)
+→ EXP-A4D-SOLDER-REFERENCE-LEG-SECTION
+→ derive, select, or terminally classify the source-fibre reference/origin section q
 ```
 
 Blocked next research lane:
 
 ```text
 EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
-→ do not start before the mismatch terminal is merged
-→ classify a finite graded background dressing with exact pure-gauge restriction and induced DW|_0 = H
+→ do not start merely because #112 merged
+→ start only after a usable q/origin datum lands or is explicitly adopted
+→ then classify a finite graded background dressing with exact pure-gauge restriction and induced DW|_0 = H
 ```
 
-PR #111 has landed the labelled-path skeleton and exact L=2 period. PR #110 has landed the Channel-L affine-shift blindness boundary. PR #109 has constructed Channel B at research level and localized the first common failure to the B/E solder–Cartan comparison.
+PR #111 has landed the labelled-path skeleton and exact L=2 period. PR #110 has landed the Channel-L affine-shift blindness boundary. PR #109 constructed Channel B at research level. PR #112 then closed the row/vector ambiguity and constructed the conditional target-fibre mismatch
 
-The current research target is therefore not another matter representation and not a mixed commutator. It is the exact edge comparison between affine translation and raw solder/coframe data, including the transported-reference-leg and row/vector convention.
+```text
+kappa_q(A,e;x,r) = A_(x,r)(q_r(x+r)) - solderLegVector(e,x,r)
+```
 
-Fixed-level endpoint research is terminalFixed-level endpoint research is terminal in PR #84:
+with exact pure-linear frame covariance and flat/pure-gauge/pure-shift controls, conditional on a supplied reference leg.
+
+The current research target is therefore no longer the B/E edge comparison itself. It is the selection/construction of the source reference-leg or affine-origin section `q`.
+
+Fixed-level endpoint research is terminal in PR #84:
 
 ```text
 MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
@@ -356,6 +365,6 @@ This control closes the current research/formalization gate when:
 2. the complete first jet `DW|_0 = H` / flux-energy kernel is Lean-owned;
 3. `D^2W|_0` and the matter second-jet boundary are either classified or terminally no-go;
 4. the frame/CAR lift is independently classified in its parallel lane;
-5. the post-PR-109 B/E seam is closed in order: the nilpotent affine translation response is Lean-owned with its grading boundary; a target-fibre covariant solder–Cartan edge mismatch is constructed or terminally classified; and, only after that comparison exists, an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative equal to the complete owned `H(e)`, including the surviving skew-generator freedom on transverse coframe directions.
+5. the post-PR-112 B/E seam is closed in order: the nilpotent affine translation response is Lean-owned with its grading boundary; the conditional transported-reference mismatch is made intrinsic by constructing/selecting a source-fibre reference-leg or affine-origin section `q` (or terminally identifying the earliest full-affine-solder/selection primitive needed for it); and only after a usable `q` exists is an arbitrary-background finite graded E dressing constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative equal to the complete owned `H(e)`, including transverse skew-generator freedom.
 
 Provenance-bearing stress/source and continuum Lorentz/Einstein promotion remain downstream gates; this CONTROL must not claim them closed merely because the current constitutive seam is classified.

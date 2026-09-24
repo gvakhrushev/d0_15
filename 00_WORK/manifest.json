@@ -48,7 +48,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The fixed-level constitutive seam closes when the nilpotent affine translation response is Lean-owned with its grading boundary, the affine translation and raw solder/coframe descriptions of one Role edge are joined by a target-fibre covariant solder–Cartan mismatch or terminally classified at the earliest missing datum, and only after that comparison an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including the transverse skew-generator freedom. Stress/Einstein, physical time and golden refinement remain downstream.",
+      "exit_condition": "The fixed-level constitutive seam closes when the nilpotent affine translation response is Lean-owned with its grading boundary; the transported-reference mismatch is made intrinsic by a source-fibre reference-leg / affine-origin section or terminally classified at the earliest missing full-affine-solder/selection datum; and only after that an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including transverse skew-generator freedom. Stress/Einstein, physical time and golden refinement remain downstream.",
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY.md"
     },
     {
-      "id": "EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The independent affine translation and raw solder/coframe descriptions of one Role edge are joined by an explicit target-fibre covariant mismatch law satisfying flat, exact pure-gauge and pure-shift controls, or the earliest additional reference-leg/index/full-affine-solder datum required for such a comparison is terminally identified without reopening affine representability or finite E dressing.",
-      "brief": "00_WORK/tasks/EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH.md"
-    },
-    {
       "id": "EXP-A4D-FINITE-GRADED-COFRAME-DRESSING",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
@@ -90,8 +79,19 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "After a solder-Cartan mismatch has landed, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including an explicit classification of the skew-generator freedom on transverse coframe directions.",
+      "exit_condition": "After a usable solder reference-leg / affine-origin section has landed and makes the B/E mismatch intrinsic, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including an explicit classification of the skew-generator freedom on transverse coframe directions.",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
+    },
+    {
+      "id": "EXP-A4D-SOLDER-REFERENCE-LEG-SECTION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "A source-fibre reference-leg/affine-origin section is constructed from the available edge data with flat, exact pure-gauge, pure-shift and frame-covariance controls, or the earliest additional full-affine-solder/selection primitive required to choose such a section is terminally identified, with nonuniqueness explicitly classified before finite graded E dressing is allowed to start.",
+      "brief": "00_WORK/tasks/EXP-A4D-SOLDER-REFERENCE-LEG-SECTION.md"
     }
   ]
 }
