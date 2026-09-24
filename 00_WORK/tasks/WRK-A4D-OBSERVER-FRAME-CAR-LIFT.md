@@ -20,8 +20,9 @@ Research gate is SATISFIED with terminal:
 
 This worker is READY when a WORKER slot is assigned.
 
-Packages that do not mention located `J` may start immediately from current `main`.
-If the located-star API is not yet accepted, defer only the located-frame compatibility theorem; do not block the exterior/observer/link packages.
+The located-star API is accepted on current `main` via merged PR #76, so the located-frame compatibility theorem is unblocked.
+
+Durable research packet: `02_REGISTRY/research/MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT.md`.
 
 The missing `A4DSolderedCellEnergyJet` is NOT part of the positive formalization. Do not define the target `H(e)` coefficients as an axiom merely to close the worker.
 
