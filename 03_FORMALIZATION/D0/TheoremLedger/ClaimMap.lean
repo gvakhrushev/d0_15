@@ -1438,7 +1438,11 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-A4D-SCALAR-ADVECTIVE-GROUPOID-001", moduleName := "D0.Geometry.A4DScalarAdvectiveGroupoidObstruction",
       theoremName := "outputSiteLocal_commutator;forcedOperatorDerivative;advectiveBackgroundDerivative_forced;advectiveSecondJet_eq_mulSquare;advective_mixedCocycle;advectiveDelta_K_L5;advectiveDelta_hessian_L5;advectiveDelta_hessian_distanceTwo_L5;nondelta_L5_square_ne_zero;nondelta_advective_K_L5;flatComparison_difference_symmetric", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-A4D-OUTPUT-SITE-LOCAL-CELL-NOGO-001", moduleName := "D0.Geometry.A4DScalarAdvectiveGroupoidObstruction",
-      theoremName := "outputSiteLocal_noDirectElementaryCellInvariantEnergy;elementaryCell_misses_sameAxis_distanceTwo", status := ClaimStatus.leanNoGoProved }
+      theoremName := "outputSiteLocal_noDirectElementaryCellInvariantEnergy;elementaryCell_misses_sameAxis_distanceTwo", status := ClaimStatus.leanNoGoProved },
+    { claimId := "D0-A4D-GOLDEN-RG-DEFECT-INTERFACE-001", moduleName := "D0.Geometry.A4DGoldenRolePhaseRGDefect",
+      theoremName := "archiveRolePhaseProjection_eq_archiveRGPhaseProjection;archiveRolePhaseProjection_precomp;archiveRolePhaseProjection_perm;goldenScaleProbe_eq_phi;goldenScaleProbe_level_independent;goldenRGResidual_zero_iff;scalarAssignmentResidual_zero_iff;goldenRGResidual_eq_scalarAssignment;goldenEnergyCorrection_zero_iff;scalarAssignmentEnergy_zero_iff;operator_and_energy_zero_residuals;nearestNeighbor_exactProjective_fails", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-A4D-GOLDEN-CARRIER-WELD-BOUNDARY-001", moduleName := "D0.Geometry.A4DGoldenCarrierWeldBoundary",
+      theoremName := "rolePhasePoint_carriers_agree;record_rolePhase_firstStep_fibers;record_rolePhase_bonding_separation;record_rolePhase_two_limit_separation;towerC_scale_probe_eq_phi;suppliedOperatorResidual_zero_iff", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by

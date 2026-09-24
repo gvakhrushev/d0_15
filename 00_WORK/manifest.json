@@ -92,19 +92,6 @@
       ],
       "exit_condition": "The theorem-ready PR #84 boundary is Lean-owned: unlabelled-center loop telescoping/scoped holonomy no-go, exact constants-preserving two-edge comparison patch including L=5 delta/non-delta witnesses, and an explicit nearest-neighbor family proving scalar comparison-jet nonselection; no constitutive path-word action C_N is claimed.",
       "brief": "00_WORK/tasks/WRK-A4D-ENDPOINT-OVERLAP-COMPARISON-BOUNDARY.md"
-    },
-    {
-      "id": "WRK-A4D-GOLDEN-RG-DEFECT-INTERFACE",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-ARCHIVE-LAPLACIAN-RG",
-        "D0-PERRON-SCALE-FLOW-OWNER-001",
-        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
-      ],
-      "exit_condition": "The PR #86 defect-bearing interface is Lean-owned: the Role-phase coordinate projection is connected literally to archiveRGPhaseProjection, the Perron flow enters only through a scalar golden scale probe, operator and energy residual equivalences remain distinct, and the record/Role-phase/golden carrier-weld boundary is explicit without any J/D_H/H(e) intertwiner claim.",
-      "brief": "00_WORK/tasks/WRK-A4D-GOLDEN-RG-DEFECT-INTERFACE.md"
     }
   ]
 }
