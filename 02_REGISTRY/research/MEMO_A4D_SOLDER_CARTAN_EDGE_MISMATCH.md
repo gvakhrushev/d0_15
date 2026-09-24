@@ -98,7 +98,7 @@ from the supplied pair \((A,e)\) alone. It constructs the exact conditional fami
 \]
 once a reference-leg section is supplied.
 
-The earliest missing datum is precisely that section, with its transformation law and pure-gauge specialization:
+Within the transported-reference-leg construction and the currently owned solder/affine structures, the earliest missing datum is precisely that section, with its transformation law and pure-gauge specialization. This is **not** a universal no-go excluding every conceivable direct covariant formula `κ(A,e)` outside this construction class:
 
 \[
 \boxed{\texttt{SOLDER-CARTAN-MISMATCH-REQUIRES-REFERENCE-LEG-SECTION}.}
