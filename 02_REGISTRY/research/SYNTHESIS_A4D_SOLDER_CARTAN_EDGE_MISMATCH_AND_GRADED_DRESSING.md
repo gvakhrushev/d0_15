@@ -349,3 +349,27 @@ Do not reopen:
 Construct or terminally classify the target-fibre solder–Cartan edge mismatch, beginning with the transported-reference-leg hypothesis and auditing the literal row/vector/index conventions on the exact pure-gauge orbit.
 
 The finite E dressing remains downstream and must not be started until that comparison is resolved.
+## 10. Post-PR-112 refinement
+
+PR #112 closes the row/vector ambiguity and sharpens the mismatch layer.
+
+The owned `solderLegVector` already converts the raw right-transforming solder row into a target-fibre vector. For a supplied source reference leg
+
+\[
+q_r(y)\in V_y,
+\]
+
+the exact transported-reference mismatch is
+
+\[
+\kappa_q(A,e;x,r)=A_{x,r}(q_r(x+r))-v_r(e,x).
+\]
+
+It has exact pure-linear frame covariance and preserves the raw Nyquist/corner controls.
+
+The new terminal is narrower: current D0 does not select the source reference/origin section \(q\). A fixed flat reference and the natural source solder leg both fail the exact pure-gauge diagonal, while the tautological \(q=A^{-1}v\) would erase every pure affine shift and is therefore inadmissible.
+
+The next research step is consequently `EXP-A4D-SOLDER-REFERENCE-LEG-SECTION`.
+
+The finite graded E dressing remains blocked. PR #112 alone does not make \(\kappa(A,e)\) intrinsic; it only constructs the conditional family \(\kappa_q\).
+
