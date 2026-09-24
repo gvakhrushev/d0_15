@@ -274,6 +274,7 @@ import D0.Gauge.WilsonLinkGaugeCovariance
 import D0.Gauge.YangMillsKillingPositivity
 import D0.Geometry.A4DActionGroupoidSecondJet
 import D0.Geometry.A4DAffineMatterLiftObstruction
+import D0.Geometry.A4DAffineOriginSolderBoundary
 import D0.Geometry.A4DAffineShiftExteriorBlindness
 import D0.Geometry.A4DCellHessianTransverseModulus
 import D0.Geometry.A4DCenteredCartanClosureNoGo
