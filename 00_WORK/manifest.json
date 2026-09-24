@@ -111,17 +111,6 @@
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
     },
     {
-      "id": "WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The complementary pairing, full uncentered staggered first jet, independent flux energy and polarization/Riesz identity, Nyquist/corner controls, spatial-triad representation weld, and shell flux compression naming boundary are Lean-owned without duplicating the located-star owner or selecting nonlinear Q(e).",
-      "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md"
-    },
-    {
       "id": "WRK-A4D-LOCATED-PRIMAL-DUAL-STAR",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
