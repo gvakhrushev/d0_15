@@ -61,30 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "WRK-CERT-ARTIFACT-FRESHNESS",
-      "class": "WORKER",
-      "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
-        "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
-        "D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001",
-        "D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001",
-        "D0-HODGE-GRADING-SYMMETRY-001",
-        "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
-        "D0-MOVING-GRADED-DIFFERENTIAL-001",
-        "D0-PRIMAL-DUAL-MOVING-ACTION-001",
-        "D0-PATH-HODGE-STABILIZER-001",
-        "D0-MOVING-D-PARENT-WARD-001",
-        "D0-RADIUS-ONE-WARD-KERNEL-001",
-        "D0-CONSTITUTIVE-KERNEL-FAMILY-001",
-        "D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001",
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
-      "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
-    },
-    {
       "id": "WRK-A4D-LOCATED-PRIMAL-DUAL-STAR",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
