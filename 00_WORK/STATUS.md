@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
+| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
 | WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **1** | **2** | **0** | **0** | **3** | **2 / 10** |
+| **Total** | **2** | **2** | **0** | **0** | **4** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -18,6 +18,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-GRAVITY-DYNAMICS-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | WRK-A4D-OBSERVER-FRAME-CAR-LIFT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
+| EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
