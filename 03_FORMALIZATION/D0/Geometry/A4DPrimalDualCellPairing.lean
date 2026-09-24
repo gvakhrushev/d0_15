@@ -153,7 +153,7 @@ def algebraicComplementPairing (N k : ℕ) (hk : k ≤ 4)
     (z : archiveDegreeSubmodule N (4 - k)) : ℝ :=
   cochainPairing N φ.1 (algebraicComplementToPrimal N k hk z).1
 
-theorem algebraicComplementPairing_sub_right (N k : ℕ) (hk : k ≤ 4)
+theorem algebraicComplementPairing_sub_right_eval (N k : ℕ) (hk : k ≤ 4)
     (φ : archiveDegreeSubmodule N k)
     (z w : archiveDegreeSubmodule N (4 - k)) :
     algebraicComplementPairing N k hk φ (z - w) =
@@ -268,6 +268,145 @@ theorem algebraicComplementPairing_perfect (N k : ℕ) (hk : k ≤ 4) :
       algebraicComplementToPrimal N k hk 0
     rw [hJ]
     exact (map_zero (algebraicComplementEquiv N k hk).toLinearMap).symm
+
+/-! ## Riesz representation for arbitrary supplied sector energies -/
+
+/-- A coordinate delta vector restricted to the homogeneous degree-k sector. -/
+noncomputable def degreePointBasis (N k : ℕ)
+    (p : ArchiveCochainBasis N) : archiveDegreeSubmodule N k := by
+  classical
+  by_cases hp : fockDegree p.2 = k
+  · refine ⟨fun q => if q = p then 1 else 0, ?_⟩
+    intro x S hS
+    by_cases hq : (x, S) = p
+    · have hcoord : S = p.2 := congrArg Prod.snd hq
+      have hdeg : fockDegree S = k := by simpa [hcoord] using hp
+      exact (hS hdeg).elim
+    · simp [hq]
+  · exact 0
+
+@[simp] theorem degreePointBasis_apply (N k : ℕ)
+    (p q : ArchiveCochainBasis N) :
+    (degreePointBasis N k p).1 q =
+      if fockDegree p.2 = k then (if q = p then 1 else 0) else 0 := by
+  classical
+  by_cases hp : fockDegree p.2 = k
+  · by_cases hq : q = p
+    · subst q
+      simp [degreePointBasis, hp]
+    · simp [degreePointBasis, hp, hq]
+  · simp [degreePointBasis, hp]
+
+theorem degreePointBasis_decomposition (N k : ℕ)
+    (φ : archiveDegreeSubmodule N k) :
+    φ = ∑ p : ArchiveCochainBasis N, φ.1 p • degreePointBasis N k p := by
+  classical
+  apply Subtype.ext
+  funext q
+  symm
+  simp only [Submodule.coe_sum, Submodule.coe_smul, Finset.sum_apply,
+    Pi.smul_apply, smul_eq_mul]
+  change (∑ p : ArchiveCochainBasis N,
+      φ.1 p • (degreePointBasis N k p).1 q) = φ.1 q
+  change (∑ p : ArchiveCochainBasis N,
+      φ.1 p * (degreePointBasis N k p).1 q) = φ.1 q
+  simp only [degreePointBasis_apply]
+  rw [Finset.sum_eq_single q]
+  · by_cases hq : fockDegree q.2 = k
+    · simp [hq]
+    · have hzero := φ.2 q.1 q.2 hq
+      simp [hq, hzero]
+  · intro p hp hne
+    have hqp : q ≠ p := fun h => hne h.symm
+    by_cases hdeg : fockDegree p.2 = k
+    · simp [degreePointBasis_apply, hdeg, hqp]
+    · simp [degreePointBasis_apply, hdeg]
+  · simp
+
+/-- Counting-pairing Riesz vector for any supplied linear functional on one
+homogeneous sector. -/
+noncomputable def degreeCountRiesz (N k : ℕ)
+    (ℓ : archiveDegreeSubmodule N k →ₗ[ℝ] ℝ) : archiveDegreeSubmodule N k := by
+  refine ⟨fun p => ℓ (degreePointBasis N k p), ?_⟩
+  intro x S hS
+  have hb : degreePointBasis N k (x, S) = 0 := by
+    unfold degreePointBasis
+    simp [hS]
+  change ℓ (degreePointBasis N k (x, S)) = 0
+  rw [hb, map_zero]
+
+theorem degreeCountRiesz_represents (N k : ℕ)
+    (ℓ : archiveDegreeSubmodule N k →ₗ[ℝ] ℝ)
+    (φ : archiveDegreeSubmodule N k) :
+    cochainPairing N φ.1 (degreeCountRiesz N k ℓ).1 = ℓ φ := by
+  classical
+  calc
+    cochainPairing N φ.1 (degreeCountRiesz N k ℓ).1 =
+        ∑ p : ArchiveCochainBasis N,
+          φ.1 p * ℓ (degreePointBasis N k p) := by
+      unfold cochainPairing degreeCountRiesz
+      exact (Fintype.sum_prod_type
+        (fun p : ArchiveCochainBasis N =>
+          φ.1 p * ℓ (degreePointBasis N k p))).symm
+    _ = ℓ φ := by
+      have hlin : ℓ φ = ∑ p : ArchiveCochainBasis N,
+          φ.1 p • ℓ (degreePointBasis N k p) := by
+        calc
+          ℓ φ = ℓ (∑ p : ArchiveCochainBasis N,
+              φ.1 p • degreePointBasis N k p) :=
+            congrArg ℓ (degreePointBasis_decomposition N k φ)
+          _ = ∑ p : ArchiveCochainBasis N,
+              φ.1 p • ℓ (degreePointBasis N k p) := by
+            rw [map_sum]
+            simp only [map_smul]
+      rw [hlin]
+      simp only [smul_eq_mul]
+
+/-- Any supplied symmetric bilinear energy on the sector; no kernel or Hodge
+operator is built into this data. -/
+structure SuppliedSymmetricEnergy (N k : ℕ) where
+  bilinear : archiveDegreeSubmodule N k →ₗ[ℝ]
+    archiveDegreeSubmodule N k →ₗ[ℝ] ℝ
+  symmetric : ∀ φ ψ, bilinear φ ψ = bilinear ψ φ
+
+/-- For an arbitrary supplied symmetric bilinear energy, its algebraic
+complementary representative exists and is unique relative to the explicit
+pairing. -/
+theorem energy_riesz_unique (N k : ℕ) (hk : k ≤ 4)
+    (Q : SuppliedSymmetricEnergy N k)
+    (ψ : archiveDegreeSubmodule N k) :
+    ∃! z : archiveDegreeSubmodule N (4 - k),
+      ∀ φ : archiveDegreeSubmodule N k,
+        algebraicComplementPairing N k hk φ z = Q.bilinear φ ψ := by
+  let ℓ : archiveDegreeSubmodule N k →ₗ[ℝ] ℝ :=
+    { toFun := fun φ => Q.bilinear φ ψ
+      map_add' := by intro φ χ; simp
+      map_smul' := by intro c φ; simp }
+  let q := degreeCountRiesz N k ℓ
+  let z := (algebraicComplementEquiv N k hk).symm q
+  refine ⟨z, ?_, ?_⟩
+  · intro φ
+    change cochainPairing N φ.1
+      (algebraicComplementToPrimal N k hk z).1 = Q.bilinear φ ψ
+    have hcomp := (algebraicComplementEquiv N k hk).apply_symm_apply q
+    rw [show algebraicComplementToPrimal N k hk z = q from hcomp]
+    exact degreeCountRiesz_represents N k ℓ φ
+  · intro z' hz'
+    have hz : ∀ φ : archiveDegreeSubmodule N k,
+        algebraicComplementPairing N k hk φ z = Q.bilinear φ ψ := by
+      intro φ
+      change cochainPairing N φ.1
+        (algebraicComplementToPrimal N k hk z).1 = Q.bilinear φ ψ
+      rw [show algebraicComplementToPrimal N k hk z = q from
+        (algebraicComplementEquiv N k hk).apply_symm_apply q]
+      exact degreeCountRiesz_represents N k ℓ φ
+    have hzero : ∀ φ : archiveDegreeSubmodule N k,
+        algebraicComplementPairing N k hk φ (z' - z) = 0 := by
+      intro φ
+      rw [algebraicComplementPairing_sub_right_eval, hz' φ, hz φ]
+      ring
+    exact sub_eq_zero.mp
+      ((algebraicComplementPairing_perfect N k hk).2 (z' - z) hzero)
 
 /-! ## Supplied geometric placement data (no canonical instance) -/
 
