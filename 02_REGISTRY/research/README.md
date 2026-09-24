@@ -20,4 +20,5 @@ Current gravity packets:
 - `MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md` — exact second-order Ward algebra, action-groupoid boundary and transverse Hessian freedom.
 - `MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT.md` — theorem-ready exterior/observer/frame lift with the staggered common-center law left explicit.
 - `MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md` — exact scalar groupoid derivative, forced second jet, scoped direct-cell obstruction and comparison-jet `S`.
+- `MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW.md` — fixed-N endpoint/center terminal: unlabelled-center holonomy obstruction, explicit soluble-but-nonunique scalar comparison jets, and the surviving path-resolved incidence comparison primitive.
 - `ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md` — truth-repaired three-tower/two-seam synthesis: fixed-level endpoint overlap in Role-phase geometry versus the separate golden/Role-phase inter-level weld.
