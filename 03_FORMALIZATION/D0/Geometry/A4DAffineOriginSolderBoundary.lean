@@ -199,7 +199,9 @@ theorem rawFullSolderFrameAction_misses_affine_translation_term
           (apply (1 : AffineCartanMap ℝ RoleSpace) 0) -
         (⟨LinearEquiv.refl ℝ RoleSpace, c⟩ : AffineCartanMap ℝ RoleSpace).lin 0 = c := by
     simpa [apply, one_lin, one_shift, map_zero, sub_zero, add_zero] using h
-  exact ⟨hres, hres ▸ hc⟩
+  refine ⟨hres, ?_⟩
+  intro hzero
+  exact hc (hres.symm.trans hzero)
 
 /-! ## Optional abstract interface (uninstantiated) -/
 
