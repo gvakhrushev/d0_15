@@ -74,8 +74,8 @@ def transition(task_id: str, action: str) -> None:
         task["state"] = "IN_PROGRESS"
 
     elif action == "retire":
-        if state not in {"IN_PROGRESS", "BLOCKED", "REVIEW"}:
-            raise LifecycleError(f"retire requires active execution state, got {state}")
+        if state != "IN_PROGRESS":
+            raise LifecycleError(f"retire requires IN_PROGRESS after all blockers are cleared, got {state}")
         brief = task.get("brief")
         if not isinstance(brief, str) or not brief:
             raise LifecycleError(f"{task_id} has no owned brief")
