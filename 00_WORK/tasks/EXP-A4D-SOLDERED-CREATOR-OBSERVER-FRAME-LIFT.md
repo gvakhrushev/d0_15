@@ -20,7 +20,7 @@ Repository:
 
 Minimum baseline:
 
-`dcb97d197d5f77d8583b3b922ddb4a09430e61a4`
+`c45e6c94759b2d52efdfbe28065038f1bfe60474`
 
 Use newer `origin/main` if available.
 
@@ -58,6 +58,16 @@ Treat as research input:
 5. A pointwise Lorentz exterior star has the correct signature square but cannot reproduce the off-site staggered first jet and does not equal the flat counting form.
 6. If both forward and reverse scalar stars are uniformly local and their exact composition is a scalar sign, the accepted neighboring scalar first jet is impossible. Do not attempt to repair this by changing only the nonlinear diagonal `q`.
 7. The first unowned constructive package is a local frame lift of the CAR/exterior fiber, moving creators/annihilators and compatible neighboring transport.
+
+## Newly merged owners to consume
+
+PR #69 owns the constitutive nonselection baseline: the radius-one Ward class, polynomial nonlinear nonselection, determinant-density freedom and metric-compatibility nonuniqueness.
+
+PR #70 owns the affine Cartan background/link package: affine node gauge, exact flat translation gauge equal to `forwardGaugeCoframe`, affine path transport, open curvature/torsion, based holonomy, uniform-radius Lie-closure no-go and factorized-local resource accounting.
+
+Therefore the neighboring-transport phase must first test whether the LINEAR PART of the owned affine link can be lifted by the exterior representation `rho` onto the existing Fock carrier. Do not introduce a second connection carrier until this possibility is exhausted.
+
+For a Lorentz-subgroup affine link, the natural candidate is `T_CAR = rho((A_xy).lin)`. Test creator covariance directly. The affine translation part acts on solder/coframe placement; it does not automatically act on the exterior fiber.
 
 ## New coordinator observation: observer Euclideanization
 

@@ -45,23 +45,13 @@ Applied directly in the public surfaces in this remediation change:
 
 ## P1 — universal M1 carrier classification
 
-Task: \`EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION\` (PLANNED).
+Status: **TERMINAL / M1-UNIVERSALITY-COUNTEREXAMPLE**.
 
-Current repository owns strong uniqueness/forcing inside explicitly formalized admissible architecture classes. The review correctly asks a stronger question:
+This research lane is completed and removed from active work. A killing test does not classify all finite catalogue-free carriers: inequivalent multi-line and unused-record carriers survive. Existing M1 uniqueness theorems remain valid only inside their explicitly stated admissible architecture classes.
 
-\[
-M_1\text{ premises}
-\Longrightarrow
-\text{classification of all admissible finite/catalogue-free carriers?}
-\]
+Any future category-wide universality theorem would require a new admissibility premise excluding extra lines, unused record coordinates and relabelings for a reason independent of naming the canonical carrier.
 
-The goal is either:
-
-- a theorem-ready universal classification architecture; or
-- a terminal statement identifying the additional admissibility/classification primitive needed.
-
-This lane does **not** invalidate the existing M1 uniqueness theorems inside their stated classes.
-
+Authoritative current statement: `02_REGISTRY/RESEARCH_LEDGER.md`, row `E-M1-UNIV`.
 ## P2 — genuine SM gauge representation / commutant owner
 
 Task: \`EXP-SM-GAUGE-REPRESENTATION-COMMUTANT\` (**IN_PROGRESS**).
@@ -80,17 +70,13 @@ A terminal no-go/bridge classification is acceptable.
 
 ## P3 — real dynamics owner
 
-This is **already active**, not queued as a duplicate review task.
+This lane is active under `CTRL-GRAVITY-DYNAMICS-CLOSURE`.
 
-Mapped to:
+Current child lanes are the flux-energy worker, located-star and reverse-star-no-go formalizations, soldered creator/observer frame-lift research, second-order Cartan/cell-energy research, and their planned integration workers.
 
-- \`CTRL-GRAVITY-DYNAMICS-CLOSURE\`;
-- \`EXP-A4D-CARTAN-CHAIN-CONNECTION-REALIZATION\`;
-- \`EXP-ATORUS-SPATIAL-CAR-HAMILTONIAN-STRESS\`;
-- the cloud-first primal/dual parent formalization lane.
+The current physical frontier is no longer the historical CAR-dispersion repair. Corrected difference-Hodge, moving parent Ward, affine Cartan path geometry and nonlinear constitutive nonselection are already owned.
 
-The review's request for an actual dynamics/action owner therefore reinforces the current critical path rather than replacing it. The latest gravity audit now records two sharp truth boundaries: MEMO_49 isolates the Cartan link-action/constitutive law as a genuinely new finite primitive, while MEMO_50 exposes that the landed CAR operator has cosine hopping dispersion rather than the advertised massless Laplacian square. The active gravity researcher is therefore the CAR-dispersion truth-repair lane before any Lorentz-stress promotion.
-
+The remaining P3 demand is sharper: obtain or terminally classify a frame-covariant matter action on the existing finite carrier, then define stress/source by variation of that same action. Topological located duality, positive observer energy and Lorentzian exterior star remain distinct until a theorem connects them.
 ## Semantic CI hardening
 
 Task: \`WRK-PUBLIC-CLAIM-STRENGTH-LINT\` (PLANNED, **cloud-first draft allowed while the sole local worker verifies the primal/dual parent draft**).
@@ -123,9 +109,9 @@ New decorative prediction lanes are not a priority.
 2. Continue active gravity/matter dynamics — **NOW**.
 3. Cloud-first theorem-ready formalization packages — **NOW**.
 4. Claim-strength lint — **NEXT worker/tooling lane**.
-5. P1 universal carrier classification — **planned researcher**.
-6. P2 SM gauge commutant/representation — **planned researcher**.
-7. Re-audit README/BOOK/monograph after P1/P2/P3 updates.
+5. P1 universal carrier classification — **TERMINAL / removed**.
+6. Continue P2 SM gauge commutant/representation — **IN PROGRESS**.
+7. Re-audit README/BOOK/monograph after P2/P3 updates.
 
 ## Closure condition
 

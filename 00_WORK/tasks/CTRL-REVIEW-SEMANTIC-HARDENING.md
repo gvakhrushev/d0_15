@@ -35,7 +35,7 @@ The obsolete migration CONTROL has been retired and its remaining certificate-fr
 Current execution:
 
 - P2 `EXP-SM-GAUGE-REPRESENTATION-COMMUTANT` — IN_PROGRESS;
-- P1 `EXP-M1-UNIVERSAL-CARRIER-CLASSIFICATION` — PLANNED next researcher;
+- P1 universal M1 carrier classification — TERMINAL / `M1-UNIVERSALITY-COUNTEREXAMPLE`; task removed per `RESEARCH_LEDGER`;
 - `WRK-PUBLIC-CLAIM-STRENGTH-LINT` — PLANNED, cloud-first draft permitted;
 - `WRK-CERT-ARTIFACT-FRESHNESS` — PLANNED under this control;
 - public Born / ΛCDM / SM-gauge / φ-route wording repairs are landed and must remain regression-protected.

@@ -14,15 +14,13 @@ PLANNED
 
 ## Start gate
 
-Do NOT start while WORKER WIP is full.
+READY NOW when a WORKER slot is assigned.
 
-Start only after:
+Do not wait for the flux-energy worker merely to formalize placement/topological duality.
 
-1. `WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL` is merged or its reusable pairing API is explicitly accepted by CONTROL;
-2. a WORKER slot is free.
+If the flux worker's algebraic complementary pairing API has merged, reuse it. If it has not merged, formalize only the colored carriers, placement, orientation, independent dual incidence and topological star. Do not create a competing public algebraic-pairing API; leave the later bridge as a thin integration theorem.
 
 Use current `main` at launch.
-
 ## Objective
 
 Lean-own the reference located primal/dual complement already established at research level.

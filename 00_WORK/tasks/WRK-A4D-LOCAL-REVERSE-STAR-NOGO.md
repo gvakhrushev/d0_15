@@ -14,8 +14,11 @@ PLANNED
 
 ## Start gate
 
-Start only when a WORKER slot is free and the located-star/flux APIs needed by the chosen formulation are merged or explicitly accepted by CONTROL.
+READY NOW when a WORKER slot is assigned.
 
+The Laurent-width theorem and explicit L=5 inverse witnesses are standalone and do not require the flux worker or located-star API.
+
+If those APIs have merged by implementation time, add a thin scalar-sector corollary; do not block the core proof on that integration.
 ## Objective
 
 Lean-own the research no-go that an exact two-sided scalar star cannot simultaneously have:

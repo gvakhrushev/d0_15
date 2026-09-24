@@ -52,6 +52,26 @@ D0/Geometry/A4DSecondOrderCartanWitness.lean
 
 Optionally add a thin integration module importing located star + flux kernel if needed.
 
+## Package 0 — reference strict-cell nonlinear laws
+
+Once the flux-energy API is available, formalize the two reference laws from the located-star/cell-action memo on the FULL uncentered coframe:
+
+```math
+q_S(x;e) = sum_{r,a} (e_r^a(x))^2  for S=empty,
+q_S(x;e) = sum_{r in S,a} (e_r^a(x))^2  otherwise,
+```
+
+```math
+W_1 = I + H + M_q,
+W_2 = I + H + 2 M_q.
+```
+
+Suggested additional module: `D0/Geometry/A4DLocatedMatterCellEnergy.lean`.
+
+Own as reference-cochain theorems: same flat value, same complete first jet H, dependence on full uncentered e, degree/parity preservation, strict forward elementary-cell support, L=2 Nyquist matrices, L=3 corner equality and explicit second-order separation.
+
+Do not claim local Lorentz covariance. Do not substitute PR #69's older `I+H+alpha H^2` family; it is a different nonselection witness with longer matter support.
+
 ## Package A — generic two-jet congruence algebra
 
 Over a suitable field, formalize:
@@ -124,6 +144,18 @@ H(a)+B(h,h)
 ]
 
 Name the theorem so it is clearly a specialization, not a physical selection theorem.
+
+## Owned background-gauge specialization
+
+PR #70 already owns the finite flat affine translation background. For the scaled node translation:
+
+```math
+e(t)=t d_f xi,
+```
+
+so the primary physical specialization has `a=e''(0)=0`.
+
+The unknown `K` is the second jet of the MATTER representation. Keep the generic algebraic `a` theorem as a reusable lemma, but do not present arbitrary `a` as the owned flat affine orbit.
 
 ## Package D — exact scalar five-cycle witness
 

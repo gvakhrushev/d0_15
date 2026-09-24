@@ -20,7 +20,7 @@ Repository:
 
 Minimum baseline:
 
-`7b408a8ed66c4d420cecc3e2b1e90ad6c5a2e570`
+`c45e6c94759b2d52efdfbe28065038f1bfe60474`
 
 Use newer `origin/main` if available.
 
@@ -94,6 +94,26 @@ Its second-order Cartan calculation must not be presented as the first physical 
 If `EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT` lands first, consume its frame-action conventions where relevant but keep Cartan gauge and local Lorentz frame covariance distinct.
 
 
+## Newly owned affine background action
+
+PR #70 is frozen input.
+
+The repository owns `D0.Geometry.ArchiveAffineCartanConnection`, including `affineTranslation_flat_eq_forwardGaugeCoframe`, affine node gauge/path transport, open curvature/torsion and their gauge laws.
+
+For the flat identity-linear affine connection and node translation `b_x=-L ξ(x)`, the transformed link shift is EXACTLY `forwardGaugeCoframe ξ`. Therefore this task must not search again for a finite background coframe orbit.
+
+For the scaled parameter `t ξ`, the owned flat translation sector gives the exact linear background path
+
+```math
+e(t)=t d_f ξ,
+```
+
+so on this owner `a=e''(0)=0`.
+
+The unresolved object is the action of the same finite background gauge on the MATTER carrier, hence its second jet `K=Q''(0)`.
+
+PR #70 also owns `no_uniform_radius_lie_closed`. Any matter lift of the full scalar Cartan closure must distinguish factorized-local path cost from a uniformly bounded compressed stencil.
+
 ## Primary question
 
 Given
@@ -110,7 +130,7 @@ what does exact second-order covariance of the SAME action force on
 D^2W_0[h,h]?
 ]
 
-In particular: does the already-owned first-order Cartan response integrate to a finite/local symmetry whose second jet selects `c`, or is the second jet of the symmetry itself a new primitive?
+In particular: does the already-owned finite affine BACKGROUND gauge admit a derived matter representation whose second jet selects `c`, or is that matter representation/second jet itself a new primitive?
 
 ## Mandatory two-jet algebra
 
@@ -268,29 +288,23 @@ For `L=3,5` and generic `L≥3`:
 
 Ask whether locality, degree preservation, pairing compatibility and constant preservation constrain `K`.
 
-## Phase C — can K be derived from a finite Cartan action?
+## Phase C — derive the matter lift of the owned affine gauge
 
-The repository owns only the first-order Cartan generator and moving linear equivalences.
+Do not search for another finite coframe transformation.
 
-Search for a genuine finite transformation law whose tangent is the accepted `G_ξ`.
+Start from the owned affine node gauge/background action and determine whether it induces an independently motivated representation on archive matter cochains/Fock states.
 
-Candidates may include:
+The matter lift must:
 
-- exponentiation;
-- rational/Cayley transforms;
-- local flow/composition laws;
-- path-word transformations;
-- affine Cartan transformations.
+- have first derivative equal to the accepted Cartan matter generator `G_ξ`;
+- compose according to the same node-gauge law;
+- respect the relevant pairing and degree structures;
+- distinguish factorized locality from uniformly bounded matrix support;
+- not be defined by demanding invariance of a preferred energy.
 
-Reject any candidate that:
+Audit the exterior/frame lift of the affine linear part, site/fiber action induced by the translation part, path-word/factorized-local representations, and the rational local gates already owned by PR #70 where applicable.
 
-- becomes nonlocal with system size;
-- ceases to preserve the relevant carrier;
-- has the wrong first derivative;
-- defines the background orbit by demanding energy invariance.
-
-The finite action must be independently motivated.
-
+The primary unknown is `K=Q''(0)`, not the existence of the background orbit.
 ## Phase D — composition constraints on the second jet
 
 If a finite local family exists, derive its group/composition law to second order.
@@ -376,8 +390,8 @@ Lorentz tensoriality by itself does not eliminate such a scalar multiplier.
 3. Does `e''(0)` affect the scalar diagonal witness?
 4. What second jet `K` is forced by the delta witness?
 5. Why does `Q=exp(tG)` fail?
-6. Is there a bounded-local finite Cartan action with tangent `G`?
-7. Does its group law fix `K`?
+6. Does the owned affine background action admit a matter representation with tangent `G`?
+7. Does the matter-representation composition law fix `K`?
 8. Does the fixed `K` select `c=1`, `c=2`, another value, or none?
 9. If no finite action exists, what exact no-go blocks it?
 10. Which part of the remaining energy freedom is truly constitutive rather than symmetry-jet freedom?

@@ -34,6 +34,23 @@ D0/Geometry/A4DObserverPositiveExteriorPairing.lean
 D0/Geometry/A4DSolderedCARTransport.lean
 ```
 
+## Metric-star/signature boundary package
+
+This worker also absorbs the common-fiber boundary from the located-star memo; no separate worker is required.
+
+Suggested module: `D0/Geometry/A4DMetricStarSignatureBoundary.lean`.
+
+Formalize:
+
+- the compound/Jacobi complementary-minor identity on one nondegenerate Lorentz fiber;
+- the flat Lorentz exterior-star coefficient `epsilon(S) * eta_S`;
+- the Lorentzian double-star sign `(-1)^(k*(4-k)+3)`;
+- degree-one flat Lorentz metric form is eta, not counting I;
+- a purely pointwise coefficient operator cannot have the accepted neighboring scalar first derivative;
+- a centered-solder pointwise version is additionally blind to the existing L=2 Nyquist witness.
+
+This is a signature/pointwise boundary theorem, not the physical located star.
+
 ## Mandatory baseline package if research is positive
 
 - exterior lift `ρ(Λ)=⊕ Λ^k` in the subset basis;
