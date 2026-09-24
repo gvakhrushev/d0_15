@@ -10,16 +10,16 @@ IN_PROGRESS
 
 Supervise the current finite gravity/matter closure seam without reopening already terminal lanes.
 
-The active critical path is:
+The flux-kernel and located-star prerequisites are landed. The active critical path is now:
 
 ```text
-flux-kernel → located-star → second-order WARD
+second-order research packet → WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD
 ```
 
-The frame-lift lane is parallel and does not block `J`:
+The frame-lift lane runs in parallel:
 
 ```text
-observer-CAR worker  (frame-lift research terminal already accepted)
+frame-lift research packet → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
 ```
 
 The scalar reverse-star no-go is a third object, not `J` and not `Q(e)`.
@@ -41,7 +41,7 @@ Never transfer a theorem or no-go from one row to another without an explicit ty
 The following are frozen current inputs to this CONTROL lane:
 
 - the diagonal Role action `diagonalRoleTransport` / signed site-Fock transport and its commutation with the corrected `D_H`;
-- the typed Role-cut owner with coefficients `143/117/99`, together with the `BalancedRole ≃ SpatialRole` weld/`iota` lane owned by the active flux worker;
+- the typed Role-cut owner with coefficients `143/117/99`, together with the `BalancedRole ≃ SpatialRole` weld/`iota` lane used by the landed flux owner;
 - the solder metric with `eta=(+---)` and the internal `1+3` Role split;
 - the corrected difference Hodge Dirac and the owned spatial shell of `D_H^2`, including the rank-96 shell for `L≥3`; the older cosine-hopping directional operator remains a different operator and must not be conflated with this shell;
 - the moving differential `d_T`, curvature as its square, pairing-forced dual action and mixed moving Ward;
@@ -109,7 +109,7 @@ Merged formal owners relevant to this seam include PRs #64–#70 and #74–#76; 
 
 ### Reverse-star locality no-go
 
-`WRK-A4D-LOCAL-REVERSE-STAR-NOGO` is research-ready and standalone. It must formalize the scoped theorem that uniformly bounded translation-covariant forward/reverse scalar stars with exact inverse composition cannot realize the accepted neighboring scalar first jet. Inverse-free parents, nonlocal inverses and enlarged fibers remain outside the no-go.
+`WRK-A4D-LOCAL-REVERSE-STAR-NOGO` landed in PR #74. The scoped theorem rules out uniformly bounded translation-covariant forward/reverse scalar stars with exact inverse composition for the accepted neighboring scalar first jet. Inverse-free parents, nonlocal inverses, enlarged fibers and the located two-color `J` remain outside that no-go.
 
 ### Frame/CAR lift
 
