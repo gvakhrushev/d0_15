@@ -16,17 +16,17 @@ BLOCKED
 
 NOT SATISFIED.
 
-Do not start until the successor reference/origin task
+Do not start until
 
-\`EXP-A4D-SOLDER-REFERENCE-LEG-SECTION\`
+\`EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE\`
 
-has landed a usable source-fibre reference-leg / affine-origin section, or the repository has explicitly adopted an equivalent primitive with the required flat, exact pure-gauge, pure-shift and frame-covariance laws.
+has landed a usable labelled-edge selection principle for the source reference/origin datum, or the repository has explicitly adopted the additional junction/basepoint/observer-minimality structure required by that terminal.
 
-PR #112 by itself does **not** satisfy this gate: it constructs only the conditional family \(\kappa_q\) for a supplied \(q\) and terminally identifies the missing reference section.
+PR #112 only constructs the conditional family \(\kappa_q\). PR #114 further shows that the mandatory normalization/covariance controls leave explicit curl and harmonic deformation freedoms. Therefore neither PR opens the finite-E gate by itself.
 
 ## Purpose
 
-This is the next constitutive research step **after** the solder–Cartan edge comparison **and** after the reference-leg/origin datum needed to make \(\kappa(A,e)\) intrinsic has landed.
+This is the next constitutive research step only **after** the solder–Cartan comparison, the reference-leg nonselection classification, and a genuine labelled-edge selection principle have landed.
 
 The target is not \(W_{\rm flux}\) itself and not a second-jet selector.
 
