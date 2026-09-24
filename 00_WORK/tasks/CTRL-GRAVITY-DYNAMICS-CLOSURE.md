@@ -12,22 +12,25 @@ Supervise the current finite gravity/matter closure seam without reopening alrea
 
 The flux-kernel, located-star and second-order theorem packages are landed.
 
-PR #80 Lean-owns the second-order covariance algebra, scalar advective groupoid derivative, forced output-site-local second jet and the scoped direct elementary-cell obstruction. The remaining constitutive research seam is the fixed-level endpoint/common-center comparison law.
+PR #80 Lean-owns the second-order covariance algebra and scalar advective boundary; PR #98 Lean-owns the endpoint/overlap comparison boundary. PR #95 then terminally shows that a bare path-word action is categorically too small: the remaining fixed-level constitutive seam is one crossed representation coupling horizontal path-expression transport to the independent vertical background groupoid.
 
-Three formalization lanes are now available and intentionally non-overlapping:
+Current parallel lanes are intentionally non-overlapping:
 
- ```text
-frame/observer/path substrate
+```text
+frame/observer/exterior path substrate
   → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
 
-PR #84 endpoint/overlap terminal
-  → WRK-A4D-ENDPOINT-OVERLAP-COMPARISON-BOUNDARY
+PR #95 algebraic crossed boundary
+  → WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY
 
-PR #86 golden/RG terminal
-  → WRK-A4D-GOLDEN-RG-DEFECT-INTERFACE
+PR #95 crossed constitutive primitive
+  → EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION
+
+PR #86 + PR #99 inter-level boundary
+  → EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD
 ```
 
-The fixed-level research successor is now `EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION`, driven by the terminal PR #84 requirement that endpoint comparison remember path/relative holonomy. The scalar reverse-star no-go is a separate object, not `J` and not `Q(e)`.
+PR #98 has already Lean-owned the endpoint/overlap boundary and PR #99 has already Lean-owned the scalar golden/RG defect interface. The scalar reverse-star no-go remains a separate object, not `J` and not the constitutive section `W`.
 
 The topological placement, positive matter energy, Lorentzian exterior form, local frame covariance, connection transport and gravity-source variation stay distinct typed layers until a theorem identifies them.
 
@@ -82,9 +85,10 @@ The following are frozen current inputs to this CONTROL lane:
 Current frontier labels:
 
 ```text
-ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED
-FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING
-PATH-RESOLVED-MATTER-WORD-ACTION-OPEN
+ENDPOINT-OVERLAP-COMPARISON-BOUNDARY-LEAN-OWNED
+GOLDEN-RG-DEFECT-INTERFACE-LEAN-OWNED-CARRIER-WELD-MISSING
+PATH-WORD-HORIZONTAL-ACTION-CONSTRUCTED-CROSSED-CONSTITUTIVE-LAW-REQUIRED
+FRAME-CAR-PATH-TRANSPORT-SUBSTRATE-OPEN
 ```
 
 Landed prerequisites:
@@ -116,12 +120,14 @@ MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT
 Active fixed-level research lane:
 
 ```text
-MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW
-+ SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION
-→ EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION
+MEMO_A4D_PATH_RESOLVED_MATTER_WORD_ACTION
+→ PATH-WORD-HORIZONTAL-ACTION-CONSTRUCTED-CROSSED-CONSTITUTIVE-LAW-REQUIRED
+→ EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION
 ```
 
-The observer worker must not instantiate the missing constitutive `C_N`; the endpoint worker formalizes only the already-terminal #84 boundary; the golden worker formalizes only the scalar defect interface and carrier-separation boundary. The EXP must not wait for any of these Lean workers to ask the fixed-level existence/obstruction question.
+PR #95 constructs the horizontal linear/exterior path action but separates it from the vertical background action. The full first jet is an additive length-≤2 path-expression/CAR kernel, and the scalar vertical action mixes word lengths. The surviving target is therefore a crossed constitutive package `(pi_b, R_gamma, alpha_gamma, W_b, J)`, with affine connection `A` and raw coframe `e` kept distinct until a solder/Cartan bridge is derived.
+
+The observer worker owns only the exterior/frame/path substrate. The crossed-path Lean worker owns only theorem-ready algebraic boundaries from #95. Neither worker may instantiate the missing physical crossed constitutive package.
 
 Fixed-level endpoint research is terminal in PR #84:
 
@@ -220,7 +226,7 @@ At research level it owns a scoped loop obstruction for one unlabelled center on
 
 This is not a universal matter/comparison no-go. A path-resolved primitive and inverse-free local parent remain possible but are not owned.
 
-The synthesis packet `SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md` sharpens that primitive into a research hypothesis: one typed word action `C_N(w;e,n)` may be the common source of first-jet `H`, comparison second-jet `S`, loop holonomy response, observer/frame covariance and located-`J` dualization. The formula transporting an energy by the same `C_N` is explicitly a hypothesis whose type/domain must be derived, not assumed. This is the subject of `EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION`.
+The synthesis packet `SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md` was resolved by PR #95. Its durable memo proves that a bare `C_N(w;e,n)` is under-typed/too small: path concatenation and background composition are different source categories, the horizontal exterior lift is blind to pure affine shifts, and the full `H(e)` is additive path-expression data. The new research target is `EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION`.
 
 ### Adjacent inter-level refinement seam
 
@@ -245,7 +251,7 @@ The earliest missing inter-level datum is therefore the typed comparison package
 
 with source/target types and Role equivariance. Located `J`, corrected `D_H`, `H(e)`, trace/measure and physical time remain separate downstream obligations.
 
-This strategic terminal is adjacent to, not part of, the fixed-level constitutive exit condition.
+PR #99 Lean-owns the scalar golden/RG defect interface while preserving the carrier-weld terminal. `EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD` now asks for the first actual carrier/function-space/algebra/operator comparison beyond the scalar probe. This strategic lane is adjacent to, not part of, the fixed-level constitutive exit condition.
 
 ### Stress/source
 
@@ -292,6 +298,6 @@ This control closes the current research/formalization gate when:
 2. the complete first jet `DW|_0 = H` / flux-energy kernel is Lean-owned;
 3. `D^2W|_0` and the matter second-jet boundary are either classified or terminally no-go;
 4. the frame/CAR lift is independently classified in its parallel lane;
-5. the path-resolved matter word action `C_N` is constructed or terminally scoped, including its relation to `H`, `S`, relative holonomy, observer/frame transport and fixed located `J`.
+5. the crossed constitutive representation is constructed or terminally scoped, including horizontal path-expression transport, vertical background action, crossed covariance, the constitutive section with full `H(e)` first derivative, observer/frame transport and fixed located `J`.
 
 Provenance-bearing stress/source and continuum Lorentz/Einstein promotion remain downstream gates; this CONTROL must not claim them closed merely because the current constitutive seam is classified.
