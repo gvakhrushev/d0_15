@@ -280,6 +280,8 @@ import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DConstitutiveHolonomyStabilizer
 import D0.Geometry.A4DConstitutiveKernelClassification
 import D0.Geometry.A4DDiscreteEnergyKernel
+import D0.Geometry.A4DGoldenCarrierWeldBoundary
+import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DLocalReverseStarNoGo
 import D0.Geometry.A4DLocatedMatterCellEnergy
 import D0.Geometry.A4DLocatedPrimalDualCell

@@ -114,3 +114,5 @@ D0.Geometry.A4DMovingDifferentialSecondJet,D0/Geometry/A4DMovingDifferentialSeco
 D0.Geometry.A4DCellHessianTransverseModulus,D0/Geometry/A4DCellHessianTransverseModulus.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
 D0.Geometry.A4DLocatedMatterCellEnergy,D0/Geometry/A4DLocatedMatterCellEnergy.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
 D0.Geometry.A4DScalarAdvectiveGroupoidObstruction,D0/Geometry/A4DScalarAdvectiveGroupoidObstruction.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
+D0.Geometry.A4DGoldenRolePhaseRGDefect,D0/Geometry/A4DGoldenRolePhaseRGDefect.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD.md
+D0.Geometry.A4DGoldenCarrierWeldBoundary,D0/Geometry/A4DGoldenCarrierWeldBoundary.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD.md
