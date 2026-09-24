@@ -70,43 +70,6 @@
       ],
       "exit_condition": "The generic exterior/frame/observer/link substrate and functorial exterior lift of owned PR #70 path transport are Lean-owned, including generic composition/inverse, observer positivity/adjoints, transported-center repair, covariant link differential with flat dForward/D_H limits, located-J boundary and pointwise/Nyquist obstructions; the crossed constitutive representation remains explicit research-owned work.",
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
-    },
-    {
-      "id": "WRK-A4D-GOLDEN-CARRIER-WELD-BOUNDARY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-ARCHIVE-LAPLACIAN-RG",
-        "D0-PERRON-SCALE-FLOW-OWNER-001",
-        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
-      ],
-      "exit_condition": "The repaired golden carrier/group/algebra/equivariance boundary is Lean-owned with exact early-stage exceptions and bounded arithmetic scope, while the surviving Role-equivariant correspondence and index rule remain research-owned.",
-      "brief": "00_WORK/tasks/WRK-A4D-GOLDEN-CARRIER-WELD-BOUNDARY.md"
-    },
-    {
-      "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-ARCHIVE-LAPLACIAN-RG",
-        "D0-PERRON-SCALE-FLOW-OWNER-001",
-        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
-      ],
-      "exit_condition": "Finite-dimensional A_k-C(B_n) correspondences are classified by explicit multiplicity data and their AF/Role-phase refinement equations either derive a canonical Role-compatible index/comparison law or identify the earliest additional action/index primitive without ad-hoc Fibonacci period insertion.",
-      "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE.md"
-    },
-    {
-      "id": "EXP-A4D-PATH-GROUPOID-CROSSED-MATTER-LIFT",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "A free-path/path-groupoid matter lift is constructed with an exact endpoint descent criterion, or the earliest additional affine path-response primitive is terminally identified, while retaining harmonic/curl holonomy rather than hiding it in the compressed endpoint quotient.",
-      "brief": "00_WORK/tasks/EXP-A4D-PATH-GROUPOID-CROSSED-MATTER-LIFT.md"
     }
   ]
 }
