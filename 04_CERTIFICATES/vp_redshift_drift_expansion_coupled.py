@@ -15,6 +15,7 @@ from pathlib import Path
 import numpy as np
 from scipy.optimize import minimize_scalar
 from scipy.stats import chi2
+from cert_runtime import assert_json_artifact_matches
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -289,8 +290,7 @@ def main() -> int:
             "information_cost": "at least one additional outcome-affecting shape degree of freedom; a free exponent is itself rejected in absolute goodness-of-fit",
         },
     }
-    if not VERDICT.exists():
-        VERDICT.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    assert_json_artifact_matches(VERDICT, result)
 
     print("=== D0-RDEC-01 coupled redshift-drift / expansion passport ===")
     print("HASHES_VERIFIED direct-drift verdict + DESI DR2 mean/cov; SAMPLE_DATA=False")

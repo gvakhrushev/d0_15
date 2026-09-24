@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import math
 from pathlib import Path
-from cert_runtime import output_path
+from cert_runtime import assert_json_artifact_matches, output_path
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -44,10 +44,7 @@ def main() -> int:
         "negative_controls": ["FAIL_PHOTON_ACCELERATION_MODEL"],
     }
     summary_path = PASSPORT / "feedback_partition_function_summary.json"
-    if not summary_path.exists():
-        summary_path.write_text(
-            json.dumps(result, indent=2) + "\n", encoding="utf-8"
-        )
+    assert_json_artifact_matches(summary_path, result)
     output_path(__file__, Path(__file__).with_suffix(".results.json").name).write_text(json.dumps(result, indent=2) + "\n")
     print("PASS_FEEDBACK_DETERMINANT_RETURN_CYCLES")
     print("PASS_FINITE_FEEDBACK_PARTITION_FUNCTION")

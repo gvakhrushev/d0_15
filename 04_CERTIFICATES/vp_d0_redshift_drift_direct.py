@@ -15,6 +15,7 @@ from pathlib import Path
 
 import numpy as np
 from scipy.stats import chi2, norm
+from cert_runtime import assert_json_artifact_matches
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -234,8 +235,7 @@ def main() -> int:
             "invalid_double_count_sigma_A_mps_per_year": invalid_sigma,
         },
     }
-    if not VERDICT.exists():
-        VERDICT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    assert_json_artifact_matches(VERDICT, result)
 
     print("=== D0-RD-01 direct redshift-drift passport ===")
     print("HASHES_VERIFIED arXiv:1211.4585 + arXiv:2603.02318; SAMPLE_DATA=False")
