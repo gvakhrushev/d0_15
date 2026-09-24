@@ -68,7 +68,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The slot-faithful List ChainStep evaluator has exact append/reverse and endpoint-independence iff trivial labelled holonomy, with the L=2 parallel-slot collision and its period consequence Lean-owned without conflating it with the older Prop-edge theorem.",
+      "exit_condition": "The literal List ChainStep evaluator has exact empty/append/reverse/inverse laws and endpoint-independence iff trivial labelled holonomy, with the L=2 parallel-slot collision and exact length-two positive-link period Lean-owned as the generic word skeleton for the next matter-link construction.",
       "brief": "00_WORK/tasks/WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT.md"
     },
     {
@@ -79,7 +79,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The current 16-state exterior path transport is Lean-proved to depend only on the linear affine path part, with an exact nonzero-translation witness showing that pure affine translational holonomy is invisible to this representation without promoting the boundary to a universal no-go.",
+      "exit_condition": "The current 16-state exterior path transport is Lean-proved to factor through the linear affine path part, with an exact nonzero affine-translation witness on which the exterior transport is identity, closing the linear channel while leaving the site-aware affine translation response as the genuinely missing channel.",
       "brief": "00_WORK/tasks/WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS.md"
     },
     {
@@ -90,7 +90,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "One fixed-N site-aware affine-sensitive elementary matter link is explicitly constructed on a typed free-path/path-expression carrier with exact path laws and complete owned first-jet recovery, or the earliest additional primitive required for such a link is terminally identified without hiding affine translation, curl, harmonic or L=2 labelled information in an endpoint quotient.",
+      "exit_condition": "One fixed-N positive elementary matter letter is constructed or terminally classified on an explicit site-aware carrier: its products define the labelled word action, its linear limit is PR #103 exterior transport, its affine translation channel is resolved, its global assembly has first derivative equal to the complete owned H(e), its exact descended cycle/plaquette relations linearize to PR #108, and its L=2 endpoint descent obeys the exact labelled period; otherwise the earliest failed L/E/B channel coupling is identified without reopening Q, S, K, stress, Einstein, physical time or golden refinement.",
       "brief": "00_WORK/tasks/EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK.md"
     }
   ]
