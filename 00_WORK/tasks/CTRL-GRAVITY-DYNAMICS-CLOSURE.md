@@ -75,7 +75,7 @@ The following are frozen current inputs to this CONTROL lane:
 Current frontier labels:
 
 ```text
-COMMON-CENTER-CELL-ACTION-NEW-PRIMITIVE-REQUIRED
+ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED
 FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING
 ```
 
@@ -103,17 +103,22 @@ MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT
 → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
 ```
 
-Research proceeds in parallel and does not wait for either worker:
+Fixed-level endpoint research is terminal in PR #84:
 
 ```text
 MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
-→ EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW
+→ MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW
+→ ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED
+```
 
+The remaining research lane is inter-level and strategic:
+
+```text
 ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS
 → EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD
 ```
 
-The first EXP is fixed-level/intra-Role-phase. The second is inter-level and strategic; it does not enlarge this CONTROL's constitutive exit condition.
+That inter-level EXP does not enlarge this CONTROL's fixed-level constitutive exit condition.
 
 `WRK-A4D-LOCAL-REVERSE-STAR-NOGO` is an independent scoped no-go. It does not repair, replace or block the located `J`.
 
@@ -183,8 +188,16 @@ S : Sym^2(im d_f) -> End(C^0)
 
 with strict cell support already forcing nontrivial distance-two components of `S+S^T`. The graded pure-gauge benchmark reproduces all blocks of `H(d_f xi)`, including Nyquist/corner, but does not extend to arbitrary uncentered coframes, harmonic strain or boosted raw solder backgrounds.
 
-Therefore the earliest live primitive is no longer a generic Hodge selector: it is a geometric endpoint/common-center comparison jet `S` together with a finite overlap-composition law. The scalar advective derivative / forced second jet / scoped direct-cell obstruction are Lean-owned by PR #80; `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW` continues the fixed-level construction research.
+PR #84 sharpens the fixed-level seam terminally. An unlabelled single-center factorization is scoped-obstructed by nontrivial relative holonomy, while the scalar support constraints themselves are soluble and nonselecting: an explicit two-edge `S_patch` cancels the forced distance-two entries and a continuous nearest-neighbor family preserves the same mandatory constraints. The earliest fixed-level datum is therefore a typed path-resolved incidence comparison primitive with relative-holonomy response, full-`H(e)` flat derivative, observer/frame law and fixed-`J` dualization. No all-order physical action is selected.
 
+
+### Endpoint comparison / overlap terminal
+
+PR #84 lands `MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW.md` with terminal `ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED`.
+
+At research level it owns a scoped loop obstruction for one unlabelled center on nontrivial relative holonomy, a minimal path-resolved incidence comparison signature and overlap law, an explicit constants-preserving two-edge scalar comparison jet satisfying the mandatory L=5 distance-two constraints, and a continuous nonselection family. Harmonic/curl, L=2 Nyquist, L=3 corner, observer/frame, fixed-`J`, locality and transverse-modulus boundaries are explicit.
+
+This is not a universal matter/comparison no-go. A path-resolved primitive and inverse-free local parent remain possible but are not owned.
 
 ### Adjacent inter-level refinement seam
 

@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     },
     {
-      "id": "EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "At fixed ArchiveRolePhaseGroup N, the endpoint/common-center comparison seam is terminally classified: a geometric comparison jet S and finite overlap law are constructed and tested against the full staggered first jet, observer/frame and located-J boundaries, or the exhausted fixed-N class is scoped no-go / the minimal remaining intra-level primitive is named exactly.",
-      "brief": "00_WORK/tasks/EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW.md"
-    },
-    {
       "id": "EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
