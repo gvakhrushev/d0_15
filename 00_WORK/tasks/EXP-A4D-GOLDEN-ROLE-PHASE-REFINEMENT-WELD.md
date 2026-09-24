@@ -246,7 +246,7 @@ Do **not** start by inventing a projection. Tower B already owns the coordinatew
 B_{N+1}\to B_N,
 \]
 
-built from the one-dimensional \`archiveRGPhaseProjection\`, and it is surjective.
+built from the one-dimensional `archiveRGPhaseProjection`, and it is surjective.
 
 First classify exactly what it is and is not:
 
@@ -254,9 +254,9 @@ First classify exactly what it is and is not:
 - Role-coordinatewise;
 - Role-permutation equivariant if provable from the definition;
 - generally **not** a homomorphism of the additive cyclic groups when consecutive moduli are incompatible;
-- already known not to give exact nearest-neighbor Laplacian projective compatibility for \`n>1\`.
+- already known not to give exact nearest-neighbor Laplacian projective compatibility for `n>1`.
 
-Reproduce the logic of the existing \`exact_projective_compatibility_fails\` owner only as an input boundary; do not spend the EXP re-proving it unless a generalized statement is required.
+Reproduce the logic of the existing `exact_projective_compatibility_fails` owner only as an input boundary; do not spend the EXP re-proving it unless a generalized statement is required.
 
 Then classify stronger alternatives.
 
@@ -281,7 +281,7 @@ The actual research question is now sharper:
 
 > can Tower C select or canonize a comparison structure that upgrades the already-owned finite-set projection to a physically meaningful **renormalized/operator-compatible** refinement, or must the physical tower use a different subsequence/correspondence?
 
-This classification is a prerequisite to any cross-level statement for \`J_N\`, \`D_H(N)\` or \`H_N(e)\`.
+This classification is a prerequisite to any cross-level statement for `J_N`, `D_H(N)` or `H_N(e)`.
 
 ## Phase 4 — ask what the golden tower can canonically select
 
