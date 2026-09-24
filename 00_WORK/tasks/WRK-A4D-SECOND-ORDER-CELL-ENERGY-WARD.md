@@ -21,7 +21,14 @@ Do NOT start until all are true:
 3. `WRK-A4D-LOCATED-PRIMAL-DUAL-STAR` is merged or CONTROL explicitly accepts its located-pairing API;
 4. Research terminal is frozen as `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`.
 
-Current main satisfies all four start gates: the flux kernel is merged via PR #75, the located primal/dual star is merged via PR #76, a WORKER slot is free, and the research terminal is frozen.\n\nDurable research packet: `02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md`.\n\nThis task integrates that verdict. It must not guess `K`, choose `c`, or repair a negative research result by inventing a different finite action.
+Current main satisfies all four start gates: the flux kernel is merged via PR #75, the located primal/dual star is merged via PR #76, a WORKER slot is free, and the research terminal is frozen.
+
+Durable research packets:
+
+- `02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md`
+- `02_REGISTRY/research/MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md`
+
+This task integrates that verdict. It must not guess `K`, choose `c`, or repair a negative research result by inventing a different finite action.
 
 ## Three-star dictionary — keep these objects distinct
 
@@ -77,6 +84,7 @@ It does not select a physical Lorentz stress tensor.
 ```text
 D0/Geometry/A4DSecondOrderEnergyCovariance.lean
 D0/Geometry/A4DSecondOrderCartanWitness.lean
+D0/Geometry/A4DScalarAdvectiveGroupoidObstruction.lean
 ```
 
 Optionally add a thin integration module importing located star + flux kernel if needed.
@@ -148,8 +156,7 @@ e(t)=th+\frac{t^2}{2}a,
 [
 W(e(t))
 =
-I+tH(h)+\frac{t^2}{2}
-left(H(a)+B(h,h)ight)+O(t^3),
+I+tH(h)+\frac{t^2}{2}\left(H(a)+B(h,h)\right)+O(t^3),
 ]
 
 where `B` is a supplied symmetric bilinear Hessian.
@@ -310,6 +317,136 @@ S_J=\iota_J^{-1}W.
 
 The same `J` may support different `W`.
 
+
+## Package J — integrated scalar advective groupoid obstruction
+
+This package absorbs the theorem-ready core of
+\`MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md\`.
+Do NOT create a separate worker for it.
+
+The package is deliberately scoped to the scalar class with **output-site parameter locality**
+
+\[
+(g_\xi(e)\psi)_x=\xi_x(D_e\psi)_x,\qquad D_0=D.
+\]
+
+Every no-go theorem below must expose that hypothesis. It is not a theorem about all background-dependent matter lifts.
+
+### J1. Commutator and forced background derivative
+
+Prove
+
+\[
+[M_\xi,D]=-H_0(\Delta\xi).
+\]
+
+Use the mixed action-groupoid two-jet law with the constant parameter \(\mathbf 1\) to derive
+
+\[
+(dD_\bullet)_0[h_\xi]
+=
+[M_\xi D,D]
+=
+-H_0(h_\xi)D.
+\]
+
+Define the particular mixed-cocycle derivative
+
+\[
+B_{\rm adv}(\xi,h)
+=
+-M_\xi H_0(h)D
+\]
+
+and prove that it satisfies the complete mixed cocycle equation.
+
+### J2. Forced matter second jet
+
+Prove
+
+\[
+K_\xi
+=
+G_\xi^2+B_{\rm adv}(\xi,h_\xi)
+=
+M_{\xi^2}D^2.
+\]
+
+This is a **derived particular second jet inside the explicit output-site-local class**.
+It does not replace the generic \`K\` in Packages A--I and does not select a universal matter representation.
+
+### J3. Complete L=5 delta matrix
+
+For \(\xi=\delta_0\), in cyclic order
+\((0,+1,+2,-2,-1)\), own the complete matrix
+
+\[
+K_\xi=
+\begin{pmatrix}
+-25/2&0&25/4&25/4&0\\
+0&0&0&0&0\\
+0&0&0&0&0\\
+0&0&0&0&0\\
+0&0&0&0&0
+\end{pmatrix}.
+\]
+
+Using the generic congruence package, own the induced energy Hessian
+
+\[
+D^2W_0[h,h]=
+\begin{pmatrix}
+25&0&-25/4&-25/4&0\\
+0&25/2&0&0&-25/2\\
+-25/4&0&0&0&0\\
+-25/4&0&0&0&0\\
+0&-25/2&0&0&25/2
+\end{pmatrix}.
+\]
+
+In particular prove the nonzero same-axis distance-two entry
+
+\[
+(D^2W_0[h,h])_{+1,-1}=-25/2.
+\]
+
+Also include the durable memo's non-delta \`L=5\` control with \(G^2\ne0\). Do not generalize delta nilpotence to that case.
+
+### J4. Scoped direct elementary-cell obstruction
+
+Define the support assumption literally:
+
+> each direct scalar matter-energy term uses matter arguments contained in the closure of one elementary archive cell.
+
+For \(L\ge5\), prove that a direct elementary-cell Hessian cannot couple the same-axis sites \(-1\) and \(+1\). Combine this with J3 to prove the scoped contradiction.
+
+Preferred theorem semantics:
+
+\`outputSiteLocal_noDirectElementaryCellInvariantEnergy\`.
+
+This is **not**:
+
+- a universal local-matter no-go;
+- a no-go for an inverse-free local parent with auxiliary variables;
+- a no-go for larger patches;
+- a no-go for a generator carrying the comparison correction
+  \(\mathcal S(h_\xi,h)\).
+
+### J5. Handoff boundary to the active EXP
+
+Record, without trying to solve it in Lean here, that unrestricted flat mixed-cocycle solutions may differ from \`B_adv\` by
+
+\[
+\mathcal S:
+\operatorname{Sym}^2(\operatorname{im}d_f)\to\operatorname{End}(C^0),
+\]
+
+symmetric in its two coframe arguments.
+
+The construction/integration of this comparison jet belongs to
+\`EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW\`.
+Do not invent \(\mathcal S\) in this worker.
+
 ## Truth boundaries
 
 Do NOT claim:
@@ -331,6 +468,9 @@ At minimum the formalization should own:
 ```text
 SECOND-ORDER-ENERGY-COVARIANCE-ALGEBRA-OWNED
 DELTA-CARTAN-EXPONENTIAL-SECOND-ORDER-NOGO-OWNED
+SCALAR-ADVECTIVE-GROUPOID-DERIVATIVE-OWNED
+SCALAR-ADVECTIVE-SECOND-JET-OWNED
+OUTPUT-SITE-LOCAL-DIRECT-CELL-ENERGY-NOGO-OWNED
 ```
 
 If selector remains open, retain:
@@ -359,5 +499,6 @@ Preferred theorem/module decomposition from the accepted memo:
 - `A4DActionGroupoidSecondJet`
 - `A4DMovingDifferentialSecondJet`
 - `A4DCellHessianTransverseModulus`
+- `A4DScalarAdvectiveGroupoidObstruction`
 
 Keep every no-go scoped to its explicit representation/constant-preservation hypotheses.
