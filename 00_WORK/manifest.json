@@ -92,17 +92,6 @@
       ],
       "exit_condition": "Lean owns the conditional transported-reference mismatch kappa_q for a supplied source reference leg q, with exact flat, pure-shift, cancellation and nilpotent-response controls, while selection of an intrinsic q(A,e) remains outside the worker.",
       "brief": "00_WORK/tasks/WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH.md"
-    },
-    {
-      "id": "WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Lean owns the exact affine-point covariance identity for the transported-reference difference and the explicit node-translation defect left by a linear-only solder law, without selecting a physical full-affine solder/origin structure.",
-      "brief": "00_WORK/tasks/WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY.md"
     }
   ]
 }
