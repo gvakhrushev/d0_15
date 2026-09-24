@@ -96,6 +96,28 @@
       ],
       "exit_condition": "Finite-dimensional A_k-C(B_n) correspondences are classified by explicit multiplicity data and their AF/Role-phase refinement equations either derive a canonical Role-compatible index/comparison law or identify the earliest additional action/index primitive without ad-hoc Fibonacci period insertion.",
       "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE.md"
+    },
+    {
+      "id": "WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The finite Role-phase defining relations are Lean-proved to impose the exact cycle-period and plaquette integrability constraints on the landed scalar crossed first-jet law, with hostile witnesses and pure-gauge compatibility, without overclaiming a universal no-go.",
+      "brief": "00_WORK/tasks/WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY.md"
+    },
+    {
+      "id": "EXP-A4D-PATH-GROUPOID-CROSSED-MATTER-LIFT",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "A free-path/path-groupoid matter lift is constructed with an exact endpoint descent criterion, or the earliest additional affine path-response primitive is terminally identified, while retaining harmonic/curl holonomy rather than hiding it in the compressed endpoint quotient.",
+      "brief": "00_WORK/tasks/EXP-A4D-PATH-GROUPOID-CROSSED-MATTER-LIFT.md"
     }
   ]
 }
