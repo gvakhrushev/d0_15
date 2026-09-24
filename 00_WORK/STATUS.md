@@ -1,15 +1,17 @@
-# Active Work Status
+# Work Queue & Control Status
 
-## Active Tasks Summary
+Runtime execution status lives in GitHub pull requests; the PR number is the execution ID.
 
-| Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Active | WIP (Active / Limit) |
+## Repository Task Summary
+
+| Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
 | WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
 | **Total** | **1** | **2** | **0** | **0** | **3** | **2 / 10** |
 
-## Active Tasks
+## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
