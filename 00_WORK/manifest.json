@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     },
     {
-      "id": "EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "At fixed Role-phase level, one typed crossed constitutive representation package is constructed or terminally classified: path-expression/CAR algebra and horizontal representation, vertical background action, crossed covariance, geometrically supplied constitutive section with full H(e) first derivative, observer/frame law and fixed located-J dualization; any missing solder/Cartan or affine-shift primitive is named exactly.",
-      "brief": "00_WORK/tasks/EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION.md"
-    },
-    {
       "id": "WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
