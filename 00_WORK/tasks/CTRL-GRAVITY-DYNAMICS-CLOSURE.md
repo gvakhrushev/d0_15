@@ -10,13 +10,11 @@ IN_PROGRESS
 
 Supervise the current finite gravity/matter closure seam without reopening already terminal lanes.
 
-The flux-kernel and located-star prerequisites are landed. The active critical path is now:
+The flux-kernel, located-star and second-order theorem packages are landed.
 
-```text
-second-order research packet → WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD
-```
+PR #80 Lean-owns the second-order covariance algebra, scalar advective groupoid derivative, forced output-site-local second jet and the scoped direct elementary-cell obstruction. The remaining constitutive research seam is the fixed-level endpoint/common-center comparison law.
 
-The frame-lift lane runs in parallel:
+The frame-lift worker remains the only active formalization lane:
 
 ```text
 frame-lift research packet → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
@@ -88,17 +86,17 @@ WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL  (#75)
 WRK-A4D-LOCATED-PRIMAL-DUAL-STAR        (#76)
 ```
 
-Current formalization lanes:
+Landed second-order formalization:
 
 ```text
 MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
 + MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
-→ WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD
+→ PR #80
 ```
 
-The scalar advective groupoid obstruction is integrated into that worker; there is no separate third formalization front.
+PR #80 owns the theorem-ready second-order and scalar advective packages while retaining `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED` for the still-unselected general comparison jet / nonlinear action.
 
-Parallel physical worker lane:
+Active physical worker lane:
 
 ```text
 MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT
@@ -137,7 +135,7 @@ Do not reopen as generic searches:
 - record/profinite vs Role-phase bonding separation (`6 ≠ 16` first-step fiber witness);
 - golden Bratteli refinement `M_phi`, its trace ratio, and forced dimensionless Perron scale flow.
 
-Merged formal owners relevant to this seam include PRs #64–#70 and #74–#76; PR #75 owns the flux/first-jet kernel and PR #76 owns the located two-color `J`.
+Merged formal owners relevant to this seam include PRs #64–#70, #74–#76 and #80; PR #75 owns the flux/first-jet kernel, PR #76 owns the located two-color `J`, and PR #80 owns the second-order / scalar-advective theorem package.
 
 ## Current frontier
 
@@ -159,7 +157,9 @@ Frame-lift research is terminal `FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`. 
 
 ### Second-order Cartan/cell-energy integrability
 
-Second-order research is terminal `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`. The exact two-jet identities, scoped background-independent representation no-go, constants-preserving rejection of c=1,2, groupoid second-jet equations and transverse Hessian modulus now pass to `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD`.
+PR #80 lands the accepted second-order package. Lean now owns the exact two-jet congruence algebra, generic/L=5 witnesses, scoped background-independent representation no-go, constants-preserving rejection of c=1,2 under its explicit ansatz, action-groupoid and moving-differential second jets, transverse coframe Hessian modulus, reference strict-cell weights, the forced output-site-local advective derivative and K_xi=M_(xi^2) D^2, plus the scoped direct elementary-cell obstruction.
+
+The terminal `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED` remains: PR #80 does not select a universal `K`, a coefficient `c`, the comparison jet `S`, or an all-order physical action.
 
 ### Common-center matter action
 
@@ -183,7 +183,7 @@ S : Sym^2(im d_f) -> End(C^0)
 
 with strict cell support already forcing nontrivial distance-two components of `S+S^T`. The graded pure-gauge benchmark reproduces all blocks of `H(d_f xi)`, including Nyquist/corner, but does not extend to arbitrary uncentered coframes, harmonic strain or boosted raw solder backgrounds.
 
-Therefore the earliest live primitive is no longer a generic Hodge selector: it is a geometric endpoint/common-center comparison jet `S` together with a finite overlap-composition law. The scalar advective derivative / forced second jet / scoped direct-cell obstruction are folded into `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD`; `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW` continues the fixed-level construction research.
+Therefore the earliest live primitive is no longer a generic Hodge selector: it is a geometric endpoint/common-center comparison jet `S` together with a finite overlap-composition law. The scalar advective derivative / forced second jet / scoped direct-cell obstruction are Lean-owned by PR #80; `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW` continues the fixed-level construction research.
 
 
 ### Adjacent inter-level refinement seam

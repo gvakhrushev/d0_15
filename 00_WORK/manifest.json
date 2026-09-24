@@ -61,20 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-        "D0-A4D-DELTA-CARTAN-EXPONENTIAL-NOGO-001",
-        "D0-A4D-SCALAR-ADVECTIVE-GROUPOID-001",
-        "D0-A4D-OUTPUT-SITE-LOCAL-CELL-NOGO-001"
-      ],
-      "exit_condition": "The terminal second-order and integrated common-center scalar handoffs are Lean-owned: exact congruence two-jet algebra, generic/L=5 witnesses, scoped background-independent representation no-go, action-groupoid and moving-d second jets, transverse Hessian modulus, plus the forced output-site-local advective derivative K_xi=M_{xi^2}D^2 and its scoped direct elementary-cell energy obstruction; the remaining comparison jet S is left explicit. FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED remains, because that particular jet does not select a universal K or a coefficient c.",
-      "brief": "00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md"
-    },
-    {
       "id": "WRK-A4D-OBSERVER-FRAME-CAR-LIFT",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
