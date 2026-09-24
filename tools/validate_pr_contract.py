@@ -211,7 +211,7 @@ def main() -> int:
     event = json.loads(pathlib.Path(event_path).read_text(encoding="utf-8"))
     try:
         validate_event(event, root)
-    except (ContractError, json.JSONDecodeError, OSError) as exc:
+    except (ContractError, json.JSONDecodeError, OSError, subprocess.CalledProcessError) as exc:
         print(f"FAIL_PR_CONTRACT: {exc}", file=sys.stderr)
         return 1
 
