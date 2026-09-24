@@ -124,6 +124,8 @@ This is the terminal
 
 It is strictly earlier and sharper than asking for another crossed representation.
 
+**Scope of the terminal.** What is forced is a covariant joint comparison/coupling between the independent affine-translation and solder/coframe data. This memo does **not** prove that every possible successful letter must factor through a separately named vector-valued `κ`. The `κ_N(A,e;x,r)` proposed in §20 is the minimal next primitive recommended by this construction, not a uniqueness theorem for all future B/E couplings.
+
 ---
 
 ## 1. Frozen inputs and ownership boundaries
