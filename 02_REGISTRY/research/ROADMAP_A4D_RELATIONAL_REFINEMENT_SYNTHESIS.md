@@ -6,7 +6,7 @@ CONTROL synthesis / roadmap input.
 
 This memo integrates the common-center matter result with the existing golden/refinement owners. It is not a new theorem owner and does not upgrade claims by itself.
 
-Baseline: \`main = e5b5bb15013865eec4bc74d0be0b1d1fcb166039\` at the start of the synthesis.
+Baseline: `main = e5b5bb15013865eec4bc74d0be0b1d1fcb166039` at the start of the synthesis.
 
 ## 1. Truth repairs before synthesis
 
@@ -20,12 +20,12 @@ r^2-r-1=0
 
 are properties of one quadratic object, not four independent laws.
 
-Do not use the older statement that the detector equation \`p+p^2=1\` and the period-one equation \`x=1+1/x\` are independent routes: under \`x=1/p\` they are algebraically the same relation, and \`02_REGISTRY/forcing_routes.json\` already audits that dependence.
+Do not use the older statement that the detector equation `p+p^2=1` and the period-one equation `x=1+1/x` are independent routes: under `x=1/p` they are algebraically the same relation, and `02_REGISTRY/forcing_routes.json` already audits that dependence.
 
 The current repaired multi-route statement is instead:
 
-- \`D0-PHI-HURWITZ-CLASS-CANONIZATION-001\`: Hurwitz over all reals selects the noble \`GL(2,Z)\` class; \`M1+\` canonization selects the minimal-description representative; \`x^2-x-1=0\` is an output.
-- \`D0-JONES-SLOT-SELECTOR-001\`: Jones quantization plus the explicit rational-capture premise selects the \`n=5\` slot, with \`phi^2\` as output. This route is BRIDGE-scoped because its Jones/Niven inputs are not internal finite owners.
+- `D0-PHI-HURWITZ-CLASS-CANONIZATION-001`: Hurwitz over all reals selects the noble `GL(2,Z)` class; `M1+` canonization selects the minimal-description representative; `x^2-x-1=0` is an output.
+- `D0-JONES-SLOT-SELECTOR-001`: Jones quantization plus the explicit rational-capture premise selects the `n=5` slot, with `phi^2` as output. This route is BRIDGE-scoped because its Jones/Niven inputs are not internal finite owners.
 
 The detector closure remains an owned operational identity, but it is not counted as an independent copy of the repaired Hurwitz route.
 
@@ -47,7 +47,7 @@ The repository already owns
 Q(D)=2\delta_0\phi^{D-1}=\phi^{D-4},
 \]
 
-with unit value at \`D=4\`, in \`D0.Claims.DimLadderCompact\` and its certificate.
+with unit value at `D=4`, in `D0.Claims.DimLadderCompact` and its certificate.
 
 This is therefore not merely a mnemonic. What is *not* owned is the promotion
 
@@ -61,13 +61,13 @@ without a typed bridge. The four archive Roles / Clifford-four carrier and the n
 
 ## 2. Three different towers already exist
 
-The nearest roadmap must not use one symbol \`N\` as if these were the same system.
+The nearest roadmap must not use one symbol `N` as if these were the same system.
 
 ### Tower A — record / profinite inverse system
 
 Literal owner:
 
-\`D0.Geometry.ArchiveRefinementTower\`
+`D0.Geometry.ArchiveRefinementTower`
 
 with
 
@@ -82,7 +82,7 @@ and flat integer-mod bonding
 \operatorname{ArchivePoints}(n+1)\to\operatorname{ArchivePoints}(n).
 \]
 
-\`ArchiveLightProfinite\` packages the inverse limit as a genuine Mathlib \`LightProfinite\`, and \`ContinuumAsInverseLimit\` uses it as the record/profinite continuum model.
+`ArchiveLightProfinite` packages the inverse limit as a genuine Mathlib `LightProfinite`, and `ContinuumAsInverseLimit` uses it as the record/profinite continuum model.
 
 This tower is informational. Its bonding map is not the geometric Role-coordinate bonding map.
 
@@ -104,16 +104,16 @@ Literal carriers:
 
 This is the finite geometry on which the current gravity/matter seam actually lives:
 
-- corrected cubical/CAR differential and \`D_H\`;
-- located primal/dual \`J\`;
-- the full staggered first jet \`H(e)\`;
+- corrected cubical/CAR differential and `D_H`;
+- located primal/dual `J`;
+- the full staggered first jet `H(e)`;
 - coframe, affine-link, Cartan and moving-differential structures.
 
-The repository already proves that Tower A and the natural coordinate-wise product bonding of Tower B are not stagewise isomorphic. At the first nontrivial step their zero-fiber cardinalities are \`6\` and \`16\` respectively:
+The repository already proves that Tower A and the natural coordinate-wise product bonding of Tower B are not stagewise isomorphic. At the first nontrivial step their zero-fiber cardinalities are `6` and `16` respectively:
 
-\`D0-ARCHIVE-FLAT-PRODUCT-BONDING-NOGO-001\`.
+`D0-ARCHIVE-FLAT-PRODUCT-BONDING-NOGO-001`.
 
-\`D0-ARCHIVE-TWO-LIMIT-SEPARATION-001\` records the corresponding record/metric limit separation.
+`D0-ARCHIVE-TWO-LIMIT-SEPARATION-001` records the corresponding record/metric limit separation.
 
 Therefore no future task may identify Tower A and Tower B merely because both stages have cardinality \((n+2)^4\).
 
@@ -121,9 +121,9 @@ Therefore no future task may identify Tower A and Tower B merely because both st
 
 The golden cylinder language already has its own canonical refinement owner:
 
-\`D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001\`.
+`D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001`.
 
-The forbid-\`11\` language recovers
+The forbid-`11` language recovers
 
 \[
 M_\phi=
@@ -137,13 +137,13 @@ M_\phi^2=M_\phi+I,
 
 with Fibonacci level growth and normalized trace ratio \(\phi\).
 
-\`D0-PERRON-SCALE-FLOW-OWNER-001\` separately owns the dimensionless scale law
+`D0-PERRON-SCALE-FLOW-OWNER-001` separately owns the dimensionless scale law
 
 \[
 \Lambda_{N+1}/\Lambda_N=\phi.
 \]
 
-At the measure layer, \`DetectorSupportGoldenWeight.cylWeight_refine\` owns the exact cylinder refinement identity
+At the measure layer, `DetectorSupportGoldenWeight.cylWeight_refine` owns the exact cylinder refinement identity
 
 \[
 \mu(wA)+\mu(wB)=\mu(w)
@@ -161,7 +161,7 @@ The nearby roadmap contains two different mathematical problems.
 
 Frozen terminal:
 
-\`COMMON-CENTER-CELL-ACTION-NEW-PRIMITIVE-REQUIRED\`.
+`COMMON-CENTER-CELL-ACTION-NEW-PRIMITIVE-REQUIRED`.
 
 At one fixed Role-phase level, the output-site-local scalar class
 
@@ -219,9 +219,9 @@ Any positive weld must say explicitly which structures are preserved:
 - Role permutation action;
 - archive translations / cyclic incidence;
 - cochain degree and parity;
-- located \`J\`;
-- corrected \`D_H\` or its square, with any required scale factor;
-- the complete first jet \`H(e)\`;
+- located `J`;
+- corrected `D_H` or its square, with any required scale factor;
+- the complete first jet `H(e)`;
 - golden cylinder trace/weight or Perron scale.
 
 A scale identity alone is not a carrier identification.
@@ -230,9 +230,9 @@ A scale identity alone is not a carrier identification.
 
 The golden tick ladder and its continuous dimensionless envelope are valid owned structures in their declared lane. However:
 
-- \`U_A\` is a finite cyclic archive translation, not a physical clock;
-- \`ArchiveSpatialHistorySplit\` explicitly keeps history tick, cyclic A-phase, phi-ladder, tick-scale section and observer structure distinct;
-- the causal/Pisot Role-A ↔ physical time-axis bridge remains separately classified under \`E-TIMEAXIS\`.
+- `U_A` is a finite cyclic archive translation, not a physical clock;
+- `ArchiveSpatialHistorySplit` explicitly keeps history tick, cyclic A-phase, phi-ladder, tick-scale section and observer structure distinct;
+- the causal/Pisot Role-A ↔ physical time-axis bridge remains separately classified under `E-TIMEAXIS`.
 
 Therefore no refinement result in this roadmap may infer physical time by identifying a golden step with Role-A translation.
 
@@ -244,11 +244,11 @@ The useful interpretation is narrower: golden refinement is a candidate inter-le
 
 Two worker lanes are sufficient:
 
-1. \`WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD\`
-   - absorb the scalar advective groupoid derivative, forced \`K=M_(xi^2)D^2\`, complete \`L=5\` matrices and scoped direct-cell obstruction from the common-center memo;
+1. `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD`
+   - absorb the scalar advective groupoid derivative, forced `K=M_(xi^2)D^2`, complete `L=5` matrices and scoped direct-cell obstruction from the common-center memo;
    - keep the full generic second-order Ward, action-groupoid and transverse-Hessian package.
 
-2. \`WRK-A4D-OBSERVER-FRAME-CAR-LIFT\`
+2. `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`
    - formalize exterior/frame/observer/link results independently;
    - do not select the common-center law.
 
@@ -258,11 +258,11 @@ A third standalone scalar-obstruction worker is unnecessary duplication.
 
 Two EXP lanes may run concurrently with Lean:
 
-A. \`EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW\`
+A. `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW`
 
-Purely intra-level Tower-B problem: construct or terminally classify the finite geometric law that integrates \(\mathcal S\) and recovers the full \`H(e)\` on arbitrary coframes.
+Purely intra-level Tower-B problem: construct or terminally classify the finite geometric law that integrates \(\mathcal S\) and recovers the full `H(e)` on arbitrary coframes.
 
-B. \`EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD\`
+B. `EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD`
 
 Inter-level problem: classify the strongest typed relation between Tower C and Tower B, while respecting the Tower-A/Tower-B bonding no-go.
 
@@ -279,7 +279,7 @@ Q_N(e),\quad R_N(\xi;e)
 that is simultaneously:
 
 - a valid finite matter action at each Role-phase level;
-- compatible with located \`J_N\`;
+- compatible with located `J_N`;
 - observer/frame covariant;
 - coherent under the accepted inter-level weld.
 
@@ -297,7 +297,7 @@ A provenance-bearing stress tensor is defined only by variation of the *same* al
 \to \text{matter}.
 \]
 
-No direct \`99 -> 96-shell\` or \`phi -> stress\` shortcut is admitted.
+No direct `99 -> 96-shell` or `phi -> stress` shortcut is admitted.
 
 ## 6. Strategic interpretation
 
@@ -335,12 +335,12 @@ Do not claim from this synthesis alone:
 
 - detector and old period-one equations are independent forcing routes;
 - Tower A = Tower B = Tower C;
-- the flat record \`archiveProjection\` is a physical Role-phase refinement;
+- the flat record `archiveProjection` is a physical Role-phase refinement;
 - \(\Lambda_{N+1}/\Lambda_N=\phi\) fixes a carrier comparison map;
 - \(\delta_0\) is negative;
-- \`D=4\` in the compact dimension ladder is already physical Lorentz spacetime dimension;
+- `D=4` in the compact dimension ladder is already physical Lorentz spacetime dimension;
 - \(\mathcal S\) is golden;
-- \`J\` is a metric star;
+- `J` is a metric star;
 - Role A is physical time;
 - a finite all-order matter action, stress tensor or Einstein equation is already owned.
 
