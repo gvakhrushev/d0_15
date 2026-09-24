@@ -72,7 +72,7 @@ arbitrary-background finite graded E dressing
 
 The current durable synthesis is
 
-`02_REGISTRY/research/SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING.md`.
+`02_REGISTRY/research/SYNTHESIS_A4D_LABELLED_REFERENCE_SELECTION_FRONTIER.md`.
 
 Two typing firewalls are now central:
 
