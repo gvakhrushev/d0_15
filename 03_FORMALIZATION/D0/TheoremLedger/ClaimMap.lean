@@ -1442,7 +1442,15 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-A4D-GOLDEN-RG-DEFECT-INTERFACE-001", moduleName := "D0.Geometry.A4DGoldenRolePhaseRGDefect",
       theoremName := "archiveRolePhaseProjection_eq_archiveRGPhaseProjection;archiveRolePhaseProjection_precomp;archiveRolePhaseProjection_perm;goldenScaleProbe_eq_phi;goldenScaleProbe_level_independent;goldenRGResidual_zero_iff;scalarAssignmentResidual_zero_iff;goldenRGResidual_eq_scalarAssignment;goldenEnergyCorrection_zero_iff;scalarAssignmentEnergy_zero_iff;operator_and_energy_zero_residuals;nearestNeighbor_exactProjective_fails", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-A4D-GOLDEN-CARRIER-WELD-BOUNDARY-001", moduleName := "D0.Geometry.A4DGoldenCarrierWeldBoundary",
-      theoremName := "rolePhasePoint_carriers_agree;record_rolePhase_firstStep_fibers;record_rolePhase_bonding_separation;record_rolePhase_two_limit_separation;towerC_scale_probe_eq_phi;suppliedOperatorResidual_zero_iff", status := ClaimStatus.leanCoreProved }
+      theoremName := "rolePhasePoint_carriers_agree;record_rolePhase_firstStep_fibers;record_rolePhase_bonding_separation;record_rolePhase_two_limit_separation;towerC_scale_probe_eq_phi;suppliedOperatorResidual_zero_iff", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-A4D-SCALAR-BACKGROUND-WORD-MIXING-001", moduleName := "D0.Geometry.A4DScalarBackgroundWordMixing",
+      theoremName := "scalarBackground_wordMixing;scalarBackground_wordMixing_split;wordMixingExpression_maxLength;wordMixingExpression_not_single_word;delta_wordMixing_diagonal;delta_wordMixing_not_oneLetter;delta_wordMixing_lengthTwo;delta_lengthTwo_outside_oneLetter;delta_wordMixing_empty_and_lengthTwo;nondelta_wordMixing", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-A4D-STAGGERED-FIRST-JET-PATH-EXPANSION-001", moduleName := "D0.Geometry.A4DStaggeredFirstJetPathExpansion",
+      theoremName := "backwardAverage_half_identity_plus_inverse;fluxForward_half_two_words;sameRole_corner_is_onsite;fluxForward_sameRole_onsite;linkSymmetric_oneEdge_pair;flatStaggeredH_additive_expansion;firstJetPathExpression_maxLength;firstJetPathExpression_not_single_word;firstJet_lengthAtMostTwo_additive;firstJet_retains_rawNyquist;firstJet_retains_periodThree_corner;firstJet_retains_degree;firstJet_retains_parity;firstJet_distinctRole_corner", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-A4D-HORIZONTAL-DRESSING-SECOND-JET-001", moduleName := "D0.Geometry.A4DHorizontalDressingSecondJetFreedom",
+      theoremName := "dressedTransport_identity;dressedTransport_comp;dressedTransport_reverse;quadraticDressing_zero;quadraticDressing_even;quadraticCoeff_ne_zero_of_nonneg;quadraticDressing_mul_inv;quadraticDressing_inv_mul;checker_times_invertible;checker_quadratic_factors_compose;quadraticDressing_secondJet_nonzero;quadraticDressing_secondJets_differ;dressedIdentity_stays;dressedWitness_secondJets_differ;quadraticEndpointClass_preservesFlatJet_changesSecondJet", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY-001", moduleName := "D0.Geometry.A4DCrossedPathAlgebraBoundary",
+      theoremName := "crossedPathAlgebraBoundary", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
