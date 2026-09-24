@@ -44,14 +44,15 @@ The nearby roadmap uses three distinct finite systems.
 | Tower | Literal carrier / owner | Bonding or refinement | Meaning |
 |---|---|---|---|
 | A — record/profinite | `ArchivePoints n = Fin ((n+2)^4)` | flat integer-mod `archiveProjection` | informational inverse-limit record carrier |
-| B — Role-phase/CAR | `ArchiveRolePhaseGroup N = Role -> ZMod (N+2)` | geometric period/coordinate comparison must be typed separately | carrier of `D_H`, `J`, `H(e)`, coframes and Cartan geometry |
+| B — Role-phase/CAR | `ArchiveRolePhaseGroup N = Role -> ZMod (N+2)` | coordinatewise finite-set projection is owned; stronger group/operator naturality is separate | carrier of `D_H`, `J`, `H(e)`, coframes and Cartan geometry |
 | C — golden Bratteli/AF | golden cylinder language / `M_phi` | Bratteli incidence, AF inclusion, Perron trace/scale | canonical golden refinement at algebra/trace/scale level |
 
 Frozen separation:
 
 - Tower A and the natural coordinate-wise product refinement underlying Tower B are NOT stagewise isomorphic under their accepted bondings; the first-step zero-fiber sizes are `6` and `16`.
 - Tower C already has a recovered golden refinement owner and forced dimensionless Perron scale ratio `phi`.
-- What is missing is a typed Tower-C <-> Tower-B weld. A common scale ratio is not a carrier map.
+- Tower B already has a surjective coordinatewise finite-set projection, but exact nearest-neighbor Laplacian projective compatibility is proved to fail for the accepted one-dimensional projection when `n>1`.
+- What is missing is a typed Tower-C <-> Tower-B weld that explains the correct carrier/operator comparison. A common scale ratio is not a carrier map.
 - `ArchiveSpatialHistorySplit` keeps history tick, cyclic A-phase, phi-ladder and observer structure distinct.
 
 Durable synthesis:
