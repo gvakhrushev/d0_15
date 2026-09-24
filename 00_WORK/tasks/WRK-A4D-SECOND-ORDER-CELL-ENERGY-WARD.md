@@ -10,7 +10,7 @@ WORKER / FORMALIZATION + INTEGRATION
 
 ## State
 
-PLANNED
+REVIEW
 
 ## Start gate
 
