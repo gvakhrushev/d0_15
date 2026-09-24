@@ -10,20 +10,44 @@
 
 **GOLDEN-ROLE-PHASE-WELD-NEW-PRIMITIVE-REQUIRED**
 
-The first comparison layer that is not immediately empty is a Role-equivariant correspondence / Hilbert bimodule
+The first comparison class not excluded by the repaired boundary is a finite-dimensional
+`A_k`–`C(B_n)` Hilbert correspondence / bimodule together with two further pieces of
+structure that are not currently owned:
 
-```text
-(A_k, C(B_n), X_{k,n})
-```
+1. an index rule relating Bratteli depth `k` to Role-phase period `n`;
+2. enough Role action data to state an actual equivariance law on both sides.
 
-together with an owned index rule relating Bratteli depth `k` to Role-phase period `n`. Neither datum is owned.
+A trivial `S_4` action on the Tower-C side is a useful control, but by itself it only says
+that the Tower-C data are Role-blind. It is not the desired weld.
 
-Scoped no-gos on the owned finite stages:
+The index rule may not be inserted as `k = n`, and the Role-phase modulus may not be set
+by hand to `L = F_m`. Either relation must come from a commuting/refinement law or another
+owned structural invariant.
 
-1. no bijection of finite point carriers `C_k ↔ B_n`;
-2. no consecutive group-homomorphism tower `B_{L_{k+1}} → B_{L_k}` along Fibonacci, Lucas, `F_k+1`, `F_k+2`, or `floor(phi^k)` period names;
-3. no injective unital `*-homomorphism A_k → C(B_n)` for `k ≥ 1`;
-4. no dimension-matching GNS identification of `(A_k, τ)` with `ℓ²(B_n)` or `ℓ²(B_n × Fock)`.
+Repaired scoped boundary:
+
+1. **finite point carriers:** exact enumeration finds no cardinality equality between the
+   tested Tower-C path/AF carriers and `B_n` in the stated finite range; no global
+   perfect-power/Fibonacci theorem is claimed;
+2. **group refinement:** a surjective hom
+   `(Z/L'Z)^4 -> (Z/LZ)^4` requires `L | L'`; if `gcd(L,L')=1`, every hom is zero.
+   Hence the owned consecutive `L+1 -> L` Role-phase step admits no nontrivial group
+   refinement hom, although the zero hom always exists;
+3. **AF -> commutative algebra:** for `k >= 1`, no injective unital algebra/*-algebra map
+   `A_k -> C(B_n)` can exist because `A_k` is noncommutative. More sharply, for
+   `k >= 2` both matrix blocks have size at least two, so there is no unital
+   `*-hom A_k -> C(B_n)` at all. The early stages `k=0,1` must be treated separately:
+   scalar summands give characters;
+4. **commutative algebra -> AF:** unital maps `C(B_n) -> A_k` are not excluded. They are
+   finite spectral decompositions / projection-valued labelings inside the two matrix
+   blocks. What is missing is a canonical Role/Bratteli/refinement-compatible choice;
+5. **Role equivariance:** Tower C currently has no owned `S_4` action, so
+   `Hom_{S_4}` across the towers is not yet a repository-typed object. If a trivial
+   action is artificially supplied on the Tower-C source, equivariant maps can exist,
+   but their images lie in the `S_4`-invariant sector on the Role side;
+6. **GNS dimension matching:** exact finite checks show no equality with
+   `ell^2(B_n)` or `ell^2(B_n x Fock)` on the tested stages. No all-stage arithmetic
+   no-go is inferred from growth alone.
 
 The PR #99 scalar
 
@@ -31,20 +55,22 @@ The PR #99 scalar
 goldenScaleProbe k = phi
 ```
 
-is independent of `k` and transports no Tower-C state. It is not a carrier weld.
+is independent of `k` and transports no Tower-C state. It remains a scalar diagnostic,
+not a carrier weld.
 
 ## 1. Exact tower types
 
 ### Tower B — Role-phase / CAR
 
-- `ArchiveRolePhasePoint n = Role → Fin(n+2)`
-- `ArchiveRolePhaseGroup n = Role → ℤ/(n+2)ℤ`
-- `archiveRolePhaseProjection n` is coordinatewise `archiveRGPhaseProjection n`, and `archiveRGPhaseProjection n x = ⟨x.val % archiveFibers n, …⟩`
+- `ArchiveRolePhasePoint n = Role -> Fin(n+2)`
+- `ArchiveRolePhaseGroup n = Role -> Z/(n+2)Z`
+- `archiveRolePhaseProjection n` is coordinatewise `archiveRGPhaseProjection n`
+- `archiveRGPhaseProjection n x = <x.val % archiveFibers n, ...>`
 
 With `L = n+2`:
 
 | n | L | `|B_n| = L^4` | cochain `16 L^4` |
-|---|---|---|---|
+|---|---:|---:|---:|
 | 0 | 2 | 16 | 256 |
 | 1 | 3 | 81 | 1296 |
 | 2 | 4 | 256 | 4096 |
@@ -53,21 +79,33 @@ With `L = n+2`:
 | 5 | 7 | 2401 | 38416 |
 | 6 | 8 | 4096 | 65536 |
 
-A group homomorphism `ℤ/L' → ℤ/L` requires `L | L'`. The owned consecutive projection always goes `n+1 → n`, i.e. `L+1 → L`, and is a finite-set map, not in general a group map.
+For positive moduli `L,L'`, a surjective hom
+`(Z/L'Z)^4 -> (Z/LZ)^4` forces `L | L'`: the source exponent `L'`
+annihilates every image, while the target contains elements of exact order `L`.
 
-Role `S_4` acts by permuting coordinates. PR #99 owns that this commutes with the coordinatewise projection at the **set** level only.
+If `gcd(L,L') = 1`, every hom is zero. Therefore for the owned consecutive step
+`L' = L+1`, every group hom is trivial. The repository projection
+`archiveRolePhaseProjection n` is nevertheless a valid finite-set map; the statement
+is that it is not a nontrivial group-refinement hom.
+
+Role `S_4` acts on Tower B by permuting coordinates. PR #99 owns commutation with the
+coordinatewise projection at the finite-set level.
 
 ### Tower C — golden cylinder / Bratteli / AF
 
-- incidence `M_φ = [[1,1],[1,0]]` recovered from forbid-`11`
-- `M_φ² = M_φ + I`
-- path counts `p(0)=(1,1)`, `p(k+1)=(a+b, a)`
-- `A_k = M_a(ℂ) ⊕ M_b(ℂ)`, `dim A_k = a² + b²`
-- unique normalized trace ratio `φ`
-- cylinder identity `μ(w0)+μ(w1)=μ(w)` on allowed words
+The owned AF owner gives:
 
-| k | `(a,b)` | paths / words | `dim A_k` |
-|---|---|---|---|
+- incidence `M_phi = [[1,1],[1,0]]`;
+- path counts `p(0)=(1,1)`, `p(k+1)=(a+b,a)`;
+- stage shape `A_k = M_a(C) oplus M_b(C)`;
+- algebra dimension `dim A_k = a^2+b^2`;
+- Perron trace/scaling ratio `phi`;
+- trace-preserving GNS refinement isometry internal to the AF tower.
+
+Initial controls:
+
+| k | `(a,b)` | paths `a+b` | `dim A_k` |
+|---|---:|---:|---:|
 | 0 | (1,1) | 2 | 2 |
 | 1 | (2,1) | 3 | 5 |
 | 2 | (3,2) | 5 | 13 |
@@ -76,100 +114,219 @@ Role `S_4` acts by permuting coordinates. PR #99 owns that this commutes with th
 | 5 | (13,8) | 21 | 233 |
 | 6 | (21,13) | 34 | 610 |
 
-Index `k` is Bratteli depth. It is not Role-phase period `n`, not record depth, not a history tick, and not physical time.
+Index `k` is Bratteli depth. It is not Role-phase period `n`, record depth, a history
+tick, or physical time.
 
 ### Tower A — record / profinite
 
-Not used as a substitute. First-step fibers `6 ≠ 16` remain the owned A/B separation (`record_rolePhase_firstStep_fibers`).
+Tower A is not used as a substitute. The first-step `6 != 16` record/Role-phase
+separation remains owned by `A4DGoldenCarrierWeldBoundary`.
 
 ## 2. Comparison classes
 
-### 2.1 Point carrier — scoped no-go
+### 2.1 Point carrier — finite-range no-go only
 
-`|B_n| ∈ {16, 81, 256, 625, 1296, 2401, 4096, …}`.
-Word / path counts `∈ {2, 3, 5, 8, 13, 21, 34, 55, 89, …}`.
-`dim A_k ∈ {2, 5, 13, 34, 89, 233, 610, …}`.
+Tower-B cardinalities are fourth powers `(n+2)^4`.
+Tower-C finite path counts begin
 
-No coincidence on the first twelve stages. In particular `16, 81, 256, 625, 1296` are not Fibonacci numbers.
+```text
+2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+```
 
-Role-equivariance is independently empty: Tower C has the SFT shift and a 2-vertex Bratteli labelling, not an `S_4`-action. The only equivariant maps would use a trivial Role action on `C_k`, which is not a weld.
+and AF algebra dimensions begin
 
-This is not a ban on correspondences.
+```text
+2, 5, 13, 34, 89, 233, 610, ...
+```
 
-### 2.2 Function space — no canonical weld
+Exact enumeration for `0 <= k,n <= 11` finds no equality between either tested Tower-C
+sequence and `|B_n|`, and no equality between `dim A_k` and the cochain dimension
+`16|B_n|`.
 
-Linear maps `Fun(C_k) → Fun(B_n)` exist because both spaces are finite-dimensional. Canonical ones do not. `Hom_{S_4}(Fun(C_k), Fun(B_n))` vanishes unless `S_4` acts trivially on the source. Pullback along a point map is unavailable by §2.1.
+This is deliberately a finite-range theorem target. It is not promoted to a global
+statement that Fibonacci numbers or AF dimensions can never be fourth powers.
 
-### 2.3 Algebra homomorphism — scoped no-go
+Cardinality excludes bijections only. It does not exclude injections, surjections,
+relations, stochastic kernels, representations, or Hilbert correspondences.
 
-`A_k` is noncommutative for `k ≥ 1` (`dim A_1 = 5 = 4+1`). `C(B_n)` is commutative of dimension `L^4`.
+### 2.2 Role-equivariant function maps — typing boundary
 
-Any unital `*-homomorphism A_k → C(B_n)` kills commutators and factors through the abelianization `ℂ ⊕ ℂ` (two block traces = two Bratteli vertices). That image is not Role-phase geometry.
+Tower C currently owns the golden shift/Bratteli structure, but no Role-permutation
+`S_4` action. Therefore a repository-level object such as
 
-A unital hom `C(B_n) → A_k` is a choice of commuting projections inside `M_a ⊕ M_b`. That is a labelling of matrix units by Role-phase points — a point-carrier map in disguise, already excluded.
+```text
+Hom_{S_4}(Fun(C_k), Fun(B_n))
+```
 
-### 2.4 GNS identification — scoped no-go
+is not typed until an action on the Tower-C source is supplied.
 
-On these finite AF stages the GNS space of the unique trace has dimension tracking `dim A_k`. Compare:
+As a negative control, artificially give the source the trivial `S_4` action. Then
+nonzero equivariant maps can exist, but for every source vector `v` their images satisfy
 
-- `dim GNS_C ∈ {2, 5, 13, 34, 89, 233}`
-- `|B_n| ∈ {16, 81, 256, 625, …}`
-- `|B_n| × 16 ∈ {256, 1296, 4096, …}`
+```text
+sigma . f(v) = f(v)
+```
 
-No match. The existing vNext firewall already says AF/GNS isometry is not a D0 Hilbert identification. This audit does not construct a new GNS owner.
+for every Role permutation `sigma`. Thus the image lies in the invariant subspace.
+This does not encode how Tower-C data transform as Role geometry.
 
-### 2.5 Reindexed group tower — scoped no-go
+### 2.3 Algebra maps `A_k -> C(B_n)` — exact stage boundary
 
-Hostile period names and consecutive divisibility `L_k | L_{k+1}`:
+For `k >= 1`, `A_k` has a noncommutative matrix block, while `C(B_n)` is
+commutative. Hence no injective unital hom can exist.
 
-| name | first terms | consecutive divisibility after the first two steps |
+The sharper character statement is stage-sensitive.
+
+For a nonzero commutative unital algebra `D` and `m >= 2`, there is no nonzero
+unital hom
+
+```text
+M_m(C) -> D.
+```
+
+A matrix-unit proof is enough: commutativity forces the images of distinct diagonal
+matrix units to coincide, while their product is zero; unitality then contradicts the
+sum of the diagonal units.
+
+Consequences for `A_k = M_a(C) oplus M_b(C)`:
+
+- `k=0`: `A_0 = C oplus C`; characters/unital maps to a commutative target exist;
+- `k=1`: `A_1 = M_2(C) oplus C`; projection to the scalar summand gives a character,
+  so unital maps still exist;
+- `k>=2`: `a,b >= 2`; neither block has a character, so no unital
+  `*-hom A_k -> C(B_n)` exists.
+
+Normalized matrix traces are **not** multiplicative and are not used as algebra
+homomorphisms.
+
+### 2.4 Algebra maps `C(B_n) -> A_k` — noncanonical positive class
+
+This direction is not ruled out by commutativity or cardinality.
+
+A unital `*-representation`
+
+```text
+C(B_n) -> M_a(C)
+```
+
+is equivalent to a family of pairwise orthogonal projections indexed by `B_n`
+whose sum is the identity; zero projections are allowed. For
+`A_k = M_a(C) oplus M_b(C)`, one chooses such a spectral decomposition in each block.
+
+Therefore many noninjective maps exist. The current repository does not supply a
+canonical choice that is simultaneously:
+
+- Role-covariant;
+- Bratteli-compatible;
+- compatible with the Role-phase bonding;
+- derived without arbitrary labeling of matrix subspaces by Role-phase points.
+
+This direction remains a possible ingredient of a correspondence; it is not a solved weld.
+
+### 2.5 GNS identification — finite-range no-go only
+
+At finite AF stages the trace GNS vector space has dimension `dim A_k`. Exact
+enumeration for `0 <= k,n <= 11` shows no equality with either
+
+```text
+dim ell^2(B_n) = |B_n|
+dim ell^2(B_n x Fock) = 16 |B_n|.
+```
+
+This rules out dimension-preserving identifications on that tested rectangle only.
+It does not prove an all-stage perfect-power theorem and does not disturb the genuine
+internal AF GNS refinement isometries already owned by `FibonacciAFTower`.
+
+### 2.6 Reindexed group tower — scoped no-go
+
+A full **surjective group-refinement tower** along a proposed modulus sequence
+`L_0,L_1,...` would require `L_j | L_{j+1}` at every adjacent step.
+
+The common hostile names already fail this necessary condition at an explicit early
+adjacent pair:
+
+| name | first terms | explicit failing adjacent pair |
 |---|---|---|
-| `F_k` | 1, 1, 2, 3, 5, 8, 13, … | fails from `2 ∤ 3` |
-| `F_k+1` | 2, 2, 3, 4, 6, 9, … | fails from `2 ∤ 3` |
-| `F_k+2` | 3, 3, 4, 5, 7, … | fails from `3 ∤ 4` |
-| `floor(phi^k)` | 1, 2, 4, 6, 11, … | fails from `4 ∤ 6` |
-| Lucas | 1, 3, 4, 7, 11, … | fails from `3 ∤ 4` |
+| `F_j` | 1, 1, 2, 3, 5, 8, ... | `2 not| 3` |
+| `F_j+1` | 2, 2, 3, 4, 6, 9, ... | `2 not| 3` |
+| `F_j+2` | 3, 3, 4, 5, 7, ... | `3 not| 4` |
+| `floor(phi^j)` | 1, 2, 4, 6, 11, ... | `4 not| 6` |
+| Lucas | 1, 3, 4, 7, 11, ... | `3 not| 4` |
 
-No owned Tower-C theorem produces a divisibility chain of Role-phase moduli. Abstract doubling subsequences such as `F_{2^m} | F_{2^{m+1}}` are not Role-phase period laws.
+One failing adjacent step is enough to rule out the **full consecutive surjective tower**
+for that named sequence. It does not say that every pair fails, nor that no useful
+subsequence can ever have divisibility.
 
-Owned bonding on B is always the `+1` period step. Owned bonding on C is Bratteli incidence / letter restriction with ratio `→ φ`. These are different functors.
+Subsequences such as Fibonacci divisibility subsequences are mathematically available,
+but no current Tower-C theorem canonizes one as the Role-phase period law.
 
-### 2.6 One-dimensional Zeckendorf candidate — positive, not a weld
+### 2.7 One-dimensional Zeckendorf candidate — positive control, not a weld
 
-No-`11` words of length `k` are in bijection with `{0, …, F_{k+2}-1}` by the standard Fibonacci coding. Prefix-restriction `k+1 → k` and integer reduction modulo `F_{k+2}` have the same fiber-size multiset (Fibonacci 1-or-2 fibers). Explicit control `13 → 8`: both maps have fiber sizes `{1,1,1,2,2,2,2,2}`.
+No-`11` words admit the standard Fibonacci coding by an initial integer interval.
+Prefix restriction and reduction modulo a Fibonacci-sized interval can exhibit the same
+fiber-size multiset in small exact controls; for example the `13 -> 8` control has
+five fibers of size two and three of size one.
 
-This does **not** identify:
+This does not identify:
 
-- owned `archiveRGPhaseProjection : Fin(n+3) → Fin(n+2)` with Fibonacci restriction;
+- the owned `archiveRGPhaseProjection : Fin(n+3) -> Fin(n+2)` with Fibonacci restriction;
 - cyclic translation `+1 mod L` with the golden shift;
-- the four-fold Role product `B_n` with a product of four word spaces;
-- an `S_4` action on words.
+- the four-fold Role product `B_n` with four word spaces;
+- an `S_4` action on Tower-C words.
 
-To promote it one would have to choose `n+2 = F_m` and replace the owned consecutive projection by a non-owned Fibonacci bonding. That is new primitive data, not a weld of present owners.
+Promoting the observation by declaring `n+2 = F_m` would insert the missing index rule
+rather than derive it.
 
-### 2.7 Correspondence / bimodule — the remaining layer
+### 2.8 Correspondence / bimodule — surviving class
 
-A Hilbert `A_k`–`C(B_n)` bimodule `X_{k,n}` is the first class not killed by commutativity, cardinality, or missing `S_4` on C: the bimodule can carry the Role action on the `C(B_n)` side only. Existence of *some* bimodule is cheap and noncanonical. A weld requires:
+A finite-dimensional Hilbert `A_k`–`C(B_n)` correspondence is not excluded by the
+preceding no-gos.
 
-1. an owned rule `k ↔ n` that is not `k = n` and not an ad-hoc `L = F_k`;
-2. Role-equivariance of `X` on the B side;
-3. compatibility of the two refinement operations (Bratteli inclusion on `A_k`, `p_n` on `B_n`) as a correspondence square;
-4. only then a residual test against PR #99.
+Fiberwise over the finite spectrum `B_n`, such a correspondence is a family of finite
+Hilbert spaces carrying representations of
 
-None of (1)–(3) is owned. This is the missing primitive.
+```text
+A_k = M_a(C) oplus M_b(C).
+```
+
+Each fiber representation is classified by a pair of nonnegative multiplicities of the
+two simple AF blocks. This makes the surviving problem concrete rather than placeholder
+structural data.
+
+A genuine weld still needs:
+
+1. an owned relation between `k` and `n`;
+2. an owned or derived `S_4` action on the Tower-C/left side, or an explicit theorem
+   explaining why a weaker one-sided equivariance is the intended structure;
+3. a refinement law comparing Bratteli inclusion with pullback/pushforward along the
+   Role-phase projection;
+4. only after (1)–(3), evaluation against the PR #99 operator and energy residuals.
+
+A trivial `S_4` action on `A_k` can be used as a control. It forces the multiplicity
+data to be constant on Role orbits on the `B_n` side, but it does not by itself identify
+Tower-C structure with Role geometry.
+
+No such refinement-compatible correspondence family or index rule is currently owned.
 
 ## 3. PR #99 residual after the comparison audit
 
 ```text
-goldenScaleProbe k = phi          for every k
-goldenRGResidual n k P = 0  iff  RenormalizedProjectiveCompatibility n P phi
+goldenScaleProbe k = phi
+goldenRGResidual n k P = 0
+  iff RenormalizedProjectiveCompatibility n P phi
 ```
 
-Energy residual is a separate Dirichlet statement.
+The energy residual is a separate Dirichlet statement.
 
-These theorems take an arbitrary finite-set comparison `P` of one-dimensional phase indices and a real probe. They do not receive a Tower-C word, AF element, or measure. After §2 there is still no `P` supplied by a carrier / function / algebra map from C. The residual remains a conditional diagnostic. Setting `c = phi` does not upgrade it to a weld.
+These theorems accept a supplied finite-set comparison `P` of one-dimensional phase
+indices and a scalar probe. They do not receive a Tower-C word, AF element, trace-GNS
+vector, or correspondence.
 
-Nearest-neighbor exact projective failure for `n > 1` stays a negative control at scale `1`, not a theorem that the golden residual never vanishes.
+Therefore the residual remains a conditional diagnostic. Setting `c = phi` does not
+construct a carrier, algebra map, or correspondence.
+
+The nearest-neighbor exact-projective failure at scale `1` remains a negative control.
+It is not a theorem that the golden residual is always nonzero.
 
 ## 4. Index and Role-equivariance audit
 
@@ -180,37 +337,71 @@ Nearest-neighbor exact projective failure for `n > 1` stays a negative control a
 | history tick / `U_A` / physical time | firewalled |
 | Role set-equivariance of `p_n` | owned |
 | Role action on Tower C | absent |
-| translation intertwining of consecutive `p_n` | fails in general (moduli not divisible) |
-| Fock 16-fiber identity lift | a construction choice, not a C-consequence |
+| trivial Tower-C Role action | admissible control only; images land in B-side invariants |
+| nontrivial group refinement for owned consecutive `p_n` | excluded by coprime exponents |
+| Fock 16-fiber identity lift | construction choice, not a Tower-C consequence |
+| AF -> commutative unital map at `k>=2` | excluded |
+| commutative -> AF representation | exists noncanonically |
 
 ## 5. Firewalls respected
 
-Not inferred: `k = n`; physical time from golden depth; carrier weld from `c = phi`; Tower A = Tower B; located-`J`, `D_H`, or `H(e)` inter-level naturality; stress or Einstein dynamics.
+Not inferred:
+
+- `k = n`;
+- `n+2 = F_m`;
+- physical time from golden depth;
+- carrier weld from `c = phi`;
+- Tower A = Tower B;
+- a Tower-C `S_4` action from absence of one;
+- located-`J`, `D_H`, or `H(e)` inter-level naturality;
+- stress or Einstein dynamics.
 
 ## 6. Exact controls
 
-- `|B_n| = (n+2)^4` and `16(n+2)^4` for `n = 0..6`
-- `dim A_k` and path counts from `FibonacciAFAlgebra` / Bratteli owner for `k = 0..6`
-- forbid-`11` word lists and prefix-fiber sizes for `k = 4,5`
-- modular fibers of `{0,…,12} → ℤ/8ℤ`
-- divisibility table for five hostile period names
-- PR #99 `goldenScaleProbe_eq_phi` and first-step fibers `6 ≠ 16`
-- commutativity of `C(B_n)` versus `A_k` for `k ≥ 1`
+The durable finite controls are:
 
-These controls can fail the conclusion if a later owner produces a Role action on C, a divisibility subsequence canonized by Tower C, or a named bimodule with an index rule. Until then the terminal stands.
+- `|B_n|=(n+2)^4` and `16(n+2)^4`;
+- path-count and `dim A_k` recurrence from `FibonacciAFTower`;
+- exact cardinality/dimension comparison on `0 <= k,n <= 11`;
+- early AF algebra stages `C oplus C`, `M_2(C) oplus C`, then two nonscalar blocks;
+- coprime consecutive Role-phase moduli `L,L+1`;
+- explicit failing adjacent divisibility pairs for the five hostile period names;
+- forbid-`11` / Zeckendorf small controls;
+- PR #99 `goldenScaleProbe_eq_phi`;
+- Tower-A/Tower-B first-step fibers `6 != 16`.
+
+These controls can be invalidated only by a later owner that supplies additional structure:
+for example a nontrivial Tower-C Role action, a canonically selected divisibility
+subsequence/index rule, or a named refinement-compatible correspondence.
 
 ## 7. Theorem-ready handoff
 
-Lean-next, one module, no correspondence constructor:
+The next Lean worker should strengthen `A4DGoldenCarrierWeldBoundary` without defining
+the missing correspondence.
 
-extend `A4DGoldenCarrierWeldBoundary` with explicit cardinality and divisibility lemmas:
+Target theorem families:
 
-- `fib_dimA_not_rolePhaseCard` for small `k, n`
-- `hostile_period_not_consecutive_divisor` for the five named sequences
-- optional later: `af_to_continuous_functions_factors_abelianization`
+1. **group boundary**
+   - coprime finite-exponent homs are zero;
+   - the owned consecutive Role-phase moduli therefore admit no nontrivial group hom;
+   - surjective product-cyclic refinement implies the required divisibility condition;
+2. **AF/commutative target boundary**
+   - no unital hom from `M_m(C)`, `m>=2`, to a nonzero commutative target;
+   - exact early-stage exceptions at `k=0,1`;
+   - no unital `A_k -> C(B_n)` for `k>=2`;
+3. **Role trivial-action control**
+   - equivariant maps from a trivial source representation land in the invariant sector;
+4. **finite-range arithmetic**
+   - exact `0 <= k,n <= 11` non-equalities for path/AF dimensions versus
+     `|B_n|` and `16|B_n|`;
+   - explicit hostile adjacent-divisibility failures.
 
-Do not add a `Correspondence` structure with placeholder fields. Do not claim `J` / `D_H` / `H(e)` squares.
+Do not formalize a global Fibonacci perfect-power theorem unless an actual proof is added.
+Do not add a placeholder `Correspondence` structure and declare the weld solved.
 
 ## 8. Exactly one next step
 
-Formalize the cardinality / hostile-divisibility boundary next to `A4DGoldenCarrierWeldBoundary`. The correspondence primitive stays research-named until an owned index rule exists.
+Formalize the repaired boundary above next to `A4DGoldenCarrierWeldBoundary`.
+
+The surviving correspondence/index-rule problem remains research-owned and may be opened
+as a separate follow-on EXP only with the repaired boundary frozen as its truth firewall.
