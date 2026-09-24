@@ -35,27 +35,27 @@ This EXP is **strictly intra-level**: work at one fixed `ArchiveRolePhaseGroup N
 
 Read also:
 
-\`02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md\`.
+`02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md`.
 
 Three different tower structures exist and must remain distinct:
 
-1. **Record/profinite tower** — \`ArchivePoints n = Fin ((n+2)^4)\` with flat integer-mod \`archiveProjection\`.
-2. **Role-phase/CAR geometry** — \`ArchiveRolePhaseGroup N = Role -> ZMod (N+2)\`; this is the carrier used by \`J\`, \`H(e)\`, \`D_H\`, coframes and the present task.
-3. **Golden cylinder/Bratteli tower** — recovered \`M_phi\`, Fibonacci/AF refinement and Perron scale ratio \`phi\`.
+1. **Record/profinite tower** — `ArchivePoints n = Fin ((n+2)^4)` with flat integer-mod `archiveProjection`.
+2. **Role-phase/CAR geometry** — `ArchiveRolePhaseGroup N = Role -> ZMod (N+2)`; this is the carrier used by `J`, `H(e)`, `D_H`, coframes and the present task.
+3. **Golden cylinder/Bratteli tower** — recovered `M_phi`, Fibonacci/AF refinement and Perron scale ratio `phi`.
 
 This experiment lives entirely in **(2)**.
 
 Do NOT:
 
-- use the flat record \`archiveProjection\` as a bonding map for Role-phase cells;
-- infer a golden \`N -> N+1\` law;
+- use the flat record `archiveProjection` as a bonding map for Role-phase cells;
+- infer a golden `N -> N+1` law;
 - assume the Bratteli level index and the Role-phase period index are the same type or physical quantity;
-- use \`phi\` to choose the comparison jet \`S\`;
+- use `phi` to choose the comparison jet `S`;
 - identify any level step with physical time.
 
-The repository already owns a bonding-fiber obstruction between (1) and the natural coordinate-product refinement underlying (2). The separate inter-level question (2) <-> (3) belongs to \`EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD\`.
+The repository already owns a bonding-fiber obstruction between (1) and the natural coordinate-product refinement underlying (2). The separate inter-level question (2) <-> (3) belongs to `EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD`.
 
-A positive result here is therefore a law \`at fixed N\`, not a tower naturality theorem.
+A positive result here is therefore a law `at fixed N`, not a tower naturality theorem.
 
 ## Mandatory frozen inputs
 
