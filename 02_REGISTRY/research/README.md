@@ -22,3 +22,4 @@ Current gravity packets:
 - `MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md` — exact scalar groupoid derivative, forced second jet, scoped direct-cell obstruction and comparison-jet `S`.
 - `MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW.md` — fixed-N endpoint/center terminal: unlabelled-center holonomy obstruction, explicit soluble-but-nonunique scalar comparison jets, and the surviving path-resolved incidence comparison primitive.
 - `ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md` — truth-repaired three-tower/two-seam synthesis: fixed-level endpoint overlap in Role-phase geometry versus the separate golden/Role-phase inter-level weld.
+- `MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD.md` — terminal inter-level audit: golden trace/scale is owned internally to Tower C; a defect-bearing RG residual interface is available, but no canonical Tower-C→Tower-B carrier/operator weld is selected.

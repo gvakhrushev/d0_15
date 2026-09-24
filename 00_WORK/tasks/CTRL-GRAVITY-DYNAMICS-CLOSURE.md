@@ -111,14 +111,15 @@ MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
 → ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED
 ```
 
-The remaining research lane is inter-level and strategic:
+The inter-level refinement research is terminal in PR #86:
 
 ```text
 ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS
-→ EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD
+→ MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD
+→ GOLDEN-SCALE-WELD-OWNED-CARRIER-WELD-MISSING
 ```
 
-That inter-level EXP does not enlarge this CONTROL's fixed-level constitutive exit condition.
+PR #86 owns the research-level three-tower audit and a defect-bearing renormalization interface based on the existing RG residual prototype. It does not own a Tower-C→Tower-B carrier map, period subsequence, located-`J` square, `D_H` intertwiner, `H(e)` transport, trace factor, or physical-time bridge. This strategic terminal does not enlarge this CONTROL's fixed-level constitutive exit condition.
 
 `WRK-A4D-LOCAL-REVERSE-STAR-NOGO` is an independent scoped no-go. It does not repair, replace or block the located `J`.
 
@@ -201,22 +202,28 @@ This is not a universal matter/comparison no-go. A path-resolved primitive and i
 
 ### Adjacent inter-level refinement seam
 
-The fixed-level common-center problem must not be confused with refinement between finite levels.
+PR #86 terminally classifies the current golden/Role-phase research lane as
 
-D0 already owns a canonical golden cylinder/Bratteli refinement at algebra/trace/scale level, while the matter geometry lives on the separate Role-phase/CAR carrier. The record/profinite inverse system is a third object and is already separated from the Role-phase product bonding.
+`GOLDEN-SCALE-WELD-OWNED-CARRIER-WELD-MISSING`.
 
-The strategic research task
+D0 owns the internal Tower-C golden Bratteli/trace/scale law and the existing Tower-B finite-set projection / RG residual machinery. The memo strengthens “shared scale only” to a falsifiable defect-bearing interface:
 
-`EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD`
+```text
+R_N(c) = L^B_(N+1) - c · pb_(p_N)(L^B_N)
+R_N(c) = 0  iff  declared renormalized compatibility holds
+```
 
-asks for the strongest typed relation between the golden Bratteli/AF tower and the Role-phase/CAR geometry:
+but the scalar `c` becomes golden only after a separately typed assignment `sigma_C`; no Tower-C state, word, measure or carrier is transported by this interface.
 
-- carrier map, correspondence, subsequence, operator intertwiner, scale-only relation, or scoped no-go;
-- exact index-type audit before any equation;
-- naturality tests for Role action, degree/parity, located `J`, corrected `D_H`, and only then `H(e)`;
-- explicit time firewall.
+The earliest missing inter-level datum is therefore the typed comparison package
 
-This lane may shape the next synthesis after the constitutive seam is terminal, but it is not a current stress/Einstein owner and does not change this CONTROL's exit condition.
+```text
+(B_N, p_N, L_N^B, pb_(p_N), sigma_C)
+```
+
+with source/target types and Role equivariance. Located `J`, corrected `D_H`, `H(e)`, trace/measure and physical time remain separate downstream obligations.
+
+This strategic terminal is adjacent to, not part of, the fixed-level constitutive exit condition.
 
 ### Stress/source
 
