@@ -28,6 +28,35 @@ This is a deep research task, not a Lean task.
 
 Do not search for another abstract Hodge selector. The target is now an explicit geometric comparison/interpolation datum.
 
+This EXP is **strictly intra-level**: work at one fixed `ArchiveRolePhaseGroup N` / `ArchiveCochain N` level. It does not derive or assume a refinement map between different `N`.
+
+
+## Carrier / tower firewall
+
+Read also:
+
+\`02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md\`.
+
+Three different tower structures exist and must remain distinct:
+
+1. **Record/profinite tower** — \`ArchivePoints n = Fin ((n+2)^4)\` with flat integer-mod \`archiveProjection\`.
+2. **Role-phase/CAR geometry** — \`ArchiveRolePhaseGroup N = Role -> ZMod (N+2)\`; this is the carrier used by \`J\`, \`H(e)\`, \`D_H\`, coframes and the present task.
+3. **Golden cylinder/Bratteli tower** — recovered \`M_phi\`, Fibonacci/AF refinement and Perron scale ratio \`phi\`.
+
+This experiment lives entirely in **(2)**.
+
+Do NOT:
+
+- use the flat record \`archiveProjection\` as a bonding map for Role-phase cells;
+- infer a golden \`N -> N+1\` law;
+- assume the Bratteli level index and the Role-phase period index are the same type or physical quantity;
+- use \`phi\` to choose the comparison jet \`S\`;
+- identify any level step with physical time.
+
+The repository already owns a bonding-fiber obstruction between (1) and the natural coordinate-product refinement underlying (2). The separate inter-level question (2) <-> (3) belongs to \`EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD\`.
+
+A positive result here is therefore a law \`at fixed N\`, not a tower naturality theorem.
+
 ## Mandatory frozen inputs
 
 Read completely before doing any new construction:
@@ -35,6 +64,7 @@ Read completely before doing any new construction:
 - `02_REGISTRY/research/MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md`
 - `02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md`
 - `02_REGISTRY/research/MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT.md`
+- `02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md`
 
 Also inspect the literal owners from merged PRs #70, #74, #75 and #76.
 
@@ -145,7 +175,7 @@ Try to factor a matter comparison along an edge/cell schematically as
 [
 T_{x\leftarrow y}
 =
-C_{x\leftarrow c},C_{c\leftarrow y}
+C_{x\leftarrow c}\,C_{c\leftarrow y}
 ]
 
 or the correctly typed finite analogue.
@@ -344,6 +374,7 @@ Actively try to falsify every positive construction with:
 13. Is the transverse plaquette modulus fixed?
 14. Is there now an all-order provenance-bearing finite matter action?
 15. If not, what is the single earliest remaining datum?
+16. Which statements are genuinely fixed-`N`, and which would require the separate inter-level weld before they can be transported across levels?
 
 ## Terminal verdict
 
@@ -413,4 +444,5 @@ Do not promote any result to:
 - direct `99 → matter`;
 - SM gauge derivation;
 - metric reinterpretation of `J`;
-- universal no-go beyond the class actually exhausted.
+- universal no-go beyond the class actually exhausted;
+- any statement that the comparison jet `S` is selected by the golden refinement law.
