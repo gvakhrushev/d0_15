@@ -14,44 +14,57 @@ The flux-kernel, located-star and second-order theorem packages are landed.
 
 PR #80 Lean-owns the second-order covariance algebra and scalar advective boundary; PR #98 owns the endpoint/overlap comparison boundary. The later sequence PR #101/#102, PR #107, PR #108 and PR #103 narrows the fixed-level seam further.
 
-The remaining fixed-N primitive is now one **positive labelled elementary matter letter**
+PR #109/#110/#111 move the frontier again.
+
+The labelled word skeleton is Lean-owned. The linear exterior channel and its affine-shift blindness are Lean-owned. Most importantly, affine translation sensitivity itself is no longer missing: PR #109 constructs the exact research-theorem-ready nilpotent response
+
+[
+T_b=I+C^\dagger(b)P_0,\qquad
+R_{\rm nil}(L,b)=T_b\rho(L),
+]
+
+with the correct affine semidirect law and a site-aware weighted-shift realization.
+
+The earliest unresolved fixed-N datum is now the **solder–Cartan edge mismatch/comparison** joining two already-existing descriptions of the same Role edge:
 
 ```text
-ell_N^+(A,e,n; x,r)
+affine Cartan translation b_(x,r)
+            ↕
+raw solder/coframe edge datum
 ```
 
-or an explicitly typed site-corner/path-expression equivalent.
-
-Its negative is the shifted inverse. Its word transport is the ordered product of letters. The constitutive object `W` must be an explicit assembly/section whose first derivative is the already-owned complete `H(e)`.
-
-The letter has three distinct typed channels:
+The candidate notation
 
 ```text
-L = linear Cartan / exterior transport        (owned by PR #103)
-E = raw coframe amplitude / constitutive jet  (owned at first order by #75/#101/#102/#108)
-B = affine translational / site response      (missing)
+kappa_N(A,e; x,r) : V_x
 ```
 
-These are roles, not assumed commuting factors. The missing research problem is to derive their actual coupling law.
+is a packaging to construct or terminally classify, not a proved unique factorization theorem.
 
-Current parallel lanes are intentionally non-overlapping:
+Current lanes are intentionally ordered:
 
 ```text
-generic labelled word/descent skeleton
-  → WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT
+PR #109 nilpotent affine response → Lean ownership + grading firewall
+  → WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY
 
-Channel-L truth firewall: exterior affine-shift blindness
-  → WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS
+covariant comparison of affine shift with raw solder on one edge
+  → EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH
 
-one elementary letter + site-aware Channel-B + W assembly
-  → EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK
+arbitrary-background finite graded E dressing
+  → EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
+  → BLOCKED until the mismatch task lands
 ```
 
-The durable synthesis for this narrowed front is
+The current durable synthesis is
 
-`02_REGISTRY/research/SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL.md`.
+`02_REGISTRY/research/SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING.md`.
 
-The golden Tower-C↔Tower-B correspondence/index problem remains a separate inter-level lane. No `phi`, AF index or `k=n` rule belongs in the fixed-N elementary matter letter.
+Two typing firewalls are now central:
+
+- `F_phi` is an invertible background trivialization, while `W_flux = I + H(e)` is a constitutive/Riesz section. `DW = H` does not imply `D F = H`.
+- Degree-preserving conjugation cannot erase a nonzero degree-mixing `T_b`. The disappearance of the extra affine response on the exact pure-gauge diagonal must occur in the mismatch/comparison layer, not through a commutator shortcut.
+
+The golden Tower-C↔Tower-BThe golden Tower-C↔Tower-B correspondence/index problem remains a separate inter-level lane. No `phi`, AF index or `k=n` rule belongs in the fixed-N elementary matter letter.
 
 The scalar reverse-star no-go remains a separate object, not `J` and not the constitutive assembly `W`. The topological placement, positive matter energy, Lorentzian exterior form, local frame covariance, connection transport and gravity-source variation stay distinct typed layers until a theorem identifies them.
 
@@ -106,14 +119,14 @@ The following are frozen current inputs to this CONTROL lane:
 Current frontier labels:
 
 ```text
-ENDPOINT-OVERLAP-COMPARISON-BOUNDARY-LEAN-OWNED
-FRAME-CAR-PATH-TRANSPORT-SUBSTRATE-OWNED-CONSTITUTIVE-WORD-ACTION-MISSING
-SCALAR-CROSSED-FIRST-JET-DESCENT-CONSTRAINTS-LEAN-OWNED
-PATH-GROUPOID-LIFT-REQUIRES-NEW-AFFINE-PATH-RESPONSE-PRIMITIVE
-ELEMENTARY-MATTER-LINK-THREE-CHANNEL-INTEGRATION-OPEN
+LABELLED-LIST-CHAINSTEP-HOLONOMY-DESCENT-SKELETON-LEAN-OWNED
+CHANNEL-L-EXTERIOR-AFFINE-SHIFT-BLINDNESS-LEAN-OWNED
+AFFINE-TRANSLATION-SITE-RESPONSE-CONSTRUCTED-LEAN-OWNER-PENDING
+SOLDER-CARTAN-B-E-EDGE-COMPARISON-OPEN
+FINITE-GRADED-E-DRESSING-BLOCKED-ON-EDGE-COMPARISON
 ```
 
-Landed prerequisites:
+Landed prerequisites:Landed prerequisites:
 
 ```text
 WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL  (#75)
@@ -130,33 +143,35 @@ MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
 
 PR #80 owns the theorem-ready second-order and scalar advective packages while retaining `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED` for the still-unselected general comparison jet / nonlinear action.
 
-Active formalization lanes:
+Active formalization lane:
 
 ```text
-SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL
-→ WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT
-→ exact List ChainStep word/descent skeleton + L=2 positive-link period
-
-SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL
-→ WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS
-→ Channel-L factorization through linear affine path data
+SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING
+→ WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY
+→ Lean-own T_b / R_nil and prove degree-preserving dressing cannot erase nonzero B response
 ```
 
 Active fixed-level research lane:
 
 ```text
-SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL
-→ EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK
-→ integrate one finite positive letter and one W assembly
+SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING
+→ EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH
+→ derive or terminally classify target-fibre covariant B/E edge comparison
 ```
 
-PR #103 has already landed the frame/observer/exterior path substrate. PR #108 has already landed the scalar infinitesimal cycle-sum and plaquette constraints. PR #107 has already classified the free-path/descent boundary at research level.
+Blocked next research lane:
 
-Therefore the surviving research target is no longer a generic crossed package. It is an explicit elementary letter whose finite descended cycle and plaquette relations differentiate **exactly** to PR #108, whose linear limit is PR #103, whose pure-gauge chart matches PR #101, and whose assembly derivative is the complete owned `H(e)`.
+```text
+EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
+→ do not start before the mismatch terminal is merged
+→ classify a finite graded background dressing with exact pure-gauge restriction and induced DW|_0 = H
+```
 
-The two workers are truth-firewalls/skeleton owners only. Neither should attempt to invent the physical Channel-B response or the constitutive assembly.
+PR #111 has landed the labelled-path skeleton and exact L=2 period. PR #110 has landed the Channel-L affine-shift blindness boundary. PR #109 has constructed Channel B at research level and localized the first common failure to the B/E solder–Cartan comparison.
 
-Fixed-level endpoint research is terminal in PR #84:
+The current research target is therefore not another matter representation and not a mixed commutator. It is the exact edge comparison between affine translation and raw solder/coframe data, including the transported-reference-leg and row/vector convention.
+
+Fixed-level endpoint research is terminalFixed-level endpoint research is terminal in PR #84:
 
 ```text
 MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
@@ -259,11 +274,13 @@ At research level it owns a scoped loop obstruction for one unlabelled center on
 
 This is not a universal matter/comparison no-go. A path-resolved primitive and inverse-free local parent remain possible but are not owned.
 
-The synthesis packet `SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md` and the later PR #101/#102/#107/#108/#103 chain are now superseded at the frontier by `SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL.md`.
+The older path-word and three-channel synthesis packets remain provenance, but the active frontier is now `SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING.md`.
 
-The bare `C_N(w;e,n)` language is retained only as historical provenance. The current research target is one positive site-aware elementary letter. Its word action is a product, not a new primitive; its finite descent relations must integrate the PR #108 tangent equations; its global assembly must recover `H(e)`; and its missing affine-translation/site response is Channel B.
+Channel B is constructed at research level, so "affine-shift response missing" is stale. The immediate missing datum is a covariant B/E edge comparison. Only after that comparison lands may the blocked finite graded E-dressing task ask for an arbitrary-background extension of the pure-gauge `F_phi` chart.
 
-### Adjacent inter-level refinement seam
+The owned `H(e)` constrains the induced constitutive tangent, not the full tangent generator of an arbitrary finite dressing; its skew part remains a classification problem away from the exact-coframe orbit.
+
+### Adjacent inter-level refinement seam### Adjacent inter-level refinement seam
 
 PR #86 terminally classifies the current golden/Role-phase research lane as
 
@@ -322,7 +339,10 @@ Do NOT:
 - infer continuum Einstein dynamics from a finite Role-matrix response;
 - treat the PR #108 infinitesimal cycle-sum/plaquette theorems as if they were already exact nonlinear relations of the unknown finite letter;
 - insert golden `phi`, AF index data or a `k=n` rule into the fixed-N elementary matter letter;
-- reopen `Q`, `S` or `K` as independent selectors before the elementary letter and its assembly exist.
+- reopen `Q`, `S` or `K` as independent selectors before the current edge-comparison / graded-dressing seam is resolved;
+- use `[H,T_b]` as a mechanism for erasing a nonzero degree-mixing affine translation response;
+- identify the pure-gauge trivialization `F_phi` with the constitutive/Riesz section `W_flux`, or infer `D F = H` from `D W = H`;
+- claim uniqueness of the finite graded E dressing from `H` alone; at first order `H` fixes only the symmetric part of the dressing generator.
 
 ## Throughput policy
 
@@ -336,6 +356,6 @@ This control closes the current research/formalization gate when:
 2. the complete first jet `DW|_0 = H` / flux-energy kernel is Lean-owned;
 3. `D^2W|_0` and the matter second-jet boundary are either classified or terminally no-go;
 4. the frame/CAR lift is independently classified in its parallel lane;
-5. one positive site-aware elementary matter letter is constructed or terminally scoped so that: its products define the labelled word action; its linear limit is the PR #103 exterior transport; its affine translation/site channel is resolved; an explicit assembly `W` has flat derivative equal to the complete owned `H(e)`; its exact descended cycle/plaquette relations linearize to PR #108; its L=2 endpoint descent obeys the labelled finite period; and observer/frame plus fixed located-`J` transport are derived only after the primal letter exists.
+5. the post-PR-109 B/E seam is closed in order: the nilpotent affine translation response is Lean-owned with its grading boundary; a target-fibre covariant solder–Cartan edge mismatch is constructed or terminally classified; and, only after that comparison exists, an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative equal to the complete owned `H(e)`, including the surviving skew-generator freedom on transverse coframe directions.
 
 Provenance-bearing stress/source and continuum Lorentz/Einstein promotion remain downstream gates; this CONTROL must not claim them closed merely because the current constitutive seam is classified.
