@@ -270,23 +270,25 @@ Two worker lanes are sufficient:
 
 A third standalone scalar-obstruction worker is unnecessary duplication.
 
-### Now — research in parallel
+### Research lanes — terminal status
 
-Two EXP lanes may run concurrently with Lean:
+Both EXP lanes are now terminal.
 
-A. `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW`
+A. Fixed-level endpoint/common-center comparison — PR #84:
 
-Purely intra-level Tower-B problem: construct or terminally classify the finite geometric law that integrates \(\mathcal S\) and recovers the full `H(e)` on arbitrary coframes.
+`ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED`.
 
-B. `EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD`
+The surviving datum is a path-resolved incidence comparison primitive. The scalar comparison jet is algebraically soluble but nonunique.
 
-Inter-level problem: classify the strongest typed relation between Tower C and Tower B, while respecting the Tower-A/Tower-B bonding no-go.
+B. Golden/Role-phase inter-level comparison — PR #86:
 
-Neither waits for Lean formalization.
+`GOLDEN-SCALE-WELD-OWNED-CARRIER-WELD-MISSING`.
+
+Tower C supplies internal golden scale/trace data and Tower B supplies its own projection/RG residual machinery. The strongest current cross-lane structure is a defect-bearing compatibility interface; no canonical carrier map, period subsequence or operator intertwiner is selected.
 
 ### After both research lanes
 
-Only if both seams admit compatible positive structure should D0 ask for one all-order family
+The two terminals are not yet compatible positive structure. D0 must therefore **not** ask for one coherent all-order family
 
 \[
 Q_N(e),\quad R_N(\xi;e)
@@ -299,7 +301,7 @@ that is simultaneously:
 - observer/frame covariant;
 - coherent under the accepted inter-level weld.
 
-If one seam is terminal no-go/new-primitive, preserve that boundary instead of inventing an all-order action.
+Preserve both terminal boundaries instead of inventing an all-order action. A future synthesis requires, at minimum, the path-resolved fixed-level comparison primitive and the typed inter-level package `(B_N,p_N,L_N^B,pb_(p_N),sigma_C)`.
 
 ### Stress/source remains downstream
 
@@ -362,18 +364,18 @@ Do not claim from this synthesis alone:
 
 ## 8. Immediate roadmap verdict
 
-The nearest research roadmap is therefore:
+The two research seams are now terminal rather than active:
 
 \[
 \boxed{
-\text{intra-level } \mathcal S/\text{overlap}
+\text{fixed-level path-resolved comparison primitive missing}
 \quad\parallel\quad
-\text{inter-level golden--Role-phase weld}
+\text{inter-level typed carrier/operator package missing}
 }
 \]
 
-with second-order and frame formalization proceeding in parallel and not blocking either experiment.
+Second-order formalization is landed; observer/frame formalization remains active.
 
 The earliest future synthesis gate is not “pick a nonlinear energy”. It is:
 
-> determine whether one typed finite architecture can carry both endpoint comparison *within* a Role-phase level and golden coherence *between* levels.
+> construct independently typed comparison data on both seams before asking whether a single finite architecture can carry endpoint comparison within a Role-phase level and golden coherence between levels.
