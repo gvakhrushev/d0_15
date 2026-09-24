@@ -102,14 +102,22 @@ Literal carriers:
 \mathrm{Role}\to\mathbb Z/(n+2)\mathbb Z.
 \]
 
-This is the finite geometry on which the current gravity/matter seam actually lives:
+This is the finite geometry on which the current gravity/matter seam actually lives.
+
+A coordinatewise consecutive-level finite-set projection is already owned:
+
+`ArchiveRolePhaseCarrier.archiveRolePhaseProjection`.
+
+It is surjective. However `ArchiveLaplacianRG.exact_projective_compatibility_fails` proves that, for the accepted one-dimensional phase projection and `n>1`, the nearest-neighbor canonical Laplacian does **not** commute exactly with pullback along that projection. Thus “there is a projection” and “the dynamics is natural under it” are already distinct statements.
+
+This carrier supports:
 
 - corrected cubical/CAR differential and `D_H`;
 - located primal/dual `J`;
 - the full staggered first jet `H(e)`;
 - coframe, affine-link, Cartan and moving-differential structures.
 
-The repository already proves that Tower A and the natural coordinate-wise product bonding of Tower B are not stagewise isomorphic. At the first nontrivial step their zero-fiber cardinalities are `6` and `16` respectively:
+The repository already proves that Tower A and the coordinate-wise product bonding of Tower B are not stagewise isomorphic. At the first nontrivial step their zero-fiber cardinalities are `6` and `16` respectively:
 
 `D0-ARCHIVE-FLAT-PRODUCT-BONDING-NOGO-001`.
 
@@ -218,6 +226,7 @@ Any positive weld must say explicitly which structures are preserved:
 
 - Role permutation action;
 - archive translations / cyclic incidence;
+- the already-owned coordinatewise `archiveRolePhaseProjection` and its known exact-Laplacian naturality failure;
 - cochain degree and parity;
 - located `J`;
 - corrected `D_H` or its square, with any required scale factor;
