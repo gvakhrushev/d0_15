@@ -15,3 +15,9 @@ Current gravity packets:
 - `ASTRESS_QUADRATIC_MATTER_TENSOR_SOURCE.md` — missing matter→scene carrier and exact three-parameter equivariant quadratic selector class.
 - `ASOURCE_ACTION_NATURALITY_SELECTOR.md` — terminal no-go for selecting a unique quadratic block ratio from current cochain/action/naturality structures.
 - `ANORM_FINITE_GRAVITY_NORMALIZATION.md` — terminal two-modulus finite normalization boundary for the Hodge+A1+two-tick lane.
+
+- `MEMO_53_A4D_HODGE_CONSTITUTIVE_CONNECTION_CLOSURE.md` — umbrella closure packet; generic Hodge/connection searches superseded by narrower constitutive seams.
+- `MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md` — exact second-order Ward algebra, action-groupoid boundary and transverse Hessian freedom.
+- `MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT.md` — theorem-ready exterior/observer/frame lift with the staggered common-center law left explicit.
+- `MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md` — exact scalar groupoid derivative, forced second jet, scoped direct-cell obstruction and comparison-jet `S`.
+- `ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md` — truth-repaired three-tower/two-seam synthesis: fixed-level endpoint overlap in Role-phase geometry versus the separate golden/Role-phase inter-level weld.
