@@ -61,17 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The current 16-state exterior path transport is Lean-proved to factor through the linear affine path part, with an exact nonzero affine-translation witness on which the exterior transport is identity, closing the linear channel while leaving the site-aware affine translation response as the genuinely missing channel.",
-      "brief": "00_WORK/tasks/WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS.md"
-    },
-    {
       "id": "EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
