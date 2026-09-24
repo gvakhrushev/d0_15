@@ -45,6 +45,8 @@ Audit literal owners, especially:
 - `D0.Foundation.ContinuumAsInverseLimit`
 - `D0.Geometry.ArchiveRolePhaseProductCarrier`
 - `D0.Geometry.ArchiveRolePhaseGroup`
+- `D0.Geometry.ArchiveRolePhaseCarrier`
+- `D0.Geometry.ArchiveLaplacianRG`
 - `D0.Geometry.ArchiveFlatProductBondingNoGo`
 - `D0.Geometry.ArchiveTwoLimitSeparation`
 - `D0.CondensedAnchor.DetectorSupportGoldenWeight`
@@ -129,6 +131,7 @@ B_N=\operatorname{ArchiveRolePhaseGroup}(N)
 This carries:
 
 - cyclic Role translations;
+- an already-owned coordinatewise consecutive-level finite-set projection `archiveRolePhaseProjection`, which is surjective;
 - Archive cochains / Fock carrier;
 - corrected `D_H`;
 - located primal/dual `J_N`;
@@ -137,13 +140,17 @@ This carries:
 
 The natural coordinate-wise period reduction of this product carrier is **not** the flat record bonding map.
 
-The repository already proves a first-step fiber mismatch:
+The repository already proves two separate negative facts that must be consumed rather than rediscovered:
+
+1. flat record bonding and coordinatewise Role-product bonding are not stagewise isomorphic; the first-step fiber mismatch is
 
 \[
 6\ne16.
 \]
 
 Therefore Tower A and Tower B may not be identified by levelwise bijections compatible with those bondings.
+
+2. `ArchiveLaplacianRG.exact_projective_compatibility_fails` proves that for `n>1` the accepted one-dimensional coordinatewise phase projection does not give exact nearest-neighbor Laplacian pullback naturality. Thus the owned Role-phase projection is a finite-set coarse-graining map, not already an operator-natural physical refinement.
 
 ### Tower C: golden cylinder / Bratteli / AF
 
@@ -230,9 +237,28 @@ Before constructing a positive weld, test and, where possible, prove failure of:
 
 These negative controls are valuable: the task is a weld, not an equality.
 
-## Phase 3 — construct the natural Role-phase level maps
+## Phase 3 — classify the already-owned Role-phase projection and stronger alternatives
 
-Independently of the golden tower, audit the best candidate inter-level maps intrinsic to Tower B.
+Do **not** start by inventing a projection. Tower B already owns the coordinatewise consecutive-level finite-set map
+
+\[
+\operatorname{archiveRolePhaseProjection}_N:
+B_{N+1}\to B_N,
+\]
+
+built from the one-dimensional \`archiveRGPhaseProjection\`, and it is surjective.
+
+First classify exactly what it is and is not:
+
+- a map of finite sets;
+- Role-coordinatewise;
+- Role-permutation equivariant if provable from the definition;
+- generally **not** a homomorphism of the additive cyclic groups when consecutive moduli are incompatible;
+- already known not to give exact nearest-neighbor Laplacian projective compatibility for \`n>1\`.
+
+Reproduce the logic of the existing \`exact_projective_compatibility_fails\` owner only as an input boundary; do not spend the EXP re-proving it unless a generalized statement is required.
+
+Then classify stronger alternatives.
 
 For periods \(L,L'\), determine when there exists a canonical group homomorphism
 
@@ -242,16 +268,20 @@ For periods \(L,L'\), determine when there exists a canonical group homomorphism
 
 compatible with Role permutations and coordinate translations.
 
-Important:
+Reduction mod \(L\) descends as an additive group map only under the appropriate divisibility relation. Consecutive periods \(L+1\to L\) therefore behave differently from divisibility-compatible subsequences.
 
-- reduction mod \(L\) is well-defined as a group homomorphism from \(\mathbb Z/L'\mathbb Z\) only under the appropriate divisibility relation;
-- consecutive periods \(L+1\to L\) do not automatically provide a group homomorphism.
+Classify:
 
-Classify exact divisibility/cofinal-subsequence options.
+1. consecutive finite-set coarse graining;
+2. divisibility-compatible group maps;
+3. possible spans/correspondences when neither direction is a homomorphism;
+4. whether a cofinal subsequence can support exact or renormalized operator naturality.
 
-If the natural physical tower is necessarily indexed by divisibility rather than consecutive \(N\), state this explicitly.
+The actual research question is now sharper:
 
-This classification is a critical prerequisite to any naturality theorem for `J_N`, `D_H(N)` or `H_N(e)`.
+> can Tower C select or canonize a comparison structure that upgrades the already-owned finite-set projection to a physically meaningful **renormalized/operator-compatible** refinement, or must the physical tower use a different subsequence/correspondence?
+
+This classification is a prerequisite to any cross-level statement for \`J_N\`, \`D_H(N)\` or \`H_N(e)\`.
 
 ## Phase 4 — ask what the golden tower can canonically select
 
@@ -435,17 +465,18 @@ The final memo must answer:
 2. Which pairs are already proved non-identical?
 3. What is the correct index type for each?
 4. What inter-level maps exist intrinsically on Tower B?
-5. Are consecutive Role-phase periods naturally comparable as groups?
-6. Does Tower C canonically select a Role-phase period sequence?
-7. Is there a carrier map, a correspondence, or only a scale law?
-8. Does the best weld preserve Role permutations?
-9. Does it preserve located `J`?
-10. What is the strongest correct relation for `D_H`?
-11. What is the strongest correct relation for `H(e)`?
-12. Can golden cylinder weights be transported to the Role-phase/cochain carrier without new measure data?
-13. Does the result constrain the future endpoint-comparison jet \(\mathcal S\)?
-14. Does any part of the result have physical-time content? The expected answer is “no” unless a new theorem is actually proved.
-15. What is the single earliest missing typed datum if full weld fails?
+5. What exactly does the owned coordinatewise `archiveRolePhaseProjection` preserve, and why is that weaker than a group/operator naturality map?
+6. Are consecutive Role-phase periods naturally comparable as groups?
+7. Does Tower C canonically select a Role-phase period sequence?
+8. Is there a carrier map, a correspondence, or only a scale law?
+9. Does the best weld preserve Role permutations?
+10. Does it preserve located `J`?
+11. What is the strongest correct relation for `D_H`, given the already-owned exact-projective-compatibility failure of the nearest-neighbor Laplacian?
+12. What is the strongest correct relation for `H(e)`?
+13. Can golden cylinder weights be transported to the Role-phase/cochain carrier without new measure data?
+14. Does the result constrain the future endpoint-comparison jet \(\mathcal S\)?
+15. Does any part of the result have physical-time content? The expected answer is “no” unless a new theorem is actually proved.
+16. What is the single earliest missing typed datum if full weld fails?
 
 ## Terminal verdicts
 
