@@ -2,12 +2,18 @@ name: D0 Lean build
 
 on:
   push:
-    branches: ["**"]
+    branches: ["main"]
+    paths:
+      - "03_FORMALIZATION/**"
+      - ".github/workflows/lean-build.yml"
   pull_request:
+    paths:
+      - "03_FORMALIZATION/**"
+      - ".github/workflows/lean-build.yml"
   workflow_dispatch:
 
 concurrency:
-  group: lean-build-${{ github.ref }}
+  group: lean-build-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:

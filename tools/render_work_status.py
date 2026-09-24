@@ -73,11 +73,13 @@ def render_status_markdown(
             counts[t_class][t_state] += 1
 
     lines: List[str] = [
-        "# Active Work Status",
+        "# Work Queue & Control Status",
         "",
-        "## Active Tasks Summary",
+        "Runtime execution status lives in GitHub pull requests; the PR number is the execution ID.",
         "",
-        "| Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Active | WIP (Active / Limit) |",
+        "## Repository Task Summary",
+        "",
+        "| Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |",
         "|---|---|---|---|---|---|---|",
     ]
 
@@ -114,7 +116,7 @@ def render_status_markdown(
     )
     lines.append("")
 
-    lines.append("## Active Tasks")
+    lines.append("## Repository Queue / Control Tasks")
     lines.append("")
     lines.append("| ID | Class | State | Parent | Affected Claims |")
     lines.append("|---|---|---|---|---|")
@@ -179,9 +181,10 @@ def render_readme_block(manifest: Dict[str, Any]) -> str:
 
     lines = [
         README_BEGIN_MARKER,
-        "### Active Work Status (CP1 Control Plane)",
+        "### Work Queue & Control Plane",
         "",
-        f"- **Active Tasks**: CONTROL: {ctrl_cnt}, EXPENSIVE: {exp_cnt}, WORKER: {wrk_cnt} (Total: {tot_active})",
+        f"- **Tracked Queue/Control Tasks**: CONTROL: {ctrl_cnt}, EXPENSIVE: {exp_cnt}, WORKER: {wrk_cnt} (Total: {tot_active})",
+        "- **Runtime Execution**: see open GitHub pull requests; PR number = execution ID",
         f"- **WIP Utilization**: CONTROL: {ctrl_wip}, EXPENSIVE: {exp_wip}, WORKER: {wrk_wip}",
         f"- **Legacy Scaffolds Remaining**: {len(legacy_scaffolds)}",
         "- **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)",

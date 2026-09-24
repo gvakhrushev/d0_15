@@ -362,9 +362,10 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 ## Citation & Status
 
 <!-- D0-WORK-STATUS:BEGIN -->
-### Active Work Status (CP1 Control Plane)
+### Work Queue & Control Plane
 
-- **Active Tasks**: CONTROL: 2, EXPENSIVE: 0, WORKER: 1 (Total: 3)
+- **Tracked Queue/Control Tasks**: CONTROL: 2, EXPENSIVE: 0, WORKER: 1 (Total: 3)
+- **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
 - **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 0/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 12
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
