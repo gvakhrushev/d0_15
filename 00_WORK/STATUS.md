@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
+| EXPENSIVE | 0 | 1 | 0 | 0 | 1 | 1 / 3 |
 | WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **3** | **2** | **0** | **0** | **5** | **2 / 10** |
+| **Total** | **2** | **3** | **0** | **0** | **5** | **3 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -19,7 +19,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
-| EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
+| EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK | EXPENSIVE | IN_PROGRESS | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
