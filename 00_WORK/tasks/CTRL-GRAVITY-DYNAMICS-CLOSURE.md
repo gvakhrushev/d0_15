@@ -14,13 +14,13 @@ The flux-kernel, located-star and second-order theorem packages are landed.
 
 PR #80 Lean-owns the second-order covariance algebra, scalar advective groupoid derivative, forced output-site-local second jet and the scoped direct elementary-cell obstruction. The remaining constitutive research seam is the fixed-level endpoint/common-center comparison law.
 
-The frame-lift worker remains the only active formalization lane:
+The frame-lift worker remains the active formalization lane:
 
 ```text
 frame-lift research packet → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
 ```
 
-The scalar reverse-star no-go is a third object, not `J` and not `Q(e)`.
+The fixed-level research successor is now `EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION`, driven by the terminal PR #84 requirement that endpoint comparison remember path/relative holonomy. The scalar reverse-star no-go is a separate object, not `J` and not `Q(e)`.
 
 The topological placement, positive matter energy, Lorentzian exterior form, local frame covariance, connection transport and gravity-source variation stay distinct typed layers until a theorem identifies them.
 
@@ -77,6 +77,7 @@ Current frontier labels:
 ```text
 ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED
 FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING
+PATH-RESOLVED-MATTER-WORD-ACTION-OPEN
 ```
 
 Landed prerequisites:
@@ -96,12 +97,24 @@ MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
 
 PR #80 owns the theorem-ready second-order and scalar advective packages while retaining `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED` for the still-unselected general comparison jet / nonlinear action.
 
-Active physical worker lane:
+Active formalization lane:
 
 ```text
 MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT
++ SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION
 → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
+→ generic frame/CAR/path-transport substrate only
 ```
+
+Active fixed-level research lane:
+
+```text
+MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW
++ SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION
+→ EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION
+```
+
+The worker must not instantiate the missing constitutive `C_N`; the EXP must not wait for Lean to ask the fixed-level existence/obstruction question.
 
 Fixed-level endpoint research is terminal in PR #84:
 
@@ -159,7 +172,7 @@ Merged formal owners relevant to this seam include PRs #64–#70, #74–#76 and 
 
 ### Frame/CAR lift
 
-Frame-lift research is terminal `FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`. The exterior representation, observer-positive pairing, raw solder frame action and Lorentz-restricted affine-link lift are theorem-ready and pass to `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`. The remaining physical primitive is the common-center/half-edge cell-energy rule reproducing the full staggered H(e).
+Frame-lift research is terminal `FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`. The exterior representation, observer-positive pairing, raw solder frame action and Lorentz-restricted affine-link lift are theorem-ready and pass to `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`. The upgraded worker also Lean-owns the functorial exterior lift of already-owned PR #70 path transport, but explicitly stops before the constitutive matter comparison law. The remaining physical primitive is no longer described as an unlabelled common-center rule: PR #84 requires a path-resolved matter word action/comparison that remembers relative holonomy.
 
 ### Second-order Cartan/cell-energy integrability
 
@@ -199,6 +212,8 @@ PR #84 lands `MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW.md` with terminal `EN
 At research level it owns a scoped loop obstruction for one unlabelled center on nontrivial relative holonomy, a minimal path-resolved incidence comparison signature and overlap law, an explicit constants-preserving two-edge scalar comparison jet satisfying the mandatory L=5 distance-two constraints, and a continuous nonselection family. Harmonic/curl, L=2 Nyquist, L=3 corner, observer/frame, fixed-`J`, locality and transverse-modulus boundaries are explicit.
 
 This is not a universal matter/comparison no-go. A path-resolved primitive and inverse-free local parent remain possible but are not owned.
+
+The synthesis packet `SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md` sharpens that primitive into a research hypothesis: one typed word action `C_N(w;e,n)` may be the common source of first-jet `H`, comparison second-jet `S`, loop holonomy response, observer/frame covariance and located-`J` dualization. The formula transporting an energy by the same `C_N` is explicitly a hypothesis whose type/domain must be derived, not assumed. This is the subject of `EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION`.
 
 ### Adjacent inter-level refinement seam
 
@@ -270,6 +285,6 @@ This control closes the current research/formalization gate when:
 2. the complete first jet `DW|_0 = H` / flux-energy kernel is Lean-owned;
 3. `D^2W|_0` and the matter second-jet boundary are either classified or terminally no-go;
 4. the frame/CAR lift is independently classified in its parallel lane;
-5. the common-center endpoint-comparison freedom is named exactly as the comparison jet `S` plus its missing finite overlap-composition law, rather than hidden inside a generic “Hodge selector”.
+5. the path-resolved matter word action `C_N` is constructed or terminally scoped, including its relation to `H`, `S`, relative holonomy, observer/frame transport and fixed located `J`.
 
 Provenance-bearing stress/source and continuum Lorentz/Einstein promotion remain downstream gates; this CONTROL must not claim them closed merely because the current constitutive seam is classified.
