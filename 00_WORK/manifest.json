@@ -70,17 +70,6 @@
       ],
       "exit_condition": "The generic exterior/frame/observer/link substrate and functorial exterior lift of owned PR #70 path transport are Lean-owned, including generic composition/inverse, observer positivity/adjoints, transported-center repair, covariant link differential with flat dForward/D_H limits, located-J boundary and pointwise/Nyquist obstructions; the crossed constitutive representation remains explicit research-owned work.",
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
-    },
-    {
-      "id": "WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The finite Role-phase defining relations are Lean-proved to impose the exact cycle-period and plaquette integrability constraints on the landed scalar crossed first-jet law, with hostile witnesses and pure-gauge compatibility, without overclaiming a universal no-go.",
-      "brief": "00_WORK/tasks/WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY.md"
     }
   ]
 }

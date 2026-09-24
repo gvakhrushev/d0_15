@@ -280,11 +280,10 @@ import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DComparisonJetNonselection
 import D0.Geometry.A4DConstitutiveHolonomyStabilizer
 import D0.Geometry.A4DConstitutiveKernelClassification
+import D0.Geometry.A4DCrossedDerivationIntegrability
 import D0.Geometry.A4DCrossedPathAlgebraBoundary
 import D0.Geometry.A4DDiscreteEnergyKernel
-import D0.Geometry.A4DGoldenAFCommutativeTargetBoundary
 import D0.Geometry.A4DGoldenCarrierWeldBoundary
-import D0.Geometry.A4DGoldenGroupRefinementBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DHorizontalDressingSecondJetFreedom
 import D0.Geometry.A4DLocalReverseStarNoGo

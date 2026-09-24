@@ -1450,7 +1450,9 @@ def claimMap : List ClaimMapEntry :=
     { claimId := "D0-A4D-HORIZONTAL-DRESSING-SECOND-JET-001", moduleName := "D0.Geometry.A4DHorizontalDressingSecondJetFreedom",
       theoremName := "dressedTransport_identity;dressedTransport_comp;dressedTransport_reverse;quadraticDressing_zero;quadraticDressing_even;quadraticCoeff_ne_zero_of_nonneg;quadraticDressing_mul_inv;quadraticDressing_inv_mul;checker_times_invertible;checker_quadratic_factors_compose;quadraticDressing_secondJet_nonzero;quadraticDressing_secondJets_differ;dressedIdentity_stays;dressedWitness_secondJets_differ;quadraticEndpointClass_preservesFlatJet_changesSecondJet", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY-001", moduleName := "D0.Geometry.A4DCrossedPathAlgebraBoundary",
-      theoremName := "crossedPathAlgebraBoundary", status := ClaimStatus.leanCoreProved }
+      theoremName := "crossedPathAlgebraBoundary", status := ClaimStatus.leanCoreProved },
+    { claimId := "D0-A4D-CROSSED-DERIVATION-INTEGRABILITY-001", moduleName := "D0.Geometry.A4DCrossedDerivationIntegrability",
+      theoremName := "scalarCandidate_eq_wordMixing;cycle_relation_forces_zero_period;commute_relation_forces_plaquette;pureGauge_preserves_relations;harmonic_period_three;harmonic_period_five;curl_period_three;curl_period_five;period_two_formula_is_zero;scalarCrossedFirstJet_integrability_boundary", status := ClaimStatus.leanCoreProved }
   ]
 
 theorem claimMap_nonempty : claimMap ≠ [] := by
