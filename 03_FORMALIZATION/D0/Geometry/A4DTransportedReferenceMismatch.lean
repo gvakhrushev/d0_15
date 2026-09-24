@@ -8,6 +8,7 @@ import D0.Geometry.A4DNilpotentAffineMatterLift
 
 Lean-owns the PR #112 edge comparison for a **supplied** source-fibre reference
 leg `q`. This module does **not** select an intrinsic `q_N(A,e)`.
+The conditional owner is intentionally orthogonal to the research selection problem.
 
 \[
 κ_q(A,e;x,r)
