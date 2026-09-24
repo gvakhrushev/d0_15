@@ -2,7 +2,7 @@
 
 Status: **ACTIVE ROADMAP / control lane IN_PROGRESS**
 
-This roadmap records the remediation triggered by the repository review. It does not replace \`claims.csv\`, the closure contract, or literal Lean owners.
+This roadmap records the remediation triggered by the repository review. It does not replace `claims.csv`, the closure contract, or literal Lean owners.
 
 ## Governing invariant
 
@@ -27,21 +27,21 @@ Applied directly in the public surfaces in this remediation change:
 
 1. **Born / area preservation**
    - Remove the false premise that generic symplectic-area preservation uniquely forces \(x^2+y^2\) or \(p=2\).
-   - State the owned uniqueness premise: quarter-turn phase blindness (\`QuarterTurnInvariant\`).
-   - Treat \`BornAreaPreservationNoGo\` as the explicit negative control proving area preservation alone insufficient.
+   - State the owned uniqueness premise: quarter-turn phase blindness (`QuarterTurnInvariant`).
+   - Treat `BornAreaPreservationNoGo` as the explicit negative control proving area preservation alone insufficient.
 
 2. **Dark EOS / ΛCDM**
-   - Scope \`LambdaCDMExcluded\` to the adopted discrete EOS / role-assignment models.
+   - Scope `LambdaCDMExcluded` to the adopted discrete EOS / role-assignment models.
    - Do not describe it as a theorem that every open graph with unitary archive dissipation excludes ΛCDM.
 
 3. **Standard-Model gauge**
-   - Describe \`SMGaugeDecomposition\` as a frozen SM-facing factor/representation ledger with exact anomaly checks.
-   - Describe \`AlbertSMProjection\` as dimension/charge alignment.
+   - Describe `SMGaugeDecomposition` as a frozen SM-facing factor/representation ledger with exact anomaly checks.
+   - Describe `AlbertSMProjection` as dimension/charge alignment.
    - Do not claim an automorphism/commutant derivation of \(SU(3)\times SU(2)\times U(1)\) until an actual representation owner exists.
 
 4. **Golden-ratio route independence**
    - Replace “five independent convergences” with an audited route inventory.
-   - \`02_REGISTRY/forcing_routes.json\` is authoritative for shared premises, negative controls and \`independent_now\`.
+   - `02_REGISTRY/forcing_routes.json` is authoritative for shared premises, negative controls and `independent_now`.
 
 ## P1 — universal M1 carrier classification
 
@@ -66,14 +66,14 @@ No new active research task is created for P2.
 
 This lane is active under `CTRL-GRAVITY-DYNAMICS-CLOSURE`.
 
-Current child lanes are the flux-energy worker, located-star and reverse-star-no-go formalizations, soldered creator/observer frame-lift research, second-order Cartan/cell-energy research, and their planned integration workers.
+Flux/first-jet (#75), located topological `J` (#76), and the scoped scalar reverse-star no-go (#74) are landed prerequisites, not active children. Current formalization is two-lane: `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD` (now also absorbing the scalar advective groupoid obstruction) and `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`. Current research is two-lane: fixed-level endpoint/common-center comparison `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW`, plus the adjacent inter-level `EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD`.
 
 The current physical frontier is no longer the historical CAR-dispersion repair. Corrected difference-Hodge, moving parent Ward, affine Cartan path geometry and nonlinear constitutive nonselection are already owned.
 
-The remaining P3 demand is sharper: obtain or terminally classify a frame-covariant matter action on the existing finite carrier, then define stress/source by variation of that same action. Topological located duality, positive observer energy and Lorentzian exterior star remain distinct until a theorem connects them.
+The remaining P3 demand is sharper: obtain or terminally classify a frame-covariant all-order matter action on the Role-phase/CAR carrier, with the endpoint comparison jet `S` and finite overlap law made explicit; only then define stress/source by variation of that same action. In parallel, classify whether the already-owned golden Bratteli/trace/scale refinement has any canonical typed weld to the Role-phase tower. Record/profinite refinement, Role-phase period, golden Bratteli depth and physical time remain distinct. Topological located duality, positive observer energy and Lorentzian exterior star remain distinct until a theorem connects them.
 ## Semantic CI hardening
 
-Task: \`WRK-PUBLIC-CLAIM-STRENGTH-LINT\` (PLANNED, **cloud-first draft allowed while the sole local worker verifies the primal/dual parent draft**).
+Task: `WRK-PUBLIC-CLAIM-STRENGTH-LINT` (PLANNED, **cloud-first draft allowed while the sole local worker verifies the primal/dual parent draft**).
 
 Minimum scope:
 

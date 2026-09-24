@@ -36,6 +36,31 @@ The topological placement, positive matter energy, Lorentzian exterior form, loc
 
 Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
 
+
+## Three-tower dictionary — do not conflate level indices
+
+The nearby roadmap uses three distinct finite systems.
+
+| Tower | Literal carrier / owner | Bonding or refinement | Meaning |
+|---|---|---|---|
+| A — record/profinite | `ArchivePoints n = Fin ((n+2)^4)` | flat integer-mod `archiveProjection` | informational inverse-limit record carrier |
+| B — Role-phase/CAR | `ArchiveRolePhaseGroup N = Role -> ZMod (N+2)` | coordinatewise finite-set projection is owned; stronger group/operator naturality is separate | carrier of `D_H`, `J`, `H(e)`, coframes and Cartan geometry |
+| C — golden Bratteli/AF | golden cylinder language / `M_phi` | Bratteli incidence, AF inclusion, Perron trace/scale | canonical golden refinement at algebra/trace/scale level |
+
+Frozen separation:
+
+- Tower A and the natural coordinate-wise product refinement underlying Tower B are NOT stagewise isomorphic under their accepted bondings; the first-step zero-fiber sizes are `6` and `16`.
+- Tower C already has a recovered golden refinement owner and forced dimensionless Perron scale ratio `phi`.
+- Tower B already has a surjective coordinatewise finite-set projection, but exact nearest-neighbor Laplacian projective compatibility is proved to fail for the accepted one-dimensional projection when `n>1`.
+- What is missing is a typed Tower-C <-> Tower-B weld that explains the correct carrier/operator comparison. A common scale ratio is not a carrier map.
+- `ArchiveSpatialHistorySplit` keeps history tick, cyclic A-phase, phi-ladder and observer structure distinct.
+
+Durable synthesis:
+
+`02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md`.
+
+The current constitutive seam lives inside one Tower-B level. The golden/Role-phase weld is an adjacent strategic lane, not permission to reinterpret record refinement or physical time.
+
 ## Frozen now
 
 The following are frozen current inputs to this CONTROL lane:
@@ -67,18 +92,11 @@ Current formalization lanes:
 
 ```text
 MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
++ MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
 → WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD
-
-MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
-→ WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION
 ```
 
-The new research lane is intentionally NOT blocked by those workers:
-
-```text
-MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
-→ EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW
-```
+The scalar advective groupoid obstruction is integrated into that worker; there is no separate third formalization front.
 
 Parallel physical worker lane:
 
@@ -86,6 +104,18 @@ Parallel physical worker lane:
 MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT
 → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
 ```
+
+Research proceeds in parallel and does not wait for either worker:
+
+```text
+MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION
+→ EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW
+
+ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS
+→ EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD
+```
+
+The first EXP is fixed-level/intra-Role-phase. The second is inter-level and strategic; it does not enlarge this CONTROL's constitutive exit condition.
 
 `WRK-A4D-LOCAL-REVERSE-STAR-NOGO` is an independent scoped no-go. It does not repair, replace or block the located `J`.
 
@@ -103,7 +133,9 @@ Do not reopen as generic searches:
 - solder Gram completion and centered coframe readout;
 - affine Cartan path geometry, including exact `affineTranslation_flat_eq_forwardGaugeCoframe`;
 - scalar Cartan Lie closure and the no-go on a lattice-size-independent uniformly bounded Lie-closed radius;
-- constitutive radius-one Ward class, nonlinear nonselection, determinant-density freedom and holonomy-compatibility nonuniqueness.
+- constitutive radius-one Ward class, nonlinear nonselection, determinant-density freedom and holonomy-compatibility nonuniqueness;
+- record/profinite vs Role-phase bonding separation (`6 ≠ 16` first-step fiber witness);
+- golden Bratteli refinement `M_phi`, its trace ratio, and forced dimensionless Perron scale flow.
 
 Merged formal owners relevant to this seam include PRs #64–#70 and #74–#76; PR #75 owns the flux/first-jet kernel and PR #76 owns the located two-color `J`.
 
@@ -151,7 +183,27 @@ S : Sym^2(im d_f) -> End(C^0)
 
 with strict cell support already forcing nontrivial distance-two components of `S+S^T`. The graded pure-gauge benchmark reproduces all blocks of `H(d_f xi)`, including Nyquist/corner, but does not extend to arbitrary uncentered coframes, harmonic strain or boosted raw solder backgrounds.
 
-Therefore the earliest live primitive is no longer a generic Hodge selector: it is a geometric endpoint/common-center comparison jet `S` together with a finite overlap-composition law. `WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION` formalizes the new scalar theorem-ready core while `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW` continues the research immediately.
+Therefore the earliest live primitive is no longer a generic Hodge selector: it is a geometric endpoint/common-center comparison jet `S` together with a finite overlap-composition law. The scalar advective derivative / forced second jet / scoped direct-cell obstruction are folded into `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD`; `EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW` continues the fixed-level construction research.
+
+
+### Adjacent inter-level refinement seam
+
+The fixed-level common-center problem must not be confused with refinement between finite levels.
+
+D0 already owns a canonical golden cylinder/Bratteli refinement at algebra/trace/scale level, while the matter geometry lives on the separate Role-phase/CAR carrier. The record/profinite inverse system is a third object and is already separated from the Role-phase product bonding.
+
+The strategic research task
+
+`EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD`
+
+asks for the strongest typed relation between the golden Bratteli/AF tower and the Role-phase/CAR geometry:
+
+- carrier map, correspondence, subsequence, operator intertwiner, scale-only relation, or scoped no-go;
+- exact index-type audit before any equation;
+- naturality tests for Role action, degree/parity, located `J`, corrected `D_H`, and only then `H(e)`;
+- explicit time firewall.
+
+This lane may shape the next synthesis after the constitutive seam is terminal, but it is not a current stress/Einstein owner and does not change this CONTROL's exit condition.
 
 ### Stress/source
 
@@ -180,6 +232,9 @@ Do NOT:
 - identify scene residual with matter state or stress;
 - suppress moving connection/differential terms in Ward identities;
 - use numeric refinement traces as action-level refinement maps;
+- identify flat record `archiveProjection` with Role-phase geometric refinement;
+- identify Bratteli/AF depth, Role-phase period, record depth or history tick merely because each is indexed by a natural number;
+- infer physical time from the golden refinement scale;
 - re-open the historical cosine-hopping mismatch as if it applied to the corrected difference Hodge Dirac;
 - infer continuum Einstein dynamics from a finite Role-matrix response.
 

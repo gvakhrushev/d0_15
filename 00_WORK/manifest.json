@@ -68,7 +68,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The terminal second-order research handoff is Lean-owned: exact congruence two-jet algebra, generic/L=5 scalar witness including the mixed (+,-) entry, scoped background-independent translation-representation no-go, constants-preserving rejection of c=1,2 under its explicit hypothesis, action-groupoid second-jet identities, moving-d second derivative, and the transverse Hessian modulus, while FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED remains explicit.",
+      "exit_condition": "The terminal second-order and integrated common-center scalar handoffs are Lean-owned: exact congruence two-jet algebra, generic/L=5 witnesses, scoped background-independent representation no-go, action-groupoid and moving-d second jets, transverse Hessian modulus, plus the forced output-site-local advective derivative K_xi=M_{xi^2}D^2 and its scoped direct elementary-cell energy obstruction; the remaining comparison jet S is left explicit.",
       "brief": "00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md"
     },
     {
@@ -83,17 +83,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     },
     {
-      "id": "WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The common-center memo's first theorem-ready core is Lean-owned: the output-site-local scalar groupoid derivative is forced, K_xi=M_{xi^2}D^2 is owned with complete L=5 controls, and the direct elementary-cell energy contradiction is proved with its locality hypotheses explicit, without claiming a universal local-matter no-go.",
-      "brief": "00_WORK/tasks/WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION.md"
-    },
-    {
       "id": "EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
@@ -101,8 +90,19 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The endpoint/common-center comparison seam is terminally classified: a geometric comparison jet and finite overlap law are constructed and tested against the full staggered first jet, observer/frame and located-J boundaries, or the exhausted class is scoped no-go / the minimal remaining primitive is named exactly.",
+      "exit_condition": "At fixed ArchiveRolePhaseGroup N, the endpoint/common-center comparison seam is terminally classified: a geometric comparison jet S and finite overlap law are constructed and tested against the full staggered first jet, observer/frame and located-J boundaries, or the exhausted fixed-N class is scoped no-go / the minimal remaining intra-level primitive is named exactly.",
       "brief": "00_WORK/tasks/EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW.md"
+    },
+    {
+      "id": "EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The inter-level relation between the canonical golden Bratteli/trace/scale tower and the Role-phase/CAR geometry is terminally classified without identifying either with the record/profinite tower: a typed carrier/operator weld is constructed, a scoped weld class is ruled out, or the minimal comparison primitive is named exactly.",
+      "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-REFINEMENT-WELD.md"
     }
   ]
 }
