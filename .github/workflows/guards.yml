@@ -2,40 +2,92 @@ name: D0 guards
 
 on:
   push:
-    branches: ["**"]
+    branches: ["main"]
   pull_request:
   workflow_dispatch:
+
+concurrency:
+  group: guards-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   guards:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: GitHub-first PR contract
+        run: |
+          python tools/validate_pr_contract.py --self-test
+          python tools/validate_pr_contract.py
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install certificate dependencies
         run: pip install -r requirements.txt
+
       - name: Validate canonical architecture
         run: python tools/validate_repo.py
+
       - name: Claim-strength lint
         run: |
           python tools/lint_claim_strength.py --self-test
           python tools/lint_claim_strength.py
+
       - name: Check generated Lean views
         run: python tools/generate_lean_views.py --check
+
       - name: Active work control
         run: |
           python tools/validate_work.py --self-test
           python tools/validate_work.py
+
       - name: Python syntax
         run: python -m compileall -q tools 04_CERTIFICATES
+
       - name: Certificate artifact freshness and semantic mutations
         run: python tools/test_cert_artifact_freshness.py
+
+      - name: Determine expensive certificate scope
+        id: cert_scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "needs_certs=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+          fi
+
+          if [[ -z "$BASE" || "$BASE" =~ ^0+$ ]]; then
+            echo "needs_certs=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if git diff --quiet "$BASE" "${{ github.sha }}" --               04_CERTIFICATES               01_BOOKS               02_REGISTRY/claims.csv               02_REGISTRY/assumptions.csv               02_REGISTRY/aliases.csv               requirements.txt               tools/run_registered_certs.py               tools/test_cert_artifact_freshness.py; then
+            echo "needs_certs=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "needs_certs=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Registered certificates
+        if: steps.cert_scope.outputs.needs_certs == 'true'
         run: python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py
+
       - name: Long-running Bartholdi certificate
+        if: steps.cert_scope.outputs.needs_certs == 'true'
         timeout-minutes: 12
         run: python 04_CERTIFICATES/vp_scene_bartholdi_typed.py
+
       - name: Certificates do not mutate release tree
+        if: steps.cert_scope.outputs.needs_certs == 'true'
         run: git diff --exit-code
