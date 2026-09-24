@@ -364,7 +364,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Active Work Status (CP1 Control Plane)
 
-- **Active Tasks**: CONTROL: 2, EXPENSIVE: 1, WORKER: 1 (Total: 4)
+- **Active Tasks**: CONTROL: 2, EXPENSIVE: 0, WORKER: 1 (Total: 3)
 - **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 0/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 12
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
