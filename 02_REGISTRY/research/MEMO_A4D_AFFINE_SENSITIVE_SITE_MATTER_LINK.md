@@ -6,6 +6,8 @@
 **Terminal:** AFFINE-MATTER-LINK-REQUIRES-SOLDER-CARTAN-COMPATIBILITY-PRIMITIVE  
 **Status:** theorem-ready research classification; no Lean source is authored here.
 
+**Review audit:** the terminal is intentionally earlier than a full matter link: Channel B is constructed, while the first common finite B/E coupling is blocked by the missing covariant solder–Cartan edge comparison.
+
 This memo starts from the merged PR #103/#107/#108 state and the elementary-link synthesis. It does not identify the affine Cartan connection \(A\), the raw coframe \(e\), or the observer \(n\). It does not introduce a separate \(Q\), \(\mathcal S\), universal \(K\), or abstract constitutive package.
 
 ## 0. Terminal verdict
