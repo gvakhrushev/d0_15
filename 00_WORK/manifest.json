@@ -59,17 +59,6 @@
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
-    },
-    {
-      "id": "WRK-A4D-OBSERVER-FRAME-CAR-LIFT",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The generic exterior/frame/observer/link substrate and functorial exterior lift of owned PR #70 path transport are Lean-owned, including generic composition/inverse, observer positivity/adjoints, transported-center repair, covariant link differential with flat dForward/D_H limits, located-J boundary and pointwise/Nyquist obstructions; the crossed constitutive representation remains explicit research-owned work.",
-      "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     }
   ]
 }

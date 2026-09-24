@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
-| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **1** | **2** | **0** | **0** | **3** | **2 / 10** |
+| WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
+| **Total** | **0** | **2** | **0** | **0** | **2** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -17,7 +17,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|
 | CTRL-GRAVITY-DYNAMICS-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
-| WRK-A4D-OBSERVER-FRAME-CAR-LIFT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
