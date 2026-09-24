@@ -31,7 +31,6 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 PROTECTED = {
     "main",
     "archive-d0v15-main",
-    "wrk/a4d-observer-frame-car-lift",
 }
 
 LEGACY_SAFE = {
@@ -43,6 +42,7 @@ LEGACY_SAFE = {
     "draft/public-claim-strength-lint",          # superseded by merged PR #73
     "research/post-c1-rho1-truth-repair",       # superseded by merged PR #36
     "wrk-a4d-observer-frame-car-lift",           # golden memo copied exactly into PR #86
+    "wrk/a4d-observer-frame-car-lift",           # pre-flow PR #87; canonical task relaunched from current main
     "draft/a4d-primal-dual-parent-algebra",       # theorem surface fully subsumed by main
     "work/geo-car-dirac-parity",                  # theorem surface subsumed; main has extra Dirac aliases
 }
