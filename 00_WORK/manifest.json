@@ -72,18 +72,20 @@
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     },
     {
-      "id": "EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION",
-      "class": "EXPENSIVE",
+      "id": "WRK-A4D-GOLDEN-CARRIER-WELD-BOUNDARY",
+      "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "PLANNED",
       "affected_claims": [
-        "D0-HODGE-LINKS-001"
+        "D0-ARCHIVE-LAPLACIAN-RG",
+        "D0-PERRON-SCALE-FLOW-OWNER-001",
+        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
       ],
-      "exit_condition": "At fixed Role-phase level, one typed crossed constitutive representation package is constructed or terminally classified: path-expression/CAR algebra and horizontal representation, vertical background action, crossed covariance, geometrically supplied constitutive section with full H(e) first derivative, observer/frame law and fixed located-J dualization; any missing solder/Cartan or affine-shift primitive is named exactly.",
-      "brief": "00_WORK/tasks/EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION.md"
+      "exit_condition": "The repaired golden carrier/group/algebra/equivariance boundary is Lean-owned with exact early-stage exceptions and bounded arithmetic scope, while the surviving Role-equivariant correspondence and index rule remain research-owned.",
+      "brief": "00_WORK/tasks/WRK-A4D-GOLDEN-CARRIER-WELD-BOUNDARY.md"
     },
     {
-      "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD",
+      "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
       "state": "PLANNED",
@@ -92,8 +94,8 @@
         "D0-PERRON-SCALE-FLOW-OWNER-001",
         "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
       ],
-      "exit_condition": "The first genuine Tower-C\u2194Tower-B carrier/function-space/algebra/operator comparison beyond the scalar phi probe is constructed or terminally scoped, with index separation, refinement diagrams, Role equivariance and the existing operator/energy residual interface audited; J, D_H, H(e) and physical time remain downstream unless a carrier weld is actually obtained.",
-      "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD.md"
+      "exit_condition": "Finite-dimensional A_k-C(B_n) correspondences are classified by explicit multiplicity data and their AF/Role-phase refinement equations either derive a canonical Role-compatible index/comparison law or identify the earliest additional action/index primitive without ad-hoc Fibonacci period insertion.",
+      "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE.md"
     }
   ]
 }
