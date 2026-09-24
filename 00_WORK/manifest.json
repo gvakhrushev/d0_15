@@ -81,6 +81,28 @@
       ],
       "exit_condition": "The positive research subset is Lean-owned: exterior GL/Lorentz lift on ArchiveFockState, observer-positive exterior pairing with counting reference gauge, raw solder frame action and centering defect, Lorentz-restricted lift of PR #70 affine links with rotating-CAR covariance, and the located-frame compatibility boundary where available; the missing common-center/half-edge cell-energy jet is left explicit and nonlinear Q(e) is not selected.",
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
+    },
+    {
+      "id": "WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The common-center memo's first theorem-ready core is Lean-owned: the output-site-local scalar groupoid derivative is forced, K_xi=M_{xi^2}D^2 is owned with complete L=5 controls, and the direct elementary-cell energy contradiction is proved with its locality hypotheses explicit, without claiming a universal local-matter no-go.",
+      "brief": "00_WORK/tasks/WRK-A4D-SCALAR-ADVECTIVE-GROUPOID-OBSTRUCTION.md"
+    },
+    {
+      "id": "EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The endpoint/common-center comparison seam is terminally classified: a geometric comparison jet and finite overlap law are constructed and tested against the full staggered first jet, observer/frame and located-J boundaries, or the exhausted class is scoped no-go / the minimal remaining primitive is named exactly.",
+      "brief": "00_WORK/tasks/EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW.md"
     }
   ]
 }
