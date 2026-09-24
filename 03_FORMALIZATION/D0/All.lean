@@ -277,6 +277,7 @@ import D0.Geometry.A4DAffineMatterLiftObstruction
 import D0.Geometry.A4DCellHessianTransverseModulus
 import D0.Geometry.A4DCenteredCartanClosureNoGo
 import D0.Geometry.A4DCoframeParentConstraint
+import D0.Geometry.A4DComparisonJetNonselection
 import D0.Geometry.A4DConstitutiveHolonomyStabilizer
 import D0.Geometry.A4DConstitutiveKernelClassification
 import D0.Geometry.A4DDiscreteEnergyKernel
@@ -289,16 +290,19 @@ import D0.Geometry.A4DLocatedTopologicalStar
 import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DMovingDifferentialSecondJet
 import D0.Geometry.A4DPathCovariantHodge
+import D0.Geometry.A4DPathResolvedComparisonBoundary
 import D0.Geometry.A4DPathWordParentWard
 import D0.Geometry.A4DPrimalDualCellPairing
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DRoleSpatialRepresentationWeld
 import D0.Geometry.A4DScalarAdvectiveGroupoidObstruction
+import D0.Geometry.A4DScalarComparisonPatch
 import D0.Geometry.A4DScalarDeltaSecondJet
 import D0.Geometry.A4DSecondOrderCartanCongruence
 import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DStaggeredHodgeSelector
 import D0.Geometry.A4DSymRoleCentralDifference
+import D0.Geometry.A4DUnlabelledCenterHolonomyNoGo
 import D0.Geometry.Archive1DCochainRefinement
 import D0.Geometry.Archive1Dto4DRGLiftNoGo
 import D0.Geometry.Archive4DCurvaturePerturbationBridge

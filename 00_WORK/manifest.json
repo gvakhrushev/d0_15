@@ -70,17 +70,6 @@
       ],
       "exit_condition": "The generic exterior/frame/observer/link substrate and the functorial exterior lift of owned PR #70 path transport are Lean-owned, including generic composition/inverse, observer positivity/adjoints, transported-center repair, covariant link differential with flat dForward/D_H limits, located-J boundary, and pointwise/Nyquist obstructions; the constitutive matter word action C_N and nonlinear cell-energy selector remain explicit research gaps.",
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
-    },
-    {
-      "id": "WRK-A4D-ENDPOINT-OVERLAP-COMPARISON-BOUNDARY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The theorem-ready PR #84 boundary is Lean-owned: unlabelled-center loop telescoping/scoped holonomy no-go, exact constants-preserving two-edge comparison patch including L=5 delta/non-delta witnesses, and an explicit nearest-neighbor family proving scalar comparison-jet nonselection; no constitutive path-word action C_N is claimed.",
-      "brief": "00_WORK/tasks/WRK-A4D-ENDPOINT-OVERLAP-COMPARISON-BOUNDARY.md"
     }
   ]
 }
