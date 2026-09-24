@@ -14,10 +14,17 @@ The flux-kernel, located-star and second-order theorem packages are landed.
 
 PR #80 Lean-owns the second-order covariance algebra, scalar advective groupoid derivative, forced output-site-local second jet and the scoped direct elementary-cell obstruction. The remaining constitutive research seam is the fixed-level endpoint/common-center comparison law.
 
-The frame-lift worker remains the active formalization lane:
+Three formalization lanes are now available and intentionally non-overlapping:
 
-```text
-frame-lift research packet → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
+ ```text
+frame/observer/path substrate
+  → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
+
+PR #84 endpoint/overlap terminal
+  → WRK-A4D-ENDPOINT-OVERLAP-COMPARISON-BOUNDARY
+
+PR #86 golden/RG terminal
+  → WRK-A4D-GOLDEN-RG-DEFECT-INTERFACE
 ```
 
 The fixed-level research successor is now `EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION`, driven by the terminal PR #84 requirement that endpoint comparison remember path/relative holonomy. The scalar reverse-star no-go is a separate object, not `J` and not `Q(e)`.
@@ -114,7 +121,7 @@ MEMO_A4D_ENDPOINT_COMPARISON_JET_OVERLAP_LAW
 → EXP-A4D-PATH-RESOLVED-MATTER-WORD-ACTION
 ```
 
-The worker must not instantiate the missing constitutive `C_N`; the EXP must not wait for Lean to ask the fixed-level existence/obstruction question.
+The observer worker must not instantiate the missing constitutive `C_N`; the endpoint worker formalizes only the already-terminal #84 boundary; the golden worker formalizes only the scalar defect interface and carrier-separation boundary. The EXP must not wait for any of these Lean workers to ask the fixed-level existence/obstruction question.
 
 Fixed-level endpoint research is terminal in PR #84:
 
