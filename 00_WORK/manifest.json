@@ -110,7 +110,7 @@
       "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-ARCHIVE-LAPLACIAN-RG",
         "D0-PERRON-SCALE-FLOW-OWNER-001",
