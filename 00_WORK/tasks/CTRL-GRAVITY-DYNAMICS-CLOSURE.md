@@ -12,27 +12,48 @@ Supervise the current finite gravity/matter closure seam without reopening alrea
 
 The flux-kernel, located-star and second-order theorem packages are landed.
 
-PR #80 Lean-owns the second-order covariance algebra and scalar advective boundary; PR #98 Lean-owns the endpoint/overlap comparison boundary. PR #95 then terminally shows that a bare path-word action is categorically too small: the remaining fixed-level constitutive seam is one crossed representation coupling horizontal path-expression transport to the independent vertical background groupoid.
+PR #80 Lean-owns the second-order covariance algebra and scalar advective boundary; PR #98 owns the endpoint/overlap comparison boundary. The later sequence PR #101/#102, PR #107, PR #108 and PR #103 narrows the fixed-level seam further.
+
+The remaining fixed-N primitive is now one **positive labelled elementary matter letter**
+
+```text
+ell_N^+(A,e,n; x,r)
+```
+
+or an explicitly typed site-corner/path-expression equivalent.
+
+Its negative is the shifted inverse. Its word transport is the ordered product of letters. The constitutive object `W` must be an explicit assembly/section whose first derivative is the already-owned complete `H(e)`.
+
+The letter has three distinct typed channels:
+
+```text
+L = linear Cartan / exterior transport        (owned by PR #103)
+E = raw coframe amplitude / constitutive jet  (owned at first order by #75/#101/#102/#108)
+B = affine translational / site response      (missing)
+```
+
+These are roles, not assumed commuting factors. The missing research problem is to derive their actual coupling law.
 
 Current parallel lanes are intentionally non-overlapping:
 
 ```text
-frame/observer/exterior path substrate
-  → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
+generic labelled word/descent skeleton
+  → WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT
 
-PR #95 algebraic crossed boundary
-  → WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY
+Channel-L truth firewall: exterior affine-shift blindness
+  → WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS
 
-PR #95 crossed constitutive primitive
-  → EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION
-
-PR #86 + PR #99 inter-level boundary
-  → EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD
+one elementary letter + site-aware Channel-B + W assembly
+  → EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK
 ```
 
-PR #98 has already Lean-owned the endpoint/overlap boundary and PR #99 has already Lean-owned the scalar golden/RG defect interface. The scalar reverse-star no-go remains a separate object, not `J` and not the constitutive section `W`.
+The durable synthesis for this narrowed front is
 
-The topological placement, positive matter energy, Lorentzian exterior form, local frame covariance, connection transport and gravity-source variation stay distinct typed layers until a theorem identifies them.
+`02_REGISTRY/research/SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL.md`.
+
+The golden Tower-C↔Tower-B correspondence/index problem remains a separate inter-level lane. No `phi`, AF index or `k=n` rule belongs in the fixed-N elementary matter letter.
+
+The scalar reverse-star no-go remains a separate object, not `J` and not the constitutive assembly `W`. The topological placement, positive matter energy, Lorentzian exterior form, local frame covariance, connection transport and gravity-source variation stay distinct typed layers until a theorem identifies them.
 
 ## Three-star dictionary — keep these objects distinct
 
@@ -86,9 +107,10 @@ Current frontier labels:
 
 ```text
 ENDPOINT-OVERLAP-COMPARISON-BOUNDARY-LEAN-OWNED
-GOLDEN-RG-DEFECT-INTERFACE-LEAN-OWNED-CARRIER-WELD-MISSING
-PATH-WORD-HORIZONTAL-ACTION-CONSTRUCTED-CROSSED-CONSTITUTIVE-LAW-REQUIRED
-FRAME-CAR-PATH-TRANSPORT-SUBSTRATE-OPEN
+FRAME-CAR-PATH-TRANSPORT-SUBSTRATE-OWNED-CONSTITUTIVE-WORD-ACTION-MISSING
+SCALAR-CROSSED-FIRST-JET-DESCENT-CONSTRAINTS-LEAN-OWNED
+PATH-GROUPOID-LIFT-REQUIRES-NEW-AFFINE-PATH-RESPONSE-PRIMITIVE
+ELEMENTARY-MATTER-LINK-THREE-CHANNEL-INTEGRATION-OPEN
 ```
 
 Landed prerequisites:
@@ -108,26 +130,31 @@ MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
 
 PR #80 owns the theorem-ready second-order and scalar advective packages while retaining `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED` for the still-unselected general comparison jet / nonlinear action.
 
-Active formalization lane:
+Active formalization lanes:
 
 ```text
-MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT
-+ SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION
-→ WRK-A4D-OBSERVER-FRAME-CAR-LIFT
-→ generic frame/CAR/path-transport substrate only
+SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL
+→ WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT
+→ exact List ChainStep word/descent skeleton + L=2 positive-link period
+
+SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL
+→ WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS
+→ Channel-L factorization through linear affine path data
 ```
 
 Active fixed-level research lane:
 
 ```text
-MEMO_A4D_PATH_RESOLVED_MATTER_WORD_ACTION
-→ PATH-WORD-HORIZONTAL-ACTION-CONSTRUCTED-CROSSED-CONSTITUTIVE-LAW-REQUIRED
-→ EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION
+SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL
+→ EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK
+→ integrate one finite positive letter and one W assembly
 ```
 
-PR #95 constructs the horizontal linear/exterior path action but separates it from the vertical background action. The full first jet is an additive length-≤2 path-expression/CAR kernel, and the scalar vertical action mixes word lengths. The surviving target is therefore a crossed constitutive package `(pi_b, R_gamma, alpha_gamma, W_b, J)`, with affine connection `A` and raw coframe `e` kept distinct until a solder/Cartan bridge is derived.
+PR #103 has already landed the frame/observer/exterior path substrate. PR #108 has already landed the scalar infinitesimal cycle-sum and plaquette constraints. PR #107 has already classified the free-path/descent boundary at research level.
 
-The observer worker owns only the exterior/frame/path substrate. The crossed-path Lean worker owns only theorem-ready algebraic boundaries from #95. Neither worker may instantiate the missing physical crossed constitutive package.
+Therefore the surviving research target is no longer a generic crossed package. It is an explicit elementary letter whose finite descended cycle and plaquette relations differentiate **exactly** to PR #108, whose linear limit is PR #103, whose pure-gauge chart matches PR #101, and whose assembly derivative is the complete owned `H(e)`.
+
+The two workers are truth-firewalls/skeleton owners only. Neither should attempt to invent the physical Channel-B response or the constitutive assembly.
 
 Fixed-level endpoint research is terminal in PR #84:
 
@@ -185,7 +212,13 @@ Merged formal owners relevant to this seam include PRs #64–#70, #74–#76 and 
 
 ### Frame/CAR lift
 
-Frame-lift research is terminal `FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`. The exterior representation, observer-positive pairing, raw solder frame action and Lorentz-restricted affine-link lift are theorem-ready and pass to `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`. The upgraded worker also Lean-owns the functorial exterior lift of already-owned PR #70 path transport, but explicitly stops before the constitutive matter comparison law. The remaining physical primitive is no longer described as an unlabelled common-center rule: PR #84 requires a path-resolved matter word action/comparison that remembers relative holonomy.
+PR #103 landed terminal
+
+`FRAME-CAR-PATH-TRANSPORT-SUBSTRATE-OWNED-CONSTITUTIVE-WORD-ACTION-MISSING`.
+
+The repository now Lean-owns the 16-state exterior frame lift, observer-positive form, raw solder frame action, Lorentz-restricted affine-link lift, covariant linked differential, exact exterior path transport, relative holonomy, frame covariance, located-anchor obstruction and Nyquist/pointwise boundaries.
+
+This closes Channel L as a substrate. It does not make the current exterior path action affine-translation sensitive and it does not assemble the complete `H(e)` as the derivative of a finite elementary matter letter.
 
 ### Second-order Cartan/cell-energy integrability
 
@@ -226,7 +259,9 @@ At research level it owns a scoped loop obstruction for one unlabelled center on
 
 This is not a universal matter/comparison no-go. A path-resolved primitive and inverse-free local parent remain possible but are not owned.
 
-The synthesis packet `SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md` was resolved by PR #95. Its durable memo proves that a bare `C_N(w;e,n)` is under-typed/too small: path concatenation and background composition are different source categories, the horizontal exterior lift is blind to pure affine shifts, and the full `H(e)` is additive path-expression data. The new research target is `EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION`.
+The synthesis packet `SYNTHESIS_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md` and the later PR #101/#102/#107/#108/#103 chain are now superseded at the frontier by `SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL.md`.
+
+The bare `C_N(w;e,n)` language is retained only as historical provenance. The current research target is one positive site-aware elementary letter. Its word action is a product, not a new primitive; its finite descent relations must integrate the PR #108 tangent equations; its global assembly must recover `H(e)`; and its missing affine-translation/site response is Channel B.
 
 ### Adjacent inter-level refinement seam
 
@@ -284,7 +319,10 @@ Do NOT:
 - identify Bratteli/AF depth, Role-phase period, record depth or history tick merely because each is indexed by a natural number;
 - infer physical time from the golden refinement scale;
 - re-open the historical cosine-hopping mismatch as if it applied to the corrected difference Hodge Dirac;
-- infer continuum Einstein dynamics from a finite Role-matrix response.
+- infer continuum Einstein dynamics from a finite Role-matrix response;
+- treat the PR #108 infinitesimal cycle-sum/plaquette theorems as if they were already exact nonlinear relations of the unknown finite letter;
+- insert golden `phi`, AF index data or a `k=n` rule into the fixed-N elementary matter letter;
+- reopen `Q`, `S` or `K` as independent selectors before the elementary letter and its assembly exist.
 
 ## Throughput policy
 
@@ -298,6 +336,6 @@ This control closes the current research/formalization gate when:
 2. the complete first jet `DW|_0 = H` / flux-energy kernel is Lean-owned;
 3. `D^2W|_0` and the matter second-jet boundary are either classified or terminally no-go;
 4. the frame/CAR lift is independently classified in its parallel lane;
-5. the crossed constitutive representation is constructed or terminally scoped, including horizontal path-expression transport, vertical background action, crossed covariance, the constitutive section with full `H(e)` first derivative, observer/frame transport and fixed located `J`.
+5. one positive site-aware elementary matter letter is constructed or terminally scoped so that: its products define the labelled word action; its linear limit is the PR #103 exterior transport; its affine translation/site channel is resolved; an explicit assembly `W` has flat derivative equal to the complete owned `H(e)`; its exact descended cycle/plaquette relations linearize to PR #108; its L=2 endpoint descent obeys the labelled finite period; and observer/frame plus fixed located-`J` transport are derived only after the primal letter exists.
 
 Provenance-bearing stress/source and continuum Lorentz/Einstein promotion remain downstream gates; this CONTROL must not claim them closed merely because the current constitutive seam is classified.
