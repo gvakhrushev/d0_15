@@ -61,18 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "WRK-A4D-LOCATED-PRIMAL-DUAL-STAR",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-LOCATED-PRIMAL-DUAL-CELL-001",
-        "D0-LOCATED-PRIMAL-DUAL-STAR-001"
-      ],
-      "exit_condition": "The center-matched two-color primal/dual placement, signed topological star, independent dual-incidence intertwiner, topological square, parity-even complement law, and Role orientation pseudoequivariance are Lean-owned without claiming a metric or nonlinear constitutive selector.",
-      "brief": "00_WORK/tasks/WRK-A4D-LOCATED-PRIMAL-DUAL-STAR.md"
-    },
-    {
       "id": "WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",

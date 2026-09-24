@@ -34,7 +34,7 @@ The obsolete migration CONTROL has been retired and its remaining certificate-fr
 
 Current execution:
 
-- P2 SM commutant research — TERMINAL / `ARCHIVE-COCHAIN-JOINT-COMMUTANT-STRICTLY-LARGER-CLASSIFIED`; no SM gauge derivation follows;
+- P2 SM commutant research — TERMINAL / `ARCHIVE-COCHAIN-JOINT-COMMUTANT-STRICTLY-LARGER-CLASSIFIED`; durable packet `02_REGISTRY/research/MEMO_52_SM_GAUGE_REPRESENTATION_COMMUTANT.md`; no SM gauge derivation follows;
 - P1 universal M1 carrier classification — TERMINAL / `M1-UNIVERSALITY-COUNTEREXAMPLE`; task removed per `RESEARCH_LEDGER`;
 - `WRK-PUBLIC-CLAIM-STRENGTH-LINT` — REVIEW; preferred draft `4ea92cb` ported onto main;
 - certificate artifact freshness — LANDED; active worker retired;
