@@ -30,6 +30,8 @@ jobs:
           python tools/validate_work.py
       - name: Python syntax
         run: python -m compileall -q tools 04_CERTIFICATES
+      - name: Certificate artifact freshness and semantic mutations
+        run: python tools/test_cert_artifact_freshness.py
       - name: Registered certificates
         run: python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py
       - name: Long-running Bartholdi certificate
