@@ -81,17 +81,6 @@
       ],
       "exit_condition": "The current 16-state exterior path transport is Lean-proved to factor through the linear affine path part, with an exact nonzero affine-translation witness on which the exterior transport is identity, closing the linear channel while leaving the site-aware affine translation response as the genuinely missing channel.",
       "brief": "00_WORK/tasks/WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS.md"
-    },
-    {
-      "id": "EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "One fixed-N positive elementary matter letter is constructed or terminally classified on an explicit site-aware carrier: its products define the labelled word action, its linear limit is PR #103 exterior transport, its affine translation channel is resolved, its global assembly has first derivative equal to the complete owned H(e), its exact descended cycle/plaquette relations linearize to PR #108, and its L=2 endpoint descent obeys the exact labelled period; otherwise the earliest failed L/E/B channel coupling is identified without reopening Q, S, K, stress, Einstein, physical time or golden refinement.",
-      "brief": "00_WORK/tasks/EXP-A4D-AFFINE-SENSITIVE-SITE-MATTER-LINK.md"
     }
   ]
 }
