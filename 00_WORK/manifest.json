@@ -48,7 +48,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The fixed-level constitutive seam closes when the nilpotent affine translation response is Lean-owned with its grading boundary; the transported-reference mismatch is made intrinsic by a source-fibre reference-leg / affine-origin section or terminally classified at the earliest missing full-affine-solder/selection datum; and only after that an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including transverse skew-generator freedom. Stress/Einstein, physical time and golden refinement remain downstream.",
+      "exit_condition": "The fixed-level constitutive seam closes when the affine translation and conditional mismatch layers are Lean-owned; a labelled-edge geometric principle selects or terminally classifies the reference section including junction, curl and harmonic freedom; and only after that selector exists an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced first derivative H(e). Stress/Einstein, physical time and golden refinement remain downstream.",
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
@@ -68,7 +68,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "After a usable solder reference-leg / affine-origin section has landed and makes the B/E mismatch intrinsic, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including an explicit classification of the skew-generator freedom on transverse coframe directions.",
+      "exit_condition": "After EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE lands a usable labelled-edge selector or the repository explicitly adopts the additional geometric datum it requires, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including an explicit classification of skew-generator freedom on transverse coframe directions.",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
     },
     {
@@ -81,6 +81,39 @@
       ],
       "exit_condition": "A source-fibre reference-leg/affine-origin section is constructed from the available edge data with flat, exact pure-gauge, pure-shift and frame-covariance controls, or the earliest additional full-affine-solder/selection primitive required to choose such a section is terminally identified, with nonuniqueness explicitly classified before finite graded E dressing is allowed to start.",
       "brief": "00_WORK/tasks/EXP-A4D-SOLDER-REFERENCE-LEG-SECTION.md"
+    },
+    {
+      "id": "EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "A labelled-edge geometric selection principle chooses the source reference section while eliminating both known curl and harmonic deformation freedoms and supplying an explicit path-junction law, or the earliest additional junction/basepoint/observer-minimality datum required for such selection is terminally identified without starting finite E dressing.",
+      "brief": "00_WORK/tasks/EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE.md"
+    },
+    {
+      "id": "WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean owns the exact two-link junction identity, endpoint-compression iff criterion, and a mixed-Role flat witness showing why the additional junction condition is non-generic.",
+      "brief": "00_WORK/tasks/WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY.md"
+    },
+    {
+      "id": "WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean owns the exact scoped no-go for the constant source/target/shift linear reference ansatz and the predecessor endpoint controls, with an explicit L=3 pure-gauge witness and pure-shift contradiction.",
+      "brief": "00_WORK/tasks/WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO.md"
     }
   ]
 }
