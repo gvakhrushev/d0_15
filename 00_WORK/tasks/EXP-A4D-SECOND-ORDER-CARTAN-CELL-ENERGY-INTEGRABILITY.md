@@ -20,7 +20,7 @@ Repository:
 
 Minimum baseline:
 
-`df7779ef86ad9430d87adc32b60f15779277ff0a`
+`8141b95391a4576d3efc956503441ad744aca079`
 
 Use newer `origin/main` if available.
 

@@ -47,7 +47,7 @@ The following are frozen current inputs to this CONTROL lane:
 - the moving differential `d_T`, curvature as its square, pairing-forced dual action and mixed moving Ward;
 - PR #69: 24-dimensional self-adjoint radius-one Ward class, one-dimensional simultaneous Role-relabel invariant subspace, nonlinear constitutive nonselection and holonomy-compatibility nonuniqueness;
 - PR #70: finite affine Cartan path geometry, exact flat translation gauge equal to `forwardGaugeCoframe`, open curvature/torsion, scalar Lie closure and the uniform bounded-radius closure no-go;
-- unit-weight/counting normalization owner from the earlier accepted unit-weight lane; this is a flat/counting normalization, not a Lorentz-invariant metric statement.
+- PR #36 unit-weight guards (`rho1 ≡ 1`, including `rho1_inverse_edge_weight_eq_one` / `rho1_c1_middle_polar_discriminant`); this is flat/counting normalization, not a Lorentz-invariant metric statement.
 
 Current frontier labels:
 
