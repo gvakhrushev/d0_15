@@ -92,17 +92,6 @@
       ],
       "exit_condition": "Lean owns the exact two-link junction identity, endpoint-compression iff criterion, and a mixed-Role flat witness showing why the additional junction condition is non-generic.",
       "brief": "00_WORK/tasks/WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY.md"
-    },
-    {
-      "id": "WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Lean owns the exact scoped no-go for the constant source/target/shift linear reference ansatz and the predecessor endpoint controls, with an explicit L=3 pure-gauge witness and pure-shift contradiction.",
-      "brief": "00_WORK/tasks/WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO.md"
     }
   ]
 }
