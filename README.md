@@ -217,7 +217,7 @@ In standard continuous field theory, Yukawa couplings $y_f \sim \sqrt{2} m_f / v
 
 - **Ban on Arbitrary Couplings:** Theorem `YukawaQualitativeSelectorNoGo.lean` proves that on a discrete carrier the interaction matrix cannot be chosen freely; it is forced to be a spectral projector of the scene.
 - **Analytical Origin of Mass Hierarchies:** Fermion masses emerge as resolvent poles across scene defects (`LeptonGreenPuiseuxOwner.lean`). Puiseux series expansions proceed in integer powers of the deformation scale $\varepsilon = \varphi^{-n}$ as an analytical consequence of hyperbolic Pisot contraction on the underlying torus (`Time2DPisot.lean`, `CanonicalPuiseuxShellTransfer.lean`).
-- **Zero Parametric Freedom:** The theory contains zero continuous tunable parameters in its mass and mixing sectors. The fundamental ratio $\varphi = \frac{1+\sqrt{5}}{2}$ is locked at the foundational level (`BOOK_00`–`BOOK_02`) as the unique algebraic root $x^2 - x - 1 = 0$ where five independent branches of mathematics strictly coincide.
+- **Zero Parametric Freedom:** The theory contains zero continuous tunable parameters in its mass and mixing sectors. The fundamental ratio $\varphi = \frac{1+\sqrt{5}}{2}$ is locked at the foundational level (`BOOK_00`–`BOOK_02`) as the algebraic root $x^2 - x - 1 = 0`. Route strength is the audited inventory in the next section.
 
 ### Audited Mathematical Routes to $\varphi$
 
@@ -365,7 +365,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 ### Active Work Status (CP1 Control Plane)
 
 - **Active Tasks**: CONTROL: 2, EXPENSIVE: 0, WORKER: 6 (Total: 8)
-- **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 0/3, WORKER: 0/5
+- **WIP Utilization**: CONTROL: 2/2, EXPENSIVE: 0/3, WORKER: 1/5
 - **Legacy Scaffolds Remaining**: 12
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->

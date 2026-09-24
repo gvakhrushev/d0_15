@@ -64,7 +64,7 @@
       "id": "WRK-PUBLIC-CLAIM-STRENGTH-LINT",
       "class": "WORKER",
       "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
-      "state": "PLANNED",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-BORN-AREA-PRESERVATION-INSUFFICIENT-NOGO-001",
         "D0-DARK-EOS-DISCRETE-SET-001",

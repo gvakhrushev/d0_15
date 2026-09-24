@@ -1,0 +1,14 @@
+{
+  "adjudicated_by_hand": [
+    {
+      "section": "§99.1",
+      "independent": false,
+      "object": "fixture integer"
+    },
+    {
+      "section": "§99.2",
+      "independent": true,
+      "object": "external corroboration"
+    }
+  ]
+}
