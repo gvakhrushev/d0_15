@@ -59,6 +59,39 @@
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
+    },
+    {
+      "id": "WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The PR #109 nilpotent affine translation response is Lean-owned as an exact affine semidirect representation on the existing 16-state carrier, with explicit pure-shift visibility, degree/parity mixing, and a theorem that degree-preserving conjugation cannot erase a nonzero translation response.",
+      "brief": "00_WORK/tasks/WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY.md"
+    },
+    {
+      "id": "EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The independent affine translation and raw solder/coframe descriptions of one Role edge are joined by an explicit target-fibre covariant mismatch law satisfying flat, exact pure-gauge and pure-shift controls, or the earliest additional reference-leg/index/full-affine-solder datum required for such a comparison is terminally identified without reopening affine representability or finite E dressing.",
+      "brief": "00_WORK/tasks/EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH.md"
+    },
+    {
+      "id": "EXP-A4D-FINITE-GRADED-COFRAME-DRESSING",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "BLOCKED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "After a solder-Cartan mismatch has landed, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including an explicit classification of the skew-generator freedom on transverse coframe directions.",
+      "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
     }
   ]
 }
