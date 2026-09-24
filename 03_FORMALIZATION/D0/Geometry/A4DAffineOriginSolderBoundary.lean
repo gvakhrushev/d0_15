@@ -177,11 +177,12 @@ transforms solder rows only by right matrix multiplication (no additive shift
 term of type `RoleSpace`). Hence that owner does not by itself cancel the
 translation defect required by theorem 3. -/
 theorem rawFullSolderFrameAction_misses_affine_translation_term
-    (c : RoleSpace) (_hc : c ≠ 0) :
+    (c : RoleSpace) (hc : c ≠ 0) :
     (∃ (A h_y : AffineCartanMap ℝ RoleSpace) (q v : RoleSpace),
-      apply (⟨LinearEquiv.refl ℝ RoleSpace, c⟩ * A * h_y⁻¹) (apply h_y q) -
-          (⟨LinearEquiv.refl ℝ RoleSpace, c⟩ : AffineCartanMap ℝ RoleSpace).lin v =
-        c) ∧
+      let residual :=
+        apply (⟨LinearEquiv.refl ℝ RoleSpace, c⟩ * A * h_y⁻¹) (apply h_y q) -
+          (⟨LinearEquiv.refl ℝ RoleSpace, c⟩ : AffineCartanMap ℝ RoleSpace).lin v
+      residual = c ∧ residual ≠ 0) ∧
     (∀ (N : ℕ) (e : LocalCoframeField N)
         (Λ : ArchiveRolePhaseGroup N → Matrix Role Role ℝ)
         (x : ArchiveRolePhaseGroup N),
@@ -189,10 +190,16 @@ theorem rawFullSolderFrameAction_misses_affine_translation_term
         rawSolderMatrix N e x * Λ x) := by
   refine ⟨?_, rawFullSolderFrameAction_is_linear_right_action⟩
   refine ⟨1, 1, 0, 0, ?_⟩
+  dsimp
   have h :=
     affineOrigin_pureTranslation_residual (1 : AffineCartanMap ℝ RoleSpace) 1 0 0 c
-  -- simplify to residual = c
-  simp [apply, one_lin, one_shift, map_zero, sub_zero, add_zero] at h ⊢
+  have hres :
+      apply
+          ((⟨LinearEquiv.refl ℝ RoleSpace, c⟩ : AffineCartanMap ℝ RoleSpace) * 1 * (1 : AffineCartanMap ℝ RoleSpace)⁻¹)
+          (apply (1 : AffineCartanMap ℝ RoleSpace) 0) -
+        (⟨LinearEquiv.refl ℝ RoleSpace, c⟩ : AffineCartanMap ℝ RoleSpace).lin 0 = c := by
+    simpa [apply, one_lin, one_shift, map_zero, sub_zero, add_zero] using h
+  exact ⟨hres, hres ▸ hc⟩
 
 /-! ## Optional abstract interface (uninstantiated) -/
 
