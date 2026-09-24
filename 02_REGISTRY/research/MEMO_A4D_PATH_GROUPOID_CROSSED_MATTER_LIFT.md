@@ -5,6 +5,8 @@
 **Terminal:** `PATH-GROUPOID-LIFT-REQUIRES-NEW-AFFINE-PATH-RESPONSE-PRIMITIVE`  
 **Status:** theorem-ready research classification, no new Lean source and no general-background matter lift claimed.
 
+**Review repair:** the labelled-path descent statement is explicitly separated from the existing Prop-edge `ChainPath E` owner; the slot-faithful `List ChainStep` iff, including the `L=2` parallel-slot collision, is theorem-ready research rather than claimed Lean ownership.
+
 ## 1. Inputs and ownership
 
 Read fully: `MEMO_A4D_CROSSED_CONSTITUTIVE_REPRESENTATION.md`;
