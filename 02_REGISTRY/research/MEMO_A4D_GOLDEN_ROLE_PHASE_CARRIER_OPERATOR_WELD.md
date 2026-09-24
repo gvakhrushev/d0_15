@@ -4,6 +4,7 @@
 **Branch start:** `4ffc910` (lifecycle `IN_PROGRESS`).
 **Brief:** `00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD.md`.
 **Consumed:** PR #86 `MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD.md`, `ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md`, PR #99 `A4DGoldenRolePhaseRGDefect` and `A4DGoldenCarrierWeldBoundary`.
+**Review repair:** incorporated before Ready; terminal and positive leftover preserved with corrected no-go scope.
 **No Lean source. No physical time. No `J` / `D_H` / `H(e)` inter-level naturality.**
 
 ## 0. Terminal verdict
