@@ -83,17 +83,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION.md"
     },
     {
-      "id": "WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The PR #95 theorem-ready algebraic boundary is Lean-owned: scalar vertical word-length mixing, exact full staggered first-jet path-expression support of word length at most two, and quadratic endpoint-dressing second-jet nonselection, without constructing the crossed constitutive law.",
-      "brief": "00_WORK/tasks/WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY.md"
-    },
-    {
       "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
