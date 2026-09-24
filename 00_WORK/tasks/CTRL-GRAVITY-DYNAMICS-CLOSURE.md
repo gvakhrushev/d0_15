@@ -25,21 +25,21 @@ R_{\rm nil}(L,b)=T_b\rho(L),
 
 with the correct affine semidirect law and a site-aware weighted-shift realization.
 
-The earliest unresolved fixed-N datum is now the **solder–Cartan edge mismatch/comparison** joining two already-existing descriptions of the same Role edge:
+PR #112 has now classified the transported-reference B/E comparison. The row/vector ambiguity is closed by the existing `solderLegVector`, and for a supplied source reference leg (q) the conditional mismatch
 
 ```text
-affine Cartan translation b_(x,r)
-            ↕
-raw solder/coframe edge datum
+kappa_q(A,e;x,r) = A_(x,r)(q_r(x+r)) - solderLegVector(e,x,r)
 ```
 
-The candidate notation
+is well typed.
+
+The earliest unresolved fixed-N datum is therefore the **source reference-leg / affine-origin section**
 
 ```text
-kappa_N(A,e; x,r) : V_x
+q_N(A,e; y,r) : V_y
 ```
 
-is a packaging to construct or terminally classify, not a proved unique factorization theorem.
+or an explicitly equivalent affine-point/origin primitive. The repository must either construct/select this datum or terminally classify the first additional geometric principle needed for it before `kappa_N(A,e)` can be intrinsic.
 
 Current lanes are intentionally ordered:
 
@@ -296,11 +296,11 @@ This is not a universal matter/comparison no-go. A path-resolved primitive and i
 
 The older path-word and three-channel synthesis packets remain provenance, but the active frontier is now `SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING.md`.
 
-Channel B is constructed at research level, so "affine-shift response missing" is stale. The immediate missing datum is a covariant B/E edge comparison. Only after that comparison lands may the blocked finite graded E-dressing task ask for an arbitrary-background extension of the pure-gauge `F_phi` chart.
+Channel B is now Lean-owned in PR #113, so "affine-shift response missing" is stale. PR #112 also closes the conditional B/E edge comparison for a supplied reference leg. The immediate missing datum is the source reference-leg / affine-origin selection (q). Only after a usable (q) or an explicitly adopted equivalent primitive lands may the blocked finite graded E-dressing task ask for an arbitrary-background extension of the pure-gauge `F_phi` chart.
 
 The owned `H(e)` constrains the induced constitutive tangent, not the full tangent generator of an arbitrary finite dressing; its skew part remains a classification problem away from the exact-coframe orbit.
 
-### Adjacent inter-level refinement seam### Adjacent inter-level refinement seam
+### Adjacent inter-level refinement seam
 
 PR #86 terminally classifies the current golden/Role-phase research lane as
 
@@ -359,7 +359,7 @@ Do NOT:
 - infer continuum Einstein dynamics from a finite Role-matrix response;
 - treat the PR #108 infinitesimal cycle-sum/plaquette theorems as if they were already exact nonlinear relations of the unknown finite letter;
 - insert golden `phi`, AF index data or a `k=n` rule into the fixed-N elementary matter letter;
-- reopen `Q`, `S` or `K` as independent selectors before the current edge-comparison / graded-dressing seam is resolved;
+- reopen `Q`, `S` or `K` as independent selectors before the current reference-section / graded-dressing seam is resolved;
 - use `[H,T_b]` as a mechanism for erasing a nonzero degree-mixing affine translation response;
 - identify the pure-gauge trivialization `F_phi` with the constitutive/Riesz section `W_flux`, or infer `D F = H` from `D W = H`;
 - claim uniqueness of the finite graded E dressing from `H` alone; at first order `H` fixes only the symmetric part of the dressing generator.
