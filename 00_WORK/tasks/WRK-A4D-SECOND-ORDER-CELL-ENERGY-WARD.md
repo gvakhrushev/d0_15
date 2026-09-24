@@ -321,7 +321,7 @@ The same `J` may support different `W`.
 ## Package J — integrated scalar advective groupoid obstruction
 
 This package absorbs the theorem-ready core of
-\`MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md\`.
+`MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md`.
 Do NOT create a separate worker for it.
 
 The package is deliberately scoped to the scalar class with **output-site parameter locality**
@@ -373,7 +373,7 @@ M_{\xi^2}D^2.
 \]
 
 This is a **derived particular second jet inside the explicit output-site-local class**.
-It does not replace the generic \`K\` in Packages A--I and does not select a universal matter representation.
+It does not replace the generic `K` in Packages A--I and does not select a universal matter representation.
 
 ### J3. Complete L=5 delta matrix
 
@@ -410,7 +410,7 @@ In particular prove the nonzero same-axis distance-two entry
 (D^2W_0[h,h])_{+1,-1}=-25/2.
 \]
 
-Also include the durable memo's non-delta \`L=5\` control with \(G^2\ne0\). Do not generalize delta nilpotence to that case.
+Also include the durable memo's non-delta `L=5` control with \(G^2\ne0\). Do not generalize delta nilpotence to that case.
 
 ### J4. Scoped direct elementary-cell obstruction
 
@@ -422,7 +422,7 @@ For \(L\ge5\), prove that a direct elementary-cell Hessian cannot couple the sam
 
 Preferred theorem semantics:
 
-\`outputSiteLocal_noDirectElementaryCellInvariantEnergy\`.
+`outputSiteLocal_noDirectElementaryCellInvariantEnergy`.
 
 This is **not**:
 
@@ -434,7 +434,7 @@ This is **not**:
 
 ### J5. Handoff boundary to the active EXP
 
-Record, without trying to solve it in Lean here, that unrestricted flat mixed-cocycle solutions may differ from \`B_adv\` by
+Record, without trying to solve it in Lean here, that unrestricted flat mixed-cocycle solutions may differ from `B_adv` by
 
 \[
 \mathcal S:
@@ -444,7 +444,7 @@ Record, without trying to solve it in Lean here, that unrestricted flat mixed-co
 symmetric in its two coframe arguments.
 
 The construction/integration of this comparison jet belongs to
-\`EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW\`.
+`EXP-A4D-ENDPOINT-COMPARISON-JET-OVERLAP-LAW`.
 Do not invent \(\mathcal S\) in this worker.
 
 ## Truth boundaries
