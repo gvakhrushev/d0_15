@@ -27,7 +27,8 @@ number**. Do not call executions “worker 1”, “worker 2”, etc.; say “PR
 
 1. **GitHub first.** No local implementation/research work starts before a Draft
    PR exists remotely. A local worktree is only an execution workspace for an
-   already-open task PR.
+   already-open task PR. On the execution branch use
+   `python tools/task_lifecycle.py start TASK-ID` before opening the Draft PR.
 2. **Runtime status is the PR.**
    - Draft PR + `Lifecycle: IN_PROGRESS` = executing.
    - Draft PR + `Lifecycle: BLOCKED` = blocked, with blocker stated in the PR.
@@ -44,8 +45,9 @@ number**. Do not call executions “worker 1”, “worker 2”, etc.; say “PR
    blocking review. CONTROL either merges the accepted PR or leaves an explicit
    blocking comment.
 7. **No post-merge lifecycle cleanup PR for ordinary tasks.** WORKER/EXPENSIVE
-   PRs must delete their own manifest row + brief and regenerate status views
-   before becoming Ready. This makes merge atomic with lifecycle completion.
+   PRs run `python tools/task_lifecycle.py retire TASK-ID` before becoming Ready.
+   That removes the manifest row + brief and regenerates status views in the same
+   PR, making merge atomic with lifecycle completion.
 
 ## PR contract
 
