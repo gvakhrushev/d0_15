@@ -47,17 +47,27 @@ Current lanes are intentionally ordered:
 PR #113 nilpotent affine response + grading firewall
   → LEAN-OWNED
 
-PR #112 transported-reference mismatch
-  → EXP-A4D-SOLDER-REFERENCE-LEG-SECTION
-  → construct/classify the source reference-leg / affine-origin datum q
+PR #115 affine-origin covariance boundary
+  → LEAN-OWNED
+
+PR #116 conditional transported-reference mismatch
+  → Lean ownership landing/reconciled
+
+PR #114 reference-leg research
+  → SOLDER-REFERENCE-LEG-REQUIRES-NEW-GEOMETRIC-SELECTION-PRINCIPLE
+
+next heavy research
+  → EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE
+  → derive one junction/overlap/minimality/basepoint principle that kills both
+    z_curl and z_harm freedoms
 
 parallel theorem-ready formalization
-  → WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH
-  → WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY
+  → WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY
+  → WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO
 
 arbitrary-background finite graded E dressing
   → EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
-  → BLOCKED until a usable q/origin datum lands
+  → BLOCKED until the labelled reference selector actually lands
 ```
 
 The current durable synthesis is
@@ -126,10 +136,12 @@ Current frontier labels:
 ```text
 LABELLED-LIST-CHAINSTEP-HOLONOMY-DESCENT-SKELETON-LEAN-OWNED
 CHANNEL-L-EXTERIOR-AFFINE-SHIFT-BLINDNESS-LEAN-OWNED
-AFFINE-TRANSLATION-SITE-RESPONSE-CONSTRUCTED-LEAN-OWNER-PENDING
-SOLDER-CARTAN-TRANSPORTED-REFERENCE-MISMATCH-CLASSIFIED
-SOLDER-REFERENCE-LEG-ORIGIN-SECTION-OPEN
-FINITE-GRADED-E-DRESSING-BLOCKED-ON-REFERENCE-SECTION
+AFFINE-TRANSLATION-SITE-RESPONSE-LEAN-OWNED
+AFFINE-ORIGIN-COVARIANCE-BOUNDARY-LEAN-OWNED
+CONDITIONAL-TRANSPORTED-REFERENCE-MISMATCH-LEAN-OWNED
+SOLDER-REFERENCE-SECTION-NONSELECTION-CLASSIFIED
+LABELLED-REFERENCE-SELECTION-PRINCIPLE-OPEN
+FINITE-GRADED-E-DRESSING-BLOCKED-ON-REFERENCE-SELECTION
 ```
 
 Landed prerequisites:
@@ -155,41 +167,47 @@ Active formalization lanes:
 PR #113
 → nilpotent affine T_b / R_nil + literal degree/parity boundary LEAN-OWNED
 
-MEMO_A4D_SOLDER_CARTAN_EDGE_MISMATCH
-→ WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH
-→ Lean-own conditional kappa_q and T_(kappa_q) controls
+PR #115
+→ full-affine origin covariance + linear-only solder translation defect LEAN-OWNED
 
-MEMO_A4D_SOLDER_CARTAN_EDGE_MISMATCH
-→ WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY
-→ Lean-own full-affine origin covariance and the linear-only solder translation defect
+PR #116
+→ conditional kappa_q and T_(kappa_q) flat/cancellation/pure-shift controls
+→ landing after generated-view reconciliation
+
+MEMO_A4D_SOLDER_REFERENCE_LEG_SECTION
+→ WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY
+→ Lean-own exact two-link junction identity and endpoint-compression iff criterion
+
+MEMO_A4D_SOLDER_REFERENCE_LEG_SECTION
+→ WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO
+→ Lean-own the scoped constant source/target/shift candidate-class obstruction
 ```
 
 Active fixed-level research lane:
 
 ```text
-MEMO_A4D_SOLDER_CARTAN_EDGE_MISMATCH  (#112)
-→ EXP-A4D-SOLDER-REFERENCE-LEG-SECTION
-→ derive, select, or terminally classify the source-fibre reference/origin section q
+MEMO_A4D_SOLDER_REFERENCE_LEG_SECTION  (#114)
+→ EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE
+→ introduce an independently motivated labelled-edge geometric selector
+→ it must eliminate both z_curl and z_harm and supply a junction/overlap law
 ```
 
 Blocked next research lane:
 
 ```text
 EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
-→ do not start merely because #112 merged
-→ start only after a usable q/origin datum lands or is explicitly adopted
-→ then classify a finite graded background dressing with exact pure-gauge restriction and induced DW|_0 = H
+→ do not start merely because #114 merged
+→ start only after a usable labelled-edge reference selector or explicitly
+  adopted equivalent geometric datum lands
+→ then classify a finite graded background dressing with exact pure-gauge
+  restriction and induced DW|_0 = H
 ```
 
-PR #111 has landed the labelled-path skeleton and exact L=2 period. PR #110 has landed the Channel-L affine-shift blindness boundary. PR #109 constructed Channel B at research level, and PR #113 now Lean-owns that nilpotent affine response together with its literal degree/parity boundary. PR #112 closed the row/vector ambiguity and constructed the conditional target-fibre mismatch
-
-```text
-kappa_q(A,e;x,r) = A_(x,r)(q_r(x+r)) - solderLegVector(e,x,r)
-```
-
-with exact pure-linear frame covariance and flat/pure-gauge/pure-shift controls, conditional on a supplied reference leg.
-
-The current research target is therefore no longer the B/E edge comparison itself. It is the selection/construction of the source reference-leg or affine-origin section `q`.
+PR #114 strengthens the frontier beyond "find q": the old normalization and
+pure-linear covariance controls do not select a unique section.  Conditional on
+one admissible seed, explicit curl and harmonic deformations preserve all old
+controls while changing transverse response.  The next task must therefore
+supply a new geometric principle, not another convenient formula.
 
 Fixed-level endpoint research is terminal in PR #84:
 

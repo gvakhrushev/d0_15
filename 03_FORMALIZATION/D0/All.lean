@@ -274,6 +274,7 @@ import D0.Gauge.WilsonLinkGaugeCovariance
 import D0.Gauge.YangMillsKillingPositivity
 import D0.Geometry.A4DActionGroupoidSecondJet
 import D0.Geometry.A4DAffineMatterLiftObstruction
+import D0.Geometry.A4DAffineOriginSolderBoundary
 import D0.Geometry.A4DAffineShiftExteriorBlindness
 import D0.Geometry.A4DCellHessianTransverseModulus
 import D0.Geometry.A4DCenteredCartanClosureNoGo
@@ -314,6 +315,7 @@ import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DStaggeredFirstJetPathExpansion
 import D0.Geometry.A4DStaggeredHodgeSelector
 import D0.Geometry.A4DSymRoleCentralDifference
+import D0.Geometry.A4DTransportedReferenceMismatch
 import D0.Geometry.A4DUnlabelledCenterHolonomyNoGo
 import D0.Geometry.Archive1DCochainRefinement
 import D0.Geometry.Archive1Dto4DRGLiftNoGo
