@@ -59,6 +59,13 @@ D=4\text{ in that normalization}
 
 without a typed bridge. The four archive Roles / Clifford-four carrier and the normalization index must remain distinct until such a bridge is proved.
 
+
+### 1.4 Naming and repeated-factor firewall
+
+Do not call the golden root pair “ABCD” in new task/memo names. `D0-ABCD-001` already means the four-element `DyadABCD` / Role carrier. Use “golden pair”, “golden quadratic” or “period-one representative” for the \((\phi,\psi)\) object.
+
+Likewise, the numeral `2` appears in several already-owned structures — two colors in located primal/dual placement, polarization identities, the two roots of the golden quadratic, and two-tick constructions. These are typed occurrences, not one theorem with a common cause. Do not collapse them without an explicit bridge.
+
 ## 2. Three different towers already exist
 
 The nearest roadmap must not use one symbol `N` as if these were the same system.
