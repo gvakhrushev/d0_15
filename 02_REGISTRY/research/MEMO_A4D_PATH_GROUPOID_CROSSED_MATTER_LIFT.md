@@ -229,30 +229,62 @@ affine-sensitive response.
 For paths \(p,q:x\to y\), if positive letters have been supplied,
 the matter comparison is
 \(\mathcal H_{A,e,n}(x;p,q)=\Pi(x;p)\Pi(x;q)^{-1}\).
-The principal structural owner is the exact #70 theorem
-`pathEval_factors_pairGroupoid_iff_trivial_holonomy`:
+The structural model is the exact #70 theorem
+`pathEval_factors_pairGroupoid_iff_trivial_holonomy`, but its literal
+Lean type is `ChainPath E` with `E : X → X → Prop`. Therefore that
+owned theorem does **not by itself** retain two parallel edge labels
+when distinct slots have the same ordered endpoints, as happens for
+`.fwd r` and `.bwd r` at \(L=2\).
+
+For the slot-faithful parent used here, define a labelled path by a
+starting site together with `p : List ChainStep`, with endpoint
+`pathEnd N p x`, and evaluate it by the shifted positive/inverse
+letters of §2. The theorem-ready labelled analogue is
 
 \[
-[\forall x,y,p,q:x\to y,\ \Pi(x;p)=\Pi(x;q)]
+[\forall x,y,p,q,\ 
+  \operatorname{end}(x;p)=y=
+  \operatorname{end}(x;q)\Rightarrow
+  \Pi(x;p)=\Pi(x;q)]
 \ \Longleftrightarrow\
-[\forall x,p:x\to x,\ \Pi(x;p)=1_{V_x}].                       \tag{5.1}
+[\forall x,p,\ 
+  \operatorname{end}(x;p)=x\Rightarrow
+  \Pi(x;p)=1_{V_x}].                                           \tag{5.1}
 \]
 
-The forward proof compares a loop with `nil`; the reverse
-compares \(p{+\!\!+}q^{-1}\) with `nil` and cancels \(\Pi(q)\)
-using (2.1). The proof applies verbatim to *labelled* paths,
-including parallel \(L=2\) slots. This is an iff for the actual
-matter holonomy, not an asymptotic or first-order scalar test.
+This labelled statement is **research-derived here, not yet a Lean
+owner**. Its proof is the same cancellation argument as #70:
+the forward direction compares a labelled loop with `nil`; the
+reverse compares \(p{+\!\!+}q^{-1}\) with `nil` and cancels
+\(\Pi(q)\) using (2.1). No quotient of edge labels is used.
+
+At \(L=2\), (5.1) has a necessary visible collision test:
+`.fwd r` and `.bwd r` from the same site have the same endpoint,
+so labelled endpoint descent forces their transports to agree.
+With the shifted-inverse convention this is exactly the local
+length-two period relation
+\[
+\ell^+(x,r)\,\ell^+(x+r,r)=1.
+\tag{5.1a}
+\]
+Thus the labelled criterion keeps the two slots distinct until
+descent is proved; it does not silently identify them through the
+Prop-valued adjacency relation.
 
 For the periodic four-dimensional cubical graph with positive and
-shifted inverse letters, an exact finite presentation checks all
-oriented elementary plaquette relations (including literal \(L=2\)
-degeneracies) plus one length-\(L\) period in each of four independent
-directions at a root, transported by paths to other sites. Cancel
-backtracks, commute neighboring steps using plaquettes and reduce
-coordinate winding with periods: every loop reduces to the identity.
-Conversely (5.1) forces every listed relation. Plaquette flatness
-alone permits nontrivial harmonic cycles.
+shifted inverse letters, the corresponding theorem-ready finite
+presentation checks all **labelled** oriented elementary plaquette
+relations plus one length-\(L\) period in each of four independent
+directions at a root, transported by paths to other sites. Backtracks
+cancel by construction; plaquettes commute neighboring labelled
+steps; periods reduce coordinate winding. At \(L=2\) the period
+relation additionally resolves the parallel `.fwd/.bwd` endpoint
+collision as in (5.1a). Hence these relations reduce every labelled
+loop to the identity. Conversely the labelled iff (5.1) forces every
+listed relation. This finite presentation is theorem-ready research
+content, not a claim that #70 already formalizes the labelled
+\(L=2\) version. Plaquette flatness alone still permits nontrivial
+harmonic cycles.
 
 **Membership versus descent.** PR #101's finite algebra is
 \(\mathcal A_N=(\operatorname{Fun}(X,E_{\rm deg}))\rtimes X\),
@@ -436,15 +468,19 @@ even at first order in *all* independent \(A,e\)
 directions. Calling the product of unspecified
 links \(\Pi\) a solution would conceal this gap.
 
-Once (8.1) is supplied, (2.1) proves append/reverse,
-(5.1) gives the exact labelled endpoint iff, and
-plaquette plus four periods give a finite torus
-criterion. An evaluated operator may already lie
-in the compressed matrix algebra while its
-*path-labelled* evaluation fails endpoint descent;
-this corrects the overly strong initial hypothesis.
-Transporting compatible site/degree coefficients
-is needed for the full crossed product.
+Once (8.1) is supplied, (2.1) proves append/reverse.
+The first formal follow-up is the labelled `List ChainStep`
+analogue (5.1), using the cancellation proof pattern of the owned
+#70 `ChainPath E` theorem without conflating their edge types.
+Together with the labelled plaquette relations and four periods
+(including the explicit \(L=2\) slot-collision consequence (5.1a)),
+that yields the finite-torus endpoint descent criterion.
+
+An evaluated operator may already lie in the compressed matrix
+algebra while its *path-labelled* evaluation fails endpoint descent;
+this corrects the overly strong initial hypothesis. Transporting
+compatible site/degree coefficients is additionally needed for the
+full crossed product.
 
 **Terminal verdict:**
 `PATH-GROUPOID-LIFT-REQUIRES-NEW-AFFINE-PATH-RESPONSE-PRIMITIVE`.
@@ -452,13 +488,14 @@ This is a scoped missing-definition result, not
 a universal no-go for every conceivable path/CAR
 target and not a selected second jet.
 
-**Exactly one recommended next step:** define and
-formalize the affine-sensitive, site-aware positive
-link (8.1), including joint pure-gauge chart and
-independent \(A,e,n\) covariance/first-jet axioms;
-then apply the existing
-`pathEval_factors_pairGroupoid_iff_trivial_holonomy`
-proof to its literal labelled-path evaluation.
+**Exactly one recommended next step:** define the
+affine-sensitive, site-aware positive link (8.1), including the joint
+pure-gauge chart and independent \(A,e,n\) covariance/first-jet
+requirements; in the same formalization, first add the slot-faithful
+`List ChainStep` endpoint-independence iff trivial labelled holonomy
+lemma using the #70 proof pattern, so the \(L=2\) parallel-slot
+boundary is explicit rather than inherited from a Prop-valued edge
+relation.
 
 ## 9. Reproduction
 
