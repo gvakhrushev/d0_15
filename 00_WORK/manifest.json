@@ -75,7 +75,7 @@
       "id": "EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
