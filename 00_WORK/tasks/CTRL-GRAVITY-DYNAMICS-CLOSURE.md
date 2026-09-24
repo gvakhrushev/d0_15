@@ -44,12 +44,16 @@ is a packaging to construct or terminally classify, not a proved unique factoriz
 Current lanes are intentionally ordered:
 
 ```text
-PR #109 nilpotent affine response → Lean ownership + grading firewall
-  → WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY
+PR #113 nilpotent affine response + grading firewall
+  → LEAN-OWNED
 
 PR #112 transported-reference mismatch
   → EXP-A4D-SOLDER-REFERENCE-LEG-SECTION
   → construct/classify the source reference-leg / affine-origin datum q
+
+parallel theorem-ready formalization
+  → WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH
+  → WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY
 
 arbitrary-background finite graded E dressing
   → EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
@@ -145,12 +149,19 @@ MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
 
 PR #80 owns the theorem-ready second-order and scalar advective packages while retaining `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED` for the still-unselected general comparison jet / nonlinear action.
 
-Active formalization lane:
+Active formalization lanes:
 
 ```text
-SYNTHESIS_A4D_SOLDER_CARTAN_EDGE_MISMATCH_AND_GRADED_DRESSING
-→ WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY
-→ Lean-own T_b / R_nil and prove degree-preserving dressing cannot erase nonzero B response
+PR #113
+→ nilpotent affine T_b / R_nil + literal degree/parity boundary LEAN-OWNED
+
+MEMO_A4D_SOLDER_CARTAN_EDGE_MISMATCH
+→ WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH
+→ Lean-own conditional kappa_q and T_(kappa_q) controls
+
+MEMO_A4D_SOLDER_CARTAN_EDGE_MISMATCH
+→ WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY
+→ Lean-own full-affine origin covariance and the linear-only solder translation defect
 ```
 
 Active fixed-level research lane:
@@ -170,7 +181,7 @@ EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
 → then classify a finite graded background dressing with exact pure-gauge restriction and induced DW|_0 = H
 ```
 
-PR #111 has landed the labelled-path skeleton and exact L=2 period. PR #110 has landed the Channel-L affine-shift blindness boundary. PR #109 constructed Channel B at research level. PR #112 then closed the row/vector ambiguity and constructed the conditional target-fibre mismatch
+PR #111 has landed the labelled-path skeleton and exact L=2 period. PR #110 has landed the Channel-L affine-shift blindness boundary. PR #109 constructed Channel B at research level, and PR #113 now Lean-owns that nilpotent affine response together with its literal degree/parity boundary. PR #112 closed the row/vector ambiguity and constructed the conditional target-fibre mismatch
 
 ```text
 kappa_q(A,e;x,r) = A_(x,r)(q_r(x+r)) - solderLegVector(e,x,r)
