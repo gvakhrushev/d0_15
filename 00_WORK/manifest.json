@@ -98,17 +98,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CORRESPONDENCE-INDEX-RULE.md"
     },
     {
-      "id": "WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The finite Role-phase defining relations are Lean-proved to impose the exact cycle-period and plaquette integrability constraints on the landed scalar crossed first-jet law, with hostile witnesses and pure-gauge compatibility, without overclaiming a universal no-go.",
-      "brief": "00_WORK/tasks/WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY.md"
-    },
-    {
       "id": "EXP-A4D-PATH-GROUPOID-CROSSED-MATTER-LIFT",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
