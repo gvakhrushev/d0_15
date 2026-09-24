@@ -6,7 +6,7 @@ WORKER
 
 ## Parent
 
-`CTRL-GRAVITY-DYNAMICS-CLOSURE`
+\`CTRL-GRAVITY-DYNAMICS-CLOSURE\`
 
 ## State
 
@@ -14,102 +14,136 @@ PLANNED
 
 ## Start gate
 
-SATISFIED on current `main` after merged PR #103 and PR #107.
+SATISFIED on current \`main\` after merged PR #103 and PR #107.
 
-Read completely:
+Read completely, in this order:
 
-- `03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean`;
-- `03_FORMALIZATION/D0/Geometry/ArchiveExteriorPathTransport.lean`;
-- `03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean`;
-- `02_REGISTRY/research/MEMO_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md`;
-- `02_REGISTRY/research/MEMO_A4D_PATH_GROUPOID_CROSSED_MATTER_LIFT.md`.
+- \`02_REGISTRY/research/SYNTHESIS_A4D_ELEMENTARY_MATTER_LINK_THREE_CHANNEL.md\`;
+- \`03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean\`;
+- \`03_FORMALIZATION/D0/Geometry/ArchiveExteriorPathTransport.lean\`;
+- \`03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean\`;
+- \`02_REGISTRY/research/MEMO_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md\`;
+- \`02_REGISTRY/research/MEMO_A4D_PATH_GROUPOID_CROSSED_MATTER_LIFT.md\`.
+
+## Role in the current synthesis
+
+The next matter letter has three typed inputs/channels:
+
+1. linear Cartan / exterior transport;
+2. raw coframe amplitude / constitutive tangent;
+3. affine translational/site response.
+
+This worker classifies **Channel L only**.
+
+PR #103 already gives the positive linear exterior transport on the existing 16-state carrier. The heavy research task must not waste effort rediscovering whether that transport sees affine translation.
+
+This worker turns the blindness into a literal Lean boundary.
+
+It does **not** say that the final elementary matter letter is blind to affine translation.
 
 ## Objective
 
-Lean-own the exact **affine-shift blindness boundary** of the current 16-state exterior path transport.
+Lean-own the exact statement that the current PR #103
 
-PR #103 deliberately lifts only the linear part of the owned affine Cartan path transport. The research packets use the fact that a pure translational affine loop can carry nonzero affine shift while the exterior matter transport is identity.
+\`exteriorPathTransport\`
 
-This task must make that boundary literal in Lean.
+depends only on the linear part of affine Cartan path transport and therefore cannot, by itself, detect a pure translational affine holonomy.
 
 ## Mandatory results
 
-### 1. Dependence only on the linear path part
+### 1. Dependence only on linear path data
 
-Prove that two affine path values with equal linear parts induce equal
+Prove that equality of the relevant linear path values implies equality of
 
-`exteriorPathTransport`.
+\`exteriorPathTransport\`.
 
-Prefer a theorem stated at the existing `covariantLin` / `affinePath` level rather than inventing a new representation.
+State the theorem as close as possible to the existing \`covariantLin\` / \`affinePath\` API.
 
-### 2. Pure-translation blindness
+Do not create a new representation just to state the boundary.
 
-Prove a scoped statement:
+### 2. Identity linear part gives identity exterior transport
 
-if the affine path value has linear part identity, then the current exterior path transport is identity on the 16-state Fock carrier.
+Prove a scoped theorem:
 
-This is a positive theorem about the existing representation, not a no-go for all matter representations.
+if the affine path value has linear part identity, then the current 16-state exterior path transport is identity.
 
-### 3. Nonzero affine-shift witness
+Keep the theorem about the existing representation.
 
-Construct or reuse an exact finite archive witness, preferably at `L=3`, where an affine loop/path has:
+### 3. Exact nonzero affine-shift witness
 
-```text
+Construct or reuse an exact finite archive witness, preferably at \`L=3\`, with affine path/loop value
+
+\`\`\`text
 linear part = I
 affine shift ≠ 0
-```
+\`\`\`
 
-and prove that `exteriorPathTransport` nevertheless evaluates to identity.
+and prove simultaneously:
 
-The witness must use existing affine Cartan/path owners where possible.
+\`\`\`text
+exteriorPathTransport = I.
+\`\`\`
 
-### 4. Pair-of-paths comparison
+Prefer an existing Cartan/path witness over an ad hoc matrix fixture.
 
-If convenient, give two same-endpoint paths with the same linear transport but different affine shifts and prove the current exterior transport cannot distinguish them.
+The witness should be useful directly by the heavy research task as its Channel-B hostile control.
 
-### 5. Capstone scope theorem
+### 4. Same-endpoint comparison if natural
 
-Package the exact boundary:
+If the existing API makes this short, exhibit two same-endpoint labelled paths with:
 
-```text
-current exterior path transport represents linear holonomy
-but not affine translational holonomy.
-```
+- equal linear transport;
+- unequal affine shifts;
 
-Do not phrase this as impossibility of an enlarged, site-aware or path-expression matter response.
+and prove the current exterior transport evaluates them equally.
+
+Do not force this if it requires a large new path normal form.
+
+### 5. Capstone channel theorem
+
+Package a theorem or small theorem family whose precise reading is:
+
+\`\`\`text
+the PR #103 exterior path transport represents Channel L
+and factors through the linear affine path part;
+pure affine translation belongs to a different missing channel.
+\`\`\`
+
+The last clause is a typing interpretation of the proved factorization boundary, not a universal impossibility theorem.
 
 ## Truth firewall
 
 Do not claim:
 
 - no affine-sensitive matter representation exists;
-- translations cannot act on any enlarged carrier;
-- the missing site-aware link is impossible;
+- translations cannot act on the existing global site/path-expression carrier;
+- a 32-state or site-corner extension is impossible;
+- the final elementary letter must factor as a product of independent channel matrices;
 - the 16-state carrier must be abandoned;
-- stress, Einstein, physical time, golden/phi, or constitutive second-jet closure.
-
-The result only classifies the already-owned PR #103 exterior path transport.
+- #108 cycle/plaquette constraints are consequences of this linear channel;
+- stress, Einstein, physical time, Pisot time, golden/phi, or second-jet closure.
 
 ## Suggested module
 
-`D0/Geometry/A4DAffineShiftExteriorBlindness.lean`
+\`D0/Geometry/A4DAffineShiftExteriorBlindness.lean\`
 
 ## Validation
 
 Narrow build first, then one final D0 build and normal repository guards.
-No `sorry`, no new axiom.
+
+No \`sorry\`, no new axiom.
 
 ## GitHub-first flow
 
-1. fresh branch from current `main`;
-2. `python tools/task_lifecycle.py start WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS`;
+1. fresh branch from current \`main\`;
+2. \`python tools/task_lifecycle.py start WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS\`;
 3. open Draft PR immediately before source edits;
 4. implement and validate;
 5. before Ready self-retire the task;
-6. set `Lifecycle: REVIEW`;
+6. set \`Lifecycle: REVIEW\`;
 7. Ready for review;
 8. do not self-merge.
 
 ## Exit condition
 
-The current 16-state exterior path transport is Lean-proved to depend only on the linear affine path part, with an exact nonzero-translation witness showing that pure affine translational holonomy is invisible to this representation, without promoting the boundary to a universal no-go.
+The current 16-state exterior path transport is Lean-proved to factor through the linear affine path part, with an exact nonzero affine-translation witness on which the exterior transport is identity, thereby closing Channel L and leaving the site-aware affine translation response as the genuinely missing channel.
