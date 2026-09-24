@@ -277,6 +277,7 @@ import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DConstitutiveHolonomyStabilizer
 import D0.Geometry.A4DConstitutiveKernelClassification
 import D0.Geometry.A4DDiscreteEnergyKernel
+import D0.Geometry.A4DLocalReverseStarNoGo
 import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DPathCovariantHodge
 import D0.Geometry.A4DPathWordParentWard

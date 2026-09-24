@@ -12,7 +12,7 @@ WORKER / FORMALIZATION
 
 ## State
 
-PLANNED
+REVIEW
 
 ## Start gate
 
@@ -125,3 +125,16 @@ Do NOT claim impossibility of:
 ```text
 UNIFORM-TWO-SIDED-LOCAL-REVERSE-STAR-NOGO-OWNED
 ```
+
+
+## Lean result
+
+The expected verdict is Lean-owned in `D0/Geometry/A4DLocalReverseStarNoGo.lean`:
+
+- `W₁_coefficients` and `W₂_coefficients` give the two stated Laurent stencils;
+- `scalarKernel₁_inverseColumn` and `scalarKernel₂_inverseColumn` verify the exact period-five inverse columns, with nonzero distance-two entries;
+- `residue_aliasFree` and `periodized_identity_lifts_to_laurent_identity` prove the finite-period lift for `L > 2(R+R')`;
+- `scalarLaurentUnit_support_singleton` proves every exact scalar Laurent inverse is a nonzero monomial;
+- `no_uniform_periodic_scalar_family_with_neighboring_jet` proves the symmetric neighboring first jet is incompatible with the uniformly bounded two-sided local inverse hypotheses.
+
+The result is only about the scalar one-color stencil. It leaves the located two-color `J`, Lorentz/observer metric star, finite dense or growing-range inverses, inverse-free parents, and enlarged auxiliary fibers outside the no-go.
