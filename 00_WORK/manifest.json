@@ -114,7 +114,7 @@
       "id": "WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
