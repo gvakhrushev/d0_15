@@ -56,19 +56,24 @@ LOCATED-DUAL-PAIRING-FIXED-NONLINEAR-CELL-ENERGY-LAW-MISSING
 FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING
 ```
 
-Child order:
+Landed prerequisites:
 
 ```text
-WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL
-→ WRK-A4D-LOCATED-PRIMAL-DUAL-STAR
-→ EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY   (research runs in parallel)
-→ WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD                 (after terminal memo)
+WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL  (#75)
+WRK-A4D-LOCATED-PRIMAL-DUAL-STAR        (#76)
 ```
 
-Parallel physical lane:
+Remaining critical worker lane:
 
 ```text
-EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT
+MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY
+→ WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD
+```
+
+Parallel physical worker lane:
+
+```text
+MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT
 → WRK-A4D-OBSERVER-FRAME-CAR-LIFT
 ```
 
@@ -90,17 +95,17 @@ Do not reopen as generic searches:
 - scalar Cartan Lie closure and the no-go on a lattice-size-independent uniformly bounded Lie-closed radius;
 - constitutive radius-one Ward class, nonlinear nonselection, determinant-density freedom and holonomy-compatibility nonuniqueness.
 
-Merged formal owners include PRs #64–#70.
+Merged formal owners relevant to this seam include PRs #64–#70 and #74–#76; PR #75 owns the flux/first-jet kernel and PR #76 owns the located two-color `J`.
 
 ## Current frontier
 
 ### Flux-energy kernel
 
-`WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL` is the active worker. It must own the algebraic complementary pairing, full uncentered staggered H(e), independent flux energy, polarization/Riesz identity, Nyquist/corner controls and spatial-triad representation weld. It must not select a nonlinear physical constitutive law.
+`WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL` landed in PR #75. The algebraic complementary pairing, complete uncentered staggered first jet `H(e)`, independent flux energy, polarization/Riesz identity, Nyquist/corner controls and spatial-triad representation weld are Lean-owned. This does not select a nonlinear physical constitutive law.
 
 ### Located topological star
 
-`WRK-A4D-LOCATED-PRIMAL-DUAL-STAR` is research-ready. The center-matched two-color placement, independent dual incidence, topological square, parity-even complement law, S4 orientation pseudoequivariance and degree-signed Dirac conjugacy are already research-derived. This is a placement/counting owner, not a Lorentzian metric star.
+`WRK-A4D-LOCATED-PRIMAL-DUAL-STAR` landed in PR #76. The center-matched two-color placement, independent typed dual incidence, topological square, parity-even complement law, S4 orientation pseudoequivariance and chirality-correct Dirac conjugacy are Lean-owned. This is a placement/counting owner, not a Lorentzian metric star.
 
 ### Reverse-star locality no-go
 
