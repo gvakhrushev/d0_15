@@ -99,34 +99,6 @@
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
     },
     {
-      "id": "WRK-A4D-CHAIN-CONNECTION-THEOREM-PACKAGE",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-FINITE-CHAIN-LINK-TRANSPORT-001",
-        "D0-FINITE-CHAIN-CURVATURE-001",
-        "D0-COEFFICIENT-COVARIANT-DIFFERENTIAL-001",
-        "D0-CAR-OCCUPATION-PROJECTOR-001",
-        "D0-CARTAN-LINK-SCOPED-NOGO-001"
-      ],
-      "exit_condition": "Finite link transport, open-path curvature, coefficient differential covariance, occupation projectors, and the scoped Cartan-link no-gos are Lean-owned, while DISCRETE-CHAIN-CONNECTION-PRIMITIVE-REQUIRED stays open. The coefficient square, frame-to-Fock lift, replacement generation of every degree matrix unit, staggered Hodge tangent, and moving-d parent Ward are not claimed.",
-      "brief": "00_WORK/tasks/WRK-A4D-CHAIN-CONNECTION-THEOREM-PACKAGE.md"
-    },
-    {
-      "id": "WRK-A4D-DIAGONAL-ROLE-HODGE-SYMMETRY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001",
-        "D0-HODGE-GRADING-SYMMETRY-001",
-        "D0-SPATIAL-HODGE-SHELL-OPERATOR-001"
-      ],
-      "exit_condition": "The diagonal Role action on the archive cochain commutes with the Hodge Dirac and its square, the Fock-only action does not, fermion number commutes with the square and not with the first-order operator, and the Role-A stabilizer preserves the rank-96 spatial shell as a literal operator carrier without identifying that compression with the BOOK finite feedback operator.",
-      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-ROLE-HODGE-SYMMETRY.md"
-    },
-    {
       "id": "WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
