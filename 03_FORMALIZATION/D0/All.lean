@@ -274,6 +274,7 @@ import D0.Gauge.WilsonLinkGaugeCovariance
 import D0.Gauge.YangMillsKillingPositivity
 import D0.Geometry.A4DActionGroupoidSecondJet
 import D0.Geometry.A4DAffineMatterLiftObstruction
+import D0.Geometry.A4DAffineShiftExteriorBlindness
 import D0.Geometry.A4DCellHessianTransverseModulus
 import D0.Geometry.A4DCenteredCartanClosureNoGo
 import D0.Geometry.A4DCoframeParentConstraint
@@ -286,6 +287,7 @@ import D0.Geometry.A4DDiscreteEnergyKernel
 import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DHorizontalDressingSecondJetFreedom
+import D0.Geometry.A4DLabelledPathHolonomyDescent
 import D0.Geometry.A4DLocalReverseStarNoGo
 import D0.Geometry.A4DLocatedFrameCompatibilityBoundary
 import D0.Geometry.A4DLocatedMatterCellEnergy
