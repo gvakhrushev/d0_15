@@ -110,7 +110,7 @@
       "id": "WRK-A4D-LOCAL-REVERSE-STAR-NOGO",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
