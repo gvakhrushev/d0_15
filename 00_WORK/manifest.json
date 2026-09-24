@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY.md"
     },
     {
-      "id": "EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The independent affine translation and raw solder/coframe descriptions of one Role edge are joined by an explicit target-fibre covariant mismatch law satisfying flat, exact pure-gauge and pure-shift controls, or the earliest additional reference-leg/index/full-affine-solder datum required for such a comparison is terminally identified without reopening affine representability or finite E dressing.",
-      "brief": "00_WORK/tasks/EXP-A4D-SOLDER-CARTAN-EDGE-MISMATCH.md"
-    },
-    {
       "id": "EXP-A4D-FINITE-GRADED-COFRAME-DRESSING",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
