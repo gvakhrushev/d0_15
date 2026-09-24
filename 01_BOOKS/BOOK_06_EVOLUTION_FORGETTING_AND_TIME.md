@@ -383,7 +383,7 @@ enters Book 06 only as a cross-reference: the coefficient `38` (the action cycle
 
 ### The arrow is forced, not assumed
 
-The causal section above orders registrations but does not yet say *why* the order has a preferred direction. In D0 the arrow of time is not a phenomenological postulate added on top of the section; it is forced. Three independent routes converge on the same direction, and the convergence is the point — no single one is fitted.
+The causal section above orders registrations but does not yet say *why* the order has a preferred direction. In D0 the arrow of time is not a phenomenological postulate added on top of the section; it is forced. Three independent routes converge on the same direction, and the convergence is the point — no single one is fitted. Audited bound: the route ledger counts two load-bearing routes, not three. `02_REGISTRY/forcing_routes.json` records a shared premise for the golden-quadratic pair.
 
 **Route 1 — unique reproducible assembly order [^b06-15].** The observable scene is assembled from two non-commuting role operators: `Y` (compactification / shell-fold of the outer scene into the effective 4D projection) and `J` (defect localization). The composites differ. Applying `Y` then `J` localizes the defect *inside* an already-fixed boundary structure, so the observer gets reproducible "objects": `Y∘J` is a repeatable assembly procedure. Applying `J` then `Y` localizes "out of boundary context" and the subsequent fold turns the result into noise: `J∘Y` is not reproducible.
 
@@ -1056,6 +1056,8 @@ The hull-flow lives on a **2-torus** $T^2$, and this dimension is forced, not ch
 This is a feature, not a risk. By Adler–Weiss (PNAS 57 (1967) 1573) a smooth Markov partition of a toral automorphism exists **iff** the spectrum is Pisot. In degree 2 the golden number is Pisot: its conjugate $\psi=1-\varphi=-0.618\ldots$ has $|\psi|<1$, so the toral Markov partition on $T^2$ is **smooth** and the symbolic dynamics is clean (the Fibonacci word codes the golden foliation without pathology). The Bowen / Kenyon–Vershik non-smoothness only bites for $n\ge 3$ — i.e. it would only afflict an attempt to make *time* multidimensional, which D0 never does. A three-dimensional time would hit non-Pisot pathology; D0 requires two-dimensional time and lands exactly in the clean zone. **Status: FORCED** [^b06-37].
 
 ### Side synthesis: (3,1) signature from two independent objects
+
+The two mechanisms are a decomposition, not independent redundant forcings: the graph rank fixes the spatial count and the modular flow fixes the time count (`02_REGISTRY/forcing_routes.json`).
 
 The Lorentz signature $(3,1)$ is forced by **two distinct mechanisms**, which is why $3$ and $2$ do not conflict (space-rank and time-layer-degree count different things):
 

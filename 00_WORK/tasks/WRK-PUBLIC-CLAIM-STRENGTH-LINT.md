@@ -7,7 +7,7 @@ WORKER
 CTRL-REVIEW-SEMANTIC-HARDENING
 
 ## State
-PLANNED
+REVIEW
 
 ## Objective
 
@@ -70,6 +70,8 @@ Completion requires normal tooling tests/guards and a small set of negative test
 - `D0-RADIUS-ONE-WARD-KERNEL-001`
 - `D0-CONSTITUTIVE-KERNEL-FAMILY-001`
 - `D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001`
-- `D0-AFFINE-CARTAN-PATH-CLOSURE-001`## Cloud-first phase
+- `D0-AFFINE-CARTAN-PATH-CLOSURE-001`
 
-A cloud coding agent may prepare this task now on `draft/public-claim-strength-lint` while the one local worker slot is occupied by primal/dual parent verification. Keep the task PLANNED, do not edit manifest/status/generated views in the draft, and end with `CLOUD_DRAFT_READY`. CONTROL/local verification later runs guards and negative fixtures on fresh main.
+## Cloud-first phase
+
+The preferred implementation is cloud draft `draft/public-claim-strength-lint` at `4ea92cb1c7b0b4f711a97fd9375a5815b5e35702`, ported onto main `ff301cf248f66ca55a66388e82e0419fce2e9edb`. This worker is REVIEW.

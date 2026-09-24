@@ -36,7 +36,7 @@ Current execution:
 
 - P2 SM commutant research — TERMINAL / `ARCHIVE-COCHAIN-JOINT-COMMUTANT-STRICTLY-LARGER-CLASSIFIED`; no SM gauge derivation follows;
 - P1 universal M1 carrier classification — TERMINAL / `M1-UNIVERSALITY-COUNTEREXAMPLE`; task removed per `RESEARCH_LEDGER`;
-- `WRK-PUBLIC-CLAIM-STRENGTH-LINT` — PLANNED, cloud-first draft permitted;
+- `WRK-PUBLIC-CLAIM-STRENGTH-LINT` — REVIEW; preferred draft `4ea92cb` ported onto main;
 - `WRK-CERT-ARTIFACT-FRESHNESS` — PLANNED under this control;
 - public Born / ΛCDM / SM-gauge / φ-route wording repairs are landed and must remain regression-protected.
 

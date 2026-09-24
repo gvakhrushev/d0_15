@@ -1,0 +1,127 @@
+{
+  "schema": "d0-claim-strength/1",
+  "surfaces": ["README.md", "01_BOOKS", "02_REGISTRY/frontier"],
+  "rules": [
+    {
+      "id": "born-area-forces-quadratic",
+      "claim_ids": ["D0-BORN-AREA-PRESERVATION-INSUFFICIENT-NOGO-001"],
+      "pattern": "(?i)(?:area[-\\s]preservation|area-preserving|symplectic[-\\s]area preservation|symplectic area).{0,260}(?:uniquely forces|topologically forces|closes (?:that|the) loophole)",
+      "negation": "(?i)insufficient|no-go|counterexample|negative control|not the uniqueness|does not force|do not force|not force",
+      "window": 320,
+      "message": "Generic area preservation does not force the quadratic Born response. The owned uniqueness premise is quarter-turn phase blindness (BornAreaPreservationNoGo)."
+    },
+    {
+      "id": "lcdm-unconditional-exclusion",
+      "claim_ids": ["D0-DARK-EOS-DISCRETE-SET-001"],
+      "pattern": "(?i)every open graph.{0,160}unitary archive dissipation.{0,80}excludes?\\s+(?:Λ\\\\?mathrm\\{CDM\\}|ΛCDM|\\\\Lambda\\\\mathrm\\{CDM\\}|\\\\Lambda CDM|LambdaCDM|LCDM)",
+      "negation": "(?i)do not|does not|not a theorem|discrete EOS|adopted discrete|role-assignment|modelling premise|modeling premise",
+      "window": 280,
+      "message": "LambdaCDMExcluded is scoped to the adopted discrete EOS and role-assignment models. Do not drop those premises."
+    },
+    {
+      "id": "sm-derived-automorphism-algebra",
+      "claim_ids": ["D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001"],
+      "pattern": "(?i)(?:derived automorphism algebra|automorphism algebra derives|commutant derivation of\\s+(?:SU\\(3\\)|\\\\mathrm\\{SU\\}|Standard Model)|F_?4\\$?\\s*automorphism\\)?\\s*onto)",
+      "negation": "(?i)not yet|does not|do not claim|without claiming|dimension alignment|dimension/charge alignment|not a (?:formal |proved )?(?:Lie[- ])?subgroup|not a derived automorphism",
+      "window": 280,
+      "message": "AlbertSMProjection is dimension and charge alignment. It is not a derived automorphism or commutant algebra of SU(3)×SU(2)×U(1)."
+    },
+    {
+      "id": "phi-five-independent-routes",
+      "claim_ids": ["D0-PHI-HURWITZ-CLASS-CANONIZATION-001"],
+      "pattern": "(?i)\\bfive independent\\b",
+      "negation": "(?i)\\bnot five independent\\b|not independent derivations|forcing_routes\\.json",
+      "window": 180,
+      "message": "Do not call the golden-ratio routes five independent derivations. forcing_routes.json records the shared premises and independent_now."
+    },
+    {
+      "id": "shell-compression-is-book-feedback",
+      "claim_ids": ["D0-SPATIAL-HODGE-SHELL-OPERATOR-001"],
+      "pattern": "(?i)(?:shell compression|shell flux compression|spatialShellHodgeSquareCompression|spatialShellFluxCompression|compressed shell).{0,90}(?:\\bis\\b|equals|=).{0,50}(?:\\bF_N\\b|feedback operator|BOOK feedback)",
+      "negation": "(?i)\\bis not\\b|not the BOOK|not the finite feedback|not BOOK",
+      "window": 200,
+      "message": "spatialShellHodgeSquareCompression and spatialShellFluxCompression are shell restrictions. Neither is the BOOK finite feedback operator F_N."
+    },
+    {
+      "id": "ua-is-physical-time",
+      "claim_ids": ["D0-AFFINE-CARTAN-PATH-CLOSURE-001"],
+      "pattern": "(?i)\\bU_A\\b.{0,50}(?:\\bis\\b|equals|=).{0,40}physical time|physical time.{0,50}(?:\\bis\\b|equals|=).{0,30}\\bU_A\\b",
+      "negation": "(?i)\\bis not\\b|not physical time",
+      "window": 160,
+      "message": "U_A is an archive translation on the finite carrier. It is not physical time."
+    },
+    {
+      "id": "located-j-flips-parity",
+      "claim_ids": ["D0-HODGE-GRADING-SYMMETRY-001"],
+      "pattern": "(?i)located\\s+J.{0,90}(?:flips?|violates|anticommutes with|breaks|is parity-odd|does not preserve).{0,30}parity",
+      "negation": "(?i)does not flip|preserves parity|preserves Fock parity|commutes with Fock parity",
+      "window": 180,
+      "message": "In 4D the located complement J preserves Fock parity. The parity-odd operator is D_H."
+    },
+    {
+      "id": "nyquist-corner-selects-nonlinear-law",
+      "claim_ids": ["D0-PATH-HODGE-STABILIZER-001", "D0-CONSTITUTIVE-KERNEL-FAMILY-001"],
+      "pattern": "(?i)(?:Nyquist|corner).{0,100}(?:distinguishes|distinguish|selects|chooses|separates).{0,70}(?:nonlinear|strict-cell|cell energy|two laws)",
+      "negation": "(?i)do not distinguish|does not distinguish|cannot distinguish|do not select|does not select|blind",
+      "window": 200,
+      "message": "Nyquist and corner data do not distinguish the two strict-cell nonlinear laws. The flat jet does not select the quadratic coefficient."
+    },
+    {
+      "id": "shell48-is-matter-selector",
+      "claim_ids": ["D0-SPATIAL-HODGE-SHELL-OPERATOR-001"],
+      "pattern": "(?i)(?:48-dimensional|rank-48|rank 48|finrank 48|Hom_\\{S3\\}).{0,100}(?:matter selector|selects matter|selects a matter|matter embedding|selects the (?:physical )?state|selects a state)",
+      "negation": "(?i)not a matter selector|nonselection|does not select|do not select|not a matter embedding",
+      "window": 200,
+      "message": "The stabilizer-equivariant Hom space dim Hom_{S3}(R^3, H_shell) = 48 is nonselection. It does not select a matter embedding."
+    },
+    {
+      "id": "cut99-couples-directly-into-shell",
+      "claim_ids": ["D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001"],
+      "pattern": "(?i)(?:99-cut|opposite[- ]cut|\\|V9\\|\\|V11\\|=99).{0,110}(?:directly into the shell|direct shell coupling|couples directly)",
+      "negation": "(?i)not directly|through coframe|through source|not a physical-dynamics",
+      "window": 200,
+      "message": "The 99-cut couples through coframe and source data. It does not couple directly into the shell."
+    },
+    {
+      "id": "conjugacy-erases-degree-chirality",
+      "claim_ids": ["D0-HODGE-GRADING-SYMMETRY-001", "D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001"],
+      "pattern": "(?i)(?:conjugacy|conjugate).{0,90}(?:erases|drops|cancels|ignores).{0,40}(?:degree|chirality)|(?:degree sign|chirality sign|degree/chirality signs).{0,70}(?:erased|erases|drops out|cancelled|canceled)",
+      "negation": "(?i)must not|do not erase|does not erase|not erased|preserves degree",
+      "window": 180,
+      "message": "Located Dirac conjugacy keeps degree and chirality signs. Number does not commute with D_H, and parity anticommutes with D_H."
+    },
+    {
+      "id": "reverse-star-negates-located-j",
+      "claim_ids": ["D0-PRIMAL-DUAL-MOVING-ACTION-001"],
+      "pattern": "(?i)(?:reverse-star|reverse star).{0,110}(?:negates|negate|cancels|cancel|rules out|excludes|shows there is no).{0,40}located\\s+J",
+      "negation": "(?i)does not negate|does not cancel|do not cancel|not the located|does not rule out",
+      "window": 180,
+      "message": "The reverse-star locality no-go does not negate the located two-color J."
+    },
+    {
+      "id": "core-formalized-closes-gravity",
+      "claim_ids": [
+        "D0-MOVING-GRADED-DIFFERENTIAL-001",
+        "D0-MOVING-D-PARENT-WARD-001",
+        "D0-RADIUS-ONE-WARD-KERNEL-001",
+        "D0-CONSTITUTIVE-KERNEL-FAMILY-001",
+        "D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001",
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "pattern": "(?i)(?:CORE-FORMALIZED|core-formalized).{0,90}(?:closes|close|completes|complete).{0,50}(?:gravity closure|full gravity)|(?:gravity closure|full gravity dynamics).{0,40}(?:\\bis\\b|are)\\s+(?:complete|owned|CORE-FORMALIZED)",
+      "negation": "(?i)do not close|does not close|do not promote|does not complete|not the full|no physical Hodge kernel|no constitutive action",
+      "window": 220,
+      "message": "CORE-FORMALIZED subclaims do not promote the full gravity closure. No constitutive action or physical Hodge kernel is selected."
+    }
+  ],
+  "ledger": {
+    "id": "shared-premise-independence",
+    "claim_ids": ["D0-PHI-HURWITZ-CLASS-CANONIZATION-001"],
+    "source": "02_REGISTRY/forcing_routes.json",
+    "pattern": "(?i)(?:independent\\s+(?:forcing|forcings|route|routes|derivation|derivations|convergence|convergences|channel|channels)|(?:two|three|four|five|six)\\s+independent(?:\\s+\\w+){0,2}\\s+(?:forcing|forcings|route|routes|derivation|derivations|convergence|convergences|channel|channels|branches|faces|objects))",
+    "qualifier": "(?i)not independent|independent_now|shared premise|forcing_routes\\.json|one mechanism|repaired pair|did not hold|killed by|corroborat|decomposition|not a multiplicity",
+    "qualifier_lines": 25,
+    "message": "This section is audited in forcing_routes.json. An independence claim needs the ledger qualifier for shared premises, a kill, or independent_now."
+  },
+  "allowlist": []
+}
