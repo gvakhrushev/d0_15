@@ -12,6 +12,8 @@ letter — no independent backward link.
 Pull/composition order matches `affinePath` / `covariantLin`: later steps act
 first.
 
+Review note: this file is the generic word/descent skeleton only; the physical letter remains external.
+
 This module does **not** construct a physical matter link, does not specialize
 to an unknown `ell_N^+`, and does not widen
 `pathEval_factors_pairGroupoid_iff_trivial_holonomy` (Prop-edge `ChainPath E`).
