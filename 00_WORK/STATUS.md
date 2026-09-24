@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 0 | 1 | 1 | 0 | 2 | 2 / 3 |
+| EXPENSIVE | 0 | 0 | 1 | 0 | 1 | 1 / 3 |
 | WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **2** | **3** | **1** | **0** | **6** | **4 / 10** |
+| **Total** | **2** | **2** | **1** | **0** | **5** | **3 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -18,7 +18,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-GRAVITY-DYNAMICS-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | EXP-A4D-FINITE-GRADED-COFRAME-DRESSING | EXPENSIVE | BLOCKED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
-| EXP-A4D-SOLDER-REFERENCE-LEG-SECTION | EXPENSIVE | IN_PROGRESS | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-TRANSPORTED-REFERENCE-MISMATCH | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-AFFINE-ORIGIN-COVARIANCE-BOUNDARY | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 
