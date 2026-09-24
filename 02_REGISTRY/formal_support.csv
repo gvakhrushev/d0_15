@@ -106,3 +106,7 @@ D0.Geometry.A4DDiscreteEnergyKernel,D0/Geometry/A4DDiscreteEnergyKernel.lean,EXP
 D0.Geometry.A4DRoleSpatialRepresentationWeld,D0/Geometry/A4DRoleSpatialRepresentationWeld.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md
 D0.Geometry.A4DLocatedPrimalDualCell,D0/Geometry/A4DLocatedPrimalDualCell.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-LOCATED-PRIMAL-DUAL-STAR.md
 D0.Geometry.A4DLocatedTopologicalStar,D0/Geometry/A4DLocatedTopologicalStar.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-LOCATED-PRIMAL-DUAL-STAR.md
+D0.Geometry.A4DLocatedMatterCellEnergy,D0/Geometry/A4DLocatedMatterCellEnergy.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md;02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md
+D0.Geometry.A4DSecondOrderEnergyCovariance,D0/Geometry/A4DSecondOrderEnergyCovariance.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md;02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md
+D0.Geometry.A4DSecondOrderCartanWitness,D0/Geometry/A4DSecondOrderCartanWitness.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md;02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md
+D0.Geometry.A4DScalarAdvectiveGroupoidObstruction,D0/Geometry/A4DScalarAdvectiveGroupoidObstruction.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md;02_REGISTRY/research/MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md

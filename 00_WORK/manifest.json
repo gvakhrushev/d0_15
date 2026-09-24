@@ -64,7 +64,7 @@
       "id": "WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "REVIEW",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],

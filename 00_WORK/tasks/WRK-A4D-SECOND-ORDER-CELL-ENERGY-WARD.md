@@ -10,7 +10,7 @@ WORKER / FORMALIZATION + INTEGRATION
 
 ## State
 
-PLANNED
+REVIEW
 
 ## Start gate
 
@@ -478,6 +478,20 @@ If selector remains open, retain:
 ```text
 FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED
 ```
+
+## Integrated result
+
+The formal owner set is integrated in `D0.All` and the formal-support registry.
+The exact algebraic two-jet, moving differential/mixed-parent remainder, generic and
+L=5 scalar witnesses, and located reference energies are Lean-owned. The integrated
+scalar Package J owns the output-site-local commutator, forced advective background
+derivative and mixed cocycle, derived `K_ξ = M_(ξ²)D²`, the complete L=5 delta
+energy Hessian, the non-delta `G² ≠ 0` control, and the scoped direct elementary-cell
+obstruction. The comparison jet `S` remains explicit and unselected.
+
+Research verdict remains `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`; no physical
+Lorentz covariance, stress conservation, Einstein equation, or canonical cell energy
+is selected.
 
 ## Validation / lifecycle
 

@@ -278,6 +278,7 @@ import D0.Geometry.A4DConstitutiveHolonomyStabilizer
 import D0.Geometry.A4DConstitutiveKernelClassification
 import D0.Geometry.A4DDiscreteEnergyKernel
 import D0.Geometry.A4DLocalReverseStarNoGo
+import D0.Geometry.A4DLocatedMatterCellEnergy
 import D0.Geometry.A4DLocatedPrimalDualCell
 import D0.Geometry.A4DLocatedTopologicalStar
 import D0.Geometry.A4DMetricStressInterface
@@ -286,6 +287,9 @@ import D0.Geometry.A4DPathWordParentWard
 import D0.Geometry.A4DPrimalDualCellPairing
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DRoleSpatialRepresentationWeld
+import D0.Geometry.A4DScalarAdvectiveGroupoidObstruction
+import D0.Geometry.A4DSecondOrderCartanWitness
+import D0.Geometry.A4DSecondOrderEnergyCovariance
 import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DStaggeredHodgeSelector
 import D0.Geometry.A4DSymRoleCentralDifference
