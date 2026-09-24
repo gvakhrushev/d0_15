@@ -377,6 +377,47 @@ theorem nilpotentAffineGenerator_vacuum_ne_zero (b : RoleSpace) (hb : b ≠ 0) :
       map_zero] using this
   exact hb ((ExteriorAlgebra.ι_eq_zero_iff b).1 hι)
 
+
+/-- Creation from the vacuum is a literal degree-one exterior vector. -/
+theorem archiveExteriorCreator_vacuum_mem_degree_one (b : RoleSpace) :
+    archiveExteriorCreator b (Pi.single fockVacuumState (1 : ℝ)) ∈
+      archiveFockDegreeSector 1 := by
+  change archiveFockExteriorEquiv
+      (archiveExteriorCreator b (Pi.single fockVacuumState (1 : ℝ))) ∈
+    ExteriorAlgebra.exteriorPower ℝ 1 RoleSpace
+  rw [archiveExteriorCreator_on_vacuum_eq_ι]
+  change ExteriorAlgebra.ι ℝ b ∈
+    (LinearMap.range (ExteriorAlgebra.ι ℝ : RoleSpace →ₗ[ℝ] RoleExterior)) ^ 1
+  simpa using
+    (LinearMap.mem_range_self
+      (ExteriorAlgebra.ι ℝ : RoleSpace →ₗ[ℝ] RoleExterior) b)
+
+/-- Mandatory degree/parity witness: the nonzero response added to the degree-zero
+vacuum lies in exterior degree one, hence in the opposite degree parity sector. -/
+theorem nilpotentAffineTranslation_degree_parity_witness :
+    let vac := Pi.single fockVacuumState (1 : ℝ)
+    let δ := nilpotentAffineTranslation nilpotentWitnessShift vac - vac
+    δ ≠ 0 ∧
+      δ ∈ archiveFockDegreeSector 1 ∧
+      fockDegree fockVacuumState = 0 ∧
+      (0 : ℕ) % 2 ≠ (1 : ℕ) % 2 := by
+  dsimp
+  have hδ :
+      nilpotentAffineTranslation nilpotentWitnessShift
+          (Pi.single fockVacuumState (1 : ℝ)) -
+        Pi.single fockVacuumState (1 : ℝ) =
+      archiveExteriorCreator nilpotentWitnessShift
+        (Pi.single fockVacuumState (1 : ℝ)) := by
+    rw [nilpotentAffineTranslation_vacuum]
+    abel
+  refine ⟨?_, ?_, fockDegree_vacuum_eq_zero, by norm_num⟩
+  · rw [hδ]
+    simpa [nilpotentAffineGenerator_apply] using
+      nilpotentAffineGenerator_vacuum_ne_zero
+        nilpotentWitnessShift nilpotentWitnessShift_ne_zero
+  · rw [hδ]
+    exact archiveExteriorCreator_vacuum_mem_degree_one nilpotentWitnessShift
+
 /-- Preferred remnant: conjugated generator stays nonzero. -/
 theorem conjugate_generator_ne_zero
     (F : (ArchiveFockState → ℝ) ≃ₗ[ℝ] (ArchiveFockState → ℝ))
