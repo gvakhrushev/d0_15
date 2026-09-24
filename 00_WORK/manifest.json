@@ -75,7 +75,7 @@
       "id": "WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
