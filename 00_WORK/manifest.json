@@ -101,7 +101,7 @@
       "id": "WRK-A4D-CROSSED-DERIVATION-INTEGRABILITY",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
