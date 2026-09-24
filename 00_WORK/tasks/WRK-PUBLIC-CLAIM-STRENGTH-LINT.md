@@ -21,6 +21,20 @@ Implement a narrow, deterministic repository lint preventing known classes of pu
 - unqualified “independent forcing routes” when \`forcing_routes.json\` records shared premises;
 - future explicit NO-GO/scope repairs registered in a machine-readable rule table.
 
+## Fresh gravity semantic rules
+
+Add deterministic guards/allowlist-aware rules for the fresh A4D truth boundaries registered in PRs #66–#70, especially:
+
+- shell compression is not BOOK `F_N`;
+- `U_A` is not physical time;
+- located `J` preserves parity in 4D;
+- Nyquist/corner do not distinguish the two strict-cell nonlinear laws;
+- the 48-dimensional shell intertwiner space is nonselection, not a matter selector;
+- 99-cut couples through coframe/source data, not directly into the shell;
+- degree/chirality signs must not be erased from located Dirac conjugacy;
+- reverse-star locality no-go does not negate located `J`;
+- `CORE-FORMALIZED` subclaims do not promote the full gravity closure.
+
 ## Surfaces
 
 - README.md
@@ -44,6 +58,18 @@ Completion requires normal tooling tests/guards and a small set of negative test
 - `D0-PHI-HURWITZ-CLASS-CANONIZATION-001`
 
 
-## Cloud-first phase
+
+- `D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001`
+- `D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001`
+- `D0-HODGE-GRADING-SYMMETRY-001`
+- `D0-SPATIAL-HODGE-SHELL-OPERATOR-001`
+- `D0-MOVING-GRADED-DIFFERENTIAL-001`
+- `D0-PRIMAL-DUAL-MOVING-ACTION-001`
+- `D0-PATH-HODGE-STABILIZER-001`
+- `D0-MOVING-D-PARENT-WARD-001`
+- `D0-RADIUS-ONE-WARD-KERNEL-001`
+- `D0-CONSTITUTIVE-KERNEL-FAMILY-001`
+- `D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001`
+- `D0-AFFINE-CARTAN-PATH-CLOSURE-001`## Cloud-first phase
 
 A cloud coding agent may prepare this task now on `draft/public-claim-strength-lint` while the one local worker slot is occupied by primal/dual parent verification. Keep the task PLANNED, do not edit manifest/status/generated views in the draft, and end with `CLOUD_DRAFT_READY`. CONTROL/local verification later runs guards and negative fixtures on fresh main.

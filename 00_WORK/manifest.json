@@ -69,7 +69,7 @@
         "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001",
         "D0-FOCK-INTRINSIC-COMMUTANT-001"
       ],
-      "exit_condition": "The signed Perm Role cocycle and arbitrary CAR conjugation are owned. Derive or terminally classify the intrinsic commutant on the 16-state CAR/Fock carrier, using the signed transport, the corrected Hodge/CAR Dirac, and the degree/number structure. Albert dimension alignment and the frozen anomaly ledger are comparisons, not the definition.",
+      "exit_condition": "The joint commutant of the corrected archive Hodge Dirac and diagonal signed Role action is terminally classified on ArchiveCochain, with the D_H^2/number-phase enlargement separately identified and no Standard-Model promotion from dimensions or frozen ledgers.",
       "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {
@@ -81,7 +81,19 @@
         "D0-BORN-AREA-PRESERVATION-INSUFFICIENT-NOGO-001",
         "D0-DARK-EOS-DISCRETE-SET-001",
         "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001",
-        "D0-PHI-HURWITZ-CLASS-CANONIZATION-001"
+        "D0-PHI-HURWITZ-CLASS-CANONIZATION-001",
+        "D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001",
+        "D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001",
+        "D0-HODGE-GRADING-SYMMETRY-001",
+        "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "D0-MOVING-GRADED-DIFFERENTIAL-001",
+        "D0-PRIMAL-DUAL-MOVING-ACTION-001",
+        "D0-PATH-HODGE-STABILIZER-001",
+        "D0-MOVING-D-PARENT-WARD-001",
+        "D0-RADIUS-ONE-WARD-KERNEL-001",
+        "D0-CONSTITUTIVE-KERNEL-FAMILY-001",
+        "D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001",
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
       ],
       "exit_condition": "Repository tooling audits README/BOOK/frontier/monograph public claims against registry/forcing/no-go metadata for known overstatement classes, blocks stale phrases or missing qualifiers in CI, and the remaining high-risk public surfaces have an explicit reviewed allowlist or issue list.",
       "brief": "00_WORK/tasks/WRK-PUBLIC-CLAIM-STRENGTH-LINT.md"
@@ -93,7 +105,19 @@
       "state": "PLANNED",
       "affected_claims": [
         "D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001",
-        "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001"
+        "D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001",
+        "D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001",
+        "D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001",
+        "D0-HODGE-GRADING-SYMMETRY-001",
+        "D0-SPATIAL-HODGE-SHELL-OPERATOR-001",
+        "D0-MOVING-GRADED-DIFFERENTIAL-001",
+        "D0-PRIMAL-DUAL-MOVING-ACTION-001",
+        "D0-PATH-HODGE-STABILIZER-001",
+        "D0-MOVING-D-PARENT-WARD-001",
+        "D0-RADIUS-ONE-WARD-KERNEL-001",
+        "D0-CONSTITUTIVE-KERNEL-FAMILY-001",
+        "D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001",
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
       ],
       "exit_condition": "All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.",
       "brief": "00_WORK/tasks/WRK-CERT-ARTIFACT-FRESHNESS.md"
@@ -106,7 +130,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The algebraic complementary primal/dual pairing, full uncentered staggered Hodge first jet, independent finite flux energy, exact Riesz kernel identity, corner-support theorem, centered-metric Nyquist no-go, algebraic-dual Riesz candidate, and the canonical A-stabilizer weld between BalancedRole and spatial Role coefficients are Lean-owned and submitted in one PR, while located dual-cell placement remains a separate formalization owner, nonlinear physical constitutive selection remains open, and any physical scene-to-shell embedding remains explicitly unclaimed.",
+      "exit_condition": "The complementary pairing, full uncentered staggered first jet, independent flux energy and polarization/Riesz identity, Nyquist/corner controls, spatial-triad representation weld, and shell flux compression naming boundary are Lean-owned without duplicating the located-star owner or selecting nonlinear Q(e).",
       "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md"
     },
     {

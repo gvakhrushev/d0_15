@@ -39,3 +39,19 @@ Current execution:
 - `WRK-PUBLIC-CLAIM-STRENGTH-LINT` — PLANNED, cloud-first draft permitted;
 - `WRK-CERT-ARTIFACT-FRESHNESS` — PLANNED under this control;
 - public Born / ΛCDM / SM-gauge / φ-route wording repairs are landed and must remain regression-protected.
+
+## Fresh forbidden promotions
+
+Semantic lint and review must reject or require explicit qualification for:
+
+- BOOK `F_N` ← `spatialShellFluxCompression` / shell flux compression;
+- `U_A` = physical time evolution;
+- located `J` anticommutes with Fock parity;
+- Nyquist or distance-two corner separates the two strict-cell reference energies `E^(1)` and `E^(2)`;
+- `dim Hom_{S3}(R^3,H_shell)=48` selects a matter embedding;
+- direct `99-cut → 96-shell` coupling;
+- `J D J^{-1}=D_D` without the required degree/chirality sign convention;
+- scalar two-sided local reverse-star no-go ⇒ no located two-color `J`;
+- a `CORE-FORMALIZED` finite gravity ingredient ⇒ gravity/Einstein closure.
+
+Lint/certificate workers enforce this dictionary as semantic hygiene; they do not create new physics.

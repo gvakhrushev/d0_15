@@ -20,7 +20,7 @@ Repository:
 
 Authorized registration baseline:
 
-`b5803d02447dba4ab09e9e56e726706af60d3771`
+`df7779ef86ad9430d87adc32b60f15779277ff0a`
 
 At launch:
 
@@ -63,6 +63,16 @@ Under that exception:
 
 This exception is operational only. It does not change theorem scope, task state,
 or scientific ownership.
+
+## Three-star dictionary — keep these objects distinct
+
+| Name | Meaning |
+|---|---|
+| `J` | Two-color center-matched primal/dual placement/pairing. Topological complement sign `(-1)^(k*(4-k))`. In 4D it preserves Fock parity. It is not a metric constitutive selector. |
+| `h_n` / metric `*_eta` | Observer/Lorentz metric structure. The Lorentzian double-star carries the additional signature exponent `q=3`. This is not cell placement. |
+| scalar reverse-star | A one-color local inverse/reverse stencil used only in the scoped two-sided-locality no-go. It is neither `J` nor the Lorentz metric star and it does not select `Q(e)`. |
+
+Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
 
 ## Research source
 
@@ -150,23 +160,22 @@ evaluation_equiv_complement
 
 This is algebraic duality only. It is not a located physical dual cell.
 
-## Package B — geometric placement interface and nonuniqueness
+## Package B — placement negative control; do not own the star here
 
-Define a supplied-data structure such as:
+The located-star research has classified the reference placement:
 
-```lean
-structure GeometryDualPlacement ...
+```math
+F_PD(x,S) = (x - 1_{S^c}, S^c),
+F_DP(y,T) = (y + 1_T, T^c).
 ```
 
-for any future located dual-cell rule. Do not install a canonical default instance.
+This worker must NOT create a second competing placement owner.
 
-For (L\ge3), construct at least two distinct local placement rules with identical
-carrier cardinalities/algebraic duality.
+If the older memo/ansatz contains two placement rules or a cardinality-only alternative, use the non-reference rule only as a NEGATIVE CONTROL: show that it violates the independent primal/dual incidence intertwining, center matching, or another explicitly stated condition.
 
-Capstone:
+The placement class is no longer “missing” at research level. It remains a separate formalization owner in `WRK-A4D-LOCATED-PRIMAL-DUAL-STAR`.
 
-`same_cardinality_does_not_provide_placement`
-
+Package B may expose only the minimal interface needed by the energy/pairing construction. It must not promote `J` to a constitutive selector.
 ## Package C — Riesz uniqueness relative to supplied pairing and energy
 
 For a supplied symmetric bilinear energy (Q_k), prove existence and uniqueness of:
@@ -504,6 +513,13 @@ It does NOT establish:
 Any constitutive use of the spatial residual must be typed as additional data or a later derived pairing.
 
 
+Additional Package N firewalls:
+
+- the typed cut/`BalancedRole` side is over `ℚ`; the archive coframe/energy side is over `ℝ`. Any scalar extension must be explicit;
+- `dim Hom_{S3}(R^3, H_shell)=48` is a nonselection result for direct shell embeddings, not a material selector;
+- the only permitted coupling chain here is `99-cut → e_spatial → Q(e) → S_J(e) → matter`; do not insert the scene residual directly into the 96-shell;
+- Package N does not choose `c=1`, `c=2`, or any nonlinear `Q(e)`.
+
 ## Mandatory controls
 
 Include exact controls for:
@@ -600,3 +616,16 @@ When complete:
 9. STOP.
 
 Do not wait for CI. Do not run watcher scripts. Do not self-merge.
+
+## Shell compression naming firewall
+
+If the worker defines the shell compression of the flat/first-jet matter kernel, name it `spatialShellFluxCompression` (mathematically `F_shell^flux = P_96 (I + H(e)) P_96`).
+
+Do NOT call this BOOK `F_N`. The independent shell theorem `D_H^2|shell = E_1^2 I` is a control, not the definition of this compression.
+
+## Additional forbidden promotions
+
+- do not wait for the frame-lift EXP;
+- do not choose between the nonlinear reference laws `c=1` and `c=2`;
+- do not identify `U_A` with physical time evolution;
+- do not identify `J` with the Lorentzian metric star.

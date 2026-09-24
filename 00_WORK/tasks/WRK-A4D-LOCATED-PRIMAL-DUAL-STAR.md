@@ -14,13 +14,21 @@ PLANNED
 
 ## Start gate
 
-READY NOW when a WORKER slot is assigned.
+READY when a WORKER slot is assigned and either (a) the flux worker's Package A pairing API has merged, or (b) CONTROL explicitly accepts that pairing API for reuse. Do not wait for the rest of the large flux kernel once Package A is stable.
 
-Do not wait for the flux-energy worker merely to formalize placement/topological duality.
-
-If the flux worker's algebraic complementary pairing API has merged, reuse it. If it has not merged, formalize only the colored carriers, placement, orientation, independent dual incidence and topological star. Do not create a competing public algebraic-pairing API; leave the later bridge as a thin integration theorem.
+If Package A is not yet accepted, do not create a competing public algebraic-pairing API.
 
 Use current `main` at launch.
+## Three-star dictionary — keep these objects distinct
+
+| Name | Meaning |
+|---|---|
+| `J` | Two-color center-matched primal/dual placement/pairing. Topological complement sign `(-1)^(k*(4-k))`. In 4D it preserves Fock parity. It is not a metric constitutive selector. |
+| `h_n` / metric `*_eta` | Observer/Lorentz metric structure. The Lorentzian double-star carries the additional signature exponent `q=3`. This is not cell placement. |
+| scalar reverse-star | A one-color local inverse/reverse stencil used only in the scoped two-sided-locality no-go. It is neither `J` nor the Lorentz metric star and it does not select `Q(e)`. |
+
+Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
+
 ## Objective
 
 Lean-own the reference located primal/dual complement already established at research level.
@@ -28,6 +36,10 @@ Lean-own the reference located primal/dual complement already established at res
 This task formalizes WHERE the existing CAR/Fock complement lives.
 
 It does NOT select a nonlinear energy law.
+
+## Frozen parity fact
+
+In 4D, `|S^c| = 4 - |S|`, so `(-1)^{|S^c|}=(-1)^{|S|}`. The located complement `J` COMMUTES with Fock parity. The parity-odd operator is `D_H`, which changes degree by one.
 
 ## Frozen geometry
 
@@ -170,7 +182,7 @@ No residual translation is allowed.
 
 Define the dual cubical differential independently with positive Role directions.
 
-Do NOT define it by conjugating the primal differential through the star.
+**Do NOT define `d_D := J d_P J^{-1}` or any equivalent conjugation.** The dual incidence must be independently defined; the intertwining theorem is content, not a definition.
 
 Prove the typed incidence theorem:
 
@@ -315,3 +327,10 @@ git diff --check
 ```
 
 One branch, one PR, no self-merge, no CI watcher.
+
+## Final exclusions
+
+- Do not include the Lorentzian `q=3` double-star law; that belongs to the metric/signature boundary.
+- Do not define or select nonlinear `Q(e)`.
+- Do not identify `U_A` with physical time.
+- Do not construct a direct scene-to-shell embedding.

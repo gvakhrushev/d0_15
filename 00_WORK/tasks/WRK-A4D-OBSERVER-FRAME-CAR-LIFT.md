@@ -17,14 +17,27 @@ PLANNED
 Do NOT start until:
 
 1. a WORKER slot is free;
-2. `EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT` has a terminal memo;
-3. CONTROL selects the exact theorem-ready subset of that memo.
+2. `EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT` has a terminal memo naming exactly one terminal verdict;
+3. CONTROL selects the exact theorem-ready subset of that memo;
+4. if the selected theorems mention `H(e)` or located pairing types, the required flux/star APIs are merged or explicitly accepted by CONTROL.
+
+## Three-star dictionary — keep these objects distinct
+
+| Name | Meaning |
+|---|---|
+| `J` | Two-color center-matched primal/dual placement/pairing. Topological complement sign `(-1)^(k*(4-k))`. In 4D it preserves Fock parity. It is not a metric constitutive selector. |
+| `h_n` / metric `*_eta` | Observer/Lorentz metric structure. The Lorentzian double-star carries the additional signature exponent `q=3`. This is not cell placement. |
+| scalar reverse-star | A one-color local inverse/reverse stencil used only in the scoped two-sided-locality no-go. It is neither `J` nor the Lorentz metric star and it does not select `Q(e)`. |
+
+Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
 
 ## Objective
 
 Formalize the independently derived exterior/frame lift on the existing 16-state CAR/Fock carrier.
 
-Do not invent the missing construction if the EXP terminal is negative.
+Do not invent the missing construction if the EXP terminal is negative. In particular, do not invent `rho(Λ)`, a rotating-CAR link law, or an observer pairing that the memo did not justify. If the EXP terminal is a no-go, formalize the no-go/boundary instead.
+
+Do not touch nonlinear `Q(e)` selection in this worker.
 
 Likely modules, conditional on research:
 

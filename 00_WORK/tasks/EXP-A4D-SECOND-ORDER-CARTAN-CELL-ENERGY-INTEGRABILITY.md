@@ -20,11 +20,21 @@ Repository:
 
 Minimum baseline:
 
-`c45e6c94759b2d52efdfbe28065038f1bfe60474`
+`df7779ef86ad9430d87adc32b60f15779277ff0a`
 
 Use newer `origin/main` if available.
 
 This is a stateless mathematical research task. Do not edit Lean claims or lifecycle metadata.
+
+## Three-star dictionary — keep these objects distinct
+
+| Name | Meaning |
+|---|---|
+| `J` | Two-color center-matched primal/dual placement/pairing. Topological complement sign `(-1)^(k*(4-k))`. In 4D it preserves Fock parity. It is not a metric constitutive selector. |
+| `h_n` / metric `*_eta` | Observer/Lorentz metric structure. The Lorentzian double-star carries the additional signature exponent `q=3`. This is not cell placement. |
+| scalar reverse-star | A one-color local inverse/reverse stencil used only in the scoped two-sided-locality no-go. It is neither `J` nor the Lorentz metric star and it does not select `Q(e)`. |
+
+Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
 
 ## Frozen frontier
 
@@ -44,6 +54,18 @@ LOCATED-DUAL-PAIRING-FIXED-NONLINEAR-CELL-ENERGY-LAW-MISSING
 ```
 
 The selector variable is the nonlinear quadratic cell law `Q(e)`, not the location of the dual cell.
+
+## Frozen #69 nonselection input
+
+PR #69 is already owned and must not be recomputed:
+
+- self-adjoint radius-one Ward class dimension 24 in its stated ansatz;
+- simultaneous Role-relabel invariant subspace dimension 1;
+- flat first jet does not select the polynomial nonlinear family;
+- determinant-density higher-order freedom survives;
+- metric compatibility does not select a connection.
+
+These are inputs, not objectives of this EXP.
 
 ## Frozen two-model family
 
@@ -304,7 +326,7 @@ The matter lift must:
 
 Audit the exterior/frame lift of the affine linear part, site/fiber action induced by the translation part, path-word/factorized-local representations, and the rational local gates already owned by PR #70 where applicable.
 
-The primary unknown is `K=Q''(0)`, not the existence of the background orbit.
+The primary unknown is `K=Q''(0)`, not the existence of the background orbit. PR #70's affine Cartan/path algebra is the FIRST candidate matter/background composition law to test. If its induced two-jet cannot satisfy the scalar witness under the required locality/composition rules, report that terminally; do not immediately introduce an unrelated new finite action.
 ## Phase D — composition constraints on the second jet
 
 If a finite local family exists, derive its group/composition law to second order.
@@ -397,6 +419,10 @@ Lorentz tensoriality by itself does not eliminate such a scalar multiplier.
 10. Which part of the remaining energy freedom is truly constitutive rather than symmetry-jet freedom?
 11. Does reverse-star reduce the remaining modulus after Cartan integrability?
 12. Is an energy-volume identity still an independent primitive?
+
+## Witness normalization rule
+
+The research formulas are generic in `L`: the forced diagonal entry is `L^2/4`. The downstream Lean WARD worker uses `L=5`, hence `25/4`. Treat the `L=5` numbers as a specialization of the generic formula, not a second normalization convention.
 
 ## Required exact controls
 

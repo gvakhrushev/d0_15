@@ -1,5 +1,7 @@
 # WRK-A4D-LOCAL-REVERSE-STAR-NOGO
 
+Object: **scalar two-sided local reverse star** on one color. This is NOT the located two-color `J` and NOT the Lorentz/observer metric star.
+
 ## Class
 
 WORKER / FORMALIZATION
@@ -14,11 +16,23 @@ PLANNED
 
 ## Start gate
 
-READY NOW when a WORKER slot is assigned.
+READY when a WORKER slot is assigned and the scalar kernel `W=I+H` / its one-dimensional restriction is available from the flux API or explicitly accepted by CONTROL. Do not wait for the full located `J`; this no-go is one-color scalar-stencil algebra.
 
-The Laurent-width theorem and explicit L=5 inverse witnesses are standalone and do not require the flux worker or located-star API.
+The generic Laurent-width theorem itself is standalone and may be drafted before that API lands.
+## Three-star dictionary — keep these objects distinct
 
-If those APIs have merged by implementation time, add a thin scalar-sector corollary; do not block the core proof on that integration.
+| Name | Meaning |
+|---|---|
+| `J` | Two-color center-matched primal/dual placement/pairing. Topological complement sign `(-1)^(k*(4-k))`. In 4D it preserves Fock parity. It is not a metric constitutive selector. |
+| `h_n` / metric `*_eta` | Observer/Lorentz metric structure. The Lorentzian double-star carries the additional signature exponent `q=3`. This is not cell placement. |
+| scalar reverse-star | A one-color local inverse/reverse stencil used only in the scoped two-sided-locality no-go. It is neither `J` nor the Lorentz metric star and it does not select `Q(e)`. |
+
+Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
+
+## Scope firewall
+
+This no-go does NOT cancel the located two-color `J`, does NOT prove the absence of a Lorentzian metric star, and does NOT select nonlinear `Q(e)`. It only excludes a uniformly local one-color reverse/inverse stencil under its stated hypotheses.
+
 ## Objective
 
 Lean-own the research no-go that an exact two-sided scalar star cannot simultaneously have:

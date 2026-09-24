@@ -20,9 +20,19 @@ Repository:
 
 Minimum baseline:
 
-`c45e6c94759b2d52efdfbe28065038f1bfe60474`
+`df7779ef86ad9430d87adc32b60f15779277ff0a`
 
 Use newer `origin/main` if available.
+
+## Three-star dictionary — keep these objects distinct
+
+| Name | Meaning |
+|---|---|
+| `J` | Two-color center-matched primal/dual placement/pairing. Topological complement sign `(-1)^(k*(4-k))`. In 4D it preserves Fock parity. It is not a metric constitutive selector. |
+| `h_n` / metric `*_eta` | Observer/Lorentz metric structure. The Lorentzian double-star carries the additional signature exponent `q=3`. This is not cell placement. |
+| scalar reverse-star | A one-color local inverse/reverse stencil used only in the scoped two-sided-locality no-go. It is neither `J` nor the Lorentz metric star and it does not select `Q(e)`. |
+
+Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
 
 ## Research source
 
@@ -135,6 +145,12 @@ with
 This shows that positive flat counting normalization and Lorentz covariance are compatible if the observer transforms; `I` itself is not claimed Lorentz invariant.
 
 Verify and generalize this before any all-order archive construction.
+
+## Observer/time firewall
+
+`n=e_A` is a REFERENCE OBSERVER GAUGE for which `h_n=I`. It is not a theorem identifying Role A with physical causal time. Likewise `U_A` remains the internal Role-A archive translation, not physical time evolution.
+
+The located topological `J` is fixed independently of this EXP. This research must not block flux or located-star formalization and must not select nonlinear `Q(e)`.
 
 ## Primary objective
 
@@ -282,7 +298,7 @@ Under local frame change prove:
 T'_{xy}=ρ_yT_{xy}ρ_x^{-1}.
 ]
 
-Audit whether existing `ArchiveChainConnection` / `ArchiveCovariantCubicalDifferential` can instantiate this or only treat an independent coefficient fiber.
+Read PR #70's affine/chain connection first as a connection on the coefficient/background fiber. Audit explicitly whether its linear part admits the required rotating-CAR exterior lift. Do NOT assume the existing chain connection automatically acts on rotating creators merely because it transports coefficients.
 
 The earlier fixed-creator `dConn` theorem must not be silently promoted to rotating-CAR covariance.
 
@@ -468,3 +484,7 @@ Produce:
 with theorem-ready Lean handoff.
 
 Do not finish by selecting a nonlinear `Q` unless the frame construction itself proves that selection.
+
+## Extra truth boundary
+
+Repeat in every positive conclusion: `rho(Λ)=⊕_k wedge^k Λ` is the exterior representation on the existing 16-state carrier. It is not a Spin/Dirac-spinor representation unless a separate spinor construction is actually provided.

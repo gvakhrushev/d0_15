@@ -19,9 +19,23 @@ Do NOT start until all are true:
 1. a WORKER slot is free;
 2. `WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL` is merged;
 3. `WRK-A4D-LOCATED-PRIMAL-DUAL-STAR` is merged or CONTROL explicitly accepts its located-pairing API;
-4. `EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY` has a terminal memo.
+4. `EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY` has a terminal memo naming exactly ONE terminal verdict.
 
-This task integrates the research result. It must not guess the research terminal.
+This task integrates that verdict. It must not guess `K`, choose `c`, or repair a negative research result by inventing a different finite action.
+
+## Three-star dictionary — keep these objects distinct
+
+| Name | Meaning |
+|---|---|
+| `J` | Two-color center-matched primal/dual placement/pairing. Topological complement sign `(-1)^(k*(4-k))`. In 4D it preserves Fock parity. It is not a metric constitutive selector. |
+| `h_n` / metric `*_eta` | Observer/Lorentz metric structure. The Lorentzian double-star carries the additional signature exponent `q=3`. This is not cell placement. |
+| scalar reverse-star | A one-color local inverse/reverse stencil used only in the scoped two-sided-locality no-go. It is neither `J` nor the Lorentz metric star and it does not select `Q(e)`. |
+
+Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
+
+## Terminal-dispatch rule
+
+If the EXP terminal is `BOUNDED-LOCAL-FINITE-CARTAN-ACTION-NOGO`, formalize that no-go and stop at the exact boundary. Do not “solve” it by choosing an ad hoc second jet.
 
 ## Objective
 
@@ -160,6 +174,8 @@ The unknown `K` is the second jet of the MATTER representation. Keep the generic
 ## Package D — exact scalar five-cycle witness
 
 Reuse existing five-cycle infrastructure where possible.
+
+Use `L=5` exactly as frozen by the EXP memo unless that memo explicitly replaces the witness by a proved generic-`L` theorem. The constants `25/4`, `25 c`, etc. are the `L=5` specialization of the generic `L^2/4` formula.
 
 Set:
 

@@ -30,5 +30,27 @@ Eliminate the stale-artifact write-if-absent loophole in certificates, enforce s
 - `D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001`
 - `D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001`
 
-## Exit Condition
+
+- `D0-TYPED-ROLE-OPPOSITE-CUT-WELD-001`
+- `D0-DIAGONAL-ROLE-HODGE-SYMMETRY-001`
+- `D0-HODGE-GRADING-SYMMETRY-001`
+- `D0-SPATIAL-HODGE-SHELL-OPERATOR-001`
+- `D0-MOVING-GRADED-DIFFERENTIAL-001`
+- `D0-PRIMAL-DUAL-MOVING-ACTION-001`
+- `D0-PATH-HODGE-STABILIZER-001`
+- `D0-MOVING-D-PARENT-WARD-001`
+- `D0-RADIUS-ONE-WARD-KERNEL-001`
+- `D0-CONSTITUTIVE-KERNEL-FAMILY-001`
+- `D0-CONSTITUTIVE-HOLONOMY-COMPATIBILITY-001`
+- `D0-AFFINE-CARTAN-PATH-CLOSURE-001`## Exit Condition
 All three affected certificate paths detect stale tracked artifacts, registered cert execution leaves the tracked tree unchanged, and mutation controls prove stale evidence cannot remain green.
+
+## Gravity/recent-core boundary
+
+Include the fresh CORE owners from PRs #66–#70 in freshness/semantic regression coverage so stale artifacts cannot silently re-promote superseded gravity wording.
+
+Fresh claim IDs are listed in manifest `affected_claims` for this task.
+
+Boundary: this task must NOT require, invent, or refresh a certificate for BOOK `F_N`, and must not treat `spatialShellFluxCompression` as BOOK `F_N` evidence.
+
+A reverse-star no-go artifact must not be interpreted as evidence against the located two-color `J`.
