@@ -104,3 +104,5 @@ D0.Geometry.A4DConstitutiveHolonomyStabilizer,D0/Geometry/A4DConstitutiveHolonom
 D0.Geometry.A4DPrimalDualCellPairing,D0/Geometry/A4DPrimalDualCellPairing.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md
 D0.Geometry.A4DDiscreteEnergyKernel,D0/Geometry/A4DDiscreteEnergyKernel.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md
 D0.Geometry.A4DRoleSpatialRepresentationWeld,D0/Geometry/A4DRoleSpatialRepresentationWeld.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md
+D0.Geometry.A4DLocatedPrimalDualCell,D0/Geometry/A4DLocatedPrimalDualCell.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-LOCATED-PRIMAL-DUAL-STAR.md
+D0.Geometry.A4DLocatedTopologicalStar,D0/Geometry/A4DLocatedTopologicalStar.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-LOCATED-PRIMAL-DUAL-STAR.md
