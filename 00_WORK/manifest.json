@@ -61,17 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The literal List ChainStep evaluator has exact empty/append/reverse/inverse laws and endpoint-independence iff trivial labelled holonomy, with the L=2 parallel-slot collision and exact length-two positive-link period Lean-owned as the generic word skeleton for the next matter-link construction.",
-      "brief": "00_WORK/tasks/WRK-A4D-LABELLED-PATH-HOLONOMY-DESCENT.md"
-    },
-    {
       "id": "WRK-A4D-AFFINE-SHIFT-EXTERIOR-BLINDNESS",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
