@@ -15,7 +15,8 @@ namespace D0.Geometry
 open D0
 open ExteriorAlgebra
 
-local instance : LinearOrder Role := LinearOrder.lift' roleCode roleCode_injective
+local instance nilpotentAffineRoleLinearOrder : LinearOrder Role :=
+  LinearOrder.lift' roleCode roleCode_injective
 
 set_option maxHeartbeats 800000
 set_option linter.unusedSimpArgs false
