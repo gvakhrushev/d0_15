@@ -107,17 +107,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md"
     },
     {
-      "id": "WRK-A4D-LOCAL-REVERSE-STAR-NOGO",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "REVIEW",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The explicit L=5 inverse witnesses and the scoped Laurent-polynomial theorem prove that uniformly bounded translation-covariant forward/reverse scalar stars with exact inverse composition cannot realize the accepted neighboring scalar first jet, while inverse-free parents, nonlocal inverses and enlarged fibers remain outside the no-go.",
-      "brief": "00_WORK/tasks/WRK-A4D-LOCAL-REVERSE-STAR-NOGO.md"
-    },
-    {
       "id": "WRK-A4D-OBSERVER-FRAME-CAR-LIFT",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
