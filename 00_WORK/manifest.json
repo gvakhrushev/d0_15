@@ -59,41 +59,6 @@
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
-    },
-    {
-      "id": "EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "At fixed Role-phase level, one typed crossed constitutive representation package is constructed or terminally classified: path-expression/CAR algebra and horizontal representation, vertical background action, crossed covariance, geometrically supplied constitutive section with full H(e) first derivative, observer/frame law and fixed located-J dualization; any missing solder/Cartan or affine-shift primitive is named exactly.",
-      "brief": "00_WORK/tasks/EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION.md"
-    },
-    {
-      "id": "WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The PR #95 theorem-ready algebraic boundary is Lean-owned: scalar vertical word-length mixing, exact full staggered first-jet path-expression support of word length at most two, and quadratic endpoint-dressing second-jet nonselection, without constructing the crossed constitutive law.",
-      "brief": "00_WORK/tasks/WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY.md"
-    },
-    {
-      "id": "EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-ARCHIVE-LAPLACIAN-RG",
-        "D0-PERRON-SCALE-FLOW-OWNER-001",
-        "D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001"
-      ],
-      "exit_condition": "The first genuine Tower-C\u2194Tower-B carrier/function-space/algebra/operator comparison beyond the scalar phi probe is constructed or terminally scoped, with index separation, refinement diagrams, Role equivariance and the existing operator/energy residual interface audited; J, D_H, H(e) and physical time remain downstream unless a carrier weld is actually obtained.",
-      "brief": "00_WORK/tasks/EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD.md"
     }
   ]
 }

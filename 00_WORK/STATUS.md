@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
-| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **3** | **2** | **0** | **0** | **5** | **2 / 10** |
+| EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
+| WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
+| **Total** | **0** | **2** | **0** | **0** | **2** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -17,9 +17,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|
 | CTRL-GRAVITY-DYNAMICS-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
-| EXP-A4D-CROSSED-CONSTITUTIVE-REPRESENTATION | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
-| WRK-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
-| EXP-A4D-GOLDEN-ROLE-PHASE-CARRIER-OPERATOR-WELD | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-ARCHIVE-LAPLACIAN-RG, D0-PERRON-SCALE-FLOW-OWNER-001, D0-ARCHIVE-ROLE-PHASE-PRODUCT-CARRIER-001 |
 
 ## Registry Health & Metrics
 
@@ -33,7 +30,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
 | BRIDGE-CALIBRATION | 3 |
 | CERT-CLOSED | 193 |
-| CORE-FORMALIZED | 385 |
+| CORE-FORMALIZED | 390 |
 | CORE_BRIDGE_SPLIT | 17 |
 | DEPRECATED | 5 |
 | EMPIRICAL-PASSPORT | 13 |
@@ -43,4 +40,4 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | NO_GO_PROVED | 6 |
 | PASSPORT-CLOSED | 20 |
 | PROOF-TARGET | 74 |
-| **Total** | **884** |
+| **Total** | **889** |

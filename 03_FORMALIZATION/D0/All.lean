@@ -280,9 +280,12 @@ import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DComparisonJetNonselection
 import D0.Geometry.A4DConstitutiveHolonomyStabilizer
 import D0.Geometry.A4DConstitutiveKernelClassification
+import D0.Geometry.A4DCrossedDerivationIntegrability
+import D0.Geometry.A4DCrossedPathAlgebraBoundary
 import D0.Geometry.A4DDiscreteEnergyKernel
 import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
+import D0.Geometry.A4DHorizontalDressingSecondJetFreedom
 import D0.Geometry.A4DLocalReverseStarNoGo
 import D0.Geometry.A4DLocatedFrameCompatibilityBoundary
 import D0.Geometry.A4DLocatedMatterCellEnergy
@@ -300,10 +303,12 @@ import D0.Geometry.A4DRawSolderFrameAction
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DRoleSpatialRepresentationWeld
 import D0.Geometry.A4DScalarAdvectiveGroupoidObstruction
+import D0.Geometry.A4DScalarBackgroundWordMixing
 import D0.Geometry.A4DScalarComparisonPatch
 import D0.Geometry.A4DScalarDeltaSecondJet
 import D0.Geometry.A4DSecondOrderCartanCongruence
 import D0.Geometry.A4DSolderMetricCompletion
+import D0.Geometry.A4DStaggeredFirstJetPathExpansion
 import D0.Geometry.A4DStaggeredHodgeSelector
 import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Geometry.A4DUnlabelledCenterHolonomyNoGo
