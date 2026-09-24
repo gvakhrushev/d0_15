@@ -61,17 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
     },
     {
-      "id": "WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The PR #109 nilpotent affine translation response is Lean-owned as an exact affine semidirect representation on the existing 16-state carrier, with explicit pure-shift visibility, degree/parity mixing, and a theorem that degree-preserving conjugation cannot erase a nonzero translation response.",
-      "brief": "00_WORK/tasks/WRK-A4D-NILPOTENT-AFFINE-LIFT-GRADING-BOUNDARY.md"
-    },
-    {
       "id": "EXP-A4D-FINITE-GRADED-COFRAME-DRESSING",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
