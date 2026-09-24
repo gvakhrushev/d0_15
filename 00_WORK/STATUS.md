@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 1 | 0 | 1 | 0 | 2 | 1 / 3 |
-| WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **3** | **2** | **1** | **0** | **6** | **3 / 10** |
+| WORKER | 1 | 1 | 0 | 0 | 2 | 1 / 5 |
+| **Total** | **2** | **3** | **1** | **0** | **6** | **4 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -20,7 +20,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | EXP-A4D-FINITE-GRADED-COFRAME-DRESSING | EXPENSIVE | BLOCKED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 | EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
-| WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
+| WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO | WORKER | IN_PROGRESS | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 
 ## Registry Health & Metrics
 
