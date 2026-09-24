@@ -6,7 +6,7 @@ EXPENSIVE
 
 ## Parent
 
-\`CTRL-GRAVITY-DYNAMICS-CLOSURE\`
+`CTRL-GRAVITY-DYNAMICS-CLOSURE`
 
 ## State
 
@@ -17,7 +17,7 @@ PLANNED
 Determine the strongest **typed inter-level relation** that current D0 can derive between:
 
 1. the canonical golden cylinder / Bratteli / AF refinement structure, and
-2. the finite Role-phase / CAR geometry on which \`D_H\`, located \`J\` and the staggered first jet \`H(e)\` live.
+2. the finite Role-phase / CAR geometry on which `D_H`, located `J` and the staggered first jet `H(e)` live.
 
 This is the nearest inter-level research seam. It is not a request to derive \(\phi\) again and not a request to identify all archive towers.
 
@@ -33,31 +33,31 @@ Produce one theorem-ready research memo. Do not edit Lean or lifecycle files.
 
 Read completely before starting:
 
-- \`02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md\`
-- \`02_REGISTRY/research/MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md\`
-- \`02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md\`
-- \`02_REGISTRY/research/MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT.md\`
+- `02_REGISTRY/research/ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md`
+- `02_REGISTRY/research/MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md`
+- `02_REGISTRY/research/MEMO_A4D_SECOND_ORDER_CARTAN_CELL_ENERGY_INTEGRABILITY.md`
+- `02_REGISTRY/research/MEMO_A4D_SOLDERED_CREATOR_OBSERVER_FRAME_LIFT.md`
 
 Audit literal owners, especially:
 
-- \`D0.Geometry.ArchiveRefinementTower\`
-- \`D0.Geometry.ArchiveLightProfinite\`
-- \`D0.Foundation.ContinuumAsInverseLimit\`
-- \`D0.Geometry.ArchiveRolePhaseProductCarrier\`
-- \`D0.Geometry.ArchiveRolePhaseGroup\`
-- \`D0.Geometry.ArchiveFlatProductBondingNoGo\`
-- \`D0.Geometry.ArchiveTwoLimitSeparation\`
-- \`D0.CondensedAnchor.DetectorSupportGoldenWeight\`
-- \`D0.Geometry.FibonacciBratteliRefinement\`
-- \`D0.Spectral.CanonicalRefinementScaleFlow\`
+- `D0.Geometry.ArchiveRefinementTower`
+- `D0.Geometry.ArchiveLightProfinite`
+- `D0.Foundation.ContinuumAsInverseLimit`
+- `D0.Geometry.ArchiveRolePhaseProductCarrier`
+- `D0.Geometry.ArchiveRolePhaseGroup`
+- `D0.Geometry.ArchiveFlatProductBondingNoGo`
+- `D0.Geometry.ArchiveTwoLimitSeparation`
+- `D0.CondensedAnchor.DetectorSupportGoldenWeight`
+- `D0.Geometry.FibonacciBratteliRefinement`
+- `D0.Spectral.CanonicalRefinementScaleFlow`
 - corrected Hodge/CAR, located-star and flux/first-jet owners from PRs #75/#76.
 
 Also inspect:
 
-- \`02_REGISTRY/forcing_routes.json\`
-- \`D0.NumberTheory.HurwitzClassCanonization\`
-- \`D0.NumberTheory.JonesSlotSelector\`
-- \`D0.Geometry.ArchiveSpatialHistorySplit\`.
+- `02_REGISTRY/forcing_routes.json`
+- `D0.NumberTheory.HurwitzClassCanonization`
+- `D0.NumberTheory.JonesSlotSelector`
+- `D0.Geometry.ArchiveSpatialHistorySplit`.
 
 ## Truth-repaired starting facts
 
@@ -79,7 +79,7 @@ are algebraically the same relation under \(x=1/p\). Do not count them as indepe
 
 The current repaired two-route inventory is:
 
-1. Hurwitz noble-class + \`M1+\` canonization, with \(x^2-x-1=0\) as output;
+1. Hurwitz noble-class + `M1+` canonization, with \(x^2-x-1=0\) as output;
 2. Jones slot selection, BRIDGE-scoped to its explicit mathematical inputs.
 
 This EXP consumes the existing golden refinement owners. It does not strengthen their forcing status.
@@ -114,9 +114,9 @@ Do not identify this normalization index with physical Lorentz spacetime dimensi
 A_n=\operatorname{ArchivePoints}(n)=\operatorname{Fin}((n+2)^4)
 \]
 
-with \`archiveProjection\` given by flattened integer modulo.
+with `archiveProjection` given by flattened integer modulo.
 
-This defines the record \`LightProfinite\` inverse limit.
+This defines the record `LightProfinite` inverse limit.
 
 ### Tower B: Role-phase / CAR geometry
 
@@ -130,9 +130,9 @@ This carries:
 
 - cyclic Role translations;
 - Archive cochains / Fock carrier;
-- corrected \`D_H\`;
-- located primal/dual \`J_N\`;
-- \`H_N(e)\`;
+- corrected `D_H`;
+- located primal/dual `J_N`;
+- `H_N(e)`;
 - coframe / affine Cartan / path geometry.
 
 The natural coordinate-wise period reduction of this product carrier is **not** the flat record bonding map.
@@ -197,7 +197,7 @@ Classify the type before trying to prove formulas.
 
 ## Phase 1 — index and carrier audit
 
-Write an explicit table for every \`n/N/k\` appearing in the relevant owners:
+Write an explicit table for every `n/N/k` appearing in the relevant owners:
 
 - its type;
 - its stage cardinality;
@@ -220,9 +220,9 @@ A numerical resemblance is not a map.
 
 Before constructing a positive weld, test and, where possible, prove failure of:
 
-1. \`k=N\`;
+1. `k=N`;
 2. Fibonacci stage cardinality \(F_k=(N+2)^4\);
-3. record \`archiveProjection\` as the Role-phase bonding;
+3. record `archiveProjection` as the Role-phase bonding;
 4. simple levelwise bijection between Tower C states and Tower B sites;
 5. identifying the Perron eigenvalue \(\phi\) with the cyclic period increment \(L\mapsto L+1\);
 6. identifying a golden tick with Role-A translation;
@@ -251,7 +251,7 @@ Classify exact divisibility/cofinal-subsequence options.
 
 If the natural physical tower is necessarily indexed by divisibility rather than consecutive \(N\), state this explicitly.
 
-This classification is a critical prerequisite to any naturality theorem for \`J_N\`, \`D_H(N)\` or \`H_N(e)\`.
+This classification is a critical prerequisite to any naturality theorem for `J_N`, `D_H(N)` or `H_N(e)`.
 
 ## Phase 4 — ask what the golden tower can canonically select
 
@@ -298,7 +298,7 @@ Compute whether the occupied-complement anchor translation survives the level ma
 
 ### 5.5 Corrected Hodge differential / Dirac
 
-Test \`dForward\`, its counting adjoint and \`D_H\`.
+Test `dForward`, its counting adjoint and `D_H`.
 
 Because finite differences contain the period scale \(L\), exact commutation may be wrong; derive the correct scale-covariance equation if one exists.
 
@@ -366,7 +366,7 @@ Determine exactly which pieces of such a square can already be tested using the 
 
 ## Phase 8 — time firewall
 
-\`ArchiveSpatialHistorySplit\` is frozen:
+`ArchiveSpatialHistorySplit` is frozen:
 
 - history tick is not cyclic A-phase;
 - phi-ladder is separate from Role-A phase;
@@ -404,7 +404,7 @@ At minimum include controls at:
 - at least two divisibility-compatible period pairs and two incompatible consecutive pairs;
 - nontrivial Role permutation;
 - located one-form complement anchor;
-- one \`D_H\` eigenmode / low shell where comparison is typed;
+- one `D_H` eigenmode / low shell where comparison is typed;
 - Nyquist at \(L=2\);
 - one first-jet scalar neighbor and one corner path;
 - both golden cylinder letters and a two-step cylinder refinement.
@@ -439,9 +439,9 @@ The final memo must answer:
 6. Does Tower C canonically select a Role-phase period sequence?
 7. Is there a carrier map, a correspondence, or only a scale law?
 8. Does the best weld preserve Role permutations?
-9. Does it preserve located \`J\`?
-10. What is the strongest correct relation for \`D_H\`?
-11. What is the strongest correct relation for \`H(e)\`?
+9. Does it preserve located `J`?
+10. What is the strongest correct relation for `D_H`?
+11. What is the strongest correct relation for `H(e)`?
 12. Can golden cylinder weights be transported to the Role-phase/cochain carrier without new measure data?
 13. Does the result constrain the future endpoint-comparison jet \(\mathcal S\)?
 14. Does any part of the result have physical-time content? The expected answer is “no” unless a new theorem is actually proved.
@@ -453,35 +453,35 @@ Return exactly one primary terminal. Suitable semantic forms:
 
 ### Positive full weld
 
-\`GOLDEN-ROLE-PHASE-REFINEMENT-WELD-CONSTRUCTED\`
+`GOLDEN-ROLE-PHASE-REFINEMENT-WELD-CONSTRUCTED`
 
 Use only if there is a canonical typed inter-level relation carrying nontrivial Role-phase operator structure, not merely the real scale \(\phi\).
 
 ### Partial positive
 
-\`GOLDEN-SCALE-WELD-OWNED-CARRIER-WELD-MISSING\`
+`GOLDEN-SCALE-WELD-OWNED-CARRIER-WELD-MISSING`
 
 Use if the only canonical common structure is scale/trace and no canonical finite carrier map is selected.
 
-Or, if an operator/carrier comparison exists but does not yet integrate \`J/H\` fully:
+Or, if an operator/carrier comparison exists but does not yet integrate `J/H` fully:
 
-\`ROLE-PHASE-REFINEMENT-COMPARISON-CONSTRUCTED-FULL-NATURALITY-MISSING\`.
+`ROLE-PHASE-REFINEMENT-COMPARISON-CONSTRUCTED-FULL-NATURALITY-MISSING`.
 
 ### Scoped no-go
 
-\`GOLDEN-ROLE-PHASE-WELD-CLASS-NOGO\`
+`GOLDEN-ROLE-PHASE-WELD-CLASS-NOGO`
 
 Use only for a clearly defined exhausted class.
 
 ### New primitive
 
-\`GOLDEN-ROLE-PHASE-COMPARISON-NEW-PRIMITIVE-REQUIRED\`
+`GOLDEN-ROLE-PHASE-COMPARISON-NEW-PRIMITIVE-REQUIRED`
 
 Use if current owners do not canonically select the comparison object. Name its minimal typed signature.
 
 ## Deliverable
 
-Produce one durable theorem-ready memo suitable for \`02_REGISTRY/research/\`.
+Produce one durable theorem-ready memo suitable for `02_REGISTRY/research/`.
 
 It must include:
 
@@ -492,7 +492,7 @@ It must include:
 - exact positive construction or scoped no-go;
 - finite controls;
 - operator-naturality results;
-- relation to the fixed-\`N\` common-center seam;
+- relation to the fixed-`N` common-center seam;
 - time firewall;
 - one terminal verdict;
 - theorem-ready handoff;
@@ -507,13 +507,13 @@ Do NOT open further speculative tasks.
 Do not infer:
 
 - Tower A = Tower B = Tower C;
-- \`archiveProjection\` is physical Role-phase refinement;
+- `archiveProjection` is physical Role-phase refinement;
 - \(\phi\) scale = physical time;
 - Role A = causal time;
 - \(\mathcal S\) is golden;
-- \`J\` is metric-dependent;
-- a unique nonlinear \`Q(e)\`;
+- `J` is metric-dependent;
+- a unique nonlinear `Q(e)`;
 - physical stress or Einstein equations;
-- BOOK \`F_N\`;
+- BOOK `F_N`;
 - direct scene-to-shell coupling;
 - SM gauge structure.
