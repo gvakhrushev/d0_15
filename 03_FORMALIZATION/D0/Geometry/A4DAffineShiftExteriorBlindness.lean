@@ -10,6 +10,8 @@ transport to the existing 16-state exterior/Fock carrier. Equality of linear pat
 values therefore implies equality of exterior transport; a pure translational
 affine value `(I, b)` with `b ≠ 0` still yields identity exterior transport.
 
+Review note: this module is registered in the release support closure and remains scoped to Channel L.
+
 This classifies Channel L only. It does **not** claim that no affine-sensitive
 matter representation exists, that translations cannot act on an enlarged
 site-aware carrier, or that the final elementary letter must factor as a product
