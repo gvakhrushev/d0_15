@@ -210,6 +210,10 @@ choice `u(x)=d_k` (constant) gives `v(y)=d_(k+1)` for every independent
 This supplies a **positive refinement-compatible family on the product
 index category**. Restricting it to any path of pairs `(k,n)` is possible and
 selects none of those paths as canonical.
+It is the regular left representation on each AF fiber: a matrix block
+`M_a(C)` acting on itself has `a` copies of its defining representation.
+Thus the constant field `d_k=(a_k,b_k)` can be realized by a finite regular
+module at every B point, rather than by a guessed scalar dimension match.
 
 Pushforward can also preserve full right support for one step when the coarse
 mass is sufficiently large. For square 4 take `u(x)=(16,16)` everywhere;
