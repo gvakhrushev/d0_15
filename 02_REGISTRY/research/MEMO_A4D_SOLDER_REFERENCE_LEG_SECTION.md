@@ -6,6 +6,8 @@
 **Terminal:** \`SOLDER-REFERENCE-LEG-REQUIRES-NEW-GEOMETRIC-SELECTION-PRINCIPLE\`  
 **Status:** theorem-ready deep-research classification; no Lean source and no finite graded E dressing.
 
+**Review audit:** the terminal is a nonselection/selection-principle result, not a universal nonexistence theorem; the explicit `q_{λ,μ}` family is conditional on one admissible seed section.
+
 ## 0. Terminal verdict
 
 PR #112 reduced the B/E seam to one typed question.  For a positive Role edge
