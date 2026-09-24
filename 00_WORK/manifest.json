@@ -48,7 +48,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The finite matter/gravity closure seam is terminally classified when the uncentered flux-energy first jet, located primal/dual pairing, frame/CAR/link lift, nonlinear cell-energy law, second-order/moving Ward boundary, provenance-bearing stress/source coupling, and continuum Lorentz/Einstein bridge are each assigned an honest CORE, NO-GO, BRIDGE/PASSPORT, or EMPIRICAL status, with no unclassified internal constitutive choice remaining.",
+      "exit_condition": "The current constitutive seam is terminally classified when flux first jet and located J are Lean-owned, the second-order Cartan/Ward primitive is formalized or scoped no-go, the exterior/observer/frame lift is Lean-owned, and the remaining common-center/half-edge cell-energy law is named exactly without promotion to stress/Einstein closure.",
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
@@ -59,18 +59,6 @@
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
-    },
-    {
-      "id": "EXP-SM-GAUGE-REPRESENTATION-COMMUTANT",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-REVIEW-SEMANTIC-HARDENING",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001",
-        "D0-FOCK-INTRINSIC-COMMUTANT-001"
-      ],
-      "exit_condition": "The joint commutant of the corrected archive Hodge Dirac and diagonal signed Role action is terminally classified on ArchiveCochain, with the D_H^2/number-phase enlargement separately identified and no Standard-Model promotion from dimensions or frozen ledgers.",
-      "brief": "00_WORK/tasks/EXP-SM-GAUGE-REPRESENTATION-COMMUTANT.md"
     },
     {
       "id": "WRK-PUBLIC-CLAIM-STRENGTH-LINT",
@@ -134,17 +122,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL.md"
     },
     {
-      "id": "EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Using the already-owned finite affine background gauge, derive the second-order quadratic-energy covariance identity and classify whether that gauge admits a matter representation whose second jet K selects/rejects the surviving nonlinear cell-energy family; otherwise terminally identify the matter-representation/second-jet primitive.",
-      "brief": "00_WORK/tasks/EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY.md"
-    },
-    {
       "id": "WRK-A4D-LOCATED-PRIMAL-DUAL-STAR",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
@@ -163,19 +140,8 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "After its research and carrier prerequisites land, the generic second-order quadratic-energy covariance algebra and exact scalar Cartan witness are Lean-owned, including the exponential/zero-second-jet no-go and any research-selected necessary second-jet conditions, without inventing a physical finite symmetry.",
+      "exit_condition": "The terminal second-order research handoff is Lean-owned: exact congruence two-jet algebra, generic/L=5 scalar witness including the mixed (+,-) entry, scoped background-independent translation-representation no-go, constants-preserving rejection of c=1,2 under its explicit hypothesis, action-groupoid second-jet identities, moving-d second derivative, and the transverse Hessian modulus, while FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED remains explicit.",
       "brief": "00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md"
-    },
-    {
-      "id": "EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The existing 16-state exterior/CAR carrier is either equipped with an independently defined local Lorentz-frame lift, observer-covariant positive exterior pairing, moving creators and compatible link transformation whose flat first variation can reproduce the accepted staggered H(e), or the first exact obstruction in that construction is terminally classified.",
-      "brief": "00_WORK/tasks/EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT.md"
     },
     {
       "id": "WRK-A4D-LOCAL-REVERSE-STAR-NOGO",
@@ -196,7 +162,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Conditional on the research terminal, the exterior lift on ArchiveFockState, observer-positive pairing and any validated soldered creator/link covariance are Lean-owned without claiming a spinor representation, physical time identification or nonlinear constitutive selector.",
+      "exit_condition": "The positive research subset is Lean-owned: exterior GL/Lorentz lift on ArchiveFockState, observer-positive exterior pairing with counting reference gauge, raw solder frame action and centering defect, Lorentz-restricted lift of PR #70 affine links with rotating-CAR covariance, and the located-frame compatibility boundary where available; the missing common-center/half-edge cell-energy jet is left explicit and nonlinear Q(e) is not selected.",
       "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-FRAME-CAR-LIFT.md"
     }
   ]

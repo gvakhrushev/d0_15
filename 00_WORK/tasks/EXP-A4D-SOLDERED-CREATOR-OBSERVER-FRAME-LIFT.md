@@ -10,7 +10,13 @@ EXPENSIVE / BREAKTHROUGH CONSTRUCTIVE RESEARCH
 
 ## State
 
-IN_PROGRESS
+TERMINAL / ACCEPTED RESEARCH
+
+## Accepted terminal result
+
+`FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`
+
+The existing 16-state carrier supports the exterior representation, observer-positive exterior pairing, moving creators/contractions, raw solder frame action, and a Lorentz-restricted lift of PR #70 affine link linear parts. The remaining missing physical step is an independently derived common-center/half-edge cell-energy rule reproducing every term of the staggered H(e); no nonlinear Q(e) is selected. The positive theorem-ready subset is consumed by `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`.
 
 ## Baseline
 

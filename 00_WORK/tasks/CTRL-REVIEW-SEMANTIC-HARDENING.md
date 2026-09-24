@@ -34,7 +34,7 @@ The obsolete migration CONTROL has been retired and its remaining certificate-fr
 
 Current execution:
 
-- P2 `EXP-SM-GAUGE-REPRESENTATION-COMMUTANT` — IN_PROGRESS;
+- P2 SM commutant research — TERMINAL / `ARCHIVE-COCHAIN-JOINT-COMMUTANT-STRICTLY-LARGER-CLASSIFIED`; no SM gauge derivation follows;
 - P1 universal M1 carrier classification — TERMINAL / `M1-UNIVERSALITY-COUNTEREXAMPLE`; task removed per `RESEARCH_LEDGER`;
 - `WRK-PUBLIC-CLAIM-STRENGTH-LINT` — PLANNED, cloud-first draft permitted;
 - `WRK-CERT-ARTIFACT-FRESHNESS` — PLANNED under this control;
@@ -55,3 +55,9 @@ Semantic lint and review must reject or require explicit qualification for:
 - a `CORE-FORMALIZED` finite gravity ingredient ⇒ gravity/Einstein closure.
 
 Lint/certificate workers enforce this dictionary as semantic hygiene; they do not create new physics.
+
+## P2 terminal semantic boundary
+
+The full archive joint commutants of `D_H` / `D_H²` with diagonal signed `S₄` are large spectral centralizers determined by multiplicities. They are not a derivation of `SU(3)×SU(2)×U(1)`.
+
+Forbidden promotion: spectral/Wedderburn matrix factors or their unit groups → Standard-Model gauge group, absent an independent locality/grading/interaction representation theorem.

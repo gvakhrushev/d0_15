@@ -13,13 +13,13 @@ Supervise the current finite gravity/matter closure seam without reopening alrea
 The active critical path is:
 
 ```text
-flux-kernel → located-star → second-order EXP → second-order WARD
+flux-kernel → located-star → second-order WARD
 ```
 
 The frame-lift lane is parallel and does not block `J`:
 
 ```text
-frame-lift EXP → observer-CAR worker
+observer-CAR worker  (frame-lift research terminal already accepted)
 ```
 
 The scalar reverse-star no-go is a third object, not `J` and not `Q(e)`.
@@ -53,7 +53,7 @@ Current frontier labels:
 
 ```text
 LOCATED-DUAL-PAIRING-FIXED-NONLINEAR-CELL-ENERGY-LAW-MISSING
-SOLDERED-CREATOR-FRAME-LIFT-PRIMITIVE-REQUIRED
+FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING
 ```
 
 Child order:
@@ -108,11 +108,11 @@ Merged formal owners include PRs #64–#70.
 
 ### Frame/CAR lift
 
-`EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT` is the primary constructive research lane. It must test an exterior lift on the existing 16-state carrier, moving creators/annihilators, compatible same-fiber links, an observer-covariant positive pairing with flat gauge equal to counting, and reproduction of the complete staggered H(e). PR #70's affine Cartan connection is the first literal background/link geometry to audit before introducing another connection carrier.
+Frame-lift research is terminal `FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`. The exterior representation, observer-positive pairing, raw solder frame action and Lorentz-restricted affine-link lift are theorem-ready and pass to `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`. The remaining physical primitive is the common-center/half-edge cell-energy rule reproducing the full staggered H(e).
 
 ### Second-order Cartan/cell-energy integrability
 
-`EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY` is a parallel algebraic lane. PR #70 already owns the finite affine background gauge whose flat translation sector equals `forwardGaugeCoframe`. The unresolved object is the induced matter representation and its second jet K=Q''(0), not the existence of a finite coframe orbit.
+Second-order research is terminal `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`. The exact two-jet identities, scoped background-independent representation no-go, constants-preserving rejection of c=1,2, groupoid second-jet equations and transverse Hessian modulus now pass to `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD`.
 
 ### Nonlinear cell law
 

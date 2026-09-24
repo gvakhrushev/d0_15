@@ -7,7 +7,14 @@ EXPENSIVE
 CTRL-REVIEW-SEMANTIC-HARDENING
 
 ## State
-IN_PROGRESS
+
+TERMINAL / ACCEPTED RESEARCH
+
+## Accepted terminal result
+
+`ARCHIVE-COCHAIN-JOINT-COMMUTANT-STRICTLY-LARGER-CLASSIFIED`
+
+The real joint centralizers of the corrected D_H (and separately D_H^2) with the full diagonal signed S4 action are spectrally classified for every period. They are much larger than the discrete Role image because of kernel and positive-energy multiplicities; the square centralizer is larger still. This is an exact spectral symmetry classification, not a Standard-Model gauge derivation. No new formalization task ID is created here.
 
 ## Baseline
 

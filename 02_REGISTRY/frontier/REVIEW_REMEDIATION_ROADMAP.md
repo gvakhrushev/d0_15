@@ -54,19 +54,13 @@ Any future category-wide universality theorem would require a new admissibility 
 Authoritative current statement: `02_REGISTRY/RESEARCH_LEDGER.md`, row `E-M1-UNIV`.
 ## P2 — genuine SM gauge representation / commutant owner
 
-Task: \`EXP-SM-GAUGE-REPRESENTATION-COMMUTANT\` (**IN_PROGRESS**).
+Status: **TERMINAL RESEARCH / ARCHIVE-COCHAIN-JOINT-COMMUTANT-STRICTLY-LARGER-CLASSIFIED**.
 
-Required endpoint is not another factor list or dimension count. It is an actual finite carrier/representation with a theorem such as:
+The corrected archive cochain problem has been classified at research level: the joint real commutant of `D_H` and the full diagonal signed `S₄` action is already nontrivial on the kernel and is much larger on positive spectral levels; the `D_H²` commutant is larger still because it may mix Dirac-sign eigenspaces.
 
-\[
-\operatorname{Comm/Aut}(\mathcal C_{\rm finite})
-\simeq
-SU(3)\times SU(2)\times U(1)
-\]
+This closes the proposed “derive SM by the raw commutant” route negatively. The large spectral centralizer is not a Standard-Model gauge group. Any future gauge interpretation needs additional local, grading/observer, carrier and interaction criteria.
 
-or the precise finite/Lie-algebra analogue justified by the carrier.
-
-A terminal no-go/bridge classification is acceptable.
+No new active research task is created for P2.
 
 ## P3 — real dynamics owner
 
@@ -110,7 +104,7 @@ New decorative prediction lanes are not a priority.
 3. Cloud-first theorem-ready formalization packages — **NOW**.
 4. Claim-strength lint — **NEXT worker/tooling lane**.
 5. P1 universal carrier classification — **TERMINAL / removed**.
-6. Continue P2 SM gauge commutant/representation — **IN PROGRESS**.
+6. P2 SM joint commutant — **TERMINAL RESEARCH / larger spectral centralizer classified**.
 7. Re-audit README/BOOK/monograph after P2/P3 updates.
 
 ## Closure condition

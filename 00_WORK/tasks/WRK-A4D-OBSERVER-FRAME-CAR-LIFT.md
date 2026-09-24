@@ -14,12 +14,16 @@ PLANNED
 
 ## Start gate
 
-Do NOT start until:
+Research gate is SATISFIED with terminal:
 
-1. a WORKER slot is free;
-2. `EXP-A4D-SOLDERED-CREATOR-OBSERVER-FRAME-LIFT` has a terminal memo naming exactly one terminal verdict;
-3. CONTROL selects the exact theorem-ready subset of that memo;
-4. if the selected theorems mention `H(e)` or located pairing types, the required flux/star APIs are merged or explicitly accepted by CONTROL.
+`FRAME-LIFT-CONSTRUCTED-STAGGERED-JET-MISSING`
+
+This worker is READY when a WORKER slot is assigned.
+
+Packages that do not mention located `J` may start immediately from current `main`.
+If the located-star API is not yet accepted, defer only the located-frame compatibility theorem; do not block the exterior/observer/link packages.
+
+The missing `A4DSolderedCellEnergyJet` is NOT part of the positive formalization. Do not define the target `H(e)` coefficients as an axiom merely to close the worker.
 
 ## Three-star dictionary — keep these objects distinct
 
@@ -35,7 +39,7 @@ Never transfer a theorem or no-go from one row to another without an explicit ty
 
 Formalize the independently derived exterior/frame lift on the existing 16-state CAR/Fock carrier.
 
-Do not invent the missing construction if the EXP terminal is negative. In particular, do not invent `rho(Λ)`, a rotating-CAR link law, or an observer pairing that the memo did not justify. If the EXP terminal is a no-go, formalize the no-go/boundary instead.
+The EXP terminal is positive for the exterior/observer/link construction and negative only for deriving the complete staggered cell-energy jet. Formalize exactly the positive subset below; do not extend it into the missing cell-energy law.
 
 Do not touch nonlinear `Q(e)` selection in this worker.
 
@@ -89,3 +93,37 @@ Do not identify `n=e_A` with physical causal time.
 Do not select nonlinear `Q(e)` unless separately proved.
 
 Do not claim existing fixed-creator connection covariance covers rotating CAR links unless the required compatibility theorem is proved.
+
+## Accepted theorem-ready packages
+
+1. `ArchiveExteriorFrameLift.lean`
+   - exterior lift by minors on the existing 16-state carrier;
+   - identity/composition/inverse/degree preservation;
+   - creator and algebraic contraction covariance;
+   - explicitly NOT a Spin representation.
+
+2. `A4DObserverPositiveExterior.lean`
+   - `h_n=-η+2 n^♭⊗n^♭`, positivity for unit timelike `n`;
+   - `n=e_A` gives counting only as a reference observer gauge;
+   - all-degree exterior congruence and observer adjoints;
+   - exact rational A/B boost control.
+
+3. `A4DRawSolderFrameAction.lean`
+   - raw row/covector and vector conventions;
+   - local frame action on uncentered solder;
+   - exact centered-frame defect and transported-center repair;
+   - preserve the raw Nyquist field independently.
+
+4. `ArchiveAffineExteriorLink.lean`
+   - Lorentz-restricted lift of the linear part of PR #70 pull links;
+   - same-CAR-fiber creator/contraction intertwining;
+   - covariant finite differential with flat limit `dForward` and `D_H`;
+   - keep affine translation action on the coframe separate;
+   - separate link curvature from nonparallel-solder terms.
+
+5. `A4DLocatedFrameCompatibilityBoundary.lean`
+   - when the located-star API is available, prove the common-fiber cofactor identity;
+   - prove the explicit shifted-anchor obstruction to a naive sitewise Lorentz action on both colors;
+   - do not modify the located placement `J`.
+
+Do NOT formalize `A4DSolderedCellEnergyJet` as solved. The terminal explicitly says that common-center/half-edge cell energy and the full staggered first jet are still missing.

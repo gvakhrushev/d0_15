@@ -19,7 +19,7 @@ Do NOT start until all are true:
 1. a WORKER slot is free;
 2. `WRK-A4D-PRIMAL-DUAL-FLUX-ENERGY-KERNEL` is merged;
 3. `WRK-A4D-LOCATED-PRIMAL-DUAL-STAR` is merged or CONTROL explicitly accepts its located-pairing API;
-4. `EXP-A4D-SECOND-ORDER-CARTAN-CELL-ENERGY-INTEGRABILITY` has a terminal memo naming exactly ONE terminal verdict.
+4. Research terminal is frozen as `FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`.
 
 This task integrates that verdict. It must not guess `K`, choose `c`, or repair a negative research result by inventing a different finite action.
 
@@ -33,9 +33,24 @@ This task integrates that verdict. It must not guess `K`, choose `c`, or repair 
 
 Never transfer a theorem or no-go from one row to another without an explicit typed bridge.
 
-## Terminal-dispatch rule
+## Frozen research terminal
 
-If the EXP terminal is `BOUNDED-LOCAL-FINITE-CARTAN-ACTION-NOGO`, formalize that no-go and stop at the exact boundary. Do not “solve” it by choosing an ad hoc second jet.
+`FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`
+
+Do not choose `c` and do not invent a canonical `K`.
+
+The accepted research handoff adds these mandatory results:
+
+- exact two-jet congruence identity;
+- generic `L≥3` delta witness and the full symmetric block, not only the three diagonals;
+- at `L=5`, the mixed condition `K_{+,-}+K_{-,+}=-25/2` in addition to the diagonal conditions;
+- scoped no-go: no background-independent differentiable representation of the owned abelian pure-translation subgroup has all tangents `G_ξ=M_ξD`;
+- under the explicit hypothesis `Q(t) 1 = 1`, both displayed positive coefficients `c=1,2` are rejected; within that diagonal ansatz constants preservation forces `c=0`, but this is NOT a completed physical action;
+- action-groupoid identities `K_ξ=G_ξ²+(D_e g_ξ)[d_f ξ]` and the mixed cocycle equation;
+- second derivative of the moving differential and the six-term second derivative of the mixed parent;
+- transverse Hessian freedom outside `im d_f`, with plaquette-curl witness.
+
+The research nonlocal energy-engineered countermodel is a logical hostile control only. Do not formalize it as a candidate physical matter lift.
 
 ## Objective
 
@@ -333,3 +348,16 @@ No `lake clean`.
 No `sorry`, `sorryAx`, or new axioms.
 
 One branch, one PR, report capstones and `#print axioms`, then STOP.
+
+## Research-terminal theorem package
+
+Preferred theorem/module decomposition from the accepted memo:
+
+- `A4DSecondOrderCartanCongruence`
+- `A4DScalarDeltaSecondJet`
+- `A4DAffineMatterLiftObstruction`
+- `A4DActionGroupoidSecondJet`
+- `A4DMovingDifferentialSecondJet`
+- `A4DCellHessianTransverseModulus`
+
+Keep every no-go scoped to its explicit representation/constant-preservation hypotheses.

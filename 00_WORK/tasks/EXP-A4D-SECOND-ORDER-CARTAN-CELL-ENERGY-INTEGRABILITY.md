@@ -10,7 +10,13 @@ EXPENSIVE / BREAKTHROUGH RESEARCH
 
 ## State
 
-IN_PROGRESS
+TERMINAL / ACCEPTED RESEARCH
+
+## Accepted terminal result
+
+`FINITE-CARTAN-SECOND-JET-PRIMITIVE-REQUIRED`
+
+The affine background orbit is exactly owned, but its action on graded matter is not. Exact covariance fixes only the symmetric part of the matter second jet K relative to a proposed Hessian. A background-independent representation of the abelian translation subgroup cannot have all prescribed Cartan tangents; a constants-preserving scalar lift rejects c=1 and c=2, while a background-dependent groupoid cocycle remains logically possible. The theorem-ready handoff is consumed by `WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD`.
 
 ## Baseline
 
