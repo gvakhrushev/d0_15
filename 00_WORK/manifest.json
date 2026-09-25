@@ -14,5 +14,52 @@
     "02_REGISTRY/frontier/no_go_atlas.md",
     "02_REGISTRY/frontier/verification_protocol.md"
   ],
-  "tasks": []
+  "tasks": [
+    {
+      "id": "CTRL-A4D-VARIATIONAL-FRONTIER",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "The variational-selection research lane is terminally classified and both finite regression workers are either merged or terminally scoped without scientific overclaim.",
+      "brief": "00_WORK/tasks/CTRL-A4D-VARIATIONAL-FRONTIER.md"
+    },
+    {
+      "id": "EXP-A4D-FINITE-COFRAME-CURVATURE-VARIATIONAL-LAW",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
+        "D0-LOCATED-PRIMAL-DUAL-CELL-001",
+        "D0-LOCATED-PRIMAL-DUAL-STAR-001",
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "The finite action-selection problem is terminally classified by one declared verdict with a complete typing and uniqueness argument and, if positive, an exact L=3 physical coframe Hessian spectrum.",
+      "brief": "00_WORK/tasks/EXP-A4D-FINITE-COFRAME-CURVATURE-VARIATIONAL-LAW.md"
+    },
+    {
+      "id": "WRK-A4D-AFFINE-CURVATURE-CERT",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "An exact-arithmetic research certificate reproduces the affine and mixed plaquette formulas, ordered cube identity and trace-blindness boundary with reachable negative mutations and no claim-status promotion.",
+      "brief": "00_WORK/tasks/WRK-A4D-AFFINE-CURVATURE-CERT.md"
+    },
+    {
+      "id": "WRK-A4D-ACTION-NONSELECTION-CERT",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
+        "D0-CONSTITUTIVE-KERNEL-FAMILY-001"
+      ],
+      "exit_condition": "An exact-arithmetic research certificate reproduces the inequivalent L=3 Hessian spectra, gauge and harmonic count, and Green identity with reachable negative mutations and no physical overclaim.",
+      "brief": "00_WORK/tasks/WRK-A4D-ACTION-NONSELECTION-CERT.md"
+    }
+  ]
 }
