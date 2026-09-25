@@ -70,17 +70,6 @@
       ],
       "exit_condition": "After EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE lands a usable labelled-edge selector or the repository explicitly adopts the additional geometric datum it requires, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including an explicit classification of skew-generator freedom on transverse coframe directions.",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
-    },
-    {
-      "id": "EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "A labelled-edge geometric selection principle chooses the source reference section while eliminating both known curl and harmonic deformation freedoms and supplying an explicit path-junction law, or the earliest additional junction/basepoint/observer-minimality datum required for such selection is terminally identified without starting finite E dressing.",
-      "brief": "00_WORK/tasks/EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE.md"
     }
   ]
 }
