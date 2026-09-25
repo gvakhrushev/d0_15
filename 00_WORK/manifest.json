@@ -48,7 +48,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The fixed-level constitutive seam closes when the affine translation, conditional mismatch, junction-compression and local-candidate boundaries are Lean-owned; a Role-labelled diagonal overlap/source law selects or terminally classifies the reference section including curl/harmonic and path-junction freedom; and only after that selector exists an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced first derivative H(e). Stress/Einstein, physical time and golden refinement remain downstream.",
+      "exit_condition": "The fixed-level constitutive seam closes when the affine/overlap/sourced-transport algebra is Lean-owned; a global relative A/e comparison primitive or canonical span/relation substitute closes the singular/degenerate longitudinal comparison; and only then an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced first derivative H(e). Stress/Einstein, physical time and golden refinement remain downstream.",
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
@@ -68,8 +68,41 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "After EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW lands a usable diagonal overlap/source law, or the repository explicitly adopts the additional relative-A/e/basepoint/cycle datum required by its terminal, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including explicit transverse skew-generator freedom.",
+      "exit_condition": "After EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE lands a usable global relative A/e comparison primitive or the repository explicitly adopts the additional rank-stratified/span/relation datum required by its terminal, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e).",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
+    },
+    {
+      "id": "EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "A global relative A/e comparison primitive or equivalent canonical span/relation/rank-stratified object is constructed and shown to satisfy exact translation-gauge calibration plus frame covariance across the degenerate locus, or the earliest additional geometric datum required for such a global extension is terminally identified.",
+      "brief": "00_WORK/tasks/EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE.md"
+    },
+    {
+      "id": "WRK-A4D-CONDITIONAL-SOURCED-DIAGONAL-TRANSPORT",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean owns the conditional relative defect, finite diagonal seed, predecessor decomposition, sourced append/reverse transport, and exact solution-as-seed-plus-parallel-section characterization, all conditional on a supplied comparison primitive.",
+      "brief": "00_WORK/tasks/WRK-A4D-CONDITIONAL-SOURCED-DIAGONAL-TRANSPORT.md"
+    },
+    {
+      "id": "WRK-A4D-REGULAR-AE-PASSPORT",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean owns the frame-invariant regular passport K=B^-1 C, the exact translation-chart reconstruction equations, and the explicit invertibility boundary under which the representative is unique, while the singular/degenerate extension remains open.",
+      "brief": "00_WORK/tasks/WRK-A4D-REGULAR-AE-PASSPORT.md"
     }
   ]
 }
