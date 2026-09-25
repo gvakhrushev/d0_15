@@ -22,8 +22,6 @@
   "legacy_frontier_markdown_paths": [
     "02_REGISTRY/frontier/A1_COMPENSATOR_NOETHER_LEAN_TASK.md",
     "02_REGISTRY/frontier/A1_COMPENSATOR_NOETHER_RESULT.md",
-    "02_REGISTRY/frontier/C1_COMMON_CARRIER_LEAN_TASK.md",
-    "02_REGISTRY/frontier/C1_COMMON_CARRIER_RESULT.md",
     "02_REGISTRY/frontier/CLOSURE_CONTRACT.md",
     "02_REGISTRY/frontier/D0_RESEARCH_MONOGRAPH.md",
     "02_REGISTRY/frontier/FRONTIER_STRATEGY.md",
@@ -101,7 +99,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Lean owns the finite algebraic resolved correlated-action passport: incidence BΠ=B for lost-direction lifts, resolved jump Č−C=D P_W, intrinsic/maximal specializations, Role-residual maximal jump, exact-gauge resolution invisibility, and the B=0 intrinsic/maximal separation.",
+      "exit_condition": "Lean owns the finite algebraic resolved correlated-action passport: incidence B\\u03a0=B for lost-direction lifts, resolved jump 8C=D P_W, intrinsic/maximal specializations, Role-residual maximal jump, exact-gauge resolution invisibility, and the B=0 intrinsic/maximal separation.",
       "brief": "00_WORK/tasks/WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT.md"
     },
     {
@@ -112,7 +110,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Lean owns the exact sourced mismatch factorization κ=L(R+h) from the landed predecessor defect, relative residual and sourced ansatz, with explicit source/predecessor indices and pull order.",
+      "exit_condition": "Lean owns the exact sourced mismatch factorization \u03ba=L(R+h) from the landed predecessor defect, relative residual and sourced ansatz, with explicit source/predecessor indices and pull order.",
       "brief": "00_WORK/tasks/WRK-A4D-SOURCED-MISMATCH-FACTOR-PASSPORT.md"
     },
     {
