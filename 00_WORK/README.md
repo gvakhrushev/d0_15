@@ -128,23 +128,13 @@ Mandatory discipline:
 
 ## CI build-cache policy
 
-GitHub Lean CI relies on the cache built into `leanprover/lean-action@v1`.
-That action restores and saves the package's full `03_FORMALIZATION/.lake`
-tree with a key pinned by runner OS/architecture, `lean-toolchain`,
-`lake-manifest.json`, and the commit SHA, with a compatible-prefix fallback.
+GitHub Lean CI uses the cache built into `leanprover/lean-action@v1`; do not layer a second `actions/cache` over `03_FORMALIZATION/.lake`.
 
-Do **not** add a second `actions/cache` layer over `.lake`: it duplicates
-restore/upload work and can make cache behavior harder to diagnose.
+**PR policy:** Draft PRs never run the full `D0.All` release closure. Workers iterate locally with `python tools/lean_task_build.py narrow ...`. When a PR is marked Ready, the `ready_for_review` event runs exactly one full cached release closure over the complete PR formalization diff. Later Ready-state synchronize events run Lean only when the triggering commit itself changes `03_FORMALIZATION/**`; lifecycle-only audit commits skip it.
 
-The workflow additionally detects whether the **triggering commit** changed `03_FORMALIZATION/**`. On pull requests it compares the PR head commit to its own parent rather than inspecting GitHub's synthetic merge commit; on pushes it compares the event `before` and `after` SHAs.
-For PRs or main pushes that only alter CI/control metadata, the full
-`D0.All` build is skipped. Explicit `workflow_dispatch` always runs the
-integration build.
+**Push policy:** main runs Lean only when the push changes `03_FORMALIZATION/**`. Explicit `workflow_dispatch` always runs the full integration build.
 
-A cache miss is expected on the first compatible main build. Once that main
-run succeeds, later PRs may restore the default-branch Lake cache; Lake still
-rebuilds every changed/import-reachable module. Cache reuse is acceleration,
-not proof evidence.
+The built-in Lake cache key is pinned by runner OS/architecture, `lean-toolchain`, `lake-manifest.json`, and commit SHA with compatible-prefix fallback. Cache reuse is acceleration, not proof evidence.
 
 ## CI cost policy
 
