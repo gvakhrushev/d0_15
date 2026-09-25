@@ -3,8 +3,9 @@
 **Canonical task:** `EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID`
 **Start baseline:** `4527bd8` (`Open equivariant mixed-background research seam`)
 **Research PR:** #136
-**Pressure status:** `FULL-LORENTZ-COCYCLE-INTEGRABILITY-OPEN`  
-**Withdrawn overclaim:** the strict-conjugation no-go below is not a terminal no-go for cocycle/torsor-valued equivariance.
+**Terminal after cocycle pressure:** `EQUIVARIANT-JOINT-BACKGROUND-DRESSING-OBSTRUCTED`  
+**Scope:** exact one-cocycle/torsor correction on the frozen graded CAR/group-algebra carrier.  
+**Important repair:** the old strict-conjugation proof was insufficient; the terminal now comes from a noncommuting-generator bracket obstruction that allows arbitrary skew correction.
 **Checker:** `02_REGISTRY/research/certificates/a4d_equivariant_joint_dressing_check.py`
 
 ## 0. Verdict
@@ -591,3 +592,408 @@ Draft under
 
 The remaining problem is now one explicit finite algebraic system:
 (12.2) + (12.4), plus the quotient compatibility (14.1).
+
+
+---
+
+## 17. The graded carrier turns the open integrability problem into a finite block test
+
+The remaining freedom in §16 is not an arbitrary endomorphism of an unrelated
+larger space. The frozen dressing problem is graded:
+
+- the owned pure-gauge dressing is degree preserving;
+- the transverse skew datum of PR #134 is explicitly typed in the same
+  CAR/group-algebra operator carrier;
+- \(H(e)\) preserves Fock degree and parity.
+
+Therefore an admissible corrected representation \(\tau\) on the current
+target preserves every Fock-degree block.
+
+It is enough to test degree one.
+
+Take the Lorentz subalgebra on Roles \(A,B,C\):
+\[
+\mathfrak s
+=
+\operatorname{span}\{B_{AB},B_{AC},R_{BC}\}
+\cong\mathfrak{so}(1,2),
+\]
+with
+\[
+[B_{AB},B_{AC}]=R_{BC},
+\]
+\[
+[R_{BC},B_{AB}]=-B_{AC},
+\qquad
+[R_{BC},B_{AC}]=B_{AB}.
+\tag{17.1}
+\]
+
+Use \(N=1\), hence archive period \(L=3\).
+
+The fourth Role \(D\) is a spectator for this subalgebra. On degree one, the
+active \(A,B,C\) component is
+\[
+\boxed{
+\mathcal V
+=
+\operatorname{Fun}((\mathbb Z/3)^3,\mathbb R^3).
+}
+\tag{17.2}
+\]
+
+A solution on the full four-Role archive would restrict to this active block:
+
+1. the prescribed symmetric operators for (17.1) are block diagonal between
+   \(\operatorname{span}(A,B,C)\) and the \(D\) one-particle direction;
+2. the active-active block of a commutator with such an operator depends only
+   on the active-active block of the unknown skew operator;
+3. the unused \(D\)-archive coordinate can be averaged out.
+
+So failure on (17.2) is a failure of the full frozen graded carrier, not a
+failure caused by throwing away a possible compensating \(D\) component.
+
+---
+
+## 18. Symmetric bracket equation: quadratic integrability has a linear necessary part
+
+For every Lorentz generator \(X\), write
+\[
+t(X)=A_X+B_X,
+\qquad
+A_X^T=-A_X,
+\qquad
+B_X^T=B_X.
+\tag{18.1}
+\]
+
+The first-jet condition fixes
+\[
+\boxed{
+B_X
+=
+\frac12\bigl(r(X)+r(X)^T\bigr)
+-\frac12H(\eta X).
+}
+\tag{18.2}
+\]
+
+Now take the symmetric part of
+\[
+t([X,Y])=[t(X),t(Y)].
+\]
+
+Because
+\[
+[A_X,A_Y]^T=-[A_X,A_Y],
+\qquad
+[B_X,B_Y]^T=-[B_X,B_Y],
+\]
+the quadratic same-parity commutators disappear from the symmetric part.
+Every admissible \(\tau\) must satisfy the linear system
+\[
+\boxed{
+B_{[X,Y]}
+=
+[A_X,B_Y]+[B_X,A_Y].
+}
+\tag{18.3}
+\]
+
+This condition already allows the entire unknown skew modulus.
+No polar choice, no zero-skew assumption, and no commutation assumption is
+made.
+
+Thus failure of (18.3) is stronger than failure of the original
+strict-conjugation ansatz.
+
+---
+
+## 19. Literal L=3 degree-one operators
+
+Let \(U_r\) be the period-three archive shift and
+\[
+A_r=\frac12(I+U_r^{-1}).
+\]
+
+On degree one,
+\[
+E_{sr}=|s\rangle\langle r|.
+\]
+
+For a constant Lorentz tangent \(X\), put
+\[
+e_X=\eta X.
+\]
+Every Lorentz generator in (17.1) has zero diagonal, so the scalar-link term
+of the owned first jet vanishes.
+
+Define
+\[
+K_X
+=
+\sum_{s,r\in\{A,B,C\}}
+(e_X)_{sr}\,U_sA_rE_{sr}.
+\tag{19.1}
+\]
+
+The literal first-jet owner therefore gives
+\[
+\boxed{
+H_X
+=
+-\bigl(K_X+K_X^T\bigr).
+}
+\tag{19.2}
+\]
+
+The exterior frame derivative on degree one is
+\[
+r(X)=I_{\rm archive}\otimes X.
+\tag{19.3}
+\]
+
+Equations (18.2), (19.1) and (19.2) determine the three symmetric matrices
+\(B_{AB},B_{AC},B_{BC}^{\rm rot}\) exactly over \(\mathbb Q\).
+
+No continuum or Fourier approximation is used.
+
+---
+
+## 20. Translation averaging removes no solutions
+
+All three \(B_X\) commute with the archive translation group
+\[
+G=(\mathbb Z/3)^3.
+\]
+
+Suppose arbitrary skew matrices \(A_X\) solved (18.3). Average them:
+\[
+\boxed{
+\bar A_X
+=
+\frac1{|G|}
+\sum_{g\in G}T_gA_XT_g^{-1}.
+}
+\tag{20.1}
+\]
+
+Every \(T_g\) is orthogonal, so
+\[
+\bar A_X^T=-\bar A_X.
+\]
+
+Since the coefficients and right-hand sides of (18.3) commute with every
+\(T_g\), the averaged \(\bar A_X\) solve the same system.
+
+Therefore it is lossless to restrict to translation-invariant skew operators.
+
+A translation-invariant operator on (17.2) has one \(3\times3\) matrix
+coefficient for each of the 27 displacements.
+
+Skewness leaves exactly
+
+- \(3\) parameters at zero displacement;
+- for the \(13\) nonzero inverse-pairs \(\{d,-d\}\), \(9\) free matrix
+  coefficients per pair.
+
+Hence each \(A_X\) has
+\[
+3+13\cdot9=120
+\]
+free rational parameters.
+
+For the three generators there are
+\[
+\boxed{360}
+\]
+unknowns.
+
+The three bracket equations (17.1) give
+\[
+3\cdot27\cdot9
+=
+\boxed{729}
+\]
+exact rational scalar equations.
+
+---
+
+## 21. Exact left-null certificate: the linear system is inconsistent
+
+The checker constructs the \(729\times360\) rational matrix
+\[
+M_{\rm br}
+\]
+of (18.3) and its right-hand side
+\[
+y_{\rm br}.
+\]
+
+It then uses one explicit integer covector
+\[
+\ell\in\mathbb Z^{729}
+\]
+with 96 nonzero entries, all in
+\[
+\{-5,-4,-3,-1,1,3,4,5\}.
+\]
+
+The complete support table is embedded literally in the checker.
+
+Exact Fraction arithmetic verifies
+\[
+\boxed{
+\ell^TM_{\rm br}=0
+}
+\tag{21.1}
+\]
+for all 360 skew columns, while
+\[
+\boxed{
+\ell^Ty_{\rm br}=2.
+}
+\tag{21.2}
+\]
+
+Therefore
+\[
+\boxed{
+M_{\rm br}a=y_{\rm br}
+\quad\text{has no solution over }\mathbb R.
+}
+\tag{21.3}
+\]
+
+This is an exact inconsistency certificate; it does not depend on
+floating-point rank or a numerical minimizer.
+
+The certificate is already on the symmetric projection of the Lie bracket.
+The remaining nonlinear skew bracket equations are never reached.
+
+---
+
+## 22. Lift of the obstruction to the full frozen carrier
+
+Assume, for contradiction, that the cocycle-corrected frame law of §10 exists
+on the frozen graded carrier.
+
+Then by §11 it determines a Lorentz representation
+\[
+\tau
+\]
+on that carrier.
+
+Degree preservation restricts \(d\tau\) to the degree-one block.
+
+Restrict the Lorentz algebra to \(\mathfrak s\) from §17. Project the
+degree-one block to its \(A,B,C\) component and average over the spectator
+\(D\)-archive coordinate and the active archive translations.
+
+The resulting skew parts satisfy exactly the 360-variable system of §§18–20.
+
+But §21 proves that system inconsistent.
+
+Contradiction.
+
+Therefore no exact cocycle
+\[
+\sigma(\Lambda)
+\]
+with the required first derivative can exist in the current graded
+CAR/group-algebra dressing carrier.
+
+This closes the gap left by the old one-boost argument.
+
+---
+
+## 23. Why the one-parameter positive control is still correct
+
+Section 13 is retained.
+
+For each single generator \(X\), one can choose
+\[
+S_X=-\tfrac12H(\eta X)+A_X
+\]
+and integrate an exact one-parameter relative representation.
+
+The obstruction appears only when two noncommuting boosts and their rotation
+must be glued simultaneously.
+
+Thus the final result is not
+“\(H(\eta X)\neq0\), therefore impossible.”
+
+It is
+\[
+\boxed{
+\text{every individual Lorentz line integrates, but the }so(1,2)
+\text{ bracket cannot be satisfied.}
+}
+\tag{23.1}
+\]
+
+This is exactly the pressure distinction requested after the first review.
+
+---
+
+## 24. Pure-gauge isotropy and resolution do not evade the certificate
+
+The right constant-potential isotropy changes a chosen dressing representative
+by an orthogonal factor. Infinitesimally this contributes only to the unknown
+skew pieces \(A_X\).
+
+Equation (21.1) annihilates all 360 skew directions. Therefore the certificate
+already includes every such infinitesimal isotropy correction.
+
+Likewise the #135 resolution datum
+\[
+\Xi_{\rm str}=((W_y)_y,\mathcal K)
+\]
+does not enter \(H(\eta X)\) or the constant-frame bracket. Transporting
+\(\Xi_{\rm str}\) functorially cannot change (21.2).
+
+So neither pure-gauge torsor freedom nor rank/holonomy resolution repairs the
+frame cocycle.
+
+---
+
+## 25. Exact terminal and minimal escape datum
+
+The strengthened terminal is now justified:
+\[
+\boxed{
+\texttt{EQUIVARIANT-JOINT-BACKGROUND-DRESSING-OBSTRUCTED}.
+}
+\]
+
+Its scope is exact:
+
+> No exact \(\sigma(\Lambda)\) one-cocycle/torsor correction in the frozen
+> degree-preserving CAR/group-algebra dressing carrier can simultaneously
+> satisfy the owned full raw-solder frame action, exact Lorentz composition,
+> and
+> \[
+> D(W\circ\sigma)_I[X]=H(\eta X).
+> \]
+
+The earliest exact obstruction is the degree-one \(L=3\)
+\(\mathfrak{so}(1,2)\) symmetric bracket system, not the old single boost.
+
+To evade the theorem one must add at least one datum outside the current task:
+
+1. enlarge the matter/dressing carrier to allow degree mixing, and supply
+   the corresponding enlarged horizontal algebra and raw-control semantics; or
+2. replace the exact one-cocycle by a genuinely higher isotropy-valued
+   2-cocycle / nontrivial group extension, with its own exact source/target and
+   composition law; or
+3. change the owned constitutive first jet or the owned full-solder frame
+   action.
+
+None of these is present in the landed stack.
+
+A different transverse skew assignment, path order, potential section, or
+resolution representative is not enough: all such degree-preserving skew
+freedom was already quantified in (18.3).
+
+This is therefore a terminal obstruction for the canonical task as typed,
+while clearly naming the extra structure required to reopen a larger theory.
