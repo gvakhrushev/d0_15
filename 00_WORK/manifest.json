@@ -53,7 +53,7 @@
       "id": "WRK-A4D-BIVECTOR-COMMUTANT-CERT",
       "class": "WORKER",
       "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-LOCATED-PRIMAL-DUAL-STAR-001",
         "D0-CONSTITUTIVE-KERNEL-FAMILY-001"
