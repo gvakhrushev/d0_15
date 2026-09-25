@@ -18,11 +18,15 @@ NOT SATISFIED.
 
 Do not start until
 
-\`EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE\`
+`EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW`
 
-has landed a usable labelled-edge selection principle for the source reference/origin datum, or the repository has explicitly adopted the additional junction/basepoint/observer-minimality structure required by that terminal.
+has landed a usable diagonal overlap/source law, or the repository has explicitly
+adopted the additional relative-A/e/basepoint/cycle datum required by that
+terminal.
 
-PR #112 only constructs the conditional family \(\kappa_q\). PR #114 further shows that the mandatory normalization/covariance controls leave explicit curl and harmonic deformation freedoms. Therefore neither PR opens the finite-E gate by itself.
+PR #117 does **not** open this gate: it proves that the currently owned selector
+principles leave the diagonal overlap free and terminally requires a new
+junction-overlap primitive.
 
 ## Purpose
 
