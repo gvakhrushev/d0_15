@@ -997,3 +997,33 @@ freedom was already quantified in (18.3).
 
 This is therefore a terminal obstruction for the canonical task as typed,
 while clearly naming the extra structure required to reopen a larger theory.
+
+
+---
+
+## 26. Ready lifecycle audit
+
+The cocycle pressure requested after the first review is closed.
+
+Final research surface:
+
+- strict conjugation is retained only as the zero-cocycle negative control;
+- exact one-cocycles are classified as relative representations
+  \(\sigma=\rho^{-1}\tau\);
+- every individual Lorentz one-parameter subgroup has a positive exact
+  cocycle control with the prescribed constitutive tangent;
+- the full graded problem fails only at the noncommuting-generator stage;
+- the exact \(L=3\), degree-one \(\mathfrak{so}(1,2)\) certificate annihilates
+  all 360 translation-invariant skew unknowns and evaluates the required
+  bracket right-hand side to \(2\);
+- pure-gauge isotropy and #135 resolution memory do not evade that
+  certificate;
+- the minimal escape data are explicitly outside the current canonical task:
+  degree-mixing carrier/enlarged horizontal algebra, a genuine higher
+  isotropy-valued 2-cocycle/group extension, or a change of the owned
+  first-jet/frame law.
+
+The canonical EXPENSIVE task is self-retired on this Ready head.  No Lean
+source or claim registration is added by this research PR.
+
+Lifecycle: REVIEW.  Do not self-merge.
