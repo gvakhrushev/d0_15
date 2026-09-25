@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
     },
     {
-      "id": "EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "A global relative A/e comparison primitive or equivalent canonical span/relation/rank-stratified object is constructed and shown to satisfy exact translation-gauge calibration plus frame covariance across the degenerate locus, or the earliest additional geometric datum required for such a global extension is terminally identified.",
-      "brief": "00_WORK/tasks/EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE.md"
-    },
-    {
       "id": "WRK-A4D-CONDITIONAL-SOURCED-DIAGONAL-TRANSPORT",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
