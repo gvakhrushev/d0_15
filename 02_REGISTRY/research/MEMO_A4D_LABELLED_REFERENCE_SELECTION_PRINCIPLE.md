@@ -6,6 +6,8 @@
 **Terminal:** \`REFERENCE-SELECTION-REQUIRES-NEW-JUNCTION-OVERLAP-PRIMITIVE\`  
 **Status:** theorem-ready deep-research classification; no Lean source and no finite graded E dressing.
 
+**Review audit:** the terminal requires a new Role-labelled junction/overlap primitive; observer-positive covariance, basepoint/path gauge fixing, and full-affine covariance were audited and do not by themselves select the diagonal overlap. This is not a universal no-go against every future selector.
+
 ## 0. Result in one statement
 
 The selector problem can now be reduced to one exact Role-labelled overlap variable.
