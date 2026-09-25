@@ -1,6 +1,7 @@
 import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 import Mathlib.LinearAlgebra.Matrix.Notation
 import Mathlib.Tactic
+import D0.Gauge.MatrixRepGaugeTransform
 
 /-!
 # Pure-gauge dressing torsor passport
@@ -104,6 +105,44 @@ the matrix transpose already present in the carrier. -/
 def RightOrthogonal (R : Mat) : Prop :=
   R.transpose * R = 1 ∧ R * R.transpose = 1
 
+/-- Matrix horizontal letter using the repository nonsingular inverse. -/
+def matrixHorizontalLetter (F U : Mat) : Mat :=
+  F * U * F⁻¹
+
+/-- Existing real-matrix orthogonality is exactly the specialization of the
+generic two-sided predicate used by this passport. -/
+theorem rightOrthogonal_iff_gauge_isOrthogonal
+    {m : Type*} [Fintype m] [DecidableEq m]
+    (R : Matrix m m ℝ) :
+    RightOrthogonal R ↔ D0.Gauge.isOrthogonal R := by
+  rfl
+
+theorem RightOrthogonal.det_isUnit {R : Mat} (hR : RightOrthogonal R) :
+    IsUnit R.det := by
+  have hdet := congrArg Matrix.det hR.1
+  rw [Matrix.det_mul, Matrix.det_transpose, Matrix.det_one] at hdet
+  exact IsUnit.of_mul_eq_one R.det hdet
+
+/-- The finite matrix specialization of commuting right-isotropy descent. -/
+theorem matrixHorizontalLetter_right_commuting
+    (F R U : Mat) (hR : IsUnit R.det) (hRU : R * U = U * R) :
+    matrixHorizontalLetter (F * R) U = matrixHorizontalLetter F U := by
+  unfold matrixHorizontalLetter
+  rw [Matrix.mul_inv_rev F R]
+  calc
+    (F * R) * U * (R⁻¹ * F⁻¹)
+        = F * (R * U * R⁻¹) * F⁻¹ := by
+            simp only [Matrix.mul_assoc]
+    _ = F * (U * R * R⁻¹) * F⁻¹ := by rw [hRU]
+    _ = F * U * F⁻¹ := by
+          rw [Matrix.mul_nonsing_inv R hR]
+          simp [Matrix.mul_assoc]
+
+theorem matrixHorizontalLetter_right_orthogonal
+    (F R U : Mat) (hR : RightOrthogonal R) (hRU : R * U = U * R) :
+    matrixHorizontalLetter (F * R) U = matrixHorizontalLetter F U :=
+  matrixHorizontalLetter_right_commuting F R U hR.det_isUnit hRU
+
 /-- Constitutive shadow of an invertible dressing representative. Matrix
 nonsingular inverse is used so the statement remains in the repository matrix
 carrier. -/
@@ -126,6 +165,40 @@ theorem constitutiveShadow_right_orthogonal
         = (F⁻¹).transpose * (R * R.transpose) * F⁻¹ := by
             simp only [Matrix.mul_assoc]
     _ = (F⁻¹).transpose * F⁻¹ := by rw [hR.2]; simp
+
+theorem constitutiveShadow_right_isOrthogonal
+    {m : Type*} [Fintype m] [DecidableEq m]
+    (F R : Matrix m m ℝ) (hR : D0.Gauge.isOrthogonal R) :
+    constitutiveShadow (F * R) = constitutiveShadow F := by
+  exact constitutiveShadow_right_orthogonal F R
+    ((rightOrthogonal_iff_gauge_isOrthogonal R).2 hR)
+
+/-- One typed theorem exposing the actual torsor separation: the representatives
+are distinct, but both descended outputs agree. -/
+theorem distinct_representatives_same_descended_outputs
+    (F R U : Mat) (hF : IsUnit F.det) (hR : RightOrthogonal R)
+    (hRne : R ≠ 1) (hRU : R * U = U * R) :
+    F * R ≠ F ∧
+      matrixHorizontalLetter (F * R) U = matrixHorizontalLetter F U ∧
+      constitutiveShadow (F * R) = constitutiveShadow F := by
+  refine ⟨?_, matrixHorizontalLetter_right_orthogonal F R U hR hRU,
+    constitutiveShadow_right_orthogonal F R hR⟩
+  intro h
+  apply hRne
+  calc
+    R = 1 * R := by simp
+    _ = (F⁻¹ * F) * R := by rw [Matrix.nonsing_inv_mul F hF]
+    _ = F⁻¹ * (F * R) := by simp only [Matrix.mul_assoc]
+    _ = F⁻¹ * F := by rw [h]
+    _ = 1 := Matrix.nonsing_inv_mul F hF
+
+theorem matrixHorizontalLetter_right_one (F U : Mat) :
+    matrixHorizontalLetter (F * 1) U = matrixHorizontalLetter F U := by
+  simp
+
+theorem constitutiveShadow_right_one (F : Mat) :
+    constitutiveShadow (F * 1) = constitutiveShadow F := by
+  simp
 
 /-! ## Infinitesimal skew freedom -/
 
@@ -157,7 +230,7 @@ theorem tangentConstitutive_eq_iff_sub_skew (G₁ G₂ : Mat) :
     simp only [tangentConstitutive, Matrix.neg_apply, Matrix.add_apply,
       Matrix.transpose_apply] at hij
     simp only [Matrix.transpose_apply, Matrix.sub_apply, Matrix.neg_apply]
-    linarith
+    linear_combination -hij
   · intro h
     have h0 := tangentConstitutive_add_skew G₂ (G₁ - G₂) h
     have hsum : G₂ + (G₁ - G₂) = G₁ := by
@@ -204,6 +277,19 @@ theorem constitutive_torsor_nonidentification_control :
     (constitutiveShadow_right_orthogonal (F := (1 : M2))
       (R := swap2) swap2_rightOrthogonal)
 
+/-- Concrete nontrivial commuting orthogonal torsor: choose the same swap as
+right isotropy and horizontal operator. Both descended outputs are unchanged. -/
+theorem commuting_orthogonal_torsor_control :
+    (1 : M2) * swap2 ≠ 1 ∧
+      matrixHorizontalLetter ((1 : M2) * swap2) swap2 =
+        matrixHorizontalLetter (1 : M2) swap2 ∧
+      constitutiveShadow ((1 : M2) * swap2) =
+        constitutiveShadow (1 : M2) := by
+  simpa using
+    (distinct_representatives_same_descended_outputs
+      (F := (1 : M2)) (R := swap2) (U := swap2)
+      (hF := by simp) swap2_rightOrthogonal swap2_nontrivial rfl)
+
 theorem skew2_isSkew :
     IsSkew skew2 := by
   native_decide
@@ -227,6 +313,18 @@ theorem orthogonality_without_commutation_does_not_descend :
       swap2 * sign2 ≠ sign2 * swap2 ∧
       swap2 * sign2 * swap2.transpose ≠ sign2 := by
   native_decide
+
+theorem orthogonality_without_commutation_changes_horizontal :
+    RightOrthogonal swap2 ∧
+      swap2 * sign2 ≠ sign2 * swap2 ∧
+      matrixHorizontalLetter swap2 sign2 ≠
+        matrixHorizontalLetter (1 : M2) sign2 := by
+  refine ⟨swap2_rightOrthogonal,
+    orthogonality_without_commutation_does_not_descend.2.1, ?_⟩
+  have hraw := orthogonality_without_commutation_does_not_descend.2.2
+  have hInv : swap2⁻¹ = swap2.transpose :=
+    RightOrthogonal.inv_eq_transpose swap2_rightOrthogonal
+  simpa [matrixHorizontalLetter, hInv] using hraw
 
 end Controls
 
