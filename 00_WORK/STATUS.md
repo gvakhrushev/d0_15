@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 1 | 0 | 1 | 0 | 2 | 1 / 3 |
-| WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **3** | **2** | **1** | **0** | **6** | **3 / 10** |
+| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
+| **Total** | **2** | **2** | **1** | **0** | **5** | **3 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -20,7 +20,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | EXP-A4D-FINITE-GRADED-COFRAME-DRESSING | EXPENSIVE | BLOCKED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 | EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-ROLE-OVERLAP-TWISTED-COCYCLE | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
-| WRK-A4D-OBSERVER-QUADRATIC-REFERENCE-NOGO | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
