@@ -48,17 +48,6 @@
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
-    },
-    {
-      "id": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The post-classification mixed-background seam closes only after the rank/holonomy resolution datum Xi is functorially/minimally classified, an exact frame-covariant torsor/groupoid-valued finite dressing law on stable or resolved backgrounds is constructed or terminally obstructed, and the crossed coupling to the affine-sensitive T_kappa channel is classified for dependence on dressing/resolution moduli. No Hessian/stress/Einstein, physical time or golden refinement is admitted before this seam is closed.",
-      "brief": "00_WORK/tasks/CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE.md"
     }
   ]
 }
