@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Exact finite S3 x six-face audit for the A4D oriented Role selector."""
 
+# Exhaustive domain size: 6 spatial permutations x 6 two-faces = 36.
+
 from itertools import permutations, combinations
 
 ROLES = tuple(range(4))
