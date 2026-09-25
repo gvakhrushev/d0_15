@@ -103,14 +103,14 @@ def RightOrthogonal {n K : Type*} [Fintype n] [DecidableEq n] [Field K]
   R.transpose * R = 1 ∧ R * R.transpose = 1
 
 /-- Matrix horizontal letter using the repository nonsingular inverse. -/
-def matrixHorizontalLetter {n K : Type*} [Fintype n] [DecidableEq n] [Field K]
+noncomputable def matrixHorizontalLetter {n K : Type*} [Fintype n] [DecidableEq n] [Field K]
     (F U : Matrix n n K) : Matrix n n K :=
   F * U * F⁻¹
 
 /-- Existing real-matrix orthogonality is exactly the specialization of the
 generic two-sided predicate used by this passport. -/
 theorem rightOrthogonal_iff_gauge_isOrthogonal
-    {n : Type*} [Fintype n] [DecidableEq n]
+    {n : Type} [Fintype n] [DecidableEq n]
     (R : Matrix n n ℝ) :
     RightOrthogonal R ↔ D0.Gauge.isOrthogonal R := by
   rfl
@@ -136,8 +136,8 @@ theorem matrixHorizontalLetter_right_commuting
             simp only [Matrix.mul_assoc]
     _ = F * (U * R * R⁻¹) * F⁻¹ := by rw [hRU]
     _ = F * U * F⁻¹ := by
-          rw [Matrix.mul_nonsing_inv R hR]
-          simp [Matrix.mul_assoc]
+          rw [← Matrix.mul_assoc U R R⁻¹, Matrix.mul_nonsing_inv R hR]
+          simp
 
 theorem matrixHorizontalLetter_right_orthogonal
     {n K : Type*} [Fintype n] [DecidableEq n] [Field K]
@@ -148,7 +148,7 @@ theorem matrixHorizontalLetter_right_orthogonal
 /-- Constitutive shadow of an invertible dressing representative. Matrix
 nonsingular inverse is used so the statement remains in the repository matrix
 carrier. -/
-def constitutiveShadow {n K : Type*} [Fintype n] [DecidableEq n] [Field K]
+noncomputable def constitutiveShadow {n K : Type*} [Fintype n] [DecidableEq n] [Field K]
     (F : Matrix n n K) : Matrix n n K :=
   (F⁻¹).transpose * F⁻¹
 
@@ -173,7 +173,7 @@ theorem constitutiveShadow_right_orthogonal
     _ = (F⁻¹).transpose * F⁻¹ := by rw [hR.2]; simp
 
 theorem constitutiveShadow_right_isOrthogonal
-    {n : Type*} [Fintype n] [DecidableEq n]
+    {n : Type} [Fintype n] [DecidableEq n]
     (F R : Matrix n n ℝ) (hR : D0.Gauge.isOrthogonal R) :
     constitutiveShadow (F * R) = constitutiveShadow F := by
   exact constitutiveShadow_right_orthogonal F R
@@ -278,11 +278,14 @@ def skew2 : M2 :=
 
 theorem swap2_rightOrthogonal :
     RightOrthogonal swap2 := by
-  native_decide
+  constructor <;> ext i j <;> fin_cases i <;> fin_cases j <;>
+    norm_num [swap2, Matrix.mul_apply]
 
 theorem swap2_nontrivial :
     swap2 ≠ (1 : M2) := by
-  native_decide
+  intro h
+  have h01 := congrArg (fun M : M2 => M 0 1) h
+  norm_num [swap2] at h01
 
 /-- Constitutive output descends even though the representative changes. -/
 theorem constitutive_torsor_nonidentification_control :
@@ -308,11 +311,14 @@ theorem commuting_orthogonal_torsor_control :
 
 theorem skew2_isSkew :
     IsSkew skew2 := by
-  native_decide
+  ext i j <;> fin_cases i <;> fin_cases j <;>
+    norm_num [IsSkew, skew2, Matrix.transpose_apply, Matrix.neg_apply]
 
 theorem skew2_nonzero :
     skew2 ≠ (0 : M2) := by
-  native_decide
+  intro h
+  have h01 := congrArg (fun M : M2 => M 0 1) h
+  norm_num [skew2] at h01
 
 /-- Nonzero skew tangent with unchanged first constitutive response. -/
 theorem tangent_skew_nonidentification_control :
@@ -328,7 +334,13 @@ theorem orthogonality_without_commutation_does_not_descend :
     RightOrthogonal swap2 ∧
       swap2 * sign2 ≠ sign2 * swap2 ∧
       swap2 * sign2 * swap2.transpose ≠ sign2 := by
-  native_decide
+  refine ⟨swap2_rightOrthogonal, ?_, ?_⟩
+  · intro h
+    have h01 := congrArg (fun M : M2 => M 0 1) h
+    norm_num [swap2, sign2, Matrix.mul_apply] at h01
+  · intro h
+    have h00 := congrArg (fun M : M2 => M 0 0) h
+    norm_num [swap2, sign2, Matrix.mul_apply, Matrix.transpose_apply] at h00
 
 theorem orthogonality_without_commutation_changes_horizontal :
     RightOrthogonal swap2 ∧
