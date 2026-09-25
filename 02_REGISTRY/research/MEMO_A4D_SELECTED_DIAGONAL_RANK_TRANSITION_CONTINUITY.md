@@ -659,7 +659,7 @@ can change independently through holonomy.
 
 ## 8. Literal PR #120 selector and its exact formula
 
-Fix once and for all the selection data used by PR #120:
+Fix one Role \(r\) and suppress that index in this section. Apply the same formula Role-by-Role. Fix once and for all the selection data used by PR #120:
 
 - basepoint \(o\);
 - one labelled path \(p_y:o\to y\) for each site;
@@ -1069,30 +1069,52 @@ No stability criterion may require bounded \(J\).
 
 ## 13. Continuous source, discontinuous selector: independent witness
 
-The second seam can fail with no rank problem in the source.
+The second seam can fail on a literal finite archive with no source-rank
+problem.
 
-Use a fixed finite labelled graph with a chosen basepoint/path tree and one
-fundamental loop. Let its loop transport on a two-dimensional displayed block
-be
+Use \(L=3\). Choose a spanning tree based at \(o\) which omits one positive
+A-labelled closing edge. Put identity linear transport on every tree edge and
+on every other edge, and put on the omitted closing edge
 \[
 G_t=
-\begin{pmatrix}
-1&0\\
-0&1+t
-\end{pmatrix}
+\operatorname{diag}(1,1+t,1,1),
 \]
-for \(t\) near zero, with identity on the other two directions. This is
-invertible for \(t\ne-1\).
+which is invertible for \(t\) near zero. The fundamental A-loop then has
+holonomy \(G_t\).
 
-Let the seed be continuous and have transported mean
+For the selected Role \(C\), set every C-labelled affine shift to
+\[
+b_{x,C}=-e_B,
+\]
+with identity C-linear transport, and set the other affine shifts to zero.
+Take the raw coframe \(e=0\).
+
+Then every affine-shift increment is zero:
+\[
+\mathcal B_t=0.
+\]
+Hence
+\[
+C_t=0
+\]
+for every \(t\), irrespective of the solder residual map. For Role \(C\),
+\[
+\bar b_C=-e_B,\qquad
+a_C=e_B
+\]
+at every site. The seed is therefore constant and continuous.
+
+Choose the tree paths used by the PR #120 mean. They avoid the single closing
+edge, so every tree transport on \(e_B\) is identity and
 \[
 m_t=e_B.
 \]
-The closing-loop source is
+
+Every tree-edge source is zero. The only new fundamental-loop source is
 \[
 (G_t-I)e_B=te_B,
 \]
-so it is continuous and vanishes at the limit.
+which is continuous and vanishes at the limit.
 
 For \(t\ne0\),
 \[
@@ -1115,26 +1137,24 @@ Hence
 \[
 h_t^*=0\quad(t\ne0),
 \qquad
-h_0^*=-e_B.
+h_0^*=-e_B,
 \]
-For a seed value \(a=e_B\),
+and
 \[
-\delta_t=e_B\quad(t\ne0),
+\delta_{C,t}=e_B\quad(t\ne0),
 \qquad
-\delta_0=0.
+\delta_{C,0}=0.
 \]
 
 The earliest discontinuity is exactly the fixed-kernel projector /
-post-source selector.
+post-source selector. The seed and all generating path sources are continuous.
 
 This proves that source continuity does not imply selected-readout continuity.
 
-The converse overstatement also fails: take \(a=0\). The same kernel dimension
-jump leaves the selected \(\delta=0\) continuous. Constant kernel dimension is
-therefore sufficient for robust selector continuity, not necessary for one
-particular mean.
-
----
+The converse overstatement also fails: if the transported seed mean is zero,
+the same kernel-dimension jump can leave the selected \(\delta\) continuous.
+Constant kernel dimension is therefore sufficient for robust selector
+continuity, not necessary for one particular mean.
 
 ## 14. Spectral formulation of the selector seam
 
@@ -1394,10 +1414,32 @@ with the prescribed chart comparison. Hence \(M=0\), \(C=\mathcal S\),
 
 ### \(L=3\) exact-gauge rank drop
 
-The landed exact gauge cycle has a rank-zero middle site while exact
-calibration and \(\kappa=0\) survive. This is the nearest positive control to
-the mandatory bad rank transition: rank loss is harmless when the limiting
-solder synthesis kills the lost directions.
+Use the landed cycle
+\[
+b_A=(3,3,-6)e_B,\qquad
+v_A=e_A-(3,3,-6)e_B.
+\]
+Then
+\[
+\Delta b_A=(9,0,-9)e_B,
+\qquad
+\Delta v_A=(-9,0,9)e_B=\eta\,\Delta b_A.
+\]
+The middle site has rank zero, but
+\[
+M=0,\qquad C=\mathcal S,\qquad D=0
+\]
+at all three sites. The selected diagonal is
+\[
+(15,-3,-12)e_B,
+\]
+and the exact mismatch is
+\[
+\kappa=0
+\]
+edge by edge. This is the nearest positive control to the mandatory bad rank
+transition: rank loss is harmless when the limiting solder synthesis kills the
+lost directions.
 
 ### Mandatory discontinuity family
 
@@ -1909,6 +1951,42 @@ for t in (Q(0),Q(1,9),Q(-3)):
     _,C,D=pack(B,S)
     ck(C==S and D==Z, "exact graph calibration survives rank drop")
 
+# 5b. Literal L=3 exact translation-gauge rank drop from the landed control.
+eta=cols([e[0],vs(-1,e[1]),vs(-1,e[2]),vs(-1,e[3])])
+fg=(Q(3),Q(3),Q(-6))
+dg=tuple(fg[j]-fg[(j-1)%3] for j in range(3))
+ck(dg==(Q(9),Q(0),Q(-9)), "exact gauge increment pattern")
+diag=[]
+for j in range(3):
+    B=cols([vs(dg[j],e[1]),o,o,o])
+    S=mul(eta,B)
+    _,C,D=pack(B,S)
+    a=va(vs(-fg[(j-1)%3],e[1]),vs(-1,col(C,0)))
+    diag.append(a)
+    ck(C==S and D==Z, "L3 exact gauge C=S D=0")
+ck(diag==[vs(15,e[1]),vs(-3,e[1]),vs(-12,e[1])], "L3 exact gauge selected diagonal")
+for j in range(3):
+    y=(j+1)%3
+    b=vs(fg[j],e[1])
+    vx=va(e[0],vs(-fg[j],e[1]))
+    vy=va(e[0],vs(-fg[y],e[1]))
+    kap=va(b,vy,diag[y],vs(-1,vx))
+    ck(kap==o, "L3 exact gauge kappa zero")
+
+# 5c. Nyquist, corner, harmonic, duplicate controls.
+vn=(vs(-1,e[0]),vs(3,e[0]))
+ck(va(vn[1],vs(-1,vn[0]))==vs(4,e[0]), "L2 Nyquist +4")
+ck(va(vn[0],vs(-1,vn[1]))==vs(-4,e[0]), "L2 Nyquist -4")
+corner_v0=va(e[0],vs(-1,e[1]))
+corner_v1=e[0]
+ck(va(corner_v1,vs(-1,corner_v0))==e[1], "L3 corner eB")
+harm=va(e[0],vs(-1,e[1]))
+ck(va(harm,vs(-1,harm))==o, "constant harmonic local mismatch zero")
+Bdup=cols([e[0],e[0],o,o])
+Sdup=cols([e[1],vs(-1,e[1]),o,o])
+_,Cdup,Ddup=pack(Bdup,Sdup)
+ck(Ddup!=Z and rank(Bdup)==1, "duplicate increments retain vertical defect")
+
 # 6. Post-source selector jump with continuous source.
 m=e[1]
 Qoff=cols([e[0],o,e[2],e[3]]) # projection onto span(A,C,D)
@@ -1942,7 +2020,7 @@ print(f"PASS: {checks} exact rational assertions; no floating tolerances")
 Expected output:
 
 ```text
-PASS: 65 exact rational assertions; no floating tolerances
+PASS: 78 exact rational assertions; no floating tolerances
 ```
 
 The checker is evidence for the named finite witnesses only. The general
