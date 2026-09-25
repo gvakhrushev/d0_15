@@ -18,15 +18,15 @@ NOT SATISFIED.
 
 Do not start until
 
-`EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW`
+`EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE`
 
-has landed a usable diagonal overlap/source law, or the repository has explicitly
-adopted the additional relative-A/e/basepoint/cycle datum required by that
-terminal.
+has landed a usable global relative A/e comparison primitive, or the repository
+has explicitly adopted the canonical span/relation/rank-stratified datum
+required by that terminal.
 
-PR #117 does **not** open this gate: it proves that the currently owned selector
-principles leave the diagonal overlap free and terminally requires a new
-junction-overlap primitive.
+PR #120 does **not** open this gate: it constructs sourced diagonal transport
+and removes curl/harmonic freedom only **conditional** on a supplied relative
+A/e comparison map. The singular/degenerate extension remains unresolved.
 
 ## Purpose
 
