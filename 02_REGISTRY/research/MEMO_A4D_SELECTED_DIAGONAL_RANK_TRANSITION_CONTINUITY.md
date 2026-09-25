@@ -3038,3 +3038,128 @@ The continuation sharpens its meaning:
 
 This is the strongest research conclusion available from the current landed
 objects without actually starting the separate finite graded dressing task.
+
+
+---
+
+## 38. Exact resolution checker
+
+The following independent standard-library checker verifies the finite matrix
+claims used in §§27–32: incidence \(B\Pi=B\), the exact jump
+\(DP_W\), maximal lift \(D\), rank-label insufficiency, exact-gauge
+resolution independence, coframe-only lift dependence, and the dual
+fixed-space selector jump.
+
+\`\`\`python
+from fractions import Fraction as Q
+
+checks = 0
+def ck(x, label):
+    global checks
+    checks += 1
+    if not x:
+        raise AssertionError(label)
+
+def eye(n=4):
+    return [[Q(i == j) for j in range(n)] for i in range(n)]
+def zero(n=4):
+    return [[Q(0) for _ in range(n)] for _ in range(n)]
+def tr(a):
+    return [list(c) for c in zip(*a)]
+def mul(a,b):
+    return [[sum((x*y for x,y in zip(r,c)),Q(0)) for c in tr(b)] for r in a]
+def add(a,b):
+    return [[x+y for x,y in zip(r,s)] for r,s in zip(a,b)]
+def sub(a,b):
+    return [[x-y for x,y in zip(r,s)] for r,s in zip(a,b)]
+def col(a,j):
+    return [r[j] for r in a]
+def cols(vs,n=4):
+    return [[Q(v[i]) for v in vs] for i in range(n)]
+def mv(a,v):
+    return [sum((x*y for x,y in zip(r,v)),Q(0)) for r in a]
+def sc(q,a):
+    return [[Q(q)*x for x in r] for r in a]
+def rr(a):
+    a=[[Q(x) for x in row] for row in a]
+    piv=[]; k=0
+    for j in range(len(a[0])):
+        p=next((i for i in range(k,len(a)) if a[i][j]),None)
+        if p is None:
+            continue
+        a[k],a[p]=a[p],a[k]
+        q=a[k][j]
+        a[k]=[x/q for x in a[k]]
+        for i in range(len(a)):
+            if i != k and a[i][j]:
+                q=a[i][j]
+                a[i]=[x-q*y for x,y in zip(a[i],a[k])]
+        piv.append(j); k+=1
+        if k == len(a):
+            break
+    return a,piv
+def rank(a):
+    return len(rr(a)[1])
+
+I=eye(); Z=zero()
+e=[col(I,j) for j in range(4)]
+o=[Q(0)]*4
+
+PH=cols([e[0],o,o,o])
+PW=cols([o,e[1],o,o])
+PK=sub(I,PH)
+Pi=add(PH,PW)
+
+B=cols([e[0],o,o,o])
+S=cols([o,e[2],o,o])
+D=mul(S,PK)
+C=mul(S,PH)
+Cstar=mul(S,Pi)
+
+ck(mul(B,Pi)==B, 'incidence BPi=B')
+ck(sub(Cstar,C)==mul(D,PW), 'resolved jump = D P_W')
+ck(sub(mul(S,I),C)==D, 'maximal full-rank jump = D')
+ck(rank(Pi)==2 and rank(PH)==1, 'rank lift')
+ck(mul(S,I)==S, 'maximal lift gives S')
+
+PA=PH
+PB=PW
+ck(rank(PA)==rank(PB)==1, 'same rank, different Grassmannian directions')
+ck(mul(I,PA)!=mul(I,PB), 'rank label alone insufficient')
+
+T=cols([e[1],o,o,o])
+Sg=mul(T,B)
+ck(mul(Sg,PH)==Sg, 'exact gauge intrinsic lift')
+ck(mul(Sg,I)==Sg, 'exact gauge maximal lift')
+
+Scof=cols([e[1],o,o,o])
+ck(mul(Scof,Z)==Z, 'coframe-only intrinsic lift')
+ck(mul(Scof,I)==Scof and Scof!=Z, 'coframe-only maximal lift differs')
+
+Q0=I
+Qsub=cols([e[0],o,e[2],e[3]])
+m=e[1]
+ck(mv(Q0,m)==e[1], 'intrinsic selector projection')
+ck(mv(Qsub,m)==o, 'reduced fixed-space projection')
+ck(mv(sub(Q0,Qsub),m)==e[1], 'selector jump')
+
+Tloop=cols([o,e[1],o,o])
+for t in (Q(1),Q(1,7),Q(-2)):
+    G=add(I,sc(t,Tloop))
+    ck(rank(sub(G,I))==1, 'loop defect rank one')
+    ck(mv(G,e[0])==e[0] and mv(G,e[2])==e[2] and mv(G,e[3])==e[3],
+       'fixed subspace retained')
+    ck(mv(G,e[1])!=e[1], 'one fixed direction lost')
+
+print(f'PASS: {checks} exact rational resolution assertions')
+\`\`\`
+
+Expected output:
+
+\`\`\`text
+PASS: 23 exact rational resolution assertions
+\`\`\`
+
+Together with the earlier 78-assertion finite suite, the memo now contains
+two independent exact checkers: one for the original continuity/hostile
+controls and one for the projector-resolution synthesis.
