@@ -77,6 +77,47 @@ which CAR block is occupied, and no landed theorem fixes those.
 Nothing in PRs #123, #125, #126, #127, #128, #129 supplies \(\sigma\).
 Polar decomposition is the point \(\sigma=0\) off the exact chart, not a theorem.
 
+## 0.0 The dressing is not a function of the coframe
+
+This is earlier than the skew modulus, and it is exact.
+
+The owned pure-gauge family obeys
+
+\[
+F_{\phi+c}=F_\phi\exp\!\Big(\sum_a c^a D_a\Big)
+\]
+
+with the same gradient \(d_f(\phi+c)=d_f\phi\). On the scalar \(L=3\) block
+\(D^3=-\tfrac{27}{4}D\), so
+
+\[
+\exp(tD)=I+A(t)D+B(t)D^2,
+\qquad
+A(t)=\sum_{m\ge 0}\frac{(-27/4)^m t^{2m+1}}{(2m+1)!}.
+\]
+
+The alternating series at \(t=1\) is bounded away from zero: the partial
+sum through \(m=7\) and the tail through the next term give
+
+\[
+\big\lvert A(1)\big\rvert\ge \frac{23144717353997}{116275502120960}>0.
+\]
+
+Hence \(\exp(D)\neq I\) and \(F_{\phi+c}\neq F_\phi\). No map
+\(e\mapsto\mathcal F_e\) can satisfy both \(\mathcal F_{d_f\phi}=F_\phi\)
+and dependence on \(e\) alone.
+
+The constitutive shadow does not see this. With \(E=\exp(cD)\) and
+\(E^T=E^{-1}\),
+
+\[
+W(\phi+c)=(F_\phi E)^{-T}(F_\phi E)^{-1}=F_\phi^{-T}F_\phi^{-1}=W(\phi).
+\]
+
+So \(W\) descends to the coframe and \(F\) does not. A finite dressing that
+specializes to \(F_\phi\) needs a section of \(d_f\): a gauge choice of
+potential on the exact chart, not a coframe.
+
 ## 0.1 Single-site exponential is already impossible on the exact chart
 
 The modulus above is the linearized statement. The finite statement is

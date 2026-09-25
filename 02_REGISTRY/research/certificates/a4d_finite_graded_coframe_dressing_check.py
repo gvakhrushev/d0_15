@@ -149,7 +149,23 @@ def single_site_homomorphism_fails():
     Cs = sub(mul(sym(G0), sym(G1)), mul(sym(G1), sym(G0)))
     assert any(Cs[i][j] != 0 for i in range(n) for j in range(n))
 
+
+def dressing_not_a_function_of_coframe():
+    # D^3 = lam D on the scalar L=3 block, lam=-27/4.
+    # A(t) = sum lam^m t^{2m+1}/(2m+1)!, and exp(tD)=I only if A(t)=B(t)=0.
+    lam = Q(-27, 4)
+    def fact(k):
+        f = 1
+        for i in range(2, k + 1):
+            f *= i
+        return f
+    terms = [Q(lam ** m, fact(2 * m + 1)) for m in range(9)]
+    partial = sum(terms[:8], Q(0))
+    tail = abs(terms[8])
+    assert abs(partial) - tail > 0
+
 def main():
+
     tests = [
         pure_gauge_skew_nonzero,
         transverse_skew_free,
@@ -157,6 +173,7 @@ def main():
         frame_keeps_skew_orbit,
         landed_span_does_not_read_G,
         single_site_homomorphism_fails,
+        dressing_not_a_function_of_coframe,
     ]
     for t in tests:
         t()
