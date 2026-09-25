@@ -1,1 +1,1 @@
-LOAD_FROM_/workspace/READY_PUSH_ARGS.json
+SEE_FILE_/workspace/raw_3.txt
