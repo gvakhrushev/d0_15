@@ -1,1 +1,1 @@
-SEE_FILE_/workspace/raw_1.txt
+PLACEHOLDER_LOAD_FROM_FILE
