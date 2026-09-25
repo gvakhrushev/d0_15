@@ -101,7 +101,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "Lean owns the finite algebraic resolved correlated-action passport: incidence BΠ=B for lost-direction lifts, resolved jump Ĉ−C=D P_W, intrinsic/maximal specializations, Role-residual maximal jump, exact-gauge resolution invisibility, and the B=0 intrinsic/maximal separation.",
+      "exit_condition": "Lean owns the finite algebraic resolved correlated-action passport: incidence BΠ=B for lost-direction lifts, resolved jump Č−C=D P_W, intrinsic/maximal specializations, Role-residual maximal jump, exact-gauge resolution invisibility, and the B=0 intrinsic/maximal separation.",
       "brief": "00_WORK/tasks/WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT.md"
     },
     {
@@ -130,7 +130,7 @@
       "id": "WRK-A4D-QUOTIENT-SATURATION-PASSPORT",
       "class": "WORKER",
       "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
