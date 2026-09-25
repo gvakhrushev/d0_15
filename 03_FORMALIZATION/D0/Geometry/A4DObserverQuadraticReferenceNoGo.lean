@@ -3,6 +3,8 @@ import D0.Geometry.ArchiveExteriorFrameLift
 import D0.Geometry.A4DObserverPositiveExterior
 
 /-!
+Review scope: this module owns only the canonical background-independent local quadratic obstruction.
+
 # Scoped observer-positive local quadratic reference no-go
 
 Review note: this module is a scoped no-go for the canonical background-independent
