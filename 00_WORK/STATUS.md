@@ -15,6 +15,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
+| *(none)* | - | - | - | - |
 
 ## Registry Health & Metrics
 
