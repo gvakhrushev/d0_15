@@ -70,17 +70,6 @@
       ],
       "exit_condition": "After EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE lands a usable global relative A/e comparison primitive or the repository explicitly adopts the additional rank-stratified/span/relation datum required by its terminal, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e).",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
-    },
-    {
-      "id": "WRK-A4D-LABELLED-ENDPOINT-CLASSICAL-DESCENT",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Lean owns an endpoint-locality passport equivalent to trivial labelled holonomy, with L=2 and noncontractible-cycle firewalls and exact witnesses that path descent is logically independent from local A/e relation graphification.",
-      "brief": "00_WORK/tasks/WRK-A4D-LABELLED-ENDPOINT-CLASSICAL-DESCENT.md"
     }
   ]
 }
