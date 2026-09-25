@@ -41,17 +41,6 @@
   ],
   "tasks": [
     {
-      "id": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The fixed-level constitutive seam closes only after the relative A/e span/relation primitive and sourced transport are formally owned, the classical kinematic interface is pressure-tested for necessity/sufficiency across graphification, active-span extension and labelled-holonomy descent, and then an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced first derivative H(e). Stress/Einstein, physical time and golden refinement remain downstream.",
-      "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
-    },
-    {
       "id": "CTRL-REVIEW-SEMANTIC-HARDENING",
       "class": "CONTROL",
       "parent": "ROOT",
@@ -59,6 +48,50 @@
       "affected_claims": [],
       "exit_condition": "External-review remediation is closed: public README/BOOK/monograph wording is bounded by literal theorem/claim strength; universal M1 carrier completeness and SM gauge representation/commutant gaps are either proved, terminally no-go/bridge classified, or explicitly quarantined; CI contains a claim-strength semantic lint preventing known classes of stale overstatement.",
       "brief": "00_WORK/tasks/CTRL-REVIEW-SEMANTIC-HARDENING.md"
+    },
+    {
+      "id": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The post-classification mixed-background seam closes only after the rank/holonomy resolution datum Xi is functorially/minimally classified, an exact frame-covariant torsor/groupoid-valued finite dressing law on stable or resolved backgrounds is constructed or terminally obstructed, and the crossed coupling to the affine-sensitive T_kappa channel is classified for dependence on dressing/resolution moduli. No Hessian/stress/Einstein, physical time or golden refinement is admitted before this seam is closed.",
+      "brief": "00_WORK/tasks/CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE.md"
+    },
+    {
+      "id": "EXP-A4D-RESOLUTION-MEMORY-FUNCTORIALITY-MINIMALITY",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The local projector-incidence and global holonomy-kernel resolution data Xi from PR #130 are promoted to an exact functorial background datum or terminally classified as irreducible extra memory, with append/reverse/frame covariance, a minimality theorem against all forgetful quotients preserving the mandatory finite controls, and exact rank/holonomy-transition witnesses.",
+      "brief": "00_WORK/tasks/EXP-A4D-RESOLUTION-MEMORY-FUNCTORIALITY-MINIMALITY.md"
+    },
+    {
+      "id": "EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "Construct or terminally classify a frame/observer-covariant torsor/groupoid-valued finite dressing on a precisely stated stable unresolved or rank/holonomy-resolved background domain, with exact pure-gauge specialization modulo constant-potential isotropy, induced first derivative H(e), exact path/background composition, and retained Nyquist/corner/harmonic data.",
+      "brief": "00_WORK/tasks/EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID.md"
+    },
+    {
+      "id": "EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "Classify the exact crossed coupling between a finite graded dressing representative/torsor and the affine-sensitive nilpotent T_kappa channel, including dependence on transverse skew/order and resolution moduli, exact semidirect/cocycle composition, pure-gauge specialization, and a theorem or no-go deciding which moduli remain observable without erasing mandatory raw controls.",
+      "brief": "00_WORK/tasks/EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION.md"
     }
   ]
 }

@@ -7,16 +7,19 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
+| EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
 | WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
-| **Total** | **0** | **2** | **0** | **0** | **2** | **2 / 10** |
+| **Total** | **3** | **2** | **0** | **0** | **5** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
-| CTRL-GRAVITY-DYNAMICS-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
+| CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
+| EXP-A4D-RESOLUTION-MEMORY-FUNCTORIALITY-MINIMALITY | EXPENSIVE | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
+| EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID | EXPENSIVE | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
+| EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION | EXPENSIVE | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
