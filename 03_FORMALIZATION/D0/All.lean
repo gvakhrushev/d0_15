@@ -312,6 +312,9 @@ import D0.Geometry.A4DReferenceJunctionCompressionBoundary
 import D0.Geometry.A4DReferenceLocalCandidateNoGo
 import D0.Geometry.A4DRegularAEPassport
 import D0.Geometry.A4DRelativeAEComparisonSpan
+import D0.Geometry.A4DRelativeAEGraphificationClosureTwoSided
+import D0.Geometry.A4DRelativeAEGraphificationClosureRank
+import D0.Geometry.A4DRelativeAEGraphificationClosure
 import D0.Geometry.A4DRoleOverlapTwistedCocycle
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DRoleSpatialRepresentationWeld
