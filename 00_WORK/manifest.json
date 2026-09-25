@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
     },
     {
-      "id": "EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "A Role-labelled diagonal overlap law and sourced path-transport equation select the reference section while rejecting both curl and harmonic nonselection directions, or the earliest additional relative-A/e/basepoint/cycle primitive needed to do so is terminally identified without starting finite E dressing.",
-      "brief": "00_WORK/tasks/EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW.md"
-    },
-    {
       "id": "WRK-A4D-ROLE-OVERLAP-TWISTED-COCYCLE",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
