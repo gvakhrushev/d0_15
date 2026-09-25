@@ -929,9 +929,19 @@ Therefore the principal task verdict is
 }
 \]
 
-There is **no remaining selector/weld blocker inside the scope of this task**.
+There is **no remaining selector/weld blocker for the insertion channel inside the scope of this task**.
 
-The only surviving freedom is the overall multiplicative normalization of the
-already-selected density. Fixing that scale, varying the action, or identifying
-a downstream continuum field equation are separate tasks and are not claimed
-here.
+In the repository's current KILL-FIRST notation, this result is only
+\[
+d_A=1
+\]
+for the Role-typed linear-curvature insertion family under the mandatory owned
+symmetries. It does **not** establish \(d_E=1\) or \(d_P=1\). The finite
+connection variation, torsion/constraint elimination, and physical operator
+quotient have not been classified here; the older variational gate explicitly
+keeps those downstream obligations separate.
+
+The only surviving freedom at the insertion level is the overall multiplicative
+normalization of the selected density. Fixing that scale, varying the action,
+classifying the Euler--Lagrange family, or identifying a downstream continuum
+field equation are separate tasks and are not claimed here.
