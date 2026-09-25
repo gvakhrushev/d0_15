@@ -70,17 +70,6 @@
       ],
       "exit_condition": "After EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW lands a usable diagonal overlap/source law, or the repository explicitly adopts the additional relative-A/e/basepoint/cycle datum required by its terminal, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e), including explicit transverse skew-generator freedom.",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
-    },
-    {
-      "id": "EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "A Role-labelled diagonal overlap law and sourced path-transport equation select the reference section while rejecting both curl and harmonic nonselection directions, or the earliest additional relative-A/e/basepoint/cycle primitive needed to do so is terminally identified without starting finite E dressing.",
-      "brief": "00_WORK/tasks/EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW.md"
     }
   ]
 }
