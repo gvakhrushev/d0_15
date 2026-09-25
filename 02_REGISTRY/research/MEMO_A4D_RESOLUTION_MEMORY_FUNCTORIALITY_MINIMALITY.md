@@ -1723,3 +1723,26 @@ The resolution is neither arbitrary decoration nor latent pointwise geometry.
 
 It is the minimal finite record of singular approach data required by the
 current universal resolved interface.
+
+
+---
+
+## 32. Ready lifecycle audit
+
+The research task is self-retired before Ready.  The branch was synchronized
+onto the fresh queue state containing the newly queued pure-gauge torsor
+worker, so no concurrent work item is deleted by this PR.
+
+Final research validation before REVIEW:
+
+- terminal:
+  \(\texttt{RESOLUTION-MEMORY-MINIMALITY-CLASSIFIED}\);
+- exact finite checker: 30 rational assertions, no floating tolerances;
+- one durable memo;
+- no Lean source;
+- no new claim registration;
+- PR lifecycle: REVIEW;
+- no self-merge.
+
+This audit commit changes no mathematical result.  It exists to run repository
+guards against the final Ready-state contract.
