@@ -33,7 +33,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 ### Claims by Exact `release_status`
 
 | Exact `release_status` | Count |
-|---|---|
+|---|---:|
 | BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
 | BRIDGE-CALIBRATION | 3 |
 | CERT-CLOSED | 193 |
