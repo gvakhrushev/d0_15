@@ -307,6 +307,7 @@ import D0.Geometry.A4DPathCovariantHodge
 import D0.Geometry.A4DPathResolvedComparisonBoundary
 import D0.Geometry.A4DPathWordParentWard
 import D0.Geometry.A4DPrimalDualCellPairing
+import D0.Geometry.A4DPureGaugeDressingTorsorPassport
 import D0.Geometry.A4DQuotientSaturationPassport
 import D0.Geometry.A4DQuotientSaturationWitness
 import D0.Geometry.A4DRawSolderFrameAction
