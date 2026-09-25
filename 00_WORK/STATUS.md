@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 0 | 0 | 1 | 0 | 1 | 1 / 3 |
-| WORKER | 4 | 0 | 0 | 0 | 4 | 0 / 5 |
-| **Total** | **4** | **2** | **1** | **0** | **7** | **3 / 10** |
+| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
+| **Total** | **3** | **2** | **1** | **0** | **6** | **3 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -19,7 +19,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | EXP-A4D-FINITE-GRADED-COFRAME-DRESSING | EXPENSIVE | BLOCKED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-CONDITIONAL-SOURCED-DIAGONAL-TRANSPORT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
-| WRK-A4D-REGULAR-AE-PASSPORT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-LABELLED-ENDPOINT-CLASSICAL-DESCENT | WORKER | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 

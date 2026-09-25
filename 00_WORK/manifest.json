@@ -83,17 +83,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-CONDITIONAL-SOURCED-DIAGONAL-TRANSPORT.md"
     },
     {
-      "id": "WRK-A4D-REGULAR-AE-PASSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Lean owns the frame-invariant regular passport K=B^-1 C, the exact translation-chart reconstruction equations, and the explicit invertibility boundary under which the representative is unique, while the singular/degenerate extension remains open.",
-      "brief": "00_WORK/tasks/WRK-A4D-REGULAR-AE-PASSPORT.md"
-    },
-    {
       "id": "WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
