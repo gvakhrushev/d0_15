@@ -98,15 +98,15 @@ open Matrix
 
 variable {n K : Type*} [Fintype n] [DecidableEq n] [Field K]
 
-abbrev Mat := Matrix n n K
+abbrev Mat (n K : Type*) := Matrix n n K
 
 /-- Two-sided orthogonality, stated without choosing a preferred basis beyond
 the matrix transpose already present in the carrier. -/
-def RightOrthogonal (R : Mat) : Prop :=
+def RightOrthogonal (R : Mat n K) : Prop :=
   R.transpose * R = 1 ∧ R * R.transpose = 1
 
 /-- Matrix horizontal letter using the repository nonsingular inverse. -/
-def matrixHorizontalLetter (F U : Mat) : Mat :=
+def matrixHorizontalLetter (F U : Mat n K) : Mat n K :=
   F * U * F⁻¹
 
 /-- Existing real-matrix orthogonality is exactly the specialization of the
@@ -117,7 +117,7 @@ theorem rightOrthogonal_iff_gauge_isOrthogonal
     RightOrthogonal R ↔ D0.Gauge.isOrthogonal R := by
   rfl
 
-theorem RightOrthogonal.det_isUnit {R : Mat} (hR : RightOrthogonal R) :
+theorem RightOrthogonal.det_isUnit {R : Mat n K} (hR : RightOrthogonal R) :
     IsUnit R.det := by
   have hdet := congrArg Matrix.det hR.1
   rw [Matrix.det_mul, Matrix.det_transpose, Matrix.det_one] at hdet
@@ -125,7 +125,7 @@ theorem RightOrthogonal.det_isUnit {R : Mat} (hR : RightOrthogonal R) :
 
 /-- The finite matrix specialization of commuting right-isotropy descent. -/
 theorem matrixHorizontalLetter_right_commuting
-    (F R U : Mat) (hR : IsUnit R.det) (hRU : R * U = U * R) :
+    (F R U : Mat n K) (hR : IsUnit R.det) (hRU : R * U = U * R) :
     matrixHorizontalLetter (F * R) U = matrixHorizontalLetter F U := by
   unfold matrixHorizontalLetter
   rw [Matrix.mul_inv_rev F R]
@@ -139,23 +139,23 @@ theorem matrixHorizontalLetter_right_commuting
           simp [Matrix.mul_assoc]
 
 theorem matrixHorizontalLetter_right_orthogonal
-    (F R U : Mat) (hR : RightOrthogonal R) (hRU : R * U = U * R) :
+    (F R U : Mat n K) (hR : RightOrthogonal R) (hRU : R * U = U * R) :
     matrixHorizontalLetter (F * R) U = matrixHorizontalLetter F U :=
   matrixHorizontalLetter_right_commuting F R U hR.det_isUnit hRU
 
 /-- Constitutive shadow of an invertible dressing representative. Matrix
 nonsingular inverse is used so the statement remains in the repository matrix
 carrier. -/
-def constitutiveShadow (F : Mat) : Mat :=
+def constitutiveShadow (F : Mat n K) : Mat n K :=
   (F⁻¹).transpose * F⁻¹
 
-theorem RightOrthogonal.inv_eq_transpose {R : Mat} (hR : RightOrthogonal R) :
+theorem RightOrthogonal.inv_eq_transpose {R : Mat n K} (hR : RightOrthogonal R) :
     R⁻¹ = R.transpose := by
   exact Matrix.inv_eq_right_inv hR.2
 
 /-- Orthogonal right-isotropy drops out of `F⁻ᵀ F⁻¹`. -/
 theorem constitutiveShadow_right_orthogonal
-    (F R : Mat) (hR : RightOrthogonal R) :
+    (F R : Mat n K) (hR : RightOrthogonal R) :
     constitutiveShadow (F * R) = constitutiveShadow F := by
   have hRinv : R⁻¹ = R.transpose := hR.inv_eq_transpose
   unfold constitutiveShadow
@@ -176,7 +176,7 @@ theorem constitutiveShadow_right_isOrthogonal
 /-- One typed theorem exposing the actual torsor separation: the representatives
 are distinct, but both descended outputs agree. -/
 theorem distinct_representatives_same_descended_outputs
-    (F R U : Mat) (hF : IsUnit F.det) (hR : RightOrthogonal R)
+    (F R U : Mat n K) (hF : IsUnit F.det) (hR : RightOrthogonal R)
     (hRne : R ≠ 1) (hRU : R * U = U * R) :
     F * R ≠ F ∧
       matrixHorizontalLetter (F * R) U = matrixHorizontalLetter F U ∧
@@ -192,41 +192,41 @@ theorem distinct_representatives_same_descended_outputs
     _ = F⁻¹ * F := by rw [h]
     _ = 1 := Matrix.nonsing_inv_mul F hF
 
-theorem matrixHorizontalLetter_right_one (F U : Mat) :
+theorem matrixHorizontalLetter_right_one (F U : Mat n K) :
     matrixHorizontalLetter (F * 1) U = matrixHorizontalLetter F U := by
   simp
 
-theorem constitutiveShadow_right_one (F : Mat) :
+theorem constitutiveShadow_right_one (F : Mat n K) :
     constitutiveShadow (F * 1) = constitutiveShadow F := by
   simp
 
 /-! ## Infinitesimal skew freedom -/
 
 /-- First constitutive derivative associated with a dressing tangent. -/
-def tangentConstitutive (G : Mat) : Mat :=
+def tangentConstitutive (G : Mat n K) : Mat n K :=
   -(G.transpose + G)
 
 /-- Matrix skewness, kept separate from the finite right-isotropy predicate. -/
-def IsSkew (A : Mat) : Prop :=
+def IsSkew (A : Mat n K) : Prop :=
   A.transpose = -A
 
 /-- A skew tangent is invisible to the first constitutive derivative. -/
 theorem tangentConstitutive_add_skew
-    (G A : Mat) (hA : IsSkew A) :
+    (G A : Mat n K) (hA : IsSkew A) :
     tangentConstitutive (G + A) = tangentConstitutive G := by
   unfold tangentConstitutive
   rw [Matrix.transpose_add, hA]
   abel
 
 /-- Equality of first constitutive derivatives is exactly skew difference. -/
-theorem tangentConstitutive_eq_iff_sub_skew (G₁ G₂ : Mat) :
+theorem tangentConstitutive_eq_iff_sub_skew (G₁ G₂ : Mat n K) :
     tangentConstitutive G₁ = tangentConstitutive G₂ ↔
       IsSkew (G₁ - G₂) := by
   constructor
   · intro h
     unfold IsSkew
     ext i j
-    have hij := congrArg (fun M : Mat => M i j) h
+    have hij := congrArg (fun M : Mat n K => M i j) h
     simp only [tangentConstitutive, Matrix.neg_apply, Matrix.add_apply,
       Matrix.transpose_apply] at hij
     simp only [Matrix.transpose_apply, Matrix.sub_apply, Matrix.neg_apply]
