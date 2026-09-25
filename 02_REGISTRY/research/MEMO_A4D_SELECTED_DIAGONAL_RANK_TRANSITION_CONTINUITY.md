@@ -4196,3 +4196,282 @@ The three embedded exact suites now test complementary layers:
 - 78 assertions: original continuity and hostile finite controls;
 - 27 assertions: projector-resolution and continuous-selector no-go;
 - 13 assertions: bare finite dressing extension and surviving skew modulus.
+
+
+---
+
+## 51. Full raw-solder frame covariance destroys the exact-coframe subspace
+
+The bare construction of §44 used an arbitrary retraction onto
+\[
+\mathcal G=\operatorname{im}d_f.
+\]
+The remaining question was whether the owned frame structure might select such
+a retraction equivariantly.
+
+The landed raw-solder frame owner answers this negatively for a coframe-only
+retraction.
+
+The exact full-solder action is
+\[
+\boxed{
+T_\Lambda(e)
+=
+(\eta+e)\Lambda-\eta
+}
+\tag{51.1}
+\]
+sitewise, with \(\Lambda_x\) acting on the right.
+
+Even for a constant Lorentz frame \(\Lambda\), the flat perturbation transforms
+as
+\[
+\boxed{
+T_\Lambda(0)=\eta\Lambda-\eta.
+}
+\tag{51.2}
+\]
+
+Choose the exact rational A/B boost
+\[
+\Lambda=
+\begin{pmatrix}
+5/3&4/3&0&0\\
+4/3&5/3&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+\eta=\operatorname{diag}(1,-1,-1,-1).
+\]
+It satisfies
+\[
+\Lambda^T\eta\Lambda=\eta.
+\]
+But
+\[
+\eta\Lambda-\eta
+=
+\begin{pmatrix}
+2/3&4/3&0&0\\
+-4/3&-2/3&0&0\\
+0&0&0&0\\
+0&0&0&0
+\end{pmatrix}
+\ne0.
+\tag{51.3}
+\]
+
+This is a spatially constant raw coframe perturbation.
+
+Every periodic exact coframe
+\[
+h=d_f\phi
+\]
+has zero period in each Role direction:
+\[
+\sum_{j=0}^{L-1}h_r(x+jr)=0.
+\tag{51.4}
+\]
+A nonzero constant component has period \(Lh_r\ne0\). Therefore the field
+(51.3) is not in \(\operatorname{im}d_f\).
+
+Hence
+\[
+\boxed{
+T_\Lambda(\operatorname{im}d_f)
+\not\subseteq
+\operatorname{im}d_f.
+}
+\tag{51.5}
+\]
+
+The exact pure-gauge coframe orbit is not invariant under the full raw-solder
+frame action.
+
+This is consistent with the repository's existing separation: a raw solder
+frame change and an affine/background gauge move are different operations
+until a joint typed bridge is supplied.
+
+---
+
+## 52. No full-frame-equivariant coframe-only exact-orbit retraction
+
+Suppose one tried to strengthen the bare dressing construction with a
+retraction
+\[
+P:\mathcal E\to\mathcal G
+\]
+which is equivariant under the full raw-solder frame action and fixes every
+exact coframe.
+
+Any meaningful equivariance of such a retraction would require
+\[
+P(T_\Lambda h)=T_\Lambda P(h)=T_\Lambda h
+\tag{52.1}
+\]
+for
+\[
+h\in\mathcal G.
+\]
+The left side lies in \(\mathcal G\) by definition of \(P\), so (52.1)
+forces
+\[
+T_\Lambda h\in\mathcal G.
+\]
+
+Taking
+\[
+h=0
+\]
+and the rational boost of §51 gives a contradiction to (51.5).
+
+Therefore:
+\[
+\boxed{
+\text{there is no coframe-only retraction onto }\operatorname{im}d_f
+\text{ which is equivariant under the full raw-solder frame action}.
+}
+\tag{52.2}
+\]
+
+This is stronger than saying the particular orthogonal projection is not
+covariant. **No** retraction with that source and target can satisfy the full
+frame law, because the target subspace itself is not invariant.
+
+Consequently the arbitrary choice \(P\) in §44 cannot be repaired by searching
+for a more clever coframe-only canonical projector.
+
+---
+
+## 53. The next dressing object is necessarily joint-background / groupoid typed
+
+The failure of §52 identifies why the dressing brief explicitly allowed a
+“correctly typed background-groupoid equivalent.”
+
+The repository already contains the relevant covariance pattern on the solder
+side. A transported solder center becomes frame-covariant only after supplying
+a row pull
+\[
+R_{x-r\to x}
+\]
+which transforms as
+\[
+\boxed{
+R'_{x-r\to x}
+=
+\Lambda_{x-r}^{-1}
+R_{x-r\to x}
+\Lambda_x.
+}
+\tag{53.1}
+\]
+With that connection-like datum, the transported center transforms at the
+target by the same right frame as the raw solder.
+
+Thus the natural next source object is not
+\[
+e
+\]
+alone. It is at least a joint background carrying the transport needed to
+compare frames between sites — in current repository language, naturally a
+package built from
+\[
+(A,e)
+\]
+and, for the mixed selected channel, the stability datum
+\[
+\Xi.
+\]
+
+The correct forward target is therefore schematically
+\[
+\boxed{
+\mathcal F_{A,e,\Xi,n}
+}
+\tag{53.2}
+\]
+or a background-groupoid torsor/cocycle equivalent, with the dependence
+reduced when the extra arguments are irrelevant.
+
+This does **not** assert that all four displayed arguments must enter every
+factor. It records the minimal typing lesson:
+
+- raw frame covariance cannot be solved by an \(e\)-only retraction to the
+  exact orbit;
+- the already-owned mismatch is intrinsically joint A/e data;
+- the selected mismatch is stable only on the stable domain or after adding
+  \(\Xi\);
+- observer covariance belongs to the matter pairing/lift, not to the
+  coefficient projector.
+
+Any final construction may factor these pieces, but it cannot identify them
+silently.
+
+---
+
+## 54. Revised frontier after one full forward iteration
+
+The combined results §§43–53 replace the vague question
+
+> “does an arbitrary-background finite graded dressing exist?”
+
+by a much narrower sequence.
+
+### Closed at research level
+
+A bare finite invertible extension exists after arbitrary finite-dimensional
+splitting choices. It can be made to satisfy:
+
+- flat identity;
+- exact gauge-fixed pure-gauge specialization;
+- the owned descended pure-gauge horizontal letters and constitutive form;
+- complete \(DW_0=H(e)\);
+- raw Nyquist/corner first-jet retention;
+- exact labelled-path append/reverse;
+- exact background pair-groupoid composition.
+
+The full transverse skew modulus is explicit.
+
+### Terminal negative
+
+A coframe-only retraction onto the exact orbit cannot be equivariant under the
+owned full raw-solder frame action:
+\[
+\boxed{
+\texttt{COFRAME-ONLY-FRAME-EQUIVARIANT-EXACT-ORBIT-RETRACTION-NOGO}.
+}
+\tag{54.1}
+\]
+
+### Exact next primitive
+
+What remains is to construct or obstruct a **joint-background equivariant
+trivialization/cocycle** which:
+
+1. reduces to the pure-gauge torsor \(F_\phi\);
+2. has constitutive first derivative \(H(e)\);
+3. uses the transformed connection/row-pull data required by frame covariance;
+4. keeps the transverse skew modulus explicit until covariance/duality selects
+   it;
+5. couples to \(T_\kappa\) only on the stable or resolved mismatch domain;
+6. remains compatible with the fixed located \(J\).
+
+This is a sharper starting brief than “construct \(F_e\).”
+
+The mathematical pressure has therefore advanced one complete layer:
+
+\[
+\boxed{
+\begin{array}{c}
+\text{pointwise relative A/e relation}\\
+\downarrow\\
+\text{stability / rank-holonomy resolution}\\
+\downarrow\\
+\text{bare finite dressing exists noncanonically}\\
+\downarrow\\
+\textbf{joint-background equivariant dressing/groupoid law is now the first
+unresolved constitutive seam}.
+\end{array}}
+\tag{54.2}
+\]
