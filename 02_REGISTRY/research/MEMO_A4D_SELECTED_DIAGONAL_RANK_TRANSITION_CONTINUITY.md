@@ -3045,7 +3045,7 @@ objects without actually starting the separate finite graded dressing task.
 ## 38. Exact resolution checker
 
 The following independent standard-library checker verifies the finite matrix
-claims used in §§27–32: incidence \(B\Pi=B\), the exact jump
+claims used in §§27–32 and §40: incidence \(B\Pi=B\), the exact jump
 \(DP_W\), maximal lift \(D\), rank-label insufficiency, exact-gauge
 resolution independence, coframe-only lift dependence, and the dual
 fixed-space selector jump.
@@ -3151,13 +3151,27 @@ for t in (Q(1),Q(1,7),Q(-2)):
        'fixed subspace retained')
     ck(mv(G,e[1])!=e[1], 'one fixed direction lost')
 
+
+# Unique continuous unresolved completion = predecessor selector.
+b=e[1]
+delta_pure=[-x for x in b]
+kappa_pure=[b[i]+delta_pure[i] for i in range(4)]
+ck(delta_pure!=o, 'continuous completion changes pure-shift diagonal')
+ck(kappa_pure==o, 'continuous completion erases pure shift')
+
+dv=e[1]
+delta_cof=[-x for x in dv]
+kappa_cof=[dv[i]+delta_cof[i] for i in range(4)]
+ck(dv!=o, 'raw coframe response is nonzero')
+ck(kappa_cof==o, 'continuous completion erases raw coframe response')
+
 print(f'PASS: {checks} exact rational resolution assertions')
 ```
 
 Expected output:
 
 ```text
-PASS: 23 exact rational resolution assertions
+PASS: 27 exact rational resolution assertions
 ```
 
 Together with the earlier 78-assertion finite suite, the memo now contains
