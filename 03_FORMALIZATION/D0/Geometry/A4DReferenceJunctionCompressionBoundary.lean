@@ -10,6 +10,8 @@ Lean-owns the exact two-link reference-junction identity (memo §12 / PR #114)
 and the precise iff criterion for compressing two conditional edge mismatches
 to one endpoint-origin mismatch.
 
+Review note: this module owns only the algebraic junction/compression boundary and does not impose the compression condition physically.
+
 This module does **not** select an intrinsic `q(A,e)`, does not impose
 `q₁ = v₂` as a physical law, and does not claim that endpoint compression
 holds in general. The mixed-Role flat witness shows why zero edge mismatch
