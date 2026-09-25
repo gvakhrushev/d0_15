@@ -2045,3 +2045,996 @@ The conceptual result is complete when this memo is in the PR:
 Ready audit: the exact checker passes 78 rational assertions; `main` remains at the audited baseline; the task has self-retired; the task brief and manifest row are absent; and the PR diff contains only this durable memo. The PR is `Lifecycle: REVIEW` and is not self-merged.
 
 The first guard run on the retired head was spawned while GitHub still marked the PR as Draft, so the PR-contract guard correctly expected the active task row and failed. This lifecycle-audit commit is made after Ready specifically to trigger the contract against the final Ready state; it changes no research result.
+
+
+---
+
+## 27. Further synthesis: the exact projector-incidence resolution
+
+The continuity criterion above identifies when the pointwise canonical rule
+happens to descend continuously. There is a stronger structural statement:
+the entire discontinuity can be resolved by remembering one finite
+coefficient-space projector.
+
+Let
+\[
+E=E_{\rm lab},\qquad
+H_B=(\ker B)^\perp,\qquad
+P_B=P_{H_B}.
+\]
+
+Define the projector-incidence fibre
+\[
+\boxed{
+\mathfrak P(B)
+=
+\{\Pi\in\operatorname{End}(E):
+\Pi^2=\Pi=\Pi^\ast,\quad B\Pi=B\}.
+}
+\tag{27.1}
+\]
+
+For an orthogonal projector, \(B\Pi=B\) is equivalent to
+\[
+H_B\subseteq\operatorname{im}\Pi.
+\]
+Writing \(K_B=\ker B\), every such range splits orthogonally as
+\[
+\operatorname{im}\Pi
+=
+H_B\oplus W,
+\qquad
+W\le K_B.
+\]
+Therefore
+\[
+\boxed{
+\mathfrak P(B)
+=
+\{P_B+P_W:W\le K_B\}.
+}
+\tag{27.2}
+\]
+
+The intrinsic pointwise canonical choice is the **minimal** member
+\[
+\Pi_{\rm int}=P_B
+\]
+and the maximal member is
+\[
+\Pi_{\rm max}=I
+\]
+whenever the source and target dimensions are both four.
+
+### Theorem 7 — exact closure of the active-projector graph
+
+For the present \(4\to4\) synthesis maps, the closure of
+\[
+B\longmapsto P_{(\ker B)^\perp}
+\]
+inside
+\[
+\operatorname{Hom}(E,V)\times\operatorname{End}(E)
+\]
+is exactly the incidence set
+\[
+\boxed{
+\mathfrak I_B
+=
+\{(B,\Pi):\Pi\in\mathfrak P(B)\}.
+}
+\tag{27.3}
+\]
+
+The cluster-projector theorem of §3 proves one inclusion. For the reverse,
+take
+\[
+\Pi=P_B+P_W,
+\qquad W\le K_B.
+\]
+Choose a complement
+\[
+V=\operatorname{im}B\oplus R
+\]
+and an injection
+\[
+J:W\hookrightarrow R.
+\]
+Extend \(J\) by zero on \(W^\perp\), and put
+\[
+B_\varepsilon
+=
+B+\varepsilon J P_W.
+\]
+If
+\[
+c=h+w+k,
+\quad
+h\in H_B,\quad
+w\in W,\quad
+k\in K_B\cap W^\perp,
+\]
+then
+\[
+B_\varepsilon c
+=
+Bh+\varepsilon Jw
+\]
+is a sum of vectors in the direct-sum factors
+\(\operatorname{im}B\) and \(R\). Hence
+\[
+\ker B_\varepsilon
+=
+K_B\cap W^\perp
+\]
+for every nonzero \(\varepsilon\), so
+\[
+P_{(\ker B_\varepsilon)^\perp}
+=
+P_B+P_W
+=
+\Pi.
+\]
+Finally \(B_\varepsilon\to B\).
+
+Thus every allowed \(W\) is an actual rank-transition approach direction, not
+an abstract completion point.
+
+Over a rank-\(r\) endpoint, the resolution fibre is the finite union
+\[
+\coprod_{k=0}^{4-r}\operatorname{Gr}(k,K_B).
+\]
+This Grassmannian language is a classification of finite matrix approach
+data, not a claim that a physical continuum manifold has been derived.
+
+---
+
+## 28. Vertical defect = exact universal instability radius
+
+On the incidence resolution define
+\[
+\boxed{
+\widetilde C(B,S,\Pi)=S\Pi.
+}
+\tag{28.1}
+\]
+This is polynomial, hence continuous, in the resolved data. On the intrinsic
+section \(\Pi=P_B\),
+\[
+\widetilde C=C.
+\]
+
+Using (27.2),
+\[
+\widetilde C-C
+=
+SP_W
+=
+(SP_{K_B})P_W
+=
+DP_W.
+\tag{28.2}
+\]
+
+Therefore the complete cluster set of the correlated action is
+\[
+\boxed{
+\operatorname{Clust}_B(C)
+=
+\{C+SP_W:W\le K_B\}.
+}
+\tag{28.3}
+\]
+
+This gives three exact new interpretations of the landed vertical data.
+
+### 28.1 \(D\) is the maximal full-rank jump operator
+
+Choosing \(W=K_B\) gives \(\Pi=I\), realizable by a full-rank perturbation.
+Hence
+\[
+\boxed{
+C_{\rm full\;rank\;cluster}-C=D.
+}
+\tag{28.4}
+\]
+Equivalently, the maximal lift has
+\[
+\widetilde C=S.
+\]
+
+For every Role basis vector,
+\[
+\boxed{
+a^{\rm full}_r-a^{\rm int}_r=-D\varepsilon_r=-R_r.
+}
+\tag{28.5}
+\]
+Thus each canonical Role residual is literally a realizable full-rank
+rank-transition seed jump.
+
+### 28.2 \(M\) is the total possible jump-output space
+
+Because the maximal jump is \(D\),
+\[
+\boxed{
+\operatorname{span}\{\operatorname{im}(C_*-C):
+C_*\in\operatorname{Clust}_B(C)\}
+=
+\operatorname{im}D
+=
+M.
+}
+\tag{28.6}
+\]
+
+So the vertical defect is not only the pointwise multivalued part of the
+relation. It is exactly the output space in which arbitrary rank-transition
+jumps can occur.
+
+### 28.3 Exact quantitative radius
+
+For any operator norm induced by the fixed finite-dimensional Hilbert norms,
+\[
+\|DP_W\|\le\|D\|.
+\]
+The choice \(W=K_B\) saturates the bound. Hence
+\[
+\boxed{
+\sup_{C_*\in\operatorname{Clust}_B(C)}
+\|C_*-C\|
+=
+\|D\|.
+}
+\tag{28.7}
+\]
+
+This gives \(D\) a quantitative stability meaning without introducing a new
+physical norm into the definition of the source.
+
+### Corollary — graphification is exact descent from the resolution
+
+The continuous resolved action \(\widetilde C\) is constant on the entire
+incidence fibre over \((B,S)\) iff
+\[
+D=0
+\iff
+M=0.
+\]
+Thus
+\[
+\boxed{
+M=0
+\iff
+\text{the projector-resolved correlated action descends uniquely to the
+unresolved pointwise background}.
+}
+\tag{28.8}
+\]
+
+This is a stronger structural reading of the universal-continuity theorem:
+graphification is exactly the condition under which approach memory becomes
+unobservable in the correlated action.
+
+---
+
+## 29. Rank labels and finite background jets do not determine the missing datum
+
+The missing datum is not an integer rank.
+
+At the same endpoint \(B_0=0\), take
+\[
+B_t^{(A)}=t\,e_A\otimes\varepsilon_A^\ast,
+\qquad
+B_t^{(B)}=t\,e_A\otimes\varepsilon_B^\ast.
+\]
+Both approaches have rank one for every \(t\ne0\), but
+\[
+P_{H_t^{(A)}}=P_{\mathbb R\varepsilon_A},
+\qquad
+P_{H_t^{(B)}}=P_{\mathbb R\varepsilon_B}.
+\]
+For an \(S_0\) which distinguishes those coefficient directions, the two
+correlated-action limits differ.
+
+Hence
+\[
+\boxed{
+\text{rank stratum alone is insufficient; the Grassmannian direction is
+essential.}
+}
+\tag{29.1}
+\]
+
+Nor can a universal finite-order parameter jet recover it.
+
+For every integer \(k\ge0\), compare
+\[
+B_t^{(0)}=B_0
+\]
+with
+\[
+B_t^{(W)}
+=
+B_0+t^{k+1}JP_W.
+\]
+Their derivatives through order \(k\) at \(t=0\) agree, while for every
+\(t\ne0\) the second family carries the nonzero lost space \(W\).
+
+Therefore:
+\[
+\boxed{
+\text{no fixed finite-order parameter jet determines the rank-resolution
+projector on arbitrary smooth families.}
+}
+\tag{29.2}
+\]
+
+The obstruction is stronger in the \(C^\infty\) category. Replace
+\(t^{k+1}\) by
+\[
+\chi(t)=
+\begin{cases}
+e^{-1/t^2},&t\ne0,\\
+0,&t=0.
+\end{cases}
+\]
+Then all derivatives at zero agree with the constant family, but the
+nonzero-\(t\) active subspace is still \(H_B\oplus W\).
+
+So even the full Taylor jet at the singular point does not recover the
+approach projector for unrestricted smooth families.
+
+Analytic/algebraic families are different: a full germ can encode the first
+nonzero activation order. But no **uniform finite jet order** can do so,
+because the order \(k+1\) above is arbitrary.
+
+This matters downstream: neither the first derivative \(H(e)\) nor a finite
+second-jet package can, by itself, repair arbitrary rank-transition memory.
+
+---
+
+## 30. Dual incidence resolution of the holonomy-fixed selector
+
+The post-source seam has an exact dual form.
+
+Fix a basepoint and finitely many fundamental loop generators, and stack
+their defects:
+\[
+F:V_o\to Y,
+\qquad
+Fh=((P_{\gamma_i}-I)h)_i.
+\]
+Then
+\[
+\mathcal H=\ker F.
+\]
+
+Fix the positive observer inner product \(h_o\). Define
+\[
+\boxed{
+\mathfrak Q(F)
+=
+\{Q:Q^2=Q=Q^{\dagger_{h_o}},\quad FQ=0\}.
+}
+\tag{30.1}
+\]
+These are exactly the \(h_o\)-orthogonal projectors onto subspaces
+\[
+H_*\le\mathcal H.
+\]
+
+The intrinsic PR #120 choice is the **maximal** member
+\[
+Q_{\rm int}=P^{h_o}_{\mathcal H}.
+\]
+The zero projector is the minimal member.
+
+For arbitrary finite stacked defect maps with
+\(\dim Y\ge\dim V_o\), the closure of
+\[
+F\longmapsto P^{h_o}_{\ker F}
+\]
+is exactly (30.1). The proof is the kernel-dual of §27: if
+\[
+\mathcal H=H_*\oplus W,
+\]
+perturb \(F\) by a small injection of \(W\) into a complement of
+\(\operatorname{im}F\). The perturbed kernel is exactly \(H_*\).
+
+At a trivial-holonomy transport background this whole fibre is also realized
+inside actual invertible loop transports. Given any
+\[
+H_*\le V_o,
+\]
+choose \(T\) with \(\ker T=H_*\) and use one fundamental loop
+\[
+G_\varepsilon=I+\varepsilon T.
+\]
+For sufficiently small nonzero \(\varepsilon\), \(G_\varepsilon\) is
+invertible and
+\[
+\operatorname{Fix}G_\varepsilon=H_*.
+\]
+
+Thus the selector seam is not merely an artifact of stacking loop equations.
+
+### Resolved selector
+
+For a transported seed mean \(m\), define
+\[
+\widetilde h_o(F,Q,m)=-Qm.
+\tag{30.2}
+\]
+This is continuous on the resolved incidence space.
+
+Let
+\[
+Q_0=P^{h_o}_{\mathcal H}.
+\]
+For \(Q=P^{h_o}_{H_*}\), write
+\[
+\mathcal H=H_*\oplus_{h_o}W_{\rm gain}.
+\]
+Then
+\[
+Q_0-Q=P^{h_o}_{W_{\rm gain}},
+\]
+and the selected correction jump is
+\[
+\boxed{
+\widetilde h_o(Q)-h_o^*
+=
+P^{h_o}_{W_{\rm gain}}m.
+}
+\tag{30.3}
+\]
+
+Exactly as locally,
+\[
+\boxed{
+\sup_{Q\in\mathfrak Q(F)}
+\|\widetilde h_o(Q)-h_o^*\|_{h_o}
+=
+\|Q_0m\|_{h_o}
+=
+\|h_o^*\|_{h_o}.
+}
+\tag{30.4}
+\]
+
+Hence the already-selected parallel correction is itself the exact
+worst-case selector-instability amplitude for arbitrary defect-map
+perturbations.
+
+The selector is constant on the entire incidence fibre iff
+\[
+\boxed{
+Q_0m=0.
+}
+\tag{30.5}
+\]
+
+At trivial holonomy this is also the exact criterion for stability under
+arbitrary small actual loop-holonomy perturbations.
+
+The local and global seams are therefore genuinely dual:
+
+| local relative A/e seam | post-source holonomy seam |
+|---|---|
+| endpoint kernel \(K=\ker B\) | endpoint kernel \(\mathcal H=\ker F\) |
+| approach projector is **larger** than intrinsic \(P_H\) | approach projector is **smaller** than intrinsic \(Q_0\) |
+| missing subspace \(W_{\rm lost}\le K\) | missing fixed subspace \(W_{\rm gain}\le\mathcal H\) |
+| jump \(SP_{W_{\rm lost}}\) | jump \(P_{W_{\rm gain}}m\) |
+| universal radius \(\|D\|\) | universal radius \(\|h_o^*\|\) |
+| fibre collapses iff \(D=0\) | fibre collapses iff \(h_o^*=0\) |
+
+This identifies the two exact instability carriers already present in the
+landed construction:
+\[
+\boxed{
+D
+\quad\text{and}\quad
+h_o^*.
+}
+\tag{30.6}
+\]
+
+---
+
+## 31. The double-projector resolved selected interface
+
+The two incidence resolutions combine without introducing a full extension
+of \(J\).
+
+At every site choose
+\[
+\Pi_y\in\mathfrak P(\mathcal B_y),
+\]
+and at the basepoint choose
+\[
+Q_o\in\mathfrak Q(F).
+\]
+Call
+\[
+\Xi=((\Pi_y)_y,Q_o)
+\]
+the **rank/holonomy resolution datum**.
+
+With the PR #120 paths fixed, write \(T_y:V_y\to V_o\) for their linear
+transport. Define
+\[
+\widetilde C_y
+=
+\mathcal S_y\Pi_y,
+\]
+\[
+\widetilde a_r(y)
+=
+-\bar b_r(y)-\widetilde C_y\varepsilon_r,
+\]
+\[
+\widetilde m_r
+=
+\frac1{|X|}
+\sum_yT_y\widetilde a_r(y),
+\]
+\[
+\boxed{
+\widetilde\delta_r(y)
+=
+\widetilde a_r(y)-T_y^{-1}Q_o\widetilde m_r,
+}
+\tag{31.1}
+\]
+and finally
+\[
+\boxed{
+\widetilde\kappa(x,r)
+=
+\tau(x,r)+L_{x,r}\widetilde\delta_r(x+r).
+}
+\tag{31.2}
+\]
+
+### Theorem 8 — resolved continuity
+
+On the finite background domain where every affine link remains invertible,
+the map
+\[
+(A,e,\Xi)\longmapsto
+(\widetilde C,\widetilde a,\widetilde S,
+\widetilde\delta,\widetilde\kappa)
+\]
+is continuous in all resolved variables.
+
+No Moore–Penrose inverse and no normalized full graph operator is used.
+
+### Theorem 9 — cluster completeness
+
+Take any convergent background sequence for which the canonical coefficient
+projectors and fixed-kernel projectors have a joint cluster
+\[
+P_{H_{n,y}}\to\Pi_{*,y},
+\qquad
+Q_n\to Q_*.
+\]
+Then the canonical selected outputs converge to the resolved formula
+\[
+(\widetilde\delta,\widetilde\kappa)
+\]
+evaluated at
+\[
+\Xi_*=((\Pi_{*,y})_y,Q_*).
+\]
+
+Thus the double-projector package does not invent a smoothing rule. It records
+exactly the data needed to represent every existing cluster value.
+
+Conversely, §27 realizes every local \(\Pi_y\) by synthesis perturbations, and
+§30 realizes every \(Q_o\) at trivial holonomy by actual invertible loop
+perturbations.
+
+### Minimality
+
+For a fixed \((B,S)\), two local projectors are observationally equivalent for
+the sourced chain precisely when
+\[
+S\Pi_1=S\Pi_2.
+\]
+For a fixed transported mean, two selector projectors are equivalent precisely
+when
+\[
+Q_1m=Q_2m.
+\]
+
+Those are the smallest **readout-dependent** quotients.
+
+But they are not structural data: they depend on \(S\) and on the selected
+mean. If the interface must work uniformly for arbitrary solder synthesis and
+arbitrary source mean, the projectors themselves cannot be quotiented further.
+Indeed, if
+\[
+\Pi_1\ne\Pi_2,
+\]
+one can choose an \(S\) separating them; and if
+\[
+Q_1\ne Q_2,
+\]
+one can choose an \(m\) separating them.
+
+Therefore the minimal non-tautological universal memory is exactly:
+
+- a lost-direction subspace \(W_y\le K_y\) at each local rank seam;
+- an approach fixed subspace \(H_*\le\mathcal H_o\) at the selector seam.
+
+No full-fibre comparison \(J:V\to V\) is required.
+
+---
+
+## 32. Exact covariance and control behavior of the resolved package
+
+The local projector \(\Pi\) lives in the labelled coefficient space. Under an
+invertible output-frame transformation
+\[
+B\mapsto gB,\qquad S\mapsto gS,
+\]
+the coefficient kernel is unchanged, so the same \(\Pi\) is admissible and
+\[
+\widetilde C\mapsto g\widetilde C.
+\]
+
+At the selector seam,
+\[
+Q_o\mapsto g_oQ_og_o^{-1}
+\]
+under the observer-congruent frame law. Hence (31.1)–(31.2) transform
+covariantly. The resolution does not introduce a preferred output frame.
+
+### Exact gauge is resolution-independent
+
+On the exact translation-gauge chart,
+\[
+S=TB
+\]
+for the frozen chart comparison \(T\). Every admissible \(\Pi\) satisfies
+\(B\Pi=B\), so
+\[
+\boxed{
+S\Pi
+=
+TB\Pi
+=
+TB
+=
+S.
+}
+\tag{32.1}
+\]
+Thus the local rank-resolution datum is invisible on exact gauge, including
+rank drops.
+
+### Flat and pure shift
+
+For the flat and constant pure-shift local synthesis,
+\[
+S=0.
+\]
+Hence
+\[
+S\Pi=0
+\]
+for every local resolution lift. The local projector cannot spoil these
+controls.
+
+### Coframe-only Nyquist/corner backgrounds expose the unavoidable tradeoff
+
+For a coframe-only point,
+\[
+B=0,\qquad S\ne0.
+\]
+Then
+\[
+\mathfrak P(B)
+\]
+contains **every** orthogonal projector on \(E\).
+
+The intrinsic lift
+\[
+\Pi_{\rm int}=0
+\]
+gives
+\[
+\widetilde C=0
+\]
+and therefore preserves the raw Nyquist/corner response exactly, as required
+by PR #120.
+
+But the maximal full-rank approach lift
+\[
+\Pi=I
+\]
+gives
+\[
+\widetilde C=S.
+\]
+
+Therefore:
+\[
+\boxed{
+\text{a nonzero coframe-only raw response and invariance under every nearby
+affine activation cannot both hold.}
+}
+\tag{32.2}
+\]
+
+This is not a defect of the resolution. It is the explicit content of
+\(M=S(E)\ne0\) at the coframe-only point.
+
+The raw controls therefore force one of two interpretations:
+
+1. the admissible physical background family near such a point is restricted;
+2. the approach/resolution datum is retained.
+
+A pointwise rule cannot have both the intrinsic raw value and every
+rank-changing limit.
+
+### Global flat control
+
+At the flat selector,
+\[
+m=0.
+\]
+Therefore every \(Q\) gives the same selected correction. The maximal
+holonomy-resolution fibre is invisible.
+
+By contrast, a nonzero transported mean can make a trivial-holonomy endpoint
+selector-sensitive, exactly as the archive witness in §13 demonstrates.
+
+---
+
+## 33. No finite-jet dressing can manufacture the missing rank memory
+
+The planned finite graded coframe dressing is constrained at first order by
+the already-owned \(H(e)\), and any future second derivative would supply a
+finite higher jet.
+
+Section 29 gives a direct firewall:
+
+\[
+\boxed{
+\text{no finite parameter-jet order can universally reconstruct }
+\Pi_*.
+}
+\tag{33.1}
+\]
+
+The selector seam has the same obstruction. For any finite \(k\), take a loop
+family
+\[
+G_t
+=
+I+t^{k+1}T.
+\]
+It has the same \(k\)-jet at zero as the identity loop, while for every
+nonzero \(t\)
+\[
+\operatorname{Fix}G_t=\ker T.
+\]
+Using the flat \(C^\infty\) function \(e^{-1/t^2}\) makes even the full Taylor
+jet at zero equal to the identity family while keeping the nonzero-\(t\)
+fixed space \(\ker T\).
+
+Hence neither local projector memory nor global fixed-space memory is selected
+by a universal finite background jet.
+
+This separates two tasks that could otherwise be conflated:
+
+- constructing a finite dressing with the correct first derivative;
+- selecting a global rank-transition continuation across singular strata.
+
+Success at the first does not solve the second.
+
+---
+
+## 34. The nilpotent matter letter inherits every surviving \(\kappa\) jump
+
+The repository already Lean-owns
+\[
+T_b
+=
+I+C^\dagger(b)P_0
+\]
+and
+\[
+T_bT_c=T_{b+c}.
+\]
+It also owns
+\[
+b\ne0\Longrightarrow T_b\ne I.
+\]
+
+These imply injectivity:
+\[
+\boxed{
+T_b=T_c\iff b=c.
+}
+\tag{34.1}
+\]
+Indeed equality gives
+\[
+T_{b-c}=T_bT_{-c}=I,
+\]
+hence \(b-c=0\).
+
+Therefore two distinct cluster mismatches
+\[
+\kappa_*\ne\kappa_0
+\]
+produce two distinct conditional matter letters
+\[
+\boxed{
+T_{\kappa_*}\ne T_{\kappa_0}.
+}
+\tag{34.2}
+\]
+
+The existing conjugation no-go strengthens this. For any invertible Fock-space
+linear equivalence \(\mathcal F\),
+\[
+\mathcal F T_b\mathcal F^{-1}=I
+\]
+is impossible when \(b\ne0\).
+
+Consequently, if one unresolved background has two selected cluster values
+whose difference is nonzero, applying the **same** finite dressing cannot
+identify the two nilpotent responses:
+\[
+\boxed{
+\mathcal F T_{\kappa_*}\mathcal F^{-1}
+=
+\mathcal F T_{\kappa_0}\mathcal F^{-1}
+\Longrightarrow
+\kappa_*=\kappa_0.
+}
+\tag{34.3}
+\]
+
+A branch-dependent dressing could compensate only by carrying the same
+resolution/approach memory itself.
+
+This is the first direct propagation of the rank-transition stability problem
+into the already-owned affine-sensitive matter channel.
+
+---
+
+## 35. Consequence for the finite graded coframe-dressing gate
+
+The planned
+\`EXP-A4D-FINITE-GRADED-COFRAME-DRESSING\`
+task remains mathematically open, but its typing can now be sharpened.
+
+The dressing may still be constructed on arbitrary pointwise coframes.
+Nothing here obstructs a finite \(\mathcal F_e\) with
+\[
+DW_0=H.
+\]
+
+What is ruled out is a stronger silent assumption:
+
+> a single-valued unresolved dressing can consume the current selected
+> \(\kappa(A,e)\) continuously across every rank/holonomy transition merely
+> because its flat first derivative is correct.
+
+The exact alternatives are now:
+
+### Stable-domain route
+
+Restrict the mixed A/e input family so that the local lost-direction criterion
+and the applied fixed-kernel criterion hold. Then the existing selected
+\(\kappa\) is continuous and may be passed to \(T_\kappa\).
+
+### Resolved-background route
+
+Type the mixed coupling on
+\[
+(A,e,\Xi),
+\qquad
+\Xi=((\Pi_y)_y,Q_o),
+\]
+and use
+\[
+\widetilde\kappa(A,e,\Xi).
+\]
+Then the selected mismatch and \(T_{\widetilde\kappa}\) are continuous in the
+resolved data.
+
+### Forgetful route
+
+Make the dressing insensitive to every \(\kappa\)-jump direction. The
+quotient/corner result of §17 already shows that this cannot preserve all
+mandatory raw distinctions in the current interface.
+
+Because \(T_\kappa\) is injective, replacing \(\kappa\) by the nilpotent
+matter letter does not create a fourth route.
+
+Thus the stability research does not block the graded-dressing task, but it
+removes an ambiguity in its future statement of domain:
+
+\[
+\boxed{
+\text{unresolved arbitrary background}
+\quad\text{vs}\quad
+\text{stable admissible family}
+\quad\text{vs}\quad
+\text{rank/holonomy-resolved background}.
+}
+\tag{35.1}
+\]
+
+Those are now mathematically different objects and must not be conflated.
+
+---
+
+## 36. External mathematical cross-check
+
+The local projector can be written in standard finite-dimensional notation as
+\[
+P_{H_B}=B^\dagger B,
+\]
+where \(B^\dagger\) is the Moore–Penrose inverse.
+
+Classical matrix-analysis literature records the familiar fact that
+Moore–Penrose inversion is continuous on constant-rank strata and generally
+fails at rank changes. A useful published pointer is the discussion in:
+
+- *A note on the convexity of the Moore–Penrose inverse*,
+  Linear Algebra and its Applications (2018), which explicitly recalls that
+  continuity is essentially equivalent to constant rank and cites the
+  standard Campbell–Meyer treatment.
+
+The D0 result is deliberately sharper for the present composed observable:
+even when \(B^\dagger\) and \(B^\dagger B\) are discontinuous,
+\[
+SB^\dagger B
+\]
+can remain continuous. The exact weakening is not “approximately constant
+rank” but the lost-direction annihilation condition
+\[
+S_0(W_{\rm lost})=0.
+\]
+
+So the repository result is consistent with the standard pseudoinverse
+boundary while identifying the strictly weaker continuity condition relevant
+to the sourced diagonal chain.
+
+---
+
+## 37. Strengthened synthesis after continuation
+
+The official task terminal remains
+
+\[
+\texttt{SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY-CRITERION-CONSTRUCTED}.
+\]
+
+The continuation sharpens its meaning:
+
+1. the singularity admits an exact finite projector-incidence resolution;
+2. the vertical residual map \(D\) is the exact local universal instability
+   radius/operator;
+3. the selected parallel correction \(h_o^*\) is the exact dual selector
+   instability radius;
+4. rank integers and finite jets do not determine either resolution datum;
+5. the double projector datum \(\Xi\) is sufficient to make the full selected
+   finite interface continuous;
+6. exact gauge is independent of the local resolution lift;
+7. raw coframe-only Nyquist/corner data force genuine approach sensitivity
+   unless the admissible family is restricted;
+8. the injective nilpotent matter letter \(T_\kappa\) faithfully propagates
+   every surviving mismatch jump;
+9. a future finite graded dressing must therefore declare whether it lives on
+   a stable unresolved domain or on the resolved background space.
+
+This is the strongest research conclusion available from the current landed
+objects without actually starting the separate finite graded dressing task.
