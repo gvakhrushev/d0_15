@@ -136,6 +136,8 @@ GitHub Lean CI uses the cache built into `leanprover/lean-action@v1`; do not lay
 
 The built-in Lake cache key is pinned by runner OS/architecture, `lean-toolchain`, `lake-manifest.json`, and commit SHA with compatible-prefix fallback. Cache reuse is acceleration, not proof evidence.
 
+Lean workflow concurrency is scoped by PR/ref **and head SHA**. This prevents a stuck runner for an obsolete PR head from blocking a newer Ready head; duplicate events for the same head still share one concurrency group.
+
 ## CI cost policy
 
 - Feature-branch pushes no longer run a second duplicate CI in addition to the
