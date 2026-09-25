@@ -45,6 +45,23 @@ LEGACY_SAFE = {
     "wrk/a4d-observer-frame-car-lift",           # pre-flow PR #87; canonical task relaunched from current main
     "draft/a4d-primal-dual-parent-algebra",       # theorem surface fully subsumed by main
     "work/geo-car-dirac-parity",                  # theorem surface subsumed; main has extra Dirac aliases
+
+    # Audited A4D relaunch/squash tails; canonical payloads are landed on main.
+    "work/a4d-pure-gauge-dressing-torsor-passport",  # lifecycle-only draft superseded by merged PR #159
+    "wrk/a4d-crossed-dressing-mismatch",              # memo/certificate exact on main via merged PR #146
+    "wrk/a4d-quotient-saturation-canonical",          # exact canonical modules landed via merged PR #158
+    "wrk/a4d-quotient-saturation-passport",           # exact canonical modules landed via merged PR #158
+    "wrk/a4d-quotient-saturation-passport-r2",        # older implementation superseded by merged PR #158
+    "wrk/a4d-quotient-saturation-passport-v3",        # exact canonical modules landed via merged PR #158
+    "wrk/a4d-relative-ae-graphification-closure",     # modules exact on main via merged PR #156
+    "wrk/a4d-relative-ae-graphification-closure-v2",  # modules exact on main via merged PR #156
+    "wrk/a4d-relative-ae-graphification-closure-v3",  # modules exact on main via merged PR #156
+    "wrk/a4d-relative-ae-graphification-closure-v4",  # modules exact on main via merged PR #156
+    "wrk/a4d-resolved-correlated-action-passport",    # module exact on main via merged PR #153
+    "wrk/a4d-resolved-correlated-action-passport-v2", # module exact on main via merged PR #153
+    "wrk/a4d-resolved-correlated-action-passport-v3", # module exact on main via merged PR #153
+    "wrk/a4d-sourced-mismatch-factor-passport",       # module exact on main via merged PR #147
+    "wrk/a4d-sourced-mismatch-factor-passport-v2",    # module exact on main via merged PR #147
 }
 
 

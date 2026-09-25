@@ -7,8 +7,8 @@ Scope:
 - verifies the K(9,11,13) specialization, including rank(B)=33 and dim ker(B)=326;
 - verifies negative controls separating a variational gauge completion from post-hoc Laplacianization.
 
-This certificate does NOT prove the arbitrary-graph theorems. Those remain Lean targets in
-02_REGISTRY/frontier/A1_COMPENSATOR_NOETHER_RESULT.md.
+This certificate does NOT itself prove the arbitrary-graph theorems. Their formal owner is
+03_FORMALIZATION/D0/Gravity/A2CompensatorNoether.lean.
 """
 from fractions import Fraction as Q
 
