@@ -10,23 +10,21 @@ EXPENSIVE / DEEP RESEARCH
 
 ## State
 
-BLOCKED
+PLANNED
 
 ## Start gate
 
-NOT SATISFIED.
+SATISFIED.
 
-Do not start until
+The gate is opened by the landed relative A/e comparison stack:
 
-`EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE`
+- PR #123 lands the global rank-stratified span/relation primitive;
+- PR #126 Lean-owns the canonical span/relation package across the degenerate locus;
+- PR #125 owns the conditional sourced-diagonal transport laws;
+- PR #127 proves that the sourced chain factors through the active-span restriction,
+  so arbitrary full-fibre extension freedom is not an input to that chain.
 
-has landed a usable global relative A/e comparison primitive, or the repository
-has explicitly adopted the canonical span/relation/rank-stratified datum
-required by that terminal.
-
-PR #120 does **not** open this gate: it constructs sourced diagonal transport
-and removes curl/harmonic freedom only **conditional** on a supplied relative
-A/e comparison map. The singular/degenerate extension remains unresolved.
+PR #120 alone did **not** open this gate; the merged #123/#126 package does.
 
 ## Purpose
 

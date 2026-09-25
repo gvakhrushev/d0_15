@@ -64,7 +64,7 @@
       "id": "EXP-A4D-FINITE-GRADED-COFRAME-DRESSING",
       "class": "EXPENSIVE",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "BLOCKED",
+      "state": "PLANNED",
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
