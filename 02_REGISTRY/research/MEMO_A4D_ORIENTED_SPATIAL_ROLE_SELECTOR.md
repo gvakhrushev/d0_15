@@ -265,3 +265,11 @@ the finite insertion to **unique up to overall scale**.
 
 No claim is made here about that overall normalization, a continuum Einstein
 equation, time, or any quadratic-curvature action.
+
+
+## 7. Validation boundary
+
+The exact certificate is finite and exhaustive for the selector question: it checks all
+36 pairs of a spatial A-stabilizer permutation and a degree-two Role face. Repository
+CI/guard status is a separate execution check and does not enter the mathematical
+sign identity.
