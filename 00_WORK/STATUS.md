@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 1 | 0 | 0 | 0 | 1 | 0 / 2 |
 | EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
-| WORKER | 1 | 1 | 0 | 0 | 2 | 1 / 5 |
-| **Total** | **3** | **1** | **0** | **0** | **4** | **1 / 10** |
+| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
+| **Total** | **3** | **0** | **0** | **0** | **3** | **0 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -18,7 +18,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-A4D-VARIATIONAL-FRONTIER | CONTROL | PLANNED | ROOT | - |
 | EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS | EXPENSIVE | PLANNED | CTRL-A4D-VARIATIONAL-FRONTIER | D0-AFFINE-CARTAN-PATH-CLOSURE-001, D0-LOCATED-PRIMAL-DUAL-CELL-001, D0-LOCATED-PRIMAL-DUAL-STAR-001, D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-AFFINE-CURVATURE-CERT | WORKER | PLANNED | CTRL-A4D-VARIATIONAL-FRONTIER | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
-| WRK-A4D-BIVECTOR-COMMUTANT-CERT | WORKER | IN_PROGRESS | CTRL-A4D-VARIATIONAL-FRONTIER | D0-LOCATED-PRIMAL-DUAL-STAR-001, D0-CONSTITUTIVE-KERNEL-FAMILY-001 |
 
 ## Registry Health & Metrics
 

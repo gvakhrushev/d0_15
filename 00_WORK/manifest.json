@@ -48,18 +48,6 @@
       ],
       "exit_condition": "An exact-arithmetic research certificate reproduces the affine and mixed plaquette formulas, ordered cube identity and trace-blindness boundary with reachable negative mutations and no claim-status promotion.",
       "brief": "00_WORK/tasks/WRK-A4D-AFFINE-CURVATURE-CERT.md"
-    },
-    {
-      "id": "WRK-A4D-BIVECTOR-COMMUTANT-CERT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-LOCATED-PRIMAL-DUAL-STAR-001",
-        "D0-CONSTITUTIVE-KERNEL-FAMILY-001"
-      ],
-      "exit_condition": "An exact-rational certificate reproduces the Role-bivector Lorentz commutant dimensions 2 and conditionally 1 after an odd Role swap, identifies the Hodge-like complex structure, and preserves the symmetry-status caveat.",
-      "brief": "00_WORK/tasks/WRK-A4D-BIVECTOR-COMMUTANT-CERT.md"
     }
   ]
 }
