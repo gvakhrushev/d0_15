@@ -39,17 +39,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS.md"
     },
     {
-      "id": "WRK-A4D-AFFINE-CURVATURE-CERT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "An exact-arithmetic research certificate reproduces the affine and mixed plaquette formulas, ordered cube identity and trace-blindness boundary with reachable negative mutations and no claim-status promotion.",
-      "brief": "00_WORK/tasks/WRK-A4D-AFFINE-CURVATURE-CERT.md"
-    },
-    {
       "id": "WRK-A4D-BIVECTOR-COMMUTANT-CERT",
       "class": "WORKER",
       "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
