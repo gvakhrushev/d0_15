@@ -21,6 +21,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Mathlib dependencies are handled by lean-action's mathlib cache below.
+      # This cache is only for D0's own Lake build outputs (.olean/.ilean/etc).
+      # The exact key is per commit; restore-keys deliberately reuse the newest
+      # compatible D0 build from this PR or, on a miss, from the default branch.
+      - name: Restore D0 Lake build cache
+        id: d0-lake-cache
+        uses: actions/cache@v4
+        with:
+          path: 03_FORMALIZATION/.lake/build
+          key: d0-lake-build-v1-${{ runner.os }}-${{ hashFiles('03_FORMALIZATION/lean-toolchain', '03_FORMALIZATION/lake-manifest.json', '03_FORMALIZATION/lakefile.lean') }}-${{ github.sha }}
+          restore-keys: |
+            d0-lake-build-v1-${{ runner.os }}-${{ hashFiles('03_FORMALIZATION/lean-toolchain', '03_FORMALIZATION/lake-manifest.json', '03_FORMALIZATION/lakefile.lean') }}-
+
+      - name: Report D0 cache result
+        run: echo "D0_LAKE_CACHE_HIT=${{ steps.d0-lake-cache.outputs.cache-hit }}"
+
       - name: Build release proof closure
         uses: leanprover/lean-action@v1
         with:
