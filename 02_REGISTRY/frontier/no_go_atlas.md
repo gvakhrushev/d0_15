@@ -46,8 +46,22 @@ Each no-go states its **admissible completion class** (the exact object whose ad
 - admissible completion class: a typed covariant degree-dual/coframe-curvature pairing or another explicitly selected non-character observable
 - durable packet: `02_REGISTRY/research/MEMO_A4D_CURVATURE_ACTION_GRAVITY_GATE.md`
 
-### A4D-CURVATURE-DOES-NOT-SELECT-ACTION
-- proved by finite countermodel: locality, finite gauge covariance and the tested lattice symmetries admit inequivalent actions with inequivalent physical Hessian spectra, not related by overall rescaling
-- admissible completion class: a natural finite variational selection law fixing the coframe-curvature pairing and excluding or fixing competing `R^2`, translation-square, volume and parity-odd terms
-- durable packet: `02_REGISTRY/research/MEMO_A4D_CURVATURE_ACTION_GRAVITY_GATE.md`
+### A4D-BROAD-CURVATURE-ACTION-NONSELECTION
+- proved by finite countermodel: broad locality, finite gauge covariance and the tested lattice symmetries admit inequivalent quadratic actions with inequivalent Hessian spectra
+- scope repair: this does **not** prove that the narrower Role-typed linear-curvature insertion `e∧e∧F` has a free coefficient, because the old countermodel did not impose that insertion typing or the full Lorentz/Role symmetry
+- admissible completion class: classify the actual Role-bivector insertion Hom-space and its mandatory symmetry group
+- durable packets: `02_REGISTRY/research/MEMO_A4D_CURVATURE_ACTION_GRAVITY_GATE.md`, `02_REGISTRY/research/MEMO_A4D_AFFINE_CONJUGACY_ROLE_BIVECTOR_INSERTION_AUDIT.md`
 
+
+
+### A4D-AFFINE-TRANSLATION-BINARY-NOGO
+- proved in audited research: under fixed linear holonomy `P`, translation shifts obey `t ~ t + (I-P)c`; therefore the residual datum is `[t] in coker(I-P)`
+- killed shortcut: `P != I => t ~ 0` is false whenever `I-P` is singular and `t` lies outside its image
+- admissible completion class: none for the classification itself; any scalar action on the residual quotient must be constructed stratum-by-stratum and respect the centralizer action
+- durable packet: `02_REGISTRY/research/MEMO_A4D_AFFINE_CONJUGACY_ROLE_BIVECTOR_INSERTION_AUDIT.md`
+
+### A4D-ROLE-INSERTION-SELECTOR-BOUNDARY
+- exact control calculation: proper Lorentz covariance on the Role bivector carrier leaves a 2-dimensional commutant; adding the odd spacelike Role swap reduces it to dimension 1
+- unresolved boundary: existing D0 work explicitly distinguishes simultaneous Role relabeling from local Lorentz covariance, so the odd swap cannot yet be imposed as a physical selector by fiat
+- admissible completion class: a theorem identifying the mandatory symmetry group of the finite `e∧e∧F` insertion, together with the typed Role-exterior weld
+- durable packet: `02_REGISTRY/research/MEMO_A4D_AFFINE_CONJUGACY_ROLE_BIVECTOR_INSERTION_AUDIT.md`
