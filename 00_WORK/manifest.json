@@ -70,17 +70,6 @@
       ],
       "exit_condition": "Lean owns exact right-isotropy torsor descent for pure-gauge dressing representatives, including horizontal-letter invariance under commuting isotropy, constitutive-shadow invariance under orthogonal isotropy, and first-order constitutive invariance under skew tangent shifts, with a negative control separating orthogonality from translation commutation.",
       "brief": "00_WORK/tasks/WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT.md"
-    },
-    {
-      "id": "WRK-A4D-QUOTIENT-SATURATION-PASSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns the same-fibre quotient graph criterion, quotient transport and loop coinvariant conditions, finite saturation/minimality, and the exact full-fibre collapse witness, without assigning a physical quotient interpretation.",
-      "brief": "00_WORK/tasks/WRK-A4D-QUOTIENT-SATURATION-PASSPORT.md"
     }
   ]
 }
