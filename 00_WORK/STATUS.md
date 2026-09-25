@@ -6,16 +6,19 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
-| CONTROL | 0 | 0 | 0 | 0 | 0 | 0 / 2 |
-| EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
-| WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
-| **Total** | **0** | **0** | **0** | **0** | **0** | **0 / 10** |
+| CONTROL | 1 | 0 | 0 | 0 | 1 | 0 / 2 |
+| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
+| WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
+| **Total** | **4** | **0** | **0** | **0** | **4** | **0 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
-| *(none)* | - | - | - | - |
+| CTRL-A4D-VARIATIONAL-FRONTIER | CONTROL | PLANNED | ROOT | - |
+| EXP-A4D-FINITE-COFRAME-CURVATURE-VARIATIONAL-LAW | EXPENSIVE | PLANNED | CTRL-A4D-VARIATIONAL-FRONTIER | D0-AFFINE-CARTAN-PATH-CLOSURE-001, D0-LOCATED-PRIMAL-DUAL-CELL-001, D0-LOCATED-PRIMAL-DUAL-STAR-001, D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
+| WRK-A4D-AFFINE-CURVATURE-CERT | WORKER | PLANNED | CTRL-A4D-VARIATIONAL-FRONTIER | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
+| WRK-A4D-ACTION-NONSELECTION-CERT | WORKER | PLANNED | CTRL-A4D-VARIATIONAL-FRONTIER | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-CONSTITUTIVE-KERNEL-FAMILY-001 |
 
 ## Registry Health & Metrics
 
