@@ -44,35 +44,30 @@ or an explicitly equivalent affine-point/origin primitive. The repository must e
 Current lanes are intentionally ordered:
 
 ```text
-PR #113 nilpotent affine response + grading firewall
-  → LEAN-OWNED
+PR #113 / #115 / #116 / #118 / #119
+  → affine response, covariance, conditional mismatch, junction boundary,
+    and scoped local-candidate obstruction LEAN-OWNED
 
-PR #115 affine-origin covariance boundary
-  → LEAN-OWNED
-
-PR #116 conditional transported-reference mismatch
-  → Lean ownership landing/reconciled
-
-PR #114 reference-leg research
-  → SOLDER-REFERENCE-LEG-REQUIRES-NEW-GEOMETRIC-SELECTION-PRINCIPLE
+PR #117
+  → REFERENCE-SELECTION-REQUIRES-NEW-JUNCTION-OVERLAP-PRIMITIVE
 
 next heavy research
-  → EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE
-  → derive one junction/overlap/minimality/basepoint principle that kills both
-    z_curl and z_harm freedoms
+  → EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW
+  → derive the diagonal Role-overlap law and its sourced labelled transport
+  → it must kill both z_curl and z_harm
 
 parallel theorem-ready formalization
-  → WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY
-  → WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO
+  → WRK-A4D-ROLE-OVERLAP-TWISTED-COCYCLE
+  → WRK-A4D-OBSERVER-QUADRATIC-REFERENCE-NOGO
 
 arbitrary-background finite graded E dressing
   → EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
-  → BLOCKED until the labelled reference selector actually lands
+  → BLOCKED until a usable diagonal overlap/source law actually lands
 ```
 
 The current durable synthesis is
 
-`02_REGISTRY/research/SYNTHESIS_A4D_LABELLED_REFERENCE_SELECTION_FRONTIER.md`.
+`02_REGISTRY/research/SYNTHESIS_A4D_DIAGONAL_OVERLAP_FRONTIER.md`.
 
 Two typing firewalls are now central:
 
@@ -135,13 +130,14 @@ Current frontier labels:
 
 ```text
 LABELLED-LIST-CHAINSTEP-HOLONOMY-DESCENT-SKELETON-LEAN-OWNED
-CHANNEL-L-EXTERIOR-AFFINE-SHIFT-BLINDNESS-LEAN-OWNED
 AFFINE-TRANSLATION-SITE-RESPONSE-LEAN-OWNED
 AFFINE-ORIGIN-COVARIANCE-BOUNDARY-LEAN-OWNED
 CONDITIONAL-TRANSPORTED-REFERENCE-MISMATCH-LEAN-OWNED
-SOLDER-REFERENCE-SECTION-NONSELECTION-CLASSIFIED
-LABELLED-REFERENCE-SELECTION-PRINCIPLE-OPEN
-FINITE-GRADED-E-DRESSING-BLOCKED-ON-REFERENCE-SELECTION
+REFERENCE-JUNCTION-COMPRESSION-BOUNDARY-LEAN-OWNED
+REFERENCE-LOCAL-CANDIDATE-NOGO-LEAN-OWNED
+REFERENCE-SELECTION-REQUIRES-NEW-JUNCTION-OVERLAP-PRIMITIVE
+DIAGONAL-JUNCTION-OVERLAP-LAW-OPEN
+FINITE-GRADED-E-DRESSING-BLOCKED-ON-DIAGONAL-OVERLAP
 ```
 
 Landed prerequisites:
@@ -164,50 +160,49 @@ PR #80 owns the theorem-ready second-order and scalar advective packages while r
 Active formalization lanes:
 
 ```text
-PR #113
-→ nilpotent affine T_b / R_nil + literal degree/parity boundary LEAN-OWNED
+PR #118
+→ exact two-link junction identity + endpoint-compression iff LEAN-OWNED
 
-PR #115
-→ full-affine origin covariance + linear-only solder translation defect LEAN-OWNED
+PR #119
+→ scoped constant source/target/shift candidate-class no-go LEAN-OWNED
 
-PR #116
-→ conditional kappa_q and T_(kappa_q) flat/cancellation/pure-shift controls
-→ landing after generated-view reconciliation
+MEMO_A4D_LABELLED_REFERENCE_SELECTION_PRINCIPLE
+→ WRK-A4D-ROLE-OVERLAP-TWISTED-COCYCLE
+→ Lean-own overlap decomposition, twisted cocycle, strict-cocycle obstruction,
+  and diagonal-variable mismatch form
 
-MEMO_A4D_SOLDER_REFERENCE_LEG_SECTION
-→ WRK-A4D-REFERENCE-JUNCTION-COMPRESSION-BOUNDARY
-→ Lean-own exact two-link junction identity and endpoint-compression iff criterion
-
-MEMO_A4D_SOLDER_REFERENCE_LEG_SECTION
-→ WRK-A4D-REFERENCE-LOCAL-CANDIDATE-NOGO
-→ Lean-own the scoped constant source/target/shift candidate-class obstruction
+MEMO_A4D_LABELLED_REFERENCE_SELECTION_PRINCIPLE
+→ WRK-A4D-OBSERVER-QUADRATIC-REFERENCE-NOGO
+→ Lean-own the exact gauge-vs-pure-shift obstruction for the canonical
+  background-independent observer-positive local quadratic
 ```
 
 Active fixed-level research lane:
 
 ```text
-MEMO_A4D_SOLDER_REFERENCE_LEG_SECTION  (#114)
-→ EXP-A4D-LABELLED-REFERENCE-SELECTION-PRINCIPLE
-→ introduce an independently motivated labelled-edge geometric selector
-→ it must eliminate both z_curl and z_harm and supply a junction/overlap law
+MEMO_A4D_LABELLED_REFERENCE_SELECTION_PRINCIPLE  (#117)
+→ EXP-A4D-DIAGONAL-JUNCTION-OVERLAP-LAW
+→ derive the diagonal overlap δ_r = Ω_rr
+→ derive its sourced labelled path-transport equation
+→ reject both z_curl and z_harm exactly
 ```
 
 Blocked next research lane:
 
 ```text
 EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
-→ do not start merely because #114 merged
-→ start only after a usable labelled-edge reference selector or explicitly
-  adopted equivalent geometric datum lands
-→ then classify a finite graded background dressing with exact pure-gauge
-  restriction and induced DW|_0 = H
+→ do not start merely because #117 merged
+→ start only after a usable diagonal overlap/source law or explicitly adopted
+  equivalent relative-A/e/basepoint/cycle datum lands
+→ then classify the finite graded background dressing
 ```
 
-PR #114 strengthens the frontier beyond "find q": the old normalization and
-pure-linear covariance controls do not select a unique section.  Conditional on
-one admissible seed, explicit curl and harmonic deformations preserve all old
-controls while changing transverse response.  The next task must therefore
-supply a new geometric principle, not another convenient formula.
+PR #117 reduces the entire remaining reference-selection freedom to the
+diagonal Role overlap.  The off-diagonal overlap algebra obeys an exact twisted
+cocycle, but the diagonal `δ_r = Ω_rr` remains free.  Observer positivity,
+homogeneous basepoint propagation, full-affine covariance and equivariance do
+not select it.  The next research must therefore derive a relative A/e source
+law, not another normalization or covariance condition.
 
 Fixed-level endpoint research is terminal in PR #84:
 
