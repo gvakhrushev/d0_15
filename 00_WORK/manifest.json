@@ -23,20 +23,6 @@
       "affected_claims": [],
       "exit_condition": "The Role-bivector insertion space is terminally classified as dimension one, dimension two, or blocked by one explicit typed weld/symmetry principle; both finite regression workers are merged or terminally scoped without scientific overclaim.",
       "brief": "00_WORK/tasks/CTRL-A4D-VARIATIONAL-FRONTIER.md"
-    },
-    {
-      "id": "EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-        "D0-LOCATED-PRIMAL-DUAL-CELL-001",
-        "D0-LOCATED-PRIMAL-DUAL-STAR-001",
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "The finite Role-typed linear-curvature insertion is uniquely selected up to scale, exactly classified as a two-dimensional family, or shown to require one precisely identified missing weld/symmetry principle.",
-      "brief": "00_WORK/tasks/EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS.md"
     }
   ]
 }
