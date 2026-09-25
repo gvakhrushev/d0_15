@@ -28,7 +28,7 @@
       "id": "WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1",
       "class": "WORKER",
       "parent": "CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-TRACEABILITY-STATUS-TAXONOMY-001",
         "D0-FINAL-BRIDGE-INDEX-001"
