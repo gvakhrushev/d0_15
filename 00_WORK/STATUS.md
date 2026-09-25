@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
+| EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
 | WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
-| **Total** | **1** | **2** | **0** | **0** | **3** | **2 / 10** |
+| **Total** | **2** | **2** | **0** | **0** | **4** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -18,6 +18,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-GRAVITY-DYNAMICS-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | EXP-A4D-FINITE-GRADED-COFRAME-DRESSING | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-HODGE-LINKS-001 |
+| EXP-A4D-SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY | EXPENSIVE | PLANNED | CTRL-GRAVITY-DYNAMICS-CLOSURE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 
 ## Registry Health & Metrics
 
