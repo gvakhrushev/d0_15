@@ -61,14 +61,16 @@ theorem predecessorSite_sourceSiteFromPredecessor
     (r : Role) (x : ArchiveRolePhaseGroup N) :
     predecessorSite N r (sourceSiteFromPredecessor N r x) = x := by
   simp only [predecessorSite, sourceSiteFromPredecessor, roleTranslateMinus_apply,
-    roleTranslatePlus_apply, add_sub_cancel]
+    roleTranslatePlus_apply, sub_eq_add_neg]
+  abel
 
 /-- Forward Role step after predecessor recovers the source site. -/
 theorem sourceSiteFromPredecessor_predecessorSite
     (r : Role) (y : ArchiveRolePhaseGroup N) :
     sourceSiteFromPredecessor N r (predecessorSite N r y) = y := by
   simp only [predecessorSite, sourceSiteFromPredecessor, roleTranslatePlus_apply,
-    roleTranslateMinus_apply, sub_add_cancel]
+    roleTranslateMinus_apply, sub_eq_add_neg]
+  abel
 
 /-! ## Thin supplied-δ κ wrappers (same formulas as #127; not re-proving independence) -/
 
@@ -107,10 +109,14 @@ theorem predecessorTorsion_eq_neg_lin_predecessorDefect
   intro y
   have hx : predecessorSite N r y = x :=
     predecessorSite_sourceSiteFromPredecessor r x
-  -- ρ = A⁻¹(v(x)) − v(y) = L⁻¹ v(x) − L⁻¹ b − v(y)
-  simp only [predecessorTorsion, predecessorDefect, AffineCartanMap.apply,
-    AffineCartanMap.inv_lin, AffineCartanMap.inv_shift, hx, map_sub, map_neg,
-    LinearEquiv.apply_symm_apply]
+  -- ρ = barV − barB − v(y); τ = b + L v(y) − v(x) = −L ρ
+  simp only [predecessorTorsion]
+  change (A x r).shift + (A x r).lin (solderLegVector N e y r) -
+      solderLegVector N e x r =
+    -(A x r).lin (predecessorDefect A e y r)
+  rw [predecessorDefect_eq_barV_sub_barB]
+  simp only [barV, barB, hx, map_sub, map_neg, map_add,
+    LinearEquiv.apply_symm_apply, sub_eq_add_neg]
   abel
 
 /-! ## Conditional κ from supplied sourced diagonal -/
@@ -132,7 +138,7 @@ theorem passportReferenceFromSuppliedDiagonal_matching_role
     (y : ArchiveRolePhaseGroup N) :
     passportReferenceFromSuppliedDiagonal e r δ y r =
       δ y + solderLegVector N e y r := by
-  simp only [passportReferenceFromSuppliedDiagonal, if_pos rfl]
+  simp only [passportReferenceFromSuppliedDiagonal, ↓reduceIte]
 
 /-- Diagonal overlap of the supplied-δ reference equals `δ` on the matching Role. -/
 theorem diagonalOverlap_passportReferenceFromSuppliedDiagonal
@@ -226,8 +232,9 @@ theorem sourced_mismatch_factors_as_lin_relativeDefect_add_parallelResidual
   intro y
   -- κ = L(δ − ρ) and ρ = a − R ⇒ δ − ρ = R + (δ − a) = R + h
   have hρ := predecessorDefect_eq_seed_sub_relativeDefect A e J y r
-  rw [sourcedConditionalMismatch_eq_lin_delta_sub_predecessorDefect, hρ]
-  simp only [parallelResidual]
+  rw [sourcedConditionalMismatch_eq_lin_delta_sub_predecessorDefect, hρ,
+    parallelResidual]
+  congr 1
   abel
 
 /-- Alias matching the memo boxed name `κ = L(R+h)`. -/
@@ -263,49 +270,53 @@ theorem sourced_mismatch_factor_flat_zero
     (r : Role) (x : ArchiveRolePhaseGroup N) :
     sourcedConditionalMismatch (flatAffineConnection N) (0 : LocalCoframeField N) r
         (fun _ => (0 : RoleSpace)) x = 0 := by
-  simp only [sourcedConditionalMismatch, passportConditionalMismatchFromSuppliedDelta,
+  simp [sourcedConditionalMismatch, passportConditionalMismatchFromSuppliedDelta,
     transportedReferenceMismatch, passportReferenceFromSuppliedDiagonal,
     flatAffineConnection, AffineCartanMap.apply, AffineCartanMap.one_lin,
     AffineCartanMap.one_shift, LinearEquiv.refl_apply, solderLegVector_zero]
-  abel
 
-/-- Pure-shift sanity: with `δ = 0` on pure shift / zero coframe the mismatch
-equals the shift `b`, while `R = 0` and `h = b` under zero comparison, so the
-passport recovers `κ = b = L(0 + b)`. Rejects reading `R = 0 ⇒ κ = 0`
-(memo §6 / §9.1). -/
-theorem sourced_mismatch_factor_pureShift_zeroDelta
+/-- Pure-shift with zero diagonal: κ = b (memo §9.1). -/
+theorem sourced_mismatch_factor_pureShift_zeroDelta_eq_shift
+    (b : RoleSpace) (r : Role) (x : ArchiveRolePhaseGroup N) :
+    sourcedConditionalMismatch (pureShiftAffineConnection N b)
+        (0 : LocalCoframeField N) r (fun _ => (0 : RoleSpace)) x = b := by
+  simp [sourcedConditionalMismatch, passportConditionalMismatchFromSuppliedDelta,
+    transportedReferenceMismatch, passportReferenceFromSuppliedDiagonal,
+    pureShiftAffineConnection, AffineCartanMap.apply, LinearEquiv.refl_apply,
+    solderLegVector_zero]
+
+/-- Under zero comparison on pure shift / zero coframe, relative defect vanishes. -/
+theorem sourced_mismatch_factor_pureShift_relativeDefect_zero
+    (b : RoleSpace) (r : Role) (y : ArchiveRolePhaseGroup N) :
+    relativeDefect (pureShiftAffineConnection N b) (0 : LocalCoframeField N)
+        (fun _ => (0 : RoleSpace →ₗ[ℝ] RoleSpace)) y r = 0 := by
+  simp [relativeDefect, deltaV, deltaB, barV, barB, predecessorSite,
+    pureShiftAffineConnection, solderLegVector_zero]
+
+/-- Under zero diagonal / zero comparison on pure shift, parallel residual is `b`. -/
+theorem sourced_mismatch_factor_pureShift_parallelResidual_eq_shift
+    (b : RoleSpace) (r : Role) (y : ArchiveRolePhaseGroup N) :
+    parallelResidual (pureShiftAffineConnection N b)
+        (fun _ => (0 : RoleSpace →ₗ[ℝ] RoleSpace))
+        (fun _ => (0 : RoleSpace)) y r = b := by
+  -- a = −barB = −b (lin = id); h = δ − a = b
+  simp [parallelResidual, diagonalSeed, deltaB, barB, predecessorSite,
+    pureShiftAffineConnection, LinearEquiv.refl_apply]
+
+/-- Passport instance on pure-shift / zero-δ: κ = L(R+h) with R=0, h=b. -/
+theorem sourced_mismatch_factor_pureShift_passport_instance
     (b : RoleSpace) (r : Role) (x : ArchiveRolePhaseGroup N) :
     let A := pureShiftAffineConnection N b
     let e : LocalCoframeField N := 0
     let J : ComparisonEndomorphismField N := fun _ => 0
     let δ : ArchiveRolePhaseGroup N → RoleSpace := fun _ => 0
-    let y := sourceSiteFromPredecessor N r x
-    sourcedConditionalMismatch A e r δ x = b ∧
-      relativeDefect A e J y r = 0 ∧
-      parallelResidual A J δ y r = b ∧
-      sourcedConditionalMismatch A e r δ x =
-        (A x r).lin (relativeDefect A e J y r + parallelResidual A J δ y r) := by
-  intro A e J δ y
-  have hκ : sourcedConditionalMismatch A e r δ x = b := by
-    simp only [sourcedConditionalMismatch, passportConditionalMismatchFromSuppliedDelta,
-      transportedReferenceMismatch, passportReferenceFromSuppliedDiagonal,
-      pureShiftAffineConnection, AffineCartanMap.apply, LinearEquiv.refl_apply,
-      solderLegVector_zero]
-    abel
-  have hR : relativeDefect A e J y r = 0 := by
-    simp only [relativeDefect, deltaV, deltaB, barV, barB, predecessorSite,
-      pureShiftAffineConnection, solderLegVector_zero, map_zero, sub_zero,
-      zero_sub, sub_self, LinearMap.zero_apply]
-  have hh : parallelResidual A J δ y r = b := by
-    -- a = −barB − J Δb = −L⁻¹ b = −b (lin = id); h = δ − a = b
-    simp only [parallelResidual, diagonalSeed, deltaB, barB, predecessorSite,
-      pureShiftAffineConnection, LinearEquiv.refl_apply, map_zero, sub_zero,
-      zero_sub, LinearMap.zero_apply]
-    abel
-  refine ⟨hκ, hR, hh, ?_⟩
-  simpa [hκ, hR, hh, pureShiftAffineConnection, LinearEquiv.refl_apply] using
-    (sourced_mismatch_factors_as_lin_relativeDefect_add_parallelResidual
-      A e J r δ x)
+    sourcedConditionalMismatch A e r δ x =
+      (A x r).lin
+        (relativeDefect A e J (sourceSiteFromPredecessor N r x) r +
+          parallelResidual A J δ (sourceSiteFromPredecessor N r x) r) := by
+  intro A e J δ
+  -- Direct specialization of the passport theorem (avoid simpa rewriting both sides).
+  exact sourced_mismatch_factors_as_lin_relativeDefect_add_parallelResidual A e J r δ x
 
 end
 
