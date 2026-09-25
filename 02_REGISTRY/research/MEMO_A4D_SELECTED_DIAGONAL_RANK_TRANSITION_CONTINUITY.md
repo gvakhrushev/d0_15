@@ -4475,3 +4475,69 @@ unresolved constitutive seam}.
 \end{array}}
 \tag{54.2}
 \]
+
+
+---
+
+## 55. Exact frame-retraction no-go checker
+
+This exact rational checker verifies the finite witness used in §§51–52.
+
+\`\`\`python
+from fractions import Fraction as Q
+
+checks=0
+def ck(x,label):
+    global checks
+    checks += 1
+    if not x:
+        raise AssertionError(label)
+
+def tr(a):
+    return [list(c) for c in zip(*a)]
+def mul(a,b):
+    return [[sum((x*y for x,y in zip(r,c)),Q(0))
+             for c in tr(b)] for r in a]
+def sub(a,b):
+    return [[x-y for x,y in zip(r,s)] for r,s in zip(a,b)]
+def diag(xs):
+    return [[Q(xs[i]) if i==j else Q(0) for j in range(len(xs))]
+            for i in range(len(xs))]
+
+eta=diag([1,-1,-1,-1])
+Lam=[
+    [Q(5,3),Q(4,3),Q(0),Q(0)],
+    [Q(4,3),Q(5,3),Q(0),Q(0)],
+    [Q(0),Q(0),Q(1),Q(0)],
+    [Q(0),Q(0),Q(0),Q(1)],
+]
+
+ck(mul(tr(Lam),mul(eta,Lam))==eta,
+   'rational AB boost is Lorentz')
+
+shift=sub(mul(eta,Lam),eta)
+ck(shift!=[[Q(0)]*4 for _ in range(4)],
+   'flat raw solder moves to nonzero coframe')
+
+ck(shift[0]==[Q(2,3),Q(4,3),Q(0),Q(0)],
+   'boosted A row exact')
+ck(shift[1]==[Q(-4,3),Q(-2,3),Q(0),Q(0)],
+   'boosted B row exact')
+
+# A periodic forward difference has zero cycle sum.
+L=3
+constant=shift[0][0]
+ck(L*constant != 0,
+   'nonzero constant coframe has nonzero period, hence is not exact')
+
+print(f'PASS: {checks} exact rational frame-retraction assertions')
+\`\`\`
+
+Expected output:
+
+\`\`\`text
+PASS: 5 exact rational frame-retraction assertions
+\`\`\`
+
+The memo now carries 123 exact rational assertions across four independent
+checkers, with no floating tolerances.
