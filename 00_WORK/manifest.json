@@ -49,7 +49,7 @@
       "id": "CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT",
       "class": "CONTROL",
       "parent": "ROOT",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [],
       "exit_condition": "The current raw solder carrier is either equipped with an exact finite affine node-gauge action compatible with the owned flat translation chart and the accepted star density, or a scoped no-go identifies the minimal carrier enlargement. The nonlinear physical quotient d_P is classified if the action exists; otherwise the first irreducible typed blocker is named.",
       "brief": "00_WORK/tasks/CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT.md"
