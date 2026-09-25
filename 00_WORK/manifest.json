@@ -59,17 +59,6 @@
       ],
       "exit_condition": "The post-classification mixed-background seam closes only after the rank/holonomy resolution datum Xi is functorially/minimally classified, an exact frame-covariant torsor/groupoid-valued finite dressing law on stable or resolved backgrounds is constructed or terminally obstructed, and the crossed coupling to the affine-sensitive T_kappa channel is classified for dependence on dressing/resolution moduli. No Hessian/stress/Einstein, physical time or golden refinement is admitted before this seam is closed.",
       "brief": "00_WORK/tasks/CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE.md"
-    },
-    {
-      "id": "WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns exact right-isotropy torsor descent for pure-gauge dressing representatives, including horizontal-letter invariance under commuting isotropy, constitutive-shadow invariance under orthogonal isotropy, and first-order constitutive invariance under skew tangent shifts, with a negative control separating orthogonality from translation commutation.",
-      "brief": "00_WORK/tasks/WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT.md"
     }
   ]
 }
