@@ -92,17 +92,6 @@
       ],
       "exit_condition": "Lean owns overlap decomposition, solder-difference compatibility, the twisted Role cocycle, strict-cocycle obstruction, reconstruction of q, and the diagonal-overlap form of the conditional mismatch, while the physical diagonal selection law remains open.",
       "brief": "00_WORK/tasks/WRK-A4D-ROLE-OVERLAP-TWISTED-COCYCLE.md"
-    },
-    {
-      "id": "WRK-A4D-OBSERVER-QUADRATIC-REFERENCE-NOGO",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns the exact minimizer of the canonical observer-positive local quadratic on the hostile Role-space ray and the resulting pure-gauge versus pure-shift incompatibility, scoped explicitly to this background-independent quadratic class.",
-      "brief": "00_WORK/tasks/WRK-A4D-OBSERVER-QUADRATIC-REFERENCE-NOGO.md"
     }
   ]
 }

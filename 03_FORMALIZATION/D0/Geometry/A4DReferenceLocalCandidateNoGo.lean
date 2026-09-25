@@ -1,10 +1,10 @@
-Review note: this module is a scoped no-go for the constant linear candidate class only.
-
 import Mathlib.Tactic
 import D0.Geometry.A4DTransportedReferenceMismatch
 
 /-!
 # Scoped constant source/target/shift linear reference-candidate no-go
+
+Review note: this module is a scoped no-go for the constant linear candidate class only.
 
 Lean-owns theorem-ready handoff A/B from
 `MEMO_A4D_SOLDER_REFERENCE_LEG_SECTION.md` (PR #114 research):
