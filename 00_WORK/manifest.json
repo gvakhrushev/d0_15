@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT.md"
     },
     {
-      "id": "WRK-A4D-SOURCED-MISMATCH-FACTOR-PASSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns the exact sourced mismatch factorization κ=L(R+h) from the landed predecessor defect, relative residual and sourced ansatz, with explicit source/predecessor indices and pull order.",
-      "brief": "00_WORK/tasks/WRK-A4D-SOURCED-MISMATCH-FACTOR-PASSPORT.md"
-    },
-    {
       "id": "WRK-A4D-RELATIVE-AE-GRAPHIFICATION-CLOSURE",
       "class": "WORKER",
       "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
