@@ -14,15 +14,5 @@
     "02_REGISTRY/frontier/no_go_atlas.md",
     "02_REGISTRY/frontier/verification_protocol.md"
   ],
-  "tasks": [
-    {
-      "id": "CTRL-A4D-VARIATIONAL-FRONTIER",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "REVIEW",
-      "affected_claims": [],
-      "exit_condition": "The Role-bivector insertion space is terminally classified as dimension one, dimension two, or blocked by one explicit typed weld/symmetry principle; both finite regression workers are merged or terminally scoped without scientific overclaim.",
-      "brief": "00_WORK/tasks/CTRL-A4D-VARIATIONAL-FRONTIER.md"
-    }
-  ]
+  "tasks": []
 }
