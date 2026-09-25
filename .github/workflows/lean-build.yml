@@ -22,43 +22,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # Pull-request checkout is a synthetic merge commit. Two levels are
-          # enough to compare it with its base parent without fetching history.
+          # PR checkout is a synthetic merge commit; main pushes are ordinary
+          # one-parent commits. Two levels are enough for HEAD^1..HEAD.
           fetch-depth: 2
 
       - name: Detect D0 formalization changes
         id: d0-formalization
         shell: bash
         run: |
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            if git diff --quiet HEAD^1 HEAD -- 03_FORMALIZATION; then
-              echo "changed=false" >> "$GITHUB_OUTPUT"
-              echo "No D0 formalization changes; full Lean build is unnecessary."
-            else
-              echo "changed=true" >> "$GITHUB_OUTPUT"
-            fi
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff --quiet HEAD^1 HEAD -- 03_FORMALIZATION; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No D0 formalization changes; full Lean build is unnecessary."
           else
-            # Main pushes and explicit dispatches are cache-seeding/integration runs.
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-
-      # Mathlib dependencies are handled by lean-action's mathlib cache below.
-      # This cache is only for D0's own Lake build outputs (.olean/.ilean/etc).
-      # The exact key is per commit; restore-keys deliberately reuse the newest
-      # compatible D0 build from this PR or, on a miss, from the default branch.
-      - name: Restore D0 Lake build cache
-        if: steps.d0-formalization.outputs.changed == 'true'
-        id: d0-lake-cache
-        uses: actions/cache@v4
-        with:
-          path: 03_FORMALIZATION/.lake/build
-          key: d0-lake-build-v1-${{ runner.os }}-${{ hashFiles('03_FORMALIZATION/lean-toolchain', '03_FORMALIZATION/lake-manifest.json', '03_FORMALIZATION/lakefile.lean') }}-${{ github.sha }}
-          restore-keys: |
-            d0-lake-build-v1-${{ runner.os }}-${{ hashFiles('03_FORMALIZATION/lean-toolchain', '03_FORMALIZATION/lake-manifest.json', '03_FORMALIZATION/lakefile.lean') }}-
-
-      - name: Report D0 cache result
-        if: steps.d0-formalization.outputs.changed == 'true'
-        run: echo "D0_LAKE_CACHE_HIT=${{ steps.d0-lake-cache.outputs.cache-hit }}"
 
       - name: Build release proof closure
         if: steps.d0-formalization.outputs.changed == 'true'
@@ -67,5 +46,8 @@ jobs:
           lake-package-directory: "03_FORMALIZATION"
           build-args: "D0.All"
           use-mathlib-cache: "true"
+          # lean-action already restores/saves the whole project .lake cache.
+          # Keep this explicit; do not layer a second actions/cache over .lake.
+          use-github-cache: "true"
           test: "false"
           lint: "false"
