@@ -61,8 +61,10 @@ Each no-go states its **admissible completion class** (the exact object whose ad
 - durable packet: `02_REGISTRY/research/MEMO_A4D_AFFINE_CONJUGACY_ROLE_BIVECTOR_INSERTION_AUDIT.md`
 
 ### A4D-ROLE-INSERTION-SELECTOR-BOUNDARY
-- terminal typing result: the Role-exterior weld exists; the exact finite linear-curvature insertion space under the owned proper-Lorentz action is 2-dimensional, `span{I,star}`
-- convention repair: the raw solder right action `Theta -> Theta E` must be matched to affine gauge by `h.lin=E^-1`, so solder and curvature bivectors transform in the same `wedge^2 E^-1` representation
-- killed shortcut: a fixed-base internal `det=-1` reflection is not an Einstein selector; it removes the star/Palatini-like channel and keeps the identity/Holst-like channel
-- remaining downstream selector question: transform the complete density under simultaneous odd spatial Role/site relabeling, including both the base complement-orientation sign and the internal star pseudo-sign; do not infer this from the internal commutant alone
+- terminal typed result: the Role-exterior weld exists and proper Lorentz covariance gives the exact 2-dimensional space `span{I,star}`
+- terminal canonical-natural selector result: under the owned zero-preserving A-stabilizer spatial Role/site relabeling, the complete oriented density obeys `K rho2(sigma)=sgn(sigma) rho2(sigma) K`; the exact system has rank 35 and uniquely leaves `star`
+- exhaustive finite control: all 6 elements of spatial `S3` × all 6 degree-two faces satisfy the complement/orientation identity; the identity channel transforms with parity sign while the star channel is invariant
+- killed shortcut: a fixed-base internal `det=-1` reflection is a different operation and selects `I`, not `star`
+- scope boundary: uniqueness is proved in the canonical A-stabilizer-natural oriented density class built from current owned inputs; an enlarged theory with a separately owned parity-breaking datum is outside this theorem
 - durable packet: `02_REGISTRY/research/MEMO_A4D_ROLE_BIVECTOR_INSERTION_UNIQUENESS.md`
+- exact checker: `02_REGISTRY/research/certificates/a4d_role_spatial_stabilizer_selector_check.py`
