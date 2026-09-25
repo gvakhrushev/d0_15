@@ -136,7 +136,7 @@ tree with a key pinned by runner OS/architecture, `lean-toolchain`,
 Do **not** add a second `actions/cache` layer over `.lake`: it duplicates
 restore/upload work and can make cache behavior harder to diagnose.
 
-The workflow additionally detects whether `03_FORMALIZATION/**` changed.
+The workflow additionally detects whether the **triggering commit** changed `03_FORMALIZATION/**`. On pull requests it compares the PR head commit to its own parent rather than inspecting GitHub's synthetic merge commit; on pushes it compares the event `before` and `after` SHAs.
 For PRs or main pushes that only alter CI/control metadata, the full
 `D0.All` build is skipped. Explicit `workflow_dispatch` always runs the
 integration build.
