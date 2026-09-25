@@ -1,9 +1,9 @@
 # A4D selected diagonal rank-transition continuity
 
-**Task:** \`EXP-A4D-SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY\`  
+**Task:** `EXP-A4D-SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY`  
 **Research PR:** #130  
-**Start baseline:** \`31bdb4bac83e5222dc6fa480e5819ae6b3a81e0a\`  
-**Terminal:** \`SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY-CRITERION-CONSTRUCTED\`  
+**Start baseline:** `31bdb4bac83e5222dc6fa480e5819ae6b3a81e0a`  
+**Terminal:** `SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY-CRITERION-CONSTRUCTED`  
 **Strength:** theorem-ready finite-dimensional continuity classification; no Lean source, no continuum limit, no finite graded dressing.
 
 ## 0. Verdict
@@ -132,7 +132,7 @@ does not preserve the current full readout.
 This memo uses the landed repository state only.
 
 The pointwise coefficient construction is owned by
-\`A4DRelativeAEComparisonSpan.lean\`. In the notation used here,
+`A4DRelativeAEComparisonSpan.lean`. In the notation used here,
 \[
 K=\ker\mathcal B,\qquad H=K^\perp,
 \]
@@ -143,7 +143,7 @@ D=\mathcal SP_K=\mathcal S-C.
 \]
 
 The sourced chain is owned conditionally by
-\`A4DConditionalSourcedDiagonalTransport.lean\`:
+`A4DConditionalSourcedDiagonalTransport.lean`:
 \[
 a_r=-\bar b_r-C\varepsilon_r,
 \]
@@ -156,11 +156,11 @@ and the sourced equation is equivalent to
 \]
 with \(h_r\) parallel.
 
-\`A4DActiveSpanExtensionIndependence.lean\` already removes arbitrary
+`A4DActiveSpanExtensionIndependence.lean` already removes arbitrary
 full-fibre extension freedom: only the action on actual affine increments is
 used downstream.
 
-\`A4DLabelledEndpointLocalityPassport.lean\` keeps endpoint descent separate:
+`A4DLabelledEndpointLocalityPassport.lean` keeps endpoint descent separate:
 endpoint locality of a specified labelled transport is equivalent to trivial
 labelled holonomy for that transport. This memo does not replace labelled
 paths by endpoints.
@@ -1733,19 +1733,19 @@ conflict.
 
 Run from repository root:
 
-\`\`\`bash
+```bash
 python - <<'CHECK'
 from pathlib import Path
 p = Path('02_REGISTRY/research/MEMO_A4D_SELECTED_DIAGONAL_RANK_TRANSITION_CONTINUITY.md')
 s = p.read_text().split('\n<!-- EXACT_CHECKER_BEGIN -->\n', 1)[1]
-code = s.split('\`\`\`python\n', 1)[1].split('\n\`\`\`', 1)[0]
+code = s.split('```python\n', 1)[1].split('\n```', 1)[0]
 exec(compile(code, str(p) + ':exact-checker', 'exec'))
 CHECK
-\`\`\`
+```
 
 <!-- EXACT_CHECKER_BEGIN -->
 
-\`\`\`python
+```python
 from fractions import Fraction as Q
 
 checks = 0
@@ -1937,13 +1937,13 @@ corner=e[1]
 ck(mv(qkill,corner)==o, "same quotient erases mandatory corner response")
 
 print(f"PASS: {checks} exact rational assertions; no floating tolerances")
-\`\`\`
+```
 
 Expected output:
 
-\`\`\`text
+```text
 PASS: 65 exact rational assertions; no floating tolerances
-\`\`\`
+```
 
 The checker is evidence for the named finite witnesses only. The general
 quantifiers are the linear-algebra proofs in the preceding sections.
@@ -1965,4 +1965,4 @@ The conceptual result is complete when this memo is in the PR:
 - the theorem-ready worker handoff is bounded.
 
 Before Ready, the exact checker and repository guards must be run, the task
-must self-retire, and the PR lifecycle must be changed to \`REVIEW\`.
+must self-retire, and the PR lifecycle must be changed to `REVIEW`.
