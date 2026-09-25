@@ -61,17 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Construct or terminally classify a frame/observer-covariant torsor/groupoid-valued finite dressing on a precisely stated stable unresolved or rank/holonomy-resolved background domain, with exact pure-gauge specialization modulo constant-potential isotropy, induced first derivative H(e), exact path/background composition, and retained Nyquist/corner/harmonic data.",
-      "brief": "00_WORK/tasks/EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID.md"
-    },
-    {
       "id": "EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
