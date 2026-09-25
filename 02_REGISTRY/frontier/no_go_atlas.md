@@ -34,3 +34,20 @@ Each no-go states its **admissible completion class** (the exact object whose ad
 - proved: algebra embeds but only downward Hilbert projections exist
 - admissible completion class: an isometric Dirac-compatible J_N
 
+## Research-terminal A4D boundaries (labels below are not registry claim IDs)
+
+### A4D-SHARED-F-EVEN-PLAQUETTE-FLAT
+- proved in research packet: every common single-valued shared-F link family `F T_kappa U F^-1` has exact plaquette `F T_(d1 kappa) F^-1`; at `kappa=0` the even plaquette is identity in all orders
+- admissible completion class: independent link-local linear transport not representable as one common site coboundary; the already-owned affine `L_r` carrier supplies this class
+- durable packet: `02_REGISTRY/research/MEMO_A4D_MIXED_LETTER_PLAQUETTE_CURVATURE.md`
+
+### A4D-AFFINE-TRACE-TRANSLATION-BLIND
+- proved in research packet: for the graded affine representation, ordinary polynomial character traces of `T_Theta rho(Lambda)` depend only on the diagonal/linear part and erase `Theta`
+- admissible completion class: a typed covariant degree-dual/coframe-curvature pairing or another explicitly selected non-character observable
+- durable packet: `02_REGISTRY/research/MEMO_A4D_CURVATURE_ACTION_GRAVITY_GATE.md`
+
+### A4D-CURVATURE-DOES-NOT-SELECT-ACTION
+- proved by finite countermodel: locality, finite gauge covariance and the tested lattice symmetries admit inequivalent actions with inequivalent physical Hessian spectra, not related by overall rescaling
+- admissible completion class: a natural finite variational selection law fixing the coframe-curvature pairing and excluding or fixing competing `R^2`, translation-square, volume and parity-odd terms
+- durable packet: `02_REGISTRY/research/MEMO_A4D_CURVATURE_ACTION_GRAVITY_GATE.md`
+
