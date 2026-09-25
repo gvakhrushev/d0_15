@@ -70,6 +70,17 @@
       ],
       "exit_condition": "After EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE lands a usable global relative A/e comparison primitive or the repository explicitly adopts the additional rank-stratified/span/relation datum required by its terminal, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e).",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
+    },
+    {
+      "id": "WRK-A4D-QUOTIENT-SATURATION-PASSPORT",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean owns the same-fibre quotient graph criterion, quotient transport and labelled-loop endpoint criteria, the finite saturation recursion and its minimal fixed point, and the exact witness in which a one-dimensional initial vertical defect saturates to the whole fibre, so quotient by that defect alone is not a fixed point.",
+      "brief": "00_WORK/tasks/WRK-A4D-QUOTIENT-SATURATION-PASSPORT.md"
     }
   ]
 }
