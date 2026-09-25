@@ -48,7 +48,7 @@
       "affected_claims": [
         "D0-HODGE-LINKS-001"
       ],
-      "exit_condition": "The fixed-level constitutive seam closes when the affine/overlap/sourced-transport algebra is Lean-owned; a global relative A/e comparison primitive or canonical span/relation substitute closes the singular/degenerate longitudinal comparison; and only then an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced first derivative H(e). Stress/Einstein, physical time and golden refinement remain downstream.",
+      "exit_condition": "The fixed-level constitutive seam closes only after the relative A/e span/relation primitive and sourced transport are formally owned, the classical kinematic interface is pressure-tested for necessity/sufficiency across graphification, active-span extension and labelled-holonomy descent, and then an arbitrary-background finite graded E dressing is constructed or terminally classified with exact pure-gauge specialization and induced first derivative H(e). Stress/Einstein, physical time and golden refinement remain downstream.",
       "brief": "00_WORK/tasks/CTRL-GRAVITY-DYNAMICS-CLOSURE.md"
     },
     {
@@ -103,6 +103,39 @@
       ],
       "exit_condition": "Lean owns the frame-invariant regular passport K=B^-1 C, the exact translation-chart reconstruction equations, and the explicit invertibility boundary under which the representative is unique, while the singular/degenerate extension remains open.",
       "brief": "00_WORK/tasks/WRK-A4D-REGULAR-AE-PASSPORT.md"
+    },
+    {
+      "id": "EXP-A4D-CLASSICAL-KINEMATIC-INTERFACE-PRESSURE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "The minimal necessary-and-sufficient kinematic interface from labelled relation geometry to an ordinary local/endpoint description is derived and survives a hostile independence matrix, with graphification/relative-defect vanishing, full-rank identifiability and labelled-holonomy descent separated rather than assumed equivalent.",
+      "brief": "00_WORK/tasks/EXP-A4D-CLASSICAL-KINEMATIC-INTERFACE-PRESSURE.md"
+    },
+    {
+      "id": "WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean proves that the currently owned sourced-diagonal chain depends only on the active-span restriction of the relative A/e comparison, with an explicit rank-deficient witness showing distinct full extensions give identical downstream data.",
+      "brief": "00_WORK/tasks/WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE.md"
+    },
+    {
+      "id": "WRK-A4D-LABELLED-ENDPOINT-CLASSICAL-DESCENT",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean owns an endpoint-locality passport equivalent to trivial labelled holonomy, with L=2 and noncontractible-cycle firewalls and exact witnesses that path descent is logically independent from local A/e relation graphification.",
+      "brief": "00_WORK/tasks/WRK-A4D-LABELLED-ENDPOINT-CLASSICAL-DESCENT.md"
     }
   ]
 }
