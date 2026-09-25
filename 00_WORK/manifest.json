@@ -34,10 +34,7 @@
     "02_REGISTRY/frontier/RESEARCH_BRIEF_BX_CLIFFORD10_TRANSPORT.md",
     "02_REGISTRY/frontier/RESEARCH_BRIEF_C1_COMMON_CARRIER.md",
     "02_REGISTRY/frontier/RESEARCH_BRIEF_DX_TWISTED_PROPINQUITY.md",
-    "02_REGISTRY/frontier/TASK_INDUCTIVE_SPECTRAL_TRIPLE_ALL_N.md",
-    "02_REGISTRY/frontier/REVIEW_REMEDIATION_ROADMAP.md",
-    "02_REGISTRY/frontier/no_go_atlas.md",
-    "02_REGISTRY/frontier/verification_protocol.md"
+    "02_REGISTRY/frontier/TASK_INDUCTIVE_SPECTRAL_TRIPLE_ALL_N.md"
   ],
   "tasks": [
     {
@@ -92,17 +89,6 @@
       ],
       "exit_condition": "Classify the exact crossed coupling between a finite graded dressing representative/torsor and the affine-sensitive nilpotent T_kappa channel, including dependence on transverse skew/order and resolution moduli, exact semidirect/cocycle composition, pure-gauge specialization, and a theorem or no-go deciding which moduli remain observable without erasing mandatory raw controls.",
       "brief": "00_WORK/tasks/EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION.md"
-    },
-    {
-      "id": "WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns the algebraic resolved correlated-action passport: \u0108=S\u03a0, \u0108-C=DP_W for admissible lost-direction W\u2264K, maximal jump =D, Role-residual specialization, exact-gauge resolution independence, and coframe-only intrinsic/maximal separation, with no topology/continuity.",
-      "brief": "00_WORK/tasks/WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT.md"
     }
   ]
 }
