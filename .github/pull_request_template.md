@@ -7,6 +7,11 @@ Baseline: `MAIN-SHA`
 
 Briefly state what this PR owns and what it explicitly does not own.
 
+## Primary artifact
+
+For `EXPENSIVE`, name the durable research memo/certificate path written by this PR.
+For `WORKER`, name the implementation/certificate/formalization path(s) owned by this PR.
+
 ## Validation
 
 List narrow validation while iterating. A ready Lean PR must include one final

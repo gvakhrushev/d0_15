@@ -3,6 +3,17 @@
 Class: `WORKER`
 Parent: `CTRL-A4D-VARIATIONAL-FRONTIER`
 
+## GitHub execution contract
+
+- Branch: `wrk/a4d-bivector-commutant-cert` from current `main`.
+- First lifecycle command: `python tools/task_lifecycle.py start WRK-A4D-BIVECTOR-COMMUTANT-CERT`.
+- Open a Draft PR immediately with `Lifecycle: IN_PROGRESS`.
+- Primary artifact: `02_REGISTRY/research/certificates/a4d_role_bivector_commutant_check.py`.
+- Commit the exact rank/nullspace computation and negative mutations directly to the PR.
+- Before Ready: run the required guards, retire with `python tools/task_lifecycle.py retire WRK-A4D-BIVECTOR-COMMUTANT-CERT`, and set `Lifecycle: REVIEW`.
+- Chat handoff: PR number + `36-34=2`, `36-35=1` status + blocker only.
+
+
 ## Objective
 
 Create a deterministic exact-rational certificate for the local Role-bivector intertwiner count used by the active insertion research.

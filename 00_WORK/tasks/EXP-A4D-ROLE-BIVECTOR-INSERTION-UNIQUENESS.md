@@ -4,6 +4,19 @@ Class: `EXPENSIVE`
 Parent: `CTRL-A4D-VARIATIONAL-FRONTIER`
 Mode: research-only, theory-first.
 
+## GitHub execution contract
+
+- Branch: `exp/a4d-role-bivector-insertion-uniqueness` from current `main`.
+- First lifecycle command: `python tools/task_lifecycle.py start EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS`.
+- Open a Draft PR immediately with `Lifecycle: IN_PROGRESS` before substantive research.
+- Primary artifact: `02_REGISTRY/research/MEMO_A4D_ROLE_BIVECTOR_INSERTION_UNIQUENESS.md`.
+- Put derivations, exact witness tables, symmetry classification, and final verdict in that memo as you work; do not return the full packet in chat.
+- You may add task-specific exact research certificates under `02_REGISTRY/research/certificates/` if useful.
+- Do not edit Lean, `claims.csv`, release status, BOOK/public claims, or unrelated registry rows in this task.
+- Before Ready: integrate one concise disposition update into `02_REGISTRY/RESEARCH_LEDGER.md`, run required non-Lean guards, then `python tools/task_lifecycle.py retire EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS` and set PR `Lifecycle: REVIEW`.
+- Chat handoff should be short: PR number, verdict, primary artifact path, and exact remaining blocker if any.
+
+
 ## Mission
 
 Close exactly one remaining A4D interface:
@@ -279,7 +292,7 @@ Use if the required Lorentz-tangent-to-degree-two Role map or complementary-face
 ## Forbidden scope
 
 No Lean.
-No GitHub mutation.
+No repository mutation outside this assigned task PR.
 No continuum Einstein equation.
 No time interpretation of Role A.
 No \(L=3\) wave claim before insertion uniqueness.

@@ -118,15 +118,19 @@ When a local worker slot opens, the worker starts from the cloud draft branch (r
 ## Worker checkout / dispatch policy
 
 Terminology in user-facing coordination:
-- manifest class \`WORKER\` = **worker**;
-- manifest class \`EXPENSIVE\` = **researcher**.
+- manifest class `WORKER` = **worker**;
+- manifest class `EXPENSIVE` = **researcher**.
 
-Workers mutate repository state; researchers normally do not.
+Both workers and researchers execute through a task-specific GitHub branch and Draft PR.
 
-Two workers may execute concurrently only when they use separate git worktrees/checkouts. They may intentionally share the external Lake/Mathlib cache. If only one checkout/working directory is available, worker execution is sequential.
+- A researcher normally writes the durable research packet directly under `02_REGISTRY/research/` at the path named in the brief, plus exact research certificates when the brief requests them. A researcher does **not** normally edit Lean owners, claim/release status, book/public claims, or unrelated registry rows.
+- A worker writes the implementation/certificate/formalization artifacts named by the brief.
+- Both classes run `python tools/task_lifecycle.py start TASK-ID`, open the Draft PR before substantive work, and retire the task in the same PR before `Lifecycle: REVIEW`.
+- Chat is dispatch/status only by default. Do not duplicate a long research packet in chat when it already belongs in the PR.
 
-Dispatch each worker task separately. Do not put two worker launch prompts into one combined packet. This keeps branch ownership, generated metadata, and shared-cache behavior explicit.
+Concurrent executors require separate git worktrees/checkouts. They may intentionally share the external Lake/Mathlib cache. If only one checkout/working directory is available, execution is sequential.
 
+Dispatch each task separately. Do not put multiple task launch prompts into one combined execution packet. This keeps branch ownership, generated metadata, and shared-cache behavior explicit.
 
 ## Lean integration recurring fixes
 

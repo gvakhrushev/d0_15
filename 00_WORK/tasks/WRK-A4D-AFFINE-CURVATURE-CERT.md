@@ -3,6 +3,16 @@
 Class: `WORKER`
 Parent: `CTRL-A4D-VARIATIONAL-FRONTIER`
 
+## GitHub execution contract
+
+- Branch: `wrk/a4d-affine-curvature-cert` from current `main`.
+- First lifecycle command: `python tools/task_lifecycle.py start WRK-A4D-AFFINE-CURVATURE-CERT`.
+- Open a Draft PR immediately with `Lifecycle: IN_PROGRESS`.
+- Primary artifact: `02_REGISTRY/research/certificates/a4d_affine_curvature_packet_check.py`.
+- Write the checker, negative controls, and any short memo correction directly in the PR.
+- Before Ready: run the required guards, retire the task with `python tools/task_lifecycle.py retire WRK-A4D-AFFINE-CURVATURE-CERT`, and set `Lifecycle: REVIEW`.
+- Chat handoff: PR number + PASS/FAIL + one-line blocker only.
+
 ## Objective
 
 Turn the exact finite curvature results of
@@ -25,9 +35,9 @@ The first printed line must begin with:
 
 1. exact semidirect multiplication and inverse;
 2. exact affine square formula
-   [
-   P_{rs}=T_{Theta_{rs}}ho(Lambda_{rs});
-   ]
+   \[
+   P_{rs}=T_{\Theta_{rs}}\rho(\Lambda_{rs});
+   \]
 3. pure-translation reduction `L=I => Lambda=I, Theta=d1 b`;
 4. noncommuting rational linear-link witness with `Lambda != I`;
 5. shared-F mixed plaquette reduction to `F T_Omega F^-1`;
@@ -36,20 +46,20 @@ The first printed line must begin with:
 8. ordered cube/Bianchi word identity on a finite hostile model;
 9. trace blindness of the degree-raising translation block;
 10. exact based gauge/origin-shift law
-    [
+    \[
     t' = Et + (I-P')c;
-    ]
+    \]
 11. fixed-P quotient
-    [
+    \[
     t\sim t+(I-P)c
-    ]
+    \]
     and the equivalence `t ~ 0 iff t in im(I-P)`;
 12. one exact invertible-`I-P` witness where every translation is removable;
 13. one exact Lorentz witness with singular `I-P` and a non-removable residual translation class.
 
 ## Mandatory negative controls
 
-At least two reachable `FAIL_*` mutations, including:
+At least three reachable `FAIL_*` mutations, including:
 
 - wrong corner/shift in the affine `Theta` formula;
 - illegal ordinary `dTheta=0` replacement for the nonlinear semidirect cube law;
