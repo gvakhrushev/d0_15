@@ -34,14 +34,26 @@ The first printed line must begin with:
 6. pure shared-F even flatness at `kappa=0`;
 7. frame-image bridge `F=rho(E)` gives `Lambda=I`;
 8. ordered cube/Bianchi word identity on a finite hostile model;
-9. trace blindness of the degree-raising translation block.
+9. trace blindness of the degree-raising translation block;
+10. exact based gauge/origin-shift law
+    [
+    t' = Et + (I-P')c;
+    ]
+11. fixed-P quotient
+    [
+    t\sim t+(I-P)c
+    ]
+    and the equivalence `t ~ 0 iff t in im(I-P)`;
+12. one exact invertible-`I-P` witness where every translation is removable;
+13. one exact Lorentz witness with singular `I-P` and a non-removable residual translation class.
 
 ## Mandatory negative controls
 
 At least two reachable `FAIL_*` mutations, including:
 
 - wrong corner/shift in the affine `Theta` formula;
-- illegal ordinary `dTheta=0` replacement for the nonlinear semidirect cube law.
+- illegal ordinary `dTheta=0` replacement for the nonlinear semidirect cube law;
+- false binary mutation `P != I => every t is removable`, killed by the singular-Lorentz witness.
 
 The checker must fail under those mutations and pass only with the exact ordered formula.
 
@@ -54,4 +66,4 @@ Do not formalize the full memo in Lean.
 
 ## Exit condition
 
-The exact affine/mixed plaquette formulas, ordered cube identity and trace-blindness boundary are reproducibly checked by exact finite arithmetic with reachable negative mutations, and the memo links the checker without any claim-status promotion.
+The exact affine/mixed plaquette formulas, ordered cube identity, trace-blindness boundary, and affine conjugacy quotient `[t] in coker(I-P)` are reproducibly checked by exact finite arithmetic with reachable negative mutations and no claim-status promotion.
