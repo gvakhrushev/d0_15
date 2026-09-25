@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
     },
     {
-      "id": "WRK-A4D-CONDITIONAL-SOURCED-DIAGONAL-TRANSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Lean owns the conditional relative defect, finite diagonal seed, predecessor decomposition, sourced append/reverse transport, and exact solution-as-seed-plus-parallel-section characterization, all conditional on a supplied comparison primitive.",
-      "brief": "00_WORK/tasks/WRK-A4D-CONDITIONAL-SOURCED-DIAGONAL-TRANSPORT.md"
-    },
-    {
       "id": "WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
