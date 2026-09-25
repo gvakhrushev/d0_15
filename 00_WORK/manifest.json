@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT.md"
     },
     {
-      "id": "WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns the finite algebraic resolved correlated-action passport: incidence BΠ=B for lost-direction lifts, resolved jump Ĉ−C=D P_W, intrinsic/maximal specializations, Role-residual maximal jump, exact-gauge resolution invisibility, and the B=0 intrinsic/maximal separation.",
-      "brief": "00_WORK/tasks/WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT.md"
-    },
-    {
       "id": "WRK-A4D-RELATIVE-AE-GRAPHIFICATION-CLOSURE",
       "class": "WORKER",
       "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",

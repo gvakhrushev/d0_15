@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
-| WORKER | 4 | 0 | 0 | 0 | 4 | 0 / 5 |
-| **Total** | **4** | **2** | **0** | **0** | **6** | **2 / 10** |
+| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
+| **Total** | **3** | **2** | **0** | **0** | **5** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -18,7 +18,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
-| WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-RELATIVE-AE-GRAPHIFICATION-CLOSURE | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-QUOTIENT-SATURATION-PASSPORT | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 
