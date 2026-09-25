@@ -86,4 +86,100 @@ theorem verticalDefect_eq_iSup_span_roleResidual
 
 theorem verticalDefect_eq_bot_iff_forall_roleResidual_eq_zero
     (B S : LabelCoeff →ₗ[ℝ] V) :
-    verticalDefect
+    verticalDefect B S = ⊥ ↔ ∀ r : Role, roleResidual B S r = 0 := by
+  constructor
+  · intro h r
+    have hr := roleResidual_mem_verticalDefect B S r
+    simp [h] at hr
+    exact hr
+  · intro h
+    rw [verticalDefect_eq_span_roleResiduals, Submodule.span_eq_bot]
+    intro x hx
+    rcases hx with ⟨r, rfl⟩
+    exact h r
+
+/-- Hostile control: Role `C` residual vanishes on the duplicate-generator
+witness while the vertical defect is nontrivial. -/
+theorem one_roleResidual_zero_not_enough :
+    roleResidual duplicateB duplicateS C = 0 ∧
+      verticalDefect duplicateB duplicateS ≠ ⊥ := by
+  constructor
+  · have hc :
+        EuclideanSpace.single (C : Role) 1 ∈ LinearMap.ker duplicateB := by
+      rw [LinearMap.mem_ker]
+      simp [duplicateB, coeffRole,
+        show C ≠ A by decide, show C ≠ B by decide]
+    have hs :
+        duplicateS (EuclideanSpace.single (C : Role) 1) = 0 := by
+      simp [duplicateS, coeffRole,
+        show C ≠ A by decide, show C ≠ B by decide]
+    change canonicalResidual duplicateB duplicateS
+        (EuclideanSpace.single C 1) = 0
+    simp [canonicalResidual,
+      kernelComponent_eq_self_of_mem_kernel duplicateB hc, hs]
+  · intro h
+    exact duplicate_generator_no_strict
+      ((spanCalibration_iff_verticalDefect_eq_bot duplicateB duplicateS).mpr h)
+
+/-! ## 3. Residual-rank formula -/
+
+/-- First-factor projection of the generated relation. -/
+def relationFst (B S : LabelCoeff →ₗ[ℝ] V) :
+    comparisonRelation B S →ₗ[ℝ] V :=
+  (LinearMap.fst ℝ V V).comp (comparisonRelation B S).subtype
+
+theorem relationFst_range
+    (B S : LabelCoeff →ₗ[ℝ] V) :
+    LinearMap.range (relationFst B S) = LinearMap.range B := by
+  ext v
+  constructor
+  · rintro ⟨⟨⟨u, w⟩, ⟨c, hc⟩⟩, rfl⟩
+    have hu : u = B c := by
+      simpa [pairSynthesis] using (congrArg Prod.fst hc).symm
+    exact ⟨c, hu.symm⟩
+  · rintro ⟨c, rfl⟩
+    refine ⟨⟨(B c, S c), ⟨c, by simp [pairSynthesis]⟩⟩, rfl⟩
+
+/-- The kernel of `relationFst` is linearly equivalent to the vertical defect. -/
+noncomputable def kerRelationFstEquivVerticalDefect
+    (B S : LabelCoeff →ₗ[ℝ] V) :
+    LinearMap.ker (relationFst B S) ≃ₗ[ℝ] verticalDefect B S where
+  toFun p := by
+    rcases p with ⟨⟨⟨u, w⟩, hw⟩, hk⟩
+    have hu : u = 0 := by
+      change (LinearMap.fst ℝ V V) ⟨u, w⟩ = 0 at hk
+      simpa using hk
+    refine ⟨w, (zero_pair_mem_comparisonRelation_iff B S w).mp ?_⟩
+    simpa [hu] using hw
+  invFun q := by
+    rcases q with ⟨w, hw⟩
+    refine ⟨⟨(0, w), (zero_pair_mem_comparisonRelation_iff B S w).mpr hw⟩, ?_⟩
+    simp [relationFst]
+  left_inv := by
+    intro p
+    apply Subtype.ext
+    apply Subtype.ext
+    rcases p with ⟨⟨⟨u, w⟩, hw⟩, hk⟩
+    have hu : u = 0 := by
+      change (LinearMap.fst ℝ V V) ⟨u, w⟩ = 0 at hk
+      simpa using hk
+    simp [hu]
+  right_inv := by
+    intro q
+    apply Subtype.ext
+    rfl
+  map_add' := by
+    intro x y
+    apply Subtype.ext
+    rfl
+  map_smul' := by
+    intro a x
+    apply Subtype.ext
+    rfl
+
+theorem finrank_verticalDefect
+    [FiniteDimensional ℝ V] (B S : LabelCoeff →ₗ[ℝ] V) :
+    Module.finrank ℝ (verticalDefect B S) =
+      Module.finrank ℝ (LinearMap.range (pairSynthesis B S)) -
+        Module.finrank ℝ (LinearMap.range B) := by
+  haveI : Fin
