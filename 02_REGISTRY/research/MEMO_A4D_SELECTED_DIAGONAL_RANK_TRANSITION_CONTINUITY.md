@@ -2042,5 +2042,6 @@ The conceptual result is complete when this memo is in the PR:
 - all four remediation routes are classified;
 - the theorem-ready worker handoff is bounded.
 
-Before Ready, the exact checker and repository guards must be run, the task
-must self-retire, and the PR lifecycle must be changed to `REVIEW`.
+Ready audit: the exact checker passes 78 rational assertions; `main` remains at the audited baseline; the task has self-retired; the task brief and manifest row are absent; and the PR diff contains only this durable memo. The PR is `Lifecycle: REVIEW` and is not self-merged.
+
+The first guard run on the retired head was spawned while GitHub still marked the PR as Draft, so the PR-contract guard correctly expected the active task row and failed. This lifecycle-audit commit is made after Ready specifically to trigger the contract against the final Ready state; it changes no research result.
