@@ -13,6 +13,8 @@ All arithmetic uses fractions.Fraction.  The CAR/shift witness is an
 Role block), large enough that U_A is not an involution.
 """
 from fractions import Fraction as Q
+from collections import defaultdict
+from itertools import product
 import sys
 
 def eye(n):
@@ -197,6 +199,254 @@ def one_parameter_tangent_not_obstructed():
     assert DW == H
 
 
+
+# Exact noncommuting-generator obstruction on the frozen graded degree-one block.
+def degree_one_lorentz_bracket_certificate():
+    G = list(product(range(3), repeat=3))
+    zdisp = (0, 0, 0)
+
+    def dadd(a, b):
+        return tuple((a[k] + b[k]) % 3 for k in range(3))
+
+    def dneg(a):
+        return tuple((-a[k]) % 3 for k in range(3))
+
+    def step(r, sign=1):
+        v = [0, 0, 0]
+        v[r] = sign % 3
+        return tuple(v)
+
+    def m0():
+        return [[Q(0) for _ in range(3)] for _ in range(3)]
+
+    def ma(A, B):
+        return [[A[i][j] + B[i][j] for j in range(3)] for i in range(3)]
+
+    def ms(c, A):
+        return [[c * A[i][j] for j in range(3)] for i in range(3)]
+
+    def mm(A, B):
+        return [[sum((A[i][k] * B[k][j] for k in range(3)), Q(0))
+                 for j in range(3)] for i in range(3)]
+
+    def mt(A):
+        return [list(row) for row in zip(*A)]
+
+    def eij(i, j):
+        M = m0()
+        M[i][j] = Q(1)
+        return M
+
+    def da(A, B):
+        C = defaultdict(m0)
+        for d, M in A.items():
+            C[d] = ma(C[d], M)
+        for d, M in B.items():
+            C[d] = ma(C[d], M)
+        return {d: M for d, M in C.items()
+                if any(x != 0 for row in M for x in row)}
+
+    def ds(c, A):
+        return {d: ms(c, M) for d, M in A.items()}
+
+    def dm(A, B):
+        C = defaultdict(m0)
+        for d, M in A.items():
+            for e, N in B.items():
+                de = dadd(d, e)
+                C[de] = ma(C[de], mm(M, N))
+        return {d: M for d, M in C.items()
+                if any(x != 0 for row in M for x in row)}
+
+    def dc(A, B):
+        return da(dm(A, B), ds(Q(-1), dm(B, A)))
+
+    def dt(A):
+        return {dneg(d): mt(M) for d, M in A.items()}
+
+    eta = (Q(1), Q(-1), Q(-1))
+    B1 = m0()
+    B1[0][1] = B1[1][0] = Q(1)
+    B2 = m0()
+    B2[0][2] = B2[2][0] = Q(1)
+    R12 = m0()
+    R12[1][2] = Q(1)
+    R12[2][1] = Q(-1)
+    gens = (B1, B2, R12)
+
+    def Bdict(K):
+        # B_X = sym(r_X) - H_X/2, with
+        # H_X = -(K_X + K_X^T),
+        # K_X = sum (eta X)_sr U_s (I+U_r^-1)/2 E_sr.
+        r = {zdisp: K}
+        e = [[eta[i] * K[i][j] for j in range(3)] for i in range(3)]
+        Kop = {}
+        for ss in range(3):
+            for rr in range(3):
+                if e[ss][rr] == 0:
+                    continue
+                for d in (step(ss), dadd(step(ss), step(rr, -1))):
+                    Kop = da(Kop, {d: ms(e[ss][rr] * Q(1, 2), eij(ss, rr))})
+        return da(ds(Q(1, 2), da(r, dt(r))),
+                  ds(Q(1, 2), da(Kop, dt(Kop))))
+
+    B = [Bdict(K) for K in gens]
+
+    # Translation-invariant skew basis on Fun((Z/3)^3,R^3):
+    # 3 zero-displacement skew directions + 13 inverse displacement pairs * 9.
+    reps = []
+    seen = {zdisp}
+    for d in G:
+        if d in seen:
+            continue
+        reps.append(d)
+        seen.add(d)
+        seen.add(dneg(d))
+
+    skew = []
+    for i in range(3):
+        for j in range(i + 1, 3):
+            skew.append({zdisp: ma(eij(i, j), ms(Q(-1), eij(j, i)))})
+    for d in reps:
+        nd = dneg(d)
+        for i in range(3):
+            for j in range(3):
+                skew.append({d: eij(i, j), nd: ms(Q(-1), eij(j, i))})
+    assert len(skew) == 120
+
+    # Brackets:
+    # [B1,B2]=R12, [R12,B1]=-B2, [R12,B2]=B1.
+    eqs = (
+        (0, 1, B[2]),
+        (2, 0, ds(Q(-1), B[1])),
+        (2, 1, B[0]),
+    )
+
+    CERT = [
+    (1, (0, 0, 1), 0, 2, -1),
+    (1, (0, 0, 1), 2, 0, 1),
+    (1, (0, 0, 2), 0, 2, 1),
+    (1, (0, 0, 2), 2, 0, -1),
+    (1, (0, 1, 0), 0, 2, 1),
+    (1, (0, 1, 0), 2, 0, -1),
+    (1, (0, 1, 2), 0, 2, -1),
+    (1, (0, 1, 2), 2, 0, 1),
+    (1, (0, 2, 0), 0, 2, -1),
+    (1, (0, 2, 0), 2, 0, 1),
+    (1, (0, 2, 1), 0, 2, 1),
+    (1, (0, 2, 1), 2, 0, -1),
+    (1, (1, 0, 0), 0, 2, -1),
+    (1, (1, 0, 0), 2, 0, 1),
+    (1, (1, 0, 1), 0, 2, 5),
+    (1, (1, 0, 1), 2, 0, 3),
+    (1, (1, 0, 2), 0, 2, -4),
+    (1, (1, 0, 2), 2, 0, -4),
+    (1, (1, 1, 0), 0, 2, -4),
+    (1, (1, 1, 0), 2, 0, -4),
+    (1, (1, 1, 1), 0, 2, -1),
+    (1, (1, 1, 1), 2, 0, 1),
+    (1, (1, 1, 2), 0, 2, 5),
+    (1, (1, 1, 2), 2, 0, 3),
+    (1, (1, 2, 0), 0, 2, 5),
+    (1, (1, 2, 0), 2, 0, 3),
+    (1, (1, 2, 1), 0, 2, -4),
+    (1, (1, 2, 1), 2, 0, -4),
+    (1, (1, 2, 2), 0, 2, -1),
+    (1, (1, 2, 2), 2, 0, 1),
+    (1, (2, 0, 0), 0, 2, 1),
+    (1, (2, 0, 0), 2, 0, -1),
+    (1, (2, 0, 1), 0, 2, -4),
+    (1, (2, 0, 1), 2, 0, -4),
+    (1, (2, 0, 2), 0, 2, 3),
+    (1, (2, 0, 2), 2, 0, 5),
+    (1, (2, 1, 0), 0, 2, 3),
+    (1, (2, 1, 0), 2, 0, 5),
+    (1, (2, 1, 1), 0, 2, 1),
+    (1, (2, 1, 1), 2, 0, -1),
+    (1, (2, 1, 2), 0, 2, -4),
+    (1, (2, 1, 2), 2, 0, -4),
+    (1, (2, 2, 0), 0, 2, -4),
+    (1, (2, 2, 0), 2, 0, -4),
+    (1, (2, 2, 1), 0, 2, 3),
+    (1, (2, 2, 1), 2, 0, 5),
+    (1, (2, 2, 2), 0, 2, 1),
+    (1, (2, 2, 2), 2, 0, -1),
+    (2, (0, 0, 1), 0, 1, -1),
+    (2, (0, 0, 1), 1, 0, 1),
+    (2, (0, 0, 2), 0, 1, 1),
+    (2, (0, 0, 2), 1, 0, -1),
+    (2, (0, 1, 0), 0, 1, 1),
+    (2, (0, 1, 0), 1, 0, -1),
+    (2, (0, 1, 2), 0, 1, -1),
+    (2, (0, 1, 2), 1, 0, 1),
+    (2, (0, 2, 0), 0, 1, -1),
+    (2, (0, 2, 0), 1, 0, 1),
+    (2, (0, 2, 1), 0, 1, 1),
+    (2, (0, 2, 1), 1, 0, -1),
+    (2, (1, 0, 0), 0, 1, 1),
+    (2, (1, 0, 0), 1, 0, -1),
+    (2, (1, 0, 1), 0, 1, 4),
+    (2, (1, 0, 1), 1, 0, 4),
+    (2, (1, 0, 2), 0, 1, -5),
+    (2, (1, 0, 2), 1, 0, -3),
+    (2, (1, 1, 0), 0, 1, -5),
+    (2, (1, 1, 0), 1, 0, -3),
+    (2, (1, 1, 1), 0, 1, 1),
+    (2, (1, 1, 1), 1, 0, -1),
+    (2, (1, 1, 2), 0, 1, 4),
+    (2, (1, 1, 2), 1, 0, 4),
+    (2, (1, 2, 0), 0, 1, 4),
+    (2, (1, 2, 0), 1, 0, 4),
+    (2, (1, 2, 1), 0, 1, -5),
+    (2, (1, 2, 1), 1, 0, -3),
+    (2, (1, 2, 2), 0, 1, 1),
+    (2, (1, 2, 2), 1, 0, -1),
+    (2, (2, 0, 0), 0, 1, -1),
+    (2, (2, 0, 0), 1, 0, 1),
+    (2, (2, 0, 1), 0, 1, -3),
+    (2, (2, 0, 1), 1, 0, -5),
+    (2, (2, 0, 2), 0, 1, 4),
+    (2, (2, 0, 2), 1, 0, 4),
+    (2, (2, 1, 0), 0, 1, 4),
+    (2, (2, 1, 0), 1, 0, 4),
+    (2, (2, 1, 1), 0, 1, -1),
+    (2, (2, 1, 1), 1, 0, 1),
+    (2, (2, 1, 2), 0, 1, -3),
+    (2, (2, 1, 2), 1, 0, -5),
+    (2, (2, 2, 0), 0, 1, -3),
+    (2, (2, 2, 0), 1, 0, -5),
+    (2, (2, 2, 1), 0, 1, 4),
+    (2, (2, 2, 1), 1, 0, 4),
+    (2, (2, 2, 2), 0, 1, -1),
+    (2, (2, 2, 2), 1, 0, 1),
+    ]
+    assert len(CERT) == 96
+    cert = {(eq, d, i, j): Q(w) for eq, d, i, j, w in CERT}
+
+    def functional(eq, D):
+        out = Q(0)
+        for d, M in D.items():
+            for i in range(3):
+                for j in range(3):
+                    out += cert.get((eq, d, i, j), Q(0)) * M[i][j]
+        return out
+
+    # Every one of the 3*120 unknown skew columns is annihilated.
+    for g in range(3):
+        for A in skew:
+            total = Q(0)
+            for eq, (x, y, _rhs) in enumerate(eqs):
+                if g == x:
+                    total += functional(eq, dc(A, B[y]))
+                if g == y:
+                    total += functional(eq, ds(Q(-1), dc(A, B[x])))
+            assert total == 0
+
+    # But the required bracket right-hand side survives.
+    rhs = sum((functional(eq, target) for eq, (_x, _y, target) in enumerate(eqs)), Q(0))
+    assert rhs == 2
+
+
 def main():
     rational_orbit_leaves_exact()
     print("PASS rational_orbit_leaves_exact")
@@ -212,9 +462,11 @@ def main():
     print("PASS one_parameter_tangent_not_obstructed")
     spectators_do_not_enter()
     print("PASS spectators_do_not_enter")
-    print("PRESSURE strict conjugation obstructed, general cocycle not terminally obstructed")
-    print("OPEN full Lorentz six-generator representation-extension system")
-    print("  S(K)+S(K)^T=-H(eta K) plus exact bracket integrability")
+    degree_one_lorentz_bracket_certificate()
+    print("PASS degree_one_lorentz_bracket_certificate: left-null RHS = 2")
+    print("TERMINAL EQUIVARIANT-JOINT-BACKGROUND-DRESSING-OBSTRUCTED")
+    print("  strict conjugation alone was insufficient")
+    print("  exact cocycle fails on the L=3 graded degree-one so(1,2) bracket")
     return 0
 
 if __name__ == "__main__":
