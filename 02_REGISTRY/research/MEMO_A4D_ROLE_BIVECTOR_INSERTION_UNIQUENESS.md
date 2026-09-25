@@ -1,7 +1,7 @@
 # MEMO A4D — Role-bivector insertion uniqueness
 
-**Task:** `EXP-A4D-ROLE-BIVECTOR-ORIENTED-DENSITY-SELECTOR`  
-**Execution:** PR #169  
+**Task:** `CTRL-A4D-VARIATIONAL-FRONTIER`  
+**Execution:** PR #173  
 **Status:** terminal research classification  
 **Principal verdict:** `ROLE-BIVECTOR-INSERTION-UNIQUE-UP-TO-SCALE`
 
