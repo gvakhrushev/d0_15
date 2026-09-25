@@ -3,11 +3,10 @@
 
 Runtime truth:
 - main/manifest is the queue/control plane;
-- a DRAFT PR is an active execution;
+- a Draft PR is an active execution;
 - a ready PR is a review candidate and must be self-retiring;
-- merge is completion.
-
-Every executable PR names exactly one canonical task in its body.
+- merge is completion;
+- every PR is self-identifying without prior chat context.
 """
 from __future__ import annotations
 
@@ -21,11 +20,15 @@ import sys
 import tempfile
 from typing import Any
 
+REPO_SLUG = "gvakhrushev/d0_15"
 TASK_RE = re.compile(r"(?mi)^Task:\s*`?([A-Z0-9][A-Z0-9_-]*)`?\s*$")
 CLASS_RE = re.compile(r"(?mi)^Class:\s*`?(CONTROL|WORKER|EXPENSIVE)`?\s*$")
 LIFECYCLE_RE = re.compile(r"(?mi)^Lifecycle:\s*`?(IN_PROGRESS|BLOCKED|REVIEW)`?\s*$")
 BASELINE_RE = re.compile(r"(?mi)^Baseline:\s*`?([0-9a-fA-F]{7,40})`?\s*$")
+REPOSITORY_RE = re.compile(r"(?mi)^Repository:\s*`?([^\n`]+)`?\s*$")
+PRIMARY_RE = re.compile(r"(?mi)^Primary-Artifact:\s*`?([^\n`]+)`?\s*$")
 CONTROL_PLANE = "CONTROL-PLANE"
+PREFIX = {"WORKER": "wrk/", "EXPENSIVE": "exp/", "CONTROL": "control/"}
 
 
 class ContractError(Exception):
@@ -36,7 +39,7 @@ def _one(regex: re.Pattern[str], body: str, label: str) -> str:
     hits = regex.findall(body or "")
     if len(hits) != 1:
         raise ContractError(f"PR body must contain exactly one '{label}: ...' line")
-    return hits[0]
+    return hits[0].strip()
 
 
 def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
@@ -45,10 +48,34 @@ def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
         return
 
     body = pr.get("body") or ""
+    repo_slug = _one(REPOSITORY_RE, body, "Repository")
     task_id = _one(TASK_RE, body, "Task")
     task_class = _one(CLASS_RE, body, "Class")
     lifecycle = _one(LIFECYCLE_RE, body, "Lifecycle")
-    _one(BASELINE_RE, body, "Baseline")
+    baseline = _one(BASELINE_RE, body, "Baseline")
+    primary = _one(PRIMARY_RE, body, "Primary-Artifact")
+
+    if repo_slug != REPO_SLUG:
+        raise ContractError(f"Repository must be {REPO_SLUG}, got {repo_slug}")
+
+    base_sha = ((pr.get("base") or {}).get("sha") or "").strip()
+    if base_sha and baseline.lower() != base_sha.lower():
+        raise ContractError(
+            f"Baseline must equal PR base SHA {base_sha}, got {baseline}"
+        )
+
+    head_ref = ((pr.get("head") or {}).get("ref") or "").strip()
+    prefix = PREFIX[task_class]
+    if head_ref and not head_ref.startswith(prefix):
+        raise ContractError(
+            f"{task_class} PR head branch must start with '{prefix}', got {head_ref}"
+        )
+
+    if task_class in {"WORKER", "EXPENSIVE"}:
+        if primary in {"", "N/A", "none", "None"}:
+            raise ContractError(f"{task_class} PR requires a repo-relative Primary-Artifact")
+        if primary.startswith(("http://", "https://")):
+            raise ContractError("Primary-Artifact must be repo-relative, not a URL")
 
     is_draft = bool(pr.get("draft", False))
     number = pr.get("number") or event.get("number")
@@ -70,7 +97,6 @@ def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
 
     if is_draft:
         if event.get("action") == "opened":
-            base_sha = ((pr.get("base") or {}).get("sha") or "").strip()
             head_sha = ((pr.get("head") or {}).get("sha") or "").strip()
             if base_sha and head_sha:
                 diff = subprocess.run(
@@ -152,15 +178,57 @@ def self_test() -> int:
             json.dumps({"tasks": [task]}), encoding="utf-8"
         )
         (root / "00_WORK" / "tasks" / "WRK-TEST-001.md").write_text("# task\n", encoding="utf-8")
+
+        base = "a" * 40
         draft = {
             "number": 10,
             "pull_request": {
                 "number": 10,
                 "draft": True,
-                "body": "Task: `WRK-TEST-001`\nClass: `WORKER`\nLifecycle: `IN_PROGRESS`\nBaseline: `abcdef1`\n",
+                "base": {"sha": base},
+                "head": {"sha": "b" * 40, "ref": "wrk/test-001"},
+                "body": (
+                    f"Repository: `{REPO_SLUG}`\n"
+                    "Task: `WRK-TEST-001`\n"
+                    "Class: `WORKER`\n"
+                    "Lifecycle: `IN_PROGRESS`\n"
+                    f"Baseline: `{base}`\n"
+                    "Primary-Artifact: `02_REGISTRY/research/certificates/test.py`\n"
+                ),
             },
         }
         validate_event(draft, root)
+
+        bad_repo = json.loads(json.dumps(draft))
+        bad_repo["pull_request"]["body"] = bad_repo["pull_request"]["body"].replace(
+            REPO_SLUG, "other/repo"
+        )
+        try:
+            validate_event(bad_repo, root)
+        except ContractError as exc:
+            assert "Repository must be" in str(exc)
+        else:
+            raise AssertionError("wrong repository was not rejected")
+
+        bad_branch = json.loads(json.dumps(draft))
+        bad_branch["pull_request"]["head"]["ref"] = "exp/test-001"
+        try:
+            validate_event(bad_branch, root)
+        except ContractError as exc:
+            assert "branch must start" in str(exc)
+        else:
+            raise AssertionError("wrong branch prefix was not rejected")
+
+        bad_base = json.loads(json.dumps(draft))
+        bad_base["pull_request"]["body"] = bad_base["pull_request"]["body"].replace(
+            base, "c" * 40
+        )
+        try:
+            validate_event(bad_base, root)
+        except ContractError as exc:
+            assert "Baseline must equal" in str(exc)
+        else:
+            raise AssertionError("baseline mismatch was not rejected")
 
         ready = json.loads(json.dumps(draft))
         ready["pull_request"]["draft"] = False
@@ -185,7 +253,16 @@ def self_test() -> int:
             "pull_request": {
                 "number": 11,
                 "draft": False,
-                "body": "Task: `CONTROL-PLANE`\nClass: `CONTROL`\nLifecycle: `REVIEW`\nBaseline: `abcdef1`\n",
+                "base": {"sha": base},
+                "head": {"sha": "d" * 40, "ref": "control/test"},
+                "body": (
+                    f"Repository: `{REPO_SLUG}`\n"
+                    "Task: `CONTROL-PLANE`\n"
+                    "Class: `CONTROL`\n"
+                    "Lifecycle: `REVIEW`\n"
+                    f"Baseline: `{base}`\n"
+                    "Primary-Artifact: `N/A`\n"
+                ),
             },
         }
         validate_event(control, root)
