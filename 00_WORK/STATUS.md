@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
-| WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **2** | **2** | **0** | **0** | **4** | **2 / 10** |
+| WORKER | 1 | 1 | 0 | 0 | 2 | 1 / 5 |
+| **Total** | **1** | **3** | **0** | **0** | **4** | **3 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -18,7 +18,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 | WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
-| WRK-A4D-QUOTIENT-SATURATION-PASSPORT | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
+| WRK-A4D-QUOTIENT-SATURATION-PASSPORT | WORKER | IN_PROGRESS | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
