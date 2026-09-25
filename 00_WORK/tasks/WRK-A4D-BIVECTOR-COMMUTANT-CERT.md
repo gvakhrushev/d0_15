@@ -23,62 +23,48 @@ Use exact rational arithmetic. A small self-contained Gaussian elimination imple
 
 ## Fixed basis
 
-Use Role order (A,B,C,D) corresponding to a Lorentz metric
+Use Role order \(A,B,C,D\) corresponding to
 
-[
-eta=operatorname{diag}(1,-1,-1,-1).
-]
+\[
+\eta=\operatorname{diag}(1,-1,-1,-1).
+\]
 
 Use ordered bivector basis
 
-[
+\[
 (AB,AC,AD,BC,BD,CD).
-]
+\]
 
 ## Required positive checks
 
 1. Build three boost and three spatial-rotation generators satisfying
-   [
-   X^Teta+eta X=0.
-   ]
+   \[
+   X^T\eta+\eta X=0.
+   \]
 
-2. Build their induced (6	imes6) action on (Lambda^2V).
+2. Build their induced \(6\times6\) action on \(\Lambda^2V\).
 
-3. Let (T) be an unknown (6	imes6) intertwiner with 36 rational unknowns and impose
-   [
-   Tho_2(X_i)=ho_2(X_i)T
-   ]
+3. Let \(T\) be an unknown \(6\times6\) intertwiner with 36 rational unknowns and impose
+   \[
+   T\rho_2(X_i)=\rho_2(X_i)T
+   \]
    for all six generators.
 
-4. Verify exact system rank
-   [
-   34
-   ]
-   and nullity
-   [
-   2.
-   ]
+4. Verify exact system rank 34 and nullity 2.
 
-5. Exhibit a nullspace basis (I,J) with
-   [
+5. Exhibit a nullspace basis \(I,J\) with
+   \[
    J^2=-I.
-   ]
+   \]
 
-6. Build the spacelike odd Role swap (Bleftrightarrow C). Verify it preserves (eta) and has determinant (-1).
+6. Build the spacelike odd Role swap \(B\leftrightarrow C\). Verify it preserves \(\eta\) and has determinant \(-1\).
 
-7. Add its commutation constraint and verify exact rank
-   [
-   35
-   ]
-   and nullity
-   [
-   1.
-   ]
+7. Add its commutation constraint and verify exact rank 35 and nullity 1.
 
 8. Verify
-   [
-   ho_2(Bleftrightarrow C)Jho_2(Bleftrightarrow C)^{-1}=-J.
-   ]
+   \[
+   \rho_2(B\leftrightarrow C)J\rho_2(B\leftrightarrow C)^{-1}=-J.
+   \]
 
 9. Print the two basis matrices and the one-dimensional survivor after the odd swap.
 
@@ -88,7 +74,7 @@ At least three reachable FAIL modes:
 
 - omit one boost generator and demonstrate that the centralizer can enlarge;
 - replace the Lorentz boost by a non-Lorentz shear and fail the metric-preservation precheck;
-- mutate one entry of (J) and fail either commutation or (J^2=-I).
+- mutate one entry of \(J\) and fail either commutation or \(J^2=-I\).
 
 A fourth control should show that testing only one or two generators is insufficient to certify the full commutant.
 
@@ -101,12 +87,12 @@ Do not introduce continuum epsilon tensors.
 
 ## Exit condition
 
-The exact rational certificate independently reproduces:
+The exact rational certificate independently reproduces
 
-[
+\[
 36-34=2,
-qquad
+\qquad
 36-35=1,
-]
+\]
 
-identifies the Hodge-like complex structure (J), and records that the reduction to one dimension is conditional on imposing the odd Role swap.
+identifies the Hodge-like complex structure \(J\), and records that the reduction to one dimension is conditional on imposing the odd Role swap.
