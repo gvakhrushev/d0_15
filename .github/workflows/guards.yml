@@ -46,6 +46,11 @@ jobs:
           python tools/validate_work.py --self-test
           python tools/validate_work.py
 
+      - name: Agent cold-start and task brief protocol
+        run: |
+          python tools/validate_agent_protocol.py --self-test
+          python tools/validate_agent_protocol.py
+
       - name: Python syntax
         run: python -m compileall -q tools 04_CERTIFICATES
 

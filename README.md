@@ -4,6 +4,8 @@
 
 D0 is a mathematical and physical research programme that inverts the traditional foundational order: instead of postulating a smooth space-time continuum, background fields, and an external measuring apparatus, D0 begins from the **operational preconditions of verifiable detection** inside a closed finite system.
 
+> **Agent / automation cold start:** this repository is `gvakhrushev/d0_15`. Before executing any `EXP-*`, `WRK-*`, or `CTRL-*` task, read [AGENTS.md](AGENTS.md) and [00_WORK/README.md](00_WORK/README.md). Durable task definitions and outputs live in GitHub; chat is dispatch/status only.
+
 Discrete scene structure, registration channels, and (conditionally) continuum limits are derived as consequences of this operational contract. High-energy spectra, gauge structures, and cosmological evolutions are downstream readouts, not independent starting hypotheses.
 
 ---

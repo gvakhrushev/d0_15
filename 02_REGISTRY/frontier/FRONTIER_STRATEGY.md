@@ -84,3 +84,131 @@ A superficial reading of the project's open boundaries treats them as "gaps on t
              * Formalize endogenous action quantum S_min = 1
              * Link mass ratios directly to capacity saturation bounds
 ```
+
+---
+
+## 4. Active Search Architecture: Select Before You Build
+
+This section is an **operational research method**, not a scientific claim and
+not a replacement for `CLOSURE_CONTRACT.md`.
+
+The current frontier is no longer served well by accumulating candidate
+structures and formalizing them one by one. New lanes should use a selective
+search architecture.
+
+### 4.1 KILL-FIRST gates
+
+A candidate progresses only while it survives:
+
+```text
+TYPE
+→ REPRESENTATION / Hom-space
+→ SYMMETRY
+→ MODULI DIMENSION
+→ FLAT LIMIT
+→ VARIATION
+→ GAUGE / CONSTRAINT QUOTIENT
+→ EXACT FINITE SPECTRUM
+→ PHYSICAL INTERPRETATION
+```
+
+A failure at an early gate terminates that branch. Do not pay for later
+research/Lean work on a candidate already killed by typing, representation
+theory, or symmetry.
+
+### 4.2 Backward mathematics before forward guessing
+
+Prefer established classification mathematics, invariant theory, representation
+theory, cohomology, spectral theory, and exact finite normal forms to blind
+forward construction.
+
+The admissible backward question is:
+
+> What mathematical structure would be necessary for the target phenomenon, and
+> which of those structures are already owned or forced by D0?
+
+The forbidden shortcut is importing the desired physical equation as an axiom.
+
+### 4.3 Do not confuse action freedom with physical freedom
+
+Track three different dimensions:
+
+[
+d_A=dim(mathcal A_{mathrm{action}}),
+qquad
+d_E=dim(mathcal A_{mathrm{EL}}),
+qquad
+d_P=dim(mathcal A_{mathrm{physical}}).
+]
+
+Here (d_E) is counted after deriving independent Euler--Lagrange equations,
+and (d_P) after gauge reduction, algebraic constraints, and elimination of
+auxiliary fields.
+
+A selector is not required merely because (d_A>1). First test whether
+
+[
+d_A>d_E
+quad	ext{or}quad
+d_E>d_P.
+]
+
+In particular, a multi-parameter first-order action family may collapse to a
+unique physical operator after connection elimination. The selector question is
+therefore asked at the **latest level where the parameter still changes
+physical output**.
+
+### 4.4 Classify once, specialize late
+
+When a finite invariant space has basis (T_1,ldots,T_n), write the generic
+object
+
+[
+T(alpha)=sum_i alpha_i T_i
+]
+
+and carry (alpha) through variation, quotient, and spectrum.
+
+Do not create separate theory/Lean branches for each numerical choice of
+(alpha) unless the generic theorem has already shown that specialization is
+mathematically meaningful.
+
+### 4.5 Search engine versus proof boundary
+
+Use exact Python/rational certificates for:
+
+- rank/nullity;
+- commutants and invariant Hom-spaces;
+- finite Fourier symbols;
+- Schur complements/range checks;
+- hostile witnesses and mutations;
+- rapid enumeration of finite candidate families.
+
+Use Lean for the surviving universal statement:
+
+- typing;
+- equivariance;
+- classification theorem;
+- exact quotient/no-go;
+- parameterized variation identity;
+- theorem that a physical operator is or is not parameter-independent.
+
+The intended loop is:
+
+```text
+known mathematics
+→ reverse target fingerprint
+→ invariant/Hom classification
+→ finite candidate basis
+→ exact hostile certificates
+→ generic parameter family
+→ variation
+→ gauge/constraint quotient
+→ physical Hessian
+→ only then ask for a selector
+→ Lean owner for the surviving theorem
+```
+
+This is the default strategy for new frontier work unless a CONTROL task
+explicitly justifies a different search mode.
+
