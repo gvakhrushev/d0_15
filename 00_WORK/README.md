@@ -36,6 +36,18 @@ Portable dispatch is generated from Git, not handwritten in chat:
 python tools/task_dispatch.py TASK-ID
 ```
 
+CONTROL can generate a compliant executable brief skeleton with:
+
+```bash
+python tools/task_brief_scaffold.py \
+  --id WRK-... \
+  --class WORKER \
+  --branch wrk/... \
+  --artifact 02_REGISTRY/research/certificates/...py \
+  --why "Why this deserves an independent worker rather than a direct CONTROL edit." \
+  --write
+```
+
 If a task ID is absent from `main`, inspect open PRs before creating anything;
 an execution may already exist.
 
