@@ -58,7 +58,7 @@ theorem roleResidual_mem_verticalDefect
   canonicalResidual_mem_vertical B S _
 
 private theorem labelCoeff_eq_sum_singles (c : LabelCoeff) :
-  c = ∑ r : Role, c r • EuclideanSpace.single r (1 : ℝ) := by
+    c = ∑ r : Role, c r • EuclideanSpace.single r (1 : ℝ) := by
   classical
   simpa [EuclideanSpace.basisFun_apply, EuclideanSpace.basisFun_repr] using
     ((EuclideanSpace.basisFun Role ℝ).sum_repr c).symm
