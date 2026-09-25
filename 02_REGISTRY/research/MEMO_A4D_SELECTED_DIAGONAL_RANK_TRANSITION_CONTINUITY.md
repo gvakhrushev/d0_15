@@ -2911,7 +2911,7 @@ into the already-owned affine-sensitive matter channel.
 ## 35. Consequence for the finite graded coframe-dressing gate
 
 The planned
-\`EXP-A4D-FINITE-GRADED-COFRAME-DRESSING\`
+`EXP-A4D-FINITE-GRADED-COFRAME-DRESSING`
 task remains mathematically open, but its typing can now be sharpened.
 
 The dressing may still be constructed on arbitrary pointwise coframes.
@@ -3050,7 +3050,7 @@ claims used in §§27–32: incidence \(B\Pi=B\), the exact jump
 resolution independence, coframe-only lift dependence, and the dual
 fixed-space selector jump.
 
-\`\`\`python
+```python
 from fractions import Fraction as Q
 
 checks = 0
@@ -3152,13 +3152,13 @@ for t in (Q(1),Q(1,7),Q(-2)):
     ck(mv(G,e[1])!=e[1], 'one fixed direction lost')
 
 print(f'PASS: {checks} exact rational resolution assertions')
-\`\`\`
+```
 
 Expected output:
 
-\`\`\`text
+```text
 PASS: 23 exact rational resolution assertions
-\`\`\`
+```
 
 Together with the earlier 78-assertion finite suite, the memo now contains
 two independent exact checkers: one for the original continuity/hostile
