@@ -1,0 +1,33 @@
+name: tmp-assemble-all-lean
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: wrk/a4d-conditional-sourced-diagonal-transport
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Assemble All.lean and cleanup
+        run: |
+          set -euo pipefail
+          cat 00_WORK/tmp_all_p0.txt 00_WORK/tmp_all_p1.txt 00_WORK/tmp_all_p2.txt > 03_FORMALIZATION/D0/All.lean
+          python3 - <<'PY'
+          import hashlib
+          from pathlib import Path
+          c = Path("03_FORMALIZATION/D0/All.lean").read_bytes()
+          print("sha256", hashlib.sha256(c).hexdigest(), "size", len(c))
+          assert b"A4DConditionalSourcedDiagonalTransport" in c
+          assert hashlib.sha256(c).hexdigest() == "c447f1e4cdef4935e15f6820326750978361622b2a609f29256e2731964ccd4a"
+          PY
+          rm -f 00_WORK/tmp_all_p0.txt 00_WORK/tmp_all_p1.txt 00_WORK/tmp_all_p2.txt
+          rm -f .github/workflows/tmp-assemble-all-lean.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git status
+          git commit -m "Wire A4DConditionalSourcedDiagonalTransport into D0.All"
+          git push origin HEAD:wrk/a4d-conditional-sourced-diagonal-transport
