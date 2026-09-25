@@ -3163,3 +3163,345 @@ PASS: 23 exact rational resolution assertions
 Together with the earlier 78-assertion finite suite, the memo now contains
 two independent exact checkers: one for the original continuity/hostile
 controls and one for the projector-resolution synthesis.
+
+
+---
+
+## 39. Unique continuous sections of the two incidence resolutions
+
+The incidence construction admits continuous resolved dynamics, but one might
+still hope to choose the resolution projector canonically and continuously
+from the unresolved background.
+
+On the unrestricted finite matrix spaces, that hope is completely rigid.
+
+### Theorem 10 — unique continuous local section
+
+Consider the projection
+\[
+(B,\Pi)\longmapsto B
+\]
+from the incidence set of §27.
+
+When \(B:E\to V\) is invertible,
+\[
+K_B=0,
+\qquad
+\mathfrak P(B)=\{I\}.
+\]
+Invertible \(4\times4\) maps are dense in the full matrix space.
+
+Therefore any continuous section
+\[
+s:B\longmapsto\Pi(B)\in\mathfrak P(B)
+\]
+must satisfy
+\[
+\Pi(B)=I
+\]
+on a dense set, hence everywhere.
+
+Thus
+\[
+\boxed{
+\Pi_{\rm cont}(B)\equiv I
+}
+\tag{39.1}
+\]
+is the **unique** globally continuous section of the local incidence
+resolution.
+
+It exists because \(BI=B\) for every \(B\).
+
+The intrinsic canonical section
+\[
+B\longmapsto P_{(\ker B)^\perp}
+\]
+is therefore not one among many possible continuous choices. It is necessarily
+discontinuous at every rank transition where it differs from \(I\).
+
+### Theorem 11 — unique continuous abstract kernel section
+
+For the stacked loop-defect map
+\[
+F:V_o\to Y
+\]
+with
+\[
+\dim Y\ge\dim V_o,
+\]
+injective maps are dense. For injective \(F\),
+\[
+\ker F=0,
+\qquad
+\mathfrak Q(F)=\{0\}.
+\]
+
+Therefore any continuous section
+\[
+q:F\longmapsto Q(F)\in\mathfrak Q(F)
+\]
+on the unrestricted linear-map space is forced to be
+\[
+\boxed{
+Q_{\rm cont}(F)\equiv0.
+}
+\tag{39.2}
+\]
+
+This theorem is stated for the abstract finite stacked defect space. The actual
+labelled-transport parameter space is a constrained subset, so no density claim
+about all physical holonomy families is inferred. At trivial holonomy,
+however, §30 realizes every subspace by actual invertible loop perturbations,
+so the same local obstruction is already physically present there.
+
+The two unique continuous sections are opposite extremals:
+\[
+\boxed{
+\Pi_{\rm cont}=I,
+\qquad
+Q_{\rm cont}=0.
+}
+\tag{39.3}
+\]
+
+By contrast, the current pointwise construction uses the opposite extremals
+at singular points:
+\[
+\Pi_{\rm int}=P_H
+\quad\text{(minimal local range)},
+\]
+\[
+Q_{\rm int}=P_{\mathcal H}
+\quad\text{(maximal fixed-kernel range)}.
+\]
+
+This extremal reversal is the structural origin of the two discontinuities.
+
+---
+
+## 40. The unique globally continuous unresolved completion is exactly the rejected predecessor selector
+
+Insert the unique continuous local section
+\[
+\Pi=I
+\]
+into the resolved correlated action:
+\[
+\widetilde C=S.
+\]
+Hence the residual vanishes identically:
+\[
+\widetilde D=S-\widetilde C=0.
+\]
+
+The seed becomes
+\[
+\widetilde a_r
+=
+-\bar b_r-S\varepsilon_r
+=
+-\bar b_r-\Delta v_r.
+\]
+Since
+\[
+\Delta v_r=v_r(y)-\bar v_r(y),
+\]
+\[
+\widetilde a_r
+=
+\bar v_r-\bar b_r-v_r(y).
+\]
+But this is exactly the landed predecessor defect:
+\[
+\boxed{
+\widetilde a_r=\rho_r.
+}
+\tag{40.1}
+\]
+
+Now insert the unique continuous abstract kernel section
+\[
+Q=0.
+\]
+Then
+\[
+\widetilde h=0,
+\qquad
+\boxed{
+\widetilde\delta_r=\widetilde a_r=\rho_r.
+}
+\tag{40.2}
+\]
+
+Thus the unique globally continuous unresolved completion of **both** projector
+incidence problems is not a new construction. It is precisely the predecessor
+selector rejected in PR #120.
+
+The old hostile controls now acquire a structural interpretation.
+
+### Pure affine shift
+
+For
+\[
+e=0,\qquad L=I,\qquad b\ne0,
+\]
+\[
+\rho=-b.
+\]
+The continuous completion gives
+\[
+\delta=-b,
+\]
+hence
+\[
+\boxed{
+\kappa=0,
+}
+\tag{40.3}
+\]
+erasing the required pure affine shift.
+
+### Coframe-only Nyquist/corner
+
+For
+\[
+b=0,
+\]
+\[
+\rho=-\Delta v
+\]
+at flat linear transport. The continuous completion therefore chooses
+\[
+\delta=-\Delta v
+\]
+and cancels the raw solder mismatch:
+\[
+\boxed{
+\kappa=0
+}
+\tag{40.4}
+\]
+on exactly the responses which the current selector was built to preserve.
+
+Therefore continuity does not fail because the repository chose a poor
+pseudoinverse convention. The globally continuous unresolved choice is known
+explicitly, and it fails the mandatory physics-facing finite controls.
+
+---
+
+## 41. Strong no-go: unrestricted continuity, current controls, and pointwise canonicity cannot coexist
+
+Combine §§27–40.
+
+Assume an unresolved selector is required to satisfy all of:
+
+1. it is single-valued on every finite pointwise background;
+2. it depends continuously on arbitrary local synthesis matrices and arbitrary
+   stacked loop-defect matrices;
+3. it respects the incidence constraints
+   \[
+   B\Pi=B,\qquad FQ=0;
+   \]
+4. it agrees with the forced regular values on invertible \(B\) and injective
+   \(F\);
+5. it preserves the repository's pure-shift and raw Nyquist/corner controls.
+
+Then 1–4 force
+\[
+\Pi=I,\qquad Q=0
+\]
+by Theorems 10–11. Section 40 then forces
+\[
+\delta=\rho,
+\]
+which violates condition 5.
+
+Hence:
+\[
+\boxed{
+\texttt{UNRESOLVED-GLOBAL-CONTINUOUS-SELECTION-PRESERVING-CONTROLS-NOGO}.
+}
+\tag{41.1}
+\]
+
+This no-go is scoped exactly:
+
+- finite-dimensional;
+- fixed archive level;
+- unrestricted local synthesis / abstract stacked-defect perturbations;
+- current active-factor and post-source incidence architecture;
+- current pure-shift and Nyquist/corner controls.
+
+It does **not** exclude:
+
+- continuity on a restricted admissible family;
+- the resolved background \((A,e,\Xi)\);
+- a new physical principle which constrains allowed rank/holonomy transitions;
+- a different theory which intentionally abandons the current raw controls.
+
+But it closes one tempting route completely:
+
+> there is no hidden globally continuous pointwise canonical selector waiting
+> to be found inside the existing incidence data while retaining the controls
+> that motivated PR #120.
+
+The choices are now mathematically exhaustive at this seam:
+
+\[
+\boxed{
+\text{restrict the domain}
+\quad\lor\quad
+\text{retain resolution memory}
+\quad\lor\quad
+\text{forget a mandatory distinction}.
+}
+\tag{41.2}
+\]
+
+---
+
+## 42. Implication for the next constitutive research
+
+This strengthens §35.
+
+The finite graded coframe-dressing task may still solve its own all-order
+problem. But if it is asked to couple to the already-owned affine-sensitive
+letter
+\[
+T_\kappa,
+\]
+then the no-go (41.1) prevents an unresolved globally continuous selector from
+being silently supplied underneath it.
+
+Moreover the unique continuous unresolved completion would feed
+\[
+\delta=\rho
+\]
+to the matter channel, exactly the choice already rejected for erasing pure
+shift and raw coframe responses.
+
+Therefore the next constitutive research should treat one of the following as
+part of its **typing**, not as a later regularity detail:
+
+\[
+\boxed{
+\begin{array}{ll}
+\textbf{stable-stratum input:} &
+(A,e)\in\mathfrak A_{\rm stable},
+\\[1mm]
+\textbf{resolved input:} &
+(A,e,\Xi),
+\end{array}}
+\tag{42.1}
+\]
+where \(\mathfrak A_{\rm stable}\) satisfies the exact lost-direction and
+selector-cluster criteria already derived.
+
+A future construction that writes only “arbitrary background” without saying
+which of these two meanings is intended will be under-typed at rank-transition
+points.
+
+This is a stability gate on the *mixed coupling*. It is not a claim that the
+coframe-only dressing \(\mathcal F_e\) itself cannot exist on arbitrary raw
+coframes.
