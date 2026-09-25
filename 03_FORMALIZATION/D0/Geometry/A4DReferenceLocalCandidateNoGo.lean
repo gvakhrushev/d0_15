@@ -1,3 +1,5 @@
+Review note: this module is a scoped no-go for the constant linear candidate class only.
+
 import Mathlib.Tactic
 import D0.Geometry.A4DTransportedReferenceMismatch
 
