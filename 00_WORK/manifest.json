@@ -86,7 +86,7 @@
       "id": "WRK-A4D-ROLE-OVERLAP-TWISTED-COCYCLE",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
       ],
