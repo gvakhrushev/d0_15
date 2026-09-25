@@ -126,6 +126,28 @@ Mandatory discipline:
 7. **Remote CI is acceptance truth.** Local timings/builds are supporting
    evidence; the ready PR must satisfy GitHub guards.
 
+## CI build-cache policy
+
+GitHub Lean CI restores D0's own `03_FORMALIZATION/.lake/build` separately from
+the Mathlib cache supplied by `leanprover/lean-action`.
+
+The cache compatibility prefix is pinned by:
+
+- runner OS;
+- `lean-toolchain`;
+- `lake-manifest.json`;
+- `lakefile.lean`.
+
+The exact key also includes the workflow commit SHA. On an exact miss,
+`restore-keys` may reuse the newest compatible D0 build from the current PR or
+the default branch; Lake remains responsible for rebuilding every changed or
+import-reachable module. This is an acceleration layer, not proof evidence.
+
+Do not broaden this cache to `.lake/packages`: Mathlib/dependency caching is
+already owned by `lean-action`. Bump the explicit cache epoch in
+`.github/workflows/lean-build.yml` when CONTROL needs to invalidate all D0
+build outputs.
+
 ## CI cost policy
 
 - Feature-branch pushes no longer run a second duplicate CI in addition to the
