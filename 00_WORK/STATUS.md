@@ -6,10 +6,10 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
-| CONTROL | 1 | 0 | 0 | 0 | 1 | 0 / 2 |
+| CONTROL | 1 | 1 | 0 | 0 | 2 | 1 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
 | WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **2** | **0** | **0** | **0** | **2** | **0 / 10** |
+| **Total** | **2** | **1** | **0** | **0** | **3** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -17,6 +17,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|
 | CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | CONTROL | PLANNED | ROOT | - |
 | WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1 | WORKER | PLANNED | CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | D0-TRACEABILITY-STATUS-TAXONOMY-001, D0-FINAL-BRIDGE-INDEX-001 |
+| CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE | CONTROL | IN_PROGRESS | ROOT | - |
 
 ## Registry Health & Metrics
 
@@ -30,14 +31,14 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
 | BRIDGE-CALIBRATION | 3 |
 | CERT-CLOSED | 193 |
-| CORE-FORMALIZED | 390 |
 | CORE_BRIDGE_SPLIT | 17 |
+| CORE-FORMALIZED | 390 |
 | DEPRECATED | 5 |
 | EMPIRICAL-PASSPORT | 13 |
 | EXTERNAL-BACKGROUND | 1 |
 | FORMALISM | 4 |
-| NO-GO | 133 |
 | NO_GO_PROVED | 6 |
+| NO-GO | 133 |
 | PASSPORT-CLOSED | 20 |
 | PROOF-TARGET | 74 |
 | **Total** | **889** |
