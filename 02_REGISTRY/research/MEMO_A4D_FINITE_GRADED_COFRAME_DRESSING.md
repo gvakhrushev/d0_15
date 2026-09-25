@@ -5,11 +5,15 @@
 **Research PR:** #134
 **Terminal:** `FINITE-GRADED-COFRAME-DRESSING-MODULI-CLASSIFIED`
 **Checker:** `02_REGISTRY/research/certificates/a4d_finite_graded_coframe_dressing_check.py`
+**Reconciled landed input:** PR #130 `MEMO_A4D_SELECTED_DIAGONAL_RANK_TRANSITION_CONTINUITY.md`
 
 ## 0. Verdict
 
-No canonical finite dressing \(\mathcal F_e\) is determined by the landed stack.
-Finite integration exists, but only as a family.
+No canonical coframe-only finite dressing \(\mathcal F_e\) is determined by the landed stack.
+Bare finite representatives exist after auxiliary finite-dimensional choices, but the full
+frame-covariant selection problem is not solved by those representatives. PR #130 now
+supplies the complementary obstruction: a coframe-only exact-orbit retraction cannot be
+equivariant under the owned full raw-solder frame action.
 
 The owned identity
 
@@ -63,7 +67,7 @@ Minimal missing datum, named exactly:
 
 \[
 \boxed{
-\sigma:\{\text{raw coframe modes}\}/\operatorname{im}d_f
+\Sigma_{\rm skew}:\{\text{raw coframe modes}\}/\operatorname{im}d_f
 \longrightarrow
 \{\text{skew operators on the CAR/group-algebra carrier}\},
 }
@@ -74,8 +78,8 @@ linear in the coframe, equal to \(\operatorname{skew}(G_{\xi})\) on
 No integer dimension is stated: the carrier dimension depends on \(L\) and on
 which CAR block is occupied, and no landed theorem fixes those.
 
-Nothing in PRs #123, #125, #126, #127, #128, #129 supplies \(\sigma\).
-Polar decomposition is the point \(\sigma=0\) off the exact chart, not a theorem.
+Nothing in PRs #123, #125, #126, #127, #128, #129 supplies \(\Sigma_{\rm skew}\).
+Polar decomposition is the point \(\Sigma_{\rm skew}=0\) off the exact chart, not a theorem.
 
 ## 0.0 The dressing is not a function of the coframe
 
@@ -115,8 +119,12 @@ W(\phi+c)=(F_\phi E)^{-T}(F_\phi E)^{-1}=F_\phi^{-T}F_\phi^{-1}=W(\phi).
 \]
 
 So \(W\) descends to the coframe and \(F\) does not. A finite dressing that
-specializes to \(F_\phi\) needs a section of \(d_f\): a gauge choice of
-potential on the exact chart, not a coframe.
+specializes to \(F_\phi\) needs either a section of \(d_f\) (a gauge-fixed
+representative) or a torsor/groupoid-valued formulation carrying the constant
+isotropy explicitly. PR #130 further proves that no coframe-only retraction onto
+the exact-coframe subspace can be equivariant under the owned full raw-solder
+frame action. Thus a gauge-fixed representative can witness finite existence,
+but it is not the final covariant target.
 
 ## 0.1 Single-site exponential is already impossible on the exact chart
 
@@ -203,7 +211,7 @@ raw coframe.
 
 | Landed fact | What it sees | What it does not see |
 |---|---|---|
-| #123/#126 \(J^{\rm can}=\mathcal S\circ\sigma\) on \(U=\operatorname{im}\mathcal B\) | labelled increments \((\Delta b,\Delta v)\) | fibre generator \(G(e)\) |
+| #123/#126 \(J^{\rm can}=\mathcal S\circ\Sigma_{\rm skew}\) on \(U=\operatorname{im}\mathcal B\) | labelled increments \((\Delta b,\Delta v)\) | fibre generator \(G(e)\) |
 | #125 sourced diagonal / \(\kappa\) | those increments plus a supplied comparison | \(\mathfrak{so}(4)\) of a coframe dressing |
 | #127 active-span extension independence | full-fibre extensions of \(J\) off \(U\) | a reason to use that freedom as \(G\) |
 | #128 classical passport | graphification \(M=0\) and endpoint descent \(D_\ell\) | a stable dressing |
@@ -218,18 +226,18 @@ sourced-diagonal chain never reads.
 
 ### 3.1 Ordered exponential of a chosen \(G\)
 
-Once \(\sigma\) is chosen, set
+Once \(\Sigma_{\rm skew}\) is chosen, set
 
 \[
-G(e)=-\tfrac12 H(e)+\sigma(P_\perp e)+G_{\rm exact}(P_{\rm exact}e)
+G(e)=-\tfrac12 H(e)+\Sigma_{\rm skew}(P_\perp e)+G_{\rm exact}(P_{\rm exact}e)
 \]
 
 with \(G_{\rm exact}\) the owned pure-gauge generator on \(\operatorname{im}d_f\),
 and integrate by ordered exponential along any chosen coframe path from \(0\).
 Flat identity holds. Pure-gauge specialization holds because
-\(P_\perp d_f\phi=0\). First derivative is \(H\) because \(\sigma\) is skew.
+\(P_\perp d_f\phi=0\). First derivative is \(H\) because \(\Sigma_{\rm skew}\) is skew.
 The path order of noncommuting transverse generators is a second extra datum
-inside this route. Neither \(\sigma\) nor the order is owned. The exponential is a representative of the family.
+inside this route. Neither \(\Sigma_{\rm skew}\) nor the order is owned. The exponential is a representative of the family.
 
 ### 3.2 Background-groupoid cocycle
 
@@ -245,7 +253,7 @@ The symmetric positive square root forces skew zero everywhere. That already
 contradicts the owned pure-gauge generator, whose skew part is nonzero at
 \(L=3\) (checker: `pure_gauge_skew_nonzero`). Restoring that skew on
 \(\operatorname{im}d_f\) and setting it to zero only transversely is exactly
-the choice \(\sigma=0\) off the exact chart. Positivity of \(I+H(e)\) for
+the choice \(\Sigma_{\rm skew}=0\) off the exact chart. Positivity of \(I+H(e)\) for
 arbitrary raw \(e\) is not owned.
 
 ### 3.4 Path-resolved graded trivialization
@@ -257,36 +265,48 @@ No landed path law is a function of the raw coframe skew.
 ### 3.5 Crossing with \(T_\kappa\)
 
 Not used to define \(G\). \(T_\kappa\) is typed from the diagonal seed, which
-depends on \((\Delta b,\Delta v)\) and \(J^{\rm can}\), not on \(\sigma\).
+depends on \((\Delta b,\Delta v)\) and \(J^{\rm can}\), not on \(\Sigma_{\rm skew}\).
 A mixed bracket \([G(e),N_\kappa]\) can be computed after both are typed.
-Different \(\sigma\) produce different brackets (checker: the two commutators
+Different \(\Sigma_{\rm skew}\) produce different brackets (checker: the two commutators
 differ). The bracket is a consequence, not a selector.
 
-### 3.6 Obstruction from pure-gauge vs transverse \(H\)
+### 3.6 Bare compatibility versus the covariance obstruction
 
-No inconsistency is found. The pure-gauge chart and the transverse symmetric
-constraint (1.2) are compatible. The failure mode is under-determination,
-not contradiction. The terminal is therefore not `OBSTRUCTED`.
+At the level of bare finite integration there is no inconsistency: the pure-gauge
+chart and the transverse symmetric constraint (1.2) are compatible, and explicit
+noncanonical representatives exist after choosing a retraction, a potential section,
+and a transverse orthogonal/skew law.
+
+The full task, however, also requires frame covariance. PR #130 now supplies the
+stronger boundary: under the owned full raw-solder frame action, a coframe-only
+exact-orbit retraction cannot be equivariant. Therefore the obstruction is not
+"finite integration does not exist"; it is "no canonical frame-equivariant
+coframe-only selection follows from the landed data."
+
+This is why the terminal remains `FINITE-GRADED-COFRAME-DRESSING-MODULI-CLASSIFIED`:
+the family and its nonselection are classified, while the next admissible target
+must be torsor/groupoid-valued or jointly background-typed rather than a silently
+canonical \(e\mapsto\mathcal F_e\).
 
 ## 4. Hostile controls
 
 | Control | Result |
 |---|---|
-| Flat background | \(H(0)=0\), \(G(0)=0\) for every \(\sigma\); \(\mathcal F_0=I\) |
-| Exact pure shift / translation gauge | \(e=d_f\phi\) lies in \(\operatorname{im}d_f\); \(\sigma\) is invisible; \(\mathcal F\) reduces to \(\mathcal F_\phi\) |
-| L=3 gauge rank drop | graphification and rank of \(\mathcal B\) do not read \(\sigma\) |
+| Flat background | \(H(0)=0\), \(G(0)=0\) for every \(\Sigma_{\rm skew}\); \(\mathcal F_0=I\) |
+| Exact pure shift / translation gauge | \(e=d_f\phi\) lies in \(\operatorname{im}d_f\); \(\Sigma_{\rm skew}\) is invisible; \(\mathcal F\) reduces to \(\mathcal F_\phi\) |
+| L=3 gauge rank drop | graphification and rank of \(\mathcal B\) do not read \(\Sigma_{\rm skew}\) |
 | L=2 Nyquist | off-diagonal symmetric \(H\) is retained; skew fibre over it is still free. Not deleted |
 | L=3 corner | same: the corner sits in \(\operatorname{sym}\), not in \(\mathfrak{so}(4)\) |
-| Harmonic raw coframe | can have \(H=0\) with \(e\notin\operatorname{im}d_f\); then \(G=\sigma(e)\) is pure skew and \(DW=0\). Two such \(G\) are distinguished only by \(\sigma\) |
-| Nontrivial labelled holonomy | endpoint descent fails for the path family; that predicate does not constrain \(\sigma\) |
-| Rank-deficient active span | #127: sourced chain ignores \(J\) off the span. It still ignores \(\sigma\) |
+| Harmonic raw coframe | can have \(H=0\) with \(e\notin\operatorname{im}d_f\); then \(G=\Sigma_{\rm skew}(e)\) is pure skew and \(DW=0\). Two such \(G\) are distinguished only by \(\Sigma_{\rm skew}\) |
+| Nontrivial labelled holonomy | endpoint descent fails for the path family; that predicate does not constrain \(\Sigma_{\rm skew}\) |
+| Rank-deficient active span | #127: sourced chain ignores \(J\) off the span. It still ignores \(\Sigma_{\rm skew}\) |
 
 No control was passed by dropping Nyquist, corner, or harmonic modes.
 
 ## 5. Second-order firewall
 
 No Hessian, \(Q\), universal \(S\), or second-order constitutive kernel is
-chosen. For each fixed \(\sigma\), the second derivative of the ordered
+chosen. For each fixed \(\Sigma_{\rm skew}\), the second derivative of the ordered
 exponential is a later object. It is not part of this classification.
 
 ## 6. Not claimed
@@ -305,8 +325,32 @@ that the transverse constant mode at \(L=3\) carries a free skew operator; that 
 difference at order \(\varepsilon\); that a nonzero corner entry of \(H\) does
 not remove the skew fibre.
 
-## 8. Handoff
+## 8. Reconciled handoff after PR #130
 
-The next constitutive step, if any, is to derive or explicitly adopt (0.2).
-Until that datum is owned, every finite \(\mathcal F_e\) is a representative
-of the family, not the family.
+The finite-existence question is no longer the frontier. The remaining constitutive
+research seam is an **equivariant joint-background dressing/groupoid law** which
+must decide its domain explicitly:
+
+\[
+(A,e)\in\mathfrak A_{\rm stable}
+\qquad\text{or}\qquad
+(A,e,\Xi)
+\]
+
+when the dressing is coupled to the already-owned affine-sensitive channel
+\(T_\kappa\).
+
+A satisfactory next construction must simultaneously account for:
+
+- the constant-potential orthogonal torsor of the exact pure-gauge dressing;
+- the no-go for a coframe-only frame-equivariant exact-orbit retraction;
+- the transverse skew/order modulus \(\Sigma_{\rm skew}\);
+- exact labelled path/background composition;
+- the stable/resolved \(\kappa\) typing from PR #130;
+- raw Nyquist/corner/harmonic controls without an endpoint quotient that erases them.
+
+Until such a law is owned, any explicit finite \(\mathcal F_e\) should be described
+as a **chosen representative** of the classified family, not as a canonical
+arbitrary-background dressing.
+
+No second-order Hessian/stress/Einstein step is opened by this terminal.
