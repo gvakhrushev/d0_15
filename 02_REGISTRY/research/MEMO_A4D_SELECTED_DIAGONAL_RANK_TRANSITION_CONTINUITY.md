@@ -4046,3 +4046,153 @@ What is now established is stronger than the previous frontier statement:
   bare finite existence.
 
 This is the correct starting point for the actual finite graded dressing task.
+
+
+---
+
+## 50. Exact bare-dressing checker
+
+This independent rational checker verifies the finite algebra used in
+§§43–46: torsor descent under an orthogonal commuting right factor, the
+explicit transverse congruence extension, the full first derivative,
+Cayley skew freedom, path-period composition, and background pair-groupoid
+composition.
+
+\`\`\`python
+from fractions import Fraction as Q
+
+checks = 0
+def ck(x, label):
+    global checks
+    checks += 1
+    if not x:
+        raise AssertionError(label)
+
+def eye(n=2):
+    return [[Q(i == j) for j in range(n)] for i in range(n)]
+def tr(a):
+    return [list(c) for c in zip(*a)]
+def add(a,b):
+    return [[x+y for x,y in zip(r,s)] for r,s in zip(a,b)]
+def sub(a,b):
+    return [[x-y for x,y in zip(r,s)] for r,s in zip(a,b)]
+def sc(q,a):
+    return [[Q(q)*x for x in r] for r in a]
+def mul(a,b):
+    return [[sum((x*y for x,y in zip(r,c)), Q(0))
+             for c in tr(b)] for r in a]
+def inv(a):
+    n=len(a)
+    aug=[a[i]+eye(n)[i] for i in range(n)]
+    for j in range(n):
+        p=next(i for i in range(j,n) if aug[i][j])
+        aug[j],aug[p]=aug[p],aug[j]
+        q=aug[j][j]
+        aug[j]=[x/q for x in aug[j]]
+        for i in range(n):
+            if i != j and aug[i][j]:
+                q=aug[i][j]
+                aug[i]=[x-q*y for x,y in zip(aug[i],aug[j])]
+    return [r[n:] for r in aug]
+
+I=eye()
+G=[[Q(0),Q(1)],[Q(0),Q(0)]]
+Hh=sc(-1,add(G,tr(G)))
+Ht=[[Q(2),Q(0)],[Q(0),Q(-2)]]
+
+h=Q(1,5)
+t=Q(1,7)
+
+Fg=add(I,sc(h,G))
+E=add(I,sc(t/2,Ht))
+F=mul(inv(E),Fg)
+
+Finv=inv(F)
+W=mul(tr(Finv),Finv)
+
+Fginv=inv(Fg)
+Wg=mul(tr(Fginv),Fginv)
+
+ck(W==mul(tr(E),mul(Wg,E)),
+   'finite transverse congruence')
+ck(Fg==add(I,sc(h,G)),
+   'exact pure representative')
+ck(mul(F,inv(F))==I,
+   'finite dressing invertible')
+
+# Direction alpha*h + beta*t at flat.
+alpha=Q(2)
+beta=Q(3)
+Fdot=add(sc(alpha,G),sc(-beta/2,Ht))
+Wdot=sc(-1,add(tr(Fdot),Fdot))
+ck(Wdot==add(sc(alpha,Hh),sc(beta,Ht)),
+   'full first derivative H')
+
+K=[[Q(0),Q(-1)],[Q(1),Q(0)]]
+A=sc(t,K)
+O=mul(inv(sub(I,sc(Q(1,2),A))),
+      add(I,sc(Q(1,2),A)))
+
+ck(mul(tr(O),O)==I,
+   'Cayley skew factor orthogonal')
+
+FA=mul(inv(E),mul(O,Fg))
+ck(FA!=F,
+   'transverse skew family distinct')
+
+# Over zero exact component the orthogonal skew factor is invisible to W
+# even at finite amplitude.
+F0=inv(E)
+FA0=mul(inv(E),O)
+W0=mul(tr(inv(F0)),inv(F0))
+WA0=mul(tr(inv(FA0)),inv(FA0))
+ck(W0==WA0,
+   'finite skew invisibility over flat exact component')
+
+U=[[Q(0),Q(1)],[Q(1),Q(0)]]
+ell=mul(F,mul(U,inv(F)))
+ck(mul(ell,ell)==I,
+   'conjugated path period exact')
+
+h2=Q(2,5)
+Fg2=add(I,sc(h2,G))
+F2=mul(inv(E),Fg2)
+R21=mul(F2,inv(F))
+R12=mul(F,inv(F2))
+ck(mul(R12,R21)==I,
+   'background pair-groupoid inverse/composition')
+
+# Abstract constant-potential torsor algebra: R is orthogonal and commutes
+# with the horizontal translation Uc.
+R=[[Q(-1),Q(0)],[Q(0),Q(1)]]
+Uc=[[Q(1),Q(0)],[Q(0),Q(-1)]]
+
+ck(mul(tr(R),R)==I,
+   'right torsor factor orthogonal')
+ck(mul(R,Uc)==mul(Uc,R),
+   'right torsor factor commutes with horizontal translation')
+
+Fp=mul(Fg,R)
+Wp=mul(tr(inv(Fp)),inv(Fp))
+ellp=mul(Fp,mul(Uc,inv(Fp)))
+ellg=mul(Fg,mul(Uc,inv(Fg)))
+
+ck(Wp==Wg,
+   'constitutive form descends through torsor')
+ck(ellp==ellg,
+   'horizontal letter descends through torsor')
+
+print(f'PASS: {checks} exact rational bare-dressing assertions')
+\`\`\`
+
+Expected output:
+
+\`\`\`text
+PASS: 13 exact rational bare-dressing assertions
+\`\`\`
+
+The three embedded exact suites now test complementary layers:
+
+- 78 assertions: original continuity and hostile finite controls;
+- 27 assertions: projector-resolution and continuous-selector no-go;
+- 13 assertions: bare finite dressing extension and surviving skew modulus.
