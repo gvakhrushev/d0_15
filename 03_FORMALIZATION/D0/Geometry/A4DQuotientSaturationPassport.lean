@@ -147,9 +147,14 @@ theorem le_saturateStep (B S : E →ₗ[ℝ] V) (W : Submodule ℝ V) :
 theorem saturateStep_mono (B S : E →ₗ[ℝ] V) {W₁ W₂ : Submodule ℝ V}
     (h : W₁ ≤ W₂) :
     saturateStep B S W₁ ≤ saturateStep B S W₂ := by
-  refine so_le_sup h ?_
+  refine sup_le_sup h ?_
   refine Submodule.map_mono ?_
   exact Submodule.comap_mono h
+
+/-- Multi-site saturation step `W ↦ W ⊔ ⨆ᵢ Sᵢ(Bᵢ⁻¹ W)`. -/
+def saturateStepFamily {ι : Type*} (B S : ι → E →ₗ[ℝ] V)
+    (W : Submodule ℝ V) : Submodule ℝ V :=
+  W ⊔ ⨆ i : ι, inducedImage (B i) (S i) W
 
 theorem le_saturateStepFamily {ι : Type*} (B S : ι → E →ₗ[ℝ] V)
     (W : Submodule ℝ V) :
@@ -178,12 +183,14 @@ theorem saturateIter_mono (B S : E →ₗ[ℝ] V) (W0 : Submodule ℝ V)
   | base => exact le_rfl
   | succ n _ ih => exact ih.trans (saturateIter_mono_succ B S W0 n)
 
+/-- Closed kernels are fixed by saturation. -/
 theorem saturateStep_eq_self_of_sameFibreGraphClosed
     (B S : E →ₗ[ℝ] V) (W : Submodule ℝ V)
     (h : SameFibreGraphClosed B S W) :
     saturateStep B S W = W := by
   simpa [saturateStep] using (sup_eq_left.mpr h)
 
+/-- Every same-fibre-closed subspace containing the seed contains every iterate. -/
 theorem saturateIter_le_of_closed
     (B S : E →ₗ[ℝ] V) (W0 W : Submodule ℝ V)
     (hW0 : W0 ≤ W) (hclosed : SameFibreGraphClosed B S W) :
@@ -193,8 +200,11 @@ theorem saturateIter_le_of_closed
   | zero => simpa [saturateIter_zero] using hW0
   | succ n ih =>
     rw [saturateIter_succ, saturateStep]
-    exact so_le ih ((Submodule.map_mono (Submodule.comap_mono ih)).trans hclosed)
+    exact sup_le ih ((Submodule.map_mono (Submodule.comap_mono ih)).trans hclosed)
 
+/-- Stabilization in finite dimension: some iterate equals the next.
+
+Pigeonhole on `Module.finrank`: an infinite strict chain of ranks is impossible. -/
 theorem exists_saturateIter_eq_succ [FiniteDimensional ℝ V]
     (B S : E →ₗ[ℝ] V) (W0 : Submodule ℝ V) :
     ∃ n : ℕ, saturateIter B S W0 (n + 1) = saturateIter B S W0 n := by
@@ -219,6 +229,7 @@ theorem exists_saturateIter_eq_succ [FiniteDimensional ℝ V]
   have : N + 1 ≤ N := (hge (N + 1)).trans hleN
   exact (Nat.not_succ_le_self N this).elim
 
+/-- Once dimensions stabilize, the iterate is a fixed point of `saturateStep`. -/
 theorem saturateIter_eq_succ_of_finrank_eq [FiniteDimensional ℝ V]
     (B S : E →ₗ[ℝ] V) (W0 : Submodule ℝ V) (n : ℕ)
     (hdim : Module.finrank ℝ (saturateIter B S W0 (n + 1)) =
@@ -227,6 +238,7 @@ theorem saturateIter_eq_succ_of_finrank_eq [FiniteDimensional ℝ V]
   refine (Submodule.eq_of_le_of_finrank_eq
     (saturateIter_mono_succ B S W0 n) hdim.symm).symm
 
+/-- The eventual fixed point is same-fibre closed. -/
 theorem sameFibreGraphClosed_of_saturateIter_fixed
     (B S : E →ₗ[ℝ] V) (W0 : Submodule ℝ V) (n : ℕ)
     (hfix : saturateIter B S W0 (n + 1) = saturateIter B S W0 n) :
@@ -235,11 +247,15 @@ theorem sameFibreGraphClosed_of_saturateIter_fixed
     simpa [saturateIter_succ] using hfix
   exact (sup_eq_left.mp (by simpa [saturateStep] using this))
 
+/-- Minimal closed extension: any closed `W` containing the seed contains the
+stabilized iterate. -/
 theorem saturateIter_minimal
     (B S : E →ₗ[ℝ] V) (W0 W : Submodule ℝ V) (n : ℕ)
     (hW0 : W0 ≤ W) (hclosed : SameFibreGraphClosed B S W) :
     saturateIter B S W0 n ≤ W :=
   saturateIter_le_of_closed B S W0 W hW0 hclosed n
+
+/-! ## Hostile control: quotient by vertical defect alone need not be closed -/
 
 /-- Choosing `W = verticalDefect B S` need not satisfy (11.1). Exact witness
 lives in `A4DQuotientSaturationWitness`. -/
