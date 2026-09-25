@@ -23,6 +23,34 @@ research/formalization obligation. The **operational work number is the GitHub P
 number**. Do not call executions “worker 1”, “worker 2”, etc.; say “PR #87” or
 “PR #86”. WORKER and EXPENSIVE use the same PR lifecycle.
 
+## GitHub-native task execution
+
+Chat is only the dispatch/control surface. The durable task definition and task output live in GitHub.
+
+For ordinary dispatch, the user-facing launch message should be short, for example:
+
+```text
+Run `EXP-A4D-...` from current `main`.
+Follow the brief in `00_WORK/tasks/` exactly.
+Open the Draft PR before research/implementation and write the result directly into that PR.
+```
+
+Execution contract for both `EXPENSIVE` and `WORKER`:
+
+1. Create a fresh task branch from current `main` (`exp/<task-slug>` or `wrk/<task-slug>`).
+2. Run `python tools/task_lifecycle.py start TASK-ID` as the first branch lifecycle change.
+3. Open a Draft PR immediately, before substantive research/code work.
+4. Commit the primary result directly to the artifact path named by the task brief.
+5. Keep large derivations, tables, exact witnesses, certificates, and research memos in GitHub; do not use chat as the durable notebook.
+6. Chat reports should normally contain only the PR link, the current verdict/status, and any blocker that needs a CONTROL decision.
+7. Before marking Ready, integrate the result exactly as required by the brief, run the required gates, then run `python tools/task_lifecycle.py retire TASK-ID`.
+8. Mark the same PR Ready with `Lifecycle: REVIEW`; merge remains the completion event.
+
+`EXPENSIVE` researchers are allowed and expected to mutate **their assigned task branch/PR**. Their normal write surface is `02_REGISTRY/research/` plus task-specific exact research certificates when requested. They must not edit Lean owners, claim release status, book/public claims, or unrelated registry rows unless the task brief explicitly authorizes that scope.
+
+`WORKER` executors write the implementation/certificate/formalization artifacts named by their briefs and follow the same Draft→REVIEW lifecycle.
+
+
 ## Source of truth
 
 1. **GitHub first.** No local implementation/research work starts before a Draft
