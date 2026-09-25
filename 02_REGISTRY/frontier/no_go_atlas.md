@@ -61,7 +61,8 @@ Each no-go states its **admissible completion class** (the exact object whose ad
 - durable packet: `02_REGISTRY/research/MEMO_A4D_AFFINE_CONJUGACY_ROLE_BIVECTOR_INSERTION_AUDIT.md`
 
 ### A4D-ROLE-INSERTION-SELECTOR-BOUNDARY
-- exact control calculation: proper Lorentz covariance on the Role bivector carrier leaves a 2-dimensional commutant; adding the odd spacelike Role swap reduces it to dimension 1
-- unresolved boundary: existing D0 work explicitly distinguishes simultaneous Role relabeling from local Lorentz covariance, so the odd swap cannot yet be imposed as a physical selector by fiat
-- admissible completion class: a theorem identifying the mandatory symmetry group of the finite `e∧e∧F` insertion, together with the typed Role-exterior weld
-- durable packet: `02_REGISTRY/research/MEMO_A4D_AFFINE_CONJUGACY_ROLE_BIVECTOR_INSERTION_AUDIT.md`
+- terminal typing result: the Role-exterior weld exists; the exact finite linear-curvature insertion space under the owned proper-Lorentz action is 2-dimensional, `span{I,star}`
+- convention repair: the raw solder right action `Theta -> Theta E` must be matched to affine gauge by `h.lin=E^-1`, so solder and curvature bivectors transform in the same `wedge^2 E^-1` representation
+- killed shortcut: a fixed-base internal `det=-1` reflection is not an Einstein selector; it removes the star/Palatini-like channel and keeps the identity/Holst-like channel
+- remaining downstream selector question: transform the complete density under simultaneous odd spatial Role/site relabeling, including both the base complement-orientation sign and the internal star pseudo-sign; do not infer this from the internal commutant alone
+- durable packet: `02_REGISTRY/research/MEMO_A4D_ROLE_BIVECTOR_INSERTION_UNIQUENESS.md`
