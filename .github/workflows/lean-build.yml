@@ -6,6 +6,7 @@ on:
     paths:
       - "03_FORMALIZATION/**"
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - "03_FORMALIZATION/**"
       - ".github/workflows/lean-build.yml"
@@ -23,23 +24,42 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Detect D0 formalization changes in triggering commit
+      - name: Decide whether full D0 Lean build is required
         id: d0-formalization
         shell: bash
         run: |
           set -euo pipefail
+
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            if [[ "${{ github.event.pull_request.draft }}" == "true" ]]; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+              echo "Draft PR: full D0.All is deferred until ready_for_review."
+              exit 0
+            fi
+
+            action="${{ github.event.action }}"
+            if [[ "$action" == "opened" || "$action" == "reopened" || "$action" == "ready_for_review" ]]; then
+              if git diff --quiet HEAD^1 HEAD -- 03_FORMALIZATION; then
+                echo "changed=false" >> "$GITHUB_OUTPUT"
+                echo "Ready/open PR has no D0 formalization diff."
+              else
+                echo "changed=true" >> "$GITHUB_OUTPUT"
+                echo "Ready/open PR changes D0 formalization: run one release closure."
+              fi
+              exit 0
+            fi
+
             head="${{ github.event.pull_request.head.sha }}"
             git fetch --no-tags --depth=2 origin "$head"
             parent="$(git rev-parse "$head^")"
             if git diff --quiet "$parent" "$head" -- 03_FORMALIZATION; then
               echo "changed=false" >> "$GITHUB_OUTPUT"
-              echo "Latest PR head commit does not change D0 formalization; full Lean build is unnecessary."
+              echo "Latest Ready PR commit does not change D0 formalization."
             else
               echo "changed=true" >> "$GITHUB_OUTPUT"
             fi
@@ -52,7 +72,7 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           elif git diff --quiet "$before" "$after" -- 03_FORMALIZATION; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "Push does not change D0 formalization; full Lean build is unnecessary."
+            echo "Push does not change D0 formalization."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
