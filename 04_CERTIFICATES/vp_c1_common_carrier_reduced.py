@@ -2,8 +2,9 @@
 """Reduced exact certificate for the C1 common-carrier research result.
 
 This certificate intentionally verifies the representation-reduced load-bearing
-identities rather than recomputing the full 33x359 rational RREF. The full
-research verifier is pinned by SHA-256 in C1_COMMON_CARRIER_RESULT.md.
+identities rather than recomputing the full 33x359 rational RREF. The historical
+research packet is preserved in Git history; current formal ownership is in
+03_FORMALIZATION/D0/Geometry/SignlessSignedCommonCarrier.lean and the registry.
 """
 from fractions import Fraction as F
 
