@@ -21,19 +21,38 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # PR checkout is a synthetic merge commit; main pushes are ordinary
-          # one-parent commits. Two levels are enough for HEAD^1..HEAD.
           fetch-depth: 2
 
-      - name: Detect D0 formalization changes
+      - name: Detect D0 formalization changes in triggering commit
         id: d0-formalization
         shell: bash
         run: |
+          set -euo pipefail
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
-          elif git diff --quiet HEAD^1 HEAD -- 03_FORMALIZATION; then
+            exit 0
+          fi
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            head="${{ github.event.pull_request.head.sha }}"
+            git fetch --no-tags --depth=2 origin "$head"
+            parent="$(git rev-parse "$head^")"
+            if git diff --quiet "$parent" "$head" -- 03_FORMALIZATION; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+              echo "Latest PR head commit does not change D0 formalization; full Lean build is unnecessary."
+            else
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
+            exit 0
+          fi
+
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+          if [[ -z "$before" || "$before" =~ ^0+$ ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff --quiet "$before" "$after" -- 03_FORMALIZATION; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No D0 formalization changes; full Lean build is unnecessary."
+            echo "Push does not change D0 formalization; full Lean build is unnecessary."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
@@ -45,8 +64,6 @@ jobs:
           lake-package-directory: "03_FORMALIZATION"
           build-args: "D0.All"
           use-mathlib-cache: "true"
-          # lean-action already restores/saves the whole project .lake cache.
-          # Keep this explicit; do not layer a second actions/cache over .lake.
           use-github-cache: "true"
           test: "false"
           lint: "false"
