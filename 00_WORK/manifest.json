@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
     },
     {
-      "id": "WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE",
-      "class": "WORKER",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Lean proves that the currently owned sourced-diagonal chain depends only on the active-span restriction of the relative A/e comparison, with an explicit rank-deficient witness showing distinct full extensions give identical downstream data.",
-      "brief": "00_WORK/tasks/WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE.md"
-    },
-    {
       "id": "WRK-A4D-LABELLED-ENDPOINT-CLASSICAL-DESCENT",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",

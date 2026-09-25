@@ -111,6 +111,7 @@ D0.Geometry.A4DSecondOrderCartanCongruence,D0/Geometry/A4DSecondOrderCartanCongr
 D0.Geometry.A4DScalarDeltaSecondJet,D0/Geometry/A4DScalarDeltaSecondJet.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
 D0.Geometry.A4DAffineMatterLiftObstruction,D0/Geometry/A4DAffineMatterLiftObstruction.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
 D0.Geometry.A4DActionGroupoidSecondJet,D0/Geometry/A4DActionGroupoidSecondJet.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
+D0.Geometry.A4DActiveSpanExtensionIndependence,D0/Geometry/A4DActiveSpanExtensionIndependence.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/MEMO_A4D_CLASSICAL_KINEMATIC_INTERFACE_PRESSURE.md
 D0.Geometry.A4DMovingDifferentialSecondJet,D0/Geometry/A4DMovingDifferentialSecondJet.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
 D0.Geometry.A4DCellHessianTransverseModulus,D0/Geometry/A4DCellHessianTransverseModulus.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
 D0.Geometry.A4DLocatedMatterCellEnergy,D0/Geometry/A4DLocatedMatterCellEnergy.lean,EXPLICIT_SUPPORT,00_WORK/tasks/WRK-A4D-SECOND-ORDER-CELL-ENERGY-WARD.md
