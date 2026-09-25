@@ -128,25 +128,23 @@ Mandatory discipline:
 
 ## CI build-cache policy
 
-GitHub Lean CI restores D0's own `03_FORMALIZATION/.lake/build` separately from
-the Mathlib cache supplied by `leanprover/lean-action`.
+GitHub Lean CI relies on the cache built into `leanprover/lean-action@v1`.
+That action restores and saves the package's full `03_FORMALIZATION/.lake`
+tree with a key pinned by runner OS/architecture, `lean-toolchain`,
+`lake-manifest.json`, and the commit SHA, with a compatible-prefix fallback.
 
-The cache compatibility prefix is pinned by:
+Do **not** add a second `actions/cache` layer over `.lake`: it duplicates
+restore/upload work and can make cache behavior harder to diagnose.
 
-- runner OS;
-- `lean-toolchain`;
-- `lake-manifest.json`;
-- `lakefile.lean`.
+The workflow additionally detects whether `03_FORMALIZATION/**` changed.
+For PRs or main pushes that only alter CI/control metadata, the full
+`D0.All` build is skipped. Explicit `workflow_dispatch` always runs the
+integration build.
 
-The exact key also includes the workflow commit SHA. On an exact miss,
-`restore-keys` may reuse the newest compatible D0 build from the current PR or
-the default branch; Lake remains responsible for rebuilding every changed or
-import-reachable module. This is an acceleration layer, not proof evidence.
-
-Do not broaden this cache to `.lake/packages`: Mathlib/dependency caching is
-already owned by `lean-action`. Bump the explicit cache epoch in
-`.github/workflows/lean-build.yml` when CONTROL needs to invalidate all D0
-build outputs.
+A cache miss is expected on the first compatible main build. Once that main
+run succeeds, later PRs may restore the default-branch Lake cache; Lake still
+rebuilds every changed/import-reachable module. Cache reuse is acceleration,
+not proof evidence.
 
 ## CI cost policy
 
