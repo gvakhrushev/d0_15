@@ -668,3 +668,25 @@ The terminal remains
 \]
 now with a literal normalizer theorem rather than only visible/invisible
 witnesses.
+
+
+---
+
+## 18. Ready lifecycle audit
+
+The normalizer/commutant pressure is closed.
+
+Final research surface:
+
+- full normalizer of \(\{T_b\}\);
+- full commutant;
+- pointwise exceptional equality separated from family normalization;
+- exact iff for two \((F,\Xi)\) pairs;
+- exact different-background composition and inverse in the normalizer sector;
+- site-dependent stabilizer control;
+- exact rational checker extended with all four new hostile fixtures.
+
+The canonical EXPENSIVE task is self-retired against the fresh worker queue.
+No new claim registration or Lean source is added here.
+
+Lifecycle: REVIEW.  Do not self-merge.
