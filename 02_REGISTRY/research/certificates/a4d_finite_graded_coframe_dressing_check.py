@@ -134,6 +134,21 @@ def landed_span_does_not_read_G():
     assert delta_b != delta_v
     assert any(S[i][j] != 0 for i in range(4) for j in range(4))
 
+def single_site_homomorphism_fails():
+    n = 3
+    D = central_difference(n)
+    def M(v):
+        A = zeros(n)
+        for i in range(n):
+            A[i][i] = v[i]
+        return A
+    G0 = mul(M([Q(1), Q(0), Q(0)]), D)
+    G1 = mul(M([Q(0), Q(1), Q(0)]), D)
+    C = sub(mul(G0, G1), mul(G1, G0))
+    assert any(C[i][j] != 0 for i in range(n) for j in range(n))
+    Cs = sub(mul(sym(G0), sym(G1)), mul(sym(G1), sym(G0)))
+    assert any(Cs[i][j] != 0 for i in range(n) for j in range(n))
+
 def main():
     tests = [
         pure_gauge_skew_nonzero,
@@ -141,6 +156,7 @@ def main():
         l2_does_not_separate,
         frame_keeps_skew_orbit,
         landed_span_does_not_read_G,
+        single_site_homomorphism_fails,
     ]
     for t in tests:
         t()

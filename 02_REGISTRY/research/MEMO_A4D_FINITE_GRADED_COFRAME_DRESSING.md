@@ -77,6 +77,44 @@ which CAR block is occupied, and no landed theorem fixes those.
 Nothing in PRs #123, #125, #126, #127, #128, #129 supplies \(\sigma\).
 Polar decomposition is the point \(\sigma=0\) off the exact chart, not a theorem.
 
+## 0.1 Single-site exponential is already impossible on the exact chart
+
+The modulus above is the linearized statement. The finite statement is
+sharper, and it does not need transverse modes.
+
+A single-site family \(e\mapsto\mathcal F_e\) with \(\mathcal F_0=I\) and
+linear tangent \(G\), required to be a homomorphism
+\(\mathcal F_{e_1+e_2}=\mathcal F_{e_1}\mathcal F_{e_2}\), must have
+
+\[
+[G(u),G(v)]=0
+\qquad\text{for all coframe values }u,v.
+\]
+
+On the scalar \(L=3\) block the owned shift piece \(M_{\xi}D\) of \(G_{\xi}\)
+already fails this on two exact directions \(\xi=\delta_0\) and
+\(\xi=\delta_1\):
+
+\[
+[M_{\delta_0}D,\,M_{\delta_1}D]
+=
+\begin{pmatrix}-9/4&0&9/4\\0&9/4&-9/4\\0&0&0\end{pmatrix}
+\neq 0.
+\]
+
+The same is true of the symmetric parts alone, so the failure is not an
+artefact of the skew piece. Therefore no coframe-linear single-site
+exponential homomorphism specializes to the owned pure-gauge generator.
+The owned \(\mathcal F_\phi\) evades this only because it is normal-ordered in
+the potential, \(F^{\rm sc}_\phi(x,y)=[\exp(\sum_a\phi^a(x)D_a)]_{xy}\),
+which is not a function of \(h=d_f\phi\) through the exponential of \(G(h)\).
+
+So the residual family, if it exists at all, cannot be a single-site
+\(\mathcal F_e\). It has to be potential-ordered on the exact chart and
+path-ordered off it. Both orderings are extra data. The transverse skew
+assignment of §0 is the linearized shadow of the second one; it is not a
+substitute for it.
+
 ## 1. Typing firewall
 
 Do not identify:
