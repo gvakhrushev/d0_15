@@ -6,6 +6,7 @@
 **Terminal:** `FINITE-GRADED-COFRAME-DRESSING-MODULI-CLASSIFIED`
 **Checker:** `02_REGISTRY/research/certificates/a4d_finite_graded_coframe_dressing_check.py`
 **Reconciled landed input:** PR #130 `MEMO_A4D_SELECTED_DIAGONAL_RANK_TRANSITION_CONTINUITY.md`
+**Lifecycle audit:** task row and canonical brief are retired on this Ready head.
 
 ## 0. Verdict
 
