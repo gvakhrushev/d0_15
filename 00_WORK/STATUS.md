@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
-| EXPENSIVE | 1 | 1 | 0 | 0 | 2 | 1 / 3 |
+| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
 | WORKER | 5 | 0 | 0 | 0 | 5 | 0 / 5 |
-| **Total** | **6** | **3** | **0** | **0** | **9** | **3 / 10** |
+| **Total** | **6** | **2** | **0** | **0** | **8** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -17,7 +17,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
 | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
-| EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID | EXPENSIVE | IN_PROGRESS | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 | EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION | EXPENSIVE | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
 | WRK-A4D-RESOLVED-CORRELATED-ACTION-PASSPORT | WORKER | PLANNED | CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | D0-HODGE-LINKS-001 |
