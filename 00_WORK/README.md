@@ -3,6 +3,98 @@
 This directory contains the queue/control scaffolding for the D0 research programme.
 **GitHub pull requests are the runtime execution plane.**
 
+## Cold-start task discovery
+
+Canonical repository: `gvakhrushev/d0_15`.
+
+A new chat/agent receiving only a D0 task ID must not ask which project it
+belongs to. It must read `AGENTS.md`, then resolve the task from
+`00_WORK/manifest.json` and its brief.
+
+Every executable brief (`WORKER` / `EXPENSIVE`) must be self-contained and
+include exactly one metadata line for each:
+
+```text
+Repository: `gvakhrushev/d0_15`
+Base: `main`
+Branch: `wrk/...|exp/...`
+Primary artifact: `repo/relative/path`
+Execution: `GitHub-first`
+```
+
+It must also contain:
+
+- `## Why delegated`;
+- `## GitHub execution contract`;
+- `## Chat handoff`.
+
+CI enforces this with `tools/validate_agent_protocol.py`.
+
+Portable dispatch is generated from Git, not handwritten in chat:
+
+```bash
+python tools/task_dispatch.py TASK-ID
+```
+
+If a task ID is absent from `main`, inspect open PRs before creating anything;
+an execution may already exist.
+
+## Delegation triage
+
+Do not create a task just because delegation is available.
+
+**CONTROL acts directly** for small deterministic repairs that can be completed
+safely in the current PR: a few related edits, process/registry cleanup, a short
+exact calculation, a simple CI fix, or a review correction with no independent
+research value.
+
+Create a **WORKER** only for a bounded independently reviewable artifact:
+certificate, formal proof/module, deterministic migration, reproducible finite
+computation, or substantial implementation.
+
+Create an **EXPENSIVE** task only when the answer is genuinely uncertain:
+classification, theorem/no-go discovery, competing constructions, or a large
+pressure test.
+
+Only CONTROL registers tasks. Executors do not mint child tasks from chat. The
+brief's `Why delegated` section must justify why direct CONTROL execution is
+not the better route.
+
+## Research search strategy: KILL-FIRST
+
+Before creating another mathematical class or a large Lean file, pass the
+candidate through:
+
+```text
+TYPE
+→ REPRESENTATION / Hom-space
+→ SYMMETRY
+→ MODULI DIMENSION
+→ FLAT LIMIT
+→ VARIATION
+→ GAUGE / CONSTRAINT QUOTIENT
+→ EXACT FINITE SPECTRUM
+→ PHYSICAL INTERPRETATION
+```
+
+Stop at the first failed gate. Prefer known classification/invariant theory and
+backward mathematical constraints over forward guessing.
+
+Keep distinct:
+
+[
+d_A=dim(	ext{action family}),qquad
+d_E=dim(	ext{Euler--Lagrange family}),qquad
+d_P=dim(	ext{physical operator family after quotient}).
+]
+
+Do not invent an action-level selector before checking whether different action
+parameters survive into (d_P).
+
+Lean follows **classify once, specialize late**: use exact finite certificates
+for search/rank/nullity/witnesses, then formalize the surviving generic theorem.
+Do not formalize every discarded candidate separately.
+
 ## GitHub-first execution model
 
 ```text
