@@ -61,17 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Classify the exact crossed coupling between a finite graded dressing representative/torsor and the affine-sensitive nilpotent T_kappa channel, including dependence on transverse skew/order and resolution moduli, exact semidirect/cocycle composition, pure-gauge specialization, and a theorem or no-go deciding which moduli remain observable without erasing mandatory raw controls.",
-      "brief": "00_WORK/tasks/EXP-A4D-CROSSED-DRESSING-MISMATCH-MATTER-ACTION.md"
-    },
-    {
       "id": "WRK-A4D-PURE-GAUGE-DRESSING-TORSOR-PASSPORT",
       "class": "WORKER",
       "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
