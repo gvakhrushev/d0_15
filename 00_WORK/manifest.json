@@ -40,7 +40,7 @@
       "id": "CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE",
       "class": "CONTROL",
       "parent": "ROOT",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [],
       "exit_condition": "The selected canonical star-density is pressure-tested through exact/linearized connection and coframe variation, torsion/constraint elimination, and gauge/physical quotient; d_E and d_P are classified or one exact downstream blocker is named.",
       "brief": "00_WORK/tasks/CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE.md"
