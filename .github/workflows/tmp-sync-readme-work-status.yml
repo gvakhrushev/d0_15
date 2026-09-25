@@ -1,0 +1,33 @@
+name: tmp-sync-readme-work-status
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: wrk/a4d-conditional-sourced-diagonal-transport
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Sync README work-queue counts and cleanup
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("README.md")
+          t = p.read_text()
+          old = "- **Tracked Queue/Control Tasks**: CONTROL: 2, EXPENSIVE: 2, WORKER: 2 (Total: 6)"
+          new = "- **Tracked Queue/Control Tasks**: CONTROL: 2, EXPENSIVE: 2, WORKER: 1 (Total: 5)"
+          if old not in t:
+            raise SystemExit("expected README work-queue line missing")
+          p.write_text(t.replace(old, new, 1))
+          print("README synced")
+          PY
+          rm -f .github/workflows/tmp-sync-readme-work-status.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Sync README work-queue counts after WRK-A4D-CONDITIONAL retire"
+          git push origin HEAD:wrk/a4d-conditional-sourced-diagonal-transport
