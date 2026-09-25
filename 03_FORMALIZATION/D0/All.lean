@@ -311,6 +311,8 @@ import D0.Geometry.A4DRawSolderFrameAction
 import D0.Geometry.A4DReferenceJunctionCompressionBoundary
 import D0.Geometry.A4DReferenceLocalCandidateNoGo
 import D0.Geometry.A4DRegularAEPassport
+import D0.Geometry.A4DQuotientSaturationPassport
+import D0.Geometry.A4DQuotientSaturationWitness
 import D0.Geometry.A4DRelativeAEComparisonSpan
 import D0.Geometry.A4DRoleOverlapTwistedCocycle
 import D0.Geometry.A4DRolePairMetricCarrier
