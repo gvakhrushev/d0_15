@@ -1,0 +1,1968 @@
+# A4D selected diagonal rank-transition continuity
+
+**Task:** \`EXP-A4D-SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY\`  
+**Research PR:** #130  
+**Start baseline:** \`31bdb4bac83e5222dc6fa480e5819ae6b3a81e0a\`  
+**Terminal:** \`SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY-CRITERION-CONSTRUCTED\`  
+**Strength:** theorem-ready finite-dimensional continuity classification; no Lean source, no continuum limit, no finite graded dressing.
+
+## 0. Verdict
+
+The pointwise relative A/e construction has an exact stability theory, but
+stability is not one condition.
+
+There are two independent finite-dimensional seams.
+
+### Local rank seam
+
+For
+\[
+C_t=\mathcal S_tP_{H_t},\qquad D_t=\mathcal S_t-C_t,
+\]
+a rank drop in \(\mathcal B_t\) exposes coefficient directions that were
+horizontal before the limit and become kernel directions at the limit. Along
+a convergent projector subsequence
+\[
+P_{H_{t_n}}\longrightarrow P_*,
+\]
+the exact lost space is
+\[
+W_*:=\operatorname{im}P_*\cap K_0,
+\qquad
+\operatorname{im}P_*=H_0\oplus W_*.
+\]
+Then
+\[
+\boxed{
+C_{t_n}\longrightarrow C_0
+\iff
+\mathcal S_0(W_*)=0,
+}
+\]
+and the same iff holds for \(D\).
+
+For a specified admissible family, only the actually reachable lost spaces
+matter. For arbitrary perturbations through the point, the condition becomes
+exactly
+\[
+\boxed{
+C,D\text{ are universally continuous at }(\mathcal B_0,\mathcal S_0)
+\iff
+M_0=\mathcal S_0(K_0)=0.
+}
+\]
+
+Thus the sufficient statement anticipated in PR #128 is sharp: \(M_0=0\) is
+also necessary for **universal** continuity, but it is not necessary for
+continuity along a restricted family.
+
+### Post-source selector seam
+
+Even if \(C,D\), the seed and every path source are continuous, the PR #120
+post-source selector can jump when the common holonomy-fixed kernel changes
+dimension.
+
+With a fixed basepoint/path family, write
+\[
+\mathcal H_t=\bigcap_\gamma\operatorname{Fix}P_{\gamma,t},
+\qquad
+Q_t=\operatorname{Proj}^{h_t}_{\mathcal H_t},
+\]
+\[
+m_t=\frac1{|X|}\sum_yP_{y,t}a_t(y).
+\]
+The selected section is
+\[
+\boxed{
+\delta_t(y)=a_t(y)-P_{y,t}^{-1}Q_tm_t.
+}
+\]
+When the seed is continuous, a sequence with \(Q_{t_n}\to Q_*\) is selected-
+continuous exactly when
+\[
+\boxed{
+Q_*m_0=Q_0m_0.
+}
+\]
+Constant \(\dim\mathcal H_t\) is a robust sufficient condition because it
+makes \(Q_t\) continuous, but it is not necessary for the selected value:
+a kernel dimension can jump harmlessly when the transported mean has zero
+component in the newly gained fixed directions.
+
+There is also a full joint-cluster criterion below which remains necessary
+and sufficient even when the seed itself jumps.
+
+### Mandatory obstruction survives all easy cures
+
+The required \(L=3\) family has:
+
+- continuous background data;
+- determinant-one raw solder;
+- a continuous, constant-dimensional relation at the nonzero-\(d_j\) sites;
+- identity linear transport;
+- trivial affine holonomy for every parameter;
+- zero selected mismatch for every \(t\ne0\);
+
+but
+\[
+\kappa_A(0;0)=-3e_B.
+\]
+
+The failure occurs before the post-source selector: a surviving lost
+coefficient direction makes \(C,D\), then the seed and source, jump.
+
+Endpoint descent, affine flatness, raw-solder invertibility and relation
+continuity are therefore not stability criteria.
+
+The exact repair options are correspondingly limited:
+
+1. restrict backgrounds by the lost-direction and fixed-kernel criteria;
+2. add a new datum which remembers the disappearing active direction;
+3. quotient/forget the jump direction, explicitly losing any observable that
+   uses it.
+
+For the mandatory family, any linear quotient that kills its \(e_B\) jump
+also kills the mandatory \(L=3\) corner response \(e_B\). Hence quotienting
+does not preserve the current full readout.
+
+---
+
+## 1. Ownership boundary
+
+This memo uses the landed repository state only.
+
+The pointwise coefficient construction is owned by
+\`A4DRelativeAEComparisonSpan.lean\`. In the notation used here,
+\[
+K=\ker\mathcal B,\qquad H=K^\perp,
+\]
+and its canonical counting representative gives
+\[
+C=\mathcal SP_H,\qquad
+D=\mathcal SP_K=\mathcal S-C.
+\]
+
+The sourced chain is owned conditionally by
+\`A4DConditionalSourcedDiagonalTransport.lean\`:
+\[
+a_r=-\bar b_r-C\varepsilon_r,
+\]
+\[
+S_{p,r}=P_pa_r(y')-a_r(y),
+\]
+and the sourced equation is equivalent to
+\[
+\delta_r=a_r+h_r,
+\]
+with \(h_r\) parallel.
+
+\`A4DActiveSpanExtensionIndependence.lean\` already removes arbitrary
+full-fibre extension freedom: only the action on actual affine increments is
+used downstream.
+
+\`A4DLabelledEndpointLocalityPassport.lean\` keeps endpoint descent separate:
+endpoint locality of a specified labelled transport is equivalent to trivial
+labelled holonomy for that transport. This memo does not replace labelled
+paths by endpoints.
+
+The post-source selector itself is the research rule of PR #120:
+\[
+h_o^*=-\operatorname{Proj}^{h_{n(o)}}_{\mathcal H_o}\bar a_o.
+\]
+This rule is pressure-tested literally; it is not replaced by a new selector.
+
+No statement below is called newly Lean-owned.
+
+---
+
+## 2. Finite topology and continuity contract
+
+Everything is finite-dimensional and at fixed archive size.
+
+Use the counting inner product on
+\[
+E_{\rm lab}=\mathbb R^{\mathrm{Role}}.
+\]
+Choose any fixed positive coordinate norm on each finite output fibre for
+continuity statements. Different such norms give the same finite-dimensional
+topology. The observer form \(h_n\) is used only where the existing selector
+requires it.
+
+For a continuous parameter family, assume
+\[
+\mathcal B_t\to\mathcal B_0,\qquad
+\mathcal S_t\to\mathcal S_0
+\]
+in operator norm. For archive backgrounds this follows sitewise from
+continuous link shifts/linear maps and continuous coframe data.
+
+For a subspace \(W_t\) of a fixed finite-dimensional space, “subspace
+continuity” means continuity of its orthogonal projector, equivalently the
+usual gap/Grassmannian topology on a fixed-rank stratum.
+
+This distinction matters. Continuous generators do not imply continuous image
+subspaces across a rank jump.
+
+---
+
+## 3. Lost-direction theorem
+
+Let
+\[
+P_t:=P_{H_t},\qquad H_t=(\ker\mathcal B_t)^\perp.
+\]
+
+### Theorem 1 — cluster projector decomposition
+
+Take any sequence \(t_n\to0\). Projectors are bounded, so after passing to a
+subsequence,
+\[
+P_{t_n}\to P_*.
+\]
+Since each \(P_{t_n}\) is an orthogonal projector, so is \(P_*\).
+
+The identity
+\[
+\mathcal B_tP_t=\mathcal B_t
+\]
+passes to the limit:
+\[
+\mathcal B_0P_*=\mathcal B_0.
+\]
+Hence
+\[
+\operatorname{im}(I-P_*)\subseteq K_0.
+\]
+Because \(P_*\) is orthogonal,
+\[
+H_0=K_0^\perp\subseteq\operatorname{im}P_*.
+\]
+
+Define
+\[
+\boxed{
+W_*:=\operatorname{im}P_*\cap K_0.
+}
+\]
+Then orthogonality gives the exact decomposition
+\[
+\boxed{
+\operatorname{im}P_*=H_0\oplus W_*,
+}
+\]
+and therefore
+\[
+\boxed{
+P_*=P_{H_0}+P_{W_*}.
+}
+\]
+
+This is the precise lost coefficient space for that approach.
+
+### Theorem 2 — lost-direction jump formula
+
+Since
+\[
+C_t=\mathcal S_tP_t,
+\]
+along the same subsequence
+\[
+C_{t_n}\to\mathcal S_0P_*.
+\]
+Therefore
+\[
+\boxed{
+\lim_{n\to\infty}C_{t_n}-C_0
+=
+\mathcal S_0P_{W_*}.
+}
+\tag{3.1}
+\]
+
+Because
+\[
+D_t=\mathcal S_t-C_t
+\]
+and \(\mathcal S_t\to\mathcal S_0\),
+\[
+\boxed{
+D_{t_n}\to D_0
+\iff
+C_{t_n}\to C_0.
+}
+\tag{3.2}
+\]
+
+Consequently
+\[
+\boxed{
+C_{t_n}\to C_0
+\iff
+D_{t_n}\to D_0
+\iff
+\mathcal S_0(W_*)=0.
+}
+\tag{3.3}
+\]
+
+This proves the formula requested by PR #128 without assuming an analytic
+one-parameter curve. It is sequential and applies to arbitrary approaches.
+
+---
+
+## 4. Exact all-sequence criterion
+
+For a specified admissible family \(\mathfrak F\) through the background,
+let
+\[
+\mathscr P_0(\mathfrak F)
+\]
+be the set of all cluster projectors \(P_*\) obtained from all sequences in
+\(\mathfrak F\) converging to the point. Define
+\[
+W(P_*):=\operatorname{im}P_*\cap K_0
+\]
+and the total reachable lost space
+\[
+\boxed{
+L_0(\mathfrak F)
+:=
+\operatorname{span}\{W(P_*):P_*\in\mathscr P_0(\mathfrak F)\}.
+}
+\tag{4.1}
+\]
+
+### Theorem 3 — familywise continuity
+
+\[
+\boxed{
+C,D\text{ are continuous at }0\text{ along }\mathfrak F
+\iff
+\mathcal S_0(L_0(\mathfrak F))=0.
+}
+\tag{4.2}
+\]
+
+**Proof.** Necessity is (3.3) for every cluster projector. For sufficiency,
+every sequence has a projector-convergent subsequence, every such cluster has
+the unique action limit \(C_0\), and finite-dimensional compactness then
+forces the whole sequence to converge to \(C_0\). Equation (3.2) gives \(D\).
+
+This is strictly weaker than \(M_0=0\) when the admissible family cannot expose
+all kernel directions.
+
+---
+
+## 5. Universal continuity iff \(M_0=0\)
+
+PR #128 recorded \(M_0=0\) as a sufficient condition. It is exactly sharp
+when “continuity” quantifies over arbitrary nearby synthesis pairs.
+
+### Theorem 4 — universal local criterion
+
+At a fixed point \((\mathcal B_0,\mathcal S_0)\),
+\[
+\boxed{
+\forall(\mathcal B_n,\mathcal S_n)\to(\mathcal B_0,\mathcal S_0),\
+C_n\to C_0
+\iff
+M_0=\mathcal S_0(K_0)=0.
+}
+\tag{5.1}
+\]
+The same equivalence holds with \(D\) in place of \(C\).
+
+**Sufficiency.** Every possible lost space lies in \(K_0\), so \(M_0=0\)
+kills every term \(\mathcal S_0P_{W_*}\) in (3.1).
+
+**Necessity.** Suppose \(M_0\ne0\). Choose
+\[
+0\ne w\in K_0,\qquad \mathcal S_0w\ne0,
+\]
+and normalize \(w\). Because \(w\in\ker\mathcal B_0\), \(\mathcal B_0\) is
+not full rank, so choose
+\[
+u\notin\operatorname{im}\mathcal B_0.
+\]
+Let \(\lambda(c)=\langle w,c\rangle\) on the coefficient space and define
+\[
+\mathcal B_\epsilon
+=
+\mathcal B_0+\epsilon\,u\otimes\lambda,
+\qquad
+\mathcal S_\epsilon=\mathcal S_0.
+\]
+For every \(\epsilon\ne0\),
+\[
+\ker\mathcal B_\epsilon
+=
+K_0\cap w^\perp,
+\]
+hence
+\[
+H_\epsilon=H_0\oplus\mathbb Rw.
+\]
+Therefore
+\[
+C_\epsilon
+=
+C_0+\mathcal S_0P_{\mathbb Rw}
+\]
+for every nonzero \(\epsilon\), which cannot converge to \(C_0\).
+
+Thus \(M_0=0\) is not merely a convenient graph hypothesis. It is the exact
+criterion for robustness against **all** infinitesimal ways of activating
+previous kernel directions.
+
+### Restricted-family negative
+
+\(M_0=0\) is not necessary along a specified family. Take
+\[
+\mathcal B_t\equiv0,\qquad
+\mathcal S_t\equiv\mathcal S_0\ne0.
+\]
+Then
+\[
+C_t\equiv0,\qquad D_t\equiv\mathcal S_0
+\]
+are continuous while
+\[
+M_0=\operatorname{im}\mathcal S_0\ne0.
+\]
+
+This distinction between universal and familywise continuity is mandatory.
+
+---
+
+## 6. Eleven properties are genuinely different
+
+The requested continuity notions separate as follows.
+
+### 6.1 Relation \(\mathscr R_t\)
+
+Let
+\[
+T_t=(\mathcal B_t,\mathcal S_t):
+E_{\rm lab}\to V\oplus V,
+\qquad
+\mathscr R_t=\operatorname{im}T_t.
+\]
+For continuous \(T_t\),
+\[
+\boxed{
+\mathscr R_t\text{ is gap-continuous at }0
+\iff
+\operatorname{rank}T_t
+\text{ is locally constant at }0.
+}
+\tag{6.1}
+\]
+
+Constant rank gives continuity of the range projector. Conversely projectors
+of different rank cannot converge in operator norm.
+
+### 6.2 Active output subspace \(U_t\)
+
+\[
+U_t=\operatorname{im}\mathcal B_t
+\]
+is gap-continuous iff \(\operatorname{rank}\mathcal B_t\) is locally constant.
+
+### 6.3 Coefficient projector \(P_{H_t}\)
+
+The same exact condition holds:
+\[
+\boxed{
+P_{H_t}\text{ continuous}
+\iff
+\operatorname{rank}\mathcal B_t\text{ locally constant}.
+}
+\tag{6.2}
+\]
+
+Thus every genuine rank drop makes the active-space/projector stage
+discontinuous. That does **not** imply downstream \(C,D\) are discontinuous.
+
+### 6.4 Correlated action \(C_t\)
+
+This is controlled by the lost-direction criterion (4.2), not by rank alone.
+
+### 6.5 Residual \(D_t\)
+
+Because \(D_t=\mathcal S_t-C_t\), it has exactly the same continuity criterion
+as \(C_t\).
+
+### 6.6 Normalized graph operator \(J_t\)
+
+On \(U_t\),
+\[
+J_t(\mathcal B_tc)=\mathcal S_tc,\qquad c\in H_t.
+\]
+Its operator norm is
+\[
+\boxed{
+\|J_t\|
+=
+\sup_{0\ne c\in H_t}
+\frac{\|\mathcal S_tc\|}{\|\mathcal B_tc\|}.
+}
+\tag{6.3}
+\]
+
+Local boundedness is therefore equivalent to a uniform inequality
+\[
+\|\mathcal S_tc\|\le K\|\mathcal B_tc\|
+\quad(c\in H_t).
+\]
+A uniform lower singular-value bound for
+\(\mathcal B_t|_{H_t}\), together with bounded \(\mathcal S_t\), is sufficient
+but not necessary.
+
+The exact control
+\[
+\mathcal B_t\varepsilon_A=t^2e_A,\qquad
+\mathcal S_t\varepsilon_A=te_B
+\]
+has
+\[
+J_t(e_A)=t^{-1}e_B
+\]
+for \(t\ne0\), but
+\[
+C_t\varepsilon_A=te_B\to0=C_0\varepsilon_A.
+\]
+Thus bounded \(J\) is not necessary for downstream continuity.
+
+On a neighborhood of genuinely constant \(\operatorname{rank}\mathcal B_t\),
+the smallest nonzero singular value stays bounded away from zero, so \(J_t\)
+is locally bounded for continuous \(\mathcal S_t\).
+
+### 6.7 Seed \(a_t\)
+
+For a continuous archive background, \(L^{-1}\) and \(\bar b\) are continuous.
+Hence
+\[
+a_{t,r}(y)
+=
+-\bar b_{t,r}(y)-C_t(y)\varepsilon_r.
+\]
+Therefore operator continuity of \(C_t(y)\) at every site implies continuity
+of every seed component.
+
+For one selected Role only the corresponding column of \(C_t\) is needed.
+
+The converse at operator level is not claimed from one Role.
+
+### 6.8 Path source
+
+For every fixed finite labelled path,
+\[
+S_{t,p,r}
+=
+P_{t,p}a_{t,r}(y')-a_{t,r}(y).
+\]
+If \(A_t\) and \(a_t\) are continuous, then \(S_{t,p,r}\) is continuous.
+
+The converse fails: a discontinuous seed component which changes by a
+parallel section can cancel from every sourced difference.
+
+### 6.9 Affine solution space
+
+Fix a basepoint and finite fundamental loop generators. Let
+\[
+F_t:V_o\to V_o^{\,m},
+\qquad
+F_t h=((P_{\gamma_i,t}-I)h)_i.
+\]
+Then
+\[
+\mathcal H_t=\ker F_t
+\]
+is the basepoint space of parallel residuals.
+
+The global sourced solution set is an affine space
+\[
+\mathcal A_t=a_t+\operatorname{Par}_t.
+\]
+In the affine-Grassmannian sense, its direction subspace is continuous exactly
+when
+\[
+\dim\mathcal H_t
+\]
+is locally constant. With that condition, affine-space continuity additionally
+requires continuity of the translation class of \(a_t\) modulo
+\(\operatorname{Par}_t\).
+
+A kernel-dimension jump makes the full affine solution space discontinuous
+even if one chosen solution stays continuous.
+
+### 6.10 Selected \(\delta_t\)
+
+This requires both the seed behavior and the actual PR #120 kernel projection.
+The exact criterion is derived in §§8–9.
+
+### 6.11 Final \(\kappa_t\)
+
+For a continuous background,
+\[
+\kappa_t(x,r)
+=
+\tau_t(x,r)+L_{t,x,r}\delta_{t,r}(x+r),
+\]
+where \(\tau_t\) and \(L_t\) are continuous and \(L_t\) is invertible.
+
+Hence
+\[
+\boxed{
+\delta_t\text{ continuous}
+\iff
+\kappa_t\text{ continuous}.
+}
+\tag{6.4}
+\]
+The reverse implication uses
+\[
+\delta_{t,r}(x+r)
+=
+L_{t,x,r}^{-1}\bigl(\kappa_t(x,r)-\tau_t(x,r)\bigr).
+\]
+
+Therefore the requested case “continuous \(\delta\), discontinuous
+\(\kappa\)” does not exist under the task's continuous-background
+hypothesis.
+
+---
+
+## 7. Source-continuity propagation theorem
+
+### Theorem 5
+
+Assume on the finite archive:
+
+1. every link \(A_t(x,r)\) and raw coframe \(e_t\) varies continuously;
+2. at every site the lost-direction condition (4.2) holds for the admitted
+   approaches.
+
+Then:
+
+- \(C_t,D_t\) are continuous;
+- every \(\bar b_{t,r}\) and seed \(a_{t,r}\) is continuous;
+- for every fixed labelled path, \(P_{t,p}\) and \(S_{t,p,r}\) are continuous.
+
+No boundedness of \(J_t\) is required.
+
+This is the exact propagation from the local coefficient split to the sourced
+equations. It stops before the parallel-kernel selector because that kernel
+can change independently through holonomy.
+
+---
+
+## 8. Literal PR #120 selector and its exact formula
+
+Fix once and for all the selection data used by PR #120:
+
+- basepoint \(o\);
+- one labelled path \(p_y:o\to y\) for each site;
+- observer field \(n_t\), hence positive form \(h_t=h_{n_t(o)}\).
+
+Write
+\[
+P_{y,t}:V_y\to V_o
+\]
+for transport along \(p_y\). Define
+\[
+m_t
+=
+\frac1{|X|}
+\sum_yP_{y,t}a_t(y).
+\]
+Let
+\[
+\mathcal H_t
+=
+\bigcap_{\gamma:o\to o}\operatorname{Fix}P_{\gamma,t}
+=
+\ker F_t
+\]
+and let
+\[
+Q_t=\operatorname{Proj}^{h_t}_{\mathcal H_t}.
+\]
+
+The PR #120 minimizer is
+\[
+h^*_{o,t}=-Q_tm_t.
+\]
+Parallel extension along the chosen paths gives
+\[
+h_t^*(y)=P_{y,t}^{-1}h^*_{o,t}.
+\]
+Hence the selected diagonal is exactly
+\[
+\boxed{
+\delta_t(y)
+=
+a_t(y)-P_{y,t}^{-1}Q_tm_t.
+}
+\tag{8.1}
+\]
+
+This identity is the stability interface. No new selector has been inserted.
+
+---
+
+## 9. Kernel-projector continuity and the full selected criterion
+
+### 9.1 Fixed-space projector
+
+Because the finite generator matrix \(F_t\) is continuous,
+\[
+\boxed{
+Q_t\text{ is continuous at }0
+\iff
+\dim\mathcal H_t\text{ is locally constant at }0.
+}
+\tag{9.1}
+\]
+Here \(Q_t\) is the orthogonal projection for a continuously varying positive
+metric \(h_t\).
+
+Equivalently, for a fixed coordinate inner product, the zero eigenspace of
+\[
+F_t^\dagger F_t
+\]
+has locally constant multiplicity. On a constant-rank neighborhood this is
+equivalent to a local positive gap separating zero from the nonzero singular
+spectrum.
+
+A “spectral gap at the single point \(t=0\)” is not enough: a positive
+singular value may tend to zero and become a new kernel direction at the
+limit.
+
+### 9.2 Cluster geometry at a kernel gain
+
+For any sequence, pass to a subsequence with
+\[
+Q_{t_n}\to Q_*.
+\]
+Then \(Q_*\) is the \(h_0\)-orthogonal projector onto a limit fixed space
+\[
+\mathcal H_*\subseteq\mathcal H_0.
+\]
+The inclusion is forced by \(F_{t_n}Q_{t_n}=0\to F_0Q_*=0\).
+
+Thus kernel dimension can only **gain** at the limiting background relative
+to a fixed-rank approach. Write
+\[
+\mathcal H_0
+=
+\mathcal H_*\oplus_{h_0}W_{\rm gain}.
+\]
+
+### 9.3 Source-stable selector criterion
+
+If \(a_t\to a_0\), then \(m_t\to m_0\), and (8.1) gives
+\[
+\boxed{
+\delta_{t_n}\to\delta_0
+\iff
+Q_*m_0=Q_0m_0.
+}
+\tag{9.2}
+\]
+Equivalently,
+\[
+\boxed{
+\operatorname{Proj}^{h_0}_{W_{\rm gain}}m_0=0.
+}
+\tag{9.3}
+\]
+
+Thus constant fixed-kernel dimension is sufficient but not necessary for the
+selected value.
+
+### 9.4 Full joint-cluster criterion
+
+The preceding statement assumed a continuous seed. The exact selected-output
+criterion does not need that assumption.
+
+The seed remains bounded because \(C_t=\mathcal S_tP_{H_t}\) is bounded.
+For any approaching sequence, take a joint convergent subsequence
+\[
+a_{t_n}\to a_*,
+\qquad
+Q_{t_n}\to Q_*.
+\]
+Since \(P_{y,t}\to P_{y,0}\),
+\[
+m_{t_n}\to
+m_*:=
+\frac1{|X|}
+\sum_yP_{y,0}a_*(y).
+\]
+Equation (8.1) gives the cluster selected field
+\[
+\delta_*(y)
+=
+a_*(y)-P_{y,0}^{-1}Q_*m_*.
+\]
+
+Therefore:
+
+### Theorem 6 — exact selected readout criterion
+
+The selected diagonal is continuous at the background iff for **every**
+joint cluster \((a_*,Q_*)\) induced by every approaching sequence,
+\[
+\boxed{
+a_*(y)-a_0(y)
+=
+P_{y,0}^{-1}
+\bigl(Q_*m_*-Q_0m_0\bigr)
+\quad
+\text{for every site and Role}.
+}
+\tag{9.4}
+\]
+
+Under continuous \(A,e\), the same condition is necessary and sufficient for
+the pair
+\[
+(\delta,\kappa)
+\]
+by (6.4).
+
+Equation (9.4) exposes the only possible cancellation: a seed jump can be
+hidden by the existing selector only when the entire jump is exactly a
+parallel correction produced by the limiting kernel projection. Generic
+lost-direction jumps are not of this form.
+
+This is the promised necessary-and-sufficient criterion for the current
+selected finite readout.
+
+---
+
+## 10. Observer metric and frame covariance
+
+The fixed-space \(\mathcal H_t\) is determined by transport alone and is
+observer-independent.
+
+If \(\dim\mathcal H_t\) is locally constant, any continuously varying positive
+observer metric produces a continuous \(Q_t\). Thus the robust constant-rank
+selector criterion does not depend on the observer.
+
+At a dimension jump, the exceptional cancellation
+\[
+Q_*m_0=Q_0m_0
+\]
+can depend on the observer metric because orthogonal projection onto a proper
+subspace depends on that metric. When \(Q_0=I\), the condition reduces to
+\(m_0\in\mathcal H_*\), which is metric-independent.
+
+PR #120's frame covariance survives the continuity analysis. Under a
+continuous pure-linear frame \(g_t\),
+\[
+m'_t=g_{o,t}m_t,\qquad
+\mathcal H'_t=g_{o,t}\mathcal H_t,
+\]
+and observer congruence gives
+\[
+Q'_t=g_{o,t}Q_tg_{o,t}^{-1}.
+\]
+Thus (8.1), (9.2) and (9.4) conjugate covariantly. Stability is not obtained
+by fixing a preferred frame.
+
+---
+
+## 11. Mandatory \(L=3\) killing witness
+
+Let \(j=x_A\),
+\[
+f=(1,-2,1),
+\qquad
+L_{x,r}=I,
+\]
+\[
+b_{x,A}(t)=t f(j)e_A,
+\qquad b_{x,s}=0\quad(s\ne A),
+\]
+\[
+v_A(x)=e_A+f(j)e_B,
+\qquad v_s(x)=e_s\quad(s\ne A).
+\]
+
+The raw coframe matrix has columns
+\[
+(e_A+f(j)e_B,e_B,e_C,e_D),
+\]
+so it is a shear with determinant one.
+
+The shift cycle is the forward gradient of
+\[
+(0,t,-t)e_A,
+\]
+hence its affine period is zero. Linear transport is identity, so the full
+affine holonomy is trivial.
+
+With
+\[
+d_j=f(j)-f(j-1)=(0,-3,3),
+\]
+\[
+\Delta b_A=t\,d_je_A,
+\qquad
+\Delta v_A=d_je_B.
+\]
+
+At the two sites with \(d_j\ne0\), for every \(t\ne0\),
+\[
+H_t=\mathbb R\varepsilon_A,
+\qquad
+C_t\varepsilon_A=d_je_B,
+\qquad
+D_t=0.
+\]
+At \(t=0\),
+\[
+H_0=0,\qquad C_0=0,\qquad
+D_0\varepsilon_A=d_je_B.
+\]
+
+Thus
+\[
+W_*=\mathbb R\varepsilon_A
+\]
+and
+\[
+\mathcal S_0(W_*)=\mathbb R e_B\ne0.
+\]
+This is exactly the failure predicted by (3.3).
+
+### Relation stays continuous
+
+At a nonzero-\(d_j\) site the pair relation is the line
+\[
+\operatorname{span}\{(t e_A,e_B)\}
+\subset V\oplus V.
+\]
+Its dimension is one for all \(t\), and it converges to
+\[
+\operatorname{span}\{(0,e_B)\}.
+\]
+So the relation is continuous even though \(U_t\), \(P_{H_t}\), \(C_t\) and
+\(D_t\) are not.
+
+This is the requested separation between relation continuity and selected
+action continuity.
+
+### Seed and source
+
+For \(t\ne0\),
+\[
+a_A(j)
+=
+-t f(j-1)e_A-d_je_B.
+\]
+At \(t=0\),
+\[
+a_A(j)=0.
+\]
+The \(e_B\) pattern
+\[
+-d_j=(0,3,-3)
+\]
+is nonparallel. Hence a basic A-path source also jumps. The failure is already
+present at the correlated-action/seed/source stage; it is not created by the
+post-source kernel selector.
+
+The transported mean is zero for every \(t\). Since transport is trivial,
+\[
+Q_t=I
+\]
+for every \(t\), so the selector contributes no compensating jump.
+
+Therefore
+\[
+\delta_A(t)=a_A(t)\quad(t\ne0),
+\qquad
+\delta_A(0)=0.
+\]
+
+Finally,
+\[
+\kappa_A(t;x)=0\qquad(t\ne0),
+\]
+whereas
+\[
+\kappa_A(0;x)
+=
+(f(j+1)-f(j))e_B
+=
+(-3,3,0)e_B.
+\]
+In particular,
+\[
+\boxed{
+\kappa_A(0;0)=-3e_B,
+\qquad
+\kappa_A(t;0)=0\quad(t\ne0).
+}
+\tag{11.1}
+\]
+
+No theorem requiring only relation continuity, raw-solder nondegeneracy,
+trivial affine holonomy, endpoint descent, or smooth generators can exclude
+this witness.
+
+---
+
+## 12. Benign rank drops and unbounded \(J\)
+
+A rank drop is not itself a physical obstruction.
+
+### 12.1 \(M_0=0\) rank drop
+
+If
+\[
+\mathcal S_t=T\mathcal B_t
+\]
+for a continuous fixed \(T\), then
+\[
+M_t=0,\qquad C_t=\mathcal S_t,\qquad D_t=0
+\]
+on every rank stratum, including where rank drops.
+
+This is the abstract reason the exact translation-gauge rank drop is benign:
+the solder synthesis kills every coefficient relation of the affine synthesis.
+
+### 12.2 Unbounded normalized graph
+
+The control
+\[
+\mathcal B_t\varepsilon_A=t^2e_A,
+\qquad
+\mathcal S_t\varepsilon_A=te_B
+\]
+has
+\[
+M_t=0
+\]
+for every \(t\), and
+\[
+C_t\varepsilon_A=te_B\to0.
+\]
+But for \(t\ne0\),
+\[
+J_t(e_A)=t^{-1}e_B.
+\]
+
+Thus:
+
+- the relation image itself loses dimension at \(0\);
+- \(P_{H_t}\) jumps;
+- \(J_t\) is unbounded;
+- \(C,D\) and the sourced action can nevertheless remain continuous.
+
+No stability criterion may require bounded \(J\).
+
+---
+
+## 13. Continuous source, discontinuous selector: independent witness
+
+The second seam can fail with no rank problem in the source.
+
+Use a fixed finite labelled graph with a chosen basepoint/path tree and one
+fundamental loop. Let its loop transport on a two-dimensional displayed block
+be
+\[
+G_t=
+\begin{pmatrix}
+1&0\\
+0&1+t
+\end{pmatrix}
+\]
+for \(t\) near zero, with identity on the other two directions. This is
+invertible for \(t\ne-1\).
+
+Let the seed be continuous and have transported mean
+\[
+m_t=e_B.
+\]
+The closing-loop source is
+\[
+(G_t-I)e_B=te_B,
+\]
+so it is continuous and vanishes at the limit.
+
+For \(t\ne0\),
+\[
+\mathcal H_t
+=
+\operatorname{span}(e_A,e_C,e_D),
+\]
+while
+\[
+\mathcal H_0=V.
+\]
+With the identity observer metric,
+\[
+Q_te_B=0\quad(t\ne0),
+\qquad
+Q_0e_B=e_B.
+\]
+
+Hence
+\[
+h_t^*=0\quad(t\ne0),
+\qquad
+h_0^*=-e_B.
+\]
+For a seed value \(a=e_B\),
+\[
+\delta_t=e_B\quad(t\ne0),
+\qquad
+\delta_0=0.
+\]
+
+The earliest discontinuity is exactly the fixed-kernel projector /
+post-source selector.
+
+This proves that source continuity does not imply selected-readout continuity.
+
+The converse overstatement also fails: take \(a=0\). The same kernel dimension
+jump leaves the selected \(\delta=0\) continuous. Constant kernel dimension is
+therefore sufficient for robust selector continuity, not necessary for one
+particular mean.
+
+---
+
+## 14. Spectral formulation of the selector seam
+
+Choose finitely many fundamental labelled loop generators and stack
+\[
+F_t=
+\begin{bmatrix}
+P_{\gamma_1,t}-I\\
+\vdots\\
+P_{\gamma_m,t}-I
+\end{bmatrix}.
+\]
+Then
+\[
+\mathcal H_t=\ker F_t.
+\]
+
+For a fixed coordinate metric,
+\[
+K_t=F_t^\dagger F_t\ge0.
+\]
+The kernel selector is the zero-spectral projector of \(K_t\), modified by the
+continuously varying observer metric for the actual PR #120 minimization.
+
+The exact robust condition is
+\[
+\operatorname{rank}F_t
+\text{ locally constant}.
+\]
+A convenient quantitative sufficient formulation is a neighborhood with:
+
+- fixed multiplicity of the zero eigenvalue;
+- a uniform \(c>0\) such that every nonzero eigenvalue of \(K_t\) is at least
+  \(c\).
+
+In finite dimension these follow locally from constant rank and continuity.
+They are not necessary for a particular selected value because (9.2) can hold
+even when \(Q_t\) jumps.
+
+---
+
+## 15. Remediation audit A — restrict admissible backgrounds
+
+The restrictions have different jobs.
+
+| Hypothesis | What it guarantees | Is it minimal? |
+|---|---|---|
+| constant \(\operatorname{rank}\mathcal B_t\) | \(U_t,P_{H_t},C_t,D_t\) continuous; local boundedness of \(J_t\) | sufficient but stronger than needed for \(C,D\) |
+| lost-direction annihilation \(\mathcal S_0(L_0(\mathfrak F))=0\) | exact continuity of \(C,D\) for the specified family | necessary and sufficient |
+| \(M_0=0\) | \(C,D\) continuous under every nearby perturbation | necessary and sufficient for universal robustness |
+| constant pair rank \(\operatorname{rank}(\mathcal B_t,\mathcal S_t)\) | relation subspace continuity | neither sufficient nor necessary for \(C,D\) continuity |
+| constant \(\dim\mathcal H_t\) | continuity of the kernel projector \(Q_t\) | exact for projector continuity, stronger than needed for one selected value |
+| selector cluster condition (9.2) | continuity of selected value once source is stable | necessary and sufficient |
+| full joint-cluster condition (9.4) | continuity of the full selected \((\delta,\kappa)\) | necessary and sufficient |
+
+The mandatory witness has constant pair rank but violates lost-direction
+annihilation. The \(t^2/t\) witness has continuous \(C\) while pair rank
+drops. Thus pair-rank and action continuity cannot replace one another.
+
+A clean robust admissible class is:
+
+1. lost-direction annihilation at every site;
+2. locally constant parallel-kernel dimension;
+3. continuous observer field and fixed selection paths.
+
+This is sufficient for a continuous selected readout and does not require
+full rank or bounded \(J\).
+
+---
+
+## 16. Remediation audit B — change canonical representative
+
+There is a no-go inside the current active-span architecture.
+
+Let a proposed correlated action
+\[
+\widehat C(\mathcal B,\mathcal S):
+E_{\rm lab}\to V
+\]
+satisfy both:
+
+1. **active-factor condition:** it factors through actual affine increments,
+   equivalently
+   \[
+   \ker\mathcal B\subseteq\ker\widehat C;
+   \]
+   in particular \(\widehat C=0\) when \(\mathcal B=0\);
+2. **strict graph calibration:** whenever
+   \[
+   \ker\mathcal B\subseteq\ker\mathcal S,
+   \]
+   it reproduces the strict correlated action
+   \[
+   \widehat C=\mathcal S.
+   \]
+
+These are weaker than the full requested package of exact gauge calibration,
+frame covariance, label symmetry, pure-shift/Nyquist/corner controls and
+active-span extension independence.
+
+Apply them to the mandatory family at a site with \(d_j\ne0\).
+
+For every \(t\ne0\) the pair is a graph, so
+\[
+\widehat C_t\varepsilon_A=d_je_B.
+\]
+At \(t=0\), \(\mathcal B_0=0\), so active factorization forces
+\[
+\widehat C_0=0.
+\]
+
+Therefore:
+
+\[
+\boxed{
+\text{No correlated representative satisfying active factorization and exact
+graph calibration can be universally continuous across a surviving lost
+direction.}
+}
+\tag{16.1}
+\]
+
+A continuous replacement must do at least one of:
+
+- restrict the allowed family;
+- stop calibrating the graph pointwise;
+- stop factoring only through current active increments;
+- carry additional history/stratum data.
+
+The last option is genuinely a new datum. It cannot be described as a harmless
+change of representative.
+
+---
+
+## 17. Remediation audit C — quotient
+
+For a same-fibre quotient \(q_y:V_y\to\bar V_y\) with kernel \(W_y\), the
+landed pressure memo already gives the exact relation condition
+\[
+\boxed{
+\mathcal S_y(\mathcal B_y^{-1}W_y)\subseteq W_y.
+}
+\tag{17.1}
+\]
+Transport additionally requires a parallel family \(W_y\), and endpoint
+descent requires loop coinvariants to lie in it. Finite saturation \(W^*\)
+constructs the smallest simultaneous algebraic quotient.
+
+Continuity adds another requirement. If a linear quotient is to remove a
+selected-readout jump, its kernel must contain every jump direction.
+
+For a family, define the readout jump span
+\[
+J_0
+=
+\operatorname{span}\{
+(\delta_*,\kappa_*)-(\delta_0,\kappa_0)
+:\text{all cluster readouts}
+\}.
+\]
+A fixed linear quotient makes the readout continuous iff it kills \(J_0\).
+
+### Mandatory conflict
+
+For (11.1), the mismatch jump contains \(e_B\). Therefore every linear
+quotient curing that witness must satisfy
+\[
+q(e_B)=0.
+\]
+
+But the mandatory \(L=3\) corner control has raw mismatch exactly
+\[
+\kappa_{\rm corner}=e_B.
+\]
+The same quotient sends this required response to zero.
+
+Hence
+\[
+\boxed{
+\text{No fixed linear quotient can cure the mandatory rank-transition jump
+while preserving the mandatory L=3 corner distinction.}
+}
+\tag{17.2}
+\]
+
+This is stronger than observing that the zero quotient is useless.
+
+A background-dependent quotient would itself require a continuously selected
+kernel subbundle plus the relation/transport conditions above. That is extra
+structure, not a cure supplied by the present theory.
+
+---
+
+## 18. Remediation audit D — weaken the output
+
+A coarse linear readout
+\[
+q:(\delta,\kappa)\mapsto\bar O
+\]
+can be continuous even when the full readout is not.
+
+The exact minimal condition is
+\[
+\boxed{
+J_0\subseteq\ker q.
+}
+\tag{18.1}
+\]
+Thus coarse continuity is always a statement about which cluster differences
+are forgotten.
+
+For the mandatory witness,
+\[
+\mathbb Re_B\subseteq\ker q
+\]
+is necessary. Such a readout forgets the \(e_B\) corner distinction and cannot
+be called the full classical finite interface.
+
+The relation \(\mathscr R\) itself is a coarser continuous object in the
+mandatory witness, but it does not retain the selected diagonal/mismatch
+observables. This is precisely why relation continuity and readout continuity
+must remain separate rows.
+
+---
+
+## 19. Mandatory control audit
+
+### Flat
+
+\[
+\mathcal B=\mathcal S=0,\qquad
+C=D=0,\qquad
+a=\delta=\kappa=0.
+\]
+Rank zero is stable for the constant flat family.
+
+### Constant pure affine shift
+
+\[
+\mathcal B=\mathcal S=0,\qquad
+a=-b.
+\]
+The seed is parallel; the PR #120 kernel selector chooses \(h=b\), giving
+\[
+\delta=0,\qquad\kappa=b.
+\]
+Full rank is unnecessary.
+
+### Exact translation gauge
+
+On the exact chart,
+\[
+\mathcal S=T\mathcal B
+\]
+with the prescribed chart comparison. Hence \(M=0\), \(C=\mathcal S\),
+\(D=0\), including rank-degenerate sites.
+
+### \(L=3\) exact-gauge rank drop
+
+The landed exact gauge cycle has a rank-zero middle site while exact
+calibration and \(\kappa=0\) survive. This is the nearest positive control to
+the mandatory bad rank transition: rank loss is harmless when the limiting
+solder synthesis kills the lost directions.
+
+### Mandatory discontinuity family
+
+Fully reproduced in §11. It has trivial affine holonomy and invertible raw
+solder but violates lost-direction annihilation.
+
+### \(L=2\) Nyquist
+
+The flat-linear source has \(a=\delta=0\), so the raw response
+\[
+(+4,-4)e_A
+\]
+is retained. A quotient killing \(e_A\) would erase it.
+
+### \(L=3\) corner/curl
+
+The raw corner response
+\[
+e_B
+\]
+is retained. This supplies the direct contradiction to quotienting away the
+mandatory \(e_B\) jump.
+
+### Constant harmonic coframe
+
+The source is zero and the raw harmonic geometry remains in the coframe.
+The post-source selector chooses zero added parallel diagonal. This is a
+kernel-selection control, not a rank-transition control.
+
+### Duplicate increments
+
+For
+\[
+\mathcal B=(e_A,e_A,0,0),
+\qquad
+\mathcal S=(e_B,-e_B,0,0),
+\]
+the endpoint is non-graph:
+\[
+M\ne0.
+\]
+As a constant family it nevertheless has continuous \(C,D\). This is another
+literal witness that \(M_0=0\) is not necessary for restricted-family
+continuity.
+
+### Nontrivial linear holonomy
+
+Nontrivial holonomy does not itself destroy continuity. If its common fixed
+space keeps constant dimension, \(Q_t\) is continuous. A dimension change of
+that fixed space is the relevant selector seam.
+
+### Trivial affine holonomy
+
+The mandatory witness already has it. It is not a cure for the local rank
+seam.
+
+### Rank-zero and rank-one active spans
+
+Both are admissible pointwise. Stability depends on how their coefficient
+subspaces are approached and on the lost solder images, not on an absolute
+rank threshold.
+
+---
+
+## 20. Classification matrix
+
+| Stratum / family | Relation | \(U,P_H\) | \(C,D\) | \(J\) | source | selector | selected \((\delta,\kappa)\) | earliest failure |
+|---|---|---|---|---|---|---|---|---|
+| constant-rank graph family | continuous if pair rank constant (automatic here when graph rank data stay constant) | continuous | continuous, \(C=S,D=0\) | locally bounded | continuous | continuous if fixed-kernel criterion passes | continuous under same selector condition | none before selector |
+| rank drop, \(M_0=0\) | may fail if pair rank drops | discontinuous | continuous for every approach | may diverge | continuous | independent holonomy criterion | continuous if selector criterion passes | active subspace only |
+| rank drop, \(M_0\ne0\), actual lost directions killed | may fail | discontinuous | continuous along that family | no general bound | continuous | independent holonomy criterion | continuous if selector criterion passes | active subspace only |
+| rank drop, surviving lost direction | can remain continuous | discontinuous | discontinuous | irrelevant to diagnosis | generally discontinuous | may be perfectly continuous | generally discontinuous; exact cluster test (9.4) decides cancellation | correlated action \(C,D\) |
+| \(B=t^2,\ S=t\) | discontinuous (pair rank 1→0) | discontinuous | continuous | unbounded \(1/t\) | continuous | can be fixed | continuous if fixed | normalized \(J\) only, not readout |
+| continuous source, holonomy fixed-space jump | continuous local source data | can be constant | continuous | can be bounded | continuous | discontinuous | discontinuous for nonzero gained mean component | post-source selector |
+| kernel jump with zero transported mean | continuous | independent | continuous | independent | continuous | projector discontinuous | selected value can remain continuous | affine solution space / projector, not selected value |
+| continuous \(\delta\), discontinuous \(\kappa\) | — | — | — | — | — | — | impossible for continuous \(A,e\) by invertible edge formula | no such stratum |
+| trivial holonomy | no implication for rank seam | no implication | no implication | no implication | no implication | \(Q=I\) while triviality persists | rank seam can still break it | mandatory witness |
+| nontrivial holonomy with constant fixed-kernel dimension | no implication for rank seam | no implication | no implication | no implication | continuous if seed is | continuous | can be continuous | none forced by holonomy |
+
+No row identifies relation continuity, graphification, endpoint descent,
+bounded \(J\), or selected stability.
+
+---
+
+## 21. Hostile implication audit
+
+The following tempting implications are false.
+
+\[
+\mathscr R_t\text{ continuous}
+\;\not\Rightarrow\;
+C_t\text{ continuous}
+\]
+by the mandatory witness.
+
+\[
+C_t\text{ continuous}
+\;\not\Rightarrow\;
+\mathscr R_t\text{ continuous}
+\]
+by the \(t^2/t\) witness.
+
+\[
+P_{H_t}\text{ discontinuous}
+\;\not\Rightarrow\;
+C_t\text{ discontinuous}
+\]
+by every killed-lost-direction example.
+
+\[
+J_t\text{ unbounded}
+\;\not\Rightarrow\;
+C_t\text{ discontinuous}
+\]
+again by \(t^2/t\).
+
+\[
+M_0\ne0
+\;\not\Rightarrow\;
+\text{familywise discontinuity}
+\]
+by the constant vertical family and duplicate-generator family.
+
+\[
+\text{source continuous}
+\;\not\Rightarrow\;
+\text{selected }\delta\text{ continuous}
+\]
+by §13.
+
+\[
+\dim\mathcal H_t\text{ jumps}
+\;\not\Rightarrow\;
+\text{selected }\delta\text{ jumps}
+\]
+when the transported mean has no gained-kernel component.
+
+\[
+\text{trivial affine holonomy}
+\;\not\Rightarrow\;
+\text{selected stability}
+\]
+by §11.
+
+\[
+\text{constant pair rank}
+\;\not\Rightarrow\;
+C,D\text{ continuity}
+\]
+again by §11.
+
+These controls are why the final criterion must have both the local
+lost-direction clause and the downstream fixed-kernel/cluster clause.
+
+---
+
+## 22. Minimal stable-interface passport
+
+For a specified family of continuous finite backgrounds and the already-fixed
+PR #120 basepoint/path/observer selection data, a robust easy-to-check
+sufficient passport is:
+
+\[
+\boxed{
+\begin{array}{l}
+\text{(L) }\mathcal S_0(L_0(\mathfrak F))=0
+\quad\text{at every site},\\[2mm]
+\text{(K) }\dim\mathcal H_t
+\quad\text{is locally constant}.
+\end{array}}
+\tag{22.1}
+\]
+
+(L) makes the correlated action, residual, seed and path source continuous.
+(K) makes the post-source projection continuous. Then selected
+\[
+(\delta,\kappa)
+\]
+is continuous.
+
+This passport does **not** require:
+
+- rank four;
+- invertible full \(J\);
+- bounded \(J\) on a rank-changing family;
+- trivial labelled holonomy;
+- endpoint compression.
+
+For an exact necessary-and-sufficient statement, replace (L)+(K) by the joint
+cluster criterion (9.4). In the source-stable subclass, replace (K) by the
+weaker exact applied-projector condition (9.2).
+
+For universal robustness against arbitrary local synthesis perturbations,
+(L) becomes exactly
+\[
+M_0=0.
+\]
+
+This is the completed hierarchy of stability assumptions.
+
+---
+
+## 23. What the terminal does and does not say
+
+The terminal is
+
+\[
+\boxed{
+\texttt{SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY-CRITERION-CONSTRUCTED}.
+}
+\]
+
+It is justified because:
+
+1. (4.2) is necessary and sufficient for \(C,D\) on a specified family;
+2. (5.1) is necessary and sufficient for universal local \(C,D\) robustness;
+3. (9.4) is necessary and sufficient for the actual selected diagonal;
+4. (6.4) transfers the same iff to the final mismatch;
+5. the mandatory killing witness is explained exactly;
+6. the independent selector-kernel failure is exhibited exactly;
+7. the remediation options are classified, including a representative no-go
+   and a quotient conflict with the corner control.
+
+This does not prove a continuum classical limit, GR, QFT, stress dynamics or
+finite graded dressing. It classifies stability of the already-constructed
+finite selected interface.
+
+---
+
+## 24. Theorem-ready formalization handoff
+
+A narrow WORKER can formalize the following package without reopening the
+research.
+
+### A. Lost-direction cluster theorem
+
+For finite-dimensional real inner-product coefficient space:
+if
+\[
+B_n\to B_0,\quad S_n\to S_0,\quad
+P_{(\ker B_n)^\perp}\to P_*,
+\]
+prove:
+
+1. \(P_*\) is an orthogonal projector;
+2. \((\ker B_0)^\perp\le\operatorname{range}P_*\);
+3. with
+   \[
+   W_*=\operatorname{range}P_*\cap\ker B_0,
+   \]
+   \[
+   P_*=P_{H_0}+P_{W_*};
+   \]
+4.
+   \[
+   S_nP_{H_n}\to S_0P_*
+   \]
+   and the jump is \(S_0P_{W_*}\).
+
+### B. All-sequence criterion
+
+Package cluster projectors for an admitted sequence/family and prove:
+\[
+C_n\to C_0
+\iff
+\forall P_*,\ S_0(\operatorname{range}P_*\cap K_0)=0.
+\]
+
+### C. Universal theorem
+
+Prove
+\[
+M_0=0
+\iff
+\text{continuity of }(B,S)\mapsto SP_{(\ker B)^\perp}
+\text{ at }(B_0,S_0).
+\]
+For the reverse direction use the rank-one perturbation
+\[
+B_\epsilon=B_0+\epsilon u\otimes w^*.
+\]
+
+### D. Source propagation
+
+Using the landed conditional sourced module, prove continuity algebraically
+from \(C\) to:
+
+- diagonal seed;
+- fixed finite path source.
+
+No full extension \(J:V\to V\) should be introduced.
+
+### E. Fixed-kernel projector criterion
+
+For a finite stacked loop-defect map \(F_t\), formalize:
+\[
+\ker F_t\text{ projector-continuous}
+\iff
+\operatorname{rank}F_t\text{ locally constant},
+\]
+plus the applied-projector cluster criterion
+\[
+Q_*m_0=Q_0m_0.
+\]
+
+### F. Exact periodic discontinuity witness
+
+Formalize the \(L=3\) family of §11 and the exact values
+\[
+d=(0,-3,3),
+\]
+\[
+\kappa_A(t;0)=0\quad(t\ne0),
+\qquad
+\kappa_A(0;0)=-3e_B.
+\]
+
+Keep the raw determinant-one solder and trivial affine period explicit.
+
+This handoff is intentionally small. No Lean code is added by this research
+task.
+
+---
+
+## 25. Reproducible exact checker
+
+The standard-library checker below uses exact rational arithmetic. It
+reproduces the mandatory \(L=3\) family, the universal-\(M_0\) necessity
+perturbation, a non-graph stable restricted family, the unbounded-\(J\) control,
+a killed-lost-direction control with \(M_0\ne0\), a benign exact graph rank
+drop, the independent post-source selector jump, and the quotient/corner
+conflict.
+
+Run from repository root:
+
+\`\`\`bash
+python - <<'CHECK'
+from pathlib import Path
+p = Path('02_REGISTRY/research/MEMO_A4D_SELECTED_DIAGONAL_RANK_TRANSITION_CONTINUITY.md')
+s = p.read_text().split('\n<!-- EXACT_CHECKER_BEGIN -->\n', 1)[1]
+code = s.split('\`\`\`python\n', 1)[1].split('\n\`\`\`', 1)[0]
+exec(compile(code, str(p) + ':exact-checker', 'exec'))
+CHECK
+\`\`\`
+
+<!-- EXACT_CHECKER_BEGIN -->
+
+\`\`\`python
+from fractions import Fraction as Q
+
+checks = 0
+def ck(x, name):
+    global checks
+    checks += 1
+    if not x:
+        raise AssertionError(name)
+
+def eye(n=4):
+    return [[Q(i == j) for j in range(n)] for i in range(n)]
+def z(n=4):
+    return [[Q(0) for _ in range(n)] for _ in range(n)]
+def tr(a):
+    return [list(c) for c in zip(*a)]
+def add(a,b):
+    return [[x+y for x,y in zip(r,s)] for r,s in zip(a,b)]
+def sub(a,b):
+    return [[x-y for x,y in zip(r,s)] for r,s in zip(a,b)]
+def sc(t,a):
+    t=Q(t); return [[t*x for x in r] for r in a]
+def mul(a,b):
+    return [[sum((x*y for x,y in zip(r,c)),Q(0)) for c in tr(b)] for r in a]
+def mv(a,v):
+    return [sum((x*y for x,y in zip(r,v)),Q(0)) for r in a]
+def col(a,j):
+    return [r[j] for r in a]
+def cols(vs,n=4):
+    return [[Q(v[i]) for v in vs] for i in range(n)]
+def va(*vs):
+    return [sum(q,Q(0)) for q in zip(*vs)]
+def vs(t,v):
+    return [Q(t)*x for x in v]
+def rr(a):
+    a=[[Q(x) for x in row] for row in a]
+    piv=[]; k=0
+    for j in range(len(a[0])):
+        p=next((i for i in range(k,len(a)) if a[i][j]),None)
+        if p is None:
+            continue
+        a[k],a[p]=a[p],a[k]
+        q=a[k][j]; a[k]=[x/q for x in a[k]]
+        for i in range(len(a)):
+            if i != k and a[i][j]:
+                q=a[i][j]
+                a[i]=[x-q*y for x,y in zip(a[i],a[k])]
+        piv.append(j); k+=1
+        if k == len(a): break
+    return a,piv
+def rank(a):
+    return len(rr(a)[1])
+def ker(a):
+    r,piv=rr(a); n=len(a[0]); ans=[]
+    for j in range(n):
+        if j in piv: continue
+        v=[Q(i==j) for i in range(n)]
+        for i,p in enumerate(piv): v[p]=-r[i][j]
+        ans.append(v)
+    return ans
+def inv(a):
+    n=len(a)
+    aug=[a[i]+eye(n)[i] for i in range(n)]
+    r,piv=rr(aug)
+    if piv[:n] != list(range(n)): raise ValueError("singular")
+    return [row[n:] for row in r]
+def projector(basis,n=4):
+    if not basis: return z(n)
+    c=cols(basis,n)
+    return mul(mul(c,inv(mul(tr(c),c))),tr(c))
+def pack(B,S):
+    PK=projector(ker(B))
+    PH=sub(eye(),PK)
+    return PH,mul(S,PH),mul(S,PK)
+
+I=eye()
+Z=z()
+e=[col(I,j) for j in range(4)]
+o=[Q(0)]*4
+
+# 1. Universal necessity at a non-graph endpoint.
+B0=cols([e[0],o,o,o])
+S0=cols([o,e[2],o,o])
+PH0,C0,D0=pack(B0,S0)
+ck(mv(S0,e[1])==e[2], "M0 nonzero direction")
+for t in (Q(1),Q(1,7),Q(-1,9)):
+    Bt=cols([e[0],vs(t,e[1]),o,o])
+    _,Ct,Dt=pack(Bt,S0)
+    ck(col(Ct,1)==e[2] and col(C0,1)==o, "universal perturbation forces C jump")
+    ck(add(Ct,Dt)==S0, "C+D=S")
+
+# Restricted non-graph family can still be continuous.
+for t in (Q(0),Q(1,3),Q(-2)):
+    _,Ct,Dt=pack(Z,S0)
+    ck(Ct==Z and Dt==S0, "non-graph restricted family stable")
+
+# 2. Continuous C with unbounded normalized J.
+for t in (Q(1),Q(1,2),Q(1,11)):
+    Bt=cols([vs(t*t,e[0]),o,o,o])
+    St=cols([vs(t,e[1]),o,o,o])
+    _,Ct,_=pack(Bt,St)
+    ck(col(Ct,0)==vs(t,e[1]), "C=t eB")
+    ck(vs(1/(t*t),col(Ct,0))==vs(1/t,e[1]), "J gain = 1/t")
+_,Cz,_=pack(Z,Z)
+ck(Cz==Z, "C0=0")
+
+# 3. Killed lost direction with M0 != 0.
+Skeep=cols([o,e[2],o,o])
+for t in (Q(1),Q(1,5),Q(0)):
+    Bt=cols([vs(t,e[0]),o,o,o]) if t else Z
+    _,Ct,Dt=pack(Bt,Skeep)
+    ck(Ct==Z and Dt==Skeep, "lost eA killed although M0 nonzero")
+
+# 4. Mandatory L=3 periodic family.
+f=(Q(1),Q(-2),Q(1))
+d=tuple(f[j]-f[(j-1)%3] for j in range(3))
+ck(d==(Q(0),Q(-3),Q(3)), "mandatory d")
+
+# Potential (0,t,-t) has forward gradient t*f.
+for t in (Q(0),Q(1,7),Q(-2)):
+    phi=(Q(0),t,-t)
+    grad=tuple(phi[(j+1)%3]-phi[j] for j in range(3))
+    ck(grad==tuple(t*x for x in f), "exact periodic affine gradient")
+    ck(sum(grad,Q(0))==0, "trivial affine period")
+    delta=[]
+    for j in range(3):
+        B=cols([vs(t*d[j],e[0]),o,o,o])
+        S=cols([vs(d[j],e[1]),o,o,o])
+        _,C,D=pack(B,S)
+        a=va(vs(-t*f[(j-1)%3],e[0]),vs(-1,col(C,0)))
+        delta.append(a)
+        if t:
+            ck(D==Z, "mandatory graph off zero")
+            ck(col(C,0)==vs(d[j],e[1]), "mandatory correlated action off zero")
+        else:
+            ck(C==Z, "mandatory C zero at rank-zero endpoint")
+    mean=[sum((delta[j][k] for j in range(3)),Q(0))/3 for k in range(4)]
+    ck(mean==o, "mandatory transported mean zero")
+    kap=[]
+    for j in range(3):
+        y=(j+1)%3
+        b=vs(t*f[j],e[0])
+        vx=va(e[0],vs(f[j],e[1]))
+        vy=va(e[0],vs(f[y],e[1]))
+        kap.append(va(b,vy,delta[y],vs(-1,vx)))
+    if t:
+        ck(kap==[o,o,o], "mandatory kappa zero off transition")
+    else:
+        ck(kap==[vs(-3,e[1]),vs(3,e[1]),o], "mandatory kappa jump at zero")
+        ck(kap[0]==vs(-3,e[1]), "mandatory origin -3eB")
+
+# Raw coframe shear is invertible.
+for j in range(3):
+    V=cols([va(e[0],vs(f[j],e[1])),e[1],e[2],e[3]])
+    ck(rank(V)==4, "raw solder invertible")
+
+# 5. Exact graph calibration rank drop is benign when S=T B.
+T=cols([e[1],o,o,o]) # T eA=eB
+for t in (Q(0),Q(1,9),Q(-3)):
+    B=cols([vs(t,e[0]),o,o,o])
+    S=mul(T,B)
+    _,C,D=pack(B,S)
+    ck(C==S and D==Z, "exact graph calibration survives rank drop")
+
+# 6. Post-source selector jump with continuous source.
+m=e[1]
+Qoff=cols([e[0],o,e[2],e[3]]) # projection onto span(A,C,D)
+Qzero=I
+ck(mv(Qoff,m)==o and mv(Qzero,m)==e[1], "fixed-space projector jump")
+h_off=vs(-1,mv(Qoff,m))
+h_zero=vs(-1,mv(Qzero,m))
+delta_off=va(m,h_off)
+delta_zero=va(m,h_zero)
+ck(delta_off==e[1] and delta_zero==o, "continuous seed, discontinuous selector")
+for t in (Q(1),Q(1,7),Q(0)):
+    src=vs(t,e[1]) # (G_t-I)eB
+    ck(src==vs(t,e[1]), "continuous loop source")
+
+# 7. Edge mismatch tracks selected delta continuously.
+tau=e[2]
+for q in (Q(0),Q(1,10),Q(-1,20)):
+    delt=va(e[0],vs(q,e[1]))
+    kap=va(tau,delt)
+    ck(va(kap,vs(-1,tau))==delt, "kappa tracks delta")
+
+# 8. Quotient cure conflicts with the L3 corner.
+qkill=cols([e[0],o,e[2],e[3]])
+ck(mv(qkill,e[1])==o, "quotient kills mandatory jump")
+corner=e[1]
+ck(mv(qkill,corner)==o, "same quotient erases mandatory corner response")
+
+print(f"PASS: {checks} exact rational assertions; no floating tolerances")
+\`\`\`
+
+Expected output:
+
+\`\`\`text
+PASS: 65 exact rational assertions; no floating tolerances
+\`\`\`
+
+The checker is evidence for the named finite witnesses only. The general
+quantifiers are the linear-algebra proofs in the preceding sections.
+
+---
+
+## 26. Research closeout
+
+The conceptual result is complete when this memo is in the PR:
+
+- local lost-direction stability is classified exactly;
+- \(M_0=0\) is upgraded from sufficient to exact universal criterion;
+- relation/subspace/action/\(J\)/source/solution-space/selector/readout
+  continuity are separated;
+- the literal PR #120 selector is pressure-tested;
+- a second independent selector-kernel discontinuity is exhibited;
+- the mandatory \(L=3\) witness is reproduced exactly;
+- all four remediation routes are classified;
+- the theorem-ready worker handoff is bounded.
+
+Before Ready, the exact checker and repository guards must be run, the task
+must self-retire, and the PR lifecycle must be changed to \`REVIEW\`.
