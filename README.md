@@ -95,8 +95,10 @@ The registered functional-tuple and scene-forcing results are developed in **BOO
   - Commutant AF-algebra tower    - Puiseux mass-hierarchy passports
   - Discrete Dirac & Laplacians   - CKM/PMNS phason-holonomy passports
   - Isolated bridge assumptions   - Conditional dark-EOS / cosmology passports
-    (HeatTraceWeyl, etc.)
+    (HeatTraceWeyl, etc.)         - Pre-registered empirical passports
 ```
+
+---
 
 ## 3. The 10-Book Derivation Chain (From Admissibility to Interferometry)
 
@@ -193,12 +195,14 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 - **Horizon Capacity Quantization:** Step-like quantum capacity anomalies in final black hole mass M_f and spin a_f (`BlackHoleCapacityA4.lean`, tested in GWOSC/LIGO MERS_V10 protocols).
 - **Epistemic Discovery Guardrails:** Strict prohibition against claiming observational "proof" from current detector noise; pre-registered 5σ protocols for upcoming observational runs.
 
+---
+
 ## 4. The Three Architecture Layers
 
 The repository strictly separates internal theorems, mathematical operators, and external phenomenological passports:
 
 | Layer | Scientific Role | Core Locations | Epistemic Status |
-|:------|:----------------|:----------------|:-----------------|
+|:------|:----------------|:---------------|:-----------------|
 | **I. Epistemic Foundation (Core)** | Conditions of distinguishability, Popperian bootstrap, self-reading functor, finite scene birth | `01_BOOKS/BOOK_00`, `BOOK_01`<br>`03_FORMALIZATION/D0/Foundation/`<br>`03_FORMALIZATION/D0/Core/` | **Lean 4 verified (0 sorry)**.<br>No external physical assumptions. |
 | **II. Algebraic Spine** | Operator algebras, top-Hodge rigidity, spectral geometry, No-Go theorems | `01_BOOKS/BOOK_02`, `BOOK_03`<br>`03_FORMALIZATION/D0/Geometry/`<br>`03_FORMALIZATION/D0/Topology/` | **Lean 4 verified**.<br>Continuum bridge assumptions isolated in `Bridge/Assumptions/`. |
 | **III. Readout / Phenomenology** | Mass selectors, gauge decompositions, cosmological SDE, empirical stress-tests | `01_BOOKS/BOOK_04`–`BOOK_09`<br>`04_CERTIFICATES/`<br>`05_EXPERIMENTS/` | **Executable Python certificates & observational data**.<br>Passports do not promote core theorems. |
@@ -262,6 +266,9 @@ Path C: Phenomenology & Stress-Tests (Only after A/B)
   └─► BOOK_04 (Matter Spectrum) & BOOK_08 (Cosmology)
   └─► 05_EXPERIMENTS/ (DESI BAO fitting, LIGO horizon capacity, Sandage-Loeb drift)
   └─► Verification of passports in 02_REGISTRY/claims.csv
+```
+
+---
 
 ## 8. Canonical Repository Layout & Sources of Truth
 
