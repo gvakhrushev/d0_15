@@ -13,7 +13,9 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: lean-build-${{ github.event.pull_request.number || github.ref }}
+  # Different commits of the same PR must not block each other if an old runner
+  # gets stuck during setup. Duplicate events for the same head still collapse.
+  group: lean-build-${{ github.event.pull_request.number || github.ref }}-${{ github.event.pull_request.head.sha || github.sha }}
   cancel-in-progress: true
 
 jobs:
