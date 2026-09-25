@@ -1,0 +1,33 @@
+name: tmp-assemble-formal-support
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: wrk/a4d-conditional-sourced-diagonal-transport
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Assemble and commit
+        run: |
+          set -euo pipefail
+          cat 00_WORK/tmp_csv_restore_part_a.txt 00_WORK/tmp_csv_restore_part_b.txt > 02_REGISTRY/formal_support.csv
+          python3 - <<'PY'
+          import hashlib
+          from pathlib import Path
+          c = Path("02_REGISTRY/formal_support.csv").read_bytes()
+          h = hashlib.sha256(c).hexdigest()
+          print("sha256", h, "size", len(c))
+          assert h == "a3fda077b21d376208167994f97c4235075ca34eaab1c9a0762f8468c7b3a680"
+          PY
+          rm -f 00_WORK/tmp_csv_restore_part_a.txt 00_WORK/tmp_csv_restore_part_b.txt
+          rm -f .github/workflows/tmp-assemble-formal-support.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git status
+          git commit -m "RESTORE formal_support.csv EXACT bytes (sha a3fda077) via part assembly"
+          git push origin HEAD:wrk/a4d-conditional-sourced-diagonal-transport
