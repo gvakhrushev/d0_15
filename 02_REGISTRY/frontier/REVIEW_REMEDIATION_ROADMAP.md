@@ -1,8 +1,8 @@
 # External Review Remediation Roadmap
 
-Status: **ACTIVE ROADMAP / control lane IN_PROGRESS**
+Status: **CLOSED REMEDIATION RECORD**
 
-This roadmap records the remediation triggered by the repository review. It does not replace `claims.csv`, the closure contract, or literal Lean owners.
+This file is a historical record of the external-review remediation campaign. It does not replace `claims.csv`, the closure contract, literal Lean owners, or the active work manifest.
 
 ## Governing invariant
 
@@ -10,109 +10,58 @@ This roadmap records the remediation triggered by the repository review. It does
 \boxed{\text{public claim strength} \le \text{literal owner strength}}
 \]
 
-README, BOOK, monograph and roadmap prose must preserve:
+Public README/BOOK/monograph prose must preserve theorem quantifiers, candidate/admissible classes, BRIDGE premises, NO-GO repairs, and the distinction between a frozen ledger/alignment and an actual representation or derivation. A later NO-GO or scope repair overrides stronger historical prose.
 
-- the theorem's actual quantifiers;
-- the candidate/admissible class being classified;
-- BRIDGE/model premises;
-- NO-GO repairs;
-- whether a result is a frozen ledger/alignment or an actual representation/derivation;
-- whether two forcing routes have independent premises.
+## Closed semantic repairs
 
-A later NO-GO/scope repair overrides stronger historical prose.
+The remediation lane repaired and regression-protected the following high-risk surfaces:
 
-## Immediate semantic repairs
-
-Applied directly in the public surfaces in this remediation change:
-
-1. **Born / area preservation**
-   - Remove the false premise that generic symplectic-area preservation uniquely forces \(x^2+y^2\) or \(p=2\).
-   - State the owned uniqueness premise: quarter-turn phase blindness (`QuarterTurnInvariant`).
-   - Treat `BornAreaPreservationNoGo` as the explicit negative control proving area preservation alone insufficient.
-
-2. **Dark EOS / ΛCDM**
-   - Scope `LambdaCDMExcluded` to the adopted discrete EOS / role-assignment models.
-   - Do not describe it as a theorem that every open graph with unitary archive dissipation excludes ΛCDM.
-
-3. **Standard-Model gauge**
-   - Describe `SMGaugeDecomposition` as a frozen SM-facing factor/representation ledger with exact anomaly checks.
-   - Describe `AlbertSMProjection` as dimension/charge alignment.
-   - Do not claim an automorphism/commutant derivation of \(SU(3)\times SU(2)\times U(1)\) until an actual representation owner exists.
-
-4. **Golden-ratio route independence**
-   - Replace “five independent convergences” with an audited route inventory.
-   - `02_REGISTRY/forcing_routes.json` is authoritative for shared premises, negative controls and `independent_now`.
+1. **Born / area preservation** — quadratic uniqueness is scoped to the owned phase-response premise `QuarterTurnInvariant`; generic symplectic-area preservation alone is explicitly insufficient (`BornAreaPreservationNoGo`).
+2. **Dark EOS / ΛCDM** — `LambdaCDMExcluded` is scoped to its adopted discrete EOS / role-assignment models rather than promoted to a theorem about every open graph.
+3. **Standard-Model gauge** — `SMGaugeDecomposition` is a frozen SM-facing factor/representation ledger with exact anomaly checks, and `AlbertSMProjection` is dimension/charge alignment rather than a derivation of \(SU(3)\times SU(2)\times U(1)\).
+4. **Golden-ratio route independence** — `02_REGISTRY/forcing_routes.json` records shared premises, negative controls and the literal `independent_now` status.
 
 ## P1 — universal M1 carrier classification
 
 Status: **TERMINAL / M1-UNIVERSALITY-COUNTEREXAMPLE**.
 
-This research lane is completed and removed from active work. A killing test does not classify all finite catalogue-free carriers: inequivalent multi-line and unused-record carriers survive. Existing M1 uniqueness theorems remain valid only inside their explicitly stated admissible architecture classes.
+A killing test does not classify all finite catalogue-free carriers: inequivalent multi-line and unused-record carriers survive. Existing M1 uniqueness theorems remain valid only inside their stated admissible architecture classes.
 
-Any future category-wide universality theorem would require a new admissibility premise excluding extra lines, unused record coordinates and relabelings for a reason independent of naming the canonical carrier.
+Authoritative statement: `02_REGISTRY/RESEARCH_LEDGER.md`, row `E-M1-UNIV`.
 
-Authoritative current statement: `02_REGISTRY/RESEARCH_LEDGER.md`, row `E-M1-UNIV`.
 ## P2 — genuine SM gauge representation / commutant owner
 
 Status: **TERMINAL RESEARCH / ARCHIVE-COCHAIN-JOINT-COMMUTANT-STRICTLY-LARGER-CLASSIFIED**.
 
-The corrected archive cochain problem has been classified at research level: the joint real commutant of `D_H` and the full diagonal signed `S₄` action is already nontrivial on the kernel and is much larger on positive spectral levels; the `D_H²` commutant is larger still because it may mix Dirac-sign eigenspaces.
+The joint real commutant of `D_H` and the full diagonal signed \(S_4\) action is a large spectral centralizer, with the `D_H²` commutant larger still. This closes the proposed raw-commutant route negatively: it is not a derivation of the Standard-Model gauge group.
 
-This closes the proposed “derive SM by the raw commutant” route negatively. The large spectral centralizer is not a Standard-Model gauge group. Any future gauge interpretation needs additional local, grading/observer, carrier and interaction criteria.
+Any future gauge interpretation requires additional locality, grading/observer, carrier and interaction criteria.
 
-No new active research task is created for P2.
+## P3 — dynamics objections
 
-## P3 — real dynamics owner
+The semantic-remediation control no longer owns the dynamics programme. Its responsibility was to prevent unproved dynamics from being promoted in public prose and to map the objection onto the ordinary gravity/matter closure process.
 
-This lane is active under `CTRL-GRAVITY-DYNAMICS-CLOSURE`.
+Subsequent A4D work supplied finite flux/first-jet, affine/path, dressing, resolution and no-go owners while preserving the firewall against premature Hessian/stress/Einstein/continuum claims. Dynamics remains a scientific frontier to be advanced by new registered research tasks, not an unfinished child of this remediation record.
 
-Flux/first-jet (#75), located topological `J` (#76), the scoped scalar reverse-star no-go (#74), and the second-order/scalar-advective formal package (#80) are landed. The fixed-level endpoint/common-center research is also terminal in PR #84 with `ENDPOINT-OVERLAP-COMPARISON-NEW-PRIMITIVE-REQUIRED`. The remaining active formalization lane is `WRK-A4D-OBSERVER-FRAME-CAR-LIFT`. The adjacent inter-level research lane is terminal in PR #86 as `GOLDEN-SCALE-WELD-OWNED-CARRIER-WELD-MISSING`: golden scale/trace plus a defect-bearing RG residual interface are available, but no carrier/operator weld is owned.
-
-The current physical frontier is no longer the historical CAR-dispersion repair. Corrected difference-Hodge, moving parent Ward, affine Cartan path geometry and nonlinear constitutive nonselection are already owned.
-
-The remaining P3 demand is sharper: supply the newly isolated path-resolved incidence comparison primitive on the Role-phase/CAR carrier and determine whether it yields a frame-covariant all-order matter action; only then define stress/source by variation of that same action. The golden Bratteli/Role-phase question is now terminal at research level: retain the missing typed comparison package `(B_N,p_N,L_N^B,pb_(p_N),sigma_C)` rather than inventing a carrier weld. Record/profinite refinement, Role-phase period, golden Bratteli depth and physical time remain distinct. Topological located duality, positive observer energy and Lorentzian exterior star remain distinct until a theorem connects them.
 ## Semantic CI hardening
 
-Task: `WRK-PUBLIC-CLAIM-STRENGTH-LINT` (PLANNED, **cloud-first draft allowed while the sole local worker verifies the primal/dual parent draft**).
+Status: **LANDED**.
 
-Minimum scope:
-
-- scan high-risk public surfaces: README, BOOKS, frontier monograph/strategy;
-- maintain a machine-readable set of repaired/forbidden stale phrases where literal contradictions are known;
-- cross-check NO-GO / forcing-route repairs against public prose;
-- require explicit qualifiers for frozen ledgers, BRIDGE claims and candidate-class uniqueness;
-- produce actionable file/line failures in CI.
-
-The first lint should target known failure modes rather than attempt unrestricted natural-language theorem proving.
+PR #73 added the deterministic public claim-strength lint. Main guards run the semantic checks together with the repository/work validation suite. Known stale promotions are therefore regression-protected rather than tracked as an active worker.
 
 ## Layer III / phenomenology policy
 
-Do not delete existing passports: they remain useful falsification/regression assets.
+Existing passports remain useful falsification/regression assets. New phenomenology should be admitted only when it tests an active claim, is required by a registered passport, or supplies a negative control for an active bridge. Decorative prediction lanes are not a substitute for closing the dynamics interface.
 
-Until the current dynamics interface closes, new phenomenology should be admitted only when it:
+## Closure basis
 
-- tests/falsifies an existing active claim;
-- is required by a registered passport;
-- or supplies a negative control for an active bridge.
+The remediation control is retired because:
 
-New decorative prediction lanes are not a priority.
+- the known review contradictions were repaired on public surfaces;
+- claim-strength semantic lint is landed and enforced in CI;
+- P1 is terminally classified by counterexample;
+- P2 is terminally classified by the larger-commutant result;
+- dynamics objections are explicitly quarantined/mapped to the ordinary scientific frontier rather than promoted as solved;
+- remaining claims continue to be governed by CORE / NO-GO / BRIDGE / PASSPORT status and the normal closure contract.
 
-## Execution order
-
-1. Immediate semantic repairs, including the second-pass top-level M1/Born/Layer-III qualifiers — **APPLIED**.
-2. Continue active gravity/matter dynamics — **NOW**.
-3. Cloud-first theorem-ready formalization packages — **NOW**.
-4. Claim-strength lint — **NEXT worker/tooling lane**.
-5. P1 universal carrier classification — **TERMINAL / removed**.
-6. P2 SM joint commutant — **TERMINAL RESEARCH / larger spectral centralizer classified**.
-7. Re-audit README/BOOK/monograph after P2/P3 updates.
-
-## Closure condition
-
-This remediation lane closes only when:
-
-- the known review contradictions are repaired;
-- public semantic lint runs in CI;
-- P1/P2 are terminally classified;
-- P3 dynamics is terminal under the normal closure contract;
-- remaining external-review objections are explicitly mapped to CORE / NO-GO / BRIDGE / PASSPORT rather than left as prose ambiguity.
+This closure does **not** claim that gravity dynamics, a continuum Einstein limit, or a Standard-Model gauge derivation has been completed.
