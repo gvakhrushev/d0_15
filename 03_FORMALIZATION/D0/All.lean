@@ -305,6 +305,7 @@ import D0.Geometry.A4DPathWordParentWard
 import D0.Geometry.A4DPrimalDualCellPairing
 import D0.Geometry.A4DRawSolderFrameAction
 import D0.Geometry.A4DReferenceJunctionCompressionBoundary
+import D0.Geometry.A4DReferenceLocalCandidateNoGo
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DRoleSpatialRepresentationWeld
 import D0.Geometry.A4DScalarAdvectiveGroupoidObstruction
