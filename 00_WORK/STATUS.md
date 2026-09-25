@@ -6,17 +6,16 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
-| CONTROL | 0 | 2 | 0 | 0 | 2 | 2 / 2 |
+| CONTROL | 0 | 1 | 0 | 0 | 1 | 1 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
 | WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
-| **Total** | **0** | **2** | **0** | **0** | **2** | **2 / 10** |
+| **Total** | **0** | **1** | **0** | **0** | **1** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
 | CTRL-REVIEW-SEMANTIC-HARDENING | CONTROL | IN_PROGRESS | ROOT | - |
-| CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE | CONTROL | IN_PROGRESS | ROOT | D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
