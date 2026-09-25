@@ -61,17 +61,6 @@
       "brief": "00_WORK/tasks/CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-RESOLUTION-MEMORY-FUNCTORIALITY-MINIMALITY",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "The local projector-incidence and global holonomy-kernel resolution data Xi from PR #130 are promoted to an exact functorial background datum or terminally classified as irreducible extra memory, with append/reverse/frame covariance, a minimality theorem against all forgetful quotients preserving the mandatory finite controls, and exact rank/holonomy-transition witnesses.",
-      "brief": "00_WORK/tasks/EXP-A4D-RESOLUTION-MEMORY-FUNCTORIALITY-MINIMALITY.md"
-    },
-    {
       "id": "EXP-A4D-EQUIVARIANT-JOINT-BACKGROUND-DRESSING-GROUPOID",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
