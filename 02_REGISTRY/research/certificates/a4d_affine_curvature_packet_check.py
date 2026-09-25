@@ -4,6 +4,7 @@
 WRK-A4D-AFFINE-CURVATURE-CERT
 
 One carrier throughout:
+Carrier dimension never changes inside this certificate.
   RoleSpace = Q^4, Role order A,B,C,D,
   eta = diag(1,-1,-1,-1),
   affine homogeneous representation on Q ⊕ RoleSpace.
