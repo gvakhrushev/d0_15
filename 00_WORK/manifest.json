@@ -70,6 +70,17 @@
       ],
       "exit_condition": "After EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE lands a usable global relative A/e comparison primitive or the repository explicitly adopts the additional rank-stratified/span/relation datum required by its terminal, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e).",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
+    },
+    {
+      "id": "EXP-A4D-SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "The selected sourced-diagonal finite readout is classified across rank transitions by an exact continuity/no-go criterion propagated through source, kernel selector, delta and kappa, with the L=3 discontinuity witness and minimal remediation hypotheses made theorem-ready.",
+      "brief": "00_WORK/tasks/EXP-A4D-SELECTED-DIAGONAL-RANK-TRANSITION-CONTINUITY.md"
     }
   ]
 }
