@@ -204,6 +204,30 @@ EXP-A4D-FINITE-GRADED-COFRAME-DRESSING
 → then classify the finite graded background dressing
 ```
 
+Adjacent pressure-hardening lane:
+
+```text
+EXP-A4D-CLASSICAL-KINEMATIC-INTERFACE-PRESSURE
+→ do not assume the classical seam in advance
+→ test whether M=0 is exactly all-Role residual vanishing
+→ separate active-span graphification from full-fibre identifiability
+→ separate both from labelled-holonomy endpoint descent
+→ flat / pure-shift / gauge rank-drop / Nyquist / corner / rank-jump /
+  nontrivial-holonomy witnesses are mandatory
+
+WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE
+→ prove the currently owned sourced-diagonal chain factors through J|_U
+
+WRK-A4D-LABELLED-ENDPOINT-CLASSICAL-DESCENT
+→ own the endpoint-locality ↔ trivial labelled-holonomy seam independently
+```
+
+Pressure rule: a classical-looking reduction is not accepted because it is
+familiar.  Every proposed seam must carry a positive witness, nearest negative
+witness, rank-degenerate witness and labelled-holonomy witness.  Full rank is
+not to be called “classicality” unless the hostile flat/pure-shift/gauge
+rank-drop controls force that conclusion.
+
 PR #120 has already solved the downstream diagonal/source mechanics
 conditionally: sourced append/reverse, the parallel/holonomy kernel, and
 post-source observer removal of harmonic freedom are no longer open principles.
