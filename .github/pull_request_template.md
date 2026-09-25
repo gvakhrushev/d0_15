@@ -1,7 +1,9 @@
+Repository: `gvakhrushev/d0_15`
 Task: `TASK-ID`
 Class: `WORKER|EXPENSIVE|CONTROL`
 Lifecycle: `IN_PROGRESS|BLOCKED|REVIEW`
 Baseline: `MAIN-SHA`
+Primary-Artifact: `repo/relative/path|N/A`
 
 ## Scope
 
