@@ -105,17 +105,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-REGULAR-AE-PASSPORT.md"
     },
     {
-      "id": "EXP-A4D-CLASSICAL-KINEMATIC-INTERFACE-PRESSURE",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "The minimal necessary-and-sufficient kinematic interface from labelled relation geometry to an ordinary local/endpoint description is derived and survives a hostile independence matrix, with graphification/relative-defect vanishing, full-rank identifiability and labelled-holonomy descent separated rather than assumed equivalent.",
-      "brief": "00_WORK/tasks/EXP-A4D-CLASSICAL-KINEMATIC-INTERFACE-PRESSURE.md"
-    },
-    {
       "id": "WRK-A4D-ACTIVE-SPAN-EXTENSION-INDEPENDENCE",
       "class": "WORKER",
       "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
