@@ -321,6 +321,7 @@ import D0.Geometry.A4DScalarComparisonPatch
 import D0.Geometry.A4DScalarDeltaSecondJet
 import D0.Geometry.A4DSecondOrderCartanCongruence
 import D0.Geometry.A4DSolderMetricCompletion
+import D0.Geometry.A4DSourcedMismatchFactorPassport
 import D0.Geometry.A4DStaggeredFirstJetPathExpansion
 import D0.Geometry.A4DStaggeredHodgeSelector
 import D0.Geometry.A4DSymRoleCentralDifference
