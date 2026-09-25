@@ -70,6 +70,17 @@
       ],
       "exit_condition": "After EXP-A4D-RELATIVE-AE-COMPARISON-PRIMITIVE lands a usable global relative A/e comparison primitive or the repository explicitly adopts the additional rank-stratified/span/relation datum required by its terminal, an arbitrary-background finite graded E dressing/background-groupoid action is constructed or terminally classified with exact pure-gauge specialization and induced constitutive first derivative H(e).",
       "brief": "00_WORK/tasks/EXP-A4D-FINITE-GRADED-COFRAME-DRESSING.md"
+    },
+    {
+      "id": "WRK-A4D-SOURCED-MISMATCH-FACTOR-PASSPORT",
+      "class": "WORKER",
+      "parent": "CTRL-GRAVITY-DYNAMICS-CLOSURE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Lean owns the sourced mismatch factorization passport kappa = L(R+h) under delta = a + h with explicit source/predecessor indices and pull order, reusing landed #125/#127/diagonal-form owners without constructing J or claiming classicality.",
+      "brief": "00_WORK/tasks/WRK-A4D-SOURCED-MISMATCH-FACTOR-PASSPORT.md"
     }
   ]
 }
