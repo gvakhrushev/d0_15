@@ -136,7 +136,7 @@ theorem matrixHorizontalLetter_right_commuting
             simp only [Matrix.mul_assoc]
     _ = F * (U * R * R⁻¹) * F⁻¹ := by rw [hRU]
     _ = F * U * F⁻¹ := by
-          rw [← Matrix.mul_assoc U R R⁻¹, Matrix.mul_nonsing_inv R hR]
+          rw [Matrix.mul_assoc U R R⁻¹, Matrix.mul_nonsing_inv R hR]
           simp
 
 theorem matrixHorizontalLetter_right_orthogonal
