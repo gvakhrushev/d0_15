@@ -116,17 +116,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-SOURCED-MISMATCH-FACTOR-PASSPORT.md"
     },
     {
-      "id": "WRK-A4D-RELATIVE-AE-GRAPHIFICATION-CLOSURE",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-HODGE-LINKS-001"
-      ],
-      "exit_condition": "Lean owns residual-range equals vertical defect, Role-residual graphification criterion, residual-rank formula, full-rank forward graph corollaries and two-sided functionality iff ker B = ker S.",
-      "brief": "00_WORK/tasks/WRK-A4D-RELATIVE-AE-GRAPHIFICATION-CLOSURE.md"
-    },
-    {
       "id": "WRK-A4D-QUOTIENT-SATURATION-PASSPORT",
       "class": "WORKER",
       "parent": "CTRL-A4D-EQUIVARIANT-MIXED-BACKGROUND-CLOSURE",
