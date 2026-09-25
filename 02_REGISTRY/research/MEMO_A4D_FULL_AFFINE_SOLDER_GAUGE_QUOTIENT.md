@@ -1276,3 +1276,14 @@ between:
 That fork must be decided explicitly. It must not be hidden by quotienting flat
 Hessian null directions as though they were already a global affine gauge
 symmetry.
+
+
+---
+
+## Ready-state CONTROL audit
+
+PR #178 is \`Lifecycle: REVIEW\`; the CONTROL task row remains present in the
+branch manifest with state \`REVIEW\`, and the executable brief remains present,
+as required for a Ready CONTROL PR. This audit-only commit changes no
+mathematical result; it exists to run repository guards against the final
+Ready-state contract.
