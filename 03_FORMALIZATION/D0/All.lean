@@ -299,6 +299,7 @@ import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DMovingDifferentialSecondJet
 import D0.Geometry.A4DNilpotentAffineMatterLift
 import D0.Geometry.A4DObserverPositiveExterior
+import D0.Geometry.A4DObserverQuadraticReferenceNoGo
 import D0.Geometry.A4DPathCovariantHodge
 import D0.Geometry.A4DPathResolvedComparisonBoundary
 import D0.Geometry.A4DPathWordParentWard
@@ -306,6 +307,7 @@ import D0.Geometry.A4DPrimalDualCellPairing
 import D0.Geometry.A4DRawSolderFrameAction
 import D0.Geometry.A4DReferenceJunctionCompressionBoundary
 import D0.Geometry.A4DReferenceLocalCandidateNoGo
+import D0.Geometry.A4DRoleOverlapTwistedCocycle
 import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.A4DRoleSpatialRepresentationWeld
 import D0.Geometry.A4DScalarAdvectiveGroupoidObstruction
