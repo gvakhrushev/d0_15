@@ -8,54 +8,74 @@
 
 ## 0. Verdict
 
-No canonical single-site finite dressing \(\mathcal F_e\) is determined by the
-landed stack. A finite integration exists, but only as a family.
+No canonical finite dressing \(\mathcal F_e\) is determined by the landed stack.
+Finite integration exists, but only as a family.
 
-The owned constitutive identity
+The owned identity
 
 \[
-W_e=\mathcal F_e^{-T}\mathcal F_e^{-1},
-\qquad
 DW_0[e]=-(G(e)+G(e)^T)=H(e)
 \]
 
-fixes only the symmetric part of the tangent generator. On the exact
-pure-gauge chart \(e=d_f\phi\) the owned generator \(G_\xi\) of PR #101 / the
-crossed-lift memo fixes the full generator, including its skew part. Off that
-chart the skew part is a free linear datum.
+fixes the symmetric part of the tangent generator and nothing else. The
+carrier of \(H(e)\) is the CAR/group-algebra operator space of the crossed-lift
+memo (4.1), not \(\mathfrak{gl}(4)\). A count that puts the modulus in
+\(\mathfrak{so}(4)\) is the wrong type and is withdrawn.
 
-The residual modulus, at linearized level and after matching \(\mathcal F_\phi\), is
+On an exact coframe the owned generator is not the symmetric one. In the
+scalar \(L=3\) block, with \(\xi=\delta_0\),
 
 \[
-\boxed{
-\sigma\in\operatorname{Hom}\bigl(E_{\rm cof}/\operatorname{im}d_f,\;\mathfrak{so}(4)\bigr),
-\qquad
-\dim=6\times 12=72.
-}
-\tag{0.1}
+G_{\xi}=M_{\xi}D+K(h),\qquad h=D\xi,
 \]
 
-Here \(E_{\rm cof}\) is the 16-dimensional space of fibre-endomorphism values of
-a raw coframe (4 Role rows, 4 fibre columns), \(\operatorname{im}d_f\) is the
-4-dimensional leading symbol of exact coframes, and \(\mathfrak{so}(4)\) is the
-6-dimensional skew endomorphisms of the fibre.
+and \(M_{\xi}D\) has skew part
+
+\[
+\tfrac12(M_{\xi}D-D M_{\xi})
+=
+\begin{pmatrix}0&3/4&-3/4\\-3/4&0&0\\3/4&0&0\end{pmatrix}
+\neq 0.
+\]
+
+So \(G=-H/2\), the polar/symmetric choice, fails pure-gauge specialization.
+Matching \(\mathcal F_\phi\) forces this skew on \(\operatorname{im}d_f\).
+
+Off that chart it forces nothing. At \(L=3\) the scalar cycle splits as
+
+\[
+\operatorname{im}D=\{\text{mean-free functions}\}\ (\dim 2),
+\qquad
+(\operatorname{im}D)^{\perp}=\{\text{constants}\}\ (\dim 1),
+\]
+
+and \(D=0\) at \(L=2\), so the scalar block does not even separate the two
+there. A constant transverse mode plus any skew operator \(S\) gives
+
+\[
+DW(G_0)=DW(G_0+S)
+\]
+
+while both generators agree on \(\operatorname{im}D\). The same holds mode by
+mode on the full carrier.
 
 Minimal missing datum, named exactly:
 
 \[
 \boxed{
-\text{a skew assignment }
-\sigma:\text{transverse raw coframe}\to\mathfrak{so}(4)
-\text{ intertwining the owned frame action.}
+\sigma:\{\text{raw coframe modes}\}/\operatorname{im}d_f
+\longrightarrow
+\{\text{skew operators on the CAR/group-algebra carrier}\},
 }
-\tag{0.2}
 \]
 
-Nothing in PRs #123, #125, #126, #127, #128, #129 supplies (0.2).
+linear in the coframe, equal to \(\operatorname{skew}(G_{\xi})\) on
+\(\operatorname{im}d_f\), and intertwining the owned frame action.
+No integer dimension is stated: the carrier dimension depends on \(L\) and on
+which CAR block is occupied, and no landed theorem fixes those.
 
-Equivalence: two dressings are equivalent at first order iff their \(\sigma\)
-agree. Polar decomposition is one point of this family (\(\sigma=0\)), not a
-theorem.
+Nothing in PRs #123, #125, #126, #127, #128, #129 supplies \(\sigma\).
+Polar decomposition is the point \(\sigma=0\) off the exact chart, not a theorem.
 
 ## 1. Typing firewall
 
@@ -119,7 +139,7 @@ sourced-diagonal chain never reads.
 
 ### 3.1 Ordered exponential of a chosen \(G\)
 
-Once \(\sigma\) in (0.1) is chosen, set
+Once \(\sigma\) is chosen, set
 
 \[
 G(e)=-\tfrac12 H(e)+\sigma(P_\perp e)+G_{\rm exact}(P_{\rm exact}e)
@@ -130,26 +150,24 @@ and integrate by ordered exponential along any chosen coframe path from \(0\).
 Flat identity holds. Pure-gauge specialization holds because
 \(P_\perp d_f\phi=0\). First derivative is \(H\) because \(\sigma\) is skew.
 The path order of noncommuting transverse generators is a second extra datum
-inside this route. Neither \(\sigma\) nor the order is owned.
+inside this route. Neither \(\sigma\) nor the order is owned. The exponential is a representative of the family.
 
 ### 3.2 Background-groupoid cocycle
 
 A cocycle \(F(e,e')\) with \(F(0,0)=I\) and \(F(d_f\phi,0)=\mathcal F_\phi\)
 has the same tangent ambiguity: the infinitesimal generator along a
-transverse direction is still an arbitrary solution of (1.2). A cocycle law
+transverse direction is still an arbitrary solution of the symmetric constraint. A cocycle law
 constrains finite composition after a generator is chosen. It does not choose
 the generator.
 
 ### 3.3 Polar / metric square root
 
-The unique symmetric positive square root of a positive \(W_e\) forces
-\(\sigma=0\). That is one point of (0.1). Positivity of \(I+H(e)\) is not
-owned for arbitrary raw \(e\), and the pure-gauge dressing \(\mathcal F_\phi\)
-is not that polar factor: its generator \(G_\xi\) has a nonzero skew part
-(the \(K(h)\) and shift terms). Forcing \(\sigma=0\) on the nose would
-contradict the owned pure-gauge skew unless that skew is restored by hand
-on \(\operatorname{im}d_f\) and set to zero only transversely — which is again
-a choice of \(\sigma\), namely \(\sigma=0\).
+The symmetric positive square root forces skew zero everywhere. That already
+contradicts the owned pure-gauge generator, whose skew part is nonzero at
+\(L=3\) (checker: `pure_gauge_skew_nonzero`). Restoring that skew on
+\(\operatorname{im}d_f\) and setting it to zero only transversely is exactly
+the choice \(\sigma=0\) off the exact chart. Positivity of \(I+H(e)\) for
+arbitrary raw \(e\) is not owned.
 
 ### 3.4 Path-resolved graded trivialization
 
@@ -204,7 +222,7 @@ No Einstein equation, GR limit, QFT, physical time, golden/AF refinement,
 Exact `Fraction` arithmetic. Records: the first-order identity; that polar
 projection is a choice; that \(J\)/\(\kappa\)/observer/endpoint data do not
 read the skew fibre; that frame conjugation preserves nonzero skew orbits;
-that the residual count is \(72\); that ordered exponentials keep the
+that the transverse constant mode at \(L=3\) carries a free skew operator; that ordered exponentials keep the
 difference at order \(\varepsilon\); that a nonzero corner entry of \(H\) does
 not remove the skew fibre.
 
