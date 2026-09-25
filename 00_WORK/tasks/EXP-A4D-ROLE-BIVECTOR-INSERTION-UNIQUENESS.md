@@ -8,14 +8,14 @@ Mode: research-only, theory-first.
 
 Close exactly one remaining A4D interface:
 
-[
-oxed{
-	ext{classify and, if possible, uniquely select the finite Role-typed insertion }
-ewedge ewedge F.
+\[
+\boxed{
+\text{classify and, if possible, uniquely select the finite Role-typed insertion }
+e\wedge e\wedge F.
 }
-]
+\]
 
-Do not reopen curvature-carrier construction, affine 2-cocycles, general (F^2) action families, continuum Einstein equations, or time evolution.
+Do not reopen curvature-carrier construction, affine 2-cocycles, general \(F^2\) action families, continuum Einstein equations, or time evolution.
 
 The audited starting point is:
 
@@ -23,19 +23,19 @@ The audited starting point is:
 
 ## Frozen inputs
 
-1. Independent affine links already carry exact even linear holonomy (Lambda_{rs}).
+1. Independent affine links already carry exact even linear holonomy \(\Lambda_{rs}\).
 2. Shared-F mixed letters do not carry independent even curvature.
 3. The affine translation datum is stratified by
-   [
-   [t]inoperatorname{coker}(I-P),
-   ]
+   \[
+   [t]\in\operatorname{coker}(I-P),
+   \]
    and is a separate channel from the even insertion problem.
 4. On the Role bivector carrier, exact rational control calculation gives
-   [
-   dimoperatorname{End}_{mathfrak{so}(1,3)}(Lambda^2V)=2,
-   ]
-   with basis (I,J), (J^2=-I).
-5. Adding the odd spacelike Role swap (Bleftrightarrow C) reduces the commutant to dimension (1), because (Jmapsto-J).
+   \[
+   \dim\operatorname{End}_{\mathfrak{so}(1,3)}(\Lambda^2V)=2,
+   \]
+   with basis \(I,J\), \(J^2=-I\).
+5. Adding the odd spacelike Role swap \(B\leftrightarrow C\) reduces the commutant to dimension 1, because \(J\mapsto-J\).
 6. Existing repository work warns that simultaneous Role relabeling is not automatically the same statement as local Lorentz covariance.
 7. The old fake `HomDimension` enumeration and any proof containing `sorry` are rejected.
 
@@ -59,7 +59,7 @@ Work on the actual repository types:
 
 Do not replace this by an abstract `Matrix 4 4` problem except as a derived coordinate certificate.
 
-Classify every map used as:
+Classify every map used as one of:
 
 - `OWNED`;
 - `DERIVED-CANONICALLY`;
@@ -70,17 +70,17 @@ Classify every map used as:
 
 Construct the exact typed map
 
-[
-mathfrak{so}(eta)longrightarrowLambda^2V
-]
+\[
+\mathfrak{so}(\eta)\longrightarrow\Lambda^2V
+\]
 
 on the Role carrier.
 
-The expected coordinate relation is that for Lorentz tangent (X),
+The expected coordinate relation is that for Lorentz tangent \(X\),
 
-[
-omega_X:=eta X
-]
+\[
+\omega_X:=\eta X
+\]
 
 is antisymmetric, hence determines a bivector/two-form coefficient set.
 
@@ -97,57 +97,57 @@ If this weld cannot be typed with current owners, return the obstruction immedia
 
 Test the candidate
 
-[
-mathcal R(Lambda)
+\[
+\mathcal R(\Lambda)
 =
-rac12(Lambda-Lambda^{-1}).
-]
+\frac12(\Lambda-\Lambda^{-1}).
+\]
 
 For owned `IsRoleLorentz`, prove:
 
-[
-Lambda^{-1}=etaLambda^Teta,
-]
+\[
+\Lambda^{-1}=\eta\Lambda^T\eta,
+\]
 
-[
-mathcal R(Lambda)^Teta+etamathcal R(Lambda)=0,
-]
+\[
+\mathcal R(\Lambda)^T\eta+\eta\mathcal R(\Lambda)=0,
+\]
 
 and exact conjugation covariance
 
-[
-mathcal R(ELambda E^{-1})
+\[
+\mathcal R(E\Lambda E^{-1})
 =
-Emathcal R(Lambda)E^{-1}.
-]
+E\mathcal R(\Lambda)E^{-1}.
+\]
 
 Near identity verify
 
-[
-Lambda=e^X
-quadRightarrowquad
-mathcal R(Lambda)=X+O(X^3).
-]
+\[
+\Lambda=e^X
+\quad\Rightarrow\quad
+\mathcal R(\Lambda)=X+O(X^3).
+\]
 
-Compare against (P-I), local logarithm and other obvious extractions, but do not broaden the task once one exact global equivariant extraction is established.
+Compare against \(P-I\), local logarithm and other obvious extractions, but do not broaden the task once one exact global equivariant extraction is established.
 
 ## D. Complementary-face coframe bivector
 
-For a curvature face (S={r,s}), let (S^c={u,v}).
+For a curvature face \(S=\{r,s\}\), let \(S^c=\{u,v\}\).
 
 Using the owned solder legs, construct
 
-[
+\[
 B_{S^c}(x)
 =
-v_u(x)wedge v_v(x).
-]
+v_u(x)\wedge v_v(x).
+\]
 
 The two coframe legs must come from the complementary face needed for the four-dimensional top-cell contraction.
 
 Mandatory hostile control:
 
-- show that the naive same-face (v_rwedge v_s) contraction has the wrong base-degree/top-cell typing for the intended (ewedge ewedge F) density.
+- show that the naive same-face \(v_r\wedge v_s\) contraction has the wrong base-degree/top-cell typing for the intended \(e\wedge e\wedge F\) density.
 
 Use the existing `occupationComplement` / `complementOrientation` machinery rather than importing a continuum epsilon tensor.
 
@@ -157,9 +157,9 @@ Classify the exact space of local Lorentz-equivariant maps between the coframe b
 
 The control calculation predicts two proper-oriented Lorentz intertwiners:
 
-[
-I,qquad Jequivstar.
-]
+\[
+I,\qquad J\equiv\star.
+\]
 
 Confirm this on the actual Role/exterior types.
 
@@ -180,27 +180,27 @@ Give an exact implication diagram among them.
 
 If both proper-oriented intertwiners are typable, construct the finite candidates
 
-[
-mathcal L_0(S)
+\[
+\mathcal L_0(S)
 =
-epsilon_{m base}(S)
-langle
+\epsilon_{\rm base}(S)
+\langle
 B_{S^c},
-mathcal R_S
-angle,
-]
+\mathcal R_S
+\rangle,
+\]
 
 and
 
-[
-mathcal L_star(S)
+\[
+\mathcal L_\star(S)
 =
-epsilon_{m base}(S)
-langle
+\epsilon_{\rm base}(S)
+\langle
 B_{S^c},
-starmathcal R_S
-angle.
-]
+\star\mathcal R_S
+\rangle.
+\]
 
 Names such as Palatini/Holst may be used only as comparison labels after the finite formulas are complete.
 
@@ -217,15 +217,15 @@ For each candidate prove or disprove:
 
 Set
 
-[
-Lambda=I,qquad b=0,qquad Omega=0.
-]
+\[
+\Lambda=I,\qquad b=0,\qquad\Omega=0.
+\]
 
 The even linear-curvature density must vanish exactly.
 
-Verify that no additional coframe constitutive first jet is generated and that the already-owned matter/flux first jet remains (H(e)).
+Verify that no additional coframe constitutive first jet is generated and that the already-owned matter/flux first jet remains \(H(e)\).
 
-Important: this is only a compatibility test. Because both candidate insertions may vanish at (Lambda=I), it does not by itself prove uniqueness.
+Important: this is only a compatibility test. Because both candidate insertions may vanish at \(\Lambda=I\), it does not by itself prove uniqueness.
 
 ## H. Uniqueness decision
 
@@ -237,7 +237,7 @@ Use only if the actual mandatory owned symmetry group removes one of the two Lor
 
 ### `ROLE-BIVECTOR-INSERTION-TWO-DIMENSIONAL`
 
-Use if both (I) and (star) remain admissible under every genuinely mandatory owned symmetry.
+Use if both \(I\) and \(\star\) remain admissible under every genuinely mandatory owned symmetry.
 
 Give the exact two-dimensional basis.
 
@@ -259,7 +259,7 @@ Use if the required Lorentz-tangent-to-degree-two Role map or complementary-face
 6. Two-dimensional proper-Lorentz commutant proof/check.
 7. Symmetry-status table: local Lorentz vs Role relabel vs orientation.
 8. Explicit candidate density/densities.
-9. Flat (H(e)) compatibility.
+9. Flat \(H(e)\) compatibility.
 10. At least 10 theorem-ready propositions.
 11. Exactly one remaining missing principle if verdict is negative.
 12. Next calculation only if insertion uniqueness is actually closed.
@@ -282,11 +282,11 @@ No Lean.
 No GitHub mutation.
 No continuum Einstein equation.
 No time interpretation of Role A.
-No (L=3) wave claim before insertion uniqueness.
+No \(L=3\) wave claim before insertion uniqueness.
 No new 2-cocycle.
 No fitted coefficient.
 No golden-ratio phenomenology.
-No action claim built solely from quadratic curvature (F^2).
+No action claim built solely from quadratic curvature \(F^2\).
 
 ## Exit condition
 
