@@ -291,6 +291,7 @@ import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DHorizontalDressingSecondJetFreedom
 import D0.Geometry.A4DLabelledPathHolonomyDescent
+import D0.Geometry.A4DLabelledEndpointLocalityPassport
 import D0.Geometry.A4DLocalReverseStarNoGo
 import D0.Geometry.A4DLocatedFrameCompatibilityBoundary
 import D0.Geometry.A4DLocatedMatterCellEnergy
