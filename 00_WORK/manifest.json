@@ -21,11 +21,11 @@
       "parent": "ROOT",
       "state": "PLANNED",
       "affected_claims": [],
-      "exit_condition": "The variational-selection research lane is terminally classified and both finite regression workers are either merged or terminally scoped without scientific overclaim.",
+      "exit_condition": "The Role-bivector insertion space is terminally classified as dimension one, dimension two, or blocked by one explicit typed weld/symmetry principle; both finite regression workers are merged or terminally scoped without scientific overclaim.",
       "brief": "00_WORK/tasks/CTRL-A4D-VARIATIONAL-FRONTIER.md"
     },
     {
-      "id": "EXP-A4D-FINITE-COFRAME-CURVATURE-VARIATIONAL-LAW",
+      "id": "EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
       "state": "PLANNED",
@@ -35,8 +35,8 @@
         "D0-LOCATED-PRIMAL-DUAL-STAR-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "The finite action-selection problem is terminally classified by one declared verdict with a complete typing and uniqueness argument and, if positive, an exact L=3 physical coframe Hessian spectrum.",
-      "brief": "00_WORK/tasks/EXP-A4D-FINITE-COFRAME-CURVATURE-VARIATIONAL-LAW.md"
+      "exit_condition": "The finite Role-typed linear-curvature insertion is uniquely selected up to scale, exactly classified as a two-dimensional family, or shown to require one precisely identified missing weld/symmetry principle.",
+      "brief": "00_WORK/tasks/EXP-A4D-ROLE-BIVECTOR-INSERTION-UNIQUENESS.md"
     },
     {
       "id": "WRK-A4D-AFFINE-CURVATURE-CERT",
@@ -50,16 +50,16 @@
       "brief": "00_WORK/tasks/WRK-A4D-AFFINE-CURVATURE-CERT.md"
     },
     {
-      "id": "WRK-A4D-ACTION-NONSELECTION-CERT",
+      "id": "WRK-A4D-BIVECTOR-COMMUTANT-CERT",
       "class": "WORKER",
       "parent": "CTRL-A4D-VARIATIONAL-FRONTIER",
       "state": "PLANNED",
       "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
+        "D0-LOCATED-PRIMAL-DUAL-STAR-001",
         "D0-CONSTITUTIVE-KERNEL-FAMILY-001"
       ],
-      "exit_condition": "An exact-arithmetic research certificate reproduces the inequivalent L=3 Hessian spectra, gauge and harmonic count, and Green identity with reachable negative mutations and no physical overclaim.",
-      "brief": "00_WORK/tasks/WRK-A4D-ACTION-NONSELECTION-CERT.md"
+      "exit_condition": "An exact-rational certificate reproduces the Role-bivector Lorentz commutant dimensions 2 and conditionally 1 after an odd Role swap, identifies the Hodge-like complex structure, and preserves the symmetry-status caveat.",
+      "brief": "00_WORK/tasks/WRK-A4D-BIVECTOR-COMMUTANT-CERT.md"
     }
   ]
 }
