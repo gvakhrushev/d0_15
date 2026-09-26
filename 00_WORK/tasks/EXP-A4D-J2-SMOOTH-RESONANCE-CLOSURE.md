@@ -44,11 +44,11 @@ Continuation gates now replace the old "repeat eight L=4 orbits" plan:
 7. Certificate the w=1 parabolic reduced-quartic cancellation; then compute V6^red or otherwise prove that u=0 is an isolated zero of the unsourced reduced Euler map.
 8. On the generic rank-22 / d_incompat=2 stratum, derive parameterized V4,z and its projective critical discriminant/resultant instead of orbit-by-orbit Newton solving.
 9. Prove a finite algebraic/subanalytic resonance stratification with a uniform positive Hölder/Łojasiewicz exponent. Pointwise finite Puiseux order is not enough.
-10. Combine fixed (L-independent) smooth bump realization, IR invertibility and UV super-algebraic Fourier tails to prove every resonant correction is o(epsilon_N^2).
-11. Prove asymptotic locality / extension independence: two global smooth realizations of the same local metric 2-jet must give the same reconstructed center response in the limit.
+10. Prove the shrinking-bump J² estimate inside the nonlinear solder quotient: for rho_h=h^alpha with 1/2<alpha<1, establish the actual response remainder O(h^(1-alpha))+O(h^(4alpha-2))+O(h^infty), with the coarse balanced choice alpha=3/5 giving O(h^(2/5)) if the stated analytic/Wiener bounds hold.
+11. Replace global connection uniqueness by a stationary-correspondence theorem: every flat-approaching UV sheet obeys a uniform positive Hölder estimate and yields the same h^-2 response limit. Then prove asymptotic locality / extension independence for different smooth realizations of the same local metric 2-jet.
 12. No arbitrary spectral filter/projection. Keep finite exact stationarity distinct from asymptotic J² equivalence; keep frame/grid erasure, Noether-divergence and cosmological bg channels separate.
 
-Cross-wall observation only: PR #202 exhibits related parabolic/null-line affine-residual blindness. Treat "parabolic null-line seam" as a hypothesis until both sides have compatible exact stabilizer theorems; do not edit #202 from this task.
+Cross-wall observation only: PR #202 exhibits the same rank-two parabolic seam. The exact algebraic candidate is the null flag im(I-P)^2 ⊂ im(I-P) together with the rank-adapted compound detector Q_r(A,t)=t∧(∧^r A); for r=2 it survives where det/adj vanish. Treat this as an affine-quotient detector/resolution candidate, not a new action channel, until #202 or a later owner certifies compatibility with the selected physical quotient. Do not edit #202 primary artifacts from this task.
 
 ## Terminal outcomes
 
