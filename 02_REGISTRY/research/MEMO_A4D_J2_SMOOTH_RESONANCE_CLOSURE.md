@@ -56,7 +56,7 @@ The diagonal source remains closed; no new orbit search is undertaken.
 | Diagonal nonlinear rescue | Existing `certificates/a4d_j2_smooth_resonance_closure_check.py`; rational nondegenerate root for the declared sourced reduction and resulting cubic Puiseux branch |
 | Entire constant-solder zero-phase block and canonical gap | New `certificates/a4d_j2_fixed_realization_ir_check.py`; symbolic identity for all 16 solder entries, exact Laurent coefficient bounds |
 | Sampling/reconstruction | `ATORUS_TYPED_RESPONSE_RECONSTRUCTION.md`; actual framed sampler, not a finite sampler on an ordinary 2-jet |
-| Corrected parabolic control | User-supplied starting premise: `j` is flat and missing ambient transverse pressure removes `(gamma,delta)` locally. The inspected #202 head `dbdd17b` still contains the older restricted `8+6` package; that package is not an owner of the corrected full-Euler statement |
+| Corrected parabolic control | Live #202 full-transverse certificate `a4d_resolved_curved_stationary_e2_enlarged12_full_transverse_check.py`: the stored `e2_closed` matrices are Cayley transforms of `span{M2,M3,-J23}` with true complement `{K1,N2,N3}`. On `e2=(0,0,j,0,0,j,gamma,delta,0,delta,-gamma,0)` the full 24 Lorentz-link derivatives force `j=gamma=delta=0`; the older restricted `8+6` family is superseded as a full-stationarity claim. |
 
 The old diagonal certificate freezes the reduced quartic polynomial and verifies
 its sourced rational Newton contraction; it does not independently reconstruct
@@ -546,19 +546,47 @@ agreement after `h^-2`, on **all** the indicated sheets.
 This is the single missing mathematical bridge. A certificate covering only
 one isolated character or only the diagonal source does not prove it.
 
-### 8.4 Parabolic control and the corrected notion of isolation
+### 8.4 Parabolic control after the full-transverse replay
 
-The task's corrected #202 premise has a flat parameter `j` and normals
-`(gamma,delta)`. Isolation means the full zero-source Euler system forces
-`gamma=delta=0` in a tube about `Z_j`, uniformly on the declared compact range of
-`j`. It does not force `j=0`. A missing ambient transverse equation cannot be
-replaced by a vanishing restricted gradient.
+Live #202 now owns the omitted ambient Euler pressure exactly.  The stored
+`e2_closed` matrices are Cayley transforms of
+(operatorname{span}{M_2,M_3,-J_{23}}), so the true Lorentz complement is
+({K_1,N_2,N_3}).  The previously supplied rows based on
+({K_1,M_2,M_3}) were derivatives of a mismatched algebra base, not of the
+stored matrices.
 
-The inspected #202 restricted `8+6` scripts and memo are older than this supplied
-correction; this PR does not relabel them as full-Euler certificates. The
-minimal replay request is the omitted ambient Euler pressure, all denominators
-and its uniform flat-modulus range. Even that corrected finite control would
-remain a model for (8.2), not proof for every resonance and refinement.
+On the three-parameter sheet
+[
+e_2=(0,0,j,;0,0,j,;gamma,delta,0,;delta,-gamma,0)
+]
+the exact role-2/3 complement equations reduce to
+[
+gamma(j^2+4)-2j^2=0,qquad
+gamma(j^2+4)+2j^2=0,
+]
+[
+delta(j^2+4)+4j=0,qquad
+delta(j^2+4)-4j=0.
+]
+Over the reals these force
+[
+oxed{j=gamma=delta=0.}
+]
+In particular, even the configuration line (gamma=delta=0) is not
+stationary for (j
+e0); one exact derivative is
+(128j/(j^2+4)).
+
+Thus this homogeneous parabolic sheet is a stronger finite control than the
+earlier premise: its full-star stationary germ is isolated at the origin.
+The matched-affine result remains independently useful: the old det/adj
+residual is dormant on this rank-two parabolic sheet, so the selected
+quadratic (I)-channels cannot repair the star Euler obstruction there.
+
+This finite control still does **not** prove H-NORMAL-RESCUE.  Equation (8.1)
+shows why: isolation on one constant homogeneous sheet does not exclude new
+flat-approaching exact sheets created by slow-background corrections and
+coupled resonant variables as (h	o0).
 
 ## 9. Conditional local Einstein theorem and extension independence
 
