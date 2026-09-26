@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
-| EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
-| WORKER | 2 | 1 | 0 | 0 | 3 | 1 / 5 |
-| **Total** | **4** | **1** | **0** | **1** | **6** | **2 / 10** |
+| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
+| WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
+| **Total** | **1** | **0** | **0** | **1** | **2** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -17,10 +17,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|
 | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | CONTROL | REVIEW | ROOT | - |
 | EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
-| EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-J2-SLOW-BACKGROUND-DIAGONAL-GERM | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-J2-METRIC-RESPONSE-SENSITIVITY | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-RANK-COMPOUND-AFFINE-QUOTIENT | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 
 ## Registry Health & Metrics
 
