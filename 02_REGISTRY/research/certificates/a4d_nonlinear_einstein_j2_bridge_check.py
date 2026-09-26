@@ -10,21 +10,21 @@ This checker proves three bridge facts.
        Q = Theta eta Theta^T
    at the flat solder.
 
-2. The flat Lorentz-connection Hessian block has the exact arbitrary-phase
-   determinant
-       det H_AA(z)
-       = 2^-16 prod_{r<s}(z_r z_s + z_r + z_s - 1)^4.
-   It is therefore invertible at low momentum (det H_AA(1)=256), but has
-   exact quarter-wave resonances on the unit torus.
+2. For a genuine complex Fourier character, the real quadratic action pairs
+   mode z with the conjugate/inverse mode z^{-1}.  On the diagonal character
+       z_A=z_B=z_C=z_D=t
+   the correctly polarized flat Lorentz-connection block satisfies
+       det H_AA^pol(t) = (t^2+1)^12 / (16 t^12).
+   It is regular at low momentum (det at t=1 is 256) but singular at the
+   exact L=4 quarter-wave t=i.
 
-3. At the finite L=4 character z=(i,-i,1,1), rank H_AA=20 while the
-   connection source from genuine symmetric metric perturbations enlarges the
-   augmented rank to 24.  An explicit left-null witness has support on
-   connection coordinates 3 and 7 and pairs nontrivially with q_02:
-       lambda^T H_Aq(q_02) = (1+i)/2.
-   Hence there is no smooth all-mode connection section K_*(Q) through flat
-   whose differential solves the connection Euler equation on the full metric
-   carrier.
+3. At t=i the polarized block has rank 16, while the connection source from
+   genuine symmetric metric perturbations enlarges the augmented rank to 20.
+   An explicit Fredholm witness lies in ker H_AA^pol and pairs nontrivially
+   with the q_11 metric basis direction:
+       lambda^T H_Aq(q_11) = -(1+i).
+   Hence naive smooth all-mode connection elimination through flat fails on
+   the full finite metric carrier at L=4.
 
 No continuum Einstein equation is claimed by this certificate.
 """
@@ -42,8 +42,7 @@ def check(name, cond):
     print("PASS_" + name)
 
 
-# Lorentz tangent basis in the same ordering used by #201:
-# K1,K2,K3,J12,J13,J23.
+# Lorentz tangent basis: K1,K2,K3,J12,J13,J23.
 LORENTZ = []
 for i in (1, 2, 3):
     X = sp.zeros(4)
@@ -92,19 +91,6 @@ def complement_orientation(face):
     return -1 if inv % 2 else 1
 
 
-def mul_jet(X, Y):
-    return (
-        X[0] * Y[0],
-        X[0] * Y[1] + X[1] * Y[0],
-        X[0] * Y[2] + X[1] * Y[1] + X[2] * Y[0],
-    )
-
-
-def exp_link(A, scale=1, inverse=False):
-    B = scale * A
-    return (sp.eye(4), -B if inverse else B, B * B / 2)
-
-
 # ---------------------------------------------------------------------------
 # A. Exact nonlinear metric tangent section
 # ---------------------------------------------------------------------------
@@ -139,88 +125,161 @@ check("METRIC_LIFT_RANK_10", B.rank() == 10)
 
 
 # ---------------------------------------------------------------------------
-# B. Arbitrary-phase flat quadratic connection block
+# B. Correct polarized Fourier block z <-> z^{-1}
 # ---------------------------------------------------------------------------
 
-z = sp.symbols("z0:4")
-hvars = sp.symbols("h0:16")
+# A real quadratic lattice action pairs a character z with z^{-1}.  We keep
+# independent connection amplitudes A (mode z) and Bc (mode z^{-1}) and extract
+# the mixed tu coefficient.
+
+z = sp.symbols("z0:4", nonzero=True)
 avars = sp.symbols("a0:24")
+bvars = sp.symbols("b0:24")
 
-h = [sp.Matrix(hvars[4 * r : 4 * r + 4]) for r in range(4)]
 A = []
+Bc = []
 for r in range(4):
-    Y = sp.zeros(4)
+    YA = sp.zeros(4)
+    YB = sp.zeros(4)
     for j, gen in enumerate(LORENTZ):
-        Y += avars[6 * r + j] * gen
-    A.append(Y)
+        YA += avars[6 * r + j] * gen
+        YB += bvars[6 * r + j] * gen
+    A.append(YA)
+    Bc.append(YB)
 
-basis = [sp.eye(4)[:, r] for r in range(4)]
-total = sp.Integer(0)
 
-for r, s in PAIRS:
-    P = (sp.eye(4), sp.zeros(4), sp.zeros(4))
-    P = mul_jet(P, exp_link(A[r]))
-    P = mul_jet(P, exp_link(A[s], z[r]))
-    P = mul_jet(P, exp_link(A[r], z[s], inverse=True))
-    P = mul_jet(P, exp_link(A[s], inverse=True))
-
-    P1, P2 = P[1], P[2]
-    C1 = bivector_of_tangent(P1)
-    C2 = bivector_of_tangent(P2 - P1 * P1 / 2)
-
-    u, v = [i for i in range(4) if i not in (r, s)]
-    B0 = wedge_vec(basis[u], basis[v])
-    B1 = wedge_vec(h[u], basis[v]) + wedge_vec(basis[u], h[v])
-
-    total += complement_orientation((r, s)) * (
-        (B0.T * G2 * STAR * C2)[0] + (B1.T * G2 * STAR * C1)[0]
+# Bivariate jet coefficients (1, t, u, tu).
+def mul_jet4(X, Y):
+    return (
+        X[0] * Y[0],
+        X[0] * Y[1] + X[1] * Y[0],
+        X[0] * Y[2] + X[2] * Y[0],
+        X[0] * Y[3] + X[1] * Y[2] + X[2] * Y[1] + X[3] * Y[0],
     )
 
-total = sp.expand(total)
-HESS = sp.hessian(total, list(hvars) + list(avars))
-HAA = HESS[16:, 16:]
-HAH = HESS[16:, :16]
 
-expected_det = sp.Rational(1, 2**16)
+def exp_link4(A0, B0, phase_a=1, phase_b=1, inverse=False):
+    sign = -1 if inverse else 1
+    LA = sign * phase_a * A0
+    LB = sign * phase_b * B0
+    # sign^2=1 in the mixed quadratic coefficient.
+    mixed = sp.Rational(1, 2) * phase_a * phase_b * (A0 * B0 + B0 * A0)
+    return (sp.eye(4), LA, LB, mixed)
+
+
+def curvature_mixed(P):
+    # For P=I+t P10+u P01+tu P11,
+    # mixed coeff of (P-P^{-1})/2 is
+    # P11 - 1/2(P10 P01 + P01 P10).
+    return sp.simplify(
+        P[3] - sp.Rational(1, 2) * (P[1] * P[2] + P[2] * P[1])
+    )
+
+
+basis = [sp.eye(4)[:, r] for r in range(4)]
+connection_bilinear = sp.Integer(0)
+
 for r, s in PAIRS:
-    expected_det *= (z[r] * z[s] + z[r] + z[s] - 1) ** 4
+    P = (sp.eye(4), sp.zeros(4), sp.zeros(4), sp.zeros(4))
+    P = mul_jet4(P, exp_link4(A[r], Bc[r]))
+    P = mul_jet4(P, exp_link4(A[s], Bc[s], z[r], 1 / z[r]))
+    P = mul_jet4(
+        P, exp_link4(A[r], Bc[r], z[s], 1 / z[s], inverse=True)
+    )
+    P = mul_jet4(P, exp_link4(A[s], Bc[s], inverse=True))
 
-actual_det = sp.factor(HAA.det(method="domain-ge"))
-check("CONNECTION_DETERMINANT_FACTORIZATION", sp.factor(actual_det - expected_det) == 0)
-check("ZERO_MOMENTUM_CONNECTION_DET_256", sp.simplify(actual_det.subs({x: 1 for x in z})) == 256)
-check("ZERO_MOMENTUM_CONNECTION_RANK_24", HAA.subs({x: 1 for x in z}).rank() == 24)
+    Cm = curvature_mixed(P)
+    u, v = [i for i in range(4) if i not in (r, s)]
+    B0 = wedge_vec(basis[u], basis[v])
+    connection_bilinear += complement_orientation((r, s)) * (
+        B0.T * G2 * STAR * bivector_of_tangent(Cm)
+    )[0]
+
+connection_bilinear = sp.expand(connection_bilinear)
+HAB = sp.Matrix(
+    [
+        [
+            sp.diff(sp.diff(connection_bilinear, avars[i]), bvars[j])
+            for j in range(24)
+        ]
+        for i in range(24)
+    ]
+)
+
+# Low-momentum block reproduces the #201 zero-momentum determinant.
+HAB_ONE = HAB.subs({zr: 1 for zr in z})
+check("POLARIZED_ZERO_MOMENTUM_RANK_24", HAB_ONE.rank() == 24)
+check("POLARIZED_ZERO_MOMENTUM_DET_256", sp.factor(HAB_ONE.det()) == 256)
+
+# Along the diagonal phase z_A=z_B=z_C=z_D=t the determinant is exactly
+# one-variable and factorizes cheaply.
+t = sp.symbols("t", nonzero=True)
+HAB_DIAG = HAB.subs({zr: t for zr in z})
+diag_det = sp.factor(HAB_DIAG.det(method="domain-ge"))
+expected_diag_det = (t**2 + 1) ** 12 / (16 * t**12)
+check(
+    "POLARIZED_DIAGONAL_DETERMINANT",
+    sp.factor(diag_det - expected_diag_det) == 0,
+)
 
 
 # ---------------------------------------------------------------------------
-# C. Exact L=4 quarter-wave obstruction on genuine metric directions
+# C. Genuine metric-source incompatibility at the L=4 quarter wave
 # ---------------------------------------------------------------------------
 
-quarter = {z[0]: sp.I, z[1]: -sp.I, z[2]: 1, z[3]: 1}
-HAA_Q = HAA.subs(quarter)
-HAQ_Q = (HAH * B).subs(quarter)
+# Cross term between coframe mode z and conjugate connection mode z^{-1}.
+hvars = sp.symbols("h0:16")
+h = [sp.Matrix(hvars[4 * r : 4 * r + 4]) for r in range(4)]
+cross = sp.Integer(0)
 
-check("QUARTER_WAVE_CONNECTION_RANK_20", HAA_Q.rank() == 20)
+for r, s in PAIRS:
+    # First curvature jet of the conjugate connection mode.
+    C1 = (1 / z[r] - 1) * Bc[s] - (1 / z[s] - 1) * Bc[r]
+    u, v = [i for i in range(4) if i not in (r, s)]
+    B1 = wedge_vec(h[u], basis[v]) + wedge_vec(basis[u], h[v])
+    cross += complement_orientation((r, s)) * (
+        B1.T * G2 * STAR * bivector_of_tangent(C1)
+    )[0]
+
+HAH_CONJ = sp.Matrix(
+    [
+        [
+            sp.diff(sp.diff(cross, bvars[i]), hvars[j])
+            for j in range(16)
+        ]
+        for i in range(24)
+    ]
+)
+HAQ = HAH_CONJ * B
+
+quarter = {zr: sp.I for zr in z}
+HAB_Q = HAB.subs(quarter)
+HAQ_Q = HAQ.subs(quarter)
+
+# Variation with respect to the conjugate-mode connection gives
+# HAB^T a + HAQ q = 0.
+check("QUARTER_WAVE_POLARIZED_RANK_16", HAB_Q.rank() == 16)
 check("QUARTER_WAVE_METRIC_SOURCE_RANK_9", HAQ_Q.rank() == 9)
-check("QUARTER_WAVE_AUGMENTED_RANK_24", HAA_Q.row_join(HAQ_Q).rank() == 24)
+check(
+    "QUARTER_WAVE_AUGMENTED_RANK_20",
+    HAB_Q.T.row_join(HAQ_Q).rank() == 20,
+)
 
-# Explicit left-null witness. Coordinates 3 and 7 correspond to
-# (Role A,J12) and (Role B,K2) in the basis ordering above.
+# Explicit Fredholm witness: lambda is a left null vector of HAB^T, equivalently
+# a right null vector of HAB.  It is supported on the three boosts of Role A.
 lam = sp.zeros(24, 1)
-lam[3] = 1
-lam[7] = 1
-check("QUARTER_WAVE_LEFT_NULL_WITNESS", (lam.T * HAA_Q) == sp.zeros(1, 24))
+lam[0] = 1
+lam[1] = 1
+lam[2] = 1
+check("QUARTER_WAVE_FREDHOLM_NULL_WITNESS", HAB_Q * lam == sp.zeros(24, 1))
 
-q02_index = SYM.index((0, 2))
-pairing = sp.simplify((lam.T * HAQ_Q[:, q02_index])[0])
-check("QUARTER_WAVE_METRIC_INCOMPATIBILITY", pairing == (1 + sp.I) / 2)
-
-# The resonant determinant factor itself vanishes exactly.
-resonant_factor = z[0] * z[1] + z[0] + z[1] - 1
-check("QUARTER_WAVE_FACTOR_ZERO", sp.simplify(resonant_factor.subs(quarter)) == 0)
+q11_index = SYM.index((1, 1))
+pairing = sp.simplify((lam.T * HAQ_Q[:, q11_index])[0])
+check("QUARTER_WAVE_METRIC_INCOMPATIBILITY", pairing == -1 - sp.I)
 
 print("RESULT_METRIC_PROVENANCE: the #201 ten-component lift is exactly a section of dQ_flat for Q=Theta eta Theta^T.")
-print("RESULT_CONNECTION_SYMBOL: det H_AA(z)=2^-16 prod_{r<s}(z_r z_s+z_r+z_s-1)^4.")
-print("RESULT_LOW_MOMENTUM: det H_AA(1,1,1,1)=256.")
-print("RESULT_QUARTER_WAVE: at z=(i,-i,1,1), rank H_AA=20 but rank[H_AA|H_Aq]=24.")
-print("RESULT_EXPLICIT_WITNESS: lambda_(A,J12)+lambda_(B,K2) pairs with metric q_02 as (1+i)/2.")
-print("TERMINAL_SCOPED: ALL-MODE-FLAT-CONNECTION-ELIMINATION-FAILS-AT-L4-QUARTER-WAVE-RESONANCE")
+print("RESULT_POLARIZED_CONNECTION: along z_A=z_B=z_C=z_D=t, det H_AA^pol=(t^2+1)^12/(16 t^12).")
+print("RESULT_LOW_MOMENTUM: det H_AA^pol(1)=256.")
+print("RESULT_QUARTER_WAVE: at L=4, t=i, rank H_AA^pol=16 but rank[H_AA^pol|H_Aq]=20.")
+print("RESULT_EXPLICIT_WITNESS: lambda on the three Role-A boosts pairs with metric q_11 as -(1+i).")
+print("TERMINAL_SCOPED: ALL-MODE-FLAT-CONNECTION-ELIMINATION-FAILS-AT-L4-DIAGONAL-QUARTER-WAVE")
