@@ -3,7 +3,7 @@
 **Task:** `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`
 **Execution:** PR #202
 **Status:** IN_PROGRESS / durable checkpoint (restructured F4 attack)
-**Baseline:** `75fc9eec99dcb8b5b15a0bc0de5662c9453175f4`
+**Baseline:** `4b145afe33b2fb7381615199167608b71457d01d`
 
 ## 0A. CORRECTIVE FULL-EULER AUDIT (2026-09-26)
 
