@@ -37,17 +37,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN.md"
     },
     {
-      "id": "EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Lift the exact star-action pure-Einstein flat Hessian into, or sharply obstruct, one metric-only smooth local J^2 Lorentz response on T4 that is local-Diff natural and covariantly divergence-free, sufficient for the Navarro/Lovelock Einstein-class gate.",
-      "brief": "00_WORK/tasks/EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE.md"
-    },
-    {
       "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
