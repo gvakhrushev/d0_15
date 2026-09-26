@@ -107,3 +107,123 @@ identify the smallest exact polynomial subsystem needed for certification.
 
 No GR/Einstein conclusion is allowed from F5 alone; F4 remains independently
 load-bearing.
+
+
+## 3. NUMERICAL/EXPLORATORY — broad homogeneous four-link roots survive the exact word controls
+
+The exact homogeneous control certificate in this PR kills five explicit
+rational word backgrounds, including the two generic quotient-complete
+backgrounds from the joint-holonomy packet. That is a useful negative control,
+but it does not exhaust the homogeneous four-link sector.
+
+A separate broad root search was therefore run on the full homogeneous
+four-link star action.
+
+### 3.1 Exponential-Lorentz / SL(4) solder scout
+
+Variables:
+
+- four independent proper-Lorentz links, six Lie-algebra parameters each;
+- a full homogeneous invertible solder;
+- determinant fixed to (-1) only to prevent the optimizer from collapsing
+  the homogeneous degree-two action by the trivial scale limit;
+- the missing scale Euler equation imposed independently as (S=0).
+
+Across 20 deterministic random starts, many nonflat roots were found. After
+reconstructing the raw solder matrix, each candidate was checked against the
+**unconstrained 40-component Euler gradient**.
+
+Representative candidate:
+
+[
+|mathrm{EL}_{m raw}|_2=8.22	imes10^{-14},
+quad
+|mathrm{EL}_Theta|_2=4.15	imes10^{-14},
+quad
+|mathrm{EL}_L|_2=7.10	imes10^{-14},
+]
+[
+detTheta=-1,
+quad
+|C|_{m scout}=0.9732,
+quad
+sigma_{min}(Theta)=0.2423,
+quad
+kappa(Theta)=17.9.
+]
+
+Thus the earlier numerical collapse to degenerate solder is not stable under a
+wider homogeneous ansatz once scale collapse is excluded.
+
+### 3.2 Rational Cayley/LDU scout
+
+To remove dependence on exponential coordinates, the search was repeated with
+the rational charts
+
+[
+L(A)=(I+A/2)(I-A/2)^{-1},
+qquad Ainmathfrak{so}(1,3),
+]
+
+and a determinant-one rational (LDU) solder chart multiplied by the Lorentz
+signature matrix. The stationary equations are therefore rational functions of
+39 chart variables.
+
+Again many nonflat roots were found. Representative candidate:
+
+[
+|mathrm{EL}|_2=1.21	imes10^{-13},
+qquad
+detTheta=-1,
+]
+[
+|C|_{m scout}=1.3900123322164437,
+qquad
+sigma_{min}(Theta)=0.3797133,
+qquad
+kappa(Theta)=6.33.
+]
+
+The fixed-determinant homogeneous Hessian at this candidate has numerical
+
+[
+operatorname{rank}H=20,
+qquad
+operatorname{nullity}H=19
+]
+
+at tolerance (10^{-8}). This is evidence for a positive-dimensional
+stationary manifold, not an isolated optimizer accident, but it is not yet an
+exact theorem.
+
+The persisted candidate is:
+
+`02_REGISTRY/research/certificates/a4d_curved_stationary_cayley_scout_candidate.json`.
+
+### 3.3 Current interpretation
+
+The exact negative word controls and the broad numerical positive scout are
+compatible:
+
+- several simple rational word backgrounds provably have no nondegenerate full
+  stationary point;
+- the unrestricted homogeneous four-link sector appears to contain
+  nondegenerate curved critical points outside those word families.
+
+Therefore the next exact problem is sharply defined: extract one exact
+rational/algebraic point from the apparent 19-dimensional Cayley/LDU stationary
+manifold.
+
+### SINGLE NEXT BLOCKER
+
+Use the observed rank-20 transverse system:
+
+1. choose 19 chart coordinates as free parameters;
+2. fix them to simple rationals near the numerical candidate;
+3. solve the remaining transverse equations exactly or by high-precision
+   algebraic reconstruction;
+4. certify (C
+eq0), (detTheta
+eq0), (E_Theta=0), (E_L=0).
+
+Do not promote the floating-point roots before this exactification.
