@@ -194,7 +194,20 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    powers after differentiating the rational star density — chart-open units.
    Scope: no exact root; no Groebner; packing still provisional.
 
-12. **2D Cayley subtangent warning.**
+12. **E(2) rational specialization D=1, U=0 — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_stationarity_specialize_du1_check.py`
+   (sha256 `a73a62ad…12eaaad`; wall ~17s; 39 PASS).
+   Under provisional FIXED_13, specialize free solder `D=(1,1,1)`, `U=0` and
+   retain five free E(2) coords `(n3_r2, j_r2, n2_r3, n3_r3, j_r3)`.
+   Free-internal reduced degrees `[3,5,3,3,5]`; the three n-direction gens
+   (`∂S/∂n3_r2`, `∂S/∂n2_r3`, `∂S/∂n3_r3`) are bivariate in `(j_r2, j_r3)` alone
+   and have lex Groebner basis `{j_r2+j_r3, j_r3²+4}` over Q. Hence
+   `j_r3²+4` lies in the free-internal ideal: every common zero is Cayley
+   chart-closed. Open-chart specialized free-internal system: **empty** (over C).
+   Scope: slice-only no-go under this D/U specialization + provisional packing;
+   not a global E2/F4 no-go; QR pivots still unrecovered; no exact curved root.
+
+13. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -233,7 +246,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-DENOM-CAP-LINK-ROUNDING-STAR-RESIDUAL-EXACT-NONZERO;
     E2-STATIONARITY-POLYS-14-INTERNAL-DEG33-PLUS-6-TRANSVERSE-DEG23;
     E2-8P6-SUBSYSTEM-SAMPLE-JAC-RANK-14-UNDER-PROVISIONAL-PACKING;
-    E2-STATIONARITY-DEG-REDUCE-INTERNAL-LE12-TRANSVERSE-LE15-CHART-OPEN
+    E2-STATIONARITY-DEG-REDUCE-INTERNAL-LE12-TRANSVERSE-LE15-CHART-OPEN;
+    E2-STATIONARITY-SPEC-D1-U0-FREE-INTERNAL-FORCES-CHART-CLOSED
 
 Supporting:
 
@@ -246,15 +260,14 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** eliminate / algebraically reconstruct the 14 free coords
-from the **degree-reduced** 8+6 subsystem (internal ≤12, transverse ≤15 after
-chart-denom/content stripping;
-`a4d_resolved_curved_stationary_e2_stationarity_deg_reduce_check.py`) under the
-still-**provisional** FIXED_13 packing, then filter by four-channel `R=R_*(C)`.
-Blind deg-33 Groebner over Q is the wrong next step — use the reduced gens.
-Still hard in 14 vars: prefer rational specialization of a free subset, or
-recover QR pivot map / gauge-canonical exact normal form before claiming the
-numerical scout root is an algebraic point of this ideal.
+**Primary (Track B):** the D=(1,1,1)/U=0 specialization is now an exact
+open-chart no-go under provisional FIXED_13
+(`a4d_resolved_curved_stationary_e2_stationarity_specialize_du1_check.py`).
+Next: denser rational specialization nearer the numerical E(2) scout (keep D
+or selected U free), **or** recover the QR pivot map / gauge-canonical packing
+replacing provisional FIXED_13, then eliminate on the degree-reduced ≤12/≤15
+8+6 gens. Still avoid blind 14-var / deg-33 Groebner. Filter survivors by
+four-channel `R=R_*(C)`.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -298,6 +311,7 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_f4_chec
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_exactify_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_polys_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_deg_reduce_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_specialize_du1_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
