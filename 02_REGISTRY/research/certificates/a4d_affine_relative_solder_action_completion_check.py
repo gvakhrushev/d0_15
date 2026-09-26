@@ -480,6 +480,8 @@ for x in SITES:
 
 check("ONE_EDGE_MATCHED_SHIFT_NOT_NODE_GAUGE",
       DL.row_join(u).rank() == 65)
+check("MATCHED_EDGE_SPACE_DIM_256", len(SITES) * 4 * 4 == 256)
+check("ACCIDENTAL_NONGAUGE_DIAGONAL_DIM_192", 256 - DL.rank() == 192)
 
 theta_match = {
     key: sp.Matrix(value)
@@ -516,5 +518,5 @@ print("RESULT_COVARIANCE: all 96 completed finite cell densities are invariant u
 print("RESULT_FLAT: b=0 recovers the accepted star density and the flat translation-gauge chart leaves relative solder exactly eta.")
 print("RESULT_SHIFT: independent affine shift remains visible.")
 print("RESULT_PRINCIPAL_WITNESS: one curved L=2 background has no nonzero covariantly constant node translation.")
-print("RESULT_OVERQUOTIENT: a nongauge one-edge matched shift leaves relative solder and the completed action unchanged.")
+print("RESULT_OVERQUOTIENT: all 256 matched edge shifts leave relative solder/action unchanged, while node gauge has rank 64 on the curved witness; 192 nongauge diagonal directions are accidentally erased.")
 print("RESULT: AFFINE-RELATIVE-SOLDER-COMPLETION-OVERQUOTIENTS-EDGE-DIAGONAL")
