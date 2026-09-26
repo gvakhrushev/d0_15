@@ -64,8 +64,7 @@ associated metric-response bound, including retained physical flat moduli.
 Individual-character isolation and degree are insufficient if coupled mode
 count, rank-changing complements, or slow-background perturbations are not
 controlled. Verify every tangent/ambient Euler equation; a restricted gradient
-must not replace the full stationarity equation. The corrected parabolic
-control has `j` flat and `(gamma,delta)` normal, not an isolated origin.
+must not replace the full stationarity equation. The corrected live #202 full-transverse control is stronger: on the stored Cayley family the true `{K1,N2,N3}` complement forces `j=gamma=delta=0`; the older `j`-flat interpretation came from a mismatched algebra basis. This finite isolated control still does not replace the refinement-uniform coupled normal-rescue theorem.
 
 No new child tasks are registered by this executor. Minimal certificate
 requests for CONTROL live in primary memo Section 11.
