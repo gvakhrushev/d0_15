@@ -1,0 +1,26 @@
+{
+  "status": "NUMERICAL_BLOCKED_HONEST",
+  "attempt": "recompute numerical Jac of full Euler(+scale) residual at float E(2) scout root for rank-revealing QR pivots",
+  "tip_baseline": "67592e72dc8da5f715ff3d21955c7330f256dd62",
+  "chart": "12 E(2) Cayley + 15 det-one LDU*eta (27)",
+  "residual_formula_attempted": "ambient F in R^40 = 24 left-Cayley so(1,3) link dirs + 16 raw Theta entries of homogeneous star_S (Track B certificate formula)",
+  "memo_claimed": {
+    "EL_full_norm": 4.29e-14,
+    "C_scout": 0.34535,
+    "rank_J": 14,
+    "nullity": 13,
+    "E2_links_section_4_1": [
+      [0.088504652044, 0.082911143621, -0.249807924819],
+      [-0.320461257769, -0.081035776131, -0.303588032463],
+      [-0.322033101871, -0.137571575304, 0.125148917575],
+      [0.287012659188, 0.226439735406, -0.295275453655]
+    ]
+  },
+  "blocker": "Homogeneous star_S ambient Euler does NOT vanish at memo §4.1 E(2) links paired with (a) Cayley-scout LDU floats, (b) identity LDU, or (c) LDU-only / joint least_squares refinements that preserve curvature. Chart-critical points of star_S in the 27-chart still leave ||F_40|| and ||transverse6|| O(10..100). Ambient refine stalls at ||F||~O(0.1) before flattening. The memo float witness action that produced ||EL||=4.29e-14 is not reconstructible from repo artifacts (scout json + memo §§4–7 + Track B certs) in minutes; only E(2) link floats and FIXED_13 *values* were persisted, not LDU-at-E2-root nor the exact residual operator used for the rank-14 QR.",
+  "recompute_formula_recorded": "At float x* in R^27, F=EL_full+scale in R^m (m>=40), J=DF/Dx, then scipy.linalg.qr(J, mode='economic', pivoting=True); FREE_IDX=piv[:14]; FIXED_IDX=piv[14:].",
+  "J_persisted": false,
+  "pivots_recovered": false,
+  "FREE_IDX": null,
+  "FIXED_IDX": null,
+  "followup": "Alternate lean NF: release the seven memo-§5 E(2) NF slots under L≡0 (see a4d_resolved_curved_stationary_e2_lean_nf_free_e2_check.py)."
+}

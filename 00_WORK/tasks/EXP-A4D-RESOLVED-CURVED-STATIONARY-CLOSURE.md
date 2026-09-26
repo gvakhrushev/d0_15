@@ -12,7 +12,7 @@ Execution: `GitHub-first`
 
 ## Why delegated
 
-This is the lower-wall OTO/F4 problem. PR #201 already fixed the flat Einstein seed, so the remaining load-bearing question is nonlinear: does the selected finite action possess a nondegenerate curved stationary configuration? Current execution PR #202 has reduced the numerical search to a parabolic E(2) little-group carrier and a 14-equation transverse exactification problem. This is strong-research work, not routine formalization.
+This is the lower-wall OTO/F4 problem. PR #201 already fixed the flat Einstein seed, so the remaining load-bearing question is nonlinear: does the selected finite action possess a nondegenerate curved stationary configuration? Existing PR #202 evidence narrowed a candidate to a parabolic E(2) sheet, but its old full-stationarity reading used an inconsistent Cayley differential. The local continuation corrects that audit and then tests only controlled deformations that can change both the missing Euler equations and residual blindness. This is strong-research work, not routine formalization.
 
 ## Runtime / collision gate
 
@@ -35,22 +35,38 @@ Current #202 checkpoint to reproduce before extending:
 - exact response matrix rank 4 / kernel 0 on the declared sample;
 - five exact homogeneous word controls have no nondegenerate full stationary point;
 - numerical E(2) little-group candidates pass literal single-site/single-edge Euler tests at machine precision;
-- the current smallest exactification target is 14 independent rational stationarity equations (8 internal + 6 transverse) after fixing 13 rational normal-form coordinates.
+- the enlarged E(2) matrix family is `e2=(0,0,j,0,0,j,g,d,0,d,-g,0)`; its action/curvature evaluations remain exact, but the historical full-stationarity interpretation used a mismatched Cayley generator for the stored role matrices;
+- the corrected exact full-link audit uses the matrix-defined subgroup `span{M2,M3,-J23}` and complement `{K1,N2,N3}`; its full-star Euler zero-set on this sheet is only the flat origin, so no curved full-stationary member survives;
+- matched/arbitrary affine `b` remains structurally residual-blind on this parabolic sheet (`R=0`), so stop trying to activate `R_*(C)` here; only controlled deformations that can change both missing Euler equations and residual rank are live;
+- independently, the rank-two seam has a canonical fixed-rank affine quotient coordinate `Psi_2(M,t)=t∧(Λ²M)`, with `Psi_r(M,t)=Psi_r(M,t')` iff `t-t'∈im M`; this is diagnostic/resolution data, not a new action channel.
 
 Numerical evidence is not a theorem.
 
 ## Objective
 
-Either:
+The first local correction now gives a scoped exact no-go on the matrix-defined homogeneous parabolic sheet: its full-star Euler zero-set is only the flat origin, and matched-b four-channel residuals are blind there. Continue by testing the smallest controlled deformations that can repair the true missing Euler equations and activate the existing residual simultaneously. Reject any deformation that fails either rank gate before solving.
 
-1. exactify one all-site nondegenerate configuration with nonzero curvature and full Euler zero for the selected four-channel action; or
-2. prove a precisely scoped exact no-go for the declared E(2)/parabolic or larger carrier.
+Separately preserve the cross-wall result: no nontrivial zero-source stationary germ on this sheet accumulates at its flat locus. This is input to #216, not a theorem about other charts or the full physical quotient.
 
 L=2 may discover the witness. A broad finite-carrier terminal requires an L=3 hostile control.
 
 ## Required method
 
-Prefer exact rational/algebraic elimination, Gröbner/resultant methods, rational reconstruction, Jacobian rank certification and symmetry reduction. Numerical optimization is a scout only. Checkpoint every exact subsystem/rank/factorization before moving on.
+Use exact rational directional derivatives and symmetry reduction. The current homogeneous parabolic sheet is killed and its `R` channel is identically dormant; do not try to activate it. For each controlled deformation, first compute the missing-Euler Jacobian and the same directions' first variation of `det(I-P)`, `adj(I-P)`, or `R`. Reject it unless both obstruction gates can change. Only then run a small exact/rational reconstruction. Do not restart blind Gröbner/resultant chains. Checkpoint each exact subsystem and rank before moving on.
+
+## Current durable checkpoint (2026-09-26)
+
+The exact first-order gate is owned by
+`a4d_resolved_curved_stationary_e2_controlled_normal_gate_check.py`.
+The null-line dilation `K1` fails: its four-role Euler Jacobian has rank 4
+and augmented rank 5, while all tested adjugate first variations vanish.
+Among the twelve role-local `{K1,N2,N3}` directions, only `N2` on role 2
+and `N3` on role 3 activate `adj(I-P)` on the four curved faces. The full
+eight-equation missing-Euler Jacobian has rank 8, augmented rank 8; a
+residual-active linearized correction needs at least seven directions.
+This is not a finite stationary witness. Exact nonlinear reconstruction of
+the full Euler system with active residual remains open; L=3 has not started
+because no exact L=2 witness has been reconstructed.
 
 ## Forbidden shortcuts
 
