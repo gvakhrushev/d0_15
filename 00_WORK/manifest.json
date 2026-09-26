@@ -25,18 +25,6 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
-      "id": "EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Compute the true full-affine physical quotient and d_A/d_E/d_P for the selected resolved action after the carrier is fixed.",
-      "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT.md"
-    },
-    {
       "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
