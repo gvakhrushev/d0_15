@@ -352,3 +352,33 @@ test to machine precision.
 This remains NUMERICAL/EXPLORATORY because the link/solder coordinates have not
 yet been algebraically reconstructed. But the remaining blocker is now purely
 exactification, not a hidden local-Euler failure.
+
+
+## 7. NUMERICAL/STRUCTURAL — 14 transverse conditions split as 8 internal + 6 external
+
+At the same (E(2)) root, the Hessian of the action restricted to the
+27-dimensional (E(2)+LDU) chart has numerical rank
+
+[
+oxed{8}.
+]
+
+The Jacobian of the literal full Euler residual restricted to those 27
+variables has rank 14. Therefore only six additional independent conditions
+come from Lorentz variations transverse to the (E(2)) little-group
+subalgebra:
+
+[
+oxed{14=8_{m internal}+6_{m transverse}.}
+]
+
+This gives a cleaner symbolic attack:
+
+1. derive the eight independent stationary equations of the rational
+   (E(2))-restricted action;
+2. derive six independent transverse Lorentz Euler equations;
+3. impose the thirteen rational normal-form coordinates from §5;
+4. solve the resulting fourteen-equation square transverse system.
+
+This replaces the original forty-component Euler system by a structured
+(8+6) exact problem.
