@@ -220,7 +220,26 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    slices (identity-like and scout-near) both force chart-closed.
    Scope: still slice-only under provisional packing; not global; QR unrecovered.
 
-14. **2D Cayley subtangent warning.**
+14. **E(2) gauge-canonical packing replacing provisional FIXED_13 — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_gauge_canonical_packing_check.py`
+   (sha256 `db2495d0…ab4762a5`; wall ~3.6s; PASS).
+   **QR blocker (documented):** numerical E(2)+LDU chart Jacobian dump
+   `J∈R^{m×27}` (`m≥40` full Euler+scale) and column-pivoted QR permutation
+   were never persisted (scout json has only link/LDU floats; memo §§5–7
+   records FIXED_13 *values* but not pivot slots). Recompute formula recorded
+   in the cert: at float root `x*`, `J=DF/Dx`, then
+   `scipy.linalg.qr(J, pivoting=True)` → `FREE_IDX=piv[:14]`, `FIXED_IDX=piv[14:]`.
+   **Gauge-canonical packing (this turn):** same geometric slots
+   `[0,1,2,3,4,5,6,12..17]`, but strict-L set to `L≡0` (Iwasawa solder gauge)
+   instead of provisional nonzero memo-§5 tail `(4/3,3/2,1/2,2/3,-1/3,-1)`;
+   E(2) NF on roles 0–1 + role2 `n2` keeps memo §5 head
+   `(-1/3,0,-1/3,1/2,1/2,-1/2,-1/2)`; free = role2 `{n3,j}` + role3 E(2) +
+   **D + U** (14) — D/U stay free. Exact rational FD sample at open-chart
+   probe: internal Jac rank 14, transverse rank 6, selected 8+6 subsystem
+   rank 14. Scope: packing + Jac sample only; no exact root; no Groebner;
+   no D/U specialization; QR pivots still unrecovered.
+
+15. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -261,7 +280,9 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-8P6-SUBSYSTEM-SAMPLE-JAC-RANK-14-UNDER-PROVISIONAL-PACKING;
     E2-STATIONARITY-DEG-REDUCE-INTERNAL-LE12-TRANSVERSE-LE15-CHART-OPEN;
     E2-STATIONARITY-SPEC-D1-U0-FREE-INTERNAL-FORCES-CHART-CLOSED;
-    E2-STATIONARITY-SPEC-SCOUT-DU-FREE-INTERNAL-FORCES-CHART-CLOSED
+    E2-STATIONARITY-SPEC-SCOUT-DU-FREE-INTERNAL-FORCES-CHART-CLOSED;
+    E2-GAUGE-CANONICAL-PACKING-L-ZERO-8P6-SAMPLE-JAC-RANK-14;
+    E2-QR-PIVOT-RECOVERY-BLOCKED-MISSING-JAC-DUMP
 
 Supporting:
 
@@ -274,15 +295,14 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** two distinct D/U specializations under provisional
-FIXED_13 — `D=(1,1,1)/U=0` and scout-near
-`D=(7/5,5/4,4/5), U=(1/6,5/4,-1/10,-3/5,0,-1/5)` — both force open-chart
-free-internal empty via the same GB `{j_r2+j_r3, j_r3²+4}`
-(`…specialize_du1_check.py`, `…specialize_scout_du_check.py`).
-Next: recover the QR pivot map / gauge-canonical packing replacing provisional
-FIXED_13, **or** keep D free with scout-near U (resp. selected U free with
-scout-near D) and eliminate degree-reduced ≤12/≤15 gens. Still avoid blind
-14-var / deg-33 Groebner. Filter survivors by four-channel `R=R_*(C)`.
+**Primary (Track B):** gauge-canonical packing now replaces provisional
+FIXED_13 (`…e2_gauge_canonical_packing_check.py`, L≡0, 8+6 sample Jac rank 14;
+QR recovery blocked — missing Jac dump, formula recorded). Two prior D/U
+slices under provisional packing remain chart-closed warnings only.
+Next: under the **gauge-canonical** packing, keep D free with scout-near U
+(resp. selected U free with scout-near D) on degree-reduced gens; or
+recompute/persist the missing Jac dump and adopt true QR pivots. Still avoid
+blind 14-var / deg-33 Groebner. Filter survivors by four-channel `R=R_*(C)`.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -328,6 +348,7 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stat
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_deg_reduce_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_specialize_du1_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_specialize_scout_du_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_gauge_canonical_packing_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
