@@ -1,154 +1,73 @@
-# MEMO A4D — resolved affine research/formalization program
+# MEMO A4D — OTO / Einstein execution wave
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
-**Execution:** PR #190  
-**Status:** PROGRAM / no new scientific theorem  
-**Baseline:** `297067714e7c1a246b06ed981578105c58d9f3db`
+**Status:** PROGRAM / execution map, not a scientific theorem  
+**Refresh baseline:** current main after merged #201
 
-## 0. Purpose
+## 0. Strategic target
 
-This memo turns the current A4D affine frontier into a durable sequence of
-research and Lean formalization tasks.  It is a control-plane artifact, not a
-claim promotion.
+The gravity programme is not complete at “Palatini-like geometry”. The current strategic success criterion is to derive the Einstein equation class from the selected finite action without inserting the Einstein field equation by hand.
 
-The program separates three kinds of input:
+The active attack is deliberately bidirectional:
 
-- **MERGED / repository-owned:** results already on `main`;
-- **READY / unmerged:** exact research results in Ready PRs, not yet repository truth;
-- **ACTIVE / provisional:** Draft/In-Progress results that may still change.
+- lower wall: exact curved stationary dynamics of the selected finite action;
+- upper wall: nonlinear metric-only J2/naturality bridge to the Einstein/Lovelock class;
+- top-down classifier: discrete Palatini(+Lambda+legal torsion^2) target-span audit.
 
-Lean workers may formalize only MERGED results unless their task has an explicit
-dependency gate that has been satisfied.
+Formalization workers consume already merged science in parallel; they are debt reduction and theorem hardening, not substitutes for the two research walls.
 
-## 1. Merged scientific base
+## 1. Merged load-bearing base
 
-The following are already safe inputs for formalization:
+Repository-owned inputs now include:
 
-1. the selected star-density channel has survived finite variation and flat
-   quotient pressure tests;
-2. nonlinear site-dependent proper-Lorentz invariance survives cell-by-cell;
-3. on the nondegenerate solder sector the Lorentz action is free and the
-   quotient is nontrivial;
-4. the observer-completed affine translation is not an off-shell symmetry of
-   the selected star action on the exact curved witness;
-5. the first bounded-locality Cartan-Hodge translation/on-shell rescue class is
-   obstructed by the exact rank condition
-   `rank(A)=6 < rank([A|-c])=7`.
+- #184 relative solder: lambda=1 unique, but relative-solder-only action overquotients nongauge edge data;
+- #185 two-loop polynomial affine residual;
+- #188 gauge-image incidence resolution;
+- #189 provisional resolved-energy variation on the broad constrained-Grassmannian envelope;
+- #193 canonical graph-closure seam carrier; arbitrary Grassmann memory is too large;
+- #196 generic L=2 joint residual quotient-completeness and Plucker/Gram scalar;
+- #199/#200 curved-stationary and checkerboard nonlinear-obstruction packets;
+- #201 OTO F5 terminal:
+  `K_star,metric=(1/4)K_E_eta`, `c_sp=0`,
+  `R=O(X^4 t)`, quadratic `Q=O(X^8 t^2)`, and `j^2_flat Q=0`.
 
-These are the immediate Lean targets.
+Critical correction from #201: do not infer `EL_b => R=0` on curved configurations. The residual channel must be solved/integrated as `R=R_*(C,...)` after its own Euler equation.
 
-## 2. Ready but unmerged affine-completion frontier
+## 2. Three EXPENSIVE lanes
 
-Current Ready research PRs report, pending merge/review:
+1. `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE` — lower wall / F4. Current runtime is PR #202; do not fork while open. Numerical E(2) parabolic candidates exist; exactification is the blocker.
+2. `EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE` — upper wall. Nonlinearize the exact finite Einstein seed into a metric-only local J2 response or isolate the first exact obstruction to frame erasure/naturality/divergence.
+3. `EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN` — independent top-down classifier. Reproduce useful #203 checkpoints, but additionally test full-affine legality of the cosmological volume term; raw Lorentz invariance alone is insufficient.
 
-- #184: the unique relative-solder coefficient is `lambda=1`;
-  `ThetaHat = Theta - b^T h_n` is affine-covariant but overquotients the
-  edge diagonal by 192 nongauge directions on the curved L=2 control.
-- #185: continuous single-loop translational scalars are generically blind;
-  the first surviving polynomial translation carrier requires two based loops,
-  with
-  [
-  R_{2|1}=det(I-P_1)t_2-(I-P_2)operatorname{adj}(I-P_1)t_1.
-  ]
-- #188: the flat/curved gauge-image seam requires an incidence memory
-  [
-  mathcal I_*supseteqoperatorname{im}D_L,
-  qquad
-  G_*=mathcal I_*/operatorname{im}D_L.
-  ]
-- #189: the resolved quotient energy variation is classified under several
-  endpoint contracts and the constrained-Grassmannian contract gives an
-  independent Euler channel for the two-channel action family.
+These three lanes own disjoint primary memos and may run concurrently within the EXPENSIVE WIP limit 3.
 
-These results must not be treated as merged theorem inputs until their PRs land.
+## 3. Five launch-ready Lean workers
 
-## 3. Active research frontier
+All five dependencies are already merged:
 
-Draft PRs #182, #186 and #187 remain active.
+1. `WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER`;
+2. `WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL`;
+3. `WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION`;
+4. `WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION`;
+5. `WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED`.
 
-The next unresolved architecture is:
+The previous `WRK-A4D-FORMALIZE-RESOLVED-ENERGY-VARIATION` is retired from the active launch queue. Its constrained-Grassmannian action contract was provisional; #193 selected a smaller graph-closure carrier and #201's selected physical completion proceeds through joint residuals. Reopen only if a later research task selects that energy as physical again.
 
-[
-Llongmapsto operatorname{im}D_L
-]
+## 4. Collision rules
 
-changes rank at the flat seam.  The program therefore tests whether the correct
-resolved carrier is the closure of the generic image graph inside an
-appropriate Grassmannian/incidence space, rather than arbitrary external
-memory.
+- #202 owns `MEMO_A4D_RESOLVED_CURVED_STATIONARY_CLOSURE.md` and its F4 certificates.
+- J2 bridge owns `MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md`.
+- Palatini span owns `MEMO_A4D_DISCRETE_PALATINI_TARGET_SPAN.md`.
+- Workers write disjoint Lean modules listed in their briefs.
+- No research task edits claims/releases/BOOK or Lean.
+- No worker promotes a research certificate rank as an axiom.
+- Before creating any new PR, search for an open execution with the same Task id and continue it instead of forking.
 
-The research chain is:
+## 5. Program terminal
 
-1. `EXP-A4D-GRASSMANN-GRAPH-CLOSURE-RESOLUTION`;
-2. `EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT`;
-3. `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`.
+The wave is successful when:
 
-No later stage may be started by pretending the earlier stage is already
-selected.
-
-## 4. Formalization chain
-
-Lean formalization is split by mathematical stability, not by chronology.
-
-### Immediate workers — merged science only
-
-1. `WRK-A4D-FORMALIZE-NONLINEAR-LORENTZ-QUOTIENT`.
-2. `WRK-A4D-FORMALIZE-CARTAN-HODGE-TRANSLATION-NOGO`.
-
-### Dependency-gated workers
-
-3. `WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER` — after #184 lands.
-4. `WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL` — after #185 and the relevant
-   completeness result from #186 land.
-5. `WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION` — after #188 plus the
-   graph-closure research task stabilize the resolved carrier.
-6. `WRK-A4D-FORMALIZE-RESOLVED-ENERGY-VARIATION` — after #189 and the carrier
-   contract are stable.
-7. `WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION` — after #187 reaches
-   a stable terminal and its current second-order obstruction survives review.
-
-## 5. Formalization policy
-
-For each worker:
-
-- reuse existing finite carrier, Role/Lorentz, observer and affine-Cartan modules;
-- prefer theorem-level algebra over hard-coded numerical enumeration;
-- finite L=2 exact certificates may be reflected as theorem witnesses only when
-  the finite data are explicitly typed in Lean;
-- do not turn Python rank output into an axiom;
-- if a large rank theorem is not yet practical in Lean, formalize the structural
-  statement and an exact small witness first, and record the remaining rank
-  computation as an explicit formalization blocker;
-- update `D0.All` only when the new module is stable;
-- no claim/release/BOOK promotion unless a separate CONTROL task authorizes it.
-
-## 6. Collision plan
-
-The immediate workers must write disjoint new modules.
-
-Suggested module ownership:
-
-- Lorentz quotient:
-  `D0.Geometry.A4DStarFiniteLorentzQuotient`;
-- Cartan-Hodge no-go:
-  `D0.Geometry.A4DStarTranslationCartanHodgeNoGo`;
-- relative solder:
-  `D0.Geometry.A4DAffineRelativeSolderCompletion`;
-- joint holonomy:
-  `D0.Geometry.A4DJointHolonomyResidual`;
-- gauge-image seam:
-  `D0.Geometry.A4DGaugeImageResolution`;
-- resolved energy:
-  `D0.Geometry.A4DResolvedAffineEnergy`;
-- checkerboard obstruction:
-  `D0.Geometry.A4DCheckerboardNonlinearObstruction`.
-
-Existing modules are imported and strengthened only when ownership is clear.
-Avoid simultaneous edits to the same theorem-ledger/generated files.
-
-## 7. Program terminal
-
-The program is successful when the moving research frontier and Lean lag are
-kept within one stable layer: every merged structural result receives a
-formalization task, while no unmerged conjectural architecture is frozen into
-Lean as if selected.
+- F4 is exact (witness or scoped no-go);
+- the nonlinear J2 Einstein-class bridge is closed or has one exact named obstruction;
+- the discrete Palatini target span is classified on the actual full-affine quotient;
+- the five stable finite theorem packets are hardened in Lean without freezing provisional physics.

@@ -4,47 +4,36 @@ Class: `WORKER`
 State on registration: `PLANNED`  
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
-## Dependency gate
-
-Start only after PR #187 reaches a stable reviewed terminal.
-
 Repository: `gvakhrushev/d0_15`
 Base: `main`
 Branch: `wrk/a4d-formalize-checkerboard-nonlinear-obstruction`
 Primary artifact: `03_FORMALIZATION/D0/Geometry/A4DCheckerboardNonlinearObstruction.lean`
 Execution: `GitHub-first`
 
+## Dependency gate
+
+SATISFIED: the exact packet from historical #187 was salvaged/reviewed into merged #199/#200.
+
 ## Why delegated
 
-This worker is dependency-gated on the reviewed terminal of PR #187. The exact second-order obstruction is a strong but finite scoped theorem; formalization should preserve its exact checkerboard scope and avoid physical wave/time interpretations.
+The nonlinear obstruction is now a stable exact finite theorem from merged #199/#200. Its real-quadratic core is suitable for Lean, while formalization is useful precisely because the result must remain scoped to the three L=2 checkerboard sectors and must not drift into a wave interpretation.
+
+## Owned theorem packet
+
+For each of the three nonzero Lorentz-null L=2 checkerboard sectors, after quotienting the ten accepted flat gauge directions, the two-dimensional physical null plane has exact obstruction form
+
+`T(a u + b v, a u + b v, w0) = -(32/3)(a^2+b^2)`.
+
+Formalize the finite algebra needed to conclude this vanishes over the reals iff `a=b=0`. If the full 40-variable cubic coefficient reconstruction is too expensive, formalize a typed exact basis/witness and make the remaining enumeration explicit rather than axiomatic.
+
+## Scope
+
+This is local near the canonical flat solder and finite L=2. It does not exclude disconnected curved stationary points; #202 is actively searching such a sector. Do not call these modes waves or physical time.
 
 ## GitHub execution contract
 
-Start only from current `main`; run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+Run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION`; open Draft PR; isolated module; zero `sorry`; never self-merge.
 
 ## Chat handoff
 
-Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
-
-
-## Objective
-
-Formalize the exact second-order obstruction for the three Lorentz-null
-checkerboard physical quotient planes.
-
-Primary module:
-`03_FORMALIZATION/D0/Geometry/A4DCheckerboardNonlinearObstruction.lean`.
-
-Target theorem shape:
-
-for an exact basis `u,v` of each two-dimensional physical quotient-null
-plane and real coefficients `a,b`, the projected quadratic source equals
-
-[
--rac{32}{3}(a^2+b^2),
-]
-
-hence vanishes only for `a=b=0`.
-
-Do not call the rank drop a wave mode or physical time effect.
-Do not generalize beyond the reviewed finite sector.
+Return PR, SHA, exact obstruction theorem scope, validation results, and any finite enumeration left outside Lean.
