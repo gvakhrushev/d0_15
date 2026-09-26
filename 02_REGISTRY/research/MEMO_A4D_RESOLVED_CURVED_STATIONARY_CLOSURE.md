@@ -5,7 +5,83 @@
 **Status:** IN_PROGRESS / durable checkpoint (restructured F4 attack)
 **Baseline:** `75fc9eec99dcb8b5b15a0bc0de5662c9453175f4`
 
-## 0A. RESUME CHECKPOINT -- durable state
+## 0A. CORRECTIVE FULL-EULER AUDIT (2026-09-26)
+
+This section supersedes the full-stationarity interpretation in §§23-24 and
+corrects the stale PR #202 handoff. The historical files remain in the tree.
+
+The displayed role matrix `e2_closed(n2,n3,j)` is the Cayley transform of
+
+\[
+n_2 M_2+n_3 M_3-jJ_{23},
+\]
+
+not of `n2*N2+n3*N3+j*J23` used by the old `e2_alg` differential. Consequently
+the old transverse routine differentiated a different Cayley base from the
+matrix being evaluated. Its advertised Roles 2/3 values
+`(-32,-16,32)` and `(32,0,-16)` at `(j,gamma,delta)=(2,0,1)` reproduce only
+under that mismatched base and are not Euler derivatives of the stored family.
+The old six symbolic rows used `M2,M3`, which are tangent to the subgroup
+actually represented by `e2_closed`; the proper complement is `{K1,N2,N3}`.
+
+The new exact certificate
+`a4d_resolved_curved_stationary_e2_enlarged12_full_transverse_check.py`
+(sha256 `118bb147c929791a5c208f30bc6e829e0d596ad15deece9ecbe57e6aa336d432`,
+~40.2 s; PASS)
+checks the Cayley convention, the rank-six Lie basis, all 12 internal
+`{M2,M3,-J23}` derivatives, and all 12 true complement derivatives on all four
+roles. It uses analytic rational directional derivatives, no finite
+differences. Only the Cayley denominator `j^2+4` is removed; it is positive
+for real `j`.
+
+At the former witness the true complement vectors in basis `{K1,N2,N3}` are
+
+| Role | Exact Euler vector |
+|---|---|
+| 0 | `(0,-16,0)` |
+| 1 | `(0,16,0)` |
+| 2 | `(0,-32,64)` |
+| 3 | `(0,0,-32)` |
+
+The role-2/3 numerator equations include
+
+\[
+\gamma(j^2+4)-2j^2=0,\quad
+\gamma(j^2+4)+2j^2=0,
+\]
+
+\[
+\delta(j^2+4)+4j=0,\quad
+\delta(j^2+4)-4j=0.
+\]
+
+Their exact sums/differences force `j=gamma=delta=0` over the reals. The
+other 12 internal derivatives vanish identically, and all 24 link derivatives
+vanish at the origin. Thus the matrix-defined homogeneous parabolic family has
+no curved full-star stationary point. The formula
+
+\[
+S_\star=0,\qquad
+\mathrm{curv}^2=rac{64j^2(\gamma^2+\delta^2)}{j^2+4}
+\]
+
+still holds as an action/curvature evaluation. Its flat configuration line
+`gamma=delta=0` is not a critical manifold: Role 2 in direction `N3` has
+Euler derivative `128j/(j^2+4)`, so only `j=0` is critical on that line.
+
+The matched-`b` certificate remains valid: on this homogeneous parabolic
+family `R=0` for arbitrary matched affine translations, so every quadratic
+channel `I=R^T H R` also has zero first variation there. No choice of the four
+channel coefficients repairs the full-star obstruction on this sheet. This
+is scoped to the matrix-defined homogeneous parabolic family; it is not a
+global no-go on the full configuration space.
+
+Cross-wall consequence: within this sheet there is no nontrivial zero-source
+stationary germ accumulating on its flat configurations. This is a positive
+control for #216, not a claim about other charts, other strata, or the full
+physical quotient.
+
+## 0B. RESUME CHECKPOINT -- durable state
 
 ### Architecture (locked; do not reopen)
 
@@ -364,54 +440,34 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    Outcome `CURVED_FLOAT_CANDIDATE_UNDER_ENLARGED_PACKING`.
    **Not** an exact root; float not promoted without rational vanishing.
 
-23. **E(2) lean-NF DU1 enlarged-12 pattern exactify — Track B (this PR).**
-   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_pattern_exactify_check.py`
-   (sha256 `98952399…f67e95`; wall ~23.6s; PASS). Imposes the observed float
-   pattern `e2=(α,β,j, α,β,j, γ,δ,0, δ,-γ,0)` under lean L≡0 + `D=(1,1,1)`,
-   `U=0`. **Exact curved stationary family:** the open-chart subvariety
-   `α=β=0` (j open, `(γ,δ)≠0`) has symbolic transverse ≡0 on the slice,
-   ambient free-internal 12-grad ≡0 on a 10-point rational battery, and
-   `curv²>0`. Exact witness `e2=(0,0,2, 0,0,2, 0,1,0, 1,0,0)` with
-   `curv²=32`, all 12+6 residuals exact 0; former complement active via `δ=1`.
-   Pattern-tangent internal vanishes on a 72-point open grid; transverse is
-   r0=-r1 anti-symmetric. Float `α≠0` Newton hits are **not** exact
-   (den≤10^6 rationalization has transverse L1≈6.85). No multi-var GB /
-   resultant. Outcome `EXACT_CURVED_FAMILY_UNDER_ENLARGED12_PATTERN`.
-   **Not** Ready: classical 8+6 later confirmed (item 24); still need active
-   four-channel `R=R_*(C)≠0` response and L=3 hostile before Ready.
+23. **Historical E(2) lean-NF DU1 enlarged-12 pattern exactify — partial / superseded as full stationarity.**
+   Original certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_pattern_exactify_check.py`
+   (sha256 `98952399…f67e95`). It correctly evaluates the displayed
+   `e2_closed` family, `S_star=0`, curvature, and the six symbolic derivatives
+   it implemented. However its derivative base used `e2_alg=N2,N3,+J23`, while
+   `e2_closed` is Cayley of `M2,M3,-J23`; the six checked directions were not
+   the family’s Lorentz complement. The former exact witness and float scout
+   remain historical computations, but the outcome
+   `EXACT_CURVED_FAMILY_UNDER_ENLARGED12_PATTERN` is withdrawn as a full
+   stationary-family claim. No multi-variable elimination was done there.
 
-24. **E(2) lean-NF DU1 enlarged-12 classical 8+6 + R★ filter — Track B (this PR).**
-   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_classical_8p6_check.py`
-   (sha256 `404789dd…c00f04`; wall ~3.1s; 63 PASS). Confirms the exact curved
-   family `α=β=0` is **full classical 8+6** in the lean-NF DU1 / subQR8
-   gauge-pack sense: `FREE_E2=[0,2,3,4,5,6,7,8]` FD grads ≡0 and transverse
-   6 ≡0 at the witness and on an 8-point rational battery; ambient 12-grad
-   vanishing implies the classical 8 as an index subset. Witness
-   `e2=(0,0,2,0,0,2,0,1,0,1,0,0)` has `curv²=32` and lies **outside** the
-   former subQR8 complement=0 slice (slot 9=`δ`=1); complement grads also 0.
-   Cheap four-channel / joint-residual filter at the witness with `b≡0`:
-   `C≠0` but joint residual `R≡0` and all four I-channels ≡0 — **honest
-   negative** for active `R=R_*(C)≠0` (I dormant on the R=0 locus; matched
-   affine residual section required to wake channels). No multi-var GB.
-   Outcome `CLASSICAL_8P6_CURVED_FAMILY_RSTAR_DORMANT`.
-   **Not** Ready: need active `R=R_*(C)≠0` channel response and L=3 hostile.
+24. **Historical enlarged-12 classical 8+6 / R★ filter — partial / superseded as full stationarity.**
+   Original certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_classical_8p6_check.py`
+   (sha256 `404789dd…c00f04`). Its finite-difference internal battery and
+   complement subset inherit the convention mismatch above; it does not prove
+   a full classical 8+6 stationary family. The exact coordinate/witness,
+   curvature, and `b=0` residual values remain useful evaluations. Its outcome
+   `CLASSICAL_8P6_CURVED_FAMILY_RSTAR_DORMANT` is superseded as a stationarity
+   claim by §0B.
 
-25. **E(2) lean-NF DU1 enlarged-12 matched-b R activate attempt — Track B (this PR).**
+25. **Matched-b residual dormancy on the matrix-defined parabolic family — retained, re-scoped.**
    Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_matched_b_r_activate_check.py`
-   (sha256 `fb9cdb32…55771f`; wall ~3.1s; PASS). On the classical 8+6 curved
-   family, free matched affine `b` (scale `t*e0` and free 4-component at
-   `(ORIGIN,0)`): joint residual `R≡0` and all four I ≡0 (affine
-   translations themselves nonzero). **Structural obstruction:** every
-   plaquette Lorentz holonomy is parabolic (`det(I-P)=0`); the four curved
-   faces further have `adj(I-P)=0` (rank ≤2), so
-   `R = det(M1)t2 - M2 M1.adj t1` vanishes for **arbitrary** affine `b`.
-   Random full b-field (90 face-pairs) and 4-point family battery confirm.
-   Positive control: f4 two_link matched `b` activates `R` (non-parabolic
-   face `det(I-P02)=-8/3`). star+I Euler is I-blind in any `c∈Q^4` (I≡0).
-   Outcome `MATCHED_B_R_DORMANT_PARABOLIC_ADJ0`. Scoped dormancy on this
-   homogeneous E(2) family — **not** a global no-go off-family.
-   **Not** Ready: active channel response requires leaving this parabolic
-   homogeneous torus-role stratum; L=3 hostile still required.
+   (sha256 `fb9cdb32…55771f`). On the displayed family every plaquette is
+   parabolic, curved faces have `adj(I-P)=0`, and `R=0` for arbitrary matched
+   affine `b`; the four quadratic `I` channels are therefore first-order blind
+   on the sheet. The positive F4 control still activates `R` off this stratum.
+   Retain this structural result; do not attempt to activate a channel on the
+   killed family and do not promote it to a global affine no-go.
 
 26. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
@@ -466,9 +522,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-TRANSVERSE-ON-4PARAM-FLAT-LOCUS-OK-CURVED-BRANCH-GB-BLOCKED;
     E2-TRANSVERSE-NEWTON-NO-CURVED-ROOT-COLLAPSE-TO-FLAT;
     E2-ENLARGED12-NEWTON-CURVED-FLOAT-CANDIDATE;
-    E2-ENLARGED12-PATTERN-EXACT-CURVED-FAMILY;
-    E2-ENLARGED12-CLASSICAL-8P6-CURVED-FAMILY-RSTAR-DORMANT;
-    E2-ENLARGED12-8P6-MATCHED-B-R-DORMANT-PARABOLIC-ADJ0
+    E2-HOMOGENEOUS-PARABOLIC-MATCHED-B-RESIDUAL-BLIND;
+    E2-ENLARGED12-FULL-EL-ONLY-FLAT-ORIGIN-ON-MATRIX-DEFINED-SHEET
 
 Supporting:
 
@@ -481,19 +536,7 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** classical 8+6 holds on the exact curved family
-`e2=(0,0,j, 0,0,j, γ,δ,0, δ,-γ,0)` (cert `…classical_8p6_check.py`; witness
-`(j,γ,δ)=(2,0,1)`, `curv²=32`). Matched/arbitrary affine `b` on this
-**homogeneous** E(2) torus embedding **cannot** activate `R=R_*(C)≠0`:
-all plaquettes parabolic with curved `adj(I-P)=0` (cert
-`…matched_b_r_activate_check.py`, ~3.1s; outcome
-`MATCHED_B_R_DORMANT_PARABOLIC_ADJ0`). **Next:** leave this parabolic
-homogeneous stratum — seek active `R` on a non-parabolic / inhomogeneous
-Lorentz background that still carries classical 8+6 (or a controlled
-deformation), or record that active channel response requires leaving
-E(2)-homogeneous torus roles; still forbid blind multi-var GB / deg-26
-chains. Do **not** re-impose locked E(2) NF. Jac-QR still blocked. No
-Ready until active channel response + L=3 hostile.
+**Primary (Track B):** the corrected exact audit rules out every curved full-star stationary point on the matrix-defined homogeneous parabolic family. Matched/arbitrary affine `b` remains residual-blind there (`R=0`, `adj(I-P)=0` on curved faces), so active four-channel coefficients cannot repair that sheet. **Next:** use a controlled deformation leaving the sheet. Before nonlinear solving, compute the missing-Euler Jacobian and the same directions' first variation of `det(I-P)` / `adj(I-P)` or `R`; reject directions that cannot affect both gates. Start with the smallest stabilizer dilation, then only widen if rank-two parabolicity persists. No 27-/39-variable search, no Newton promotion, no channel activation attempt on the killed sheet. L=3 hostile remains required for any broader terminal.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -548,6 +591,7 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_newton_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_newton_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_enlarged12_full_transverse_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_pattern_exactify_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_classical_8p6_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_matched_b_r_activate_check.py
@@ -560,9 +604,11 @@ python3 tools/validate_repo.py
 
 ## 4. Handoff
 
-Draft PR #202.  Do not merge.  Homogeneous E(2) matched-b R dormant
-(parabolic adj0). Continue: leave parabolic homogeneous stratum for active
-`R=R_*(C)≠0`, then L=3 before Ready.
+Draft PR #202. Do not merge. The matrix-defined homogeneous parabolic family
+is exactly full-EL obstructed away from the flat origin, and matched-b residuals
+are blind on this sheet. Continue with a controlled deformation that passes
+both the missing-Euler and residual-activation rank gates; L=3 remains required
+before Ready.
 
 
 ## 4. NUMERICAL/STRUCTURAL — minimal parabolic mechanism isolated
@@ -883,13 +929,12 @@ stratum.
 
 ---
 
-## 9. Exact enlarged family: finite-vacuum and flat-accumulation questions must be separated
+## 9. Exact enlarged family: corrected finite-vacuum and cross-wall status
 
-The current exact enlarged family is
+The matrix-defined family is
 
 \[
-\boxed{
-e_2=
+\boxed{\ne_2=
 (0,0,j,\;
  0,0,j,\;
  \gamma,\delta,0,\;
@@ -897,63 +942,39 @@ e_2=
 }
 \]
 
-under lean \(L\equiv0\), \(D=(1,1,1)\), \(U=0\).  The existing exact
-certificate gives a curved witness
+under lean \(L\equiv0\), \(D=(1,1,1)\), \(U=0\). Its exact action and
+curvature evaluations are
 
 \[
-(j,\gamma,\delta)=(2,0,1),
-\qquad
-\mathrm{curv}^2=32,
+S_\star=0,\qquad
+\mathrm{curv}^2=\frac{64j^2(\gamma^2+\delta^2)}{j^2+4}.
 \]
 
-with the declared free-internal/transverse residual package zero; the newer
-classical 8+6 check confirms the star-family stationarity in the current
-gauge-pack sense, while the cheap \(b\equiv0\) residual-channel filter remains
-dormant (\(C\ne0\), \(R=0\)) and therefore does not yet supply the required
-active \(R=R_\ast(C)\ne0\) four-channel solution.
-
-Two questions are now logically distinct.
+The older advertised transverse rows were computed with a Cayley generator
+that does not generate these role matrices. The corrected certificate uses the
+actual subgroup \(\operatorname{span}\{M_2,M_3,-J_{23}\}\), its complement
+\(\{K_1,N_2,N_3\}\), and exact analytic derivatives on all four roles.
+The full-star Euler zero-set on this three-parameter sheet is only
+\((j,\gamma,\delta)=(0,0,0)\). Thus there is no curved star stationary member
+on the sheet. Since the parabolic matched-\(b\) result gives \(R=0\) for
+arbitrary affine translations, every quadratic channel has zero first
+variation on the sheet as well; the selected four-channel action cannot
+restore a curved root here.
 
 ### 9.1 Lower-wall finite vacuum
 
-Does this family survive:
-
-1. an active matched affine residual section \(R=R_\ast(C)\ne0\);
-2. the selected four-channel response;
-3. the hostile \(L=3\) gate?
-
-This remains the load-bearing F4 question for #202.
+The exact homogeneous parabolic sheet is killed. Do not search for
+\(R=R_\ast(C)\ne0\) on it. The remaining finite-vacuum objective is a
+controlled deformation that leaves this sheet while simultaneously affecting
+(i) the true missing Euler equations and (ii) residual blindness. Before any
+solve, calculate the deformation-direction Jacobian rank for both gates.
 
 ### 9.2 Cross-wall flat accumulation
 
-Independently of finite-vacuum survival, determine whether a nontrivial
-physical member or continuation of this family approaches the **flat physical
-quotient**.
-
-The coordinate limit
-
-\[
-(\gamma,\delta)\to(0,0)
-\]
-
-at fixed \(j\ne0\) has zero sampled curvature in the present family
-certificate, but that alone does not prove convergence to the flat quotient:
-the remaining \(j\)-holonomy may be gauge/physically trivial or may retain a
-nontrivial finite holonomy class.  This must be checked in quotient-invariant
-data.
-
-This diagnostic is relevant to PR #216 because the upper \(J^2\) theorem only
-needs to exclude a nontrivial zero-source stationary germ accumulating at
-flat.  A finite curved stationary family bounded away from the flat quotient
-does not obstruct that local theorem.
-
-Accordingly, #202 should report both outcomes separately:
-
-\[
-\boxed{\text{finite curved vacuum?}}
-\qquad\text{and}\qquad
-\boxed{\text{nontrivial stationary germ entering flat?}}
-\]
-
-without conflating them.
-
+The coordinate line \(\gamma=\delta=0\) is flat by the curvature formula, but
+it is not a critical manifold: the exact Role-2 \(N_3\) derivative is
+\(128j/(j^2+4)\). The full stationary set on this sheet is the origin, which
+is itself flat. Hence no nontrivial zero-source stationary germ on this sheet
+accumulates on its flat locus. This is positive control for the upper \(J^2\)
+isolation question in #216; it does not classify other charts or the full
+physical quotient.
