@@ -5,6 +5,103 @@
 **Status:** IN_PROGRESS / interim exact classification  
 **Baseline:** `297067714e7c1a246b06ed981578105c58d9f3db`
 
+
+## 0A. RESUME CHECKPOINT — durable state
+
+**Checkpoint status:** all items below are already persisted in this PR and are
+the required restart point for any cold-start continuation.
+
+### EXACT/CERTIFIED
+
+- Local curvature-to-solder-Euler map:
+  [
+  operatorname{rank}mathcal E_v=16,qquad dimkermathcal E_v=20.
+  ]
+- In the declared pair-symmetric + first-Bianchi algebraic curvature subclass:
+  [
+  dimmathcal C_{m alg}=20,qquad
+  operatorname{rank}mathcal E_v=10,qquad
+  dimkermathcal E_v=10.
+  ]
+  Therefore (E_v=0) does not imply (C=0).
+- Exact #178 two-link curved witness:
+  [
+  operatorname{rank}H_v=28,
+  ]
+  and every fixed-link solder-stationary representative is degenerate at the
+  origin.
+- Exact one-boost curved control:
+  [
+  operatorname{rank}H_v=16,qquad dimker H_v=240,
+  ]
+  with an explicit all-site nondegenerate (E_v=0) solder witness.
+- Exact connection-Euler operator on free bivector data for the one-boost
+  background:
+  [
+  operatorname{rank}mathcal E_L^{(B)}=282,qquad
+  dimkermathcal E_L^{(B)}=294.
+  ]
+  Modular reproduction was performed over multiple primes.
+- Eliminating all non-origin bivector variables leaves exactly four independent
+  origin constraints; these are compatible with an invertible local solder.
+- For all three accepted Lorentz-null checkerboard sectors, the two-dimensional
+  physical quotient-null plane is obstructed at second order.  For an exact
+  basis ((u,v)) and real (z_1=a,u+b,v),
+  [
+  T(z_1,z_1,w_0)
+  =
+  -rac{32}{3}(a^2+b^2),
+  ]
+  so no nonzero real physical null direction continues to a smooth stationary
+  branch from the canonical flat solder.
+
+Supporting certificates:
+
+- `02_REGISTRY/research/certificates/a4d_curved_stationary_sector_check.py`
+- `02_REGISTRY/research/certificates/a4d_checkerboard_nonlinear_obstruction_check.py`
+- `02_REGISTRY/research/certificates/a4d_checkerboard_nonlinear_lift_obstruction_check.py`
+
+### NUMERICAL/EXPLORATORY — NOT A THEOREM
+
+A nonlinear solve inside the exact one-boost solder kernel can drive the
+connection-Euler residual very small, but observed solutions collapse toward
+degenerate solder.  This remains evidence only.
+
+### CURRENT STRONGEST STABLE STATEMENT
+
+[
+oxed{
+	exttt{SOLDER-EULER-DOES-NOT-FORCE-FLATNESS-CONNECTION-COMPATIBILITY-IS-FIRST-BLOCKER}
+}
+]
+
+together with the stronger local-flat result
+
+[
+oxed{
+	exttt{CANONICAL-FLAT-CHECKERBOARD-QUOTIENT-NULLS-NONLINEARLY-OBSTRUCTED}.
+}
+]
+
+### SINGLE NEXT BLOCKER
+
+Decide the **joint** nondegenerate curved system
+[
+E_v=0,qquad E_L=0
+]
+(and, after independent reproduction, the minimal affine-residual equation)
+without relying on numerical collapse.  The next accepted advance must be one
+of:
+
+1. an exact nondegenerate curved joint Euler witness;
+2. an exact periodic/global elimination obstruction;
+3. a certified extension of the nonlinear obstruction to the independently
+   reproduced minimal full-affine completed family.
+
+Do not restart from gauge-law speculation; resume from this joint-Euler blocker.
+
+---
+
 ## 0. Research question
 
 The affine-gauge discussion is not finished by constructing a covariant carrier.
