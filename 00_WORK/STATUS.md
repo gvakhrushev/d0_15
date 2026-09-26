@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
-| WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **3** | **0** | **0** | **1** | **4** | **1 / 10** |
+| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
+| **Total** | **2** | **0** | **0** | **1** | **3** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -17,7 +17,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|
 | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | CONTROL | REVIEW | ROOT | - |
 | EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
-| WRK-A4D-J2-METRIC-RESPONSE-SENSITIVITY | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-RANK-COMPOUND-AFFINE-QUOTIENT | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 
 ## Registry Health & Metrics
