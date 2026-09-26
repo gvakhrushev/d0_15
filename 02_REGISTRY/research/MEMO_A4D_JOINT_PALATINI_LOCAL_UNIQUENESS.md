@@ -1,1389 +1,713 @@
 # MEMO A4D — joint Palatini local uniqueness
 
-**Task:** `EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS`  
+**Task:** \`EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS\`  
 **Execution:** PR #232  
-**Status:** IN_PROGRESS / joint tangent-cone and continuum-transfer architecture fixed  
-**Baseline:** main at task start `966e280f81d5d3e27d8715dd5fdc98f3c3e9b35d`  
-**Primary target:** `NAKED-STAR-JOINT-PALATINI-SMOOTH-EINSTEIN-BRANCH-CLOSED`
+**Status:** EXACT JOINT NO-GO  
+**Baseline at start:** \`966e280f81d5d3e27d8715dd5fdc98f3c3e9b35d\`  
+**Exact parent certificate:** \`02_REGISTRY/research/certificates/a4d_joint_palatini_exact_diagonal_vacuum_check.py\`
 
-## 0. Scope
+## 0. Terminal
 
-This task studies the joint Palatini system near the designated smooth LC-like branch,
+The requested positive terminal is **not** reached.
 
-[
-E_K(Q,K)=0,
-qquad
-E_Q(Q,K)=kappa T.
-]
+Instead the unchanged naked star action has an exact analytic, curved,
+non-gauge joint-vacuum curve through the flat point:
 
-It does **not** ask for a globally single-valued off-shell section (K_*(Q)), and it does not require all connection-stationary sheets to have the same metric response.
+\[
+\boxed{
+E_K(\eta,K(z))=0,
+\qquad
+E_Q(\eta,K(z))=0
+}
+\]
 
-Merged #227 proves that the latter all-sheet statement is false: at the fixed flat metric there is an exact curved family with (E_K=0), but its metric partial is nonzero. The present task asks whether the **joint** metric equation removes precisely such source-visible sheets and leaves a locally controlled smooth Palatini branch.
+for all sufficiently small real \(z\), while the plaquette curvature is
+nonzero for \(z\neq0\).
 
-No new action channel, Holst term, (arphi), boundary selector, spectral filter, or torsion constraint is introduced.
-
-## 0A. Source contract and epistemic boundary
-
-Repository search finds the declared sourced Palatini equation
+Therefore the flat/LC-like joint vacuum is not locally isolated by
 
 \[
 E_K=0,\qquad E_Q=\kappa T
 \]
 
-as the contract of this task. No separate owner in the audited lane establishes
-that every possible D0 matter realization has zero spin/connection current.
-Accordingly this research task is scoped to the **stress-only source class**
-specified by the brief.
+even in the vacuum subcase \(T=0\).
 
-The positive target, if reached, means:
-
-- for this declared source class the smooth joint-critical branch has the
-  Einstein \(J^2\) gravitational response;
-- the source-visible UV connection sheets are cut by the metric equation;
-- source-invisible UV normal amplitudes are asymptotically harmless.
-
-It does **not** by itself derive the universal matter coupling, a fermionic
-spin-current law, Newton normalization, or the value of \(\kappa\). A later
-matter owner may replace \(E_K=0\) by a sourced connection equation; that
-would be a different joint problem.
-
-## 1. Mandatory input audit
-
-The following owners were read before the present deductions.
-
-- #201: the naked-star flat metric Hessian, after regular connection Schur elimination, has exact small-momentum coefficient
-  [
-  T_1^{[2]}=rac14E_eta,
-  qquad c_{m sp}=0.
-  ]
-- #208: the metric is the genuine nonlinear quotient coordinate (Q=ThetaetaTheta^T); the polarized connection block is regular at zero phase and singular on UV characters. At the diagonal quarter wave its connection rank is (16) and the genuine metric source raises the augmented rank to (20).
-- #216: for fixed smooth realizations the IR parametrix has an (O(h^infty)) connection residual, the normal-center nonlinear terms of total momentum degree (le2) vanish, and the normalized IR response is
-  [
-  -rac12G+O(h).
-  ]
-  The old missing theorem was uniform all-sheet normal rescue.
-- #223: independently packages the normal-coordinate locality statement and the fixed-realization (O(h)) postquadratic remainder.
-- #225: the diagonal frozen connection germ can split under a slow phase detuning; constant-character isolation is therefore not a substitute for a slowly varying coupled theorem.
-- #226: raw metric response is uniformly Lipschitz in the dimensionless link logarithm with no negative power of (h); after the single physical (h^{-2}) normalization the polynomial loss is exactly (h^{-2}). Hence an (O(h^infty)) connection error remains (O(h^infty)) in normalized metric response.
-- #227: an exact curved connection-stationary family exists on every (L=4m), but its metric partial is nonzero and differs at normalized order one from the identity sheet. This kills all-sheet branch independence, not the joint Palatini branch.
-- current #202: the corrected full-transverse audit kills the historical homogeneous parabolic false root and is used only as a lower-wall hostile control.
-
-The registered workers are dependencies, not computations to be duplicated here:
-
-1. `WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL`;
-2. `WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM`;
-3. `WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS`;
-4. `WRK-A4D-227-TORSION-DIAGNOSTIC`.
-
-## 2. Exact structural identity: the metric Euler equation contains a connection factor
-
-Use local metric and connection coordinates
-
-[
-q=Q-eta,qquad a=log K.
-]
-
-For identity links, every plaquette curvature is zero for every solder/metric. Therefore
-
-[
-S_star(Q,I)=0
-]
-
-identically in (Q), and hence
-
-[
-oxed{E_Q(Q,I)=0}
-]
-
-through the whole near-flat metric chart.
-
-Analyticity then gives
-
-[
-oxed{
-E_Q(q,a)=H_{QA}a+O(qa,a^2).
-}
-	ag{2.1}
-]
-
-Every Taylor monomial in (E_Q) contains at least one connection amplitude.
-
-The connection equation has the ordinary mixed expansion
-
-[
-E_K(q,a)
-=
-H_{AQ}q+H_{AA}a+O(q^2,qa,a^2).
-	ag{2.2}
-]
-
-The full linearized joint Palatini operator is therefore the mixed saddle/KKT matrix
-
-[
-oxed{
-mathcal H_J=
-egin{pmatrix}
-0&H_{QA}\
-H_{AQ}&H_{AA}
-end{pmatrix}.
-}
-	ag{2.3}
-]
-
-This full matrix, not merely (ker H_{AA}), is the correct tangent object for arbitrary joint germs.
-
-## 3. Valuation lemma and the precise role of (N_0)
-
-Let a real/complex analytic, subanalytic, or Puiseux joint germ be parametrized by (t), and write
-
-[
-a(t)=t^p a_p+cdots,qquad q(t)=t^r q_r+cdots,
-]
-
-with (a_p
-e0).
-
-From (2.1), if the matter/source term is of valuation strictly greater than (p),
-
-[
-oxed{H_{QA}a_p=0.}
-	ag{3.1}
-]
-
-There are then three distinct cases.
-
-### 3.1 Connection-dominant case (p<r)
-
-Equation (2.2) first sees (H_{AA}a_p), hence
-
-[
-H_{AA}a_p=0.
-]
-
-Together with (3.1),
-
-[
-oxed{
-a_pin
-N_0:=ker H_{AA}capker H_{QA}.
-}
-	ag{3.2}
-]
-
-This is the load-bearing regime for a nonlinear UV rescue whose connection amplitude is a positive fractional power of a super-algebraically small smooth UV source.
-
-### 3.2 Equal valuation (p=r)
-
-The first coefficients obey
-
-[
-H_{QA}a_p=0,
-qquad
-H_{AQ}q_p+H_{AA}a_p=0.
-]
-
-Thus
-
-[
-oxed{(q_p,a_p)inkermathcal H_J.}
-	ag{3.3}
-]
-
-It is not legitimate to replace the full mixed-saddle census by (N_0) in this case.
-
-### 3.3 Metric-dominant case (r<p)
-
-The first connection equation constrains (H_{AQ}q_r) before the first connection coefficient appears. Again, the full KKT tangent cone is required.
-
-**Conclusion.** The worker-owned full mixed saddle census is logically necessary. The residual space (N_0) is exactly the only place where a connection-dominant UV/Puiseux rescue can hide after the metric equation has removed source-visible connection kernel directions.
-
-This valuation split is the precise scoped reading of the registered tangent-cone strategy.
-
-## 3A. Exact abstract decomposition of the mixed saddle kernel
-
-The full J1 census has a useful basis-independent form that does not require
-recomputing any orbit.
-
-Write
-
-[
-A:=H_{AA}:V	o V,qquad
-B:=H_{AQ}:M	o V,qquad
-C:=H_{QA}:V	o M,
-]
-
-with (M) the metric tangent space and (V) the connection tangent space.
-Let
-
-[
-N:=ker A,qquad
-pi:V	ooperatorname{coker}A.
-]
-
-The joint linear equations are
-
-[
-Cv=0,qquad Bq+Av=0.
-	ag{3A.1}
-]
-
-First, every
-
-[
-nin N_0:=Ncapker C
-]
-
-gives the pure connection joint-null vector ((0,n)).
-
-For a mixed vector, the second equation first requires
-
-[
-oxed{pi Bq=0.}
-	ag{3A.2}
-]
-
-Define
-
-[
-M_0:=ker(pi B).
-]
-
-For (qin M_0), choose any (v_R(q)) satisfying
-
-[
-Av_R(q)=-Bq.
-]
-
-Every other solution of the second equation is (v_R(q)+n) with (nin N).
-The first equation is solvable precisely when
-
-[
--Cv_R(q)in C(N).
-]
-
-Therefore the remaining mixed obstruction is the well-defined quotient map
-
-[
-oxed{
-Sigma:M_0	o M/C(N),
-qquad
-Sigma(q)=[Cv_R(q)].
-}
-	ag{3A.3}
-]
-
-Changing (v_R(q)) by an element of (N) changes (Cv_R) by an element of
-(C(N)), so the class is independent of the chosen range solve.
-
-Hence
-
-[
-oxed{
-kermathcal H_J
-	ext{ is an extension of }
-kerSigma
-	ext{ by }N_0,
-}
-	ag{3A.4}
-]
-
-and in particular
-
-[
-oxed{
-dimkermathcal H_J
-=
-dim N_0+dimkerSigma.
-}
-	ag{3A.5}
-]
-
-Under the polarized Hessian symmetry used by the worker,
-(operatorname{rank}C|_N=operatorname{rank}pi B=d), the Fredholm
-incompatibility dimension. Thus (dim N_0=(24-r_H)-d), but (3A.3) shows
-exactly why this arithmetic does **not** classify the full saddle kernel:
-(kerSigma) contains the genuine metric-only/mixed KKT directions that J1
-must identify and quotient correctly.
-
-This decomposition is the parent-level integration rule for the forthcoming
-worker table.
-
-## 3B. Radical form of the symmetric mixed saddle
-
-For the polarized Hessian pairing the full joint block has the symmetric form
-
-[
-mathcal H_J=
-egin{pmatrix}
-0&C\
-C^{mathsf T}&A
-end{pmatrix},
-qquad
-A=A^{mathsf T},
-	ag{3B.1}
-]
-
-over the relevant real or (mathbb Q(i)) bilinear carrier. Put
-
-[
-W:=ker Csubset V.
-]
-
-A joint null vector ((q,v)) satisfies
-
-[
-Cv=0,qquad C^{mathsf T}q+Av=0.
-	ag{3B.2}
-]
-
-The first equation says (vin W). The second is solvable in (q) iff
-
-[
-Avinoperatorname{im}C^{mathsf T}=W^perp.
-]
-
-Equivalently,
-
-[
-w^{mathsf T}Av=0
-qquad
-	ext{for every }win W.
-]
-
-Define the radical of the restricted connection form
-
-[
-operatorname{Rad}(A|_W)
-:=
-{vin W:; w^{mathsf T}Av=0 orall win W}.
-	ag{3B.3}
-]
-
-Projection ((q,v)mapsto v) therefore gives the exact sequence
-
-[
-oxed{
-0longrightarrow
-ker C^{mathsf T}
-longrightarrow
-kermathcal H_J
-longrightarrow
-operatorname{Rad}(A|_W)
-longrightarrow0.
-}
-	ag{3B.4}
-]
-
-Hence
-
-[
-oxed{
-dimkermathcal H_J
-=
-dimker C^{mathsf T}
-+
-dimoperatorname{Rad}(A|_W).
-}
-	ag{3B.5}
-]
-
-The pure source-invisible connection space satisfies
-
-[
-N_0=ker Acap W
-subseteq
-operatorname{Rad}(A|_W).
-	ag{3B.6}
-]
-
-Thus the three pieces of the linear joint problem are intrinsic:
-
-1. (ker C^{mathsf T}): metric-only null directions;
-2. (N_0): pure connection source-invisible directions;
-3. (operatorname{Rad}(A|_W)/N_0): genuinely mixed saddle directions.
-
-This is equivalent to the quotient-Schur description in §3A but is more useful
-for the worker census. The positive 4/1/1 strategy is complete only if every
-element of item 3 is absent after quotient or is classified as an already-owned
-physical IR/metric-gauge tangent. Any additional physical UV class in item 3
-is a new nonlinear blocker.
-
-## 4. #227 hostile control is source-visible and is cut by the joint metric equation
-
-Merged #227 uses
-
-[
-B=K_1+K_2+K_3,
-]
-
-and the four-phase pattern
-
-[
-(U,I,U^{-1},I).
-]
-
-Its first connection tangent is therefore the real cosine representative of the diagonal quarter-wave Role-0 kernel vector
-
-[
-lambda_0=K_1+K_2+K_3
-]
-
-already used in the diagonal resonance analysis.
-
-#227 computes the exact descended metric covector
-
-[
-E_Q(x)
-=
-sigma_{p(x)}c(t)
-(0,0,0,0,-1,1,1,-1,1,-1),
-]
-
-with
-
-[
-c(t)=rac{4t}{4-3t^2}.
-]
-
-Since
-
-[
-c'(0)=1,
-]
-
-the first metric Euler coefficient along the #227 tangent is nonzero. Equivalently,
-
-[
-oxed{H_{QA}lambda_0
-e0.}
-	ag{4.1}
-]
-
-Thus the exact curved (E_K=0) family of #227 is **source-visible** and is rejected at first connection valuation by the vacuum joint metric equation. With smooth sourced data, it cannot appear at an amplitude parametrically larger than the corresponding smooth UV metric/matter source.
-
-This is an exact joint-Palatini distinction from the old all-sheet no-go: #227 remains a counterexample to branch-independent (E_K)-elimination, but it is not a joint vacuum branch.
-
-The linear-kernel worker will provide the repository-owned exact basis statement and the full mixed-saddle classification; (4.1) is already independently visible from the exact #227 metric response.
-
-## 4A. Torsion diagnostic from worker PR #233
-
-Worker PR #233 has reached REVIEW with terminal
-
-[
-	exttt{J2-227-CURVED-STATIONARY-FAMILY-TORSION-DIAGNOSTIC-CERTIFIED}.
-]
-
-At constant standard solder it uses the owned coframe-transport torsion
-
-[
-T_{rs}=(L_r-I)e_s-(L_s-I)e_r.
-]
-
-For the #227 family all spatial faces have zero torsion and curvature. On
-faces ((0,s)), phases (1,3) are torsion-free for every (t) even though
-curvature and the metric partial are nonzero, while phases (0,2) have
-
-[
-T_{0s}
-=
-pmleft(
-c(t)e_0+rac{2t^2}{4-3t^2}(e_1+e_2+e_3)
-ight).
-]
-
-Across all phases/faces, torsion vanishes iff (t=0) in the near-identity
-chart. Its leading amplitude, curvature, and the metric partial all scale as
-(c(t)sim t).
-
-This supports the interpretation that the #227 sheet is not LC-like, but it is
-**diagnostic only**. No torsion-free equation and no (T^2) action term are
-introduced, and the joint rejection of #227 already follows from (4.1).
-
-## 4B. Exact sourced suppression of the #227 hostile family
-
-The #227 family can be tested against the **full sourced metric equation**
-without any linearization.
-
-Its descended metric covector is
-
-\[
-E_Q(x)
-=
-\sigma_{p(x)}\,c(t)\,m,
-\qquad
-m=(0,0,0,0,-1,1,1,-1,1,-1),
-\]
-
-with
-
-\[
-c(t)=\frac{4t}{4-3t^2}.
-\]
-
-For \(|t|\le1/4\),
-
-\[
-1
-\le
-\frac{|c(t)|}{|t|}
-=
-\frac4{4-3t^2}
-\le
-\frac{64}{61}.
-\]
-
-Hence
+The exact task terminal is
 
 \[
 \boxed{
-|t|\le |c(t)|\le\frac{64}{61}|t|.
+\texttt{NAKED-STAR-JOINT-PALATINI-LOCAL-UNIQUENESS-NOGO}
 }
-\tag{4B.1}
 \]
 
-Project the joint equation \(E_Q=\kappa T\) onto the quarter-wave character
-and any metric component on which \(m\) is nonzero. Then, on this exact
-connection-stationary family,
+and not
 
 \[
-|t|
-\le
-|\kappa|\,C_m
-\left|\widehat T_h(k_{\rm qw})\right|.
-\tag{4B.2}
+\texttt{NAKED-STAR-JOINT-PALATINI-SMOOTH-EINSTEIN-BRANCH-CLOSED}.
 \]
 
-For a fixed \(C^\infty\) matter/source realization, the same smooth Fourier
-tail argument used in #216 gives
+This is a no-go for **joint local uniqueness / UV elimination**. It is not a
+no-go for the existence of the designated smooth Einstein branch, nor for its
+already-owned coefficient \(-\tfrac12G\).
+
+---
+
+## 1. Scope and source contract
+
+The task declares the stress-only sourced system
 
 \[
-\widehat T_h(k_{\rm qw})=O(h^\infty).
+E_K=0,\qquad E_Q=\kappa T.
 \]
+
+The repository lane audited here does not independently derive that every
+possible D0 matter realization has zero connection/spin current. Thus the
+statement remains scoped to this declared stress-only source class.
+
+Vacuum \(T=0\) is a valid member of that class. An exact curved joint vacuum
+through flat is therefore sufficient to obstruct the requested local
+uniqueness theorem.
+
+No new action channel, Holst term, \(\varphi\), boundary selector, spectral
+filter, torsion constraint, or connection selector is introduced.
+
+---
+
+## 2. Mandatory input audit
+
+The parent consumed the following results without reopening their owned
+calculations:
+
+- #201: the regular IR metric Hessian of naked \(S_\star\) has
+  \[
+  T_1^{[2]}=\frac14E_\eta,
+  \qquad
+  E_\eta=-2G
+  \]
+  on the owned normal-jet convention, hence the designated smooth branch has
+  coefficient \(-\frac12G\).
+
+- #208/#216: the metric is the genuine nonlinear quotient coordinate and the
+  connection symbol has UV resonances although the zero-phase/IR block is
+  regular.
+
+- #223: normal-center nonlinear terms of total derivative degree \(\le2\)
+  vanish beyond the linear Einstein term.
+
+- #226: finite-stencil metric response is polynomially sensitive to connection
+  corrections; after the single \(h^{-2}\) normalization, an
+  \(O(h^\infty)\) connection correction remains \(O(h^\infty)\).
+
+- #227: all-\(E_K\)-sheet branch independence is false. Its explicit curved
+  connection-stationary family is source-visible under \(E_Q\).
+
+- merged #233: the #227 family is torsionful globally except at the identity,
+  but torsion is diagnostic only and is not added as a field equation.
+
+The diagonal worker #235 found the correct source-invisible direction and
+proved
+
+\[
+E_Q(\eta,K(t))=0
+\]
+
+exactly, while its connection calculation stopped at
+
+\[
+E_K(\eta,K(t))=O(t^9).
+\]
+
+The parent exactification below upgrades that finite jet to an exact analytic
+joint-vacuum curve.
+
+---
+
+## 3. Corrective audit of worker PR #231
+
+PR #231 contains useful exact symbol reconstruction, but two parts of its
+published REVIEW terminal are not accepted as load-bearing by this parent.
+
+### 3.1 Polarized block is genuinely nonsymmetric
+
+This part is correct:
+
+\[
+H_{AA}\neq H_{AA}^{\mathsf T}.
+\]
+
+Therefore the earlier parent draft's symmetric-KKT/radical discussion is
+withdrawn. No symmetric Hessian argument is used in the terminal no-go.
+
+### 3.2 The published \(N_0\) refinement uses the wrong stack
+
+The worker brief defines
+
+\[
+N=\ker H_{AA},
+\qquad
+N_0=\ker H_{AA}\cap\ker H_{QA}.
+\]
+
+Its own checker first computes \(N=\ker H_{AA}\), but then constructs
+
+\[
+\ker
+\begin{pmatrix}
+H_{AA}^{\mathsf T}\\
+H_{QA}
+\end{pmatrix}
+\]
+
+instead of
+
+\[
+\ker
+\begin{pmatrix}
+H_{AA}\\
+H_{QA}
+\end{pmatrix}.
+\]
+
+The checker subsequently verifies that the vectors it found also happen to lie
+in \(\ker H_{AA}\); that does not prove it found the entire intersection.
+
+A corrected exact replay of the same symbol gives
+
+\[
+\dim N_0=
+(1,0,0,0,4,1,0,1,0)
+\]
+
+on orbit types \(0,\ldots,8\), respectively. In particular the two
+one-dimensional sectors on orbit 5 and orbit 7 do **not** disappear.
+
+The exact missing bases are:
+
+### orbit 5, phase ids \((1,1,3,3)\)
+
+\[
+\begin{aligned}
+&(0,-1+i),\ (6,-1+i),\\
+&(12,1),\ (14,-1),\ (16,1),\\
+&(18,1),\ (19,-1),\ (21,1).
+\end{aligned}
+\]
+
+### orbit 7, phase ids \((2,1,1,2)\)
+
+\[
+(2,1),\ (7,-i),\ (8,i),\ (11,-i),\
+(12,-i),\ (14,i),\ (16,-i),\ (20,1).
+\]
+
+The original 1/1/4 residual expectation is therefore restored.
+
+### 3.3 The published full mixed-Hessian table is malformed
+
+The worker checker constructs its \(34\times34\) matrix as
+
+\[
+\operatorname{vstack}
+\left(
+[0_{10\times10}\mid Q],
+[H_{AA}\mid0_{24\times10}]
+\right).
+\]
+
+The upper row uses the column partition \((10,24)\), while the lower row places
+the \(24\times24\) block in the **first** 24 columns. Those column partitions
+are incompatible. Consequently the reported full-joint rank/nullity/mixed
+table is not a valid block operator and is not used here.
+
+These worker-remediation points matter for the registry, but the exact
+diagonal no-go below is independent of them.
+
+---
+
+## 4. Exact diagonal invisible generator
+
+Use the standard Lorentz basis
+
+\[
+(K_1,K_2,K_3,J_{12},J_{13},J_{23})
+\]
+
+and define
+
+\[
+Y=J_{12}-J_{13}+J_{23}.
+\]
+
+This is the Role-0 source-invisible diagonal direction already identified by
+#235.
+
+It satisfies
+
+\[
+Y^3+3Y=0.
+\]
+
+Also define the boost sum
+
+\[
+B=K_1+K_2+K_3.
+\]
+
+A direct Lie-algebra calculation gives
+
+\[
+\boxed{[B,Y]=0.}
+\]
+
+This commutation is the key exact cancellation missed by the finite Taylor
+expansion.
+
+---
+
+## 5. Exact analytic family
+
+Use the Cayley coordinate on the same one-parameter subgroup,
+
+\[
+U(z)
+=
+\left(I-\frac z2Y\right)^{-1}
+\left(I+\frac z2Y\right).
+\]
+
+For real \(z\) near zero,
+
+\[
+U(-z)=U(z)^{-1},
+\qquad
+U(z)^T\eta U(z)=\eta.
+\]
+
+On every torus with side length divisible by four, put
+
+\[
+p(x)=x_0+x_1+x_2+x_3\pmod4
+\]
+
+and
+
+\[
+(W_0,W_1,W_2,W_3)
+=
+(U,I,U^{-1},I).
+\]
+
+Define
+
+\[
+\boxed{
+L_0(x)=W_{p(x)},
+\qquad
+L_s(x)=I\quad(s=1,2,3).
+}
+\tag{5.1}
+\]
+
+This is a reparameterization of the same local analytic subgroup used by
+#235's exponential cosine family. No new branch or action is introduced.
+
+---
+
+## 6. Curvature is exact and nonzero
+
+For every \(s=1,2,3\),
+
+\[
+P_{0s}(x)
+=
+W_pW_{p+1}^{-1}.
+\]
+
+Hence by phase
+
+\[
+P_{0s}
+=
+(U,U,U^{-1},U^{-1}),
+\]
+
+while every spatial plaquette is the identity.
+
+For
+
+\[
+\mathcal R(P)=\frac12(P-P^{-1}),
+\]
+
+the certificate proves
+
+\[
+\boxed{
+\mathcal R(U)
+=
+\frac{4z}{4+3z^2}\,Y.
+}
+\tag{6.1}
+\]
+
+Since
+
+\[
+\lim_{z\to0}
+\frac1z\frac{4z}{4+3z^2}
+=1,
+\]
+
+the branch has nonzero plaquette curvature for every sufficiently small
+\(z\neq0\).
+
+Thus this is not a flat connection family.
+
+---
+
+## 7. Exact metric equation
+
+At standard solder, the complementary area of a face \((0,s)\) is spatial.
+The Hodge dual of the rotation bivector \(b(Y)\) lies in the boost sector.
+Their degree-two Lorentz pairing vanishes.
+
+The certificate checks all three cell functionals:
+
+\[
+G_2(B_{(0,s)^c},\star b(Y))=0.
+\]
+
+More importantly, it checks the full solder/Gram differential. For each of
+the \(16\) independent leg variations, the oriented sum over
+\((0,1),(0,2),(0,3)\) vanishes identically.
+
+Therefore the statement is not merely that the restricted action is zero:
+
+\[
+\boxed{
+E_Q(\eta,K(z))=0
+}
+\tag{7.1}
+\]
+
+as the full descended metric partial, for every \(z\) in the chart.
+
+This reproduces and strengthens the exact metric part of #235.
+
+---
+
+## 8. Exact connection equation
+
+The finite curvature differential is the owned identity
+
+\[
+D\mathcal R_P[\dot P]
+=
+\frac12
+\left(
+\dot P+P^{-1}\dot P P^{-1}
+\right).
+\tag{8.1}
+\]
+
+The proof checks one edge at a time against all six Lorentz generators.
+
+### 8.1 Role-0 edge
+
+Let
+
+\[
+A=W_p,\qquad
+C=W_{p+1},\qquad
+D=W_{p-1}.
+\]
+
+The varied Role-0 edge meets six nontrivial faces. After summing the three
+complementary face functionals, the relevant covector is
+
+\[
+\ell_B(X)=\frac12\operatorname{tr}(BX).
+\]
+
+For an arbitrary Lorentz generator \(G\), the two incident base-site
+contributions reduce to
+
+\[
+\frac12\ell_B
+\left(
+AGC^{-1}
++
+CGA^{-1}
+-
+DGA^{-1}
+-
+AGD^{-1}
+\right).
+\tag{8.2}
+\]
+
+At phases \(p=0,2\) the matrix terms cancel directly.
+
+At phases \(p=1,3\), cyclicity of trace together with
+
+\[
+[B,U]=0
+\]
+
+pairs the remaining two terms exactly. Hence
+
+\[
+\boxed{
+E_{K,0}(x)[G]=0
+}
+\]
+
+for every phase and every \(G\in\mathfrak{so}(1,3)\).
+
+### 8.2 Spatial Role edge
+
+For a Role-\(s\) edge, \(s=1,2,3\), the two nontrivial \((0,s)\) face
+contributions are evaluated separately.
+
+For every phase and every Lorentz generator \(G\), their exact sum vanishes.
+No commutation hypothesis is required for this cancellation.
+
+The remaining spatial-spatial faces are identity plaquettes at constant solder.
+Their two appearances of the edge form the flat forward curl, and since
+
+\[
+D\mathcal R_I=\operatorname{id},
+\]
+
+they telescope exactly.
+
+Thus
+
+\[
+\boxed{
+E_{K,s}(x)[G]=0
+\qquad
+(s=1,2,3)
+}
+\]
+
+for every site and all six independent generators.
+
+The parent checker executes
+
+\[
+4\times
+\left(
+6+3\times6
+\right)
+=
+96
+\]
+
+independent nontrivial edge-Euler identities, all exactly over \(\mathbb Q(z)\).
 
 Therefore
 
 \[
-\boxed{t_h=O(h^\infty)}
-\tag{4B.3}
+\boxed{
+E_K(\eta,K(z))=0
+}
+\tag{8.3}
 \]
 
-for every member of the #227 family that also satisfies the smooth sourced
-joint metric equation.
+identically, not merely through order eight.
 
-Thus the exact family which destroys all-sheet \(E_K\)-rescue becomes
-super-algebraically small once the actual Palatini metric equation is imposed.
-No torsion constraint or connection selector is needed for this conclusion.
+---
 
-Combined with #226, its normalized metric-response deviation from the
-designated smooth sheet is also \(O(h^\infty)\).
+## 9. The branch is not pure gauge
 
-This is an exact positive hostile control for the joint strategy. It does not
-replace J1/J2/J3 because other source-invisible kernel directions have
-\(H_{QA}u=0\) and need higher-order pressure.
+All three spatial links are the identity.
 
-## 5. Residual nonlinear sectors
+If (5.1) were a pure gauge image of the identity while preserving those side
+links, the gauge function would be constant along the three spatial
+directions. The Role-0 link could then depend only on \(x_0\).
 
-The owned L=4 rank inventory gives the provisional arithmetic
-
-[
-dim N_0
-=
-(24-r_H)-(r_{m aug}-r_H)
-=
-24-r_{m aug}.
-]
-
-Therefore the already-owned rank types suggest
-
-[
-(20,24,4)mapsto0,
-qquad
-(22,24,2)mapsto0,
-]
-
-and only
-
-[
-oxed{
-(22,23,1)mapsto1,quad
-(20,23,3)mapsto1,quad
-(16,20,4)mapsto4
-}
-	ag{5.1}
-]
-
-retain source-invisible connection kernel dimensions.
-
-Equation (5.1) is a roadmap until the worker constructs (H_{QA}|_{ker H_{AA}}) explicitly and checks the genuine quotient/gauge status. Rank arithmetic alone is not promoted as the J1 theorem.
-
-No nonlinear work is required on the source-visible orbit types if J1 certifies (N_0=0) there.
-
-## 5A. Visible/invisible splitting: only (N_0) is nonlinear
-
-Once J1 supplies the exact restriction
-
-[
-C_N:=H_{QA}|_N:N	o M,
-qquad N=ker H_{AA},
-]
-
-choose any fixed complement
-
-[
-N=N_0oplus N_{m vis},
-qquad
-N_0=ker C_N.
-]
-
-Then
-
-[
-C_N|_{N_{m vis}}
-]
-
-is injective. On one finite orbit representative its smallest nonzero singular
-value is positive. On a compact parameter stratum, if the rank is constant,
-continuity gives a positive lower bound
-
-[
-sigma_{m vis}>0
-]
-
-after shrinking to one rank chart. Hence there is a uniformly bounded left
-inverse (L_{m vis}) on the source-visible image.
-
-Write the resonant connection amplitude as
-
-[
-u=u_0+u_{m vis},
-qquad
-u_0in N_0,quad
-u_{m vis}in N_{m vis}.
-]
-
-The reduced metric equation has the form
-
-[
-C_Nu_{m vis}
-+s_Q
-+O(|u|^2+|q||u|)
-=0,
-	ag{5A.1}
-]
-
-because (C_Nu_0=0). Therefore, in any sufficiently small joint tube,
-
-[
-|u_{m vis}|
-le
-Cleft(
-|s_Q|+|u_0|^2+|q||u|
-ight).
-	ag{5A.2}
-]
-
-Consequences:
-
-1. a source-visible kernel direction such as #227 is **not** a nonlinear
-   Palatini obstruction;
-2. for smooth UV forcing (s_Q=O(h^infty)), the visible amplitude is
-   (O(h^infty)) once the invisible amplitude is (O(h^infty));
-3. no degree/Puiseux analysis is needed on (N_{m vis});
-4. all genuine nonlinear UV pressure is concentrated on (N_0), together
-   with any additional physical mixed-saddle sector that J1 may expose via
-   (kerSigma).
-
-This is the exact reason the registered 4/1/1 workers are sufficient **if and
-only if** J1 classifies every extra mixed saddle null as genuine metric
-gauge/physical IR data.
-
-At rank-change boundaries the complement must be changed chartwise. A global
-uniform claim requires a finite compact stratification on which
-(operatorname{rank}C_N) is constant; one cannot take a pseudoinverse through
-a rank jump and silently assume its norm stays bounded.
-
-## 5B. Slow-background stability and a linear-lifting shortcut
-
-The visible/invisible split also has a useful refinement-uniform perturbation
-statement.
-
-Suppose on one compact rank chart
-
-[
-C_h|_{N_{m vis}}
-=
-C_0+R_h,
-qquad
-|R_h|le Ch,
-]
-
-and
-
-[
-sigma_{min}(C_0)=sigma_0>0.
-]
-
-For sufficiently small (h),
-
-[
-oxed{
-sigma_{min}(C_h|_{N_{m vis}})
-ge
-sigma_0-Ch
-ge
-rac{sigma_0}{2}.
-}
-	ag{5B.1}
-]
-
-Thus source-visible modes stay uniformly source-visible on a slowly varying
-background. Their rejection is not a frozen-character artifact.
-
-There is a second possible shortcut on (N_0). Let the background-dependent
-metric pressure restricted to a frozen invisible sector have expansion
-
-[
-C_h|_{N_0}
-=
-h^m C_m+O(h^{m+1}),
-qquad
-m<infty.
-	ag{5B.2}
-]
-
-If (C_m) is injective on the physical (N_0) quotient, then for small (h)
-the inverse loses at most (h^{-m}). A smooth UV source therefore gives
-
-[
-|u_0|
-le
-C h^{-m}|s_h^{m UV}|+	ext{higher terms}
-=
-O(h^infty).
-	ag{5B.3}
-]
-
-In that case the residual sector is already closed by **linear slow-background
-metric pressure** and no nonlinear Puiseux/degree calculation is needed for
-the continuum theorem.
-
-If every finite background derivative through all orders remains singular on
-a subspace, only that surviving subspace proceeds to the nonlinear J2/J3
-normal-form pressure.
-
-This is a parent optimization, not a replacement for the registered workers:
-J1 must supply the exact frozen (N_0) basis before (5B.2) can be tested
-without duplicating its calculation.
-
-## 6. Joint nonlinear normal theorem needed from the residual sectors
-
-Let (u) denote coordinates on a physical source-invisible normal sector after:
-
-- genuine gauge/flat tangent directions have been separated;
-- regular connection variables have been range-eliminated;
-- every remaining metric/tangent equation has either been solved or retained.
-
-The correct reduced object is the **joint** map
-
-[
-mathcal F_{m red}(u;s)
-=
-egin{pmatrix}
-E_K^{m red}(u;s)\
-E_Q^{m red}(u;s)
-end{pmatrix}.
-	ag{6.1}
-]
-
-A connection-only reduced potential is insufficient.
-
-A sufficient local certificate on each residual physical stratum is:
-
-1. at zero source, (u=0) is isolated modulo genuine gauge/flat moduli;
-2. there is no zero on one common normal boundary;
-3. the normal domain and codomain have matching dimensions after all tangent equations are accounted for;
-4. the local Brouwer degree is nonzero, or another exact existence mechanism is supplied;
-5. the resulting graph is subanalytic/analytic so a Łojasiewicz/Hölder bound is available.
-
-Then on a compact parameter stratum there are constants
-
-[
-C>0,qquadeta>0
-]
-
-such that every small root on the selected joint branch obeys
-
-[
-oxed{
-|u|le C|s|^eta.
-}
-	ag{6.2}
-]
-
-The task does not require the numerical value of (eta). It requires a positive exponent uniform on the finite compact stratification relevant to the smooth branch.
-
-The diagonal four-space and the two one-dimensional sectors are delegated exact gates.
-
-## 6A. Frozen isolation is necessary but not sufficient
-
-The delegated J2/J3 workers are finite/frozen resonance calculations. Their
-positive result would be an essential input, but not by itself the
-refinement-uniform theorem.
-
-The hostile analytic model
-
-[
-F_h(u)=u^3-hu
-]
-
-has an isolated zero at (h=0), nonzero local degree, and finite algebraic
-order. Nevertheless for every (h>0) it has the additional zero-source roots
-
-[
-u=pmsqrt h.
-]
-
-Thus a frozen degree/Łojasiewicz certificate does not prevent slowly varying
-background coefficients from creating flat-approaching joint sheets.
-
-The correct J5 input is therefore a **uniform joint normal inequality for the
-actual slow-background reduced map**. In local normal coordinates
-((p_h,u)), where (p_h) contains the smooth IR/background parameters, one
-sufficient statement is
-
-[
-oxed{
-|u|
-le
-C h^{-p}
-|mathcal F_{m red}(p_h,u;s_h)|^eta
-}
-	ag{6A.1}
-]
-
-relative to the designated joint branch/fiber, with fixed (C,p,eta>0)
-and with all genuine tangent/gauge/physical-IR variables removed or retained
-consistently.
-
-Equivalently, after the small source is moved to the right-hand side, every
-exact root in the selected tube must obey
-
-[
-oxed{
-|u|
-le
-C h^{-p}|s_h^{m UV}|^eta.
-}
-	ag{6A.2}
-]
-
-A finite compact stratification is allowed; take the minimum positive
-(eta) and maximum fixed polynomial loss over its charts.
-
-What the frozen workers can establish is:
-
-1. the candidate physical normal sectors are finite-dimensional and correctly
-   identified;
-2. the zero-source leading joint normal form is isolated/nonzero-degree, or an
-   exact no-go branch exists;
-3. the first possible uniform exponent/order.
-
-The parent must still rule out an (h)-dependent lower-order splitting of
-those joint normal forms. The joint metric equation makes this substantially
-more plausible than in #225/#227 because source-visible directions are already
-linear constraints, but it is not automatic on (N_0).
-
-No positive terminal is allowed if J5 remains only pointwise in (h).
-
-## 6B. Centered slow-background germ: J5 as a no-Puiseux-arc problem
-
-There is a sharper formulation of the uniform J5 gate.
-
-Let \(p\) range over one compact resonance/metric/background chart and let
-\(u\) be the physical UV normal coordinate after range/tangent reduction.
-Evaluate the literal joint reduced equation on the designated smooth
-approximate sheet and center it:
+But \(L_0(x)\) depends on
 
 \[
-r_h(p):=F(p,h,0),
-\qquad
-\widetilde F(p,h,u):=F(p,h,u)-r_h(p).
-\tag{6B.1}
+p(x)=x_0+x_1+x_2+x_3\pmod4.
 \]
 
-By the owned smooth construction,
+There are sites with the same \(x_0\) and different spatial sums carrying
+different phases \(U\) and \(I\). Therefore the branch is not that gauge orbit.
+
+Together with the nonzero plaquette curvature, this gives a direct
+gauge-invariant obstruction to interpreting the curve as flat.
+
+---
+
+## 10. Exact joint no-go
+
+Sections 6–9 give an analytic family through the flat point with
 
 \[
-r_h=O(h^\infty).
+K(0)=I,
 \]
 
-An exact joint sheet satisfies
-
-\[
-\widetilde F(p,h,u)=-r_h(p).
-\tag{6B.2}
-\]
-
-The load-bearing zero-source question is now
-
-\[
-\widetilde F(p,h,u)=0.
-\tag{6B.3}
-\]
-
-Assume the centered family is real analytic/subanalytic in the finite normal
-variables and the compact parameters after the declared finite
-stratification. Then the following failure implication is immediate from
-subanalytic curve selection:
-
-> If there are arbitrarily small \(h\) and nonzero normal zeros
-> \(u\to0\) of (6B.3), then there is a nontrivial real
-> analytic/Puiseux arc
-> \[
-> h=t^q,\qquad
-> u=t^m u_m+\cdots,\qquad u_m\ne0,
-> \]
-> solving the centered zero-source germ.
-
-Therefore an exact **no-Puiseux-germ** theorem,
+such that for every sufficiently small nonzero \(z\),
 
 \[
 \boxed{
-\widetilde F(p,h,u)=0,\quad (h,u)\to(0,0)
-\Longrightarrow
-u=0
+E_K(\eta,K(z))=0,
+\qquad
+E_Q(\eta,K(z))=0,
+\qquad
+\mathcal R(P)\neq0.
 }
-\tag{6B.4}
+\tag{10.1}
 \]
 
-uniformly on the compact parameter chart is sufficient to exclude the
-\(u^3-hu\) failure mechanism of §6A.
+The family is physical in the only sense needed for this task: it is not a
+pure-gauge flat connection and carries nonzero plaquette curvature.
 
-Once the zero set of \(\widetilde F\) in a common compact tube is exactly the
-designated \(u=0\) fiber, the parameterized Łojasiewicz inequality gives some
-finite exponent \(N\) and constant \(C\) such that
+Therefore the zero-source joint normal set is not isolated. No positive
+Brouwer-degree/Łojasiewicz/Puiseux argument can force all invisible UV
+amplitudes to \(O(h^\infty)\), because the centered zero-source germ already
+contains a nontrivial exact analytic curve.
+
+This directly kills the requested local uniqueness statement.
+
+---
+
+## 11. What this does **not** kill
+
+The no-go must be kept sharply scoped.
+
+### 11.1 It does not kill the smooth Einstein coefficient
+
+On the designated regular IR branch, #201/#216/#223 still give
 
 \[
-\|u\|^N
-\le
-C\|\widetilde F(p,h,u)\|
-\tag{6B.5}
+h^{-2}E_{\star,Q}
+=
+-\frac12G+O(h)
 \]
 
-(after an equivalent norm/finite stratification if needed). Applying (6B.2),
+under their stated smooth-realization hypotheses.
+
+Nothing in the exact diagonal curve changes the #201 coefficient.
+
+### 11.2 It does not produce a wrong metric response at flat \(Q\)
+
+Along the exact curved joint-vacuum curve,
 
 \[
-\|u\|
-\le
-C'\|r_h\|^{1/N}
-=
-O(h^\infty).
-\tag{6B.6}
+Q=\eta,
+\qquad
+E_Q=0.
 \]
 
-Thus the actual numerical value of the Puiseux/Łojasiewicz exponent is again
-irrelevant for \(C^\infty\) forcing.
+Since
 
-This gives a practical hierarchy for J5:
+\[
+G[\eta]=0,
+\]
 
-1. first test the linear lifting shortcut of §5B;
-2. on its surviving kernel, compute the first possible \(h\)-dependent
-   weighted initial forms;
-3. prove that no nonzero Puiseux arc solves the **joint** centered equations;
-4. invoke (6B.5) rather than attempting to estimate every refinement
-   separately.
+the metric response agrees with the flat vacuum value despite the hidden
+curved connection.
 
-The frozen J2/J3 workers provide the \(h=0\) initial forms. They do not alone
-prove (6B.4); the parent must include the first slow-background forms capable
-of changing the Newton polygon.
+Thus this result obstructs **connection/Palatini local uniqueness**, not the
+pointwise vacuum metric equation itself.
 
-### Scope caveat
+### 11.3 It does not justify adding torsion-free by hand
 
-Curve selection applies to a genuine finite-dimensional/subanalytic normal
-model on a compact stratum. If the exact reduction leaves an increasing number
-of coupled physical UV variables with refinement, one must first prove a
-uniform finite normal-bundle reduction (or an equivalent Banach-analytic
-version). The parent does not infer such a reduction merely from the nine
-\(L=4\) representatives.
+Merged #233 is diagnostic only. The no-go is obtained from the unchanged
+joint equations. No torsion equation is added to remove the curve.
 
-## 7. Smooth UV forcing: why any finite positive exponent is enough
+### 11.4 It does not prove that every sourced smooth branch is bad
 
-For one fixed (C^infty) realization, #216 owns the UV Fourier-tail estimate in the lattice sum norm:
+For nonzero smooth \(T\), source-visible sectors such as #227 are strongly cut
+by the metric equation. The present obstruction is already enough because the
+target included the vacuum local branch.
 
-[
-|s_h^{m UV}|=O(h^M)
-qquad	ext{for every }M.
-	ag{7.1}
-]
+A narrower theorem about existence of one designated smooth branch, or about
+metric-response independence despite nonunique hidden connections, remains a
+separate possible research target. It is not the uniqueness theorem requested
+here.
 
-Allow a fixed polynomial loss (h^{-p}) in the normal estimate,
+---
 
-[
-|u_h|
-le
-C h^{-p}|s_h^{m UV}|^eta,
-qquad
-eta>0.
-	ag{7.2}
-]
+## 12. Relation to the original 4/1/1 strategy
 
-For a requested (K), choose (M>(K+p)/eta). Then
+The original strategy expected residual source-invisible orbit dimensions
 
-[
-oxed{u_h=O(h^K)}
-]
+\[
+(4,1,1).
+\]
 
-for arbitrary (K), hence
+The corrected replay of #231 restores exactly that expectation.
 
-[
-oxed{u_h=O(h^infty).}
-	ag{7.3}
-]
+However the diagonal four-dimensional sector already contains the exact
+analytic curve (10.1). Therefore the one-dimensional workers are no longer
+load-bearing for this EXPENSIVE terminal.
 
-This is why the task needs a finite positive joint visibility/Hölder exponent, not a preferred cubic or quintic exponent.
+They may still be useful for a later classification of the complete joint
+critical set, but no result on those sectors can restore local uniqueness once
+(10.1) exists.
 
-## 7A. IR/UV source separation in the sourced joint problem
+---
 
-The smooth sourced continuation has two mathematically different residuals and
-they must not be conflated.
+## 13. Validation
 
-Let ((Q_h^{m sm},K_h^{m sm})) denote the designated smooth approximate
-Palatini sheet. #216 gives
+Parent exact certificate:
 
-[
-E_K(Q_h^{m sm},K_h^{m sm})=O(h^infty)
-]
+\[
+\texttt{a4d\_joint\_palatini\_exact\_diagonal\_vacuum\_check.py}.
+\]
 
-in the smooth/Wiener norms, while #216/#223 give at a normal center
+The exact replay checks:
 
-[
-h^{-2}E_{star,Q}(Q_h^{m sm},K_h^{m sm})
-=
--rac12G+O(h).
-]
+- Lorentz subgroup and inverse identities;
+- \([B,Y]=0\);
+- exact curvature formula (6.1);
+- all three zero cell-density pairings;
+- all \(16\) metric Euler components;
+- \(96\) independent nontrivial edge-Euler identities;
+- flat spatial-face telescoping;
+- non-gauge phase witness;
+- nonzero first curvature coefficient.
 
-For a smooth matter realization, the Fourier tail of the metric/matter source
-at fixed nonzero lattice phase is also (O(h^infty)). Therefore the
-**projection of the joint residual onto the UV/resonant normal blocks** is
+No numerical root tolerance or finite-order Taylor truncation is used in the
+terminal proof.
 
-[
-oxed{s_h^{m UV}=O(h^infty).}
-	ag{7A.1}
-]
+---
 
-This is the source entering the residual (N_0)/mixed-saddle normal forms.
+## 14. Final disposition
 
-By contrast, the low-frequency metric Euler residual is the ordinary physical
-Einstein/matter truncation error. Its normalized size need only be (O(h));
-raw it is correspondingly polynomial in (h). It is handled by the physical
-IR metric branch, with metric gauge and propagating/constraint modes retained.
-It must **not** be fed into the UV Hölder estimate.
+The task asked for either
 
-Thus the positive joint theorem factorizes as
+\[
+\texttt{NAKED-STAR-JOINT-PALATINI-SMOOTH-EINSTEIN-BRANCH-CLOSED}
+\]
 
-[
-	ext{physical IR Palatini branch}
-quadoplusquad
-	ext{UV normal correction}.
-]
+or an exact joint no-go.
 
-The present uniqueness task controls the second factor and proves that it does
-not change the continuum coefficient. It does not claim global uniqueness or
-existence of the low-frequency metric solution for arbitrary matter data.
+The exact result is
 
-## 8. Transfer to the metric response
-
-Merged #226 gives a mesh-independent raw Lipschitz bound in the declared finite-stencil chart,
-
-[
-|Delta E_Q|
-le M(ho)|Delta A|,
-	ag{8.1}
-]
-
-and the physical normalization adds only the fixed polynomial loss (h^{-2}).
-
-Thus (7.3) implies
-
-[
-oxed{
-h^{-2}Delta E_Q=O(h^infty).
+\[
+\boxed{
+\texttt{NAKED-STAR-JOINT-PALATINI-LOCAL-UNIQUENESS-NOGO}.
 }
-	ag{8.2}
-]
+\]
 
-Finite connection multivaluedness inside the certified joint normal tube is therefore harmless to the normalized continuum response once the residual sectors have uniform finite Hölder control.
+Reason:
 
-No uniqueness of all (E_K=0) sheets is used.
-
-## 9. Continuum coefficient on the designated joint branch
-
-Merged #216/#223 give, on the smooth approximate/IR branch at a normal-coordinate center,
-
-[
-h^{-2}E_{star,Q}
-=
--rac12G[g]+O(h)
-	ag{9.1}
-]
-
-for each fixed admissible smooth realization.
-
-After the joint normal theorem, (8.2) upgrades this from the approximate sheet to the nearby exact **joint-critical** sheet.
-
-In the sourced convention of this task, combining the gravitational response with the matter Euler source gives the target local residual
-
-[
-oxed{
-E_{star,h}
-longrightarrow
--rac12G+kappa T
+\[
+\boxed{
+\exists\ \text{analytic curved non-gauge }K(z)\to I:
+\quad
+E_K(\eta,K(z))=E_Q(\eta,K(z))=0.
 }
-	ag{9.2}
-]
-
-with the sign/source placement understood in the repository's declared Palatini convention.
-
-The coefficient (-1/2) is not re-fit here. It is inherited from the exact #201 factor (1/4) and E-NJET (E_eta=-2G).
-
-## 9A. Sufficient sourced joint-branch theorem
-
-A sufficient positive theorem can now be stated without an off-shell
-connection selector.
-
-Fix a smooth continuum Palatini/Eintein branch and one admissible fixed smooth
-finite realization. Assume:
-
-1. the owned IR construction supplies the smooth approximate connection with
-   (E_K=O(h^infty));
-2. the physical low-frequency metric/matter variables remain in the declared
-   smooth branch neighborhood;
-3. J1 shows that every UV mixed-saddle null direction not belonging to genuine
-   metric gauge/physical IR data is represented in the finite residual normal
-   sectors handed to J2/J3;
-4. on those sectors the full joint reduced map has a uniform positive
-   Hölder/Łojasiewicz rescue for the UV source (7A.1), with at most a fixed
-   polynomial loss in (h).
-
-Then every exact joint-critical sheet inside the selected Palatini normal tube
-has UV normal displacement
-
-[
-d_{m UV}=O(h^infty).
-]
-
-By #226 its normalized metric partial differs from the smooth approximate
-sheet by (O(h^infty)). Consequently
-
-[
-h^{-2}E_{star,Q}
-=
--rac12G+O(h)+O(h^infty)
-]
-
-on that exact joint-critical sheet.
-
-For two fixed smooth realizations of the same local metric 2-jet, the same
-argument applies separately; both limits equal the same geometric
-(-rac12G(J)). Thus extension independence on the designated **joint**
-branch is recovered without the false all-(E_K)-sheet statement killed by
-#227.
-
-The logical stop condition is J1 item 3: if the worker finds an additional
-physical UV mixed-saddle null sector outside the delegated 4/1/1 normals, that
-sector becomes an explicit blocker and the positive terminal cannot be
-declared merely from the existing nonlinear workers.
-
-## 9B. Conditional joint Palatini closure theorem
-
-The exact logical endpoint can be stated independently of the outstanding
-worker arithmetic.
-
-### Theorem (conditional local joint closure)
-
-Fix one admissible smooth stress-only realization and one observation point.
-Assume the owned IR hypotheses of #216/#223 and the response sensitivity of
-#226. Suppose the physical UV normal bundle admits a finite compact
-stratification such that on every chart:
-
-1. **complete tangent accounting:** the full mixed saddle has been quotiented
-   only by genuine gauge/physical-IR directions; every remaining UV null
-   direction is included in the normal variable \(u\);
-2. **centered analytic model:** after evaluating on the smooth approximate
-   sheet,
-   \[
-   F_h(u)=r_h+\widetilde F_h(u),
-   \qquad
-   r_h=O(h^\infty),
-   \qquad
-   \widetilde F_h(0)=0;
-   \]
-3. **boundary degree:** there is one common normal ball on which
-   \(\widetilde F_h\) has no boundary zero and
-   \[
-   \deg(\widetilde F_h,B,0)\ne0
-   \]
-   for all sufficiently small \(h\), or an equivalent exact existence
-   certificate;
-4. **no physical zero-source germ:** inside that tube,
-   \[
-   \widetilde F_h(u)=0
-   \Longrightarrow
-   u=0
-   \]
-   modulo the declared gauge/physical-flat fiber, uniformly in the compact
-   parameters;
-5. **subanalytic uniformity:** the centered family and its normal distance are
-   subanalytic/analytic on the compact chart, so a finite parameterized
-   Łojasiewicz exponent exists.
-
-Then for all sufficiently small \(h\):
-
-- the exact joint equations have at least one root in the selected tube;
-- every such root satisfies
-  \[
-  u_h=O(h^\infty);
-  \]
-- all such exact roots have normalized gravitational metric response differing
-  from the smooth approximate sheet by \(O(h^\infty)\);
-- hence
-  \[
-  \boxed{
-  h^{-2}E_{\star,Q}
-  =
-  -\frac12G+O(h)+O(h^\infty).
-  }
-  \tag{9B.1}
-  \]
-
-With the task's declared source convention, the corresponding joint
-Einstein/stress residual is the owned \(-\frac12G+\kappa T\) expression.
-
-### Proof
-
-Nonzero degree gives a zero of
-
-\[
-\widetilde F_h(u)=-r_h
 \]
 
-for sufficiently small \(r_h\). By the zero-source isolation and compact
-subanalyticity, a parameterized Łojasiewicz inequality gives
+The selected naked-star joint equations therefore do not by themselves isolate
+the LC-like smooth connection branch.
 
-\[
-\|u\|^N
-\le
-C\|\widetilde F_h(u)\|
-\]
-
-with finite \(N\) after a finite stratification. At an exact root the right
-side is \(C\|r_h\|\), hence \(u_h=O(h^\infty)\). The visible kernel component
-obeys the stronger linear estimate of §5A and can be absorbed into the same
-bound. #226 loses only \(h^{-2}\), so the normalized response difference is
-still \(O(h^\infty)\). The smooth approximate-sheet response is (9.1), proving
-(9B.1). ∎
-
-### What “uniqueness” means here
-
-The theorem does not require a unique finite root. It proves **asymptotic
-physical uniqueness of the smooth joint branch**: every exact joint root in
-the certified tube differs only by \(O(h^\infty)\) in UV normal directions
-(and by explicitly allowed gauge/physical-flat directions). That is the
-amount of uniqueness needed for the local \(J^2\) metric response.
-
-A stronger statement that the finite critical point itself is unique is not
-part of the target and is not required for the Einstein coefficient.
-
-## 10. What would close the positive terminal
-
-The positive terminal
-
-[
-oxed{	exttt{NAKED-STAR-JOINT-PALATINI-SMOOTH-EINSTEIN-BRANCH-CLOSED}}
-]
-
-requires all of the following.
-
-### J1
-
-Worker-owned exact full mixed-saddle census, including:
-
-- (ker H_{AA});
-- (H_{QA}|_{ker H_{AA}});
-- exact (N_0);
-- full (kermathcal H_J);
-- gauge/flat/physical/mixed classification;
-- exact source-visible identification of the #227 tangent.
-
-### J2/J3
-
-For precisely the residual physical sectors with (N_0
-e0):
-
-- diagonal four-dimensional joint germ;
-- both one-dimensional joint germs;
-- exact local isolation or an exact joint-vacuum branch/no-go.
-
-### J4
-
-Torsion is diagnostic only. It may distinguish the designated LC-like branch from #227 but is not an added equation.
-
-### J5/J6
-
-A compact/uniform sourced continuation of the isolated residual germs, sufficient for (7.2), followed by the already-owned #226 response transfer and #216/#223 IR coefficient.
-
-## 11. Exact negative terminal
-
-Any certified non-gauge/non-flat germ
-
-[
-(Q(t),K(t))	o(eta,I),
-qquad
-E_K=0,
-qquad
-E_Q=0,
-]
-
-inside one of the source-invisible physical sectors is a terminal obstruction to the requested local joint uniqueness:
-
-[
-oxed{	exttt{NAKED-STAR-JOINT-PALATINI-LOCAL-UNIQUENESS-NOGO}.}
-]
-
-A connection-stationary branch with (E_Q
-e0), such as #227, is not this no-go.
-
-## 12A. Gate ledger at the current head
-
-| Gate | Current status | Owner |
-|---|---|---|
-| nonlinear metric provenance \(Q=\Theta\eta\Theta^T\) | exact/merged | #208 |
-| IR coefficient \(T_1^{[2]}=\frac14E_\eta\) | exact/merged | #201 |
-| normal-center nonlinear degree-\(\le2\) cancellation | owned | #216/#223 |
-| fixed-realization normalized IR remainder \(O(h)\) | owned | #216/#223 |
-| response sensitivity to \(O(h^\infty)\) link correction | exact/merged | #226 |
-| all-\(E_K\)-sheet branch independence | exact **false** | #227 |
-| #227 tangent source-visible under \(E_Q\) | exact; parent + #227 | #232 |
-| exact sourced suppression of #227 family | exact parent consequence | #232 |
-| abstract full KKT/radical decomposition | exact linear algebra | #232 |
-| exact orbitwise \(N_0\) and full mixed saddle census | **pending** | #231 |
-| two one-dimensional joint residual germs | **pending** | #234 |
-| diagonal four-dimensional invisible joint germ | **pending** | #235 |
-| torsion characterization of #227 | REVIEW / diagnostic only | #233 |
-| slow-background uniform no-Puiseux/Łojasiewicz gate | **open parent gate after workers** | #232 |
-| continuum joint coefficient transfer | conditional on previous row | #201/#216/#223/#226 + #232 |
-
-The task must remain Draft/IN_PROGRESS while any load-bearing pending/open row
-above survives.
-
-## 12. Current boundary
-
-No worker result is silently assumed. At this checkpoint:
-
-- the exact #227 all-sheet obstruction is cut by the joint metric equation at linear order;
-- the parent theorem reduces nonlinear UV pressure to worker-certified source-invisible sectors, subject to the full mixed-saddle valuation cases above;
-- if those sectors admit uniform finite Hölder continuation, smooth UV amplitudes are (O(h^infty));
-- #226 then makes their normalized metric-response effect (O(h^infty));
-- #216/#223 already supply the surviving (-rac12G) coefficient and (O(h)) IR remainder.
-
-The smallest unresolved scientific input is the exact J1 mixed-saddle/source-invisible census, followed by the delegated nonlinear joint germs on its nonzero residual sectors.
+The already-owned IR Einstein coefficient remains intact and may support a
+future **selected-branch or metric-response-only** theorem, but that theorem
+must not be advertised as local uniqueness of the joint Palatini critical set.
