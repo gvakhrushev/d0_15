@@ -227,3 +227,61 @@ is not a substitute source for the missing curved stationary solution.
    incidence directions by assumption.
 3. Feed the now fixed physical action into PR #202 and search the richer
    multi-link stationary sector.
+
+
+## 4. EXACT/CERTIFIED — scoped physical quotient dimension
+
+The generic curved quotient-complete stratum admits two exact separating
+quotient-transverse variations for the declared family
+[
+S_{m trial}=alpha S_{widehatstar}+eta Q(R).
+]
+
+First, on the exact curved star witness, uniform solder scaling keeps the
+residual channel zero and gives
+[
+S_star(lambdaTheta)=-rac23lambda^2,qquad
+left.rac{dS_star}{dlambda}ight|_{lambda=1}=-rac43
+e0.
+]
+
+Second, on the exact nongauge matched edge shift with
+(deltaTheta=(delta b)^lat), the relative solder is fixed, hence the star
+channel is constant, while
+[
+R(t)=tleft(-rac{32}{9},-rac{40}{9},rac83,0ight)^T,
+qquad
+Q_eta(t)=-rac{128}{9}t^2,
+]
+so
+[
+left.rac{dQ_eta}{dt}ight|_{t=1}=-rac{256}{9}
+e0.
+]
+
+Therefore the coefficient-to-Euler map has exact rank two on the declared
+generic curved principal stratum. Since both channels are full-affine invariant
+and the second variation is explicitly outside (operatorname{im}D_L),
+
+[
+oxed{d_A=2,qquad d_E=2,qquad d_{P,mathrm{aff},mathrm{generic}}=2.}
+]
+
+Certificate:
+`02_REGISTRY/research/certificates/a4d_star_qr_physical_survival_check.py`.
+
+This is deliberately **not** the statement that the flat intrinsic quotient has
+dimension 192. At (L=I), (operatorname{rank}D_0=60) and the intrinsic
+quotient remains 196-dimensional; the residual channel is dormant at the seam
+rather than turning the four limiting incidence directions into gauge.
+
+### Current strongest combined statement
+
+On the generic curved resolved-affine principal stratum the selected
+two-channel family survives the true node+Lorentz quotient with
+(d_P=2), while its flat quadratic metric response is nevertheless a
+**single pure Einstein ray** because (Q(R)) starts at tenth order.
+
+Thus action-family dimension two and flat propagating Einstein-ray dimension
+one are compatible: the second channel repairs the affine quotient but is
+auxiliary/dormant in the flat linearized dynamics.
