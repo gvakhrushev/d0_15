@@ -8,6 +8,25 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
 MERGED: PR #181.
 
+Repository: `gvakhrushev/d0_15`
+Base: `main`
+Branch: `wrk/a4d-formalize-cartan-hodge-translation-nogo`
+Primary artifact: `03_FORMALIZATION/D0/Geometry/A4DStarTranslationCartanHodgeNoGo.lean`
+Execution: `GitHub-first`
+
+## Why delegated
+
+This is a bounded formalization of the already merged PR #181 rank obstruction. The work is independently reviewable because the six-parameter ansatz and hostile exact rational inconsistency can be encoded without touching the active resolved-affine research architecture.
+
+## GitHub execution contract
+
+Start only from current `main`; run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-CARTAN-HODGE-TRANSLATION-NOGO` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+
+## Chat handoff
+
+Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
+
+
 ## Objective
 
 Formalize the exact scoped first-Cartan-Hodge translation-rescue obstruction
