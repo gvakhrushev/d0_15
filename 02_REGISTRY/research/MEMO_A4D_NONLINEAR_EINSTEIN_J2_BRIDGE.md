@@ -1,1255 +1,1166 @@
 # MEMO A4D — nonlinear Einstein J² bridge / upper wall
 
-**Task:** `EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE`  
+**Task:** \`EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE\`  
 **Execution:** PR #208  
-**Status:** IN_PROGRESS / exact structural terminal reached  
-**Baseline:** `4c748017c957fa335c9826b123a874c4b2b67925`  
-**Certificate:** `02_REGISTRY/research/certificates/a4d_nonlinear_einstein_j2_bridge_check.py`
+**Status:** exact structural terminal / upper-wall obstruction classified  
+**Baseline:** \`4c748017c957fa335c9826b123a874c4b2b67925\`  
+**Certificate:** \`02_REGISTRY/research/certificates/a4d_nonlinear_einstein_j2_bridge_check.py\`
 
-## 0. Verdict
+## 0. Terminal verdict
 
-The upper wall is substantially narrower than the older provenance packets
-suggested, but it is not yet closed.
+The nonlinear Einstein J² bridge is much narrower than the older provenance
+packets suggested, but it is not unconditionally closed.
 
-Three facts are now separated cleanly.
+The task reaches four load-bearing conclusions.
 
-### Exact positive result 1 — the finite action already owns its nonlinear metric carrier
+### A. The selected finite action already owns a nonlinear metric carrier
 
-On the all-site nondegenerate solder sector, merged nonlinear Lorentz-quotient
-work gives complete orbit coordinates
+On the all-site nondegenerate solder sector, the merged nonlinear Lorentz
+quotient has complete orbit coordinates
 
-[
-Q_x=Theta_xetaTheta_x^T,
-qquad
-K_{x,r}=Theta_xL_{x,r}Theta_{x+r}^{-1}.
-	ag{0.1}
-]
+\[
+Q_x=\Theta_x\eta\Theta_x^T,
+\qquad
+K_{x,r}=\Theta_xL_{x,r}\Theta_{x+r}^{-1}.
+\tag{0.1}
+\]
 
-Thus the metric variable relevant to the star action is not an externally
-invented `LocalSymRoleField`: it is the actual quotient coordinate (Q) of
-the selected finite action.
+Thus the metric variable relevant to the star action is not an external test
+field. It is an exact nonlinear quotient coordinate of the selected finite
+action.
 
-For the full-affine relative-solder branch one analogously has
+For the full-affine relative-solder branch one similarly has
 
-[
-widehatTheta=Theta-b^{lat_n},
-qquad
-widehat Q=widehatThetaetawidehatTheta^T,
-	ag{0.2}
-]
+\[
+\widehat\Theta=\Theta-b^{\flat_n},
+\qquad
+\widehat Q=\widehat\Theta\eta\widehat\Theta^T,
+\tag{0.2}
+\]
 
-and merged #184 gives
-(widehatTheta'=widehatTheta g^{-1}), hence
-(widehat Q'=widehat Q).
+and merged #184 proves
+\(\widehat\Theta'=\widehat\Theta g^{-1}\), hence
+\(\widehat Q'=\widehat Q\).
 
-The old E-PROV statement that no finite metric provenance is owned is therefore
-superseded **for this A4D star-action lane**.  It remains true for the older
-conductance/Laplacian route, but it is no longer the first obstruction here.
+So the old E-PROV statement “finite metric provenance missing” is no longer the
+first blocker for this A4D star-action lane.
 
-### Exact positive result 2 — #201 differentiates the real nonlinear metric quotient
+### B. The #201 Einstein detector differentiates that genuine metric quotient
 
-Let (H) denote the matrix whose rows are the perturbations of the four solder
-vectors.  At flat solder,
+Let \(H\) be the \(4\times4\) matrix whose rows are the perturbations of the
+four solder vectors. At flat solder,
 
-[
-D Q_{m flat}[H]
-=
-Heta+eta H^T.
-	ag{0.3}
-]
+\[
+DQ_{\rm flat}[H]=H\eta+\eta H^T.
+\tag{0.3}
+\]
 
-For an arbitrary symmetric metric perturbation (q=q^T), the lift used in the
-merged #201 Einstein detector is exactly
+For an arbitrary symmetric metric perturbation \(q=q^T\), #201 uses exactly
 
-[
-oxed{
-H(q)=rac12 qeta .
+\[
+\boxed{
+H(q)=\frac12q\eta .
 }
-	ag{0.4}
-]
+\tag{0.4}
+\]
 
-Since (eta^2=I),
+Since \(\eta^2=I\),
 
-[
-oxed{
-D Q_{m flat}[H(q)]
-=
-rac12qetaeta
-+
-rac12etaeta q^T
-=q.
+\[
+\boxed{
+DQ_{\rm flat}[H(q)]=q.
 }
-	ag{0.5}
-]
+\tag{0.5}
+\]
 
-Thus the ten-dimensional basis used by #201 is an exact section of the
-differential of the genuine nonlinear quotient map.  The theorem
+Therefore the merged exact identity
 
-[
-K_{star,mathrm{metric}}(k)
-=
-rac14K_{E_eta}(k),
-qquad
-c_{m sp}=0,
-	ag{0.6}
-]
-
-is therefore a theorem about the tangent response of the actual nonlinear
-metric orbit coordinate, not a fit to an unrelated test carrier.
-
-### Exact negative result — global finite connection elimination fails at a diagonal quarter-wave mode
-
-The L=2 pressure test uses self-conjugate characters (z_r=pm1).  For a
-general complex Fourier character the real quadratic action must instead be
-**polarized** between mode (z) and mode (z^{-1}).
-
-After performing that polarization exactly, restrict to the diagonal character
-
-[
-z_A=z_B=z_C=z_D=t.
-	ag{0.7}
-]
-
-The resulting flat Lorentz-connection block obeys
-
-[
-oxed{
-det H_{AA}^{m pol}(t)
-=
-rac{(t^2+1)^{12}}{16t^{12}}.
+\[
+\boxed{
+K_{\star,\mathrm{metric}}(k)=\frac14K_{E_\eta}(k),
+\qquad
+c_{\rm sp}=0
 }
-	ag{0.8}
-]
+\tag{0.6}
+\]
+
+is a statement about the tangent response of the actual nonlinear metric
+orbit coordinate, not a fit to an unrelated stencil carrier.
+
+### C. Low momentum is regular, but global all-mode connection elimination fails
+
+For a general complex Fourier character a real quadratic action pairs mode
+\(z\) with mode \(z^{-1}\). The present certificate performs that polarization
+explicitly.
+
+On the diagonal character
+
+\[
+z_A=z_B=z_C=z_D=t,
+\tag{0.7}
+\]
+
+the correctly polarized flat Lorentz-connection block satisfies
+
+\[
+\boxed{
+\det H_{AA}^{\rm pol}(t)
+=
+\frac{(t^2+1)^{12}}{16t^{12}}.
+}
+\tag{0.8}
+\]
 
 At zero momentum,
 
-[
-oxed{
-det H_{AA}^{m pol}(1)=256,
+\[
+\boxed{
+\det H_{AA}^{\rm pol}(1)=256,
 }
-	ag{0.9}
-]
+\tag{0.9}
+\]
 
-so the low-momentum connection block is regular.
+so the low-momentum auxiliary connection is regular.
 
-But on the first quarter-wave character
+At the first diagonal quarter-wave,
 
-[
-t=i
-	ag{0.10}
-]
+\[
+t=i,
+\tag{0.10}
+\]
 
-(which exists already for side length (L=4), i.e. (N=2)),
+which occurs already for side length \(L=4\) (\(N=2\)),
 
-[
-oxed{
-ank H_{AA}^{m pol}=16.
+\[
+\boxed{
+\rank H_{AA}^{\rm pol}=16.
 }
-	ag{0.11}
-]
+\tag{0.11}
+\]
 
-This is not merely an undetermined auxiliary connection.  Let
-(H_{Aq}) be the source obtained after restricting the coframe perturbation
-to the ten genuine symmetric metric directions of (0.4).  At the same
-quarter-wave,
+More strongly, if \(H_{Aq}\) denotes the connection source restricted to the
+ten genuine symmetric metric directions from (0.4), then
 
-[
-oxed{
-ank[, (H_{AA}^{m pol})^Tmid H_{Aq},]=20.
+\[
+\boxed{
+\rank\!\left[
+(H_{AA}^{\rm pol})^T\mid H_{Aq}
+\right]
+=20.
 }
-	ag{0.12}
-]
+\tag{0.12}
+\]
 
-Hence the linearized connection Euler equation is incompatible for some
-metric perturbations.
+Thus the problem is not merely nonuniqueness: some metric perturbations violate
+the Fredholm compatibility condition for the linearized connection equation.
 
-An explicit Fredholm witness is supported on the three boost coordinates of
-the Role-A connection:
+An explicit witness is supported on the three Role-A boost coordinates,
 
-[
-lambda_{(A,K_1)}
+\[
+\lambda_{(A,K_1)}
 =
-lambda_{(A,K_2)}
+\lambda_{(A,K_2)}
 =
-lambda_{(A,K_3)}
+\lambda_{(A,K_3)}
 =1,
-	ag{0.13}
-]
+\tag{0.13}
+\]
 
-with all other entries zero.  It satisfies
+all other components zero. Exactly,
 
-[
-H_{AA}^{m pol}lambda=0,
-	ag{0.14}
-]
+\[
+H_{AA}^{\rm pol}\lambda=0,
+\tag{0.14}
+\]
 
-so (lambda^T) is a left null vector of the connection equation block
-((H_{AA}^{m pol})^T), but on the metric basis element (q_{11}),
+while for the symmetric metric basis direction \(q_{11}\),
 
-[
-oxed{
-lambda^TH_{Aq}(q_{11})
-=
--(1+i)
-e0.
+\[
+\boxed{
+\lambda^TH_{Aq}(q_{11})=-(1+i)\ne0.
 }
-	ag{0.15}
-]
+\tag{0.15}
+\]
 
-The complex character is only Fourier notation.  Combining this mode with
-its conjugate (t=-i) gives the corresponding real sine/cosine obstruction.
+The complex character is only Fourier notation. The conjugate mode \(t=-i\)
+gives the corresponding real sine/cosine obstruction.
 
-Therefore there is no smooth **all-mode** finite map
+Therefore there is no single smooth **all-mode** finite section
 
-[
+\[
 K_*(Q)
-	ag{0.16}
-]
+\tag{0.16}
+\]
 
-through the flat configuration whose differential solves the connection Euler
-equation for every finite metric perturbation on every refinement carrier.
+through flat that solves the connection Euler equation for every finite metric
+perturbation on every refinement carrier.
 
-The first upper-wall obstruction is consequently
+The exact terminal obstruction is
 
-[
-oxed{
-	exttt{STAR-FINITE-METRIC-ELIMINATION-HAS-DIAGONAL-QUARTER-WAVE-CONNECTION-RESONANCE}.
+\[
+\boxed{
+\texttt{STAR-J2-BRIDGE-BLOCKED-BY-DIAGONAL-QUARTER-WAVE-CONNECTION-RESONANCE}.
 }
-	ag{0.17}
-]
+\tag{0.17}
+\]
 
-This is sharper than the older generic statement
-“frame erasure / reconstruction missing”.
+### D. The surviving continuum branch is sharply identified
+
+The resonance is ultraviolet: it sits at fixed lattice phase \(\pi/2\), while
+the low-momentum point \(t=1\) remains regular.
+
+Hence this result does **not** kill the continuum Einstein route. It kills the
+naive route that first integrates the connection smoothly on the entire finite
+metric carrier and only then takes the continuum limit.
+
+The surviving route is:
+
+\[
+\boxed{
+\text{smooth metric sampling}
+\;\to\;
+\text{selected low-frequency connection branch}
+\;\to\;
+\text{uniform normal-stencil control}
+\;\to\;
+J^2\text{ metric response}.
+}
+\tag{0.18}
+\]
+
+The smallest missing theorem is named below as **H-J2-SMOOTH**.
 
 ---
 
-## 1. What is already exact before the continuum step---
+## 1. Exact nonlinear metric/connection geometry already owned
 
-## 1. What is already exact before the continuum step
+### 1.1 Lorentz quotient
 
-### 1.1 Nonlinear Lorentz quotient
+Merged nonlinear quotient work proves exact local proper-Lorentz invariance of
+the star density and a free proper quotient on nondegenerate solder.
 
-Merged nonlinear quotient work proves exact finite local-Lorentz invariance of
-the star density and, on nondegenerate solder, a free proper action with
-complete coordinates (0.1).
+The descended action may therefore be written locally as
 
-The descended star action may therefore be written locally as
+\[
+\overline S_\star(Q,K).
+\tag{1.1}
+\]
 
-[
-overline S_star(Q,K).
-	ag{1.1}
-]
+No continuum manifold is used in this statement.
 
-No choice of continuum geometry enters this statement.
+### 1.2 Exact metric compatibility of the dressed link
 
-Moreover, because each linear link is Lorentz,
+Because each linear link is Lorentz,
 
-[
-L_{x,r}eta L_{x,r}^T=eta,
-	ag{1.2}
-]
+\[
+L_{x,r}\eta L_{x,r}^T=\eta,
+\tag{1.2}
+\]
 
-the dressed connection satisfies the exact metric-compatibility identity
+the dressed link obeys
 
-[
-egin{aligned}
+\[
+\begin{aligned}
 K_{x,r}Q_{x+r}K_{x,r}^T
 &=
-Theta_xL_{x,r}Theta_{x+r}^{-1}
-left(Theta_{x+r}etaTheta_{x+r}^Tight)
-Theta_{x+r}^{-T}L_{x,r}^TTheta_x^T\
+\Theta_xL_{x,r}\Theta_{x+r}^{-1}
+(\Theta_{x+r}\eta\Theta_{x+r}^T)
+\Theta_{x+r}^{-T}L_{x,r}^T\Theta_x^T\\
 &=
-Theta_xL_{x,r}eta L_{x,r}^TTheta_x^T\
+\Theta_xL_{x,r}\eta L_{x,r}^T\Theta_x^T\\
 &=
 Q_x.
-end{aligned}
-	ag{1.3}
-]
-
-Thus (K) is an exact finite (Q)-isometry transport.
-
-This is a real nonlinear metric/connection pair.  It is not yet a discrete
-Levi-Civita pair because merged variation pressure explicitly disproves the
-naive finite torsion-free identification.
-
-### 1.2 Flat stationarity
-
-For flat solder and flat links,
-
-[
-Q=eta,qquad K=I,
-	ag{1.4}
-]
-
-and merged star-variation work proves
-
-[
-dS_star|_{m flat}=0.
-	ag{1.5}
-]
-
-Therefore an eventual metric-only continuum response of the naked star branch
-must vanish on the flat metric.
-
-### 1.3 Flat metric Hessian
-
-After exact Schur elimination in the low-momentum chart, #201 proves
-
-[
-oxed{
-D^2S_{star,mathrm{eff}}|_{m flat}
-=
-rac14K_{E_eta}.
-}
-	ag{1.6}
-]
-
-No (E_{m sp}) component remains.
-
-### 1.4 Joint-residual completion does not alter this gate
-
-Merged #201 also gives
-
-[
-R=O(X^4t),
-qquad
-Q_R=O(X^8t^2),
-	ag{1.7}
-]
-
-and under simultaneous near-flat scaling
-
-[
-R=O(arepsilon^5),
-qquad
-Q_R=O(arepsilon^{10}).
-	ag{1.8}
-]
+\end{aligned}
+\tag{1.3}
+\]
 
 Hence
 
-[
-j^2_{m flat}Q_R=0.
-	ag{1.9}
-]
+\[
+\boxed{
+K_{x,r}Q_{x+r}K_{x,r}^T=Q_x.
+}
+\tag{1.4}
+\]
 
-The quotient-completion channel cannot modify the derivative coefficient found
-in (1.6).
+So \(K\) is an exact finite \(Q\)-isometry transport.
+
+This is not yet a finite Levi-Civita theorem. Merged variation pressure
+explicitly disproves the shortcut that identifies the exact finite connection
+Euler equation with the naive forward torsion-free equation.
+
+### 1.3 Flat stationarity
+
+At flat solder and flat links,
+
+\[
+Q=\eta,\qquad K=I,
+\tag{1.5}
+\]
+
+and merged star-variation work proves
+
+\[
+dS_\star|_{\rm flat}=0.
+\tag{1.6}
+\]
+
+Thus any continuum response of the naked star branch must vanish on the flat
+metric.
+
+### 1.4 Joint-residual completion does not change the flat J² gate
+
+Merged #201 gives
+
+\[
+R=O(X^4t),
+\qquad
+Q_R=O(X^8t^2),
+\tag{1.7}
+\]
+
+and, if both connection defect and translation scale as \(O(\varepsilon)\),
+
+\[
+R=O(\varepsilon^5),
+\qquad
+Q_R=O(\varepsilon^{10}).
+\tag{1.8}
+\]
+
+Therefore
+
+\[
+\boxed{
+j^2_{\rm flat}Q_R=0.
+}
+\tag{1.9}
+\]
+
+The affine quotient completion cannot modify the coefficient in (0.6).
 
 ---
 
-## 2. Why the #201 metric basis is the correct nonlinear tangent
-
-The distinction between raw coframe rows and solder vectors matters.
+## 2. Why the #201 metric lift is intrinsic
 
 The owned solder vector is
 
-[
-v_r=etaTheta_r^T.
-	ag{2.1}
-]
+\[
+v_r=\eta\Theta_r^T.
+\tag{2.1}
+\]
 
-Let (H) be the matrix whose (r)-th row is ((delta v_r)^T).
-Then
+If \(H\) stores \((\delta v_r)^T\) as rows, then
 
-[
-H=deltaTheta,eta,
-qquad
-deltaTheta=Heta.
-	ag{2.2}
-]
+\[
+H=\delta\Theta\,\eta,
+\qquad
+\delta\Theta=H\eta.
+\tag{2.2}
+\]
 
-At (Theta=eta),
+At \(\Theta=\eta\),
 
-[
-Q=ThetaetaTheta^T=eta
-	ag{2.3}
-]
+\[
+Q=\Theta\eta\Theta^T=\eta
+\tag{2.3}
+\]
 
 and
 
-[
-delta Q
+\[
+\delta Q
 =
-deltaTheta+deltaTheta^T
+\delta\Theta+\delta\Theta^T
 =
-Heta+eta H^T.
-	ag{2.4}
-]
+H\eta+\eta H^T.
+\tag{2.4}
+\]
 
-Equation (0.4) is therefore a literal right inverse of (DQ_{m flat}).
+The exact section (0.4) follows.
 
-Any two lifts of the same symmetric (q) differ by a tangent in the kernel of
-the Gram map, i.e. a local Lorentz vertical direction on the nondegenerate
-orbit.  Exact finite local-Lorentz invariance makes the induced quotient
-Hessian independent of that choice.
+Any two lifts of the same symmetric \(q\) differ by a tangent in the kernel of
+the Gram map, i.e. by a local-Lorentz vertical direction on the nondegenerate
+orbit.
 
-This also shows that the quarter-wave incompatibility (0.16) is not an artifact
-of a bad coframe section.  Adding a Lorentz vertical changes the connection
-source only by an (H_{AA})-image vector because the full gauge tangent is a
-Hessian null vector.  The left-null pairing (0.16) is therefore unchanged.
+Because the finite action is exactly local-Lorentz invariant, the quotient
+metric Hessian is independent of this section choice.
+
+The quarter-wave incompatibility is likewise not removed by changing section:
+a Lorentz-vertical change of coframe changes the connection source only by an
+image vector of the connection block, while the Fredholm pairing (0.15)
+detects its cokernel class.
 
 ---
 
-## 3. Correct Fourier polarization and the first refinement resonance
+## 3. Correct Fourier polarization and the first resonance
 
-The original L=2 pressure packet checked characters (z_r=pm1).  Those
-characters are self-conjugate, so the quadratic form may be evaluated on one
-mode directly.
+The period-two pressure test used only \(z_r=\pm1\). Those characters are
+self-conjugate.
 
-For a general unit character (z), this shortcut is invalid: a real periodic
-quadratic action pairs the (z) amplitude with the (z^{-1}) amplitude.
-The present certificate therefore introduces independent connection
-amplitudes (A(z)) and (B(z^{-1})), expands every plaquette to the mixed
-bilinear order, and extracts the polarized block (H_{AA}^{m pol}(z)).
+For a general unit character, using the same-mode quadratic expression is not
+valid. A real periodic quadratic action pairs \(z\) with \(z^{-1}\).
 
-A full four-variable determinant classification is **not claimed** here.
-The exact hostile slice needed for the bridge is already decisive:
+The certificate therefore introduces independent connection amplitudes
+\(A(z)\) and \(B(z^{-1})\), expands each plaquette to the mixed bilinear order,
+and extracts the polarized block \(H_{AA}^{\rm pol}(z)\).
 
-[
-z_A=z_B=z_C=z_D=t.
-	ag{3.1}
-]
+This task does **not** claim a complete four-variable singular-set
+classification.
 
-On this slice,
+The diagonal slice
 
-[
-oxed{
-det H_{AA}^{m pol}(t)
+\[
+z_A=z_B=z_C=z_D=t
+\tag{3.1}
+\]
+
+is already enough to decide the all-mode-elimination question. On that slice,
+
+\[
+\boxed{
+\det H_{AA}^{\rm pol}(t)
 =
-rac{(t^2+1)^{12}}{16t^{12}}.
+\frac{(t^2+1)^{12}}{16t^{12}}.
 }
-	ag{3.2}
-]
+\tag{3.2}
+\]
+
+Hence
+
+\[
+\det H_{AA}^{\rm pol}(1)=256,
+\tag{3.3}
+\]
+
+but
+
+\[
+\det H_{AA}^{\rm pol}(i)=0.
+\tag{3.4}
+\]
+
+At \(t=i\), the rank and metric-source incompatibility are exactly (0.11) and
+(0.12).
+
+Therefore:
+
+- the Einstein low-momentum symbol is not threatened;
+- the auxiliary connection is not globally eliminable on the full finite
+  metric carrier;
+- the first certified obstruction appears already at \(L=4\);
+- the obstruction is ultraviolet in a refinement interpretation.
+
+---
+
+## 4. Local implicit elimination survives only in regular sectors
+
+At a fixed regular character, invertibility of the connection derivative lets
+the ordinary finite-dimensional implicit-function theorem solve
+
+\[
+E_K(Q,K)=0
+\quad\Longrightarrow\quad
+K=K_*(Q)
+\tag{4.1}
+\]
+
+near flat.
+
+On such a branch define
+
+\[
+S_{\star,\mathrm{eff}}(Q)
+=
+\overline S_\star(Q,K_*(Q)).
+\tag{4.2}
+\]
+
+Its quadratic Hessian is the Schur complement.
+
+Near zero momentum this is precisely the object used in #201 and gives
+
+\[
+D^2S_{\star,\mathrm{eff}}|_{\rm flat}
+=
+\frac14K_{E_\eta}.
+\tag{4.3}
+\]
+
+At the diagonal quarter-wave the derivative with respect to the connection is
+singular and the source is not in its image.
+
+A pseudoinverse does not repair this, because the equation is genuinely
+incompatible for some metric directions.
+
+Nor may the new null directions simply be called gauge: the actual finite
+local-Lorentz verticals involve correlated coframe and connection variations.
+The Fredholm obstruction is already computed on the metric quotient.
+
+---
+
+## 5. Why a flat tangent can still control a full nonlinear J² limit
+
+Let \(g\) be a fixed smooth Lorentz metric, \(x\in T^4\), and use strict
+\(g\)-normal coordinates at \(x\). Then
+
+\[
+g_{ab}(x)=\eta_{ab},
+\qquad
+\partial_cg_{ab}(x)=0.
+\tag{5.1}
+\]
+
+For mesh
+
+\[
+\varepsilon_N=(N+2)^{-1}
+\tag{5.2}
+\]
+
+and any fixed radius-two offset \(k\),
+
+\[
+g_{ab}(\varepsilon_Nk)-\eta_{ab}
+=
+\frac12
+\partial_c\partial_dg_{ab}(x)
+\,\varepsilon_N^2k^ck^d
++
+O(\varepsilon_N^3).
+\tag{5.3}
+\]
 
 Thus
 
-[
-det H_{AA}^{m pol}(1)=256,
-	ag{3.3}
-]
-
-while
-
-[
-det H_{AA}^{m pol}(i)=0.
-	ag{3.4}
-]
-
-At (t=i),
-
-[
-ank H_{AA}^{m pol}=16
-	ag{3.5}
-]
-
-and the genuine metric source violates the compatibility condition as in
-(0.12)–(0.15).
-
-Consequences:
-
-1. the low-momentum point (t=1) remains regular;
-2. the first exact failure occurs at the (L=4) diagonal quarter-wave;
-3. the obstruction sits at fixed lattice phase (pi/2), so it is ultraviolet
-   relative to a refinement limit;
-4. no claim is made that this diagonal slice exhausts all singular characters.
-
-The obstruction is already sufficient to kill a single smooth all-mode
-connection elimination on the full finite metric carrier.
-
----
-
-## 4. The finite local implicit-function branch exists only in the regular sector---
-
-## 4. The finite local implicit-function branch exists only in the regular sector
-
-At a fixed finite carrier and a regular connection character, invertibility of
-(H_{AA}) allows the ordinary finite-dimensional implicit-function theorem to
-solve the connection Euler equation locally:
-
-[
-E_K(Q,K)=0
-quadLongrightarrowquad
-K=K_*(Q).
-	ag{4.1}
-]
-
-On that branch,
-
-[
-S_{star,mathrm{eff}}(Q)
-=
-overline S_star(Q,K_*(Q)).
-	ag{4.2}
-]
-
-Its quadratic Hessian is the usual Schur complement.
-
-Near zero momentum this is precisely the object computed in #201.
-
-However the quarter-wave result proves that (4.1) cannot be promoted to one
-smooth section on the **full** finite metric field space at all refinement
-levels.  At (L=4) the derivative with respect to (K) is singular and the
-metric source fails its Fredholm compatibility condition.
-
-A pseudoinverse does not repair this: the problem is not only nonuniqueness,
-
-[
-H_{AA}a=-H_{Aq}q
-	ag{4.3}
-]
-
-is genuinely insoluble for some (q).
-
-Likewise, declaring the offending connection modes gauge is not licensed:
-pure connection nulls at fixed metric are not the local-Lorentz vertical
-directions, and the explicit metric-source incompatibility survives changing
-the metric lift by a Lorentz vertical.
-
----
-
-## 5. The surviving continuum route is a smooth-sampling / low-frequency route
-
-The resonance does **not** yet prove that the continuum Einstein bridge is
-impossible.
-
-It changes the kind of theorem required.
-
-Let (g) be a fixed smooth Lorentz metric, (xin T^4), and choose strict
-(g)-normal coordinates at (x).  Then
-
-[
-g_{ab}(x)=eta_{ab},
-qquad
-partial_cg_{ab}(x)=0.
-	ag{5.1}
-]
-
-For a radius-two stencil with
-
-[
-arepsilon_N=(N+2)^{-1},
-	ag{5.2}
-]
-
-Taylor expansion gives, for every fixed stencil offset (k),
-
-[
-g_{ab}(arepsilon_N k)-eta_{ab}
-=
-rac12
-partial_cpartial_dg_{ab}(x)
-,arepsilon_N^2k^ck^d
-+
-O(arepsilon_N^3).
-	ag{5.3}
-]
-
-Therefore
-
-[
-oxed{
-q_N=O(arepsilon_N^2)
+\[
+\boxed{
+q_N=O(\varepsilon_N^2)
 }
-	ag{5.4}
-]
+\tag{5.4}
+\]
 
-on the shrinking normal stencil for **arbitrary finite metric 2-jet**.  No
-weak-field assumption on the curvature is used.
+on the shrinking normal stencil for an arbitrary finite Lorentz metric
+2-jet.
 
-This is the key mechanism by which a flat derivative can control a nonlinear
-continuum response.
+No weak-field assumption on curvature is used.
 
-### Required smooth-sector theorem
+This is the mechanism that can turn the exact flat derivative into a full
+nonlinear continuum-center statement: on every shrinking normal stencil the
+finite metric perturbation itself becomes small.
 
-What is still missing is an owner establishing an asymptotic connection/effective
-response branch on these smooth samples despite the exact UV resonances.
+What is missing is uniform control of the **actual selected star response**
+through the connection sector.
 
-A sufficient version is:
+---
 
-> **H-J2-SMOOTH.** For every smooth Lorentz metric and admissible normal frame,
-> there exists a selected finite connection family (K_N[g,F]) on the sampled
-> star action such that:
+## 6. H-J2-SMOOTH — the single surviving upper-wall theorem
+
+A sufficient bridge theorem is:
+
+> **H-J2-SMOOTH.** For every smooth Lorentz metric \(g\), point \(x\), and
+> admissible strict normal frame \(F\), there exists a selected finite
+> connection family \(K_N[g,F]\) for the sampled star action such that:
 >
-> 1. its low-frequency part is the regular branch of the connection Euler
->    equation through (K=I);
-> 2. any quarter-wave/resonant component is absent, canonically resolved, or
->    contributes (o(arepsilon_N^2)) to the normalized metric Euler response;
-> 3. the connection-reduced star response is uniformly (C^2) in the
->    (q_N=O(arepsilon_N^2)) normal-stencil regime after the unique
->    (arepsilon_N^{-2}) normalization that keeps the quadratic Einstein
->    response finite;
-> 4. its Taylor remainder is (O(arepsilon_N^2)) after response
->    normalization.
+> 1. its infrared component agrees with the regular connection-Euler branch
+>    through \(K=I\);
+> 2. the certified quarter-wave/resonant sector is either absent on the
+>    selected smooth-sampling image, canonically resolved, or contributes
+>    \(o(1)\) to the reconstructed normalized metric response;
+> 3. after the unique \(\varepsilon_N^{-2}\) normalization that keeps the
+>    quadratic Einstein response finite, the connection-reduced response is
+>    uniformly \(C^2\) in the normal-stencil regime
+>    \(q_N=O(\varepsilon_N^2)\);
+> 4. the normalized Taylor remainder beyond the #201 derivative is
+>    \(O(\varepsilon_N^2)\);
+> 5. the resulting center response depends, in the limit, only on the ordinary
+>    metric \(2\)-jet.
 
 Under H-J2-SMOOTH,
 
-[
-mathcal E_{star,N}(q_N)
+\[
+\mathcal E_{\star,N}(q_N)
 =
-rac14E_{eta,N}(q_N)
+\frac14E_{\eta,N}(q_N)
 +
-O(arepsilon_N^2)
-	ag{5.5}
-]
+O(\varepsilon_N^2).
+\tag{6.1}
+\]
 
-after geometric reconstruction.
+The already-owned E-NJET result gives
 
-The existing E-NJET theorem then gives
-
-[
-E_{eta,N}
-longrightarrow
--2G[g]
-+
-O(arepsilon_N^2),
-	ag{5.6}
-]
-
-hence
-
-[
-oxed{
-mathcal E_{star,N}
-longrightarrow
--rac12G[g].
-}
-	ag{5.7}
-]
-
-This is the shortest surviving upper-wall route.
-
-The missing statement is not another coefficient fit and not another
-linearized operator classification.  It is the smooth-sector control needed
-to pass around the exact UV resonances.
-
----
-
-## 6. Why this smooth-sector hypothesis is logically necessary
-
-The flat derivative by itself cannot determine a nonlinear continuum response.
-
-As a hostile logical control, take any finite response with the same derivative
-as #201 and add a local nonlinear term schematically of the form
-
-[
-Delta E_N(q)
+\[
+E_{\eta,N}
 =
-alpha,
-arepsilon_N^{-4}
-left(operatorname{tr}_eta qight)^2
-q_{m grid}.
-	ag{6.1}
-]
+-2G[g](x)
++
+O(\varepsilon_N^2)
+\tag{6.2}
+\]
 
-For each fixed (N),
-
-[
-Delta E_N(0)=0,
-qquad
-DDelta E_N(0)=0.
-	ag{6.2}
-]
-
-Thus it is invisible to every flat Hessian / first-response test.
-
-But on a normal sample (q_N=O(arepsilon_N^2)),
-
-[
-Delta E_N(q_N)=O(1)
-	ag{6.3}
-]
-
-and can survive as an explicitly grid-dependent continuum term.
-
-This is not proposed as a new D0 action.  It is a counterexample to the
-**inference rule** “correct flat derivative implies correct nonlinear J²
-limit”.
-
-Therefore a uniform higher-order scaling theorem for the actual selected star
-response is load-bearing.
-
-The explicit quarter-wave resonance shows exactly where such a theorem can
-fail if one tries to obtain it by naive all-mode implicit elimination.
-
----
-
-## 7. Relation to the typed T⁴ bridge
-
-The older E-FRAME packet located the first failure at missing typed sampling and
-response reconstruction maps.
-
-That failure has since been repaired at the type level.
-
-Current main contains:
-
-- `D0.Bridge.T4TypedGeometry`: an actual smooth Lorentz metric package on
-  fixed (T^4);
-- `D0.Bridge.T4LocalRoleFrame`: local Role-labelled smooth frames and
-  radius-two stencil geometry;
-- `D0.Bridge.T4ResponseReconstruction`: literal metric sampling into
-  `SymRoleTensor), pointwise reconstruction into a geometric symmetric
-  covariant two-tensor, and the response pullback square.
-
-These objects prove metric-plus-frame covariance.
-
-They do not prove frame erasure.
-
-For the present star lane the first missing map is no longer
-“how to sample a metric at all”.  The finite action already supplies the
-nonlinear metric coordinate (Q), and T4 reconstruction supplies the target
-tensor type.
-
-The first missing **dynamical** theorem is H-J2-SMOOTH.
-
----
-
-## 8. Frame/grid erasure after the smooth-sector bridge
-
-If (5.7) is established for every strict normal frame, frame erasure follows
-without a new finite symmetry.
-
-For two (g_x)-orthonormal normal frames (F,F'),
-
-[
--rac12G[g](x)
-	ag{8.1}
-]
-
-is one geometric tensor in (S^2T_x^*T^4).
-
-The existing reconstruction map compares the finite Role components in this
-common tensor fibre.
+after geometric reconstruction in normal coordinates.
 
 Therefore
 
-[
-lim_N
-left(
-R_x^{F,mathrm{resp}}mathcal E_{star,N}
+\[
+\boxed{
+\mathcal E_{\star,N}
+\longrightarrow
+-\frac12G[g].
+}
+\tag{6.3}
+\]
+
+So if H-J2-SMOOTH is proved, the coefficient problem is already finished.
+
+---
+
+## 7. Why H-J2-SMOOTH is logically load-bearing
+
+A correct flat derivative alone does not determine a nonlinear continuum
+response.
+
+As a hostile logical control, consider adding to some finite response a local
+term of schematic form
+
+\[
+\Delta E_N(q)
+=
+\alpha\,
+\varepsilon_N^{-4}
+(\operatorname{tr}_\eta q)^2
+q_{\rm grid}.
+\tag{7.1}
+\]
+
+For each fixed \(N\),
+
+\[
+\Delta E_N(0)=0,
+\qquad
+D\Delta E_N(0)=0.
+\tag{7.2}
+\]
+
+It is invisible to every flat linear detector.
+
+But for \(q_N=O(\varepsilon_N^2)\),
+
+\[
+\Delta E_N(q_N)=O(1),
+\tag{7.3}
+\]
+
+so it can survive in the continuum and retain grid data.
+
+This is not proposed as a D0 action term. It is a counterexample to the
+inference rule “correct flat derivative implies correct nonlinear J² limit”.
+
+Therefore a uniform higher-order scaling theorem for the **actual** selected
+star response is indispensable.
+
+The quarter-wave result identifies a concrete place where a naive proof by
+global finite implicit elimination breaks.
+
+---
+
+## 8. Typed T⁴ reconstruction is no longer the first blocker
+
+The older E-FRAME packet located the first failure at missing typed sampling
+and response reconstruction.
+
+Current main already contains:
+
+- \`D0.Bridge.T4TypedGeometry\`;
+- \`D0.Bridge.T4LocalRoleFrame\`;
+- \`D0.Bridge.T4ResponseReconstruction\`.
+
+These provide:
+
+- an actual fixed smooth \(T^4\);
+- a Lorentz metric package;
+- Role-labelled local frames;
+- the radius-two mesh \(\varepsilon_N=(N+2)^{-1}\);
+- literal sampling of a smooth metric into finite symmetric Role components;
+- reconstruction of a finite symmetric response into
+  \(S^2T_x^*T^4\);
+- the metric-plus-frame pullback square.
+
+These constructions do not prove frame erasure, but the type-level
+reconstruction gap is no longer the earliest failure.
+
+For the present star lane the first missing **dynamical** theorem is
+H-J2-SMOOTH.
+
+---
+
+## 9. Frame erasure and local-Diff naturality after H-J2-SMOOTH
+
+If (6.3) holds for every strict normal frame, then two orthonormal normal
+frames \(F,F'\) reconstruct the same geometric tensor
+
+\[
+-\frac12G[g](x).
+\tag{9.1}
+\]
+
+Hence
+
+\[
+\lim_N
+\left(
+R_x^{F,\mathrm{resp}}\mathcal E_{\star,N}
 -
-R_x^{F',mathrm{resp}}mathcal E_{star,N}
-ight)
-=
-0.
-	ag{8.2}
-]
+R_x^{F',\mathrm{resp}}\mathcal E_{\star,N}
+\right)
+=0.
+\tag{9.2}
+\]
 
-The old (E_{m sp}) hostile control cannot reappear in this limit because
-#201 already gives its exact finite flat coefficient as zero, and E-RAYSEL
-independently shows that any surviving (E_{m sp}) continuum component
-would retain a preferred timelike projector and fail metric-only descent.
+Frame/grid data erase in the limit.
 
-Thus no extra finite Role symmetry needs to be invented.
+The existing T4 pullback square then promotes this frame-erased response to
+ordinary local-Diff naturality:
 
----
+\[
+E[\phi^*g]=\phi^*E[g].
+\tag{9.3}
+\]
 
-## 9. Local-Diff naturality
+No new finite Role symmetry needs to be postulated.
 
-The T4 reconstruction packets already own the correct pullback square for
-metric-plus-frame sampling/reconstruction.
-
-If the smooth-sector limit is frame-erased as in §8, then the frame label
-drops out and the limiting map factors through the ordinary metric jet.
-
-For local diffeomorphisms (phi),
-
-[
-E[phi^*g]
-=
-phi^*E[g].
-	ag{9.1}
-]
-
-Hence the desired local-Diff naturality follows from:
-
-1. the existing exact pullback square for the framed sampler/reconstructor;
-2. existence of the smooth-sector limit;
-3. frame/grid erasure.
-
-Again the first new dynamical input is H-J2-SMOOTH.
+The independent E-RAYSEL hostile control remains consistent with this:
+a surviving \(E_{\rm sp}\) term would retain a preferred timelike projector and
+fail metric-only frame erasure, while #201 already gives its finite flat
+coefficient as exactly zero.
 
 ---
 
-## 10. Arbitrary Lorentz 2-jets, not one normal-frame sample
+## 10. Full Lorentz \(J^2\), not a special normal-frame subclass
 
-Normal coordinates do not restrict the second metric derivatives.
+Normal coordinates remove first derivatives at the center but do not restrict
+the metric second derivatives.
 
-At the center they kill the first derivatives only.
+The previously audited fixed-T4 realization result shows that every formal
+Lorentz metric \(2\)-jet at a point can be realized by a smooth Lorentz metric
+on the same \(T^4\), using a bump-supported perturbation while preserving
+signature.
 
-The previously audited fixed-T4 realization theorem states that every formal
-Lorentzian metric 2-jet at a point of (T^4) can be realized by a global smooth
-Lorentz metric using a bump-supported perturbation of a constant background
-while preserving signature.
+Therefore a statement proved for every smooth metric in strict normal
+coordinates covers the full Lorentz \(J^2\) fibre.
 
-Therefore a theorem proved for every smooth metric in strict normal coordinates
-tests the full Lorentz (J^2) fibre, not a special curvature subclass.
-
-This is why (5.7), if H-J2-SMOOTH is proved, would be a full nonlinear J²
-statement even though its finite derivation starts at the flat tangent.
+The use of normal coordinates is a proof device, not a restriction to weak
+curvature.
 
 ---
 
-## 11. Divergence: two epistemically different routes
+## 11. Divergence has two distinct routes
 
-### 11.1 Direct-recognition route
+### 11.1 Direct recognition
 
-If §5 reaches the geometric identity
+If H-J2-SMOOTH yields
 
-[
-E[g]=-rac12G[g],
-	ag{11.1}
-]
+\[
+E[g]=-\frac12G[g],
+\tag{11.1}
+\]
 
 then the external contracted Bianchi identity immediately gives
 
-[
+\[
+\nabla^aE_{ab}=0.
+\tag{11.2}
+\]
 
-abla^aE_{ab}=0.
-	ag{11.2}
-]
+This is a legitimate geometric consequence after the response has been
+identified.
 
-This is a valid geometric consequence after identifying the tensor.
-
-It is **not** an internal derivation of covariant divergence from a finite D0
-Noether identity.
-
-### 11.2 Finite-Noether route
+### 11.2 Finite Noether to covariant divergence
 
 The star action owns an exact local-Lorentz Noether identity.
 
-The finite centered Einstein stencil also owns an exact centered-divergence
+The finite linear Einstein stencil also owns an exact centered-divergence
 identity.
 
-Neither theorem by itself implies
+Neither statement alone proves that a nonlinear star response satisfies
 
-[
+\[
+\nabla^aE_{ab}=0
+\tag{11.3}
+\]
 
-abla^aE_{ab}=0
-	ag{11.3}
-]
+by an internal finite-to-continuum Noether argument.
 
-for the nonlinear metric response.
+That route requires a separate divergence/intertwining theorem and remains
+OPEN.
 
-A separate third-difference / connection-consistency intertwining theorem would
-be needed to derive Levi-Civita divergence directly from finite Noether data.
-
-This route remains OPEN even if the direct-recognition route closes.
-
-The two routes must not be conflated.
+It is not required for direct recognition of \(G\), but it would be a stronger
+internal derivation.
 
 ---
 
 ## 12. Navarro/Lovelock audit
 
-External reference:
+External classification used here:
 
 - Alberto Navarro and José Navarro, *Lovelock's theorem revisited*,
   arXiv:1005.2386, J. Geom. Phys. 61 (2011), Theorem 2.6;
 - José Navarro, *On second-order, divergence-free tensors*,
   arXiv:1306.4354.
 
-For one fixed smooth pseudo-Riemannian manifold (X), a second-order natural
-symmetric divergence-free ((0,2))-tensor lies in the Lovelock span.  In four
-dimensions,
+For a fixed pseudo-Riemannian manifold, a symmetric divergence-free
+second-order natural metric \((0,2)\)-tensor lies in the Lovelock span.
 
-[
+In dimension four,
+
+\[
 E[g]=aG[g]+bg.
-	ag{12.1}
-]
+\tag{12.1}
+\]
 
-The current A4D status is:
+Current status:
 
-| Hypothesis | Status |
+| Hypothesis | A4D status |
 |---|---|
-| fixed smooth (T^4) | OWNED typed bridge |
-| Lorentz signature ((1,3)) | OWNED typed bridge |
-| arbitrary Lorentz metric 2-jets on (T^4) | RESEARCH theorem / bump realization |
-| genuine finite metric carrier from selected action | **EXACT: (Q=ThetaetaTheta^T)** |
-| framed finite sampling/reconstruction | OWNED Lean |
-| finite star flat derivative on metric quotient | **EXACT: (rac14E_eta)** |
-| no (E_{m sp}) flat contamination | **EXACT** |
-| global all-mode finite connection elimination | **FALSE** by §3 |
-| smooth-sampling asymptotic connection/effective branch | **OPEN: H-J2-SMOOTH** |
-| ordinary metric (J^2) factorization | conditional on H-J2-SMOOTH |
-| frame/grid erasure | conditional; then follows from (G)-recognition |
+| fixed smooth \(T^4\) | OWNED typed bridge |
+| Lorentz signature \((1,3)\) | OWNED typed bridge |
+| arbitrary Lorentz metric \(2\)-jets | RESEARCH theorem / bump realization |
+| finite metric carrier of selected action | **EXACT: \(Q=\Theta\eta\Theta^T\)** |
+| framed sampling/reconstruction | OWNED Lean |
+| flat star derivative on metric quotient | **EXACT: \(\frac14E_\eta\)** |
+| \(E_{\rm sp}\) coefficient | **EXACT: 0** |
+| low-momentum connection regularity | **EXACT: determinant 256 at \(t=1\)** |
+| global all-mode connection elimination | **FALSE: diagonal quarter-wave witness** |
+| smooth-sampling asymptotic branch | **OPEN: H-J2-SMOOTH** |
+| ordinary metric \(J^2\) factorization | conditional on H-J2-SMOOTH |
+| frame/grid erasure | conditional; then follows from \(G\)-recognition |
 | local-Diff naturality | conditional on factorization + pullback square |
-| symmetric response | inherited from metric Euler / reconstruction |
 | covariant divergence | external Bianchi after recognition; internal Noether route OPEN |
 
-Thus the Navarro/Lovelock theorem itself is not the blocker.
-
-The obstruction lies before its hypotheses are fully reached.
+Thus Navarro/Lovelock itself is not the blocker. The first missing theorem lies
+before all of its hypotheses have been reached.
 
 ---
 
-## 13. Coefficient map if the bridge closes
+## 13. Coefficient map if the surviving bridge closes
 
-Assume H-J2-SMOOTH and the existing E-NJET Ricci sign convention.
+Assume H-J2-SMOOTH and the E-NJET Ricci sign convention.
 
-Merged #201 gives
+From #201,
 
-[
-D E_star|_{eta}
-=
-rac14E_eta,
-	ag{13.1}
-]
+\[
+D E_\star|_\eta=\frac14E_\eta.
+\tag{13.1}
+\]
 
-while E-NJET gives
+From E-NJET,
 
-[
-E_eta	o-2G.
-	ag{13.2}
-]
+\[
+E_\eta\longrightarrow -2G.
+\tag{13.2}
+\]
 
-Therefore the naked star normalization used in #201 yields
+Therefore the naked star normalization used in #201 has
 
-[
-oxed{
-a=-rac12.
+\[
+\boxed{
+a=-\frac12.
 }
-	ag{13.3}
-]
+\tag{13.3}
+\]
 
-Because the flat star background is stationary,
+Flat star stationarity gives
 
-[
-E_star[eta]=0.
-	ag{13.4}
-]
+\[
+E_\star[\eta]=0.
+\tag{13.4}
+\]
 
-If the limiting response is in the Lovelock class,
+If the limit is in the Lovelock class,
 
-[
-E_star=aG+b,g,
-	ag{13.5}
-]
+\[
+E_\star=aG+bg,
+\tag{13.5}
+\]
 
-then at (g=eta),
+then \(G[\eta]=0\) and \(g=\eta\ne0\), so
 
-[
-0=b,eta,
-	ag{13.6}
-]
-
-hence
-
-[
-oxed{
+\[
+\boxed{
 b=0
 }
-	ag{13.7}
-]
+\tag{13.6}
+\]
 
-for the **naked star action**.
+for the naked star action.
 
-Thus the conditional terminal continuum response is
+Thus the conditional nonlinear continuum response is
 
-[
-oxed{
-E_star[g]
-=
--rac12G[g].
+\[
+\boxed{
+E_\star[g]=-\frac12G[g].
 }
-	ag{13.8}
-]
+\tag{13.7}
+\]
 
-Multiplying the entire star action by an overall coefficient (c) gives
+If the entire star action is multiplied by an overall coefficient \(c\),
 
-[
-a=-rac c2.
-	ag{13.9}
-]
+\[
+a=-\frac c2.
+\tag{13.8}
+\]
 
-In particular the action normalization (c=4) would give the estimator
-normalization (-2G) used by E-NJET.
+In particular \(c=4\) reproduces the \(-2G\) normalization used by E-NJET.
 
-No Newton coupling is fixed by this statement; an overall vacuum-action scale
-does not affect the source-free equation.
+This does not determine Newton's constant in a sourced equation.
 
 ---
 
-## 14. Independent zeroth-order (bg) channel
+## 14. Independent zeroth-order \(bg\) channel
 
-The naked star action has (b=0) if the bridge closes, but this does not prove
-that the complete physical theory has (Lambda=0).
+The naked star branch has \(b=0\) if the bridge closes, but that does not prove
+physical \(\Lambda=0\).
 
-Merged #184 already gives a full-affine-covariant relative solder
+Merged #184 gives
 
-[
-widehatTheta'=widehatTheta g^{-1}.
-	ag{14.1}
-]
+\[
+\widehat\Theta'=\widehat\Theta g^{-1}.
+\tag{14.1}
+\]
 
-Therefore
+For proper Lorentz \(g\), \(\det g=1\), hence
 
-[
-mathrm{Vol}_{m rel}
+\[
+\mathrm{Vol}_{\rm rel}
 =
-detwidehatTheta
-	ag{14.2}
-]
+\det\widehat\Theta
+\tag{14.2}
+\]
 
-is a proper-Lorentz/full-affine scalar.
+is a full-affine scalar.
 
-Moreover
+With
 
-[
-widehat Q
+\[
+\widehat Q
 =
-widehatThetaetawidehatTheta^T
-	ag{14.3}
-]
+\widehat\Theta\eta\widehat\Theta^T,
+\tag{14.3}
+\]
 
-satisfies
+and \(\det\eta=-1\),
 
-[
-detwidehat Q
+\[
+\det\widehat Q
 =
-det(eta)det(widehatTheta)^2
-=
--det(widehatTheta)^2.
-	ag{14.4}
-]
+-\det(\widehat\Theta)^2.
+\tag{14.4}
+\]
 
 On a fixed orientation component,
 
-[
-mathrm{Vol}_{m rel}
+\[
+\boxed{
+\mathrm{Vol}_{\rm rel}
 =
-pmsqrt{-detwidehat Q}.
-	ag{14.5}
-]
+\pm\sqrt{-\det\widehat Q}.
+}
+\tag{14.5}
+\]
 
 Its first variation is
 
-[
-oxed{
-deltamathrm{Vol}_{m rel}
+\[
+\boxed{
+\delta\mathrm{Vol}_{\rm rel}
 =
-rac12
-mathrm{Vol}_{m rel}
-operatorname{tr}
-(widehat Q^{-1}deltawidehat Q).
+\frac12\mathrm{Vol}_{\rm rel}
+\operatorname{tr}
+(\widehat Q^{-1}\delta\widehat Q).
 }
-	ag{14.6}
-]
+\tag{14.6}
+\]
 
-Thus the legal relative volume is an exactly metric-only zeroth-order channel.
-After density/index conventions its Euler tensor is proportional to the metric,
-i.e. it has precisely the (bg) type.
+Thus the already-owned data contain a full-affine legal, metric-only
+zeroth-order channel of precisely the \(bg\) type.
 
-The coefficient is not selected here.
+Its coefficient is not selected here.
 
-So the derivative and zeroth-order sectors stay cleanly separated:
+The derivative and cosmological sectors remain cleanly separated:
 
-[
-S_star
-ightsquigarrow
-aG,
-qquad
-lambda,mathrm{Vol}_{m rel}
-ightsquigarrow
-bg.
-	ag{14.7}
-]
+\[
+S_\star\rightsquigarrow aG,
+\qquad
+\lambda\mathrm{Vol}_{\rm rel}\rightsquigarrow bg.
+\tag{14.7}
+\]
 
-No (arphi), Holst term or new external tensor is required to type the
-cosmological ray.
+No Holst term, \(\varphi\)-coefficient or new tensor datum is required merely
+to type the cosmological ray.
 
 ---
 
-## 15. The exact obstruction is ultraviolet, but cannot simply be ignored
+## 15. Why the UV resonance cannot simply be ignored
 
-Because the resonant phases are fixed at (pmpi/2), they correspond to
-physical momenta of order (1/arepsilon_N) in a refinement interpretation.
+The certified diagonal resonance sits at lattice phase \(\pi/2\), hence at
+physical momentum of order \(1/\varepsilon_N\) under refinement.
 
-For a fixed (C^infty) continuum metric, the Fourier tail at such momenta
-decays rapidly.
+For a fixed \(C^\infty\) continuum metric, Fourier weight at such UV momenta
+decays rapidly. This makes a smooth-sector asymptotic bridge plausible.
 
-That observation makes an asymptotic smooth-sector bridge plausible.
+It does not yet define an exact finite physical response:
 
-It does **not** by itself define an exact finite physical response:
-
-- a generic sampled smooth field need not have exactly zero quarter-wave
-  coefficient;
-- at the resonant mode the linear connection equation is incompatible for a
-  genuine metric direction;
+- a sampled smooth field need not have exactly zero resonant coefficient;
+- the linear connection equation is incompatible for a genuine metric
+  direction at the certified mode;
 - an arbitrarily small incompatible source is still incompatible;
-- a nonlinear branch, if it repairs the equation, can be non-smooth
-  (e.g. square-root scaling) and is not supplied by the flat IFT;
-- dropping or projecting the mode would introduce a new finite prescription.
+- a nonlinear repair can be non-smooth and is not supplied by the flat IFT;
+- projecting away the mode would be a new finite prescription unless derived.
 
-Therefore the next theorem must explicitly control the resonant sector rather
-than silently discard it.
+Therefore the next theorem must explicitly control the resonant sector.
 
 ---
 
-## 16. Theorem-ready statements from this task
+## 16. Theorem-ready statements
 
-1. **Nonlinear metric quotient.**  
-   On nondegenerate solder,
-   [
-   Q_x=Theta_xetaTheta_x^T
-   ]
-   is an exact local-Lorentz orbit coordinate.
+1. **Nonlinear metric quotient**
+   \[
+   Q_x=\Theta_x\eta\Theta_x^T.
+   \]
 
-2. **Dressed connection metric compatibility.**  
-   [
+2. **Dressed-link metric compatibility**
+   \[
    K_{x,r}Q_{x+r}K_{x,r}^T=Q_x.
-   ]
+   \]
 
-3. **Flat Gram differential.**  
-   For solder-vector perturbation rows (H),
-   [
-   DQ_{m flat}[H]=Heta+eta H^T.
-   ]
+3. **Flat Gram differential**
+   \[
+   DQ_{\rm flat}[H]=H\eta+\eta H^T.
+   \]
 
-4. **Metric-section identity.**  
-   For symmetric (q),
-   [
-   H(q)=rac12qeta
-   quadRightarrowquad
-   DQ_{m flat}[H(q)]=q.
-   ]
+4. **Exact metric section**
+   \[
+   H(q)=\frac12q\eta
+   \Longrightarrow
+   DQ_{\rm flat}[H(q)]=q.
+   \]
 
-5. **Interpretation of #201.**  
-   The exact #201 Schur response is the flat Hessian of the descended action
-   on the tangent space of the genuine nonlinear metric quotient.
+5. **Interpretation of #201**  
+   The #201 Schur response is the flat Hessian of the descended action on the
+   tangent space of the genuine nonlinear metric quotient.
 
-6. **Arbitrary-phase connection determinant.**  
-   [
-   det H_{AA}(z)
+6. **Correct polarized diagonal connection determinant**
+   \[
+   \det H_{AA}^{\rm pol}(t)
    =
-   2^{-16}
-   prod_{r<s}
-   (z_rz_s+z_r+z_s-1)^4.
-   ]
+   \frac{(t^2+1)^{12}}{16t^{12}}.
+   \]
 
-7. **Low-momentum regularity.**  
-   [
-   det H_{AA}(1)=256.
-   ]
+7. **Low-momentum regularity**
+   \[
+   \det H_{AA}^{\rm pol}(1)=256.
+   \]
 
-8. **Unit-character singularity classification.**  
-   On (|z_r|=1), singularity occurs iff some Role pair has phases
-   ((i,-i)) or ((-i,i)).
+8. **Exact L=4 diagonal quarter-wave resonance**
+   \[
+   t=i
+   \Longrightarrow
+   \rank H_{AA}^{\rm pol}=16.
+   \]
 
-9. **First exact finite resonance.**  
-   At (L=4), (z=(i,-i,1,1)),
-   [
-   ank H_{AA}=20.
-   ]
+9. **Metric-source incompatibility**
+   \[
+   \rank[(H_{AA}^{\rm pol})^T\mid H_{Aq}]=20.
+   \]
 
-10. **Metric-source incompatibility.**  
-    At the same character,
-    [
-    ank[H_{AA}mid H_{Aq}]=24.
-    ]
+10. **Explicit Fredholm witness**
+    \[
+    H_{AA}^{\rm pol}\lambda=0,
+    \qquad
+    \lambda^TH_{Aq}(q_{11})=-(1+i).
+    \]
 
-11. **Explicit Fredholm witness.**  
-    There exists (lambda
-e0) with
-    [
-    lambda^TH_{AA}=0,
-    qquad
-    lambda^TH_{Aq}(q_{02})=(1+i)/2.
-    ]
+11. **No smooth all-mode connection section**  
+    No smooth \(K_*(Q)\) through flat solves the finite connection Euler
+    equation for every finite metric perturbation on all refinement carriers.
 
-12. **No global smooth all-mode connection section.**  
-    No smooth (K_*(Q)) through flat can solve the finite connection Euler
-    equation for every finite metric perturbation on all refinement levels.
+12. **Normal-stencil smallness**
+    \[
+    q_N=O(\varepsilon_N^2)
+    \]
+    for every smooth metric in strict normal coordinates.
 
-13. **Normal-stencil smallness.**  
-    For every smooth metric in strict normal coordinates,
-    [
-    q_N=O(arepsilon_N^2)
-    ]
-    on a fixed radius-two stencil.
-
-14. **Conditional full Einstein recognition.**  
+13. **Conditional Einstein recognition**
     Under H-J2-SMOOTH,
-    [
-    E_{star,N}	o-rac12G.
-    ]
+    \[
+    E_{\star,N}\to-\frac12G.
+    \]
 
-15. **Conditional Lovelock coefficients for naked star.**  
-    If the continuum response satisfies the Navarro/Lovelock hypotheses,
-    [
-    a=-1/2,qquad b=0
-    ]
-    in the #201/E-NJET convention.
+14. **Conditional Lovelock coefficients for naked star**
+    \[
+    a=-\frac12,\qquad b=0.
+    \]
 
-16. **Full-affine metric volume channel.**  
-    [
-    mathrm{Vol}_{m rel}
-    =detwidehatTheta
-    =pmsqrt{-detwidehat Q}
-    ]
-    on a fixed orientation component, with variation (14.6).
+15. **Full-affine metric volume channel**
+    \[
+    \mathrm{Vol}_{\rm rel}
+    =
+    \det\widehat\Theta
+    =
+    \pm\sqrt{-\det\widehat Q}
+    \]
+    on a fixed orientation component.
 
-17. **Divergence-route separation.**  
-    External contracted Bianchi after (G)-recognition is not the same theorem
-    as a finite-Noether-to-Levi-Civita-divergence limit.
+16. **Divergence-route separation**  
+    Contracted Bianchi after \(G\)-recognition and a finite-Noether to
+    Levi-Civita-divergence theorem are distinct statements.
 
 ---
 
-## 17. Terminal disposition
+## 17. Final disposition and single next task
 
-The task does **not** support an unconditional statement
+This task does not support the unconditional terminal
 
-[
-	exttt{STAR-ACTION-NONLINEAR-J2-RESPONSE-ENTERS-EINSTEIN-LOVELOCK-CLASS}.
-]
+\[
+\texttt{STAR-ACTION-NONLINEAR-J2-RESPONSE-ENTERS-EINSTEIN-LOVELOCK-CLASS}.
+\]
 
-It does support a much sharper split.
+It does close the following pieces:
 
-### Closed
-
-- nonlinear finite metric provenance from the selected action;
-- exact tangent weld between that metric and the #201 Einstein detector;
-- exact pure Einstein flat ray (c_{m sp}=0);
+- nonlinear metric provenance from the selected finite action;
+- the exact tangent weld between that metric and #201;
+- pure Einstein flat ray \(c_{\rm sp}=0\);
 - low-momentum auxiliary-connection regularity;
-- exact conditional coefficient map (a=-1/2, b=0) for naked star;
-- a legal independent metric-only zeroth-order volume ray.
+- conditional coefficient map \(a=-1/2,\ b=0\);
+- a legal independent metric-only zeroth-order volume ray;
+- a concrete finite obstruction to naive all-mode elimination.
 
-### Newly obstructed
+The exact task terminal is
 
-A single smooth all-mode finite connection elimination does not exist through
-flat, because exact quarter-wave sectors violate the linear compatibility
-condition already at (L=4).
-
-The strongest terminal is therefore
-
-[
-oxed{
-	exttt{STAR-J2-BRIDGE-BLOCKED-BY-QUARTER-WAVE-CONNECTION-RESONANCE}.
+\[
+\boxed{
+\texttt{STAR-J2-BRIDGE-BLOCKED-BY-DIAGONAL-QUARTER-WAVE-CONNECTION-RESONANCE}.
 }
-	ag{17.1}
-]
+\tag{17.1}
+\]
 
-The **surviving branch** is precise:
+There is only one surviving upper-wall research task:
 
-[
-oxed{
-	ext{prove H-J2-SMOOTH:
-a canonical smooth-sampling / low-frequency connection branch that controls
-or removes the resonant UV sector without changing the }J^2	ext{ limit}.
+\[
+\boxed{
+\texttt{EXP-A4D-STAR-SMOOTH-SECTOR-CONNECTION-J2-LIMIT}.
 }
-	ag{17.2}
-]
+\tag{17.2}
+\]
 
-If H-J2-SMOOTH is proved, no further coefficient selector is needed.  Existing
-#201 + E-NJET + fixed-T4 naturality already force
+Its job is to prove or terminally obstruct H-J2-SMOOTH: construct a canonical
+smooth-sampling/infrared connection branch and show that the certified UV
+resonant sector either has no image on the selected smooth carrier or becomes
+asymptotically irrelevant without introducing an arbitrary filter.
 
-[
-E_star[g]=-rac12G[g]
-	ag{17.3}
-]
+If that theorem succeeds, existing #201 + E-NJET + T4 reconstruction already
+give the nonlinear Einstein-class result; no further linear coefficient
+selector is required.
 
-for the naked star normalization, with an independent optional
-(mathrm{Vol}_{m rel}) channel supplying the allowed (bg) term.
-
-No curved-root result from #202 is used here, and no claim/release/BOOK/Lean
-promotion is made.
+No result from the curved-root search #202 is used here. No Lean, claim,
+release or BOOK promotion is made.
