@@ -644,6 +644,77 @@ The task does not require the numerical value of (eta). It requires a positive 
 
 The diagonal four-space and the two one-dimensional sectors are delegated exact gates.
 
+## 6A. Frozen isolation is necessary but not sufficient
+
+The delegated J2/J3 workers are finite/frozen resonance calculations. Their
+positive result would be an essential input, but not by itself the
+refinement-uniform theorem.
+
+The hostile analytic model
+
+[
+F_h(u)=u^3-hu
+]
+
+has an isolated zero at (h=0), nonzero local degree, and finite algebraic
+order. Nevertheless for every (h>0) it has the additional zero-source roots
+
+[
+u=pmsqrt h.
+]
+
+Thus a frozen degree/Łojasiewicz certificate does not prevent slowly varying
+background coefficients from creating flat-approaching joint sheets.
+
+The correct J5 input is therefore a **uniform joint normal inequality for the
+actual slow-background reduced map**. In local normal coordinates
+((p_h,u)), where (p_h) contains the smooth IR/background parameters, one
+sufficient statement is
+
+[
+oxed{
+|u|
+le
+C h^{-p}
+|mathcal F_{m red}(p_h,u;s_h)|^eta
+}
+	ag{6A.1}
+]
+
+relative to the designated joint branch/fiber, with fixed (C,p,eta>0)
+and with all genuine tangent/gauge/physical-IR variables removed or retained
+consistently.
+
+Equivalently, after the small source is moved to the right-hand side, every
+exact root in the selected tube must obey
+
+[
+oxed{
+|u|
+le
+C h^{-p}|s_h^{m UV}|^eta.
+}
+	ag{6A.2}
+]
+
+A finite compact stratification is allowed; take the minimum positive
+(eta) and maximum fixed polynomial loss over its charts.
+
+What the frozen workers can establish is:
+
+1. the candidate physical normal sectors are finite-dimensional and correctly
+   identified;
+2. the zero-source leading joint normal form is isolated/nonzero-degree, or an
+   exact no-go branch exists;
+3. the first possible uniform exponent/order.
+
+The parent must still rule out an (h)-dependent lower-order splitting of
+those joint normal forms. The joint metric equation makes this substantially
+more plausible than in #225/#227 because source-visible directions are already
+linear constraints, but it is not automatic on (N_0).
+
+No positive terminal is allowed if J5 remains only pointwise in (h).
+
 ## 7. Smooth UV forcing: why any finite positive exponent is enough
 
 For one fixed (C^infty) realization, #216 owns the UV Fourier-tail estimate in the lattice sum norm:
