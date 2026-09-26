@@ -474,6 +474,88 @@ This supports the interpretation that the #227 sheet is not LC-like, but it is
 **diagnostic only**. No torsion-free equation and no (T^2) action term are
 introduced, and the joint rejection of #227 already follows from (4.1).
 
+## 4B. Exact sourced suppression of the #227 hostile family
+
+The #227 family can be tested against the **full sourced metric equation**
+without any linearization.
+
+Its descended metric covector is
+
+\[
+E_Q(x)
+=
+\sigma_{p(x)}\,c(t)\,m,
+\qquad
+m=(0,0,0,0,-1,1,1,-1,1,-1),
+\]
+
+with
+
+\[
+c(t)=\frac{4t}{4-3t^2}.
+\]
+
+For \(|t|\le1/4\),
+
+\[
+1
+\le
+\frac{|c(t)|}{|t|}
+=
+\frac4{4-3t^2}
+\le
+\frac{64}{61}.
+\]
+
+Hence
+
+\[
+\boxed{
+|t|\le |c(t)|\le\frac{64}{61}|t|.
+}
+\tag{4B.1}
+\]
+
+Project the joint equation \(E_Q=\kappa T\) onto the quarter-wave character
+and any metric component on which \(m\) is nonzero. Then, on this exact
+connection-stationary family,
+
+\[
+|t|
+\le
+|\kappa|\,C_m
+\left|\widehat T_h(k_{\rm qw})\right|.
+\tag{4B.2}
+\]
+
+For a fixed \(C^\infty\) matter/source realization, the same smooth Fourier
+tail argument used in #216 gives
+
+\[
+\widehat T_h(k_{\rm qw})=O(h^\infty).
+\]
+
+Therefore
+
+\[
+\boxed{t_h=O(h^\infty)}
+\tag{4B.3}
+\]
+
+for every member of the #227 family that also satisfies the smooth sourced
+joint metric equation.
+
+Thus the exact family which destroys all-sheet \(E_K\)-rescue becomes
+super-algebraically small once the actual Palatini metric equation is imposed.
+No torsion constraint or connection selector is needed for this conclusion.
+
+Combined with #226, its normalized metric-response deviation from the
+designated smooth sheet is also \(O(h^\infty)\).
+
+This is an exact positive hostile control for the joint strategy. It does not
+replace J1/J2/J3 because other source-invisible kernel directions have
+\(H_{QA}u=0\) and need higher-order pressure.
+
 ## 5. Residual nonlinear sectors
 
 The owned L=4 rank inventory gives the provisional arithmetic
