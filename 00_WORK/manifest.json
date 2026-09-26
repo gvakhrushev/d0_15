@@ -25,27 +25,15 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
-      "id": "EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Classify the fully affine-legal discrete Palatini(+Lambda+torsion^2) target against the selected star + four joint-residual action span, including whether any cosmological volume channel survives the full-affine quotient.",
-      "brief": "00_WORK/tasks/EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN.md"
-    },
-    {
-      "id": "EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE",
+      "id": "EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "state": "PLANNED",
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Lift the exact star-action pure-Einstein flat Hessian into, or sharply obstruct, one metric-only smooth local J^2 Lorentz response on T4 that is local-Diff natural and covariantly divergence-free, sufficient for the Navarro/Lovelock Einstein-class gate.",
-      "brief": "00_WORK/tasks/EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE.md"
+      "exit_condition": "Classify the corrected polarized UV connection resonances of the star action, close or obstruct the diagonal L=4 quarter-wave through an exact Lyapunov-Schmidt/Puiseux branch, and determine whether all resonant contributions from smooth T4 sampling are asymptotically irrelevant to the metric J2 limit without an arbitrary filter.",
+      "brief": "00_WORK/tasks/EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE.md"
     },
     {
       "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
@@ -58,62 +46,6 @@
       ],
       "exit_condition": "Either exactify a nondegenerate curved stationary witness for the selected four-channel full-affine family, or prove a precisely scoped no-go for the declared carrier; numerical E(2) scouts are not terminal.",
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #184 affine relative-solder transform, lambda=1 selector, homogeneous covariance and matched-edge overquotient statement without promoting the completion to the final physical quotient.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #199/#200 exact second-order checkerboard obstruction in its finite L=2 scope.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Formalize the merged #188/#193 rank-changing gauge-image resolution, first-jet image theorem and graph-closure seam geometry while keeping limiting incidence directions distinct from endpoint gauge.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Formalize the merged #185 polynomial two-holonomy residual and the stable structural content of #196 quotient-completeness, with no Python rank result admitted as an axiom.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #201 finite theorem that the star flat metric Hessian is exactly one quarter of the owned E_eta ray, together with the high-order flat vanishing of quadratic joint-residual completions.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED.md"
     }
   ]
 }
