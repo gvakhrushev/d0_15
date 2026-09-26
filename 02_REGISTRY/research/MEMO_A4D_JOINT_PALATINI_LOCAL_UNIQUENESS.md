@@ -122,107 +122,68 @@ joint-vacuum curve.
 
 ---
 
-## 3. Corrective audit of worker PR #231
+## 3. Worker convention audit: non-load-bearing conflict
 
-PR #231 contains useful exact symbol reconstruction, but two parts of its
-published REVIEW terminal are not accepted as load-bearing by this parent.
+The worker wave exposed a real convention problem in the polarized linear
+algebra. The parent terminal below does **not** depend on resolving it.
 
-### 3.1 Polarized block is genuinely nonsymmetric
+### 3.1 What is agreed
 
-This part is correct:
-
-\[
-H_{AA}\neq H_{AA}^{\mathsf T}.
-\]
-
-Therefore the earlier parent draft's symmetric-KKT/radical discussion is
-withdrawn. No symmetric Hessian argument is used in the terminal no-go.
-
-### 3.2 The published \(N_0\) refinement uses the wrong stack
-
-The worker brief defines
+All audited implementations agree that the polarized connection bilinear block
+is nonsymmetric:
 
 \[
-N=\ker H_{AA},
-\qquad
-N_0=\ker H_{AA}\cap\ker H_{QA}.
+H_{AA}\ne H_{AA}^{\mathsf T}.
 \]
 
-Its own checker first computes \(N=\ker H_{AA}\), but then constructs
+They also agree that the diagonal quarter-wave contains the Role-0 invisible
+rotation direction
 
 \[
-\ker
-\begin{pmatrix}
-H_{AA}^{\mathsf T}\\
-H_{QA}
-\end{pmatrix}
+Y=J_{12}-J_{13}+J_{23},
 \]
 
-instead of
+and that the #227 boost tangent is source-visible.
 
-\[
-\ker
-\begin{pmatrix}
-H_{AA}\\
-H_{QA}
-\end{pmatrix}.
-\]
+### 3.2 What is not yet reconciled
 
-The checker subsequently verifies that the vectors it found also happen to lie
-in \(\ker H_{AA}\); that does not prove it found the entire intersection.
+PR #231, after remediation, defines the residual connection space using the
+right kernel of \(H_{AA}\) and restores the originally expected \(4/1/1\)
+orbit census.
 
-A corrected exact replay of the same symbol gives
+PR #234 instead reconstructs the conjugate-character **direct connection
+Euler** and reports that its physical linear operator is
+\(H_{AA}^{\mathsf T}\). Under that convention one of the nominal
+one-dimensional orbit classes disappears.
 
-\[
-\dim N_0=
-(1,0,0,0,4,1,0,1,0)
-\]
+Those two statements can coexist only after an explicit identification of
+which Fourier amplitude is the varied field and which is its conjugate partner.
+Until that carrier pairing is written once and used consistently, neither
+orbit-count table is promoted here as the physical joint tangent theorem.
 
-on orbit types \(0,\ldots,8\), respectively. In particular the two
-one-dimensional sectors on orbit 5 and orbit 7 do **not** disappear.
+A second issue was found in the first #231 REVIEW version: its original
+\(34\times34\) mixed matrix used incompatible column partitions. #231 later
+replaced it by a different symmetric/KKT construction. #234 uses a direct
+Euler construction instead. That distinction is likewise left outside the
+present load-bearing proof.
 
-The exact missing bases are:
+### 3.3 Why the terminal below is independent of the conflict
 
-### orbit 5, phase ids \((1,1,3,3)\)
+The exact diagonal family in Sections 4–10 is checked directly in the literal
+finite action:
 
-\[
-\begin{aligned}
-&(0,-1+i),\ (6,-1+i),\\
-&(12,1),\ (14,-1),\ (16,1),\\
-&(18,1),\ (19,-1),\ (21,1).
-\end{aligned}
-\]
+- one physical edge is varied at a time;
+- all six Lorentz generators are tested;
+- all four Roles and all four phase residues are covered;
+- the metric partial is evaluated directly at standard solder.
 
-### orbit 7, phase ids \((2,1,1,2)\)
+No \(H_{AA}\) versus \(H_{AA}^{\mathsf T}\) convention enters that calculation.
+Therefore the exact joint no-go survives regardless of how the remaining
+Fourier census is eventually normalized.
 
-\[
-(2,1),\ (7,-i),\ (8,i),\ (11,-i),\
-(12,-i),\ (14,i),\ (16,-i),\ (20,1).
-\]
-
-The original 1/1/4 residual expectation is therefore restored.
-
-### 3.3 The published full mixed-Hessian table is malformed
-
-The worker checker constructs its \(34\times34\) matrix as
-
-\[
-\operatorname{vstack}
-\left(
-[0_{10\times10}\mid Q],
-[H_{AA}\mid0_{24\times10}]
-\right).
-\]
-
-The upper row uses the column partition \((10,24)\), while the lower row places
-the \(24\times24\) block in the **first** 24 columns. Those column partitions
-are incompatible. Consequently the reported full-joint rank/nullity/mixed
-table is not a valid block operator and is not used here.
-
-These worker-remediation points matter for the registry, but the exact
-diagonal no-go below is independent of them.
-
----
+The correct repository action after this EXPENSIVE terminal is to reconcile
+#231/#234 before merging their linear-census statements. It is not necessary
+to settle that bookkeeping question in order to decide this task.
 
 ## 4. Exact diagonal invisible generator
 
