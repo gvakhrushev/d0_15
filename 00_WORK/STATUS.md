@@ -16,7 +16,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
 | CTRL-POST-MERGE-CONTROL-CLOSEOUT | CONTROL | REVIEW | ROOT | - |
-| EXP-A4D-JOINT-HOLONOMY-QUOTIENT-COMPLETENESS | EXPENSIVE | IN_PROGRESS | ROOT | - |
+| EXP-A4D-JOINT-HOLONOMY-QUOTIENT-COMPLETENESS | EXPENSIVE | IN_PROGRESS | ROOT | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 
