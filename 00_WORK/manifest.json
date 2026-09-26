@@ -19,7 +19,7 @@
       "id": "CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1",
       "class": "CONTROL",
       "parent": "ROOT",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [],
       "exit_condition": "The overnight formalization maintenance worker is merged or terminally scoped, concurrent scientific PR files remain untouched, and main is green with the durable debt audit installed.",
       "brief": "00_WORK/tasks/CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1.md"
