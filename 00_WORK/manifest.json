@@ -86,7 +86,7 @@
       "id": "WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
       ],
