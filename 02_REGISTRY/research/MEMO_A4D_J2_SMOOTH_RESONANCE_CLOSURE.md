@@ -1917,3 +1917,375 @@ The target coefficient itself is already fixed:
 
 for the naked star channel, conditional only on these remaining bridge gates.
 
+---
+
+## 25. Rank-adapted affine quotient: complete fixed-rank coordinate lemma
+
+Section 23.1 recorded the rank-adapted compound detector.  The stronger
+fixed-rank statement needed for the lower-wall seam is as follows.
+
+Let
+
+\[
+H=(P,t),\qquad M:=I-P,\qquad \operatorname{rank}M=r,
+\]
+
+and define
+
+\[
+\boxed{
+\Psi_r(M,t)
+:=
+\bigl[
+\omega\mapsto t\wedge(\Lambda^rM)\omega
+\bigr]
+\in
+\operatorname{Hom}(\Lambda^rV,\Lambda^{r+1}V).
+}
+\]
+
+Under node translation \(t\mapsto t+Mc\),
+
+\[
+(Mc)\wedge(\Lambda^rM)\omega=0
+\]
+
+because all \(r+1\) factors lie in the \(r\)-plane
+\(\Pi=\operatorname{im}M\).  Hence
+
+\[
+\boxed{\Psi_r(M,t+Mc)=\Psi_r(M,t).}
+\]
+
+Under a Lorentz change of frame
+
+\[
+M'=gMg^{-1},
+\qquad
+t'=gt+M'c,
+\]
+
+naturality of exterior powers gives
+
+\[
+\boxed{
+\Psi_r(M',t')
+=
+(\Lambda^{r+1}g)\,
+\Psi_r(M,t)\,
+(\Lambda^rg^{-1}).
+}
+\]
+
+Because \(\operatorname{rank}M=r\),
+\(\operatorname{im}\Lambda^rM=\Lambda^r\Pi\) is a nonzero line.  Therefore
+
+\[
+\boxed{
+\Psi_r(M,t)=0
+\iff
+t\in\operatorname{im}M.
+}
+\]
+
+More strongly,
+
+\[
+\boxed{
+\Psi_r(M,t)=\Psi_r(M,t')
+\iff
+t-t'\in\operatorname{im}M.
+}
+\]
+
+Thus on every fixed-rank stratum \(\Psi_r\) gives a canonical injective
+coordinate map
+
+\[
+\boxed{
+V/\operatorname{im}M
+\hookrightarrow
+\operatorname{Hom}(\Lambda^rV,\Lambda^{r+1}V)
+}
+\]
+
+without choosing a quotient basis.
+
+In four dimensions the hierarchy is:
+
+\[
+\begin{array}{c|c}
+r & \dim\operatorname{coker}M\\ \hline
+4&0\\
+3&1\\
+2&2\\
+1&3\\
+0&4
+\end{array}
+\]
+
+with \(\Psi_0=t\), while the familiar adjugate/cofactor construction is the
+\(r=3\) Hodge-dual member of the same hierarchy.
+
+This identifies the precise mechanism behind the parabolic blindness:
+determinant and adjugate are the \(r=4,3\) compounds, but the null-rotation
+stratum has true rank \(r=2\).
+
+### 25.1 Null flag is already contained in the Plücker plane
+
+For a nonzero Lorentz parabolic plane
+
+\[
+\Pi=\operatorname{im}(I-P)
+\]
+
+the null line satisfies
+
+\[
+\boxed{
+\ell=\operatorname{rad}\Pi
+=
+\Pi\cap\Pi^\perp.
+}
+\]
+
+Consequently the projective top nonzero compound
+
+\[
+\boxed{
+[\operatorname{im}\Lambda^2(I-P)]
+=
+[\Lambda^2\Pi]
+}
+\]
+
+already determines the whole null flag \(\ell\subset\Pi\); the operator
+\((I-P)^2\) is an algebraic extractor of \(\ell\), not extra independent
+memory.
+
+This matches the existing graph-closure architecture: a rank-changing seam is
+naturally remembered by the **top nonzero exterior compound**.  The earlier
+rank-four gauge-image incidence used the top nonzero compound of its carrier;
+the parabolic holonomy seam uses \([\Lambda^2(I-P)]\).
+
+Scope is essential: \(\Psi_2\) is a rank-stratified quotient coordinate, not a
+globally translation-invariant tensor across higher-rank strata.  If
+\(\operatorname{rank}M>r\), the term
+\((Mc)\wedge\Lambda^rM\) need not vanish.  This is compatible with the existing
+single-loop no-go and is exactly why graph closure / resolved rank strata are
+the appropriate carrier.
+
+A positive observer diagnostic such as
+
+\[
+\|\Psi_2(M,t)\|_{h_n}^2
+\]
+
+may be used on the rank-two stratum and vanishes exactly on the trivial cokernel
+class, but **must not be inserted into the #202 action merely because it is
+available**.
+
+---
+
+## 26. Two-bump locality is a corollary of the same UV theorem
+
+Take two shrinking realizations of the same fixed metric \(2\)-jet \(J\),
+
+\[
+q_h^{(i)}
+=
+\chi_i(x/\rho_{h,i})P_J(x),
+\qquad
+\rho_{h,i}=h^{\alpha_i},
+\qquad
+\frac12<\alpha_i<1.
+\]
+
+For sufficiently small \(h\), both cutoffs equal one on the complete
+radius-two stencil.  Hence the owned centered Einstein stencil sees the same
+quadratic polynomial **exactly** in the two realizations; the leading
+\(\frac14E_{\eta,h}\) contribution at the center is identical before taking a
+limit.
+
+Under the uniform UV Hölder-rescue theorem, the remaining difference is bounded
+by
+
+\[
+O(h^{1-\alpha_1})+O(h^{1-\alpha_2})
++
+O(h^{4\alpha_1-2})+O(h^{4\alpha_2-2})
++
+O(h^\infty),
+\]
+
+and therefore
+
+\[
+\boxed{
+\mathcal E_h^{\chi_1,\alpha_1}(J)
+-
+\mathcal E_h^{\chi_2,\alpha_2}(J)
+\longrightarrow0.
+}
+\]
+
+Thus **bump-profile independence is not a second independent large search**.
+For this local \(J^2\) construction it is a corollary of:
+
+1. exact agreement of the local quadratic stencil;
+2. the analytic/Wiener remainder bounds of §20;
+3. one uniform UV Hölder theorem.
+
+A stronger theorem covering arbitrary fixed global smooth sampling sequences
+can remain downstream; it is not required to identify the local naked-star
+equation class.
+
+---
+
+## 27. The upper-wall blocker can be stated as uniform flat isolation
+
+Let \(Z\) be the compact resonance variety separated from the IR neighborhood,
+and after gauge/range reduction let a connected resonance stratum
+\(Z_\sigma\) carry a finite-dimensional real-analytic reduced equation
+
+\[
+F_\sigma(z,u,s)=0.
+\]
+
+The sufficient upper-wall theorem is:
+
+\[
+\boxed{
+F_\sigma(z,u,0)=0,\quad |u|<\varepsilon
+\Longrightarrow
+u=0
+\quad\text{uniformly for }z\in Z_\sigma,
+}
+\]
+
+together with
+
+\[
+\boxed{
+\deg_0F_\sigma(z,\cdot,0)\ne0.
+}
+\]
+
+Uniform isolation plus compact real-analytic/subanalytic Łojasiewicz control
+then gives some stratum-wise positive exponent
+
+\[
+\beta_\sigma>0,
+\qquad
+|u|\le C|s|^{\beta_\sigma}.
+\]
+
+For \(C^\infty\) sampling the numerical value of
+\(\beta_\sigma\) is immaterial: every fixed positive exponent preserves the
+super-algebraic UV suppression.
+
+If isolation and boundary nonvanishing hold continuously on a connected
+stratum, local degree is constant until a zero crosses the chosen boundary
+sphere.  Hence the target is **connected resonance strata**, not lattice
+orbits.
+
+Equivalently, a failure of uniform flat isolation would produce a sequence
+
+\[
+z_k\to z_\ast,
+\qquad
+u_k\to0,
+\qquad
+u_k\ne0,
+\qquad
+F(z_k,u_k,0)=0.
+\]
+
+Under the semialgebraic/subanalytic hypotheses of the reduced finite system,
+curve selection then produces a nontrivial zero-source stationary germ
+entering the flat point.
+
+Therefore the actual obstruction to the \(J^2\) theorem is
+
+\[
+\boxed{
+\text{a nontrivial zero-source stationary germ accumulating at flat},
+}
+\]
+
+not the existence of finite curved stationary points elsewhere.
+
+A disconnected finite-amplitude curved vacuum bounded away from the flat
+solution does **not** obstruct the local \(J^2\) theorem.
+
+---
+
+## 28. Live lower-wall update: exact enlarged parabolic family and the new cross-wall question
+
+PR #202 has now exactified the enlarged E(2) pattern
+
+\[
+e_2=
+(\alpha,\beta,j,\;
+ \alpha,\beta,j,\;
+ \gamma,\delta,0,\;
+ \delta,-\gamma,0)
+\]
+
+on the lean \(L\equiv0\), \(D=(1,1,1)\), \(U=0\) packing.  On the exact
+subfamily
+
+\[
+\boxed{\alpha=\beta=0}
+\]
+
+the six transverse equations vanish symbolically, the twelve free-internal
+E(2) derivatives vanish on the exact rational certificate battery, and the
+witness
+
+\[
+(j,\gamma,\delta)=(2,0,1)
+\]
+
+has
+
+\[
+\boxed{\mathrm{curv}^2=32}
+\]
+
+with exact \(12+6\) residual zero in the declared packing.
+
+This supersedes the earlier broad statement that the whole parabolic sector
+should be excluded as a finite vacuum.  The narrower complement-zero
+four-parameter leaf remains flat-only on the certified slices, but the enlarged
+parabolic carrier contains an exact curved stationary family in the currently
+tested residual package.
+
+For the upper wall, however, existence of this family is not by itself a
+problem.  The cross-wall question is now sharper:
+
+\[
+\boxed{
+\text{does the exact #202 family define a nontrivial physical stationary germ
+approaching the flat quotient?}
+}
+\]
+
+In particular, sending \((\gamma,\delta)\to(0,0)\) while keeping \(j\ne0\)
+kills the sampled curvature in the current certificate, but one must determine
+whether the remaining \(j\)-holonomy is physically flat/gauge in the selected
+quotient or retains a nontrivial finite holonomy class.  Conversely, a scaling
+in which all physical holonomy and residual data approach the flat quotient
+would be directly relevant to the uniform-isolation theorem above.
+
+Thus #202 now carries two logically distinct questions:
+
+1. **finite vacuum:** does the exact family survive the full classical
+   internal equations, channel response \(R=R_\ast(C)\), and hostile \(L=3\)
+   gate?
+2. **upper-wall isolation:** regardless of finite-vacuum survival, can any
+   nontrivial member or continuation of the family accumulate at the flat
+   physical quotient?
+
+Only the second question is load-bearing for the naked-star \(J^2\) theorem.
+
