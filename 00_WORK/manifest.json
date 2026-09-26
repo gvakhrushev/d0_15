@@ -40,7 +40,7 @@
       "id": "CTRL-A4D-STAR-DENSITY-LORENTZ-NONLINEAR-QUOTIENT",
       "class": "CONTROL",
       "parent": "ROOT",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [],
       "exit_condition": "The accepted star density is pressure-tested under the full finite local proper-Lorentz gauge group: exact action invariance, EL equivariance/Noether vertical degeneracy, orbit/stabilizer scope, and nontriviality of the quotient operator family are classified. A scoped nonlinear Lorentz d_P is stated or the first exact obstruction is named.",
       "brief": "00_WORK/tasks/CTRL-A4D-STAR-DENSITY-LORENTZ-NONLINEAR-QUOTIENT.md"
