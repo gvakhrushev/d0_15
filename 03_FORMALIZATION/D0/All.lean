@@ -288,8 +288,8 @@ import D0.Geometry.A4DConstitutiveKernelClassification
 import D0.Geometry.A4DCrossedDerivationIntegrability
 import D0.Geometry.A4DCrossedPathAlgebraBoundary
 import D0.Geometry.A4DDiscreteEnergyKernel
-import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGaugeImageResolution
+import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DHorizontalDressingSecondJetFreedom
 import D0.Geometry.A4DJointHolonomyResidual
