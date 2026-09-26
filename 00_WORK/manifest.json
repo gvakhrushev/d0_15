@@ -23,6 +23,15 @@
       "affected_claims": [],
       "exit_condition": "Merged nightly-maintenance and nonlinear-Lorentz control rows are retired without altering their durable artifacts, and the repository control plane is internally consistent and green.",
       "brief": "00_WORK/tasks/CTRL-POST-MERGE-CONTROL-CLOSEOUT.md"
+    },
+    {
+      "id": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "IN_PROGRESS",
+      "affected_claims": [],
+      "exit_condition": "The current resolved-affine research frontier is integrated as a durable program, next EXPENSIVE tasks and Lean WORKER tasks are registered with explicit dependencies/collision fences, stale completed control tracking is retired, and launch-ready workers have isolated execution briefs.",
+      "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     }
   ]
 }
