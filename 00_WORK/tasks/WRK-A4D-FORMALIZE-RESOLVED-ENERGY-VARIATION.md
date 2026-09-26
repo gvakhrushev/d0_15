@@ -8,6 +8,25 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
 Requires merged #189 and the stable resolved-carrier contract.
 
+Repository: `gvakhrushev/d0_15`
+Base: `main`
+Branch: `wrk/a4d-formalize-resolved-energy-variation`
+Primary artifact: `03_FORMALIZATION/D0/Geometry/A4DResolvedAffineEnergy.lean`
+Execution: `GitHub-first`
+
+## Why delegated
+
+This worker is dependency-gated because the resolved-energy first variation depends on the final carrier contract. Once stabilized, positivity, distance-to-subspace, zero-locus, covariance and separating Euler variations form a coherent finite-dimensional Lean package.
+
+## GitHub execution contract
+
+Start only from current `main`; run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-RESOLVED-ENERGY-VARIATION` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+
+## Chat handoff
+
+Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
+
+
 ## Objective
 
 Formalize the resolved quadratic quotient energy and its first variation.
