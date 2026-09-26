@@ -7,16 +7,15 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
-| EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
+| EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
 | WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
-| **Total** | **3** | **0** | **0** | **1** | **4** | **1 / 10** |
+| **Total** | **2** | **0** | **0** | **1** | **3** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
 | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | CONTROL | REVIEW | ROOT | - |
-| EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 
