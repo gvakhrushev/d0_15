@@ -30,14 +30,25 @@ Resolve H-J2-SMOOTH after #208. Use only the corrected polarized (z\leftrightarr
 
 ## Required gates
 
+Certified diagonal gates 1--4 are already reached in this PR and remain regression requirements:
+
 1. Exact kernel/cokernel and regular complement at the L=4 diagonal quarter-wave.
 2. Exact first nonzero Lyapunov-Schmidt reduced potential/Euler term.
-3. Genuine symmetric-metric source projection and branch exponent (A_{res}\sim q_{UV}^{\alpha}).
-4. Nondegenerate reduced root certificate.
-5. Classify remaining polarized L=4 singular characters/orbits far enough to decide whether the diagonal orbit is representative.
-6. Quantify (C^\infty) T4 Fourier-tail decay at quarter-wave and whether induced resonant connection corrections are (o(\varepsilon_N^2)).
-7. No arbitrary spectral filter/projection.
-8. Keep finite exact stationarity distinct from asymptotic J2 equivalence; keep Noether-divergence and cosmological (bg) channels separate.
+3. Genuine symmetric-metric source projection and branch exponent.
+4. Nondegenerate reduced root certificate and C^\infty quarter-wave J² invisibility.
+
+Continuation gates now replace the old "repeat eight L=4 orbits" plan:
+
+5. Certificate the self-dual/anti-self-dual chiral block split and an explicit uniform low-frequency gap separating the resonance variety from z=1.
+6. Certificate the parameterized rank-22 family z=(w,w,i,i), its w-independent physical source channel, its SIM(2) null-line stabilizer, and the exact finite-amplitude identity S_star|pure resonant kernel=0.
+7. Certificate the w=1 parabolic reduced-quartic cancellation; then compute V6^red or otherwise prove that u=0 is an isolated zero of the unsourced reduced Euler map.
+8. On the generic rank-22 / d_incompat=2 stratum, derive parameterized V4,z and its projective critical discriminant/resultant instead of orbit-by-orbit Newton solving.
+9. Prove a finite algebraic/subanalytic resonance stratification with a uniform positive Hölder/Łojasiewicz exponent. Pointwise finite Puiseux order is not enough.
+10. Combine fixed (L-independent) smooth bump realization, IR invertibility and UV super-algebraic Fourier tails to prove every resonant correction is o(epsilon_N^2).
+11. Prove asymptotic locality / extension independence: two global smooth realizations of the same local metric 2-jet must give the same reconstructed center response in the limit.
+12. No arbitrary spectral filter/projection. Keep finite exact stationarity distinct from asymptotic J² equivalence; keep frame/grid erasure, Noether-divergence and cosmological bg channels separate.
+
+Cross-wall observation only: PR #202 exhibits related parabolic/null-line affine-residual blindness. Treat "parabolic null-line seam" as a hypothesis until both sides have compatible exact stabilizer theorems; do not edit #202 from this task.
 
 ## Terminal outcomes
 
@@ -45,7 +56,7 @@ A. `J2-SMOOTH-PUISEUX-RESONANCE-CLOSURE`: small nonlinear resonant branches exis
 
 B. `J2-SMOOTH-RESONANCE-NOGO`: some genuine metric source has no branch approaching flat.
 
-C. `J2-SMOOTH-PARTIAL-CLOSURE`: diagonal orbit closes but another polarized singular orbit remains unresolved or obstructed.
+C. `J2-SMOOTH-PARTIAL-CLOSURE`: the certified diagonal orbit closes but some resonance stratum / uniformity / locality gate remains unresolved or obstructed.
 
 ## Deliverables
 
