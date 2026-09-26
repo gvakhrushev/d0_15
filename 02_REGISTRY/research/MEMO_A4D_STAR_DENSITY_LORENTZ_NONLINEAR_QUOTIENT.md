@@ -1195,3 +1195,15 @@ directions can be promoted by:
 
 Until such a mechanism is derived, the nonlinear physical quotient should be
 taken as local-Lorentz only.
+
+
+---
+
+## Ready-state CONTROL audit
+
+PR #180 is \`Lifecycle: REVIEW\`; the CONTROL task row remains present in the
+branch manifest with state \`REVIEW\`, and the executable brief remains present,
+as required for a Ready CONTROL PR. The already-merged CONTROL rows from #175
+and #178 are retired in this execution because merge is completion. This
+audit-only commit changes no mathematical result; it exists to run repository
+guards against the final Ready-state contract.
