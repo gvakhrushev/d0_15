@@ -4,7 +4,7 @@
 **Class:** `WORKER`
 **Research lane:** `EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE`
 **Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
-**Inputs read:** `MEMO_A4D_STAR_DENSITY_LORENTZ_NONLINEAR_QUOTIENT.md` (density (4.1), quotient coordinates (10.1)–(10.3)); `MEMO_A4D_STAR_DENSITY_VARIATION_PRESSURE.md` (first variation (2.1)–(2.5)); `A4D_J2_NORMAL_COORDINATE_LOCALITY.md` (the final factor `h^{-2}` on a mesh-homogeneous response). The open coupled-rescue contract is context only and is not an input theorem.
+**Inputs read:** `MEMO_A4D_STAR_DENSITY_LORENTZ_NONLINEAR_QUOTIENT.md` (density (4.1), quotient coordinates (10.1)–(10.3)); `MEMO_A4D_STAR_DENSITY_VARIATION_PRESSURE.md` (first variation (2.1)–(2.5)); `A4D_J2_NORMAL_COORDINATE_LOCALITY.md` and merged `MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md` (the final factor `h^{-2}` in (6.4) and (7.2)). Equation (8.3) of that partial-closure memo is the raw comparison supplied here. Its normal-rescue hypothesis is not an input theorem.
 **Certificate:** `02_REGISTRY/research/certificates/a4d_j2_metric_response_sensitivity_check.py`
 
 ## 0. Terminal
