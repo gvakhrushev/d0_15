@@ -12,63 +12,96 @@ Execution: `GitHub-first`
 
 ## Why delegated
 
-Merged PR #208 established the nonlinear metric provenance of the selected star action and the pure Einstein flat ray, but also found a correctly polarized L=4 diagonal quarter-wave connection resonance. The surviving H-J2-SMOOTH problem is genuinely nonlinear and requires Lyapunov-Schmidt reduction, exact finite spectral classification and asymptotic smooth-sampling analysis.
+The remaining Einstein research question is a refinement-uniform nonlinear
+stationary-correspondence theorem. The coefficient and the diagonal source
+are already owned; uncertainty lies in the full coupled normal solve over a
+fixed smooth metric, with genuine flat moduli and growing lattice size.
 
 ## Mandatory inputs
 
-Read fully:
 - `02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md`;
 - `02_REGISTRY/research/certificates/a4d_nonlinear_einstein_j2_bridge_check.py`;
 - `02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PHYSICAL_QUOTIENT.md`;
 - `02_REGISTRY/research/ATORUS_NORMAL_JET_EINSTEIN_BRIDGE.md`;
 - `02_REGISTRY/research/ATORUS_TYPED_RESPONSE_RECONSTRUCTION.md`;
-- `02_REGISTRY/research/ATORUS_LOVELOVK_LOCAL_UNIVERSALITY.md`.
+- `02_REGISTRY/research/ATORUS_LOVELOVK_LOCAL_UNIVERSALITY.md`;
+- the current primary memo and its two named task certificates.
 
 ## Objective
 
-Resolve H-J2-SMOOTH after #208. Use only the corrected polarized (z\leftrightarrow z^{-1}) Fourier pairing.
+For every admissible fixed smooth Lorentz realization, prove
+`E_star,h[g](x) -> -(1/2)G[g](x)` and local metric 2-jet dependence. #201 owns
+only the ten quadratic small-momentum coefficients, not complete-symbol
+identity. E-NJET identifies their normal-center geometric value.
 
-## Required gates
+The user's 2026-09-26 theorem dispatch supersedes shrinking-bump and orbit
+enumeration as the main proof. Choose the global metric realization once,
+then refine. Do not reopen the certified diagonal quarter-wave source.
 
-Certified diagonal gates 1--4 are already reached in this PR and remain regression requirements:
+## Reached gates in PR #216
 
-1. Exact kernel/cokernel and regular complement at the L=4 diagonal quarter-wave.
-2. Exact first nonzero Lyapunov-Schmidt reduced potential/Euler term.
-3. Genuine symmetric-metric source projection and branch exponent.
-4. Nondegenerate reduced root certificate and C^\infty quarter-wave J² invisibility.
+1. The accepted diagonal sourced cubic Puiseux branch and smooth J² invisibility.
+2. Exact full polarized canonical IR gap: `sigma_min >= 1/2` on
+   `||theta||_1 <= 1/12`.
+3. All-constant-solder polynomial Hessian congruence and compact-family IR gap.
+4. Analytic proof parametrix with mesh-independent Wiener radius, its
+   super-algebraic full Euler residual, and a smooth formal extension for
+   admissible arbitrary fixed realizations.
+5. Symmetric zero-momentum coefficient cancellation, nonlinear normal-center
+   locality through derivative degree two, and a summed `O(h)` IR remainder.
 
-Continuation gates now replace the old "repeat eight L=4 orbits" plan:
+Finite checker owners and analytic arguments must retain their distinct status.
+The proof parametrix is an approximate solve; a cutoff used to construct it is
+not a modification of the physical action or an exact stationary branch.
 
-5. Certificate the self-dual/anti-self-dual chiral block split and an explicit uniform low-frequency gap separating the resonance variety from z=1.
-6. Certificate the parameterized rank-22 family z=(w,w,i,i), its w-independent physical source channel, its SIM(2) null-line stabilizer, and the exact finite-amplitude identity S_star|pure resonant kernel=0.
-7. Certificate the w=1 parabolic reduced-quartic cancellation; then compute V6^red or otherwise prove that u=0 is an isolated zero of the unsourced reduced Euler map.
-8. On the generic rank-22 / d_incompat=2 stratum, derive parameterized V4,z and its projective critical discriminant/resultant instead of orbit-by-orbit Newton solving.
-9. Prove a finite algebraic/subanalytic resonance stratification with a uniform positive Hölder/Łojasiewicz exponent. Pointwise finite Puiseux order is not enough.
-10. Prove the shrinking-bump J² estimate inside the nonlinear solder quotient: for rho_h=h^alpha with 1/2<alpha<1, establish the actual response remainder O(h^(1-alpha))+O(h^(4alpha-2))+O(h^infty), with the coarse balanced choice alpha=3/5 giving O(h^(2/5)) if the stated analytic/Wiener bounds hold.
-11. Prove uniform flat isolation + nonzero local degree on each connected compact resonance stratum; by analytic/subanalytic Łojasiewicz this gives one positive Hölder exponent per stratum. Equivalently exclude any nontrivial zero-source stationary germ accumulating at flat. A disconnected finite curved vacuum bounded away from flat is harmless for J².
-12. Deduce stationary-sheet independence and two-bump locality: two shrinking bumps with the same quadratic 2-jet agree exactly on the radius-two leading stencil, and their response difference is only the vanishing analytic remainders plus O(h^infty) UV rescue. Arbitrary-global-sampling independence may remain downstream.
-12. No arbitrary spectral filter/projection. Keep finite exact stationarity distinct from asymptotic J² equivalence; keep frame/grid erasure, Noether-divergence and cosmological bg channels separate.
+## Single remaining gate
 
-Cross-wall observation only: PR #202 exhibits the same rank-two parabolic seam. On a fixed-rank-r stratum, Psi_r(M,t): omega↦t∧(Λ^r M)omega is a complete coordinate of the cokernel class: Psi_r(M,t)=Psi_r(M,t') iff t-t'∈im M. For a null rotation, [Λ^2(I-P)] determines the degenerate plane Pi and its radical null line ell=Pi∩Pi^perp; this is the top-nonzero-compound seam datum. Treat Psi_r as a rank-stratified quotient coordinate/resolution candidate, not a globally continuous action invariant or a new I-channel. Live #202 now has an exact enlarged parabolic curved family; for this task the only load-bearing cross-wall question is whether any nontrivial physical stationary germ from that family accumulates at the flat quotient.
+Prove H-NORMAL-RESCUE in primary memo Section 8 for the actual full connection
+Euler correspondence: existence, a refinement-uniform normal Hölder estimate
+for all flat-approaching sheets over the slowly varying background, and the
+associated metric-response bound, including retained physical flat moduli.
+
+Individual-character isolation and degree are insufficient if coupled mode
+count, rank-changing complements, or slow-background perturbations are not
+controlled. Verify every tangent/ambient Euler equation; a restricted gradient
+must not replace the full stationarity equation. The corrected parabolic
+control has `j` flat and `(gamma,delta)` normal, not an isolated origin.
+
+No new child tasks are registered by this executor. Minimal certificate
+requests for CONTROL live in primary memo Section 11.
 
 ## Terminal outcomes
 
-A. `J2-SMOOTH-PUISEUX-RESONANCE-CLOSURE`: small nonlinear resonant branches exist and all smooth-sampling resonant corrections are asymptotically invisible at J2 order.
+A. `NAKED-STAR-J2-LOCAL-EINSTEIN-OPERATOR-CLOSED`: all theorem hypotheses owned,
+with the same-object metric-only local response `E_star=-(1/2)G`.
 
-B. `J2-SMOOTH-RESONANCE-NOGO`: some genuine metric source has no branch approaching flat.
+B. `J2-SMOOTH-RESONANCE-NOGO`: an actual full star source/normal germ certifies
+failure of the specified Einstein-limit theorem. A disconnected finite curved
+vacuum or an abstract inference countermodel does not certify B.
 
-C. `J2-SMOOTH-PARTIAL-CLOSURE`: the certified diagonal orbit closes but some resonance stratum / uniformity / locality gate remains unresolved or obstructed.
+C. `J2-SMOOTH-PARTIAL-CLOSURE`: current precise blocker
+`NAKED-STAR-J2-BLOCKED-UNIFORM-COUPLED-NORMAL-RESCUE`.
 
-## Deliverables
+## Deliverables and validation
 
-Durable research memo, exact symbolic/rational low-order certificate, reproducible root/nondegeneracy certificate, smooth-tail estimate, theorem-ready statements, and terminal A/B/C.
+One durable theorem memo: exact hypotheses, checker/analytic/open separation,
+full summed remainder, failure modes, minimal certificate requests and terminal.
+Run the new narrow IR certificate and relevant repository/work/protocol/view
+guards. Unchanged diagonal work is a retained input. No Lean build is required
+for research-only edits.
 
-No Lean/claims/BOOK/release promotion. Do not edit #202 or Palatini-span primary artifacts.
+No Lean/claims/BOOK/release promotion. Do not edit #202 or Palatini-span primary
+artifacts. No new invariant, Holst/phi channel, coefficient search, primary
+shrinking metric bump, or globally unique connection requirement.
 
 ## GitHub execution contract
 
-Start from fresh current `main`; lifecycle start; Draft PR before substantive edits; self-retire before Ready; never self-merge.
+Continue the existing Draft PR #216 and its branch; do not duplicate execution.
+Keep branch manifest equal to the draft lifecycle. A mathematically unresolved
+full rescue keeps this PR Draft/BLOCKED. Before Ready, clear its blocker,
+self-retire the task and regenerate views; never self-merge.
 
 ## Chat handoff
 
-Return PR, tip SHA, terminal A/B/C, exact reduced branch statement, and only the first remaining blocker.
+Return PR, tip SHA, terminal, exact reached gates and only the first remaining
+mathematical blocker. Do not claim continuum Einstein closure from a parametrix.
