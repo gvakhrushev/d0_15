@@ -9,7 +9,8 @@ Channels (do NOT collapse adj=opp):
 with adj = |S1capS2|=1, opp = |S1capS2|=0, eta = Lorentz, n = observer h_n.
 
 Does NOT claim a curved stationary root or a final F4 no-go.
-Includes scoped 6D Cayley + ambient ORIGIN28 span obstructions.
+Includes scoped 6D Cayley + ambient ORIGIN28 + free absolute solder
++ all-site neighbor ambient / Pi-gauge survival span obstructions.
 Does NOT open Holst/phi/new I-channels.
 """
 from __future__ import annotations
@@ -156,12 +157,21 @@ def two_link_links():
     return links
 
 
-def star_action(links, solder_scale=1):
-    """Canonical identity solder times scale; exact star density."""
+def star_action(links, solder_scale=1, theta_by_site=None):
+    """Exact star density.
+
+    Default: canonical identity solder times scale at every site.
+    Optional theta_by_site: dict site -> 4x4 matrix whose columns are solder
+    legs (absolute coframe). When set, solder_scale is ignored.
+    """
     total = sp.Integer(0)
     basis = [I4[:, r] for r in range(4)]
     for x in SITES:
-        vs = [solder_scale * b for b in basis]
+        if theta_by_site is None:
+            vs = [solder_scale * b for b in basis]
+        else:
+            Th = theta_by_site.get(x, I4)
+            vs = [Th[:, r] for r in range(4)]
         for r, s in PAIRS:
             C = bivector_of_tangent(curvature(plaquette(links, x, r, s)))
             u, v = [i for i in range(4) if i not in (r, s)]
@@ -821,10 +831,306 @@ print(
 )
 
 
+
+# ===========================================================================
+# SECTION H -- EXACT free absolute solder ORIGIN16 span obstruction (scoped)
+# ===========================================================================
+# The four I-channels are joint-residual scalars of (links, b) only: they are
+# blind to absolute solder.  At the same H1 background (C!=0, I active),
+# exact FD in the 16 ORIGIN coframe-matrix entries therefore has dI=0 while
+# grad_Theta S_star is nonzero on 12 of 16 dirs.  Hence -grad S_star is not
+# in span{grad I_j} inside the free-solder sector, independently of the
+# ORIGIN28 link/b obstruction.
+print("SECTION_SPAN_OBSTRUCTION_FREE_SOLDER_ORIGIN16")
+
+def _solder_span_at(params, bf, h_step=Rational(1, 20)):
+    links0 = make_links_6(params)
+    S0 = star_S_id(links0)
+    I0 = four_channel_I(links0, bf)
+    nz = nonzero_curved_cells(links0)
+    gcols = []
+    Icols = []
+    for a in range(4):
+        for b in range(4):
+            delta = zeros(4)
+            delta[a, b] = h_step
+            theta = {x: I4 for x in SITES}
+            theta[ORIGIN] = I4 + delta
+            S1 = star_action(links0, theta_by_site=theta)
+            # I is solder-independent; still evaluate for an exact zero check.
+            I1 = four_channel_I(links0, bf)
+            gcols.append(sp.simplify((S1 - S0) / h_step))
+            Icols.append(
+                Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+            )
+    gvec = Matrix(gcols)
+    B = Matrix(len(gcols), 4, lambda i, j: Icols[i][j])
+    return {
+        "nz": nz,
+        "I": I0,
+        "rankB": B.rank(),
+        "rankAug": B.row_join(-gvec).rank(),
+        "g_nonzero": sum(1 for x in gvec if x != 0),
+        "I_resp_zero": all(v == zeros(4, 1) for v in Icols),
+        "n_dirs": len(gcols),
+    }
+
+_sol = _solder_span_at(p6, bf6)
+check("SOLDER16_CURVED_CELLS_POSITIVE", _sol["nz"] > 0)
+check("SOLDER16_I_CHANNELS_ACTIVE", any(x != 0 for x in _sol["I"]))
+check("SOLDER16_N_DIRS_16", _sol["n_dirs"] == 16)
+check("SOLDER16_I_RESPONSE_IDENTICALLY_ZERO", _sol["I_resp_zero"])
+check("SOLDER16_G_NONZERO", _sol["g_nonzero"] > 0)
+check("SOLDER16_RESPONSE_RANK_0", _sol["rankB"] == 0)
+check("SOLDER16_AUGMENTED_RANK_1", _sol["rankAug"] == 1)
+check("SOLDER16_EXACT_NOT_IN_SPAN", _sol["rankB"] < _sol["rankAug"])
+print(
+    "SOLDER16_nz", _sol["nz"],
+    "rankB", _sol["rankB"],
+    "rankAug", _sol["rankAug"],
+    "g_nonzero", _sol["g_nonzero"],
+)
+print(
+    "RESULT_SOLDER16: at p=(2/5)^6 with matched b=e0 and C!=0 / I active,"
+    " exact FD in 16 ORIGIN absolute-solder matrix entries has dI=0 and"
+    " nonzero grad_Theta S_star (g_nonzero=%d), so rankB=0 < rankAug=1."
+    % _sol["g_nonzero"]
+)
+print(
+    "SCOPE_SOLDER16: free ORIGIN absolute solder only; I-blind by construction."
+    " Independent of ORIGIN28 link/b obstruction; still not a global F4 no-go."
+)
+
+print("SECTION_SPAN_OBSTRUCTION_FREE_SOLDER_ORIGIN16_MIXED")
+_sol_mix = _solder_span_at(_p_mix, bf6)
+check("SOLDER16_MIX_CURVED_CELLS_POSITIVE", _sol_mix["nz"] > 0)
+check("SOLDER16_MIX_I_CHANNELS_ACTIVE", any(x != 0 for x in _sol_mix["I"]))
+check("SOLDER16_MIX_I_RESPONSE_IDENTICALLY_ZERO", _sol_mix["I_resp_zero"])
+check("SOLDER16_MIX_G_NONZERO", _sol_mix["g_nonzero"] > 0)
+check("SOLDER16_MIX_EXACT_NOT_IN_SPAN",
+      _sol_mix["rankB"] < _sol_mix["rankAug"])
+print(
+    "SOLDER16_MIX_nz", _sol_mix["nz"],
+    "rankB", _sol_mix["rankB"],
+    "rankAug", _sol_mix["rankAug"],
+    "g_nonzero", _sol_mix["g_nonzero"],
+)
+print(
+    "RESULT_SOLDER16_MIX: mixed-sign Cayley background also has free ORIGIN"
+    " solder rankB < rankAug with C!=0, I active, and I-response zero."
+)
+
+
+# ===========================================================================
+# SECTION I -- EXACT all-site neighbor ambient + Pi-gauge survival (scoped)
+# ===========================================================================
+# Ambient left-Cayley so(1,3) on every edge at ORIGIN and its four
+# axis-neighbors on the L=2 torus (5 sites x 4 roles x 6 gens = 120), plus
+# 4 free matched-edge b dirs, plus 16 free ORIGIN absolute-solder dirs
+# (total 140).  Then enlarge the *canceling* space by 6 global Ad-Lorentz
+# gauge directions (simultaneous Ad on all links + matching solder frame
+# rotation) and re-test whether -g still lies outside span{grad I_j}+T_gauge.
+# Surviving obstruction => not absorbed by this Pi/gauge enlargement.
+print("SECTION_SPAN_OBSTRUCTION_ALLSITE_NEIGHBOR_PI")
+
+_NEIGHBOR_SITES = [
+    ORIGIN,
+    (1, 0, 0, 0),
+    (0, 1, 0, 0),
+    (0, 0, 1, 0),
+    (0, 0, 0, 1),
+]
+
+def _allsite_neighbor_pi_at(params, bf, h_step=Rational(1, 20)):
+    links0 = make_links_6(params)
+    S0 = star_S_id(links0)
+    I0 = four_channel_I(links0, bf)
+    nz = nonzero_curved_cells(links0)
+    gcols = []
+    Icols = []
+    # (i) all-site neighbor left-Cayley link dirs
+    for x in _NEIGHBOR_SITES:
+        for r in range(4):
+            for g in GENS6:
+                links1 = dict(links0)
+                links1[(x, r)] = sp.simplify(
+                    cayley_from_A(h_step * g) * links0[(x, r)]
+                )
+                S1 = star_S_id(links1)
+                I1 = four_channel_I(links1, bf)
+                gcols.append(sp.simplify((S1 - S0) / h_step))
+                Icols.append(
+                    Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+                )
+    n_link = len(gcols)
+    # (ii) free matched-edge b
+    base_b = bf[(ORIGIN, 0)]
+    for a in range(4):
+        bf1 = zero_bfield()
+        delta = zeros(4, 1)
+        delta[a] = h_step
+        bf1[(ORIGIN, 0)] = base_b + delta
+        S1 = star_S_id(links0)
+        I1 = four_channel_I(links0, bf1)
+        gcols.append(sp.simplify((S1 - S0) / h_step))
+        Icols.append(
+            Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+        )
+    n_b = 4
+    # (iii) free ORIGIN absolute solder
+    for a in range(4):
+        for b in range(4):
+            delta = zeros(4)
+            delta[a, b] = h_step
+            theta = {x: I4 for x in SITES}
+            theta[ORIGIN] = I4 + delta
+            S1 = star_action(links0, theta_by_site=theta)
+            I1 = four_channel_I(links0, bf)
+            gcols.append(sp.simplify((S1 - S0) / h_step))
+            Icols.append(
+                Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+            )
+    n_solder = 16
+    gvec = Matrix(gcols)
+    B = Matrix(len(gcols), 4, lambda i, j: Icols[i][j])
+    rankB = B.rank()
+    rankAug = B.row_join(-gvec).rank()
+
+    # Pi / gauge survival: build 6 global Ad-Lorentz dirs in the SAME ambient
+    # coordinates (link neighbor block + zeros on b and solder raw entries,
+    # with solder frame rotated into the solder block).
+    # Gauge variation recorded as FD of the field coordinates themselves is
+    # expensive; instead append the *action/I responses* of the 6 gauge
+    # moves as extra canceling columns in response space by testing
+    # whether -g lies in span{B cols} after allowing gauge to cancel via
+    # an enlarged ambient that includes gauge-orbit tangent vectors.
+    #
+    # Concrete: for each so(1,3) gen X, apply Ad_cayley(hX) to ALL links and
+    # left-multiply ORIGIN solder by cayley(hX); measure the induced
+    # (dS, dI) and ask whether -g_ambient is in span of I-columns after
+    # adjoining the 6 gauge *field-tangent* vectors expressed in ambient
+    # coords.  We realize the gauge tangent in ambient by finite-differencing
+    # the gauge-transformed configuration against the background in each
+    # ambient slot (link / b / solder), which equals the directional
+    # derivative of the gauge orbit.
+    gauge_vecs = []
+    for g in GENS6:
+        Lam = cayley_from_A(h_step * g)
+        LamI = sp.simplify(Lam.inv())
+        links_g = {
+            k: sp.simplify(Lam * L * LamI) for k, L in links0.items()
+        }
+        # b transforms as Lorentz vector at matched edge (observer chart):
+        bf_g = zero_bfield()
+        bf_g[(ORIGIN, 0)] = sp.simplify(Lam * bf[(ORIGIN, 0)])
+        theta_g = {x: I4 for x in SITES}
+        theta_g[ORIGIN] = Lam  # left frame rotation of identity solder
+        # Ambient components of gauge orbit: FD of each ambient coordinate.
+        # Link block: for each neighbor edge / gen, compare Ad-transformed
+        # link to left-Cayley chart around background (use Frobenius pairing
+        # against the 6 gens via (L1 L0^{-1} - I) projection).
+        v = []
+        for x in _NEIGHBOR_SITES:
+            for r in range(4):
+                L0 = links0[(x, r)]
+                Lg = links_g[(x, r)]
+                # Left-invariant algebra element ~ (Lg L0^{-1} - I)/h at order h;
+                # expand cayley inverse: project onto gens by Killing form.
+                Delta = sp.simplify((Lg * L0.inv() - I4) / h_step)
+                for gen in GENS6:
+                    # <Delta, gen>_K = tr(Delta gen) / norm; gens are
+                    # orthogonal under Frobenius for this basis choice.
+                    v.append(sp.simplify((Delta.T * gen).trace()))
+        # b block: (Lam b - b)/h
+        db = sp.simplify((bf_g[(ORIGIN, 0)] - bf[(ORIGIN, 0)]) / h_step)
+        for a in range(4):
+            v.append(sp.simplify(db[a]))
+        # solder block: (Lam - I)/h entries
+        dTh = sp.simplify((Lam - I4) / h_step)
+        for a in range(4):
+            for b in range(4):
+                v.append(sp.simplify(dTh[a, b]))
+        gauge_vecs.append(Matrix(v))
+
+    check("ALLSITE_PI_GAUGE_VEC_DIM_MATCH",
+          all(gv.rows == len(gcols) for gv in gauge_vecs))
+    # Canceling matrix: I-columns (4) plus gauge orbit tangents (6)
+    Cmat = B.row_join(Matrix.hstack(*gauge_vecs))
+    rankC = Cmat.rank()
+    rankCAug = Cmat.row_join(-gvec).rank()
+    return {
+        "nz": nz,
+        "I": I0,
+        "n_link": n_link,
+        "n_b": n_b,
+        "n_solder": n_solder,
+        "n_dirs": len(gcols),
+        "rankB": rankB,
+        "rankAug": rankAug,
+        "rankC": rankC,
+        "rankCAug": rankCAug,
+        "g_nonzero": sum(1 for x in gvec if x != 0),
+    }
+
+_asp = _allsite_neighbor_pi_at(p6, bf6)
+check("ALLSITE_PI_CURVED_CELLS_POSITIVE", _asp["nz"] > 0)
+check("ALLSITE_PI_I_CHANNELS_ACTIVE", any(x != 0 for x in _asp["I"]))
+check("ALLSITE_PI_N_LINK_120", _asp["n_link"] == 120)
+check("ALLSITE_PI_N_DIRS_140", _asp["n_dirs"] == 140)
+check("ALLSITE_PI_RESPONSE_RANK_4", _asp["rankB"] == 4)
+check("ALLSITE_PI_AUGMENTED_GT_RESPONSE", _asp["rankB"] < _asp["rankAug"])
+check("ALLSITE_PI_GAUGE_SURVIVAL", _asp["rankC"] < _asp["rankCAug"])
+print(
+    "ALLSITE_PI_nz", _asp["nz"],
+    "n_dirs", _asp["n_dirs"],
+    "rankB", _asp["rankB"],
+    "rankAug", _asp["rankAug"],
+    "rankC", _asp["rankC"],
+    "rankCAug", _asp["rankCAug"],
+    "g_nonzero", _asp["g_nonzero"],
+)
+print(
+    "RESULT_ALLSITE_PI: at p=(2/5)^6 matched b=e0, exact FD ambient on"
+    " 5-site neighbor left-Cayley (120) + 4 free-b + 16 free ORIGIN solder"
+    " has rankB=4 < rankAug, and adjoining 6 global Ad-Lorentz gauge"
+    " tangents still leaves rankC < rankCAug (Pi/gauge survival)."
+)
+print(
+    "SCOPE_ALLSITE_PI: neighbor-site ambient (not full 16-site torus) +"
+    " ORIGIN solder + matched b + global Ad-Lorentz gauge only; still not"
+    " a chart-independent global F4 no-go / free-solder-all-sites claim."
+)
+
+print("SECTION_SPAN_OBSTRUCTION_ALLSITE_NEIGHBOR_PI_MIXED")
+_asp_mix = _allsite_neighbor_pi_at(_p_mix, bf6)
+check("ALLSITE_PI_MIX_CURVED_CELLS_POSITIVE", _asp_mix["nz"] > 0)
+check("ALLSITE_PI_MIX_I_CHANNELS_ACTIVE", any(x != 0 for x in _asp_mix["I"]))
+check("ALLSITE_PI_MIX_AUGMENTED_GT_RESPONSE",
+      _asp_mix["rankB"] < _asp_mix["rankAug"])
+check("ALLSITE_PI_MIX_GAUGE_SURVIVAL",
+      _asp_mix["rankC"] < _asp_mix["rankCAug"])
+print(
+    "ALLSITE_PI_MIX_nz", _asp_mix["nz"],
+    "rankB", _asp_mix["rankB"],
+    "rankAug", _asp_mix["rankAug"],
+    "rankC", _asp_mix["rankC"],
+    "rankCAug", _asp_mix["rankCAug"],
+)
+print(
+    "RESULT_ALLSITE_PI_MIX: mixed-sign background also has all-site neighbor"
+    " + solder ambient obstruction with Pi/gauge survival."
+)
+
+
 print("RESULT_F4_CHECKPOINT: support obstruction on R=0 locus certified;"
       " response matrix M rank=4/ker=0; scoped 6D Cayley span obstruction"
       " rankB=4<rankAug=5 on a 5-point rational grid; ambient ORIGIN28"
       " (24 link + 4 free-b) span obstruction rankB=4<rankAug=5 at two"
-      " rational backgrounds; one-boost structural lemmas certified.")
+      " rational backgrounds; free ORIGIN absolute-solder ORIGIN16"
+      " obstruction (I-blind, g!=0) at two backgrounds; all-site neighbor"
+      " ambient (120 link + 4 b + 16 solder) obstruction with global"
+      " Ad-Lorentz Pi/gauge survival at two backgrounds; one-boost"
+      " structural lemmas certified.")
 print("SCOPE: no curved stationary witness; no broad finite-carrier claim;"
-      " no continuum Einstein; ambient widen is NOT yet a global Pi no-go.")
+      " no continuum Einstein; free-solder + neighbor Pi widen is NOT yet"
+      " a global all-site / full-gauge F4 no-go.")
