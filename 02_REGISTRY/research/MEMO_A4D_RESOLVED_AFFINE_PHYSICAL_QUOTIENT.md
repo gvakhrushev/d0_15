@@ -162,3 +162,120 @@ This is **not** a claim that the flat seam is 192-dimensional: at \(L=I\),
 \[
 \boxed{\texttt{S\_STAR-CARRIES-EINSTEIN-SEED (c\_sp=0, c\_eta!=0)}}
 \]
+
+
+## 5. EXACT/DERIVED — seam stabilizers and final resolved quotient accounting
+
+The selected graph-closure result resolves, but does not erase, the rank seam.
+
+Let
+[
+D_L:C^0(X,V)	o C^1_+(X,V).
+]
+
+On the declared generic curved controls,
+
+[
+operatorname{rank}D_L=64.
+]
+
+The node space also has dimension 64, so
+
+[
+ker D_L=0,
+qquad
+dim(C^1_+/operatorname{im}D_L)=256-64=192.
+]
+
+At the exact flat point,
+
+[
+operatorname{rank}D_0=60,
+qquad
+dimker D_0=4,
+]
+hence the intrinsic affine-edge quotient is
+
+[
+dim Q_0=256-60=196.
+]
+
+The graph-closure lift stores a limiting 64-plane
+(mathcal I_*supset U=operatorname{im}D_0), with
+
+[
+G_*=mathcal I_*/U,qquad dim G_*=4.
+]
+
+Crucially, the landed graph-closure theorem does **not** promote (G_*) to
+endpoint gauge. The true flat gauge image remains (U), and the four constant
+node translations remain the flat stabilizer. Therefore no quotient dimension
+is silently changed:
+
+[
+oxed{Q_{m generic}:192,qquad Q_{m flat}:196.}
+]
+
+The two charts are reconciled by the resolved incidence fibre, not identified.
+
+### Stabilizers
+
+- nondegenerate local-Lorentz solder sector: trivial Lorentz stabilizer;
+- generic curved affine node action: (ker D_L=0);
+- exact flat affine node action: four-dimensional constant-translation
+  stabilizer (ker D_0);
+- limiting incidence directions (G_*): resolution data, not additional gauge.
+
+### Final action/Euler/physical dimensions for the declared family
+
+The exact separating variations in §4 prove rank two for the
+coefficient-to-Euler map on a genuine generic physical quotient chart. Both
+channels are gauge invariant and nonconstant on the descended configuration
+space. Therefore, for the declared two-channel resolved family,
+
+[
+oxed{
+d_A=2,qquad
+d_E=2,qquad
+d_{P,mathrm{aff,res}}=2.
+}
+]
+
+This is a **global family** statement. It does not say that both channels appear
+in every local jet at every stratum. At exact flat holonomy,
+
+[
+Q(R)=O(arepsilon^{10}),
+]
+
+so the quadratic/linearized physical dynamics has only the star channel:
+
+[
+oxed{
+d_{P,mathrm{flat,quadratic}}=1,
+qquad
+K_{mathrm{metric}}=rac14K_{E_eta},
+qquad
+eta_{m sp}=0.
+}
+]
+
+Thus the final resolved picture is consistent:
+
+- two physical nonlinear action channels globally;
+- one flat quadratic propagating metric channel;
+- that channel is exactly the finite Einstein ray;
+- the second channel repairs/detects the affine quotient away from the seam
+  and is auxiliary at generic stationary points.
+
+### Terminal
+
+[
+oxed{
+	exttt{RESOLVED-AFFINE-TWO-CHANNEL-PHYSICAL-FAMILY-SURVIVES-WITH-PURE-EINSTEIN-FLAT-RAY}
+}
+]
+
+No continuum Einstein field equation is claimed here. The continuum
+identification still uses the independently landed normal-jet bridge and its
+stated hypotheses.
