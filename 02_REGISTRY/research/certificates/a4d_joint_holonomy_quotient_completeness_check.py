@@ -248,6 +248,83 @@ check("COMPLEMENT_EXTRA_VECTOR_NONGAUGE",
 check("INCIDENT_ORBIT_DETECTS_COMPLEMENT_EXTRA_VECTOR",
       Jinc * w != sp.zeros(Jinc.rows, 1))
 
+# Hostile generic control: the checkerboard/complement defect above is not a
+# universal identity. A second exact rational Lorentz-link word set makes all
+# four cross-type spatial-Role orbits quotient-complete in every sector.
+ALT_LINK = [
+    sp.simplify(BOOST * RBC),
+    sp.simplify(BOOST * RCD),
+    sp.simplify(RCD * RBC),
+    sp.simplify(BOOST * RCD * RBC.inv()),
+]
+
+def alt_plaquette(r, s):
+    Lr, Ls = ALT_LINK[r], ALT_LINK[s]
+    return sp.simplify(Lr * Ls * Lr.inv() * Ls.inv())
+
+def alt_face_symbol(r, s, chi):
+    Lr, Ls = ALT_LINK[r], ALT_LINK[s]
+    P = alt_plaquette(r, s)
+    T = sp.zeros(4, 16)
+    T[:, 4*r:4*r+4] = sp.simplify(I4 - chi[s] * P * Ls)
+    T[:, 4*s:4*s+4] = sp.simplify(chi[r] * Lr - P)
+    return P, T
+
+for r, s in PAIRS:
+    check("ALT_GENERIC_PLAQUETTE_" + str(r) + str(s),
+          sp.factor((I4 - alt_plaquette(r, s)).det())
+          == sp.Rational(-64, 9))
+
+alt_inc_sym_ranks = []
+alt_comp_sym_ranks = []
+alt_independence = []
+
+for chi in MOMENTA:
+    fdata = {p: alt_face_symbol(*p, chi) for p in PAIRS}
+    by = {name: [] for name in ORBIT_NAMES}
+
+    for p1 in PAIRS:
+        P1, T1 = fdata[p1]
+        for p2 in PAIRS:
+            if p1 == p2:
+                continue
+            P2, T2 = fdata[p2]
+            by[orbit_category(p1, p2)].append(
+                joint_block(P1, T1, P2, T2)
+            )
+
+    tag = "".join("p" if q == 1 else "m" for q in chi)
+    for name in (
+        "T_TO_S_INC", "S_TO_T_INC",
+        "T_TO_S_COMP", "S_TO_T_COMP",
+    ):
+        check("ALT_CROSS_ORBIT_COMPLETE_" + name + "_" + tag,
+              sp.Matrix.vstack(*by[name]).to_DM().rank() == 12)
+
+    H_inc = (
+        eta_gram(by["T_TO_S_INC"])
+        + eta_gram(by["S_TO_T_INC"])
+    )
+    H_comp = (
+        eta_gram(by["T_TO_S_COMP"])
+        + eta_gram(by["S_TO_T_COMP"])
+    )
+    alt_inc_sym_ranks.append(H_inc.to_DM().rank())
+    alt_comp_sym_ranks.append(H_comp.to_DM().rank())
+
+    pair = sp.Matrix.hstack(
+        sp.Matrix(H_inc).reshape(256, 1),
+        sp.Matrix(H_comp).reshape(256, 1),
+    )
+    alt_independence.append(pair.to_DM().rank())
+
+check("ALT_PAIR_EXCHANGE_INCIDENT_COMPLETE",
+      set(alt_inc_sym_ranks) == {12})
+check("ALT_PAIR_EXCHANGE_COMPLEMENT_COMPLETE",
+      set(alt_comp_sym_ranks) == {12})
+check("ALT_TWO_SYMMETRIC_CROSS_ACTIONS_INDEPENDENT",
+      set(alt_independence) == {2})
+
 # Orientation/reversal scalar-channel control.
 P1 = sp.simplify(BOOST * RCD)
 P2 = sp.simplify(RBC * BOOST * RBC.inv())
@@ -274,7 +351,7 @@ check("FLAT_JOINT_RESIDUAL_ZERO",
       joint_residual(I4, flat_t1, I4, flat_t2) == sp.zeros(4, 1))
 
 print("RESULT_FULL_MAP: sector-by-sector rank 12 with rank-4 node gauge; global rank 192 and kernel exactly node gauge on the generic homogeneous curved L=2 control.")
-print("RESULT_ROLE_ORBITS: either incident T->S or S->T orbit is quotient-complete by itself; complementary orbits miss exactly one nongauge mode.")
-print("RESULT_CHECKERBOARD: the unique complementary defect is at (-1,-1,+1,+1), one of the three previously owned Lorentz-null checkerboard sectors.")
+print("RESULT_ROLE_ORBITS: incident cross-type orbits are complete on the primary control; its complementary defect is a special background resonance, not universal.")
+print("RESULT_SPECIAL_RESONANCE: one symmetric control has a complementary-orbit defect at (-1,-1,+1,+1), but an independent generic link control removes it; the checkerboard coincidence is background-dependent, not a selector theorem.")\nprint("RESULT_SELECTOR: even after pair-exchange symmetry, incident and complementary cross-type Lorentz quadratics are independent and each quotient-complete on the hostile generic control, so symmetry+completeness leave a genuine action modulus.")
 print("RESULT_SCALAR: equal-weight Lorentz quadratics are quotient-complete; target reversal preserves eta but not the rest-observer positive scalar.")
 print("RESULT_FLAT: polynomial joint-residual terms vanish at flat holonomy and do not alter the accepted flat Hessian.")
