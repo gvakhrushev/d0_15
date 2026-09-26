@@ -66,9 +66,25 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    sites; 12 satellite complementary components are forced into `span{e0,e1}`;
    free-B necessary residuals are automatic on `ker H_v`.
 
-4. **Span criterion with `R!=0` -- OPEN (primary next blocker).**
-   Seek `C(x)!=0` and `-gradS_star in span{gradI_j}` (projected), solve `c`,
-   exact-verify full Euler.  Multistart only over geometry `x`.
+4. **Scoped exact span obstruction in a 6D Cayley chart (this PR).**
+   At the rational point `p=(2/5)^6` in the six Cayley generators
+   (boosts 01/02/03 + rots 12/13/23) with matched `b=e0` on the origin A-edge,
+   exact finite-difference gradients satisfy
+
+      rank B = 4,   rank[B | -g] = 5
+
+   over `Q`, with `C!=0` (25 curved cells) and all four `I_j` active.
+   Therefore `-grad S_star` is **not** in `im B = span{grad I_j}` inside this
+   chart.  A five-point rational grid in the same chart (including mixed signs)
+   all repeat `rank B=4 < rank[B|-g]=5` with `C!=0` and active `I_j`.
+   Certificate sections `SECTION_SPAN_OBSTRUCTION_6D` and
+   `SECTION_SPAN_OBSTRUCTION_6D_GRID`.
+   Scope: declared 6-parameter Cayley + matched translation only; not yet a
+   global F4 no-go over full field space / all Pi projections.
+
+5. **2D Cayley subtangent warning.**
+   In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
+   `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
 ### EXACT/CERTIFIED -- homogeneous word no-gos (this PR, parallel packet)
 
@@ -93,7 +109,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
 
     BOXED:
     F4-SUPPORT-OBSTRUCTION-ON-R-EQUALS-ZERO;
-    RESPONSE-MATRIX-RANK-4-KER-0-ADJ-OPP-INDEPENDENT
+    RESPONSE-MATRIX-RANK-4-KER-0-ADJ-OPP-INDEPENDENT;
+    SCOPED-6D-CAYLEY-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-ON-5-POINT-RATIONAL-GRID
 
 Supporting:
 
@@ -106,15 +123,16 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-Geometry-only span criterion with active `R=R_*(C)!=0`:
+Two parallel exactification tracks (both allowed; do not collapse):
 
-- find exact root `(x,c)` with `C!=0` and full Euler zero, then L=3 hostile
-  control; **or**
-- prove scoped obstruction that `-gradS_star` never lies in `span{gradI_j}` on the
-  declared nondegenerate curved class with active residual.
+A. **Four-channel span:** widen the scoped 6D Cayley / 5-point-grid obstruction
+   toward a chart-independent / Pi-projected statement, **or** find geometry
+   outside that chart where `-grad S_star in span{grad I_j}` with `C!=0`, solve
+   exact `c`, verify full Euler, then L=3 hostile control.
 
-Secondary (star-only scout exactification): rationalize the apparent
-Cayley/LDU stationary manifold if it survives the four-channel filter.
+B. **Star-only / E(2) scout:** exactify the parallel parabolic E(2) little-group
+   8-internal + 6-transverse / 13-free rational system and check it against the
+   four-channel filter / R=R_*(C) picture.
 
 Do **not** restart from `(a,b)` tuning or from forcing `R=0`.
 
@@ -223,9 +241,11 @@ A full-Euler scan was repeated after restricting each link to subgroups of
 For the (E(2)) three-parameter-per-link sector, a representative root has
 
 [
-|mathrm{EL}_{m full}|_2=4.29	imes10^{-14},
+|mathrm{EL}_{
+m full}|_2=4.29	imes10^{-14},
 qquad
-|C|_{m scout}=0.34535,
+|C|_{
+m scout}=0.34535,
 ]
 
 with (detTheta=-1) and
@@ -369,7 +389,9 @@ come from Lorentz variations transverse to the (E(2)) little-group
 subalgebra:
 
 [
-oxed{14=8_{m internal}+6_{m transverse}.}
+oxed{14=8_{
+m internal}+6_{
+m transverse}.}
 ]
 
 This gives a cleaner symbolic attack:
