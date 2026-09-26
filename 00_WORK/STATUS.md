@@ -8,15 +8,14 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 1 | 0 | 0 | 2 | 3 | 2 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
-| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **2** | **0** | **0** | **2** | **4** | **2 / 10** |
+| WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
+| **Total** | **1** | **0** | **0** | **2** | **3** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
 | CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | CONTROL | PLANNED | ROOT | - |
-| WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1 | WORKER | PLANNED | CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | D0-TRACEABILITY-STATUS-TAXONOMY-001, D0-FINAL-BRIDGE-INDEX-001 |
 | CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE | CONTROL | REVIEW | ROOT | - |
 | CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT | CONTROL | REVIEW | ROOT | - |
 
