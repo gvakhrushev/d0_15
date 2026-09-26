@@ -109,10 +109,10 @@
    "d": 3,
    "dimN": 4,
    "rankQA_on_N": 3,
-   "dimN0": 0,
+   "dimN0": 1,
    "brief_expected_dimN0": 1,
-   "certified_dimN0": 0,
-   "brief_reproduced": false
+   "certified_dimN0": 1,
+   "brief_reproduced": true
   },
   {
    "orbit": 6,
@@ -147,10 +147,10 @@
    "d": 1,
    "dimN": 2,
    "rankQA_on_N": 1,
-   "dimN0": 0,
+   "dimN0": 1,
    "brief_expected_dimN0": 1,
-   "certified_dimN0": 0,
-   "brief_reproduced": false
+   "certified_dimN0": 1,
+   "brief_reproduced": true
   },
   {
    "orbit": 8,
@@ -181,11 +181,12 @@
     1,
     1
    ],
-   "rank": 29,
-   "nullity": 5,
-   "connection_only": 2,
-   "metric_only": 1,
-   "mixed": 2
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 8,
+   "rank_H_J": 22,
+   "nullity": 12,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 1,
@@ -195,11 +196,12 @@
     1,
     3
    ],
-   "rank": 29,
-   "nullity": 5,
-   "connection_only": 2,
-   "metric_only": 1,
-   "mixed": 2
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 16,
+   "rank_H_J": 24,
+   "nullity": 10,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 2,
@@ -209,11 +211,12 @@
     1,
     2
    ],
-   "rank": 29,
-   "nullity": 5,
-   "connection_only": 4,
-   "metric_only": 1,
-   "mixed": 0
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 12,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 3,
@@ -223,11 +226,12 @@
     1,
     2
    ],
-   "rank": 29,
-   "nullity": 5,
-   "connection_only": 4,
-   "metric_only": 1,
-   "mixed": 0
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 12,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 4,
@@ -237,11 +241,12 @@
     1,
     1
    ],
-   "rank": 25,
-   "nullity": 9,
-   "connection_only": 8,
-   "metric_only": 1,
-   "mixed": 0
+   "rank_H_AA": 16,
+   "rank_A_symmetrized": 0,
+   "rank_H_J": 18,
+   "nullity": 16,
+   "H_AA_pure_skew": true,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 5,
@@ -251,11 +256,12 @@
     3,
     3
    ],
-   "rank": 29,
-   "nullity": 5,
-   "connection_only": 4,
-   "metric_only": 1,
-   "mixed": 0
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 16,
+   "rank_H_J": 32,
+   "nullity": 2,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 6,
@@ -265,11 +271,12 @@
     1,
     1
    ],
-   "rank": 29,
-   "nullity": 5,
-   "connection_only": 4,
-   "metric_only": 1,
-   "mixed": 0
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 12,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 7,
@@ -279,11 +286,12 @@
     1,
     2
    ],
-   "rank": 31,
-   "nullity": 3,
-   "connection_only": 2,
-   "metric_only": 1,
-   "mixed": 0
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 20,
+   "rank_H_J": 32,
+   "nullity": 2,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   },
   {
    "orbit": 8,
@@ -293,11 +301,12 @@
     2,
     3
    ],
-   "rank": 31,
-   "nullity": 3,
-   "connection_only": 2,
-   "metric_only": 1,
-   "mixed": 0
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 24,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
   }
  ],
  "n0_bases": {
@@ -450,6 +459,78 @@
      "0"
     ]
    ]
+  },
+  "5": {
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "basis": [
+    [
+     "-1 + I",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "-1 + I",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "7": {
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "basis": [
+    [
+     "0",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "-I",
+     "I",
+     "0",
+     "0",
+     "-I",
+     "-I",
+     "0",
+     "I",
+     "0",
+     "-I",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0"
+    ]
+   ]
   }
  },
  "curvature": {
@@ -493,6 +574,30 @@
      3
     ],
     "curvature": "ZERO"
+   }
+  ],
+  "5": [
+   {
+    "basis": 0,
+    "support_links": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "curvature": "NONZERO"
+   }
+  ],
+  "7": [
+   {
+    "basis": 0,
+    "support_links": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "curvature": "NONZERO"
    }
   ]
  },

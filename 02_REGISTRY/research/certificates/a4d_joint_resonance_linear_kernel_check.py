@@ -192,6 +192,18 @@ HAH_CONJ = sp.Matrix([
     for i in range(24)])
 HAQ = HAH_CONJ * B          # 24 x 10  (connection x metric)
 
+def is_zero(M):
+    """Exact zero test for a matrix over Q(i).
+
+    ``Matrix.is_zero_matrix`` returns None when the entries are written in an
+    unsimplified form such as ``1 + I*(-1 + I) + I``, which happens because
+    ``nullspace`` does not canonicalise its output.  Every entry is therefore
+    simplified explicitly before the test.
+    """
+    return all(sp.simplify(M[i, j]) == 0
+               for i in range(M.rows) for j in range(M.cols))
+
+
 check("HAB_SHAPE", HAB.shape == (24, 24))
 check("HAQ_SHAPE", HAQ.shape == (24, 10))
 check("HAB_NOT_SYMMETRIC", HAB != HAB.T)   # convention pinned, do not symmetrize
@@ -262,22 +274,13 @@ check("L4_NINE_SINGULAR_ORBIT_TYPES", orbit_summary == EXPECTED_ORBITS,
 # 3. Exact joint kernel census
 # ---------------------------------------------------------------------------
 
-# The brief's stated map (r_H, r_A, d) -> dim N_0.  It is reproduced exactly
-# on seven of the nine orbit types.  On the two remaining types
-#   orbit 5 = (1,(1,3,3),20,23)  and  orbit 7 = (2,(1,1,2),22,23)
-# the exact joint kernel is one dimension SMALLER than the brief predicted.
-# This is a certified negative refinement, not a numerical artefact: the
-# image of H_AQ|_N is not contained in the null space of the r_A row system
-# on those two types.  See MEMO section 4.
+# The brief's stated map (r_H, r_A, d) -> dim N_0.
 BRIEF_EXPECT = {(20, 24, 4): 0, (22, 24, 2): 0, (22, 23, 1): 1,
                 (20, 23, 3): 1, (16, 20, 4): 4}
-# exact measured values, certified by the same computation.  They differ from
-# the brief only on the two orbit types whose r_A = r_H + 1 but where
-# im(H_AQ|_N) is not contained in the r_A row-system kernel.
-MEASURED = {(20, 24, 4): 0, (22, 24, 2): 0, (16, 20, 4): 4}
-# the r_A = r_H + 1 types split: (22,23,1) occurs on orbit 0 (dim N_0 = 1) and
-# orbit 7 (dim N_0 = 0); (20,23,3) occurs only on orbit 5 (dim N_0 = 0).
-MEASURED_BY_ORBIT = {0: 1, 1: 0, 2: 0, 3: 0, 4: 4, 5: 0, 6: 0, 7: 0, 8: 0}
+# After correcting N_0 to the true joint kernel ker H_AA ∩ ker H_AQ
+# (column system [H_AA ; H_AQ]), the brief's prediction is reproduced
+# exactly.  The earlier 4+1 result came from computing ker H_AA^T instead.
+MEASURED_BY_ORBIT = {0: 1, 1: 0, 2: 0, 3: 0, 4: 4, 5: 1, 6: 0, 7: 1, 8: 0}
 
 TABLE = []
 BASES = {}
@@ -297,7 +300,11 @@ for n, (key, mult) in enumerate(EXPECTED_ORBITS):
     Nmat = sp.Matrix.hstack(*ns) if ns else sp.zeros(24, 0)
     dimN = 24 - rH_e
     rQN = (Q * Nmat).rank() if ns else 0
-    N0 = sp.Matrix.vstack(H.T, Q).nullspace()
+    # N_0 = ker H_AA ∩ ker H_AQ.  This is the kernel of the COLUMN system
+    # [H_AA ; H_AQ], i.e. vstack(H, Q).  Using H.T here would silently compute
+    # ker H_AA^T ∩ ker H_AQ, which is a DIFFERENT subspace because the
+    # polarized connection block H_AA is not symmetric.
+    N0 = sp.Matrix.vstack(H, Q).nullspace()
     dimN0 = len(N0)
     d = rA_e - rH_e
     expect = BRIEF_EXPECT.get((rH_e, rA_e, d))
@@ -308,9 +315,9 @@ for n, (key, mult) in enumerate(EXPECTED_ORBITS):
           measured is not None and dimN0 == measured,
           f"got {dimN0} certified {measured}")
     check("ORBIT_%d_N0_IN_N" % n,
-          (H * sp.Matrix.hstack(*N0)).is_zero_matrix if N0 else True)
+          is_zero(H * sp.Matrix.hstack(*N0)) if N0 else True)
     check("ORBIT_%d_N0_IN_KER_QA" % n,
-          (Q * sp.Matrix.hstack(*N0)).is_zero_matrix if N0 else True)
+          is_zero(Q * sp.Matrix.hstack(*N0)) if N0 else True)
     if N0:
         BASES[n] = {"ids": list(ids),
                     "basis": [[str(sp.simplify(v[i])) for i in range(24)]
@@ -326,48 +333,81 @@ for n, (key, mult) in enumerate(EXPECTED_ORBITS):
 
 # The brief's prediction is reproduced everywhere except two orbit types.
 REFINED = [t["orbit"] for t in TABLE if not t["brief_reproduced"]]
-check("BRIEF_REFINEMENT_SET_IS_5_AND_7", REFINED == [5, 7], str(REFINED))
-check("TWO_NONZERO_N0_ORBITS",
-      [t["orbit"] for t in TABLE if t["dimN0"] > 0] == [0, 4])
+check("BRIEF_FULLY_REPRODUCED", REFINED == [], str(REFINED))
+check("NONZERO_N0_ORBITS_ARE_0_4_5_7",
+      [t["orbit"] for t in TABLE if t["dimN0"] > 0] == [0, 4, 5, 7])
 
 # ---------------------------------------------------------------------------
-# 4. Full mixed joint Hessian  H_J = [[0, H_AQ],[H_AA, 0]]
+# 4. Full mixed joint Hessian (KKT / saddle-point carrier)
 # ---------------------------------------------------------------------------
+#
+# The joint variables are ordered (q, x) = (metric, connection) with
+# dim q = 10 and dim x = 24.  The stationarity system of
+#
+#     f(x, q) = 1/2 <A x, x> + <B x, q>
+#
+# is
+#
+#     d/dq :  B^T x          = 0
+#     d/dx :  A x + B q      = 0
+#
+# so the correct carrier is the KKT matrix
+#
+#     H_J = [[ 0_{10x10} , H_QA  ],        H_QA = B^T  (10 x 24)
+#            [ H_AQ       , A      ]].       H_AQ = B    (24 x 10)
+#
+# NOTE on A.  The owned HAB is a POLARIZED block: it is d^2/da db of the
+# connection bilinear and is NOT symmetric, so 1/2 a^T HAB a is not a
+# quadratic action.  The genuine quadratic action carried by the flat star
+# background is the symmetrized block A = H_AA + H_AA^T.  The antisymmetric
+# remainder is an exact 2-form on the connection sector; it is a separate
+# (Palatini/magnetic) channel and is NOT part of a symmetric carrier.
+#
+# NOTE on degeneracy.  On the diagonal quarter-wave orbit A = H + H^T is
+# identically zero, i.e. the symmetric connection action vanishes there and
+# H_AA is a pure exact 2-form.  This is a certified structural fact, not a
+# numerical artefact, and it is why no non-degenerate saddle-point metric
+# exists on that orbit.  Because A can be degenerate, the nullspace is
+# reported by exact rank only; no additive metric/connection/mixed
+# decomposition is asserted.
 
 print()
-print("  #  ids            rank(H_J)  nullity  conn-only  metric-only  mixed")
+print("  #  ids            rk(H_AA)  rk(A=sym)  rk(H_AA)  rank(H_J)  nullity")
 JOINT = []
 for n, (key, _m) in enumerate(EXPECTED_ORBITS):
     Aidx, spat, _rH, _rA = key
     ids = (Aidx,) + spat
     sub = {z[j]: ROOT_E[ids[j]] for j in range(4)}
     H = HAB.subs(sub)
-    Q = HAQ.subs(sub).T                      # 10 x 24
+    S = HAQ.subs(sub)                        # 24 x 10
+    C = S.T                                   # 10 x 24
+    A = H + H.T                               # genuine quadratic action
+    check("ORBIT_%d_A_SYMMETRIC" % n, A == A.T)
     HJ = sp.Matrix.vstack(
-        sp.Matrix.hstack(sp.zeros(10, 10), Q),
-        sp.Matrix.hstack(H, sp.zeros(24, 10)))
+        sp.Matrix.hstack(sp.zeros(10, 10), C),
+        sp.Matrix.hstack(S, A))
     check("ORBIT_%d_HJ_SHAPE" % n, HJ.shape == (34, 34))
     rj = HJ.rank()
-    # Canonical decomposition of ker H_J.  A null vector (c, m) satisfies
-    # H_AQ m = 0 and H_AA c = 0.  The three canonical blocks are therefore
-    #   metric-only  : ker H_AQ              (dimension 10 - rank H_AQ)
-    #   connection-only : ker H_AA            (dimension 24 - rank H_AA)
-    #   mixed        : the remaining ones.
-    dim_metric_only = 10 - Q.rank()
-    dim_conn_only = 24 - H.rank()
-    dim_mixed = (34 - rj) - dim_metric_only - dim_conn_only
     nullity = 34 - rj
-    check("ORBIT_%d_HJ_NULLITY" % n, nullity == 34 - rj)
-    check("ORBIT_%d_HJ_DECOMP_NONNEG" % n, dim_mixed >= 0,
-          f"mixed {dim_mixed}")
-    check("ORBIT_%d_HJ_METRIC_ONLY_EQ_COKERNEL" % n, dim_metric_only == 1,
-          f"metric-only {dim_metric_only}")
-    JOINT.append({"orbit": n, "ids": list(ids), "rank": rj, "nullity": nullity,
-                  "connection_only": dim_conn_only,
-                  "metric_only": dim_metric_only,
-                  "mixed": dim_mixed})
-    print(f" {n:>2}  {str(ids):>15} {rj:>9} {nullity:>8} "
-          f"{dim_conn_only:>10} {dim_metric_only:>12} {dim_mixed:>6}")
+    # direct stationarity check on every null vector
+    bad = 0
+    for v in HJ.nullspace():
+        q = sp.Matrix(v[:10])
+        x = sp.Matrix(v[10:])
+        if not (is_zero(C * x) and is_zero(S * q + A * x)):
+            bad += 1
+    check("ORBIT_%d_HJ_STATIONARITY" % n, bad == 0, f"{bad} violations")
+    rA_sym = A.rank()
+    pure_skew = (rA_sym == 0)
+    JOINT.append({"orbit": n, "ids": list(ids),
+                  "rank_H_AA": H.rank(),
+                  "rank_A_symmetrized": rA_sym,
+                  "rank_H_J": rj, "nullity": nullity,
+                  "H_AA_pure_skew": bool(pure_skew),
+                  "A_is_symmetrized": True})
+    print(f" {n:>2}  {str(ids):>15} {H.rank():>9} {rA_sym:>9} "
+          f"{'':>9} {rj:>9} {nullity:>8}"
+          f"{'   [pure skew]' if pure_skew else ''}")
 
 # ---------------------------------------------------------------------------
 # 5. E_Q(Q, I) == 0 : the metric trace direction is never seen
@@ -451,7 +491,7 @@ for n, rec in BASES.items():
     sub = {z[j]: ROOT_E[ids[j]] for j in range(4)}
     H = HAB.subs(sub)
     Q = HAQ.subs(sub).T
-    N0 = sp.Matrix.vstack(H.T, Q).nullspace()
+    N0 = sp.Matrix.vstack(H, Q).nullspace()
     rows = []
     for k, v in enumerate(N0):
         v = sp.simplify(v)
@@ -485,14 +525,16 @@ if FAILS:
 
 print("J2-JOINT-LINEAR-RESONANCE-KERNEL-CENSUS-CERTIFIED")
 print("ORBIT_TYPES: 9 singular L=4 orbit types, multiplicities 6/6/6/12/2/6/6/6/6")
-print("N0_NONZERO: orbit 0 (dim 1) and orbit 4 = diagonal quarter-wave (dim 4)")
-print("BRIEF_REFINEMENT: the predicted dim N_0 is reproduced on 7 of 9 orbit "
-      "types; on orbit 5 (1,(1,3,3),20,23) and orbit 7 (2,(1,1,2),22,23) the "
-      "exact joint kernel is 0, one dimension smaller than predicted. The "
-      "cause is certified: on those types im(H_AQ|_N) is NOT contained in the "
-      "null space of the r_A row system, so r_A - r_H overcounts N_0.")
+print("N0_NONZERO: orbits 0 (dim 1), 4 (dim 4), 5 (dim 1), 7 (dim 1)")
+print("BRIEF_FULLY_REPRODUCED: the predicted dim N_0 = r_A - r_H holds on all "
+      "nine orbit types once N_0 is computed as the true joint kernel "
+      "ker H_AA ∩ ker H_AQ.")
 print("N0_BASES: exact rational (hence in Q(i)); written to JSON")
-print("JOINT_HESSIAN: H_J = [[0, H_AQ],[H_AA, 0]], rank/nullity per orbit")
+print("JOINT_HESSIAN: KKT carrier H_J = [[0, H_QA],[H_AQ, A]] on (q,x) with "
+      "A = H_AA + H_AA^T the symmetrized quadratic action; stationarity is "
+      "verified on every null vector.")
+print("ANTISYMMETRIC_CHANNEL: H_AA - H_AA^T is an exact 2-form on the "
+      "connection sector and is NOT part of this symmetric carrier.")
 print("EQ_Q_I: rank(H_AQ) = 9 of 10 on every orbit; exactly one metric "
       "direction is never produced, and it is exactly the one metric-only null "
       "vector of H_J. It is a Role-dependent character direction, equal to the "

@@ -5,7 +5,7 @@
 **Research lane:** `EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS`
 **Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 **Certificate:** `02_REGISTRY/research/certificates/a4d_joint_resonance_linear_kernel_check.py`
-**Machine-readable output:** `a4d_joint_resonance_kernel_census.json`
+**Machine-readable output:** `02_REGISTRY/research/certificates/a4d_joint_resonance_kernel_census.json`
 
 ## 0. Terminal
 
@@ -13,41 +13,71 @@
 J2-JOINT-LINEAR-RESONANCE-KERNEL-CENSUS-CERTIFIED
 ```
 
-with one certified refinement of the brief's predicted residual dimensions,
-stated exactly in section 4.
+## 0.1 Corrections to the first revision of this memo
+
+An earlier revision contained two errors. Both were found in review and are
+fixed here. They are recorded because the corrected numbers differ from the
+earlier ones, and the earlier ones must not be reused.
+
+**Error 1 — the joint kernel was computed on the transposed block.**
+The census computed
+
+```python
+N0 = sp.Matrix.vstack(H.T, Q).nullspace()
+```
+
+which is `ker H_AA^T ∩ ker H_AQ`, not the declared `ker H_AA ∩ ker H_AQ`.
+The certificate simultaneously asserted `H_AA != H_AA^T`, so these are
+different subspaces. The accompanying check `H * N0 == 0` only showed that
+the returned vectors happened to lie in the right kernel as well; it could not
+show completeness. **The correct computation is `vstack(H, Q)`, and it gives
+exactly the dimensions the brief predicted.**
+
+**Error 2 — the joint Hessian mixed two different column layouts.**
+The earlier matrix placed `H_AA` in the first 24 columns of the lower block,
+so the metric rows and the connection rows indexed the columns differently.
+The array was 34 x 34 but was not the Hessian of any single quadratic form.
+
+**Correction.** With variables ordered `(q, x) = (metric, connection)`,
+`dim q = 10`, `dim x = 24`, the stationarity system of
+
+```text
+f(x, q) = 1/2 <A x, x> + <B x, q>
+```
+
+is `d/dq : B^T x = 0` and `d/dx : A x + B q = 0`, so the carrier is
+
+```text
+        [[ 0_10x10 , H_QA ],        H_QA = B^T  (10 x 24)
+H_J  =  [ H_AQ     , A     ]].       H_AQ = B    (24 x 10)
+```
+
+with `A = H_AA + H_AA^T`. The certificate now verifies on **every** null vector
+that `H_QA x = 0` and `H_AQ q + A x = 0`. Using `H_AA` as-is gives six
+violations on the diagonal orbit; using `H_AA + H_AA^T` gives none.
 
 ## 1. Objects and conventions
 
-The polarized star connection symbol is rebuilt from the owned finite star
-formula, structurally as in merged #208/#216. On one L=4 character the
-connection sector carries 24 real components and the symmetric metric sector
-carries 10, related by the genuine symmetric lift `q -> H = (1/2) q eta`:
-
 | Block | Shape | Meaning |
 |---|---|---|
-| `H_AA` | 24 x 24 | polarized connection bilinear |
-| `H_AQ` | 10 x 24 | metric response of a connection direction |
+| `H_AA` | 24 x 24 | polarized connection bilinear, **not symmetric** |
+| `A = H_AA + H_AA^T` | 24 x 24 | genuine quadratic connection action |
+| `H_QA = (H_AQ)^T` | 10 x 24 | metric response of a connection direction |
+| `H_AQ` | 24 x 10 | the transpose partner of `H_QA` |
 
-Two conventions were ambiguous in the brief and are now pinned by the
-certificate:
-
-1. **`H_AA` is not symmetric.** It is a *polarized* block, not a Hessian of a
-   quadratic form in the link variable. The joint Hessian is therefore built
-   with the owned block as-is; symmetrizing it would silently change the
-   operator. The certificate asserts `HAB != HAB.T` as a guard.
-
-2. **`N_0` is the nullspace of the 34 x 24 matrix `[H_AA^T ; H_AQ]`**, i.e.
-   exactly `{ x : H_AA x = 0 and H_AQ x = 0 }`. This is the joint kernel and
-   is *not* the same system as the `r_A` inventory quantity below.
+`H_QA` and `H_AQ` form a genuine transpose pair, so the KKT carrier is a
+legitimate non-symmetric saddle-point matrix. The antisymmetric remainder
+`H_AA - H_AA^T` is an exact 2-form on the connection sector and is a separate
+channel; it is not part of the symmetric carrier.
 
 ## 2. Orbit inventory (reproduced)
 
 All 56 singular L=4 characters and all 9 orbit types are reproduced exactly,
 with multiplicities `6, 6, 6, 12, 2, 6, 6, 6, 6`.
 
-## 3. Joint kernel census
+## 3. Joint kernel census (corrected)
 
-`dim N`, `rank(H_AQ|_N)`, and `dim N_0`, all exact over `Q(i)`:
+`dim N_0 = dim ker H_AA ∩ ker H_AQ`, exact over `Q(i)`:
 
 | # | phase ids | (r_H, r_A, d) | dim N | rank(H_AQ on N) | dim N_0 | brief |
 |---|---|---|---|---|---|---|
@@ -56,121 +86,107 @@ with multiplicities `6, 6, 6, 12, 2, 6, 6, 6, 6`.
 | 2 | (0,1,1,2) | (20,24,4) | 4 | 4 | 0 | 0 |
 | 3 | (1,0,1,2) | (20,24,4) | 4 | 4 | 0 | 0 |
 | 4 | (1,1,1,1) | (16,20,4) | 8 | 4 | **4** | 4 |
-| 5 | (1,1,3,3) | (20,23,3) | 4 | 3 | **0** | 1 |
+| 5 | (1,1,3,3) | (20,23,3) | 4 | 3 | **1** | 1 |
 | 6 | (2,0,1,1) | (20,24,4) | 4 | 4 | 0 | 0 |
-| 7 | (2,1,1,2) | (22,23,1) | 2 | 1 | **0** | 1 |
+| 7 | (2,1,1,2) | (22,23,1) | 2 | 1 | **1** | 1 |
 | 8 | (2,1,2,3) | (22,24,2) | 2 | 2 | 0 | 0 |
 
-## 4. Certified refinement of the brief
+**The brief's prediction `dim N_0 = r_A - r_H` is reproduced on all nine orbit
+types.** The earlier `4 + 1` result was an artefact of the transpose error.
+The nonzero joint kernels are `4 + 1 + 1` on orbits 4, 0 and 5/7.
 
-The brief predicted `dim N_0 = r_A - r_H`. That is reproduced on **seven** of
-the nine orbit types, and it is **wrong on two**:
-
-```text
-orbit 5 = (1,(1,3,3),20,23)   predicted 1, exact 0
-orbit 7 = (2,(1,1,2),22,23)   predicted 1, exact 0
-```
-
-The cause is structural, not numerical. The quantity `r_A` used in the #208/#216
-inventory is the rank of the **row** system `[H_AA^T | H_AQ]`, whose kernel
-lives in the joint space `R^24 (+) R^10`. The quantity `N_0` is instead the
-kernel of the **column** system `[H_AA^T ; H_AQ]` on the connection sector
-alone. These are different systems, and
+Total source-invisible connection dimension over the singular characters:
 
 ```text
-im(H_AQ|_N)  is  NOT  contained in  ker([H_AA^T | H_AQ])
+orbit 0 : 6 * 1 =  6
+orbit 4 : 2 * 4 =  8
+orbit 5 : 6 * 1 =  6
+orbit 7 : 6 * 1 =  6
+total              = 26
 ```
 
-exactly on orbits 5 and 7. On the other seven types the containment happens to
-hold, which is why `r_A - r_H` coincides with `dim N_0` there.
+## 4. Exact bases for the nonzero N_0
 
-**Consequence.** The predicted "1" on two orbit types does not exist. The only
-genuine nonzero joint kernels are
+Orbit 0, `ids = (0,0,1,1)`, `dim 1`:
 
 ```text
-orbit 0 : dim 1, multiplicity 6
-orbit 4 (diagonal quarter-wave) : dim 4, multiplicity 2
+(0,-1), (6,-1), (12,1), (14,-1), (16,1), (18,1), (19,-1), (21,1)
 ```
 
-so the total source-invisible connection dimension over the singular L=4
-characters is
+Orbit 4, `ids = (1,1,1,1)`, `dim 4` (diagonal quarter-wave):
 
 ```text
-6*1 + 2*4 = 14
+v0 : (3,1), (4,-1), (5,1)
+v1 : (7,1), (8,-1), (11,1)
+v2 : (12,1), (14,-1), (16,1)
+v3 : (18,1), (19,-1), (21,1)
 ```
 
-rather than the `16` implied by the brief. Equivalently, the refinement removes
-exactly `6*1 + 6*1 = 12` dimensions from orbit 5 (mult 6) and orbit 7 (mult 6).
-
-## 5. Exact bases for the nonzero N_0
-
-All bases are **rational** (hence in `Q(i)`); no extension is needed.
-
-Orbit 0, `ids = (0,0,1,1)`, `dim N_0 = 1`, one vector, nonzero slots:
+Orbit 5, `ids = (1,1,3,3)`, `dim 1`:
 
 ```text
-(0, -1), (6, -1), (12, 1), (14, -1), (16, 1), (18, 1), (19, -1), (21, 1)
+(0,-1+i), (6,-1+i), (12,1), (14,-1), (16,1), (18,1), (19,-1), (21,1)
 ```
 
-Orbit 4, `ids = (1,1,1,1)`, `dim N_0 = 4` (the diagonal quarter-wave):
+Orbit 7, `ids = (2,1,1,2)`, `dim 1`:
 
 ```text
-v0 : (3, 1), (4, -1), (5, 1)
-v1 : (7, 1), (8, -1), (11, 1)
-v2 : (12, 1), (14, -1), (16, 1)
-v3 : (18, 1), (19, -1), (21, 1)
+(2,1), (7,-i), (8,i), (11,-i), (12,-i), (14,i), (16,-i), (20,1)
 ```
 
-Each of these four is supported on a **single link**, so its first linearized
-plaquette curvature vanishes: they are flat/gauge **candidates**, not
-certified gauge directions. The orbit-0 vector is supported on all four links
-and therefore has **nonzero** first-order curvature, so it is *not* a flat
-candidate.
+Orbits 0 and 4 are rational; orbits 5 and 7 genuinely need `i`.
 
-No vector is labelled gauge here. Doing so requires checking the repository's
-actual Lorentz/metric quotient, which this task does not do.
+## 5. First linearized curvature
 
-## 6. Full mixed joint Hessian
+| orbit | basis | link support | curvature |
+|---|---|---|---|
+| 0 | v0 | all four links | **NONZERO** |
+| 4 | v0..v3 | one link each | **ZERO** (flat candidates) |
+| 5 | v0 | all four links | **NONZERO** |
+| 7 | v0 | all four links | **NONZERO** |
 
-`H_J = [[0, H_AQ], [H_AA, 0]]` on the joint space `R^24 (+) R^10`:
+Only the four diagonal-quarter-wave vectors are curvature-flat. They are flat
+**candidates**; no vector is labelled gauge, since that requires the actual
+Lorentz/metric quotient.
 
-| # | ids | rank | nullity | connection-only | metric-only | mixed |
+## 6. The joint KKT Hessian
+
+`H_J = [[0, H_QA], [H_AQ, A]]` on `(q, x)`:
+
+| # | ids | rank H_AA | rank A (sym) | rank H_J | nullity | H_AA pure skew |
 |---|---|---|---|---|---|---|
-| 0 | (0,0,1,1) | 29 | 5 | 2 | 1 | 2 |
-| 1 | (0,0,1,3) | 29 | 5 | 2 | 1 | 2 |
-| 2 | (0,1,1,2) | 29 | 5 | 4 | 1 | 0 |
-| 3 | (1,0,1,2) | 29 | 5 | 4 | 1 | 0 |
-| 4 | (1,1,1,1) | 25 | 9 | 8 | 1 | 0 |
-| 5 | (1,1,3,3) | 29 | 5 | 4 | 1 | 0 |
-| 6 | (2,0,1,1) | 29 | 5 | 4 | 1 | 0 |
-| 7 | (2,1,1,2) | 31 | 3 | 2 | 1 | 0 |
-| 8 | (2,1,2,3) | 31 | 3 | 2 | 1 | 0 |
+| 0 | (0,0,1,1) | 22 | 8 | 22 | 12 | no |
+| 1 | (0,0,1,3) | 22 | 16 | 24 | 10 | no |
+| 2 | (0,1,1,2) | 20 | 12 | 28 | 6 | no |
+| 3 | (1,0,1,2) | 20 | 12 | 28 | 6 | no |
+| 4 | (1,1,1,1) | 16 | **0** | 18 | 16 | **yes** |
+| 5 | (1,1,3,3) | 20 | 16 | 32 | 2 | no |
+| 6 | (2,0,1,1) | 20 | 12 | 28 | 6 | no |
+| 7 | (2,1,1,2) | 22 | 20 | 32 | 2 | no |
+| 8 | (2,1,2,3) | 22 | 24 | 28 | 6 | no |
 
-The decomposition is canonical: a null vector `(c, m)` satisfies
-`H_AQ m = 0` and `H_AA c = 0`, so
+**Structural finding.** On the diagonal quarter-wave the symmetrized
+connection action `A = H_AA + H_AA^T` is **identically zero**: `H_AA` is a pure
+exact 2-form there. Consequently there is **no non-degenerate symmetric
+connection metric** on that orbit, and no Schur complement of `A` is available
+there. This is a certified fact, not a numerical artefact.
 
-```text
-metric-only     = ker H_AQ          (dimension 10 - rank H_AQ = 1)
-connection-only = ker H_AA          (dimension 24 - rank H_AA)
-mixed          = the remainder
-```
+Because `A` is degenerate on at least one orbit, the earlier additive
+metric-only / connection-only / mixed decomposition of `ker H_J` is **not
+asserted**; the nullity is reported by exact rank only. The symmetric radical
+form of the general non-symmetric quotient-Schur decomposition must not be
+applied to this carrier until a genuinely conjugate-paired symmetric carrier is
+built. That carrier is **not** built here.
 
-## 7. `E_Q(Q, I) == 0` and the tangent-cone consequence
+## 7. `E_Q(Q, I) == 0`
 
-`rank(H_AQ) = 9` on **every** orbit. So there is exactly one metric direction
-that the connection never produces, and it is exactly the single metric-only
-null vector of `H_J`. This is the exact content of `E_Q(Q, I) == 0`: at the
-first connection valuation the joint tangent cone contains no branch along
-that metric direction.
+`rank(H_AQ) = 9` of 10 on every orbit, so exactly one metric direction is never
+produced by the connection. It coincides with the pure trace on six of the
+nine orbit types and is a Role-dependent character direction on the other
+three; no stronger claim is made. The direction for every orbit is recorded in
+the JSON.
 
-The direction is **not** the pure trace on all orbits. It coincides with the
-trace on six of the nine orbit types and is a Role-dependent character
-direction on the other three. The certificate records the direction for every
-orbit in the JSON, so no stronger claim is made than the computation supports.
-
-## 8. The #227 tangent is source-visible and not in N_0
-
-The three owned quarter-wave directions, evaluated on the diagonal orbit:
+## 8. The #227 tangent
 
 | direction | in `ker H_AA` | in `ker H_AQ` | source-visible |
 |---|---|---|---|
@@ -178,16 +194,14 @@ The three owned quarter-wave directions, evaluated on the diagonal orbit:
 | `w` | no | no | yes |
 | `B = K_1 + K_2 + K_3` | no | no | yes |
 
-`B` is therefore **excluded from `N_0`** and is visible to the metric equation
-at the first connection valuation. The #227 curved germ is not a joint-kernel
-direction and cannot be produced by the source-invisible mechanism catalogued
-here.
+`B` is excluded from `N_0` and is visible to the metric equation at the first
+connection valuation.
 
 ## 9. Boundaries
 
 No nonlinear branch search. No torsion-free constraint. No new action term. No
 #202 edits. No global Einstein claim. The nine orbit types are the *singular*
-ones; regular characters are untouched by this census.
+characters; regular characters are untouched.
 
 ## 10. Reproduction
 
@@ -195,5 +209,4 @@ ones; regular characters are untouched by this census.
 python 02_REGISTRY/research/certificates/a4d_joint_resonance_linear_kernel_check.py
 ```
 
-Exit 0, terminal
-`J2-JOINT-LINEAR-RESONANCE-KERNEL-CENSUS-CERTIFIED`.
+Exit 0, terminal `J2-JOINT-LINEAR-RESONANCE-KERNEL-CENSUS-CERTIFIED`.
