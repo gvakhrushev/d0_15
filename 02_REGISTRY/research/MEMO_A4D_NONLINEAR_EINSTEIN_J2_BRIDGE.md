@@ -1164,3 +1164,171 @@ selector is required.
 
 No result from the curved-root search #202 is used here. No Lean, claim,
 release or BOOK promotion is made.
+
+
+---
+
+## 18. Continuation: corrected polarized resonance and the H-J2-SMOOTH gate
+
+The continuation re-audited the load-bearing Fourier calculation before using
+the previous arbitrary-phase determinant.  A real quadratic lattice action
+pairs a character (z) with its inverse/conjugate (z^{-1}).  Therefore the
+correct auxiliary block is the **polarized** (z\leftrightarrow z^{-1})
+bilinear block, not the unpolarized same-character Hessian.
+
+Along the diagonal character
+[
+z_A=z_B=z_C=z_D=t
+]
+the exact polarized determinant is
+[
+oxed{
+det H_{AA}^{\rm pol}(t)
+=
+rac{(t^2+1)^{12}}{16t^{12}}.
+}
+	ag{18.1}
+]
+
+This retains the low-frequency fact
+[
+det H_{AA}^{\rm pol}(1)=256
+	ag{18.2}
+]
+but changes the exact resonance statement.  The first load-bearing resonance
+used by this memo is now
+[
+L=4,qquad t=i,
+	ag{18.3}
+]
+with
+[
+ank H_{AA}^{\rm pol}=16,
+qquad
+ank[(H_{AA}^{\rm pol})^Tmid H_{Aq}]=20.
+	ag{18.4}
+]
+An explicit Fredholm vector supported on the three Role-A boosts satisfies
+[
+lambda^T(H_{AA}^{\rm pol})^T=0,
+qquad
+lambda^T H_{Aq}(q_{11})=-(1+i)
+e0.
+	ag{18.5}
+]
+
+Accordingly, the earlier unpolarized general-phase factorization must **not**
+be used as the terminal resonance theorem.  Equations (18.1)--(18.5), checked
+by the current certificate, supersede it for all downstream reasoning.
+
+### 18.1 Exact no-(C^1)-section theorem
+
+Let the finite connection Euler equation near flat be
+[
+F(A,q)=0,qquad F(0,0)=0,
+	ag{18.6}
+]
+where (q) denotes genuine symmetric metric perturbations and (A) the
+connection variables.  At the diagonal quarter wave,
+[
+D_AF(0,0)=(H_{AA}^{\rm pol})^T,qquad
+D_qF(0,0)=H_{Aq}.
+	ag{18.7}
+]
+
+Suppose a (C^1) all-mode connection section (A=A(q)) existed through flat
+for every finite metric direction.  Differentiating
+[
+F(A(q),q)=0
+	ag{18.8}
+]
+at (q=0) in the (q_{11}) direction would give
+[
+(H_{AA}^{\rm pol})^T A'(0)[q_{11}]
++H_{Aq}q_{11}=0.
+	ag{18.9}
+]
+Pairing with the Fredholm vector in (18.5) gives
+[
+0-(1+i)=0,
+	ag{18.10}
+]
+a contradiction.
+
+Therefore
+[
+oxed{
+	ext{no }C^1	ext{ all-mode finite connection section through flat exists.}
+}
+	ag{18.11}
+]
+
+This is stronger and cleaner than merely saying that the flat IFT is
+unavailable.
+
+### 18.2 Consequence for H-J2-SMOOTH
+
+H-J2-SMOOTH cannot mean a smooth section on the entire finite metric carrier.
+That formulation is exactly false by (18.11).
+
+The only surviving formulation is sectorial:
+
+1. define the admissible family by **smooth normal sampling first**;
+2. prove that its low-frequency component lies in a uniform neighborhood where
+   the polarized connection block is invertible;
+3. control the resonant/UV component without requiring a (C^1) response to
+   arbitrary finite UV metric sources;
+4. prove that any UV correction contributes (o(\varepsilon^2)) to the
+   reconstructed metric Euler response after the E-NJET rescaling.
+
+This must be derived from the sampler/regularity class.  An ad hoc Fourier
+projection would be a new finite prescription and is not accepted as a D0
+consequence.
+
+### 18.3 First nonlinear Lyapunov--Schmidt controls
+
+The quarter-wave connection kernel has dimension eight over the complex
+polarized block.  The first continuation tests restricted the exact star
+density to real (L=4) quarter-wave representatives built from explicit
+kernel vectors.
+
+For the explicit Fredholm/kernel vector supported on the three Role-A boosts,
+the local density contains odd powers, but the four quarter-wave phases cancel
+in the periodic action.  The restricted action therefore has no cubic
+self-rescue in that direction.
+
+Several independent pairwise kernel combinations, including cosine/sine
+mixing, were also checked through quartic order and produced zero restricted
+periodic action through that order.  These are **hostile controls**, not yet a
+complete eight-variable quartic classification; they do not justify a global
+nonlinear no-go.
+
+The next exact calculation is consequently finite and sharply scoped:
+construct the full quartic form on the real quarter-wave kernel/cokernel
+Lyapunov--Schmidt reduction and compute the rank of its cubic projected
+gradient against the four-dimensional incompatible metric-source cokernel.
+
+If that projected cubic map misses a cokernel direction, the corresponding
+metric source is terminally obstructed even allowing a non-smooth nonlinear
+connection branch.  If it is onto, the expected smallest rescue scale is
+[
+A_{\rm res}=O(q_{\rm UV}^{1/3}),
+	ag{18.12}
+]
+which must then be tested against smooth-sampling decay to decide whether its
+backreaction is (o(\varepsilon^2)).
+
+### 18.4 Updated scoped status
+
+The exact current boundary is
+
+[
+oxed{
+	exttt{NO-C1-ALL-MODE-SECTION; LOW-FREQUENCY-J2-BRIDGE-STILL-OPEN}.
+}
+	ag{18.13}
+]
+
+This does not weaken the exact #201 Einstein tangent result.  It narrows the
+remaining nonlinear theorem to the smooth-sampling sector and prevents an
+invalid global IFT argument.
