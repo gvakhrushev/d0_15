@@ -97,143 +97,133 @@ c_{m sp}=0,
 is therefore a theorem about the tangent response of the actual nonlinear
 metric orbit coordinate, not a fit to an unrelated test carrier.
 
-### Exact negative result — global finite connection elimination fails at quarter-wave modes
+### Exact negative result — global finite connection elimination fails at a diagonal quarter-wave mode
 
-The flat Lorentz-connection Hessian block can be computed for arbitrary
-translation-character phases (z_A,z_B,z_C,z_D), without restricting to the
-period-two signs used in the first pressure test.  Exactly,
+The L=2 pressure test uses self-conjugate characters (z_r=pm1).  For a
+general complex Fourier character the real quadratic action must instead be
+**polarized** between mode (z) and mode (z^{-1}).
+
+After performing that polarization exactly, restrict to the diagonal character
+
+[
+z_A=z_B=z_C=z_D=t.
+	ag{0.7}
+]
+
+The resulting flat Lorentz-connection block obeys
 
 [
 oxed{
-det H_{AA}(z)
+det H_{AA}^{m pol}(t)
 =
-rac1{2^{16}}
-prod_{r<s}
-left(
-z_rz_s+z_r+z_s-1
-ight)^4 .
+rac{(t^2+1)^{12}}{16t^{12}}.
 }
-	ag{0.7}
+	ag{0.8}
 ]
 
 At zero momentum,
 
 [
 oxed{
-det H_{AA}(1,1,1,1)=256,
+det H_{AA}^{m pol}(1)=256,
 }
-	ag{0.8}
+	ag{0.9}
 ]
 
 so the low-momentum connection block is regular.
 
-But on the unit character torus the factor
+But on the first quarter-wave character
 
 [
-f(z,w)=zw+z+w-1
-	ag{0.9}
-]
-
-vanishes exactly at
-
-[
-(z,w)=(i,-i),qquad(-i,i).
+t=i
 	ag{0.10}
 ]
 
-Indeed (f=0) implies
-(w=(1-z)/(1+z)); for (|z|=|w|=1),
+(which exists already for side length (L=4), i.e. (N=2)),
 
 [
-|1-z|=|1+z|
-iff
-Re z=0,
+oxed{
+ank H_{AA}^{m pol}=16.
+}
 	ag{0.11}
 ]
 
-and therefore (z=pm i), with (w=mp i).
-
-Hence every periodic carrier whose side length is divisible by four contains
-exact flat connection resonances.
-
-The smallest one is (L=4), i.e. (N=2).  At
+This is not merely an undetermined auxiliary connection.  Let
+(H_{Aq}) be the source obtained after restricting the coframe perturbation
+to the ten genuine symmetric metric directions of (0.4).  At the same
+quarter-wave,
 
 [
-z=(i,-i,1,1)
+oxed{
+ank[, (H_{AA}^{m pol})^Tmid H_{Aq},]=20.
+}
 	ag{0.12}
 ]
 
-the exact ranks are
+Hence the linearized connection Euler equation is incompatible for some
+metric perturbations.
+
+An explicit Fredholm witness is supported on the three boost coordinates of
+the Role-A connection:
 
 [
-oxed{
-ank H_{AA}=20,
-qquad
-ank[H_{AA}mid H_{Aq}]=24,
-}
+lambda_{(A,K_1)}
+=
+lambda_{(A,K_2)}
+=
+lambda_{(A,K_3)}
+=1,
 	ag{0.13}
 ]
 
-where (H_{Aq}=H_{Ah}B) is the source restricted to the ten genuine symmetric
-metric directions of (0.4).
-
-This is not merely an undetermined auxiliary connection.  It is an
-**incompatible metric source** for the linearized connection equation.
-
-An explicit left-null witness is supported on two connection coordinates,
+with all other entries zero.  It satisfies
 
 [
-lambda_{(A,J_{12})}=1,
-qquad
-lambda_{(B,K_2)}=1,
+H_{AA}^{m pol}lambda=0,
 	ag{0.14}
 ]
 
-with all other components zero.  It satisfies
-
-[
-lambda^TH_{AA}=0
-	ag{0.15}
-]
-
-but on the metric basis element (q_{02}),
+so (lambda^T) is a left null vector of the connection equation block
+((H_{AA}^{m pol})^T), but on the metric basis element (q_{11}),
 
 [
 oxed{
-lambda^TH_{Aq}(q_{02})
+lambda^TH_{Aq}(q_{11})
 =
-rac{1+i}{2}
+-(1+i)
 e0.
 }
-	ag{0.16}
+	ag{0.15}
 ]
 
-The complex character is only Fourier notation.  Combining it with its
-conjugate gives the corresponding real sine/cosine obstruction.
+The complex character is only Fourier notation.  Combining this mode with
+its conjugate (t=-i) gives the corresponding real sine/cosine obstruction.
 
-Therefore there is no smooth all-mode finite map
+Therefore there is no smooth **all-mode** finite map
 
 [
 K_*(Q)
-	ag{0.17}
+	ag{0.16}
 ]
 
 through the flat configuration whose differential solves the connection Euler
-equation for every finite metric perturbation.
+equation for every finite metric perturbation on every refinement carrier.
 
 The first upper-wall obstruction is consequently
 
 [
 oxed{
-	exttt{STAR-FINITE-METRIC-ELIMINATION-HAS-QUARTER-WAVE-CONNECTION-RESONANCE}.
+	exttt{STAR-FINITE-METRIC-ELIMINATION-HAS-DIAGONAL-QUARTER-WAVE-CONNECTION-RESONANCE}.
 }
-	ag{0.18}
+	ag{0.17}
 ]
 
 This is sharper than the older generic statement
 “frame erasure / reconstruction missing”.
 
 ---
+
+## 1. What is already exact before the continuum step---
 
 ## 1. What is already exact before the continuum step
 
@@ -401,47 +391,75 @@ Hessian null vector.  The left-null pairing (0.16) is therefore unchanged.
 
 ---
 
-## 3. Exact arbitrary-phase connection symbol
+## 3. Correct Fourier polarization and the first refinement resonance
 
-The first L=2 pressure packet checked only characters (z_r=pm1) and found
+The original L=2 pressure packet checked characters (z_r=pm1).  Those
+characters are self-conjugate, so the quadratic form may be evaluated on one
+mode directly.
+
+For a general unit character (z), this shortcut is invalid: a real periodic
+quadratic action pairs the (z) amplitude with the (z^{-1}) amplitude.
+The present certificate therefore introduces independent connection
+amplitudes (A(z)) and (B(z^{-1})), expands every plaquette to the mixed
+bilinear order, and extracts the polarized block (H_{AA}^{m pol}(z)).
+
+A full four-variable determinant classification is **not claimed** here.
+The exact hostile slice needed for the bridge is already decisive:
 
 [
-ank H_{AA}=24
+z_A=z_B=z_C=z_D=t.
 	ag{3.1}
 ]
 
-in all sixteen sectors.
-
-That result is correct but does not extend to all refinements.
-
-For arbitrary character phases, the exact factorization (0.7) has six face
-factors, one for every Role pair.
-
-A useful reformulation on the unit torus is:
+On this slice,
 
 [
 oxed{
-H_{AA}(z)	ext{ is singular}
-iff
-exists,r<s:
-(z_r,z_s)=(i,-i)	ext{ or }(-i,i).
+det H_{AA}^{m pol}(t)
+=
+rac{(t^2+1)^{12}}{16t^{12}}.
 }
 	ag{3.2}
 ]
 
+Thus
+
+[
+det H_{AA}^{m pol}(1)=256,
+	ag{3.3}
+]
+
+while
+
+[
+det H_{AA}^{m pol}(i)=0.
+	ag{3.4}
+]
+
+At (t=i),
+
+[
+ank H_{AA}^{m pol}=16
+	ag{3.5}
+]
+
+and the genuine metric source violates the compatibility condition as in
+(0.12)–(0.15).
+
 Consequences:
 
-1. if the lattice side length (L) is not divisible by four, no exact
-   quarter-wave character exists and this particular obstruction is absent;
-2. if (4mid L), singular sectors exist;
-3. the singular set does not approach the continuum low-momentum point
-   (z=(1,1,1,1));
-4. the obstruction is ultraviolet in lattice momentum, not an infrared failure
-   of the Einstein seed.
+1. the low-momentum point (t=1) remains regular;
+2. the first exact failure occurs at the (L=4) diagonal quarter-wave;
+3. the obstruction sits at fixed lattice phase (pi/2), so it is ultraviolet
+   relative to a refinement limit;
+4. no claim is made that this diagonal slice exhausts all singular characters.
 
-Thus (0.8) and (0.13) coexist without contradiction.
+The obstruction is already sufficient to kill a single smooth all-mode
+connection elimination on the full finite metric carrier.
 
 ---
+
+## 4. The finite local implicit-function branch exists only in the regular sector---
 
 ## 4. The finite local implicit-function branch exists only in the regular sector
 
