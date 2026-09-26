@@ -14,24 +14,5 @@
     "02_REGISTRY/frontier/no_go_atlas.md",
     "02_REGISTRY/frontier/verification_protocol.md"
   ],
-  "tasks": [
-    {
-      "id": "CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "IN_PROGRESS",
-      "affected_claims": [],
-      "exit_condition": "The overnight formalization maintenance worker is merged or terminally scoped, concurrent scientific PR files remain untouched, and main is green with the durable debt audit installed.",
-      "brief": "00_WORK/tasks/CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1.md"
-    },
-    {
-      "id": "CTRL-A4D-STAR-DENSITY-LORENTZ-NONLINEAR-QUOTIENT",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "REVIEW",
-      "affected_claims": [],
-      "exit_condition": "The accepted star density is pressure-tested under the full finite local proper-Lorentz gauge group: exact action invariance, EL equivariance/Noether vertical degeneracy, orbit/stabilizer scope, and nontriviality of the quotient operator family are classified. A scoped nonlinear Lorentz d_P is stated or the first exact obstruction is named.",
-      "brief": "00_WORK/tasks/CTRL-A4D-STAR-DENSITY-LORENTZ-NONLINEAR-QUOTIENT.md"
-    }
-  ]
+  "tasks": []
 }
