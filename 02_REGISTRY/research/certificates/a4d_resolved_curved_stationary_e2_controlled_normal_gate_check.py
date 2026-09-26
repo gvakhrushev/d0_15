@@ -305,6 +305,15 @@ for size in range(1, len(candidate_names) + 1):
         break
 check("MINIMUM_RESIDUAL_ACTIVE_LINEARIZED_SUPPORT_HAS_SIZE_7", len(minimum_sets) > 0 and len(minimum_sets[0]) == 7)
 print("MINIMUM_SUPPORT_COUNT", len(minimum_sets))
+minimum_names = [tuple(candidate_names[i] for i in subset) for subset in minimum_sets]
+check("EXACTLY_EIGHT_MINIMUM_RESIDUAL_ACTIVE_SUPPORTS", len(minimum_names) == 8)
+all_face_active = [
+    support for support in minimum_names
+    if {"N22", "N33"}.issubset(support)
+]
+check("UNIQUE_MINIMUM_SUPPORT_CONTAINS_BOTH_ADJUGATE_ACTIVE_DIRECTIONS", len(all_face_active) == 1)
+print("ALL_MINIMUM_SUPPORTS", minimum_names)
+print("UNIQUE_ALL_FOUR_CURVED_FACE_ADJUGATE_SUPPORT", all_face_active[0])
 selected = minimum_sets[0]
 selected_names = [candidate_names[i] for i in selected]
 selected_matrix = EL_JAC[:, selected]
