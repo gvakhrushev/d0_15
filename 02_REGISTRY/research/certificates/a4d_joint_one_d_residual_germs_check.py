@@ -543,6 +543,8 @@ def run_orbit_five():
     # complex direction, including the axes where the metric quadratic drops.
     lower_constant = 2 - sp.sqrt(2)
     check("ORBIT5_CUBIC_REVERSE_TRIANGLE_BOUND",
+          sp.simplify((2*I) * sp.conjugate(2*I)) == 4 and
+          sp.simplify((1 + I) * sp.conjugate(1 + I)) == 2 and
           lower_constant > 0)
     print("ORBIT5_E_Q2_NONZERO: "
           "E01=2i(u^2-conj(u)^2), E02=E03=-i(u^2-conj(u)^2), "
