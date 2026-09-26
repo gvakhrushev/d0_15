@@ -131,7 +131,27 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    matched `b` + global Ad-Lorentz only; still **not** a chart-independent
    global F4 no-go.
 
-8. **2D Cayley subtangent warning.**
+8. **Full 16-site torus ambient + Pi/gauge survival (this PR, Track A3).**
+   Exact FD ambient on the full L=2 torus (16 sites x 4 roles x 6 gens =
+   384 left-Cayley dirs) + 4 free matched-edge `b` + 16 free ORIGIN solder
+   (total 404) at the same H1 backgrounds gives
+
+      rank B = 4,   rank[B | -g] = 5
+
+   over `Q`.  Adjoining six global Ad-Lorentz gauge-orbit tangents yields
+
+      rank C = 10,   rank[C | -g] = 11
+
+   so the obstruction **survives** the full-torus ambient + this Pi/gauge
+   enlargement.  Mixed-sign background repeats (`g_nonzero=118`).
+   Certificate sections `SECTION_SPAN_OBSTRUCTION_FULL_TORUS16_PI` and
+   `_MIXED`.  Cert sha256
+   `071f252223065327fd827b1f8c279e349a49bef066ac62055edb83e624d7f253`.
+   Scope: full torus link ambient + ORIGIN solder + matched `b`
+   + global Ad-Lorentz only; still **not** free-solder-all-sites /
+   sitewise-gauge / chart-independent global F4 no-go.
+
+9. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -162,7 +182,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     SCOPED-6D-CAYLEY-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-ON-5-POINT-RATIONAL-GRID;
     SCOPED-AMBIENT-ORIGIN28-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AT-TWO-RATIONAL-BACKGROUNDS;
     SCOPED-FREE-SOLDER-ORIGIN16-SPAN-OBSTRUCTION-RANK-B-0-LT-AUG-1-I-BLIND-AT-TWO-BACKGROUNDS;
-    SCOPED-ALLSITE-NEIGHBOR-PI-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AND-GAUGE-SURVIVAL-RANK-C-10-LT-CAUG-11
+    SCOPED-ALLSITE-NEIGHBOR-PI-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AND-GAUGE-SURVIVAL-RANK-C-10-LT-CAUG-11;
+    SCOPED-FULL-TORUS16-PI-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AND-GAUGE-SURVIVAL-RANK-C-10-LT-CAUG-11
 
 Supporting:
 
@@ -177,12 +198,13 @@ No continuum Einstein claim.
 
 Two parallel exactification tracks (both allowed; do not collapse):
 
-A. **Four-channel span:** free ORIGIN solder ORIGIN16 and all-site neighbor
-   ambient (120 link + 4 b + 16 solder) with global Ad-Lorentz Pi/gauge
-   survival now obstruct at two rational backgrounds.  Next: full 16-site
-   torus ambient / larger gauge complex, **or** find geometry outside these
-   backgrounds where `-grad S_star in span{grad I_j}` with `C!=0`, solve
-   exact `c`, verify full Euler, then L=3 hostile control.
+A. **Four-channel span:** full 16-site torus ambient (384 link + 4 b + 16
+   solder) with global Ad-Lorentz Pi/gauge survival now obstructs at two
+   rational H1 backgrounds (same ranks as the neighbor widen).  Next: larger
+   gauge complex (sitewise Ad-Lorentz / free solder on all sites), **or**
+   find geometry outside these backgrounds where
+   `-grad S_star in span{grad I_j}` with `C!=0`, solve exact `c`, verify
+   full Euler, then L=3 hostile control.
 
 B. **Star-only / E(2) scout:** exactify the parallel parabolic E(2) little-group
    8-internal + 6-transverse / 13-free rational system and check it against the
