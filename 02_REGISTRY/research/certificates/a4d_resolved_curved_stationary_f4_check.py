@@ -10,7 +10,8 @@ with adj = |S1capS2|=1, opp = |S1capS2|=0, eta = Lorentz, n = observer h_n.
 
 Does NOT claim a curved stationary root or a final F4 no-go.
 Includes scoped 6D Cayley + ambient ORIGIN28 + free absolute solder
-+ all-site neighbor ambient / Pi-gauge survival span obstructions.
++ all-site neighbor ambient / Pi-gauge survival + full 16-site torus
+ambient / Pi-gauge survival span obstructions.
 Does NOT open Holst/phi/new I-channels.
 """
 from __future__ import annotations
@@ -1122,6 +1123,169 @@ print(
 )
 
 
+
+# ===========================================================================
+# SECTION J -- EXACT full 16-site torus ambient + Pi-gauge survival (scoped)
+# ===========================================================================
+# Widen beyond the 5-site neighbor ambient: left-Cayley so(1,3) on EVERY
+# edge of the L=2 torus (16 sites x 4 roles x 6 gens = 384), plus 4 free
+# matched-edge b dirs, plus 16 free ORIGIN absolute-solder dirs (total 404).
+# Then enlarge the canceling space by the same 6 global Ad-Lorentz gauge
+# orbit tangents and re-test span.  Surviving obstruction => not absorbed
+# by the full-torus ambient + this Pi/gauge enlargement.
+print("SECTION_SPAN_OBSTRUCTION_FULL_TORUS16_PI")
+
+def _full_torus16_pi_at(params, bf, h_step=Rational(1, 20)):
+    links0 = make_links_6(params)
+    S0 = star_S_id(links0)
+    I0 = four_channel_I(links0, bf)
+    nz = nonzero_curved_cells(links0)
+    gcols = []
+    Icols = []
+    # (i) full-torus left-Cayley link dirs
+    for x in SITES:
+        for r in range(4):
+            for g in GENS6:
+                links1 = dict(links0)
+                links1[(x, r)] = sp.simplify(
+                    cayley_from_A(h_step * g) * links0[(x, r)]
+                )
+                S1 = star_S_id(links1)
+                I1 = four_channel_I(links1, bf)
+                gcols.append(sp.simplify((S1 - S0) / h_step))
+                Icols.append(
+                    Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+                )
+    n_link = len(gcols)
+    # (ii) free matched-edge b
+    base_b = bf[(ORIGIN, 0)]
+    for a in range(4):
+        bf1 = zero_bfield()
+        delta = zeros(4, 1)
+        delta[a] = h_step
+        bf1[(ORIGIN, 0)] = base_b + delta
+        S1 = star_S_id(links0)
+        I1 = four_channel_I(links0, bf1)
+        gcols.append(sp.simplify((S1 - S0) / h_step))
+        Icols.append(
+            Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+        )
+    n_b = 4
+    # (iii) free ORIGIN absolute solder
+    for a in range(4):
+        for b in range(4):
+            delta = zeros(4)
+            delta[a, b] = h_step
+            theta = {x: I4 for x in SITES}
+            theta[ORIGIN] = I4 + delta
+            S1 = star_action(links0, theta_by_site=theta)
+            I1 = four_channel_I(links0, bf)
+            gcols.append(sp.simplify((S1 - S0) / h_step))
+            Icols.append(
+                Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+            )
+    n_solder = 16
+    gvec = Matrix(gcols)
+    B = Matrix(len(gcols), 4, lambda i, j: Icols[i][j])
+    rankB = B.rank()
+    rankAug = B.row_join(-gvec).rank()
+
+    gauge_vecs = []
+    for g in GENS6:
+        Lam = cayley_from_A(h_step * g)
+        LamI = sp.simplify(Lam.inv())
+        links_g = {
+            k: sp.simplify(Lam * L * LamI) for k, L in links0.items()
+        }
+        bf_g = zero_bfield()
+        bf_g[(ORIGIN, 0)] = sp.simplify(Lam * bf[(ORIGIN, 0)])
+        v = []
+        for x in SITES:
+            for r in range(4):
+                L0 = links0[(x, r)]
+                Lg = links_g[(x, r)]
+                Delta = sp.simplify((Lg * L0.inv() - I4) / h_step)
+                for gen in GENS6:
+                    v.append(sp.simplify((Delta.T * gen).trace()))
+        db = sp.simplify((bf_g[(ORIGIN, 0)] - bf[(ORIGIN, 0)]) / h_step)
+        for a in range(4):
+            v.append(sp.simplify(db[a]))
+        dTh = sp.simplify((Lam - I4) / h_step)
+        for a in range(4):
+            for b in range(4):
+                v.append(sp.simplify(dTh[a, b]))
+        gauge_vecs.append(Matrix(v))
+
+    check("TORUS16_PI_GAUGE_VEC_DIM_MATCH",
+          all(gv.rows == len(gcols) for gv in gauge_vecs))
+    Cmat = B.row_join(Matrix.hstack(*gauge_vecs))
+    rankC = Cmat.rank()
+    rankCAug = Cmat.row_join(-gvec).rank()
+    return {
+        "nz": nz,
+        "I": I0,
+        "n_link": n_link,
+        "n_b": n_b,
+        "n_solder": n_solder,
+        "n_dirs": len(gcols),
+        "rankB": rankB,
+        "rankAug": rankAug,
+        "rankC": rankC,
+        "rankCAug": rankCAug,
+        "g_nonzero": sum(1 for x in gvec if x != 0),
+    }
+
+_tor = _full_torus16_pi_at(p6, bf6)
+check("TORUS16_PI_CURVED_CELLS_POSITIVE", _tor["nz"] > 0)
+check("TORUS16_PI_I_CHANNELS_ACTIVE", any(x != 0 for x in _tor["I"]))
+check("TORUS16_PI_N_LINK_384", _tor["n_link"] == 384)
+check("TORUS16_PI_N_DIRS_404", _tor["n_dirs"] == 404)
+check("TORUS16_PI_RESPONSE_RANK_4", _tor["rankB"] == 4)
+check("TORUS16_PI_AUGMENTED_GT_RESPONSE", _tor["rankB"] < _tor["rankAug"])
+check("TORUS16_PI_GAUGE_SURVIVAL", _tor["rankC"] < _tor["rankCAug"])
+print(
+    "TORUS16_PI_nz", _tor["nz"],
+    "n_dirs", _tor["n_dirs"],
+    "rankB", _tor["rankB"],
+    "rankAug", _tor["rankAug"],
+    "rankC", _tor["rankC"],
+    "rankCAug", _tor["rankCAug"],
+    "g_nonzero", _tor["g_nonzero"],
+)
+print(
+    "RESULT_TORUS16_PI: at p=(2/5)^6 matched b=e0, exact FD ambient on"
+    " full 16-site torus left-Cayley (384) + 4 free-b + 16 free ORIGIN solder"
+    " has rankB=4 < rankAug, and adjoining 6 global Ad-Lorentz gauge"
+    " tangents still leaves rankC < rankCAug (Pi/gauge survival)."
+)
+print(
+    "SCOPE_TORUS16_PI: full L=2 torus link ambient + ORIGIN solder + matched"
+    " b + global Ad-Lorentz gauge only; still not a chart-independent global"
+    " F4 no-go (no free solder on all sites, no sitewise gauge complex,"
+    " background-scoped)."
+)
+
+print("SECTION_SPAN_OBSTRUCTION_FULL_TORUS16_PI_MIXED")
+_tor_mix = _full_torus16_pi_at(_p_mix, bf6)
+check("TORUS16_PI_MIX_CURVED_CELLS_POSITIVE", _tor_mix["nz"] > 0)
+check("TORUS16_PI_MIX_I_CHANNELS_ACTIVE", any(x != 0 for x in _tor_mix["I"]))
+check("TORUS16_PI_MIX_AUGMENTED_GT_RESPONSE",
+      _tor_mix["rankB"] < _tor_mix["rankAug"])
+check("TORUS16_PI_MIX_GAUGE_SURVIVAL",
+      _tor_mix["rankC"] < _tor_mix["rankCAug"])
+print(
+    "TORUS16_PI_MIX_nz", _tor_mix["nz"],
+    "rankB", _tor_mix["rankB"],
+    "rankAug", _tor_mix["rankAug"],
+    "rankC", _tor_mix["rankC"],
+    "rankCAug", _tor_mix["rankCAug"],
+)
+print(
+    "RESULT_TORUS16_PI_MIX: mixed-sign background also has full 16-site"
+    " torus ambient obstruction with Pi/gauge survival."
+)
+
+
 print("RESULT_F4_CHECKPOINT: support obstruction on R=0 locus certified;"
       " response matrix M rank=4/ker=0; scoped 6D Cayley span obstruction"
       " rankB=4<rankAug=5 on a 5-point rational grid; ambient ORIGIN28"
@@ -1129,8 +1293,11 @@ print("RESULT_F4_CHECKPOINT: support obstruction on R=0 locus certified;"
       " rational backgrounds; free ORIGIN absolute-solder ORIGIN16"
       " obstruction (I-blind, g!=0) at two backgrounds; all-site neighbor"
       " ambient (120 link + 4 b + 16 solder) obstruction with global"
+      " Ad-Lorentz Pi/gauge survival at two backgrounds; full 16-site torus"
+      " ambient (384 link + 4 b + 16 solder) obstruction with global"
       " Ad-Lorentz Pi/gauge survival at two backgrounds; one-boost"
       " structural lemmas certified.")
 print("SCOPE: no curved stationary witness; no broad finite-carrier claim;"
-      " no continuum Einstein; free-solder + neighbor Pi widen is NOT yet"
-      " a global all-site / full-gauge F4 no-go.")
+      " no continuum Einstein; full-torus + global Ad-Lorentz widen is NOT"
+      " yet a free-solder-all-sites / sitewise-gauge / chart-independent"
+      " global F4 no-go.")
