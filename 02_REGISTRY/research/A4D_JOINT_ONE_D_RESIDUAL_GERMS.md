@@ -1,7 +1,7 @@
 # A4D joint one-dimensional residual germs
 
 **Task:** `WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS`  
-**Prerequisite:** PR [#231](https://github.com/gvakhrushev/d0_15/pull/231), corrected head `9ba5b78bb0c3543f3a6f86f6c43688e89a76cf47`
+**Prerequisite:** PR [#231](https://github.com/gvakhrushev/d0_15/pull/231), current corrected head `a16cab08463e3e6e2657d3a0161142367d4d6941`
 **Certificate:** `02_REGISTRY/research/certificates/a4d_joint_one_d_residual_germs_check.py`
 
 ## Terminal
