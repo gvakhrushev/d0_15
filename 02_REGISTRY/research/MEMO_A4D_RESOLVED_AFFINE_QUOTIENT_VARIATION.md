@@ -1637,3 +1637,15 @@ The next pressure point is now unambiguous:
 
 Only that calculation can decide whether the new coefficient survives to
 \(d_P\), disappears after constraints, or is selected by degeneracy removal.
+
+
+---
+
+## Ready-state EXPENSIVE audit
+
+PR #189 is \`Lifecycle: REVIEW\`. The EXPENSIVE task self-retired before Ready:
+its manifest/status entry and executable task brief are absent from the branch,
+while the durable memo, exact certificate, and research-ledger verdict remain.
+This audit-only commit changes no mathematical result; it exists so repository
+guards evaluate the final Ready-state contract rather than the preceding Draft
+event.
