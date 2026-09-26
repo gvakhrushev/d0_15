@@ -49,6 +49,17 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
+      "id": "EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Classify the corrected polarized UV connection resonances of the star action, close or obstruct the diagonal L=4 quarter-wave through an exact Lyapunov-Schmidt/Puiseux branch, and determine whether all resonant contributions from smooth T4 sampling are asymptotically irrelevant to the metric J2 limit without an arbitrary filter.",
+      "brief": "00_WORK/tasks/EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE.md"
+    },
+    {
       "id": "WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
