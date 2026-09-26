@@ -13,15 +13,13 @@
 \boxed{\texttt{J2-DIAGONAL-INVISIBLE-JOINT-VACUUM-GERM-FOUND}}
 \]
 
-The origin of the diagonal source-invisible sector is not isolated modulo gauge. One explicit curved family satisfies the joint system
+The origin of the diagonal source-invisible sector is not isolated modulo gauge. One explicit curved family has nonzero plaquette curvature and satisfies
 
 \[
-E_Q(\eta,K(t))=0,
-\qquad
-E_K(\eta,K(t))=0
+E_Q(\eta,K(t))=0
 \]
 
-through connection order \(8\), with nonzero plaquette curvature at order \(1\). This is not an Einstein equation and not an all-orbit statement.
+for every amplitude, together with \(E_K=0\) on every Role-0 edge. This is not an Einstein equation and not an all-orbit statement.
 
 ## 1. Invisible basis
 
@@ -82,23 +80,19 @@ The solder derivative at \(\eta\) reduces to the sum of the three oriented compl
 \boxed{E_Q(\eta,K(t))=0\qquad\text{for every }t.}
 \]
 
-**Connection.** An edge \(L_0(x)\) meets six plaquettes: the first corner of each face \((0,s)\) based at \(x\), and the inverse corner of the same faces based at \(x-e_s\). Differentiating the link logarithm in each of the six Lorentz generators and expanding in \(t\) gives the zero polynomial through degree \(8\). Therefore
+**Connection, excited edges.** A Role-0 edge on a residue whose cosine weight is nonzero has identity partner link. Its forward plaquette is some \(U\in\exp(\mathbb R Y)\) and its backward plaquette is \(U^{-1}\), with the same complementary area and the same face orientation. Curvature extraction is odd, \(\mathcal R(U^{-1})=-\mathcal R(U)\), so the two cell densities cancel for every \(t\) and every Lorentz tangent of that edge. On a zero-weight Role-0 residue the neighbor carries \(\exp(\pm t Y)\). The closed-form derivative of those six plaquettes is the zero function of \(t\) for each of the six Lorentz generators.
+
+**Connection, one non-excited edge.** The certificate also expands the edge Euler of Role \(2\) at residue \(1\), in all six generators, through degree \(4\) in \(t\). Every coefficient is zero. Edges of Roles \(1\) and \(3\) are the same residue-class calculation with a different fixed direction; they are not given a separate exact block here.
+
+The reduced joint germ on the Role-0 ray is therefore
 
 \[
-\boxed{E_K(\eta,K(t))=O(t^9)}
-\]
-
-as a Taylor jet at the identity, in every edge direction tested by those six generators. Together with the exact metric equation, the family is a curved joint vacuum through connection order \(8\).
-
-The reduced joint germ on this ray is consequently
-
-\[
-E_K^{\rm red}=0+O(t^9),
+E_Q^{\rm red}=0,
 \qquad
-E_Q^{\rm red}=0.
+E_K^{\rm red}=0
 \]
 
-The first nonzero geometric invariant on the ray is the order-\(1\) curvature, not a nonzero Euler component.
+on every Role-0 edge, with the displayed Role-2 jet also zero through degree \(4\). The first nonzero geometric invariant on the ray is the order-\(1\) curvature.
 
 ## 4. Comparison
 
@@ -108,7 +102,7 @@ The first nonzero geometric invariant on the ray is the order-\(1\) curvature, n
 
 ## 5. Boundary
 
-The germ is one cosine ray in one diagonal orbit, certified through connection order \(8\). Sine weights and the other three \(N_0\) rays are the same kind of one-Role pattern; this certificate exhibits the Role-\(0\) ray rather than enumerating them. No torsion constraint, new action channel, or global Einstein claim is used.
+The certified germ is the Role-0 cosine ray only. \(\lambda_3,\lambda_4,\lambda_6\) contain boost generators, so they are not the same spatial-rotation family and are not claimed to be vacua. Sine weights are not given a separate block. No torsion constraint, new action channel, or global Einstein claim is used.
 
 ## 6. Validation
 

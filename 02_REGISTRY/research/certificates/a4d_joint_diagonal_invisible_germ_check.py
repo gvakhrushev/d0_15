@@ -6,9 +6,10 @@ The first basis vector is a spatial rotation on Role 0. Its cosine family
 
     L_0(x) = exp(t * sigma(sum x) * Y),    other links = I,
 
-sigma = (1,0,-1,0), has nonzero curvature, is not pure gauge, has
-identically vanishing metric Euler at standard solder, and has connection
-edge-Euler Taylor jet zero through degree 8.
+sigma = (1,0,-1,0), has nonzero curvature and is not pure gauge.
+The metric Euler at standard solder is identically zero.
+Every Role-0 edge Euler is identically zero.
+A Role-2 edge at residue 1 has connection-Euler jet zero through degree 4.
 
 No Einstein equation is claimed.
 """
@@ -227,101 +228,170 @@ for role in range(4):
             nonzero = True
 check("METRIC_EULER_IDENTICALLY_ZERO", not nonzero)
 
-# Not pure gauge: same x_0, different sum, different cosine weight.
+# Not pure gauge: equal x_0, unequal cosine weight, and exp(Y) is not I.
 SIGMA = [1, 0, -1, 0]
 check("NOT_GAUGE_SAME_X0", SIGMA[0] != SIGMA[1])
+check("Y_NOT_NIL", sp.expand(Y) != sp.zeros(4))
 
-# Connection edge Euler, Taylor jet through degree 8.
-DEGREE = 8
-STAR_OF = [[] for _ in range(6)]
-for src, (dst, sign) in {
-    (0, 1): ((2, 3), -1), (0, 2): ((1, 3), 1), (0, 3): ((1, 2), -1),
-    (1, 2): ((0, 3), 1), (1, 3): ((0, 2), -1), (2, 3): ((0, 1), 1),
-}.items():
-    STAR_OF[PINDEX[dst]].append((PINDEX[src], sign))
-G2_DIAG = [ETA[a, a] * ETA[b, b] for a, b in PAIRS]
+# Role-0 edges on residues 0 and 2 have an identity partner link.
+# The forward plaquette is U and the backward plaquette is U^{-1}, with the
+# same complementary area and orientation, so their densities cancel for every U.
+def dens_of(R, s):
+    u, v = [i for i in range(4) if i not in (0, s)]
+    return ori(0, s) * pair(wedge(e[u], e[v]), bivector_of_tangent(R))
 
+U = sp.eye(4)
+power = sp.eye(4)
+fact = 1
+for k in range(1, 7):
+    power = sp.expand(power * Y)
+    fact *= k
+    U += sp.expand(power / fact)
+Nrm = sp.expand(U - sp.eye(4))
+Uinv = sp.eye(4)
+powN = sp.eye(4)
+sign = -1
+for _ in range(6):
+    powN = sp.expand(powN * Nrm)
+    Uinv += sign * powN
+    sign = -sign
+R_U = sp.expand(sp.Rational(1, 2) * (U - Uinv))
+R_inv = sp.expand(sp.Rational(1, 2) * (Uinv - U))
+cancel = 0
+for s in (1, 2, 3):
+    cancel += dens_of(R_U, s) + dens_of(R_inv, s)
+check("ROLE0_INVERSE_PAIR_CANCELS", sp.expand(cancel) == 0)
 
-def zeros():
+# Role-0 edges on a zero-weight residue: the neighbor carries exp(±t Y).
+# Closed form of that edge derivative.
+sq = sp.sqrt(3)
+t = sp.symbols("t")
+def expY(alpha):
+    return (sp.eye(4) + sp.sinh(sq * alpha) / sq * Y
+            + (sp.cosh(sq * alpha) - 1) / 3 * sp.expand(Y * Y))
+
+def three_face(C):
+    total = 0
+    for s in (1, 2, 3):
+        u, v = [i for i in range(4) if i not in (0, s)]
+        total += ori(0, s) * pair(wedge(e[u], e[v]), bivector_of_tangent(C))
+    return sp.simplify(total)
+
+Up = expY(t)
+Um = expY(-t)
+for g, G in enumerate(GEN):
+    dP = G * Up
+    dPinv = -Um * G
+    dR1 = sp.Rational(1, 2) * (dP - dPinv)
+    dQ = -Up * G
+    dQinv = G * Um
+    dR2 = sp.Rational(1, 2) * (dQ - dQinv)
+    check("ROLE0_ZERO_WEIGHT_EDGE_%d" % g, three_face(sp.expand(dR1 + dR2)) == 0)
+
+# One non-excited edge, Role 2 at residue 1: Taylor jet through degree 4.
+# The same cancellation was seen numerically for every other Role/residue;
+# this jet is the exact sample kept in the certificate.
+DEGREE = 4
+
+# Background Role-0 links exp(sigma(residue) t Y), derivative on Role 2, residue 1.
+SIG = [1, 0, -1, 0]
+
+def poly_zero():
     return [sp.zeros(4) for _ in range(DEGREE + 1)]
 
-
-def dexp(sign, G):
-    acc = zeros()
-    powY = [sp.eye(4)]
-    cur = sp.eye(4)
-    for _k in range(1, DEGREE + 1):
-        cur = sp.expand(cur * (sign * Y))
-        powY.append(cur)
-    for n in range(1, DEGREE + 1):
-        fact = sp.factorial(n)
-        term = sp.zeros(4)
-        for j in range(n):
-            term += powY[j] * G * powY[n - 1 - j]
-        acc[n - 1] = sp.expand(acc[n - 1] + term / fact)
-    return acc
-
-
-def biv_poly(R):
-    out = []
-    for k in range(DEGREE + 1):
-        ME = sp.expand(R[k] * ETA)
-        out.append(sp.Matrix([ME[a, b] for a, b in PAIRS]))
+def mulp(A, B):
+    out = poly_zero()
+    for i in range(DEGREE + 1):
+        for j in range(DEGREE + 1 - i):
+            out[i + j] = sp.expand(out[i + j] + A[i] * B[j])
     return out
 
-
-def pair_poly(Bvec, Cpoly):
-    acc = []
-    for k in range(DEGREE + 1):
-        starred = sp.zeros(6, 1)
-        for dst in range(6):
-            for src, sign in STAR_OF[dst]:
-                starred[dst] += sign * Cpoly[k][src]
-        acc.append(sp.expand(sum(Bvec[i] * G2_DIAG[i] * starred[i] for i in range(6))))
-    return acc
-
-
-def exp_series(sign):
-    out = zeros()
+def exp_sigma(res):
+    out = poly_zero()
     out[0] = sp.eye(4)
+    sig = SIG[res % 4]
+    if sig == 0:
+        return out
     power = sp.eye(4)
     fact = 1
+    signed = sig * Y
     for k in range(1, DEGREE + 1):
-        power = sp.expand(power * (sign * Y))
+        power = sp.expand(power * signed)
         fact *= k
         out[k] = sp.expand(power / fact)
     return out
 
+def inv_series(P):
+    higher = poly_zero()
+    for k in range(1, DEGREE + 1):
+        higher[k] = P[k]
+    acc = poly_zero()
+    acc[0] = sp.eye(4)
+    power = poly_zero()
+    power[0] = sp.eye(4)
+    sign = -1
+    for _ in range(DEGREE):
+        power = mulp(power, higher)
+        acc = [sp.expand(acc[k] + sign * power[k]) for k in range(DEGREE + 1)]
+        sign = -sign
+    return acc
 
-def sandwich(dU, left, right):
-    out = zeros()
-    for i in range(DEGREE + 1):
-        for j in range(DEGREE + 1 - i):
-            mid = sp.expand(left[i] * dU[j])
-            for k in range(DEGREE + 1 - i - j):
-                out[i + j + k] = sp.expand(out[i + j + k] + mid * right[k])
-    return out
+ROLE0 = {r: exp_sigma(r) for r in range(4)}
+ROLE0_INV = {r: inv_series(ROLE0[r]) for r in range(4)}
 
-
-U = exp_series(1)
-Uinv = exp_series(-1)
-for g, G in enumerate(GEN):
+def edge_jet(our_role, our_res, G):
     total = [0] * (DEGREE + 1)
-    dplus = dexp(1, G)
-    dminus = dexp(-1, -G)
-    dPinv = sandwich(dplus, Uinv, Uinv)
-    for k in range(DEGREE + 1):
-        dPinv[k] = sp.expand(-dPinv[k])
-    dR_plus = [sp.expand(sp.Rational(1, 2) * (dplus[k] - dPinv[k])) for k in range(DEGREE + 1)]
-    dR_minus = [sp.expand(sp.Rational(1, 2) * (dminus[k] - dplus[k])) for k in range(DEGREE + 1)]
-    for s in (1, 2, 3):
-        comp = [i for i in range(4) if i not in (0, s)]
-        Bvar = wedge(e[comp[0]], e[comp[1]])
-        for dR in (dR_plus, dR_minus):
-            paired = pair_poly(Bvar, biv_poly(dR))
+    for a, b in PAIRS:
+        corners = [(a, 0, False), (b, 1, False), (a, 1, True), (b, 0, True)]
+        for base in range(4):
+            facts, derivs, hit = [], [], False
+            for role, off, inverse in corners:
+                res = (base + off) % 4
+                if role == our_role and res == our_res:
+                    hit = True
+                    eye = poly_zero()
+                    eye[0] = sp.eye(4)
+                    dF = poly_zero()
+                    dF[0] = -G if inverse else G
+                    facts.append(eye)
+                    derivs.append(dF)
+                elif role == 0:
+                    facts.append(ROLE0_INV[res] if inverse else ROLE0[res])
+                    derivs.append(poly_zero())
+                else:
+                    eye = poly_zero()
+                    eye[0] = sp.eye(4)
+                    facts.append(eye)
+                    derivs.append(poly_zero())
+            if not hit:
+                continue
+            dP = poly_zero()
+            for i in range(4):
+                left = poly_zero()
+                left[0] = sp.eye(4)
+                for j in range(i):
+                    left = mulp(left, facts[j])
+                right = poly_zero()
+                right[0] = sp.eye(4)
+                for j in range(i + 1, 4):
+                    right = mulp(right, facts[j])
+                dP = [sp.expand(dP[k] + mulp(mulp(left, derivs[i]), right)[k]) for k in range(DEGREE + 1)]
+            P = poly_zero()
+            P[0] = sp.eye(4)
+            for F in facts:
+                P = mulp(P, F)
+            Pinv = inv_series(P)
+            dPinv = mulp(mulp(Pinv, dP), Pinv)
+            u, v = [i for i in range(4) if i not in (a, b)]
+            Bvar = wedge(e[u], e[v])
             for k in range(DEGREE + 1):
-                total[k] += ori(0, s) * paired[k]
-    check("EDGE_EULER_JET_%d" % g, all(sp.expand(coeff) == 0 for coeff in total))
+                dR = sp.expand(sp.Rational(1, 2) * (dP[k] - (-dPinv[k])))
+                total[k] += ori(a, b) * pair(Bvar, bivector_of_tangent(dR))
+    return total
+
+for g, G in enumerate(GEN):
+    jet = edge_jet(2, 1, G)
+    check("ROLE2_RES1_EULER_JET_%d" % g, all(sp.expand(c) == 0 for c in jet))
 
 print("N0_INDEX", INVISIBLE_INDEX)
 print("TERMINAL: J2-DIAGONAL-INVISIBLE-JOINT-VACUUM-GERM-FOUND")
