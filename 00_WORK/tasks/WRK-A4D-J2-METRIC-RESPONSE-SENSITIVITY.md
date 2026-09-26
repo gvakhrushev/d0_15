@@ -64,6 +64,10 @@ with the certified exponent p' and declared chart/norm.
 
 This worker does not prove existence of exact stationary sheets, UV isolation, locality, or the Einstein theorem. Do not edit #202. Do not add filters or invariants.
 
-## Handoff
+## GitHub execution contract
+
+Start from fresh current `main` after this registration is merged. Run lifecycle start, open a Draft PR before substantive scientific edits, keep Git-visible task state synchronized with the PR lifecycle, self-retire only at a declared terminal, refresh against current `main` before Ready, and never self-merge.
+
+## Chat handoff
 
 Return PR, SHA, exact response convention, norm, p', compact-domain hypotheses, and validation commands.
