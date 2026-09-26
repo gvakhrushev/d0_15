@@ -283,6 +283,106 @@ must identify and quotient correctly.
 This decomposition is the parent-level integration rule for the forthcoming
 worker table.
 
+## 3B. Radical form of the symmetric mixed saddle
+
+For the polarized Hessian pairing the full joint block has the symmetric form
+
+[
+mathcal H_J=
+egin{pmatrix}
+0&C\
+C^{mathsf T}&A
+end{pmatrix},
+qquad
+A=A^{mathsf T},
+	ag{3B.1}
+]
+
+over the relevant real or (mathbb Q(i)) bilinear carrier. Put
+
+[
+W:=ker Csubset V.
+]
+
+A joint null vector ((q,v)) satisfies
+
+[
+Cv=0,qquad C^{mathsf T}q+Av=0.
+	ag{3B.2}
+]
+
+The first equation says (vin W). The second is solvable in (q) iff
+
+[
+Avinoperatorname{im}C^{mathsf T}=W^perp.
+]
+
+Equivalently,
+
+[
+w^{mathsf T}Av=0
+qquad
+	ext{for every }win W.
+]
+
+Define the radical of the restricted connection form
+
+[
+operatorname{Rad}(A|_W)
+:=
+{vin W:; w^{mathsf T}Av=0 orall win W}.
+	ag{3B.3}
+]
+
+Projection ((q,v)mapsto v) therefore gives the exact sequence
+
+[
+oxed{
+0longrightarrow
+ker C^{mathsf T}
+longrightarrow
+kermathcal H_J
+longrightarrow
+operatorname{Rad}(A|_W)
+longrightarrow0.
+}
+	ag{3B.4}
+]
+
+Hence
+
+[
+oxed{
+dimkermathcal H_J
+=
+dimker C^{mathsf T}
++
+dimoperatorname{Rad}(A|_W).
+}
+	ag{3B.5}
+]
+
+The pure source-invisible connection space satisfies
+
+[
+N_0=ker Acap W
+subseteq
+operatorname{Rad}(A|_W).
+	ag{3B.6}
+]
+
+Thus the three pieces of the linear joint problem are intrinsic:
+
+1. (ker C^{mathsf T}): metric-only null directions;
+2. (N_0): pure connection source-invisible directions;
+3. (operatorname{Rad}(A|_W)/N_0): genuinely mixed saddle directions.
+
+This is equivalent to the quotient-Schur description in §3A but is more useful
+for the worker census. The positive 4/1/1 strategy is complete only if every
+element of item 3 is absent after quotient or is classified as an already-owned
+physical IR/metric-gauge tangent. Any additional physical UV class in item 3
+is a new nonlinear blocker.
+
 ## 4. #227 hostile control is source-visible and is cut by the joint metric equation
 
 Merged #227 uses
