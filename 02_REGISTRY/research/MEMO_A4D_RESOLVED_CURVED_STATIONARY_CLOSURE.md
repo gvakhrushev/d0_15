@@ -161,3 +161,109 @@ python3 tools/validate_repo.py
 
 Draft PR #202.  Do not merge.  Continue: span search with `R!=0`, then exact
 root or scoped no-go, then L=3 before Ready.
+
+
+## 4. NUMERICAL/STRUCTURAL — minimal parabolic mechanism isolated
+
+The Cayley/LDU candidate has an additional highly non-generic structure.
+
+Stacking the six matrices (P_{rs}-I) reveals a common one-dimensional kernel.
+Its generator is null with respect to (eta). After one global proper-Lorentz
+gauge rotation this line is the canonical
+
+[
+n=(1,1,0,0).
+]
+
+In that gauge every link lies, to numerical precision (<10^{-14}), in the
+four-dimensional null-line stabilizer (SIM(2)). In standard Lorentz-algebra
+coordinates
+
+[
+(K_1,K_2,K_3,J_{12},J_{13},J_{23}),
+]
+
+each link satisfies
+
+[
+(a,b,c,b,c,d),
+]
+
+so the two combinations (K_2+J_{12}) and (K_3+J_{13}) are the null
+translations.
+
+Consequently every plaquette commutator is parabolic:
+
+[
+operatorname{tr}P_{rs}=4,
+qquad
+det(I-P_{rs})approx0,
+qquad
+(P_{rs}-I)^3approx0,
+]
+
+and both Lorentz bivector invariants of the odd curvature vanish numerically.
+
+This explains why the roots are absent from the generic
+(det(I-P)
+e0) controls used for quotient-completeness: they live on a
+separate parabolic curvature stratum.
+
+### 4.1 Minimal subgroup scan
+
+A full-Euler scan was repeated after restricting each link to subgroups of
+(SIM(2)).
+
+- one-parameter sectors: only flat roots;
+- all tested two-parameter sectors: only flat roots;
+- (K_1+N_2+N_3) (scale plus two null translations): curved roots survive;
+- (N_2+N_3+J_{23}), i.e. the exact little group (E(2)) with no null-line
+  scale: curved roots survive.
+
+For the (E(2)) three-parameter-per-link sector, a representative root has
+
+[
+|mathrm{EL}_{m full}|_2=4.29	imes10^{-14},
+qquad
+|C|_{m scout}=0.34535,
+]
+
+with (detTheta=-1) and
+(sigma_{min}(Theta)=0.2713).
+
+Thus the first numerically surviving homogeneous class needs only
+
+[
+4	imes3+15=27
+]
+
+det-fixed chart variables, not the original 39.
+
+A representative (E(2)) link coordinate set
+((N_2,N_3,J_{23})) is
+
+```text
+[ 0.088504652044,  0.082911143621, -0.249807924819]
+[-0.320461257769, -0.081035776131, -0.303588032463]
+[-0.322033101871, -0.137571575304,  0.125148917575]
+[ 0.287012659188,  0.226439735406, -0.295275453655]
+```
+
+### 4.2 Failed over-simplification control
+
+Fixing all twelve (E(2)) link coordinates to nearby low-denominator rationals
+and solving only for the solder does **not** preserve stationarity: the best
+tested rounded controls stall at full residual of order (10^{-2}).
+
+Therefore the exact witness cannot be obtained by independently rounding the
+links while repairing only the solder. Exact reconstruction must move both
+sectors along the stationary manifold.
+
+### Revised exactification target
+
+Work entirely inside the (E(2)) little-group chart. Derive the exact rational
+stationary equations there, compute their generic Jacobian rank, and use the
+remaining free dimensions to impose rational gauge/normal-form conditions
+before elimination.
+
+This is now the smallest observed positive F4 carrier.
