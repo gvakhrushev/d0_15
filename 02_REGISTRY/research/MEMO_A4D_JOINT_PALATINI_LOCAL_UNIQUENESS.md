@@ -496,6 +496,55 @@ for arbitrary (K), hence
 
 This is why the task needs a finite positive joint visibility/Hölder exponent, not a preferred cubic or quintic exponent.
 
+## 7A. IR/UV source separation in the sourced joint problem
+
+The smooth sourced continuation has two mathematically different residuals and
+they must not be conflated.
+
+Let ((Q_h^{m sm},K_h^{m sm})) denote the designated smooth approximate
+Palatini sheet. #216 gives
+
+[
+E_K(Q_h^{m sm},K_h^{m sm})=O(h^infty)
+]
+
+in the smooth/Wiener norms, while #216/#223 give at a normal center
+
+[
+h^{-2}E_{star,Q}(Q_h^{m sm},K_h^{m sm})
+=
+-rac12G+O(h).
+]
+
+For a smooth matter realization, the Fourier tail of the metric/matter source
+at fixed nonzero lattice phase is also (O(h^infty)). Therefore the
+**projection of the joint residual onto the UV/resonant normal blocks** is
+
+[
+oxed{s_h^{m UV}=O(h^infty).}
+	ag{7A.1}
+]
+
+This is the source entering the residual (N_0)/mixed-saddle normal forms.
+
+By contrast, the low-frequency metric Euler residual is the ordinary physical
+Einstein/matter truncation error. Its normalized size need only be (O(h));
+raw it is correspondingly polynomial in (h). It is handled by the physical
+IR metric branch, with metric gauge and propagating/constraint modes retained.
+It must **not** be fed into the UV Hölder estimate.
+
+Thus the positive joint theorem factorizes as
+
+[
+	ext{physical IR Palatini branch}
+quadoplusquad
+	ext{UV normal correction}.
+]
+
+The present uniqueness task controls the second factor and proves that it does
+not change the continuum coefficient. It does not claim global uniqueness or
+existence of the low-frequency metric solution for arbitrary matter data.
+
 ## 8. Transfer to the metric response
 
 Merged #226 gives a mesh-independent raw Lipschitz bound in the declared finite-stencil chart,
@@ -550,6 +599,54 @@ longrightarrow
 with the sign/source placement understood in the repository's declared Palatini convention.
 
 The coefficient (-1/2) is not re-fit here. It is inherited from the exact #201 factor (1/4) and E-NJET (E_eta=-2G).
+
+## 9A. Sufficient sourced joint-branch theorem
+
+A sufficient positive theorem can now be stated without an off-shell
+connection selector.
+
+Fix a smooth continuum Palatini/Eintein branch and one admissible fixed smooth
+finite realization. Assume:
+
+1. the owned IR construction supplies the smooth approximate connection with
+   (E_K=O(h^infty));
+2. the physical low-frequency metric/matter variables remain in the declared
+   smooth branch neighborhood;
+3. J1 shows that every UV mixed-saddle null direction not belonging to genuine
+   metric gauge/physical IR data is represented in the finite residual normal
+   sectors handed to J2/J3;
+4. on those sectors the full joint reduced map has a uniform positive
+   Hölder/Łojasiewicz rescue for the UV source (7A.1), with at most a fixed
+   polynomial loss in (h).
+
+Then every exact joint-critical sheet inside the selected Palatini normal tube
+has UV normal displacement
+
+[
+d_{m UV}=O(h^infty).
+]
+
+By #226 its normalized metric partial differs from the smooth approximate
+sheet by (O(h^infty)). Consequently
+
+[
+h^{-2}E_{star,Q}
+=
+-rac12G+O(h)+O(h^infty)
+]
+
+on that exact joint-critical sheet.
+
+For two fixed smooth realizations of the same local metric 2-jet, the same
+argument applies separately; both limits equal the same geometric
+(-rac12G(J)). Thus extension independence on the designated **joint**
+branch is recovered without the false all-(E_K)-sheet statement killed by
+#227.
+
+The logical stop condition is J1 item 3: if the worker finds an additional
+physical UV mixed-saddle null sector outside the delegated 4/1/1 normals, that
+sector becomes an explicit blocker and the positive terminal cannot be
+declared merely from the existing nonlinear workers.
 
 ## 10. What would close the positive terminal
 
