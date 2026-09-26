@@ -319,7 +319,22 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    transverse at witness nonzero (`r0_K1=-6,…,r1_M3=22`) — **not** a full
    8+6 root. Outcome `LOCUS_RECON_FREE_INTERNAL_FAMILY`.
 
-20. **2D Cayley subtangent warning.**
+20. **E(2) lean-NF DU1/subQR8 transverse on 4-param family — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_check.py`
+   (sha256 `a9d12a7c…ee6658`; wall ~1.25s; PASS). Records the 6 transverse
+   cleared numerators restricted to the open-chart free-internal family
+   `(a,b,jj,ee)=(n2_r0,n2_r1,j,n3_r2)` at degrees `[13,16,11,15,19,19]`
+   (content + `jj`/`(jj²+4)` stripped; `GCD_ALL=1`), probe-verified against
+   live `dS_transverse`. Flat locus `a=b=ee=0` has all 6 gens identically 0
+   and sample curv²=0. Open-chart `a=0` branch forces `ee=0` then `b=0`
+   (flat only); cheap slice `b=ee=0` lex GB forces `a=0` (flat only). Curved
+   `a≠0` branch: ee-resultant residual `H(a,b,jj)` deg ~26; pairwise gcd of
+   stripped multi-resultants = 1; full multi-var Groebner exceeds the minutes
+   wall — honest BLOCKER. Outcome
+   `TRANSVERSE_ON_4PARAM_FLAT_OK_CURVED_GB_BLOCKED`. **Not** a curved 8+6
+   root; **not** an open-chart curved transverse-empty theorem.
+
+21. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -368,7 +383,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-JAC-QR-RECOMPUTE-BLOCKED-STAR-S-AMBIENT-MISMATCH;
     E2-LEAN-NF-L-ZERO-ONLY-FREE-E2-8P6-SAMPLE-JAC-RANK-14;
     E2-LEAN-NF-DU1-SUBQR8-OPEN-CHART-J-LOCUS-CANDIDATE;
-    E2-LEAN-NF-DU1-SUBQR8-LOCUS-RECON-FREE-INTERNAL-FAMILY
+    E2-LEAN-NF-DU1-SUBQR8-LOCUS-RECON-FREE-INTERNAL-FAMILY;
+    E2-TRANSVERSE-ON-4PARAM-FLAT-LOCUS-OK-CURVED-BRANCH-GB-BLOCKED
 
 Supporting:
 
@@ -381,14 +397,15 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** lean-NF DU1/subQR8 open-chart locus reconstructed to a
-**4-param free-internal family** (cert `…locus_recon_check.py`, ~8s): open
-`j≠0` branch with exact curved witness free-internal-stationary; transverse
-at that witness nonzero. Next: **solve exact transverse on the 4-param
-family** (or prove open-chart curved transverse-empty). Cheap slice
-`n2_r1=n3_r2=0` already forces `n2_r0=0` (flat only) under transverse GB.
-Full-12 E(2) eliminate remains too heavy. Jac-QR of memo float witness still
-blocked. Do **not** re-impose locked E(2) NF. Still avoid blind 14-var /
+**Primary (Track B):** transverse gens on the 4-param free-internal family are
+recorded (cert `…transverse_family_check.py`, ~1.25s); flat locus
+`a=b=ee=0` and open-chart `a=0` / cheap `b=ee=0` slices force flat only.
+Curved `a≠0` branch remains **GB-blocked** (resultant `H` deg~26; pairwise
+stripped-resultant gcd=1; multi-var GB exceeds minutes wall). Next: **cheaper
+curved specialize** (fix one free param rationally) **OR numerical Newton**
+on the 4-param family toward transverse=0 — **not** blind multi-var GB /
+deg-26 resultant chains. Full-12 E(2) eliminate remains too heavy. Jac-QR
+still blocked. Do **not** re-impose locked E(2) NF. Still avoid blind 14-var /
 deg-33 Groebner. Filter by four-channel `R=R_*(C)` only if a full 8+6 point
 appears.
 
@@ -442,6 +459,7 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_gaug
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_free_e2_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_locus_recon_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
