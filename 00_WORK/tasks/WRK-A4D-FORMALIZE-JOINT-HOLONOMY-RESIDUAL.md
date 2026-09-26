@@ -14,6 +14,10 @@ Execution: `GitHub-first`
 
 SATISFIED: #185 and the clean quotient-completeness result #196 are merged.
 
+## Why delegated
+
+The two-loop residual algebra and the merged #196 completeness structure are stable finite mathematics. The worker can harden covariance, Plucker relations and quotient linear algebra without making new physical choices. Concrete large-rank claims remain theorem obligations rather than imported certificate facts.
+
 ## Owned theorem packet
 
 Start from
