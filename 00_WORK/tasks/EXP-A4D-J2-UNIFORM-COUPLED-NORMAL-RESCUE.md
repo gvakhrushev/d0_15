@@ -153,6 +153,10 @@ C. `NAKED-STAR-J2-COUPLED-NORMAL-RESCUE-PARTIAL`: exact progress is durable but 
 - Do not use an h-dependent shrinking metric realization as the primary locality theorem.
 - Do not claim that a disconnected finite curved vacuum bounded away from flat obstructs this J2 theorem.
 
-## Handoff
+## GitHub execution contract
+
+Start from fresh current `main` after this registration is merged. Run lifecycle start, open a Draft PR before substantive scientific edits, keep Git-visible task state synchronized with the PR lifecycle, self-retire only at a declared terminal, refresh against current `main` before Ready, and never self-merge.
+
+## Chat handoff
 
 Return the PR, final SHA, exact theorem assumptions, which of G1-G7 are owned, the strongest uniform estimate obtained, and the single smallest remaining blocker. Never self-merge.
