@@ -29,7 +29,10 @@
       "class": "EXPENSIVE",
       "parent": "ROOT",
       "state": "IN_PROGRESS",
-      "affected_claims": [],
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
+        "D0-HODGE-LINKS-001"
+      ],
       "exit_condition": "Classify whether the minimal full-affine completed action admits nontrivial curved stationary points modulo gauge on finite L=2 and hostile L=3 controls, or prove a precisely scoped obstruction; separate solder Euler, connection Euler, and nongauge affine-residual equations.",
       "brief": "00_WORK/tasks/EXP-A4D-CURVED-STATIONARY-SECTOR-AFTER-AFFINE-COMPLETION.md"
     }
