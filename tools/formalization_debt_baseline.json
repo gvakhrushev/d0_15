@@ -1,0 +1,26 @@
+{
+  "schema": "d0-formalization-debt/1",
+  "entries": [
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean",
+      "kind": "heartbeat-override",
+      "line": "316",
+      "detail": "1000000",
+      "reason": "Removing the local override and running the narrow target failed at this theorem's weak-head normalization with the default 200000-heartbeat limit."
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/CouplingAxisReadout.lean",
+      "kind": "heartbeat-override",
+      "line": "59",
+      "detail": "1200000",
+      "reason": "Removing the local override and running the narrow target failed at this theorem's weak-head normalization with the default 200000-heartbeat limit."
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Synthesis/SectorFieldIndependence.lean",
+      "kind": "heartbeat-override",
+      "line": "396",
+      "detail": "1000000",
+      "reason": "Removing the local override and running the narrow target failed in simp at its commuting-sign theorem with the default 200000-heartbeat limit."
+    }
+  ]
+}
