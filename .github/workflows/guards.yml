@@ -33,6 +33,9 @@ jobs:
       - name: Validate canonical architecture
         run: python tools/validate_repo.py
 
+      - name: Formalization debt non-growth
+        run: python tools/formalization_debt_audit.py --check
+
       - name: Claim-strength lint
         run: |
           python tools/lint_claim_strength.py --self-test
