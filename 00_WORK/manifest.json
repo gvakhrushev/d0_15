@@ -46,6 +46,17 @@
       ],
       "exit_condition": "Either exactify a nondegenerate curved stationary witness for the selected four-channel full-affine family, or prove a precisely scoped no-go for the declared carrier; numerical E(2) scouts are not terminal.",
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
+    },
+    {
+      "id": "WRK-A4D-J2-NORMAL-COORDINATE-LOCALITY",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify that every nonlinear total-momentum degree at most 2 in a translation-invariant analytic Volterra expansion vanishes at a normal-coordinate center, record the merged #201 linear coefficient one quarter E_eta on the ten small-momentum quadratic coefficients, and prove the fixed-realization post-quadratic infrared remainder is O(h).",
+      "brief": "00_WORK/tasks/WRK-A4D-J2-NORMAL-COORDINATE-LOCALITY.md"
     }
   ]
 }
