@@ -54,6 +54,20 @@ L=2 may discover the witness. A broad finite-carrier terminal requires an L=3 ho
 
 Use exact rational directional derivatives and symmetry reduction. The current homogeneous parabolic sheet is killed and its `R` channel is identically dormant; do not try to activate it. For each controlled deformation, first compute the missing-Euler Jacobian and the same directions' first variation of `det(I-P)`, `adj(I-P)`, or `R`. Reject it unless both obstruction gates can change. Only then run a small exact/rational reconstruction. Do not restart blind Gröbner/resultant chains. Checkpoint each exact subsystem and rank before moving on.
 
+## Current durable checkpoint (2026-09-26)
+
+The exact first-order gate is owned by
+`a4d_resolved_curved_stationary_e2_controlled_normal_gate_check.py`.
+The null-line dilation `K1` fails: its four-role Euler Jacobian has rank 4
+and augmented rank 5, while all tested adjugate first variations vanish.
+Among the twelve role-local `{K1,N2,N3}` directions, only `N2` on role 2
+and `N3` on role 3 activate `adj(I-P)` on the four curved faces. The full
+eight-equation missing-Euler Jacobian has rank 8, augmented rank 8; a
+residual-active linearized correction needs at least seven directions.
+This is not a finite stationary witness. Exact nonlinear reconstruction of
+the full Euler system with active residual remains open; L=3 has not started
+because no exact L=2 witness has been reconstructed.
+
 ## Forbidden shortcuts
 
 No Holst channel, no phi coefficient, no new unowned invariant, no forcing `R=0`, no 7x7 coefficient grid, no continuum Einstein claim, no treating machine-precision roots as exact.

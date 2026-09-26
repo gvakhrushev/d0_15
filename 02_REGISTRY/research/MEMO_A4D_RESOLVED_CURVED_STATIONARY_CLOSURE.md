@@ -592,6 +592,7 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_newton_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_newton_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_enlarged12_full_transverse_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_controlled_normal_gate_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_pattern_exactify_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_classical_8p6_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_matched_b_r_activate_check.py
@@ -606,9 +607,10 @@ python3 tools/validate_repo.py
 
 Draft PR #202. Do not merge. The matrix-defined homogeneous parabolic family
 is exactly full-EL obstructed away from the flat origin, and matched-b residuals
-are blind on this sheet. Continue with a controlled deformation that passes
-both the missing-Euler and residual-activation rank gates; L=3 remains required
-before Ready.
+are blind on this sheet. The `K1` dilation fails the exact rank gates. The
+outside-`SIM(2)` normal gate passes, but only at the first-order level; exact
+nonlinear active-residual full stationarity remains open. Do not mark Ready.
+L=3 remains required for a broader terminal after an exact L=2 witness exists.
 
 
 ## 4. NUMERICAL/STRUCTURAL — minimal parabolic mechanism isolated
@@ -978,3 +980,41 @@ is itself flat. Hence no nontrivial zero-source stationary germ on this sheet
 accumulates on its flat locus. This is positive control for the upper \(J^2\)
 isolation question in #216; it does not classify other charts or the full
 physical quotient.
+
+### 9.3 Controlled normal deformation: exact first-order gates
+
+At the former witness `(j,gamma,delta)=(2,0,1)`, the exact eight-component
+missing Euler vector in order `(role 0 N2,N3, ..., role 3 N2,N3)` is
+
+```text
+(-16, 0, 16, 0, -32, 64, 0, -32).
+```
+
+The new exact directional certificate
+`a4d_resolved_curved_stationary_e2_controlled_normal_gate_check.py`
+tests the twelve role-local directions `{K1,N2,N3}`. On each of the four
+curved faces `(0,2),(0,3),(1,2),(1,3)`, it differentiates both
+`det(I-P)` and `adj(I-P)` exactly. `K1` is the null-line dilation in the
+current `SIM(2)` stabilizer: its four Euler columns have rank 4, but adding
+the base defect raises the rank to 5, and every tested first variation of the
+adjugate is zero. This candidate therefore fails both parts of the gate.
+
+The outside-`SIM(2)` directions pass the combined first-order gate. The only
+residual-active columns are `N2` on role 2 and `N3` on role 3; their
+adjugate-derivative matrices have rank 2 on faces `(0,2),(1,2)` and
+`(0,3),(1,3)`, respectively. All twelve determinant derivatives remain
+zero. The full missing-Euler Jacobian has rank 8 and its augmented rank with
+the base defect is also 8. The minimum support containing an adjugate-active
+column has size 7 (eight such supports); one exact linearized correction is
+on `(K1_0,K1_1,N2_0,N2_2,N2_3,N3_0,N3_1)` with coefficients
+
+```text
+(-166/67, -2, 76/67, 40/67, -124/67, 42/67, -102/67).
+```
+
+This is an exact first-order solution of the eight missing equations, not a
+finite stationary configuration. Its order-one coefficients do not establish
+a small branch or solve the remaining internal Euler equations. No exact
+active-residual full-Euler witness has been reconstructed, and the L=3 hostile
+control has not been run. Those remain open; the present scoped parabolic
+no-go is not extended to the deformed carrier.
