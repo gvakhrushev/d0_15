@@ -35,7 +35,9 @@ Current #202 checkpoint to reproduce before extending:
 - exact response matrix rank 4 / kernel 0 on the declared sample;
 - five exact homogeneous word controls have no nondegenerate full stationary point;
 - numerical E(2) little-group candidates pass literal single-site/single-edge Euler tests at machine precision;
-- the current smallest exactification target is 14 independent rational stationarity equations (8 internal + 6 transverse) after fixing 13 rational normal-form coordinates.
+- the enlarged E(2) pattern has now exactified to the family `e2=(0,0,j,0,0,j,g,d,0,d,-g,0)`; witness `(j,g,d)=(2,0,1)` has exact declared star residual zero and `curv²=32`;
+- the classical 8+6 check confirms the current star-family stationarity, but the cheap `b≡0` four-channel filter is dormant (`C≠0`, `R=0`), so active `R=R_*(C)≠0` remains open;
+- independently, the rank-two seam has a canonical fixed-rank affine quotient coordinate `Psi_2(M,t)=t∧(Λ²M)`, with `Psi_r(M,t)=Psi_r(M,t')` iff `t-t'∈im M`; this is diagnostic/resolution data, not a new action channel.
 
 Numerical evidence is not a theorem.
 
@@ -43,14 +45,16 @@ Numerical evidence is not a theorem.
 
 Either:
 
-1. exactify one all-site nondegenerate configuration with nonzero curvature and full Euler zero for the selected four-channel action; or
-2. prove a precisely scoped exact no-go for the declared E(2)/parabolic or larger carrier.
+1. promote the exact enlarged parabolic star-family to one all-site nondegenerate configuration with nonzero curvature and full Euler zero for the selected **active four-channel** action, including `R=R_*(C)≠0`; or
+2. prove a precisely scoped exact no-go for that active residual/channel completion.
+
+Separately record whether any nontrivial stationary member/continuation accumulates at the **flat physical quotient**. This flat-accumulation question is cross-wall input to #216 and is logically independent of existence of a finite-amplitude curved vacuum.
 
 L=2 may discover the witness. A broad finite-carrier terminal requires an L=3 hostile control.
 
 ## Required method
 
-Prefer exact rational/algebraic elimination, Gröbner/resultant methods, rational reconstruction, Jacobian rank certification and symmetry reduction. Numerical optimization is a scout only. Checkpoint every exact subsystem/rank/factorization before moving on.
+Prefer exact rational/algebraic elimination, rational reconstruction, Jacobian rank certification and symmetry reduction. Numerical optimization is a scout only. For the current exact family, first solve/activate the matched residual section `R=R_*(C)≠0`; do not restart blind multivariable Gröbner/resultant chains. For the cross-wall diagnostic, test flat convergence in quotient-invariant holonomy/compound data rather than curvature alone. Checkpoint every exact subsystem/rank/factorization before moving on.
 
 ## Forbidden shortcuts
 
