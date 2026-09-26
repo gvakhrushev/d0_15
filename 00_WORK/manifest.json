@@ -25,7 +25,7 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
-      "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
+      "id": "EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "state": "PLANNED",
@@ -33,8 +33,8 @@
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
         "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
       ],
-      "exit_condition": "Classify the nondegenerate curved stationary sector of the selected resolved full-affine action.",
-      "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
+      "exit_condition": "Classify the fully affine-legal discrete Palatini(+Lambda+torsion^2) target against the selected star + four joint-residual action span, including whether any cosmological volume channel survives the full-affine quotient.",
+      "brief": "00_WORK/tasks/EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN.md"
     },
     {
       "id": "EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE",
@@ -48,6 +48,18 @@
       "brief": "00_WORK/tasks/EXP-A4D-NONLINEAR-EINSTEIN-J2-BRIDGE.md"
     },
     {
+      "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Either exactify a nondegenerate curved stationary witness for the selected four-channel full-affine family, or prove a precisely scoped no-go for the declared carrier; numerical E(2) scouts are not terminal.",
+      "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
+    },
+    {
       "id": "WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -56,42 +68,8 @@
         "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "After #184 lands, formalize the affine relative-solder transform, lambda=1 selector and diagonal overquotient structure.",
+      "exit_condition": "Formalize the merged #184 affine relative-solder transform, lambda=1 selector, homogeneous covariance and matched-edge overquotient statement without promoting the completion to the final physical quotient.",
       "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "After #185/#186 stabilize, formalize the polynomial two-holonomy residual and its affine covariance.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "After #188 and graph-closure selection, formalize image-incidence resolution of the affine rank seam.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-RESOLVED-ENERGY-VARIATION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "After #189 and carrier selection, formalize the resolved quotient energy, zero locus and constrained first variation.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-RESOLVED-ENERGY-VARIATION.md"
     },
     {
       "id": "WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION",
@@ -101,8 +79,41 @@
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "After #187 review, formalize the exact second-order obstruction of the Lorentz-null checkerboard quotient planes.",
+      "exit_condition": "Formalize the merged #199/#200 exact second-order checkerboard obstruction in its finite L=2 scope.",
       "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Formalize the merged #188/#193 rank-changing gauge-image resolution, first-jet image theorem and graph-closure seam geometry while keeping limiting incidence directions distinct from endpoint gauge.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
+      ],
+      "exit_condition": "Formalize the merged #185 polynomial two-holonomy residual and the stable structural content of #196 quotient-completeness, with no Python rank result admitted as an axiom.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Formalize the merged #201 finite theorem that the star flat metric Hessian is exactly one quarter of the owned E_eta ray, together with the high-order flat vanishing of quadratic joint-residual completions.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED.md"
     }
   ]
 }

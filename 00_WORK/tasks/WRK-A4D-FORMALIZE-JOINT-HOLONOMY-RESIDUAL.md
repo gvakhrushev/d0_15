@@ -4,55 +4,41 @@ Class: `WORKER`
 State on registration: `PLANNED`  
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
-## Dependency gate
-
-Start only after #185 and the relevant terminal/completeness result from #186
-are merged or CONTROL-approved.
-
 Repository: `gvakhrushev/d0_15`
 Base: `main`
 Branch: `wrk/a4d-formalize-joint-holonomy-residual`
 Primary artifact: `03_FORMALIZATION/D0/Geometry/A4DJointHolonomyResidual.lean`
 Execution: `GitHub-first`
 
-## Why delegated
+## Dependency gate
 
-This worker is dependency-gated on the two-loop residual research. After that result stabilizes, the polynomial adjugate/determinant residual and its affine covariance are algebraic and suitable for an isolated Lean module independent of later physical-quotient selection.
+SATISFIED: #185 and the clean quotient-completeness result #196 are merged.
 
-## GitHub execution contract
+## Owned theorem packet
 
-Start only from current `main`; run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
-
-## Chat handoff
-
-Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
-
-
-## Objective
-
-Formalize the first surviving two-based-loop affine translational residual.
-
-Primary module:
-`03_FORMALIZATION/D0/Geometry/A4DJointHolonomyResidual.lean`.
+Start from
+`R_2|1 = det(I-P1) t2 - (I-P2) adj(I-P1) t1`.
 
 Targets:
 
-[
-q_1^#=operatorname{adj}(I-P_1)t_1,
-]
+- polynomial definition with no inverse/reference section;
+- full affine conjugation covariance `R' = g R`;
+- Lorentz quadratic invariance and the reviewed reversal identities;
+- exact flat-holonomy vanishing;
+- relation between two-loop residual components and the corresponding Plucker minors;
+- abstract linear-algebra theorem: if `J D=0`, `rank D=4`, `rank J=12` in a 16-dimensional sector, then `ker J = range D`;
+- a small typed nongauge witness if current finite carrier infrastructure supports it.
 
-[
-R_{2|1}=det(I-P_1)t_2-(I-P_2)q_1^#.
-]
+#196 certifies sector rank 12 and global rank 192 on declared generic homogeneous L=2 controls. Do NOT encode those Python ranks as axioms. Either prove the concrete ranks in Lean or leave the concrete completeness instantiation as an explicit blocker while formalizing the structural theorem.
 
-Prove:
+## Scope
 
-- exact covariance `R' = g R` under affine conjugation;
-- Lorentz/observer quadratic invariance;
-- anchor/target reversal identities where stable;
-- a typed exact nongauge edge witness if the finite carrier infrastructure
-  supports it;
-- no single-loop translation-sensitive continuous scalar theorem only at the
-  exact level justified by the landed research result.
+No global nonlinear quotient-completeness claim. No Einstein/torsion-free interpretation.
 
-Do not claim full quotient completeness unless #186 closes it.
+## GitHub execution contract
+
+Run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL`; open Draft PR; isolated module; zero `sorry`; narrow build first; self-retire only after stable build; never self-merge.
+
+## Chat handoff
+
+Return PR, SHA, theorem names, whether concrete rank-12/192 was proved or left certified-only, and validation results.
