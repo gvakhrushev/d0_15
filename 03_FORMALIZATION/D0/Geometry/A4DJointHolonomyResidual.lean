@@ -131,6 +131,8 @@ theorem ker_eq_range_of_jointResidualRanks
 
 noncomputable section Control
 
+namespace JointResidualControl
+
 def boost : Matrix (Fin 4) (Fin 4) ℚ :=
   !![5/3, 4/3, 0, 0; 4/3, 5/3, 0, 0; 0, 0, 1, 0; 0, 0, 0, 1]
 
@@ -164,6 +166,10 @@ def H2 : AffineHolonomy (Fin 4) ℚ := ⟨P2, t2⟩
 def gConj : Matrix (Fin 4) (Fin 4) ℚ := rBC * boost
 def gConjInv : Matrix (Fin 4) (Fin 4) ℚ := boostInv * rBC.transpose
 def cShift : Fin 4 → ℚ := ![1/2, -1, 2/3, 1]
+
+end JointResidualControl
+
+open JointResidualControl
 
 /-! ### Flat vanishing on the control -/
 
