@@ -523,7 +523,7 @@ for r in near0:
         [round(float(v), 6) for v in r["xf"]],
     )
 
-# Observed float locus pattern (all 10 seeds): 
+# Observed float locus pattern (all 10 seeds):
 #   e2 ≈ (α,β,j, α,β,j, γ,δ,0, δ,-γ,0)
 # i.e. r0≡r1, j_r2=j_r3=0, n2_r3=n3_r2, n3_r3=-n2_r2.
 def matches_pattern(x, atol=5e-3):
