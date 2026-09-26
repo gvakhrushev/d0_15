@@ -396,7 +396,24 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    Outcome `CLASSICAL_8P6_CURVED_FAMILY_RSTAR_DORMANT`.
    **Not** Ready: need active `R=R_*(C)≠0` channel response and L=3 hostile.
 
-25. **2D Cayley subtangent warning.**
+25. **E(2) lean-NF DU1 enlarged-12 matched-b R activate attempt — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_matched_b_r_activate_check.py`
+   (sha256 `fb9cdb32…55771f`; wall ~3.1s; PASS). On the classical 8+6 curved
+   family, free matched affine `b` (scale `t*e0` and free 4-component at
+   `(ORIGIN,0)`): joint residual `R≡0` and all four I ≡0 (affine
+   translations themselves nonzero). **Structural obstruction:** every
+   plaquette Lorentz holonomy is parabolic (`det(I-P)=0`); the four curved
+   faces further have `adj(I-P)=0` (rank ≤2), so
+   `R = det(M1)t2 - M2 M1.adj t1` vanishes for **arbitrary** affine `b`.
+   Random full b-field (90 face-pairs) and 4-point family battery confirm.
+   Positive control: f4 two_link matched `b` activates `R` (non-parabolic
+   face `det(I-P02)=-8/3`). star+I Euler is I-blind in any `c∈Q^4` (I≡0).
+   Outcome `MATCHED_B_R_DORMANT_PARABOLIC_ADJ0`. Scoped dormancy on this
+   homogeneous E(2) family — **not** a global no-go off-family.
+   **Not** Ready: active channel response requires leaving this parabolic
+   homogeneous torus-role stratum; L=3 hostile still required.
+
+26. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -450,7 +467,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-TRANSVERSE-NEWTON-NO-CURVED-ROOT-COLLAPSE-TO-FLAT;
     E2-ENLARGED12-NEWTON-CURVED-FLOAT-CANDIDATE;
     E2-ENLARGED12-PATTERN-EXACT-CURVED-FAMILY;
-    E2-ENLARGED12-CLASSICAL-8P6-CURVED-FAMILY-RSTAR-DORMANT
+    E2-ENLARGED12-CLASSICAL-8P6-CURVED-FAMILY-RSTAR-DORMANT;
+    E2-ENLARGED12-8P6-MATCHED-B-R-DORMANT-PARABOLIC-ADJ0
 
 Supporting:
 
@@ -463,16 +481,19 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** classical 8+6 confirm + cheap R★ filter (cert
-`…enlarged12_classical_8p6_check.py`, ~3.1s) shows the exact curved family
-`e2=(0,0,j, 0,0,j, γ,δ,0, δ,-γ,0)` is full classical 8+6 under lean L≡0 +
-D=1 + U=0 (`FREE_E2=[0,2,3,4,5,6,7,8]` + transverse 6; witness
-`(j,γ,δ)=(2,0,1)`, `curv²=32`). Cheap filter at `b≡0`: `C≠0` but `R≡0` /
-I dormant — honest negative for active `R=R_*(C)≠0`. **Next:** activate /
-solve residual section `R=R_*(C)≠0` on this curved 8+6 family (matched
-affine `b` / `EL_b`), or record a scoped dormancy no-go; still forbid
-blind multi-var GB / deg-26 chains. Do **not** re-impose locked E(2) NF.
-Jac-QR still blocked. No Ready until active channel response + L=3 hostile.
+**Primary (Track B):** classical 8+6 holds on the exact curved family
+`e2=(0,0,j, 0,0,j, γ,δ,0, δ,-γ,0)` (cert `…classical_8p6_check.py`; witness
+`(j,γ,δ)=(2,0,1)`, `curv²=32`). Matched/arbitrary affine `b` on this
+**homogeneous** E(2) torus embedding **cannot** activate `R=R_*(C)≠0`:
+all plaquettes parabolic with curved `adj(I-P)=0` (cert
+`…matched_b_r_activate_check.py`, ~3.1s; outcome
+`MATCHED_B_R_DORMANT_PARABOLIC_ADJ0`). **Next:** leave this parabolic
+homogeneous stratum — seek active `R` on a non-parabolic / inhomogeneous
+Lorentz background that still carries classical 8+6 (or a controlled
+deformation), or record that active channel response requires leaving
+E(2)-homogeneous torus roles; still forbid blind multi-var GB / deg-26
+chains. Do **not** re-impose locked E(2) NF. Jac-QR still blocked. No
+Ready until active channel response + L=3 hostile.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -528,6 +549,8 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_newton_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_newton_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_pattern_exactify_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_classical_8p6_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_matched_b_r_activate_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
@@ -537,8 +560,9 @@ python3 tools/validate_repo.py
 
 ## 4. Handoff
 
-Draft PR #202.  Do not merge.  Continue: span search with `R!=0`, then exact
-root or scoped no-go, then L=3 before Ready.
+Draft PR #202.  Do not merge.  Homogeneous E(2) matched-b R dormant
+(parabolic adj0). Continue: leave parabolic homogeneous stratum for active
+`R=R_*(C)≠0`, then L=3 before Ready.
 
 
 ## 4. NUMERICAL/STRUCTURAL — minimal parabolic mechanism isolated
