@@ -62,7 +62,7 @@ no curved full-star stationary point. The formula
 
 \[
 S_\star=0,\qquad
-\mathrm{curv}^2=rac{64j^2(\gamma^2+\delta^2)}{j^2+4}
+\mathrm{curv}^2=\frac{64j^2(\gamma^2+\delta^2)}{j^2+4}
 \]
 
 still holds as an action/curvature evaluation. Its flat configuration line
@@ -646,9 +646,9 @@ Consequently every plaquette commutator is parabolic:
 
 [
 operatorname{tr}P_{rs}=4,
-qquad
+\qquad
 det(I-P_{rs})approx0,
-qquad
+\qquad
 (P_{rs}-I)^3approx0,
 ]
 
@@ -675,7 +675,7 @@ For the (E(2)) three-parameter-per-link sector, a representative root has
 [
 |mathrm{EL}_{
 m full}|_2=4.29	imes10^{-14},
-qquad
+\qquad
 |C|_{
 m scout}=0.34535,
 ]
@@ -728,9 +728,9 @@ At the representative (E(2)) curved root, the Jacobian of the **full**
 variables has numerical rank
 
 [
-oxed{operatorname{rank}J=14},
-qquad
-oxed{operatorname{nullity}=13}.
+\boxed{\operatorname{rank}J=14},
+\qquad
+\boxed{\operatorname{nullity}=13}.
 ]
 
 Thus exactification can be organized as a square transverse solve rather than a
@@ -740,8 +740,8 @@ A rank-revealing QR decomposition selects 14 pivot variables. The remaining 13
 coordinates were fixed to the following low-denominator rationals:
 
 [
--rac13, 0, -rac13, rac12, rac12, -rac12, -rac12, 
-rac43, rac32, rac12, rac23, -rac13, -1.
+-\frac13, 0, -\frac13, \frac12, \frac12, -\frac12, -\frac12,
+\frac43, \frac32, \frac12, \frac23, -\frac13, -1.
 ]
 
 Solving only the 14 transverse equations then returns a full residual
@@ -812,7 +812,7 @@ At the same (E(2)) root, the Hessian of the action restricted to the
 27-dimensional (E(2)+LDU) chart has numerical rank
 
 [
-oxed{8}.
+\boxed{8}.
 ]
 
 The Jacobian of the literal full Euler residual restricted to those 27
@@ -821,7 +821,7 @@ come from Lorentz variations transverse to the (E(2)) little-group
 subalgebra:
 
 [
-oxed{14=8_{
+\boxed{14=8_{
 m internal}+6_{
 m transverse}.}
 ]
