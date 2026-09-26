@@ -139,6 +139,18 @@
       ],
       "exit_condition": "After #187 review, formalize the exact second-order obstruction of the Lorentz-null checkerboard quotient planes.",
       "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION.md"
+    },
+    {
+      "id": "EXP-A4D-JOINT-HOLONOMY-QUOTIENT-COMPLETENESS",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
+        "D0-HODGE-LINKS-001"
+      ],
+      "exit_condition": "The polynomial joint two-holonomy residual family is classified on an exact curved finite background: its kernel versus node-translation gauge is determined, spatial-Role orbit channels are ranked, and the minimal full-affine scalar completion class is either selected or reduced to explicit residual moduli.",
+      "brief": "00_WORK/tasks/EXP-A4D-JOINT-HOLONOMY-QUOTIENT-COMPLETENESS.md"
     }
   ]
 }
