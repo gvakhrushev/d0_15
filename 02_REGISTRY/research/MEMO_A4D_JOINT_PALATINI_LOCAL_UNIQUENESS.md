@@ -174,6 +174,115 @@ The first connection equation constrains (H_{AQ}q_r) before the first connection
 
 This valuation split is the precise scoped reading of the registered tangent-cone strategy.
 
+## 3A. Exact abstract decomposition of the mixed saddle kernel
+
+The full J1 census has a useful basis-independent form that does not require
+recomputing any orbit.
+
+Write
+
+[
+A:=H_{AA}:V	o V,qquad
+B:=H_{AQ}:M	o V,qquad
+C:=H_{QA}:V	o M,
+]
+
+with (M) the metric tangent space and (V) the connection tangent space.
+Let
+
+[
+N:=ker A,qquad
+pi:V	ooperatorname{coker}A.
+]
+
+The joint linear equations are
+
+[
+Cv=0,qquad Bq+Av=0.
+	ag{3A.1}
+]
+
+First, every
+
+[
+nin N_0:=Ncapker C
+]
+
+gives the pure connection joint-null vector ((0,n)).
+
+For a mixed vector, the second equation first requires
+
+[
+oxed{pi Bq=0.}
+	ag{3A.2}
+]
+
+Define
+
+[
+M_0:=ker(pi B).
+]
+
+For (qin M_0), choose any (v_R(q)) satisfying
+
+[
+Av_R(q)=-Bq.
+]
+
+Every other solution of the second equation is (v_R(q)+n) with (nin N).
+The first equation is solvable precisely when
+
+[
+-Cv_R(q)in C(N).
+]
+
+Therefore the remaining mixed obstruction is the well-defined quotient map
+
+[
+oxed{
+Sigma:M_0	o M/C(N),
+qquad
+Sigma(q)=[Cv_R(q)].
+}
+	ag{3A.3}
+]
+
+Changing (v_R(q)) by an element of (N) changes (Cv_R) by an element of
+(C(N)), so the class is independent of the chosen range solve.
+
+Hence
+
+[
+oxed{
+kermathcal H_J
+	ext{ is an extension of }
+kerSigma
+	ext{ by }N_0,
+}
+	ag{3A.4}
+]
+
+and in particular
+
+[
+oxed{
+dimkermathcal H_J
+=
+dim N_0+dimkerSigma.
+}
+	ag{3A.5}
+]
+
+Under the polarized Hessian symmetry used by the worker,
+(operatorname{rank}C|_N=operatorname{rank}pi B=d), the Fredholm
+incompatibility dimension. Thus (dim N_0=(24-r_H)-d), but (3A.3) shows
+exactly why this arithmetic does **not** classify the full saddle kernel:
+(kerSigma) contains the genuine metric-only/mixed KKT directions that J1
+must identify and quotient correctly.
+
+This decomposition is the parent-level integration rule for the forthcoming
+worker table.
+
 ## 4. #227 hostile control is source-visible and is cut by the joint metric equation
 
 Merged #227 uses
@@ -230,6 +339,40 @@ Thus the exact curved (E_K=0) family of #227 is **source-visible** and is reject
 This is an exact joint-Palatini distinction from the old all-sheet no-go: #227 remains a counterexample to branch-independent (E_K)-elimination, but it is not a joint vacuum branch.
 
 The linear-kernel worker will provide the repository-owned exact basis statement and the full mixed-saddle classification; (4.1) is already independently visible from the exact #227 metric response.
+
+## 4A. Torsion diagnostic from worker PR #233
+
+Worker PR #233 has reached REVIEW with terminal
+
+[
+	exttt{J2-227-CURVED-STATIONARY-FAMILY-TORSION-DIAGNOSTIC-CERTIFIED}.
+]
+
+At constant standard solder it uses the owned coframe-transport torsion
+
+[
+T_{rs}=(L_r-I)e_s-(L_s-I)e_r.
+]
+
+For the #227 family all spatial faces have zero torsion and curvature. On
+faces ((0,s)), phases (1,3) are torsion-free for every (t) even though
+curvature and the metric partial are nonzero, while phases (0,2) have
+
+[
+T_{0s}
+=
+pmleft(
+c(t)e_0+rac{2t^2}{4-3t^2}(e_1+e_2+e_3)
+ight).
+]
+
+Across all phases/faces, torsion vanishes iff (t=0) in the near-identity
+chart. Its leading amplitude, curvature, and the metric partial all scale as
+(c(t)sim t).
+
+This supports the interpretation that the #227 sheet is not LC-like, but it is
+**diagnostic only**. No torsion-free equation and no (T^2) action term are
+introduced, and the joint rejection of #227 already follows from (4.1).
 
 ## 5. Residual nonlinear sectors
 
