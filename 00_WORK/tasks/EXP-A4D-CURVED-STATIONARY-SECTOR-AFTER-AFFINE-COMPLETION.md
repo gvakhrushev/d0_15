@@ -9,6 +9,32 @@ Branch: `exp/a4d-curved-stationary-sector-after-affine-completion`
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_CURVED_STATIONARY_SECTOR_AFTER_AFFINE_COMPLETION.md`
 Execution: `GitHub-first`
 
+## Why delegated
+
+This is an expensive nonlinear finite-geometry classification, not a bounded
+control edit. It combines exact curvature-to-Euler rank calculations, nonlinear
+stationary equations, perturbative Lyapunov--Schmidt obstructions, finite
+holonomy realizability, hostile L=2/L=3 controls, and comparison against active
+affine-completion branches. The work must remain isolated in its own research
+PR because several neighbouring EXPENSIVE lanes are active concurrently.
+
+## GitHub execution contract
+
+Work only on `exp/a4d-curved-stationary-sector-after-affine-completion` in
+PR #187. Treat current `main` as the ownership baseline and active #184/#185/#186
+results as hypotheses unless independently reproduced here. Do not edit their
+artifacts. Keep all durable memo/certificates in this PR, use exact arithmetic
+for load-bearing claims, preserve claim/release/BOOK/Lean boundaries, refresh
+the collision fence before Ready, self-retire this EXPENSIVE task before the
+Ready transition, and do not self-merge.
+
+## Chat handoff
+
+Report the strongest exact stationary-sector theorem reached, the decisive
+rank/obstruction or explicit curved witness, the files and certificate commands,
+and one smallest remaining blocker. Distinguish exact results from numerical
+exploration. Do not report Einstein/GR/time/wave/continuum interpretations.
+
 ## Objective
 
 Move beyond gauge-law classification and decide whether the minimal full-affine
