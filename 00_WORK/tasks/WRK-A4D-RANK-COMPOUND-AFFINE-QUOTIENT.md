@@ -102,6 +102,10 @@ Explicitly show why using (Psi_2) off the rank-two stratum can lose translation 
 
 `FIXED-RANK-AFFINE-COKERNEL-COMPOUND-COORDINATE-CERTIFIED`
 
-## Handoff
+## GitHub execution contract
+
+Start from fresh current `main` after this registration is merged. Run lifecycle start, open a Draft PR before substantive scientific edits, keep Git-visible task state synchronized with the PR lifecycle, self-retire only at a declared terminal, refresh against current `main` before Ready, and never self-merge.
+
+## Chat handoff
 
 Return PR, SHA, theorem statement, rank-two null-flag corollary, relation to the old adjugate r=3 case, and the exact boundary at rank changes.
