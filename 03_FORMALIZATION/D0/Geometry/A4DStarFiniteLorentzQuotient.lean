@@ -123,9 +123,9 @@ theorem degenerateZeroSolder_flatLink_nontrivial_stabilizer :
       (0 : Matrix Role Role ℝ) * rationalABBoost = 0 ∧
       rationalABBoost⁻¹ * (1 : Matrix Role Role ℝ) * rationalABBoost = 1 := by
   refine ⟨rationalABBoost_lorentz, rationalABBoost_ne_one, by simp, ?_⟩
-  rw [Matrix.nonsing_inv_mul rationalABBoost
-    (isRoleLorentz_det_isUnit rationalABBoost rationalABBoost_lorentz)]
-  simp
+  -- Normalize the intermediate identity factor before applying the inverse lemma.
+  simpa using Matrix.nonsing_inv_mul rationalABBoost
+    (isRoleLorentz_det_isUnit rationalABBoost rationalABBoost_lorentz)
 
 theorem a4dZeroSolder_constantBoost_stabilized
     (x : ArchiveRolePhaseGroup N) :
