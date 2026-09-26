@@ -1,0 +1,767 @@
+{
+ "table": [
+  {
+   "orbit": 0,
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 23,
+   "d": 1,
+   "dimN": 2,
+   "rankQA_on_N": 1,
+   "dimN0": 1,
+   "brief_expected_dimN0": 1,
+   "certified_dimN0": 1,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 1,
+   "ids": [
+    0,
+    0,
+    1,
+    3
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 24,
+   "d": 2,
+   "dimN": 2,
+   "rankQA_on_N": 2,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 2,
+   "ids": [
+    0,
+    1,
+    1,
+    2
+   ],
+   "mult": 6,
+   "rH": 20,
+   "rA": 24,
+   "d": 4,
+   "dimN": 4,
+   "rankQA_on_N": 4,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 3,
+   "ids": [
+    1,
+    0,
+    1,
+    2
+   ],
+   "mult": 12,
+   "rH": 20,
+   "rA": 24,
+   "d": 4,
+   "dimN": 4,
+   "rankQA_on_N": 4,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 4,
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "mult": 2,
+   "rH": 16,
+   "rA": 20,
+   "d": 4,
+   "dimN": 8,
+   "rankQA_on_N": 4,
+   "dimN0": 4,
+   "brief_expected_dimN0": 4,
+   "certified_dimN0": 4,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 5,
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "mult": 6,
+   "rH": 20,
+   "rA": 23,
+   "d": 3,
+   "dimN": 4,
+   "rankQA_on_N": 3,
+   "dimN0": 1,
+   "brief_expected_dimN0": 1,
+   "certified_dimN0": 1,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 6,
+   "ids": [
+    2,
+    0,
+    1,
+    1
+   ],
+   "mult": 6,
+   "rH": 20,
+   "rA": 24,
+   "d": 4,
+   "dimN": 4,
+   "rankQA_on_N": 4,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 7,
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 23,
+   "d": 1,
+   "dimN": 2,
+   "rankQA_on_N": 1,
+   "dimN0": 1,
+   "brief_expected_dimN0": 1,
+   "certified_dimN0": 1,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 8,
+   "ids": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 24,
+   "d": 2,
+   "dimN": 2,
+   "rankQA_on_N": 2,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  }
+ ],
+ "joint_hessian": [
+  {
+   "orbit": 0,
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 8,
+   "rank_H_J": 22,
+   "nullity": 12,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 1,
+   "ids": [
+    0,
+    0,
+    1,
+    3
+   ],
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 16,
+   "rank_H_J": 24,
+   "nullity": 10,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 2,
+   "ids": [
+    0,
+    1,
+    1,
+    2
+   ],
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 12,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 3,
+   "ids": [
+    1,
+    0,
+    1,
+    2
+   ],
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 12,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 4,
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "rank_H_AA": 16,
+   "rank_A_symmetrized": 0,
+   "rank_H_J": 18,
+   "nullity": 16,
+   "H_AA_pure_skew": true,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 5,
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 16,
+   "rank_H_J": 32,
+   "nullity": 2,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 6,
+   "ids": [
+    2,
+    0,
+    1,
+    1
+   ],
+   "rank_H_AA": 20,
+   "rank_A_symmetrized": 12,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 7,
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 20,
+   "rank_H_J": 32,
+   "nullity": 2,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  },
+  {
+   "orbit": 8,
+   "ids": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "rank_H_AA": 22,
+   "rank_A_symmetrized": 24,
+   "rank_H_J": 28,
+   "nullity": 6,
+   "H_AA_pure_skew": false,
+   "A_is_symmetrized": true
+  }
+ ],
+ "n0_bases": {
+  "0": {
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "basis": [
+    [
+     "-1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "-1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "4": {
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "basis": [
+    [
+     "0",
+     "0",
+     "0",
+     "1",
+     "-1",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "5": {
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "basis": [
+    [
+     "-1 + I",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "-1 + I",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "7": {
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "basis": [
+    [
+     "0",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "-I",
+     "I",
+     "0",
+     "0",
+     "-I",
+     "-I",
+     "0",
+     "I",
+     "0",
+     "-I",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  }
+ },
+ "curvature": {
+  "0": [
+   {
+    "basis": 0,
+    "support_links": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "curvature": "NONZERO"
+   }
+  ],
+  "4": [
+   {
+    "basis": 0,
+    "support_links": [
+     0
+    ],
+    "curvature": "ZERO"
+   },
+   {
+    "basis": 1,
+    "support_links": [
+     1
+    ],
+    "curvature": "ZERO"
+   },
+   {
+    "basis": 2,
+    "support_links": [
+     2
+    ],
+    "curvature": "ZERO"
+   },
+   {
+    "basis": 3,
+    "support_links": [
+     3
+    ],
+    "curvature": "ZERO"
+   }
+  ],
+  "5": [
+   {
+    "basis": 0,
+    "support_links": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "curvature": "NONZERO"
+   }
+  ],
+  "7": [
+   {
+    "basis": 0,
+    "support_links": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "curvature": "NONZERO"
+   }
+  ]
+ },
+ "eq_cokernel": {
+  "0": [
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "1",
+   "1",
+   "1"
+  ],
+  "1": [
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "-1",
+   "I",
+   "1"
+  ],
+  "2": [
+   "0",
+   "0",
+   "0",
+   "0",
+   "I/2",
+   "I/2",
+   "1/2 + I/2",
+   "I/2",
+   "1/2 + I/2",
+   "1"
+  ],
+  "3": [
+   "I/2",
+   "0",
+   "I/2",
+   "1/2 + I/2",
+   "0",
+   "0",
+   "0",
+   "I/2",
+   "1/2 + I/2",
+   "1"
+  ],
+  "4": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "5": [
+   "-1",
+   "-1",
+   "I",
+   "I",
+   "-1",
+   "I",
+   "I",
+   "1",
+   "1",
+   "1"
+  ],
+  "6": [
+   "-2*I",
+   "0",
+   "1 - I",
+   "1 - I",
+   "0",
+   "0",
+   "0",
+   "1",
+   "1",
+   "1"
+  ],
+  "7": [
+   "1",
+   "1/2 + I/2",
+   "1/2 + I/2",
+   "1",
+   "I/2",
+   "I/2",
+   "1/2 + I/2",
+   "I/2",
+   "1/2 + I/2",
+   "1"
+  ],
+  "8": [
+   "2*I",
+   "-1 + I",
+   "2*I",
+   "1 + I",
+   "-1",
+   "-1 + I",
+   "I",
+   "2*I",
+   "1 + I",
+   "1"
+  ]
+ },
+ "eq_cokernel_is_pure_trace": [
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false
+ ],
+ "sym_order": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   2
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   1,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   3
+  ],
+  [
+   2,
+   2
+  ],
+  [
+   2,
+   3
+  ],
+  [
+   3,
+   3
+  ]
+ ]
+}
