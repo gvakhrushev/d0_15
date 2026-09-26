@@ -6,7 +6,7 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 Research lane: `EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE`
 
 Repository: `gvakhrushev/d0_15`  
-Base: `main` after #216 fixed-realization inputs are integrated  
+Base: `main`  
 Branch: `wrk/a4d-j2-metric-response-sensitivity`  
 Primary artifact: `02_REGISTRY/research/A4D_J2_METRIC_RESPONSE_SENSITIVITY.md`  
 Execution: `GitHub-first`
