@@ -3,6 +3,7 @@
 **Task:** `EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE`
 **Execution:** PR #227
 **Baseline:** `5523d8f679c1ea02f9b73d757c81649740010d0a` (merged #216)
+**Review refresh:** `8639bcde495966629990772867b0d0e9e7de4635` (merged #225)
 **Status:** exact research terminal B; no release/Lean claim
 **Certificate:** [a4d_j2_uniform_coupled_normal_rescue_check.py](certificates/a4d_j2_uniform_coupled_normal_rescue_check.py)
 
