@@ -1126,3 +1126,45 @@ is already `E_0 != 0`. This rejects that base-anchored branch ansatz, not
 the support as a finite nonlinear search and not other stationary seeds.
 The remaining finite L=2 exactification is open; no L=3 hostile control has
 started.
+
+### 9.6 Shared blind subspace of the matched-affine 2-jet
+
+The order-two certificate also compares the leading channel forms with the
+stacked coefficient map `b ↦ (R₂^{f,g}(b))` over all 30 ordered distinct
+face pairs. The sum of the two `n`-channel matrices is positive semidefinite
+of rank 8 on the 16-dimensional homogeneous matched-translation space, so its
+kernel `V₂` has dimension 8 and is exactly the common zero set of the two
+leading `n`-channel forms. Both leading `η`-channel quadratic forms restrict
+to zero on `V₂`. The stacked `R₂` map is a `120 × 16` matrix of rank 8 and
+vanishes on `V₂`; hence its kernel is exactly `V₂` as well.
+
+Therefore, on this specified path and homogeneous matched-translation family,
+the four leading channel coefficients vanish together exactly on the same
+8-dimensional subspace where every order-two pair residual vanishes. This is
+a shared blind 2-jet, not an exact nonlinear kernel: it neither supplies a
+finite witness nor proves a no-go. Higher-order residual/channel terms or the
+full finite L=2 equations remain necessary; no `R=0` constraint is imposed.
+The additional exact checks are owned by
+`a4d_resolved_curved_stationary_e2_support7_affine_order2_check.py`.
+
+### 9.7 Order-three resolution of the shared blind space
+
+The degree-three rational jet certificate extends the same Cayley path and
+translation family to `epsilon^3`; it checks that every order-two pair map
+agrees with the independent order-two owner. The stacked `R_3` map is
+`120 × 16` of rank 16. In particular, its restriction to `V_2` has rank 8,
+so every nonzero fixed `b ∈ V_2` activates some ordered-pair residual at
+order three. On `V_2`, the four order-six channel matrices have ranks `8`
+(`eta,adj`), `4` (`eta,opp`), `8` (`n,adj`), and `4` (`n,opp`); the sum of
+the two `n`-channel matrices is positive definite there.
+
+Combining §§9.6–9.7 gives a precise fixed-direction statement for the sum of
+the existing `n` channels: if `b ∉ V_2`, its order-four coefficient is
+positive; if `b ∈ V_2` and `b ≠ 0`, its order-six coefficient is positive.
+Thus no nonzero constant homogeneous matched translation is invisible to
+that channel sum through order six along this particular Cayley path.
+This is a finite-jet statement only. It does not solve `R=R_*(C)`, the affine
+or Lorentz Euler equations, or any system with `b` varying with `epsilon`; it
+does not establish a stationary branch or a global no-go. The exact order-three
+checks are in
+`a4d_resolved_curved_stationary_e2_support7_affine_order3_check.py`.

@@ -264,8 +264,34 @@ for key, expected_rank in expected_channel_ranks.items():
           form != zeros(16) and form.rank() == expected_rank)
     print("CHANNEL_ORDER_4_FORM", key, "rank", form.rank())
 
+# Compare the exact common zero set of the four leading channel forms with the
+# kernel of the stacked order-two affine residual map.
+n_sum = quadratic_forms[("n", "adj")] + quadratic_forms[("n", "opp")]
+n_kernel_basis = Matrix.hstack(*n_sum.nullspace())
+r2_blocks = []
+for f1 in faces:
+    for f2 in faces:
+        if f1 == f2:
+            continue
+        columns = [joint_residual_jet(f1, f2, b) for b in translation_basis]
+        r2_blocks.append(Matrix.hstack(*[column[2] for column in columns]))
+r2_stack = Matrix.vstack(*r2_blocks)
+check("N_CHANNEL_COMMON_KERNEL_DIMENSION_8",
+      n_sum.is_positive_semidefinite and n_sum.rank() == 8
+      and n_kernel_basis.shape == (16, 8))
+check("ETA_CHANNELS_VANISH_ON_N_KERNEL", all(
+    n_kernel_basis.T * quadratic_forms[("eta", cls)] * n_kernel_basis == zeros(8)
+    for cls in ("adj", "opp")
+))
+check("R2_STACK_RANK_8", r2_stack.shape == (120, 16) and r2_stack.rank() == 8)
+check("R2_VANISHES_ON_ALL_CHANNEL_KERNEL_DIRECTIONS",
+      r2_stack * n_kernel_basis == zeros(120, 8))
+check("R2_AND_ALL_CHANNELS_HAVE_IDENTICAL_KERNEL",
+      Matrix.vstack(r2_stack, n_sum).rank() == 8)
+
 print("RESULT: for arbitrary homogeneous matched b, every pair residual has")
 print("R(epsilon)=epsilon^2*R2(b)+O(epsilon^3); the epsilon coefficient vanishes.")
-print("All four existing channel forms have nonzero epsilon^4 coefficient.")
+print("The four leading channel forms and the stacked R2 map have the same 8-dimensional kernel.")
+print("Thus every common channel-invisible 2-jet direction also has R2=0, and conversely.")
 print("This is residual activation only; no R=R_*(C), Euler solution, or branch is claimed.")
 print("CERT_SHA256", hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
