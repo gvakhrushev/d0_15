@@ -1018,3 +1018,71 @@ a small branch or solve the remaining internal Euler equations. No exact
 active-residual full-Euler witness has been reconstructed, and the L=3 hostile
 control has not been run. Those remain open; the present scoped parabolic
 no-go is not extended to the deformed carrier.
+
+### 9.4 Exact audit of the proposed small-branch parameterization
+
+The controlled-normal certificate now lists all eight minimum size-seven
+supports. Exactly one contains both cofactor-active columns `N2@Role2` and
+`N3@Role3`, so it uniquely gives first-order adjugate activation on all four
+curved faces. The exact support-specific calculation is
+`a4d_resolved_curved_stationary_e2_support7_order1_check.py`.
+
+For the base generators
+
+```text
+A0(0) = A1(0) = -2 J23,  A2(0) = M3,  A3(0) = M2,
+```
+
+the selected support and the unique correction solving the eight-dimensional
+linearized defect equation are
+
+```text
+(K1_0, K1_2, N2_2, N3_0, N3_1, N3_2, N3_3)
+(-346/13, -22/13, -609/26, 58/13, 311/13, -24/13, -11/26).
+```
+
+The exact group path is `U_r(epsilon)=Cayley(A_r(epsilon))`, where
+
+```text
+A0(epsilon) = -2 J23 + epsilon*(-346/13 K1 + 58/13 N3)
+A1(epsilon) = -2 J23 + epsilon*(311/13 N3)
+A2(epsilon) = M3 + epsilon*(-22/13 K1 - 609/26 N2 - 24/13 N3)
+A3(epsilon) = M2 - epsilon*(11/26 N3).
+```
+
+The exact missing-Euler Jacobian is `8x7`, rank 7 with zero kernel. But the
+base point `(j,gamma,delta)=(2,0,1)` is not stationary. In test order
+`(M2,M3,-J23,K1,N2,N3)` per role, its Euler constant term is
+
+```text
+Role 0: (0,0,0,0,-16,0)
+Role 1: (0,0,0,0,16,0)
+Role 2: (0,0,0,0,-32,64)
+Role 3: (0,0,0,0,0,-32).
+```
+
+Consequently the actual Taylor expansion along this path is
+`E(epsilon)=E0+epsilon*Jv+O(epsilon^2)` with `E0 != 0`. The equation
+`J_missing*v=-E0_missing` is a Newton correction for a unit step; it is not a
+formal-branch solvability equation for `x(epsilon)=epsilon*v+epsilon^2*w+...`.
+The full exact `Jv` is printed by the certificate. This calculation therefore
+does not kill a nonlinear branch or settle existence of another stationary
+point on the support.
+
+As a separate exact point check, the unit Newton displacement stays inside the
+Cayley charts but its finite link configuration has all 24 star link Euler
+components nonzero at `b=0`; it is not itself a stationary witness. This tests
+only that one finite iterate.
+
+Along the infinitesimal path, the first determinant derivative is zero on all
+four curved faces and each first adjugate derivative has rank 2. This is
+cofactor activation only. No affine translation jet was supplied, so there is
+no claim that `R != 0`, that `R=R_*(C)` is solved, or that a four-channel
+stationary point exists.
+
+The small-branch question needs a genuinely stationary base point or an
+explicit parameterization that scales the base defect consistently. The next
+gate is to define that exact finite/reduced system before interpreting the
+linear Newton correction as an amplitude series. This check is not a no-go
+for the other seven supports, larger carriers, or the full configuration
+space. No L=3 test is started without an exact L=2 witness.
