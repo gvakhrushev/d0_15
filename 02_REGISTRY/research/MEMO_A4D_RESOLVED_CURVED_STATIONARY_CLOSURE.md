@@ -1339,9 +1339,46 @@ seven-amplitude base, where the full Lorentz Euler defect is nonzero.
 
 For `a != 0`, homogeneous substitution `x0=-b/a` gives a necessary
 three-variable polynomial system `F_0=F_2=F_3=0` in `(x3,x4,x6)` of exact
-degrees `(19,25,24)`. The chart conditions `x6^2 != 4`, `b^2-4*a^2 != 0`,
-and `D2 != 0` remain explicit; none is discarded by the substitution. The
-three-variable finite zero set has not been classified. This branch split
-narrows the exact seven-support fixed-solder gate; it does not solve the
-full link/affine Euler system, the nonzero residual equation, or the free
-solder equations away from `eta`. The task remains `IN_PROGRESS`.
+degrees `(19,25,24)`. The chart conditions `x6^2 != 4`, `b^2-4*a^2 != 0`
+(equivalently `x0^2 != 4`), and `D2 != 0` remain explicit.
+
+### 9.11 The main branch is empty in the open Cayley chart
+
+`a4d_resolved_curved_stationary_e2_support7_main_branch_check.py` eliminates
+`x3` from `F_0` and `F_2`, and from `F_0` and `F_3`. The gcd of those two
+resultants has radical
+
+```text
+x4 * (x6-2) * (x6+2) * Q1 * Q2,
+```
+
+with the explicit degree-5 factors
+
+```text
+Q1 = 2*x4^3*x6 - 4*x4^3 + 8*x4^2*x6 - x4*x6^4 + 2*x4*x6^3
+     + 12*x4*x6^2 + 8*x4*x6 + 32*x6^2,
+Q2 = 4*x4^3*x6 - 8*x4^3 + 16*x4^2*x6 - x4*x6^4 + 4*x4*x6^3
+     + 16*x4*x6^2 + 16*x4*x6 + 16*x4 + 64*x6^2.
+```
+
+Every common zero therefore lies on one of these factors. The certificate
+then checks:
+
+- `b-2*a = 2*x4*(x6^2-4)^2`, so `x4=0` forces `b=2*a` and, when `a != 0`,
+  `x0=-2`. The whole plane `x4=0` is the Cayley wall `x0^2=4`.
+- The ideal `(F_0,F_2,F_3,Q1)` contains `x6*(x6^2-4)`. Thus `x6=±2`, or
+  `x6=0`, which with `Q1` forces `x4=0` and returns to `a=0`.
+- The ideal `(F_0,F_2,F_3,Q2)` contains
+  `x6*(x3^2-8*x6)*(x6^2-4)`. The slice `x6=0`, `x4^2=2` gives `x0=2`.
+  On `x6=x3^2/8`, `b^2-4*a^2` reduces to zero, so again `x0^2=4`.
+
+Hence `F_0=F_2=F_3=0` has no point with `a != 0`, `x6^2 != 4`, and
+`x0^2 != 4`. The open main branch is empty. Combined with the exceptional
+branch of §9.10, the only solution of this fixed-`eta` necessary subsystem
+inside the open Cayley chart is the seven-amplitude origin, where the full
+Lorentz defect remains nonzero.
+
+This closes the fixed-solder seven-support gate. It does not solve free
+solder away from `eta`, the full link/affine Euler system, or
+`R=R_*(C) != 0`. No L=2 active-residual witness is obtained, so L=3 stays
+unopened. The task remains `IN_PROGRESS`.
