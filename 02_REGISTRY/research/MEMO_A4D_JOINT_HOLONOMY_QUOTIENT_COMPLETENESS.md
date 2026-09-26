@@ -483,6 +483,22 @@ Hence even after imposing anchor/target pair-exchange symmetry, affine gauge
 invariance plus quotient completeness leave at least a two-dimensional action
 space before overall normalization.
 
+This ambiguity is not an artifact of using only the owned
+\(S_3=\operatorname{Stab}(A)\) symmetry.  If one hypothetically strengthens
+Role relabeling all the way to full \(S_4\), the thirty ordered distinct
+two-face pairs still have two off-diagonal Johnson-scheme orbit types:
+
+- \(|S_1\cap S_2|=1\): intersecting faces;
+- \(|S_1\cap S_2|=0\): disjoint/complementary faces.
+
+On the hostile generic control, the pair-exchange-symmetrized Lorentz
+quadratic built from each full-\(S_4\) orbit separately has rank \(12\) in
+all sixteen momentum sectors, and the two quadratic symbols are exactly
+linearly independent.
+
+Therefore even symmetry stronger than the repository currently owns does not
+fix their ratio.
+
 Equivalently, at least one projective modulus survives.
 
 ---
