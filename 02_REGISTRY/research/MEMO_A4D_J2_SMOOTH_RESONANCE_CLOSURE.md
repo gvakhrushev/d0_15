@@ -1345,3 +1345,575 @@ Until gates 1--7 are closed, retain
 No new filter, no weak-curvature assumption, no all-mode \(C^1\) section, and
 no unconditional Einstein equation claim are introduced.
 
+---
+
+## 19. J² target is already numerical: pressure shifts to theorem closure
+
+The upper-wall target is no longer an unknown continuum tensor.  Conditional on
+the surviving smooth-sector theorem, #201 + E-NJET fix the naked-star response
+
+\[
+\boxed{
+E_\star[g](x)=-\frac12\,G[g](x).
+}
+\]
+
+On the fixed-\(T^4\) Lovelock/Navarro route this is the ray
+
+\[
+\boxed{(a,b)=(-\tfrac12,0)}
+\]
+
+for the naked star channel.  The remaining work is therefore not to search for
+an Einstein tensor from scratch, but to prove that two effects cannot change
+this already-fixed \(J^2\) coefficient:
+
+1. UV resonant connection branching must admit a uniform flat-approaching
+   rescue with positive Hölder exponent;
+2. the reconstructed center response must forget the chosen global extension
+   of the same local metric \(2\)-jet.
+
+Finite curved vacuum existence is a separate lower-wall question.  In
+particular, the parabolic action-flat sheet discussed below is not itself a
+candidate finite vacuum merely because the restricted star action vanishes.
+
+---
+
+## 20. Shrinking-bump realization inside the nonlinear metric quotient
+
+The earlier fixed-bump route is sufficient in principle, but there is a sharper
+local construction which makes the \(J^2\) factorization quantitative.
+
+Let \(h=\varepsilon_N\), let \(J\) be a fixed Lorentz metric \(2\)-jet in
+normal coordinates at the center, and let \(P_J(x)\) be its quadratic normal
+polynomial.  Choose a smooth cutoff \(\chi\equiv1\) near the origin and
+
+\[
+\boxed{
+q_h(x)=\chi(x/\rho_h)P_J(x),
+\qquad
+\rho_h=h^\alpha,
+\qquad
+\frac12<\alpha<1.
+}
+\]
+
+Because
+
+\[
+\frac{h}{\rho_h}=h^{1-\alpha}\to0,
+\]
+
+the complete radius-two finite stencil eventually lies in the region where
+\(\chi=1\).  Thus the finite stencil sees the prescribed metric \(2\)-jet
+literally, not merely asymptotically.
+
+### 20.1 Nonlinear solder section
+
+With repository convention \(\Theta_{\rm flat}=\eta\), define locally near the
+flat metric
+
+\[
+\boxed{
+\Theta(Q)=(Q\eta)^{1/2}\eta,
+}
+\]
+
+using the analytic square root near the identity.  Since \(Q\eta\) is
+\(\eta\)-self-adjoint, the local analytic square root is also
+\(\eta\)-self-adjoint, and therefore
+
+\[
+\Theta(Q)\eta\Theta(Q)^T=Q.
+\]
+
+For \(Q=\eta+q\),
+
+\[
+\Theta(\eta+q)
+=
+\eta+\frac12q+O(q^2).
+\]
+
+Consequently the solder-vector tangent perturbation is
+
+\[
+H=\delta\Theta\,\eta
+=
+\frac12q\eta,
+\]
+
+exactly the ten-component metric lift used by #201 to obtain the pure Einstein
+flat ray.  Hence the shrinking-bump realization can be placed inside the
+actual nonlinear solder/metric quotient rather than an external metric
+carrier.
+
+### 20.2 Fourier/Wiener scaling
+
+In four dimensions \(P_J\) is quadratic, so after the rescaling
+\(x=\rho_h y\),
+
+\[
+q_h(x)=\rho_h^2 f_J(y)
+\]
+
+for a fixed compactly supported smooth profile \(f_J\).  Therefore
+
+\[
+\boxed{
+\|\widehat q_h\|_{\ell^1}=O(\rho_h^2),
+}
+\]
+
+and for every integer \(m\ge0\),
+
+\[
+\boxed{
+\sum_n |n|^m|\widehat q_h(n)|
+=
+O(\rho_h^{2-m}).
+}
+\]
+
+If the resonance set is separated from \(z=1\), a UV mode satisfies
+\(|hn|\ge\theta_0>0\).  Hence
+
+\[
+\sum_{\rm UV}|\widehat q_h(n)|
+\le
+C_m h^m
+\sum_n |n|^m|\widehat q_h(n)|
+=
+O(h^m\rho_h^{2-m}),
+\]
+
+that is,
+
+\[
+\boxed{
+\sum_{\rm UV}|\widehat q_h(n)|
+=
+O\!\left(h^{2\alpha+m(1-\alpha)}\right).
+}
+\]
+
+Because \(\alpha<1\), choosing \(m\) arbitrarily large makes the UV source
+super-algebraically small in \(h\), even though the bump support itself shrinks.
+
+### 20.3 Candidate \(J^2\) error budget
+
+The flat linear symbol from #201 has the expansion
+
+\[
+\mathcal L(\theta)
+=
+\frac14E_\eta(\theta)+O(|\theta|^3).
+\]
+
+After \(h^{-2}\) normalization, the cubic symbol error is bounded by
+
+\[
+h^{-2}
+O\!\left(
+h^3\sum_n |n|^3|\widehat q_h(n)|
+\right)
+=
+\boxed{O(h\rho_h^{-1})}
+=
+O(h^{1-\alpha}).
+\]
+
+A coarse analytic nonlinear remainder controlled quadratically in Wiener norm
+has size
+
+\[
+O(\|q_h\|_A^2)=O(\rho_h^4),
+\]
+
+and therefore contributes after \(h^{-2}\) normalization
+
+\[
+\boxed{O(h^{4\alpha-2})}.
+\]
+
+Under a uniform UV stationary-rescue estimate, the remaining resonant
+contribution is \(O(h^\infty)\).  Thus the candidate theorem has the form
+
+\[
+\boxed{
+\mathcal E_h(J)
+=
+-\frac12G(J)
++
+O(h^{1-\alpha})
++
+O(h^{4\alpha-2})
++
+O(h^\infty).
+}
+\]
+
+The admissible window is exactly
+
+\[
+\frac12<\alpha<1.
+\]
+
+Balancing the two displayed algebraic errors gives
+
+\[
+1-\alpha=4\alpha-2,
+\qquad
+\boxed{\alpha=\frac35},
+\]
+
+and the coarse optimized rate
+
+\[
+\boxed{
+\mathcal E_h(J)
+=
+-\frac12G(J)+O(h^{2/5})+O(h^\infty).
+}
+\]
+
+This is **not yet a theorem**.  It is conditional on a uniform analytic/Wiener
+remainder estimate for the actual eliminated finite action, the UV
+Hölder/Puiseux rescue, and stability of response reconstruction on the
+near-flat chart.
+
+No weak-curvature assumption is introduced: for any fixed finite jet \(J\),
+
+\[
+\|q_h\|_\infty
+=
+O(|J|\rho_h^2)\to0,
+\]
+
+so the global realization eventually enters the same near-flat analytic chart.
+
+---
+
+## 21. Replace a global connection function by a stationary correspondence
+
+The finite theory does not need one globally single-valued connection graph
+\(K=K_\ast(Q)\).  The natural finite object is the stationary correspondence
+
+\[
+\boxed{
+\mathscr C_h
+=
+\{(Q,K):E_K(Q,K)=0\}.
+}
+\]
+
+On the IR principal stratum the projection
+\(\mathscr C_h\to Q\) is locally a graph by the ordinary implicit-function
+theorem.  On a UV resonance stratum it can be a branched/Puiseux
+correspondence.
+
+Suppose every branch approaching flat satisfies, uniformly on the relevant
+stratum,
+
+\[
+\|K_h-I\|
+\le
+C\|s_h\|^\beta,
+\qquad
+\beta>0.
+\]
+
+For the shrinking \(C^\infty\) bump, \(s_h=O(h^\infty)\); hence
+
+\[
+K_h-I=O(h^\infty).
+\]
+
+Any two flat-approaching UV sheets then differ by \(O(h^\infty)\).  Provided
+the reconstructed response is uniformly locally Lipschitz/analytic on the same
+near-flat chart, sheet dependence disappears after \(h^{-2}\) normalization.
+
+This suggests the weaker and more natural continuum definition
+
+\[
+E(J)
+=
+\lim_{h\to0}
+\mathcal E_h(Q_h^J,K_h)
+\]
+
+for **any** flat-approaching stationary branch \(K_h\).  Finite connection
+multivaluedness is then compatible with a single-valued \(J^2\) continuum
+response.
+
+This does not prove that every arbitrary global smooth sampling sequence has
+the same limit; that stronger global-continuum statement can remain separate
+from the local equation-class theorem.
+
+---
+
+## 22. Local degree should be used only after isolation
+
+For a real analytic reduced resonant Euler map
+
+\[
+F_z:\mathbb R^m\to\mathbb R^m
+\]
+
+with odd symmetry \(F_z(-u)=-F_z(u)\), an isolated zero at the origin gives an
+odd normalized map on a sufficiently small sphere and hence nonzero local
+degree.  Together with a Łojasiewicz inverse estimate this yields
+
+\[
+\|u\|
+\le
+C\|s\|^{1/\nu}
+\]
+
+for some finite \(\nu\).
+
+Two scope corrections are essential.
+
+First, the certified diagonal cubic map \(C_3=\nabla V_4\) is **not** isolated
+at zero: its projective zero set contains the two coordinate directions
+represented by the \(a\)- and \(b\)-axes.  Thus one must not invoke a global
+odd-map degree on the whole diagonal \(S^3\).  This does not reopen the
+physical diagonal source: the actual \(q_{11}\) source
+\(s=(-8,8,0,0)\) already has its independently certified nondegenerate cubic
+root.
+
+Second, the degree route is most useful on:
+
+- the generic \(d_{\rm incompat}=2\) stratum after proving the parameterized
+  leading quartic Euler map has isolated projective zero away from its explicit
+  degeneracy set; and
+- the parabolic \(w=1\) stratum after \(V_6^{\rm red}\), or another exact
+  argument, isolates the unsourced origin.
+
+If isolation and boundary nonvanishing hold uniformly in a neighborhood of a
+compact resonance stratum, Brouwer degree persists under sufficiently small
+phase detuning.  A compact resonance variety can then be covered by finitely
+many nonlinear LS tubes; the complement uses the ordinary uniform inverse.
+This is the intended replacement for pointwise Diophantine estimates on
+\(1/\det H\).
+
+---
+
+## 23. Cross-wall exact algebraic lemma: the parabolic null-flag / compound seam
+
+The upper- and lower-wall parabolic mechanisms admit a common algebraic
+description that is stronger than the earlier qualitative
+“null-line seam” analogy.
+
+Let a nontrivial Lorentz parabolic plaquette be a null rotation
+
+\[
+P=e^N,
+\qquad
+N=n\wedge m,
+\]
+
+with
+
+\[
+n^2=0,
+\qquad
+n\cdot m=0,
+\qquad
+m^2\ne0.
+\]
+
+As an endomorphism,
+
+\[
+N^2=-m^2\,n\otimes n^\flat,
+\qquad
+N^3=0,
+\]
+
+so
+
+\[
+P=I+N+\frac12N^2.
+\]
+
+Set
+
+\[
+A=I-P.
+\]
+
+Then
+
+\[
+A=-N\left(I+\frac12N\right),
+\]
+
+where the factor in parentheses is invertible.  Therefore
+
+\[
+\boxed{
+\operatorname{im}A
+=
+\operatorname{im}N
+=
+\operatorname{span}\{n,m\}
+=:\Pi.
+}
+\]
+
+Moreover,
+
+\[
+\boxed{
+A^2=N^2,
+\qquad
+\operatorname{im}A^2
+=
+\operatorname{span}\{n\}
+=:\ell.
+}
+\]
+
+Thus every nontrivial rank-two parabolic plaquette canonically determines the
+null flag
+
+\[
+\boxed{\ell\subset\Pi}
+\]
+
+directly from \(P\).  At \(P=I\) scalar invariants lose this datum.  The natural
+resolved carrier is therefore the graph closure of
+
+\[
+P
+\longmapsto
+\left(
+\operatorname{im}(I-P)^2
+\subset
+\operatorname{im}(I-P)
+\right).
+\]
+
+Over the flat point the exceptional fibre is the space of null flags.  Its
+expected real dimension is \(2+1=3\): two parameters for a projective null line
+and one for a transverse direction in \(\ell^\perp/\ell\).
+
+### 23.1 Rank-adapted compound residual
+
+The old joint residual uses top exterior compounds:
+\(\det A=\wedge^4A\) and \(\operatorname{adj}A\), Hodge-dual to the third
+compound.  These vanish automatically when \(\operatorname{rank}A=2\).
+
+For a fixed rank-\(r\) stratum define instead
+
+\[
+\boxed{
+\mathcal Q_r(A,t):
+\Lambda^rV\to\Lambda^{r+1}V,
+\qquad
+\omega\longmapsto
+t\wedge(\wedge^rA)\omega.
+}
+\]
+
+Under affine node translation
+
+\[
+t\longmapsto t+Ac
+\]
+
+one has
+
+\[
+(Ac)\wedge(\wedge^rA)\omega=0,
+\]
+
+because all \(r+1\) factors lie in the \(r\)-dimensional
+\(\operatorname{im}A\).  Hence
+
+\[
+\boxed{
+\mathcal Q_r(A,t+Ac)=\mathcal Q_r(A,t).
+}
+\]
+
+If \(\operatorname{rank}A=r\), then
+\(\operatorname{im}(\wedge^rA)=\wedge^r\operatorname{im}A\) is a nonzero line,
+and therefore
+
+\[
+\boxed{
+\mathcal Q_r(A,t)=0
+\iff
+t\in\operatorname{im}A.
+}
+\]
+
+So \(\mathcal Q_r\) is a complete polynomial tensor detector of the affine
+translation coset on a fixed-rank stratum.
+
+For the parabolic seam,
+
+\[
+\boxed{
+\mathcal Q_2(A,t)
+=
+t\wedge(\wedge^2A)
+}
+\]
+
+survives exactly where the determinant/adjugate residual becomes blind, while
+\([\operatorname{im}\wedge^2A]\) is the Plücker coordinate of the degenerate
+plane \(\Pi\).
+
+This is an **affine-quotient detector / resolution candidate**, not a new term
+in the physical action and not a new \(I\)-channel.  The general algebraic
+lemma is elementary; ownership of its role in the selected D0 quotient still
+requires a lower-wall certificate and compatibility check with the existing
+Grassmann graph-closure machinery.
+
+---
+
+## 24. Revised pressure after the new synthesis
+
+The shortest route to the naked-star \(J^2\) theorem is now:
+
+1. **UV rescue, not orbit enumeration.**  Prove isolation/degree/Hölder control
+   on a finite compact resonance stratification.  The diagonal physical source
+   is already closed; \(V_6\) on the parabolic \(w=1\) stratum is a \(J^2\)
+   isolation problem, not a search for a finite vacuum on the action-flat
+   sheet.
+
+2. **Shrinking-bump estimate.**  Promote §20 from a scaling calculation to a
+   theorem for the actual eliminated finite response, including the
+   \(O(h^{1-\alpha})\), \(O(h^{4\alpha-2})\), and \(O(h^\infty)\) pieces.
+
+3. **Branch independence / locality.**  Prove that the limit is independent of
+   UV stationary sheet and of the smooth realization of the same local
+   \(2\)-jet.  The local shrinking-bump construction can establish the equation
+   class before the stronger arbitrary-global-sampling theorem.
+
+4. **Lower wall separately:** on PR #202, prove that the six transverse Euler
+   numerators on the reconstructed four-parameter parabolic family vanish only
+   on the flat locus.  If so, stop searching for a finite curved vacuum on that
+   sheet and move the finite-vacuum search to its complement.
+
+5. **Compound seam:** certificate \(\mathcal Q_2\) and the recovered flag
+   \(\ell\subset\Pi\) as a rank-two affine-quotient resolution mechanism before
+   deciding whether it changes any lower-wall physical carrier.
+
+Until the UV rescue and locality/branch-independence gates close, retain
+
+\[
+\boxed{\texttt{J2-SMOOTH-PARTIAL-CLOSURE}.}
+\]
+
+The target coefficient itself is already fixed:
+
+\[
+\boxed{E_\star=-\frac12G}
+\]
+
+for the naked star channel, conditional only on these remaining bridge gates.
+
