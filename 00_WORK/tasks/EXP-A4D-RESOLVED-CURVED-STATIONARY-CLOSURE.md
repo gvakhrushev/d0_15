@@ -12,37 +12,54 @@ Execution: `GitHub-first`
 
 ## Why delegated
 
-This is an expensive finite nonlinear stationary-system classification coupling solder, Lorentz-link and resolved-incidence Euler equations. It requires exact witness construction or elimination/no-go work and must stay separate from formalization until the physical action and quotient are selected.
+This is the lower-wall OTO/F4 problem. PR #201 already fixed the flat Einstein seed, so the remaining load-bearing question is nonlinear: does the selected finite action possess a nondegenerate curved stationary configuration? Current execution PR #202 has reduced the numerical search to a parabolic E(2) little-group carrier and a 14-equation transverse exactification problem. This is strong-research work, not routine formalization.
 
-## GitHub execution contract
+## Runtime / collision gate
 
-Start only from current `main`; run `python tools/task_dispatch.py EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+Before starting, search GitHub for an open PR carrying this exact task id. PR #202 is the current execution as of the registration refresh. If it is still open, CONTINUE #202; do not fork a second execution. Do not edit #201 terminal artifacts, the J2 bridge memo, or the Palatini target-span memo.
 
-## Chat handoff
+## Current repository-owned inputs
 
-Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
+Merged inputs include #184, #185, #188, #189, #193, #196, #199, #200 and #201.
 
+Use these exact boundaries:
+
+- #201 terminal: naked `S_star` has pure finite Einstein flat Hessian, `K_star,metric=(1/4)K_E_eta`, and `j^2_flat Q(R)=0`.
+- #201 corrected H1: DO NOT infer `EL_b => R=0`. Solve/integrate the residual channel as `R=R_*(C,...)` after its own Euler equation.
+- #196: joint residuals are quotient-complete on declared generic curved L=2 controls, but this is not a global nonlinear theorem.
+- #199/#200: solder Euler alone does not force flatness; canonical flat checkerboard physical nulls are nonlinearly obstructed.
+
+Current #202 checkpoint to reproduce before extending:
+
+- four legal residual channels `I_eta_adj, I_eta_opp, I_n_adj, I_n_opp`;
+- exact response matrix rank 4 / kernel 0 on the declared sample;
+- five exact homogeneous word controls have no nondegenerate full stationary point;
+- numerical E(2) little-group candidates pass literal single-site/single-edge Euler tests at machine precision;
+- the current smallest exactification target is 14 independent rational stationarity equations (8 internal + 6 transverse) after fixing 13 rational normal-form coordinates.
+
+Numerical evidence is not a theorem.
 
 ## Objective
 
-Close the nondegenerate curved stationary-sector question for the selected
-resolved full-affine action after the physical quotient is fixed.
+Either:
 
-## Dependencies
+1. exactify one all-site nondegenerate configuration with nonzero curvature and full Euler zero for the selected four-channel action; or
+2. prove a precisely scoped exact no-go for the declared E(2)/parabolic or larger carrier.
 
-Requires:
-- the terminal result of PR #187 or its successor;
-- a selected resolved carrier;
-- a selected full-affine action/quotient from
-  `EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT`.
+L=2 may discover the witness. A broad finite-carrier terminal requires an L=3 hostile control.
 
-## Required outcome
+## Required method
 
-Either construct an exact nondegenerate curved stationary witness or prove a
-precisely scoped no-go.  Preserve the separation between solder Euler,
-connection Euler, resolved-incidence Euler and gauge identities.
+Prefer exact rational/algebraic elimination, Gröbner/resultant methods, rational reconstruction, Jacobian rank certification and symmetry reduction. Numerical optimization is a scout only. Checkpoint every exact subsystem/rank/factorization before moving on.
 
-L=2 may discover the result; an L=3 hostile control is required before any
-broad finite-carrier statement.
+## Forbidden shortcuts
 
-No GR/time/wave interpretation.
+No Holst channel, no phi coefficient, no new unowned invariant, no forcing `R=0`, no 7x7 coefficient grid, no continuum Einstein claim, no treating machine-precision roots as exact.
+
+## GitHub execution contract
+
+Start from current `main`; run `python tools/task_dispatch.py EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`; use the existing open execution if present; checkpoint durable results in the primary memo/certificates; keep exact/structural/numerical/open statuses separate; refresh against main before Ready; self-retire only when terminal; never self-merge.
+
+## Chat handoff
+
+Return the PR number, final SHA, exact witness/no-go, curvature/nondegeneracy data, validation commands, L=3 status, and the single smallest remaining blocker.

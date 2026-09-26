@@ -4,53 +4,42 @@ Class: `WORKER`
 State on registration: `PLANNED`  
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
-## Dependency gate
-
-Do not start until PR #184 is merged or a CONTROL review declares its exact
-structural statements stable.
-
 Repository: `gvakhrushev/d0_15`
 Base: `main`
 Branch: `wrk/a4d-formalize-affine-relative-solder`
 Primary artifact: `03_FORMALIZATION/D0/Geometry/A4DAffineRelativeSolderCompletion.lean`
 Execution: `GitHub-first`
 
+## Dependency gate
+
+SATISFIED: research #184 is merged. This worker may start now.
+
 ## Why delegated
 
-This worker is dependency-gated because the relative-solder completion is still an unmerged research result. Once the science lands, the algebraic transform law, lambda selector and factor-through overquotient statement form a bounded Lean package with clear ownership.
+The selected relative-solder algebra is stable and bounded. Formalization prevents later agents from reopening the lambda selector or confusing this kinematic completion with the final physical quotient.
+
+## Owned theorem packet
+
+Formalize only merged #184 content:
+
+- observer metric congruence under proper Lorentz transport;
+- affine solder/link shift law;
+- `ThetaHat^lambda = Theta - lambda b^T h_n`;
+- exact transform with residual term proportional to `1-lambda`;
+- uniqueness of `lambda=1` from a nonzero translation witness;
+- homogeneous covariance at `lambda=1`;
+- matched-edge diagonal invisibility of every functional factoring only through `ThetaHat`.
+
+The finite L=2 statement that this erases 192 nongauge edge directions is research-certified; do not turn a Python rank into an axiom. Formalize it only if the concrete finite carrier/rank proof is genuinely closed in Lean.
+
+## Non-claims
+
+Do not call relative solder the final full-affine physical action. #185/#196 show extra joint-holonomy data are needed to recover nongauge edge information.
 
 ## GitHub execution contract
 
-Start only from current `main`; run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+Run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER`; open Draft PR; keep the module isolated; no `sorry`; update `D0.All` only when stable; self-retire before Ready; never self-merge.
 
 ## Chat handoff
 
-Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
-
-
-## Objective
-
-Formalize observer-completed affine relative solder algebra.
-
-Primary module:
-`03_FORMALIZATION/D0/Geometry/A4DAffineRelativeSolderCompletion.lean`.
-
-Targets:
-
-- observer metric congruence under the owned Lorentz action;
-- typed affine shift/link law;
-- `ThetaHat^lambda = Theta - lambda b^T h_n`;
-- exact transform
-  [
-  widehatTheta'^{(lambda)}
-  =
-  widehatTheta^{(lambda)}g^{-1}
-  +(1-lambda)	au^T h_{n'};
-  ]
-- uniqueness of `lambda=1` under a nonzero translation witness;
-- pure linear covariance at `lambda=1`;
-- abstract matched-edge diagonal invariance of any functional factoring only
-  through `ThetaHat`.
-
-The 192-dimensional L=2 overquotient rank may remain a separate finite theorem
-if full rank formalization is too expensive; do not assert it without proof.
+Return PR, SHA, theorem names, build/guard results, and any exact rank statement deliberately left research-only.

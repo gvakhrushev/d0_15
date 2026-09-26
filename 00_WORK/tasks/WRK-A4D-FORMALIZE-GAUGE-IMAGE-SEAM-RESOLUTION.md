@@ -4,46 +4,46 @@ Class: `WORKER`
 State on registration: `PLANNED`  
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
-## Dependency gate
-
-Requires merged #188 and a stable terminal from
-`EXP-A4D-GRASSMANN-GRAPH-CLOSURE-RESOLUTION`.
-
 Repository: `gvakhrushev/d0_15`
 Base: `main`
 Branch: `wrk/a4d-formalize-gauge-image-seam-resolution`
 Primary artifact: `03_FORMALIZATION/D0/Geometry/A4DGaugeImageResolution.lean`
 Execution: `GitHub-first`
 
+## Dependency gate
+
+SATISFIED: #188 gauge-image memory and #193 canonical Grassmann graph-closure resolution are merged.
+
 ## Why delegated
 
-This worker is intentionally delayed until the graph-closure research selects the intrinsic resolved carrier. Its role is to formalize the finite-dimensional range/incidence/quotient geometry after selection, rather than prematurely freezing one provisional memory interpretation.
+The graph-closure carrier has already been selected by merged research #193. What remains here is bounded finite-dimensional formalization of ranges, incidences and quotient dimensions, with a clear firewall against reinterpreting limiting incidence directions as gauge.
+
+## Owned theorem packet
+
+Formalize the intrinsic finite-dimensional seam geometry, keeping three objects distinct:
+
+- endpoint gauge image `U = range D_L`;
+- limiting incidence plane `I_*` in the graph-closure carrier;
+- lost quotient data `G_* = I_*/U`.
+
+Targets:
+
+- range/inclusion/quotient dimension lemmas;
+- flat ranks `rank D0=60`, `dim ker D0=4` only if concretely provable from typed finite data;
+- generic rank-64 vs flat rank-60 abstract dimension accounting;
+- first-jet image-resolution theorem: a rank-4 transverse first jet determines the limiting four-plane modulo `U`;
+- graph-closure statement sufficient to express that higher jets select boundary points rather than create arbitrary external memory.
+
+Research #193 reports exceptional-fibre dimension 293 versus `Gr(4,196)` dimension 768. Do not turn the computational/algebraic-geometric dimension calculation into an axiom; formalize the structural carrier first and record the exact dimension proof as a blocker if mathlib infrastructure is disproportionate.
+
+## Critical non-conflation
+
+`G_*` is resolution data, NOT endpoint gauge. At flat, the true affine gauge remains `range D0`; the intrinsic quotient dimension is 196.
 
 ## GitHub execution contract
 
-Start only from current `main`; run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+Run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION`; open Draft PR; no path-history semantics beyond merged #193; zero `sorry`; never self-merge.
 
 ## Chat handoff
 
-Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
-
-
-## Objective
-
-Formalize the rank-changing gauge-image resolution.
-
-Primary module:
-`03_FORMALIZATION/D0/Geometry/A4DGaugeImageResolution.lean`.
-
-Formalize abstract finite-dimensional statements first:
-
-- `U = range D`;
-- supplied incidence subspace `I` with `U ≤ I`;
-- quotient memory `G = I/U`;
-- dimension identities across rank changes;
-- first-jet image-resolution theorem selected by research;
-- graph-closure/incidence carrier and exceptional-fiber statements that have
-  survived review.
-
-Do not encode path-history semantics before the research task proves which
-data are intrinsic.
+Return PR, SHA, formalized seam theorem, exact dimensions actually proved in Lean, and the smallest remaining graph-closure blocker.
