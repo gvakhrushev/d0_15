@@ -6,7 +6,7 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 Research lanes: lower-wall #202 / cross-wall parabolic seam
 
 Repository: `gvakhrushev/d0_15`  
-Base: `main` after the latest quotient/graph-closure inputs are integrated  
+Base: `main`  
 Branch: `wrk/a4d-rank-compound-affine-quotient`  
 Primary artifact: `02_REGISTRY/research/A4D_RANK_COMPOUND_AFFINE_QUOTIENT.md`  
 Execution: `GitHub-first`
