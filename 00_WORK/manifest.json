@@ -23,15 +23,6 @@
       "affected_claims": [],
       "exit_condition": "Merged nightly-maintenance and nonlinear-Lorentz control rows are retired without altering their durable artifacts, and the repository control plane is internally consistent and green.",
       "brief": "00_WORK/tasks/CTRL-POST-MERGE-CONTROL-CLOSEOUT.md"
-    },
-    {
-      "id": "EXP-A4D-RESOLVED-AFFINE-QUOTIENT-VARIATION",
-      "class": "EXPENSIVE",
-      "parent": "ROOT",
-      "state": "IN_PROGRESS",
-      "affected_claims": [],
-      "exit_condition": "Classify the variational status of the affine gauge-image incidence carrier I. Derive the exact first variation of the resolved quotient energy, compare frozen-memory, constrained-Grassmannian and history-germ contracts, and determine which contracts define a closed endpoint variational problem and what new Euler constraints they introduce.",
-      "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-AFFINE-QUOTIENT-VARIATION.md"
     }
   ]
 }
