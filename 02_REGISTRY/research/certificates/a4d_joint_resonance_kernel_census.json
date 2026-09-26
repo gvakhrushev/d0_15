@@ -1,0 +1,662 @@
+{
+ "table": [
+  {
+   "orbit": 0,
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 23,
+   "d": 1,
+   "dimN": 2,
+   "rankQA_on_N": 1,
+   "dimN0": 1,
+   "brief_expected_dimN0": 1,
+   "certified_dimN0": 1,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 1,
+   "ids": [
+    0,
+    0,
+    1,
+    3
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 24,
+   "d": 2,
+   "dimN": 2,
+   "rankQA_on_N": 2,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 2,
+   "ids": [
+    0,
+    1,
+    1,
+    2
+   ],
+   "mult": 6,
+   "rH": 20,
+   "rA": 24,
+   "d": 4,
+   "dimN": 4,
+   "rankQA_on_N": 4,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 3,
+   "ids": [
+    1,
+    0,
+    1,
+    2
+   ],
+   "mult": 12,
+   "rH": 20,
+   "rA": 24,
+   "d": 4,
+   "dimN": 4,
+   "rankQA_on_N": 4,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 4,
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "mult": 2,
+   "rH": 16,
+   "rA": 20,
+   "d": 4,
+   "dimN": 8,
+   "rankQA_on_N": 4,
+   "dimN0": 4,
+   "brief_expected_dimN0": 4,
+   "certified_dimN0": 4,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 5,
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "mult": 6,
+   "rH": 20,
+   "rA": 23,
+   "d": 3,
+   "dimN": 4,
+   "rankQA_on_N": 3,
+   "dimN0": 0,
+   "brief_expected_dimN0": 1,
+   "certified_dimN0": 0,
+   "brief_reproduced": false
+  },
+  {
+   "orbit": 6,
+   "ids": [
+    2,
+    0,
+    1,
+    1
+   ],
+   "mult": 6,
+   "rH": 20,
+   "rA": 24,
+   "d": 4,
+   "dimN": 4,
+   "rankQA_on_N": 4,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  },
+  {
+   "orbit": 7,
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 23,
+   "d": 1,
+   "dimN": 2,
+   "rankQA_on_N": 1,
+   "dimN0": 0,
+   "brief_expected_dimN0": 1,
+   "certified_dimN0": 0,
+   "brief_reproduced": false
+  },
+  {
+   "orbit": 8,
+   "ids": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "mult": 6,
+   "rH": 22,
+   "rA": 24,
+   "d": 2,
+   "dimN": 2,
+   "rankQA_on_N": 2,
+   "dimN0": 0,
+   "brief_expected_dimN0": 0,
+   "certified_dimN0": 0,
+   "brief_reproduced": true
+  }
+ ],
+ "joint_hessian": [
+  {
+   "orbit": 0,
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "rank": 29,
+   "nullity": 5,
+   "connection_only": 2,
+   "metric_only": 1,
+   "mixed": 2
+  },
+  {
+   "orbit": 1,
+   "ids": [
+    0,
+    0,
+    1,
+    3
+   ],
+   "rank": 29,
+   "nullity": 5,
+   "connection_only": 2,
+   "metric_only": 1,
+   "mixed": 2
+  },
+  {
+   "orbit": 2,
+   "ids": [
+    0,
+    1,
+    1,
+    2
+   ],
+   "rank": 29,
+   "nullity": 5,
+   "connection_only": 4,
+   "metric_only": 1,
+   "mixed": 0
+  },
+  {
+   "orbit": 3,
+   "ids": [
+    1,
+    0,
+    1,
+    2
+   ],
+   "rank": 29,
+   "nullity": 5,
+   "connection_only": 4,
+   "metric_only": 1,
+   "mixed": 0
+  },
+  {
+   "orbit": 4,
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "rank": 25,
+   "nullity": 9,
+   "connection_only": 8,
+   "metric_only": 1,
+   "mixed": 0
+  },
+  {
+   "orbit": 5,
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "rank": 29,
+   "nullity": 5,
+   "connection_only": 4,
+   "metric_only": 1,
+   "mixed": 0
+  },
+  {
+   "orbit": 6,
+   "ids": [
+    2,
+    0,
+    1,
+    1
+   ],
+   "rank": 29,
+   "nullity": 5,
+   "connection_only": 4,
+   "metric_only": 1,
+   "mixed": 0
+  },
+  {
+   "orbit": 7,
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "rank": 31,
+   "nullity": 3,
+   "connection_only": 2,
+   "metric_only": 1,
+   "mixed": 0
+  },
+  {
+   "orbit": 8,
+   "ids": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "rank": 31,
+   "nullity": 3,
+   "connection_only": 2,
+   "metric_only": 1,
+   "mixed": 0
+  }
+ ],
+ "n0_bases": {
+  "0": {
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "basis": [
+    [
+     "-1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "-1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "4": {
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "basis": [
+    [
+     "0",
+     "0",
+     "0",
+     "1",
+     "-1",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "1",
+     "-1",
+     "0",
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  }
+ },
+ "curvature": {
+  "0": [
+   {
+    "basis": 0,
+    "support_links": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "curvature": "NONZERO"
+   }
+  ],
+  "4": [
+   {
+    "basis": 0,
+    "support_links": [
+     0
+    ],
+    "curvature": "ZERO"
+   },
+   {
+    "basis": 1,
+    "support_links": [
+     1
+    ],
+    "curvature": "ZERO"
+   },
+   {
+    "basis": 2,
+    "support_links": [
+     2
+    ],
+    "curvature": "ZERO"
+   },
+   {
+    "basis": 3,
+    "support_links": [
+     3
+    ],
+    "curvature": "ZERO"
+   }
+  ]
+ },
+ "eq_cokernel": {
+  "0": [
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "1",
+   "1",
+   "1"
+  ],
+  "1": [
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "0",
+   "-1",
+   "I",
+   "1"
+  ],
+  "2": [
+   "0",
+   "0",
+   "0",
+   "0",
+   "I/2",
+   "I/2",
+   "1/2 + I/2",
+   "I/2",
+   "1/2 + I/2",
+   "1"
+  ],
+  "3": [
+   "I/2",
+   "0",
+   "I/2",
+   "1/2 + I/2",
+   "0",
+   "0",
+   "0",
+   "I/2",
+   "1/2 + I/2",
+   "1"
+  ],
+  "4": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "5": [
+   "-1",
+   "-1",
+   "I",
+   "I",
+   "-1",
+   "I",
+   "I",
+   "1",
+   "1",
+   "1"
+  ],
+  "6": [
+   "-2*I",
+   "0",
+   "1 - I",
+   "1 - I",
+   "0",
+   "0",
+   "0",
+   "1",
+   "1",
+   "1"
+  ],
+  "7": [
+   "1",
+   "1/2 + I/2",
+   "1/2 + I/2",
+   "1",
+   "I/2",
+   "I/2",
+   "1/2 + I/2",
+   "I/2",
+   "1/2 + I/2",
+   "1"
+  ],
+  "8": [
+   "2*I",
+   "-1 + I",
+   "2*I",
+   "1 + I",
+   "-1",
+   "-1 + I",
+   "I",
+   "2*I",
+   "1 + I",
+   "1"
+  ]
+ },
+ "eq_cokernel_is_pure_trace": [
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false
+ ],
+ "sym_order": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   2
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   1,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   3
+  ],
+  [
+   2,
+   2
+  ],
+  [
+   2,
+   3
+  ],
+  [
+   3,
+   3
+  ]
+ ]
+}
