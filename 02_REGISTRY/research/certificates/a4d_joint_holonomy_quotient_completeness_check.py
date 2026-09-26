@@ -278,6 +278,9 @@ for r, s in PAIRS:
 alt_inc_sym_ranks = []
 alt_comp_sym_ranks = []
 alt_independence = []
+alt_s4_intersect_ranks = []
+alt_s4_disjoint_ranks = []
+alt_s4_independence = []
 
 for chi in MOMENTA:
     fdata = {p: alt_face_symbol(*p, chi) for p in PAIRS}
@@ -318,12 +321,34 @@ for chi in MOMENTA:
     )
     alt_independence.append(pair.to_DM().rank())
 
+    # Even a hypothetical full S4 Role symmetry leaves two Johnson-scheme
+    # off-diagonal orbits: intersecting faces and disjoint/complementary faces.
+    H_intersect = (
+        eta_gram(by["T_TO_T"])
+        + eta_gram(by["S_TO_S"])
+        + H_inc
+    )
+    H_disjoint = H_comp
+    alt_s4_intersect_ranks.append(H_intersect.to_DM().rank())
+    alt_s4_disjoint_ranks.append(H_disjoint.to_DM().rank())
+    pair_s4 = sp.Matrix.hstack(
+        sp.Matrix(H_intersect).reshape(256, 1),
+        sp.Matrix(H_disjoint).reshape(256, 1),
+    )
+    alt_s4_independence.append(pair_s4.to_DM().rank())
+
 check("ALT_PAIR_EXCHANGE_INCIDENT_COMPLETE",
       set(alt_inc_sym_ranks) == {12})
 check("ALT_PAIR_EXCHANGE_COMPLEMENT_COMPLETE",
       set(alt_comp_sym_ranks) == {12})
 check("ALT_TWO_SYMMETRIC_CROSS_ACTIONS_INDEPENDENT",
       set(alt_independence) == {2})
+check("ALT_FULL_S4_INTERSECT_COMPLETE",
+      set(alt_s4_intersect_ranks) == {12})
+check("ALT_FULL_S4_DISJOINT_COMPLETE",
+      set(alt_s4_disjoint_ranks) == {12})
+check("ALT_FULL_S4_TWO_ORBITS_INDEPENDENT",
+      set(alt_s4_independence) == {2})
 
 # Orientation/reversal scalar-channel control.
 P1 = sp.simplify(BOOST * RCD)
@@ -352,6 +377,6 @@ check("FLAT_JOINT_RESIDUAL_ZERO",
 
 print("RESULT_FULL_MAP: sector-by-sector rank 12 with rank-4 node gauge; global rank 192 and kernel exactly node gauge on the generic homogeneous curved L=2 control.")
 print("RESULT_ROLE_ORBITS: incident cross-type orbits are complete on the primary control; its complementary defect is a special background resonance, not universal.")
-print("RESULT_SPECIAL_RESONANCE: one symmetric control has a complementary-orbit defect at (-1,-1,+1,+1), but an independent generic link control removes it; the checkerboard coincidence is background-dependent, not a selector theorem.")\nprint("RESULT_SELECTOR: even after pair-exchange symmetry, incident and complementary cross-type Lorentz quadratics are independent and each quotient-complete on the hostile generic control, so symmetry+completeness leave a genuine action modulus.")
+print("RESULT_SPECIAL_RESONANCE: one symmetric control has a complementary-orbit defect at (-1,-1,+1,+1), but an independent generic link control removes it; the checkerboard coincidence is background-dependent, not a selector theorem.")\nprint("RESULT_SELECTOR: even after pair-exchange symmetry, incident and complementary cross-type Lorentz quadratics are independent and quotient-complete; even hypothetical full S4 Role naturality leaves independent intersecting-vs-disjoint complete actions, so symmetry+completeness leave a genuine action modulus.")
 print("RESULT_SCALAR: equal-weight Lorentz quadratics are quotient-complete; target reversal preserves eta but not the rest-observer positive scalar.")
 print("RESULT_FLAT: polynomial joint-residual terms vanish at flat holonomy and do not alter the accepted flat Hessian.")
