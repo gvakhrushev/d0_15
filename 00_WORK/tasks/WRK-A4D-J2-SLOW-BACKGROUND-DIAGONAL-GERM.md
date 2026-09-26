@@ -65,6 +65,10 @@ A positive no-splitting result is only a model control and must not be promoted 
 
 No orbit enumeration. No new Newton scout without the exact reduced coefficients. No new action channel. No modification of the finite action. No claim that one diagonal control proves uniform rescue.
 
-## Handoff
+## GitHub execution contract
+
+Start from fresh current `main` after this registration is merged. Run lifecycle start, open a Draft PR before substantive scientific edits, keep Git-visible task state synchronized with the PR lifecycle, self-retire only at a declared terminal, refresh against current `main` before Ready, and never self-merge.
+
+## Chat handoff
 
 Return the PR, SHA, declared slow background, exact reduced correction, small-root classification, and the perturbative order certified.
