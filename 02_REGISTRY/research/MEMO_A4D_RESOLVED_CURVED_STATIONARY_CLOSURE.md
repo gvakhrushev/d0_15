@@ -82,7 +82,24 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    Scope: declared 6-parameter Cayley + matched translation only; not yet a
    global F4 no-go over full field space / all Pi projections.
 
-5. **2D Cayley subtangent warning.**
+5. **Ambient ORIGIN28 widen of the span obstruction (this PR, Track A).**
+   At the same rational Cayley background `p=(2/5)^6` with matched `b=e0`,
+   exact FD gradients in the full 24-dimensional left-Cayley `so(1,3)` tangent
+   space on the four ORIGIN edges, plus 4 free translation-component directions
+   on the matched edge (`S_star` is b-independent here, so those `g_b=0`),
+   again satisfy
+
+      rank B = 4,   rank[B | -g] = 5
+
+   over `Q`, with `C!=0` and active `I_j`.  A second mixed-sign Cayley
+   background repeats the same ambient ranks.  Certificate sections
+   `SECTION_SPAN_OBSTRUCTION_AMBIENT_ORIGIN28` and
+   `SECTION_SPAN_OBSTRUCTION_AMBIENT_ORIGIN28_MIXED`.
+   Scope: widens chart-parameter obstruction to ambient ORIGIN-link Lorentz
+   tangent + free matched-edge `b` at two rational backgrounds; still **not**
+   a global Pi-projected / free-solder / all-site F4 no-go.
+
+6. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -110,7 +127,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     BOXED:
     F4-SUPPORT-OBSTRUCTION-ON-R-EQUALS-ZERO;
     RESPONSE-MATRIX-RANK-4-KER-0-ADJ-OPP-INDEPENDENT;
-    SCOPED-6D-CAYLEY-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-ON-5-POINT-RATIONAL-GRID
+    SCOPED-6D-CAYLEY-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-ON-5-POINT-RATIONAL-GRID;
+    SCOPED-AMBIENT-ORIGIN28-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AT-TWO-RATIONAL-BACKGROUNDS
 
 Supporting:
 
@@ -125,10 +143,11 @@ No continuum Einstein claim.
 
 Two parallel exactification tracks (both allowed; do not collapse):
 
-A. **Four-channel span:** widen the scoped 6D Cayley / 5-point-grid obstruction
-   toward a chart-independent / Pi-projected statement, **or** find geometry
-   outside that chart where `-grad S_star in span{grad I_j}` with `C!=0`, solve
-   exact `c`, verify full Euler, then L=3 hostile control.
+A. **Four-channel span:** ambient ORIGIN28 (24 link + 4 free-b) now obstructs
+   at two rational backgrounds.  Next: free absolute solder / all-site Pi
+   quotient, **or** find geometry outside these backgrounds where
+   `-grad S_star in span{grad I_j}` with `C!=0`, solve exact `c`, verify full
+   Euler, then L=3 hostile control.
 
 B. **Star-only / E(2) scout:** exactify the parallel parabolic E(2) little-group
    8-internal + 6-transverse / 13-free rational system and check it against the
