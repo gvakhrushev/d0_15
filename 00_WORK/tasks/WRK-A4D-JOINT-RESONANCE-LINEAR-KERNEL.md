@@ -39,7 +39,27 @@ Certify:
 N_0=\ker H_{AA}\cap\ker H_{QA}.
 ]
 
-Do not infer (H_{QA}) from rank arithmetic alone; build the exact matrix/map.
+Do not infer \(H_{QA}\) from rank arithmetic alone; build the exact matrix/map.
+
+In addition, build the **full mixed joint Hessian**
+
+\[
+\mathcal H_J=
+\begin{pmatrix}
+0&H_{QA}\\
+H_{AQ}&H_{AA}
+\end{pmatrix}
+\]
+
+for every orbit representative using the same polarized pairing. Report its exact rank and nullspace before quotient, then identify which null directions are genuine metric gauge/flat directions, physical IR modes, connection-invisible modes, or mixed modes.
+
+Also certify directly from the finite star formula that
+
+\[
+E_Q(Q,I)\equiv0,
+\]
+
+so the first connection coefficient of any near-flat joint Puiseux/analytic germ must lie in \(N_0\).
 
 ## Required outputs
 
@@ -61,7 +81,9 @@ Do not infer (H_{QA}) from rank arithmetic alone; build the exact matrix/map.
 4. Give exact bases over (\mathbb Q(i)) for every (N_0\neq0) orbit representative.
 5. Identify the #227 tangent (B=K_1+K_2+K_3) with its quarter-wave Role pattern and prove it lies in the source-visible part, not (N_0).
 6. For each (N_0) basis vector compute the first linearized plaquette curvature. A zero-curvature vector may be a flat/gauge candidate; a nonzero-curvature vector is not.
-7. Do not label any vector gauge without checking it against the repository's actual Lorentz quotient.
+7. Compute the exact full joint Hessian rank/nullity for each representative and give a basis decomposition into metric-only, connection-only, and mixed null vectors before quotient.
+8. Verify the tangent-cone statement \(E_Q(Q,I)\equiv0\) and identify the #227 tangent as excluded at first connection valuation.
+9. Do not label any vector gauge without checking it against the repository's actual Lorentz/metric quotient.
 
 ## Terminal
 
