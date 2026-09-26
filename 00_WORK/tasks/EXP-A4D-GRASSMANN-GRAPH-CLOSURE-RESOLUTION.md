@@ -4,6 +4,25 @@ Class: `EXPENSIVE`
 State on registration: `PLANNED`  
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
+Repository: `gvakhrushev/d0_15`
+Base: `main`
+Branch: `exp/a4d-grassmann-graph-closure-resolution`
+Primary artifact: `02_REGISTRY/research/MEMO_A4D_GRASSMANN_GRAPH_CLOSURE_RESOLUTION.md`
+Execution: `GitHub-first`
+
+## Why delegated
+
+This is an expensive rank-changing quotient classification requiring exact finite-dimensional incidence geometry, first-jet analysis, exceptional-fiber reconstruction and hostile seam controls. It is isolated so the resolved carrier can be selected without colliding with the active stationary-sector and holonomy lanes.
+
+## GitHub execution contract
+
+Start only from current `main`; run `python tools/task_dispatch.py EXP-A4D-GRASSMANN-GRAPH-CLOSURE-RESOLUTION` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+
+## Chat handoff
+
+Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
+
+
 ## Objective
 
 Classify the canonical resolution of the rank-changing map
