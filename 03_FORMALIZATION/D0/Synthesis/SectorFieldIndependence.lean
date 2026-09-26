@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 8220)
-Total output lines: 673
-
 import Mathlib.Tactic
 import Mathlib.Data.ZMod.Basic
 import Mathlib.Algebra.QuadraticAlgebra.Basic
@@ -337,7 +334,24 @@ def sigmaAlpha0 : AlphaCharacterAlgebra ≃ₐ[ℚ] AlphaCharacterAlgebra :=
 
 /-- α-sign lifted through the DE layer. -/
 def sigmaAlpha1 : AlphaDECharacterAlgebra ≃ₐ[ℚ] AlphaDECharacterAlgebra :=
-  liftC…220 tokens truncated…SectorCharacterAlgebra ≃ₐ[ℚ] SectorCharacterAlgebra :=
+  liftCoeffAlgEquiv (algebraMap ℚ AlphaCharacterAlgebra 10) 0 sigmaAlpha0 (by simp) (by simp)
+
+/-- α-sign lifted through all three layers. -/
+def sigmaAlpha : SectorCharacterAlgebra ≃ₐ[ℚ] SectorCharacterAlgebra :=
+  liftCoeffAlgEquiv (algebraMap ℚ AlphaDECharacterAlgebra 386579) 0 sigmaAlpha1
+    (by simp) (by simp)
+
+/-- DE-sign on the second layer, viewed as a `ℚ`-algebra equivalence. -/
+def sigmaDE1 : AlphaDECharacterAlgebra ≃ₐ[ℚ] AlphaDECharacterAlgebra :=
+  (quadraticSignAlgEquiv (algebraMap ℚ AlphaCharacterAlgebra 10)).restrictScalars ℚ
+
+/-- DE-sign lifted through the transport-character layer. -/
+def sigmaDE : SectorCharacterAlgebra ≃ₐ[ℚ] SectorCharacterAlgebra :=
+  liftCoeffAlgEquiv (algebraMap ℚ AlphaDECharacterAlgebra 386579) 0 sigmaDE1
+    (by simp) (by simp)
+
+/-- Transport-character sign on the outer layer. -/
+def sigmaTransport : SectorCharacterAlgebra ≃ₐ[ℚ] SectorCharacterAlgebra :=
   (quadraticSignAlgEquiv (algebraMap ℚ AlphaDECharacterAlgebra 386579)).restrictScalars ℚ
 
 @[simp] theorem sigmaAlpha0_re (z : AlphaCharacterAlgebra) :
