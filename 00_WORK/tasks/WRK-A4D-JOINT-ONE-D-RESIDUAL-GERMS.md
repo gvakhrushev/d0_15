@@ -54,7 +54,7 @@ A partial terminal must name the exact remaining coefficient/order.
 
 ## Boundaries
 
-No diagonal four-dimensional work. No all-sheet (E_K) rescue. No torsion constraint, new action channel, (arphi), boundary selector, or #202 edits.
+No diagonal four-dimensional work. No all-sheet (E_K) rescue. No torsion constraint, new action channel, (\varphi), boundary selector, or #202 edits.
 
 ## GitHub execution contract
 

@@ -14,7 +14,7 @@ Execution: `GitHub-first`
 
 Merged #227 proves that naked-star connection stationarity alone is not a selector: on the fixed flat metric there is an exact curved family with (E_K=0), nonzero curvature, and a different normalized metric partial. Therefore the old all-sheet elimination/rescue obligation is false.
 
-The Einstein seed itself remains intact on the designated smooth sheet: #201/#216/#223 still give the owned local coefficient (T_1^{[2]}=rac14E_\eta	o-rac12G). The new problem is the genuine Palatini one: analyze the **joint** critical system, not every connection-stationary sheet.
+The Einstein seed itself remains intact on the designated smooth sheet: #201/#216/#223 still give the owned local coefficient (T_1^{[2]}=\frac14E_\eta\to-\frac12G). The new problem is the genuine Palatini one: analyze the **joint** critical system, not every connection-stationary sheet.
 
 This task must not try to reconstruct a globally single-valued off-shell (K_*(Q)). The primary theorem target is on-shell/joint-critical.
 
@@ -45,6 +45,31 @@ identically in (Q). Therefore at ((\eta,I)),
 [
 H_{QQ}=0.
 ]
+
+
+### Tangent-cone strengthening
+
+The stronger exact identity is not merely \(H_{QQ}=0\). Because the naked star density is curvature-linear and the identity connection has zero curvature for every solder/metric,
+
+\[
+E_Q(Q,I)\equiv 0
+\]
+
+through the whole near-flat metric chart. In local connection coordinates \(a\) this implies the analytic ideal structure
+
+\[
+E_Q(q,a)=H_{QA}a+O(qa,a^2),
+\]
+
+so every monomial in the metric Euler map contains at least one connection amplitude.
+
+Therefore any analytic, subanalytic, or Puiseux joint-critical germ approaching \((\eta,I)\) has its first nonzero connection coefficient \(a_0\) in
+
+\[
+\ker H_{AA}\cap\ker H_{QA}.
+\]
+
+A source-visible resonant direction cannot be rescued by simultaneously moving \(Q\): the metric equation kills it at the first connection valuation. The merged #227 tangent is the hostile control for this statement.
 
 The linearized joint Palatini Hessian has saddle form
 
@@ -116,6 +141,16 @@ Use the worker-owned exact character census.
 
 For every singular L=4 orbit type identify:
 
+- the exact rank and nullspace of the **full mixed saddle matrix**
+  \[
+  \mathcal H_J(z)=
+  \begin{pmatrix}
+  0&H_{QA}(z)\\
+  H_{AQ}(z)&H_{AA}(z)
+  \end{pmatrix},
+  \]
+  after the same polarized/conjugate convention and after separating genuine metric gauge/physical IR directions;
+
 - (ker H_{AA});
 - rank of (H_{QA}) restricted to that kernel;
 - the exact source-invisible subspace
@@ -124,7 +159,9 @@ For every singular L=4 orbit type identify:
   ]
 - genuine quotient/gauge status.
 
-The #227 tangent must be identified explicitly as source-visible; its exact curved (E_K=0) family is therefore cut already by the linear metric equation.
+The #227 tangent must be identified explicitly as source-visible; its exact curved \(E_K=0\) family is therefore cut already by the linear metric equation.
+
+The linear theorem is a mixed saddle-point/KKT statement, not merely a count of \(\ker H_{AA}\). A nonzero \(N_0\) is the only place where nonlinear connection pressure remains, but the full joint Hessian kernel must also track metric-null/gauge directions and mixed \((q,a)\) solutions.
 
 ### J2 — nonlinear pressure only on residual orbit types
 
@@ -213,7 +250,7 @@ with exactly one smallest remaining joint blocker.
 
 No return to all-sheet (E_K) rescue.
 
-No new gravitational invariant, Holst term, (arphi), filter, or I-channel.
+No new gravitational invariant, Holst term, (\varphi), filter, or I-channel.
 
 No boundary-condition change used as a “selector”.
 

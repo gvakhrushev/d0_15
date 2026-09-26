@@ -62,7 +62,7 @@ Partial terminals must identify the first missing coefficient/order.
 
 ## Forbidden
 
-No new action channel, torsion constraint, (arphi), or boundary selector. No all-orbit scan. No global Einstein claim.
+No new action channel, torsion constraint, (\varphi), or boundary selector. No all-orbit scan. No global Einstein claim.
 
 ## GitHub execution contract
 
