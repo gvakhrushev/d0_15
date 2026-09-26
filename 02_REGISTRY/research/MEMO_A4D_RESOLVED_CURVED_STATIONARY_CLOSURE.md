@@ -267,3 +267,51 @@ remaining free dimensions to impose rational gauge/normal-form conditions
 before elimination.
 
 This is now the smallest observed positive F4 carrier.
+
+
+## 5. NUMERICAL/STRUCTURAL — 13 rational free coordinates leave a 14-equation transverse system
+
+At the representative (E(2)) curved root, the Jacobian of the **full**
+40-component Euler+scale residual with respect to the 27 (E(2))+LDU chart
+variables has numerical rank
+
+[
+oxed{operatorname{rank}J=14},
+qquad
+oxed{operatorname{nullity}=13}.
+]
+
+Thus exactification can be organized as a square transverse solve rather than a
+27-variable blind reconstruction.
+
+A rank-revealing QR decomposition selects 14 pivot variables. The remaining 13
+coordinates were fixed to the following low-denominator rationals:
+
+[
+-rac13, 0, -rac13, rac12, rac12, -rac12, -rac12, 
+rac43, rac32, rac12, rac23, -rac13, -1.
+]
+
+Solving only the 14 transverse equations then returns a full residual
+
+[
+|mathrm{EL}|_2=5.30	imes10^{-14}.
+]
+
+The same construction remains stable for several other denominator caps
+(4, 8, 12, 16, 24, 32), always returning residuals of order (10^{-13}) or
+better. This is strong numerical evidence that the stationary locus is a
+genuine positive-dimensional rational-algebraic variety in the (E(2)) chart,
+not a fine-tuned isolated floating-point root.
+
+### Exact next step
+
+The exact problem is now reduced to:
+
+- 13 free coordinates fixed rationally as above;
+- 14 unknown transverse coordinates;
+- 14 independent rational stationarity equations.
+
+The next certificate should derive those fourteen equations symbolically and
+perform exact elimination / algebraic-number reconstruction. This is the
+smallest current exactification system.
