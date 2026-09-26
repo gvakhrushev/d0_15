@@ -1810,3 +1810,15 @@ history-derived under variation, and then compute the resulting
 
 Until that is done, the new quadratic is an exact action building block, not a
 completed physical theory.
+
+
+---
+
+## Ready-state EXPENSIVE audit
+
+PR #188 is \`Lifecycle: REVIEW\`. The EXPENSIVE task self-retired before Ready:
+its manifest/status entry and executable task brief are absent from the branch,
+while the durable memo, exact certificate, and research-ledger verdict remain.
+This audit-only commit changes no mathematical result; it exists so repository
+guards evaluate the final Ready-state contract rather than the preceding Draft
+event.
