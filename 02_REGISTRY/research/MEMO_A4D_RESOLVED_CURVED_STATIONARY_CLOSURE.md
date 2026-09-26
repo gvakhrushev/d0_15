@@ -151,7 +151,22 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    + global Ad-Lorentz only; still **not** free-solder-all-sites /
    sitewise-gauge / chart-independent global F4 no-go.
 
-9. **2D Cayley subtangent warning.**
+9. **E(2) exactify gate — lean Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_exactify_check.py`.
+   Over Q: `span{N2,N3,J23}` is an `so(1,3)` Lie subalgebra stabilizing
+   null line `n=(1,1,0,0)` with vanishing scale; homogeneous Cayley-E(2)
+   4-link plaquettes are exactly parabolic (`tr P=4`, `(P-I)^3=0`) on a
+   rational battery (including denom-8/12 scout roundings); memo §5
+   13-rational normal-form table packed with declared 14-free / 8+6 split;
+   denom-cap `{4,8,12,16,24}` link-only roundings of the §4.1 scout have
+   `C!=0` but exact homogeneous star-Euler `||g||^2 != 0` (identity solder),
+   confirming §4.2 over Q.  Scope: no exact root; QR pivot assignment of the
+   14 transverse unknowns remains numerical provenance; joint link+solder
+   elimination of the 14 eqs is the remaining Track B step.
+   **A4 note:** sitewise Ad-Lorentz / all-site free-solder ambient widens
+   aborted as too heavy; TORUS16_PI stands as Track A ceiling.
+
+10. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -183,7 +198,11 @@ words).  **Must not** be promoted before exact rational reconstruction.
     SCOPED-AMBIENT-ORIGIN28-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AT-TWO-RATIONAL-BACKGROUNDS;
     SCOPED-FREE-SOLDER-ORIGIN16-SPAN-OBSTRUCTION-RANK-B-0-LT-AUG-1-I-BLIND-AT-TWO-BACKGROUNDS;
     SCOPED-ALLSITE-NEIGHBOR-PI-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AND-GAUGE-SURVIVAL-RANK-C-10-LT-CAUG-11;
-    SCOPED-FULL-TORUS16-PI-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AND-GAUGE-SURVIVAL-RANK-C-10-LT-CAUG-11
+    SCOPED-FULL-TORUS16-PI-SPAN-OBSTRUCTION-RANK-B-4-LT-AUG-5-AND-GAUGE-SURVIVAL-RANK-C-10-LT-CAUG-11;
+    E2-LIE-ALGEBRA-AND-NULL-STABILIZER-OVER-Q;
+    E2-HOMOGENEOUS-PLAQUETTES-EXACTLY-PARABOLIC-ON-RATIONAL-BATTERY;
+    E2-NORMAL-FORM-13-FIXED-14-FREE-INTERFACE-PACKED;
+    E2-DENOM-CAP-LINK-ROUNDING-STAR-RESIDUAL-EXACT-NONZERO
 
 Supporting:
 
@@ -196,19 +215,19 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-Two parallel exactification tracks (both allowed; do not collapse):
+**Primary (Track B):** joint link+solder exactification of the E(2) 14-transverse
+/ 13-fixed rational system (memo §§5–7).  Lean cert
+`a4d_resolved_curved_stationary_e2_exactify_check.py` now packs the E(2) Lie
+algebra, exact parabolic homogeneous plaquettes, the 13-rational normal-form
+table, and a denom-cap link-rounding probe with **exact** nonzero star-Euler
+residual (confirms §4.2 over Q).  Next: derive the 14 exact stationarity
+polynomials (8 internal + 6 transverse) with the packed normal form, eliminate
+/ algebraically reconstruct, then filter by four-channel `R=R_*(C)`.
 
-A. **Four-channel span:** full 16-site torus ambient (384 link + 4 b + 16
-   solder) with global Ad-Lorentz Pi/gauge survival now obstructs at two
-   rational H1 backgrounds (same ranks as the neighbor widen).  Next: larger
-   gauge complex (sitewise Ad-Lorentz / free solder on all sites), **or**
-   find geometry outside these backgrounds where
-   `-grad S_star in span{grad I_j}` with `C!=0`, solve exact `c`, verify
-   full Euler, then L=3 hostile control.
-
-B. **Star-only / E(2) scout:** exactify the parallel parabolic E(2) little-group
-   8-internal + 6-transverse / 13-free rational system and check it against the
-   four-channel filter / R=R_*(C) picture.
+**Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
+Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
+(sympy ambient/rank cost beyond a manageable validation budget).  Do not restart
+A4 ambient FD unless a structured sampling plan keeps validation in minutes.
 
 Do **not** restart from `(a,b)` tuning or from forcing `R=0`.
 
@@ -244,6 +263,7 @@ as the geometry ansatz.  Coefficient independence is settled by `rank M=4`,
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_f4_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_exactify_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
