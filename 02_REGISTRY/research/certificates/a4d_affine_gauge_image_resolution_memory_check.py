@@ -60,6 +60,9 @@ for i in (1, 2, 3):
     check("BOOST_GEN_LORENTZ_" + str(i),
           A.T * ETA + ETA * A == sp.zeros(4))
 
+STACKED_GEN = sp.Matrix.vstack(*BOOST_GEN)
+check("BOOST_GEN_COMMON_FIXED_ZERO", STACKED_GEN.rank() == 4)
+
 def cayley(A, t):
     return sp.simplify(
         (I4 + t * A / 2) * (I4 - t * A / 2).inv()
@@ -109,6 +112,8 @@ for tag, links in (("A", LINKS_A), ("B", LINKS_B)):
               sp.simplify(L.T * ETA * L - ETA) == sp.zeros(4))
         check("CAYLEY_" + tag + "_DET_ONE_" + str(r),
               sp.simplify(L.det()) == 1)
+        check("CAYLEY_" + tag + "_ORTHOCHRONOUS_" + str(r),
+              sp.simplify(L[0, 0]) > 0)
 
 DA = covariant_node_difference(LINKS_A)
 DB = covariant_node_difference(LINKS_B)
