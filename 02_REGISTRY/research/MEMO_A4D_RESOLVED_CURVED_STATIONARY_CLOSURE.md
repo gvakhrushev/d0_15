@@ -229,7 +229,7 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    records FIXED_13 *values* but not pivot slots). Recompute formula recorded
    in the cert: at float root `x*`, `J=DF/Dx`, then
    `scipy.linalg.qr(J, pivoting=True)` → `FREE_IDX=piv[:14]`, `FIXED_IDX=piv[14:]`.
-   **Gauge-canonical packing (this turn):** same geometric slots
+   **Gauge-canonical packing:** same geometric slots
    `[0,1,2,3,4,5,6,12..17]`, but strict-L set to `L≡0` (Iwasawa solder gauge)
    instead of provisional nonzero memo-§5 tail `(4/3,3/2,1/2,2/3,-1/3,-1)`;
    E(2) NF on roles 0–1 + role2 `n2` keeps memo §5 head
@@ -237,9 +237,22 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    **D + U** (14) — D/U stay free. Exact rational FD sample at open-chart
    probe: internal Jac rank 14, transverse rank 6, selected 8+6 subsystem
    rank 14. Scope: packing + Jac sample only; no exact root; no Groebner;
-   no D/U specialization; QR pivots still unrecovered.
+   QR pivots still unrecovered.
 
-15. **2D Cayley subtangent warning.**
+15. **E(2) gauge-pack scout-near U / D free — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_gauge_pack_scout_u_dfree_check.py`
+   (sha256 `1242e15e…826b10`; wall ~12.4s; PASS).
+   Under **L≡0** packing, fix scout-near
+   `U=(1/6,5/4,-1/10,-3/5,0,-1/5)` and **keep D free** (8 free:
+   `e2_r2_{n3,j}+e2_r3_*+D`). Deg-reduced free-internal degrees
+   `[6,8,2,2,4,8,8,9]` (raw 23 → chart factors stripped). N-direction gens
+   live in `{j_r2,j_r3,d0,d1,d2}`; lex GB contains the factored element
+   `d1·(j_r3²+4)`. On the open chart (`d1≠0`) this saturates to `j_r3²+4=0`,
+   so every common zero is chart-closed. Open-chart specialized free-internal
+   n-projection: **empty**. Does **not** redo FIXED_13 fully-fixed D/U.
+   Scope: slice under gauge-canonical packing; not global; QR unrecovered.
+
+16. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -282,6 +295,7 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-STATIONARITY-SPEC-D1-U0-FREE-INTERNAL-FORCES-CHART-CLOSED;
     E2-STATIONARITY-SPEC-SCOUT-DU-FREE-INTERNAL-FORCES-CHART-CLOSED;
     E2-GAUGE-CANONICAL-PACKING-L-ZERO-8P6-SAMPLE-JAC-RANK-14;
+    E2-GAUGE-PACK-SCOUT-U-DFREE-FORCES-CHART-CLOSED;
     E2-QR-PIVOT-RECOVERY-BLOCKED-MISSING-JAC-DUMP
 
 Supporting:
@@ -295,14 +309,14 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** gauge-canonical packing now replaces provisional
-FIXED_13 (`…e2_gauge_canonical_packing_check.py`, L≡0, 8+6 sample Jac rank 14;
-QR recovery blocked — missing Jac dump, formula recorded). Two prior D/U
-slices under provisional packing remain chart-closed warnings only.
-Next: under the **gauge-canonical** packing, keep D free with scout-near U
-(resp. selected U free with scout-near D) on degree-reduced gens; or
-recompute/persist the missing Jac dump and adopt true QR pivots. Still avoid
-blind 14-var / deg-33 Groebner. Filter survivors by four-channel `R=R_*(C)`.
+**Primary (Track B):** under gauge-canonical L≡0 packing, scout-near U with
+D free now also forces open-chart empty via `d1·(j_r3²+4)` in the n-dir GB
+(`…e2_gauge_pack_scout_u_dfree_check.py`, wall ~12.4s). Prior FIXED_13
+fully-fixed D/U slices remain separate warnings.
+Next: try the **symmetric** slice (U free + scout-near D) under the same
+L≡0 packing; or recompute/persist the missing Jac dump and adopt true QR
+pivots; or try another scout-near U rational. Still avoid blind 14-var /
+deg-33 Groebner. Filter survivors by four-channel `R=R_*(C)`.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
