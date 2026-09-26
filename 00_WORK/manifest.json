@@ -14,5 +14,15 @@
     "02_REGISTRY/frontier/no_go_atlas.md",
     "02_REGISTRY/frontier/verification_protocol.md"
   ],
-  "tasks": []
+  "tasks": [
+    {
+      "id": "CTRL-POST-MERGE-CONTROL-CLOSEOUT",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "IN_PROGRESS",
+      "affected_claims": [],
+      "exit_condition": "Merged nightly-maintenance and nonlinear-Lorentz control rows are retired without altering their durable artifacts, and the repository control plane is internally consistent and green.",
+      "brief": "00_WORK/tasks/CTRL-POST-MERGE-CONTROL-CLOSEOUT.md"
+    }
+  ]
 }
