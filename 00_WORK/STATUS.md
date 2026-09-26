@@ -7,9 +7,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 1 | 0 | 0 | 2 | 3 | 2 / 2 |
-| EXPENSIVE | 0 | 1 | 0 | 0 | 1 | 1 / 3 |
+| EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
 | WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **2** | **1** | **0** | **2** | **5** | **3 / 10** |
+| **Total** | **2** | **0** | **0** | **2** | **4** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -19,7 +19,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1 | WORKER | PLANNED | CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | D0-TRACEABILITY-STATUS-TAXONOMY-001, D0-FINAL-BRIDGE-INDEX-001 |
 | CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE | CONTROL | REVIEW | ROOT | - |
 | CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT | CONTROL | REVIEW | ROOT | - |
-| EXP-A4D-STAR-TRANSLATION-ONSHELL-CONSTRAINT-SYMMETRY | EXPENSIVE | IN_PROGRESS | CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT | - |
 
 ## Registry Health & Metrics
 
