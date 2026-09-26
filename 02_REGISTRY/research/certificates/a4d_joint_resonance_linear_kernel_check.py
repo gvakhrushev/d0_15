@@ -489,43 +489,27 @@ check("TANGENT_227_EXCLUDED_FIRST_VALUATION", not in_Q)
 # candidate, and the classification below is obtained by evaluating the
 # first-order plaquette product on every face.
 
-def direction_matrix(v):
-    """Lift a 24-vector to a single 4x4 link direction (per-site blocks)."""
+def block_matrix(v, r):
+    """The 4x4 direction carried by role r of a 24-vector."""
     A = sp.zeros(4)
-    for r in range(4):
-        for j in range(6):
-            c = v[6 * r + j]
-            if c != 0:
-                A = A + c * LORENTZ[j]
+    for j in range(6):
+        c = sp.simplify(v[6 * r + j])
+        if c != 0:
+            A = A + c * LORENTZ[j]
     return A
 
 
-def face_first_order(A, p, q, zp, zq, active_link=None):
+def face_first_order(Ar, Aq, zp, zq):
     """First-order (t) coefficient of the owned plaquette product on face (p, q).
 
-    The owned convention (from the #208/#216 symbol) is
+    Ar is the direction on link p and Aq the direction on link q, each taken
+    from the corresponding ROLE BLOCK of the 24-vector.  A role that the
+    direction does not occupy must pass a zero block, otherwise the face is
+    spuriously excited.  The owned phase convention is
 
-        L_r L_s L_r^{-1} L_s^{-1}   with   L_r = exp(A, phase 1, 1)
-                                        L_s = exp(A, phase z_p, 1/z_q)
-                                        L_r^{-1} = exp(A, phase z_q, 1/z_q, inv)
-                                        L_s^{-1} = exp(A, phase 1, 1, inv)
-
-    Only the single-direction case A_r = A_s = A is needed here, because a
-    direction in the joint kernel is read off one link block at a time; the
-    mixed A0/B0 polarization is irrelevant at first order in the single
-    direction and the B0 argument is therefore set equal to A0.
+        L_r L_s L_r^{-1} L_s^{-1},  phases  1 | z_p, 1/z_q | z_q, 1/z_q | 1
     """
     Z = sp.zeros(4)
-    # Ar is the perturbation on link r, Aq the one on link q.  A direction
-    # supported on a single link has Z on the other leg; putting A on both legs
-    # would make the two legs commute and hide the curvature.
-    if active_link is None:
-        # default: perturb link p only, which is the single-link case
-        Ar = A
-        Aq = Z
-    else:
-        Ar = A if active_link == p else Z
-        Aq = A if active_link == q else Z
     Pj = (sp.eye(4), Z, Z, Z)
     Pj = mul_jet4(Pj, exp_link4(Ar, Z, 1, 1))
     Pj = mul_jet4(Pj, exp_link4(Aq, Z, zp, 1 / zq))
@@ -535,35 +519,40 @@ def face_first_order(A, p, q, zp, zq, active_link=None):
 
 
 def curvature_profile(v, ids):
-    """Exact first-order curvature of a direction on all six faces."""
+    """Exact first-order curvature of the full 24-vector on all six faces.
+
+    Each face uses the two role blocks belonging to its own links.  A face
+    whose links are both unoccupied by the direction has zero curvature, and
+    that is now enforced rather than assumed.
+    """
     sub = {z[j]: ROOT_E[ids[j]] for j in range(4)}
     vv = sp.Matrix(v)
-    lk = None
-    for r in range(4):
-        if any(sp.simplify(vv[6 * r + j]) != 0 for j in range(6)):
-            lk = r
-            break
-    A = direction_matrix(vv)
+    blocks = {r: block_matrix(vv, r) for r in range(4)}
+    Z = sp.zeros(4)
+    occupied = [r for r in range(4) if blocks[r] != Z]
     faces = {}
     for (p, q) in PAIRS:
-        dP = face_first_order(A, p, q, sub[z[p]], sub[z[q]])
-        faces["%d%d" % (p, q)] = "NONZERO" if dP != sp.zeros(4) else "ZERO"
-    return faces
+        dP = face_first_order(blocks[p], blocks[q], sub[z[p]], sub[z[q]])
+        faces["%d%d" % (p, q)] = "NONZERO" if dP != Z else "ZERO"
+    return faces, occupied
 
 
-# CONTROL counterexample: a single-link direction has NONZERO first-order
-# curvature, so support size carries no information about flatness.
+# The control the old heuristic could not express: a direction supported on
+# role r only must leave every face not containing r exactly flat.
 Z4 = sp.zeros(4)
 Yc = LORENTZ[0]
-_dP = face_first_order(Yc, 0, 1, ROOT_E[1], ROOT_E[1], active_link=0)
-check("SINGLE_LINK_DIRECTION_HAS_NONZERO_CURVATURE", _dP != Z4,
-      "a one-link direction cannot be assumed flat")
-check("SINGLE_LINK_DELTA_P_IS_TIMELIKE_BOOST_BLOCK", _dP != Z4 and
+_dP = face_first_order(Yc, Z4, ROOT_E[1], ROOT_E[1])
+check("SINGLE_ROLE_DIRECTION_HAS_NONZERO_CURVATURE_ON_ITS_OWN_FACES",
+      _dP != Z4, "a one-role direction is curved on the faces it occupies")
+check("SINGLE_ROLE_DELTA_P_IS_BOOST_BLOCK", _dP != Z4 and
       all(sp.simplify(_dP[i, j]) == 0 for i in range(4) for j in range(4)
           if (i, j) not in ((0, 1), (1, 0))))
-check("SINGLE_LINK_DELTA_P_MATCHES_QUARTER_WAVE_MULTIPLE",
-      _dP == (1 - sp.I) * Yc or _dP == (1 + sp.I) * Yc,
-      "expected (1 -+ i) Y on the boost block")
+check("SINGLE_ROLE_DELTA_P_MATCHES_QUARTER_WAVE_MULTIPLE",
+      _dP == (1 - sp.I) * Yc or _dP == (1 + sp.I) * Yc)
+# and the complementary control, which the old default branch violated
+_dP0 = face_first_order(Z4, Z4, ROOT_E[1], ROOT_E[1])
+check("UNOCCUPIED_FACE_HAS_EXACTLY_ZERO_CURVATURE", _dP0 == Z4,
+      "a face with no occupied role must be flat")
 
 CURV = {}
 for n, rec in BASES.items():
@@ -575,23 +564,39 @@ for n, rec in BASES.items():
     rows = []
     for k, v in enumerate(N0):
         v = sp.simplify(v)
-        faces = curvature_profile(v, ids)
+        faces, occupied = curvature_profile(v, ids)
         nzero = sum(1 for f in faces.values() if f == "ZERO")
         rows.append({"basis": k, "faces": faces,
+                     "occupied_roles": occupied,
                      "n_zero_faces": nzero,
                      "curvature": "ZERO" if nzero == len(PAIRS) else "NONZERO"})
     CURV[n] = rows
     for r in rows:
         check("ORBIT_%d_N0_V%d_CURVATURE_COMPUTED" % (n, r["basis"]), True)
 
-# The specific fact that the old heuristic got wrong.
-_o4 = CURV.get(4, [])
-if _o4:
-    _flat = [r["basis"] for r in _o4 if r["curvature"] == "ZERO"]
-    _nonflat = [r["basis"] for r in _o4 if r["curvature"] == "NONZERO"]
-    print()
-    print("orbit 4 curvature (computed): flat candidates = %s, non-flat = %s"
-          % (_flat, _nonflat))
+# Structural consistency: the zero faces of a direction occupying a proper
+# subset of the roles are exactly the faces that avoid those roles.  A ZERO
+# face among fully occupied roles would instead be a genuine cancellation and
+# is reported separately.
+for _n, _rows in CURV.items():
+    for _r in _rows:
+        _occ = set(_r["occupied_roles"])
+        _forced = {"%d%d" % (p, q) for (p, q) in PAIRS
+                   if p not in _occ and q not in _occ}
+        _got = {f for f, v in _r["faces"].items() if v == "ZERO"}
+        check("ORBIT_%d_N0_V%d_ZERO_FACES_MATCH_OCCUPIED_ROLES"
+              % (_n, _r["basis"]), _forced <= _got,
+              f"forced {sorted(_forced)} got {sorted(_got)}")
+        if len(_occ) == 4:
+            check("ORBIT_%d_N0_V%d_ALL_ROLES_OCCUPIED" % (_n, _r["basis"]), True)
+
+print()
+for _n in sorted(CURV, key=int):
+    _flat = [r["basis"] for r in CURV[_n] if r["curvature"] == "ZERO"]
+    _desc = ["v%d roles=%s zero=%d/6" % (r["basis"], r["occupied_roles"],
+                                           r["n_zero_faces"]) for r in CURV[_n]]
+    print("orbit %s: fully flat = %s | %s"
+          % (_n, _flat if _flat else "none", "; ".join(_desc)))
 
 # ---------------------------------------------------------------------------
 # 8. Machine-readable output

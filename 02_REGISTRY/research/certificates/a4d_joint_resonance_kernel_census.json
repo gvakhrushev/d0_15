@@ -545,6 +545,12 @@
      "13": "NONZERO",
      "23": "NONZERO"
     },
+    "occupied_roles": [
+     0,
+     1,
+     2,
+     3
+    ],
     "n_zero_faces": 1,
     "curvature": "NONZERO"
    }
@@ -556,50 +562,62 @@
      "01": "NONZERO",
      "02": "NONZERO",
      "03": "NONZERO",
-     "12": "NONZERO",
-     "13": "NONZERO",
-     "23": "NONZERO"
+     "12": "ZERO",
+     "13": "ZERO",
+     "23": "ZERO"
     },
-    "n_zero_faces": 0,
+    "occupied_roles": [
+     0
+    ],
+    "n_zero_faces": 3,
     "curvature": "NONZERO"
    },
    {
     "basis": 1,
     "faces": {
      "01": "NONZERO",
-     "02": "NONZERO",
-     "03": "NONZERO",
+     "02": "ZERO",
+     "03": "ZERO",
      "12": "NONZERO",
      "13": "NONZERO",
-     "23": "NONZERO"
+     "23": "ZERO"
     },
-    "n_zero_faces": 0,
+    "occupied_roles": [
+     1
+    ],
+    "n_zero_faces": 3,
     "curvature": "NONZERO"
    },
    {
     "basis": 2,
     "faces": {
-     "01": "NONZERO",
+     "01": "ZERO",
      "02": "NONZERO",
-     "03": "NONZERO",
+     "03": "ZERO",
      "12": "NONZERO",
-     "13": "NONZERO",
+     "13": "ZERO",
      "23": "NONZERO"
     },
-    "n_zero_faces": 0,
+    "occupied_roles": [
+     2
+    ],
+    "n_zero_faces": 3,
     "curvature": "NONZERO"
    },
    {
     "basis": 3,
     "faces": {
-     "01": "NONZERO",
-     "02": "NONZERO",
+     "01": "ZERO",
+     "02": "ZERO",
      "03": "NONZERO",
-     "12": "NONZERO",
+     "12": "ZERO",
      "13": "NONZERO",
      "23": "NONZERO"
     },
-    "n_zero_faces": 0,
+    "occupied_roles": [
+     3
+    ],
+    "n_zero_faces": 3,
     "curvature": "NONZERO"
    }
   ],
@@ -607,14 +625,20 @@
    {
     "basis": 0,
     "faces": {
-     "01": "NONZERO",
+     "01": "ZERO",
      "02": "NONZERO",
      "03": "NONZERO",
      "12": "NONZERO",
      "13": "NONZERO",
      "23": "NONZERO"
     },
-    "n_zero_faces": 0,
+    "occupied_roles": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n_zero_faces": 1,
     "curvature": "NONZERO"
    }
   ],
@@ -624,12 +648,18 @@
     "faces": {
      "01": "NONZERO",
      "02": "NONZERO",
-     "03": "NONZERO",
+     "03": "ZERO",
      "12": "NONZERO",
      "13": "NONZERO",
      "23": "NONZERO"
     },
-    "n_zero_faces": 0,
+    "occupied_roles": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n_zero_faces": 1,
     "curvature": "NONZERO"
    }
   ]

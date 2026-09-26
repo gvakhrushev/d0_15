@@ -136,64 +136,60 @@ Orbit 7, `ids = (2,1,1,2)`, `dim 1`:
 
 Orbits 0 and 4 are rational; orbits 5 and 7 genuinely need `i`.
 
-## 5. First linearized curvature — computed, not inferred
+## 5. First linearized curvature — computed per role block
 
-An earlier revision classified a direction as curvature-flat from its link
-support alone: "supported on one link" was treated as "flat". **That heuristic
-is false and is removed.** Under the owned plaquette convention a single-link
-direction `Y` on link `r` gives, on the diagonal quarter-wave,
+Two earlier attempts at this section were wrong.
+
+**Attempt 1** classified a direction as flat from its link support alone. That
+heuristic is false: a single-role direction `Y` gives, on the diagonal
+quarter-wave,
 
 ```text
-delta P_{0s} = (1 - i) Y  != 0
+delta P = (1 - i) Y  != 0
 ```
 
-(the review quotes the same statement as `(1 + i) Y` under the opposite sign
-convention for the link phases; only the nonvanishing is convention-independent).
-So one-link support carries no information about flatness. The certificate now
-evaluates the first-order plaquette product on all six faces.
+(the review quotes `(1 + i) Y` under the opposite link-phase convention; only
+the nonvanishing is convention-independent). One-role support carries no
+information about flatness.
 
-Computed result for every basis vector of every nonzero `N_0`:
+**Attempt 2** removed the heuristic but introduced a different defect:
+`direction_matrix(v)` summed all four role blocks into a single 4x4 matrix and
+the default branch of `face_first_order` always placed that matrix on the
+**first** role of each face. A role-0-only direction was therefore spuriously
+excited on faces `(1,2)`, `(1,3)`, `(2,3)`, and the reported `0/6 zero faces`
+for the diagonal basis was invalid.
 
-| orbit | basis | zero faces | first-order curvature |
-|---|---|---|---|
-| 0 | v0 | 1 / 6 | **NONZERO** |
-| 4 | v0 | 0 / 6 | **NONZERO** |
-| 4 | v1 | 0 / 6 | **NONZERO** |
-| 4 | v2 | 0 / 6 | **NONZERO** |
-| 4 | v3 | 0 / 6 | **NONZERO** |
-| 5 | v0 | 0 / 6 | **NONZERO** |
-| 7 | v0 | 0 / 6 | **NONZERO** |
+The current code keeps the four role blocks separate and evaluates face
+`(p, q)` with the blocks of roles `p` and `q` only, passing zero for an
+unoccupied role. A control now asserts that a face with no occupied role has
+*exactly* zero curvature.
 
-**No direction in any `N_0` is curvature-flat.** In particular the four
-diagonal-quarter-wave vectors, which the earlier revision called flat
-candidates, are all genuinely curved at first order. The only vanishing face
-anywhere is face `(0,1)` of the orbit-0 vector.
+Computed result:
 
-Consequence: there is **no** flat/gauge candidate inside the joint kernel
-under this test. Whether any of these directions is gauge remains open and
-requires the actual Lorentz/metric quotient; it is not decided here.
+| orbit | basis | occupied roles | zero faces | of which forced by role structure |
+|---|---|---|---|---|
+| 0 | v0 | all four | 1 / 6 | 0 (face `01` is a genuine cancellation) |
+| 4 | v0 | {0} | 3 / 6 | 3 |
+| 4 | v1 | {1} | 3 / 6 | 3 |
+| 4 | v2 | {2} | 3 / 6 | 3 |
+| 4 | v3 | {3} | 3 / 6 | 3 |
+| 5 | v0 | all four | 1 / 6 | 0 (face `01` is a genuine cancellation) |
+| 7 | v0 | all four | 1 / 6 | 0 (face `03` is a genuine cancellation) |
 
-## 6. The joint KKT Hessian
+Two distinct kinds of zero face appear, and the certificate separates them:
 
-`H_J = [[0, H_QA], [H_AQ, A]]` on `(q, x)`:
+* **forced** — the face avoids every occupied role, so both plaquette legs are
+  unperturbed and the zero is structural. This is the case for the four
+  single-role diagonal vectors.
+* **algebraic cancellation** — all four roles are occupied, so both legs are
+  perturbed, and the first-order coefficient still cancels. This is the case
+  for the single vanishing face of orbits 0, 5 and 7.
 
-| # | ids | rank H_AA | rank A (sym) | rank H_J | nullity | H_AA pure skew |
-|---|---|---|---|---|---|---|
-| 0 | (0,0,1,1) | 22 | 8 | 22 | 12 | no |
-| 1 | (0,0,1,3) | 22 | 16 | 24 | 10 | no |
-| 2 | (0,1,1,2) | 20 | 12 | 28 | 6 | no |
-| 3 | (1,0,1,2) | 20 | 12 | 28 | 6 | no |
-| 4 | (1,1,1,1) | 16 | **0** | 18 | 16 | **yes** |
-| 5 | (1,1,3,3) | 20 | 16 | 32 | 2 | no |
-| 6 | (2,0,1,1) | 20 | 12 | 28 | 6 | no |
-| 7 | (2,1,1,2) | 22 | 20 | 32 | 2 | no |
-| 8 | (2,1,2,3) | 22 | 24 | 28 | 6 | no |
-
-**Structural finding.** On the diagonal quarter-wave the symmetrized
-connection action `A = H_AA + H_AA^T` is **identically zero**: `H_AA` is a pure
-exact 2-form there. Consequently there is **no non-degenerate symmetric
-connection metric** on that orbit, and no Schur complement of `A` is available
-there. This is a certified fact, not a numerical artefact.
+**No direction in any `N_0` is fully curvature-flat.** The four diagonal
+vectors are curved on the three faces that meet their own role and flat on the
+other three by construction; the remaining four directions are curved on five
+of six faces. Whether any direction is gauge remains undecided here and
+requires the actual Lorentz/metric quotient.
 
 ### Convention caveat on `A = H_AA + H_AA^T`
 
