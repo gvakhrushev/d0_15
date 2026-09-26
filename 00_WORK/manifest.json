@@ -37,17 +37,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "WRK-A4D-RANK-COMPOUND-AFFINE-QUOTIENT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Certify the fixed-rank exterior-compound affine cokernel coordinate Psi_r, its Lorentz covariance and quotient completeness, and the rank-two parabolic null-flag corollary, while proving the boundary that prevents treating it as a global action invariant across rank changes.",
-      "brief": "00_WORK/tasks/WRK-A4D-RANK-COMPOUND-AFFINE-QUOTIENT.md"
-    },
-    {
       "id": "EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
