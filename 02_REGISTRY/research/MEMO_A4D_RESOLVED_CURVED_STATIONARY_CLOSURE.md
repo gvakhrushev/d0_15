@@ -252,7 +252,21 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    n-projection: **empty**. Does **not** redo FIXED_13 fully-fixed D/U.
    Scope: slice under gauge-canonical packing; not global; QR unrecovered.
 
-16. **2D Cayley subtangent warning.**
+16. **E(2) gauge-pack scout-near D / U free — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_gauge_pack_scout_d_ufree_check.py`
+   (sha256 `c43327e1…46eac2`; wall ~10.4s; PASS).
+   Symmetric slice under **L≡0** packing: fix scout-near
+   `D=(7/5,5/4,4/5)` and **keep U free** (11 free:
+   `e2_r2_{n3,j}+e2_r3_*+U`). Deg-reduced free-internal degrees
+   `[3,5,2,2,4,5,1,0,1,0,3]`. N-direction gens live in
+   `{j_r2,j_r3,u01,u23}`; lex GB (U-elim onto j) contains bare
+   `j_r3²+4`. Open-chart specialized free-internal n-projection: **empty**
+   (chart-closed). Together with item 15, both scout-near one-sided D/U
+   slices chart-close under L≡0 + current E(2) NF. Does **not** redo
+   FIXED_13 fully-fixed D/U nor the scout-U/D-free cert.
+   Scope: slice under gauge-canonical packing; not global; QR unrecovered.
+
+17. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -296,6 +310,7 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-STATIONARITY-SPEC-SCOUT-DU-FREE-INTERNAL-FORCES-CHART-CLOSED;
     E2-GAUGE-CANONICAL-PACKING-L-ZERO-8P6-SAMPLE-JAC-RANK-14;
     E2-GAUGE-PACK-SCOUT-U-DFREE-FORCES-CHART-CLOSED;
+    E2-GAUGE-PACK-SCOUT-D-UFREE-FORCES-CHART-CLOSED;
     E2-QR-PIVOT-RECOVERY-BLOCKED-MISSING-JAC-DUMP
 
 Supporting:
@@ -309,14 +324,15 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** under gauge-canonical L≡0 packing, scout-near U with
-D free now also forces open-chart empty via `d1·(j_r3²+4)` in the n-dir GB
-(`…e2_gauge_pack_scout_u_dfree_check.py`, wall ~12.4s). Prior FIXED_13
-fully-fixed D/U slices remain separate warnings.
-Next: try the **symmetric** slice (U free + scout-near D) under the same
-L≡0 packing; or recompute/persist the missing Jac dump and adopt true QR
-pivots; or try another scout-near U rational. Still avoid blind 14-var /
-deg-33 Groebner. Filter survivors by four-channel `R=R_*(C)`.
+**Primary (Track B):** under gauge-canonical L≡0 packing, **both** scout-near
+one-sided slices now force open-chart empty:
+- scout-U / D free → `d1·(j_r3²+4)` (`…e2_gauge_pack_scout_u_dfree_check.py`, ~12.4s);
+- scout-D / U free → bare `j_r3²+4` (`…e2_gauge_pack_scout_d_ufree_check.py`, ~10.4s).
+Prior FIXED_13 fully-fixed D/U slices remain separate warnings.
+Next: **recompute/persist the missing Jac dump and adopt true QR pivots**,
+OR free more of the current E(2) NF slots (slots `[0..6]`). Still avoid
+blind 14-var / deg-33 Groebner. Filter survivors by four-channel `R=R_*(C)`.
+Do **not** grind further scout-near one-sided D/U slices under the same NF.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
