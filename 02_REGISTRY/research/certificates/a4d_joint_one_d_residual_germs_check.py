@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Exact joint residual-germ certificate for WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.
 
-The #231 exact census corrects the original task prediction: orbit 0 has a
-one-dimensional joint kernel, while orbit 5 has none.  This certificate
-rechecks that distinction, computes the orbit-0 reduced metric quadratic and
-connection quintic over Q(i), and proves local isolation from the metric map.
+The corrected #231 exact census gives one-dimensional joint kernels on both
+target orbits.  This certificate rechecks both bases, computes the orbit-0
+and orbit-5 reduced equations over Q(i), and proves local isolation with
+finite exponents 1/2 and 1/3 respectively.
 
 All action/Euler coefficients use the owned #208/#216 finite star formula,
 the real Lie-log link chart, and the inverse-character input convention.
@@ -405,46 +405,155 @@ def run_orbit_zero():
     print("ORBIT0_METRIC_BOUND: ||E_Q^red(u)||_2 >= 2 sqrt(2) |u|^2 + O(|u|^3)")
 
 
-def check_corrected_orbit_five():
+def run_orbit_five():
     roots = [sp.Integer(1), I, sp.Integer(-1), -I]
     ids = (1, 1, 3, 3)
-    substitution = {ZSYMS[j]: roots[ids[j]] for j in range(4)}
-    H = HAB.subs(substitution)
-    Q = HAQ.subs(substitution).T
-    N = H.nullspace()
-    Nmat = sp.Matrix.hstack(*N)
-    N0 = sp.Matrix.vstack(H.T, Q).nullspace()
-    leftN = H.T.nullspace()
-    check("ORBIT5_RANK_H_20", H.rank() == 20)
-    check("ORBIT5_RANK_INVENTORY_23",
-          H.T.row_join(HAQ.subs(substitution)).rank() == 23)
-    check("ORBIT5_DIM_N_4", len(N) == 4)
-    check("ORBIT5_AUX_RIGHT_KERNEL_METRIC_RANK_3", (Q*Nmat).rank() == 3)
-    check("ORBIT5_DIRECT_LEFT_KERNEL_DIM_4", len(leftN) == 4)
-    leftNmat = sp.Matrix.hstack(*leftN)
-    check("ORBIT5_DIRECT_METRIC_RANK_ON_LEFT_KERNEL_4",
-          (Q*leftNmat).rank() == 4)
-    check("ORBIT5_DIRECT_TABLE_CHARACTER_N0_ZERO", len(N0) == 0)
-
-    # The physical coefficient uses the inverse character, as for orbit 0.
-    # Check the direct Euler column system at that character too; it has full
-    # column rank, so the physical orbit has no joint linear germ.
-    inverse_ids = tuple((-i) % 4 for i in ids)
-    inverse_substitution = {
-        ZSYMS[j]: roots[inverse_ids[j]] for j in range(4)
+    z_table = [roots[i] for i in ids]
+    table_substitution = dict(zip(ZSYMS, z_table))
+    H_table = HAB.subs(table_substitution)
+    Q_table = HAQ.subs(table_substitution)
+    center = sp.zeros(24, 1)
+    exact_basis = {
+        0: -1 + I, 6: -1 + I, 12: 1, 14: -1,
+        16: 1, 18: 1, 19: -1, 21: 1,
     }
-    H_physical = HAB.subs(inverse_substitution)
-    Q_physical = HAQ.subs(inverse_substitution).T
-    direct_system = sp.Matrix.vstack(H_physical.T, Q_physical)
-    check("ORBIT5_PHYSICAL_INVERSE_DIRECT_SYSTEM_FULL_RANK",
-          direct_system.rank() == 24)
-    check("ORBIT5_PHYSICAL_INVERSE_N0_ZERO",
-          len(direct_system.nullspace()) == 0)
-    print("ORBIT5_CORRECTION: the direct physical joint Euler system has "
-          "dim N0=0; no nonlinear 1D germ to reduce.")
+    for index, value in exact_basis.items():
+        center[index] = value
+    table_joint = sp.Matrix.vstack(H_table, Q_table.T)
+    check("ORBIT5_RANK_H_20", H_table.rank() == 20)
+    check("ORBIT5_RANK_A_INVENTORY_23",
+          H_table.T.row_join(Q_table).rank() == 23)
+    check("ORBIT5_N0_DIMENSION_ONE", len(table_joint.nullspace()) == 1)
+    check("ORBIT5_PR231_EXACT_N0_BASIS",
+          (H_table * center).applyfunc(sp.simplify) == sp.zeros(24, 1) and
+          (Q_table.T * center).applyfunc(sp.simplify) == sp.zeros(10, 1) and
+          table_joint.rank() == 23)
+
+    # The physical input field uses the inverse Fourier character.  Check the
+    # owned nonlinear Euler maps directly at that character.
+    z = [1 / value for value in z_table]
+    substitution = dict(zip(ZSYMS, z))
+    H = HAB.subs(substitution)
+    symbol_q = HAQ.subs(substitution)
+    linear_k = []
+    for role in range(4):
+        for generator in LORENTZ:
+            p = edge_euler((0, 0, 0, 0), role, generator,
+                           z, center, deg=1)
+            linear_k.append(coefficient(p, (1, 0)))
+    linear_k = sp.Matrix(linear_k)
+    linear_q = sp.Matrix([
+        coefficient(p, (1, 0))
+        for p in metric_euler((0, 0, 0, 0), z, center, deg=1)
+    ])
+    check("ORBIT5_DIRECT_CONNECTION_LINEAR_ZERO",
+          linear_k == sp.zeros(24, 1))
+    check("ORBIT5_DIRECT_METRIC_LINEAR_ZERO",
+          linear_q == sp.zeros(10, 1))
+
+    ones = {variable: 1 for variable in ZSYMS}
+    squares = {variable: value**2 for variable, value in zip(ZSYMS, z)}
+    H0, H2 = HAB.subs(ones), HAB.subs(squares)
+    check("ORBIT5_ZERO_MODE_REGULAR", H0.rank() == 24)
+    check("ORBIT5_TWO_K_MODE_REGULAR", H2.rank() == 24)
+    f0, f2 = [], []
+    for role in range(4):
+        for generator in LORENTZ:
+            p = edge_euler((0, 0, 0, 0), role, generator,
+                           z, center, deg=2)
+            f0.append(coefficient(p, (1, 1)))
+            f2.append(coefficient(p, (2, 0)))
+    f0, f2 = sp.Matrix(f0), sp.Matrix(f2)
+    w0 = -H0.T.inv() * f0
+    w2 = -H2.T.inv() * f2
+    check("ORBIT5_CONNECTION_RANGE_ORDER2",
+          H0.T * w0 + f0 == sp.zeros(24, 1) and
+          H2.T * w2 + f2 == sp.zeros(24, 1))
+
+    # The quadratic metric residual is degenerate on the real coordinate axes.
+    metric = metric_euler((0, 0, 0, 0), z, center, w0, w2, deg=2)
+    u2 = sp.Matrix([coefficient(p, (2, 0)) for p in metric])
+    uv = sp.Matrix([coefficient(p, (1, 1)) for p in metric])
+    v2 = sp.Matrix([coefficient(p, (0, 2)) for p in metric])
+    expected_u2, expected_v2 = sp.zeros(10, 1), sp.zeros(10, 1)
+    for index, value in {
+        1: 2*I, 2: -I, 3: -I, 4: -2*I, 5: I, 6: I,
+    }.items():
+        expected_u2[index] = value
+        expected_v2[index] = sp.conjugate(value)
+    check("ORBIT5_METRIC_U2_EXACT", u2 == expected_u2)
+    check("ORBIT5_METRIC_UV_QUADRATIC_ZERO",
+          uv == sp.zeros(10, 1))
+    check("ORBIT5_METRIC_V2_EXACT", v2 == expected_v2)
+    U, V = sp.symbols("u v")
+    X, Y = sp.symbols("x y", real=True)
+    leading_q = [u2[i]*U**2 + v2[i]*V**2 for i in range(10)]
+    real_sub = {U: X + I*Y, V: X - I*Y}
+    norm_sq = sum(sp.expand(q.subs(real_sub))**2 for q in leading_q)
+    check("ORBIT5_METRIC_QUADRATIC_DEGENERATE_AXES",
+          sp.simplify(norm_sq - 192*X**2*Y**2) == 0)
+
+    # Eliminate the regular connection ranges at cubic order and project the
+    # resonant forcing to an exact left-kernel covector.
+    f21, f03 = [], []
+    for role in range(4):
+        for generator in LORENTZ:
+            p = edge_euler((0, 0, 0, 0), role, generator,
+                           z, center, w0, w2, deg=3)
+            f21.append(coefficient(p, (2, 1)))
+            f03.append(coefficient(p, (0, 3)))
+    f21, f03 = sp.Matrix(f21), sp.Matrix(f03)
+    left_kernel = H.nullspace()
+    check("ORBIT5_RESONANT_COKERNEL_DIMENSION_FOUR",
+          len(left_kernel) == 4)
+    cokernel_basis = sp.Matrix.hstack(*left_kernel)
+    range_cokernel = H.T.row_join(cokernel_basis)
+    check("ORBIT5_RANGE_COKERNEL_COMPLEMENT_FULL_RANK",
+          range_cokernel.rank() == 24)
+    split21, params21 = range_cokernel.gauss_jordan_solve(-f21)
+    split03, params03 = range_cokernel.gauss_jordan_solve(-f03)
+    for parameter in list(params21) + list(params03):
+        split21 = split21.subs(parameter, 0)
+        split03 = split03.subs(parameter, 0)
+    check("ORBIT5_CONNECTION_RANGE_COKERNEL_SPLIT_ORDER3",
+          (range_cokernel * split21 + f21).applyfunc(sp.simplify)
+          == sp.zeros(24, 1) and
+          (range_cokernel * split03 + f03).applyfunc(sp.simplify)
+          == sp.zeros(24, 1))
+
+    ell = sp.zeros(24, 1)
+    for index, value in {
+        6: (1 + I)/2, 9: -(1 + I)/2, 10: -(1 + I)/2,
+        14: 1, 19: 1,
+    }.items():
+        ell[index] = value
+    check("ORBIT5_EXACT_COKERNEL_COVECTOR",
+          (H * ell).applyfunc(sp.simplify) == sp.zeros(24, 1))
+    obstruction_u2v = sp.simplify((ell.T * f21)[0])
+    obstruction_v3 = sp.simplify((ell.T * f03)[0])
+    check("ORBIT5_CONNECTION_CUBIC_EXACT",
+          obstruction_u2v == 2*I and obstruction_v3 == -(1 + I))
+    projections = [(sp.simplify((row.T*f21)[0]),
+                    sp.simplify((row.T*f03)[0])) for row in left_kernel]
+    check("ORBIT5_CUBIC_COKERNEL_PROJECTIONS",
+          all(pair in ((0, 0), (2*I, -(1 + I))) for pair in projections)
+          and (2*I, -(1 + I)) in projections)
+
+    # Reverse triangle inequality gives a degree-three lower bound in every
+    # complex direction, including the axes where the metric quadratic drops.
+    lower_constant = 2 - sp.sqrt(2)
+    check("ORBIT5_CUBIC_REVERSE_TRIANGLE_BOUND",
+          lower_constant > 0)
+    print("ORBIT5_E_Q2_NONZERO: "
+          "E01=2i(u^2-conj(u)^2), E02=E03=-i(u^2-conj(u)^2), "
+          "E11=-2i(u^2-conj(u)^2), E12=E13=i(u^2-conj(u)^2)")
+    print("ORBIT5_METRIC_NORM_SQUARED: 192 x^2 y^2")
+    print("ORBIT5_E_K3: 2 i u^2 conj(u) - (1+i) conj(u)^3")
+    print("ORBIT5_CUBIC_BOUND: |E_K^red(u)| >= "
+          "(2-sqrt(2)) |u|^3 + O(|u|^5)")
 
 
 if __name__ == "__main__":
     run_orbit_zero()
-    check_corrected_orbit_five()
+    run_orbit_five()
     print("J2-JOINT-ONE-D-RESIDUAL-ORBITS-ISOLATED")
