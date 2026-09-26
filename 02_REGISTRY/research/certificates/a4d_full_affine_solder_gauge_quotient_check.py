@@ -18,8 +18,8 @@ It verifies four layers:
 3. The repaired action reproduces the owned flat translation chart and the
    owned pure-linear raw solder action.
 
-4. The accepted finite star density is NOT invariant under those pure
-   translations on a curved background.  An exact L=2 full-torus witness gives
+4. The accepted finite star density is NOT invariant under the constructed
+   observer-completed pure translations on a curved background.  An exact L=2 full-torus witness gives
    S_before = -2/3 and S_after = -4/3, while a global Lorentz control preserves
    S exactly.
 
@@ -323,5 +323,5 @@ check("FLAT_TRANSLATED_ACTION_ZERO",
 
 print("RESULT_FIXED_INTERTWINER: unique affine-linear Lorentz-compatible lowering is R*eta; M=I chart is incompatible.")
 print("RESULT_OBSERVER_COMPLETION: owned h_n gives an exact semidirect solder action and reproduces the flat translation chart.")
-print("RESULT_DENSITY: accepted star density is Lorentz invariant but not an off-shell pure-translation gauge invariant on curved backgrounds.")
-print("RESULT_QUOTIENT: full affine translation quotient is not defined for the accepted density without changing/enlarging the action.")
+print("RESULT_DENSITY: accepted star density is Lorentz invariant but fails the constructed observer-completed off-shell translation law on a curved background.")
+print("RESULT_QUOTIENT: this observer-completed law cannot define the full affine quotient; alternative nonlinear solder gauge laws remain unclassified.")
