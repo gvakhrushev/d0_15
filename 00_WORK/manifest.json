@@ -25,22 +25,13 @@
       "brief": "00_WORK/tasks/CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1.md"
     },
     {
-      "id": "CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE",
+      "id": "CTRL-A4D-STAR-DENSITY-LORENTZ-NONLINEAR-QUOTIENT",
       "class": "CONTROL",
       "parent": "ROOT",
       "state": "REVIEW",
       "affected_claims": [],
-      "exit_condition": "The selected canonical star-density is pressure-tested through exact/linearized connection and coframe variation, torsion/constraint elimination, and gauge/physical quotient; d_E and d_P are classified or one exact downstream blocker is named.",
-      "brief": "00_WORK/tasks/CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE.md"
-    },
-    {
-      "id": "CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "REVIEW",
-      "affected_claims": [],
-      "exit_condition": "The current raw solder carrier is either equipped with an exact finite affine node-gauge action compatible with the owned flat translation chart and the accepted star density, or a scoped no-go identifies the minimal carrier enlargement. The nonlinear physical quotient d_P is classified if the action exists; otherwise the first irreducible typed blocker is named.",
-      "brief": "00_WORK/tasks/CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT.md"
+      "exit_condition": "The accepted star density is pressure-tested under the full finite local proper-Lorentz gauge group: exact action invariance, EL equivariance/Noether vertical degeneracy, orbit/stabilizer scope, and nontriviality of the quotient operator family are classified. A scoped nonlinear Lorentz d_P is stated or the first exact obstruction is named.",
+      "brief": "00_WORK/tasks/CTRL-A4D-STAR-DENSITY-LORENTZ-NONLINEAR-QUOTIENT.md"
     }
   ]
 }
