@@ -49,18 +49,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "WRK-A4D-FORMALIZE-NONLINEAR-LORENTZ-QUOTIENT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Formalize the merged finite nonlinear Lorentz action, star-cell invariance, quotient invariants and stabilizer structure.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-NONLINEAR-LORENTZ-QUOTIENT.md"
-    },
-    {
       "id": "WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
