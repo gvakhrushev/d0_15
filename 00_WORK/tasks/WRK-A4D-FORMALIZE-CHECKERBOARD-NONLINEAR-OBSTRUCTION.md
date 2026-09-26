@@ -14,6 +14,10 @@ Execution: `GitHub-first`
 
 SATISFIED: the exact packet from historical #187 was salvaged/reviewed into merged #199/#200.
 
+## Why delegated
+
+The nonlinear obstruction is now a stable exact finite theorem from merged #199/#200. Its real-quadratic core is suitable for Lean, while formalization is useful precisely because the result must remain scoped to the three L=2 checkerboard sectors and must not drift into a wave interpretation.
+
 ## Owned theorem packet
 
 For each of the three nonzero Lorentz-null L=2 checkerboard sectors, after quotienting the ten accepted flat gauge directions, the two-dimensional physical null plane has exact obstruction form
