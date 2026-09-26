@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 2 | 0 | 0 | 0 | 2 | 0 / 5 |
-| **Total** | **5** | **0** | **0** | **1** | **6** | **1 / 10** |
+| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
+| **Total** | **4** | **0** | **0** | **1** | **5** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -20,7 +20,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 
 ## Registry Health & Metrics
 
