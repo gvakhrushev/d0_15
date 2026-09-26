@@ -332,6 +332,7 @@ import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DSourcedMismatchFactorPassport
 import D0.Geometry.A4DStaggeredFirstJetPathExpansion
 import D0.Geometry.A4DStaggeredHodgeSelector
+import D0.Geometry.A4DStarEinsteinSeed
 import D0.Geometry.A4DStarFiniteLorentzQuotient
 import D0.Geometry.A4DStarTranslationCartanHodgeNoGo
 import D0.Geometry.A4DSymRoleCentralDifference
