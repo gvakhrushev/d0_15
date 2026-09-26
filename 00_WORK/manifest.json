@@ -53,6 +53,15 @@
       "affected_claims": [],
       "exit_condition": "The current raw solder carrier is either equipped with an exact finite affine node-gauge action compatible with the owned flat translation chart and the accepted star density, or a scoped no-go identifies the minimal carrier enlargement. The nonlinear physical quotient d_P is classified if the action exists; otherwise the first irreducible typed blocker is named.",
       "brief": "00_WORK/tasks/CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT.md"
+    },
+    {
+      "id": "EXP-A4D-STAR-TRANSLATION-INVARIANT-ACTION-COMPLETION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT",
+      "state": "IN_PROGRESS",
+      "affected_claims": [],
+      "exit_condition": "Under the fixed observer-completed affine node action from the accepted full-affine boundary packet, classify the minimal local Lorentz/Role-natural scalar action completion built from already owned affine/solder relative data. Either construct a translation-invariant completion with its coefficient/moduli dimension and flat-regression effects, or prove a scoped no-go and name the first new primitive required.",
+      "brief": "00_WORK/tasks/EXP-A4D-STAR-TRANSLATION-INVARIANT-ACTION-COMPLETION.md"
     }
   ]
 }
