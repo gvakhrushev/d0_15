@@ -6,7 +6,7 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 Research lane: `EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE`
 
 Repository: `gvakhrushev/d0_15`  
-Base: `main` after the relevant #216 state is integrated  
+Base: `main`  
 Branch: `wrk/a4d-j2-slow-background-diagonal-germ`  
 Primary artifact: `02_REGISTRY/research/A4D_J2_SLOW_BACKGROUND_DIAGONAL_GERM.md`  
 Execution: `GitHub-first`
