@@ -81,17 +81,6 @@
       ],
       "exit_condition": "Formalize the merged #188/#193 rank-changing gauge-image resolution, first-jet image theorem and graph-closure seam geometry while keeping limiting incidence directions distinct from endpoint gauge.",
       "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION.md"
-    },
-    {
-      "id": "WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #201 finite theorem that the star flat metric Hessian is exactly one quarter of the owned E_eta ray, together with the high-order flat vanishing of quadratic joint-residual completions.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED.md"
     }
   ]
 }
