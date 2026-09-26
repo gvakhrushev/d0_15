@@ -1,1 +1,1 @@
-PLACEHOLDER_REPLACE_TEST
+LOAD_FROM_FILE:/tmp/pr202_coa_cert_exact.json
