@@ -90,18 +90,6 @@
       ],
       "exit_condition": "Compute and certify the nonlinear joint E_K/E_Q germs on the two one-dimensional source-invisible L=4 residual orbit classes, proving local isolation or producing an exact curved joint-vacuum germ for each.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
-    },
-    {
-      "id": "EXP-A4D-DEEP-GRAVITY-SYNTHESIS-BREAKTHROUGH",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Synthesize the post-#227 A4D gravity architecture across joint Palatini, resonance, quotient, lower-wall and continuum results; produce either a new structural theorem/no-go or reduce the Einstein bridge to exactly one smallest mathematical blocker, with external theorem hypotheses audited and at least one original exact finite result.",
-      "brief": "00_WORK/tasks/EXP-A4D-DEEP-GRAVITY-SYNTHESIS-BREAKTHROUGH.md"
     }
   ]
 }

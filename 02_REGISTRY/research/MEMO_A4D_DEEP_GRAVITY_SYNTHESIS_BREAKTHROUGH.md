@@ -22,7 +22,8 @@ New results here are:
 2. **EXACT / PROVED:** even on the diagonal character line, removing exact singular characters does not leave a refinement-independent positive singular-value gap for the stacked connection/metric constraint symbol. At least a polynomial loss must be allowed.
 3. **FAILED ROUTE / NO-GO, exact variational control:** degree four and a fixed local stencil do not imply a refinement-independent distance-to-critical-set Hölder exponent.
 4. **EXACT / PROVED:** joint stationarity in the genuine Gram section recovers all solder Euler equations through the finite Lorentz Noether identity.
-5. **CONDITIONAL THEOREM:** bounded smooth rescaled connections satisfying the literal connection equations converge to Levi-Civita with sufficient derivative control to recover the owned Einstein response. The hypotheses, including the physical readout passport, are stated in §7.
+5. **EXACT / PROVED with a CERTIFIED COMPUTATION:** the diagonal source-invisible kernel contains a direction with nonzero first plaquette curvature; it is neither flat nor a genuine gauge tangent. This does not establish a nonlinear joint germ.
+6. **CONDITIONAL THEOREM:** bounded smooth rescaled connections satisfying the literal connection equations converge to Levi-Civita with sufficient derivative control to recover the owned Einstein response. The hypotheses, including the physical readout passport, are stated in §7.
 
 The accompanying [exact checker](certificates/a4d_deep_gravity_synthesis_structure_check.py) checks finite algebraic controls, including the literal zero-phase star mass and the Cartan map. It does not certify the external torsion theorem, an uncomputed resonance cover, or the missing compactness theorem.
 
@@ -41,7 +42,7 @@ Merged inputs are read at launch main. Live inputs are provisional and pinned; f
 | #227 | Exact curved full-lattice `E_K=0` family for every `L=4m`; nonzero metric response | Refutes all-sheet connection-only rescue; **not a joint vacuum counterexample** |
 | #228 | Fixed-rank compound affine quotient and rank-two null flag | Finite formal kinematics; no cross-rank invariant or action selector |
 | #202 | Full transverse obstruction of the parabolic sheet; later support-seven activation jets | Live lower-wall research, not an upper-wall solution theorem |
-| #231 | Intended full mixed census and genuine physical quotient | No scientific artifact available at the pinned startup head |
+| #231 | New census inspected at final refresh; transpose, mixed-block and curvature errors found | Its new terminal is rejected as an input; narrow counterchecks in §8.3 |
 | #232 | Valuation cases and the full saddle-kernel extension; conditional local joint reduction | Does not establish uniform refinement control |
 | #233 | Exact coframe-transport torsion of #227 | Diagnostic, distinct from affine translation/open torsion |
 | #234/#235 | Intended residual nonlinear germ computations | No scientific artifacts available at pinned startup heads |
@@ -148,7 +149,7 @@ For `A=H_AA`, `B=H_AQ`, `C=H_QA`, live #232 constructs `M0=ker(pi B)` and `Sigma
  \longrightarrow\ker\Sigma\longrightarrow0.
 \]
 
-The mixed/metric-only part is not expendable. This memo uses that result and does not redo the delegated census or nonlinear germs. Finite Lyapunov-Schmidt reduction acts on the genuine full joint kernel, and its codomain is the genuine joint cokernel.
+The mixed/metric-only part is not expendable. This memo uses that result and does not redo the delegated census or nonlinear germs. The newly published #231 does not correctly assemble this mixed operator; see §8.3. Finite Lyapunov-Schmidt reduction acts on the genuine full joint kernel, and its codomain is the genuine joint cokernel.
 
 ## 4. New all-refinement theorem: cyclotomic determinantal strata
 
@@ -211,6 +212,8 @@ It replaces the belief that infinitely many lattice sizes necessarily require in
 - uniformity under variable metric coefficients or slowly varying backgrounds.
 
 One coset `z0=i` already contains `L^3` characters when `4|L`. A finite number of coset **types** is not a finite-dimensional Kuranishi theorem. Across arbitrary coefficient parameters even `z-a=0` can have torsion points of unbounded order as `a` varies on the unit circle. That is a general parameter-family control, not a counterexample within D0's restricted solder family.
+
+**HYPOTHESIS — resonance envelopes.** If positive-dimensional torsion cosets survive the actual physical quotient, the natural reduced object may be a finite-rank amplitude field over that coset, rather than a finite-dimensional vector. Transverse phase detuning and tangential slow modulation would enter an envelope equation. Such a formulation can retain finitely many geometric stratum types while honestly allowing a growing number of lattice characters. The #225 unfolding is a warning for its linear part, not a derivation of that equation. This is a possible method for the same compactness blocker, with no spectral filter inserted into the action.
 
 ### 4.5 Exact obstruction to a constant gap after deleting exact resonances
 
@@ -412,6 +415,38 @@ The affine open-translation defect is identically zero when the translation labe
 
 They share a useful language—rank, image, cokernel, transverse equations, and singular strata. An actual identification would require a typed map intertwining their Euler derivatives, which is not owned. The compound construction can be applied to a symbol's own minors as a diagnostic; using `Lambda^r(I-P)` in their place has no proof. No new invariant is inserted into the action.
 
+### 8.3 Final-refresh audit: #231 cannot be imported as a joint census
+
+**EXACT / PROVED and CERTIFIED COMPUTATION.** The Ready input at head `2d4b8f4773521afb516ad631512df04a432c1e26` contains three material errors. They are recorded here without editing or duplicating that task's branch.
+
+1. Its source sets `H=HAB`, `Q=HAQ.T`, `N=ker H`, but calculates `N0=ker [H.T;Q]`. That is not `ker H intersect ker Q`. For the correctly polarized merged owner at `(i,i,-i,-i)`, the correct stacked kernel has dimension **one**, while the replaced stack has dimension **zero**. This is the narrow countercheck here. Generally,
+
+   \[
+   \operatorname{rank}\begin{pmatrix}H\\Q\end{pmatrix}
+   =\operatorname{rank}[H^T\mid Q^T],\qquad
+   \dim(\ker H\cap\ker Q)=24-r_A.
+   \]
+
+   No extra image-containment hypothesis is needed. Its two claimed negative refinements do not follow. The existing augmented inventory's weighted nullities give 26 for this stacked symbol at L=4, not the new memo's 14 or its stated previous 16. This is arithmetic of the supplied inventory, not a physical gauge classification.
+
+2. Its purported full Hessian is assembled with top row `[0_(10x10),Q_(10x24)]` and bottom row `[H_(24x24),0_(24x10)]`. The top row orders columns as `(metric,connection)`, whereas the bottom starts its 24 connection columns at column zero, overlapping that metric block, and omits the mixed source block. For the same top-row ordering the correct bottom is `[B_(24x10),A_(24x24)]`, with compatible polarization. Its operator is neither the joint Euler derivative nor that derivative under a common column permutation. Already at z=1, where B=Q=0 and H is invertible, its assembly invents ten connection-only kernel directions. The checker verifies a specific such vector and the nonzero response of the correct operator.
+
+3. Its curvature labels use the number of occupied role links and unconditional `check(...,True)`, without evaluating a plaquette derivative. A single link can have transverse phase differences. On the diagonal state phase `-i`, take
+
+   \[
+   a_0=J_{12}-J_{13}+J_{23},\qquad a_1=a_2=a_3=0.
+   \]
+
+   The merged polarized owner gives `H a=0` and `Q a=0` exactly. But
+
+   \[
+   \delta P_{0s}=(1+i)a_0\ne0\quad(s=1,2,3).
+   \]
+
+   A genuine gauge tangent has zero first curvature at a flat background. Thus this source-invisible **linear** direction is curved and nongauge. This kills the suggestion that the diagonal basis is flat merely because each vector uses one role. It does not prove a joint-critical nonlinear branch or a nonzero normalized on-shell defect; those remain the delegated nonlinear question.
+
+Consequently the source-visible #227 obstruction is retained from its exact merged metric response, rather than from the new census's incorrectly placed boost vector. No full mixed ranks, gauge classifications, or revised residual dimensions from this #231 head are promoted in this synthesis. Repair of that input is a review issue for its owner; the single scientific blocker of the selected convergence route remains the a priori compactness theorem.
+
 ## 9. Primary literature and transfer audit
 
 These sources supply methods with hypotheses. None supplies the missing D0 compactness estimate. URLs point to primary papers or their publishers. The original Regge (1961) publisher record was accessible, but its full text was not; the substantive first-order Regge analysis below uses Barrett's accessible original paper.
@@ -445,16 +480,16 @@ The continuum metric-affine Palatini problem allows projective freedoms and diff
 | #226 | merge `4b145afe33b2fb7381615199167608b71457d01d` | MERGED |
 | #227 | merge `245095f941a047dec95877ef03996742f37cb429` | MERGED |
 | #228 | merge `966e280f81d5d3e27d8715dd5fdc98f3c3e9b35d` | MERGED |
-| #202 | head `a736f21fa94441aa85b922969e739a3e13334bc3` | OPEN, provisional |
-| #231 | head `d2f7738ce58a528e86452278c12e6559afda1174` | OPEN, no scientific artifact |
+| #202 | head `7624ca2bf7ce4e924bbf51dbd6d5f338a959c2fb` | OPEN, provisional |
+| #231 | head `2d4b8f4773521afb516ad631512df04a432c1e26` | OPEN/Ready, new terminal rejected; §8.3 |
 | #232 | head `6482543d98dc1f3c12741c3a44993d140ce9ca32` | OPEN, provisional |
 | #233 | head `743096576c27b6c24156c38c96746bef0a77627b` | OPEN, provisional |
 | #234 | head `8e91417e6dc4ff748ed31f7dfee2ef21785547de` | OPEN, no scientific artifact |
 | #235 | head `2c2f99048527bad523ce9948ca3168860782f5a3` | OPEN, no scientific artifact |
 
-The #202 support-seven first-order and matched-affine second-order certificates were read as activation and nonstationary-base controls. Their newer source does not establish a full affine/Lorentz stationary witness. #232's integration certificate checks its abstract glue and provisional rank arithmetic; it does not replace #231's missing full census. No unavailable worker result is used as a theorem.
+The #202 support-seven first-order and matched-affine second- and third-order certificates were read as activation and nonstationary-base controls. Its final order-three residual is injective on the eight-dimensional order-two blind space, and its order-six n-channel sum is positive definite there. This concerns fixed homogeneous translation directions on that nonstationary path, not a solution family. Their newer source does not establish a full affine/Lorentz stationary witness. #232's integration certificate checks its abstract glue and provisional rank arithmetic; it does not repair the malformed new #231 joint census. No unavailable worker result is used as a theorem.
 
-Final-main refresh and validation results are appended below before REVIEW.
+Final refresh confirmed main `597d81757d84a17bde7e34574aacc90c1966fb4f` is an ancestor of this branch; no rebase was required. The newly available #231 result and #202 order-three jets were incorporated with the dispositions above. #234/#235 scientific artifacts remained unavailable at the pinned heads. Final validation: **135 exact controls PASS**, Python compilation PASS, local links/control characters PASS, `git diff --check` PASS, work-manifest/views and agent-protocol guards PASS. The Ready lifecycle contract also passed against the final PR body and the retired checkout (task row absent, brief deleted, `Lifecycle: REVIEW`).
 
 ### 10.2 What to certify/formalize next, without spawning tasks here
 

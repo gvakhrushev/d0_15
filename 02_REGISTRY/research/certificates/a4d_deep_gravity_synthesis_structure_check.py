@@ -2,7 +2,8 @@
 """Exact controls for the post-#227 synthesis; research only.
 
 Owns: quartic variational chain control, finite torsion-coset count controls,
-flat Cartan invertibility, and the zero-phase mass of the literal star action.
+flat Cartan invertibility, the zero-phase star mass, and narrow counterchecks
+of the published #231 transpose, joint-block and curvature assertions.
 Does not compute the delegated joint L=4 census or residual nonlinear germs.
 Does not certify Laurent's theorem, an uncomputed D0 torsion-coset cover,
 refinement-uniform isolation, or a continuum compactness theorem.
@@ -130,6 +131,50 @@ check("gram_vertical_kernel", all(m*eta+eta*m.T == s.zeros(4) for m in vertical_
 for L in range(8,65,4):
     neighboring_phase = Fraction(L//4+1,L)
     check("adjacent_diagonal_not_exact_singular", neighboring_phase not in (Fraction(1,4),Fraction(3,4)))
+
+# Narrow audit of the newly published #231 input, using the MERGED owner.
+# Only two claimed-control characters are checked, no orbit census is redone.
+import contextlib
+import io
+from pathlib import Path
+owner = Path(__file__).with_name("a4d_j2_smooth_resonance_closure_check.py")
+marker = "# Exact diagonal quarter-wave data."
+owner_source = owner.read_text(encoding="utf-8")
+check("merged_symbol_section_unique", owner_source.count(marker) == 1)
+namespace = {}
+with contextlib.redirect_stdout(io.StringIO()):
+    exec(compile(owner_source.split(marker)[0], str(owner), "exec"), namespace)
+Hsymbol = namespace["HAB"]
+Ssymbol = namespace["HAQ"]
+phasevars = namespace["z"]
+v = s.zeros(24,1)
+v[3],v[4],v[5] = 1,-1,1
+quarter = dict.fromkeys(phasevars,s.I)
+Hquarter = Hsymbol.subs(quarter)
+Qquarter = Ssymbol.subs(quarter).T
+check("quarter_invisible_vector_in_connection_kernel", Hquarter*v == s.zeros(24,1))
+check("quarter_invisible_vector_in_metric_kernel", Qquarter*v == s.zeros(10,1))
+# A single occupied link does not give zero plaquette curvature on this mode.
+rotation = gens[3]-gens[4]+gens[5]
+linear_curvature_01 = (1+s.I)*rotation  # state phase is z^-1=-i
+check("quarter_invisible_vector_has_curvature", linear_curvature_01 != s.zeros(4))
+# Gauge variation of curvature at a flat background is zero; this is nongauge.
+sub = dict(zip(phasevars,[s.I,s.I,-s.I,-s.I]))
+Hr, Qr = Hsymbol.subs(sub), Ssymbol.subs(sub).T
+correct_stack = s.Matrix.vstack(Hr,Qr)
+wrong_stack = s.Matrix.vstack(Hr.T,Qr)
+check("transpose_audit_correct_nullity_one", len(correct_stack.nullspace()) == 1)
+check("transpose_audit_wrong_nullity_zero", len(wrong_stack.nullspace()) == 0)
+check("augmentation_transpose_rank_identity", correct_stack.rank() == Hr.T.row_join(Qr.T).rank())
+# #231's published full block placement fails already at zero phase.
+Qzero = s.zeros(10,24)
+wrong_joint = s.Matrix.vstack(s.Matrix.hstack(s.zeros(10,10),Qzero),
+                            s.Matrix.hstack(H0,s.zeros(24,10)))
+correct_joint = s.Matrix.vstack(s.Matrix.hstack(s.zeros(10,10),Qzero),
+                              s.Matrix.hstack(s.zeros(24,10),H0))
+pure_connection = s.zeros(34,1); pure_connection[-1] = 1
+check("wrong_joint_invents_connection_kernel", wrong_joint*pure_connection == s.zeros(34,1))
+check("correct_joint_does_not_invent_connection_kernel", correct_joint*pure_connection != s.zeros(34,1))
 
 # 4. Exact prescribed-source branch comparison has zero response difference.
 source = s.symbols("source0:10")
