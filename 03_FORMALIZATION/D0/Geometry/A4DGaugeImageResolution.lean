@@ -128,8 +128,7 @@ theorem genericFullRank_quotient_finrank
 theorem flat_vs_generic_quotient_jump :
     Module.finrank ℝ flatGaugeQuotient =
       192 + (64 - Module.finrank ℝ flatGaugeImage) := by
-  rw [flatGaugeQuotient_finrank, flatNodeGauge_finrank_range]
-  decide
+  simp [flatGaugeQuotient_finrank, flatNodeGauge_finrank_range]
 
 /-- Abstract rank-nullity package matching #193 §1: if `dim ker = 4` and
 `dim C⁰ = 64`, then `rank = 60`. -/
@@ -215,7 +214,7 @@ theorem firstJet_imageResolution
 
 /-- Rank-4 first jet yields a typed incidence lift once the reconstructed plane
 is known to be 64-dimensional (rank-nullity on `mkQ` restricted to `I`). -/
-theorem firstJet_incidenceLift_of_finrank64
+noncomputable def firstJet_incidenceLift_of_finrank64
     {E K : Type*}
     [AddCommGroup E] [Module ℝ E] [FiniteDimensional ℝ E]
     [AddCommGroup K] [Module ℝ K] [FiniteDimensional ℝ K]
@@ -225,6 +224,8 @@ theorem firstJet_incidenceLift_of_finrank64
     (hI :
       Module.finrank ℝ (incidenceOfLostQuotient U (LinearMap.range Phi)) = 64) :
     IncidenceLift E U :=
+  -- `hPhi` records the transverse rank-4 hypothesis used by callers.
+  have _ := hPhi
   ⟨incidenceOfLostQuotient U (LinearMap.range Phi),
     incidenceOfLostQuotient_contains_gauge U _, hI⟩
 
@@ -236,16 +237,14 @@ theorem grassmann4_196_dimension : 4 * (196 - 4) = 768 := by decide
 /-- Flat quotient dimension feeds the Grassmann ambient. -/
 theorem flat_grassmann_ambient_dimension :
     4 * (Module.finrank ℝ flatGaugeQuotient - 4) = 768 := by
-  rw [flatGaugeQuotient_finrank]
-  decide
+  simp [flatGaugeQuotient_finrank]
 
 /-- Abstract Grassmann ambient for any 196-dimensional quotient. -/
 theorem grassmann4_of_quotient196
     {Q : Type*} [AddCommGroup Q] [Module ℝ Q] [FiniteDimensional ℝ Q]
     (hQ : Module.finrank ℝ Q = 196) :
     4 * (Module.finrank ℝ Q - 4) = 768 := by
-  rw [hQ]
-  decide
+  simp [hQ]
 
 /-! ## Graph-closure: higher jets select boundary points, no external memory -/
 

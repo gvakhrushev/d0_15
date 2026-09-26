@@ -83,17 +83,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION.md"
     },
     {
-      "id": "WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Formalize the merged #188/#193 rank-changing gauge-image resolution, first-jet image theorem and graph-closure seam geometry while keeping limiting incidence directions distinct from endpoint gauge.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION.md"
-    },
-    {
       "id": "WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
