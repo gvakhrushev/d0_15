@@ -375,8 +375,154 @@ flat_t2 = sp.Matrix([-1, 0, 2, 5])
 check("FLAT_JOINT_RESIDUAL_ZERO",
       joint_residual(I4, flat_t1, I4, flat_t2) == sp.zeros(4, 1))
 
+# ---------------------------------------------------------------------------
+# Canonical all-six-loop Plucker/Gram quotient scalar
+# ---------------------------------------------------------------------------
+
+def generic_plaquette(linkset, r, s):
+    Lr, Ls = linkset[r], linkset[s]
+    return sp.simplify(Lr * Ls * Lr.inv() * Ls.inv())
+
+def generic_face_symbol(linkset, r, s, chi):
+    Lr, Ls = linkset[r], linkset[s]
+    P = generic_plaquette(linkset, r, s)
+    T = sp.zeros(4, 16)
+    T[:, 4*r:4*r+4] = sp.simplify(I4 - chi[s] * P * Ls)
+    T[:, 4*s:4*s+4] = sp.simplify(chi[r] * Lr - P)
+    return P, T
+
+def block_metric(h):
+    return sp.diag(h, h, h, h, h, h)
+
+def plucker_symbol(linkset, chi, h):
+    mblocks = []
+    tblocks = []
+    for p in PAIRS:
+        P, T = generic_face_symbol(linkset, *p, chi)
+        mblocks.append(I4 - P)
+        tblocks.append(T)
+
+    A = sp.Matrix.vstack(*mblocks)
+    T = sp.Matrix.vstack(*tblocks)
+    H = block_metric(h)
+    G = sp.simplify(A.T * H * A)
+    detG = sp.factor(G.det())
+    if detG == 0:
+        raise AssertionError("PLUCKER_GRAM_DEGENERATE")
+    Q = sp.simplify(
+        H - H * A * G.inv() * A.T * H
+    )
+    Hess = sp.simplify(T.T * Q * T)
+    D = sp.zeros(16, 4)
+    for r in range(4):
+        D[4*r:4*r+4, :] = sp.simplify(
+            I4 - chi[r] * linkset[r]
+        )
+    return A, T, H, G, detG, Q, Hess, D
+
+for link_name, linkset in (("PRIMARY", LINK), ("ALT", ALT_LINK)):
+    for metric_name, h in (("OBSERVER", I4), ("LORENTZ", ETA)):
+        sector_ranks = []
+        for chi in MOMENTA:
+            A, T, H, G, detG, Q, Hess, D = plucker_symbol(
+                linkset, chi, h
+            )
+            tag = "".join("p" if q == 1 else "m" for q in chi)
+            check(
+                "PLUCKER_STACK_RANK_" + link_name + "_" + metric_name + "_" + tag,
+                A.to_DM().rank() == 4,
+            )
+            check(
+                "PLUCKER_HESSIAN_RANK_" + link_name + "_" + metric_name + "_" + tag,
+                Hess.to_DM().rank() == 12,
+            )
+            check(
+                "PLUCKER_GAUGE_KERNEL_" + link_name + "_" + metric_name + "_" + tag,
+                Hess * D == sp.zeros(16, 4),
+            )
+            sector_ranks.append(Hess.to_DM().rank())
+        check(
+            "PLUCKER_ALL_SECTORS_COMPLETE_" + link_name + "_" + metric_name,
+            set(sector_ranks) == {12},
+        )
+
+# The positive Gram determinant is an exact scalar representative of the
+# squared Plucker quotient coordinate:
+#
+#   I_Pl = det(C^T H C),  C=[A|t].
+#
+# It is invariant under t -> t + A c by a unit-determinant column shear.
+chi0 = (1, 1, 1, 1)
+A0, T0, H0_24, G0, detG0, Q0, Hess0, D0 = plucker_symbol(
+    LINK, chi0, I4
+)
+u0 = sp.zeros(16, 1)
+u0[0] = 1
+t0 = sp.simplify(T0 * u0)
+C0 = A0.row_join(t0)
+Ipl0 = sp.factor((C0.T * H0_24 * C0).det())
+check("PLUCKER_POSITIVE_NONGAUGE_WITNESS", Ipl0 > 0)
+
+cshift = sp.Matrix([sp.Rational(1,2), -1, sp.Rational(2,3), 1])
+Cshift = A0.row_join(sp.simplify(t0 + A0 * cshift))
+check(
+    "PLUCKER_NODE_TRANSLATION_INVARIANT",
+    sp.factor((Cshift.T * H0_24 * Cshift).det() - Ipl0) == 0,
+)
+
+# Exact full Lorentz/observer covariance.  With six block copies of g,
+# C' = G6 C K where det K=1, and H' = G6^{-T} H G6^{-1}.
+REST = sp.Matrix([1, 0, 0, 0])
+
+def observer_metric(n):
+    nflat = ETA * n
+    return sp.simplify(-ETA + 2 * nflat * nflat.T)
+
+g = BOOST
+h0 = observer_metric(REST)
+h1 = observer_metric(g * REST)
+check("PLUCKER_OBSERVER_REST_IS_I", h0 == I4)
+check("PLUCKER_OBSERVER_CONGRUENCE", sp.simplify(g.T * h1 * g) == h0)
+
+G6 = sp.diag(g, g, g, g, g, g)
+A1 = sp.simplify(G6 * A0 * g.inv())
+t1p = sp.simplify(G6 * t0 + A1 * cshift)
+C1 = A1.row_join(t1p)
+H1_24 = block_metric(h1)
+Ipl1 = sp.factor((C1.T * H1_24 * C1).det())
+check("PLUCKER_FULL_AFFINE_OBSERVER_INVARIANT", sp.simplify(Ipl1 - Ipl0) == 0)
+
+# Equal block metric also makes the all-six scalar independent of face-copy
+# ordering.  Swap the first two face blocks explicitly.
+order = [1, 0, 2, 3, 4, 5]
+Aperm = sp.Matrix.vstack(*[A0[4*i:4*i+4, :] for i in order])
+tperm = sp.Matrix.vstack(*[t0[4*i:4*i+4, :] for i in order])
+Cperm = Aperm.row_join(tperm)
+check(
+    "PLUCKER_FACE_COPY_PERMUTATION_INVARIANT",
+    sp.factor((Cperm.T * H0_24 * Cperm).det() - Ipl0) == 0,
+)
+
+# R_{2|1} is a coordinate chart of the Plucker object.  For two loops, the
+# minors using all four rows of the anchor block plus one target row are
+# exactly the four residual components.
+Pchart1 = sp.simplify(BOOST * RCD)
+Pchart2 = sp.simplify(RBC * BOOST * RBC.inv())
+tchart1 = sp.Matrix([1, 2, 0, -1])
+tchart2 = sp.Matrix([0, -1, 3, 2])
+Mchart1 = I4 - Pchart1
+Mchart2 = I4 - Pchart2
+A8 = sp.Matrix.vstack(Mchart1, Mchart2)
+t8 = sp.Matrix.vstack(tchart1, tchart2)
+C8 = A8.row_join(t8)
+Rchart = joint_residual(Pchart1, tchart1, Pchart2, tchart2)
+for j in range(4):
+    rows = [0, 1, 2, 3, 4+j]
+    minor = C8.extract(rows, range(5)).det()
+    check("PLUCKER_CHART_COMPONENT_" + str(j), sp.simplify(minor - Rchart[j]) == 0)
+
 print("RESULT_FULL_MAP: sector-by-sector rank 12 with rank-4 node gauge; global rank 192 and kernel exactly node gauge on the generic homogeneous curved L=2 control.")
 print("RESULT_ROLE_ORBITS: incident cross-type orbits are complete on the primary control; its complementary defect is a special background resonance, not universal.")
 print("RESULT_SPECIAL_RESONANCE: one symmetric control has a complementary-orbit defect at (-1,-1,+1,+1), but an independent generic link control removes it; the checkerboard coincidence is background-dependent, not a selector theorem.")\nprint("RESULT_SELECTOR: even after pair-exchange symmetry, incident and complementary cross-type Lorentz quadratics are independent and quotient-complete; even hypothetical full S4 Role naturality leaves independent intersecting-vs-disjoint complete actions, so symmetry+completeness leave a genuine action modulus.")
 print("RESULT_SCALAR: equal-weight Lorentz quadratics are quotient-complete; target reversal preserves eta but not the rest-observer positive scalar.")
-print("RESULT_FLAT: polynomial joint-residual terms vanish at flat holonomy and do not alter the accepted flat Hessian.")
+print("RESULT_PLUCKER: the all-six-loop Plucker/Gram scalar is anchor-free, face-permutation natural, exactly affine invariant, and has rank 12 modulo rank-4 node gauge in every L=2 sector on two independent generic curved controls.")\nprint("RESULT_FLAT: polynomial joint-residual terms vanish at flat holonomy and do not alter the accepted flat Hessian.")
