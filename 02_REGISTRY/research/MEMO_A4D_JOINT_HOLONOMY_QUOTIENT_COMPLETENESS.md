@@ -552,7 +552,257 @@ the \(h_n\) channel globally.
 
 ---
 
-## 9. Flat regression
+## 9. Canonical all-six-loop Plücker quotient
+
+The pairwise residual decomposition is useful for certificates, but it is not
+the most canonical quotient object.
+
+At one site collect all six based affine plaquettes:
+
+\[
+H_S=(P_S,t_S),
+\qquad
+S\in\binom{\{A,B,C,D\}}2.
+\]
+
+Stack
+
+\[
+\mathbb M
+=
+\begin{pmatrix}
+I-P_{AB}\\
+I-P_{AC}\\
+I-P_{AD}\\
+I-P_{BC}\\
+I-P_{BD}\\
+I-P_{CD}
+\end{pmatrix}
+:
+V\longrightarrow V^{\oplus6},
+\]
+
+and
+
+\[
+\mathbb t
+=
+\begin{pmatrix}
+t_{AB}\\t_{AC}\\t_{AD}\\t_{BC}\\t_{BD}\\t_{CD}
+\end{pmatrix}.
+\]
+
+A node translation acts exactly by
+
+\[
+\boxed{
+\mathbb t\mapsto\mathbb t+\mathbb M c.
+}
+\]
+
+Let \(\mathbb M_1,\ldots,\mathbb M_4\) denote the four columns of
+\(\mathbb M\).  Define the exterior quotient coordinate
+
+\[
+\boxed{
+\Omega
+=
+\mathbb M_1\wedge\mathbb M_2\wedge\mathbb M_3\wedge\mathbb M_4
+\wedge\mathbb t
+\in
+\Lambda^5(V^{\oplus6}).
+}
+\]
+
+Adding \(\mathbb M c\) to the last factor does not change the wedge.  Therefore
+\(\Omega\) is translation-gauge invariant.
+
+If
+
+\[
+\operatorname{rank}\mathbb M=4,
+\]
+
+then the first four wedge factors are independent, and basic exterior algebra
+gives the exact equivalence
+
+\[
+\boxed{
+\Omega=0
+\iff
+\mathbb t\in\operatorname{im}\mathbb M.
+}
+\]
+
+Thus \(\Omega\) is an anchor-free coordinate of the local translation quotient.
+
+The earlier two-loop vector \(R_{2|1}\) is only one affine chart of this object.
+For two loop blocks, the four \(5\times5\) minors using all four rows of the
+anchor block and one row of the target block are exactly the four components
+of \(R_{2|1}\).  The checker verifies this identity component by component.
+
+### 9.1 One scalar instead of 42,504 minors
+
+Let
+
+\[
+C=[\,\mathbb M\mid\mathbb t\,]
+\]
+
+be the \(24\times5\) augmented matrix.
+
+Using six equal copies of the owned observer-positive form,
+
+\[
+H_n^{(6)}
+=
+h_n\oplus\cdots\oplus h_n,
+\]
+
+define
+
+\[
+\boxed{
+I_{\rm Pl}
+=
+\det(C^T H_n^{(6)} C).
+}
+\]
+
+This is the squared Gram volume of the five columns, hence
+
+\[
+I_{\rm Pl}\ge0.
+\]
+
+When \(\operatorname{rank}\mathbb M=4\),
+
+\[
+\boxed{
+I_{\rm Pl}=0
+\iff
+\mathbb t\in\operatorname{im}\mathbb M.
+}
+\]
+
+The Schur complement makes the quotient content explicit:
+
+\[
+I_{\rm Pl}
+=
+\det(\mathbb M^T H\mathbb M)
+\left[
+\mathbb t^T H\mathbb t
+-
+\mathbb t^T H\mathbb M
+(\mathbb M^T H\mathbb M)^{-1}
+\mathbb M^T H\mathbb t
+\right].
+\]
+
+So for fixed linear holonomies it is simply the positive squared norm of the
+translation class, multiplied by the Gram volume of the gauge columns.
+
+### 9.2 Exact full-affine covariance
+
+Let \(G_6=\operatorname{diag}(g,\ldots,g)\).
+
+Under a common affine base gauge,
+
+\[
+\mathbb M'
+=
+G_6\mathbb M g^{-1},
+\]
+
+\[
+\mathbb t'
+=
+G_6\mathbb t+\mathbb M'c.
+\]
+
+Hence
+
+\[
+C'
+=
+G_6 C K,
+\]
+
+where \(K\) is a \(5\times5\) upper block-triangular column transformation with
+
+\[
+\det K=\det g^{-1}=1.
+\]
+
+The observer metric obeys
+
+\[
+H'=
+G_6^{-T}HG_6^{-1}.
+\]
+
+Therefore
+
+\[
+C'^T H'C'
+=
+K^T(C^THC)K
+\]
+
+and
+
+\[
+\boxed{
+I_{\rm Pl}'=I_{\rm Pl}.
+}
+\]
+
+Equal metric blocks also make the scalar invariant under permutation of the six
+face copies.  Thus the all-six construction removes the arbitrary
+anchor/target and face-pair weighting that appeared in the pairwise chart.
+
+### 9.3 Finite rank control
+
+The exact checker evaluates the Hessian of the Plücker Gram scalar with respect
+to the sixteen affine edge-shift amplitudes on every \(L=2\) momentum sector.
+
+On both independent generic curved link controls,
+
+\[
+\operatorname{rank}\mathbb M=4
+\]
+
+and, for every one of the sixteen characters,
+
+\[
+\boxed{
+\operatorname{rank}H_{\rm Pl}(\chi)=12,
+\qquad
+H_{\rm Pl}(\chi)D_\chi=0.
+}
+\]
+
+This is true both for:
+
+- the observer-positive block metric \(h_n^{(6)}\);
+- the block Lorentz metric \(\eta^{\oplus6}\).
+
+Thus the all-six Plücker scalar reproduces the same exact quotient completeness
+without introducing Role-orbit coefficients.
+
+This repairs an overstatement in the earlier pairwise analysis:
+
+> the pairwise incident/complement coefficient freedom is a coordinate/action
+> ansatz freedom, not yet a fundamental physical modulus.
+
+The genuinely surviving ambiguity is narrower: which scalar metric channel is
+used, and what coefficient multiplies the whole translation-quotient term
+relative to the existing star action.
+
+---
+
+## 10. Flat regression
 
 At flat linear holonomy,
 
@@ -600,7 +850,7 @@ result also cannot normalize its coefficient.
 
 ---
 
-## 10. The unavoidable curvature-sector modulus
+## 11. The remaining relative curvature-sector modulus
 
 Suppose the relative-solder branch supplies an affine-invariant base action
 
@@ -650,14 +900,19 @@ The strongest stable statement at this stage is
 }
 \]
 
-This conclusion is independent of whether the final residual aggregate uses
-the incident, complementary, observer-positive, or a larger Role-natural
-channel family. Those choices can only increase the unresolved selector space
-unless an additional principle is supplied.
+The all-six Plücker packaging removes the pair-orbit coefficient ambiguity, so
+that earlier ambiguity should not be counted as a fundamental parameter.
+Nevertheless it does not determine the coefficient of the whole quotient term
+relative to (S_\star^{\rm rel}), and it does not by itself identify whether
+the action should use the positive observer metric or the orientation-robust
+Lorentz metric.
+
+Thus at least one relative curvature-sector coefficient remains unfixed even
+after the face-pair chart freedom is removed.
 
 ---
 
-## 11. Consequence for the curved-vacuum question
+## 12. Consequence for the curved-vacuum question
 
 The next step is **not yet** to solve
 
@@ -686,7 +941,7 @@ Only after that gate should the nonlinear curved stationary sector be solved.
 
 ---
 
-## 12. Scope
+## 13. Scope
 
 This packet does **not** claim:
 
