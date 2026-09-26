@@ -35,6 +35,28 @@ rank/obstruction or explicit curved witness, the files and certificate commands,
 and one smallest remaining blocker. Distinguish exact results from numerical
 exploration. Do not report Einstein/GR/time/wave/continuum interpretations.
 
+
+## Checkpoint discipline
+
+This EXPENSIVE task is checkpoint-first. Do not leave more than one substantive
+research result only in chat or scratch state.
+
+After every new exact rank, witness, obstruction, surviving branch, or killed
+branch:
+
+1. append the result immediately to the primary memo;
+2. classify it explicitly as `EXACT/CERTIFIED`, `STRUCTURAL/DERIVED`,
+   `NUMERICAL/EXPLORATORY`, or `OPEN`;
+3. add or update the smallest reproducible certificate that supports it;
+4. commit the memo/certificate before starting the next expensive calculation;
+5. add a PR conversation checkpoint containing the commit SHA, strongest stable
+   statement, and the single next blocker;
+6. never promote numerical optimizer evidence into a theorem without an exact
+   witness/elimination/rank certificate.
+
+A cold-start agent must be able to resume from the repository and PR alone,
+without this chat.
+
 ## Objective
 
 Move beyond gauge-law classification and decide whether the minimal full-affine
