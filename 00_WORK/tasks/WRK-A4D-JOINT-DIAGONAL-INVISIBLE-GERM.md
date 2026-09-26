@@ -15,6 +15,10 @@ Execution: `GitHub-first`
 
 Consume the exact basis of the four-dimensional diagonal source-invisible sector from `WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL`. If that basis is not yet merged, stack explicitly on its registration/execution tip and state the dependency in the PR.
 
+## Why delegated
+
+After the linear census isolates the diagonal source-invisible four-space, the remaining calculation is a bounded reduced-germ problem on one owned resonance. It is suitable for a worker because it does not require the global smooth-background theorem; it only decides whether this specific joint vacuum germ is isolated or bifurcates.
+
 ## Objective
 
 Determine the first nonzero **joint** zero-source reduced germ on the diagonal quarter-wave source-invisible sector.
