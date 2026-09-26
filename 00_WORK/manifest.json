@@ -23,6 +23,15 @@
       "affected_claims": [],
       "exit_condition": "Merged nightly-maintenance and nonlinear-Lorentz control rows are retired without altering their durable artifacts, and the repository control plane is internally consistent and green.",
       "brief": "00_WORK/tasks/CTRL-POST-MERGE-CONTROL-CLOSEOUT.md"
+    },
+    {
+      "id": "EXP-A4D-JOINT-HOLONOMY-QUOTIENT-COMPLETENESS",
+      "class": "EXPENSIVE",
+      "parent": "ROOT",
+      "state": "IN_PROGRESS",
+      "affected_claims": [],
+      "exit_condition": "The polynomial joint two-holonomy residual family is classified on an exact curved finite background: its kernel versus node-translation gauge is determined, spatial-Role orbit channels are ranked, and the minimal full-affine scalar completion class is either selected or reduced to explicit residual moduli.",
+      "brief": "00_WORK/tasks/EXP-A4D-JOINT-HOLONOMY-QUOTIENT-COMPLETENESS.md"
     }
   ]
 }
