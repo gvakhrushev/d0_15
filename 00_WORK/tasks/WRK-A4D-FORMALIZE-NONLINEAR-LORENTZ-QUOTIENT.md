@@ -8,6 +8,25 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
 MERGED: PR #180.
 
+Repository: `gvakhrushev/d0_15`
+Base: `main`
+Branch: `wrk/a4d-formalize-nonlinear-lorentz-quotient`
+Primary artifact: `03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean`
+Execution: `GitHub-first`
+
+## Why delegated
+
+This is a bounded formalization of already merged science from PR #180. The worker can strengthen the finite Lorentz layer independently by proving general cell covariance, quotient invariants and stabilizer facts without reopening affine translations or changing scientific scope.
+
+## GitHub execution contract
+
+Start only from current `main`; run `python tools/task_dispatch.py WRK-A4D-FORMALIZE-NONLINEAR-LORENTZ-QUOTIENT` before implementation, open a Draft PR before substantive edits, keep changes on the declared branch and primary artifact, obey dependency gates and collision fences, validate narrow targets first, refresh the branch against current main before Ready, self-retire the executable task when required by repository lifecycle, and never self-merge.
+
+## Chat handoff
+
+Return the PR number, final commit SHA, strongest exact theorem or formalization blocker, validation commands/results, and one smallest remaining dependency. A fresh agent must be able to continue from GitHub/task artifacts alone without relying on hidden chat context.
+
+
 ## Objective
 
 Formalize the finite nonlinear site-dependent proper-Lorentz action and the
