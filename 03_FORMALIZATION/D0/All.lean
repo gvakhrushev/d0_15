@@ -280,6 +280,7 @@ import D0.Geometry.A4DAffineRelativeSolderCompletion
 import D0.Geometry.A4DAffineShiftExteriorBlindness
 import D0.Geometry.A4DCellHessianTransverseModulus
 import D0.Geometry.A4DCenteredCartanClosureNoGo
+import D0.Geometry.A4DCheckerboardNonlinearObstruction
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DComparisonJetNonselection
 import D0.Geometry.A4DConditionalSourcedDiagonalTransport
