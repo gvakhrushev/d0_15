@@ -33,6 +33,19 @@ check("227_METRIC_DIRECTION_NONZERO", metric_dir != sp.zeros(10,1))
 linear_metric_source = sp.simplify(sp.diff(c,t).subs(t,0)) * metric_dir
 check("227_LINEAR_METRIC_SOURCE_NONZERO", linear_metric_source != sp.zeros(10,1))
 
+# Exact near-identity two-sided source/amplitude bound used by the parent memo.
+# For |t| <= 1/4, c(t)/t = 4/(4-3 t^2) lies in [1,64/61].
+ratio = sp.simplify(c/t)
+check("227_RATIO_AT_ZERO_LIMIT_ONE", sp.limit(ratio,t,0) == 1)
+for tv in [sp.Rational(0), sp.Rational(1,16), sp.Rational(1,8), sp.Rational(1,4)]:
+    rr = sp.Integer(1) if tv == 0 else sp.simplify(abs(c.subs(t,tv))/tv)
+    check(f"227_SOURCE_BOUND_{tv}", rr >= 1 and rr <= sp.Rational(64,61))
+# Monotonicity in u=t^2 on [0,1/16] makes the endpoint check exact.
+u = sp.symbols("u", nonnegative=True)
+rru = 4/(4-3*u)
+check("227_RATIO_MONOTONE_U", sp.simplify(sp.diff(rru,u)) > 0)
+check("227_RATIO_ENDPOINT", sp.simplify(rru.subs(u,sp.Rational(1,16))) == sp.Rational(64,61))
+
 # ---------------------------------------------------------------------------
 # 2. Exact toy controls for the basis-independent KKT decomposition.
 #    A: V->V, B: M->V, C: V->M.
