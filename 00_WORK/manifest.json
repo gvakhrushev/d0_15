@@ -59,17 +59,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-J2-SLOW-BACKGROUND-DIAGONAL-GERM.md"
     },
     {
-      "id": "WRK-A4D-J2-METRIC-RESPONSE-SENSITIVITY",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify a compact-chart finite-stencil bound converting connection-sheet distance into normalized metric-response distance with only an explicit polynomial loss in h, so super-algebraic normal rescue implies super-algebraic response agreement.",
-      "brief": "00_WORK/tasks/WRK-A4D-J2-METRIC-RESPONSE-SENSITIVITY.md"
-    },
-    {
       "id": "WRK-A4D-RANK-COMPOUND-AFFINE-QUOTIENT",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
