@@ -1382,3 +1382,88 @@ This closes the fixed-solder seven-support gate. It does not solve free
 solder away from `eta`, the full link/affine Euler system, or
 `R=R_*(C) != 0`. No L=2 active-residual witness is obtained, so L=3 stays
 unopened. The task remains `IN_PROGRESS`.
+
+### 9.12 Frozen base link: joint linear gate and absolute solder
+
+The next exact object keeps the selected support and the base link of §9.4,
+and lets the absolute solder move. One absolute coframe is copied at every
+site. Site-dependent solder is not in this gate. The certificate is
+`a4d_resolved_curved_stationary_e2_support7_joint_linear_gate_check.py`.
+
+The star density is bilinear in the two complementary solder legs, so at
+this fixed link the absolute-solder gradient is exactly the constant
+symmetric Hessian `H` of §9.8. That Hessian has rank 6. Its kernel is the
+full solder-critical set and has the coordinate form
+
+```text
+[ z0+z1-z2 , z0 , z3 , z4 ]
+[ z1       , z2 , z3 , z4 ]
+[ z5       , z5 , z6+z8+z9 , z6 ]
+[ z7       , z7 , z8 , z9 ].
+```
+
+`eta` is the point `z2=z9=-1` and the rest zero. The six test matrices
+`{M2,M3,-J23,K1,N2,N3}` are a basis of `so(1,3)`, so the 24 link components
+are the full homogeneous link Euler. On this kernel those components are
+quadratic. In test order `(M2,M3,-J23,K1,N2,N3)`,
+
+```text
+(E_{role 2, N3} + E_{role 3, N2}) / 64 = (z0-z2)(z1-z2).
+```
+
+The same coordinates give
+
+```text
+det theta = (z0-z2)(z1-z2)(z6*z8 - z6*z9 - z8*z9 - z9^2).
+```
+
+Every common zero of the link Euler on the solder-critical set therefore
+has determinant zero. The base point `eta` is the control that criticality
+alone is not the cause: `det eta = -1`, and its link Euler is the nonzero
+defect of §9.3. The pure scale `theta = t*eta` has Euler `t^2 E_0`, hence
+exact link stationarity only at `t=0`, where the solder is degenerate.
+The Newton prediction `t=1/2` remains critical and has determinant
+`-1/16`, but its exact Euler is `E_0/4`. A second control,
+
+```text
+[[2, 1, 0, 0], [1, 0, 0, 0], [0, 0, 2, 1], [0, 0, 1, 0]],
+```
+
+is solder-critical with determinant 1 and nonzero link Euler.
+
+The joint linearization at `(x, theta) = (0, eta)` uses the seven support
+amplitudes and all 16 solder entries. The system is `40 x 23` of rank 19
+and is consistent. One particular solution is the pure scale
+`Y = -eta/2` with every amplitude zero. The homogeneous kernel has
+dimension 4, and its amplitude block is zero. An explicit basis of that
+solder kernel is
+
+```text
+[[1, 1, 0, 0], [1, 1, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+[[0, 0, 2, 1], [0, 0, 2, 1], [1, 1, 0, 0], [0, 0, 0, 0]]
+[[0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 0], [1, 1, 0, 0]]
+[[0, -1, -3, -1], [1, 0, -3, -1], [0, 0, 1, 0], [0, 0, 0, 1]].
+```
+
+Thus every first-order solution has `N2` on role 2 and `N3` on role 3
+equal to zero. Those are the only two support directions whose first
+adjugate variation is nonzero: rank 2 on faces `(0,2),(1,2)` and
+`(0,3),(1,3)` respectively. Every other support direction, and every
+joint solution, has vanishing first adjugate variation on the four curved
+faces. All six faces already have `det(I-P)=adj(I-P)=0`, while exactly
+four curvature bivectors are nonzero.
+
+The owned channel integrand is the quadratic form of
+`R = det(I-P_1) t_2 - (I-P_2) adj(I-P_1) t_1`, with no solder argument.
+At this frozen link `R` vanishes for every translation, so each channel
+value and each first link or translation derivative of a channel vanishes.
+Translations do not repair the link. The full four-channel action
+therefore has no nondegenerate stationary point at this one homogeneous
+link, for any channel coefficients and any translations. Curvature is
+present and the residual stays zero, so this is not an active-residual
+witness.
+
+Zero amplitudes in the linearization are not a finite no-go for the
+seven-amplitude family away from this link. No L=2 witness with
+`R != 0` is obtained, and L=3 stays unopened. The task remains
+`IN_PROGRESS`.

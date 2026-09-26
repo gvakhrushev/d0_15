@@ -68,6 +68,26 @@ This is not a finite stationary witness. Exact nonlinear reconstruction of
 the full Euler system with active residual remains open; L=3 has not started
 because no exact L=2 witness has been reconstructed.
 
+## Checkpoint (2026-09-27)
+
+The fixed-`eta` seven-amplitude necessary subsystem has no open-chart
+solution except the obstructed origin
+(`a4d_resolved_curved_stationary_e2_support7_main_branch_check.py`).
+
+At the same frozen homogeneous link, with one absolute solder copied at
+every site,
+`a4d_resolved_curved_stationary_e2_support7_joint_linear_gate_check.py`
+shows two further exact facts. The joint linearization in the seven
+amplitudes plus 16 solder entries is consistent of rank 19, and every
+solution has zero amplitudes, hence zero first adjugate variation. On the
+full solder-critical kernel, `(E_{role2,N3}+E_{role3,N2})/64=(z0-z2)(z1-z2)`
+divides `det theta`, so every link-stationary critical solder is degenerate.
+All six faces have `det(I-P)=adj(I-P)=0` while four curvature bivectors are
+nonzero, so the owned channels vanish for every translation and do not
+repair this link. This is not a finite no-go for deformations of the seven
+amplitudes away from the link, and it is not an active-residual witness.
+L=3 remains unopened.
+
 ## Forbidden shortcuts
 
 No Holst channel, no phi coefficient, no new unowned invariant, no forcing `R=0`, no 7x7 coefficient grid, no continuum Einstein claim, no treating machine-precision roots as exact.
