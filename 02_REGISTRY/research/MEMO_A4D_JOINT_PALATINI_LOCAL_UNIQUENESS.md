@@ -1194,6 +1194,106 @@ physical UV mixed-saddle null sector outside the delegated 4/1/1 normals, that
 sector becomes an explicit blocker and the positive terminal cannot be
 declared merely from the existing nonlinear workers.
 
+## 9B. Conditional joint Palatini closure theorem
+
+The exact logical endpoint can be stated independently of the outstanding
+worker arithmetic.
+
+### Theorem (conditional local joint closure)
+
+Fix one admissible smooth stress-only realization and one observation point.
+Assume the owned IR hypotheses of #216/#223 and the response sensitivity of
+#226. Suppose the physical UV normal bundle admits a finite compact
+stratification such that on every chart:
+
+1. **complete tangent accounting:** the full mixed saddle has been quotiented
+   only by genuine gauge/physical-IR directions; every remaining UV null
+   direction is included in the normal variable \(u\);
+2. **centered analytic model:** after evaluating on the smooth approximate
+   sheet,
+   \[
+   F_h(u)=r_h+\widetilde F_h(u),
+   \qquad
+   r_h=O(h^\infty),
+   \qquad
+   \widetilde F_h(0)=0;
+   \]
+3. **boundary degree:** there is one common normal ball on which
+   \(\widetilde F_h\) has no boundary zero and
+   \[
+   \deg(\widetilde F_h,B,0)\ne0
+   \]
+   for all sufficiently small \(h\), or an equivalent exact existence
+   certificate;
+4. **no physical zero-source germ:** inside that tube,
+   \[
+   \widetilde F_h(u)=0
+   \Longrightarrow
+   u=0
+   \]
+   modulo the declared gauge/physical-flat fiber, uniformly in the compact
+   parameters;
+5. **subanalytic uniformity:** the centered family and its normal distance are
+   subanalytic/analytic on the compact chart, so a finite parameterized
+   Łojasiewicz exponent exists.
+
+Then for all sufficiently small \(h\):
+
+- the exact joint equations have at least one root in the selected tube;
+- every such root satisfies
+  \[
+  u_h=O(h^\infty);
+  \]
+- all such exact roots have normalized gravitational metric response differing
+  from the smooth approximate sheet by \(O(h^\infty)\);
+- hence
+  \[
+  \boxed{
+  h^{-2}E_{\star,Q}
+  =
+  -\frac12G+O(h)+O(h^\infty).
+  }
+  \tag{9B.1}
+  \]
+
+With the task's declared source convention, the corresponding joint
+Einstein/stress residual is the owned \(-\frac12G+\kappa T\) expression.
+
+### Proof
+
+Nonzero degree gives a zero of
+
+\[
+\widetilde F_h(u)=-r_h
+\]
+
+for sufficiently small \(r_h\). By the zero-source isolation and compact
+subanalyticity, a parameterized Łojasiewicz inequality gives
+
+\[
+\|u\|^N
+\le
+C\|\widetilde F_h(u)\|
+\]
+
+with finite \(N\) after a finite stratification. At an exact root the right
+side is \(C\|r_h\|\), hence \(u_h=O(h^\infty)\). The visible kernel component
+obeys the stronger linear estimate of §5A and can be absorbed into the same
+bound. #226 loses only \(h^{-2}\), so the normalized response difference is
+still \(O(h^\infty)\). The smooth approximate-sheet response is (9.1), proving
+(9B.1). ∎
+
+### What “uniqueness” means here
+
+The theorem does not require a unique finite root. It proves **asymptotic
+physical uniqueness of the smooth joint branch**: every exact joint root in
+the certified tube differs only by \(O(h^\infty)\) in UV normal directions
+(and by explicitly allowed gauge/physical-flat directions). That is the
+amount of uniqueness needed for the local \(J^2\) metric response.
+
+A stronger statement that the finite critical point itself is unique is not
+part of the target and is not required for the Einstein coefficient.
+
 ## 10. What would close the positive terminal
 
 The positive terminal
