@@ -1168,3 +1168,68 @@ or Lorentz Euler equations, or any system with `b` varying with `epsilon`; it
 does not establish a stationary branch or a global no-go. The exact order-three
 checks are in
 `a4d_resolved_curved_stationary_e2_support7_affine_order3_check.py`.
+
+### 9.8 Free-solder cokernel gate for the eight supplied Newton vectors
+
+The owned four residual channels in `a4d_resolved_curved_stationary_f4_check.py`
+are independent of the free absolute solder `Theta`; their `b` and Lorentz
+arguments do not include `Theta`. Thus the star solder Euler equations are a
+necessary sector of the selected four-channel full stationary system, for any
+channel coefficients and translations. At the homogeneous base of §9.4,
+`Theta_0 = eta = diag(1,-1,-1,-1)` is nondegenerate and solder-critical,
+but the Lorentz-link defect is still `E_0 != 0`.
+
+The standalone exact certificate
+`a4d_resolved_curved_stationary_e2_support7_solder_cokernel_check.py`
+computes the `16 x 16` solder Hessian `H_Theta` and the `16 x 12` mixed
+solder/normal-amplitude Jacobian. The Hessian is symmetric of rank 6 and
+nullity 10. In row-major coordinates `vec(Theta_0)` belongs to its left and
+right kernel. The mixed Jacobian has rank 11; its projection to the solder
+cokernel has rank 6.
+
+For each of the eight enumerated supports, let `v` be the unique star-only
+missing-Euler Newton vector `J_missing v = -E_0,missing`, and `J_Theta`
+its mixed solder Jacobian. An arbitrary first solder correction `Y` could
+lift that amplitude vector only if
+
+```text
+H_Theta vec(Y) + J_Theta v = 0.
+```
+
+Pairing with `vec(Theta_0)` gives a nonzero exact obstruction for every
+supplied vector. In the support order of the order-one owner the values are
+
+```text
+(-4992/67, 4992/1055, -14976/47, 7296/7,
+ 1872, 16768/13, 49920/67, -99840/427).
+```
+
+For each support, `[H_Theta | J_Theta v]` has rank 7, against rank 6 for
+`H_Theta`. The scale pairing also equals `2 d_v S_star`, checked separately
+by the link Euler owner and quadratic homogeneity in `Theta`. In particular,
+for the selected support it is `16768/13`. No first solder correction cancels
+that particular amplitude direction.
+
+For general amplitudes in the selected seven-support, projection to the
+solder cokernel has rank 4 and kernel dimension 3. In zero-based support
+coordinates its exact necessary and sufficient first-order range conditions
+are
+
+```text
+x0 + 4*x6 = 0;  x2 + x6 = 0;  x3 - x4 = 0;  x5 = 0.
+x = (-4*z3, z1, -z3, z2, z2, 0, z3).
+```
+
+The certificate constructs an exact solder lift for these three kernel
+vectors. The selected Newton vector violates the four displayed conditions
+by `(-368/13,-310/13,-253/13,-24/13)`.
+
+This is a range obstruction to the eight supplied star-only missing-Euler
+corrections, with free first-order solder included. It does not identify those
+vectors with Newton corrections of the full coupled system, whose variables
+include solder and translations. It is not a finite no-go for all points on
+any seven-support. The nonstationary base already precludes the proposed
+base-anchored stationary germ at order zero. A finite reduction must keep the
+actual nonlinear solder equations and the full link/affine equations; the
+three-dimensional tangent kernel alone is not such a reduction. Task and PR
+remain `IN_PROGRESS` / Draft.
