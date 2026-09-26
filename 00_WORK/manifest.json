@@ -83,17 +83,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION.md"
     },
     {
-      "id": "WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Formalize the merged #185 polynomial two-holonomy residual and the stable structural content of #196 quotient-completeness, with no Python rank result admitted as an axiom.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL.md"
-    },
-    {
       "id": "WRK-A4D-FORMALIZE-STAR-EINSTEIN-SEED",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
