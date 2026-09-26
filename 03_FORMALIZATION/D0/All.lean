@@ -279,6 +279,7 @@ import D0.Geometry.A4DAffineOriginSolderBoundary
 import D0.Geometry.A4DAffineShiftExteriorBlindness
 import D0.Geometry.A4DCellHessianTransverseModulus
 import D0.Geometry.A4DCenteredCartanClosureNoGo
+import D0.Geometry.A4DCheckerboardNonlinearObstruction
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.A4DComparisonJetNonselection
 import D0.Geometry.A4DConditionalSourcedDiagonalTransport
@@ -290,6 +291,7 @@ import D0.Geometry.A4DDiscreteEnergyKernel
 import D0.Geometry.A4DGoldenCarrierWeldBoundary
 import D0.Geometry.A4DGoldenRolePhaseRGDefect
 import D0.Geometry.A4DHorizontalDressingSecondJetFreedom
+import D0.Geometry.A4DJointHolonomyResidual
 import D0.Geometry.A4DLabelledEndpointLocalityPassport
 import D0.Geometry.A4DLabelledPathHolonomyDescent
 import D0.Geometry.A4DLocalReverseStarNoGo
@@ -331,6 +333,7 @@ import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DSourcedMismatchFactorPassport
 import D0.Geometry.A4DStaggeredFirstJetPathExpansion
 import D0.Geometry.A4DStaggeredHodgeSelector
+import D0.Geometry.A4DStarEinsteinSeed
 import D0.Geometry.A4DStarFiniteLorentzQuotient
 import D0.Geometry.A4DStarTranslationCartanHodgeNoGo
 import D0.Geometry.A4DSymRoleCentralDifference
