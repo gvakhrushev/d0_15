@@ -22,6 +22,31 @@ Merged #227 proves that the latter all-sheet statement is false: at the fixed fl
 
 No new action channel, Holst term, (arphi), boundary selector, spectral filter, or torsion constraint is introduced.
 
+## 0A. Source contract and epistemic boundary
+
+Repository search finds the declared sourced Palatini equation
+
+\[
+E_K=0,\qquad E_Q=\kappa T
+\]
+
+as the contract of this task. No separate owner in the audited lane establishes
+that every possible D0 matter realization has zero spin/connection current.
+Accordingly this research task is scoped to the **stress-only source class**
+specified by the brief.
+
+The positive target, if reached, means:
+
+- for this declared source class the smooth joint-critical branch has the
+  Einstein \(J^2\) gravitational response;
+- the source-visible UV connection sheets are cut by the metric equation;
+- source-invisible UV normal amplitudes are asymptotically harmless.
+
+It does **not** by itself derive the universal matter coupling, a fermionic
+spin-current law, Newton normalization, or the value of \(\kappa\). A later
+matter owner may replace \(E_K=0\) by a sourced connection equation; that
+would be a different joint problem.
+
 ## 1. Mandatory input audit
 
 The following owners were read before the present deductions.
