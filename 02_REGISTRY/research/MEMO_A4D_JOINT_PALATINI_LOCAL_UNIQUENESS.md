@@ -895,6 +895,117 @@ linear constraints, but it is not automatic on (N_0).
 
 No positive terminal is allowed if J5 remains only pointwise in (h).
 
+## 6B. Centered slow-background germ: J5 as a no-Puiseux-arc problem
+
+There is a sharper formulation of the uniform J5 gate.
+
+Let \(p\) range over one compact resonance/metric/background chart and let
+\(u\) be the physical UV normal coordinate after range/tangent reduction.
+Evaluate the literal joint reduced equation on the designated smooth
+approximate sheet and center it:
+
+\[
+r_h(p):=F(p,h,0),
+\qquad
+\widetilde F(p,h,u):=F(p,h,u)-r_h(p).
+\tag{6B.1}
+\]
+
+By the owned smooth construction,
+
+\[
+r_h=O(h^\infty).
+\]
+
+An exact joint sheet satisfies
+
+\[
+\widetilde F(p,h,u)=-r_h(p).
+\tag{6B.2}
+\]
+
+The load-bearing zero-source question is now
+
+\[
+\widetilde F(p,h,u)=0.
+\tag{6B.3}
+\]
+
+Assume the centered family is real analytic/subanalytic in the finite normal
+variables and the compact parameters after the declared finite
+stratification. Then the following failure implication is immediate from
+subanalytic curve selection:
+
+> If there are arbitrarily small \(h\) and nonzero normal zeros
+> \(u\to0\) of (6B.3), then there is a nontrivial real
+> analytic/Puiseux arc
+> \[
+> h=t^q,\qquad
+> u=t^m u_m+\cdots,\qquad u_m\ne0,
+> \]
+> solving the centered zero-source germ.
+
+Therefore an exact **no-Puiseux-germ** theorem,
+
+\[
+\boxed{
+\widetilde F(p,h,u)=0,\quad (h,u)\to(0,0)
+\Longrightarrow
+u=0
+}
+\tag{6B.4}
+\]
+
+uniformly on the compact parameter chart is sufficient to exclude the
+\(u^3-hu\) failure mechanism of §6A.
+
+Once the zero set of \(\widetilde F\) in a common compact tube is exactly the
+designated \(u=0\) fiber, the parameterized Łojasiewicz inequality gives some
+finite exponent \(N\) and constant \(C\) such that
+
+\[
+\|u\|^N
+\le
+C\|\widetilde F(p,h,u)\|
+\tag{6B.5}
+\]
+
+(after an equivalent norm/finite stratification if needed). Applying (6B.2),
+
+\[
+\|u\|
+\le
+C'\|r_h\|^{1/N}
+=
+O(h^\infty).
+\tag{6B.6}
+\]
+
+Thus the actual numerical value of the Puiseux/Łojasiewicz exponent is again
+irrelevant for \(C^\infty\) forcing.
+
+This gives a practical hierarchy for J5:
+
+1. first test the linear lifting shortcut of §5B;
+2. on its surviving kernel, compute the first possible \(h\)-dependent
+   weighted initial forms;
+3. prove that no nonzero Puiseux arc solves the **joint** centered equations;
+4. invoke (6B.5) rather than attempting to estimate every refinement
+   separately.
+
+The frozen J2/J3 workers provide the \(h=0\) initial forms. They do not alone
+prove (6B.4); the parent must include the first slow-background forms capable
+of changing the Newton polygon.
+
+### Scope caveat
+
+Curve selection applies to a genuine finite-dimensional/subanalytic normal
+model on a compact stratum. If the exact reduction leaves an increasing number
+of coupled physical UV variables with refinement, one must first prove a
+uniform finite normal-bundle reduction (or an equivalent Banach-analytic
+version). The parent does not infer such a reduction merely from the nine
+\(L=4\) representatives.
+
 ## 7. Smooth UV forcing: why any finite positive exponent is enough
 
 For one fixed (C^infty) realization, #216 owns the UV Fourier-tail estimate in the lattice sum norm:
