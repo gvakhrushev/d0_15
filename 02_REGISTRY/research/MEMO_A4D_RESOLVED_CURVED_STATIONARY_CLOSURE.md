@@ -305,7 +305,21 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    Scope: algebraic open-chart candidate recorded, not an exact root; full-12
    E(2) eliminate not attempted; Jac-QR still blocked.
 
-19. **2D Cayley subtangent warning.**
+19. **E(2) lean-NF DU1/subQR8 locus reconstruction — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_locus_recon_check.py`
+   (sha256 `df3b34c5…ff0cdf`; wall ~8.0s; PASS). Solves the recorded residual
+   3-gen ideal over Q on the open-chart locus `j_r2=0`, `j_r0=j_r1`:
+   open `j≠0` branch
+   `n3_r1=j*(n2_r1-n2_r0)/2`, `n2_r2=n3_r2*(4-j²)/(4*j)` with free
+   `(n2_r0,n2_r1,j,n3_r2)`. Reduced free-internal vanish **identically** on
+   this 4-param family. Exact curved witness
+   `(n2_r0,n2_r1,n3_r1,j,n2_r2,n3_r2)=(1,0,-1,2,0,0)` (plaquette `(0,1)`
+   curv²=8) certifies all **8 ambient** free-internal gens vanish; off-residual
+   control (`n3_r1=0`) has ambient `j_r2` cleared residual 2048. Exact
+   transverse at witness nonzero (`r0_K1=-6,…,r1_M3=22`) — **not** a full
+   8+6 root. Outcome `LOCUS_RECON_FREE_INTERNAL_FAMILY`.
+
+20. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -353,7 +367,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-QR-PIVOT-RECOVERY-BLOCKED-MISSING-JAC-DUMP;
     E2-JAC-QR-RECOMPUTE-BLOCKED-STAR-S-AMBIENT-MISMATCH;
     E2-LEAN-NF-L-ZERO-ONLY-FREE-E2-8P6-SAMPLE-JAC-RANK-14;
-    E2-LEAN-NF-DU1-SUBQR8-OPEN-CHART-J-LOCUS-CANDIDATE
+    E2-LEAN-NF-DU1-SUBQR8-OPEN-CHART-J-LOCUS-CANDIDATE;
+    E2-LEAN-NF-DU1-SUBQR8-LOCUS-RECON-FREE-INTERNAL-FAMILY
 
 Supporting:
 
@@ -366,16 +381,16 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** lean-NF identity D/U specialize delivered an
-**open-chart algebraic candidate** (not chart-closed): cert
-`…e2_lean_nf_du1_subqr8_check.py` (~81s) under L≡0 + `D=(1,1,1)`, `U=0` with
-subsystem-QR 8-free E(2) `[0,2,3,4,5,6,7,8]` (complement E(2)=0; locked NF
-not imposed). Open-chart forces `j_r2=0`, `j_r0=j_r1`; residual 3-gen locus
-ideal recorded. Next: **reconstruct exact open-chart coordinates on that
-locus**, or try (a) scout-near D with U+E(2) free under lean NF. Full-12 E(2)
-eliminate remains too heavy for minutes wall. Jac-QR of memo float witness
-still blocked. Do **not** re-impose locked E(2) NF. Still avoid blind 14-var /
-deg-33 Groebner. Filter by four-channel `R=R_*(C)`.
+**Primary (Track B):** lean-NF DU1/subQR8 open-chart locus reconstructed to a
+**4-param free-internal family** (cert `…locus_recon_check.py`, ~8s): open
+`j≠0` branch with exact curved witness free-internal-stationary; transverse
+at that witness nonzero. Next: **solve exact transverse on the 4-param
+family** (or prove open-chart curved transverse-empty). Cheap slice
+`n2_r1=n3_r2=0` already forces `n2_r0=0` (flat only) under transverse GB.
+Full-12 E(2) eliminate remains too heavy. Jac-QR of memo float witness still
+blocked. Do **not** re-impose locked E(2) NF. Still avoid blind 14-var /
+deg-33 Groebner. Filter by four-channel `R=R_*(C)` only if a full 8+6 point
+appears.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -426,6 +441,7 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_gaug
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_gauge_pack_scout_d_ufree_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_free_e2_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_locus_recon_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
