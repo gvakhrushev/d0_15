@@ -411,6 +411,90 @@ Equation (5.1) is a roadmap until the worker constructs (H_{QA}|_{ker H_{AA}}) e
 
 No nonlinear work is required on the source-visible orbit types if J1 certifies (N_0=0) there.
 
+## 5A. Visible/invisible splitting: only (N_0) is nonlinear
+
+Once J1 supplies the exact restriction
+
+[
+C_N:=H_{QA}|_N:N	o M,
+qquad N=ker H_{AA},
+]
+
+choose any fixed complement
+
+[
+N=N_0oplus N_{m vis},
+qquad
+N_0=ker C_N.
+]
+
+Then
+
+[
+C_N|_{N_{m vis}}
+]
+
+is injective. On one finite orbit representative its smallest nonzero singular
+value is positive. On a compact parameter stratum, if the rank is constant,
+continuity gives a positive lower bound
+
+[
+sigma_{m vis}>0
+]
+
+after shrinking to one rank chart. Hence there is a uniformly bounded left
+inverse (L_{m vis}) on the source-visible image.
+
+Write the resonant connection amplitude as
+
+[
+u=u_0+u_{m vis},
+qquad
+u_0in N_0,quad
+u_{m vis}in N_{m vis}.
+]
+
+The reduced metric equation has the form
+
+[
+C_Nu_{m vis}
++s_Q
++O(|u|^2+|q||u|)
+=0,
+	ag{5A.1}
+]
+
+because (C_Nu_0=0). Therefore, in any sufficiently small joint tube,
+
+[
+|u_{m vis}|
+le
+Cleft(
+|s_Q|+|u_0|^2+|q||u|
+ight).
+	ag{5A.2}
+]
+
+Consequences:
+
+1. a source-visible kernel direction such as #227 is **not** a nonlinear
+   Palatini obstruction;
+2. for smooth UV forcing (s_Q=O(h^infty)), the visible amplitude is
+   (O(h^infty)) once the invisible amplitude is (O(h^infty));
+3. no degree/Puiseux analysis is needed on (N_{m vis});
+4. all genuine nonlinear UV pressure is concentrated on (N_0), together
+   with any additional physical mixed-saddle sector that J1 may expose via
+   (kerSigma).
+
+This is the exact reason the registered 4/1/1 workers are sufficient **if and
+only if** J1 classifies every extra mixed saddle null as genuine metric
+gauge/physical IR data.
+
+At rank-change boundaries the complement must be changed chartwise. A global
+uniform claim requires a finite compact stratification on which
+(operatorname{rank}C_N) is constant; one cannot take a pseudoinverse through
+a rank jump and silently assume its norm stays bounded.
+
 ## 6. Joint nonlinear normal theorem needed from the residual sectors
 
 Let (u) denote coordinates on a physical source-invisible normal sector after:
