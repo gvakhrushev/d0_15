@@ -1253,6 +1253,29 @@ inside one of the source-invisible physical sectors is a terminal obstruction to
 A connection-stationary branch with (E_Q
 e0), such as #227, is not this no-go.
 
+## 12A. Gate ledger at the current head
+
+| Gate | Current status | Owner |
+|---|---|---|
+| nonlinear metric provenance \(Q=\Theta\eta\Theta^T\) | exact/merged | #208 |
+| IR coefficient \(T_1^{[2]}=\frac14E_\eta\) | exact/merged | #201 |
+| normal-center nonlinear degree-\(\le2\) cancellation | owned | #216/#223 |
+| fixed-realization normalized IR remainder \(O(h)\) | owned | #216/#223 |
+| response sensitivity to \(O(h^\infty)\) link correction | exact/merged | #226 |
+| all-\(E_K\)-sheet branch independence | exact **false** | #227 |
+| #227 tangent source-visible under \(E_Q\) | exact; parent + #227 | #232 |
+| exact sourced suppression of #227 family | exact parent consequence | #232 |
+| abstract full KKT/radical decomposition | exact linear algebra | #232 |
+| exact orbitwise \(N_0\) and full mixed saddle census | **pending** | #231 |
+| two one-dimensional joint residual germs | **pending** | #234 |
+| diagonal four-dimensional invisible joint germ | **pending** | #235 |
+| torsion characterization of #227 | REVIEW / diagnostic only | #233 |
+| slow-background uniform no-Puiseux/Łojasiewicz gate | **open parent gate after workers** | #232 |
+| continuum joint coefficient transfer | conditional on previous row | #201/#216/#223/#226 + #232 |
+
+The task must remain Draft/IN_PROGRESS while any load-bearing pending/open row
+above survives.
+
 ## 12. Current boundary
 
 No worker result is silently assumed. At this checkpoint:
