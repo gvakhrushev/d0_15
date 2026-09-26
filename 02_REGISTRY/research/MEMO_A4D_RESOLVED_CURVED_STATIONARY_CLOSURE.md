@@ -315,3 +315,40 @@ The exact problem is now reduced to:
 The next certificate should derive those fourteen equations symbolically and
 perform exact elimination / algebraic-number reconstruction. This is the
 smallest current exactification system.
+
+
+## 6. NUMERICAL/CERTIFICATION SCOUT — literal periodic single-site/single-edge Euler check
+
+The homogeneous search was subjected to a stronger hostile control: evaluate the
+literal (L=2) periodic action and vary only one physical degree of freedom at
+a time, rather than varying all translation-equivalent copies together.
+
+For the representative (E(2)) curved candidate:
+
+- one origin-site solder matrix was varied in all 16 raw components;
+- one origin edge of each Role was varied independently in all six Lorentz
+  tangent directions;
+- all other periodic edges/sites were held fixed.
+
+The resulting local Euler norms are
+
+[
+|E_Theta(x_0)|_2=7.68	imes10^{-16},
+]
+
+and, for the four origin edges,
+
+[
+8.70	imes10^{-16},quad
+1.36	imes10^{-15},quad
+1.73	imes10^{-15},quad
+1.39	imes10^{-15}.
+]
+
+Thus the numerical root is not merely stationary under homogeneous collective
+variations. It passes the literal single-site and single-edge periodic Euler
+test to machine precision.
+
+This remains NUMERICAL/EXPLORATORY because the link/solder coordinates have not
+yet been algebraically reconstructed. But the remaining blocker is now purely
+exactification, not a hidden local-Euler failure.
