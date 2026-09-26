@@ -1086,3 +1086,43 @@ gate is to define that exact finite/reduced system before interpreting the
 linear Newton correction as an amplitude series. This check is not a no-go
 for the other seven supports, larger carriers, or the full configuration
 space. No L=3 test is started without an exact L=2 witness.
+
+### 9.5 Exact matched-affine residual jet on the selected support
+
+The selected all-face-active seven-support has the exact Cayley path in §9.4.
+Now put a homogeneous matched translation vector `b_r ∈ ℚ^4` on every
+edge of role `r` at all 16 sites; regard its 16 components as free variables,
+rather than choosing a special `b`. The standalone exact
+certificate
+`a4d_resolved_curved_stationary_e2_support7_affine_order2_check.py`
+uses truncated rational matrix jets and the repository's existing joint
+residual/channel formulas.
+
+For every face, `det(I-P)` and its first coefficient vanish. On the four
+curved faces, `adj(I-P)` has first coefficient of rank two. More precisely,
+the `epsilon^2` determinant coefficients are `-1483524/169` on faces
+`(0,2),(1,2)` and `-484/169` on `(0,3),(1,3)`.
+
+For every ordered distinct face pair, the coefficient maps of the affine
+joint residual satisfy
+`R_0(b)=R_1(b)=0` for every homogeneous matched `b`. At order two, the
+30 ordered pairs split into 10 zero maps, 8 maps of rank 2, and 12 maps of
+rank 3. Thus the residual itself first activates at order `epsilon^2` for
+generic homogeneous matched translations on this path; adjugate activation
+at order one alone did not establish this.
+
+After summing the 16 identical sites, each of the four existing channel
+quadratic forms has a nonzero `epsilon^4` coefficient in the 16 components of
+`b`. Their exact matrix ranks are respectively `7` (`eta,adj`), `3`
+(`eta,opp`), `8` (`n,adj`), and `4` (`n,opp`). This is only the
+first activation of the existing channel forms. It does not solve the
+matched-affine equation `R=R_*(C)`, the affine Euler equations, or the full
+Lorentz Euler equations.
+
+The order-zero star Euler defect at the base point remains nonzero (§9.4).
+Consequently the prescribed `x(epsilon)=epsilon*v+epsilon^2*w+...` is not a
+stationary formal branch through this point: its constant Euler coefficient
+is already `E_0 != 0`. This rejects that base-anchored branch ansatz, not
+the support as a finite nonlinear search and not other stationary seeds.
+The remaining finite L=2 exactification is open; no L=3 hostile control has
+started.
