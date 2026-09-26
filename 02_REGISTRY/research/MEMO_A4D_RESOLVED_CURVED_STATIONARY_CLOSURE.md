@@ -334,7 +334,21 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    `TRANSVERSE_ON_4PARAM_FLAT_OK_CURVED_GB_BLOCKED`. **Not** a curved 8+6
    root; **not** an open-chart curved transverse-empty theorem.
 
-21. **2D Cayley subtangent warning.**
+21. **E(2) lean-NF DU1/subQR8 transverse family Newton — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_newton_check.py`
+   (sha256 `651bbdc5…e1fa1a`; wall ~3.0s; PASS). Float Gauss-Newton /
+   `scipy.optimize.least_squares` on the recorded 6 transverse cleared gens
+   over the 4-param family `(a,b,jj,ee)`, from the curved free-internal witness
+   `(1,0,2,0)` [= 6-tuple `(1,0,-1,2,0,0)`] and 11 other curved seeds. **No
+   curved float root:** all near-zero Newton hits (`nf < 1e-6`, 10/12 seeds)
+   collapse to the flat locus `a≈b≈ee≈0` (open `jj`); best curved residual
+   stays `||trans||_2 ≈ 9.55` (bound-limited). Exact rational nearby + fixed-`j`/`a=1`
+   small-Q grid + univariate-in-`ee` slices (gcd deg 0 / no common root) find
+   **no** curved rational transverse zero. Live `dS_transverse` at witness
+   matches locus_recon (`r0_K1=-6,…,r1_M3=22`). No multi-var GB / resultant
+   chain. Outcome `TRANSVERSE_NEWTON_NO_CURVED_ROOT_COLLAPSE_TO_FLAT`.
+
+22. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -384,7 +398,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-LEAN-NF-L-ZERO-ONLY-FREE-E2-8P6-SAMPLE-JAC-RANK-14;
     E2-LEAN-NF-DU1-SUBQR8-OPEN-CHART-J-LOCUS-CANDIDATE;
     E2-LEAN-NF-DU1-SUBQR8-LOCUS-RECON-FREE-INTERNAL-FAMILY;
-    E2-TRANSVERSE-ON-4PARAM-FLAT-LOCUS-OK-CURVED-BRANCH-GB-BLOCKED
+    E2-TRANSVERSE-ON-4PARAM-FLAT-LOCUS-OK-CURVED-BRANCH-GB-BLOCKED;
+    E2-TRANSVERSE-NEWTON-NO-CURVED-ROOT-COLLAPSE-TO-FLAT
 
 Supporting:
 
@@ -398,16 +413,18 @@ No continuum Einstein claim.
 ### SINGLE NEXT BLOCKER
 
 **Primary (Track B):** transverse gens on the 4-param free-internal family are
-recorded (cert `…transverse_family_check.py`, ~1.25s); flat locus
-`a=b=ee=0` and open-chart `a=0` / cheap `b=ee=0` slices force flat only.
-Curved `a≠0` branch remains **GB-blocked** (resultant `H` deg~26; pairwise
-stripped-resultant gcd=1; multi-var GB exceeds minutes wall). Next: **cheaper
-curved specialize** (fix one free param rationally) **OR numerical Newton**
-on the 4-param family toward transverse=0 — **not** blind multi-var GB /
-deg-26 resultant chains. Full-12 E(2) eliminate remains too heavy. Jac-QR
-still blocked. Do **not** re-impose locked E(2) NF. Still avoid blind 14-var /
-deg-33 Groebner. Filter by four-channel `R=R_*(C)` only if a full 8+6 point
-appears.
+recorded; flat locus / `a=0` / `b=ee=0` force flat only; curved GB-blocked.
+**Newton wave** (cert `…transverse_family_newton_check.py`, ~3.0s): 12 curved
+seeds → **no curved float root**; near-zero hits collapse to flat
+`a≈b≈ee≈0`; best curved `||trans||_2 ≈ 9.55`; no exact rational curved
+transverse zero on nearby/grid/univariate slices. Next: either accept
+**flat-only transverse locus** under this 4-param free-internal family and
+**escalate packing** (subsystem-QR complement / lean NF / other open-chart
+parametrization), OR try further univariate deg≤4 specializations only —
+**still forbid** blind multi-var GB / deg-26 resultant chains. Full-12 E(2)
+eliminate remains too heavy. Jac-QR still blocked. Do **not** re-impose
+locked E(2) NF. Still avoid blind 14-var / deg-33 Groebner. Filter by
+four-channel `R=R_*(C)` only if a full 8+6 point appears.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
