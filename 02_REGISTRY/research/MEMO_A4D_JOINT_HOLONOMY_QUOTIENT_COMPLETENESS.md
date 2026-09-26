@@ -959,3 +959,6 @@ No Lean, claim/release, BOOK or public scientific promotion is made.
 Exact certificate:
 
 \`02_REGISTRY/research/certificates/a4d_joint_holonomy_quotient_completeness_check.py\`.
+
+
+Replacement validation baseline: `6dd9a7dba6a0845eb40e4ee0c511d628c2d6aaed`.
