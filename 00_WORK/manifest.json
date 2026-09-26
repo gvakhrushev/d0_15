@@ -40,11 +40,11 @@
       "id": "EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Prove or exactly obstruct refinement-uniform existence and normal/Hölder rescue for the full coupled naked-star connection Euler correspondence over fixed smooth sampled backgrounds, together with a polynomial metric-response sensitivity bound sufficient to promote the already-owned IR/locality coefficient to the exact stationary J2 response.",
+      "exit_condition": "Prove or exactly obstruct refinement-uniform existence and normal/H\u00f6lder rescue for the full coupled naked-star connection Euler correspondence over fixed smooth sampled backgrounds, together with a polynomial metric-response sensitivity bound sufficient to promote the already-owned IR/locality coefficient to the exact stationary J2 response.",
       "brief": "00_WORK/tasks/EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE.md"
     },
     {
