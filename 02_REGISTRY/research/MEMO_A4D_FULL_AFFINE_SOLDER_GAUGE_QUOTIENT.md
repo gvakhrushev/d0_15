@@ -78,19 +78,23 @@ S_\star[e^c,A]=-\frac43
 under a pure node translation \(c\), while the same certificate verifies exact
 proper-Lorentz invariance.
 
-Therefore the terminal verdict is
+Therefore the terminal verdict for the **constructed observer-completed
+affine solder action** is
 
 \[
 \boxed{
-\texttt{STAR-DENSITY-NONLINEAR-AFFINE-TRANSLATION-SYMMETRY-NOGO}.
+\texttt{OBSERVER-COMPLETED-AFFINE-TRANSLATION-NOT-OFFSHELL-SYMMETRY}.
 }
 \]
 
-This is a no-go for treating the **full affine translation subgroup** as an
-off-shell gauge symmetry of the already-selected finite \(\star\)-density.
+This is an exact no-go for quotienting by that canonical currently-constructed
+affine translation law.  It is not yet a universal classification of every
+possible nonlinear solder translation law agreeing with the owned flat chart:
+the task does not prove uniqueness of curvature-dependent completions away
+from \(L=I\).
 
-Consequently there is no full nonlinear affine-gauge physical quotient
-\(d_P\) for this action as it stands.
+Consequently no full nonlinear affine-gauge physical quotient \(d_P\) has
+been derived for the accepted action.
 
 PR #175's scoped flat statement
 
@@ -103,21 +107,31 @@ the forward-coframe directions are exact flat Hessian nulls. This PR proves
 that they do **not** extend to a global off-shell affine gauge orbit on curved
 backgrounds.
 
-The new strongest blocker is therefore not "missing gauge action" but
+The old "missing gauge action" blocker is therefore sharpened, but not replaced
+by a universal translation no-go.  The strongest exact boundary is
 
 \[
 \boxed{
-\texttt{AFFINE-TRANSLATION-NOT-OFFSHELL-SYMMETRY-OF-STAR-DENSITY}.
+\texttt{FULL-AFFINE-SOLDER-GAUGE-LAW-UNSELECTED-BEYOND-FLAT}
 }
 \]
 
-Any attempt to restore a full affine translation quotient must either:
+together with the exact negative control
 
-1. enlarge/change the action by independently justified
-   translation-compensating terms; or
-2. prove a separate on-shell symmetry mechanism after constraints.
+\[
+\boxed{
+\texttt{OBSERVER-COMPLETED-AFFINE-TRANSLATION-NOT-OFFSHELL-SYMMETRY}.
+}
+\]
 
-Neither is owned. In particular PR #175 already killed the shortcut that
+A future route may:
+1. classify all admissible nonlinear solder translation laws and prove
+   uniqueness/no-go;
+2. enlarge the action by independently justified translation-compensating
+   terms; or
+3. prove a separate on-shell symmetry mechanism after constraints.
+
+None is owned. In particular PR #175 already killed the shortcut that
 identifies the finite connection equation with the naive torsion equation.
 
 Exact certificate:
@@ -864,7 +878,19 @@ Hence
 This is an off-shell finite periodic counterexample. It is not a local-density
 artifact and not a boundary-effect claim.
 
-Therefore pure node translations are not a symmetry of the accepted action.
+Therefore pure node translations **under the observer-completed law (5.1)**
+are not a symmetry of the accepted action.
+
+---
+
+### 8.1 KILL-FIRST short-circuit for the requested L=3 control
+
+The task brief also requested a nonconstant L=3 translation control.  Once the
+exact full-periodic L=2 witness (8.5) disproves invariance of the candidate
+observer-completed law, a second lattice size cannot restore that universal
+symmetry claim.  Under the repository KILL-FIRST rule the L=3 duplicate was
+therefore not used as an additional acceptance gate.  Future claims about
+scaling or continuum behaviour would require it; this no-go does not.
 
 ---
 
@@ -961,8 +987,10 @@ A physical operator quotient by a transformation requires that transformation
 to be an actual redundancy/symmetry of the action or of a separately proved
 on-shell constraint system.
 
-Equation (8.5) shows that full affine translations are not an off-shell
-symmetry.
+Equation (8.5) shows that the observer-completed affine translations are not
+an off-shell symmetry.  Since no uniqueness theorem for all nonlinear
+curvature-dependent solder translation laws is proved here, this does not
+exclude every conceivable completion.
 
 Therefore the quotient
 
@@ -1055,9 +1083,17 @@ Equation (8.5) means a repair cannot be a mere change of quotient language.
 
 It must change the mathematical system.
 
-There are only two honest routes.
+There are three honest routes.
 
-### 14.1 Enlarge the action
+### 14.1 Classify/modify the nonlinear solder gauge law
+
+The flat theorem fixes the translation chart only at \(L=I\).  A different
+curvature-dependent nonlinear completion could in principle agree there while
+differing on curved backgrounds.  Such a law would need exact composition,
+Lorentz covariance, ownership/naturality, and a proof of star-density
+invariance.  No such classification or survivor is owned.
+
+### 14.2 Enlarge the action
 
 Add independently justified terms whose pure-translation variation cancels
 (7.4).
@@ -1079,7 +1115,7 @@ for the accepted linear-curvature insertion no longer implies uniqueness of the
 
 Any such term needs its own TYPE/Hom-space/symmetry/variation classification.
 
-### 14.2 Prove an on-shell symmetry
+### 14.3 Prove an on-shell symmetry
 
 Derive a finite constraint system under which (7.4) vanishes or becomes a
 constraint combination.
@@ -1204,17 +1240,21 @@ postulate.
     A global rational proper Lorentz frame leaves the same action exactly
     unchanged.
 
-17. **Off-shell affine-translation no-go.**  
-    The full affine translation subgroup is not an off-shell gauge symmetry of
-    the accepted \(\star\)-density.
+17. **Observer-completed off-shell translation no-go.**  
+    The explicit observer-completed affine translation law of Proposition 8 is
+    not an off-shell gauge symmetry of the accepted \(\star\)-density.
 
-18. **Flat-null/global-gauge distinction.**  
+18. **No universal gauge-law classification yet.**  
+    The task does not prove uniqueness of all nonlinear curvature-dependent
+    solder translation laws compatible with the flat chart.
+
+19. **Flat-null/global-gauge distinction.**  
     Exact flat forward-coframe Hessian nulls do not imply a nonlinear affine
     translation gauge orbit.
 
-19. **Full affine quotient no-go for current action.**  
-    A physical quotient by full affine node translations is not defined for
-    the accepted action without additional dynamics or an enlarged action.
+20. **Full affine quotient remains unclassified.**  
+    The explicit observer-completed law cannot be used for the quotient, and no
+    alternative nonlinear law has yet been selected or proved invariant.
 
 ---
 
@@ -1257,21 +1297,26 @@ But that does **not** rescue the desired physical quotient.
 The accepted finite \(\star\)-density fails exact pure-translation invariance on
 a curved periodic background.
 
-Therefore the terminal statement is
+Therefore the terminal scoped statements are
 
 \[
 \boxed{
-\texttt{STAR-DENSITY-NONLINEAR-AFFINE-TRANSLATION-SYMMETRY-NOGO}.
+\texttt{OBSERVER-COMPLETED-AFFINE-TRANSLATION-NOT-OFFSHELL-SYMMETRY}
 }
 \]
 
-The strategic next gate is no longer representation theory. It is a choice
-between:
+and
 
-- **Lorentz-only nonlinear quotient**, keeping affine translations as physical
-  background data rather than gauge; or
-- a genuinely new **translation-invariant action completion / on-shell
-  constraint mechanism**.
+\[
+\boxed{
+\texttt{FULL-AFFINE-SOLDER-GAUGE-LAW-UNSELECTED-BEYOND-FLAT}.
+}
+\]
+
+The strategic next gate is to classify whether the nonlinear translation law
+is forced.  Only if that classification closes should the theory choose
+between a Lorentz-only quotient, an action completion, or an on-shell
+constraint mechanism.
 
 That fork must be decided explicitly. It must not be hidden by quotienting flat
 Hessian null directions as though they were already a global affine gauge
