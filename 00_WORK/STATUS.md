@@ -6,16 +6,18 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
-| CONTROL | 1 | 0 | 0 | 0 | 1 | 0 / 2 |
+| CONTROL | 1 | 0 | 0 | 2 | 3 | 2 / 2 |
 | EXPENSIVE | 0 | 0 | 0 | 0 | 0 | 0 / 3 |
 | WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
-| **Total** | **1** | **0** | **0** | **0** | **1** | **0 / 10** |
+| **Total** | **1** | **0** | **0** | **2** | **3** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
 | CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | CONTROL | PLANNED | ROOT | - |
+| CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE | CONTROL | REVIEW | ROOT | - |
+| CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT | CONTROL | REVIEW | ROOT | - |
 
 ## Registry Health & Metrics
 
