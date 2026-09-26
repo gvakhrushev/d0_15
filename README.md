@@ -366,9 +366,9 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Work Queue & Control Plane
 
-- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 2, WORKER: 4 (Total: 7)
+- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 1, WORKER: 3 (Total: 5)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
-- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 1/3, WORKER: 0/5
+- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/5
 - **Legacy Scaffolds Remaining**: 0
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->
