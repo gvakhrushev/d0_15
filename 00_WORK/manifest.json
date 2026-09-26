@@ -37,17 +37,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "BLOCKED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Prove or exactly obstruct local joint-critical Palatini control of the smooth Einstein branch after the all-sheet E_K rescue no-go, including exact treatment of source-invisible resonance modes and recovery of the owned -1/2 G coefficient on the designated joint branch.",
-      "brief": "00_WORK/tasks/EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS.md"
-    },
-    {
       "id": "WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -68,17 +57,6 @@
       ],
       "exit_condition": "Compute the first nonzero joint reduced E_K/E_Q germ on the diagonal four-dimensional source-invisible sector and certify whether the joint vacuum zero is isolated or supports a nontrivial curved germ.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM.md"
-    },
-    {
-      "id": "WRK-A4D-227-TORSION-DIAGNOSTIC",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify the canonical discrete Cartan/open-torsion 2-form of the merged #227 curved connection-stationary family, its small-amplitude order, and whether torsion-free intersects that family only at identity, without promoting torsion to a new action constraint.",
-      "brief": "00_WORK/tasks/WRK-A4D-227-TORSION-DIAGNOSTIC.md"
     },
     {
       "id": "WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS",
