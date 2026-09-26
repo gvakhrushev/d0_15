@@ -2,13 +2,20 @@
 
 Class: `EXPENSIVE`  
 State on registration: `IN_PROGRESS`  
-Parent: `ROOT`
+Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 
 Repository: `gvakhrushev/d0_15`  
 Base: `main`  
 Branch: `exp/a4d-joint-holonomy-quotient-completeness`  
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_HOLONOMY_QUOTIENT_COMPLETENESS.md`  
 Execution: `GitHub-first`
+
+## Why delegated
+
+This is an independent exact finite classification problem rather than a small
+CONTROL repair: it requires sector-by-sector symbolic rank calculations,
+Role-orbit decomposition, hostile generic controls and scalar-channel
+classification.
 
 ## Objective
 
@@ -79,3 +86,17 @@ interpretation.
 
 Report the exact quotient rank, orbit-rank table, scalar-channel classification,
 flat regression, and the first remaining selector/modulus. Do not self-merge.
+
+
+## GitHub execution contract
+
+Work only on `exp/a4d-joint-holonomy-quotient-completeness`.
+Keep the primary memo and exact certificate durable in this PR.
+Before Ready, retire this EXPENSIVE task from the manifest/status, delete this
+brief, set the PR lifecycle to REVIEW and satisfy repository guards.
+Do not self-merge.
+
+## Chat handoff
+
+Return PR #186, the terminal quotient-rank/modulus verdict, final guard status,
+and the next selector blocker.
