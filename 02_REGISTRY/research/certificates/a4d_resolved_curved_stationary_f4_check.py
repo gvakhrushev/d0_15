@@ -9,6 +9,7 @@ Channels (do NOT collapse adj=opp):
 with adj = |S1capS2|=1, opp = |S1capS2|=0, eta = Lorentz, n = observer h_n.
 
 Does NOT claim a curved stationary root or a final F4 no-go.
+Includes scoped 6D Cayley + ambient ORIGIN28 span obstructions.
 Does NOT open Holst/phi/new I-channels.
 """
 from __future__ import annotations
@@ -710,8 +711,120 @@ print(
 )
 
 
+# ===========================================================================
+# SECTION G -- EXACT ambient origin-link (+ free-b) span obstruction (scoped)
+# ===========================================================================
+# Widen beyond the 6D Cayley *chart* parameter space: at the same rational
+# background p=(2/5)^6 with matched b=e0, take exact FD gradients in all
+# 6 so(1,3) generators independently on each of the 4 ORIGIN edges (24 dirs),
+# then append 4 free matched-edge translation-component directions (g_b=0 by
+# relative-solder independence of S_star).  This is the full left-Cayley
+# tangent space to Lorentz links at the origin sites plus free b on the
+# matched edge -- not a 6-parameter subchart.
+print("SECTION_SPAN_OBSTRUCTION_AMBIENT_ORIGIN28")
+
+def _ambient_span_at(params, bf, h_step=Rational(1, 20)):
+    links0 = make_links_6(params)
+    S0 = star_S_id(links0)
+    I0 = four_channel_I(links0, bf)
+    nz = nonzero_curved_cells(links0)
+    gcols = []
+    Icols = []
+    for r in range(4):
+        for g in GENS6:
+            links1 = dict(links0)
+            links1[(ORIGIN, r)] = sp.simplify(
+                cayley_from_A(h_step * g) * links0[(ORIGIN, r)]
+            )
+            S1 = star_S_id(links1)
+            I1 = four_channel_I(links1, bf)
+            gcols.append(sp.simplify((S1 - S0) / h_step))
+            Icols.append(
+                Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+            )
+    # Free b-component directions on the matched ORIGIN edge-0.
+    base_b = bf[(ORIGIN, 0)]
+    for a in range(4):
+        bf1 = zero_bfield()
+        delta = zeros(4, 1)
+        delta[a] = h_step
+        bf1[(ORIGIN, 0)] = base_b + delta
+        S1 = star_S_id(links0)  # S_star is b-independent in this chart
+        I1 = four_channel_I(links0, bf1)
+        gcols.append(sp.simplify((S1 - S0) / h_step))
+        Icols.append(
+            Matrix([sp.simplify((I1[j] - I0[j]) / h_step) for j in range(4)])
+        )
+    gvec = Matrix(gcols)
+    B = Matrix(len(gcols), 4, lambda a, j: Icols[a][j])
+    return {
+        "nz": nz,
+        "I": I0,
+        "S": S0,
+        "rankB": B.rank(),
+        "rankAug": B.row_join(-gvec).rank(),
+        "g_nonzero": sum(1 for x in gvec if x != 0),
+        "n_dirs": len(gcols),
+    }
+
+_amb = _ambient_span_at(p6, bf6)
+check("AMB28_CURVED_CELLS_POSITIVE", _amb["nz"] > 0)
+check("AMB28_I_CHANNELS_ACTIVE", any(x != 0 for x in _amb["I"]))
+check("AMB28_N_DIRS_28", _amb["n_dirs"] == 28)
+check("AMB28_RESPONSE_RANK_4", _amb["rankB"] == 4)
+check("AMB28_AUGMENTED_RANK_5", _amb["rankAug"] == 5)
+check("AMB28_EXACT_NOT_IN_SPAN", _amb["rankB"] < _amb["rankAug"])
+print(
+    "AMB28_nz", _amb["nz"],
+    "rankB", _amb["rankB"],
+    "rankAug", _amb["rankAug"],
+    "g_nonzero", _amb["g_nonzero"],
+    "n_dirs", _amb["n_dirs"],
+)
+print(
+    "RESULT_AMB28: at rational Cayley background p=(2/5)^6 with matched b=e0,"
+    " exact FD gradients in the full 24-dim left-Cayley so(1,3) tangent space"
+    " on the four ORIGIN edges, plus 4 free b-component directions on the"
+    " matched edge, satisfy rank B=4 < rank[B|-g]=5, so -grad S_star is NOT"
+    " in im B=span{grad I_j}."
+)
+print(
+    "SCOPE_AMB28: widens the 6D Cayley *chart* obstruction to the ambient"
+    " ORIGIN-link Lorentz tangent + free matched-edge b at one rational"
+    " background; still not a global F4 no-go (no free solder, no all-site"
+    " Pi quotient, no claim outside this background family)."
+)
+
+# Second ambient witness: mixed-sign Cayley background from the 5-point grid.
+print("SECTION_SPAN_OBSTRUCTION_AMBIENT_ORIGIN28_MIXED")
+_p_mix = [
+    Rational(-2, 5), Rational(2, 5), Rational(1, 4),
+    Rational(-1, 3), Rational(2, 7), Rational(1, 5),
+]
+_amb_mix = _ambient_span_at(_p_mix, bf6)
+check("AMB28_MIX_CURVED_CELLS_POSITIVE", _amb_mix["nz"] > 0)
+check("AMB28_MIX_I_CHANNELS_ACTIVE", any(x != 0 for x in _amb_mix["I"]))
+check("AMB28_MIX_RESPONSE_RANK_4", _amb_mix["rankB"] == 4)
+check("AMB28_MIX_AUGMENTED_RANK_5", _amb_mix["rankAug"] == 5)
+check("AMB28_MIX_EXACT_NOT_IN_SPAN", _amb_mix["rankB"] < _amb_mix["rankAug"])
+print(
+    "AMB28_MIX_nz", _amb_mix["nz"],
+    "rankB", _amb_mix["rankB"],
+    "rankAug", _amb_mix["rankAug"],
+)
+print(
+    "RESULT_AMB28_MIX: mixed-sign Cayley background also has ambient"
+    " ORIGIN28 rankB=4 < rankAug=5 with C!=0 and active I_j."
+)
+print(
+    "SCOPE_AMB28_MIX: second ambient witness only; still background-scoped."
+)
+
+
 print("RESULT_F4_CHECKPOINT: support obstruction on R=0 locus certified;"
       " response matrix M rank=4/ker=0; scoped 6D Cayley span obstruction"
-      " rankB=4<rankAug=5 on a 5-point rational grid; one-boost structural lemmas certified.")
+      " rankB=4<rankAug=5 on a 5-point rational grid; ambient ORIGIN28"
+      " (24 link + 4 free-b) span obstruction rankB=4<rankAug=5 at two"
+      " rational backgrounds; one-boost structural lemmas certified.")
 print("SCOPE: no curved stationary witness; no broad finite-carrier claim;"
-      " no continuum Einstein.")
+      " no continuum Einstein; ambient widen is NOT yet a global Pi no-go.")
