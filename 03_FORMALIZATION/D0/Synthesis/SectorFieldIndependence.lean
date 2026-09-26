@@ -381,7 +381,6 @@ def sigmaTransport : SectorCharacterAlgebra ≃ₐ[ℚ] SectorCharacterAlgebra :
 @[simp] theorem sigmaTransport_im (z : SectorCharacterAlgebra) :
     (sigmaTransport z).im = -z.im := rfl
 
-set_option maxHeartbeats 1000000 in
 /-- Each sector sign is an involution. -/
 theorem sector_signs_involutive (z : SectorCharacterAlgebra) :
     sigmaAlpha (sigmaAlpha z) = z

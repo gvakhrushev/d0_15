@@ -6,20 +6,18 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
-| CONTROL | 1 | 0 | 0 | 2 | 3 | 2 / 2 |
+| CONTROL | 0 | 0 | 0 | 2 | 2 | 2 / 2 |
 | EXPENSIVE | 0 | 1 | 0 | 0 | 1 | 1 / 3 |
-| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 5 |
-| **Total** | **2** | **1** | **0** | **2** | **5** | **3 / 10** |
+| WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 5 |
+| **Total** | **0** | **1** | **0** | **2** | **3** | **3 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
-| CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | CONTROL | PLANNED | ROOT | - |
-| WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1 | WORKER | PLANNED | CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1 | D0-TRACEABILITY-STATUS-TAXONOMY-001, D0-FINAL-BRIDGE-INDEX-001 |
-| CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE | CONTROL | REVIEW | ROOT | - |
+| CTRL-POST-MERGE-CONTROL-CLOSEOUT | CONTROL | REVIEW | ROOT | - |
 | CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT | CONTROL | REVIEW | ROOT | - |
-| EXP-A4D-STAR-TRANSLATION-INVARIANT-ACTION-COMPLETION | EXPENSIVE | IN_PROGRESS | CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT | - |
+| EXP-A4D-STAR-TRANSLATION-INVARIANT-ACTION-COMPLETION | EXPENSIVE | IN_PROGRESS | CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-HODGE-LINKS-001 |
 
 ## Registry Health & Metrics
 

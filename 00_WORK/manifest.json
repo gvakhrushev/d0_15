@@ -16,34 +16,13 @@
   ],
   "tasks": [
     {
-      "id": "CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "PLANNED",
-      "affected_claims": [],
-      "exit_condition": "The overnight formalization maintenance worker is merged or terminally scoped, concurrent scientific PR files remain untouched, and main is green with the durable debt audit installed.",
-      "brief": "00_WORK/tasks/CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1.md"
-    },
-    {
-      "id": "WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1",
-      "class": "WORKER",
-      "parent": "CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-TRACEABILITY-STATUS-TAXONOMY-001",
-        "D0-FINAL-BRIDGE-INDEX-001"
-      ],
-      "exit_condition": "A large safe maintenance wave closes the audited formalization debt target without changing public theorem statements or scientific status, installs non-growth checks, passes narrow builds and final D0.All, and self-retires in its execution PR.",
-      "brief": "00_WORK/tasks/WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1.md"
-    },
-    {
-      "id": "CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE",
+      "id": "CTRL-POST-MERGE-CONTROL-CLOSEOUT",
       "class": "CONTROL",
       "parent": "ROOT",
       "state": "REVIEW",
       "affected_claims": [],
-      "exit_condition": "The selected canonical star-density is pressure-tested through exact/linearized connection and coframe variation, torsion/constraint elimination, and gauge/physical quotient; d_E and d_P are classified or one exact downstream blocker is named.",
-      "brief": "00_WORK/tasks/CTRL-A4D-STAR-DENSITY-VARIATION-PRESSURE.md"
+      "exit_condition": "Merged nightly-maintenance and nonlinear-Lorentz control rows are retired without altering their durable artifacts, and the repository control plane is internally consistent and green.",
+      "brief": "00_WORK/tasks/CTRL-POST-MERGE-CONTROL-CLOSEOUT.md"
     },
     {
       "id": "CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT",
@@ -59,7 +38,10 @@
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-FULL-AFFINE-SOLDER-GAUGE-QUOTIENT",
       "state": "IN_PROGRESS",
-      "affected_claims": [],
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
+        "D0-HODGE-LINKS-001"
+      ],
       "exit_condition": "Under the fixed observer-completed affine node action from the accepted full-affine boundary packet, classify the minimal local Lorentz/Role-natural scalar action completion built from already owned affine/solder relative data. Either construct a translation-invariant completion with its coefficient/moduli dimension and flat-regression effects, or prove a scoped no-go and name the first new primitive required.",
       "brief": "00_WORK/tasks/EXP-A4D-STAR-TRANSLATION-INVARIANT-ACTION-COMPLETION.md"
     }
