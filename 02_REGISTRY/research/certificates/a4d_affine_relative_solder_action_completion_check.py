@@ -29,8 +29,10 @@ The certificate checks:
   * on the flat translation-gauge chart, W^(1)=eta exactly;
   * a nonzero independent affine shift changes the completed action, so b is
     not erased;
-  * one curved L=2 witness has injective covariant node-difference D_L, giving
-    a trivial translation stabilizer on that finite background.
+  * one curved L=2 witness has injective covariant node-difference D_L;
+  * nevertheless the completed action has a larger accidental edge-diagonal
+    invariance: a one-edge matched (Theta,b) shift lies outside im(D_L) but
+    leaves W and the action exactly unchanged.
 
 No Einstein/diffeomorphism/torsion-free/time/wave interpretation is encoded.
 """
@@ -461,9 +463,58 @@ def covariant_node_difference_matrix(links):
 DL = covariant_node_difference_matrix(links)
 check("CURVED_TRANSLATION_STABILIZER_TRIVIAL", DL.rank() == 64)
 
+# ---------------------------------------------------------------------------
+# Fatal overquotient control: matched edge shift outside node-gauge image
+# ---------------------------------------------------------------------------
+
+# u is supported on one edge/component.  If it were a pure node translation,
+# it would lie in the image of D_L.  Exact augmented rank says it does not.
+u = sp.zeros(len(SITES) * 4 * 4, 1)
+row = 0
+for x in SITES:
+    for r in range(4):
+        for a in range(4):
+            if x == origin and r == 0 and a == 0:
+                u[row] = 1
+            row += 1
+
+check("ONE_EDGE_MATCHED_SHIFT_NOT_NODE_GAUGE",
+      DL.row_join(u).rank() == 65)
+
+theta_match = {
+    key: sp.Matrix(value)
+    for key, value in theta0.items()
+}
+b_match = {
+    key: sp.Matrix(value)
+    for key, value in zero_b.items()
+}
+edge_u = sp.Matrix([1, 0, 0, 0])
+theta_match[(origin, 0)] = theta_match[(origin, 0)] + edge_u.T
+b_match[(origin, 0)] = b_match[(origin, 0)] + edge_u
+
+W_match = relative_rows(theta_match, b_match, rest_n, 1)
+W_base = relative_rows(theta0, zero_b, rest_n, 1)
+
+check("MATCHED_NONGAUGE_SHIFT_LEAVES_RELATIVE_SOLDER",
+      all(W_match[key] == W_base[key] for key in W_base))
+
+S_base_principal = star_action(links, W_base)
+S_match_principal = star_action(links, W_match)
+check("MATCHED_NONGAUGE_SHIFT_LEAVES_ACTION",
+      S_match_principal == S_base_principal)
+
+# Since W is nondegenerate, any full-affine gauge relating these two
+# configurations while leaving W fixed must have g_x=I.  The remaining
+# translation equation is exactly D_L c=u, already excluded above.
+check("RELATIVE_SOLDER_BASE_NONDEGENERATE",
+      all(sp.Matrix.vstack(*[W_base[(x, r)] for r in range(4)]).det() != 0
+          for x in SITES))
+
 print("RESULT_SELECTOR: full-affine covariance uniquely forces lambda=1 in the relative-solder family.")
 print("RESULT_COVARIANCE: all 96 completed finite cell densities are invariant under a mixed site-dependent affine gauge.")
 print("RESULT_FLAT: b=0 recovers the accepted star density and the flat translation-gauge chart leaves relative solder exactly eta.")
 print("RESULT_SHIFT: independent affine shift remains visible.")
 print("RESULT_PRINCIPAL_WITNESS: one curved L=2 background has no nonzero covariantly constant node translation.")
-print("RESULT: AFFINE-RELATIVE-SOLDER-STAR-COMPLETION-UNIQUE-IN-LAMBDA-CLASS")
+print("RESULT_OVERQUOTIENT: a nongauge one-edge matched shift leaves relative solder and the completed action unchanged.")
+print("RESULT: AFFINE-RELATIVE-SOLDER-COMPLETION-OVERQUOTIENTS-EDGE-DIAGONAL")
