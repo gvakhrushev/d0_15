@@ -14,6 +14,10 @@ Execution: `GitHub-first`
 
 SATISFIED: #188 gauge-image memory and #193 canonical Grassmann graph-closure resolution are merged.
 
+## Why delegated
+
+The graph-closure carrier has already been selected by merged research #193. What remains here is bounded finite-dimensional formalization of ranges, incidences and quotient dimensions, with a clear firewall against reinterpreting limiting incidence directions as gauge.
+
 ## Owned theorem packet
 
 Formalize the intrinsic finite-dimensional seam geometry, keeping three objects distinct:
