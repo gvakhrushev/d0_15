@@ -1539,3 +1539,14 @@ The smallest remaining dependency is now exactly the queued task
 That task must recompute the two-channel Euler/physical quotient on the
 **selected graph-closure tangent geometry**, rather than on the full arbitrary
 incidence envelope.
+
+
+---
+
+## Ready-state EXPENSIVE audit
+
+PR #193 is \`Lifecycle: REVIEW\`. The EXPENSIVE task self-retired before Ready:
+its manifest/status row and executable task brief are absent from the branch,
+while the durable memo, exact certificate and research-ledger terminal remain.
+This audit-only commit changes no mathematical result; it exists so repository
+guards evaluate the final Ready-state contract.
