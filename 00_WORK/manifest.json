@@ -16,15 +16,6 @@
   ],
   "tasks": [
     {
-      "id": "CTRL-POST-MERGE-CONTROL-CLOSEOUT",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "REVIEW",
-      "affected_claims": [],
-      "exit_condition": "Merged nightly-maintenance and nonlinear-Lorentz control rows are retired without altering their durable artifacts, and the repository control plane is internally consistent and green.",
-      "brief": "00_WORK/tasks/CTRL-POST-MERGE-CONTROL-CLOSEOUT.md"
-    },
-    {
       "id": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "class": "CONTROL",
       "parent": "ROOT",
@@ -32,6 +23,96 @@
       "affected_claims": [],
       "exit_condition": "The current resolved-affine research frontier is integrated as a durable program, next EXPENSIVE tasks and Lean WORKER tasks are registered with explicit dependencies/collision fences, stale completed control tracking is retired, and launch-ready workers have isolated execution briefs.",
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
+    },
+    {
+      "id": "EXP-A4D-GRASSMANN-GRAPH-CLOSURE-RESOLUTION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Classify the canonical Grassmann/incidence graph closure of the rank-changing affine gauge-image map and its flat exceptional fiber.",
+      "brief": "00_WORK/tasks/EXP-A4D-GRASSMANN-GRAPH-CLOSURE-RESOLUTION.md"
+    },
+    {
+      "id": "EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Compute the true full-affine physical quotient and d_A/d_E/d_P for the selected resolved action after the carrier is fixed.",
+      "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT.md"
+    },
+    {
+      "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Classify the nondegenerate curved stationary sector of the selected resolved full-affine action.",
+      "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-NONLINEAR-LORENTZ-QUOTIENT",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Formalize the merged finite nonlinear Lorentz action, star-cell invariance, quotient invariants and stabilizer structure.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-NONLINEAR-LORENTZ-QUOTIENT.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-CARTAN-HODGE-TRANSLATION-NOGO",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Formalize the merged six-parameter first Cartan-Hodge translation-rescue rank obstruction with strict scope.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-CARTAN-HODGE-TRANSLATION-NOGO.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "After #184 lands, formalize the affine relative-solder transform, lambda=1 selector and diagonal overquotient structure.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "After #185/#186 stabilize, formalize the polynomial two-holonomy residual and its affine covariance.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-JOINT-HOLONOMY-RESIDUAL.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "After #188 and graph-closure selection, formalize image-incidence resolution of the affine rank seam.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-RESOLVED-ENERGY-VARIATION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "After #189 and carrier selection, formalize the resolved quotient energy, zero locus and constrained first variation.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-RESOLVED-ENERGY-VARIATION.md"
+    },
+    {
+      "id": "WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "After #187 review, formalize the exact second-order obstruction of the Lorentz-null checkerboard quotient planes.",
+      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION.md"
     }
   ]
 }
