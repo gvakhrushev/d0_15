@@ -1099,3 +1099,15 @@ The surviving strategic fork is now narrower:
 What is no longer justified is spending another cycle on the same first
 Cartan/on-shell ansatz with different coefficients.  Exact rank has already
 closed that family.
+
+
+---
+
+## Ready-state EXPENSIVE audit
+
+PR #181 is \`Lifecycle: REVIEW\`.  The EXPENSIVE task self-retired before Ready:
+its manifest/status entry and executable task brief are absent from the branch,
+while the durable memo, certificate and research-ledger verdict remain.  This
+audit-only commit changes no mathematical result; it exists so repository
+guards evaluate the final Ready-state contract rather than the preceding Draft
+event.
