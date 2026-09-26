@@ -3,7 +3,7 @@
 **Task:** \`EXP-A4D-JOINT-HOLONOMY-QUOTIENT-COMPLETENESS\`  
 **Execution:** clean replacement after PR #194  
 **Status:** terminal EXPENSIVE research classification  
-**Baseline:** `470434a84798c607c7c55d46d31d4a48a5eab8ab`
+**Baseline:** `6dd9a7dba6a0845eb40e4ee0c511d628c2d6aaed`
 
 ## 0. Current verdict
 
