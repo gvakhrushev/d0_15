@@ -25,18 +25,6 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
-      "id": "EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001",
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Classify the fully affine-legal discrete Palatini(+Lambda+torsion^2) target against the selected star + four joint-residual action span, including whether any cosmological volume channel survives the full-affine quotient.",
-      "brief": "00_WORK/tasks/EXP-A4D-DISCRETE-PALATINI-TARGET-SPAN.md"
-    },
-    {
       "id": "EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
