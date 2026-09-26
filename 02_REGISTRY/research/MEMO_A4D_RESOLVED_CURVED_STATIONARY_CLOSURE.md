@@ -364,7 +364,23 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    Outcome `CURVED_FLOAT_CANDIDATE_UNDER_ENLARGED_PACKING`.
    **Not** an exact root; float not promoted without rational vanishing.
 
-23. **2D Cayley subtangent warning.**
+23. **E(2) lean-NF DU1 enlarged-12 pattern exactify — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_pattern_exactify_check.py`
+   (sha256 `98952399…f67e95`; wall ~23.6s; PASS). Imposes the observed float
+   pattern `e2=(α,β,j, α,β,j, γ,δ,0, δ,-γ,0)` under lean L≡0 + `D=(1,1,1)`,
+   `U=0`. **Exact curved stationary family:** the open-chart subvariety
+   `α=β=0` (j open, `(γ,δ)≠0`) has symbolic transverse ≡0 on the slice,
+   ambient free-internal 12-grad ≡0 on a 10-point rational battery, and
+   `curv²>0`. Exact witness `e2=(0,0,2, 0,0,2, 0,1,0, 1,0,0)` with
+   `curv²=32`, all 12+6 residuals exact 0; former complement active via `δ=1`.
+   Pattern-tangent internal vanishes on a 72-point open grid; transverse is
+   r0=-r1 anti-symmetric. Float `α≠0` Newton hits are **not** exact
+   (den≤10^6 rationalization has transverse L1≈6.85). No multi-var GB /
+   resultant. Outcome `EXACT_CURVED_FAMILY_UNDER_ENLARGED12_PATTERN`.
+   **Not** Ready: still need four-channel `R=R_*(C)` / full 8+6 channel
+   response and L=3 hostile before Ready.
+
+24. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -416,7 +432,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-LEAN-NF-DU1-SUBQR8-LOCUS-RECON-FREE-INTERNAL-FAMILY;
     E2-TRANSVERSE-ON-4PARAM-FLAT-LOCUS-OK-CURVED-BRANCH-GB-BLOCKED;
     E2-TRANSVERSE-NEWTON-NO-CURVED-ROOT-COLLAPSE-TO-FLAT;
-    E2-ENLARGED12-NEWTON-CURVED-FLOAT-CANDIDATE
+    E2-ENLARGED12-NEWTON-CURVED-FLOAT-CANDIDATE;
+    E2-ENLARGED12-PATTERN-EXACT-CURVED-FAMILY
 
 Supporting:
 
@@ -429,17 +446,18 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** packing escalate under lean L≡0 + D=1 + U=0 with
-**all 12 E(2) free** (cert `…enlarged12_newton_check.py`, ~5.6s) finds
-**curved float stationary candidates** (7 strong with `curv²≥0.5`; best strong
-`||res||_2≈3.34e-9`, `curv²≈1.70`). All near-zero hits lie on the float locus
-`e2≈(α,β,j, α,β,j, γ,δ,0, δ,-γ,0)`; former complement slots are used. No clear
-near-rational smoke (den≤32). **Next:** exactify that observed 4-param float
-locus by cheap deg-reduced free-internal+transverse polys / rational
-reconstruction — **still forbid** blind multi-var GB / deg-26 resultant
-chains. Do **not** re-impose locked E(2) NF. Jac-QR still blocked. Filter by
-four-channel `R=R_*(C)` only if a full 8+6 point appears. Prior 4-param
-family with complement=0 remains flat-only for transverse (Newton collapse).
+**Primary (Track B):** enlarged-12 pattern exactify (cert
+`…enlarged12_pattern_exactify_check.py`, ~23.6s) yields an **exact curved
+stationary family** under lean L≡0 + D=1 + U=0:
+`e2=(0,0,j, 0,0,j, γ,δ,0, δ,-γ,0)` with j open and `(γ,δ)≠0` (witness
+`(j,γ,δ)=(2,0,1)`, `curv²=32`). Free-internal(12)+transverse(6) vanish
+exactly. **Next:** confirm this family is full 8+6 stationary in the
+gauge-pack / classical-internal sense (or record which of the classical 8
+internal slots are implied by the 12 E(2) grads); optional filter
+`R=R_*(C)` at the exact witness; still forbid blind multi-var GB / deg-26
+chains. Do **not** re-impose locked E(2) NF. Jac-QR still blocked. Prior
+complement=0 4-param family remains flat-only for transverse. Float `α≠0`
+pattern hits stay non-exact. No Ready until channel response + L=3 hostile.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -494,6 +512,7 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_transverse_family_newton_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_newton_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_pattern_exactify_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
