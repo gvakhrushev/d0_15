@@ -18,7 +18,6 @@ open ExteriorAlgebra
 local instance nilpotentAffineRoleLinearOrder : LinearOrder Role :=
   LinearOrder.lift' roleCode roleCode_injective
 
-set_option maxHeartbeats 800000
 set_option linter.unusedSimpArgs false
 
 noncomputable section
