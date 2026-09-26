@@ -1,229 +1,163 @@
-# MEMO A4D — resolved curved stationary closure
+# MEMO A4D -- resolved curved stationary closure (F4 / lower wall)
 
-**Task:** `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`  
-**Execution:** PR #202  
-**Status:** IN_PROGRESS / durable checkpoint  
+**Task:** `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`
+**Execution:** PR #202
+**Status:** IN_PROGRESS / durable checkpoint (restructured F4 attack)
 **Baseline:** `75fc9eec99dcb8b5b15a0bc0de5662c9453175f4`
 
-## 0A. RESUME CHECKPOINT
+## 0A. RESUME CHECKPOINT -- durable state
 
-### EXACT/DERIVED — F4 reduces to the star physical critical set on generic quotient-complete strata
+### Architecture (locked; do not reopen)
 
-PR #201 has now certified two facts for the selected family
+- Upper-wall F5 is closed on PR #201: flat metric Hessian of `S_star` is
+  exactly `(1/4) K_{E_eta}` with `beta_sp = 0`.  `Q(R) = O(eps^10)` near flat cannot
+  alter F5.
+- On quotient-complete strata,
+  `Crit(S_star+Q)/G_aff ~= Crit(S_star)/G_Lor`: `Q` is auxiliary on shell and
+  cannot manufacture new physical curved stationary dynamics by tuning alone.
+- Correct H1 for coefficient search: seek finite curved configurations with
+  active residual section `R = R_*(C) != 0` and `R_*(0) = 0`, **not** force
+  `R = 0` as the primary ansatz.  Do **not** run a 7x7 `(a,b)` grid or `a=b`
+  ray.
+- Action family under attack uses **four independent** joint-residual scalars
+  (do **not** collapse adj=opp):
 
-[
-S_{\rm trial}(\Theta,b,L)
-=
-\alpha S_{\widehat\star}(\Theta-b^\flat,L)
-+
-\beta Q_L(b).
-]
+      I^eta_adj,  I^eta_opp,  I^n_adj,  I^n_opp
 
-On every declared generic curved stratum where the landed joint-residual map is
-quotient-complete,
+  with adj = `|S1capS2|=1`, opp = `|S1capS2|=0`, `I^eta = R^T eta R`,
+  `I^n = R^T h_n R`, and
+  `R_{2|1} = det(I-P1)t2 - (I-P2) adj(I-P1) t1`.
 
-[
-\ker J_L=\operatorname{im}D_L.
-]
+- Forbidden: Holst / phi / new I-channel; continuum Einstein; declaring adj=opp
+  dead without `ker M`; editing #201 / Lean / BOOK; self-merge.
 
-At a full stationary point the \(\Theta\)-equation first imposes
+### EXACT/CERTIFIED -- inherited from main (#199/#187/#200)
 
-[
-E_{\widehat\Theta}S_\star=0.
-]
+- Local `E_v`: rank 16 / ker 20; Bianchi subclass ker 10 (`E_v=0` does not force `C=0`).
+- Two-link #178: no nondegenerate solder-stationary representative.
+- One-boost: all-site nondegenerate `E_v=0` with `C!=0`; free-B connection Euler
+  rank 282 / nullity 294; four reduced origin constraints.
+- Checkerboard Lorentz-null quotient nulls nonlinearly obstructed from
+  canonical flat solder.
 
-The \(b\)-equation then reduces to \(E_bQ_L=0\), hence
+### EXACT/CERTIFIED -- F4 support + response matrix (this PR)
 
-[
-b\in\ker J_L=\operatorname{im}D_L,
-qquad
-J_Lb=0.
-]
+Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
 
-Therefore the residual energy and its first \(L\)-variation vanish on shell.
-Consequently the quotient-completion channel cannot be tuned to cancel a failed
-star coframe equation on these strata.
+1. **Support obstruction on the `R=0` locus.**
+   Solder-scale and flat->two-link witnesses at vanishing translation data have
+   `Delta I_j = 0` for all four channels while `Delta S_star != 0`.  No `c in Q^4` can
+   cancel those star Euler components using I-channels dormant at `R=0`.
+   Scope: **not** a no-go on the H1 locus `R=R_*(C)!=0`.
 
-The lower-wall search is therefore reduced to
+2. **Exact 4-column response matrix.**
+   Over 9 active edge/face translation witnesses on the owned two-link+RCD
+   background:
 
-[
-\boxed{
-C(L)\neq0,quad
-\det\widehat\Theta_x\neq0\ \forall x,quad
-E_{\widehat\Theta}S_\star=0,quad
-E_LS_\star=0.
-}
-]
+      rank M = 4,   dim ker M = 0
 
-This is the actual F4 target.
+   exactly over `Q`.  In particular `eta`-adj - `eta`-opp is not in `ker M`.
+   Matched-edge values at `t=1`:
 
-### EXACT/CERTIFIED inherited hostile controls
+      I^eta_adj=-256/9, I^eta_opp=-128/9, I^n_adj=4352/81, I^n_opp=128/9.
 
-The landed stationary-sector packet already supplies:
+3. **One-boost structural dead-ansatz lemmas.**
+   Constant and `x0`-only slices of `ker H_v` are degenerate at boost-plane
+   sites; 12 satellite complementary components are forced into `span{e0,e1}`;
+   free-B necessary residuals are automatic on `ker H_v`.
 
-1. a one-boost curved control with nondegenerate all-site solder satisfying the
-   star solder Euler equation alone, so solder stationarity does **not** force
-   flatness or degeneracy;
-2. an exact connection-Euler operator of rank 282 on free bivector data, showing
-   that joint stationarity is the first real nonlinear compatibility gate;
-3. the canonical flat checkerboard quotient-null directions are obstructed at
-   cubic order:
-   [
-   T(z,z,w_0)=-\frac{32}{3}(a^2+b^2),
-   ]
-   so they do not seed a nearby curved stationary branch from canonical flat
-   solder;
-4. the historical sparse two-link curved witness has no nondegenerate solder
-   stationary representative.
+4. **Span criterion with `R!=0` -- OPEN (primary next blocker).**
+   Seek `C(x)!=0` and `-gradS_star in span{gradI_j}` (projected), solve `c`,
+   exact-verify full Euler.  Multistart only over geometry `x`.
 
-Thus neither “all curved sectors die” nor “a small flat-null branch survives” is
-currently supported.
+### EXACT/CERTIFIED -- homogeneous word no-gos (this PR, parallel packet)
 
-## 1. Search strategy now fixed
+Certificate: `a4d_homogeneous_curved_stationary_controls_check.py`.
 
-The next search must be richer than the killed sparse witnesses.  Use at least
-a multi-link / multi-plaquette curved ansatz with:
+Five explicit rational homogeneous word backgrounds (including the two generic
+quotient-complete joint-holonomy controls) have **no** nondegenerate full
+star-stationary point.  Useful negative controls; they do not exhaust the
+homogeneous four-link sector.
 
-- exact proper-Lorentz links;
-- all-site nondegenerate solder;
-- enough link freedom to satisfy both solder and connection Euler equations;
-- explicit nonzero curvature certificate;
-- quotient/gauge fixing only after the equations are assembled.
+### NUMERICAL/EXPLORATORY -- NOT A THEOREM (parallel scout)
 
-Numerical root-finding is allowed only as a scout.  Any survivor must be
-rationally reconstructed or converted into an exact algebraic certificate.
+Certificates:
+`a4d_curved_stationary_cayley_scout_candidate.json` (+ scout narrative below).
 
-## 2. Terminal alternatives
+Broad homogeneous four-link / Cayley-LDU scouts find nonflat candidates with
+tiny raw Euler residual, `det Theta = -1`, and apparent Hessian rank ~20 /
+nullity ~19.  Compatible with the word no-gos (survivors lie outside those
+words).  **Must not** be promoted before exact rational reconstruction.
 
-A. Construct one exact nondegenerate curved critical point:
-[
-\boxed{\texttt{RESOLVED-AFFINE-NONDEGENERATE-CURVED-STATIONARY-WITNESS}}
-]
+### CURRENT STRONGEST STABLE STATEMENT
 
-B. Prove an exact no-go for a precisely declared ansatz class.
+    BOXED:
+    F4-SUPPORT-OBSTRUCTION-ON-R-EQUALS-ZERO;
+    RESPONSE-MATRIX-RANK-4-KER-0-ADJ-OPP-INDEPENDENT
 
-C. If only numerical roots appear, record them as NUMERICAL/EXPLORATORY and
-identify the smallest exact polynomial subsystem needed for certification.
+Supporting:
 
-No GR/Einstein conclusion is allowed from F5 alone; F4 remains independently
-load-bearing.
+    BOXED:
+    ONE-BOOST-CONSTANT-AND-X0-SLICES-DEGENERATE;
+    HOMOGENEOUS-WORD-CONTROLS-NO-NONDEGENERATE-STATIONARY-POINT
 
-
-## 3. NUMERICAL/EXPLORATORY — broad homogeneous four-link roots survive the exact word controls
-
-The exact homogeneous control certificate in this PR kills five explicit
-rational word backgrounds, including the two generic quotient-complete
-backgrounds from the joint-holonomy packet. That is a useful negative control,
-but it does not exhaust the homogeneous four-link sector.
-
-A separate broad root search was therefore run on the full homogeneous
-four-link star action.
-
-### 3.1 Exponential-Lorentz / SL(4) solder scout
-
-Variables:
-
-- four independent proper-Lorentz links, six Lie-algebra parameters each;
-- a full homogeneous invertible solder;
-- determinant fixed to (-1) only to prevent the optimizer from collapsing
-  the homogeneous degree-two action by the trivial scale limit;
-- the missing scale Euler equation imposed independently as (S=0).
-
-Across 20 deterministic random starts, many nonflat roots were found. After
-reconstructing the raw solder matrix, each candidate was checked against the
-**unconstrained 40-component Euler gradient**.
-
-Representative candidate:
-
-[
-|mathrm{EL}_{m raw}|_2=8.22	imes10^{-14},
-quad
-|mathrm{EL}_Theta|_2=4.15	imes10^{-14},
-quad
-|mathrm{EL}_L|_2=7.10	imes10^{-14},
-]
-[
-detTheta=-1,
-quad
-|C|_{m scout}=0.9732,
-quad
-sigma_{min}(Theta)=0.2423,
-quad
-kappa(Theta)=17.9.
-]
-
-Thus the earlier numerical collapse to degenerate solder is not stable under a
-wider homogeneous ansatz once scale collapse is excluded.
-
-### 3.2 Rational Cayley/LDU scout
-
-To remove dependence on exponential coordinates, the search was repeated with
-the rational charts
-
-[
-L(A)=(I+A/2)(I-A/2)^{-1},
-qquad Ainmathfrak{so}(1,3),
-]
-
-and a determinant-one rational (LDU) solder chart multiplied by the Lorentz
-signature matrix. The stationary equations are therefore rational functions of
-39 chart variables.
-
-Again many nonflat roots were found. Representative candidate:
-
-[
-|mathrm{EL}|_2=1.21	imes10^{-13},
-qquad
-detTheta=-1,
-]
-[
-|C|_{m scout}=1.3900123322164437,
-qquad
-sigma_{min}(Theta)=0.3797133,
-qquad
-kappa(Theta)=6.33.
-]
-
-The fixed-determinant homogeneous Hessian at this candidate has numerical
-
-[
-operatorname{rank}H=20,
-qquad
-operatorname{nullity}H=19
-]
-
-at tolerance (10^{-8}). This is evidence for a positive-dimensional
-stationary manifold, not an isolated optimizer accident, but it is not yet an
-exact theorem.
-
-The persisted candidate is:
-
-`02_REGISTRY/research/certificates/a4d_curved_stationary_cayley_scout_candidate.json`.
-
-### 3.3 Current interpretation
-
-The exact negative word controls and the broad numerical positive scout are
-compatible:
-
-- several simple rational word backgrounds provably have no nondegenerate full
-  stationary point;
-- the unrestricted homogeneous four-link sector appears to contain
-  nondegenerate curved critical points outside those word families.
-
-Therefore the next exact problem is sharply defined: extract one exact
-rational/algebraic point from the apparent 19-dimensional Cayley/LDU stationary
-manifold.
+No exact nondegenerate four-channel curved root claimed.
+No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-Use the observed rank-20 transverse system:
+Geometry-only span criterion with active `R=R_*(C)!=0`:
 
-1. choose 19 chart coordinates as free parameters;
-2. fix them to simple rationals near the numerical candidate;
-3. solve the remaining transverse equations exactly or by high-precision
-   algebraic reconstruction;
-4. certify (C
-eq0), (detTheta
-eq0), (E_Theta=0), (E_L=0).
+- find exact root `(x,c)` with `C!=0` and full Euler zero, then L=3 hostile
+  control; **or**
+- prove scoped obstruction that `-gradS_star` never lies in `span{gradI_j}` on the
+  declared nondegenerate curved class with active residual.
 
-Do not promote the floating-point roots before this exactification.
+Secondary (star-only scout exactification): rationalize the apparent
+Cayley/LDU stationary manifold if it survives the four-channel filter.
+
+Do **not** restart from `(a,b)` tuning or from forcing `R=0`.
+
+---
+
+## 1. Research question (F4)
+
+Does there exist a nondegenerate finite configuration with nonzero curvature
+that is stationary for some `c in Q^4` in
+
+    S = S_star
+      + c_eta_adj I^eta_adj + c_eta_opp I^eta_opp
+      + c_n_adj I^n_adj + c_n_opp I^n_opp ?
+
+H1 picture: residual tracks curvature, `R_*(0)=0`, `R_*(C)!=0` at finite curve.
+L=2 may discover; L=3 hostile control required before broad finite-carrier
+claim.
+
+---
+
+## 2. Relation to star-only Crit search
+
+On quotient-complete strata the #201 stationary-auxiliary theorem says physical
+crit of `S_star+Q` match physical crit of `S_star` after gauge.  That justifies
+star Euler searches as a **necessary** filter.  It does **not** justify
+collapsing the four I-channels to a single `(a,b)` modulus, nor forcing `R=0`
+as the geometry ansatz.  Coefficient independence is settled by `rank M=4`,
+`ker M=0`.
+
+---
+
+## 3. Validation
+
+```bash
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_f4_check.py
+python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
+python3 tools/validate_work.py
+python3 tools/validate_repo.py
+```
+
+---
+
+## 4. Handoff
+
+Draft PR #202.  Do not merge.  Continue: span search with `R!=0`, then exact
+root or scoped no-go, then L=3 before Ready.
