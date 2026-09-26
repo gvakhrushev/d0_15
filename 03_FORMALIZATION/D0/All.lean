@@ -331,6 +331,7 @@ import D0.Geometry.A4DSolderMetricCompletion
 import D0.Geometry.A4DSourcedMismatchFactorPassport
 import D0.Geometry.A4DStaggeredFirstJetPathExpansion
 import D0.Geometry.A4DStaggeredHodgeSelector
+import D0.Geometry.A4DStarFiniteLorentzQuotient
 import D0.Geometry.A4DSymRoleCentralDifference
 import D0.Geometry.A4DTransportedReferenceMismatch
 import D0.Geometry.A4DUnlabelledCenterHolonomyNoGo
@@ -778,5 +779,3 @@ import D0.Verification.PresentCoreMaximality
 import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary
 import D0.Verification.TotalExtensionPrimitiveMinimality
-
-import D0.Geometry.A4DStarFiniteLorentzQuotient
