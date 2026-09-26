@@ -6,7 +6,7 @@ Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
 Research predecessor: `EXP-A4D-J2-SMOOTH-RESONANCE-CLOSURE`
 
 Repository: `gvakhrushev/d0_15`  
-Base: `main` after the predecessor and required worker inputs are integrated  
+Base: `main`  
 Branch: `exp/a4d-j2-uniform-coupled-normal-rescue`  
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_J2_UNIFORM_COUPLED_NORMAL_RESCUE.md`  
 Execution: `GitHub-first`
