@@ -25,17 +25,6 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
-      "id": "EXP-A4D-GRASSMANN-GRAPH-CLOSURE-RESOLUTION",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001"
-      ],
-      "exit_condition": "Classify the canonical Grassmann/incidence graph closure of the rank-changing affine gauge-image map and its flat exceptional fiber.",
-      "brief": "00_WORK/tasks/EXP-A4D-GRASSMANN-GRAPH-CLOSURE-RESOLUTION.md"
-    },
-    {
       "id": "EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
