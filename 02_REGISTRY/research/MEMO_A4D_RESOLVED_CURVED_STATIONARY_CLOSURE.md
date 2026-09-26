@@ -266,7 +266,29 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    FIXED_13 fully-fixed D/U nor the scout-U/D-free cert.
    Scope: slice under gauge-canonical packing; not global; QR unrecovered.
 
-17. **2D Cayley subtangent warning.**
+17. **E(2) Jac-QR recompute blocked + lean NF free-E2 — Track B (this PR).**
+   Preferred Jac-QR recompute attempted and **honestly blocked**. Dump:
+   `a4d_curved_stationary_e2_euler_jac_qr_dump.json` (`NUMERICAL_BLOCKED_HONEST`).
+   Homogeneous `star_S` ambient Euler `F∈R^{40}` (24 left-Cayley + 16 raw Θ)
+   does **not** vanish at memo §4.1 E(2) links with Cayley-scout LDU, identity
+   LDU, or curvature-preserving LDU/joint least_squares refinements;
+   chart-critical points still leave `||F_40||` and `||transverse6||` large.
+   Memo float witness residual operator / LDU-at-E2-root were never persisted,
+   so true `FREE_IDX=piv[:14]` / `FIXED_IDX=piv[14:]` remain unrecovered.
+   **Alternate lean NF** certificate:
+   `a4d_resolved_curved_stationary_e2_lean_nf_free_e2_check.py`
+   (sha256 `c67c531e…fac2025`; wall ~0.22s; PASS). Keeps **L≡0** only
+   (FIXED `[12..17]`, 6); **releases** former E(2) NF slots `[0..6]`
+   (locked-negative pattern `(-1/3,0,-1/3,1/2,1/2,-1/2,-1/2)` **not** imposed);
+   free = all 12 E(2)+D+U (**21**). Float open-chart probe: internal Jac rank
+   20, transverse rank 6, selected 8+6 subsystem rank **14**. Subsystem-QR
+   candidate FREE chart idx
+   `[8,24,2,5,6,7,3,20,21,0,18,19,4,25]` (fixed complement = L≡0 +
+   `[10,9,22,23,1,11,26]`). Does **not** grind scout-near one-sided D/U under
+   the locked NF. Scope: lean packing + sample Jac + specialize plan; no exact
+   root; no Groebner this turn; memo-witness QR still blocked.
+
+18. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -311,7 +333,9 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-GAUGE-CANONICAL-PACKING-L-ZERO-8P6-SAMPLE-JAC-RANK-14;
     E2-GAUGE-PACK-SCOUT-U-DFREE-FORCES-CHART-CLOSED;
     E2-GAUGE-PACK-SCOUT-D-UFREE-FORCES-CHART-CLOSED;
-    E2-QR-PIVOT-RECOVERY-BLOCKED-MISSING-JAC-DUMP
+    E2-QR-PIVOT-RECOVERY-BLOCKED-MISSING-JAC-DUMP;
+    E2-JAC-QR-RECOMPUTE-BLOCKED-STAR-S-AMBIENT-MISMATCH;
+    E2-LEAN-NF-L-ZERO-ONLY-FREE-E2-8P6-SAMPLE-JAC-RANK-14
 
 Supporting:
 
@@ -324,15 +348,16 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** under gauge-canonical L≡0 packing, **both** scout-near
-one-sided slices now force open-chart empty:
-- scout-U / D free → `d1·(j_r3²+4)` (`…e2_gauge_pack_scout_u_dfree_check.py`, ~12.4s);
-- scout-D / U free → bare `j_r3²+4` (`…e2_gauge_pack_scout_d_ufree_check.py`, ~10.4s).
-Prior FIXED_13 fully-fixed D/U slices remain separate warnings.
-Next: **recompute/persist the missing Jac dump and adopt true QR pivots**,
-OR free more of the current E(2) NF slots (slots `[0..6]`). Still avoid
-blind 14-var / deg-33 Groebner. Filter survivors by four-channel `R=R_*(C)`.
-Do **not** grind further scout-near one-sided D/U slices under the same NF.
+**Primary (Track B):** Jac-QR recompute of the memo float witness remains
+**blocked** (dump `…e2_euler_jac_qr_dump.json`); lean NF now released:
+`L≡0` only / free all E(2)+D+U (21) — cert `…e2_lean_nf_free_e2_check.py`
+(~0.22s, 8+6 sample Jac rank 14). Do **not** re-impose locked E(2) NF
+`(-1/3,0,-1/3,1/2,1/2,-1/2,-1/2)` nor grind further scout-near one-sided D/U
+under that NF. Next specialize under lean NF: (a) D scout-near with U+E(2)
+free, or (b) identity-like D/U with E(2) fully free; optional adopt
+subsystem-QR candidate FREE
+`[8,24,2,5,6,7,3,20,21,0,18,19,4,25]`. Still avoid blind 14-var / deg-33
+Groebner. Filter by four-channel `R=R_*(C)`.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
