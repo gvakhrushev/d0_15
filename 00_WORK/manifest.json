@@ -48,17 +48,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-J2-UNIFORM-COUPLED-NORMAL-RESCUE.md"
     },
     {
-      "id": "WRK-A4D-J2-SLOW-BACKGROUND-DIAGONAL-GERM",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "On the owned corrected diagonal quarter-wave reduction, derive the first exact slow-background correction to the full range-reduced zero-source normal germ and certify whether a flat-approaching bifurcation term appears to the computed order.",
-      "brief": "00_WORK/tasks/WRK-A4D-J2-SLOW-BACKGROUND-DIAGONAL-GERM.md"
-    },
-    {
       "id": "WRK-A4D-J2-METRIC-RESPONSE-SENSITIVITY",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
