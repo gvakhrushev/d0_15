@@ -72,17 +72,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER.md"
     },
     {
-      "id": "WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #199/#200 exact second-order checkerboard obstruction in its finite L=2 scope.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION.md"
-    },
-    {
       "id": "WRK-A4D-FORMALIZE-GAUGE-IMAGE-SEAM-RESOLUTION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
