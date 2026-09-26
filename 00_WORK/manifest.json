@@ -25,18 +25,6 @@
       "brief": "00_WORK/tasks/CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1.md"
     },
     {
-      "id": "WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1",
-      "class": "WORKER",
-      "parent": "CTRL-NIGHTLY-FORMALIZATION-MAINTENANCE-W1",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-TRACEABILITY-STATUS-TAXONOMY-001",
-        "D0-FINAL-BRIDGE-INDEX-001"
-      ],
-      "exit_condition": "A large safe maintenance wave closes the audited formalization debt target without changing public theorem statements or scientific status, installs non-growth checks, passes narrow builds and final D0.All, and self-retires in its execution PR.",
-      "brief": "00_WORK/tasks/WRK-NIGHTLY-FORMALIZATION-DEBT-BURN-W1.md"
-    },
-    {
       "id": "CTRL-A4D-STAR-DENSITY-LORENTZ-NONLINEAR-QUOTIENT",
       "class": "CONTROL",
       "parent": "ROOT",
