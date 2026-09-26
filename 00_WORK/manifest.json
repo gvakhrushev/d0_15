@@ -60,18 +60,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #184 affine relative-solder transform, lambda=1 selector, homogeneous covariance and matched-edge overquotient statement without promoting the completion to the final physical quotient.",
-      "brief": "00_WORK/tasks/WRK-A4D-FORMALIZE-AFFINE-RELATIVE-SOLDER.md"
-    },
-    {
       "id": "WRK-A4D-FORMALIZE-CHECKERBOARD-NONLINEAR-OBSTRUCTION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
