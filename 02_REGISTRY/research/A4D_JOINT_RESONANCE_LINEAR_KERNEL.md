@@ -136,18 +136,42 @@ Orbit 7, `ids = (2,1,1,2)`, `dim 1`:
 
 Orbits 0 and 4 are rational; orbits 5 and 7 genuinely need `i`.
 
-## 5. First linearized curvature
+## 5. First linearized curvature — computed, not inferred
 
-| orbit | basis | link support | curvature |
+An earlier revision classified a direction as curvature-flat from its link
+support alone: "supported on one link" was treated as "flat". **That heuristic
+is false and is removed.** Under the owned plaquette convention a single-link
+direction `Y` on link `r` gives, on the diagonal quarter-wave,
+
+```text
+delta P_{0s} = (1 - i) Y  != 0
+```
+
+(the review quotes the same statement as `(1 + i) Y` under the opposite sign
+convention for the link phases; only the nonvanishing is convention-independent).
+So one-link support carries no information about flatness. The certificate now
+evaluates the first-order plaquette product on all six faces.
+
+Computed result for every basis vector of every nonzero `N_0`:
+
+| orbit | basis | zero faces | first-order curvature |
 |---|---|---|---|
-| 0 | v0 | all four links | **NONZERO** |
-| 4 | v0..v3 | one link each | **ZERO** (flat candidates) |
-| 5 | v0 | all four links | **NONZERO** |
-| 7 | v0 | all four links | **NONZERO** |
+| 0 | v0 | 1 / 6 | **NONZERO** |
+| 4 | v0 | 0 / 6 | **NONZERO** |
+| 4 | v1 | 0 / 6 | **NONZERO** |
+| 4 | v2 | 0 / 6 | **NONZERO** |
+| 4 | v3 | 0 / 6 | **NONZERO** |
+| 5 | v0 | 0 / 6 | **NONZERO** |
+| 7 | v0 | 0 / 6 | **NONZERO** |
 
-Only the four diagonal-quarter-wave vectors are curvature-flat. They are flat
-**candidates**; no vector is labelled gauge, since that requires the actual
-Lorentz/metric quotient.
+**No direction in any `N_0` is curvature-flat.** In particular the four
+diagonal-quarter-wave vectors, which the earlier revision called flat
+candidates, are all genuinely curved at first order. The only vanishing face
+anywhere is face `(0,1)` of the orbit-0 vector.
+
+Consequence: there is **no** flat/gauge candidate inside the joint kernel
+under this test. Whether any of these directions is gauge remains open and
+requires the actual Lorentz/metric quotient; it is not decided here.
 
 ## 6. The joint KKT Hessian
 
@@ -170,6 +194,25 @@ connection action `A = H_AA + H_AA^T` is **identically zero**: `H_AA` is a pure
 exact 2-form there. Consequently there is **no non-degenerate symmetric
 connection metric** on that orbit, and no Schur complement of `A` is available
 there. This is a certified fact, not a numerical artefact.
+
+### Convention caveat on `A = H_AA + H_AA^T`
+
+The symmetrized block is introduced here to make the joint carrier a genuine
+stationarity system. That is a **choice of convention**, not a derivation:
+
+* the owned direct-Euler symbol produces the **polarized** block `H_AA`;
+* the conjugate-character reading of the same polarized data is a different
+  operator, and whether the symmetrization coincides with it has not been
+  established here;
+* on the diagonal quarter-wave the symmetrization is identically zero, so it
+  certainly is not that reading.
+
+Accordingly every rank and nullity reported in this section is a statement about
+`A = H_AA + H_AA^T` **under this convention**. It is not a statement about the
+conjugate-paired carrier, and no number in the `N_0` census of section 3
+depends on it: the census uses `H_AA` itself and is unaffected. A carrier
+consistent with the conjugate-character / direct-Euler convention is **not
+built here**.
 
 Because `A` is degenerate on at least one orbit, the earlier additive
 metric-only / connection-only / mixed decomposition of `ker H_J` is **not

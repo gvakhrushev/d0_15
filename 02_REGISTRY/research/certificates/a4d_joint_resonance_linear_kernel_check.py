@@ -475,15 +475,95 @@ check("TANGENT_227_EXCLUDED_FIRST_VALUATION", not in_Q)
 # ---------------------------------------------------------------------------
 # 7. First linearized plaquette curvature on the N_0 bases
 # ---------------------------------------------------------------------------
+#
+# The curvature is COMPUTED, not inferred from the link support.  An earlier
+# revision of this file declared a direction "flat" merely because it was
+# supported on a single link.  That heuristic is false: under the owned
+# plaquette convention a single-link direction Y on link r gives
+#
+#     delta P_{0s} = (1 - i) Y  != 0
+#
+# on the diagonal quarter-wave.  The review quotes the same statement as
+# (1 + i) Y under the opposite sign convention for the link phases; only the
+# nonvanishing is convention-independent.  So a one-link support is NOT a flat
+# candidate, and the classification below is obtained by evaluating the
+# first-order plaquette product on every face.
 
-
-def support_links(v):
-    out = []
+def direction_matrix(v):
+    """Lift a 24-vector to a single 4x4 link direction (per-site blocks)."""
+    A = sp.zeros(4)
     for r in range(4):
-        if any(sp.simplify(v[6 * r + j]) != 0 for j in range(6)):
-            out.append(r)
-    return out
+        for j in range(6):
+            c = v[6 * r + j]
+            if c != 0:
+                A = A + c * LORENTZ[j]
+    return A
 
+
+def face_first_order(A, p, q, zp, zq, active_link=None):
+    """First-order (t) coefficient of the owned plaquette product on face (p, q).
+
+    The owned convention (from the #208/#216 symbol) is
+
+        L_r L_s L_r^{-1} L_s^{-1}   with   L_r = exp(A, phase 1, 1)
+                                        L_s = exp(A, phase z_p, 1/z_q)
+                                        L_r^{-1} = exp(A, phase z_q, 1/z_q, inv)
+                                        L_s^{-1} = exp(A, phase 1, 1, inv)
+
+    Only the single-direction case A_r = A_s = A is needed here, because a
+    direction in the joint kernel is read off one link block at a time; the
+    mixed A0/B0 polarization is irrelevant at first order in the single
+    direction and the B0 argument is therefore set equal to A0.
+    """
+    Z = sp.zeros(4)
+    # Ar is the perturbation on link r, Aq the one on link q.  A direction
+    # supported on a single link has Z on the other leg; putting A on both legs
+    # would make the two legs commute and hide the curvature.
+    if active_link is None:
+        # default: perturb link p only, which is the single-link case
+        Ar = A
+        Aq = Z
+    else:
+        Ar = A if active_link == p else Z
+        Aq = A if active_link == q else Z
+    Pj = (sp.eye(4), Z, Z, Z)
+    Pj = mul_jet4(Pj, exp_link4(Ar, Z, 1, 1))
+    Pj = mul_jet4(Pj, exp_link4(Aq, Z, zp, 1 / zq))
+    Pj = mul_jet4(Pj, exp_link4(Ar, Z, zq, 1 / zq, inverse=True))
+    Pj = mul_jet4(Pj, exp_link4(Aq, Z, 1, 1, inverse=True))
+    return sp.simplify(Pj[1])
+
+
+def curvature_profile(v, ids):
+    """Exact first-order curvature of a direction on all six faces."""
+    sub = {z[j]: ROOT_E[ids[j]] for j in range(4)}
+    vv = sp.Matrix(v)
+    lk = None
+    for r in range(4):
+        if any(sp.simplify(vv[6 * r + j]) != 0 for j in range(6)):
+            lk = r
+            break
+    A = direction_matrix(vv)
+    faces = {}
+    for (p, q) in PAIRS:
+        dP = face_first_order(A, p, q, sub[z[p]], sub[z[q]])
+        faces["%d%d" % (p, q)] = "NONZERO" if dP != sp.zeros(4) else "ZERO"
+    return faces
+
+
+# CONTROL counterexample: a single-link direction has NONZERO first-order
+# curvature, so support size carries no information about flatness.
+Z4 = sp.zeros(4)
+Yc = LORENTZ[0]
+_dP = face_first_order(Yc, 0, 1, ROOT_E[1], ROOT_E[1], active_link=0)
+check("SINGLE_LINK_DIRECTION_HAS_NONZERO_CURVATURE", _dP != Z4,
+      "a one-link direction cannot be assumed flat")
+check("SINGLE_LINK_DELTA_P_IS_TIMELIKE_BOOST_BLOCK", _dP != Z4 and
+      all(sp.simplify(_dP[i, j]) == 0 for i in range(4) for j in range(4)
+          if (i, j) not in ((0, 1), (1, 0))))
+check("SINGLE_LINK_DELTA_P_MATCHES_QUARTER_WAVE_MULTIPLE",
+      _dP == (1 - sp.I) * Yc or _dP == (1 + sp.I) * Yc,
+      "expected (1 -+ i) Y on the boost block")
 
 CURV = {}
 for n, rec in BASES.items():
@@ -495,15 +575,23 @@ for n, rec in BASES.items():
     rows = []
     for k, v in enumerate(N0):
         v = sp.simplify(v)
-        supp = support_links(v)
-        rows.append({"basis": k, "support_links": supp,
-                     "curvature": "NONZERO" if len(supp) >= 2 else "ZERO"})
+        faces = curvature_profile(v, ids)
+        nzero = sum(1 for f in faces.values() if f == "ZERO")
+        rows.append({"basis": k, "faces": faces,
+                     "n_zero_faces": nzero,
+                     "curvature": "ZERO" if nzero == len(PAIRS) else "NONZERO"})
     CURV[n] = rows
     for r in rows:
-        if r["curvature"] == "ZERO":
-            check("ORBIT_%d_N0_V%d_FLAT_CANDIDATE" % (n, r["basis"]), True)
-        else:
-            check("ORBIT_%d_N0_V%d_NONFLAT" % (n, r["basis"]), True)
+        check("ORBIT_%d_N0_V%d_CURVATURE_COMPUTED" % (n, r["basis"]), True)
+
+# The specific fact that the old heuristic got wrong.
+_o4 = CURV.get(4, [])
+if _o4:
+    _flat = [r["basis"] for r in _o4 if r["curvature"] == "ZERO"]
+    _nonflat = [r["basis"] for r in _o4 if r["curvature"] == "NONZERO"]
+    print()
+    print("orbit 4 curvature (computed): flat candidates = %s, non-flat = %s"
+          % (_flat, _nonflat))
 
 # ---------------------------------------------------------------------------
 # 8. Machine-readable output

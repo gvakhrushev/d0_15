@@ -537,66 +537,99 @@
   "0": [
    {
     "basis": 0,
-    "support_links": [
-     0,
-     1,
-     2,
-     3
-    ],
+    "faces": {
+     "01": "ZERO",
+     "02": "NONZERO",
+     "03": "NONZERO",
+     "12": "NONZERO",
+     "13": "NONZERO",
+     "23": "NONZERO"
+    },
+    "n_zero_faces": 1,
     "curvature": "NONZERO"
    }
   ],
   "4": [
    {
     "basis": 0,
-    "support_links": [
-     0
-    ],
-    "curvature": "ZERO"
+    "faces": {
+     "01": "NONZERO",
+     "02": "NONZERO",
+     "03": "NONZERO",
+     "12": "NONZERO",
+     "13": "NONZERO",
+     "23": "NONZERO"
+    },
+    "n_zero_faces": 0,
+    "curvature": "NONZERO"
    },
    {
     "basis": 1,
-    "support_links": [
-     1
-    ],
-    "curvature": "ZERO"
+    "faces": {
+     "01": "NONZERO",
+     "02": "NONZERO",
+     "03": "NONZERO",
+     "12": "NONZERO",
+     "13": "NONZERO",
+     "23": "NONZERO"
+    },
+    "n_zero_faces": 0,
+    "curvature": "NONZERO"
    },
    {
     "basis": 2,
-    "support_links": [
-     2
-    ],
-    "curvature": "ZERO"
+    "faces": {
+     "01": "NONZERO",
+     "02": "NONZERO",
+     "03": "NONZERO",
+     "12": "NONZERO",
+     "13": "NONZERO",
+     "23": "NONZERO"
+    },
+    "n_zero_faces": 0,
+    "curvature": "NONZERO"
    },
    {
     "basis": 3,
-    "support_links": [
-     3
-    ],
-    "curvature": "ZERO"
+    "faces": {
+     "01": "NONZERO",
+     "02": "NONZERO",
+     "03": "NONZERO",
+     "12": "NONZERO",
+     "13": "NONZERO",
+     "23": "NONZERO"
+    },
+    "n_zero_faces": 0,
+    "curvature": "NONZERO"
    }
   ],
   "5": [
    {
     "basis": 0,
-    "support_links": [
-     0,
-     1,
-     2,
-     3
-    ],
+    "faces": {
+     "01": "NONZERO",
+     "02": "NONZERO",
+     "03": "NONZERO",
+     "12": "NONZERO",
+     "13": "NONZERO",
+     "23": "NONZERO"
+    },
+    "n_zero_faces": 0,
     "curvature": "NONZERO"
    }
   ],
   "7": [
    {
     "basis": 0,
-    "support_links": [
-     0,
-     1,
-     2,
-     3
-    ],
+    "faces": {
+     "01": "NONZERO",
+     "02": "NONZERO",
+     "03": "NONZERO",
+     "12": "NONZERO",
+     "13": "NONZERO",
+     "23": "NONZERO"
+    },
+    "n_zero_faces": 0,
     "curvature": "NONZERO"
    }
   ]
