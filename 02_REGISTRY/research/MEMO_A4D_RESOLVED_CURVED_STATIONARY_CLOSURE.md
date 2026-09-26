@@ -1233,3 +1233,61 @@ base-anchored stationary germ at order zero. A finite reduction must keep the
 actual nonlinear solder equations and the full link/affine equations; the
 three-dimensional tangent kernel alone is not such a reduction. Task and PR
 remain `IN_PROGRESS` / Draft.
+
+### 9.9 Exact finite obstruction on the Newton correction line at fixed solder
+
+The standalone certificate
+`a4d_resolved_curved_stationary_e2_support7_finite_solder_check.py`
+evaluates the exact Cayley path of §9.4 over `QQ(t)`, without truncating it.
+For the stored absolute solder `Theta = eta`, the numerator gcd of all 16
+homogeneous solder Euler components is exactly `t`. Two components suffice:
+
+```text
+(grad_Theta S_star)[1,2] =
+  -16*t*P(t) / (13*(11*t-52)^2*(11*t+52)^2*(173*t-13)),
+(grad_Theta S_star)[1,3] =
+   16*t*Q(t) / ((173*t-13)*(372817*t^2-4992*t-2704)^2),
+
+P(t) = 787729723*t^5 + 11910201168580*t^4 + 57328162663980*t^3
+       - 4300465765648*t^2 - 5810906816*t + 29560863488,
+Q(t) = 32783181538633*t^4 + 468038424932*t^3
+       - 1604236731760*t^2 + 56982657472*t + 3772793856.
+```
+
+The certificate computes exact Bezout coefficients of degrees 3 and 4 and
+checks `u*P + v*Q = 1`. Therefore both displayed components can vanish only
+at `t=0` on the open Cayley chart. The four chart determinants are
+
+```text
+D0 = -2*(173*t-13)*(173*t+13)/169;
+D1 = 2;
+D2 = -(372817*t^2-4992*t-2704)/2704;
+D3 = -(11*t-52)*(11*t+52)/2704.
+```
+
+Every reduced solder-gradient denominator divides `(D0*D1*D2*D3)^2` up to a
+nonzero rational factor. Thus the argument removes only declared chart units.
+At `t=0`, every face has `det(I-P)=adj(I-P)=0`, so every joint residual is
+zero for arbitrary affine translations and the four quadratic channels have
+zero first variation. The nonzero Lorentz Euler vector in §9.4 consequently
+persists for any four-channel coefficients. Together these checks prove:
+
+> On this one-dimensional Newton correction line, at the fixed nondegenerate
+> solder `Theta=eta` and inside its open Cayley chart, no value of `t` is a
+> full stationary configuration, for any of the selected four-channel
+> coefficients or affine translations.
+
+An independent hostile extension tests all free solder entries at the unit
+iterate `t=1`: its symmetric `16 x 16` solder Hessian has exact rank 16. Its
+solder Euler equations therefore force `Theta=0`, so this particular iterate
+cannot acquire a nondegenerate stationary solder. The Hessian-gradient
+identity is checked directly; no fixed-solder assumption is used for this
+unit-point extension. The path also reproduces
+`d_t S_star|0=8384/13` and the scale obstruction `16768/13` of §9.8.
+
+This is a finite **line-specific** no-go and a free-solder **unit-point**
+no-go. It does not settle the seven independent amplitudes, free solder at
+other finite points, or the full coupled residual equation `R=R_*(C)`. It
+therefore does not justify either requested support-wide negative terminal.
+The task remains `IN_PROGRESS`, and L=3 remains gated on an exact active-
+residual L=2 witness.
