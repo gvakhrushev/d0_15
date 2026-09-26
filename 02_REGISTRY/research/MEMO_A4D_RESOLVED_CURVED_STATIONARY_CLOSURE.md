@@ -288,7 +288,24 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    the locked NF. Scope: lean packing + sample Jac + specialize plan; no exact
    root; no Groebner this turn; memo-witness QR still blocked.
 
-18. **2D Cayley subtangent warning.**
+18. **E(2) lean-NF identity D/U + subsystem-QR 8-free — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_check.py`
+   (sha256 `0603cac3…b88826`; wall ~81s; PASS). Under lean **L≡0** + identity
+   `D=(1,1,1)`, `U=0`: preferred all-12 E(2) free-internal expand is too heavy
+   (~115s/gen, raw deg~71), so adopts documented optional restriction to
+   subsystem-QR FREE E(2) indices `[0,2,3,4,5,6,7,8]` with complement E(2)
+   `[1,9,10,11]=0` (**not** the locked NF). Free-internal red degs
+   `[2,4,2,3,5,4,3,6]`. N-dir and full-8 lex GB force open-chart
+   `j_r2=0` and `j_r0=j_r1`; residual locus ideal
+   `{n2_r0·j-n2_r1·j+2 n3_r1,
+     n2_r0·n3_r2-n2_r1·n3_r2+(j/2)n3_r1 n3_r2+2 n3_r1 n2_r2,
+     j² n3_r2+4 j n2_r2-4 n3_r2}`
+   is nonempty and does **not** force `j²+4=0` — outcome
+   `J_LOCUS_OPEN_CANDIDATE` (contrast locked-NF scout slices that chart-close).
+   Scope: algebraic open-chart candidate recorded, not an exact root; full-12
+   E(2) eliminate not attempted; Jac-QR still blocked.
+
+19. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -335,7 +352,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-GAUGE-PACK-SCOUT-D-UFREE-FORCES-CHART-CLOSED;
     E2-QR-PIVOT-RECOVERY-BLOCKED-MISSING-JAC-DUMP;
     E2-JAC-QR-RECOMPUTE-BLOCKED-STAR-S-AMBIENT-MISMATCH;
-    E2-LEAN-NF-L-ZERO-ONLY-FREE-E2-8P6-SAMPLE-JAC-RANK-14
+    E2-LEAN-NF-L-ZERO-ONLY-FREE-E2-8P6-SAMPLE-JAC-RANK-14;
+    E2-LEAN-NF-DU1-SUBQR8-OPEN-CHART-J-LOCUS-CANDIDATE
 
 Supporting:
 
@@ -348,16 +366,16 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** Jac-QR recompute of the memo float witness remains
-**blocked** (dump `…e2_euler_jac_qr_dump.json`); lean NF now released:
-`L≡0` only / free all E(2)+D+U (21) — cert `…e2_lean_nf_free_e2_check.py`
-(~0.22s, 8+6 sample Jac rank 14). Do **not** re-impose locked E(2) NF
-`(-1/3,0,-1/3,1/2,1/2,-1/2,-1/2)` nor grind further scout-near one-sided D/U
-under that NF. Next specialize under lean NF: (a) D scout-near with U+E(2)
-free, or (b) identity-like D/U with E(2) fully free; optional adopt
-subsystem-QR candidate FREE
-`[8,24,2,5,6,7,3,20,21,0,18,19,4,25]`. Still avoid blind 14-var / deg-33
-Groebner. Filter by four-channel `R=R_*(C)`.
+**Primary (Track B):** lean-NF identity D/U specialize delivered an
+**open-chart algebraic candidate** (not chart-closed): cert
+`…e2_lean_nf_du1_subqr8_check.py` (~81s) under L≡0 + `D=(1,1,1)`, `U=0` with
+subsystem-QR 8-free E(2) `[0,2,3,4,5,6,7,8]` (complement E(2)=0; locked NF
+not imposed). Open-chart forces `j_r2=0`, `j_r0=j_r1`; residual 3-gen locus
+ideal recorded. Next: **reconstruct exact open-chart coordinates on that
+locus**, or try (a) scout-near D with U+E(2) free under lean NF. Full-12 E(2)
+eliminate remains too heavy for minutes wall. Jac-QR of memo float witness
+still blocked. Do **not** re-impose locked E(2) NF. Still avoid blind 14-var /
+deg-33 Groebner. Filter by four-channel `R=R_*(C)`.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -404,6 +422,10 @@ python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stat
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_specialize_du1_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_specialize_scout_du_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_gauge_canonical_packing_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_gauge_pack_scout_u_dfree_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_gauge_pack_scout_d_ufree_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_free_e2_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_lean_nf_du1_subqr8_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
