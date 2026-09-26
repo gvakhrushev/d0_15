@@ -377,10 +377,26 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    r0=-r1 anti-symmetric. Float `α≠0` Newton hits are **not** exact
    (den≤10^6 rationalization has transverse L1≈6.85). No multi-var GB /
    resultant. Outcome `EXACT_CURVED_FAMILY_UNDER_ENLARGED12_PATTERN`.
-   **Not** Ready: still need four-channel `R=R_*(C)` / full 8+6 channel
-   response and L=3 hostile before Ready.
+   **Not** Ready: classical 8+6 later confirmed (item 24); still need active
+   four-channel `R=R_*(C)≠0` response and L=3 hostile before Ready.
 
-24. **2D Cayley subtangent warning.**
+24. **E(2) lean-NF DU1 enlarged-12 classical 8+6 + R★ filter — Track B (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_lean_nf_du1_enlarged12_classical_8p6_check.py`
+   (sha256 `404789dd…c00f04`; wall ~3.1s; 63 PASS). Confirms the exact curved
+   family `α=β=0` is **full classical 8+6** in the lean-NF DU1 / subQR8
+   gauge-pack sense: `FREE_E2=[0,2,3,4,5,6,7,8]` FD grads ≡0 and transverse
+   6 ≡0 at the witness and on an 8-point rational battery; ambient 12-grad
+   vanishing implies the classical 8 as an index subset. Witness
+   `e2=(0,0,2,0,0,2,0,1,0,1,0,0)` has `curv²=32` and lies **outside** the
+   former subQR8 complement=0 slice (slot 9=`δ`=1); complement grads also 0.
+   Cheap four-channel / joint-residual filter at the witness with `b≡0`:
+   `C≠0` but joint residual `R≡0` and all four I-channels ≡0 — **honest
+   negative** for active `R=R_*(C)≠0` (I dormant on the R=0 locus; matched
+   affine residual section required to wake channels). No multi-var GB.
+   Outcome `CLASSICAL_8P6_CURVED_FAMILY_RSTAR_DORMANT`.
+   **Not** Ready: need active `R=R_*(C)≠0` channel response and L=3 hostile.
+
+25. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -433,7 +449,8 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-TRANSVERSE-ON-4PARAM-FLAT-LOCUS-OK-CURVED-BRANCH-GB-BLOCKED;
     E2-TRANSVERSE-NEWTON-NO-CURVED-ROOT-COLLAPSE-TO-FLAT;
     E2-ENLARGED12-NEWTON-CURVED-FLOAT-CANDIDATE;
-    E2-ENLARGED12-PATTERN-EXACT-CURVED-FAMILY
+    E2-ENLARGED12-PATTERN-EXACT-CURVED-FAMILY;
+    E2-ENLARGED12-CLASSICAL-8P6-CURVED-FAMILY-RSTAR-DORMANT
 
 Supporting:
 
@@ -446,18 +463,16 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** enlarged-12 pattern exactify (cert
-`…enlarged12_pattern_exactify_check.py`, ~23.6s) yields an **exact curved
-stationary family** under lean L≡0 + D=1 + U=0:
-`e2=(0,0,j, 0,0,j, γ,δ,0, δ,-γ,0)` with j open and `(γ,δ)≠0` (witness
-`(j,γ,δ)=(2,0,1)`, `curv²=32`). Free-internal(12)+transverse(6) vanish
-exactly. **Next:** confirm this family is full 8+6 stationary in the
-gauge-pack / classical-internal sense (or record which of the classical 8
-internal slots are implied by the 12 E(2) grads); optional filter
-`R=R_*(C)` at the exact witness; still forbid blind multi-var GB / deg-26
-chains. Do **not** re-impose locked E(2) NF. Jac-QR still blocked. Prior
-complement=0 4-param family remains flat-only for transverse. Float `α≠0`
-pattern hits stay non-exact. No Ready until channel response + L=3 hostile.
+**Primary (Track B):** classical 8+6 confirm + cheap R★ filter (cert
+`…enlarged12_classical_8p6_check.py`, ~3.1s) shows the exact curved family
+`e2=(0,0,j, 0,0,j, γ,δ,0, δ,-γ,0)` is full classical 8+6 under lean L≡0 +
+D=1 + U=0 (`FREE_E2=[0,2,3,4,5,6,7,8]` + transverse 6; witness
+`(j,γ,δ)=(2,0,1)`, `curv²=32`). Cheap filter at `b≡0`: `C≠0` but `R≡0` /
+I dormant — honest negative for active `R=R_*(C)≠0`. **Next:** activate /
+solve residual section `R=R_*(C)≠0` on this curved 8+6 family (matched
+affine `b` / `EL_b`), or record a scoped dormancy no-go; still forbid
+blind multi-var GB / deg-26 chains. Do **not** re-impose locked E(2) NF.
+Jac-QR still blocked. No Ready until active channel response + L=3 hostile.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
