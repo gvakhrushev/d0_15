@@ -28,7 +28,7 @@
       "id": "EXP-A4D-RESOLVED-AFFINE-PHYSICAL-QUOTIENT",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-AFFINE-CARTAN-PATH-CLOSURE-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
