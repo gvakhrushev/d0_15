@@ -520,3 +520,16 @@ These are recommendations; no public/book/claim rows are edited here.
 The endogenous mechanism visible in the current action is its **pair of Palatini first variations**: the smooth-limit connection variation eliminates torsion and selects Levi-Civita; the metric variation then carries the already fixed Einstein coefficient. The finite Lorentz Noether identity supplies the full solder equation on joint critical solutions. This removes the need to demand a globally unique off-shell connection function.
 
 The exact all-refinement counting theorem and the two structural hostile controls change how uniform closure should be attempted. They do not close it. The one smallest blocker for the selected convergence route is **JOINT-CRITICAL-CONNECTION-COMPACTNESS**, in the precise sense of §7.3. Until the finite joint equations prove that solution estimate, reaching Einstein remains a conditional bridge, not an unconditional derived law.
+
+
+## 10.5 CONTROL final dependency refresh
+
+This review-only refresh does not change the terminal or the selected theorem architecture.
+
+- **#233** is now merged at main merge commit `cf18bb1d51d5b86819638fea03eadeb1fab360fa`; its coframe-torsion result remains diagnostic-only.
+- **#231** remains at head `2d4b8f4773521afb516ad631512df04a432c1e26` with no repair commit after the transpose/full-block defects documented in §8.3. Its terminal remains rejected as an input.
+- **#235** is now available at provisional head `66bff2e3bc80de4534089e228a93aea406eaffa8`. It independently reconstructs the diagonal invisible four-space and a curved nongauge Role-0 cosine ray. On that ray it certifies (E_Q(\eta,K(t))=0) exactly and all Role-0 connection-edge Euler equations exactly. However the non-excited edges are not yet closed: only one Role-2/residue-1 representative is certified through order four. CONTROL therefore keeps #235 in Draft and does not accept its `...JOINT-VACUUM-GERM-FOUND` terminal until all non-excited edge equations are exact/all-orders or a symmetry theorem reduces them.
+- **#234** still has no scientific artifact at this refresh and remains dependent on a corrected #231/right-kernel reconstruction.
+- **#202** remains at head `7624ca2bf7ce4e924bbf51dbd6d5f338a959c2fb`; its lower-wall finite-jet scope is unchanged.
+
+The #235 ray strengthens the hostile-control motivation for the convergence route: response-invisible rapid connection structure may exist to very high order, so connection-field compactness is a sufficient target rather than a logically necessary formulation of every possible Einstein-limit theorem. This was already fenced in §7.3 and does not alter the terminal `A4D-GRAVITY-DEEP-SYNTHESIS-PARTIAL`.

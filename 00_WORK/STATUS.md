@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
-| WORKER | 4 | 0 | 0 | 0 | 4 | 0 / 5 |
-| **Total** | **6** | **0** | **0** | **1** | **7** | **1 / 10** |
+| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
+| **Total** | **5** | **0** | **0** | **1** | **6** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -20,7 +20,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-227-TORSION-DIAGNOSTIC | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
