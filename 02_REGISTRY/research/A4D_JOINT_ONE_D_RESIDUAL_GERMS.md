@@ -155,9 +155,12 @@ the squared Euclidean norm of these three leading components is exactly
 For orbit 0, analytic higher-order terms preserve a local estimate
 `||E_Q^red(u)|| >= c |u|^2` for some `c>0`. Hence its joint zero is locally
 isolated, with finite Hölder exponent `1/2`. For orbit 5 the cubic connection
-bound gives the corresponding exponent `1/3`. In either case, forcing of size
-`O(h^infinity)` implies `u=O(h^infinity)`. These are the two finite `L=4`
-orbit controls in the task; they are not a full smooth-continuum theorem.
+bound gives `||E_K^red(u)|| >= c |u|^3` locally and exponent `1/3`.
+Concretely, the reduced residual bounds have the form
+`|u|^m <= C ||E_red(u)||`, with `m=2` or `m=3`. If the reduced forcing is
+`O(h^N)` for every `N`, then for any target power `h^k` we choose `N >= mk`
+and get `u=O(h^k)`, hence `u=O(h^infinity)`. These are the two finite
+`L=4` orbit controls in the task; they are not a full smooth-continuum theorem.
 
 ## 4. Reproduction
 
