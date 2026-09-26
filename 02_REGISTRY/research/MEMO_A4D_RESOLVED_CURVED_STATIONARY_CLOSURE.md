@@ -3,7 +3,7 @@
 **Task:** `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`
 **Execution:** PR #202
 **Status:** IN_PROGRESS / durable checkpoint (restructured F4 attack)
-**Baseline:** `cf18bb1d51d5b86819638fea03eadeb1fab360fa`
+**Baseline:** `7d7ad1ba561dc1fb1d726a8158e8ddfe0c001794`
 
 ## 0A. CORRECTIVE FULL-EULER AUDIT (2026-09-26)
 
@@ -1291,3 +1291,57 @@ other finite points, or the full coupled residual equation `R=R_*(C)`. It
 therefore does not justify either requested support-wide negative terminal.
 The task remains `IN_PROGRESS`, and L=3 remains gated on an exact active-
 residual L=2 witness.
+
+### 9.10 Nonlinear split of the fixed-solder necessary subsystem
+
+The seven independent amplitudes of the selected support are `x0,...,x6` in
+the owner order
+
+```text
+(K1_0,K1_2,N2_2,N3_0,N3_1,N3_2,N3_3).
+```
+The exact multivariate certificate
+`a4d_resolved_curved_stationary_e2_support7_independent_solder_check.py`
+constructs each role's actual Cayley matrix and Lorentz inverse over
+`QQ[x0,...,x6]`. Its chart factors are
+
+```text
+D0 = 2 - x0^2/2;  D1 = 2;
+D2 = 1 - x5 - (x1^2+x2^2)/4;  D3 = 1 - x6^2/4.
+```
+It forms the full symmetric polynomial solder Hessian `H_num(x)` with a
+single cleared product of squared chart factors and verifies
+`H_num(x) vec(eta)` against all 16 fixed-solder Euler numerators. All 16
+polynomial equations for the fixed-solder necessary subsystem are available
+from that certificate; the four row-major entries with column index 2 are
+stored in
+`a4d_resolved_curved_stationary_e2_support7_solder_reduced4.json`.
+Their degrees are `(8,6,9,8)` in `(x0,x3,x4,x6)`, independent of the other
+three amplitudes. Their `4 x 4` tangent Jacobian in those variables at the
+base has determinant `-131072`, consistent with the full seven-column
+fixed-solder Jacobian rank 7.
+
+One equation in this subsystem is linear in `x0`, say `a*x0+b=0`, and the
+certificate checks the exact factorization
+
+```text
+b - 2*a = 2*x4*(x6^2-4)^2,
+a(x4=0) = 32*x6^2.
+```
+The chart excludes `x6^2=4`. In the exceptional case `a=0`, the equation
+forces `b=0`, whence `x4=x6=0`; the other two equations reduce to a small
+exact two-variable ideal and imply `x0=x3=0` on the chart. With these four
+amplitudes zero, the remaining exact solder equations in `(x1,x2,x5)` have
+a lexicographic Groebner basis containing `x2^2+x5^2` and
+`x5^2*(x1-x5+2)`. Over the reals, `x2=x5=0`; the other basis factor and
+`D2 != 0` force `x1=0`. Thus the whole exceptional branch is the original
+seven-amplitude base, where the full Lorentz Euler defect is nonzero.
+
+For `a != 0`, homogeneous substitution `x0=-b/a` gives a necessary
+three-variable polynomial system `F_0=F_2=F_3=0` in `(x3,x4,x6)` of exact
+degrees `(19,25,24)`. The chart conditions `x6^2 != 4`, `b^2-4*a^2 != 0`,
+and `D2 != 0` remain explicit; none is discarded by the substitution. The
+three-variable finite zero set has not been classified. This branch split
+narrows the exact seven-support fixed-solder gate; it does not solve the
+full link/affine Euler system, the nonzero residual equation, or the free
+solder equations away from `eta`. The task remains `IN_PROGRESS`.
