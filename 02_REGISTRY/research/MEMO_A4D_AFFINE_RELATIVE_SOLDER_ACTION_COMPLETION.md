@@ -1330,3 +1330,15 @@ That is the next legitimate research gate.
 A generic \(T^2\) term is **not** selected by this memo; its representation,
 parity, coefficient space, flat limit and variation must be classified before
 it is admitted.
+
+
+---
+
+## Ready-state EXPENSIVE audit
+
+PR #184 is \`Lifecycle: REVIEW\`. The EXPENSIVE task self-retired before Ready:
+its manifest/status entry and executable task brief are absent from the branch,
+while the durable memo, exact certificate, and research-ledger verdict remain.
+This audit-only commit changes no mathematical result; it exists so repository
+guards evaluate the final Ready-state contract rather than the preceding Draft
+event.
