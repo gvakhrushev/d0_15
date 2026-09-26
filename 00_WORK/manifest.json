@@ -23,15 +23,6 @@
       "affected_claims": [],
       "exit_condition": "Merged nightly-maintenance and nonlinear-Lorentz control rows are retired without altering their durable artifacts, and the repository control plane is internally consistent and green.",
       "brief": "00_WORK/tasks/CTRL-POST-MERGE-CONTROL-CLOSEOUT.md"
-    },
-    {
-      "id": "EXP-A4D-AFFINE-TRANSLATION-CURVATURE-ACTION-COMPLETION",
-      "class": "EXPENSIVE",
-      "parent": "ROOT",
-      "state": "IN_PROGRESS",
-      "affected_claims": [],
-      "exit_condition": "Classify the lowest-locality full-affine-invariant action terms that can depend on affine translation curvature/open torsion without a supplied affine reference point. Either construct a term that is sensitive to nongauge edge residuals or prove a scoped single-plaquette no-go and identify the minimal extra multi-holonomy/reference structure.",
-      "brief": "00_WORK/tasks/EXP-A4D-AFFINE-TRANSLATION-CURVATURE-ACTION-COMPLETION.md"
     }
   ]
 }
