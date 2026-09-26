@@ -161,12 +161,26 @@ Certificate: `a4d_resolved_curved_stationary_f4_check.py`.
    denom-cap `{4,8,12,16,24}` link-only roundings of the §4.1 scout have
    `C!=0` but exact homogeneous star-Euler `||g||^2 != 0` (identity solder),
    confirming §4.2 over Q.  Scope: no exact root; QR pivot assignment of the
-   14 transverse unknowns remains numerical provenance; joint link+solder
-   elimination of the 14 eqs is the remaining Track B step.
+   14 transverse unknowns remains numerical provenance.
    **A4 note:** sitewise Ad-Lorentz / all-site free-solder ambient widens
    aborted as too heavy; TORUS16_PI stands as Track A ceiling.
 
-10. **2D Cayley subtangent warning.**
+10. **E(2) 14 stationarity polynomials — Track B exactify (this PR).**
+   Certificate: `a4d_resolved_curved_stationary_e2_stationarity_polys_check.py`
+   (sha256 `9db323bd…84243bb8`; wall ~136s).
+   Exact 27-chart = 12 E(2) Cayley + 15 det-one LDU×η; complement
+   `{K1,M2,M3}` spans a linear complement of E(2) in `so(1,3)` (joint rank 6).
+   Provisional algebraic packing of memo §5 `FIXED_13` into chart slots
+   `[0,1,2,3,4,5,6,12..17]` (roles 0–1 E(2) + role2 `n2` + all strict-L);
+   free = role2 `{n3,j}` + role3 E(2) + D + U (14).
+   Built **14 exact internal** cleared star-stationarity numerators (all
+   degree 33) and **6 exact transverse** Lorentz numerators via Cayley
+   differential on roles `{0,1}×{K1,M2,M3}` (all degree 23). Selected
+   8+6 square subsystem has sample Jac rank 14 at a rational free probe.
+   Scope: no exact root; no Groebner; packing is provisional (QR pivots
+   unrecovered); four-channel `R=R_*(C)` filter not applied this turn.
+
+11. **2D Cayley subtangent warning.**
    In a 2-parameter subchart, ambient dim=2 makes `in_span` automatic whenever
    `rankB=2`.  That does **not** certify a root; the 6D test is the load-bearing one.
 
@@ -202,7 +216,9 @@ words).  **Must not** be promoted before exact rational reconstruction.
     E2-LIE-ALGEBRA-AND-NULL-STABILIZER-OVER-Q;
     E2-HOMOGENEOUS-PLAQUETTES-EXACTLY-PARABOLIC-ON-RATIONAL-BATTERY;
     E2-NORMAL-FORM-13-FIXED-14-FREE-INTERFACE-PACKED;
-    E2-DENOM-CAP-LINK-ROUNDING-STAR-RESIDUAL-EXACT-NONZERO
+    E2-DENOM-CAP-LINK-ROUNDING-STAR-RESIDUAL-EXACT-NONZERO;
+    E2-STATIONARITY-POLYS-14-INTERNAL-DEG33-PLUS-6-TRANSVERSE-DEG23;
+    E2-8P6-SUBSYSTEM-SAMPLE-JAC-RANK-14-UNDER-PROVISIONAL-PACKING
 
 Supporting:
 
@@ -215,14 +231,13 @@ No continuum Einstein claim.
 
 ### SINGLE NEXT BLOCKER
 
-**Primary (Track B):** joint link+solder exactification of the E(2) 14-transverse
-/ 13-fixed rational system (memo §§5–7).  Lean cert
-`a4d_resolved_curved_stationary_e2_exactify_check.py` now packs the E(2) Lie
-algebra, exact parabolic homogeneous plaquettes, the 13-rational normal-form
-table, and a denom-cap link-rounding probe with **exact** nonzero star-Euler
-residual (confirms §4.2 over Q).  Next: derive the 14 exact stationarity
-polynomials (8 internal + 6 transverse) with the packed normal form, eliminate
-/ algebraically reconstruct, then filter by four-channel `R=R_*(C)`.
+**Primary (Track B):** eliminate / algebraically reconstruct the 14 free coords
+from the exact 8+6 stationarity polynomial subsystem now certified under a
+**provisional** FIXED_13 packing
+(`a4d_resolved_curved_stationary_e2_stationarity_polys_check.py`), then filter
+by four-channel `R=R_*(C)`.  Hygiene: recover the float QR pivot-to-coordinate
+map or replace the provisional packing by a gauge-canonical exact normal form
+before claiming the numerical scout root is an algebraic point of this ideal.
 
 **Track A (parked):** TORUS16_PI is the current ambient ceiling.  Sitewise
 Ad-Lorentz / all-site free-solder widens were **aborted** this turn as too heavy
@@ -264,6 +279,7 @@ as the geometry ansatz.  Coefficient independence is settled by `rank M=4`,
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_f4_check.py
 python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_exactify_check.py
+python3 02_REGISTRY/research/certificates/a4d_resolved_curved_stationary_e2_stationarity_polys_check.py
 python3 02_REGISTRY/research/certificates/a4d_homogeneous_curved_stationary_controls_check.py
 python3 tools/validate_work.py
 python3 tools/validate_repo.py
