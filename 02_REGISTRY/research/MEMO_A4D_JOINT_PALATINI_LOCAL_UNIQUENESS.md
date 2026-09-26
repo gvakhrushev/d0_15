@@ -595,6 +595,79 @@ uniform claim requires a finite compact stratification on which
 (operatorname{rank}C_N) is constant; one cannot take a pseudoinverse through
 a rank jump and silently assume its norm stays bounded.
 
+## 5B. Slow-background stability and a linear-lifting shortcut
+
+The visible/invisible split also has a useful refinement-uniform perturbation
+statement.
+
+Suppose on one compact rank chart
+
+[
+C_h|_{N_{m vis}}
+=
+C_0+R_h,
+qquad
+|R_h|le Ch,
+]
+
+and
+
+[
+sigma_{min}(C_0)=sigma_0>0.
+]
+
+For sufficiently small (h),
+
+[
+oxed{
+sigma_{min}(C_h|_{N_{m vis}})
+ge
+sigma_0-Ch
+ge
+rac{sigma_0}{2}.
+}
+	ag{5B.1}
+]
+
+Thus source-visible modes stay uniformly source-visible on a slowly varying
+background. Their rejection is not a frozen-character artifact.
+
+There is a second possible shortcut on (N_0). Let the background-dependent
+metric pressure restricted to a frozen invisible sector have expansion
+
+[
+C_h|_{N_0}
+=
+h^m C_m+O(h^{m+1}),
+qquad
+m<infty.
+	ag{5B.2}
+]
+
+If (C_m) is injective on the physical (N_0) quotient, then for small (h)
+the inverse loses at most (h^{-m}). A smooth UV source therefore gives
+
+[
+|u_0|
+le
+C h^{-m}|s_h^{m UV}|+	ext{higher terms}
+=
+O(h^infty).
+	ag{5B.3}
+]
+
+In that case the residual sector is already closed by **linear slow-background
+metric pressure** and no nonlinear Puiseux/degree calculation is needed for
+the continuum theorem.
+
+If every finite background derivative through all orders remains singular on
+a subspace, only that surviving subspace proceeds to the nonlinear J2/J3
+normal-form pressure.
+
+This is a parent optimization, not a replacement for the registered workers:
+J1 must supply the exact frozen (N_0) basis before (5B.2) can be tested
+without duplicating its calculation.
+
 ## 6. Joint nonlinear normal theorem needed from the residual sectors
 
 Let (u) denote coordinates on a physical source-invisible normal sector after:
