@@ -11,6 +11,10 @@ Branch: `wrk/a4d-joint-resonance-linear-kernel`
 Primary artifact: `02_REGISTRY/research/A4D_JOINT_RESONANCE_LINEAR_KERNEL.md`  
 Execution: `GitHub-first`
 
+## Why delegated
+
+This is a bounded exact linear-algebra certificate over the already-owned #208/#216 polarized matrices. It should produce a reusable basis/table for the expensive joint-Palatini lane without taking ownership of any nonlinear branch or continuum theorem.
+
 ## Objective
 
 Turn the existing #208/#216 polarized matrices into an exact **joint** linear kernel census.
