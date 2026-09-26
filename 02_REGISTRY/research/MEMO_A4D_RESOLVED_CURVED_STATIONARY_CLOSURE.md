@@ -764,3 +764,172 @@ This gives a cleaner symbolic attack:
 
 This replaces the original forty-component Euler system by a structured
 (8+6) exact problem.
+
+---
+
+## 8. EXACT / CROSS-WALL — rank-adapted affine quotient coordinate
+
+The parabolic rank-two seam admits a canonical fixed-rank quotient coordinate.
+For one affine holonomy
+
+\[
+H=(P,t),\qquad M=I-P,\qquad \operatorname{rank}M=r,
+\]
+
+define
+
+\[
+\boxed{
+\Psi_r(M,t):
+\omega\longmapsto
+t\wedge(\Lambda^rM)\omega.
+}
+\]
+
+On the rank-\(r\) stratum:
+
+\[
+\Psi_r(M,t+Mc)=\Psi_r(M,t),
+\]
+
+and under \(M'=gMg^{-1}\), \(t'=gt+M'c\),
+
+\[
+\Psi_r(M',t')
+=
+(\Lambda^{r+1}g)\Psi_r(M,t)(\Lambda^rg^{-1}).
+\]
+
+Since \(\operatorname{im}\Lambda^rM=\Lambda^r\operatorname{im}M\) is a
+nonzero line,
+
+\[
+\boxed{
+\Psi_r(M,t)=0
+\iff
+t\in\operatorname{im}M,
+}
+\]
+
+and in fact
+
+\[
+\boxed{
+\Psi_r(M,t)=\Psi_r(M,t')
+\iff
+t-t'\in\operatorname{im}M.
+}
+\]
+
+Thus \(\Psi_r\) is a complete tensor coordinate of the affine cokernel class
+on a fixed-rank stratum.  In \(4D\), the old adjugate/cofactor residual is the
+\(r=3\) Hodge-dual member of this hierarchy; on the parabolic rank-two seam the
+correct surviving object is \(\Psi_2\).
+
+For a null rotation \(P=e^N\), \(N=n\wedge m\),
+
+\[
+\Pi=\operatorname{im}(I-P),
+\qquad
+\ell=\operatorname{im}(I-P)^2,
+\]
+
+and
+
+\[
+\boxed{
+\ell=\operatorname{rad}\Pi=\Pi\cap\Pi^\perp.
+}
+\]
+
+Hence the projective top nonzero compound
+
+\[
+[\Lambda^2(I-P)]
+\]
+
+already records the degenerate plane and therefore its null flag.  This is the
+rank-two analogue of the existing graph-closure/top-nonzero-compound
+architecture.
+
+**Scope:** this is a rank-stratified quotient diagnostic/resolution coordinate,
+not a new action term and not a new \(I\)-channel.  It need not remain
+translation invariant if used with the wrong exterior degree on a higher-rank
+stratum.
+
+---
+
+## 9. Exact enlarged family: finite-vacuum and flat-accumulation questions must be separated
+
+The current exact enlarged family is
+
+\[
+\boxed{
+e_2=
+(0,0,j,\;
+ 0,0,j,\;
+ \gamma,\delta,0,\;
+ \delta,-\gamma,0)
+}
+\]
+
+under lean \(L\equiv0\), \(D=(1,1,1)\), \(U=0\).  The existing exact
+certificate gives a curved witness
+
+\[
+(j,\gamma,\delta)=(2,0,1),
+\qquad
+\mathrm{curv}^2=32,
+\]
+
+with the declared free-internal/transverse residual package zero; the newer
+classical 8+6 check confirms the star-family stationarity in the current
+gauge-pack sense, while the cheap \(b\equiv0\) residual-channel filter remains
+dormant (\(C\ne0\), \(R=0\)) and therefore does not yet supply the required
+active \(R=R_\ast(C)\ne0\) four-channel solution.
+
+Two questions are now logically distinct.
+
+### 9.1 Lower-wall finite vacuum
+
+Does this family survive:
+
+1. an active matched affine residual section \(R=R_\ast(C)\ne0\);
+2. the selected four-channel response;
+3. the hostile \(L=3\) gate?
+
+This remains the load-bearing F4 question for #202.
+
+### 9.2 Cross-wall flat accumulation
+
+Independently of finite-vacuum survival, determine whether a nontrivial
+physical member or continuation of this family approaches the **flat physical
+quotient**.
+
+The coordinate limit
+
+\[
+(\gamma,\delta)\to(0,0)
+\]
+
+at fixed \(j\ne0\) has zero sampled curvature in the present family
+certificate, but that alone does not prove convergence to the flat quotient:
+the remaining \(j\)-holonomy may be gauge/physically trivial or may retain a
+nontrivial finite holonomy class.  This must be checked in quotient-invariant
+data.
+
+This diagnostic is relevant to PR #216 because the upper \(J^2\) theorem only
+needs to exclude a nontrivial zero-source stationary germ accumulating at
+flat.  A finite curved stationary family bounded away from the flat quotient
+does not obstruct that local theorem.
+
+Accordingly, #202 should report both outcomes separately:
+
+\[
+\boxed{\text{finite curved vacuum?}}
+\qquad\text{and}\qquad
+\boxed{\text{nontrivial stationary germ entering flat?}}
+\]
+
+without conflating them.
+
