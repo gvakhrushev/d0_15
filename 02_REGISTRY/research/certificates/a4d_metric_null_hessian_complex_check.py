@@ -223,12 +223,18 @@ for chart, specs in MINOR_COVERS.items():
 check(
     "PROJECTIVE_COVER_PROVES_RANK9_EVERYWHERE",
     all(
-        len(sp.groebner(
-            [sp.together(e) for _r, _c, e in MINOR_COVERS[ch]],
-            *CHART_VARS[ch],
-            order="grevlex",
-        ).polys) == 1
-        for ch in range(4)
+        (
+            len(g.polys) == 1
+            and sp.expand(g.polys[0].as_expr()) in (1, -1)
+        )
+        for g in (
+            sp.groebner(
+                [sp.together(e) for _r, _c, e in MINOR_COVERS[ch]],
+                *CHART_VARS[ch],
+                order="grevlex",
+            )
+            for ch in range(4)
+        )
     ),
 )
 
