@@ -2464,3 +2464,39 @@ twelve rows and before `Ka`.
 Quadratic solder self-energy is not remeasured. The full Euler is not
 tested. No stationary witness and no L=3 result. Task stays
 `IN_PROGRESS`.
+
+
+### 9.29 The line rho=1, p=0 has rank 6
+
+`a4d_resolved_curved_stationary_e2_kernel_field_rank_affine4_check.py`
+uses the same 12×14 matrix. Four sign identities hold over the whole
+function field, including the right-hand side and collinear `Ka`:
+row 6 = -row 2, row 7 = -row 3, row 9 = -row 8, and row 13 = -row 12.
+Collinear `Ka` also satisfies row 5 = -row 1, row 6 = -row 2, and
+row 7 = -row 3. The twelve rows therefore repeat eight rows:
+0, 1, 2, 3, 4, 5, 8, and 12.
+
+On the line `rho=1`, `p=0`, rows 0, 1, 2, 3, 8, and 12, in the six
+kernel columns
+
+```text
+b0·e2, b0·e3, b0·e1+b1·e0, -b0·e1+b1·e1,
+-4*b0·e1-b2·e1+b3·e1,
+Q4/(72*(t-2)^2) b0·e1 - ut*b2·e1 + (ut/2)*b2·e2 + b2·e3,
+```
+
+have a minor which is not identically zero. At `t=0` the minor is
+nonzero. As a function of `t` it is a degree-22 numerator over
+`81*(t-2)^5*den^6`, with `den=5*t^2-78*t+8`. Rows 4 and 5 lie in the
+span of those six rows. A particular solution supported on those six
+columns, with the four `Ka` coordinates equal to zero, clears all
+twelve rows identically in `t`. Where the minor is nonzero the rank is
+6, so the solution dimension is 8. The same rank and consistency hold
+at the further points `(1,6,0)` and `(3,6,4)`.
+
+The degree-22 factor is not solved. This particular solution is not
+claimed at those roots. The identity is on `rho=1`, `p=0`, not on the
+whole `(rho,t,p)` field. `Ka` is zero in this particular solution; the
+homogeneous solution was not computed. Quadratic solder self-energy
+and the full Euler are not tested. No stationary witness and no L=3
+result. Task stays `IN_PROGRESS`.
