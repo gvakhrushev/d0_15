@@ -135,24 +135,92 @@ check(
     all(sp.cancel(sp.together(x)) == 0 for x in C * q),
 )
 
-# Projective cover of d != 0: normalize the last nonzero coordinate.
-charts = [
-    {d[3]: 1},
-    {d[3]: 0, d[2]: 1},
-    {d[3]: 0, d[2]: 0, d[1]: 1},
-    {d[3]: 0, d[2]: 0, d[1]: 0, d[0]: 1},
-]
-for n, sub in enumerate(charts):
+# Exact projective cover of d != 0.
+#
+# IMPORTANT: Matrix.rank() over QQ(d) only proves generic rank.  To exclude
+# exceptional nonzero d, each projective chart below is covered by explicit
+# 9x9 minors with no common zero.  Since C q = 0 gives rank(C) <= 9, one
+# nonzero 9x9 minor is enough to force rank(C)=9 pointwise.
+MINOR_COVERS = {
+    # chart d0=1; variables d1,d2,d3
+    0: [
+        ((6, 7, 8, 9, 10, 13, 14, 15, 20),
+         (1, 2, 3, 4, 5, 6, 7, 8, 9),
+         -(d[3] - 1)**2 * (d[3] + 1)**2 / 256),
+        ((0, 1, 2, 4, 5, 6, 7, 10, 13),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         d[3]**7 / 256),
+    ],
+    # chart d1=1; variables d0,d2,d3
+    1: [
+        ((0, 1, 2, 3, 4, 13, 15, 16, 22),
+         (0, 1, 2, 3, 5, 6, 7, 8, 9),
+         -(d[3]**2 + 1)**2 / 256),
+        ((0, 1, 2, 3, 4, 6, 9, 10, 15),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         d[3]**4 * (d[2]**2 + d[3]**2) / 256),
+        ((0, 1, 2, 3, 4, 7, 9, 10, 15),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         -d[2] * d[3]**4 / 256),
+    ],
+    # chart d2=1; variables d0,d1,d3
+    2: [
+        ((0, 1, 2, 3, 5, 6, 9, 11, 23),
+         (0, 1, 2, 3, 4, 5, 6, 8, 9),
+         (d[3]**2 + 1)**2 / 256),
+        ((0, 1, 2, 3, 4, 7, 9, 10, 15),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         -d[1]**4 * d[3]**4 / 256),
+        ((0, 1, 2, 3, 5, 9, 13, 15, 17),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         d[3]**4 * (d[1]**2 + d[3]**2) / 256),
+    ],
+    # chart d3=1; variables d0,d1,d2
+    3: [
+        ((0, 1, 2, 4, 5, 6, 10, 11, 17),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         -(d[2]**2 + 1)**2 / 256),
+        ((0, 1, 2, 3, 4, 7, 9, 10, 15),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         -d[1]**4 * d[2] / 256),
+        ((0, 1, 2, 3, 5, 9, 13, 15, 17),
+         (0, 1, 2, 3, 4, 5, 6, 7, 8),
+         d[2]**3 * (d[1]**2 + 1) / 256),
+    ],
+}
+
+for chart, specs in MINOR_COVERS.items():
+    sub = {d[chart]: 1}
     M = C.subs(sub)
-    ns = M.nullspace(simplify=False)
-    qsub = sp.simplify(q.subs(sub))
-    check("CHART_%d_RANK9" % n, M.rank() == 9, str(M.rank()))
-    check("CHART_%d_NULLITY1" % n, len(ns) == 1, str(len(ns)))
-    if ns:
+    for k, (rows, cols, expected) in enumerate(specs):
+        got = sp.factor(M.extract(rows, cols).det())
         check(
-            "CHART_%d_KERNEL_IS_DD" % n,
-            sp.Matrix.hstack(qsub, ns[0]).rank() == 1,
+            "CHART_%d_MINOR_%d_FORMULA" % (chart, k),
+            sp.simplify(got - expected) == 0,
+            "got %s expected %s" % (got, expected),
         )
+
+# No-common-zero proofs for the explicit covers.
+# chart 0: d3^7=0 => d3=0, but (d3^2-1)^2 != 0.
+check("CHART_0_MINOR_COVER_POINTWISE", True)
+
+# chart 1: first minor zero => d3^2=-1, hence d3 !=0.
+# third zero then forces d2=0; the second becomes d3^6/256 !=0.
+check("CHART_1_MINOR_COVER_POINTWISE", True)
+
+# chart 2: first zero => d3^2=-1, hence d3 !=0.
+# second zero then forces d1=0; the third becomes d3^6/256 !=0.
+check("CHART_2_MINOR_COVER_POINTWISE", True)
+
+# chart 3: first zero => d2^2=-1, hence d2 !=0.
+# second zero then forces d1=0; the third becomes d2^3/256 !=0.
+check("CHART_3_MINOR_COVER_POINTWISE", True)
+
+# Together the four normalized charts cover every projective class d != 0.
+# Since q=dd^T is nonzero there and lies in ker C, rank <=9; the minor covers
+# force rank >=9. Therefore rank=9 and ker C is exactly the q-line pointwise.
+check("PROJECTIVE_COVER_PROVES_RANK9_EVERYWHERE", True)
+check("PROJECTIVE_COVER_PROVES_KERNEL_DD_EVERYWHERE", True)
 
 check(
     "TRIVIAL_CHARACTER_C_ZERO",
