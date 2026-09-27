@@ -36,17 +36,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
     },
     {
-      "id": "EXP-A4D-Q0-STATIONARY-SHEET-STRESS",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "On the real conjugate-paired metric path induced by q0(z), prove exact response agreement along a continued connection-stationary sheet or compute the first exact stress/continuation obstruction with the source and comparator pinned; make no global response claim.",
-      "brief": "00_WORK/tasks/EXP-A4D-Q0-STATIONARY-SHEET-STRESS.md"
-    },
-    {
       "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -101,17 +90,6 @@
       ],
       "exit_condition": "Formalize the #270 metric-null complex in Lean: C(d) vec_sym(dd^T)=0, rank 9 and kernel span(vec_sym(dd^T)) for every nonzero complex d using all four explicit chart covers, and the 10-dimensional origin fiber statement.",
       "brief": "00_WORK/tasks/WRK-A4D-METRIC-NULL-COMPLEX-LEAN.md"
-    },
-    {
-      "id": "WRK-A4D-SCHUR-EINSTEIN-DIRECT-LEAN",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #273 direct flat-symbol identity K_Schur=-(1/2)K_G1 coefficientwise in all 100 entries, the four Bianchi identities, and exact hostile convention controls.",
-      "brief": "00_WORK/tasks/WRK-A4D-SCHUR-EINSTEIN-DIRECT-LEAN.md"
     },
     {
       "id": "WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN",
