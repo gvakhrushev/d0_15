@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Exact joint residual-germ certificate for WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.
 
-The corrected #231 exact census gives one-dimensional joint kernels on both
-target orbits.  This certificate rechecks both bases, computes the orbit-0
-and orbit-5 reduced equations over Q(i), and proves local isolation with
-finite exponents 1/2 and 1/3 respectively.
+The corrected #231 exact census gives one-dimensional joint kernels on
+orbits 0, 5 and 7. This certificate checks the complete one-dimensional
+inventory, the exact bases and the reduced equations over Q(i).
 
 All action/Euler coefficients use the owned #208/#216 finite star formula,
 the real Lie-log link chart, and the inverse-character input convention.
@@ -15,6 +14,7 @@ from contextlib import redirect_stdout
 from itertools import combinations
 from io import StringIO
 from pathlib import Path
+import json
 
 import sympy as sp
 
@@ -48,6 +48,22 @@ HAB = owner_ns["HAB"]
 HAQ = owner_ns["HAQ"]
 SYM = [(a, b) for a in range(4) for b in range(a, 4)]
 E = [sp.eye(4)[:, r] for r in range(4)]
+CENSUS = json.loads(Path(__file__).with_name(
+    "a4d_joint_resonance_kernel_census.json").read_text(encoding="utf-8"))
+ONE_D_REPRESENTATIVES = {
+    row["orbit"]: tuple(row["ids"])
+    for row in CENSUS["table"] if row["dimN0"] == 1
+}
+
+
+def check_canonical_basis(orbit, ids, center):
+    check(f"ORBIT{orbit}_CANONICAL_IDS",
+          ONE_D_REPRESENTATIVES[orbit] == ids)
+    expected = sp.Matrix([
+        sp.sympify(value) for value in CENSUS["n0_bases"][str(orbit)]["basis"][0]
+    ])
+    check(f"ORBIT{orbit}_CANONICAL_BASIS",
+          (center - expected).applyfunc(sp.simplify) == sp.zeros(24, 1))
 
 
 def padd(left, right, deg):
@@ -226,7 +242,8 @@ def metric_euler(site, z, center, w0=None, w2=None, deg=2):
     return result
 
 
-def edge_euler(site, role, variation, z, center, w0=None, w2=None, deg=2):
+def edge_euler(site, role, variation, z, center, w0=None, w2=None, deg=2,
+               w21=None, w03=None):
     total = {}
     for a, b in PAIRS:
         if role == a:
@@ -236,7 +253,7 @@ def edge_euler(site, role, variation, z, center, w0=None, w2=None, deg=2):
         else:
             continue
         for base, corner in incident:
-            logs = face_logs(base, a, b, z, center, w0, w2)
+            logs = face_logs(base, a, b, z, center, w0, w2, w21, w03)
             factors = face_factors(logs, deg)
             if corner < 2:
                 dF = pmul(factors[corner], mconst(variation), deg)
@@ -274,15 +291,16 @@ def run_orbit_zero():
     }
     for index, value in exact_basis.items():
         center[index] = value
+    check_canonical_basis(0, ids, center)
     table_substitution = dict(zip(ZSYMS, z_table))
     H_table = HAB.subs(table_substitution)
     Q_table = HAQ.subs(table_substitution).T
     check("ORBIT0_BASIS_MATCHES_PR231_CONNECTION",
-          H_table.T * center == sp.zeros(24, 1))
+          (H_table * center).applyfunc(sp.simplify) == sp.zeros(24, 1))
     check("ORBIT0_BASIS_MATCHES_PR231_METRIC",
           Q_table * center == sp.zeros(10, 1))
     check("ORBIT0_PR231_N0_DIMENSION",
-          len(sp.Matrix.vstack(H_table.T, Q_table).nullspace()) == 1)
+          len(sp.Matrix.vstack(H_table, Q_table).nullspace()) == 1)
     check("ORBIT0_EXACT_N0_BASIS_CONNECTION", H.T * center == sp.zeros(24, 1))
     check("ORBIT0_EXACT_N0_BASIS_METRIC", symbol_q.T * center == sp.zeros(10, 1))
     check("ORBIT0_N0_DIMENSION", len(sp.Matrix.vstack(
@@ -419,6 +437,7 @@ def run_orbit_five():
     }
     for index, value in exact_basis.items():
         center[index] = value
+    check_canonical_basis(5, ids, center)
     table_joint = sp.Matrix.vstack(H_table, Q_table.T)
     check("ORBIT5_RANK_H_20", H_table.rank() == 20)
     check("ORBIT5_RANK_A_INVENTORY_23",
@@ -555,7 +574,154 @@ def run_orbit_five():
           "(2-sqrt(2)) |u|^3 + O(|u|^5)")
 
 
+def run_orbit_seven():
+    roots = [sp.Integer(1), I, sp.Integer(-1), -I]
+    ids = (2, 1, 1, 2)
+    z_table = [roots[i] for i in ids]
+    H_table = HAB.subs(dict(zip(ZSYMS, z_table)))
+    Q_table = HAQ.subs(dict(zip(ZSYMS, z_table)))
+    center = sp.zeros(24, 1)
+    for index, value in {
+        2: 1, 7: -I, 8: I, 11: -I,
+        12: -I, 14: I, 16: -I, 20: 1,
+    }.items():
+        center[index] = value
+    check_canonical_basis(7, ids, center)
+    table_joint = sp.Matrix.vstack(H_table, Q_table.T)
+    check("ORBIT7_RANK_H_22", H_table.rank() == 22)
+    check("ORBIT7_RANK_A_INVENTORY_23",
+          H_table.T.row_join(Q_table).rank() == 23)
+    check("ORBIT7_EXACT_JOINT_KERNEL_DIMENSION_ONE",
+          table_joint.rank() == 23 and
+          (table_joint * center).applyfunc(sp.simplify) == sp.zeros(34, 1))
+
+    z = [1 / value for value in z_table]
+    H = HAB.subs(dict(zip(ZSYMS, z)))
+    site = (0, 0, 0, 0)
+    linear_k = sp.Matrix([
+        coefficient(edge_euler(site, role, generator, z, center, deg=1), (1, 0))
+        for role in range(4) for generator in LORENTZ
+    ])
+    linear_q = sp.Matrix([
+        coefficient(p, (1, 0)) for p in metric_euler(site, z, center, deg=1)
+    ])
+    check("ORBIT7_DIRECT_CONNECTION_LINEAR_ZERO", linear_k == sp.zeros(24, 1))
+    check("ORBIT7_DIRECT_METRIC_LINEAR_ZERO", linear_q == sp.zeros(10, 1))
+    first_curvatures = []
+    for a, b in PAIRS:
+        logs = face_logs(site, a, b, z, center)
+        curvature = pscale(padd(product(face_factors(logs, 1), 1),
+                               pneg(inverse_product(logs, 1)), 1), sp.Rational(1, 2))
+        first_curvatures.append(curvature.get((1, 0), sp.zeros(4)).applyfunc(sp.simplify))
+    check("ORBIT7_FIRST_PLAQUETTE_CURVATURE_NONZERO",
+          any(matrix != sp.zeros(4) for matrix in first_curvatures))
+    check("ORBIT7_FIRST_CURVATURE_PROFILE_MATCHES_CENSUS",
+          [matrix == sp.zeros(4) for matrix in first_curvatures]
+          == [a == 0 and b == 3 for a, b in PAIRS])
+
+    H0 = HAB.subs(dict(zip(ZSYMS, [1] * 4)))
+    H2 = HAB.subs(dict(zip(ZSYMS, [value**2 for value in z])))
+    check("ORBIT7_ZERO_MODE_REGULAR", H0.rank() == 24)
+    check("ORBIT7_TWO_K_MODE_REGULAR", H2.rank() == 24)
+    quadratic_k = [
+        edge_euler(site, role, generator, z, center, deg=2)
+        for role in range(4) for generator in LORENTZ
+    ]
+    f0 = sp.Matrix([coefficient(p, (1, 1)) for p in quadratic_k])
+    f2 = sp.Matrix([coefficient(p, (2, 0)) for p in quadratic_k])
+    w0 = (-H0.T.inv() * f0).applyfunc(sp.simplify)
+    w2 = (-H2.T.inv() * f2).applyfunc(sp.simplify)
+    check("ORBIT7_CONNECTION_RANGE_ORDER2",
+          H0.T*w0 + f0 == sp.zeros(24, 1) and H2.T*w2 + f2 == sp.zeros(24, 1))
+    corrected_k2 = [
+        edge_euler(site, role, generator, z, center, w0, w2, deg=2)
+        for role in range(4) for generator in LORENTZ
+    ]
+    check("ORBIT7_DIRECT_RANGE_ORDER2_ZERO",
+          all(coefficient(p, mon) == 0 for p in corrected_k2
+              for mon in ((2, 0), (1, 1), (0, 2))))
+
+    metric = metric_euler(site, z, center, w0, w2, deg=2)
+    u2 = sp.Matrix([coefficient(p, (2, 0)) for p in metric])
+    uv = sp.Matrix([coefficient(p, (1, 1)) for p in metric])
+    v2 = sp.Matrix([coefficient(p, (0, 2)) for p in metric])
+    expected_u2 = sp.zeros(10, 1)
+    expected_u2[0], expected_u2[3], expected_u2[9] = -3+I, 6, -3-I
+    check("ORBIT7_METRIC_U2_EXACT", u2 == expected_u2)
+    check("ORBIT7_METRIC_UV_QUADRATIC_ZERO", uv == sp.zeros(10, 1))
+    check("ORBIT7_METRIC_V2_EXACT", v2 == expected_u2.applyfunc(sp.conjugate))
+
+    cubic_k = [
+        edge_euler(site, role, generator, z, center, w0, w2, deg=3)
+        for role in range(4) for generator in LORENTZ
+    ]
+    f21 = sp.Matrix([coefficient(p, (2, 1)) for p in cubic_k])
+    f03 = sp.Matrix([coefficient(p, (0, 3)) for p in cubic_k])
+    left_kernel = H.nullspace()
+    check("ORBIT7_CONNECTION_RESONANT_CUBIC_ZERO",
+          len(left_kernel) == 2 and
+          all(sp.simplify((row.T*f)[0]) == 0
+              for row in left_kernel for f in (f21, f03)))
+    x21, params21 = H.T.gauss_jordan_solve(-f21)
+    x03, params03 = H.T.gauss_jordan_solve(-f03)
+    for parameter in list(params21) + list(params03):
+        x21, x03 = x21.subs(parameter, 0), x03.subs(parameter, 0)
+    x21, x03 = x21.applyfunc(sp.simplify), x03.applyfunc(sp.simplify)
+    check("ORBIT7_CONNECTION_RANGE_ORDER3",
+          (H.T*x21 + f21).applyfunc(sp.simplify) == sp.zeros(24, 1) and
+          (H.T*x03 + f03).applyfunc(sp.simplify) == sp.zeros(24, 1))
+    corrected_k3 = [
+        edge_euler(site, role, generator, z, center, w0, w2, deg=3,
+                   w21=x21, w03=x03)
+        for role in range(4) for generator in LORENTZ
+    ]
+    check("ORBIT7_DIRECT_RANGE_ORDER3_ZERO",
+          all(coefficient(p, mon) == 0 for p in corrected_k3
+              for mon in ((2, 1), (0, 3), (1, 2), (3, 0))))
+
+    local_action = {}
+    for a, b in PAIRS:
+        logs = face_logs(site, a, b, z, center, w0, w2, x21, x03)
+        curvature = pscale(padd(product(face_factors(logs, 6), 6),
+                               pneg(inverse_product(logs, 6)), 6), sp.Rational(1, 2))
+        local_action = padd(local_action, face_density(a, b, curvature), 6)
+    U, V = sp.symbols("u v")
+    reduced_action = {
+        n: sp.factor(256 * sum(
+            value * U**p * V**q
+            for (p, q), value in local_action.items()
+            if p+q == n and (p-q) % 4 == 0))
+        for n in (2, 4, 6)
+    }
+    check("ORBIT7_REDUCED_ACTION_QUADRATIC_QUARTIC_ZERO",
+          reduced_action[2] == 0 and reduced_action[4] == 0)
+    expected_action6 = 512*U*V*((16-13*I)*U**4 + 42*U**2*V**2 + (16+13*I)*V**4)
+    check("ORBIT7_REDUCED_ACTION_SEXTIC_EXACT",
+          sp.simplify(reduced_action[6] - expected_action6) == 0)
+    e_k5 = sp.factor(sp.diff(reduced_action[6], V))
+    expected_e_k5 = 512*U*((16-13*I)*U**4 + 126*U**2*V**2 + (80+65*I)*V**4)
+    check("ORBIT7_CONNECTION_REDUCED_QUINTIC_EXACT",
+          sp.simplify(e_k5 - expected_e_k5) == 0)
+    print("ORBIT7_S6:", reduced_action[6])
+    print("ORBIT7_E_K5:", e_k5)
+
+    X, Y = sp.symbols("x y", real=True)
+    real_sub = {U: X+I*Y, V: X-I*Y}
+    leading_q = [u2[j]*U**2 + v2[j]*V**2 for j in range(10)]
+    norm_sq = sp.expand(sum(sp.expand(q.subs(real_sub))**2 for q in leading_q))
+    check("ORBIT7_METRIC_QUADRATIC_COERCIVE_NORM",
+          sp.simplify(norm_sq - 216*(X**2-Y**2)**2 - 32*X**2*Y**2) == 0)
+    check("ORBIT7_METRIC_QUADRATIC_EXACT_LOWER_BOUND",
+          sp.simplify(norm_sq - 8*(X**2+Y**2)**2 - 208*(X**2-Y**2)**2) == 0)
+    print("ORBIT7_E_Q2: E00=(-3+i)u^2+(-3-i)conj(u)^2, "
+          "E03=6u^2+6conj(u)^2, E33=(-3-i)u^2+(-3+i)conj(u)^2")
+    print("ORBIT7_METRIC_BOUND: ||E_Q2||_2 >= 2 sqrt(2) |u|^2; exponent 1/2")
+
+
 if __name__ == "__main__":
-    run_orbit_zero()
-    run_orbit_five()
+    runners = {0: run_orbit_zero, 5: run_orbit_five, 7: run_orbit_seven}
+    check("ALL_CANONICAL_ONE_D_REPRESENTATIVES_COVERED",
+          set(runners) == set(ONE_D_REPRESENTATIVES))
+    for orbit in sorted(ONE_D_REPRESENTATIVES):
+        runners[orbit]()
     print("J2-JOINT-ONE-D-RESIDUAL-ORBITS-ISOLATED")
