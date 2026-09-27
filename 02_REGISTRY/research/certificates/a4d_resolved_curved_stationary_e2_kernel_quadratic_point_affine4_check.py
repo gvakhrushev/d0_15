@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Quadratic remainder of the particular amplitude at (rho,t,p)=(1,0,0).
+# D0_CI_TIMEOUT_SECONDS=1200
+"""Quadratic remainder on free translations and Ka at (rho,t,p)=(1,0,0).
 
 The linear 12x14 system is solved by six kernel columns. This run
-evaluates resp at that rational particular amplitude and asks whether
-the quadratic remainder, weighted by the solved translation, can be
-cleared inside the Ka=0 affine solution space.
+evaluates the rational particular amplitude, its four Ka directions and
+their polarizations. Exact contractions test the solved translation and
+four independent free Ka=0 translations. This is a projected affine-order
+jet at one modulus point, not the untruncated stationary Euler system.
 """
 from __future__ import annotations
 
@@ -220,6 +222,15 @@ def six_zero(vals, name):
         print(name, bad, flush=True)
     check(name, not bad)
 ka_resp = []
+free_translation_taus = {}
+for j in free_kernel:
+    tau_j = [s.Integer(0)] * 16
+    for k in range(13):
+        tau_j[3 + k] = s.together(Bpt[k, j])
+    free_translation_taus[j] = tau_j
+T_free = s.Matrix([[tau_j[3 + k] for j, tau_j in free_translation_taus.items()]
+                   for k in range(13)])
+check('FOUR_FREE_TRANSLATION_DIRECTIONS_INDEPENDENT', T_free.rank() == 4)
 for i, d in enumerate(ka_dirs):
     print('RESP_KA', i, flush=True)
     Rd = resp(X_of(d))
@@ -230,12 +241,23 @@ for i, d in enumerate(ka_dirs):
     square = block_sub(R2, Rd, Rd, R0)
     six_zero(weighted(cross, tau), f'KA_CROSS_{i}_SIX_ZERO')
     six_zero(weighted(square, tau), f'KA_SQUARE_{i}_SIX_ZERO')
+    for j, tau_j in free_translation_taus.items():
+        mixed = weighted(cross, tau_j)
+        vals = tuple(s.cancel(mixed[row_i]) for row_i in six)
+        print('FREE_TRANSLATION_KA_CROSS', j, i, vals, flush=True)
+        check(f'FREE_TRANSLATION_{j}_KA_CROSS_{i}_SIX_ZERO',
+              all(value == 0 for value in vals))
+        six_zero(weighted(square, tau_j),
+                 f'FREE_TRANSLATION_{j}_KA_SQUARE_{i}_SIX_ZERO')
 for i in range(4):
     for j in range(i + 1, 4):
         print('RESP_PAIR', i, j, flush=True)
         Rij = resp(X_of([ka_dirs[i][k] + ka_dirs[j][k] for k in range(7)]))
         pair = block_sub(Rij, ka_resp[i], ka_resp[j], R0)
         six_zero(weighted(pair, tau), f'KA_PAIR_{i}_{j}_SIX_ZERO')
+        for k, tau_k in free_translation_taus.items():
+            six_zero(weighted(pair, tau_k),
+                     f'FREE_TRANSLATION_{k}_KA_PAIR_{i}_{j}_SIX_ZERO')
 print('SECONDS', monotonic() - st, flush=True)
 raise SystemExit(0)
 """, 1)

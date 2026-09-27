@@ -2562,3 +2562,163 @@ Crosses between the four free translations and the `Ka` directions are
 not remeasured. The test is one modulus point, not the function field.
 The untruncated Euler is not evaluated. No stationary witness and no
 L=3 result. Task stays `IN_PROGRESS`.
+
+
+### 9.32 Free-translation polarizations of the quadratic jet
+
+The §9.31 certificate now also contracts every quadratic polarization with
+each of the four free `Ka=0` translation vectors, the columns 4, 5, 7, and 9
+of `BK` at `(rho,t,p)=(1,0,0)`. Their 13-component matrix has exact rank 4.
+The particular amplitude, pivot translation, four `Ka` directions, channel
+coefficients and six projected rows are unchanged.
+
+For each free translation the additional checks are:
+
+- four particular-amplitude / `Ka` cross terms;
+- four `Ka` squares;
+- six pairwise `Ka` cross terms.
+
+Thus 56 additional six-component contractions vanish exactly. The square
+and pair contractions are needed as well as the 16 particular/`Ka` cross
+terms: those 16 alone would not establish the polynomial statement.
+Together with §9.31, the amplitude-quadratic remainder is zero on these six
+rows for the particular translation plus an arbitrary linear combination
+of the four free translation vectors, and for arbitrary coefficients of
+the four `Ka` directions, at this one modulus point. Translation enters
+linearly. The order-four affine Euler used by `resp` is at most quadratic
+in the order-two amplitude: its products are of jet degrees `(1,3)`,
+`(2,2)` and `(3,1)`. The constant remainder and all its quadratic
+polarizations therefore cover the whole stated polynomial.
+
+This describes the projected quadratic remainder, not a solution of the
+complete Euler system for eight arbitrary parameters. It adds neither an
+untruncated Euler evaluation nor a function-field identity. The solder
+self-energy and missing orders must still be included before claiming
+stationarity. No finite curved stationary witness, broad L=2 no-go or L=3
+result is obtained. Task remains `IN_PROGRESS`.
+
+### 9.33 Conditional effective-response bridge and its missing hypotheses
+
+The supplied D0-to-GR blueprint is retained here as a conditional bridge,
+not as three established continuum theorems. This section does not change
+#202's action, carrier, terminal criterion or task state. Its scope is the
+relation between finite stationary certificates and a possible effective
+metric response.
+
+#### Fixed-metric stationary homotopy, rather than total connectedness
+
+On a finite carrier write `E_Q=partial_Q S`, `E_Y=partial_Y S`. If a
+C1 section `Y(Q)` is exactly connection-stationary, the chain rule gives
+
+\[
+D_Q S(Q,Y(Q))=E_Q(Q,Y(Q))+(D_QY)^*E_Y(Q,Y(Q))
+                =E_Q(Q,Y(Q)).
+\]
+
+This identity does not by itself make the response independent of the
+chosen stationary section. A sufficient additional hypothesis is a C1
+family `Y_s(Q)`, `s in [0,1]`, on one open set of metric data, such that
+`E_Y(Q,Y_s(Q))=0` for every fixed `Q` and every `s`, with the two sections
+as endpoints. Then
+
+\[
+\partial_s S(Q,Y_s(Q))=E_Y(Q,Y_s(Q))\cdot\partial_sY_s(Q)=0.
+\]
+
+The two effective actions are equal for every `Q` in that open set.
+Differentiating that equality and using the chain rule proves equality of
+their metric responses. This conditional finite-dimensional lemma requires
+no uniqueness of `Y` and no inverse Hessian. Neither a fixed-flat-metric
+path alone nor connectedness of the total set `{(Q,Y):E_Y=0}` supplies its
+hypotheses.
+
+An explicit algebraic control is
+
+\[
+S(q,y)=(y^2-q)^2,\qquad E_y=4y(y^2-q),\qquad E_q=2(q-y^2).
+\]
+
+The stationary set `y=0` together with `q=y^2` is connected through the
+origin. For any `q>0`, the two smooth stationary sections `y=0` and
+`y=sqrt(q)` have responses `2q` and `0`, respectively. They cannot be
+joined inside the stationary fibre at that fixed `q`. Thus total
+connectedness cannot replace the fixed-metric homotopy hypothesis.
+
+For an approximate section, the term `(D_QY)^*E_Y` remains. To discard it
+after `h^-2` normalization one must bound that product in the chosen norm;
+a high-order Euler residual without control of `D_QY` is insufficient.
+This is particularly relevant to the resonant/degenerate charts of #202.
+
+#### Owned inputs and live gates, pinned 2026-09-27
+
+Canonical main at this audit is
+`9bfdbff6ad183fbe9ed4d9cffe0b2f8d554120d2`. Live PR results below are
+checkpoints, not merged owners.
+
+| Input / execution | Established scope | Remaining bridge |
+| --- | --- | --- |
+| Merged [#273](https://github.com/gvakhrushev/d0_15/pull/273), `A4D_SCHUR_EINSTEIN_DIRECT_IDENTIFICATION.md` | `K_Schur=-1/2 K_G^(1)` in all 100 flat-symbol entries; polynomial Bianchi; regular origin connection block `det A0=256` | Nonlinear variable-metric identification and controlled limit. [#298](https://github.com/gvakhrushev/d0_15/pull/298) at `7b8de3fcfee15ca2ebbea88c6682939597fb95dc` has a Lean source but reports an uncompleted narrow build and failed generated-view check; do not count it as validated formalization. |
+| Merged [#270](https://github.com/gvakhrushev/d0_15/pull/270) and [#296](https://github.com/gvakhrushev/d0_15/pull/296) | `C(1)=0`; for nonzero complex `d`, rank `C=9`, kernel `span(dd^T)`; raw second forcing `F2=-(d^T eta d)/4 C(d odot d) vec_sym(dd^T)` | `dd^T` is Veronese; null/Kerr–Schild interpretation requires the additional null condition. Raw `d=O(h)` scaling is not a normalized field-response estimate. |
+| Live [#285](https://github.com/gvakhrushev/d0_15/pull/285), `9ebc3e354857c7d7b82d6293f9142647a6e75dc6` | Mode B `(-1,1,-1,1)` has exact identity-link joint vacuum for all real epsilon; mode A `(i,i,-i,-i)` has a solved second-order connection correction and `E_Q=O(epsilon^3)` | Cubic continuation on mode A, slow packets and a norm/amplitude estimate remain open. Two high-frequency rays are not all smooth modes. |
+| Live [#240](https://github.com/gvakhrushev/d0_15/pull/240), `2c98fbed57976c749d7374af13352cabb0003270` | Partial terminal `SHEAR-PERIOD-2-SLOW-ENVELOPE-KILLS-AMPLITUDE-GAP-ZERO`: `-432u^5` cuts the period-2 amplitude; the bounded periodic slow envelope is zero | Other admissible microstructures remain open. The unattained stress is not an owned curvature-squared term. |
+| Merged [#232](https://github.com/gvakhrushev/d0_15/pull/232), [#241](https://github.com/gvakhrushev/d0_15/pull/241), [#259](https://github.com/gvakhrushev/d0_15/pull/259); live [#275](https://github.com/gvakhrushev/d0_15/pull/275), `663292f88e6107a6566cf93ecd76f61ad113c176` | Explicit curved Y family and slow profile; corrected connection-stationary response through the claimed orders; next range correction reduces the residual freedom to the real COS/SIN shell of `N0=span(lambda1,lambda3,lambda4,lambda6)` | #275 remains blocked on #260's nonlinear real-ray continuation. No exact same-source joint solution is asserted. |
+| Live [#260](https://github.com/gvakhrushev/d0_15/pull/260), `da9b12d74a8d7decbe0a24d33eb917c21c6ce0e6` | Corrected real COS/SIN rays vanish in scalar, connection and metric Euler through degree 5 | Degree-6 even-harmonic forcing and regular correction, then the next odd resonant projection, are missing. Degree 5 does not prove torsion freedom. |
+| This [#202](https://github.com/gvakhrushev/d0_15/pull/202), §§9.30–9.32 | Six projected affine rows, function-field rank-6 chart and the enlarged quadratic-remainder cancellation at one point | Full solder self-energy, untruncated joint Euler, minor zero locus and other admissible deformations. No curved stationary witness. |
+
+#### A response gap must be computed in its own variables
+
+The next object in #260 is a pair of maps, not one ambiguous `F6`:
+connection forcing in the declared all-edge carrier (24 generator slots
+per site), and metric forcing in the ten symmetric metric slots per site,
+with their real COS/SIN harmonic support recorded. Classify the connection
+forcing using its own regular Hessian image and its left-kernel/Fredholm
+projection. If solvable, substitute the solved correction into the metric
+Euler from the same expansion. A nonzero connection obstruction prevents
+that formal continuation; it is not itself a metric stress coefficient.
+
+The #260 germ amplitude `epsilon` and #275's slow scale `h`/valued parameter
+`z_h=h` are different variables. Their matching, and any singular amplitude
+or inverse growth, must be derived before assigning a power of `h` to a
+coefficient. Even if a bounded metric coefficient genuinely occurred as
+`h^6 F6`, its normalized contribution would be `h^4 F6 -> 0`; a nonzero
+coefficient alone would not prove a finite response gap.
+
+For the selected slow background and the designated comparator with its
+realization and source prescription fixed independently, define the target
+comparison explicitly:
+
+\[
+\mathcal R_h=h^{-2}\bigl(E_Q(Q_h,Y_h)-E_Q^{\rm des}(Q_h)\bigr),
+\qquad Q_h=\eta+h\alpha+h^2x_0\beta.
+\]
+
+The connection-stationary candidate must first be constructed, with the
+same fixed data as the comparator. Choosing a source after the candidate
+is built would make a joint-response test tautological. The #216
+parametrix has a super-algebraic full Euler residual; it is not yet an
+exact full stationary section. Its designated coefficient remains
+conditional on the stated coupled normal-rescue and response estimates.
+
+No additive decomposition into independent `R_sm`, `R_q0`, `R_sh` and
+`R_Y` is claimed: mixed nonlinear terms and completeness of the admissible
+class have not been controlled. Vanishing of this one Y comparison would
+close a scoped bridge, not exhaust all stationary leaves. A nonlinear GR
+limit still needs existence/refinement control, the response norm and
+uniform remainder bound, and the nonlinear designated identification.
+The present memo proves neither `Y=Gamma_LC` nor
+`S_eff=int sqrt(-g) R+O(h^4)`.
+
+#### Execution order, without duplicate branches
+
+1. Continue the existing #260 real-ray convention: degree-6 even forcing,
+   exact regular solution or Fredholm obstruction, then next odd order.
+2. #275 consumes that corrected jet and computes the ten-slot response on
+   its pinned slow profile, with `z=h`, against the pinned comparator.
+3. #240 consumes the scoped normalized result; its existing shear terminal
+   remains partial until the required admissible class is controlled.
+4. #285's mode-A cubic coefficient and #202's full-Euler finite-carrier
+   gate remain separate. #267's executable `E_sp` owner must be accepted
+   and merged before #265's dependency gate opens.
+
+This is a dependency map for existing tasks, not registration of new work
+or a retirement of any still-open task.
