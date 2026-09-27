@@ -70,7 +70,7 @@ Start from the required merged/stacked dependency. Open Draft before substantive
 
 ## Blocker
 
-On the pure-mode line \(u_0=u_1=0\), \(u_2^3=u_3^3\), the character-\((-1,-1,-1,-1)\) correction is solved from the rank-24 variational Hessian and substituted into \(E_Q\). The corrected degree-4 metric Euler is nonzero at all three cube roots. Acceptance still needs that substitution on the conjugate quarter-wave \((-i,-i,-i,-i)\).
+The complex quarter-wave and its conjugate are cut by the corrected degree-4 metric Euler. The real cosine and sine dressings of \(u=(0,0,1,1)\) are curved and jointly stationary through degree 4 after the zero-mode and character-\((-1)\) corrections. Acceptance still needs the degree-5 connection Euler of those corrected rays.
 
 PR #264, terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL`, closes the affine bypass: the flat coframe image is not joint-Hessian-null on the singular L4 orbits, so it cannot delete those regular variables.
 

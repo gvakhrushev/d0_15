@@ -600,7 +600,7 @@ def _minus_hessian():
     return hess
 
 
-def _ray_logs(amps, correction, tt):
+def _ray_logs(amps, correction, tt, zeta_power=1):
     base = [amps[r] * Ms[r] for r in range(4)]
     rmat = []
     for role in range(4):
@@ -610,7 +610,7 @@ def _ray_logs(amps, correction, tt):
         rmat.append(matrix)
 
     def log_at(role, k, extra=None):
-        zeta = sp.I**k
+        zeta = (sp.I**zeta_power)**k
         eta = 1 if k % 2 == 0 else -1
         bump = extra if extra is not None else sp.zeros(4)
         return zeta * tt * base[role] + eta * (tt**2) * rmat[role] + bump
@@ -618,12 +618,12 @@ def _ray_logs(amps, correction, tt):
     return log_at
 
 
-def _forcing_and_corrected(amps):
+def _forcing_and_corrected(amps, zeta_power=1):
     """Character-(-1) quadratic forcing, its solved correction, and corrected E_Q."""
     tt, ss = sp.symbols("tt ss")
     forcing = sp.zeros(24, 1)
     zero = sp.zeros(24, 1)
-    log_plain = _ray_logs(amps, zero, tt)
+    log_plain = _ray_logs(amps, zero, tt, zeta_power)
     for direction in range(24):
         role, gen = divmod(direction, 6)
 
@@ -654,7 +654,7 @@ def _forcing_and_corrected(amps):
         poly = sp.Poly(sp.expand(total), tt, ss)
         forcing[direction] = sp.expand(poly.coeff_monomial(tt**2 * ss))
     correction = sp.expand(-_MINUS_H.LUsolve(forcing))
-    log_corr = _ray_logs(amps, correction, tt)
+    log_corr = _ray_logs(amps, correction, tt, zeta_power)
     series = {}
     for k in range(4):
         for role_r in range(4):
@@ -720,10 +720,229 @@ for _root in (
     check("MINUS_EQUATION_ON_CUBE_ROOT", sp.expand(_MINUS_H * _r_root + _f_root) == sp.zeros(24, 1))
     check("CORRECTED_EQ_NONZERO_ON_CUBE_ROOT", any(comp != 0 for comp in _eq_root))
 
+_conj_f, _conj_r, _conj_eq = _forcing_and_corrected([0, 0, 1, 1], zeta_power=-1)
+for _j in range(10):
+    check(
+        "CONJUGATE_EQ_RAY_%d" % _j,
+        sp.expand(_conj_eq[_j] - sp.conjugate(_ray_eq[_j])) == 0,
+    )
+check(
+    "CONJUGATE_CORRECTION_IS_CONJUGATE",
+    sp.expand(_conj_r - sp.conjugate(_ray_r)) == sp.zeros(24, 1),
+)
+
+def _zero_hessian():
+    coords = sp.symbols("z0:24")
+    logs = []
+    for role in range(4):
+        matrix = sp.zeros(4)
+        for j in range(6):
+            matrix += coords[6 * role + j] * GEN[j]
+        logs.append(matrix)
+    forward = [_exp_series(logs[r], 2) for r in range(4)]
+    total = 0
+    for p, q in PAIRS:
+        hol = forward[p]
+        hol = _mul_series(hol, forward[q], 2)
+        hol = _mul_series(hol, _inv_series(forward[p], 2), 2)
+        hol = _mul_series(hol, _inv_series(forward[q], 2), 2)
+        hinv = _inv_series(hol, 2)
+        uu, vv = [i for i in range(4) if i not in (p, q)]
+        odd = sp.expand(sp.Rational(1, 2) * (hol[2] - hinv[2]))
+        total += 256 * complement_orientation((p, q)) * (
+            wedge_vec(basis_cols[uu], basis_cols[vv]).T * G2 * STAR * bivector_of_tangent(odd)
+        )[0]
+    potential = sp.expand(total)
+    hess = sp.zeros(24)
+    for i in range(24):
+        di = sp.diff(potential, coords[i])
+        for j in range(24):
+            hess[i, j] = sp.diff(di, coords[j])
+    return hess
+
+
+_ZERO_H = _zero_hessian()
+check("ZERO_HESSIAN_RANK_24", _ZERO_H.rank() == 24)
+
+
+def _real_forcing(dress, target):
+    tt, ss = sp.symbols("tt ss")
+    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
+    forcing = sp.zeros(24, 1)
+    for direction in range(24):
+        role, gen = divmod(direction, 6)
+        series = {}
+        for k in range(4):
+            eta = (1 if k % 2 == 0 else -1) if target == "minus" else 1
+            for role_r in range(4):
+                extra = eta * ss * GEN[gen] if role_r == role else sp.zeros(4)
+                series[(role_r, k)] = _exp_series(dress[k] * tt * base[role_r] + extra, 3)
+        total = 0
+        for k in range(4):
+            ks = (k + 1) % 4
+            for p, q in PAIRS:
+                hol = series[(p, k)]
+                hol = _mul_series(hol, series[(q, ks)], 3)
+                hol = _mul_series(hol, _inv_series(series[(p, ks)], 3), 3)
+                hol = _mul_series(hol, _inv_series(series[(q, k)], 3), 3)
+                hinv = _inv_series(hol, 3)
+                uu, vv = [i for i in range(4) if i not in (p, q)]
+                area = wedge_vec(basis_cols[uu], basis_cols[vv])
+                sgn = complement_orientation((p, q))
+                for deg in range(4):
+                    odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
+                    total += 64 * sgn * (area.T * G2 * STAR * bivector_of_tangent(odd))[0]
+        poly = sp.Poly(sp.expand(total), tt, ss)
+        forcing[direction] = sp.expand(poly.coeff_monomial(tt**2 * ss))
+    return forcing
+
+
+def _real_corrected(dress, r_minus, r_zero):
+    tt, ss = sp.symbols("tt ss")
+    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
+
+    def pack(vec):
+        out = []
+        for role in range(4):
+            matrix = sp.zeros(4)
+            for j in range(6):
+                matrix += vec[6 * role + j] * GEN[j]
+            out.append(matrix)
+        return out
+
+    rm, rz = pack(r_minus), pack(r_zero)
+    series = {}
+    for k in range(4):
+        eta = 1 if k % 2 == 0 else -1
+        for role in range(4):
+            log = dress[k] * tt * base[role] + eta * (tt**2) * rm[role] + (tt**2) * rz[role]
+            series[(role, k)] = _exp_series(log, 4)
+    odds = {}
+    curved = False
+    for k in range(4):
+        ks = (k + 1) % 4
+        for p, q in PAIRS:
+            hol = series[(p, k)]
+            hol = _mul_series(hol, series[(q, ks)], 4)
+            hol = _mul_series(hol, _inv_series(series[(p, ks)], 4), 4)
+            hol = _mul_series(hol, _inv_series(series[(q, k)], 4), 4)
+            hinv = _inv_series(hol, 4)
+            parts = [sp.expand(sp.Rational(1, 2) * (hol[d] - hinv[d])) for d in range(5)]
+            odds[(k, p, q)] = parts
+            if parts[1] != sp.zeros(4):
+                curved = True
+    potential = 0
+    for k in range(4):
+        for p, q in PAIRS:
+            uu, vv = [i for i in range(4) if i not in (p, q)]
+            area = wedge_vec(basis_cols[uu], basis_cols[vv])
+            sgn = complement_orientation((p, q))
+            for deg in range(5):
+                potential += 64 * sgn * (
+                    area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
+                )[0]
+    metric = {m: [] for m in (2, 3, 4)}
+    for j in range(10):
+        frames = [basis_cols[r] + ss * _hcols[j][r] for r in range(4)]
+        total = 0
+        for k in range(4):
+            for p, q in PAIRS:
+                uu, vv = [i for i in range(4) if i not in (p, q)]
+                area = wedge_vec(frames[uu], frames[vv])
+                sgn = complement_orientation((p, q))
+                for deg in range(5):
+                    total += 64 * sgn * (
+                        area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
+                    )[0]
+        poly = sp.Poly(sp.expand(total), tt, ss)
+        for m in (2, 3, 4):
+            metric[m].append(sp.expand(poly.coeff_monomial(tt**m * ss)))
+    return sp.expand(potential), metric, curved
+
+
+def _real_euler_clear(dress, r_minus, r_zero):
+    tt, ss = sp.symbols("tt ss")
+    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
+
+    def pack(vec):
+        out = []
+        for role in range(4):
+            matrix = sp.zeros(4)
+            for j in range(6):
+                matrix += vec[6 * role + j] * GEN[j]
+            out.append(matrix)
+        return out
+
+    rm, rz = pack(r_minus), pack(r_zero)
+    for direction in range(24):
+        role, gen = divmod(direction, 6)
+        series = {}
+        for k in range(4):
+            eta = 1 if k % 2 == 0 else -1
+            for role_r in range(4):
+                extra = ss * dress[k] * GEN[gen] if role_r == role else sp.zeros(4)
+                log = dress[k] * tt * base[role_r] + eta * (tt**2) * rm[role_r] + (tt**2) * rz[role_r] + extra
+                series[(role_r, k)] = _exp_series(log, 4)
+        total = 0
+        for k in range(4):
+            ks = (k + 1) % 4
+            for p, q in PAIRS:
+                hol = series[(p, k)]
+                hol = _mul_series(hol, series[(q, ks)], 4)
+                hol = _mul_series(hol, _inv_series(series[(p, ks)], 4), 4)
+                hol = _mul_series(hol, _inv_series(series[(q, k)], 4), 4)
+                hinv = _inv_series(hol, 4)
+                uu, vv = [i for i in range(4) if i not in (p, q)]
+                area = wedge_vec(basis_cols[uu], basis_cols[vv])
+                sgn = complement_orientation((p, q))
+                for deg in range(5):
+                    odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
+                    total += 64 * sgn * (area.T * G2 * STAR * bivector_of_tangent(odd))[0]
+        poly = sp.Poly(sp.expand(total), tt, ss)
+        for m in (2, 3, 4):
+            if sp.expand(poly.coeff_monomial(tt**m * ss)) != 0:
+                return False
+    return True
+
+
+_quarter = sp.Rational(1, 4)
+_real_slots = (13, 15, 20, 22)
+for _name, _dress, _sign in (
+    ("COS", [1, 0, -1, 0], 1),
+    ("SIN", [0, 1, 0, -1], -1),
+):
+    _fm = _real_forcing(_dress, "minus")
+    _fz = _real_forcing(_dress, "zero")
+    _expect = sp.zeros(24, 1)
+    for _slot in _real_slots:
+        _expect[_slot] = 64 * _sign
+    if _name == "COS":
+        check("REAL_COS_MINUS_FORCING", sp.expand(_fm - _expect) == sp.zeros(24, 1))
+        check("REAL_COS_ZERO_FORCING", sp.expand(_fz + _expect) == sp.zeros(24, 1))
+    else:
+        check("REAL_SIN_MINUS_FORCING", sp.expand(_fm - _expect) == sp.zeros(24, 1))
+        check("REAL_SIN_ZERO_FORCING", sp.expand(_fz - _expect) == sp.zeros(24, 1))
+    _rm = sp.expand(-_MINUS_H.LUsolve(_fm))
+    _rz = sp.expand(-_ZERO_H.LUsolve(_fz))
+    _want = sp.zeros(24, 1)
+    _want[0] = _quarter
+    _want[6] = _quarter
+    check("REAL_%s_ZERO_CORRECTION" % _name, sp.expand(_rz - _want) == sp.zeros(24, 1))
+    _minus_want = _want if _name == "COS" else -_want
+    check("REAL_%s_MINUS_CORRECTION" % _name, sp.expand(_rm - _minus_want) == sp.zeros(24, 1))
+    _pot_r, _eq_r, _curved = _real_corrected(_dress, _rm, _rz)
+    check("REAL_%s_POTENTIAL_THROUGH_DEGREE_4" % _name, _pot_r == 0)
+    check(
+        "REAL_%s_EQ_THROUGH_DEGREE_4" % _name,
+        all(comp == 0 for order in _eq_r.values() for comp in order),
+    )
+    check("REAL_%s_CURVED_AT_DEGREE_1" % _name, _curved)
+    check("REAL_%s_CONNECTION_EULER_THROUGH_DEGREE_4" % _name, _real_euler_clear(_dress, _rm, _rz))
+
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
-print("TORUS_CONNECTION_CRITICAL_LINE", "u0=u1=0, u2**3=u3**3")
-print("MINUS_CORRECTION_SOLVED", "character (-1,-1,-1,-1), Hessian rank 24")
-print("BLOCKED: J2-DIAGONAL-INVISIBLE-CRITICAL-LINE-CUT-CONJUGATE-CARRIER-MISSING")
-print("MISSING: conjugate quarter-wave (-i,-i,-i,-i) folded into the corrected E_Q")
+print("CONJUGATE_EQ_IS_CONJUGATE", True)
+print("REAL_RAY_JOINT_FLAT_THROUGH_DEGREE", 4)
+print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-5-EULER-MISSING")
+print("MISSING: degree-5 connection Euler of the corrected real cosine and sine rays")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")

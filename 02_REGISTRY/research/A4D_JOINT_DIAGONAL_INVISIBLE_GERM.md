@@ -11,10 +11,10 @@
 
 ```text
 BLOCKED
-J2-DIAGONAL-INVISIBLE-CRITICAL-LINE-CUT-CONJUGATE-CARRIER-MISSING
+J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-5-EULER-MISSING
 ```
 
-The origin-isolated terminal is not accepted. Section 6 solves the character-\((-1,-1,-1,-1)\) correction on the pure-mode connection-critical line and substitutes it into \(E_Q\). The corrected degree-4 metric Euler is nonzero at all three cube roots. The conjugate quarter-wave \((-i,-i,-i,-i)\) is not in that calculation. Neither isolation nor a curved germ is claimed.
+The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). The real cosine and sine dressings of that ray, after the solved zero-mode and character-\((-1)\) corrections, are curved and jointly stationary through degree 4. The degree-5 connection Euler of those corrected rays is not computed. Neither isolation nor a finite curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -118,11 +118,23 @@ Substituting \(t^2 r\) with the character-\((-1)\) dressing leaves the metric Eu
 (-64,\ 128,\ -192+192i,\ -192+192i,\ -64,\ 192-192i,\ 192-192i,\ 0,\ 0,\ 0).
 \]
 
-The same corrected degree-4 metric Euler is nonzero at \(u_2=-1/2\pm i\sqrt{3}/2\), \(u_3=1\). These three values are computed with the same-character correction held at zero. The conjugate quarter-wave is the remaining carrier.
+The same corrected degree-4 metric Euler is nonzero at \(u_2=-1/2\pm i\sqrt{3}/2\), \(u_3=1\). These three values are computed with the same-character correction held at zero.
+
+## 7. Conjugate orbit and the real dressings
+
+At \(z=(-i,-i,-i,-i)\) the character-\((-1)\) Hessian is the same real rank-24 matrix. On \(u=(0,0,1,1)\) the forcing, the correction, and the degree-4 metric Euler are the complex conjugates of the \(z=i\) values. The conjugate row is
+
+\[
+(-64,\ 128,\ -192-192i,\ -192-192i,\ -64,\ 192+192i,\ 192+192i,\ 0,\ 0,\ 0).
+\]
+
+The real carrier of this ray uses \(\operatorname{Re}(i^{x_0+x_1+x_2+x_3})\) and \(\operatorname{Im}(i^{x_0+x_1+x_2+x_3})\). Each dressing sources both the zero mode and the character-\((-1)\) mode at order \(t^2\), on coordinates 13, 15, 20, and 22. Both Hessians have rank 24. The cosine corrections are \(\tfrac14 K_1\) on Roles 0 and 1 in each channel. The sine zero-mode correction is the same vector, and its character-\((-1)\) correction is the negative. After substitution, both dressings have a nonzero degree-1 plaquette holonomy, while the scalar, the 24-component connection Euler, and the constant-solder metric Euler vanish through degree 4.
+
+The first missing coefficient is the degree-5 connection Euler of these corrected real rays.
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 
-## 7. Validation
+## 8. Validation
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_joint_diagonal_invisible_germ_check.py
