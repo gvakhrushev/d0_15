@@ -1608,7 +1608,8 @@ theorem orbit5_rank : Matrix.rank p5 = 23 := by
   have hlower : 23 ≤ Matrix.rank p5 := by
     have hsub := rank_submatrix_le p5 rows5 cols5
     have hb : Matrix.rank block5 = 23 := by
-      simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block5 block5Unit.isUnit
+      have hunit : IsUnit block5 := ⟨block5Unit, rfl⟩
+      simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block5 hunit
     calc
       23 = Matrix.rank block5 := hb.symm
       _ ≤ Matrix.rank p5 := by simpa [block5] using hsub
@@ -1622,7 +1623,8 @@ theorem orbit7_rank : Matrix.rank p7 = 23 := by
   have hlower : 23 ≤ Matrix.rank p7 := by
     have hsub := rank_submatrix_le p7 rows7 cols7
     have hb : Matrix.rank block7 = 23 := by
-      simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block7 block7Unit.isUnit
+      have hunit : IsUnit block7 := ⟨block7Unit, rfl⟩
+      simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block7 hunit
     calc
       23 = Matrix.rank block7 := hb.symm
       _ ≤ Matrix.rank p7 := by simpa [block7] using hsub
