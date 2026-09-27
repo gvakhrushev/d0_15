@@ -166,6 +166,10 @@ Execution contract for both `EXPENSIVE` and `WORKER`:
    - Draft PR + `Lifecycle: BLOCKED` = blocked, with blocker stated in the PR.
    - Ready PR + `Lifecycle: REVIEW` = waiting for CONTROL acceptance.
    - Merged PR = complete.
+   - `Baseline` is the task-start `main` SHA during Draft execution. If `main`
+     advances, a long-lived Draft may keep that pinned baseline while it remains
+     an ancestor of both the current base and the task head. Before Ready/REVIEW,
+     refresh onto current `main` and update `Baseline` to the current PR base SHA.
 3. **`main` manifest is the queue/control plane.** A PLANNED executable task on
    main is available work, not an active execution. Branch-local manifest state
    records the draft lifecycle.
