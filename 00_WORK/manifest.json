@@ -116,7 +116,7 @@
       "id": "WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN",
       "class": "WORKER",
       "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-METRO-002",
         "D0-SCENE-TRACE-HEAT-CAPACITY-001"
