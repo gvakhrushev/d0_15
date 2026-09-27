@@ -123,17 +123,6 @@
       ],
       "exit_condition": "Formalize the merged #273 direct flat-symbol identity K_Schur=-(1/2)K_G1 coefficientwise in all 100 entries, the four Bianchi identities, and exact hostile convention controls.",
       "brief": "00_WORK/tasks/WRK-A4D-SCHUR-EINSTEIN-DIRECT-LEAN.md"
-    },
-    {
-      "id": "WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the merged #290 physical [H_AA(zeta)|H_AQ(conj zeta)] rank-23 cokernel cases, exact cross-character residual tables, and the zero same-carrier transport witnesses in Lean.",
-      "brief": "00_WORK/tasks/WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN.md"
     }
   ]
 }
