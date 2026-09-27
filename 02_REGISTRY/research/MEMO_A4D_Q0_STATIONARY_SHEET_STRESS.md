@@ -13,7 +13,7 @@ Owners pinned as ancestors of this branch:
 - #270 merge `7103412403e672ce7416bbfcc63028988f543494`, \(C(d)\operatorname{vec}(dd^T)=0\) and \(A_0\), \(\det A_0=256\).
 - Harmonic-lift terminal `A4D-Q0-HARMONIC-LIFT-SECOND-JET-EXACT` on current main. It owns the identity-link forcing \(F_2\) and explicitly leaves gate (13), \(A_w p_2=-F_2\) and \(T_2=B_w p_2\), to this execution.
 
-PR #240 is open research at head `8b3c93af328d94f3bf43d27a843d4b767a0c4c95`. Its shear witness is used only as an integer vector. Its moment is not recomputed and is not evidence. The unpinned coefficient \(35/2\) in the reduced-action Ward synthesis is not used.
+PR #240 is open research at head `2c98fbed57976c749d7374af13352cabb0003270`. Its shear witness is used only as an integer vector. Its moment is not recomputed and is not evidence. The unpinned coefficient \(35/2\) in the reduced-action Ward synthesis is not used.
 
 ## 0. Terminal
 
@@ -180,4 +180,6 @@ Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py
+python3 02_REGISTRY/research/certificates/a4d_q0_sheet_order3_obstruction_check.py
+python3 02_REGISTRY/research/certificates/a4d_q0_sheet_kernel_ray_check.py
 ```
