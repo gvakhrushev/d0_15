@@ -2237,8 +2237,61 @@ Whether `Ka` cancels those rows is untested. Link order three is untested.
 **Exact scoped opening:** on this four-index extension, the §9.23 link
 reduction survives and rows 1–3 have the explicit charts above. No finite
 nondegenerate curved stationary witness is claimed, no L=3 control is
-opened, and the task stays `IN_PROGRESS`. The next gate on this chart is
-the joint affine order-four system on the rows outside
-`{1,2,3,10,11,14,15}`, using the actual second-amplitude quotient `Ka`
-rather than an order-1 generator shift. Directions not listed above stay
+opened, and the task stays `IN_PROGRESS`. Directions not listed above stay
 unclassified by this section.
+
+
+### 9.25 The e3 chart dies in the Ka quotient
+
+`a4d_resolved_curved_stationary_e2_role01_e3_ka_affine4_check.py`
+takes the `e3` chart of §9.24,
+`t=1-5*rho`, `sigma=4*Q/Dsig`, and the recorded `p`, with `r=-1` and
+`z=-4`. The new translation slot is index 3, `b0·e3`. The weighted
+column of `b1·e3` is the negative, so the opposite sign of `sigma` is
+the same chart. No new Fourier mode and no new channel are added.
+
+The second-amplitude columns are the owned finite differences
+`resp(generator)-resp(0)` of §9.23, restricted to
+
+```text
+Ka = columns (1,0,0,0,0,0,0), (0,1,0,0,0,0,0),
+      (0,0,0,1,1,0,0), (0,0,-1,0,0,0,1)
+```
+
+in the order `K1_0, K1_2, N2_2, N3_0, N3_1, N3_2, N3_3`.
+On this chart that linear map is the zero 16×4 matrix. Rows 1, 2, 3,
+5, 6, 7, 10, 11, 14 and 15 of the inhomogeneous term vanish. Row 4 is
+minus row 0, row 9 is minus row 8, and row 13 is minus row 12.
+
+The remaining numerators, after removing the chart factor `rho`, are
+coprime: row 0 against row 8, and row 0 against row 12. The primitive
+row-0 numerator is
+
+```text
+76625*rho^4 + 164450*rho^3 + 3760*rho^2 + 31582*rho - 9025.
+```
+
+It shares no factor with the chart denominators
+`25*rho^2+68*rho-13`, `Q`, `5*rho+1`, or `125*rho^2+430*rho-47`.
+
+The amplitude dependence at this jet order is quadratic, because the
+order-4 contraction multiplies two order-2 jets. On the four `Ka`
+directions the quadratic form has one nonzero piece: the square of the
+last direction, raw value `32768` on observer channels of rows 8 and 12
+and the opposite sign on rows 9 and 13. The two observer channels are
+equal, so the opposite-observer weight `q` and `-q` cancels that piece.
+Every cross term among the four directions is zero, and the other three
+squares are zero. The weighted quadratic correction therefore vanishes
+on rows 0, 8 and 12. The same weighted vanishing holds for the quadratic
+self-energy of the solder particular amplitude and for its cross terms
+with each of the four `Ka` directions.
+
+Thus every amplitude of the form particular solution plus `Ka*y` leaves
+rows 0 and 8 at their inhomogeneous values. Those two numerators have no
+common zero on the chart. The `e3` extension has no affine order-4
+solution in this quadratic calculus.
+
+The `e2` formulas of §9.24 are not re-used as an owned solution. This
+no-go does not cover `e2`, `e1`, role-2/3 transverse components,
+`b1·e0`, other modes, or finite off-seed points. No stationary witness
+and no L=3 result are claimed. Task stays `IN_PROGRESS`.
