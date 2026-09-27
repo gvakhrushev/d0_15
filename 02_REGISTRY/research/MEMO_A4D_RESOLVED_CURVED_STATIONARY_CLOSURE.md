@@ -2939,3 +2939,33 @@ vacuum.
 
 A wider Fourier support of the solder would be a different mode. No L=3
 result. Task stays `IN_PROGRESS`.
+
+### 9.37 The untruncated link and solder Euler is nonzero
+
+`a4d_resolved_curved_stationary_e2_point_untruncated_euler_check.py`
+evaluates the exact Cayley connection `generators0 + v + X` at
+`(rho,t)=(1,0)`, with the particular amplitude
+`(0,0,-10/3,-8/3,0,4/9,0)`. The four Cayley charts are open, with
+determinants `-6`, `2`, `-71/12`, and `3/4`, and each link is Lorentz.
+The coframe is the §9.23 solder at `r=-1`,
+
+```text
+p3=p4=-5/12, p5=-1/3, p7=-2/3, c=-3/2, d=3/2,
+```
+
+whose determinant is `-9/2` for every common upper modulus `lambda`.
+
+The owned link contraction has no translation argument. Each of the 24
+link components is an affine function of `lambda` and is not the zero
+function. The gcd of their numerators is a nonzero constant, so the
+24-component vector does not vanish at any `lambda`. The same constant-gcd
+statement holds for the 16 solder-gradient entries. One entry can still
+vanish: solder component `(0,0)` is zero at
+`lambda=40874425/135508248`, where component `(0,1)` remains nonzero. At
+`lambda=0` the role-0 `N2` link component is `-118764208/11024667`. The
+coframe-gradient identity `Theta:grad = 2S` holds.
+
+These two vectors do not vanish for any `lambda`, so this finite
+connection on this homogeneous solder is not stationary. The order-4
+affine translation jet is a different contraction and is not recomputed
+here. No new Fourier mode and no L=3 result. Task stays `IN_PROGRESS`.
