@@ -122,17 +122,6 @@
       ],
       "exit_condition": "Construct an exact moving-split/windowed history with nontrivial channel sign, history-swap covariance and rank-artifact controls, or prove a precisely scoped finite no-go.",
       "brief": "00_WORK/tasks/WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN.md"
-    },
-    {
-      "id": "WRK-D0-V16-ONE-TICK-BALANCE-TWO-SPLIT-OWNER",
-      "class": "WORKER",
-      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-THERMO-001"
-      ],
-      "exit_condition": "Own the fixed-split one-tick Hilbert-Schmidt balance and finite channel budget with exact hostile controls and a formal owner where feasible.",
-      "brief": "00_WORK/tasks/WRK-D0-V16-ONE-TICK-BALANCE-TWO-SPLIT-OWNER.md"
     }
   ]
 }
