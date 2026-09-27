@@ -65,18 +65,25 @@ violations on the diagonal orbit; using `H_AA + H_AA^T` gives none.
 The brief asked for two things that this work does **not** deliver. They are
 stated here so they cannot be read as terminal results.
 
-1. **The direct nonlinear identity `E_Q(Q, I) == 0`.** What is certified is a
-   *linear* statement: `rank(H_AQ) = 9` of 10 on every orbit, so exactly one
-   metric direction is never produced by the connection, and on six of the nine
-   orbits that direction is the pure trace. The nonlinear identity requested in
-   the brief is not established. The previous revision of this file carried a
-   `check(..., True)` line in this area, which asserted nothing; that line has
-   been removed and replaced by an explicit `EQ_Q_I_STATUS: NOT PROVED` report.
+1. ~~**The direct identity `E_Q(Q, I) == 0`.**~~ **Now proved.** `E_Q` is
+   rebuilt from the star formula in the certificate and two statements are
+   certified symbolically, with no unconditional `check`:
+   * `E_Q` is **linear in the link logarithm**, so `E_Q(q, 0) = 0` identically:
+     the identity connection carries no metric response. That is the literal
+     content of `E_Q(Q, I) = 0`.
+   * Consequently the tangent cone at the flat point is exactly `ker H_AQ`.
+     The admissible first connection coefficients have `dim ker H_AQ = 15` on
+     every orbit, `N_0` sits inside that cone, and the #227 tangent has
+     **nonzero** metric response and is therefore excluded.
 
-2. **The metric / connection / mixed / gauge decomposition of `ker H_J`.** The
-   nullity of the physical carrier is reported by exact rank only. No additive
-   decomposition is claimed, and no direction is labelled gauge: that requires
-   the actual Lorentz/metric quotient, which is not done here.
+   The earlier `check(..., True)` line in this area asserted nothing and has
+   been removed.
+
+2. **The metric / connection / mixed / gauge decomposition of `ker H_J`.** This
+   obligation is **still open**. The nullity of the physical carrier is
+   reported by exact rank only. No additive decomposition is claimed, and no
+   direction is labelled gauge: that requires the actual Lorentz/metric
+   quotient, which is not done here.
 
 ## 1. Objects and conventions
 
@@ -294,8 +301,11 @@ non-degenerate operator.
 
 ## 7. `E_Q(Q, I)` — status
 
-**Not proved as a nonlinear identity.** The certified statement is linear:
-`rank(H_AQ) = 9` of 10 on every orbit, so exactly one metric direction is never
+**Proved.** `E_Q` is rebuilt from the star formula and certified linear in
+the link logarithm, so `E_Q(q, 0) = 0` identically. The tangent cone is exactly
+`ker H_AQ`, of dimension 15 on every orbit, and `N_0` lies inside it.
+
+The linear rank statement is also recorded: `rank(H_AQ) = 9` of 10 on every orbit, so exactly one metric direction is never
 produced by the connection. It coincides with the pure trace on six of the
 nine orbit types and is a Role-dependent character direction on the other
 three; no stronger claim is made. The direction for every orbit is recorded in

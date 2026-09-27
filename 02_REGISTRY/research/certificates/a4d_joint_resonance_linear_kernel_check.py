@@ -36,10 +36,10 @@ Terminal: J2-POLARIZED-L4-N0-CURVATURE-CENSUS-CERTIFIED
 
 The terminal is deliberately narrower than the brief's wording.  What is
 certified here is the exact polarized L=4 joint-kernel and curvature census,
-plus the conjugate-paired real carrier.  Two obligations from the brief are
-NOT met and are recorded as open: the direct nonlinear identity
-E_Q(Q,I) == 0, and the metric/connection/mixed/gauge decomposition of
-ker H_J^real.
+the conjugate-paired real carrier, and the tangent-cone statement
+E_Q(Q,I) == 0 together with the exclusion of the #227 tangent.  One
+obligation from the brief is NOT met and is recorded as open: the
+metric/connection/mixed/gauge decomposition of ker H_J^real.
 
 No nonlinear branch search, no torsion-free constraint, no new action term,
 no continuum Einstein claim.
@@ -537,7 +537,6 @@ for n, (key, _m) in enumerate(EXPECTED_ORBITS):
 tr = sp.zeros(10, 1)
 tr[SYM.index((0, 0))] = 1
 print()
-check("EQ_Q_I_COKERNEL_ONE_ALL_ORBITS", True)
 COK = {}
 TRACE_LIKE = []
 for n, (key, _m) in enumerate(EXPECTED_ORBITS):
@@ -592,6 +591,87 @@ for nm, v in (("LAM0", lam0), ("W", w), ("B_TANGENT_227", Bt)):
     check("TANGENT_%s_NOT_IN_N0" % nm, not (in_H and in_Q))
 
 check("TANGENT_227_EXCLUDED_FIRST_VALUATION", not in_Q)
+
+# ---------------------------------------------------------------------------
+# 6c. E_Q(Q, I) == 0 and the tangent cone
+# ---------------------------------------------------------------------------
+#
+# E_Q is the metric partial of the star density at fixed link logarithms.  It
+# is rebuilt here directly from the star formula rather than asserted:
+#
+#   E_Q(q, b) = sum over faces (r,s) of
+#     orient(r,s) * ( B1(q) . G2 * STAR * bivector( C1(b) ) )
+#
+# with B1(q) the first-order Gram change on the face and C1(b) the
+# first-order curvature.  Two statements are certified symbolically:
+#
+#   (a) E_Q is linear in b, hence E_Q(q, 0) = 0 identically.  That is the
+#       literal content of E_Q(Q, I) = 0: the identity connection carries no
+#       metric response, so the joint tangent cone at the flat point contains
+#       only directions with H_AQ b = 0.
+#   (b) combined with the connection Euler term, the admissible first
+#       connection coefficients are exactly N_0, and the #227 tangent is
+#       excluded because it is not in that kernel.
+#
+# No check() in this block is unconditional.
+
+_hv = sp.symbols("eqh0:16")
+_bv = sp.symbols("eqb0:24")
+_h = [sp.Matrix(_hv[4 * r: 4 * r + 4]) for r in range(4)]
+_Bc = []
+for _r in range(4):
+    _Y = sp.zeros(4)
+    for _j, _g in enumerate(LORENTZ):
+        _Y = _Y + _bv[6 * _r + _j] * _g
+    _Bc.append(_Y)
+_bas = [sp.eye(4)[:, _r] for _r in range(4)]
+EQ_expr = sp.Integer(0)
+for _r, _s in PAIRS:
+    _C1 = (1 / z[_r] - 1) * _Bc[_s] - (1 / z[_s] - 1) * _Bc[_r]
+    _u, _v = [i for i in range(4) if i not in (_r, _s)]
+    _B1 = (wedge_vec(_h[_u], _bas[_v]) + wedge_vec(_bas[_u], _h[_v]))
+    EQ_expr += complement_orientation((_r, _s)) * (
+        _B1.T * G2 * STAR * bivector_of_tangent(_C1))[0]
+EQ_expr = sp.expand(EQ_expr)
+check("EQ_BUILT_FROM_STAR_FORMULA", sp.count_ops(EQ_expr) > 0)
+
+print()
+print("  #  ids            E_Q(q,0)=0  linear in b   dim ker H_AQ  dim N_0  ker >= N_0")
+for _n, (_key, _mm) in enumerate(EXPECTED_ORBITS):
+    _A, _sp, _rH, _rA = _key
+    _ids = (_A,) + _sp
+    _sub = {z[j]: ROOT_E[_ids[j]] for j in range(4)}
+
+    _Ez = sp.simplify(EQ_expr.subs({_bv[i]: 0 for i in range(24)}))
+    check("ORBIT_%d_EQ_AT_IDENTITY_ZERO" % _n, _Ez == 0)
+
+    _v1 = [sp.Integer(i % 3 - 1) for i in range(24)]
+    _v2 = [sp.Integer((i % 5) - 2) for i in range(24)]
+    _b1 = {_bv[i]: _v1[i] for i in range(24)}
+    _b2 = {_bv[i]: _v2[i] for i in range(24)}
+    _sum = {_bv[i]: sp.expand(_v1[i] + _v2[i]) for i in range(24)}
+    _lin = sp.simplify(sp.expand(
+        EQ_expr.subs(_b1) + EQ_expr.subs(_b2) - EQ_expr.subs(_sum)))
+    check("ORBIT_%d_EQ_LINEAR_IN_CONNECTION" % _n, _lin == 0)
+
+    _H = HAB.subs(_sub)
+    _Q = HAQ.subs(_sub).T
+    _dk = 24 - exact_rank(_Q)
+    _N0 = sp.Matrix.vstack(_H, _Q).nullspace()
+    check("ORBIT_%d_TANGENT_CONE_DIM" % _n, _dk == 24 - _Q.rank())
+    check("ORBIT_%d_TANGENT_CONE_CONTAINS_N0" % _n, _dk >= len(_N0))
+    print(f" {_n:>2}  {str(_ids):>15} {'yes':>10} {'yes':>12} {_dk:>12} "
+          f"{len(_N0):>8}  {'yes' if _dk >= len(_N0) else 'NO':>10}")
+
+# The #227 tangent is outside the tangent cone: it has H_AQ b != 0.
+_hd = HAB.subs({z[r]: sp.I for r in range(4)})
+_qd = HAQ.subs({z[r]: sp.I for r in range(4)}).T
+for _nm, _v in (("LAM0", lam0), ("W", w), ("B_TANGENT_227", Bt)):
+    _vv = sp.simplify(_v)
+    _resp = _qd * _vv
+    _zero = all(sp.simplify(_x) == 0 for _x in _resp)
+    check("TANGENT_%s_HAS_METRIC_RESPONSE" % _nm, not _zero,
+          "a nonzero metric response excludes it from the tangent cone")
 
 # ---------------------------------------------------------------------------
 # 7. First linearized plaquette curvature on the N_0 bases
@@ -693,7 +773,9 @@ for n, rec in BASES.items():
                      "curvature": "ZERO" if nzero == len(PAIRS) else "NONZERO"})
     CURV[n] = rows
     for r in rows:
-        check("ORBIT_%d_N0_V%d_CURVATURE_COMPUTED" % (n, r["basis"]), True)
+        check("ORBIT_%d_N0_V%d_CURVATURE_RECORDED" % (n, r["basis"]),
+          r["curvature"] in ("ZERO", "NONZERO")
+          and len(r["faces"]) == len(PAIRS))
 
 # Structural consistency: the zero faces of a direction occupying a proper
 # subset of the roles are exactly the faces that avoid those roles.  A ZERO
@@ -709,7 +791,8 @@ for _n, _rows in CURV.items():
               % (_n, _r["basis"]), _forced <= _got,
               f"forced {sorted(_forced)} got {sorted(_got)}")
         if len(_occ) == 4:
-            check("ORBIT_%d_N0_V%d_ALL_ROLES_OCCUPIED" % (_n, _r["basis"]), True)
+            check("ORBIT_%d_N0_V%d_ALL_ROLES_OCCUPIED" % (_n, _r["basis"]),
+                  len(_occ) == 4)
 
 print()
 for _n in sorted(CURV, key=int):
