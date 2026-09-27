@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# D0_CI_TIMEOUT_SECONDS=900
 """Same-carrier exact relation between the #262 metric-only plane and the
 E-LIN response symbol pair E_eta, E_sp.
 
@@ -205,7 +206,7 @@ def main() -> int:
             # operator. They are compared through exact same-carrier linear
             # relations only, never identified by dimension.
             if not plane_basis:
-                relation_table.append((n, ids, which, plane_dim, 0, 0, 0, 0))
+                relation_table.append((n, ids, which, plane_dim, 0, 0, 0, 0, rank(sym)))
                 continue
 
             image = sp.Matrix.hstack(*[sym * v for v in plane_basis])
@@ -245,6 +246,24 @@ def main() -> int:
                 f"annihilates={annihilates} intersection_dim={intersection_dim}",
             )
 
+            # Hostile control against a vacuous annihilation: an operator that
+            # annihilates the plane because the whole symbol vanishes carries
+            # no information. Record the operator rank so the two cases are
+            # never conflated.
+            symbol_rank = rank(sym)
+            if annihilates:
+                check(
+                    f"ORBIT_{n}_{which.upper()}_ANNIHILATION_NOT_VACUOUS",
+                    symbol_rank > 0,
+                    f"symbol_rank={symbol_rank}: annihilation is real, "
+                    "not an artifact of a zero operator",
+                )
+                check(
+                    f"ORBIT_{n}_{which.upper()}_SYMBOL_RANK",
+                    symbol_rank > 0,
+                    str(symbol_rank),
+                )
+
             relation_table.append(
                 (
                     n,
@@ -255,15 +274,16 @@ def main() -> int:
                     int(invariant),
                     int(annihilates),
                     intersection_dim,
+                    symbol_rank,
                 )
             )
 
     print()
-    print("ORBIT_RELATION_TABLE (n, ids, op, plane_dim, image_rank, invariant, annihilates, inter_dim):")
+    print("ORBIT_RELATION_TABLE (n, ids, op, plane, image, inv, ann, inter, sym_rank):")
     for row in relation_table:
         print(
             f"  {row[0]} {row[1]} {row[2]} plane={row[3]} image={row[4]} "
-            f"inv={row[5]} ann={row[6]} inter={row[7]}"
+            f"inv={row[5]} ann={row[6]} inter={row[7]} symrank={row[8]}"
         )
 
     positive = [r for r in relation_table if r[5] or r[6]]
