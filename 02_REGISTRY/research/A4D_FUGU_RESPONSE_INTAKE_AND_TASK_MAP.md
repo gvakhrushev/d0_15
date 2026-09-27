@@ -161,29 +161,30 @@ interpretive until separate null/representation theorems are certified.
 
 The follow-up packet
 [A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md](A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md)
-reconciles the later exact carrier results with the nonlinear continuation
-queue.
+separates the moving q0 carrier, frozen/cross-character residual, the bare
+harmonic operator `B_n=C(d(z^n))q0`, the full #296 Gram-lift coefficient,
+and the independent N0 nonlinear connection-amplitude sector.
 
-Execution consequences:
+Key reconciliation: the bare operator can have universal leading
+`B_n=binom(n,2)M2+O(h^5)=O(h^4)`, while the actual #296 coefficient restores
+`sigma^(n-1)=O(h^(2n-2))` and therefore scales as `O(h^(2n+2))`. These are
+not contradictory statements; the earlier prose reused one symbol for both.
 
-- merged #290 remains the owner of the physical same-carrier/cross-character
-  split; the historical `8/5` residual is not reused as moving-germ stress;
-- merged #296 remains the fixed-link harmonic-forcing owner and is not read as
-  a contradiction to same-carrier absorption after connection continuation;
-- the algebraic harmonic-tower compression `M1=0`,
-  `F_n=sum_{k>=2} binom(n,k) M_k`, universal leading `M2`, and
-  `sum binom(n,2)s^(n-1)=s/(1-s)^3` is now isolated as the bounded worker
-  `WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT` instead of being left in chat;
-- #260 is narrowed to the degree-7 odd resonant connection Euler on
-  `N0=span{lambda1,lambda3,lambda4,lambda6}`; its solved degree-6 even
-  correction is not reopened;
-- #275 may prepare the same-source slow-response algebra in parallel and must
-  block only the final substitutions that genuinely depend on the missing
-  odd-7 coefficient;
-- #299 should spend effort only on making the existing exact rank/cokernel
-  Lean proof cheap enough to compile, not on expanding scientific scope;
-- #202 keeps its own untruncated stationary-witness/no-go component and does
-  not absorb the N0/germ calculation.
+Current execution consequences:
 
-This update is a dependency/ownership refinement. It introduces no new
-Einstein, stress, continuum, BOOK, ClaimMap, or release-status assertion.
+- merged #290 remains the physical same-carrier/cross-character owner;
+  `8/5` is not reused as moving-germ stress;
+- `WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT` certifies the typed bare/full
+  harmonic factorization and maximal justified physical-cokernel statement;
+- latest #260 supersedes the earlier “odd degree-7 only” map: an orthogonal
+  odd weight is already nonzero at degree 3, so its next gate is the
+  degree-3 orthogonal correction; the degree-7 resonant source must be
+  re-evaluated after that correction;
+- #275 may prepare its same-source slow-response pipeline in parallel and
+  block only final substitutions that require the corrected #260 odd chain;
+- #240 must no longer cite degree-6 even correction as the live prerequisite;
+- #299 remains a proof-cost/heartbeat task only;
+- #202 must not use either harmonic scaling as a nonlinear bridge.
+
+This is a dependency/ownership refinement only. No Einstein, stress,
+continuum, BOOK, ClaimMap, or release-status promotion is made.
