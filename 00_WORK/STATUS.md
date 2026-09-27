@@ -7,14 +7,15 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
-| EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
+| EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
 | WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
-| **Total** | **4** | **0** | **0** | **1** | **5** | **1 / 10** |
+| **Total** | **5** | **0** | **0** | **1** | **6** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
+| EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | - |
 | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | CONTROL | REVIEW | ROOT | - |
 | EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
@@ -30,17 +31,4 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Exact `release_status` | Count |
 |---|---|
-| BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
-| BRIDGE-CALIBRATION | 3 |
-| CERT-CLOSED | 193 |
-| CORE-FORMALIZED | 390 |
-| CORE_BRIDGE_SPLIT | 17 |
-| DEPRECATED | 5 |
-| EMPIRICAL-PASSPORT | 13 |
-| EXTERNAL-BACKGROUND | 1 |
-| FORMALISM | 4 |
-| NO-GO | 133 |
-| NO_GO_PROVED | 6 |
-| PASSPORT-CLOSED | 20 |
-| PROOF-TARGET | 74 |
-| **Total** | **889** |
+| **Total** | **0** |
