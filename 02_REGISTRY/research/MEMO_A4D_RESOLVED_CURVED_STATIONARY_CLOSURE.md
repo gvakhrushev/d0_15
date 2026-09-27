@@ -1846,3 +1846,47 @@ coefficients cannot repair a solder equation. The *entire* conformal
 critical-solder locus in §9.17 is broader and is not retired by this result;
 finite seven-amplitude equations remain open. No positive L=2 witness and
 no L=3 result follow.
+
+
+### 9.19 General conformal locus: an exact mixed-order compatible candidate
+
+`a4d_resolved_curved_stationary_e2_conformal_candidate_jet_check.py`
+checks a different leading solder, outside §9.18's zero lower-left-block
+family. Its rational data are
+
+```text
+T=[[1,0,-53/20,-13/20],
+   [0,-1,-53/20,-13/20],
+   [-14/5,-14/5,-3/2,3/2],
+   [-7/5,-7/5,-3/2,-3/2]],
+v=(-4,-4/5,-1,0,0,0,1),
+c=(c_eta_adj,c_eta_opp,c_n_adj,c_n_opp)=(-1/1024,0,1,-1).
+```
+
+The role translations have the real L=2 Fourier character `(-1)^(x0+x1)`:
+`b0=e0/256`, `b1=0`, `b2=b3=e0`. These are supplied candidate parameters,
+not a selection principle for the action coefficients.
+
+At `Theta=eps*T+...`, `A=A0+eps*v+...`, all 24 literal homogeneous
+Lorentz link Euler rows have zero coefficient at order two. They are also
+all sitewise rows at that order: a site translation multiplies the entire
+b field by one common character sign, while its contribution is quadratic.
+The complete affine mode forms at orders two and three are zero matrices,
+so all affine components in the occupied mode vanish at those orders.
+The first residual is nonzero on eight ordered face pairs, exactly `+/-16*n`.
+The leading solder determinant is `-9/2`, and the frozen curvature is
+nonzero on four faces.
+
+The actual solder order-three system, including all ten free second-solder
+entries and all seven second amplitudes, has rank 5 and augmented rank 5.
+Its kernel dimension is 12; the amplitude projection has dimension 4.
+One exact second-amplitude particular solution is
+`(0,0,18/5,56/5,0,196/25,0)`. The certificate reconstructs both the second
+and third solder coefficients and substitutes them into the literal solder
+Euler coefficients, rather than treating range consistency as sufficient.
+
+**Owned status:** a mixed-order compatible truncation: link EL2, affine
+EL2/EL3, and solder EL1/EL2/EL3 vanish exactly, with nonzero R1 and a
+nondegenerate leading solder. Link EL3 and affine EL4 are still required.
+This is not a finite witness, an all-orders formal branch, or a completed
+support. In particular no hostile L=3 work is opened by these data.
