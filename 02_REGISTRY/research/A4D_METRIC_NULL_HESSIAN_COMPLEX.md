@@ -198,6 +198,149 @@ duality**, not by capacity, nullity, or a new even selector.
 This does not promote the forward-coframe image to gauge: #264 already
 forbids that inference for the selected finite star action.
 
+## 4.1 Leading Schur–Einstein weld
+
+The exact Hessian complex also closes a previously separate piece of the
+Einstein story.
+
+At the trivial character the \(24\times24\) connection Hessian is invertible:
+
+\[
+A_0:=H_{AA}(1),\qquad \det A_0=256.
+\]
+
+Along a small character path \(z_r=1+t k_r+O(t^2)\),
+
+\[
+d_r=z_r^{-1}-1=-t k_r+O(t^2),
+\]
+
+so the leading cross block is \(-t\,C(k)\). Eliminating the regular connection
+variables at quadratic order gives the metric Schur symbol
+
+\[
+K_{\rm Schur}^{[2]}(k)
+=
+-C(k)^T A_0^{-1}C(k).
+\]
+
+The certificate reconstructs \(A_0\), \(C(k)\), and the #201
+\(E_\eta\) quadratic symbol independently and proves the full
+\(10\times10\) identity
+
+\[
+\boxed{
+K_{\rm Schur}^{[2]}(k)
+=
+\frac14 K_{E_\eta}(k).
+}
+\]
+
+This is coefficient-by-coefficient, not a rank comparison.
+
+The already-owned normal-jet identity is
+
+\[
+E_\eta=-2G.
+\]
+
+Therefore the Schur elimination of the same finite star action gives exactly
+the designated Einstein seed
+
+\[
+\boxed{
+K_{\rm Schur}^{[2]}
+=
+-\frac12\,K_G
+}
+\]
+
+in the repository convention. This does not create a new Einstein
+coefficient; it **welds the existing #201 coefficient to the exact
+metric-null / carrier geometry** established here.
+
+### 4.1.1 The missing three gauge directions appear after connection compensation
+
+The exact metric-only Hessian line \(dd^T\) is only one scalar-longitudinal
+direction at finite character. The full forward-coframe infinitesimal image
+has four vector parameters.
+
+Let \(q_1(k,\xi)\) be the \(O(t)\) metric shadow of the #264 forward-coframe
+variation and \(x_2(k,\xi)\) its canonical \(O(t^2)\) Lorentz-connection
+shadow. The exact leading identities are
+
+\[
+\boxed{
+-C(k)q_1+A_0x_2=0,
+}
+\]
+
+\[
+\boxed{
+-C(k)^T x_2=0,
+}
+\]
+
+and hence
+
+\[
+x_2=A_0^{-1}C(k)q_1,
+\qquad
+K_{\rm Schur}^{[2]}q_1=0.
+\]
+
+Thus the four-dimensional linearized coframe/diffeomorphism image is not an
+exact finite UV gauge image, in agreement with #264, but it becomes the
+kernel of the **leading eliminated IR metric operator** after its canonical
+connection compensation.
+
+Equivalently, the uneliminated joint residual of the forward-coframe lift has
+the order structure
+
+\[
+E_K^{\rm lin}=O(t^3),
+\qquad
+E_Q^{\rm lin}=O(t^4),
+\]
+
+because its nominal \(t^2\) connection term and \(t^3\) metric term cancel
+exactly.
+
+This gives the precise reconciliation:
+
+- #264: no exact finite affine/coframe quotient is licensed;
+- this memo: the same coframe directions become asymptotic joint-null
+  directions in the IR;
+- #201: eliminating the compensated connection produces
+  \(\frac14E_\eta=-\frac12G\).
+
+No UV gauge symmetry has been added by hand.
+
+### 4.1.2 Characteristic rank
+
+The exact Schur symbol reproduces the owned Einstein rank pattern:
+
+\[
+\operatorname{rank}K_{\rm Schur}^{[2]}=
+6
+\]
+
+on representative time-like, space-like and generic non-null covectors, while
+
+\[
+\operatorname{rank}K_{\rm Schur}^{[2]}=4
+\]
+
+on the null representative \(k=(1,1,0,0)\).
+
+The four coframe/gauge directions lie in the kernel. On the null
+representative the kernel therefore has two additional dimensions, exactly
+the familiar characteristic excess of the linearized Einstein symbol.
+
+This is an operator statement about the owned quadratic IR seed. It is not a
+nonlinear graviton theorem and does not by itself prove continuum
+propagation.
+
 ## 5. Smooth-character limit
 
 Let
