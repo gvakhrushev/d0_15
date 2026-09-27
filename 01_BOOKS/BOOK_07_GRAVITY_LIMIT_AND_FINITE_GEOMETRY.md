@@ -2179,3 +2179,21 @@ II.4.SR.2–4, THE II.4.SR.5, COR II.4.SR.6
 [^b07-50]: forcing: GOLDEN COR 77.2; arrow-of-time-from-M1
 [^b07-51]: external anchor / bridge: Jampolski-Rezzolla PRD 113 L121502 (2026) arXiv:2509.15302 (horizonless gravastar, dS-core arrested OS collapse). cert vp_gravastar_os_arrest.py; claim D0-GRAVASTAR-FORMATION-BRIDGE-001 (BRIDGE, ASSUMP-GRAVASTAR-GR-EXTERNAL). GR junction physics owned externally; D0 owns the finite seam reading.
 [^b07-52]: LEM: cert vp_gravastar_compactness.py derives C_max=3/8 from -2C(8C-3)=0 (exact). The former rank-3=causal-cone named gap is closed/re-scoped (Iter-21): the (3,1)+Pisot signature arithmetic is machine-checked CORE (claim D0-RANK3-CAUSAL-CONE-FORCING-001, Lean D0.Synthesis.RankCausalConeForcing), and the rank<->metric-cone identification is a named BRIDGE (CORE_BRIDGE_SPLIT), not over-claimed as M1-forced. Residual cone-speed/smooth metric owned by ASSUMP-CONNES-RECONSTRUCTION; claim D0-COMPACTNESS-LIMIT-001.
+
+## 07.V16-REMNANT-SEAM-BRIDGE — channel history, not one-block sign
+
+The 2026 remnant literature is integrated only as a typed gravity bridge. Hawking-like active loss, quiescence and late purification/return may be compared with retained-to-archive loss, capacity saturation and archive-to-retained emission only after a declared observer/medium split history and a Bondi/readout functor.
+
+The unrestricted global one-tick trace ratio cannot carry this sign:
+[
+\operatorname{Tr}F_N=\operatorname{Tr}F_Q^{\rm emit}
+]
+on one fixed finite split and unitary tick. Phase A and Phase C are therefore not two signs of one closed block.
+
+The corrected external lifetime bound used by the bridge ledger is
+[
+\tau_C\ge\frac{4}{\alpha}\frac{M_0^4}{\hbar^{3/2}},
+]
+while exponential-area lifetime requires an additional metastability hypothesis. These remain external envelopes until `EXP-D0-V16-SEAM-PURIFICATION-SECTION-MAP` constructs a typed section from D0 internal clocks/capacity to ((M_0,\tau_C)).
+
+Finite leftover-horizon and dusty-plasma analogies remain bridge/passport material. No (\Omega_8), apple-torus, LIGO or survey promotion follows.

@@ -1641,3 +1641,17 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b08-6]: forcing: GOLDEN BRIDGE-LEM 61.1.B
 [^b08-7]: open obligation — cert obligation open
 [^b08-8]: forcing: the phason is the forced perpendicular-space (cut-and-project) mode of the carrier; cert vp_phason_forcing.py (perp DOF=D-d_par=1; intercept-invariant Sturmian factor set => gapless Goldstone; density-preserving relabel => dark, radiation-free); claim D0-PHASON-FORCING-001. Downstream K-theory/spectral-triple phason-holonomy (D0-QUASI007/008/009) stay cert-closed EXTERNAL-GAP.
+
+## 08.V16-REMNANT-LIFETIME-GUARDRAIL
+
+Keep the internal thermodynamic pair together:
+[
+A_n=A_0\varphi^{-n},qquad B_n=A_0(1-\varphi^{-n}),qquad R_n=\varphi^n-1,
+]
+with (\Delta B_n>0), (\Delta^2B_n<0), and (\Delta^2R_n>0). For the owned log-det chart (0<z<1), (L'(V)>0) and (L''(V)<0). A long external metastable remnant envelope does not change these internal signs.
+
+The internal depth
+[
+n_*=\frac{\log(1+R_*)}{\log\varphi},qquad \tau_*=n_*h/\Lambda_{\rm act}
+]
+is not an astrophysical lifetime until a typed section to ((M_0,\tau_C)) exists. Fitting (n_*) to the universe age, PBH masses, H0/DESI, or any remnant lifetime is forbidden. Remnant longevity remains `REMNANT-LIFETIME-PASSPORT-TARGET`.

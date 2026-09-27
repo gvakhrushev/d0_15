@@ -1789,3 +1789,17 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b06-51]: forcing: GOLDEN dossier §VI.1.
 [^b06-52]: forcing: GOLDEN THE — D0-TORAL-AUTOMORPHISM-GALOIS-BALANCE-001, dossier §III.1.
 [^b06-53]: forcing: GOLDEN THE 9.5.1 "RG as illusion", BOOK-III-SPECTRUM §III.1.H.
+
+## 06.V16-TWO-SPLIT-RULE — medium archive vs observer purification
+
+The medium/archive history and an external observer window are distinct typed splits. On the D0 medium split,
+[
+B_n=A_0(1-\varphi^{-n})
+]
+is monotone increasing; observer-frame purification is therefore not a decrease of (B_n). Re-admission of previously archived degrees into a later observer window is a change of readout/history, not reversal of the medium archive ledger.
+
+Binding admissibility rule:
+[
+P_{\rm obs}\neq P_{\rm med}
+]
+unless an explicit functor identifies them. The D0 core therefore does not acquire a Page curve by relabelling its medium archive. Nontrivial channel sign belongs to a declared history/window, not one unrestricted fixed unitary tick.

@@ -2733,3 +2733,21 @@ _Traceability for the integrated forcing arguments and the open proof obligation
 [^b02-59]: forcing: GOLDEN `D0-ZETA8-REGISTRY-001`,
 concentrator node with edges `same_Z2_incarnation`; Lucas face = GOLDEN THE 3.11.B — closed: certificate vp_z2_spinor_cover.py and Lean D0.Synthesis.Z2SpinorCover (z2_spinor_cover) prove four of the seven incarnations are one Z2, with the +2 joint (det(T^{n+2})=det(T^n)) and the +1 control; claim D0-Z2-SPINOR-COVER-001.
 [^b02-60]: forcing: GOLDEN THE 3.11.B
+
+## 02.V16-CHANNEL-BALANCE — fixed-tick finite budget
+
+The final v16 channel-dynamics synthesis adds one exact finite linear-algebra guardrail without importing external remnant physics. For a fixed orthogonal split (H=P\oplus Q) and one unitary tick
+[
+U=\begin{pmatrix}A&B\\C&D\end{pmatrix},qquad F_N=C^\dagger C,qquad F_Q^{\rm emit}=B^\dagger B,
+]
+unitarity gives
+[
+\operatorname{Tr}F_N=\operatorname{Tr}F_Q^{\rm emit}=\operatorname{rank}P-\|A\|_{HS}^2.
+]
+Thus an unrestricted global trace-ratio channel sign is identically zero on one fixed tick. A nontrivial sign must be windowed, sectoral, compressed, or history-dependent. The companion budget
+[
+\operatorname{Tr}(U_{\rm eff}^\dagger U_{\rm eff})+\operatorname{Tr}F_N=\operatorname{rank}P
+]
+remains the one-tick retained/leak accounting.
+
+Status discipline: exact finite lemma integrated here; dedicated owner task is `WRK-D0-V16-ONE-TICK-BALANCE-TWO-SPLIT-OWNER`. No remnant/laboratory bridge is promoted by this identity.

@@ -25,6 +25,15 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
+      "id": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "REVIEW",
+      "affected_claims": [],
+      "exit_condition": "Integrate the final v16 channel-dynamics synthesis with status-safe book patches, launch the two bounded channel workers, and leave the remnant section-map EXPENSIVE task launch-ready without promoting bridge/passport material.",
+      "brief": "00_WORK/tasks/CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION.md"
+    },
+    {
       "id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -48,15 +57,16 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL",
+      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "state": "PLANNED",
       "affected_claims": [
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Certify the exact joint linear kernel census on all owned L=4 singular orbit types, including explicit bases for every source-invisible connection subspace and the source-visible status of the #227 tangent.",
-      "brief": "00_WORK/tasks/WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL.md"
+      "exit_condition": "For the merged #241 slow background and #232 period-4 microstructure, either construct an exact finite-order connection correction that restores E_K=0 through the first response-relevant orders and certify the corrected leading metric-response coefficient, or prove an exact solvability obstruction showing that no such local connection-stationary lift exists in the declared chart.",
+      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT.md"
     },
     {
       "id": "WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM",
@@ -70,27 +80,16 @@
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM.md"
     },
     {
-      "id": "WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS",
+      "id": "WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN",
       "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
       "state": "PLANNED",
       "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+        "D0-METRO-002",
+        "D0-SCENE-TRACE-HEAT-CAPACITY-001"
       ],
-      "exit_condition": "Compute and certify the nonlinear joint E_K/E_Q germs on the two one-dimensional source-invisible L=4 residual orbit classes, proving local isolation or producing an exact curved joint-vacuum germ for each.",
-      "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
-    },
-    {
-      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "For the merged #241 slow background and #232 period-4 microstructure, either construct an exact finite-order connection correction that restores E_K=0 through the first response-relevant orders and certify the corrected leading metric-response coefficient, or prove an exact solvability obstruction showing that no such local connection-stationary lift exists in the declared chart.",
-      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT.md"
+      "exit_condition": "Lean-own the exact post-#247 seam-section boundary: co-vertex size 32, capacity 5, R_*=5/32 and 1+R_*=37/32, plus a scoped selector-nonuniqueness theorem showing positivity/type and one dimensional unit do not choose a unique positive dimensionless selector, without manufacturing the missing remnant/Bondi morphisms.",
+      "brief": "00_WORK/tasks/WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN.md"
     }
   ]
 }
