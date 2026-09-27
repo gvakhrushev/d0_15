@@ -232,3 +232,32 @@ algebraic structures/proof programs here, not physical claims by terminology.
 - Einstein/stress crossing: open until E.
 
 No BOOK/claim promotion follows from this CONTROL synthesis alone.
+
+
+## Nonlinear reduced-action closure layer
+
+The next mechanism-level refinement is owned by
+[A4D_REDUCED_ACTION_WARD_STRESS_MECHANISM.md](A4D_REDUCED_ACTION_WARD_STRESS_MECHANISM.md).
+
+It replaces the over-strong requirement "every frozen quadratic metric moment
+must vanish" by a test on the nonlinear reduced action:
+
+\[
+D_Q\mathcal L_{\rm red}
+\in
+\langle E_u,E_v,\ldots\rangle+\operatorname{Div}.
+\]
+
+This is the precise on-shell Ward-exactness condition under which a frozen
+shear defect may be nonzero while the metric stress of every admissible
+periodic stationary solution still vanishes.
+
+The first mandatory nonlinear reduction is coupled. A shear amplitude
+\(u=O(h)\) and a diagonal response-null / N0 amplitude \(v=O(h^2)\) can
+produce \(u|v|^2=O(h^5)\), the same order as the owned shear term \(u^5\).
+Therefore a shear-only envelope cannot close the nonlinear response question
+until the common reduced action and its mixed-partial consistency are known.
+
+A reported exact projected second-order envelope coefficient \(35/2\) is
+recorded there as awaiting a durable certificate. It is not owner truth merely
+because it appears in this synthesis.
