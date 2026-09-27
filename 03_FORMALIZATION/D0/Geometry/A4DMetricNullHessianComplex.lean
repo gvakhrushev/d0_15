@@ -645,4 +645,87 @@ lemma rank_minor30_of_delta_ne_zero (d : Fin 4 → ℚ) (hδ : delta30 d ≠ 0) 
   exact le_antisymm (by simpa using Matrix.rank_le_width (minor30 d)) hlower
 
 
+
+/-! ## Pointwise projective cover -/
+
+theorem qNull_ne_zero {d : Fin 4 → ℚ} (hd : d ≠ 0) : qNull d ≠ 0 := by
+  intro hq
+  have h0 := congrFun hq (0 : Fin 10)
+  have h1 := congrFun hq (4 : Fin 10)
+  have h2 := congrFun hq (7 : Fin 10)
+  have h3 := congrFun hq (9 : Fin 10)
+  simp [qNull, symPair] at h0 h1 h2 h3
+  apply hd
+  funext i
+  fin_cases i <;> nlinarith
+
+lemma rank_C_le_nine {d : Fin 4 → ℚ} (hd : d ≠ 0) :
+    Matrix.rank (C d) ≤ 9 := by
+  let f := (C d).mulVecLin
+  have hmem : qNull d ∈ f.ker := by
+    change (C d).mulVec (qNull d) = 0
+    exact C_mulVec_qNull d
+  have hq : (⟨qNull d, hmem⟩ : f.ker) ≠ 0 := by
+    intro h
+    apply qNull_ne_zero hd
+    exact Subtype.ext_iff.mp h
+  have hk : 0 < Module.finrank ℚ f.ker :=
+    (Module.finrank_pos_iff_exists_ne_zero).2 ⟨⟨qNull d, hmem⟩, hq⟩
+  have hrn := LinearMap.finrank_range_add_finrank_ker f
+  have hs : Module.finrank ℚ (Fin 10 → ℚ) = 10 := by simp
+  have hr : Module.finrank ℚ f.range ≤ 9 := by omega
+  simpa [Matrix.rank, f] using hr
+
+lemma delta10_ne_zero {d : Fin 4 → ℚ} (h1 : d 1 ≠ 0) : delta10 d ≠ 0 := by
+  have hs : (d 1)^2 + (d 3)^2 ≠ 0 := by
+    have hp : 0 < (d 1)^2 := sq_pos_of_ne_zero h1
+    have hn : 0 ≤ (d 3)^2 := sq_nonneg _
+    nlinarith
+  simp [delta10, h1, hs]
+
+lemma delta20_ne_zero {d : Fin 4 → ℚ} (h2 : d 2 ≠ 0) : delta20 d ≠ 0 := by
+  have hs : (d 2)^2 + (d 3)^2 ≠ 0 := by
+    have hp : 0 < (d 2)^2 := sq_pos_of_ne_zero h2
+    have hn : 0 ≤ (d 3)^2 := sq_nonneg _
+    nlinarith
+  simp [delta20, h2, hs]
+
+lemma delta30_ne_zero {d : Fin 4 → ℚ} (h3 : d 3 ≠ 0) : delta30 d ≠ 0 := by
+  have hs : (d 2)^2 + (d 3)^2 ≠ 0 := by
+    have hp : 0 < (d 3)^2 := sq_pos_of_ne_zero h3
+    have hn : 0 ≤ (d 2)^2 := sq_nonneg _
+    nlinarith
+  simp [delta30, h3, hs]
+
+/-- Pointwise rank nine on every nontrivial character difference. -/
+theorem rank_C_eq_nine {d : Fin 4 → ℚ} (hd : d ≠ 0) :
+    Matrix.rank (C d) = 9 := by
+  apply le_antisymm (rank_C_le_nine hd)
+  by_cases h0 : d 0 = 0
+  · by_cases h1 : d 1 = 0
+    · by_cases h2 : d 2 = 0
+      · have h3 : d 3 ≠ 0 := by
+          intro hz
+          apply hd
+          funext i
+          fin_cases i <;> assumption
+        have hm := rank_minor30_of_delta_ne_zero d (delta30_ne_zero h3)
+        have hs := Matrix.rank_submatrix_le (C d) rows30 cols30
+        simpa [minor30, hm] using hs
+      · have hm := rank_minor20_of_delta_ne_zero d (delta20_ne_zero h2)
+        have hs := Matrix.rank_submatrix_le (C d) rows20 cols20
+        simpa [minor20, hm] using hs
+    · have hm := rank_minor10_of_delta_ne_zero d (delta10_ne_zero h1)
+      have hs := Matrix.rank_submatrix_le (C d) rows10 cols10
+      simpa [minor10, hm] using hs
+  · by_cases h3 : d 3 = 0
+    · have hδ : delta00 d ≠ 0 := by simp [delta00, h0, h3]
+      have hm := rank_minor00_of_delta_ne_zero d hδ
+      have hs := Matrix.rank_submatrix_le (C d) rows00 cols00
+      simpa [minor00, hm] using hs
+    · have hδ : delta01 d ≠ 0 := by simp [delta01, h0, h3]
+      have hm := rank_minor01_of_delta_ne_zero d hδ
+      have hs := Matrix.rank_submatrix_le (C d) rows01 cols01
+      simpa [minor01, hm] using hs
+
 end D0.Geometry.A4DMetricNullHessianComplex
