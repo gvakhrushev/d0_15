@@ -13,9 +13,9 @@
 J2-POLARIZED-L4-N0-CURVATURE-CENSUS-CERTIFIED
 ```
 
-The terminal is deliberately narrower than the brief's wording. Section 0.2
-lists the two brief obligations that are **not** met and are recorded as open
-rather than claimed.
+The terminal is deliberately narrower than the original brief's wording.
+Section 0.2 records the one remaining brief obligation as open rather than
+silently claiming it.
 
 ## 0.1 Corrections to the first revision of this memo
 
@@ -56,9 +56,10 @@ is `d/dq : B^T x = 0` and `d/dx : A x + B q = 0`, so the carrier is
 H_J  =  [ H_AQ     , A     ]].       H_AQ = B    (24 x 10)
 ```
 
-with `A = H_AA + H_AA^T`. The certificate now verifies on **every** null vector
-that `H_QA x = 0` and `H_AQ q + A x = 0`. Using `H_AA` as-is gives six
-violations on the diagonal orbit; using `H_AA + H_AA^T` gives none.
+with `A = H_AA + H_AA^T`. This repaired matrix is an **auxiliary
+fixed-character symmetrization**, not an identification of the physical
+conjugate-character Hessian. The certificate verifies its stationarity
+equations exactly, but no terminal claim depends on this auxiliary carrier.
 
 ## 0.2 Open obligations from the brief
 
@@ -90,14 +91,14 @@ stated here so they cannot be read as terminal results.
 | Block | Shape | Meaning |
 |---|---|---|
 | `H_AA` | 24 x 24 | polarized connection bilinear, **not symmetric** |
-| `A = H_AA + H_AA^T` | 24 x 24 | genuine quadratic connection action |
+| `A = H_AA + H_AA^T` | 24 x 24 | auxiliary fixed-character symmetrization |
 | `H_QA = (H_AQ)^T` | 10 x 24 | metric response of a connection direction |
 | `H_AQ` | 24 x 10 | the transpose partner of `H_QA` |
 
-`H_QA` and `H_AQ` form a genuine transpose pair, so the KKT carrier is a
-legitimate non-symmetric saddle-point matrix. The antisymmetric remainder
-`H_AA - H_AA^T` is an exact 2-form on the connection sector and is a separate
-channel; it is not part of the symmetric carrier.
+`H_QA` and `H_AQ` form the exact transpose pair used by the polarized
+census. The fixed-character KKT construction with the symmetrized connection
+block is kept only as an auxiliary diagnostic; it is not used to classify the
+physical quotient.
 
 ## 2. Orbit inventory (reproduced)
 
@@ -246,12 +247,12 @@ form of the general non-symmetric quotient-Schur decomposition must not be
 applied to this carrier until a genuinely conjugate-paired symmetric carrier is
 built. That carrier is **not** built here.
 
-## 6b. The conjugate-paired real physical carrier
+## 6b. Conjugate-doubled real carrier diagnostic
 
 The auxiliary block `A = H_AA + H_AA^T` is a convention choice and vanishes
 identically on the diagonal quarter-wave, so it cannot be the physical
-Hessian. The owned data nevertheless admits a genuine conjugate-paired real
-carrier. The symbol is real on the real torus, and this is certified:
+Hessian. The owned data nevertheless admits the standard exact realification of the
+complex polarized symbol. The symbol is real on the real torus, and this is certified:
 
 ```text
 H(zbar) = conj(H(z))          on all nine orbit representatives
@@ -267,7 +268,7 @@ C_real = [[ Re S, -Im S],
           [ Im S,  Re S]]            (48 x 20)
 ```
 
-and the physical KKT carrier is
+and the corresponding realified KKT diagnostic is
 
 ```text
               [[ 0_{20x20} , C_real^T ],
@@ -288,8 +289,7 @@ Exact ranks (`QQ(i)`, via `DomainMatrix`):
 | 7 | (2,1,1,2) | 22 | 20 | **44** | 18 | 64 | 4 |
 | 8 | (2,1,2,3) | 22 | 24 | **44** | 18 | 62 | 6 |
 
-`A_real` is a true non-degenerate connection operator on every orbit, and
-`rank(A_real) = 2 rank(H_AA)` throughout. On the diagonal quarter-wave it has
+`A_real` has exact rank `2 rank(H_AA)` throughout. On the diagonal quarter-wave it has
 rank 32 exactly where the auxiliary symmetrization has rank 0. Stationarity
 `C_real^T x = 0` and `C_real q + A_real x = 0` is verified on every null vector.
 
