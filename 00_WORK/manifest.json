@@ -101,17 +101,6 @@
       ],
       "exit_condition": "On the pinned #232 Y microstructure and #241/#259 valued slow background, continue the connection-stationary lift through the next unresolved order and certify whether the corrected metric response preserves the h^2 z factor (hence normalized O(h) at z=h) or develops an exact Fredholm/resonant obstruction with a named first nonzero coefficient.",
       "brief": "00_WORK/tasks/WRK-A4D-Y-SLOW-JOINT-CONTINUATION.md"
-    },
-    {
-      "id": "WRK-A4D-HAQ-COEFFICIENTWISE-IDENTITY",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "From merged #270 C(d)=H_AQ(d), certify exact linear coefficient matrices C_r and the vanishing of every degree-three coefficient of C(d) vec_sym(d d^T), then verify the zero Laurent identity under d_r=z_r^-1-1; no rank/kernel reproof or stress inference.",
-      "brief": "00_WORK/tasks/WRK-A4D-HAQ-COEFFICIENTWISE-IDENTITY.md"
     }
   ]
 }
