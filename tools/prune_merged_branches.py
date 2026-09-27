@@ -89,6 +89,7 @@ LEGACY_SAFE = {
     "exp/a4d-star-nonlinear-stationary-rigidity-r2",       # #198 exact science byte-identical on main
     "exp/a4d-curved-stationary-sector-after-affine-completion", # stale source #187 replaced by clean packet #197
     "exp/a4d-curved-stationary-sector-r2",                 # #197 exact science byte-identical on main
+    "research/a4d-discrete-palatini-target-span",           # #203 flat-jet theorem superseded by Lean owner; Palatini packet superseded by terminal main version
     "wrk/a4d-diagonal-microstructure-connection-stationary-slow-lift", # closed stale #243; task remains PLANNED for fresh relaunch
     "control/strengthen-role-weld-scout",                  # no unique commits; main is strict descendant
 
