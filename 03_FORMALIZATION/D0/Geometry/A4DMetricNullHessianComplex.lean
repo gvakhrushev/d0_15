@@ -20,6 +20,10 @@ open BigOperators Matrix
 
 noncomputable section
 
+/-- Literal 24x10 / 9x9 certificate reduction is intentionally finite but
+    elaboration-heavy on CI. Keep the budget local to this module. -/
+set_option maxHeartbeats 800000
+
 def cCoeff (i : Fin 24) (j : Fin 10) (r : Fin 4) : ℚ :=
   match i.val, j.val, r.val with
   | 6, 7, 0 => (-1 : ℚ) / 2
