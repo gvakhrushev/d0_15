@@ -59,17 +59,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM.md"
     },
     {
-      "id": "WRK-A4D-METRIC-ONLY-SEED-SYMBOL-RELATION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "On the same conjugate-paired L=4 real metric-amplitude carrier used by #262, compare the exact two-dimensional metric-only kernel with the realified E_eta/E_sp response symbols and certify the exact intersection/kernel/image relation, without identifying an amplitude plane with an operator span by dimension alone.",
-      "brief": "00_WORK/tasks/WRK-A4D-METRIC-ONLY-SEED-SYMBOL-RELATION.md"
-    },
-    {
       "id": "WRK-A4D-Y-SLOW-JOINT-CONTINUATION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
