@@ -301,6 +301,10 @@ non-degenerate operator.
 
 ## 7. `E_Q(Q, I)` — status
 
+**Canonical owner:** merged PR #249,
+`J2-FLAT-LINK-METRIC-EULER-IDENTITY-CERTIFIED`. The local calculation below
+is retained only as an independent regression check, not as a competing owner.
+
 **Proved.** `E_Q` is rebuilt from the star formula and certified linear in
 the link logarithm, so `E_Q(q, 0) = 0` identically. The tangent cone is exactly
 `ker H_AQ`, of dimension 15 on every orbit, and `N_0` lies inside it.
