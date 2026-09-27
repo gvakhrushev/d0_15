@@ -6,17 +6,16 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
-| CONTROL | 0 | 0 | 0 | 2 | 2 | 2 / 2 |
+| CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
 | WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
-| **Total** | **5** | **0** | **0** | **2** | **7** | **2 / 10** |
+| **Total** | **5** | **0** | **0** | **1** | **6** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
 | ID | Class | State | Parent | Affected Claims |
 |---|---|---|---|---|
 | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | CONTROL | REVIEW | ROOT | - |
-| CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION | CONTROL | REVIEW | ROOT | - |
 | EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
