@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 2 | 2 | 2 / 2 |
 | EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
-| WORKER | 3 | 1 | 0 | 0 | 4 | 1 / 5 |
-| **Total** | **5** | **1** | **0** | **2** | **8** | **3 / 10** |
+| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
+| **Total** | **5** | **0** | **0** | **2** | **7** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -22,7 +22,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-Y-SLOW-JOINT-CONTINUATION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE | CONTROL | REVIEW | ROOT | - |
-| WRK-D0-OPERATIONAL-CUT-PROTOCOL-PAIR | WORKER | IN_PROGRESS | CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE | D0-POPPERIAN-BOOTSTRAP-001, D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001 |
 
 ## Registry Health & Metrics
 
