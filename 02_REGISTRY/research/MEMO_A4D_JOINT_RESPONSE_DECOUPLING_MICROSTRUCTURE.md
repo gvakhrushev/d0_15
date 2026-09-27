@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. Global (NF) is refuted by the shear witness. On the period-2 shear carrier the order-\(u^2\) metric jet is the single point \(-16u^2 e_{q_{11}}\), and the connection equation at order \(u^5\) forces the amplitude to vanish. The flat L=8 census remains a finite stress test. Neither final terminal is claimed.
+Status: IN PROGRESS. Global (NF) is refuted by the shear witness. On that upper shear the L=4 grid has no other nonzero moment, and the period-2 connection equation forces the defect amplitude to vanish. The flat L=8 census remains a finite stress test. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -597,6 +597,26 @@ This is not the smooth-background metric-response NOGO. The connection
 equation removes the amplitude, so there is no nonzero joint-critical
 sequence and no normalized gap against the #216 sheet.
 
+### 8.8 The rest of the L=4 grid on this solder
+
+The same upper shear was screened at all \(4^4=256\) characters. The
+bracket forms are computed once from the solder; each character only
+enters the role matrix. At \(z=(-1,1,-1,1)\) the assembled joint symbol
+matches the #216 owner matrices. Exactly three characters are singular:
+
+| character | joint rank | nullity | moments |
+|---|---|---|---|
+| \((i,i,i,i)\) | 20 | 4 | all ten blocks zero |
+| \((-i,-i,-i,-i)\) | 20 | 4 | all ten blocks zero |
+| \((-1,1,-1,1)\) | 23 | 1 | \((0,0,0,0,-2,0,0,0,0,0)\) |
+
+The two diagonal characters are the quarter-wave kernels of the all-solder
+identity in §8. Their moments vanish, so they are not NF defects. The only
+nonzero moment on this solder and this grid is the carrier already cut in
+§8.7. The certificate is
+`a4d_joint_response_shear_l4_support_check.py`. This is one solder and one
+finite grid. It does not restore global (NF).
+
 ### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
@@ -637,7 +657,8 @@ The following routes have been decided:
 | Entire L=4 grid at the flat solder | (NF) exact on all 20 nonzero joint kernels |
 | Global all-background joint-kernel (NF) | **REFUTED** by the exact shear witness in §8.3 |
 | Period-2 shear carrier under the joint equations | Connection equation forces \(u=0\) at order \(u^5\); no nonzero joint-critical sequence |
-| Nonlinear accessibility of every other NF-defect carrier, and the #216 gap | OPEN |
+| Other L=4 characters on this upper shear | Only the cut character has a nonzero moment |
+| NF defects on other solders, and the #216 gap | OPEN |
 | Strong connection compactness or uniqueness | Not used or requested |
 
 The previous “prove all-phase NF” route is closed: §8.3 gives an exact finite
@@ -645,12 +666,11 @@ counterexample to the algebraic identity. The conditional theorem in §§7.1–7
 therefore remains a valid implication but is not a global closure theorem for
 the naked-star system.
 
-The sharp remaining step is nonlinear accessibility of NF-defect carriers
-other than this period-2 shear ansatz. On the shear ansatz the connection
-equation already forces the amplitude to vanish at order \(u^5\), for every
-constant metric source. A finite NF failure, and this amplitude cut, are not
-the requested NOGO: that still needs a nonzero exact joint-critical sequence
-and a normalized gap against the #216 sheet.
+On this upper shear the L=4 grid has one NF defect, and the period-2
+connection equation cuts it. Other solders are not classified. A finite NF
+failure and this amplitude cut are not the requested NOGO: that still needs
+a nonzero exact joint-critical sequence and a normalized gap against the
+#216 sheet.
 
 A finite-frequency census may stress-test which resonances satisfy the moment
 identity, but no finite grid can restore a global NF theorem once the shear
