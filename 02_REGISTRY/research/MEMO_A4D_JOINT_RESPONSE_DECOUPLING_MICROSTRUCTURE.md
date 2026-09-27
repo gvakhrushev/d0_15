@@ -686,44 +686,56 @@ period-2 joint solution. This still does not restore (NF) on other
 characters or other solders, and it does not produce a joint-critical
 sequence.
 
-### 8.11 The shear NF defect is isolated at \(a=1\) on the unipotent family
+### 8.11 Sampled unipotent shear slice and the exact sign partner
 
-Section 9 of this memo left "NF defects on other solders" open. The unipotent
-slice of that route is now closed exactly.
+Section 9 of this memo left "NF defects on other solders" open. A previous
+revision overclaimed that a finite positive-\(a\) sample closed the rational
+unipotent slice and isolated the defect at \(a=1\). That statement is
+withdrawn.
 
 Parameterise the solder by
 \[
-S(a)=I+a\bigl(E_{01}+E_{12}\bigr),\qquad a\in\mathbb Q,\ a\neq 0,
+S(a)=I+a\bigl(E_{01}+E_{12}\bigr),\qquad a\in\mathbb Q,\ a\neq 0.
 \]
-so that \(a=1\) is the committed upper shear. For each
-\(a\in\{\tfrac12,\tfrac23,1,\tfrac32,2,3\}\) the whole \(L=4\) grid
-(\(4^4=256\) characters) is screened with a numeric SVD scout, and every
-surviving singular character is then verified exactly over \(\mathbb Q(i)\) with
-all ten Gram-direction moment blocks. The certificate is
-`a4d_joint_response_shear_family_support_check.py`.
+The whole \(L=4\) grid is now checked at
+\[
+a\in\{-1,\tfrac12,\tfrac23,1,\tfrac32,2,3\}.
+\]
+Every numerically scouted singular character is verified exactly over
+\(\mathbb Q(i)\) with all ten Gram-direction moment blocks. The certificate is
+\`a4d_joint_response_shear_family_support_check.py\`.
 
 | \(a\) | singular characters | nullity | nonzero moments |
 |---|---|---|---|
 | \(1/2,\,2/3,\,3/2,\,2,\,3\) | \((i,i,i,i)\), \((-i,-i,-i,-i)\) only | 4 each | 0 |
-| \(1\) | the two diagonals, **plus** \((-1,1,-1,1)\) | 4, 4, **1** | 0, 0, **1** |
+| \(+1\) | the two diagonals, **plus** \((-1,1,-1,1)\) | 4, 4, **1** | 0, 0, **1** |
+| \(-1\) | the two diagonals, **plus** \((-1,1,-1,1)\) | 4, 4, **1** | 0, 0, **1** |
 
-Two conclusions.
+At both \(a=1\) and \(a=-1\), the content-one carrier has the same exact
+moment
+\[
+(0,0,0,0,-2,0,0,0,0,0).
+\]
+The \(a=-1\) point is the signature-preserving sign partner of the committed
+upper shear. A nonzero \(24\times24\) joint minor on this carrier factors as
+\[
+256(a-1)^4(a+1)^4(a^2+1)^4,
+\]
+which exposes both rational candidates \(a=\pm1\).
 
-* The content-one carrier \((-1,1,-1,1)\) with moment
-  \((0,0,0,0,-2,0,0,0,0,0)\) is singular **only at \(a=1\)** and is absent for
-  every other \(a\) tested. The shear defect is therefore isolated, not a
-  generic feature of the unipotent slice.
-* The two diagonal quarter-wave kernels are singular for **every** \(a\) but have
-  all ten moments zero, so they are **not** NF defects. Only the \(a=1\) carrier
-  carries nonzero moment.
+The two diagonal quarter-wave kernels remain moment-free in the sampled
+controls. No exhaustive rational-\(a\) classification is claimed here:
+one nonzero minor only supplies a finite candidate set for its own row choice,
+and a complete minor/gcd cover is still required before promoting
+"\(|a|=1\) only" to a theorem.
 
 \[
-\boxed{\texttt{SHEAR-FAMILY-DEFECT-ISOLATED-AT-A-EQUAL-ONE}}
+\boxed{\texttt{SHEAR-SAMPLED-SIGN-PARTNER-DEFECTS-CERTIFIED}}
 \]
 
-Scope is narrow and stated: finite \(L=4\) grid, unipotent solder slice,
-rational \(a\). This does not restore global (NF), since the \(a=1\) carrier
-still refutes the algebraic identity, and it does not classify all solders.
+Scope: finite \(L=4\) grid and the displayed rational sample. Global (NF)
+remains refuted, while the all-rational unipotent-slice classification remains
+open.
 
 ### 8.12 L=8 grid on the two defect solders
 
