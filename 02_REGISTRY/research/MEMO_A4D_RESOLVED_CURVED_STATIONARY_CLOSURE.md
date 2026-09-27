@@ -2531,7 +2531,7 @@ self-energy and the full Euler are not tested. No stationary witness
 and no L=3 result. Task stays `IN_PROGRESS`.
 
 
-### 9.31 The quadratic jet vanishes at (1,0,0)
+### 9.31 The observer image at (1,0,0)
 
 `a4d_resolved_curved_stationary_e2_kernel_quadratic_point_affine4_check.py`
 specializes §9.30 at `(rho,t,p)=(1,0,0)`. The six pivot coordinates are
@@ -2554,52 +2554,51 @@ translation. The same remainder stays zero along the four free `Ka=0`
 translation directions. Each of the four `Ka` directions has zero
 cross with the particular amplitude and zero square on those rows, and
 every pairwise `Ka` cross is zero, all weighted by this same
-translation. The quadratic polynomial in the four `Ka` coordinates
-therefore vanishes on the six rows at this translation and this
-modulus point.
+translation. Section 9.32 records that this weighted vanishing is the
+kernel of the observer on a nonzero raw square. It is not a raw
+vanishing of the quadratic polynomial.
 
-Crosses between the four free translations and the `Ka` directions are
-not remeasured. The test is one modulus point, not the function field.
+The test is one modulus point, not the function field.
 The untruncated Euler is not evaluated. No stationary witness and no
 L=3 result. Task stays `IN_PROGRESS`.
 
 
-### 9.32 Free-translation polarizations of the quadratic jet
+### 9.32 The weighted zeros are the observer kernel
 
-The §9.31 certificate now also contracts every quadratic polarization with
-each of the four free `Ka=0` translation vectors, the columns 4, 5, 7, and 9
-of `BK` at `(rho,t,p)=(1,0,0)`. Their 13-component matrix has exact rank 4.
-The particular amplitude, pivot translation, four `Ka` directions, channel
-coefficients and six projected rows are unchanged.
+The same certificate contracts every quadratic polarization with each of
+the four free `Ka=0` translations, columns 4, 5, 7, and 9 of `BK`. That
+13-component matrix has rank 4. All 56 observer contractions on the six
+rows are zero: 16 crosses of the particular amplitude with a `Ka`
+direction, 16 squares, and 24 pairwise crosses, each under those four
+translations and also under the solved translation.
 
-For each free translation the additional checks are:
+That does not mean the raw quadratic jet vanishes. `Ka` direction
+`(0,0,-1,0,0,0,1)` is `-N2` on role 2 plus `N3` on role 3. In the
+16-beta jet its square has sixteen nonzero raw entries, and no others.
+Channels 2 and 3 are equal on each of them:
 
-- four particular-amplitude / `Ka` cross terms;
-- four `Ka` squares;
-- six pairwise `Ka` cross terms.
+```text
+row 8:   b2·e0 =  65536,  b2·e1 = -65536
+row 9:   b2·e0 = -65536,  b2·e1 =  65536
+row 12:  b3·e0 =  65536,  b3·e1 = -65536
+row 13:  b3·e0 = -65536,  b3·e1 =  65536
+```
 
-Thus 56 additional six-component contractions vanish exactly. The square
-and pair contractions are needed as well as the 16 particular/`Ka` cross
-terms: those 16 alone would not establish the polynomial statement.
-Together with §9.31, the amplitude-quadratic remainder is zero on these six
-rows for the particular translation plus an arbitrary linear combination
-of the four free translation vectors, and for arbitrary coefficients of
-the four `Ka` directions, at this one modulus point. Translation enters
-linearly. The order-four affine Euler used by `resp` is at most quadratic
-in the order-two amplitude: its products are of jet degrees `(1,3)`,
-`(2,2)` and `(3,1)`. The constant remainder and all its quadratic
-polarizations therefore cover the whole stated polynomial.
+At `p=0` the observer is `(Gamma/2, Gamma/2, q, -q)` with `q=3/1024`,
+so channels 2 and 3 are contracted by `(q,-q)`. Their dot product with
+`(1,1)` is zero for every translation weight, including the solved
+translation and all four free translations. The 56 checks cannot see
+this square. Rows 8 and 12 are inside the six-row projection. Slots
+`b2·e1` and `b3·e1` are free translation slots, so the free translations
+are not blind to the support; the opposite channel weight is what
+cancels it.
 
-This describes the projected quadratic remainder, not a solution of the
-complete Euler system for eight arbitrary parameters. It adds neither an
-untruncated Euler evaluation nor a function-field identity. The solder
-self-energy and missing orders must still be included before claiming
-stationarity. No finite curved stationary witness, broad L=2 no-go or L=3
-result is obtained. Task remains `IN_PROGRESS`.
-
-Validation: the extended exact checker completed with exit 0 in 504.86 s.
-All 56 new six-component contractions and the rank-4 coverage assertion
-passed. The CI timeout is explicitly bounded at 1200 s.
+The order-4 contraction in `resp` multiplies jet degrees `(1,3)`, `(2,2)`,
+and `(3,1)`. The nonzero piece above is the external `(2,2)` product. The
+weighted image on the six rows can still be zero while that product is
+not. No raw polynomial identity, no untruncated Euler evaluation, and no
+function-field identity is claimed. No stationary witness and no L=3
+result. Task stays `IN_PROGRESS`.
 
 ### 9.33 Conditional effective-response bridge and its missing hypotheses
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # D0_CI_TIMEOUT_SECONDS=1200
-"""Quadratic remainder on free translations and Ka at (rho,t,p)=(1,0,0).
+"""Observer image of the Ka quadratic jet at (rho,t,p)=(1,0,0).
 
-The linear 12x14 system is solved by six kernel columns. This run
-evaluates the rational particular amplitude, its four Ka directions and
-their polarizations. Exact contractions test the solved translation and
-four independent free Ka=0 translations. This is a projected affine-order
-jet at one modulus point, not the untruncated stationary Euler system.
+The weighted six-row contractions vanish. That is the kernel of the
+observer (q, -q) on equal channels 2 and 3, not a raw vanishing of the
+quadratic jet. The square of Ka direction 3, which is -N2 on role 2
+plus N3 on role 3, has sixteen nonzero raw entries, each +-65536,
+on equal channels 2 and 3.
 """
 from __future__ import annotations
 
@@ -239,6 +239,29 @@ for i, d in enumerate(ka_dirs):
     R2 = resp(X_of([2 * d[k] for k in range(7)]))
     cross = block_sub(Rpd, Rp, Rd, R0)
     square = block_sub(R2, Rd, Rd, R0)
+    if i == 3:
+        def raw_at(block, row_i, ch, beta):
+            return s.together(block[row_i][ch][beta].as_expr().subs({rho: 1, t: 0, u: s.Rational(8, 3)}))
+        nz = []
+        for row_i in range(16):
+            for ch in range(4):
+                for beta in range(16):
+                    val = raw_at(square, row_i, ch, beta)
+                    if val != 0:
+                        nz.append((row_i, ch, beta, val))
+        print('RAW_KA3_SQUARE', nz, flush=True)
+        expect = [
+            (8, 2, 1, s.Integer(65536)), (8, 2, 10, s.Integer(-65536)),
+            (8, 3, 1, s.Integer(65536)), (8, 3, 10, s.Integer(-65536)),
+            (9, 2, 1, s.Integer(-65536)), (9, 2, 10, s.Integer(65536)),
+            (9, 3, 1, s.Integer(-65536)), (9, 3, 10, s.Integer(65536)),
+            (12, 2, 2, s.Integer(65536)), (12, 2, 13, s.Integer(-65536)),
+            (12, 3, 2, s.Integer(65536)), (12, 3, 13, s.Integer(-65536)),
+            (13, 2, 2, s.Integer(-65536)), (13, 2, 13, s.Integer(65536)),
+            (13, 3, 2, s.Integer(-65536)), (13, 3, 13, s.Integer(65536)),
+        ]
+        check('RAW_KA3_SQUARE_SUPPORT', nz == expect)
+        check('OBSERVER_CHANNELS_2_AND_3_OPPOSITE', coef_pt[2] == -coef_pt[3] and coef_pt[2] != 0)
     six_zero(weighted(cross, tau), f'KA_CROSS_{i}_SIX_ZERO')
     six_zero(weighted(square, tau), f'KA_SQUARE_{i}_SIX_ZERO')
     for j, tau_j in free_translation_taus.items():
