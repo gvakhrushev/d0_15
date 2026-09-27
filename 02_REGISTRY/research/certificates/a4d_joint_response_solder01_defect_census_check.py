@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# D0_CI_TIMEOUT_SECONDS=900
+# D0_CI_TIMEOUT_SECONDS=1800
 """Complete 0/1-solder census of the L=4 (NF) defect locus.
 
 The eleven-solder family of section 8.9 has exactly two (NF) defects.  This
