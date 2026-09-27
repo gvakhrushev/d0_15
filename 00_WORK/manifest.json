@@ -84,7 +84,7 @@
       "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-SLOW-BACKGROUND-RESPONSE",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
