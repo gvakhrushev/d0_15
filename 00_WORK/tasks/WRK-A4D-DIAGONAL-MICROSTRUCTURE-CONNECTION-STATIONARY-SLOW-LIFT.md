@@ -35,20 +35,20 @@ equation.
 
 For the valued slow background from #241,
 
-[
-Q_h=eta+halpha+h^2x_0eta,
-]
+\[
+Q_h=\eta+h\alpha+h^2 x_0\beta,
+\]
 
-and the exact #232 period-four family (K(z)), seek a corrected connection in a stated
+and the exact #232 period-four family \(K(z)\), seek a corrected connection in a stated
 local chart,
 
-[
-K_h^{m corr}=K(z),exp!ig(delta A(h,z)ig)
-]
+\[
+K_h^{\rm corr}=K(z)\,\exp\!\bigl(\delta A(h,z)\bigr)
+\]
 
 (or an exactly equivalent Cayley-coordinate ansatz), with the correction allowed to use
 the minimal phase/role Fourier support demanded by the Euler equations.  Expand the full
-finite connection Euler map (E_K(Q_h,K_h^{m corr})) jointly in (h,z).
+finite connection Euler map \(E_K(Q_h,K_h^{\rm corr})\) jointly in \((h,z)\).
 
 The load-bearing question is the first order at which #241's pointwise metric response
 can matter after (z_h=h): determine whether the connection equation can be solved
