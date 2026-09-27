@@ -16,6 +16,15 @@
   ],
   "tasks": [
     {
+      "id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [],
+      "exit_condition": "Prove normalized metric-response decoupling for exact joint-critical sequences including the #232 curved nongauge grid-scale family, with a precise topology and non-tautological source/comparator convention, or give a certified smooth-background joint-critical counterexample with a nonzero normalized response gap.",
+      "brief": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
+    },
+    {
       "id": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "class": "CONTROL",
       "parent": "ROOT",
