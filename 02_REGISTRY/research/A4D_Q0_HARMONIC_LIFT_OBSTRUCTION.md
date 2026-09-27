@@ -1,9 +1,13 @@
 # A4D q0 nonlinear harmonic lift: exact second forcing and restricted rays
 
-**Execution:** CONTROL PR #296  
-**Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
-**Status:** exact finite research certificate; no Lean/claim/BOOK promotion  
-**Terminal:** `A4D-Q0-HARMONIC-LIFT-SECOND-JET-EXACT`  
+**Execution:** CONTROL PR #296
+
+**Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`
+
+**Status:** exact finite research certificate; no Lean/claim/BOOK promotion
+
+**Terminal:** `A4D-Q0-HARMONIC-LIFT-SECOND-JET-EXACT`
+
 **Certificate:** [a4d_q0_harmonic_lift_obstruction_check.py](certificates/a4d_q0_harmonic_lift_obstruction_check.py)
 
 ## 1. Result and carrier
