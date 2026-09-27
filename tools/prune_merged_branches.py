@@ -75,6 +75,8 @@ LEGACY_SAFE = {
     "wrk/a4d-joint-diagonal-invisible-germ",               # closed #235; task remains PLANNED for fresh relaunch
     "wrk/a4d-joint-resonance-linear-kernel",                # closed #231; superseded by clean replay #252
     "wrk/a4d-joint-one-d-residual-germs",                   # closed #234; superseded by clean replay #253
+    "wrk/a4d-joint-nullspace-split",                          # closed duplicate #256; split reproduced by merged clean replay #262
+    "wrk/a4d-joint-real-carrier-quotient-decomposition",      # closed #257; superseded by merged clean replay #262
     "wrk/a4d-affine-curvature-cert",                       # closed #166; superseded by merged clean #168
     "wrk/a4d-formalize-affine-relative-solder",               # closed #210; superseded by merged #218 r2
     "wrk/a4d-formalize-cartan-hodge-translation-nogo",         # merged #192; safe retained payload on main

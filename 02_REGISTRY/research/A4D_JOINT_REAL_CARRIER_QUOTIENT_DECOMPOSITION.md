@@ -163,3 +163,16 @@ Holst term, no selector, no continuum Einstein claim, no claim-status
 promotion, no BOOK edits.
 
 <!-- Acceptance retrigger after lifecycle sync: 665cbe43 -->
+
+## 9. CONTROL clarification after merged replay #262
+
+The task terminal above is retained verbatim, but its missing-map clause is narrowed by an already-merged owner.
+
+The nonlinear local proper-Lorentz quotient proves that on nondegenerate solder
+`Q_x = Theta_x eta Theta_x^T` and `K_xr = Theta_x L_xr Theta_y^-1` are complete local-Lorentz orbit coordinates.
+The J2 `(q,x)` carrier is built from variations of these downstairs variables, so there is no additional local-Lorentz image to quotient inside the 68-dimensional carrier.
+
+The rank-60 `flatNodeGaugeMap : LocalRoleVector 0 -> LocalCoframeField 0` used in section 6 is instead the flat forward-coframe / affine node-gauge owner at L=2.
+What remains genuinely missing is a registered descent or period lift of that separate gauge structure to the L4 quotient-coordinate carrier.
+
+Hostile controls: (1) at one nonzero L2 Fourier character the D0 image is at most four-dimensional, so it cannot by itself be a six-dimensional local-Lorentz algebra image; (2) the square map has `pi^-1((-1,-1,-1,-1))={+/-i}^4`, a 16-character fibre containing both the diagonal orbit and the `(i,i,-i,-i)` orbit type, so the covering alone does not select the diagonal.
