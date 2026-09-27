@@ -60,7 +60,7 @@ jobs:
 
       - name: Execute changed research certificates
         if: github.event_name != 'workflow_dispatch'
-        timeout-minutes: 20
+        timeout-minutes: 30
         shell: bash
         run: |
           set -euo pipefail
@@ -89,12 +89,14 @@ jobs:
           echo "Executing ${#CERTS[@]} changed research certificate(s):"
           printf '  %s\n' "${CERTS[@]}"
 
+          # Exact eliminations on this branch exceed three minutes. Run them
+          # together so the step budget covers the slowest certificate rather
+          # than the sum.
+          existing=()
           for cert in "${CERTS[@]}"; do
-            [[ -f "$cert" ]] || continue
-            echo "::group::research certificate: $cert"
-            timeout 180s python "$cert"
-            echo "::endgroup::"
+            [[ -f "$cert" ]] && existing+=("$cert")
           done
+          printf '%s\0' "${existing[@]}" | xargs -0 -P 3 -n 1 timeout 900s python
 
       - name: Certificate artifact freshness and semantic mutations
         run: python tools/test_cert_artifact_freshness.py
