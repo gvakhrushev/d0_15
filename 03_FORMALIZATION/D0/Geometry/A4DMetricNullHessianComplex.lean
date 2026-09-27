@@ -1539,6 +1539,26 @@ theorem cMatrix_ker_eq_span_q0 {d : Fin 4 → ℂ} (hd : d ≠ 0) :
       cMatrix_ker_finrank_eq_one hd]
   exact (Submodule.eq_of_le_of_finrank_eq hspan_le hfin).symm
 
+
+/-! The origin is a special fiber: both adjacent differentials vanish there. -/
+
+theorem q0_zero_smul (φ : ℂ) :
+    φ • q0 (0 : Fin 4 → ℂ) = 0 := by
+  rw [q0_zero]
+  simp
+
+theorem cMatrix_zero_ker_eq_top :
+    LinearMap.ker (cMatrix (0 : Fin 4 → ℂ)).mulVecLin = ⊤ := by
+  rw [cMatrix_zero]
+  simp
+
+theorem cMatrix_zero_ker_finrank_eq_ten :
+    Module.finrank ℂ
+      (LinearMap.ker (cMatrix (0 : Fin 4 → ℂ)).mulVecLin) = 10 := by
+  rw [cMatrix_zero]
+  simp
+
+
 end
 
 end D0.Geometry.A4DMetricNullHessianComplex
