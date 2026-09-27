@@ -81,7 +81,7 @@
     {
       "id": "WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER",
       "class": "WORKER",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
