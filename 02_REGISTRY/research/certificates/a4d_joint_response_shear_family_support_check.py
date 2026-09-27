@@ -13,14 +13,14 @@ so a = 1 is the committed upper shear.  For each a the whole L = 4 grid
 surviving singular character is then verified exactly over QQ(i) with its ten
 Gram-direction moment blocks.
 
-Result.  The only singular characters on the whole family are the two
-diagonal quarter-waves, whose ten moments vanish, plus, when a = 1 only, the
-committed carrier z = (-1,1,-1,1) with the content-one moment
-(0,0,0,0,-2,0,0,0,0,0).
+This file is a finite exact sample checker, not an all-rational-a classifier.
+A previous revision sampled only positive a and overclaimed that the defect was
+isolated at a=1.  The exact sign partner a=-1 is also singular at the same
+character and carries the same content-one moment.  The sampled controls now
+include both sign partners explicitly.
 
-So the shear NF defect is isolated: it occurs at a = 1 and disappears for
-a != 1, while the two diagonal kernels persist for every a.  This is a finite
-L = 4 statement on the unipotent slice, not a claim about all solders.
+No exhaustive claim is made for all rational a.  A separate symbolic
+minor/gcd classification is required before any "|a|=1 only" terminal.
 
 Nothing here restores global (NF): the committed a = 1 carrier still refutes
 the algebraic identity.
@@ -45,7 +45,7 @@ ROOTS = (sp.Integer(1), sp.I, sp.Integer(-1), -sp.I)
 DIAGONAL = ((sp.I, sp.I, sp.I, sp.I), (-sp.I, -sp.I, -sp.I, -sp.I))
 SHEAR_CHAR = (sp.Integer(-1), sp.Integer(1), sp.Integer(-1), sp.Integer(1))
 SHEAR_CONTENT_MOMENT = [0, 0, 0, 0, -2, 0, 0, 0, 0, 0]
-FAMILY = [sp.Rational(1, 2), sp.Rational(2, 3), sp.Integer(1),
+FAMILY = [sp.Integer(-1), sp.Rational(1, 2), sp.Rational(2, 3), sp.Integer(1),
           sp.Rational(3, 2), sp.Integer(2), sp.Integer(3)]
 
 
@@ -126,28 +126,26 @@ def main() -> None:
             check(f"A_{a}_DIAGONAL_MOMENTS_ZERO",
                   all(m == 0 for m in mom), str(mom))
         content = [ph for ph in chars if ph == SHEAR_CHAR]
-        if a == sp.Integer(1):
-            check("A_1_SHEAR_CONTENT_PRESENT", len(content) == 1)
+        if a in (sp.Integer(-1), sp.Integer(1)):
+            check(f"A_{a}_SHEAR_CONTENT_PRESENT", len(content) == 1)
             nl, mom = chars[SHEAR_CHAR]
-            check("A_1_SHEAR_NULLITY_ONE", nl == 1)
-            check("A_1_SHEAR_CONTENT_MOMENT",
+            check(f"A_{a}_SHEAR_NULLITY_ONE", nl == 1)
+            check(f"A_{a}_SHEAR_CONTENT_MOMENT",
                   [sp.simplify(m) for m in mom] == SHEAR_CONTENT_MOMENT,
                   str(mom))
         else:
-            check(f"A_{a}_SHEAR_CONTENT_ABSENT", len(content) == 0,
+            check(f"A_{a}_SHEAR_CONTENT_ABSENT_IN_SAMPLE", len(content) == 0,
                   f"got {[str(k) for k in chars]}")
 
     print()
-    print("RESULT: the NF defect is isolated at a = 1.")
-    print("  For every a in the family the two diagonal quarter-wave kernels are")
-    print("  singular with nullity 4 and all ten moments zero, so they are not")
-    print("  NF defects.  The content-one carrier (-1,1,-1,1) with moment")
-    print("  (0,0,0,0,-2,0,0,0,0,0) is singular only at a = 1 and is absent")
-    print("  for every other a tested.")
-    print("TERMINAL: SHEAR-FAMILY-DEFECT-ISOLATED-AT-A-EQUAL-ONE")
-    print("BOUNDARY: finite L=4 grid, unipotent solder slice, rational a.")
-    print("  This does not restore global (NF): the a = 1 carrier still refutes")
-    print("  the algebraic identity.  It also does not classify all solders.")
+    print("RESULT: sampled shear slice contains exact sign-partner defects at a = +/-1.")
+    print("  In the declared sample the two diagonal quarter-wave kernels persist")
+    print("  with zero moments.  The carrier (-1,1,-1,1) has nullity one and")
+    print("  moment (0,0,0,0,-2,0,0,0,0,0) at both a=1 and a=-1.")
+    print("TERMINAL: SHEAR-SAMPLED-SIGN-PARTNER-DEFECTS-CERTIFIED")
+    print("BOUNDARY: finite L=4 grid and the explicit rational sample only.")
+    print("  No exhaustive rational-a classification is claimed; in particular")
+    print("  '|a|=1 only' remains open until a symbolic minor/gcd proof exists.")
 
 
 if __name__ == "__main__":
