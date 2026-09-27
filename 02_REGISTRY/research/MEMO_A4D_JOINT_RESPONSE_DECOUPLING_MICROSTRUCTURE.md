@@ -445,6 +445,39 @@ resonances lift at the tested backgrounds; they do not classify the resonance
 set for general \(Q\).
 
 The result closes the complete L=4 flat-solder finite-frequency test only.
+### 8.3 Exact shear witness, reproduced
+
+On the upper shear solder \(E=I+E_{01}+E_{12}\),
+
+\[
+E=\begin{pmatrix}1&1&0&0\\0&1&1&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+\]
+
+at the self-inverse character \(z=(-1,1,-1,1)\), the literal #216 maps give
+
+\[
+\operatorname{rank}H=20,\quad\operatorname{rank}C=9,\quad\operatorname{rank}(H,C)=23.
+\]
+
+The joint kernel is one-dimensional. Its content-one integer generator, in role blocks \((K_1,K_2,K_3,J_{12},J_{13},J_{23})\), is
+
+\[
+\begin{aligned}
+v_0&=J_{23},\\
+v_1&=0,\\
+v_2&=-K_3-J_{13}+J_{23},\\
+v_3&=2K_1+K_2+J_{12}.
+\end{aligned}
+\]
+
+The ten quadratic moments in the order \((00,01,02,03,11,12,13,22,23,33)\) are
+
+\[
+(0,0,0,0,-2,0,0,0,0,0).
+\]
+
+In particular \(v^*D_QH_Q(z)[q_{11}]v=-2\). The same character is jointly invertible at the flat solder, so this kernel is created by the shear. Because \(z^2=(1,1,1,1)\), the quadratic self-interaction of this carrier lands in the zero-frequency channel. This is a finite failure of (NF). It is not yet a smooth-background NOGO.
+
 It does not establish (NF) on the continuous unit torus away from this finite
 grid, nor at every Gram in the compact chart. The conditional homogenization
 argument therefore remains conditional.
