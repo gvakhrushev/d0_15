@@ -30,17 +30,13 @@ def qi (a b : ℚ) : ℂ := (a : ℂ) + (b : ℂ) * Complex.I
     qi a b * qi c d = qi (a * c - b * d) (a * d + b * c) := by
   apply Complex.ext <;> norm_num [qi] <;> ring
 
-@[simp] theorem qi_conj (a b : ℚ) :
-    star (qi a b) = qi a (-b) := by
-  apply Complex.ext <;> norm_num [qi]
-
 @[simp] theorem qi_zero : qi 0 0 = 0 := by
   apply Complex.ext <;> norm_num [qi]
 
 @[simp] theorem qi_one : qi 1 0 = 1 := by
   apply Complex.ext <;> norm_num [qi]
 
-def p5 (i : Fin 24) (j : Fin 34) : ℂ :=
+def p5 : Matrix (Fin 24) (Fin 34) ℂ := fun i j =>
   match i.val, j.val with
   | 0, 3 => qi (0) (-1)
   | 0, 4 => qi (0) (-1)
@@ -196,7 +192,7 @@ def p5 (i : Fin 24) (j : Fin 34) : ℂ :=
   | 23, 29 => qi ((-1 : ℚ) / 2) ((1 : ℚ) / 2)
   | _, _ => 0
 
-def p7 (i : Fin 24) (j : Fin 34) : ℂ :=
+def p7 : Matrix (Fin 24) (Fin 34) ℂ := fun i j =>
   match i.val, j.val with
   | 0, 3 => qi (0) (1)
   | 0, 15 => qi (-1) (0)
@@ -444,7 +440,7 @@ def cols7 (i : Fin 23) : Fin 34 :=
   | 22 => 25
   | _ => 0
 
-def binv5 (i : Fin 23) (j : Fin 23) : ℂ :=
+def binv5 : Matrix (Fin 23) (Fin 23) ℂ := fun i j =>
   match i.val, j.val with
   | 0, 4 => qi (0) ((1 : ℚ) / 2)
   | 0, 5 => qi ((1 : ℚ) / 4) ((-3 : ℚ) / 4)
@@ -753,7 +749,7 @@ def binv5 (i : Fin 23) (j : Fin 23) : ℂ :=
   | 22, 21 => qi ((-1 : ℚ) / 2) ((1 : ℚ) / 2)
   | _, _ => 0
 
-def binv7 (i : Fin 23) (j : Fin 23) : ℂ :=
+def binv7 : Matrix (Fin 23) (Fin 23) ℂ := fun i j =>
   match i.val, j.val with
   | 0, 0 => qi ((-1 : ℚ) / 4) (0)
   | 0, 1 => qi ((-1 : ℚ) / 4) (0)
@@ -1018,7 +1014,7 @@ def binv7 (i : Fin 23) (j : Fin 23) : ℂ :=
   | 22, 20 => qi ((-1 : ℚ) / 2) ((1 : ℚ) / 2)
   | _, _ => 0
 
-def reconstruct5 (i : Fin 24) (j : Fin 23) : ℂ :=
+def reconstruct5 : Matrix (Fin 24) (Fin 23) ℂ := fun i j =>
   match i.val, j.val with
   | 0, 0 => qi (1) (0)
   | 1, 1 => qi (1) (0)
@@ -1052,7 +1048,7 @@ def reconstruct5 (i : Fin 24) (j : Fin 23) : ℂ :=
   | 23, 22 => qi (1) (0)
   | _, _ => 0
 
-def reconstruct7 (i : Fin 24) (j : Fin 23) : ℂ :=
+def reconstruct7 : Matrix (Fin 24) (Fin 23) ℂ := fun i j =>
   match i.val, j.val with
   | 0, 0 => qi (1) (0)
   | 1, 1 => qi (1) (0)
@@ -1536,6 +1532,31 @@ def crossSol7_2 (i : Fin 34) : ℂ :=
   | 23 => qi (1) (-1)
   | _ => 0
 
+def ell5Bar (i : Fin 24) : ℂ :=
+  match i.val with
+  | 0 => qi (-1) (-1)
+  | 6 => qi (-1) (-1)
+  | 12 => qi (1) (0)
+  | 14 => qi (-1) (0)
+  | 16 => qi (1) (0)
+  | 18 => qi (1) (0)
+  | 19 => qi (-1) (0)
+  | 21 => qi (1) (0)
+  | _ => 0
+
+def ell7Bar (i : Fin 24) : ℂ :=
+  match i.val with
+  | 2 => qi (1) (0)
+  | 7 => qi (0) (1)
+  | 8 => qi (0) (-1)
+  | 11 => qi (0) (1)
+  | 12 => qi (0) (1)
+  | 14 => qi (0) (-1)
+  | 16 => qi (0) (1)
+  | 20 => qi (1) (0)
+  | _ => 0
+
+
 macro "qfin" : tactic =>
   `(tactic|
     (first
@@ -1549,10 +1570,10 @@ def block7 : Matrix (Fin 23) (Fin 23) ℂ := Matrix.submatrix p7 rows7 cols7
 def selectedRows5 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p5 rows5 id
 def selectedRows7 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p7 rows7 id
 
-theorem block5_mul_inv : block5 * binv5 = 1 := by qfin
-theorem inv_mul_block5 : binv5 * block5 = 1 := by qfin
-theorem block7_mul_inv : block7 * binv7 = 1 := by qfin
-theorem inv_mul_block7 : binv7 * block7 = 1 := by qfin
+theorem block5_mul_inv : Matrix.mul block5 binv5 = 1 := by qfin
+theorem inv_mul_block5 : Matrix.mul binv5 block5 = 1 := by qfin
+theorem block7_mul_inv : Matrix.mul block7 binv7 = 1 := by qfin
+theorem inv_mul_block7 : Matrix.mul binv7 block7 = 1 := by qfin
 
 def block5Unit : (Matrix (Fin 23) (Fin 23) ℂ)ˣ where
   val := block5
@@ -1566,8 +1587,8 @@ def block7Unit : (Matrix (Fin 23) (Fin 23) ℂ)ˣ where
   val_inv := block7_mul_inv
   inv_val := inv_mul_block7
 
-theorem reconstruct_rows5 : reconstruct5 * selectedRows5 = p5 := by qfin
-theorem reconstruct_rows7 : reconstruct7 * selectedRows7 = p7 := by qfin
+theorem reconstruct_rows5 : Matrix.mul reconstruct5 selectedRows5 = p5 := by qfin
+theorem reconstruct_rows7 : Matrix.mul reconstruct7 selectedRows7 = p7 := by qfin
 
 lemma rank_submatrix_le
     {m n a b : Type*} [Fintype m] [Fintype n] [Fintype a] [Fintype b]
@@ -1576,9 +1597,9 @@ lemma rank_submatrix_le
     Matrix.rank (Matrix.submatrix M rows cols) ≤ Matrix.rank M := by
   let R : Matrix a m ℂ := fun i j => if j = rows i then 1 else 0
   let C : Matrix n b ℂ := fun i j => if i = cols j then 1 else 0
-  have h : M.submatrix rows cols = R * M * C := by
+  have h : Matrix.submatrix M rows cols = Matrix.mul (Matrix.mul R M) C := by
     ext i j
-    simp [R, C, Matrix.mul_apply, dotProduct]
+    simp [R, C, Matrix.mul_apply]
   rw [h]
   exact (Matrix.rank_mul_le_left _ _).trans (Matrix.rank_mul_le_right _ _)
 
@@ -1587,7 +1608,9 @@ theorem orbit5_rank : Matrix.rank p5 = 23 := by
     have hsub := rank_submatrix_le p5 rows5 cols5
     have hb : Matrix.rank block5 = 23 := by
       simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block5 block5Unit.isUnit
-    simpa [block5, hb] using hsub
+    calc
+      23 = Matrix.rank block5 := hb.symm
+      _ ≤ Matrix.rank p5 := by simpa [block5] using hsub
   have hupper : Matrix.rank p5 ≤ 23 := by
     rw [← reconstruct_rows5]
     exact (Matrix.rank_mul_le_right _ _).trans (by
@@ -1599,51 +1622,55 @@ theorem orbit7_rank : Matrix.rank p7 = 23 := by
     have hsub := rank_submatrix_le p7 rows7 cols7
     have hb : Matrix.rank block7 = 23 := by
       simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block7 block7Unit.isUnit
-    simpa [block7, hb] using hsub
+    calc
+      23 = Matrix.rank block7 := hb.symm
+      _ ≤ Matrix.rank p7 := by simpa [block7] using hsub
   have hupper : Matrix.rank p7 ≤ 23 := by
     rw [← reconstruct_rows7]
     exact (Matrix.rank_mul_le_right _ _).trans (by
       simpa using Matrix.rank_le_card_height selectedRows7)
   exact le_antisymm hupper hlower
 
-def leftPair (ell v : Fin 24 → ℂ) : ℂ := ∑ i, star (ell i) * v i
+def leftPair (ellBar v : Fin 24 → ℂ) : ℂ := ∑ i, ellBar i * v i
 
 theorem ell5_annihilates_cols (j : Fin 34) :
-    leftPair ell5 (fun i => p5 i j) = 0 := by
-  fin_cases j <;> norm_num [leftPair, ell5, p5, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
+    leftPair ell5Bar (fun i => p5 i j) = 0 := by
+  fin_cases j <;>
+    norm_num [leftPair, ell5Bar, p5, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
 
 theorem ell7_annihilates_cols (j : Fin 34) :
-    leftPair ell7 (fun i => p7 i j) = 0 := by
-  fin_cases j <;> norm_num [leftPair, ell7, p7, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
+    leftPair ell7Bar (fun i => p7 i j) = 0 := by
+  fin_cases j <;>
+    norm_num [leftPair, ell7Bar, p7, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
 
-theorem ell5_nonzero : ell5 ≠ 0 := by
+theorem ell5_functional_nonzero : ell5Bar ≠ 0 := by
   intro h
-  have := congrFun h (0 : Fin 24)
-  norm_num [ell5, qi, Complex.ext_iff] at this
+  have hz := congrFun h (0 : Fin 24)
+  norm_num [ell5Bar, qi, Complex.ext_iff] at hz
 
-theorem ell7_nonzero : ell7 ≠ 0 := by
+theorem ell7_functional_nonzero : ell7Bar ≠ 0 := by
   intro h
-  have := congrFun h (0 : Fin 24)
-  norm_num [ell7, qi, Complex.ext_iff] at this
+  have hz := congrFun h (2 : Fin 24)
+  norm_num [ell7Bar, qi, Complex.ext_iff] at hz
 
 def inImage (P : Matrix (Fin 24) (Fin 34) ℂ) (w : Fin 24 → ℂ) : Prop :=
   ∃ x : Fin 34 → ℂ, P.mulVec x = w
 
 lemma leftPair_mulVec_zero
-    (P : Matrix (Fin 24) (Fin 34) ℂ) (ell : Fin 24 → ℂ)
-    (hcol : ∀ j, leftPair ell (fun i => P i j) = 0)
+    (P : Matrix (Fin 24) (Fin 34) ℂ) (ellBar : Fin 24 → ℂ)
+    (hcol : ∀ j, leftPair ellBar (fun i => P i j) = 0)
     (x : Fin 34 → ℂ) :
-    leftPair ell (P.mulVec x) = 0 := by
+    leftPair ellBar (P.mulVec x) = 0 := by
   simp only [leftPair, Matrix.mulVec, dotProduct]
   calc
-    (∑ i, star (ell i) * ∑ j, P i j * x j) =
-        ∑ i, ∑ j, star (ell i) * (P i j * x j) := by
+    (∑ i, ellBar i * ∑ j, P i j * x j) =
+        ∑ i, ∑ j, ellBar i * (P i j * x j) := by
           apply Finset.sum_congr rfl
           intro i hi
           rw [Finset.mul_sum]
-    _ = ∑ j, ∑ i, star (ell i) * (P i j * x j) := by
+    _ = ∑ j, ∑ i, ellBar i * (P i j * x j) := by
           rw [Finset.sum_comm]
-    _ = ∑ j, (∑ i, star (ell i) * P i j) * x j := by
+    _ = ∑ j, (∑ i, ellBar i * P i j) * x j := by
           apply Finset.sum_congr rfl
           intro j hj
           rw [Finset.sum_mul]
@@ -1653,7 +1680,7 @@ lemma leftPair_mulVec_zero
     _ = 0 := by
           apply Finset.sum_eq_zero
           intro j hj
-          rw [show (∑ i, star (ell i) * P i j) = 0 by simpa [leftPair] using hcol j]
+          rw [show (∑ i, ellBar i * P i j) = 0 by simpa [leftPair] using hcol j]
           simp
 
 theorem orbit5_cross_2_in : inImage p5 cross5_2 := by
@@ -1666,28 +1693,25 @@ theorem orbit5_cross_3_in : inImage p5 cross5_3 := by
 
 theorem orbit5_cross_0_out : ¬ inImage p5 cross5_0 := by
   rintro ⟨x, hx⟩
-  have hz := leftPair_mulVec_zero p5 ell5 ell5_annihilates_cols x
+  have hz := leftPair_mulVec_zero p5 ell5Bar ell5_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell5, cross5_0, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  norm_num [leftPair, ell5Bar, cross5_0, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
 
 theorem orbit5_cross_1_out : ¬ inImage p5 cross5_1 := by
   rintro ⟨x, hx⟩
-  have hz := leftPair_mulVec_zero p5 ell5 ell5_annihilates_cols x
+  have hz := leftPair_mulVec_zero p5 ell5Bar ell5_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell5, cross5_1, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  norm_num [leftPair, ell5Bar, cross5_1, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
 
 theorem orbit5_same_0_in : inImage p5 same5_0 := by
   refine ⟨sameSol5_0, ?_⟩
   qfin
-
 theorem orbit5_same_1_in : inImage p5 same5_1 := by
   refine ⟨sameSol5_1, ?_⟩
   qfin
-
 theorem orbit5_same_2_in : inImage p5 same5_2 := by
   refine ⟨sameSol5_2, ?_⟩
   qfin
-
 theorem orbit5_same_3_in : inImage p5 same5_3 := by
   refine ⟨sameSol5_3, ?_⟩
   qfin
@@ -1695,75 +1719,70 @@ theorem orbit5_same_3_in : inImage p5 same5_3 := by
 theorem orbit7_cross_1_in : inImage p7 cross7_1 := by
   refine ⟨crossSol7_1, ?_⟩
   qfin
-
 theorem orbit7_cross_2_in : inImage p7 cross7_2 := by
   refine ⟨crossSol7_2, ?_⟩
   qfin
 
 theorem orbit7_cross_0_out : ¬ inImage p7 cross7_0 := by
   rintro ⟨x, hx⟩
-  have hz := leftPair_mulVec_zero p7 ell7 ell7_annihilates_cols x
+  have hz := leftPair_mulVec_zero p7 ell7Bar ell7_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell7, cross7_0, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  norm_num [leftPair, ell7Bar, cross7_0, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
 
 theorem orbit7_cross_3_out : ¬ inImage p7 cross7_3 := by
   rintro ⟨x, hx⟩
-  have hz := leftPair_mulVec_zero p7 ell7 ell7_annihilates_cols x
+  have hz := leftPair_mulVec_zero p7 ell7Bar ell7_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell7, cross7_3, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  norm_num [leftPair, ell7Bar, cross7_3, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
 
 theorem orbit7_same_0_in : inImage p7 same7_0 := by
   refine ⟨sameSol7_0, ?_⟩
   qfin
-
 theorem orbit7_same_1_in : inImage p7 same7_1 := by
   refine ⟨sameSol7_1, ?_⟩
   qfin
-
 theorem orbit7_same_2_in : inImage p7 same7_2 := by
   refine ⟨sameSol7_2, ?_⟩
   qfin
-
 theorem orbit7_same_3_in : inImage p7 same7_3 := by
   refine ⟨sameSol7_3, ?_⟩
   qfin
 
+def hermitianSq (z : ℂ) : ℝ := z.re ^ 2 + z.im ^ 2
+def rowNorm2 (ellBar : Fin 24 → ℂ) : ℝ := ∑ i, hermitianSq (ellBar i)
+def residual2 (ellBar w : Fin 24 → ℂ) : ℝ :=
+  hermitianSq (leftPair ellBar w) / rowNorm2 ellBar
 
-def norm2 (v : Fin 24 → ℂ) : ℂ := leftPair v v
-
-def residual2 (ell w : Fin 24 → ℂ) : ℂ :=
-  star (leftPair ell w) * leftPair ell w / norm2 ell
-
-theorem orbit5_ell_norm2 : norm2 ell5 = 10 := by
-  norm_num [norm2, leftPair, ell5, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
-theorem orbit7_ell_norm2 : norm2 ell7 = 8 := by
-  norm_num [norm2, leftPair, ell7, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
+theorem orbit5_ell_norm2 : rowNorm2 ell5Bar = 10 := by
+  norm_num [rowNorm2, hermitianSq, ell5Bar, qi, Fin.sum_univ_succ]
+theorem orbit7_ell_norm2 : rowNorm2 ell7Bar = 8 := by
+  norm_num [rowNorm2, hermitianSq, ell7Bar, qi, Fin.sum_univ_succ]
 
 theorem orbit5_raw_residuals :
-    residual2 ell5 cross5_0 = (8/5 : ℂ) ∧
-    residual2 ell5 cross5_1 = (8/5 : ℂ) ∧
-    residual2 ell5 cross5_2 = 0 ∧ residual2 ell5 cross5_3 = 0 := by
-  norm_num [residual2, norm2, leftPair, ell5, cross5_0, cross5_1, cross5_2, cross5_3,
-    qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
+    residual2 ell5Bar cross5_0 = (8/5 : ℝ) ∧
+    residual2 ell5Bar cross5_1 = (8/5 : ℝ) ∧
+    residual2 ell5Bar cross5_2 = 0 ∧ residual2 ell5Bar cross5_3 = 0 := by
+  norm_num [residual2, rowNorm2, hermitianSq, leftPair, ell5Bar,
+    cross5_0, cross5_1, cross5_2, cross5_3, qi, Fin.sum_univ_succ]
 
 theorem orbit7_raw_residuals :
-    residual2 ell7 cross7_0 = (2 : ℂ) ∧ residual2 ell7 cross7_1 = 0 ∧
-    residual2 ell7 cross7_2 = 0 ∧ residual2 ell7 cross7_3 = (2 : ℂ) := by
-  norm_num [residual2, norm2, leftPair, ell7, cross7_0, cross7_1, cross7_2, cross7_3,
-    qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
+    residual2 ell7Bar cross7_0 = (2 : ℝ) ∧ residual2 ell7Bar cross7_1 = 0 ∧
+    residual2 ell7Bar cross7_2 = 0 ∧ residual2 ell7Bar cross7_3 = (2 : ℝ) := by
+  norm_num [residual2, rowNorm2, hermitianSq, leftPair, ell7Bar,
+    cross7_0, cross7_1, cross7_2, cross7_3, qi, Fin.sum_univ_succ]
 
 theorem orbit5_unit_q0_residuals :
-    residual2 ell5 cross5_0 / 40 = (1/25 : ℂ) ∧
-    residual2 ell5 cross5_1 / 40 = (1/25 : ℂ) ∧
-    residual2 ell5 cross5_2 / 40 = 0 ∧ residual2 ell5 cross5_3 / 40 = 0 := by
+    residual2 ell5Bar cross5_0 / 40 = (1/25 : ℝ) ∧
+    residual2 ell5Bar cross5_1 / 40 = (1/25 : ℝ) ∧
+    residual2 ell5Bar cross5_2 / 40 = 0 ∧ residual2 ell5Bar cross5_3 / 40 = 0 := by
   rw [orbit5_raw_residuals.1, orbit5_raw_residuals.2.1,
       orbit5_raw_residuals.2.2.1, orbit5_raw_residuals.2.2.2]
   norm_num
 
 theorem orbit7_unit_q0_residuals :
-    residual2 ell7 cross7_0 / 92 = (1/46 : ℂ) ∧
-    residual2 ell7 cross7_1 / 92 = 0 ∧ residual2 ell7 cross7_2 / 92 = 0 ∧
-    residual2 ell7 cross7_3 / 92 = (1/46 : ℂ) := by
+    residual2 ell7Bar cross7_0 / 92 = (1/46 : ℝ) ∧
+    residual2 ell7Bar cross7_1 / 92 = 0 ∧ residual2 ell7Bar cross7_2 / 92 = 0 ∧
+    residual2 ell7Bar cross7_3 / 92 = (1/46 : ℝ) := by
   rw [orbit7_raw_residuals.1, orbit7_raw_residuals.2.1,
       orbit7_raw_residuals.2.2.1, orbit7_raw_residuals.2.2.2]
   norm_num
@@ -1773,6 +1792,8 @@ rank 23 in a 24-dimensional output carrier, witnessed by the explicit nonzero
 left annihilator above. -/
 theorem orbit5_cokernel_codim_one : 24 - Matrix.rank p5 = 1 := by simp [orbit5_rank]
 theorem orbit7_cokernel_codim_one : 24 - Matrix.rank p7 = 1 := by simp [orbit7_rank]
+
+end
 
 end
 
