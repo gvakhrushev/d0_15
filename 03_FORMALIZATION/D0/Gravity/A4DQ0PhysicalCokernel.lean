@@ -16,7 +16,6 @@ by an explicit invertible 23x23 submatrix (lower bound) and an exact
 namespace D0.Gravity.A4DQ0PhysicalCokernel
 
 open BigOperators Matrix
-noncomputable section
 
 /-- Exact Gaussian-rational carrier.  Its generator satisfies ω² = -1. -/
 abbrev QI := QuadraticAlgebra ℚ (-1) 0
@@ -1788,7 +1787,5 @@ theorem orbit5_cokernel_codim_one : 24 - Matrix.rank p5 = 1 := by simp [orbit5_r
 theorem orbit7_cokernel_codim_one : 24 - Matrix.rank p7 = 1 := by simp [orbit7_rank]
 
 /- Integration validation retrigger after exact-certificate elaboration repairs. -/
-
-end
 
 end D0.Gravity.A4DQ0PhysicalCokernel
