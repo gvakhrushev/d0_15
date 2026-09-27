@@ -698,6 +698,7 @@ def _forcing_and_corrected(amps, zeta_power=1):
 def _degree7_channel(
     dress, r_minus, r_zero, c_minus, c_zero, weight, label,
     c_seven=None, c_three=None, max_degree=7, correction_weight=None,
+    directions=None, amplitudes=(0, 0, 1, 1),
 ):
     """Degree-7 connection Euler along one odd weight, after the even corrections.
 
@@ -707,7 +708,9 @@ def _degree7_channel(
     import math
     from fractions import Fraction
 
-    order = max_degree + 1
+    # The probe sits at t-degree 0, so the piece t^d ss comes from d+1
+    # factors of the logarithm. The jet keeps one extra slot for that product.
+    order = max_degree + 2
     eta_sign = (1, -1, -1, -1)
 
     def reduce_mat(den, nums):
@@ -839,7 +842,9 @@ def _degree7_channel(
         return out
 
     generators = [to_mat(gen) for gen in GEN]
-    base = [to_mat(sp.zeros(4)), to_mat(sp.zeros(4)), to_mat(Ms[2]), to_mat(Ms[3])]
+    base = [
+        to_mat(sp.Rational(amplitudes[role]) * Ms[role]) for role in range(4)
+    ]
     rm, rz = pack(r_minus), pack(r_zero)
     cm, cz = pack(c_minus), pack(c_zero)
     c7 = pack(c_seven) if c_seven is not None else None
@@ -859,7 +864,8 @@ def _degree7_channel(
         return total
 
     columns = []
-    for direction in range(24):
+    directions = range(24) if directions is None else directions
+    for direction in directions:
         role, gen = divmod(direction, 6)
         series = {}
         for k in range(4):
@@ -909,7 +915,6 @@ def _as_fraction(value):
 
 
 def _assert_degree7(name, control, resonant, orthogonal_cols, ortho_sign):
-    resonant7 = [0, 0, 0, -128, -128, 0, 0, -128, -128, 0, 0, 0, 0, 128, 0, 128, 0, 0, 0, 0, 128, 0, 128, 0]
     ortho3 = [0, 32, 32, 0, 0, 0, 0, 0, 0, 32, 32, 0, 0, -32, 0, -32, 0, 0, 0, 0, -32, 0, -32, 0]
     ortho5 = [
         0, sp.Rational(16, 3), sp.Rational(16, 3), 8, 8, 0,
@@ -924,14 +929,10 @@ def _assert_degree7(name, control, resonant, orthogonal_cols, ortho_sign):
         0, sp.Rational(14, 3), sp.Rational(-74, 15), sp.Rational(14, 3), sp.Rational(-74, 15), 0,
     ]
     for direction in range(24):
-        if any(control[direction][deg] != 0 for deg in range(7)):
-            raise AssertionError("%s control below degree 7" % name)
-        if control[direction][7] != resonant7[direction]:
-            raise AssertionError("%s control degree 7" % name)
-        if any(resonant[direction][deg] != 0 for deg in range(7)):
-            raise AssertionError("%s resonant below degree 7" % name)
-        if resonant[direction][7] != resonant7[direction]:
-            raise AssertionError("%s resonant degree 7" % name)
+        if any(control[direction][deg] != 0 for deg in range(8)):
+            raise AssertionError("%s resonant control through degree 7" % name)
+        if any(resonant[direction][deg] != 0 for deg in range(8)):
+            raise AssertionError("%s resonant through degree 7" % name)
         for deg, expected in ((3, ortho3), (5, ortho5), (7, ortho7)):
             got = orthogonal_cols[direction][deg]
             want = ortho_sign * _as_fraction(expected[direction])
@@ -985,6 +986,45 @@ def _degree3_fourier_ranks(dress, minus, zero_corr, c6, probe_weight):
         raise AssertionError("degree-3 joint image %s %s" % (joint_rank, augmented))
     print("PASS_DEGREE3_ORTHOGONAL_NOT_IN_IMAGE", flush=True)
     return ranks, joint_rank, augmented
+
+
+def _degree3_left_coker(name, dress, r_minus, r_zero, probe_weight, expected_pairing):
+    """Verify an exact left-null obstruction against all four cubic carriers."""
+    blank = sp.zeros(24, 1)
+    allowed_weights = {
+        "zero": [1, 1, 1, 1],
+        "minus": [1, -1, 1, -1],
+        "resonant": list(dress),
+        "orthogonal": list(probe_weight),
+    }
+    # The exact left covector is (1,1,1,0,...,0).
+    directions = (0, 1, 2)
+    base = _degree7_channel(
+        dress, r_minus, r_zero, blank, blank, probe_weight, None,
+        max_degree=3, directions=directions,
+    )
+    pairing = sum(base[row][3] for row in range(len(directions)))
+    if pairing != expected_pairing:
+        raise AssertionError("%s degree-3 coker pairing: %s" % (name, pairing))
+    for channel, carried in allowed_weights.items():
+        for column in range(24):
+            correction = sp.zeros(24, 1)
+            correction[column] = 1
+            changed = _degree7_channel(
+                dress, r_minus, r_zero, blank, blank, probe_weight, None,
+                c_three=correction, max_degree=3,
+                correction_weight=carried, directions=directions,
+            )
+            delta_pairing = sum(
+                changed[row][3] - base[row][3]
+                for row in range(len(directions))
+            )
+            if delta_pairing != 0:
+                raise AssertionError(
+                    "%s degree-3 left-null fails on %s correction %d: %s"
+                    % (name, channel, column, delta_pairing)
+                )
+    print("PASS_DEGREE3_LEFT_COKER", name, "pairing", pairing, flush=True)
 
 
 def _degree7_only():
@@ -1452,12 +1492,14 @@ for _name, _dress, _sign in (
     _res7 = _degree7_channel(_dress, _rm, _rz, _c6m, _c6z, _dress, "%s_RESONANT" % _name)
     _ort7 = _degree7_channel(_dress, _rm, _rz, _c6m, _c6z, _ortho, "%s_ORTHOGONAL" % _name)
     _assert_degree7(_name, _ctl7, _res7, _ort7, 1 if _name == "COS" else -1)
-    _degree3_fourier_ranks(_dress, _rm, _rz, _c6m, _ortho)
+    _degree3_left_coker(
+        _name, _dress, _rm, _rz, _ortho, 64 if _name == "COS" else -64,
+    )
 
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
 print("CONJUGATE_EQ_IS_CONJUGATE", True)
-print("REAL_RAY_RESONANT_DEGREE7", [-128, 128])
+print("REAL_RAY_RESONANT_THROUGH_DEGREE", 7)
 print("BLOCKED: J2-DIAGONAL-INVISIBLE-ORTHOGONAL-DEGREE-3-EULER-OUTSIDE-LINK-IMAGE")
-print("MISSING: none at degree 3; the orthogonal Euler is outside the link-correction image")
+print("MISSING: orthogonal degree-3 Euler pairs to 64 with e0+e1+e2 and no degree-3 correction moves that pairing")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")
