@@ -2,7 +2,8 @@
 
 **Task:** `WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN`  
 **Status:** exact finite construction  
-**Terminal:** `D0-V16-MOVING-SPLIT-CHANNEL-SIGN-CERTIFIED`
+**Terminal:** `D0-V16-MOVING-SPLIT-CHANNEL-SIGN-CERTIFIED`  
+**Execution baseline:** `5f6435eaaa93d42fb1956cb33b4badf3ceff0a1b`
 
 ## 1. Why the construction must use history
 
