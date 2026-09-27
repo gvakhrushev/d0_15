@@ -77,7 +77,57 @@ G_N^{D0}=\frac{c^3(\ell_P^{D0})^2}{\hbar}.
 
 Granting this entire gravity metrology chain does not add an independent scale. It also does not select a particular remnant state.
 
-## 4. Rank-one factorization lemma
+## 4. Internal freeze of \(R_\ast\)
+
+The no-go is not allowed to hide behind an unfrozen capacity parameter.
+
+The concrete Lean owner D0.Synthesis.SceneTraceHeatCapacity supplies a proper saturated co-vertex region on the frozen \(K(9,11,13)\) scene:
+
+\[
+\operatorname{BoundaryCutWeight}(S_{\rm cv})=20,
+\]
+
+hence
+
+\[
+C(\partial S_{\rm cv})=\frac{20}{4}=5.
+\]
+
+The region is the complement of one vertex in the 33-vertex scene, so
+
+\[
+|S_{\rm cv}|=32.
+\]
+
+Freeze the capacity-density ratio
+
+\[
+\boxed{
+R_\ast^{\rm cv}
+:=
+\frac{C(\partial S_{\rm cv})}{|S_{\rm cv}|}
+=
+\frac{5}{32}.
+}
+\]
+
+This is entirely internal: no PBH mass, cosmological age, survey value, LIGO event or laboratory datum enters. It is a declared finite saturated-seam witness, not a fitted remnant parameter.
+
+The corresponding internal depth is therefore
+
+\[
+\boxed{
+n_\ast^{\rm cv}
+=
+\frac{\log(1+5/32)}{\log\varphi}
+=
+\frac{\log(37/32)}{\log\varphi}.
+}
+\]
+
+Nothing in the no-go below depends on choosing a different \(R_\ast\): the point is stronger. Even after one internal \(R_\ast\) is frozen explicitly, the absolute mass selector and Bondi clock remain absent.
+
+## 5. Rank-one factorization lemma
 
 Let
 
@@ -129,7 +179,7 @@ Examples of available dimensionless multipliers are \(\varphi\), \(1+R_\ast\), o
 
 The certificate gives an exact finite witness of this non-uniqueness.
 
-## 5. Time side: internal depth is not Bondi time
+## 6. Time side: internal depth is not Bondi time
 
 The synthesis already owns the internal capacity depth
 
@@ -165,7 +215,7 @@ b_{\rm Bondi}(x)>0,
 
 It may later be related to \(n_\ast\), but that relation is exactly the missing theorem.
 
-## 6. Mass side: boundary capacity is not closure-density mass
+## 7. Mass side: boundary capacity is not closure-density mass
 
 Book 07 keeps two distinct objects.
 
@@ -212,7 +262,7 @@ M_0=\frac{\Lambda_{\rm act}}{c^2}\mu_{\rm BH}
 
 be a typed D0 mass section.
 
-## 7. Why the existing Planck/Newton bridge does not close the gap
+## 8. Why the existing Planck/Newton bridge does not close the gap
 
 Grant the full existing chain
 
@@ -240,7 +290,7 @@ Those are semantic morphisms. They are not a second dimensional anchor, but they
 
 Thus "D0 has \(\ell_P\) and \(G_N\)" does not imply "this seam has a unique \(M_0\)."
 
-## 8. Why the external lifetime law cannot be used as the selector
+## 9. Why the external lifetime law cannot be used as the selector
 
 The external remnant relation
 
@@ -263,7 +313,7 @@ That makes the external envelope define the D0 section and violates the task's h
 
 Therefore Bianchi may test a completed section but cannot choose it.
 
-## 9. Structural no-go theorem
+## 10. Structural no-go theorem
 
 Define the unaugmented source type
 
@@ -298,7 +348,7 @@ in the current unaugmented object set.
 
 This is a structural no-go for the current source type, not a claim that no extension can ever close the bridge.
 
-## 10. Minimal augmentation that would reopen the positive branch
+## 11. Minimal augmentation that would reopen the positive branch
 
 No second scale is required. The smallest missing structure is two dimensionless typed morphisms:
 
@@ -326,7 +376,7 @@ Then the only scale-compatible section is
 
 The future proof obligation is therefore sharply smaller than "derive a lifetime": construct and uniquely own these two dimensionless morphisms, including the observer/medium split functor.
 
-## 11. Status consequences
+## 12. Status consequences
 
 - ONE-TICK-BALANCE-LEMMA: owned by merged exact certificate.
 - CHANNEL-SIGN-ON-HISTORY: owned by merged exact finite construction.
