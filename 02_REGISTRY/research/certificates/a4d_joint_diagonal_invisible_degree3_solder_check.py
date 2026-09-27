@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# D0_CI_TIMEOUT_SECONDS=900
 """Solder response of the degree-3 orthogonal connection Euler.
 
 The link correction does not contain this Euler. In the Gram chart
