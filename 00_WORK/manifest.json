@@ -19,7 +19,7 @@
       "id": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "class": "CONTROL",
       "parent": "ROOT",
-      "state": "IN_PROGRESS",
+      "state": "REVIEW",
       "affected_claims": [],
       "exit_condition": "The current resolved-affine research frontier is integrated as a durable program, next EXPENSIVE tasks and Lean WORKER tasks are registered with explicit dependencies/collision fences, stale completed control tracking is retired, and launch-ready workers have isolated execution briefs.",
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
