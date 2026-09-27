@@ -23,7 +23,10 @@ PR #240 is open research at head `8b3c93af328d94f3bf43d27a843d4b767a0c4c95`. Its
 On the flat center, with the source held at vacuum, the real conjugate-pair path of \(q_0=dd^T\) splits by character.
 
 - Mode B, \(z=(-1,1,-1,1)\). The identity connection is an exact joint vacuum for every real amplitude. The metric Euler is identically zero. Both Einstein symbols \(- \tfrac12 G(d)\) and \(- \tfrac12 G(\arg z)\) vanish.
-- Mode A, \(z=(i,i,-i,-i)\). The identity connection kills the order-\(\varepsilon\) connection Euler and fails at order \(\varepsilon^2\). The failure lives at character \((-1,-1,-1,-1)\) and has a unique rational solution. That solution is silent in the metric Euler. Through order \(\varepsilon^2\), with remainder \(O(\varepsilon^3)\), the continued sheet has \(E_Q=0\). This agrees with \(-\tfrac12 G(d)=0\) and disagrees with \(-\tfrac12 G(\arg z)\), whose complex amplitude is \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\).
+- Mode A, \(z=(i,i,-i,-i)\). The identity connection kills the order-\(\varepsilon\) connection Euler and fails at order \(\varepsilon^2\). The failure lives at character \((-1,-1,-1,-1)\) and has a unique rational solution. That solution is silent in the metric Euler. Through order \(\varepsilon^2\), with remainder \(O(\varepsilon^3)\), the continued sheet has \(E_Q=0\). This agrees with \(-\tfrac12 G(d)=0\). It disagrees with \(-\tfrac12 G(\arg z)\). The complex amplitude of \(G\) itself is \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\), so
+\[
+-\tfrac12 G(q_0;\arg z)=(-\pi^2/2,\ \pi^2,\ 0,0,-\pi^2/2,\ 0,0,0,0,0).
+\]
 
 This is not a physical no-go and does not close PR #240.
 
@@ -122,7 +125,15 @@ The continuum tensor of the same trigonometric polynomial, evaluated at momentum
 G^{\rm coord}(q_0;\arg z)=(\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0),
 \]
 
-and the conjugate momentum reproduces the same real vector. The brief field's linear response is \(2\cos\phi\) times that vector. It is not identically zero. The discrete jet does not match it at order \(\varepsilon\).
+and the conjugate momentum reproduces the same real vector. The brief field is twice the real part of \(q_0\chi\), so its linearized Einstein tensor is \(2\cos\phi\, G^{\rm coord}\). The designated comparison is half of that with the opposite sign,
+
+\[
+-\tfrac12 G^{\rm coord}(\text{brief field})
+=
+-\cos\phi\,(\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0).
+\]
+
+It is not identically zero. The discrete jet is zero at order \(\varepsilon\), so the two differ by this cosine wave.
 
 That mismatch is not a joint-critical counterexample. The discrete Euler equations hold through the stated order with the vacuum source left fixed. The continuum operator at \(\arg z\) is not the discrete Euler, and #216 identifies \(-\tfrac12 G\) with the discrete response only in the slow limit where \(d\) and \(\arg z\) become proportional. They are not proportional on mode A.
 
@@ -134,6 +145,7 @@ That mismatch is not a joint-critical counterexample. The discrete Euler equatio
 4. **Back-reaction of \(p_2\) at order \(\varepsilon^2\).** Counted in §4. It starts at \(\varepsilon^3\) in the connection Euler and at \(\varepsilon^3\) in the metric Euler.
 5. **Calling the \(\arg z\) mismatch a no-go.** Refused in §5. Both discrete Euler equations and the fixed vacuum source are satisfied through the computed order; the mismatched tensor is not the discrete equation.
 6. **Using the shear witness as a flat continuation.** Its flat Hessian image is nonzero, so the branch it spans does not stay connection-stationary on this sheet. The optical mode-B sheet does.
+7. **Calling the unhalved Einstein vector \(-\tfrac12 G\).** The tuple \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\) is \(G^{\rm coord}\). The designated half is \((-\pi^2/2,\pi^2,0,0,-\pi^2/2,0,0,0,0,0)\) on the complex amplitude, and \(-\cos\phi\) times the unhalved tuple on the brief field. The zero pattern is unchanged.
 
 ## 7. What remains
 
