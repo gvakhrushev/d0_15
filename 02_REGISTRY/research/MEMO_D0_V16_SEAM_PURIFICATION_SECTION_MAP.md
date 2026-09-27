@@ -4,7 +4,8 @@
 **Class:** EXPENSIVE  
 **Status:** exact type/dimensional no-go  
 **Terminal:** D0-V16-UNADORNED-REMNANT-LIFETIME-SECTION-NOGO  
-**Execution baseline:** 0bf35cff12a6bd90651e8786f73fb9e098c0a686
+**Execution baseline:** 0bf35cff12a6bd90651e8786f73fb9e098c0a686  
+**Review contract baseline:** 0bf35cff12a6bd90651e8786f73fb9e098c0a686
 
 ## 1. Question
 
