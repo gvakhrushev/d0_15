@@ -119,3 +119,38 @@ They do not change the current user request, repository control plane, or task
 gates. Only the exact results on merged owner branches are accepted inputs.
 The PR #240 and #275 statuses above are live metadata checked during intake;
 refresh them before dispatch because they can change.
+
+
+## CONTROL synthesis update — Veronese complex / crossing program
+
+The mechanism-level owner for the next phase is
+[A4D_VERONESE_KERNEL_COMPLEX_AND_CROSSING_PROGRAM.md](A4D_VERONESE_KERNEL_COMPLEX_AND_CROSSING_PROGRAM.md).
+
+This update changes the research organization, not the already certified
+terminals:
+
+- #270 is read as the exact complex \(P_d\to C(d)\), with metric homology
+  \(\ker C/\operatorname{im}P\) zero wherever its rank/kernel theorem applies.
+- #278 retires frozen/cross-carrier detune residuals as stress evidence:
+  same-carrier moving-germ forcing is absorbed exactly.
+- #279 remains an exact joint-defect census but is not a divisor
+  classification without a carrier-transfer theorem.
+- #240's shear witness remains a joint-response witness; its identification
+  with divisor homology is an open theorem.
+- #260/#275 remain a separate connection-only/N0 sector.
+
+The next mechanism theorem is not another orbit census. It is the exact
+determinantal rank/homology stratification of \(C(d)\), followed by a typed
+joint-defect transfer, chamber-envelope theorem, and crossing theorem.
+
+Do not promote \(\bigcup_r\{d_r=0\}\) to the rank-jump divisor before that
+exact stratification is certified.
+
+The synthesis memo also records the exact unit-torus half-angle identity
+\[
+d_r=-2i\,e^{-i\theta_r/2}\sin(\theta_r/2).
+\]
+Use it only as an algebraic/nodal reparameterization at present: the two
+half-angle sign changes cancel, so \(d_r\) and \(q_0=dd^T\) remain
+single-valued on the original torus. Spinor and Kerr--Schild language is
+interpretive until separate null/representation theorems are certified.
