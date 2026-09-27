@@ -80,6 +80,10 @@ C(z) q_null(z) = 0.
 The coefficientwise #292 audit establishes the polynomial identity before
 the Laurent substitution; it does not rerun the #270 rank or kernel proof.
 At `z=(1,1,1,1)`, `d=q_0=0`, so this does not supply a nonzero infrared germ.
+The owned coefficient map is `C(d)=d_0C_0+d_1C_1+d_2C_2+d_3C_3` over `Q`,
+with no constant or higher-degree terms. The exact check contracts its four
+coefficient matrices against all 20 cubic monomials and verifies the Laurent
+substitution; it is not the separate J2 census operator also named `HAQ`.
 Differentiating the identity in any character direction
 `D_j=z_j∂_(z_j)` gives
 
