@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: BLOCKED. Global (NF) is refuted. The period-2 shear witness is not joint-critical: its amplitude is killed at order \(u^5\), no root-of-unity envelope revives it, and the slow amplitude \(U=h^{1/2}v(hx)\) has leading resonant equation \(S\cdot\nabla v=432 v^3\) whose only bounded solution is \(v=0\) (§8.21). The normalized gap of that solution is 0. Neither final terminal is claimed. The single missing identity is the normalized response of the #232 microstructure on the nonconstant background of #241, which belongs to draft PR #275.
+Status: BLOCKED. Global (NF) is refuted. The period-2 shear witness is not joint-critical: its amplitude is killed at order \(u^5\), no root-of-unity envelope revives it, and the slow amplitude \(U=h^{1/2}v(hx)\) has leading resonant equation \(S\cdot\nabla v=432 v^3\) whose only bounded solution is \(v=0\) (§8.21). The normalized gap of that solution is 0. The shear-channel partial terminal is `SHEAR-PERIOD-2-SLOW-ENVELOPE-KILLS-AMPLITUDE-GAP-ZERO`. Neither final terminal is claimed. The single missing identity is the normalized response of the #232 microstructure on the nonconstant background of #241, owned by draft PR #275 after the degree-6 correction on draft PR #260.
 
 Synthesis update:
 [Moving germ and stationary-sheet response](MEMO_A4D_RESPONSE_STATIONARY_SHEET_SYNTHESIS.md)
@@ -1069,6 +1069,14 @@ reproduced \(-432\) and the constant slope \(-2160\), gave the same order-\(3\)
 row; the checker truncates at order \(3\) because \(\xi\) does not enter that
 row. This is one frozen shear profile, not the #232 microstructure.
 
+\[
+\boxed{\texttt{SHEAR-PERIOD-2-SLOW-ENVELOPE-KILLS-AMPLITUDE-GAP-ZERO}}
+\]
+
+This name is a partial terminal for the shear channel only. It is not
+`A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED` and not
+`A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO`.
+
 ### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
@@ -1118,7 +1126,7 @@ The following routes have been decided:
 | Rational \(a\) on \(S(a)=I+a(E_{01}+E_{12})\), whole L=4 grid | Nonzero moment only at \(a=\pm 1\), character \((-1,1,-1,1)\) (§8.19) |
 | Flat linear Schur complement versus the Einstein symbol | Direct identity \(K_{\mathrm{Schur}}=-\frac12 K_{G^{(1)}}\), only where the connection block is invertible (§8.18) |
 | Root-of-unity envelope of the pure period-2 shear jet | Absent. Fourier support is \(\{1,(-1,1,-1,1)\}\) (§8.20) |
-| Slow amplitude on the shear witness | Killed. Leading balance \(S\cdot\nabla v=432 v^3\) has only the bounded solution \(v=0\); normalized gap \(0\) (§8.21) |
+| Slow amplitude on the shear witness | Partial terminal `SHEAR-PERIOD-2-SLOW-ENVELOPE-KILLS-AMPLITUDE-GAP-ZERO`. Bounded solution \(v=0\); normalized gap \(0\) (§8.21). Not a global CLOSED or NOGO |
 | Next order of the #232 \(Y\) carrier on the slow background | Delegated to `WRK-A4D-Y-SLOW-JOINT-CONTINUATION` (draft PR #275); not recomputed here |
 | Joint-critical replacement for (NF) on the whole smooth image | MISSING. Single blocker: normalized #232 response on the #241 background |
 | Strong connection compactness or uniqueness | Not used or requested |
@@ -1169,7 +1177,9 @@ include that #232 microstructure.
 The single missing identity is the normalized response
 \(h^{-2}\Delta E_Q\) of the #232 \(Y\)-microstructure on the #241 background
 \(Q_h=\eta+h\alpha+h^2 x_0\beta\), at \(z_h=h\), for a solution of both Euler
-equations. That computation is not done here. Neither
+equations. That computation is not done here. Its present gate is the
+degree-6 even correction of the corrected real rays on draft PR #260;
+#275 consumes that result and does not get a parallel germ. Neither
 A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED nor
 A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
 
