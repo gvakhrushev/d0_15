@@ -478,23 +478,39 @@ The ten quadratic moments in the order \((00,01,02,03,11,12,13,22,23,33)\) are
 
 In particular \(v^*D_QH_Q(z)[q_{11}]v=-2\). The same character is jointly invertible at the flat solder, so this kernel is created by the shear. Because \(z^2=(1,1,1,1)\), the quadratic self-interaction of this carrier lands in the zero-frequency channel. This is a finite failure of (NF). It is not a smooth-background NOGO.
 
-### 8.4 Quadratic continuation of this carrier
+### 8.4 Period-2 Lyapunov–Schmidt step
 
-The character is self-inverse and \(z^2\) is the zero frequency, so a translation by \(e_0\) sends the real ray \(u v\) to \(-u v\). On a constant solder the action is therefore even in \(u\). Odd reduced equations vanish.
+The real carrier is the period-2 field \(\sigma(x)=(-1)^{x_0+x_2}\). Translation by \(e_0\) flips \(\sigma\) and sends the amplitude \(u\) to \(-u\). On a constant solder the action is even, so the reduced connection equation is odd and the metric Euler is even.
 
-The zero-frequency connection symbol on this shear is invertible (rank 24). A quadratic action is diagonal in characters, so the resonant ray does not source that block. A zero-mode correction created by a cubic vertex is \(O(u^2)\) and enters the on-shell metric Euler only at \(O(u^4)\).
-
-The leading metric Euler is the Gram derivative of \(S=\tfrac12 A^{\mathsf T}H(Q)A\) along \(A=uv\). It equals \(u^2/2\) times the moment vector:
+Quadratic sampling of two copies of this character is spatially constant, because
+\(\sigma(x)\sigma(x+a)=(-1)^{a_0+a_2}\). The first connection correction is therefore a constant, zero-frequency link shift \(u^2\zeta\). On the period-2 cell the literal plaquette Euler of the pure ray, summed over all 16 sites and all 24 constant generator directions, has vanishing orders \(u^0\) and \(u^1\) and integer order-\(u^2\) source
 
 \[
-E_Q^{(2)}=(0,0,0,0,-u^2,0,0,0,0,0).
+s=(0,24,16,-24,-16,0,\ -8,0,-24,16,-8,-16,\ 0,-24,-16,24,16,0,\ 0,0,0,0,0,0).
 \]
 
-Vacuum, \(\tau=0\), forces \(u=0\). The carrier cannot enter a joint-vacuum branch.
+The same summed Euler, linearized in a constant shift, is an invertible \(24\times 24\) matrix. Its solution is
 
-The constant source frozen from the component order already written in §3, before this moment was used to choose a slot, is \(\tau=e_{00}\). Its \(00\)-component is not matched by \(E_Q^{(2)}\), so that predeclared source has no quadratic joint branch either. A source supported only on \(q_{11}\) would solve the quadratic metric equation, but selecting it after seeing the moment would be post hoc; it is not used.
+\[
+\begin{aligned}
+\zeta_0&=\tfrac12(-1,1,1,1,1,0),\\
+\zeta_1&=0,\\
+\zeta_2&=\tfrac12(-1,-2,-1,-2,-1,0),\\
+\zeta_3&=(-2,-1,1,-1,1,-2).
+\end{aligned}
+\]
 
-On this constant background the Einstein tensor vanishes, and the identity connection has \(E_Q=0\). That is the #216 smooth comparator at this order. No exact joint-critical sequence with the declared source/comparator contract is produced here, so the metric-response NOGO is not claimed.
+After this elimination the order-\(u^2\) connection Euler is identically zero. The order-\(u^2\) metric Euler on the cell does not move. In the ten-component order it remains
+
+\[
+E_Q^{(2)}=u^2(0,0,0,0,-16,0,0,0,0,0).
+\]
+
+The pure ray without \(\zeta\) has the same metric jet. Solving \(E_K\) at this order does not cancel the \(q_{11}\) defect.
+
+Vacuum \(\tau=0\) therefore forces \(u=0\). The constant source frozen from the component order already written in §3 is \(\tau=e_{00}\). Its \(00\)-slot is unmatched, so that predeclared source has no quadratic joint branch either. A source supported only on \(q_{11}\) would fit this jet, but it was not fixed in advance and is not used.
+
+On this constant background the identity connection has vanishing curvature, hence \(E_Q=0\), and the Einstein tensor of a constant metric vanishes. That is the #216 comparator at this order. No joint-critical sequence with a nonzero normalized gap is obtained. The metric-response NOGO stays unclaimed. The exact obstruction is the surviving cell equation \(E_Q[q_{11}]=-16u^2\).
 
 It does not establish (NF) on the continuous unit torus away from this finite
 grid, nor at every Gram in the compact chart. The conditional homogenization
