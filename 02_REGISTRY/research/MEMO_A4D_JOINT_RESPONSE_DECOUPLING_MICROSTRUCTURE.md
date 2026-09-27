@@ -200,8 +200,8 @@ precise remaining condition, and validation.
 
 ## 7. Conditional compensated response theorem (proved reduction)
 
-This section replaces the provisional reduction in Section 4 by a
-self-contained implication. It uses no external homogenization theorem.
+This section proves the implication summarized in Section 4. The argument
+is self-contained and uses no external homogenization theorem.
 
 ### 7.1 Frozen operators and the single algebraic condition
 
@@ -408,7 +408,29 @@ character, correlations across general resonant sets, or amplitudes larger
 than O(h). The localization theorem accounts for these first two issues
 only if (NF) is established on their entire possible frequency support.
 
+### 8.1 Amplitude boundary
+
+The O(h) log-link bound in Section 7 is essential to this quadratic proof:
+it makes the normalized cubic remainder O(h). For larger amplitudes merely
+tending to zero, h^-2 ||A_h||_infinity^3 need not vanish; additional moments
+may survive. The exact flat #232 identity still holds at those amplitudes,
+but this proof does not extend it to a varying background.
+
 ## 9. Kill-first audit and current exact frontier
+
+**Abstract hostile control; not a D0 action or counterexample.** Smooth
+prescribed sources, weak mean zero and a regular zero-phase connection block
+do not make (NF) automatic. On a periodic scalar lattice take
+B=T_0+T_0^-1 and the test functional
+S(q,a)=(1/2) sum_x [(Ba)_x^2+q_x a_x^2]. At q=0, its connection Hessian has
+H(1)=4 and H(i)=0. For a_h=h sigma(sum x_r mod 4) with
+sigma=(1,1,-1,-1), B a_h=0 and sigma^2=1. Thus
+E_a=0 and E_q=h^2/2 exactly, with the prescribed smooth normalized source
+tau=1/2. The smooth comparator a^sm=0 has zero response, so the normalized
+response gap is 1/2. Here C=0 and D_q H=1 on the resonant kernel, violating
+(NF). This checks the logical role of the missing identity and does not
+modify the naked star or certify its NOGO.
+
 
 The following routes have been decided:
 
