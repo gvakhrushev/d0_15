@@ -25,3 +25,9 @@ Current gravity packets:
 - `MEMO_A4D_PATH_RESOLVED_MATTER_WORD_ACTION.md` — terminal fixed-N audit: horizontal exterior path action is constructive, but bare words are not closed under vertical background action; the next primitive is a crossed constitutive representation over the path-expression/CAR algebra.
 - `ROADMAP_A4D_RELATIONAL_REFINEMENT_SYNTHESIS.md` — truth-repaired three-tower/two-seam synthesis: fixed-level endpoint overlap in Role-phase geometry versus the separate golden/Role-phase inter-level weld.
 - `MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD.md` — terminal inter-level audit: golden trace/scale is owned internally to Tower C; a defect-bearing RG residual interface is available, but no canonical Tower-C→Tower-B carrier/operator weld is selected.
+- `A4D_ELIN_ESP_EXECUTABLE_OWNER.md` — exact executable recovery of the two-dimensional Lorentz E-LIN response family and deterministic purely spatial `E_sp` owner; no #262/#265 fitting.
+
+## Pending control intake
+
+- `A4D_FUGU_V5_OPERATOR_AUDIT.md` — classifies the supplied fixed-vector rank table against the exact moving-null transport owner in #270; no new response owner is claimed.
+- `D0_OPERATIONAL_CUT_AND_RECORD_RESEARCH.md` — proposed finite state/cut/operation/record study, registered as `WRK-D0-OPERATIONAL-CUT-PROTOCOL-PAIR`; it is not a measurement-theory result.
