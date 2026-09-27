@@ -261,3 +261,23 @@ until the common reduced action and its mixed-partial consistency are known.
 A reported exact projected second-order envelope coefficient \(35/2\) is
 recorded there as awaiting a durable certificate. It is not owner truth merely
 because it appears in this synthesis.
+
+
+## Topology correction after v8 audit
+
+The durable topology audit is
+[A4D_KERNEL_LINE_TOPOLOGY_AUDIT.md](A4D_KERNEL_LINE_TOPOLOGY_AUDIT.md).
+
+Merged #270 already proves rank C=9 for EVERY d != 0, with no exceptional
+nonzero rank-drop stratum. Therefore the coordinate loci d_r=0 with some
+other d_s nonzero are not a discriminant of C: the kernel line extends across
+them and remains spanned by q_0=dd^T.
+
+Consequently the earlier candidate programme "determinantal stratification of
+C along union{d_r=0}" is retired as unnecessary/incorrect. The only metric
+kernel degeneration of C is d=0 itself.
+
+The next stratification problem must be typed on an EXTENDED joint/physical
+operator or nonlinear stationary solution space, not on C alone. Likewise,
+line-bundle triviality gives c_1=0 but does not by itself imply flat physical
+connection, zero Berry curvature, unique response, or stress monodromy.
