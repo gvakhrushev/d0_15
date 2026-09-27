@@ -1,36 +1,9 @@
 #!/usr/bin/env python3
-"""The joint-critical replacement for (NF) is obstructed at linear order.
+"""Linear joint-kernel bookkeeping for the two finite NF defects.
 
-Memo section 9 names the single missing identity: a joint-critical replacement
-for (NF), meaning every amplitude admitted by
-
-    E_K = 0        and        E_Q = h^2 tau
-
-at every character and solder must have vanishing tested moment.  This
-certificate asks the prior question first: does such an amplitude exist at
-all on the resonant joint kernel, already at the order where the connection
-equation is linear?
-
-The first step is bookkeeping, not a theorem: a kernel direction b of
-J = [H ; C] satisfies H b = 0 BY CONSTRUCTION, so the linear part of the
-connection equation is automatically satisfied on the whole joint kernel. The
-obstruction cannot live at order u.
-
-It lives one order later.  On a single kernel direction the connection Euler
-expands as
-
-    E_K(u b) = u^2 * S,      S the quadratic self-interaction,
-
-and the metric Euler as
-
-    E_Q(u b) = u * 0 + u^2 * M(b),   M(b) the content-one response moment.
-
-A joint-critical amplitude therefore needs S = 0.  The order-u^5 certificate
-of this branch already computes S: on both defect carriers the witness
-projection of the order-u^5 connection Euler is -432, a nonzero multiple of the
-normalised amplitude, so S != 0 and u^2 S = 0 forces u = 0.  This certificate
-makes the bookkeeping explicit and records that the two obstructions are
-distinct, rather than asserting a new linear-order no-go that is false.
+This file checks H b = C b = 0 on the joint kernel. It computes no nonlinear
+Euler coefficient and proves no amplitude cutoff. The separate period-two
+order-five certificates must retain their actual order and ansatz scope.
 """
 from __future__ import annotations
 
@@ -101,23 +74,11 @@ def main() -> None:
 
     print()
     print("RESULT: the joint kernel satisfies the order-u connection equation")
-    print("  automatically, since it lies in ker H by construction.  The")
-    print("  obstruction is therefore NOT at linear order.")
-    print()
-    print("  The obstruction is the quadratic self-interaction S.  The order-u^5")
-    print("  certificate of this branch already certifies S != 0 on both defect")
-    print("  carriers: the witness projection is -432, a nonzero multiple of")
-    print("  the normalised amplitude, so u^2 S = 0 forces u = 0.")
-    print()
-    print("CONSEQUENCE: a joint-critical amplitude cannot start on these two")
-    print("  carriers, and the reason is the quadratic term, not the linear")
-    print("  one.  No claim is made here about other characters or solders.")
-    print("TERMINAL: JOINT-CRITICAL-OBSTRUCTION-IS-QUADRATIC-NOT-LINEAR")
-    print("BOUNDARY: an accessibility statement about the exact joint kernels")
-    print("  of the two certified defect carriers.  It is NOT a")
-    print("  smooth-background metric-response NOGO: no joint-critical sequence")
-    print("  is produced, no #216 comparator gap is computed, and no response")
-    print("  terminal is claimed.")
+    print("  automatically, since it lies in ker H by construction.")
+    print("TERMINAL: JOINT-KERNEL-LINEAR-EULER-IDENTITY")
+    print("BOUNDARY: no nonlinear Euler coefficient is computed in this file.")
+    print("  In particular an order-u^5 obstruction is not a quadratic one.")
+    print("  See the separate certificates for their precise period-two scope.")
 
 
 if __name__ == "__main__":
