@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Independently reconstruct the finite signature-preserving signed-hypercubic degree-two metric-response constrained space from the E-LIN axioms, certify dimension 2, identify the E_eta ray, and publish a normalized executable coefficient/symbol owner for the complementary E_sp ray without using #262 data as an input.",
       "brief": "00_WORK/tasks/WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER.md"
-    },
-    {
-      "id": "WRK-A4D-SCHUR-EINSTEIN-DIRECT-IDENTIFICATION",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Independently reconstruct the standard flat linearized Einstein symbol on the repository's ten symmetric metric coordinates and prove or refute exact equality with the leading finite-star Schur complement, including Bianchi/gauge-kernel and characteristic-rank hostile controls, without importing E_eta as the identification step.",
-      "brief": "00_WORK/tasks/WRK-A4D-SCHUR-EINSTEIN-DIRECT-IDENTIFICATION.md"
     }
   ]
 }
