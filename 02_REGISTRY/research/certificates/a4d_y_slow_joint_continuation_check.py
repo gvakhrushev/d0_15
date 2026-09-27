@@ -19,12 +19,12 @@ microstructure amplitude z.  This checker:
 6. constructs an exact next range correction for the h^3 forcing and proves
    that its metric response cancels the complete #259 h^3 slope response.
 
-This is a primary-scaling continuation theorem.  It does not solve the
-nonlinear slow-background equations on the residual N0 sector; that is the
-remaining bridge to the degree-5 real-ray problem in #260.
+This checker owns the finite Taylor and mixed-cross matrices, including the
+joint reduction 8 -> 3. The separate a4d_y_slow_exact_plane_check.py proves
+an all-order Y branch; neither checker classifies the whole residual N0.
 
-Terminal:
-J2-Y-SLOW-PRIMARY-SCALING-RANGE-RESPONSE-REDUCES-TO-N0
+Partial terminal of this matrix calculation:
+J2-Y-SLOW-N0-JOINT-CROSS-REDUCES-8-TO-3
 """
 from __future__ import annotations
 
@@ -58,16 +58,11 @@ z, h, x0 = owner.z, owner.h, owner.x0
 D = 3 * z**2 + 4
 
 labels = [(p, r, g) for p in range(4) for r in range(4) for g in range(6)]
-forcing2: dict[tuple[int, int, int], sp.Expr] = {}
-for p in range(4):
-    site = (p, 0, 0, 0)
-    for role in range(4):
-        for gi, gen in enumerate(owner.GENERATORS):
-            value = owner.edge_euler(site, role, gen, owner.wave, owner.solder)
-            series = sp.series(sp.together(value), h, 0, 3).removeO()
-            c2 = sp.factor(series.coeff(h, 2))
-            if c2 != 0:
-                forcing2[(p, role, gi)] = c2
+from a4d_y_slow_jet_algebra import fixed_h2_forcing, mixed_cross_maps
+
+# The owner links are polynomial through h^2; compute in the exact quotient
+# ring before multiplication, rather than constructing and discarding h^28.
+forcing2 = fixed_h2_forcing(owner)
 
 expected_forcing2 = {
     (1, 0, 0): z**2 * (z - 2) / D**2,
@@ -438,20 +433,10 @@ def _slow_n0_edge_euler(column, site, role, generator):
     return sp.together(result)
 
 
-cross_h3 = sp.zeros(96, 8)
-for column in range(8):
-    no_h2 = True
-    for oi, (p, role, gi) in enumerate(labels):
-        value = _slow_n0_edge_euler(column, (p, 0, 0, 0), role, SGEN[gi])
-        linear = sp.diff(value, aa).subs(aa, 0)
-        series = sp.series(sp.together(linear), h, 0, 4).removeO()
-        expanded = sp.expand(series)
-        # N0 is an exact flat kernel: an h^2 amplitude must have no order-h^2
-        # Euler before the O(h) background is inserted.
-        no_h2 &= sp.simplify(expanded.coeff(h, 2)) == 0
-        cross_h3[oi, column] = sp.factor(expanded.coeff(h, 3))
-    check("N0_CROSS_COL_%d_NO_H2" % column, no_h2)
-    print("N0_CROSS_PROGRESS", column, flush=True)
+cross_h3, metric_cross_h3 = mixed_cross_maps(owner, n0)
+# The amplitude is a*h^2; its absent h^2 Euler is independently certified
+# above by L2*N0real=M2*N0real=0. The h^3 term is the h*a coefficient.
+check("N0_CROSS_SHAPES", cross_h3.shape == (96, 8) and metric_cross_h3.shape == (40, 8))
 
 rank_cross = rank_L
 L2sp = sp.Matrix(L2.tolist())
@@ -517,22 +502,23 @@ def _slow_n0_metric_euler(column, site, qa, qb):
     return sp.together(total)
 
 
-metric_cross_h3 = sp.zeros(40, 8)
-for column in range(8):
-    no_h2_metric = True
-    for p in range(4):
-        site = (p, 0, 0, 0)
-        for qi, (qa, qb) in enumerate(owner.SYM):
-            value = _slow_n0_metric_euler(column, site, qa, qb)
-            linear = sp.diff(value, aa).subs(aa, 0)
-            series = sp.series(sp.together(linear), h, 0, 4).removeO()
-            expanded = sp.expand(series)
-            no_h2_metric &= sp.simplify(expanded.coeff(h, 2)) == 0
-            metric_cross_h3[10 * p + qi, column] = sp.factor(
-                expanded.coeff(h, 3)
-            )
-    check("N0_METRIC_CROSS_COL_%d_NO_H2" % column, no_h2_metric)
-    print("N0_METRIC_CROSS_PROGRESS", column, flush=True)
+
+# Independent direct-rational spot checks retain the original nontruncated
+# plaquette expression as a control for the faster quotient-ring arithmetic.
+for column in (0, 1, 4, 5):
+    row = next(i for i in range(96) if cross_h3[i, column] != 0)
+    p, role, gi = labels[row]
+    value = _slow_n0_edge_euler(column, (p, 0, 0, 0), role, SGEN[gi])
+    direct = sp.expand(sp.series(sp.diff(value, aa).subs(aa, 0), h, 0, 4).removeO())
+    check("DIRECT_CONNECTION_CROSS_%d" % column,
+          direct.coeff(h, 2) == 0 and sp.factor(direct.coeff(h, 3)-cross_h3[row, column]) == 0)
+    row = next(i for i in range(40) if metric_cross_h3[i, column] != 0)
+    p, qi = divmod(row, 10)
+    qa, qb = owner.SYM[qi]
+    value = _slow_n0_metric_euler(column, (p, 0, 0, 0), qa, qb)
+    direct = sp.expand(sp.series(sp.diff(value, aa).subs(aa, 0), h, 0, 4).removeO())
+    check("DIRECT_METRIC_CROSS_%d" % column,
+          direct.coeff(h, 2) == 0 and sp.factor(direct.coeff(h, 3)-metric_cross_h3[row, column]) == 0)
 
 M2sp = sp.Matrix(M2.tolist())
 joint_stack = sp.Matrix.vstack(L2sp, M2sp)
@@ -613,3 +599,41 @@ print(
 )
 print("N0_SELECTED_RAY: COS survives; SIN is obstructed at the joint h^3 cross gate.")
 print("PARTIAL: J2-Y-SLOW-N0-JOINT-CROSS-REDUCES-8-TO-3")
+
+# Durable full matrices and canonical image witnesses, with byte-exact freshness.
+import json
+import sys
+
+def matrix_rows(matrix):
+    return [[str(value) for value in row] for row in sp.Matrix(matrix).tolist()]
+
+ledger = {
+    "schema": 1,
+    "normalization": "L2=2L0; M2=2M0; B3 and metric_B3 are undoubled",
+    "connection_rows": labels,
+    "metric_rows": [(p,a,b) for p in range(4) for a,b in owner.SYM],
+    "columns": ["lambda1_COS", "lambda1_SIN", "lambda3_COS", "lambda3_SIN",
+                "lambda4_COS", "lambda4_SIN", "lambda6_COS", "lambda6_SIN"],
+    "L2": matrix_rows(L2sp), "M2": matrix_rows(M2sp),
+    "B3": matrix_rows(cross_h3), "metric_B3": matrix_rows(metric_cross_h3),
+    "P": matrix_rows(left_matrix), "PB3": matrix_rows(projected_cross),
+    "ker_PB3": matrix_rows(sp.eye(8)),
+    "joint_survivors": matrix_rows(survivors),
+    "joint_correction": matrix_rows(survivor_solution),
+    "ranks": {"L0": 80, "M0_stacked_L0": 88, "PB3": 0,
+              "joint_augmented": 93, "joint_obstruction": 5,
+              "B3": cross_h3.rank(), "P": left_matrix.rank(),
+              "metric_B3": metric_cross_h3.rank()},
+    "verdict": "J2-Y-SLOW-N0-JOINT-CROSS-REDUCES-8-TO-3",
+}
+# Connection-only image witnesses on all eight directions.
+connection_solution, parameters = L2sp.gauss_jordan_solve(-2*cross_h3)
+connection_solution = connection_solution.subs({p: 0 for p in parameters.free_symbols})
+check("N0_CONNECTION_IMAGE_WITNESSES", L2sp*connection_solution+2*cross_h3 == sp.zeros(96,8))
+ledger["connection_correction"] = matrix_rows(connection_solution)
+artifact = HERE / "a4d_y_slow_joint_cross_matrices.json"
+encoded = json.dumps(ledger, indent=2, sort_keys=True) + "\n"
+if "--write" in sys.argv:
+    artifact.write_text(encoded)
+else:
+    check("CROSS_MATRIX_ARTIFACT_FRESH", artifact.read_text() == encoded)

@@ -1,7 +1,7 @@
 # A4D Y slow joint continuation
 
 **Task:** \`WRK-A4D-Y-SLOW-JOINT-CONTINUATION\`  
-**Lifecycle:** IN_PROGRESS
+**Lifecycle:** REVIEW
 **Research lane:** \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`
 
 ## 0. Exact branch terminal
@@ -323,8 +323,12 @@ in z. With `D=4+3z^2`, the certificate checks
 
 The derivative in `b`, at leading order in `z`, is `(K2-K3)/2`.
 Thus `b=h^2 x0`, `z=h` recovers exactly the #275 slope correction
-`h^3 x0 (K2-K3)/2`, with its opposite at phase 2. Higher coefficients are
-specified by the rational formula, rather than left as a formal jet.
+`h^3 x0 (K2-K3)/2`, with its opposite at phase 2. More precisely, the
+full difference from the #259 truncated lift at phase 0 is
+`h^3 [x0 (K2-K3)/2 - Y/4] + O(h^4)`; the additional `-Y/4` is the allowed
+homogeneous, jointly invisible Y direction. The certificate checks the whole
+jet, not merely its slope part. Higher coefficients are specified by the
+rational formula, rather than left as a formal jet.
 
 For `|h|,|b| <= 1/4`, the difference plane is spacelike, `S` is nondegenerate,
 and `k>2`; in particular `4+kt^2 >= 4` for real amplitudes. One way to see the
@@ -510,3 +514,39 @@ the other surviving N0 directions; full #260 isolation; the unrelated #202
 finite Euler problem. In particular the selected COS roles-2/3 direction
 survives the linear cross gate but is not declared nonlinearly continued by
 this formula.
+
+### Reproducible mixed-operator ledger
+
+`certificates/a4d_y_slow_joint_cross_matrices.json` contains the full numeric
+`2L0`, `2M0`, undoubled `B3`, metric `B3`, `P`, `PB3`, input/output orderings,
+all eight connection image witnesses and all three joint image witnesses.
+The connection projection has rank zero (all eight directions remain in its
+range); the stacked metric condition has obstruction rank five. The zero
+connection projection is not misreported as joint solvability.
+
+The checker recomputes and compares the ledger byte-for-byte by default;
+`--write` is an explicit regeneration mode. To avoid expanding unused powers
+through h^28, `a4d_y_slow_jet_algebra.py` performs exact arithmetic in
+`Q(z,x0)[h]/(h^3)` for the #259 next forcing and in `Z[h,a]/(h^2,a^2)` for the
+mixed map. In the latter, `a` represents the independent amplitude multiplying
+`h^2`; thus its `h*a` coefficient is exactly the desired total-order h^3.
+The #259 correction begins at h^2 on z=h and the next range correction at h^3,
+so their products with that amplitude start at h^4 and h^5 respectively and
+cannot alter B3. Four COS/SIN columns retain direct full rational plaquette
+checks of a nonzero connection and metric entry as independent controls.
+
+
+### Validation and source pins
+
+The inherited mixed-map input is PR #275 head
+`1dc1e9e543cb41555d570f65ad472e3c7dbf8a99`; the final branch is refreshed onto
+main `25f4796c` (merged #305). The owned #259 script is re-executed, not
+replaced by printed expected results. The new plane certificate, full legacy
+forcing/rank calculation, mixed-map direct controls, and all image-witness
+identities pass. The ledger has rank B3=8, rank metric_B3=7, rank P=16,
+rank PB3=0; the joint augmented rank is 93 over a base rank of 88.
+
+Repository, active-work, agent-protocol, generated-view, formalization-debt,
+claim-strength, and certificate-freshness guards pass locally. No Lean source
+is changed by this task and no new Lean theorem is claimed. Merge/acceptance
+remains CONTROL's action; the mathematical terminal has the scope above.

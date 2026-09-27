@@ -169,6 +169,14 @@ def main():
     # b=h^2*x0, z=h: the first slope correction is h^3*x0*(K2-K3)/2.
     slope = reduced(linv(flat)*exact.diff(b).subs({h: 0, b: 0}))
     check('EXACT_275_H3_SLOPE', reduced(slope.diff(z).subs(z, 0) - (GEN[1]-GEN[2])/2) == sp.zeros(4))
+    x0 = sp.symbols('x0', real=True)
+    fixed_order_lift = flat*(I4+h*corr0+h*h*corr0*corr0/2)
+    difference = exact.subs(b, h*h*x0)-fixed_order_lift
+    total_jet = difference.subs(z,h).applyfunc(
+        lambda value: sp.expand(sp.series(value,h,0,4).removeO()))
+    Yseed = GEN[3]-GEN[4]+GEN[5]
+    check('FULL_H3_LIFT_MATCH_MOD_HOMOGENEOUS_Y',
+          reduced(total_jet-h**3*(x0*(GEN[1]-GEN[2])/2-Yseed/4)) == sp.zeros(4))
     # Hostile control: keep the old flat plane on the altered coframe.
     flat_wave = [flat, I4, linv(flat), I4]
     frozen_link = lambda x, r: flat_wave[sum(x) % 4] if r == 0 else I4
@@ -179,6 +187,35 @@ def main():
     bad_link = lambda x, r: bad_wave[sum(x) % 4] if r == 0 else I4
     bad_values = [edge_euler(solder, bad_link, (0, 1, 0, 0), 1, g) for g in GEN]
     check('MISSING_RECIPROCAL_PHASE_DETECTED', any(value != 0 for value in bad_values))
+    # A nonconstant rational internal frame tests the actual neighbour order
+    # g_n W_p g_(n+1)^-1, in addition to the universal proof by covariance.
+    from functools import lru_cache
+
+    @lru_cache(None)
+    def frame(n):
+        return cayley_simple(GEN[0], -1, sp.Rational(n + 2, 7))
+
+    def base_solder(x):
+        result = sp.eye(4)
+        result[1, 0] = sp.Rational(x[0], 5)
+        return result
+
+    Y = GEN[3] - GEN[4] + GEN[5]
+    Utest = cayley_simple(Y, 3, sp.Rational(1, 3))
+    test_wave = [Utest, I4, linv(Utest), I4]
+
+    def framed_link(x, role):
+        if role != 0:
+            return I4
+        return frame(x[0])*test_wave[sum(x) % 4]*linv(frame(x[0]+1))
+
+    framed_solder = lambda x: frame(x[0])*base_solder(x)
+    for p in range(4):
+        site = (0, p, 0, 0)
+        check(f'FRAME_NEIGHBOURS_{p}_SOLDER', solder_euler(framed_solder, framed_link, site) == sp.zeros(4))
+        check(f'FRAME_NEIGHBOURS_{p}_CONNECTION', all(
+            edge_euler(framed_solder, framed_link, site, role, generator) == 0
+            for role in range(4) for generator in GEN))
     # Exact Gram completion for the truly varying metric Q_h. H is constant;
     # b=b(x0) may vary freely. No linear-coframe truncation is called exact Q.
     H = sp.Matrix([[1, -h, 0], [-h, 1, 0], [0, 0, 1]])
