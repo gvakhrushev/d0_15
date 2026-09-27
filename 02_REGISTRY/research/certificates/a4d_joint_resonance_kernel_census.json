@@ -664,6 +664,143 @@
    }
   ]
  },
+ "physical_real_carrier": [
+  {
+   "orbit": 0,
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "rank_H_AA": 22,
+   "rank_A_aux_symmetrized": 8,
+   "rank_A_real": 44,
+   "rank_C_real": 18,
+   "rank_H_J_real": 56,
+   "nullity_real": 12
+  },
+  {
+   "orbit": 1,
+   "ids": [
+    0,
+    0,
+    1,
+    3
+   ],
+   "rank_H_AA": 22,
+   "rank_A_aux_symmetrized": 16,
+   "rank_A_real": 44,
+   "rank_C_real": 18,
+   "rank_H_J_real": 62,
+   "nullity_real": 6
+  },
+  {
+   "orbit": 2,
+   "ids": [
+    0,
+    1,
+    1,
+    2
+   ],
+   "rank_H_AA": 20,
+   "rank_A_aux_symmetrized": 12,
+   "rank_A_real": 40,
+   "rank_C_real": 18,
+   "rank_H_J_real": 60,
+   "nullity_real": 8
+  },
+  {
+   "orbit": 3,
+   "ids": [
+    1,
+    0,
+    1,
+    2
+   ],
+   "rank_H_AA": 20,
+   "rank_A_aux_symmetrized": 12,
+   "rank_A_real": 40,
+   "rank_C_real": 18,
+   "rank_H_J_real": 60,
+   "nullity_real": 8
+  },
+  {
+   "orbit": 4,
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "rank_H_AA": 16,
+   "rank_A_aux_symmetrized": 0,
+   "rank_A_real": 32,
+   "rank_C_real": 18,
+   "rank_H_J_real": 48,
+   "nullity_real": 20
+  },
+  {
+   "orbit": 5,
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "rank_H_AA": 20,
+   "rank_A_aux_symmetrized": 16,
+   "rank_A_real": 40,
+   "rank_C_real": 18,
+   "rank_H_J_real": 64,
+   "nullity_real": 4
+  },
+  {
+   "orbit": 6,
+   "ids": [
+    2,
+    0,
+    1,
+    1
+   ],
+   "rank_H_AA": 20,
+   "rank_A_aux_symmetrized": 12,
+   "rank_A_real": 40,
+   "rank_C_real": 18,
+   "rank_H_J_real": 60,
+   "nullity_real": 8
+  },
+  {
+   "orbit": 7,
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "rank_H_AA": 22,
+   "rank_A_aux_symmetrized": 20,
+   "rank_A_real": 44,
+   "rank_C_real": 18,
+   "rank_H_J_real": 64,
+   "nullity_real": 4
+  },
+  {
+   "orbit": 8,
+   "ids": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "rank_H_AA": 22,
+   "rank_A_aux_symmetrized": 24,
+   "rank_A_real": 44,
+   "rank_C_real": 18,
+   "rank_H_J_real": 62,
+   "nullity_real": 6
+  }
+ ],
  "eq_cokernel": {
   "0": [
    "0",

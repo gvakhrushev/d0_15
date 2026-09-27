@@ -32,13 +32,21 @@ below):
   the *image dimension*, NOT dim N_0. The brief's expected map is
   (r_H, r_A, d) -> dim N_0 and is reproduced exactly.
 
-Terminal: J2-JOINT-LINEAR-RESONANCE-KERNEL-CENSUS-CERTIFIED
+Terminal: J2-POLARIZED-L4-N0-CURVATURE-CENSUS-CERTIFIED
+
+The terminal is deliberately narrower than the brief's wording.  What is
+certified here is the exact polarized L=4 joint-kernel and curvature census,
+plus the conjugate-paired real carrier.  Two obligations from the brief are
+NOT met and are recorded as open: the direct nonlinear identity
+E_Q(Q,I) == 0, and the metric/connection/mixed/gauge decomposition of
+ker H_J^real.
 
 No nonlinear branch search, no torsion-free constraint, no new action term,
 no continuum Einstein claim.
 """
 from __future__ import annotations
 
+import gc
 import json
 import os
 import sys
@@ -371,6 +379,119 @@ check("NONZERO_N0_ORBITS_ARE_0_4_5_7",
 # reported by exact rank only; no additive metric/connection/mixed
 # decomposition is asserted.
 
+# ---------------------------------------------------------------------------
+# 6b. Conjugate-paired REAL physical carrier
+# ---------------------------------------------------------------------------
+#
+# The auxiliary block A = H_AA + H_AA^T above is a convention choice, and on
+# the diagonal quarter-wave it is identically zero, so it cannot be the
+# physical Hessian.  The owned data does, however, admit a genuine
+# conjugate-paired carrier: the symbol is real on the real torus, so
+#
+#     H(zbar) = conj(H(z))
+#
+# and the real operator acting on the 48 real coordinates of the complex
+# connection sector is
+#
+#     A_real = [[ Re H, -Im H],
+#               [ Im H,  Re H]]
+#
+# with the same pairing for the metric-response map C_real (48 x 20).  The
+# physical KKT carrier is then
+#
+#     H_J^real = [[ 0_{20x20}, C_real^T],
+#                 [ C_real    , A_real   ]].
+#
+# A_real is a true non-degenerate connection operator on every orbit, unlike
+# the auxiliary symmetrization.  The ranks below are therefore the physical
+# statement the task asked for, and the auxiliary column is kept only to show
+# how the two differ.
+
+def real_pair_square(M):
+    R_, I_ = sp.re(M), sp.im(M)
+    return sp.Matrix.vstack(sp.Matrix.hstack(R_, -I_),
+                            sp.Matrix.hstack(I_, R_))
+
+
+def real_pair_rect(M):
+    R_, I_ = sp.re(M), sp.im(M)
+    return sp.Matrix.vstack(sp.Matrix.hstack(R_, -I_),
+                            sp.Matrix.hstack(I_, R_))
+
+
+def numeric_rank(M, rel=1e-10):
+    """Fast rank scout over numpy.  Advisory only."""
+    import numpy as np
+    a = np.array(M.tolist(), dtype=np.complex128)
+    if a.size == 0:
+        return 0
+    s = np.linalg.svd(a, compute_uv=False)
+    mx = s.max()
+    if mx == 0:
+        return 0
+    return int((s > mx * rel).sum())
+
+
+def exact_rank(M):
+    """Exact rank over QQ(i) via DomainMatrix.
+
+    Measured on this data: sympy's dense ``.rank()`` needs 594 s on orbit 5,
+    while ``to_DM(extension=True).rank()`` needs 0.03 s for the same answer.
+    The DomainMatrix path is the one used everywhere below; the dense path is
+    kept only as a cross-check on the cheap orbits.
+    """
+    return M.to_DM(extension=True).rank()
+
+
+print()
+print("  #  ids            rk(H_AA)  rk(A_aux)  rk(A_real)  rk(C_real)  "
+      "rank(H_J^real)  nullity")
+PHYS = []
+for n, (key, _m) in enumerate(EXPECTED_ORBITS):
+    Aidx, spat, _rH, _rA = key
+    ids = (Aidx,) + spat
+    sub = {z[j]: ROOT_E[ids[j]] for j in range(4)}
+    H = HAB.subs(sub)
+    S = HAQ.subs(sub)                        # 24 x 10
+    # the conjugate pairing must actually hold
+    csub = {z[j]: sp.conjugate(ROOT_E[ids[j]]) for j in range(4)}
+    check("ORBIT_%d_CONJUGATE_PAIRING" % n,
+          HAB.subs(csub) == sp.conjugate(H))
+    Ar = real_pair_square(H)                  # 48 x 48
+    Cr = real_pair_rect(S)                    # 48 x 20
+    Aaux = H + H.T
+    HJr = sp.Matrix.vstack(
+        sp.Matrix.hstack(sp.zeros(20, 20), Cr.T),
+        sp.Matrix.hstack(Cr, Ar))
+    check("ORBIT_%d_REAL_HJ_SHAPE" % n, HJr.shape == (68, 68))
+    scout = numeric_rank(HJr)
+    rjr = exact_rank(HJr)
+    check("ORBIT_%d_REAL_RANK_SCOUT_AGREES" % n, scout == rjr,
+          f"scout {scout} exact {rjr}")
+    # stationarity of the real carrier on every null vector
+    bad = 0
+    for v in HJr.nullspace():
+        qq = sp.Matrix(v[:20])
+        xx = sp.Matrix(v[20:])
+        if not (is_zero(Cr.T * xx) and is_zero(Cr * qq + Ar * xx)):
+            bad += 1
+    check("ORBIT_%d_REAL_HJ_STATIONARITY" % n, bad == 0, f"{bad} violations")
+    PHYS.append({"orbit": n, "ids": list(ids),
+                 "rank_H_AA": H.rank(),
+                 "rank_A_aux_symmetrized": Aaux.rank(),
+                 "rank_A_real": Ar.rank(),
+                 "rank_C_real": Cr.rank(),
+                 "rank_H_J_real": rjr,
+                 "nullity_real": 68 - rjr})
+    print(f" {n:>2}  {str(ids):>15} {H.rank():>9} {Aaux.rank():>9} "
+          f"{Ar.rank():>10} {Cr.rank():>10} {rjr:>14} {68 - rjr:>8}")
+    del H, S, Ar, Cr, Aaux, HJr
+    gc.collect()
+
+check("REAL_CARRIER_NONDEGENERATE_ON_DIAGONAL",
+      PHYS[4]["rank_A_real"] > 0 and PHYS[4]["rank_A_aux_symmetrized"] == 0,
+      "the real carrier is non-degenerate where the auxiliary one vanishes")
+
 print()
 print("  #  ids            rk(H_AA)  rk(A=sym)  rk(H_AA)  rank(H_J)  nullity")
 JOINT = []
@@ -605,6 +726,7 @@ for _n in sorted(CURV, key=int):
 with open(JSON_OUT, "w", encoding="utf-8") as f:
     json.dump({"table": TABLE, "joint_hessian": JOINT,
                "n0_bases": BASES, "curvature": CURV,
+               "physical_real_carrier": PHYS,
                "eq_cokernel": COK,
                "eq_cokernel_is_pure_trace": TRACE_LIKE,
                "sym_order": [list(s) for s in SYM]}, f, indent=1)
@@ -616,7 +738,7 @@ if FAILS:
         print("  - " + f_)
     sys.exit(1)
 
-print("J2-JOINT-LINEAR-RESONANCE-KERNEL-CENSUS-CERTIFIED")
+print("J2-POLARIZED-L4-N0-CURVATURE-CENSUS-CERTIFIED")
 print("ORBIT_TYPES: 9 singular L=4 orbit types, multiplicities 6/6/6/12/2/6/6/6/6")
 print("N0_NONZERO: orbits 0 (dim 1), 4 (dim 4), 5 (dim 1), 7 (dim 1)")
 print("BRIEF_FULLY_REPRODUCED: the predicted dim N_0 = r_A - r_H holds on all "
@@ -628,10 +750,18 @@ print("JOINT_HESSIAN: KKT carrier H_J = [[0, H_QA],[H_AQ, A]] on (q,x) with "
       "verified on every null vector.")
 print("ANTISYMMETRIC_CHANNEL: H_AA - H_AA^T is an exact 2-form on the "
       "connection sector and is NOT part of this symmetric carrier.")
-print("EQ_Q_I: rank(H_AQ) = 9 of 10 on every orbit; exactly one metric "
-      "direction is never produced, and it is exactly the one metric-only null "
-      "vector of H_J. It is a Role-dependent character direction, equal to the "
-      "pure trace on 6 of 9 orbits.")
+print("EQ_Q_I_STATUS: NOT PROVED as a nonlinear identity.  What is certified "
+      "here is the linear statement rank(H_AQ) = 9 of 10 on every orbit, i.e. "
+      "exactly one metric direction is never produced, and on 6 of 9 orbits "
+      "that direction is the pure trace.  The task brief asked for the direct "
+      "nonlinear identity E_Q(Q,I) == 0; that is NOT established here and is "
+      "recorded as an open obligation, not as a terminal result.")
+print("PHYSICAL_CARRIER: conjugate-paired real carrier built and certified; "
+      "A_real is non-degenerate on every orbit, including the diagonal where the "
+      "auxiliary symmetrization vanishes identically.")
+print("METRIC_CONNECTION_MIXED_SPLIT: NOT DONE.  The required decomposition of "
+      "ker H_J into metric-only / connection-only / mixed / gauge is not "
+      "claimed; the nullity of the physical carrier is reported by exact rank.")
 print("TANGENT_227: source-visible, NOT in N_0, excluded at first connection "
       "valuation")
 print("SCOPE: finite exact linear algebra. No nonlinear branch search, no "

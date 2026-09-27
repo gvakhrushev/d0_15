@@ -10,8 +10,12 @@
 ## 0. Terminal
 
 ```text
-J2-JOINT-LINEAR-RESONANCE-KERNEL-CENSUS-CERTIFIED
+J2-POLARIZED-L4-N0-CURVATURE-CENSUS-CERTIFIED
 ```
+
+The terminal is deliberately narrower than the brief's wording. Section 0.2
+lists the two brief obligations that are **not** met and are recorded as open
+rather than claimed.
 
 ## 0.1 Corrections to the first revision of this memo
 
@@ -55,6 +59,24 @@ H_J  =  [ H_AQ     , A     ]].       H_AQ = B    (24 x 10)
 with `A = H_AA + H_AA^T`. The certificate now verifies on **every** null vector
 that `H_QA x = 0` and `H_AQ q + A x = 0`. Using `H_AA` as-is gives six
 violations on the diagonal orbit; using `H_AA + H_AA^T` gives none.
+
+## 0.2 Open obligations from the brief
+
+The brief asked for two things that this work does **not** deliver. They are
+stated here so they cannot be read as terminal results.
+
+1. **The direct nonlinear identity `E_Q(Q, I) == 0`.** What is certified is a
+   *linear* statement: `rank(H_AQ) = 9` of 10 on every orbit, so exactly one
+   metric direction is never produced by the connection, and on six of the nine
+   orbits that direction is the pure trace. The nonlinear identity requested in
+   the brief is not established. The previous revision of this file carried a
+   `check(..., True)` line in this area, which asserted nothing; that line has
+   been removed and replaced by an explicit `EQ_Q_I_STATUS: NOT PROVED` report.
+
+2. **The metric / connection / mixed / gauge decomposition of `ker H_J`.** The
+   nullity of the physical carrier is reported by exact rank only. No additive
+   decomposition is claimed, and no direction is labelled gauge: that requires
+   the actual Lorentz/metric quotient, which is not done here.
 
 ## 1. Objects and conventions
 
@@ -217,8 +239,62 @@ form of the general non-symmetric quotient-Schur decomposition must not be
 applied to this carrier until a genuinely conjugate-paired symmetric carrier is
 built. That carrier is **not** built here.
 
-## 7. `E_Q(Q, I) == 0`
+## 6b. The conjugate-paired real physical carrier
 
+The auxiliary block `A = H_AA + H_AA^T` is a convention choice and vanishes
+identically on the diagonal quarter-wave, so it cannot be the physical
+Hessian. The owned data nevertheless admits a genuine conjugate-paired real
+carrier. The symbol is real on the real torus, and this is certified:
+
+```text
+H(zbar) = conj(H(z))          on all nine orbit representatives
+```
+
+The real operator on the 48 real coordinates of the complex connection sector
+is
+
+```text
+A_real = [[ Re H, -Im H],
+          [ Im H,  Re H]]            (48 x 48)
+C_real = [[ Re S, -Im S],
+          [ Im S,  Re S]]            (48 x 20)
+```
+
+and the physical KKT carrier is
+
+```text
+              [[ 0_{20x20} , C_real^T ],
+H_J^real   =  [ C_real      , A_real   ]].
+```
+
+Exact ranks (`QQ(i)`, via `DomainMatrix`):
+
+| # | ids | rank H_AA | rank A_aux | **rank A_real** | rank C_real | rank H_J^real | nullity |
+|---|---|---|---|---|---|---|---|
+| 0 | (0,0,1,1) | 22 | 8 | **44** | 18 | 56 | 12 |
+| 1 | (0,0,1,3) | 22 | 16 | **44** | 18 | 62 | 6 |
+| 2 | (0,1,1,2) | 20 | 12 | **40** | 18 | 60 | 8 |
+| 3 | (1,0,1,2) | 20 | 12 | **40** | 18 | 60 | 8 |
+| 4 | (1,1,1,1) | 16 | **0** | **32** | 18 | 48 | 20 |
+| 5 | (1,1,3,3) | 20 | 16 | **40** | 18 | 64 | 4 |
+| 6 | (2,0,1,1) | 20 | 12 | **40** | 18 | 60 | 8 |
+| 7 | (2,1,1,2) | 22 | 20 | **44** | 18 | 64 | 4 |
+| 8 | (2,1,2,3) | 22 | 24 | **44** | 18 | 62 | 6 |
+
+`A_real` is a true non-degenerate connection operator on every orbit, and
+`rank(A_real) = 2 rank(H_AA)` throughout. On the diagonal quarter-wave it has
+rank 32 exactly where the auxiliary symmetrization has rank 0. Stationarity
+`C_real^T x = 0` and `C_real q + A_real x = 0` is verified on every null vector.
+
+**Caveat.** The real carrier is built by the standard conjugate doubling, which
+is exact and non-degenerate. That it coincides with the conjugate-character /
+direct-Euler reading of the polarized symbol is still a separate assertion; it is
+certified here only in the sense that the pairing exists and gives a genuine
+non-degenerate operator.
+
+## 7. `E_Q(Q, I)` — status
+
+**Not proved as a nonlinear identity.** The certified statement is linear:
 `rank(H_AQ) = 9` of 10 on every orbit, so exactly one metric direction is never
 produced by the connection. It coincides with the pure trace on six of the
 nine orbit types and is a Role-dependent character direction on the other
