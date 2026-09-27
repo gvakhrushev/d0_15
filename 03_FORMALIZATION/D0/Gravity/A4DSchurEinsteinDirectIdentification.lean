@@ -330,12 +330,12 @@ def einsteinNo2Coeff (out inp m : Fin 10) : ℚ :=
 theorem a0_right_inverse : a0 * a0Inv = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
   ext i j
   fin_cases i <;> fin_cases j <;>
-    norm_num [Matrix.mul_apply, dotProduct, a0, a0Inv, Fin.sum_univ_succ]
+    norm_num [Matrix.mul_apply, dotProduct, a0, a0Inv, Fin.sum_univ_succ] <;> omega
 
 theorem a0_left_inverse : a0Inv * a0 = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
   ext i j
   fin_cases i <;> fin_cases j <;>
-    norm_num [Matrix.mul_apply, dotProduct, a0, a0Inv, Fin.sum_univ_succ]
+    norm_num [Matrix.mul_apply, dotProduct, a0, a0Inv, Fin.sum_univ_succ] <;> omega
 
 theorem schurCoeff_eq_neg_half_einstein :
     ∀ out inp m : Fin 10,
