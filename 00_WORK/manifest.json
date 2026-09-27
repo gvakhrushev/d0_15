@@ -36,17 +36,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
     },
     {
-      "id": "EXP-A4D-Q0-STATIONARY-SHEET-STRESS",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "On the real conjugate-paired metric path induced by q0(z), prove exact response agreement along a continued connection-stationary sheet or compute the first exact stress/continuation obstruction with the source and comparator pinned; make no global response claim.",
-      "brief": "00_WORK/tasks/EXP-A4D-Q0-STATIONARY-SHEET-STRESS.md"
-    },
-    {
       "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",

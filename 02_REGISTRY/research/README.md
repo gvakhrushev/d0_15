@@ -27,6 +27,8 @@ Current gravity packets:
 - `MEMO_A4D_GOLDEN_ROLE_PHASE_REFINEMENT_WELD.md` — terminal inter-level audit: golden trace/scale is owned internally to Tower C; a defect-bearing RG residual interface is available, but no canonical Tower-C→Tower-B carrier/operator weld is selected.
 - `A4D_ELIN_ESP_EXECUTABLE_OWNER.md` — exact executable recovery of the two-dimensional Lorentz E-LIN response family and deterministic purely spatial `E_sp` owner; no #262/#265 fitting.
 
+- `MEMO_A4D_Q0_STATIONARY_SHEET_STRESS.md` — exact two-mode real q0 sheet: mode B is an identity-link joint vacuum; mode A's order-ε² repair is metric-silent and its selected branch stops at an order-ε³ connection obstruction.
+
 ## Pending control intake
 
 - `A4D_FUGU_V5_OPERATOR_AUDIT.md` — classifies the supplied fixed-vector rank table against the exact moving-null transport owner in #270; no new response owner is claimed.
