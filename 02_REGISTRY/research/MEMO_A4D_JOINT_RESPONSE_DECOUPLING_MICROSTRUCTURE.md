@@ -474,8 +474,6 @@ certificates/a4d_joint_response_decoupling_microstructure_check.py.
 - Every linear metric slot at all four phases: PASS.
 - All eight square and 28 cross quadratic mean coefficients: PASS.
 - Alternating pointwise witness and #232 ray guard: PASS.
-- Independent symbolic polynomial expansion in all eight amplitudes: mean zero,
-  with the same nonzero phase witness.
 - The owned #232 exact rational all-edge certificate and #241 mixed-response
   certificate: PASS as narrow input controls; no symbol census is redone.
 
