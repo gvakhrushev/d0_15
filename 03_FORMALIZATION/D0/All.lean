@@ -709,6 +709,7 @@ import D0.Synthesis.SceneSpectralAction
 import D0.Synthesis.SceneTraceHeatCapacity
 import D0.Synthesis.SeamCrossingWeightForced
 import D0.Synthesis.SeamReturnAddressRigidity
+import D0.Synthesis.SeamSectionBoundary
 import D0.Synthesis.SectorFieldIndependence
 import D0.Synthesis.SectorGaloisClosure
 import D0.Synthesis.SymmetricFunctionCalculus

@@ -1,0 +1,265 @@
+{
+ "real_carrier": [
+  {
+   "orbit": 0,
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "rank_A_real": 44,
+   "rank_H_J_real": 56,
+   "rank_A_aux": 8,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 1,
+   "ids": [
+    0,
+    0,
+    1,
+    3
+   ],
+   "rank_A_real": 44,
+   "rank_H_J_real": 62,
+   "rank_A_aux": 16,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 2,
+   "ids": [
+    0,
+    1,
+    1,
+    2
+   ],
+   "rank_A_real": 40,
+   "rank_H_J_real": 60,
+   "rank_A_aux": 12,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 3,
+   "ids": [
+    1,
+    0,
+    1,
+    2
+   ],
+   "rank_A_real": 40,
+   "rank_H_J_real": 60,
+   "rank_A_aux": 12,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 4,
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "rank_A_real": 32,
+   "rank_H_J_real": 48,
+   "rank_A_aux": 0,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 5,
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "rank_A_real": 40,
+   "rank_H_J_real": 64,
+   "rank_A_aux": 16,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 6,
+   "ids": [
+    2,
+    0,
+    1,
+    1
+   ],
+   "rank_A_real": 40,
+   "rank_H_J_real": 60,
+   "rank_A_aux": 12,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 7,
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "rank_A_real": 44,
+   "rank_H_J_real": 64,
+   "rank_A_aux": 20,
+   "rank_invariant_under_chi": true
+  },
+  {
+   "orbit": 8,
+   "ids": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "rank_A_real": 44,
+   "rank_H_J_real": 62,
+   "rank_A_aux": 24,
+   "rank_invariant_under_chi": true
+  }
+ ],
+ "nullspace_split": [
+  {
+   "orbit": 0,
+   "ids": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "nullity": 12,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 10,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 1,
+   "ids": [
+    0,
+    0,
+    1,
+    3
+   ],
+   "nullity": 6,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 4,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 2,
+   "ids": [
+    0,
+    1,
+    1,
+    2
+   ],
+   "nullity": 8,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 6,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 3,
+   "ids": [
+    1,
+    0,
+    1,
+    2
+   ],
+   "nullity": 8,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 6,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 4,
+   "ids": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "nullity": 20,
+   "metric_only": 2,
+   "connection_only": 6,
+   "mixed": 12,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 5,
+   "ids": [
+    1,
+    1,
+    3,
+    3
+   ],
+   "nullity": 4,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 2,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 6,
+   "ids": [
+    2,
+    0,
+    1,
+    1
+   ],
+   "nullity": 8,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 6,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 7,
+   "ids": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "nullity": 4,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 2,
+   "metric_block_dim": 2
+  },
+  {
+   "orbit": 8,
+   "ids": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "nullity": 6,
+   "metric_only": 2,
+   "connection_only": 0,
+   "mixed": 4,
+   "metric_block_dim": 2
+  }
+ ],
+ "gauge_owner": {
+  "module": "D0.Geometry.A4DGaugeImageResolution",
+  "space": "LocalCoframeField 0",
+  "finrank": 256,
+  "gauge_rank": 60,
+  "gauge_codim": 196,
+  "kernel_dim": 4,
+  "period": "N = 0 (L = 2 torus)"
+ },
+ "carrier_here": {
+  "metric": 20,
+  "connection": 48,
+  "total": 68,
+  "period": "L = 4 characters"
+ },
+ "gauge_quotient_computed": null
+}
