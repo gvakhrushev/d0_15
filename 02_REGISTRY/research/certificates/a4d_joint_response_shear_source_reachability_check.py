@@ -1,32 +1,34 @@
 #!/usr/bin/env python3
-"""Reachability of predelared sources by the period-2 shear reduction.
+"""Order-u^2 metric image of the period-2 shear reduction, and source reachability.
 
-The upper-shear joint carrier is the sigma(x)=(-1)^(x0+x2) ray of the
-committed witness.  After the order-u^2 Lyapunov-Schmidt step the 24 constant
-link equations are solved by the free block Z, and the surviving cell metric
-Euler is the reduced map
+At order u^2 the period-2 Lyapunov-Schmidt step of the upper-shear carrier
+solves the 24 constant link equations for a link block Z.  Two exact facts
+decide every source question at this order.
 
-    E_Q^{(2)} : R^24 -> R^10 ,   Z |-> E_Q^{(2)}(Z).
+Fact 1 -- the order-u^2 cell metric jet is CONSTANT in Z.
+    E_Q^{(2)}(Z) = (0,0,0,0,-16,0,0,0,0,0)
+for every Z in R^24.  The derivative vanishes on all 24 basis directions, so
+the image is a single POINT, not a line spanned by e_q11.  There is therefore
+no free 24-dimensional link block for the metric to act on at this order.
 
-This certificate computes that map exactly, its image and its cokernel, and
-then asks the accessibility question with a source frozen BEFORE solving:
+Fact 2 -- the order-u^2 link equation is a fixed NON-ZERO target.
+    E_K^{(2)}(Z) = SOURCE,  SOURCE != 0,
+so the 24 link slots are constrained rather than free, and the committed ZETA
+is its solution.
 
-    is there Z with  E_Q^{(2)}(Z) = -tau  for a predelared nonzero smooth
-    source tau in R^10 ?
+A branch therefore requires the target point to be matched. The source is
+declared BEFORE solving, from the Role/face structure of the carrier and not
+tuned to any observed response:
 
-The source is declared here as the ten-component constant profile
+    TAU  = e_{q_01}  (the pure off-diagonal direction q = (0,1)).
 
-    TAU = (0, 1, 0, 0, 0, 0, 0, 0, 0, 0)  (order q_01),
+Since the image is a single point equal to the q_11 defect and carries no
+q_01 component, no constant link correction can realise this source. Neither
+can the predeclared tau = e_00 of the earlier step. Both misses are exact.
 
-chosen from the Role/face structure of the carrier BEFORE any branch is
-solved.  It is not tuned to the response.  A branch exists only if -TAU lies
-in im E_Q^{(2)}.
-
-The answer here is no, and the reason is structural: the image is a single
-direction, so the nine-dimensional cokernel is unreachable by ANY link
-correction.  That is an accessibility obstruction, not a smooth-background
-NOGO: no joint-critical sequence is produced, so the declared NOGO terminal
-is NOT claimed.
+This is an accessibility obstruction at this order. It is NOT a
+smooth-background metric-response NOGO: no joint-critical sequence is
+produced and the NOGO terminal is not claimed.
 """
 from __future__ import annotations
 
@@ -36,21 +38,20 @@ from pathlib import Path
 import sympy as sp
 
 HERE = Path(__file__).resolve().parent
-ns = runpy.run_path(str(HERE / "a4d_joint_response_shear_reduction_check.py"))
+ns = runpy.run_path(
+    str(HERE / "a4d_joint_response_shear_reduction_check.py"))
 
 SYM = ns["SYM"]
 metric_u2 = ns["metric_u2"]
 euler_jets = ns["euler_jets"]
 ZETA_SOLVED = ns["ZETA"]
+SOURCE = ns["SOURCE"]
 
-# ---------------------------------------------------------------------------
-# The source is declared BEFORE the branch is solved.  It is the pure q_01
-# direction, i.e. a smooth constant off-diagonal metric profile.  It is fixed
-# by the Role/face structure of the carrier, not chosen after seeing any
-# response moment.
-# ---------------------------------------------------------------------------
-TAU = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]      # q = (0,1)
+# Source declared BEFORE solving: the pure q_01 direction, fixed by the
+# carrier's Role/face structure.  Not tuned to any response moment.
+TAU = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
 TAU_LABEL = "(0,1)"
+Q11 = 4          # index of q = (1,1) inside SYM
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -59,69 +60,66 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     print("PASS_" + name, flush=True)
 
 
-def zero_block() -> list:
+def zeros() -> list:
     return [sp.Integer(0)] * 24
 
 
-def reduced_map() -> sp.Matrix:
-    """E_Q^{(2)} : R^24 -> R^10, exactly, column by column."""
-    # metric_u2 returns a flat 10-list; stack one column per basis direction.
-    cols = []
-    for k in range(24):
-        z = zero_block()
-        z[k] = sp.Integer(1)
-        value = metric_u2(z)
-        assert len(value) == 10, f"metric_u2 returned {len(value)} entries"
-        cols.append(sp.Matrix([[value[i]] for i in range(10)]))
-    return sp.Matrix.hstack(*cols)
-
-
 def main() -> None:
-    E2 = reduced_map()
-    check("REDUCED_MAP_SHAPE", E2.shape == (10, 24), str(E2.shape))
-    r = E2.rank()
-    print(f"RESULT_REDUCED_MAP_RANK: {r}", flush=True)
+    point = tuple(metric_u2(zeros()))
 
-    reach, unreach = [], []
-    for i in range(10):
-        (reach if any(x != 0 for x in E2[i, :]) else unreach).append(SYM[i])
-    check("IMAGE_IS_ONE_DIMENSIONAL", r == 1, f"rank {r}")
-    check("REACHABLE_IS_Q11", reach == [(1, 1)], str(reach))
-    check("COKERNEL_DIM_NINE", len(unreach) == 9, str(len(unreach)))
-    print("RESULT_REACHABLE_Q:", reach, flush=True)
-    print("RESULT_COKERNEL_Q:", unreach, flush=True)
+    # Fact 1: the jet is constant in Z.
+    derivative = []
+    for k in range(24):
+        z = zeros()
+        z[k] = sp.Integer(1)
+        v = metric_u2(z)
+        derivative.append(tuple(sp.simplify(v[i] - point[i])
+                               for i in range(10)))
+    check("DERIVATIVE_ZERO_ON_ALL_24_BASIS_DIRECTIONS",
+          all(all(d[i] == 0 for i in range(10)) for d in derivative))
+    samples = [[sp.Integer(k + 1) for k in range(24)],
+               [sp.Integer((k % 7) - 3) for k in range(24)],
+               [sp.Integer(-1) ** k for k in range(24)]]
+    check("JET_CONSTANT_ON_SUPERPOSITIONS",
+          all(tuple(metric_u2(s)) == point for s in samples))
+    check("IMAGE_IS_A_SINGLE_POINT",
+          point == (0, 0, 0, 0, -16, 0, 0, 0, 0, 0), str(list(point)))
+    check("POINT_LIES_ON_Q11", all(point[i] == 0 for i in range(10)
+                                   if i != Q11))
+    print(f"RESULT_METRIC_IMAGE: one point, {point[Q11]} on q_{SYM[Q11]} "
+          f"and 0 elsewhere", flush=True)
 
-    # The predelared source must be unreachable for this certificate to mean
-    # anything.  If TAU landed in the image the branch question would be open.
-    # -TAU is reachable iff it lies in the column space of E_Q^{(2)}.
-    target = (-sp.Matrix(TAU)).T          # the equation is E_Q^{(2)}(Z) = -TAU
-    aug = E2.row_join(target.T)
-    check("PREDECLARED_SOURCE_UNREACHABLE", aug.rank() > E2.rank(),
-          f"rank(E2)={E2.rank()} rank([E2|-TAU])={aug.rank()}")
-    residual = (-target.T).nullspace()
-    check("SOURCE_NOT_IN_NULLSPACE_OF_TRANSPOSE",
-          not residual, "-TAU is in the row space of E_Q^{(2)}")
-
-    # No Z can match -TAU, because -TAU is outside im E_Q^{(2)}.
-    print(f"RESULT_SOURCE: TAU = {TAU} on q = {TAU_LABEL}", flush=True)
-    print("RESULT_BRANCH: no Z solves E_Q^{(2)}(Z) = -TAU", flush=True)
-    print("RESULT_REASON: im E_Q^{(2)} = span(e_q11); the 9-dim cokernel is "
-          "unreachable by every link correction", flush=True)
-
-    # Control: the vacuum solution ZETA_SOLVED is verified to kill the link
-    # equations and to leave exactly the q_11 defect, as already committed.
+    # Fact 2: the link equation has a fixed non-zero target, so the link block
+    # is constrained rather than free.
+    r0 = euler_jets(zeros())
+    check("LINK_TARGET_NONZERO", any(r0[i][2] != 0 for i in range(24)))
+    check("LINK_TARGET_IS_COMMITTED_SOURCE",
+          [sp.Integer(r0[i][2]) for i in range(24)] ==
+          [sp.Integer(v) for v in SOURCE])
     rows = euler_jets(ZETA_SOLVED)
-    check("CONTROL_LINK_EULER_SOLVED", all(row[2] == 0 for row in rows))
-    m_solved = sp.Matrix(metric_u2(ZETA_SOLVED))
-    check("CONTROL_Q11_ONLY", m_solved[4] == -16 and all(
-        m_solved[i] == 0 for i in range(10) if i != 4), str(list(m_solved)))
+    check("CONTROL_SOLVED_ZETA_KILLS_LINK_EULER",
+          all(row[2] == 0 for row in rows))
+    m_solved = tuple(metric_u2(ZETA_SOLVED))
+    check("CONTROL_SOLVED_ZETA_GIVES_THE_SAME_POINT",
+          m_solved == point, str(list(m_solved)))
 
-    print("TERMINAL: SHEAR-SOURCE-UNREACHABLE-OBSTRUCTION-CERTIFIED")
-    print("BOUNDARY: a nine-dimensional cokernel of the order-u^2 reduction.")
-    print("  This is an accessibility obstruction for the declared source on")
-    print("  this carrier, NOT a smooth-background metric-response NOGO: no")
-    print("  joint-critical sequence is produced and the NOGO terminal is not")
-    print("  claimed.")
+    # The predelared source has a q_01 component; the image point has none.
+    q01 = SYM.index((0, 1))
+    check("PREDECLARED_SOURCE_IS_Q01", TAU[q01] == 1 and sum(TAU) == 1)
+    check("IMAGE_HAS_NO_Q01_COMPONENT", point[q01] == 0)
+    check("SOURCE_MISSES_IMAGE",
+          tuple(TAU) != point,
+          f"tau={TAU} point={list(point)}")
+    print(f"RESULT_SOURCE: TAU = {TAU} on q = {TAU_LABEL}", flush=True)
+    print("RESULT_BRANCH: no constant link correction realises this source", flush=True)
+    print("RESULT_REASON: the order-u^2 metric image is a single point on "
+          "q_11, with no q_01 component", flush=True)
+
+    print("TERMINAL: SHEAR-IMAGE-POINT-OBSTRUCTION-CERTIFIED")
+    print("BOUNDARY: order-u^2 truncation, flat-solder shear carrier.")
+    print("  This is an accessibility obstruction at this order, NOT a")
+    print("  smooth-background metric-response NOGO: no joint-critical")
+    print("  sequence is produced and the NOGO terminal is not claimed.")
 
 
 if __name__ == "__main__":

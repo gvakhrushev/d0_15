@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. Global (NF) is refuted by the shear witness, and the period-2 reduction cuts that carrier in vacuum. The flat L=8 census and any non-vacuum accessibility question remain open. Neither final terminal is claimed.
+Status: IN PROGRESS. Global (NF) is refuted by the shear witness. On the period-2 shear carrier the order-\(u^2\) metric jet is the single point \(-16u^2 e_{q_{11}}\), and the connection equation at order \(u^5\) forces the amplitude to vanish. The flat L=8 census remains a finite stress test. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -516,7 +516,7 @@ On this constant background the identity connection has vanishing curvature, hen
 
 With that constant correction kept, the resonant projection of the cell connection Euler vanishes through order \(u^5\). The range does not. The odd sector at order \(u^3\) is nonzero; one recorded component is \(32\). The even sector at order \(u^4\) is nonzero; one recorded component is \(-\tfrac43\). So the ansatz is an exact connection solution only through order \(u^2\).
 
-A link correction of order \(u^3\) or \(u^4\) changes the metric Euler only at order \(u^4\) and higher. It cannot cancel \(-16u^2\). Therefore every constant source with a component outside the \(q_{11}\) line fails the leading joint balance, including vacuum and the predeclared \(\tau=e_{00}\). The line \(\tau\parallel e_{11}\) is the only quadratic opening. It was read off the moment, so it is not used as a predeclared source and is not promoted to a joint-critical sequence.
+A link correction of order \(u^3\) or \(u^4\) changes the metric Euler only at order \(u^4\) and higher. It cannot cancel \(-16u^2\). Therefore every constant source with a component outside the \(q_{11}\) line fails the leading joint balance, including vacuum and the predeclared \(\tau=e_{00}\). The line \(\tau\parallel e_{11}\) is the only quadratic opening. It was read off the moment, so it is not used as a predeclared source. Section 8.7 solves the order-\(u^3\) and order-\(u^4\) range; the resonant projection above was computed before that elimination.
 
 ### 8.5 Flat L=8 census
 
@@ -552,50 +552,50 @@ It does not establish (NF) on the continuous unit torus away from this finite
 grid, nor at every Gram in the compact chart. The conditional homogenization
 argument therefore remains conditional.
 
-### 8.6 Sourced accessibility of the shear carrier
+### 8.7 The metric image is a point, and order \(u^5\) cuts the amplitude
 
-After the order-\(u^2\) Lyapunov-Schmidt step of \S 8.4 the 24 constant link
-equations are solved by a free block \(Z\in\mathbb R^{24}\), and the surviving cell
-metric Euler is the reduced map
-\[
-E_Q^{(2)}:\mathbb R^{24}\longrightarrow\mathbb R^{10},\qquad
-Z\longmapsto E_Q^{(2)}(Z).
-\]
-The certificate `a4d_joint_response_shear_source_reachability_check.py`
-computes this map exactly on all 24 basis directions of the free block.
-
-The structure is exact and one-dimensional:
-
-| quantity | value |
-|---|---|
-| \(\operatorname{rank}E_Q^{(2)}\) | \(1\) |
-| image | \(\operatorname{span}(e_{q_{11}})\) |
-| cokernel | \(9\)-dimensional: \(q_{00},q_{01},q_{02},q_{03},q_{12},q_{13},q_{22},q_{23},q_{33}\) |
-| residual on the solved link block | \(-16u^2\) on \(q_{11}\) alone |
-
-**Source declared before solving.** The source is the pure \(q_{01}\) direction,
-\(\tau=(0,1,0,0,0,0,0,0,0,0)\): a smooth constant off-diagonal metric
-profile, fixed by the Role/face structure of the carrier and not tuned to any
-observed response moment. The branch equation is
-\(E_Q^{(2)}(Z)=-\tau\).
-
-**Result.** No \(Z\) solves it. \(\operatorname{rank}([E_Q^{(2)}\mid-\tau])\)
-strictly exceeds \(\operatorname{rank}E_Q^{(2)}\), so the target lies outside the
-image, and the residual against the transpose has no null vector. The
-obstruction is structural rather than a tuning accident: because the whole
-order-\(u^2\) reduction has rank one, the nine-dimensional cokernel is
-unreachable by **any** link correction.
+The order-\(u^2\) metric jet is affine in a constant link correction. Its
+derivative vanishes on all 24 basis directions and on a mixed direction, so
+the value does not move:
 
 \[
-\boxed{\texttt{SHEAR-SOURCE-UNREACHABLE-OBSTRUCTION-CERTIFIED}}
+E_Q^{(2)}=u^2(0,0,0,0,-16,0,0,0,0,0).
 \]
 
-This is explicitly **not** the smooth-background metric-response NOGO. No
-joint-critical sequence is produced, no \(\#216\) comparator gap is computed,
-and the NOGO terminal is not claimed. The vacuum obstruction of \S 8.4 and
-this sourced obstruction are two separate cuts of the same carrier: the
-vacuum cut is the \(q_{11}\) component, the sourced cut is the entire remaining
-nine-dimensional cokernel.
+The image is that single point. An earlier draft described a free block
+\(Z\) and a rank-one image \(\operatorname{span}(e_{q_{11}})\). That
+description is withdrawn: the connection equation fixes the correction, and
+the metric value is not a line that a correction can travel. Vacuum, the
+predeclared source \(\tau=e_{00}\), and the constant profile \(e_{01}\) all
+miss the point. The certificate is
+`a4d_joint_response_shear_source_reachability_check.py`.
+
+The odd connection linearization at the shear character has rank 20 and a
+four-dimensional kernel. The resonant witness is \(2K_0+K_1\) in that
+kernel, and it also lies in the left kernel. The order-\(u^3\) source is in
+the column space. One witness-orthogonal solution is recorded in
+`a4d_joint_response_shear_order5_check.py`. The order-\(u^4\) constant
+correction is then fixed by the even operator, which has rank 24 and agrees
+with the committed quadratic source on the committed \(\zeta\).
+
+On that solution, and on the same solution plus each of the three
+witness-orthogonal kernel directions, the witness projection of the
+order-\(u^5\) connection Euler equals \(-432\). Because the witness is a
+left-kernel vector, no further odd correction cancels that component. The
+reduced connection equation on this period-2 ansatz is \(-432u^5=0\), so
+\(u=0\). The three kernel moduli do not change the coefficient. This cuts
+every constant metric source on this ansatz, including a profile parallel to
+\(q_{11}\). That profile was read off the quadratic jet and is not used as a
+predeclared source.
+
+The order-\(u^4\) metric jet on these solutions stays supported on \(q_{11}\).
+One kernel direction changes its coefficient, from \(-7040/177\) to
+\(55264/177\). An order-\(u^4\) constant correction does not move that jet.
+None of these changes touches the order-\(u^2\) point.
+
+This is not the smooth-background metric-response NOGO. The connection
+equation removes the amplitude, so there is no nonzero joint-critical
+sequence and no normalized gap against the #216 sheet.
 
 ### 8.2 Amplitude boundary
 
@@ -636,7 +636,8 @@ The following routes have been decided:
 | Frozen diagonal characters at arbitrary solder | (NF) proved analytically |
 | Entire L=4 grid at the flat solder | (NF) exact on all 20 nonzero joint kernels |
 | Global all-background joint-kernel (NF) | **REFUTED** by the exact shear witness in §8.3 |
-| Nonlinear accessibility of NF-defect carriers under predeclared source/comparator | OPEN |
+| Period-2 shear carrier under the joint equations | Connection equation forces \(u=0\) at order \(u^5\); no nonzero joint-critical sequence |
+| Nonlinear accessibility of every other NF-defect carrier, and the #216 gap | OPEN |
 | Strong connection compactness or uniqueness | Not used or requested |
 
 The previous “prove all-phase NF” route is closed: §8.3 gives an exact finite
@@ -644,12 +645,12 @@ counterexample to the algebraic identity. The conditional theorem in §§7.1–7
 therefore remains a valid implication but is not a global closure theorem for
 the naked-star system.
 
-The sharp missing step is now **nonlinear accessibility**. A finite NF-defect
-carrier matters for the requested terminal only if it survives the literal
-joint equations under a source fixed before solving and under the same #216
-smooth-comparator contract. The shear carrier is already cut in vacuum at
-quadratic metric order, and the previously frozen source tau=e_00 is cut as
-well. Other admissible sourced continuations remain to be classified.
+The sharp remaining step is nonlinear accessibility of NF-defect carriers
+other than this period-2 shear ansatz. On the shear ansatz the connection
+equation already forces the amplitude to vanish at order \(u^5\), for every
+constant metric source. A finite NF failure, and this amplitude cut, are not
+the requested NOGO: that still needs a nonzero exact joint-critical sequence
+and a normalized gap against the #216 sheet.
 
 A finite-frequency census may stress-test which resonances satisfy the moment
 identity, but no finite grid can restore a global NF theorem once the shear
