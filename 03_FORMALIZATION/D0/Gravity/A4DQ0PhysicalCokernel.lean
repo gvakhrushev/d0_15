@@ -1,4 +1,4 @@
-import Mathlib.Data.Complex.Basic
+import Mathlib.Algebra.QuadraticAlgebra.Basic
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.Tactic
 
@@ -16,29 +16,34 @@ by an explicit invertible 23x23 submatrix (lower bound) and an exact
 namespace D0.Gravity.A4DQ0PhysicalCokernel
 
 open BigOperators Matrix
-open Complex
-
 noncomputable section
 
-set_option maxHeartbeats 1200000
+/-- Exact Gaussian-rational carrier.  Its generator satisfies ω² = -1. -/
+abbrev QI := QuadraticAlgebra ℚ (-1) 0
 
-def qi (a b : ℚ) : ℂ := (a : ℂ) + (b : ℂ) * Complex.I
+local instance qINegOneNonsquare : Fact (¬ IsSquare (-1 : ℚ)) :=
+  ⟨by
+    intro h
+    have hnonneg : (0 : ℚ) ≤ -1 := h.nonneg
+    norm_num at hnonneg⟩
+
+def qi (a b : ℚ) : QI := ⟨a, b⟩
 
 @[simp] theorem qi_add (a b c d : ℚ) :
     qi a b + qi c d = qi (a + c) (b + d) := by
-  apply Complex.ext <;> norm_num [qi] <;> ring
+  rfl
 
 @[simp] theorem qi_mul (a b c d : ℚ) :
     qi a b * qi c d = qi (a * c - b * d) (a * d + b * c) := by
-  apply Complex.ext <;> norm_num [qi] <;> ring
+  ext <;> simp [qi] <;> ring
 
 @[simp] theorem qi_zero : qi 0 0 = 0 := by
-  apply Complex.ext <;> norm_num [qi]
+  rfl
 
 @[simp] theorem qi_one : qi 1 0 = 1 := by
-  apply Complex.ext <;> norm_num [qi]
+  rfl
 
-def p5 : Matrix (Fin 24) (Fin 34) ℂ := fun i j =>
+def p5 : Matrix (Fin 24) (Fin 34) QI := fun i j =>
   match i.val, j.val with
   | 0, 3 => qi (0) (-1)
   | 0, 4 => qi (0) (-1)
@@ -194,7 +199,7 @@ def p5 : Matrix (Fin 24) (Fin 34) ℂ := fun i j =>
   | 23, 29 => qi ((-1 : ℚ) / 2) ((1 : ℚ) / 2)
   | _, _ => 0
 
-def p7 : Matrix (Fin 24) (Fin 34) ℂ := fun i j =>
+def p7 : Matrix (Fin 24) (Fin 34) QI := fun i j =>
   match i.val, j.val with
   | 0, 3 => qi (0) (1)
   | 0, 15 => qi (-1) (0)
@@ -442,7 +447,7 @@ def cols7 (i : Fin 23) : Fin 34 :=
   | 22 => 25
   | _ => 0
 
-def binv5 : Matrix (Fin 23) (Fin 23) ℂ := fun i j =>
+def binv5 : Matrix (Fin 23) (Fin 23) QI := fun i j =>
   match i.val, j.val with
   | 0, 4 => qi (0) ((1 : ℚ) / 2)
   | 0, 5 => qi ((1 : ℚ) / 4) ((-3 : ℚ) / 4)
@@ -751,7 +756,7 @@ def binv5 : Matrix (Fin 23) (Fin 23) ℂ := fun i j =>
   | 22, 21 => qi ((-1 : ℚ) / 2) ((1 : ℚ) / 2)
   | _, _ => 0
 
-def binv7 : Matrix (Fin 23) (Fin 23) ℂ := fun i j =>
+def binv7 : Matrix (Fin 23) (Fin 23) QI := fun i j =>
   match i.val, j.val with
   | 0, 0 => qi ((-1 : ℚ) / 4) (0)
   | 0, 1 => qi ((-1 : ℚ) / 4) (0)
@@ -1016,7 +1021,7 @@ def binv7 : Matrix (Fin 23) (Fin 23) ℂ := fun i j =>
   | 22, 20 => qi ((-1 : ℚ) / 2) ((1 : ℚ) / 2)
   | _, _ => 0
 
-def reconstruct5 : Matrix (Fin 24) (Fin 23) ℂ := fun i j =>
+def reconstruct5 : Matrix (Fin 24) (Fin 23) QI := fun i j =>
   match i.val, j.val with
   | 0, 0 => qi (1) (0)
   | 1, 1 => qi (1) (0)
@@ -1050,7 +1055,7 @@ def reconstruct5 : Matrix (Fin 24) (Fin 23) ℂ := fun i j =>
   | 23, 22 => qi (1) (0)
   | _, _ => 0
 
-def reconstruct7 : Matrix (Fin 24) (Fin 23) ℂ := fun i j =>
+def reconstruct7 : Matrix (Fin 24) (Fin 23) QI := fun i j =>
   match i.val, j.val with
   | 0, 0 => qi (1) (0)
   | 1, 1 => qi (1) (0)
@@ -1084,7 +1089,7 @@ def reconstruct7 : Matrix (Fin 24) (Fin 23) ℂ := fun i j =>
   | 23, 22 => qi (1) (0)
   | _, _ => 0
 
-def ell5 (i : Fin 24) : ℂ :=
+def ell5 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (-1) (1)
   | 6 => qi (-1) (1)
@@ -1096,7 +1101,7 @@ def ell5 (i : Fin 24) : ℂ :=
   | 21 => qi (1) (0)
   | _ => 0
 
-def ell7 (i : Fin 24) : ℂ :=
+def ell7 (i : Fin 24) : QI :=
   match i.val with
   | 2 => qi (1) (0)
   | 7 => qi (0) (-1)
@@ -1108,7 +1113,7 @@ def ell7 (i : Fin 24) : ℂ :=
   | 20 => qi (1) (0)
   | _ => 0
 
-def cross5_0 (i : Fin 24) : ℂ :=
+def cross5_0 (i : Fin 24) : QI :=
   match i.val with
   | 6 => qi (-2) (0)
   | 7 => qi (0) (1)
@@ -1124,7 +1129,7 @@ def cross5_0 (i : Fin 24) : ℂ :=
   | 22 => qi (1) (0)
   | 23 => qi (0) (-1)
   | _ => 0
-def cross7_0 (i : Fin 24) : ℂ :=
+def cross7_0 (i : Fin 24) : QI :=
   match i.val with
   | 6 => qi (-2) (-1)
   | 7 => qi (0) (1)
@@ -1142,7 +1147,7 @@ def cross7_0 (i : Fin 24) : ℂ :=
   | 22 => qi (-1) (-1)
   | 23 => qi (-1) (-1)
   | _ => 0
-def same5_0 (i : Fin 24) : ℂ :=
+def same5_0 (i : Fin 24) : QI :=
   match i.val with
   | 6 => qi (-2) (0)
   | 7 => qi (0) (-1)
@@ -1158,7 +1163,7 @@ def same5_0 (i : Fin 24) : ℂ :=
   | 22 => qi (1) (0)
   | 23 => qi (0) (1)
   | _ => 0
-def same7_0 (i : Fin 24) : ℂ :=
+def same7_0 (i : Fin 24) : QI :=
   match i.val with
   | 6 => qi (-2) (1)
   | 7 => qi (0) (-1)
@@ -1176,21 +1181,21 @@ def same7_0 (i : Fin 24) : ℂ :=
   | 22 => qi (-1) (1)
   | 23 => qi (-1) (1)
   | _ => 0
-def sameSol5_0 (i : Fin 34) : ℂ :=
+def sameSol5_0 (i : Fin 34) : QI :=
   match i.val with
   | 24 => qi (-2) (-2)
   | 25 => qi (-1) (-1)
   | 26 => qi (1) (-1)
   | 27 => qi (1) (-1)
   | _ => 0
-def sameSol7_0 (i : Fin 34) : ℂ :=
+def sameSol7_0 (i : Fin 34) : QI :=
   match i.val with
   | 24 => qi (4) (0)
   | 25 => qi (1) (-1)
   | 26 => qi (1) (-1)
   | 27 => qi (2) (0)
   | _ => 0
-def cross5_1 (i : Fin 24) : ℂ :=
+def cross5_1 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (2) (0)
   | 1 => qi (0) (-1)
@@ -1208,7 +1213,7 @@ def cross5_1 (i : Fin 24) : ℂ :=
   | 22 => qi (-2) (0)
   | 23 => qi (0) (1)
   | _ => 0
-def cross7_1 (i : Fin 24) : ℂ :=
+def cross7_1 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (-1) (2)
   | 1 => qi (1) (0)
@@ -1225,7 +1230,7 @@ def cross7_1 (i : Fin 24) : ℂ :=
   | 22 => qi (1) (2)
   | 23 => qi (-1) (0)
   | _ => 0
-def same5_1 (i : Fin 24) : ℂ :=
+def same5_1 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (2) (0)
   | 1 => qi (0) (1)
@@ -1243,7 +1248,7 @@ def same5_1 (i : Fin 24) : ℂ :=
   | 22 => qi (-2) (0)
   | 23 => qi (0) (-1)
   | _ => 0
-def same7_1 (i : Fin 24) : ℂ :=
+def same7_1 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (-1) (-2)
   | 1 => qi (1) (0)
@@ -1260,21 +1265,21 @@ def same7_1 (i : Fin 24) : ℂ :=
   | 22 => qi (1) (-2)
   | 23 => qi (-1) (0)
   | _ => 0
-def sameSol5_1 (i : Fin 34) : ℂ :=
+def sameSol5_1 (i : Fin 34) : QI :=
   match i.val with
   | 25 => qi (-1) (-1)
   | 28 => qi (-2) (-2)
   | 29 => qi (1) (-1)
   | 30 => qi (1) (-1)
   | _ => 0
-def sameSol7_1 (i : Fin 34) : ℂ :=
+def sameSol7_1 (i : Fin 34) : QI :=
   match i.val with
   | 25 => qi (0) (-2)
   | 28 => qi (-2) (-2)
   | 29 => qi (-1) (-1)
   | 30 => qi (0) (-2)
   | _ => 0
-def cross5_2 (i : Fin 24) : ℂ :=
+def cross5_2 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (0) (1)
   | 2 => qi (1) (0)
@@ -1290,7 +1295,7 @@ def cross5_2 (i : Fin 24) : ℂ :=
   | 21 => qi (0) (1)
   | 22 => qi (0) (-1)
   | _ => 0
-def cross7_2 (i : Fin 24) : ℂ :=
+def cross7_2 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (1) (0)
   | 1 => qi (-1) (2)
@@ -1307,7 +1312,7 @@ def cross7_2 (i : Fin 24) : ℂ :=
   | 22 => qi (-1) (0)
   | 23 => qi (1) (2)
   | _ => 0
-def same5_2 (i : Fin 24) : ℂ :=
+def same5_2 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (0) (-1)
   | 2 => qi (1) (0)
@@ -1323,7 +1328,7 @@ def same5_2 (i : Fin 24) : ℂ :=
   | 21 => qi (0) (-1)
   | 22 => qi (0) (1)
   | _ => 0
-def same7_2 (i : Fin 24) : ℂ :=
+def same7_2 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (1) (0)
   | 1 => qi (-1) (-2)
@@ -1340,21 +1345,21 @@ def same7_2 (i : Fin 24) : ℂ :=
   | 22 => qi (-1) (0)
   | 23 => qi (1) (-2)
   | _ => 0
-def sameSol5_2 (i : Fin 34) : ℂ :=
+def sameSol5_2 (i : Fin 34) : QI :=
   match i.val with
   | 26 => qi (1) (1)
   | 29 => qi (1) (1)
   | 31 => qi (-2) (2)
   | 32 => qi (-1) (1)
   | _ => 0
-def sameSol7_2 (i : Fin 34) : ℂ :=
+def sameSol7_2 (i : Fin 34) : QI :=
   match i.val with
   | 26 => qi (0) (-2)
   | 29 => qi (-1) (-1)
   | 31 => qi (-2) (-2)
   | 32 => qi (0) (-2)
   | _ => 0
-def cross5_3 (i : Fin 24) : ℂ :=
+def cross5_3 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (0) (1)
   | 1 => qi (1) (0)
@@ -1370,7 +1375,7 @@ def cross5_3 (i : Fin 24) : ℂ :=
   | 15 => qi (0) (-1)
   | 16 => qi (0) (1)
   | _ => 0
-def cross7_3 (i : Fin 24) : ℂ :=
+def cross7_3 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (-1) (-1)
   | 1 => qi (-1) (-1)
@@ -1388,7 +1393,7 @@ def cross7_3 (i : Fin 24) : ℂ :=
   | 16 => qi (0) (-1)
   | 17 => qi (-2) (1)
   | _ => 0
-def same5_3 (i : Fin 24) : ℂ :=
+def same5_3 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (0) (-1)
   | 1 => qi (1) (0)
@@ -1404,7 +1409,7 @@ def same5_3 (i : Fin 24) : ℂ :=
   | 15 => qi (0) (1)
   | 16 => qi (0) (-1)
   | _ => 0
-def same7_3 (i : Fin 24) : ℂ :=
+def same7_3 (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (-1) (1)
   | 1 => qi (-1) (1)
@@ -1422,21 +1427,21 @@ def same7_3 (i : Fin 24) : ℂ :=
   | 16 => qi (0) (1)
   | 17 => qi (-2) (-1)
   | _ => 0
-def sameSol5_3 (i : Fin 34) : ℂ :=
+def sameSol5_3 (i : Fin 34) : QI :=
   match i.val with
   | 27 => qi (1) (1)
   | 30 => qi (1) (1)
   | 32 => qi (-1) (1)
   | 33 => qi (-2) (2)
   | _ => 0
-def sameSol7_3 (i : Fin 34) : ℂ :=
+def sameSol7_3 (i : Fin 34) : QI :=
   match i.val with
   | 27 => qi (2) (0)
   | 30 => qi (1) (-1)
   | 32 => qi (1) (-1)
   | 33 => qi (4) (0)
   | _ => 0
-def crossSol5_2 (i : Fin 34) : ℂ :=
+def crossSol5_2 (i : Fin 34) : QI :=
   match i.val with
   | 0 => qi ((-1 : ℚ) / 4) ((1 : ℚ) / 4)
   | 1 => qi ((1 : ℚ) / 4) ((-1 : ℚ) / 4)
@@ -1462,7 +1467,7 @@ def crossSol5_2 (i : Fin 34) : ℂ :=
   | 26 => qi (1) (0)
   | 29 => qi (1) (0)
   | _ => 0
-def crossSol5_3 (i : Fin 34) : ℂ :=
+def crossSol5_3 (i : Fin 34) : QI :=
   match i.val with
   | 0 => qi ((5 : ℚ) / 4) ((-1 : ℚ) / 4)
   | 1 => qi ((-1 : ℚ) / 4) ((1 : ℚ) / 4)
@@ -1487,7 +1492,7 @@ def crossSol5_3 (i : Fin 34) : ℂ :=
   | 26 => qi (-1) (0)
   | 29 => qi (-1) (0)
   | _ => 0
-def crossSol7_1 (i : Fin 34) : ℂ :=
+def crossSol7_1 (i : Fin 34) : QI :=
   match i.val with
   | 0 => qi (1) (-1)
   | 1 => qi (-1) (-1)
@@ -1510,7 +1515,7 @@ def crossSol7_1 (i : Fin 34) : ℂ :=
   | 22 => qi (1) (-1)
   | 23 => qi (-1) (-1)
   | _ => 0
-def crossSol7_2 (i : Fin 34) : ℂ :=
+def crossSol7_2 (i : Fin 34) : QI :=
   match i.val with
   | 0 => qi (-1) (-1)
   | 1 => qi (1) (-1)
@@ -1534,7 +1539,7 @@ def crossSol7_2 (i : Fin 34) : ℂ :=
   | 23 => qi (1) (-1)
   | _ => 0
 
-def ell5Bar (i : Fin 24) : ℂ :=
+def ell5Bar (i : Fin 24) : QI :=
   match i.val with
   | 0 => qi (-1) (-1)
   | 6 => qi (-1) (-1)
@@ -1546,7 +1551,7 @@ def ell5Bar (i : Fin 24) : ℂ :=
   | 21 => qi (1) (0)
   | _ => 0
 
-def ell7Bar (i : Fin 24) : ℂ :=
+def ell7Bar (i : Fin 24) : QI :=
   match i.val with
   | 2 => qi (1) (0)
   | 7 => qi (0) (1)
@@ -1560,30 +1565,25 @@ def ell7Bar (i : Fin 24) : ℂ :=
 
 
 macro "qfin" : tactic =>
-  `(tactic|
-    (first
-      | (ext i j <;> fin_cases i <;> fin_cases j <;>
-          simp [Matrix.mul_apply, dotProduct, Fin.sum_univ_succ] <;> norm_num)
-      | (ext i <;> fin_cases i <;>
-          simp [Matrix.mulVec, dotProduct, Fin.sum_univ_succ] <;> norm_num)))
+  `(tactic| native_decide)
 
-def block5 : Matrix (Fin 23) (Fin 23) ℂ := Matrix.submatrix p5 rows5 cols5
-def block7 : Matrix (Fin 23) (Fin 23) ℂ := Matrix.submatrix p7 rows7 cols7
-def selectedRows5 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p5 rows5 id
-def selectedRows7 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p7 rows7 id
+def block5 : Matrix (Fin 23) (Fin 23) QI := Matrix.submatrix p5 rows5 cols5
+def block7 : Matrix (Fin 23) (Fin 23) QI := Matrix.submatrix p7 rows7 cols7
+def selectedRows5 : Matrix (Fin 23) (Fin 34) QI := Matrix.submatrix p5 rows5 id
+def selectedRows7 : Matrix (Fin 23) (Fin 34) QI := Matrix.submatrix p7 rows7 id
 
 theorem block5_mul_inv : block5 * binv5 = 1 := by qfin
 theorem inv_mul_block5 : binv5 * block5 = 1 := by qfin
 theorem block7_mul_inv : block7 * binv7 = 1 := by qfin
 theorem inv_mul_block7 : binv7 * block7 = 1 := by qfin
 
-def block5Unit : (Matrix (Fin 23) (Fin 23) ℂ)ˣ where
+def block5Unit : (Matrix (Fin 23) (Fin 23) QI)ˣ where
   val := block5
   inv := binv5
   val_inv := block5_mul_inv
   inv_val := inv_mul_block5
 
-def block7Unit : (Matrix (Fin 23) (Fin 23) ℂ)ˣ where
+def block7Unit : (Matrix (Fin 23) (Fin 23) QI)ˣ where
   val := block7
   inv := binv7
   val_inv := block7_mul_inv
@@ -1595,10 +1595,10 @@ theorem reconstruct_rows7 : reconstruct7 * selectedRows7 = p7 := by qfin
 lemma rank_submatrix_le
     {m n a b : Type*} [Fintype m] [Fintype n] [Fintype a] [Fintype b]
     [DecidableEq m] [DecidableEq n] [DecidableEq a] [DecidableEq b]
-    (M : Matrix m n ℂ) (rows : a → m) (cols : b → n) :
+    (M : Matrix m n QI) (rows : a → m) (cols : b → n) :
     Matrix.rank (Matrix.submatrix M rows cols) ≤ Matrix.rank M := by
-  let R : Matrix a m ℂ := fun i j => if j = rows i then 1 else 0
-  let C : Matrix n b ℂ := fun i j => if i = cols j then 1 else 0
+  let R : Matrix a m QI := fun i j => if j = rows i then 1 else 0
+  let C : Matrix n b QI := fun i j => if i = cols j then 1 else 0
   have h : Matrix.submatrix M rows cols = R * M * C := by
     ext i j
     simp [R, C, Matrix.mul_apply]
@@ -1633,35 +1633,29 @@ theorem orbit7_rank : Matrix.rank p7 = 23 := by
       simpa using Matrix.rank_le_card_height selectedRows7)
   exact le_antisymm hupper hlower
 
-def leftPair (ellBar v : Fin 24 → ℂ) : ℂ := ∑ i, ellBar i * v i
+def leftPair (ellBar v : Fin 24 → QI) : QI := ∑ i, ellBar i * v i
 
 theorem ell5_annihilates_cols (j : Fin 34) :
     leftPair ell5Bar (fun i => p5 i j) = 0 := by
-  fin_cases j <;>
-    norm_num [leftPair, ell5Bar, p5, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
+  fin_cases j <;> native_decide
 
 theorem ell7_annihilates_cols (j : Fin 34) :
     leftPair ell7Bar (fun i => p7 i j) = 0 := by
-  fin_cases j <;>
-    norm_num [leftPair, ell7Bar, p7, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
+  fin_cases j <;> native_decide
 
 theorem ell5_functional_nonzero : ell5Bar ≠ 0 := by
-  intro h
-  have hz := congrFun h (0 : Fin 24)
-  norm_num [ell5Bar, qi, Complex.ext_iff] at hz
+  native_decide
 
 theorem ell7_functional_nonzero : ell7Bar ≠ 0 := by
-  intro h
-  have hz := congrFun h (2 : Fin 24)
-  norm_num [ell7Bar, qi, Complex.ext_iff] at hz
+  native_decide
 
-def inImage (P : Matrix (Fin 24) (Fin 34) ℂ) (w : Fin 24 → ℂ) : Prop :=
-  ∃ x : Fin 34 → ℂ, P.mulVec x = w
+def inImage (P : Matrix (Fin 24) (Fin 34) QI) (w : Fin 24 → QI) : Prop :=
+  ∃ x : Fin 34 → QI, P.mulVec x = w
 
 lemma leftPair_mulVec_zero
-    (P : Matrix (Fin 24) (Fin 34) ℂ) (ellBar : Fin 24 → ℂ)
+    (P : Matrix (Fin 24) (Fin 34) QI) (ellBar : Fin 24 → QI)
     (hcol : ∀ j, leftPair ellBar (fun i => P i j) = 0)
-    (x : Fin 34 → ℂ) :
+    (x : Fin 34 → QI) :
     leftPair ellBar (P.mulVec x) = 0 := by
   simp only [leftPair, Matrix.mulVec, dotProduct]
   calc
@@ -1697,13 +1691,15 @@ theorem orbit5_cross_0_out : ¬ inImage p5 cross5_0 := by
   rintro ⟨x, hx⟩
   have hz := leftPair_mulVec_zero p5 ell5Bar ell5_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell5Bar, cross5_0, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  have hne : leftPair ell5Bar cross5_0 ≠ 0 := by native_decide
+  exact hne hz
 
 theorem orbit5_cross_1_out : ¬ inImage p5 cross5_1 := by
   rintro ⟨x, hx⟩
   have hz := leftPair_mulVec_zero p5 ell5Bar ell5_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell5Bar, cross5_1, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  have hne : leftPair ell5Bar cross5_1 ≠ 0 := by native_decide
+  exact hne hz
 
 theorem orbit5_same_0_in : inImage p5 same5_0 := by
   refine ⟨sameSol5_0, ?_⟩
@@ -1729,13 +1725,15 @@ theorem orbit7_cross_0_out : ¬ inImage p7 cross7_0 := by
   rintro ⟨x, hx⟩
   have hz := leftPair_mulVec_zero p7 ell7Bar ell7_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell7Bar, cross7_0, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  have hne : leftPair ell7Bar cross7_0 ≠ 0 := by native_decide
+  exact hne hz
 
 theorem orbit7_cross_3_out : ¬ inImage p7 cross7_3 := by
   rintro ⟨x, hx⟩
   have hz := leftPair_mulVec_zero p7 ell7Bar ell7_annihilates_cols x
   rw [hx] at hz
-  norm_num [leftPair, ell7Bar, cross7_3, qi, Fin.sum_univ_succ, Complex.ext_iff] at hz
+  have hne : leftPair ell7Bar cross7_3 ≠ 0 := by native_decide
+  exact hne hz
 
 theorem orbit7_same_0_in : inImage p7 same7_0 := by
   refine ⟨sameSol7_0, ?_⟩
@@ -1750,44 +1748,38 @@ theorem orbit7_same_3_in : inImage p7 same7_3 := by
   refine ⟨sameSol7_3, ?_⟩
   qfin
 
-def hermitianSq (z : ℂ) : ℝ := z.re ^ 2 + z.im ^ 2
-def rowNorm2 (ellBar : Fin 24 → ℂ) : ℝ := ∑ i, hermitianSq (ellBar i)
-def residual2 (ellBar w : Fin 24 → ℂ) : ℝ :=
+def hermitianSq (z : QI) : ℚ := z.re ^ 2 + z.im ^ 2
+def rowNorm2 (ellBar : Fin 24 → QI) : ℚ := ∑ i, hermitianSq (ellBar i)
+def residual2 (ellBar w : Fin 24 → QI) : ℚ :=
   hermitianSq (leftPair ellBar w) / rowNorm2 ellBar
 
 theorem orbit5_ell_norm2 : rowNorm2 ell5Bar = 10 := by
-  norm_num [rowNorm2, hermitianSq, ell5Bar, qi, Fin.sum_univ_succ]
+  native_decide
 theorem orbit7_ell_norm2 : rowNorm2 ell7Bar = 8 := by
-  norm_num [rowNorm2, hermitianSq, ell7Bar, qi, Fin.sum_univ_succ]
+  native_decide
 
 theorem orbit5_raw_residuals :
-    residual2 ell5Bar cross5_0 = (8/5 : ℝ) ∧
-    residual2 ell5Bar cross5_1 = (8/5 : ℝ) ∧
+    residual2 ell5Bar cross5_0 = (8/5 : ℚ) ∧
+    residual2 ell5Bar cross5_1 = (8/5 : ℚ) ∧
     residual2 ell5Bar cross5_2 = 0 ∧ residual2 ell5Bar cross5_3 = 0 := by
-  norm_num [residual2, rowNorm2, hermitianSq, leftPair, ell5Bar,
-    cross5_0, cross5_1, cross5_2, cross5_3, qi, Fin.sum_univ_succ]
+  native_decide
 
 theorem orbit7_raw_residuals :
-    residual2 ell7Bar cross7_0 = (2 : ℝ) ∧ residual2 ell7Bar cross7_1 = 0 ∧
-    residual2 ell7Bar cross7_2 = 0 ∧ residual2 ell7Bar cross7_3 = (2 : ℝ) := by
-  norm_num [residual2, rowNorm2, hermitianSq, leftPair, ell7Bar,
-    cross7_0, cross7_1, cross7_2, cross7_3, qi, Fin.sum_univ_succ]
+    residual2 ell7Bar cross7_0 = (2 : ℚ) ∧ residual2 ell7Bar cross7_1 = 0 ∧
+    residual2 ell7Bar cross7_2 = 0 ∧ residual2 ell7Bar cross7_3 = (2 : ℚ) := by
+  native_decide
 
 theorem orbit5_unit_q0_residuals :
-    residual2 ell5Bar cross5_0 / 40 = (1/25 : ℝ) ∧
-    residual2 ell5Bar cross5_1 / 40 = (1/25 : ℝ) ∧
+    residual2 ell5Bar cross5_0 / 40 = (1/25 : ℚ) ∧
+    residual2 ell5Bar cross5_1 / 40 = (1/25 : ℚ) ∧
     residual2 ell5Bar cross5_2 / 40 = 0 ∧ residual2 ell5Bar cross5_3 / 40 = 0 := by
-  rw [orbit5_raw_residuals.1, orbit5_raw_residuals.2.1,
-      orbit5_raw_residuals.2.2.1, orbit5_raw_residuals.2.2.2]
-  norm_num
+  native_decide
 
 theorem orbit7_unit_q0_residuals :
-    residual2 ell7Bar cross7_0 / 92 = (1/46 : ℝ) ∧
+    residual2 ell7Bar cross7_0 / 92 = (1/46 : ℚ) ∧
     residual2 ell7Bar cross7_1 / 92 = 0 ∧ residual2 ell7Bar cross7_2 / 92 = 0 ∧
-    residual2 ell7Bar cross7_3 / 92 = (1/46 : ℝ) := by
-  rw [orbit7_raw_residuals.1, orbit7_raw_residuals.2.1,
-      orbit7_raw_residuals.2.2.1, orbit7_raw_residuals.2.2.2]
-  norm_num
+    residual2 ell7Bar cross7_3 / 92 = (1/46 : ℚ) := by
+  native_decide
 
 /-- The two merged physical carriers have one-dimensional left cokernel:
 rank 23 in a 24-dimensional output carrier, witnessed by the explicit nonzero
