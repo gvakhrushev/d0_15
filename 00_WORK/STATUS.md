@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 5 | 0 | 0 | 0 | 5 | 0 / 5 |
-| **Total** | **8** | **0** | **0** | **1** | **9** | **1 / 10** |
+| WORKER | 4 | 1 | 0 | 0 | 5 | 1 / 5 |
+| **Total** | **7** | **1** | **0** | **1** | **9** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -23,7 +23,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-METRIC-ONLY-SEED-SYMBOL-RELATION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-Y-SLOW-JOINT-CONTINUATION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-Q0-PHYSICAL-FORCING-IMAGE | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
+| WRK-A4D-Q0-PHYSICAL-FORCING-IMAGE | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
 

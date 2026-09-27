@@ -1,7 +1,7 @@
 # WRK-A4D-Q0-PHYSICAL-FORCING-IMAGE
 
 Class: WORKER  
-State on registration: PLANNED  
+State: IN_PROGRESS  
 Parent: CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE
 
 Repository: gvakhrushev/d0_15  
