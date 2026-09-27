@@ -129,3 +129,9 @@ _Standard-language reading of the terms this book uses:_
 | bridge (Born-rule beat bridge) | typed transfer / calibration map from an internal finite object to an external model object |
 | passport (dimensionless LIGO passport targets) | external comparison protocol |
 | scene | finite incidence / clique complex K(9,11,13) |
+
+## 09.V16-WINDOWED-CHANNEL-SIGN
+
+A nontrivial channel sign belongs to a declared window/history. The seam-window operator (W_R) and frozen axis/transverse projectors are legitimate places to define a restricted return/leak comparison; the unrestricted global one-tick trace ratio is identically balanced by unitarity.
+
+White-hole-like late radiation therefore remains a residual/passport class attached to a declared observer window, not a sign read from one global finite unitary block. No LIGO confirmation follows. Any future sign observable must freeze its window/projectors before evaluation and pass the one-tick zero-sign and history-swap negative controls registered in `WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN`.
