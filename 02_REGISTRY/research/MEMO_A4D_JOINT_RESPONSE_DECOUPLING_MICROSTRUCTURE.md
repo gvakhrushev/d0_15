@@ -3,7 +3,17 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. On each of the two defect solders every 16th-root character other than the cut carrier has vanishing joint moment. Each defect is an isolated point of the joint corank locus in \((\mathbb C^\times)^4\). Distant characters remain open. Neither final terminal is claimed.
+Status: IN PROGRESS. Global (NF) is refuted. The moving metric germ is now an exact all-phase identity; response closure still requires control on nonlinear realizable defects. Neither final terminal is claimed.
+
+Synthesis update:
+[Moving germ and stationary-sheet response](MEMO_A4D_RESPONSE_STATIONARY_SHEET_SYNTHESIS.md)
+proves the Laurent identity \(H_{AQ}(z)\operatorname{vec}_{sym}(dd^T)=0\),
+\(d_r=z_r^{-1}-1\), and its differentiated joint continuation. It also gives
+an exact stationary-sheet envelope theorem and a quantitative horizontal-lift
+criterion for response decoupling. The accompanying exact certificate corrects
+the FUGU v7 physical ranks at orbits 5 and 7 from 24 to 23. A zero obstruction
+class is distinct from a zero cokernel, and moving-germ absorption does not
+annihilate the separate quadratic metric-response defect.
 
 ## 0. Typed target and source contract
 
@@ -157,8 +167,10 @@ connection Euler symbol and C is the linear metric-response symbol.
 No uniform inverse or positive spectral gap is part of this criterion.
 The diagonal certificate proves a canonical special case. Section 7 proves
 the conditional localization theorem, and Section 8 proves the diagonal
-condition for every nondegenerate constant solder. The remaining all-phase
-identity is open. Neither requested terminal follows yet.
+condition for every nondegenerate constant solder. The global identity is
+refuted by Section 8.3. Its conditional theorem remains valid, while the
+stationary-sheet synthesis gives a replacement research route. Neither
+requested terminal follows yet.
 
 ## 5. Consumption and scope audit of #241
 
@@ -193,9 +205,10 @@ counterexample with a prescribed smooth source or vacuum.
 ## 6. Scope of the partial result
 
 The results are an exact diagonal mean-quadratic cancellation, its all-solder
-extension, and a conditional compensated response theorem. The target remains
-open on the all-phase joint-kernel identity. Sections 7-10 provide the proofs,
-precise remaining condition, and validation.
+extension, and a conditional compensated response theorem. The global linear
+identity is refuted. The target remains open on nonlinear realizable response
+defects, as formulated in the linked stationary-sheet synthesis. Sections
+7-10 retain the proofs, finite controls, and validation.
 
 
 ## 7. Conditional compensated response theorem (proved reduction)
@@ -859,8 +872,9 @@ curve of joint corank passes through either defect. Each defect is an isolated
 point of the corank locus in \((\mathbb C^\times)^4\).
 
 In a neighborhood of either defect every other character, unitary or not, has
-joint rank 24. The tested moment is vacuous there, so inequality (7.4) holds
-at those characters for these two solders. The order-8 zero of one connection
+joint rank 24. The tested moment is vacuous pointwise there. This does not
+supply a uniform constant in (7.4) near the puncture: its constants may
+diverge as the character approaches the certified NF defect. The order-8 zero of one connection
 determinant and the order-\(u^5\) amplitude cut are separate statements. The
 diagonal quarter-waves remain other corank points, with vanishing moments, and
 they do not lie in this neighborhood.
@@ -875,43 +889,28 @@ the certified families, remain open. Neither final terminal follows.
 
 The certificate is `a4d_joint_response_defect_isolation_check.py`.
 
-### 8.17 The joint-critical obstruction is quadratic, not linear
+### 8.17 Linear joint-kernel bookkeeping; nonlinear orders kept distinct
 
-Section 9 names the single missing identity as a joint-critical replacement for
-(NF). Before that it is worth asking the prior question: does a joint-critical
-amplitude exist at all on the two certified defect carriers?
+A direction \(b\in\ker[H;C]\) satisfies \(Hb=Cb=0\) by construction.
+The certificate `a4d_joint_response_joint_critical_check.py` checks this
+linear identity. It does not compute a nonlinear obstruction.
 
-The linear part cannot answer it, for a bookkeeping reason rather than a
-theorem. A kernel direction \(b\) of the joint symbol \(J=[H;C]\) satisfies
-\(Hb=0\) **by construction**, so the order-\(u\) connection equation is
-automatically satisfied on the whole joint kernel. The certificate
-`a4d_joint_response_joint_critical_check.py` records this explicitly, because
-the tempting claim that the connection map is injective on the kernel is simply
-false: its rank there is \(0\), not \(\dim\ker\).
-
-The obstruction is one order later. On a single kernel direction the
-connection Euler expands as
+The previous interpretation of an order-\(u^5\) reduced coefficient as a
+quadratic coefficient is withdrawn. For a corrected path
+\(a(u)=u b+u^2a_2+\cdots\), the actual second-order connection equation is
 \[
-E_K(ub)=u^{2}S,
+H a_2+N_2(b,b)=0.
 \]
-with \(S\) the quadratic self-interaction, while the metric Euler is
-\[
-E_Q(ub)=u\cdot 0+u^{2}M(b),
-\]
-with \(M(b)\) the content-one response moment. A joint-critical amplitude needs
-\(S=0\). The order-\(u^{5}\) certificate of this branch already computes \(S\):
-on both defect carriers the witness projection is \(-432\), a nonzero multiple
-of the normalised amplitude, so \(u^{2}S=0\) forces \(u=0\).
+A nonzero bare self-interaction can therefore be absorbed by \(a_2\).
+The separate order-five certificates explicitly use such lower-order
+corrections. Their reported \(-432u^5\) term must retain its fifth order and
+its period-two ansatz scope; it cannot certify \(u^2S=0\).
 
-\[
-\boxed{\texttt{JOINT-CRITICAL-OBSTRUCTION-IS-QUADRATIC-NOT-LINEAR}}
-\]
-
-This is an accessibility statement about the exact joint kernels of the two
-certified carriers. It is not a smooth-background metric-response NOGO: no
-joint-critical sequence is produced, no \(\#216\) comparator gap is computed,
-and no response terminal is claimed. No claim is made about other characters
-or solders.
+The prior terminal `JOINT-CRITICAL-OBSTRUCTION-IS-QUADRATIC-NOT-LINEAR`
+does not follow from this calculation and is not claimed. The stationary-sheet
+synthesis explains why even a valid fixed-cell fifth-order cutoff still
+requires uniform control of sidebands and slow-background terms before
+excluding general joint-critical sequences.
 
 ### 8.2 Amplitude boundary
 
@@ -972,14 +971,18 @@ joint solutions. The conditional theorem of §7 still assumes (NF) at every
 character of every solder in the smooth image. Inequality (7.4) fails at
 the two certified defects. Each of those points is isolated in
 \((\mathbb C^\times)^4\), so every nearby character has full joint rank and
-(7.4) holds there because there is no kernel. Distant characters remain
-open, and the order-\(u^5\) cut does not by itself classify them. No certified joint-critical sequence
+pointwise constraint estimates hold there because there is no kernel. Their
+constants are not uniform toward the defect, and an isolated frequency can
+carry a full quadratic correlation measure. Distant characters remain open, and the order-\(u^5\) cut does not by itself classify them. No certified joint-critical sequence
 has a nonzero normalized gap against the #216 sheet: the flat #232 family
 is response-null, and the #259 lift tends to zero without being joint.
 
-The single missing identity is a joint-critical replacement for (NF): every
-amplitude admitted by \(E_K=0\) and \(E_Q=h^2\tau\), at every character and
-every solder in the smooth image, has vanishing tested moment (7.3).
+The missing global statement is that (7.3) vanishes on every correlation
+measure realizable by the full nonlinear equations \(E_K=0\) and
+\(E_Q=h^2\tau_h\) under the fixed smooth-background/source contract. This
+includes coupled carriers and correctors, not only isolated plane-wave
+amplitudes. The linked synthesis gives the exact defect functional and an
+alternative quantitative horizontal-lift criterion.
 Neither requested terminal follows from the finite cuts above.
 
 A finite-frequency census may stress-test which resonances satisfy the moment
