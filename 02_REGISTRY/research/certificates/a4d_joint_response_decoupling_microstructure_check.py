@@ -109,6 +109,13 @@ def run():
     # The original #232 ray: all curvature matrices commute, so its quadratic
     # BCH contribution is zero even before phase averaging.
     check('EXACT232_RAY_QUADRATIC_CONTROL',all(v==0 for row in square[0] for v in row))
+    # Abstract hostile functional S=1/2 sum [(Ba)^2 + q a^2], B=T+T^-1.
+    # This is an inference control, NOT the naked-star action or its NOGO.
+    sigma=(1,1,-1,-1)
+    check('HOSTILE_MEAN_ZERO',sum(sigma)==0)
+    check('HOSTILE_CONNECTION_EQUATION',all(sigma[(p+1)%4]+sigma[(p-1)%4]==0 for p in range(4)))
+    check('HOSTILE_SMOOTH_SOURCE_AND_RESPONSE_GAP',all(Fraction(v*v,2)==Fraction(1,2) for v in sigma))
+    check('HOSTILE_REGULAR_ZERO_PHASE',(1+1)**2==4)
     print('RESULT: diagonal joint-linear carrier has zero mean quadratic metric response.')
     print('BOUNDARY: this does not prove nonlinear joint stationarity or all-phase decoupling.')
 
