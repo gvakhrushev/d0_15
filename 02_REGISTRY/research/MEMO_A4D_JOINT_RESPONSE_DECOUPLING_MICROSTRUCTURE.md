@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: BLOCKED. Global (NF) is refuted, and the shear witness that refutes it is not a joint-critical sequence: the period-2 connection equation forces its amplitude to vanish, and no root-of-unity envelope of that jet revives it. Neither final terminal is claimed. The single missing identity is the resonant projection of a slow amplitude \(U(hx)\) on that witness, at the first order in \(h\) that can compete with \(-432 U^5\), and the normalized gap of any such solution against the #216 sheet.
+Status: BLOCKED. Global (NF) is refuted. The period-2 shear witness is not joint-critical: its amplitude is killed at order \(u^5\), no root-of-unity envelope revives it, and the slow amplitude \(U=h^{1/2}v(hx)\) has leading resonant equation \(S\cdot\nabla v=432 v^3\) whose only bounded solution is \(v=0\) (§8.21). The normalized gap of that solution is 0. Neither final terminal is claimed. The single missing identity is the normalized response of the #232 microstructure on the nonconstant background of #241, which belongs to draft PR #275.
 
 Synthesis update:
 [Moving germ and stationary-sheet response](MEMO_A4D_RESPONSE_STATIONARY_SHEET_SYNTHESIS.md)
@@ -20,7 +20,7 @@ Quadratic slots at the shear witness, from one symbol
 on \(z=(-1,1,-1,1)\) the moving germ is \(q_0=4E_{00}+4E_{02}+4E_{22}\) and has no \(q_{11}\) entry.
 \(\Phi=\tfrac12 u^2 v^*H(Q)v\) has \(\partial_u\Phi=0\) for every \(u\), while
 \(\partial_{q_{11}}\Phi=-u^2\). The germ direction itself has witness stress 0.
-Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. The one-step period-4 envelope is settled in the same direction. The shear character generates only the two-element sign group \(\{1,z\}\). Replacing any one sign by \(\pm i\) gives eight characters outside that group; each has joint rank 24 at the upper shear. Pure shear powers do not source them, and they are not free moduli, so they do not cancel the resonant projection \(-432\). The same is true of every root of unity outside the sign group: the bare jet and the corrected order-\(u^5\) jet are functions of \((-1)^{x_0+x_2}\) only, so their Fourier support is exactly \(\{1,(-1,1,-1,1)\}\) (§8.20). On the line \(z=(-1,t,-1,1)\) the same witness has identically zero quadratic form and identically zero metric block. Its symmetric connection Euler is \(-(t-1)^2/t\) on coordinates 8, 10 and 11, and vanishes only at \(t=1\). The joint symbol has rank 24 over the rational functions of \(t\), and on the unit circle \(H\) is singular only at \(t=1\). A slow amplitude \(u(hx)\) is not the period-2 ansatz and remains open. The quadratic stress \(-u^2\) is not attained on the period-2 critical set or on this phase line.
+Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. The one-step period-4 envelope is settled in the same direction. The shear character generates only the two-element sign group \(\{1,z\}\). Replacing any one sign by \(\pm i\) gives eight characters outside that group; each has joint rank 24 at the upper shear. Pure shear powers do not source them, and they are not free moduli, so they do not cancel the resonant projection \(-432\). The same is true of every root of unity outside the sign group: the bare jet and the corrected order-\(u^5\) jet are functions of \((-1)^{x_0+x_2}\) only, so their Fourier support is exactly \(\{1,(-1,1,-1,1)\}\) (§8.20). On the line \(z=(-1,t,-1,1)\) the same witness has identically zero quadratic form and identically zero metric block. Its symmetric connection Euler is \(-(t-1)^2/t\) on coordinates 8, 10 and 11, and vanishes only at \(t=1\). The joint symbol has rank 24 over the rational functions of \(t\), and on the unit circle \(H\) is singular only at \(t=1\). A slow amplitude \(U(hx)\) is settled in §8.21: the only bounded solution of the competing resonant equation is zero, so the quadratic stress \(-u^2\) is not attained on that envelope either. The quadratic stress \(-u^2\) is not attained on the period-2 critical set or on this phase line.
 
 ## 0. Typed target and source contract
 
@@ -1008,9 +1008,66 @@ for \(L\in\{6,8,10,12,16\}\). A root of unity that is not a sign character
 therefore has coefficient zero at every order of this jet. It cannot cancel
 the resonant projection \(-432\).
 
-A slow amplitude \(u(hx)\) changes the spatial dependence and is not covered.
-The certificate is `a4d_joint_response_shear_envelope_support_check.py`. This
-is not a smooth-background response NOGO.
+A slow amplitude \(U(hx)\) is not a root-of-unity modulation. Its resonant
+projection is computed in §8.21. The certificate for the support statement is
+`a4d_joint_response_shear_envelope_support_check.py`. This is not a
+smooth-background response NOGO.
+
+### 8.21 A slow shear amplitude is killed before it can balance
+
+Transport the solved period-2 jet by a sitewise amplitude \(A(x)\), using the
+lattice step \(x\mapsto x+e_r\). Let \(\Pi_k(A)\) be the sum over the cell
+\(\{0,1\}^4\) of \(\sigma(x)\) times the witness pairing of the bookkeeping
+order-\(k\) connection Euler. For a constant amplitude the owned jet gives
+\(\Pi_k=0\) when \(k<5\) and \(\Pi_5=-432u^5\).
+
+The first variation of this transported jet at unit amplitude was computed
+exactly through order \(3\). It vanishes at orders \(0,1,2\) for the constant
+mode and for each coordinate function \(x_r\). At order \(3\) the constant
+mode remains \(0\), and the four coordinate directions are
+\[
+S=(72,\,-872/59,\,-144,\,72).
+\]
+Order \(3\) is homogeneous of degree \(3\). Because the constant mode has
+derivative \(0\), replacing \(x_r\) by \(x_r-c\) does not change \(S\). For a
+smooth profile \(U(y)\), \(y=hx\), the stencil expansion
+\(A(x)=U+h\,x\cdot\nabla U+O(h^2)\) therefore gives
+\[
+\Pi_3=h\,U^2(S\cdot\nabla U)+O(h^2).
+\]
+The same homogeneity makes every first derivative of \(\Pi_5\) smaller than
+\(-432U^5\) by one power of \(h\).
+
+The two contributions meet when \(U=h^{1/2}v(y)\):
+\[
+\Pi_3+\Pi_5=h^{5/2}\bigl(v^2(S\cdot\nabla v)-432 v^5\bigr)+o(h^{5/2}).
+\]
+The second-derivative and quadratic-gradient remainders in \(\Pi_3\) are
+\(O(h^{7/2})\) at this scaling, and the order-\(5\) gradient term is of the
+same smaller order. The bracket vanishes if and only if \(v=0\) or
+\(S\cdot\nabla v=432 v^3\).
+
+The direction \(S\) is not zero. Along the coordinate \(s\) dual to \(S\), so
+that \(d/ds=S\cdot\nabla\), the second alternative is \(dv/ds=432 v^3\). Then
+\[
+\frac{d}{ds}(v^{-2})=-864.
+\]
+A nonzero \(C^1\) value \(a\) reaches a pole at distance \(1/(864 a^2)\). The
+only bounded \(C^1\) solution on the torus is \(v\equiv 0\).
+
+The only bounded solution of the leading resonant equation therefore has
+amplitude \(0\). The owned metric jet \((0,0,0,0,-16u^2,0,0,0,0,0)\) vanishes
+with it, so the normalized gap of this solution against the #216 sheet is
+\(0\). The quadratic stress \(-u^2\) is not realized. This is not a nonzero
+gap and not a joint-critical sequence.
+
+A period-2 odd corrector does not move the resonant pairing: the witness is
+the left kernel of the bare odd operator on all \(24\) directions. The
+certificate is `a4d_joint_response_shear_slow_envelope_check.py`. It locks
+\(S\) and the separation identity. The jet through order \(5\), which
+reproduced \(-432\) and the constant slope \(-2160\), gave the same order-\(3\)
+row; the checker truncates at order \(3\) because \(\xi\) does not enter that
+row. This is one frozen shear profile, not the #232 microstructure.
 
 ### 8.2 Amplitude boundary
 
@@ -1060,9 +1117,10 @@ The following routes have been decided:
 | Joint corank locus through either defect | Isolated point. Tangent line blocked at second order (§8.16) |
 | Rational \(a\) on \(S(a)=I+a(E_{01}+E_{12})\), whole L=4 grid | Nonzero moment only at \(a=\pm 1\), character \((-1,1,-1,1)\) (§8.19) |
 | Flat linear Schur complement versus the Einstein symbol | Direct identity \(K_{\mathrm{Schur}}=-\frac12 K_{G^{(1)}}\), only where the connection block is invertible (§8.18) |
-| Root-of-unity envelope of the pure period-2 shear jet | Absent. Fourier support is \(\{1,(-1,1,-1,1)\}\) (§8.20). A slow amplitude \(u(hx)\) remains open |
-| Next order of the #232 \(Y\) carrier on the slow background | Delegated to `WRK-A4D-Y-SLOW-JOINT-CONTINUATION`; not recomputed here |
-| Joint-critical replacement for (NF) on the whole smooth image | MISSING. Single blocker: slow shear envelope \(U(hx)\) |
+| Root-of-unity envelope of the pure period-2 shear jet | Absent. Fourier support is \(\{1,(-1,1,-1,1)\}\) (§8.20) |
+| Slow amplitude on the shear witness | Killed. Leading balance \(S\cdot\nabla v=432 v^3\) has only the bounded solution \(v=0\); normalized gap \(0\) (§8.21) |
+| Next order of the #232 \(Y\) carrier on the slow background | Delegated to `WRK-A4D-Y-SLOW-JOINT-CONTINUATION` (draft PR #275); not recomputed here |
+| Joint-critical replacement for (NF) on the whole smooth image | MISSING. Single blocker: normalized #232 response on the #241 background |
 | Strong connection compactness or uniqueness | Not used or requested |
 
 The previous “prove all-phase NF” route is closed: §8.3 gives an exact finite
@@ -1097,18 +1155,21 @@ requested NOGO.
 Current verdict: BLOCKED. The shear witness refutes algebraic (NF) and, in
 the period-2 class, is removed by the connection equation before it can be a
 joint-critical sequence. Root-of-unity envelopes of that jet are absent
-(§8.20). The flat #232 family is response-null, and its slow continuation is
-owned by `WRK-A4D-Y-SLOW-JOINT-CONTINUATION`, which is blocked on the N0
-cross-term. No certified sequence has a nonzero normalized gap against the
-#216 sheet, so the NOGO terminal is not available. The closure terminal is
-not available because the class must include that #232 microstructure and a
-slow envelope of a realizable defect.
+(§8.20). The slow amplitude on the same witness is also removed: at the order
+where a gradient can compete with \(-432 U^5\), the resonant equation is
+\(S\cdot\nabla v=432 v^3\), and the only bounded solution is \(v=0\) (§8.21).
+Its normalized gap against the #216 sheet is \(0\). The flat #232 family is
+response-null, and its slow continuation is owned by
+`WRK-A4D-Y-SLOW-JOINT-CONTINUATION` on draft PR #275, whose recorded blocker
+is `Y-SLOW-N0-NONLINEAR-CROSS-TERM-MISSING`. No certified sequence has a
+nonzero normalized gap against the #216 sheet, so the NOGO terminal is not
+available. The closure terminal is not available because the class must
+include that #232 microstructure.
 
-The single missing identity is the resonant projection, onto the shear
-witness, of the connection Euler for an amplitude \(U(hx)\) on that witness,
-at the lowest order in \(h\) that can compete with \(-432 U^5\), together
-with the normalized metric gap of any solution of that equation against the
-#216 sheet. Neither
+The single missing identity is the normalized response
+\(h^{-2}\Delta E_Q\) of the #232 \(Y\)-microstructure on the #241 background
+\(Q_h=\eta+h\alpha+h^2 x_0\beta\), at \(z_h=h\), for a solution of both Euler
+equations. That computation is not done here. Neither
 A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED nor
 A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
 
