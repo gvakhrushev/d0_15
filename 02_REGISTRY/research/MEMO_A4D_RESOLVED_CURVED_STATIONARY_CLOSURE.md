@@ -2004,3 +2004,91 @@ charts. This neither declares link order three consistent nor classifies
 other conformal lower blocks, independent translation ratios, other modes,
 or finite seven-amplitude configurations. Those remain open; task stays
 `IN_PROGRESS`, PR Draft, and L=3 remains unopened.
+
+### 9.22 Independent translation ratio: necessary leading balance and affine no-go
+
+`a4d_resolved_curved_stationary_e2_conformal_translation_ratio_affine4_check.py`
+removes the equal-translation restriction from §9.21. The declared class
+has homogeneous support-5 tangent `v=(-4,u,-1,t,t,0,1)`, real mode 1100,
+`b0=z*e0`, `b1=0`, `b2=r*e0`, `b3=e0`, and critical leading solder
+
+```text
+T=[[1,0,p3,p4],[0,-1,p3,p4],
+   [p5,p5,d,c],[p7,p7,-c,d]].
+```
+
+The six solder entries, the translation ratio r, both blind tangent
+coefficients u,t, and all four action coefficients initially remain free.
+This is a necessary-equation classification, not a chosen action selector.
+The leading observer quadratic form is a strictly positive rational
+multiple of `r^2+1`; the eta leading forms vanish. Affine stationarity thus
+requires the observer sum to vanish. Write the remaining coefficients as
+`(Gamma/2+p,Gamma/2-p,q,-q)`.
+
+Four literal leading normal-link channel responses are
+
+```text
+role2,N2: -98304*r*Gamma,
+role2,N3:  32768*Gamma,
+role3,N2:  32768*r^2*Gamma,
+role3,N3: -98304*r*Gamma.
+```
+
+Together with the actual star rows, a uniformly invertible three-variable
+linear system forces
+
+```text
+Gamma=-1/(512*(r^2+1)),
+c+d=(r^2-1)/(r^2+1),
+c-d=6*r/(r^2+1).
+```
+
+No blind tangent or coefficient-difference freedom is dropped in this
+calculation. Rational-field Cayley jets then give an actual affine-order-four
+row sum, independent of all seven second amplitude coefficients:
+`EL_b[role2,component2]+EL_b[role3,component3]=-128*(r+1)/(r^2+1)`.
+Every real stationary germ in the declared class therefore requires r=-1.
+If q=0, another row simultaneously requires r=1, a contradiction.
+
+At r=-1 and q!=0, two further actual affine rows require `z=-4` and
+`q*(u-2)=1/512`. The full order-three solder range is classified again,
+including all ten free second-solder entries and all seven second amplitudes.
+Eliminating the complete rank-two solder image leaves eight equations in
+the three-dimensional second-amplitude quotient. Four independent equations
+solve all p3,p4,p5,p7; the remaining range equation plus the necessary
+leading role-0 N3 row give
+
+```text
+u=-(5*t^2-90*t+32)/(6*(t-2)),
+p3=(5*t^2-84*t+20)/(24*(t-2)),
+p4=-(13*t^2-96*t-20)/(24*(t-2)),
+p5=-(t^2+18*t-8)/(12*(t-2)),
+p7=(5*t^2-30*t+8)/(6*(t-2)).
+```
+
+The exceptional t=2 is excluded by the actual un-divided range equation,
+which is 512 there. This is not a rational-limit argument. Nondegeneracy
+is `det(T)=-9/2`. The remaining order-three matrix has a constant nonzero
+rank-five minor, kernel dimension 12, and amplitude projection dimension 4.
+The particular solution is substituted into all ten range equations.
+
+All permitted second-amplitude freedoms drop from the necessary affine
+rows. Put `D=5*t^2-78*t+8`; it is a unit because u=2 has already been
+excluded. Two literal affine order-four rows are
+
+```text
+384*(t-2)*(t+4)/D,
+-64*(5*t^2-102*t+56)/D.
+```
+
+Their numerator polynomials are coprime. They cannot both vanish, for any
+remaining coefficient p or any next solder/translation. Complete occupied
+mode Q2/Q3 forms vanish for both free tangent moduli; other next-translation
+modes cannot cancel this mode of the homogeneous affine operator.
+
+**Exact scoped verdict:** all independent translation ratios and all
+critical solder moduli in this declared common-upper-block class are
+obstructed by necessary coupled equations through affine order four.
+Unequal upper solder scales, its unfixed common block, translations with
+other vector components/modes, and finite off-seed amplitudes are not
+retired. Task remains `IN_PROGRESS`/Draft; no finite L=2 witness or L=3.
