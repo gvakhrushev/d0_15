@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 # D0_CI_TIMEOUT_SECONDS=900
-"""Solder response of the degree-3 orthogonal connection Euler.
+"""Quadratic solder response of the degree-3 orthogonal connection Euler.
 
-The link correction does not contain this Euler. In the Gram chart
-H(q)=q eta/2 the constant derivative has rank 10 and unique direction
-q=-eta. Every constant root has det(I + eta q/2)=0. A solder jet of
-degrees 0..3 has linear image rank 15 and does contain the forcing.
-The metric Euler of that jet is not computed here.
+Link corrections do not contain this Euler. In the Gram chart the
+quadratic solder equations do, and every solution has frame determinant
+zero. The constant root on that variety is q=-2 eta.
 """
-
-"""Exact quadratic solder response of the degree-3 orthogonal connection Euler."""
 import ast
 from fractions import Fraction
 from itertools import combinations
@@ -181,7 +177,7 @@ def run_ray(name, dress, probe, sign):
         print("SOLDER_JET_IMAGE", rank, consistent, len(jet_columns), flush=True)
         minus_eta = [Fraction(item) for item in (-1, 0, 0, 0, 1, 0, 0, 1, 0, 1)]
         if rank != 15 or not consistent:
-            raise SystemExit("solder jet image")
+            raise AssertionError("solder jet image %s %s" % (rank, consistent))
 
         # A perturbative solder correction around the registered flat frame
         # cannot change its degree-0 term.  The first ten columns above are
@@ -218,7 +214,7 @@ def run_ray(name, dress, probe, sign):
         print("CONSTANT_SOLDER", constant_rank, constant_ok, [str(value) for value in constant_solution], flush=True)
         got_solution = [Fraction(sp.together(value)) for value in constant_solution]
         if constant_rank != 10 or not constant_ok or got_solution != minus_eta:
-            raise SystemExit("constant solder %s" % got_solution)
+            raise AssertionError("constant solder %s" % got_solution)
         for scale in (0, 1, 2):
             values = [scale * item for item in minus_eta]
             got = contract(flux, rows_of(frame_matrix(values)), 3)
@@ -258,7 +254,7 @@ def run_ray(name, dress, probe, sign):
             remainder = sp.reduced(frame, list(basis), *qs)[1]
             print("DET_IN_IDEAL", sp.expand(remainder) == 0, flush=True)
             if sp.expand(remainder) != 0:
-                raise SystemExit("determinant")
+                raise AssertionError("determinant not in the solder ideal")
             print("DET_REMAINDER", sp.factor(remainder), flush=True)
         except TimeoutError:
             print("GROEBNER_TIMEOUT", flush=True)
