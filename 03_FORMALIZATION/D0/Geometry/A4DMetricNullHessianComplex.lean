@@ -100,6 +100,1530 @@ def cCoeff (i : Fin 24) (j : Fin 10) (r : Fin 4) : ℚ :=
 def cMatrix (d : Fin 4 → ℂ) : Matrix (Fin 24) (Fin 10) ℂ := fun i j =>
   ∑ r : Fin 4, (cCoeff i j r : ℂ) * d r
 
+
+/-- Direct literal view of the same #292 coefficient table, used to keep
+large exact certificates computationally small. The bridge theorem below
+proves it entrywise equal to `cMatrix`. -/
+def cMatrixLit (d : Fin 4 → ℂ) : Matrix (Fin 24) (Fin 10) ℂ := fun i j =>
+  match i.val, j.val with
+  | 0, 5 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 0, 6 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 0, 7 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 0, 9 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 1, 4 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 1, 5 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 1, 8 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 1, 9 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 2, 4 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 2, 6 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 2, 7 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 2, 8 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 3, 1 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 3, 2 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 4, 1 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 4, 3 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 5, 2 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 5, 3 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 6, 2 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 6, 3 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 6, 7 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 6, 9 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 7, 1 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 7, 5 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 8, 1 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 8, 6 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 9, 0 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 9, 2 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 9, 8 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 9, 9 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 10, 0 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 10, 3 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 10, 7 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 10, 8 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 11, 5 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 11, 6 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 12, 2 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 12, 5 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 13, 1 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 13, 3 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 13, 4 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 13, 9 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 14, 2 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 14, 8 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 15, 0 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 15, 1 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 15, 6 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 15, 9 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 16, 5 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 16, 8 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 17, 0 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 17, 3 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 17, 4 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 17, 6 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 18, 3 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 18, 6 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 19, 3 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 19, 8 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 20, 1 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 20, 2 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 20, 4 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 20, 7 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 21, 6 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 21, 8 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 22, 0 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 22, 1 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 22, 5 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 22, 7 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 23, 0 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 23, 2 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 23, 4 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 23, 5 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | _, _ => 0
+
+private theorem cMatrix_eq_lit_0_0 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_1 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_2 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_3 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_4 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_5 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_6 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_7 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_8 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_0_9 (d : Fin 4 → ℂ) :
+    cMatrix d (0 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (0 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_0 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_1 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_2 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_3 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_4 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_5 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_6 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_7 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_8 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_1_9 (d : Fin 4 → ℂ) :
+    cMatrix d (1 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (1 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_0 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_1 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_2 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_3 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_4 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_5 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_6 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_7 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_8 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_2_9 (d : Fin 4 → ℂ) :
+    cMatrix d (2 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (2 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_0 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_1 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_2 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_3 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_4 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_5 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_6 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_7 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_8 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_3_9 (d : Fin 4 → ℂ) :
+    cMatrix d (3 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (3 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_0 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_1 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_2 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_3 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_4 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_5 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_6 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_7 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_8 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_4_9 (d : Fin 4 → ℂ) :
+    cMatrix d (4 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (4 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_0 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_1 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_2 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_3 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_4 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_5 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_6 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_7 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_8 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_5_9 (d : Fin 4 → ℂ) :
+    cMatrix d (5 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (5 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_0 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_1 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_2 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_3 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_4 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_5 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_6 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_7 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_8 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_6_9 (d : Fin 4 → ℂ) :
+    cMatrix d (6 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (6 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_0 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_1 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_2 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_3 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_4 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_5 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_6 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_7 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_8 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_7_9 (d : Fin 4 → ℂ) :
+    cMatrix d (7 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (7 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_0 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_1 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_2 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_3 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_4 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_5 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_6 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_7 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_8 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_8_9 (d : Fin 4 → ℂ) :
+    cMatrix d (8 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (8 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_0 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_1 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_2 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_3 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_4 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_5 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_6 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_7 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_8 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_9_9 (d : Fin 4 → ℂ) :
+    cMatrix d (9 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (9 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_0 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_1 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_2 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_3 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_4 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_5 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_6 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_7 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_8 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_10_9 (d : Fin 4 → ℂ) :
+    cMatrix d (10 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (10 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_0 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_1 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_2 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_3 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_4 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_5 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_6 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_7 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_8 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_11_9 (d : Fin 4 → ℂ) :
+    cMatrix d (11 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (11 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_0 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_1 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_2 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_3 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_4 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_5 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_6 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_7 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_8 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_12_9 (d : Fin 4 → ℂ) :
+    cMatrix d (12 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (12 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_0 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_1 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_2 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_3 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_4 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_5 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_6 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_7 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_8 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_13_9 (d : Fin 4 → ℂ) :
+    cMatrix d (13 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (13 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_0 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_1 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_2 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_3 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_4 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_5 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_6 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_7 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_8 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_14_9 (d : Fin 4 → ℂ) :
+    cMatrix d (14 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (14 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_0 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_1 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_2 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_3 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_4 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_5 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_6 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_7 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_8 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_15_9 (d : Fin 4 → ℂ) :
+    cMatrix d (15 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (15 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_0 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_1 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_2 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_3 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_4 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_5 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_6 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_7 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_8 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_16_9 (d : Fin 4 → ℂ) :
+    cMatrix d (16 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (16 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_0 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_1 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_2 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_3 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_4 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_5 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_6 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_7 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_8 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_17_9 (d : Fin 4 → ℂ) :
+    cMatrix d (17 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (17 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_0 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_1 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_2 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_3 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_4 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_5 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_6 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_7 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_8 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_18_9 (d : Fin 4 → ℂ) :
+    cMatrix d (18 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (18 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_0 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_1 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_2 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_3 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_4 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_5 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_6 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_7 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_8 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_19_9 (d : Fin 4 → ℂ) :
+    cMatrix d (19 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (19 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_0 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_1 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_2 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_3 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_4 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_5 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_6 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_7 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_8 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_20_9 (d : Fin 4 → ℂ) :
+    cMatrix d (20 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (20 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_0 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_1 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_2 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_3 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_4 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_5 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_6 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_7 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_8 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_21_9 (d : Fin 4 → ℂ) :
+    cMatrix d (21 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (21 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_0 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_1 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_2 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_3 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_4 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_5 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_6 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_7 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_8 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_22_9 (d : Fin 4 → ℂ) :
+    cMatrix d (22 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (22 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_0 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (0 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (0 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_1 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (1 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (1 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_2 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (2 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (2 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_3 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (3 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (3 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_4 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (4 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (4 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_5 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (5 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (5 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_6 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (6 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (6 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_7 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (7 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (7 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_8 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (8 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (8 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_lit_23_9 (d : Fin 4 → ℂ) :
+    cMatrix d (23 : Fin 24) (9 : Fin 10) =
+      cMatrixLit d (23 : Fin 24) (9 : Fin 10) := by
+  norm_num [cMatrix, cMatrixLit, cCoeff, Fin.sum_univ_succ]
+
+theorem cMatrix_eq_lit (d : Fin 4 → ℂ) : cMatrix d = cMatrixLit d := by
+  ext i j
+  fin_cases i <;> fin_cases j
+  · exact cMatrix_eq_lit_0_0 d
+  · exact cMatrix_eq_lit_0_1 d
+  · exact cMatrix_eq_lit_0_2 d
+  · exact cMatrix_eq_lit_0_3 d
+  · exact cMatrix_eq_lit_0_4 d
+  · exact cMatrix_eq_lit_0_5 d
+  · exact cMatrix_eq_lit_0_6 d
+  · exact cMatrix_eq_lit_0_7 d
+  · exact cMatrix_eq_lit_0_8 d
+  · exact cMatrix_eq_lit_0_9 d
+  · exact cMatrix_eq_lit_1_0 d
+  · exact cMatrix_eq_lit_1_1 d
+  · exact cMatrix_eq_lit_1_2 d
+  · exact cMatrix_eq_lit_1_3 d
+  · exact cMatrix_eq_lit_1_4 d
+  · exact cMatrix_eq_lit_1_5 d
+  · exact cMatrix_eq_lit_1_6 d
+  · exact cMatrix_eq_lit_1_7 d
+  · exact cMatrix_eq_lit_1_8 d
+  · exact cMatrix_eq_lit_1_9 d
+  · exact cMatrix_eq_lit_2_0 d
+  · exact cMatrix_eq_lit_2_1 d
+  · exact cMatrix_eq_lit_2_2 d
+  · exact cMatrix_eq_lit_2_3 d
+  · exact cMatrix_eq_lit_2_4 d
+  · exact cMatrix_eq_lit_2_5 d
+  · exact cMatrix_eq_lit_2_6 d
+  · exact cMatrix_eq_lit_2_7 d
+  · exact cMatrix_eq_lit_2_8 d
+  · exact cMatrix_eq_lit_2_9 d
+  · exact cMatrix_eq_lit_3_0 d
+  · exact cMatrix_eq_lit_3_1 d
+  · exact cMatrix_eq_lit_3_2 d
+  · exact cMatrix_eq_lit_3_3 d
+  · exact cMatrix_eq_lit_3_4 d
+  · exact cMatrix_eq_lit_3_5 d
+  · exact cMatrix_eq_lit_3_6 d
+  · exact cMatrix_eq_lit_3_7 d
+  · exact cMatrix_eq_lit_3_8 d
+  · exact cMatrix_eq_lit_3_9 d
+  · exact cMatrix_eq_lit_4_0 d
+  · exact cMatrix_eq_lit_4_1 d
+  · exact cMatrix_eq_lit_4_2 d
+  · exact cMatrix_eq_lit_4_3 d
+  · exact cMatrix_eq_lit_4_4 d
+  · exact cMatrix_eq_lit_4_5 d
+  · exact cMatrix_eq_lit_4_6 d
+  · exact cMatrix_eq_lit_4_7 d
+  · exact cMatrix_eq_lit_4_8 d
+  · exact cMatrix_eq_lit_4_9 d
+  · exact cMatrix_eq_lit_5_0 d
+  · exact cMatrix_eq_lit_5_1 d
+  · exact cMatrix_eq_lit_5_2 d
+  · exact cMatrix_eq_lit_5_3 d
+  · exact cMatrix_eq_lit_5_4 d
+  · exact cMatrix_eq_lit_5_5 d
+  · exact cMatrix_eq_lit_5_6 d
+  · exact cMatrix_eq_lit_5_7 d
+  · exact cMatrix_eq_lit_5_8 d
+  · exact cMatrix_eq_lit_5_9 d
+  · exact cMatrix_eq_lit_6_0 d
+  · exact cMatrix_eq_lit_6_1 d
+  · exact cMatrix_eq_lit_6_2 d
+  · exact cMatrix_eq_lit_6_3 d
+  · exact cMatrix_eq_lit_6_4 d
+  · exact cMatrix_eq_lit_6_5 d
+  · exact cMatrix_eq_lit_6_6 d
+  · exact cMatrix_eq_lit_6_7 d
+  · exact cMatrix_eq_lit_6_8 d
+  · exact cMatrix_eq_lit_6_9 d
+  · exact cMatrix_eq_lit_7_0 d
+  · exact cMatrix_eq_lit_7_1 d
+  · exact cMatrix_eq_lit_7_2 d
+  · exact cMatrix_eq_lit_7_3 d
+  · exact cMatrix_eq_lit_7_4 d
+  · exact cMatrix_eq_lit_7_5 d
+  · exact cMatrix_eq_lit_7_6 d
+  · exact cMatrix_eq_lit_7_7 d
+  · exact cMatrix_eq_lit_7_8 d
+  · exact cMatrix_eq_lit_7_9 d
+  · exact cMatrix_eq_lit_8_0 d
+  · exact cMatrix_eq_lit_8_1 d
+  · exact cMatrix_eq_lit_8_2 d
+  · exact cMatrix_eq_lit_8_3 d
+  · exact cMatrix_eq_lit_8_4 d
+  · exact cMatrix_eq_lit_8_5 d
+  · exact cMatrix_eq_lit_8_6 d
+  · exact cMatrix_eq_lit_8_7 d
+  · exact cMatrix_eq_lit_8_8 d
+  · exact cMatrix_eq_lit_8_9 d
+  · exact cMatrix_eq_lit_9_0 d
+  · exact cMatrix_eq_lit_9_1 d
+  · exact cMatrix_eq_lit_9_2 d
+  · exact cMatrix_eq_lit_9_3 d
+  · exact cMatrix_eq_lit_9_4 d
+  · exact cMatrix_eq_lit_9_5 d
+  · exact cMatrix_eq_lit_9_6 d
+  · exact cMatrix_eq_lit_9_7 d
+  · exact cMatrix_eq_lit_9_8 d
+  · exact cMatrix_eq_lit_9_9 d
+  · exact cMatrix_eq_lit_10_0 d
+  · exact cMatrix_eq_lit_10_1 d
+  · exact cMatrix_eq_lit_10_2 d
+  · exact cMatrix_eq_lit_10_3 d
+  · exact cMatrix_eq_lit_10_4 d
+  · exact cMatrix_eq_lit_10_5 d
+  · exact cMatrix_eq_lit_10_6 d
+  · exact cMatrix_eq_lit_10_7 d
+  · exact cMatrix_eq_lit_10_8 d
+  · exact cMatrix_eq_lit_10_9 d
+  · exact cMatrix_eq_lit_11_0 d
+  · exact cMatrix_eq_lit_11_1 d
+  · exact cMatrix_eq_lit_11_2 d
+  · exact cMatrix_eq_lit_11_3 d
+  · exact cMatrix_eq_lit_11_4 d
+  · exact cMatrix_eq_lit_11_5 d
+  · exact cMatrix_eq_lit_11_6 d
+  · exact cMatrix_eq_lit_11_7 d
+  · exact cMatrix_eq_lit_11_8 d
+  · exact cMatrix_eq_lit_11_9 d
+  · exact cMatrix_eq_lit_12_0 d
+  · exact cMatrix_eq_lit_12_1 d
+  · exact cMatrix_eq_lit_12_2 d
+  · exact cMatrix_eq_lit_12_3 d
+  · exact cMatrix_eq_lit_12_4 d
+  · exact cMatrix_eq_lit_12_5 d
+  · exact cMatrix_eq_lit_12_6 d
+  · exact cMatrix_eq_lit_12_7 d
+  · exact cMatrix_eq_lit_12_8 d
+  · exact cMatrix_eq_lit_12_9 d
+  · exact cMatrix_eq_lit_13_0 d
+  · exact cMatrix_eq_lit_13_1 d
+  · exact cMatrix_eq_lit_13_2 d
+  · exact cMatrix_eq_lit_13_3 d
+  · exact cMatrix_eq_lit_13_4 d
+  · exact cMatrix_eq_lit_13_5 d
+  · exact cMatrix_eq_lit_13_6 d
+  · exact cMatrix_eq_lit_13_7 d
+  · exact cMatrix_eq_lit_13_8 d
+  · exact cMatrix_eq_lit_13_9 d
+  · exact cMatrix_eq_lit_14_0 d
+  · exact cMatrix_eq_lit_14_1 d
+  · exact cMatrix_eq_lit_14_2 d
+  · exact cMatrix_eq_lit_14_3 d
+  · exact cMatrix_eq_lit_14_4 d
+  · exact cMatrix_eq_lit_14_5 d
+  · exact cMatrix_eq_lit_14_6 d
+  · exact cMatrix_eq_lit_14_7 d
+  · exact cMatrix_eq_lit_14_8 d
+  · exact cMatrix_eq_lit_14_9 d
+  · exact cMatrix_eq_lit_15_0 d
+  · exact cMatrix_eq_lit_15_1 d
+  · exact cMatrix_eq_lit_15_2 d
+  · exact cMatrix_eq_lit_15_3 d
+  · exact cMatrix_eq_lit_15_4 d
+  · exact cMatrix_eq_lit_15_5 d
+  · exact cMatrix_eq_lit_15_6 d
+  · exact cMatrix_eq_lit_15_7 d
+  · exact cMatrix_eq_lit_15_8 d
+  · exact cMatrix_eq_lit_15_9 d
+  · exact cMatrix_eq_lit_16_0 d
+  · exact cMatrix_eq_lit_16_1 d
+  · exact cMatrix_eq_lit_16_2 d
+  · exact cMatrix_eq_lit_16_3 d
+  · exact cMatrix_eq_lit_16_4 d
+  · exact cMatrix_eq_lit_16_5 d
+  · exact cMatrix_eq_lit_16_6 d
+  · exact cMatrix_eq_lit_16_7 d
+  · exact cMatrix_eq_lit_16_8 d
+  · exact cMatrix_eq_lit_16_9 d
+  · exact cMatrix_eq_lit_17_0 d
+  · exact cMatrix_eq_lit_17_1 d
+  · exact cMatrix_eq_lit_17_2 d
+  · exact cMatrix_eq_lit_17_3 d
+  · exact cMatrix_eq_lit_17_4 d
+  · exact cMatrix_eq_lit_17_5 d
+  · exact cMatrix_eq_lit_17_6 d
+  · exact cMatrix_eq_lit_17_7 d
+  · exact cMatrix_eq_lit_17_8 d
+  · exact cMatrix_eq_lit_17_9 d
+  · exact cMatrix_eq_lit_18_0 d
+  · exact cMatrix_eq_lit_18_1 d
+  · exact cMatrix_eq_lit_18_2 d
+  · exact cMatrix_eq_lit_18_3 d
+  · exact cMatrix_eq_lit_18_4 d
+  · exact cMatrix_eq_lit_18_5 d
+  · exact cMatrix_eq_lit_18_6 d
+  · exact cMatrix_eq_lit_18_7 d
+  · exact cMatrix_eq_lit_18_8 d
+  · exact cMatrix_eq_lit_18_9 d
+  · exact cMatrix_eq_lit_19_0 d
+  · exact cMatrix_eq_lit_19_1 d
+  · exact cMatrix_eq_lit_19_2 d
+  · exact cMatrix_eq_lit_19_3 d
+  · exact cMatrix_eq_lit_19_4 d
+  · exact cMatrix_eq_lit_19_5 d
+  · exact cMatrix_eq_lit_19_6 d
+  · exact cMatrix_eq_lit_19_7 d
+  · exact cMatrix_eq_lit_19_8 d
+  · exact cMatrix_eq_lit_19_9 d
+  · exact cMatrix_eq_lit_20_0 d
+  · exact cMatrix_eq_lit_20_1 d
+  · exact cMatrix_eq_lit_20_2 d
+  · exact cMatrix_eq_lit_20_3 d
+  · exact cMatrix_eq_lit_20_4 d
+  · exact cMatrix_eq_lit_20_5 d
+  · exact cMatrix_eq_lit_20_6 d
+  · exact cMatrix_eq_lit_20_7 d
+  · exact cMatrix_eq_lit_20_8 d
+  · exact cMatrix_eq_lit_20_9 d
+  · exact cMatrix_eq_lit_21_0 d
+  · exact cMatrix_eq_lit_21_1 d
+  · exact cMatrix_eq_lit_21_2 d
+  · exact cMatrix_eq_lit_21_3 d
+  · exact cMatrix_eq_lit_21_4 d
+  · exact cMatrix_eq_lit_21_5 d
+  · exact cMatrix_eq_lit_21_6 d
+  · exact cMatrix_eq_lit_21_7 d
+  · exact cMatrix_eq_lit_21_8 d
+  · exact cMatrix_eq_lit_21_9 d
+  · exact cMatrix_eq_lit_22_0 d
+  · exact cMatrix_eq_lit_22_1 d
+  · exact cMatrix_eq_lit_22_2 d
+  · exact cMatrix_eq_lit_22_3 d
+  · exact cMatrix_eq_lit_22_4 d
+  · exact cMatrix_eq_lit_22_5 d
+  · exact cMatrix_eq_lit_22_6 d
+  · exact cMatrix_eq_lit_22_7 d
+  · exact cMatrix_eq_lit_22_8 d
+  · exact cMatrix_eq_lit_22_9 d
+  · exact cMatrix_eq_lit_23_0 d
+  · exact cMatrix_eq_lit_23_1 d
+  · exact cMatrix_eq_lit_23_2 d
+  · exact cMatrix_eq_lit_23_3 d
+  · exact cMatrix_eq_lit_23_4 d
+  · exact cMatrix_eq_lit_23_5 d
+  · exact cMatrix_eq_lit_23_6 d
+  · exact cMatrix_eq_lit_23_7 d
+  · exact cMatrix_eq_lit_23_8 d
+  · exact cMatrix_eq_lit_23_9 d
+
 def q0 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
   match j.val with
   | 0 => d 0 * d 0
@@ -117,122 +1641,146 @@ def q0 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
 
 private theorem cMatrix_q0_zero_row_0 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (0 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_1 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (1 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_2 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (2 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_3 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (3 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_4 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (4 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_5 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (5 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_6 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (6 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_7 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (7 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_8 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (8 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_9 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (9 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_10 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (10 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_11 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (11 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_12 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (12 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_13 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (13 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_14 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (14 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_15 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (15 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_16 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (16 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_17 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (17 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_18 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (18 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_19 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (19 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_20 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (20 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_21 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (21 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_22 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (22 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 private theorem cMatrix_q0_zero_row_23 (d : Fin 4 → ℂ) :
     ((cMatrix d).mulVec (q0 d)) (23 : Fin 24) = 0 := by
-  simp [cMatrix, cCoeff, q0, Matrix.mulVec, dotProduct,
+  rw [cMatrix_eq_lit d]
+  simp [cMatrixLit, q0, Matrix.mulVec, dotProduct,
     Fin.sum_univ_succ] <;> ring
 
 theorem cMatrix_q0_zero (d : Fin 4 → ℂ) :
@@ -1949,67 +3497,80 @@ def adj_3_2 (d : Fin 4 → ℂ) : Matrix (Fin 9) (Fin 9) ℂ :=
     | 7 => adj_3_2_row_7 d0 d1 d2 d3 j
     | 8 => adj_3_2_row_8 d0 d1 d2 d3 j
     | _ => 0
+private theorem minor_0_0_eq_lit (d : Fin 4 → ℂ) :
+    minor_0_0 d = (cMatrixLit d).submatrix rows_0_0 cols_0_0 := by
+  rw [minor_0_0, cMatrix_eq_lit]
+
 private theorem minor_0_0_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (0 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (1 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (2 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (3 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (4 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (5 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (6 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (7 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_0_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_0 d * adj_0_0 d) (8 : Fin 9) j =
       (detPoly_0_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_0_0_eq_lit]
   fin_cases j <;>
-    simp [minor_0_0, cMatrix, cCoeff, rows_0_0, cols_0_0, adj_0_0,
+    simp [cMatrixLit, rows_0_0, cols_0_0, adj_0_0,
       adj_0_0_row_0, adj_0_0_row_1, adj_0_0_row_2, adj_0_0_row_3, adj_0_0_row_4, adj_0_0_row_5, adj_0_0_row_6, adj_0_0_row_7, adj_0_0_row_8, detPoly_0_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_0_0_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2027,67 +3588,80 @@ theorem minor_0_0_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_0_0_scaled_inverse_row_7 d j
   · exact minor_0_0_scaled_inverse_row_8 d j
 
+private theorem minor_0_1_eq_lit (d : Fin 4 → ℂ) :
+    minor_0_1 d = (cMatrixLit d).submatrix rows_0_1 cols_0_1 := by
+  rw [minor_0_1, cMatrix_eq_lit]
+
 private theorem minor_0_1_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (0 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (1 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (2 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (3 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (4 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (5 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (6 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (7 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_0_1_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_0_1 d * adj_0_1 d) (8 : Fin 9) j =
       (detPoly_0_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_0_1_eq_lit]
   fin_cases j <;>
-    simp [minor_0_1, cMatrix, cCoeff, rows_0_1, cols_0_1, adj_0_1,
+    simp [cMatrixLit, rows_0_1, cols_0_1, adj_0_1,
       adj_0_1_row_0, adj_0_1_row_1, adj_0_1_row_2, adj_0_1_row_3, adj_0_1_row_4, adj_0_1_row_5, adj_0_1_row_6, adj_0_1_row_7, adj_0_1_row_8, detPoly_0_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_0_1_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2105,67 +3679,80 @@ theorem minor_0_1_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_0_1_scaled_inverse_row_7 d j
   · exact minor_0_1_scaled_inverse_row_8 d j
 
+private theorem minor_1_0_eq_lit (d : Fin 4 → ℂ) :
+    minor_1_0 d = (cMatrixLit d).submatrix rows_1_0 cols_1_0 := by
+  rw [minor_1_0, cMatrix_eq_lit]
+
 private theorem minor_1_0_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (0 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (1 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (2 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (3 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (4 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (5 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (6 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (7 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_0_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_0 d * adj_1_0 d) (8 : Fin 9) j =
       (detPoly_1_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_1_0_eq_lit]
   fin_cases j <;>
-    simp [minor_1_0, cMatrix, cCoeff, rows_1_0, cols_1_0, adj_1_0,
+    simp [cMatrixLit, rows_1_0, cols_1_0, adj_1_0,
       adj_1_0_row_0, adj_1_0_row_1, adj_1_0_row_2, adj_1_0_row_3, adj_1_0_row_4, adj_1_0_row_5, adj_1_0_row_6, adj_1_0_row_7, adj_1_0_row_8, detPoly_1_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_1_0_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2183,67 +3770,80 @@ theorem minor_1_0_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_1_0_scaled_inverse_row_7 d j
   · exact minor_1_0_scaled_inverse_row_8 d j
 
+private theorem minor_1_1_eq_lit (d : Fin 4 → ℂ) :
+    minor_1_1 d = (cMatrixLit d).submatrix rows_1_1 cols_1_1 := by
+  rw [minor_1_1, cMatrix_eq_lit]
+
 private theorem minor_1_1_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (0 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (1 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (2 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (3 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (4 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (5 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (6 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (7 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (8 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_1_1_eq_lit]
   fin_cases j <;>
-    simp [minor_1_1, cMatrix, cCoeff, rows_1_1, cols_1_1, adj_1_1,
+    simp [cMatrixLit, rows_1_1, cols_1_1, adj_1_1,
       adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_1_1_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2261,67 +3861,80 @@ theorem minor_1_1_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_1_1_scaled_inverse_row_7 d j
   · exact minor_1_1_scaled_inverse_row_8 d j
 
+private theorem minor_1_2_eq_lit (d : Fin 4 → ℂ) :
+    minor_1_2 d = (cMatrixLit d).submatrix rows_1_2 cols_1_2 := by
+  rw [minor_1_2, cMatrix_eq_lit]
+
 private theorem minor_1_2_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (0 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (1 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (2 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (3 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (4 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (5 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (6 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (7 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (8 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_1_2_eq_lit]
   fin_cases j <;>
-    simp [minor_1_2, cMatrix, cCoeff, rows_1_2, cols_1_2, adj_1_2,
+    simp [cMatrixLit, rows_1_2, cols_1_2, adj_1_2,
       adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_1_2_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2339,67 +3952,80 @@ theorem minor_1_2_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_1_2_scaled_inverse_row_7 d j
   · exact minor_1_2_scaled_inverse_row_8 d j
 
+private theorem minor_2_0_eq_lit (d : Fin 4 → ℂ) :
+    minor_2_0 d = (cMatrixLit d).submatrix rows_2_0 cols_2_0 := by
+  rw [minor_2_0, cMatrix_eq_lit]
+
 private theorem minor_2_0_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (0 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (1 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (2 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (3 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (4 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (5 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (6 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (7 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_0_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_0 d * adj_2_0 d) (8 : Fin 9) j =
       (detPoly_2_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_2_0_eq_lit]
   fin_cases j <;>
-    simp [minor_2_0, cMatrix, cCoeff, rows_2_0, cols_2_0, adj_2_0,
+    simp [cMatrixLit, rows_2_0, cols_2_0, adj_2_0,
       adj_2_0_row_0, adj_2_0_row_1, adj_2_0_row_2, adj_2_0_row_3, adj_2_0_row_4, adj_2_0_row_5, adj_2_0_row_6, adj_2_0_row_7, adj_2_0_row_8, detPoly_2_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_2_0_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2417,67 +4043,80 @@ theorem minor_2_0_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_2_0_scaled_inverse_row_7 d j
   · exact minor_2_0_scaled_inverse_row_8 d j
 
+private theorem minor_2_1_eq_lit (d : Fin 4 → ℂ) :
+    minor_2_1 d = (cMatrixLit d).submatrix rows_2_1 cols_2_1 := by
+  rw [minor_2_1, cMatrix_eq_lit]
+
 private theorem minor_2_1_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (0 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (1 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (2 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (3 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (4 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (5 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (6 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (7 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (8 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_2_1_eq_lit]
   fin_cases j <;>
-    simp [minor_2_1, cMatrix, cCoeff, rows_2_1, cols_2_1, adj_2_1,
+    simp [cMatrixLit, rows_2_1, cols_2_1, adj_2_1,
       adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_2_1_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2495,67 +4134,80 @@ theorem minor_2_1_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_2_1_scaled_inverse_row_7 d j
   · exact minor_2_1_scaled_inverse_row_8 d j
 
+private theorem minor_2_2_eq_lit (d : Fin 4 → ℂ) :
+    minor_2_2 d = (cMatrixLit d).submatrix rows_2_2 cols_2_2 := by
+  rw [minor_2_2, cMatrix_eq_lit]
+
 private theorem minor_2_2_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (0 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (1 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (2 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (3 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (4 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (5 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (6 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (7 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (8 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_2_2_eq_lit]
   fin_cases j <;>
-    simp [minor_2_2, cMatrix, cCoeff, rows_2_2, cols_2_2, adj_2_2,
+    simp [cMatrixLit, rows_2_2, cols_2_2, adj_2_2,
       adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_2_2_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2573,67 +4225,80 @@ theorem minor_2_2_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_2_2_scaled_inverse_row_7 d j
   · exact minor_2_2_scaled_inverse_row_8 d j
 
+private theorem minor_3_0_eq_lit (d : Fin 4 → ℂ) :
+    minor_3_0 d = (cMatrixLit d).submatrix rows_3_0 cols_3_0 := by
+  rw [minor_3_0, cMatrix_eq_lit]
+
 private theorem minor_3_0_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (0 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (1 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (2 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (3 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (4 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (5 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (6 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (7 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_0_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_0 d * adj_3_0 d) (8 : Fin 9) j =
       (detPoly_3_0 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_3_0_eq_lit]
   fin_cases j <;>
-    simp [minor_3_0, cMatrix, cCoeff, rows_3_0, cols_3_0, adj_3_0,
+    simp [cMatrixLit, rows_3_0, cols_3_0, adj_3_0,
       adj_3_0_row_0, adj_3_0_row_1, adj_3_0_row_2, adj_3_0_row_3, adj_3_0_row_4, adj_3_0_row_5, adj_3_0_row_6, adj_3_0_row_7, adj_3_0_row_8, detPoly_3_0, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_3_0_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2651,67 +4316,80 @@ theorem minor_3_0_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_3_0_scaled_inverse_row_7 d j
   · exact minor_3_0_scaled_inverse_row_8 d j
 
+private theorem minor_3_1_eq_lit (d : Fin 4 → ℂ) :
+    minor_3_1 d = (cMatrixLit d).submatrix rows_3_1 cols_3_1 := by
+  rw [minor_3_1, cMatrix_eq_lit]
+
 private theorem minor_3_1_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (0 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (1 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (2 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (3 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (4 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (5 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (6 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (7 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (8 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_3_1_eq_lit]
   fin_cases j <;>
-    simp [minor_3_1, cMatrix, cCoeff, rows_3_1, cols_3_1, adj_3_1,
+    simp [cMatrixLit, rows_3_1, cols_3_1, adj_3_1,
       adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_3_1_scaled_inverse (d : Fin 4 → ℂ) :
@@ -2729,67 +4407,80 @@ theorem minor_3_1_scaled_inverse (d : Fin 4 → ℂ) :
   · exact minor_3_1_scaled_inverse_row_7 d j
   · exact minor_3_1_scaled_inverse_row_8 d j
 
+private theorem minor_3_2_eq_lit (d : Fin 4 → ℂ) :
+    minor_3_2 d = (cMatrixLit d).submatrix rows_3_2 cols_3_2 := by
+  rw [minor_3_2, cMatrix_eq_lit]
+
 private theorem minor_3_2_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (0 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (1 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (2 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (3 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (4 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (5 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (6 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (7 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (8 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
+  rw [minor_3_2_eq_lit]
   fin_cases j <;>
-    simp [minor_3_2, cMatrix, cCoeff, rows_3_2, cols_3_2, adj_3_2,
+    simp [cMatrixLit, rows_3_2, cols_3_2, adj_3_2,
       adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 theorem minor_3_2_scaled_inverse (d : Fin 4 → ℂ) :
