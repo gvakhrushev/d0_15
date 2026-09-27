@@ -155,3 +155,35 @@ Use it only as an algebraic/nodal reparameterization at present: the two
 half-angle sign changes cancel, so \(d_r\) and \(q_0=dd^T\) remain
 single-valued on the original torus. Spinor and Kerr--Schild language is
 interpretive until separate null/representation theorems are certified.
+
+
+## CONTROL synthesis update — harmonic tower / N0 odd gate
+
+The follow-up packet
+[A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md](A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md)
+reconciles the later exact carrier results with the nonlinear continuation
+queue.
+
+Execution consequences:
+
+- merged #290 remains the owner of the physical same-carrier/cross-character
+  split; the historical `8/5` residual is not reused as moving-germ stress;
+- merged #296 remains the fixed-link harmonic-forcing owner and is not read as
+  a contradiction to same-carrier absorption after connection continuation;
+- the algebraic harmonic-tower compression `M1=0`,
+  `F_n=sum_{k>=2} binom(n,k) M_k`, universal leading `M2`, and
+  `sum binom(n,2)s^(n-1)=s/(1-s)^3` is now isolated as the bounded worker
+  `WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT` instead of being left in chat;
+- #260 is narrowed to the degree-7 odd resonant connection Euler on
+  `N0=span{lambda1,lambda3,lambda4,lambda6}`; its solved degree-6 even
+  correction is not reopened;
+- #275 may prepare the same-source slow-response algebra in parallel and must
+  block only the final substitutions that genuinely depend on the missing
+  odd-7 coefficient;
+- #299 should spend effort only on making the existing exact rank/cokernel
+  Lean proof cheap enough to compile, not on expanding scientific scope;
+- #202 keeps its own untruncated stationary-witness/no-go component and does
+  not absorb the N0/germ calculation.
+
+This update is a dependency/ownership refinement. It introduces no new
+Einstein, stress, continuum, BOOK, ClaimMap, or release-status assertion.
