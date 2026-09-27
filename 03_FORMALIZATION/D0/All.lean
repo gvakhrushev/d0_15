@@ -301,6 +301,7 @@ import D0.Geometry.A4DLocatedFrameCompatibilityBoundary
 import D0.Geometry.A4DLocatedMatterCellEnergy
 import D0.Geometry.A4DLocatedPrimalDualCell
 import D0.Geometry.A4DLocatedTopologicalStar
+import D0.Geometry.A4DMetricNullHessianComplex
 import D0.Geometry.A4DMetricStarSignatureBoundary
 import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DMovingDifferentialSecondJet
@@ -475,6 +476,7 @@ import D0.Gravity.A1RieszMismatch
 import D0.Gravity.A2CompensatorNoether
 import D0.Gravity.A4DLinearizedMetricResponse
 import D0.Gravity.A4DParentWardStressDescent
+import D0.Gravity.A4DSchurEinsteinDirectIdentification
 import D0.Gravity.BlackHoleCapacityA4
 import D0.Gravity.BoundaryRelaxationSpectrum
 import D0.Gravity.CompactnessLimit
