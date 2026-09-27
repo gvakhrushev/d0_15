@@ -78,6 +78,28 @@
       ],
       "exit_condition": "Compute the first nonzero joint reduced E_K/E_Q germ on the diagonal four-dimensional source-invisible sector and certify whether the joint vacuum zero is isolated or supports a nontrivial curved germ.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM.md"
+    },
+    {
+      "id": "EXP-A4D-AFFINE-COFRAME-PERIOD-DESCENT",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Classify whether the owned flat forward-coframe/affine gauge map D0 has a typed canonical descent or period lift into the L=4 real (Q,K) carrier after the already-owned local-Lorentz quotient, or prove an exact representation/selector obstruction; any surviving map must be tested orbit-by-orbit on the physical conjugate carrier.",
+      "brief": "00_WORK/tasks/EXP-A4D-AFFINE-COFRAME-PERIOD-DESCENT.md"
+    },
+    {
+      "id": "WRK-A4D-METRIC-ONLY-SEED-SYMBOL-RELATION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "On the same conjugate-paired L=4 real metric-amplitude carrier used by #262, compare the exact two-dimensional metric-only kernel with the realified E_eta/E_sp response symbols and certify the exact intersection/kernel/image relation, without identifying an amplitude plane with an operator span by dimension alone.",
+      "brief": "00_WORK/tasks/WRK-A4D-METRIC-ONLY-SEED-SYMBOL-RELATION.md"
     }
   ]
 }
