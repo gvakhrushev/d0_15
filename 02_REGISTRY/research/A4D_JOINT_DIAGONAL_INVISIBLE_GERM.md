@@ -11,10 +11,10 @@
 
 ```text
 BLOCKED
-J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-5-EULER-MISSING
+J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-6-EVEN-CORRECTION-MISSING
 ```
 
-The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). The real cosine and sine dressings of that ray, after the solved zero-mode and character-\((-1)\) corrections, are curved and jointly stationary through degree 4. The degree-5 connection Euler of those corrected rays is not computed. Neither isolation nor a finite curved germ is claimed.
+The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). The real cosine and sine dressings of that ray, after the solved zero-mode and character-\((-1)\) corrections, are curved and jointly stationary through degree 4. The corrected real cosine and sine rays have zero scalar, connection Euler, and metric Euler through degree 5. The former degree-5 blocker closes by exact vanishing. The next missing step is the degree-6 even-harmonic correction (zero/character-(-1) channels) before the next odd resonant obstruction can be tested. Neither isolation nor a finite curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -130,7 +130,7 @@ At \(z=(-i,-i,-i,-i)\) the character-\((-1)\) Hessian is the same real rank-24 m
 
 The real carrier of this ray uses \(\operatorname{Re}(i^{x_0+x_1+x_2+x_3})\) and \(\operatorname{Im}(i^{x_0+x_1+x_2+x_3})\). Each dressing sources both the zero mode and the character-\((-1)\) mode at order \(t^2\), on coordinates 13, 15, 20, and 22. Both Hessians have rank 24. The cosine corrections are \(\tfrac14 K_1\) on Roles 0 and 1 in each channel. The sine zero-mode correction is the same vector, and its character-\((-1)\) correction is the negative. After substitution, both dressings have a nonzero degree-1 plaquette holonomy, while the scalar, the 24-component connection Euler, and the constant-solder metric Euler vanish through degree 4.
 
-The first missing coefficient is the degree-5 connection Euler of these corrected real rays.
+The degree-5 resonant connection Euler vanishes exactly for both corrected real dressings, and the degree-5 metric Euler also vanishes. The next missing object is the degree-6 even-harmonic forcing/correction; only after solving it is the next odd resonant obstruction well-defined.
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 
