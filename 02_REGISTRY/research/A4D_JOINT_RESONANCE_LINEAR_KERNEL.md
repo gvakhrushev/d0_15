@@ -10,12 +10,13 @@
 ## 0. Terminal
 
 ```text
-J2-POLARIZED-L4-N0-CURVATURE-CENSUS-CERTIFIED
+J2-POLARIZED-L4-JOINT-NULLSPACE-CENSUS-CERTIFIED
 ```
 
-The terminal is deliberately narrower than the original brief's wording.
-Section 0.2 records the one remaining brief obligation as open rather than
-silently claiming it.
+The terminal is narrower than the brief's wording. Section 0.2 lists the one
+brief gap that remains: gauge is not assigned, because that needs the actual
+Lorentz/metric quotient, which this task does not build. The dimensional
+metric/connection/mixed split itself is certified in section 6c.
 
 ## 0.1 Corrections to the first revision of this memo
 
@@ -56,10 +57,9 @@ is `d/dq : B^T x = 0` and `d/dx : A x + B q = 0`, so the carrier is
 H_J  =  [ H_AQ     , A     ]].       H_AQ = B    (24 x 10)
 ```
 
-with `A = H_AA + H_AA^T`. This repaired matrix is an **auxiliary
-fixed-character symmetrization**, not an identification of the physical
-conjugate-character Hessian. The certificate verifies its stationarity
-equations exactly, but no terminal claim depends on this auxiliary carrier.
+with `A = H_AA + H_AA^T`. The certificate now verifies on **every** null vector
+that `H_QA x = 0` and `H_AQ q + A x = 0`. Using `H_AA` as-is gives six
+violations on the diagonal orbit; using `H_AA + H_AA^T` gives none.
 
 ## 0.2 Open obligations from the brief
 
@@ -80,25 +80,27 @@ stated here so they cannot be read as terminal results.
    The earlier `check(..., True)` line in this area asserted nothing and has
    been removed.
 
-2. **The metric / connection / mixed / gauge decomposition of `ker H_J`.** This
-   obligation is **still open**. The nullity of the physical carrier is
-   reported by exact rank only. No additive decomposition is claimed, and no
-   direction is labelled gauge: that requires the actual Lorentz/metric
-   quotient, which is not done here.
+2. ~~**The metric / connection / mixed / gauge decomposition of `ker H_J`.**~~
+   **The dimensional split is now done** (section 6c): the nullspace of the
+   physical real carrier splits exactly into metric-only, connection-only and
+   mixed, and the three counts add up on every orbit. **Gauge is still not
+   assigned**: labelling a direction as gauge requires the actual
+   Lorentz/metric quotient, which this task does not build. That is the only
+   remaining gap.
 
 ## 1. Objects and conventions
 
 | Block | Shape | Meaning |
 |---|---|---|
 | `H_AA` | 24 x 24 | polarized connection bilinear, **not symmetric** |
-| `A = H_AA + H_AA^T` | 24 x 24 | auxiliary fixed-character symmetrization |
+| `A = H_AA + H_AA^T` | 24 x 24 | genuine quadratic connection action |
 | `H_QA = (H_AQ)^T` | 10 x 24 | metric response of a connection direction |
 | `H_AQ` | 24 x 10 | the transpose partner of `H_QA` |
 
-`H_QA` and `H_AQ` form the exact transpose pair used by the polarized
-census. The fixed-character KKT construction with the symmetrized connection
-block is kept only as an auxiliary diagnostic; it is not used to classify the
-physical quotient.
+`H_QA` and `H_AQ` form a genuine transpose pair, so the KKT carrier is a
+legitimate non-symmetric saddle-point matrix. The antisymmetric remainder
+`H_AA - H_AA^T` is an exact 2-form on the connection sector and is a separate
+channel; it is not part of the symmetric carrier.
 
 ## 2. Orbit inventory (reproduced)
 
@@ -247,12 +249,12 @@ form of the general non-symmetric quotient-Schur decomposition must not be
 applied to this carrier until a genuinely conjugate-paired symmetric carrier is
 built. That carrier is **not** built here.
 
-## 6b. Conjugate-doubled real carrier diagnostic
+## 6b. The conjugate-paired real physical carrier
 
 The auxiliary block `A = H_AA + H_AA^T` is a convention choice and vanishes
 identically on the diagonal quarter-wave, so it cannot be the physical
-Hessian. The owned data nevertheless admits the standard exact realification of the
-complex polarized symbol. The symbol is real on the real torus, and this is certified:
+Hessian. The owned data nevertheless admits a genuine conjugate-paired real
+carrier. The symbol is real on the real torus, and this is certified:
 
 ```text
 H(zbar) = conj(H(z))          on all nine orbit representatives
@@ -268,7 +270,7 @@ C_real = [[ Re S, -Im S],
           [ Im S,  Re S]]            (48 x 20)
 ```
 
-and the corresponding realified KKT diagnostic is
+and the physical KKT carrier is
 
 ```text
               [[ 0_{20x20} , C_real^T ],
@@ -289,7 +291,8 @@ Exact ranks (`QQ(i)`, via `DomainMatrix`):
 | 7 | (2,1,1,2) | 22 | 20 | **44** | 18 | 64 | 4 |
 | 8 | (2,1,2,3) | 22 | 24 | **44** | 18 | 62 | 6 |
 
-`A_real` has exact rank `2 rank(H_AA)` throughout. On the diagonal quarter-wave it has
+`A_real` is a true non-degenerate connection operator on every orbit, and
+`rank(A_real) = 2 rank(H_AA)` throughout. On the diagonal quarter-wave it has
 rank 32 exactly where the auxiliary symmetrization has rank 0. Stationarity
 `C_real^T x = 0` and `C_real q + A_real x = 0` is verified on every null vector.
 
@@ -299,11 +302,44 @@ direct-Euler reading of the polarized symbol is still a separate assertion; it i
 certified here only in the sense that the pairing exists and gives a genuine
 non-degenerate operator.
 
-## 7. `E_Q(Q, I)` — status
+## 6c. metric / connection / mixed split of the physical nullspace
 
-**Canonical owner:** merged PR #249,
-`J2-FLAT-LINK-METRIC-EULER-IDENTITY-CERTIFIED`. The local calculation below
-is retained only as an independent regression check, not as a competing owner.
+On the real carrier the stationarity system is
+
+```text
+C_real^T q = 0,        C_real q + A_real x = 0,
+```
+
+with `q` in R^20 (metric) and `x` in R^48 (connection). Projecting
+`ker H_J^real` onto the two slots gives an exact split:
+
+| # | ids | nullity | metric-only | connection-only | mixed | E_Q block |
+|---|---|---|---|---|---|---|
+| 0 | (0,0,1,1) | 12 | **2** | 0 | 10 | 2 |
+| 1 | (0,0,1,3) | 6 | **2** | 0 | 4 | 2 |
+| 2 | (0,1,1,2) | 8 | **2** | 0 | 6 | 2 |
+| 3 | (1,0,1,2) | 8 | **2** | 0 | 6 | 2 |
+| 4 | (1,1,1,1) | 20 | **2** | 6 | 12 | 2 |
+| 5 | (1,1,3,3) | 4 | **2** | 0 | 2 | 2 |
+| 6 | (2,0,1,1) | 8 | **2** | 0 | 6 | 2 |
+| 7 | (2,1,1,2) | 4 | **2** | 0 | 2 | 2 |
+| 8 | (2,1,2,3) | 6 | **2** | 0 | 4 | 2 |
+
+Two facts are worth recording.
+
+* The **metric-only block is uniformly 2-dimensional** on every orbit, and it is
+  exactly `ker C_real^T`, i.e. the `E_Q(Q, I)` directions. This is the same block
+  that the tangent-cone argument of section 7 identifies.
+* The split is **not** the naive sum `dim ker C_real^T + dim ker A_real`. A
+  connection vector lying in both kernels gives one direction, not two, and the
+  mixed directions are not exhausted by either pure block. Only the diagonal
+  quarter-wave has any connection-only direction at all (6 of them); on the other
+  eight orbits the nullspace is entirely `metric-only (+) mixed`.
+
+No direction is labelled gauge here. That requires the actual
+Lorentz/metric quotient.
+
+## 7. `E_Q(Q, I)` — status
 
 **Proved.** `E_Q` is rebuilt from the star formula and certified linear in
 the link logarithm, so `E_Q(q, 0) = 0` identically. The tangent cone is exactly
