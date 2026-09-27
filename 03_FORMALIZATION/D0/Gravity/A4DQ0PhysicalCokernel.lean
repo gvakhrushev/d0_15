@@ -31,7 +31,7 @@ def qi (a b : ℚ) : ℂ := (a : ℂ) + (b : ℂ) * Complex.I
   apply Complex.ext <;> norm_num [qi] <;> ring
 
 @[simp] theorem qi_conj (a b : ℚ) :
-    Complex.conj (qi a b) = qi a (-b) := by
+    star (qi a b) = qi a (-b) := by
   apply Complex.ext <;> norm_num [qi]
 
 @[simp] theorem qi_zero : qi 0 0 = 0 := by
@@ -1606,7 +1606,7 @@ theorem orbit7_rank : Matrix.rank p7 = 23 := by
       simpa using Matrix.rank_le_card_height selectedRows7)
   exact le_antisymm hupper hlower
 
-def leftPair (ell v : Fin 24 → ℂ) : ℂ := ∑ i, Complex.conj (ell i) * v i
+def leftPair (ell v : Fin 24 → ℂ) : ℂ := ∑ i, star (ell i) * v i
 
 theorem ell5_annihilates_cols (j : Fin 34) :
     leftPair ell5 (fun i => p5 i j) = 0 := by
@@ -1636,14 +1636,14 @@ lemma leftPair_mulVec_zero
     leftPair ell (P.mulVec x) = 0 := by
   simp only [leftPair, Matrix.mulVec, dotProduct]
   calc
-    (∑ i, Complex.conj (ell i) * ∑ j, P i j * x j) =
-        ∑ i, ∑ j, Complex.conj (ell i) * (P i j * x j) := by
+    (∑ i, star (ell i) * ∑ j, P i j * x j) =
+        ∑ i, ∑ j, star (ell i) * (P i j * x j) := by
           apply Finset.sum_congr rfl
           intro i hi
           rw [Finset.mul_sum]
-    _ = ∑ j, ∑ i, Complex.conj (ell i) * (P i j * x j) := by
+    _ = ∑ j, ∑ i, star (ell i) * (P i j * x j) := by
           rw [Finset.sum_comm]
-    _ = ∑ j, (∑ i, Complex.conj (ell i) * P i j) * x j := by
+    _ = ∑ j, (∑ i, star (ell i) * P i j) * x j := by
           apply Finset.sum_congr rfl
           intro j hj
           rw [Finset.sum_mul]
@@ -1653,7 +1653,7 @@ lemma leftPair_mulVec_zero
     _ = 0 := by
           apply Finset.sum_eq_zero
           intro j hj
-          rw [show (∑ i, Complex.conj (ell i) * P i j) = 0 by simpa [leftPair] using hcol j]
+          rw [show (∑ i, star (ell i) * P i j) = 0 by simpa [leftPair] using hcol j]
           simp
 
 theorem orbit5_cross_2_in : inImage p5 cross5_2 := by
@@ -1732,7 +1732,7 @@ theorem orbit7_same_3_in : inImage p7 same7_3 := by
 def norm2 (v : Fin 24 → ℂ) : ℂ := leftPair v v
 
 def residual2 (ell w : Fin 24 → ℂ) : ℂ :=
-  Complex.conj (leftPair ell w) * leftPair ell w / norm2 ell
+  star (leftPair ell w) * leftPair ell w / norm2 ell
 
 theorem orbit5_ell_norm2 : norm2 ell5 = 10 := by
   norm_num [norm2, leftPair, ell5, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
@@ -1773,5 +1773,7 @@ rank 23 in a 24-dimensional output carrier, witnessed by the explicit nonzero
 left annihilator above. -/
 theorem orbit5_cokernel_codim_one : 24 - Matrix.rank p5 = 1 := by simp [orbit5_rank]
 theorem orbit7_cokernel_codim_one : 24 - Matrix.rank p7 = 1 := by simp [orbit7_rank]
+
+end
 
 end D0.Gravity.A4DQ0PhysicalCokernel
