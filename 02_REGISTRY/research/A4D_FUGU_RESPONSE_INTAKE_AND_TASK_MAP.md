@@ -145,3 +145,12 @@ joint-defect transfer, chamber-envelope theorem, and crossing theorem.
 
 Do not promote \(\bigcup_r\{d_r=0\}\) to the rank-jump divisor before that
 exact stratification is certified.
+
+The synthesis memo also records the exact unit-torus half-angle identity
+\[
+d_r=-2i\,e^{-i\theta_r/2}\sin(\theta_r/2).
+\]
+Use it only as an algebraic/nodal reparameterization at present: the two
+half-angle sign changes cancel, so \(d_r\) and \(q_0=dd^T\) remain
+single-valued on the original torus. Spinor and Kerr--Schild language is
+interpretive until separate null/representation theorems are certified.
