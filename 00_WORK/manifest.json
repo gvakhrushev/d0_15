@@ -100,6 +100,29 @@
       ],
       "exit_condition": "Certify the exact joint linear kernel census on all owned L=4 singular orbit types, including explicit bases for every source-invisible connection subspace and the source-visible status of the #227 tangent.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL.md"
+    },
+    {
+      "id": "WRK-A4D-FLAT-METRIC-EULER-IDENTITY",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Prove directly from the literal finite naked-star formula that the full metric/solder Euler map satisfies E_Q(Q,I)=0 identically on the declared carrier, with an exact non-flat hostile control, or give an exact admissible counterexample.",
+      "brief": "00_WORK/tasks/WRK-A4D-FLAT-METRIC-EULER-IDENTITY.md"
+    },
+    {
+      "id": "WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN",
+      "class": "WORKER",
+      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-METRO-002",
+        "D0-SCENE-TRACE-HEAT-CAPACITY-001"
+      ],
+      "exit_condition": "Lean-own the exact post-#247 seam-section boundary: co-vertex size 32, capacity 5, R_*=5/32 and 1+R_*=37/32, plus a scoped selector-nonuniqueness theorem showing positivity/type and one dimensional unit do not choose a unique positive dimensionless selector, without manufacturing the missing remnant/Bondi morphisms.",
+      "brief": "00_WORK/tasks/WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN.md"
     }
   ]
 }
