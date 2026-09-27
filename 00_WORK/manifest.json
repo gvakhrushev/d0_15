@@ -36,6 +36,17 @@
       "brief": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
     },
     {
+      "id": "EXP-A4D-Q0-STATIONARY-SHEET-STRESS",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "On the real conjugate-paired metric path induced by q0(z), prove exact response agreement along a continued connection-stationary sheet or compute the first exact stress/continuation obstruction with the source and comparator pinned; make no global response claim.",
+      "brief": "00_WORK/tasks/EXP-A4D-Q0-STATIONARY-SHEET-STRESS.md"
+    },
+    {
       "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -90,6 +101,17 @@
       ],
       "exit_condition": "On the pinned #232 Y microstructure and #241/#259 valued slow background, continue the connection-stationary lift through the next unresolved order and certify whether the corrected metric response preserves the h^2 z factor (hence normalized O(h) at z=h) or develops an exact Fredholm/resonant obstruction with a named first nonzero coefficient.",
       "brief": "00_WORK/tasks/WRK-A4D-Y-SLOW-JOINT-CONTINUATION.md"
+    },
+    {
+      "id": "WRK-A4D-Q0-PHYSICAL-FORCING-IMAGE",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Over Q(i), certify exact physical image/cokernel membership of the four q0 detune forcings under [A(z)|C(bar z)] on orbit types 5 and 7, with exact normalization-aware residual norms and no nonlinear-response inference.",
+      "brief": "00_WORK/tasks/WRK-A4D-Q0-PHYSICAL-FORCING-IMAGE.md"
     }
   ]
 }
