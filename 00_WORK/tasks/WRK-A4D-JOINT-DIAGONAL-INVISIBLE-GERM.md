@@ -70,7 +70,7 @@ Start from the required merged/stacked dependency. Open Draft before substantive
 
 ## Blocker
 
-The complex quarter-wave and its conjugate are cut by the corrected degree-4 metric Euler. The real cosine and sine dressings of \(u=(0,0,1,1)\) are curved and jointly stationary through degree 5 after the zero-mode and character-\((-1)\) corrections: the degree-5 resonant connection Euler and degree-5 metric Euler both vanish exactly. Acceptance now needs the degree-6 even-harmonic forcing/correction (zero/character-\((-1)\) channels) before the next odd resonant obstruction is meaningful.
+The complex quarter-wave and its conjugate are cut by the corrected degree-4 metric Euler. The real cosine and sine dressings of \(u=(0,0,1,1)\) are curved at degree 1 and jointly stationary through degree 6 in the even channels: the degree-6 zero-mode and character-\((-1)\) forcings are solved by the rank-24 Hessians, and the degree-6 metric Euler vanishes. Acceptance now needs the degree-7 odd resonant connection Euler of those corrected rays.
 
 PR #264, terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL`, closes the affine bypass: the flat coframe image is not joint-Hessian-null on the singular L4 orbits, so it cannot delete those regular variables.
 

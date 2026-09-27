@@ -680,7 +680,9 @@ def _forcing_and_corrected(amps, zeta_power=1):
                 uu, vv = [i for i in range(4) if i not in (p, q)]
                 area = wedge_vec(frames[uu], frames[vv])
                 sgn = complement_orientation((p, q))
-                for deg in range(6):
+                # odds stores exponential orders 0..4; order 5 is O(t^5) and
+                # does not enter the extracted t^4 metric coefficient.
+                for deg in range(5):
                     total += 64 * sgn * (
                         area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
                     )[0]
@@ -850,7 +852,8 @@ def _real_corrected(dress, r_minus, r_zero):
                 uu, vv = [i for i in range(4) if i not in (p, q)]
                 area = wedge_vec(frames[uu], frames[vv])
                 sgn = complement_orientation((p, q))
-                for deg in range(5):
+                # X^5/5! contributes to the t^5 metric coefficient.
+                for deg in range(6):
                     total += 64 * sgn * (
                         area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
                     )[0]
@@ -858,6 +861,118 @@ def _real_corrected(dress, r_minus, r_zero):
         for m in (2, 3, 4, 5):
             metric[m].append(sp.expand(poly.coeff_monomial(tt**m * ss)))
     return sp.expand(potential), metric, curved
+
+
+def _degree6_euler(dress, r_minus, r_zero, target):
+    """Degree-6 connection Euler of the corrected real ray, one even channel."""
+    tt, ss = sp.symbols("tt ss")
+    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
+
+    def pack(vec):
+        out = []
+        for role in range(4):
+            matrix = sp.zeros(4)
+            for j in range(6):
+                matrix += vec[6 * role + j] * GEN[j]
+            out.append(matrix)
+        return out
+
+    rm, rz = pack(r_minus), pack(r_zero)
+    forcing = sp.zeros(24, 1)
+    for direction in range(24):
+        role, gen = divmod(direction, 6)
+        series = {}
+        for k in range(4):
+            eta = 1 if k % 2 == 0 else -1
+            channel = eta if target == "minus" else 1
+            for role_r in range(4):
+                extra = channel * ss * GEN[gen] if role_r == role else sp.zeros(4)
+                log = (
+                    dress[k] * tt * base[role_r]
+                    + eta * (tt**2) * rm[role_r]
+                    + (tt**2) * rz[role_r]
+                    + extra
+                )
+                series[(role_r, k)] = _exp_series(log, 6)
+        total = 0
+        for k in range(4):
+            ks = (k + 1) % 4
+            for p, q in PAIRS:
+                hol = series[(p, k)]
+                hol = _mul_series(hol, series[(q, ks)], 6)
+                hol = _mul_series(hol, _inv_series(series[(p, ks)], 6), 6)
+                hol = _mul_series(hol, _inv_series(series[(q, k)], 6), 6)
+                hinv = _inv_series(hol, 6)
+                uu, vv = [i for i in range(4) if i not in (p, q)]
+                area = wedge_vec(basis_cols[uu], basis_cols[vv])
+                sgn = complement_orientation((p, q))
+                for deg in range(7):
+                    odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
+                    total += 64 * sgn * (
+                        area.T * G2 * STAR * bivector_of_tangent(odd)
+                    )[0]
+        poly = sp.Poly(sp.expand(total), tt, ss)
+        forcing[direction] = sp.expand(poly.coeff_monomial(tt**6 * ss))
+        if direction % 6 == 0:
+            print("DEGREE6_PROGRESS", target, direction, flush=True)
+    return forcing
+
+
+def _degree6_metric(dress, r_minus, r_zero, c_minus, c_zero):
+    """Constant-solder metric Euler at degree 6 after the even correction."""
+    tt, ss = sp.symbols("tt ss")
+    base = [sp.zeros(4), sp.zeros(4), Ms[2], Ms[3]]
+
+    def pack(vec):
+        out = []
+        for role in range(4):
+            matrix = sp.zeros(4)
+            for j in range(6):
+                matrix += vec[6 * role + j] * GEN[j]
+            out.append(matrix)
+        return out
+
+    rm, rz, cm, cz = pack(r_minus), pack(r_zero), pack(c_minus), pack(c_zero)
+    series = {}
+    for k in range(4):
+        eta = 1 if k % 2 == 0 else -1
+        for role in range(4):
+            log = (
+                dress[k] * tt * base[role]
+                + eta * (tt**2) * rm[role]
+                + (tt**2) * rz[role]
+                + eta * (tt**6) * cm[role]
+                + (tt**6) * cz[role]
+            )
+            series[(role, k)] = _exp_series(log, 6)
+    odds = {}
+    for k in range(4):
+        ks = (k + 1) % 4
+        for p, q in PAIRS:
+            hol = series[(p, k)]
+            hol = _mul_series(hol, series[(q, ks)], 6)
+            hol = _mul_series(hol, _inv_series(series[(p, ks)], 6), 6)
+            hol = _mul_series(hol, _inv_series(series[(q, k)], 6), 6)
+            hinv = _inv_series(hol, 6)
+            odds[(k, p, q)] = [
+                sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg])) for deg in range(7)
+            ]
+    metric = []
+    for j in range(10):
+        frames = [basis_cols[r] + ss * _hcols[j][r] for r in range(4)]
+        total = 0
+        for k in range(4):
+            for p, q in PAIRS:
+                uu, vv = [i for i in range(4) if i not in (p, q)]
+                area = wedge_vec(frames[uu], frames[vv])
+                sgn = complement_orientation((p, q))
+                for deg in range(7):
+                    total += 64 * sgn * (
+                        area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
+                    )[0]
+        poly = sp.Poly(sp.expand(total), tt, ss)
+        metric.append(sp.expand(poly.coeff_monomial(tt**6 * ss)))
+    return metric
 
 
 def _real_euler_clear(dress, r_minus, r_zero):
@@ -938,11 +1053,61 @@ for _name, _dress, _sign in (
     )
     check("REAL_%s_CURVED_AT_DEGREE_1" % _name, _curved)
     check("REAL_%s_CONNECTION_EULER_THROUGH_DEGREE_5" % _name, _real_euler_clear(_dress, _rm, _rz))
+    _f6m = _degree6_euler(_dress, _rm, _rz, "minus")
+    _f6z = _degree6_euler(_dress, _rm, _rz, "zero")
+    _c6m = sp.expand(-_MINUS_H.LUsolve(_f6m))
+    _c6z = sp.expand(-_ZERO_H.LUsolve(_f6z))
+    check(
+        "REAL_%s_DEGREE6_MINUS_SOLVED" % _name,
+        sp.expand(_MINUS_H * _c6m + _f6m) == sp.zeros(24, 1),
+    )
+    check(
+        "REAL_%s_DEGREE6_ZERO_SOLVED" % _name,
+        sp.expand(_ZERO_H * _c6z + _f6z) == sp.zeros(24, 1),
+    )
+    _cos_force = [
+        0, sp.Rational(-20, 3), sp.Rational(-20, 3), -4, -4, 0,
+        0, sp.Rational(4, 3), sp.Rational(4, 3), sp.Rational(-4, 3), sp.Rational(-4, 3), 0,
+    ] + [0] * 12
+    _cos_corr = [
+        0, sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
+        0, sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
+        sp.Rational(1, 192), 0, 0, 0, 0, sp.Rational(1, 64),
+        sp.Rational(1, 192), 0, 0, 0, 0, sp.Rational(-1, 64),
+    ]
+    if _name == "COS":
+        _force_minus, _force_zero = _cos_force, [-item for item in _cos_force]
+        _corr_minus, _corr_zero = _cos_corr, _cos_corr
+    else:
+        _force_minus = [-item for item in _cos_force]
+        _force_zero = [-item for item in _cos_force]
+        _corr_minus, _corr_zero = [-item for item in _cos_corr], _cos_corr
+    check(
+        "REAL_%s_DEGREE6_MINUS_FORCING" % _name,
+        all(sp.expand(_f6m[i] - _force_minus[i]) == 0 for i in range(24)),
+    )
+    check(
+        "REAL_%s_DEGREE6_ZERO_FORCING" % _name,
+        all(sp.expand(_f6z[i] - _force_zero[i]) == 0 for i in range(24)),
+    )
+    check(
+        "REAL_%s_DEGREE6_MINUS_CORRECTION" % _name,
+        all(sp.expand(_c6m[i] - _corr_minus[i]) == 0 for i in range(24)),
+    )
+    check(
+        "REAL_%s_DEGREE6_ZERO_CORRECTION" % _name,
+        all(sp.expand(_c6z[i] - _corr_zero[i]) == 0 for i in range(24)),
+    )
+    _eq6 = _degree6_metric(_dress, _rm, _rz, _c6m, _c6z)
+    check(
+        "REAL_%s_DEGREE6_METRIC_VANISHES" % _name,
+        all(comp == 0 for comp in _eq6),
+    )
 
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
 print("CONJUGATE_EQ_IS_CONJUGATE", True)
-print("REAL_RAY_JOINT_FLAT_THROUGH_DEGREE", 5)
-print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-6-EVEN-CORRECTION-MISSING")
-print("MISSING: solve the degree-6 zero/(-1) harmonic correction before the next odd resonant test")
+print("REAL_RAY_JOINT_FLAT_THROUGH_DEGREE", 6)
+print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-7-ODD-EULER-MISSING")
+print("MISSING: degree-7 odd resonant connection Euler of the corrected real rays")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")
