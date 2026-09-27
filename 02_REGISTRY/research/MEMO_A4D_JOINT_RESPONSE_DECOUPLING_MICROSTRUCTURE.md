@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN_PROGRESS; neither requested terminal is claimed.
+Status: PARTIAL / BLOCKED on the all-phase identity (NF); neither requested terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -189,10 +189,271 @@ Its z=h^2 normalized response has a nonzero phase component and vanishing
 phase mean. Defining a source after inspecting that response is not a
 counterexample with a prescribed smooth source or vacuum.
 
-## 6. Current disposition
+## 6. First checkpoint (superseded by Sections 7-10)
 
 The new result is exact diagonal mean-quadratic response cancellation.
 The target remains open. The first candidate missing identity is the
 all-background joint-kernel quadratic annihilation condition in Section 4,
 together with its explicitly stated localization hypotheses. Further results
 and validation are recorded in subsequent revisions of this memo.
+
+
+## 7. Conditional compensated response theorem (proved reduction)
+
+This section replaces the provisional reduction in Section 4 by a
+self-contained implication. It uses no external homogenization theorem.
+
+### 7.1 Frozen operators and the single algebraic condition
+
+Let H_Q(z) be the physical connection Euler symbol at the constant Gram Q
+and identity links. Since it is the Fourier transform of a real Hessian,
+H_Q(z) is Hermitian on |z_r|=1. Let C_Q(z) be the linear metric response to
+a connection amplitude at the SAME physical character. In the #216 code
+the physical H at character chi is connection_symbol(E,chi^-1); changing
+the polarization without changing C would invalidate the condition below.
+
+For a symmetric Gram direction q put J_Q(q,z)=D_Q H_Q(z)[q]. The finite
+condition to be proved or refuted is
+\[
+ \tag{NF}
+ v^*J_Q(q,z)v=0\quad\text{whenever}\quad
+ H_Q(z)v=0,\quad C_Q(z)v=0 .
+\]
+It must hold for every Q in a neighborhood of the compact image of the fixed
+smooth metric, every unit-torus character z, every Gram direction q, and
+every complex amplitude v. This is a joint-kernel quadratic identity, not
+a lower bound for H, a connection selector, or a claim of constant nullity.
+
+**Conditional theorem.** Assume (NF), the compact analytic finite-stencil
+chart, fixed smooth Q_h, ||A_h||_infinity+||A_h^sm||_infinity <= C h,
+the #216 smooth residual E_K(Q_h,A_h^sm)=O(h^infinity), exact E_K(Q_h,A_h)=0,
+and ||h^-2 E_Q(Q_h,A_h)||_infinity bounded. Assume also the stated smooth
+comparison response is uniformly bounded. Then D_h converges to zero against
+every fixed smooth test field.
+
+If, in addition, E_Q(Q_h,A_h)=h^2 tau_h with tau_h converging uniformly to
+a prescribed smooth tau, and h^-2 E_Q(Q_h,A_h^sm) converges uniformly to
+rho[g] in the SAME component/reconstruction convention, then
+\[
+ \|D_h\|_{\infty}\longrightarrow0,\qquad \tau=\rho[g].
+\]
+Under the #216/#223 physical reconstruction rho[g]=-G[g]/2. Thus uniform
+smooth-source control upgrades the weak result to the requested strong
+response comparison. Existence of a joint sequence is not asserted.
+
+### 7.2 What the finite joint equations actually control
+
+Use the physical norm ||f||_{2,h}^2=h^4 sum_x |f(x)|^2 and set
+b_h=(A_h-A_h^sm)/h. This field is uniformly bounded in infinity and L2.
+
+Taylor expansion of E_K in the links, followed by freezing the smooth
+metric coefficients over one finite stencil, gives
+\[
+ \tag{7.1}
+ H_{Q_h(x)}(T)b_h=O(h)
+\]
+uniformly. Here T denotes the four lattice shifts. The smooth comparator
+residual divided by h remains superalgebraic. The nonlinear Taylor remainder
+before division is O(h^2), and the frozen/variable-coefficient error is O(h^2).
+
+The metric equation, the bounded h^-2 source, and the bounded smooth response
+similarly give
+\[
+ \tag{7.2}
+ C_{Q_h(x)}(T)b_h=O(h).
+\]
+These estimates use both finite Euler slots. They do not say b_h is small.
+
+Every weak L2 subsequential limit b satisfies
+H_{Q(x)}(1)b=0: test (7.1) against a smooth function and move each finite
+shift onto the smooth coefficient/test. The shifted test converges strongly
+to the unshifted test. The zero-phase congruence in #216 makes H_Q(1)
+invertible uniformly on this compact nondegenerate image. Hence b=0.
+All weak subsequential limits are zero, so b_h converges weakly to zero.
+This is weak mean identification, not C1 or strong connection compactness.
+
+### 7.3 Exact remaining moment
+
+For each face the four signed link amplitudes X_i give
+\[
+ \mathcal R(P)=\sum_i X_i+
+ \frac12\sum_{i<j}[X_i,X_j]+O(\max_i|X_i|^3).
+\]
+With A_h=h(a_h^sm+b_h), the h^-2 response difference has:
+
+1. the tested linear term h^-1 C_Q(T)b_h;
+2. the quadratic cross term between a_h^sm=A_h^sm/h and b_h;
+3. the pure quadratic metric response of b_h;
+4. an O(h) remainder in the volume-weighted L1 norm.
+
+The first term tends to zero by summation by parts: C_Q(1)=0, and its
+adjoint on a fixed smooth test is h times a smoothly convergent field.
+The second tends to zero because a_h^sm converges smoothly and every fixed
+shift of b_h has the same zero weak limit.
+
+For a frozen Q and constant test q, the third term is exactly
+\[
+ \tag{7.3}
+ \frac12\langle b,D_QH_Q(T)[q]\,b\rangle .
+\]
+This follows by differentiating the quadratic action
+(1/2)<b,H_Q(T)b> in its constant metric coefficient. Formula (7.3) identifies
+the actual nonlinear metric-variation moment. One-site weak convergence
+does not control it.
+
+### 7.4 Uniform epsilon estimate without a spectral gap
+
+On the compact set of Q, z, unit q and unit v, (NF) and continuity imply:
+for every epsilon>0 there is a finite C_epsilon such that
+\[
+ \tag{7.4}
+ |v^*J_Q(q,z)v|
+ \le \epsilon |v|^2+
+ C_\epsilon\bigl(|H_Q(z)v|^2+|C_Q(z)v|^2\bigr).
+\]
+Proof: otherwise there is a sequence of unit v with both constraint images
+tending to zero and the quadratic form bounded away from zero. A convergent
+subsequence contradicts (NF). Away from a sufficiently small constraint
+image, a bound for J divided by that threshold squared gives C_epsilon.
+Homogeneity extends the inequality to every v.
+
+Constants may deteriorate arbitrarily as epsilon tends to zero. No lower
+bound on nonzero singular values, inverse at nearby phases, or fixed
+resonance rank is required.
+
+### 7.5 Localization closes the weak passage
+
+Take a smooth square partition of unity sum_j psi_j^2=1 at physical length
+ell_h, with bounded overlap and |grad psi_j|=O(ell_h^-1). Freeze Q and the test
+q in each support, and apply discrete Fourier Parseval and (7.4) to
+psi_j b_h. Finite-stencil commutators satisfy
+\[
+ \|[H_Q(T),\psi_j]b_h\|_{2,h}
+ +\|[C_Q(T),\psi_j]b_h\|_{2,h}
+ \le O(h/\ell_h)\|b_h\|_{2,h;\,expanded\ support}.
+\]
+Coefficient freezing adds O(ell_h), and (7.1)-(7.2) add O(h).
+The square sums over j stay bounded because overlap is bounded. Replacing
+the quadratic form by its localized and frozen versions has error
+O(ell_h+h/ell_h).
+
+Choose ell_h=sqrt(h), take h to zero at fixed epsilon, and then take
+epsilon to zero. Equation (7.4) makes the sum of (7.3) vanish. Sections
+7.2-7.3 now prove the weak response comparison.
+
+This is also a correlation-measure description: any limiting frequency
+covariance has range in ker H intersect ker C, and its tested response
+moment is annihilated by (NF). The proof above constructs the passage
+directly, including the commutators; invoking a Young measure by name is
+unnecessary. It neither identifies the microstructure as gauge nor controls
+the connection in a strong topology.
+
+### 7.6 Why smooth sources recover a strong response statement
+
+Under the final hypotheses of the theorem,
+D_h=tau_h-rho_h converges uniformly to tau-rho[g]. The weak theorem forces
+that continuous limiting field to be zero, so ||D_h||_infinity tends to zero.
+This step concerns the response alone. Oscillatory connections such as #232
+can remain noncompact in their physical derivatives.
+
+If only bounded or weakly converging sources are permitted, this upgrade
+does not follow. #227 and the nonzero phase witness in Section 3 demonstrate
+why phase averaging and pointwise response must stay distinct.
+
+## 8. All-solder diagonal annihilation theorem
+
+The canonical certificate in Section 3 has an analytic extension:
+(NF) holds at z=(i,i,i,i) and z=(-i,-i,-i,-i) for every real nondegenerate
+constant solder, even on the full connection kernel before imposing C.
+
+Here is a direct proof using the merged #216 BCH formula. For a face r<s,
+the role coefficient matrix at z=(i,i,i,i) has only two nonzero entries:
++i at (r,r) and -i at (s,s). Thus H_E(i) is a direct sum of four
+6-by-6 matrices of the form i times a real Kirillov form
+\[
+ (X,Y)\longmapsto \ell_r([X,Y]).
+\]
+Up to the fixed nondegenerate bivector pairing, ell_r is the sum of the
+three oriented complementary solder bivectors. This is the exterior-square
+image under the invertible solder E of a fixed NONZERO bivector on the
+three-dimensional complementary role space. Hence ell_r is never zero.
+
+For completeness, every nonzero real Lorentz-algebra element has a
+two-dimensional real centralizer. Identify boost and rotation components
+with a complex three-vector w; the bracket is the complex cross product.
+For w!=0, w cross u=0 if and only if u=lambda w, lambda complex. Viewed
+over the reals this kernel has dimension two. The invariant nondegenerate
+trace pairing identifies this centralizer with the kernel of the Kirillov
+form. Thus every block has rank four, and
+\[
+ \operatorname{rank}H_E(i)=16
+\]
+for EVERY nondegenerate real solder. The inverse character has the same rank.
+
+A smooth Hermitian matrix of locally constant rank has
+\[
+ u^* (D H) v=0\qquad (u,v\in\ker H).
+\]
+Indeed extend v smoothly inside the kernel, differentiate H v=0, and
+left-multiply by u*. The preceding constant-rank calculation applies on the
+whole nondegenerate solder domain. Therefore (NF) follows at both diagonal
+quarter characters for arbitrary Gram variations and arbitrary section
+tangents.
+
+This argument covers the mean quadratic channel of the mandatory #232
+microstructure on frozen smooth backgrounds. It does not cover every other
+character, correlations across general resonant sets, or amplitudes larger
+than O(h). The localization theorem accounts for these first two issues
+only if (NF) is established on their entire possible frequency support.
+
+## 9. Kill-first audit and current exact frontier
+
+The following routes have been decided:
+
+| Route | Verdict |
+|---|---|
+| Equal prescribed source on both exact comparators | Exact tautology; no Einstein identification |
+| #226 Lipschitz bound applied to O(h) microstructure | Insufficient: h^-2 loss remains |
+| #223 applied to grid oscillations | Hypotheses absent |
+| #227 used as vacuum joint counterexample | Invalid: its metric equation is nonzero |
+| #241 promoted to smooth-background joint NOGO | Invalid: joint equation, comparator, and fixed-background contracts unproved |
+| One-site Young measure alone | Insufficient: shifted quadratic correlations are missing |
+| Phase average substituted for a pointwise limit | Invalid without the strong-source upgrade |
+| Diagonal joint carrier mean quadratic stress | Exactly zero; finite certificate |
+| Frozen diagonal characters at arbitrary solder | (NF) proved analytically |
+| All-phase, all-background joint-kernel (NF) | OPEN |
+| Strong connection compactness or uniqueness | Not used or requested |
+
+The **single first missing identity on this route** is (NF) on the remaining
+unit-torus characters and the declared compact metric chart. Sections
+7.1-7.6 prove that this finite identity would suffice for the stated O(h)
+joint-critical class, including #232 at both required scalings, without a
+uniform inverse or strong connection compactness.
+
+Failure of (NF) at a finite carrier would identify a possible quadratic
+defect, not by itself an exact smooth-background NOGO. A negative terminal
+would still require solving the nonlinear joint equations with the declared
+prescribed source and #216 comparator. The exact diagonal and #241 controls
+do not supply such a counterexample.
+
+Current verdict: PARTIAL / BLOCKED ON (NF). Neither
+A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED nor
+A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
+
+## 10. Validation
+
+The task-specific certificate is
+certificates/a4d_joint_response_decoupling_microstructure_check.py.
+
+- All eight direct joint-linear basis tests: PASS.
+- 8 times 96 connection Euler coefficient identities: PASS.
+- Every linear metric slot at all four phases: PASS.
+- All eight square and 28 cross quadratic mean coefficients: PASS.
+- Alternating pointwise witness and #232 ray guard: PASS.
+- Independent symbolic polynomial expansion in all eight amplitudes: mean zero,
+  with the same nonzero phase witness.
+- The owned #232 exact rational all-edge certificate and #241 mixed-response
+  certificate are replayed as narrow input controls; no symbol census is redone.
+
+The analytic localization and all-solder diagonal proofs are research proofs,
+not Lean theorems. Repository guard results are recorded in the PR.
