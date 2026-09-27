@@ -3,8 +3,8 @@
 **Task:** `EXP-A4D-Q0-STATIONARY-SHEET-STRESS`  
 **Class:** `EXPENSIVE`  
 **Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
-**Certificates:** `02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_order3_obstruction_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_kernel_ray_check.py`  
-**Terminal:** `A4D-Q0-TWO-MODE-OPTICAL-SHEET-JET`
+**Certificates:** `02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_order3_obstruction_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_kernel_ray_check.py`, `02_REGISTRY/research/certificates/a4d_q0_joint_order3_obstruction_check.py`
+**Terminal:** `A4D-Q0-JOINT-SILENT-LINE-ORDER3-OBSTRUCTION`
 
 Owners pinned as ancestors of this branch:
 
@@ -18,13 +18,13 @@ PR #240 is open research at head `2c98fbed57976c749d7374af13352cabb0003270`. Its
 ## 0. Terminal
 
 \[
-\boxed{\texttt{A4D-Q0-TWO-MODE-OPTICAL-SHEET-JET}}
+\boxed{\texttt{A4D-Q0-JOINT-SILENT-LINE-ORDER3-OBSTRUCTION}}
 \]
 
 On the flat center, with the source held at vacuum, the real conjugate-pair path of \(q_0=dd^T\) splits by character.
 
 - Mode B, \(z=(-1,1,-1,1)\). The identity connection is an exact joint vacuum for every real amplitude. The metric Euler is identically zero. Both Einstein symbols \(- \tfrac12 G(d)\) and \(- \tfrac12 G(\arg z)\) vanish.
-- Mode A, \(z=(i,i,-i,-i)\). The identity connection kills the order-\(\varepsilon\) connection Euler and fails at order \(\varepsilon^2\). The failure lives at character \((-1,-1,-1,-1)\) and has a unique rational solution. That solution is silent in the metric Euler, so the metric Euler of this jet is \(O(\varepsilon^3)\). Continuing with that solution and with zero order-\(\varepsilon\) link tangent, the order-\(\varepsilon^3\) connection forcing lies outside the rank-\(20\) Hessian at the original character. The branch stops there. This order-\(\varepsilon^2\) metric jet agrees with \(-\tfrac12 G(d)=0\). It disagrees with \(-\tfrac12 G(\arg z)\). The complex amplitude of \(G\) itself is \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\), so
+- Mode A, \(z=(i,i,-i,-i)\). The identity connection kills the order-\(\varepsilon\) connection Euler and fails at order \(\varepsilon^2\). The failure lives at character \((-1,-1,-1,-1)\) and has a unique rational solution. That solution is silent in the metric Euler, so the metric Euler of this jet is \(O(\varepsilon^3)\). The order-\(\varepsilon\) connection solutions form a 4-dimensional kernel. Exactly one complex line of it is silent in the order-\(\varepsilon\) metric Euler. On that line both even characters at order \(\varepsilon^2\) have rank-\(24\) Hessians, so the repair is unique, and the repaired order-\(\varepsilon^3\) forcing stays outside the rank-\(20\) image for every complex scale. An extra order-\(\varepsilon^2\) tangent along the odd kernel does not move that cokernel class. The joint jet stops there. This order-\(\varepsilon^2\) metric jet agrees with \(-\tfrac12 G(d)=0\). It disagrees with \(-\tfrac12 G(\arg z)\). The complex amplitude of \(G\) itself is \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\), so
 \[
 -\tfrac12 G(q_0;\arg z)=(-\pi^2/2,\ \pi^2,\ 0,0,-\pi^2/2,\ 0,0,0,0,0).
 \]
@@ -129,16 +129,9 @@ That connection kernel is four-dimensional. The order-\(\varepsilon\) metric Eul
 (-1-i,0,0,0,0,0,\ -1-i,0,0,0,0,0,\ 1,0,-1,0,1,0,\ 1,-1,0,1,0,0).
 \]
 
-A real scale \(t\) of this line, together with its conjugate character, keeps both order-\(\varepsilon\) Euler equations at zero. The order-\(\varepsilon^2\) repair is then readjusted; the character \((-1)^4\) block stays invertible. After that repair the two independent order-\(\varepsilon^3\) pairings are the cubics
+A complex scale \(\lambda=x+iy\) of this line keeps both order-\(\varepsilon\) Euler equations at zero. The order-\(\varepsilon^2\) forcing then lies on the two even characters. A real scale produces a nonzero constant-character piece, so the repair has two blocks. Both Hessians have rank \(24\), and the constant-character determinant in this Fourier convention is \(2^{56}\). After that unique repair the two independent order-\(\varepsilon^3\) pairings are the cubics \(\pi_A(x,y)\) and \(\pi_B(x,y)\) recorded by the certificate. Their simultaneous real zero set is empty. The resultant in \(x\) of the real and imaginary parts of \(\pi_B\) factors as a constant times \(y\) times one irreducible octic. The lexicographic basis has no generator of degree greater than \(1\) in \(x\), and that degree-\(1\) coefficient is a nonzero constant, so each octic root determines one \(x\). The axis \(y=0\) contributes only the origin. \(\pi_A(0,0)=-64-64i\), and on the octic both parts of \(\pi_A\) reduce to remainders coprime to the octic.
 
-\[
-\begin{aligned}
-\pi_A(t)&=(-64-64i)+128 i\, t+(32+16i)t^2+(8+20i)t^3,\\
-\pi_B(t)&=(4+4i)\,t(t^2+t+4i).
-\end{aligned}
-\]
-
-For real \(t\), \(t^2+t+4i\) has imaginary part \(4\), so \(\pi_B(t)=0\) only at \(t=0\). There \(\pi_A(0)=-64-64i\neq 0\). No real scale of the metric-silent line puts the order-\(\varepsilon^3\) forcing back into the connection image. The other three kernel directions already fail the order-\(\varepsilon\) metric equation, so they leave the joint sheet before this order. No finite-\(\varepsilon\) existence statement is made on mode A. The Lorentzian interval \(|\varepsilon|<1/8\) is only the range in which the Gram path has signature \((1,3)\).
+An additional order-\(\varepsilon^2\) link tangent valued in the same four-dimensional kernel, placed on characters \((i,i,-i,-i)\) and its conjugate, does not change this cokernel class. Such a tangent meets the order-\(\varepsilon\) leg and the order-\(\varepsilon\) connection at order \(\varepsilon^3\), and it meets another order-\(\varepsilon^2\) insertion only at order \(\varepsilon^4\), so the pairing difference is affine in \(\lambda\). It vanishes for a basis of the kernel at \(\lambda=0,1,i\), hence for every scale. The other three kernel directions already fail the order-\(\varepsilon\) metric equation, so they leave the joint sheet before this order. No finite-\(\varepsilon\) existence statement is made on mode A. The Lorentzian interval \(|\varepsilon|<1/8\) is only the range in which the Gram path has signature \((1,3)\).
 
 ## 5. Comparison with \(-\tfrac12 G\)
 
@@ -171,10 +164,12 @@ That mismatch is not a joint-critical counterexample. The discrete Euler equatio
 5. **Calling the \(\arg z\) mismatch a no-go.** Refused in §5. Both discrete Euler equations and the fixed vacuum source are satisfied through the computed order; the mismatched tensor is not the discrete equation.
 6. **Using the shear witness as a flat continuation.** Its flat Hessian image is nonzero, so the branch it spans does not stay connection-stationary on this sheet. The optical mode-B sheet does.
 7. **Calling the unhalved Einstein vector \(-\tfrac12 G\).** The tuple \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\) is \(G^{\rm coord}\). The designated half is \((-\pi^2/2,\pi^2,0,0,-\pi^2/2,0,0,0,0,0)\) on the complex amplitude, and \(-\cos\phi\) times the unhalved tuple on the brief field. The zero pattern is unchanged.
+8. **Repairing only character \((-1,-1,-1,-1)\) and scanning only a real scale.** A real scale of the silent line sources a constant-character order-\(\varepsilon^2\) piece, and a complex scale is still metric-silent. Both repairs are included, and the scale is \(x+iy\).
+9. **Cancelling the order-\(\varepsilon^3\) class by the odd kernel at order \(\varepsilon^2\).** That difference is affine in the silent scale and is zero on a kernel basis at three affine-independent scales, so it is identically zero.
 
 ## 7. What remains
 
-Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided real forcing and \(T_2=0\). On that selected branch the order-\(\varepsilon^3\) connection forcing lies outside the rank-\(20\) Hessian at the original character. The unique metric-silent line in that kernel does not remove the obstruction for any real scale; the other three kernel directions already fail the order-\(\varepsilon\) metric equation. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
+Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided real forcing and \(T_2=0\). The joint continuation is the complex metric-silent line together with the unique even order-\(\varepsilon^2\) repair. Its order-\(\varepsilon^3\) connection forcing stays outside the rank-\(20\) image, and the odd kernel at order \(\varepsilon^2\) does not move that class. The other three kernel directions already fail the order-\(\varepsilon\) metric equation. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
 
 ## 8. Validation
 
@@ -182,4 +177,5 @@ Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided
 python3 02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py
 python3 02_REGISTRY/research/certificates/a4d_q0_sheet_order3_obstruction_check.py
 python3 02_REGISTRY/research/certificates/a4d_q0_sheet_kernel_ray_check.py
+python3 02_REGISTRY/research/certificates/a4d_q0_joint_order3_obstruction_check.py
 ```
