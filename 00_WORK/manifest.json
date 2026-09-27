@@ -80,18 +80,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM.md"
     },
     {
-      "id": "WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN",
-      "class": "WORKER",
-      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-METRO-002",
-        "D0-SCENE-TRACE-HEAT-CAPACITY-001"
-      ],
-      "exit_condition": "Lean-own the exact post-#247 seam-section boundary: co-vertex size 32, capacity 5, R_*=5/32 and 1+R_*=37/32, plus a scoped selector-nonuniqueness theorem showing positivity/type and one dimensional unit do not choose a unique positive dimensionless selector, without manufacturing the missing remnant/Bondi morphisms.",
-      "brief": "00_WORK/tasks/WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN.md"
-    },
-    {
       "id": "WRK-A4D-JOINT-REAL-CARRIER-QUOTIENT-DECOMPOSITION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
