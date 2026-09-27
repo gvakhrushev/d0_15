@@ -680,7 +680,7 @@ def _forcing_and_corrected(amps, zeta_power=1):
                 uu, vv = [i for i in range(4) if i not in (p, q)]
                 area = wedge_vec(frames[uu], frames[vv])
                 sgn = complement_orientation((p, q))
-                for deg in range(5):
+                for deg in range(6):
                     total += 64 * sgn * (
                         area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
                     )[0]
@@ -816,18 +816,18 @@ def _real_corrected(dress, r_minus, r_zero):
         eta = 1 if k % 2 == 0 else -1
         for role in range(4):
             log = dress[k] * tt * base[role] + eta * (tt**2) * rm[role] + (tt**2) * rz[role]
-            series[(role, k)] = _exp_series(log, 4)
+            series[(role, k)] = _exp_series(log, 5)
     odds = {}
     curved = False
     for k in range(4):
         ks = (k + 1) % 4
         for p, q in PAIRS:
             hol = series[(p, k)]
-            hol = _mul_series(hol, series[(q, ks)], 4)
-            hol = _mul_series(hol, _inv_series(series[(p, ks)], 4), 4)
-            hol = _mul_series(hol, _inv_series(series[(q, k)], 4), 4)
-            hinv = _inv_series(hol, 4)
-            parts = [sp.expand(sp.Rational(1, 2) * (hol[d] - hinv[d])) for d in range(5)]
+            hol = _mul_series(hol, series[(q, ks)], 5)
+            hol = _mul_series(hol, _inv_series(series[(p, ks)], 5), 5)
+            hol = _mul_series(hol, _inv_series(series[(q, k)], 5), 5)
+            hinv = _inv_series(hol, 5)
+            parts = [sp.expand(sp.Rational(1, 2) * (hol[d] - hinv[d])) for d in range(6)]
             odds[(k, p, q)] = parts
             if parts[1] != sp.zeros(4):
                 curved = True
@@ -837,11 +837,11 @@ def _real_corrected(dress, r_minus, r_zero):
             uu, vv = [i for i in range(4) if i not in (p, q)]
             area = wedge_vec(basis_cols[uu], basis_cols[vv])
             sgn = complement_orientation((p, q))
-            for deg in range(5):
+            for deg in range(6):
                 potential += 64 * sgn * (
                     area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
                 )[0]
-    metric = {m: [] for m in (2, 3, 4)}
+    metric = {m: [] for m in (2, 3, 4, 5)}
     for j in range(10):
         frames = [basis_cols[r] + ss * _hcols[j][r] for r in range(4)]
         total = 0
@@ -855,7 +855,7 @@ def _real_corrected(dress, r_minus, r_zero):
                         area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
                     )[0]
         poly = sp.Poly(sp.expand(total), tt, ss)
-        for m in (2, 3, 4):
+        for m in (2, 3, 4, 5):
             metric[m].append(sp.expand(poly.coeff_monomial(tt**m * ss)))
     return sp.expand(potential), metric, curved
 
@@ -882,24 +882,24 @@ def _real_euler_clear(dress, r_minus, r_zero):
             for role_r in range(4):
                 extra = ss * dress[k] * GEN[gen] if role_r == role else sp.zeros(4)
                 log = dress[k] * tt * base[role_r] + eta * (tt**2) * rm[role_r] + (tt**2) * rz[role_r] + extra
-                series[(role_r, k)] = _exp_series(log, 4)
+                series[(role_r, k)] = _exp_series(log, 5)
         total = 0
         for k in range(4):
             ks = (k + 1) % 4
             for p, q in PAIRS:
                 hol = series[(p, k)]
-                hol = _mul_series(hol, series[(q, ks)], 4)
-                hol = _mul_series(hol, _inv_series(series[(p, ks)], 4), 4)
-                hol = _mul_series(hol, _inv_series(series[(q, k)], 4), 4)
-                hinv = _inv_series(hol, 4)
+                hol = _mul_series(hol, series[(q, ks)], 5)
+                hol = _mul_series(hol, _inv_series(series[(p, ks)], 5), 5)
+                hol = _mul_series(hol, _inv_series(series[(q, k)], 5), 5)
+                hinv = _inv_series(hol, 5)
                 uu, vv = [i for i in range(4) if i not in (p, q)]
                 area = wedge_vec(basis_cols[uu], basis_cols[vv])
                 sgn = complement_orientation((p, q))
-                for deg in range(5):
+                for deg in range(6):
                     odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
                     total += 64 * sgn * (area.T * G2 * STAR * bivector_of_tangent(odd))[0]
         poly = sp.Poly(sp.expand(total), tt, ss)
-        for m in (2, 3, 4):
+        for m in (2, 3, 4, 5):
             if sp.expand(poly.coeff_monomial(tt**m * ss)) != 0:
                 return False
     return True
@@ -931,18 +931,18 @@ for _name, _dress, _sign in (
     _minus_want = _want if _name == "COS" else -_want
     check("REAL_%s_MINUS_CORRECTION" % _name, sp.expand(_rm - _minus_want) == sp.zeros(24, 1))
     _pot_r, _eq_r, _curved = _real_corrected(_dress, _rm, _rz)
-    check("REAL_%s_POTENTIAL_THROUGH_DEGREE_4" % _name, _pot_r == 0)
+    check("REAL_%s_POTENTIAL_THROUGH_DEGREE_5" % _name, _pot_r == 0)
     check(
-        "REAL_%s_EQ_THROUGH_DEGREE_4" % _name,
+        "REAL_%s_EQ_THROUGH_DEGREE_5" % _name,
         all(comp == 0 for order in _eq_r.values() for comp in order),
     )
     check("REAL_%s_CURVED_AT_DEGREE_1" % _name, _curved)
-    check("REAL_%s_CONNECTION_EULER_THROUGH_DEGREE_4" % _name, _real_euler_clear(_dress, _rm, _rz))
+    check("REAL_%s_CONNECTION_EULER_THROUGH_DEGREE_5" % _name, _real_euler_clear(_dress, _rm, _rz))
 
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
 print("CONJUGATE_EQ_IS_CONJUGATE", True)
-print("REAL_RAY_JOINT_FLAT_THROUGH_DEGREE", 4)
-print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-5-EULER-MISSING")
-print("MISSING: degree-5 connection Euler of the corrected real cosine and sine rays")
+print("REAL_RAY_JOINT_FLAT_THROUGH_DEGREE", 5)
+print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-6-EVEN-CORRECTION-MISSING")
+print("MISSING: solve the degree-6 zero/(-1) harmonic correction before the next odd resonant test")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")
