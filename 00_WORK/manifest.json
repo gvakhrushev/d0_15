@@ -79,6 +79,17 @@
       ],
       "exit_condition": "Independently reconstruct the finite signature-preserving signed-hypercubic degree-two metric-response constrained space from the E-LIN axioms, certify dimension 2, identify the E_eta ray, and publish a normalized executable coefficient/symbol owner for the complementary E_sp ray without using #262 data as an input.",
       "brief": "00_WORK/tasks/WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER.md"
+    },
+    {
+      "id": "WRK-A4D-Y-SLOW-JOINT-CONTINUATION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "On the pinned #232 Y microstructure and #241/#259 valued slow background, continue the connection-stationary lift through the next unresolved order and certify whether the corrected metric response preserves the h^2 z factor (hence normalized O(h) at z=h) or develops an exact Fredholm/resonant obstruction with a named first nonzero coefficient.",
+      "brief": "00_WORK/tasks/WRK-A4D-Y-SLOW-JOINT-CONTINUATION.md"
     }
   ]
 }
