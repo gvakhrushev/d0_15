@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 2 | 2 | 2 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 5 | 0 | 0 | 0 | 5 | 0 / 5 |
-| **Total** | **8** | **0** | **0** | **2** | **10** | **2 / 10** |
+| WORKER | 4 | 0 | 0 | 0 | 4 | 0 / 5 |
+| **Total** | **7** | **0** | **0** | **2** | **9** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -24,7 +24,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN | WORKER | PLANNED | CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION | D0-THERMO-001 |
 
 ## Registry Health & Metrics
 

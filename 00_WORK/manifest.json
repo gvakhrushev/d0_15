@@ -111,17 +111,6 @@
       ],
       "exit_condition": "Certify the exact joint linear kernel census on all owned L=4 singular orbit types, including explicit bases for every source-invisible connection subspace and the source-visible status of the #227 tangent.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL.md"
-    },
-    {
-      "id": "WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN",
-      "class": "WORKER",
-      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-THERMO-001"
-      ],
-      "exit_condition": "Construct an exact moving-split/windowed history with nontrivial channel sign, history-swap covariance and rank-artifact controls, or prove a precisely scoped finite no-go.",
-      "brief": "00_WORK/tasks/WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN.md"
     }
   ]
 }
