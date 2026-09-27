@@ -74,6 +74,7 @@ LEGACY_SAFE = {
     "exp/a4d-joint-holonomy-quotient-completeness-r2",     # closed #194; superseded by merged #196 r3
     "wrk/a4d-joint-diagonal-invisible-germ",               # closed #235; task remains PLANNED for fresh relaunch
     "wrk/a4d-joint-resonance-linear-kernel",                # closed #231; superseded by clean replay #252
+    "wrk/a4d-diagonal-microstructure-connection-stationary-slow-lift", # closed stale #243; task remains PLANNED for fresh relaunch
     "control/strengthen-role-weld-scout",                  # no unique commits; main is strict descendant
 
 }
