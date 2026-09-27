@@ -181,6 +181,180 @@ def cMatrix (d : Fin 4 → ℂ) : Matrix (Fin 24) (Fin 10) ℂ := fun i j =>
   | 23, 5 => ((1 / 2 : ℚ) : ℂ) * d 1
   | _, _ => 0
 
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_0
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (0 : Fin 24) j = cMatrixFromCoeff d (0 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_1
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (1 : Fin 24) j = cMatrixFromCoeff d (1 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_2
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (2 : Fin 24) j = cMatrixFromCoeff d (2 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_3
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (3 : Fin 24) j = cMatrixFromCoeff d (3 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_4
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (4 : Fin 24) j = cMatrixFromCoeff d (4 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_5
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (5 : Fin 24) j = cMatrixFromCoeff d (5 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_6
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (6 : Fin 24) j = cMatrixFromCoeff d (6 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_7
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (7 : Fin 24) j = cMatrixFromCoeff d (7 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_8
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (8 : Fin 24) j = cMatrixFromCoeff d (8 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_9
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (9 : Fin 24) j = cMatrixFromCoeff d (9 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_10
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (10 : Fin 24) j = cMatrixFromCoeff d (10 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_11
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (11 : Fin 24) j = cMatrixFromCoeff d (11 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_12
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (12 : Fin 24) j = cMatrixFromCoeff d (12 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_13
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (13 : Fin 24) j = cMatrixFromCoeff d (13 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_14
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (14 : Fin 24) j = cMatrixFromCoeff d (14 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_15
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (15 : Fin 24) j = cMatrixFromCoeff d (15 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_16
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (16 : Fin 24) j = cMatrixFromCoeff d (16 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_17
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (17 : Fin 24) j = cMatrixFromCoeff d (17 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_18
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (18 : Fin 24) j = cMatrixFromCoeff d (18 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_19
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (19 : Fin 24) j = cMatrixFromCoeff d (19 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_20
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (20 : Fin 24) j = cMatrixFromCoeff d (20 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_21
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (21 : Fin 24) j = cMatrixFromCoeff d (21 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_22
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (22 : Fin 24) j = cMatrixFromCoeff d (22 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+private theorem cMatrix_eq_cMatrixFromCoeff_row_23
+    (d : Fin 4 → ℂ) (j : Fin 10) :
+    cMatrix d (23 : Fin 24) j = cMatrixFromCoeff d (23 : Fin 24) j := by
+  fin_cases j <;>
+    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
+
+theorem cMatrix_eq_cMatrixFromCoeff (d : Fin 4 → ℂ) :
+    cMatrix d = cMatrixFromCoeff d := by
+  ext i j
+  fin_cases i
+  · exact cMatrix_eq_cMatrixFromCoeff_row_0 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_1 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_2 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_3 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_4 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_5 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_6 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_7 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_8 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_9 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_10 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_11 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_12 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_13 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_14 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_15 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_16 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_17 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_18 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_19 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_20 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_21 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_22 d j
+  · exact cMatrix_eq_cMatrixFromCoeff_row_23 d j
+
 def q0 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
   match j.val with
   | 0 => d 0 * d 0
