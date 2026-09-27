@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. On each of the two defect solders every 16th-root character other than the cut carrier has vanishing joint moment. On the four complex lines through those carriers, the connection determinant's only unitary zero is the carrier itself. Characters off those lines remain open. Neither final terminal is claimed.
+Status: IN PROGRESS. On each of the two defect solders every 16th-root character other than the cut carrier has vanishing joint moment. Each defect is an isolated point of the joint corank locus in \((\mathbb C^\times)^4\). Distant characters remain open. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -794,11 +794,46 @@ kernel is trivial and the tested moment is vacuous. The order-8 zero at
 \(z=-1\) is the order of this determinant, not a corank; the rank at that
 carrier remains the rank already certified in §§8.3 and 8.9.
 
-The four algebraic roots lie off the unit circle, and this section does not
-rank the joint symbol there. Unitary characters off these lines remain open.
-Neither final terminal follows.
+The four algebraic roots lie off the unit circle. Section 8.16 ranks the
+joint symbol there: it is full. Unitary characters off these lines and away
+from the defects remain open. Neither final terminal follows.
 
 The certificate is `a4d_joint_response_defect_line_minor_check.py`.
+
+### 8.16 The joint corank locus is isolated at each defect
+
+The joint symbol is a holomorphic \(34\times 24\) matrix on \((\mathbb C^\times)^4\).
+At each defect its rank is 23, the right kernel has dimension 1, and the left
+kernel has dimension 11. Pairing the left kernel with the four phase
+derivatives of the symbol on the right kernel produces an \(11\times 4\) matrix.
+On the upper shear that matrix has rank 3 and kernel spanned by
+\((11,0,8,9)\). On the chain the kernel is spanned by \((11,0,9,8)\).
+
+Any holomorphic curve of joint corank through the defect would have its leading
+tangent on that line. Along the line, the order-\(t\) equation for a kernel
+correction is solvable, and the order-\(t^{2}\) pairing does not lie in the
+column space of the \(11\times 4\) matrix. The same quadratic obstruction
+appears at order \(t^{2k}\) for a branch of contact \(k\), and a higher jet can
+cancel only the part already in that column space. Therefore no holomorphic
+curve of joint corank passes through either defect. Each defect is an isolated
+point of the corank locus in \((\mathbb C^\times)^4\).
+
+In a neighborhood of either defect every other character, unitary or not, has
+joint rank 24. The tested moment is vacuous there, so inequality (7.4) holds
+at those characters for these two solders. The order-8 zero of one connection
+determinant and the order-\(u^5\) amplitude cut are separate statements. The
+diagonal quarter-waves remain other corank points, with vanishing moments, and
+they do not lie in this neighborhood.
+
+The sixteen points where the connection determinant of §8.15 vanishes off the
+unit circle were ranked directly. On every one of them the joint symbol has
+rank 24, so the metric rows restore the column rank. They are not further
+corank points.
+
+Characters at a finite distance from these two defects, and solders outside
+the certified families, remain open. Neither final terminal follows.
+
+The certificate is `a4d_joint_response_defect_isolation_check.py`.
 
 ### 8.2 Amplitude boundary
 
@@ -842,8 +877,10 @@ The following routes have been decided:
 | Period-2 shear carrier under the joint equations | Connection equation forces \(u=0\) at order \(u^5\); no nonzero joint-critical sequence |
 | Other L=4 characters on this upper shear | Only the cut character has a nonzero moment |
 | Both finite defects of the eleven-solder family | Absent from formal period-2 joint solutions: each reduced connection coefficient is \(-432u^5\) |
-| Characters outside the 16th-root grid | OPEN off the four lines of §8.15. The reciprocal is defined at every root of unity; the unit-subgrid restriction is withdrawn in §8.14 |
+| Characters outside the 16th-root grid | OPEN away from the two defects. Each defect is isolated in \((\mathbb C^\times)^4\) (§8.16); distant characters remain open |
 | Unitary points of the four lines through the two defects | Connection determinant vanishes only at the known carrier; the joint kernel is trivial at every other unitary point (§8.15) |
+| Off-circle zeros of that connection determinant | Joint rank 24 at all sixteen points (§8.16) |
+| Joint corank locus through either defect | Isolated point. Tangent line blocked at second order (§8.16) |
 | Joint-critical replacement for (NF) on the whole smooth image | MISSING |
 | Strong connection compactness or uniqueness | Not used or requested |
 
@@ -855,9 +892,10 @@ the naked-star system.
 Both finite NF defects of the fixed family are absent from formal period-2
 joint solutions. The conditional theorem of §7 still assumes (NF) at every
 character of every solder in the smooth image. Inequality (7.4) fails at
-the two certified defects. On the four lines of §8.15 every other unitary
-point has invertible connection block. Off those lines the order-\(u^5\) cut
-does not restore (7.4). No certified joint-critical sequence
+the two certified defects. Each of those points is isolated in
+\((\mathbb C^\times)^4\), so every nearby character has full joint rank and
+(7.4) holds there because there is no kernel. Distant characters remain
+open, and the order-\(u^5\) cut does not by itself classify them. No certified joint-critical sequence
 has a nonzero normalized gap against the #216 sheet: the flat #232 family
 is response-null, and the #259 lift tends to zero without being joint.
 
