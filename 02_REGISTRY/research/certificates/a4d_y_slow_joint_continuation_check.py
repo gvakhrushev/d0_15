@@ -328,5 +328,164 @@ print("PRIMARY_H3_CORRECTION_NONZERO", [
 print("PRIMARY_H3_RESPONSE: CANCELLED exactly on the canonical range correction.")
 print("SOURCE_CONTRACT: at total order h^2, the 16-real homogeneous connection freedom")
 print("splits into 8 source-visible directions and the exact 8-real #260 N0 sector.")
-print("BOUNDARY: nonlinear slow-background continuation inside N0 is not solved here.")
-print("TERMINAL: J2-Y-SLOW-PRIMARY-SCALING-RANGE-RESPONSE-REDUCES-TO-N0")
+print("BOUNDARY: nonlinear slow-background continuation inside N0 is not solved by the range calculation above.")
+
+# ---------------------------------------------------------------------------
+# 6. Primary-scaling slow-background cross operator on N0^real.
+#
+# Latest #260 proves that the selected constant-solder real ray has an
+# orthogonal degree-3 Euler outside all frozen phase-dependent link images.
+# That is not yet the slow-background verdict.  On the primary z=h scaling
+# the residual N0 freedom enters naturally at order h^2.  Its cubic
+# self-interaction is therefore order h^6; the first relevant term is instead
+# the h^3 cross term with the O(h) Y microstructure / slow solder.
+#
+# Compute that exact 96 x 8 map on the entire owned N0^real carrier and test
+# its Fredholm class against the already-owned flat operator L0.
+# ---------------------------------------------------------------------------
+
+aa = sp.symbols("aa")
+SETA = owner.ETA
+SI4 = owner.I4
+SGEN = list(owner.GENERATORS)
+SG2 = owner.G2
+SSTAR = owner.STAR
+SBASIS = [SI4[:, r] for r in range(4)]
+U_h = sp.simplify(owner.U.subs(z, h))
+Ui_h = sp.simplify(owner.Ui.subs(z, h))
+slow_solder_1 = SI4 + h * (owner.alpha * SETA / 2).T
+
+
+def _s_lorentz_inverse(matrix):
+    return SETA * matrix.T * SETA
+
+
+def _s_wedge(left, right):
+    return sp.Matrix([
+        left[i] * right[j] - left[j] * right[i]
+        for i, j in owner.PAIRS
+    ])
+
+
+def _s_bivector(matrix):
+    dressed = matrix * SETA
+    return sp.Matrix([dressed[a, b] for a, b in owner.PAIRS])
+
+
+def _n0_tangent(column, p, role):
+    out = sp.zeros(4)
+    for gi in range(6):
+        coefficient = int(N0real[li((p, role, gi)), column])
+        if coefficient:
+            out += coefficient * SGEN[gi]
+    return out
+
+
+def _background_link(p, role):
+    if role != 0:
+        return SI4
+    if p == 0:
+        return U_h
+    if p == 2:
+        return Ui_h
+    return SI4
+
+
+def _n0_link(column, loc, role):
+    p = phase(loc)
+    base = _background_link(p, role)
+    tangent = _n0_tangent(column, p, role)
+    # Only the derivative at aa=0 is used.  Since the N0 amplitude is h^2,
+    # omitted O(aa^2 h^4) terms cannot contribute to the linear h^3 cross map.
+    return base * (SI4 + aa * h**2 * tangent)
+
+
+def _slow_n0_edge_euler(column, site, role, generator):
+    result = sp.Integer(0)
+    for a, b in owner.PAIRS:
+        if role == a:
+            corners = [(site, 0), (shift(site, b, -1), 2)]
+        elif role == b:
+            corners = [(shift(site, a, -1), 1), (site, 3)]
+        else:
+            continue
+        for base_site, corner in corners:
+            places = [
+                (base_site, a, False),
+                (shift(base_site, a), b, False),
+                (shift(base_site, b), a, True),
+                (base_site, b, True),
+            ]
+            factors = []
+            for loc, rel, inverted in places:
+                link = _n0_link(column, loc, rel)
+                factors.append(_s_lorentz_inverse(link) if inverted else link)
+            plaquette = factors[0] * factors[1] * factors[2] * factors[3]
+            pinv = _s_lorentz_inverse(plaquette)
+            varied = list(factors)
+            if corner < 2:
+                varied[corner] = factors[corner] * generator
+            else:
+                varied[corner] = -generator * factors[corner]
+            dp = varied[0] * varied[1] * varied[2] * varied[3]
+            dc = (dp + pinv * dp * pinv) / 2
+            u, v = [j for j in range(4) if j not in (a, b)]
+            area = _s_wedge(slow_solder_1[:, u], slow_solder_1[:, v])
+            result += owner.complement_orientation((a, b)) * (
+                area.T * SG2 * SSTAR * _s_bivector(dc)
+            )[0]
+    return sp.together(result)
+
+
+cross_h3 = sp.zeros(96, 8)
+for column in range(8):
+    for oi, (p, role, gi) in enumerate(labels):
+        value = _slow_n0_edge_euler(column, (p, 0, 0, 0), role, SGEN[gi])
+        linear = sp.diff(value, aa).subs(aa, 0)
+        series = sp.series(sp.together(linear), h, 0, 4).removeO()
+        # N0 is an exact flat kernel: an h^2 amplitude must have no order-h^2
+        # Euler before the O(h) background is inserted.
+        check(
+            "N0_CROSS_COL_%d_ROW_%d_NO_H2" % (column, oi),
+            sp.simplify(sp.expand(series).coeff(h, 2)) == 0,
+        )
+        cross_h3[oi, column] = sp.factor(sp.expand(series).coeff(h, 3))
+    print("N0_CROSS_PROGRESS", column, flush=True)
+
+rank_cross = L2.rank() if isinstance(L2, sp.MatrixBase) else sp.Matrix(L2.tolist()).rank()
+L2sp = sp.Matrix(L2.tolist())
+aug_cross = L2sp.row_join(cross_h3)
+rank_aug_cross = aug_cross.rank()
+fredholm_rank = rank_aug_cross - rank_L
+surviving_n0_dim = 8 - fredholm_rank
+
+check("N0_CROSS_BASE_RANK_STILL_80", rank_cross == 80, str(rank_cross))
+check(
+    "N0_SLOW_CROSS_FREDHOLM_RANK_BOUNDED",
+    0 <= fredholm_rank <= 8,
+    str(fredholm_rank),
+)
+
+# Exact left-kernel projection gives the same obstruction rank and makes the
+# carrier boundary explicit.
+left_kernel = L2sp.T.nullspace()
+check("L0_LEFT_KERNEL_DIM_16", len(left_kernel) == 16, str(len(left_kernel)))
+left_matrix = sp.Matrix.vstack(*[v.T for v in left_kernel])
+projected_cross = sp.simplify(left_matrix * cross_h3)
+projection_rank = projected_cross.rank()
+check(
+    "N0_SLOW_CROSS_RANK_PAIRING_AGREE",
+    projection_rank == fredholm_rank,
+    "projection=%d augmented=%d" % (projection_rank, fredholm_rank),
+)
+
+print("N0_SLOW_CROSS_FREDHOLM_RANK", fredholm_rank)
+print("N0_SLOW_CROSS_SURVIVING_DIM_REAL", surviving_n0_dim)
+print("N0_SLOW_CROSS_PROJECTED_MATRIX", projected_cross.tolist())
+
+if fredholm_rank == 8:
+    print("TERMINAL: J2-Y-SLOW-N0-CROSS-TERM-KILLS-JOINT-INVISIBLE-SEAM")
+elif fredholm_rank > 0:
+    print("PARTIAL: J2-Y-SLOW-N0-CROSS-TERM-PARTIAL-FREDHOLM-OBSTRUCTION")
+else:
+    print("PARTIAL: J2-Y-SLOW-N0-CROSS-TERM-IN-RANGE")
