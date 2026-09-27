@@ -91,17 +91,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
     },
     {
-      "id": "WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Certify the exact joint linear kernel census on all owned L=4 singular orbit types, including explicit bases for every source-invisible connection subspace and the source-visible status of the #227 tangent.",
-      "brief": "00_WORK/tasks/WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL.md"
-    },
-    {
       "id": "WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN",
       "class": "WORKER",
       "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
