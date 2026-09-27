@@ -622,6 +622,13 @@ check("A_RHS_DIVISIBLE_BY_16", all(int(rhs4[i]) % 16 == 0 for i in range(24)))
 rhs2 = sp.Matrix([Fraction(int(rhs4[i]), 16) for i in range(24)])
 p2 = sp.simplify(Hz2.LUsolve(-rhs2))
 check("A_P2_SOLVES", sp.simplify(Hz2 * p2 + rhs2) == sp.zeros(24, 1))
+# Merged harmonic-lift local amplitude on the collided real character.
+# The L=2 Hessian differentiates the summed action, so its image is 16 times
+# that one-site amplitude. Gate (13) of the harmonic-lift memo is this equation.
+sigma_a = sp.simplify((D_A.T * ETA * D_A)[0])
+complex_force = sp.simplify(-sigma_a * C_at([-2, -2, -2, -2]) * sym_vec(Q_A) / 4)
+real_force = sp.simplify(complex_force + sp.conjugate(complex_force))
+check("A_P2_CANCELS_MERGED_REAL_FORCE", sp.simplify(Hz2 * p2 + 16 * real_force) == sp.zeros(24, 1))
 check("A_P2_NONZERO", p2 != sp.zeros(24, 1))
 check("A_P2_EXACT", all(sp.simplify(p2[i]).is_rational for i in range(24)))
 print("MODE_A_P2", [int(p2[i]) for i in range(24)])

@@ -11,6 +11,7 @@ Owners pinned as ancestors of this branch:
 - #216 merge `5523d8f679c1ea02f9b73d757c81649740010d0a`, designated smooth sheet \(h^{-2}E_Q=-\tfrac12 G+O(h)\).
 - #262 merge `969ed16fe1de8557e75fd2211c1eb011422a695f`, real conjugate-pair carrier.
 - #270 merge `7103412403e672ce7416bbfcc63028988f543494`, \(C(d)\operatorname{vec}(dd^T)=0\) and \(A_0\), \(\det A_0=256\).
+- Harmonic-lift terminal `A4D-Q0-HARMONIC-LIFT-SECOND-JET-EXACT` on current main. It owns the identity-link forcing \(F_2\) and explicitly leaves gate (13), \(A_w p_2=-F_2\) and \(T_2=B_w p_2\), to this execution.
 
 PR #240 is open research at head `8b3c93af328d94f3bf43d27a843d4b767a0c4c95`. Its shear witness is used only as an integer vector. Its moment is not recomputed and is not evidence. The unpinned coefficient \(35/2\) in the reduced-action Ward synthesis is not used.
 
@@ -103,7 +104,14 @@ With links held at the identity:
 - order \(\varepsilon^2\) vanishes on \(1,\chi,\chi^3\) and not on \(\chi^2\);
 - \(\chi^2\) is the real character \((-1,-1,-1,-1)\). The order-\(\varepsilon^2\) field depends only on the phase \(x_0+x_1-x_2-x_3\) and has period \(2\), so those four characters exhaust it.
 
-The vacuum Hessian of the naked-star density at the trivial character is entrywise the owned \(A_0\). At \((-1,-1,-1,-1)\) the same Hessian has rank \(24\). The \(L=4\) Fourier sum of the obstruction is \(16\) times the \(L=2\) sum, checked both on the constant character and on one entry of \(\chi^2\). The unique rational solution is the same Lorentz element on every role,
+The vacuum Hessian of the naked-star density at the trivial character is entrywise the owned \(A_0\). At \((-1,-1,-1,-1)\) the same Hessian has rank \(24\). The \(L=4\) Fourier sum of the obstruction is \(16\) times the \(L=2\) sum, checked both on the constant character and on one entry of \(\chi^2\). Because \(z^2=z^{-2}\), the two complex second harmonics occupy one real character. Their merged local amplitude is
+
+\[
+F_{2,\mathbb R}=F_2(z)+\overline{F_2(z)},\qquad
+F_2(z)=-\frac{d^T\eta d}{4}C(d(z^2))\operatorname{vec}(dd^T).
+\]
+
+The \(L=2\) Hessian differentiates the summed action, so its image on \(p_2\) is \(16\) times that one-site amplitude. The unique rational solution of this gate is the same Lorentz element on every role,
 
 \[
 p_2=(0,-4,-4,4,4,0),
@@ -149,7 +157,7 @@ That mismatch is not a joint-critical counterexample. The discrete Euler equatio
 
 ## 7. What remains
 
-The smallest remaining blocker on mode A is the order-\(\varepsilon^3\) connection equation, which this jet does not solve. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
+Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided real forcing and \(T_2=0\). The order-\(\varepsilon^3\) forcing on that corrected branch, which the harmonic lift assigns back to this execution, is not solved here. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
 
 ## 8. Validation
 
