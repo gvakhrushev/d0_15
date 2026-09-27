@@ -2420,9 +2420,47 @@ axes of §§9.24–9.26 sit in this kernel. Rows 1, 2, and 3 do not see
 thirteen components. The image of this kernel on those three rows has
 rank 3, the full codomain over the function field, so the source is
 hit and the solution space has dimension 7 over that field. That family is not
-constructed here. Rows 0, 8, and 12, where `Ka` still acts, remain
-unsolved.
+constructed here. Rows 0, 8, and 12, where `Ka` still acts, are not
+solved over the function field. Section 9.28 tests those rows together
+with their sign partners at three chart points.
 
 Quadratic solder self-energy in these thirteen slots is not
 remeasured. Other Fourier modes and finite off-seed points stay open.
 No stationary witness and no L=3 result. Task stays `IN_PROGRESS`.
+
+
+### 9.28 The kernel is consistent at three chart points
+
+`a4d_resolved_curved_stationary_e2_kernel_rows0812_affine4_check.py`
+keeps the §9.27 reduction, the thirteen mode-1100 components, and the
+ten-dimensional function-field kernel of rows 10, 11, 14, and 15. The
+four `Ka` coordinates are added. No new Fourier mode, no new channel,
+and no new solder modulus are added. The tested system is the twelve
+affine rows that are not those four source-zero rows, so the matrix is
+12×14.
+
+Every one of the thirteen translation columns satisfies row 6 = -row 2,
+row 7 = -row 3, row 9 = -row 8, and row 13 = -row 12. The four closed
+axes `b0·e2`, `b0·e3`, `b1·e2`, and `b1·e3` also satisfy row 4 = -row 0
+and row 5 = -row 1. The other nine columns do not. Collinear `Ka` is
+zero on rows 1, 2, 3, 10, 11, 14, and 15, and it satisfies row 4 =
+-row 0, row 9 = -row 8, and row 13 = -row 12. Those sign facts stay in
+the certificate; the twelve rows are still all present in the rank.
+
+At the three finite-q points `(rho,t,p)=(1,0,0)`, `(1,3,1)`, and
+`(2,4,0)`, the specialized system has rank 6 and the augmented matrix
+has the same rank. At `(1,0,0)` there is an exact rational particular
+solution, and the nullspace has eight independent vectors. At the other
+two points the same count, fourteen columns and rank 6, gives solution
+dimension 8.
+
+These are three rational points. A specialization can drop rank, so
+they do not prove that the generic rank is 6. They do prove that the
+generic rank is at least 6, and that the amplitude-linear system is
+consistent at these three points. The §9.27 count of seven kernel
+parameters was the kernel alone after rows 1, 2, and 3, before these
+twelve rows and before `Ka`.
+
+Quadratic solder self-energy is not remeasured. The full Euler is not
+tested. No stationary witness and no L=3 result. Task stays
+`IN_PROGRESS`.
