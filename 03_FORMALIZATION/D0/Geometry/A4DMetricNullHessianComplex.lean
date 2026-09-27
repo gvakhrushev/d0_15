@@ -1402,6 +1402,143 @@ theorem chart3_bezout (y x : ℂ) :
   dsimp [f30, f31, f32]
   ring
 
+
+/-! ## Capstone: exact nonzero-character rank and null line -/
+
+private theorem rank_ge_nine_of_certificate
+    (d : Fin 4 → ℂ)
+    (rows : Fin 9 → Fin 24) (cols : Fin 9 → Fin 10)
+    (adj : Matrix (Fin 9) (Fin 9) ℂ) (c : ℂ)
+    (hcert :
+      (cMatrix d).submatrix rows cols * adj =
+        c • (1 : Matrix (Fin 9) (Fin 9) ℂ))
+    (hc : c ≠ 0) :
+    9 ≤ (cMatrix d).rank := by
+  have hscaled :
+      (c • (1 : Matrix (Fin 9) (Fin 9) ℂ)).rank = 9 := by
+    calc
+      (c • (1 : Matrix (Fin 9) (Fin 9) ℂ)).rank =
+          (1 : Matrix (Fin 9) (Fin 9) ℂ).rank :=
+        Matrix.rank_smul_of_mem_nonZeroDivisors _
+          (mem_nonZeroDivisors_iff_ne_zero.mpr hc)
+      _ = 9 := by simp
+  calc
+    9 = (c • (1 : Matrix (Fin 9) (Fin 9) ℂ)).rank := hscaled.symm
+    _ = ((cMatrix d).submatrix rows cols * adj).rank :=
+      congrArg Matrix.rank hcert.symm
+    _ ≤ ((cMatrix d).submatrix rows cols).rank :=
+      Matrix.rank_mul_le_left _ _
+    _ ≤ (cMatrix d).rank :=
+      Matrix.rank_submatrix_le _ _ _
+
+theorem cMatrix_rank_ge_nine {d : Fin 4 → ℂ} (hd : d ≠ 0) :
+    9 ≤ (cMatrix d).rank := by
+  have hcoord :
+      d 0 ≠ 0 ∨ d 1 ≠ 0 ∨ d 2 ≠ 0 ∨ d 3 ≠ 0 := by
+    by_contra h
+    push_neg at h
+    apply hd
+    funext i
+    fin_cases i <;> simp_all
+  rcases hcoord with h0 | h1 | h2 | h3
+  · by_cases h3' : d 3 = 0
+    · exact rank_ge_nine_of_certificate d rows_0_0 cols_0_0
+        (adj_0_0 d) (detPoly_0_0 d)
+        (by simpa [minor_0_0] using minor_0_0_scaled_inverse d)
+        (by simp [detPoly_0_0, h0, h3'])
+    · exact rank_ge_nine_of_certificate d rows_0_1 cols_0_1
+        (adj_0_1 d) (detPoly_0_1 d)
+        (by simpa [minor_0_1] using minor_0_1_scaled_inverse d)
+        (by simp [detPoly_0_1, h0, h3'])
+  · by_cases h3' : d 3 = 0
+    · exact rank_ge_nine_of_certificate d rows_1_0 cols_1_0
+        (adj_1_0 d) (detPoly_1_0 d)
+        (by simpa [minor_1_0] using minor_1_0_scaled_inverse d)
+        (by simp [detPoly_1_0, h1, h3'])
+    · by_cases h2' : d 2 = 0
+      · exact rank_ge_nine_of_certificate d rows_1_1 cols_1_1
+          (adj_1_1 d) (detPoly_1_1 d)
+          (by simpa [minor_1_1] using minor_1_1_scaled_inverse d)
+          (by simp [detPoly_1_1, h1, h2', h3'])
+      · exact rank_ge_nine_of_certificate d rows_1_2 cols_1_2
+          (adj_1_2 d) (detPoly_1_2 d)
+          (by simpa [minor_1_2] using minor_1_2_scaled_inverse d)
+          (by simp [detPoly_1_2, h1, h2', h3'])
+  · by_cases h3' : d 3 = 0
+    · exact rank_ge_nine_of_certificate d rows_2_0 cols_2_0
+        (adj_2_0 d) (detPoly_2_0 d)
+        (by simpa [minor_2_0] using minor_2_0_scaled_inverse d)
+        (by simp [detPoly_2_0, h2, h3'])
+    · by_cases h1' : d 1 = 0
+      · exact rank_ge_nine_of_certificate d rows_2_2 cols_2_2
+          (adj_2_2 d) (detPoly_2_2 d)
+          (by simpa [minor_2_2] using minor_2_2_scaled_inverse d)
+          (by simp [detPoly_2_2, h1', h2, h3'])
+      · exact rank_ge_nine_of_certificate d rows_2_1 cols_2_1
+          (adj_2_1 d) (detPoly_2_1 d)
+          (by simpa [minor_2_1] using minor_2_1_scaled_inverse d)
+          (by simp [detPoly_2_1, h1', h2, h3'])
+  · by_cases h2' : d 2 = 0
+    · exact rank_ge_nine_of_certificate d rows_3_0 cols_3_0
+        (adj_3_0 d) (detPoly_3_0 d)
+        (by simpa [minor_3_0] using minor_3_0_scaled_inverse d)
+        (by simp [detPoly_3_0, h2', h3])
+    · by_cases h1' : d 1 = 0
+      · exact rank_ge_nine_of_certificate d rows_3_2 cols_3_2
+          (adj_3_2 d) (detPoly_3_2 d)
+          (by simpa [minor_3_2] using minor_3_2_scaled_inverse d)
+          (by simp [detPoly_3_2, h1', h2', h3])
+      · exact rank_ge_nine_of_certificate d rows_3_1 cols_3_1
+          (adj_3_1 d) (detPoly_3_1 d)
+          (by simpa [minor_3_1] using minor_3_1_scaled_inverse d)
+          (by simp [detPoly_3_1, h1', h2', h3])
+
+theorem cMatrix_rank_le_nine {d : Fin 4 → ℂ} (hd : d ≠ 0) :
+    (cMatrix d).rank ≤ 9 := by
+  let L := (cMatrix d).mulVecLin
+  have hqker : q0 d ∈ LinearMap.ker L := by
+    simp only [LinearMap.mem_ker, L, Matrix.mulVecLin_apply]
+    exact cMatrix_q0_zero d
+  have hspan_le : ℂ ∙ q0 d ≤ LinearMap.ker L :=
+    (Submodule.span_singleton_le_iff_mem _ _).mpr hqker
+  have hone : 1 ≤ Module.finrank ℂ (LinearMap.ker L) := by
+    rw [← finrank_span_singleton (q0_ne_zero hd)]
+    exact Submodule.finrank_mono hspan_le
+  have hrn :
+      (cMatrix d).rank + Module.finrank ℂ (LinearMap.ker L) = 10 := by
+    simpa [L, Matrix.rank] using L.finrank_range_add_finrank_ker
+  omega
+
+theorem cMatrix_rank_eq_nine {d : Fin 4 → ℂ} (hd : d ≠ 0) :
+    (cMatrix d).rank = 9 :=
+  le_antisymm (cMatrix_rank_le_nine hd) (cMatrix_rank_ge_nine hd)
+
+theorem cMatrix_ker_finrank_eq_one {d : Fin 4 → ℂ} (hd : d ≠ 0) :
+    Module.finrank ℂ (LinearMap.ker (cMatrix d).mulVecLin) = 1 := by
+  have hrn :
+      (cMatrix d).rank +
+          Module.finrank ℂ (LinearMap.ker (cMatrix d).mulVecLin) = 10 := by
+    simpa [Matrix.rank] using
+      (cMatrix d).mulVecLin.finrank_range_add_finrank_ker
+  rw [cMatrix_rank_eq_nine hd] at hrn
+  omega
+
+theorem cMatrix_ker_eq_span_q0 {d : Fin 4 → ℂ} (hd : d ≠ 0) :
+    LinearMap.ker (cMatrix d).mulVecLin = ℂ ∙ q0 d := by
+  have hqker :
+      q0 d ∈ LinearMap.ker (cMatrix d).mulVecLin := by
+    simp only [LinearMap.mem_ker, Matrix.mulVecLin_apply]
+    exact cMatrix_q0_zero d
+  have hspan_le :
+      ℂ ∙ q0 d ≤ LinearMap.ker (cMatrix d).mulVecLin :=
+    (Submodule.span_singleton_le_iff_mem _ _).mpr hqker
+  have hfin :
+      Module.finrank ℂ (ℂ ∙ q0 d) =
+        Module.finrank ℂ (LinearMap.ker (cMatrix d).mulVecLin) := by
+    rw [finrank_span_singleton (q0_ne_zero hd),
+      cMatrix_ker_finrank_eq_one hd]
+  exact (Submodule.eq_of_le_of_finrank_eq hspan_le hfin).symm
+
 end
 
 end D0.Geometry.A4DMetricNullHessianComplex
