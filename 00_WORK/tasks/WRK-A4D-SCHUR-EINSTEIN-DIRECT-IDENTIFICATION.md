@@ -1,29 +1,29 @@
 # WRK-A4D-SCHUR-EINSTEIN-DIRECT-IDENTIFICATION
 
-Class: \`WORKER\`  
-State on registration: \`PLANNED\`  
-Parent: \`CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE\`  
-Research lane: \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`
+Class: `WORKER`  
+State on registration: `PLANNED`  
+Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
+Research lane: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 
-Repository: \`gvakhrushev/d0_15\`  
-Base: \`main\`  
-Branch: \`wrk/a4d-schur-einstein-direct-identification\`  
-Primary artifact: \`02_REGISTRY/research/A4D_SCHUR_EINSTEIN_DIRECT_IDENTIFICATION.md\`  
-Execution: \`GitHub-first\`
+Repository: `gvakhrushev/d0_15`  
+Base: `main`  
+Branch: `wrk/a4d-schur-einstein-direct-identification`  
+Primary artifact: `02_REGISTRY/research/A4D_SCHUR_EINSTEIN_DIRECT_IDENTIFICATION.md`  
+Execution: `GitHub-first`
 
 ## Dependency
 
-Consume the merged exact owner \`A4D_METRIC_NULL_HESSIAN_COMPLEX.md\` from PR #270. Do not rebuild a second owner for its null-line theorem.
+Consume the merged exact owner `A4D_METRIC_NULL_HESSIAN_COMPLEX.md` from PR #270. Do not rebuild a second owner for its null-line theorem.
 
 ## Objective
 
 Independently identify the leading metric Schur complement of the accepted finite star joint symbol with the standard flat linearized Einstein operator.
 
-The identification must not use \`E_eta\` as the final comparison object. Reconstruct the textbook tensor symbol directly on the repository's ten symmetric metric coordinates and compare coefficient-by-coefficient.
+The identification must not use `E_eta` as the final comparison object. Reconstruct the textbook tensor symbol directly on the repository's ten symmetric metric coordinates and compare coefficient-by-coefficient.
 
 ## Required gates
 
-1. Rebuild the trivial-character connection block \`A0=H_AA(1)\` and the first character derivative \`C1(k)\` from the accepted polarized owner.
+1. Rebuild the trivial-character connection block `A0=H_AA(1)` and the first character derivative `C1(k)` from the accepted polarized owner.
 2. Form the leading eliminated metric symbol
    \[
    K_{\rm Schur}(k)=-C_1(k)^T A_0^{-1} C_1(k).
@@ -48,17 +48,17 @@ The identification must not use \`E_eta\` as the final comparison object. Recons
 
 ## Preferred terminal
 
-\`J2-SCHUR-DIRECT-LINEAR-EINSTEIN-IDENTIFICATION-EXACT\`
+`J2-SCHUR-DIRECT-LINEAR-EINSTEIN-IDENTIFICATION-EXACT`
 
 A negative terminal must identify the first convention-independent coefficient mismatch.
 
 ## Forbidden
 
-No nonlinear Einstein claim, no finite diffeomorphism-gauge promotion, no new action term, no \(\varphi\), no observational claim, and no circular use of \`E_eta=-2G\` as the proof of the requested equality.
+No nonlinear Einstein claim, no finite diffeomorphism-gauge promotion, no new action term, no \(\varphi\), no observational claim, and no circular use of `E_eta=-2G` as the proof of the requested equality.
 
 ## GitHub execution contract
 
-Open the Draft PR before substantive science commits. Produce an exact certificate under \`02_REGISTRY/research/certificates/\`. Self-retire only at an exact terminal and do not self-merge.
+Open the Draft PR before substantive science commits. Produce an exact certificate under `02_REGISTRY/research/certificates/`. Self-retire only at an exact terminal and do not self-merge.
 
 ## Chat handoff
 
