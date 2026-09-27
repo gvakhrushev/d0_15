@@ -192,15 +192,23 @@ def weighted(block, tau_vec):
     return out
 quad = weighted(rem, tau)
 six = (0, 1, 2, 3, 8, 12)
-print('QUAD_PART', [(i, quad[i]) for i in six], flush=True)
+rest = tuple(i for i in range(16) if i not in six)
+print('QUAD_PART', [(i, quad[i]) for i in range(16)], flush=True)
 free_kernel = [j for j in range(10) if j not in pivots]
 cols_q = []
+rest_free = []
 for j in free_kernel:
     tau_j = [s.Integer(0)] * 16
     for i in range(13):
         tau_j[3 + i] = s.together(Bpt[i, j])
     qj = weighted(rem, tau_j)
     cols_q.append([qj[i] for i in six])
+    rest_free.append([qj[i] for i in rest])
+    print('AFFINE_REST_FREE', j, [(i, qj[i]) for i in rest], flush=True)
+print('AFFINE_REST_PART', [(i, quad[i]) for i in rest], flush=True)
+check('AFFINE_PARTICULAR_ALL_16_ROWS_ZERO', all(quad[i] == 0 for i in range(16)))
+check('AFFINE_FREE_TRANSLATIONS_REST_ROWS_ZERO',
+      len(rest_free) == 4 and all(value == 0 for row in rest_free for value in row))
 base_q = s.Matrix([quad[i] for i in six])
 Mq = s.Matrix(cols_q).T
 aug_q = Mq.row_join(base_q)

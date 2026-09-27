@@ -2912,3 +2912,30 @@ moving-character cokernel diagnostic of #299. The exact checker is
 `02_REGISTRY/research/certificates/a4d_q0_harmonic_small_h_scaling_check.py`.
 No new substitution into the slow functional \(\Phi\) follows from this
 carrier or from its small-\(h\) order.
+
+### 9.36 Every affine row of the particular remainder is zero
+
+The quadratic-point certificate weights the quadratic remainder of the
+particular amplitude by the solved translation and by each of the four
+free `Ka=0` translations. At `(rho,t,p)=(1,0,0)` all sixteen affine rows
+are zero under the solved translation. The ten rows outside
+
+```text
+0, 1, 2, 3, 8, 12
+```
+
+are zero under each free translation as well. The six rows on those
+translations were already zero. The character of this germ is the mode
+1100 sign `(-1)^(x0+x1)`.
+
+The weight is the observer `(Gamma/2, Gamma/2, q, -q)` at `p=0`. This
+does not make the raw square of §9.32 zero, and it does not evaluate the
+untruncated Euler. It also does not recompute the star-solder obstruction of §9.8.
+That obstruction is the star-only Newton vector on this support, not
+the particular amplitude above: `rank[H_Theta | J_Theta v]=7` while
+`rank H_Theta=6`, and the scale pairing is `16768/13`. No first solder
+correction cancels that Newton vector. The affine zeros are not a joint
+vacuum.
+
+A wider Fourier support of the solder would be a different mode. No L=3
+result. Task stays `IN_PROGRESS`.
