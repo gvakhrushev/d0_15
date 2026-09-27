@@ -1784,3 +1784,65 @@ nonlinear completion or a coefficient selector. The remaining locus needs
 higher coupled equations. These germ exclusions do not exclude arbitrary
 finite points of the seven-amplitude supports, and no L=2 witness or L=3
 result is claimed.
+
+
+### 9.18 Conformal critical-solder subfamily: exact order-three obstruction
+
+`a4d_resolved_curved_stationary_e2_conformal_solder_order3_check.py`
+pressure-tests a one-parameter family inside the surviving locus of §9.17.
+Here `A=B=1`, the active tangent scale is one, and both blind tangent
+moduli remain free:
+
+```text
+v=(-4, q1, -1, q2, q2, 0, 1).
+s=(r^2-1)/(r^2+1), h=6*r/(r^2+1),
+c=(s+h)/2, d=(s-h)/2.
+```
+
+For `r!=0`, let `(p3,p4)` solve the literal two-row system
+
+```text
+[[1+2*d,1+2*c],[1-2*c,-1+2*d]] * [p3,p4]^T = [d,c]^T,
+T=[[1,0,p3,p4],[0,-1,p3,p4],[0,0,d,c],[0,0,-c,d]].
+```
+
+Its determinant is `-(r^4+34*r^2+1)/(2*(r^2+1)^2)`, nonzero for every
+real r. This is a family of critical leading solders, not a finite vacuum.
+The small leading-link balance motivated this family; the certificate's
+owned conclusion is the following stronger solder-only exclusion,
+independent of every translation and channel coefficient.
+
+At order two `H0*Y=-H1(v)*T` is exactly solvable. At order three eliminate
+the next solder coefficient Z with the full H0 cokernel. Keep all ten
+Y-kernel variables and all seven second amplitude coefficients: the
+necessary system has shape `10 x 17`. Its polynomial cokernel identities
+hold for both free tangent moduli. The first identity forces `q2=0`.
+Two others eliminate q1 without division by a potentially vanishing
+coefficient. Their exact one-variable polynomial gcd leaves only `r=1/3`.
+All denominator factors are r or the strictly positive `r^2+1`.
+
+At `r=1/3`, generic cokernel vectors lose independence, so the certificate
+recomputes the actual kernel. Two literal obstruction rows are
+`-256*q2/5` and `-32*(29*q2+644)/45`; a rational linear combination is
+`-20608/45`, contradicting compatibility. Thus no real r in the declared
+family survives the third solder order. The r=1 member, even allowing
+both tangent moduli, already requires `q2=0` and `q2=10` simultaneously.
+
+The singular r=0 construction is not treated as a limit of the inverse
+matrix. A separate explicit critical solder is tested:
+
+```text
+T0=[[1,0,0,0],[0,-1,0,0],[0,0,-1/2,-1/2],[0,0,1/2,-1/2]].
+```
+
+Its three exact order-three compatibility rows force `q2=-3`, `q1=9/2`,
+and then leave a nonzero residual 64. This explicit zero-ratio leading
+balance is excluded too.
+
+**Scoped verdict:** these conformal leading-solder families are blocked
+at nonlinear solder order three, including all second amplitude/solder
+corrections and both tangent moduli. Arbitrary affine fields or channel
+coefficients cannot repair a solder equation. The *entire* conformal
+critical-solder locus in §9.17 is broader and is not retired by this result;
+finite seven-amplitude equations remain open. No positive L=2 witness and
+no L=3 result follow.
