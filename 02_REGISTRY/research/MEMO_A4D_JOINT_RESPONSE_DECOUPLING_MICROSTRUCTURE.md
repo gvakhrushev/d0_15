@@ -580,13 +580,41 @@ with the committed quadratic source on the committed \(\zeta\).
 
 On that solution, and on the same solution plus each of the three
 witness-orthogonal kernel directions, the witness projection of the
-order-\(u^5\) connection Euler equals \(-432\). Because the witness is a
-left-kernel vector, no further odd correction cancels that component. The
-reduced connection equation on this period-2 ansatz is \(-432u^5=0\), so
-\(u=0\). The three kernel moduli do not change the coefficient. This cuts
-every constant metric source on this ansatz, including a profile parallel to
-\(q_{11}\). That profile was read off the quadratic jet and is not used as a
-predeclared source.
+order-\(u^5\) connection Euler equals \(-432\). The fourth kernel direction is
+the witness itself. It is exactly the leading amplitude direction of the
+period-2 branch, so it is not an independent reduced modulus: the change
+
+\[
+ \eta\mapsto\eta+tW
+\]
+
+is generated through order four by the amplitude reparameterization
+
+\[
+ u=v+t v^3,
+ \qquad
+ \xi\mapsto\xi+2t\zeta.
+\]
+
+The checker verifies this coefficient-by-coefficient in the actual 24 link
+coordinates. Under the same substitution
+
+\[
+ -432u^5=-432v^5+O(v^7),
+\]
+
+so the first nonzero resonant coefficient is invariant. The reparameterization
+also induces an order-\(v^5\) link correction; it enters through the odd
+linearized operator and has zero witness projection because the witness is an
+exact left-kernel vector. Thus the previously open WITNESS-kernel modulus is
+closed: all four order-\(u^3\) kernel directions either leave the coefficient
+unchanged or are amplitude reparameterization.
+
+No further odd correction cancels that component. The reduced connection
+equation on this period-2 ansatz is therefore \(-432u^5=0\), so \(u=0\).
+This cuts every constant metric source on this ansatz, including a profile
+parallel to \(q_{11}\). That profile was read off the quadratic jet and is not
+used as a predeclared source.
 
 The order-\(u^4\) metric jet on these solutions stays supported on \(q_{11}\).
 One kernel direction changes its coefficient, from \(-7040/177\) to
