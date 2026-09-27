@@ -408,7 +408,48 @@ character, correlations across general resonant sets, or amplitudes larger
 than O(h). The localization theorem accounts for these first two issues
 only if (NF) is established on their entire possible frequency support.
 
-### 8.1 Amplitude boundary
+### 8.1 Exact L=4 flat-solder response-moment census
+
+The supplemental exact certificate
+`certificates/a4d_joint_response_nf_l4_check.py` exhausts all
+\(4^4=256\) table characters at the standard solder. For each character it
+compares the complete direct \(24\times24\) connection symbol and
+\(10\times24\) metric symbol against the merged #216 owner matrices, with
+the reciprocal convention
+\[
+ H_\eta(\zeta)=H_{AA}(\zeta),\qquad
+ C_\eta(\zeta^{-1})=H_{AQ}(\zeta)^T.
+\]
+All 256 full-matrix comparisons pass exactly over \(\mathbb Q(i)\).
+
+The joint kernel is nonzero on exactly 20 characters: eighteen one-dimensional
+carriers with \(\operatorname{rank}H=22\) on 12 characters or
+\(\operatorname{rank}H=20\) on 6, and the two diagonal quarter-wave
+characters with joint dimension four and \(\operatorname{rank}H=16\). The
+total joint-null dimension is 26. On every one of these 20 exact kernels, all
+ten Gram directions satisfy
+\[
+N^*D_QH_\eta(\zeta)[q]N=0.
+\]
+This is 200 exact matrix identities, including all three curved nongauge
+one-dimensional carriers of #234 and the full diagonal kernel. No #231/#234
+kernel table is imported for the census; the symbols are rebuilt and scanned
+directly.
+
+As a finite background stress test, each of the eighteen one-dimensional
+carriers has zero joint kernel at three exact nonstandard constant-solder
+samples: \(E=\operatorname{diag}(2,3,5,7)\), one upper shear, and one rational
+off-diagonal solder. The all-solder diagonal theorem in Section 8 covers the
+two diagonal quarter-wave families. These samples show that the other flat
+resonances lift at the tested backgrounds; they do not classify the resonance
+set for general \(Q\).
+
+The result closes the complete L=4 flat-solder finite-frequency test only.
+It does not establish (NF) on the continuous unit torus away from this finite
+grid, nor at every Gram in the compact chart. The conditional homogenization
+argument therefore remains conditional.
+
+### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
 it makes the normalized cubic remainder O(h). For larger amplitudes merely
@@ -445,11 +486,13 @@ The following routes have been decided:
 | Phase average substituted for a pointwise limit | Invalid without the strong-source upgrade |
 | Diagonal joint carrier mean quadratic stress | Exactly zero; finite certificate |
 | Frozen diagonal characters at arbitrary solder | (NF) proved analytically |
-| All-phase, all-background joint-kernel (NF) | OPEN |
+| Entire L=4 grid at the flat solder | (NF) exact on all 20 nonzero joint kernels |
+| Continuous unit torus and all-background joint-kernel (NF) | OPEN |
 | Strong connection compactness or uniqueness | Not used or requested |
 
-The **single first missing identity on this route** is (NF) on the remaining
-unit-torus characters and the declared compact metric chart. Sections
+The **single first missing identity on this route** is (NF) away from the
+tested finite character grid and for general Q in the declared compact metric
+chart. Sections
 7.1-7.6 prove that this finite identity would suffice for the stated O(h)
 joint-critical class, including #232 at both required scalings, without a
 uniform inverse or strong connection compactness.
@@ -466,14 +509,21 @@ A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
 
 ## 10. Validation
 
-The task-specific certificate is
-certificates/a4d_joint_response_decoupling_microstructure_check.py.
+The task-specific integer certificate is
+`certificates/a4d_joint_response_decoupling_microstructure_check.py`; the
+supplemental exact symbol/moment certificate is
+`certificates/a4d_joint_response_nf_l4_check.py`.
 
 - All eight direct joint-linear basis tests: PASS.
 - 8 times 96 connection Euler coefficient identities: PASS.
 - Every linear metric slot at all four phases: PASS.
 - All eight square and 28 cross quadratic mean coefficients: PASS.
 - Alternating pointwise witness and #232 ray guard: PASS.
+- All 256 flat-solder H/C characters match the #216 owner symbols exactly.
+- All 20 nonzero L=4 joint kernels pass all ten response-moment identities
+  (200 exact matrix tests); total joint-null dimension is 26.
+- All eighteen one-dimensional carriers lift at three exact nonstandard
+  constant-solder samples.
 - The owned #232 exact rational all-edge certificate and #241 mixed-response
   certificate: PASS as narrow input controls; no symbol census is redone.
 
