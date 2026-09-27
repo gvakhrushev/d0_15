@@ -2529,3 +2529,36 @@ and 15 drop rank. The zero locus of the minor is not factored. The homogeneous
 solution, which may use `Ka`, is not computed. Quadratic solder
 self-energy and the full Euler are not tested. No stationary witness
 and no L=3 result. Task stays `IN_PROGRESS`.
+
+
+### 9.31 The quadratic jet vanishes at (1,0,0)
+
+`a4d_resolved_curved_stationary_e2_kernel_quadratic_point_affine4_check.py`
+specializes §9.30 at `(rho,t,p)=(1,0,0)`. The six pivot coordinates are
+
+```text
+(0, 0, -4, -4, 1, 0)
+```
+
+on the kernel columns `b0·e2`, `b0·e3`, `b0·e1+b1·e0`,
+`-b0·e1+b1·e1`, `-4*b0·e1-b2·e1+b3·e1`, and the `Q4` column. The other
+eight coordinates are zero. The particular solder amplitude is
+
+```text
+(0, 0, -10/3, -8/3, 0, 4/9, 0).
+```
+
+`resp` at that amplitude, minus `resp(0)` and minus the linear column
+sum, weights to zero on rows 0, 1, 2, 3, 8, and 12 under this
+translation. The same remainder stays zero along the four free `Ka=0`
+translation directions. Each of the four `Ka` directions has zero
+cross with the particular amplitude and zero square on those rows, and
+every pairwise `Ka` cross is zero, all weighted by this same
+translation. The quadratic polynomial in the four `Ka` coordinates
+therefore vanishes on the six rows at this translation and this
+modulus point.
+
+Crosses between the four free translations and the `Ka` directions are
+not remeasured. The test is one modulus point, not the function field.
+The untruncated Euler is not evaluated. No stationary witness and no
+L=3 result. Task stays `IN_PROGRESS`.
