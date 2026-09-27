@@ -5,17 +5,22 @@ Task: WRK-A4D-Q0-PHYSICAL-FORCING-IMAGE
 
 Consumes the merged polarized symbol builder and tests, over Q(i),
 
-    P(z) = [ A(z) | C(conj z) ],
-    A(z) = H_AA(z)^T,
-    C(z) = H_AQ(z),
+    P(z) = [ H_AA(z) | H_AQ(conj z) ]
 
 against
 
     q0(z) = vec_sym(d d^T),  d_r = z_r^-1 - 1,
-    w_j(z) = (z_j d/dz_j C(z)) q0(z).
+    w_j(z) = (z_j d/dz_j H_AQ(z)) q0(z).
 
-Only orbit types 5 and 7 are evaluated.  The holomorphic map
-[A(z)|C(z)] is retained solely as a contrast.
+The direct H_AA block is the connection Euler correction operator.  The
+historical H_AA^T augmented row-system is deliberately not used here.
+
+Only orbit types 5 and 7 are evaluated.  The holomorphic comparison
+
+    P_holo(z) = [ H_AA(z) | H_AQ(z) ]
+
+is retained solely to separate exact moving-kernel transport from the
+physical conjugate-paired correction image.
 
 No floating point, SVD threshold, or pseudoinverse is used.
 """
@@ -35,7 +40,7 @@ cut = text.index(
 ns = {"__name__": "_q0_physical_owner", "__file__": SRC}
 exec(compile(text[:cut], SRC, "exec"), ns)
 
-HAB = ns["HAB"]          # 24 x 24 polarized connection block
+HAB = ns["HAB"]          # 24 x 24 polarized connection Euler block
 HAQ = ns["HAQ"]          # 24 x 10 connection x metric block
 z = ns["z"]
 SYM = ns["SYM"]
@@ -70,9 +75,18 @@ ORBITS = {
     7: (-sp.Integer(1), sp.I, sp.I, -sp.Integer(1)),
 }
 
-# Submitted finite scout claim to be checked, not assumed in construction:
-# orbit 5: directions 0,1 outside physical image; 2,3 inside.
-EXPECTED_ORBIT5_MEMBERSHIP = [False, False, True, True]
+# These membership patterns were obtained by an independent exact rank run
+# after correcting the H_AA versus H_AA^T carrier orientation.  The present
+# certificate rederives them and, additionally, computes the exact cokernel
+# residual norms.
+EXPECTED_MEMBERSHIP = {
+    5: [False, False, True, True],
+    7: [False, True, True, False],
+}
+EXPECTED_Q0_NORM2 = {
+    5: sp.Integer(40),
+    7: sp.Integer(92),
+}
 
 records = {}
 
@@ -80,9 +94,6 @@ for orbit, phase in ORBITS.items():
     sub = {z[j]: phase[j] for j in range(4)}
     csub = {z[j]: sp.conjugate(phase[j]) for j in range(4)}
 
-    # Physical connection correction uses the direct connection Euler map.
-    # HAB.T belongs to the historical augmented row-system inventory and is
-    # not the correction operator (the owner explicitly fences this).
     A = HAB.subs(sub)
     Cphys = HAQ.subs(csub)
     Cholo = HAQ.subs(sub)
@@ -92,6 +103,7 @@ for orbit, phase in ORBITS.items():
     rP = erank(P)
     rPh = erank(Pholo)
     check(f"ORBIT_{orbit}_PHYSICAL_RANK_23", rP == 23, str(rP))
+    check(f"ORBIT_{orbit}_HOLOMORPHIC_FULL_ROW_RANK_24", rPh == 24, str(rPh))
 
     left = sp.conjugate(P).T.nullspace()
     check(f"ORBIT_{orbit}_PHYSICAL_COKERNEL_DIM_1", len(left) == 1, str(len(left)))
@@ -105,10 +117,16 @@ for orbit, phase in ORBITS.items():
         }
         continue
     ell = left[0]
+    ellnorm2 = sp.factor(hinner(ell, ell))
+    check(f"ORBIT_{orbit}_LEFT_COKERNEL_NORM_NONZERO", ellnorm2 != 0, str(ellnorm2))
 
     qv = sp.simplify(q0.subs(sub))
-    qnorm2 = sp.simplify(hinner(qv, qv))
-    check(f"ORBIT_{orbit}_Q0_NORM_POSITIVE", qnorm2.is_positive is True, str(qnorm2))
+    qnorm2 = sp.factor(hinner(qv, qv))
+    check(
+        f"ORBIT_{orbit}_Q0_NORM2",
+        sp.simplify(qnorm2 - EXPECTED_Q0_NORM2[orbit]) == 0,
+        str(qnorm2),
+    )
 
     rows = []
     membership = []
@@ -117,13 +135,34 @@ for orbit, phase in ORBITS.items():
         rAug = erank(P.row_join(w))
         inside = rAug == rP
         membership.append(inside)
-        check(
-            f"ORBIT_{orbit}_D{j}_IN_PHYSICAL_IMAGE",
-            inside,
-            f"rank {rP}->{rAug}",
-        )
 
-        # Holomorphic contrast is recorded only as a carrier comparator.
+        alpha = sp.factor(hinner(ell, w))
+        raw_res2 = sp.factor(
+            sp.simplify(sp.conjugate(alpha) * alpha / ellnorm2)
+        )
+        unit_res2 = sp.factor(sp.simplify(raw_res2 / qnorm2))
+
+        # Exact rank membership must agree with the one-dimensional physical
+        # left-cokernel pairing.
+        check(
+            f"ORBIT_{orbit}_D{j}_RANK_PAIRING_AGREE",
+            inside == (sp.simplify(alpha) == 0),
+            f"inside={inside} alpha={alpha}",
+        )
+        if inside:
+            check(
+                f"ORBIT_{orbit}_D{j}_PHYSICAL_RESIDUAL_ZERO",
+                sp.simplify(raw_res2) == 0,
+                str(raw_res2),
+            )
+        else:
+            check(
+                f"ORBIT_{orbit}_D{j}_PHYSICAL_RESIDUAL_NONZERO",
+                sp.simplify(raw_res2) != 0,
+                str(raw_res2),
+            )
+
+        # Holomorphic moving-kernel transport should absorb every w_j.
         rh = erank(Pholo.row_join(w))
         holo_inside = rh == rPh
         check(
@@ -137,23 +176,22 @@ for orbit, phase in ORBITS.items():
             "rank_aug": rAug,
             "inside_physical_image": inside,
             "holomorphic_inside": holo_inside,
+            "cokernel_pairing": sp.factor(alpha),
+            "raw_residual_squared": raw_res2,
+            "unit_q0_residual_squared": unit_res2,
         })
 
-    # The submitted floating scout claimed an orbit-5 split
-    # [outside,outside,inside,inside] and residual sqrt(8/5).
-    # Exact physical conjugate pairing falsifies that split if P has full
-    # row rank: every forcing lies in im P and the physical cokernel is zero.
-    if orbit == 5:
-        check(
-            "ORBIT_5_SUBMITTED_HOT_COKERNEL_NOT_PHYSICAL",
-            membership == [True, True, True, True],
-            str(membership),
-        )
+    check(
+        f"ORBIT_{orbit}_PHYSICAL_MEMBERSHIP_PATTERN",
+        membership == EXPECTED_MEMBERSHIP[orbit],
+        str(membership),
+    )
 
     records[orbit] = {
         "rank_physical": rP,
         "rank_holomorphic": rPh,
-        "q0_norm_squared": sp.factor(qnorm2),
+        "q0_norm_squared": qnorm2,
+        "left_norm_squared": ellnorm2,
         "membership": membership,
         "rows": rows,
     }
@@ -161,22 +199,40 @@ for orbit, phase in ORBITS.items():
 print()
 for orbit in (5, 7):
     rec = records[orbit]
-    print(f"ORBIT_{orbit}: rank P={rec['rank_physical']} "
-          f"rank Pholo={rec['rank_holomorphic']} q0_norm2={rec['q0_norm_squared']}")
+    print(
+        f"ORBIT_{orbit}: rank P={rec['rank_physical']} "
+        f"rank Pholo={rec['rank_holomorphic']} "
+        f"q0_norm2={rec['q0_norm_squared']} "
+        f"left_norm2={rec.get('left_norm_squared')}"
+    )
     for row in rec["rows"]:
         print(
             "  D{direction}: physical_inside={inside_physical_image} "
-            "holomorphic_inside={holomorphic_inside} rank_aug={rank_aug}"
+            "holomorphic_inside={holomorphic_inside} rank_aug={rank_aug} "
+            "pairing={cokernel_pairing} raw_res2={raw_residual_squared} "
+            "unit_res2={unit_q0_residual_squared}"
             .format(**row)
         )
 
 if FAILS:
-    print("J2-Q0-PHYSICAL-FORCING-IMAGE: FAIL (%d)" % len(FAILS))
+    print("J2-Q0-PHYSICAL-FORCING-COKERNEL: FAIL (%d)" % len(FAILS))
     for f in FAILS:
         print("  - " + f)
     raise SystemExit(1)
 
-print("J2-Q0-PHYSICAL-FORCING-COKERNEL-CLOSED-ON-ORBITS-5-7")
-print("SCOPE: exact Q(i) physical conjugate-paired image test on orbit types 5 and 7 only.")
-print("RESULT: the physical map has full row rank 24 on both tested orbit types; all four moving-q0 detune forcings lie in its image.")
-print("FIREWALL: this closes only the submitted orbit-5/7 linear physical cokernel target; it is not a nonlinear stress or joint-critical solution.")
+print("J2-Q0-PHYSICAL-FORCING-COKERNEL-EXACT")
+print(
+    "ORBIT5: physical membership [outside,outside,inside,inside]; "
+    "holomorphic membership [inside,inside,inside,inside]."
+)
+print(
+    "ORBIT7: physical membership [outside,inside,inside,outside]; "
+    "holomorphic membership [inside,inside,inside,inside]."
+)
+print(
+    "SCOPE: exact Q(i) image/cokernel theorem on orbit types 5 and 7 only."
+)
+print(
+    "FIREWALL: a nonzero linear physical cokernel class is not yet a "
+    "stationary-sheet stress, nonlinear joint branch, or metric-response anomaly."
+)
