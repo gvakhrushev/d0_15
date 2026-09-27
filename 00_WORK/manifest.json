@@ -92,6 +92,17 @@
       "brief": "00_WORK/tasks/WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN.md"
     },
     {
+      "id": "WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Certify in exact arithmetic the q0 harmonic-tower collapse M1=0, the binomial F_n decomposition and universal M2 leading term, the scalar generating function, and the exact physical-cokernel scope on owned orbit-5/7 carriers without conflating frozen cross-character forcing with same-carrier moving transport.",
+      "brief": "00_WORK/tasks/WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT.md"
+    },
+    {
       "id": "CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE",
       "class": "CONTROL",
       "parent": "ROOT",
