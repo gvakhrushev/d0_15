@@ -15,6 +15,10 @@ Execution: `GitHub-first`
 
 Consume the merged exact owner `A4D_METRIC_NULL_HESSIAN_COMPLEX.md` from PR #270. Do not rebuild a second owner for its null-line theorem.
 
+## Why delegated
+
+This is a bounded exact cross-check on already-owned finite symbols: one 24x24 inversion at the trivial character, one 10x10 quadratic Schur symbol, and a direct coefficient comparison with the standard flat linearized Einstein tensor. It requires no new global branch search, continuum compactness theorem, or nonlinear microstructure analysis, so it is appropriate for an isolated WORKER.
+
 ## Objective
 
 Independently identify the leading metric Schur complement of the accepted finite star joint symbol with the standard flat linearized Einstein operator.
