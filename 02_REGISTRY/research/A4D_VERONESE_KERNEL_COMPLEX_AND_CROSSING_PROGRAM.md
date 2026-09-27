@@ -52,6 +52,64 @@ w_j(\chi)=-H_{AQ}(\chi)D_jq_0(\chi)
 and has zero physical obstruction class. Frozen/cross-carrier detune
 residuals are therefore not metric stress.
 
+## Half-angle lift: exact algebra and interpretation firewall
+
+On the unit character torus, write
+\[
+z_r=e^{i\theta_r}.
+\]
+Then exactly
+\[
+d_r=z_r^{-1}-1=-2i\,e^{-i\theta_r/2}\sin\frac{\theta_r}{2},
+\]
+and hence
+\[
+q_0^{rs}=d_rd_s
+=-4\,e^{-i(\theta_r+\theta_s)/2}
+\sin\frac{\theta_r}{2}\sin\frac{\theta_s}{2}.
+\]
+
+This half-angle representation is useful because
+\[
+d_r=0\iff z_r=1\iff \sin(\theta_r/2)=0.
+\]
+It gives a natural nodal description of the candidate role divisor.
+
+However, do not over-interpret the square-root notation. Under
+\(\theta_r\mapsto\theta_r+2\pi\), both
+\(e^{-i\theta_r/2}\) and \(\sin(\theta_r/2)\) change sign, so their product
+\(d_r\) is single-valued. Consequently \(q_0=dd^T\) also descends
+single-valuedly to the original character torus. The present algebra does
+**not** by itself prove that \(q_0\) is a spinor field or requires a spin
+structure.
+
+Likewise, the rank-one form \(q_0=dd^T\) is suggestive of a Kerr--Schild-type
+metric update, but the repository does not yet own the required null
+condition on \(d\) relative to the relevant background metric, nor a theorem
+identifying the finite D0 connection equations with the classical
+Kerr--Schild reduction. Therefore:
+
+- **owned:** half-angle factorization and its zero set;
+- **allowed analogy:** spinor-like/double-cover factorization and
+  Kerr--Schild-like rank-one form;
+- **not owned:** physical spinor status, Kerr--Schild null congruence, or
+  stress cancellation inferred from those names.
+
+A possible later theorem may test whether the D0 rank-one germ satisfies an
+owned null condition and whether that adds structure beyond the already
+strong exact identity \(C(d)q_0(d)=0\). Until then the Veronese complex,
+not the spinor/KS analogy, remains the mechanism-level owner.
+
+### Separate-lattice hypothesis for the #240 shear
+
+The proposed explanation that the period-2/Nyquist shear of #240 is protected
+from an external root-of-unity character shift because it belongs to a
+distinct site Fourier lattice is a useful **hypothesis**, not yet an owner
+theorem. To promote it, one must define the action of the character torus and
+the site-translation torus on the same finite symbol and prove the relevant
+commutation/invariance statement. Do not use the phrase "two different tori"
+as a proof before that representation-theoretic statement exists.
+
 ## Mandatory open boundary
 
 Do NOT infer that one equation \(d_r=0\) automatically implies
