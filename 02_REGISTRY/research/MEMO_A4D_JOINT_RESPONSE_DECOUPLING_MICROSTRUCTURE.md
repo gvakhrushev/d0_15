@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. Global (NF) is refuted by the shear witness. On that upper shear the L=4 grid has no other nonzero moment, and the period-2 connection equation forces the defect amplitude to vanish. The flat L=8 census remains a finite stress test. Neither final terminal is claimed.
+Status: IN PROGRESS. Global (NF) is refuted by two finite defects in a fixed solder family. Both are cut in vacuum at quadratic order, and the upper shear is also cut at order \(u^5\). Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -617,6 +617,34 @@ nonzero moment on this solder and this grid is the carrier already cut in
 `a4d_joint_response_shear_l4_support_check.py`. This is one solder and one
 finite grid. It does not restore global (NF).
 
+### 8.9 A second defect in a fixed solder family
+
+The same L=4 screen was run on a family fixed before the ranks were read:
+the six pure shears \(I+E_{ab}\), the upper shear, the two length-two chains
+\(I+E_{12}+E_{23}\) and \(I+E_{01}+E_{13}\), \(\operatorname{diag}(2,3,5,7)\),
+and the curved rational sample of §8.1. Every Gram in the family is
+nondegenerate. The only nonzero moments are
+
+| solder | character | moment |
+|---|---|---|
+| \(I+E_{01}+E_{12}\) | \((-1,1,-1,1)\) | \((0,0,0,0,-2,0,0,0,0,0)\) |
+| \(I+E_{01}+E_{13}\) | \((-1,1,1,-1)\) | \((0,0,0,0,-2,0,0,0,0,0)\) |
+
+The second witness, in the same generator order, is
+\(J_{23}\) on role 0, zero on role 1, \(-2K_1-K_3-J_{13}\) on role 2, and
+\(K_2+J_{12}+J_{23}\) on role 3. Its square is again the zero frequency.
+The pure shear \(I+E_{01}\) has a kernel at the first character, and that
+moment vanishes, so the double step is essential.
+
+On the chain, the period-2 ray has vanishing connection Euler through order
+\(u\). The order-\(u^2\) source has a unique constant solution, and the cell
+metric jet on that solution is
+\(u^2(0,0,0,0,-16,0,0,0,0,0)\). Vacuum forces \(u=0\) at this order. The
+certificate is `a4d_joint_response_solder_family_check.py`. The order-\(u^5\)
+elimination of §8.7 is not repeated for the chain. The \(q_{11}\) line is
+not a predeclared source. This family does not restore global (NF) and does
+not produce a joint-critical sequence.
+
 ### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
@@ -658,7 +686,8 @@ The following routes have been decided:
 | Global all-background joint-kernel (NF) | **REFUTED** by the exact shear witness in §8.3 |
 | Period-2 shear carrier under the joint equations | Connection equation forces \(u=0\) at order \(u^5\); no nonzero joint-critical sequence |
 | Other L=4 characters on this upper shear | Only the cut character has a nonzero moment |
-| NF defects on other solders, and the #216 gap | OPEN |
+| Fixed family of eleven exact solders | Two NF defects, both cut in vacuum at order \(u^2\); the upper shear also at order \(u^5\) |
+| Solders outside that family, and the #216 gap | OPEN |
 | Strong connection compactness or uniqueness | Not used or requested |
 
 The previous “prove all-phase NF” route is closed: §8.3 gives an exact finite
@@ -666,11 +695,11 @@ counterexample to the algebraic identity. The conditional theorem in §§7.1–7
 therefore remains a valid implication but is not a global closure theorem for
 the naked-star system.
 
-On this upper shear the L=4 grid has one NF defect, and the period-2
-connection equation cuts it. Other solders are not classified. A finite NF
-failure and this amplitude cut are not the requested NOGO: that still needs
-a nonzero exact joint-critical sequence and a normalized gap against the
-#216 sheet.
+On the fixed family of §8.9 there are two NF defects. Both are cut in
+vacuum at quadratic order, and the upper shear is also cut at order \(u^5\).
+Solders outside that family are not classified. These cuts are not the
+requested NOGO: that still needs a nonzero exact joint-critical sequence and
+a normalized gap against the #216 sheet.
 
 A finite-frequency census may stress-test which resonances satisfy the moment
 identity, but no finite grid can restore a global NF theorem once the shear
