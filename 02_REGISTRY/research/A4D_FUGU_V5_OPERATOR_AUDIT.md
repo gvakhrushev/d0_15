@@ -7,15 +7,23 @@ No claim or BOOK promotion follows.
 
 ## Repository baseline and owner map
 
-This audit was prepared against `main` at
-`420cf140adabacadd73e6fd8da556b4f36f7c6e1`, after PRs #270 and #273 merged
-and the Y slow-continuation task was registered.
+This audit was refreshed against `main` at
+`1fc6ff1a75bce9ad45744ac796316350076255df`, after the exact #270, #290, and
+#292 owners and the #295 formalization registrations were integrated.
 
 - [PR #232](https://github.com/gvakhrushev/d0_15/pull/232) refutes local joint
   Palatini uniqueness with an exact curved, nongauge vacuum family. It does not
   refute the designated low-frequency metric response.
 - [PR #270](https://github.com/gvakhrushev/d0_15/pull/270) owns the polarized
   metric-null line and its exact transport under character detuning.
+- [PR #290](https://github.com/gvakhrushev/d0_15/pull/290) owns the exact
+  physical cross-character cokernel residuals and same-carrier transport
+  witnesses.
+- [PR #292](https://github.com/gvakhrushev/d0_15/pull/292) expands the #270
+  identity coefficientwise over `Q`, with all 480 scalar coefficient checks
+  and the direct Laurent substitution certified; see
+  [the coefficientwise audit](A4D_HAQ_COEFFICIENTWISE_IDENTITY.md) for the
+  exact `C(d)=\sum_r d_r C_r` decomposition and coordinate convention.
 - [PR #240](https://github.com/gvakhrushev/d0_15/pull/240) remains the open
   broader research task for normalized metric response of the #232
   microstructure on a smooth nonconstant background. Its task contract forbids
@@ -69,24 +77,48 @@ q_null(z) = vec_sym(d(z) d(z)^T),   d_r(z) = z_r^(-1) - 1,
 C(z) q_null(z) = 0.
 ```
 
-Differentiating this identity in any character direction `D_j=z_j∂_(z_j)`
-gives
+The coefficientwise #292 audit establishes the polynomial identity before
+the Laurent substitution; it does not rerun the #270 rank or kernel proof.
+At `z=(1,1,1,1)`, `d=q_0=0`, so this does not supply a nonzero infrared germ.
+Differentiating the identity in any character direction
+`D_j=z_j∂_(z_j)` gives
 
 ```text
 (D_j C) q_null = - C (D_j q_null).
 ```
 
-Thus the raw fixed-vector detune belongs to `im C`. In the full joint
-linearization, the metric-null vector moves with the character; its `C δq`
-term cancels the raw derivative before a connection-cokernel obstruction is
-asserted. PR #270 verifies the exact identity on all 36 detunes of the nine
-owned L=4 orbit representatives. This is the relevant carrier-covariant
-reading of the v5 calculation.
+Thus, for the same-character holomorphic chart `[A(z) | C(z)]`, the raw
+fixed-vector derivative is canceled by the metric motion `C(z)D_jq_0(z)`.
+This is a joint-kernel transport identity, not a statement about the physical
+conjugate-paired symbol. The explicit derivative is
+
+```text
+D_j q_0 = -z_j^-1 (e_j d^T + d e_j^T).
+```
+
+The sign follows from `D_j d=-z_j^-1 e_j`; the displayed shear is generally
+not in `ker C(z)`. The coefficientwise identity and its derivative do not
+transfer to `C(conj(z))` by substitution.
+
+The physical torus instead uses the conjugate-paired table row
+`[A(zeta) | C(conj(zeta))]`. Merged #290 reports rank 23 and a one-dimensional
+cokernel on orbit types 5 and 7, with distinct exact cross-character
+membership patterns and residuals. It also proves that the same-carrier
+moving-germ forcing lies in the physical row image. These are separate facts:
+the physical cokernel is nonzero, while that particular transport forcing has
+zero cokernel class. Neither fact follows by applying the holomorphic
+coefficient identity to the conjugated slot.
+
+The scalar control confirms the distinction: the holomorphic unpaired chart
+`[A(z)|C(z)]` has rank 24 on orbit types 5 and 7, while the physical
+conjugate-paired operator has rank 23 on those types. A rank-24 value for these
+physical cases is therefore a phase-convention error, not a refutation of the
+holomorphic kernel section.
 
 The projection to `ker A†` can still be meaningful for the deliberately frozen
 `q_n` question. It is not invariant under replacing that frozen section by the
-owned moving null line, so it does not define a joint anomaly operator by
-itself.
+owned moving null line in the same-character chart, and it cannot decide the
+separate physical cross-character cokernel question by itself.
 
 ## Audit of the stronger interpretations
 
