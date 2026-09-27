@@ -12,9 +12,7 @@ from __future__ import annotations
 import pathlib
 import sys
 
-CERT = pathlib.Path(
-    "/Users/grigorijvahrusev/.codex/worktrees/exp-curved-closure/d0_15/"
-    "02_REGISTRY/research/certificates/"
+CERT = pathlib.Path(__file__).resolve().parent / (
     "a4d_resolved_curved_stationary_e2_conformal_translation_ratio_affine4_check.py"
 )
 src = CERT.read_text()
