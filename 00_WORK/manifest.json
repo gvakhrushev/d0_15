@@ -57,17 +57,6 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "EXP-D0-V16-SEAM-PURIFICATION-SECTION-MAP",
-      "class": "EXPENSIVE",
-      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-METRO-002"
-      ],
-      "exit_condition": "Construct a typed D0 seam/clock to remnant mass/lifetime section sufficient for a non-tautological external comparison, or prove that unaugmented D0 lacks the required section without a new primitive/scale.",
-      "brief": "00_WORK/tasks/EXP-D0-V16-SEAM-PURIFICATION-SECTION-MAP.md"
-    },
-    {
       "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
