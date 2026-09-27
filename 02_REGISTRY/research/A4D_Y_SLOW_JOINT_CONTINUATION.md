@@ -1,39 +1,30 @@
 # A4D Y slow joint continuation
 
 **Task:** \`WRK-A4D-Y-SLOW-JOINT-CONTINUATION\`  
-**Lifecycle:** BLOCKED  
+**Lifecycle:** IN_PROGRESS
 **Research lane:** \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`
 
-## 0. Partial terminal
+## 0. Exact branch terminal
 
-\[
-\boxed{\texttt{J2-Y-SLOW-PRIMARY-SCALING-RANGE-RESPONSE-REDUCES-TO-N0}}
-\]
+`J2-Y-SLOW-CONNECTION-STATIONARY-RESPONSE-FACTOR-PERSISTS`
 
-On the pinned #232 Y microstructure and the #241/#259 valued slow background, the next primary-scaling range correction exists and cancels the complete remaining order-\(h^3\) metric response at \(z=h\).
+The explicit Y carrier has an all-order connection-stationary lift on the
+#241/#259 **valued (frozen-cell) affine solder**. Its unrestricted solder Euler
+vanishes identically, hence its complete 40-row phase/Gram response vanishes,
+with the exact factorization `Delta E_Q = h^2 z R`, `R = 0`. This is an
+existence terminal for the corrected Y branch, not a classification of the
+three surviving N0 directions. Sections 8-11 give the finite formula, proof,
+source contract, uniform limit, and a separate genuinely varying exact-metric
+extension. Sections 2-7 retain the lower-order derivation and its historical
+blocker; that blocker no longer prevents this branch terminal.
 
-The full period-4 homogeneous connection freedom is not zero.  At the first order where that freedom matters it splits exactly into:
-
-\[
-16_{\mathbb R}
-=
-8_{\mathbb R}\text{ source-visible}
-\;+\;
-8_{\mathbb R}\text{ joint-invisible}.
-\]
-
-The \(8_{\mathbb R}\) joint-invisible space is exactly the cosine/sine realification of the owned diagonal quarter-wave
-
-\[
-N_0=\operatorname{span}_{\mathbb C}
-\{\lambda_1,\lambda_3,\lambda_4,\lambda_6\}
-\]
-
-used by #260.
-
-Therefore the explicit Y slow-background problem has been reduced to the already-owned diagonal invisible germ.  The remaining blocker is the nonlinear slow-background continuation of that \(N_0\) sector, whose constant-solder real rays are presently blocked in #260 on their degree-5 connection Euler.
-
-No global response-decoupling terminal is claimed.
+The mixed joint operator has obstruction rank 5 on the eight-real N0 carrier;
+its surviving space is
+`span{lambda1_COS, lambda3_COS-lambda6_COS, lambda4_COS+lambda6_COS}`.
+The formula below supplies a branch through the original Y solution and its
+amplitude direction. It does **not** continue the selected roles-2/3 COS ray,
+classify the whole surviving space, or close #240's general homogenization
+problem. The selected frozen-solder #260 ray remains obstructed as owned there.
 
 ## 1. Inputs
 
@@ -272,3 +263,250 @@ No new action term, torsion constraint, selector, Fourier cutoff, finite diffeom
 \`\`\`bash
 python3 02_REGISTRY/research/certificates/a4d_y_slow_joint_continuation_check.py
 \`\`\`
+
+
+## 8. Finite formula on the owned valued solder
+
+Write the coframe with columns `s_mu`, and use the exact owner convention
+
+\[
+ S(h,b)=I+\frac h2(\alpha\eta)^T+\frac b2(\beta\eta)^T,
+ \qquad b=h^2x_0,
+ \quad \eta=\operatorname{diag}(1,-1,-1,-1).
+\]
+
+Here `x0` is held fixed in the all-edge variation, exactly as in the #259
+checker. This distinction matters: `S^T eta S` agrees with the stated
+`Q_h = eta + h alpha + h^2 x0 beta` only to first order in the Gram lift.
+No assertion below identifies these two matrices to all orders.
+
+Define
+
+\[
+ u=s_2-s_1,\quad v=s_3-s_1,\quad
+ B=-(uv^T-vu^T)\eta,\qquad k=-\tfrac12\operatorname{tr}(B^2).
+\]
+
+Then `B^3=-kB`, and at `h=b=0`, `B=Y`, `k=3`. On this solder,
+
+\[
+ k=3+2h+\frac{h^4}{16}-\frac{b^2}{2}-\frac{b^2h^2}{16},
+ \qquad \det S=1-\frac{h^2}{4}+\frac{b^2}{4}.
+\]
+
+Set
+
+\[
+ t=z\left(1-\frac{h(z+2)}4\right),\qquad
+ U=\left(I-\frac t2B\right)^{-1}\left(I+\frac t2B\right)
+ =I+\frac{4t}{4+kt^2}B+\frac{2t^2}{4+kt^2}B^2.
+\]
+
+For `p=sum(x_mu) mod 4`, use
+
+\[
+ K_0(x)=(U,I,U^{-1},I)_p,\qquad K_j(x)=I\quad(j=1,2,3).
+\]
+
+The amplitude choice fixes the homogeneous Y freedom so that the **entire
+fixed-z order-h right-log correction** equals #259, not just its first term
+in z. With `D=4+3z^2`, the certificate checks
+
+\[
+ U_0^{-1}\partial_hU|_0
+ =-\frac{z(z+2)}D J_{12}-\frac{2z^2}D J_{23},
+\]
+\[
+ U_0\partial_h(U^{-1})|_0
+ =\frac{z(z+2)}D J_{12}-\frac{2z^2}D J_{13}.
+\]
+
+The derivative in `b`, at leading order in `z`, is `(K2-K3)/2`.
+Thus `b=h^2 x0`, `z=h` recovers exactly the #275 slope correction
+`h^3 x0 (K2-K3)/2`, with its opposite at phase 2. Higher coefficients are
+specified by the rational formula, rather than left as a formal jet.
+
+For `|h|,|b| <= 1/4`, the difference plane is spacelike, `S` is nondegenerate,
+and `k>2`; in particular `4+kt^2 >= 4` for real amplitudes. One way to see the
+plane condition is `-<u,u> = 2(1+h/2)^2-b^2/4 > 0`, together with `k>0`.
+The formula is consequently analytic on a fixed neighbourhood of the seed.
+
+## 9. Full Euler proof and exact certificate
+
+The theorem is more general: for **any constant nondegenerate coframe with
+spacelike difference plane** `span{s2-s1,s3-s1}`, the preceding links are
+stationary under all link and all coframe variations.
+
+Spatial faces are flat. Each `(0,j)` face has odd curvature
+
+\[
+ F_{0j}(x)=\sigma_p\frac{4t}{4+kt^2}B,
+ \qquad \sigma=(1,1,-1,-1),
+\]
+
+independently of `j`. Its solder-area sum is
+
+\[
+ s_2\wedge s_3-s_1\wedge s_3+s_1\wedge s_2=u\wedge v.
+\]
+
+The star pairing with `B` is a multiple of
+`(u wedge v) wedge (u wedge v)=0`. At **fixed B and fixed links**, its
+variation is also zero, since every summand of
+`delta(u wedge v) wedge (u wedge v)` repeats `u` or `v`.
+This proves all 16 solder Euler components, not merely a derivative along
+the composite map `S -> K(S)` or an averaged scalar.
+
+For the connection Euler, Lorentz covariance reduces the spacelike plane to
+`span{e1,e2}`. Use independent real symbols
+
+\[
+ s_1=w,\quad s_2=w+(0,a,b_0,0)^T,\quad
+ s_3=w+(0,c,d,0)^T,\quad s_0=q,
+\]
+
+and the Cayley rotation of `J12`. The checker differentiates **every occurrence
+of each edge** in its incident plaquettes using
+
+\[
+ \delta F=\tfrac12(\delta P+P^{-1}\delta P P^{-1}),
+\]
+
+with `delta K=K X` and `delta K^{-1}=-X K^{-1}` for all six Lorentz generators.
+All 96 rational expressions vanish as identities in the independent symbols.
+This normal form covers arbitrary lengths and angle of the two differences;
+the amplitude absorbs their oriented area. No Fourier projection or averaging
+is used. Lorentz invariance follows directly from the bivector metric and star
+pairing; it is the ordinary internal Lorentz symmetry, not a claim of finite
+coframe/diffeomorphism symmetry.
+
+The same calculation allows **independent time columns q_n and q_(n-1)**
+while holding the three spatial columns fixed. Thus it also proves the
+nonconstant-coframe theorem used in section 10, with actual incoming-cell
+values. It verifies 96 connection equations and 64 unrestricted solder rows.
+The metric rows are their prescribed linear combinations; all 40 vanish,
+as does every ten-slot readout. The negative control freezes the old Y plane
+on `S(h,0)` and recovers the nonzero #259 forcing `2z/(4+3z^2)`.
+
+Reproduce:
+
+```bash
+python3 02_REGISTRY/research/certificates/a4d_y_slow_exact_plane_check.py
+python3 02_REGISTRY/research/certificates/a4d_y_slow_joint_continuation_check.py
+```
+
+The first checker proves the all-order theorem; the second retains the original
+Taylor/rank/cross-map calculation. A proof of the full eight-real nonlinear N0
+classification is neither required nor supplied for this explicit existence
+terminal.
+
+## 10. A genuinely varying extension for the exact metric Q_h
+
+The previous theorem does not silently replace `S(h,h^2*n0)` in every neighbour:
+that polynomial coframe has a spatial Gram matrix changing at quadratic order
+in `b`, and is not covered by the constant-spatial-Gram argument.
+Instead, the **exact stated metric** admits the following separate construction.
+Let
+
+\[
+ H=\begin{pmatrix}1&-h&0\\-h&1&0\\0&0&1\end{pmatrix},
+ \quad T^TT=H,\quad
+ w_n=-b_nT^{-T}e_1,\quad
+ N_n=\sqrt{1+\frac{b_n^2}{1-h^2}},
+\]
+
+where `T` is a fixed positive square root, `|h|<1`, and `b_n=h^2 n0` on an
+interior slab (or any periodic sequence on a finite periodic lattice).
+Use columns
+
+\[
+ \bar s_0(n)=(N_n,w_n)^T,\qquad
+ \bar s_j=(0,Te_j)^T.
+\]
+
+Their Gram matrix is exactly
+
+\[
+ \bar S_n^T\eta\bar S_n
+ =\eta+h\alpha+b_n\beta.
+\]
+
+The three spatial columns, hence their difference plane and its `B`, are
+constant. Section 9 therefore proves exact joint stationarity for the same
+four-phase links, with arbitrary neighbouring `b_n`. The identity-link
+configuration on this same coframe is also jointly stationary, as follows by
+setting `z=0`. There is no fitted source: both configurations solve the fixed
+vacuum source contract `T_source=0`.
+
+To express this in a changing internal frame, choose any Lorentz matrices `g_n`
+constant on spatial layers and put
+
+\[
+ S_n=g_n\bar S_n,\qquad
+ K_0(n,p)=g_nW_p g_{n+1}^{-1},\qquad K_j=I.
+\]
+
+Neighbour factors cancel inside every plaquette, so its curvature is conjugate
+to the time-gauge curvature at its base. Euler transforms covariantly and remains
+zero. For example `g_n=exp(b_n K1/2)` and the symmetric `T` reproduce the #259
+linear solder jet; they are an exact Gram completion, not an equality with its
+quadratic-and-higher polynomial truncation. The background transport
+`g_n g_(n+1)^-1` is retained, never discarded. On a finite torus the coframe and
+frames must be periodic; the nonperiodic linear profile is asserted only
+locally/on an interior slab, without a false wraparound identification.
+
+This profile is a **macroscopically flat metric**. For a smooth `b=b(t)`,
+
+\[
+ ds^2=N(t)^2dt^2-
+ (dx-H^{-1}b(t)e_1dt)^TH(dx-H^{-1}b(t)e_1dt).
+\]
+
+The substitutions `y=x-integral H^-1 b(t)e1 dt` and `tau=integral N(t)dt`
+turn it into `d tau^2-dy^T H dy`. This is a computation of the continuum
+metric curvature, not an assertion that a finite lattice coframe change is
+an exact diffeomorphism gauge. Consequently zero response here does not prove
+a curved-background Einstein limit or close #240's general class.
+
+## 11. Source, remainder, and precise terminal boundary
+
+Compare the constructed branch at amplitude `z` with its `z=0` branch on the
+**same coframe**. Both connection and solder equations have been solved
+independently above at the fixed vacuum source. Their difference is therefore
+
+\[
+ \Delta E_Q\equiv0=h^2z\,R,\qquad R\equiv0.
+\]
+
+It is not legitimate to infer general homogenization merely because two
+unspecified objects were declared to solve the same source equation. Here the
+nontrivial result is the explicit existence construction and the full Euler
+verification; the zero comparison is its consequence. No identification with a
+unique #216 stationary sheet beyond this shared vacuum contract is assumed.
+For the same reason, comparison with the #273 low-frequency Schur/Einstein
+symbol is zero-versus-zero on this flat metric and yields no extra theorem.
+
+At `z=h`, in every componentwise, maximum, or finite-lattice lp norm,
+
+\[
+ \|h^{-2}\Delta E_Q\|=0.
+\]
+
+This is a uniform bound, not formal divisibility of a Taylor polynomial.
+On each bounded `|x0|<=X` choose `h` small enough that `|h^2x0|<=1/4`;
+all denominators of section 8 stay separated from zero. Section 10 has
+`N_n>=1` and positive `H` for `|h|<1`, and gives the same exact zero bound
+at every interior cell. No unbounded slow remainder is hidden in `R`.
+
+The branch is curved at finite nonzero amplitude: `F_0j` is the displayed
+nonzero multiple of `B`. Such curvature cannot be removed by an internal
+Lorentz gauge transformation. This is microscopic curvature on a particular
+macroscopically flat background.
+
+Closed here: the explicit Y-branch stationary lift, its owned first corrections,
+full metric response, and uniform response remainder. Still outside the
+terminal: arbitrary slow curved metrics/sources and the global #240 limit;
+the other surviving N0 directions; full #260 isolation; the unrelated #202
+finite Euler problem. In particular the selected COS roles-2/3 direction
+survives the linear cross gate but is not declared nonlinearly continued by
+this formula.
