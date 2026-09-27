@@ -116,7 +116,7 @@
       "id": "WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN",
       "class": "WORKER",
       "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-THERMO-001"
       ],
