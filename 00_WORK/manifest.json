@@ -80,17 +80,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM.md"
     },
     {
-      "id": "WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Compute and certify the nonlinear joint E_K/E_Q germs on the two one-dimensional source-invisible L=4 residual orbit classes, proving local isolation or producing an exact curved joint-vacuum germ for each.",
-      "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
-    },
-    {
       "id": "WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN",
       "class": "WORKER",
       "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
