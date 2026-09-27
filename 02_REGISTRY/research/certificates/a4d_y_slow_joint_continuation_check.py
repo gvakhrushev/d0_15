@@ -431,7 +431,7 @@ def _slow_n0_edge_euler(column, site, role, generator):
             dc = (dp + pinv * dp * pinv) / 2
             u, v = [j for j in range(4) if j not in (a, b)]
             area = _s_wedge(slow_solder_1[:, u], slow_solder_1[:, v])
-            result += owner.complement_orientation((a, b)) * (
+            result += owner.orientation(a, b) * (
                 area.T * SG2 * SSTAR * _s_bivector(dc)
             )[0]
     return sp.together(result)
@@ -439,17 +439,17 @@ def _slow_n0_edge_euler(column, site, role, generator):
 
 cross_h3 = sp.zeros(96, 8)
 for column in range(8):
+    no_h2 = True
     for oi, (p, role, gi) in enumerate(labels):
         value = _slow_n0_edge_euler(column, (p, 0, 0, 0), role, SGEN[gi])
         linear = sp.diff(value, aa).subs(aa, 0)
         series = sp.series(sp.together(linear), h, 0, 4).removeO()
+        expanded = sp.expand(series)
         # N0 is an exact flat kernel: an h^2 amplitude must have no order-h^2
         # Euler before the O(h) background is inserted.
-        check(
-            "N0_CROSS_COL_%d_ROW_%d_NO_H2" % (column, oi),
-            sp.simplify(sp.expand(series).coeff(h, 2)) == 0,
-        )
-        cross_h3[oi, column] = sp.factor(sp.expand(series).coeff(h, 3))
+        no_h2 &= sp.simplify(expanded.coeff(h, 2)) == 0
+        cross_h3[oi, column] = sp.factor(expanded.coeff(h, 3))
+    check("N0_CROSS_COL_%d_NO_H2" % column, no_h2)
     print("N0_CROSS_PROGRESS", column, flush=True)
 
 rank_cross = L2.rank() if isinstance(L2, sp.MatrixBase) else sp.Matrix(L2.tolist()).rank()
