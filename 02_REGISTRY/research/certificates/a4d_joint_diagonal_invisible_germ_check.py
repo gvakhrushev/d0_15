@@ -564,9 +564,166 @@ check(
     sp.expand(_eq4[2].subs({u0: 0, u1: 0, u2: 1, u3: 1})) == 32,
 )
 
+def _minus_hessian():
+    """Variational Hessian at character (-1,-1,-1,-1). Degree 2, two parities."""
+    coords = sp.symbols("c0:24")
+    logs = []
+    for role in range(4):
+        matrix = sp.zeros(4)
+        for j in range(6):
+            matrix += coords[6 * role + j] * GEN[j]
+        logs.append(matrix)
+    forward = {}
+    for parity in (1, -1):
+        for role in range(4):
+            forward[(role, parity)] = _exp_series(parity * logs[role], 2)
+    total = 0
+    for parity, mult in ((1, 128), (-1, 128)):
+        shifted = -parity
+        for p, q in PAIRS:
+            hol = forward[(p, parity)]
+            hol = _mul_series(hol, forward[(q, shifted)], 2)
+            hol = _mul_series(hol, _inv_series(forward[(p, shifted)], 2), 2)
+            hol = _mul_series(hol, _inv_series(forward[(q, parity)], 2), 2)
+            hinv = _inv_series(hol, 2)
+            uu, vv = [i for i in range(4) if i not in (p, q)]
+            area = wedge_vec(basis_cols[uu], basis_cols[vv])
+            sgn = complement_orientation((p, q))
+            odd = sp.expand(sp.Rational(1, 2) * (hol[2] - hinv[2]))
+            total += mult * sgn * (area.T * G2 * STAR * bivector_of_tangent(odd))[0]
+    potential = sp.expand(total)
+    hess = sp.zeros(24)
+    for i in range(24):
+        di = sp.diff(potential, coords[i])
+        for j in range(24):
+            hess[i, j] = sp.diff(di, coords[j])
+    return hess
+
+
+def _ray_logs(amps, correction, tt):
+    base = [amps[r] * Ms[r] for r in range(4)]
+    rmat = []
+    for role in range(4):
+        matrix = sp.zeros(4)
+        for j in range(6):
+            matrix += correction[6 * role + j] * GEN[j]
+        rmat.append(matrix)
+
+    def log_at(role, k, extra=None):
+        zeta = sp.I**k
+        eta = 1 if k % 2 == 0 else -1
+        bump = extra if extra is not None else sp.zeros(4)
+        return zeta * tt * base[role] + eta * (tt**2) * rmat[role] + bump
+
+    return log_at
+
+
+def _forcing_and_corrected(amps):
+    """Character-(-1) quadratic forcing, its solved correction, and corrected E_Q."""
+    tt, ss = sp.symbols("tt ss")
+    forcing = sp.zeros(24, 1)
+    zero = sp.zeros(24, 1)
+    log_plain = _ray_logs(amps, zero, tt)
+    for direction in range(24):
+        role, gen = divmod(direction, 6)
+
+        def log_at(role_r, k, role=role, gen=gen):
+            eta = 1 if k % 2 == 0 else -1
+            extra = eta * ss * GEN[gen] if role_r == role else sp.zeros(4)
+            return log_plain(role_r, k) + extra
+
+        series = {}
+        for k in range(4):
+            for role_r in range(4):
+                series[(role_r, k)] = _exp_series(log_at(role_r, k), 3)
+        total = 0
+        for k in range(4):
+            ks = (k + 1) % 4
+            for p, q in PAIRS:
+                hol = series[(p, k)]
+                hol = _mul_series(hol, series[(q, ks)], 3)
+                hol = _mul_series(hol, _inv_series(series[(p, ks)], 3), 3)
+                hol = _mul_series(hol, _inv_series(series[(q, k)], 3), 3)
+                hinv = _inv_series(hol, 3)
+                uu, vv = [i for i in range(4) if i not in (p, q)]
+                area = wedge_vec(basis_cols[uu], basis_cols[vv])
+                sgn = complement_orientation((p, q))
+                for deg in range(4):
+                    odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
+                    total += 64 * sgn * (area.T * G2 * STAR * bivector_of_tangent(odd))[0]
+        poly = sp.Poly(sp.expand(total), tt, ss)
+        forcing[direction] = sp.expand(poly.coeff_monomial(tt**2 * ss))
+    correction = sp.expand(-_MINUS_H.LUsolve(forcing))
+    log_corr = _ray_logs(amps, correction, tt)
+    series = {}
+    for k in range(4):
+        for role_r in range(4):
+            series[(role_r, k)] = _exp_series(log_corr(role_r, k), 4)
+    odds = {}
+    for k in range(4):
+        ks = (k + 1) % 4
+        for p, q in PAIRS:
+            hol = series[(p, k)]
+            hol = _mul_series(hol, series[(q, ks)], 4)
+            hol = _mul_series(hol, _inv_series(series[(p, ks)], 4), 4)
+            hol = _mul_series(hol, _inv_series(series[(q, k)], 4), 4)
+            hinv = _inv_series(hol, 4)
+            odds[(k, p, q)] = [
+                sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg])) for deg in range(5)
+            ]
+    metric = []
+    for j in range(10):
+        frames = [basis_cols[r] + ss * _hcols[j][r] for r in range(4)]
+        total = 0
+        for k in range(4):
+            for p, q in PAIRS:
+                uu, vv = [i for i in range(4) if i not in (p, q)]
+                area = wedge_vec(frames[uu], frames[vv])
+                sgn = complement_orientation((p, q))
+                for deg in range(5):
+                    total += 64 * sgn * (
+                        area.T * G2 * STAR * bivector_of_tangent(odds[(k, p, q)][deg])
+                    )[0]
+        poly = sp.Poly(sp.expand(total), tt, ss)
+        metric.append(sp.expand(poly.coeff_monomial(tt**4 * ss)))
+    return forcing, correction, metric
+
+
+_MINUS_H = _minus_hessian()
+check("MINUS_HESSIAN_RANK_24", _MINUS_H.rank() == 24)
+check("MINUS_HESSIAN_SYMMETRIC", _MINUS_H == _MINUS_H.T)
+_ray_f, _ray_r, _ray_eq = _forcing_and_corrected([0, 0, 1, 1])
+_expected_r = {
+    0: sp.Rational(1, 2) + sp.I / 2, 1: -sp.I / 2, 2: -sp.I / 2,
+    3: sp.I / 2, 4: sp.I / 2, 6: sp.Rational(1, 2) + sp.I / 2,
+    7: -sp.I / 2, 8: -sp.I / 2, 9: sp.I / 2, 10: sp.I / 2,
+    14: sp.I / 2, 16: -sp.I / 2, 17: sp.I / 2,
+    19: sp.I / 2, 21: -sp.I / 2, 23: -sp.I / 2,
+}
+for _i in range(24):
+    _want = _expected_r.get(_i, 0)
+    check("MINUS_CORRECTION_RAY_%d" % _i, sp.expand(_ray_r[_i] - _want) == 0)
+_expected_eq = {
+    0: -64, 1: 128, 2: -192 + 192 * sp.I, 3: -192 + 192 * sp.I, 4: -64,
+    5: 192 - 192 * sp.I, 6: 192 - 192 * sp.I,
+}
+for _j in range(10):
+    check(
+        "CORRECTED_EQ_RAY_%d" % _j,
+        sp.expand(_ray_eq[_j] - _expected_eq.get(_j, 0)) == 0,
+    )
+for _root in (
+    -sp.Rational(1, 2) - sp.I * sp.sqrt(3) / 2,
+    -sp.Rational(1, 2) + sp.I * sp.sqrt(3) / 2,
+):
+    _f_root, _r_root, _eq_root = _forcing_and_corrected([0, 0, _root, 1])
+    check("MINUS_EQUATION_ON_CUBE_ROOT", sp.expand(_MINUS_H * _r_root + _f_root) == sp.zeros(24, 1))
+    check("CORRECTED_EQ_NONZERO_ON_CUBE_ROOT", any(comp != 0 for comp in _eq_root))
+
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
 print("TORUS_CONNECTION_CRITICAL_LINE", "u0=u1=0, u2**3=u3**3")
-print("BLOCKED: J2-DIAGONAL-INVISIBLE-QUARTIC-HARMONIC-CORRECTION-MISSING")
-print("MISSING: character-(-1) quadratic correction and same-character regular cubic correction substituted into E_Q")
+print("MINUS_CORRECTION_SOLVED", "character (-1,-1,-1,-1), Hessian rank 24")
+print("BLOCKED: J2-DIAGONAL-INVISIBLE-CRITICAL-LINE-CUT-CONJUGATE-CARRIER-MISSING")
+print("MISSING: conjugate quarter-wave (-i,-i,-i,-i) folded into the corrected E_Q")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")

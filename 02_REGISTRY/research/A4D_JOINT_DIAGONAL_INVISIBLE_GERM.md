@@ -11,12 +11,10 @@
 
 ```text
 BLOCKED
-J2-DIAGONAL-INVISIBLE-QUARTIC-HARMONIC-CORRECTION-MISSING
+J2-DIAGONAL-INVISIBLE-CRITICAL-LINE-CUT-CONJUGATE-CARRIER-MISSING
 ```
 
-The origin-isolated terminal is not accepted. Section 2 sets the regular coordinates to zero in a single plaquette. That is not the Lyapunov–Schmidt elimination required by the brief.
-
-Section 5 replaces it by the L=4 sum of the same odd-holonomy scalar on a pure census mode. Degrees 0 through 3 cancel. The first pure-mode response is degree 4. Its connection-critical set is the line \(u_0=u_1=0\), \(u_2^3=u_3^3\), and the constant-solder metric Euler is nonzero on that line. This evaluation holds every other Fourier amplitude at zero. A quadratic correction at character \((-1,-1,-1,-1)\), and the same-character regular cubic correction, can still enter \(E_Q\) at degree 4. Those corrections are not solved. The conjugate character \((-i,-i,-i,-i)\) is not included. Neither isolation nor a curved germ is claimed.
+The origin-isolated terminal is not accepted. Section 6 solves the character-\((-1,-1,-1,-1)\) correction on the pure-mode connection-critical line and substitutes it into \(E_Q\). The corrected degree-4 metric Euler is nonzero at all three cube roots. The conjugate quarter-wave \((-i,-i,-i,-i)\) is not in that calculation. Neither isolation nor a curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -99,13 +97,32 @@ Degrees 0, 1, 2, and 3 are zero. The connection Euler \(\nabla V_4=0\) is the co
 u_0=u_1=0,\qquad u_2^3=u_3^3.
 \]
 
-On that line the constant-solder metric Euler starts at degree 4. At \((u_2,u_3)=(1,1)\) its Gram component \((0,2)\) equals 32. The same component is nonzero at the other two cube roots of unity. So the pure mode is not a joint zero.
+On that line the constant-solder metric Euler starts at degree 4. At \((u_2,u_3)=(1,1)\) its Gram component \((0,2)\) equals 32. The same component is nonzero at the other two cube roots of unity. Section 6 substitutes the character-\((-1)\) correction into this Euler.
 
-The missing substitution is the order-\(\varepsilon^2\) correction at character \((-1,-1,-1,-1)\), together with the same-character regular cubic correction, into this degree-4 metric Euler. The conjugate quarter-wave is a separate orbit and is not folded into \(V_4\).
+## 6. Character \((-1)\) correction on the critical line
+
+The quadratic product of the quarter-wave character is \((-1,-1,-1,-1)\). The variational Hessian of the odd-holonomy sum at that character is symmetric of rank 24, so the quadratic correction \(r\) is unique. On \(u=(0,0,1,1)\) it is the half-integer vector whose nonzero entries are
+
+\[
+\begin{aligned}
+&(1/2+i/2,-i/2,-i/2,i/2,i/2,0),\\
+&(1/2+i/2,-i/2,-i/2,i/2,i/2,0),\\
+&(0,0,i/2,0,-i/2,i/2),\\
+&(0,i/2,0,-i/2,0,-i/2).
+\end{aligned}
+\]
+
+Substituting \(t^2 r\) with the character-\((-1)\) dressing leaves the metric Euler zero at orders \(t^2\) and \(t^3\). At order \(t^4\) the Gram components are
+
+\[
+(-64,\ 128,\ -192+192i,\ -192+192i,\ -64,\ 192-192i,\ 192-192i,\ 0,\ 0,\ 0).
+\]
+
+The same corrected degree-4 metric Euler is nonzero at \(u_2=-1/2\pm i\sqrt{3}/2\), \(u_3=1\). These three values are computed with the same-character correction held at zero. The conjugate quarter-wave is the remaining carrier.
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 
-## 5. Validation
+## 7. Validation
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_joint_diagonal_invisible_germ_check.py
