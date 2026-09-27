@@ -2839,3 +2839,77 @@ the owned finite action on these rays. No all-orders slow-background
 functional \(\Phi\) is owned, so this equality cannot be substituted into
 #275's \(z_h=h\) response. The requisite amplitude/scale map and same-source
 comparison still have to be computed there.
+
+
+### 9.35 Exact small-h grading of the #296 Gram-lift harmonics
+
+The earlier scratch expansion used `C(d(z^n)) vec(dd^T)` by itself. That is
+not the nth coefficient of the owned #296 lift: it omits both the binomial
+coefficient and the factor \(\sigma^{n-1}\). The actual coefficient is
+
+\[
+F_n(d)=2\binom{1/2}{n}\sigma(d)^{n-1}
+C\!\left((1+d)^{\circ n}-1\right)
+\operatorname{vec}_{\rm sym}(dd^T),
+\qquad \sigma(d)=d^T\eta d,
+\]
+
+with the power and subtraction taken coordinatewise. Since
+\(C(d)\operatorname{vec}_{\rm sym}(dd^T)=0\), the linear term
+\(nC(d)\operatorname{vec}_{\rm sym}(dd^T)\) vanishes. The first possible
+inner term is
+\[
+\binom n2 C(d^{\circ2})\operatorname{vec}_{\rm sym}(dd^T),
+\]
+which has total degree four in \(d\). Multiplication by
+\(\sigma^{n-1}\), of degree \(2n-2\), puts the first possible full
+coefficient at degree \(2n+2\). The exact checker verifies this leading
+homogeneous term and its nonzero polynomial factor for \(n=2,\ldots,8\);
+the all-\(n\) lower bound follows directly from the binomial expansion and
+the consumed null identity.
+
+For a fixed Fourier direction \(z_r=e^{ihp_r}\),
+\(d_r=e^{-ihp_r}-1=-ihp_r+O(h^2)\). Set
+\(P=p^T\eta p\). Then
+
+\[
+F_n(h)=\kappa_n h^{2n+2}P^{n-1}
+C(p^{\circ2})\operatorname{vec}_{\rm sym}(pp^T)
++O(h^{2n+3}),\qquad
+\kappa_n=(-1)^{n-1}2\binom{1/2}{n}\binom n2.
+\]
+
+For \(n=2,\ldots,8\), the exact multipliers are
+\[
+\left(\tfrac14,\tfrac38,\tfrac{15}{32},\tfrac{35}{64},
+\tfrac{315}{512},\tfrac{693}{1024},\tfrac{3003}{4096}\right).
+\]
+Thus the sixth harmonic of this **Gram-lift series** starts generically at
+\(h^{14}\), with coefficient
+\(\tfrac{315}{512}P^5C(p^{\circ2})\operatorname{vec}_{\rm sym}(pp^T)\).
+At the exact rational witness \(p=(1,2,0,0)\), its nonzero Python
+zero-based connection slots are
+\((13,-76545/256),(15,-76545/512),(20,-76545/256),(22,-76545/512)\);
+all other slots vanish. This proves the leading coefficient is not the zero
+polynomial. Special directions with \(P=0\) or with vanishing common factor
+can start at higher order; the statement is a universal lower bound and a
+generic exact order.
+
+The old `KeyError` is avoided by defining the leading order through
+`Poly(expr, h).terms()`: a nonzero constant has order zero, while the zero
+polynomial has no leading order. The checker exercises both cases and proves
+the exact polynomial grading without expanding exponentials to high order.
+After division by \(h^2\), each fixed harmonic \(n\ge2\) is
+\(O(h^{2n})\). This is a modewise statement for the owned #296 lift, not a
+uniform bound for arbitrary packets and not a total-action or Einstein-limit
+result.
+
+This \(F_6\) is not #260's degree-six connection-amplitude forcing on
+\(N_0\). The latter has its separate regular-image correction and zero
+ten-slot metric response on the selected COS/SIN line, while its odd
+degree-seven equation is still open. Nor is the orbit-5/7 value \(8/5\) a
+coefficient of this near-identity series: it belongs to the frozen-section,
+moving-character cokernel diagnostic of #299. The exact checker is
+`02_REGISTRY/research/certificates/a4d_q0_harmonic_small_h_scaling_check.py`.
+No new substitution into the slow functional \(\Phi\) follows from this
+carrier or from its small-\(h\) order.
