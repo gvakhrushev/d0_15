@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: PARTIAL / BLOCKED on the all-phase identity (NF); neither requested terminal is claimed.
+Status: BLOCKED. The shear carrier fails (NF), and its quadratic metric equation cuts every joint vacuum amplitude. Neither requested terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -476,7 +476,25 @@ The ten quadratic moments in the order \((00,01,02,03,11,12,13,22,23,33)\) are
 (0,0,0,0,-2,0,0,0,0,0).
 \]
 
-In particular \(v^*D_QH_Q(z)[q_{11}]v=-2\). The same character is jointly invertible at the flat solder, so this kernel is created by the shear. Because \(z^2=(1,1,1,1)\), the quadratic self-interaction of this carrier lands in the zero-frequency channel. This is a finite failure of (NF). It is not yet a smooth-background NOGO.
+In particular \(v^*D_QH_Q(z)[q_{11}]v=-2\). The same character is jointly invertible at the flat solder, so this kernel is created by the shear. Because \(z^2=(1,1,1,1)\), the quadratic self-interaction of this carrier lands in the zero-frequency channel. This is a finite failure of (NF). It is not a smooth-background NOGO.
+
+### 8.4 Quadratic continuation of this carrier
+
+The character is self-inverse and \(z^2\) is the zero frequency, so a translation by \(e_0\) sends the real ray \(u v\) to \(-u v\). On a constant solder the action is therefore even in \(u\). Odd reduced equations vanish.
+
+The zero-frequency connection symbol on this shear is invertible (rank 24). A quadratic action is diagonal in characters, so the resonant ray does not source that block. A zero-mode correction created by a cubic vertex is \(O(u^2)\) and enters the on-shell metric Euler only at \(O(u^4)\).
+
+The leading metric Euler is the Gram derivative of \(S=\tfrac12 A^{\mathsf T}H(Q)A\) along \(A=uv\). It equals \(u^2/2\) times the moment vector:
+
+\[
+E_Q^{(2)}=(0,0,0,0,-u^2,0,0,0,0,0).
+\]
+
+Vacuum, \(\tau=0\), forces \(u=0\). The carrier cannot enter a joint-vacuum branch.
+
+The constant source frozen from the component order already written in §3, before this moment was used to choose a slot, is \(\tau=e_{00}\). Its \(00\)-component is not matched by \(E_Q^{(2)}\), so that predeclared source has no quadratic joint branch either. A source supported only on \(q_{11}\) would solve the quadratic metric equation, but selecting it after seeing the moment would be post hoc; it is not used.
+
+On this constant background the Einstein tensor vanishes, and the identity connection has \(E_Q=0\). That is the #216 smooth comparator at this order. No exact joint-critical sequence with the declared source/comparator contract is produced here, so the metric-response NOGO is not claimed.
 
 It does not establish (NF) on the continuous unit torus away from this finite
 grid, nor at every Gram in the compact chart. The conditional homogenization

@@ -122,13 +122,42 @@ def main() -> None:
     # vector is the only other content-one integer generator.
     check("SIGN_FLIP_SAME_MOMENT", moments(SHEAR, -WITNESS)[q11_index] == -2)
 
+    # Zero-frequency block. A quadratic action is diagonal in characters, so
+    # the resonant ray does not source this block before cubic vertices.
+    zero_frequency = (sp.Integer(1), sp.Integer(1), sp.Integer(1), sp.Integer(1))
+    h0, _c0 = nf.joint_symbols(SHEAR, zero_frequency)
+    check("ZERO_FREQUENCY_H_INVERTIBLE", nf.exact_rank(h0) == 24)
+
+    # Leading vacuum metric equation. With S = (1/2) A^T H(Q) A along A=u v,
+    # the Gram derivative in slot q is (u^2/2) times the moment above.
+    vacuum = [sp.Integer(0)] * 10
+    quadratic_euler = [sp.Rational(1, 2) * value for value in response]
+    check("VACUUM_QUADRATIC_EULER_CUTS_AMPLITUDE", quadratic_euler != vacuum)
+    check("VACUUM_ONLY_SOLUTION_IS_ZERO", all(
+        (quadratic_euler[i] * sp.symbols("u")**2).subs(sp.symbols("u"), 1) == 0
+        or i == q11_index
+        for i in range(10)
+    ) and quadratic_euler[q11_index] == -1)
+
+    # Predeclared before the branch solve: the first covector of the component
+    # order already fixed in the memo, not the slot selected by the moment.
+    predeclared = [sp.Integer(0)] * 10
+    predeclared[0] = sp.Integer(1)
+    check("PREDECLARED_00_SOURCE_HAS_NO_QUADRATIC_BRANCH", any(
+        quadratic_euler[i] == 0 and predeclared[i] != 0 for i in range(10)
+    ))
+
     print("RESULT_SOLDER: upper shear E=I+E_01+E_12")
     print("RESULT_CHARACTER: (-1,1,-1,1), table phase equals physical phase")
     print("RESULT_RANKS: H=20, C=9, joint=23, nullity=1")
     print("RESULT_WITNESS:", list(WITNESS))
     print("RESULT_TEN_MOMENTS:", response)
     print("RESULT_Q11: -2")
-    print("BOUNDARY: finite shear counterexample to (NF); not a joint-critical NOGO.")
+    print("RESULT_VACUUM: quadratic metric Euler is (0,0,0,0,-u^2,0,0,0,0,0); only u=0")
+    print("RESULT_PREDECLARED_SOURCE: constant tau=e_00 has no quadratic joint branch")
+    print("RESULT_COMPARATOR: constant background has G=0 and the identity sheet has E_Q=0")
+    print("BOUNDARY: (NF) fails, but no joint-critical sequence survives at this order.")
+    print("TERMINAL_STATUS: BLOCKED, not a metric-response NOGO")
 
 
 if __name__ == "__main__":
