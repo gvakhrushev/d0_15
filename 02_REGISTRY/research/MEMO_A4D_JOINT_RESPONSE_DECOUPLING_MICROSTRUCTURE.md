@@ -835,6 +835,44 @@ the certified families, remain open. Neither final terminal follows.
 
 The certificate is `a4d_joint_response_defect_isolation_check.py`.
 
+### 8.17 The joint-critical obstruction is quadratic, not linear
+
+Section 9 names the single missing identity as a joint-critical replacement for
+(NF). Before that it is worth asking the prior question: does a joint-critical
+amplitude exist at all on the two certified defect carriers?
+
+The linear part cannot answer it, for a bookkeeping reason rather than a
+theorem. A kernel direction \(b\) of the joint symbol \(J=[H;C]\) satisfies
+\(Hb=0\) **by construction**, so the order-\(u\) connection equation is
+automatically satisfied on the whole joint kernel. The certificate
+`a4d_joint_response_joint_critical_check.py` records this explicitly, because
+the tempting claim that the connection map is injective on the kernel is simply
+false: its rank there is \(0\), not \(\dim\ker\).
+
+The obstruction is one order later. On a single kernel direction the
+connection Euler expands as
+\[
+E_K(ub)=u^{2}S,
+\]
+with \(S\) the quadratic self-interaction, while the metric Euler is
+\[
+E_Q(ub)=u\cdot 0+u^{2}M(b),
+\]
+with \(M(b)\) the content-one response moment. A joint-critical amplitude needs
+\(S=0\). The order-\(u^{5}\) certificate of this branch already computes \(S\):
+on both defect carriers the witness projection is \(-432\), a nonzero multiple
+of the normalised amplitude, so \(u^{2}S=0\) forces \(u=0\).
+
+\[
+\boxed{\texttt{JOINT-CRITICAL-OBSTRUCTION-IS-QUADRATIC-NOT-LINEAR}}
+\]
+
+This is an accessibility statement about the exact joint kernels of the two
+certified carriers. It is not a smooth-background metric-response NOGO: no
+joint-critical sequence is produced, no \(\#216\) comparator gap is computed,
+and no response terminal is claimed. No claim is made about other characters
+or solders.
+
 ### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
