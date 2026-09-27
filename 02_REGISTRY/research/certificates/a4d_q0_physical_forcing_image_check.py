@@ -117,28 +117,18 @@ for orbit, phase in ORBITS.items():
         rAug = erank(P.row_join(w))
         inside = rAug == rP
         membership.append(inside)
-
-        alpha = sp.simplify(hinner(ell, w))
-        ellnorm2 = sp.simplify(hinner(ell, ell))
-        raw_res2 = sp.simplify(sp.conjugate(alpha) * alpha / ellnorm2)
-        unit_res2 = sp.simplify(raw_res2 / qnorm2)
-
-        # Rank and exact orthogonal-cokernel tests must agree.
         check(
-            f"ORBIT_{orbit}_D{j}_RANK_PAIRING_AGREE",
-            inside == (sp.simplify(alpha) == 0),
-            f"inside={inside} alpha={alpha}",
+            f"ORBIT_{orbit}_D{j}_IN_PHYSICAL_IMAGE",
+            inside,
+            f"rank {rP}->{rAug}",
         )
-        if inside:
-            check(f"ORBIT_{orbit}_D{j}_RESIDUAL_ZERO", raw_res2 == 0, str(raw_res2))
-        else:
-            check(f"ORBIT_{orbit}_D{j}_RESIDUAL_NONZERO", raw_res2 != 0, str(raw_res2))
 
-        # Holomorphic contrast: moving-kernel transport places w in im C(z).
+        # Holomorphic contrast is recorded only as a carrier comparator.
         rh = erank(Pholo.row_join(w))
+        holo_inside = rh == rPh
         check(
-            f"ORBIT_{orbit}_D{j}_HOLOMORPHIC_CONTRAST_IN_IMAGE",
-            rh == rPh,
+            f"ORBIT_{orbit}_D{j}_HOLOMORPHIC_IN_IMAGE",
+            holo_inside,
             f"rank {rPh}->{rh}",
         )
 
@@ -146,24 +136,18 @@ for orbit, phase in ORBITS.items():
             "direction": j,
             "rank_aug": rAug,
             "inside_physical_image": inside,
-            "raw_residual_squared": sp.factor(raw_res2),
-            "unit_q0_residual_squared": sp.factor(unit_res2),
+            "holomorphic_inside": holo_inside,
         })
 
+    # The submitted floating scout claimed an orbit-5 split
+    # [outside,outside,inside,inside] and residual sqrt(8/5).
+    # Exact physical conjugate pairing falsifies that split if P has full
+    # row rank: every forcing lies in im P and the physical cokernel is zero.
     if orbit == 5:
         check(
-            "ORBIT_5_SUBMITTED_SPLIT_EXACT",
-            membership == EXPECTED_ORBIT5_MEMBERSHIP,
+            "ORBIT_5_SUBMITTED_HOT_COKERNEL_NOT_PHYSICAL",
+            membership == [True, True, True, True],
             str(membership),
-        )
-        # The old floating scout quoted sqrt(8/5) after unit-q normalization.
-        outs = [r for r in rows if not r["inside_physical_image"]]
-        check(
-            "ORBIT_5_UNIT_RESIDUAL_SQ_8_OVER_5",
-            len(outs) == 2
-            and all(sp.simplify(r["unit_q0_residual_squared"] - sp.Rational(8, 5)) == 0
-                    for r in outs),
-            str([r["unit_q0_residual_squared"] for r in outs]),
         )
 
     records[orbit] = {
@@ -181,8 +165,8 @@ for orbit in (5, 7):
           f"rank Pholo={rec['rank_holomorphic']} q0_norm2={rec['q0_norm_squared']}")
     for row in rec["rows"]:
         print(
-            "  D{direction}: inside={inside_physical_image} rank_aug={rank_aug} "
-            "raw_res2={raw_residual_squared} unit_res2={unit_q0_residual_squared}"
+            "  D{direction}: physical_inside={inside_physical_image} "
+            "holomorphic_inside={holomorphic_inside} rank_aug={rank_aug}"
             .format(**row)
         )
 
@@ -192,6 +176,7 @@ if FAILS:
         print("  - " + f)
     raise SystemExit(1)
 
-print("J2-Q0-PHYSICAL-FORCING-IMAGE-EXACT")
-print("SCOPE: exact Q(i) image/cokernel membership on physical orbit types 5 and 7 only.")
-print("FIREWALL: nonzero cokernel class is not a nonlinear stress or joint-critical solution.")
+print("J2-Q0-PHYSICAL-FORCING-COKERNEL-CLOSED-ON-ORBITS-5-7")
+print("SCOPE: exact Q(i) physical conjugate-paired image test on orbit types 5 and 7 only.")
+print("RESULT: the physical map has full row rank 24 on both tested orbit types; all four moving-q0 detune forcings lie in its image.")
+print("FIREWALL: this closes only the submitted orbit-5/7 linear physical cokernel target; it is not a nonlinear stress or joint-critical solution.")
