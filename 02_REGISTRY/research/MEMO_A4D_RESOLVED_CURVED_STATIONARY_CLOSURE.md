@@ -1725,3 +1725,62 @@ rank argument at a nonstationary one. It is not a classification of general
 nondegenerate leading solder or finite seven-amplitude configurations.
 Those remain live; no support-wide finite terminal or L=2 witness is claimed,
 and L=3 stays unopened.
+
+
+### 9.17 General critical leading solder: seven supports die, one locus remains
+
+`a4d_resolved_curved_stationary_e2_critical_solder_range_check.py`
+removes the prescribed eta leading solder in §9.16. Keep homogeneous links
+and one homogeneous absolute solder, with `Theta=eps*T+...`, where
+`H0*T=0` and `det T!=0`. The ten critical coordinates in §9.12 are used
+literally. Define
+
+```text
+A=z0-z2, B=z1-z2,
+C=z6*z8-z6*z9-z8*z9-z9^2.
+```
+
+The exact determinant is `det T=A*B*C`, so all three factors are units.
+The order-two solder range condition is `L*H1(v)*vec(T)=0`, with `L`
+a basis of the full H0 cokernel. Every entry is reconstructed from the
+actual Cayley directional curvature derivative. Its eta specialization is
+checked against the owned mixed-partial matrix.
+
+In the twelve-normal union, write `dk=K1_0-K1_1`,
+`d2=N2_0-N2_1`, `d3=N3_0-N3_1`, `alpha=N2_2`, `gamma=N3_3`,
+`u=N2_3`, and `w=N3_2`. A two-row `d2,d3` minor is exactly `2*C`,
+hence `d2=d3=0`. Further literal row identities give
+
+```text
+alpha=-gamma,
+dk=-4*(B/A)*gamma,
+u=w=0,
+(z6+z8)*gamma=0.
+```
+
+No generic-rank sampling or polynomial-system solver is used in this
+classification. The common K1, N2 and N3 role-0/1 directions and K1 on
+roles 2/3 are blind kernel moduli.
+
+Every support except index 5 lacks one member of the required pair
+`N2_2,N3_3`, and therefore has `R1(v)=0`. Two inactive link tests,
+`N3@role2` and `N2@role3`, have first determinant and adjugate variation
+zero; this is independently checked for every face. Their channel Euler
+terms at order two vanish when `R1(v)=0`, whereas their exact star-source
+sum is `64*A*B!=0`. Thus all seven supports are obstructed for *every*
+nondegenerate critical leading solder and arbitrary translations/coefficients
+in this specified germ class.
+
+The only residual-active survivor is support 5 on `z8=-z6`. Its lower
+critical solder block is `[[z9,z6],[-z6,z9]]` and
+`det T=-A*B*(z6^2+z9^2)`. Its tangent must be
+
+```text
+(-4*(B/A)*gamma, q1, -gamma, q2, q2, 0, gamma).
+```
+
+This is an explicit conformal critical-solder locus, not a preferred
+nonlinear completion or a coefficient selector. The remaining locus needs
+higher coupled equations. These germ exclusions do not exclude arbitrary
+finite points of the seven-amplitude supports, and no L=2 witness or L=3
+result is claimed.
