@@ -329,12 +329,12 @@ def einsteinNo2Coeff (out inp m : Fin 10) : ℚ :=
 
 /-- Exact finite regular-block certificate from the independent #270 owner. -/
 theorem a0_right_inverse :
-    Matrix.mul a0 a0Inv = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
+    a0 * a0Inv = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
   ext i j
   fin_cases i <;> fin_cases j <;> native_decide
 
 theorem a0_left_inverse :
-    Matrix.mul a0Inv a0 = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
+    a0Inv * a0 = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
   ext i j
   fin_cases i <;> fin_cases j <;> native_decide
 
