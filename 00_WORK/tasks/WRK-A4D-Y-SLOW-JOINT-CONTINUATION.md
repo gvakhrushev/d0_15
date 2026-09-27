@@ -1,7 +1,7 @@
 # WRK-A4D-Y-SLOW-JOINT-CONTINUATION
 
 Class: `WORKER`  
-State on registration: `PLANNED`  
+State: `BLOCKED`  
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 Research lane: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 
@@ -100,6 +100,15 @@ Do not reopen:
 ## Forbidden
 
 No new action term, Holst term, torsion constraint, \(\varphi\), boundary selector, Fourier cutoff, or fitted source. No BOOK/claim promotion. No declaration that finite coframe directions are exact diffeomorphism gauge.
+
+
+## Blocker
+
+Partial terminal: `J2-Y-SLOW-PRIMARY-SCALING-RANGE-RESPONSE-REDUCES-TO-N0`.
+
+The primary-scaling range calculation is closed through the next response-relevant order: the total-order-`h^3` forcing has an exact range correction and its metric response cancels the complete #259 `h^3` slope response. The remaining homogeneous connection freedom is 16 real dimensions; the metric/source row cuts exactly eight of them, and the residual eight-real kernel is exactly the cosine/sine realification of the diagonal quarter-wave `N0 = span{lambda1,lambda3,lambda4,lambda6}` owned by #260.
+
+The first missing map is therefore the nonlinear slow-background cross term on this residual `N0` sector. Computing a parallel standalone nonlinear germ here would collide with #260, whose corrected real rays are already stationary/response-null through degree 4 and are blocked on the degree-5 connection Euler. Consume or coordinate with that owner before continuing.
 
 ## GitHub execution contract
 
