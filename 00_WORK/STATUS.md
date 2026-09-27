@@ -6,10 +6,10 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Class | PLANNED | IN_PROGRESS | BLOCKED | REVIEW | Total Tracked | WIP (Active / Limit) |
 |---|---|---|---|---|---|---|
-| CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
+| CONTROL | 0 | 0 | 0 | 2 | 2 | 2 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 7 | 0 | 0 | 0 | 7 | 0 / 5 |
-| **Total** | **10** | **0** | **0** | **1** | **11** | **1 / 10** |
+| WORKER | 8 | 0 | 0 | 0 | 8 | 0 / 5 |
+| **Total** | **11** | **0** | **0** | **2** | **13** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -26,6 +26,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-METRIC-NULL-COMPLEX-LEAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-SCHUR-EINSTEIN-DIRECT-LEAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
+| CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE | CONTROL | REVIEW | ROOT | - |
+| WRK-D0-OPERATIONAL-CUT-PROTOCOL-PAIR | WORKER | PLANNED | CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE | D0-POPPERIAN-BOOTSTRAP-001, D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001 |
 
 ## Registry Health & Metrics
 

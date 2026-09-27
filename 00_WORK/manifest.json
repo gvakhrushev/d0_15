@@ -134,6 +134,27 @@
       ],
       "exit_condition": "Formalize the merged #290 physical [H_AA(zeta)|H_AQ(conj zeta)] rank-23 cokernel cases, exact cross-character residual tables, and the zero same-carrier transport witnesses in Lean.",
       "brief": "00_WORK/tasks/WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN.md"
+    },
+    {
+      "id": "CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "REVIEW",
+      "affected_claims": [],
+      "exit_condition": "The finite operational-cut question, its state/cut/allowed-operation/record separation, its two-outcome terminal, and interpretation firewall are recorded; one bounded WORKER task is registered; generated work views match the manifest.",
+      "brief": "00_WORK/tasks/CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE.md"
+    },
+    {
+      "id": "WRK-D0-OPERATIONAL-CUT-PROTOCOL-PAIR",
+      "class": "WORKER",
+      "parent": "CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-POPPERIAN-BOOTSTRAP-001",
+        "D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001"
+      ],
+      "exit_condition": "Construct two exact finite typed protocols with the same verification/record maps but different box-transfer reachability, or prove the owned contract forbids such a pair; include controls separating cut re-description, state transition, and recordability.",
+      "brief": "00_WORK/tasks/WRK-D0-OPERATIONAL-CUT-PROTOCOL-PAIR.md"
     }
   ]
 }
