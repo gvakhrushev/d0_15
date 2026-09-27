@@ -78,6 +78,17 @@
       ],
       "exit_condition": "Compute the first nonzero joint reduced E_K/E_Q germ on the diagonal four-dimensional source-invisible sector and certify whether the joint vacuum zero is isolated or supports a nontrivial curved germ.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM.md"
+    },
+    {
+      "id": "WRK-A4D-JOINT-REAL-CARRIER-QUOTIENT-DECOMPOSITION",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Construct the exact actual conjugate-character/real joint linear carrier on every owned singular L=4 orbit, decompose its nullspace into metric-only/connection-only/mixed sectors before quotient, map and quotient the registered local-Lorentz gauge image, and certify the surviving physical null dimensions without substituting the auxiliary fixed-character H+H^T carrier.",
+      "brief": "00_WORK/tasks/WRK-A4D-JOINT-REAL-CARRIER-QUOTIENT-DECOMPOSITION.md"
     }
   ]
 }
