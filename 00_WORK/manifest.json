@@ -104,7 +104,7 @@
       "id": "WRK-D0-OPERATIONAL-CUT-PROTOCOL-PAIR",
       "class": "WORKER",
       "parent": "CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-POPPERIAN-BOOTSTRAP-001",
         "D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001"
