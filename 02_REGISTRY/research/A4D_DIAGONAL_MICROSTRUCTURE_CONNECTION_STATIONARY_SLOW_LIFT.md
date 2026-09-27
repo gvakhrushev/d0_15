@@ -91,6 +91,8 @@ At \(z=0\) the lift is zero and every connection component of the identity-link 
 
 ## 6. Validation
 
+Review baseline: `880c8284454b072219f470982963d8dc041957c9`.
+
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py
 ```
