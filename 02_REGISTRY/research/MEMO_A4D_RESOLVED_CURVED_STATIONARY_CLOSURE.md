@@ -3,7 +3,7 @@
 **Task:** `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`
 **Execution:** PR #202
 **Status:** IN_PROGRESS / durable checkpoint (restructured F4 attack)
-**Baseline:** `3915f027`
+**Baseline:** `3915f02728bf4900fe49dbcd3950b49abda149eb`
 
 ## 0A. CORRECTIVE FULL-EULER AUDIT (2026-09-26)
 
@@ -1583,3 +1583,65 @@ finite affine Euler equations, remain open. None of the eight supports is
 retired as a finite nonlinear support-wide no-go by this calculation. No
 active-residual L=2 witness is obtained, and L=3 remains unopened. The task
 and PR stay `IN_PROGRESS` / Draft.
+
+
+### 9.15 Finite Newton line with all 16 free solder entries
+
+The exact certificate
+`a4d_resolved_curved_stationary_e2_support7_free_solder_line_check.py`
+replaces fixed-solder sampling on the selected support-5 line `x=t*v`
+by classification of every homogeneous absolute solder-critical point.
+It reconstructs the Cayley matrices from the owner and verifies the stored
+polynomial inverse column in
+`a4d_resolved_curved_stationary_e2_support7_free_solder_root_data.json`.
+No floating root approximation is used.
+
+Let `D_r` be the four chart determinants in §9.8, `C=prod_r D_r^2`, and
+let `Q` multiply solder column `r` by `D_r^2`. The exact solder Hessian is
+
+```text
+H_theta = Q H_norm Q / C,
+```
+
+where `H_norm` is a symmetric polynomial matrix of degree at most 8.
+Its determinant is a nonzero rational constant times
+
+```text
+t^12 (173*t-13)^2 (173*t+13)^2 P_78(t).
+```
+
+`P_78` is squarefree and coprime to `t` and every Cayley chart factor.
+Exact real isolating intervals give 22 simple real roots. Away from `t=0`
+and these roots, solder stationarity forces `Theta=0`. At every root the
+normalized Hessian has rank 15: a corank of at least two would make the
+first derivative of its determinant vanish.
+
+The checked polynomial identity is `H_norm V=d*e0`, where
+`d` is a nonzero constant times `t^2 P_78`.
+Both `V_0` and `det reshape(V)` are coprime to `P_78`.
+Thus each of the 22 roots has a one-dimensional critical solder space,
+spanned by `Q^-1 V`, and every nonzero member is nondegenerate.
+One curvature component is coprime to `P_78` too, so all these links are
+curved. Solder criticality has therefore not been mistaken for a vacuum.
+
+Differentiating the inverse-column identity and using symmetry gives
+`V^T H_norm' V=d' V_0` at a root. The derivatives of `Q` and `C` drop out
+at criticality. Consequently the literal partial link derivative along the
+line is `d' V_0/(2*C)` times the square of the solder scale; it is nonzero
+at every root with nondegenerate solder.
+
+For the matched homogeneous translation ray
+`b_0=s*e0`, `b_1=b_2=b_3=0`, four actual affine Euler rows form a `4 x 4`
+coefficient-response matrix. Its reduced determinant has numerator degree
+125 and denominator degree 120. Both are coprime to `P_78`. For `s != 0`,
+these necessary affine equations force all four channel coefficients to
+zero. For `s=0`, every channel link derivative already vanishes. In either
+case the nonzero star path derivative excludes full stationarity at all
+22 roots. The frozen `t=0` point is excluded for every nondegenerate
+critical solder by §9.12.
+
+**Exact scope:** the entire open Newton line, every free homogeneous
+absolute solder, every four-channel coefficient choice, and the stated
+translation ray. This does not classify arbitrary translations or seven
+independent amplitudes. It is not a support-wide terminal and supplies no
+active-residual witness. L=3 remains unopened.
