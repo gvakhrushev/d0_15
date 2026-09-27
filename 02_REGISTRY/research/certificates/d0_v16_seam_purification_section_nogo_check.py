@@ -64,6 +64,18 @@ assert ell0_dim == LENGTH
 assert ellP_dim == LENGTH
 assert GN_dim == NEWTON_G
 
+# Freeze R_* from the internal saturated co-vertex owner:
+# K(9,11,13) has 33 vertices; the proper co-vertex region has 32 vertices,
+# BoundaryCutWeight=20 and therefore capacity=20/4=5.
+scene_vertices = F(33)
+co_vertex_size = F(32)
+co_vertex_cut = F(20)
+co_vertex_capacity = co_vertex_cut / 4
+Rstar_frozen = co_vertex_capacity / co_vertex_size
+assert co_vertex_capacity == 5
+assert Rstar_frozen == F(5, 32)
+assert 1 + Rstar_frozen == F(37, 32)
+
 # Declared task inputs apart from Lambda_act are dimensionless.
 rankP_dim = ONE
 phi_dim = ONE
@@ -75,7 +87,7 @@ assert rankP_dim == phi_dim == Rstar_dim == history_sign_dim == ONE
 # dimensionless selector.  The same frozen internal record admits distinct
 # positive dimensionless functions unless an extra semantic theorem selects one.
 rankP = F(2)
-Rstar = F(1)
+Rstar = Rstar_frozen
 mu_1 = rankP
 mu_2 = rankP * (1 + Rstar)
 b_1 = 1 + Rstar
@@ -143,7 +155,7 @@ print("m_act dimension =", m_act_dim)
 print("tau0 dimension =", tau0_dim)
 print("ellP dimension =", ellP_dim)
 print("G_N dimension =", GN_dim)
-print("selector hostile mass values =", mu_1, mu_2)
+print("frozen R_* =", Rstar_frozen)\nprint("selector hostile mass values =", mu_1, mu_2)
 print("selector hostile time values =", b_1, b_2)
 print("internal time type =", tau_star.semantic_type)
 print("target time type =", tau_C.semantic_type)
