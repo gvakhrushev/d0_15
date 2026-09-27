@@ -3644,6 +3644,8 @@ theorem cMatrix_zero_ker_finrank_eq_ten :
   simp
 
 
+/- Post-merge full-closure validation trigger; theorem content unchanged. -/
+
 end
 
 end D0.Geometry.A4DMetricNullHessianComplex
