@@ -1795,10 +1795,6 @@ left annihilator above. -/
 theorem orbit5_cokernel_codim_one : 24 - Matrix.rank p5 = 1 := by simp [orbit5_rank]
 theorem orbit7_cokernel_codim_one : 24 - Matrix.rank p7 = 1 := by simp [orbit7_rank]
 
-end
-
-end
-
 /- Integration validation retrigger after exact-certificate elaboration repairs. -/
 
 end
