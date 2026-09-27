@@ -1890,3 +1890,55 @@ EL2/EL3, and solder EL1/EL2/EL3 vanish exactly, with nonzero R1 and a
 nondegenerate leading solder. Link EL3 and affine EL4 are still required.
 This is not a finite witness, an all-orders formal branch, or a completed
 support. In particular no hostile L=3 work is opened by these data.
+
+
+### 9.20 The compatible candidate dies at actual affine order four
+
+`a4d_resolved_curved_stationary_e2_conformal_candidate_affine4_check.py`
+continues §9.19 with the full action-coefficient freedom left by its leading
+balance. Define `Gamma=-1/1024` and use
+
+```text
+(c_eta_adj,c_eta_opp,c_n_adj,c_n_opp)
+  = (Gamma/2+p,Gamma/2-p,q,-q),
+b0=e0/(256*q), b1=0, b2=b3=e0, parity=(1,1,0,0), q!=0.
+```
+
+Here q is literally the observer-adjacent coefficient, not the difference
+of the two observer coefficients. Both p and q remain free. The certificate
+rechecks every leading link row for this entire family and recomputes the
+actual affine forms at the next order. Third-jet functions are reused
+from the existing owner and checked against the owned two-jet functions.
+No alternate channel or generator convention is introduced.
+
+All solder-compatible second-amplitude freedoms have four-dimensional
+projection. Their exact matrix contribution to affine EL4 is zero, for
+every p and q. Next translations in the occupied mode act through the
+zero Q3 matrix, while other Fourier modes cannot repair this mode of a
+translation-invariant affine operator. Higher amplitudes enter the
+identically zero combined Q2 and do not repair it either. Solder corrections
+are absent from the channel argument.
+
+After multiplication by the declared unit q, the two actual affine rows
+for role 0, components 2 and 3, are
+
+```text
+32*q*(1024*q-1),
+-32*q*(25600*q-1)/5.
+```
+
+Their literal polynomial combination `-25*row2-5*row3` is `768*q`,
+nonzero on this leading-balance chart. Thus the same branch would require
+both `1024*q=1` and `25600*q=1`. No value of p, q, second amplitude,
+next solder, or next translation repairs these necessary equations.
+This excludes the fixed coefficient point of §9.19 as well as its entire
+two-coefficient family.
+
+**Exact scoped verdict:** the declared conformal reconstruction is blocked
+by necessary affine order four. Link EL3 could impose an earlier
+obstruction and is not claimed to pass; affine EL4 already excludes a
+full stationary germ, so solving further rows of this reconstruction is
+unnecessary. This does not classify other leading solders/tangent moduli
+on §9.17's surviving locus or arbitrary finite points of support 5.
+Those remain live. No L=2 finite witness, whole-support terminal, or L=3
+result is claimed.
