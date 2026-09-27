@@ -20,6 +20,8 @@ open Complex
 
 noncomputable section
 
+set_option maxHeartbeats 1200000
+
 def qi (a b : ℚ) : ℂ := (a : ℂ) + (b : ℂ) * Complex.I
 
 @[simp] theorem qi_add (a b c d : ℚ) :
@@ -1792,6 +1794,8 @@ rank 23 in a 24-dimensional output carrier, witnessed by the explicit nonzero
 left annihilator above. -/
 theorem orbit5_cokernel_codim_one : 24 - Matrix.rank p5 = 1 := by simp [orbit5_rank]
 theorem orbit7_cokernel_codim_one : 24 - Matrix.rank p7 = 1 := by simp [orbit7_rank]
+
+end
 
 end
 
