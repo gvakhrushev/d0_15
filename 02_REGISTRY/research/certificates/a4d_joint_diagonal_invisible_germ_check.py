@@ -12,9 +12,11 @@ The polarized curvature_mixed scalar vanishes on that four-space. A
 single-plaquette odd-holonomy truncation with the regular coordinates set
 to zero is recorded below and is not an isolation theorem. The L=4 torus
 sum of the same scalar on a pure N_0 mode starts at degree 4. Its
-connection-critical line is cut by the pure-mode metric Euler, but the
-quadratic character-(-1) correction has not been substituted, so the script
-stays blocked. The affine coframe descent is not a gauge deletion.
+connection-critical line is cut by the pure-mode metric Euler. On
+u=(0,0,1,1) the corrected real cosine and sine rays have a solved degree-6
+even correction and a vanishing degree-6 metric Euler. The degree-7 odd
+resonant connection Euler is not computed, so the script stays blocked.
+The affine coframe descent is not a gauge deletion.
 
 No new action channel, torsion constraint, or Einstein equation is used.
 """
@@ -1107,7 +1109,7 @@ for _name, _dress, _sign in (
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
 print("CONJUGATE_EQ_IS_CONJUGATE", True)
-print("REAL_RAY_JOINT_FLAT_THROUGH_DEGREE", 6)
+print("REAL_RAY_EVEN_CHANNELS_AND_METRIC_FLAT_THROUGH_DEGREE", 6)
 print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-7-ODD-EULER-MISSING")
 print("MISSING: degree-7 odd resonant connection Euler of the corrected real rays")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")

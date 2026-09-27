@@ -14,7 +14,7 @@ BLOCKED
 J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-7-ODD-EULER-MISSING
 ```
 
-The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). The real cosine and sine dressings of that ray, after the solved zero-mode and character-\((-1)\) corrections, are curved at degree 1. Their scalar, connection Euler, and metric Euler vanish through degree 5. The degree-6 even channels are now solved as well: both Hessians remain rank 24, the corrections below cancel the degree-6 connection forcing, and the degree-6 metric Euler vanishes. The next missing coefficient is the degree-7 odd resonant connection Euler of those corrected rays. Neither isolation nor a finite curved germ is claimed.
+The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). The real cosine and sine dressings of that ray, after the solved zero-mode and character-\((-1)\) corrections, are curved at degree 1. Their scalar, connection Euler, and metric Euler vanish through degree 5. The degree-6 even channels are now solved as well: both Hessians remain rank 24, the corrections satisfy the even Hessian equation \(Hc+F=0\), and substituting them into the metric series gives a zero degree-6 metric Euler. The next missing coefficient is the degree-7 odd resonant connection Euler of those corrected rays. Neither isolation nor a finite curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -132,7 +132,7 @@ The real carrier of this ray uses \(\operatorname{Re}(i^{x_0+x_1+x_2+x_3})\) and
 
 The degree-5 resonant connection Euler vanishes exactly for both corrected real dressings, and the degree-5 metric Euler also vanishes.
 
-At degree 6 the even forcing is supported on Roles 0 and 1. For the cosine, the character-\((-1)\) forcing is
+The degree-5 metric coefficient includes exponential order 5, so that vanishing is the full \(t^5\) term. At degree 6 the even forcing is supported on Roles 0 and 1. The certificate solves the even Hessian equation \(Hc+F=0\). Substituting those corrections into the metric series gives zero on all ten Gram components. For the cosine, the character-\((-1)\) forcing is
 \[
 (0,-20/3,-20/3,-4,-4,0,\ 0,4/3,4/3,-4/3,-4/3,0,\ 0,\ldots,0)
 \]
