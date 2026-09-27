@@ -298,3 +298,17 @@ on the relevant weighted reduced sector.
 
 If true, stress cancellation is structural. If false, the remainder is the
 correct nonlinear stress observable.
+
+
+## Kernel-line topology input
+
+The companion
+[A4D_KERNEL_LINE_TOPOLOGY_AUDIT.md](A4D_KERNEL_LINE_TOPOLOGY_AUDIT.md)
+removes a false alternative mechanism: the metric-null line ker C is globally
+trivial for every nontrivial character and has no rank jump on a single
+d_r=0 hyperplane. Therefore nonlinear stress cannot be attributed to a
+topologically forced monodromy of that line around such a hyperplane.
+
+This strengthens the reason to formulate the remaining stress observable in
+the reduced-action Euler/divergence quotient, or in a separately defined
+extended-joint cokernel/solution bundle.
