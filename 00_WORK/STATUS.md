@@ -31,4 +31,17 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 
 | Exact `release_status` | Count |
 |---|---|
-| **Total** | **0** |
+| BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
+| BRIDGE-CALIBRATION | 3 |
+| CERT-CLOSED | 193 |
+| CORE-FORMALIZED | 390 |
+| CORE_BRIDGE_SPLIT | 17 |
+| DEPRECATED | 5 |
+| EMPIRICAL-PASSPORT | 13 |
+| EXTERNAL-BACKGROUND | 1 |
+| FORMALISM | 4 |
+| NO-GO | 133 |
+| NO_GO_PROVED | 6 |
+| PASSPORT-CLOSED | 20 |
+| PROOF-TARGET | 74 |
+| **Total** | **889** |
