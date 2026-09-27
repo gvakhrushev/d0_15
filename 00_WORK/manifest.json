@@ -28,7 +28,7 @@
       "id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
+      "state": "BLOCKED",
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
@@ -81,7 +81,7 @@
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
     },
     {
-      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-SLOW-BACKGROUND-RESPONSE",
+      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "state": "PLANNED",
@@ -89,8 +89,8 @@
         "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Compute the exact leading mixed slow-background metric response of the merged #232 period-4 diagonal joint-vacuum family, separating pointwise phase response from cell average and classifying the normalized response for z_h=h and z_h=h^2, or certify the first nonzero obstruction coefficient.",
-      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-SLOW-BACKGROUND-RESPONSE.md"
+      "exit_condition": "For the merged #241 slow background and #232 period-4 microstructure, either construct an exact finite-order connection correction that restores E_K=0 through the first response-relevant orders and certify the corrected leading metric-response coefficient, or prove an exact solvability obstruction showing that no such local connection-stationary lift exists in the declared chart.",
+      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT.md"
     }
   ]
 }

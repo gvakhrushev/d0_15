@@ -29,8 +29,8 @@ The h^-2 normalization occurs once. This is distinct from pointwise,
 unweighted sum, or volume-weighted strong convergence.
 
 The substantive source convention is E_K=0 and E_Q=h^2 tau_h, with tau_h
-prescribed independently of the geometric response and converging to a fixed
-smooth covector field. Vacuum tau_h=0 is included. K_h^sm is the designated
+prescribed independently of the geometric response and converging uniformly
+to a fixed smooth covector field. Vacuum tau_h=0 is included. K_h^sm is the designated
 smooth approximate connection of #216, with E_K=O(h^infinity); it is NOT
 assumed to satisfy the metric-source equation. Its reconstructed response is
 -1/2 G[g]+O(h) under the actual #216/#223 realization hypotheses. If both
@@ -133,7 +133,7 @@ It extracts every square and cross coefficient of the known homogeneous
 quadratic polynomial using integer arithmetic; it is not a floating-point
 sample or a claim that a finite Taylor jet proves an exact nonlinear family.
 
-## 4. Response-defect reduction under development
+## 4. Response-defect reduction: overview
 
 Set b_h=(A_h-A_h^sm)/h. Expansion of the literal finite stencil identifies
 three possible weak contributions: a discrete curl linear in b_h, a cross
@@ -147,7 +147,7 @@ uses four differently shifted link values. The relevant quadratic observable
 is the Gram derivative of the frozen connection Hessian, contracted with a
 joint stencil/frequency correlation measure.
 
-The intended finite criterion is
+The sufficient finite criterion is
 \[
  v^*D_QH_Q(z)[q]v=0
  \quad\text{for all }v\in\ker H_Q(z)\cap\ker C_Q(z),
@@ -155,9 +155,10 @@ The intended finite criterion is
 with the physical Fourier polarization used consistently. H is the Hermitian
 connection Euler symbol and C is the linear metric-response symbol.
 No uniform inverse or positive spectral gap is part of this criterion.
-The diagonal certificate proves a required canonical special case; the
-all-background, all-phase condition and its localization proof are being
-audited. Neither requested terminal follows yet.
+The diagonal certificate proves a canonical special case. Section 7 proves
+the conditional localization theorem, and Section 8 proves the diagonal
+condition for every nondegenerate constant solder. The remaining all-phase
+identity is open. Neither requested terminal follows yet.
 
 ## 5. Consumption and scope audit of #241
 
@@ -189,13 +190,12 @@ Its z=h^2 normalized response has a nonzero phase component and vanishing
 phase mean. Defining a source after inspecting that response is not a
 counterexample with a prescribed smooth source or vacuum.
 
-## 6. First checkpoint (superseded by Sections 7-10)
+## 6. Scope of the partial result
 
-The new result is exact diagonal mean-quadratic response cancellation.
-The target remains open. The first candidate missing identity is the
-all-background joint-kernel quadratic annihilation condition in Section 4,
-together with its explicitly stated localization hypotheses. Further results
-and validation are recorded in subsequent revisions of this memo.
+The results are an exact diagonal mean-quadratic cancellation, its all-solder
+extension, and a conditional compensated response theorem. The target remains
+open on the all-phase joint-kernel identity. Sections 7-10 provide the proofs,
+precise remaining condition, and validation.
 
 
 ## 7. Conditional compensated response theorem (proved reduction)
@@ -367,8 +367,10 @@ The canonical certificate in Section 3 has an analytic extension:
 constant solder, even on the full connection kernel before imposing C.
 
 Here is a direct proof using the merged #216 BCH formula. For a face r<s,
-the role coefficient matrix at z=(i,i,i,i) has only two nonzero entries:
-+i at (r,r) and -i at (s,s). Thus H_E(i) is a direct sum of four
+the polarized role coefficient matrix at z=(i,i,i,i) has only two nonzero
+entries: +i at (r,r) and -i at (s,s). Passing to the physical Euler transpose
+reverses both signs and does not change rank or kernel. Thus H_E(i) is a
+direct sum of four
 6-by-6 matrices of the form i times a real Kirillov form
 \[
  (X,Y)\longmapsto \ell_r([X,Y]).
@@ -453,7 +455,8 @@ certificates/a4d_joint_response_decoupling_microstructure_check.py.
 - Independent symbolic polynomial expansion in all eight amplitudes: mean zero,
   with the same nonzero phase witness.
 - The owned #232 exact rational all-edge certificate and #241 mixed-response
-  certificate are replayed as narrow input controls; no symbol census is redone.
+  certificate: PASS as narrow input controls; no symbol census is redone.
 
 The analytic localization and all-solder diagonal proofs are research proofs,
-not Lean theorems. Repository guard results are recorded in the PR.
+not Lean theorems. D0 guards run #2045 at 6d2637dc passed all applicable
+steps. The final synchronized-head guard result is recorded in the PR.
