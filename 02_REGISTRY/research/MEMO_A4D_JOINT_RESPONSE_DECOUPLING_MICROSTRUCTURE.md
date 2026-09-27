@@ -512,6 +512,10 @@ Vacuum \(\tau=0\) therefore forces \(u=0\). The constant source frozen from the 
 
 On this constant background the identity connection has vanishing curvature, hence \(E_Q=0\), and the Einstein tensor of a constant metric vanishes. That is the #216 comparator at this order. No joint-critical sequence with a nonzero normalized gap is obtained. The metric-response NOGO stays unclaimed. The exact obstruction is the surviving cell equation \(E_Q[q_{11}]=-16u^2\).
 
+### 8.5 Flat L=8 census
+
+The same #216 symbols were screened on all \(8^4=4096\) flat-solder characters. A sound \(\mathbb F_{17}\) minor leaves 44 candidates. Exact rank over \(\mathbb Q(\sqrt2,i)\) confirms all 44 are singular, with nullity counts 42 of dimension 1 and 2 of dimension 4. Every one of the 440 response moments vanishes. This is a finite flat-solder stress test. It does not restore global (NF): the shear witness of §8.3 remains a counterexample on a non-flat solder.
+
 It does not establish (NF) on the continuous unit torus away from this finite
 grid, nor at every Gram in the compact chart. The conditional homogenization
 argument therefore remains conditional.
