@@ -127,7 +127,7 @@
       "id": "WRK-D0-V16-ONE-TICK-BALANCE-TWO-SPLIT-OWNER",
       "class": "WORKER",
       "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-THERMO-001"
       ],
