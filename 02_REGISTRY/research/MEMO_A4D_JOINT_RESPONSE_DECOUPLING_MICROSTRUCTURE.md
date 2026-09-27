@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. Global (NF) is refuted by two finite defects in a fixed solder family. Both are cut in vacuum at quadratic order, and the upper shear is also cut at order \(u^5\). Neither final terminal is claimed.
+Status: BLOCKED. Both finite NF defects of the fixed solder family are absent from formal period-2 joint solutions. The single missing identity is a joint-critical replacement for (NF) on the whole smooth image. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -640,10 +640,23 @@ On the chain, the period-2 ray has vanishing connection Euler through order
 \(u\). The order-\(u^2\) source has a unique constant solution, and the cell
 metric jet on that solution is
 \(u^2(0,0,0,0,-16,0,0,0,0,0)\). Vacuum forces \(u=0\) at this order. The
-certificate is `a4d_joint_response_solder_family_check.py`. The order-\(u^5\)
-elimination of §8.7 is not repeated for the chain. The \(q_{11}\) line is
-not a predeclared source. This family does not restore global (NF) and does
-not produce a joint-critical sequence.
+certificate is `a4d_joint_response_solder_family_check.py`. The \(q_{11}\)
+line is not a predeclared source.
+
+### 8.10 The chain is cut at order \(u^5\)
+
+The same elimination used for the upper shear applies to the chain. The odd
+linearization has rank 20. The witness lies in its left kernel. The
+order-\(u^3\) source is solvable. After the unique order-\(u^4\) correction,
+the witness projection at order \(u^5\) equals \(-432\) on the
+witness-orthogonal solution and on a basis of the remaining kernel
+complement. The reduced connection equation is \(-432u^5=0\), so \(u=0\).
+The certificate is `a4d_joint_response_chain_order5_check.py`.
+
+Both finite NF defects of §8.9 are therefore absent from every formal
+period-2 joint solution. This still does not restore (NF) on other
+characters or other solders, and it does not produce a joint-critical
+sequence.
 
 ### 8.2 Amplitude boundary
 
@@ -686,8 +699,8 @@ The following routes have been decided:
 | Global all-background joint-kernel (NF) | **REFUTED** by the exact shear witness in §8.3 |
 | Period-2 shear carrier under the joint equations | Connection equation forces \(u=0\) at order \(u^5\); no nonzero joint-critical sequence |
 | Other L=4 characters on this upper shear | Only the cut character has a nonzero moment |
-| Fixed family of eleven exact solders | Two NF defects, both cut in vacuum at order \(u^2\); the upper shear also at order \(u^5\) |
-| Solders outside that family, and the #216 gap | OPEN |
+| Both finite defects of the eleven-solder family | Absent from formal period-2 joint solutions: each reduced connection coefficient is \(-432u^5\) |
+| Joint-critical replacement for (NF) on the whole smooth image | MISSING |
 | Strong connection compactness or uniqueness | Not used or requested |
 
 The previous “prove all-phase NF” route is closed: §8.3 gives an exact finite
@@ -695,18 +708,25 @@ counterexample to the algebraic identity. The conditional theorem in §§7.1–7
 therefore remains a valid implication but is not a global closure theorem for
 the naked-star system.
 
-On the fixed family of §8.9 there are two NF defects. Both are cut in
-vacuum at quadratic order, and the upper shear is also cut at order \(u^5\).
-Solders outside that family are not classified. These cuts are not the
-requested NOGO: that still needs a nonzero exact joint-critical sequence and
-a normalized gap against the #216 sheet.
+Both finite NF defects of the fixed family are absent from formal period-2
+joint solutions. The conditional theorem of §7 still assumes (NF) at every
+character of every solder in the smooth image. Inequality (7.4) fails at
+the two certified defects, and killing those two period-2 modes does not
+restore (7.4) for nearby characters. No certified joint-critical sequence
+has a nonzero normalized gap against the #216 sheet: the flat #232 family
+is response-null, and the #259 lift tends to zero without being joint.
+
+The single missing identity is a joint-critical replacement for (NF): every
+amplitude admitted by \(E_K=0\) and \(E_Q=h^2\tau\), at every character and
+every solder in the smooth image, has vanishing tested moment (7.3).
+Neither requested terminal follows from the finite cuts above.
 
 A finite-frequency census may stress-test which resonances satisfy the moment
 identity, but no finite grid can restore a global NF theorem once the shear
 counterexample exists. Conversely, a finite NF failure alone is not the
 requested NOGO.
 
-Current verdict: PARTIAL / IN_PROGRESS ON NONLINEAR ACCESSIBILITY. Neither
+Current verdict: BLOCKED ON THE MISSING JOINT-CRITICAL REPLACEMENT FOR (NF). Neither
 A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED nor
 A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
 
