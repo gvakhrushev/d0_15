@@ -20,7 +20,7 @@ Before starting, use current `main`, confirm this row is still `PLANNED`, and se
 
 ## Objective
 
-For mesh size `h=1/L), a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
+For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
 
 \[
 h^{-2}\left[E_Q(Q_h,K_h)-E_Q(Q_h,K_h^{\rm sm})\right]\longrightarrow 0
