@@ -69,6 +69,7 @@ q0 = sp.Matrix([
     for a, b in SYM
 ])
 DC = [sp.simplify(z[j] * HAQ.diff(z[j])) for j in range(4)]
+Dq0 = [sp.simplify(z[j] * q0.diff(z[j])) for j in range(4)]
 
 ORBITS = {
     5: (sp.I, sp.I, -sp.I, -sp.I),
@@ -87,6 +88,10 @@ EXPECTED_Q0_NORM2 = {
     5: sp.Integer(40),
     7: sp.Integer(92),
 }
+EXPECTED_RAW_RESIDUAL2 = {
+    5: [sp.Rational(8, 5), sp.Rational(8, 5), 0, 0],
+    7: [sp.Integer(2), 0, 0, sp.Integer(2)],
+}
 
 records = {}
 
@@ -94,9 +99,18 @@ for orbit, phase in ORBITS.items():
     sub = {z[j]: phase[j] for j in range(4)}
     csub = {z[j]: sp.conjugate(phase[j]) for j in range(4)}
 
+    # The census variable is the table character zeta.  The physical
+    # character is chi=zeta^-1=conj(zeta).  The owned physical convention
+    # A_phys(chi)=H_AB(chi)^T therefore becomes H_AB(zeta) on these unit
+    # characters; certify that conversion rather than relying on the name.
     A = HAB.subs(sub)
+    Aphys = HAB.subs(csub).T
     Cphys = HAQ.subs(csub)
     Cholo = HAQ.subs(sub)
+    check(
+        f"ORBIT_{orbit}_TABLE_TO_PHYSICAL_CONNECTION",
+        A == Aphys,
+    )
     P = A.row_join(Cphys)
     Pholo = A.row_join(Cholo)
 
@@ -149,6 +163,13 @@ for orbit, phase in ORBITS.items():
             inside == (sp.simplify(alpha) == 0),
             f"inside={inside} alpha={alpha}",
         )
+        check(
+            f"ORBIT_{orbit}_D{j}_RAW_RESIDUAL2_EXACT",
+            sp.simplify(
+                raw_res2 - sp.sympify(EXPECTED_RAW_RESIDUAL2[orbit][j])
+            ) == 0,
+            str(raw_res2),
+        )
         if inside:
             check(
                 f"ORBIT_{orbit}_D{j}_PHYSICAL_RESIDUAL_ZERO",
@@ -161,6 +182,22 @@ for orbit, phase in ORBITS.items():
                 sp.simplify(raw_res2) != 0,
                 str(raw_res2),
             )
+
+        # Same-carrier physical moving-germ control.  The submitted "hot"
+        # forcing above is w(zeta), while the physical mixed block is C(chi).
+        # For the actual moving germ at chi, differentiate C(chi) q0(chi)=0.
+        # It must be absorbed exactly by the transported metric tangent.
+        w_same = sp.simplify((DC[j] * q0).subs(csub))
+        dq_same = sp.simplify(Dq0[j].subs(csub))
+        transport_same = sp.simplify(w_same + Cphys * dq_same)
+        check(
+            f"ORBIT_{orbit}_D{j}_SAME_CARRIER_TRANSPORT_ZERO",
+            all(sp.simplify(x) == 0 for x in transport_same),
+        )
+        check(
+            f"ORBIT_{orbit}_D{j}_SAME_CARRIER_FORCING_IN_PHYSICAL_IMAGE",
+            erank(P.row_join(w_same)) == rP,
+        )
 
         # Holomorphic moving-kernel transport should absorb every w_j.
         rh = erank(Pholo.row_join(w))
@@ -220,19 +257,24 @@ if FAILS:
         print("  - " + f)
     raise SystemExit(1)
 
-print("J2-Q0-PHYSICAL-FORCING-COKERNEL-EXACT")
+print("J2-Q0-CROSS-CARRIER-COKERNEL-SAME-CARRIER-TRANSPORT-EXACT")
 print(
-    "ORBIT5: physical membership [outside,outside,inside,inside]; "
-    "holomorphic membership [inside,inside,inside,inside]."
+    "ORBIT5_CROSS: membership [outside,outside,inside,inside], "
+    "raw residual2 [8/5,8/5,0,0], unit-q0 residual2 [1/25,1/25,0,0]."
 )
 print(
-    "ORBIT7: physical membership [outside,inside,inside,outside]; "
-    "holomorphic membership [inside,inside,inside,inside]."
+    "ORBIT7_CROSS: membership [outside,inside,inside,outside], "
+    "raw residual2 [2,0,0,2], unit-q0 residual2 [1/46,0,0,1/46]."
 )
 print(
-    "SCOPE: exact Q(i) image/cokernel theorem on orbit types 5 and 7 only."
+    "SAME_CARRIER: at chi=conj(zeta), every moving-germ forcing is "
+    "absorbed exactly by C(chi) Dq0(chi)."
 )
 print(
-    "FIREWALL: a nonzero linear physical cokernel class is not yet a "
-    "stationary-sheet stress, nonlinear joint branch, or metric-response anomaly."
+    "SCOPE: exact Q(i) carrier-comparison theorem on orbit types 5 and 7 only."
+)
+print(
+    "FIREWALL: the nonzero cross-character cokernel is a carrier-mismatch "
+    "diagnostic, not a stationary-sheet stress, nonlinear joint branch, "
+    "or metric-response anomaly."
 )
