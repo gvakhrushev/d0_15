@@ -21,82 +21,201 @@ open BigOperators Matrix
 noncomputable section
 
 
-def cCoeff (i : Fin 24) (j : Fin 10) (r : Fin 4) : ℚ :=
-  match i.val, j.val, r.val with
-  | 6, 7, 0 => (-1 : ℚ) / 2
-  | 6, 9, 0 => (-1 : ℚ) / 2
-  | 7, 5, 0 => (1 : ℚ) / 2
-  | 8, 6, 0 => (1 : ℚ) / 2
-  | 9, 2, 0 => (1 : ℚ) / 2
-  | 10, 3, 0 => (1 : ℚ) / 2
-  | 12, 5, 0 => (1 : ℚ) / 2
-  | 13, 4, 0 => (-1 : ℚ) / 2
-  | 13, 9, 0 => (-1 : ℚ) / 2
-  | 14, 8, 0 => (1 : ℚ) / 2
-  | 15, 1, 0 => (-1 : ℚ) / 2
-  | 17, 3, 0 => (1 : ℚ) / 2
-  | 18, 6, 0 => (1 : ℚ) / 2
-  | 19, 8, 0 => (1 : ℚ) / 2
-  | 20, 4, 0 => (-1 : ℚ) / 2
-  | 20, 7, 0 => (-1 : ℚ) / 2
-  | 22, 1, 0 => (-1 : ℚ) / 2
-  | 23, 2, 0 => (-1 : ℚ) / 2
-  | 0, 7, 1 => (1 : ℚ) / 2
-  | 0, 9, 1 => (1 : ℚ) / 2
-  | 1, 5, 1 => (-1 : ℚ) / 2
-  | 2, 6, 1 => (-1 : ℚ) / 2
-  | 3, 2, 1 => (-1 : ℚ) / 2
-  | 4, 3, 1 => (-1 : ℚ) / 2
-  | 12, 2, 1 => (-1 : ℚ) / 2
-  | 13, 1, 1 => (1 : ℚ) / 2
-  | 15, 0, 1 => (1 : ℚ) / 2
-  | 15, 9, 1 => (-1 : ℚ) / 2
-  | 16, 8, 1 => (1 : ℚ) / 2
-  | 17, 6, 1 => (-1 : ℚ) / 2
-  | 18, 3, 1 => (-1 : ℚ) / 2
-  | 20, 1, 1 => (1 : ℚ) / 2
-  | 21, 8, 1 => (1 : ℚ) / 2
-  | 22, 0, 1 => (1 : ℚ) / 2
-  | 22, 7, 1 => (-1 : ℚ) / 2
-  | 23, 5, 1 => (1 : ℚ) / 2
-  | 0, 5, 2 => (-1 : ℚ) / 2
-  | 1, 4, 2 => (1 : ℚ) / 2
-  | 1, 9, 2 => (1 : ℚ) / 2
-  | 2, 8, 2 => (-1 : ℚ) / 2
-  | 3, 1, 2 => (1 : ℚ) / 2
-  | 5, 3, 2 => (-1 : ℚ) / 2
-  | 6, 2, 2 => (1 : ℚ) / 2
-  | 7, 1, 2 => (-1 : ℚ) / 2
-  | 9, 0, 2 => (-1 : ℚ) / 2
-  | 9, 9, 2 => (1 : ℚ) / 2
-  | 10, 8, 2 => (-1 : ℚ) / 2
-  | 11, 6, 2 => (1 : ℚ) / 2
-  | 19, 3, 2 => (-1 : ℚ) / 2
-  | 20, 2, 2 => (1 : ℚ) / 2
-  | 21, 6, 2 => (-1 : ℚ) / 2
-  | 22, 5, 2 => (1 : ℚ) / 2
-  | 23, 0, 2 => (1 : ℚ) / 2
-  | 23, 4, 2 => (-1 : ℚ) / 2
-  | 0, 6, 3 => (-1 : ℚ) / 2
-  | 1, 8, 3 => (-1 : ℚ) / 2
-  | 2, 4, 3 => (1 : ℚ) / 2
-  | 2, 7, 3 => (1 : ℚ) / 2
-  | 4, 1, 3 => (1 : ℚ) / 2
-  | 5, 2, 3 => (1 : ℚ) / 2
-  | 6, 3, 3 => (1 : ℚ) / 2
-  | 8, 1, 3 => (-1 : ℚ) / 2
-  | 9, 8, 3 => (-1 : ℚ) / 2
-  | 10, 0, 3 => (-1 : ℚ) / 2
-  | 10, 7, 3 => (1 : ℚ) / 2
-  | 11, 5, 3 => (-1 : ℚ) / 2
-  | 13, 3, 3 => (1 : ℚ) / 2
-  | 14, 2, 3 => (-1 : ℚ) / 2
-  | 15, 6, 3 => (1 : ℚ) / 2
-  | 16, 5, 3 => (-1 : ℚ) / 2
-  | 17, 0, 3 => (-1 : ℚ) / 2
-  | 17, 4, 3 => (1 : ℚ) / 2
-  | _, _, _ => 0
+@[simp] private def cCoeff_row_0 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 7, 1 => (1 : ℚ) / 2
+  | 9, 1 => (1 : ℚ) / 2
+  | 5, 2 => (-1 : ℚ) / 2
+  | 6, 3 => (-1 : ℚ) / 2
+  | _, _ => 0
 
+@[simp] private def cCoeff_row_1 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 5, 1 => (-1 : ℚ) / 2
+  | 4, 2 => (1 : ℚ) / 2
+  | 9, 2 => (1 : ℚ) / 2
+  | 8, 3 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_2 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 6, 1 => (-1 : ℚ) / 2
+  | 8, 2 => (-1 : ℚ) / 2
+  | 4, 3 => (1 : ℚ) / 2
+  | 7, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_3 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 2, 1 => (-1 : ℚ) / 2
+  | 1, 2 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_4 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 3, 1 => (-1 : ℚ) / 2
+  | 1, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_5 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 3, 2 => (-1 : ℚ) / 2
+  | 2, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_6 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 7, 0 => (-1 : ℚ) / 2
+  | 9, 0 => (-1 : ℚ) / 2
+  | 2, 2 => (1 : ℚ) / 2
+  | 3, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_7 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 5, 0 => (1 : ℚ) / 2
+  | 1, 2 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_8 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 6, 0 => (1 : ℚ) / 2
+  | 1, 3 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_9 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 2, 0 => (1 : ℚ) / 2
+  | 0, 2 => (-1 : ℚ) / 2
+  | 9, 2 => (1 : ℚ) / 2
+  | 8, 3 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_10 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 3, 0 => (1 : ℚ) / 2
+  | 8, 2 => (-1 : ℚ) / 2
+  | 0, 3 => (-1 : ℚ) / 2
+  | 7, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_11 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 6, 2 => (1 : ℚ) / 2
+  | 5, 3 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_12 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 5, 0 => (1 : ℚ) / 2
+  | 2, 1 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_13 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 4, 0 => (-1 : ℚ) / 2
+  | 9, 0 => (-1 : ℚ) / 2
+  | 1, 1 => (1 : ℚ) / 2
+  | 3, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_14 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 8, 0 => (1 : ℚ) / 2
+  | 2, 3 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_15 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 1, 0 => (-1 : ℚ) / 2
+  | 0, 1 => (1 : ℚ) / 2
+  | 9, 1 => (-1 : ℚ) / 2
+  | 6, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_16 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 8, 1 => (1 : ℚ) / 2
+  | 5, 3 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_17 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 3, 0 => (1 : ℚ) / 2
+  | 6, 1 => (-1 : ℚ) / 2
+  | 0, 3 => (-1 : ℚ) / 2
+  | 4, 3 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_18 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 6, 0 => (1 : ℚ) / 2
+  | 3, 1 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_19 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 8, 0 => (1 : ℚ) / 2
+  | 3, 2 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_20 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 4, 0 => (-1 : ℚ) / 2
+  | 7, 0 => (-1 : ℚ) / 2
+  | 1, 1 => (1 : ℚ) / 2
+  | 2, 2 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_21 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 8, 1 => (1 : ℚ) / 2
+  | 6, 2 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_22 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 1, 0 => (-1 : ℚ) / 2
+  | 0, 1 => (1 : ℚ) / 2
+  | 7, 1 => (-1 : ℚ) / 2
+  | 5, 2 => (1 : ℚ) / 2
+  | _, _ => 0
+
+@[simp] private def cCoeff_row_23 (j : Fin 10) (r : Fin 4) : ℚ :=
+  match j.val, r.val with
+  | 2, 0 => (-1 : ℚ) / 2
+  | 5, 1 => (1 : ℚ) / 2
+  | 0, 2 => (1 : ℚ) / 2
+  | 4, 2 => (-1 : ℚ) / 2
+  | _, _ => 0
+
+def cCoeff (i : Fin 24) (j : Fin 10) (r : Fin 4) : ℚ :=
+  match i.val with
+  | 0 => cCoeff_row_0 j r
+  | 1 => cCoeff_row_1 j r
+  | 2 => cCoeff_row_2 j r
+  | 3 => cCoeff_row_3 j r
+  | 4 => cCoeff_row_4 j r
+  | 5 => cCoeff_row_5 j r
+  | 6 => cCoeff_row_6 j r
+  | 7 => cCoeff_row_7 j r
+  | 8 => cCoeff_row_8 j r
+  | 9 => cCoeff_row_9 j r
+  | 10 => cCoeff_row_10 j r
+  | 11 => cCoeff_row_11 j r
+  | 12 => cCoeff_row_12 j r
+  | 13 => cCoeff_row_13 j r
+  | 14 => cCoeff_row_14 j r
+  | 15 => cCoeff_row_15 j r
+  | 16 => cCoeff_row_16 j r
+  | 17 => cCoeff_row_17 j r
+  | 18 => cCoeff_row_18 j r
+  | 19 => cCoeff_row_19 j r
+  | 20 => cCoeff_row_20 j r
+  | 21 => cCoeff_row_21 j r
+  | 22 => cCoeff_row_22 j r
+  | 23 => cCoeff_row_23 j r
+  | _ => 0
 
 def cMatrixFromCoeff (d : Fin 4 → ℂ) : Matrix (Fin 24) (Fin 10) ℂ := fun i j =>
   ∑ r : Fin 4, (cCoeff i j r : ℂ) * d r
@@ -105,255 +224,201 @@ def cMatrixFromCoeff (d : Fin 4 → ℂ) : Matrix (Fin 24) (Fin 10) ℂ := fun i
 /-- Direct literal view of the same #292 coefficient table, used to keep
 large exact certificates computationally small. The bridge theorem below
 proves it entrywise equal to `cMatrix`. -/
+@[simp] private def cMatrix_row_0 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 5 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 6 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 7 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 9 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_1 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 4 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 5 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 8 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 9 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | _ => 0
+
+@[simp] private def cMatrix_row_2 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 4 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 6 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 7 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 8 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | _ => 0
+
+@[simp] private def cMatrix_row_3 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 1 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 2 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_4 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 1 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 3 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_5 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 2 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 3 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | _ => 0
+
+@[simp] private def cMatrix_row_6 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 2 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 3 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 7 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 9 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_7 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 1 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 5 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_8 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 1 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 6 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_9 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 0 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 2 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 8 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 9 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | _ => 0
+
+@[simp] private def cMatrix_row_10 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 0 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 3 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 7 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 8 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | _ => 0
+
+@[simp] private def cMatrix_row_11 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 5 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 6 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | _ => 0
+
+@[simp] private def cMatrix_row_12 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 2 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 5 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_13 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 1 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 3 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 4 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 9 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_14 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 2 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 8 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_15 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 0 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 1 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 6 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 9 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_16 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 5 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 8 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_17 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 0 => ((-1 / 2 : ℚ) : ℂ) * d 3
+  | 3 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | 4 => ((1 / 2 : ℚ) : ℂ) * d 3
+  | 6 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_18 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 3 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | 6 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_19 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 3 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 8 => ((1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_20 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 1 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 2 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 4 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 7 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | _ => 0
+
+@[simp] private def cMatrix_row_21 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 6 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 8 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_22 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 0 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | 1 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 5 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 7 => ((-1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
+@[simp] private def cMatrix_row_23 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
+  match j.val with
+  | 0 => ((1 / 2 : ℚ) : ℂ) * d 2
+  | 2 => ((-1 / 2 : ℚ) : ℂ) * d 0
+  | 4 => ((-1 / 2 : ℚ) : ℂ) * d 2
+  | 5 => ((1 / 2 : ℚ) : ℂ) * d 1
+  | _ => 0
+
 def cMatrix (d : Fin 4 → ℂ) : Matrix (Fin 24) (Fin 10) ℂ := fun i j =>
-  match i.val, j.val with
-  | 0, 5 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 0, 6 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 0, 7 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 0, 9 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 1, 4 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 1, 5 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 1, 8 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 1, 9 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 2, 4 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 2, 6 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 2, 7 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 2, 8 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 3, 1 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 3, 2 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 4, 1 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 4, 3 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 5, 2 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 5, 3 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 6, 2 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 6, 3 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 6, 7 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 6, 9 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 7, 1 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 7, 5 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 8, 1 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 8, 6 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 9, 0 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 9, 2 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 9, 8 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 9, 9 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 10, 0 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 10, 3 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 10, 7 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 10, 8 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 11, 5 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 11, 6 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 12, 2 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 12, 5 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 13, 1 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 13, 3 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 13, 4 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 13, 9 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 14, 2 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 14, 8 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 15, 0 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 15, 1 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 15, 6 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 15, 9 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 16, 5 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 16, 8 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 17, 0 => ((-1 / 2 : ℚ) : ℂ) * d 3
-  | 17, 3 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 17, 4 => ((1 / 2 : ℚ) : ℂ) * d 3
-  | 17, 6 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 18, 3 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 18, 6 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 19, 3 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 19, 8 => ((1 / 2 : ℚ) : ℂ) * d 0
-  | 20, 1 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 20, 2 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 20, 4 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 20, 7 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 21, 6 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 21, 8 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 22, 0 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | 22, 1 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 22, 5 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 22, 7 => ((-1 / 2 : ℚ) : ℂ) * d 1
-  | 23, 0 => ((1 / 2 : ℚ) : ℂ) * d 2
-  | 23, 2 => ((-1 / 2 : ℚ) : ℂ) * d 0
-  | 23, 4 => ((-1 / 2 : ℚ) : ℂ) * d 2
-  | 23, 5 => ((1 / 2 : ℚ) : ℂ) * d 1
-  | _, _ => 0
-
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_0
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (0 : Fin 24) j = cMatrixFromCoeff d (0 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_1
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (1 : Fin 24) j = cMatrixFromCoeff d (1 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_2
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (2 : Fin 24) j = cMatrixFromCoeff d (2 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_3
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (3 : Fin 24) j = cMatrixFromCoeff d (3 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_4
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (4 : Fin 24) j = cMatrixFromCoeff d (4 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_5
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (5 : Fin 24) j = cMatrixFromCoeff d (5 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_6
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (6 : Fin 24) j = cMatrixFromCoeff d (6 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_7
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (7 : Fin 24) j = cMatrixFromCoeff d (7 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_8
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (8 : Fin 24) j = cMatrixFromCoeff d (8 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_9
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (9 : Fin 24) j = cMatrixFromCoeff d (9 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_10
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (10 : Fin 24) j = cMatrixFromCoeff d (10 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_11
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (11 : Fin 24) j = cMatrixFromCoeff d (11 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_12
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (12 : Fin 24) j = cMatrixFromCoeff d (12 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_13
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (13 : Fin 24) j = cMatrixFromCoeff d (13 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_14
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (14 : Fin 24) j = cMatrixFromCoeff d (14 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_15
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (15 : Fin 24) j = cMatrixFromCoeff d (15 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_16
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (16 : Fin 24) j = cMatrixFromCoeff d (16 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_17
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (17 : Fin 24) j = cMatrixFromCoeff d (17 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_18
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (18 : Fin 24) j = cMatrixFromCoeff d (18 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_19
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (19 : Fin 24) j = cMatrixFromCoeff d (19 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_20
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (20 : Fin 24) j = cMatrixFromCoeff d (20 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_21
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (21 : Fin 24) j = cMatrixFromCoeff d (21 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_22
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (22 : Fin 24) j = cMatrixFromCoeff d (22 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-private theorem cMatrix_eq_cMatrixFromCoeff_row_23
-    (d : Fin 4 → ℂ) (j : Fin 10) :
-    cMatrix d (23 : Fin 24) j = cMatrixFromCoeff d (23 : Fin 24) j := by
-  fin_cases j <;>
-    simp [cMatrix, cMatrixFromCoeff, cCoeff, Fin.sum_univ_succ]
-
-theorem cMatrix_eq_cMatrixFromCoeff (d : Fin 4 → ℂ) :
-    cMatrix d = cMatrixFromCoeff d := by
-  ext i j
-  fin_cases i
-  · exact cMatrix_eq_cMatrixFromCoeff_row_0 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_1 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_2 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_3 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_4 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_5 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_6 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_7 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_8 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_9 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_10 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_11 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_12 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_13 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_14 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_15 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_16 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_17 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_18 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_19 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_20 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_21 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_22 d j
-  · exact cMatrix_eq_cMatrixFromCoeff_row_23 d j
+  match i.val with
+  | 0 => cMatrix_row_0 d j
+  | 1 => cMatrix_row_1 d j
+  | 2 => cMatrix_row_2 d j
+  | 3 => cMatrix_row_3 d j
+  | 4 => cMatrix_row_4 d j
+  | 5 => cMatrix_row_5 d j
+  | 6 => cMatrix_row_6 d j
+  | 7 => cMatrix_row_7 d j
+  | 8 => cMatrix_row_8 d j
+  | 9 => cMatrix_row_9 d j
+  | 10 => cMatrix_row_10 d j
+  | 11 => cMatrix_row_11 d j
+  | 12 => cMatrix_row_12 d j
+  | 13 => cMatrix_row_13 d j
+  | 14 => cMatrix_row_14 d j
+  | 15 => cMatrix_row_15 d j
+  | 16 => cMatrix_row_16 d j
+  | 17 => cMatrix_row_17 d j
+  | 18 => cMatrix_row_18 d j
+  | 19 => cMatrix_row_19 d j
+  | 20 => cMatrix_row_20 d j
+  | 21 => cMatrix_row_21 d j
+  | 22 => cMatrix_row_22 d j
+  | 23 => cMatrix_row_23 d j
+  | _ => 0
 
 def q0 (d : Fin 4 → ℂ) (j : Fin 10) : ℂ :=
   match j.val with
