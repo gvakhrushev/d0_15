@@ -2656,36 +2656,90 @@ This is particularly relevant to the resonant/degenerate charts of #202.
 #### Owned inputs and live gates, pinned 2026-09-27
 
 Canonical main at this audit is
-`9bfdbff6ad183fbe9ed4d9cffe0b2f8d554120d2`. Live PR results below are
+`12d10427e3ba81e5c8acfbd5a6fc47f0a2c6d428`. Live PR results below are
 checkpoints, not merged owners.
 
 | Input / execution | Established scope | Remaining bridge |
 | --- | --- | --- |
-| Merged [#273](https://github.com/gvakhrushev/d0_15/pull/273), `A4D_SCHUR_EINSTEIN_DIRECT_IDENTIFICATION.md` | `K_Schur=-1/2 K_G^(1)` in all 100 flat-symbol entries; polynomial Bianchi; regular origin connection block `det A0=256` | Nonlinear variable-metric identification and controlled limit. [#298](https://github.com/gvakhrushev/d0_15/pull/298) at `938a0f30560d1d4303a0c3570c9efff703fdafba` is open with Lifecycle REVIEW; its lean-build check failed and guards passed, so it is not a validated formalization. |
+| Merged [#273](https://github.com/gvakhrushev/d0_15/pull/273) and [#298](https://github.com/gvakhrushev/d0_15/pull/298) | `K_Schur=-1/2 K_G^(1)` coefficientwise in all 100 flat-symbol entries; polynomial Bianchi; direct `D0.All` Lean import. PR #298 merged at main `12d10427e3ba81e5c8acfbd5a6fc47f0a2c6d428` after Lean build and guards passed. | Nonlinear variable-metric identification and controlled limit remain open. This is the exact flat linear-symbol theorem only. |
 | Merged [#270](https://github.com/gvakhrushev/d0_15/pull/270) and [#296](https://github.com/gvakhrushev/d0_15/pull/296) | `C(1)=0`; for nonzero complex `d`, rank `C=9`, kernel `span(dd^T)`; raw second forcing `F2=-(d^T eta d)/4 C(d odot d) vec_sym(dd^T)` | `dd^T` is Veronese; null/Kerr–Schild interpretation requires the additional null condition. Raw `d=O(h)` scaling is not a normalized field-response estimate. |
-| Live [#285](https://github.com/gvakhrushev/d0_15/pull/285), `9ebc3e354857c7d7b82d6293f9142647a6e75dc6` | Mode B `(-1,1,-1,1)` has exact identity-link joint vacuum for all real epsilon; mode A `(i,i,-i,-i)` has a solved second-order connection correction and `E_Q=O(epsilon^3)` | Cubic continuation on mode A, slow packets and a norm/amplitude estimate remain open. Two high-frequency rays are not all smooth modes. |
+| Live [#299](https://github.com/gvakhrushev/d0_15/pull/299), head `c791b051f0e36ff615d74a30dd20b50a7f60a901` | The physical orbit-5/7 matrices have rank 23 and a genuine one-dimensional cross-character cokernel; raw residual squares are `(8/5,8/5,0,0)` and `(2,0,0,2)`. Unit-`q0` squares are `(1/25,1/25,0,0)` and `(1/46,0,0,1/46)`. All eight same-carrier moving-germ classes have explicit image witnesses. | The nonzero class freezes the metric section while changing the character. It is a carrier-mismatch diagnostic, not a stationary-sheet stress. The PR is open in REVIEW; GitHub currently reports no checks on this head. Its body records a prior Lean timeout in the large inverse reductions, so do not call this module Lean-validated. No square-root-of-13 monodromy follows from a raw basis pairing. |
+| Live [#285](https://github.com/gvakhrushev/d0_15/pull/285), head `ea8aeb4910b2726f7cab84f31115a5311a50fb1b` | Mode B `(-1,1,-1,1)` is an exact identity-link joint vacuum for every real epsilon. On the selected mode-A branch `(i,i,-i,-i)`, the second forcing is solved; with zero order-epsilon link tangent, the order-epsilon-cubed connection forcing lies outside the rank-20 vacuum Hessian. | This stops that selected branch at the stated order; other initial kernel tangents remain open. It is not a metric-stress result, physical no-go, or closure of the mode family. No slow-packet estimate follows from these two characters. |
 | Live [#240](https://github.com/gvakhrushev/d0_15/pull/240), `2c98fbed57976c749d7374af13352cabb0003270` | Partial terminal `SHEAR-PERIOD-2-SLOW-ENVELOPE-KILLS-AMPLITUDE-GAP-ZERO`: `-432u^5` cuts the period-2 amplitude; the bounded periodic slow envelope is zero | Other admissible microstructures remain open. The unattained stress is not an owned curvature-squared term. |
-| Merged [#232](https://github.com/gvakhrushev/d0_15/pull/232), [#241](https://github.com/gvakhrushev/d0_15/pull/241), [#259](https://github.com/gvakhrushev/d0_15/pull/259); live [#275](https://github.com/gvakhrushev/d0_15/pull/275), `663292f88e6107a6566cf93ecd76f61ad113c176` | Explicit curved Y family and slow profile; corrected connection-stationary response through the claimed orders; next range correction reduces the residual freedom to the real COS/SIN shell of `N0=span(lambda1,lambda3,lambda4,lambda6)` | #275 remains blocked on #260's nonlinear real-ray continuation. No exact same-source joint solution is asserted. |
-| Live [#260](https://github.com/gvakhrushev/d0_15/pull/260), `da9b12d74a8d7decbe0a24d33eb917c21c6ce0e6` | Corrected real COS/SIN rays vanish in scalar, connection and metric Euler through degree 5 | Degree-6 even-harmonic forcing and regular correction, then the next odd resonant projection, are missing. Degree 5 does not prove torsion freedom. |
+| Merged [#232](https://github.com/gvakhrushev/d0_15/pull/232), [#241](https://github.com/gvakhrushev/d0_15/pull/241), [#259](https://github.com/gvakhrushev/d0_15/pull/259); live [#275](https://github.com/gvakhrushev/d0_15/pull/275), `663292f88e6107a6566cf93ecd76f61ad113c176` | Explicit curved Y family and slow profile; corrected connection-stationary response through the claimed orders; next range correction reduces the residual freedom to the real COS/SIN shell of `N0=span(lambda1,lambda3,lambda4,lambda6)` | The selected #260 degree-6 even correction below is a quarter-wave amplitude jet, not the #275 `z=h` response. The slow-profile nonlinear cross term and same-source ten-slot comparison remain uncomputed. No exact same-source joint solution is asserted. |
+| Live [#260](https://github.com/gvakhrushev/d0_15/pull/260), head `13c78b7d758da48723328ba3f45d9e4ec1a083c3` | On the selected line `u=(0,0,1,1)` in `N0`, corrected COS/SIN rays have all scalar, connection, and metric Euler terms zero through degree 5. Both degree-6 even forcing blocks have rank-24 Hessians and exact regular corrections; the corrected degree-6 metric Euler vanishes in all ten slots. | This is one line in the four-dimensional `N0`, not a classification of `F6[N0]`. The degree-7 odd resonant connection Euler is missing. The worker remains BLOCKED/Draft. Degree 5 or 6 does not establish torsion freedom or a slow-limit theorem. |
 | This [#202](https://github.com/gvakhrushev/d0_15/pull/202), §§9.30–9.32 | Six projected affine rows, function-field rank-6 chart and the enlarged quadratic-remainder cancellation at one point | Full solder self-energy, untruncated joint Euler, minor zero locus and other admissible deformations. No curved stationary witness. |
 
 #### A response gap must be computed in its own variables
 
-The next object in #260 is a pair of maps, not one ambiguous `F6`:
-connection forcing in the declared all-edge carrier (24 generator slots
-per site), and metric forcing in the ten symmetric metric slots per site,
-with their real COS/SIN harmonic support recorded. Classify the connection
-forcing using its own regular Hessian image and its left-kernel/Fredholm
-projection. If solvable, substitute the solved correction into the metric
-Euler from the same expansion. A nonzero connection obstruction prevents
-that formal continuation; it is not itself a metric stress coefficient.
+The finite quarter-wave coefficient below and the slow-background response
+are different maps. To close #275, evaluate the corrected Y profile on its
+pinned `z=h` background, differentiate the same fixed-source action in the
+ten metric slots, and compare against the independently fixed #216 response.
+The degree-six calculation only reduces one candidate correction; it is not
+a substitute for that comparison.
+
+##### Degree 6 on the selected real line: a solved image, not a stress
+
+PR #260 now supplies the exact degree-6 coefficient on the selected quarter-
+wave line `u=(0,0,1,1)` of the four-dimensional `N0`, with its real COS and
+SIN dressings. This supersedes the earlier statement that degree 6 was
+uncomputed on these two rays. It does not classify arbitrary `u` in `N0`.
+
+For COS, the 24-component character-`(-1)` forcing, grouped by Role in six
+Lorentz-generator coordinates, is
+
+```text
+(0,-20/3,-20/3,-4,-4,0),
+(0,  4/3, 4/3,-4/3,-4/3,0),
+(0,0,0,0,0,0),
+(0,0,0,0,0,0).
+```
+
+The zero-character forcing is its negative. Both 24x24 even Hessians have
+rank 24, so these forcings lie in their regular images, with no cokernel.
+The exact corrections for both characters are
+
+```text
+Role 0: (0,-1/96,-1/96, 1/96, 1/96,0)
+Role 1: (0,-1/96,-1/96, 1/96, 1/96,0)
+Role 2: (1/192,0,0,0,0, 1/64)
+Role 3: (1/192,0,0,0,0,-1/64).
+```
+
+For SIN, both forcing blocks are the negative of the COS character-`(-1)`
+forcing. Its character-`(-1)` correction is the negative of the four vectors
+above; its zero-character correction is the same four-vector profile.
+Substitution into the same finite action's constant-solder metric variation
+gives, for each real dressing,
+
+\[
+E_Q^{(6)}=(0,0,0,0,0,0,0,0,0,0)\in\mathbb Q^{10}.
+\]
+
+This is the requested concrete reduced-response substitution at order six
+on those two rays. If `Phi` denotes the regular-harmonic-eliminated action
+jet, its metric derivative on the checked rays is this zero vector. This
+notation names only that coefficient calculation; no repository owner yet
+defines an all-orders `Phi` on a slow continuum background. The first result
+is a regular-image connection lift whose metric coefficient cancels, not a
+nonzero stress and not a proof for all of `N0`.
+
+The first next coefficient on this selected ray is the degree-7 odd resonant
+connection Euler. It is not computed in the current certificate. The zero
+metric vector at degree six does not show that this next equation is
+solvable. The full four-coordinate germ, any other resonant harmonics, and
+finite-curvature continuation remain open.
 
 The #260 germ amplitude `epsilon` and #275's slow scale `h`/valued parameter
 `z_h=h` are different variables. Their matching, and any singular amplitude
 or inverse growth, must be derived before assigning a power of `h` to a
 coefficient. Even if a bounded metric coefficient genuinely occurred as
 `h^6 F6`, its normalized contribution would be `h^4 F6 -> 0`; a nonzero
-coefficient alone would not prove a finite response gap.
+coefficient alone would not prove a finite response gap. Merged #296 owns the
+specified second-order Gram-slice forcing; it does not by itself establish a
+universal recurrence `F_n proportional to C(d(z^n)) vec_sym(dd^T)` or its
+claimed power counting for every harmonic and smooth packet.
 
 For the selected slow background and the designated comparator with its
 realization and source prescription fixed independently, define the target
@@ -2714,15 +2768,72 @@ The present memo proves neither `Y=Gamma_LC` nor
 
 #### Execution order, without duplicate branches
 
-1. Continue the existing #260 real-ray convention: degree-6 even forcing,
-   exact regular solution or Fredholm obstruction, then next odd order.
-2. #275 consumes that corrected jet and computes the ten-slot response on
-   its pinned slow profile, with `z=h`, against the pinned comparator.
-3. #240 consumes the scoped normalized result; its existing shear terminal
-   remains partial until the required admissible class is controlled.
-4. #285's mode-A cubic coefficient and #202's full-Euler finite-carrier
-   gate remain separate. #267's executable `E_sp` owner must be accepted
-   and merged before #265's dependency gate opens.
+1. Continue #260 from the solved degree-6 even corrections on its selected
+   line: compute the degree-7 odd resonant connection Euler, then extend to
+   the other coordinates of `N0` if the worker's full four-space objective
+   is retained.
+2. #275 must separately substitute its corrected #232 Y profile on the
+   pinned `z=h` slow background, against the fixed #216 comparator. The
+   quarter-wave epsilon jet supplies no amplitude-to-`h` map by itself.
+3. Keep #240's shear partial terminal and #285's selected-branch cubic
+   obstruction in their declared carriers. Neither exhausts other channels.
+4. #202's full-Euler finite-carrier gate remains separate. #267's
+   executable `E_sp` owner must be accepted and merged before #265's
+   dependency gate opens.
 
 This is a dependency map for existing tasks, not registration of new work
 or a retirement of any still-open task.
+
+
+### 9.34 Two distinct cokernel questions and the updated degree-six result
+
+The latest controlled checks separate two objects that the proposed synthesis
+had called one germ stress.
+
+First, on the physical unit torus in live PR #299, the matrix pairs `A(z)`
+with `C(conj(z))`. On the declared orbit types 5 and 7 its rank is 23 and its
+one-dimensional cokernel is real algebra. Frozen-section cross-character
+residual squares are exactly `(8/5,8/5,0,0)` and `(2,0,0,2)`; after unit-`q0`
+normalization they are `(1/25,1/25,0,0)` and `(1/46,0,0,1/46)`. The same PR
+constructs image witnesses for all eight same-carrier transported classes.
+Thus these nonzero norms measure the frozen-section / moving-character
+mismatch. They are not the source-fixed metric Euler of a stationary-sheet
+continuation. The raw `l^T w` and basis norm `|3+2i|^2` are not invariants of
+the normalized cokernel class. PR #299 remains an open REVIEW execution, and
+its reported Lean proof timed out in the large inverse reductions; treat the
+exact equations and witnesses as a live research result, not a validated
+formal module.
+
+Second, the #260 quarter-wave test uses the connection amplitudes in
+`N0=span{lambda1,lambda3,lambda4,lambda6}`. For the particular direction
+`u=(0,0,1,1)`, its COS and SIN dressings have the degree-six even connection
+forcing in two regular 24-component character blocks. Each Hessian has rank
+24, the exact corrections solve both systems, and the resulting ten-component
+metric Euler is zero. This is a different calculation from the physical
+orbit-5/7 cokernel. It supplies no all-orders stress theorem and no response
+on the slow profile.
+
+For this selected line, therefore, the proposed three-way classification of
+the measured degree-six connection forcing is settled: it is a nonzero
+regular image (in both even channels), not a cokernel class. The associated
+metric coefficient, after the solved correction, is zero. The classification
+has **not** been proved for every vector or every combination in the full
+four-dimensional `N0`; nor does the degree-six result solve the degree-seven
+odd equation. This partial positive result narrows the remaining test. It
+does not justify the proposed exhaustive three-channel decomposition,
+`h^{-2}E_Q + 1/2 G = R_Y + o(1)` for all realizable sequences, or the claim
+that every continuum stress has been assigned.
+
+The only justified substitution into a reduced response at this checkpoint
+is the literal finite one in §9.34's degree-six calculation:
+
+\[
+D_Q\Phi^{[6]}\big|_{u=(0,0,1,1),\,COS}=0_{10},\qquad
+D_Q\Phi^{[6]}\big|_{u=(0,0,1,1),\,SIN}=0_{10},
+\]
+
+where `Phi^[6]` denotes only the regular-harmonic-eliminated coefficient of
+the owned finite action on these rays. No all-orders slow-background
+functional \(\Phi\) is owned, so this equality cannot be substituted into
+#275's \(z_h=h\) response. The requisite amplitude/scale map and same-source
+comparison still have to be computed there.
