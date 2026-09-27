@@ -20,7 +20,7 @@ Quadratic slots at the shear witness, from one symbol
 on \(z=(-1,1,-1,1)\) the moving germ is \(q_0=4E_{00}+4E_{02}+4E_{22}\) and has no \(q_{11}\) entry.
 \(\Phi=\tfrac12 u^2 v^*H(Q)v\) has \(\partial_u\Phi=0\) for every \(u\), while
 \(\partial_{q_{11}}\Phi=-u^2\). The germ direction itself has witness stress 0.
-Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. A longer envelope is still open. The period-2 joint-critical amplitude is therefore not rescued by an L=2 sideband, and the quadratic stress \(-u^2\) is not attained on that critical set.
+Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. The one-step period-4 envelope is settled in the same direction. The shear character generates only the two-element sign group \(\{1,z\}\). Replacing any one sign by \(\pm i\) gives eight characters outside that group; each has joint rank 24 at the upper shear. Pure shear powers do not source them, and they are not free moduli, so they do not cancel the resonant projection \(-432\). An envelope whose momentum is a root of unity of order greater than 4 remains open. The quadratic stress \(-u^2\) is not attained on the period-2 critical set.
 
 ## 0. Typed target and source contract
 
