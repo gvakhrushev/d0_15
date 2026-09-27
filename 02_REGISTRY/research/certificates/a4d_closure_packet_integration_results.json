@@ -1,0 +1,707 @@
+{
+  "schema": "a4d-closure-packet-integration/1",
+  "source_sha256": {
+    "d0_a4d_closure_certificate.py": "cf87dcd06951c9923de06ed52621f9d93034612b5b4b6253e6a9bec0e9597fde",
+    "d0_a4d_closure_results.json": "8758fdd5ea96ffdad9220178342b25eb980b288a83ba7975acd2dfb90e552666",
+    "a4d_slow_lift_reconstruction_check.py": "2a7ef4720ec6645efd18bd84052be3ba7c8f6bc49af007903208da2e91317198",
+    "d0_a4d_slow_lift_result.json": "ebe9a53f88fc82a450f9287330fa0ed71a495e5134d29b87dae6b6ef5731887a"
+  },
+  "coefficient_input": {
+    "path": "02_REGISTRY/research/certificates/a4d_haq_coefficientwise_identity_coefficients.json",
+    "sha256": "e106d8937fad966eefd1838ce69e0bb32d7e34100e452b9a9c1f78ec78e454f5"
+  },
+  "A_260_degree3": {
+    "fourier_order": [
+      "zero",
+      "minus",
+      "resonant",
+      "orthogonal"
+    ],
+    "COS": {
+      "fourier_ranks": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "joint_rank": 16,
+      "augmented_rank": 17,
+      "ell": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ell_dot_f3": 64
+    },
+    "SIN": {
+      "fourier_ranks": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "joint_rank": 16,
+      "augmented_rank": 17,
+      "ell": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ell_dot_f3": -64
+    },
+    "scope": "two selected real dressings only; not a classification of the full complex N0 support",
+    "uploaded_json_note": "The supplied result stores ell as scalar 1; this result records and checks the full 24-entry witness."
+  },
+  "B_D2_imC_all_k": {
+    "identity": "M_k = ((a^(k-1)-b^(k-1))/(a-b)) * M_2",
+    "all_k_witness": "q_k = ((a^(k-1)-b^(k-1))/(a-b)) * q_2",
+    "orbit_carrier_count": 4,
+    "finite_replays": 48,
+    "nonconforming": 0,
+    "witnesses": [
+      {
+        "orbit": 5,
+        "carrier": "C(x)",
+        "rank_C": 9,
+        "q2": [
+          [
+            "-8",
+            "0"
+          ],
+          [
+            "-8",
+            "0"
+          ],
+          [
+            "0",
+            "4"
+          ],
+          [
+            "0",
+            "4"
+          ],
+          [
+            "-8",
+            "0"
+          ],
+          [
+            "0",
+            "4"
+          ],
+          [
+            "0",
+            "4"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "qk_rule": "q_k = ((a^(k-1)-b^(k-1))/(a-b)) * q_2",
+        "checked_k": [
+          {
+            "k": 1,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 2,
+            "ratio": [
+              "1",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 3,
+            "ratio": [
+              "-2",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 4,
+            "ratio": [
+              "2",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 5,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 6,
+            "ratio": [
+              "-4",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 7,
+            "ratio": [
+              "8",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 8,
+            "ratio": [
+              "-8",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 9,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 10,
+            "ratio": [
+              "16",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 11,
+            "ratio": [
+              "-32",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 12,
+            "ratio": [
+              "32",
+              "0"
+            ],
+            "augmented_rank": 9
+          }
+        ]
+      },
+      {
+        "orbit": 5,
+        "carrier": "C(conj x)",
+        "rank_C": 9,
+        "q2": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "qk_rule": "q_k = ((a^(k-1)-b^(k-1))/(a-b)) * q_2",
+        "checked_k": [
+          {
+            "k": 1,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 2,
+            "ratio": [
+              "1",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 3,
+            "ratio": [
+              "-2",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 4,
+            "ratio": [
+              "2",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 5,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 6,
+            "ratio": [
+              "-4",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 7,
+            "ratio": [
+              "8",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 8,
+            "ratio": [
+              "-8",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 9,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 10,
+            "ratio": [
+              "16",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 11,
+            "ratio": [
+              "-32",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 12,
+            "ratio": [
+              "32",
+              "0"
+            ],
+            "augmented_rank": 9
+          }
+        ]
+      },
+      {
+        "orbit": 7,
+        "carrier": "C(x)",
+        "rank_C": 9,
+        "q2": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-4",
+            "-4"
+          ],
+          [
+            "-4",
+            "-4"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "-4",
+            "-4"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "qk_rule": "q_k = ((a^(k-1)-b^(k-1))/(a-b)) * q_2",
+        "checked_k": [
+          {
+            "k": 1,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 2,
+            "ratio": [
+              "1",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 3,
+            "ratio": [
+              "-3",
+              "-1"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 4,
+            "ratio": [
+              "6",
+              "4"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 5,
+            "ratio": [
+              "-10",
+              "-10"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 6,
+            "ratio": [
+              "16",
+              "20"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 7,
+            "ratio": [
+              "-28",
+              "-36"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 8,
+            "ratio": [
+              "56",
+              "64"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 9,
+            "ratio": [
+              "-120",
+              "-120"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 10,
+            "ratio": [
+              "256",
+              "240"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 11,
+            "ratio": [
+              "-528",
+              "-496"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 12,
+            "ratio": [
+              "1056",
+              "1024"
+            ],
+            "augmented_rank": 9
+          }
+        ]
+      },
+      {
+        "orbit": 7,
+        "carrier": "C(conj x)",
+        "rank_C": 9,
+        "q2": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "qk_rule": "q_k = ((a^(k-1)-b^(k-1))/(a-b)) * q_2",
+        "checked_k": [
+          {
+            "k": 1,
+            "ratio": [
+              "0",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 2,
+            "ratio": [
+              "1",
+              "0"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 3,
+            "ratio": [
+              "-3",
+              "-1"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 4,
+            "ratio": [
+              "6",
+              "4"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 5,
+            "ratio": [
+              "-10",
+              "-10"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 6,
+            "ratio": [
+              "16",
+              "20"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 7,
+            "ratio": [
+              "-28",
+              "-36"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 8,
+            "ratio": [
+              "56",
+              "64"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 9,
+            "ratio": [
+              "-120",
+              "-120"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 10,
+            "ratio": [
+              "256",
+              "240"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 11,
+            "ratio": [
+              "-528",
+              "-496"
+            ],
+            "augmented_rank": 9
+          },
+          {
+            "k": 12,
+            "ratio": [
+              "1056",
+              "1024"
+            ],
+            "augmented_rank": 9
+          }
+        ]
+      }
+    ],
+    "scope": "orbits 5 and 7, with C(x) and C(conj x), and the pinned coefficient table"
+  },
+  "C_275_reconstructed_slow_lift": {
+    "terminal": "J2-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-RESPONSE-CANCELS",
+    "checks": {
+      "flat_components": 96,
+      "lift_solution": [
+        "-z(z+2)/D",
+        "-2z^2/D",
+        "z(z+2)/D",
+        "-2z^2/D"
+      ],
+      "D": "3z^2+4",
+      "order_h_metric_cancelled": "all four phases",
+      "normalized_limit": "0 under z=h and z=h^2"
+    },
+    "scope": "independent reconstruction on selected #232 Y carrier; does not extend to full #240 class"
+  }
+}
