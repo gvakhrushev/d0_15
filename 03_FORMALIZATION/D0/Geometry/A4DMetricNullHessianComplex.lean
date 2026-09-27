@@ -760,7 +760,7 @@ theorem cMatrix_q0_zero (d : Fin 4 → ℂ) :
 
 theorem cMatrix_zero : cMatrix (0 : Fin 4 → ℂ) = 0 := by
   ext i j
-  simp [cMatrix]
+  fin_cases i <;> simp [cMatrix]
 
 theorem q0_zero : q0 (0 : Fin 4 → ℂ) = 0 := by
   funext j
@@ -2720,78 +2720,690 @@ private theorem minor_1_1_eq_lit (d : Fin 4 → ℂ) :
     minor_1_1 d = (cMatrix d).submatrix rows_1_1 cols_1_1 := by
   rfl
 
+private theorem minor_1_1_scaled_inverse_cell_0_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (0 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_0_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (0 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
 private theorem minor_1_1_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (0 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_0_0 d
+  · exact minor_1_1_scaled_inverse_cell_0_1 d
+  · exact minor_1_1_scaled_inverse_cell_0_2 d
+  · exact minor_1_1_scaled_inverse_cell_0_3 d
+  · exact minor_1_1_scaled_inverse_cell_0_4 d
+  · exact minor_1_1_scaled_inverse_cell_0_5 d
+  · exact minor_1_1_scaled_inverse_cell_0_6 d
+  · exact minor_1_1_scaled_inverse_cell_0_7 d
+  · exact minor_1_1_scaled_inverse_cell_0_8 d
+private theorem minor_1_1_scaled_inverse_cell_1_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_1_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (1 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (1 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_1_0 d
+  · exact minor_1_1_scaled_inverse_cell_1_1 d
+  · exact minor_1_1_scaled_inverse_cell_1_2 d
+  · exact minor_1_1_scaled_inverse_cell_1_3 d
+  · exact minor_1_1_scaled_inverse_cell_1_4 d
+  · exact minor_1_1_scaled_inverse_cell_1_5 d
+  · exact minor_1_1_scaled_inverse_cell_1_6 d
+  · exact minor_1_1_scaled_inverse_cell_1_7 d
+  · exact minor_1_1_scaled_inverse_cell_1_8 d
+private theorem minor_1_1_scaled_inverse_cell_2_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_2_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (2 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (2 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_2_0 d
+  · exact minor_1_1_scaled_inverse_cell_2_1 d
+  · exact minor_1_1_scaled_inverse_cell_2_2 d
+  · exact minor_1_1_scaled_inverse_cell_2_3 d
+  · exact minor_1_1_scaled_inverse_cell_2_4 d
+  · exact minor_1_1_scaled_inverse_cell_2_5 d
+  · exact minor_1_1_scaled_inverse_cell_2_6 d
+  · exact minor_1_1_scaled_inverse_cell_2_7 d
+  · exact minor_1_1_scaled_inverse_cell_2_8 d
+private theorem minor_1_1_scaled_inverse_cell_3_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_3_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (3 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (3 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_3_0 d
+  · exact minor_1_1_scaled_inverse_cell_3_1 d
+  · exact minor_1_1_scaled_inverse_cell_3_2 d
+  · exact minor_1_1_scaled_inverse_cell_3_3 d
+  · exact minor_1_1_scaled_inverse_cell_3_4 d
+  · exact minor_1_1_scaled_inverse_cell_3_5 d
+  · exact minor_1_1_scaled_inverse_cell_3_6 d
+  · exact minor_1_1_scaled_inverse_cell_3_7 d
+  · exact minor_1_1_scaled_inverse_cell_3_8 d
+private theorem minor_1_1_scaled_inverse_cell_4_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_4_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (4 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (4 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_4_0 d
+  · exact minor_1_1_scaled_inverse_cell_4_1 d
+  · exact minor_1_1_scaled_inverse_cell_4_2 d
+  · exact minor_1_1_scaled_inverse_cell_4_3 d
+  · exact minor_1_1_scaled_inverse_cell_4_4 d
+  · exact minor_1_1_scaled_inverse_cell_4_5 d
+  · exact minor_1_1_scaled_inverse_cell_4_6 d
+  · exact minor_1_1_scaled_inverse_cell_4_7 d
+  · exact minor_1_1_scaled_inverse_cell_4_8 d
+private theorem minor_1_1_scaled_inverse_cell_5_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_5_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (5 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (5 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_5_0 d
+  · exact minor_1_1_scaled_inverse_cell_5_1 d
+  · exact minor_1_1_scaled_inverse_cell_5_2 d
+  · exact minor_1_1_scaled_inverse_cell_5_3 d
+  · exact minor_1_1_scaled_inverse_cell_5_4 d
+  · exact minor_1_1_scaled_inverse_cell_5_5 d
+  · exact minor_1_1_scaled_inverse_cell_5_6 d
+  · exact minor_1_1_scaled_inverse_cell_5_7 d
+  · exact minor_1_1_scaled_inverse_cell_5_8 d
+private theorem minor_1_1_scaled_inverse_cell_6_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_6_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (6 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (6 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_6_0 d
+  · exact minor_1_1_scaled_inverse_cell_6_1 d
+  · exact minor_1_1_scaled_inverse_cell_6_2 d
+  · exact minor_1_1_scaled_inverse_cell_6_3 d
+  · exact minor_1_1_scaled_inverse_cell_6_4 d
+  · exact minor_1_1_scaled_inverse_cell_6_5 d
+  · exact minor_1_1_scaled_inverse_cell_6_6 d
+  · exact minor_1_1_scaled_inverse_cell_6_7 d
+  · exact minor_1_1_scaled_inverse_cell_6_8 d
+private theorem minor_1_1_scaled_inverse_cell_7_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_7_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (7 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (7 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_7_0 d
+  · exact minor_1_1_scaled_inverse_cell_7_1 d
+  · exact minor_1_1_scaled_inverse_cell_7_2 d
+  · exact minor_1_1_scaled_inverse_cell_7_3 d
+  · exact minor_1_1_scaled_inverse_cell_7_4 d
+  · exact minor_1_1_scaled_inverse_cell_7_5 d
+  · exact minor_1_1_scaled_inverse_cell_7_6 d
+  · exact minor_1_1_scaled_inverse_cell_7_7 d
+  · exact minor_1_1_scaled_inverse_cell_7_8 d
+private theorem minor_1_1_scaled_inverse_cell_8_0 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_1 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_2 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_3 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_4 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_5 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_6 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_7 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_1_scaled_inverse_cell_8_8 (d : Fin 4 → ℂ) :
+    (minor_1_1 d * adj_1_1 d) (8 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_1_eq_lit]
+  simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
+    adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_1_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_1 d * adj_1_1 d) (8 : Fin 9) j =
       (detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
-  rw [minor_1_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_1, cols_1_1, adj_1_1,
-      adj_1_1_row_0, adj_1_1_row_1, adj_1_1_row_2, adj_1_1_row_3, adj_1_1_row_4, adj_1_1_row_5, adj_1_1_row_6, adj_1_1_row_7, adj_1_1_row_8, detPoly_1_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
-
+  fin_cases j
+  · exact minor_1_1_scaled_inverse_cell_8_0 d
+  · exact minor_1_1_scaled_inverse_cell_8_1 d
+  · exact minor_1_1_scaled_inverse_cell_8_2 d
+  · exact minor_1_1_scaled_inverse_cell_8_3 d
+  · exact minor_1_1_scaled_inverse_cell_8_4 d
+  · exact minor_1_1_scaled_inverse_cell_8_5 d
+  · exact minor_1_1_scaled_inverse_cell_8_6 d
+  · exact minor_1_1_scaled_inverse_cell_8_7 d
+  · exact minor_1_1_scaled_inverse_cell_8_8 d
 theorem minor_1_1_scaled_inverse (d : Fin 4 → ℂ) :
     minor_1_1 d * adj_1_1 d =
       detPoly_1_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ) := by
@@ -2811,78 +3423,690 @@ private theorem minor_1_2_eq_lit (d : Fin 4 → ℂ) :
     minor_1_2 d = (cMatrix d).submatrix rows_1_2 cols_1_2 := by
   rfl
 
+private theorem minor_1_2_scaled_inverse_cell_0_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (0 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_0_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (0 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
 private theorem minor_1_2_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (0 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_0_0 d
+  · exact minor_1_2_scaled_inverse_cell_0_1 d
+  · exact minor_1_2_scaled_inverse_cell_0_2 d
+  · exact minor_1_2_scaled_inverse_cell_0_3 d
+  · exact minor_1_2_scaled_inverse_cell_0_4 d
+  · exact minor_1_2_scaled_inverse_cell_0_5 d
+  · exact minor_1_2_scaled_inverse_cell_0_6 d
+  · exact minor_1_2_scaled_inverse_cell_0_7 d
+  · exact minor_1_2_scaled_inverse_cell_0_8 d
+private theorem minor_1_2_scaled_inverse_cell_1_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_1_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (1 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (1 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_1_0 d
+  · exact minor_1_2_scaled_inverse_cell_1_1 d
+  · exact minor_1_2_scaled_inverse_cell_1_2 d
+  · exact minor_1_2_scaled_inverse_cell_1_3 d
+  · exact minor_1_2_scaled_inverse_cell_1_4 d
+  · exact minor_1_2_scaled_inverse_cell_1_5 d
+  · exact minor_1_2_scaled_inverse_cell_1_6 d
+  · exact minor_1_2_scaled_inverse_cell_1_7 d
+  · exact minor_1_2_scaled_inverse_cell_1_8 d
+private theorem minor_1_2_scaled_inverse_cell_2_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_2_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (2 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (2 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_2_0 d
+  · exact minor_1_2_scaled_inverse_cell_2_1 d
+  · exact minor_1_2_scaled_inverse_cell_2_2 d
+  · exact minor_1_2_scaled_inverse_cell_2_3 d
+  · exact minor_1_2_scaled_inverse_cell_2_4 d
+  · exact minor_1_2_scaled_inverse_cell_2_5 d
+  · exact minor_1_2_scaled_inverse_cell_2_6 d
+  · exact minor_1_2_scaled_inverse_cell_2_7 d
+  · exact minor_1_2_scaled_inverse_cell_2_8 d
+private theorem minor_1_2_scaled_inverse_cell_3_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_3_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (3 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (3 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_3_0 d
+  · exact minor_1_2_scaled_inverse_cell_3_1 d
+  · exact minor_1_2_scaled_inverse_cell_3_2 d
+  · exact minor_1_2_scaled_inverse_cell_3_3 d
+  · exact minor_1_2_scaled_inverse_cell_3_4 d
+  · exact minor_1_2_scaled_inverse_cell_3_5 d
+  · exact minor_1_2_scaled_inverse_cell_3_6 d
+  · exact minor_1_2_scaled_inverse_cell_3_7 d
+  · exact minor_1_2_scaled_inverse_cell_3_8 d
+private theorem minor_1_2_scaled_inverse_cell_4_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_4_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (4 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (4 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_4_0 d
+  · exact minor_1_2_scaled_inverse_cell_4_1 d
+  · exact minor_1_2_scaled_inverse_cell_4_2 d
+  · exact minor_1_2_scaled_inverse_cell_4_3 d
+  · exact minor_1_2_scaled_inverse_cell_4_4 d
+  · exact minor_1_2_scaled_inverse_cell_4_5 d
+  · exact minor_1_2_scaled_inverse_cell_4_6 d
+  · exact minor_1_2_scaled_inverse_cell_4_7 d
+  · exact minor_1_2_scaled_inverse_cell_4_8 d
+private theorem minor_1_2_scaled_inverse_cell_5_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_5_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (5 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (5 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_5_0 d
+  · exact minor_1_2_scaled_inverse_cell_5_1 d
+  · exact minor_1_2_scaled_inverse_cell_5_2 d
+  · exact minor_1_2_scaled_inverse_cell_5_3 d
+  · exact minor_1_2_scaled_inverse_cell_5_4 d
+  · exact minor_1_2_scaled_inverse_cell_5_5 d
+  · exact minor_1_2_scaled_inverse_cell_5_6 d
+  · exact minor_1_2_scaled_inverse_cell_5_7 d
+  · exact minor_1_2_scaled_inverse_cell_5_8 d
+private theorem minor_1_2_scaled_inverse_cell_6_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_6_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (6 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (6 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_6_0 d
+  · exact minor_1_2_scaled_inverse_cell_6_1 d
+  · exact minor_1_2_scaled_inverse_cell_6_2 d
+  · exact minor_1_2_scaled_inverse_cell_6_3 d
+  · exact minor_1_2_scaled_inverse_cell_6_4 d
+  · exact minor_1_2_scaled_inverse_cell_6_5 d
+  · exact minor_1_2_scaled_inverse_cell_6_6 d
+  · exact minor_1_2_scaled_inverse_cell_6_7 d
+  · exact minor_1_2_scaled_inverse_cell_6_8 d
+private theorem minor_1_2_scaled_inverse_cell_7_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_7_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (7 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (7 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_7_0 d
+  · exact minor_1_2_scaled_inverse_cell_7_1 d
+  · exact minor_1_2_scaled_inverse_cell_7_2 d
+  · exact minor_1_2_scaled_inverse_cell_7_3 d
+  · exact minor_1_2_scaled_inverse_cell_7_4 d
+  · exact minor_1_2_scaled_inverse_cell_7_5 d
+  · exact minor_1_2_scaled_inverse_cell_7_6 d
+  · exact minor_1_2_scaled_inverse_cell_7_7 d
+  · exact minor_1_2_scaled_inverse_cell_7_8 d
+private theorem minor_1_2_scaled_inverse_cell_8_0 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (0 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (0 : Fin 9) := by
   rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_1 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (1 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (1 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_2 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (2 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (2 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_3 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (3 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (3 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_4 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (4 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (4 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_5 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (5 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (5 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_6 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (6 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (6 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_7 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (7 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (7 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_1_2_scaled_inverse_cell_8_8 (d : Fin 4 → ℂ) :
+    (minor_1_2 d * adj_1_2 d) (8 : Fin 9) (8 : Fin 9) =
+      (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (8 : Fin 9) := by
+  rw [minor_1_2_eq_lit]
+  simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
+    adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_1_2_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_1_2 d * adj_1_2 d) (8 : Fin 9) j =
       (detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
-  rw [minor_1_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_1_2, cols_1_2, adj_1_2,
-      adj_1_2_row_0, adj_1_2_row_1, adj_1_2_row_2, adj_1_2_row_3, adj_1_2_row_4, adj_1_2_row_5, adj_1_2_row_6, adj_1_2_row_7, adj_1_2_row_8, detPoly_1_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
-
+  fin_cases j
+  · exact minor_1_2_scaled_inverse_cell_8_0 d
+  · exact minor_1_2_scaled_inverse_cell_8_1 d
+  · exact minor_1_2_scaled_inverse_cell_8_2 d
+  · exact minor_1_2_scaled_inverse_cell_8_3 d
+  · exact minor_1_2_scaled_inverse_cell_8_4 d
+  · exact minor_1_2_scaled_inverse_cell_8_5 d
+  · exact minor_1_2_scaled_inverse_cell_8_6 d
+  · exact minor_1_2_scaled_inverse_cell_8_7 d
+  · exact minor_1_2_scaled_inverse_cell_8_8 d
 theorem minor_1_2_scaled_inverse (d : Fin 4 → ℂ) :
     minor_1_2 d * adj_1_2 d =
       detPoly_1_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ) := by
@@ -2993,78 +4217,690 @@ private theorem minor_2_1_eq_lit (d : Fin 4 → ℂ) :
     minor_2_1 d = (cMatrix d).submatrix rows_2_1 cols_2_1 := by
   rfl
 
+private theorem minor_2_1_scaled_inverse_cell_0_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (0 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_0_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (0 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
 private theorem minor_2_1_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (0 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_0_0 d
+  · exact minor_2_1_scaled_inverse_cell_0_1 d
+  · exact minor_2_1_scaled_inverse_cell_0_2 d
+  · exact minor_2_1_scaled_inverse_cell_0_3 d
+  · exact minor_2_1_scaled_inverse_cell_0_4 d
+  · exact minor_2_1_scaled_inverse_cell_0_5 d
+  · exact minor_2_1_scaled_inverse_cell_0_6 d
+  · exact minor_2_1_scaled_inverse_cell_0_7 d
+  · exact minor_2_1_scaled_inverse_cell_0_8 d
+private theorem minor_2_1_scaled_inverse_cell_1_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_1_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (1 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (1 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_1_0 d
+  · exact minor_2_1_scaled_inverse_cell_1_1 d
+  · exact minor_2_1_scaled_inverse_cell_1_2 d
+  · exact minor_2_1_scaled_inverse_cell_1_3 d
+  · exact minor_2_1_scaled_inverse_cell_1_4 d
+  · exact minor_2_1_scaled_inverse_cell_1_5 d
+  · exact minor_2_1_scaled_inverse_cell_1_6 d
+  · exact minor_2_1_scaled_inverse_cell_1_7 d
+  · exact minor_2_1_scaled_inverse_cell_1_8 d
+private theorem minor_2_1_scaled_inverse_cell_2_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_2_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (2 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (2 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_2_0 d
+  · exact minor_2_1_scaled_inverse_cell_2_1 d
+  · exact minor_2_1_scaled_inverse_cell_2_2 d
+  · exact minor_2_1_scaled_inverse_cell_2_3 d
+  · exact minor_2_1_scaled_inverse_cell_2_4 d
+  · exact minor_2_1_scaled_inverse_cell_2_5 d
+  · exact minor_2_1_scaled_inverse_cell_2_6 d
+  · exact minor_2_1_scaled_inverse_cell_2_7 d
+  · exact minor_2_1_scaled_inverse_cell_2_8 d
+private theorem minor_2_1_scaled_inverse_cell_3_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_3_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (3 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (3 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_3_0 d
+  · exact minor_2_1_scaled_inverse_cell_3_1 d
+  · exact minor_2_1_scaled_inverse_cell_3_2 d
+  · exact minor_2_1_scaled_inverse_cell_3_3 d
+  · exact minor_2_1_scaled_inverse_cell_3_4 d
+  · exact minor_2_1_scaled_inverse_cell_3_5 d
+  · exact minor_2_1_scaled_inverse_cell_3_6 d
+  · exact minor_2_1_scaled_inverse_cell_3_7 d
+  · exact minor_2_1_scaled_inverse_cell_3_8 d
+private theorem minor_2_1_scaled_inverse_cell_4_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_4_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (4 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (4 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_4_0 d
+  · exact minor_2_1_scaled_inverse_cell_4_1 d
+  · exact minor_2_1_scaled_inverse_cell_4_2 d
+  · exact minor_2_1_scaled_inverse_cell_4_3 d
+  · exact minor_2_1_scaled_inverse_cell_4_4 d
+  · exact minor_2_1_scaled_inverse_cell_4_5 d
+  · exact minor_2_1_scaled_inverse_cell_4_6 d
+  · exact minor_2_1_scaled_inverse_cell_4_7 d
+  · exact minor_2_1_scaled_inverse_cell_4_8 d
+private theorem minor_2_1_scaled_inverse_cell_5_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_5_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (5 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (5 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_5_0 d
+  · exact minor_2_1_scaled_inverse_cell_5_1 d
+  · exact minor_2_1_scaled_inverse_cell_5_2 d
+  · exact minor_2_1_scaled_inverse_cell_5_3 d
+  · exact minor_2_1_scaled_inverse_cell_5_4 d
+  · exact minor_2_1_scaled_inverse_cell_5_5 d
+  · exact minor_2_1_scaled_inverse_cell_5_6 d
+  · exact minor_2_1_scaled_inverse_cell_5_7 d
+  · exact minor_2_1_scaled_inverse_cell_5_8 d
+private theorem minor_2_1_scaled_inverse_cell_6_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_6_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (6 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (6 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_6_0 d
+  · exact minor_2_1_scaled_inverse_cell_6_1 d
+  · exact minor_2_1_scaled_inverse_cell_6_2 d
+  · exact minor_2_1_scaled_inverse_cell_6_3 d
+  · exact minor_2_1_scaled_inverse_cell_6_4 d
+  · exact minor_2_1_scaled_inverse_cell_6_5 d
+  · exact minor_2_1_scaled_inverse_cell_6_6 d
+  · exact minor_2_1_scaled_inverse_cell_6_7 d
+  · exact minor_2_1_scaled_inverse_cell_6_8 d
+private theorem minor_2_1_scaled_inverse_cell_7_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_7_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (7 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (7 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_7_0 d
+  · exact minor_2_1_scaled_inverse_cell_7_1 d
+  · exact minor_2_1_scaled_inverse_cell_7_2 d
+  · exact minor_2_1_scaled_inverse_cell_7_3 d
+  · exact minor_2_1_scaled_inverse_cell_7_4 d
+  · exact minor_2_1_scaled_inverse_cell_7_5 d
+  · exact minor_2_1_scaled_inverse_cell_7_6 d
+  · exact minor_2_1_scaled_inverse_cell_7_7 d
+  · exact minor_2_1_scaled_inverse_cell_7_8 d
+private theorem minor_2_1_scaled_inverse_cell_8_0 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_1 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_2 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_3 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_4 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_5 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_6 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_7 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_1_scaled_inverse_cell_8_8 (d : Fin 4 → ℂ) :
+    (minor_2_1 d * adj_2_1 d) (8 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_1_eq_lit]
+  simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
+    adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_1_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_1 d * adj_2_1 d) (8 : Fin 9) j =
       (detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
-  rw [minor_2_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_1, cols_2_1, adj_2_1,
-      adj_2_1_row_0, adj_2_1_row_1, adj_2_1_row_2, adj_2_1_row_3, adj_2_1_row_4, adj_2_1_row_5, adj_2_1_row_6, adj_2_1_row_7, adj_2_1_row_8, detPoly_2_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
-
+  fin_cases j
+  · exact minor_2_1_scaled_inverse_cell_8_0 d
+  · exact minor_2_1_scaled_inverse_cell_8_1 d
+  · exact minor_2_1_scaled_inverse_cell_8_2 d
+  · exact minor_2_1_scaled_inverse_cell_8_3 d
+  · exact minor_2_1_scaled_inverse_cell_8_4 d
+  · exact minor_2_1_scaled_inverse_cell_8_5 d
+  · exact minor_2_1_scaled_inverse_cell_8_6 d
+  · exact minor_2_1_scaled_inverse_cell_8_7 d
+  · exact minor_2_1_scaled_inverse_cell_8_8 d
 theorem minor_2_1_scaled_inverse (d : Fin 4 → ℂ) :
     minor_2_1 d * adj_2_1 d =
       detPoly_2_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ) := by
@@ -3084,78 +4920,690 @@ private theorem minor_2_2_eq_lit (d : Fin 4 → ℂ) :
     minor_2_2 d = (cMatrix d).submatrix rows_2_2 cols_2_2 := by
   rfl
 
+private theorem minor_2_2_scaled_inverse_cell_0_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (0 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_0_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (0 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
 private theorem minor_2_2_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (0 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_0_0 d
+  · exact minor_2_2_scaled_inverse_cell_0_1 d
+  · exact minor_2_2_scaled_inverse_cell_0_2 d
+  · exact minor_2_2_scaled_inverse_cell_0_3 d
+  · exact minor_2_2_scaled_inverse_cell_0_4 d
+  · exact minor_2_2_scaled_inverse_cell_0_5 d
+  · exact minor_2_2_scaled_inverse_cell_0_6 d
+  · exact minor_2_2_scaled_inverse_cell_0_7 d
+  · exact minor_2_2_scaled_inverse_cell_0_8 d
+private theorem minor_2_2_scaled_inverse_cell_1_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_1_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (1 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (1 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_1_0 d
+  · exact minor_2_2_scaled_inverse_cell_1_1 d
+  · exact minor_2_2_scaled_inverse_cell_1_2 d
+  · exact minor_2_2_scaled_inverse_cell_1_3 d
+  · exact minor_2_2_scaled_inverse_cell_1_4 d
+  · exact minor_2_2_scaled_inverse_cell_1_5 d
+  · exact minor_2_2_scaled_inverse_cell_1_6 d
+  · exact minor_2_2_scaled_inverse_cell_1_7 d
+  · exact minor_2_2_scaled_inverse_cell_1_8 d
+private theorem minor_2_2_scaled_inverse_cell_2_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_2_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (2 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (2 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_2_0 d
+  · exact minor_2_2_scaled_inverse_cell_2_1 d
+  · exact minor_2_2_scaled_inverse_cell_2_2 d
+  · exact minor_2_2_scaled_inverse_cell_2_3 d
+  · exact minor_2_2_scaled_inverse_cell_2_4 d
+  · exact minor_2_2_scaled_inverse_cell_2_5 d
+  · exact minor_2_2_scaled_inverse_cell_2_6 d
+  · exact minor_2_2_scaled_inverse_cell_2_7 d
+  · exact minor_2_2_scaled_inverse_cell_2_8 d
+private theorem minor_2_2_scaled_inverse_cell_3_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_3_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (3 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (3 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_3_0 d
+  · exact minor_2_2_scaled_inverse_cell_3_1 d
+  · exact minor_2_2_scaled_inverse_cell_3_2 d
+  · exact minor_2_2_scaled_inverse_cell_3_3 d
+  · exact minor_2_2_scaled_inverse_cell_3_4 d
+  · exact minor_2_2_scaled_inverse_cell_3_5 d
+  · exact minor_2_2_scaled_inverse_cell_3_6 d
+  · exact minor_2_2_scaled_inverse_cell_3_7 d
+  · exact minor_2_2_scaled_inverse_cell_3_8 d
+private theorem minor_2_2_scaled_inverse_cell_4_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_4_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (4 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (4 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_4_0 d
+  · exact minor_2_2_scaled_inverse_cell_4_1 d
+  · exact minor_2_2_scaled_inverse_cell_4_2 d
+  · exact minor_2_2_scaled_inverse_cell_4_3 d
+  · exact minor_2_2_scaled_inverse_cell_4_4 d
+  · exact minor_2_2_scaled_inverse_cell_4_5 d
+  · exact minor_2_2_scaled_inverse_cell_4_6 d
+  · exact minor_2_2_scaled_inverse_cell_4_7 d
+  · exact minor_2_2_scaled_inverse_cell_4_8 d
+private theorem minor_2_2_scaled_inverse_cell_5_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_5_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (5 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (5 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_5_0 d
+  · exact minor_2_2_scaled_inverse_cell_5_1 d
+  · exact minor_2_2_scaled_inverse_cell_5_2 d
+  · exact minor_2_2_scaled_inverse_cell_5_3 d
+  · exact minor_2_2_scaled_inverse_cell_5_4 d
+  · exact minor_2_2_scaled_inverse_cell_5_5 d
+  · exact minor_2_2_scaled_inverse_cell_5_6 d
+  · exact minor_2_2_scaled_inverse_cell_5_7 d
+  · exact minor_2_2_scaled_inverse_cell_5_8 d
+private theorem minor_2_2_scaled_inverse_cell_6_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_6_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (6 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (6 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_6_0 d
+  · exact minor_2_2_scaled_inverse_cell_6_1 d
+  · exact minor_2_2_scaled_inverse_cell_6_2 d
+  · exact minor_2_2_scaled_inverse_cell_6_3 d
+  · exact minor_2_2_scaled_inverse_cell_6_4 d
+  · exact minor_2_2_scaled_inverse_cell_6_5 d
+  · exact minor_2_2_scaled_inverse_cell_6_6 d
+  · exact minor_2_2_scaled_inverse_cell_6_7 d
+  · exact minor_2_2_scaled_inverse_cell_6_8 d
+private theorem minor_2_2_scaled_inverse_cell_7_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_7_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (7 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (7 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_7_0 d
+  · exact minor_2_2_scaled_inverse_cell_7_1 d
+  · exact minor_2_2_scaled_inverse_cell_7_2 d
+  · exact minor_2_2_scaled_inverse_cell_7_3 d
+  · exact minor_2_2_scaled_inverse_cell_7_4 d
+  · exact minor_2_2_scaled_inverse_cell_7_5 d
+  · exact minor_2_2_scaled_inverse_cell_7_6 d
+  · exact minor_2_2_scaled_inverse_cell_7_7 d
+  · exact minor_2_2_scaled_inverse_cell_7_8 d
+private theorem minor_2_2_scaled_inverse_cell_8_0 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (0 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (0 : Fin 9) := by
   rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_1 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (1 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (1 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_2 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (2 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (2 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_3 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (3 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (3 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_4 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (4 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (4 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_5 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (5 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (5 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_6 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (6 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (6 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_7 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (7 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (7 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_2_2_scaled_inverse_cell_8_8 (d : Fin 4 → ℂ) :
+    (minor_2_2 d * adj_2_2 d) (8 : Fin 9) (8 : Fin 9) =
+      (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (8 : Fin 9) := by
+  rw [minor_2_2_eq_lit]
+  simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
+    adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_2_2_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_2_2 d * adj_2_2 d) (8 : Fin 9) j =
       (detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
-  rw [minor_2_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_2_2, cols_2_2, adj_2_2,
-      adj_2_2_row_0, adj_2_2_row_1, adj_2_2_row_2, adj_2_2_row_3, adj_2_2_row_4, adj_2_2_row_5, adj_2_2_row_6, adj_2_2_row_7, adj_2_2_row_8, detPoly_2_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
-
+  fin_cases j
+  · exact minor_2_2_scaled_inverse_cell_8_0 d
+  · exact minor_2_2_scaled_inverse_cell_8_1 d
+  · exact minor_2_2_scaled_inverse_cell_8_2 d
+  · exact minor_2_2_scaled_inverse_cell_8_3 d
+  · exact minor_2_2_scaled_inverse_cell_8_4 d
+  · exact minor_2_2_scaled_inverse_cell_8_5 d
+  · exact minor_2_2_scaled_inverse_cell_8_6 d
+  · exact minor_2_2_scaled_inverse_cell_8_7 d
+  · exact minor_2_2_scaled_inverse_cell_8_8 d
 theorem minor_2_2_scaled_inverse (d : Fin 4 → ℂ) :
     minor_2_2 d * adj_2_2 d =
       detPoly_2_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ) := by
@@ -3266,78 +5714,690 @@ private theorem minor_3_1_eq_lit (d : Fin 4 → ℂ) :
     minor_3_1 d = (cMatrix d).submatrix rows_3_1 cols_3_1 := by
   rfl
 
+private theorem minor_3_1_scaled_inverse_cell_0_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (0 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_0_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (0 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
 private theorem minor_3_1_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (0 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_0_0 d
+  · exact minor_3_1_scaled_inverse_cell_0_1 d
+  · exact minor_3_1_scaled_inverse_cell_0_2 d
+  · exact minor_3_1_scaled_inverse_cell_0_3 d
+  · exact minor_3_1_scaled_inverse_cell_0_4 d
+  · exact minor_3_1_scaled_inverse_cell_0_5 d
+  · exact minor_3_1_scaled_inverse_cell_0_6 d
+  · exact minor_3_1_scaled_inverse_cell_0_7 d
+  · exact minor_3_1_scaled_inverse_cell_0_8 d
+private theorem minor_3_1_scaled_inverse_cell_1_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_1_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (1 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (1 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_1_0 d
+  · exact minor_3_1_scaled_inverse_cell_1_1 d
+  · exact minor_3_1_scaled_inverse_cell_1_2 d
+  · exact minor_3_1_scaled_inverse_cell_1_3 d
+  · exact minor_3_1_scaled_inverse_cell_1_4 d
+  · exact minor_3_1_scaled_inverse_cell_1_5 d
+  · exact minor_3_1_scaled_inverse_cell_1_6 d
+  · exact minor_3_1_scaled_inverse_cell_1_7 d
+  · exact minor_3_1_scaled_inverse_cell_1_8 d
+private theorem minor_3_1_scaled_inverse_cell_2_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_2_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (2 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (2 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_2_0 d
+  · exact minor_3_1_scaled_inverse_cell_2_1 d
+  · exact minor_3_1_scaled_inverse_cell_2_2 d
+  · exact minor_3_1_scaled_inverse_cell_2_3 d
+  · exact minor_3_1_scaled_inverse_cell_2_4 d
+  · exact minor_3_1_scaled_inverse_cell_2_5 d
+  · exact minor_3_1_scaled_inverse_cell_2_6 d
+  · exact minor_3_1_scaled_inverse_cell_2_7 d
+  · exact minor_3_1_scaled_inverse_cell_2_8 d
+private theorem minor_3_1_scaled_inverse_cell_3_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_3_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (3 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (3 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_3_0 d
+  · exact minor_3_1_scaled_inverse_cell_3_1 d
+  · exact minor_3_1_scaled_inverse_cell_3_2 d
+  · exact minor_3_1_scaled_inverse_cell_3_3 d
+  · exact minor_3_1_scaled_inverse_cell_3_4 d
+  · exact minor_3_1_scaled_inverse_cell_3_5 d
+  · exact minor_3_1_scaled_inverse_cell_3_6 d
+  · exact minor_3_1_scaled_inverse_cell_3_7 d
+  · exact minor_3_1_scaled_inverse_cell_3_8 d
+private theorem minor_3_1_scaled_inverse_cell_4_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_4_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (4 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (4 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_4_0 d
+  · exact minor_3_1_scaled_inverse_cell_4_1 d
+  · exact minor_3_1_scaled_inverse_cell_4_2 d
+  · exact minor_3_1_scaled_inverse_cell_4_3 d
+  · exact minor_3_1_scaled_inverse_cell_4_4 d
+  · exact minor_3_1_scaled_inverse_cell_4_5 d
+  · exact minor_3_1_scaled_inverse_cell_4_6 d
+  · exact minor_3_1_scaled_inverse_cell_4_7 d
+  · exact minor_3_1_scaled_inverse_cell_4_8 d
+private theorem minor_3_1_scaled_inverse_cell_5_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_5_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (5 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (5 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_5_0 d
+  · exact minor_3_1_scaled_inverse_cell_5_1 d
+  · exact minor_3_1_scaled_inverse_cell_5_2 d
+  · exact minor_3_1_scaled_inverse_cell_5_3 d
+  · exact minor_3_1_scaled_inverse_cell_5_4 d
+  · exact minor_3_1_scaled_inverse_cell_5_5 d
+  · exact minor_3_1_scaled_inverse_cell_5_6 d
+  · exact minor_3_1_scaled_inverse_cell_5_7 d
+  · exact minor_3_1_scaled_inverse_cell_5_8 d
+private theorem minor_3_1_scaled_inverse_cell_6_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_6_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (6 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (6 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_6_0 d
+  · exact minor_3_1_scaled_inverse_cell_6_1 d
+  · exact minor_3_1_scaled_inverse_cell_6_2 d
+  · exact minor_3_1_scaled_inverse_cell_6_3 d
+  · exact minor_3_1_scaled_inverse_cell_6_4 d
+  · exact minor_3_1_scaled_inverse_cell_6_5 d
+  · exact minor_3_1_scaled_inverse_cell_6_6 d
+  · exact minor_3_1_scaled_inverse_cell_6_7 d
+  · exact minor_3_1_scaled_inverse_cell_6_8 d
+private theorem minor_3_1_scaled_inverse_cell_7_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_7_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (7 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (7 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_7_0 d
+  · exact minor_3_1_scaled_inverse_cell_7_1 d
+  · exact minor_3_1_scaled_inverse_cell_7_2 d
+  · exact minor_3_1_scaled_inverse_cell_7_3 d
+  · exact minor_3_1_scaled_inverse_cell_7_4 d
+  · exact minor_3_1_scaled_inverse_cell_7_5 d
+  · exact minor_3_1_scaled_inverse_cell_7_6 d
+  · exact minor_3_1_scaled_inverse_cell_7_7 d
+  · exact minor_3_1_scaled_inverse_cell_7_8 d
+private theorem minor_3_1_scaled_inverse_cell_8_0 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_1 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_2 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_3 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_4 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_5 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_6 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_7 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_1_scaled_inverse_cell_8_8 (d : Fin 4 → ℂ) :
+    (minor_3_1 d * adj_3_1 d) (8 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_1_eq_lit]
+  simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
+    adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_1_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_1 d * adj_3_1 d) (8 : Fin 9) j =
       (detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
-  rw [minor_3_1_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_1, cols_3_1, adj_3_1,
-      adj_3_1_row_0, adj_3_1_row_1, adj_3_1_row_2, adj_3_1_row_3, adj_3_1_row_4, adj_3_1_row_5, adj_3_1_row_6, adj_3_1_row_7, adj_3_1_row_8, detPoly_3_1, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
-
+  fin_cases j
+  · exact minor_3_1_scaled_inverse_cell_8_0 d
+  · exact minor_3_1_scaled_inverse_cell_8_1 d
+  · exact minor_3_1_scaled_inverse_cell_8_2 d
+  · exact minor_3_1_scaled_inverse_cell_8_3 d
+  · exact minor_3_1_scaled_inverse_cell_8_4 d
+  · exact minor_3_1_scaled_inverse_cell_8_5 d
+  · exact minor_3_1_scaled_inverse_cell_8_6 d
+  · exact minor_3_1_scaled_inverse_cell_8_7 d
+  · exact minor_3_1_scaled_inverse_cell_8_8 d
 theorem minor_3_1_scaled_inverse (d : Fin 4 → ℂ) :
     minor_3_1 d * adj_3_1 d =
       detPoly_3_1 d • (1 : Matrix (Fin 9) (Fin 9) ℂ) := by
@@ -3357,78 +6417,690 @@ private theorem minor_3_2_eq_lit (d : Fin 4 → ℂ) :
     minor_3_2 d = (cMatrix d).submatrix rows_3_2 cols_3_2 := by
   rfl
 
+private theorem minor_3_2_scaled_inverse_cell_0_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (0 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_0_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (0 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
 private theorem minor_3_2_scaled_inverse_row_0 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (0 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (0 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_0_0 d
+  · exact minor_3_2_scaled_inverse_cell_0_1 d
+  · exact minor_3_2_scaled_inverse_cell_0_2 d
+  · exact minor_3_2_scaled_inverse_cell_0_3 d
+  · exact minor_3_2_scaled_inverse_cell_0_4 d
+  · exact minor_3_2_scaled_inverse_cell_0_5 d
+  · exact minor_3_2_scaled_inverse_cell_0_6 d
+  · exact minor_3_2_scaled_inverse_cell_0_7 d
+  · exact minor_3_2_scaled_inverse_cell_0_8 d
+private theorem minor_3_2_scaled_inverse_cell_1_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_1_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (1 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_1 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (1 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (1 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_1_0 d
+  · exact minor_3_2_scaled_inverse_cell_1_1 d
+  · exact minor_3_2_scaled_inverse_cell_1_2 d
+  · exact minor_3_2_scaled_inverse_cell_1_3 d
+  · exact minor_3_2_scaled_inverse_cell_1_4 d
+  · exact minor_3_2_scaled_inverse_cell_1_5 d
+  · exact minor_3_2_scaled_inverse_cell_1_6 d
+  · exact minor_3_2_scaled_inverse_cell_1_7 d
+  · exact minor_3_2_scaled_inverse_cell_1_8 d
+private theorem minor_3_2_scaled_inverse_cell_2_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_2_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (2 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_2 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (2 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (2 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_2_0 d
+  · exact minor_3_2_scaled_inverse_cell_2_1 d
+  · exact minor_3_2_scaled_inverse_cell_2_2 d
+  · exact minor_3_2_scaled_inverse_cell_2_3 d
+  · exact minor_3_2_scaled_inverse_cell_2_4 d
+  · exact minor_3_2_scaled_inverse_cell_2_5 d
+  · exact minor_3_2_scaled_inverse_cell_2_6 d
+  · exact minor_3_2_scaled_inverse_cell_2_7 d
+  · exact minor_3_2_scaled_inverse_cell_2_8 d
+private theorem minor_3_2_scaled_inverse_cell_3_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_3_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (3 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_3 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (3 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (3 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_3_0 d
+  · exact minor_3_2_scaled_inverse_cell_3_1 d
+  · exact minor_3_2_scaled_inverse_cell_3_2 d
+  · exact minor_3_2_scaled_inverse_cell_3_3 d
+  · exact minor_3_2_scaled_inverse_cell_3_4 d
+  · exact minor_3_2_scaled_inverse_cell_3_5 d
+  · exact minor_3_2_scaled_inverse_cell_3_6 d
+  · exact minor_3_2_scaled_inverse_cell_3_7 d
+  · exact minor_3_2_scaled_inverse_cell_3_8 d
+private theorem minor_3_2_scaled_inverse_cell_4_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_4_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (4 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_4 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (4 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (4 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_4_0 d
+  · exact minor_3_2_scaled_inverse_cell_4_1 d
+  · exact minor_3_2_scaled_inverse_cell_4_2 d
+  · exact minor_3_2_scaled_inverse_cell_4_3 d
+  · exact minor_3_2_scaled_inverse_cell_4_4 d
+  · exact minor_3_2_scaled_inverse_cell_4_5 d
+  · exact minor_3_2_scaled_inverse_cell_4_6 d
+  · exact minor_3_2_scaled_inverse_cell_4_7 d
+  · exact minor_3_2_scaled_inverse_cell_4_8 d
+private theorem minor_3_2_scaled_inverse_cell_5_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_5_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (5 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_5 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (5 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (5 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_5_0 d
+  · exact minor_3_2_scaled_inverse_cell_5_1 d
+  · exact minor_3_2_scaled_inverse_cell_5_2 d
+  · exact minor_3_2_scaled_inverse_cell_5_3 d
+  · exact minor_3_2_scaled_inverse_cell_5_4 d
+  · exact minor_3_2_scaled_inverse_cell_5_5 d
+  · exact minor_3_2_scaled_inverse_cell_5_6 d
+  · exact minor_3_2_scaled_inverse_cell_5_7 d
+  · exact minor_3_2_scaled_inverse_cell_5_8 d
+private theorem minor_3_2_scaled_inverse_cell_6_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_6_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (6 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_6 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (6 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (6 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_6_0 d
+  · exact minor_3_2_scaled_inverse_cell_6_1 d
+  · exact minor_3_2_scaled_inverse_cell_6_2 d
+  · exact minor_3_2_scaled_inverse_cell_6_3 d
+  · exact minor_3_2_scaled_inverse_cell_6_4 d
+  · exact minor_3_2_scaled_inverse_cell_6_5 d
+  · exact minor_3_2_scaled_inverse_cell_6_6 d
+  · exact minor_3_2_scaled_inverse_cell_6_7 d
+  · exact minor_3_2_scaled_inverse_cell_6_8 d
+private theorem minor_3_2_scaled_inverse_cell_7_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_7_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (7 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_7 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (7 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (7 : Fin 9) j := by
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_7_0 d
+  · exact minor_3_2_scaled_inverse_cell_7_1 d
+  · exact minor_3_2_scaled_inverse_cell_7_2 d
+  · exact minor_3_2_scaled_inverse_cell_7_3 d
+  · exact minor_3_2_scaled_inverse_cell_7_4 d
+  · exact minor_3_2_scaled_inverse_cell_7_5 d
+  · exact minor_3_2_scaled_inverse_cell_7_6 d
+  · exact minor_3_2_scaled_inverse_cell_7_7 d
+  · exact minor_3_2_scaled_inverse_cell_7_8 d
+private theorem minor_3_2_scaled_inverse_cell_8_0 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (0 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (0 : Fin 9) := by
   rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_1 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (1 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (1 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_2 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (2 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (2 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_3 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (3 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (3 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_4 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (4 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (4 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_5 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (5 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (5 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_6 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (6 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (6 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_7 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (7 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (7 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
+
+private theorem minor_3_2_scaled_inverse_cell_8_8 (d : Fin 4 → ℂ) :
+    (minor_3_2 d * adj_3_2 d) (8 : Fin 9) (8 : Fin 9) =
+      (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) (8 : Fin 9) := by
+  rw [minor_3_2_eq_lit]
+  simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
+    adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
 
 private theorem minor_3_2_scaled_inverse_row_8 (d : Fin 4 → ℂ) (j : Fin 9) :
     (minor_3_2 d * adj_3_2 d) (8 : Fin 9) j =
       (detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ)) (8 : Fin 9) j := by
-  rw [minor_3_2_eq_lit]
-  fin_cases j <;>
-    simp [cMatrix, rows_3_2, cols_3_2, adj_3_2,
-      adj_3_2_row_0, adj_3_2_row_1, adj_3_2_row_2, adj_3_2_row_3, adj_3_2_row_4, adj_3_2_row_5, adj_3_2_row_6, adj_3_2_row_7, adj_3_2_row_8, detPoly_3_2, Matrix.mul_apply, Fin.sum_univ_succ] <;> ring
-
+  fin_cases j
+  · exact minor_3_2_scaled_inverse_cell_8_0 d
+  · exact minor_3_2_scaled_inverse_cell_8_1 d
+  · exact minor_3_2_scaled_inverse_cell_8_2 d
+  · exact minor_3_2_scaled_inverse_cell_8_3 d
+  · exact minor_3_2_scaled_inverse_cell_8_4 d
+  · exact minor_3_2_scaled_inverse_cell_8_5 d
+  · exact minor_3_2_scaled_inverse_cell_8_6 d
+  · exact minor_3_2_scaled_inverse_cell_8_7 d
+  · exact minor_3_2_scaled_inverse_cell_8_8 d
 theorem minor_3_2_scaled_inverse (d : Fin 4 → ℂ) :
     minor_3_2 d * adj_3_2 d =
       detPoly_3_2 d • (1 : Matrix (Fin 9) (Fin 9) ℂ) := by
