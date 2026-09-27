@@ -1591,22 +1591,9 @@ def block7Unit : (Matrix (Fin 23) (Fin 23) QI)ˣ where
 theorem reconstruct_rows5 : reconstruct5 * selectedRows5 = p5 := by qfin
 theorem reconstruct_rows7 : reconstruct7 * selectedRows7 = p7 := by qfin
 
-lemma rank_submatrix_le
-    {m n a b : Type*} [Fintype m] [Fintype n] [Fintype a] [Fintype b]
-    [DecidableEq m] [DecidableEq n] [DecidableEq a] [DecidableEq b]
-    (M : Matrix m n QI) (rows : a → m) (cols : b → n) :
-    Matrix.rank (Matrix.submatrix M rows cols) ≤ Matrix.rank M := by
-  let R : Matrix a m QI := fun i j => if j = rows i then 1 else 0
-  let C : Matrix n b QI := fun i j => if i = cols j then 1 else 0
-  have h : Matrix.submatrix M rows cols = R * M * C := by
-    ext i j
-    simp [R, C, Matrix.mul_apply]
-  rw [h]
-  exact (Matrix.rank_mul_le_left _ _).trans (Matrix.rank_mul_le_right _ _)
-
 theorem orbit5_rank : Matrix.rank p5 = 23 := by
   have hlower : 23 ≤ Matrix.rank p5 := by
-    have hsub := rank_submatrix_le p5 rows5 cols5
+    have hsub := Matrix.rank_submatrix_le p5 rows5 cols5
     have hb : Matrix.rank block5 = 23 := by
       have hunit : IsUnit block5 := ⟨block5Unit, rfl⟩
       simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block5 hunit
@@ -1621,7 +1608,7 @@ theorem orbit5_rank : Matrix.rank p5 = 23 := by
 
 theorem orbit7_rank : Matrix.rank p7 = 23 := by
   have hlower : 23 ≤ Matrix.rank p7 := by
-    have hsub := rank_submatrix_le p7 rows7 cols7
+    have hsub := Matrix.rank_submatrix_le p7 rows7 cols7
     have hb : Matrix.rank block7 = 23 := by
       have hunit : IsUnit block7 := ⟨block7Unit, rfl⟩
       simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block7 hunit
