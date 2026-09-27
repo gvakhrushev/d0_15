@@ -1,0 +1,251 @@
+{
+  "schema": "a4d-fugu-intake/1",
+  "files": [
+    {
+      "path": "downloads/D0_FUGU_FORWARD_SYNTHESIS.md",
+      "source": "Downloads/D0_FUGU_FORWARD_SYNTHESIS.md",
+      "bytes": 8318,
+      "sha256": "a1c24fab536695a4edf3a6c62bf2afed3e7f63b3fdbcd639944226ce9800ed84"
+    },
+    {
+      "path": "downloads/D0_FUGU_FORWARD_SYNTHESIS_v2.md",
+      "source": "Downloads/D0_FUGU_FORWARD_SYNTHESIS_v2.md",
+      "bytes": 8048,
+      "sha256": "00d6c0a9bddabd74e9bfc98cc1ef78f3b7571a2acaf6d78f693d7022e4a51db3"
+    },
+    {
+      "path": "downloads/D0_FUGU_FORWARD_SYNTHESIS_v3.md",
+      "source": "Downloads/D0_FUGU_FORWARD_SYNTHESIS_v3.md",
+      "bytes": 6437,
+      "sha256": "347c0f71db2276214173fa82136e9c6fb589fd0062cde1724ef9aa99e5ab2f63"
+    },
+    {
+      "path": "downloads/D0_FUGU_FORWARD_SYNTHESIS_v4.md",
+      "source": "Downloads/D0_FUGU_FORWARD_SYNTHESIS_v4.md",
+      "bytes": 6477,
+      "sha256": "73ae805384d846a450137d9b83d906077438c29d348f4ba51397c0456a85f585"
+    },
+    {
+      "path": "downloads/D0_FUGU_FORWARD_SYNTHESIS_v5.md",
+      "source": "Downloads/D0_FUGU_FORWARD_SYNTHESIS_v5.md",
+      "bytes": 6195,
+      "sha256": "df6c97fcd3e995e42e44ed55f4a80cd1b07298b5e175926a0234865b4f5f314e"
+    },
+    {
+      "path": "downloads/phase_residual.log",
+      "source": "Downloads/phase_residual.log",
+      "bytes": 2447,
+      "sha256": "83eb1bda78066f62f0e5350c7ce05f554c128a07a5c7b60e0deddc005eb00f7b"
+    },
+    {
+      "path": "downloads/phase_residual_fast.py",
+      "source": "Downloads/phase_residual_fast.py",
+      "bytes": 1613,
+      "sha256": "188af77641eba70109c87dda24256370a486d76fe51d89555662f57128d9ea37"
+    },
+    {
+      "path": "downloads/phase_residual.txt",
+      "source": "Downloads/phase_residual.txt",
+      "bytes": 2441,
+      "sha256": "23e3e0eb11c3535ad38bd1051db9f3efb6cf36c1c11677eb09d02706c26cc596"
+    },
+    {
+      "path": "downloads/anomaly_operator.log",
+      "source": "Downloads/anomaly_operator.log",
+      "bytes": 1437,
+      "sha256": "18a712d07dc3b20663d16ca5619fe061127714522cb2be37ec3161096a545cc9"
+    },
+    {
+      "path": "downloads/anomaly_operator.py",
+      "source": "Downloads/anomaly_operator.py",
+      "bytes": 1928,
+      "sha256": "e483029762402c4dca9d62ee473bc9d86f132fc34c82a8c725fddc35addebfe0"
+    },
+    {
+      "path": "downloads/anomaly_operator.txt",
+      "source": "Downloads/anomaly_operator.txt",
+      "bytes": 1004,
+      "sha256": "b294982bc291646ea409050d913f4163c55c60c29556e5ed0a1444df0b2d1c0c"
+    },
+    {
+      "path": "downloads/consolidate.log",
+      "source": "Downloads/consolidate.log",
+      "bytes": 2934,
+      "sha256": "e44b5ee983310678943b9de9c0c567b0e4aa5e59981567e13441f7ccb74cef2e"
+    },
+    {
+      "path": "downloads/consolidate.py",
+      "source": "Downloads/consolidate.py",
+      "bytes": 1997,
+      "sha256": "2a7b8a392d299dac97fe01e90647d2d17eda201f73da7913a603a0daa0337385"
+    },
+    {
+      "path": "downloads/consolidate.txt",
+      "source": "Downloads/consolidate.txt",
+      "bytes": 1161,
+      "sha256": "dad5b31a27b1eaf20553171529e296bb95a02d1bd260c1c627ebb3a0a5549d93"
+    },
+    {
+      "path": "downloads/build (1).log",
+      "source": "Downloads/build (1).log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "downloads/final_synth.py",
+      "source": "Downloads/final_synth.py",
+      "bytes": 1418,
+      "sha256": "7bd4819da1a436d18c59224784f20c9c319248bb56a0c6d8e7a3264055d53048"
+    },
+    {
+      "path": "downloads/final_synth.log",
+      "source": "Downloads/final_synth.log",
+      "bytes": 618,
+      "sha256": "44ed57a114bc1429f4cd8a02e103c2b6a21548d8152027a753c49e976fdeb87a"
+    },
+    {
+      "path": "downloads/invariants.py",
+      "source": "Downloads/invariants.py",
+      "bytes": 2113,
+      "sha256": "01732f9b3324aa001448c113fd76f59efe2dda416de93b99d31fc4957572c7a9"
+    },
+    {
+      "path": "downloads/germ_anomaly.json",
+      "source": "Downloads/germ_anomaly.json",
+      "bytes": 1086,
+      "sha256": "bfc02558bd81a3b391de55e4fd1b99e623fccd5efe84349000eb5969f7e37533"
+    },
+    {
+      "path": "downloads/deep.log",
+      "source": "Downloads/deep.log",
+      "bytes": 3425,
+      "sha256": "e60a9065dc60789e3c0dff289987c6d853e57882f09313d7306cbbf543782c6c"
+    },
+    {
+      "path": "downloads/deep_analysis.py",
+      "source": "Downloads/deep_analysis.py",
+      "bytes": 2861,
+      "sha256": "7a2b0a440a4f53bde8cfb9d6c7ba0538fd0497d4059609c3358312b31710ac52"
+    },
+    {
+      "path": "downloads/deep_analysis.txt",
+      "source": "Downloads/deep_analysis.txt",
+      "bytes": 1647,
+      "sha256": "0ca6bcb7e9353ac9103c15dc163df54b3d09c16747ea9af5fc9cb19494f2a2cb"
+    },
+    {
+      "path": "downloads/build.log",
+      "source": "Downloads/build.log",
+      "bytes": 2060,
+      "sha256": "d907c503a8ae35a335c10b47c36ac9d6d51811469ee939793b03d606d2614d85"
+    },
+    {
+      "path": "downloads/build_cache.py",
+      "source": "Downloads/build_cache.py",
+      "bytes": 712,
+      "sha256": "dceea0575e92f664eba2a17ac0b8a386db422dad177689b233bb40b1ba72ca3b"
+    },
+    {
+      "path": "downloads/num_0.npz",
+      "source": "Downloads/num_0.npz",
+      "bytes": 13816,
+      "sha256": "1dafdd829fa47a48f7e0aff25d35f9f2f6a32d7b22bebb85070c48b5406783aa"
+    },
+    {
+      "path": "downloads/num_1.npz",
+      "source": "Downloads/num_1.npz",
+      "bytes": 13816,
+      "sha256": "c27c0bfe32cfc22da6960a29e067d774aaaec083e299fc301871b0b54b34f88a"
+    },
+    {
+      "path": "downloads/num_2.npz",
+      "source": "Downloads/num_2.npz",
+      "bytes": 13816,
+      "sha256": "285189c4b61470b9e6717c063bae1fd3ee8d36cfda979c377e26ac5bd25b9b7a"
+    },
+    {
+      "path": "downloads/num_3.npz",
+      "source": "Downloads/num_3.npz",
+      "bytes": 13816,
+      "sha256": "0e4bb7e0d4c33e002efd4fb432190b9f8c75a16d26c5060fe6ba5bdd16c42eb7"
+    },
+    {
+      "path": "downloads/num_4.npz",
+      "source": "Downloads/num_4.npz",
+      "bytes": 13816,
+      "sha256": "81ef1428dbccf5cb2320dae8e4e3a39c10b4ac87a278a0dd750041db6e5c9aa0"
+    },
+    {
+      "path": "downloads/num_5.npz",
+      "source": "Downloads/num_5.npz",
+      "bytes": 13816,
+      "sha256": "722e88581fc49fe8b3e97ad32c52b42c71e000a52fa73db8ea3f6bad6e3cbe8f"
+    },
+    {
+      "path": "downloads/num_6.npz",
+      "source": "Downloads/num_6.npz",
+      "bytes": 13816,
+      "sha256": "4cb7267286524f1aa9ee7ea7ceedc9b279607abaf348c6bd4e84b6e31d3bafad"
+    },
+    {
+      "path": "downloads/num_7.npz",
+      "source": "Downloads/num_7.npz",
+      "bytes": 13816,
+      "sha256": "36916a86031d028747331013620e57849f5213a43a3b94b8ce9d60387d3d8e44"
+    },
+    {
+      "path": "downloads/num_8.npz",
+      "source": "Downloads/num_8.npz",
+      "bytes": 13816,
+      "sha256": "f25751ff36e489867a1066b35c8b8e815078162ae70f4741bffd177881de7a1a"
+    },
+    {
+      "path": "downloads/orbits_ids.npy",
+      "source": "Downloads/orbits_ids.npy",
+      "bytes": 416,
+      "sha256": "fdfc4a2b3c51d0652c3e54d9ba5a13ea9b2699670f0dfe3694a5da641ab89067"
+    },
+    {
+      "path": "downloads/sym_symbolic.npy.npz",
+      "source": "Downloads/sym_symbolic.npy.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "downloads/обсуждение.rtf",
+      "source": "Downloads/обсуждение.rtf",
+      "bytes": 120803,
+      "sha256": "de2cb30268dfddfb38f88de1309633ba91aeb26cec0a3e18b30ab80382a128a7"
+    },
+    {
+      "path": "downloads/MEMO_A4D_RESPONSE_STATIONARY_SHEET_SYNTHESIS.md",
+      "source": "Downloads/MEMO_A4D_RESPONSE_STATIONARY_SHEET_SYNTHESIS.md",
+      "bytes": 23682,
+      "sha256": "d1772fcda9d1b92cb5cd6d020c7e2f3230f560cda63fd7128c1c948217df444b"
+    },
+    {
+      "path": "attachments/91cb1d27-98bb-4f65-a028-3aef847fb1bd/Вставленный текст.txt",
+      "source": "attachment/91cb1d27-98bb-4f65-a028-3aef847fb1bd/Вставленный текст.txt",
+      "bytes": 12813,
+      "sha256": "1872d6a78c9f4369ac7452bcc1dacd3f174a188f8298a4b45e0f56407d6d2fd6"
+    },
+    {
+      "path": "attachments/378ad747-c458-4eb3-80cc-b2b220745469/Вставленный текст.txt",
+      "source": "attachment/378ad747-c458-4eb3-80cc-b2b220745469/Вставленный текст.txt",
+      "bytes": 12813,
+      "sha256": "1872d6a78c9f4369ac7452bcc1dacd3f174a188f8298a4b45e0f56407d6d2fd6"
+    },
+    {
+      "path": "attachments/0ab4b608-45ef-4e63-b8a0-bc9e647ec62f/Вставленный текст.txt",
+      "source": "attachment/0ab4b608-45ef-4e63-b8a0-bc9e647ec62f/Вставленный текст.txt",
+      "bytes": 23230,
+      "sha256": "bcbe025edd5903cec71c7791ea91f9184693071e20071fbe8fad78365925501f"
+    },
+    {
+      "path": "attachments/26ed1245-9d26-442a-b27a-c34a7d5de43e/Вставленный текст.txt",
+      "source": "attachment/26ed1245-9d26-442a-b27a-c34a7d5de43e/Вставленный текст.txt",
+      "bytes": 27893,
+      "sha256": "180bc5e334503396b727de77cd072c33c1631553266dd029326b48aeefbd76c2"
+    }
+  ]
+}
