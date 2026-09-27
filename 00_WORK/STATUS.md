@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 6 | 1 | 0 | 0 | 7 | 1 / 5 |
-| **Total** | **9** | **1** | **0** | **1** | **11** | **2 / 10** |
+| WORKER | 6 | 0 | 0 | 0 | 6 | 0 / 5 |
+| **Total** | **9** | **0** | **0** | **1** | **10** | **1 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -24,7 +24,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-Y-SLOW-JOINT-CONTINUATION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-METRIC-NULL-COMPLEX-LEAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-SCHUR-EINSTEIN-DIRECT-LEAN | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
