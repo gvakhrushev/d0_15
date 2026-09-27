@@ -2349,3 +2349,80 @@ order-4 solution on the finite-q chart. `e1`, role-2/3 transverse
 components, `b1·e0`, other modes, and finite off-seed points stay
 unclassified. No stationary witness and no L=3 result. Task stays
 `IN_PROGRESS`.
+
+
+### 9.27 One-component openings off the four closed axes
+
+`a4d_resolved_curved_stationary_e2_remaining_slots_affine4_check.py`
+evaluates every mode-1100 component other than the collinear inputs
+`b0·e0`, `b2·e0`, and `b3·e0`, on the §9.23 reduction
+`r=-1`, `z=-4`, `u=ut(t)`, `q=qt(t)`, at the particular solder
+amplitude. The thirteen components are `b0·e1`, `b0·e2`, `b0·e3`,
+`b1·e0`, `b1·e1`, `b1·e2`, `b1·e3`, `b2·e1`, `b2·e2`, `b2·e3`,
+`b3·e1`, `b3·e2`, and `b3·e3`. No new Fourier mode, no new channel,
+and no new solder modulus are added. The owned affine row stays the
+linear contraction of those components: `resp` does not take the
+translation amplitude, and `response` multiplies each raw slot by
+that amplitude once.
+
+On this reduction the source vanishes on rows 10, 11, 14, and 15.
+Row 14 is not an input to `r`, `z`, or `q(u-2)`; it vanishes after
+that substitution. The source also satisfies row 4 = -row 0, row 5 =
+-row 1, row 6 = -row 2, row 7 = -row 3, row 9 = -row 8, and row 13 =
+-row 12.
+
+For each of the thirteen components, `Ct*Ka` is the zero 16×4 matrix.
+In this amplitude-linear calculus the solder quotient does not move
+any affine row through these components. The four role-0/1 components
+`b0·e2`, `b0·e3`, `b1·e2`, and `b1·e3` have zero columns on rows 10,
+11, 14, and 15.
+
+Each of the other nine has a witness row in {10, 11, 15} equal to a
+nonzero integer times the chart unit `rho*(t-2)/den`, with
+`den=5*t^2-78*t+8`:
+
+```text
+b0·e1 row 10 = -384,   b1·e0 row 10 = 384,   b1·e1 row 10 = -384,
+b2·e1 row 15 = -768,   b2·e2 row 11 = 768,   b2·e3 row 10 = 768,
+b3·e1 row 15 = 768,    b3·e2 row 10 = 768,   b3·e3 row 11 = -768.
+```
+
+The source of that row is zero and the `Ka` derivative in that
+component is zero, so a one-component amplitude `sigma` leaves the
+witness row equal to `sigma` times the unit. On the finite-q chart
+`rho!=0`, `t!=2`, `den!=0`, the unit is nonzero, so `sigma=0`.
+
+**Exact scoped no-go:** one component at a time, any of those nine
+slots has no nonzero amplitude on the §9.23 finite-q reduction in the
+amplitude-linear calculus.
+
+The rational 4×13 matrix of those source-zero rows has rank 3 over the
+function field. The denominator lcm of each row is `den`, and `den`
+times the matrix has the same rank and nullity 10 over that field. The
+ten vectors below are linearly independent for every `t!=2`, so on the
+finite-q chart the kernel dimension is at least 10, and it equals 10
+wherever the specialized rank remains 3. One basis of the function-field
+kernel, checked
+as rational products `A*v=0`, is the four pure axes `b0·e2`, `b0·e3`,
+`b1·e2`, `b1·e3`, the mixtures `b0·e1+b1·e0`, `-b0·e1+b1·e1`,
+`-4*b0·e1-b2·e1+b3·e1`, `4*b0·e1-b2·e2+b3·e3`, and
+
+```text
+Q4/(72*(t-2)^2) b0·e1 - ut*b2·e1 + (ut/2)*b2·e2 + b2·e3,
+R4/(72*(t-2)^2) b0·e1 + ut*b2·e1 - (ut/2)*b2·e2 + b3·e2,
+```
+
+where `ut=-(5*t^2-90*t+32)/(6*(t-2))` is the owned tangent,
+`Q4=25*t^4-660*t^3+3764*t^2+3840*t-1472`, and
+`R4=-(25*t^4-660*t^3+3476*t^2+4992*t-2624)`. The four pure role-0/1
+axes of §§9.24–9.26 sit in this kernel. Rows 1, 2, and 3 do not see
+`Ka`, either through the owned collinear block or through these
+thirteen components. The image of this kernel on those three rows has
+rank 3, the full codomain over the function field, so the source is
+hit and the solution space has dimension 7 over that field. That family is not
+constructed here. Rows 0, 8, and 12, where `Ka` still acts, remain
+unsolved.
+
+Quadratic solder self-energy in these thirteen slots is not
+remeasured. Other Fourier modes and finite off-seed points stay open.
+No stationary witness and no L=3 result. Task stays `IN_PROGRESS`.
