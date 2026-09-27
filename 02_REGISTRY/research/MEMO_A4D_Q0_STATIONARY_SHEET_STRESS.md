@@ -3,7 +3,7 @@
 **Task:** `EXP-A4D-Q0-STATIONARY-SHEET-STRESS`  
 **Class:** `EXPENSIVE`  
 **Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
-**Certificates:** `02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_order3_obstruction_check.py`  
+**Certificates:** `02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_order3_obstruction_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_kernel_ray_check.py`  
 **Terminal:** `A4D-Q0-TWO-MODE-OPTICAL-SHEET-JET`
 
 Owners pinned as ancestors of this branch:
@@ -123,7 +123,22 @@ The metric Euler of this correction is zero in two independent contractions: \(C
 
 The selected branch takes that \(p_2\) and no order-\(\varepsilon\) link tangent. On it, the connection Euler vanishes through order \(\varepsilon^2\). The order-\(\varepsilon^3\) piece is zero on characters \(1\) and \(\chi^2\). On \(\chi\) its phase Fourier coefficient is \(4(-2+2i)F_{2,\mathbb R}\), and the \(\chi^3=\bar\chi\) coefficient is the conjugate. The vacuum Hessian at \(z=(i,i,-i,-i)\) has rank \(20\). The augmented matrix with this forcing has rank \(21\), so the forcing is outside the image. A left-kernel vector pairs with it nontrivially. The same selected branch therefore stops at order \(\varepsilon^3\).
 
-The four-dimensional kernel of that Hessian is not explored. A nonzero order-\(\varepsilon\) tangent from it can change the order-\(\varepsilon^3\) forcing, so this is not an obstruction for every connection continuation. No finite-\(\varepsilon\) existence statement is made on mode A. The Lorentzian interval \(|\varepsilon|<1/8\) is only the range in which the Gram path has signature \((1,3)\).
+That connection kernel is four-dimensional. The order-\(\varepsilon\) metric Euler, evaluated on it, has rank \(3\), so the joint kernel is one complex line. In generator order \(K_1,K_2,K_3,J_{12},J_{13},J_{23}\) it is
+
+\[
+(-1-i,0,0,0,0,0,\ -1-i,0,0,0,0,0,\ 1,0,-1,0,1,0,\ 1,-1,0,1,0,0).
+\]
+
+A real scale \(t\) of this line, together with its conjugate character, keeps both order-\(\varepsilon\) Euler equations at zero. The order-\(\varepsilon^2\) repair is then readjusted; the character \((-1)^4\) block stays invertible. After that repair the two independent order-\(\varepsilon^3\) pairings are the cubics
+
+\[
+\begin{aligned}
+\pi_A(t)&=(-64-64i)+128 i\, t+(32+16i)t^2+(8+20i)t^3,\\
+\pi_B(t)&=(4+4i)\,t(t^2+t+4i).
+\end{aligned}
+\]
+
+For real \(t\), \(t^2+t+4i\) has imaginary part \(4\), so \(\pi_B(t)=0\) only at \(t=0\). There \(\pi_A(0)=-64-64i\neq 0\). No real scale of the metric-silent line puts the order-\(\varepsilon^3\) forcing back into the connection image. The other three kernel directions already fail the order-\(\varepsilon\) metric equation, so they leave the joint sheet before this order. No finite-\(\varepsilon\) existence statement is made on mode A. The Lorentzian interval \(|\varepsilon|<1/8\) is only the range in which the Gram path has signature \((1,3)\).
 
 ## 5. Comparison with \(-\tfrac12 G\)
 
@@ -159,7 +174,7 @@ That mismatch is not a joint-critical counterexample. The discrete Euler equatio
 
 ## 7. What remains
 
-Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided real forcing and \(T_2=0\). On that selected branch the order-\(\varepsilon^3\) connection forcing lies outside the rank-\(20\) Hessian at the original character, so the branch stops there. Other order-\(\varepsilon\) kernel tangents remain open. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
+Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided real forcing and \(T_2=0\). On that selected branch the order-\(\varepsilon^3\) connection forcing lies outside the rank-\(20\) Hessian at the original character. The unique metric-silent line in that kernel does not remove the obstruction for any real scale; the other three kernel directions already fail the order-\(\varepsilon\) metric equation. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
 
 ## 8. Validation
 
