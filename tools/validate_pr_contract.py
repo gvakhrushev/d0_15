@@ -42,6 +42,27 @@ def _one(regex: re.Pattern[str], body: str, label: str) -> str:
     return hits[0].strip()
 
 
+def _git_is_ancestor(root: pathlib.Path, ancestor: str, descendant: str) -> bool:
+    """Return true only when both commits exist and ancestor <= descendant."""
+    if not ancestor or not descendant:
+        return False
+    exists = subprocess.run(
+        ["git", "cat-file", "-e", f"{ancestor}^{{commit}}"],
+        cwd=root,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    if exists.returncode != 0:
+        return False
+    check = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", ancestor, descendant],
+        cwd=root,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    return check.returncode == 0
+
+
 def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
     pr = event.get("pull_request")
     if not isinstance(pr, dict):
@@ -58,11 +79,32 @@ def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
     if repo_slug != REPO_SLUG:
         raise ContractError(f"Repository must be {REPO_SLUG}, got {repo_slug}")
 
+    is_draft = bool(pr.get("draft", False))
+    action = (event.get("action") or "").strip()
     base_sha = ((pr.get("base") or {}).get("sha") or "").strip()
-    if base_sha and baseline.lower() != base_sha.lower():
-        raise ContractError(
-            f"Baseline must equal PR base SHA {base_sha}, got {baseline}"
+    head_sha = ((pr.get("head") or {}).get("sha") or "").strip()
+    baseline_matches_base = (
+        not base_sha or baseline.lower() == base_sha.lower()
+    )
+
+    # A task is created from current main, so PR-open and Ready/REVIEW must
+    # identify the current base exactly. During a long-lived Draft execution,
+    # main may advance independently; keep the task-start baseline pinned as
+    # long as it is still an ancestor of both current main and the task head.
+    if base_sha and not baseline_matches_base:
+        allow_pinned_draft_baseline = (
+            is_draft
+            and action != "opened"
+            and _git_is_ancestor(root, baseline, base_sha)
+            and (not head_sha or _git_is_ancestor(root, baseline, head_sha))
         )
+        if not allow_pinned_draft_baseline:
+            raise ContractError(
+                "Baseline must equal PR base SHA at PR-open/Ready; on later "
+                "Draft updates an older Baseline is allowed only when it is "
+                f"an ancestor of both current base {base_sha} and head {head_sha}; "
+                f"got {baseline}"
+            )
 
     head_ref = ((pr.get("head") or {}).get("ref") or "").strip()
     prefix = PREFIX[task_class]
@@ -77,7 +119,6 @@ def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
         if primary.startswith(("http://", "https://")):
             raise ContractError("Primary-Artifact must be repo-relative, not a URL")
 
-    is_draft = bool(pr.get("draft", False))
     number = pr.get("number") or event.get("number")
     if not number:
         raise ContractError("pull_request number missing from event")
@@ -266,6 +307,52 @@ def self_test() -> int:
             },
         }
         validate_event(control, root)
+
+        # Long-lived Drafts keep their task-start baseline while main advances.
+        # Build an actual tiny git history so the ancestor rule is exercised.
+        (root / "00_WORK" / "manifest.json").write_text(
+            json.dumps({"tasks": [task]}), encoding="utf-8"
+        )
+        (root / "00_WORK" / "tasks" / "WRK-TEST-001.md").write_text("# task\n", encoding="utf-8")
+        subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+        subprocess.run(["git", "config", "user.email", "self-test@example.invalid"], cwd=root, check=True)
+        subprocess.run(["git", "config", "user.name", "self-test"], cwd=root, check=True)
+        subprocess.run(["git", "add", "."], cwd=root, check=True)
+        subprocess.run(["git", "commit", "-qm", "task baseline"], cwd=root, check=True)
+        pinned = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
+
+        (root / "main-advance.txt").write_text("main advanced\n", encoding="utf-8")
+        subprocess.run(["git", "add", "main-advance.txt"], cwd=root, check=True)
+        subprocess.run(["git", "commit", "-qm", "advance main"], cwd=root, check=True)
+        advanced_base = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
+
+        subprocess.run(["git", "checkout", "-qb", "wrk/test-long", pinned], cwd=root, check=True)
+        (root / "draft-work.txt").write_text("draft work\n", encoding="utf-8")
+        subprocess.run(["git", "add", "draft-work.txt"], cwd=root, check=True)
+        subprocess.run(["git", "commit", "-qm", "draft work"], cwd=root, check=True)
+        long_head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
+
+        long_draft = json.loads(json.dumps(draft))
+        long_draft["action"] = "synchronize"
+        long_draft["pull_request"]["base"]["sha"] = advanced_base
+        long_draft["pull_request"]["head"]["sha"] = long_head
+        long_draft["pull_request"]["head"]["ref"] = "wrk/test-long"
+        long_draft["pull_request"]["body"] = long_draft["pull_request"]["body"].replace(
+            base, pinned
+        )
+        validate_event(long_draft, root)
+
+        stale_ready = json.loads(json.dumps(long_draft))
+        stale_ready["pull_request"]["draft"] = False
+        stale_ready["pull_request"]["body"] = stale_ready["pull_request"]["body"].replace(
+            "IN_PROGRESS", "REVIEW"
+        )
+        try:
+            validate_event(stale_ready, root)
+        except ContractError as exc:
+            assert "Baseline must equal PR base SHA" in str(exc)
+        else:
+            raise AssertionError("Ready PR with stale pinned baseline was not rejected")
 
     print("PASS pr_contract self-test")
     return 0

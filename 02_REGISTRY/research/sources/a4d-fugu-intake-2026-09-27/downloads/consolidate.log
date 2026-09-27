@@ -1,0 +1,37 @@
+[P2] rank{E_eta,E_sp} = 2 (must be 2)
+[repro] realified metric-block ranks A_real = 2 rank(H_AA):
+  orbit 0 (0, 0, 1, 1): rank A_real=44 (exp 44) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 1 (0, 0, 1, 3): rank A_real=44 (exp 44) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 2 (0, 1, 1, 2): rank A_real=40 (exp 40) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 3 (1, 0, 1, 2): rank A_real=40 (exp 40) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 4 (1, 1, 1, 1): rank A_real=32 (exp 32) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 5 (1, 1, 3, 3): rank A_real=40 (exp 40) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 6 (2, 0, 1, 1): rank A_real=40 (exp 40) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 7 (2, 1, 1, 2): rank A_real=44 (exp 44) rank HAQ=9 metric-only dim=1 (complex)
+  orbit 8 (2, 1, 2, 3): rank A_real=44 (exp 44) rank HAQ=9 metric-only dim=1 (complex)
+[P2] joined-rank test on all nine orbits:
+  orbit 0 (0, 0, 1, 1): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 1 (0, 0, 1, 3): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 2 (0, 1, 1, 2): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 3 (1, 0, 1, 2): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 4 (1, 1, 1, 1): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 5 (1, 1, 3, 3): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 6 (2, 0, 1, 1): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 7 (2, 1, 1, 2): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+  orbit 8 (2, 1, 2, 3): rank metric-only=2 rank[metric|Eta,Esp]=4 TWO-OBJECTS(rank4)
+[P2] terminal: rank_of_joined_bases = 4 on every orbit (two distinct even 2-planes)
+=== СВОДНАЯ ТАБЛИЦА АНОМАЛЬНОГО ОПЕРАТОРА (все 9 орбит) ===
+orb  ids          real-scaling-rank  phase-rank  maxSV(real)  maxSV(phase)  absorbed?
+0  (0, 0, 1, 1):    0                 0         0.0000       0.0000       YES
+1  (0, 0, 1, 3):    1                 1         0.2887       0.2887       no
+2  (0, 1, 1, 2):    2                 2         0.2132       0.2132       no
+3  (1, 0, 1, 2):    2                 2         0.3303       0.3303       no
+4  (1, 1, 1, 1):    0                 0         0.0000       0.0000       YES
+5  (1, 1, 3, 3):    3                 3         0.3596       0.3596       no
+6  (2, 0, 1, 1):    2                 2         0.2132       0.2132       no
+7  (2, 1, 1, 2):    1                 1         0.2085       0.2085       no
+8  (2, 1, 2, 3):    0                 0         0.0000       0.0000       YES
+
+аномальный ранг (real-scaling) по орбитам: [0, 1, 2, 2, 0, 3, 2, 1, 0]
+аномальный ранг (phase)        по орбитам: [0, 1, 2, 2, 0, 3, 2, 1, 0]
+ПОЛНОЕ СОВПАДЕНИЕ ДВУХ НЕЗАВИСИМЫХ СЕМЕЙСТВ: True

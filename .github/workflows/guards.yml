@@ -58,6 +58,62 @@ jobs:
       - name: Python syntax
         run: python -m compileall -q tools 04_CERTIFICATES
 
+      - name: Execute changed research certificates
+        if: github.event_name != 'workflow_dispatch'
+        timeout-minutes: 35
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+          fi
+
+          if [[ -z "$BASE" || "$BASE" =~ ^0+$ ]]; then
+            echo "No usable diff base; skipping changed research certificates."
+            exit 0
+          fi
+
+          mapfile -t CERTS < <(
+            git diff --name-only --diff-filter=ACMR "$BASE" "${{ github.sha }}" -- \
+              '02_REGISTRY/research/certificates/*.py'
+          )
+
+          if (( ${#CERTS[@]} == 0 )); then
+            echo "No changed research certificates."
+            exit 0
+          fi
+
+          echo "Executing ${#CERTS[@]} changed research certificate(s):"
+          printf '  %s\n' "${CERTS[@]}"
+
+          for cert in "${CERTS[@]}"; do
+            [[ -f "$cert" ]] || continue
+
+            timeout_seconds=180
+            mapfile -t timeout_decl < <(
+              sed -n '1,40p' "$cert" \
+                | sed -n 's/^# D0_CI_TIMEOUT_SECONDS=\([0-9][0-9]*\)$/\1/p'
+            )
+            if (( ${#timeout_decl[@]} > 1 )); then
+              echo "Multiple D0_CI_TIMEOUT_SECONDS declarations in $cert" >&2
+              exit 1
+            fi
+            if (( ${#timeout_decl[@]} == 1 )); then
+              timeout_seconds="${timeout_decl[0]}"
+              if (( timeout_seconds < 180 || timeout_seconds > 1800 )); then
+                echo "Invalid research-certificate timeout ${timeout_seconds}s in $cert; allowed range is 180..1800." >&2
+                exit 1
+              fi
+            fi
+
+            echo "::group::research certificate: $cert (timeout=${timeout_seconds}s)"
+            timeout "${timeout_seconds}s" python "$cert"
+            echo "::endgroup::"
+          done
+
       - name: Certificate artifact freshness and semantic mutations
         run: python tools/test_cert_artifact_freshness.py
 

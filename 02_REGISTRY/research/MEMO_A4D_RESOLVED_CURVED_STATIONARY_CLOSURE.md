@@ -2597,6 +2597,10 @@ self-energy and missing orders must still be included before claiming
 stationarity. No finite curved stationary witness, broad L=2 no-go or L=3
 result is obtained. Task remains `IN_PROGRESS`.
 
+Validation: the extended exact checker completed with exit 0 in 504.86 s.
+All 56 new six-component contractions and the rank-4 coverage assertion
+passed. The CI timeout is explicitly bounded at 1200 s.
+
 ### 9.33 Conditional effective-response bridge and its missing hypotheses
 
 The supplied D0-to-GR blueprint is retained here as a conditional bridge,
