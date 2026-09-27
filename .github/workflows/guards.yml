@@ -58,6 +58,44 @@ jobs:
       - name: Python syntax
         run: python -m compileall -q tools 04_CERTIFICATES
 
+      - name: Execute changed research certificates
+        if: github.event_name != 'workflow_dispatch'
+        timeout-minutes: 20
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+          fi
+
+          if [[ -z "$BASE" || "$BASE" =~ ^0+$ ]]; then
+            echo "No usable diff base; skipping changed research certificates."
+            exit 0
+          fi
+
+          mapfile -t CERTS < <(
+            git diff --name-only --diff-filter=ACMR "$BASE" "${{ github.sha }}" -- \
+              '02_REGISTRY/research/certificates/*.py'
+          )
+
+          if (( ${#CERTS[@]} == 0 )); then
+            echo "No changed research certificates."
+            exit 0
+          fi
+
+          echo "Executing ${#CERTS[@]} changed research certificate(s):"
+          printf '  %s\n' "${CERTS[@]}"
+
+          for cert in "${CERTS[@]}"; do
+            [[ -f "$cert" ]] || continue
+            echo "::group::research certificate: $cert"
+            timeout 180s python "$cert"
+            echo "::endgroup::"
+          done
+
       - name: Certificate artifact freshness and semantic mutations
         run: python tools/test_cert_artifact_freshness.py
 
