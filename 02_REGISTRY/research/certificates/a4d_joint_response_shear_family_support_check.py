@@ -94,6 +94,16 @@ def exact_moments(S: sp.Matrix, stored, units, phase):
 
 
 def main() -> None:
+    # Exact one-parameter control on the committed defect character.  The
+    # connection determinant already exposes both rational sign partners.
+    aa = sp.symbols("aa")
+    h_family = connection(brackets(shear(aa)), SHEAR_CHAR)
+    det_family = sp.factor(h_family.det())
+    expected_det = 256 * (aa - 1)**4 * (aa + 1)**4 * (aa**2 + 1)**4
+    check("SHEAR_CHARACTER_CONNECTION_DETERMINANT",
+          sp.expand(det_family - expected_det) == 0,
+          str(det_family))
+
     print("  a     singular characters (character, nullity, #nonzero moments)")
     rows = []
     for a in FAMILY:
