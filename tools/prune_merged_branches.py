@@ -75,6 +75,13 @@ LEGACY_SAFE = {
     "wrk/a4d-joint-diagonal-invisible-germ",               # closed #235; task remains PLANNED for fresh relaunch
     "wrk/a4d-joint-resonance-linear-kernel",                # closed #231; superseded by clean replay #252
     "wrk/a4d-joint-one-d-residual-germs",                   # closed #234; superseded by clean replay #253
+    "wrk/a4d-affine-curvature-cert",                       # closed #166; superseded by merged clean #168
+    "wrk/a4d-formalize-affine-relative-solder",               # closed #210; superseded by merged #218 r2
+    "wrk/a4d-formalize-cartan-hodge-translation-nogo",         # merged #192; safe retained payload on main
+    "wrk/a4d-formalize-checkerboard-nonlinear-obstruction",    # closed #211; superseded by merged #221 r2
+    "wrk/a4d-formalize-gauge-image-seam-resolution",           # closed #212; superseded by merged #220 r2
+    "wrk/a4d-formalize-nonlinear-lorentz-quotient",            # closed #191; superseded by merged #195 r2
+    "wrk/a4d-formalize-star-einstein-seed",                    # closed #206; superseded by merged #217 r2
     "wrk/a4d-diagonal-microstructure-connection-stationary-slow-lift", # closed stale #243; task remains PLANNED for fresh relaunch
     "control/strengthen-role-weld-scout",                  # no unique commits; main is strict descendant
 
