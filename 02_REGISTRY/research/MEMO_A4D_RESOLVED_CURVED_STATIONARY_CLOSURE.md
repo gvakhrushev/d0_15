@@ -2500,3 +2500,32 @@ whole `(rho,t,p)` field. `Ka` is zero in this particular solution; the
 homogeneous solution was not computed. Quadratic solder self-energy
 and the full Euler are not tested. No stationary witness and no L=3
 result. Task stays `IN_PROGRESS`.
+
+
+### 9.30 Six rows remain over the function field
+
+`a4d_resolved_curved_stationary_e2_kernel_field_span_affine4_check.py`
+uses the same 12×14 matrix. The raw nine slots still break
+row 4 = -row 0 and row 5 = -row 1. After projection onto the
+ten-dimensional kernel, and after adding collinear `Ka`, those two
+signs are restored, and the right-hand side follows them. Together
+with the four signs of §9.29, every one of the twelve rows is plus or
+minus one of
+
+```text
+0, 1, 2, 3, 8, 12.
+```
+
+Those six rows meet the six kernel columns of §9.29 in a minor that is
+not the zero rational function: its value at `(rho,t,p)=(1,0,0)` is
+nonzero. Where this 12×14 matrix is defined and the minor is nonzero,
+its rank is 6. The square subsystem on those columns is then
+invertible, so setting the other eight coordinates to zero, including
+all four `Ka` coordinates, solves it. The matching signs carry that
+solution onto the other six rows. The solution dimension of this
+12×14 system is then 8. That count keeps the ten kernel coordinates
+independent, so it does not cover the locus where rows 10, 11, 14,
+and 15 drop rank. The zero locus of the minor is not factored. The homogeneous
+solution, which may use `Ka`, is not computed. Quadratic solder
+self-energy and the full Euler are not tested. No stationary witness
+and no L=3 result. Task stays `IN_PROGRESS`.
