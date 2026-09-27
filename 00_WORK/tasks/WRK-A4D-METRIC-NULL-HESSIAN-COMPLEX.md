@@ -60,3 +60,7 @@ No new action term, no `varphi`, no BOOK/claim promotion, no declaration of full
 
 Open the Draft PR before substantive science commits. Produce an exact certificate under
 `02_REGISTRY/research/certificates/`, self-retire only after the exact terminal is reached, and do not self-merge.
+
+## Chat handoff
+
+Return the PR link, head SHA, exact terminal, the closed-form null generator `q=d d^T`, the projective rank-9 proof summary, the 36/36 detune-transport verdict, the L4 affine-alignment orbit list, and the exact certificate command. State explicitly that the result is a metric-symbol complex, not a full diffeomorphism-gauge theorem.
