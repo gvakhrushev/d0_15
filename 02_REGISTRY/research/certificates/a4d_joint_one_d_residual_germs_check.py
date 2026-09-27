@@ -276,6 +276,41 @@ def coefficient(poly, mon):
     return sp.simplify(poly.get(mon, 0))
 
 
+def check_fourier_pairing(orbit, z_table):
+    """Reconcile the full direct symbols, not just their selected null vector.
+
+    The owner row character is z_table; the real link input uses its inverse.
+    Vary one physical edge or metric slot at a time in the literal Euler maps.
+    """
+    z_input = [1/value for value in z_table]
+    H_table = HAB.subs(dict(zip(ZSYMS, z_table)))
+    H_input = HAB.subs(dict(zip(ZSYMS, z_input)))
+    Q_table = HAQ.subs(dict(zip(ZSYMS, z_table))).T
+    columns_k, columns_q = [], []
+    for index in range(24):
+        direction = sp.zeros(24, 1)
+        direction[index] = 1
+        columns_k.append(sp.Matrix([
+            coefficient(edge_euler((0, 0, 0, 0), role, generator,
+                                   z_input, direction, deg=1), (1, 0))
+            for role in range(4) for generator in LORENTZ
+        ]))
+        columns_q.append(sp.Matrix([
+            coefficient(p, (1, 0))
+            for p in metric_euler((0, 0, 0, 0), z_input, direction, deg=1)
+        ]))
+    direct_k = sp.Matrix.hstack(*columns_k)
+    direct_q = sp.Matrix.hstack(*columns_q)
+    check(f"ORBIT{orbit}_FOURIER_RECIPROCAL_TRANSPOSE",
+          (H_input.T - H_table).applyfunc(sp.simplify) == sp.zeros(24))
+    check(f"ORBIT{orbit}_FULL_DIRECT_CONNECTION_SYMBOL",
+          (direct_k - H_table).applyfunc(sp.simplify) == sp.zeros(24))
+    check(f"ORBIT{orbit}_FULL_DIRECT_METRIC_SYMBOL",
+          (direct_q - Q_table).applyfunc(sp.simplify) == sp.zeros(10, 24))
+    check(f"ORBIT{orbit}_FULL_DIRECT_JOINT_KERNEL_DIMENSION_ONE",
+          sp.Matrix.vstack(direct_k, direct_q).rank() == 23)
+
+
 def run_orbit_zero():
     roots = [sp.Integer(1), I, sp.Integer(-1), -I]
     ids = (0, 0, 1, 1)
@@ -295,6 +330,7 @@ def run_orbit_zero():
     table_substitution = dict(zip(ZSYMS, z_table))
     H_table = HAB.subs(table_substitution)
     Q_table = HAQ.subs(table_substitution).T
+    check_fourier_pairing(0, z_table)
     check("ORBIT0_BASIS_MATCHES_PR231_CONNECTION",
           (H_table * center).applyfunc(sp.simplify) == sp.zeros(24, 1))
     check("ORBIT0_BASIS_MATCHES_PR231_METRIC",
@@ -302,9 +338,9 @@ def run_orbit_zero():
     check("ORBIT0_PR231_N0_DIMENSION",
           len(sp.Matrix.vstack(H_table, Q_table).nullspace()) == 1)
     check("ORBIT0_EXACT_N0_BASIS_CONNECTION", H.T * center == sp.zeros(24, 1))
-    check("ORBIT0_EXACT_N0_BASIS_METRIC", symbol_q.T * center == sp.zeros(10, 1))
+    check("ORBIT0_EXACT_N0_BASIS_METRIC", Q_table * center == sp.zeros(10, 1))
     check("ORBIT0_N0_DIMENSION", len(sp.Matrix.vstack(
-        H.T, symbol_q.T).nullspace()) == 1)
+        H.T, Q_table).nullspace()) == 1)
 
     # Check the direct nonlinear Euler implementation against the owned
     # polarized symbol before taking any higher coefficient.
@@ -317,7 +353,7 @@ def run_orbit_zero():
     check("ORBIT0_DIRECT_CONNECTION_LINEAR", linear_k == H.T * center)
     linear_q = metric_euler((0, 0, 0, 0), z, center, deg=1)
     linear_q = sp.Matrix([coefficient(p, (1, 0)) for p in linear_q])
-    check("ORBIT0_DIRECT_METRIC_LINEAR", linear_q == symbol_q.T * center)
+    check("ORBIT0_DIRECT_METRIC_LINEAR", linear_q == Q_table * center)
     check("ORBIT0_LINEAR_JOINT_ZERO",
           linear_k == sp.zeros(24, 1) and linear_q == sp.zeros(10, 1))
 
@@ -438,6 +474,7 @@ def run_orbit_five():
     for index, value in exact_basis.items():
         center[index] = value
     check_canonical_basis(5, ids, center)
+    check_fourier_pairing(5, z_table)
     table_joint = sp.Matrix.vstack(H_table, Q_table.T)
     check("ORBIT5_RANK_H_20", H_table.rank() == 20)
     check("ORBIT5_RANK_A_INVENTORY_23",
@@ -587,6 +624,7 @@ def run_orbit_seven():
     }.items():
         center[index] = value
     check_canonical_basis(7, ids, center)
+    check_fourier_pairing(7, z_table)
     table_joint = sp.Matrix.vstack(H_table, Q_table.T)
     check("ORBIT7_RANK_H_22", H_table.rank() == 22)
     check("ORBIT7_RANK_A_INVENTORY_23",

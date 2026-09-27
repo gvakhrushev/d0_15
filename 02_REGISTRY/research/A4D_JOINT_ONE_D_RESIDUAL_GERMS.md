@@ -3,6 +3,7 @@
 **Task:** `WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS`  
 **Prerequisite:** PR [#231](https://github.com/gvakhrushev/d0_15/pull/231), current corrected head `ceed27dcef2deee41201e849ae6effb809bb14c9`
 **Certificate:** `02_REGISTRY/research/certificates/a4d_joint_one_d_residual_germs_check.py`
+**Main refresh:** `83a18af7c08c998ffd7d5bf5209aabaee74a390f` (merged #232 and #238); the stack on unmerged #231 remains explicit.
 
 ## Terminal
 
@@ -69,6 +70,36 @@ vanish on this vector. Its first curvature is nonzero on five faces; only
 face `(0,3)` vanishes, in agreement with the corrected #231 role-block
 calculation. Thus each of the three representatives has an actual
 one-complex-amplitude curved germ to reduce.
+
+### 1.1 Full Fourier pairing and the review convention concern
+
+Let `zeta` be the #231 table character and `chi=zeta^(-1)` the physical input
+character in `A_x=u chi(x) v+conjugate(u chi(x) v)`. The `u` and `conjugate(u)`
+jet variables are varied independently before restricting to the real field.
+For each of orbits 0, 5 and 7, the certificate constructs **all columns** of
+both direct linear Euler maps by varying one physical link or metric slot at
+a time. It checks the complete matrix identities
+
+```text
+D E_K(chi) = H_AA(chi)^T = H_AA(zeta)       (24 by 24)
+D E_Q(chi) = H_AQ(zeta)^T                  (10 by 24).
+```
+
+Thus the direct joint kernel on these physical input characters is exactly
+the canonical **right** kernel `ker(vstack(H_AA(zeta), H_AQ(zeta)^T))`, not
+the transposed kernel at the same table character. Nonsymmetry at fixed
+character does not contradict reciprocal-character transposition. In
+particular, the metric symbol must also be evaluated at the table character
+in this pairing; a check on one vanishing vector alone would not establish
+that identification.
+
+This resolves the convention concern in the #234 review and supersedes the
+historical statement in #232 Section 3 that a nominal one-dimensional class
+disappears. All three direct joint column systems have rank 23. This finite
+calculation uses the literal direct Euler convention of the certificate and
+does not use the separate symmetrized KKT matrix `H_AA+H_AA^T` from #231.
+No equivalence with that KKT convention, or with an unrestricted continuum
+tangent operator, is asserted.
 
 ## 2. Connection range elimination
 
@@ -253,7 +284,8 @@ survives in this one-dimensional germ.
 python3 02_REGISTRY/research/certificates/a4d_joint_one_d_residual_germs_check.py
 ```
 
-The certificate checks all three corrected #231 bases, census coverage, direct Euler orientation,
+The certificate checks all three corrected #231 bases, census coverage,
+the complete direct Fourier-paired connection and metric symbols,
 exact range equations, the orbit-0 quintic connection coefficient and
 coercive metric quadratic, and the orbit-5 cubic obstruction and its
 reverse-triangle bound, plus the orbit-7 quintic connection coefficient,
