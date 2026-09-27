@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. On each of the two defect solders the L=8 grid has no NF defect except the carrier already cut at order \(u^5\). Characters outside that grid, and the joint-critical replacement for (NF) on the whole smooth image, remain open. Neither final terminal is claimed.
+Status: IN PROGRESS. On each of the two defect solders every 16th-root character other than the cut carrier has vanishing joint moment. Characters outside that grid remain open. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -715,8 +715,20 @@ each with content-one moment \((0,0,0,0,-2,0,0,0,0,0)\). The certificate is
 `a4d_joint_response_defect_l8_check.py`.
 
 Thus on these two solders no 8th-root character other than the cut carriers
-is an NF defect. Characters that are not 8th roots remain open, so this does
-not restore (7.4) on the whole torus.
+is an NF defect.
+
+### 8.12 Sixteenth roots on the same solders
+
+All \(16^4=65536\) characters were ranked in \(\mathbb F_{17}\), where \(3\)
+has order 16. Full modular rank certifies full rank. The characters that
+remain singular in \(\mathbb F_{97}\) were checked exactly. On each solder
+there are three: the diagonal quarter-waves, with vanishing moments, and the
+carrier already cut at order \(u^5\). The modular counts are
+\(\{24:65459,\ 23:69,\ 22:6,\ 20:2\}\). The certificate is
+`a4d_joint_response_defect_l16_check.py`.
+
+Characters outside this grid remain open, so (7.4) is still not restored on
+the whole torus.
 
 ### 8.2 Amplitude boundary
 
