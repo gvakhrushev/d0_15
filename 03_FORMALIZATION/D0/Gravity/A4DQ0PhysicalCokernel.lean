@@ -8,7 +8,7 @@ import Mathlib.Tactic
 Exact two-orbit formalization of merged #290. The nonzero cross-character
 class is kept distinct from the actual same-carrier moving-germ forcing.
 
-All constants are exact elements of Q(i), embedded into C. Rank 23 is proved
+All constants are exact elements of the computable quadratic field Q(i). Rank 23 is proved
 by an explicit invertible 23x23 submatrix (lower bound) and an exact
 23-row reconstruction of the whole physical matrix (upper bound).
 -/
