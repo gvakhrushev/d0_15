@@ -281,3 +281,25 @@ The next stratification problem must be typed on an EXTENDED joint/physical
 operator or nonlinear stationary solution space, not on C alone. Likewise,
 line-bundle triviality gives c_1=0 but does not by itself imply flat physical
 connection, zero Berry curvature, unique response, or stress monodromy.
+
+## Exact nonlinear harmonic-lift input
+
+[A4D_Q0_HARMONIC_LIFT_OBSTRUCTION.md](A4D_Q0_HARMONIC_LIFT_OBSTRUCTION.md)
+certifies the next metric-amplitude jet in the declared symmetric Gram slice
+at identity raw Lorentz links. The first component forcing beyond Cq0=0 is
+
+\[
+F_2=-\frac{d^T\eta d}{4}\,C(d\odot d)\operatorname{vec}_{sym}(dd^T).
+\]
+
+It comes from the generated character z^2, with d(z^2)=2d+d odot d,
+and is homogeneous of degree six in d. On the real conjugate-pair path the
+two second harmonics must be added, including when they coincide.
+The (i,i,-i,-i) forcing is nonzero; the (-1,1,-1,1) physical rank-one
+null path is an exact identity-link joint vacuum. General complex rays and
+physical common-character rays are classified in the packet's stated scope.
+
+This closes the bounded harmonic identity, not the stationary-sheet stress
+task. The fixed-path continuation gate is im A at the generated character;
+the metric Euler of a solved correction is a separate gate. Both remain
+owned by the existing EXP-A4D-Q0-STATIONARY-SHEET-STRESS execution (#285).
