@@ -14,8 +14,9 @@ to zero is recorded below and is not an isolation theorem. The L=4 torus
 sum of the same scalar on a pure N_0 mode starts at degree 4. Its
 connection-critical line is cut by the pure-mode metric Euler. On
 u=(0,0,1,1) the corrected real cosine and sine rays have a solved degree-6
-even correction and a vanishing degree-6 metric Euler. The degree-7 odd
-resonant connection Euler is not computed, so the script stays blocked.
+even correction. Their resonant degree-7 connection Euler is the same
+nonzero vector, and the orthogonal odd weight is already nonzero at
+degree 3, so the script stays blocked.
 The affine coframe descent is not a gauge deletion.
 
 No new action channel, torsion constraint, or Einstein equation is used.
@@ -23,6 +24,7 @@ No new action channel, torsion constraint, or Einstein equation is used.
 
 from itertools import combinations, product
 import json
+import os
 from pathlib import Path
 
 import sympy as sp
@@ -693,6 +695,290 @@ def _forcing_and_corrected(amps, zeta_power=1):
     return forcing, correction, metric
 
 
+def _degree7_channel(dress, r_minus, r_zero, c_minus, c_zero, weight, label, c_seven=None):
+    """Degree-7 connection Euler along one odd weight, after the even corrections.
+
+    The jet is truncated at total degree 7 and at the first power of the
+    probe. That truncation is exact for every coefficient through tt^7 ss.
+    """
+    import math
+    from fractions import Fraction
+
+    order = 8
+    eta_sign = (1, -1, -1, -1)
+
+    def reduce_mat(den, nums):
+        g = den
+        for value in nums:
+            g = math.gcd(g, value)
+        if g > 1:
+            den //= g
+            nums = [value // g for value in nums]
+        if den < 0:
+            den = -den
+            nums = [-value for value in nums]
+        return den, tuple(nums)
+
+    def to_mat(source):
+        rats = []
+        for i in range(4):
+            for j in range(4):
+                rational = sp.Rational(source[i, j])
+                rats.append(Fraction(int(rational.p), int(rational.q)))
+        den = 1
+        for rat in rats:
+            den = math.lcm(den, rat.denominator)
+        nums = [rat.numerator * (den // rat.denominator) for rat in rats]
+        return reduce_mat(den, nums)
+
+    def mat_zero():
+        return (1, (0,) * 16)
+
+    def mat_eye():
+        return (1, (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
+
+    def mat_add(left, right):
+        left_den, left_nums = left
+        right_den, right_nums = right
+        if left_den == right_den:
+            return reduce_mat(left_den, [a + b for a, b in zip(left_nums, right_nums)])
+        g = math.gcd(left_den, right_den)
+        den = left_den // g * right_den
+        left_factor = right_den // g
+        right_factor = left_den // g
+        return reduce_mat(den, [
+            a * left_factor + b * right_factor
+            for a, b in zip(left_nums, right_nums)
+        ])
+
+    def mat_scale(numer, denom, source):
+        den, nums = source
+        return reduce_mat(den * denom, [numer * value for value in nums])
+
+    def mat_mul(left, right):
+        left_den, left_nums = left
+        right_den, right_nums = right
+        nums = [0] * 16
+        for i in range(4):
+            row = i * 4
+            for j in range(4):
+                total = 0
+                for k in range(4):
+                    total += left_nums[row + k] * right_nums[k * 4 + j]
+                nums[row + j] = total
+        return reduce_mat(left_den * right_den, nums)
+
+    zero = mat_zero()
+    eye = mat_eye()
+
+    def pair_zero():
+        return (zero, zero)
+
+    def pair_add(left, right):
+        return (mat_add(left[0], right[0]), mat_add(left[1], right[1]))
+
+    def pair_scale(numer, denom, source):
+        return (mat_scale(numer, denom, source[0]), mat_scale(numer, denom, source[1]))
+
+    def pair_mul(left, right):
+        return (
+            mat_mul(left[0], right[0]),
+            mat_add(mat_mul(left[0], right[1]), mat_mul(left[1], right[0])),
+        )
+
+    def jet_zero():
+        return [pair_zero() for _ in range(order)]
+
+    def jet_add(left, right):
+        return [pair_add(left[i], right[i]) for i in range(order)]
+
+    def jet_scale(numer, denom, source):
+        return [pair_scale(numer, denom, source[i]) for i in range(order)]
+
+    def jet_mul(left, right):
+        out = jet_zero()
+        for i in range(order):
+            for j in range(order - i):
+                out[i + j] = pair_add(out[i + j], pair_mul(left[i], right[j]))
+        return out
+
+    def jet_exp(log):
+        step = jet_zero()
+        step[0] = (eye, zero)
+        out = jet_zero()
+        out[0] = (eye, zero)
+        for k in range(1, order):
+            step = jet_scale(1, k, jet_mul(step, log))
+            out = jet_add(out, step)
+        return out
+
+    def jet_inv(series):
+        higher = list(series)
+        higher[0] = (zero, series[0][1])
+        acc = jet_zero()
+        acc[0] = (eye, zero)
+        power = jet_zero()
+        power[0] = (eye, zero)
+        sign = -1
+        for _ in range(order - 1):
+            power = jet_mul(power, higher)
+            acc = jet_add(acc, jet_scale(sign, 1, power))
+            sign = -sign
+        return acc
+
+    def pack(vec):
+        out = []
+        for role in range(4):
+            matrix = sp.zeros(4)
+            for j in range(6):
+                matrix += vec[6 * role + j] * GEN[j]
+            out.append(to_mat(matrix))
+        return out
+
+    generators = [to_mat(gen) for gen in GEN]
+    base = [to_mat(sp.zeros(4)), to_mat(sp.zeros(4)), to_mat(Ms[2]), to_mat(Ms[3])]
+    rm, rz = pack(r_minus), pack(r_zero)
+    cm, cz = pack(c_minus), pack(c_zero)
+    c7 = pack(c_seven) if c_seven is not None else None
+    rows = {}
+    for face in PAIRS:
+        uu, vv = [i for i in range(4) if i not in face]
+        area = wedge_vec(basis_cols[uu], basis_cols[vv])
+        row = area.T * G2 * STAR
+        rows[face] = tuple(Fraction(int(sp.Rational(row[0, j]).p), int(sp.Rational(row[0, j]).q)) for j in range(6))
+
+    def slope_scalar(matrix, row):
+        den, nums = matrix
+        total = Fraction(0)
+        for index, (a, b) in enumerate(PAIRS):
+            total += row[index] * Fraction(nums[a * 4 + b] * eta_sign[b], den)
+        return total
+
+    columns = []
+    for direction in range(24):
+        role, gen = divmod(direction, 6)
+        series = {}
+        for k in range(4):
+            eta = 1 if k % 2 == 0 else -1
+            for role_r in range(4):
+                log = jet_zero()
+                log[1] = (mat_scale(dress[k], 1, base[role_r]), zero)
+                log[2] = (mat_add(mat_scale(eta, 1, rm[role_r]), rz[role_r]), zero)
+                log[6] = (mat_add(mat_scale(eta, 1, cm[role_r]), cz[role_r]), zero)
+                if c7 is not None and weight[k] != 0:
+                    log[7] = (mat_scale(weight[k], 1, c7[role_r]), zero)
+                if role_r == role and weight[k] != 0:
+                    log[0] = (zero, mat_scale(weight[k], 1, generators[gen]))
+                series[(role_r, k)] = jet_exp(log)
+        slopes = [Fraction(0) for _ in range(order)]
+        for k in range(4):
+            ks = (k + 1) % 4
+            for face in PAIRS:
+                hol = series[(face[0], k)]
+                hol = jet_mul(hol, series[(face[1], ks)])
+                hol = jet_mul(hol, jet_inv(series[(face[0], ks)]))
+                hol = jet_mul(hol, jet_inv(series[(face[1], k)]))
+                hinv = jet_inv(hol)
+                row = rows[face]
+                sgn = complement_orientation(face)
+                for deg in range(order):
+                    odd_slope = mat_add(hol[deg][1], mat_scale(-1, 1, hinv[deg][1]))
+                    slopes[deg] += Fraction(64 * sgn, 2) * slope_scalar(odd_slope, row)
+        columns.append(slopes)
+        print("DEGREE7", label, direction, [str(item) for item in slopes], flush=True)
+    return columns
+
+
+def _as_fraction(value):
+    from fractions import Fraction
+    if isinstance(value, Fraction):
+        return value
+    rational = sp.Rational(value)
+    return Fraction(int(rational.p), int(rational.q))
+
+
+def _assert_degree7(name, control, resonant, orthogonal_cols, ortho_sign):
+    resonant7 = [0, 0, 0, -128, -128, 0, 0, -128, -128, 0, 0, 0, 0, 128, 0, 128, 0, 0, 0, 0, 128, 0, 128, 0]
+    ortho3 = [0, 32, 32, 0, 0, 0, 0, 0, 0, 32, 32, 0, 0, -32, 0, -32, 0, 0, 0, 0, -32, 0, -32, 0]
+    ortho5 = [
+        0, sp.Rational(16, 3), sp.Rational(16, 3), 8, 8, 0,
+        0, 8, 8, sp.Rational(16, 3), sp.Rational(16, 3), 0,
+        0, sp.Rational(8, 3), 0, sp.Rational(8, 3), 0, 0,
+        0, 0, sp.Rational(8, 3), 0, sp.Rational(8, 3), 0,
+    ]
+    ortho7 = [
+        sp.Rational(-4, 3), sp.Rational(44, 15), sp.Rational(44, 15), 4, 4, 0,
+        sp.Rational(4, 3), sp.Rational(-4, 3), sp.Rational(-4, 3), sp.Rational(-12, 5), sp.Rational(-12, 5), 0,
+        0, sp.Rational(-74, 15), sp.Rational(14, 3), sp.Rational(-74, 15), sp.Rational(14, 3), 0,
+        0, sp.Rational(14, 3), sp.Rational(-74, 15), sp.Rational(14, 3), sp.Rational(-74, 15), 0,
+    ]
+    for direction in range(24):
+        if any(control[direction][deg] != 0 for deg in range(7)):
+            raise AssertionError("%s control below degree 7" % name)
+        if control[direction][7] != resonant7[direction]:
+            raise AssertionError("%s control degree 7" % name)
+        if any(resonant[direction][deg] != 0 for deg in range(7)):
+            raise AssertionError("%s resonant below degree 7" % name)
+        if resonant[direction][7] != resonant7[direction]:
+            raise AssertionError("%s resonant degree 7" % name)
+        for deg, expected in ((3, ortho3), (5, ortho5), (7, ortho7)):
+            got = orthogonal_cols[direction][deg]
+            want = ortho_sign * _as_fraction(expected[direction])
+            if got != want:
+                raise AssertionError("%s orthogonal degree %d" % (name, deg))
+        for deg in (0, 1, 2, 4, 6):
+            if orthogonal_cols[direction][deg] != 0:
+                raise AssertionError("%s orthogonal degree %d" % (name, deg))
+    print("PASS_DEGREE7_VECTORS", name, flush=True)
+
+
+def _degree7_only():
+    quarter = sp.Rational(1, 4)
+    cos_corr = [
+        0, sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
+        0, sp.Rational(-1, 96), sp.Rational(-1, 96), sp.Rational(1, 96), sp.Rational(1, 96), 0,
+        sp.Rational(1, 192), 0, 0, 0, 0, sp.Rational(1, 64),
+        sp.Rational(1, 192), 0, 0, 0, 0, sp.Rational(-1, 64),
+    ]
+    cos_c = sp.zeros(24, 1)
+    for index, value in enumerate(cos_corr):
+        cos_c[index] = value
+    zero = sp.zeros(24, 1)
+    zero[0] = quarter
+    zero[6] = quarter
+    orthogonal = {
+        "COS": [0, 1, 0, -1],
+        "SIN": [1, 0, -1, 0],
+    }
+    blank = sp.zeros(24, 1)
+    for name, dress, minus_sign in (
+        ("COS", [1, 0, -1, 0], 1),
+        ("SIN", [0, 1, 0, -1], -1),
+    ):
+        minus = sp.zeros(24, 1)
+        minus[0] = minus_sign * quarter
+        minus[6] = minus_sign * quarter
+        control = _degree7_channel(dress, minus, zero, blank, blank, dress, "%s_CONTROL" % name)
+        for column in control:
+            if any(column[deg] != 0 for deg in (2, 3, 4, 5)):
+                raise AssertionError("%s control orders 2-5 are not zero" % name)
+        print("PASS_DEGREE7_CONTROL", name, flush=True)
+        c_minus = cos_c if name == "COS" else -cos_c
+        resonant = _degree7_channel(
+            dress, minus, zero, c_minus, cos_c, dress, "%s_RESONANT" % name
+        )
+        sign = 1 if name == "COS" else -1
+        orthogonal_cols = _degree7_channel(
+            dress, minus, zero, c_minus, cos_c, orthogonal[name], "%s_ORTHOGONAL" % name
+        )
+        _assert_degree7(name, control, resonant, orthogonal_cols, sign)
+
+
+if os.environ.get("D0_ONLY_DEGREE7") == "1":
+    _degree7_only()
+    raise SystemExit(0)
+
+
 _MINUS_H = _minus_hessian()
 check("MINUS_HESSIAN_RANK_24", _MINUS_H.rank() == 24)
 check("MINUS_HESSIAN_SYMMETRIC", _MINUS_H == _MINUS_H.T)
@@ -1105,11 +1391,17 @@ for _name, _dress, _sign in (
         "REAL_%s_DEGREE6_METRIC_VANISHES" % _name,
         all(comp == 0 for comp in _eq6),
     )
+    _blank = sp.zeros(24, 1)
+    _ortho = [0, 1, 0, -1] if _name == "COS" else [1, 0, -1, 0]
+    _ctl7 = _degree7_channel(_dress, _rm, _rz, _blank, _blank, _dress, "%s_CONTROL" % _name)
+    _res7 = _degree7_channel(_dress, _rm, _rz, _c6m, _c6z, _dress, "%s_RESONANT" % _name)
+    _ort7 = _degree7_channel(_dress, _rm, _rz, _c6m, _c6z, _ortho, "%s_ORTHOGONAL" % _name)
+    _assert_degree7(_name, _ctl7, _res7, _ort7, 1 if _name == "COS" else -1)
 
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
 print("CONJUGATE_EQ_IS_CONJUGATE", True)
-print("REAL_RAY_EVEN_CHANNELS_AND_METRIC_FLAT_THROUGH_DEGREE", 6)
-print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-7-ODD-EULER-MISSING")
-print("MISSING: degree-7 odd resonant connection Euler of the corrected real rays")
+print("REAL_RAY_RESONANT_DEGREE7", [-128, 128])
+print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-ORTHOGONAL-DEGREE-3-EULER-NONZERO")
+print("MISSING: solve the degree-3 orthogonal odd forcing before reading degree 7 as final")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")

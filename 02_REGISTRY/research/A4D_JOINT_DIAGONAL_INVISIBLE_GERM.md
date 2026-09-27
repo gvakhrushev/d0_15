@@ -11,10 +11,14 @@
 
 ```text
 BLOCKED
-J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-7-ODD-EULER-MISSING
+J2-DIAGONAL-INVISIBLE-REAL-RAY-ORTHOGONAL-DEGREE-3-EULER-NONZERO
 ```
 
-The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). The real cosine and sine dressings of that ray, after the solved zero-mode and character-\((-1)\) corrections, are curved at degree 1. Their scalar, connection Euler, and metric Euler vanish through degree 5. The degree-6 even channels are now solved as well: both Hessians remain rank 24, the corrections satisfy the even Hessian equation \(Hc+F=0\), and substituting them into the metric series gives a zero degree-6 metric Euler. The next missing coefficient is the degree-7 odd resonant connection Euler of those corrected rays. Neither isolation nor a finite curved germ is claimed.
+The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). On the real cosine and sine dressings the resonant weight, the same weight as the ray, has connection Euler zero through degree 6 after the even corrections. At degree 7 that resonant Euler is the same nonzero vector for both rays,
+\[
+(0,0,0,-128,-128,0,\ 0,-128,-128,0,0,0,\ 0,128,0,128,0,0,\ 0,0,128,0,128,0).
+\]
+The degree-6 even correction does not change it. A degree-7 insertion of the resonant weight along coordinate 3 does not change it either. The orthogonal odd weight is already nonzero at degree 3, before that degree-7 term can be read as the first failure. Neither isolation nor a finite curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -145,7 +149,13 @@ and the zero-mode forcing is its negative. Both cosine corrections equal
 &(1/192,0,0,0,0,-1/64).
 \end{aligned}
 \]
-The sine character-\((-1)\) forcing equals the sine zero-mode forcing, and both equal the negative of the cosine character-\((-1)\) forcing. The sine character-\((-1)\) correction is the negative of the vector above; the sine zero-mode correction equals that vector. After these corrections the degree-6 metric Euler is zero on all ten Gram components. The degree-7 odd resonant connection Euler of this corrected jet is not computed.
+The sine character-\((-1)\) forcing equals the sine zero-mode forcing, and both equal the negative of the cosine character-\((-1)\) forcing. The sine character-\((-1)\) correction is the negative of the vector above; the sine zero-mode correction equals that vector. After these corrections the degree-6 metric Euler is zero on all ten Gram components.
+
+On the resonant weight the connection Euler stays zero through degree 6, with or without the degree-6 correction, and at degree 7 both rays carry the vector displayed in §0. On the orthogonal weight the cosine Euler is nonzero at degrees 3, 5 and 7; the sine Euler is the negative of the cosine Euler at each of those degrees. The degree-3 orthogonal components are
+\[
+(0,32,32,0,0,0,\ 0,0,0,32,32,0,\ 0,-32,0,-32,0,0,\ 0,0,-32,0,-32,0).
+\]
+The degree-5 resonant vanishing does not see this weight. The next identity is the degree-3 orthogonal correction.
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 
