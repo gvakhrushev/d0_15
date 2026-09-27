@@ -70,7 +70,7 @@ Start from the required merged/stacked dependency. Open Draft before substantive
 
 ## Blocker
 
-The complex quarter-wave and its conjugate are cut by the corrected degree-4 metric Euler. The real cosine and sine dressings of \(u=(0,0,1,1)\) are curved at degree 1 and jointly stationary through degree 6 in the even channels: the degree-6 zero-mode and character-\((-1)\) forcings are solved by the rank-24 Hessians, and the degree-6 metric Euler vanishes. The resonant degree-7 connection Euler is the same nonzero vector on both rays and is unchanged by the degree-6 even correction. The orthogonal odd weight is already nonzero at degree 3, so that correction is the next identity.
+The complex quarter-wave and its conjugate are cut by the corrected degree-4 metric Euler. The real cosine and sine dressings of \(u=(0,0,1,1)\) are curved at degree 1 and jointly stationary through degree 6 in the even channels: the degree-6 zero-mode and character-\((-1)\) forcings are solved by the rank-24 Hessians, and the degree-6 metric Euler vanishes. The resonant degree-7 connection Euler is the same nonzero vector on both rays and is unchanged by the degree-6 even correction. The orthogonal odd weight is already nonzero at degree 3. That forcing lies outside the image of every degree-3 link correction: the Fourier blocks have ranks 0, 0, 16, and 0, and the joint rank 16 does not contain it.
 
 PR #264, terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL`, closes the affine bypass: the flat coframe image is not joint-Hessian-null on the singular L4 orbits, so it cannot delete those regular variables.
 

@@ -11,14 +11,14 @@
 
 ```text
 BLOCKED
-J2-DIAGONAL-INVISIBLE-REAL-RAY-ORTHOGONAL-DEGREE-3-EULER-NONZERO
+J2-DIAGONAL-INVISIBLE-ORTHOGONAL-DEGREE-3-EULER-OUTSIDE-LINK-IMAGE
 ```
 
 The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). On the real cosine and sine dressings the resonant weight, the same weight as the ray, has connection Euler zero through degree 6 after the even corrections. At degree 7 that resonant Euler is the same nonzero vector for both rays,
 \[
 (0,0,0,-128,-128,0,\ 0,-128,-128,0,0,0,\ 0,128,0,128,0,0,\ 0,0,128,0,128,0).
 \]
-The degree-6 even correction does not change it. A degree-7 insertion of the resonant weight along coordinate 3 does not change it either. The orthogonal odd weight is already nonzero at degree 3, before that degree-7 term can be read as the first failure. Neither isolation nor a finite curved germ is claimed.
+The degree-6 even correction does not change it. The orthogonal odd weight is already nonzero at degree 3, before that degree-7 term. For the cosine the degree-3 orthogonal connection Euler is \((0,32,32,0,0,0,\ 0,0,0,32,32,0,\ 0,-32,0,-32,0,0,\ 0,0,-32,0,-32,0)\), and the sine vector is its negative. The four Fourier weights on the four phases span every phase-dependent link correction. Their degree-3 responses on this probe have ranks \(0,0,16,0\) for the zero mode, character \((-1)\), the resonant weight, and the orthogonal weight. The joint rank is 16, and the forcing lies outside that image on both rays. No degree-3 link correction cancels it, and a higher-order correction does not enter degree 3. Neither isolation nor a finite curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -155,7 +155,7 @@ On the resonant weight the connection Euler stays zero through degree 6, with or
 \[
 (0,32,32,0,0,0,\ 0,0,0,32,32,0,\ 0,-32,0,-32,0,0,\ 0,0,-32,0,-32,0).
 \]
-The degree-5 resonant vanishing does not see this weight. The next identity is the degree-3 orthogonal correction.
+The degree-5 resonant vanishing does not see this weight. The degree-3 orthogonal Euler is the first failure, and it lies outside the image of every degree-3 link correction.
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 

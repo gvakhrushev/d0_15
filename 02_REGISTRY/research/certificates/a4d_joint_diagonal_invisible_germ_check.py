@@ -695,7 +695,10 @@ def _forcing_and_corrected(amps, zeta_power=1):
     return forcing, correction, metric
 
 
-def _degree7_channel(dress, r_minus, r_zero, c_minus, c_zero, weight, label, c_seven=None):
+def _degree7_channel(
+    dress, r_minus, r_zero, c_minus, c_zero, weight, label,
+    c_seven=None, c_three=None, max_degree=7, correction_weight=None,
+):
     """Degree-7 connection Euler along one odd weight, after the even corrections.
 
     The jet is truncated at total degree 7 and at the first power of the
@@ -704,7 +707,7 @@ def _degree7_channel(dress, r_minus, r_zero, c_minus, c_zero, weight, label, c_s
     import math
     from fractions import Fraction
 
-    order = 8
+    order = max_degree + 1
     eta_sign = (1, -1, -1, -1)
 
     def reduce_mat(den, nums):
@@ -840,6 +843,7 @@ def _degree7_channel(dress, r_minus, r_zero, c_minus, c_zero, weight, label, c_s
     rm, rz = pack(r_minus), pack(r_zero)
     cm, cz = pack(c_minus), pack(c_zero)
     c7 = pack(c_seven) if c_seven is not None else None
+    c3 = pack(c_three) if c_three is not None else None
     rows = {}
     for face in PAIRS:
         uu, vv = [i for i in range(4) if i not in face]
@@ -862,10 +866,16 @@ def _degree7_channel(dress, r_minus, r_zero, c_minus, c_zero, weight, label, c_s
             eta = 1 if k % 2 == 0 else -1
             for role_r in range(4):
                 log = jet_zero()
-                log[1] = (mat_scale(dress[k], 1, base[role_r]), zero)
-                log[2] = (mat_add(mat_scale(eta, 1, rm[role_r]), rz[role_r]), zero)
-                log[6] = (mat_add(mat_scale(eta, 1, cm[role_r]), cz[role_r]), zero)
-                if c7 is not None and weight[k] != 0:
+                if order > 1:
+                    log[1] = (mat_scale(dress[k], 1, base[role_r]), zero)
+                if order > 2:
+                    log[2] = (mat_add(mat_scale(eta, 1, rm[role_r]), rz[role_r]), zero)
+                if order > 6:
+                    log[6] = (mat_add(mat_scale(eta, 1, cm[role_r]), cz[role_r]), zero)
+                carried = weight if correction_weight is None else correction_weight
+                if c3 is not None and carried[k] != 0 and order > 3:
+                    log[3] = (mat_scale(carried[k], 1, c3[role_r]), zero)
+                if c7 is not None and weight[k] != 0 and order > 7:
                     log[7] = (mat_scale(weight[k], 1, c7[role_r]), zero)
                 if role_r == role and weight[k] != 0:
                     log[0] = (zero, mat_scale(weight[k], 1, generators[gen]))
@@ -885,7 +895,8 @@ def _degree7_channel(dress, r_minus, r_zero, c_minus, c_zero, weight, label, c_s
                     odd_slope = mat_add(hol[deg][1], mat_scale(-1, 1, hinv[deg][1]))
                     slopes[deg] += Fraction(64 * sgn, 2) * slope_scalar(odd_slope, row)
         columns.append(slopes)
-        print("DEGREE7", label, direction, [str(item) for item in slopes], flush=True)
+        if label is not None:
+            print("DEGREE7", label, direction, [str(item) for item in slopes], flush=True)
     return columns
 
 
@@ -930,6 +941,50 @@ def _assert_degree7(name, control, resonant, orthogonal_cols, ortho_sign):
             if orthogonal_cols[direction][deg] != 0:
                 raise AssertionError("%s orthogonal degree %d" % (name, deg))
     print("PASS_DEGREE7_VECTORS", name, flush=True)
+
+
+def _degree3_fourier_ranks(dress, minus, zero_corr, c6, probe_weight):
+    """Rank of degree-3 Fourier corrections against one odd Euler."""
+    weights = {
+        "zero": [1, 1, 1, 1],
+        "minus": [1, -1, 1, -1],
+        "resonant": list(dress),
+        "orthogonal": list(probe_weight),
+    }
+    base_cols = _degree7_channel(
+        dress, minus, zero_corr, c6, c6, probe_weight, None, max_degree=3,
+    )
+    base = [base_cols[i][3] for i in range(24)]
+    blocks = []
+    ranks = {}
+    for name, carried in weights.items():
+        matrix = sp.zeros(24)
+        for column in range(24):
+            probe = sp.zeros(24, 1)
+            probe[column] = 1
+            cols = _degree7_channel(
+                dress, minus, zero_corr, c6, c6, probe_weight, None,
+                c_three=probe, max_degree=3, correction_weight=carried,
+            )
+            for row in range(24):
+                delta = cols[row][3] - base[row]
+                matrix[row, column] = sp.Integer(delta.numerator) / delta.denominator
+        ranks[name] = matrix.rank()
+        blocks.append(matrix)
+        print("DEGREE3_RANK", ranks[name], name, flush=True)
+    joint = sp.Matrix.hstack(*blocks)
+    forcing = sp.Matrix([
+        sp.Integer(value.numerator) / value.denominator for value in base
+    ])
+    joint_rank = joint.rank()
+    augmented = joint.row_join(forcing).rank()
+    print("DEGREE3_JOINT", joint_rank, augmented, flush=True)
+    if ranks != {"zero": 0, "minus": 0, "resonant": 16, "orthogonal": 0}:
+        raise AssertionError("degree-3 Fourier ranks %s" % ranks)
+    if joint_rank != 16 or augmented != 17:
+        raise AssertionError("degree-3 joint image %s %s" % (joint_rank, augmented))
+    print("PASS_DEGREE3_ORTHOGONAL_NOT_IN_IMAGE", flush=True)
+    return ranks, joint_rank, augmented
 
 
 def _degree7_only():
@@ -1397,11 +1452,12 @@ for _name, _dress, _sign in (
     _res7 = _degree7_channel(_dress, _rm, _rz, _c6m, _c6z, _dress, "%s_RESONANT" % _name)
     _ort7 = _degree7_channel(_dress, _rm, _rz, _c6m, _c6z, _ortho, "%s_ORTHOGONAL" % _name)
     _assert_degree7(_name, _ctl7, _res7, _ort7, 1 if _name == "COS" else -1)
+    _degree3_fourier_ranks(_dress, _rm, _rz, _c6m, _ortho)
 
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
 print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
 print("CONJUGATE_EQ_IS_CONJUGATE", True)
 print("REAL_RAY_RESONANT_DEGREE7", [-128, 128])
-print("BLOCKED: J2-DIAGONAL-INVISIBLE-REAL-RAY-ORTHOGONAL-DEGREE-3-EULER-NONZERO")
-print("MISSING: solve the degree-3 orthogonal odd forcing before reading degree 7 as final")
+print("BLOCKED: J2-DIAGONAL-INVISIBLE-ORTHOGONAL-DEGREE-3-EULER-OUTSIDE-LINK-IMAGE")
+print("MISSING: none at degree 3; the orthogonal Euler is outside the link-correction image")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")
