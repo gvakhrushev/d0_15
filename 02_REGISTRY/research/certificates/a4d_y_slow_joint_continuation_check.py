@@ -484,9 +484,132 @@ print("N0_SLOW_CROSS_FREDHOLM_RANK", fredholm_rank)
 print("N0_SLOW_CROSS_SURVIVING_DIM_REAL", surviving_n0_dim)
 print("N0_SLOW_CROSS_PROJECTED_MATRIX", projected_cross.tolist())
 
-if fredholm_rank == 8:
-    print("TERMINAL: J2-Y-SLOW-N0-CROSS-TERM-KILLS-JOINT-INVISIBLE-SEAM")
-elif fredholm_rank > 0:
-    print("PARTIAL: J2-Y-SLOW-N0-CROSS-TERM-PARTIAL-FREDHOLM-OBSTRUCTION")
-else:
-    print("PARTIAL: J2-Y-SLOW-N0-CROSS-TERM-IN-RANGE")
+check("N0_CONNECTION_CROSS_ALL_IN_RANGE", fredholm_rank == 0, str(fredholm_rank))
+
+
+def _slow_n0_metric_euler(column, site, qa, qb):
+    direction = sp.zeros(4)
+    direction[qa, qb] = 1
+    direction[qb, qa] = 1
+    variation = direction * SETA / 2
+    total = sp.Integer(0)
+    for a, b in owner.PAIRS:
+        places = [
+            (site, a, False),
+            (shift(site, a), b, False),
+            (shift(site, b), a, True),
+            (site, b, True),
+        ]
+        factors = []
+        for loc, rel, inverted in places:
+            link = _n0_link(column, loc, rel)
+            factors.append(_s_lorentz_inverse(link) if inverted else link)
+        plaquette = factors[0] * factors[1] * factors[2] * factors[3]
+        curvature = (plaquette - _s_lorentz_inverse(plaquette)) / 2
+        u, v = [j for j in range(4) if j not in (a, b)]
+        dw = (
+            _s_wedge(variation[u, :].T, slow_solder_1[:, v])
+            + _s_wedge(slow_solder_1[:, u], variation[v, :].T)
+        )
+        total += owner.orientation(a, b) * (
+            dw.T * SG2 * SSTAR * _s_bivector(curvature)
+        )[0]
+    return sp.together(total)
+
+
+metric_cross_h3 = sp.zeros(40, 8)
+for column in range(8):
+    no_h2_metric = True
+    for p in range(4):
+        site = (p, 0, 0, 0)
+        for qi, (qa, qb) in enumerate(owner.SYM):
+            value = _slow_n0_metric_euler(column, site, qa, qb)
+            linear = sp.diff(value, aa).subs(aa, 0)
+            series = sp.series(sp.together(linear), h, 0, 4).removeO()
+            expanded = sp.expand(series)
+            no_h2_metric &= sp.simplify(expanded.coeff(h, 2)) == 0
+            metric_cross_h3[10 * p + qi, column] = sp.factor(
+                expanded.coeff(h, 3)
+            )
+    check("N0_METRIC_CROSS_COL_%d_NO_H2" % column, no_h2_metric)
+    print("N0_METRIC_CROSS_PROGRESS", column, flush=True)
+
+M2sp = sp.Matrix(M2.tolist())
+joint_stack = sp.Matrix.vstack(L2sp, M2sp)
+joint_cross = sp.Matrix.vstack(cross_h3, metric_cross_h3)
+rank_joint_stack = joint_stack.to_DM().rank()
+rank_joint_aug = joint_stack.row_join(joint_cross).to_DM().rank()
+joint_obstruction_rank = rank_joint_aug - rank_joint_stack
+joint_surviving_dim = 8 - joint_obstruction_rank
+
+check("N0_JOINT_STACK_RANK_88", rank_joint_stack == 88, str(rank_joint_stack))
+check(
+    "N0_SLOW_JOINT_CROSS_OBSTRUCTION_RANK_5",
+    joint_obstruction_rank == 5,
+    str(joint_obstruction_rank),
+)
+check(
+    "N0_SLOW_JOINT_CROSS_SURVIVING_DIM_3",
+    joint_surviving_dim == 3,
+    str(joint_surviving_dim),
+)
+
+# Column order:
+#   lambda1 COS, lambda1 SIN, lambda3 COS, lambda3 SIN,
+#   lambda4 COS, lambda4 SIN, lambda6 COS, lambda6 SIN.
+survivors = sp.zeros(8, 3)
+survivors[0, 0] = 1
+survivors[2, 1] = 1
+survivors[6, 1] = -1
+survivors[4, 2] = 1
+survivors[6, 2] = 1
+check("N0_SLOW_SURVIVOR_BASIS_RANK_3", survivors.rank() == 3)
+
+survivor_forcing = joint_cross * survivors
+check(
+    "N0_SLOW_SURVIVORS_IN_JOINT_IMAGE",
+    joint_stack.row_join(survivor_forcing).to_DM().rank() == 88,
+)
+
+selected_cos = sp.zeros(8, 1)
+selected_cos[4] = 1
+selected_cos[6] = 1
+selected_sin = sp.zeros(8, 1)
+selected_sin[5] = 1
+selected_sin[7] = 1
+check(
+    "N0_SELECTED_COS_SURVIVES_SLOW_JOINT_CROSS",
+    joint_stack.row_join(joint_cross * selected_cos).to_DM().rank() == 88,
+)
+check(
+    "N0_SELECTED_SIN_OBSTRUCTED_AT_SLOW_JOINT_CROSS",
+    joint_stack.row_join(joint_cross * selected_sin).to_DM().rank() == 89,
+)
+
+# Publish one canonical exact correction for all three surviving amplitudes.
+# The operator is doubled, hence the right-hand side is -2 times the direct
+# h^3 cross forcing.
+survivor_solution, survivor_parameters = joint_stack.gauss_jordan_solve(
+    -2 * survivor_forcing
+)
+survivor_solution = survivor_solution.subs(
+    {parameter: 0 for parameter in survivor_parameters.free_symbols}
+)
+check(
+    "N0_SLOW_SURVIVOR_CANONICAL_CORRECTION_EXACT",
+    joint_stack * survivor_solution + 2 * survivor_forcing
+    == sp.zeros(136, 3),
+)
+
+print("N0_SLOW_JOINT_CROSS_OBSTRUCTION_RANK", joint_obstruction_rank)
+print("N0_SLOW_JOINT_CROSS_SURVIVING_DIM_REAL", joint_surviving_dim)
+print(
+    "N0_SLOW_SURVIVOR_BASIS",
+    [
+        "lambda1_COS",
+        "lambda3_COS-lambda6_COS",
+        "lambda4_COS+lambda6_COS",
+    ],
+)
+print("N0_SELECTED_RAY: COS survives; SIN is obstructed at the joint h^3 cross gate.")
+print("PARTIAL: J2-Y-SLOW-N0-JOINT-CROSS-REDUCES-8-TO-3")
