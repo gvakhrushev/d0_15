@@ -2172,3 +2172,73 @@ components of the translations, mixtures of modes, and finite amplitudes
 away from this degenerate seed remain open. In particular this is still
 not the broad finite-carrier terminal. Task `IN_PROGRESS`, PR Draft; L=3
 remains unopened.
+
+
+### 9.24 One e2/e3 component on role 0 or role 1
+
+`a4d_resolved_curved_stationary_e2_role01_transverse_axis_check.py`
+adds one translation coordinate to the §9.23 family, in the same occupied
+mode 1100. The coordinate is `b0·e2`, `b0·e3`, `b1·e2`, or `b1·e3`.
+Role 1's affine column is the negative of role 0's on all 16 rows, so
+each role-1 axis repeats the corresponding role-0 axis with `sigma` flipped.
+No new Fourier mode, no new channel, and no new solder modulus are
+introduced. This section does not classify `e1` on roles 1, 2 or 3, nor
+`e2`/`e3` on roles 2 and 3, nor `b1·e0`.
+
+The owned polarization is recomputed for the five leading normal-link
+generators. On indices `(2,3,6,7)`, every channel has zero pure square and
+zero symmetric coupling to the collinear slots `b0·e0`, `b2·e0`, `b3·e0`,
+identically in `(rho,u,t)`. The order-two channel form has the same zero
+symmetric coupling, so the positive collinear observer norm still forces
+the two observer coefficients to be opposite. Affine order-four columns
+on these four indices vanish on rows 10, 11, 14 and 15. Section 9.23
+reads `r=-1` from the sum of rows 10 and 15, `z=-4` from row 10 at
+`r=-1`, and `q(u-2)=rho/512` from row 11 at that point. Those three
+inputs are unchanged, and the reduced critical solder comes with them.
+A direct collinear row-sum control reproduces
+`-128*rho*(r+1)/(r^2+1)` before the new component is added. Role 0's `e1`
+component, index 1, moves at least one of the five link responses. That
+is a boundary check for one index, not a classification of every `e1`
+component.
+
+Write `den=5*t^2-78*t+8` and
+`N1=8*rho*t^2-132*rho*t+104*rho-t^2-54*t-16`.
+On the surviving reduction, rows 1 and 2 of the `e2` extension are cleared
+for every tangent by
+
+```text
+sigma=-2*N1/(3*(t-2)*(t-1)),
+```
+
+together with an explicit rational `p(rho,t)` recorded in the certificate.
+Row 3 does not see this component, so it remains the §9.23 numerator
+`N3=5*t^2-6*rho*t-96*t+12*rho+44`. The `e2` chart is the locus `N3=0`,
+outside `t=2`, `t=1`, `den=0` and `N1=0`.
+
+The `e3` extension is rational in one modulus. Rows 1, 2 and 3 of the
+actual jet vanish at
+
+```text
+t=1-5*rho,
+sigma=4*(200*rho^3+555*rho^2+260*rho-71)/(125*rho^2+430*rho-47),
+```
+
+with `p` the explicit degree-five rational in the certificate. The
+numerator of `sigma` is the §9.23 polynomial `Q`, so `sigma=0` is exactly
+the already excluded collinear point. `Q` and the denominator are coprime.
+The identity is the zero rational function on the chart `rho!=0`,
+`rho!=-1/5`, `den!=0`, and both denominator factors nonzero.
+
+Rows outside `{1,2,3,10,11,14,15}` are not evaluated in this
+certificate. An order-1 shift of `K1` is not a column of the §9.23
+second-amplitude quotient `Ka`, so no span in that quotient is claimed.
+Whether `Ka` cancels those rows is untested. Link order three is untested.
+
+**Exact scoped opening:** on this four-index extension, the §9.23 link
+reduction survives and rows 1–3 have the explicit charts above. No finite
+nondegenerate curved stationary witness is claimed, no L=3 control is
+opened, and the task stays `IN_PROGRESS`. The next gate on this chart is
+the joint affine order-four system on the rows outside
+`{1,2,3,10,11,14,15}`, using the actual second-amplitude quotient `Ka`
+rather than an order-1 generator shift. Directions not listed above stay
+unclassified by this section.
