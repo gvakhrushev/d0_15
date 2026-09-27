@@ -2291,7 +2291,61 @@ rows 0 and 8 at their inhomogeneous values. Those two numerators have no
 common zero on the chart. The `e3` extension has no affine order-4
 solution in this quadratic calculus.
 
-The `e2` formulas of §9.24 are not re-used as an owned solution. This
-no-go does not cover `e2`, `e1`, role-2/3 transverse components,
-`b1·e0`, other modes, or finite off-seed points. No stationary witness
-and no L=3 result are claimed. Task stays `IN_PROGRESS`.
+This no-go does not cover the `e2` axis, `e1`, role-2/3 transverse
+components, `b1·e0`, other modes, or finite off-seed points. No
+stationary witness and no L=3 result are claimed.
+
+
+### 9.26 The owned e2 component dies on N3
+
+`a4d_resolved_curved_stationary_e2_role01_e2_owned_affine4_check.py`
+uses the same owned `resp` as §9.25, now on slots `b0·e2` and `b1·e2`.
+The weighted `b1·e2` column is the negative of `b0·e2`. No new Fourier
+mode and no new channel are added. The §9.24 expressions for `p` and
+`sigma` are checked here rather than imported as a solution of a second
+jet.
+
+The transverse column of row 3 is identically zero. Rows 1 and 2 are
+cleared by
+
+```text
+N1=8*rho*t^2-132*rho*t+104*rho-t^2-54*t-16,
+sigma=-2*N1/(3*(t-2)*(t-1)),
+```
+
+with the same rational `p` recorded in the certificate. Row 3 remains
+`-64*rho*N3/den`, where
+
+```text
+den=5*t^2-78*t+8,
+N3=5*t^2-6*rho*t-96*t+12*rho+44.
+```
+
+At that `(p,sigma)` the linear map `(Cp+sigma*Ct)*Ka` is the zero 16×4
+matrix, so the four `Ka` coordinates do not move row 3, row 0, or row 8.
+Clearing row 3 on the finite-q chart therefore requires `N3=0`.
+
+After the chart units `t-2`, `den`, `N1` and `rho` are removed, the
+resultants in `rho` of the row-0 and row-8 numerators against `N3` have
+gcd 1. The locus `N3=0` does not make those two rows vanish together.
+`N3` at `t=2` is `-128`. At `t=1` the transverse row 1 vanishes, and
+`N3(1)=0` forces `rho=47/6`, where the source row 1 is still nonzero.
+The resultant of `N1` and `N3` shares no root with the collinear factor
+`t+5*rho-1`, whose own resultant against `N3` is the §9.23 polynomial
+`155*rho^2+436*rho-47`. On that seam `sigma` cannot clear row 1 unless
+it is zero, and `sigma=0` then leaves row 2 nonzero. Also
+`N3-den=6*(rho+3)*(2-t)`, so `rho=-3` makes the row-3 denominator the
+same zero as `N3` and forces `u=2`, outside the finite-q chart.
+
+The square of the last `Ka` direction does not meet the `e2` slot, and
+its nonzero raw entries are equal on the two observer channels. It does
+not restore row 0. Squares of the other three `Ka` directions, their
+crosses on the `e2` slot, and the particular-amplitude self-energy on
+`N3=0` are not remeasured here.
+
+**Exact scoped no-go:** in the amplitude-linear `Ka` calculus, with this
+one quadratic piece included, the role-0/1 `e2` extension has no affine
+order-4 solution on the finite-q chart. `e1`, role-2/3 transverse
+components, `b1·e0`, other modes, and finite off-seed points stay
+unclassified. No stationary witness and no L=3 result. Task stays
+`IN_PROGRESS`.
