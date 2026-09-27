@@ -243,6 +243,184 @@ check(
     C.subs({x: 0 for x in d}) == sp.zeros(24, 10),
 )
 
+# ---------------------------------------------------------------------------
+# IR Schur-Einstein weld.
+#
+# Rebuild the zero-character connection Hessian A0 from the same star action.
+# With z=1+t k, d=z^-1-1=-t k+O(t^2), so the leading eliminated metric
+# Hessian is K_schur = -C(k)^T A0^-1 C(k).  Compare it directly with the
+# already-owned E_eta symbol convention used by #201.
+# ---------------------------------------------------------------------------
+
+avars = sp.symbols("aa0:24")
+cvars = sp.symbols("cc0:24")
+Aconn = []
+Cconn = []
+for r in range(4):
+    XA = sp.zeros(4)
+    XC = sp.zeros(4)
+    for j, g in enumerate(LORENTZ):
+        XA += avars[6 * r + j] * g
+        XC += cvars[6 * r + j] * g
+    Aconn.append(XA)
+    Cconn.append(XC)
+
+
+def mul_jet4(X, Y):
+    return (
+        X[0] * Y[0],
+        X[0] * Y[1] + X[1] * Y[0],
+        X[0] * Y[2] + X[2] * Y[0],
+        X[0] * Y[3] + X[1] * Y[2] + X[2] * Y[1] + X[3] * Y[0],
+    )
+
+
+def exp_link4(A0, B0, inverse=False):
+    sign = -1 if inverse else 1
+    LA = sign * A0
+    LB = sign * B0
+    mixed = sp.Rational(1, 2) * (A0 * B0 + B0 * A0)
+    return (sp.eye(4), LA, LB, mixed)
+
+
+def curvature_mixed(P):
+    return sp.simplify(
+        P[3] - sp.Rational(1, 2) * (P[1] * P[2] + P[2] * P[1])
+    )
+
+
+connection_bilinear0 = sp.Integer(0)
+for r, s in PAIRS:
+    Pj = (sp.eye(4), sp.zeros(4), sp.zeros(4), sp.zeros(4))
+    Pj = mul_jet4(Pj, exp_link4(Aconn[r], Cconn[r]))
+    Pj = mul_jet4(Pj, exp_link4(Aconn[s], Cconn[s]))
+    Pj = mul_jet4(Pj, exp_link4(Aconn[r], Cconn[r], inverse=True))
+    Pj = mul_jet4(Pj, exp_link4(Aconn[s], Cconn[s], inverse=True))
+    Cm = curvature_mixed(Pj)
+    u, v = [i for i in range(4) if i not in (r, s)]
+    B0 = wedge_vec(basis[u], basis[v])
+    connection_bilinear0 += complement_orientation((r, s)) * (
+        B0.T * G2 * STAR * bivector_of_tangent(Cm)
+    )[0]
+
+A0 = sp.Matrix([
+    [
+        sp.diff(
+            sp.diff(sp.expand(connection_bilinear0), avars[i]),
+            cvars[j],
+        )
+        for j in range(24)
+    ]
+    for i in range(24)
+])
+check("IR_CONNECTION_HESSIAN_DET_256", sp.factor(A0.det()) == 256)
+A0_INV = A0.inv()
+
+K_SCHUR = sp.simplify(-C.T * A0_INV * C)
+
+# Exact E_eta quadratic symbol in the #201 convention.
+qvars = sp.symbols("q0:10")
+Q = sp.zeros(4)
+for j, (a, b) in enumerate(SYM):
+    Q[a, b] = qvars[j]
+    Q[b, a] = qvars[j]
+
+kv = sp.Matrix(d)
+kup = ETA * kv
+ksq = (kv.T * ETA * kv)[0]
+trq = sum(ETA[a, a] * Q[a, a] for a in range(4))
+vq = sp.Matrix([
+    sum(kup[c] * Q[c, b] for c in range(4))
+    for b in range(4)
+])
+qq = sum(
+    kup[c] * kup[e] * Q[c, e]
+    for c in range(4)
+    for e in range(4)
+)
+
+EETA = sp.zeros(4)
+for a in range(4):
+    for b in range(4):
+        EETA[a, b] = sp.expand(
+            ksq * Q[a, b]
+            - d[a] * vq[b]
+            - d[b] * vq[a]
+            + d[a] * d[b] * trq
+            + ETA[a, b] * qq
+            - ETA[a, b] * ksq * trq
+        )
+EETA_UP = ETA * EETA * ETA
+S_EETA = sp.Rational(1, 2) * sum(
+    Q[a, b] * EETA_UP[a, b]
+    for a in range(4)
+    for b in range(4)
+)
+K_EETA = sp.hessian(sp.expand(S_EETA), qvars)
+
+check(
+    "IR_SCHUR_EQUALS_ONE_QUARTER_E_ETA",
+    sp.simplify(K_SCHUR - sp.Rational(1, 4) * K_EETA) == sp.zeros(10),
+)
+
+# Leading forward-coframe / vector-diffeomorphism lift from #264.
+# q1 is O(t), x2 is O(t^2) along z=1+t k.
+def lorentz_coeffs_expr(X):
+    return sp.Matrix([
+        X[0, 1], X[0, 2], X[0, 3],
+        X[1, 2], X[1, 3], X[2, 3],
+    ])
+
+
+GQ1 = sp.zeros(10, 4)
+GX2 = sp.zeros(24, 4)
+for col in range(4):
+    xi = sp.eye(4)[:, col]
+    Hraw1 = sp.Matrix(d) * xi.T
+    q1 = sp.expand(Hraw1 * ETA + ETA * Hraw1.T)
+    Hsec1 = sp.expand(sp.Rational(1, 2) * q1 * ETA)
+    Delta1 = sp.expand(Hraw1 - Hsec1)
+    lam1 = sp.expand(Delta1.T)
+
+    for j, (a, b) in enumerate(SYM):
+        GQ1[j, col] = q1[a, b]
+
+    for r in range(4):
+        Xr2 = sp.expand(d[r] * lam1)
+        coeff = lorentz_coeffs_expr(Xr2)
+        for j in range(6):
+            GX2[6 * r + j, col] = coeff[j]
+
+# d(z)= -t k + O(t^2), hence C1=-C(k).
+check(
+    "IR_COFRAME_CONNECTION_ORDER2_CANCELS",
+    sp.simplify(-C * GQ1 + A0 * GX2) == sp.zeros(24, 4),
+)
+check(
+    "IR_COFRAME_METRIC_ORDER3_CANCELS",
+    sp.simplify(-C.T * GX2) == sp.zeros(10, 4),
+)
+check(
+    "IR_COFRAME_X2_IS_SCHUR_LIFT",
+    sp.simplify(GX2 - A0_INV * C * GQ1) == sp.zeros(24, 4),
+)
+check(
+    "IR_EINSTEIN_SYMBOL_KILLS_VECTOR_COFRAME_IMAGE",
+    sp.simplify(K_SCHUR * GQ1) == sp.zeros(10, 4),
+)
+
+for tag, kval, rank in (
+    ("TIMELIKE", (1, 0, 0, 0), 6),
+    ("SPACELIKE", (0, 1, 0, 0), 6),
+    ("NULL", (1, 1, 0, 0), 4),
+    ("GENERIC", (1, 2, 3, 4), 6),
+):
+    subk = {d[j]: kval[j] for j in range(4)}
+    check(
+        "IR_SCHUR_RANK_" + tag,
+        K_SCHUR.subs(subk).rank() == rank,
+    )
+
 # Character form and exact transport identity.
 z = sp.symbols("z0:4", nonzero=True)
 subz = {d[j]: 1 / z[j] - 1 for j in range(4)}
@@ -348,6 +526,14 @@ print(
     "null line exactly on owned orbits 0 and 4"
 )
 print(
-    "SCOPE: exact polarized metric-response symbol; no full "
-    "diffeomorphism gauge or nonlinear Einstein claim"
+    "IR_WELD: -C(k)^T A0^-1 C(k) = (1/4) K_E_eta exactly; "
+    "with owned E_eta=-2G this is the designated -1/2 G seed"
+)
+print(
+    "IR_GAUGE: the four leading forward-coframe metric directions are "
+    "killed by K_SCHUR after their canonical O(h^2) connection lift"
+)
+print(
+    "SCOPE: exact polarized metric-response symbol plus leading IR Schur weld; "
+    "no finite full diffeomorphism gauge or nonlinear Einstein claim"
 )
