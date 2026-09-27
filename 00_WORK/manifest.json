@@ -68,6 +68,17 @@
       ],
       "exit_condition": "Compute and certify the nonlinear joint E_K/E_Q germs on the two one-dimensional source-invisible L=4 residual orbit classes, proving local isolation or producing an exact curved joint-vacuum germ for each.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
+    },
+    {
+      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-SLOW-BACKGROUND-RESPONSE",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "IN_PROGRESS",
+      "affected_claims": [
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001"
+      ],
+      "exit_condition": "Certify the leading order of the naked-star metric partial of the period-4 diagonal Y-microstructure on a slow Gram background, against the smooth identity connection.",
+      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-SLOW-BACKGROUND-RESPONSE.md"
     }
   ]
 }

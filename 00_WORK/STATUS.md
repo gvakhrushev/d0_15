@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 1 | 0 | 0 | 0 | 1 | 0 / 3 |
-| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
-| **Total** | **4** | **0** | **0** | **1** | **5** | **1 / 10** |
+| WORKER | 3 | 1 | 0 | 0 | 4 | 1 / 5 |
+| **Total** | **4** | **1** | **0** | **1** | **6** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -20,6 +20,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
+| WRK-A4D-DIAGONAL-MICROSTRUCTURE-SLOW-BACKGROUND-RESPONSE | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001 |
 
 ## Registry Health & Metrics
 
