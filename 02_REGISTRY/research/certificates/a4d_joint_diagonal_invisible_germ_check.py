@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# D0_CI_TIMEOUT_SECONDS=900
 """Diagonal quarter-wave source-invisible joint germ.
 
 Consumes the orbit-4 N_0 basis certified by
