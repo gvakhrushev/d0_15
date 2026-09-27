@@ -200,27 +200,37 @@ for chart, specs in MINOR_COVERS.items():
             "got %s expected %s" % (got, expected),
         )
 
-# No-common-zero proofs for the explicit covers.
-# chart 0: d3^7=0 => d3=0, but (d3^2-1)^2 != 0.
-check("CHART_0_MINOR_COVER_POINTWISE", True)
-
-# chart 1: first minor zero => d3^2=-1, hence d3 !=0.
-# third zero then forces d2=0; the second becomes d3^6/256 !=0.
-check("CHART_1_MINOR_COVER_POINTWISE", True)
-
-# chart 2: first zero => d3^2=-1, hence d3 !=0.
-# second zero then forces d1=0; the third becomes d3^6/256 !=0.
-check("CHART_2_MINOR_COVER_POINTWISE", True)
-
-# chart 3: first zero => d2^2=-1, hence d2 !=0.
-# second zero then forces d1=0; the third becomes d2^3/256 !=0.
-check("CHART_3_MINOR_COVER_POINTWISE", True)
+# Exact no-common-zero proof for each explicit minor cover.
+# A unit Groebner basis means the selected 9x9 minors generate the unit ideal
+# on the normalized affine chart, hence they cannot vanish simultaneously.
+CHART_VARS = {
+    0: (d[1], d[2], d[3]),
+    1: (d[0], d[2], d[3]),
+    2: (d[0], d[1], d[3]),
+    3: (d[0], d[1], d[2]),
+}
+for chart, specs in MINOR_COVERS.items():
+    polys = [sp.together(expected) for _rows, _cols, expected in specs]
+    gb = sp.groebner(polys, *CHART_VARS[chart], order="grevlex")
+    unit = len(gb.polys) == 1 and sp.expand(gb.polys[0].as_expr()) in (1, -1)
+    check("CHART_%d_MINOR_COVER_UNIT_IDEAL" % chart, unit, str(gb))
 
 # Together the four normalized charts cover every projective class d != 0.
-# Since q=dd^T is nonzero there and lies in ker C, rank <=9; the minor covers
-# force rank >=9. Therefore rank=9 and ker C is exactly the q-line pointwise.
-check("PROJECTIVE_COVER_PROVES_RANK9_EVERYWHERE", True)
-check("PROJECTIVE_COVER_PROVES_KERNEL_DD_EVERYWHERE", True)
+# C is homogeneous linear in d, so normalization by a nonzero coordinate
+# preserves rank. Since q=dd^T is nonzero there and Cq=0, rank <=9; the unit
+# minor covers force rank >=9. Therefore rank=9 and ker C is exactly q-line
+# pointwise, with no exceptional nonzero stratum.
+check(
+    "PROJECTIVE_COVER_PROVES_RANK9_EVERYWHERE",
+    all(
+        len(sp.groebner(
+            [sp.together(e) for _r, _c, e in MINOR_COVERS[ch]],
+            *CHART_VARS[ch],
+            order="grevlex",
+        ).polys) == 1
+        for ch in range(4)
+    ),
+)
 
 check(
     "TRIVIAL_CHARACTER_C_ZERO",
