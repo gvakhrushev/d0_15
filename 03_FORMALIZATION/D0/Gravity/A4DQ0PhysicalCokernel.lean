@@ -18,7 +18,27 @@ namespace D0.Gravity.A4DQ0PhysicalCokernel
 open BigOperators Matrix
 open Complex
 
+noncomputable section
+
 def qi (a b : ℚ) : ℂ := (a : ℂ) + (b : ℂ) * Complex.I
+
+@[simp] theorem qi_add (a b c d : ℚ) :
+    qi a b + qi c d = qi (a + c) (b + d) := by
+  apply Complex.ext <;> norm_num [qi] <;> ring
+
+@[simp] theorem qi_mul (a b c d : ℚ) :
+    qi a b * qi c d = qi (a * c - b * d) (a * d + b * c) := by
+  apply Complex.ext <;> norm_num [qi] <;> ring
+
+@[simp] theorem qi_conj (a b : ℚ) :
+    Complex.conj (qi a b) = qi a (-b) := by
+  apply Complex.ext <;> norm_num [qi]
+
+@[simp] theorem qi_zero : qi 0 0 = 0 := by
+  apply Complex.ext <;> norm_num [qi]
+
+@[simp] theorem qi_one : qi 1 0 = 1 := by
+  apply Complex.ext <;> norm_num [qi]
 
 def p5 (i : Fin 24) (j : Fin 34) : ℂ :=
   match i.val, j.val with
@@ -1516,18 +1536,18 @@ def crossSol7_2 (i : Fin 34) : ℂ :=
   | 23 => qi (1) (-1)
   | _ => 0
 
-private macro "qfin" : tactic =>
+macro "qfin" : tactic =>
   `(tactic|
     (first
       | (ext i j <;> fin_cases i <;> fin_cases j <;>
-          simp [Matrix.mul_apply, dotProduct, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring)
+          simp [Matrix.mul_apply, dotProduct, Fin.sum_univ_succ] <;> norm_num)
       | (ext i <;> fin_cases i <;>
-          simp [Matrix.mulVec, dotProduct, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring)))
+          simp [Matrix.mulVec, dotProduct, Fin.sum_univ_succ] <;> norm_num)))
 
-def block5 : Matrix (Fin 23) (Fin 23) ℂ := p5.submatrix rows5 cols5
-def block7 : Matrix (Fin 23) (Fin 23) ℂ := p7.submatrix rows7 cols7
-def selectedRows5 : Matrix (Fin 23) (Fin 34) ℂ := p5.submatrix rows5 id
-def selectedRows7 : Matrix (Fin 23) (Fin 34) ℂ := p7.submatrix rows7 id
+def block5 : Matrix (Fin 23) (Fin 23) ℂ := Matrix.submatrix p5 rows5 cols5
+def block7 : Matrix (Fin 23) (Fin 23) ℂ := Matrix.submatrix p7 rows7 cols7
+def selectedRows5 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p5 rows5 id
+def selectedRows7 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p7 rows7 id
 
 theorem block5_mul_inv : block5 * binv5 = 1 := by qfin
 theorem inv_mul_block5 : binv5 * block5 = 1 := by qfin
@@ -1553,7 +1573,7 @@ lemma rank_submatrix_le
     {m n a b : Type*} [Fintype m] [Fintype n] [Fintype a] [Fintype b]
     [DecidableEq m] [DecidableEq n] [DecidableEq a] [DecidableEq b]
     (M : Matrix m n ℂ) (rows : a → m) (cols : b → n) :
-    (M.submatrix rows cols).rank ≤ M.rank := by
+    Matrix.rank (Matrix.submatrix M rows cols) ≤ Matrix.rank M := by
   let R : Matrix a m ℂ := fun i j => if j = rows i then 1 else 0
   let C : Matrix n b ℂ := fun i j => if i = cols j then 1 else 0
   have h : M.submatrix rows cols = R * M * C := by
@@ -1562,31 +1582,31 @@ lemma rank_submatrix_le
   rw [h]
   exact (Matrix.rank_mul_le_left _ _).trans (Matrix.rank_mul_le_right _ _)
 
-theorem orbit5_rank : p5.rank = 23 := by
-  have hlower : 23 ≤ p5.rank := by
+theorem orbit5_rank : Matrix.rank p5 = 23 := by
+  have hlower : 23 ≤ Matrix.rank p5 := by
     have hsub := rank_submatrix_le p5 rows5 cols5
-    have hb : block5.rank = 23 := by
+    have hb : Matrix.rank block5 = 23 := by
       simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block5 block5Unit.isUnit
     simpa [block5, hb] using hsub
-  have hupper : p5.rank ≤ 23 := by
+  have hupper : Matrix.rank p5 ≤ 23 := by
     rw [← reconstruct_rows5]
     exact (Matrix.rank_mul_le_right _ _).trans (by
       simpa using Matrix.rank_le_card_height selectedRows5)
   exact le_antisymm hupper hlower
 
-theorem orbit7_rank : p7.rank = 23 := by
-  have hlower : 23 ≤ p7.rank := by
+theorem orbit7_rank : Matrix.rank p7 = 23 := by
+  have hlower : 23 ≤ Matrix.rank p7 := by
     have hsub := rank_submatrix_le p7 rows7 cols7
-    have hb : block7.rank = 23 := by
+    have hb : Matrix.rank block7 = 23 := by
       simpa [Fintype.card_fin] using Matrix.rank_of_isUnit block7 block7Unit.isUnit
     simpa [block7, hb] using hsub
-  have hupper : p7.rank ≤ 23 := by
+  have hupper : Matrix.rank p7 ≤ 23 := by
     rw [← reconstruct_rows7]
     exact (Matrix.rank_mul_le_right _ _).trans (by
       simpa using Matrix.rank_le_card_height selectedRows7)
   exact le_antisymm hupper hlower
 
-def leftPair (ell v : Fin 24 → ℂ) : ℂ := ∑ i, conj (ell i) * v i
+def leftPair (ell v : Fin 24 → ℂ) : ℂ := ∑ i, Complex.conj (ell i) * v i
 
 theorem ell5_annihilates_cols (j : Fin 34) :
     leftPair ell5 (fun i => p5 i j) = 0 := by
@@ -1616,14 +1636,14 @@ lemma leftPair_mulVec_zero
     leftPair ell (P.mulVec x) = 0 := by
   simp only [leftPair, Matrix.mulVec, dotProduct]
   calc
-    (∑ i, conj (ell i) * ∑ j, P i j * x j) =
-        ∑ i, ∑ j, conj (ell i) * (P i j * x j) := by
+    (∑ i, Complex.conj (ell i) * ∑ j, P i j * x j) =
+        ∑ i, ∑ j, Complex.conj (ell i) * (P i j * x j) := by
           apply Finset.sum_congr rfl
           intro i hi
           rw [Finset.mul_sum]
-    _ = ∑ j, ∑ i, conj (ell i) * (P i j * x j) := by
+    _ = ∑ j, ∑ i, Complex.conj (ell i) * (P i j * x j) := by
           rw [Finset.sum_comm]
-    _ = ∑ j, (∑ i, conj (ell i) * P i j) * x j := by
+    _ = ∑ j, (∑ i, Complex.conj (ell i) * P i j) * x j := by
           apply Finset.sum_congr rfl
           intro j hj
           rw [Finset.sum_mul]
@@ -1633,7 +1653,7 @@ lemma leftPair_mulVec_zero
     _ = 0 := by
           apply Finset.sum_eq_zero
           intro j hj
-          rw [show (∑ i, conj (ell i) * P i j) = 0 by simpa [leftPair] using hcol j]
+          rw [show (∑ i, Complex.conj (ell i) * P i j) = 0 by simpa [leftPair] using hcol j]
           simp
 
 theorem orbit5_cross_2_in : inImage p5 cross5_2 := by
@@ -1712,7 +1732,7 @@ theorem orbit7_same_3_in : inImage p7 same7_3 := by
 def norm2 (v : Fin 24 → ℂ) : ℂ := leftPair v v
 
 def residual2 (ell w : Fin 24 → ℂ) : ℂ :=
-  conj (leftPair ell w) * leftPair ell w / norm2 ell
+  Complex.conj (leftPair ell w) * leftPair ell w / norm2 ell
 
 theorem orbit5_ell_norm2 : norm2 ell5 = 10 := by
   norm_num [norm2, leftPair, ell5, qi, Fin.sum_univ_succ, Complex.ext_iff] <;> ring
@@ -1751,7 +1771,7 @@ theorem orbit7_unit_q0_residuals :
 /-- The two merged physical carriers have one-dimensional left cokernel:
 rank 23 in a 24-dimensional output carrier, witnessed by the explicit nonzero
 left annihilator above. -/
-theorem orbit5_cokernel_codim_one : 24 - p5.rank = 1 := by simp [orbit5_rank]
-theorem orbit7_cokernel_codim_one : 24 - p7.rank = 1 := by simp [orbit7_rank]
+theorem orbit5_cokernel_codim_one : 24 - Matrix.rank p5 = 1 := by simp [orbit5_rank]
+theorem orbit7_cokernel_codim_one : 24 - Matrix.rank p7 = 1 := by simp [orbit7_rank]
 
 end D0.Gravity.A4DQ0PhysicalCokernel
