@@ -47,8 +47,12 @@ C(z)\operatorname{vec}_{\rm sym}\!\bigl(d d^T\bigr)=0.
 }
 \]
 
-Moreover \(\operatorname{rank}C(z)=9\) for every \(d\neq0\). At the trivial
-character \(z=(1,1,1,1)\), \(d=0\) and \(C=0\).
+Moreover \(\operatorname{rank}C(z)=9\) for every \(d\neq0\). This is
+pointwise, not merely generic: the certificate covers projective \(d\)-space
+by the four charts \(d_j=1\) and, on each chart, verifies explicit
+\(9\times9\) minors whose ideal is the unit ideal. Hence there is no
+exceptional nonzero rank-drop stratum. At the trivial character
+\(z=(1,1,1,1)\), \(d=0\) and \(C=0\).
 
 Thus the physical conjugate-paired metric-only plane of #262 is the
 realification of one complex line. Its owner is the character-dependent
