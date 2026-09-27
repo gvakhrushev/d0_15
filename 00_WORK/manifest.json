@@ -25,6 +25,15 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
+      "id": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
+      "class": "CONTROL",
+      "parent": "ROOT",
+      "state": "REVIEW",
+      "affected_claims": [],
+      "exit_condition": "Integrate the final v16 channel-dynamics synthesis with status-safe book patches, launch the two bounded channel workers, and leave the remnant section-map EXPENSIVE task launch-ready without promoting bridge/passport material.",
+      "brief": "00_WORK/tasks/CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION.md"
+    },
+    {
       "id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -48,15 +57,27 @@
       "brief": "00_WORK/tasks/EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE.md"
     },
     {
-      "id": "WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL",
+      "id": "EXP-D0-V16-SEAM-PURIFICATION-SECTION-MAP",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-METRO-002"
+      ],
+      "exit_condition": "Construct a typed D0 seam/clock to remnant mass/lifetime section sufficient for a non-tautological external comparison, or prove that unaugmented D0 lacks the required section without a new primitive/scale.",
+      "brief": "00_WORK/tasks/EXP-D0-V16-SEAM-PURIFICATION-SECTION-MAP.md"
+    },
+    {
+      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "state": "PLANNED",
       "affected_claims": [
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Certify the exact joint linear kernel census on all owned L=4 singular orbit types, including explicit bases for every source-invisible connection subspace and the source-visible status of the #227 tangent.",
-      "brief": "00_WORK/tasks/WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL.md"
+      "exit_condition": "For the merged #241 slow background and #232 period-4 microstructure, either construct an exact finite-order connection correction that restores E_K=0 through the first response-relevant orders and certify the corrected leading metric-response coefficient, or prove an exact solvability obstruction showing that no such local connection-stationary lift exists in the declared chart.",
+      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT.md"
     },
     {
       "id": "WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM",
@@ -81,16 +102,37 @@
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
     },
     {
-      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT",
+      "id": "WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
       "state": "PLANNED",
       "affected_claims": [
-        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "For the merged #241 slow background and #232 period-4 microstructure, either construct an exact finite-order connection correction that restores E_K=0 through the first response-relevant orders and certify the corrected leading metric-response coefficient, or prove an exact solvability obstruction showing that no such local connection-stationary lift exists in the declared chart.",
-      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT.md"
+      "exit_condition": "Certify the exact joint linear kernel census on all owned L=4 singular orbit types, including explicit bases for every source-invisible connection subspace and the source-visible status of the #227 tangent.",
+      "brief": "00_WORK/tasks/WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL.md"
+    },
+    {
+      "id": "WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN",
+      "class": "WORKER",
+      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-THERMO-001"
+      ],
+      "exit_condition": "Construct an exact moving-split/windowed history with nontrivial channel sign, history-swap covariance and rank-artifact controls, or prove a precisely scoped finite no-go.",
+      "brief": "00_WORK/tasks/WRK-D0-V16-MOVING-SPLIT-CHANNEL-SIGN.md"
+    },
+    {
+      "id": "WRK-D0-V16-ONE-TICK-BALANCE-TWO-SPLIT-OWNER",
+      "class": "WORKER",
+      "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-THERMO-001"
+      ],
+      "exit_condition": "Own the fixed-split one-tick Hilbert-Schmidt balance and finite channel budget with exact hostile controls and a formal owner where feasible.",
+      "brief": "00_WORK/tasks/WRK-D0-V16-ONE-TICK-BALANCE-TWO-SPLIT-OWNER.md"
     }
   ]
 }
