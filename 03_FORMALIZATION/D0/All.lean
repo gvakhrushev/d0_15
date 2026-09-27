@@ -301,6 +301,7 @@ import D0.Geometry.A4DLocatedFrameCompatibilityBoundary
 import D0.Geometry.A4DLocatedMatterCellEnergy
 import D0.Geometry.A4DLocatedPrimalDualCell
 import D0.Geometry.A4DLocatedTopologicalStar
+import D0.Geometry.A4DMetricNullHessianComplex
 import D0.Geometry.A4DMetricStarSignatureBoundary
 import D0.Geometry.A4DMetricStressInterface
 import D0.Geometry.A4DMovingDifferentialSecondJet

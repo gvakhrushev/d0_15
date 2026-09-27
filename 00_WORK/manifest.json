@@ -70,17 +70,6 @@
       "brief": "00_WORK/tasks/WRK-A4D-Y-SLOW-JOINT-CONTINUATION.md"
     },
     {
-      "id": "WRK-A4D-METRIC-NULL-COMPLEX-LEAN",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Formalize the #270 metric-null complex in Lean: C(d) vec_sym(dd^T)=0, rank 9 and kernel span(vec_sym(dd^T)) for every nonzero complex d using all four explicit chart covers, and the 10-dimensional origin fiber statement.",
-      "brief": "00_WORK/tasks/WRK-A4D-METRIC-NULL-COMPLEX-LEAN.md"
-    },
-    {
       "id": "WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
