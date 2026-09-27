@@ -697,7 +697,7 @@ Scope is narrow and stated: finite \(L=4\) grid, unipotent solder slice,
 rational \(a\). This does not restore global (NF), since the \(a=1\) carrier
 still refutes the algebraic identity, and it does not classify all solders.
 
-### 8.11 L=8 grid on the two defect solders
+### 8.12 L=8 grid on the two defect solders
 
 The same two solders were screened at all \(8^4=4096\) characters. Bracket
 forms are reduced in \(\mathbb F_{17}\) with the L=8 specialization
