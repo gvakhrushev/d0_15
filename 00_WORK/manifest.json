@@ -60,7 +60,7 @@
       "id": "EXP-D0-V16-SEAM-PURIFICATION-SECTION-MAP",
       "class": "EXPENSIVE",
       "parent": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-METRO-002"
       ],
