@@ -20,7 +20,7 @@ Quadratic slots at the shear witness, from one symbol
 on \(z=(-1,1,-1,1)\) the moving germ is \(q_0=4E_{00}+4E_{02}+4E_{22}\) and has no \(q_{11}\) entry.
 \(\Phi=\tfrac12 u^2 v^*H(Q)v\) has \(\partial_u\Phi=0\) for every \(u\), while
 \(\partial_{q_{11}}\Phi=-u^2\). The germ direction itself has witness stress 0.
-Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. The one-step period-4 envelope is settled in the same direction. The shear character generates only the two-element sign group \(\{1,z\}\). Replacing any one sign by \(\pm i\) gives eight characters outside that group; each has joint rank 24 at the upper shear. Pure shear powers do not source them, and they are not free moduli, so they do not cancel the resonant projection \(-432\). An envelope whose momentum is a root of unity of order greater than 4 remains open. The quadratic stress \(-u^2\) is not attained on the period-2 critical set.
+Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. The one-step period-4 envelope is settled in the same direction. The shear character generates only the two-element sign group \(\{1,z\}\). Replacing any one sign by \(\pm i\) gives eight characters outside that group; each has joint rank 24 at the upper shear. Pure shear powers do not source them, and they are not free moduli, so they do not cancel the resonant projection \(-432\). The same is true of every root of unity outside the sign group: the bare jet and the corrected order-\(u^5\) jet are functions of \((-1)^{x_0+x_2}\) only, so their Fourier support is exactly \(\{1,(-1,1,-1,1)\}\) (§8.20). A slow amplitude \(u(hx)\) is not this ansatz and remains open. The quadratic stress \(-u^2\) is not attained on the period-2 critical set.
 
 ## 0. Typed target and source contract
 
@@ -992,6 +992,26 @@ response moment is \((-1,1,-1,1)\) at \(a=\pm 1\), both with moment
 family and one finite grid. It does not restore (NF) on the whole torus and
 it does not produce a joint-critical sequence.
 
+### 8.20 The period-2 jet has no outside root-of-unity envelope
+
+The bare link and the corrected link through order \(u^5\) depend on the site
+only through \(\sigma(x)=(-1)^{x_0+x_2}\). On the sixteen-point cell their
+Fourier support is exactly the identity and the shear character
+\((-1,1,-1,1)\). Role 1 of the bare jet is spatially constant; every role of
+the corrected jet carries \(\sigma\).
+
+Extend the same field to \((\mathbb Z/L\mathbb Z)^4\) with \(L\) even by
+\(f(x)=g(x\bmod 2)\). The sum against a character factors into geometric sums,
+one per axis. An axis sum vanishes unless that exponent is a multiple of
+\(L/2\), that is, unless the character component is \(\pm 1\). This is checked
+for \(L\in\{6,8,10,12,16\}\). A root of unity that is not a sign character
+therefore has coefficient zero at every order of this jet. It cannot cancel
+the resonant projection \(-432\).
+
+A slow amplitude \(u(hx)\) changes the spatial dependence and is not covered.
+The certificate is `a4d_joint_response_shear_envelope_support_check.py`. This
+is not a smooth-background response NOGO.
+
 ### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
@@ -1040,6 +1060,7 @@ The following routes have been decided:
 | Joint corank locus through either defect | Isolated point. Tangent line blocked at second order (§8.16) |
 | Rational \(a\) on \(S(a)=I+a(E_{01}+E_{12})\), whole L=4 grid | Nonzero moment only at \(a=\pm 1\), character \((-1,1,-1,1)\) (§8.19) |
 | Flat linear Schur complement versus the Einstein symbol | Direct identity \(K_{\mathrm{Schur}}=-\frac12 K_{G^{(1)}}\), only where the connection block is invertible (§8.18) |
+| Root-of-unity envelope of the pure period-2 shear jet | Absent. Fourier support is \(\{1,(-1,1,-1,1)\}\) (§8.20). A slow amplitude \(u(hx)\) remains open |
 | Next order of the #232 \(Y\) carrier on the slow background | Delegated to `WRK-A4D-Y-SLOW-JOINT-CONTINUATION`; not recomputed here |
 | Joint-critical replacement for (NF) on the whole smooth image | MISSING |
 | Strong connection compactness or uniqueness | Not used or requested |
