@@ -3,7 +3,7 @@
 **Task:** `EXP-A4D-Q0-STATIONARY-SHEET-STRESS`  
 **Class:** `EXPENSIVE`  
 **Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
-**Certificate:** `02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py`  
+**Certificates:** `02_REGISTRY/research/certificates/a4d_q0_stationary_sheet_stress_check.py`, `02_REGISTRY/research/certificates/a4d_q0_sheet_order3_obstruction_check.py`  
 **Terminal:** `A4D-Q0-TWO-MODE-OPTICAL-SHEET-JET`
 
 Owners pinned as ancestors of this branch:
@@ -24,7 +24,7 @@ PR #240 is open research at head `8b3c93af328d94f3bf43d27a843d4b767a0c4c95`. Its
 On the flat center, with the source held at vacuum, the real conjugate-pair path of \(q_0=dd^T\) splits by character.
 
 - Mode B, \(z=(-1,1,-1,1)\). The identity connection is an exact joint vacuum for every real amplitude. The metric Euler is identically zero. Both Einstein symbols \(- \tfrac12 G(d)\) and \(- \tfrac12 G(\arg z)\) vanish.
-- Mode A, \(z=(i,i,-i,-i)\). The identity connection kills the order-\(\varepsilon\) connection Euler and fails at order \(\varepsilon^2\). The failure lives at character \((-1,-1,-1,-1)\) and has a unique rational solution. That solution is silent in the metric Euler. Through order \(\varepsilon^2\), with remainder \(O(\varepsilon^3)\), the continued sheet has \(E_Q=0\). This agrees with \(-\tfrac12 G(d)=0\). It disagrees with \(-\tfrac12 G(\arg z)\). The complex amplitude of \(G\) itself is \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\), so
+- Mode A, \(z=(i,i,-i,-i)\). The identity connection kills the order-\(\varepsilon\) connection Euler and fails at order \(\varepsilon^2\). The failure lives at character \((-1,-1,-1,-1)\) and has a unique rational solution. That solution is silent in the metric Euler, so the metric Euler of this jet is \(O(\varepsilon^3)\). Continuing with that solution and with zero order-\(\varepsilon\) link tangent, the order-\(\varepsilon^3\) connection forcing lies outside the rank-\(20\) Hessian at the original character. The branch stops there. This order-\(\varepsilon^2\) metric jet agrees with \(-\tfrac12 G(d)=0\). It disagrees with \(-\tfrac12 G(\arg z)\). The complex amplitude of \(G\) itself is \((\pi^2,-2\pi^2,0,0,\pi^2,0,0,0,0,0)\), so
 \[
 -\tfrac12 G(q_0;\arg z)=(-\pi^2/2,\ \pi^2,\ 0,0,-\pi^2/2,\ 0,0,0,0,0).
 \]
@@ -121,7 +121,9 @@ modulated by \(\chi^2\). Thus \(H p_2\) cancels the order-\(\varepsilon^2\) conn
 
 The metric Euler of this correction is zero in two independent contractions: \(C(-2,-2,-2,-2)^T p_2=0\), and the position-space metric partial of the linearized curvature against the identity legs is the zero 10-vector. Curvature of a link correction of size \(\varepsilon^2\) is \(O(\varepsilon^2)\). A leg correction of size \(\varepsilon\) multiplies it at order \(\varepsilon^3\). The connection self-energy of an \(O(\varepsilon^2)\) link correction starts at order \(\varepsilon^4\) in the curvature. Therefore both Euler equations of the corrected jet are \(O(\varepsilon^3)\).
 
-The order-\(\varepsilon^3\) equation is not solved. No finite-\(\varepsilon\) existence statement is made on mode A. The Lorentzian interval \(|\varepsilon|<1/8\) is only the range in which the Gram path has signature \((1,3)\).
+The selected branch takes that \(p_2\) and no order-\(\varepsilon\) link tangent. On it, the connection Euler vanishes through order \(\varepsilon^2\). The order-\(\varepsilon^3\) piece is zero on characters \(1\) and \(\chi^2\). On \(\chi\) its phase Fourier coefficient is \(4(-2+2i)F_{2,\mathbb R}\), and the \(\chi^3=\bar\chi\) coefficient is the conjugate. The vacuum Hessian at \(z=(i,i,-i,-i)\) has rank \(20\). The augmented matrix with this forcing has rank \(21\), so the forcing is outside the image. A left-kernel vector pairs with it nontrivially. The same selected branch therefore stops at order \(\varepsilon^3\).
+
+The four-dimensional kernel of that Hessian is not explored. A nonzero order-\(\varepsilon\) tangent from it can change the order-\(\varepsilon^3\) forcing, so this is not an obstruction for every connection continuation. No finite-\(\varepsilon\) existence statement is made on mode A. The Lorentzian interval \(|\varepsilon|<1/8\) is only the range in which the Gram path has signature \((1,3)\).
 
 ## 5. Comparison with \(-\tfrac12 G\)
 
@@ -157,7 +159,7 @@ That mismatch is not a joint-critical counterexample. The discrete Euler equatio
 
 ## 7. What remains
 
-Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided real forcing and \(T_2=0\). The order-\(\varepsilon^3\) forcing on that corrected branch, which the harmonic lift assigns back to this execution, is not solved here. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
+Gate (13) of the harmonic lift is solved on mode A: \(p_2\) cancels the collided real forcing and \(T_2=0\). On that selected branch the order-\(\varepsilon^3\) connection forcing lies outside the rank-\(20\) Hessian at the original character, so the branch stops there. Other order-\(\varepsilon\) kernel tangents remain open. Mode B's optical sheet is exact and matches both Einstein symbols; it does not absorb the open shear branch. Neither statement closes the global response question owned by PR #240. The degree-6 gate for the quarter-wave sector is untouched.
 
 ## 8. Validation
 
