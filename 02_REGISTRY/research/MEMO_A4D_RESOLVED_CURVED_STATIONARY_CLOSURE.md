@@ -1431,7 +1431,7 @@ The Newton prediction `t=1/2` remains critical and has determinant
 
 is solder-critical with determinant 1 and nonzero link Euler.
 
-The joint linearization at `(x, theta) = (0, eta)` uses the seven support
+The joint linearization of `S_star` at `(x, theta) = (0, eta)` uses the seven support
 amplitudes and all 16 solder entries. The system is `40 x 23` of rank 19
 and is consistent. One particular solution is the pure scale
 `Y = -eta/2` with every amplitude zero. The homogeneous kernel has
@@ -1488,3 +1488,98 @@ of §§9.5–9.7 therefore survive for the actual four-channel action.
 
 This audit does not solve the affine Euler equations or select coefficients.
 The task remains `IN_PROGRESS`.
+
+### 9.14 All eight supports: the joint linear gate with all four channels
+
+The exact certificate
+`a4d_resolved_curved_stationary_e2_all_supports_joint_channel_check.py`
+keeps the same frozen link and one homogeneous absolute solder. It widens
+translations to arbitrary values on all 64 edges of the L=2 torus. The 24
+link rows are homogeneous Lorentz variations, hence necessary rows of the
+full sitewise Euler system; no sufficiency for that full system is asserted.
+
+Let `n=(1,1,0,0)^T`, `m=(1,-1,0,0)`, and `beta(x,r)=m*b(x,r)`.
+Every base link fixes `m`. The exact affine face translation therefore has
+
+```text
+m*t_rs(x) = beta(x,r) + beta(x+r,s) - beta(x,s) - beta(x+s,r)
+          = curl_rs beta(x).
+```
+
+All determinant first derivatives vanish. Among the twelve normal and
+twelve internal homogeneous directions, the first residual can be nonzero
+only in `N2_2` and `N3_3`. Their eight nonzero ordered-pair products are
+
+```text
+M_second * d adj(M_first) = -8*n*m,
+
+N2_2: first=(r,2), second=(s,3), r,s in {0,1};
+N3_3: first=(r,3), second=(s,2), r,s in {0,1}.
+```
+
+Thus `dR=8*n*active_amplitude*curl_first beta` on these pairs and zero on
+all others. Constant rolewise translations have zero curl, explaining their
+vanishing first residual jet without confusing it with vanishing adjugate.
+For arbitrary site-dependent translations that cancellation does not hold.
+The exact hostile control `b(origin,0)=e0`, all other edges zero, gives
+`dR_{(0,3)|(0,2)}(origin)=8*n` in direction `N2_2`. A direct untruncated
+Cayley calculation independently checks this derivative.
+
+Write `alpha=x(N2_2)`, `gamma=x(N3_3)`, and
+
+```text
+C2 = sum_{x,r=0,1} (curl_{r,2} beta(x))^2,
+C3 = sum_{x,r=0,1} (curl_{r,3} beta(x))^2.
+```
+
+Since `n^T eta n=0` and `n^T h_n n=2` for the selected `h_n=I4`, the
+literal order-two coefficients of the four channels are
+
+```text
+[eps^2] I_eta_adj = [eps^2] I_eta_opp = 0,
+[eps^2] I_n_adj   = [eps^2] I_n_opp
+                 = 128*(alpha^2*C2 + gamma^2*C3).
+```
+
+Consequently the four-channel contribution to the joint linearized Euler
+matrix is supported only on the two matching link rows and amplitude
+columns. Its diagonal entries are
+`lambda2=256*C2*(c_n_adj+c_n_opp)` and
+`lambda3=256*C3*(c_n_adj+c_n_opp)`. Translation and solder rows have zero
+channel contribution at this order because the base residual vanishes for
+every translation and the channels have no solder argument.
+
+The star joint matrix for all twelve normal amplitudes and 16 solder entries
+is `40 x 28` of rank 23. Its five-dimensional kernel has amplitude projection
+of dimension one, exactly the common `K1_0=K1_1` direction. Its particular
+solution is again `x=0, Y=-eta/2`. Crucially, even after deleting both
+channel-active link rows, the resulting rank-22 matrix still forces
+`alpha=gamma=0`. The certificate checks that a symbolic channel shift with
+*independent arbitrary* `lambda2,lambda3` annihilates the entire kernel of
+this row-deleted matrix and the particular solution. Therefore adding the
+four channels cannot change the solution set of this joint linear gate;
+no coefficient division, coefficient grid, or positivity assumption is used.
+
+Restriction to each of the eight owned minimum supports gives:
+
+| Support indices in §9.4 owner order | Joint rank | Kernel dimension | Amplitude projection dimension |
+|---|---|---|---|
+| 0–4 | 18 | 5 | 1 (common `K1_0=K1_1`) |
+| 5–7 | 19 | 4 | 0 |
+
+For every support, deleting the channel-active rows still forces every
+present active amplitude to zero. The symbolic-shift identity consequently
+proves the same channel-independent solution-set statement on all eight.
+Every solution has zero first adjugate and residual variation, including
+arbitrary site-dependent translations. The nonzero residual hostile control
+shows that this conclusion comes from the joint equations, not from a
+structural assertion that all translations are blind.
+
+These are **unit-linear correction** facts at a nonstationary seed. The
+original base-anchored stationary formal germ remains obstructed at order
+zero by `E0 != 0`; `Y=-eta/2` is not an exact stationary solder (§9.12).
+Finite deformations away from this link, with free solder and the actual
+finite affine Euler equations, remain open. None of the eight supports is
+retired as a finite nonlinear support-wide no-go by this calculation. No
+active-residual L=2 witness is obtained, and L=3 remains unopened. The task
+and PR stay `IN_PROGRESS` / Draft.

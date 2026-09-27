@@ -88,6 +88,25 @@ repair this link. This is not a finite no-go for deformations of the seven
 amplitudes away from the link, and it is not an active-residual witness.
 L=3 remains unopened.
 
+## Checkpoint: all eight joint/channel linear gates (2026-09-27)
+
+`a4d_resolved_curved_stationary_e2_all_supports_joint_channel_check.py`
+checks all eight minimum supports with the four owned channels and arbitrary
+L=2 edge translations. The first residual is a null vector times the discrete
+curl of `m*b`; it need not vanish for site-dependent translations. Nevertheless,
+deleting the two channel-active homogeneous link rows still forces
+`N2_2=N3_3=0`. The four-channel Hessian therefore cannot change any of the
+eight joint unit-linear correction solution sets, for arbitrary coefficients.
+Supports 0–4 have rank 18 and one common `K1_0=K1_1` amplitude freedom;
+supports 5–7 have rank 19 and no amplitude freedom.
+
+The affine-jet certificates now use the selected `h_n=I4` of the F4 owner;
+their corrected channel ranks are `(7,3,8,7)` at order four and `(8,4,8,8)`
+on the blind subspace at order six. Residual ranks and common kernels survive.
+These are exact linear/jet gates at a nonstationary seed, not finite
+support-wide no-go terminals. Finite free-solder seven-support equations
+remain open; task `IN_PROGRESS`, PR Draft, no L=3.
+
 ## Forbidden shortcuts
 
 No Holst channel, no phi coefficient, no new unowned invariant, no forcing `R=0`, no 7x7 coefficient grid, no continuum Einstein claim, no treating machine-precision roots as exact.
