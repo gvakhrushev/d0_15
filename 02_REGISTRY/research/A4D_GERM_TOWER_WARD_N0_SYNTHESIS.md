@@ -3,170 +3,171 @@
 **Execution:** CONTROL intake, 2026-09-27  
 **Parent:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** roadmap/control synthesis; no ClaimMap/BOOK promotion  
-**Baseline:** current main after merged #265
+**Baseline:** main after merged #297
 
-## 0. Why this packet exists
+## 0. Carrier separation
 
-Several nearby calculations were being conflated:
+Four nearby objects must stay distinct:
 
-1. the moving Gram-lift null germ `q0(z)=vec_sym(d d^T)`;
-2. the frozen/cross-character forcing that produces the historical residual
-   `8/5`;
-3. the physical conjugate-paired map `[A(z)|C(conj z)]`;
-4. the independent nonlinear connection-amplitude sector
+1. the moving metric-null section `q0(d)=vec_sym(dd^T)`;
+2. the frozen/cross-character source carrying the historical `8/5` residual;
+3. the bare harmonic operator `B_n=C(d(z^n)) q0(d)`;
+4. the nonlinear connection-amplitude sector
    `N0=span{lambda1,lambda3,lambda4,lambda6}`.
 
-Main already owns enough exact structure to separate (1)-(3), while open
-#260 owns (4). The remaining work should therefore be split by carrier, not
-by another rank census.
+There is also a fifth object that caused a naming collision in the supplied
+synthesis: the **full Gram-lift amplitude coefficient** from merged #296.
+It is not equal to the bare harmonic operator `B_n`.
 
-## 1. Repository-owned facts
+## 1. Repository-owned boundaries
 
-The following are already durable on main or on the named live owner and must
-not be re-derived in a new lane.
+### 1.1 Metric-null and physical transport
 
-### 1.1 Metric-null complex
+Merged exact owners give
 
-Merged coefficient owners give
+```text
+C(d) = sum_r d_r K_r
+C(d) q0(d) = 0.
+```
 
-[
-C(d)=sum_{r=0}^3 d_r K_r,qquad
-C(d),operatorname{vec}_{sym}(dd^T)=0.
-]
+Merged #290 owns the physical conjugate-paired map on orbit types 5 and 7.
+Its frozen/cross-character source can have a nonzero cokernel component,
+whereas the actual same-carrier moving-germ source has an explicit image
+witness and zero class.
 
-The rank/kernel owner proves the nonzero-character kernel line. This is a
-moving null section, not a fixed-fibre stress theorem.
+Therefore `8/5` remains a carrier-mismatch/frozen-source diagnostic. It is
+not a moving-germ stress coefficient.
 
-### 1.2 Physical carrier and frozen-source split
+### 1.2 Fixed-link Gram lift
 
-Merged #290 owns the physical conjugate-paired carrier on orbit types 5 and
-7. The cross-character/frozen source has a one-dimensional physical cokernel
-component and the historical rational residuals, while the actual
-same-carrier moving-germ forcing has an explicit image witness and zero
-cokernel class.
+Merged #296 owns the analytic frame-lift coefficient
 
-Therefore `8/5` is not a stress coefficient of the moving germ. It is a
-carrier-mismatch/frozen-source diagnostic.
+```text
+G_n =
+  2 * binom(1/2,n) * sigma^(n-1)
+    * C(d(z^n)) q0(d),
+sigma = d^T eta d.
+```
 
-### 1.3 Fixed-link nonlinear harmonic forcing is a different question
+This extra factor `sigma^(n-1)` is load-bearing. Since `sigma=O(h^2)`,
+the small-h order of `G_n` is different from the order of the bare
+`B_n=C(d(z^n))q0`.
 
-Merged #296 owns the finite Gram-lift second forcing at unchanged links. Its
-nonzero quarter-wave forcing is not in conflict with §1.2: fixed raw links
-and a connection-stationary continuation are different partials. #285 then
-showed that an order-epsilon^2 connection repair can be metric-silent on its
-selected branch.
+This resolves the apparent conflict between the supplied harmonic-collapse
+calculation and the #296 scaling calculation: they were using the same
+symbol `F_n` for two different objects.
 
-### 1.4 N0 even channel is already consumed
+## 2. Bare harmonic tower: algebra to certify
 
-Open #260 records the current carrier-level state: corrected COS/SIN rays
-vanish through degree 5; the degree-6 even connection forcings are solved in
-rank-24 regular Hessian images, and substitution of those corrections gives
-zero metric Euler in all ten Gram slots on the selected line.
-
-The live gate is therefore the **degree-7 odd resonant connection Euler**,
-not another degree-6 census.
-
-## 2. New algebraic intake: harmonic tower collapse
-
-The supplied synthesis proposes the following exact algebraic compression.
 Write `x_r=d_r` and
 
-[
-M_k(x)=sum_r x_r^k K_r,operatorname{vec}_{sym}(xx^T).
-]
+```text
+M_k(x) = sum_r x_r^k K_r q0(x).
+```
 
-Then the metric-null identity gives
+Then `M_1=C(x)q0(x)=0`. Since
 
-[
-M_1=C(x)operatorname{vec}_{sym}(xx^T)=0.
-]
+```text
+d_r(z^n) = (1+x_r)^n - 1,
+```
 
-For the n-th character harmonic,
+the **bare** harmonic operator satisfies
 
-[
-d_r(z^n)=(1+x_r)^n-1,
-]
+```text
+B_n = C(d(z^n)) q0(x)
+    = sum_{k>=2} binom(n,k) M_k.
+```
 
-hence formally
+Hence for every fixed `n>=2` its first possible homogeneous term is
 
-[
-F_n
-=sum_r d_r(z^n)K_roperatorname{vec}_{sym}(xx^T)
-=sum_{kge 2}inom{n}{k}M_k.
-]
+```text
+B_n = binom(n,2) M_2 + O(||x||^5),
+```
 
-Consequently the universal leading homogeneous piece for every `n>=2` is
+and `M_2` has degree four. Thus `B_n=O(h^4)` for `x=O(h)`. The scalar
+leading-weight generating function is
 
-[
-F_n=inom n2 M_2+O(|x|^5),
-]
+```text
+sum_{n>=2} binom(n,2) s^(n-1) = s/(1-s)^3.
+```
 
-so for `x=O(h)` the raw tower starts at `O(h^4)`; after the established
-`h^{-2}` response normalization its leading contribution is `O(h^2)`.
-The scalar leading-weight generating function is
+But the **full #296 coefficient**
 
-[
-sum_{nge2}inom n2 s^{n-1}=rac{s}{(1-s)^3}.
-]
+```text
+G_n = 2 * binom(1/2,n) * sigma^(n-1) * B_n
+```
 
-This compression is elementary once the exact coefficient matrices are
-owned, but **main does not yet contain a dedicated certificate for the whole
-statement**. It is therefore registered below as a bounded worker instead of
-being silently promoted from chat/sandbox arithmetic.
+therefore scales generically as
 
-## 3. What is and is not closed
+```text
+G_n = O(h^(2n+2)).
+```
 
-### Closed for execution planning
+Both statements can be true simultaneously. The worker registered below
+must certify this two-level factorization explicitly and prohibit future
+reuse of one name for both towers.
 
-- Do not re-run the old FUGU rank census.
-- Do not normalize `8/5` again as a candidate germ stress.
-- Do not make #260 prove the Gram-lift harmonic collapse.
-- Do not import #202's Newton component into the N0 odd calculation.
-- Keep #275 on its same-source slow-background response lane and let it
-  prepare all algebra not dependent on the missing odd-7 coefficient.
+## 3. Current N0 gate: latest #260 result
 
-### Still theorem/certificate work
+The earlier execution map saying “degree-7 odd only” is superseded by the
+latest exact #260 head.
 
-The all-harmonic algebraic collapse in §2 needs a repository certificate that
-uses the merged exact `K_r` owner. In addition, any stronger assertion that
-every individual `M_k` is physical-cokernel exact for all `k` must be
-proved from the registered carrier, not inferred from a few sampled powers.
-The existing #290 same-carrier theorem remains the authoritative physical
-transport owner.
+Current exact status on #260:
 
-## 4. Single new worker
+- the corrected **resonant** weight is zero through degree 6;
+- its degree-7 connection Euler is nonzero;
+- however an **orthogonal odd weight is already nonzero at degree 3**
+  (COS and SIN differ by sign);
+- the next required identity is therefore the **degree-3 orthogonal
+  correction**;
+- only after inserting that correction is it meaningful to re-evaluate the
+  downstream degree-5/7 odd terms and classify the final resonant source.
 
-Register:
+So #260 remains the unique nonlinear N0 owner, but its earliest live gate is
+now degree 3, not degree 7.
 
-`WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT`
+## 4. What is closed for execution planning
 
-Its job is deliberately small and independent of #260/#275/#299:
+Do not:
 
-1. reconstruct the exact `K_r` from merged owners;
-2. prove coefficientwise `M_1=0`;
-3. certify the binomial decomposition of `F_n` and the universal `M_2`
-   leading term;
-4. certify the scalar generating function;
-5. test the owned orbit-5/7 physical cokernel pairings for the required
-   low homogeneous pieces and state exactly what general all-`k` conclusion
-   is justified;
-6. include hostile controls distinguishing frozen/cross-character forcing
-   from same-carrier moving transport.
+- re-run the old FUGU rank census;
+- normalize `8/5` again as candidate moving-germ stress;
+- ask #260 to prove the q0 harmonic algebra;
+- import #202's Newton component into N0;
+- compare `B_n=O(h^4)` directly with `G_n=O(h^(2n+2))` without the
+  `sigma^(n-1)` factor.
 
-It must not edit #260's nonlinear germ, #275's slow-background continuation,
-#202, BOOK, ClaimMap, or release statuses.
+Any all-`k` physical-cokernel statement about the homogeneous `M_k` still
+requires an exact owner; it is not inferred from a few sampled powers.
 
-## 5. Fast execution map
+## 5. Registered bounded worker
 
-The work can now run in parallel without collision:
+`WRK-A4D-Q0-GERM-TOWER-COLLAPSE-CERT` owns only the harmonic naming and
+factorization seam:
 
-- **#260:** only degree-7 odd COS/SIN resonant Euler + shared cokernel/rank
-  verdict.
-- **#275:** same-source slow-response pipeline and all substitutions that do
-  not require the missing odd-7 coefficient.
-- **#299:** proof-cost refactor only; no scientific scope expansion.
-- **new worker:** harmonic-tower collapse certificate.
-- **#202:** untruncated stationary witness/no-go on its own component.
+1. exact `M_1=0`;
+2. exact binomial decomposition of `B_n`;
+3. universal `M_2` leading term and generating function;
+4. exact reconciliation with merged #296 by restoring
+   `2 binom(1/2,n) sigma^(n-1)`;
+5. maximal justified orbit-5/7 physical-cokernel statement;
+6. hostile controls separating frozen/cross-character forcing from the
+   moving carrier.
 
-The intended terminal is not a new physical claim. It is a smaller dependency
-graph in which each remaining unknown has exactly one owner.
+It is independent of the nonlinear N0 calculation.
+
+## 6. Parallel execution map
+
+- **#260:** degree-3 orthogonal odd correction first; then propagate that
+  corrected jet to the downstream odd degree-5/7 resonant test.
+- **#275:** build the slow same-source response pipeline in parallel; block
+  only substitutions that genuinely require the corrected #260 odd chain.
+- **#240:** consume #275/#260 terminals; the old “degree-6 even gate” is
+  retired.
+- **#299:** proof-cost/heartbeat refactor only; no scientific expansion.
+- **new harmonic worker:** certify `B_n` versus full `G_n`.
+- **#202:** stay on the untruncated stationary witness/no-go; do not use either
+  harmonic scaling as a nonlinear bridge.
+
+The intended result is a dependency graph with one owner per unknown, not a
+new physical promotion.
