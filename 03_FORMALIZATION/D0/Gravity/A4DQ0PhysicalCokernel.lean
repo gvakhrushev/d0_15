@@ -1570,10 +1570,10 @@ def block7 : Matrix (Fin 23) (Fin 23) ℂ := Matrix.submatrix p7 rows7 cols7
 def selectedRows5 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p5 rows5 id
 def selectedRows7 : Matrix (Fin 23) (Fin 34) ℂ := Matrix.submatrix p7 rows7 id
 
-theorem block5_mul_inv : Matrix.mul block5 binv5 = 1 := by qfin
-theorem inv_mul_block5 : Matrix.mul binv5 block5 = 1 := by qfin
-theorem block7_mul_inv : Matrix.mul block7 binv7 = 1 := by qfin
-theorem inv_mul_block7 : Matrix.mul binv7 block7 = 1 := by qfin
+theorem block5_mul_inv : block5 * binv5 = 1 := by qfin
+theorem inv_mul_block5 : binv5 * block5 = 1 := by qfin
+theorem block7_mul_inv : block7 * binv7 = 1 := by qfin
+theorem inv_mul_block7 : binv7 * block7 = 1 := by qfin
 
 def block5Unit : (Matrix (Fin 23) (Fin 23) ℂ)ˣ where
   val := block5
@@ -1587,8 +1587,8 @@ def block7Unit : (Matrix (Fin 23) (Fin 23) ℂ)ˣ where
   val_inv := block7_mul_inv
   inv_val := inv_mul_block7
 
-theorem reconstruct_rows5 : Matrix.mul reconstruct5 selectedRows5 = p5 := by qfin
-theorem reconstruct_rows7 : Matrix.mul reconstruct7 selectedRows7 = p7 := by qfin
+theorem reconstruct_rows5 : reconstruct5 * selectedRows5 = p5 := by qfin
+theorem reconstruct_rows7 : reconstruct7 * selectedRows7 = p7 := by qfin
 
 lemma rank_submatrix_le
     {m n a b : Type*} [Fintype m] [Fintype n] [Fintype a] [Fintype b]
@@ -1597,7 +1597,7 @@ lemma rank_submatrix_le
     Matrix.rank (Matrix.submatrix M rows cols) ≤ Matrix.rank M := by
   let R : Matrix a m ℂ := fun i j => if j = rows i then 1 else 0
   let C : Matrix n b ℂ := fun i j => if i = cols j then 1 else 0
-  have h : Matrix.submatrix M rows cols = Matrix.mul (Matrix.mul R M) C := by
+  have h : Matrix.submatrix M rows cols = R * M * C := by
     ext i j
     simp [R, C, Matrix.mul_apply]
   rw [h]
