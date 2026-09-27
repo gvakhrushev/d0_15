@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# D0_CI_TIMEOUT_SECONDS=1500
 """Exact primary-scaling bridge from the #259 Y slow lift to the #260 N0 sector.
 
 Task: WRK-A4D-Y-SLOW-JOINT-CONTINUATION
@@ -452,7 +453,7 @@ for column in range(8):
     check("N0_CROSS_COL_%d_NO_H2" % column, no_h2)
     print("N0_CROSS_PROGRESS", column, flush=True)
 
-rank_cross = L2.rank() if isinstance(L2, sp.MatrixBase) else sp.Matrix(L2.tolist()).rank()
+rank_cross = rank_L
 L2sp = sp.Matrix(L2.tolist())
 aug_cross = L2sp.row_join(cross_h3)
 rank_aug_cross = aug_cross.rank()
