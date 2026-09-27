@@ -49,3 +49,20 @@ conjugated slot `C(conj(z))` or the physical operator `[A(z) | C(conj(z))]`,
 and it implies no `E_Q` cancellation, stress result, branch existence,
 uniqueness, or continuum claim. Rank and kernel remain owned by #270 and were
 not recomputed here.
+
+## What this does not add to the kernel line
+
+Merged #270 already proves the pointwise statement: for every `d != 0`,
+`rank C(d) = 9` and `ker C(d) = span{vec_sym(d d^T)}`. The proof is a
+projective cover by 9×9 minors whose chart ideals are the unit ideal, plus
+the identity `C q = 0`. In particular the rank stays 9 when some, but not
+all, coordinates `d_r` vanish. The total collapse `C = 0` occurs only at
+`d = 0`, that is at `z = (1,1,1,1)`.
+
+The coefficientwise ledger in this note is the explicit linear decomposition
+behind that identity. It does not replace the #270 cover, and it does not
+promote the kernel line to a stress theorem. A nowhere-zero holomorphic
+section trivializes the holomorphic kernel line off `z = 1`. The normalized
+section `q/||q||` is not that holomorphic frame, and its phase around a
+divisor `z_r = 1` is not computed here. No monodromy, `c_1`, or `E_Q`
+comparison is claimed.
