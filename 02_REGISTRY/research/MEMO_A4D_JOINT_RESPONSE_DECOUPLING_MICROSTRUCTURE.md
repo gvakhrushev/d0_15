@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. Global (NF) is refuted. On \(S(a)=I+a(E_{01}+E_{12})\) the only L=4 character with a nonzero moment is \((-1,1,-1,1)\) at \(a=\pm 1\), and each such defect is isolated in \((\mathbb C^\times)^4\). The flat Schur complement equals \(-\frac12\) times the Einstein symbol where the connection block is invertible. The moving metric germ is an exact all-phase identity; response closure still requires control on nonlinear realizable defects. Neither final terminal is claimed.
+Status: BLOCKED. Global (NF) is refuted, and the shear witness that refutes it is not a joint-critical sequence: the period-2 connection equation forces its amplitude to vanish, and no root-of-unity envelope of that jet revives it. Neither final terminal is claimed. The single missing identity is the resonant projection of a slow amplitude \(U(hx)\) on that witness, at the first order in \(h\) that can compete with \(-432 U^5\), and the normalized gap of any such solution against the #216 sheet.
 
 Synthesis update:
 [Moving germ and stationary-sheet response](MEMO_A4D_RESPONSE_STATIONARY_SHEET_SYNTHESIS.md)
@@ -1062,7 +1062,7 @@ The following routes have been decided:
 | Flat linear Schur complement versus the Einstein symbol | Direct identity \(K_{\mathrm{Schur}}=-\frac12 K_{G^{(1)}}\), only where the connection block is invertible (§8.18) |
 | Root-of-unity envelope of the pure period-2 shear jet | Absent. Fourier support is \(\{1,(-1,1,-1,1)\}\) (§8.20). A slow amplitude \(u(hx)\) remains open |
 | Next order of the #232 \(Y\) carrier on the slow background | Delegated to `WRK-A4D-Y-SLOW-JOINT-CONTINUATION`; not recomputed here |
-| Joint-critical replacement for (NF) on the whole smooth image | MISSING |
+| Joint-critical replacement for (NF) on the whole smooth image | MISSING. Single blocker: slow shear envelope \(U(hx)\) |
 | Strong connection compactness or uniqueness | Not used or requested |
 
 The previous “prove all-phase NF” route is closed: §8.3 gives an exact finite
@@ -1094,8 +1094,21 @@ identity, but no finite grid can restore a global NF theorem once the shear
 counterexample exists. Conversely, a finite NF failure alone is not the
 requested NOGO.
 
-Current verdict: IN PROGRESS. The L=8 grids of the two defect solders add no
-further NF defect. Neither
+Current verdict: BLOCKED. The shear witness refutes algebraic (NF) and, in
+the period-2 class, is removed by the connection equation before it can be a
+joint-critical sequence. Root-of-unity envelopes of that jet are absent
+(§8.20). The flat #232 family is response-null, and its slow continuation is
+owned by `WRK-A4D-Y-SLOW-JOINT-CONTINUATION`, which is blocked on the N0
+cross-term. No certified sequence has a nonzero normalized gap against the
+#216 sheet, so the NOGO terminal is not available. The closure terminal is
+not available because the class must include that #232 microstructure and a
+slow envelope of a realizable defect.
+
+The single missing identity is the resonant projection, onto the shear
+witness, of the connection Euler for an amplitude \(U(hx)\) on that witness,
+at the lowest order in \(h\) that can compete with \(-432 U^5\), together
+with the normalized metric gap of any solution of that equation against the
+#216 sheet. Neither
 A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED nor
 A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
 
