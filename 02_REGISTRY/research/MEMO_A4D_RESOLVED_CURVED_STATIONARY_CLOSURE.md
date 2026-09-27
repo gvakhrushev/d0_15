@@ -1942,3 +1942,65 @@ unnecessary. This does not classify other leading solders/tangent moduli
 on §9.17's surviving locus or arbitrary finite points of support 5.
 Those remain live. No L=2 finite witness, whole-support terminal, or L=3
 result is claimed.
+
+### 9.21 Free tangent modulus: both observer charts fail affine order four
+
+`a4d_resolved_curved_stationary_e2_conformal_free_tangent_affine4_check.py`
+removes the fixed tangent-modulus assumption from §§9.19–9.20. This is a
+whole rational family, not a coefficient grid. Keep the declared occupied
+Fourier mode 1100, `b1=0`, `b2=b3=e0`, and normalize the active tangent to
+one. Write its two blind tangent coefficients as `q1,t`. For every real
+`t!=2`, the following critical leading solder is nondegenerate:
+
+```text
+p3=-(13*t^2+144*t-212)/(40*(t-2)),
+p4=(7*t^2-24*t+52)/(40*(t-2)),
+p5=(t^2-62*t+56)/(10*(t-2)),
+p7=-(9*t^2+42*t-56)/(20*(t-2)),
+T=[[1,0,p3,p4],[0,-1,p3,p4],
+   [p5,p5,-3/2,3/2],[p7,p7,-3/2,-3/2]],
+q1=(-9*t^2+58*t+16)/(10*(t-2)),
+v=(-4,q1,-1,t,t,0,1), det(T)=-9/2.
+```
+
+The exact solder range is recomputed from the owned generic Hessian jets,
+keeping all ten second-solder freedoms and seven second amplitudes. A
+literal constant minor is `-268435456`; rank is uniformly 5. Its kernel has
+dimension 12 and amplitude projection dimension 4. Every matrix, particular
+solution and kernel denominator has only powers of the declared unit `t-2`.
+Thus special real values inside this chart are retained. The excluded
+`t=2` is not covered by taking a rational limit.
+
+Use `Gamma=-1/1024` and the full coefficient family
+`(Gamma/2+p,Gamma/2-p,q,-q)`. Here q remains the observer-adjacent coefficient.
+For `q!=0`, the leading role-0 N3 balance fixes
+
+```text
+b0=-(t^2-42*t+16)/(2048*q*(t-2))*e0.
+```
+
+Actual affine order-four matrices are recomputed over `QQ(t)` using the
+existing rational matrix owner. Every solder-compatible second-amplitude
+freedom drops out. The full mode matrices Q2 and Q3 have zero eta channels
+and equal observer channels; next translations cannot repair this mode.
+The sum of the actual role-2/component-2 and role-3/component-3 Euler rows,
+after multiplying by the declared unit q, is exactly `-128*q`. This
+contradicts stationarity for every t, p and nonzero q in the chart.
+
+The zero-observer seam is checked separately, with arbitrary `b0=z*e0`.
+Literal cubic polarization gives zero eta contribution to the leading
+role-0 N3 row for every z. Its star source is
+`-4*(t^2-42*t+16)/(t-2)`, while the observer contribution is `-8192*q*z`.
+Therefore q=0 requires `P(t)=t^2-42*t+16=0`, which has two real roots and
+is coprime to `t-2`. Rational-field identities show both eta contributions
+from b0 vanish in the affine row sum. At P=0, the observer-b0 term vanishes
+without dividing by q, and the actual eta-only affine order-four sum is
+`-128`. All response/kernel denominators are regular on this seam. No
+second correction, next translation or remaining coefficient p repairs it.
+
+**Exact scoped verdict:** this entire free-tangent conformal/translation
+family fails a necessary affine-order-four equation in both observer
+charts. This neither declares link order three consistent nor classifies
+other conformal lower blocks, independent translation ratios, other modes,
+or finite seven-amplitude configurations. Those remain open; task stays
+`IN_PROGRESS`, PR Draft, and L=3 remains unopened.
