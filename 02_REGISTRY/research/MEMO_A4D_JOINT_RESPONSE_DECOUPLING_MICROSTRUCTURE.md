@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. On each of the two defect solders every 16th-root character other than the cut carrier has vanishing joint moment. Characters outside that grid remain open. Neither final terminal is claimed.
+Status: IN PROGRESS. On each of the two defect solders every 16th-root character other than the cut carrier has vanishing joint moment. On the four complex lines through those carriers, the connection determinant's only unitary zero is the carrier itself. Characters off those lines remain open. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -765,6 +765,41 @@ does not restore (NF), and it does not change the moment census.
 Characters that are not 16th roots remain inside the domain of the
 reciprocal, and they remain open for the moment identity.
 
+### 8.15 Connection determinant on four lines through the defects
+
+The four lines are fixed before the determinant is read. On the upper shear
+they are the phases \((z,1,-1,1)\) and \((-1,1,z,1)\). On the chain
+\(I+E_{01}+E_{13}\) they are \((z,1,1,-1)\) and \((-1,1,1,z)\).
+
+The varying component enters a connection entry only as \(z\) or as \(z^{-1}\).
+The cleared matrix \(zH(z)\) has entries in \(\mathbb Q[z]\) of degree at most
+2, so \(\det(zH(z))\) has degree at most 48. Exact rational values at 49
+integers determine that polynomial, and the determinant at the next six
+integers agrees with it. All four lines produce the same element of
+\(\mathbb Q[z]\),
+\[
+\frac{1}{16}z^{18}(z+1)^{8}(z^{2}-2z+5)(5z^{2}-2z+1).
+\]
+Its value at \(z=2\) is \(9137111040\). It vanishes at the defect \(z=-1\) and
+not at \(z=1\).
+
+Both quadratics are irreducible, with discriminant \(-16\). A root of modulus
+1 would have real part \(1/3\) and imaginary part \(0\), which does not lie on
+the circle. The four roots are \(1\pm 2i\), of squared modulus \(5\), and
+\((1\pm 2i)/5\), of squared modulus \(1/5\).
+
+On the unit circle the only zero is therefore \(z=-1\). At every other unitary
+point of these four lines the connection block is invertible, so the joint
+kernel is trivial and the tested moment is vacuous. The order-8 zero at
+\(z=-1\) is the order of this determinant, not a corank; the rank at that
+carrier remains the rank already certified in §§8.3 and 8.9.
+
+The four algebraic roots lie off the unit circle, and this section does not
+rank the joint symbol there. Unitary characters off these lines remain open.
+Neither final terminal follows.
+
+The certificate is `a4d_joint_response_defect_line_minor_check.py`.
+
 ### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
@@ -807,7 +842,8 @@ The following routes have been decided:
 | Period-2 shear carrier under the joint equations | Connection equation forces \(u=0\) at order \(u^5\); no nonzero joint-critical sequence |
 | Other L=4 characters on this upper shear | Only the cut character has a nonzero moment |
 | Both finite defects of the eleven-solder family | Absent from formal period-2 joint solutions: each reduced connection coefficient is \(-432u^5\) |
-| Characters outside the 16th-root grid | OPEN. The reciprocal is defined at every root of unity; the unit-subgrid restriction is withdrawn in §8.14 |
+| Characters outside the 16th-root grid | OPEN off the four lines of §8.15. The reciprocal is defined at every root of unity; the unit-subgrid restriction is withdrawn in §8.14 |
+| Unitary points of the four lines through the two defects | Connection determinant vanishes only at the known carrier; the joint kernel is trivial at every other unitary point (§8.15) |
 | Joint-critical replacement for (NF) on the whole smooth image | MISSING |
 | Strong connection compactness or uniqueness | Not used or requested |
 
@@ -819,8 +855,9 @@ the naked-star system.
 Both finite NF defects of the fixed family are absent from formal period-2
 joint solutions. The conditional theorem of §7 still assumes (NF) at every
 character of every solder in the smooth image. Inequality (7.4) fails at
-the two certified defects, and killing those two period-2 modes does not
-restore (7.4) for nearby characters. No certified joint-critical sequence
+the two certified defects. On the four lines of §8.15 every other unitary
+point has invertible connection block. Off those lines the order-\(u^5\) cut
+does not restore (7.4). No certified joint-critical sequence
 has a nonzero normalized gap against the #216 sheet: the flat #232 family
 is response-null, and the #259 lift tends to zero without being joint.
 
