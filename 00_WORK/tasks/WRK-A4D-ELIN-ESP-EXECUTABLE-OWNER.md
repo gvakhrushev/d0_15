@@ -25,7 +25,7 @@ Use only: Sym^2(Role), centered degree-two monomials, eta=diag(+---), signature-
 5. Choose a complementary ray by deterministic normalization independent of #262: primitive rational/integer vector plus lexicographic sign convention.
 6. Prove the complementary E_sp is independent of E_eta and together they span the full constrained kernel.
 7. Add a hostile control: dropping a required condition changes the space, or a coefficient perturbation violates one.
-8. The certificate must not import/read #262 census/nullspace artifacts or normalize from any J2 orbit.
+8. The certificate must not import/read #262 census/nullspace artifacts, #265 branch artifacts, or normalize from any J2 orbit.
 
 ## Durable output
 
