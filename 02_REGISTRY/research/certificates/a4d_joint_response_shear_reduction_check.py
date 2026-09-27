@@ -219,7 +219,7 @@ def main() -> None:
     # Component 00 is the source fixed by the order already used in the memo.
     check("PREDECLARED_00_SOURCE_UNMATCHED", corrected_metric[0] == 0)
     print("RESULT_REDUCED_EQ_U2:", corrected_metric)
-    print("RESULT_VACUUM: only u=0 solves E_K=O(u^3) and E_Q=O(u^4) together at this order")
+    print("RESULT_VACUUM: order-u^2 metric equation forces u=0; higher range is separate")
     print("BOUNDARY: quadratic obstruction, not a smooth-background NOGO")
 
 

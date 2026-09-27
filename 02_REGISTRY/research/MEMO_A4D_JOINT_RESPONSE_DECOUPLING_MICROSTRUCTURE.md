@@ -512,6 +512,12 @@ Vacuum \(\tau=0\) therefore forces \(u=0\). The constant source frozen from the 
 
 On this constant background the identity connection has vanishing curvature, hence \(E_Q=0\), and the Einstein tensor of a constant metric vanishes. That is the #216 comparator at this order. No joint-critical sequence with a nonzero normalized gap is obtained. The metric-response NOGO stays unclaimed. The exact obstruction is the surviving cell equation \(E_Q[q_{11}]=-16u^2\).
 
+### 8.6 What the next Euler orders do
+
+With that constant correction kept, the resonant projection of the cell connection Euler vanishes through order \(u^5\). The range does not. The odd sector at order \(u^3\) is nonzero; one recorded component is \(32\). The even sector at order \(u^4\) is nonzero; one recorded component is \(-\tfrac43\). So the ansatz is an exact connection solution only through order \(u^2\).
+
+A link correction of order \(u^3\) or \(u^4\) changes the metric Euler only at order \(u^4\) and higher. It cannot cancel \(-16u^2\). Therefore every constant source with a component outside the \(q_{11}\) line fails the leading joint balance, including vacuum and the predeclared \(\tau=e_{00}\). The line \(\tau\parallel e_{11}\) is the only quadratic opening. It was read off the moment, so it is not used as a predeclared source and is not promoted to a joint-critical sequence.
+
 ### 8.5 Flat L=8 census
 
 The merged #216 owner symbols \(H_{AA}(z)\) and \(H_{AQ}(z)\) are compiled
@@ -545,6 +551,51 @@ shear witness of \S 8.3 remains a counterexample on a non-flat solder.
 It does not establish (NF) on the continuous unit torus away from this finite
 grid, nor at every Gram in the compact chart. The conditional homogenization
 argument therefore remains conditional.
+
+### 8.6 Sourced accessibility of the shear carrier
+
+After the order-\(u^2\) Lyapunov-Schmidt step of \S 8.4 the 24 constant link
+equations are solved by a free block \(Z\in\mathbb R^{24}\), and the surviving cell
+metric Euler is the reduced map
+\[
+E_Q^{(2)}:\mathbb R^{24}\longrightarrow\mathbb R^{10},\qquad
+Z\longmapsto E_Q^{(2)}(Z).
+\]
+The certificate `a4d_joint_response_shear_source_reachability_check.py`
+computes this map exactly on all 24 basis directions of the free block.
+
+The structure is exact and one-dimensional:
+
+| quantity | value |
+|---|---|
+| \(\operatorname{rank}E_Q^{(2)}\) | \(1\) |
+| image | \(\operatorname{span}(e_{q_{11}})\) |
+| cokernel | \(9\)-dimensional: \(q_{00},q_{01},q_{02},q_{03},q_{12},q_{13},q_{22},q_{23},q_{33}\) |
+| residual on the solved link block | \(-16u^2\) on \(q_{11}\) alone |
+
+**Source declared before solving.** The source is the pure \(q_{01}\) direction,
+\(\tau=(0,1,0,0,0,0,0,0,0,0)\): a smooth constant off-diagonal metric
+profile, fixed by the Role/face structure of the carrier and not tuned to any
+observed response moment. The branch equation is
+\(E_Q^{(2)}(Z)=-\tau\).
+
+**Result.** No \(Z\) solves it. \(\operatorname{rank}([E_Q^{(2)}\mid-\tau])\)
+strictly exceeds \(\operatorname{rank}E_Q^{(2)}\), so the target lies outside the
+image, and the residual against the transpose has no null vector. The
+obstruction is structural rather than a tuning accident: because the whole
+order-\(u^2\) reduction has rank one, the nine-dimensional cokernel is
+unreachable by **any** link correction.
+
+\[
+\boxed{\texttt{SHEAR-SOURCE-UNREACHABLE-OBSTRUCTION-CERTIFIED}}
+\]
+
+This is explicitly **not** the smooth-background metric-response NOGO. No
+joint-critical sequence is produced, no \(\#216\) comparator gap is computed,
+and the NOGO terminal is not claimed. The vacuum obstruction of \S 8.4 and
+this sourced obstruction are two separate cuts of the same carrier: the
+vacuum cut is the \(q_{11}\) component, the sourced cut is the entire remaining
+nine-dimensional cokernel.
 
 ### 8.2 Amplitude boundary
 
