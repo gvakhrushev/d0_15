@@ -79,6 +79,18 @@
       ],
       "exit_condition": "Compute and certify the nonlinear joint E_K/E_Q germs on the two one-dimensional source-invisible L=4 residual orbit classes, proving local isolation or producing an exact curved joint-vacuum germ for each.",
       "brief": "00_WORK/tasks/WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS.md"
+    },
+    {
+      "id": "WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001",
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "For the merged #241 slow background and #232 period-4 microstructure, either construct an exact finite-order connection correction that restores E_K=0 through the first response-relevant orders and certify the corrected leading metric-response coefficient, or prove an exact solvability obstruction showing that no such local connection-stationary lift exists in the declared chart.",
+      "brief": "00_WORK/tasks/WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT.md"
     }
   ]
 }
