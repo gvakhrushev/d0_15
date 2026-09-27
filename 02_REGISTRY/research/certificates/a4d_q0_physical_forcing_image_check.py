@@ -80,7 +80,10 @@ for orbit, phase in ORBITS.items():
     sub = {z[j]: phase[j] for j in range(4)}
     csub = {z[j]: sp.conjugate(phase[j]) for j in range(4)}
 
-    A = HAB.subs(sub).T
+    # Physical connection correction uses the direct connection Euler map.
+    # HAB.T belongs to the historical augmented row-system inventory and is
+    # not the correction operator (the owner explicitly fences this).
+    A = HAB.subs(sub)
     Cphys = HAQ.subs(csub)
     Cholo = HAQ.subs(sub)
     P = A.row_join(Cphys)
@@ -92,6 +95,15 @@ for orbit, phase in ORBITS.items():
 
     left = sp.conjugate(P).T.nullspace()
     check(f"ORBIT_{orbit}_PHYSICAL_COKERNEL_DIM_1", len(left) == 1, str(len(left)))
+    if len(left) != 1:
+        records[orbit] = {
+            "rank_physical": rP,
+            "rank_holomorphic": rPh,
+            "q0_norm_squared": None,
+            "membership": None,
+            "rows": [],
+        }
+        continue
     ell = left[0]
 
     qv = sp.simplify(q0.subs(sub))
