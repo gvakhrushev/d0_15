@@ -92,14 +92,13 @@ merged, so its results remain research on an open branch, not on main.
 | WRK-A4D-Q0-PHYSICAL-FORCING-IMAGE | MERGED #290 | Exact cross-character cokernel and same-carrier transport terminal integrated on current main. | Carrier-mismatch diagnostic only; actual same-carrier moving germ is absorbed exactly. |
 | EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE | Existing, open Draft | Global response estimate or same-source joint-critical counterexample. | Remains the owner of the correlation-measure closure question. |
 | WRK-A4D-Y-SLOW-JOINT-CONTINUATION | Existing, open Draft / BLOCKED | Y-family slow continuation. | Keep its PR #260 nonlinear N0 cross-term prerequisite; do not duplicate its germ convention. |
-| WRK-A4D-HAQ-COEFFICIENTWISE-IDENTITY | PLANNED | Extract exact constant coefficient matrices $C_r$ from merged #270 and certify all 20 cubic coefficient vectors of $C(d)\operatorname{vec}_{sym}(dd^T)$ vanish. | Owner audit only; no rank/kernel reproof, physical conjugate transfer, stress, or monodromy inference. |
+| WRK-A4D-HAQ-COEFFICIENTWISE-IDENTITY | TERMINAL in PR #292 | Exact coefficient ledger: `C(d)=sum_r d_r C_r`; all 20 cubic 24-vectors vanish, 480 scalar equalities; Laurent substitution zero. | Owner audit only; becomes main owner on merge of #292; no stress/physical-transfer inference. |
 
 The planned tasks are registrations only. They are not dispatch authorization.
 The metric-stress task must pin its background, source, and comparator before
-execution. The exact physical-image task is now completed and merged as #290. The
-coefficientwise identity worker consumes merged #270 only and exposes that
-owner algebra coefficient by coefficient; it is the only new worker registered
-by this update.
+execution. The exact physical-image task is now completed and merged as #290. The coefficientwise worker has now completed on integration PR #292 and is
+retired in that PR. Its exact coefficient ledger becomes durable main owner
+only after #292 merges.
 
 ## Exact physical-image target
 
