@@ -25,15 +25,6 @@
       "brief": "00_WORK/tasks/CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE.md"
     },
     {
-      "id": "CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION",
-      "class": "CONTROL",
-      "parent": "ROOT",
-      "state": "REVIEW",
-      "affected_claims": [],
-      "exit_condition": "Integrate the final v16 channel-dynamics synthesis with status-safe book patches, launch the two bounded channel workers, and leave the remnant section-map EXPENSIVE task launch-ready without promoting bridge/passport material.",
-      "brief": "00_WORK/tasks/CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION.md"
-    },
-    {
       "id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
       "class": "EXPENSIVE",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
@@ -43,6 +34,17 @@
       ],
       "exit_condition": "Prove normalized metric-response decoupling for exact joint-critical sequences including the #232 curved nongauge grid-scale family, with a precise topology and non-tautological source/comparator convention, or give a certified smooth-background joint-critical counterexample with a nonzero normalized response gap.",
       "brief": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
+    },
+    {
+      "id": "EXP-A4D-Q0-STATIONARY-SHEET-STRESS",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "On the real conjugate-paired metric path induced by q0(z), prove exact response agreement along a continued connection-stationary sheet or compute the first exact stress/continuation obstruction with the source and comparator pinned; make no global response claim.",
+      "brief": "00_WORK/tasks/EXP-A4D-Q0-STATIONARY-SHEET-STRESS.md"
     },
     {
       "id": "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE",
@@ -79,15 +81,48 @@
       "brief": "00_WORK/tasks/WRK-A4D-METRIC-ONLY-SEED-SYMBOL-RELATION.md"
     },
     {
-      "id": "WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER",
+      "id": "WRK-A4D-Y-SLOW-JOINT-CONTINUATION",
       "class": "WORKER",
-      "state": "IN_PROGRESS",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
       "affected_claims": [
         "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
       ],
-      "exit_condition": "Independently reconstruct the finite signature-preserving signed-hypercubic degree-two metric-response constrained space from the E-LIN axioms, certify dimension 2, identify the E_eta ray, and publish a normalized executable coefficient/symbol owner for the complementary E_sp ray without using #262 data as an input.",
-      "brief": "00_WORK/tasks/WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER.md"
+      "exit_condition": "On the pinned #232 Y microstructure and #241/#259 valued slow background, continue the connection-stationary lift through the next unresolved order and certify whether the corrected metric response preserves the h^2 z factor (hence normalized O(h) at z=h) or develops an exact Fredholm/resonant obstruction with a named first nonzero coefficient.",
+      "brief": "00_WORK/tasks/WRK-A4D-Y-SLOW-JOINT-CONTINUATION.md"
+    },
+    {
+      "id": "WRK-A4D-METRIC-NULL-COMPLEX-LEAN",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Formalize the #270 metric-null complex in Lean: C(d) vec_sym(dd^T)=0, rank 9 and kernel span(vec_sym(dd^T)) for every nonzero complex d using all four explicit chart covers, and the 10-dimensional origin fiber statement.",
+      "brief": "00_WORK/tasks/WRK-A4D-METRIC-NULL-COMPLEX-LEAN.md"
+    },
+    {
+      "id": "WRK-A4D-SCHUR-EINSTEIN-DIRECT-LEAN",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Formalize the merged #273 direct flat-symbol identity K_Schur=-(1/2)K_G1 coefficientwise in all 100 entries, the four Bianchi identities, and exact hostile convention controls.",
+      "brief": "00_WORK/tasks/WRK-A4D-SCHUR-EINSTEIN-DIRECT-LEAN.md"
+    },
+    {
+      "id": "WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN",
+      "class": "WORKER",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Formalize the merged #290 physical [H_AA(zeta)|H_AQ(conj zeta)] rank-23 cokernel cases, exact cross-character residual tables, and the zero same-carrier transport witnesses in Lean.",
+      "brief": "00_WORK/tasks/WRK-A4D-Q0-PHYSICAL-COKERNEL-LEAN.md"
     }
   ]
 }
