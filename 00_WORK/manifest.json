@@ -79,17 +79,6 @@
       ],
       "exit_condition": "Independently reconstruct the finite signature-preserving signed-hypercubic degree-two metric-response constrained space from the E-LIN axioms, certify dimension 2, identify the E_eta ray, and publish a normalized executable coefficient/symbol owner for the complementary E_sp ray without using #262 data as an input.",
       "brief": "00_WORK/tasks/WRK-A4D-ELIN-ESP-EXECUTABLE-OWNER.md"
-    },
-    {
-      "id": "WRK-A4D-METRIC-NULL-HESSIAN-COMPLEX",
-      "class": "WORKER",
-      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "IN_PROGRESS",
-      "affected_claims": [
-        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
-      ],
-      "exit_condition": "Reconstruct the exact metric-response symbol as a function of the character difference d=z^{-1}-1, prove ker C(d)=span{d d^T} for every nonzero d, certify exact transport under character detuning, and classify its relation to the forward-coframe metric shadow and smooth h->0 limit without declaring a new gauge symmetry.",
-      "brief": "00_WORK/tasks/WRK-A4D-METRIC-NULL-HESSIAN-COMPLEX.md"
     }
   ]
 }
