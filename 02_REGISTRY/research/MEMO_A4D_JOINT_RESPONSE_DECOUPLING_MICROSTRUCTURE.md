@@ -730,48 +730,40 @@ carrier already cut at order \(u^5\). The modular counts are
 Characters outside this grid remain open, so (7.4) is still not restored on
 the whole torus.
 
-### 8.14 The inverse-character domain is the unit subgrid
+### 8.14 The reciprocal is defined on every root of unity
 
-Memo sections 8.5 and 8.12 left "characters that are not 8th roots" as an
-open research front. The sharper fact is that such characters are not part of
-the domain of the convention at all.
+An earlier draft of this section treated \(\gcd(k,L)=1\) as the condition for
+\(\chi=\zeta^{-1}\) to exist, and it called the complementary rows of the
+\(L=4\), \(L=8\), and \(L=16\) censuses a convention gap. That reading is
+withdrawn. The terminal name attached to it is not a result of this task.
 
-The joint symbol uses the inverse-polarization convention: the connection block
-is evaluated at the table phase \(\zeta\) and the metric block at the physical
-phase \(\chi=\zeta^{-1}\). That inverse exists only when \(\zeta\) is a unit.
-On a cyclic \(L\)-grid the phases are the \(L\)-th roots of unity, and
-\(\gcd(k,L)=1\) is required. The strictly admissible subgrid therefore has
-\(\varphi(L)^{4}\) characters out of \(L^{4}\).
+The metric block uses the owned reciprocal of each phase component. On a
+cyclic grid the component is \(\omega^{k}\) with \(\omega^{L}=1\). Its
+reciprocal is \(\omega^{-k}\), the grid point of exponent \((-k)\bmod L\).
+This holds for every exponent, including those that are not primitive. The
+count \(\varphi(L)\) is the number of primitive \(L\)-th roots. It does not
+decide invertibility. In particular the phases \(1\) (exponent \(0\)) and
+\(-1\) (exponent \(L/2\) when \(L\) is even) are invertible.
 
-| \(L\) | \(\varphi(L)\) | strictly admissible |
-|---|---|---|
-| 4 | 2 | \(2^{4}\) of \(4^{4}\) |
-| 8 | 4 | \(4^{4}\) of \(8^{4}\) |
-| 12 | 4 | \(4^{4}\) of \(12^{4}\) |
-| 16 | 8 | \(8^{4}\) of \(16^{4}\) |
-| 15 | 8 | \(8^{4}\) of \(15^{4}\) |
-
-No \(L>2\) has every phase invertible: for \(L=2^{m}\) the even indices are
-never units, and an odd prime factor removes its multiples. So **no nontrivial
-\(L\)-grid is admissible as a whole.**
-
-This has a direct consequence for the censuses already on this branch. The
-\(L=4\) and \(L=8\) screens were run over the whole grid, and components whose
-phase is a non-unit were evaluated with a numerically inverted phase. Those rows
-are not strictly defined in the inverse-character convention. The strictly
-admissible subgrids of size \(\varphi(L)^{4}\) are certified; the non-unit
-remainder is a **convention gap**, not an open research front.
-
-Deciding whether to drop those rows, or to re-derive the metric block there
-without an inverse character, is a separate question and is not settled here.
-
+Both defect characters are fixed by the reciprocal:
 \[
-\boxed{\texttt{INVERSE-CHARACTER-DOMAIN-IS-THE-UNIT-SUBGRID}}
+(-1,1,-1,1)^{-1}=(-1,1,-1,1),\qquad
+(-1,1,1,-1)^{-1}=(-1,1,1,-1).
 \]
+On \(L\in\{4,8,16\}\) every exponent of either character fails
+\(\gcd(k,L)=1\). The withdrawn reading would therefore have placed the
+certified counterexamples to (NF) outside the domain. Section 8.1 already
+compares all \(256\) flat characters, including those non-primitive phases,
+with the #216 owner matrices.
 
-The certificate is `a4d_joint_response_phase_invertibility_check.py`. This is a
-statement about the convention and the cyclic grid, not about the star action
-and not a response NOGO.
+The certificate
+`a4d_joint_response_phase_invertibility_check.py` calls the owned
+`inverse_character` on every root for
+\(L\in\{4,6,8,9,10,12,15,16\}\) and checks the two defect characters. It
+does not restore (NF), and it does not change the moment census.
+
+Characters that are not 16th roots remain inside the domain of the
+reciprocal, and they remain open for the moment identity.
 
 ### 8.2 Amplitude boundary
 
@@ -815,7 +807,7 @@ The following routes have been decided:
 | Period-2 shear carrier under the joint equations | Connection equation forces \(u=0\) at order \(u^5\); no nonzero joint-critical sequence |
 | Other L=4 characters on this upper shear | Only the cut character has a nonzero moment |
 | Both finite defects of the eleven-solder family | Absent from formal period-2 joint solutions: each reduced connection coefficient is \(-432u^5\) |
-| Characters outside the admissible unit subgrids | Not an open front: §8.14 shows they are outside the inverse-character domain; the remainder is a convention gap |
+| Characters outside the 16th-root grid | OPEN. The reciprocal is defined at every root of unity; the unit-subgrid restriction is withdrawn in §8.14 |
 | Joint-critical replacement for (NF) on the whole smooth image | MISSING |
 | Strong connection compactness or uniqueness | Not used or requested |
 
