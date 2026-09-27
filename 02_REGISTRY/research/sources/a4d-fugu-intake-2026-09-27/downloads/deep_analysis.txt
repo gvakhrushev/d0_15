@@ -1,0 +1,25 @@
+=== GERM->ANOMALY OPERATOR (metric-only germ -> unabsorbed connection part) ===
+ orb  ids            dimkerA†  rankMG  singular values of residual family r_j
+  0   (0, 0, 1, 1):    2      0   ['0.0000', '0.0000', '0.0000', '0.0000']
+  1   (0, 0, 1, 3):    2      1   ['0.2887', '0.0000', '0.0000', '0.0000']
+  2   (0, 1, 1, 2):    4      2   ['0.2132', '0.2132', '0.0000', '0.0000']
+  3   (1, 0, 1, 2):    4      2   ['0.3303', '0.1651', '0.0000', '0.0000']
+  4   (1, 1, 1, 1):    8      0   ['0.0000', '0.0000', '0.0000', '0.0000']
+  5   (1, 1, 3, 3):    4      3   ['0.3596', '0.2181', '0.1961', '0.0000']
+  6   (2, 0, 1, 1):    4      2   ['0.2132', '0.2132', '0.0000', '0.0000']
+  7   (2, 1, 1, 2):    2      1   ['0.2085', '0.0000', '0.0000', '0.0000']
+  8   (2, 1, 2, 3):    2      0   ['0.0000', '0.0000', '0.0000', '0.0000']
+
+=== ANOMALY LINE vs OWNED OBJECTS ===
+ orb  ids            ||P_anom q|| (proj of germ back onto anomaly line)  F4-ker overlap
+  0   (0, 0, 1, 1):  dim ker F4= 1  overlap(anomaly, ker F4)=0.8957
+  1   (0, 0, 1, 3):  dim ker F4= 0  overlap(anomaly, ker F4)=0.0000
+  2   (0, 1, 1, 2):  dim ker F4= 0  overlap(anomaly, ker F4)=0.0000
+  3   (1, 0, 1, 2):  dim ker F4= 0  overlap(anomaly, ker F4)=0.0000
+  4   (1, 1, 1, 1):  dim ker F4= 4  overlap(anomaly, ker F4)=0.0588
+  5   (1, 1, 3, 3):  dim ker F4= 0  overlap(anomaly, ker F4)=0.0000
+  6   (2, 0, 1, 1):  dim ker F4= 0  overlap(anomaly, ker F4)=0.0000
+  7   (2, 1, 1, 2):  dim ker F4= 0  overlap(anomaly, ker F4)=0.0000
+  8   (2, 1, 2, 3):  dim ker F4= 0  overlap(anomaly, ker F4)=0.0000
+
+F4 overlap by orbit: [0.8957, 0.0, 0.0, 0.0, 0.0588, 0.0, 0.0, 0.0, 0.0]
