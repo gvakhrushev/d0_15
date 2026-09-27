@@ -1,7 +1,7 @@
 # WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM
 
 Class: `WORKER`  
-State on registration: `PLANNED`  
+State: `BLOCKED`  
 Parent: `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 Research lane: `EXP-A4D-JOINT-PALATINI-LOCAL-UNIQUENESS`
 
@@ -67,6 +67,12 @@ No new action channel, torsion constraint, (\varphi), or boundary selector. No a
 ## GitHub execution contract
 
 Start from the required merged/stacked dependency. Open Draft before substantive edits, keep the dependency explicit, self-retire only at a theorem/no-go terminal, and never self-merge.
+
+## Blocker
+
+The branch records an odd-holonomy quadratic system only after the regular connection coordinates are set to zero. That is not a Lyapunov–Schmidt elimination. Acceptance needs the regular equations solved for \(r(u)\), that correction substituted into \(E_Q\), and the same check on the conjugate-paired real carrier.
+
+PR #264, terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL`, closes the affine bypass: the flat coframe image is not joint-Hessian-null on the singular L4 orbits, so it cannot delete those regular variables.
 
 ## Chat handoff
 
