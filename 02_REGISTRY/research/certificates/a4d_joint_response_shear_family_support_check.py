@@ -19,8 +19,9 @@ isolated at a=1.  The exact sign partner a=-1 is also singular at the same
 character and carries the same content-one moment.  The sampled controls now
 include both sign partners explicitly.
 
-No exhaustive claim is made for all rational a.  A separate symbolic
-minor/gcd classification is required before any "|a|=1 only" terminal.
+At the carrier character the full connection determinant is the polynomial
+256(a-1)^4(a+1)^4(a^2+1)^4.  That classifies this character.  It does not
+classify the other 255 characters, and it does not rank a = +/-i.
 
 Nothing here restores global (NF): the committed a = 1 carrier still refutes
 the algebraic identity.
@@ -97,7 +98,7 @@ def main() -> None:
     # Exact one-parameter control on the committed defect character.  The
     # connection determinant already exposes both rational sign partners.
     aa = sp.symbols("aa")
-    h_family = connection(brackets(shear(aa)), SHEAR_CHAR)
+    h_family = sup.connection(sup.brackets(shear(aa)), SHEAR_CHAR)
     det_family = sp.factor(h_family.det())
     expected_det = 256 * (aa - 1)**4 * (aa + 1)**4 * (aa**2 + 1)**4
     check("SHEAR_CHARACTER_CONNECTION_DETERMINANT",
@@ -149,13 +150,15 @@ def main() -> None:
 
     print()
     print("RESULT: sampled shear slice contains exact sign-partner defects at a = +/-1.")
-    print("  In the declared sample the two diagonal quarter-wave kernels persist")
-    print("  with zero moments.  The carrier (-1,1,-1,1) has nullity one and")
-    print("  moment (0,0,0,0,-2,0,0,0,0,0) at both a=1 and a=-1.")
-    print("TERMINAL: SHEAR-SAMPLED-SIGN-PARTNER-DEFECTS-CERTIFIED")
-    print("BOUNDARY: finite L=4 grid and the explicit rational sample only.")
-    print("  No exhaustive rational-a classification is claimed; in particular")
-    print("  '|a|=1 only' remains open until a symbolic minor/gcd proof exists.")
+    print("  At the carrier character the connection determinant equals")
+    print("  256(a-1)^4(a+1)^4(a^2+1)^4, so its only roots are a = +/-1, +/-i.")
+    print("  Both rational roots have nullity one and moment")
+    print("  (0,0,0,0,-2,0,0,0,0,0). The diagonal quarter-waves in the sample")
+    print("  stay moment-free. a = +/-i is not ranked.")
+    print("TERMINAL: SHEAR-CHARACTER-CONNECTION-DETERMINANT-CLASSIFIES-A")
+    print("BOUNDARY: this identity is one character. The other 255 L=4")
+    print("  characters, and a = +/-i, remain outside it. Not a global (NF)")
+    print("  theorem and not a response NOGO.")
 
 
 if __name__ == "__main__":

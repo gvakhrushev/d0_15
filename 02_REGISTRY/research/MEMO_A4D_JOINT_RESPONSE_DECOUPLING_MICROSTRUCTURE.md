@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: IN PROGRESS. On each of the two defect solders every 16th-root character other than the cut carrier has vanishing joint moment. Each defect is an isolated point of the joint corank locus in \((\mathbb C^\times)^4\). Distant characters remain open. Neither final terminal is claimed.
+Status: IN PROGRESS. On \(S(a)=I+a(E_{01}+E_{12})\) the only L=4 character with a nonzero moment is \((-1,1,-1,1)\) at \(a=\pm 1\). Each of those defects is isolated in \((\mathbb C^\times)^4\). The flat Schur complement equals \(-\frac12\) times the Einstein symbol where the connection block is invertible. Distant characters on other solders remain open. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -724,10 +724,17 @@ upper shear. A nonzero \(24\times24\) joint minor on this carrier factors as
 which exposes both rational candidates \(a=\pm1\).
 
 The two diagonal quarter-wave kernels remain moment-free in the sampled
-controls. No exhaustive rational-\(a\) classification is claimed here:
-one nonzero minor only supplies a finite candidate set for its own row choice,
-and a complete minor/gcd cover is still required before promoting
-"\(|a|=1\) only" to a theorem.
+controls. At the carrier character \((-1,1,-1,1)\) the connection determinant
+is not merely one minor. It is the full \(24\times 24\) determinant, and it
+equals
+\[
+256(a-1)^{4}(a+1)^{4}(a^{2}+1)^{4}
+\]
+identically. Its only roots are \(a=\pm 1\) and \(a=\pm i\). For every other
+\(a\) the connection block is invertible at this character, so the joint kernel
+is trivial. Both rational roots are the certified defects above, each with
+moment \((0,0,0,0,-2,0,0,0,0,0)\). The points \(a=\pm i\) are not rational and
+are not ranked here. Section 8.19 classifies the other characters of this grid.
 
 \[
 \boxed{\texttt{SHEAR-SAMPLED-SIGN-PARTNER-DEFECTS-CERTIFIED}}
@@ -913,6 +920,72 @@ joint-critical sequence is produced, no \(\#216\) comparator gap is computed,
 and no response terminal is claimed. No claim is made about other characters
 or solders.
 
+### 8.18 What the direct Schur–Einstein identity supplies
+
+The merged worker `WRK-A4D-SCHUR-EINSTEIN-DIRECT-IDENTIFICATION` proves the
+flat linear identity
+\[
+K_{\mathrm{Schur}}(k)=-\frac12 K_{G^{(1)}}(k)
+\]
+by reconstructing the Einstein symbol from its index formula and comparing all
+100 polynomial entries with the Schur complement of the regular trivial-character
+connection block. The same certificate records \(\det A_0=256\) and three
+hostile convention failures: lowered Einstein indices, a missing off-diagonal
+factor \(2\), and the reversed Schur sign. The certificate is
+`a4d_schur_einstein_direct_identification_check.py`.
+
+In §7 the smooth comparator is \(\rho[g]=-G[g]/2\). The identity above is that
+comparator at the flat linear symbol, without the intermediate name
+\(E_\eta=-2G\). It is available only where the connection block is invertible.
+At either certified defect the joint symbol has rank 23, so the Schur complement
+is not defined and the identity does not evaluate the response moment.
+
+The registered worker `WRK-A4D-Y-SLOW-JOINT-CONTINUATION` owns the next order of
+the #232 \(Y\) carrier on the #241/#259 slow background, including the comparison
+of any surviving low-frequency component with this Schur quotient. That jet is
+not recomputed here. The identity does not replace (NF) on the smooth image and
+does not produce a joint-critical sequence.
+
+### 8.19 Rational points of the unipotent slice on the L=4 grid
+
+The solder \(S(a)=I+a(E_{01}+E_{12})\) has determinant \(1\) for every \(a\).
+For each of the \(256\) characters, \(\det H(a)\) is recovered by exact
+interpolation. Entries of \(H\) have degree at most \(2\) in \(a\), so the
+determinant has degree at most \(48\). Forty-nine integers determine it and
+four further integers agree.
+
+Eight characters have \(\det H\) identically zero: the two diagonal
+quarter-waves, and
+\[
+(i,i,-1,1),\ (i,-1,i,1),\ (-1,i,i,1),
+\]
+\[
+(-1,-i,-i,1),\ (-i,-1,-i,1),\ (-i,-i,-1,1).
+\]
+On the other \(248\) characters every rational root lies in
+\(\{-4/3,-2,-1,0,1,2\}\). Away from those roots \(H\) is invertible, so the
+joint kernel is trivial.
+
+At the eight roots outside \(\{0,\pm 1\}\) the joint rank is \(24\). At
+\(a=\pm 1\), among every character whose connection determinant vanishes, the
+only ranks below \(24\) are the carrier \((-1,1,-1,1)\), of rank \(23\), and
+the two diagonal quarter-waves, of rank \(20\).
+
+For each of the six non-diagonal characters with \(\det H\equiv 0\), one
+\(24\)-row minor of the joint symbol is a non-zero polynomial. Its rational
+roots lie in \(\{-2,-1,0,1/2,1\}\). Off those roots the minor is non-zero, so
+the joint rank is \(24\). At each nonzero rational root the joint rank is
+\(24\). The flat point \(a=0\) is the census of §8.1, whose kernels have
+vanishing moments. The diagonal quarter-waves are moment-free for every
+nondegenerate solder by the theorem in §8.
+
+Thus for every rational \(a\) the only \(L=4\) character with a nonzero
+response moment is \((-1,1,-1,1)\) at \(a=\pm 1\), both with moment
+\((0,0,0,0,-2,0,0,0,0,0)\). The certificate is
+`a4d_joint_response_unipotent_l4_classification_check.py`. This is one
+family and one finite grid. It does not restore (NF) on the whole torus and
+it does not produce a joint-critical sequence.
+
 ### 8.2 Amplitude boundary
 
 The O(h) log-link bound in Section 7 is essential to this quadratic proof:
@@ -959,6 +1032,9 @@ The following routes have been decided:
 | Unitary points of the four lines through the two defects | Connection determinant vanishes only at the known carrier; the joint kernel is trivial at every other unitary point (§8.15) |
 | Off-circle zeros of that connection determinant | Joint rank 24 at all sixteen points (§8.16) |
 | Joint corank locus through either defect | Isolated point. Tangent line blocked at second order (§8.16) |
+| Rational \(a\) on \(S(a)=I+a(E_{01}+E_{12})\), whole L=4 grid | Nonzero moment only at \(a=\pm 1\), character \((-1,1,-1,1)\) (§8.19) |
+| Flat linear Schur complement versus the Einstein symbol | Direct identity \(K_{\mathrm{Schur}}=-\frac12 K_{G^{(1)}}\), only where the connection block is invertible (§8.18) |
+| Next order of the #232 \(Y\) carrier on the slow background | Delegated to `WRK-A4D-Y-SLOW-JOINT-CONTINUATION`; not recomputed here |
 | Joint-critical replacement for (NF) on the whole smooth image | MISSING |
 | Strong connection compactness or uniqueness | Not used or requested |
 
