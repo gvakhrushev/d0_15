@@ -249,6 +249,79 @@ for a, b in SYM:
     check(f"SMOOTH_H3_DEFECT_{a}_{b}",
           sp.expand(delta.coeff(h, 3) - expected_h3) == 0)
 
+
+# ---------------------------------------------------------------------------
+# 6. Full forward-coframe tangent: finite non-gauge, asymptotically joint-null.
+# ---------------------------------------------------------------------------
+
+HAB = _ns["HAB"]
+
+
+def lorentz_coeffs(X):
+    return sp.Matrix([
+        X[0, 1], X[0, 2], X[0, 3],
+        X[1, 2], X[1, 3], X[2, 3],
+    ])
+
+
+def coframe_to_joint_symbolic(phase):
+    G = sp.zeros(34, 4)
+    for col in range(4):
+        xi = sp.eye(4)[:, col]
+        Hraw = sp.zeros(4)
+        for r in range(4):
+            for a in range(4):
+                Hraw[r, a] = (phase[r] - 1) * xi[a]
+        qm = sp.expand(Hraw * ETA + ETA * Hraw.T)
+        Hsec = sp.expand(sp.Rational(1, 2) * qm * ETA)
+        Delta = sp.expand(Hraw - Hsec)
+        lam = sp.expand(Delta.T)
+        for m, (a, b) in enumerate(SYM):
+            G[m, col] = qm[a, b]
+        for r in range(4):
+            Xr = sp.expand((phase[r] - 1) * lam)
+            coeff = lorentz_coeffs(Xr)
+            for j in range(6):
+                G[10 + 6 * r + j, col] = coeff[j]
+    return G
+
+
+Gcof = coframe_to_joint_symbolic(z)
+qcof = Gcof[:10, :]
+xcof = Gcof[10:, :]
+cof_top = sp.expand(HAQ.T * xcof)
+cof_bottom = sp.expand(HAQ * qcof + HAB * xcof)
+
+tau = sp.symbols("tau")
+kap = sp.symbols("kap0:4")
+near_id = {z[r]: 1 + tau * kap[r] for r in range(4)}
+
+
+def valuation_tau(expr):
+    ex = sp.cancel(expr.subs(near_id))
+    if ex == 0:
+        return sp.oo
+    num, den = sp.fraction(ex)
+    check("DEN_NONZERO_AT_IDENTITY_" + str(abs(hash(str(expr))) % 10**8),
+          sp.simplify(den.subs(tau, 0)) != 0)
+    P = sp.Poly(sp.expand(num), tau)
+    return min(mon[0] for mon, coeff in P.terms() if coeff != 0)
+
+
+top_vals = [valuation_tau(cof_top[i, j])
+            for i in range(cof_top.rows) for j in range(cof_top.cols)]
+bottom_vals = [valuation_tau(cof_bottom[i, j])
+               for i in range(cof_bottom.rows) for j in range(cof_bottom.cols)]
+top_finite = [v for v in top_vals if v is not sp.oo]
+bottom_finite = [v for v in bottom_vals if v is not sp.oo]
+
+check("COFRAME_METRIC_EULER_ORDER_AT_LEAST_4",
+      min(top_finite) == 4 and all(v >= 4 for v in top_finite),
+      str(sorted(set(top_finite))))
+check("COFRAME_CONNECTION_EULER_ORDER_AT_LEAST_3",
+      min(bottom_finite) == 3 and all(v >= 3 for v in bottom_finite),
+      str(sorted(set(bottom_finite))))
+
 if FAILS:
     print("J2-METRIC-NULL-HESSIAN-COMPLEX: FAIL (%d)" % len(FAILS))
     for f in FAILS:
@@ -262,4 +335,5 @@ print("REALIFICATION: one complex null line gives the owned two-real-dimensional
 print("DETUNE: (D_j C)q=-C(D_j q) identically; the raw fixed-q FUGU detune vector is kernel transport, not a quotient obstruction.")
 print("AFFINE_ALIGNMENT: among the nine owned L=4 singular orbit types, the null line is in the forward-coframe metric image exactly on orbits 0 and 4.")
 print("SMOOTH_LIMIT: backward and forward rank-one metric shadows agree through h^2; their first mismatch is O(h^3), hence O(h) after h^-2 normalization.")
+print("ASYMPTOTIC_COFRAME: the full forward-coframe joint residual is O(tau^4) in the metric Euler leg and O(tau^3) in the connection Euler leg near z=1.")
 print("SCOPE: exact finite symbol theorem only; no nonlinear response-decoupling or gauge/Einstein promotion.")
