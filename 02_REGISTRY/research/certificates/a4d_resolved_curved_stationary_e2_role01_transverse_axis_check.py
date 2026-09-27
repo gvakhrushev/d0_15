@@ -25,10 +25,7 @@ from sympy import QQ
 from sympy.polys.fields import field
 
 st = monotonic()
-here = Path(
-    "/Users/grigorijvahrusev/.codex/worktrees/exp-curved-closure/d0_15/"
-    "02_REGISTRY/research/certificates"
-)
+here = Path(__file__).resolve().parent
 
 def check(name, condition):
     if not condition:
