@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 2 | 2 | 2 / 2 |
 | EXPENSIVE | 2 | 0 | 0 | 0 | 2 | 0 / 3 |
-| WORKER | 5 | 1 | 0 | 0 | 6 | 1 / 5 |
-| **Total** | **7** | **1** | **0** | **2** | **10** | **3 / 10** |
+| WORKER | 5 | 0 | 0 | 0 | 5 | 0 / 5 |
+| **Total** | **7** | **0** | **0** | **2** | **9** | **2 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -23,7 +23,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-ONE-D-RESIDUAL-GERMS | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-RESONANCE-LINEAR-KERNEL | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-FLAT-METRIC-EULER-IDENTITY | WORKER | IN_PROGRESS | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN | WORKER | PLANNED | CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION | D0-METRO-002, D0-SCENE-TRACE-HEAT-CAPACITY-001 |
 
 ## Registry Health & Metrics
