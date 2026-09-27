@@ -538,23 +538,28 @@ The following routes have been decided:
 | Diagonal joint carrier mean quadratic stress | Exactly zero; finite certificate |
 | Frozen diagonal characters at arbitrary solder | (NF) proved analytically |
 | Entire L=4 grid at the flat solder | (NF) exact on all 20 nonzero joint kernels |
-| Continuous unit torus and all-background joint-kernel (NF) | OPEN |
+| Global all-background joint-kernel (NF) | **REFUTED** by the exact shear witness in §8.3 |
+| Nonlinear accessibility of NF-defect carriers under predeclared source/comparator | OPEN |
 | Strong connection compactness or uniqueness | Not used or requested |
 
-The **single first missing identity on this route** is (NF) away from the
-tested finite character grid and for general Q in the declared compact metric
-chart. Sections
-7.1-7.6 prove that this finite identity would suffice for the stated O(h)
-joint-critical class, including #232 at both required scalings, without a
-uniform inverse or strong connection compactness.
+The previous “prove all-phase NF” route is closed: §8.3 gives an exact finite
+counterexample to the algebraic identity. The conditional theorem in §§7.1–7.6
+therefore remains a valid implication but is not a global closure theorem for
+the naked-star system.
 
-Failure of (NF) at a finite carrier would identify a possible quadratic
-defect, not by itself an exact smooth-background NOGO. A negative terminal
-would still require solving the nonlinear joint equations with the declared
-prescribed source and #216 comparator. The exact diagonal and #241 controls
-do not supply such a counterexample.
+The sharp missing step is now **nonlinear accessibility**. A finite NF-defect
+carrier matters for the requested terminal only if it survives the literal
+joint equations under a source fixed before solving and under the same #216
+smooth-comparator contract. The shear carrier is already cut in vacuum at
+quadratic metric order, and the previously frozen source tau=e_00 is cut as
+well. Other admissible sourced continuations remain to be classified.
 
-Current verdict: PARTIAL / BLOCKED ON (NF). Neither
+A finite-frequency census may stress-test which resonances satisfy the moment
+identity, but no finite grid can restore a global NF theorem once the shear
+counterexample exists. Conversely, a finite NF failure alone is not the
+requested NOGO.
+
+Current verdict: PARTIAL / IN_PROGRESS ON NONLINEAR ACCESSIBILITY. Neither
 A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED nor
 A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
 
