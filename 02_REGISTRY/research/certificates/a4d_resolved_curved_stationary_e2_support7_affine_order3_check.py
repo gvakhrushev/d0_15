@@ -207,7 +207,7 @@ expected_order6_ranks = {
     ("eta", "adj"): 8,
     ("eta", "opp"): 4,
     ("n", "adj"): 8,
-    ("n", "opp"): 4,
+    ("n", "opp"): 8,
 }
 for key, expected_rank in expected_order6_ranks.items():
     form = channel_order6[key]

@@ -3,7 +3,7 @@
 **Task:** `EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE`
 **Execution:** PR #202
 **Status:** IN_PROGRESS / durable checkpoint (restructured F4 attack)
-**Baseline:** `7d7ad1ba561dc1fb1d726a8158e8ddfe0c001794`
+**Baseline:** `caa1e65087ddf15cda35325189ebfcbf51a56592`
 
 ## 0A. CORRECTIVE FULL-EULER AUDIT (2026-09-26)
 
@@ -1114,7 +1114,7 @@ at order one alone did not establish this.
 After summing the 16 identical sites, each of the four existing channel
 quadratic forms has a nonzero `epsilon^4` coefficient in the 16 components of
 `b`. Their exact matrix ranks are respectively `7` (`eta,adj`), `3`
-(`eta,opp`), `8` (`n,adj`), and `4` (`n,opp`). This is only the
+(`eta,opp`), `8` (`n,adj`), and `7` (`n,opp`). This is only the
 first activation of the existing channel forms. It does not solve the
 matched-affine equation `R=R_*(C)`, the affine Euler equations, or the full
 Lorentz Euler equations.
@@ -1155,7 +1155,7 @@ agrees with the independent order-two owner. The stacked `R_3` map is
 `120 × 16` of rank 16. In particular, its restriction to `V_2` has rank 8,
 so every nonzero fixed `b ∈ V_2` activates some ordered-pair residual at
 order three. On `V_2`, the four order-six channel matrices have ranks `8`
-(`eta,adj`), `4` (`eta,opp`), `8` (`n,adj`), and `4` (`n,opp`); the sum of
+(`eta,adj`), `4` (`eta,opp`), `8` (`n,adj`), and `8` (`n,opp`); the sum of
 the two `n`-channel matrices is positive definite there.
 
 Combining §§9.6–9.7 gives a precise fixed-direction statement for the sum of
@@ -1467,3 +1467,24 @@ Zero amplitudes in the linearization are not a finite no-go for the
 seven-amplitude family away from this link. No L=2 witness with
 `R != 0` is obtained, and L=3 stays unopened. The task remains
 `IN_PROGRESS`.
+
+
+### 9.13 Observer-form audit of the affine jets
+
+The first versions of the order-two/order-three affine-jet certificates
+used the null-vector outer product `n n^T`, `n=(1,1,0,0)`, for the observer
+channel. That is not the selected form `h_n=I4` of the F4 owner. The
+certificates now use `I4` and check the actual `H_N` declaration in
+`a4d_resolved_curved_stationary_f4_check.py`. No extra channel is retained.
+
+With the selected observer form the exact order-four ranks in §9.5 are
+`(7,3,8,7)`, and the exact order-six ranks on `V2` in §9.7 are `(8,4,8,8)`.
+These replace the earlier `(7,3,8,4)` and `(8,4,8,4)` channel-rank claims.
+The residual maps themselves are unchanged: `rank R2=8`, `dim V2=8`,
+`rank R3=16`, and `rank(R3|V2)=8`. The positive-semidefinite order-four
+observer sum still has kernel `V2`, and its order-six restriction remains
+positive definite. The finite-jet activation and common-kernel conclusions
+of §§9.5–9.7 therefore survive for the actual four-channel action.
+
+This audit does not solve the affine Euler equations or select coefficients.
+The task remains `IN_PROGRESS`.

@@ -13,6 +13,7 @@ stationary branch or finite vacuum.
 """
 from __future__ import annotations
 
+import ast
 import hashlib
 from pathlib import Path
 from collections import Counter
@@ -221,7 +222,19 @@ def face_class(f1, f2):
     return "adj" if len(set(f1) & set(f2)) == 1 else "opp"
 
 
-Q_N = Matrix([1, 1, 0, 0]) * Matrix([1, 1, 0, 0]).T
+# The selected observer form is the positive h_n = I4 of the F4 owner.
+# A null-vector outer product would be a different, unselected scalar.
+Q_N = eye(4)
+f4_tree = ast.parse(Path(__file__).with_name(
+    "a4d_resolved_curved_stationary_f4_check.py"
+).read_text())
+f4_h_n = next(
+    node.value for node in f4_tree.body
+    if isinstance(node, ast.Assign)
+    and any(isinstance(target, ast.Name) and target.id == "H_N" for target in node.targets)
+)
+check("OBSERVER_FORM_MATCHES_F4_OWNER",
+      ast.dump(f4_h_n) == ast.dump(ast.parse("sp.diag(1, 1, 1, 1)", mode="eval").body))
 quadratic_forms = {
     (kind, cls): zeros(16)
     for kind in ("eta", "n")
@@ -256,7 +269,7 @@ expected_channel_ranks = {
     ("eta", "adj"): 7,
     ("eta", "opp"): 3,
     ("n", "adj"): 8,
-    ("n", "opp"): 4,
+    ("n", "opp"): 7,
 }
 for key, expected_rank in expected_channel_ranks.items():
     form = quadratic_forms[key]
