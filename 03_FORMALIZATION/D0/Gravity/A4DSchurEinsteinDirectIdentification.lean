@@ -74,7 +74,7 @@ def hBasis (j : Fin 10) (a b : Fin 4) : ℚ :=
   let p := symPair j
   if (a = p.1 ∧ b = p.2) ∨ (a = p.2 ∧ b = p.1) then 1 else 0
 
-def a0 (i : Fin 24) (j : Fin 24) : ℚ :=
+def a0 : Matrix (Fin 24) (Fin 24) ℚ := fun i j =>
   match i.val, j.val with
   | 0, 15 => 1
   | 0, 22 => 1
@@ -126,7 +126,7 @@ def a0 (i : Fin 24) (j : Fin 24) : ℚ :=
   | 23, 9 => 1
   | _, _ => 0
 
-def a0Inv (i : Fin 24) (j : Fin 24) : ℚ :=
+def a0Inv : Matrix (Fin 24) (Fin 24) ℚ := fun i j =>
   match i.val, j.val with
   | 0, 0 => (1 : ℚ) / 2
   | 0, 15 => (1 : ℚ) / 2
@@ -327,9 +327,19 @@ def einsteinNo2Coeff (out inp m : Fin 10) : ℚ :=
   let p := symPair out
   einsteinUpCoeff p.1 p.2 inp m
 
-/-- The independent Schur construction uses the exact literal inverse table
-exported by the merged #270 owner.  The target Einstein equality below is
-proved coefficientwise from that table; it is not used to define the table. -/
+/-- Exact finite regular-block certificate from the independent #270 owner. -/
+theorem a0_right_inverse :
+    Matrix.mul a0 a0Inv = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
+  ext i j
+  fin_cases i <;> fin_cases j <;> native_decide
+
+theorem a0_left_inverse :
+    Matrix.mul a0Inv a0 = (1 : Matrix (Fin 24) (Fin 24) ℚ) := by
+  ext i j
+  fin_cases i <;> fin_cases j <;> native_decide
+
+/-- The target Einstein equality is proved coefficientwise from the independent
+literal Schur data; it is not used to define either side. -/
 theorem schurCoeff_eq_neg_half_einstein :
     ∀ out inp m : Fin 10,
       schurCoeff out inp m = (-1 / 2 : ℚ) * einsteinCoordCoeff out inp m := by
