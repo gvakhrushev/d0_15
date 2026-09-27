@@ -1,7 +1,7 @@
 # A4D Schur–Einstein direct identification
 
 **Task:** \`WRK-A4D-SCHUR-EINSTEIN-DIRECT-IDENTIFICATION\`  
-**Lifecycle:** IN_PROGRESS  
+**Status:** exact direct cross-check owner  
 **Scope:** exact flat linear-symbol cross-check; no nonlinear continuum promotion.
 
 ## Result
