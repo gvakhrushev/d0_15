@@ -20,7 +20,11 @@ Quadratic slots at the shear witness, from one symbol
 on \(z=(-1,1,-1,1)\) the moving germ is \(q_0=4E_{00}+4E_{02}+4E_{22}\) and has no \(q_{11}\) entry.
 \(\Phi=\tfrac12 u^2 v^*H(Q)v\) has \(\partial_u\Phi=0\) for every \(u\), while
 \(\partial_{q_{11}}\Phi=-u^2\). The germ direction itself has witness stress 0.
-Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. The one-step period-4 envelope is settled in the same direction. The shear character generates only the two-element sign group \(\{1,z\}\). Replacing any one sign by \(\pm i\) gives eight characters outside that group; each has joint rank 24 at the upper shear. Pure shear powers do not source them, and they are not free moduli, so they do not cancel the resonant projection \(-432\). An envelope whose momentum is a root of unity of order greater than 4 remains open. The quadratic stress \(-u^2\) is not attained on the period-2 critical set.
+Modulation by any of the four neighboring L=2 characters stays outside this action through order \(u^5\): on the corrected jet whose resonant projection is \(-432\), those projections vanish. The one-step period-4 envelope is settled in the same direction. The shear character generates only the two-element sign group \(\{1,z\}\). Replacing any one sign by \(\pm i\) gives eight characters outside that group; each has joint rank 24 at the upper shear. Pure shear powers do not source them, and they are not free moduli, so they do not cancel the resonant projection \(-432\). On the line \(z=(-1,t,-1,1)\) the same witness has identically zero quadratic form and identically zero metric block. Its symmetric connection Euler is \(-(t-1)^2/t\) on coordinates 8, 10 and 11, and vanishes only at \(t=1\). The joint symbol has rank 24 over the rational functions of \(t\). Clearing the denominator gives
+\[
+\det(2tH)=2^{24}t^{18}(t-1)^4(2t^8+6t^7+29t^6+54t^5+74t^4+54t^3+29t^2+6t+2).
+\]
+The octic is reciprocal and its cosine reduction \(2w^4+6w^3+21w^2+36w+20\) has no real root, so on the unit circle \(H\) is singular only at \(t=1\). A phase envelope is stationary only there, and the resonant projection \(-432u^5\) then forces the amplitude to vanish. The quadratic stress \(-u^2\) is not attained on this line.
 
 ## 0. Typed target and source contract
 
