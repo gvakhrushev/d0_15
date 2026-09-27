@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# D0_CI_TIMEOUT_SECONDS=900
 """Exact first-order gates for controlled deformations of the E(2) witness.
 
 At (j,gamma,delta)=(2,0,1), compute the Jacobian of the eight missing
@@ -6,6 +7,10 @@ At (j,gamma,delta)=(2,0,1), compute the Jacobian of the eight missing
 deformation.  Independently differentiate adj(I-P) on the four curved faces
 using exact cofactors.  This is a rank gate and linearized correction only;
 it does not certify a finite stationary point.
+
+CI budget: this exact symbolic gate exceeds the default 180 s research
+certificate budget; the declared budget above is a time allowance only and
+does not change any computed value.
 """
 from __future__ import annotations
 
