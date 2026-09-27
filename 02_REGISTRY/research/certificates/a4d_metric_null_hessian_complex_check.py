@@ -322,6 +322,108 @@ check("COFRAME_CONNECTION_EULER_ORDER_AT_LEAST_3",
       min(bottom_finite) == 3 and all(v >= 3 for v in bottom_finite),
       str(sorted(set(bottom_finite))))
 
+
+# ---------------------------------------------------------------------------
+# 7. Flat smooth Schur complement: exact linearized Einstein symbol.
+# ---------------------------------------------------------------------------
+#
+# The joint stationarity equations are
+#
+#   C^T x = 0,
+#   C q + A x = 0.
+#
+# At the trivial character A0=A(1) is invertible. Eliminating x gives the
+# effective metric Euler operator -C^T A^{-1} C. Its leading nonzero symbol
+# is quadratic because C is first order in the character difference.
+
+A0 = HAB.subs({z[r]: 1 for r in range(4)})
+check("TRIVIAL_CONNECTION_BLOCK_DET_256", sp.factor(A0.det()) == 256)
+
+eps = sp.symbols("eps")
+mom = sp.symbols("mom0:4")
+smooth_path = {z[r]: 1 + eps * mom[r] for r in range(4)}
+
+C1 = sp.zeros(24, 10)
+for i in range(24):
+    for j in range(10):
+        entry = sp.cancel(HAQ[i, j].subs(smooth_path))
+        C1[i, j] = sp.simplify(sp.diff(entry, eps).subs(eps, 0))
+
+check("C1_GENERIC_RANK_9", C1.rank() == 9)
+S2 = sp.simplify(C1.T * A0.inv() * C1)
+check("SCHUR_LEADING_SYMMETRIC", S2 == S2.T)
+check("SCHUR_LEADING_RANK_6", S2.rank() == 6)
+
+# Leading forward-coframe metric image.  For a fixed xi,
+# H_raw = eps * mom * xi^T and q = H_raw eta + eta H_raw^T.
+F1 = sp.zeros(10, 4)
+for col in range(4):
+    xi = sp.eye(4)[:, col]
+    Hraw1 = sp.zeros(4)
+    for r in range(4):
+        for a in range(4):
+            Hraw1[r, a] = mom[r] * xi[a]
+    q1 = sp.expand(Hraw1 * ETA + ETA * Hraw1.T)
+    for m, (a, b) in enumerate(SYM):
+        F1[m, col] = q1[a, b]
+
+check("LEADING_COFRAME_METRIC_RANK_4", F1.rank() == 4)
+check("SCHUR_KILLS_FULL_LEADING_COFRAME_IMAGE",
+      sp.simplify(S2 * F1) == sp.zeros(10, 4))
+# rank S2=6 and rank F1=4 imply ker S2 = im F1 over the generic momentum field.
+
+# Standard flat linearized Einstein tensor for a symmetric covariant metric
+# perturbation h_{mu nu}.  mom is the covector k_mu, kup=eta^{mu nu} k_nu.
+# The output is raised to G^{mu nu}, then converted to the repository's ten
+# symmetric metric-coordinate Euler components: off-diagonal variations
+# receive the usual factor two.
+
+kvec = sp.Matrix(mom)
+kup = ETA * kvec
+k2 = (kvec.T * ETA * kvec)[0]
+
+
+def metric_basis_matrix(j):
+    H = sp.zeros(4)
+    a, b = SYM[j]
+    H[a, b] = 1
+    H[b, a] = 1
+    return H
+
+
+def einstein_linear_lower(H):
+    trH = sum(ETA[a, a] * H[a, a] for a in range(4))
+    kkH = (kup.T * H * kup)[0]
+    G = sp.zeros(4)
+    for mu in range(4):
+        for nu in range(4):
+            t1 = kvec[mu] * sum(kup[r] * H[nu, r] for r in range(4))
+            t2 = kvec[nu] * sum(kup[r] * H[mu, r] for r in range(4))
+            G[mu, nu] = sp.Rational(1, 2) * (
+                t1 + t2
+                - k2 * H[mu, nu]
+                - kvec[mu] * kvec[nu] * trH
+                - ETA[mu, nu] * (kkH - k2 * trH)
+            )
+    return sp.expand(G)
+
+
+Ein = sp.zeros(10, 10)
+for j in range(10):
+    Glow = einstein_linear_lower(metric_basis_matrix(j))
+    Gup = sp.expand(ETA * Glow * ETA)
+    for i, (a, b) in enumerate(SYM):
+        factor = 1 if a == b else 2
+        Ein[i, j] = sp.expand(factor * Gup[a, b])
+
+check("LINEAR_EINSTEIN_SYMBOL_RANK_6", Ein.rank() == 6)
+check("SCHUR_EQUALS_HALF_LINEAR_EINSTEIN",
+      sp.simplify(S2 - sp.Rational(1, 2) * Ein) == sp.zeros(10, 10))
+
+# The actual eliminated metric Euler carries the minus sign:
+#   E_eff = - C^T A^{-1} C q
+# so its leading term is exactly -1/2 G^(1) in this convention.
+
 if FAILS:
     print("J2-METRIC-NULL-HESSIAN-COMPLEX: FAIL (%d)" % len(FAILS))
     for f in FAILS:
@@ -336,4 +438,5 @@ print("DETUNE: (D_j C)q=-C(D_j q) identically; the raw fixed-q FUGU detune vecto
 print("AFFINE_ALIGNMENT: among the nine owned L=4 singular orbit types, the null line is in the forward-coframe metric image exactly on orbits 0 and 4.")
 print("SMOOTH_LIMIT: backward and forward rank-one metric shadows agree through h^2; their first mismatch is O(h^3), hence O(h) after h^-2 normalization.")
 print("ASYMPTOTIC_COFRAME: the full forward-coframe joint residual is O(tau^4) in the metric Euler leg and O(tau^3) in the connection Euler leg near z=1.")
+print("EINSTEIN_SCHUR: the leading eliminated metric operator is exactly -1/2 times the flat linearized Einstein symbol; its generic kernel is exactly the four-dimensional leading coframe image.")
 print("SCOPE: exact finite symbol theorem only; no nonlinear response-decoupling or gauge/Einstein promotion.")
