@@ -3,7 +3,7 @@
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
 Execution: PR #240  
 Launch baseline: `83a18af7c08c998ffd7d5bf5209aabaee74a390f`  
-Status: BLOCKED. Both finite NF defects of the fixed solder family are absent from formal period-2 joint solutions. The single missing identity is a joint-critical replacement for (NF) on the whole smooth image. Neither final terminal is claimed.
+Status: IN PROGRESS. On each of the two defect solders the L=8 grid has no NF defect except the carrier already cut at order \(u^5\). Characters outside that grid, and the joint-critical replacement for (NF) on the whole smooth image, remain open. Neither final terminal is claimed.
 
 ## 0. Typed target and source contract
 
@@ -658,7 +658,7 @@ period-2 joint solution. This still does not restore (NF) on other
 characters or other solders, and it does not produce a joint-critical
 sequence.
 
-### 8.9 The shear NF defect is isolated at \(a=1\) on the unipotent family
+### 8.11 The shear NF defect is isolated at \(a=1\) on the unipotent family
 
 Section 9 of this memo left "NF defects on other solders" open. The unipotent
 slice of that route is now closed exactly.
@@ -696,6 +696,27 @@ Two conclusions.
 Scope is narrow and stated: finite \(L=4\) grid, unipotent solder slice,
 rational \(a\). This does not restore global (NF), since the \(a=1\) carrier
 still refutes the algebraic identity, and it does not classify all solders.
+
+### 8.11 L=8 grid on the two defect solders
+
+The same two solders were screened at all \(8^4=4096\) characters. Bracket
+forms are reduced in \(\mathbb F_{17}\) with the L=8 specialization
+\(\omega=9\), \(\sqrt2\mapsto 11\), \(i\mapsto 13\). One mixed 8th root was
+compared entrywise with the exact symbol. Full modular rank certifies full
+rank over \(\mathbb Q(\sqrt2,i)\). The four modularly singular characters on
+each solder were checked exactly.
+
+On both solders the modular rank counts are
+\(\{24:4092,\ 20:2,\ 23:2\}\). The rank-20 characters are the diagonal
+quarter-waves, with vanishing moments. One rank-23 character is a modular
+false positive and is exactly full rank. The remaining character is the cut
+carrier: \((-1,1,-1,1)\) on the upper shear and \((-1,1,1,-1)\) on the chain,
+each with content-one moment \((0,0,0,0,-2,0,0,0,0,0)\). The certificate is
+`a4d_joint_response_defect_l8_check.py`.
+
+Thus on these two solders no 8th-root character other than the cut carriers
+is an NF defect. Characters that are not 8th roots remain open, so this does
+not restore (7.4) on the whole torus.
 
 ### 8.2 Amplitude boundary
 
@@ -765,7 +786,8 @@ identity, but no finite grid can restore a global NF theorem once the shear
 counterexample exists. Conversely, a finite NF failure alone is not the
 requested NOGO.
 
-Current verdict: BLOCKED ON THE MISSING JOINT-CRITICAL REPLACEMENT FOR (NF). Neither
+Current verdict: IN PROGRESS. The L=8 grids of the two defect solders add no
+further NF defect. Neither
 A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED nor
 A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO is claimed.
 
