@@ -12,71 +12,80 @@ Affected claims: `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001`
 
 ## Why delegated
 
-Main separately owns the exact coefficient decomposition of the mixed block,
-the moving metric-null line, the physical same-carrier/cross-character split,
-and the fixed-link second harmonic. What is still missing is one cheap,
-auditable owner for the algebraic collapse of the full harmonic expression.
-Without it, new executors can waste time re-running the closed germ front or
-confuse a frozen-source residual with the moving section.
+The supplied synthesis and merged #296 use the same informal symbol for two
+different harmonic objects. This worker must remove that ambiguity once and
+make future executors consume a typed distinction rather than re-running the
+germ calculation.
 
 ## Dependency gate
 
-Consume current main only. In particular use the merged exact coefficient
-owner for `C(d)=sum_r d_r K_r`, merged #290 for the physical
-same-carrier/cross-character distinction, and merged #296 only as the
-fixed-link harmonic reference.
-
-Do **not** consume open #260 as an input theorem. This worker is independent
-of the N0 nonlinear connection-amplitude germ.
+Consume current main only: the exact `K_r` coefficient owner, merged #290
+for the physical same-carrier/cross-character split, and merged #296 for the
+analytic Gram-lift coefficient. Do not consume open #260 as an input theorem.
 
 ## Objective
 
-With `q0(x)=vec_sym(xx^T)` and
-`M_k=sum_r x_r^k K_r q0(x)`:
+Define two distinct objects.
 
-1. prove coefficientwise in exact arithmetic that
-   `M_1=sum_r x_r K_r q0(x)=0`;
-2. for `d_n,r=(1+x_r)^n-1`, certify the exact binomial identity
-   `F_n=sum_r d_n,r K_r q0(x)=sum_{k>=2} binom(n,k) M_k`;
-3. certify that the first nonzero homogeneous piece for every `n>=2` is
-   `binom(n,2) M_2`, with `deg M_2=4` and next possible degree 5;
-4. certify
-   `sum_{n>=2} binom(n,2) s^(n-1)=s/(1-s)^3`;
-5. on the exact orbit-5/7 physical carriers, evaluate the left-cokernel
-   pairing/image test for the homogeneous pieces needed to compare with the
-   supplied synthesis. If a general all-`k` theorem follows from the exact
-   carrier algebra, prove it; otherwise report the maximal exact range and
-   leave the stronger statement explicitly open;
-6. add hostile controls showing that substituting the frozen/cross-character
-   source reproduces its nonzero residual and is not the same object as the
-   moving-germ tower.
+Bare harmonic operator:
+```text
+B_n(x) := C(d(z^n)) q0(x)
+```
+
+Full #296 Gram-lift coefficient:
+```text
+G_n(x) :=
+  2 * binom(1/2,n) * sigma(x)^(n-1) * B_n(x),
+sigma(x) := x^T eta x.
+```
+
+With `M_k=sum_r x_r^k K_r q0(x)`, certify in exact arithmetic:
+
+1. `M_1=sum_r x_r K_r q0(x)=0`;
+2. `B_n=sum_{k>=2} binom(n,k) M_k`;
+3. for every fixed `n>=2`,
+   `B_n=binom(n,2)M_2+O(||x||^5)`, with `deg M_2=4`;
+4. `sum_{n>=2} binom(n,2)s^(n-1)=s/(1-s)^3`;
+5. after restoring the #296 prefactor,
+   `G_n=O(h^(2n+2))` for generic `x=O(h)`, reconciling the h^4 bare
+   operator with the existing #296 fixed-harmonic scaling;
+6. on exact orbit-5/7 physical carriers, determine the maximal exact
+   left-cokernel/image statement justified for the required `M_k`; do not
+   extrapolate a sampled low-k check into an all-k theorem;
+7. hostile controls must reproduce the frozen/cross-character nonzero
+   residual while keeping same-carrier moving transport distinct.
 
 ## Required checks
 
-- Use exact rational / Gaussian-rational / symbolic arithmetic only.
-- Reconstruct coefficient data from repository owners; do not paste a
-  floating matrix from chat.
-- No SVD, tolerance rank, finite-difference derivative, or numerical fit.
-- The certificate must be deterministic and fast enough for ordinary guards.
-- Run `python3 tools/validate_repo.py`, `python3 tools/validate_work.py`,
-  `python3 tools/lint_claim_strength.py`, and the certificate itself before
-  REVIEW.
+Use exact rational / Gaussian-rational / symbolic arithmetic only. Reconstruct
+coefficient data from repository owners. No SVD, tolerance ranks,
+finite-difference derivatives, or numerical fitting. The certificate must be
+fast enough for ordinary guards.
+
+Run the certificate plus:
+
+```text
+python3 tools/validate_repo.py
+python3 tools/validate_work.py
+python3 tools/lint_claim_strength.py
+```
+
+before REVIEW.
 
 ## Scope guard
 
-This task does not prove stationary-sheet stress, a nonlinear Einstein
-equation, a general continuum theorem, or the odd N0 resonance. It must not
-modify #260/#275/#202, BOOK text, ClaimMap, or release statuses.
+This task does not prove stationary-sheet stress, nonlinear Einstein,
+continuum convergence, or any N0 odd correction. It must not edit
+#260/#275/#202, BOOK, ClaimMap, or release statuses.
 
-The historical `8/5` residual remains a frozen/cross-character diagnostic;
-do not relabel it as a germ stress.
+The historical `8/5` residual remains a frozen/cross-character diagnostic.
 
 ## Exit condition
 
-A deterministic exact certificate and short research note establish the
-harmonic-tower algebra stated above, with the physical-cokernel scope stated
-at exactly the strength actually proved. The task is retired in the same PR
-before Ready.
+A deterministic certificate and short note establish the typed
+`B_n`/full-`G_n` distinction, the exact harmonic algebra, the #296 scaling
+reconciliation, and only the physical-cokernel strength actually proved. The
+task retires in the same PR before Ready.
 
 ## GitHub execution contract
 
@@ -88,6 +97,5 @@ self-merge.
 
 ## Chat handoff
 
-Return the PR, exact terminal, certificate command, homogeneous identities,
-orbit-5/7 physical verdict, and any remaining all-`k` gap. Do not paste a
-large symbolic dump into chat.
+Return the PR, terminal, certificate command, exact `B_n` and `G_n`
+identities, orbit-5/7 verdict, and any remaining all-k gap.
