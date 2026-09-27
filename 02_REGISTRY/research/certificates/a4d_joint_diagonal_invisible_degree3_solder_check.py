@@ -176,11 +176,41 @@ def run_ray(name, dress, probe, sign):
         for degree in (3, 2, 1, 0):
             for a0, b0 in SYM:
                 jet_columns.append(contract(flux, linear_rows(a0, b0), degree))
-        rank, consistent, _solution = solve_image(jet_columns, [-value for value in base])
+        rank, consistent, full_solution = solve_image(jet_columns, [-value for value in base])
         print("SOLDER_JET_IMAGE", rank, consistent, len(jet_columns), flush=True)
         minus_eta = [Fraction(item) for item in (-1, 0, 0, 0, 1, 0, 0, 1, 0, 1)]
         if rank != 15 or not consistent:
             raise SystemExit("solder jet image")
+
+        # A perturbative solder correction around the registered flat frame
+        # cannot change its degree-0 term.  The first ten columns above are
+        # precisely that constant term (they multiply the degree-3 link
+        # forcing).  Test the genuine positive-degree jet separately before
+        # interpreting the 40-column image as a regular continuation.
+        positive_rank, positive_ok, positive_solution = solve_image(
+            jet_columns[10:], [-value for value in base]
+        )
+        print(
+            "POSITIVE_DEGREE_SOLDER_JET",
+            positive_rank,
+            positive_ok,
+            [str(value) for value in positive_solution],
+            flush=True,
+        )
+        # Also expose each filtration stage: q_1 only, q_1+q_2, and
+        # q_1+q_2+q_3.  These are the only regular formal correction spaces.
+        for upto in (20, 30, 40):
+            stage_rank, stage_ok, _stage_solution = solve_image(
+                jet_columns[10:upto], [-value for value in base]
+            )
+            print(
+                "POSITIVE_SOLDER_STAGE",
+                upto // 10 - 1,
+                stage_rank,
+                stage_ok,
+                flush=True,
+            )
+
         constant_rank, constant_ok, constant_solution = solve_image(
             jet_columns[:10], [-value for value in base]
         )
