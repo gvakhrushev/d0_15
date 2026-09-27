@@ -514,7 +514,33 @@ On this constant background the identity connection has vanishing curvature, hen
 
 ### 8.5 Flat L=8 census
 
-The same #216 symbols were screened on all \(8^4=4096\) flat-solder characters. A sound \(\mathbb F_{17}\) minor leaves 44 candidates. Exact rank over \(\mathbb Q(\sqrt2,i)\) confirms all 44 are singular, with nullity counts 42 of dimension 1 and 2 of dimension 4. Every one of the 440 response moments vanishes. This is a finite flat-solder stress test. It does not restore global (NF): the shear witness of §8.3 remains a counterexample on a non-flat solder.
+The merged #216 owner symbols \(H_{AA}(z)\) and \(H_{AQ}(z)\) are compiled
+once as rational Laurent polynomials in the four table phases and specialized
+to \(\mathbb F_{17}\), with \(\omega=9\) of order eight, \(\sqrt2\mapsto 11\) and
+\(i\mapsto 13\). Every Laurent coefficient denominator is checked nonzero mod
+17, so the specialization is sound. A full-rank modular minor certifies full
+rank over \(K=\mathbb Q(\sqrt2,i)\); modularly singular points are then
+verified exactly in \(K\).
+
+This census was first reported in session logs only. It has been re-run here
+from scratch against the committed certificate
+`certificates/a4d_joint_response_nf_l8_check.py` and reproduces exactly, with
+zero failures:
+
+| quantity | value |
+|---|---|
+| characters scanned | \(8^4 = 4096\) |
+| modular rank profile | \(\{24: 4052,\ 23: 42,\ 20: 2\}\) |
+| candidates after the modular screen | 44 |
+| exact joint ranks on survivors | \(\{23: 42,\ 20: 2\}\) |
+| \((\mathrm{rank}\,H_{AA},\ \mathrm{nullity})\) distribution | \((22,1)\times 36,\ (20,1)\times 6,\ (16,4)\times 2\) |
+| exact response-moment tests | \(44\times 10 = 440\), all zero |
+
+Every candidate is additionally checked against the #216 owner symbols \(H\)
+and \(C=H_{AQ}^{\mathsf T}\) in the documented inverse-polarization
+convention, so the census is convention-controlled and not a re-derivation.
+This is a finite flat-solder stress test. It does not restore global (NF): the
+shear witness of \S 8.3 remains a counterexample on a non-flat solder.
 
 It does not establish (NF) on the continuous unit torus away from this finite
 grid, nor at every Gram in the compact chart. The conditional homogenization
