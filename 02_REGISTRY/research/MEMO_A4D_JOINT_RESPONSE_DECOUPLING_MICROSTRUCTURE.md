@@ -717,7 +717,7 @@ each with content-one moment \((0,0,0,0,-2,0,0,0,0,0)\). The certificate is
 Thus on these two solders no 8th-root character other than the cut carriers
 is an NF defect.
 
-### 8.12 Sixteenth roots on the same solders
+### 8.13 Sixteenth roots on the same solders
 
 All \(16^4=65536\) characters were ranked in \(\mathbb F_{17}\), where \(3\)
 has order 16. Full modular rank certifies full rank. The characters that
