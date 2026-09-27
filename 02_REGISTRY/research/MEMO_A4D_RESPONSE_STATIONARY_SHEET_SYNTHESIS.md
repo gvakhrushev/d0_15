@@ -510,6 +510,15 @@ The first missing global statement remains the annihilation of (R) on
 nonlinearly realizable correlations. The proposed first calculation now
 targets the mechanism deciding that statement, not more connection ranks.
 
+The quadratic piece of that calculation is now exact at the shear witness.
+`a4d_joint_response_shear_reduced_quadratic_check.py` takes
+\(\Phi=\tfrac12 u^2 v^*H(Q)v\) on \(z=(-1,1,-1,1)\). Then \(\partial_u\Phi=0\)
+for every amplitude, and \(\partial_{q_{11}}\Phi=-u^2\). At this character
+\(d=(-2,0,-2,0)\) and \(q_0=dd^T\) is supported on slots \((00,02,22)\) only,
+so its witness stress is 0. Frequency absorption and the \(q_{11}\) stress
+are different slots of one quadratic action. A slowly modulated packet and
+the order-\(u^5\) reduced connection jet are not decided by \(\Phi\) at this order.
+
 ## 10. Evidence and boundaries
 
 The accompanying certificate

@@ -15,6 +15,13 @@ the FUGU v7 physical ranks at orbits 5 and 7 from 24 to 23. A zero obstruction
 class is distinct from a zero cokernel, and moving-germ absorption does not
 annihilate the separate quadratic metric-response defect.
 
+Quadratic slots at the shear witness, from one symbol
+`a4d_joint_response_shear_reduced_quadratic_check.py`:
+on \(z=(-1,1,-1,1)\) the moving germ is \(q_0=4E_{00}+4E_{02}+4E_{22}\) and has no \(q_{11}\) entry.
+\(\Phi=\tfrac12 u^2 v^*H(Q)v\) has \(\partial_u\Phi=0\) for every \(u\), while
+\(\partial_{q_{11}}\Phi=-u^2\). The germ direction itself has witness stress 0.
+Modulation and the order-\(u^5\) jet remain outside this quadratic action.
+
 ## 0. Typed target and source contract
 
 On the unit four-torus let h=1/L and Q_h(x)=g(hx), for one fixed smooth
