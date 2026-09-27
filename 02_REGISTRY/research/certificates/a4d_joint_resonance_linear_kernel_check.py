@@ -15,22 +15,21 @@ with the genuine symmetric metric lift q -> H = (1/2) q eta, and then computes
     N   = ker H_AA
     N_0 = ker H_AA ∩ ker H_AQ
 
-for all nine owned singular orbit representatives, together with the full
-mixed joint Hessian
-
-    H_J = [[0, H_AQ], [H_AA, 0]].
+for all nine owned singular orbit representatives.  The terminal owned by
+this checker is the polarized N_0/curvature census; later sections retain
+auxiliary carrier diagnostics but do not claim the still-open
+metric/connection/mixed/gauge decomposition.
 
 Conventions fixed here (they were ambiguous in the brief and are certified
 below):
 
-* H_AA is the polarized connection block. It is NOT symmetric, so the joint
-  Hessian is formed with the owned HAB block as-is, not with its symmetrization.
-* H_AQ is 10 x 24 (metric rows, connection columns). N_0 is computed as the
-  nullspace of the 34 x 24 matrix [H_AA^T ; H_AQ], i.e. exactly
-  { x : H_AA x = 0 and H_AQ x = 0 }.
-* r_A in the #208/#216 inventory is rank([H_AQ ; H_AA^T]), so d := r_A - r_H is
-  the *image dimension*, NOT dim N_0. The brief's expected map is
-  (r_H, r_A, d) -> dim N_0 and is reproduced exactly.
+* H_AA is the polarized connection block and is NOT symmetric.
+* The physical metric-response map on a connection amplitude is
+  H_QA = H_AQ^T (10 x 24).  N_0 is computed exactly as
+  null([H_AA ; H_QA]), i.e. {x : H_AA x = 0 and H_QA x = 0}.
+* r_A in the #208/#216 inventory is the owned augmented rank; the exact
+  right-kernel census below reproduces the expected N_0 dimensions directly,
+  rather than inferring them from rank arithmetic alone.
 
 Terminal: J2-POLARIZED-L4-N0-CURVATURE-CENSUS-CERTIFIED
 
@@ -365,11 +364,10 @@ check("NONZERO_N0_ORBITS_ARE_0_4_5_7",
 #            [ H_AQ       , A      ]].       H_AQ = B    (24 x 10)
 #
 # NOTE on A.  The owned HAB is a POLARIZED block: it is d^2/da db of the
-# connection bilinear and is NOT symmetric, so 1/2 a^T HAB a is not a
-# quadratic action.  The genuine quadratic action carried by the flat star
-# background is the symmetrized block A = H_AA + H_AA^T.  The antisymmetric
-# remainder is an exact 2-form on the connection sector; it is a separate
-# (Palatini/magnetic) channel and is NOT part of a symmetric carrier.
+# connection bilinear and is NOT symmetric.  The symmetrized block
+# A = H_AA + H_AA^T below is therefore retained only as an AUXILIARY
+# fixed-character bookkeeping carrier.  It is not identified with the
+# physical conjugate-character Hessian and is not used by the terminal.
 #
 # NOTE on degeneracy.  On the diagonal quarter-wave orbit A = H + H^T is
 # identically zero, i.e. the symmetric connection action vanishes there and
@@ -380,7 +378,7 @@ check("NONZERO_N0_ORBITS_ARE_0_4_5_7",
 # decomposition is asserted.
 
 # ---------------------------------------------------------------------------
-# 6b. Conjugate-paired REAL physical carrier
+# 6b. Conjugate-doubled REAL carrier diagnostic
 # ---------------------------------------------------------------------------
 #
 # The auxiliary block A = H_AA + H_AA^T above is a convention choice, and on
@@ -402,10 +400,10 @@ check("NONZERO_N0_ORBITS_ARE_0_4_5_7",
 #     H_J^real = [[ 0_{20x20}, C_real^T],
 #                 [ C_real    , A_real   ]].
 #
-# A_real is a true non-degenerate connection operator on every orbit, unlike
-# the auxiliary symmetrization.  The ranks below are therefore the physical
-# statement the task asked for, and the auxiliary column is kept only to show
-# how the two differ.
+# This standard realification is an exact algebraic diagnostic of the complex
+# symbol.  It is NOT by itself the requested Lorentz/metric quotient
+# decomposition and is not promoted to the terminal; the direct
+# conjugate-character interpretation remains separately fenced in the memo.
 
 def real_pair_square(M):
     R_, I_ = sp.re(M), sp.im(M)
