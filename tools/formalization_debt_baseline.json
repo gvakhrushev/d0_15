@@ -21,13 +21,6 @@
       "line": "396",
       "detail": "1000000",
       "reason": "Removing the local override and running the narrow target failed in simp at its commuting-sign theorem with the default 200000-heartbeat limit."
-    },
-    {
-      "path": "03_FORMALIZATION/D0/Gravity/A4DSchurEinsteinDirectIdentification.lean",
-      "kind": "unreachable-module",
-      "line": "1",
-      "detail": "D0.Gravity.A4DSchurEinsteinDirectIdentification",
-      "reason": "Individual formalization task explicitly forbids editing D0/All.lean; CONTROL will integrate the accepted disjoint formalization modules together after review."
     }
   ]
 }
