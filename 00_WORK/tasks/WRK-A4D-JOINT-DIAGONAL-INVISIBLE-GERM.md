@@ -70,7 +70,7 @@ Start from the required merged/stacked dependency. Open Draft before substantive
 
 ## Blocker
 
-The complex quarter-wave and its conjugate are cut by the corrected degree-4 metric Euler. The real cosine and sine dressings of \(u=(0,0,1,1)\) are curved at degree 1 and jointly stationary through degree 6 in the even channels: the degree-6 zero-mode and character-\((-1)\) forcings are solved by the rank-24 Hessians, and the degree-6 metric Euler vanishes. The resonant connection Euler vanishes through degree 7. The orthogonal degree-3 Euler does not: its cosine/sine pairings with \(e_0+e_1+e_2\) are \(64\) and \(-64\), and no degree-3 link correction moves that pairing.
+The complex quarter-wave and its conjugate are cut by the corrected degree-4 metric Euler. The real cosine and sine dressings of \(u=(0,0,1,1)\) are curved at degree 1 and jointly stationary through degree 6 in the even channels: the degree-6 zero-mode and character-\((-1)\) forcings are solved by the rank-24 Hessians, and the degree-6 metric Euler vanishes. The resonant connection Euler vanishes through degree 7. The orthogonal degree-3 Euler does not: its cosine/sine pairings with \(e_0+e_1+e_2\) are \(64\) and \(-64\), and no degree-3 link correction moves that pairing. Constant Gram shifts cancel it only on degenerate frames. A solder jet of degrees 0 through 3 has linear image rank 15 and contains the forcing; its degree-3 metric Euler is the remaining identity.
 
 PR #264, terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL`, closes the affine bypass: the flat coframe image is not joint-Hessian-null on the singular L4 orbits, so it cannot delete those regular variables.
 

@@ -11,10 +11,10 @@
 
 ```text
 BLOCKED
-J2-DIAGONAL-INVISIBLE-ORTHOGONAL-DEGREE-3-EULER-OUTSIDE-LINK-IMAGE
+J2-DIAGONAL-INVISIBLE-ORTHOGONAL-DEGREE-3-SOLDER-JET-METRIC-MISSING
 ```
 
-The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). On the real cosine and sine dressings the resonant weight has connection Euler zero through degree 7 after the degree-2 even correction. The orthogonal weight does not. For the cosine its degree-3 part is \((0,32,32,0,0,0,\ 0,0,0,32,32,0,\ 0,-32,0,-32,0,0,\ 0,0,-32,0,-32,0)\), and the sine vector is the negative. The covector \(e_0+e_1+e_2\) pairs with these vectors to \(64\) and \(-64\). Every degree-3 link correction, expanded in the four Fourier weights, leaves that pairing unchanged. The forcing is therefore outside the image. A higher-order correction does not enter degree 3. Neither isolation nor a finite curved germ is claimed.
+The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). On the real cosine and sine dressings the resonant weight has connection Euler zero through degree 7 after the degree-2 even correction. The orthogonal weight does not. For the cosine its degree-3 part is \((0,32,32,0,0,0,\ 0,0,0,32,32,0,\ 0,-32,0,-32,0,0,\ 0,0,-32,0,-32,0)\), and the sine vector is the negative. The covector \(e_0+e_1+e_2\) pairs with these vectors to \(64\) and \(-64\). Every degree-3 link correction, expanded in the four Fourier weights, leaves that pairing unchanged. The forcing is therefore outside the image. A higher-order link correction does not enter degree 3. In the Gram chart \(H(q)=q\eta/2\) the derivative along the ten constant components has rank 10, with unique direction \(q=-\eta\). On the line \(t(-\eta)\) the Euler is \((1-t/2)^2\) times the forcing, hence zero only at the zero frame \(t=2\). Every constant root has \(\det(I+\eta q/2)=0\). A solder jet of degrees \(0\) through \(3\) has linear image rank 15 and does contain the forcing. The degree-3 metric Euler of that jet is the remaining identity. Neither isolation nor a finite curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -147,7 +147,7 @@ and the zero-mode forcing is its negative. Both cosine corrections equal
 \]
 The sine character-\((-1)\) forcing equals the sine zero-mode forcing, and both equal the negative of the cosine character-\((-1)\) forcing. The sine character-\((-1)\) correction is the negative of the vector above; the sine zero-mode correction equals that vector. After these corrections the degree-6 metric Euler is zero on all ten Gram components.
 
-On the resonant weight the connection Euler stays zero through degree 7. On the orthogonal weight the cosine Euler is nonzero at degrees 3, 5 and 7; the sine Euler is the negative. The degree-3 piece is the vector in §0. Its pairing with \(e_0+e_1+e_2\) is \(64\) for the cosine and \(-64\) for the sine, and no degree-3 link correction changes that pairing. This is the first failure of the real-ray connection jet.
+On the resonant weight the connection Euler stays zero through degree 7. On the orthogonal weight the cosine Euler is nonzero at degrees 3, 5 and 7; the sine Euler is the negative. The degree-3 piece is the vector in §0. Its pairing with \(e_0+e_1+e_2\) is \(64\) for the cosine and \(-64\) for the sine, and no degree-3 link correction changes that pairing. This is the first failure of the real-ray connection jet. Constant Gram shifts cancel it only on frames with \(\det(I+\eta q/2)=0\). A solder jet of degrees \(0\) through \(3\) has linear image rank 15 and contains the forcing; its metric Euler is not yet computed.
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 
@@ -155,6 +155,7 @@ No torsion constraint, new action channel, \(\varphi\)-selector, or global Einst
 
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_joint_diagonal_invisible_germ_check.py
+python3 02_REGISTRY/research/certificates/a4d_joint_diagonal_invisible_degree3_solder_check.py
 python3 tools/validate_repo.py
 python3 tools/validate_work.py
 ```
