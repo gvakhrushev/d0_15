@@ -70,7 +70,7 @@ Start from the required merged/stacked dependency. Open Draft before substantive
 
 ## Blocker
 
-The branch records an odd-holonomy quadratic system only after the regular connection coordinates are set to zero. That is not a Lyapunov–Schmidt elimination. Acceptance needs the regular equations solved for \(r(u)\), that correction substituted into \(E_Q\), and the same check on the conjugate-paired real carrier.
+The L=4 pure-mode odd-holonomy sum starts at degree 4. Its connection-critical line is \(u_0=u_1=0\), \(u_2^3=u_3^3\), and the pure-mode metric Euler is nonzero there. Acceptance still needs the character-\((-1)\) quadratic correction and the same-character regular cubic correction substituted into \(E_Q\), on the conjugate-paired real carrier. The single-plaquette system with regular coordinates set to zero is not that elimination.
 
 PR #264, terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL`, closes the affine bypass: the flat coframe image is not joint-Hessian-null on the singular L4 orbits, so it cannot delete those regular variables.
 

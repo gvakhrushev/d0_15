@@ -11,12 +11,12 @@
 
 ```text
 BLOCKED
-J2-DIAGONAL-INVISIBLE-LYAPUNOV-SCHMIDT-CORRECTION-MISSING
+J2-DIAGONAL-INVISIBLE-QUARTIC-HARMONIC-CORRECTION-MISSING
 ```
 
-The origin-isolated terminal is not accepted. The calculation below proves that \(H_{AA}\) is injective on a complement of the diagonal kernel and then sets the regular coordinates to zero. That is not the Lyapunov–Schmidt elimination required by the brief.
+The origin-isolated terminal is not accepted. Section 2 sets the regular coordinates to zero in a single plaquette. That is not the Lyapunov–Schmidt elimination required by the brief.
 
-The missing object is the solved correction \(r(u)=O(u^2)\) of the regular connection equations, substituted into \(E_Q\). A nonzero \(r_2(u)\) can enter the metric equation at the same quadratic order through the mixed block. Until that substitution is carried out on the conjugate-paired real carrier, neither isolation nor a curved germ is claimed.
+Section 5 replaces it by the L=4 sum of the same odd-holonomy scalar on a pure census mode. Degrees 0 through 3 cancel. The first pure-mode response is degree 4. Its connection-critical set is the line \(u_0=u_1=0\), \(u_2^3=u_3^3\), and the constant-solder metric Euler is nonzero on that line. This evaluation holds every other Fourier amplitude at zero. A quadratic correction at character \((-1,-1,-1,-1)\), and the same-character regular cubic correction, can still enter \(E_Q\) at degree 4. Those corrections are not solved. The conjugate character \((-i,-i,-i,-i)\) is not included. Neither isolation nor a curved germ is claimed.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -75,9 +75,33 @@ The only solution is the origin. The Jacobian of \(E_K^{\rm red}\) has rank 2, a
 - #225 moves the visible coordinates on \(\lambda_0\) and \(w\). Those lines are the complement of \(N_0\). The slow-background splitting does not decide this sector.
 - The connection-only quartic on \((a,b,c,d)\) is supported on that visible complement. It is not this joint system.
 
-## 4. Boundary
+## 4. Boundary of the single-plaquette truncation
 
-Section 2 is the odd-holonomy quadratic system with the regular coordinates set to zero. It is retained as a calculation, not as an isolation theorem. The first missing coefficient is the quadratic regular correction \(r_2(u)\) and its image under the mixed metric block.
+Section 2 is retained as a calculation, not as an isolation theorem. Its quadratic system is not the torus Euler: the same scalar, summed over the L=4 grid, cancels through degree 3.
+
+## 5. Pure-mode degree-4 response
+
+Let the link at site \(x\) in direction \(r\) be \(\exp(\zeta(x)\, u_r M_r)\), with \(\zeta(x)=i^{x_0+x_1+x_2+x_3}\) and \(M_r\) the census generator of coordinate \(u_r\). Sum the odd-holonomy scalar over all sites and all six face orientations. The sum is
+
+\[
+\begin{aligned}
+V_4=-128 i\, u_0\big(
+&u_0^2(3-3i)(u_1-u_2+u_3)
++u_0(-2+3i)(u_1^2+u_2^2+u_3^2)\\
+&+(-1+i)(u_1^3-u_2^3+u_3^3)
+\big).
+\end{aligned}
+\]
+
+Degrees 0, 1, 2, and 3 are zero. The connection Euler \(\nabla V_4=0\) is the cone \(u_0=0\), \(u_1^3=u_2^3-u_3^3\). Pairing the same quartic against the visible kernel vectors gives zero on \(\lambda_0\), \(\lambda_5\), and \(\lambda_7\). The \(\lambda_2\) pairing cuts the cone to
+
+\[
+u_0=u_1=0,\qquad u_2^3=u_3^3.
+\]
+
+On that line the constant-solder metric Euler starts at degree 4. At \((u_2,u_3)=(1,1)\) its Gram component \((0,2)\) equals 32. The same component is nonzero at the other two cube roots of unity. So the pure mode is not a joint zero.
+
+The missing substitution is the order-\(\varepsilon^2\) correction at character \((-1,-1,-1,-1)\), together with the same-character regular cubic correction, into this degree-4 metric Euler. The conjugate quarter-wave is a separate orbit and is not folded into \(V_4\).
 
 No torsion constraint, new action channel, \(\varphi\)-selector, or global Einstein equation is used. The four-space is census data on one L4 orbit. It is not a local Lorentz quotient, and the #264 coframe descent is not a gauge deletion of the regular variables.
 

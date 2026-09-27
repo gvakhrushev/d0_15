@@ -8,17 +8,18 @@ invertible on a complement of the 8-dimensional diagonal kernel, which is the
 #216 range elimination. The source-invisible coordinates are the 4-dimensional
 kernel of H_QA on that kernel.
 
-The polarized curvature_mixed scalar vanishes on that four-space. The odd
-plaquette holonomy (P - P^{-1})/2 is then expanded with the regular
-coordinates set to zero. That truncation is not a Lyapunov-Schmidt
-elimination: a solved correction r(u)=O(u^2) can still enter E_Q at
-quadratic order. The affine coframe descent is not a gauge deletion of
-those regular variables.
+The polarized curvature_mixed scalar vanishes on that four-space. A
+single-plaquette odd-holonomy truncation with the regular coordinates set
+to zero is recorded below and is not an isolation theorem. The L=4 torus
+sum of the same scalar on a pure N_0 mode starts at degree 4. Its
+connection-critical line is cut by the pure-mode metric Euler, but the
+quadratic character-(-1) correction has not been substituted, so the script
+stays blocked. The affine coframe descent is not a gauge deletion.
 
 No new action channel, torsion constraint, or Einstein equation is used.
 """
 
-from itertools import combinations
+from itertools import combinations, product
 import json
 from pathlib import Path
 
@@ -394,10 +395,178 @@ check(
     solutions == [{u0: 0, u1: 0, u2: 0, u3: 0}],
 )
 
+# L=4 torus sum on a pure N_0 mode. Other Fourier amplitudes stay zero.
+# Degrees 0--3 cancel. Degree 4 is the first pure-mode response.
+TORUS_DEG = 4
+
+
+def _exp_series(X, deg):
+    out = [sp.zeros(4) for _ in range(deg + 1)]
+    out[0] = sp.eye(4)
+    power = sp.eye(4)
+    fact = 1
+    for k in range(1, deg + 1):
+        power = sp.expand(power * X)
+        fact *= k
+        out[k] = sp.expand(power / fact)
+    return out
+
+
+def _mul_series(A, B, deg):
+    out = [sp.zeros(4) for _ in range(deg + 1)]
+    for i in range(deg + 1):
+        for j in range(deg + 1 - i):
+            out[i + j] = sp.expand(out[i + j] + A[i] * B[j])
+    return out
+
+
+def _inv_series(P, deg):
+    higher = [sp.zeros(4) for _ in range(deg + 1)]
+    for k in range(1, deg + 1):
+        higher[k] = P[k]
+    acc = [sp.zeros(4) for _ in range(deg + 1)]
+    acc[0] = sp.eye(4)
+    power = [sp.zeros(4) for _ in range(deg + 1)]
+    power[0] = sp.eye(4)
+    sign = -1
+    for _ in range(deg):
+        power = _mul_series(power, higher, deg)
+        acc = [sp.expand(acc[k] + sign * power[k]) for k in range(deg + 1)]
+        sign = -sign
+    return acc
+
+
+def _torus_pair(extra_role, extra_weights):
+    """Coefficient of t^3 s in the torus action of t*N_0(u) + s*direction."""
+    tt, ss = sp.symbols("tt ss")
+    extra = sp.zeros(4)
+    for j, weight in enumerate(extra_weights):
+        extra += weight * GEN[j]
+    forward = {}
+    for role in range(4):
+        for kzeta in range(4):
+            zeta = sp.I**kzeta
+            bump = extra if role == extra_role else sp.zeros(4)
+            forward[(role, kzeta)] = _exp_series(zeta * (tt * u[role] * Ms[role] + ss * bump), TORUS_DEG)
+    counts = [0, 0, 0, 0]
+    for site in product(range(4), repeat=4):
+        counts[sum(site) % 4] += 1
+    total = 0
+    for kzeta, mult in enumerate(counts):
+        kshift = (kzeta + 1) % 4
+        for p, q in PAIRS:
+            hol = forward[(p, kzeta)]
+            hol = _mul_series(hol, forward[(q, kshift)], TORUS_DEG)
+            hol = _mul_series(hol, _inv_series(forward[(p, kshift)], TORUS_DEG), TORUS_DEG)
+            hol = _mul_series(hol, _inv_series(forward[(q, kzeta)], TORUS_DEG), TORUS_DEG)
+            hinv = _inv_series(hol, TORUS_DEG)
+            uu, vv = [i for i in range(4) if i not in (p, q)]
+            area = wedge_vec(basis_cols[uu], basis_cols[vv])
+            sgn = complement_orientation((p, q))
+            for deg in range(TORUS_DEG + 1):
+                odd = sp.expand(sp.Rational(1, 2) * (hol[deg] - hinv[deg]))
+                total += mult * sgn * (
+                    area.T * G2 * STAR * bivector_of_tangent(odd)
+                )[0]
+    poly = sp.Poly(sp.expand(total), tt, ss)
+    return sp.expand(poly.coeff_monomial(tt**3 * ss))
+
+
+_forward = {}
+for _role in range(4):
+    for _kzeta in range(4):
+        _forward[(_role, _kzeta)] = _exp_series((sp.I**_kzeta) * u[_role] * Ms[_role], TORUS_DEG)
+_counts = [0, 0, 0, 0]
+for _site in product(range(4), repeat=4):
+    _counts[sum(_site) % 4] += 1
+_pot = [0 for _ in range(TORUS_DEG + 1)]
+_eq = [[0 for _ in range(TORUS_DEG + 1)] for _ in range(10)]
+_hcols = []
+for _j, (_a0, _b0) in enumerate(SYM):
+    _q = sp.zeros(4)
+    _q[_a0, _b0] = _q[_b0, _a0] = 1
+    _H = sp.Rational(1, 2) * _q * ETA
+    _hcols.append([sp.Matrix(_H[_r, :]).T for _r in range(4)])
+for _kzeta, _mult in enumerate(_counts):
+    _kshift = (_kzeta + 1) % 4
+    for _p, _q in PAIRS:
+        _hol = _forward[(_p, _kzeta)]
+        _hol = _mul_series(_hol, _forward[(_q, _kshift)], TORUS_DEG)
+        _hol = _mul_series(_hol, _inv_series(_forward[(_p, _kshift)], TORUS_DEG), TORUS_DEG)
+        _hol = _mul_series(_hol, _inv_series(_forward[(_q, _kzeta)], TORUS_DEG), TORUS_DEG)
+        _hinv = _inv_series(_hol, TORUS_DEG)
+        _uu, _vv = [i for i in range(4) if i not in (_p, _q)]
+        _area = wedge_vec(basis_cols[_uu], basis_cols[_vv])
+        _sgn = complement_orientation((_p, _q))
+        for _deg in range(TORUS_DEG + 1):
+            _odd = sp.expand(sp.Rational(1, 2) * (_hol[_deg] - _hinv[_deg]))
+            _bv = bivector_of_tangent(_odd)
+            _pot[_deg] += _mult * _sgn * (_area.T * G2 * STAR * _bv)[0]
+            for _j in range(10):
+                _Bvar = wedge_vec(_hcols[_j][_uu], basis_cols[_vv]) + wedge_vec(
+                    basis_cols[_uu], _hcols[_j][_vv]
+                )
+                _eq[_j][_deg] += _mult * _sgn * (_Bvar.T * G2 * STAR * _bv)[0]
+
+for _deg in range(4):
+    check("TORUS_POTENTIAL_DEGREE_%d_VANISHES" % _deg, sp.expand(_pot[_deg]) == 0)
+V4 = sp.expand(_pot[4])
+_expected_V4 = sp.factor(
+    -128 * sp.I * u0 * (
+        u0**2 * u1 * (3 - 3 * sp.I)
+        + u0**2 * u2 * (-3 + 3 * sp.I)
+        + u0**2 * u3 * (3 - 3 * sp.I)
+        + u0 * u1**2 * (-2 + 3 * sp.I)
+        + u0 * u2**2 * (-2 + 3 * sp.I)
+        + u0 * u3**2 * (-2 + 3 * sp.I)
+        + u1**3 * (-1 + sp.I)
+        + u2**3 * (1 - sp.I)
+        + u3**3 * (-1 + sp.I)
+    )
+)
+check("TORUS_POTENTIAL_DEGREE_4", sp.expand(V4 - _expected_V4) == 0)
+_EK4 = [sp.expand(sp.diff(V4, ui)) for ui in u]
+_cone = sp.solve(_EK4, list(u), dict=True)
+check(
+    "TORUS_CONNECTION_EULER_IS_THE_CONE",
+    _cone != [] and all(sol.get(u0, None) == 0 for sol in _cone),
+)
+_lam2 = _torus_pair(1, (1, 0, 0, 0, 1, 1))
+_lam2_expected = sp.expand(
+    -64 * sp.I * (
+        u0 * u1**2 * (4 - 4 * sp.I)
+        + u1**2 * u2 * (-1 + sp.I)
+        + u1**2 * u3 * (1 - sp.I)
+        + u1 * u2**2 * (2 - 3 * sp.I)
+        + u1 * u3**2 * (2 - 3 * sp.I)
+        + u2**3 * (-1 + sp.I)
+        + u3**3 * (1 - sp.I)
+    )
+)
+check("TORUS_LAMBDA2_PAIRING", sp.expand(_lam2 - _lam2_expected) == 0)
+check("TORUS_LAMBDA0_PAIRING_VANISHES", _torus_pair(0, (1, 1, 1, 0, 0, 0)) == 0)
+_cube_line = sp.solve(
+    [u0, u1, u1**3 - u2**3 + u3**3, sp.expand(_lam2.subs({u0: 0}))],
+    list(u),
+    dict=True,
+)
+check(
+    "TORUS_LAMBDA2_CUTS_CONE_TO_CUBE_LINE",
+    _cube_line != [] and all(sol.get(u0, None) == 0 and sol.get(u1, None) == 0 for sol in _cube_line),
+)
+_eq4 = [sp.expand(_eq[j][4]) for j in range(10)]
+check("TORUS_METRIC_EULER_BELOW_DEGREE_4_VANISHES", all(sp.expand(_eq[j][d]) == 0 for j in range(10) for d in range(4)))
+for _root in (1, -sp.Rational(1, 2) - sp.I * sp.sqrt(3) / 2, -sp.Rational(1, 2) + sp.I * sp.sqrt(3) / 2):
+    _vals = [sp.expand(comp.subs({u0: 0, u1: 0, u2: _root, u3: 1})) for comp in _eq4]
+    check("TORUS_METRIC_EULER_NONZERO_ON_CUBE_ROOT", any(val != 0 for val in _vals))
+check(
+    "TORUS_RAY_0011_METRIC_COMPONENT",
+    sp.expand(_eq4[2].subs({u0: 0, u1: 0, u2: 1, u3: 1})) == 32,
+)
+
 print("INVISIBLE_COORDINATES", list(INVISIBLE_INDEX))
-print("EK_RED_DEGREE", 1)
-print("EQ_RED_DEGREE", 2)
-print("JOINT_JACOBIAN_RANK", 2)
-print("BLOCKED: J2-DIAGONAL-INVISIBLE-LYAPUNOV-SCHMIDT-CORRECTION-MISSING")
-print("MISSING: solved regular correction r(u)=O(u^2) substituted into E_Q")
+print("TORUS_FIRST_POTENTIAL_DEGREE", 4)
+print("TORUS_CONNECTION_CRITICAL_LINE", "u0=u1=0, u2**3=u3**3")
+print("BLOCKED: J2-DIAGONAL-INVISIBLE-QUARTIC-HARMONIC-CORRECTION-MISSING")
+print("MISSING: character-(-1) quadratic correction and same-character regular cubic correction substituted into E_Q")
 print("CLOSED_BYPASS: J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL")
