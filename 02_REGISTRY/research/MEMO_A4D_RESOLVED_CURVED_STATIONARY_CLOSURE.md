@@ -2092,3 +2092,83 @@ obstructed by necessary coupled equations through affine order four.
 Unequal upper solder scales, its unfixed common block, translations with
 other vector components/modes, and finite off-seed amplitudes are not
 retired. Task remains `IN_PROGRESS`/Draft; no finite L=2 witness or L=3.
+
+### 9.23 Unequal upper scales and unfixed common solder block
+
+The same ratio certificate is extended over `QQ(rho,u,t)`, without fixing
+the second upper scale or the common upper-block modulus. The leading solder
+is now the full normalized conformal critical form
+
+```text
+T=[[1+rho+lambda,1+lambda,p3,p4],
+   [rho+lambda,lambda,p3,p4],
+   [p5,p5,d,c],[p7,p7,-c,d]], rho!=0.
+```
+
+The support-5 tangent is `v=(-4*rho,u,-1,t,t,0,1)`. All lower solder
+moduli, lambda, rho, both blind tangent coefficients, translations
+`b0=z*e0,b1=0,b2=r*e0,b3=e0` in mode 1100, and all four coefficients remain
+free before the necessary equations. No arbitrary-background construction
+or extra action channel is used.
+
+The literal normal channel responses of §9.22 remain unchanged; the star
+pair source becomes `64*rho`. The necessary leading linear system is
+uniformly invertible for real r and rho!=0 and fixes
+
+```text
+Gamma=-rho/(512*(r^2+1)),
+c+d=(r^2-1)/(r^2+1), c-d=6*r/(r^2+1).
+```
+
+The necessary affine row sum is now `-128*rho*(r+1)/(r^2+1)`, independent of
+all seven second amplitudes. It still forces r=-1. The q=0 chart remains
+inconsistent. At r=-1, two actual rows force `z=-4` and
+`q*(u-2)=rho/512`.
+
+The complete solder-order-three range is recomputed with this unfixed
+upper block and its actual tangent, not imported by specializing a
+rho=1 result. The common modulus lambda cancels from the reduced necessary
+system. Eliminating the rank-two solder image and all second-amplitude
+quotient variables gives the same u(t) and p3,p4,p5,p7(t) of §9.22; the
+second role-0 N3 amplitude is multiplied by rho. The un-divided t=2 range
+obstruction remains 512. The uniform rank-five minor is
+`536870912*rho^4`, and the determinant of leading solder is `-9*rho/2`.
+All nonzero real upper scale ratios, including both signs, are retained.
+
+For `D=5*t^2-78*t+8`, three literal necessary affine-order-four rows are
+
+```text
+row2=384*rho*(t-2)*(t+5*rho-1)/D,
+row3=-64*rho*(5*t^2-6*t*rho-96*t+12*rho+44)/D,
+row1=64*rho*(8*t^2*rho-t^2-132*t*rho-54*t+104*rho-16)/D.
+```
+
+Every solder-compatible second-amplitude freedom drops from these three
+rows. D is a genuine unit because u=2 is already excluded. The first row
+forces `t=1-5*rho`. The other two then require
+
+```text
+P=155*rho^2+436*rho-47=0,
+Q=200*rho^3+555*rho^2+260*rho-71=0.
+```
+
+Their exact Bezout identity is
+
+```text
+(2738600*rho^2+8186615*rho+4368345)*P
+ -(2122415*rho+6425073)*Q = 250867968.
+```
+
+Hence no real (or complex characteristic-zero) rho satisfies both.
+The certificate checks the three literal response formulas, the final
+polynomial substitutions and Bezout identity, all range dimensions, the
+full lower affine mode forms, and all second corrections. This removes the
+two apparent unequal-scale seams without a numerical reconstruction.
+
+**Exact scoped verdict:** the entire normalized homogeneous critical-leading
+solder class is excluded for the declared collinear mode-1100 translation
+family, with all coefficients and both tangent moduli. Arbitrary vector
+components of the translations, mixtures of modes, and finite amplitudes
+away from this degenerate seed remain open. In particular this is still
+not the broad finite-carrier terminal. Task `IN_PROGRESS`, PR Draft; L=3
+remains unopened.

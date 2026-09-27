@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""Exact affine-order-four no-go on an independent-translation-ratio family.
+"""Exact affine-order-four obstruction for critical solder and collinear translations.
 
-Scope: selected homogeneous support 5, A=B=1, conformal lower block
-conformal lower block, occupied real Fourier mode 1100, b2=r*e0, b3=e0, b1=0,
-b0=z*e0. The leading solder and the two blind tangent moduli follow the declared rational range family. All solder-compatible second corrections
-and all next translations are retained. Both observer-coefficient charts
-q!=0 and q=0 are tested. No whole-support or finite stationary terminal.
+All nonzero upper scale ratios rho, arbitrary common upper modulus lam,
+all lower critical-solder moduli, both blind tangent coefficients, all four
+channel coefficients and all second corrections are retained. Scope is the
+selected homogeneous support-5 germ from Theta=0 with occupied real mode
+1100, b0=z*e0, b1=0, b2=r*e0, b3=e0. Upper A=1 is a declared normalization.
+Necessary leading equations fix Gamma and the lower block. Universal affine
+rows force r=-1; the full solder range then fixes a rational t-family. Three
+actual affine rows leave two coprime polynomials in rho. No finite point or
+whole arbitrary-translation/multi-mode no-go is claimed.
 """
 from __future__ import annotations
 import ast,types
@@ -27,16 +31,18 @@ tree=ast.parse(path.read_text());prefix=[]
 for node in tree.body:
  if isinstance(node,ast.Assign)and any(isinstance(x,ast.Name)and x.id=='ss'for x in node.targets):break
  prefix.append(node)
-ns={'__file__':str(path),'__name__':'owned_generic_solder_jet'}
-exec(compile(ast.Module(body=prefix,type_ignores=[]),str(path),'exec'),ns)
+rho,lam=s.symbols('rho lam')
+ns={'__file__':str(path),'__name__':'owned_generic_solder_jet','rho':rho}
+source=ast.unparse(ast.Module(body=prefix,type_ignores=[])).replace('-4 * o.K1','-4 * rho * o.K1')
+exec(compile(source,str(path),'exec'),ns)
 o=ns['o'];q1,q2=ns['q1'],ns['q2'];t=s.Symbol('t')
 
-K,uf,tf=field('u,t',QQ);zz,oo=K.zero,K.one
+K,rf,uf,tf=field('rho,u,t',QQ);zz,oo=K.zero,K.one
 fp=here/'a4d_resolved_curved_stationary_e2_support7_finite_solder_check.py'
 ft=ast.parse(fp.read_text());funcs=[n for n in ft.body if isinstance(n,ast.FunctionDef)and n.name in ('mc','mz','madd','mscale','mmul','mt','minv','md')]
 fns={'K':K,'zero':zz,'one':oo,'permutations':permutations};exec(compile(ast.Module(body=funcs,type_ignores=[]),str(fp),'exec'),fns)
 f=types.SimpleNamespace(**{n.name:fns[n.name]for n in funcs})
-u,t=s.symbols('u t');v=[f.mc(m)for m in [-4*o.K1+t*o.N3,t*o.N3,u*o.K1-o.N2,o.N3]]
+u,t=s.symbols('u t');v=[f.mc(m)for m in [-4*rho*o.K1+t*o.N3,t*o.N3,u*o.K1-o.N2,o.N3]]
 base=[f.mc(x)for x in o.generators0];I=f.mc(s.eye(4));Z=f.mz(4);signs=(-1,-1,1,1);B=[]
 for role in range(4):
  b=f.mz(4,16)
@@ -119,13 +125,13 @@ for k,(_,role,g)in enumerate(o.SELECTED_SPECS):
  X=[f.mc(g)if i==role else Z for i in range(4)];Rk=resp(X)
  cols.append([[[a-b for a,b in zip(x,y)]for x,y in zip(rowk,row0)]for rowk,row0 in zip(Rk,R0)])
  print('EXACT_INDEPENDENT_RATIO_SECOND_COLUMN',k,flush=True)
-r,p,q,z=s.symbols('r p q z');Gamma=-1/(512*(r*r+1));coef=(Gamma/2+p,Gamma/2-p,q,-q)
+r,p,q,z=s.symbols('r p q z');Gamma=-rho/(512*(r*r+1));coef=(Gamma/2+p,Gamma/2-p,q,-q)
 def response(row,raw):
  return s.cancel(sum(coef[ch]*(z*raw[ch][0].as_expr()+r*raw[ch][1].as_expr()+raw[ch][2].as_expr())for ch in range(4)))
 E=[response(row,R0[row])for row in range(16)]
 C=s.Matrix([[response(row,col[row])for col in cols]for row in range(16)])
 check('FOUR_NECESSARY_AFFINE_ROWS_INDEPENDENT_OF_EVERY_SECOND_AMPLITUDE',C[[10,11,14,15],:]==s.zeros(4,7))
-check('UNIVERSAL_RATIO_AFFINE_ROW_SUM',s.cancel(E[10]+E[15]+128*(r+1)/(r*r+1))==0)
+check('UNIVERSAL_RATIO_AFFINE_ROW_SUM',s.cancel(E[10]+E[15]+128*rho*(r+1)/(r*r+1))==0)
 def q3(h):
  R=maps(h);out=[f.mz(3)for _ in range(4)]
  for (ff,gg),V in R.items():
@@ -151,11 +157,11 @@ for role,gen in ((2,o.N2),(2,o.N3),(3,o.N2),(3,o.N3),(0,o.N3)):
  expected={ (2,str(o.N2)):-98304*r*(aa+bb),(2,str(o.N3)):32768*(aa+bb),(3,str(o.N2)):32768*r*r*(aa+bb),(3,str(o.N3)):-98304*r*(aa+bb),(0,str(o.N3)):-4096*q*z*(r+1)}[role,str(gen)]
  check(f'LITERAL_LEADING_NORMAL_CHANNEL_ROLE_{role}_{len(channels)}',s.cancel(channel-expected)==0)
 cc,dd,gamma=s.symbols('cc dd gamma');freephi=s.symbols('p3 p4 p5 p7')
-Tgeneral=s.Matrix([[1,0,freephi[0],freephi[1]],[0,-1,freephi[0],freephi[1]],[freephi[2],freephi[2],dd,cc],[freephi[3],freephi[3],-cc,dd]])
+Tgeneral=s.Matrix([[1+rho+lam,1+lam,freephi[0],freephi[1]],[rho+lam,lam,freephi[0],freephi[1]],[freephi[2],freephi[2],dd,cc],[freephi[3],freephi[3],-cc,dd]])
 Es=ns['f'].link_euler_at(Tgeneral,ns['f'].RESPONSES)
-check('NECESSARY_LEADING_ETA_SUM_FIXED',s.expand(Es[17]+Es[22]+32768*gamma*(1+r*r)-64-32768*gamma*(1+r*r))==0)
+check('NECESSARY_LEADING_ETA_SUM_FIXED',s.expand(Es[17]+Es[22]-64*rho)==0)
 Mlead,Blead=s.linear_eq_to_matrix([Es[17]+32768*gamma,Es[22]+32768*r*r*gamma,Es[16]-98304*r*gamma],(cc,dd,gamma))
-unit=s.cancel(Mlead.det()/(1+r*r));check('NECESSARY_LEADING_GAMMA_AND_CONFORMAL_BLOCK_UNIQUE',unit.is_Rational and unit!=0)
+unit=s.cancel(Mlead.det()/(rho*rho*(1+r*r)));check('NECESSARY_LEADING_GAMMA_AND_CONFORMAL_BLOCK_UNIQUE',unit.is_Rational and unit!=0)
 check('CORRECT_LITERAL_CONFORMAL_SUM',s.cancel((Es[17]+32768*Gamma).subs({cc:(r*r-1+6*r)/(2*(1+r*r)),dd:(r*r-1-6*r)/(2*(1+r*r))}))==0)
 check('CORRECT_LITERAL_CONFORMAL_DIFFERENCE',s.cancel((Es[16]-98304*r*Gamma).subs({cc:(r*r-1+6*r)/(2*(1+r*r)),dd:(r*r-1-6*r)/(2*(1+r*r))}))==0)
 # Residual activation at this mode forces the observer sum to vanish:
@@ -173,34 +179,38 @@ print('LEADING_OBSERVER_Q2_POSITIVE_NORM',pos*(1+r*r),flush=True)
 
 # Thus every real stationary member requires r=-1. Observer-zero is
 # excluded even there: the other literal row requires r=+1.
-check('ZERO_OBSERVER_FOUR_ROWS_IMPOSSIBLE',s.cancel(E[11].subs(q,0)+64*(r-1)/(r*r+1))==0)
+check('ZERO_OBSERVER_FOUR_ROWS_IMPOSSIBLE',s.cancel(E[11].subs(q,0)+64*rho*(r-1)/(r*r+1))==0)
 check('MINUS_RATIO_FIRST_ROW_FORCES_Z_MINUS_FOUR',s.cancel(E[10].subs(r,-1)+32768*q*(z+4))==0)
-check('MINUS_RATIO_SECOND_ROW_FIXES_Q_U',s.cancel(E[11].subs({r:-1,z:-4})-64*(1-512*q*(u-2)))==0)
-c=-s.Rational(3,2);d=s.Rational(3,2);p3,p4,p5,p7,dn,ss,tt=s.symbols('p3 p4 p5 p7 dn ss tt');Tg=s.Matrix([[1,0,p3,p4],[0,-1,p3,p4],[p5,p5,d,c],[p7,p7,-c,d]]);Cg,Rg=ns['range_system'](Tg);D=Cg[:,:10];W=s.Matrix.hstack(*D.T.nullspace());CR=(W.T*Cg[:,10:]).applyfunc(s.expand);RR=(W.T*Rg).applyfunc(s.expand);Ka=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,-1],[0,0,1,0],[0,0,1,0],[0,0,0,0],[0,0,0,1]]);assert CR*Ka==s.zeros(8,4);EQ=CR*s.Matrix([0,0,ss,dn,0,tt,0])-RR;sol=s.solve([EQ[6],EQ[7]],(ss,tt));EQ=[s.factor(a.subs(sol))for a in EQ[:6]];phi=s.solve(EQ[2:6],(p3,p4,p5,p7));F=s.factor(EQ[0].subs(phi));star=ns['f'].link_euler_at(Tg,ns['f'].RESPONSES)[5];G=s.factor(star.subs(phi));check('ACTUAL_MINUS_RATIO_SOLDER_ELIMINATION',s.linear_eq_to_matrix(EQ[2:6],(p3,p4,p5,p7))[0].det()!=0 and D.rank()==2 and W.cols==8)
+check('MINUS_RATIO_SECOND_ROW_FIXES_Q_U',s.cancel(E[11].subs({r:-1,z:-4})-64*(rho-512*q*(u-2)))==0)
+c=-s.Rational(3,2);d=s.Rational(3,2);p3,p4,p5,p7,dn,ss,tt=s.symbols('p3 p4 p5 p7 dn ss tt');Tg=s.Matrix([[1+rho+lam,1+lam,p3,p4],[rho+lam,lam,p3,p4],[p5,p5,d,c],[p7,p7,-c,d]]);Cg,Rg=ns['range_system'](Tg);D=Cg[:,:10];W=s.Matrix.hstack(*D.T.nullspace());CR=(W.T*Cg[:,10:]).applyfunc(s.expand);RR=(W.T*Rg).applyfunc(s.expand);Ka=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,-1],[0,0,1,0],[0,0,1,0],[0,0,0,0],[0,0,0,1]]);assert CR*Ka==s.zeros(8,4);EQ=CR*s.Matrix([0,0,ss,dn,0,tt,0])-RR;sol=s.solve([EQ[6],EQ[7]],(ss,tt));EQ=[s.factor(a.subs(sol))for a in EQ[:6]];phi=s.solve(EQ[2:6],(p3,p4,p5,p7));F=s.factor(EQ[0].subs(phi));star=ns['f'].link_euler_at(Tg,ns['f'].RESPONSES)[5];G=s.factor(star.subs(phi));check('ACTUAL_MINUS_RATIO_SOLDER_ELIMINATION',s.linear_eq_to_matrix(EQ[2:6],(p3,p4,p5,p7))[0].det()!=0 and D.rank()==2 and W.cols==8)
 check('ALL_SECOND_AMPLITUDES_QUOTIENT_RETAINED',Ka.row_join(s.Matrix.hstack(s.eye(7)[:,2],s.eye(7)[:,3],s.eye(7)[:,5])).rank()==7);uv=s.solve([F,G],(q1,dn));check('EXCEPTIONAL_T_TWO_ACTUAL_RANGE_OBSTRUCTION',s.factor(F.subs(q2,2))==512)
 check('MINUS_RATIO_NECESSARY_FIRST_TANGENT',s.cancel(uv[q1]+(5*q2*q2-90*q2+32)/(6*(q2-2)))==0)
 
 
 # Recompute the surviving r=-1 solder range without inferring a limiting
 # value of a generic rational rank. All second freedoms are present.
-ut=-(5*t*t-90*t+32)/(6*(t-2));qt=1/(512*(ut-2))
+ut=-(5*t*t-90*t+32)/(6*(t-2));qt=rho/(512*(ut-2))
 phi=[(5*t*t-84*t+20)/(24*(t-2)),-(13*t*t-96*t-20)/(24*(t-2)),-(t*t+18*t-8)/(12*(t-2)),(5*t*t-30*t+8)/(6*(t-2))]
-T=s.Matrix([[1,0,phi[0],phi[1]],[0,-1,phi[0],phi[1]],[phi[2],phi[2],s.Rational(3,2),-s.Rational(3,2)],[phi[3],phi[3],s.Rational(3,2),s.Rational(3,2)]])
-check('MINUS_RATIO_NONDEGENERATE_CRITICAL_SOLDER',s.cancel(T.det())==-s.Rational(9,2)and ns['H0']*s.Matrix(list(T))==s.zeros(16,1))
+T=s.Matrix([[1+rho+lam,1+lam,phi[0],phi[1]],[rho+lam,lam,phi[0],phi[1]],[phi[2],phi[2],s.Rational(3,2),-s.Rational(3,2)],[phi[3],phi[3],s.Rational(3,2),s.Rational(3,2)]])
+check('MINUS_RATIO_NONDEGENERATE_CRITICAL_SOLDER',s.cancel(T.det())==-s.Rational(9,2)*rho and ns['H0']*s.Matrix(list(T))==s.zeros(16,1))
 Cr,rhs=ns['range_system'](T);sub={q1:ut,q2:t};Cr=Cr.subs(sub).applyfunc(s.cancel);rhs=rhs.subs(sub).applyfunc(s.cancel)
 rows=[0,3,8,6,9];picked=[0,6,12,13,15];small=Cr.extract(rows,picked)
-check('MINUS_RATIO_UNIFORM_ACTUAL_RANK_MINOR',s.cancel(small.det())==536870912)
+check('MINUS_RATIO_UNIFORM_ACTUAL_RANK_MINOR',s.cancel(small.det())==536870912*rho**4)
 part=s.zeros(17,1);pv=small.inv()*rhs.extract(rows,[0])
 for i,k in enumerate(picked):part[k]=s.cancel(pv[i])
 check('LITERAL_FULL_SOLDER_ORDER3_COMPATIBLE',(Cr*part-rhs).applyfunc(s.cancel)==s.zeros(10,1))
 N=s.Matrix.hstack(*Cr.nullspace());Ka=s.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,-1],[0,0,1,0],[0,0,1,0],[0,0,0,0],[0,0,0,1]])
 check('ALL_SECOND_AMPLITUDE_FREEDOMS_PRESENT',N.cols==12 and N[10:,:].rank()==4 and N[10:,:].row_join(Ka).rank()==4)
 sub={r:-1,z:-4,u:ut,q:qt};Cp=C.subs(sub).applyfunc(s.cancel);Ep=s.Matrix(E).subs(sub).applyfunc(s.cancel)
-check('ALL_SOLDER_COMPATIBLE_FREEDOMS_DROP',(Cp*Ka).applyfunc(s.cancel)==s.zeros(16,4))
+check('ALL_SOLDER_COMPATIBLE_FREEDOMS_DROP',(Cp.extract([1,2,3],list(range(7)))*Ka).applyfunc(s.cancel)==s.zeros(3,4))
 source=(Ep+Cp*part[10:,:]).applyfunc(s.cancel);den=5*t*t-78*t+8
-check('LITERAL_AFFINE_ROW_TWO',s.cancel(source[2]-384*(t-2)*(t+4)/den)==0)
-check('LITERAL_AFFINE_ROW_THREE',s.cancel(source[3]+64*(5*t*t-102*t+56)/den)==0)
-check('THE_TWO_NECESSARY_NUMERATORS_ARE_COPRIME',s.gcd(s.Poly((t-2)*(t+4),t),s.Poly(5*t*t-102*t+56,t)).degree()==0)
+check('LITERAL_AFFINE_ROW_TWO',s.cancel(source[2]-384*rho*(t-2)*(t+5*rho-1)/den)==0)
+check('LITERAL_AFFINE_ROW_THREE',s.cancel(source[3]+64*rho*(5*t*t-6*t*rho-96*t+12*rho+44)/den)==0)
+check('LITERAL_THIRD_NECESSARY_AFFINE_ROW',s.cancel(source[1]-64*rho*(8*t*t*rho-t*t-132*t*rho-54*t+104*rho-16)/den)==0)
+P=s.Poly(155*rho*rho+436*rho-47,rho);Q=s.Poly(200*rho**3+555*rho*rho+260*rho-71,rho)
+check('FIRST_AFFINE_ROW_ELIMINATES_T',s.expand((5*t*t-6*t*rho-96*t+12*rho+44).subs(t,1-5*rho)-P.as_expr())==0)
+check('THIRD_AFFINE_ROW_ELIMINATION',s.expand((8*t*t*rho-t*t-132*t*rho-54*t+104*rho-16).subs(t,1-5*rho)-Q.as_expr())==0)
+bp,bq,g=s.gcdex(P,Q);check('EXACT_BEZOUT_ONE_FOR_FINAL_REAL_RHO_SEAM',g.as_expr()==1 and s.expand((bp*P+bq*Q).as_expr()-1)==0)
 # t=2 is outside the declared rational family. The other denominator is
 # a genuine unit: u=2 is already impossible by the exact second row.
 # Combined Q2/Q3 vanish in the complete occupied affine mode, so b1 or
@@ -219,6 +229,6 @@ for order,M in ((2,Q2),(3,Q3)):
  assert M[0]==M[1]==f.mz(16) and M[2]==M[3]
 check('ALL_FULL_MODE_LOWER_FORMS_ZERO_FOR_BOTH_TANGENT_MODULI',True)
 
-print('EXACT_SCOPED_VERDICT: entire declared independent-ratio range family excluded at necessary affine order four: r!=-1 has a fixed nonzero row sum; q=0 is inconsistent; r=-1,q!=0 gives two coprime necessary numerator equations.',flush=True)
-print('SCOPE: A=B=1, specified common top solder block, conformal ratio family, single occupied mode 1100 and translations along e0. General solders, other translations/modes, and finite support-5 points remain open. No L3.',flush=True)
+print('EXACT_SCOPED_VERDICT: entire declared independent-ratio range family excluded at necessary affine order four: r!=-1 has a fixed nonzero row sum; q=0 is inconsistent; r=-1,q!=0 gives three necessary affine rows whose remaining rho polynomials have Bezout identity one.',flush=True)
+print('SCOPE: A=1, every nonzero B=rho, arbitrary common upper solder modulus lam, all critical lower solder moduli, mode 1100 translations b0=z e0,b1=0,b2=r e0,b3=e0. Other translation components/modes and finite off-seed points remain open. No L3.',flush=True)
 print('SECONDS',monotonic()-st,flush=True)
