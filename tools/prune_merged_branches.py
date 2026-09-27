@@ -62,6 +62,19 @@ LEGACY_SAFE = {
     "wrk/a4d-resolved-correlated-action-passport-v3", # module exact on main via merged PR #153
     "wrk/a4d-sourced-mismatch-factor-passport",       # module exact on main via merged PR #147
     "wrk/a4d-sourced-mismatch-factor-passport-v2",    # module exact on main via merged PR #147
+    # Audited 2026-09-27 post-wave tails. These are either exact ancestors of
+    # accepted heads, closed superseded attempts, or temporary sync branches
+    # whose durable payload is already on main. Open PR heads are still
+    # excluded independently below, so this list cannot prune active work.
+    "tmp/rebuild-pr246-contract",                           # exact ancestor of accepted #246 head
+    "tmp/sync-pr246-moving-sign",                          # #246 cert byte-identical; memo superseded by accepted #246
+    "control/a4d-star-density-lorentz-nonlinear-quotient", # closed #179; superseded by merged #180 r2
+    "control/register-j2-smooth-resonance-closure",        # closed #214; superseded by merged #215 v2
+    "exp/a4d-joint-holonomy-quotient-completeness",        # closed #186; superseded by merged #196 r3
+    "exp/a4d-joint-holonomy-quotient-completeness-r2",     # closed #194; superseded by merged #196 r3
+    "wrk/a4d-joint-diagonal-invisible-germ",               # closed #235; task remains PLANNED for fresh relaunch
+    "control/strengthen-role-weld-scout",                  # no unique commits; main is strict descendant
+
 }
 
 
