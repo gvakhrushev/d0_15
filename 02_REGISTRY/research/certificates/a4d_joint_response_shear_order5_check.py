@@ -297,6 +297,56 @@ def main():
         direction[index] = 1
         pairings.append(sp.Matrix(euler_linear(direction, True)).dot(witness))
     check("WITNESS_IN_LEFT_KERNEL", pairings == [0] * 24)
+
+    # The fourth odd-kernel modulus is the witness itself.  It is not an
+    # independent reduced modulus: WITNESS is exactly the leading amplitude
+    # carried by cubic.ROLES.  Therefore eta -> eta + t*WITNESS is generated
+    # by the amplitude reparameterization u = v + t v^3.
+    check(
+        "WITNESS_IS_LEADING_AMPLITUDE_DIRECTION",
+        all(
+            algebra(WITNESS[6 * role:6 * role + 6]) == cubic.ROLES[role]
+            for role in range(4)
+        ),
+    )
+    t, v = sp.symbols("t v")
+    phi = v + t * v**3
+    lhs = sp.Matrix([
+        sp.series(
+            phi * WITNESS[i]
+            + phi**2 * ZETA[i]
+            + phi**3 * ETA_CLEAN[i]
+            + phi**4 * XI_CLEAN[i],
+            v, 0, 5,
+        ).removeO()
+        for i in range(24)
+    ])
+    rhs = sp.Matrix([
+        v * WITNESS[i]
+        + v**2 * ZETA[i]
+        + v**3 * (ETA_CLEAN[i] + t * WITNESS[i])
+        + v**4 * (XI_CLEAN[i] + 2 * t * ZETA[i])
+        for i in range(24)
+    ])
+    check("WITNESS_MODULUS_IS_REPARAM_THROUGH_ORDER4",
+          all(sp.expand(lhs[i] - rhs[i]) == 0 for i in range(24)))
+
+    # Composition cannot change the first nonzero resonant coefficient:
+    # -432 u^5 -> -432 v^5 + O(v^7).  Reparameterization also induces the
+    # order-v^5 exponent correction 3 t ETA_CLEAN; any order-5 correction
+    # enters through the odd linear operator, and WITNESS is already in its
+    # left kernel, so that range term has zero resonant projection.
+    check(
+        "WITNESS_REPARAM_PRESERVES_MINUS_432",
+        sp.series(-432 * phi**5, v, 0, 6).removeO() == -432 * v**5,
+    )
+    check(
+        "INDUCED_ORDER5_RANGE_IS_RESONANTLY_INVISIBLE",
+        sp.expand(
+            witness.dot(euler_linear(list(3 * t * sp.Matrix(ETA_CLEAN)), True))
+        ) == 0,
+    )
+
     xi_image = euler_linear(list(XI_CLEAN), False)
     check("XI_SOLVES_RECORDED_ORDER4", xi_image == [-entry for entry in S4])
     even_columns = []
@@ -312,6 +362,7 @@ def main():
     solved_jet("K2", sp.Matrix(ETA_CLEAN) + K2, sp.Matrix(XI_CLEAN) + XI_K2, sp.Rational(-7040, 177))
     solved_jet("K3", sp.Matrix(ETA_CLEAN) + K3, sp.Matrix(XI_CLEAN) + XI_K3, sp.Rational(-7040, 177))
     print("RESULT_REDUCED_KERNEL5: -432")
+    print("RESULT_WITNESS_MODULUS: amplitude reparameterization; -432 invariant")
     print("RESULT_AMPLITUDE: the order-u^5 connection equation forces u=0")
     print("BOUNDARY: period-2 shear ansatz only; not a smooth-background response NOGO")
 
