@@ -1645,3 +1645,83 @@ absolute solder, every four-channel coefficient choice, and the stated
 translation ray. This does not classify arbitrary translations or seven
 independent amplitudes. It is not a support-wide terminal and supplies no
 active-residual witness. L=3 remains unopened.
+
+
+### 9.16 Genuine degenerate-seed germs: the eta-leading lift is obstructed
+
+`a4d_resolved_curved_stationary_e2_eta_leading_seed_jet_check.py`
+checks a genuine stationary seed: the frozen links, `Theta=0`, and arbitrary
+L=2 edge translations. All base residuals vanish, and the star density is
+quadratic in solder. Consider
+
+```text
+A = A0 + eps*v + O(eps^2),
+Theta = eps*eta + O(eps^2),
+b = b0 + O(eps),
+```
+
+with constant arbitrary coefficients of the four selected channels.
+This explicitly differs from the nonstationary `Theta=eta` unit correction
+in §9.14. A nonzero leading solder determinant would make this a potentially
+nondegenerate punctured germ if the equations survived.
+
+The first solder equation is `H0*eta=0`. At order two, range elimination
+of `H0*Y + H1(v)*eta=0` gives a six-dimensional tangent kernel in the
+union of twelve normal amplitudes. The eight support kernel dimensions
+are `(2,1,1,2,2,3,1,1)`. Seven supports force both present first-residual
+amplitudes to zero. Support 5 has exactly
+
+```text
+v = (-4*z3, z1, -z3, z2, z2, 0, z3)
+```
+
+in its declared seven-amplitude order. These relations are necessary solder
+Euler conditions; they are not imposed as an arbitrary finite ansatz.
+
+The role-0 homogeneous Lorentz variation
+`w=(9/2)*J23-(3/2)*N2+N3` has `R1(w)=0` and star source
+`[eps^2] EL_w=24`. If `R1(v)=0`, all channel terms in this row vanish at
+that order, killing the other seven supports and the blind part of support 5.
+If `R1(v)!=0`, the order-one link equations force
+`c_n_adj+c_n_opp=0`; the positive curl-square identity of §9.14 proves this
+without selecting a coefficient value.
+
+On support 5's tangent, the eta channels have `Q3=0`. The observer-channel
+difference has only a `z3^3` cubic monomial. Its affine Euler equation at
+order three is therefore a homogeneous quadratic-form kernel condition
+for each of the 16 real L=2 Fourier modes. Their exact Hessian ranks are
+`0,2,2,2,4,4,4,4,4,4,4,4,0,2,2,2` in lexicographic parity order.
+The complete Walsh matrix is checked to have Gram matrix `16*I`.
+This modewise calculation includes every translation field, not only
+single-mode examples.
+
+If `c_n_adj-c_n_opp=0`, the universal eta-channel cokernel row `w` already
+leaves source 24. Otherwise impose the actual affine order-three equations.
+On their kernel, the two necessary link rows `N2@role2` and `N2@role3`
+have the following exact properties in every mode:
+
+- all channel terms except `z3^2` vanish;
+- the eta-adjacent and eta-opposite forms agree;
+- the observer-difference form vanishes;
+- the `N2@role3` eta form is positive semidefinite, of rank zero or one;
+- its kernel kills the quadratic form for `N2@role2`.
+
+The star sources in these rows are respectively `-32` and `0`.
+Write `Gamma=c_eta_adj+c_eta_opp`. If `Gamma=0`, the first row remains
+`-32`. If `Gamma!=0`, the second row forces a sum of nonnegative Fourier
+quadratic forms to vanish. Each mode lies in that form's kernel, so every
+channel term in the first row also vanishes. Again `-32=0` is impossible.
+No sign assumption on `Gamma`, observer-difference coefficient, or
+individual channel coefficient is used. Second amplitude/solder/translation
+coefficients cannot repair these leading equations: star starts at solder
+order two, and the entire channel quadratic jet is zero once the necessary
+observer-sum relation is imposed.
+
+**Exact scoped verdict:** all eight germs with this prescribed
+`Theta=eps*eta+...` leading solder are obstructed through coupled order
+three (link/solder order two and affine order three). This is a nonlinear
+compatibility obstruction at an actual stationary seed, rather than a
+rank argument at a nonstationary one. It is not a classification of general
+nondegenerate leading solder or finite seven-amplitude configurations.
+Those remain live; no support-wide finite terminal or L=2 witness is claimed,
+and L=3 stays unopened.
