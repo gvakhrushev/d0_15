@@ -74,6 +74,22 @@ LEGACY_SAFE = {
     "exp/a4d-joint-holonomy-quotient-completeness-r2",     # closed #194; superseded by merged #196 r3
     "wrk/a4d-joint-diagonal-invisible-germ",               # closed #235; task remains PLANNED for fresh relaunch
     "wrk/a4d-joint-resonance-linear-kernel",                # closed #231; superseded by clean replay #252
+    "wrk/a4d-joint-one-d-residual-germs",                   # closed #234; superseded by clean replay #253
+    "wrk/a4d-affine-curvature-cert",                       # closed #166; superseded by merged clean #168
+    "wrk/a4d-formalize-affine-relative-solder",               # closed #210; superseded by merged #218 r2
+    "wrk/a4d-formalize-cartan-hodge-translation-nogo",         # merged #192; safe retained payload on main
+    "wrk/a4d-formalize-checkerboard-nonlinear-obstruction",    # closed #211; superseded by merged #221 r2
+    "wrk/a4d-formalize-gauge-image-seam-resolution",           # closed #212; superseded by merged #220 r2
+    "wrk/a4d-formalize-nonlinear-lorentz-quotient",            # closed #191; superseded by merged #195 r2
+    "wrk/a4d-formalize-star-einstein-seed",                    # closed #206; superseded by merged #217 r2
+    "exp/a4d-role-bivector-insertion-spatial-selector",   # #169 explicitly superseded; result moved unchanged to merged #170
+    "exp/a4d-oriented-spatial-role-selector",             # #172 explicitly closed as duplicate of merged #170
+    "control/a4d-role-bivector-oriented-density-selector",# #173 explicitly closed as duplicate of merged #170
+    "exp/a4d-star-translation-invariant-action-completion",# stale source #182 replaced by clean packet #198
+    "exp/a4d-star-nonlinear-stationary-rigidity-r2",       # #198 exact science byte-identical on main
+    "exp/a4d-curved-stationary-sector-after-affine-completion", # stale source #187 replaced by clean packet #197
+    "exp/a4d-curved-stationary-sector-r2",                 # #197 exact science byte-identical on main
+    "research/a4d-discrete-palatini-target-span",           # #203 flat-jet theorem superseded by Lean owner; Palatini packet superseded by terminal main version
     "wrk/a4d-diagonal-microstructure-connection-stationary-slow-lift", # closed stale #243; task remains PLANNED for fresh relaunch
     "control/strengthen-role-weld-scout",                  # no unique commits; main is strict descendant
 

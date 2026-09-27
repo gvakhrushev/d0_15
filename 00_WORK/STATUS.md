@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 2 | 2 | 2 / 2 |
 | EXPENSIVE | 1 | 0 | 1 | 0 | 2 | 1 / 3 |
-| WORKER | 3 | 0 | 0 | 0 | 3 | 0 / 5 |
-| **Total** | **4** | **0** | **1** | **2** | **7** | **3 / 10** |
+| WORKER | 4 | 0 | 0 | 0 | 4 | 0 / 5 |
+| **Total** | **5** | **0** | **1** | **2** | **8** | **3 / 10** |
 
 ## Repository Queue / Control Tasks
 
@@ -22,6 +22,7 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | WRK-A4D-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-SLOW-LIFT | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-GRAVITY-MACRO-EINSTEIN-INTERFACE-001, D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-A4D-JOINT-DIAGONAL-INVISIBLE-GERM | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | WRK-D0-V16-SEAM-SECTION-BOUNDARY-LEAN | WORKER | PLANNED | CTRL-D0-V16-CHANNEL-DYNAMICS-INTEGRATION | D0-METRO-002, D0-SCENE-TRACE-HEAT-CAPACITY-001 |
+| WRK-A4D-JOINT-REAL-CARRIER-QUOTIENT-DECOMPOSITION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
 
