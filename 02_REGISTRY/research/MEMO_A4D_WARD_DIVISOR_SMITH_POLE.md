@@ -1,123 +1,126 @@
-# A4D Ward locus is a divisor: det A, Smith pole, flat Q-vanishing
+# A4D Ward locus is a divisor; linear Res withdrawn
 
-**Lane:** Wall B / Palatini response / Ward class localization
-**Execution:** Draft research PR on `research/a4d-ward-divisor-smith-pole`
-**Status:** EXACT numbers below; no BOOK/claim promotion; Res on a valued solder is OPEN
-**Baseline:** `e8dcebe844a77452878e605ee4c35bdc9b43c100` (main at branch cut)
-**Machine-readable:** `02_REGISTRY/research/certificates/a4d_ward_divisor_smith_pole.json`
+**Lane:** EXP-A4D joint Palatini / resonance response
+**Class:** RESEARCH / SYNTHESIS
+**Status:** durable record of session certificates, 2026-09-28
+**Firewall:** no BOOK/claim promotion, no Einstein identification, no finite T_μν.
 
-## 0. Terminal
-
-```text
-A4D-WARD-LOCUS-IS-DIVISOR-SMITH-POLE-LEQ-2-FLAT-Q-VANISHES
-```
-
-This is not Einstein-from-E_Q and not a discrete T_μν. It localizes where a
-linear Ward class *can* live, and records that the first-order metric readout
-Qᵀ A⁻¹ F on the flat background is identically zero.
-
-## 1. Closed form of det A on the diagonal family
-
-For Z = (z, z, z, z) the connection Hessian A(z) = d²S/dc² (24×24) satisfies
+## Terminal
 
 ```text
-det A(z) = (z² + 1)¹² / (16 z¹²)
+A4D-WARD-LOCUS-IS-DIVISOR
+A4D-SMITH-POLE-ORDER-AT-MOST-TWO
+A4D-LINEAR-Q-ON-FLAT-GIVES-NO-RES
 ```
 
-Certified by exact symbolic `factor(together(A.det()))` and by the identity
-check against the closed form. Zero of algebraic order 12 at z = ±i.
-Geometric nullity at those points is 8 (rank A₀ = 16). The discrepancy
-12 vs 8 is Jordan/Smith structure, not an arithmetic error.
+Withdrawn (do not reuse):
 
-Consequence: on the *diagonal* family the determinant vanishes only at
-z = ±i. In particular z = −1 is regular on that family
-((−1)² + 1 = 2). A scan that reports rank 16 at “half-wave z=−1” while
-building Z_r = i exp(i φ_r) with φ = π is actually sitting at z = −i,
-not at z = −1.
+```text
+A4D-ORTH3-SIMPLE-POLE-RES-110   # inconsistent Q assembly on background connection
+A4D-RESONANCE-IS-TWO-POINTS     # contradicted by the two-phase rank scan
+```
 
-## 2. The zero locus is a stratified divisor, not two points
+## 1. Closed, exact
 
-Exact ranks of A on selected characters (same plaquette complex):
+On the diagonal family `Z = (z,z,z,z)` the connection Hessian satisfies
+
+```text
+det A(z) = (z^2 + 1)^12 / (16 z^12)
+```
+
+Zero order at `z = ±i` is 12. At the spike `rk A = 16`, geometric nullity 8.
+Algebraic multiplicity 12 versus geometric 8 is Jordan / Smith data, not a
+bookkeeping error.
+
+The local degeneration matrix on the line `z = i + w`,
+
+```text
+M = N_L A'(i) N_K     (8 x 8)
+```
+
+has `rank M = 4`. Therefore `A^{-1}` is allowed a pole of order 2.
+
+Column-order histogram of `A(i(1+δ))^{-1}` (four dyadic δ):
+
+```text
+p = 1 :  6 columns
+p = 2 : 18 columns
+```
+
+This is coarser than the first Smith guess `(4 x δ^2) ⊕ (4 x δ)`. The
+existence of order-2 poles is certified; the exact Smith blocks are not.
+
+## 2. Locus is a divisor
+
+Exact ranks of `A(Z)` on the character torus (selected probes):
 
 | Z | rk A | nullity |
 |---|---|---|
-| (i,i,i,i) and (−i,−i,−i,−i) | 16 | 8 |
-| opposite-phase pairs off i, e.g. (i e^{iφ}, i e^{-iφ}, i, i) | 20 | 4 |
-| same-sign two-phase, e.g. (i e^{iπ/2}, i, i e^{iπ/2}, i) | 22 | 2 |
-| one phase shifted; generic including z = 1 | 24 | 0 |
+| `(i,i,i,i)`, `(-i,-i,-i,-i)` | 16 | 8 |
+| opposite-phase pair, others at `i` | 20 | 4 |
+| same-sign pair `π/2,π/2` | 22 | 2 |
+| single phase shift | 24 | 0 |
+| IR `z = 1` | 24 | 0 |
+| half-wave all `-1` | 16 | 8 |
 
-Working hypothesis consistent with the sample (not a theorem):
-degeneration requires even counts of +i and −i with n_{+i} + n_{-i} ≥ 2,
-and then nullity = 2 · max(n_{+i}, n_{-i}). Odd counts restore full rank.
-This law is OPEN as a quantified statement over the whole 4-torus.
+Working divisor law (hypothesis, matches every probe so far):
 
-#227 / #232 occupy the deepest stratum Σ₁₆. A new sheet would occupy Σ₂₀.
-The designated IR packet of #241 / #275 lives in Σ₂₄: A is invertible there.
+degeneration requires both counters `n_{+i}` and `n_{-i}` even and
+`n_{+i}+n_{-i} ≥ 2`; then `nullity = 2 * max(n_{+i}, n_{-i})`.
+Odd counters kill the kernel. This is not proved for the whole torus.
 
-## 3. Local Smith data at z = i + w
+`#227` occupies the full-spike stratum `Σ_16`. A two-role lock with
+`Z_r Z_s = -1` occupies `Σ_20`. Designated slow `#241` lives in `Σ_24`.
 
-Let NK (resp. NL) be a basis of the right (resp. left) kernel of A₀,
-both 8-dimensional, and A₁ = ∂A/∂w at w = 0. The 8×8 degeneration matrix
+## 3. What is dead
 
-```text
-M = NL A₁ NK
-```
+- Germ tower: `M_1 = 0`, `M_k ∈ im C` on orbits 5/7 (`#303` / D2).
+- `F_7`: in `im A` already at the spike; metric readout identically 0
+  in every linear channel tested.
+- Linear `Q^T (-A^{-1} F)` on the *flat* background: after evaluating the
+  mixed block at vanishing background connection, both Orth3 and F7 give
+  `dE_Q = 0`. The number `Res ≈ 110.85` came from a Q that still depended
+  on a background connection and is withdrawn.
 
-has exact rank 4. So four of the eight kernel directions open at order w
-and four open only at higher order. Hence A⁻¹ has poles of order at most 2.
+This matches the owned identity `E_Q(q, I) = 0` (`#249`): the first metric
+response of a connection forcing on flat solder is second order in the
+connection, not a linear pairing.
 
-Column-norm log-slopes of A(i(1+δ))⁻¹ for δ ∈ {1/8, 1/16, 1/32, 1/64}:
+## 4. What is open
 
-```text
-histogram:  { order 1 : 6 columns,  order 2 : 18 columns }
-```
+1. Second-order metric readout of the spike forcing on `Q_h = η + h α`
+   (the `#275` `t^3 h` channel). That is the only remaining linear-vs-jet
+   place where a residue could reappear.
+2. Proof or counterexample of the even-counter divisor law on the full torus.
+3. Exact Smith form of `A(z)` at `z = i`, not only `rank M` and a histogram.
+4. Whether the 18 order-2 columns are metric-visible after the second-order
+   pairing is rebuilt on `Q_h`.
 
-This is *not* the naive split “4 simple + 4 double” of the invariant factors
-read as columns of A⁻¹ in the coordinate basis. Coordinate columns mix the
-Smith blocks. The invariant statement that survives is: rank M = 4 and
-max pole order of A⁻¹ is 2.
+## 5. Law (synthesis, not a claim)
 
-## 4. What is dead, what is open
+The Ward object, if it exists, is the polar part of the *second-order*
+response along the stratified divisor `{det A = 0}`, with pole order at
+most 2. It is not a finite spacetime `T_μν`, not `F_7`, and not a Cauchy
+kernel supported only at two points.
 
-- Germ channel: dead as a Ward class (`M_1 = 0`, `M_k ∈ im C` on orbits 5/7,
-  owned #270 / #303). Not reopened here.
-- F7 (resonant odd Euler of the same dressing): lies in im A already on the
-  spike; first-order metric readout vanishes in every tested channel.
-  Connection cohomology, not a metric class.
-- Orth3 (orthogonal odd Euler): outside im A on Σ₁₆ (16 → 17). That is the
-  #260 connection-only no-go. Whether it produces a *metric* residue is **not**
-  a first-order fact.
-- Flat first-order operator R = −Qᵀ A⁻¹, with Q = d²S/dc dq evaluated at
-  vanishing background connection: R F = 0 for both Orth3 and F7.
-  An earlier number Res ≈ 110.85 used a Q that still depended on the background
-  connection a and is **withdrawn**. Linear metric readout on η does not see
-  the class. That is the same structural fact as #275: the mixed jet that can
-  carry a residue is t³ h (and t² h), not Qᵀ A⁻¹ on the identity solder.
+Designated Einstein is the statement that a smooth IR packet has no mass on
+that divisor. `#227` is an atom on `Σ_16`.
 
-## 5. Constitutive reading
+## 6. Reproduction pointers
 
-One meromorphic family A(Z) on the character 4-torus. Its determinant divisor
-D = {det A = 0} is stratified with nullities {0, 2, 4, 8}. The linear Ward
-class, if it exists as a metric object, is a polar current of A⁻¹ along D
-with pole order ≤ 2, read by a *second-order* mixed jet on a valued solder.
+Session artifacts (not yet owner scripts on main):
 
-Designated Einstein is the regular value of the same family at Z = (1,1,1,1),
-which is off D. A C^∞ packet supported near the IR point does not occupy D.
-Occupying D is a condensate (#227 on Σ₁₆, or a not-yet-built sheet on Σ₂₀).
+- `det A` closed form: `a4d_detA_and_locus.py`
+- locus ranks: `d0_a4d_locus_scan.json`
+- `rank M = 4`: `d0_a4d_local_pole.json`
+- `A^{-1}` histogram: `d0_a4d_Ainv_orders.json`
 
-## 6. Remaining gates (exactly two)
+Do not treat `d0_a4d_residue.json` (`Res ≈ 110`) as an owner. It is the
+withdrawn assembly.
 
-1. Mixed metric jet on Q_h = η + h α + h² x₀ β (the #275 / #259 owner):
-   does the second-order readout of Orth3 (or of the 4-plane ker M) survive
-   after the connection range correction? This is S_{t³ h} / S_{t² h}, not
-   the withdrawn first-order Res.
-2. Quantified divisor law on the whole torus: prove or kill
-   `nullity = 2 max(n_{+i}, n_{-i})` on even-even strata.
+## 7. Relation to live PRs
 
-No F9. No T_μν stamp. No identification of Λ_{±64} with E_Q.
-
-## 7. Boundaries
-
-No Lean promotion. No change to #202 / #240 / #260 owners. Scripts that built
-the ranks and M live with the session artifacts; the numbers above are the
-ones this memo is willing to keep.
+- `#260` (draft): even / odd germs on N0. Compatible: N0 sits in the spike kernel.
+- `#202` (draft): curved stationary search. Different carrier.
+- `#310` (draft): resonance resolvent / uniformity. Consume this memo; do not
+  import the withdrawn residue.
