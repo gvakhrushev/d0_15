@@ -172,6 +172,38 @@ rank_counterexample = exact_rank(A_counterexample, field_i)
 check("NEGATIVE_CONTROL_FULL_RANK_AT_ONE", rank_generic == 24)
 check("NEGATIVE_CONTROL_COUNT_LAW_COUNTEREXAMPLE", rank_counterexample == 22)
 
+# A global square up to a Laurent unit would have a fixed square-class on
+# every point whose four character coordinates are rational squares. Ratios
+# of two such determinant values would therefore be rational squares.
+square_points = {
+    "(4,9,16,25)": (sp.Integer(4), sp.Integer(9), sp.Integer(16), sp.Integer(25)),
+    "(1,4,9,16)": (sp.Integer(1), sp.Integer(4), sp.Integer(9), sp.Integer(16)),
+    "(4,1,25,9)": (sp.Integer(4), sp.Integer(1), sp.Integer(25), sp.Integer(9)),
+}
+specialized_determinants = {
+    label: sp.Rational(connection_hessian(characters).det(method="domain-ge"))
+    for label, characters in square_points.items()
+}
+
+
+def is_rational_square(value: sp.Expr) -> bool:
+    numerator, denominator = sp.fraction(sp.cancel(value))
+    numerator_root, numerator_is_square = sp.integer_nthroot(abs(int(numerator)), 2)
+    denominator_root, denominator_is_square = sp.integer_nthroot(int(denominator), 2)
+    return numerator_is_square and denominator_is_square and int(numerator) >= 0
+
+
+square_class_ratios = {}
+labels = list(specialized_determinants)
+for i in range(len(labels)):
+    for j in range(i + 1, len(labels)):
+        ratio = sp.factor(specialized_determinants[labels[i]] / specialized_determinants[labels[j]])
+        square_class_ratios[f"{labels[i]} / {labels[j]}"] = str(ratio)
+check("GLOBAL_DETERMINANT_NOT_LAURENT_UNIT_TIMES_SQUARE",
+      all(not is_rational_square(
+          specialized_determinants[labels[i]] / specialized_determinants[labels[j]]
+      ) for i in range(len(labels)) for j in range(i + 1, len(labels))))
+
 result = {
     "owner": "a4d_resonance_divisor_counterexample_check.py connection_hessian convention",
     "symbol_shape": [24, 24],
@@ -184,6 +216,11 @@ result = {
     "negative_controls": {
         "rank_at_(1,1,1,1)": rank_generic,
         "rank_at_(-1,-1,i,i)_over_Q(i)": rank_counterexample,
+    },
+    "square_character_specializations": {
+        "determinants": {label: str(value) for label, value in specialized_determinants.items()},
+        "ratios": square_class_ratios,
+        "conclusion": "global determinant is not a rational Laurent unit times a square",
     },
     "global_multivariable_factorization": "OPEN",
     "complete_rank_stratification": "OPEN",

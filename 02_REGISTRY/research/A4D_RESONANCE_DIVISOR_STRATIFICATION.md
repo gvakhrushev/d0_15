@@ -27,6 +27,26 @@ The slice identities are checked by `a4d_resonance_divisor_slice_check.py`; the 
 
 and local one-variable Smith exponents `(1,1,1,1,2,2,2,2)` at `x=i`.
 
+Although every listed one-variable determinant restriction is a square or a
+higher even power, the global Laurent determinant is **not** a rational
+Laurent unit times a square. At the square-character points `(4,9,16,25)` and
+`(1,4,9,16)`, exact determinants are respectively
+
+\[
+\frac{55489071565690103131701193700501}{19349176320000000000},\qquad
+\frac{82681547376902231521}{1761205026816}.
+\]
+
+Their ratio is
+\[
+\frac{443912572525520825053609549604008}{7266932874923047692275390625},
+\]
+which is not a rational square. If `det A = c z^m P(z)^2` for a Laurent
+unit `c z^m`, then at points with square coordinates the monomial is a square
+and the ratio of any two nonzero determinant values must be a rational
+square. This exact contradiction rejects a global-square shortcut; it does
+not identify the irreducible factors or their multiplicities.
+
 The repeated powers in these restrictions are suggestive but do **not** establish that the global four-variable determinant is a square, nor do the slice roots identify all irreducible components. Block ranks and determinant multiplicities alone do not classify the matrix kernel on intersections.
 
 ## Exact computation boundary
