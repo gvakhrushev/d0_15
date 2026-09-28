@@ -177,4 +177,83 @@ check("SOLDER_GRADIENT_GCD_IS_NONZERO_CONSTANT", grad_gcd.degree() == 0 and grad
 witness = sp.together(chart_rows[4].subs(lam, 0))
 print("WITNESS_ROLE0_N2_AT_LAMBDA_0", witness, flush=True)
 check("WITNESS_ROLE0_N2_LAMBDA0", witness == 16 * R(-7422763) / 11024667)
+
+# All absolute coframes, not only the one-parameter conformal ansatz above.
+# Row-major coordinate order: (Theta_00, Theta_01, ..., Theta_33).
+# solder_at returns the homogeneous 16-site gradient. Its local block is H/16.
+columns = []
+for k in range(16):
+    unit = sp.zeros(4)
+    unit[k // 4, k % 4] = 1
+    columns.append(sp.Matrix(list(solder_at(unit)[1])))
+H = sp.Matrix.hstack(*columns)
+check("FREE_SOLDER_HESSIAN_SYMMETRIC", H == H.T)
+
+# Independent assembly from the six exact plaquette bivectors. For each
+# complementary pair (u,v), the off-diagonal 4x4 block is antisymmetric in
+# internal indices; its transpose occupies the reversed leg block.
+H_faces = sp.zeros(16)
+for r, s in owner.PAIRS:
+    hol = roles[r] * roles[s] * roles[r].inv() * roles[s].inv()
+    curv = (hol - hol.inv()) / 2
+    qface = owner.orientation((r, s)) * (
+        owner.G2 * owner.STAR * owner.bivector_of_tangent(curv)
+    )
+    u_ax, v_ax = [i for i in range(4) if i not in (r, s)]
+    for k, (a, b) in enumerate(owner.PAIRS):
+        for i, j, value in ((a, b, qface[k]), (b, a, -qface[k])):
+            H_faces[4 * i + u_ax, 4 * j + v_ax] += 16 * value
+            H_faces[4 * j + v_ax, 4 * i + u_ax] += 16 * value
+check("FREE_SOLDER_INDEPENDENT_FACE_ASSEMBLY", H == H_faces)
+coords = sp.symbols("theta0:16")
+free_theta = sp.Matrix(4, 4, coords)
+free_action, free_grad = solder_at(free_theta)
+check("FREE_SOLDER_FULL_GRADIENT_IDENTITY",
+      sp.expand(sp.Matrix(list(free_grad)) - H * sp.Matrix(coords)) == sp.zeros(16, 1))
+check("FREE_SOLDER_ACTION_IDENTITY",
+      sp.expand(free_action - (sp.Matrix(coords).T * H * sp.Matrix(coords))[0] / 2) == 0)
+det_h = H.det()
+check("FREE_SOLDER_HESSIAN_INVERTIBLE", det_h != 0)
+check("FREE_SOLDER_RANK_16", H.rank() == 16)
+print("FREE_SOLDER_DETERMINANT", det_h, flush=True)
+# A compact independent finite-field certificate of invertibility. Clearing
+# denominators is invertible modulo 101; row elimination then has 16 pivots.
+prime = 101
+mod_h = []
+for i in range(16):
+    row = []
+    for j in range(16):
+        numerator, denominator = sp.fraction(H[i, j])
+        check_denominator = int(denominator) % prime
+        if not check_denominator:
+            raise AssertionError("denominator is zero modulo 101")
+        row.append(int(numerator) * pow(check_denominator, -1, prime) % prime)
+    mod_h.append(row)
+mod_det = 1
+for j in range(16):
+    pivot = next((i for i in range(j, 16) if mod_h[i][j]), None)
+    if pivot is None:
+        raise AssertionError("missing modular pivot")
+    if pivot != j:
+        mod_h[j], mod_h[pivot] = mod_h[pivot], mod_h[j]
+        mod_det = -mod_det
+    pivot_value = mod_h[j][j]
+    mod_det = mod_det * pivot_value % prime
+    for i in range(j + 1, 16):
+        factor = mod_h[i][j] * pow(pivot_value, -1, prime) % prime
+        mod_h[i] = [(a - factor * b) % prime for a, b in zip(mod_h[i], mod_h[j])]
+num, den = sp.fraction(det_h)
+check("FREE_SOLDER_MODULAR_DETERMINANT",
+      mod_det != 0 and mod_det == int(num) * pow(int(den), -1, prime) % prime)
+print("FREE_SOLDER_DETERMINANT_MOD_101", mod_det, flush=True)
+
+# Hostile controls: flat curvature must not acquire an artificial mass term,
+# and the older parabolic seed does have a nonzero critical solder.
+check("FREE_SOLDER_ZERO_FRAME_IS_CRITICAL", solder_at(sp.zeros(4))[1] == sp.zeros(4))
+old_roles = roles
+roles = [owner.I4 for _ in range(4)]
+check("FLAT_SOLDER_HESSIAN_ZERO", solder_at(free_theta)[1] == sp.zeros(4))
+roles = base_roles
+check("PARABOLIC_SEED_NONZERO_SOLDER_CRITICAL", solder_at(owner.ETA)[1] == sp.zeros(4))
+roles = old_roles
 print("DONE", flush=True)

@@ -2969,3 +2969,71 @@ These two vectors do not vanish for any `lambda`, so this finite
 connection on this homogeneous solder is not stationary. The order-4
 affine translation jet is a different contraction and is not recomputed
 here. No new Fourier mode and no L=3 result. Task stays `IN_PROGRESS`.
+
+### 9.38 The finite point excludes every solder, including site-dependent ones
+
+The exact untruncated checker now removes the conformal/one-modulus solder
+restriction from §9.37. Keep its four rational Cayley links fixed, and let
+`Theta` be an arbitrary real 4 by 4 coframe. In row-major coordinates
+`theta=(Theta_00,Theta_01,...,Theta_33)`, the homogeneous 16-site star action
+and its solder gradient are exactly
+
+\[
+ S_\star(\theta)=\tfrac12\theta^T H\theta,
+ \qquad \nabla_\theta S_\star=H\theta.
+\]
+
+The symmetric rational matrix `H` has **rank 16**. Its determinant is
+
+```text
+40765604576726345069227791532913732955215768490597607321403042878734640884143996245433663881216
+/
+1043809895872838655329569143133917752420140067322792752999568729
+```
+
+An independent modular elimination has sixteen pivots and determinant
+`46 mod 101`; all entry denominators are invertible modulo 101. The checker
+constructs `H` both by differentiating all sixteen unit coframes and by
+assembling the six oriented complementary-leg curvature blocks. It verifies
+the gradient/action identities with sixteen free symbols. Flat links give
+the zero matrix, and the original parabolic seed retains its nonzero critical
+solder, so the test does not impose invertibility by construction.
+
+Consequently `Theta=0` is the only solder-critical configuration at this
+finite connection. This is stronger than the one-parameter gcd test: **no
+nondegenerate solder can repair the point**. It also excludes arbitrary
+site-dependent coframes there. The action contains only coframe legs at the
+plaquette's base site; with these homogeneous links, every local Hessian is
+`H/16`. The full L=2 solder matrix is a direct sum of sixteen invertible local
+blocks, hence has rank 256. This direct-sum statement follows from locality,
+without assuming a homogeneous solder or restricting its Fourier support.
+
+The four owned residual channels depend on the links, translations, and fixed
+observer `h_n=I4`, and are independent of the free absolute solder in this
+chart (the F4 owner's `four_channel_I` and §H). Thus arbitrary translations
+and arbitrary coefficients of those four channels cannot change this
+necessary solder equation. The exclusion holds for their full action at
+these links, not only for the naked star term. It does not apply to a different
+theory in which the observer or channels acquire extra solder dependence.
+
+There is also a local open-set consequence. Cayley denominators are nonzero
+at this point, so each local solder Hessian is continuous in all neighbouring
+link coordinates. Its nonzero determinant remains nonzero in an open
+neighbourhood. On finite L=2, intersect the sixteen such neighbourhoods.
+Throughout that open set, joint zero-source stationarity forces every coframe
+to zero, independently of translations and the four channel coefficients.
+In particular no nondegenerate stationary sequence, or germ of any order,
+can converge to **this finite connection**. This does not obstruct germs at
+the older degenerate seed or at the exact Y branch of #275.
+
+The next necessary connection gate is now explicit: leave this open set and
+reach the locus where the local solder determinant vanishes at every site;
+then find an invertible coframe in each kernel before attempting the remaining
+link/translation Euler equations. A rank-deficient Hessian alone is not
+sufficient. The other finite support points and the global determinant-zero
+locus remain unclassified. No L=3 computation or task retirement is claimed.
+
+Validation: the extended untruncated checker passes, including its inherited
+24-link/16-solder checks, both Hessian constructions, exact determinant,
+independent modular determinant and hostile controls. This is an exact finite
+certificate and an elementary continuity consequence, not a Lean theorem.
