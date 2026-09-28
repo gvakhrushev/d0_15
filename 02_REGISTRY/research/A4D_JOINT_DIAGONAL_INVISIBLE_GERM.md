@@ -10,11 +10,13 @@
 ## 0. Status
 
 ```text
-BLOCKED
-J2-DIAGONAL-INVISIBLE-REAL-RAY-DEGREE-3-SOLDER-DEGENERATE
+REVIEW
+J2-DIAGONAL-INVISIBLE-JOINT-VACUUM-GERM-FOUND
 ```
 
-The origin-isolated terminal is not accepted. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). On the real cosine and sine dressings the resonant weight has connection Euler zero through degree 7 after the degree-2 even correction. The orthogonal weight does not. For the cosine its degree-3 part is \((0,32,32,0,0,0,\ 0,0,0,32,32,0,\ 0,-32,0,-32,0,0,\ 0,0,-32,0,-32,0)\), and the sine vector is the negative. The covector \(e_0+e_1+e_2\) pairs with these vectors to \(64\) and \(-64\). Every degree-3 link correction, expanded in the four Fourier weights, leaves that pairing unchanged. The forcing is therefore outside the image. A higher-order link correction does not enter degree 3. In the Gram chart \(H(q)=q\eta/2\) the derivative along the ten constant components has rank 10, with unique direction \(q=-\eta\). On the line \(t(-\eta)\) the Euler is \((1-t/2)^2\) times the forcing, hence zero only at the zero frame \(t=2\). Every constant root has \(\det(I+\eta q/2)=0\). A solder jet of degrees \(0\) through \(3\) has linear image rank 15 and does contain the forcing. The quadratic solder equations are the full response of this fixed flux, because the area element is quadratic in \(q\). Their ideal contains \(\det(I+\eta q/2)\), so every solder solution is degenerate. The pure axes \(u=e_i\) have zero degree-2 even forcing and zero connection Euler through degree 6 in all four Fourier weights, so they are not cut by this degree-3 obstruction. Neither isolation nor a finite curved germ is claimed.
+The origin is **not isolated**. Section 9 gives exact finite analytic curved joint-vacuum branches on every pure real COS/SIN axis of the owned four-dimensional N0. The full independent-edge Euler and all unrestricted solder partials vanish identically. This existence result closes the task's isolation-versus-branch question; it does not classify mixed directions.
+
+The following records the separate, still valid obstruction on the selected mixed ray. The complex quarter-wave and its conjugate each have a nonzero corrected degree-4 metric Euler on \(u=(0,0,1,1)\). On the real cosine and sine dressings the resonant weight has connection Euler zero through degree 7 after the degree-2 even correction. The orthogonal weight does not. For the cosine its degree-3 part is \((0,32,32,0,0,0,\ 0,0,0,32,32,0,\ 0,-32,0,-32,0,0,\ 0,0,-32,0,-32,0)\), and the sine vector is the negative. The covector \(e_0+e_1+e_2\) pairs with these vectors to \(64\) and \(-64\). Every degree-3 link correction, expanded in the four Fourier weights, leaves that pairing unchanged. The forcing is therefore outside the image. A higher-order link correction does not enter degree 3. In the Gram chart \(H(q)=q\eta/2\) the derivative along the ten constant components has rank 10, with unique direction \(q=-\eta\). On the line \(t(-\eta)\) the Euler is \((1-t/2)^2\) times the forcing, hence zero only at the zero frame \(t=2\). Every constant root has \(\det(I+\eta q/2)=0\). A solder jet of degrees \(0\) through \(3\) has linear image rank 15 and does contain the forcing. The quadratic solder equations are the full response of this fixed flux, because the area element is quadratic in \(q\). Their ideal contains \(\det(I+\eta q/2)\), so every solder solution is degenerate. The pure axes \(u=e_i\) have zero degree-2 even forcing and zero connection Euler through degree 6 in all four Fourier weights, so they are not cut by this degree-3 obstruction. That selected-ray obstruction does not apply to the exact pure-axis germs proved in section 9.
 
 PR #264 closes the affine bypass. Its terminal `J2-AFFINE-COFRAME-L4-KINEMATIC-DESCENT-NOT-GAUGE-NULL` shows that the flat forward-coframe image is not joint-Hessian-null on any singular L4 orbit. Those directions are not a gauge quotient of this carrier and cannot be used to delete the regular variables.
 
@@ -159,3 +161,112 @@ python3 02_REGISTRY/research/certificates/a4d_joint_diagonal_invisible_degree3_s
 python3 tools/validate_repo.py
 python3 tools/validate_work.py
 ```
+
+
+## 9. Exact finite branches on all four pure axes
+
+The remaining pure-axis gate is resolved by a finite formula. Write the four
+matrices from section 1 as `Y_r`, where `Y_r` occupies role `r`, and put
+
+\[
+ \kappa_0=3,\qquad\kappa_1=\kappa_2=\kappa_3=-1,
+ \quad
+ U_r(z)=I+\frac{4z}{4+\kappa_r z^2}Y_r
+          +\frac{2z^2}{4+\kappa_r z^2}Y_r^2.
+\]
+
+These are exactly the Cayley transforms of `z Y_r`. Each generator is simple:
+if `a<b<c` are the roles other than `r`, then
+
+\[
+ Y_r=-[(e_b-e_a)(e_c-e_a)^T-(e_c-e_a)(e_b-e_a)^T]\eta,
+ \qquad Y_r^3=-\kappa_rY_r.
+\]
+
+On the L=4 torus, let `p(x)=x0+x1+x2+x3 mod 4`. Set the solder to the identity
+at every site, hence `Q=eta`, and define
+
+\[
+ K_r(x;z)=(U_r(z),I,U_r(z)^{-1},I)_{p(x)},
+ \qquad K_s(x;z)=I\quad(s\ne r).
+\]
+
+For real `|z|<1` these are real analytic Lorentz links with all Cayley
+charts open. The coframe determinant is exactly one. At `z=0` all links
+are identity; their derivative is `cos(pi*p/2) Y_r` on role `r`, exactly
+the corresponding real axis of the census `N0`. Replacing `p` by `p-1`
+gives `sin(pi*p/2) Y_r`. If the real dressing is normalized as a sum of
+complex conjugates rather than its half, reparameterize `z` by `2z`.
+
+### Complete joint equations, not a restricted gradient
+
+The standalone certificate
+`certificates/a4d_joint_diagonal_invisible_exact_axes_check.py` reads and
+checks the owned census basis. For each of the four axes it constructs the
+full oriented plaquette
+
+\[
+ P_{ab}(x)=K_a(x)K_b(x+e_a)K_a(x+e_b)^{-1}K_b(x)^{-1},
+ \qquad F_{ab}=\tfrac12(P_{ab}-P_{ab}^{-1}).
+\]
+
+It differentiates each individual edge in all incident plaquettes, including
+incoming base sites, against all six independent Lorentz generators. It also
+differentiates the local action against all sixteen independent coframe
+entries, holding the connection fixed. All `4*24=96` connection components
+and `4*16=64` solder components vanish as rational functions in `z`, for
+**each** axis. These four phases represent all 256 torus sites; testing phases
+does not restrict variations to a four-phase ansatz. It evaluates the gradient
+of the full action at that ansatz. The ten metric partials therefore vanish
+as well. The sine solutions are lattice translations of these same exact
+identities. No finite Taylor cutoff is involved.
+
+The cancellation has the simple-plane mechanism also used on the explicit
+Y branch in #275. The three complementary signed areas combine into the
+simple plane above. Its star pairing with its own infinitesimal coframe
+variation is zero. The incident-edge sums cancel or reduce to a commutator
+with this plane, whose dual commutes with it. Here the rational checker
+verifies all components directly for all four roles, without importing #275
+as a dependency or changing the constant metric.
+
+At phase zero, on each face incident to the active role, the odd curvature is
+
+\[
+ F_{ab}=\pm\frac{4z}{4+\kappa_r z^2}Y_r.
+\]
+
+It is nonzero for every sufficiently small nonzero real `z`. Thus these are
+curved finite joint vacua arbitrarily close to the flat point, and cannot be
+removed by an internal Lorentz gauge transformation. They solve the regular
+connection equations automatically; a choice of complementary coordinates
+for range elimination cannot turn a full stationary branch into an isolated
+zero. Every Taylor coefficient of the full joint Euler on these branches is
+zero, so there is no first nonzero joint order to find on a pure axis.
+
+The #227 source-visible control `K1+K2+K3` on role zero fails the unrestricted
+solder gate under the same Cayley/four-phase construction. The nontrivial
+metric test therefore does distinguish the invisible branches. No conclusion
+is borrowed from #225's slow-background splitting or the invalid affine gauge
+bypass. The mixed `u=(0,0,1,1)` obstruction and its degenerate-solder result
+remain separate exact facts; their survival does not restore isolation.
+
+### Terminal and scope
+
+`J2-DIAGONAL-INVISIBLE-JOINT-VACUUM-GERM-FOUND` is certified by four explicit
+real COS branches and their SIN translates. This resolves the task's required
+negative alternative by exact finite existence, which is stronger than an
+order-limited formal germ. It is not an eight-parameter joint solution sheet,
+not a classification of mixed coordinates, and not the arbitrary slow-metric
+limit of #240. No new action, torsion restriction, selector or Einstein claim
+is used. No new Lean theorem is claimed.
+
+Reproduce the new terminal:
+
+```bash
+python3 02_REGISTRY/research/certificates/a4d_joint_diagonal_invisible_exact_axes_check.py
+```
+
+The historical large germ checker in section 8 retains the selected mixed-ray
+calculations and its old blocked diagnostic; that diagnostic does not describe
+the pure-axis existence terminal established here. Task retirement is confined
+to this isolation-versus-existence objective. Acceptance/merge remains CONTROL.
