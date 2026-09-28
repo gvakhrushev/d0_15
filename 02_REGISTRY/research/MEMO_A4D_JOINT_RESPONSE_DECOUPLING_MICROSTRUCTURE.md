@@ -1,249 +1,99 @@
-# A4D joint response decoupling — stationary-center quotient attack
-
-Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`  
-Execution PR: #310  
-Status: **IN PROGRESS / decisive response-quotient route selected**  
-Scientific boundary: unchanged naked star action; no selector, no torsion equation, no spectral filter.
+# A4D joint response decoupling — stationary-center quotient
 
-## 0. Typed target and source convention
+Task: EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE
+Execution: PR #310
+Lifecycle: IN_PROGRESS; PR remains Draft
+Action and scope: unchanged naked star action; no selector, torsion equation, spectral filter, or added action term.
 
-The finite metric response is the literal partial Euler vector in the ten symmetric Gram directions at each site,
-[
-E_Q(Q,K)in igoplus_x mathrm{Sym}^2(mathbb R^4)^*,
-]
-taken at fixed connection before imposing the metric equation. The physical normalization is applied only afterwards:
-[
-mathcal R_h(Q,K)=h^{-2}E_Q(Q,K).
-]
+## 0. Pinned inputs
 
-For exact finite supercell certificates, equality/non-equality is checked componentwise in the full phase-by-Gram vector; this is stronger than any finite-dimensional norm statement. For refinement estimates, use the owner sum norm from #226,
-[
-|F|_Sigma=sum_xsum_{mule
-u}|F_{mu
-u}(x)|,
-]
-unless a later theorem explicitly pushes the result through the existing physical reconstruction map into a local tensor/testing topology.
+These inputs were rechecked against the current main line on 2026-09-29. The listed merge commit is the exact integrated version consumed by this execution.
 
-The non-tautological comparator is the #216 designated smooth approximate/exact continuation on the **same sampled smooth metric** (Q_h). Comparing two exact solutions of an identical prescribed metric-source equation gives zero by substitution and is retained only as a tautological control.
+| Input | State | Merge commit |
+|---|---|---|
+| #216 smooth J2 resonance and comparator | MERGED | 5523d8f679c1ea02f9b73d757c81649740010d0a |
+| #223 normal-coordinate locality | MERGED | 25de48600cbc7c06e233d7b8f886f89566bdd6a4 |
+| #226 metric-response sensitivity | MERGED | 4b145afe33b2fb7381615199167608b71457d01d |
+| #227 curved connection-stationary control | MERGED | 245095f941a047dec95877ef03996742f37cb429 |
+| #232 exact curved nongauge Y joint vacuum | MERGED | caa1e65087ddf15cda35325189ebfcbf51a56592 |
+| #237 post-no-go gravity synthesis | MERGED | 7d7ad1ba561dc1fb1d726ea54307679f09e0dd88 |
+| #275 exact Y slow stationary lift | MERGED | ad61743e5be3de25ac987a912e497d26fd531271 |
 
-The scientific target is therefore
-[
-D_h(K_h):=
-h^{-2}igl(E_Q(Q_h,K_h)-E_Q(Q_h,K_h^{m sm})igr),
-]
-for exact connection-stationary or joint-critical sheets in the declared physical class, with the actual source convention stated in each theorem.
+## 1. Typed target and comparison convention
 
-## 1. Structural correction: do not try to rescue every connection to one smooth sheet
+At fixed connection, the finite metric Euler response is the vector E_Q(Q,K) in the direct sum over sites of Sym²((R⁴)*), with ten symmetric Gram coordinates per site. The physical normalization is applied after evaluation: R_h(Q,K) = h^-2 E_Q(Q,K).
 
-Merged #232 owns an exact analytic curved nongauge joint-vacuum family through the flat point,
-[
-E_K(eta,K_Y(z))=0,qquad E_Q(eta,K_Y(z))=0,
-]
-with nonzero plaquette curvature for (z
-e0).
+For refinement statements, the owner sum norm from #226 is the default: sum over sites and symmetric Gram components of the absolute value. Any continuum claim must name its testing topology and justify the reconstruction map into it.
 
-Therefore a universal estimate of the form
-[
-d(K_h,mathcal Z_h^{m sm})le C h^{-p}|r_h|^eta
-]
-cannot be the main terminal for a class that includes this stationary center: at zero residual it would force every curved nongauge root into the smooth/LC-like fiber.
+The designated comparator is the #216 smooth branch evaluated on the same sampled smooth metric Q_h. The source convention must be stated with every result. Comparing two exact solutions of the identical prescribed metric-source equation makes their response difference zero by substitution; that is only a tautological control.
 
-The correct decomposition is
+The task target remains the normalized response difference
+D_h(K_h) = h^-2 [ E_Q(Q_h,K_h) - E_Q(Q_h,K_h^sm) ]
+for the declared exact joint-critical class, including the curved nongauge microstructure in #232.
 
-[
-	ext{stationary center} oplus 	ext{transverse/range directions}.
-]
+## 2. Why the stationary center is the right object
 
-Uniform normal rescue remains useful only transversely. Along the physical stationary center, the required theorem is **metric-response equivalence**.
+The exact #232 period-four Y family satisfies E_K(eta,K_Y(z)) = 0 and E_Q(eta,K_Y(z)) = 0. For nonzero z it has nonzero plaquette curvature and is nongauge. Thus a universal estimate forcing every zero-residual connection into one smooth/LC-like fiber cannot cover this family.
 
-This changes the closure question from
+Separate the stationary center from transverse range directions. Normal rescue may still control the range. Along the center, the relevant question is whether the metric response is constant on the physical stationary fiber.
 
-> does the finite equation uniquely suppress UV connection amplitudes?
+The decisive finite test is the slow Bloch metric symbol around a genuinely curved point of the Y branch, with a Lyapunov–Schmidt reduction at the singular zero-momentum connection Hessian. No inverse of that singular Hessian is used.
 
-to
+## 3. Exact finite-cell response at z = 1
 
-> does the finite metric Euler response factor through the quotient by all physical stationary-center moduli relevant in the continuum class?
+The certificate a4d_y_curved_response_quotient_check.py reconstructs the full 96 by 96 connection Hessian from the four oriented face factors using exact rational arithmetic.
 
-## 2. Decisive exact experiment: slow Bloch/normal-jet response around the Y branch
+At z = 0, the reconstructed Hessian equals the owned #275 matrix L2/2 entry by entry. Its exact rank is 80 and its kernel has dimension 16. This is the flat assembly control.
 
-The first target is the exact period-four Y joint-vacuum family, because it is already a certified curved nongauge stationary center and therefore cannot be removed by a connection-uniqueness argument.
+At z = 1, the Hessian has two independent exact null vectors: the right-log Y tangent and the phase-0/2 boost-dual direction. Clearing denominators by 14 and reducing modulo 1,000,003 gives rank at least 94; the two exact null vectors give rank at most 94. Hence the rational rank is exactly 94 and the center dimension is exactly two.
 
-Let (z) be its microstructure amplitude and let (k) denote a slow Bloch momentum / normal-jet modulation. Linearize the **literal full finite Euler system** around
-[
-(Q,K)=(eta,K_Y(z))
-]
-in the genuine Lorentz quotient.
+For Bloch modulation in role direction e0, set lambda = exp(t) and use one low-color metric perturbation q shared across the four phases. The exact reduced center matrix at order t² is diagonal with entries -2500/8967 and -49/356, so it is nondegenerate. The left-center compatibility conditions at orders zero and one vanish exactly. The connection range and center corrections are solved with a bordered exact system, and the certificate checks the full range equations and the reduced center equation with zero residual. The JSON exports the exact right-kernel columns, left-cokernel rows, and the 96-entry q12 range-correction witnesses at orders t⁰ and t¹.
 
-Build the exact supercell block derivative
-[
-mathcal H_z(k)=
-egin{pmatrix}
-A_z(k) & B_z(k)\
-C_z(k) & D_z(k)
-end{pmatrix},
-]
-where
+The flat control reproduces the owned Einstein symbol: the coefficient of t² per site agrees entry by entry with one half of the linearized Einstein symbol in the repository Gram convention. Since t = i k0, this is the required negative one-half Einstein coefficient in physical k0².
 
-- (A_z=D_KE_K),
-- (B_z=D_QE_K),
-- (C_z=D_KE_Q),
-- (D_z=D_QE_Q),
+At z = 1 the transverse-traceless q12 component for momentum e0 has these exact coefficients per site:
 
-with one fixed polarization/character convention and all shifted edge occurrences included.
+| Quantity | Coefficient of t² |
+|---|---:|
+| Flat Einstein control | -1/2 |
+| Curved Y branch, z = 1 | 38218/13125 |
+| Difference, curved minus flat | 89561/26250 |
 
-### 2.1 Required negative control
+The full TT subspace for momentum e0 is spanned by q12 and q13. Its exact per-site defect matrix is [[89561/26250, -92753/52500], [-92753/52500, 89561/26250]], with determinant 2504701/294000, so the response mismatch survives the linearized diffeomorphism quotient. The q12 diagonal witness is already nonzero by itself. In physical k0² the matrix sign is reversed. The discrepancy is an exact rational Hessian/Schur response defect, not a floating-point or rank-threshold artifact.
 
-At (z=0), the reduction must reproduce the already-owned IR Schur symbol and direct Einstein identification:
-[
-S_0^{[2]}(k)=-	frac12 K_G^{(1)}(k)
-]
-in the repository Gram/output convention.
+Two independent exact Schur evaluations at lambda = 1 + 1/20 and 1 + 1/100 converge toward the computed quadratic coefficient, with the latter error smaller. They are corroborating finite controls; the Lyapunov–Schmidt coefficient calculation is the exact derivation.
 
-Failure of this control invalidates the new block assembly.
+## 4. Reproduction
 
-### 2.2 No illegal inverse at the stationary center
+Run:
 
-At nonzero (z), (A_z(0)) may have a physical stationary-center kernel. Do **not** write (A_z^{-1}).
+    python3 02_REGISTRY/research/certificates/a4d_y_curved_response_quotient_check.py
 
-Construct exact right/left kernel-complement data and a Lyapunov--Schmidt split:
-[
-a=a_{m c}+a_{m r}.
-]
+The script checks the flat owner match, exact flat and curved ranks, center vectors, Fredholm compatibility, nondegenerate reduced center matrix, exact range solves, Einstein control, TT non-gauge defect, direct-lambda convergence, and a hostile wrong-phase-transpose control that fails. It also compares its result with the pinned JSON. The certified finite-cell terminal is:
 
-Solve only the range equation on a certified complement. Project the remaining connection equations to the cokernel and retain the reduced center equations. The allowed center tangent is whatever survives the full reduced system; it is not declared gauge merely because its metric readout vanishes at the flat point.
+    A4D-Y-CURVED-RESPONSE-QUOTIENT-OBSTRUCTED-AT-Z1-TT
 
-The effective metric response on the stationary correspondence is then computed after the range correction and the reduced center compatibility. Symbolically it has Schur form only on the proven invertible complement:
-[
-S_z(k)
-=
-D_z(k)-C_{z,m r}(k)A_{z,m r}(k)^{-1}B_{z,m r}(k)
-+	ext{center-correction terms}.
-]
+The JSON records the full 10 by 10 flat and curved t² matrices, center matrix, rank evidence, exact TT defect, and the finite scope.
 
-Every extra term must come from the actual reduced equations.
+## 5. What this settles and what it does not
 
-## 3. The bifurcation test
+The coefficient identity S_z^[2] = S_0^[2] fails at the curved #232 vacuum z = 1 in a physical TT component. Therefore the proposed finite stationary-center response-equivalence identity is false in this tested direction. This is a concrete response-quotient obstruction at the Hessian level.
 
-Extract the total slow-momentum degree-two coefficient:
-[
-S_z^{[2]}(k).
-]
+It does not yet close #310 negatively. The task requires an actual smooth-background, source-compatible exact joint-critical sequence in the genuine Lorentz quotient whose normalized response gap has a nonzero limit or liminf. A Hessian defect at one curved vacuum is not that nonlinear sequence. It also does not prove global homogenization failure for every source convention or every physical branch.
 
-The primary exact question is
+The following distinctions remain binding:
 
-[
-oxed{S_z^{[2]}(k)stackrel{?}{=}S_0^{[2]}(k)}
-]
-on the entire allowed Y stationary-center branch, modulo the already-owned metric gauge/coframe kernel.
+- #232 is an exact curved nongauge joint vacuum at the flat metric and has zero metric response there.
+- #227 is curved and connection-stationary with nonzero metric response, but is not a joint-critical metric counterexample.
+- #275 supplies an exact slow off-shell coefficient, not an on-shell response residue.
+- #317 and #315 are algebraic character and local Smith controls, not nonlinear stationary-response theorems.
+- An identical-source comparison between two exact solutions is tautological.
 
-### Positive finite terminal
+## 6. Single remaining gate
 
-If the identity holds coefficient-by-coefficient for exact symbolic (z), record:
+The smallest missing result is a uniform nonlinear Lyapunov–Schmidt continuation of the z = 1 Y stationary center over a genuinely curved sampled smooth metric, with the declared #216 comparator and source convention, and with a remainder that is o(1) after the h^-2 normalization. The exact TT Hessian defect supplies the candidate nonzero response gap; the continuation must show that it persists on an exact source-compatible joint-critical sequence.
 
-[
-	exttt{A4D-Y-STATIONARY-CENTER-EINSTEIN-RESPONSE-EQUIVALENT}.
-]
+Until that continuation is proved or refuted, keep PR #310 Draft and Lifecycle IN_PROGRESS. Do not promote the finite certificate to either task terminal:
 
-This is not yet the global continuum theorem. It is the first exact proof that a genuinely curved nongauge UV stationary modulus can be invisible to the Einstein principal response.
-
-### Negative finite terminal
-
-If there is an exact non-gauge metric component and admissible center solution with
-[
-S_z^{[2]}-S_0^{[2]}
-e0,
-]
-record the precise coefficient and branch. It becomes a candidate universality defect, but **not** the task's final no-go until it is realized by an actual smooth nonflat exact joint-critical/source-compatible sequence satisfying the #310 comparator contract.
-
-## 4. Curved-background realization gate
-
-The existing exact Y slow extensions with fixed spatial Gram / time-dependent coframe are macroscopically flat. They are mandatory controls but cannot decide Einstein universality on curved metrics.
-
-The next realization must carry a genuine nonzero normal metric Hessian at the observation point. Use the existing normal-jet realization passport; do not infer curvature from a varying coframe alone.
-
-Required construction:
-
-1. choose an arbitrary symmetric normal Hessian (J_{ab,cd});
-2. sample a smooth compact periodic realization (Q_h(J)) with
-   (q(0)=0), (partial q(0)=0), (partial^2q(0)=J);
-3. continue the Y stationary center plus its range correction over this background, or prove the exact obstruction to continuation;
-4. evaluate the literal metric Euler on the solved branch;
-5. compare after the single (h^{-2}) normalization with the #216 smooth comparator.
-
-A nonzero off-shell vector such as the known Orth3 slow-solder coefficient is not enough. The connection equations must be solved to the required order/all orders for the claimed terminal.
-
-## 5. Nonlinear completion route after the degree-two test
-
-A positive quadratic response identity still needs a nonlinear/uniform theorem.
-
-The preferred architecture is a response quotient:
-
-[
-pi_h:mathcal C_h(Q_h)	omathcal R_h,
-qquad
-Ksim K'
-Longleftrightarrow
-h^{-2}|E_Q(Q_h,K)-E_Q(Q_h,K')|	o0.
-]
-
-Prove on the declared near-flat class that:
-
-1. the full stationary correspondence exists over the sampled curved background;
-2. transverse deviations from that correspondence obey a refinement-uniform estimate with only polynomial (h^{-1}) loss;
-3. physical center amplitudes need not be small, but the metric response is constant on each allowed stationary fiber up to (o(h^2));
-4. the common response agrees with the designated smooth comparator;
-5. the #201/#273 coefficient and normal-coordinate locality then give
-   [
-   h^{-2}E_Q(Q_h,K_h)=-	frac12G[g]+o(1).
-   ]
-
-A proof may use exact Lyapunov--Schmidt reduction, compensated compactness, a finite set of envelope fields attached to torsion/Bloch strata, or another method. It may not assume weak convergence is sufficient for the nonlinear metric variation.
-
-## 6. Hostile controls that must stay live
-
-The following are separate and must not be conflated:
-
-- #232 exact Y family: curved, nongauge, joint vacuum, flat metric response zero.
-- #227 family: exact (E_K=0), curved, nonzero metric response; not a joint-critical counterexample.
-- #275 Orth3 slow coefficient: exact resonance connection obstruction plus nonzero off-shell metric coefficient; not an on-shell response residue.
-- #317 complex rank-23 witness: algebraic complex character control; physical even-rank theorem survives on the unit torus.
-- #315 diagonal Smith data: local singularity control; not a multivariable stationary-response theorem.
-- identical prescribed metric-source equations on two exact branches: response equality is tautological and does not identify the common value with Einstein.
-
-## 7. Final task terminals
-
-Close positively with
-
-[
-oxed{	exttt{A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED}}
-]
-
-only if the proved class includes the exact Y-type grid-scale stationary microstructure and genuinely curved smooth backgrounds, with explicit source/comparator convention and a norm/topology in which
-[
-D_h(K_h)	o0.
-]
-
-Close negatively with
-
-[
-oxed{	exttt{A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO}}
-]
-
-only with a genuine smooth-background joint-critical/source-compatible sequence in the Lorentz quotient and a certified nonzero normalized response gap.
-
-Otherwise remain Draft and name exactly one smallest missing map/estimate.
-
-## 8. Immediate certificate deliverables
-
-The next exact artifact should contain, in one convention:
-
-- period-four Y supercell (A_z,B_z,C_z,D_z);
-- exact (z=0) reconstruction of the known Schur/Einstein symbol;
-- right kernel and left cokernel of (A_z(0));
-- certified range-complement inverse or exact solve;
-- reduced center compatibility matrix;
-- exact (S_z^{[2]}-S_0^{[2]});
-- gauge/coframe-kernel checks;
-- one hostile assembly control with a deliberately wrong transpose or omitted shifted edge occurrence that fails.
-
-Do not start another determinant census before this response test is resolved.
+- Positive: A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED.
+- Negative: A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO.
