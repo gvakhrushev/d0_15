@@ -55,6 +55,17 @@
       "affected_claims": [],
       "exit_condition": "The finite operational-cut question, its state/cut/allowed-operation/record separation, its two-outcome terminal, and interpretation firewall are recorded; one bounded WORKER task is registered; generated work views match the manifest.",
       "brief": "00_WORK/tasks/CTRL-D0-OPERATIONAL-CUT-RESEARCH-INTAKE.md"
+    },
+    {
+      "id": "EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION",
+      "class": "EXPENSIVE",
+      "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+      "state": "PLANNED",
+      "affected_claims": [
+        "D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001"
+      ],
+      "exit_condition": "Derive the exact Laurent factorization of the owned holomorphic A(z), certify the generic kernel rank on every irreducible divisor component and the full higher-codimension rank/nullity strata on (C^\u00d7)^4, and explicitly reject the refuted phase-count law.",
+      "brief": "00_WORK/tasks/EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION.md"
     }
   ]
 }
