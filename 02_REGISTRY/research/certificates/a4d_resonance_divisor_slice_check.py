@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# D0_CI_TIMEOUT_SECONDS=1200
 """Exact exploratory slices of the owned four-character connection Hessian.
 
 This certificate rebuilds the same 24x24 A(Z) convention as
@@ -257,6 +258,139 @@ check("GLOBAL_DETERMINANT_NOT_LAURENT_UNIT_TIMES_SQUARE",
           specialized_determinants[labels[i]] / specialized_determinants[labels[j]]
       ) for i in range(len(labels)) for j in range(i + 1, len(labels))))
 
+# Exact Hodge/chiral decomposition.  This is a global norm representation,
+# not an irreducible factorization of the rational Laurent determinant.
+Biv = sp.Matrix.hstack(*(bivector(generator) for generator in GEN))
+Hodge = Biv.inv() * STAR * Biv
+plus_basis = Hodge - I * sp.eye(6)
+minus_basis = Hodge + I * sp.eye(6)
+plus_eigenspace = plus_basis.nullspace()
+minus_eigenspace = minus_basis.nullspace()
+T6 = sp.Matrix.hstack(*plus_eigenspace, *minus_eigenspace)
+T = sp.diag(T6, T6, T6, T6)
+ip = [6 * role + j for role in range(4) for j in range(3)]
+im = [6 * role + j for role in range(4) for j in range(3, 6)]
+Qchiral = T.T * A * T
+cross_pm = Qchiral.extract(ip, im).applyfunc(sp.cancel)
+cross_mp = Qchiral.extract(im, ip).applyfunc(sp.cancel)
+check("CHIRAL_CROSS_BLOCKS_IDENTICALLY_ZERO",
+      all(value == 0 for value in cross_pm) and all(value == 0 for value in cross_mp))
+Aplus = Qchiral.extract(ip, ip).applyfunc(sp.cancel)
+Aminus = Qchiral.extract(im, im).applyfunc(sp.cancel)
+check("CHIRAL_BLOCKS_ARE_CONJUGATES",
+      Aminus == Aplus.xreplace({I: -I}))
+det_T = sp.factor(T.det())
+check("CHIRAL_CHANGE_BASIS_DETERMINANT_4096", det_T == 4096)
+
+# Compute det(Aplus) by sparse fraction-free Bareiss elimination over Q(i).
+# Multiplication by z0*z1*z2*z3 clears the entry denominators first.
+K = sp.QQ.algebraic_field(I)
+monomial = sp.prod(z)
+size = 12
+bareiss = [
+    [sp.Poly(sp.cancel(Aplus[row, col] * monomial), *z, domain=K)
+     for col in range(size)]
+    for row in range(size)
+]
+previous = sp.Poly(1, *z, domain=K)
+permutation_sign = 1
+for pivot_index in range(size - 1):
+    best = None
+    for row in range(pivot_index, size):
+        row_nnz = sum(not bareiss[row][col].is_zero
+                      for col in range(pivot_index, size))
+        if not row_nnz:
+            continue
+        for col in range(pivot_index, size):
+            if bareiss[row][col].is_zero:
+                continue
+            col_nnz = sum(not bareiss[r][col].is_zero
+                          for r in range(pivot_index, size))
+            score = (row_nnz * col_nnz, bareiss[row][col].length(),
+                     bareiss[row][col].total_degree(), row, col)
+            if best is None or score < best:
+                best = score
+    if best is None:
+        raise AssertionError("chiral plus block is singular over Q(i)(z)")
+    _, _, _, pivot_row, pivot_col = best
+    if pivot_row != pivot_index:
+        bareiss[pivot_index], bareiss[pivot_row] = bareiss[pivot_row], bareiss[pivot_index]
+        permutation_sign = -permutation_sign
+    if pivot_col != pivot_index:
+        for row in bareiss:
+            row[pivot_index], row[pivot_col] = row[pivot_col], row[pivot_index]
+        permutation_sign = -permutation_sign
+    pivot = bareiss[pivot_index][pivot_index]
+    for row in range(pivot_index + 1, size):
+        left = bareiss[row][pivot_index]
+        for col in range(pivot_index + 1, size):
+            if bareiss[row][col].is_zero and (left.is_zero or bareiss[pivot_index][col].is_zero):
+                continue
+            numerator = pivot * bareiss[row][col] - left * bareiss[pivot_index][col]
+            bareiss[row][col] = numerator.exquo(previous)
+        bareiss[row][pivot_index] = sp.Poly(0, *z, domain=K)
+    for col in range(pivot_index + 1, size):
+        bareiss[pivot_index][col] = sp.Poly(0, *z, domain=K)
+    previous = pivot
+    print(f"CHIRAL_BAREISS_STEP_{pivot_index + 1}_OF_{size - 1}", flush=True)
+
+det_Aplus_polynomial = permutation_sign * bareiss[size - 1][size - 1]
+det_Aplus = sp.cancel(det_Aplus_polynomial.as_expr() / monomial**size)
+plus_numerator, plus_denominator = sp.together(det_Aplus).as_numer_denom()
+Pplus = sp.Poly(plus_numerator, *z, extension=I)
+check("CHIRAL_PLUS_DENOMINATOR_PRODUCT_Z_CUBED",
+      sp.cancel(plus_denominator - monomial**3) == 0)
+check("CHIRAL_PLUS_NUMERATOR_671_TERMS_DEGREE_18",
+      Pplus.length() == 671 and Pplus.total_degree() == 18)
+
+chiral_terms = [
+    [*powers, str(sp.simplify(coefficient))]
+    for powers, coefficient in Pplus.terms()
+]
+chiral_expected_path = Path(__file__).with_name(
+    "a4d_resonance_divisor_chiral_numerator.json"
+)
+chiral_expected = json.loads(chiral_expected_path.read_text())
+check("CHIRAL_PLUS_NUMERATOR_COEFFICIENT_LEDGER_EXACT",
+      chiral_expected == {
+          "variables": [str(variable) for variable in z],
+          "denominator": str(plus_denominator),
+          "degree": Pplus.total_degree(),
+          "term_count": Pplus.length(),
+          "field": "Q(i)",
+          "terms": chiral_terms,
+      })
+
+# The basis determinant contributes det(T)^2.  The three exact controls also
+# compare the compact norm formula with fresh full 24x24 determinants.
+Pplus_expr = Pplus.as_expr()
+chiral_controls = {}
+for label, point_values in square_points.items():
+    point = tuple(sp.Integer(value) for value in point_values)
+    point_substitution = dict(zip(z, point))
+    p_value = sp.cancel(Pplus_expr.subs(point_substitution))
+    norm_value = sp.cancel(
+        p_value * p_value.xreplace({I: -I})
+        / (sp.prod(point)**6 * sp.Integer(det_T)**2)
+    )
+    direct_value = sp.cancel(connection_hessian(point).det(method="domain-ge"))
+    check("CHIRAL_NORM_CONTROL_" + label.replace(",", "_"),
+          sp.cancel(norm_value - direct_value) == 0)
+    chiral_controls[label] = str(norm_value)
+
+chiral_norm = {
+    "basis_change_determinant": str(det_T),
+    "plus_block": "Pplus(z0,z1,z2,z3)/(z0*z1*z2*z3)^3",
+    "minus_block": "conjugate(Pplus)(z0,z1,z2,z3)/(z0*z1*z2*z3)^3",
+    "full_determinant": "Pplus*conjugate(Pplus)/(4096^2*(z0*z1*z2*z3)^6)",
+    "plus_numerator_field": "Q(i)",
+    "plus_numerator_degree": Pplus.total_degree(),
+    "plus_numerator_term_count": Pplus.length(),
+    "plus_numerator_ledger": chiral_expected_path.name,
+    "exact_full_determinant_controls": chiral_controls,
+    "irreducible_factorization": "OPEN",
+}
+
 result = {
     "owner": "a4d_resonance_divisor_counterexample_check.py connection_hessian convention",
     "symbol_shape": [24, 24],
@@ -279,6 +413,7 @@ result = {
         "ratios": square_class_ratios,
         "conclusion": "global determinant is not a rational Laurent unit times a square",
     },
+    "chiral_determinant_norm": chiral_norm,
     "global_multivariable_factorization": "OPEN",
     "complete_rank_stratification": "OPEN",
 }

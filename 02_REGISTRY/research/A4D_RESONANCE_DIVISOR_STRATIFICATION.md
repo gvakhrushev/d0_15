@@ -13,6 +13,22 @@ Two exact matrix identities constrain the global determinant. Swapping either ad
 `A(z_0^-1,z_1^-1,z_2^-1,z_3^-1) = A(z_0,z_1,z_2,z_3)^T`.
 Thus `det A` is symmetric in the three spatial characters and invariant under simultaneous inversion. The exact congruence and transpose identities are checked at the matrix level in the certificate; they reduce the factorization problem but do not supply the factors.
 
+A further exact Hodge change of basis splits `A` into conjugate 12-by-12 blocks over `Q(i)`: both cross-chiral blocks vanish identically, and the change-of-basis determinant is `4096`. Sparse fraction-free elimination gives
+
+\[
+\det A_+(z)=\frac{P_+(z)}{(z_0z_1z_2z_3)^3},\qquad
+\det A_-(z)=\frac{\overline{P_+}(z)}{(z_0z_1z_2z_3)^3},
+\]
+
+where `P_+` is a degree-18, 671-term polynomial over `Q(i)` and the bar conjugates coefficients while leaving `z` fixed. Consequently the full determinant has the exact global norm representation
+
+\[
+\det A(z)=\frac{P_+(z)\,\overline{P_+}(z)}
+{4096^2(z_0z_1z_2z_3)^6}.
+\]
+
+The sparse coefficient ledger is [`certificates/a4d_resonance_divisor_chiral_numerator.json`](certificates/a4d_resonance_divisor_chiral_numerator.json); each row stores the four exponents followed by the exact coefficient. The certificate recomputes every coefficient and compares the norm formula with fresh exact full-matrix determinants at the three rational-square control points already recorded below. This identifies the global determinant polynomial as a norm without claiming its irreducible factors over `Q(i)` or over the rational Laurent ring.
+
 Exact univariate restrictions of the full determinant are:
 
 | Character slice | Exact determinant | Status |
@@ -66,11 +82,11 @@ and the ratio of any two nonzero determinant values must be a rational
 square. This exact contradiction rejects a global-square shortcut; it does
 not identify the irreducible factors or their multiplicities.
 
-The repeated powers in these restrictions are suggestive but do **not** establish that the global four-variable determinant is a square, nor do the slice roots identify all irreducible components. Block ranks and determinant multiplicities alone do not classify the matrix kernel on intersections.
+The repeated powers in these restrictions are suggestive but do **not** establish that the global four-variable determinant is a square, nor do the slice roots identify all irreducible components. The norm representation above is consistent with the exact nonsquare witness; block ranks and determinant multiplicities alone do not classify the matrix kernel on intersections.
 
 ## Exact computation boundary
 
-The general Laurent determinant has not yet been factored. A direct generic symbolic determinant and a sparse fraction-free elimination attempt were stopped after extended computation without a result; neither contributes evidence for a factorization. The reproducible artifact currently certifies exact restrictions and structural sparsity only.
+The general Laurent determinant now has an exact chiral norm representation, but its numerator has not been irreducibly factored. The certificate uses sparse fraction-free Bareiss elimination for one 12-by-12 block; it does not run or rely on a heuristic symbolic `factor` result. Exact full-matrix specializations independently check the resulting norm formula.
 
 The task remains open for the global factorization over `Q[z_0^±1,z_1^±1,z_2^±1,z_3^±1]`, generic rank on every irreducible divisor component, and exact higher-codimension rank-drop ideals/strata. No finite character scan substitutes for these algebraic steps.
 

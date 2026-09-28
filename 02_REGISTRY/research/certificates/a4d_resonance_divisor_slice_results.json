@@ -69,6 +69,22 @@
     },
     "conclusion": "global determinant is not a rational Laurent unit times a square"
   },
+  "chiral_determinant_norm": {
+    "basis_change_determinant": "4096",
+    "plus_block": "Pplus(z0,z1,z2,z3)/(z0*z1*z2*z3)^3",
+    "minus_block": "conjugate(Pplus)(z0,z1,z2,z3)/(z0*z1*z2*z3)^3",
+    "full_determinant": "Pplus*conjugate(Pplus)/(4096^2*(z0*z1*z2*z3)^6)",
+    "plus_numerator_field": "Q(i)",
+    "plus_numerator_degree": 18,
+    "plus_numerator_term_count": 671,
+    "plus_numerator_ledger": "a4d_resonance_divisor_chiral_numerator.json",
+    "exact_full_determinant_controls": {
+      "(4,9,16,25)": "55489071565690103131701193700501/19349176320000000000",
+      "(1,4,9,16)": "82681547376902231521/1761205026816",
+      "(4,1,25,9)": "117428711891945882503513/147622500000000"
+    },
+    "irreducible_factorization": "OPEN"
+  },
   "global_multivariable_factorization": "OPEN",
   "complete_rank_stratification": "OPEN"
 }
