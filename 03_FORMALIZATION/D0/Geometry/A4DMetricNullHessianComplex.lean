@@ -760,7 +760,7 @@ theorem cMatrix_q0_zero (d : Fin 4 → ℂ) :
 
 theorem cMatrix_zero : cMatrix (0 : Fin 4 → ℂ) = 0 := by
   ext i j
-  fin_cases i <;> simp [cMatrix]
+  fin_cases i <;> fin_cases j <;> simp [cMatrix]
 
 theorem q0_zero : q0 (0 : Fin 4 → ℂ) = 0 := by
   funext j
