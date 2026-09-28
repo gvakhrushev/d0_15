@@ -104,14 +104,18 @@ def multiplicity_at(poly_expr, root):
         poly = quotient
         multiplicity += 1
 
-zero_order = multiplicity_at(det_numerator, I) - multiplicity_at(det_denominator, I)
+numerator_zero_order = multiplicity_at(det_numerator, I)
+denominator_zero_order = multiplicity_at(det_denominator, I)
+zero_order = numerator_zero_order - denominator_zero_order
 smith_exponents = [1] * out["rank_M"] + [2] * (nullity - out["rank_M"])
 assert out["det_matches_(z^2+1)^12/(16z^12)"] is True
 assert out["rkA0"] == 16 and nullity == 8 and out["rank_M"] == 4
+assert numerator_zero_order == 12 and denominator_zero_order == 0
 assert zero_order == 12
 assert len(smith_exponents) == nullity and sum(smith_exponents) == zero_order
 assert smith_exponents == [1, 1, 1, 1, 2, 2, 2, 2]
 out["det_zero_order_at_i"] = zero_order
+out["det_denominator_order_at_i"] = denominator_zero_order
 out["local_nonunit_smith_exponents_at_i"] = smith_exponents
 out["smith_exponent_multiplicities"] = {"1": 4, "2": 4}
 out["smith_derivation"] = "nullity=8, rank(N_L A_prime N_K)=4 counts exponent 1, ord(det)=12"

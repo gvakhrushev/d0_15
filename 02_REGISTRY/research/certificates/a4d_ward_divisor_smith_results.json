@@ -8,6 +8,7 @@
   "diagonal_exact_owner": "a4d_ward_diagonal_smith_check.py",
   "det_A_diagonal": "(z**2 + 1)**12 / (16*z**12)",
   "det_zero_order_at_pm_i": 12,
+  "det_denominator_order_at_i": 0,
   "spike": {
     "rank_A": 16,
     "nullity": 8,

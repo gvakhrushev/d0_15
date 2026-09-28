@@ -5,6 +5,7 @@
   "nullity": 8,
   "rank_M": 4,
   "det_zero_order_at_i": 12,
+  "det_denominator_order_at_i": 0,
   "local_nonunit_smith_exponents_at_i": [
     1,
     1,
