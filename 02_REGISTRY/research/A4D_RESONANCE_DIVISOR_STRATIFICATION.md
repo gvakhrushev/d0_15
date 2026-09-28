@@ -27,7 +27,11 @@ where `P_+` is a degree-18, 671-term polynomial over `Q(i)` and the bar conjugat
 {4096^2(z_0z_1z_2z_3)^6}.
 \]
 
-The sparse coefficient ledger is [`certificates/a4d_resonance_divisor_chiral_numerator.json`](certificates/a4d_resonance_divisor_chiral_numerator.json); each row stores the four exponents followed by the exact coefficient. The certificate recomputes every coefficient and compares the norm formula with fresh exact full-matrix determinants at the three rational-square control points already recorded below. This identifies the global determinant polynomial as a norm without claiming its irreducible factors over `Q(i)` or over the rational Laurent ring.
+The sparse coefficient ledger is [`certificates/a4d_resonance_divisor_chiral_numerator.json`](certificates/a4d_resonance_divisor_chiral_numerator.json); each row stores the four exponents followed by the exact coefficient. The certificate recomputes every coefficient and compares the norm formula with fresh exact full-matrix determinants at the three rational-square control points already recorded below.
+
+The same certificate proves `P_+` irreducible over `Q(i)`. Use the determinant-one coordinate change `z_0=u`, `z_1=u+y_1`, `z_2=u+y_2`, `z_3=u+y_3`; in these variables the coefficient of `u^18` is the nonzero scalar `-1024`. Specializing `(y_1,y_2,y_3)=(1,4,8)` and reducing modulo the prime ideal `(13,i-5)` gives the degree-18 polynomial whose descending coefficients are stored in the results JSON. The common coefficient denominator is coprime to 13, and the reduced leading coefficient is `3`, so this reduction is well-defined and preserves degree. The exact Rabin irreducibility test over `F_13` succeeds. A factorization over `Q(i)` would, by Gauss's lemma and the constant leading coefficient in `u`, reduce to a nontrivial factorization of this polynomial; its irreducibility rules that out. Two coefficients (`512` and `-512 i`) have different conjugation ratios, so `P_+` and `\overline{P_+}` are nonassociate. Their product is therefore irreducible over `Q` by the quadratic Galois action. Thus, up to a Laurent unit, the rational determinant has one irreducible factor `P_+\overline{P_+}`; over `Q(i)` it splits into those two distinct conjugate factors, each with multiplicity one.
+
+At a generic point of either geometric divisor component, the corresponding 12-by-12 block has determinant valuation one, so its rank is 11 over the component function field (Smith form over the local DVR). The conjugate block is invertible there because its determinant factor is distinct. Hence the full 24-by-24 matrix has generic rank 23 on each codimension-one component. This is a generic component result, not a classification of higher-codimension intersections.
 
 Exact univariate restrictions of the full determinant are:
 
@@ -86,9 +90,9 @@ The repeated powers in these restrictions are suggestive but do **not** establis
 
 ## Exact computation boundary
 
-The general Laurent determinant now has an exact chiral norm representation, but its numerator has not been irreducibly factored. The certificate uses sparse fraction-free Bareiss elimination for one 12-by-12 block; it does not run or rely on a heuristic symbolic `factor` result. Exact full-matrix specializations independently check the resulting norm formula.
+The global Laurent factorization over `Q` and generic rank on both geometric codimension-one components are now certified. The remaining open step is the exact higher-codimension rank-drop locus: certify the ideals/strata where one chiral block drops below generic rank 11 or where both conjugate components meet, and determine the resulting full-matrix ranks. The certificate uses sparse fraction-free Bareiss elimination for one 12-by-12 block and an exact finite-field irreducibility test; it does not rely on a heuristic symbolic `factor` result.
 
-The task remains open for the global factorization over `Q[z_0^±1,z_1^±1,z_2^±1,z_3^±1]`, generic rank on every irreducible divisor component, and exact higher-codimension rank-drop ideals/strata. No finite character scan substitutes for these algebraic steps.
+The task remains open only for exact higher-codimension rank-drop ideals/strata and their ranks. The global rational Laurent factorization and generic codimension-one ranks are exact algebraic results; no finite character scan substitutes for the remaining ideal-theoretic classification.
 
 ## Scope firewall
 

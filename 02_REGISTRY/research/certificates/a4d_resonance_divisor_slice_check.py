@@ -10,9 +10,12 @@ from __future__ import annotations
 
 import json
 from itertools import combinations
+from math import lcm
 from pathlib import Path
 
 import sympy as sp
+from sympy.polys.domains import ZZ
+from sympy.polys.galoistools import gf_irred_p_rabin
 
 PAIR = list(combinations(range(4), 2))
 PAIR_INDEX = {pair: i for i, pair in enumerate(PAIR)}
@@ -364,6 +367,93 @@ check("CHIRAL_PLUS_NUMERATOR_COEFFICIENT_LEDGER_EXACT",
 # The basis determinant contributes det(T)^2.  The three exact controls also
 # compare the compact norm formula with fresh full 24x24 determinants.
 Pplus_expr = Pplus.as_expr()
+
+# Prove irreducibility of Pplus over Q(i) by a degree-preserving finite-field
+# specialization after a unimodular coordinate change. Set
+# z0=u, z1=u+y1, z2=u+y2, z3=u+y3; the leading u^18 coefficient is a nonzero
+# scalar, so any factorization specializes to a nontrivial factorization.
+u, y1, y2, y3 = sp.symbols("u y1 y2 y3")
+coordinate_change = sp.Matrix([
+    [1, 0, 0, 0],
+    [1, 1, 0, 0],
+    [1, 0, 1, 0],
+    [1, 0, 0, 1],
+])
+check("CHIRAL_IRREDUCIBILITY_COORDINATE_CHANGE_UNIMODULAR",
+      coordinate_change.det() == 1)
+Ptrans_expr = sp.expand(Pplus_expr.subs(
+    {z[0]: u, z[1]: u + y1, z[2]: u + y2, z[3]: u + y3},
+    simultaneous=True,
+))
+Ptrans = sp.Poly(Ptrans_expr, u, y1, y2, y3, extension=I)
+leading_u_coefficient = Ptrans.coeff_monomial(u**18)
+check("CHIRAL_IRREDUCIBILITY_CONSTANT_LEADING_U_COEFFICIENT",
+      Ptrans.degree(u) == 18 and leading_u_coefficient == -1024)
+coefficient_denominators = []
+for _, coefficient in Ptrans.terms():
+    real_part, imaginary_part = sp.expand(coefficient.as_expr()).as_real_imag()
+    coefficient_denominators.extend([
+        int(sp.denom(real_part)), int(sp.denom(imaginary_part))
+    ])
+common_coefficient_denominator = lcm(*coefficient_denominators)
+check("CHIRAL_IRREDUCIBILITY_CLEARING_DENOMINATOR_UNIT_MOD13",
+      common_coefficient_denominator % 13 != 0)
+
+specialization_y = {y1: 1, y2: 4, y3: 8}
+specialized_u = sp.Poly(
+    sp.expand(Ptrans_expr.subs(specialization_y)), u, extension=I
+)
+check("CHIRAL_IRREDUCIBILITY_SPECIALIZATION_DEGREE_18",
+      specialized_u.degree() == 18 and specialized_u.LC() == -1024)
+finite_prime = 13
+finite_i = 5
+check("CHIRAL_IRREDUCIBILITY_SPLIT_PRIME_ROOT",
+      (finite_i**2 + 1) % finite_prime == 0)
+
+
+def rational_mod_prime(value: sp.Expr, prime: int) -> int:
+    rational = sp.Rational(value)
+    numerator = int(rational.p)
+    denominator = int(rational.q)
+    if denominator % prime == 0:
+        raise AssertionError("coefficient denominator is not invertible modulo prime")
+    return (numerator % prime) * pow(denominator, -1, prime) % prime
+
+
+finite_field_coefficients_descending = []
+for degree in range(18, -1, -1):
+    coefficient = sp.expand(specialized_u.nth(degree))
+    real_part, imaginary_part = coefficient.as_real_imag()
+    residue = (
+        rational_mod_prime(real_part, finite_prime)
+        + finite_i * rational_mod_prime(imaginary_part, finite_prime)
+    ) % finite_prime
+    finite_field_coefficients_descending.append(residue)
+check("CHIRAL_IRREDUCIBILITY_MOD13_COEFFICIENT_CERTIFICATE",
+      finite_field_coefficients_descending == [
+          3, 0, 11, 7, 5, 12, 0, 10, 5, 10, 0, 4, 2, 9, 11, 5, 0, 6, 7
+      ])
+irreducible_mod_prime = gf_irred_p_rabin(
+    ZZ.map(finite_field_coefficients_descending), finite_prime, ZZ
+)
+check("CHIRAL_IRREDUCIBILITY_SPECIALIZATION_IRREDUCIBLE_MOD13",
+      irreducible_mod_prime)
+
+# Pplus and its coefficient conjugate are distinct: these two monomial
+# coefficients have conjugation ratios +1 and -1, respectively.
+real_witness = Pplus.coeff_monomial(z[0]**6 * z[1]**4 * z[2]**4 * z[3]**4)
+imag_witness = Pplus.coeff_monomial(z[0]**6 * z[1]**4 * z[2]**3 * z[3]**2)
+check("CHIRAL_CONJUGATE_NONASSOCIATION_WITNESSES",
+      real_witness == 512 and imag_witness == -512 * I)
+real_conjugation_ratio = sp.simplify(
+    real_witness.xreplace({I: -I}) / real_witness
+)
+imag_conjugation_ratio = sp.simplify(
+    imag_witness.xreplace({I: -I}) / imag_witness
+)
+conjugates_nonassociate = real_conjugation_ratio != imag_conjugation_ratio
+check("CHIRAL_CONJUGATE_COMPONENTS_DISTINCT", conjugates_nonassociate)
+
 chiral_controls = {}
 for label, point_values in square_points.items():
     point = tuple(sp.Integer(value) for value in point_values)
@@ -388,7 +478,26 @@ chiral_norm = {
     "plus_numerator_term_count": Pplus.length(),
     "plus_numerator_ledger": chiral_expected_path.name,
     "exact_full_determinant_controls": chiral_controls,
-    "irreducible_factorization": "OPEN",
+    "irreducibility_certificate": {
+        "substitution": "z0=u; z1=u+y1; z2=u+y2; z3=u+y3",
+        "coordinate_change_determinant": str(coordinate_change.det()),
+        "leading_u_coefficient": str(leading_u_coefficient),
+        "coefficient_denominator_cleared": common_coefficient_denominator,
+        "specialization": "y1=1, y2=4, y3=8 over F13 with i mapped to 5",
+        "specialized_coefficients_descending": finite_field_coefficients_descending,
+        "degree_preserved": 18,
+        "irreducible_mod_prime": irreducible_mod_prime,
+        "conjugate_nonassociation_witnesses": {
+            "real_coefficient": str(real_witness),
+            "imaginary_coefficient": str(imag_witness),
+            "conjugation_ratios": [
+                str(real_conjugation_ratio), str(imag_conjugation_ratio)
+            ],
+        },
+        "conclusion": "Pplus irreducible over Q(i); Pplus*conjugate(Pplus) irreducible over Q",
+    },
+    "codimension_one_generic_rank_over_C": 23,
+    "irreducible_factorization_over_Q": "CERTIFIED_UP_TO_LAURENT_UNIT",
 }
 
 result = {
@@ -414,7 +523,7 @@ result = {
         "conclusion": "global determinant is not a rational Laurent unit times a square",
     },
     "chiral_determinant_norm": chiral_norm,
-    "global_multivariable_factorization": "OPEN",
+    "global_multivariable_factorization": "CERTIFIED_UP_TO_LAURENT_UNIT_OVER_Q",
     "complete_rank_stratification": "OPEN",
 }
 output = Path(__file__).with_name("a4d_resonance_divisor_slice_results.json")

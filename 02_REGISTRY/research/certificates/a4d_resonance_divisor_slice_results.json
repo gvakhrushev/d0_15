@@ -83,8 +83,48 @@
       "(1,4,9,16)": "82681547376902231521/1761205026816",
       "(4,1,25,9)": "117428711891945882503513/147622500000000"
     },
-    "irreducible_factorization": "OPEN"
+    "irreducibility_certificate": {
+      "substitution": "z0=u; z1=u+y1; z2=u+y2; z3=u+y3",
+      "coordinate_change_determinant": "1",
+      "leading_u_coefficient": "-1024",
+      "coefficient_denominator_cleared": 1,
+      "specialization": "y1=1, y2=4, y3=8 over F13 with i mapped to 5",
+      "specialized_coefficients_descending": [
+        3,
+        0,
+        11,
+        7,
+        5,
+        12,
+        0,
+        10,
+        5,
+        10,
+        0,
+        4,
+        2,
+        9,
+        11,
+        5,
+        0,
+        6,
+        7
+      ],
+      "degree_preserved": 18,
+      "irreducible_mod_prime": true,
+      "conjugate_nonassociation_witnesses": {
+        "real_coefficient": "512",
+        "imaginary_coefficient": "-512*I",
+        "conjugation_ratios": [
+          "1",
+          "-1"
+        ]
+      },
+      "conclusion": "Pplus irreducible over Q(i); Pplus*conjugate(Pplus) irreducible over Q"
+    },
+    "codimension_one_generic_rank_over_C": 23,
+    "irreducible_factorization_over_Q": "CERTIFIED_UP_TO_LAURENT_UNIT"
   },
-  "global_multivariable_factorization": "OPEN",
+  "global_multivariable_factorization": "CERTIFIED_UP_TO_LAURENT_UNIT_OVER_Q",
   "complete_rank_stratification": "OPEN"
 }
