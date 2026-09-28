@@ -111,19 +111,36 @@ T^{-1}AT=\begin{pmatrix}0&M\\\sigma(M)&0\end{pmatrix},
 
 Существенно: `EK=0` не требует uniqueness связи для Einstein-предела. Возможна общая метрическая response class для разных nongauge sheets. Сначала доказать или опровергнуть именно эту response equivalence.
 
-### U. Refinement-uniform normal rescue или response decoupling
+### U. Refinement-uniform response control: normal rescue только на transverse quotient
 
-Закрыть недостающий динамический переход #216/#240/#310. Дать существование хотя бы одного exact sheet над genuinely curved smooth backgrounds и оценку всех sheet/moduli, включённых в заявленный класс. Стандартный достаточный путь:
-
+Закрыть недостающий динамический переход #216/#240/#310. Здесь важно не требовать заведомо слишком сильного утверждения. Merged exact Y-family #232 даёт analytic curved nongauge joint-vacuum center through the flat point:
+\[
+E_K(\eta,K(z))=E_Q(\eta,K(z))=0,
+\qquad K(z)\not\sim_{\rm gauge} I
+\]
+для малых ненулевых `z`. Поэтому universal all-sheet estimate к одному smooth/LC-like fiber
 \[
 d_\perp(K_h,\mathcal Z_h^{\rm sm})
+\le C h^{-p}\|r_h\|^\beta
+\]
+не может быть главным terminal для класса, который включает этот exact stationary center: при `r_h=0` он потребовал бы нулевого расстояния от физически curved nongauge roots до smooth fiber.
+
+Правильная декомпозиция — **stationary center + transverse/range normal bundle**. Для transverse quotient допустим и полезен uniform rescue:
+\[
+d_{\rm tr}(K_h,\mathcal Z_h^{\rm stat})
 \le C h^{-p}\|r_h\|^\beta,
 \qquad r_h=E_K(Q_h,K_h^{\rm sm})=O(h^\infty),\quad \beta>0,
 \]
+где `\mathcal Z_h^{stat}` — реально доказанный stationary center/critical correspondence, а не множество, искусственно расширенное ради оценки. Но вдоль физических nongauge center directions требуется отдельная **response-equivalence theorem**, а не подавление amplitude.
 
-с постоянными `C,p,β`, не деградирующими при увеличении lattice size, переходе между rank strata, взаимодействии мод и изменении фона в заявленной компактной области. `Z_h^sm` содержит только реально допустимые smooth-fiber moduli; нельзя включить произвольные curved roots по определению. Если нормальное расстояние не контролируется из-за физических модулей, доказать непосредственно response estimate, достаточный для `D_h→0`, с контролем их действительных nonlinear moments/commutators.
+Основной target для #310 поэтому:
+\[
+\sup_{K_h,K_h'\in\mathcal C_h(g)}
+h^{-2}\|E_Q(Q_h,K_h)-E_Q(Q_h,K_h')\|_{\mathcal T}\to0
+\]
+в явно заявленном stationary class/source contract, либо exact curved-background joint-critical counterexample с ненулевым liminf. Достаточно доказать эквивалентную factorization/readout estimate на reduced stationary correspondence; uniqueness связи не нужна.
 
-Разрешён альтернативный подход через response quotient, compensated compactness или Young measures, если доказаны именно используемые moment constraints из finite Euler и passage через nonlinear metric variation. Weak convergence и bounded energy сами по себе не заменяют этого шага.
+Разрешены response quotient, Lyapunov--Schmidt reduction, compensated compactness или Young measures, но должны быть доказаны именно используемые moment/commutator constraints из literal finite Euler и passage через nonlinear metric variation. Weak convergence, bounded energy и конечный census characters сами по себе этот шаг не заменяют.
 
 Обязательные hostile inference controls: isolated zero не гарантирует solvability; конечномерный Łojasiewicz exponent при каждом `L` не гарантирует uniform exponent; constant-background normal isolation не исключает slow-background bifurcation вроде `v³-hv`; гладкие Fourier tails не контролируют новые resonant couplings автоматически. Это тесты аргумента, а не контрпримеры к самому star action.
 
