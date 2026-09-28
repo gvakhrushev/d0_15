@@ -29,6 +29,8 @@ Current gravity packets:
 
 - `MEMO_A4D_Q0_STATIONARY_SHEET_STRESS.md` — exact two-mode real q0 sheet: mode B is an identity-link joint vacuum; on mode A the whole complex metric-silent line, after the unique even order-ε² repair, keeps an order-ε³ connection obstruction. The odd kernel at that order does not move the class.
 - `A4D_GERM_TOWER_WARD_N0_SYNTHESIS.md` — separates moving-germ, frozen cross-character, physical cokernel and N0 nonlinear carriers; records the harmonic-tower collapse as a bounded certificate target and narrows the live nonlinear gate to #260 degree-7 odd resonance.
+- `A4D_RESONANCE_DIVISOR_RANK_LAW.md` — exact counterexample to the proposed phase-count nullity law, with the full character determinant still a nonempty proper divisor.
+- `A4D_ORTH3_NONFLAT_T3H_RESPONSE.md` — full #275 Orth3 (t^3h) source has a Fredholm obstruction; the direct nonflat-solder metric coefficient is nonzero but is not a stationary-sheet residue.
 
 ## Pending control intake
 
