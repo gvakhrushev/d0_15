@@ -8,8 +8,8 @@ This file is a dispatch brief, not a new lifecycle registration by itself.
 Pinned live inputs at dispatch time:
 
 - main: `e80a3b1ccf615fb4f70bf5900181592604928497`
-- resonance / structural lane #317: head `b0c3354945b438c9f4ca0839b780e9ad7b2e01c2`
-- response lane #310: head `b02e097cfd1896de293600c39880ddb4ac19c259`
+- resonance / structural lane #317: reviewed base head `727a3bd36aed3083c8584232a93922521d44465e`
+- response lane #310: result head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b`
 
 Always refresh before execution. Reuse merged/live owners; do not recompute whole censuses unless a narrow consistency check requires it.
 
@@ -22,9 +22,9 @@ The remaining gravity problem is no longer “find one more local identity”. T
 The mission is to decide the complete implication
 
 [
-	ext{finite naked-star joint criticality on smooth sampled metrics}
-quadLongrightarrowquad
-	ext{universal metric response }-	frac12G
+\text{finite naked-star joint criticality on smooth sampled metrics}
+\quad\Longrightarrow\quad
+\text{universal metric response }-\tfrac12G
 ]
 
 in a stated near-flat physical class, **without** inserting a new selector, torsion equation, Holst term, spectral filter, action term, or hand-imposed connection smoothness.
@@ -43,7 +43,7 @@ Do not return another broad “OPEN: compactness” statement without first atta
 
 ### 1.1 D: resonance/Hodge structure
 
-The owned (24	imes24) polarized connection symbol satisfies an exact integral complex structure:
+The owned (24\times24) polarized connection symbol satisfies an exact integral complex structure:
 
 [
 Omega^2=-I,qquad Omega^T=-Omega,qquad AOmega+Omega A=0.
@@ -53,7 +53,7 @@ In a constant SD/ASD basis,
 
 [
 T^{-1}AT=
-egin{pmatrix}
+\begin{pmatrix}
 0&M\
 sigma(M)&0
 end{pmatrix}.
@@ -62,7 +62,7 @@ end{pmatrix}.
 The valid global complex rank identity is
 
 [
-oxed{operatorname{rk}A=
+\boxed{operatorname{rk}A=
 operatorname{rk}M+operatorname{rk}sigma(M)}.
 ]
 
@@ -82,17 +82,17 @@ sigma(M)(Z)=M(Z)^dagger,
 hence
 
 [
-oxed{operatorname{rk}A=2operatorname{rk}M},
+\boxed{operatorname{rk}A=2operatorname{rk}M},
 qquad
-oxed{det A=|det M|^2ge0}.
+\boxed{det A=|det M|^2ge0}.
 ]
 
 The diagonal chiral determinant is
 
 [
-oxed{
+\boxed{
 det M(i+w)=
--rac{w^6(w+2i)^6}{4(w+i)^6}
+-\frac{w^6(w+2i)^6}{4(w+i)^6}
 }.
 ]
 
@@ -111,8 +111,8 @@ is the determinant after clearing a common denominator in all 12 rows, not the L
 The regular low-momentum Schur symbol has been identified directly with the standard flat linearized Einstein tensor:
 
 [
-oxed{
-K_{m Schur}=-	frac12 K_G^{(1)}
+\boxed{
+K_{\rm Schur}=-\tfrac12 K_G^{(1)}
 }.
 ]
 
@@ -131,15 +131,15 @@ Thus the coefficient is not the current mystery.
 #216 constructs, for a fixed admissible smooth nondegenerate realization, a smooth approximate connection sheet with
 
 [
-E_K(Q_h,K_h^{m sm})=O(h^infty)
+E_K(Q_h,K_h^{\rm sm})=O(h^infty)
 ]
 
 and metric response
 
 [
-h^{-2}E_Q(Q_h,K_h^{m sm})
+h^{-2}E_Q(Q_h,K_h^{\rm sm})
 =
--	frac12G[g]+O(h).
+-\tfrac12G[g]+O(h).
 ]
 
 Its IR inverse, Fourier-tail, alias, nonlinear normal-center and summed-remainder arguments are inputs.
@@ -151,7 +151,7 @@ What #216 does **not** own is an exact full stationary correspondence over the r
 Merged #232 owns an exact analytic curved nongauge joint-vacuum family through the flat point:
 
 [
-oxed{
+\boxed{
 E_K(eta,K_Y(z))=0,qquad
 E_Q(eta,K_Y(z))=0
 }
@@ -184,7 +184,7 @@ The same lane also owns the real period-four mixed structure
 
 [
 operatorname{rank}L_0=80,qquad
-operatorname{rank}inom{L_0}{M_0}=88,
+operatorname{rank}\binom{L_0}{M_0}=88,
 ]
 
 and identifies the eight-real joint-invisible flat kernel. The first slow-background joint cross gate reduces that carrier to a three-real surviving subspace.
@@ -210,8 +210,8 @@ Keep this distinction exact.
 The old all-sheet normal rescue target
 
 [
-d_perp(K_h,mathcal Z_h^{m sm})
-le C h^{-p}|r_h|^eta
+d_perp(K_h,mathcal Z_h^{\rm sm})
+le C h^{-p}|r_h|^\beta
 ]
 
 cannot be the global theorem on a class containing the exact Y stationary center: at zero residual it would force a curved nongauge root into the smooth/LC-like fiber.
@@ -219,10 +219,10 @@ cannot be the global theorem on a class containing the exact Y stationary center
 Use instead
 
 [
-oxed{
-	ext{stationary center}
+\boxed{
+\text{stationary center}
 oplus
-	ext{transverse/range normal directions}
+\text{transverse/range normal directions}
 }.
 ]
 
@@ -231,9 +231,9 @@ Transverse variables may obey a uniform rescue estimate. Physical center amplitu
 The primary mathematical object is therefore a stationary response quotient:
 
 [
-Ksim_{m resp}K'
+Ksim_{\rm resp}K'
 iff
-h^{-2}|E_Q(Q_h,K)-E_Q(Q_h,K')|	o0
+h^{-2}|E_Q(Q_h,K)-E_Q(Q_h,K')|\to0
 ]
 
 inside a precisely declared exact stationary class.
@@ -251,19 +251,19 @@ Define the exact stationary class (mathcal C_h(g)) by the literal finite equatio
 A sufficient positive terminal is:
 
 [
-oxed{
+\boxed{
 sup_{K_hinmathcal C_h(g)}
 left|
-h^{-2}E_Q(Q_h,K_h)+	frac12G[g]
-ight|_{mathcal T}
-le C_g h^gamma+arepsilon_h
+h^{-2}E_Q(Q_h,K_h)+\tfrac12G[g]
+\right|_{mathcal T}
+le C_g h^gamma+\varepsilon_h
 }
 ]
 
 with
 
 [
-gamma>0,qquad arepsilon_h	o0,
+gamma>0,qquad \varepsilon_h\to0,
 ]
 
 for the claimed class and an explicit norm/testing topology (mathcal T).
@@ -273,123 +273,35 @@ The theorem must include:
 1. **existence:** at least one exact stationary sheet in the declared flat-approaching class over the curved smooth background;
 2. **transverse control:** residual/range variables cannot create an uncontrolled normalized response;
 3. **center response equivalence:** all allowed physical nongauge stationary-center moduli have the same normalized metric response;
-4. **Einstein identification:** the common response is the #216/#273/(E_eta) response, hence (-	frac12G);
+4. **Einstein identification:** the common response is the #216/#273/(E_eta) response, hence (-\tfrac12G);
 5. **realization/frame erasure:** within the stated admissible class, the limit does not depend on the chosen normal realization/frame except through (g).
 
 A sourced version may then compare the common geometric response with the prescribed source. Do not infer Einstein merely because two exact branches satisfy the same metric source equation.
 
 ---
 
-## 4. First decisive attack: exact Y stationary-center response symbol
+## 4. Completed finite attack: exact Y stationary-center response symbol
 
-This is the highest-priority computation.
+The finite Bloch/Lyapunov--Schmidt test is integrated in PR #310 at result head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b`.
 
-### 4.1 Build the literal supercell derivative
+Reproduce it with:
 
-Around the exact Y branch
+    python3 02_REGISTRY/research/certificates/a4d_y_curved_response_quotient_check.py
 
-[
-(Q,K)=(eta,K_Y(z)),
-]
+The certificate reconstructs the exact 96 by 96 connection Hessian from every oriented face occurrence. At z=0 it matches the owned #275 L2/2 matrix entry by entry, has exact rank 80 and kernel dimension 16, and reproduces the flat Einstein low-color symbol.
 
-introduce slow Bloch momentum (k) or an equivalent normal-jet modulation and build
+At the curved exact #232 Y vacuum z=1, two exact center vectors are exported. Clearing denominators by 14 and reducing modulo 1,000,003 gives rank at least 94; the two independent exact null vectors give rank at most 94. Thus the rational rank is exactly 94 and the center/cokernel dimension is two. The reduced order-t² center matrix is diag(-2500/8967,-49/356), and the left compatibility, range equations, and center equation are checked exactly with zero residual. No inverse across the center kernel is used.
 
-[
-mathcal H_z(k)=
-egin{pmatrix}
-A_z(k)&B_z(k)\
-C_z(k)&D_z(k)
-end{pmatrix}
-]
+For Bloch momentum in role direction e0, with lambda=exp(t) and the same metric perturbation on the four phases, the full TT subspace is span(q12,q13). The per-site coefficient difference in t² is
 
-with
+    [[89561/26250, -92753/52500],
+     [-92753/52500, 89561/26250]],
 
-[
-A_z=D_KE_K,quad
-B_z=D_QE_K,quad
-C_z=D_KE_Q,quad
-D_z=D_QE_Q.
-]
+with determinant 2504701/294000. It is nonzero on the physical TT quotient. For physical k0², where t=i k0, the matrix has the opposite sign. The q12 coefficient alone is 38218/13125 on the curved branch versus -1/2 in the flat Einstein control. Exact direct Schur evaluations at lambda=1+1/20 and 1+1/100 converge to this coefficient; a deliberately wrong phase transpose fails its hostile control.
 
-Requirements:
+This disproves the finite identity S_z^[2]=S_0^[2] at z=1. It is a finite Hessian/Schur response obstruction only. It does not yet establish a nonlinear curved-background joint-critical sequence or either global terminal. The full matrices, exact center/range witnesses, and checks are in the certificate and pinned JSON; the derivation and scope are in `MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`.
 
-- literal finite action;
-- every shifted occurrence of each edge;
-- one consistent conjugate-character/polarization convention;
-- genuine Gram/Lorentz quotient;
-- exact rational/symbolic arithmetic whenever feasible.
-
-### 4.2 Mandatory control at (z=0)
-
-The exact reduction must reproduce the already-owned regular Schur/Einstein symbol:
-
-[
-S_0^{[2]}(k)=-	frac12K_G^{(1)}(k).
-]
-
-A construction failing this control is discarded.
-
-### 4.3 No illegal (A_z^{-1})
-
-The Y branch is a stationary center. At (k=0), do not invert the full connection block if it is singular.
-
-Compute exact right kernel, left cokernel, and a certified complement. Perform a genuine Lyapunov--Schmidt reduction:
-
-[
-a=a_c+a_r.
-]
-
-Solve only the range equation on the complement. Retain the projected center equation.
-
-The effective metric response is then
-
-[
-S_z(k)=
-D_z-C_{z,r}A_{z,r}^{-1}B_{z,r}
-+	ext{actual center-correction terms}.
-]
-
-Do not write extra terms heuristically: derive them from the reduced equations.
-
-### 4.4 Primary bifurcation test
-
-Extract the slow total degree-two coefficient:
-
-[
-S_z^{[2]}(k).
-]
-
-Test
-
-[
-oxed{
-S_z^{[2]}(k)stackrel{?}{=}S_0^{[2]}(k)
-}
-]
-
-on the full allowed Y stationary-center branch, modulo the owned coframe/gauge kernel.
-
-#### Positive local terminal
-
-[
-	exttt{A4D-Y-STATIONARY-CENTER-EINSTEIN-RESPONSE-EQUIVALENT}
-]
-
-only if the equality is exact coefficient-by-coefficient and the range/center solve is legitimate.
-
-#### Negative local terminal
-
-Record an exact nonzero physical coefficient of
-
-[
-S_z^{[2]}-S_0^{[2]}.
-]
-
-This is not yet the global no-go until the corresponding modulation is realized by an actual curved smooth-background exact joint-critical sequence.
-
----
-
-## 5. Curved normal-jet realization: the decisive on-shell gate
+## 5. Next gate: curved normal-jet realization and on-shell continuation
 
 Flat/macroscopically-flat Y controls are not enough.
 
@@ -428,8 +340,8 @@ h^{-2}
 left[
 E_Q(Q_h(J),K_h(J,z))
 -
-E_Q(Q_h(J),K_h^{m sm}(J))
-ight].
+E_Q(Q_h(J),K_h^{\rm sm}(J))
+\right].
 ]
 
 If it tends to zero uniformly in allowed (z), this is the first genuinely curved proof of response-equivalent nongauge UV microstructure.
@@ -444,9 +356,9 @@ The obstruction itself may be enough to reduce the center dimension, but not to 
 
 ---
 
-## 6. Uniform nonlinear closure after the exact Y test
+## 6. Uniform nonlinear closure after the finite Y response defect
 
-Once the exact Y/normal-jet bifurcation is known, lift it to the full declared class.
+The finite Y test now gives a TT response defect. Realize it on a curved exact source-compatible branch or prove that the reduced equations remove it; then lift the outcome to the full declared class.
 
 A positive route may use one or a combination of:
 
@@ -460,13 +372,13 @@ But the proof must establish the required nonlinear metric response, not merely 
 
 ### 6.1 Required transverse estimate
 
-For a proven stationary center (mathcal Z_h^{m stat}), an acceptable estimate is
+For a proven stationary center (mathcal Z_h^{\rm stat}), an acceptable estimate is
 
 [
-d_{m tr}(K_h,mathcal Z_h^{m stat})
+d_{\rm tr}(K_h,mathcal Z_h^{\rm stat})
 le
-C h^{-p}|r_h|^eta,
-qquad eta>0,
+C h^{-p}|r_h|^\beta,
+qquad \beta>0,
 ]
 
 with constants uniform in refinement and the declared compact background parameters.
@@ -490,9 +402,9 @@ This is the nonunique-connection substitute for a uniqueness theorem.
 Combine the center equivalence with
 
 [
-h^{-2}E_Q(Q_h,K_h^{m sm})
+h^{-2}E_Q(Q_h,K_h^{\rm sm})
 =
--	frac12G[g]+O(h)
+-\tfrac12G[g]+O(h)
 ]
 
 to obtain the final metric theorem.
@@ -527,7 +439,7 @@ After response analysis there are only two acceptable conclusions.
 If all physical stationary sheets in the claimed class are response-equivalent,
 
 [
-E_Q/!sim_{m stat}
+E_Q/!sim_{\rm stat}
 ]
 
 is single-valued in the continuum limit. Connection nonuniqueness is physically invisible to the metric equation; no extra selector is required for the Einstein theorem.
@@ -563,16 +475,14 @@ A closure argument must explicitly survive all of the following:
 
 A successful integrated execution should leave:
 
-### Certificate A — Y supercell response
+### Certificate A — Y supercell response (completed in PR #310)
 
-- exact (A_z,B_z,C_z,D_z);
-- owner/polarization reconstruction guards;
-- exact (z=0) Schur–Einstein control;
-- right kernel / left cokernel;
-- certified range complement solve;
-- reduced center equation;
-- exact (S_z^{[2]}-S_0^{[2]});
-- gauge/coframe-kernel controls.
+- exact full supercell connection Hessian and low-color Bloch derivatives;
+- flat owner reconstruction and Einstein control;
+- exact right kernel and left cokernel at z=1;
+- certified bordered range solve and reduced center equation;
+- exact full TT response-defect block at z=1;
+- hostile wrong-phase-transpose control.
 
 ### Certificate B — curved normal-jet continuation
 
@@ -605,11 +515,11 @@ It must state separately:
 
 ## 11. Parallel worker decomposition for powerful models
 
-This is one theory problem, but several models may attack coordinated subproblems.
+A single executor should first consume the completed Worker 1 result. If independent models are available, they may attack the remaining subproblems below.
 
-### Worker 1 — exact Y response algebra
+### Worker 1 — exact Y response algebra (completed)
 
-Own only the supercell block construction and LS reduction. Return exact matrices/formulas and the (S_z^{[2]}) verdict.
+The exact matrices and Lyapunov–Schmidt verdict are committed in PR #310. Do not repeat this calculation; consume its pinned result and move to the curved on-shell continuation.
 
 ### Worker 2 — curved normal-jet realization
 
@@ -638,8 +548,8 @@ All workers must share one convention ledger for polarization, Gram directions, 
 Use
 
 [
-oxed{
-	exttt{A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED}
+\boxed{
+\texttt{A4D-JOINT-PALATINI-RESPONSE-DECOUPLING-CLOSED}
 }
 ]
 
@@ -648,8 +558,8 @@ only after proving the normalized response convergence for a class containing ge
 Then, if the #216 realization/reconstruction hypotheses are discharged for that class, promote the geometric conclusion to
 
 [
-oxed{
-	exttt{NAKED-STAR-J2-LOCAL-EINSTEIN-OPERATOR-CLOSED}
+\boxed{
+\texttt{NAKED-STAR-J2-LOCAL-EINSTEIN-OPERATOR-CLOSED}
 }
 ]
 
@@ -660,8 +570,8 @@ with the exact stated scope.
 Use
 
 [
-oxed{
-	exttt{A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO}
+\boxed{
+\texttt{A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO}
 }
 ]
 
