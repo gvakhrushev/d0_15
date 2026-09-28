@@ -23,6 +23,21 @@ Exact univariate restrictions of the full determinant are:
 | `(x,x,x,1)` | `(x^8 + 6 x^6 + 18 x^4 + 6 x^2 + 1)^2 / (4 x^8)` | exact identity in `Q(x)` |
 | `(x,-1,1,1)` | `(x^6 - 3 x^5 - x^4 - 10 x^3 - x^2 - 3 x + 1)^2 / x^6` | exact identity in `Q(x)` |
 
+On the two-variable spatial diagonal `Z=(y,x,x,x)`, the exact factorization is
+
+\[
+\det A(y,x,x,x)=\frac{f_{xy}^2 f_{yx}^2 H(x,y)^2}{64x^{10}y^6},
+\quad f_{xy}=xy-x+y+1,\quad f_{yx}=xy+x-y+1,
+\]
+where
+\[
+\begin{aligned}
+H(x,y)={}&3x^8y^2-x^6y^4+8x^6y^2-x^6+4x^5y^3-4x^5y-4x^4y^4\\
+&+22x^4y^2-4x^4-4x^3y^3+4x^3y-x^2y^4+8x^2y^2-x^2+3y^2.
+\end{aligned}
+\]
+This remains a restriction to a codimension-two locus; none of its three factors is thereby asserted to divide the unrestricted four-variable determinant.
+
 The slice identities are checked by `a4d_resonance_divisor_slice_check.py`; the certificate also reproduces the full-rank control at `(1,1,1,1)` and the exact #314 counterexample rank 22 at `(-1,-1,i,i)` over `Q(i)`. The counterexample refutes the earlier count-only nullity formula. PR #315 independently owns the diagonal specialization
 
 \[

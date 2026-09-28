@@ -199,6 +199,23 @@ for label, (characters, expected) in slices.items():
           sp.simplify(determinant - expected) == 0)
     slice_results[label] = str(determinant)
 
+y = sp.symbols("y")
+f_xy = x * y - x + y + 1
+f_yx = x * y + x - y + 1
+h_xy = (
+    3 * x**8 * y**2 - x**6 * y**4 + 8 * x**6 * y**2 - x**6
+    + 4 * x**5 * y**3 - 4 * x**5 * y - 4 * x**4 * y**4
+    + 22 * x**4 * y**2 - 4 * x**4 - 4 * x**3 * y**3
+    + 4 * x**3 * y - x**2 * y**4 + 8 * x**2 * y**2 - x**2 + 3 * y**2
+)
+spatial_diagonal_expected = f_xy**2 * f_yx**2 * h_xy**2 / (64 * x**10 * y**6)
+spatial_diagonal_det = sp.factor(sp.cancel(
+    connection_hessian((y, x, x, x)).det(method="domain-ge")
+))
+check("SPATIAL_DIAGONAL_TWO_VARIABLE_FACTORIZATION",
+      sp.simplify(spatial_diagonal_det - spatial_diagonal_expected) == 0)
+slice_results["(y,x,x,x)"] = str(spatial_diagonal_det)
+
 # Exact negative controls inherited from the merged phase-count-law refutation.
 A_generic = connection_hessian((one, one, one, one))
 A_counterexample = connection_hessian((minus_one, minus_one, I, I))
