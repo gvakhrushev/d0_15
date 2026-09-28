@@ -1,126 +1,130 @@
-# A4D Ward locus is a divisor; linear Res withdrawn
+# A4D resonance divisor and exact diagonal Smith pole
 
 **Lane:** EXP-A4D joint Palatini / resonance response
+
 **Class:** RESEARCH / SYNTHESIS
-**Status:** durable record of session certificates, 2026-09-28
-**Firewall:** no BOOK/claim promotion, no Einstein identification, no finite T_μν.
 
-## Terminal
+**Status:** exact diagonal algebra recorded; multivariable response remains open
 
-```text
-A4D-WARD-LOCUS-IS-DIVISOR
-A4D-SMITH-POLE-ORDER-AT-MOST-TWO
-A4D-LINEAR-Q-ON-FLAT-GIVES-NO-RES
-```
+**Firewall:** no BOOK/claim promotion, no Einstein identification, no finite \(T_{\mu\nu}\).
 
-Withdrawn (do not reuse):
+## Terminal results
 
 ```text
-A4D-ORTH3-SIMPLE-POLE-RES-110   # inconsistent Q assembly on background connection
-A4D-RESONANCE-IS-TWO-POINTS     # contradicted by the two-phase rank scan
+A4D-RESONANCE-LOCUS-IS-A-NONEMPTY-PROPER-DIVISOR
+A4D-PHASE-COUNT-NULLITY-LAW-REFUTED
+A4D-DIAGONAL-LOCAL-SMITH-EXPONENTS-1x4-2x4
+A4D-STATIONARY-RESPONSE-RESIDUE-UNDETERMINED
 ```
 
-## 1. Closed, exact
-
-On the diagonal family `Z = (z,z,z,z)` the connection Hessian satisfies
+Withdrawn and not to be reused:
 
 ```text
-det A(z) = (z^2 + 1)^12 / (16 z^12)
+A4D-ORTH3-SIMPLE-POLE-RES-110   # inconsistent Q assembly
+A4D-RESONANCE-IS-TWO-POINTS     # contradicted by exact off-diagonal points
 ```
 
-Zero order at `z = ±i` is 12. At the spike `rk A = 16`, geometric nullity 8.
-Algebraic multiplicity 12 versus geometric 8 is Jordan / Smith data, not a
-bookkeeping error.
+## 1. Exact local algebra on the diagonal
 
-The local degeneration matrix on the line `z = i + w`,
+For \(Z=(z,z,z,z)\), the exact certificate rebuilds the \(24\times24\)
+connection Hessian and verifies
 
-```text
-M = N_L A'(i) N_K     (8 x 8)
-```
+\[
+\det A(z)=\frac{(z^2+1)^{12}}{16z^{12}}.
+\]
 
-has `rank M = 4`. Therefore `A^{-1}` is allowed a pole of order 2.
+At \(z=i\), \(\operatorname{rank}A(i)=16\), so the nullity is eight, and
+the induced first derivative from kernel to cokernel has rank
+\(\operatorname{rank}(N_LA'(i)N_K)=4\). These exact facts determine the
+local one-variable Smith exponents. For an analytic matrix germ, the
+positive exponents \(e_j\) satisfy:
 
-Column-order histogram of `A(i(1+δ))^{-1}` (four dyadic δ):
+- their number is the nullity, eight;
+- the induced first derivative has rank equal to the number with \(e_j=1\),
+  here four;
+- their sum is the determinant zero order, twelve.
 
-```text
-p = 1 :  6 columns
-p = 2 : 18 columns
-```
+The remaining four exponents are at least two and sum to eight. Therefore
+the exact local exponents are \((1,1,1,1,2,2,2,2)\). In particular,
+\(A(z)^{-1}\) has pole order exactly two on this diagonal curve.
+The reproducible exact calculation is
+[`a4d_ward_diagonal_smith_check.py`](certificates/a4d_ward_diagonal_smith_check.py).
 
-This is coarser than the first Smith guess `(4 x δ^2) ⊕ (4 x δ)`. The
-existence of order-2 poles is certified; the exact Smith blocks are not.
+The submitted histogram of coordinate-column slopes (six fitted order-one
+columns and eighteen fitted order-two columns) is a separate floating-point
+diagnostic at four dyadic detunings. It is basis-dependent and is not the
+Smith multiplicity. It does not contradict the exact \(4+4\) invariant
+factors.
 
-## 2. Locus is a divisor
+## 2. The resonance set and the proposed phase-count law
 
-Exact ranks of `A(Z)` on the character torus (selected probes):
+The exact counterexample in merged PR #314 gives rank 24 at
+\(Z=(1,1,1,1)\) and rank 22 at \(Z=(-1,-1,i,i)\). Thus the Laurent
+determinant is not identically zero but vanishes at a point of the character
+torus. Its zero set is a nonempty proper divisor; this does not classify
+its components or rank strata.
 
-| Z | rk A | nullity |
-|---|---|---|
-| `(i,i,i,i)`, `(-i,-i,-i,-i)` | 16 | 8 |
-| opposite-phase pair, others at `i` | 20 | 4 |
-| same-sign pair `π/2,π/2` | 22 | 2 |
-| single phase shift | 24 | 0 |
-| IR `z = 1` | 24 | 0 |
-| half-wave all `-1` | 16 | 8 |
+The proposed rule based only on even counts of \(+i\) and \(-i\) is false.
+At \((-1,-1,i,i)\), the counts are \((2,0)\), but exact elimination over
+\(\mathbb Q(i)\) gives nullity two, while the rule predicts four. The
+continuous-phase control written with \(e^{\pm2\pi i/3}\), after exact
+normalization, has rank 20 over \(\mathbb Q(i,\sqrt3)\). See the merged
+owner [`A4D_RESONANCE_DIVISOR_RANK_LAW.md`](A4D_RESONANCE_DIVISOR_RANK_LAW.md)
+and its exact certificate.
 
-Working divisor law (hypothesis, matches every probe so far):
+The diagonal determinant has a zero of order twelve at \(z=\pm i\); this is
+the intersection multiplicity along that curve, not a factorization of the
+full four-character determinant. Exact full-torus strata remain open.
 
-degeneration requires both counters `n_{+i}` and `n_{-i}` even and
-`n_{+i}+n_{-i} ≥ 2`; then `nullity = 2 * max(n_{+i}, n_{-i})`.
-Odd counters kill the kernel. This is not proved for the whole torus.
+## 3. Response claims and their scope
 
-`#227` occupies the full-spike stratum `Σ_16`. A two-role lock with
-`Z_r Z_s = -1` occupies `Σ_20`. Designated slow `#241` lives in `Σ_24`.
+The earlier value \(\mathrm{Res}\approx110.85\) is withdrawn: its mixed block
+retained a nonzero background connection in an inconsistent slot assembly.
+The supplied replacement scripts report zero floating-point norms for the
+flat linear contraction at three detunings. Those samples do not by
+themselves prove an identity along the detuned family. The exact owner
+`E_Q(q,0)=0` from PR #249 concerns the identity-connection point; it does not
+identify every mixed block or its derivative on the character-resolvent
+family. The coordinate map between those owners must be stated before their
+claims are composed.
 
-## 3. What is dead
+There is now a separate exact result for the selected real-COS Orth3 ray:
+the full 96-row \(t^3h\) connection source on the #241 slow solder has a
+nonzero Fredholm pairing, so the proposed range correction does not exist.
+Its direct 40-row metric coefficient is nonzero but off-shell. It is not a
+stationary-sheet response or a residue. This is recorded in merged PR #314,
+[`A4D_ORTH3_NONFLAT_T3H_RESPONSE.md`](A4D_ORTH3_NONFLAT_T3H_RESPONSE.md).
 
-- Germ tower: `M_1 = 0`, `M_k ∈ im C` on orbits 5/7 (`#303` / D2).
-- `F_7`: in `im A` already at the spike; metric readout identically 0
-  in every linear channel tested.
-- Linear `Q^T (-A^{-1} F)` on the *flat* background: after evaluating the
-  mixed block at vanishing background connection, both Orth3 and F7 give
-  `dE_Q = 0`. The number `Res ≈ 110.85` came from a Q that still depended
-  on a background connection and is withdrawn.
+The user-supplied `a4d_response_pole_spectrum.py` returns zero fitted response
+orders for all 24 columns at its sampled detunings. This remains a numerical
+diagnostic: it neither proves exact cancellation on a divisor nor supplies a
+nonflat stationary continuation. Likewise, the finite zero samples for F7
+do not establish metric invisibility in every channel.
 
-This matches the owned identity `E_Q(q, I) = 0` (`#249`): the first metric
-response of a connection forcing on flat solder is second order in the
-connection, not a linear pairing.
+## 4. Open research gates
 
-## 4. What is open
+1. Factor or otherwise classify the full Laurent determinant and the rank
+   strata inside its divisor. Do not revive the refuted phase-count formula.
+2. Reconcile the exact slot conventions for the flat \(E_Q\) owner and the
+   character-resolvent mixed block; then certify the proposed contraction
+   symbolically rather than by finite floating-point samples.
+3. For a nonflat stationary sheet, compute the mixed block and its detuned
+   limit. The selected exact-resonance Orth3 ray is blocked at \(t^3h\), so
+   its raw \(t^3h^2\) coefficient cannot answer this gate.
 
-1. Second-order metric readout of the spike forcing on `Q_h = η + h α`
-   (the `#275` `t^3 h` channel). That is the only remaining linear-vs-jet
-   place where a residue could reappear.
-2. Proof or counterexample of the even-counter divisor law on the full torus.
-3. Exact Smith form of `A(z)` at `z = i`, not only `rank M` and a histogram.
-4. Whether the 18 order-2 columns are metric-visible after the second-order
-   pairing is rebuilt on `Q_h`.
+Draft #310 already owns the exact resonance-response/uniformity task boundary;
+any continuation should update that owner rather than open a duplicate task.
+The curved stationary search #202 is a different carrier.
 
-## 5. Law (synthesis, not a claim)
+## 5. Reproduction and evidence boundaries
 
-The Ward object, if it exists, is the polar part of the *second-order*
-response along the stratified divisor `{det A = 0}`, with pole order at
-most 2. It is not a finite spacetime `T_μν`, not `F_7`, and not a Cauchy
-kernel supported only at two points.
-
-Designated Einstein is the statement that a smooth IR packet has no mass on
-that divisor. `#227` is an atom on `Σ_16`.
-
-## 6. Reproduction pointers
-
-Session artifacts (not yet owner scripts on main):
-
-- `det A` closed form: `a4d_detA_and_locus.py`
-- locus ranks: `d0_a4d_locus_scan.json`
-- `rank M = 4`: `d0_a4d_local_pole.json`
-- `A^{-1}` histogram: `d0_a4d_Ainv_orders.json`
-
-Do not treat `d0_a4d_residue.json` (`Res ≈ 110`) as an owner. It is the
-withdrawn assembly.
-
-## 7. Relation to live PRs
-
-- `#260` (draft): even / odd germs on N0. Compatible: N0 sits in the spike kernel.
-- `#202` (draft): curved stationary search. Different carrier.
-- `#310` (draft): resonance resolvent / uniformity. Consume this memo; do not
-  import the withdrawn residue.
+- Exact diagonal determinant, nullity, induced-derivative rank, and local
+  exponents: `certificates/a4d_ward_diagonal_smith_check.py` and its JSON.
+- Exact full-torus divisor counterexample and normalized control: merged
+  `certificates/a4d_resonance_divisor_counterexample_check.py`.
+- Exact selected Orth3 \(t^3h\) obstruction and off-shell metric coefficient:
+  merged `certificates/a4d_orth3_slow_t3h2_check.py` and its JSON.
+- Floating-point column-slope and response spectra are diagnostics only.
+- The old final-synthesis source headers claiming `Orth3 Res != 0` are stale;
+  their sampled zero outputs do not certify a nonzero residue or a family-wide
+  identity.
