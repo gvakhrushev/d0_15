@@ -20,6 +20,9 @@ nonzero vector, and the orthogonal odd weight is already nonzero at
 degree 3, so the script stays blocked.
 The affine coframe descent is not a gauge deletion.
 
+For a connection Euler coefficient t^m*s, the probe s has t-degree zero;
+the exact jet therefore retains total order m+1, including order 7 for t^6*s.
+
 No new action channel, torsion constraint, or Einstein equation is used.
 """
 
