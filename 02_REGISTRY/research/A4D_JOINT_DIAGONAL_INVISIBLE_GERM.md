@@ -270,3 +270,8 @@ The historical large germ checker in section 8 retains the selected mixed-ray
 calculations and its old blocked diagnostic; that diagnostic does not describe
 the pure-axis existence terminal established here. Task retirement is confined
 to this isolation-versus-existence objective. Acceptance/merge remains CONTROL.
+
+Validation after integration of main `25f4796c`: the new exact-axis certificate,
+repository/work guards, PR-contract and agent-protocol self-tests,
+claim-strength lint, generated Lean views, certificate-freshness controls and
+formalization-debt non-growth all pass. There is no Lean diff against main.
