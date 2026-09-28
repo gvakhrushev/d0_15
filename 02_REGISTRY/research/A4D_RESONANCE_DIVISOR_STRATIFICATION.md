@@ -9,6 +9,10 @@
 
 The symbol is the owned 24-by-24 holomorphic connection Hessian `A(Z)` rebuilt with the face orientation, generator order, and `exp4` second-jet convention of the merged #314 certificate. It has 96 nonzero entries. After exact cancellation each entry has at most four numerator monomials, total numerator degree at most two, and denominator in `{1, 2 z_0, 2 z_1, 2 z_2, 2 z_3}`. Every one of its sixteen 6-by-6 role-to-role blocks has generic rank four over `Q(z_0,z_1,z_2,z_3)`.
 
+Two exact matrix identities constrain the global determinant. Swapping either adjacent pair of spatial characters `(z_1,z_2)` or `(z_2,z_3)` lifts to a determinant-one congruence of `A`; these generate the full spatial `S_3` symmetry. Simultaneous inversion of all four characters satisfies
+`A(z_0^-1,z_1^-1,z_2^-1,z_3^-1) = A(z_0,z_1,z_2,z_3)^T`.
+Thus `det A` is symmetric in the three spatial characters and invariant under simultaneous inversion. The exact congruence and transpose identities are checked at the matrix level in the certificate; they reduce the factorization problem but do not supply the factors.
+
 Exact univariate restrictions of the full determinant are:
 
 | Character slice | Exact determinant | Status |

@@ -122,6 +122,42 @@ A = connection_hessian(z)
 check("OWNER_SHAPE_24x24", A.shape == (24, 24))
 check("OWNER_NONZERO_COUNT_96", sum(value != 0 for value in A) == 96)
 
+
+def coordinate_change(sigma: tuple[int, int, int, int]) -> sp.Matrix:
+    """Lift a coordinate permutation to the owned 24 link-generator basis."""
+    q = sp.zeros(4)
+    for old, new in enumerate(sigma):
+        q[new, old] = 1
+    generator_change = sp.zeros(6)
+    for j, generator in enumerate(GEN):
+        transformed = q * generator * q.T
+        for k, basis_generator in enumerate(GEN):
+            denominator = sum(basis_generator[a, b] ** 2 for a in range(4) for b in range(4))
+            generator_change[k, j] = sum(
+                transformed[a, b] * basis_generator[a, b]
+                for a in range(4) for b in range(4)
+            ) / denominator
+    lifted = sp.zeros(24)
+    for new_role in range(4):
+        old_role = sigma.index(new_role)
+        for new_generator in range(6):
+            for old_generator in range(6):
+                lifted[6 * new_role + new_generator, 6 * old_role + old_generator] = (
+                    generator_change[new_generator, old_generator]
+                )
+    return lifted
+
+
+spatial_transpositions = ((0, 2, 1, 3), (0, 1, 3, 2))
+for index, sigma in enumerate(spatial_transpositions):
+    character_map = {z[r]: z[sigma.index(r)] for r in range(4)}
+    permuted_A = A.subs(character_map, simultaneous=True)
+    change = coordinate_change(sigma)
+    check(f"SPATIAL_S3_GENERATOR_{index}_CONGRUENCE", change.T * permuted_A * change == A)
+    check(f"SPATIAL_S3_GENERATOR_{index}_UNIT_DETERMINANT", change.det() == 1)
+inverse_A = A.subs({z[r]: 1 / z[r] for r in range(4)}, simultaneous=True)
+check("GLOBAL_CHARACTER_INVERSION_TRANSPOSE", inverse_A == A.T)
+
 # Entrywise Laurent complexity after exact cancellation.
 entry_terms = []
 entry_degrees = []
@@ -211,6 +247,10 @@ result = {
     "max_entry_numerator_terms": max(entry_terms),
     "max_entry_numerator_total_degree": max(entry_degrees),
     "entry_denominators": sorted(entry_denominators),
+    "exact_determinant_symmetries": [
+        "permutation symmetry on spatial coordinates z1,z2,z3 (two exact generators)",
+        "simultaneous inversion z_r -> z_r^-1 for all four characters",
+    ],
     "role_block_generic_ranks_over_Q(z)": block_ranks,
     "exact_slice_determinants": slice_results,
     "negative_controls": {

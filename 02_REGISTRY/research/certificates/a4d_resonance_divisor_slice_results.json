@@ -14,6 +14,10 @@
     "2*z2",
     "2*z3"
   ],
+  "exact_determinant_symmetries": [
+    "permutation symmetry on spatial coordinates z1,z2,z3 (two exact generators)",
+    "simultaneous inversion z_r -> z_r^-1 for all four characters"
+  ],
   "role_block_generic_ranks_over_Q(z)": [
     [
       4,
