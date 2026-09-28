@@ -1,0 +1,23 @@
+{
+  "generic_character": [
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "generic_rank": 24,
+  "counterexample_character": [
+    "-1",
+    "-1",
+    "I",
+    "I"
+  ],
+  "exact_field": "QQ<I>",
+  "n_plus_i": 2,
+  "n_minus_i": 0,
+  "rank": 22,
+  "nullity": 2,
+  "count_rule_prediction": 4,
+  "normalized_exp_pm_2pi_over_3_control_rank": 20,
+  "terminal": "A4D_PHASE_COUNT_NULLITY_LAW_REFUTED_ON_FULL_TORUS"
+}
