@@ -1,0 +1,23 @@
+{
+  "C_275_slow_lift": {
+    "what": "Independent reconstruction of the #259 connection-stationary slow lift (Y = bivector of plane (e2-e1)^(e3-e1), cubic Y^3=-3Y).",
+    "checks": {
+      "flat_EK_zero": "all 96 site/role/generator components vanish at h=0",
+      "order_h_forcing": "support {(1,0,0):2z/D,(1,0,1):-2z/D,(3,0,0):-2z/D,(3,0,1):2z/D}",
+      "lift_solution": [
+        "-z(z+2)/D",
+        "-2z^2/D",
+        "z(z+2)/D",
+        "-2z^2/D"
+      ],
+      "D": "3z^2+4",
+      "lift_residual": "zero",
+      "order_h_metric_cancelled": "all four phases",
+      "order_h2_metric": "explicit, slope term x0*z/D on q02/q12/q22/q32 slots",
+      "normalized_limit": "0 under z=h and z=h^2",
+      "flat_limit_EK": "zero to h^2"
+    },
+    "terminal": "J2-DIAGONAL-MICROSTRUCTURE-CONNECTION-STATIONARY-RESPONSE-CANCELS",
+    "scope": "selected #232 Y carrier on the #241 valued slow background; not the full #240 class"
+  }
+}
