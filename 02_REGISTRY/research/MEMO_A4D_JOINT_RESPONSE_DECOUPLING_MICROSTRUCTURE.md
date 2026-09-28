@@ -1,3 +1,13 @@
+> **STATUS CORRECTION — supersedes the finite-defect interpretation at ea6e9d0.**
+>
+> A follow-up literal-pairing audit found that the mixed metric/connection Bloch phase in the ea6e9d0 response assembly did not follow the same test-variable placement convention as the connection block. The flat z=0 control did not detect this because the sign enters quadratically there. Therefore the exported z=1 TT defect at ea6e9d0 must **not** be used as an on-shell or physical response obstruction.
+>
+> After correcting that phase convention in the follow-up calculation, a phase-resolved metric Euler term appears already at first slow order and vanishes only after four-phase averaging. Solving the full normal-jet compatibility problem, rather than the one-direction ansatz, removes most of these apparent defects. In the reported 20-component geodesic-normal curvature test, the linear compatibility system leaves one physical compatible curvature component; on that surviving component the corrected response agrees exactly with the flat Einstein control.
+>
+> The corrected replay/certificate for this follow-up result is **not yet present in this branch**. Until it is committed and independently replayed, treat the preceding paragraph as a reviewed execution result awaiting repository certification, not as a registered theorem.
+>
+> Consequently the task terminal remains OPEN. The smallest live blocker is now: construct the exact nonlinear stationary branch from the compatible genuinely-curved normal jet and prove a refinement-uniform remainder estimate strong enough that the h^-2-normalized response converges to the Einstein value; or produce a corrected on-shell compatible curvature direction with a persistent exact response defect.
+
 # A4D joint response decoupling — stationary-center quotient
 
 Task: EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE
