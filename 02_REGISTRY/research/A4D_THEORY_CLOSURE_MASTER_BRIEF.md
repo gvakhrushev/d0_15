@@ -9,7 +9,7 @@ Pinned live inputs at dispatch time:
 
 - main: `e80a3b1ccf615fb4f70bf5900181592604928497`
 - resonance / structural lane #317: reviewed base head `727a3bd36aed3083c8584232a93922521d44465e`
-- response lane #310: result head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b`
+- response lane #310: correction head `95f13a22ef9fbd9165dec18e415eb149b0652d1f`; historical finite-defect head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b` is superseded for physical interpretation
 
 Always refresh before execution. Reuse merged/live owners; do not recompute whole censuses unless a narrow consistency check requires it.
 
@@ -280,26 +280,26 @@ A sourced version may then compare the common geometric response with the prescr
 
 ---
 
-## 4. Completed finite attack: exact Y stationary-center response symbol
+## 4. Superseded finite defect and corrected compatibility frontier
 
-The finite Bloch/Lyapunov--Schmidt test is integrated in PR #310 at result head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b`.
+PR #310 contains the historical exact artifact at head `ea6e9d0dd1aa3cc11a60c08ccc5c7a4046fcdf8b`. Its flat controls, connection ranks, kernel/cokernel data and bordered Lyapunov--Schmidt machinery remain useful regression inputs. However a follow-up literal-pairing audit found that the mixed metric/connection Bloch phase in the response assembly did not follow the same test-variable placement convention as the connection block. The flat z=0 control did not detect this because the sign enters quadratically there.
 
-Reproduce it with:
+Therefore the exported z=1 TT defect from `ea6e9d0` is **superseded for physical interpretation**. It must not be used as an on-shell no-go witness.
 
-    python3 02_REGISTRY/research/certificates/a4d_y_curved_response_quotient_check.py
+The follow-up calculation reported the corrected qualitative structure:
 
-The certificate reconstructs the exact 96 by 96 connection Hessian from every oriented face occurrence. At z=0 it matches the owned #275 L2/2 matrix entry by entry, has exact rank 80 and kernel dimension 16, and reproduces the flat Einstein low-color symbol.
+- after fixing the mixed phase, the full 40-component phase-resolved metric Euler contains a first-slow-order contribution that disappears only after averaging over the four supercell phases;
+- one-direction slow ansätze are too restrictive, because spatial variations of the stationary-center amplitudes cancel part of the apparent obstruction;
+- in the full 20-component geodesic-normal curvature compatibility problem, the linear reduced equations leave one compatible physical curvature component;
+- on that surviving compatible component, the corrected metric response agrees exactly with the flat Einstein control.
 
-At the curved exact #232 Y vacuum z=1, two exact center vectors are exported. Clearing denominators by 14 and reducing modulo 1,000,003 gives rank at least 94; the two independent exact null vectors give rank at most 94. Thus the rational rank is exactly 94 and the center/cokernel dimension is two. The reduced order-t² center matrix is diag(-2500/8967,-49/356), and the left compatibility, range equations, and center equation are checked exactly with zero residual. No inverse across the center kernel is used.
+The corrected replay is not yet committed as an exact checker/JSON. Thus these follow-up statements are a reviewed execution result awaiting repository certification, not a registered theorem.
 
-For Bloch momentum in role direction e0, with lambda=exp(t) and the same metric perturbation on the four phases, the full TT subspace is span(q12,q13). The per-site coefficient difference in t² is
+The live #310 correction brief is
+`02_REGISTRY/research/A4D_Y_CURVED_RESPONSE_CORRECTED_FOLLOWUP.md`
+at head `95f13a22ef9fbd9165dec18e415eb149b0652d1f`.
 
-    [[89561/26250, -92753/52500],
-     [-92753/52500, 89561/26250]],
-
-with determinant 2504701/294000. It is nonzero on the physical TT quotient. For physical k0², where t=i k0, the matrix has the opposite sign. The q12 coefficient alone is 38218/13125 on the curved branch versus -1/2 in the flat Einstein control. Exact direct Schur evaluations at lambda=1+1/20 and 1+1/100 converge to this coefficient; a deliberately wrong phase transpose fails its hostile control.
-
-This disproves the finite identity S_z^[2]=S_0^[2] at z=1. It is a finite Hessian/Schur response obstruction only. It does not yet establish a nonlinear curved-background joint-critical sequence or either global terminal. The full matrices, exact center/range witnesses, and checks are in the certificate and pinned JSON; the derivation and scope are in `MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`.
+The immediate finite target is now to certify the full 20-curvature compatibility matrix, its physical surviving subspace, and the metric response restricted to that subspace.
 
 ## 5. Next gate: curved normal-jet realization and on-shell continuation
 
@@ -356,9 +356,9 @@ The obstruction itself may be enough to reduce the center dimension, but not to 
 
 ---
 
-## 6. Uniform nonlinear closure after the finite Y response defect
+## 6. Uniform nonlinear closure after the corrected compatibility gate
 
-The finite Y test now gives a TT response defect. Realize it on a curved exact source-compatible branch or prove that the reduced equations remove it; then lift the outcome to the full declared class.
+The historical ea6 TT defect is not the current physical target. First certify the corrected full normal-curvature compatibility calculation. If the surviving compatible subspace is Einstein-response equivalent, continue that curved jet nonlinearly and prove a uniform o(h^2) response remainder. If a corrected compatible direction carries a nonzero exact response defect, realize that direction on an exact source-compatible branch before any no-go claim.
 
 A positive route may use one or a combination of:
 
@@ -475,14 +475,20 @@ A closure argument must explicitly survive all of the following:
 
 A successful integrated execution should leave:
 
-### Certificate A — Y supercell response (completed in PR #310)
+### Certificate A — corrected Y supercell / normal-curvature compatibility (pending)
 
-- exact full supercell connection Hessian and low-color Bloch derivatives;
+Historical ea6 artifacts retain the exact flat controls, connection rank/kernel/cokernel data and bordered solve as regression fixtures, but their physical TT-defect interpretation is superseded by the mixed-phase audit. The replacement certificate must contain:
+
+- the corrected literal mixed-block phase convention;
+- phase-resolved 40-component metric Euler;
 - flat owner reconstruction and Einstein control;
 - exact right kernel and left cokernel at z=1;
-- certified bordered range solve and reduced center equation;
-- exact full TT response-defect block at z=1;
-- hostile wrong-phase-transpose control.
+- all four slow modulation directions;
+- the full 20-component geodesic-normal curvature compatibility matrix;
+- exact basis of the compatible physical curvature subspace;
+- metric response restricted to that subspace;
+- hostile regression showing the historical phase convention fails the corrected guard.
+
 
 ### Certificate B — curved normal-jet continuation
 
@@ -515,15 +521,16 @@ It must state separately:
 
 ## 11. Parallel worker decomposition for powerful models
 
-A single executor should first consume the completed Worker 1 result. If independent models are available, they may attack the remaining subproblems below.
+A single executor should first certify the corrected phase/normal-curvature result. If independent models are available, they may attack the remaining subproblems below.
 
-### Worker 1 — exact Y response algebra (completed)
+### Worker 1 — corrected Y response compatibility
 
-The exact matrices and Lyapunov–Schmidt verdict are committed in PR #310. Do not repeat this calculation; consume its pinned result and move to the curved on-shell continuation.
+Reuse the historical ea6 connection Hessian/rank/center machinery, but rebuild the mixed blocks with the corrected literal phase convention. Certify the phase-resolved metric Euler and the full 20-curvature normal-jet compatibility subspace. Do not reuse the old TT defect as a physical conclusion.
 
-### Worker 2 — curved normal-jet realization
+### Worker 2 — nonlinear curved normal-jet continuation
 
-Own the first genuinely curved continuation of the Y stationary center. Do not repeat the flat Y proof.
+Consume only the corrected compatible curvature subspace from Worker 1. Construct the first genuinely curved exact stationary continuation and track the metric response with an h-uniform remainder.
+
 
 ### Worker 3 — uniform stationary correspondence
 
