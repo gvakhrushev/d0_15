@@ -1,0 +1,25 @@
+{
+  "det_A_diagonal": "(z**2 + 1)**12/(16*z**12)",
+  "det_matches_(z^2+1)^12/(16z^12)": true,
+  "rkA0": 16,
+  "nullity": 8,
+  "rank_M": 4,
+  "det_zero_order_at_i": 12,
+  "det_denominator_order_at_i": 0,
+  "local_nonunit_smith_exponents_at_i": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2
+  ],
+  "smith_exponent_multiplicities": {
+    "1": 4,
+    "2": 4
+  },
+  "smith_derivation": "nullity=8, rank(N_L A_prime N_K)=4 counts exponent 1, ord(det)=12",
+  "terminal": "A4D_DIAGONAL_LOCAL_SMITH_1x4_2x4_EXACT"
+}

@@ -1,0 +1,45 @@
+{
+  "terminal": [
+    "A4D-RESONANCE-LOCUS-IS-A-NONEMPTY-PROPER-DIVISOR",
+    "A4D-PHASE-COUNT-NULLITY-LAW-REFUTED",
+    "A4D-DIAGONAL-LOCAL-SMITH-EXPONENTS-1x4-2x4",
+    "A4D-STATIONARY-RESPONSE-RESIDUE-UNDETERMINED"
+  ],
+  "diagonal_exact_owner": "a4d_ward_diagonal_smith_check.py",
+  "det_A_diagonal": "(z**2 + 1)**12 / (16*z**12)",
+  "det_zero_order_at_pm_i": 12,
+  "det_denominator_order_at_i": 0,
+  "spike": {
+    "rank_A": 16,
+    "nullity": 8,
+    "rank_induced_derivative_kernel_to_cokernel": 4,
+    "local_smith_exponents": [1, 1, 1, 1, 2, 2, 2, 2]
+  },
+  "coordinate_column_slope_fit": {
+    "orders": {"1": 6, "2": 18},
+    "method": "floating-point max-entry norms at four dyadic detunings",
+    "status": "diagnostic_only_not_smith_multiplicities"
+  },
+  "full_torus_owner": "merged PR #314",
+  "phase_count_law": {
+    "status": "refuted",
+    "counterexample": ["-1", "-1", "I", "I"],
+    "rank": 22,
+    "nullity": 2,
+    "predicted_nullity": 4
+  },
+  "flat_linear_response": {
+    "sampled_norms": {"Orth3": [0.0, 0.0, 0.0], "F7": [0.0, 0.0, 0.0]},
+    "status": "finite_detune_samples_not_a_family_identity"
+  },
+  "selected_orth3_t3h": {
+    "status": "exact_cokernel_obstruction_prevents_stationary_continuation",
+    "direct_metric_coefficient": "nonzero_off_shell",
+    "owner": "merged PR #314"
+  },
+  "open": [
+    "full_multivariable_divisor_factorization_and_rank_strata",
+    "exact_slot_map_between_E_Q_owner_and_character_resolvent_mixed_block",
+    "nonflat_stationary_response_and_detuned_limit"
+  ]
+}
