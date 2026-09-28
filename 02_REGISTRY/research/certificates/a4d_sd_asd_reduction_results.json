@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "owner_symbol_sha256": "2ea7e71d2ab0aafb447daf075e5d304eed8fe24eb89be8a40c6cb3457d87c516",
+  "checks": {
+    "owner_table_matches_all_576_entries": true,
+    "A_nnz_96": true,
+    "A_real_no_i": true,
+    "Omega_integral": true,
+    "Omega_antisym": true,
+    "Omega_sq_eq_minusI": true,
+    "A_anticommutes_Omega": true,
+    "blocks_rank4": true,
+    "A_blockdiag": true,
+    "lower_eq_conj_upper": true,
+    "M_blocks_skew": true,
+    "M_nnz_48": true,
+    "M_Zinv_eq_MT": true,
+    "rank23_sextic_determinant_exact": true,
+    "rank23_sextic_roots_simple": true,
+    "rank23_sextic_disjoint_from_conjugate": true,
+    "rank23_sextic_has_no_zero_root": true,
+    "det_factorization": {
+      "(x,1,1,1)": true,
+      "(x,x,1,1)": true,
+      "(x,1/x,1,1)": true,
+      "(x,x,x,1)": true,
+      "(x,-1,1,1)": true,
+      "(x,x,x,x)": true
+    },
+    "detM_diagonal_rational_exact": true,
+    "cleared_determinant_has_denominator_power_12": true,
+    "detA_diagonal_order_12": true
+  },
+  "rank_23_witness": {
+    "characters": [
+      "alpha",
+      "1",
+      "-1",
+      "2"
+    ],
+    "f": "151*z0**6 - 48*I*z0**6 - 396*z0**5 - 178*z0**4 + 252*I*z0**4 - 2216*z0**3 - 97*z0**2 - 252*I*z0**2 - 876*z0 + 124 + 48*I",
+    "det_M": "(z0**6*(151 - 48*I) - 396*z0**5 + z0**4*(-178 + 252*I) - 2216*z0**3 + z0**2*(-97 - 252*I) - 876*z0 + 124 + 48*I)/(128*z0**3)",
+    "rank_M": 11,
+    "rank_sigma_M": 12,
+    "rank_A": 23,
+    "exact_reason": "simple zero of det M and coprimality with conjugate determinant"
+  },
+  "diagonal": {
+    "det_M": "-w**6*(w + 2*I)**6/(4*(w + I)**6)",
+    "clearing_denominator": "2*w + 2*I",
+    "det_cleared_matrix": "-1024*w**6*(w + I)**6*(w + 2*I)**6",
+    "cleared_determinant_relation": "det(den*M)=den^12*det(M)"
+  },
+  "rank_scope": {
+    "complex_torus": "rank(A)=rank(M)+rank(sigma(M))",
+    "unit_torus": "sigma(M)=M^dagger; rank(A)=2*rank(M)"
+  },
+  "terminal": "A4D_SD_ASD_REDUCTION_WITH_COMPLEX_RANK_SCOPE_CERTIFIED"
+}

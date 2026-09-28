@@ -85,6 +85,10 @@ T^{-1}AT=\begin{pmatrix}0&M\\\sigma(M)&0\end{pmatrix},
 
 `rank A=rank M+rank σ(M)` на комплексном торе. На физическом торе `|z_r|=1` дополнительно `σ(M)=M†`, поэтому `rank A=2 rank M` и `det A=|det M|²`. Комплексный rank 23 и физическая even-rank теорема совместимы. Норма determinant не является квадратом рационального polynomial; физический resonance находится на пересечении двух coefficient-conjugate zero sets.
 
+Новый direct SD/ASD replay восстанавливает тот же `A` и сверяет все 576 entries с owner table. Он подтверждает комплексный rank-23 свидетель: на `(u,1,-1,2)` имеем `det M=f(u)/(128u³)`; любой корень `f` прост и отделён от корней coefficient-conjugate `f`, откуда `rank M=11`, `rank σ(M)=12`, `rank A=23`. Следовательно, вывод «rank M и rank σ(M) совпадают при каждом фиксированном complex Z, потому что сопряжены их миноры» неверен: сопряжение коэффициентов не сопрягает одновременно точку `Z`.
+
+Вторая поправка касается диагонали: точный рациональный результат `det M(i+w)=-w⁶(w+2i)⁶/[4(w+i)⁶]`. Полином `-1024 w⁶(w+i)⁶(w+2i)⁶` есть определитель матрицы `2(w+i)M`, так как общий знаменатель умножен на все 12 строк; забытый множитель `(2(w+i))¹²` меняет `det M`. Реплей проверяет это равенство явно.
+
 Нулевой `E_Q(Q,I)` для всех `Q` не означает нулевой mixed derivative `D_K E_Q(Q,I)`: в #226 есть точный ненулевой sensitivity witness. Любое заявление об обнулении характерного mixed block должно сначала согласовать literal action, transpose, сопряжение и coordinate maps. F7/F9 и germ `q0=ddᵀ` не считать доказанным Ward-классом или метрически мёртвым во всех каналах по конечным samples.
 
 ## 4. Единая программа доказательства
@@ -169,7 +173,7 @@ d_\perp(K_h,\mathcal Z_h^{\rm sm})
 
 Сначала прочитать лишь:
 
-1. `02_REGISTRY/research/A4D_RESONANCE_DIVISOR_STRATIFICATION.md` и `certificates/a4d_hodge_structural_review_results.json` **в ветке #317**; ledger и sparse entries открывать по необходимости.
+1. `02_REGISTRY/research/A4D_RESONANCE_DIVISOR_STRATIFICATION.md`, `certificates/a4d_hodge_structural_review_results.json` и `certificates/a4d_sd_asd_reduction_results.json` **в ветке #317**; ledger и sparse entries открывать по необходимости. Уточнённый результат: комплексная rank-23 точка точна; удвоение ранга доказано только на unit torus; диагональная формула для `det M` rational, а напечатанный полином относится к матрице после очистки знаменателя.
 2. `02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md`, особенно §§0, 7–8: здесь сформулирован actual coupled-rescue blocker.
 3. `02_REGISTRY/research/A4D_ORTH3_NONFLAT_T3H_RESPONSE.md` и §§8–11 `A4D_Y_SLOW_JOINT_CONTINUATION.md`: obstruction против exact existence control.
 4. `00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md`: source/comparator и terminal #240/#310.

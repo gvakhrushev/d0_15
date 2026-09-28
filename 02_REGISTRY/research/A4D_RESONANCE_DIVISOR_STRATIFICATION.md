@@ -92,7 +92,7 @@ The repeated powers in these restrictions are suggestive but do **not** establis
 
 ## Hodge reduction: exact scope correction
 
-The additional exact replay is in [`certificates/a4d_hodge_structural_review_check.py`](certificates/a4d_hodge_structural_review_check.py), with its sparse input [`certificates/A_and_mixed_symbol_entries.json`](certificates/A_and_mixed_symbol_entries.json) and output [`certificates/a4d_hodge_structural_review_results.json`](certificates/a4d_hodge_structural_review_results.json). The existing owner slice checker now compares all 96 Laurent entries of that input against its independent reconstruction before the Hodge replay is run.
+The additional exact replays are [`certificates/a4d_hodge_structural_review_check.py`](certificates/a4d_hodge_structural_review_check.py) and [`certificates/a4d_sd_asd_reduction_check.py`](certificates/a4d_sd_asd_reduction_check.py), with pinned sparse input [`certificates/A_and_mixed_symbol_entries.json`](certificates/A_and_mixed_symbol_entries.json) and outputs [`certificates/a4d_hodge_structural_review_results.json`](certificates/a4d_hodge_structural_review_results.json) and [`certificates/a4d_sd_asd_reduction_results.json`](certificates/a4d_sd_asd_reduction_results.json). The original owner slice checker compares all 96 Laurent entries against its independent reconstruction; the direct SD/ASD builder independently compares all 576 matrix entries to the same table.
 
 For the constant block-diagonal Hodge map `Ω=diag(STAR,STAR,STAR,STAR)`, the replay verifies `Ω²=-I`, `Ωᵀ=-Ω`, and `AΩ+ΩA=0` as Laurent matrix identities. An explicit eigenbasis `T` (`det T=4096`) gives the similarity form `T⁻¹AT=[[0,M],[σ(M),0]]` and the congruence form `TᵀAT=diag(2σ(M),2M)`. These are different transformations, so their block layouts and determinant normalizations must not be conflated. For arbitrary complex characters the valid rank identity is `rank A=rank M+rank σ(M)`; global rank doubling is false.
 
@@ -101,6 +101,14 @@ The exact one-variable slice `Z=(u,1,-1,2)` gives `det M=f(u)/(128u³)` for the 
 On the physical torus `|z_r|=1`, coefficient conjugation together with exact reciprocal transpose identities `A(Z⁻¹)=A(Z)ᵀ` and `M(Z⁻¹)=M(Z)ᵀ` gives `σ(M)(Z)=M(Z)†`. Only there does the replay conclude `rank A=2 rank M` and `det A=|det M|²≥0`. Consequently physical resonances lie on both conjugate determinant zero sets at once. This narrows the physical rank problem to their intersection; it does not classify that intersection, prove absolute irreducibility, or address a response/stationary-metric theorem.
 
 The sparse cleared entries `2(z₀z₁z₂z₃)M` have coefficients in `Z[i]`, not uniformly in `Z`. At the diagonal quarter-wave point the replay also records `rank M=8` and first-derivative kernel-to-cokernel rank 2; with the existing order-six determinant result, this is consistent with Smith exponents `(1,1,2,2)` for each chiral block, whose multiset union is the known exponent list for `A`.
+
+An independent direct build from the finite star-action formula now matches all 576 entries of the pinned sparse `A` table. Its exact chiral diagonal determinant is
+\[
+\det M(i+w)=-\frac{w^6(w+2i)^6}{4(w+i)^6}.
+\]
+The polynomial `-1024 w^6(w+i)^6(w+2i)^6` is instead the determinant after multiplying each of the 12 rows by the common denominator `2(w+i)`, hence is `(2(w+i))^{12}\det M`; it is not `det M` itself.
+
+This replay also embeds the exact complex rank-23 witness from the earlier review in the direct owner reconstruction. Therefore no universal complex even-rank theorem follows from the Hodge split: coefficient conjugation acts on coefficients while keeping `Z` fixed and does not preserve a zero at the same non-real character. The exact general formula remains `rank A=rank M+rank σ(M)`, with doubling only on the physical unit torus.
 
 ## Exact computation boundary
 
@@ -119,4 +127,5 @@ The broader theoretical continuation is specified in [`A4D_THEORY_CLOSURE_HANDOF
 ```bash
 python3 02_REGISTRY/research/certificates/a4d_resonance_divisor_slice_check.py
 python3 02_REGISTRY/research/certificates/a4d_hodge_structural_review_check.py
+python3 02_REGISTRY/research/certificates/a4d_sd_asd_reduction_check.py
 ```
